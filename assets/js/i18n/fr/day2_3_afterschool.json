@@ -132,6 +132,10 @@
         "name": "{name}",
         "text": "*Le sujet a change. -- Si elle l'a change expres ou si c'était vraiment épicé. Probablement les deux.*"
     },
+    "after2_dain_return": {
+        "name": "{name}",
+        "text": "*Sur le chemin du retour. Arrivé devant le portail de l'école.*"
+    },
     "after2_seo_1": {
         "name": "{name}",
         "text": "*La salle du conseil des élèves. Seoyeon est assise derrière une pile de documents. Seule.*"
@@ -532,6 +536,10 @@
         "name": "{name}",
         "text": "*Elle a retiré sa main. Elle n'a pas du tout l'air désolée. — Ma paume est encore chaude.*"
     },
+    "after2_seo_return": {
+        "name": "{name}",
+        "text": "*Sorti de la salle du conseil. En marchant vers le portail.*"
+    },
     "after2_seo_skinship_1": {
         "name": "{name}",
         "text": "*Seoyeon tend la main. Enlève une poussière sur mon col. Sa main effleure mon cou.*"
@@ -543,6 +551,10 @@
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
         "text": "...T'avais de la poussière."
+    },
+    "after2_yuna_return": {
+        "name": "{name}",
+        "text": "*Sorti de l'annexe de la bibliothèque. Le soleil se couche.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",

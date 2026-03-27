@@ -67,6 +67,10 @@
         "name": "{name}",
         "text": "*She didn't stop walking. But her eyes were definitely on me.*"
     },
+    "morning2_minsu_1b": {
+        "name": "{name}",
+        "text": "*I'm staring at the hallway where Seoyeon disappeared — when I hear a chair scraping behind me.*"
+    },
     "morning2_minsu_2": {
         "name": "{name}",
         "text": "*Minsu turns around from the seat in front of me.*"
@@ -98,6 +102,10 @@
     "morning2_dain_claim_6": {
         "name": "Dain",
         "text": "I found you first, so you're our transfer student! Dibs! I called dibs!"
+    },
+    "morning2_break_transition": {
+        "name": "{name}",
+        "text": "*Break time. Stepped out into the hallway.*"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -198,6 +206,10 @@
     "hidden_homeroom_d2_2": {
         "name": "{name}",
         "text": "*She says it's administrative. She always wraps her interest in official business.*"
+    },
+    "hidden_homeroom_d2_walk": {
+        "name": "{name}",
+        "text": "*Followed the teacher into the faculty office.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Homeroom Teacher",

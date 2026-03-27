@@ -67,6 +67,10 @@
         "name": "{name}",
         "text": "*걸음을 멈추지 않았다. 하지만 시선은 분명히 이쪽이었다.*"
     },
+    "morning2_minsu_1b": {
+        "name": "{name}",
+        "text": "*서연이 사라진 복도를 바라보는데 — 뒤에서 의자 끄는 소리.*"
+    },
     "morning2_minsu_2": {
         "name": "{name}",
         "text": "*앞자리에서 민수가 돌아본다.*"
@@ -98,6 +102,10 @@
     "morning2_dain_claim_6": {
         "name": "다인",
         "text": "아 내가 먼저 발견했으니까 우리 전학생이지! 선점이야 선점!"
+    },
+    "morning2_break_transition": {
+        "name": "{name}",
+        "text": "*쉬는 시간. 복도로 나왔다.*"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -198,6 +206,10 @@
     "hidden_homeroom_d2_2": {
         "name": "{name}",
         "text": "*행정적인 거라고 한다. 이 사람은 자기 관심을 항상 업무로 포장한다.*"
+    },
+    "hidden_homeroom_d2_walk": {
+        "name": "{name}",
+        "text": "*담임선생님을 따라 교무실로 들어갔다.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "담임선생님",

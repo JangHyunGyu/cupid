@@ -67,6 +67,10 @@
         "name": "{name}",
         "text": "*足を止めなかった。でも視線は確かにこっちだった。*"
     },
+    "morning2_minsu_1b": {
+        "name": "{name}",
+        "text": "*ソヨンが消えた廊下を見つめていると——後ろで椅子を引く音。*"
+    },
     "morning2_minsu_2": {
         "name": "{name}",
         "text": "*前の席からミンスが振り返る。*"
@@ -98,6 +102,10 @@
     "morning2_dain_claim_6": {
         "name": "ダイン",
         "text": "「あたしが先に見つけたんだから、うちの転校生！先取りだよ先取り！」"
+    },
+    "morning2_break_transition": {
+        "name": "{name}",
+        "text": "*休み時間。廊下に出た。*"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -198,6 +206,10 @@
     "hidden_homeroom_d2_2": {
         "name": "{name}",
         "text": "*行政的なことだと言う。この人は自分の関心をいつも業務で包む。*"
+    },
+    "hidden_homeroom_d2_walk": {
+        "name": "{name}",
+        "text": "*担任の先生について職員室に入った。*"
     },
     "hidden_homeroom_d2_3": {
         "name": "担任先生",

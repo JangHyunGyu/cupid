@@ -181,6 +181,11 @@ Object.assign(SCENARIO[2], {
         "next": "morning2_minsu_1"
     },
     "morning2_minsu_1": {
+        "character": null,
+        "background": "assets/images/background/room_school.png",
+        "next": "morning2_minsu_1b"
+    },
+    "morning2_minsu_1b": {
         "character": "assets/images/characters/minsu_normal.png",
         "background": "assets/images/background/room_school.png",
         "next": "morning2_minsu_2"
@@ -224,8 +229,13 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/room_school.png",
         "branches": [
             { "condition": "homeroom_day1", "next": "hidden_homeroom_d2_1" },
-            { "next": "morning2_break_1" }
+            { "next": "morning2_break_transition" }
         ]
+    },
+    "morning2_break_transition": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "morning2_break_1"
     },
     "morning2_break_1": {
         "character": null,
@@ -353,6 +363,11 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d2_walk"
+    },
+    "hidden_homeroom_d2_walk": {
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_3"
     },

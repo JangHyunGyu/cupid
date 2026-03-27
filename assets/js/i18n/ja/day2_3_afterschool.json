@@ -132,6 +132,10 @@
         "name": "{name}",
         "text": "*話題が変わった。——わざと変えたのか、本当に辛いのか。たぶん両方だ。*"
     },
+    "after2_dain_return": {
+        "name": "{name}",
+        "text": "*学校に戻る道。校門前に着いた。*"
+    },
     "after2_seo_1": {
         "name": "{name}",
         "text": "*生徒会室。ソヨンが書類の山の前に座っている。一人で。*"
@@ -532,6 +536,10 @@
         "name": "{name}",
         "text": "*手を離した。全然ごめんって顔じゃない。——手のひらがまだ熱い。*"
     },
+    "after2_seo_return": {
+        "name": "{name}",
+        "text": "*生徒会室を出た。校門の方へ歩いていく。*"
+    },
     "after2_seo_skinship_1": {
         "name": "{name}",
         "text": "*ソヨンが手を伸ばす。襟についた埃を取ってくれる。手が首に触れる。*"
@@ -543,6 +551,10 @@
     "after2_seo_skinship_3": {
         "name": "ソヨン",
         "text": "「...埃ついてた。」"
+    },
+    "after2_yuna_return": {
+        "name": "{name}",
+        "text": "*図書館別館を出た。夕日が沈んでいく。*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",

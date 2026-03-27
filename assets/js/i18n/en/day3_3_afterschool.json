@@ -437,7 +437,7 @@
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Dain's sentence without an exclamation mark, Yuna's note of only three words. — The weight of choice settles on my shoulders.*"
+        "text": "*Stepped out into the hallway. Dain's sentence without an exclamation mark, Yuna's note of only three words. — The weight of choice settles on my shoulders.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -446,6 +446,10 @@
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
         "text": "Popular, aren't you."
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "name": "{name}",
+        "text": "*My feet carry me toward the gym.*"
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
@@ -461,7 +465,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Seoyeon's one liner, Dain's red eyes. — The walk back feels heavy.*"
+        "text": "*Left the gym and returned to the hallway. Seoyeon's one liner, Dain's red eyes. — The walk back feels heavy.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",

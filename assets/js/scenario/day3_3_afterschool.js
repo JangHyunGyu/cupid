@@ -72,6 +72,12 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after3_reject_for_yuna_walk_gym"
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": null,
         "next": "after3_reject_for_yuna_3"
     },
     "after3_reject_for_yuna_3": {

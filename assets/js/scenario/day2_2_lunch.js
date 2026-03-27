@@ -548,26 +548,26 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_10": {
         "character": "assets/images/characters/dain_normal.png",
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "next": "lunch2_dain_11"
     },
     "lunch2_dain_11": {
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_dain_12"
     },
     "lunch2_dain_12": {
         "character": "assets/images/characters/dain_normal.png",
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "next": "lunch2_dain_13"
     },
     "lunch2_dain_13": {
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_dain_choice"
     },
     "lunch2_dain_choice": {
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_normal.png",
         "choices": [
             {
@@ -598,26 +598,26 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_c1_1": {
         "character": "assets/images/characters/dain_pout.png",
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "next": "lunch2_dain_end"
     },
     "lunch2_dain_c2_1": {
         "character": "assets/images/characters/dain_normal.png",
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "next": "lunch2_dain_end"
     },
     "lunch2_dain_c3_1": {
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_shy.png",
         "next": "lunch2_dain_c3_2"
     },
     "lunch2_dain_c3_2": {
         "character": "assets/images/characters/dain_shy.png",
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "next": "lunch2_dain_end"
     },
     "lunch2_dain_end": {
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_pout.png",
         "stats": { "Seoyeon": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
         "next": "after2_start"

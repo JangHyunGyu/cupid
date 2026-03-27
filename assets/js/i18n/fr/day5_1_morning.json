@@ -31,6 +31,10 @@
         "name": "{name}",
         "text": "*En passant devant le coin d'exposition du club littéraire dans le couloir — une nouvelle est affichée au tableau. Titre : 'À la personne rencontrée à la bibliothèque.' C'est celle de Yuna. — Une histoire que seul le protagoniste pourrait reconnaître.*"
     },
+    "morning5_return_class": {
+        "name": "{name}",
+        "text": "*Retourné en classe.*"
+    },
     "morning5_dain_1": {
         "name": "Dain",
         "text": "Hé ! Je t'ai inscrit comme partenaire pour l'épreuve sportive d'aujourd'hui !"

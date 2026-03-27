@@ -132,6 +132,10 @@
         "name": "{name}",
         "text": "*화제가 바뀌었다. — 일부러 바꾼 건지, 진짜 매운 건지. 아마 둘 다.*"
     },
+    "after2_dain_return": {
+        "name": "{name}",
+        "text": "*학교로 돌아오는 길. 교문 앞에 다다랐다.*"
+    },
     "after2_seo_1": {
         "name": "{name}",
         "text": "*학생회실. 서연이 서류 더미 앞에 앉아 있다. 혼자.*"
@@ -526,6 +530,10 @@
         "name": "{name}",
         "text": "*손을 뗐다. 안 미안해 보인다. — 손바닥이 아직 뜨겁다.*"
     },
+    "after2_seo_return": {
+        "name": "{name}",
+        "text": "*학생회실을 나섰다. 교문 쪽으로 걸어간다.*"
+    },
     "after2_seo_skinship_1": {
         "name": "{name}",
         "text": "*서연이 손을 뻗는다. 옷깃에 묻은 먼지를 떼어준다. 손이 목에 스친다.*"
@@ -537,6 +545,10 @@
     "after2_seo_skinship_3": {
         "name": "서연",
         "text": "...먼지 묻었어."
+    },
+    "after2_yuna_return": {
+        "name": "{name}",
+        "text": "*도서관 별관을 나왔다. 노을이 지고 있다.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",

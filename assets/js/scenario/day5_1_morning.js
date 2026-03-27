@@ -53,6 +53,11 @@ Object.assign(SCENARIO[5], {
     "morning5_yuna_story_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "next": "morning5_return_class"
+    },
+    "morning5_return_class": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "morning5_dain_1"
     },
     "morning5_dain_1": {

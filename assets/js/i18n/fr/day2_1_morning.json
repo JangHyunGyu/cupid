@@ -67,6 +67,10 @@
         "name": "{name}",
         "text": "*Elle ne s'est pas arrêtée de marcher. Mais son regard était clairement tourné vers moi.*"
     },
+    "morning2_minsu_1b": {
+        "name": "{name}",
+        "text": "*Je fixe le couloir où Seoyeon a disparu — quand j'entends une chaise racler derrière moi.*"
+    },
     "morning2_minsu_2": {
         "name": "{name}",
         "text": "*Minsu se retourne depuis le siège devant moi.*"
@@ -98,6 +102,10 @@
     "morning2_dain_claim_6": {
         "name": "Dain",
         "text": "C'est moi qui t'ai trouvé en premier, donc t'es notre nouvel élève ! Premier arrive, premier servi !"
+    },
+    "morning2_break_transition": {
+        "name": "{name}",
+        "text": "*Pause. Je suis sorti dans le couloir.*"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -198,6 +206,10 @@
     "hidden_homeroom_d2_2": {
         "name": "{name}",
         "text": "*Elle dit que c'est administratif. Elle emballe toujours son intérêt dans du professionnel.*"
+    },
+    "hidden_homeroom_d2_walk": {
+        "name": "{name}",
+        "text": "*J'ai suivi la professeure principale jusqu'à la salle des professeurs.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professeure principale",
