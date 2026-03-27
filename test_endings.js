@@ -113,21 +113,22 @@ const tests = [
     { name: 'Good(다인)', check: 'good_5_cg_dain', target: 'Dain' },
 
     // Bitter: route확정 + 고백수락 + !day3_has_multiple_dates + 호감도<40
-    // 고백은 수락해야 day4_confession_accepted → ending_affinity_check 진입
-    // 하지만 호감도를 낮게 유지해야 bitter 분기
+    // 호감도를 최대한 깎기: 마이너스 선택지 적극 선택 + 히든스킵
     { name: 'Bitter(서연)', check: 'bitter_seo_1', target: null, avoid: ['Seoyeon', 'Yuna', 'Dain'],
-      force: { 'after3_choice': 0, 'confess_seo_choice': 0,
-               'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1 } },
+      force: { 'after_end': 2, 'after3_choice': 0, 'confess_seo_choice': 0,
+               'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
+               'lunch3_expose_choice': 0, 'after3_confront_choice': 0 } },
 
     // Confess Fail: route확정 + Day4 고백거절(day4_waited) + Day5 고백(day5_confessed) + 호감도<50 → confess_fail
     { name: 'Confess Fail', check: 'day5_ending_confess_fail', target: null, avoid: ['Seoyeon', 'Yuna', 'Dain'],
       force: { 'after3_choice': 0, 'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'after5_last_chance_choice': 0 } },
 
-    // Friend: 히든스킵 + route확정 + 고백거절(day4_waited) + Day5 고백안함
-    { name: 'Friend', check: 'day5_ending_friend', target: 'Seoyeon', avoid: ['Yuna', 'Dain'],
-      force: { 'after_end': 2, 'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
-               'confess_seo_choice': 1, 'after5_last_chance_choice': 1 } },
+    // Friend: 히든스킵 + route확정 + Day4 고백거절 + Day5 고백수락 + 호감도<50 → confessed_aff_check fallback → friend
+    { name: 'Friend', check: 'day5_ending_friend', target: null, avoid: ['Seoyeon', 'Yuna', 'Dain'],
+      force: { 'after_end': 2, 'after3_choice': 0,
+               'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
+               'confess_seo_choice': 1, 'after5_last_chance_choice': 0 } },
 
     // Alone: 히든스킵 + 데이트 전부거절 + 루트 미확정 → fallback
     { name: 'Alone', check: 'day5_ending_alone', target: null,
@@ -142,12 +143,13 @@ const tests = [
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1,
                'after5_last_chance_choice': 1 } },
 
-    // Harem: 모든 데이트수락 + 안 들킴(!day3_caught) + 고백 전부 거절 → after5_set_harem
+    // Harem: 모든 데이트수락 + 안 들킴(!day3_caught) + 고백거절 → after5_set_harem
+    // lunch3_expose_choice 자체를 안 만나도록 lunch3_choice에서 다른 선택
     { name: 'Harem', check: 'day5_ending_harem', target: null,
       force: { 'morning3_date_seo_choice': 0, 'morning3_date_yuna_choice': 0, 'morning3_date_dain_choice': 0,
-               'lunch3_expose_choice': 2, 'lunch3_choice': 0,
+               'lunch3_choice': 1, 'lunch3_seo_witness_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1,
-               'after5_last_chance_choice': 1 } },
+               'after5_last_chance_choice': 1, 'after_end': 2 } },
 
     // Hidden Perfect(담임): 담임 루트 + 올인 + 데이트 거절
     { name: 'Hidden Perfect(담임)', check: 'hidden_perfect_homeroom_1', target: 'Teacher',
@@ -161,13 +163,19 @@ const tests = [
       force: { 'after_end': 0, 'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1 } },
 
-    // Hidden Good(담임): homeroom_day5 + !day4_confession_accepted + !day3_has_multiple_dates
-    // ending_start[1]: homeroom_day5 + excl=day4_confession_accepted
-    { name: 'Hidden Good(담임)', check: 'hidden_good_homeroom_1', target: null,
+    // Hidden Good(담임): homeroom_day5 + !day4_confession_accepted
+    // after5_ending_check[0]: homeroom_day5 → ending_start → branch[1]
+    // Day 5 고백수락해도 ending_start에서 homeroom이 먼저 체크됨
+    { name: 'Hidden Good(담임)', check: 'hidden_good_homeroom_1', target: 'Teacher',
       avoid: ['Seoyeon', 'Yuna', 'Dain'],
       force: { 'after_end': 0, 'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1,
-               'after5_last_chance_choice': 1, 'after3_choice': 0 } },
+               'after5_last_chance_choice': 0,
+               'after_hidden_homeroom_choice': 0, 'after_homeroom_honest_choice2': 1,
+               'hidden_homeroom_d2_choice1': 1, 'hidden_homeroom_d2_choice2': 0,
+               'hidden_homeroom_d3_choice': 1, 'hidden_homeroom_d3_reveal_choice': 1,
+               'hidden_homeroom_d4_choice': 1, 'hidden_homeroom_d4_cafe_choice': 1,
+               'hidden_homeroom_d5_choice': 1 } },
 
     // Hidden Perfect(보건): 보건 루트 + 올인 + 데이트 거절
     { name: 'Hidden Perfect(보건)', check: 'hidden_perfect_nurse_1', target: 'Nurse',
@@ -182,11 +190,16 @@ const tests = [
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1 } },
 
     // Hidden Good(보건): nurse_day5 + !day4_confession_accepted
-    { name: 'Hidden Good(보건)', check: 'hidden_good_nurse_1', target: null,
+    { name: 'Hidden Good(보건)', check: 'hidden_good_nurse_1', target: 'Nurse',
       avoid: ['Seoyeon', 'Yuna', 'Dain'],
       force: { 'after_end': 1, 'morning3_date_seo_choice': 1, 'morning3_date_yuna_choice': 1, 'morning3_date_dain_choice': 1,
                'confess_seo_choice': 1, 'confess_yuna_choice': 1, 'confess_dain_choice': 1,
-               'after5_last_chance_choice': 1, 'after3_choice': 0 } },
+               'after5_last_chance_choice': 0,
+               'after_hidden_nurse_choice': 0, 'after_nurse_enter_choice': 1,
+               'hidden_nurse_d2_choice1': 1, 'hidden_nurse_d2_choice2': 0,
+               'hidden_nurse_d3_choice1': 1, 'hidden_nurse_d3_choice2': 1,
+               'hidden_nurse_d4_name_choice': 1, 'hidden_nurse_d4_choice': 1,
+               'hidden_nurse_d5_choice': 1 } },
 ];
 
 let pass = 0, fail = 0;

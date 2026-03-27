@@ -133,17 +133,17 @@ Object.assign(SCENARIO[1], {
         "affinityBranches": [
             {
                 "char": "Seoyeon",
-                "minAffinity": 15,
+                "minAffinity": 10,
                 "next": "night_seo_late_1"
             },
             {
                 "char": "Dain",
-                "minAffinity": 15,
+                "minAffinity": 10,
                 "next": "night_dain_late_1"
             },
             {
                 "char": "Yuna",
-                "minAffinity": 15,
+                "minAffinity": 10,
                 "next": "night_yuna_late_1"
             }
         ],
