@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Je dois repondre aux trois en meme temps. -- Je sais pas si c'est du bonheur ou de la torture.*"
+        "text": "*Je dois répondre aux trois en même temps. -- Je sais pas si c'est du bonheur ou de la torture.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -78,11 +78,11 @@
     },
     "night2_reply_dain_1": {
         "name": "{name}",
-        "text": "Le tteokbokki etait epice mdr"
+        "text": "Le tteokbokki était épicé mdr"
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Mdr tu supportes pas l'epice ?!"
+        "text": "Mdr tu supportes pas l'épicé ?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
@@ -130,7 +130,7 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Regarde la troisieme etoile"
+        "text": "Regarde la troisième étoile"
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*La troisieme etoile ? -- J'ouvre la fenetre et regarde le ciel nocturne. Des etoiles sont visibles. Je sais pas laquelle est la troisieme, mais bon. Une enigme tres Yuna. Quelqu'un qui ne donne jamais la reponse. -- Quelqu'un qui te donne envie de la trouver.*"
+        "text": "*La troisième étoile ? -- J'ouvre la fenêtre et regarde le ciel nocturne. Des étoiles sont visibles. Je sais pas laquelle est la troisième, mais bon. Une enigme très Yuna. Quelqu'un qui ne donne jamais la réponse. -- Quelqu'un qui te donne envie de la trouver.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Le deuxieme jour est fini. Le premier jour, c'etait de la curiosite. Je me demandais quel genre de personnes elles etaient.*"
+        "text": "*Le deuxième jour est fini. Le premier jour, c'était de la curiosite. Je me demandais quel genre de personnes elles étaient.*"
     },
     "night2_end_3": {
         "name": "{name}",

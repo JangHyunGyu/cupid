@@ -37,7 +37,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Le toit de Seoyeon. Elle se tient parmi les plantes qu'elle a cultivees elle-meme.*"
+        "text": "*Le toit de Seoyeon. Elle se tient parmi les plantes qu'elle a cultivees elle-même.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -53,11 +53,11 @@
     },
     "perfect_seo_5": {
         "name": "{name}",
-        "text": "*Seoyeon tend la main. Pas le petit doigt. La main entiere.*"
+        "text": "*Seoyeon tend la main. Pas le petit doigt. La main entière.*"
     },
     "perfect_yuna_1": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliotheque, le grenier secret. Yuna me tend une nouvelle.*"
+        "text": "*L'annexe de la bibliothèque, le grenier secret. Yuna me tend une nouvelle.*"
     },
     "perfect_yuna_2": {
         "name": "{name}",
@@ -65,11 +65,11 @@
     },
     "perfect_yuna_3": {
         "name": "Yuna",
-        "text": "...Dis-moi ce que tu en penses quand tu auras fini. C'est ma reponse."
+        "text": "...Dis-moi ce que tu en penses quand tu auras fini. C'est ma réponse."
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*La derniere phrase de l'histoire : 'Il y avait quelqu'un qui ne disparaissait jamais. Grace a cette personne, j'ai decide de ne pas disparaitre non plus.'*"
+        "text": "*La dernière phrase de l'histoire : 'Il y avait quelqu'un qui ne disparaissait jamais. Grace a cette personne, j'ai decide de ne pas disparaitre non plus.'*"
     },
     "perfect_yuna_5": {
         "name": "{name}",
@@ -77,11 +77,11 @@
     },
     "perfect_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Dain frappe son dernier service. En defaisant ses bandages.*"
+        "text": "*Le gymnase. Dain frappe son dernier service. En défaisant ses bandages.*"
     },
     "perfect_dain_2": {
         "name": "Dain",
-        "text": "C'est la derniere passe. — Mais c'est aussi un debut."
+        "text": "C'est la dernière passe. — Mais c'est aussi un debut."
     },
     "perfect_dain_3": {
         "name": "Dain",
@@ -97,15 +97,15 @@
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
+        "text": "*Chaque choix pointait vers une seule personne. Ce n'était pas cinq jours — chaque jour était tout.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
+        "text": "*Chaque choix pointait vers une seule personne. Ce n'était pas cinq jours — chaque jour était tout.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Chaque choix pointait vers une seule personne. Ce n'etait pas cinq jours — chaque jour etait tout.*"
+        "text": "*Chaque choix pointait vers une seule personne. Ce n'était pas cinq jours — chaque jour était tout.*"
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
@@ -149,7 +149,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...Je pensais que ca marcherait. On dirait qu'on etait tous les deux a un pas de trop."
+        "text": "...Je pensais que ça marcherait. On dirait qu'on était tous les deux a un pas de trop."
     },
     "bitter_seo_3": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "bitter_yuna_2": {
         "name": "Yuna",
-        "text": "...Parfois je pense a toi. Quand je sens l'odeur de la bibliotheque. J'aurais du en dire plus a l'epoque."
+        "text": "...Parfois je pense a toi. Quand je sens l'odeur de la bibliothèque. J'aurais du en dire plus a l'époque."
     },
     "bitter_yuna_3": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "C'etait amusant, vraiment ! ...Mais je crois que c'etait juste amusant. C'est un peu dommage."
+        "text": "C'était amusant, vraiment ! ...Mais je crois que c'était juste amusant. C'est un peu dommage."
     },
     "bitter_dain_3": {
         "name": "{name}",
@@ -185,7 +185,7 @@
     },
     "bitter_epilogue_2": {
         "name": "{name}",
-        "text": "*Le souvenir de cinq jours reste. Ca ne fait pas mal. C'etait juste — pas assez. Pour nous deux.*"
+        "text": "*Le souvenir de cinq jours reste. Ça ne fait pas mal. C'était juste — pas assez. Pour nous deux.*"
     },
     "bitter_epilogue_3": {
         "name": "Système",
