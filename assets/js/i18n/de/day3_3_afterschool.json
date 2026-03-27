@@ -449,7 +449,15 @@
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
-        "text": "*Dain schlägt allein Bälle in der Turnhalle. Sie sieht mich und sagt 'Ah, hey!' aber wendet das Gesicht ab. Ihre Augen sind rot.*"
+        "text": "*Dain schlägt allein Bälle in der Turnhalle.*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "Dain",
+        "text": "Ah, hey!"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*Aber sie wendet das Gesicht ab. Ihre Augen sind rot.*"
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",

@@ -92,7 +92,17 @@ Object.assign(SCENARIO[2], {
     // B-1.5: 유나 쪽지 시 나머지 반응
     "morning2_greet_yuna_others": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_greet_yuna_others_seo"
+    },
+    "morning2_greet_yuna_others_seo": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_greet_yuna_others_dain"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_greet_yuna_others_2"
     },
     "morning2_greet_yuna_others_2": {

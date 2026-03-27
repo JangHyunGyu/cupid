@@ -316,8 +316,16 @@
         "text": "*ユナの字。昨日より一文長くなった。——裏に小さく「昼休みに図書館別館で。」*"
     },
     "morning2_greet_yuna_others": {
+        "name": "ソヨン",
+        "text": "「朝から手紙？」"
+    },
+    "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*ソヨンが通りがかりに「朝から手紙？」笑っている。でも視線がメモの上で0.5秒止まった。ダイン「何それ！見せて！」手を伸ばす。*"
+        "text": "*笑っている。でも視線がメモの上で0.5秒止まった。*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "ダイン",
+        "text": "「何それ！見せて！」"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",

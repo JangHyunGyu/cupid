@@ -316,8 +316,16 @@
         "text": "*La letra de Yuna. Una frase más larga que ayer. — En la parte de atrás, en letra diminuta: 'En el anexo de la biblioteca a la hora del almuerzo.'*"
     },
     "morning2_greet_yuna_others": {
+        "name": "Seoyeon",
+        "text": "¿Una carta tan temprano?"
+    },
+    "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*Seoyeon pasa. \"¿Una carta tan temprano?\" Sonríe. Pero su mirada se detiene en la nota medio segundo. Dain: \"¡¿Qué es eso?! ¡Déjame ver!\" Extiende la mano.*"
+        "text": "*Sonríe. Pero su mirada se detiene en la nota medio segundo.*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "Dain",
+        "text": "¡¿Qué es eso?! ¡Déjame ver!"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",

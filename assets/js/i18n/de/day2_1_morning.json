@@ -316,8 +316,16 @@
         "text": "*Yunas Handschrift. Ein Satz länger als gestern. — Auf der Rückseite, winzig klein: 'Mittags im Bibliotheksanbau.'*"
     },
     "morning2_greet_yuna_others": {
+        "name": "Seoyeon",
+        "text": "Ein Brief so früh am Morgen?"
+    },
+    "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*Seoyeon geht vorbei. \"Ein Brief so früh am Morgen?\" Sie lächelt. Aber ihr Blick verweilt eine halbe Sekunde auf dem Zettel. Dain: \"Was ist das?! Zeig mal!\" Streckt die Hand aus.*"
+        "text": "*Sie lächelt. Aber ihr Blick verweilt eine halbe Sekunde auf dem Zettel.*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "Dain",
+        "text": "Was ist das?! Zeig mal!"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",

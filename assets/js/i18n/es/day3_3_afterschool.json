@@ -449,7 +449,15 @@
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
-        "text": "*Dain está golpeando pelotas sola en el gimnasio. Me ve y dice '¡Ah, hola!' pero voltea la cara. Sus ojos están rojos.*"
+        "text": "*Dain está golpeando pelotas sola en el gimnasio.*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "Dain",
+        "text": "¡Ah, hola!"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*Pero voltea la cara. Sus ojos están rojos.*"
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",

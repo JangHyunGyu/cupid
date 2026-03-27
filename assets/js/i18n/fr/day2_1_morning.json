@@ -316,8 +316,16 @@
         "text": "*L'écriture de Yuna. Une phrase de plus qu'hier. — Au dos, en tout petit : 'À l'annexe de la bibliothèque à midi.'*"
     },
     "morning2_greet_yuna_others": {
+        "name": "Seoyeon",
+        "text": "Une lettre dès le matin ?"
+    },
+    "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*Seoyeon passe. \"Une lettre dès le matin ?\" Elle sourit. Mais son regard s'attarde sur le mot une demi-seconde. Dain : \"C'est quoi ça ! Montre !\" Elle tend la main.*"
+        "text": "*Elle sourit. Mais son regard s'attarde sur le mot une demi-seconde.*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "Dain",
+        "text": "C'est quoi ça ! Montre !"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",

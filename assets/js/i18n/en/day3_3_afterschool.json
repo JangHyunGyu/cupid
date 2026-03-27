@@ -449,7 +449,15 @@
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
-        "text": "*Dain is hitting balls alone in the gym. She sees me and says 'Ah, hey!' but turns her face away. Her eyes are red.*"
+        "text": "*Dain is hitting balls alone in the gym.*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "Dain",
+        "text": "Ah, hey!"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*But she turns her face away. Her eyes are red.*"
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",

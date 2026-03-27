@@ -310,8 +310,16 @@
         "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다. — 뒷면에 작게 '점심에 도서관 별관으로.'*"
     },
     "morning2_greet_yuna_others": {
+        "name": "서연",
+        "text": "아침부터 편지야?"
+    },
+    "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*서연이 지나가며 \"아침부터 편지야?\" 웃고 있다. 하지만 시선이 쪽지 위에 0.5초 머문다. 다인이 \"뭐야 그거! 나도 보여줘!\" 손을 뻗는다.*"
+        "text": "*웃고 있다. 하지만 시선이 쪽지 위에 0.5초 머문다.*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "다인",
+        "text": "뭐야 그거! 나도 보여줘!"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
