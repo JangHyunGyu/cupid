@@ -608,7 +608,7 @@
         "text": "*La porte s'ouvre. — C'est elle. Cardigan beige. Une enveloppe de documents dans la main.*"
     },
     "hidden_perfect_homeroom_2": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "Félicitations pour ton diplôme. ...Tous les papiers sont faits. Mon travail en tant que ta prof est terminé."
     },
     "hidden_perfect_homeroom_2b": {
@@ -616,7 +616,7 @@
         "text": "Le manuscrit est toujours dans le tiroir de votre bureau ?"
     },
     "hidden_perfect_homeroom_2c": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Elle s'arrête un instant. Sur le point de dire quelque chose de plus, elle ferme la bouche.* ...Prends soin de toi."
     },
     "hidden_perfect_homeroom_3": {
@@ -628,15 +628,15 @@
         "text": "*La terrasse d'un café. Les cerisiers virevoltent. En entrant — j'aperçois des cheveux bruns ondulés familiers près de la fenêtre. Une veste en lin au lieu du cardigan.*"
     },
     "hidden_perfect_homeroom_3c": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "...Oh. Je suis surprise aussi. *Elle pose sa tasse de café.* Tu veux t'asseoir ?"
     },
     "hidden_perfect_homeroom_3e": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Elle sourit en coin.* J'ai arrêté d'enseigner. Je ne fais qu'écrire. Mi-temps dans un café aussi. — Et toi ?"
     },
     "hidden_perfect_homeroom_3f": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "...On peut se revoir ? Je viens ici tous les jeudis."
     },
     "hidden_perfect_homeroom_3g": {
@@ -644,7 +644,7 @@
         "text": "*Ce « la prochaine fois » est devenu la fois d'après, puis encore la suivante. Même place chaque jeudi. Quand le barista a demandé « Table pour couple ? », aucun de nous n'a pu répondre. Un jeudi. On a marché dans les rues au lieu d'aller au café. Côte à côte. Tous les deux faisant semblant de ne pas remarquer nos ombres qui se chevauchaient.*"
     },
     "hidden_perfect_homeroom_4b": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Elle s'arrête brusquement à la librairie.* ...J'ai terminé mon manuscrit. Tu veux le lire ?"
     },
     "hidden_perfect_homeroom_4c": {
@@ -652,7 +652,7 @@
         "text": "*Je l'ai lu chez moi. Toute la nuit. — La façon dont parlait le personnage principal m'était familière. Trop familière.*"
     },
     "hidden_perfect_homeroom_4d": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Le jeudi suivant, au café. Elle a remué son café plus longtemps que d'habitude.* ...Alors, c'était comment ?"
     },
     "hidden_perfect_homeroom_4e": {
@@ -664,7 +664,7 @@
         "text": "*Je lui ai tendu le bouquet.* Ce n'est pas de l'intérêt professionnel. Pas de mon côté."
     },
     "hidden_perfect_homeroom_4g": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Prend le bouquet et le fixe longuement. Ses mains tremblent. — Elle sourit.* ...Moi aussi.\n\n─── Professeure PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
@@ -730,7 +730,7 @@
         "text": "Avec plaisir."
     },
     "hidden_true_homeroom_8": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "...Je ne devrais pas faire ça.\n\n─── Professeure TRUE LOVE END ───"
     },
     "hidden_true_nurse_1": {

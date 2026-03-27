@@ -192,7 +192,7 @@
         "text": "*Quelqu'un qui n'a jamais approche personne en premier pendant toute une annee -- est venu vers moi en premier ? Qu'est-ce que ca veut dire ?*"
     },
     "hidden_homeroom_d2_1": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Ah, {name}. Viens à la salle des profs une minute."
     },
     "hidden_homeroom_d2_2": {
@@ -200,7 +200,7 @@
         "text": "*Elle dit que c'est administratif. Elle emballe toujours son intérêt dans du professionnel.*"
     },
     "hidden_homeroom_d2_3": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "J'ai vu ton ancien bulletin. T'avais de bonnes notes en français. T'aimes lire ?"
     },
     "hidden_homeroom_d2_choice1": {
@@ -212,15 +212,15 @@
         ]
     },
     "hidden_homeroom_d2_choice1_a": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Hésite un instant.* ...Moi ? Des dossiers. — Tu t'attendais à quoi ?"
     },
     "hidden_homeroom_d2_choice1_b": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "...D'accord. Je demandais, c'est tout."
     },
     "hidden_homeroom_d2_5": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...D'accord. Je demandais, c'est tout."
     },
     "hidden_homeroom_d2_6": {
@@ -228,11 +228,11 @@
         "text": "*Le tiroir. Elle vient de le regarder ? — Par l'ouverture, j'aperçois une liasse de papiers. On dirait des pages de manuscrit.*"
     },
     "hidden_homeroom_d2_7": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "L'adaptation, ça va ? Mieux qu'hier ?"
     },
     "hidden_homeroom_d2_8": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Dain est bruyante, non ? — Elle est toujours comme ça. Mais c'est pas une mauvaise gamine. Plutôt le genre qu'on s'inquiète."
     },
     "hidden_homeroom_d2_9": {
@@ -240,7 +240,7 @@
         "text": "Merci, monsieur."
     },
     "hidden_homeroom_d2_10": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Bon, un prof qui s'inquiète pour ses élèves, c'est normal. C'est le boulot."
     },
     "hidden_homeroom_d2_choice2": {
@@ -252,15 +252,15 @@
         ]
     },
     "hidden_homeroom_d2_choice2_a": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Son expression se fige légèrement.* ...Gérer ses expressions, ça fait aussi partie du boulot."
     },
     "hidden_homeroom_d2_choice2_b": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "C'est normal. Allez, file."
     },
     "hidden_homeroom_d2_11": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Si je fais du favoritisme avec le nouveau, les autres vont jaser."
     },
     "hidden_homeroom_d2_12": {

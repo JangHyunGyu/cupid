@@ -52,11 +52,11 @@
         "text": "*La prof est assise au bureau. — Pas un manuscrit cette fois. Une enveloppe. Brune.*"
     },
     "hidden_homeroom_d5_2": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Le manuscrit. — Inachevé. Mais je voulais le donner à mon premier lecteur."
     },
     "hidden_homeroom_d5_3": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Je ne l'ai montré à personne en sept ans."
     },
     "hidden_homeroom_d5_4": {
@@ -64,7 +64,7 @@
         "text": "*...Je prends le manuscrit. Il est plus lourd que ce que j'imaginais.*"
     },
     "hidden_homeroom_d5_5": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Le donner à mon premier lecteur — je suis plus nerveuse que je croyais."
     },
     "hidden_homeroom_d5_choice": {
@@ -76,19 +76,19 @@
         ]
     },
     "hidden_homeroom_d5_choice_a": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Ses lèvres tremblent.* ...Après ton diplôme."
     },
     "hidden_homeroom_d5_choice_b": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Elle sourit. Un sourire que je n'avais jamais vu.* ...Même dix pages."
     },
     "hidden_homeroom_d5_6": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Pas de compte-rendu. — ...En fait, écris-moi au moins une ligne."
     },
     "hidden_homeroom_d5_7": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Après ton diplôme — on se voit. Plus comme prof et élève."
     },
     "hidden_homeroom_d5_8": {
@@ -96,7 +96,7 @@
         "text": "*Elle se retourne. Ses longs cheveux oscillent. — Aujourd'hui, les boutons de son cardigan sont droits.*"
     },
     "hidden_homeroom_d5_freetalk": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "*Dernière conversation avec la prof principale dans la salle vide.*",
         "context": "Jour 5. Dernier jour. La prof a remis son manuscrit. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "La prof est plus honnête que d'habitude car c'est la dernière fois. Dernière conversation après avoir remis le manuscrit."

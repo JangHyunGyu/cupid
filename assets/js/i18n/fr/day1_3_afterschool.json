@@ -121,7 +121,7 @@
         "text": "*Je m'apprête à rentrer quand — une voix derrière moi.*"
     },
     "after_hidden_homeroom_2": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "{name}. Reste une seconde."
     },
     "after_hidden_homeroom_3": {
@@ -129,7 +129,7 @@
         "text": "*C'est la prof principale. Son cardigan est encore plus froissé qu'avant. On dirait qu'elle a eu une rude journée.*"
     },
     "after_hidden_homeroom_4": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "T'as rien fait de mal. — Comme t'es nouveau, je voulais savoir. Tu t'adaptes ?"
     },
     "after_hidden_homeroom_choice": {
@@ -141,7 +141,7 @@
         ]
     },
     "after_homeroom_ok": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Tant mieux. — Si t'as besoin, passe à la salle des profs. C'est mon boulot."
     },
     "after_homeroom_ok_2": {
@@ -149,7 +149,7 @@
         "text": "*Je la croyais distante, mais elle fait attention en fait. — Ou c'est juste son travail.*"
     },
     "after_homeroom_honest_1": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Se sentir débordé, c'est normal. Ce serait bizarre d'être zen le premier jour dans une nouvelle école."
     },
     "after_homeroom_honest_2": {
@@ -157,11 +157,11 @@
         "text": "Vous avez déjà changé d'école, monsieur ?"
     },
     "after_homeroom_honest_3": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "...Quelque chose comme ça. J'ai été parachuté dans un nouveau lieu du jour au lendemain."
     },
     "after_homeroom_honest_4": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Si ça devient dur, viens à la salle des profs. Je peux t'offrir un café — ah, t'es élève. Un jus, alors."
     },
     "after_homeroom_honest_5": {
@@ -169,7 +169,7 @@
         "text": "Un prof qui offre à boire à un élève ?"
     },
     "after_homeroom_honest_6": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Intérêt pédagogique, j'imagine."
     },
     "after_homeroom_honest_choice2": {
@@ -181,15 +181,15 @@
         ]
     },
     "after_homeroom_honest_choice2a": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "...D'accord, je m'inquiète. — C'était si évident ?"
     },
     "after_homeroom_honest_choice2b": {
-        "name": "Professeure",
+        "name": "Professeure principale",
         "text": "*Étouffe un rire.* T'emballe pas. C'est du distributeur."
     },
     "after_homeroom_honest_7": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Ah, {name}."
     },
     "after_homeroom_honest_8": {
@@ -197,7 +197,7 @@
         "text": "Oui ?"
     },
     "after_homeroom_honest_9": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "Si tu n'arrives pas à t'adapter, je reviendrai te chercher."
     },
     "after_homeroom_honest_10": {
@@ -205,7 +205,7 @@
         "text": "*Elle disparaît au bout du couloir. Ses longs cheveux se balancent. — Elle appelle ça de l'intérêt pédagogique, mais ses yeux racontaient autre chose.*"
     },
     "after_homeroom_freetalk": {
-        "name": "Professeur Principal",
+        "name": "Professeure principale",
         "text": "*En train de discuter avec la prof principale dans le couloir.*",
         "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
         "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
