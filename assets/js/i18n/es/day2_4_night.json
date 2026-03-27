@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Tengo que responder a las tres a la vez. -- No se si esto es felicidad o tortura.*"
+        "text": "*Tengo que responder a las tres a la vez. -- No sé si esto es felicidad o tortura.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "¡Manana vamos al suave!!"
+        "text": "¡Mañana vamos al suave!!"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
@@ -98,19 +98,19 @@
     },
     "night2_reply_seo_1": {
         "name": "{name}",
-        "text": "Llamame y vuelvo"
+        "text": "Llámame y vuelvo"
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "Haces promesas facilmente"
+        "text": "Haces promesas fácilmente"
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "Es una promesa facil"
+        "text": "Es una promesa fácil"
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "......\nManana al mediodia dejare la azotea abierta. Si vienes o no, es tu decisión"
+        "text": "......\nManana al mediodía dejare la azotea abierta. Si vienes o no, es tu decisión"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*El segundo día termino. El primer día fue curiosidad. Me preguntaba que tipo de personas eran.*"
+        "text": "*El segundo día terminó. El primer día fue curiosidad. Me preguntaba que tipo de personas eran.*"
     },
     "night2_end_3": {
         "name": "{name}",
@@ -252,7 +252,7 @@
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...Así que hay alguien que responde a está hora. ¿Quieres venir a la biblioteca mañana?"
+        "text": "...Así que hay alguien que responde a esta hora. ¿Quieres venir a la biblioteca mañana?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",

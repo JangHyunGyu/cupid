@@ -1,7 +1,7 @@
 {
     "after2_start": {
         "name": "{name}",
-        "text": "*Despues de clases. ¡Dos notificaciones en mi telefono.*\n\nDain: Ven al gimnasio!!¡ ¿Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Asi es Yuna. Pero al recoger mi mochila, la nota de la manana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atención.*"
+        "text": "*Después de clases. ¡Dos notificaciones en mi teléfono.*\n\nDain: Ven al gimnasio!!¡ ¿Hoy va en serio!!\nSeoyeon: Puedes venir a la sala del consejo? Nos falta gente.\n\n*Nada de Yuna. -- Así es Yuna. Pero al recoger mi mochila, la nota de la mañana cae del bolsillo. Las palabras 'anexo de la biblioteca' me llaman la atención.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -22,15 +22,15 @@
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Llegue cinco minutos antes."
+        "text": "Llegué cinco minutos antes."
     },
     "after2_dain_4": {
         "name": "Dain",
-        "text": "¡Yo llegue diez minutos antes!!"
+        "text": "¡Yo llegué diez minutos antes!!"
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Eso significa que tu llegaste temprano, no que yo llegue tarde.*"
+        "text": "*Eso significa que tu llegaste temprano, no que yo llegué tarde.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -54,7 +54,7 @@
     },
     "after2_dain_11": {
         "name": "{name}",
-        "text": "*El intercambio va y viene. El movimiento de Dain es -- claramente fuera de lo comun. Rapido, preciso, memoria muscular en accion.*\n\n*Esta chica es realmente buena. No del tipo 'le gustan los deportes' -- se mueve como alguien que alguna vez aposto su vida en ello.*\n\n*Resultado final: 3 a 2. Gane por poco.*"
+        "text": "*El intercambio va y viene. El movimiento de Dain es -- claramente fuera de lo común. Rápido, preciso, memoria muscular en accion.*\n\n*Esta chica es realmente buena. No del tipo 'le gustan los deportes' -- se mueve como alguien que alguna vez aposto su vida en ello.*\n\n*Resultado final: 3 a 2. Gane por poco.*"
     },
     "after2_dain_12": {
         "name": "Dain",
@@ -66,19 +66,19 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*¡¿Genuinamente sorprendida* Que?!¡ ¿Me enganaste?!"
+        "text": "*¡¿Genuinamente sorprendida* Que?!¡ ¿Me engañaste?!"
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "No te engane -- simplemente nunca preguntaste."
+        "text": "No te engañé -- simplemente nunca preguntaste."
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*¡Dandome un puneton en el hombro* Tramposo!! Jajaja -- ¡pero fue divertido!"
+        "text": "*¡Dándome un puñetazo en el hombro* Tramposo!! Jajaja -- ¡pero fue divertido!"
     },
     "after2_dain_end": {
         "name": "{name}",
-        "text": "*Sus ojos tienen forma de media luna. Los mismos ojos de ayer. -- Asi se ve esta persona cuando se divierte de verdad.*\n\n*En la tienda de tteokbokki cerca de la escuela.*\n\n*Dain sopla su tteokbokki y dice --*"
+        "text": "*Sus ojos tienen forma de media luna. Los mismos ojos de ayer. -- Así se ve esta persona cuando se divierte de verdad.*\n\n*En la tienda de tteokbokki cerca de la escuela.*\n\n*Dain sopla su tteokbokki y dice --*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
@@ -90,7 +90,7 @@
     },
     "after2_dain_end_2c": {
         "name": "Dain",
-        "text": "¡Un 'poco' no juega así! -- Admitelo, eres bueno."
+        "text": "¡Un 'poco' no juega así! -- Admítelo, eres bueno."
     },
     "after2_dain_end_2d": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after2_seo_2": {
         "name": "Seoyeon",
-        "text": "Viniste. -- Honestamente, no pense que lo harias."
+        "text": "Viniste. -- Honestamente, no pensé que lo harias."
     },
     "after2_seo_3": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "after2_seo_8a4": {
         "name": "{name}",
-        "text": "Como tus cumplidos. Tambien son vagos."
+        "text": "Como tus cumplidos. También son vagos."
     },
     "after2_seo_8b": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after2_seo_8b4": {
         "name": "Seoyeon",
-        "text": "Es un cumplido. Aceptalo."
+        "text": "Es un cumplido. Acéptalo."
     },
     "after2_seo_choice1": {
         "name": "{name}",
@@ -186,7 +186,7 @@
     },
     "after2_seo_sunset_joke": {
         "name": "{name}",
-        "text": "*Seoyeon se detiene un momento. Y entonces -- se rie. No solo los labios, sino los ojos. Una sonrisa que nunca habia visto.*"
+        "text": "*Seoyeon se detiene un momento. Y entonces -- se rie. No solo los labios, sino los ojos. Una sonrisa que nunca había visto.*"
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
@@ -214,7 +214,7 @@
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Me echo un poco hacia atras.*\n\nQue haces de repente."
+        "text": "*Me echo un poco hacia atrás.*\n\nQue haces de repente."
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
@@ -228,7 +228,7 @@
         "name": "{name}",
         "text": "*El papeleo está casi terminado.*",
         "choices": [
-            "Me quedo un poco más? Parece que aun queda algo",
+            "Me quedo un poco más? Parece que aún queda algo",
             "Si terminamos, me voy"
         ]
     },
@@ -262,7 +262,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*No hubo mensaje de Yuna. Pero mis pies se dirigen hacia la biblioteca. Por que? -- No estoy seguro. Tal vez por la nota de la manana.*\n\n*El pasillo del anexo. Ni un alma. -- La puerta de la sala de lectura secreta está entreabierta.*"
+        "text": "*No hubo mensaje de Yuna. Pero mis pies se dirigen hacia la biblioteca. Por qué? -- No estoy seguro. Tal vez por la nota de la mañana.*\n\n*El pasillo del anexo. Ni un alma. -- La puerta de la sala de lectura secreta está entreabierta.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Una puerta abierta por casualidad. -- La 'casualidad' de Yuna es sinonimo de 'a propósito'.*\n\n*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
+        "text": "*Una puerta abierta por casualidad. -- La 'casualidad' de Yuna es sinónimo de 'a propósito'.*\n\n*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -302,15 +302,15 @@
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "*Suena una pieza tranquila de piano. El atardecer está pintando la habitacion.*"
+        "text": "*Suena una pieza tranquila de piano. El atardecer está pintando la habitación.*"
     },
     "after2_yuna_9": {
         "name": "{name}",
-        "text": "*Yuna lee su libro y yo escucho la música. Sin palabras. -- Nada incomodo.*"
+        "text": "*Yuna lee su libro y yo escucho la música. Sin palabras. -- Nada incómodo.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*Despues de un largo rato* ...Alguien que viene aquí después de clases."
+        "text": "*Después de un largo rato* ...Alguien que viene aquí después de clases."
     },
     "after2_yuna_choice_pre2": {
         "name": "{name}",
@@ -318,13 +318,13 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "No habia habido nadie desde aquel sunbae."
+        "text": "No había habido nadie desde aquel sunbae."
     },
     "after2_yuna_choice": {
         "name": "{name}",
         "text": "*Yuna dijo dos frases. -- Para ella, eso es lo mismo que 'gracias'.*",
         "choices": [
-            "Deberia venir todos los días?",
+            "Debería venir todos los días?",
             "Es agradable porque es tranquilo"
         ]
     },
