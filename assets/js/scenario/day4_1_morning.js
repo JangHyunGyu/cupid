@@ -413,10 +413,10 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
-            {"condition": "route_seoyeon", "next": "date_seo_1"},
+            {"condition": "route_dain", "next": "date_dain_1"},
             {"condition": "route_yuna", "next": "date_yuna_1"},
-            {"condition": "route_dain", "next": "date_dain_1"}
-        ],
-        "next": "date_seo_1"
+            {"condition": "route_seoyeon", "next": "date_seo_1"},
+            {"next": "date_seo_1"}
+        ]
     }
 });

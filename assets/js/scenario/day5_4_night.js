@@ -686,9 +686,10 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "branches": [
-            { "condition": "route_seoyeon", "next": "true_epilogue_4_seo" },
+            { "condition": "route_dain", "next": "true_epilogue_4_dain" },
             { "condition": "route_yuna", "next": "true_epilogue_4_yuna" },
-            { "next": "true_epilogue_4_dain" }
+            { "condition": "route_seoyeon", "next": "true_epilogue_4_seo" },
+            { "next": "true_epilogue_4_seo" }
         ]
     },
     "true_epilogue_4_seo": {
@@ -740,10 +741,10 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "branches": [
-            { "condition": "route_seoyeon", "next": "good_1_seo" },
-            { "condition": "route_yuna", "next": "good_1_yuna" },
             { "condition": "route_dain", "next": "good_1_dain" },
-            { "next": "good_2_seo" }
+            { "condition": "route_yuna", "next": "good_1_yuna" },
+            { "condition": "route_seoyeon", "next": "good_1_seo" },
+            { "next": "good_1_seo" }
         ]
     },
     "good_1_seo": {
