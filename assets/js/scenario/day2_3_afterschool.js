@@ -186,61 +186,61 @@ Object.assign(SCENARIO[2], {
         "next": "after2_dain_freetalk"
     },
     "after2_dain_end": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_2"
     },
     "after2_dain_end_2": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_2b"
     },
     "after2_dain_end_2b": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_2c"
     },
     "after2_dain_end_2c": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_2d"
     },
     "after2_dain_end_2d": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_3"
     },
     "after2_dain_end_3": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_3b"
     },
     "after2_dain_end_3b": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_3c"
     },
     "after2_dain_end_3c": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_3d"
     },
     "after2_dain_end_3d": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_3e"
     },
     "after2_dain_end_3e": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_shy.png",
         "stats": { "Seoyeon": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
