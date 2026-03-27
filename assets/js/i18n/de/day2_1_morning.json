@@ -1,10 +1,10 @@
 {
     "morning2_start": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Tag zwei. Die Uniform fühlt sich etwas bequemer an als gestern. Passe ich mich schnell an, oder gebe ich schnell auf?*"
     },
     "morning2_start_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*In dem Moment, als ich die Klassentür öffne -- ein Schlag in den Rücken.*"
     },
     "morning2_dain_1": {
@@ -28,23 +28,23 @@
         "text": "Das ist normal! Du bist der, dem was fehlt!"
     },
     "morning2_dain_6": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Wenn es eine Welt gäbe, in der diese Lautstärke um 8 Uhr morgens normal wäre, wäre Dain deren Präsidentin.*"
     },
     "morning2_note_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich will mich gerade setzen, als -- mir ein gefalteter Zettel auf meinem Tisch auffällt.*"
     },
     "morning2_note_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*'Komm mittags zum Bibliotheksanbau. -- Yuna'*"
     },
     "morning2_note_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dieselbe ordentliche Handschrift wie gestern. Kurz. Und der Ort ist konkret. -- Der 'Anbau' der Bibliothek? Das ist ein anderer Ort als gestern.*"
     },
     "morning2_seo_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich will den Zettel gerade einstecken, als -- eine vertraute Stimme vom Flur kommt.*"
     },
     "morning2_seo_2": {
@@ -52,7 +52,7 @@
         "text": "Gut geschlafen?"
     },
     "morning2_seo_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon geht durch den Flur und wirft einen Blick ins Klassenzimmer. Ihr Blick trifft genau auf mich.*"
     },
     "morning2_seo_4": {
@@ -64,11 +64,11 @@
         "text": "Ich bin nur vorbeigekommen. -- Hab auch heute einen schönen Tag."
     },
     "morning2_minsu_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie blieb nicht stehen. Aber ihr Blick lag eindeutig auf mir.*"
     },
     "morning2_minsu_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Minsu dreht sich vom vorderen Platz um.*"
     },
     "morning2_minsu_3": {
@@ -84,7 +84,7 @@
         "text": "...Das stimmt, aber darum geht's nicht."
     },
     "morning2_dain_claim_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain beobachtet, wie Seoyeon davongeht.*"
     },
     "morning2_dain_claim_4": {
@@ -100,11 +100,11 @@
         "text": "Ich hab dich zuerst gefunden, also bist du unser Neuer! Reserviert! Meins!"
     },
     "morning2_break_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Kann man einen Menschen reservieren? -- Aber irgendwie hab ich keine Lust zu widersprechen.*"
     },
     "morning2_seo_dust_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Pause nach der ersten Stunde. Ich begegne Seoyeon im Flur. Sie bleibt stehen. Schaut auf meine Schulter.*"
     },
     "morning2_seo_dust_2": {
@@ -112,7 +112,7 @@
         "text": "Moment."
     },
     "morning2_seo_dust_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeons Hand greift zu meiner Schulter. Sie wischt etwas ab. Natürlich. Zu natürlich.*"
     },
     "morning2_seo_dust_4": {
@@ -128,11 +128,11 @@
         "text": "Was denn? War nur Staub."
     },
     "morning2_dain_react_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Berührung an meiner Schulter dringt einen Takt zu spät ins Bewusstsein. — Wohl nicht wegen dem Staub.*"
     },
     "morning2_dain_react_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon geht weiter, als wäre nichts gewesen. Dains Stimme kommt von hinten.*"
     },
     "morning2_dain_react_3": {
@@ -148,11 +148,11 @@
         "text": "Staub... war da wirklich Staub?!"
     },
     "morning2_dain_react_6": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*War wahrscheinlich welcher da. Vielleicht. -- Aber darum geht's wohl nicht.*"
     },
     "morning2_haeun_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Im Flur, wo Seoyeon verschwunden ist -- ein Mädchen mit einem Schülerrats-Armband kommt näher.*"
     },
     "morning2_haeun_2": {
@@ -184,11 +184,11 @@
         "text": "*Sie sagte Bitte, aber ihr Blick war eine Warnung. — Dieses Mädchen macht sich wirklich Sorgen um Seoyeon.*"
     },
     "morning2_haeun_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Haeun verbeugt sich leicht und geht.*"
     },
     "morning2_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Jemand, der ein ganzes Jahr lang nie als Erste auf jemanden zugegangen ist -- ist auf mich zuerst zugekommen? Was bedeutet das?*"
     },
     "hidden_homeroom_d2_1": {
@@ -196,7 +196,7 @@
         "text": "Ach, {name}. Komm mal kurz ins Lehrerzimmer."
     },
     "hidden_homeroom_d2_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie sagt, es sei Verwaltungskram. Sie verpackt ihr Interesse immer als dienstlich.*"
     },
     "hidden_homeroom_d2_3": {
@@ -224,7 +224,7 @@
         "text": "...Okay. War nur eine Frage."
     },
     "hidden_homeroom_d2_6": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Schublade. Hat sie gerade hingeschaut? — Durch den Spalt sehe ich einen Stapel Papiere. Sieht aus wie Manuskriptseiten.*"
     },
     "hidden_homeroom_d2_7": {
@@ -236,7 +236,7 @@
         "text": "Dain ist laut, oder? — Die ist immer so. Aber kein schlechtes Mädchen. Eher der Typ, um den man sich Sorgen macht."
     },
     "hidden_homeroom_d2_9": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Danke, Frau Lehrerin."
     },
     "hidden_homeroom_d2_10": {
@@ -264,7 +264,7 @@
         "text": "...Wenn ich den Neuen bevorzuge, reden die anderen."
     },
     "hidden_homeroom_d2_12": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich verlasse das Lehrerzimmer — die Papiere in der Schublade lassen mir keine Ruhe.*"
     },
     "morning2_greet_seo_1": {

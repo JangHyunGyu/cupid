@@ -1,14 +1,14 @@
 {
     "night_start": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Back in my room. Lying on the bed.*"
     },
     "night_start_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*For a first day — I'm drained. But it's not bad.*"
     },
     "night_start_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*My phone buzzes. The school messenger.*"
     },
     "night_msg_seo_1": {
@@ -16,7 +16,7 @@
         "text": "*How was the rooftop today?*"
     },
     "night_msg_seo_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The breeze was nice*"
     },
     "night_msg_seo_3": {
@@ -28,7 +28,7 @@
         "text": "*...It's on the house*"
     },
     "night_msg_seo_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She sent 'It's on the house' as a separate message on purpose. — Is this calculated, or sincere?*"
     },
     "night_msg_yuna_1": {
@@ -40,7 +40,7 @@
         "text": "*I'll save your seat tomorrow*"
     },
     "night_msg_yuna_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Short. But 'I'll save your seat' — for her, isn't that the warmest welcome she can give?*"
     },
     "night_msg_dain_1": {
@@ -56,19 +56,19 @@
         "text": "*Still salty about the bread money honestly lolol*"
     },
     "night_msg_dain_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Three messages in a row. Can she not breathe between texts?*"
     },
     "night_late_transition": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*About to fall asleep when — my phone buzzes one more time.*"
     },
     "night_late_transition_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*11 PM. Who is it?*"
     },
     "night_late_branch": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The screen lights up.*"
     },
     "night_seo_late_1": {
@@ -80,7 +80,7 @@
         "text": "*— If you don't show up, I'm coming to find you*"
     },
     "night_seo_late_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Can't tell if that's a threat or a promise. — This person has no boundaries.*"
     },
     "night_yuna_late_1": {
@@ -96,7 +96,7 @@
         "text": "*— I debate replying, and the screen goes dark.*"
     },
     "night_yuna_late_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Did she leave me on read, or did I leave her on read? — Everything about this person is ambiguous.*"
     },
     "night_dain_late_1": {
@@ -112,23 +112,23 @@
         "text": "*No isn't an option lol*"
     },
     "night_dain_late_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Does this person not understand the word 'no'?*"
     },
     "night_end_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I put down my phone.*"
     },
     "night_end_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Staring at the ceiling. The cherry blossom scent still lingers on my uniform.*"
     },
     "night_end_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Not a bad first day.*"
     },
     "night_end_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Tomorrow — might be even more interesting.*"
     },
     "night_seo_freetalk": {
@@ -150,23 +150,23 @@
         "personality": "Yuna is a mysterious literary girl. Her messages are short and cryptic. Reaching out first at night is a big deal for her."
     },
     "night_hidden_check": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Between the messenger notifications — I notice something else.*"
     },
     "night_hidden_homeroom_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There's a post from the homeroom teacher on the school app. 'Class 3-2 Notice: Bring math supplies for 1st period tomorrow. — And {name}, as long as you're settling in okay, that's enough.'*"
     },
     "night_hidden_homeroom_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*A personal message in a class announcement? — Does she not know the difference between work and personal, or is she doing it on purpose?*"
     },
     "night_hidden_nurse_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There's an alert on the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back if symptoms persist tomorrow. Drink lots of water. — the ♥ is strictly medical concern ^^'*"
     },
     "night_hidden_nurse_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*A school nurse who puts hearts in medical records. Never seen anyone use emojis in health files before.*"
     }
 }

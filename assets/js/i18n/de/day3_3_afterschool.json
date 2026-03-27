@@ -1,10 +1,10 @@
 {
     "after3_start": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Nach der Schule. Die Nachwirkungen des Mittagessens halten an. — Trotzdem muss ich irgendwohin.*"
     },
     "after3_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Wohin soll ich gehen.*",
         "choices": [
             "Zum Schülerratszimmer",
@@ -13,15 +13,15 @@
         ]
     },
     "after3_seo_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich öffnete die Tür zum Schülerratszimmer. — Seoyeon liegt über dem Schreibtisch zusammengesunken.*"
     },
     "after3_seo_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Das habe ich noch nie gesehen. Die perfekte Schülerratsvorsitzende — wehrlos über dem Tisch zusammengesunken.*"
     },
     "after3_seo_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon hebt den Kopf, als sie jemanden bemerkt. Ihre Augen sehen müde aus. Ihr Make-up ist leicht verschmiert.*"
     },
     "after3_seo_4": {
@@ -45,7 +45,7 @@
         "text": "Diese Seite von mir. — Das bleibt ein Geheimnis."
     },
     "after3_seo_9": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon richtet ihre Haltung auf. Aber — ihr übliches perfektes Lächeln kehrt nicht zurück.*"
     },
     "after3_seo_choice": {
@@ -57,7 +57,7 @@
         ]
     },
     "after3_seo_choice1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon hält inne. Legt den Stift ab. Langsam.*"
     },
     "after3_seo_choice1_react": {
@@ -65,35 +65,35 @@
         "text": "...Solche Worte. Die sollte man nicht so leichtfertig sagen."
     },
     "after3_seo_choice2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ihre Augen glänzen feucht. — Sie hat nicht geweint. Noch nicht.*"
     },
     "after3_seo_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Diese Worte wiegen schwer. — Ich glaube, ich beginne zu verstehen, wie gewaltig es für diese Person ist, eine unvollkommene Seite von sich zu zeigen.*"
     },
     "after3_seo_end_c2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ihr Geheimnis zu hüten — scheint für sie von großer Bedeutung zu sein.*"
     },
     "after3_yuna_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Der Anbau der Bibliothek. Yunas geheimer Leseort. — Die Tür steht offen.*"
     },
     "after3_yuna_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich gehe rein, aber Yuna ist nicht da. Stattdessen — liegt ein Notizbuch aufgeschlagen auf dem Sofa. Voller Handschrift.*"
     },
     "after3_yuna_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Es ist ein Roman. Ein Roman, den Yuna geschrieben hat. — Darf ich ihn lesen?*"
     },
     "after3_yuna_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Erste Seite.*"
     },
     "after3_yuna_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*‚Eines Tages kam ein Austauschschüler. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.‘*"
     },
     "after3_yuna_6": {
@@ -101,7 +101,7 @@
         "text": "Was machst du."
     },
     "after3_yuna_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Yunas Stimme von hinten. Ich drehe mich um und sie steht da mit zwei Getränken. — Sie erstarrt, als sie sieht, dass ich das Notizbuch lese.*"
     },
     "after3_yuna_8": {
@@ -109,7 +109,7 @@
         "text": "...Das."
     },
     "after3_yuna_9": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ihre Ohren. Rot. — Es ist das erste Mal, dass ich Yuna erröten sehe.*"
     },
     "after3_yuna_choice": {
@@ -133,11 +133,11 @@
         "text": "...Romane sind. Fiktion."
     },
     "after3_yuna_choice1_react": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie sagte Fiktion, aber ihre Ohren lügen.*"
     },
     "after3_yuna_choice2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Yuna hält inne. Sie schaut auf das Notizbuch hinunter.*"
     },
     "after3_yuna_choice2_2": {
@@ -149,19 +149,19 @@
         "text": "...Weil es vorbei ist, wenn ich das Ende schreibe."
     },
     "after3_yuna_choice2_react": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Yuna hat mehr als zwei Sätze hintereinander gesprochen. — Bei ihr ist das ein Beweis für Gefühle.*"
     },
     "after3_yuna_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Yuna drückt das Notizbuch fest an ihre Brust.*"
     },
     "after3_dain_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Turnhalle. Dain dehnt sich alleine. Sie versucht leicht zu joggen und —*"
     },
     "after3_dain_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*— knickt leicht mit dem rechten Bein um. Sie verzieht das Gesicht.*"
     },
     "after3_dain_3": {
@@ -177,11 +177,11 @@
         "text": "Sieht nicht gut aus."
     },
     "after3_dain_6": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Zu viele Ausrufezeichen. — Viel zu viele. Benutzt sie mehr Ausrufezeichen, wenn es ihr nicht gut geht?*"
     },
     "after3_dain_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain setzt sich auf die Bank. Sie reibt sich das Knie.*",
         "choices": [
             "Mich neben sie setzen und still warten",
@@ -189,7 +189,7 @@
         ]
     },
     "after3_dain_choice1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich setze mich wortlos neben sie. Dain schaut kurz herüber.*"
     },
     "after3_dain_choice1_2": {
@@ -201,7 +201,7 @@
         "text": "Weil du sagen würdest, dass alles gut ist."
     },
     "after3_dain_choice1_react": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain zögert. — Dann lächelt sie, ganz leicht. Ein Lächeln, das ich noch nie gesehen habe.*"
     },
     "after3_dain_choice1_react2": {
@@ -213,15 +213,15 @@
         "text": "Danke. Dass du nichts gefragt hast."
     },
     "after3_dain_choice2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Eine stille Dain. — Ich glaube, ich spüre zum ersten Mal ihre wahre Temperatur.*"
     },
     "after3_dain_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain boxt mir leicht gegen die Schulter. — Schwächer als gestern.*"
     },
     "after3_confront_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Als ich nach der Schule rauskomme — wartet Seoyeon im Flur. Arme verschränkt. Ohne ihre übliche Gelassenheit.*"
     },
     "after3_confront_2": {
@@ -229,7 +229,7 @@
         "text": "{name}. Moment."
     },
     "after3_confront_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon führt mich ans Ende des Flurs. Wo niemand ist.*"
     },
     "after3_confront_4": {
@@ -245,7 +245,7 @@
         "text": "Sei ehrlich. Hast du allen das Wochenende versprochen?"
     },
     "after3_confront_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon sieht mich geradeheraus an. Nicht mit den Augen einer Schülerratsvorsitzenden. Mit den Augen eines Menschen.*",
         "choices": [
             "Ehrlich zugeben",
@@ -274,7 +274,7 @@
         "text": "...Heute lasse ich das Dach nicht offen."
     },
     "after3_confront_admit_6": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ihr Rücken ist gerade. Perfekt. — Aber ihre Fäuste sind geballt. Die Knöchel weiß.*"
     },
     "after3_confront_excuse": {
@@ -290,15 +290,15 @@
         "text": "...Wirklich? Kann ich... das glauben?"
     },
     "after3_confront_lie_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Augen, die glauben wollen. — Ich wusste nicht, dass eine Lüge so schwer wiegen kann.*"
     },
     "after3_confront_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich stehe allein im Flur, in dem Seoyeon verschwunden ist. — Ihre Haltung war gerade. Perfekt gerade. Aber ihre Fäuste waren geballt.*"
     },
     "after3_final": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Der Nachmittag ist vorbei. — Was ich heute gesehen habe, lässt mich nicht los.*"
     },
     "after3_seo_freetalk": {
@@ -324,7 +324,7 @@
         "text": ""
     },
     "haeun_warn_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich komme aus dem Schülerratszimmer. Der Flur ist leer. — Jemand hat gewartet.*"
     },
     "haeun_warn_2": {
@@ -340,7 +340,7 @@
         "text": "...Sunbae hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
     },
     "haeun_warn_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon hat geweint. — Mir hat sie nur gesagt, ich hätte 'ihre unvollkommene Seite gesehen'. Danach hat sie geweint.*"
     },
     "haeun_warn_6": {
@@ -352,7 +352,7 @@
         "text": "Ich weiß, dass ich mich einmische. Aber ich mache mir Sorgen um Sunbae. — Zuhause ist es gerade... kompliziert bei ihr. Ihre Eltern... ...egal. Bitte, sei gut zu ihr. Ich bitte dich."
     },
     "haeun_warn_8": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Das Bild von Seoyeon, die allein auf der Toilette weint, geht mir nicht aus dem Kopf. Der perfekt gerade Rücken, die weißen Knöchel vor Anspannung, und — eine leere Toilette.*"
     },
     "minsu_d3_check": {
@@ -360,7 +360,7 @@
         "text": ""
     },
     "minsu_d3_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Auf dem Heimweg. Minsu wartet am Schultor.*"
     },
     "minsu_d3_2": {
@@ -388,11 +388,11 @@
         "text": "Absagen ist auch Liebe. Jemandem absagen, bei dem es nicht sein kann — ist hundertmal besser als falsche Hoffnung."
     },
     "minsu_d3_8": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Absagen ist auch Liebe. — An meiner alten Schule habe ich Sojeong nicht einmal die Gelegenheit gegeben, mich abzulehnen. Weil ich es nicht aussprechen konnte.*"
     },
     "minsu_d3_9": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Wenn Sojeong mich damals abgelehnt hätte — wäre das nicht so hängengeblieben. Wenn absagen auch Liebe ist, dann muss ich jetzt — einer einzigen Person sagen, dass sie mir gefällt.*"
     },
     "minsu_d3_10": {
@@ -416,7 +416,7 @@
         "text": "......"
     },
     "minsu_d3_5b": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Minsu seufzt. Nicht genervt — ehrlich besorgt.*"
     },
     "minsu_d3_6b": {
@@ -424,7 +424,7 @@
         "text": "Ich frag dich nicht, was an deiner alten Schule passiert ist. Aber eins will ich dir sagen."
     },
     "after3_reject_for_seo_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich treffe Dain im Flur. Ihre übliche Energie fehlt.*"
     },
     "after3_reject_for_seo_2": {
@@ -432,15 +432,15 @@
         "text": "...Du kommst heute nicht in die Turnhalle, oder?"
     },
     "after3_reject_for_seo_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich gehe an der Bibliothek vorbei. Yunas Platz ist leer. Ein einzelner Zettel liegt da. '...Verstanden.' Drei Wörter.*"
     },
     "after3_reject_for_seo_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dains Satz ohne Ausrufezeichen, Yunas Zettel mit nur drei Wörtern. — Das Gewicht der Wahl lastet auf meinen Schultern.*"
     },
     "after3_reject_for_yuna_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon ordnet ihr Klemmbrett im Flur.*"
     },
     "after3_reject_for_yuna_2": {
@@ -448,15 +448,15 @@
         "text": "Beliebt, was."
     },
     "after3_reject_for_yuna_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain schlägt allein Bälle in der Turnhalle. Sie sieht mich und sagt 'Ah, hey!' aber wendet das Gesicht ab. Ihre Augen sind rot.*"
     },
     "after3_reject_for_yuna_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeons eine Zeile, Dains rote Augen. — Der Rückweg fühlt sich schwer an.*"
     },
     "after3_reject_for_dain_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon ordnet ihr Klemmbrett.*"
     },
     "after3_reject_for_dain_2": {
@@ -464,11 +464,11 @@
         "text": "Der Schülerrat hat viel zu tun. Ich esse mittags getrennt."
     },
     "after3_reject_for_dain_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Keine Zettel in der Bibliothek. Yunas Tasche ist weg. Sie ist wohl früh gegangen.*"
     },
     "after3_reject_for_dain_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeons einstudiertes Lächeln, Yunas leerer Platz. — Die verbleibenden zwei Plätze werden leerer.*"
     },
     "after3_reject_for_dain_2b": {

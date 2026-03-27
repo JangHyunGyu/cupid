@@ -1,10 +1,10 @@
 {
     "after2_start": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Apres les cours. Deux notifications sur mon telephone.*\n\nDain : Viens au gymnase !! Aujourd'hui c'est serieux !!\nSeoyeon : Tu peux passer a la salle du conseil ? On manque de monde.\n\n*Rien de Yuna. -- C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliotheque' accrochent mon regard.*"
     },
     "after2_choice": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Ou aller ?*",
         "choices": [
             "Au gymnase (Dain)",
@@ -13,7 +13,7 @@
         ]
     },
     "after2_dain_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le gymnase. Dain fait des echauffements devant le filet de volley.*"
     },
     "after2_dain_2": {
@@ -29,7 +29,7 @@
         "text": "Moi j'avais dix minutes d'avance !!"
     },
     "after2_dain_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Ca veut dire que t'etais en avance, pas que je suis en retard.*"
     },
     "after2_dain_6": {
@@ -45,7 +45,7 @@
         "text": "J'ai faim !!"
     },
     "after2_dain_9": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je sers. -- Etonnamment, le deuxieme service passe proprement au-dessus du filet.*"
     },
     "after2_dain_10": {
@@ -53,7 +53,7 @@
         "text": "*Les yeux ecarquilles* Hein ? J'allais aller doucement, mais finalement non.\n\n*Dain baisse sa position. Ses yeux ont change.*\n\nLa je donne tout !"
     },
     "after2_dain_11": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Les echanges se prolongent. Le mouvement de Dain est -- clairement au-dessus de la moyenne. Rapide, precis, de la memoire musculaire en action.*\n\n*Cette fille est vraiment douee. Pas juste 'aime le sport' -- elle bouge comme quelqu'un qui y a un jour mis sa vie en jeu.*\n\n*Score final : 3 a 2. J'ai gagne de justesse.*"
     },
     "after2_dain_12": {
@@ -77,7 +77,7 @@
         "text": "*En me donnant un coup de poing dans l'epaule* Quel escroc !! Hahaha -- mais c'etait marrant !"
     },
     "after2_dain_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Ses yeux sont en forme de croissant. Les memes yeux qu'hier. -- C'est comme ca que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki pres de l'ecole.*\n\n*Dain souffle sur son tteokbokki et dit --*"
     },
     "after2_dain_end_2": {
@@ -97,7 +97,7 @@
         "text": "{name} etait bien meilleure quand meme."
     },
     "after2_dain_end_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dain arrete ses baguettes. Juste un instant.*"
     },
     "after2_dain_end_3b": {
@@ -105,7 +105,7 @@
         "text": "...Evidemment ! J'etais sportive de haut niveau !"
     },
     "after2_dain_end_3c": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*'J'etais'. Passe. -- Quelque chose me dit qu'il vaut mieux ne pas demander.*"
     },
     "after2_dain_end_3d": {
@@ -113,11 +113,11 @@
         "text": "Ahh c'est trop epice !! De l'eau, de l'eau !!"
     },
     "after2_dain_end_3e": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le sujet a change. -- Si elle l'a change expres ou si c'etait vraiment epice. Probablement les deux.*"
     },
     "after2_seo_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La salle du conseil des eleves. Seoyeon est assise derriere une pile de documents. Seule.*"
     },
     "after2_seo_2": {
@@ -141,7 +141,7 @@
         "text": "J'ai pas demande -- je t'ai donne une opportunite."
     },
     "after2_seo_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le mot 'demander' ne semble pas exister dans le vocabulaire de cette personne.*\n\n*Je commence a trier les documents. Budgets evenements, demandes de clubs. Y en a pas mal.*"
     },
     "after2_seo_8": {
@@ -161,7 +161,7 @@
         "text": "Comme tes compliments. T'es vague la-dessus aussi."
     },
     "after2_seo_8b": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Seoyeon leve les yeux des documents.*"
     },
     "after2_seo_8b2": {
@@ -177,7 +177,7 @@
         "text": "C'est un compliment. Prends-le."
     },
     "after2_seo_choice1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dire directement que c'est un compliment. -- Ca semble rare venant d'elle.*\n\n*En rangeant, Seoyeon fait rouler sa nuque. Ca a l'air tendu.*",
         "choices": [
             "Le coucher de soleil est magnifique. -- Ah, je parlais de dehors, pas de toi.",
@@ -185,7 +185,7 @@
         ]
     },
     "after2_seo_sunset_joke": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Seoyeon marque une pause. Et puis -- elle rit. Pas juste ses levres, mais ses yeux. Un sourire que je n'avais jamais vu.*"
     },
     "after2_seo_sunset_react": {
@@ -197,7 +197,7 @@
         "text": "Ca va. C'est quotidien."
     },
     "after2_seo_neck_react": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Seoyeon roule ses epaules. J'entends craquer.*"
     },
     "after2_seo_neck_touch": {
@@ -205,7 +205,7 @@
         "text": "C'est vraiment tendu. Bouge pas une seconde.\n\n*Seoyeon se leve et vient derriere moi. Elle pose ses mains sur mes epaules.*"
     },
     "after2_seo_neck_high": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je ferme les yeux et me laisse faire.*"
     },
     "after2_seo_neck_high_2": {
@@ -213,7 +213,7 @@
         "text": "*Seoyeon s'appuie sur mon épaule.* ...Bouge pas. Juste un instant.\n\n*C'est elle qui s'est appuyée en disant qu'elle avait mal au cou — mais c'est moi qui suis nerveux.*"
     },
     "after2_seo_neck_low": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je me recule legerement.*\n\nQu'est-ce que tu fais comme ca."
     },
     "after2_seo_neck_low_2": {
@@ -221,11 +221,11 @@
         "text": "*Retirant ses mains* ...C'est rien.\n\n*Son expression se fige pendant une demi-seconde. -- Puis elle sourit immediatement. Parfaitement.*"
     },
     "after2_seo_9": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le soleil couchant baigne la salle du conseil. Le tri est presque termine.*"
     },
     "after2_seo_choice2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le tri est presque termine.*",
         "choices": [
             "Je reste encore un peu ? Il semble en rester",
@@ -233,7 +233,7 @@
         ]
     },
     "after2_seo_stay": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Seoyeon pose les documents et regarde par la fenetre. La lumiere du couchant touche son visage.*"
     },
     "after2_seo_stay_2": {
@@ -249,23 +249,23 @@
         "text": "Jamais. -- Sauf ici."
     },
     "after2_seo_stay_3c": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*'Sauf ici.' -- Que ce soit le toit ou la salle du conseil, Seoyeon est quelqu'un qui a besoin d'un endroit ou elle peut retirer le masque.*"
     },
     "after2_seo_leave": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Seoyeon hoche la tete.*"
     },
     "after2_seo_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je sors de la salle du conseil. Le couchant peint le couloir.*"
     },
     "after2_yuna_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Pas de message de Yuna. Mais mes pieds se dirigent vers la bibliotheque. Pourquoi ? -- Pas sur. Peut-etre a cause du mot ce matin.*\n\n*Le couloir de l'annexe. Pas ame qui vive. -- La porte de la salle de lecture secrete est entrouverte.*"
     },
     "after2_yuna_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J'entre discretement. Yuna est sur le canape, en train de lire. Le soleil couchant entre par la fenetre.*\n\n*Yuna leve les yeux. Elle n'est pas surprise.*"
     },
     "after2_yuna_3": {
@@ -281,7 +281,7 @@
         "text": "Faut que je t'appelle pour que tu viennes ?"
     },
     "after2_yuna_6": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Une question subtilement chargee. -- Mais il y a un indice qu'elle attendait.*"
     },
     "after2_yuna_7": {
@@ -293,7 +293,7 @@
         "text": "...Par hasard."
     },
     "after2_yuna_8b": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'expres'.*\n\n*Je m'assois a cote d'elle. Yuna me tend un de ses ecouteurs.*"
     },
     "after2_yuna_8c": {
@@ -301,11 +301,11 @@
         "text": "Ecoute."
     },
     "after2_yuna_8d": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Un morceau de piano tranquille commence. Le couchant peint la piece.*"
     },
     "after2_yuna_9": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Yuna lit son livre, et j'ecoute la musique. Aucun mot. -- Pas du tout inconfortable.*"
     },
     "after2_yuna_choice_pre1": {
@@ -321,7 +321,7 @@
         "text": "Y en a pas eu depuis ce sunbae."
     },
     "after2_yuna_choice": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Yuna a dit deux phrases. -- Pour elle, c'est l'equivalent de 'merci'.*",
         "choices": [
             "Je devrais venir tous les jours ?",
@@ -329,7 +329,7 @@
         ]
     },
     "after2_yuna_everyday": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Yuna tripote le fil de l'ecouteur.*"
     },
     "after2_yuna_everyday_react": {
@@ -341,11 +341,11 @@
         "text": "...C'est pour ca que j'aime cet endroit."
     },
     "after2_yuna_quiet_react": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Les levres de Yuna se relevent tres legerement.*\n\n*Le sourire de Yuna est une espece rare. Pas beaucoup de gens l'ont vu.*"
     },
     "after2_yuna_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le soleil se couche. Assis cote a cote avec Yuna, a ecouter la musique. Un moment ou aucun mot n'est necessaire.*"
     },
     "after2_dain_freetalk": {
@@ -355,7 +355,7 @@
         "personality": "Dain est une athlète énergique et compétitive."
     },
     "hidden_nurse_d2_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je me suis écorche le coude en sport. Rien de grave, mais ça saigne un peu.*"
     },
     "hidden_nurse_d2_2": {
@@ -363,7 +363,7 @@
         "text": "Oh, le nouveau d'hier. Déjà de retour ? Tu veux devenir un habitué ?"
     },
     "hidden_nurse_d2_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Je me suis écorche le coude."
     },
     "hidden_nurse_d2_4": {
@@ -391,7 +391,7 @@
         "text": "Je suis une pro~ Bâcler le travail, ce serait une insulte au pansement."
     },
     "hidden_nurse_d2_6": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*En vérifiant le pansement — son ordinateur est ouvert sur le bureau. Ce n'est pas un dossier médical — on dirait un journal intime.*"
     },
     "hidden_nurse_d2_7": {
@@ -429,7 +429,7 @@
         "personality": "L'infirmière est joueuse mais méticuleuse. Prend son temps pour les pansements."
     },
     "minsu_warn_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Sur le chemin du retour. En passant le portail — Minsu me suit par derrière.*"
     },
     "minsu_warn_2": {
@@ -465,7 +465,7 @@
         "text": "Les trois ne font ça qu'avec toi. — Tu le sais très bien."
     },
     "minsu_warn_10": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je le sais. Je fais juste semblant de ne pas voir.*"
     },
     "minsu_warn_11": {
@@ -473,7 +473,7 @@
         "text": "Le problème, c'est que tu souris aux trois de la même façon."
     },
     "minsu_warn_12": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Rien à répondre. Minsu a raison. — Je me crois observateur, mais je ne vois même pas les malentendus que je sème moi-même.*"
     },
     "minsu_warn_13": {
@@ -481,7 +481,7 @@
         "text": "Tu faisais pareil dans ton ancien lycée ?"
     },
     "minsu_warn_14": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*— Mes pas se sont arrêtés net.*\n\n*Mon ancien lycée. — Ces mots se plantent dans ma poitrine. Là-bas, je n'avais rien dit à personne et je l'avais regretté. Cette fois — je parle à tout le monde, et c'est encore pire ?*"
     },
     "minsu_warn_15": {

@@ -1,10 +1,10 @@
 {
     "morning5_start": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Day five. The last day. The uniform feels comfortable now. Five days ago it was stiff, but now it fits. — Have I gotten used to this school, or to these people?*"
     },
     "morning5_start_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There's a school event today. The final one. The moment I step into the classroom — signals come from three directions.*"
     },
     "morning5_mood_check": {
@@ -12,23 +12,23 @@
         "text": ""
     },
     "morning5_mood_high": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Last day. Strangely, my steps feel light. Having someone I want to see — that's reason enough to get through the morning.*"
     },
     "morning5_mood_mid": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Last day. More complicated than yesterday. I have something to say, but I don't know if it'll make it past my lips.*"
     },
     "morning5_mood_low": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Last day. Five days went by fast. In the end, am I leaving this school without leaving anything behind too?*"
     },
     "morning5_seo_note_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There's a note on my desk. Seoyeon's handwriting. — 'Make some time this afternoon. I'll leave the rooftop unlocked. — Seoyeon'*"
     },
     "morning5_yuna_story_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Passing by the literature club's display corner in the hallway — a short story is pinned to the bulletin board. Title: 'To the Person I Met in the Library.' It's Yuna's. — A story only the protagonist would recognize.*"
     },
     "morning5_dain_1": {
@@ -40,15 +40,15 @@
         "text": "If you try to run, I'll seriously be mad?"
     },
     "morning5_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Signals from three directions. — Time to choose an answer.*"
     },
     "hidden_homeroom_d5_check": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Event prep time. Walking down the hallway — I pass the empty classroom. The door is open.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The teacher is sitting at the desk. — Not a manuscript this time. She's holding an envelope. A brown envelope.*"
     },
     "hidden_homeroom_d5_2": {
@@ -60,7 +60,7 @@
         "text": "Haven't shown this to anyone in seven years."
     },
     "hidden_homeroom_d5_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*...I take the manuscript. It's heavier than I expected.*"
     },
     "hidden_homeroom_d5_5": {
@@ -92,7 +92,7 @@
         "text": "After you graduate — let's meet. Not as teacher and student."
     },
     "hidden_homeroom_d5_8": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She turns away. Her long hair sways. — Today, her cardigan buttons are straight.*"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -102,7 +102,7 @@
         "personality": "The teacher is more honest than usual because it's the last time. Last conversation after handing over the manuscript."
     },
     "hidden_nurse_d5_check": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Break during the event. Passing by the nurse's office.*"
     },
     "hidden_nurse_d5_1": {
@@ -114,7 +114,7 @@
         "text": "Come visit after graduation. ...Or before that, if you're hurt."
     },
     "hidden_nurse_d5_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "What if I'm not hurt?"
     },
     "hidden_nurse_d5_4": {
@@ -146,7 +146,7 @@
         "text": "I know. I just needed an excuse."
     },
     "hidden_nurse_d5_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There's small writing on the bandage. 'After graduation, let's meet at a cafe instead of the nurse's office — ♥'*"
     },
     "hidden_nurse_d5_freetalk": {

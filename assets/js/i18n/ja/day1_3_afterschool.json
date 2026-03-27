@@ -1,38 +1,38 @@
 {
     "after_start": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*放課後。学校を少し見て回ることにした。まだ構造をよく知らないから。*"
     },
     "after_start_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*廊下を歩く。スマホが振動する。——前の学校のグループチャット。*"
     },
     "after_kakao_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*『ソジョンが彼氏と桜の写真上げてたｗｗ』*"
     },
     "after_kakao_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*スマホをポケットにしまった。*"
     },
     "after_kakao_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*…ああ。*"
     },
     "after_kakao_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*大丈夫だ。本当に。もう過ぎたことだ。告白もできずに終わったじゃないか。未練じゃない、後悔だ。——あの時言っていたらどうなっていただろう。振られていても、こんなにモヤモヤしなかったのに。*"
     },
     "after_kakao_5": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*この学校では——言いたいことは言おう。今度こそ。*"
     },
     "after_kakao_end": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*スマホをまた取り出してグループを退出した。整理完了。——もうこの学校の人間だ。*"
     },
     "after_miss_dain_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*廊下を歩いていると、後ろからドシドシと足音が。*"
     },
     "after_miss_dain_2": {
@@ -40,7 +40,7 @@
         "text": "あぶない！！"
     },
     "after_miss_dain_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*反射的に横に避ける。ダインが横を擦り抜ける。走ってきて急停止。*"
     },
     "after_miss_dain_4": {
@@ -48,7 +48,7 @@
         "text": "お！反射神経いいじゃん！"
     },
     "after_miss_dain_5": {
-        "name": "僕",
+        "name": "{name}",
         "text": "廊下でなんで全力ダッシュなの？"
     },
     "after_miss_dain_6": {
@@ -56,15 +56,15 @@
         "text": "遅れてるの！体育館行かなきゃ！——あ、また明日ね！転校生！"
     },
     "after_miss_dain_7": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*手を振って走っていく。嵐のような女の子だ。名前も知らないのにもうタメ口だ。*"
     },
     "after_miss_yuna_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*図書館の前を通りかかると、赤い瞳の女子が本を読みながら歩いている。腕のタトゥーが目を引く——けれど、本を持つ姿は意外なほど静かだ。*"
     },
     "after_miss_yuna_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*——しおりが落ちる。*「あの、これ…」"
     },
     "after_miss_yuna_3": {
@@ -72,11 +72,11 @@
         "text": "………ありがとう。"
     },
     "after_miss_yuna_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*そしてまた歩いていく。それだけ。でも——なぜか印象に残る人だ。*"
     },
     "after_miss_seoyeon_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*帰ろうとしたら、廊下でソヨンとばったり会う。*"
     },
     "after_miss_seoyeon_2": {
@@ -84,7 +84,7 @@
         "text": "さっきどこ行ってたの？"
     },
     "after_miss_seoyeon_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "さっきって？"
     },
     "after_miss_seoyeon_4": {
@@ -92,7 +92,7 @@
         "text": "お昼。屋上開けておいたのに。私を待たせるなんて、大胆な転校生ね。"
     },
     "after_miss_seoyeon_5": {
-        "name": "僕",
+        "name": "{name}",
         "text": "待ってたの？"
     },
     "after_miss_seoyeon_6": {
@@ -100,7 +100,7 @@
         "text": "…風に当たりに上がったら、たまたまドアが開いてただけ。"
     },
     "after_miss_seoyeon_7": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*絶対待ってたと思う。——申し訳ないような、不思議とちょっと可笑いような。*"
     },
     "after_miss_seoyeon_8": {
@@ -108,7 +108,7 @@
         "text": "明日は逃げないでよ。"
     },
     "after_end": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*微笑みを残して通り過ぎる。*",
         "choices": [
             "職員室",
@@ -117,7 +117,7 @@
         ]
     },
     "after_hidden_homeroom_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*帰ろうとしたら——後ろから声がした。*"
     },
     "after_hidden_homeroom_2": {
@@ -125,7 +125,7 @@
         "text": "{name}。ちょっと残って。"
     },
     "after_hidden_homeroom_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*担任先生だ。カーディガンはさっきよりくしゃくしゃだ。一日戦った後みたいだ。*"
     },
     "after_hidden_homeroom_4": {
@@ -133,7 +133,7 @@
         "text": "悪いことはしてないよ。——転校生だからさ。慣れた？"
     },
     "after_hidden_homeroom_choice": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*義務的な質問に見えるのに、目は本気でこちらを見ている。*",
         "choices": [
             "大丈夫です。いい学校ですね。",
@@ -145,7 +145,7 @@
         "text": "そうか。良かった。——何かあったら職員室に来い。先生の仕事だから。"
     },
     "after_homeroom_ok_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*無感心な人かと思ったけど、意外と気にかけるタイプなのか。——まあ、担任だからか。*"
     },
     "after_homeroom_honest_1": {
@@ -153,7 +153,7 @@
         "text": "大変なのが普通だよ。新しい学校の初日に余裕がある方がおかしい。"
     },
     "after_homeroom_honest_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "先生も転校の経験ありますか？"
     },
     "after_homeroom_honest_3": {
@@ -165,7 +165,7 @@
         "text": "つらかったら職員室に来い。コーヒーくらいは——あ、生徒だからジュースくらいは出せる。"
     },
     "after_homeroom_honest_5": {
-        "name": "僕",
+        "name": "{name}",
         "text": "先生が生徒に飲み物おごってくれるんですか？"
     },
     "after_homeroom_honest_6": {
@@ -193,7 +193,7 @@
         "text": "あ、{name}。"
     },
     "after_homeroom_honest_8": {
-        "name": "僕",
+        "name": "{name}",
         "text": "はい？"
     },
     "after_homeroom_honest_9": {
@@ -201,7 +201,7 @@
         "text": "馴染めなかったら、また捕まえに来るからね。"
     },
     "after_homeroom_honest_10": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*担任が廊下の先に消える。長い髪が揺れている。——教育的配慮と言いながら、目はそうじゃなかった。*"
     },
     "after_homeroom_freetalk": {
@@ -211,15 +211,15 @@
         "personality": "担任先生はドライなユーモアの裏に優しさを隠す女性教師。30代前半、茶色のウェーブロングヘアにベージュのカーディガン。自分の気持ちを「業務」や「教育的配慮」で包む癖がある。元小説家志望。"
     },
     "after_hidden_nurse_intro": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*廊下を歩いていると——少しクラッとする。初日の緊張のせいかな。*"
     },
     "after_hidden_nurse_intro_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*廊下に「保健室」の看板が見える。——入ろうか、どうしよう。*"
     },
     "after_hidden_nurse_choice": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*朝から休みなく人に会い続けたからな。*",
         "choices": [
             "保健室に入る",
@@ -227,11 +227,11 @@
         ]
     },
     "after_nurse_skip": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*そのまま帰ることにした。大したことないだろう。*"
     },
     "after_nurse_enter_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*保健室のドアを開ける。消毒液の匂いがほのかに香る。白いカーテン、白いベッド、小さな机。机に女性が座っている。白衣に、首から聴診器。アッシュパープルのボブカットが整っていて、眼鏡越しにこちらを見ながら片手で頬杖をついている。何かを読んでいたようだが——顔を上げる。*"
     },
     "after_nurse_enter_2": {
@@ -239,7 +239,7 @@
         "text": "お、患者だ。"
     },
     "after_nurse_enter_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "少しめまいがして……"
     },
     "after_nurse_enter_4": {
@@ -247,7 +247,7 @@
         "text": "転校生でしょ？初日からもう保健室だなんて。ストレス溜まっちゃったかな〜"
     },
     "after_nurse_enter_5": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*保健先生が近づいてくる。手が額に触れる。*"
     },
     "after_nurse_enter_6": {
@@ -279,7 +279,7 @@
         "text": "敬語、使わなくていいよ。保健室ではリラックスして。——ここはそういう場所だから。"
     },
     "after_nurse_enter_9": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*水を飲みながら保健室を見回す。隠の小さな植木鉢。*"
     },
     "after_nurse_enter_10": {

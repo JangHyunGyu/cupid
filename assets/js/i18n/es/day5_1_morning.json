@@ -1,10 +1,10 @@
 {
     "morning5_start": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Quinto día. El último. El uniforme ya se siente cómodo. Hace cinco días estaba rígido, pero ahora se ajusta bien. — ¿Me he acostumbrado a esta escuela, o a estas personas?*"
     },
     "morning5_start_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Hoy hay un evento escolar. El último. En cuanto entro al aula — llegan señales desde tres direcciones.*"
     },
     "morning5_mood_check": {
@@ -12,23 +12,23 @@
         "text": ""
     },
     "morning5_mood_high": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Último día. Extrañamente, mis pasos se sienten ligeros. Tener a alguien a quien quiero ver — es razón suficiente para sobrevivir la mañana.*"
     },
     "morning5_mood_mid": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Último día. Más complicado que ayer. Tengo algo que decir, pero no sé si saldrá de mis labios.*"
     },
     "morning5_mood_low": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Último día. Cinco días pasaron rápido. Al final, ¿me iré de esta escuela sin dejar nada también?*"
     },
     "morning5_seo_note_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Hay una nota sobre mi escritorio. La letra de Seoyeon. — 'Haz un hueco esta tarde. Dejaré la azotea abierta. — Seoyeon'*"
     },
     "morning5_yuna_story_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Al pasar por el rincón de exposición del club de literatura en el pasillo — hay un cuento corto clavado en el tablón. Título: 'A la persona que conocí en la biblioteca'. Es de Yuna. — Una historia que solo el protagonista reconocería.*"
     },
     "morning5_dain_1": {
@@ -40,15 +40,15 @@
         "text": "¿Si intentas huir, me voy a enfadar de verdad?"
     },
     "morning5_end": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Señales desde tres direcciones. — Hay que elegir una respuesta.*"
     },
     "hidden_homeroom_d5_check": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Preparativos del evento. Paso por el aula vacía. La puerta está abierta.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La profesora está sentada en el escritorio. — No es un manuscrito. Tiene un sobre. Un sobre marrón.*"
     },
     "hidden_homeroom_d5_2": {
@@ -60,7 +60,7 @@
         "text": "No se lo he mostrado a nadie en siete años."
     },
     "hidden_homeroom_d5_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*...Recibo el manuscrito. Es más pesado de lo que esperaba.*"
     },
     "hidden_homeroom_d5_5": {
@@ -92,7 +92,7 @@
         "text": "Cuando te gradúes — vamos a vernos. No como profesora y alumno."
     },
     "hidden_homeroom_d5_8": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Se da la vuelta. Su largo cabello se balancea. — Hoy los botones de su cárdigan están rectos.*"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -102,7 +102,7 @@
         "personality": "La profesora es más sincera porque es la última vez. Última conversación tras entregar el manuscrito."
     },
     "hidden_nurse_d5_check": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Descanso del evento. Paso por la enfermería.*"
     },
     "hidden_nurse_d5_1": {
@@ -114,7 +114,7 @@
         "text": "Ven a visitarme después de graduarte. ...O antes, si te lastimas."
     },
     "hidden_nurse_d5_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "¿Y si no me lastimo?"
     },
     "hidden_nurse_d5_4": {
@@ -146,7 +146,7 @@
         "text": "Lo sé. Solo necesitaba una excusa."
     },
     "hidden_nurse_d5_7": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Hay letras pequeñas en la tirita. 'Después de graduarte, nos vemos en un café y no en la enfermería — ♥'*"
     },
     "hidden_nurse_d5_freetalk": {

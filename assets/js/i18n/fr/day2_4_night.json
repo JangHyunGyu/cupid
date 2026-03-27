@@ -1,10 +1,10 @@
 {
     "night2_start": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*De retour a la maison. Douche prise, allonge sur le lit -- les notifications du messenger se mettent a pleuvoir.*"
     },
     "night2_msg_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Des messages de trois personnes.*"
     },
     "night2_msg_dain_specific": {
@@ -64,11 +64,11 @@
         "text": "...Tu viens à la bibliothèque demain ?"
     },
     "night2_msg_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je dois repondre aux trois en meme temps. -- Je sais pas si c'est du bonheur ou de la torture.*"
     },
     "night2_choice": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*A qui je reponds en premier ?*",
         "choices": [
             "Repondre a Dain en premier",
@@ -93,7 +93,7 @@
         "text": "Ah mais le tteokbokki doux c'est pas du vrai tteokbokki mdr"
     },
     "night2_reply_dain_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Encore trois messages d'affilee. Cette personne ne finit jamais en une phrase.*"
     },
     "night2_reply_seo_1": {
@@ -113,7 +113,7 @@
         "text": "......\nDemain midi je laisserai le toit ouvert. Que tu viennes ou non, c'est toi qui vois"
     },
     "night2_reply_seo_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle a dit 'toi qui vois', mais le ton suggere que quelque chose arrivera si je me montre pas.*"
     },
     "night2_reply_yuna_1": {
@@ -125,7 +125,7 @@
         "text": "...Tant mieux"
     },
     "night2_reply_yuna_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Un bref silence. -- Et puis.*"
     },
     "night2_reply_yuna_4": {
@@ -141,56 +141,56 @@
         "text": "La raison, plus tard"
     },
     "night2_reply_yuna_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La troisieme etoile ? -- J'ouvre la fenetre et regarde le ciel nocturne. Des etoiles sont visibles. Je sais pas laquelle est la troisieme, mais bon. Une enigme tres Yuna. Quelqu'un qui ne donne jamais la reponse. -- Quelqu'un qui te donne envie de la trouver.*"
     },
     "night2_end_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J'ai envoyé mes réponses et posé le téléphone.*"
     },
     "night2_flashback_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Ce que Minsu a dit me revient sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*\n\n*— D'un coup, j'ouvre la galerie du téléphone. Pourquoi ? Aucune idée. Mes doigts ont bougé tout seuls.*"
     },
     "night2_flashback_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je fais défiler longtemps. Trois mois en arrière. — Une photo. Photo de groupe devant la bibliothèque. Sojeong sourit. À côté de moi.*"
     },
     "night2_flashback_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*À cette époque, ça faisait un mois que je répétais 'je t'aime bien'. Chaque soir, je l'écrivais dans le bloc-notes du téléphone. Des simulations de déclaration. — À chaque fois, je m'arrêtais là.*"
     },
     "night2_flashback_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Et un jour de mars, pendant l'appel du matin, mon voisin de table m'a dit : 'Sojeong a un copain.'*"
     },
     "night2_flashback_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Les simulations dans le bloc-notes se sont arrêtées à la 38ème. La 39ème n'existe pas. Plus besoin de l'écrire.*"
     },
     "night2_flashback_6": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le transfert, c'était pas à cause de Sojeong. C'était pour le travail de mon père. — Mais ça ne m'a pas dérangé de partir. Au moins, je n'aurais plus à passer chaque jour dans le couloir où elle souriait.*"
     },
     "night2_flashback_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*'Cette fois, je le dirai sans regrets.' — C'est ce que je m'étais promis en arrivant dans ce lycée.*\n\n*Mais Minsu a raison. Pour ne pas avoir de regrets, j'ai tout dit à tout le monde. Est-ce que c'est... encore pire ?*"
     },
     "night2_flashback_8": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J'ai fermé la galerie. J'ai hésité à supprimer la photo — je l'ai gardée. La supprimer, ce serait comme effacer aussi les regrets.*"
     },
     "night2_end_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le deuxieme jour est fini. Le premier jour, c'etait de la curiosite. Je me demandais quel genre de personnes elles etaient.*"
     },
     "night2_end_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Entre 's'intéresser à quelqu'un' et 'aimer quelqu'un', il y a encore de la distance. — Mais cette distance semble plus courte qu'hier.*"
     },
     "night2_end_4": {
-        "name": "Moi",
-        "text": "*Je ferme les yeux. \u2014 Peut-\u00eatre que demain, je devrais \u00eatre un peu plus honn\u00eate.*"
+        "name": "{name}",
+        "text": "*Je ferme les yeux. — Peut-être que demain, je devrais être un peu plus honnête.*"
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",
@@ -211,27 +211,27 @@
         "personality": "Yuna baisse ses murs la nuit. Des messages plus longs signifient qu'elle s'ouvre."
     },
     "night2_hidden_check": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Entre les alertes du chat — d'autres notifications apparaissent.*"
     },
     "night2_hidden_homeroom_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Un message privé de la prof principale. '{name}, merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
     },
     "night2_hidden_homeroom_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Trois lignes. Remerciement, distance, puis rapprochement. — Elle joue au tir à la corde avec elle-même.*"
     },
     "night2_hidden_homeroom_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*'Plus besoin de revenir' et 'passe quand tu veux' dans le même message. Contradictoire — mais tellement elle.*"
     },
     "night2_hidden_nurse_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Notification de l'appli santé. 'Dossier infirmerie : {name} — Écorchure au coude (légère). Note : Je changerai le pansement demain matin. Le changement de pansement est un acte médical, pas de droit de refus ^^'*"
     },
     "night2_hidden_nurse_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Pas de droit de refus. — Autorité médicale ou intérêt personnel ? L'émoji brouille la frontière.*"
     },
     "night2_reply_dain_react_high": {

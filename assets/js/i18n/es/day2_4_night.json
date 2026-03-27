@@ -1,10 +1,10 @@
 {
     "night2_start": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*De vuelta en casa. Me duche y me tumbe en la cama -- y las notificaciones del messenger empiezan a llover.*"
     },
     "night2_msg_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Mensajes de tres personas.*"
     },
     "night2_msg_dain_specific": {
@@ -64,11 +64,11 @@
         "text": "...¿Mañana vendrás a la biblioteca?"
     },
     "night2_msg_7": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Tengo que responder a las tres a la vez. -- No se si esto es felicidad o tortura.*"
     },
     "night2_choice": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*A quien le respondo primero?*",
         "choices": [
             "Responder a Dain primero",
@@ -93,7 +93,7 @@
         "text": "Ah espera el tteokbokki suave no es tteokbokki de verdad jaja"
     },
     "night2_reply_dain_5": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Tres mensajes seguidos otra vez. Esta persona nunca termina en una frase.*"
     },
     "night2_reply_seo_1": {
@@ -113,7 +113,7 @@
         "text": "......\nManana al mediodia dejare la azotea abierta. Si vienes o no, es tu decisión"
     },
     "night2_reply_seo_5": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Dijo 'tu decisión', pero el tono sugiere que algo pasara si no aparezco.*"
     },
     "night2_reply_yuna_1": {
@@ -125,7 +125,7 @@
         "text": "...Me alegro"
     },
     "night2_reply_yuna_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Un breve silencio. -- Y luego.*"
     },
     "night2_reply_yuna_4": {
@@ -141,56 +141,56 @@
         "text": "Te dire por que después"
     },
     "night2_reply_yuna_7": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La tercera estrella? -- Abro la ventana y miró al cielo nocturno. Se ven estrellas. No estoy seguro de cual es la tercera, pero. Un acertijo muy de Yuna. Alguien que nunca da la respuesta. -- Alguien que te hace querer encontrarla.*"
     },
     "night2_end_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Envié las respuestas y dejé el teléfono.*"
     },
     "night2_flashback_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Lo que dijo Minsu no deja de volver. '¿Hacías lo mismo en tu anterior instituto?'*\n\n*— De repente abro la galería del móvil. No sé por qué. Mis dedos se movieron solos.*"
     },
     "night2_flashback_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Bajo mucho en el scroll. Tres meses atrás. — Hay una foto. Foto de grupo delante de la biblioteca. Sojeong está sonriendo. A mi lado.*"
     },
     "night2_flashback_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*En aquella época llevaba un mes ensayando un 'me gustas'. Cada noche lo escribía en las notas del móvil. Simulaciones de confesión. — Siempre me quedaba ahí.*"
     },
     "night2_flashback_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Y un día de marzo, en la hora de tutoría, el de al lado me dijo: 'Sojeong tiene novio.'*"
     },
     "night2_flashback_5": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Las simulaciones en las notas se quedaron en la número 38. La 39 no existe. Ya no hacía falta escribirla.*"
     },
     "night2_flashback_6": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*El traslado no fue por Sojeong. Fue por el trabajo de mi padre. — Pero no me importó irme. Así no tendría que pasar cada día por el pasillo donde ella sonreía.*"
     },
     "night2_flashback_7": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*'Esta vez lo diré sin arrepentimientos.' — Eso me prometí al venir a este instituto.*\n\n*Pero Minsu tiene razón. Por no querer arrepentirme, se lo he estado diciendo a todas. ¿Y eso es... aún peor?*"
     },
     "night2_flashback_8": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Cerré la galería. Dudé si borrar la foto o no — la dejé. Borrarla sería como borrar también el arrepentimiento.*"
     },
     "night2_end_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*El segundo día termino. El primer día fue curiosidad. Me preguntaba que tipo de personas eran.*"
     },
     "night2_end_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Entre 'pensar en alguien' y 'querer a alguien' todavía hay distancia. — Pero esa distancia se siente más corta que ayer.*"
     },
     "night2_end_4": {
-        "name": "Yo",
-        "text": "*Cierro los ojos. \u2014 Tal vez ma\u00f1ana deber\u00eda ser un poco m\u00e1s honesto.*"
+        "name": "{name}",
+        "text": "*Cierro los ojos. — Tal vez mañana debería ser un poco más honesto.*"
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",
@@ -211,27 +211,27 @@
         "personality": "Yuna baja sus defensas por la noche. Mensajes más largos significan que se está abriendo."
     },
     "night2_hidden_check": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Entre las alertas del chat — veo más notificaciones.*"
     },
     "night2_hidden_homeroom_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Un mensaje privado de la profesora. '{name}, gracias por venir a la oficina hoy. El papeleo ya terminó, no tendré que llamarte más. ...Pero si la adaptación se pone difícil, pasa cuando quieras.'*"
     },
     "night2_hidden_homeroom_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Tres líneas. Agradecimiento, distancia, y luego acercarse de nuevo. — Está tirando de la cuerda consigo misma.*"
     },
     "night2_hidden_homeroom_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*'No tendré que llamarte' y 'pasa cuando quieras' en el mismo mensaje. Contradictorio — pero típico de ella.*"
     },
     "night2_hidden_nurse_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Notificación de la app de salud. 'Registro enfermería: {name} — Rasguño en el codo (leve). Nota: Te cambio la tirita mañana. Cambiar tiritas es un acto médico así que no puedes negarte ^^'*"
     },
     "night2_hidden_nurse_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Sin derecho a negarse. — ¿Es autoridad médica o interés personal? El emoji difumina la línea.*"
     },
     "night2_reply_dain_react_high": {

@@ -1,14 +1,14 @@
 {
     "night_start": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Zurück in meinem Zimmer. Ich liege auf dem Bett.*"
     },
     "night_start_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Für einen ersten Tag — bin ich erschöpft. Aber es ist nicht schlecht.*"
     },
     "night_start_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Mein Handy klingelt. Der Schul-Messenger.*"
     },
     "night_msg_seo_1": {
@@ -16,7 +16,7 @@
         "text": "*Wie war das Dach heute?*"
     },
     "night_msg_seo_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Brise war schön*"
     },
     "night_msg_seo_3": {
@@ -28,7 +28,7 @@
         "text": "*...Geht aufs Haus*"
     },
     "night_msg_seo_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie hat ‘Geht aufs Haus’ absichtlich als separate Nachricht geschickt. — Ist das berechnet oder aufrichtig?*"
     },
     "night_msg_yuna_1": {
@@ -40,7 +40,7 @@
         "text": "*Morgen halte ich dir den Platz frei*"
     },
     "night_msg_yuna_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Kurz. Aber ‘ich halte dir den Platz frei’ — ist das bei ihr nicht die wärmste Begrüßung, die sie geben kann?*"
     },
     "night_msg_dain_1": {
@@ -56,19 +56,19 @@
         "text": "*Das Brotgeld tut mir immer noch weh ehrlich gesagt lolol*"
     },
     "night_msg_dain_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Drei Nachrichten am Stück. Kann sie nicht mal Luft holen zwischen den Texten?*"
     },
     "night_late_transition": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Kurz vor dem Einschlafen — mein Handy klingelt noch einmal.*"
     },
     "night_late_transition_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*23 Uhr. Wer ist das?*"
     },
     "night_late_branch": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Der Bildschirm leuchtet auf.*"
     },
     "night_seo_late_1": {
@@ -80,8 +80,8 @@
         "text": "*— Wenn du nicht kommst, hole ich dich*"
     },
     "night_seo_late_3": {
-        "name": "Ich",
-        "text": "*Ob \u201Eich hole dich\u201C ein Witz ist oder ernst gemeint. \u2014 Diese Person kennt keine Grenzen.*"
+        "name": "{name}",
+        "text": "*Ob „ich hole dich“ ein Witz ist oder ernst gemeint. — Diese Person kennt keine Grenzen.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -96,7 +96,7 @@
         "text": "*— Ich überlege, ob ich antworten soll, und der Bildschirm wird dunkel.*"
     },
     "night_yuna_late_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Hat sie mich ignoriert, oder ich sie? — Bei dieser Person ist alles vage.*"
     },
     "night_dain_late_1": {
@@ -112,23 +112,23 @@
         "text": "*Nein wird nicht akzeptiert lol*"
     },
     "night_dain_late_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Kennt diese Person das Konzept von ‘Nein’ nicht?*"
     },
     "night_end_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich lege das Handy hin.*"
     },
     "night_end_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich starre an die Decke. Der Kirschblütenduft hängt noch an meiner Uniform.*"
     },
     "night_end_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Kein schlechter erster Tag.*"
     },
     "night_end_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Morgen — könnte noch interessanter werden.*"
     },
     "night_seo_freetalk": {
@@ -150,23 +150,23 @@
         "personality": "Yuna ist ein mysteriöses Literaturgirl. Ihre Nachrichten sind kurz und kryptisch."
     },
     "night_hidden_check": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Zwischen den Messenger-Benachrichtigungen — fällt mir noch etwas auf.*"
     },
     "night_hidden_homeroom_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und {name}, solange du dich gut einlebst, reicht das.'*"
     },
     "night_hidden_homeroom_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Eine persönliche Nachricht in einer Klassenankündigung? — Kann sie nicht zwischen Beruf und Privat unterscheiden, oder macht sie das absichtlich?*"
     },
     "night_hidden_nurse_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Eine Benachrichtigung in der Schul-Gesundheits-App. 'Krankenakte: {name} — Schwindel (leicht). Notiz: Komm morgen wieder, falls die Symptome anhalten. Trink viel Wasser. — das ♥ ist rein medizinisches Interesse ^^'*"
     },
     "night_hidden_nurse_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Eine Schulkrankenschwester, die Herzchen in Krankenakten setzt. Noch nie jemanden gesehen, der Emojis in Gesundheitsakten benutzt.*"
     }
 }

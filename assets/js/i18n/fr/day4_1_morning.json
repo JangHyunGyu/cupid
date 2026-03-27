@@ -1,284 +1,284 @@
 {
-  "morning4_start": {
-    "name": "Moi",
-    "text": "*Quatrième jour. Week-end. -- Aujourd'hui, pas d'école. C'est un rendez-vous.*"
-  },
-  "minsu_cheer_1": {
-    "name": "Moi",
-    "text": "*Je regarde mon téléphone. Message du matin. — Minsu est tout en haut.*"
-  },
-  "minsu_cheer_2": {
-    "name": "Minsu",
-    "text": "Hé, c'est le rendez-vous aujourd'hui non ? Dain a posté dans le groupe mdr\nMais hé. N'y va qu'avec une seule."
-  },
-  "minsu_cheer_3": {
-    "name": "Minsu",
-    "text": "Ouais, je te fais confiance. — Assure."
-  },
-  "minsu_cheer_4": {
-    "name": "Moi",
-    "text": "*Court. Mais ce 'assure' pèse lourd. Le même qui au Jour 2 m'a demandé 'tu faisais pareil dans ton ancien lycée ?', qui au Jour 3 m'a dit 'refuser c'est aussi aimer' — aujourd'hui me dit 'assure'.*\n\n*D'avertissement à confrontation, de confrontation à encouragement. — Minsu croit en moi avant que je ne croie en moi-même.*"
-  },
-  "morning4_start_2": {
-    "name": "Moi",
-    "text": "*Dès que le mot « rendez-vous » apparaît dans ma tête, ma main file vers l'armoire. Déjà en train de penser à quoi porter — un peu ridicule. Je regarde le téléphone. Message du matin.*"
-  },
-  "morning4_seo_msg_1": {
-    "name": "Seoyeon",
-    "text": "Ne sois pas en retard. Fontaine du parc, 10 heures."
-  },
-  "morning4_yuna_msg_1": {
-    "name": "Yuna",
-    "text": "10 heures. Café devant la gare. Si tu es en retard, je pars."
-  },
-  "morning4_dain_msg_1": {
-    "name": "Dain",
-    "text": "C'est aujourd'hui !!!! Devant le gymnase à 18h !! En fait je suis nerveuse mdr, attends est-ce que je devrais même envoyer ça"
-  },
-  "morning4_end": {
-    "name": "Moi",
-    "text": "*Un dernier regard dans le miroir. — C'est bon. On y va.*"
-  },
-  "morning4_hidden_check": {
-    "name": "Moi",
-    "text": "*Weekend. Je passe devant l'école.*"
-  },
-  "hidden_homeroom_d4_1": {
-    "name": "Moi",
-    "text": "*Le portail est entrouvert. Quelqu'un sort. C'est la prof principale. En civil.*"
-  },
-  "hidden_homeroom_d4_2": {
-    "name": "Professeur Principal",
-    "text": "...Hein ? {name} ?"
-  },
-  "hidden_homeroom_d4_3": {
-    "name": "Moi",
-    "text": "Madame ? C'est le weekend, qu'est-ce que vous faites là ?"
-  },
-  "hidden_homeroom_d4_4": {
-    "name": "Professeur Principal",
-    "text": "Ah, c'est que — de la paperasse. ...Une prof reste une prof même le weekend."
-  },
-  "hidden_homeroom_d4_5": {
-    "name": "Professeur Principal",
-    "text": "...T'as mangé ? Un café, ça va, non ? — Enfin, un jus pour toi."
-  },
-  "hidden_homeroom_d4_choice": {
-    "name": "Moi",
-    "text": "*En civil, la prof ne ressemble pas à une prof. Plutôt à — une écrivaine.*",
-    "choices": [
-      "D'accord. Il y a un café dans le coin ?",
-      "Madame, vous devriez pas, non ?"
-    ]
-  },
-  "hidden_homeroom_d4_cafe_1": {
-    "name": "Professeur Principal",
-    "text": "Première fois que je prends un verre avec un élève en dehors de l'école. Franchement ? Un peu gênant."
-  },
-  "hidden_homeroom_d4_cafe_2": {
-    "name": "Professeur Principal",
-    "text": "...Un peu. Après que tu m'aies découvert hier — j'ai pu écrire davantage. Être découvert, c'était... un soulagement."
-  },
-  "hidden_homeroom_d4_cafe_3": {
-    "name": "Professeur Principal",
-    "text": "Tu sais ce qui est le plus dur dans l'écriture ? Trouver le premier lecteur. Sans quelqu'un pour lire — l'histoire ne se termine jamais."
-  },
-  "hidden_homeroom_d4_cafe_choice": {
-    "name": "{name}",
-    "text": "*Elle pose sa tasse de café. Ses yeux pétillent.*",
-    "choices": [
-      "Ce roman — c'est qui le personnage principal ?",
-      "Être votre premier lecteur... c'est une sacrée responsabilité"
-    ]
-  },
-  "hidden_homeroom_d4_cafe_choice_a": {
-    "name": "Professeure",
-    "text": "*Elle enveloppe la tasse de ses deux mains.* ...Secret. Tu le sauras en lisant."
-  },
-  "hidden_homeroom_d4_cafe_choice_b": {
-    "name": "Professeure",
-    "text": "C'est pas lourd. Lis, c'est tout. — Rien que ça, ça suffit."
-  },
-  "hidden_homeroom_d4_cafe_4": {
-    "name": "Professeur Principal",
-    "text": "...Tu veux bien être mon premier lecteur ?"
-  },
-  "hidden_homeroom_d4_cafe_5": {
-    "name": "Moi",
-    "text": "J'ai envie de le lire."
-  },
-  "hidden_homeroom_d4_cafe_6": {
-    "name": "Professeur Principal",
-    "text": "...Merci. Mais n'en parle à personne — d'accord ? ...C'est notre secret."
-  },
-  "hidden_homeroom_d4_decline": {
-    "name": "Professeur Principal",
-    "text": "...T'as raison. Je devrais pas. Allez, c'est le weekend. — Va t'amuser."
-  },
-  "hidden_homeroom_d4_freetalk": {
-    "name": "Professeur Principal",
-    "text": "*En train de discuter avec la prof principale au café.*",
-    "context": "Jour 4. Rencontre fortuite le weekend, café ensemble. Elle m'a demandé d'être son premier lecteur. Ton : La conversation est devenue sérieuse. Excitation et nervosité du rendez-vous. Plus de sincérité que de blagues. Moments d'honnêteté émotionnelle.",
-    "personality": "La prof est plus détendue en civil. Déchirée entre passion pour l'écriture et sentiments."
-  },
-  "hidden_nurse_d4_check": {
-    "name": "Moi",
-    "text": "*Le weekend touche à sa fin.*"
-  },
-  "hidden_nurse_d4_1": {
-    "name": "Moi",
-    "text": "*L'infirmière a posté 'cherche volontaires' sur la messagerie. Mes pieds se dirigent déjà vers l'école.*"
-  },
-  "hidden_nurse_d4_2": {
-    "name": "Infirmière",
-    "text": "Hein ? T'es vraiment venu ? Je m'y attendais pas. — Un élève bénévole à l'infirmerie un weekend."
-  },
-  "hidden_nurse_d4_3": {
-    "name": "Moi",
-    "text": "J'avais dit que j'aiderais."
-  },
-  "hidden_nurse_d4_4": {
-    "name": "Infirmière",
-    "text": "...À l'hôpital je faisais tout ça seule. Les gardes de nuit — parfois une infirmière fait le travail de trois."
-  },
-  "hidden_nurse_d4_5": {
-    "name": "Infirmière",
-    "text": "Le plus dur, c'était pas la charge. Personne m'appelait par mon prénom. Tout était des titres, pas des noms."
-  },
-  "hidden_nurse_d4_name_choice": {
-    "name": "{name}",
-    "text": "*Son prénom. Moi aussi, je l'ai toujours appelée « Infirmière ».*",
-    "choices": [
-      "Comment vous vous appelez ? Pas \"Infirmière\"",
-      "C'est pour ça que vous êtes venue dans cette école"
-    ]
-  },
-  "hidden_nurse_d4_name_choice_a": {
-    "name": "Infirmière",
-    "text": "*Ses yeux s'agrandissent derrière ses lunettes.* ...Je te le dirai après ton diplôme. Patience jusque-là."
-  },
-  "hidden_nurse_d4_name_choice_b": {
-    "name": "Infirmière",
-    "text": "Ici, au moins, il y a quelqu'un qui m'appelle par mon prénom. ...Même si c'est une seule personne."
-  },
-  "hidden_nurse_d4_6": {
-    "name": "Infirmière",
-    "text": "Merci~ On a fini vite grâce à toi ! ...Ça compte."
-  },
-  "hidden_nurse_d4_choice": {
-    "name": "Infirmière",
-    "text": "Bon, en remerciement, je t'offre quelque chose ? Un prof qui nourrit un élève, c'est éducatif~",
-    "choices": [
-      "Si c'est éducatif, ça va ?",
-      "Ça va, je vais y aller"
-    ]
-  },
-  "hidden_nurse_d4_meal_walk": {
-    "name": "{name}",
-    "text": "*On s'est dirigés vers le snack devant l'école.*"
-  },
-  "hidden_nurse_d4_meal_1": {
-    "name": "Infirmière",
-    "text": "C'est trop épicé ! À mon âge, je ne peux plus manger ça~"
-  },
-  "hidden_nurse_d4_meal_2": {
-    "name": "Moi",
-    "text": "Vous n'êtes pas vieille du tout."
-  },
-  "hidden_nurse_d4_meal_3": {
-    "name": "Infirmière",
-    "text": "...Ce genre de chose. Ça sonne bizarre venant d'un élève."
-  },
-  "hidden_nurse_d4_meal_4": {
-    "name": "Infirmière",
-    "text": "{name}. Merci pour aujourd'hui. — Vraiment."
-  },
-  "hidden_nurse_d4_pass": {
-    "name": "Infirmière",
-    "text": "D'accord~ Rentre bien ! — Reviens bientôt."
-  },
-  "hidden_nurse_d4_morning_1": {
-    "name": "{name}",
-    "text": "*Dimanche matin. Je me dirige vers l'infirmerie par habitude. — Depuis quand est-ce devenu une habitude?*"
-  },
-  "hidden_nurse_d4_morning_2": {
-    "name": "{name}",
-    "text": "*J'ouvre la porte de l'infirmerie. L'infirmière est assise dans sa chaise. En blouse blanche. — Mais quelque chose est différent d'habitude. Il n'y a pas sa malice habituelle.*"
-  },
-  "hidden_nurse_d4_morning_3": {
-    "name": "Infirmière",
-    "text": "Oh, tu es venu."
-  },
-  "hidden_nurse_d4_morning_4": {
-    "name": "{name}",
-    "text": "*Son « tu es venu » est d'une demi-octave plus basse que d'habitude. — J'ai appris à lire les émotions de cette personne par la tonalité.*"
-  },
-  "hidden_nurse_d4_morning_5": {
-    "name": "{name}",
-    "text": "C'est la dernière consultation?"
-  },
-  "hidden_nurse_d4_morning_6": {
-    "name": "Infirmière",
-    "text": "Consultation... *elle fait tourner sa chaise* Ouais. La dernière consultation."
-  },
-  "hidden_nurse_d4_morning_7": {
-    "name": "{name}",
-    "text": "*L'infirmière fait semblant de ranger les papiers sur son bureau — mais elle tourne la même feuille pour la troisième fois.*"
-  },
-  "hidden_nurse_d4_morning_8": {
-    "name": "Infirmière",
-    "text": "Je peux te poser une question?"
-  },
-  "hidden_nurse_d4_morning_9": {
-    "name": "{name}",
-    "text": "Quoi?"
-  },
-  "hidden_nurse_d4_morning_10": {
-    "name": "{name}",
-    "text": "*L'infirmière se touche les lunettes. Les yeux visibles à travers sont plus grands que prévu. Les yeux qui étaient cachés derrière la malice.*"
-  },
-  "hidden_nurse_d4_morning_11": {
-    "name": "Infirmière",
-    "text": "...Reviendras-tu à l'infirmerie après tes études?"
-  },
-  "hidden_nurse_d4_morning_choice": {
-    "name": "{name}",
-    "text": "*Ce n'est pas une question. — C'est le visage de quelqu'un qui redoute déjà la réponse. Nos regards se croisent. Son expression sérieuse sans sa malice habituelle. — Je n'ai jamais vu cette personne aussi vulnérable.*",
-    "choices": [
-      "Je reviendrai.",
-      "..."
-    ]
-  },
-  "hidden_nurse_d4_morning_choice_a": {
-    "name": "{name}",
-    "text": "Je reviendrai."
-  },
-  "hidden_nurse_d4_morning_choice_b": {
-    "name": "{name}",
-    "text": "*Silence.*"
-  },
-  "hidden_nurse_d4_morning_12": {
-    "name": "Infirmière",
-    "text": "...Vraiment?"
-  },
-  "hidden_nurse_d4_morning_13": {
-    "name": "{name}",
-    "text": "*« Vraiment. » — Son mot pour confirmer la sincérité. Aujourd'hui, je l'ai entendu en première. Un instant de silence. À travers ses lunettes, ses yeux ont l'air humide. — La lentille est embuée. Je ne peux pas dire si c'est de la buée ou des larmes. L'infirmière parle de nouveau avec un ton plus léger, mais sa voix tremble. La malice revient. — Mais sous ses yeux souriants, il y a une trace de quelque chose qui coule.*"
-  },
-  "hidden_nurse_d4_morning_freetalk": {
-    "name": "Infirmière",
-    "text": "*En train de discuter avec l'infirmière à l'infirmerie.*",
-    "context": "Jour 4. Le moment des adieux quand elle demande si tu reviendras après tes études. La scène où les deux montrent leurs vrais cœurs. Ton : Conversation plus profonde et émotionnelle. La vérité derrière la malice. Le sens d'être appelé par son nom.",
-    "personality": "L'infirmière est prudente et honnête. Elle veut t'appeler par ton nom mais elle est dans une position prudente. Des larmes coulent à ta promesse."
-  },
-  "hidden_nurse_d4_freetalk": {
-    "name": "Infirmière",
-    "text": "*En train de discuter avec l’infirmière au snack.*",
-    "context": "Jour 4. Week-end. A aidé à préparer le bilan de santé et mange dans un snack. Discussion sur le burn-out à l’hôpital universitaire. Ton : La conversation est devenue sérieuse. Excitation et tension d’un rendez-vous. Plus de sincérité que de blagues. Moments où les émotions deviennent honnêtes.",
-    "personality": "L’infirmière en tenue décontractée ressemble à une grande sœur. L’espièglerie et la sincérité alternent, et elle comprend le poids d’être appelée par son nom."
-  },
-  "hidden_nurse_d4_meal_1b": {
-    "name": "{name}",
-    "text": "*On est retournés à l'infirmerie.*"
-  }
+    "morning4_start": {
+        "name": "{name}",
+        "text": "*Quatrième jour. Week-end. -- Aujourd'hui, pas d'école. C'est un rendez-vous.*"
+    },
+    "minsu_cheer_1": {
+        "name": "{name}",
+        "text": "*Je regarde mon téléphone. Message du matin. — Minsu est tout en haut.*"
+    },
+    "minsu_cheer_2": {
+        "name": "Minsu",
+        "text": "Hé, c'est le rendez-vous aujourd'hui non ? Dain a posté dans le groupe mdr\nMais hé. N'y va qu'avec une seule."
+    },
+    "minsu_cheer_3": {
+        "name": "Minsu",
+        "text": "Ouais, je te fais confiance. — Assure."
+    },
+    "minsu_cheer_4": {
+        "name": "{name}",
+        "text": "*Court. Mais ce 'assure' pèse lourd. Le même qui au Jour 2 m'a demandé 'tu faisais pareil dans ton ancien lycée ?', qui au Jour 3 m'a dit 'refuser c'est aussi aimer' — aujourd'hui me dit 'assure'.*\n\n*D'avertissement à confrontation, de confrontation à encouragement. — Minsu croit en moi avant que je ne croie en moi-même.*"
+    },
+    "morning4_start_2": {
+        "name": "{name}",
+        "text": "*Dès que le mot « rendez-vous » apparaît dans ma tête, ma main file vers l'armoire. Déjà en train de penser à quoi porter — un peu ridicule. Je regarde le téléphone. Message du matin.*"
+    },
+    "morning4_seo_msg_1": {
+        "name": "Seoyeon",
+        "text": "Ne sois pas en retard. Fontaine du parc, 10 heures."
+    },
+    "morning4_yuna_msg_1": {
+        "name": "Yuna",
+        "text": "10 heures. Café devant la gare. Si tu es en retard, je pars."
+    },
+    "morning4_dain_msg_1": {
+        "name": "Dain",
+        "text": "C'est aujourd'hui !!!! Devant le gymnase à 18h !! En fait je suis nerveuse mdr, attends est-ce que je devrais même envoyer ça"
+    },
+    "morning4_end": {
+        "name": "{name}",
+        "text": "*Un dernier regard dans le miroir. — C'est bon. On y va.*"
+    },
+    "morning4_hidden_check": {
+        "name": "{name}",
+        "text": "*Weekend. Je passe devant l'école.*"
+    },
+    "hidden_homeroom_d4_1": {
+        "name": "{name}",
+        "text": "*Le portail est entrouvert. Quelqu'un sort. C'est la prof principale. En civil.*"
+    },
+    "hidden_homeroom_d4_2": {
+        "name": "Professeur Principal",
+        "text": "...Hein ? {name} ?"
+    },
+    "hidden_homeroom_d4_3": {
+        "name": "{name}",
+        "text": "Madame ? C'est le weekend, qu'est-ce que vous faites là ?"
+    },
+    "hidden_homeroom_d4_4": {
+        "name": "Professeur Principal",
+        "text": "Ah, c'est que — de la paperasse. ...Une prof reste une prof même le weekend."
+    },
+    "hidden_homeroom_d4_5": {
+        "name": "Professeur Principal",
+        "text": "...T'as mangé ? Un café, ça va, non ? — Enfin, un jus pour toi."
+    },
+    "hidden_homeroom_d4_choice": {
+        "name": "{name}",
+        "text": "*En civil, la prof ne ressemble pas à une prof. Plutôt à — une écrivaine.*",
+        "choices": [
+            "D'accord. Il y a un café dans le coin ?",
+            "Madame, vous devriez pas, non ?"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_1": {
+        "name": "Professeur Principal",
+        "text": "Première fois que je prends un verre avec un élève en dehors de l'école. Franchement ? Un peu gênant."
+    },
+    "hidden_homeroom_d4_cafe_2": {
+        "name": "Professeur Principal",
+        "text": "...Un peu. Après que tu m'aies découvert hier — j'ai pu écrire davantage. Être découvert, c'était... un soulagement."
+    },
+    "hidden_homeroom_d4_cafe_3": {
+        "name": "Professeur Principal",
+        "text": "Tu sais ce qui est le plus dur dans l'écriture ? Trouver le premier lecteur. Sans quelqu'un pour lire — l'histoire ne se termine jamais."
+    },
+    "hidden_homeroom_d4_cafe_choice": {
+        "name": "{name}",
+        "text": "*Elle pose sa tasse de café. Ses yeux pétillent.*",
+        "choices": [
+            "Ce roman — c'est qui le personnage principal ?",
+            "Être votre premier lecteur... c'est une sacrée responsabilité"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_choice_a": {
+        "name": "Professeure",
+        "text": "*Elle enveloppe la tasse de ses deux mains.* ...Secret. Tu le sauras en lisant."
+    },
+    "hidden_homeroom_d4_cafe_choice_b": {
+        "name": "Professeure",
+        "text": "C'est pas lourd. Lis, c'est tout. — Rien que ça, ça suffit."
+    },
+    "hidden_homeroom_d4_cafe_4": {
+        "name": "Professeur Principal",
+        "text": "...Tu veux bien être mon premier lecteur ?"
+    },
+    "hidden_homeroom_d4_cafe_5": {
+        "name": "{name}",
+        "text": "J'ai envie de le lire."
+    },
+    "hidden_homeroom_d4_cafe_6": {
+        "name": "Professeur Principal",
+        "text": "...Merci. Mais n'en parle à personne — d'accord ? ...C'est notre secret."
+    },
+    "hidden_homeroom_d4_decline": {
+        "name": "Professeur Principal",
+        "text": "...T'as raison. Je devrais pas. Allez, c'est le weekend. — Va t'amuser."
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Professeur Principal",
+        "text": "*En train de discuter avec la prof principale au café.*",
+        "context": "Jour 4. Rencontre fortuite le weekend, café ensemble. Elle m'a demandé d'être son premier lecteur. Ton : La conversation est devenue sérieuse. Excitation et nervosité du rendez-vous. Plus de sincérité que de blagues. Moments d'honnêteté émotionnelle.",
+        "personality": "La prof est plus détendue en civil. Déchirée entre passion pour l'écriture et sentiments."
+    },
+    "hidden_nurse_d4_check": {
+        "name": "{name}",
+        "text": "*Le weekend touche à sa fin.*"
+    },
+    "hidden_nurse_d4_1": {
+        "name": "{name}",
+        "text": "*L'infirmière a posté 'cherche volontaires' sur la messagerie. Mes pieds se dirigent déjà vers l'école.*"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "Infirmière",
+        "text": "Hein ? T'es vraiment venu ? Je m'y attendais pas. — Un élève bénévole à l'infirmerie un weekend."
+    },
+    "hidden_nurse_d4_3": {
+        "name": "{name}",
+        "text": "J'avais dit que j'aiderais."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "Infirmière",
+        "text": "...À l'hôpital je faisais tout ça seule. Les gardes de nuit — parfois une infirmière fait le travail de trois."
+    },
+    "hidden_nurse_d4_5": {
+        "name": "Infirmière",
+        "text": "Le plus dur, c'était pas la charge. Personne m'appelait par mon prénom. Tout était des titres, pas des noms."
+    },
+    "hidden_nurse_d4_name_choice": {
+        "name": "{name}",
+        "text": "*Son prénom. Moi aussi, je l'ai toujours appelée « Infirmière ».*",
+        "choices": [
+            "Comment vous vous appelez ? Pas \"Infirmière\"",
+            "C'est pour ça que vous êtes venue dans cette école"
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "name": "Infirmière",
+        "text": "*Ses yeux s'agrandissent derrière ses lunettes.* ...Je te le dirai après ton diplôme. Patience jusque-là."
+    },
+    "hidden_nurse_d4_name_choice_b": {
+        "name": "Infirmière",
+        "text": "Ici, au moins, il y a quelqu'un qui m'appelle par mon prénom. ...Même si c'est une seule personne."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "Infirmière",
+        "text": "Merci~ On a fini vite grâce à toi ! ...Ça compte."
+    },
+    "hidden_nurse_d4_choice": {
+        "name": "Infirmière",
+        "text": "Bon, en remerciement, je t'offre quelque chose ? Un prof qui nourrit un élève, c'est éducatif~",
+        "choices": [
+            "Si c'est éducatif, ça va ?",
+            "Ça va, je vais y aller"
+        ]
+    },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*On s'est dirigés vers le snack devant l'école.*"
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "Infirmière",
+        "text": "C'est trop épicé ! À mon âge, je ne peux plus manger ça~"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "{name}",
+        "text": "Vous n'êtes pas vieille du tout."
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "Infirmière",
+        "text": "...Ce genre de chose. Ça sonne bizarre venant d'un élève."
+    },
+    "hidden_nurse_d4_meal_4": {
+        "name": "Infirmière",
+        "text": "{name}. Merci pour aujourd'hui. — Vraiment."
+    },
+    "hidden_nurse_d4_pass": {
+        "name": "Infirmière",
+        "text": "D'accord~ Rentre bien ! — Reviens bientôt."
+    },
+    "hidden_nurse_d4_morning_1": {
+        "name": "{name}",
+        "text": "*Dimanche matin. Je me dirige vers l'infirmerie par habitude. — Depuis quand est-ce devenu une habitude?*"
+    },
+    "hidden_nurse_d4_morning_2": {
+        "name": "{name}",
+        "text": "*J'ouvre la porte de l'infirmerie. L'infirmière est assise dans sa chaise. En blouse blanche. — Mais quelque chose est différent d'habitude. Il n'y a pas sa malice habituelle.*"
+    },
+    "hidden_nurse_d4_morning_3": {
+        "name": "Infirmière",
+        "text": "Oh, tu es venu."
+    },
+    "hidden_nurse_d4_morning_4": {
+        "name": "{name}",
+        "text": "*Son « tu es venu » est d'une demi-octave plus basse que d'habitude. — J'ai appris à lire les émotions de cette personne par la tonalité.*"
+    },
+    "hidden_nurse_d4_morning_5": {
+        "name": "{name}",
+        "text": "C'est la dernière consultation?"
+    },
+    "hidden_nurse_d4_morning_6": {
+        "name": "Infirmière",
+        "text": "Consultation... *elle fait tourner sa chaise* Ouais. La dernière consultation."
+    },
+    "hidden_nurse_d4_morning_7": {
+        "name": "{name}",
+        "text": "*L'infirmière fait semblant de ranger les papiers sur son bureau — mais elle tourne la même feuille pour la troisième fois.*"
+    },
+    "hidden_nurse_d4_morning_8": {
+        "name": "Infirmière",
+        "text": "Je peux te poser une question?"
+    },
+    "hidden_nurse_d4_morning_9": {
+        "name": "{name}",
+        "text": "Quoi?"
+    },
+    "hidden_nurse_d4_morning_10": {
+        "name": "{name}",
+        "text": "*L'infirmière se touche les lunettes. Les yeux visibles à travers sont plus grands que prévu. Les yeux qui étaient cachés derrière la malice.*"
+    },
+    "hidden_nurse_d4_morning_11": {
+        "name": "Infirmière",
+        "text": "...Reviendras-tu à l'infirmerie après tes études?"
+    },
+    "hidden_nurse_d4_morning_choice": {
+        "name": "{name}",
+        "text": "*Ce n'est pas une question. — C'est le visage de quelqu'un qui redoute déjà la réponse. Nos regards se croisent. Son expression sérieuse sans sa malice habituelle. — Je n'ai jamais vu cette personne aussi vulnérable.*",
+        "choices": [
+            "Je reviendrai.",
+            "..."
+        ]
+    },
+    "hidden_nurse_d4_morning_choice_a": {
+        "name": "{name}",
+        "text": "Je reviendrai."
+    },
+    "hidden_nurse_d4_morning_choice_b": {
+        "name": "{name}",
+        "text": "*Silence.*"
+    },
+    "hidden_nurse_d4_morning_12": {
+        "name": "Infirmière",
+        "text": "...Vraiment?"
+    },
+    "hidden_nurse_d4_morning_13": {
+        "name": "{name}",
+        "text": "*« Vraiment. » — Son mot pour confirmer la sincérité. Aujourd'hui, je l'ai entendu en première. Un instant de silence. À travers ses lunettes, ses yeux ont l'air humide. — La lentille est embuée. Je ne peux pas dire si c'est de la buée ou des larmes. L'infirmière parle de nouveau avec un ton plus léger, mais sa voix tremble. La malice revient. — Mais sous ses yeux souriants, il y a une trace de quelque chose qui coule.*"
+    },
+    "hidden_nurse_d4_morning_freetalk": {
+        "name": "Infirmière",
+        "text": "*En train de discuter avec l'infirmière à l'infirmerie.*",
+        "context": "Jour 4. Le moment des adieux quand elle demande si tu reviendras après tes études. La scène où les deux montrent leurs vrais cœurs. Ton : Conversation plus profonde et émotionnelle. La vérité derrière la malice. Le sens d'être appelé par son nom.",
+        "personality": "L'infirmière est prudente et honnête. Elle veut t'appeler par ton nom mais elle est dans une position prudente. Des larmes coulent à ta promesse."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "Infirmière",
+        "text": "*En train de discuter avec l’infirmière au snack.*",
+        "context": "Jour 4. Week-end. A aidé à préparer le bilan de santé et mange dans un snack. Discussion sur le burn-out à l’hôpital universitaire. Ton : La conversation est devenue sérieuse. Excitation et tension d’un rendez-vous. Plus de sincérité que de blagues. Moments où les émotions deviennent honnêtes.",
+        "personality": "L’infirmière en tenue décontractée ressemble à une grande sœur. L’espièglerie et la sincérité alternent, et elle comprend le poids d’être appelée par son nom."
+    },
+    "hidden_nurse_d4_meal_1b": {
+        "name": "{name}",
+        "text": "*On est retournés à l'infirmerie.*"
+    }
 }

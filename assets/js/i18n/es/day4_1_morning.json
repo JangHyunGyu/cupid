@@ -1,284 +1,284 @@
 {
-  "morning4_start": {
-    "name": "Yo",
-    "text": "*Cuarto día. Fin de semana. -- Hoy no hay clase. Es una cita.*"
-  },
-  "minsu_cheer_1": {
-    "name": "Yo",
-    "text": "*Miro el móvil. Mensaje de la mañana. — Minsu está arriba del todo.*"
-  },
-  "minsu_cheer_2": {
-    "name": "Minsu",
-    "text": "Oye, ¿hoy es la cita, no? Dain lo puso en el grupo jaja\nPero eh. Ve solo con una."
-  },
-  "minsu_cheer_3": {
-    "name": "Minsu",
-    "text": "Sí, confío en ti. — Hazlo bien."
-  },
-  "minsu_cheer_4": {
-    "name": "Yo",
-    "text": "*Corto. Pero ese 'hazlo bien' pesa. El mismo que en el Día 2 me preguntó '¿hacías lo mismo en tu anterior instituto?', el que en el Día 3 me dijo 'rechazar también es querer' — hoy me dice 'hazlo bien'.*\n\n*De advertencia a confrontación, de confrontación a apoyo. — Minsu confía en mí antes de que yo confíe en mí mismo.*"
-  },
-  "morning4_start_2": {
-    "name": "Yo",
-    "text": "*En cuanto la palabra 'cita' aparece en mi mente, mi mano va al armario. Ya pensando en qué ponerme — un poco ridículo. Miro el móvil. Mensaje de la mañana.*"
-  },
-  "morning4_seo_msg_1": {
-    "name": "Seoyeon",
-    "text": "No llegues tarde. Fuente del parque, a las 10."
-  },
-  "morning4_yuna_msg_1": {
-    "name": "Yuna",
-    "text": "A las 10. Café frente a la estación. Si llegas tarde, me voy."
-  },
-  "morning4_dain_msg_1": {
-    "name": "Dain",
-    "text": "¡¡¡¡Es hoy!!!! ¡¡Frente al gimnasio a las 6 de la tarde!! Estoy nerviosa jaja, espera, ¿debería siquiera enviar esto?"
-  },
-  "morning4_end": {
-    "name": "Yo",
-    "text": "*Un último vistazo al espejo. — Listo. Vamos.*"
-  },
-  "morning4_hidden_check": {
-    "name": "Yo",
-    "text": "*Fin de semana. Paso por la escuela.*"
-  },
-  "hidden_homeroom_d4_1": {
-    "name": "Yo",
-    "text": "*La puerta de la escuela está entreabierta. Alguien sale. Es la profesora. En ropa casual.*"
-  },
-  "hidden_homeroom_d4_2": {
-    "name": "Profesora",
-    "text": "...¿Eh? ¿{name}?"
-  },
-  "hidden_homeroom_d4_3": {
-    "name": "Yo",
-    "text": "¿Profe? Es fin de semana, ¿qué hace en la escuela?"
-  },
-  "hidden_homeroom_d4_4": {
-    "name": "Profesora",
-    "text": "Ah, es que — me quedó papeleo. ...Una profesora es profesora incluso los fines de semana."
-  },
-  "hidden_homeroom_d4_5": {
-    "name": "Profesora",
-    "text": "...¿Comiste? Un café está bien, ¿no? — Bueno, un jugo, que eres estudiante."
-  },
-  "hidden_homeroom_d4_choice": {
-    "name": "Yo",
-    "text": "*En ropa casual, la profesora no parece profesora. Más bien — una escritora.*",
-    "choices": [
-      "Dale. ¿Hay algún café cerca?",
-      "Profe, ¿no debería hacer eso?"
-    ]
-  },
-  "hidden_homeroom_d4_cafe_1": {
-    "name": "Profesora",
-    "text": "Primera vez tomando algo con un alumno fuera de la escuela. ¿Sinceramente? Un poco incómodo."
-  },
-  "hidden_homeroom_d4_cafe_2": {
-    "name": "Profesora",
-    "text": "...Un poco. Después de que me descubrieras ayer — pude escribir más. Que alguien lo supiera fue... un alivio."
-  },
-  "hidden_homeroom_d4_cafe_3": {
-    "name": "Profesora",
-    "text": "¿Sabes qué es lo más difícil de escribir novelas? Encontrar al primer lector. Sin alguien que lea — la historia nunca se completa."
-  },
-  "hidden_homeroom_d4_cafe_choice": {
-    "name": "{name}",
-    "text": "*Deja la taza de café. Sus ojos brillan.*",
-    "choices": [
-      "Esa novela — ¿quién es el protagonista?",
-      "Ser su primer lector... eso es mucha presión"
-    ]
-  },
-  "hidden_homeroom_d4_cafe_choice_a": {
-    "name": "Profesora",
-    "text": "*Envuelve la taza con ambas manos.* ...Secreto. Lo sabrás cuando la leas."
-  },
-  "hidden_homeroom_d4_cafe_choice_b": {
-    "name": "Profesora",
-    "text": "No es presión. Solo léela. — Con eso es suficiente."
-  },
-  "hidden_homeroom_d4_cafe_4": {
-    "name": "Profesora",
-    "text": "...¿Serías mi primer lector?"
-  },
-  "hidden_homeroom_d4_cafe_5": {
-    "name": "Yo",
-    "text": "Quiero leerlo."
-  },
-  "hidden_homeroom_d4_cafe_6": {
-    "name": "Profesora",
-    "text": "...Gracias. Pero no le digas a nadie — ¿vale? ...Esto es nuestro secreto."
-  },
-  "hidden_homeroom_d4_decline": {
-    "name": "Profesora",
-    "text": "...Cierto. No debería. Anda, es fin de semana. — Diviértete."
-  },
-  "hidden_homeroom_d4_freetalk": {
-    "name": "Profesora",
-    "text": "*Conversando con la profesora en un café.*",
-    "context": "Día 4. Encuentro casual el fin de semana. Pidió ser su primer lector. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
-    "personality": "La profesora es más relajada en ropa casual. Dividida entre la pasión por escribir y sus sentimientos."
-  },
-  "hidden_nurse_d4_check": {
-    "name": "Yo",
-    "text": "*El fin de semana se acaba.*"
-  },
-  "hidden_nurse_d4_1": {
-    "name": "Yo",
-    "text": "*La enfermera publicó 'busco ayudante' en el chat escolar. Mis pies ya se dirigen a la escuela.*"
-  },
-  "hidden_nurse_d4_2": {
-    "name": "Enfermera",
-    "text": "¿Eh? ¿Viniste de verdad? No lo esperaba. — Un estudiante voluntario en la enfermería un fin de semana."
-  },
-  "hidden_nurse_d4_3": {
-    "name": "Yo",
-    "text": "Dije que ayudaría."
-  },
-  "hidden_nurse_d4_4": {
-    "name": "Enfermera",
-    "text": "...En el hospital hacía todo esto sola. Turnos de noche — a veces una enfermera haciendo el trabajo de tres."
-  },
-  "hidden_nurse_d4_5": {
-    "name": "Enfermera",
-    "text": "Lo más duro no era la carga de trabajo. Nadie me llamaba por mi nombre. 'Enfermera', 'turno nocturno', 'Planta 3'. Todo cargos, no nombres."
-  },
-  "hidden_nurse_d4_name_choice": {
-    "name": "{name}",
-    "text": "*Su nombre. Yo también la he llamado \"Enfermera\" todo este tiempo.*",
-    "choices": [
-      "¿Cómo se llama? No \"Enfermera\"",
-      "Entonces por eso vino a esta escuela"
-    ]
-  },
-  "hidden_nurse_d4_name_choice_a": {
-    "name": "Enfermera",
-    "text": "*Sus ojos se agrandan detrás de los lentes.* ...Te lo diré cuando te gradúes. Aguanta hasta entonces."
-  },
-  "hidden_nurse_d4_name_choice_b": {
-    "name": "Enfermera",
-    "text": "Aquí al menos hay alguien que me llama por mi nombre. ...Aunque sea solo una persona."
-  },
-  "hidden_nurse_d4_6": {
-    "name": "Enfermera",
-    "text": "¡Gracias~ Terminamos rápido por ti! ...Sí importa."
-  },
-  "hidden_nurse_d4_choice": {
-    "name": "Enfermera",
-    "text": "Bueno, ¿te invito algo? Una profesora invitando a un alumno es una actividad educativa~",
-    "choices": [
-      "¿Si es educativa, está bien?",
-      "No hace falta, me voy yendo"
-    ]
-  },
-  "hidden_nurse_d4_meal_walk": {
-    "name": "{name}",
-    "text": "*Nos dirigimos a la tienda de snacks frente a la escuela.*"
-  },
-  "hidden_nurse_d4_meal_1": {
-    "name": "Enfermera",
-    "text": "¡Qué picante! Ya no puedo comer estas cosas a mi edad~"
-  },
-  "hidden_nurse_d4_meal_2": {
-    "name": "Yo",
-    "text": "No eres vieja para nada."
-  },
-  "hidden_nurse_d4_meal_3": {
-    "name": "Enfermera",
-    "text": "...Eso. Suena raro viniendo de un estudiante."
-  },
-  "hidden_nurse_d4_meal_4": {
-    "name": "Enfermera",
-    "text": "{name}. Gracias por hoy. — De verdad."
-  },
-  "hidden_nurse_d4_pass": {
-    "name": "Enfermera",
-    "text": "¡Bueno~ Cuídate! — Vuelve pronto."
-  },
-  "hidden_nurse_d4_morning_1": {
-    "name": "{name}",
-    "text": "*Domingo por la mañana. Me dirijo a la enfermería por costumbre. — ¿Cuándo se convirtió esto en una costumbre?*"
-  },
-  "hidden_nurse_d4_morning_2": {
-    "name": "{name}",
-    "text": "*Abro la puerta de la enfermería. La enfermera está sentada en su silla. Con su uniforme blanco. — Pero algo es diferente de lo habitual. No hay su travesura de siempre.*"
-  },
-  "hidden_nurse_d4_morning_3": {
-    "name": "Enfermera",
-    "text": "Ah, viniste."
-  },
-  "hidden_nurse_d4_morning_4": {
-    "name": "{name}",
-    "text": "*Su 'viniste' está medio tono más bajo que de costumbre. — He aprendido a leer las emociones de esta persona por el tono de voz.*"
-  },
-  "hidden_nurse_d4_morning_5": {
-    "name": "{name}",
-    "text": "¿Es la última consulta?"
-  },
-  "hidden_nurse_d4_morning_6": {
-    "name": "Enfermera",
-    "text": "¿Consulta? *gira en su silla* Sí, la última consulta."
-  },
-  "hidden_nurse_d4_morning_7": {
-    "name": "{name}",
-    "text": "*La enfermera finge organizar papeles en su escritorio — pero está dando vuelta al mismo papel por tercera vez.*"
-  },
-  "hidden_nurse_d4_morning_8": {
-    "name": "Enfermera",
-    "text": "¿Puedo preguntarte algo?"
-  },
-  "hidden_nurse_d4_morning_9": {
-    "name": "{name}",
-    "text": "¿Qué es?"
-  },
-  "hidden_nurse_d4_morning_10": {
-    "name": "{name}",
-    "text": "*La enfermera se toca las gafas. Los ojos visibles a través de ellas son más grandes de lo que esperaba. Los ojos que estaban escondidos detrás de su travesura.*"
-  },
-  "hidden_nurse_d4_morning_11": {
-    "name": "Enfermera",
-    "text": "¿...Volverás a la enfermería después de graduarte?"
-  },
-  "hidden_nurse_d4_morning_choice": {
-    "name": "{name}",
-    "text": "*No es una pregunta. — Es el rostro de alguien que ya teme la respuesta. Nuestros ojos se encuentran. Su expresión seria sin su travesura habitual. — Nunca había visto a esta persona tan desprotegida.*",
-    "choices": [
-      "Volveré.",
-      "..."
-    ]
-  },
-  "hidden_nurse_d4_morning_choice_a": {
-    "name": "{name}",
-    "text": "Volveré."
-  },
-  "hidden_nurse_d4_morning_choice_b": {
-    "name": "{name}",
-    "text": "*Silencio.*"
-  },
-  "hidden_nurse_d4_morning_12": {
-    "name": "Enfermera",
-    "text": "¿...De verdad?"
-  },
-  "hidden_nurse_d4_morning_13": {
-    "name": "{name}",
-    "text": "*'De verdad.' — Su palabra para confirmar sinceridad. Hoy la escuché primero. Un momento de silencio. A través de sus gafas, sus ojos se ven húmedos. — La lente está empañada. No puedo decir si es vaho o lágrimas. La enfermera habla de nuevo con un tono más brillante, pero su voz tiembla. La travesura vuelve. — Pero debajo de sus ojos sonrientes, hay un rastro de algo fluyendo.*"
-  },
-  "hidden_nurse_d4_morning_freetalk": {
-    "name": "Enfermera",
-    "text": "*Conversando con la enfermera en la enfermería.*",
-    "context": "Día 4. El momento de despedida cuando pregunta si volverá después de graduarse. La escena donde ambas muestran sus verdaderos corazones. Tono: Conversación más emocional y profunda. La verdad detrás de la travesura. El significado de ser llamada por nombre.",
-    "personality": "La enfermera es cuidadosa y honesta. Quiere llamarte por tu nombre pero está en una posición cuidadosa. Las lágrimas salen con tu promesa."
-  },
-  "hidden_nurse_d4_freetalk": {
-    "name": "Enfermera",
-    "text": "*Conversando con la enfermera en el puesto de comida.*",
-    "context": "Día 4. Fin de semana. Ayudó con la preparación del chequeo médico y comiendo en un puesto de comida. Hablando sobre el agotamiento del hospital universitario. Tono: La conversación se ha vuelto seria. Emoción y tensión de una cita. Más sinceridad que bromas. Momentos donde las emociones se vuelven honestas.",
-    "personality": "La enfermera en ropa casual parece una hermana mayor. La alegría y la sinceridad se alternan, y ella entiende el peso de ser llamada por su nombre."
-  },
-  "hidden_nurse_d4_meal_1b": {
-    "name": "{name}",
-    "text": "*Volvimos a la enfermería.*"
-  }
+    "morning4_start": {
+        "name": "{name}",
+        "text": "*Cuarto día. Fin de semana. -- Hoy no hay clase. Es una cita.*"
+    },
+    "minsu_cheer_1": {
+        "name": "{name}",
+        "text": "*Miro el móvil. Mensaje de la mañana. — Minsu está arriba del todo.*"
+    },
+    "minsu_cheer_2": {
+        "name": "Minsu",
+        "text": "Oye, ¿hoy es la cita, no? Dain lo puso en el grupo jaja\nPero eh. Ve solo con una."
+    },
+    "minsu_cheer_3": {
+        "name": "Minsu",
+        "text": "Sí, confío en ti. — Hazlo bien."
+    },
+    "minsu_cheer_4": {
+        "name": "{name}",
+        "text": "*Corto. Pero ese 'hazlo bien' pesa. El mismo que en el Día 2 me preguntó '¿hacías lo mismo en tu anterior instituto?', el que en el Día 3 me dijo 'rechazar también es querer' — hoy me dice 'hazlo bien'.*\n\n*De advertencia a confrontación, de confrontación a apoyo. — Minsu confía en mí antes de que yo confíe en mí mismo.*"
+    },
+    "morning4_start_2": {
+        "name": "{name}",
+        "text": "*En cuanto la palabra 'cita' aparece en mi mente, mi mano va al armario. Ya pensando en qué ponerme — un poco ridículo. Miro el móvil. Mensaje de la mañana.*"
+    },
+    "morning4_seo_msg_1": {
+        "name": "Seoyeon",
+        "text": "No llegues tarde. Fuente del parque, a las 10."
+    },
+    "morning4_yuna_msg_1": {
+        "name": "Yuna",
+        "text": "A las 10. Café frente a la estación. Si llegas tarde, me voy."
+    },
+    "morning4_dain_msg_1": {
+        "name": "Dain",
+        "text": "¡¡¡¡Es hoy!!!! ¡¡Frente al gimnasio a las 6 de la tarde!! Estoy nerviosa jaja, espera, ¿debería siquiera enviar esto?"
+    },
+    "morning4_end": {
+        "name": "{name}",
+        "text": "*Un último vistazo al espejo. — Listo. Vamos.*"
+    },
+    "morning4_hidden_check": {
+        "name": "{name}",
+        "text": "*Fin de semana. Paso por la escuela.*"
+    },
+    "hidden_homeroom_d4_1": {
+        "name": "{name}",
+        "text": "*La puerta de la escuela está entreabierta. Alguien sale. Es la profesora. En ropa casual.*"
+    },
+    "hidden_homeroom_d4_2": {
+        "name": "Profesora",
+        "text": "...¿Eh? ¿{name}?"
+    },
+    "hidden_homeroom_d4_3": {
+        "name": "{name}",
+        "text": "¿Profe? Es fin de semana, ¿qué hace en la escuela?"
+    },
+    "hidden_homeroom_d4_4": {
+        "name": "Profesora",
+        "text": "Ah, es que — me quedó papeleo. ...Una profesora es profesora incluso los fines de semana."
+    },
+    "hidden_homeroom_d4_5": {
+        "name": "Profesora",
+        "text": "...¿Comiste? Un café está bien, ¿no? — Bueno, un jugo, que eres estudiante."
+    },
+    "hidden_homeroom_d4_choice": {
+        "name": "{name}",
+        "text": "*En ropa casual, la profesora no parece profesora. Más bien — una escritora.*",
+        "choices": [
+            "Dale. ¿Hay algún café cerca?",
+            "Profe, ¿no debería hacer eso?"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_1": {
+        "name": "Profesora",
+        "text": "Primera vez tomando algo con un alumno fuera de la escuela. ¿Sinceramente? Un poco incómodo."
+    },
+    "hidden_homeroom_d4_cafe_2": {
+        "name": "Profesora",
+        "text": "...Un poco. Después de que me descubrieras ayer — pude escribir más. Que alguien lo supiera fue... un alivio."
+    },
+    "hidden_homeroom_d4_cafe_3": {
+        "name": "Profesora",
+        "text": "¿Sabes qué es lo más difícil de escribir novelas? Encontrar al primer lector. Sin alguien que lea — la historia nunca se completa."
+    },
+    "hidden_homeroom_d4_cafe_choice": {
+        "name": "{name}",
+        "text": "*Deja la taza de café. Sus ojos brillan.*",
+        "choices": [
+            "Esa novela — ¿quién es el protagonista?",
+            "Ser su primer lector... eso es mucha presión"
+        ]
+    },
+    "hidden_homeroom_d4_cafe_choice_a": {
+        "name": "Profesora",
+        "text": "*Envuelve la taza con ambas manos.* ...Secreto. Lo sabrás cuando la leas."
+    },
+    "hidden_homeroom_d4_cafe_choice_b": {
+        "name": "Profesora",
+        "text": "No es presión. Solo léela. — Con eso es suficiente."
+    },
+    "hidden_homeroom_d4_cafe_4": {
+        "name": "Profesora",
+        "text": "...¿Serías mi primer lector?"
+    },
+    "hidden_homeroom_d4_cafe_5": {
+        "name": "{name}",
+        "text": "Quiero leerlo."
+    },
+    "hidden_homeroom_d4_cafe_6": {
+        "name": "Profesora",
+        "text": "...Gracias. Pero no le digas a nadie — ¿vale? ...Esto es nuestro secreto."
+    },
+    "hidden_homeroom_d4_decline": {
+        "name": "Profesora",
+        "text": "...Cierto. No debería. Anda, es fin de semana. — Diviértete."
+    },
+    "hidden_homeroom_d4_freetalk": {
+        "name": "Profesora",
+        "text": "*Conversando con la profesora en un café.*",
+        "context": "Día 4. Encuentro casual el fin de semana. Pidió ser su primer lector. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
+        "personality": "La profesora es más relajada en ropa casual. Dividida entre la pasión por escribir y sus sentimientos."
+    },
+    "hidden_nurse_d4_check": {
+        "name": "{name}",
+        "text": "*El fin de semana se acaba.*"
+    },
+    "hidden_nurse_d4_1": {
+        "name": "{name}",
+        "text": "*La enfermera publicó 'busco ayudante' en el chat escolar. Mis pies ya se dirigen a la escuela.*"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "Enfermera",
+        "text": "¿Eh? ¿Viniste de verdad? No lo esperaba. — Un estudiante voluntario en la enfermería un fin de semana."
+    },
+    "hidden_nurse_d4_3": {
+        "name": "{name}",
+        "text": "Dije que ayudaría."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "Enfermera",
+        "text": "...En el hospital hacía todo esto sola. Turnos de noche — a veces una enfermera haciendo el trabajo de tres."
+    },
+    "hidden_nurse_d4_5": {
+        "name": "Enfermera",
+        "text": "Lo más duro no era la carga de trabajo. Nadie me llamaba por mi nombre. 'Enfermera', 'turno nocturno', 'Planta 3'. Todo cargos, no nombres."
+    },
+    "hidden_nurse_d4_name_choice": {
+        "name": "{name}",
+        "text": "*Su nombre. Yo también la he llamado \"Enfermera\" todo este tiempo.*",
+        "choices": [
+            "¿Cómo se llama? No \"Enfermera\"",
+            "Entonces por eso vino a esta escuela"
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "name": "Enfermera",
+        "text": "*Sus ojos se agrandan detrás de los lentes.* ...Te lo diré cuando te gradúes. Aguanta hasta entonces."
+    },
+    "hidden_nurse_d4_name_choice_b": {
+        "name": "Enfermera",
+        "text": "Aquí al menos hay alguien que me llama por mi nombre. ...Aunque sea solo una persona."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "Enfermera",
+        "text": "¡Gracias~ Terminamos rápido por ti! ...Sí importa."
+    },
+    "hidden_nurse_d4_choice": {
+        "name": "Enfermera",
+        "text": "Bueno, ¿te invito algo? Una profesora invitando a un alumno es una actividad educativa~",
+        "choices": [
+            "¿Si es educativa, está bien?",
+            "No hace falta, me voy yendo"
+        ]
+    },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*Nos dirigimos a la tienda de snacks frente a la escuela.*"
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "Enfermera",
+        "text": "¡Qué picante! Ya no puedo comer estas cosas a mi edad~"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "{name}",
+        "text": "No eres vieja para nada."
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "Enfermera",
+        "text": "...Eso. Suena raro viniendo de un estudiante."
+    },
+    "hidden_nurse_d4_meal_4": {
+        "name": "Enfermera",
+        "text": "{name}. Gracias por hoy. — De verdad."
+    },
+    "hidden_nurse_d4_pass": {
+        "name": "Enfermera",
+        "text": "¡Bueno~ Cuídate! — Vuelve pronto."
+    },
+    "hidden_nurse_d4_morning_1": {
+        "name": "{name}",
+        "text": "*Domingo por la mañana. Me dirijo a la enfermería por costumbre. — ¿Cuándo se convirtió esto en una costumbre?*"
+    },
+    "hidden_nurse_d4_morning_2": {
+        "name": "{name}",
+        "text": "*Abro la puerta de la enfermería. La enfermera está sentada en su silla. Con su uniforme blanco. — Pero algo es diferente de lo habitual. No hay su travesura de siempre.*"
+    },
+    "hidden_nurse_d4_morning_3": {
+        "name": "Enfermera",
+        "text": "Ah, viniste."
+    },
+    "hidden_nurse_d4_morning_4": {
+        "name": "{name}",
+        "text": "*Su 'viniste' está medio tono más bajo que de costumbre. — He aprendido a leer las emociones de esta persona por el tono de voz.*"
+    },
+    "hidden_nurse_d4_morning_5": {
+        "name": "{name}",
+        "text": "¿Es la última consulta?"
+    },
+    "hidden_nurse_d4_morning_6": {
+        "name": "Enfermera",
+        "text": "¿Consulta? *gira en su silla* Sí, la última consulta."
+    },
+    "hidden_nurse_d4_morning_7": {
+        "name": "{name}",
+        "text": "*La enfermera finge organizar papeles en su escritorio — pero está dando vuelta al mismo papel por tercera vez.*"
+    },
+    "hidden_nurse_d4_morning_8": {
+        "name": "Enfermera",
+        "text": "¿Puedo preguntarte algo?"
+    },
+    "hidden_nurse_d4_morning_9": {
+        "name": "{name}",
+        "text": "¿Qué es?"
+    },
+    "hidden_nurse_d4_morning_10": {
+        "name": "{name}",
+        "text": "*La enfermera se toca las gafas. Los ojos visibles a través de ellas son más grandes de lo que esperaba. Los ojos que estaban escondidos detrás de su travesura.*"
+    },
+    "hidden_nurse_d4_morning_11": {
+        "name": "Enfermera",
+        "text": "¿...Volverás a la enfermería después de graduarte?"
+    },
+    "hidden_nurse_d4_morning_choice": {
+        "name": "{name}",
+        "text": "*No es una pregunta. — Es el rostro de alguien que ya teme la respuesta. Nuestros ojos se encuentran. Su expresión seria sin su travesura habitual. — Nunca había visto a esta persona tan desprotegida.*",
+        "choices": [
+            "Volveré.",
+            "..."
+        ]
+    },
+    "hidden_nurse_d4_morning_choice_a": {
+        "name": "{name}",
+        "text": "Volveré."
+    },
+    "hidden_nurse_d4_morning_choice_b": {
+        "name": "{name}",
+        "text": "*Silencio.*"
+    },
+    "hidden_nurse_d4_morning_12": {
+        "name": "Enfermera",
+        "text": "¿...De verdad?"
+    },
+    "hidden_nurse_d4_morning_13": {
+        "name": "{name}",
+        "text": "*'De verdad.' — Su palabra para confirmar sinceridad. Hoy la escuché primero. Un momento de silencio. A través de sus gafas, sus ojos se ven húmedos. — La lente está empañada. No puedo decir si es vaho o lágrimas. La enfermera habla de nuevo con un tono más brillante, pero su voz tiembla. La travesura vuelve. — Pero debajo de sus ojos sonrientes, hay un rastro de algo fluyendo.*"
+    },
+    "hidden_nurse_d4_morning_freetalk": {
+        "name": "Enfermera",
+        "text": "*Conversando con la enfermera en la enfermería.*",
+        "context": "Día 4. El momento de despedida cuando pregunta si volverá después de graduarse. La escena donde ambas muestran sus verdaderos corazones. Tono: Conversación más emocional y profunda. La verdad detrás de la travesura. El significado de ser llamada por nombre.",
+        "personality": "La enfermera es cuidadosa y honesta. Quiere llamarte por tu nombre pero está en una posición cuidadosa. Las lágrimas salen con tu promesa."
+    },
+    "hidden_nurse_d4_freetalk": {
+        "name": "Enfermera",
+        "text": "*Conversando con la enfermera en el puesto de comida.*",
+        "context": "Día 4. Fin de semana. Ayudó con la preparación del chequeo médico y comiendo en un puesto de comida. Hablando sobre el agotamiento del hospital universitario. Tono: La conversación se ha vuelto seria. Emoción y tensión de una cita. Más sinceridad que bromas. Momentos donde las emociones se vuelven honestas.",
+        "personality": "La enfermera en ropa casual parece una hermana mayor. La alegría y la sinceridad se alternan, y ella entiende el peso de ser llamada por su nombre."
+    },
+    "hidden_nurse_d4_meal_1b": {
+        "name": "{name}",
+        "text": "*Volvimos a la enfermería.*"
+    }
 }

@@ -1,10 +1,10 @@
 {
     "night2_start": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Back home. I showered and lay in bed — then the messenger notifications start pouring in.*"
     },
     "night2_msg_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Messages from three people.*"
     },
     "night2_msg_dain_specific": {
@@ -64,11 +64,11 @@
         "text": "...Are you coming to the library tomorrow?"
     },
     "night2_msg_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I need to reply to all three at the same time. — I'm not sure if this is bliss or torture.*"
     },
     "night2_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Who should I reply to first?*",
         "choices": [
             "Reply to Dain first",
@@ -93,7 +93,7 @@
         "text": "Oh wait mild tteokbokki isn't real tteokbokki lol"
     },
     "night2_reply_dain_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Three messages in a row again. This person never finishes in one sentence.*"
     },
     "night2_reply_seo_1": {
@@ -113,7 +113,7 @@
         "text": "......\nI'll leave the rooftop open at lunch tomorrow. Whether you come or not is up to you"
     },
     "night2_reply_seo_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*'Up to you,' she said. But it doesn't feel optional.*"
     },
     "night2_reply_yuna_1": {
@@ -125,7 +125,7 @@
         "text": "...Good to hear"
     },
     "night2_reply_yuna_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*A brief silence. — Then.*"
     },
     "night2_reply_yuna_4": {
@@ -141,56 +141,56 @@
         "text": "I'll tell you why later"
     },
     "night2_reply_yuna_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The third star? — I open the window and look up. I can see stars, but I don't know which one is the third. Very Yuna. Someone who never gives you the answer. — Someone who makes you want to find it.*"
     },
     "night2_end_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I sent my replies and set the phone down.*"
     },
     "night2_end_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Day two is over. On the first day, it was curiosity. I wondered what kind of people they were.*"
     },
     "night2_flashback_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Minsu's words keep coming back. 'Were you like this at your old school too?'*\n\n*— I opened my phone gallery without thinking. I don't know why. My fingers moved on their own.*"
     },
     "night2_flashback_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I scrolled far back. Three months ago. — A photo. A group shot in front of the library. Sojeong is smiling. Right next to me.*"
     },
     "night2_flashback_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Back then, I'd been rehearsing 'I like you' for a month. Every night, typing it out in the notes app on my phone. Confession simulations. — I always stopped there.*"
     },
     "night2_flashback_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Then one day in March, during morning announcements, the guy next to me said, 'Sojeong's got a boyfriend.'*"
     },
     "night2_flashback_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The simulations in my notes app stopped at number 38. There's no number 39. There was no need to write one.*"
     },
     "night2_flashback_6": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The transfer wasn't because of Sojeong. It was my dad's job. — But I didn't mind leaving. It meant I wouldn't have to walk past Sojeong's smile in the hallway every day.*"
     },
     "night2_flashback_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*'This time, no more regrets.' — That's the promise I made when I came to this school.*\n\n*But Minsu's right. Not wanting to regret, I've been telling everyone. Is that... even worse?*"
     },
     "night2_flashback_8": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I closed the gallery. Thought about deleting the photo — but left it. Deleting it would feel like erasing the regret too.*"
     },
     "night2_end_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There's still distance between 'on my mind' and 'in love.' — But that distance feels shorter than yesterday.*"
     },
     "night2_end_4": {
-        "name": "Me",
-        "text": "*I close my eyes. \u2014 Maybe I should be a little more honest tomorrow.*"
+        "name": "{name}",
+        "text": "*I close my eyes. — Maybe I should be a little more honest tomorrow.*"
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",
@@ -211,27 +211,27 @@
         "personality": "Yuna is a mysterious literary girl. Her walls lower a bit at night. Longer messages mean she's opening up."
     },
     "night2_hidden_check": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Between the messenger alerts — I spot more notifications.*"
     },
     "night2_hidden_homeroom_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*A private message from the homeroom teacher. '{name}, thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if adjusting gets tough, come by anytime.'*"
     },
     "night2_hidden_homeroom_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Three lines. Gratitude, distance, then reaching out again. — She's playing tug of war with herself.*"
     },
     "night2_hidden_homeroom_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*'Won't need to call you in' and 'come by anytime' in the same message. Contradictory — but that's so her.*"
     },
     "night2_hidden_nurse_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Health app notification. 'Nurse's Record: {name} — Elbow abrasion (minor). Note: I'll change the bandage tomorrow morning. Changing bandages is a medical procedure so you can't refuse ^^'*"
     },
     "night2_hidden_nurse_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Can't refuse. — Is that medical authority or personal interest? The emoji blurs the line.*"
     },
     "night2_reply_dain_react_high": {

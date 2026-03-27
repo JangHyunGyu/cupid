@@ -1,38 +1,38 @@
 {
     "after_start": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*After school. I decide to look around the campus. I still don't know the layout.*"
     },
     "after_start_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I walk down the hallway. My phone buzzes. — The group chat from my old school.*"
     },
     "after_kakao_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*'Sojeong posted cherry blossom photos with her boyfriend lol'*"
     },
     "after_kakao_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I put my phone back in my pocket.*"
     },
     "after_kakao_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*...Ah.*"
     },
     "after_kakao_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I'm fine. Really. It's already in the past. I never even confessed and it just ended. It's not lingering feelings — it's regret. — What if I had said something back then? Even if I'd been rejected, at least I wouldn't feel this unsettled.*"
     },
     "after_kakao_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*At this school — I'll say what I want to say. This time.*"
     },
     "after_kakao_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I take out my phone again and leave the group chat. Done. — I belong to this school now.*"
     },
     "after_miss_dain_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Walking down the hallway when I hear heavy footsteps behind me.*"
     },
     "after_miss_dain_2": {
@@ -40,7 +40,7 @@
         "text": "Watch out!!"
     },
     "after_miss_dain_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I dodge to the side reflexively. Dain zooms past me. Running, then a sudden stop.*"
     },
     "after_miss_dain_4": {
@@ -48,7 +48,7 @@
         "text": "Oh! Nice reflexes!"
     },
     "after_miss_dain_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "Why are you sprinting in the hallway?"
     },
     "after_miss_dain_6": {
@@ -56,15 +56,15 @@
         "text": "I'm late! Gotta get to the gym! — Oh, see you tomorrow! Transfer kid!"
     },
     "after_miss_dain_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She waves and runs off. Like a storm. We haven't even properly introduced ourselves and she's already this casual.*"
     },
     "after_miss_yuna_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Passing by the library when I notice a girl with red eyes walking while reading a book. The tattoos on her arms stand out — but the way she holds the book is surprisingly quiet.*"
     },
     "after_miss_yuna_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*— A bookmark falls.* Hey, this..."
     },
     "after_miss_yuna_3": {
@@ -72,11 +72,11 @@
         "text": "......Thanks."
     },
     "after_miss_yuna_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*And she walks on. That's it. But — something about her stays in my mind.*"
     },
     "after_miss_seoyeon_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*On my way out, I run into Seoyeon in the hallway.*"
     },
     "after_miss_seoyeon_2": {
@@ -84,7 +84,7 @@
         "text": "Where'd you go earlier?"
     },
     "after_miss_seoyeon_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "Earlier?"
     },
     "after_miss_seoyeon_4": {
@@ -92,7 +92,7 @@
         "text": "Lunch. I left the rooftop open. Making me wait — bold move for a transfer student."
     },
     "after_miss_seoyeon_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "You waited?"
     },
     "after_miss_seoyeon_6": {
@@ -100,7 +100,7 @@
         "text": "...I went up for some air and the door happened to be open."
     },
     "after_miss_seoyeon_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She definitely waited. — I feel a little sorry, and oddly, a little amused.*"
     },
     "after_miss_seoyeon_8": {
@@ -108,7 +108,7 @@
         "text": "Don't run off tomorrow."
     },
     "after_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She leaves with a smile.*",
         "choices": [
             "Office",
@@ -117,7 +117,7 @@
         ]
     },
     "after_hidden_homeroom_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I'm about to head home when — a voice from behind.*"
     },
     "after_hidden_homeroom_2": {
@@ -125,7 +125,7 @@
         "text": "{name}. Hang on a sec."
     },
     "after_hidden_homeroom_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*It's the homeroom teacher. Her cardigan is even more disheveled than before. Looks like the day took a toll on her.*"
     },
     "after_hidden_homeroom_4": {
@@ -133,7 +133,7 @@
         "text": "You're not in trouble. — You're the transfer student, so. How are you settling in?"
     },
     "after_hidden_homeroom_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Sounds like a routine check-in, but her eyes are genuinely watching me.*",
         "choices": [
             "I'm fine. It's a nice school, actually.",
@@ -145,7 +145,7 @@
         "text": "Good to hear. — If anything comes up, stop by the faculty office. That's what I'm here for."
     },
     "after_homeroom_ok_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Thought she was the distant type, but she actually looks out for people. — Or maybe it's just part of the job.*"
     },
     "after_homeroom_honest_1": {
@@ -153,7 +153,7 @@
         "text": "Feeling overwhelmed is normal. It'd be weirder if you were chill on your first day at a new school."
     },
     "after_homeroom_honest_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "Have you ever transferred schools, sir?"
     },
     "after_homeroom_honest_3": {
@@ -165,7 +165,7 @@
         "text": "If it gets too rough, come to the faculty office. I can get you a coffee — wait, you're a student. Juice, then."
     },
     "after_homeroom_honest_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "A teacher buying a student drinks?"
     },
     "after_homeroom_honest_6": {
@@ -193,7 +193,7 @@
         "text": "Oh, {name}."
     },
     "after_homeroom_honest_8": {
-        "name": "Me",
+        "name": "{name}",
         "text": "Yeah?"
     },
     "after_homeroom_honest_9": {
@@ -201,7 +201,7 @@
         "text": "If you can't settle in, I'll come drag you back."
     },
     "after_homeroom_honest_10": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She disappears down the hallway. Her long hair sways. — She called it professional concern, but her eyes told a different story.*"
     },
     "after_homeroom_freetalk": {
@@ -211,15 +211,15 @@
         "personality": "The homeroom teacher hides warmth behind dry humor and deadpan delivery. Early 30s female teacher with brown wavy long hair and beige cardigan. She wraps her feelings in words like \"work\" and \"professional concern.\" Former aspiring novelist."
     },
     "after_hidden_nurse_intro": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Walking down the hallway when — my head gets a little dizzy. First-day nerves, probably.*"
     },
     "after_hidden_nurse_intro_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There's a sign for the nurse's office on the wall. — Should I go in?*"
     },
     "after_hidden_nurse_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I've been meeting people nonstop since this morning.*",
         "choices": [
             "Go to the nurse's office",
@@ -227,11 +227,11 @@
         ]
     },
     "after_nurse_skip": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I decide to just head home. It's probably nothing.*"
     },
     "after_nurse_enter_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I open the nurse's office door. A faint smell of antiseptic. White curtains, a white bed, a small desk. A woman is sitting at the desk. White coat, a stethoscope around her neck. Ash-purple bob cut neatly styled, watching me over her glasses with her chin propped on one hand. She was reading something — and looks up.*"
     },
     "after_nurse_enter_2": {
@@ -239,7 +239,7 @@
         "text": "Oh, a patient."
     },
     "after_nurse_enter_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "I'm feeling a bit dizzy."
     },
     "after_nurse_enter_4": {
@@ -247,7 +247,7 @@
         "text": "You're the transfer student, right? Already in the nurse's office on day one. Must be stressed out~"
     },
     "after_nurse_enter_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The nurse walks over. Her hand lands on my forehead.*"
     },
     "after_nurse_enter_6": {
@@ -279,7 +279,7 @@
         "text": "You don't have to be formal here. The nurse's office is a chill zone. — That's kind of the whole point."
     },
     "after_nurse_enter_9": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I sip some water and look around. A small potted plant in the corner.*"
     },
     "after_nurse_enter_10": {
@@ -305,7 +305,7 @@
         "text": "Hey, where'd you go during lunch? I went to the snack bar but you weren't there."
     },
     "after1_jealousy_seo_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*...What should I say. If I mention I was with Seoyeon, things might get weird.*"
     },
     "after1_jealousy_seo_3": {
@@ -313,7 +313,7 @@
         "text": "...The rooftop? Just the two of you?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Dain's voice went up slightly.*",
         "choices": [
             "I ate on the rooftop with the president. (Honest)",
@@ -321,7 +321,7 @@
         ]
     },
     "after1_jealousy_seo_honest": {
-        "name": "Me",
+        "name": "{name}",
         "text": "Yeah, she brought me there. Even had a packed lunch for two."
     },
     "after1_jealousy_seo_honest_2": {
@@ -329,7 +329,7 @@
         "text": "...I see? Could've told me, at least."
     },
     "after1_jealousy_seo_lie": {
-        "name": "Me",
+        "name": "{name}",
         "text": "Nah, I was just wandering around by myself."
     },
     "after1_jealousy_seo_lie_2": {
@@ -337,11 +337,11 @@
         "text": "Really? Alone? — Well, makes sense, it's your first day!"
     },
     "after1_jealousy_seo_yuna": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*A folded note falls out of my pocket. Yuna's handwriting.*"
     },
     "after1_jealousy_seo_yuna_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*'I saw you on the rooftop at lunch. ...You looked close with the student council president.' — Three dots at the end. Words swallowed.*"
     },
     "after1_jealousy_dain_1": {
@@ -349,7 +349,7 @@
         "text": "I saw you at the snack bar with Dain during lunch. You adapt fast."
     },
     "after1_jealousy_dain_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She's smiling. But her eyes aren't. Her fingers are tapping the clipboard.*"
     },
     "after1_jealousy_yuna_1": {
@@ -361,7 +361,7 @@
         "text": "...She doesn't usually hang out with anyone, you know."
     },
     "after1_pre_miss": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I keep walking down the hallway.*"
     }
 }

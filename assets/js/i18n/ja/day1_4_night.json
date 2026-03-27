@@ -1,14 +1,14 @@
 {
     "night_start": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*部屋に戻った。ベッドに横になる。*"
     },
     "night_start_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*初日にしては——へとへとだ。でも悪くない。*"
     },
     "night_start_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*スマホが鳴る。学校のメッセンジャー。*"
     },
     "night_msg_seo_1": {
@@ -16,7 +16,7 @@
         "text": "*今日の屋上、どうだった？*"
     },
     "night_msg_seo_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*風が気持ちよかった*"
     },
     "night_msg_seo_3": {
@@ -28,7 +28,7 @@
         "text": "*…サービスだよ*"
     },
     "night_msg_seo_5": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*『サービスだよ』をわざわざ一行空けて送ってきた。——これも計算なのか、本心なのか。*"
     },
     "night_msg_yuna_1": {
@@ -40,7 +40,7 @@
         "text": "*明日も席、空けとくね*"
     },
     "night_msg_yuna_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*短い。でも『席、空けとくね』って、この人にとっては最大限の歓迎じゃないか。*"
     },
     "night_msg_dain_1": {
@@ -56,19 +56,19 @@
         "text": "*今日のパン代まだ惜しいんだけどｗｗｗ*"
     },
     "night_msg_dain_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*三行連続。一呼吸置いてから送れないのか。*"
     },
     "night_late_transition": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*寝ようとしたら——スマホがもう一度鳴る。*"
     },
     "night_late_transition_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*夜11時。誰だろう？*"
     },
     "night_late_branch": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*画面が光る。*"
     },
     "night_seo_late_1": {
@@ -80,7 +80,7 @@
         "text": "*——来なかったら迎えに行くから*"
     },
     "night_seo_late_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*「迎えに行くから」が冗談なのか本気なのか。——この人には境界線がない。*"
     },
     "night_yuna_late_1": {
@@ -96,7 +96,7 @@
         "text": "*——返信するかどうか迷っているうちに、画面が暗くなった。*"
     },
     "night_yuna_late_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*既読スルーされたのか、自分がしたのか。——この人は全てが曖昧だ。*"
     },
     "night_dain_late_1": {
@@ -112,23 +112,23 @@
         "text": "*拒否は受け付けませんｗｗ*"
     },
     "night_dain_late_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*この人に『拒否』という概念はないのか。*"
     },
     "night_end_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*スマホを置いた。*"
     },
     "night_end_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*天井を見る。桜の香りがまだ制服に残っている。*"
     },
     "night_end_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*悪くない初日だった。*"
     },
     "night_end_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*明日は——もう少し面白くなりそうだ。*"
     },
     "night_seo_freetalk": {
@@ -150,23 +150,23 @@
         "personality": "ユナは神秘的な文学少女。メッセージも短くて暗号のよう。夜に先に連絡したこと自体が大きな意味。"
     },
     "night_hidden_check": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*メッセンジャーの通知の間に——別の通知が見える。*"
     },
     "night_hidden_homeroom_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*学校アプリに担任先生の投稿がある。『3年2組連絡：明日1時限の数学の準備物を忘れずに。——それと{name}、うまくやってるならそれでいい。』*"
     },
     "night_hidden_homeroom_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*クラスの連絡に個人メッセージ？——この人、公私の区別がつかないのか、わざとなのか。*"
     },
     "night_hidden_nurse_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*学校の健康管理アプリに通知が来ている。『保健室記録: {name} — めまい（軽度）。メモ: 明日も症状があればまた来て。水をたくさん飲んでね。——♥は医療的関心です ^^』*"
     },
     "night_hidden_nurse_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*医療的関心にハートをつける保健先生とは。健康記録に絵文字を使う人は初めて見た。*"
     }
 }

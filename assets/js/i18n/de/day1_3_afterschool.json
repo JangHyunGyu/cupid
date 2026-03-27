@@ -1,38 +1,38 @@
 {
     "after_start": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Nach der Schule. Ich beschließe, mich auf dem Campus umzusehen. Ich kenne mich noch nicht aus.*"
     },
     "after_start_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich gehe den Flur entlang. Mein Handy vibriert. — Der Gruppenchat von meiner alten Schule.*"
     },
     "after_kakao_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*‘Sojeong hat Kirschblütenfotos mit ihrem Freund gepostet lol’*"
     },
     "after_kakao_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich stecke das Handy in die Tasche.*"
     },
     "after_kakao_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*...Ach.*"
     },
     "after_kakao_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Mir geht es gut. Wirklich. Das ist Vergangenheit. Ich habe mich nicht mal gestanden und es war vorbei. Es ist keine Sehnsucht — es ist Reue. — Was wäre gewesen, wenn ich damals etwas gesagt hätte? Selbst wenn ich abgewiesen worden wäre, hätte ich zumindest nicht dieses nagende Gefühl.*"
     },
     "after_kakao_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*An dieser Schule — werde ich sagen, was ich sagen will. Diesmal.*"
     },
     "after_kakao_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich hole das Handy wieder raus und verlasse den Gruppenchat. Erledigt. — Jetzt gehöre ich zu dieser Schule.*"
     },
     "after_miss_dain_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich gehe den Flur entlang, als ich schwere Schritte hinter mir höre.*"
     },
     "after_miss_dain_2": {
@@ -40,7 +40,7 @@
         "text": "Vorsicht!!"
     },
     "after_miss_dain_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich weiche reflexartig aus. Dain schießt an mir vorbei. Rennen, dann Vollbremsung.*"
     },
     "after_miss_dain_4": {
@@ -48,7 +48,7 @@
         "text": "Oh! Gute Reflexe!"
     },
     "after_miss_dain_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Warum sprintest du durch den Flur?"
     },
     "after_miss_dain_6": {
@@ -56,15 +56,15 @@
         "text": "Ich bin spät dran! Muss zur Turnhalle! — Ach, bis morgen! Neuer!"
     },
     "after_miss_dain_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie winkt und rennt davon. Wie ein Wirbelsturm. Wir haben uns nicht mal richtig vorgestellt und sie duzt mich schon.*"
     },
     "after_miss_yuna_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*An der Bibliothek vorbei sehe ich ein Mädchen mit roten Augen, das im Gehen liest. Die Tattoos an ihren Armen fallen auf — aber wie sie das Buch hält, wirkt erstaunlich ruhig.*"
     },
     "after_miss_yuna_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*— Ein Lesezeichen fällt.* „Hey, das...“"
     },
     "after_miss_yuna_3": {
@@ -72,11 +72,11 @@
         "text": "......Danke."
     },
     "after_miss_yuna_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Und sie geht weiter. Das war’s. Aber — irgendetwas an ihr bleibt im Gedächtnis.*"
     },
     "after_miss_seoyeon_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Auf dem Weg nach Hause treffe ich Seoyeon im Flur.*"
     },
     "after_miss_seoyeon_2": {
@@ -84,7 +84,7 @@
         "text": "Wo warst du vorhin?"
     },
     "after_miss_seoyeon_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Vorhin?"
     },
     "after_miss_seoyeon_4": {
@@ -92,7 +92,7 @@
         "text": "Mittag. Ich hatte das Dach aufgelassen. Mich warten lassen — ganz schön mutig für einen neuen Schüler."
     },
     "after_miss_seoyeon_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Du hast gewartet?"
     },
     "after_miss_seoyeon_6": {
@@ -100,7 +100,7 @@
         "text": "...Ich wollte frische Luft schnappen und die Tür war zufällig offen."
     },
     "after_miss_seoyeon_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie hat definitiv gewartet. — Es tut mir ein bisschen leid, und seltsamerweise finde ich es auch ein bisschen lustig.*"
     },
     "after_miss_seoyeon_8": {
@@ -108,7 +108,7 @@
         "text": "Morgen lauf nicht weg."
     },
     "after_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie geht mit einem Lächeln vorbei.*",
         "choices": [
             "Lehrerzimmer",
@@ -117,7 +117,7 @@
         ]
     },
     "after_hidden_homeroom_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich will gerade nach Hause gehen, als — eine Stimme von hinten.*"
     },
     "after_hidden_homeroom_2": {
@@ -125,7 +125,7 @@
         "text": "{name}. Warte kurz."
     },
     "after_hidden_homeroom_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Klassenlehrerin. Ihre Strickjacke ist noch zerknitterter als vorhin. Sieht aus, als hätte der Tag sie geschafft.*"
     },
     "after_hidden_homeroom_4": {
@@ -133,7 +133,7 @@
         "text": "Du hast nichts angestellt. — Du bist der Neue, deshalb frage ich. Wie läuft's?"
     },
     "after_hidden_homeroom_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Klingt nach Routine, aber ihre Augen schauen aufmerksam.*",
         "choices": [
             "Ganz gut. Nette Schule.",
@@ -145,7 +145,7 @@
         "text": "Gut zu hören. — Wenn was ist, komm ins Lehrerzimmer. Dafür bin ich da."
     },
     "after_homeroom_ok_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dachte, sie wäre der distanzierte Typ, aber sie kümmert sich tatsächlich. — Oder es ist einfach ihr Job.*"
     },
     "after_homeroom_honest_1": {
@@ -153,7 +153,7 @@
         "text": "Sich überfordert zu fühlen ist normal. Es wäre seltsam, wenn du am ersten Tag in einer neuen Schule tiefenentspannt wärst."
     },
     "after_homeroom_honest_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Haben Sie auch mal die Schule gewechselt?"
     },
     "after_homeroom_honest_3": {
@@ -165,7 +165,7 @@
         "text": "Wenn's hart wird, komm ins Lehrerzimmer. Ich kann dir einen Kaffee — ach, du bist Schüler. Saft, dann."
     },
     "after_homeroom_honest_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Eine Lehrerin, die einem Schüler was ausgibt?"
     },
     "after_homeroom_honest_6": {
@@ -193,7 +193,7 @@
         "text": "Ach, {name}."
     },
     "after_homeroom_honest_8": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Ja?"
     },
     "after_homeroom_honest_9": {
@@ -201,7 +201,7 @@
         "text": "Wenn du dich nicht einlebst, komm ich dich wieder einfangen."
     },
     "after_homeroom_honest_10": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — Pädagogisches Interesse, sagte sie, aber ihre Augen erzählten etwas anderes.*"
     },
     "after_homeroom_freetalk": {
@@ -211,15 +211,15 @@
         "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Anfang dreißig, braunes welliges langes Haar und beige Strickjacke. Sie verpackt ihre Gefühle in Worte wie \"Arbeit\" und \"pädagogisches Interesse\". Ehemalige angehende Romanautorin."
     },
     "after_hidden_nurse_intro": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Im Flur wird mir kurz schwindelig. Wohl die Anspannung vom ersten Tag.*"
     },
     "after_hidden_nurse_intro_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*An der Wand ein Schild: \"Krankenzimmer\". — Soll ich reingehen?*"
     },
     "after_hidden_nurse_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seit heute Morgen habe ich ohne Pause Leute getroffen.*",
         "choices": [
             "Ins Krankenzimmer gehen",
@@ -227,11 +227,11 @@
         ]
     },
     "after_nurse_skip": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich gehe einfach nach Hause. Wird schon nichts sein.*"
     },
     "after_nurse_enter_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich öffne die Tür zum Krankenzimmer. Ein leichter Desinfektionsgeruch. Weiße Vorhänge, ein weißes Bett, ein kleiner Schreibtisch. Am Schreibtisch sitzt eine Frau. Weißer Kittel, ein Stethoskop um den Hals. Ein gepflegter aschvioletter Bob-Schnitt, sie beobachtet mich über ihre Brille hinweg, das Kinn auf eine Hand gestützt. Sie hat gerade etwas gelesen — und blickt auf.*"
     },
     "after_nurse_enter_2": {
@@ -239,7 +239,7 @@
         "text": "Oh, ein Patient."
     },
     "after_nurse_enter_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Mir ist ein bisschen schwindelig."
     },
     "after_nurse_enter_4": {
@@ -247,7 +247,7 @@
         "text": "Du bist der Neue, oder? Am ersten Tag schon im Krankenzimmer. Stress gehabt, hm~"
     },
     "after_nurse_enter_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Krankenschwester kommt näher. Ihre Hand legt sich auf meine Stirn.*"
     },
     "after_nurse_enter_6": {
@@ -279,7 +279,7 @@
         "text": "Du musst mich hier nicht siezen. Im Krankenzimmer darfst du dich entspannen. — Dafür ist es da."
     },
     "after_nurse_enter_9": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich trinke Wasser und schaue mich um. Ein kleiner Blumentopf in der Ecke.*"
     },
     "after_nurse_enter_10": {
