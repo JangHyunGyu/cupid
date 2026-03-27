@@ -46,7 +46,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_seo_2b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": { "Seoyeon": { "affinity": 8 }, "Dain": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
+        "stats": { "Seoyeon": { "affinity": 8 } },
         "next": "lunch2_seo_3"
     },
 
@@ -79,7 +79,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_yuna_3": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 10 }, "Seoyeon": { "affinity": -3 }, "Dain": { "affinity": -3 } },
+        "stats": { "Yuna": { "affinity": 10 } },
         "next": "lunch2_yuna_4"
     },
     "lunch2_yuna_4": {
@@ -292,6 +292,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "stats": { "Seoyeon": { "affinity": -3 }, "Dain": { "affinity": -3 } },
         "next": "after2_start"
     },
 
@@ -304,7 +305,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_seo_2": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": { "Seoyeon": { "affinity": 8 }, "Dain": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
+        "stats": { "Seoyeon": { "affinity": 8 } },
         "next": "lunch2_seo_3"
     },
     "lunch2_seo_3": {
@@ -455,6 +456,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_seo_end_c1": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy.png",
+        "stats": { "Dain": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
         "next": "after2_start"
     },
     "lunch2_seo_c2_1": {
@@ -475,6 +477,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_seo_end_c2": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_pout.png",
+        "stats": { "Dain": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
         "next": "after2_start"
     },
 
@@ -487,7 +490,7 @@ Object.assign(SCENARIO[2], {
     "lunch2_dain_2": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "stats": { "Dain": { "affinity": 10 }, "Seoyeon": { "affinity": -3 }, "Yuna": { "affinity": -3 } },
+        "stats": { "Dain": { "affinity": 10 } },
         "branches": [
             { "condition": "chose_dain_lunch", "next": "lunch2_dain_3" },
             { "next": "lunch2_dain_3b" }

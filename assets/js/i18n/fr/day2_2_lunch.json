@@ -1,11 +1,11 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Pause dejeuner. Contrairement a hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait signe vers la boutique de l'école.*"
+        "text": "*Pause déjeuner. Contrairement a hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait signe vers la boutique de l'école.*"
     },
     "lunch2_start_2": {
         "name": "{name}",
-        "text": "*La pause dejeuner dans cette école, c'est la guerre.*"
+        "text": "*La pause déjeuner dans cette école, c'est la guerre.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Un batiment plus ancien que le principal. Presque aucun élève.*"
+        "text": "*L'annexe de la bibliothèque. Un bâtiment plus ancien que le principal. Presque aucun élève.*"
     },
     "lunch2_yuna_2": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna ouvre son livre. Le signal que la conversation est terminee.*"
+        "text": "*Yuna ouvre son livre. Le signal que la conversation est terminée.*"
     },
     "lunch2_yuna_c1_8": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
-        "text": "*Je m'assois à côté d'elle sans rien dire. Yuna jette un bref coup d'oeil.*"
+        "text": "*Je m'assois à côté d'elle sans rien dire. Yuna jette un bref coup d'œil.*"
     },
     "lunch2_yuna_c2_2": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "lunch2_seo_8": {
         "name": "{name}",
-        "text": "*En mangeant -- la porte du toit s'ouvre. Dain est montee.*"
+        "text": "*En mangeant -- la porte du toit s'ouvre. Dain est montée.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -262,7 +262,7 @@
     },
     "lunch2_seo_19": {
         "name": "{name}",
-        "text": "*Seoyeon jette un coup d'oeil nonchalant aux lèvres de {name}.*"
+        "text": "*Seoyeon jette un coup d'œil nonchalant aux lèvres de {name}.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -318,7 +318,7 @@
     },
     "lunch2_dain_1": {
         "name": "{name}",
-        "text": "*A la boutique avec Dain. Revanche du pierre-papier-ciseaux d'hier.*"
+        "text": "*À la boutique avec Dain. Revanche du pierre-papier-ciseaux d'hier.*"
     },
     "lunch2_dain_2": {
         "name": "Dain",
@@ -362,7 +362,7 @@
     },
     "lunch2_dain_12": {
         "name": "{name}",
-        "text": "Aucune idee."
+        "text": "Aucune idée."
     },
     "lunch2_dain_13": {
         "name": "Dain",
@@ -395,7 +395,7 @@
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*Le craquement du pain soboro de Dain est anormalement fort. Le regard de Seoyeon, les oreilles rouges de Dain -- la pause dejeuner se complique de jour en jour.*"
+        "text": "*Le craquement du pain soboro de Dain est anormalement fort. Le regard de Seoyeon, les oreilles rouges de Dain -- la pause déjeuner se complique de jour en jour.*"
     },
     "lunch2_seo_1_check": {
         "name": "{name}",

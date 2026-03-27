@@ -53,7 +53,7 @@
     },
     "morning2_seo_3": {
         "name": "{name}",
-        "text": "*Seoyeon passe dans le couloir en jetant un coup d'oeil dans la classe. Son regard se pose précisément sur moi.*"
+        "text": "*Seoyeon passe dans le couloir en jetant un coup d'œil dans la classe. Son regard se pose précisément sur moi.*"
     },
     "morning2_seo_4": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Elle ne s'est pas arrêtée de marcher. Mais son regard était clairement tourne vers moi.*"
+        "text": "*Elle ne s'est pas arrêtée de marcher. Mais son regard était clairement tourné vers moi.*"
     },
     "morning2_minsu_2": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "La présidente aussi s'interesse au nouvel élève ? Populaire !"
+        "text": "La présidente aussi s'intéresse au nouvel élève ? Populaire !"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "C'est moi qui t'ai trouve en premier, donc t'es notre nouvel élève ! Premier arrive, premier servi !"
+        "text": "C'est moi qui t'ai trouvé en premier, donc t'es notre nouvel élève ! Premier arrive, premier servi !"
     },
     "morning2_break_1": {
         "name": "{name}",

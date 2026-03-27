@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*De retour à la maison. Douche prise, allonge sur le lit -- les notifications du messenger se mettent a pleuvoir.*"
+        "text": "*De retour à la maison. Douche prise, allongé sur le lit -- les notifications du messenger se mettent à pleuvoir.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "night2_reply_dain_5": {
         "name": "{name}",
-        "text": "*Encore trois messages d'affilee. Cette personne ne finit jamais en une phrase.*"
+        "text": "*Encore trois messages d'affilée. Cette personne ne finit jamais en une phrase.*"
     },
     "night2_reply_seo_1": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
-        "text": "A peu pres à la moitie. C'est bien"
+        "text": "À peu près à la moitié. C'est bien"
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
