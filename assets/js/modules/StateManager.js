@@ -126,6 +126,12 @@ class StateManager {
      * @returns {boolean} 플래그 값 (없으면 false)
      */
     getFlag(flagName) {
+        if (flagName.includes('||')) {
+            return flagName.split('||').some(f => this.flags[f.trim()] ?? false);
+        }
+        if (flagName.includes('&&')) {
+            return flagName.split('&&').every(f => this.flags[f.trim()] ?? false);
+        }
         return this.flags[flagName] ?? false;
     }
 

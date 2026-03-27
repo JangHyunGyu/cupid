@@ -711,7 +711,11 @@ class SimState {
     }
     getAffinity(char) { return this.stats[char] ?? 0; }
     setFlag(name, val = true) { this.flags[name] = val; }
-    getFlag(name) { return this.flags[name] ?? false; }
+    getFlag(name) {
+        if (name.includes('||')) return name.split('||').some(f => this.flags[f.trim()] ?? false);
+        if (name.includes('&&')) return name.split('&&').every(f => this.flags[f.trim()] ?? false);
+        return this.flags[name] ?? false;
+    }
     setDay(d) { this.currentDay = d; }
     clone() {
         const c = new SimState();
