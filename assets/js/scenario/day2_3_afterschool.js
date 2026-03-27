@@ -785,7 +785,6 @@ Object.assign(SCENARIO[2], {
     },
 
     "after2_dain_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/street.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
@@ -905,7 +904,6 @@ Object.assign(SCENARIO[2], {
         "next": "hidden_nurse_d2_freetalk"
     },
     "hidden_nurse_d2_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/nurse_room.png",
         "sunset": true,
         "character": "assets/images/characters/nurse_normal.png",

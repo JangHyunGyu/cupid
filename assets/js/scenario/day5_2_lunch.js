@@ -275,21 +275,18 @@ Object.assign(SCENARIO[5], {
     }
 ,
     "tour_seo_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_end"
     }
 ,
     "tour_yuna_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "tour_yuna_end"
     }
 ,
     "tour_dain_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "tour_dain_end_2"

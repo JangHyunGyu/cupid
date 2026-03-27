@@ -140,7 +140,6 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_homeroom_d5_freetalk"
     },
     "hidden_homeroom_d5_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d5_check"
@@ -215,7 +214,6 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_nurse_d5_freetalk"
     },
     "hidden_nurse_d5_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "morning5_end"
