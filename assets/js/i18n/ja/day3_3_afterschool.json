@@ -437,7 +437,7 @@
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*感嘆符のないダインの文、三文字だけのユナのメモ。——選択の重さが肩にのしかかる。*"
+        "text": "*廊下に出た。感嘆符のないダインの文、三文字だけのユナのメモ。——選択の重さが肩にのしかかる。*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -446,6 +446,10 @@
     "after3_reject_for_yuna_2": {
         "name": "ソヨン",
         "text": "「人気者だね。」"
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "name": "{name}",
+        "text": "*足が体育館の方に向かう。*"
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
@@ -461,7 +465,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*ソヨンの一言、ダインの赤い目。——帰り道が重い。*"
+        "text": "*体育館を出て廊下に戻った。ソヨンの一言、ダインの赤い目。——帰り道が重い。*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",

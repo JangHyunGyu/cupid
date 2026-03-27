@@ -31,6 +31,10 @@
         "name": "{name}",
         "text": "*Al pasar por el rincón de exposición del club de literatura en el pasillo — hay un cuento corto clavado en el tablón. Título: 'A la persona que conocí en la biblioteca'. Es de Yuna. — Una historia que solo el protagonista reconocería.*"
     },
+    "morning5_return_class": {
+        "name": "{name}",
+        "text": "*Regresé al aula.*"
+    },
     "morning5_dain_1": {
         "name": "Dain",
         "text": "¡Oye! ¡Te apunté como mi pareja para el evento deportivo de hoy!"

@@ -437,7 +437,7 @@
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Dains Satz ohne Ausrufezeichen, Yunas Zettel mit nur drei Wörtern. — Das Gewicht der Wahl lastet auf meinen Schultern.*"
+        "text": "*Ging auf den Flur hinaus. Dains Satz ohne Ausrufezeichen, Yunas Zettel mit nur drei Wörtern. — Das Gewicht der Wahl lastet auf meinen Schultern.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -446,6 +446,10 @@
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
         "text": "Beliebt, was."
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "name": "{name}",
+        "text": "*Meine Füße tragen mich zur Turnhalle.*"
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
@@ -461,7 +465,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Seoyeons eine Zeile, Dains rote Augen. — Der Rückweg fühlt sich schwer an.*"
+        "text": "*Verließ die Turnhalle und ging zurück auf den Flur. Seoyeons eine Zeile, Dains rote Augen. — Der Rückweg fühlt sich schwer an.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",

@@ -67,6 +67,10 @@
         "name": "{name}",
         "text": "*Sie blieb nicht stehen. Aber ihr Blick lag eindeutig auf mir.*"
     },
+    "morning2_minsu_1b": {
+        "name": "{name}",
+        "text": "*Ich starre den Flur an, in dem Seoyeon verschwunden ist — als ich hinter mir ein Stuhlscharren höre.*"
+    },
     "morning2_minsu_2": {
         "name": "{name}",
         "text": "*Minsu dreht sich vom vorderen Platz um.*"
@@ -98,6 +102,10 @@
     "morning2_dain_claim_6": {
         "name": "Dain",
         "text": "Ich hab dich zuerst gefunden, also bist du unser Neuer! Reserviert! Meins!"
+    },
+    "morning2_break_transition": {
+        "name": "{name}",
+        "text": "*Pause. Ging auf den Flur hinaus.*"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -198,6 +206,10 @@
     "hidden_homeroom_d2_2": {
         "name": "{name}",
         "text": "*Sie sagt, es sei Verwaltungskram. Sie verpackt ihr Interesse immer als dienstlich.*"
+    },
+    "hidden_homeroom_d2_walk": {
+        "name": "{name}",
+        "text": "*Folgte der Lehrerin ins Lehrerzimmer.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Klassenlehrerin",

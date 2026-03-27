@@ -132,6 +132,10 @@
         "name": "{name}",
         "text": "*El tema cambio. -- Si lo cambio a propósito o de verdad estaba picante. Probablemente ambas.*"
     },
+    "after2_dain_return": {
+        "name": "{name}",
+        "text": "*De vuelta a la escuela. Llegué a la puerta.*"
+    },
     "after2_seo_1": {
         "name": "{name}",
         "text": "*La sala del consejo estudiantil. Seoyeon está sentada detrás de una pila de documentos. Sola.*"
@@ -532,6 +536,10 @@
         "name": "{name}",
         "text": "*Retiró la mano. No parece nada arrepentida. — Mi palma aún está caliente.*"
     },
+    "after2_seo_return": {
+        "name": "{name}",
+        "text": "*Salí de la sala del consejo. Caminando hacia la puerta de la escuela.*"
+    },
     "after2_seo_skinship_1": {
         "name": "{name}",
         "text": "*Seoyeon extiende la mano. Quita una mota de polvo de mi cuello. Su mano roza mi cuello.*"
@@ -543,6 +551,10 @@
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
         "text": "...Tenías polvo."
+    },
+    "after2_yuna_return": {
+        "name": "{name}",
+        "text": "*Salí del anexo de la biblioteca. El sol se está poniendo.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",

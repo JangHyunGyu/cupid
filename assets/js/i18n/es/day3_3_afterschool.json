@@ -437,7 +437,7 @@
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*La frase de Dain sin signo de exclamación, la nota de Yuna de solo tres palabras. — El peso de la elección se asienta en mis hombros.*"
+        "text": "*Salí al pasillo. La frase de Dain sin signo de exclamación, la nota de Yuna de solo tres palabras. — El peso de la elección se asienta en mis hombros.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -446,6 +446,10 @@
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
         "text": "Popular, ¿eh?"
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "name": "{name}",
+        "text": "*Mis pies me llevan hacia el gimnasio.*"
     },
     "after3_reject_for_yuna_3": {
         "name": "{name}",
@@ -461,7 +465,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*La frase de Seoyeon, los ojos rojos de Dain. — El camino de regreso se siente pesado.*"
+        "text": "*Salí del gimnasio y volví al pasillo. La frase de Seoyeon, los ojos rojos de Dain. — El camino de regreso se siente pesado.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",

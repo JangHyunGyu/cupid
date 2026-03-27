@@ -31,6 +31,10 @@
         "name": "{name}",
         "text": "*Passing by the literature club's display corner in the hallway — a short story is pinned to the bulletin board. Title: 'To the Person I Met in the Library.' It's Yuna's. — A story only the protagonist would recognize.*"
     },
+    "morning5_return_class": {
+        "name": "{name}",
+        "text": "*Returned to the classroom.*"
+    },
     "morning5_dain_1": {
         "name": "Dain",
         "text": "Hey! I signed you up as my partner for today's sports event!"

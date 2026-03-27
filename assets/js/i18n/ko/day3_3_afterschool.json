@@ -26,7 +26,7 @@
   },
   "after3_reject_for_seo_4": {
     "name": "{name}",
-    "text": "*느낌표가 없는 다인의 문장, 세 글자밖에 안 되는 유나의 쪽지. — 선택의 무게가 어깨에 내려앉는다.*"
+    "text": "*복도로 나왔다. 느낌표가 없는 다인의 문장, 세 글자밖에 안 되는 유나의 쪽지. — 선택의 무게가 어깨에 내려앉는다.*"
   },
   "after3_reject_for_yuna_1": {
     "name": "{name}",
@@ -35,6 +35,10 @@
   "after3_reject_for_yuna_2": {
     "name": "서연",
     "text": "인기 많네."
+  },
+  "after3_reject_for_yuna_walk_gym": {
+    "name": "{name}",
+    "text": "*체육관 쪽으로 발길이 향한다.*"
   },
   "after3_reject_for_yuna_3": {
     "name": "{name}",
@@ -50,7 +54,7 @@
   },
   "after3_reject_for_yuna_4": {
     "name": "{name}",
-    "text": "*서연의 한마디, 다인의 빨간 눈. — 돌아서는 길이 무겁다.*"
+    "text": "*체육관을 나와 복도로 돌아왔다. 서연의 한마디, 다인의 빨간 눈. — 돌아서는 길이 무겁다.*"
   },
   "after3_reject_for_dain_1": {
     "name": "{name}",

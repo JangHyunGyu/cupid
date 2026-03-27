@@ -31,6 +31,10 @@
         "name": "{name}",
         "text": "*Im Flur, am Ausstellungsbereich des Literaturclubs — eine Kurzgeschichte hängt am schwarzen Brett. Titel: 'An die Person, die ich in der Bibliothek traf.' Es ist von Yuna. — Eine Geschichte, die nur der Protagonist erkennen würde.*"
     },
+    "morning5_return_class": {
+        "name": "{name}",
+        "text": "*Zurück im Klassenzimmer.*"
+    },
     "morning5_dain_1": {
         "name": "Dain",
         "text": "Hey! Ich hab dich als meinen Partner für das heutige Sportevent eingetragen!"

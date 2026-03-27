@@ -244,6 +244,12 @@ Object.assign(SCENARIO[2], {
         "sunset": true,
         "character": "assets/images/characters/dain_shy.png",
         "stats": { "Seoyeon": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
+        "next": "after2_dain_return"
+    },
+    "after2_dain_return": {
+        "background": "assets/images/background/school.png",
+        "sunset": true,
+        "character": null,
         "next": "minsu_warn_1"
     },
     "after2_seo_1": {
@@ -493,9 +499,9 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 25, "next": "after2_seo_skinship_1" },
-            { "minAffinity": -100, "next": "minsu_warn_1" }
+            { "minAffinity": -100, "next": "after2_seo_return" }
         ],
-        "next": "minsu_warn_1"
+        "next": "after2_seo_return"
     },
     // =========================================================================
     // 스킨십: 서연 호감 25+ — 먼지 떼기
@@ -516,6 +522,12 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/student_room.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after2_seo_return"
+    },
+    "after2_seo_return": {
+        "background": "assets/images/background/school.png",
+        "sunset": true,
+        "character": null,
         "next": "minsu_warn_1"
     },
     "after2_yuna_1": {
@@ -666,9 +678,9 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 25, "next": "after2_yuna_skinship_1" },
-            { "minAffinity": -100, "next": "minsu_warn_1" }
+            { "minAffinity": -100, "next": "after2_yuna_return" }
         ],
-        "next": "minsu_warn_1"
+        "next": "after2_yuna_return"
     },
     // =========================================================================
     // 스킨십: 유나 호감 25+ — 손 겹침
@@ -689,6 +701,12 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_normal.png",
+        "next": "after2_yuna_return"
+    },
+    "after2_yuna_return": {
+        "background": "assets/images/background/school.png",
+        "sunset": true,
+        "character": null,
         "next": "minsu_warn_1"
     }
 ,
