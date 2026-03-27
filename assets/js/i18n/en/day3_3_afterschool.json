@@ -19,6 +19,15 @@
         "name": "{name}",
         "text": "*I have plans with Seoyeon. Heading to the student council room.*"
     },
+    "after3_multi_choice": {
+        "name": "{name}",
+        "text": "*Plans overlap. — Two of them are waiting. Who do I go to first?*",
+        "choices": [
+            "Go to Seoyeon",
+            "Go to Yuna",
+            "Go to Dain"
+        ]
+    },
     "after3_choice": {
         "name": "{name}",
         "text": "*Where should I go.*",

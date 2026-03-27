@@ -19,6 +19,15 @@
         "name": "{name}",
         "text": "*Ich habe was mit Seoyeon ausgemacht. Ab zum Schülerrat.*"
     },
+    "after3_multi_choice": {
+        "name": "{name}",
+        "text": "*Die Verabredungen überschneiden sich. — Beide warten. Zu wem gehe ich zuerst?*",
+        "choices": [
+            "Zu Seoyeon gehen",
+            "Zu Yuna gehen",
+            "Zu Dain gehen"
+        ]
+    },
     "after3_choice": {
         "name": "{name}",
         "text": "*Wohin soll ich gehen.*",

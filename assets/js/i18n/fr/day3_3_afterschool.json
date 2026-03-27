@@ -19,6 +19,15 @@
         "name": "{name}",
         "text": "*J’ai rendez-vous avec Seoyeon. Direction la salle du conseil.*"
     },
+    "after3_multi_choice": {
+        "name": "{name}",
+        "text": "*Les rendez-vous se chevauchent. — Elles attendent toutes les deux. Vers qui aller en premier ?*",
+        "choices": [
+            "Aller voir Seoyeon",
+            "Aller voir Yuna",
+            "Aller voir Dain"
+        ]
+    },
     "after3_choice": {
         "name": "{name}",
         "text": "*Où aller.*",

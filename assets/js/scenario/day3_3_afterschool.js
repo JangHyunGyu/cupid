@@ -21,7 +21,7 @@ Object.assign(SCENARIO[3], {
         "sunset": true,
         "character": null,
         "branches": [
-            { "condition": "day3_has_multiple_dates", "next": "after3_choice" },
+            { "condition": "day3_has_multiple_dates", "next": "after3_multi_choice" },
             { "condition": "accepted_dain_date", "next": "after3_auto_dain" },
             { "condition": "accepted_yuna_date", "next": "after3_auto_yuna" },
             { "condition": "accepted_seoyeon_date", "next": "after3_auto_seo" },
@@ -49,6 +49,29 @@ Object.assign(SCENARIO[3], {
         "character": null,
         "setFlags": ["route_seoyeon"],
         "next": "after3_reject_for_seo_1"
+    },
+    // 복수 약속 — 누구에게 먼저 갈지 선택
+    "after3_multi_choice": {
+        "character": null,
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "choices": [
+            {
+                "next": "after3_reject_for_seo_1",
+                "setFlags": ["route_seoyeon"],
+                "condition": "accepted_seoyeon_date"
+            },
+            {
+                "next": "after3_reject_for_yuna_1",
+                "setFlags": ["route_yuna"],
+                "condition": "accepted_yuna_date"
+            },
+            {
+                "next": "after3_reject_for_dain_1",
+                "setFlags": ["route_dain"],
+                "condition": "accepted_dain_date"
+            }
+        ]
     },
     // 약속 없을 때만 수동 선택
     "after3_choice": {

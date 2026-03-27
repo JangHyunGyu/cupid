@@ -19,6 +19,15 @@
         "name": "{name}",
         "text": "*Tengo planes con Seoyeon. Me dirijo a la sala del consejo.*"
     },
+    "after3_multi_choice": {
+        "name": "{name}",
+        "text": "*Los planes se superponen. — Las dos están esperando. ¿A quién voy primero?*",
+        "choices": [
+            "Ir con Seoyeon",
+            "Ir con Yuna",
+            "Ir con Dain"
+        ]
+    },
     "after3_choice": {
         "name": "{name}",
         "text": "*¿Adónde iré.*",
