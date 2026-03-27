@@ -543,7 +543,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_9": {
         "character": "assets/images/characters/dain_pout.png",
-        "background": "assets/images/background/store.png",
+        "background": "assets/images/background/school_hallway.png",
         "next": "lunch2_dain_10"
     },
     "lunch2_dain_10": {

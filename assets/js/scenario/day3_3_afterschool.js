@@ -854,7 +854,7 @@ Object.assign(SCENARIO[3], {
 ,
     "after3_seo_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_seo_end"
@@ -870,7 +870,7 @@ Object.assign(SCENARIO[3], {
 ,
     "after3_dain_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/playground.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
         "next": "after3_dain_end"

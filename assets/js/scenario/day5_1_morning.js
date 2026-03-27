@@ -66,7 +66,7 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_homeroom_d5_check"
     },
     "hidden_homeroom_d5_check": {
-        "background": "assets/images/background/room_school.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
         "branches": [
             { "condition": "homeroom_day4", "next": "hidden_homeroom_d5_1" },

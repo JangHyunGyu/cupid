@@ -486,7 +486,7 @@ Object.assign(SCENARIO[2], {
         "next": "after2_seo_end"
     },
     "after2_seo_end": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
         "stats": { "Dain": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
@@ -812,7 +812,7 @@ Object.assign(SCENARIO[2], {
     },
 
     "after2_dain_freetalk": {
-        "background": "assets/images/background/street.png",
+        "background": "assets/images/background/store.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_end"
