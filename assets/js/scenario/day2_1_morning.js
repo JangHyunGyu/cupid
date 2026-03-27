@@ -61,6 +61,16 @@ Object.assign(SCENARIO[2], {
     // B-1.5: 다인 접근 시 나머지 반응
     "morning2_greet_dain_others": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_greet_dain_others_seo"
+    },
+    "morning2_greet_dain_others_seo": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "morning2_greet_dain_others_yuna"
+    },
+    "morning2_greet_dain_others_yuna": {
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "next": "morning2_greet_dain_others_2"
     },

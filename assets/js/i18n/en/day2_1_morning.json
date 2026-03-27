@@ -293,7 +293,15 @@
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
-        "text": "*Seoyeon passes by, flipping her clipboard. \"Such energy.\" Can't tell if it's sarcasm or admiration. Yuna doesn't react. But the hand writing a note has stopped.*"
+        "text": "*Seoyeon passes by, flipping her clipboard.*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "Seoyeon",
+        "text": "Such energy."
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*Can't tell if it's sarcasm or admiration. Yuna doesn't react. But the hand writing a note has stopped.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
