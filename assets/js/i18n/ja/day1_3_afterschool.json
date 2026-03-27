@@ -37,7 +37,7 @@
     },
     "after_miss_dain_2": {
         "name": "ダイン",
-        "text": "あぶない！！"
+        "text": "「あぶない！！」"
     },
     "after_miss_dain_3": {
         "name": "{name}",
@@ -45,15 +45,15 @@
     },
     "after_miss_dain_4": {
         "name": "ダイン",
-        "text": "お！反射神経いいじゃん！"
+        "text": "「お！反射神経いいじゃん！」"
     },
     "after_miss_dain_5": {
         "name": "{name}",
-        "text": "廊下でなんで全力ダッシュなの？"
+        "text": "「廊下でなんで全力ダッシュなの？」"
     },
     "after_miss_dain_6": {
         "name": "ダイン",
-        "text": "遅れてるの！体育館行かなきゃ！——あ、また明日ね！転校生！"
+        "text": "「遅れてるの！体育館行かなきゃ！——あ、また明日ね！転校生！」"
     },
     "after_miss_dain_7": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "after_miss_yuna_3": {
         "name": "ユナ",
-        "text": "………ありがとう。"
+        "text": "「………ありがとう。」"
     },
     "after_miss_yuna_4": {
         "name": "{name}",
@@ -81,23 +81,23 @@
     },
     "after_miss_seoyeon_2": {
         "name": "ソヨン",
-        "text": "さっきどこ行ってたの？"
+        "text": "「さっきどこ行ってたの？」"
     },
     "after_miss_seoyeon_3": {
         "name": "{name}",
-        "text": "さっきって？"
+        "text": "「さっきって？」"
     },
     "after_miss_seoyeon_4": {
         "name": "ソヨン",
-        "text": "お昼。屋上開けておいたのに。私を待たせるなんて、大胆な転校生ね。"
+        "text": "「お昼。屋上開けておいたのに。私を待たせるなんて、大胆な転校生ね。」"
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
-        "text": "待ってたの？"
+        "text": "「待ってたの？」"
     },
     "after_miss_seoyeon_6": {
         "name": "ソヨン",
-        "text": "…風に当たりに上がったら、たまたまドアが開いてただけ。"
+        "text": "「…風に当たりに上がったら、たまたまドアが開いてただけ。」"
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "after_miss_seoyeon_8": {
         "name": "ソヨン",
-        "text": "明日は逃げないでよ。"
+        "text": "「明日は逃げないでよ。」"
     },
     "after_end": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after_hidden_homeroom_2": {
         "name": "担任先生",
-        "text": "{name}。ちょっと残って。"
+        "text": "「{name}。ちょっと残って。」"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "after_hidden_homeroom_4": {
         "name": "担任先生",
-        "text": "悪いことはしてないよ。——転校生だからさ。慣れた？"
+        "text": "「悪いことはしてないよ。——転校生だからさ。慣れた？」"
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok": {
         "name": "担任先生",
-        "text": "そうか。良かった。——何かあったら職員室に来い。先生の仕事だから。"
+        "text": "「そうか。良かった。——何かあったら職員室に来い。先生の仕事だから。」"
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
@@ -150,27 +150,27 @@
     },
     "after_homeroom_honest_1": {
         "name": "担任先生",
-        "text": "大変なのが普通だよ。新しい学校の初日に余裕がある方がおかしい。"
+        "text": "「大変なのが普通だよ。新しい学校の初日に余裕がある方がおかしい。」"
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "先生も転校の経験ありますか？"
+        "text": "「先生も転校の経験ありますか？」"
     },
     "after_homeroom_honest_3": {
         "name": "担任先生",
-        "text": "...似たようなものかな。いきなり新しい場所に放り込まれたことはある。"
+        "text": "「...似たようなものかな。いきなり新しい場所に放り込まれたことはある。」"
     },
     "after_homeroom_honest_4": {
         "name": "担任先生",
-        "text": "つらかったら職員室に来い。コーヒーくらいは——あ、生徒だからジュースくらいは出せる。"
+        "text": "「つらかったら職員室に来い。コーヒーくらいは——あ、生徒だからジュースくらいは出せる。」"
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "先生が生徒に飲み物おごってくれるんですか？"
+        "text": "「先生が生徒に飲み物おごってくれるんですか？」"
     },
     "after_homeroom_honest_6": {
         "name": "担任先生",
-        "text": "教育的配慮だよ、まあ。"
+        "text": "「教育的配慮だよ、まあ。」"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "after_homeroom_honest_choice2a": {
         "name": "担任先生",
-        "text": "...ああ、心配だよ。——そんなにバレてた？"
+        "text": "「...ああ、心配だよ。——そんなにバレてた？」"
     },
     "after_homeroom_honest_choice2b": {
         "name": "担任先生",
@@ -190,15 +190,15 @@
     },
     "after_homeroom_honest_7": {
         "name": "担任先生",
-        "text": "あ、{name}。"
+        "text": "「あ、{name}。」"
     },
     "after_homeroom_honest_8": {
         "name": "{name}",
-        "text": "はい？"
+        "text": "「はい？」"
     },
     "after_homeroom_honest_9": {
         "name": "担任先生",
-        "text": "馴染めなかったら、また捕まえに来るからね。"
+        "text": "「馴染めなかったら、また捕まえに来るからね。」"
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
@@ -236,15 +236,15 @@
     },
     "after_nurse_enter_2": {
         "name": "保健先生",
-        "text": "お、患者だ。"
+        "text": "「お、患者だ。」"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
-        "text": "少しめまいがして……"
+        "text": "「少しめまいがして……」"
     },
     "after_nurse_enter_4": {
         "name": "保健先生",
-        "text": "転校生でしょ？初日からもう保健室だなんて。ストレス溜まっちゃったかな〜"
+        "text": "「転校生でしょ？初日からもう保健室だなんて。ストレス溜まっちゃったかな〜」"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -252,11 +252,11 @@
     },
     "after_nurse_enter_6": {
         "name": "保健先生",
-        "text": "熱はないね～…血圧がちょっと低いかも。"
+        "text": "「熱はないね～…血圧がちょっと低いかも。」"
     },
     "after_nurse_enter_7": {
         "name": "保健先生",
-        "text": "熱はないけど……少しリラックスしないとね。ほら、ここに横になって。10分だけ休んで。"
+        "text": "「熱はないけど……少しリラックスしないとね。ほら、ここに横になって。10分だけ休んで。」"
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
@@ -272,11 +272,11 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "保健先生",
-        "text": "でしょ？ でもここの居心地のよさは罠だから～常連になっちゃダメだよ。"
+        "text": "「でしょ？ でもここの居心地のよさは罠だから～常連になっちゃダメだよ。」"
     },
     "after_nurse_enter_8": {
         "name": "保健先生",
-        "text": "敬語、使わなくていいよ。保健室ではリラックスして。——ここはそういう場所だから。"
+        "text": "「敬語、使わなくていいよ。保健室ではリラックスして。——ここはそういう場所だから。」"
     },
     "after_nurse_enter_9": {
         "name": "{name}",
@@ -284,15 +284,15 @@
     },
     "after_nurse_enter_10": {
         "name": "保健先生",
-        "text": "ローズマリー。——病院で働いてた頃から育ててるの。昔の話～ここが好き。みんな軽い傷だけ持ってくるから。"
+        "text": "「ローズマリー。——病院で働いてた頃から育ててるの。昔の話～ここが好き。みんな軽い傷だけ持ってくるから。」"
     },
     "after_nurse_enter_11": {
         "name": "保健先生",
-        "text": "いつでもおいで～ドアはいつも開いてるから。でもあまり頻繁に来ないでね。先生が心配しちゃうから。"
+        "text": "「いつでもおいで～ドアはいつも開いてるから。でもあまり頻繁に来ないでね。先生が心配しちゃうから。」"
     },
     "after_nurse_enter_12": {
         "name": "保健先生",
-        "text": "次に具合悪くなったら——あ、ならないほうがいいんだけどね。"
+        "text": "「次に具合悪くなったら——あ、ならないほうがいいんだけどね。」"
     },
     "after_nurse_freetalk": {
         "name": "保健先生",
@@ -302,7 +302,7 @@
     },
     "after1_jealousy_seo_1": {
         "name": "ダイン",
-        "text": "ねえ、昼休みどこ行ったの？売店行ったのにいなかったんだけど。"
+        "text": "「ねえ、昼休みどこ行ったの？売店行ったのにいなかったんだけど。」"
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "after1_jealousy_seo_3": {
         "name": "ダイン",
-        "text": "...屋上？二人で？"
+        "text": "「...屋上？二人で？」"
     },
     "after1_jealousy_seo_choice": {
         "name": "{name}",
@@ -322,19 +322,19 @@
     },
     "after1_jealousy_seo_honest": {
         "name": "{name}",
-        "text": "うん、会長が連れてってくれた。弁当まで作ってきてたよ。"
+        "text": "「うん、会長が連れてってくれた。弁当まで作ってきてたよ。」"
     },
     "after1_jealousy_seo_honest_2": {
         "name": "ダイン",
-        "text": "...そう？言ってくれればいいのに。"
+        "text": "「...そう？言ってくれればいいのに。」"
     },
     "after1_jealousy_seo_lie": {
         "name": "{name}",
-        "text": "いや、一人でうろうろしてただけ。"
+        "text": "「いや、一人でうろうろしてただけ。」"
     },
     "after1_jealousy_seo_lie_2": {
         "name": "ダイン",
-        "text": "ホント？一人で？——まあ、初日だもんね！迷うよね！"
+        "text": "「ホント？一人で？——まあ、初日だもんね！迷うよね！」"
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "after1_jealousy_dain_1": {
         "name": "ソヨン",
-        "text": "昼休みに売店でダインと一緒にいるの見たけど。適応早いね。"
+        "text": "「昼休みに売店でダインと一緒にいるの見たけど。適応早いね。」"
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
@@ -354,11 +354,11 @@
     },
     "after1_jealousy_yuna_1": {
         "name": "ダイン",
-        "text": "昼休み図書館行ったって？ユナと？"
+        "text": "「昼休み図書館行ったって？ユナと？」"
     },
     "after1_jealousy_yuna_2": {
         "name": "ダイン",
-        "text": "...あの子、普段人と会わないのに。"
+        "text": "「...あの子、普段人と会わないのに。」"
     },
     "after1_pre_miss": {
         "name": "{name}",
