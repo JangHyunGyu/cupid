@@ -21,6 +21,7 @@ Object.assign(SCENARIO[3], {
         "sunset": true,
         "character": null,
         "branches": [
+            { "condition": "day3_has_multiple_dates", "next": "after3_choice" },
             { "condition": "accepted_dain_date", "next": "after3_auto_dain" },
             { "condition": "accepted_yuna_date", "next": "after3_auto_yuna" },
             { "condition": "accepted_seoyeon_date", "next": "after3_auto_seo" },
