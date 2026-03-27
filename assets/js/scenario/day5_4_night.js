@@ -1085,7 +1085,7 @@ Object.assign(SCENARIO[5], {
         "next": "friend_4"
     },
     "friend_4": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
         "next": "friend_5"
@@ -1266,7 +1266,7 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_perfect_homeroom_4c"
     },
     "hidden_perfect_homeroom_4c": {
-        "background": "assets/images/background/bookstore.png",
+        "background": "assets/images/background/room_my.png",
         "night": true,
         "character": "assets/images/characters/teacher_shy.png",
         "next": "hidden_perfect_homeroom_4d"
@@ -1490,7 +1490,7 @@ Object.assign(SCENARIO[5], {
     // NURSE TRUE LOVE END (Hidden Route)
     // =========================================================================
     "hidden_true_nurse_1": {
-        "background": "assets/images/background/cafe.png",
+        "background": "assets/images/background/school.png",
         "character": null,
         "night": true,
         "fade": true,
