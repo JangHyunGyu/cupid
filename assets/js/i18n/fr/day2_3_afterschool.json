@@ -1,14 +1,14 @@
 {
     "after2_start": {
         "name": "{name}",
-        "text": "*Apres les cours. Deux notifications sur mon telephone.*\n\nDain : Viens au gymnase !! Aujourd'hui c'est serieux !!\nSeoyeon : Tu peux passer à la salle du conseil ? On manque de monde.\n\n*Rien de Yuna. -- C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliothèque' accrochent mon regard.*"
+        "text": "*Apres les cours. Deux notifications sur mon téléphone.*\n\nDain : Viens au gymnase !! Aujourd'hui c'est sérieux !!\nSeoyeon : Tu peux passer à la salle du conseil ? On manque de monde.\n\n*Rien de Yuna. -- C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliothèque' accrochent mon regard.*"
     },
     "after2_choice": {
         "name": "{name}",
         "text": "*Où aller ?*",
         "choices": [
             "Au gymnase (Dain)",
-            "A la salle du conseil des élèves (Seoyeon)",
+            "À la salle du conseil des élèves (Seoyeon)",
             "Passer par l'annexe de la bibliothèque (Yuna)"
         ]
     },
@@ -54,7 +54,7 @@
     },
     "after2_dain_11": {
         "name": "{name}",
-        "text": "*Les échanges se prolongent. Le mouvement de Dain est -- clairement au-dessus de la moyenne. Rapide, précis, de la memoire musculaire en action.*\n\n*Cette fille est vraiment douee. Pas juste 'aime le sport' -- elle bouge comme quelqu'un qui y a un jour mis sa vie en jeu.*\n\n*Score final : 3 a 2. J'ai gagne de justesse.*"
+        "text": "*Les échanges se prolongent. Le mouvement de Dain est -- clairement au-dessus de la moyenne. Rapide, précis, de la mémoire musculaire en action.*\n\n*Cette fille est vraiment douée. Pas juste 'aime le sport' -- elle bouge comme quelqu'un qui y a un jour mis sa vie en jeu.*\n\n*Score final : 3 à 2. J'ai gagné de justesse.*"
     },
     "after2_dain_12": {
         "name": "Dain",
@@ -66,7 +66,7 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Vraiment choquee* Quoi ?! Tu m'as trompée ?!"
+        "text": "*Vraiment choquée* Quoi ?! Tu m'as trompée ?!"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "after2_dain_end": {
         "name": "{name}",
-        "text": "*Ses yeux sont en forme de croissant. Les mêmes yeux qu'hier. -- C'est comme ça que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki pres de l'école.*\n\n*Dain souffle sur son tteokbokki et dit --*"
+        "text": "*Ses yeux sont en forme de croissant. Les mêmes yeux qu'hier. -- C'est comme ça que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki près de l'école.*\n\n*Dain souffle sur son tteokbokki et dit --*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
@@ -282,7 +282,7 @@
     },
     "after2_yuna_6": {
         "name": "{name}",
-        "text": "*Une question subtilement chargee. -- Mais il y a un indice qu'elle attendait.*"
+        "text": "*Une question subtilement chargée. -- Mais il y a un indice qu'elle attendait.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_quiet_react": {
         "name": "{name}",
-        "text": "*Les lèvres de Yuna se relèvent très légèrement.*\n\n*Le sourire de Yuna est une espece rare. Pas beaucoup de gens l'ont vu.*"
+        "text": "*Les lèvres de Yuna se relèvent très légèrement.*\n\n*Le sourire de Yuna est une espèce rare. Pas beaucoup de gens l'ont vu.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
