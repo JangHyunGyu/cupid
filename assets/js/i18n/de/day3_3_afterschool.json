@@ -1,7 +1,23 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Die Nachwirkungen des Mittagessens halten an. — Trotzdem muss ich irgendwohin.*"
+        "text": "*Nach der Schule. Ich packe meine Tasche.*"
+    },
+    "after3_route_check": {
+        "name": "{name}",
+        "text": "*Nach der Schule. Ich checke mein Handy.*"
+    },
+    "after3_auto_dain": {
+        "name": "{name}",
+        "text": "*Ich habe was mit Dain ausgemacht. Ab zur Turnhalle.*"
+    },
+    "after3_auto_yuna": {
+        "name": "{name}",
+        "text": "*Ich habe was mit Yuna ausgemacht. Ab zum Bibliotheksanbau.*"
+    },
+    "after3_auto_seo": {
+        "name": "{name}",
+        "text": "*Ich habe was mit Seoyeon ausgemacht. Ab zum Schülerrat.*"
     },
     "after3_choice": {
         "name": "{name}",

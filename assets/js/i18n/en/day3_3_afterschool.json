@@ -1,7 +1,23 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*After school. The aftermath of lunch lingers. — Still, I have to go somewhere.*"
+        "text": "*After school. Packing my bag.*"
+    },
+    "after3_route_check": {
+        "name": "{name}",
+        "text": "*After school. Checking my phone.*"
+    },
+    "after3_auto_dain": {
+        "name": "{name}",
+        "text": "*I have plans with Dain. Heading to the gym.*"
+    },
+    "after3_auto_yuna": {
+        "name": "{name}",
+        "text": "*I have plans with Yuna. Heading to the library annex.*"
+    },
+    "after3_auto_seo": {
+        "name": "{name}",
+        "text": "*I have plans with Seoyeon. Heading to the student council room.*"
     },
     "after3_choice": {
         "name": "{name}",

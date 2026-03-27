@@ -1,7 +1,23 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*放課後。昧食の余韻が残っている。— それでも、どこかには行かなきゃいけない。*"
+        "text": "*放課後。鞄を片付ける。*"
+    },
+    "after3_route_check": {
+        "name": "{name}",
+        "text": "*放課後。スマホを確認する。*"
+    },
+    "after3_auto_dain": {
+        "name": "{name}",
+        "text": "*ダインとの約束がある。体育館に向かう。*"
+    },
+    "after3_auto_yuna": {
+        "name": "{name}",
+        "text": "*ユナとの約束がある。図書館別館に向かう。*"
+    },
+    "after3_auto_seo": {
+        "name": "{name}",
+        "text": "*ソヨンとの約束がある。生徒会室に向かう。*"
     },
     "after3_choice": {
         "name": "{name}",
