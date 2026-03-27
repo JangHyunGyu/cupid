@@ -13,10 +13,34 @@ Object.assign(SCENARIO[2], {
         "sunset": true,
         "bgm": "sunset1.mp3",
         "character": null,
+        "next": "after2_msg_dain"
+    },
+    "after2_msg_dain": {
+        "background": "assets/images/background/room_school.png",
+        "sunset": true,
+        "character": { "center": { "src": "assets/images/characters/dain_active.png", "opacity": 0.35 } },
+        "next": "after2_msg_seo"
+    },
+    "after2_msg_seo": {
+        "background": "assets/images/background/room_school.png",
+        "sunset": true,
+        "character": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
+        "next": "after2_msg_yuna"
+    },
+    "after2_msg_yuna": {
+        "background": "assets/images/background/room_school.png",
+        "sunset": true,
+        "character": null,
         "branches": [
-            { "condition": "nurse_day1", "next": "hidden_nurse_d2_1" },
+            { "condition": "nurse_day1", "next": "after2_nurse_transition" },
             { "next": "after2_choice" }
         ]
+    },
+    "after2_nurse_transition": {
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "character": null,
+        "next": "hidden_nurse_d2_1"
     },
     "after2_choice": {
         "character": null,
