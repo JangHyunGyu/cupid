@@ -57,17 +57,17 @@ Object.assign(SCENARIO[4], {
     },
     "morning4_seo_msg_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "next": "morning4_hidden_check"
     },
     "morning4_yuna_msg_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "next": "morning4_hidden_check"
     },
     "morning4_dain_msg_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "next": "morning4_hidden_check"
     },
     "morning4_hidden_check": {
