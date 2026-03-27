@@ -273,8 +273,8 @@
     },
     "hidden_nurse_d4_freetalk": {
         "name": "Infirmière",
-        "text": "*En train de discuter avec l’infirmière au snack.*",
-        "context": "Jour 4. Week-end. A aidé à préparer le bilan de santé et mange dans un snack. Discussion sur le burn-out à l’hôpital universitaire. Ton : La conversation est devenue sérieuse. Excitation et tension d’un rendez-vous. Plus de sincérité que de blagues. Moments où les émotions deviennent honnêtes.",
+        "text": "*En train de discuter avec l’infirmière à l’infirmerie.*",
+        "context": "Jour 4. Week-end. A aidé à préparer le bilan de santé, mangé au snack, et de retour à l’infirmerie pour discuter. Discussion sur le burn-out à l’hôpital universitaire. Ton : La conversation est devenue sérieuse. Excitation et tension d’un rendez-vous. Plus de sincérité que de blagues. Moments où les émotions deviennent honnêtes.",
         "personality": "L’infirmière en tenue décontractée ressemble à une grande sœur. L’espièglerie et la sincérité alternent, et elle comprend le poids d’être appelée par son nom."
     },
     "hidden_nurse_d4_meal_1b": {
