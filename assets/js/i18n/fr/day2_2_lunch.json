@@ -13,7 +13,7 @@
         "choices": [
             "Suivre le mot de Yuna vers l'annexe de la bibliothèque",
             "Suivre Seoyeon sur le toit",
-            "Aller a la boutique avec Dain"
+            "Aller à la boutique avec Dain"
         ]
     },
     "lunch2_yuna_1": {
@@ -58,11 +58,11 @@
     },
     "lunch2_yuna_11": {
         "name": "{name}",
-        "text": "*Yuna marche devant. Au fond de l'annexe. Un endroit ou personne ne semble venir.*"
+        "text": "*Yuna marche devant. Au fond de l'annexe. Un endroit où personne ne semble venir.*"
     },
     "lunch2_yuna_12": {
         "name": "{name}",
-        "text": "*Une petite pièce apparait. La lumiere du soleil entre par la fenêtre, avec un vieux canapé et une étagère.*"
+        "text": "*Une petite pièce apparait. La lumière du soleil entre par la fenêtre, avec un vieux canapé et une étagère.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "lunch2_yuna_15": {
         "name": "{name}",
-        "text": "*Yuna s'assoit sur le canapé. Elle laisse discrètement la place a côté d'elle libre.*"
+        "text": "*Yuna s'assoit sur le canapé. Elle laisse discrètement la place à côté d'elle libre.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -88,8 +88,8 @@
         "name": "{name}",
         "text": "*Rien après 'il y avait'. Passe compose. -- Est-ce que je devrais demander ?*",
         "choices": [
-            "Cette personne, ou est-elle maintenant ?",
-            "Ne pas demander et s'asseoir a côté d'elle"
+            "Cette personne, où est-elle maintenant ?",
+            "Ne pas demander et s'asseoir à côté d'elle"
         ]
     },
     "lunch2_yuna_c1_1": {
@@ -150,11 +150,11 @@
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
-        "text": "*Je m'assois a côté d'elle sans rien dire. Yuna jette un bref coup d'oeil.*"
+        "text": "*Je m'assois à côté d'elle sans rien dire. Yuna jette un bref coup d'oeil.*"
     },
     "lunch2_yuna_c2_2": {
         "name": "{name}",
-        "text": "*Elle sort un livre de sa pile et le pose a côté de moi.*"
+        "text": "*Elle sort un livre de sa pile et le pose à côté de moi.*"
     },
     "lunch2_yuna_c2_3": {
         "name": "Yuna",
@@ -162,11 +162,11 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Offrir un livre au lieu de mots. -- Le langage de cette personne, ce sont les actes. Différent de Seoyeon, mais a sa maniere.*"
+        "text": "*Offrir un livre au lieu de mots. -- Le langage de cette personne, ce sont les actes. Différent de Seoyeon, mais à sa manière.*"
     },
     "lunch2_yuna_c2_5": {
         "name": "{name}",
-        "text": "*On lit côté a côté en silence. La lumiere du soleil par la fenêtre est chaude.*"
+        "text": "*On lit côte à côte en silence. La lumière du soleil par la fenêtre est chaude.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
@@ -222,7 +222,7 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Oh ! Vous etes la ?! Trouve !"
+        "text": "Oh ! Vous êtes la ?! Trouve !"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
@@ -230,7 +230,7 @@
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Oh la la, y a pas besoin d'autorisation pour manger ! -- Oh, un bento ! Ça a l'air trop bon !"
+        "text": "Oh la la, y a pas besoin d'autorisation pour manger ! -- Oh, un bento ! Ça à l'air trop bon !"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*Elle a l'air un peu vexée. -- Mais sa contenance est impeccable. C'est tout elle.*"
+        "text": "*Elle à l'air un peu vexée. -- Mais sa contenance est impeccable. C'est tout elle.*"
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
@@ -354,11 +354,11 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon regarde par ici. Elle me fixe assis a côté de Dain en train de manger du pain pendant une demi-seconde -- puis continue son chemin.*"
+        "text": "*Seoyeon regarde par ici. Elle me fixe assis à côté de Dain en train de manger du pain pendant une demi-seconde -- puis continue son chemin.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "He, c'est quoi le probleme de la presidente ? Pourquoi elle nous fixe ?"
+        "text": "Hé, c'est quoi le probleme de la présidente ? Pourquoi elle nous fixe ?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "lunch2_dain_13": {
         "name": "Dain",
-        "text": "Hmm... t'es proche de la presidente aussi ?"
+        "text": "Hmm... t'es proche de la présidente aussi ?"
     },
     "lunch2_dain_choice": {
         "name": "{name}",

@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*De retour a la maison. Douche prise, allonge sur le lit -- les notifications du messenger se mettent a pleuvoir.*"
+        "text": "*De retour à la maison. Douche prise, allonge sur le lit -- les notifications du messenger se mettent a pleuvoir.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
-        "text": "A peu pres a la moitie. C'est bien"
+        "text": "A peu pres à la moitie. C'est bien"
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",

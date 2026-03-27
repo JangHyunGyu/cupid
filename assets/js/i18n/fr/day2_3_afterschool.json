@@ -1,11 +1,11 @@
 {
     "after2_start": {
         "name": "{name}",
-        "text": "*Apres les cours. Deux notifications sur mon telephone.*\n\nDain : Viens au gymnase !! Aujourd'hui c'est serieux !!\nSeoyeon : Tu peux passer a la salle du conseil ? On manque de monde.\n\n*Rien de Yuna. -- C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliothèque' accrochent mon regard.*"
+        "text": "*Apres les cours. Deux notifications sur mon telephone.*\n\nDain : Viens au gymnase !! Aujourd'hui c'est serieux !!\nSeoyeon : Tu peux passer à la salle du conseil ? On manque de monde.\n\n*Rien de Yuna. -- C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliothèque' accrochent mon regard.*"
     },
     "after2_choice": {
         "name": "{name}",
-        "text": "*Ou aller ?*",
+        "text": "*Où aller ?*",
         "choices": [
             "Au gymnase (Dain)",
             "A la salle du conseil des élèves (Seoyeon)",
@@ -18,7 +18,7 @@
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "T'es la ?! T'es en retard !!"
+        "text": "T'es là ?! T'es en retard !!"
     },
     "after2_dain_3": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "after2_dain_end_2": {
         "name": "Dain",
-        "text": "He, tu connais vraiment le sport, hein ?"
+        "text": "Hé, tu connais vraiment le sport, hein ?"
     },
     "after2_dain_end_2b": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "after2_dain_end_3": {
         "name": "{name}",
-        "text": "*Dain arrete ses baguettes. Juste un instant.*"
+        "text": "*Dain arrête ses baguettes. Juste un instant.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -178,7 +178,7 @@
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Dire directement que c'est un compliment. -- Ça semble rare venant d'elle.*\n\n*En rangeant, Seoyeon fait rouler sa nuque. Ça a l'air tendu.*",
+        "text": "*Dire directement que c'est un compliment. -- Ça semble rare venant d'elle.*\n\n*En rangeant, Seoyeon fait rouler sa nuque. Ça à l'air tendu.*",
         "choices": [
             "Le coucher de soleil est magnifique. -- Ah, je parlais de dehors, pas de toi.",
             "T'as mal au cou ? Repose-toi un peu."
@@ -190,7 +190,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...T'es la première personne à sortir un truc aussi léger avec autant de naturel.\n\n*Ses yeux ont souri. -- Pas le sourire travaillé où seules les commissures se lèvent, mais un vrai. Qui a duré plus de trois secondes, pas juste une demi-seconde.*"
+        "text": "...T'es là première personne à sortir un truc aussi léger avec autant de naturel.\n\n*Ses yeux ont souri. -- Pas le sourire travaillé où seules les commissures se lèvent, mais un vrai. Qui a duré plus de trois secondes, pas juste une demi-seconde.*"
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -234,7 +234,7 @@
     },
     "after2_seo_stay": {
         "name": "{name}",
-        "text": "*Seoyeon pose les documents et regarde par la fenêtre. La lumiere du couchant touche son visage.*"
+        "text": "*Seoyeon pose les documents et regarde par la fenêtre. La lumière du couchant touche son visage.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Meme la presidente du conseil se repose ?"
+        "text": "Meme la présidente du conseil se repose ?"
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
@@ -250,7 +250,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Sauf ici.' -- Que ce soit le toit ou la salle du conseil, Seoyeon est quelqu'un qui a besoin d'un endroit ou elle peut retirer le masque.*"
+        "text": "*'Sauf ici.' -- Que ce soit le toit ou la salle du conseil, Seoyeon est quelqu'un qui a besoin d'un endroit où elle peut retirer le masque.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'expres'.*\n\n*Je m'assois a côté d'elle. Yuna me tend un de ses écouteurs.*"
+        "text": "*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'expres'.*\n\n*Je m'assois à côté d'elle. Yuna me tend un de ses écouteurs.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -346,7 +346,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Le soleil se couche. Assis côté a côté avec Yuna, a écouter la musique. Un moment ou aucun mot n'est necessaire.*"
+        "text": "*Le soleil se couche. Assis côte à côte avec Yuna, a écouter la musique. Un moment où aucun mot n'est necessaire.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
