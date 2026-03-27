@@ -1,7 +1,23 @@
 {
   "after3_start": {
     "name": "{name}",
-    "text": "*방과후. 점심의 여파가 남아 있다. — 그래도 어딘가에는 가야 한다.*"
+    "text": "*방과후. 가방을 챙긴다.*"
+  },
+  "after3_route_check": {
+    "name": "{name}",
+    "text": "*방과후. 핸드폰을 확인한다.*"
+  },
+  "after3_auto_dain": {
+    "name": "{name}",
+    "text": "*다인이와 약속이 있다. 체육관으로 향한다.*"
+  },
+  "after3_auto_yuna": {
+    "name": "{name}",
+    "text": "*유나와 약속이 있다. 도서관 별관으로 향한다.*"
+  },
+  "after3_auto_seo": {
+    "name": "{name}",
+    "text": "*서연이와 약속이 있다. 학생회실로 향한다.*"
   },
   "after3_choice": {
     "name": "{name}",

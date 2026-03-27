@@ -1,7 +1,23 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Después de clases. Los efectos del almuerzo aún persisten. — Aun así, tengo que ir a algún sitio.*"
+        "text": "*Después de clases. Recojo mi mochila.*"
+    },
+    "after3_route_check": {
+        "name": "{name}",
+        "text": "*Después de clases. Reviso mi teléfono.*"
+    },
+    "after3_auto_dain": {
+        "name": "{name}",
+        "text": "*Tengo planes con Dain. Me dirijo al gimnasio.*"
+    },
+    "after3_auto_yuna": {
+        "name": "{name}",
+        "text": "*Tengo planes con Yuna. Me dirijo al anexo de la biblioteca.*"
+    },
+    "after3_auto_seo": {
+        "name": "{name}",
+        "text": "*Tengo planes con Seoyeon. Me dirijo a la sala del consejo.*"
     },
     "after3_choice": {
         "name": "{name}",

@@ -1,7 +1,23 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Après les cours. Les répercussions du déjeuner persistent. — Pourtant, il faut que j’aille quelque part.*"
+        "text": "*Après les cours. Je range mon sac.*"
+    },
+    "after3_route_check": {
+        "name": "{name}",
+        "text": "*Après les cours. Je vérifie mon téléphone.*"
+    },
+    "after3_auto_dain": {
+        "name": "{name}",
+        "text": "*J’ai rendez-vous avec Dain. Direction le gymnase.*"
+    },
+    "after3_auto_yuna": {
+        "name": "{name}",
+        "text": "*J’ai rendez-vous avec Yuna. Direction l’annexe de la bibliothèque.*"
+    },
+    "after3_auto_seo": {
+        "name": "{name}",
+        "text": "*J’ai rendez-vous avec Seoyeon. Direction la salle du conseil.*"
     },
     "after3_choice": {
         "name": "{name}",
