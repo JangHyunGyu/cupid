@@ -32,7 +32,7 @@ Object.assign(SCENARIO[4], {
             {
                 "affinityBranches": [
                     { "minAffinity": 50, "next": "date_seo_pretty_high" },
-                    { "minAffinity": 0, "next": "date_seo_pretty_low" }
+                    { "minAffinity": -100, "next": "date_seo_pretty_low" }
                 ],
                 "affinityChar": "Seoyeon"
             },
@@ -170,7 +170,7 @@ Object.assign(SCENARIO[4], {
             {
                 "affinityBranches": [
                     { "minAffinity": 50, "next": "date_yuna_pretty_high" },
-                    { "minAffinity": 0, "next": "date_yuna_pretty_low" }
+                    { "minAffinity": -100, "next": "date_yuna_pretty_low" }
                 ],
                 "affinityChar": "Yuna"
             },
@@ -326,7 +326,7 @@ Object.assign(SCENARIO[4], {
             {
                 "affinityBranches": [
                     { "minAffinity": 50, "next": "date_dain_pretty_high" },
-                    { "minAffinity": 0, "next": "date_dain_pretty_low" }
+                    { "minAffinity": -100, "next": "date_dain_pretty_low" }
                 ],
                 "affinityChar": "Dain"
             }

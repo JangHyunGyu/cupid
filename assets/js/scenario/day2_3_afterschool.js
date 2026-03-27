@@ -136,7 +136,7 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Dain",
         "affinityBranches": [
             { "minAffinity": 25, "next": "after2_dain_skinship_1" },
-            { "minAffinity": 0, "next": "after2_dain_freetalk" }
+            { "minAffinity": -100, "next": "after2_dain_freetalk" }
         ],
         "next": "after2_dain_freetalk"
     },
@@ -467,7 +467,7 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             { "minAffinity": 25, "next": "after2_seo_skinship_1" },
-            { "minAffinity": 0, "next": "minsu_warn_1" }
+            { "minAffinity": -100, "next": "minsu_warn_1" }
         ],
         "next": "minsu_warn_1"
     },
@@ -639,7 +639,7 @@ Object.assign(SCENARIO[2], {
         "affinityChar": "Yuna",
         "affinityBranches": [
             { "minAffinity": 25, "next": "after2_yuna_skinship_1" },
-            { "minAffinity": 0, "next": "minsu_warn_1" }
+            { "minAffinity": -100, "next": "minsu_warn_1" }
         ],
         "next": "minsu_warn_1"
     },

@@ -92,7 +92,7 @@ Object.assign(SCENARIO[5], {
             { "minAffinity": 80, "next": "perfect_seo_1" },
             { "minAffinity": 60, "next": "true_seo_1" },
             { "minAffinity": 40, "next": "day5_ending_good" },
-            { "minAffinity": 0, "next": "bitter_seo_1" }
+            { "minAffinity": -100, "next": "bitter_seo_1" }
         ],
         "next": "bitter_seo_1"
     },
@@ -105,7 +105,7 @@ Object.assign(SCENARIO[5], {
             { "minAffinity": 80, "next": "perfect_yuna_1" },
             { "minAffinity": 60, "next": "true_yuna_1" },
             { "minAffinity": 40, "next": "day5_ending_good" },
-            { "minAffinity": 0, "next": "bitter_yuna_1" }
+            { "minAffinity": -100, "next": "bitter_yuna_1" }
         ],
         "next": "bitter_yuna_1"
     },
@@ -118,7 +118,7 @@ Object.assign(SCENARIO[5], {
             { "minAffinity": 80, "next": "perfect_dain_1" },
             { "minAffinity": 60, "next": "true_dain_1" },
             { "minAffinity": 40, "next": "day5_ending_good" },
-            { "minAffinity": 0, "next": "bitter_dain_1" }
+            { "minAffinity": -100, "next": "bitter_dain_1" }
         ],
         "next": "bitter_dain_1"
     },
@@ -1181,7 +1181,7 @@ Object.assign(SCENARIO[5], {
         "affinityBranches": [
             { "minAffinity": 80, "next": "hidden_perfect_homeroom_1" },
             { "minAffinity": 40, "next": "hidden_true_homeroom_1" },
-            { "minAffinity": 0, "next": "hidden_good_homeroom_1" }
+            { "minAffinity": -100, "next": "hidden_good_homeroom_1" }
         ],
         "next": "hidden_good_homeroom_1"
     },
@@ -1326,7 +1326,7 @@ Object.assign(SCENARIO[5], {
         "affinityBranches": [
             { "minAffinity": 80, "next": "hidden_perfect_nurse_1" },
             { "minAffinity": 40, "next": "hidden_true_nurse_1" },
-            { "minAffinity": 0, "next": "hidden_good_nurse_1" }
+            { "minAffinity": -100, "next": "hidden_good_nurse_1" }
         ],
         "next": "hidden_good_nurse_1"
     },

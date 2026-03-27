@@ -26,7 +26,7 @@ Object.assign(SCENARIO[5], {
         "affinityBranches": [
             { "minAffinity": 80, "next": "morning5_mood_high" },
             { "minAffinity": 50, "next": "morning5_mood_mid" },
-            { "minAffinity": 0, "next": "morning5_mood_low" }
+            { "minAffinity": -100, "next": "morning5_mood_low" }
         ],
         "next": "morning5_mood_low"
     },
