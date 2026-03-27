@@ -1,10 +1,10 @@
 {
     "morning2_start": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Segundo día. El uniforme se siente un poco más cómodo que ayer. No se si me estoy adaptando rápido o rindiéndome rápido.*"
     },
     "morning2_start_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*En el momento en que abro la puerta del aula... un golpe en la espalda.*"
     },
     "morning2_dain_1": {
@@ -28,23 +28,23 @@
         "text": "¡Esto es lo normal!¡ Tu eres el que anda bajo de pilas!"
     },
     "morning2_dain_6": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Si existiera un mundo donde este volumen a las 8 de la manana fuera normal, Dain seria su presidenta.*"
     },
     "morning2_note_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Estoy a punto de sentarme cuando... veo una nota doblada sobre mi escritorio.*"
     },
     "morning2_note_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*'Ven al anexo de la biblioteca a la hora del almuerzo. -- Yuna'*"
     },
     "morning2_note_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La misma letra prolija de ayer. Corta. Y el lugar es especifico. -- El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
     },
     "morning2_seo_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Estoy a punto de guardar la nota en el bolsillo cuando... una voz familiar desde el pasillo.*"
     },
     "morning2_seo_2": {
@@ -52,7 +52,7 @@
         "text": "¿Dormiste bien anoche?"
     },
     "morning2_seo_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Seoyeon pasa por el pasillo, echando un vistazo al aula. Su mirada se clava precisamente en mi.*"
     },
     "morning2_seo_4": {
@@ -64,11 +64,11 @@
         "text": "Solo iba de pasó. -- Que tengas otro día divertido."
     },
     "morning2_minsu_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*No dejo de caminar. Pero su mirada estaba claramente puesta en mi.*"
     },
     "morning2_minsu_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Minsu se gira desde el asiento de delante.*"
     },
     "morning2_minsu_3": {
@@ -84,7 +84,7 @@
         "text": "...Eso es verdad, pero no es el punto."
     },
     "morning2_dain_claim_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Dain observa como Seoyeon se aleja.*"
     },
     "morning2_dain_claim_4": {
@@ -100,11 +100,11 @@
         "text": "Yo te encontre primero, ¡así que eres nuestro alumno nuevo!¡ Lo reclamo!¡ Es mio!"
     },
     "morning2_break_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Se puede reclamar a una persona? -- Pero por alguna razón no tengo ganas de discutir.*"
     },
     "morning2_seo_dust_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Descanso después de la primera clase. Me cruzo con Seoyeon en el pasillo. Se detiene. Mira mi hombro.*"
     },
     "morning2_seo_dust_2": {
@@ -112,7 +112,7 @@
         "text": "Espera."
     },
     "morning2_seo_dust_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La mano de Seoyeon se extiende hacia mi hombro. Quita algo con un gesto. Natural. Demasiado natural.*"
     },
     "morning2_seo_dust_4": {
@@ -128,11 +128,11 @@
         "text": "¿Que? Solo era polvo."
     },
     "morning2_dain_react_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*El roce en el hombro llega a mi conciencia un segundo tarde. — No es por el polvo.*"
     },
     "morning2_dain_react_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Seoyeon se aleja como si nada hubiera pasado. La voz de Dain llega desde atras.*"
     },
     "morning2_dain_react_3": {
@@ -148,11 +148,11 @@
         "text": "Polvo... ¡¿de verdad habia polvo?!"
     },
     "morning2_dain_react_6": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Probablemente si habia. Quiza. -- Pero no creo que ese sea el punto.*"
     },
     "morning2_haeun_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*En el pasillo donde desaparecio Seoyeon... una chica con una pulsera del consejo estudiantil se acerca.*"
     },
     "morning2_haeun_2": {
@@ -184,11 +184,11 @@
         "text": "*Dijo que era un favor, pero su mirada era una advertencia. — Esta chica se preocupa de verdad por Seoyeon.*"
     },
     "morning2_haeun_7": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Haeun hace una ligera reverencia y se va.*"
     },
     "morning2_end": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Alguien que nunca se acercó a nadie primero en todo un año... vino a mi primero? Que significa eso?*"
     },
     "hidden_homeroom_d2_1": {
@@ -196,7 +196,7 @@
         "text": "Ah, {name}. Ven a la sala de profesores un momento."
     },
     "hidden_homeroom_d2_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Dice que es un trámite. Este hombre siempre disfraza su interés de asuntos oficiales.*"
     },
     "hidden_homeroom_d2_3": {
@@ -224,7 +224,7 @@
         "text": "...Ya. Solo preguntaba."
     },
     "hidden_homeroom_d2_6": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*El cajón. ¿Acaba de mirarlo? — Por la rendija se ve un montón de papeles. Parece un manuscrito.*"
     },
     "hidden_homeroom_d2_7": {
@@ -236,7 +236,7 @@
         "text": "Dain es ruidosa, ¿no? — Siempre es así. Pero no es mala chica. Más bien del tipo que preocupa."
     },
     "hidden_homeroom_d2_9": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "Gracias, profe."
     },
     "hidden_homeroom_d2_10": {
@@ -264,7 +264,7 @@
         "text": "...Si le doy trato especial al nuevo, los demás hablarán."
     },
     "hidden_homeroom_d2_12": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Salgo de la sala de profesores — no puedo dejar de pensar en esos papeles del cajón.*"
     },
     "morning2_greet_seo_1": {

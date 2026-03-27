@@ -1,10 +1,10 @@
 {
     "morning2_start": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Deuxieme jour. L'uniforme est un peu plus confortable qu'hier. Est-ce que je m'adapte vite, ou est-ce que j'abandonne vite ?*"
     },
     "morning2_start_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Au moment ou j'ouvre la porte de la classe -- un choc dans le dos.*"
     },
     "morning2_dain_1": {
@@ -28,23 +28,23 @@
         "text": "C'est ca la normale ! C'est toi qui es a plat !"
     },
     "morning2_dain_6": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*S'il existe un monde ou ce volume a 8h du matin est normal, Dain en serait la presidente.*"
     },
     "morning2_note_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je m'apprete a m'asseoir quand -- je remarque un mot plie sur mon bureau.*"
     },
     "morning2_note_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*'Viens a l'annexe de la bibliotheque a midi. -- Yuna'*"
     },
     "morning2_note_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La meme ecriture soignee qu'hier. Court. Et le lieu est precis. -- L''annexe' de la bibliotheque ? C'est un endroit different d'hier.*"
     },
     "morning2_seo_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je suis sur le point de mettre le mot dans ma poche quand -- une voix familiere depuis le couloir.*"
     },
     "morning2_seo_2": {
@@ -52,7 +52,7 @@
         "text": "Tu as bien dormi ?"
     },
     "morning2_seo_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Seoyeon passe dans le couloir en jetant un coup d'oeil dans la classe. Son regard se pose precisement sur moi.*"
     },
     "morning2_seo_4": {
@@ -64,11 +64,11 @@
         "text": "Je ne faisais que passer. -- Passe une bonne journee aussi."
     },
     "morning2_minsu_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle ne s'est pas arretee de marcher. Mais son regard etait clairement tourne vers moi.*"
     },
     "morning2_minsu_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Minsu se retourne depuis le siege devant moi.*"
     },
     "morning2_minsu_3": {
@@ -84,7 +84,7 @@
         "text": "...C'est vrai, mais c'est pas le sujet."
     },
     "morning2_dain_claim_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dain regarde Seoyeon s'eloigner.*"
     },
     "morning2_dain_claim_4": {
@@ -100,11 +100,11 @@
         "text": "C'est moi qui t'ai trouve en premier, donc t'es notre nouvel eleve ! Premier arrive, premier servi !"
     },
     "morning2_break_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*On peut revendiquer une personne ? -- Mais bizarrement, j'ai pas envie de protester.*"
     },
     "morning2_seo_dust_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Pause apres le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrete. Regarde mon epaule.*"
     },
     "morning2_seo_dust_2": {
@@ -112,7 +112,7 @@
         "text": "Attends."
     },
     "morning2_seo_dust_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La main de Seoyeon se pose sur mon epaule. Elle enleve quelque chose. Naturellement. Trop naturellement.*"
     },
     "morning2_seo_dust_4": {
@@ -128,11 +128,11 @@
         "text": "Quoi ? C'etait juste de la poussiere."
     },
     "morning2_dain_react_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le contact sur mon épaule arrive à ma conscience avec un temps de retard. — Ce n'est sûrement pas à cause de la poussière.*"
     },
     "morning2_dain_react_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Seoyeon s'eloigne comme si de rien n'etait. La voix de Dain arrive de derriere.*"
     },
     "morning2_dain_react_3": {
@@ -148,11 +148,11 @@
         "text": "De la poussiere... y en avait vraiment ?!"
     },
     "morning2_dain_react_6": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Y en avait surement. Peut-etre. -- Mais c'est pas vraiment la question.*"
     },
     "morning2_haeun_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dans le couloir ou Seoyeon a disparu -- une fille portant un bracelet du conseil des eleves s'approche.*"
     },
     "morning2_haeun_2": {
@@ -184,11 +184,11 @@
         "text": "*Elle a dit « demander », mais son regard, c'était un avertissement. — Cette fille s'inquiète sincèrement pour Seoyeon.*"
     },
     "morning2_haeun_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Haeun fait une legere reverence et s'en va.*"
     },
     "morning2_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Quelqu'un qui n'a jamais approche personne en premier pendant toute une annee -- est venu vers moi en premier ? Qu'est-ce que ca veut dire ?*"
     },
     "hidden_homeroom_d2_1": {
@@ -196,7 +196,7 @@
         "text": "Ah, {name}. Viens à la salle des profs une minute."
     },
     "hidden_homeroom_d2_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle dit que c'est administratif. Elle emballe toujours son intérêt dans du professionnel.*"
     },
     "hidden_homeroom_d2_3": {
@@ -224,7 +224,7 @@
         "text": "...D'accord. Je demandais, c'est tout."
     },
     "hidden_homeroom_d2_6": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Le tiroir. Elle vient de le regarder ? — Par l'ouverture, j'aperçois une liasse de papiers. On dirait des pages de manuscrit.*"
     },
     "hidden_homeroom_d2_7": {
@@ -236,7 +236,7 @@
         "text": "Dain est bruyante, non ? — Elle est toujours comme ça. Mais c'est pas une mauvaise gamine. Plutôt le genre qu'on s'inquiète."
     },
     "hidden_homeroom_d2_9": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Merci, monsieur."
     },
     "hidden_homeroom_d2_10": {
@@ -264,7 +264,7 @@
         "text": "...Si je fais du favoritisme avec le nouveau, les autres vont jaser."
     },
     "hidden_homeroom_d2_12": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*En quittant la salle des profs — ces papiers dans le tiroir me trottent dans la tête.*"
     },
     "morning2_greet_seo_1": {

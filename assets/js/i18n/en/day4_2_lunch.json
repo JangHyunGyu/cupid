@@ -1,14 +1,14 @@
 {
     "date_seo_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*In front of the fountain. Seoyeon is standing there. Not her usual uniform -- casual clothes. A white blouse and a skirt.*"
     },
     "date_seo_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She looks like a different person. No -- the same person, just a different side.*"
     },
     "date_seo_compliment_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*What do I say?*",
         "choices": [
             "No glasses today.",
@@ -16,7 +16,7 @@
         ]
     },
     "date_seo_pretty_high": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Seoyeon pauses for a moment. -- Then she smiles. Not with her lips, but with her eyes.*"
     },
     "date_seo_pretty_high_2": {
@@ -28,7 +28,7 @@
         "text": "It just came out."
     },
     "date_seo_pretty_high_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She snapped 'what are you even saying' — but her ears are red. Again.*"
     },
     "date_seo_pretty_low": {
@@ -40,7 +40,7 @@
         "text": "Of course. I put in some effort today."
     },
     "date_seo_walk": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*We walk through the park. We toss bread to the ducks.*"
     },
     "date_seo_duck": {
@@ -56,11 +56,11 @@
         "text": "People sometimes won't come even when you give them bread."
     },
     "date_seo_duck_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*It sounds offhand -- but Seoyeon's own experience bleeds through it.*"
     },
     "date_seo_flower": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*We pass by a flower shop.*"
     },
     "date_seo_flower_2": {
@@ -68,7 +68,7 @@
         "text": "...Want to go in?"
     },
     "date_seo_succulent": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Seoyeon picks out a small pot. A succulent.*"
     },
     "date_seo_succulent_2": {
@@ -80,19 +80,19 @@
         "text": "If you can keep it alive. -- If you can't, I'm taking it back."
     },
     "date_seo_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*A gift or a test. -- Probably both.*"
     },
     "date_yuna_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*In front of the cafe. Yuna is leaning against the wall. A black dress and a small crossbody bag.*"
     },
     "date_yuna_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Did Yuna always look like this? -- It's my first time seeing her outside of her uniform.*"
     },
     "date_yuna_compliment_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*What do I say?*",
         "choices": [
             "First time seeing you out of uniform.",
@@ -100,7 +100,7 @@
         ]
     },
     "date_yuna_pretty_high": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Yuna pauses for a moment. She lowers her head slightly.*"
     },
     "date_yuna_pretty_high_2": {
@@ -116,7 +116,7 @@
         "text": "Say it again."
     },
     "date_yuna_pretty_high_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Again? -- Yuna is asking for a once more.*"
     },
     "date_yuna_pretty_low": {
@@ -128,7 +128,7 @@
         "text": "...I'm not really that bright."
     },
     "date_yuna_bookstore": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*We head to a bookstore. Yuna walks slowly between the shelves.*"
     },
     "date_yuna_bookstore_2": {
@@ -140,7 +140,7 @@
         "text": "...Good. That means I showed you first."
     },
     "date_yuna_earphone": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Yuna hands me one of her earbuds.*"
     },
     "date_yuna_earphone_2": {
@@ -148,11 +148,11 @@
         "text": "...Listen."
     },
     "date_yuna_earphone_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The distance between us is the length of the earphone cord. Thirty centimeters. — Any closer and we touch, any farther and it falls out.*"
     },
     "date_yuna_oldbook": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*We pass a secondhand bookshop. Yuna stops walking.*"
     },
     "date_yuna_oldbook_2": {
@@ -168,11 +168,11 @@
         "text": "...Now it reads differently."
     },
     "date_yuna_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Yuna looks at me as she says it. -- In her eyes, because of you is written plainly.*"
     },
     "date_dain_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*In front of the gym. Dain comes running over. Cap and sportswear.*"
     },
     "date_dain_2": {
@@ -188,7 +188,7 @@
         "text": "I was here twenty minutes ago!!"
     },
     "date_dain_compliment_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*This is becoming a pattern now.*",
         "choices": [
             "That cap looks good.",
@@ -196,7 +196,7 @@
         ]
     },
     "date_dain_pretty_high": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Dain freezes. Her eyes go wide. -- Then she pulls her cap down over her face.*"
     },
     "date_dain_pretty_high_2": {
@@ -208,7 +208,7 @@
         "text": "It's the truth."
     },
     "date_dain_pretty_high_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She said she'd hit me, but her voice was trembling.*"
     },
     "date_dain_pretty_low": {
@@ -220,7 +220,7 @@
         "text": "Obviously!! I'm in peak condition today!!"
     },
     "date_dain_arcade": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*We go to an arcade. We stand in front of a rhythm game.*"
     },
     "date_dain_arcade_2": {
@@ -244,11 +244,11 @@
         "text": "Haha, of course!! This one doesn't need knees!!"
     },
     "date_dain_knee": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Doesn't need knees. -- She said it lightly, but there's weight behind it.*"
     },
     "date_dain_knee_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*We pass a sporting goods store. Dain stops in front of the display window. Volleyball shoes are on display.*"
     },
     "date_dain_shop": {
@@ -264,7 +264,7 @@
         "text": "It's nothing! Let's go!"
     },
     "date_dain_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She's smiling. -- But her eyes aren't.*"
     },
     "date_seo_freetalk": {
@@ -294,7 +294,7 @@
         "text": "Do it right this time. Don't run away"
     },
     "pre_confess_callback": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The phone in my pocket feels heavy. No notifications. — Like that first day, when I saw a name flash on the screen and shoved it back in. I can't run like that again. Not this time.*"
     },
     "date_seo_end_b": {

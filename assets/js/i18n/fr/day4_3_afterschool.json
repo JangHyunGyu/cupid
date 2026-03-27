@@ -1,270 +1,270 @@
 {
-  "confess_seo_1": {
-    "name": "Moi",
-    "text": "*Le rendez-vous touche à sa fin. Seoyeon se dirige vers l'école.*"
-  },
-  "confess_seo_2": {
-    "name": "Seoyeon",
-    "text": "Il y a un dernier endroit que je veux te montrer."
-  },
-  "confess_seo_3": {
-    "name": "Moi",
-    "text": "*Le toit. Le coucher de soleil peint l'école en or. Le même endroit où je suis venu pour la première fois au Jour 1.*"
-  },
-  "confess_seo_4": {
-    "name": "Moi",
-    "text": "*Seoyeon est appuyée contre la rambarde. Le vent soulève ses cheveux. — Elle les repousse du petit doigt. Cette habitude.*"
-  },
-  "confess_seo_5": {
-    "name": "Moi",
-    "text": "*-- Mais c'est déjà trop tard.*"
-  },
-  "confess_seo_choice": {
-    "name": "Moi",
-    "text": "*Le bout de mes doigts est glacé. Il n'y a pas de vent. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
-    "choices": [
-      "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
-      "...Il y a du bon vent."
-    ]
-  },
-  "confess_seo_yes_1": {
-    "name": "Moi",
-    "text": "Hé."
-  },
-  "confess_seo_yes_2": {
-    "name": "Moi",
-    "text": "*Ma main se crispe sur la rambarde. J'ouvre la bouche. Aucun son.*"
-  },
-  "confess_seo_yes_3": {
-    "name": "Moi",
-    "text": "*Je me souviens des mots que je n'ai pas pu dire dans mon ancienne école. Je les ai ressassés des centaines de fois -- 'et si je l'avais dit à ce moment-là.' -- Cette fois, je me déclare.*"
-  },
-  "confess_seo_yes_4": {
-    "name": "Moi",
-    "text": "Seoyeon. Tu souris parfaitement. Toujours. Mais -- ces 0,5 secondes où tu arrêtes de sourire n'arrêtent pas de me hanter."
-  },
-  "confess_seo_yes_5": {
-    "name": "Moi",
-    "text": "*Les mots sont un désastre. Je n'ai rien préparé, mais je ne peux pas m'arrêter.*"
-  },
-  "confess_seo_yes_6": {
-    "name": "Moi",
-    "text": "La toi de cet instant me semble être la vraie Seoyeon. Et c'est cette Seoyeon que j'aime."
-  },
-  "confess_seo_yes_7": {
-    "name": "Moi",
-    "text": "*Les mots flottent dans la brise du toit. Seoyeon retient son souffle.*"
-  },
-  "confess_seo_yes_8": {
-    "name": "Moi",
-    "text": "*Seoyeon ne dit rien. Ses lèvres tremblent. Pas la présidente du conseil -- juste une fille, debout là.*"
-  },
-  "confess_seo_yes_9": {
-    "name": "Seoyeon",
-    "text": "...Moi aussi."
-  },
-  "confess_seo_yes_10": {
-    "name": "Seoyeon",
-    "text": "...Depuis que t'as dit 'c'est généreux' devant le portail."
-  },
-  "confess_seo_yes_11": {
-    "name": "Seoyeon",
-    "text": "-- Tu n'imagines pas à quel point je me suis retenue pour ne pas le dire."
-  },
-  "confess_seo_yes_12": {
-    "name": "Moi",
-    "text": "*Seoyeon tend son petit doigt. Le même petit doigt que j'ai vu au Jour 1. -- À l'époque je pensais que c'était juste une habitude, mais c'est la façon de Seoyeon de faire une promesse.*"
-  },
-  "confess_seo_no_1": {
-    "name": "Moi",
-    "text": "...Il y a du bon vent."
-  },
-  "confess_seo_no_2": {
-    "name": "Moi",
-    "text": "*J'ai dit la même chose le premier jour. À l'époque, c'était sincère. Maintenant, c'est fuir.*"
-  },
-  "confess_seo_no_3": {
-    "name": "Moi",
-    "text": "*Seoyeon sourit. Un sourire répété. -- Elle se retourne et marche. Au troisième pas, elle s'arrête.*"
-  },
-  "confess_seo_no_4": {
-    "name": "Seoyeon",
-    "text": "...La prochaine fois que tu viens ici, prépare autre chose à dire."
-  },
-  "confess_yuna_1": {
-    "name": "Moi",
-    "text": "*Le rendez-vous touche à sa fin. Yuna s'arrête.*"
-  },
-  "confess_yuna_2": {
-    "name": "Yuna",
-    "text": "...Il y a un dernier endroit où aller."
-  },
-  "confess_yuna_3": {
-    "name": "Moi",
-    "text": "*L'annexe de la bibliothèque. Un coin de lecture secret. Le coucher de soleil filtre par la fenêtre. Le même endroit où je suis venu pour la première fois au Jour 2.*"
-  },
-  "confess_yuna_4": {
-    "name": "Moi",
-    "text": "*Yuna est assise sur le canapé et me regarde. Comme si elle m'attendait.*"
-  },
-  "confess_yuna_5": {
-    "name": "Moi",
-    "text": "*-- Mais c'est déjà trop tard.*"
-  },
-  "confess_yuna_choice": {
-    "name": "Moi",
-    "text": "*Ma respiration s'est raccourcie. La pièce semble plus petite. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
-    "choices": [
-      "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
-      "...Cet endroit est vraiment bien."
-    ]
-  },
-  "confess_yuna_yes_1": {
-    "name": "Moi",
-    "text": "Hé."
-  },
-  "confess_yuna_yes_2": {
-    "name": "Moi",
-    "text": "*J'ouvre la bouche et la referme. Sans un bruit. Deuxième essai.*"
-  },
-  "confess_yuna_yes_3": {
-    "name": "Moi",
-    "text": "Yuna. Au début, je pensais que ton silence était un mur. Mais ce n'était pas le cas."
-  },
-  "confess_yuna_yes_4": {
-    "name": "Moi",
-    "text": "*Devant Yuna, pas besoin de longs discours. Elle lit entre les lignes.*"
-  },
-  "confess_yuna_yes_5": {
-    "name": "Moi",
-    "text": "Tu étais -- le genre de personne qui s'assoit à côté de toi au lieu de parler. Ce silence était plus chaleureux que les mots de quiconque."
-  },
-  "confess_yuna_yes_6": {
-    "name": "Moi",
-    "text": "Je t'aime."
-  },
-  "confess_yuna_yes_7": {
-    "name": "Moi",
-    "text": "*Les mots semblent écrits dans le silence de la pièce. Les yeux de Yuna s'écarquillent.*"
-  },
-  "confess_yuna_yes_8": {
-    "name": "Moi",
-    "text": "*L'expression impassible de Yuna se fissure. Sa voix nonchalante disparaît, remplacée par la plus petite -- presque inaudible -- voix. Elle serre sa manche.*"
-  },
-  "confess_yuna_yes_9": {
-    "name": "Yuna",
-    "text": "...Ne pars pas. Cette fois, ne pars pas."
-  },
-  "confess_yuna_no_1": {
-    "name": "Moi",
-    "text": "...Cet endroit est vraiment bien."
-  },
-  "confess_yuna_no_2": {
-    "name": "Moi",
-    "text": "*Yuna lit entre les lignes. Elle saura que ces mots ne sont qu'une fuite.*"
-  },
-  "confess_yuna_no_3": {
-    "name": "Moi",
-    "text": "*Yuna prend un livre. Elle regarde la couverture, mais elle ne lit pas.*"
-  },
-  "confess_yuna_no_4": {
-    "name": "Yuna",
-    "text": "...La fin n'est pas encore arrivée."
-  },
-  "confess_dain_1": {
-    "name": "Moi",
-    "text": "*Le rendez-vous touche à sa fin. Dain court vers l'école.*"
-  },
-  "confess_dain_2": {
-    "name": "Dain",
-    "text": "Dernier endroit !! On y va !!"
-  },
-  "confess_dain_3": {
-    "name": "Moi",
-    "text": "*Le gymnase. Vide. Le coucher de soleil se déverse par les fenêtres sur le terrain. Le même endroit où nous sommes venus ensemble pour la première fois au Jour 1.*"
-  },
-  "confess_dain_4": {
-    "name": "Moi",
-    "text": "*Dain tient un ballon. Comme si de rien n'était. — Mais ses doigts sont blancs. Elle le serre fort.*"
-  },
-  "confess_dain_5": {
-    "name": "Moi",
-    "text": "*-- Mais c'est déjà trop tard.*"
-  },
-  "confess_dain_choice": {
-    "name": "Moi",
-    "text": "*Le sol du gymnase semble trembler. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
-    "choices": [
-      "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
-      "...On refait une partie ?"
-    ]
-  },
-  "confess_dain_yes_1": {
-    "name": "Moi",
-    "text": "Hé."
-  },
-  "confess_dain_yes_2": {
-    "name": "Moi",
-    "text": "*Figé, le ballon encore en main. Ma gorge brûle.*"
-  },
-  "confess_dain_yes_3": {
-    "name": "Moi",
-    "text": "Dain. Tu sais que quand tu souris, tes yeux deviennent des petits croissants de lune ? Tu ne le sais sûrement pas -- c'est ton propre visage."
-  },
-  "confess_dain_yes_4": {
-    "name": "Moi",
-    "text": "*Ce n'est pas pierre-feuille-ciseaux, ce n'est pas un jeu. Mais c'est tout pour moi.*"
-  },
-  "confess_dain_yes_5": {
-    "name": "Moi",
-    "text": "-- Quand ces yeux ne me regardent pas, je n'arrive plus à respirer. Je ne sais pas depuis quand c'est comme ça."
-  },
-  "confess_dain_yes_6": {
-    "name": "Moi",
-    "text": "Je t'aime."
-  },
-  "confess_dain_yes_7": {
-    "name": "Moi",
-    "text": "*Trois syllabes résonnent dans le gymnase vide. À cet endroit même où elle a dit 'Gymnase, ça marche ?' au Jour 1.*"
-  },
-  "confess_dain_yes_8": {
-    "name": "Moi",
-    "text": "*Dain est figée. Son énergie a disparu. -- Puis ses yeux se remplissent lentement. Elle enfouit son visage dans ses deux mains. La rougeur s'est étendue jusqu'à sa nuque.*"
-  },
-  "confess_dain_yes_9": {
-    "name": "Dain",
-    "text": "...Attends. Je suffoque -- je vais pleurer -- pourquoi je pleure, je suis contente --"
-  },
-  "confess_dain_yes_10": {
-    "name": "Dain",
-    "text": "Moi aussi je t'aime. Énormément."
-  },
-  "confess_dain_no_1": {
-    "name": "Moi",
-    "text": "...On refait une partie ?"
-  },
-  "confess_dain_no_2": {
-    "name": "Moi",
-    "text": "*Je peux lui faire une passe, mais je ne peux pas dire trois mots. Lamentable.*"
-  },
-  "confess_dain_no_3": {
-    "name": "Moi",
-    "text": "*Dain fait rebondir un ballon de volley. Une fois. Deux fois. -- À la troisième, elle s'arrête.*"
-  },
-  "confess_dain_no_4": {
-    "name": "Dain",
-    "text": "...La prochaine fois, ne fuis pas."
-  },
-  "confess_yuna_3b": {
-    "name": "{name}",
-    "text": "*L'annexe de la bibliothèque. Le coucher de soleil filtre par les fenêtres. Un endroit devenu familier en quelques jours.*"
-  },
-  "confess_seo_3b": {
-    "name": "{name}",
-    "text": "*Le toit. Le coucher de soleil colore l'école. Un endroit devenu familier en quelques jours.*"
-  },
-  "confess_dain_3b": {
-    "name": "{name}",
-    "text": "*Le gymnase. Vide. Le coucher de soleil filtre par les fenêtres sur le terrain. Un lieu où d'innombrables souvenirs se sont accumulés en quelques jours.*"
-  }
+    "confess_seo_1": {
+        "name": "{name}",
+        "text": "*Le rendez-vous touche à sa fin. Seoyeon se dirige vers l'école.*"
+    },
+    "confess_seo_2": {
+        "name": "Seoyeon",
+        "text": "Il y a un dernier endroit que je veux te montrer."
+    },
+    "confess_seo_3": {
+        "name": "{name}",
+        "text": "*Le toit. Le coucher de soleil peint l'école en or. Le même endroit où je suis venu pour la première fois au Jour 1.*"
+    },
+    "confess_seo_4": {
+        "name": "{name}",
+        "text": "*Seoyeon est appuyée contre la rambarde. Le vent soulève ses cheveux. — Elle les repousse du petit doigt. Cette habitude.*"
+    },
+    "confess_seo_5": {
+        "name": "{name}",
+        "text": "*-- Mais c'est déjà trop tard.*"
+    },
+    "confess_seo_choice": {
+        "name": "{name}",
+        "text": "*Le bout de mes doigts est glacé. Il n'y a pas de vent. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
+        "choices": [
+            "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
+            "...Il y a du bon vent."
+        ]
+    },
+    "confess_seo_yes_1": {
+        "name": "{name}",
+        "text": "Hé."
+    },
+    "confess_seo_yes_2": {
+        "name": "{name}",
+        "text": "*Ma main se crispe sur la rambarde. J'ouvre la bouche. Aucun son.*"
+    },
+    "confess_seo_yes_3": {
+        "name": "{name}",
+        "text": "*Je me souviens des mots que je n'ai pas pu dire dans mon ancienne école. Je les ai ressassés des centaines de fois -- 'et si je l'avais dit à ce moment-là.' -- Cette fois, je me déclare.*"
+    },
+    "confess_seo_yes_4": {
+        "name": "{name}",
+        "text": "Seoyeon. Tu souris parfaitement. Toujours. Mais -- ces 0,5 secondes où tu arrêtes de sourire n'arrêtent pas de me hanter."
+    },
+    "confess_seo_yes_5": {
+        "name": "{name}",
+        "text": "*Les mots sont un désastre. Je n'ai rien préparé, mais je ne peux pas m'arrêter.*"
+    },
+    "confess_seo_yes_6": {
+        "name": "{name}",
+        "text": "La toi de cet instant me semble être la vraie Seoyeon. Et c'est cette Seoyeon que j'aime."
+    },
+    "confess_seo_yes_7": {
+        "name": "{name}",
+        "text": "*Les mots flottent dans la brise du toit. Seoyeon retient son souffle.*"
+    },
+    "confess_seo_yes_8": {
+        "name": "{name}",
+        "text": "*Seoyeon ne dit rien. Ses lèvres tremblent. Pas la présidente du conseil -- juste une fille, debout là.*"
+    },
+    "confess_seo_yes_9": {
+        "name": "Seoyeon",
+        "text": "...Moi aussi."
+    },
+    "confess_seo_yes_10": {
+        "name": "Seoyeon",
+        "text": "...Depuis que t'as dit 'c'est généreux' devant le portail."
+    },
+    "confess_seo_yes_11": {
+        "name": "Seoyeon",
+        "text": "-- Tu n'imagines pas à quel point je me suis retenue pour ne pas le dire."
+    },
+    "confess_seo_yes_12": {
+        "name": "{name}",
+        "text": "*Seoyeon tend son petit doigt. Le même petit doigt que j'ai vu au Jour 1. -- À l'époque je pensais que c'était juste une habitude, mais c'est la façon de Seoyeon de faire une promesse.*"
+    },
+    "confess_seo_no_1": {
+        "name": "{name}",
+        "text": "...Il y a du bon vent."
+    },
+    "confess_seo_no_2": {
+        "name": "{name}",
+        "text": "*J'ai dit la même chose le premier jour. À l'époque, c'était sincère. Maintenant, c'est fuir.*"
+    },
+    "confess_seo_no_3": {
+        "name": "{name}",
+        "text": "*Seoyeon sourit. Un sourire répété. -- Elle se retourne et marche. Au troisième pas, elle s'arrête.*"
+    },
+    "confess_seo_no_4": {
+        "name": "Seoyeon",
+        "text": "...La prochaine fois que tu viens ici, prépare autre chose à dire."
+    },
+    "confess_yuna_1": {
+        "name": "{name}",
+        "text": "*Le rendez-vous touche à sa fin. Yuna s'arrête.*"
+    },
+    "confess_yuna_2": {
+        "name": "Yuna",
+        "text": "...Il y a un dernier endroit où aller."
+    },
+    "confess_yuna_3": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. Un coin de lecture secret. Le coucher de soleil filtre par la fenêtre. Le même endroit où je suis venu pour la première fois au Jour 2.*"
+    },
+    "confess_yuna_4": {
+        "name": "{name}",
+        "text": "*Yuna est assise sur le canapé et me regarde. Comme si elle m'attendait.*"
+    },
+    "confess_yuna_5": {
+        "name": "{name}",
+        "text": "*-- Mais c'est déjà trop tard.*"
+    },
+    "confess_yuna_choice": {
+        "name": "{name}",
+        "text": "*Ma respiration s'est raccourcie. La pièce semble plus petite. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
+        "choices": [
+            "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
+            "...Cet endroit est vraiment bien."
+        ]
+    },
+    "confess_yuna_yes_1": {
+        "name": "{name}",
+        "text": "Hé."
+    },
+    "confess_yuna_yes_2": {
+        "name": "{name}",
+        "text": "*J'ouvre la bouche et la referme. Sans un bruit. Deuxième essai.*"
+    },
+    "confess_yuna_yes_3": {
+        "name": "{name}",
+        "text": "Yuna. Au début, je pensais que ton silence était un mur. Mais ce n'était pas le cas."
+    },
+    "confess_yuna_yes_4": {
+        "name": "{name}",
+        "text": "*Devant Yuna, pas besoin de longs discours. Elle lit entre les lignes.*"
+    },
+    "confess_yuna_yes_5": {
+        "name": "{name}",
+        "text": "Tu étais -- le genre de personne qui s'assoit à côté de toi au lieu de parler. Ce silence était plus chaleureux que les mots de quiconque."
+    },
+    "confess_yuna_yes_6": {
+        "name": "{name}",
+        "text": "Je t'aime."
+    },
+    "confess_yuna_yes_7": {
+        "name": "{name}",
+        "text": "*Les mots semblent écrits dans le silence de la pièce. Les yeux de Yuna s'écarquillent.*"
+    },
+    "confess_yuna_yes_8": {
+        "name": "{name}",
+        "text": "*L'expression impassible de Yuna se fissure. Sa voix nonchalante disparaît, remplacée par la plus petite -- presque inaudible -- voix. Elle serre sa manche.*"
+    },
+    "confess_yuna_yes_9": {
+        "name": "Yuna",
+        "text": "...Ne pars pas. Cette fois, ne pars pas."
+    },
+    "confess_yuna_no_1": {
+        "name": "{name}",
+        "text": "...Cet endroit est vraiment bien."
+    },
+    "confess_yuna_no_2": {
+        "name": "{name}",
+        "text": "*Yuna lit entre les lignes. Elle saura que ces mots ne sont qu'une fuite.*"
+    },
+    "confess_yuna_no_3": {
+        "name": "{name}",
+        "text": "*Yuna prend un livre. Elle regarde la couverture, mais elle ne lit pas.*"
+    },
+    "confess_yuna_no_4": {
+        "name": "Yuna",
+        "text": "...La fin n'est pas encore arrivée."
+    },
+    "confess_dain_1": {
+        "name": "{name}",
+        "text": "*Le rendez-vous touche à sa fin. Dain court vers l'école.*"
+    },
+    "confess_dain_2": {
+        "name": "Dain",
+        "text": "Dernier endroit !! On y va !!"
+    },
+    "confess_dain_3": {
+        "name": "{name}",
+        "text": "*Le gymnase. Vide. Le coucher de soleil se déverse par les fenêtres sur le terrain. Le même endroit où nous sommes venus ensemble pour la première fois au Jour 1.*"
+    },
+    "confess_dain_4": {
+        "name": "{name}",
+        "text": "*Dain tient un ballon. Comme si de rien n'était. — Mais ses doigts sont blancs. Elle le serre fort.*"
+    },
+    "confess_dain_5": {
+        "name": "{name}",
+        "text": "*-- Mais c'est déjà trop tard.*"
+    },
+    "confess_dain_choice": {
+        "name": "{name}",
+        "text": "*Le sol du gymnase semble trembler. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
+        "choices": [
+            "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
+            "...On refait une partie ?"
+        ]
+    },
+    "confess_dain_yes_1": {
+        "name": "{name}",
+        "text": "Hé."
+    },
+    "confess_dain_yes_2": {
+        "name": "{name}",
+        "text": "*Figé, le ballon encore en main. Ma gorge brûle.*"
+    },
+    "confess_dain_yes_3": {
+        "name": "{name}",
+        "text": "Dain. Tu sais que quand tu souris, tes yeux deviennent des petits croissants de lune ? Tu ne le sais sûrement pas -- c'est ton propre visage."
+    },
+    "confess_dain_yes_4": {
+        "name": "{name}",
+        "text": "*Ce n'est pas pierre-feuille-ciseaux, ce n'est pas un jeu. Mais c'est tout pour moi.*"
+    },
+    "confess_dain_yes_5": {
+        "name": "{name}",
+        "text": "-- Quand ces yeux ne me regardent pas, je n'arrive plus à respirer. Je ne sais pas depuis quand c'est comme ça."
+    },
+    "confess_dain_yes_6": {
+        "name": "{name}",
+        "text": "Je t'aime."
+    },
+    "confess_dain_yes_7": {
+        "name": "{name}",
+        "text": "*Trois syllabes résonnent dans le gymnase vide. À cet endroit même où elle a dit 'Gymnase, ça marche ?' au Jour 1.*"
+    },
+    "confess_dain_yes_8": {
+        "name": "{name}",
+        "text": "*Dain est figée. Son énergie a disparu. -- Puis ses yeux se remplissent lentement. Elle enfouit son visage dans ses deux mains. La rougeur s'est étendue jusqu'à sa nuque.*"
+    },
+    "confess_dain_yes_9": {
+        "name": "Dain",
+        "text": "...Attends. Je suffoque -- je vais pleurer -- pourquoi je pleure, je suis contente --"
+    },
+    "confess_dain_yes_10": {
+        "name": "Dain",
+        "text": "Moi aussi je t'aime. Énormément."
+    },
+    "confess_dain_no_1": {
+        "name": "{name}",
+        "text": "...On refait une partie ?"
+    },
+    "confess_dain_no_2": {
+        "name": "{name}",
+        "text": "*Je peux lui faire une passe, mais je ne peux pas dire trois mots. Lamentable.*"
+    },
+    "confess_dain_no_3": {
+        "name": "{name}",
+        "text": "*Dain fait rebondir un ballon de volley. Une fois. Deux fois. -- À la troisième, elle s'arrête.*"
+    },
+    "confess_dain_no_4": {
+        "name": "Dain",
+        "text": "...La prochaine fois, ne fuis pas."
+    },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. Le coucher de soleil filtre par les fenêtres. Un endroit devenu familier en quelques jours.*"
+    },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*Le toit. Le coucher de soleil colore l'école. Un endroit devenu familier en quelques jours.*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*Le gymnase. Vide. Le coucher de soleil filtre par les fenêtres sur le terrain. Un lieu où d'innombrables souvenirs se sont accumulés en quelques jours.*"
+    }
 }

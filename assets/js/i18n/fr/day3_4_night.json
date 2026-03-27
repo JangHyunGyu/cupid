@@ -1,14 +1,14 @@
 {
     "night3_start": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je suis de retour dans ma chambre. Journée lourde.*"
     },
     "night3_start_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je regarde mon téléphone.*"
     },
     "night3_faithful_check": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Il y a des messages.*"
     },
     "night3_faithful_msg_seo_1": {
@@ -20,11 +20,11 @@
         "text": "...Mais tu peux revenir"
     },
     "night3_faithful_msg_seo_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*‘Tu peux revenir.’ — Pour elle, c’est la même chose que ‘reviens.’*"
     },
     "night3_faithful_msg_yuna_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Yuna a envoyé une photo d’un mot. Une seule ligne écrite dans son carnet.*"
     },
     "night3_faithful_msg_yuna_2": {
@@ -40,23 +40,23 @@
         "text": "Mais bon, merci"
     },
     "night3_faithful_msg_dain_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Camouflé derrière un « haha » — mais la sincérité transparaît.*"
     },
     "night3_dream_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai rêvé. — Je marchais côte à côte avec quelqu’un.*"
     },
     "night3_dream_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je ne voyais pas son visage, mais sa seule présence à côté de moi m’apaisait.*"
     },
     "night3_dream_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*C’était un beau rêve.*"
     },
     "night3_cheat_msg_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je suis de retour dans ma chambre. Journée lourde. Je regarde mon téléphone.*"
     },
     "night3_cheat_msg_2": {
@@ -84,15 +84,15 @@
         "text": "...mdr j’aimerais que ce soit une blague"
     },
     "night3_cheat_msg_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Yuna a envoyé trois messages. De la part de quelqu’un qui n’en envoie normalement même pas un. — C’est dire à quel point elle est en colère.*"
     },
     "night3_nightmare_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je me suis endormi. — Un rêve.*"
     },
     "night3_nightmare_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je suis debout dans l’obscurité. Je ne vois rien.*"
     },
     "night3_nightmare_3": {
@@ -108,11 +108,11 @@
         "text": "Tu avais dit que tu viendrais. Je t’attendais."
     },
     "night3_nightmare_6": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je vois des mains dans trois directions. Faiblement, dans l’obscurité.*"
     },
     "night3_nightmare_choice": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La main de qui vais-je prendre.*",
         "choices": [
             "Prendre la main de Seoyeon",
@@ -121,71 +121,71 @@
         ]
     },
     "night3_nightmare_seo": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai tendu la main vers Seoyeon. Au moment où j’ai aperçu ce sourire — elle a disparu.*"
     },
     "night3_nightmare_yuna": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai fait un pas vers Yuna. Juste avant que mes doigts ne la touchent — elle a disparu.*"
     },
     "night3_nightmare_dain": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai couru vers Dain. Au moment où j’ai cru l’attraper — elle a disparu.*"
     },
     "night3_nightmare_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai tendu la main. — Je ne peux pas l’attraper.*"
     },
     "night3_nightmare_end_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Tout le monde disparaît, et il ne reste que l’obscurité.*"
     },
     "night3_nightmare_end_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*— Je me suis réveillé trempé de sueur. 3 heures du matin. Je vois le plafond.*"
     },
     "night3_nightmare_end_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Qu’est-ce que j’ai fait.*"
     },
     "night3_cheat_reflect_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai sorti le téléphone. Galerie. Encore du scroll. — La photo de Sojeong.*"
     },
     "night3_cheat_reflect_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle sourit. Dans la photo de groupe, elle me regarde en souriant. Sans rien savoir.*"
     },
     "night3_cheat_reflect_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dans mon ancien lycée, je n’ai rien pu dire. À personne. — Cette fois, je voulais le dire sans regrets.*\n\n*Mais avec du recul — je ne l’ai pas vraiment dit. Je l’ai balancé à tout le monde. Ce n’est pas de la sincérité — c’est de la lâcheté.*"
     },
     "night3_cheat_reflect_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Ancien lycée : le regret de n’avoir rien dit.*\n*Ce lycée : le regret d’avoir trop dit.*\n\n*C’est l’inverse de Sojeong, mais le résultat est le même. Quelqu’un est blessé.*\n\n*Au final, le problème n’est pas de dire ou de se taire — c’est à qui on le dit.*"
     },
     "night3_cheat_reflect_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*— Je ne fuirai pas. Cette fois, à une seule personne.*"
     },
     "night3_faithful_reflect_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai ouvert les yeux. La lumière du matin passe entre les rideaux. — Le rêve de cette nuit était beau.*"
     },
     "night3_faithful_reflect_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai sorti le téléphone. Ouvert la galerie. La photo de Sojeong. — J’ai appuyé longuement.*\n\n*’Supprimer ?’*\n\n*— Supprimée.*"
     },
     "night3_faithful_reflect_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je l’avais gardée parce que la supprimer, c’était comme effacer les regrets. Mais maintenant ce n’est plus du regret — c’est une leçon. La photo qui m’a donné le courage de me déclarer. — Elle a rempli son rôle.*"
     },
     "night3_faithful_reflect_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Cette fois, c’est différent. Je ne le dirai qu’à une seule personne. Aux autres — je refuserai correctement. C’est la seule honnêteté qui me reste.*"
     },
     "night3_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La nuit s’approfondit...*"
     }
 }

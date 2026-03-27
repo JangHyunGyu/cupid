@@ -1,10 +1,10 @@
 {
     "morning5_start": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Cinquième jour. Le dernier. L'uniforme est devenu confortable. Il y a cinq jours, il était raide, mais maintenant il me va bien. — Est-ce que je me suis habitué à cette école, ou à ces gens ?*"
     },
     "morning5_start_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Aujourd'hui, il y a un événement scolaire. Le dernier. Dès que j'entre en classe — des signaux arrivent de trois directions.*"
     },
     "morning5_mood_check": {
@@ -12,23 +12,23 @@
         "text": ""
     },
     "morning5_mood_high": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dernier jour. Étrangement, mes pas sont légers. Avoir quelqu'un que je veux voir — c'est une raison suffisante pour tenir le matin.*"
     },
     "morning5_mood_mid": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dernier jour. Plus compliqué qu'hier. J'ai quelque chose à dire, mais je ne sais pas si ça sortira.*"
     },
     "morning5_mood_low": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dernier jour. Cinq jours, c'est passé vite. Au final, est-ce que je quitterai cette école sans rien laisser derrière moi aussi ?*"
     },
     "morning5_seo_note_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Il y a un mot sur mon bureau. L'écriture de Seoyeon. — 'Libère-toi cet après-midi. Je laisserai le toit ouvert. — Seoyeon'*"
     },
     "morning5_yuna_story_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*En passant devant le coin d'exposition du club littéraire dans le couloir — une nouvelle est affichée au tableau. Titre : 'À la personne rencontrée à la bibliothèque.' C'est celle de Yuna. — Une histoire que seul le protagoniste pourrait reconnaître.*"
     },
     "morning5_dain_1": {
@@ -40,15 +40,15 @@
         "text": "Si tu essaies de fuir, je serai vraiment en colère ?"
     },
     "morning5_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Des signaux de trois directions. — Il faut choisir une réponse.*"
     },
     "hidden_homeroom_d5_check": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Préparation de l'événement. En passant devant la salle vide — la porte est ouverte.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La prof est assise au bureau. — Pas un manuscrit cette fois. Une enveloppe. Brune.*"
     },
     "hidden_homeroom_d5_2": {
@@ -60,7 +60,7 @@
         "text": "Je ne l'ai montré à personne en sept ans."
     },
     "hidden_homeroom_d5_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*...Je prends le manuscrit. Il est plus lourd que ce que j'imaginais.*"
     },
     "hidden_homeroom_d5_5": {
@@ -92,7 +92,7 @@
         "text": "Après ton diplôme — on se voit. Plus comme prof et élève."
     },
     "hidden_homeroom_d5_8": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle se retourne. Ses longs cheveux oscillent. — Aujourd'hui, les boutons de son cardigan sont droits.*"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -102,7 +102,7 @@
         "personality": "La prof est plus honnête que d'habitude car c'est la dernière fois. Dernière conversation après avoir remis le manuscrit."
     },
     "hidden_nurse_d5_check": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Pause de l'événement. Je passe devant l'infirmerie.*"
     },
     "hidden_nurse_d5_1": {
@@ -114,7 +114,7 @@
         "text": "Passe me voir après le diplôme. ...Ou avant, si t'as mal."
     },
     "hidden_nurse_d5_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Et si j'ai pas mal ?"
     },
     "hidden_nurse_d5_4": {
@@ -146,7 +146,7 @@
         "text": "Je sais. J'avais juste besoin d'une excuse."
     },
     "hidden_nurse_d5_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Il y a une petite inscription sur le pansement. 'Après le diplôme, on se retrouve au café et pas à l'infirmerie — ♥'*"
     },
     "hidden_nurse_d5_freetalk": {

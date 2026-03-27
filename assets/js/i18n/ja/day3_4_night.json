@@ -1,14 +1,14 @@
 {
     "night3_start": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*部屋に戻った。重い一日だった。*"
     },
     "night3_start_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*スマホを見る。*"
     },
     "night3_faithful_check": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*メッセージが来ている。*"
     },
     "night3_faithful_msg_seo_1": {
@@ -20,11 +20,11 @@
         "text": "...でもまた来てもいいよ"
     },
     "night3_faithful_msg_seo_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*「また来てもいいよ」。— この人にとってこれは「来て」と同じ言葉だ。*"
     },
     "night3_faithful_msg_yuna_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*ユナがメモの写真を送ってきた。ノートに書かれた一行。*"
     },
     "night3_faithful_msg_yuna_2": {
@@ -40,23 +40,23 @@
         "text": "あ、でもありがとう"
     },
     "night3_faithful_msg_dain_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*「笑」で隠してるけど——本心が透けて見える。*"
     },
     "night3_dream_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*夢を見た。— 誰かと並んで歩いていた。*"
     },
     "night3_dream_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*顔は見えないのに、隣にいるだけで心が落ち着いた。*"
     },
     "night3_dream_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*いい夢だった。*"
     },
     "night3_cheat_msg_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*部屋に戻った。重い一日だった。スマホを見る。*"
     },
     "night3_cheat_msg_2": {
@@ -84,15 +84,15 @@
         "text": "...笑 冗談だったらよかったのに"
     },
     "night3_cheat_msg_7": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*ユナがメッセージを三通送ってきた。普段一通も送らない人が。— それだけ怒っているということだ。*"
     },
     "night3_nightmare_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*眠りに落ちた。— 夢。*"
     },
     "night3_nightmare_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*闇の中に立っている。何も見えない。*"
     },
     "night3_nightmare_3": {
@@ -108,11 +108,11 @@
         "text": "来るって言ったのに。待ってたのに。"
     },
     "night3_nightmare_6": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*三方向から手が見える。闇の中でかすかに。*"
     },
     "night3_nightmare_choice": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*誰の手を取るか。*",
         "choices": [
             "ソヨンの手を取る",
@@ -121,71 +121,71 @@
         ]
     },
     "night3_nightmare_seo": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*ソヨンの方に手を伸ばした。あの微笑みが見えた瞬間——消えた。*"
     },
     "night3_nightmare_yuna": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*ユナの方に足を踏み出した。指先が触れる寸前——消えた。*"
     },
     "night3_nightmare_dain": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*ダインの方に走った。つかんだと思った瞬間——消えた。*"
     },
     "night3_nightmare_end": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*手を伸ばした。— 届かない。*"
     },
     "night3_nightmare_end_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*全員消えて、残ったのは闇だけ。*"
     },
     "night3_nightmare_end_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*— 汗だくになって目を覚ました。午前3時。天井が見える。*"
     },
     "night3_nightmare_end_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*僕は何をしたんだ。*"
     },
     "night3_cheat_reflect_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*スマホを取り出した。ギャラリー。またスクロールする。——ソジョンの写真。*"
     },
     "night3_cheat_reflect_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*笑っている。集合写真の中で僕を見て笑っている。何も知らないまま。*"
     },
     "night3_cheat_reflect_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*前の学校では何も言えなかった。誰にも。——今回は後悔しないように言おうとした。*\n\n*でも振り返ってみれば——言ったんじゃなくて、みんなに押しつけたんだ。それは正直なんじゃなくて——卑怯なだけだ。*"
     },
     "night3_cheat_reflect_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*前の学校：何も言えなくて後悔。*\n*この学校：みんなに言って後悔。*\n\n*ソジョンの時と正反対なのに、結果は同じだ。誰かが傷つく。*\n\n*結局問題は「言うか言わないか」じゃなくて——「誰に」なんだ。*"
     },
     "night3_cheat_reflect_5": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*——逃げない。今度こそ、一人だけに。*"
     },
     "night3_faithful_reflect_1": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*目を開けた。朝の光がカーテンの隙間から差し込んでいる。——今日の夢は良かった。*"
     },
     "night3_faithful_reflect_2": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*スマホを取り出した。ギャラリーを開いた。ソジョンの写真。——スクロールを止めて、長押しした。*\n\n*「削除しますか？」*\n\n*——削除した。*"
     },
     "night3_faithful_reflect_3": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*消したら後悔まで消える気がして残しておいた。でももう後悔じゃなくて教訓だ。告白する勇気を教えてくれた写真。——役目を終えた。*"
     },
     "night3_faithful_reflect_4": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*今度は違う。一人にだけ伝える。残りには——ちゃんと断る。それが僕にできる唯一の誠実さだ。*"
     },
     "night3_end": {
-        "name": "僕",
+        "name": "{name}",
         "text": "*夜が更けていく...*"
     }
 }

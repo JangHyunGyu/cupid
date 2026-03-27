@@ -1,6 +1,6 @@
 {
     "tour_seo_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Wir stehen nebeneinander vor dem Schultor. Genau die Stelle, an der Seoyeon am ersten Tag gewartet hat.*"
     },
     "tour_seo_2": {
@@ -8,7 +8,7 @@
         "text": "Hier haben wir uns zum ersten Mal getroffen."
     },
     "tour_seo_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Damals hätte ich fast Ärger bekommen, als ich 'Das ist zu viel für mich' gesagt habe."
     },
     "tour_seo_4": {
@@ -16,7 +16,7 @@
         "text": "Ich hab dich doch gar nicht geschimpft. — Du hast mir von dem Moment an gefallen."
     },
     "tour_seo_5": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Vom ersten Tag an?"
     },
     "tour_seo_6": {
@@ -24,7 +24,7 @@
         "text": "...Vielleicht war es nur eine Täuschung des Windes."
     },
     "tour_seo_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Es weht kein Wind.*"
     },
     "tour_seo_8": {

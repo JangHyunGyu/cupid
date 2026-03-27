@@ -1,14 +1,14 @@
 {
     "night3_start": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Volví a mi habitación. Fue un día pesado.*"
     },
     "night3_start_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Miro mi teléfono.*"
     },
     "night3_faithful_check": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Hay mensajes.*"
     },
     "night3_faithful_msg_seo_1": {
@@ -20,11 +20,11 @@
         "text": "...Pero puedes volver"
     },
     "night3_faithful_msg_seo_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*‘Puedes volver.’ — Para ella, eso es lo mismo que decir ‘ven, por favor.’*"
     },
     "night3_faithful_msg_yuna_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Yuna envió una foto de una nota. Una línea escrita en su cuaderno.*"
     },
     "night3_faithful_msg_yuna_2": {
@@ -40,23 +40,23 @@
         "text": "Pero oye, gracias"
     },
     "night3_faithful_msg_dain_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Disfrazado con un ‘jaja’ — pero la sinceridad se nota.*"
     },
     "night3_dream_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Tuve un sueño. — Caminaba al lado de alguien.*"
     },
     "night3_dream_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*No podía ver su cara, pero solo con tenerla al lado, mi corazón se calmaba.*"
     },
     "night3_dream_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Fue un buen sueño.*"
     },
     "night3_cheat_msg_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Volví a mi habitación. Fue un día pesado. Miro mi teléfono.*"
     },
     "night3_cheat_msg_2": {
@@ -84,15 +84,15 @@
         "text": "...jaja ojalá fuera broma"
     },
     "night3_cheat_msg_7": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Yuna envió tres mensajes. De alguien que normalmente ni envía uno. — Eso muestra lo enfadada que está.*"
     },
     "night3_nightmare_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Me quedé dormido. — Un sueño.*"
     },
     "night3_nightmare_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Estoy de pie en la oscuridad. No puedo ver nada.*"
     },
     "night3_nightmare_3": {
@@ -108,11 +108,11 @@
         "text": "Dijiste que vendrías. Te estuve esperando."
     },
     "night3_nightmare_6": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Veo manos desde tres direcciones. Débilmente, en la oscuridad.*"
     },
     "night3_nightmare_choice": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*¿La mano de quién tomaré.*",
         "choices": [
             "Tomar la mano de Seoyeon",
@@ -121,71 +121,71 @@
         ]
     },
     "night3_nightmare_seo": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Tendí la mano hacia Seoyeon. En el momento en que vi esa sonrisa — desapareció.*"
     },
     "night3_nightmare_yuna": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Di un pasó hacia Yuna. Justo cuando mis dedos estaban a punto de tocarla — desapareció.*"
     },
     "night3_nightmare_dain": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Corrí hacia Dain. En el momento en que creí alcanzarla — desapareció.*"
     },
     "night3_nightmare_end": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Extendí la mano. — No puedo alcanzarla.*"
     },
     "night3_nightmare_end_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Todas desaparecen, y solo queda la oscuridad.*"
     },
     "night3_nightmare_end_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*— Me desperté empapado en sudor. Las 3 de la mañana. Veo el techo.*"
     },
     "night3_nightmare_end_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*¿Qué he hecho.*"
     },
     "night3_cheat_reflect_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Saqué el móvil. Galería. Otra vez haciendo scroll. — La foto de Sojeong.*"
     },
     "night3_cheat_reflect_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Está sonriendo. En la foto de grupo, mirándome y sonriendo. Sin saber nada.*"
     },
     "night3_cheat_reflect_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*En mi anterior instituto no pude decir nada. A nadie. — Esta vez quería decirlo sin arrepentimientos.*\n\n*Pero ahora que lo pienso — no es que lo dijera. Se lo solté a todas. Eso no es ser sincero — es ser cobarde.*"
     },
     "night3_cheat_reflect_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Instituto anterior: arrepentimiento por no haber dicho nada.*\n*Este instituto: arrepentimiento por habérselo dicho a todas.*\n\n*Es lo opuesto a lo de Sojeong, pero el resultado es el mismo. Alguien sale herido.*\n\n*Al final el problema no es si lo dices o no — sino a quién se lo dices.*"
     },
     "night3_cheat_reflect_5": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*— No voy a huir. Esta vez, a una sola persona.*"
     },
     "night3_faithful_reflect_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Abrí los ojos. La luz de la mañana se cuela entre las cortinas. — El sueño de hoy fue bonito.*"
     },
     "night3_faithful_reflect_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Saqué el móvil. Abrí la galería. La foto de Sojeong. — Dejé el dedo pulsado.*\n\n*'¿Eliminar?'*\n\n*— La borré.*"
     },
     "night3_faithful_reflect_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La había guardado porque borrarla sería como borrar el arrepentimiento. Pero ya no es arrepentimiento — es una lección. La foto que me dio el valor para confesarme. — Ya cumplió su función.*"
     },
     "night3_faithful_reflect_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Esta vez es diferente. Solo se lo diré a una persona. A las demás — las rechazaré como se debe. Esa es la única forma de ser honesto que me queda.*"
     },
     "night3_end": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La noche se hace más profunda...*"
     }
 }

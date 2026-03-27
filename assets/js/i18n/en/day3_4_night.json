@@ -1,14 +1,14 @@
 {
     "night3_start": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I’m back in my room. It was a heavy day.*"
     },
     "night3_start_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I look at my phone.*"
     },
     "night3_faithful_check": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There are messages.*"
     },
     "night3_faithful_msg_seo_1": {
@@ -20,11 +20,11 @@
         "text": "...But you can come again"
     },
     "night3_faithful_msg_seo_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*‘You can come again.’ — For her, that’s the same as saying ‘please come.’*"
     },
     "night3_faithful_msg_yuna_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Yuna sent a photo of a note. A single line written in her notebook.*"
     },
     "night3_faithful_msg_yuna_2": {
@@ -40,23 +40,23 @@
         "text": "But hey, thanks"
     },
     "night3_faithful_msg_dain_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Masked with ‘haha’ — but the sincerity bleeds through.*"
     },
     "night3_dream_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I had a dream. — I was walking side by side with someone.*"
     },
     "night3_dream_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I couldn’t see their face, but just having them beside me put my heart at ease.*"
     },
     "night3_dream_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*It was a good dream.*"
     },
     "night3_cheat_msg_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I’m back in my room. It was a heavy day. I look at my phone.*"
     },
     "night3_cheat_msg_2": {
@@ -84,15 +84,15 @@
         "text": "...lol I wish this were a joke"
     },
     "night3_cheat_msg_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Yuna sent three messages. From someone who normally doesn’t even send one. — That’s how angry she is.*"
     },
     "night3_nightmare_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I fell asleep. — A dream.*"
     },
     "night3_nightmare_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I’m standing in darkness. I can’t see anything.*"
     },
     "night3_nightmare_3": {
@@ -108,11 +108,11 @@
         "text": "You said you’d come. I was waiting."
     },
     "night3_nightmare_6": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I see hands from three directions. Faintly, in the darkness.*"
     },
     "night3_nightmare_choice": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Whose hand will I take.*",
         "choices": [
             "Take Seoyeon’s hand",
@@ -121,71 +121,71 @@
         ]
     },
     "night3_nightmare_seo": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I reached toward Seoyeon. The moment I saw that smile — she vanished.*"
     },
     "night3_nightmare_yuna": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I stepped toward Yuna. Just as my fingertips were about to touch — she vanished.*"
     },
     "night3_nightmare_dain": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I ran toward Dain. The moment I thought I had her — she vanished.*"
     },
     "night3_nightmare_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I reached out. — I can’t grasp it.*"
     },
     "night3_nightmare_end_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Everyone disappears, and only darkness remains.*"
     },
     "night3_nightmare_end_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*— I woke up drenched in sweat. 3 AM. I see the ceiling.*"
     },
     "night3_nightmare_end_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*What have I done.*"
     },
     "night3_cheat_reflect_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I pulled out my phone. Gallery. Scrolling again. — Sojeong's photo.*"
     },
     "night3_cheat_reflect_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*She's smiling. Smiling at me in the group photo. Without knowing a thing.*"
     },
     "night3_cheat_reflect_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*At my old school, I couldn't say a word. To anyone. — This time, I wanted to say it without regrets.*\n\n*But looking back now — I didn't really say it. I just threw it at everyone. That's not honesty — that's cowardice.*"
     },
     "night3_cheat_reflect_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*Old school: regret from saying nothing.*\n*This school: regret from saying too much.*\n\n*The exact opposite of what happened with Sojeong, but the result is the same. Someone gets hurt.*\n\n*In the end, the problem was never 'to say or not to say' — it was 'to whom.'*"
     },
     "night3_cheat_reflect_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*— I won't run. This time, just one person.*"
     },
     "night3_faithful_reflect_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I opened my eyes. Morning light seeps through the curtains. — Today's dream was a good one.*"
     },
     "night3_faithful_reflect_2": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I pulled out my phone. Opened the gallery. Sojeong's photo. — I stopped scrolling, and held down.*\n\n*'Delete this photo?'*\n\n*— Deleted.*"
     },
     "night3_faithful_reflect_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*I'd kept it because deleting it felt like erasing the regret. But now it's not regret anymore — it's a lesson. The photo that gave me the courage to confess. — It served its purpose.*"
     },
     "night3_faithful_reflect_4": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*This time is different. I'll only speak to one person. The rest — I'll turn down properly. That's the only honest thing I can do.*"
     },
     "night3_end": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*The night grows deeper...*"
     }
 }

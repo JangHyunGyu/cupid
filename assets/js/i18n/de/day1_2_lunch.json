@@ -1,469 +1,469 @@
 {
-  "lunch_start": {
-    "name": "Ich",
-    "text": "*Mittagspause. Die Glocke läutet.*"
-  },
-  "lunch_start_2": {
-    "name": "Ich",
-    "text": "*Ich verlasse das Klassenzimmer und der Flur ist voller Schüler. Keine Ahnung, wohin. Mensa? Kiosk? Oder—*"
-  },
-  "lunch_start_3": {
-    "name": "Ich",
-    "text": "*Signale kommen aus drei Richtungen gleichzeitig.*"
-  },
-  "lunch_start_4": {
-    "name": "Ich",
-    "text": "*Am Ende des Flurs fängt Seoyeon meinen Blick auf und winkt. Sie deutet Richtung Dach.*"
-  },
-  "lunch_start_5": {
-    "name": "Dain",
-    "text": "Hey! Schon gegessen?! Lass zum Kiosk gehen! Ich kauf dir Brot... der Verlierer zahlt!"
-  },
-  "lunch_start_6": {
-    "name": "Ich",
-    "text": "*Und Yuna schlüpft mit nur ihrer Tasche leise aus dem Klassenzimmer. Richtung Bibliothek.*"
-  },
-  "lunch_start_7": {
-    "name": "Ich",
-    "text": "*Drei Wege. So eine Wahl am ersten Tag treffen müssen.*"
-  },
-  "lunch_start_7b": {
-    "name": "Ich",
-    "text": "*An der alten Schule habe ich nicht gewählt. Genauer gesagt, ich habe die Entscheidung aufgeschoben, bis der Moment vorbei war. — Ach, schon wieder dieser Gedanke. Mein Mund bewegt sich lässig, aber im entscheidenden Augenblick erstarrt er. Dieses Muster. Ich bin echt der Erbärmlichste.*"
-  },
-  "lunch_choice": {
-    "name": "Ich",
-    "text": "*Wem folge ich?*",
-    "choices": [
-      "Seoyeon aufs Dach folgen",
-      "Mit Dain zum Kiosk",
-      "Yuna in die Bibliothek folgen"
-    ]
-  },
-  "lunch_seo_1": {
-    "name": "Ich",
-    "text": "*Seoyeon öffnet die Dachtür mit ihrem Schlüssel. Ein Windstoß fegt herein.*"
-  },
-  "lunch_seo_2": {
-    "name": "Ich",
-    "text": "*Das Dach ist sauber. Ein paar Blumentöpfe und ein Klappstuhl an der Seite. Jemand pflegt das hier.*"
-  },
-  "lunch_seo_3": {
-    "name": "Seoyeon",
-    "text": "Das hier ist mein Revier."
-  },
-  "lunch_seo_4": {
-    "name": "{name}",
-    "text": "Ein Dach nur für die Schülerratsvorsitzende?"
-  },
-  "lunch_seo_5": {
-    "name": "Seoyeon",
-    "text": "Ich bringe nicht jeden hierher.\" *klappt einen Stuhl auf* \"Heute ist eine Ausnahme."
-  },
-  "lunch_seo_6": {
-    "name": "{name}",
-    "text": "Sonderbehandlung am ersten Tag? Klingt verdächtig."
-  },
-  "lunch_seo_7": {
-    "name": "Seoyeon",
-    "text": "Du bist paranoid. Die Luft im Klassenzimmer war einfach stickig, das ist alles."
-  },
-  "lunch_seo_8": {
-    "name": "Ich",
-    "text": "*Seoyeon holt eine Lunchbox aus ihrer Tasche. Ordentlich verpackt für zwei.*"
-  },
-  "lunch_seo_9": {
-    "name": "{name}",
-    "text": "...Das ist für zwei Personen."
-  },
-  "lunch_seo_10": {
-    "name": "Seoyeon",
-    "text": "Dass du aufmerksam bist, hab ich vorhin schon festgestellt."
-  },
-  "lunch_seo_11": {
-    "name": "Ich",
-    "text": "*Sie hatte von Anfang an vor, zusammen zu essen. — Aber sie würde es nie so sagen.*"
-  },
-  "lunch_seo_12": {
-    "name": "Ich",
-    "text": "*Sie öffnet die Lunchbox. Sorgfältig zubereitete Beilagen. Eierolle, Würstchen, Mini-Reisbällchen.*"
-  },
-  "lunch_seo_13": {
-    "name": "{name}",
-    "text": "Hast du das selbst gemacht?"
-  },
-  "lunch_seo_14": {
-    "name": "Seoyeon",
-    "text": "Eine Schülerratsvorsitzende muss in allem gut sein."
-  },
-  "lunch_seo_15": {
-    "name": "{name}",
-    "text": "Das ist keine richtige Antwort."
-  },
-  "lunch_seo_16": {
-    "name": "Seoyeon",
-    "text": "*reicht Stäbchen* Iss. Kalt schmeckt es nicht."
-  },
-  "lunch_seo_17": {
-    "name": "Ich",
-    "text": "*Sie weicht Fragen geschickt aus. Ob geübt oder angeboren.*"
-  },
-  "lunch_seo_18": {
-    "name": "Ich",
-    "text": "*Wir essen eine Weile. Die Brise ist angenehm. Das Schulgelände vom Dach aus — weiter als erwartet.*"
-  },
-  "lunch_seo_19": {
-    "name": "Seoyeon",
-    "text": "Und, wie findest du die Schule?"
-  },
-  "lunch_seo_20": {
-    "name": "{name}",
-    "text": "Das Essen ist gut."
-  },
-  "lunch_seo_21": {
-    "name": "Seoyeon",
-    "text": "*schmunzelt* Ich frage nach der Schule, und du antwortest übers Essen."
-  },
-  "lunch_seo_22": {
-    "name": "Ich",
-    "text": "*Seoyeon nimmt ein Stück Eierolle und hält es mir hin.*"
-  },
-  "lunch_seo_23": {
-    "name": "Seoyeon",
-    "text": "Nur einen Bissen."
-  },
-  "lunch_seo_choice": {
-    "name": "Ich",
-    "text": "*Seoyeon hält mir die Eierolle hin.*",
-    "choices": [
-      "Annehmen",
-      "Würde besser schmecken, wenn du sie selbst isst"
-    ]
-  },
-  "lunch_seo_c1_1": {
-    "name": "Ich",
-    "text": "*Ich nehme die Eierolle von Seoyeons Stäbchen.*"
-  },
-  "lunch_seo_c1_2": {
-    "name": "{name}",
-    "text": "...Lecker."
-  },
-  "lunch_seo_c1_3": {
-    "name": "Seoyeon",
-    "text": "...Natürlich."
-  },
-  "lunch_seo_c1_4": {
-    "name": "Ich",
-    "text": "*Seoyeon räuspert sich und wendet unauffällig den Blick ab. Ihre Finger berühren ihren Nacken — die Geste wirkt ein wenig unbeholfen.*"
-  },
-  "lunch_seo_c2_1": {
-    "name": "Ich",
-    "text": "*Seoyeon steckt sich die Eierolle selbst in den Mund. Kaut langsam.*"
-  },
-  "lunch_seo_c2_2": {
-    "name": "Seoyeon",
-    "text": "Stimmt. Schmeckt gut."
-  },
-  "lunch_seo_c2_3": {
-    "name": "Ich",
-    "text": "*Sie tut gelässen, aber sie scheint leicht eingeschnappt zu sein.*"
-  },
-  "lunch_seo_after": {
-    "name": "Ich",
-    "text": "*Das Mittagessen neigt sich dem Ende zu.*"
-  },
-  "lunch_seo_after_2": {
-    "name": "Seoyeon",
-    "text": "Willst du nächstes Mal wiederkommen?"
-  },
-  "lunch_seo_after_3": {
-    "name": "{name}",
-    "text": "Ist das eine Einladung?"
-  },
-  "lunch_seo_after_4": {
-    "name": "Seoyeon",
-    "text": "Nein. Eine Genehmigung."
-  },
-  "lunch_seo_after_5": {
-    "name": "Ich",
-    "text": "*Typisch Seoyeon. Keine Einladung, eine Genehmigung. — Aber warum lächelt sie?*"
-  },
-  "lunch_seo_after_6": {
-    "name": "Ich",
-    "text": "*Seoyeon räumt die Lunchbox weg und streicht sich mit dem kleinen Finger die Haare zurück. Eine unbewusste Angewohnheit, wie es scheint.*"
-  },
-  "lunch_seo_after_7": {
-    "name": "Ich",
-    "text": "*Der kleine Finger. — Ein winziges Detail, aber es bleibt hängen.*"
-  },
-  "lunch_dain_1": {
-    "name": "Dain",
-    "text": "Oh! Du bist da! Hab dich bei der Vorstellung gesehen! Lass uns zusammen essen!"
-  },
-  "lunch_dain_2": {
-    "name": "Dain",
-    "text": "Los geht’s! Was willst du?! Mein Tipp: Streuselbrot und Erdbeermilch!"
-  },
-  "lunch_dain_3": {
-    "name": "{name}",
-    "text": "Aber du hast gesagt, der Verlierer zahlt. Was machen wir?"
-  },
-  "lunch_dain_4": {
-    "name": "Dain",
-    "text": "Schere-Stein-Papier! Logisch!"
-  },
-  "lunch_dain_5": {
-    "name": "{name}",
-    "text": "Gar nicht logisch."
-  },
-  "lunch_dain_6": {
-    "name": "Dain",
-    "text": "Spielst du nicht mit?! Dann zahlst du!"
-  },
-  "lunch_dain_7": {
-    "name": "{name}",
-    "text": "...Na gut, los."
-  },
-  "lunch_dain_8": {
-    "name": "Ich",
-    "text": "*Schere-Stein-Papier.*"
-  },
-  "lunch_dain_9": {
-    "name": "Dain",
-    "text": "Schere— Stein— Papier!"
-  },
-  "lunch_dain_10": {
-    "name": "Ich",
-    "text": "*Schere, Stein, Papier. — Dain hat verloren.*"
-  },
-  "lunch_dain_11": {
-    "name": "Dain",
-    "text": "...Häh?! Verloren?! Nochmal!!"
-  },
-  "lunch_dain_12": {
-    "name": "{name}",
-    "text": "Versprochen ist versprochen."
-  },
-  "lunch_dain_13": {
-    "name": "Dain",
-    "text": "Ach, okay! Ich kauf, ich kauf! Frau Verkäuferin, zwei Streuselbrote bitte!"
-  },
-  "lunch_dain_14": {
-    "name": "Ich",
-    "text": "*Dain meckert beim Brotkauf. Aber ihre Mundwinkel zeigen nach oben.*"
-  },
-  "lunch_dain_15": {
-    "name": "Ich",
-    "text": "*Wir setzen uns auf eine Bank beim Kiosk und essen unser Brot.*"
-  },
-  "lunch_dain_16": {
-    "name": "Dain",
-    "text": "*beißt ins Brot* Hey, machst du echt keinen Sport?"
-  },
-  "lunch_dain_17": {
-    "name": "{name}",
-    "text": "Wieso, machst du dir Sorgen um meine Ausdauer?"
-  },
-  "lunch_dain_18": {
-    "name": "Dain",
-    "text": "Nein, aber um mit mir mitzuhalten, brauchst du schon etwas Ausdauer! Haha"
-  },
-  "lunch_dain_19": {
-    "name": "{name}",
-    "text": "Klang wie eine Selbstanpreisung."
-  },
-  "lunch_dain_20": {
-    "name": "Dain",
-    "text": "Was?! Was ist ein PR?!"
-  },
-  "lunch_dain_21": {
-    "name": "{name}",
-    "text": "Personal Record. Ein Sportbegriff."
-  },
-  "lunch_dain_22": {
-    "name": "Ich",
-    "text": "*Dains Augen leuchten auf.*"
-  },
-  "lunch_dain_23": {
-    "name": "Dain",
-    "text": "Oh, du kennst das?! Du kennst dich doch mit Sport aus?!"
-  },
-  "lunch_dain_choice": {
-    "name": "Ich",
-    "text": "*Dain starrt mich mit erwartungsvollen Augen an.*",
-    "choices": [
-      "Ein bisschen. Würdest du es mir beibringen?",
-      "Hab nur so getan."
-    ]
-  },
-  "lunch_dain_c1_1": {
-    "name": "Dain",
-    "text": "Haha super!! Ich bring dir alles bei! Turnhalle nach der Schule, Deal?!"
-  },
-  "lunch_dain_c1_2": {
-    "name": "Ich",
-    "text": "*Ihre Augen werden zu Halbmonden. So sieht sie also aus, wenn sie lächelt. — Ein Detail, das mir entgangen wäre, wenn ich nicht hingesehen hätte.*"
-  },
-  "lunch_dain_c2_1": {
-    "name": "Dain",
-    "text": "Ach komm, es interessiert dich doch! Komm nach der Schule in die Turnhalle! Du wirst es nicht bereuen!"
-  },
-  "lunch_dain_after": {
-    "name": "Ich",
-    "text": "*Wir essen das Brot auf und stehen auf.*"
-  },
-  "lunch_dain_after_2": {
-    "name": "Dain",
-    "text": "Hey, {name}!"
-  },
-  "lunch_dain_after_3": {
-    "name": "{name}",
-    "text": "Ja?"
-  },
-  "lunch_dain_after_4": {
-    "name": "Dain",
-    "text": "Ich bin die Erste, mit der du an deiner neuen Schule gegessen hast! Merk dir das!"
-  },
-  "lunch_dain_after_5": {
-    "name": "Ich",
-    "text": "*Sie grinst und boxt mich leicht auf die Schulter.*"
-  },
-  "lunch_dain_after_6": {
-    "name": "Ich",
-    "text": "*Ich weiß nicht, warum ich mir das merken soll, aber sie hat es so ernst gesagt, dass ich genickt habe.*"
-  },
-  "lunch_yuna_1": {
-    "name": "Ich",
-    "text": "*Ich folge Yuna in die Bibliothek. Fast niemand kommt während der Mittagspause hierher.*"
-  },
-  "lunch_yuna_2": {
-    "name": "Ich",
-    "text": "*Yuna setzt sich in eine Ecke des Lesesaals. Öffnet ein Buch. Ich bin mir nicht sicher, ob sie weiß, dass ich ihr gefolgt bin.*"
-  },
-  "lunch_yuna_3": {
-    "name": "Ich",
-    "text": "*Ich setze mich vorsichtig ihr gegenüber.*"
-  },
-  "lunch_yuna_4": {
-    "name": "Yuna",
-    "text": "......"
-  },
-  "lunch_yuna_5": {
-    "name": "Ich",
-    "text": "*5 Sekunden. 10 Sekunden. — Kein Wort.*"
-  },
-  "lunch_yuna_6": {
-    "name": "{name}",
-    "text": "...Darf ich bleiben?"
-  },
-  "lunch_yuna_7": {
-    "name": "Yuna",
-    "text": "*ohne vom Buch aufzublicken* ...Wenn du leise bist."
-  },
-  "lunch_yuna_8": {
-    "name": "Ich",
-    "text": "*Ist das eine Erlaubnis? Scheint eine Erlaubnis zu sein. — Bedingte Erlaubnis.*"
-  },
-  "lunch_yuna_9": {
-    "name": "Ich",
-    "text": "*Stille breitet sich aus. Yuna liest ihr Buch. Ich habe nichts zu tun, also schaue ich mich in den Regalen um.*"
-  },
-  "lunch_yuna_10": {
-    "name": "Ich",
-    "text": "*Seltsame Zeit. In der Mittagspause wortlos in der Bibliothek sitzen — und trotzdem ist es nicht unangenehm. Warum?*"
-  },
-  "lunch_yuna_11": {
-    "name": "Ich",
-    "text": "*Ich greife ein beliebiges Buch aus dem Regal und schlage es auf.*"
-  },
-  "lunch_yuna_12": {
-    "name": "Yuna",
-    "text": "*schielt herüber* ...Das ist Band 3."
-  },
-  "lunch_yuna_13": {
-    "name": "{name}",
-    "text": "Hm?"
-  },
-  "lunch_yuna_14": {
-    "name": "Yuna",
-    "text": "Du solltest mit Band 1 anfangen."
-  },
-  "lunch_yuna_15": {
-    "name": "Ich",
-    "text": "*Sie schiebt mir ein Buch hin, das neben ihr lag.*"
-  },
-  "lunch_yuna_16": {
-    "name": "{name}",
-    "text": "Danke."
-  },
-  "lunch_yuna_17": {
-    "name": "Yuna",
-    "text": "...Lies es und bring es zurück."
-  },
-  "lunch_yuna_18": {
-    "name": "Ich",
-    "text": "*Ihre Sätze sind kurz. Aber nicht kalt — eher sparsam. Maximale Bedeutung in minimalen Worten.*"
-  },
-  "lunch_yuna_19": {
-    "name": "Ich",
-    "text": "*Ich lese eine Weile. Ziemlich gut.*"
-  },
-  "lunch_yuna_20": {
-    "name": "Ich",
-    "text": "*Die Glocke läutet.*"
-  },
-  "lunch_yuna_21": {
-    "name": "{name}",
-    "text": "Schon?"
-  },
-  "lunch_yuna_22": {
-    "name": "Yuna",
-    "text": "*schiebt ein Lesezeichen ein* ...Danke, dass du still warst."
-  },
-  "lunch_yuna_23": {
-    "name": "{name}",
-    "text": "Hm?"
-  },
-  "lunch_yuna_24": {
-    "name": "Yuna",
-    "text": "War schön."
-  },
-  "lunch_yuna_25": {
-    "name": "Ich",
-    "text": "*Yuna steht als Erste auf und geht. Sie dreht sich nicht um.*"
-  },
-  "lunch_yuna_26": {
-    "name": "Ich",
-    "text": "*‘War schön.’ — Yunas Sätze sind kurz. Aber diese zwei Worte hallen lange nach.*"
-  },
-  "lunch_end": {
-    "name": "Ich",
-    "text": "*Die Glocke läutet. Die Mittagspause ist vorbei.*"
-  },
-  "lunch_seo_freetalk": {
-    "name": "Seoyeon",
-    "text": "*Neben Seoyeon auf dem Dach sitzend. Die Brise fühlt sich gut an.*",
-    "context": "Mittagessen am ersten Tag, gerade Seoyeons Bento auf dem Dach gegessen. Noch beim Kennenlernen. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-    "personality": "Seoyeon ist die coole Schülersprecherin. Gelassen, schlagfertig und direkt. Zeigt Interesse durch Taten."
-  },
-  "lunch_dain_freetalk": {
-    "name": "Dain",
-    "text": "*Mit Dain auf einer Bank am Schulkiosk sitzend, Brot essend.*",
-    "context": "Mittagessen am ersten Tag, gerade Schere-Stein-Papier mit Dain gespielt. Sie hat verloren. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-    "personality": "Dain ist ein energiegeladener Sporttyp. Liebt Körperkontakt, viele Ausrufezeichen. Außen hart, innen weich."
-  },
-  "lunch_yuna_freetalk": {
-    "name": "Yuna",
-    "text": "*Neben Yuna in der Bibliothek Bücher lesend. Es ist ruhig, aber angenehm.*",
-    "context": "Mittagessen am ersten Tag, gerade Zeit mit Yuna in der Bibliothek verbracht. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-    "personality": "Yuna ist ein mysteriöses Literaturgirl. Kurze, trockene Sätze, aber wenn sie sich öffnet, werden ihre Sätze länger."
-  },
-  "lunch_seo_1_aff_high": {
-    "name": "Seoyeon",
-    "text": "Setz dich hierhin. Was du vorhin auf dem Flur gesagt hast — war ganz witzig."
-  },
-  "lunch_seo_1_aff_default": {
-    "name": "Seoyeon",
-    "text": "...Setzt du dich oder was?"
-  }
+    "lunch_start": {
+        "name": "{name}",
+        "text": "*Mittagspause. Die Glocke läutet.*"
+    },
+    "lunch_start_2": {
+        "name": "{name}",
+        "text": "*Ich verlasse das Klassenzimmer und der Flur ist voller Schüler. Keine Ahnung, wohin. Mensa? Kiosk? Oder—*"
+    },
+    "lunch_start_3": {
+        "name": "{name}",
+        "text": "*Signale kommen aus drei Richtungen gleichzeitig.*"
+    },
+    "lunch_start_4": {
+        "name": "{name}",
+        "text": "*Am Ende des Flurs fängt Seoyeon meinen Blick auf und winkt. Sie deutet Richtung Dach.*"
+    },
+    "lunch_start_5": {
+        "name": "Dain",
+        "text": "Hey! Schon gegessen?! Lass zum Kiosk gehen! Ich kauf dir Brot... der Verlierer zahlt!"
+    },
+    "lunch_start_6": {
+        "name": "{name}",
+        "text": "*Und Yuna schlüpft mit nur ihrer Tasche leise aus dem Klassenzimmer. Richtung Bibliothek.*"
+    },
+    "lunch_start_7": {
+        "name": "{name}",
+        "text": "*Drei Wege. So eine Wahl am ersten Tag treffen müssen.*"
+    },
+    "lunch_start_7b": {
+        "name": "{name}",
+        "text": "*An der alten Schule habe ich nicht gewählt. Genauer gesagt, ich habe die Entscheidung aufgeschoben, bis der Moment vorbei war. — Ach, schon wieder dieser Gedanke. Mein Mund bewegt sich lässig, aber im entscheidenden Augenblick erstarrt er. Dieses Muster. Ich bin echt der Erbärmlichste.*"
+    },
+    "lunch_choice": {
+        "name": "{name}",
+        "text": "*Wem folge ich?*",
+        "choices": [
+            "Seoyeon aufs Dach folgen",
+            "Mit Dain zum Kiosk",
+            "Yuna in die Bibliothek folgen"
+        ]
+    },
+    "lunch_seo_1": {
+        "name": "{name}",
+        "text": "*Seoyeon öffnet die Dachtür mit ihrem Schlüssel. Ein Windstoß fegt herein.*"
+    },
+    "lunch_seo_2": {
+        "name": "{name}",
+        "text": "*Das Dach ist sauber. Ein paar Blumentöpfe und ein Klappstuhl an der Seite. Jemand pflegt das hier.*"
+    },
+    "lunch_seo_3": {
+        "name": "Seoyeon",
+        "text": "Das hier ist mein Revier."
+    },
+    "lunch_seo_4": {
+        "name": "{name}",
+        "text": "Ein Dach nur für die Schülerratsvorsitzende?"
+    },
+    "lunch_seo_5": {
+        "name": "Seoyeon",
+        "text": "Ich bringe nicht jeden hierher.\" *klappt einen Stuhl auf* \"Heute ist eine Ausnahme."
+    },
+    "lunch_seo_6": {
+        "name": "{name}",
+        "text": "Sonderbehandlung am ersten Tag? Klingt verdächtig."
+    },
+    "lunch_seo_7": {
+        "name": "Seoyeon",
+        "text": "Du bist paranoid. Die Luft im Klassenzimmer war einfach stickig, das ist alles."
+    },
+    "lunch_seo_8": {
+        "name": "{name}",
+        "text": "*Seoyeon holt eine Lunchbox aus ihrer Tasche. Ordentlich verpackt für zwei.*"
+    },
+    "lunch_seo_9": {
+        "name": "{name}",
+        "text": "...Das ist für zwei Personen."
+    },
+    "lunch_seo_10": {
+        "name": "Seoyeon",
+        "text": "Dass du aufmerksam bist, hab ich vorhin schon festgestellt."
+    },
+    "lunch_seo_11": {
+        "name": "{name}",
+        "text": "*Sie hatte von Anfang an vor, zusammen zu essen. — Aber sie würde es nie so sagen.*"
+    },
+    "lunch_seo_12": {
+        "name": "{name}",
+        "text": "*Sie öffnet die Lunchbox. Sorgfältig zubereitete Beilagen. Eierolle, Würstchen, Mini-Reisbällchen.*"
+    },
+    "lunch_seo_13": {
+        "name": "{name}",
+        "text": "Hast du das selbst gemacht?"
+    },
+    "lunch_seo_14": {
+        "name": "Seoyeon",
+        "text": "Eine Schülerratsvorsitzende muss in allem gut sein."
+    },
+    "lunch_seo_15": {
+        "name": "{name}",
+        "text": "Das ist keine richtige Antwort."
+    },
+    "lunch_seo_16": {
+        "name": "Seoyeon",
+        "text": "*reicht Stäbchen* Iss. Kalt schmeckt es nicht."
+    },
+    "lunch_seo_17": {
+        "name": "{name}",
+        "text": "*Sie weicht Fragen geschickt aus. Ob geübt oder angeboren.*"
+    },
+    "lunch_seo_18": {
+        "name": "{name}",
+        "text": "*Wir essen eine Weile. Die Brise ist angenehm. Das Schulgelände vom Dach aus — weiter als erwartet.*"
+    },
+    "lunch_seo_19": {
+        "name": "Seoyeon",
+        "text": "Und, wie findest du die Schule?"
+    },
+    "lunch_seo_20": {
+        "name": "{name}",
+        "text": "Das Essen ist gut."
+    },
+    "lunch_seo_21": {
+        "name": "Seoyeon",
+        "text": "*schmunzelt* Ich frage nach der Schule, und du antwortest übers Essen."
+    },
+    "lunch_seo_22": {
+        "name": "{name}",
+        "text": "*Seoyeon nimmt ein Stück Eierolle und hält es mir hin.*"
+    },
+    "lunch_seo_23": {
+        "name": "Seoyeon",
+        "text": "Nur einen Bissen."
+    },
+    "lunch_seo_choice": {
+        "name": "{name}",
+        "text": "*Seoyeon hält mir die Eierolle hin.*",
+        "choices": [
+            "Annehmen",
+            "Würde besser schmecken, wenn du sie selbst isst"
+        ]
+    },
+    "lunch_seo_c1_1": {
+        "name": "{name}",
+        "text": "*Ich nehme die Eierolle von Seoyeons Stäbchen.*"
+    },
+    "lunch_seo_c1_2": {
+        "name": "{name}",
+        "text": "...Lecker."
+    },
+    "lunch_seo_c1_3": {
+        "name": "Seoyeon",
+        "text": "...Natürlich."
+    },
+    "lunch_seo_c1_4": {
+        "name": "{name}",
+        "text": "*Seoyeon räuspert sich und wendet unauffällig den Blick ab. Ihre Finger berühren ihren Nacken — die Geste wirkt ein wenig unbeholfen.*"
+    },
+    "lunch_seo_c2_1": {
+        "name": "{name}",
+        "text": "*Seoyeon steckt sich die Eierolle selbst in den Mund. Kaut langsam.*"
+    },
+    "lunch_seo_c2_2": {
+        "name": "Seoyeon",
+        "text": "Stimmt. Schmeckt gut."
+    },
+    "lunch_seo_c2_3": {
+        "name": "{name}",
+        "text": "*Sie tut gelässen, aber sie scheint leicht eingeschnappt zu sein.*"
+    },
+    "lunch_seo_after": {
+        "name": "{name}",
+        "text": "*Das Mittagessen neigt sich dem Ende zu.*"
+    },
+    "lunch_seo_after_2": {
+        "name": "Seoyeon",
+        "text": "Willst du nächstes Mal wiederkommen?"
+    },
+    "lunch_seo_after_3": {
+        "name": "{name}",
+        "text": "Ist das eine Einladung?"
+    },
+    "lunch_seo_after_4": {
+        "name": "Seoyeon",
+        "text": "Nein. Eine Genehmigung."
+    },
+    "lunch_seo_after_5": {
+        "name": "{name}",
+        "text": "*Typisch Seoyeon. Keine Einladung, eine Genehmigung. — Aber warum lächelt sie?*"
+    },
+    "lunch_seo_after_6": {
+        "name": "{name}",
+        "text": "*Seoyeon räumt die Lunchbox weg und streicht sich mit dem kleinen Finger die Haare zurück. Eine unbewusste Angewohnheit, wie es scheint.*"
+    },
+    "lunch_seo_after_7": {
+        "name": "{name}",
+        "text": "*Der kleine Finger. — Ein winziges Detail, aber es bleibt hängen.*"
+    },
+    "lunch_dain_1": {
+        "name": "Dain",
+        "text": "Oh! Du bist da! Hab dich bei der Vorstellung gesehen! Lass uns zusammen essen!"
+    },
+    "lunch_dain_2": {
+        "name": "Dain",
+        "text": "Los geht’s! Was willst du?! Mein Tipp: Streuselbrot und Erdbeermilch!"
+    },
+    "lunch_dain_3": {
+        "name": "{name}",
+        "text": "Aber du hast gesagt, der Verlierer zahlt. Was machen wir?"
+    },
+    "lunch_dain_4": {
+        "name": "Dain",
+        "text": "Schere-Stein-Papier! Logisch!"
+    },
+    "lunch_dain_5": {
+        "name": "{name}",
+        "text": "Gar nicht logisch."
+    },
+    "lunch_dain_6": {
+        "name": "Dain",
+        "text": "Spielst du nicht mit?! Dann zahlst du!"
+    },
+    "lunch_dain_7": {
+        "name": "{name}",
+        "text": "...Na gut, los."
+    },
+    "lunch_dain_8": {
+        "name": "{name}",
+        "text": "*Schere-Stein-Papier.*"
+    },
+    "lunch_dain_9": {
+        "name": "Dain",
+        "text": "Schere— Stein— Papier!"
+    },
+    "lunch_dain_10": {
+        "name": "{name}",
+        "text": "*Schere, Stein, Papier. — Dain hat verloren.*"
+    },
+    "lunch_dain_11": {
+        "name": "Dain",
+        "text": "...Häh?! Verloren?! Nochmal!!"
+    },
+    "lunch_dain_12": {
+        "name": "{name}",
+        "text": "Versprochen ist versprochen."
+    },
+    "lunch_dain_13": {
+        "name": "Dain",
+        "text": "Ach, okay! Ich kauf, ich kauf! Frau Verkäuferin, zwei Streuselbrote bitte!"
+    },
+    "lunch_dain_14": {
+        "name": "{name}",
+        "text": "*Dain meckert beim Brotkauf. Aber ihre Mundwinkel zeigen nach oben.*"
+    },
+    "lunch_dain_15": {
+        "name": "{name}",
+        "text": "*Wir setzen uns auf eine Bank beim Kiosk und essen unser Brot.*"
+    },
+    "lunch_dain_16": {
+        "name": "Dain",
+        "text": "*beißt ins Brot* Hey, machst du echt keinen Sport?"
+    },
+    "lunch_dain_17": {
+        "name": "{name}",
+        "text": "Wieso, machst du dir Sorgen um meine Ausdauer?"
+    },
+    "lunch_dain_18": {
+        "name": "Dain",
+        "text": "Nein, aber um mit mir mitzuhalten, brauchst du schon etwas Ausdauer! Haha"
+    },
+    "lunch_dain_19": {
+        "name": "{name}",
+        "text": "Klang wie eine Selbstanpreisung."
+    },
+    "lunch_dain_20": {
+        "name": "Dain",
+        "text": "Was?! Was ist ein PR?!"
+    },
+    "lunch_dain_21": {
+        "name": "{name}",
+        "text": "Personal Record. Ein Sportbegriff."
+    },
+    "lunch_dain_22": {
+        "name": "{name}",
+        "text": "*Dains Augen leuchten auf.*"
+    },
+    "lunch_dain_23": {
+        "name": "Dain",
+        "text": "Oh, du kennst das?! Du kennst dich doch mit Sport aus?!"
+    },
+    "lunch_dain_choice": {
+        "name": "{name}",
+        "text": "*Dain starrt mich mit erwartungsvollen Augen an.*",
+        "choices": [
+            "Ein bisschen. Würdest du es mir beibringen?",
+            "Hab nur so getan."
+        ]
+    },
+    "lunch_dain_c1_1": {
+        "name": "Dain",
+        "text": "Haha super!! Ich bring dir alles bei! Turnhalle nach der Schule, Deal?!"
+    },
+    "lunch_dain_c1_2": {
+        "name": "{name}",
+        "text": "*Ihre Augen werden zu Halbmonden. So sieht sie also aus, wenn sie lächelt. — Ein Detail, das mir entgangen wäre, wenn ich nicht hingesehen hätte.*"
+    },
+    "lunch_dain_c2_1": {
+        "name": "Dain",
+        "text": "Ach komm, es interessiert dich doch! Komm nach der Schule in die Turnhalle! Du wirst es nicht bereuen!"
+    },
+    "lunch_dain_after": {
+        "name": "{name}",
+        "text": "*Wir essen das Brot auf und stehen auf.*"
+    },
+    "lunch_dain_after_2": {
+        "name": "Dain",
+        "text": "Hey, {name}!"
+    },
+    "lunch_dain_after_3": {
+        "name": "{name}",
+        "text": "Ja?"
+    },
+    "lunch_dain_after_4": {
+        "name": "Dain",
+        "text": "Ich bin die Erste, mit der du an deiner neuen Schule gegessen hast! Merk dir das!"
+    },
+    "lunch_dain_after_5": {
+        "name": "{name}",
+        "text": "*Sie grinst und boxt mich leicht auf die Schulter.*"
+    },
+    "lunch_dain_after_6": {
+        "name": "{name}",
+        "text": "*Ich weiß nicht, warum ich mir das merken soll, aber sie hat es so ernst gesagt, dass ich genickt habe.*"
+    },
+    "lunch_yuna_1": {
+        "name": "{name}",
+        "text": "*Ich folge Yuna in die Bibliothek. Fast niemand kommt während der Mittagspause hierher.*"
+    },
+    "lunch_yuna_2": {
+        "name": "{name}",
+        "text": "*Yuna setzt sich in eine Ecke des Lesesaals. Öffnet ein Buch. Ich bin mir nicht sicher, ob sie weiß, dass ich ihr gefolgt bin.*"
+    },
+    "lunch_yuna_3": {
+        "name": "{name}",
+        "text": "*Ich setze mich vorsichtig ihr gegenüber.*"
+    },
+    "lunch_yuna_4": {
+        "name": "Yuna",
+        "text": "......"
+    },
+    "lunch_yuna_5": {
+        "name": "{name}",
+        "text": "*5 Sekunden. 10 Sekunden. — Kein Wort.*"
+    },
+    "lunch_yuna_6": {
+        "name": "{name}",
+        "text": "...Darf ich bleiben?"
+    },
+    "lunch_yuna_7": {
+        "name": "Yuna",
+        "text": "*ohne vom Buch aufzublicken* ...Wenn du leise bist."
+    },
+    "lunch_yuna_8": {
+        "name": "{name}",
+        "text": "*Ist das eine Erlaubnis? Scheint eine Erlaubnis zu sein. — Bedingte Erlaubnis.*"
+    },
+    "lunch_yuna_9": {
+        "name": "{name}",
+        "text": "*Stille breitet sich aus. Yuna liest ihr Buch. Ich habe nichts zu tun, also schaue ich mich in den Regalen um.*"
+    },
+    "lunch_yuna_10": {
+        "name": "{name}",
+        "text": "*Seltsame Zeit. In der Mittagspause wortlos in der Bibliothek sitzen — und trotzdem ist es nicht unangenehm. Warum?*"
+    },
+    "lunch_yuna_11": {
+        "name": "{name}",
+        "text": "*Ich greife ein beliebiges Buch aus dem Regal und schlage es auf.*"
+    },
+    "lunch_yuna_12": {
+        "name": "Yuna",
+        "text": "*schielt herüber* ...Das ist Band 3."
+    },
+    "lunch_yuna_13": {
+        "name": "{name}",
+        "text": "Hm?"
+    },
+    "lunch_yuna_14": {
+        "name": "Yuna",
+        "text": "Du solltest mit Band 1 anfangen."
+    },
+    "lunch_yuna_15": {
+        "name": "{name}",
+        "text": "*Sie schiebt mir ein Buch hin, das neben ihr lag.*"
+    },
+    "lunch_yuna_16": {
+        "name": "{name}",
+        "text": "Danke."
+    },
+    "lunch_yuna_17": {
+        "name": "Yuna",
+        "text": "...Lies es und bring es zurück."
+    },
+    "lunch_yuna_18": {
+        "name": "{name}",
+        "text": "*Ihre Sätze sind kurz. Aber nicht kalt — eher sparsam. Maximale Bedeutung in minimalen Worten.*"
+    },
+    "lunch_yuna_19": {
+        "name": "{name}",
+        "text": "*Ich lese eine Weile. Ziemlich gut.*"
+    },
+    "lunch_yuna_20": {
+        "name": "{name}",
+        "text": "*Die Glocke läutet.*"
+    },
+    "lunch_yuna_21": {
+        "name": "{name}",
+        "text": "Schon?"
+    },
+    "lunch_yuna_22": {
+        "name": "Yuna",
+        "text": "*schiebt ein Lesezeichen ein* ...Danke, dass du still warst."
+    },
+    "lunch_yuna_23": {
+        "name": "{name}",
+        "text": "Hm?"
+    },
+    "lunch_yuna_24": {
+        "name": "Yuna",
+        "text": "War schön."
+    },
+    "lunch_yuna_25": {
+        "name": "{name}",
+        "text": "*Yuna steht als Erste auf und geht. Sie dreht sich nicht um.*"
+    },
+    "lunch_yuna_26": {
+        "name": "{name}",
+        "text": "*‘War schön.’ — Yunas Sätze sind kurz. Aber diese zwei Worte hallen lange nach.*"
+    },
+    "lunch_end": {
+        "name": "{name}",
+        "text": "*Die Glocke läutet. Die Mittagspause ist vorbei.*"
+    },
+    "lunch_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Neben Seoyeon auf dem Dach sitzend. Die Brise fühlt sich gut an.*",
+        "context": "Mittagessen am ersten Tag, gerade Seoyeons Bento auf dem Dach gegessen. Noch beim Kennenlernen. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
+        "personality": "Seoyeon ist die coole Schülersprecherin. Gelassen, schlagfertig und direkt. Zeigt Interesse durch Taten."
+    },
+    "lunch_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Mit Dain auf einer Bank am Schulkiosk sitzend, Brot essend.*",
+        "context": "Mittagessen am ersten Tag, gerade Schere-Stein-Papier mit Dain gespielt. Sie hat verloren. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
+        "personality": "Dain ist ein energiegeladener Sporttyp. Liebt Körperkontakt, viele Ausrufezeichen. Außen hart, innen weich."
+    },
+    "lunch_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Neben Yuna in der Bibliothek Bücher lesend. Es ist ruhig, aber angenehm.*",
+        "context": "Mittagessen am ersten Tag, gerade Zeit mit Yuna in der Bibliothek verbracht. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
+        "personality": "Yuna ist ein mysteriöses Literaturgirl. Kurze, trockene Sätze, aber wenn sie sich öffnet, werden ihre Sätze länger."
+    },
+    "lunch_seo_1_aff_high": {
+        "name": "Seoyeon",
+        "text": "Setz dich hierhin. Was du vorhin auf dem Flur gesagt hast — war ganz witzig."
+    },
+    "lunch_seo_1_aff_default": {
+        "name": "Seoyeon",
+        "text": "...Setzt du dich oder was?"
+    }
 }

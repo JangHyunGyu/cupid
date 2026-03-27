@@ -1,14 +1,14 @@
 {
     "night_start": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*De retour dans ma chambre. Allongé sur le lit.*"
     },
     "night_start_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Pour un premier jour — je suis vidé. Mais c’est pas mal.*"
     },
     "night_start_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Mon téléphone sonne. La messagerie du lycée.*"
     },
     "night_msg_seo_1": {
@@ -16,7 +16,7 @@
         "text": "*C’était comment le toit aujourd’hui ?*"
     },
     "night_msg_seo_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*La brise était agréable*"
     },
     "night_msg_seo_3": {
@@ -28,7 +28,7 @@
         "text": "*...C’est offert*"
     },
     "night_msg_seo_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle a envoyé ‘C’est offert’ dans un message séparé exprès. — C’est calculé, ou sincère ?*"
     },
     "night_msg_yuna_1": {
@@ -40,7 +40,7 @@
         "text": "*Demain aussi je te garderai ta place*"
     },
     "night_msg_yuna_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Court. Mais ‘je te garderai ta place’ — pour elle, n’est-ce pas l’accueil le plus chaleureux qu’elle puisse offrir ?*"
     },
     "night_msg_dain_1": {
@@ -56,19 +56,19 @@
         "text": "*J’ai encore mal pour le prix du pain franchement mdrrr*"
     },
     "night_msg_dain_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Trois messages d’affilée. Elle peut pas respirer entre les textos ?*"
     },
     "night_late_transition": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’allais m’endormir quand — mon téléphone sonne encore une fois.*"
     },
     "night_late_transition_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*23 heures. Qui c’est ?*"
     },
     "night_late_branch": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*L’écran s’allume.*"
     },
     "night_seo_late_1": {
@@ -80,7 +80,7 @@
         "text": "*— Si tu ne viens pas, je viendrai te chercher*"
     },
     "night_seo_late_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Impossible de savoir si « je viendrai te chercher » est une blague. — Cette personne n’a aucune limite.*"
     },
     "night_yuna_late_1": {
@@ -96,7 +96,7 @@
         "text": "*— J’hésite à répondre, et l’écran s’éteint.*"
     },
     "night_yuna_late_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*C’est elle qui m’a ignoré, ou c’est moi ? — Tout est flou avec cette personne.*"
     },
     "night_dain_late_1": {
@@ -112,23 +112,23 @@
         "text": "*Refuser n’est pas une option mdr*"
     },
     "night_dain_late_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Cette personne ne comprend pas le concept de ‘non’ ?*"
     },
     "night_end_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai posé mon téléphone.*"
     },
     "night_end_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je fixe le plafond. L’odeur des cerisiers persiste encore sur mon uniforme.*"
     },
     "night_end_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Pas un mauvais premier jour.*"
     },
     "night_end_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Demain — ça pourrait être encore plus intéressant.*"
     },
     "night_seo_freetalk": {
@@ -150,23 +150,23 @@
         "personality": "Yuna est une fille littéraire. Ses messages sont courts et cryptiques."
     },
     "night_hidden_check": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Entre les notifications — j'en remarque d'autres.*"
     },
     "night_hidden_homeroom_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Classe 3-2 : Apportez vos affaires de maths pour la 1re heure demain. — Et {name}, si tu t'adaptes bien, c'est l'essentiel.'*"
     },
     "night_hidden_homeroom_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Un message personnel dans une annonce de classe ? — Elle ne fait pas la différence entre pro et perso, ou elle le fait exprès ?*"
     },
     "night_hidden_nurse_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Une alerte sur l'appli santé de l'école. 'Dossier infirmerie : {name} — Vertiges (légers). Note : Reviens si les symptômes persistent. Bois beaucoup d'eau. — le ♥ est un intérêt purement médical ^^'*"
     },
     "night_hidden_nurse_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Une infirmière qui met des cœurs dans les dossiers médicaux. C'est la première fois que je vois des émojis dans un dossier de santé.*"
     }
 }

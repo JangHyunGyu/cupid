@@ -1,14 +1,14 @@
 {
     "night_start": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*De vuelta en mi cuarto. Acostado en la cama.*"
     },
     "night_start_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Para ser el primer día — estoy agotado. Pero no está mal.*"
     },
     "night_start_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*El teléfono suena. El mensajero de la escuela.*"
     },
     "night_msg_seo_1": {
@@ -16,7 +16,7 @@
         "text": "*¿Qué tal la azotea hoy?*"
     },
     "night_msg_seo_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La brisa estuvo agradable*"
     },
     "night_msg_seo_3": {
@@ -28,7 +28,7 @@
         "text": "*...Cortesía de la casa*"
     },
     "night_msg_seo_5": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Envió 'Cortesía de la casa' como mensaje aparte a propósito. — ¿Es cálculo o sinceridad?*"
     },
     "night_msg_yuna_1": {
@@ -40,7 +40,7 @@
         "text": "*Mañana te guardaré el asiento*"
     },
     "night_msg_yuna_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Corto. Pero 'te guardaré el asiento' — para ella, ¿no es esa la bienvenida más cálida que puede dar?*"
     },
     "night_msg_dain_1": {
@@ -56,19 +56,19 @@
         "text": "*Aún me duele lo del pan la verdad jajaja*"
     },
     "night_msg_dain_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Tres mensajes seguidos. ¿No puede respirar entre textos?*"
     },
     "night_late_transition": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Estaba a punto de dormirme cuando — el teléfono suena una vez más.*"
     },
     "night_late_transition_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*11 de la noche. ¿Quién será?*"
     },
     "night_late_branch": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*La pantalla se ilumina.*"
     },
     "night_seo_late_1": {
@@ -80,7 +80,7 @@
         "text": "*— Si no vienes, iré a buscarte*"
     },
     "night_seo_late_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*No sé si lo de 'iré a buscarte' es broma o va en serio. — Esta persona no tiene límites.*"
     },
     "night_yuna_late_1": {
@@ -96,7 +96,7 @@
         "text": "*— Dudo si responder, y la pantalla se apaga.*"
     },
     "night_yuna_late_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*¿Me dejó en visto o fui yo quien la dejó en visto? — Todo con esta persona es ambiguo.*"
     },
     "night_dain_late_1": {
@@ -112,23 +112,23 @@
         "text": "*No se aceptan negativas jaja*"
     },
     "night_dain_late_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*¿Esta persona no entiende el concepto de 'no'?*"
     },
     "night_end_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Dejé el teléfono.*"
     },
     "night_end_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Miro el techo. El aroma de los cerezos aún permanece en mi uniforme.*"
     },
     "night_end_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*No fue un mal primer día.*"
     },
     "night_end_4": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Mañana — puede que sea aún más interesante.*"
     },
     "night_seo_freetalk": {
@@ -150,23 +150,23 @@
         "personality": "Yuna es una chica literaria. Sus mensajes son cortos y crípticos."
     },
     "night_hidden_check": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Entre las notificaciones — veo algo más.*"
     },
     "night_hidden_homeroom_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Hay un aviso de la profesora en la app del colegio. 'Aviso clase 3-2: Traigan materiales de matemáticas para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso basta.'*"
     },
     "night_hidden_homeroom_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*¿Un mensaje personal en un aviso de clase? — Esta mujer no distingue lo profesional de lo personal, o lo hace a propósito.*"
     },
     "night_hidden_nurse_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Hay una alerta en la app de salud del colegio. 'Registro enfermería: {name} — Mareo (leve). Nota: Vuelve si continúan los síntomas. Bebe mucha agua. — el ♥ es interés médico ^^'*"
     },
     "night_hidden_nurse_2": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Una enfermera que pone corazones en los registros médicos. Nunca había visto a alguien usar emojis en fichas de salud.*"
     }
 }

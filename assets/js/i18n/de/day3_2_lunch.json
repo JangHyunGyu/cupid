@@ -1,10 +1,10 @@
 {
     "lunch3_start": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Mittagspause. Heute sind ungewöhnlicherweise — alle drei an einem Tisch versammelt.*"
     },
     "lunch3_start_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*{name} öffnet seine Lunchbox. Seoyeon setzt sich selbstverständlich daneben, Dain lässt sich gegenüber fallen, und Yuna schleicht sich aus der Ecke heran, während sie ihr Brot isst.*"
     },
     "lunch3_meal_1": {
@@ -12,7 +12,7 @@
         "text": "Oh! Lecker!!"
     },
     "lunch3_meal_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Das war meins..."
     },
     "lunch3_meal_3": {
@@ -20,7 +20,7 @@
         "text": "Das Omelett ist etwas zu salzig. 6 Punkte."
     },
     "lunch3_meal_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Hör auf, Noten zu vergeben."
     },
     "lunch3_meal_5": {
@@ -28,11 +28,11 @@
         "text": "Von 10. Das ist doch nicht schlecht, oder?"
     },
     "lunch3_meal_6": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Yuna streckt wortlos ihre Stäbchen aus und schnappt sich das leckerste Würstchen.*"
     },
     "lunch3_meal_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "...Yuna, das war mein Lieblingsstück."
     },
     "lunch3_meal_8": {
@@ -40,19 +40,19 @@
         "text": "...Lecker."
     },
     "lunch3_meal_9": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ausgeraubt. Von allen dreien gleichzeitig.*"
     },
     "lunch3_meal_10": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Eine Beilage ist noch übrig. Das letzte Omelett.*"
     },
     "lunch3_meal_11": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Wem gebe ich es?*"
     },
     "lunch3_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich überlege, wem ich den letzten Bissen gebe.*",
         "choices": [
             "Seoyeon geben",
@@ -98,7 +98,7 @@
         "text": "Was?! Und ich?!"
     },
     "lunch3_expose_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*In dem Moment, als ich Teilen wir es alle zusammen sagte — sprach Dain zuerst.*"
     },
     "lunch3_expose_2": {
@@ -106,11 +106,11 @@
         "text": "Ach stimmt! {name}, wir wollten doch am Wochenende in die Spielhalle!! Was essen wir vorher?!"
     },
     "lunch3_expose_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*— Ich erstarrte.*"
     },
     "lunch3_expose_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeons Stäbchen stoppen. Yunas Hand, die das Brot zerreißt, stoppt.*"
     },
     "lunch3_expose_5": {
@@ -126,7 +126,7 @@
         "text": "...Moment. Mir hast du auch vorgeschlagen, am Wochenende was zusammen zu machen?"
     },
     "lunch3_expose_8": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Yuna legt das Brot auf den Tisch.*"
     },
     "lunch3_expose_9": {
@@ -134,7 +134,7 @@
         "text": "Ich wusste es."
     },
     "lunch3_expose_10": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Einen Moment Stille.*"
     },
     "lunch3_expose_11": {
@@ -142,11 +142,11 @@
         "text": "...Gelögen. Ich wusste es auch nicht."
     },
     "lunch3_expose_12": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Drei Paar Stäbchen erstarren. Der Lärm der Mensa klingt plötzlich weit weg.*"
     },
     "lunch3_expose_13": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Am Nebentisch beobachtet Minsu mich. Er schüttelt den Kopf.*"
     },
     "lunch3_expose_14": {
@@ -154,11 +154,11 @@
         "text": "...Alter. Spinnst du?"
     },
     "lunch3_expose_15": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich kann nichts sagen. Minsu hat recht.*"
     },
     "lunch3_expose_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Was soll ich sagen...*",
         "choices": [
             "Es tut mir leid. Ihr seid alle so toll, dass ich nicht ablehnen konnte.",
@@ -167,7 +167,7 @@
         ]
     },
     "lunch3_expose_honest_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Es tut mir leid. Ihr seid alle so toll, dass ich nicht ablehnen konnte."
     },
     "lunch3_expose_honest_2": {
@@ -179,7 +179,7 @@
         "text": "Die Freundlichkeit, nicht ablehnen zu können — gibt falsche Hoffnung."
     },
     "lunch3_expose_honest_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon schließt den Deckel ihrer Lunchbox.*"
     },
     "lunch3_expose_honest_5": {
@@ -187,15 +187,15 @@
         "text": "Entweder ganz oder gar nicht. — Halbe Sachen sind das Einzige, was ich nicht ausstehen kann."
     },
     "lunch3_expose_honest_6": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon steht vom Tisch auf.*"
     },
     "lunch3_expose_honest_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Keine Ausrufezeichen. — Aus Dains Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
     },
     "lunch3_expose_excuse_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Die Uhrzeiten sind unterschiedlich, also dachte ich, es wäre okay..."
     },
     "lunch3_expose_excuse_2": {
@@ -207,28 +207,28 @@
         "text": "Gib mir etwas Zeit zum Nachdenken."
     },
     "lunch3_expose_excuse_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Keine Ausrufezeichen. — Aus Dains Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
     },
     "lunch3_expose_run_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich bin geflohen. Aus dem Klassenzimmer. — Die feigste Wahl.*"
     },
     "lunch3_expose_run_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Hinter mir bohrt sich die Stille der drei in meinen Rücken.*"
     },
     "lunch3_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Mittagspause ist vorbei.*"
     },
     "lunch3_share_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ich schlug vor, alles zu teilen. Etwas unbeholfen, aber nicht schlecht. Alle drei lächeln. Ob echt oder gespielt, kann ich nicht sagen.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Beim Essen bleibt ein Reiskorn an meiner Lippe. Seoyeon greift hinüber und nimmt es ab.*"
     },
     "lunch3_seo_skin_2": {
@@ -236,15 +236,15 @@
         "text": "...Achte mehr auf dich, wenn andere dabei sind."
     },
     "lunch3_seo_skin_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Nachdem Seoyeon ihre Hand zurückzieht, lässt sie ihre Stäbchen fallen. — Es sah natürlich aus, aber ihre Fingerspitzen zitterten leicht.*"
     },
     "lunch3_seo_witness_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain bleibt an der Klassentür stehen. Sie sieht Seoyeon die Lunchbox annehmen. \"...Oh.\" Sie dreht um.*"
     },
     "lunch3_seo_witness_choice": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dains Rücken verschwindet im Flur.*",
         "choices": [
             "Dain!",
@@ -252,7 +252,7 @@
         ]
     },
     "lunch3_seo_chase_dain_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Seoyeon stellt die Lunchbox ab. Ihr Gesicht ist ausdruckslos.*"
     },
     "lunch3_seo_chase_dain_2": {
@@ -260,7 +260,7 @@
         "text": "...Was."
     },
     "lunch3_seo_focus_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dains Schritte verhallen im Flur.*"
     },
     "lunch3_seo_focus_2": {
@@ -269,11 +269,11 @@
     },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain gewinnt die Mittagswette und breitet aufgeregt die Arme aus. Sie umarmt mich. Eine Sekunde.*"
     },
     "lunch3_dain_skin_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Dain springt zurück. Ihre Ohren sind rot.*"
     },
     "lunch3_dain_skin_3": {
@@ -281,16 +281,16 @@
         "text": "Das zählt nicht!!"
     },
     "lunch3_dain_witness_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Yuna geht den Flur entlang und blickt in die Turnhalle. Dain lacht. Yuna beschleunigt ihre Schritte.*"
     },
     "lunch3_dain_witness_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*In der nächsten Pause ist Yunas Platz leer.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Beim Übergeben eines Zettels ergreift Yuna meine Hand. Sie lässt nicht los.*"
     },
     "lunch3_yuna_skin_2": {
@@ -298,7 +298,7 @@
         "text": "...Das hat nichts mit dem Zettel zu tun. Einfach."
     },
     "lunch3_yuna_skin_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Erst nach dem Satzende lässt sie los.*"
     },
     "lunch3_yuna_witness_1": {
@@ -306,7 +306,7 @@
         "text": "In der Bibliothek hat es nach Bento gerochen. ...Mit Yuna?"
     },
     "lunch3_yuna_witness_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Ihr Gesicht ist ausdruckslos. Das macht es noch beängstigender.*"
     },
     "lunch3_seo_chase_dain_2b": {

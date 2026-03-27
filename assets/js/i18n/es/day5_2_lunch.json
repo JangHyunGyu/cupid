@@ -1,6 +1,6 @@
 {
     "tour_seo_1": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*Nos quedamos de pie, uno al lado del otro, frente a la puerta de la escuela. El mismo lugar donde Seoyeon esperaba el primer día.*"
     },
     "tour_seo_2": {
@@ -8,7 +8,7 @@
         "text": "Aquí fue donde nos conocimos."
     },
     "tour_seo_3": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "Aquella vez casi me regañas por decir 'es demasiado para mí'."
     },
     "tour_seo_4": {
@@ -16,7 +16,7 @@
         "text": "No te regañé, ¿verdad? — Me gustaste desde ese momento."
     },
     "tour_seo_5": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "¿Desde el primer día?"
     },
     "tour_seo_6": {
@@ -24,7 +24,7 @@
         "text": "...Puede que fuera una ilusión del viento."
     },
     "tour_seo_7": {
-        "name": "Yo",
+        "name": "{name}",
         "text": "*No sopla el viento.*"
     },
     "tour_seo_8": {

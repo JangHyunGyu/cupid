@@ -1,38 +1,38 @@
 {
     "after_start": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Après les cours. Je décide de faire le tour du campus. Je ne connais pas encore bien les lieux.*"
     },
     "after_start_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je marche dans le couloir. Mon téléphone vibre. — Le groupe de discussion de mon ancien lycée.*"
     },
     "after_kakao_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*‘Sojeong a posté des photos de cerisiers avec son copain mdr’*"
     },
     "after_kakao_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J’ai rangé mon téléphone dans ma poche.*"
     },
     "after_kakao_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*...Ah.*"
     },
     "after_kakao_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Ça va. Vraiment. C’est du passé. Je ne me suis même pas déclaré et tout s’est terminé. Ce n’est pas de la nostalgie — c’est du regret. — Et si j’avais parlé à ce moment-là ? Même si j’avais été rejeté, au moins je n’aurais pas ce malaise.*"
     },
     "after_kakao_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Dans ce lycée — je dirai ce que j’ai à dire. Cette fois.*"
     },
     "after_kakao_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je ressors mon téléphone et je quitte le groupe. Terminé. — Maintenant, j’appartiens à ce lycée.*"
     },
     "after_miss_dain_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je marche dans le couloir quand j’entends des pas lourds derrière moi.*"
     },
     "after_miss_dain_2": {
@@ -40,7 +40,7 @@
         "text": "Attention !!"
     },
     "after_miss_dain_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je m’écarte par réflexe. Dain passe en trombe à côté de moi. Elle court puis freine d’un coup.*"
     },
     "after_miss_dain_4": {
@@ -48,7 +48,7 @@
         "text": "Oh ! Bons réflexes !"
     },
     "after_miss_dain_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Pourquoi tu sprintes dans le couloir ?"
     },
     "after_miss_dain_6": {
@@ -56,15 +56,15 @@
         "text": "Je suis en retard ! Faut que j’aille au gymnase ! — Ah, à demain ! Le nouveau !"
     },
     "after_miss_dain_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle fait un signe de la main et file en courant. Une vraie tornade. On ne s’est même pas présentés et elle me tutoie déjà.*"
     },
     "after_miss_yuna_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*En passant devant la bibliothèque, j'aperçois une fille aux yeux rouges qui marche en lisant un livre. Les tatouages sur ses bras attirent le regard — mais sa façon de tenir le livre est étonnamment calme.*"
     },
     "after_miss_yuna_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*— Un marque-page tombe.* «Hé, c’est...»"
     },
     "after_miss_yuna_3": {
@@ -72,11 +72,11 @@
         "text": "......Merci."
     },
     "after_miss_yuna_4": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Et elle continue de marcher. C’est tout. Pourtant — quelque chose chez elle reste gravé dans mon esprit.*"
     },
     "after_miss_seoyeon_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*En partant, je croise Seoyeon dans le couloir.*"
     },
     "after_miss_seoyeon_2": {
@@ -84,7 +84,7 @@
         "text": "T’étais où tout à l’heure ?"
     },
     "after_miss_seoyeon_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Tout à l’heure ?"
     },
     "after_miss_seoyeon_4": {
@@ -92,7 +92,7 @@
         "text": "Le déjeuner. J’avais laissé le toit ouvert. Me faire attendre — audacieux pour un nouvel élève."
     },
     "after_miss_seoyeon_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Tu as attendu ?"
     },
     "after_miss_seoyeon_6": {
@@ -100,7 +100,7 @@
         "text": "...Je suis montée prendre l’air et la porte était ouverte, c’est tout."
     },
     "after_miss_seoyeon_7": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle a clairement attendu. — Je me sens un peu coupable, et étrangement, un peu amusé.*"
     },
     "after_miss_seoyeon_8": {
@@ -108,7 +108,7 @@
         "text": "Demain, ne te sauve pas."
     },
     "after_end": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle s’éloigne avec un sourire.*",
         "choices": [
             "Bureau",
@@ -117,7 +117,7 @@
         ]
     },
     "after_hidden_homeroom_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je m'apprête à rentrer quand — une voix derrière moi.*"
     },
     "after_hidden_homeroom_2": {
@@ -125,7 +125,7 @@
         "text": "{name}. Reste une seconde."
     },
     "after_hidden_homeroom_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*C'est la prof principale. Son cardigan est encore plus froissé qu'avant. On dirait qu'elle a eu une rude journée.*"
     },
     "after_hidden_homeroom_4": {
@@ -133,7 +133,7 @@
         "text": "T'as rien fait de mal. — Comme t'es nouveau, je voulais savoir. Tu t'adaptes ?"
     },
     "after_hidden_homeroom_choice": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Ça ressemble à une question de routine, mais ses yeux m'observent vraiment.*",
         "choices": [
             "Ça va. C'est une bonne école.",
@@ -145,7 +145,7 @@
         "text": "Tant mieux. — Si t'as besoin, passe à la salle des profs. C'est mon boulot."
     },
     "after_homeroom_ok_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je la croyais distante, mais elle fait attention en fait. — Ou c'est juste son travail.*"
     },
     "after_homeroom_honest_1": {
@@ -153,7 +153,7 @@
         "text": "Se sentir débordé, c'est normal. Ce serait bizarre d'être zen le premier jour dans une nouvelle école."
     },
     "after_homeroom_honest_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Vous avez déjà changé d'école, monsieur ?"
     },
     "after_homeroom_honest_3": {
@@ -165,7 +165,7 @@
         "text": "Si ça devient dur, viens à la salle des profs. Je peux t'offrir un café — ah, t'es élève. Un jus, alors."
     },
     "after_homeroom_honest_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Un prof qui offre à boire à un élève ?"
     },
     "after_homeroom_honest_6": {
@@ -193,7 +193,7 @@
         "text": "Ah, {name}."
     },
     "after_homeroom_honest_8": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "Oui ?"
     },
     "after_homeroom_honest_9": {
@@ -201,7 +201,7 @@
         "text": "Si tu n'arrives pas à t'adapter, je reviendrai te chercher."
     },
     "after_homeroom_honest_10": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Elle disparaît au bout du couloir. Ses longs cheveux se balancent. — Elle appelle ça de l'intérêt pédagogique, mais ses yeux racontaient autre chose.*"
     },
     "after_homeroom_freetalk": {
@@ -211,15 +211,15 @@
         "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
     },
     "after_hidden_nurse_intro": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*En marchant dans le couloir — un léger vertige. Le stress du premier jour, sûrement.*"
     },
     "after_hidden_nurse_intro_2": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Un panneau \"Infirmerie\" sur le mur. — J'y vais ou pas ?*"
     },
     "after_hidden_nurse_choice": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Depuis ce matin, j'ai pas arrêté de rencontrer des gens.*",
         "choices": [
             "Aller à l'infirmerie",
@@ -227,11 +227,11 @@
         ]
     },
     "after_nurse_skip": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Autant rentrer. C'est sûrement rien.*"
     },
     "after_nurse_enter_1": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant. Des rideaux blancs, un lit, un petit bureau. Une femme est assise au bureau. Blouse blanche, un stéthoscope autour du cou. Un carré lavande soigné, elle m'observe par-dessus ses lunettes, le menton posé sur une main. Elle était en train de lire — elle lève la tête.*"
     },
     "after_nurse_enter_2": {
@@ -239,7 +239,7 @@
         "text": "Oh, un patient."
     },
     "after_nurse_enter_3": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "J'ai un peu le vertige."
     },
     "after_nurse_enter_4": {
@@ -247,7 +247,7 @@
         "text": "C'est le nouveau, non ? Déjà à l'infirmerie le premier jour. Tu dois être stressé~"
     },
     "after_nurse_enter_5": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*L'infirmière s'approche. Sa main se pose sur mon front.*"
     },
     "after_nurse_enter_6": {
@@ -279,7 +279,7 @@
         "text": "Pas besoin de me vouvoyer ici. À l'infirmerie, on se détend. — C'est fait pour ça."
     },
     "after_nurse_enter_9": {
-        "name": "Moi",
+        "name": "{name}",
         "text": "*Je bois de l'eau en regardant autour. Un petit pot de fleurs dans le coin.*"
     },
     "after_nurse_enter_10": {

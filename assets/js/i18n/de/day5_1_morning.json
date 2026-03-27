@@ -1,10 +1,10 @@
 {
     "morning5_start": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Tag fünf. Der letzte Tag. Die Uniform fühlt sich bequem an. Vor fünf Tagen war sie steif, jetzt passt sie. — Habe ich mich an diese Schule gewöhnt, oder an diese Menschen?*"
     },
     "morning5_start_2": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Heute gibt es eine Schulveranstaltung. Die letzte. Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen.*"
     },
     "morning5_mood_check": {
@@ -12,23 +12,23 @@
         "text": ""
     },
     "morning5_mood_high": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Letzter Tag. Seltsamerweise fühlen sich meine Schritte leicht an. Jemanden zu haben, den ich sehen will — das reicht als Grund, den Morgen zu überstehen.*"
     },
     "morning5_mood_mid": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Letzter Tag. Komplizierter als gestern. Ich habe etwas zu sagen, aber ob es über meine Lippen kommt, weiß ich nicht.*"
     },
     "morning5_mood_low": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Letzter Tag. Fünf Tage vergingen schnell. Am Ende — verlasse ich auch diese Schule, ohne etwas zu hinterlassen?*"
     },
     "morning5_seo_note_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Auf meinem Tisch liegt ein Zettel. Seoyeons Handschrift. — 'Nimm dir heute Nachmittag kurz Zeit. Ich lasse das Dach offen. — Seoyeon'*"
     },
     "morning5_yuna_story_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Im Flur, am Ausstellungsbereich des Literaturclubs — eine Kurzgeschichte hängt am schwarzen Brett. Titel: 'An die Person, die ich in der Bibliothek traf.' Es ist von Yuna. — Eine Geschichte, die nur der Protagonist erkennen würde.*"
     },
     "morning5_dain_1": {
@@ -40,15 +40,15 @@
         "text": "Wenn du wegläufst, werde ich echt sauer?"
     },
     "morning5_end": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Signale aus drei Richtungen. — Zeit, eine Antwort zu wählen.*"
     },
     "hidden_homeroom_d5_check": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Vorbereitungszeit. Auf dem Flur — das leere Klassenzimmer. Die Tür ist offen.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Die Lehrerin sitzt am Pult. — Kein Manuskript diesmal. Ein Umschlag. Ein brauner Umschlag.*"
     },
     "hidden_homeroom_d5_2": {
@@ -60,7 +60,7 @@
         "text": "Hab es sieben Jahre niemandem gezeigt."
     },
     "hidden_homeroom_d5_4": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*...Ich nehme das Manuskript entgegen. Es ist schwerer als gedacht.*"
     },
     "hidden_homeroom_d5_5": {
@@ -92,7 +92,7 @@
         "text": "Nach dem Abschluss — treffen wir uns. Nicht als Lehrerin und Schüler."
     },
     "hidden_homeroom_d5_8": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Sie dreht sich um. Ihre langen Haare schwingen. — Heute sitzen die Knöpfe ihrer Strickjacke gerade.*"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -102,7 +102,7 @@
         "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist. Letztes Gespräch nach der Übergabe des Manuskripts."
     },
     "hidden_nurse_d5_check": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Pause beim Event. Ich gehe am Krankenzimmer vorbei.*"
     },
     "hidden_nurse_d5_1": {
@@ -114,7 +114,7 @@
         "text": "Komm nach dem Abschluss vorbei. ...Oder vorher, wenn du dich verletzt."
     },
     "hidden_nurse_d5_3": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "Und wenn ich mich nicht verletze?"
     },
     "hidden_nurse_d5_4": {
@@ -146,7 +146,7 @@
         "text": "Ich weiß. Ich brauchte nur eine Ausrede."
     },
     "hidden_nurse_d5_7": {
-        "name": "Ich",
+        "name": "{name}",
         "text": "*Auf dem Pflaster steht in kleiner Schrift: 'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♥'*"
     },
     "hidden_nurse_d5_freetalk": {

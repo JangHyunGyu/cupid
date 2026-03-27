@@ -1,6 +1,6 @@
 {
     "tour_seo_1": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*We stand side by side in front of the school gate. The very spot where Seoyeon was waiting on Day 1.*"
     },
     "tour_seo_2": {
@@ -8,7 +8,7 @@
         "text": "This is where we first met."
     },
     "tour_seo_3": {
-        "name": "Me",
+        "name": "{name}",
         "text": "I almost got in trouble for saying 'more than I deserve' back then."
     },
     "tour_seo_4": {
@@ -16,7 +16,7 @@
         "text": "I didn't actually scold you, did I? — I liked you from that moment."
     },
     "tour_seo_5": {
-        "name": "Me",
+        "name": "{name}",
         "text": "From day one?"
     },
     "tour_seo_6": {
@@ -24,7 +24,7 @@
         "text": "...It might've been a trick of the wind."
     },
     "tour_seo_7": {
-        "name": "Me",
+        "name": "{name}",
         "text": "*There is no wind blowing.*"
     },
     "tour_seo_8": {

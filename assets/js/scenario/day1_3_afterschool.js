@@ -69,6 +69,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
+        "stats": { "Dain": { "affinity": -5 } },
         "next": "after1_jealousy_seo_2"
     },
     "after1_jealousy_seo_2": {
@@ -128,6 +129,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": null,
+        "stats": { "Yuna": { "affinity": -5 } },
         "next": "after1_jealousy_seo_yuna_2"
     },
     "after1_jealousy_seo_yuna_2": {
