@@ -151,67 +151,67 @@ Object.assign(SCENARIO[1], {
     },
     "night_seo_late_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_seo_late_2"
     },
     "night_seo_late_2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_seo_late_3"
     },
     "night_seo_late_3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/seyoun_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_seo_freetalk"
     },
     "night_yuna_late_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_yuna_late_2"
     },
     "night_yuna_late_2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_yuna_late_3"
     },
     "night_yuna_late_3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_yuna_late_4"
     },
     "night_yuna_late_4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_yuna_freetalk"
     },
     "night_dain_late_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_dain_late_2"
     },
     "night_dain_late_2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_dain_late_3"
     },
     "night_dain_late_3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_dain_late_4"
     },
     "night_dain_late_4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_dain_freetalk"
     },
