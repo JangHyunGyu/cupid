@@ -1,15 +1,15 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. Est-ce que je m'adapte vite, ou est-ce que j'abandonne vite ?*"
+        "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. Est-ce que je m'adapte vite, où est-ce que j'abandonne vite ?*"
     },
     "morning2_start_2": {
         "name": "{name}",
-        "text": "*Au moment ou j'ouvre la porte de la classe -- un choc dans le dos.*"
+        "text": "*Au moment où j'ouvre la porte de la classe -- un choc dans le dos.*"
     },
     "morning2_dain_1": {
         "name": "Dain",
-        "text": "T'es la ?! Bonjour !!"
+        "text": "T'es là ?! Bonjour !!"
     },
     "morning2_dain_2": {
         "name": "{name}",
@@ -29,19 +29,19 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*S'il existe un monde ou ce volume a 8h du matin est normal, Dain en serait la presidente.*"
+        "text": "*S'il existe un monde où ce volume à 8h du matin est normal, Dain en serait la présidente.*"
     },
     "morning2_note_1": {
         "name": "{name}",
-        "text": "*Je m'apprête a m'asseoir quand -- je remarque un mot plie sur mon bureau.*"
+        "text": "*Je m'apprête a m'asseoir quand -- je remarque un mot plié sur mon bureau.*"
     },
     "morning2_note_2": {
         "name": "{name}",
-        "text": "*'Viens a l'annexe de la bibliothèque a midi. -- Yuna'*"
+        "text": "*'Viens à l'annexe de la bibliothèque à midi. -- Yuna'*"
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La même écriture soignee qu'hier. Court. Et le lieu est précis. -- L''annexe' de la bibliothèque ? C'est un endroit différent d'hier.*"
+        "text": "*La même écriture soignée qu'hier. Court. Et le lieu est précis. -- L''annexe' de la bibliothèque ? C'est un endroit différent d'hier.*"
     },
     "morning2_seo_1": {
         "name": "{name}",
@@ -57,11 +57,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "La presidente du conseil des élèves vient jusqu'en classe pour dire bonjour ?"
+        "text": "La présidente du conseil des élèves vient jusqu'en classe pour dire bonjour ?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Je ne faisais que passer. -- Passe une bonne journee aussi."
+        "text": "Je ne faisais que passer. -- Passe une bonne journée aussi."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Mec, deux jours en tant que nouvel élève et la presidente du conseil vient te saluer ? Ça fait un an que je suis la et elle me regarde même pas."
+        "text": "Mec, deux jours en tant que nouvel élève et la présidente du conseil vient te saluer ? Ça fait un an que je suis la et elle me regarde même pas."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "La presidente aussi s'interesse au nouvel élève ? Populaire !"
+        "text": "La présidente aussi s'interesse au nouvel élève ? Populaire !"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "{name}",
-        "text": "*La main de Seoyeon se pose sur mon épaule. Elle enleve quelque chose. Naturellement. Trop naturellement.*"
+        "text": "*La main de Seoyeon se pose sur mon épaule. Elle enlève quelque chose. Naturellement. Trop naturellement.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -137,7 +137,7 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "He ! C'était quoi ça ?! Elle t'a touche l'épaule ?!"
+        "text": "Hé ! C'était quoi ça ?! Elle t'a touche l'épaule ?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
@@ -153,11 +153,11 @@
     },
     "morning2_haeun_1": {
         "name": "{name}",
-        "text": "*Dans le couloir ou Seoyeon a disparu -- une fille portant un bracelet du conseil des élèves s'approche.*"
+        "text": "*Dans le couloir où Seoyeon a disparu -- une fille portant un bracelet du conseil des élèves s'approche.*"
     },
     "morning2_haeun_2": {
         "name": "Haeun",
-        "text": "Excusez-moi, vous etes le nouvel élève, n'est-ce pas ? Je suis Haeun, la vice-presidente du conseil."
+        "text": "Excusez-moi, vous êtes le nouvel élève, n'est-ce pas ? Je suis Haeun, la vice-présidente du conseil."
     },
     "morning2_haeun_3": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "morning2_haeun_4": {
         "name": "Haeun",
-        "text": "La presidente... enfin, Seoyeon sunbae semble un peu différente ces derniers temps."
+        "text": "La présidente... enfin, Seoyeon sunbae semble un peu différente ces derniers temps."
     },
     "morning2_haeun_5": {
         "name": "{name}",
@@ -189,7 +189,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Quelqu'un qui n'a jamais approche personne en premier pendant toute une annee -- est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
+        "text": "*Quelqu'un qui n'a jamais approche personne en premier pendant toute une année -- est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professeure principale",
