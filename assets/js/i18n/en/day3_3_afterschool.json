@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Plans overlap. — Two of them are waiting. Who do I go to first?*",
+        "text": "*Plans overlap. — They're all waiting. Who do I go to first?*",
         "choices": [
             "Go to Seoyeon",
             "Go to Yuna",
