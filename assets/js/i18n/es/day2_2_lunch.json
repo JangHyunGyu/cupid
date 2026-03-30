@@ -62,11 +62,11 @@
     },
     "lunch2_yuna_12": {
         "name": "{name}",
-        "text": "*Aparece una pequeña habitación. La luz del sol entra por la ventana, con un sofa viejo y una estanteria.*"
+        "text": "*Aparece una pequeña habitación. La luz del sol entra por la ventana, con un sofá viejo y una estantería.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
-        "text": "¿Qué es este lugar?¿ Una sala de lectura secreta?"
+        "text": "¿Qué es este lugar? ¿Una sala de lectura secreta?"
     },
     "lunch2_yuna_14": {
         "name": "Yuna",
@@ -74,7 +74,7 @@
     },
     "lunch2_yuna_15": {
         "name": "{name}",
-        "text": "*Yuna se sienta en el sofa. Deja el espacio a su lado libre con disimulo.*"
+        "text": "*Yuna se sienta en el sofá. Deja el espacio a su lado libre con disimulo.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -86,9 +86,9 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Nada sigue después de 'había'. Pasado. -- Debería preguntar?*",
+        "text": "*Nada sigue después de 'había'. Pasado. -- ¿Debería preguntar?*",
         "choices": [
-            "Esa persona, donde está ahora?",
+            "Esa persona, ¿dónde está ahora?",
             "No preguntar y sentarse a su lado"
         ]
     },
@@ -118,15 +118,15 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna abre su libro. Una senal de que la conversación terminó.*"
+        "text": "*Yuna abre su libro. Una señal de que la conversación terminó.*"
     },
     "lunch2_yuna_c1_8": {
         "name": "{name}",
-        "text": "*Debería cambiar el ambiente. -- Intentare dejarlo pasar con ligereza.*"
+        "text": "*Debería cambiar el ambiente. -- Intentaré dejarlo pasar con ligereza.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "¿Ese sunbae, quiza simplemente se graduo? Los mayores siempre pierden el contacto."
+        "text": "¿Ese sunbae, quizá simplemente se graduó? Los mayores siempre pierden el contacto."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -138,7 +138,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*Metí la pata. Intentar restarlo importancia solo hizo que pareciera que trivializaba su herida.*"
+        "text": "*Metí la pata. Intentar restarle importancia solo hizo que pareciera que trivializaba su herida.*"
     },
     "lunch2_yuna_c1_13": {
         "name": "{name}",
@@ -166,7 +166,7 @@
     },
     "lunch2_yuna_c2_5": {
         "name": "{name}",
-        "text": "*Leemos lado a lado en silencio. La luz del sol a traves de la ventana es calida.*"
+        "text": "*Leemos lado a lado en silencio. La luz del sol a través de la ventana es cálida.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
@@ -194,7 +194,7 @@
     },
     "lunch2_seo_2": {
         "name": "Seoyeon",
-        "text": "Volviste. ¿Te gusto, eh?"
+        "text": "Volviste. ¿Te gustó, eh?"
     },
     "lunch2_seo_3": {
         "name": "{name}",

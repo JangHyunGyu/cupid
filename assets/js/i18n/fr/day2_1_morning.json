@@ -101,7 +101,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "C'est moi qui t'ai trouvé en premier, donc t'es notre nouvel élève ! Premier arrive, premier servi !"
+        "text": "C'est moi qui t'ai trouvé en premier, donc t'es notre nouvel élève ! Premier arrivé, premier servi !"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "Hé ! C'était quoi ça ?! Elle t'a touche l'épaule ?!"
+        "text": "Hé ! C'était quoi ça ?! Elle t'a touché l'épaule ?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
@@ -157,7 +157,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Y en avait sûrement. Peut-etre. -- Mais c'est pas vraiment la question.*"
+        "text": "*Y en avait sûrement. Peut-être. -- Mais c'est pas vraiment la question.*"
     },
     "morning2_haeun_1": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Quelqu'un qui n'a jamais approche personne en premier pendant toute une année -- est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
+        "text": "*Quelqu'un qui n'a jamais approché personne en premier pendant toute une année -- est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professeure principale",

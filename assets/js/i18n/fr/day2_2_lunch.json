@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Contrairement a hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait signe vers la boutique de l'école.*"
+        "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait signe vers la boutique de l'école.*"
     },
     "lunch2_start_2": {
         "name": "{name}",
@@ -22,7 +22,7 @@
     },
     "lunch2_yuna_2": {
         "name": "{name}",
-        "text": "*Je monte les escaliers et trouve Yuna au bout du couloir. Adossee au mur, elle lit un livre.*"
+        "text": "*Je monte les escaliers et trouve Yuna au bout du couloir. Adossée au mur, elle lit un livre.*"
     },
     "lunch2_yuna_3": {
         "name": "Yuna",
@@ -50,7 +50,7 @@
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*Les lèvres de Yuna se relèvent très légèrement. A peine visible.*"
+        "text": "*Les lèvres de Yuna se relèvent très légèrement. À peine visible.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -62,15 +62,15 @@
     },
     "lunch2_yuna_12": {
         "name": "{name}",
-        "text": "*Une petite pièce apparait. La lumière du soleil entre par la fenêtre, avec un vieux canapé et une étagère.*"
+        "text": "*Une petite pièce apparaît. La lumière du soleil entre par la fenêtre, avec un vieux canapé et une étagère.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
-        "text": "C'est quoi ici ? Une salle de lecture secrete ?"
+        "text": "C'est quoi ici ? Une salle de lecture secrète ?"
     },
     "lunch2_yuna_14": {
         "name": "Yuna",
-        "text": "...Presque personne ne connait cet endroit."
+        "text": "...Presque personne ne connaît cet endroit."
     },
     "lunch2_yuna_15": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Rien après 'il y avait'. Passe compose. -- Est-ce que je devrais demander ?*",
+        "text": "*Rien après 'il y avait'. Passé composé. -- Est-ce que je devrais demander ?*",
         "choices": [
             "Cette personne, où est-elle maintenant ?",
             "Ne pas demander et s'asseoir à côté d'elle"
@@ -246,7 +246,7 @@
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "On se connait juste."
+        "text": "On se connaît juste."
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
