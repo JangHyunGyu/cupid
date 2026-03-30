@@ -86,7 +86,7 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*Ihre Hand ist warm. Ist es Schweiß, oder es an Dain liegt durch unsere verschränkten Finger? — Keine Zeit zum Nachdenken beim Rennen.*"
+        "text": "*Ihre Hand ist warm. Ob vom Schweiß oder von Dain — beim Rennen bleibt keine Zeit zum Nachdenken.*"
     },
     "morning3_classroom_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning3_react_seo_1": {
         "name": "Dain",
-        "text": "Hey! Du bist mit der Klassensprecherin gekommen?! So früh am Morgen?!"
+        "text": "Hey! Du bist mit der Schülerratsvorsitzende gekommen?! So früh am Morgen?!"
     },
     "morning3_react_seo_2": {
         "name": "{name}",

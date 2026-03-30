@@ -93,7 +93,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "¡¿La presidenta también está interesada en el alumno nuevo? Que popular!"
+        "text": "¡¿La presidenta también está interesada en el alumno nuevo?! ¡Qué popular!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Yo te encontre primero, ¡así que eres nuestro alumno nuevo!¡ Lo reclamo!¡ Es mio!"
+        "text": "Yo te encontré primero, ¡así que eres nuestro alumno nuevo! ¡Lo reclamo! ¡Es mío!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Se puede reclamar a una persona? -- Pero por alguna razón no tengo ganas de discutir.*"
+        "text": "*¿Se puede reclamar a una persona? -- Pero por alguna razón no tengo ganas de discutir.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",
-        "text": "¿Que? Solo era polvo."
+        "text": "¿Qué? Solo era polvo."
     },
     "morning2_dain_react_1": {
         "name": "{name}",
@@ -145,11 +145,11 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "¡Oye!¡ ¿Qué fue eso?!¡ ¿Te toco el hombro?!"
+        "text": "¡Oye! ¡¿Qué fue eso?! ¡¿Te tocó el hombro?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "Me quito el polvo."
+        "text": "Me quitó el polvo."
     },
     "morning2_dain_react_5": {
         "name": "Dain",
@@ -157,7 +157,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Probablemente si había. Quiza. -- Pero no creo que ese sea el punto.*"
+        "text": "*Probablemente sí había. Quizá. -- Pero no creo que ese sea el punto.*"
     },
     "morning2_haeun_1": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "morning2_haeun_3": {
         "name": "{name}",
-        "text": "Ah, si."
+        "text": "Ah, sí."
     },
     "morning2_haeun_4": {
         "name": "Haeun",
@@ -177,7 +177,7 @@
     },
     "morning2_haeun_5": {
         "name": "{name}",
-        "text": "¿Diferente como?"
+        "text": "¿Diferente cómo?"
     },
     "morning2_haeun_6": {
         "name": "Haeun",
@@ -197,7 +197,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Alguien que nunca se acercó a nadie primero en todo un año... vino a mi primero? Que significa eso?*"
+        "text": "*Alguien que nunca se acercó a nadie primero en todo un año... ¿vino a mí primero? ¿Qué significa eso?*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Profesora",
