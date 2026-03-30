@@ -30,7 +30,7 @@
     },
     "after3_choice": {
         "name": "{name}",
-        "text": "*¿Adónde iré.*",
+        "text": "*¿Adónde iré?*",
         "choices": [
             "A la sala del consejo estudiantil",
             "A la biblioteca",
@@ -75,7 +75,7 @@
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
-        "text": "La próxima vez que te pida un favor, tienes que aceptar. Sin preguntas. — Consíeralo el precio.",
+        "text": "La próxima vez que te pida un favor, tienes que aceptar. Sin preguntas. — Considéralo el precio.",
         "choices": [
             "No tienes que ser perfecta, ¿sabes?",
             "Guardaré tu secreto"
@@ -446,7 +446,7 @@
     },
     "minsu_d3_6b": {
         "name": "Minsu",
-        "text": "No voy a preguntarte qué paso en tu anterior instituto. Pero déjame decirte una cosa."
+        "text": "No voy a preguntarte qué pasó en tu anterior instituto. Pero déjame decirte una cosa."
     },
     "after3_reject_for_seo_1": {
         "name": "{name}",

@@ -98,7 +98,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
-        "text": "*La voix de Yuna a baisse d'un ton.*"
+        "text": "*La voix de Yuna a baissé d'un ton.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -110,7 +110,7 @@
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
-        "text": "Il n'a pas donne de nouvelles ?"
+        "text": "Il n'a pas donné de nouvelles ?"
     },
     "lunch2_yuna_c1_6": {
         "name": "Yuna",
@@ -126,7 +126,7 @@
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "Ce sunbae, il a peut-etre juste été diplome ? Les ainés perdent souvent le contact."
+        "text": "Ce sunbae, il a peut-être juste été diplômé ? Les aînés perdent souvent le contact."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -138,7 +138,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*J'ai gaffe. Essayer de dédramatiser a juste donne l'impression que je minimisais sa blessure.*"
+        "text": "*J'ai gaffé. Essayer de dédramatiser a juste donné l'impression que je minimisais sa blessure.*"
     },
     "lunch2_yuna_c1_13": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*Je me vantais d'etre perspicace. -- J'avais tort. Pas devant cette personne.*"
+        "text": "*Je me vantais d'être perspicace. -- J'avais tort. Pas devant cette personne.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -186,7 +186,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Le 'il y avait' de Yuna tourne dans ma tête. La signification de cet endroit qu'elle m'a montre... commence a prendre forme.*"
+        "text": "*Le 'il y avait' de Yuna tourne dans ma tête. La signification de cet endroit qu'elle m'a montré... commence à prendre forme.*"
     },
     "lunch2_seo_1": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "lunch2_seo_3": {
         "name": "{name}",
-        "text": "C'était bon a manger."
+        "text": "C'était bon à manger."
     },
     "lunch2_seo_4": {
         "name": "Seoyeon",
@@ -206,7 +206,7 @@
     },
     "lunch2_seo_5": {
         "name": "{name}",
-        "text": "La brise est agreable aussi."
+        "text": "La brise est agréable aussi."
     },
     "lunch2_seo_6": {
         "name": "Seoyeon",
@@ -214,7 +214,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Elle semblait vouloir en entendre plus -- mais je me suis retenu expres.*"
+        "text": "*Elle semblait vouloir en entendre plus -- mais je me suis retenu exprès.*"
     },
     "lunch2_seo_8": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Oh ! Vous êtes la ?! Trouve !"
+        "text": "Oh ! Vous êtes là ?! Trouvé !"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
@@ -250,7 +250,7 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Pourquoi, ça te derange ?"
+        "text": "Pourquoi, ça te dérange ?"
     },
     "lunch2_seo_17": {
         "name": "Dain",
@@ -282,7 +282,7 @@
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
-        "text": "...Voila."
+        "text": "...Voilà."
     },
     "lunch2_seo_c1_3": {
         "name": "Dain",
@@ -294,7 +294,7 @@
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
-        "text": "*Il faut trois secondes pour enlever un grain de riz ? -- Personne n'a remarque, mais les pointes des oreilles de Seoyeon sont rouges.*"
+        "text": "*Il faut trois secondes pour enlever un grain de riz ? -- Personne n'a remarqué, mais les pointes des oreilles de Seoyeon sont rouges.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "lunch2_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "...Si tu t'essuies toi-même, ça va juste etaler."
+        "text": "...Si tu t'essuies toi-même, ça va juste étaler."
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
@@ -338,19 +338,19 @@
     },
     "lunch2_dain_6": {
         "name": "Dain",
-        "text": "...C'est truque ?!"
+        "text": "...C'est truqué ?!"
     },
     "lunch2_dain_7": {
         "name": "{name}",
-        "text": "Comment on truque un pierre-papier-ciseaux ?"
+        "text": "Comment on truqué un pierre-papier-ciseaux ?"
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Rrrh... Deux pains soboro s'il vous plait..."
+        "text": "Rrrh... Deux pains soboro s'il vous plaît..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*On achete du pain et on s'assoit sur un banc dans le couloir. -- A ce moment, Seoyeon passe. Avec un sac a bento.*"
+        "text": "*On achète du pain et on s'assoit sur un banc dans le couloir. -- À ce moment, Seoyeon passe. Avec un sac à bento.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
@@ -358,7 +358,7 @@
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "Hé, c'est quoi le probleme de la présidente ? Pourquoi elle nous fixe ?"
+        "text": "Hé, c'est quoi le problème de la présidente ? Pourquoi elle nous fixe ?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -370,20 +370,20 @@
     },
     "lunch2_dain_choice": {
         "name": "{name}",
-        "text": "*Dain me fixe intensement.*",
+        "text": "*Dain me fixe intensément.*",
         "choices": [
-            "On a un peu discute hier",
+            "On a un peu discuté hier",
             "Elle m'a juste fait visiter l'école ?",
-            "Pourquoi, ça te derange ?"
+            "Pourquoi, ça te dérange ?"
         ]
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*L'expression de Dain se fige subtilement. Elle croque son soboro et detourne la tête.*"
+        "text": "*L'expression de Dain se fige subtilement. Elle croque son soboro et détourne la tête.*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
-        "text": "*Dain hoche la tête et croque son pain soboro. Comme si ça ne l'interessait pas.*"
+        "text": "*Dain hoche la tête et croque son pain soboro. Comme si ça ne l'intéressait pas.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
@@ -391,7 +391,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Ses lobes d'oreilles. Rouges. -- Les filles de cette école ont des oreilles très honnetes.*"
+        "text": "*Ses lobes d'oreilles. Rouges. -- Les filles de cette école ont des oreilles très honnêtes.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",

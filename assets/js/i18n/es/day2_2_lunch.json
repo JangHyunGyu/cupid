@@ -222,7 +222,7 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "¡Oh!¡ ¿Aquí estaban?!¡ Los encontre!"
+        "text": "¡Oh! ¡¿Aquí estaban?! ¡Los encontré!"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
@@ -230,7 +230,7 @@
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Ay, ¡quien necesita permiso para comer! -- Oh, ¡una fiambrera!¡ Se ve deliciosa!"
+        "text": "Ay, ¡quién necesita permiso para comer! -- Oh, ¡una fiambrera! ¡Se ve deliciosa!"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "¿Por que, te molesta?"
+        "text": "¿Por qué, te molesta?"
     },
     "lunch2_seo_17": {
         "name": "Dain",
@@ -258,7 +258,7 @@
     },
     "lunch2_seo_18": {
         "name": "{name}",
-        "text": "*Los ángulos de este triángulo se estan afilando. -- Y me siento menos como un vértice y más como un sacrificio.*"
+        "text": "*Los ángulos de este triángulo se están afilando. -- Y me siento menos como un vértice y más como un sacrificio.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
-        "text": "*Se necesitan tres segundos para quitar un grano de arroz? -- Nadie lo noto, pero las puntas de las orejas de Seoyeon estan rojas.*"
+        "text": "*Se necesitan tres segundos para quitar un grano de arroz? -- Nadie lo notó, pero las puntas de las orejas de Seoyeon están rojas.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "lunch2_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "...Si te lo limpias tu, solo lo vas a esparcir."
+        "text": "...Si te lo limpias tú, solo lo vas a esparcir."
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
-        "text": "*Donde paso la mano de Seoyeon aún me tiene pensando. — Y los ojos sorprendidos de Dain también.*"
+        "text": "*Donde pasó la mano de Seoyeon aún me tiene pensando. — Y los ojos sorprendidos de Dain también.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
@@ -322,7 +322,7 @@
     },
     "lunch2_dain_2": {
         "name": "Dain",
-        "text": "¡Hoy pierdes!!¡ Prepárate!!"
+        "text": "¡Hoy pierdes!! ¡Prepárate!!"
     },
     "lunch2_dain_3": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "lunch2_dain_7": {
         "name": "{name}",
-        "text": "¿Como se amana un piedra-papel-tijeras?"
+        "text": "¿Cómo se amaña un piedra-papel-tijeras?"
     },
     "lunch2_dain_8": {
         "name": "Dain",
@@ -358,7 +358,7 @@
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "¿Oye, que le pasa a la presidenta?¿ Por que nos mira así?"
+        "text": "Oye, ¿qué le pasa a la presidenta? ¿Por qué nos mira así?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -373,8 +373,8 @@
         "text": "*Dain me mira fijamente.*",
         "choices": [
             "Hablamos un poco ayer",
-            "Me enseno la escuela, eso es todo?",
-            "Por que, te molesta?"
+            "Me enseñó la escuela, ¿eso es todo?",
+            "¿Por qué, te molesta?"
         ]
     },
     "lunch2_dain_c1_1": {

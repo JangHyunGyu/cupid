@@ -217,7 +217,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "¡Obvio!!¡ Hoy estoy en mi mejor momento!!"
+        "text": "¡Obvio!! ¡Hoy estoy en mi mejor momento!!"
     },
     "date_dain_arcade": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "date_dain_arcade_2": {
         "name": "Dain",
-        "text": "Bien, ¡apostemos!!¡ El que pierda paga los refrescos!!"
+        "text": "Bien, ¡apostemos!! ¡El que pierda paga los refrescos!!"
     },
     "date_dain_arcade_3": {
         "name": "Dain",
@@ -233,7 +233,7 @@
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "¡Combo completo!!¡ ¿Lo viste?!"
+        "text": "¡Combo completo!! ¡¿Lo viste?!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "date_dain_rhythm_3": {
         "name": "Dain",
-        "text": "Jaja, ¡obvio!!¡ Este no necesita rodillas!!"
+        "text": "Jaja, ¡obvio!! ¡Este no necesita rodillas!!"
     },
     "date_dain_knee": {
         "name": "{name}",
@@ -261,7 +261,7 @@
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "¡No es nada!¡ Vamos!"
+        "text": "¡No es nada! ¡Vamos!"
     },
     "date_dain_end": {
         "name": "{name}",

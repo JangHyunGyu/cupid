@@ -69,7 +69,7 @@
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*La dernière phrase de l'histoire : 'Il y avait quelqu'un qui ne disparaissait jamais. Grace a cette personne, j'ai decide de ne pas disparaitre non plus.'*"
+        "text": "*La dernière phrase de l'histoire : 'Il y avait quelqu'un qui ne disparaissait jamais. Grâce à cette personne, j'ai décidé de ne pas disparaître non plus.'*"
     },
     "perfect_yuna_5": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "perfect_dain_2": {
         "name": "Dain",
-        "text": "C'est la dernière passe. — Mais c'est aussi un debut."
+        "text": "C'est la dernière passe. — Mais c'est aussi un début."
     },
     "perfect_dain_3": {
         "name": "Dain",
@@ -149,7 +149,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...Je pensais que ça marcherait. On dirait qu'on était tous les deux a un pas de trop."
+        "text": "...Je pensais que ça marcherait. On dirait qu'on était tous les deux à un pas de trop."
     },
     "bitter_seo_3": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "bitter_yuna_2": {
         "name": "Yuna",
-        "text": "...Parfois je pense a toi. Quand je sens l'odeur de la bibliothèque. J'aurais du en dire plus à l'époque."
+        "text": "...Parfois je pense à toi. Quand je sens l'odeur de la bibliothèque. J'aurais dû en dire plus à l'époque."
     },
     "bitter_yuna_3": {
         "name": "{name}",

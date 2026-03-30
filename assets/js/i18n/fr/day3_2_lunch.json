@@ -63,7 +63,7 @@
     },
     "lunch3_give_seo_1": {
         "name": "Seoyeon",
-        "text": "...Merci. Tu as du goût."
+        "text": "...Merci. Tu as du goùt."
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
@@ -99,7 +99,7 @@
     },
     "lunch3_expose_1": {
         "name": "{name}",
-        "text": "*Au moment oû j’ai dit partageons tous ensemble — Dain a parlé la première.*"
+        "text": "*Au moment où j’ai dit partageons tous ensemble — Dain a parlé la première.*"
     },
     "lunch3_expose_2": {
         "name": "Dain",
@@ -119,7 +119,7 @@
     },
     "lunch3_expose_6": {
         "name": "Seoyeon",
-        "text": "Tu m’avais dit qu’il y avait un endroit oû aller ensemble."
+        "text": "Tu m’avais dit qu’il y avait un endroit où aller ensemble."
     },
     "lunch3_expose_7": {
         "name": "Dain",

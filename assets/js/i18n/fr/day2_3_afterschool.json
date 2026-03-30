@@ -66,7 +66,7 @@
     },
     "after2_dain_10": {
         "name": "Dain",
-        "text": "*Les yeux écarquillés* Hein ? J'allais aller doucement, mais finalement non.\n\n*Dain baisse sa position. Ses yeux ont change.*\n\nLa je donne tout !"
+        "text": "*Les yeux écarquillés* Hein ? J'allais aller doucement, mais finalement non.\n\n*Dain baisse sa position. Ses yeux ont changé.*\n\nLà je donne tout !"
     },
     "after2_dain_11": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "Je t'ai pas trompée -- t'as juste jamais demande."
+        "text": "Je t'ai pas trompée -- t'as juste jamais demandé."
     },
     "after2_dain_16": {
         "name": "Dain",
@@ -130,7 +130,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*Le sujet a change. -- Si elle l'a change expres ou si c'était vraiment épicé. Probablement les deux.*"
+        "text": "*Le sujet a changé. -- Si elle l'a changé exprès ou si c'était vraiment épicé. Probablement les deux.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -150,23 +150,23 @@
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "*Avec un léger sourire* Obeissant."
+        "text": "*Avec un léger sourire* Obéissant."
     },
     "after2_seo_5": {
         "name": "{name}",
-        "text": "C'est toi qui as demande de l'aide."
+        "text": "C'est toi qui as demandé de l'aide."
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "J'ai pas demande -- je t'ai donne une opportunite."
+        "text": "J'ai pas demandé -- je t'ai donné une opportunité."
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Le mot 'demander' ne semble pas exister dans le vocabulaire de cette personne.*\n\n*Je commence a trier les documents. Budgets événements, demandes de clubs. Y en a pas mal.*"
+        "text": "*Le mot 'demander' ne semble pas exister dans le vocabulaire de cette personne.*\n\n*Je commence à trier les documents. Budgets événements, demandes de clubs. Y en a pas mal.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Ceux-ci par date, ceux-la par club. -- T'es doue pour ranger ?"
+        "text": "Ceux-ci par date, ceux-là par club. -- T'es doué pour ranger ?"
     },
     "after2_seo_8a2": {
         "name": "{name}",
@@ -178,11 +178,11 @@
     },
     "after2_seo_8a4": {
         "name": "{name}",
-        "text": "Comme tes compliments. T'es vague la-dessus aussi."
+        "text": "Comme tes compliments. T'es vague là-dessus aussi."
     },
     "after2_seo_8b": {
         "name": "{name}",
-        "text": "*Seoyeon leve les yeux des documents.*"
+        "text": "*Seoyeon lève les yeux des documents.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -210,7 +210,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...T'es là première personne à sortir un truc aussi léger avec autant de naturel.\n\n*Ses yeux ont souri. -- Pas le sourire travaillé où seules les commissures se lèvent, mais un vrai. Qui a duré plus de trois secondes, pas juste une demi-seconde.*"
+        "text": "...T'es la première personne à sortir un truc aussi léger avec autant de naturel.\n\n*Ses yeux ont souri. -- Pas le sourire travaillé où seules les commissures se lèvent, mais un vrai. Qui a duré plus de trois secondes, pas juste une demi-seconde.*"
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -222,7 +222,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "C'est vraiment tendu. Bouge pas une seconde.\n\n*Seoyeon se leve et vient derrière moi. Elle pose ses mains sur mes épaules.*"
+        "text": "C'est vraiment tendu. Bouge pas une seconde.\n\n*Seoyeon se lève et vient derrière moi. Elle pose ses mains sur mes épaules.*"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -242,11 +242,11 @@
     },
     "after2_seo_9": {
         "name": "{name}",
-        "text": "*Le soleil couchant baigne la salle du conseil. Le tri est presque termine.*"
+        "text": "*Le soleil couchant baigne la salle du conseil. Le tri est presque terminé.*"
     },
     "after2_seo_choice2": {
         "name": "{name}",
-        "text": "*Le tri est presque termine.*",
+        "text": "*Le tri est presque terminé.*",
         "choices": [
             "Je reste encore un peu ? Il semble en rester",
             "Si c'est fini, j'y vais"
@@ -258,11 +258,11 @@
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
-        "text": "...J'aime ce moment. Quand je suis seule dans la salle du conseil, je n'ai aucun role a jouer."
+        "text": "...J'aime ce moment. Quand je suis seule dans la salle du conseil, je n'ai aucun rôle à jouer."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Meme la présidente du conseil se repose ?"
+        "text": "Même la présidente du conseil se repose ?"
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
@@ -282,11 +282,11 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Pas de message de Yuna. Mais mes pieds se dirigent vers la bibliothèque. Pourquoi ? -- Pas sur. Peut-etre a cause du mot ce matin.*\n\n*Le couloir de l'annexe. Pas ame qui vive. -- La porte de la salle de lecture secrete est entrouverte.*"
+        "text": "*Pas de message de Yuna. Mais mes pieds se dirigent vers la bibliothèque. Pourquoi ? -- Pas sûr. Peut-être à cause du mot ce matin.*\n\n*Le couloir de l'annexe. Pas âme qui vive. -- La porte de la salle de lecture secrète est entrouverte.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*J'entre discrètement. Yuna est sur le canapé, en train de lire. Le soleil couchant entre par la fenêtre.*\n\n*Yuna leve les yeux. Elle n'est pas surprise.*"
+        "text": "*J'entre discrètement. Yuna est sur le canapé, en train de lire. Le soleil couchant entre par la fenêtre.*\n\n*Yuna lève les yeux. Elle n'est pas surprise.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
@@ -294,7 +294,7 @@
     },
     "after2_yuna_4": {
         "name": "{name}",
-        "text": "Tu m'as pas appele."
+        "text": "Tu m'as pas appelé."
     },
     "after2_yuna_5": {
         "name": "Yuna",
@@ -314,11 +314,11 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'expres'.*\n\n*Je m'assois à côté d'elle. Yuna me tend un de ses écouteurs.*"
+        "text": "*Une porte ouverte par hasard. -- Le 'par hasard' de Yuna est synonyme de 'exprès'.*\n\n*Je m'assois à côté d'elle. Yuna me tend un de ses écouteurs.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
-        "text": "Ecoute."
+        "text": "Écoute."
     },
     "after2_yuna_8d": {
         "name": "{name}",
@@ -330,7 +330,7 @@
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*Apres un long moment* ...Quelqu'un qui vient ici après les cours."
+        "text": "*Après un long moment* ...Quelqu'un qui vient ici après les cours."
     },
     "after2_yuna_choice_pre2": {
         "name": "{name}",
@@ -342,10 +342,10 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna a dit deux phrases. -- Pour elle, c'est l'equivalent de 'merci'.*",
+        "text": "*Yuna a dit deux phrases. -- Pour elle, c'est l'équivalent de 'merci'.*",
         "choices": [
             "Je devrais venir tous les jours ?",
-            "C'est agreable parce que c'est calme"
+            "C'est agréable parce que c'est calme"
         ]
     },
     "after2_yuna_everyday": {
@@ -354,7 +354,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Viens si tu veux. Je t'en empêcherai pas.\n\n*'Je t'en empêcherai pas.' -- Dans le langage de Yuna, ça se traduit par 's'il te plait viens'.*"
+        "text": "...Viens si tu veux. Je t'en empêcherai pas.\n\n*'Je t'en empêcherai pas.' -- Dans le langage de Yuna, ça se traduit par 's'il te plaît viens'.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -366,7 +366,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Le soleil se couche. Assis côte à côte avec Yuna, a écouter la musique. Un moment où aucun mot n'est nécessaire.*"
+        "text": "*Le soleil se couche. Assis côte à côte avec Yuna, à écouter la musique. Un moment où aucun mot n'est nécessaire.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -376,7 +376,7 @@
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Je me suis écorche le coude en sport. Rien de grave, mais ça saigne un peu.*"
+        "text": "*Je me suis écorché le coude en sport. Rien de grave, mais ça saigne un peu.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Infirmière",
@@ -384,7 +384,7 @@
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "Je me suis écorche le coude."
+        "text": "Je me suis écorché le coude."
     },
     "hidden_nurse_d2_4": {
         "name": "Infirmière",
