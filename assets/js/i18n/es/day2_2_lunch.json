@@ -9,7 +9,7 @@
     },
     "lunch2_choice": {
         "name": "{name}",
-        "text": "*Con quien debería ir?*",
+        "text": "*¿Con quién debería ir?*",
         "choices": [
             "Seguir la nota de Yuna hacia el anexo de la biblioteca",
             "Seguir a Seoyeon a la azotea",
@@ -22,7 +22,7 @@
     },
     "lunch2_yuna_2": {
         "name": "{name}",
-        "text": "*Subo las escaleras y encuentro a Yuna al final del pasillo. Esta apoyada contra la pared, leyendo un libro.*"
+        "text": "*Subo las escaleras y encuentro a Yuna al final del pasillo. Está apoyada contra la pared, leyendo un libro.*"
     },
     "lunch2_yuna_3": {
         "name": "Yuna",
@@ -42,7 +42,7 @@
     },
     "lunch2_yuna_7": {
         "name": "Yuna",
-        "text": "Parece que te estás llevando bien con la ruidosa. ¿Eso es más divertido, no?"
+        "text": "Parece que te estás llevando bien con la ruidosa. Eso es más divertido, ¿no?"
     },
     "lunch2_yuna_8": {
         "name": "{name}",
@@ -58,7 +58,7 @@
     },
     "lunch2_yuna_11": {
         "name": "{name}",
-        "text": "*Yuna camina adelante. Hacia lo profundo del anexo. Un lugar donde parece que nadie vendria.*"
+        "text": "*Yuna camina adelante. Hacia lo profundo del anexo. Un lugar donde parece que nadie vendría.*"
     },
     "lunch2_yuna_12": {
         "name": "{name}",

@@ -182,7 +182,7 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "{name}",
-        "text": "*Zwei Saetze. Für Yuna ist das eine lange Rede. -- Und alles steckt in diesen zwei Saetzen.*"
+        "text": "*Zwei Sätze. Für Yuna ist das eine lange Rede. -- Und alles steckt in diesen zwei Sätzen.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ugh... Zwei Soboro-Broetchen bitte..."
+        "text": "Ugh... Zwei Soboro-Brötchen bitte..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -395,7 +395,7 @@
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*Das Knuspern von Dains Soboro-Brot ist ungewoehnlich laut. Seoyeons Blick, Dains rote Ohren -- die Mittagspause wird von Tag zu Tag komplizierter.*"
+        "text": "*Das Knuspern von Dains Soboro-Brot ist ungewöhnlich laut. Seoyeons Blick, Dains rote Ohren -- die Mittagspause wird von Tag zu Tag komplizierter.*"
     },
     "lunch2_seo_1_check": {
         "name": "{name}",

@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. Est-ce que je m'adapte vite, où est-ce que j'abandonne vite ?*"
+        "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. Est-ce que je m'adapte vite, ou est-ce que j'abandonne vite ?*"
     },
     "morning2_start_2": {
         "name": "{name}",
@@ -25,7 +25,7 @@
     },
     "morning2_dain_5": {
         "name": "Dain",
-        "text": "C'est ça la normale ! C'est toi qui es a plat !"
+        "text": "C'est ça la normale ! C'est toi qui es à plat !"
     },
     "morning2_dain_6": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "morning2_note_1": {
         "name": "{name}",
-        "text": "*Je m'apprête a m'asseoir quand -- je remarque un mot plié sur mon bureau.*"
+        "text": "*Je m'apprête à m'asseoir quand -- je remarque un mot plié sur mon bureau.*"
     },
     "morning2_note_2": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La même écriture soignée qu'hier. Court. Et le lieu est précis. -- L''annexe' de la bibliothèque ? C'est un endroit différent d'hier.*"
+        "text": "*La même écriture soignée qu'hier. Court. Et le lieu est précis. -- L'annexe de la bibliothèque ? C'est un endroit différent d'hier.*"
     },
     "morning2_seo_1": {
         "name": "{name}",
@@ -77,11 +77,11 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Mec, deux jours en tant que nouvel élève et la présidente du conseil vient te saluer ? Ça fait un an que je suis la et elle me regarde même pas."
+        "text": "Mec, deux jours en tant que nouvel élève et la présidente du conseil vient te saluer ? Ça fait un an que je suis là et elle me regarde même pas."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "T'es peut-etre juste pas populaire."
+        "text": "T'es peut-être juste pas populaire."
     },
     "morning2_dain_claim_2": {
         "name": "Minsu",

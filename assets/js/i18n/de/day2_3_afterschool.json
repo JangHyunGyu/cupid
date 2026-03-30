@@ -66,7 +66,7 @@
     },
     "after2_dain_10": {
         "name": "Dain",
-        "text": "*Mit grossen Augen* Huh? Ich wollte eigentlich locker spielen, aber das geht wohl nicht.\n\n*Dain geht in die Hocke. Ihre Augen haben sich verändert.*\n\nJetzt geb ich alles!"
+        "text": "*Mit großen Augen* Huh? Ich wollte eigentlich locker spielen, aber das geht wohl nicht.\n\n*Dain geht in die Hocke. Ihre Augen haben sich verändert.*\n\nJetzt geb ich alles!"
     },
     "after2_dain_11": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "after2_dain_end_2d": {
         "name": "{name}",
-        "text": "{name} war viel besser."
+        "text": "Du warst viel besser."
     },
     "after2_dain_end_3": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-        "text": "*Ich schliesse die Augen und überlasse mich ihr.*"
+        "text": "*Ich schließe die Augen und überlasse mich ihr.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
@@ -266,11 +266,11 @@
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
-        "text": "Nie. -- Ausser hier."
+        "text": "Nie. -- Außer hier."
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Ausser hier.' -- Ob Dach oder Schülerratskammer, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
+        "text": "*'Außer hier.' -- Ob Dach oder Schülerratskammer, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna hat zwei Saetze gesagt. -- Für sie ist das dasselbe wie 'danke'.*",
+        "text": "*Yuna hat zwei Sätze gesagt. -- Für sie ist das dasselbe wie 'danke'.*",
         "choices": [
             "Soll ich jeden Tag kommen?",
             "Es ist schön, weil es ruhig ist"
