@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*De vuelta en casa. Me duche y me tumbe en la cama -- y las notificaciones del messenger empiezan a llover.*"
+        "text": "*De vuelta en casa. Me duché y me tumbé en la cama -- y las notificaciones del messenger empiezan a llover.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night2_choice": {
         "name": "{name}",
-        "text": "*A quien le respondo primero?*",
+        "text": "*¿A quién le respondo primero?*",
         "choices": [
             "Responder a Dain primero",
             "Responder a Seoyeon primero",
@@ -110,15 +110,15 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "......\nManana al mediodía dejare la azotea abierta. Si vienes o no, es tu decisión"
+        "text": "......\nMañana al mediodía dejaré la azotea abierta. Si vienes o no, es tu decisión"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*Dijo 'tu decisión', pero el tono sugiere que algo pasara si no aparezco.*"
+        "text": "*Dijo 'tu decisión', pero el tono sugiere que algo pasará si no aparezco.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
-        "text": "Voy por la mitad. Esta bueno"
+        "text": "Voy por la mitad. Está bueno"
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
@@ -138,11 +138,11 @@
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Te dire por que después"
+        "text": "Te diré por qué después"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*La tercera estrella? -- Abro la ventana y miró al cielo nocturno. Se ven estrellas. No estoy seguro de cual es la tercera, pero. Un acertijo muy de Yuna. Alguien que nunca da la respuesta. -- Alguien que te hace querer encontrarla.*"
+        "text": "*¿La tercera estrella? -- Abro la ventana y miro al cielo nocturno. Se ven estrellas. No estoy seguro de cuál es la tercera, pero. Un acertijo muy de Yuna. Alguien que nunca da la respuesta. -- Alguien que te hace querer encontrarla.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*El segundo día terminó. El primer día fue curiosidad. Me preguntaba que tipo de personas eran.*"
+        "text": "*El segundo día terminó. El primer día fue curiosidad. Me preguntaba qué tipo de personas eran.*"
     },
     "night2_end_3": {
         "name": "{name}",

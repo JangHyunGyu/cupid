@@ -113,7 +113,7 @@
     },
     "night3_nightmare_choice": {
         "name": "{name}",
-        "text": "*¿La mano de quién tomaré.*",
+        "text": "*¿La mano de quién tomaré?*",
         "choices": [
             "Tomar la mano de Seoyeon",
             "Tomar la mano de Yuna",
@@ -146,7 +146,7 @@
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
-        "text": "*¿Qué he hecho.*"
+        "text": "*¿Qué he hecho?*"
     },
     "night3_cheat_reflect_1": {
         "name": "{name}",
