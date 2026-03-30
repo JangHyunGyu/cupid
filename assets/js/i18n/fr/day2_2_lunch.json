@@ -318,7 +318,7 @@
     },
     "lunch2_dain_1": {
         "name": "{name}",
-        "text": "*À la boutique avec Dain. Revanche du pierre-papier-ciseaux d'hier.*"
+        "text": "*À la boutique avec Dain. Revanche du pierre-feuille-ciseaux d'hier.*"
     },
     "lunch2_dain_2": {
         "name": "Dain",
@@ -342,7 +342,7 @@
     },
     "lunch2_dain_7": {
         "name": "{name}",
-        "text": "Comment on truqué un pierre-papier-ciseaux ?"
+        "text": "Comment on truque un pierre-feuille-ciseaux ?"
     },
     "lunch2_dain_8": {
         "name": "Dain",

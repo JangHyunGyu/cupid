@@ -33,7 +33,7 @@
     },
     "lunch_choice": {
         "name": "{name}",
-        "text": "*Qui est-ce que je suis ?*",
+        "text": "*Qui est-ce que je vais suivre ?*",
         "choices": [
             "Suivre Seoyeon sur le toit",
             "Aller à la boutique avec Dain",
