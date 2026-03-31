@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Ich gehe einfach nach Hause. Wird schon nichts sein.*"
+        "text": "*Für heute habe ich genug herumgelaufen. Gehen wir nach Hause und ruhen uns aus.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",

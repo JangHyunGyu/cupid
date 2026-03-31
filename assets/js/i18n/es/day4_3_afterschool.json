@@ -325,7 +325,7 @@
     },
     "confess_dain_no_4_ins2": {
         "name": "{name}",
-        "text": "*Las escenas de confesión de las tres principales continúan normalmente. Este evento oculto se reproduce por separado antes de la cita principal en la franja horaria temprana del Día 4. Solo si la confesión principal del Día 4 fue aplazada (`day4_waited`), se añadirá una rama para elegir al personaje oculto en el Día 5.*"
+        "text": "*--- Madrugada ---*"
     },
     "confess_dain_no_4_ins3": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
-        "text": "*Las escenas de confesión de las tres principales continúan normalmente. Este evento oculto se reproduce por separado antes de la cita principal en la franja matutina del Día 4. Solo si la confesión principal del Día 4 fue aplazada (`day4_waited`), se añadirá una rama para elegir al personaje oculto en el Día 5.*"
+        "text": "*--- Mañana ---*"
     },
     "confess_dain_no_4_ins23": {
         "name": "{name}",

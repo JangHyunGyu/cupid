@@ -56,16 +56,44 @@
         "text": "Frau Lehrerin? Es ist Wochenende, was machen Sie hier?"
     },
     "hidden_homeroom_d4_4": {
+        "name": "{name}",
+        "text": "*Die Klassenlehrerin in Freizeitkleidung sieht nicht wie eine Lehrerin aus. Einfach — wie jemand, der schreibt.*"
+    },
+    "hidden_homeroom_d4_4_ins": {
         "name": "Klassenlehrerin",
-        "text": "Ach, da war noch — Papierkram. ...Lehrerinnen sind auch am Wochenende Lehrerinnen."
+        "text": "Was machst du denn hier?"
+    },
+    "hidden_homeroom_d4_4_ins2": {
+        "name": "{name}",
+        "text": "Ich kam gerade vorbei."
+    },
+    "hidden_homeroom_d4_4_ins3": {
+        "name": "Klassenlehrerin",
+        "text": "Du bist der erste Schüler, der beim 'Vorbeikommen' durchs Schultor schaut."
+    },
+    "hidden_homeroom_d4_4_ins4": {
+        "name": "{name}",
+        "text": "*Unangenehme Stille. — Die Lehrerin spricht zuerst.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Klassenlehrerin",
-        "text": "...Schon gegessen? Ein Kaffee geht doch, oder? — Also Saft, weil du Schüler bist."
+        "text": "...Schon gegessen?"
+    },
+    "hidden_homeroom_d4_5_ins": {
+        "name": "{name}",
+        "text": "Noch nicht."
+    },
+    "hidden_homeroom_d4_5_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "Nennen wir es eine Erweiterung des pädagogischen Interesses. *leise murmelnd* Ein Kaffee geht doch, oder? — Naja, du bist Schüler, also Saft."
+    },
+    "hidden_homeroom_d4_5_ins3": {
+        "name": "{name}",
+        "text": "*Schon wieder. Das Muster, 'pädagogisches Interesse' zu sagen und sofort die Grenze zu überschreiten.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*In Freizeitkleidung sieht die Lehrerin nicht wie eine Lehrerin aus. Eher wie — eine Schriftstellerin.*",
+        "text": "*Eine Tasse Kaffee. — Pädagogisches Interesse.*",
         "choices": [
             "Klar. Gibt's ein Café in der Nähe?",
             "Das sollten Sie nicht tun, oder?"

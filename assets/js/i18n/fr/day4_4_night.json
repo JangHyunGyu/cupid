@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "{name}",
-        "text": "*Seoyeon a cessé de parler. D'une main tremblante, elle a retiré ses lunettes et les a serrées. C'est la première fois que je vois le visage de Seoyeon sans lunettes. Ses mains sont serrées sur ses genoux.*"
+        "text": "*Seoyeon s'arrête de parler. Ses mains sont serrées sur ses genoux.*\n\n*— Et puis lentement, très lentement, l'expression qu'elle maintenait parfaitement s'effondre. Seoyeon retire ses lunettes d'une main tremblante.*\n\n*Des larmes coulent de ses yeux. Sans un bruit. — Je vois le visage de Seoyeon sans lunettes pour la première fois.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Seoyeon range son téléphone dans sa poche et se retourne. Son dos est droit. Parfaitement droit. — La nuit vient aussi pour ceux qu’on n’a pas choisis. Et elle passe cette nuit seule.*"
+        "text": "*Seoyeon range son téléphone dans sa poche et se retourne. Son dos est droit. Parfaitement. — Elle ne tremble pas. Cette fois, pour de vrai.*\n\n*La nuit vient aussi pour ceux qui n’ont pas été choisis. Elle passe cette nuit seule.*"
     },
     "day4_night_regret": {
         "name": "{name}",

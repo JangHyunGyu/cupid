@@ -325,7 +325,7 @@
     },
     "confess_dain_no_4_ins2": {
         "name": "{name}",
-        "text": "*Les scènes de confession du trio principal se déroulent normalement. Cet événement caché se joue séparément avant le rendez-vous principal le matin du Jour 4. Ce n'est que si la confession principale du Jour 4 a été reportée (`day4_waited`) qu'une branche pour choisir le personnage caché sera disponible au Jour 5.*"
+        "text": "*--- Petit matin ---*"
     },
     "confess_dain_no_4_ins3": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
-        "text": "*Les scènes de confession du trio principal se déroulent normalement. Cet événement caché se joue séparément avant le rendez-vous principal le matin du Jour 4. Ce n'est que si la confession principale du Jour 4 a été reportée (`day4_waited`) qu'une branche pour choisir le personnage caché sera disponible au Jour 5.*"
+        "text": "*--- Matin ---*"
     },
     "confess_dain_no_4_ins23": {
         "name": "{name}",

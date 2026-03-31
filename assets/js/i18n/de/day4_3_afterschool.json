@@ -325,7 +325,7 @@
     },
     "confess_dain_no_4_ins2": {
         "name": "{name}",
-        "text": "*Die Geständnisszenen der drei Hauptcharaktere verlaufen normal. Dieses versteckte Event wird separat vor dem Hauptdate am frühen Morgen von Tag 4 abgespielt. Nur wenn das Hauptgeständnis von Tag 4 aufgeschoben wurde (`day4_waited`), wird am Tag 5 ein Zweig zur Wahl des versteckten Charakters hinzugefügt.*"
+        "text": "*--- Früher Morgen ---*"
     },
     "confess_dain_no_4_ins3": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
-        "text": "*Die Geständnisszenen der drei Hauptcharaktere verlaufen normal. Dieses versteckte Event wird separat vor dem Hauptdate am Morgen von Tag 4 abgespielt. Nur wenn das Hauptgeständnis von Tag 4 aufgeschoben wurde (`day4_waited`), wird am Tag 5 ein Zweig zur Wahl des versteckten Charakters hinzugefügt.*"
+        "text": "*--- Morgen ---*"
     },
     "confess_dain_no_4_ins23": {
         "name": "{name}",

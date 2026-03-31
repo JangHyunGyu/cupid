@@ -404,15 +404,15 @@
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Infirmière",
-        "text": "*Elle retire discrètement sa main.* ...Déformation professionnelle."
+        "text": "...J'ai les mains plutôt froides d'habitude. On dirait qu'elles sont chaudes aujourd'hui."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Infirmière",
-        "text": "Je suis une pro~ Bâcler le travail, ce serait une insulte au pansement."
+        "text": "*avec un sourire* C'est du soin, du soin. Si on le colle n'importe comment, ça tombe."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement — son ordinateur est ouvert sur le bureau. Ce n'est pas un dossier médical — on dirait un journal intime.*"
+        "text": "*En vérifiant le pansement — un ordinateur portable est ouvert sur le bureau. Quelque chose est écrit sur l'écran. Ce n'est pas un dossier médical — on dirait un journal intime.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
@@ -428,11 +428,11 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Infirmière",
-        "text": "Un seul ? — Hmm, pour ça il faudrait venir beaucoup plus souvent~"
+        "text": "*plissant les yeux* Un seul ? ...Bon, d'accord. Je préfère le cacao au café. Voilà le secret."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Infirmière",
-        "text": "Sage garçon. Mais t'es du genre à pas savoir mentir, hein."
+        "text": "*riant doucement* Secret~ Les profs aussi ont des secrets."
     },
     "hidden_nurse_d2_8": {
         "name": "Infirmière",

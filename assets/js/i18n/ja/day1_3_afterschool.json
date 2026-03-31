@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*そのまま帰ることにした。大したことないだろう。*"
+        "text": "*今日は十分歩き回った。家に帰って休もう。*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",

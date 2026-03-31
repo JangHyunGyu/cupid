@@ -56,16 +56,44 @@
         "text": "선생님? 주말인데 학교에요?"
     },
     "hidden_homeroom_d4_4": {
+        "name": "{name}",
+        "text": "*사복 차림의 담임은 교사처럼 보이지 않는다. 그냥 — 글 쓰는 사람처럼.*"
+    },
+    "hidden_homeroom_d4_4_ins": {
         "name": "담임선생님",
-        "text": "아, 이건 — 서류 정리가 남아서. ...교사는 주말에도 교사야. 뭐."
+        "text": "너는 왜 여기야?"
+    },
+    "hidden_homeroom_d4_4_ins2": {
+        "name": "{name}",
+        "text": "지나가다가요."
+    },
+    "hidden_homeroom_d4_4_ins3": {
+        "name": "담임선생님",
+        "text": "지나가다가 학교 정문을 들여다보는 학생은 처음이야."
+    },
+    "hidden_homeroom_d4_4_ins4": {
+        "name": "{name}",
+        "text": "*어색한 침묵. — 그리고 담임이 먼저.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "담임선생님",
-        "text": "...밥 먹었어? 교육적 관심의 연장이라고 해 두자. 커피 한 잔 정도는 괜찮지? — 학생이니까 주스지만."
+        "text": "...밥 먹었어?"
+    },
+    "hidden_homeroom_d4_5_ins": {
+        "name": "{name}",
+        "text": "아직이요."
+    },
+    "hidden_homeroom_d4_5_ins2": {
+        "name": "담임선생님",
+        "text": "교육적 관심의 연장이라고 해 두자. *작게 중얼거리며* 커피 한 잔 정도는 괜찮지? — 학생이니까 주스지만."
+    },
+    "hidden_homeroom_d4_5_ins3": {
+        "name": "{name}",
+        "text": "*또 시작이다. '교육적 관심'이라고 말해놓고 바로 선을 넘는 패턴.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*사복 차림의 담임은 교사처럼 보이지 않는다. 그냥 — 글 쓰는 사람처럼.*",
+        "text": "*커피 한 잔. — 교육적 관심.*",
         "choices": [
             "좋아요. 근처에 카페 있어요?",
             "선생님, 그러면 안 되는 거 아니에요?"
