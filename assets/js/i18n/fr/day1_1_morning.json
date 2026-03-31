@@ -322,5 +322,57 @@
     "classroom_yuna_note_6": {
         "name": "{name}",
         "text": "*Elle fait semblant de s'en ficher ou elle s'en fiche vraiment ? — Intéressant.*"
+    },
+    "hallway_6_ins": {
+        "name": "Seoyeon",
+        "text": "*Un bref silence* \"...Tu es perspicace.\""
+    },
+    "hallway_6_ins2": {
+        "name": "{name}",
+        "text": "*Cette hésitation. Une demi-seconde. Sûrement rien, mais ça reste en tête.*"
+    },
+    "hallway_13_ins": {
+        "name": "{name}",
+        "text": "*Son dos est droit. Parfaitement droit. — Comme si c'était répété. À chaque élève qui passe, le même angle de sourire se reproduit. Une gentillesse automatisée. — Cette précision mécanique a quelque chose d'étrange.*"
+    },
+    "classroom_2_ins": {
+        "name": "{name}",
+        "text": "*La professeure se tient devant l'estrade. Début de trentaine. Un bouton de son cardigan est défait. Son expression est détachée, mais — ses yeux passent chaque élève en revue.*"
+    },
+    "classroom_3_ins": {
+        "name": "{name}",
+        "text": "*Sa voix est sèche. Pas dénuée d'émotion, juste — dosée au strict nécessaire. Étonnamment, ça ne me déplaît pas.*"
+    },
+    "classroom_5_ins": {
+        "name": "{name}",
+        "text": "*La professeure hoche la tête. Elle allait ajouter quelque chose — s'arrête, et jette un nouveau coup d'œil à la feuille de présence. Sa main droite triture un stylo dans sa poche. Une habitude, sans doute.*"
+    },
+    "classroom_5_ins2": {
+        "name": "Professeure principale",
+        "text": "...D'accord. {name}. Je m'en souviendrai.\" *Tout bas, presque pour elle-même* \"Je retiens toujours les noms du premier coup.\""
+    },
+    "classroom_5_ins3": {
+        "name": "{name}",
+        "text": "*Personne d'autre n'a entendu. Juste moi. — Est-ce de l'attention, ou simplement une habitude ?*"
+    },
+    "classroom_dain_5_ins": {
+        "name": "{name}",
+        "text": "*La professeure laisse échapper un petit soupir. Pas d'exaspération — le soupir de quelqu'un qui a l'habitude.*"
+    },
+    "classroom_dain_5_ins2": {
+        "name": "Professeure principale",
+        "text": "...Économise ton énergie. Le premier cours n'a même pas commencé."
+    },
+    "classroom_dain_5_ins3": {
+        "name": "{name}",
+        "text": "*Elle le dit sèchement, mais le coin de ses lèvres se relève imperceptiblement. Son expression par défaut est neutre, mais il y a parfois un bug.*"
+    },
+    "classroom_minsu_2_ins": {
+        "name": "Minsu",
+        "text": "*Désignant Dain du menton* \"Ton endurance.\""
+    },
+    "classroom_yuna_note_5_ins": {
+        "name": "{name}",
+        "text": "*Elle feint l'indifférence, ou c'est sincère. — Intéressant. Mais le plus étrange, c'est qu'elle connaissait déjà mon prénom. Elle regardait ailleurs pendant la présentation. — Elle écoutait, en fait.*"
     }
 }

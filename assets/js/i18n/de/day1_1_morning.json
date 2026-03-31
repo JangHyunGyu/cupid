@@ -322,5 +322,57 @@
     "classroom_yuna_note_6": {
         "name": "{name}",
         "text": "*Tut sie so, als wäre es ihr egal, oder ist es ihr wirklich egal? — Interessant.*"
+    },
+    "hallway_6_ins": {
+        "name": "Seoyeon",
+        "text": "*Kurzes Zögern* \"...Du bist aufmerksam.\""
+    },
+    "hallway_6_ins2": {
+        "name": "{name}",
+        "text": "*Dieses Zögern. Eine halbe Sekunde. Wahrscheinlich nichts, aber irgendwie bleibt es hängen.*"
+    },
+    "hallway_13_ins": {
+        "name": "{name}",
+        "text": "*Ihre Haltung ist gerade. Perfekt gerade. — Wie einstudiert. Bei jedem Schüler, den sie grüßt, wiederholt sich dasselbe Lächeln im selben Winkel. Automatisierte Freundlichkeit. — Diese maschinelle Präzision ist schon etwas seltsam.*"
+    },
+    "classroom_2_ins": {
+        "name": "{name}",
+        "text": "*Die Klassenlehrerin steht am Pult. Anfang dreißig. Ein Knopf ihrer Strickjacke ist offen. Ihr Ausdruck ist gleichgültig, aber — ihre Augen mustern jeden einzelnen Schüler.*"
+    },
+    "classroom_3_ins": {
+        "name": "{name}",
+        "text": "*Ihre Stimme ist trocken. Nicht gefühllos, nur — genau so viel Emotion wie nötig. Überraschenderweise stört es mich nicht.*"
+    },
+    "classroom_5_ins": {
+        "name": "{name}",
+        "text": "*Die Lehrerin nickt. Sie wollte noch etwas sagen — hält inne und schaut noch einmal auf die Anwesenheitsliste. Ihre rechte Hand spielt mit einem Kugelschreiber in der Tasche. Wahrscheinlich eine Angewohnheit.*"
+    },
+    "classroom_5_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "...Gut. {name}. Merk ich mir.\" *Leise, fast wie ein Selbstgespräch* \"Ich mache es mir zur Regel, Namen beim ersten Mal zu merken.\""
+    },
+    "classroom_5_ins3": {
+        "name": "{name}",
+        "text": "*Niemand sonst hat das gehört. Nur ich. — Ist sie aufmerksam, oder ist das einfach Gewohnheit?*"
+    },
+    "classroom_dain_5_ins": {
+        "name": "{name}",
+        "text": "*Die Lehrerin seufzt leise. Nicht genervt — eher das Seufzen von jemandem, der daran gewöhnt ist.*"
+    },
+    "classroom_dain_5_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "...Spar dir etwas Energie. Die erste Stunde hat noch nicht mal angefangen."
+    },
+    "classroom_dain_5_ins3": {
+        "name": "{name}",
+        "text": "*Sie sagt es trocken, aber ihr Mundwinkel ist minimal angehoben. Ihr Standardausdruck ist ausdruckslos, aber ab und zu gibt es einen Fehler im System.*"
+    },
+    "classroom_minsu_2_ins": {
+        "name": "Minsu",
+        "text": "*Nickt in Dains Richtung* \"Deine Ausdauer.\""
+    },
+    "classroom_yuna_note_5_ins": {
+        "name": "{name}",
+        "text": "*Tut sie nur desinteressiert, oder ist sie es wirklich? — Interessant. Aber das Seltsame ist, dass sie meinen Namen schon kannte. Bei der Vorstellung hat sie woanders hingeschaut. — Sie hat also doch zugehört.*"
     }
 }

@@ -363,5 +363,201 @@
     "after1_pre_miss": {
         "name": "{name}",
         "text": "*Je continue dans le couloir.*"
+    },
+    "after_miss_dain_6_ins": {
+        "name": "{name}",
+        "text": "*Elle fait un signe de la main et repart en courant. — En freinant, elle a légèrement traîné sa jambe droite. Ou pas ? C'était trop rapide pour en être sûr.*"
+    },
+    "after_miss_yuna_1_ins": {
+        "name": "{name}",
+        "text": "Hé, tu as fait tomber ça..."
+    },
+    "after_miss_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*Je le ramasse et le lui tends. Yuna s'arrête et prend le marque-page.*"
+    },
+    "after_miss_yuna_3_ins": {
+        "name": "{name}",
+        "text": "*Et elle reprend sa route.*"
+    },
+    "after_hidden_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "Je... faisais juste le tour de l'école, c'est le premier jour."
+    },
+    "after_hidden_homeroom_3_ins2": {
+        "name": "Professeure principale",
+        "text": "Tu as exploré jusqu'à la salle des profs ? C'est original. — Entre une seconde."
+    },
+    "after_homeroom_ok_ins": {
+        "name": "{name}",
+        "text": "*La professeure fait un signe de la main et se dirige vers la salle des profs.*"
+    },
+    "after_homeroom_ok_2_ins": {
+        "name": "{name}",
+        "text": "*La professeure s'arrête un instant. Elle s'adosse au mur du couloir.*"
+    },
+    "after_homeroom_honest_3_ins": {
+        "name": "{name}",
+        "text": "*Quelque chose de similaire ? — Ça veut dire qu'elle faisait autre chose avant d'enseigner ?*"
+    },
+    "after_homeroom_honest_6_ins": {
+        "name": "{name}",
+        "text": "*'Intérêt éducatif'. — Le genre de personne qui emballe sa bienveillance dans des termes professionnels.*"
+    },
+    "after_homeroom_honest_choice2a_ins": {
+        "name": "{name}",
+        "text": "*Elle l'a admis franchement. — La façade de cette personne tombe étonnamment vite.*"
+    },
+    "after_homeroom_honest_choice2b_ins": {
+        "name": "{name}",
+        "text": "*Elle a ri. — C'est la première fois que je vois cette personne rire à une blague.*"
+    },
+    "after_homeroom_honest_choice2b_ins2": {
+        "name": "{name}",
+        "text": "*La professeure se dirige vers la salle des profs — puis s'arrête. Elle triture quelque chose dans sa poche. Un stylo, peut-être ?*"
+    },
+    "after_homeroom_honest_9_ins": {
+        "name": "{name}",
+        "text": "*Tout à l'heure en classe, elle avait dit 'je retiens les noms du premier coup'. — Le dire deux fois, ça veut dire quelque chose.*"
+    },
+    "after_hidden_nurse_intro_ins": {
+        "name": "{name}",
+        "text": "*Le panneau de l'infirmerie est là. — Allons voir.*"
+    },
+    "after_hidden_nurse_intro_ins2": {
+        "name": "{name}",
+        "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant. Rideaux blancs, lits blancs, un petit bureau.*"
+    },
+    "after_nurse_enter_2_ins": {
+        "name": "{name}",
+        "text": "*Son ton est léger. On se croirait plus dans un café que dans une infirmerie.*"
+    },
+    "after_nurse_enter_4_ins": {
+        "name": "{name}",
+        "text": "Comment vous avez deviné ?"
+    },
+    "after_nurse_enter_4_ins2": {
+        "name": "Infirmière",
+        "text": "Ton uniforme est raide comme du carton. Ça sent l'amidon.\" *Snif snif* \"Oh, il y a aussi une odeur de cerisier. Un élève transféré romantique.\""
+    },
+    "after_nurse_enter_4_ins3": {
+        "name": "{name}",
+        "text": "*Elle est perspicace, ou elle plaisante ? — Sûrement les deux.*"
+    },
+    "after_nurse_enter_4_ins4": {
+        "name": "{name}",
+        "text": "*L'infirmière se lève et s'approche. Ses gestes sont fluides. — Bien au-dessus du niveau d'une infirmière scolaire ordinaire. Des mouvements ancrés dans le corps. Les mains de quelqu'un qui a fait ça des centaines de fois.*"
+    },
+    "after_nurse_enter_6_ins": {
+        "name": "{name}",
+        "text": "On peut connaître la tension en touchant le front ?"
+    },
+    "after_nurse_enter_7_ins": {
+        "name": "{name}",
+        "text": "*Je m'allonge sur le lit. Le plafond est blanc.*"
+    },
+    "after_nurse_enter_7_ins2": {
+        "name": "Infirmière",
+        "text": "*Tirant le rideau à moitié* \"Tu veux de l'eau ? Ou quelque chose de chaud ?\""
+    },
+    "after_nurse_enter_7_ins3": {
+        "name": "{name}",
+        "text": "De l'eau, ça ira."
+    },
+    "after_nurse_enter_8_ins": {
+        "name": "{name}",
+        "text": "Mais vous êtes enseignante."
+    },
+    "after_nurse_enter_8_ins2": {
+        "name": "Infirmière",
+        "text": "*Tendant un verre d'eau* \"C'est vrai, je suis enseignante. ...J'oublie parfois.\""
+    },
+    "after_nurse_enter_8_ins3": {
+        "name": "{name}",
+        "text": "*Elle oublie parfois. — On dirait une blague, mais il y a une pointe de vérité.*"
+    },
+    "after_nurse_enter_9_ins": {
+        "name": "{name}",
+        "text": "Cette plante — c'est la vôtre ?"
+    },
+    "after_nurse_enter_9_ins2": {
+        "name": "Infirmière",
+        "text": "Oui, du romarin. — Je l'ai depuis mes années à l'hôpital."
+    },
+    "after_nurse_enter_9_ins3": {
+        "name": "{name}",
+        "text": "L'hôpital ?"
+    },
+    "after_nurse_enter_9_ins4": {
+        "name": "{name}",
+        "text": "*L'infirmière marque une pause. Puis sourit.*"
+    },
+    "after_nurse_enter_10_ins": {
+        "name": "{name}",
+        "text": "*'Que des blessures légères'. — Il y a du soulagement dans ces mots. Ça veut aussi dire qu'elle en a vu beaucoup qui ne l'étaient pas.*"
+    },
+    "after_nurse_enter_10_ins2": {
+        "name": "{name}",
+        "text": "*Dix minutes passent. Je me relève.*"
+    },
+    "after_nurse_enter_10_ins3": {
+        "name": "{name}",
+        "text": "Merci. Je me sens un peu mieux."
+    },
+    "after_nurse_enter_11_ins": {
+        "name": "{name}",
+        "text": "Ça vous embête ?"
+    },
+    "after_nurse_enter_11_ins2": {
+        "name": "Infirmière",
+        "text": "*Plissant les yeux* \"Quand un patient revient sans cesse, évidemment que je m'inquiète. — Parce que je suis enseignante.\""
+    },
+    "after_nurse_enter_11_ins3": {
+        "name": "{name}",
+        "text": "*'Parce que je suis enseignante'. — Cette phrase est comme un bouclier. Elle cache quelque chose derrière le titre d'enseignante.*"
+    },
+    "after_nurse_enter_11_ins4": {
+        "name": "{name}",
+        "text": "*L'infirmière marque un bref temps d'arrêt. Son sourire revient avec 0,3 seconde de retard.*"
+    },
+    "after_nurse_enter_11_ins5": {
+        "name": "Infirmière",
+        "text": "...Tu es un patient perspicace. C'est censé être moi qui m'inquiète."
+    },
+    "after_nurse_enter_11_ins6": {
+        "name": "{name}",
+        "text": "*Elle semble surprise qu'un patient s'inquiète pour elle. — Elle a toujours été celle qui prend soin des autres, jamais celle dont on prend soin.*"
+    },
+    "after_nurse_enter_11_ins7": {
+        "name": "Infirmière",
+        "text": "N'est-ce pas ? C'est bien ici. — Calme, et si on oublie l'odeur de désinfectant, c'est parfait."
+    },
+    "after_nurse_enter_11_ins8": {
+        "name": "{name}",
+        "text": "*En entendant que c'est confortable, ses yeux s'illuminent. — Cet endroit doit être son havre de paix.*"
+    },
+    "after_nurse_enter_11_ins9": {
+        "name": "{name}",
+        "text": "*Je m'apprête à sortir de l'infirmerie quand — derrière moi.*"
+    },
+    "after_nurse_enter_11_ins10": {
+        "name": "Infirmière",
+        "text": "Oh, le nouveau."
+    },
+    "after_nurse_enter_11_ins11": {
+        "name": "Infirmière",
+        "text": "C'est quoi ton prénom ?"
+    },
+    "after_nurse_enter_11_ins12": {
+        "name": "{name}",
+        "text": "{name}."
+    },
+    "after_nurse_enter_12_ins": {
+        "name": "{name}",
+        "text": "*Un petit rire, mais ses yeux ne rient pas. — Avec cette personne, la frontière entre blague et sincérité est toujours floue.*"
+    },
+    "after_nurse_enter_12_ins2": {
+        "name": "{name}",
+        "text": "*J'ai assez exploré pour aujourd'hui. Rentrons nous reposer.*"
     }
 }

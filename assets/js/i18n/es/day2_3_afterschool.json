@@ -571,5 +571,165 @@
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*Salimos del gimnasio y caminamos por la calle.*"
+    },
+    "after2_dain_9_ins": {
+        "name": "Dain",
+        "text": "*Con los ojos muy abiertos* \"¿Eh? Iba a ir suave, pero mejor no.\""
+    },
+    "after2_dain_9_ins2": {
+        "name": "{name}",
+        "text": "*Dain baja su postura. Su mirada cambia.*"
+    },
+    "after2_dain_9_ins3": {
+        "name": "Dain",
+        "text": "¡Ahora va en serio!"
+    },
+    "after2_dain_9_ins4": {
+        "name": "{name}",
+        "text": "*El rally va y viene. Los movimientos de Dain son — claramente fuera de lo normal. Rápidos, precisos, su cuerpo recuerda cada movimiento.*"
+    },
+    "after2_dain_9_ins5": {
+        "name": "{name}",
+        "text": "*Esta chica es realmente buena. — No es solo alguien a quien le gusta el deporte, sino alguien que apostó su vida por ello.*"
+    },
+    "after2_dain_9_ins6": {
+        "name": "{name}",
+        "text": "*Resultado final: 3-2. Gané por los pelos.*"
+    },
+    "after2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*El puesto de tteokbokki cerca de la escuela.*"
+    },
+    "after2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*Dain sopla el tteokbokki y habla.*"
+    },
+    "after2_dain_end_ins3": {
+        "name": "{name}",
+        "text": "*El puesto de tteokbokki cerca de la escuela.*"
+    },
+    "after2_seo_4_ins": {
+        "name": "{name}",
+        "text": "*La palabra 'favor' no parece existir en el vocabulario de esta persona.*"
+    },
+    "after2_seo_6_ins": {
+        "name": "{name}",
+        "text": "*La palabra 'favor' no parece existir en el vocabulario de esta persona.*"
+    },
+    "after2_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*Empiezo a ordenar papeles. Presupuestos de eventos, solicitudes de clubes. Hay bastante.*"
+    },
+    "after2_seo_8b4_ins": {
+        "name": "{name}",
+        "text": "*Lo dijo directamente: 'cumplido'. — Eso parece raro viniendo de ella.*"
+    },
+    "after2_seo_8b4_ins2": {
+        "name": "{name}",
+        "text": "*Mientras ordenamos, Seoyeon gira el cuello. Parece que lo tiene agarrotado.*"
+    },
+    "after2_seo_sunset_joke_ins": {
+        "name": "Seoyeon",
+        "text": "...Eres la primera persona que dice algo tan cursi con tanta naturalidad."
+    },
+    "after2_seo_sunset_react_ins": {
+        "name": "Seoyeon",
+        "text": "Tienes el cuello bastante tenso. Quédate quieto un momento."
+    },
+    "after2_seo_neck_react_ins": {
+        "name": "Seoyeon",
+        "text": "Tienes el cuello bastante tenso. Quédate quieto un momento."
+    },
+    "after2_seo_neck_react_ins2": {
+        "name": "{name}",
+        "text": "*Seoyeon se levanta y se mueve detrás de mí. Su mano se posa en mi hombro.*"
+    },
+    "after2_seo_neck_high_ins": {
+        "name": "Seoyeon",
+        "text": "*En voz baja* \"...No te muevas. Solo un momento.\""
+    },
+    "after2_seo_neck_high_ins2": {
+        "name": "{name}",
+        "text": "*¿De quién es esa mano? — Es la mano de Seoyeon en mi hombro. Mis pensamientos se revuelven. Así de tenso estoy.*"
+    },
+    "after2_seo_neck_low_ins": {
+        "name": "{name}",
+        "text": "¿Qué fue eso de repente?"
+    },
+    "after2_seo_neck_low_ins2": {
+        "name": "Seoyeon",
+        "text": "*Retirando la mano* \"...No fue nada.\""
+    },
+    "after2_yuna_1_ins": {
+        "name": "{name}",
+        "text": "*El pasillo del anexo. Ni un alma. — La puerta de la sala de lectura secreta está entreabierta.*"
+    },
+    "after2_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*El pasillo del anexo. Ni un alma. — La puerta de la sala de lectura secreta está entreabierta.*"
+    },
+    "after2_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Yuna levanta la vista. No se sorprende.*"
+    },
+    "after2_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*Yuna levanta la vista. No se sorprende.*"
+    },
+    "after2_yuna_8b_ins": {
+        "name": "{name}",
+        "text": "*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
+    },
+    "after2_yuna_8b_ins2": {
+        "name": "{name}",
+        "text": "*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
+    },
+    "after2_yuna_choice_pre3_ins": {
+        "name": "{name}",
+        "text": "*Yuna dijo dos frases seguidas. — Para alguien que normalmente habla en una sola línea, eso es mucho.*"
+    },
+    "after2_yuna_everyday_ins": {
+        "name": "Yuna",
+        "text": "...Ven si quieres. No te voy a detener."
+    },
+    "minsu_warn_4_ins": {
+        "name": "{name}",
+        "text": "*Los labios de Yuna se curvan hacia arriba casi imperceptiblemente.*"
+    },
+    "minsu_warn_1_ins": {
+        "name": "Minsu",
+        "text": "*Caminando a mi lado* \"¿Te diviertes últimamente?\""
+    },
+    "minsu_warn_7_ins": {
+        "name": "{name}",
+        "text": "*Minsu deja de caminar. Se da la vuelta. Su tono juguetón habitual ha desaparecido.*"
+    },
+    "minsu_warn_7_ins2": {
+        "name": "Minsu",
+        "text": "Oye, llevo un año en esta clase. Seoyeon nunca habla primero con un chico. Dain nunca le ha comprado pan a otro chico. Yuna — ¿notas? No se las escribe a nadie."
+    },
+    "minsu_warn_12_ins": {
+        "name": "{name}",
+        "text": "*Minsu se ajusta la correa de la mochila.*"
+    },
+    "minsu_warn_13_ins": {
+        "name": "{name}",
+        "text": "*— Se me corta la respiración.*"
+    },
+    "minsu_warn_15_ins": {
+        "name": "Dain",
+        "text": "¡¡Apostemos de nuevo mañana!! ¡¡Otro juego!!"
+    },
+    "minsu_warn_15_ins2": {
+        "name": "Seoyeon",
+        "text": "Mañana a la hora de comer dejaré la azotea abierta. Ven."
+    },
+    "minsu_warn_15_ins3": {
+        "name": "{name}",
+        "text": "*La antigua escuela. — Esas palabras me golpean fuerte.*"
+    },
+    "minsu_warn_15_ins4": {
+        "name": "{name}",
+        "text": "*— Me detengo en seco.*"
     }
 }

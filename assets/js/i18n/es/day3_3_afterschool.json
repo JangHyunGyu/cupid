@@ -519,5 +519,169 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*Salí a la entrada de la escuela.*"
+    },
+    "after3_seo_5_ins": {
+        "name": "Seoyeon",
+        "text": "*Arreglándose el pelo apresuradamente* \"...¿Viste?\""
+    },
+    "after3_seo_choice1_react_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon mira por la ventana. No puedo ver su expresión. — Lo está ocultando a propósito.*"
+    },
+    "after3_seo_choice1_react_ins2": {
+        "name": "{name}",
+        "text": "*Pero — su meñique se mueve ligeramente sobre el escritorio. Como si quisiera agarrar algo. Inconscientemente.*"
+    },
+    "after3_seo_choice1_react_ins3": {
+        "name": "{name}",
+        "text": "*Seoyeon se recompone. Vuelve la cara de la presidenta del consejo. — Pero no es perfecta. El ángulo de su sonrisa está medio grado desviado.*"
+    },
+    "after3_seo_choice1_react_ins4": {
+        "name": "Seoyeon",
+        "text": "...Gracias."
+    },
+    "after3_seo_choice1_react_ins5": {
+        "name": "{name}",
+        "text": "Sé guardar secretos."
+    },
+    "after3_seo_choice1_react_ins6": {
+        "name": "Seoyeon",
+        "text": "*Ordenando papeles* \"Yo también sé uno de tus secretos.\""
+    },
+    "after3_seo_choice1_react_ins7": {
+        "name": "Seoyeon",
+        "text": "A la hora de comer, tus ojos brillaron cuando comiste el rollo de huevo. — Eso no se puede fingir."
+    },
+    "after3_seo_choice1_react_ins8": {
+        "name": "{name}",
+        "text": "*Le ofrecí guardar su secreto, y ella sacó un secreto de igual peso. — Para esta persona, la igualdad va antes que la gratitud.*"
+    },
+    "after3_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*...¿No es esto sobre mí?*"
+    },
+    "after3_yuna_choice1_2_ins": {
+        "name": "Yuna",
+        "text": "*Abrazando el cuaderno contra su pecho* \"...Las novelas son. Ficción.\""
+    },
+    "after3_yuna_choice2_3_ins": {
+        "name": "{name}",
+        "text": "*Yuna dijo más de dos frases seguidas. — Nunca la había visto hablar tanto.*"
+    },
+    "after3_dain_5_ins": {
+        "name": "Dain",
+        "text": "¡¡Te digo que estoy bien!! ¡¡No es nada!!"
+    },
+    "after3_confront_5_ins": {
+        "name": "Dain",
+        "text": "*Suelta una risa débil.* \"...Vaya. No debería conmoverme por algo así.\""
+    },
+    "after3_confront_5_ins2": {
+        "name": "{name}",
+        "text": "*Lo aceptó. — Es la primera vez que Dain no rechaza la ayuda de alguien. Una sonrisa sin signos de exclamación pesa extrañamente.*"
+    },
+    "haeun_warn_5c_ins": {
+        "name": "Seoyeon",
+        "text": "Cuando les sonríes a las demás, sentía como si algo dentro de mí se derrumbara."
+    },
+    "after3_confront_admit_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon baja la cabeza.*"
+    },
+    "after3_confront_admit_4_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon se da la vuelta. — Se detiene.*"
+    },
+    "after3_confront_excuse_ins": {
+        "name": "{name}",
+        "text": "*Los ojos de Seoyeon están fríos. Una temperatura que nunca había visto.*"
+    },
+    "after3_confront_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon se detiene un momento. Sus ojos vacilan.*"
+    },
+    "after3_confront_lie_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon se da la vuelta. — No se detiene.*"
+    },
+    "after3_confront_lie_2_ins2": {
+        "name": "{name}",
+        "text": "*Su espalda está recta. Perfectamente. — Pero tiene los puños apretados. Los nudillos blancos.*"
+    },
+    "haeun_warn_1_ins": {
+        "name": "{name}",
+        "text": "*Haeun está apoyada contra la pared. Juguetea con su pulsera del consejo estudiantil.*"
+    },
+    "haeun_warn_2_ins": {
+        "name": "{name}",
+        "text": "¿Haeun? ¿Qué haces aquí?"
+    },
+    "haeun_warn_3_ins": {
+        "name": "Haeun",
+        "text": "...Ella lloró."
+    },
+    "haeun_warn_3_ins2": {
+        "name": "{name}",
+        "text": "*— ¿Qué?*"
+    },
+    "haeun_warn_6_ins": {
+        "name": "{name}",
+        "text": "*Haeun baja la cabeza.*"
+    },
+    "haeun_warn_7_ins": {
+        "name": "{name}",
+        "text": "*Haeun se detiene. Su cara dice que sabe que no debería pasarse de la raya.*"
+    },
+    "haeun_warn_7_ins2": {
+        "name": "Haeun",
+        "text": "...De todos modos. Por favor, trátenla bien. Se lo pido."
+    },
+    "haeun_warn_7_ins3": {
+        "name": "{name}",
+        "text": "*Haeun se da la vuelta y se va.*"
+    },
+    "haeun_warn_7_ins4": {
+        "name": "{name}",
+        "text": "*Las cosas están complicadas en casa de Seoyeon. Sus padres. — ¿Por eso Seoyeon 'tenía que ser perfecta'?*"
+    },
+    "minsu_d3_8_ins": {
+        "name": "{name}",
+        "text": "...¿Qué?"
+    },
+    "minsu_d3_3_ins": {
+        "name": "{name}",
+        "text": "*No tengo nada que decir.*"
+    },
+    "minsu_d3_4_ins": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_d3_4_ins2": {
+        "name": "Minsu",
+        "text": "Ya no es 'más adelante'. Es ahora."
+    },
+    "minsu_d3_5_ins": {
+        "name": "{name}",
+        "text": "...Sí."
+    },
+    "minsu_d3_6b_ins": {
+        "name": "{name}",
+        "text": "*Minsu me agarra el hombro.*"
+    },
+    "minsu_d3_7_ins": {
+        "name": "{name}",
+        "text": "*Rechazar también es amor. — En mi antigua escuela, ni siquiera le di a Sojeong la oportunidad de decir 'no.' Porque no pude decir nada. Ella empezó a salir con alguien sin saber lo que sentía, y yo me cambié de escuela con 38 confesiones sin enviar guardadas en las notas de mi teléfono.*"
+    },
+    "minsu_d3_7_ins2": {
+        "name": "{name}",
+        "text": "*Si Sojeong hubiera podido rechazarme entonces — quizás no me seguiría atormentando.*"
+    },
+    "minsu_d3_7_ins3": {
+        "name": "{name}",
+        "text": "*Si rechazar es amor, lo que tengo que hacer ahora no es decirles 'sí' a todas — sino decirle 'sí' a una sola persona.*"
+    },
+    "minsu_d3_10_ins": {
+        "name": "{name}",
+        "text": "*Minsu se adelanta caminando.*"
     }
 }

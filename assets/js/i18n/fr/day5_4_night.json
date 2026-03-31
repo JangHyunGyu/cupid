@@ -920,5 +920,345 @@
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
         "text": "*Les pansements sont encore dans le tiroir. Même s'il n'y en a plus besoin. — Quelqu'un qui n'a plus besoin d'excuses ne peut quand même pas abandonner l'habitude.*"
+    },
+    "perfect_seo_1_ins": {
+        "name": "{name}",
+        "text": "*Pour la première fois, elle enlève ses lunettes — et elle pleure.*"
+    },
+    "perfect_seo_5_ins": {
+        "name": "{name}",
+        "text": "*La brise du toit souffle.*"
+    },
+    "true_seo_7_ins": {
+        "name": "{name}",
+        "text": "*On a lié nos petits doigts. L'habitude du Jour 1, la promesse du Jour 4, et maintenant. — Même doigt, troisième signification.*"
+    },
+    "true_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Yuna grimpe la petite échelle du grenier. Il y a une trappe vers le haut. — En l'ouvrant, une brise s'engouffre.*"
+    },
+    "true_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*Au-dessus du grenier, il y avait un toit. Le toit de l'annexe de la bibliothèque. — Un passage secret que personne ne connaît.*"
+    },
+    "true_yuna_2_ins3": {
+        "name": "{name}",
+        "text": "*Yuna s'appuie contre la rambarde. Les étoiles sont visibles.*"
+    },
+    "true_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*Yuna s'arrête un instant. — Sourit. Un sourire silencieux que je n'avais jamais vu.*"
+    },
+    "hidden_true_homeroom_5_ins": {
+        "name": "{name}",
+        "text": "*Jour de la remise des diplômes. — Le temps a passé.*"
+    },
+    "hidden_true_homeroom_5_ins2": {
+        "name": "{name}",
+        "text": "*L'uniforme n'est plus raide. Non — aujourd'hui, c'est le jour où je l'enlève.*"
+    },
+    "hidden_true_homeroom_2_ins": {
+        "name": "{name}",
+        "text": "*Pas de cardigan, pas de porte-bloc. Un pull confortable et une jupe longue. — En civil.*"
+    },
+    "hidden_true_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "Merci."
+    },
+    "hidden_true_homeroom_3_ins2": {
+        "name": "Professeure principale",
+        "text": "...Ça."
+    },
+    "hidden_true_homeroom_4_ins": {
+        "name": "{name}",
+        "text": "*C'était inconscient. — Au moment du diplôme, le titre s'est effacé.*"
+    },
+    "hidden_true_homeroom_4_ins2": {
+        "name": "{name}",
+        "text": "*Elle sort une enveloppe. Cette fois, pas marron — blanche.*"
+    },
+    "hidden_true_homeroom_4_ins3": {
+        "name": "Professeure principale",
+        "text": "J'ai terminé le manuscrit. — J'ai pu l'écrire parce que tu étais mon premier lecteur."
+    },
+    "hidden_true_homeroom_4_ins4": {
+        "name": "{name}",
+        "text": "Mon avis a aidé ?"
+    },
+    "hidden_true_homeroom_4_ins5": {
+        "name": "Professeure principale",
+        "text": "J'ai demandé une ligne et tu es revenu avec trois pages.\" *Un petit rire* \"Une prof de création littéraire qui manque de pleurer devant l'avis d'un élève — c'est notre secret."
+    },
+    "hidden_true_homeroom_4_ins6": {
+        "name": "{name}",
+        "text": "*Elle regarde par la fenêtre. Les cerisiers perdent leurs fleurs.*"
+    },
+    "hidden_true_homeroom_4_ins7": {
+        "name": "Professeure principale",
+        "text": "*Se détournant de la fenêtre* \"...Juste une chose."
+    },
+    "hidden_true_homeroom_6_ins": {
+        "name": "{name}",
+        "text": "*Du jus au café. — D'élève à adulte. Ce n'est pas franchir la ligne — c'est la ligne qui a disparu.*"
+    },
+    "hidden_true_homeroom_7_ins": {
+        "name": "{name}",
+        "text": "*Elle sourit. Pas un sourire sec — le sourire de quelqu'un qui a achevé un manuscrit de sept ans.*"
+    },
+    "hidden_true_homeroom_7_ins2": {
+        "name": "Professeure principale",
+        "text": "...Je ne devrais pas faire ça.\" *— Sa voix s'éteint. Puis elle sourit.*"
+    },
+    "hidden_true_homeroom_7_ins3": {
+        "name": "{name}",
+        "text": "*Une dernière fois. Puis l'habitude se brise. — Sept ans de « professeure » sont terminés, et le jour de l'appeler par son prénom est venu.*"
+    },
+    "hidden_true_homeroom_7_ins4": {
+        "name": "{name}",
+        "text": "*La cérémonie est finie. — Pas l'infirmerie, pas le café promis. Chez elle.*"
+    },
+    "hidden_true_homeroom_7_ins5": {
+        "name": "{name}",
+        "text": "*Le salon. Un plaid sur le canapé. Deux tasses de cacao sur la petite table. — Un pot de romarin près de la fenêtre. Celui de l'infirmerie.*"
+    },
+    "hidden_true_homeroom_7_ins6": {
+        "name": "{name}",
+        "text": "*L'infirmière — non, Juwon maintenant — est assise sur le canapé. Sans lunettes, un pull à la place de la blouse blanche.*"
+    },
+    "hidden_true_homeroom_7_ins7": {
+        "name": "Infirmière",
+        "text": "Désolée, c'est plus petit que l'infirmerie."
+    },
+    "hidden_true_homeroom_7_ins8": {
+        "name": "{name}",
+        "text": "Je préfère quand c'est petit."
+    },
+    "hidden_true_homeroom_7_ins9": {
+        "name": "Infirmière",
+        "text": "*En tendant le cacao* \"...Je n'ai pas apporté de pansements. Parce qu'aujourd'hui, je t'ai appelé sans prétexte."
+    },
+    "hidden_true_homeroom_7_ins10": {
+        "name": "{name}",
+        "text": "*Sans prétexte. — Elle a enfin baissé sa garde.*"
+    },
+    "hidden_true_homeroom_7_ins11": {
+        "name": "{name}",
+        "text": "*Les cerisiers sont visibles par la fenêtre. Le parfum du romarin se mêle au cacao.*"
+    },
+    "hidden_true_nurse_1_ins": {
+        "name": "Infirmière",
+        "text": "Tu sais, tu disais que c'était dur à l'hôpital universitaire parce que personne ne t'appelait par ton nom."
+    },
+    "hidden_true_nurse_1_ins2": {
+        "name": "Infirmière",
+        "text": "*Doucement* \"...Tu as été le premier. La première personne à demander mon prénom."
+    },
+    "hidden_true_nurse_1_ins3": {
+        "name": "{name}",
+        "text": "*Juwon. — Rien que prononcer son prénom suffit à faire briller ses yeux.*"
+    },
+    "hidden_true_nurse_4_ins": {
+        "name": "{name}",
+        "text": "*Jour de la remise des diplômes.*"
+    },
+    "hidden_true_nurse_4_ins2": {
+        "name": "{name}",
+        "text": "*J'ai reçu mon diplôme et franchi le portail — en passant devant l'infirmerie. Par habitude.*"
+    },
+    "hidden_true_nurse_4_ins3": {
+        "name": "{name}",
+        "text": "*Un pansement est collé sur la porte de l'infirmerie. De petits mots.*"
+    },
+    "hidden_true_nurse_4_ins4": {
+        "name": "{name}",
+        "text": "*« Félicitations pour ton diplôme. Je t'attends au café, pas à l'infirmerie. — Plan à l'intérieur du pansement »*"
+    },
+    "hidden_true_nurse_4_ins5": {
+        "name": "{name}",
+        "text": "*En décollant le pansement — à l'intérieur, un petit plan est dessiné. Le café devant l'école.*"
+    },
+    "hidden_true_nurse_2_ins": {
+        "name": "{name}",
+        "text": "*Pas une enseignante — juste une femme.*"
+    },
+    "hidden_true_nurse_2_ins2": {
+        "name": "Infirmière",
+        "text": "Félicitations pour ton diplôme."
+    },
+    "hidden_true_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "Merci."
+    },
+    "hidden_true_nurse_8_ins": {
+        "name": "Infirmière",
+        "text": "*Faisant tourner sa tasse de café* \"Le diplôme fait effet plus vite que prévu."
+    },
+    "hidden_true_nurse_8_ins2": {
+        "name": "{name}",
+        "text": "*Le diplôme efface la ligne. — Dans un café au lieu de l'infirmerie, avec une personne au lieu d'une enseignante.*"
+    },
+    "hidden_true_nurse_8_ins3": {
+        "name": "{name}",
+        "text": "*L'infirmière me regarde. Sans malice.*"
+    },
+    "hidden_true_nurse_8_ins4": {
+        "name": "Infirmière",
+        "text": "Tu sais, le Jour 1, quand tu es venu à l'infirmerie."
+    },
+    "hidden_true_nurse_8_ins5": {
+        "name": "{name}",
+        "text": "Parce que j'avais le vertige."
+    },
+    "hidden_true_nurse_8_ins6": {
+        "name": "Infirmière",
+        "text": "Je t'ai touché le front et j'ai dit « je voulais juste te toucher ». C'était une blague."
+    },
+    "hidden_true_nurse_8_ins7": {
+        "name": "{name}",
+        "text": "Je sais."
+    },
+    "hidden_true_nurse_5_ins": {
+        "name": "{name}",
+        "text": "*Sa voix a baissé d'un ton. Toute espièglerie a complètement disparu. — C'est sa sincérité.*"
+    },
+    "hidden_true_nurse_5_ins2": {
+        "name": "Infirmière",
+        "text": "Une enseignante ne devrait pas avoir de sentiments pour un élève. Je le savais. — Alors j'ai tout enveloppé de blagues. Encore et encore."
+    },
+    "hidden_true_nurse_5_ins3": {
+        "name": "Infirmière",
+        "text": "Mais toi, tu as vu la sincérité derrière les blagues."
+    },
+    "hidden_true_nurse_5_ins4": {
+        "name": "{name}",
+        "text": "Mettre trois minutes pour coller un pansement, ce n'est pas juste du soin."
+    },
+    "hidden_true_nurse_5_ins5": {
+        "name": "{name}",
+        "text": "*L'infirmière marque une pause. — Puis sourit. Pas un sourire espiègle.*"
+    },
+    "hidden_true_nurse_7_ins": {
+        "name": "{name}",
+        "text": "*L'infirmière tend la main et touche le pansement sur le dos de ma main. Celui qu'elle a posé hier.*"
+    },
+    "hidden_true_nurse_7_ins2": {
+        "name": "Infirmière",
+        "text": "Maintenant on peut se voir sans pansements. — Sans prétextes."
+    },
+    "hidden_true_nurse_7_ins3": {
+        "name": "{name}",
+        "text": "*La personne qui avait besoin de prétextes. — Le titre de « professeure » était à la fois son excuse et son mur. Ce mur a disparu aujourd'hui.*"
+    },
+    "hidden_true_nurse_7_ins4": {
+        "name": "{name}",
+        "text": "*Remise des diplômes. En attente devant l'école. La professeure principale se tient au portail, serrant la main de chaque diplômé.*"
+    },
+    "hidden_true_nurse_7_ins5": {
+        "name": "{name}",
+        "text": "*Mon tour est venu.*"
+    },
+    "hidden_true_nurse_7_ins6": {
+        "name": "Professeure principale",
+        "text": "Félicitations pour ton diplôme."
+    },
+    "hidden_good_homeroom_4_ins": {
+        "name": "{name}",
+        "text": "*Après la cérémonie. En passant devant l'infirmerie — la porte est ouverte.*"
+    },
+    "hidden_good_homeroom_4_ins2": {
+        "name": "{name}",
+        "text": "*L'infirmière arrose le pot de romarin.*"
+    },
+    "hidden_good_homeroom_4_ins3": {
+        "name": "Infirmière",
+        "text": "Oh, un diplômé."
+    },
+    "hidden_good_homeroom_4_ins4": {
+        "name": "{name}",
+        "text": "Je suis venu dire au revoir une dernière fois."
+    },
+    "hidden_good_homeroom_4_ins5": {
+        "name": "Infirmière",
+        "text": "*En souriant* \"Un patient qui vient dire au revoir le jour de sa sortie. — Ça me touche."
+    },
+    "hidden_good_homeroom_4_ins6": {
+        "name": "{name}",
+        "text": "*L'infirmière sort quelque chose du tiroir. Un petit flacon.*"
+    },
+    "hidden_good_nurse_2_ins": {
+        "name": "{name}",
+        "text": "Intérêt médical ?"
+    },
+    "hidden_good_nurse_2_ins2": {
+        "name": "Infirmière",
+        "text": "*Marquant une pause* \"...Oui. Intérêt médical.\" *Tout bas* \"Cette fois, pour de vrai."
+    },
+    "hidden_good_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "*« Cette fois, pour de vrai. » — Ce qui veut dire que les autres fois, ça ne l'était pas.*"
+    },
+    "hidden_good_nurse_3_ins": {
+        "name": "{name}",
+        "text": "*Ce cœur — cette fois, ce n'est définitivement pas de l'intérêt médical.*"
+    },
+    "good_1_seo_ins": {
+        "name": "{name}",
+        "text": "*Un pétale de cerisier se pose sur les cheveux de Seoyeon. J'hésite à l'enlever — quand Seoyeon penche la tête la première.*"
+    },
+    "good_1_seo_ins2": {
+        "name": "{name}",
+        "text": "*Elle fait semblant d'être parfaite, mais moi non plus je n'étais pas parfait.*"
+    },
+    "good_1_seo_ins3": {
+        "name": "{name}",
+        "text": "*Les cerisiers refleuriront l'an prochain. On a marché côte à côte.*"
+    },
+    "good_1_seo_ins4": {
+        "name": "{name}",
+        "text": "*Le toit. Yuna s'appuie contre la rambarde. Le vent fait voler ses cheveux.*"
+    },
+    "good_1_yuna_b_ins": {
+        "name": "{name}",
+        "text": "*Elle poursuivait l'ombre de quelqu'un qui avait disparu.*"
+    },
+    "good_4_yuna_ins": {
+        "name": "{name}",
+        "text": "*Devant le portail de l'école. Dain attend en lançant un ballon de volley.*"
+    },
+    "bitter_seo_3_ins": {
+        "name": "{name}",
+        "text": "*Dain lance le ballon de volley. Je l'attrape. — C'est comme ça que cette personne fait la paix.*"
+    },
+    "bitter_seo_3_ins2": {
+        "name": "{name}",
+        "text": "*Elle courait même quand ses genoux lui faisaient mal.*"
+    },
+    "bitter_seo_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon au café. Son regard derrière les lunettes est sec. Ni assurance, ni tremblement. Juste — les yeux de quelqu'un venu tourner la page.*"
+    },
+    "bitter_dain_3_ins": {
+        "name": "{name}",
+        "text": "*Je suis sorti du portail. Il pleut. — Pas de parapluie. Les pétales de cerisier collent au sol mouillé sous mes pieds.*"
+    },
+    "bitter_epilogue_2_ins": {
+        "name": "{name}",
+        "text": "*J'ai trouvé le courage. Je l'ai dit. — Mais ce qui est revenu, c'est un silence, tête baissée.*"
+    },
+    "bitter_epilogue_2_ins2": {
+        "name": "{name}",
+        "text": "*\"...Merci. Vraiment. Mais moi, je suis encore — peut-être que cinq jours, c'était trop court.\"*"
+    },
+    "bitter_epilogue_2_ins3": {
+        "name": "{name}",
+        "text": "*Ce n'était pas un refus. C'était le timing. — Le résultat de cinq jours où je ne me suis pas assez rapproché.*"
+    },
+    "harem_1_ins": {
+        "name": "{name}",
+        "text": "*Yuna a baissé la tête. Longtemps. Quand elle l'a relevée, ses yeux étaient secs mais elle souriait. \"...Imbécile.\" Ce seul mot contenait l'émotion de deux phrases.*"
+    },
+    "alone_2_ins": {
+        "name": "{name}",
+        "text": "*Les cerisiers tombent derrière la fenêtre. Les mêmes qui frôlaient mon nez il y a cinq jours se dispersent maintenant dans le vent.*"
     }
 }

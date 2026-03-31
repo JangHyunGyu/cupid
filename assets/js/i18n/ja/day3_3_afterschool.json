@@ -519,5 +519,169 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*校門の前に出た。*"
+    },
+    "after3_seo_5_ins": {
+        "name": "ソヨン",
+        "text": "*慌てて髪を整えながら* 「……見た？」"
+    },
+    "after3_seo_choice1_react_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが窓の外を見る。表情が見えない。——わざと見せないようにしている。*"
+    },
+    "after3_seo_choice1_react_ins2": {
+        "name": "{name}",
+        "text": "*でも——小指が机の上でかすかに動いている。何かを掴もうとするように。無意識に。*"
+    },
+    "after3_seo_choice1_react_ins3": {
+        "name": "{name}",
+        "text": "*ソヨンが姿勢を正す。生徒会長の顔が戻る。——でも完璧じゃない。笑顔の角度が0.5度ずれている。*"
+    },
+    "after3_seo_choice1_react_ins4": {
+        "name": "ソヨン",
+        "text": "……ありがとう。"
+    },
+    "after3_seo_choice1_react_ins5": {
+        "name": "{name}",
+        "text": "秘密は守るよ。"
+    },
+    "after3_seo_choice1_react_ins6": {
+        "name": "ソヨン",
+        "text": "*書類を整理しながら* 「私もあなたの秘密、一つ知ってるよ」"
+    },
+    "after3_seo_choice1_react_ins7": {
+        "name": "ソヨン",
+        "text": "お昼に卵焼き食べたとき、目がキラキラしてたよ。——あれは演技できないから。"
+    },
+    "after3_seo_choice1_react_ins8": {
+        "name": "{name}",
+        "text": "*秘密を守ると言ったら、同等の秘密を出してきた。——この人は「ありがとう」より「対等」が先なんだ。*"
+    },
+    "after3_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*……これ、僕のことじゃないか？*"
+    },
+    "after3_yuna_choice1_2_ins": {
+        "name": "ユナ",
+        "text": "*ノートを胸に抱きしめながら* 「……小説は。フィクションだから」"
+    },
+    "after3_yuna_choice2_3_ins": {
+        "name": "{name}",
+        "text": "*ユナが二文以上続けて話した。——この人がこれだけ話すのは初めて見た。*"
+    },
+    "after3_dain_5_ins": {
+        "name": "ダイン",
+        "text": "だから大丈夫だって！！大したことないから！！"
+    },
+    "after3_confront_5_ins": {
+        "name": "ダイン",
+        "text": "*力なく笑う。* 「……なんだよ。こんなことで感動しちゃダメなのに」"
+    },
+    "after3_confront_5_ins2": {
+        "name": "{name}",
+        "text": "*受け入れた。——ダインが誰かの助けを断らなかったのは初めてだ。ビックリマークのない笑顔が、不思議なほど重い。*"
+    },
+    "haeun_warn_5c_ins": {
+        "name": "ソヨン",
+        "text": "あなたが他の子に笑いかけるたび、私の中で何かが崩れていく気がしたの。"
+    },
+    "after3_confront_admit_ins": {
+        "name": "{name}",
+        "text": "*ソヨンがうつむく。*"
+    },
+    "after3_confront_admit_4_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが背を向ける。——立ち止まる。*"
+    },
+    "after3_confront_excuse_ins": {
+        "name": "{name}",
+        "text": "*ソヨンの目が冷たい。初めて見る温度だ。*"
+    },
+    "after3_confront_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが一瞬止まる。目が揺れる。*"
+    },
+    "after3_confront_lie_2_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが背を向ける。——止まらない。*"
+    },
+    "after3_confront_lie_2_ins2": {
+        "name": "{name}",
+        "text": "*背筋が真っ直ぐだ。完璧に。——でも拳が握られている。手の甲が白い。*"
+    },
+    "haeun_warn_1_ins": {
+        "name": "{name}",
+        "text": "*ハウンが壁にもたれて立っている。生徒会のブレスレットをいじっている。*"
+    },
+    "haeun_warn_2_ins": {
+        "name": "{name}",
+        "text": "ハウン？なんでここに？"
+    },
+    "haeun_warn_3_ins": {
+        "name": "ハウン",
+        "text": "……先輩が、泣いてました。"
+    },
+    "haeun_warn_3_ins2": {
+        "name": "{name}",
+        "text": "*——え？*"
+    },
+    "haeun_warn_6_ins": {
+        "name": "{name}",
+        "text": "*ハウンがうつむく。*"
+    },
+    "haeun_warn_7_ins": {
+        "name": "{name}",
+        "text": "*ハウンが言葉を止める。踏み込みすぎてはいけないという顔。*"
+    },
+    "haeun_warn_7_ins2": {
+        "name": "ハウン",
+        "text": "……とにかく。先輩に優しくしてあげてください。お願いです。"
+    },
+    "haeun_warn_7_ins3": {
+        "name": "{name}",
+        "text": "*ハウンが振り返って歩いていく。*"
+    },
+    "haeun_warn_7_ins4": {
+        "name": "{name}",
+        "text": "*ソヨンの家が複雑だ。両親。——ソヨンが「完璧でなければならなかった理由」がそこにあるのか。*"
+    },
+    "minsu_d3_8_ins": {
+        "name": "{name}",
+        "text": "……何を？"
+    },
+    "minsu_d3_3_ins": {
+        "name": "{name}",
+        "text": "*何も言えない。*"
+    },
+    "minsu_d3_4_ins": {
+        "name": "{name}",
+        "text": "……"
+    },
+    "minsu_d3_4_ins2": {
+        "name": "ミンス",
+        "text": "もう「あとで」じゃない。今だよ。"
+    },
+    "minsu_d3_5_ins": {
+        "name": "{name}",
+        "text": "……そうだよな。"
+    },
+    "minsu_d3_6b_ins": {
+        "name": "{name}",
+        "text": "*ミンスが僕の肩を掴む。*"
+    },
+    "minsu_d3_7_ins": {
+        "name": "{name}",
+        "text": "*断るのも愛。——前の学校で、ソジョンに「断る」機会すら与えられなかった。僕が何も言えなかったから。ソジョンは何も知らないまま彼氏ができて、僕はスマホのメモ帳に38回目のシミュレーションを残したまま転校した。*"
+    },
+    "minsu_d3_7_ins2": {
+        "name": "{name}",
+        "text": "*あの時ソジョンに断ってもらえていたら——こんなに未練は残らなかったはずだ。*"
+    },
+    "minsu_d3_7_ins3": {
+        "name": "{name}",
+        "text": "*断るのも愛なら、今僕がすべきことは——みんなに「好き」と言うことじゃなくて、一人にだけ「好き」と言うことだ。*"
+    },
+    "minsu_d3_10_ins": {
+        "name": "{name}",
+        "text": "*ミンスが先に歩いていく。*"
     }
 }

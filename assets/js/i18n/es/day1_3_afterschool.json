@@ -363,5 +363,201 @@
     "after1_pre_miss": {
         "name": "{name}",
         "text": "*Sigo caminando por el pasillo.*"
+    },
+    "after_miss_dain_6_ins": {
+        "name": "{name}",
+        "text": "*Se despide con la mano y sale corriendo. — Al frenar, arrastró ligeramente la pierna derecha. ¿O me lo pareció? Fue demasiado rápido para estar seguro.*"
+    },
+    "after_miss_yuna_1_ins": {
+        "name": "{name}",
+        "text": "Oye, se te cayó esto..."
+    },
+    "after_miss_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*Lo recojo y se lo ofrezco. Yuna se detiene y toma el marcapáginas.*"
+    },
+    "after_miss_yuna_3_ins": {
+        "name": "{name}",
+        "text": "*Y vuelve a caminar.*"
+    },
+    "after_hidden_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "Solo estaba... recorriendo la escuela, ya que es el primer día."
+    },
+    "after_hidden_homeroom_3_ins2": {
+        "name": "Profesora",
+        "text": "¿Explorando hasta llegar a la sala de profesores? Qué curioso. — Pasa un momento."
+    },
+    "after_homeroom_ok_ins": {
+        "name": "{name}",
+        "text": "*La profesora agita la mano y se dirige a la sala de profesores.*"
+    },
+    "after_homeroom_ok_2_ins": {
+        "name": "{name}",
+        "text": "*La profesora se detiene un momento. Se apoya contra la pared del pasillo.*"
+    },
+    "after_homeroom_honest_3_ins": {
+        "name": "{name}",
+        "text": "*¿Algo similar? — ¿Eso significa que hizo algo distinto a la enseñanza antes?*"
+    },
+    "after_homeroom_honest_6_ins": {
+        "name": "{name}",
+        "text": "*'Interés profesional'. — Es de esas personas que disfrazan su preocupación con títulos laborales.*"
+    },
+    "after_homeroom_honest_choice2a_ins": {
+        "name": "{name}",
+        "text": "*Lo admitió con honestidad. — La fachada de esta persona cae sorprendentemente rápido.*"
+    },
+    "after_homeroom_honest_choice2b_ins": {
+        "name": "{name}",
+        "text": "*Se rió. — Es la primera vez que veo a esta persona reírse de una broma.*"
+    },
+    "after_homeroom_honest_choice2b_ins2": {
+        "name": "{name}",
+        "text": "*La profesora se dirige a la sala de profesores — y se detiene. Toquetea algo en su bolsillo. ¿Un bolígrafo, quizá?*"
+    },
+    "after_homeroom_honest_9_ins": {
+        "name": "{name}",
+        "text": "*Antes en clase dijo que 'memorizo los nombres a la primera'. — Decirlo dos veces tiene que significar algo.*"
+    },
+    "after_hidden_nurse_intro_ins": {
+        "name": "{name}",
+        "text": "*Ahí está el cartel de la enfermería. — Vamos a echar un vistazo.*"
+    },
+    "after_hidden_nurse_intro_ins2": {
+        "name": "{name}",
+        "text": "*Abro la puerta de la enfermería. Un leve olor a desinfectante. Cortinas blancas, camas blancas, un pequeño escritorio.*"
+    },
+    "after_nurse_enter_2_ins": {
+        "name": "{name}",
+        "text": "*Su tono es ligero. Más como si entrara a una cafetería que a una clínica.*"
+    },
+    "after_nurse_enter_4_ins": {
+        "name": "{name}",
+        "text": "¿Cómo lo supo?"
+    },
+    "after_nurse_enter_4_ins2": {
+        "name": "Enfermera",
+        "text": "Tu uniforme está tieso como una tabla. Huele a almidón.\" *Olfatea* \"Ah, también huele a flores de cerezo. Un estudiante transferido romántico.\""
+    },
+    "after_nurse_enter_4_ins3": {
+        "name": "{name}",
+        "text": "*¿Es observadora, o simplemente está bromeando? — Probablemente ambas cosas.*"
+    },
+    "after_nurse_enter_4_ins4": {
+        "name": "{name}",
+        "text": "*La enfermera se levanta y se acerca. Sus movimientos son fluidos. — Muy por encima del nivel de una enfermera escolar normal. Movimientos grabados en su cuerpo. Las manos de alguien que ha hecho esto cientos de veces.*"
+    },
+    "after_nurse_enter_6_ins": {
+        "name": "{name}",
+        "text": "¿Se puede saber la presión arterial tocando la frente?"
+    },
+    "after_nurse_enter_7_ins": {
+        "name": "{name}",
+        "text": "*Me acuesto en la cama. El techo es blanco.*"
+    },
+    "after_nurse_enter_7_ins2": {
+        "name": "Enfermera",
+        "text": "*Corriendo la cortina a medias* \"¿Quieres agua? ¿O algo caliente?\""
+    },
+    "after_nurse_enter_7_ins3": {
+        "name": "{name}",
+        "text": "Agua está bien."
+    },
+    "after_nurse_enter_8_ins": {
+        "name": "{name}",
+        "text": "Pero usted es profesora."
+    },
+    "after_nurse_enter_8_ins2": {
+        "name": "Enfermera",
+        "text": "*Entregando un vaso de agua* \"Sí, soy profesora. ...A veces se me olvida.\""
+    },
+    "after_nurse_enter_8_ins3": {
+        "name": "{name}",
+        "text": "*A veces se le olvida. — Parece una broma, pero tiene un matiz de verdad.*"
+    },
+    "after_nurse_enter_9_ins": {
+        "name": "{name}",
+        "text": "Esa planta, ¿es suya?"
+    },
+    "after_nurse_enter_9_ins2": {
+        "name": "Enfermera",
+        "text": "Sí, romero. — Lo tengo desde mis días en el hospital."
+    },
+    "after_nurse_enter_9_ins3": {
+        "name": "{name}",
+        "text": "¿Hospital?"
+    },
+    "after_nurse_enter_9_ins4": {
+        "name": "{name}",
+        "text": "*La enfermera se detiene un momento. Y luego sonríe.*"
+    },
+    "after_nurse_enter_10_ins": {
+        "name": "{name}",
+        "text": "*'Solo heridas leves'. — Hay alivio en esas palabras. También significa que ha visto muchas heridas que no eran leves.*"
+    },
+    "after_nurse_enter_10_ins2": {
+        "name": "{name}",
+        "text": "*Pasan diez minutos. Me levanto.*"
+    },
+    "after_nurse_enter_10_ins3": {
+        "name": "{name}",
+        "text": "Gracias. Me siento un poco mejor."
+    },
+    "after_nurse_enter_11_ins": {
+        "name": "{name}",
+        "text": "¿Le preocupa?"
+    },
+    "after_nurse_enter_11_ins2": {
+        "name": "Enfermera",
+        "text": "*Entornando los ojos* \"Si un paciente sigue viniendo, claro que me preocupo. — Porque soy profesora.\""
+    },
+    "after_nurse_enter_11_ins3": {
+        "name": "{name}",
+        "text": "*'Porque soy profesora'. — Esa frase es como un escudo. Esconde algo detrás del título de 'profesora'.*"
+    },
+    "after_nurse_enter_11_ins4": {
+        "name": "{name}",
+        "text": "*La enfermera se detiene un instante. Su sonrisa vuelve con 0,3 segundos de retraso.*"
+    },
+    "after_nurse_enter_11_ins5": {
+        "name": "Enfermera",
+        "text": "...Qué paciente tan observador. Se supone que la que se preocupa soy yo."
+    },
+    "after_nurse_enter_11_ins6": {
+        "name": "{name}",
+        "text": "*Parece sorprendida de que un paciente se preocupe por ella. — Siempre ha sido la que cuida, nunca la que recibe cuidados.*"
+    },
+    "after_nurse_enter_11_ins7": {
+        "name": "Enfermera",
+        "text": "¿Verdad? Aquí se está bien. — Tranquilo, y si ignoras el olor a desinfectante, es perfecto."
+    },
+    "after_nurse_enter_11_ins8": {
+        "name": "{name}",
+        "text": "*Al oír que es acogedor, sus ojos se iluminan. — Este espacio debe ser su refugio.*"
+    },
+    "after_nurse_enter_11_ins9": {
+        "name": "{name}",
+        "text": "*Estoy saliendo de la enfermería cuando — desde atrás.*"
+    },
+    "after_nurse_enter_11_ins10": {
+        "name": "Enfermera",
+        "text": "Ah, estudiante nuevo."
+    },
+    "after_nurse_enter_11_ins11": {
+        "name": "Enfermera",
+        "text": "¿Cómo te llamas?"
+    },
+    "after_nurse_enter_11_ins12": {
+        "name": "{name}",
+        "text": "{name}."
+    },
+    "after_nurse_enter_12_ins": {
+        "name": "{name}",
+        "text": "*Se ríe suavemente, pero sus ojos no ríen. — Con esta persona, la línea entre broma y sinceridad siempre es difusa.*"
+    },
+    "after_nurse_enter_12_ins2": {
+        "name": "{name}",
+        "text": "*Ya he recorrido bastante por hoy. Vamos a casa a descansar.*"
     }
 }

@@ -54,7 +54,7 @@ Object.assign(SCENARIO[4], {
                 "affinity": 10
             }
         },
-        "next": "date_seo_pretty_high_2"
+        "next": "date_seo_pretty_high_ins"
     },
     "date_seo_pretty_high_2": {
         "background": "assets/images/background/park.png",
@@ -64,7 +64,7 @@ Object.assign(SCENARIO[4], {
     "date_seo_pretty_high_3": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "next": "date_seo_pretty_high_4"
+        "next": "date_seo_pretty_high_3_ins"
     },
     "date_seo_pretty_high_4": {
         "background": "assets/images/background/park.png",
@@ -114,7 +114,7 @@ Object.assign(SCENARIO[4], {
     "date_seo_flower": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_flower_2"
+        "next": "date_seo_flower_ins"
     },
     "date_seo_flower_2": {
         "background": "assets/images/background/park.png",
@@ -129,7 +129,7 @@ Object.assign(SCENARIO[4], {
     "date_seo_succulent_2": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_succulent_3"
+        "next": "date_seo_succulent_2_ins"
     },
     "date_seo_succulent_3": {
         "background": "assets/images/background/park.png",
@@ -212,7 +212,7 @@ Object.assign(SCENARIO[4], {
     "date_yuna_pretty_high_5": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "date_yuna_bookstore"
+        "next": "date_yuna_pretty_high_5_ins"
     },
     "date_yuna_pretty_low": {
         "background": "assets/images/background/cafe.png",
@@ -237,7 +237,7 @@ Object.assign(SCENARIO[4], {
     "date_yuna_bookstore_2": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_bookstore_3"
+        "next": "date_yuna_bookstore_2_ins"
     },
     "date_yuna_bookstore_3": {
         "background": "assets/images/background/bookstore.png",
@@ -252,7 +252,7 @@ Object.assign(SCENARIO[4], {
     "date_yuna_earphone_2": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_earphone_3"
+        "next": "date_yuna_earphone_2_ins"
     },
     "date_yuna_earphone_3": {
         "background": "assets/images/background/bookstore.png",
@@ -262,7 +262,7 @@ Object.assign(SCENARIO[4], {
     "date_yuna_oldbook": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_oldbook_2"
+        "next": "date_yuna_oldbook_ins"
     },
     "date_yuna_oldbook_2": {
         "background": "assets/images/background/bookstore.png",
@@ -385,12 +385,12 @@ Object.assign(SCENARIO[4], {
     "date_dain_arcade_2": {
         "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_arcade_3"
+        "next": "date_dain_arcade_2_ins"
     },
     "date_dain_arcade_3": {
         "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_rhythm"
+        "next": "date_dain_arcade_3_ins"
     },
     "date_dain_rhythm": {
         "background": "assets/images/background/arcade.png",
@@ -430,12 +430,12 @@ Object.assign(SCENARIO[4], {
     "date_dain_shop_2": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_shop_3"
+        "next": "date_dain_shop_2_ins"
     },
     "date_dain_shop_3": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "date_dain_freetalk"
+        "next": "date_dain_shop_3_ins"
     },
     "date_dain_end": {
         "background": "assets/images/background/street.png",
@@ -484,5 +484,80 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_end"
-    }
+    },
+    "date_seo_pretty_high_ins": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_pretty_high_2"
+    },
+    "date_seo_pretty_high_3_ins": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_pretty_high_4"
+    },
+    "date_seo_flower_ins": {
+        "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_flower_2"
+    },
+    "date_seo_succulent_2_ins": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "next": "date_seo_succulent_3"
+    },
+    "date_yuna_pretty_high_5_ins": {
+        "background": "assets/images/background/cafe.png",
+        "character": null,
+        "next": "date_yuna_pretty_high_5_ins2"
+    },
+    "date_yuna_pretty_high_5_ins2": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_bookstore"
+    },
+    "date_yuna_bookstore_2_ins": {
+        "background": "assets/images/background/bookstore.png",
+        "character": null,
+        "next": "date_yuna_bookstore_3"
+    },
+    "date_yuna_earphone_2_ins": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_earphone_3"
+    },
+    "date_yuna_oldbook_ins": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_oldbook_ins2"
+    },
+    "date_yuna_oldbook_ins2": {
+        "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_oldbook_2"
+    },
+    "date_dain_shop_3_ins": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_freetalk"
+    },
+    "date_dain_arcade_2_ins": {
+        "background": "assets/images/background/arcade.png",
+        "character": null,
+        "next": "date_dain_arcade_3"
+    },
+    "date_dain_arcade_3_ins": {
+        "background": "assets/images/background/arcade.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_arcade_3_ins2"
+    },
+    "date_dain_arcade_3_ins2": {
+        "background": "assets/images/background/arcade.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_rhythm"
+    },
+    "date_dain_shop_2_ins": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_shop_3"
+    },
 });

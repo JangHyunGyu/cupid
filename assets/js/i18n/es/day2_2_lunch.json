@@ -432,5 +432,153 @@
     "lunch2_dain_5b": {
         "name": "{name}",
         "text": "*Piedra-papel-tijera. Dain perdió.*"
+    },
+    "lunch2_yuna_17_ins": {
+        "name": "Yuna",
+        "text": "......"
+    },
+    "lunch2_yuna_c1_9_ins": {
+        "name": "{name}",
+        "text": "*La mirada de Yuna se enfría por un instante.*"
+    },
+    "lunch2_seo_13b_ins": {
+        "name": "Seoyeon",
+        "text": "*Mirando a {name}* \"...Una chica alegre.\""
+    },
+    "lunch2_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*Los ojos de Dain se abren mientras nos mira a los dos alternativamente.*"
+    },
+    "lunch2_seo_c1_3_ins": {
+        "name": "Seoyeon",
+        "text": "*Como si nada* \"Era un grano de arroz.\""
+    },
+    "lunch2_dain_13_ins": {
+        "name": "Dain",
+        "text": "¡No— no me importa! ¡Para nada!\" *Da un gran mordisco al soboro* \"¡¡Solo preguntaba!!\""
+    },
+    "lunch2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*Cuarta hora, educación física. Corríamos por el campo cuando — el de al lado frena de golpe y chocamos. Me raspé el codo.*"
+    },
+    "lunch2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*No es nada grave, pero sangra un poco.*"
+    },
+    "lunch2_dain_end_ins3": {
+        "name": "Profesor de educación física",
+        "text": "Ve a la enfermería y que te desinfecten."
+    },
+    "lunch2_dain_end_ins4": {
+        "name": "{name}",
+        "text": "*Abro la puerta de la enfermería. El mismo olor a desinfectante de ayer.*"
+    },
+    "lunch2_dain_end_ins5": {
+        "name": "Enfermera",
+        "text": "*Levantando la vista* \"Oh, el estudiante nuevo de ayer.\""
+    },
+    "lunch2_dain_end_ins6": {
+        "name": "{name}",
+        "text": "Me raspé un poco el codo."
+    },
+    "lunch2_dain_end_ins7": {
+        "name": "Enfermera",
+        "text": "¿Otra vez? ¿Quieres hacerte cliente habitual?"
+    },
+    "lunch2_dain_end_ins8": {
+        "name": "{name}",
+        "text": "*El mismo tono juguetón de ayer. Pero sus ojos ya están examinando la herida.*"
+    },
+    "lunch2_dain_end_ins9": {
+        "name": "{name}",
+        "text": "*La enfermera se acerca y me toma el codo. Tiene las manos frías.*"
+    },
+    "lunch2_dain_end_ins10": {
+        "name": "Enfermera",
+        "text": "Quieto~..."
+    },
+    "lunch2_dain_end_ins11": {
+        "name": "{name}",
+        "text": "*Saca un algodón empapado en desinfectante — lo aplica con cuidado. Luego saca una tirita.*"
+    },
+    "lunch2_dain_end_ins12": {
+        "name": "{name}",
+        "text": "*Poner una tirita — debería llevar 30 segundos como mucho. ¿Por qué es tan meticulosa?*"
+    },
+    "lunch2_dain_end_ins13": {
+        "name": "Enfermera",
+        "text": "*Poniendo la tirita* \"Aquí... así... listo.\""
+    },
+    "lunch2_dain_end_ins14": {
+        "name": "{name}",
+        "text": "*La mano de la enfermera se detiene. — 0,5 segundos. Y vuelve a moverse.*"
+    },
+    "lunch2_dain_end_ins15": {
+        "name": "Enfermera",
+        "text": "...Suelo tener las manos frías. Parece que hoy están calientes."
+    },
+    "lunch2_dain_end_ins16": {
+        "name": "{name}",
+        "text": "*Eso no es cierto. Cuando me tocó al principio, estaban frías. — Se calentaron recién ahora.*"
+    },
+    "lunch2_dain_end_ins17": {
+        "name": "Enfermera",
+        "text": "*Sonriendo* \"Es esmero. Puro esmero. Si lo pones a medias, se cae enseguida.\""
+    },
+    "lunch2_dain_end_ins18": {
+        "name": "{name}",
+        "text": "*Esmero... ¿es eso? ¿O hay otra razón?*"
+    },
+    "lunch2_dain_end_ins19": {
+        "name": "{name}",
+        "text": "*Reviso la tirita — y noto que hay un portátil abierto en el escritorio. En la pantalla aparece algo. No son registros médicos — parece más un diario personal.*"
+    },
+    "lunch2_dain_end_ins20": {
+        "name": "{name}",
+        "text": "*La enfermera cierra rápidamente el portátil.*"
+    },
+    "lunch2_dain_end_ins21": {
+        "name": "Enfermera",
+        "text": "*Entornando los ojos* \"¿Solo uno? ...Bueno, vale. Prefiero el cacao al café. Ese es el secreto.\""
+    },
+    "lunch2_dain_end_ins22": {
+        "name": "{name}",
+        "text": "*Como secreto, es bastante inocente. Pero el hecho de compartirlo — eso significa algo.*"
+    },
+    "lunch2_dain_end_ins23": {
+        "name": "Enfermera",
+        "text": "*Riendo suavemente* \"Secreto~ Las profesoras también tienen secretos.\""
+    },
+    "lunch2_dain_end_ins24": {
+        "name": "{name}",
+        "text": "*Lo disimula con una broma, pero cerró ese portátil muy rápido. — Hay algo que no quiere que vean.*"
+    },
+    "lunch2_dain_end_ins25": {
+        "name": "Enfermera",
+        "text": "Listo, así que vuelve a clase. — Y la próxima vez, ven sin estar herido."
+    },
+    "lunch2_dain_end_ins26": {
+        "name": "{name}",
+        "text": "Si no estoy herido, no tendría razón para venir."
+    },
+    "lunch2_dain_end_ins27": {
+        "name": "{name}",
+        "text": "*La enfermera se detiene. Y entonces — su voz baja un tono.*"
+    },
+    "lunch2_dain_end_ins28": {
+        "name": "Enfermera",
+        "text": "Puedes venir aunque no tengas un motivo."
+    },
+    "lunch2_dain_end_ins29": {
+        "name": "{name}",
+        "text": "*El tono juguetón ha desaparecido. — 0,5 segundos. Y vuelve.*"
+    },
+    "lunch2_dain_end_ins30": {
+        "name": "Enfermera",
+        "text": "*Con tono alegre de nuevo* \"¡Ah, pero no en horario de clases~! ¡Después de clases!\""
+    },
+    "lunch2_dain_end_ins31": {
+        "name": "{name}",
+        "text": "*Ese cambio en su voz recién. — ¿Me lo habré imaginado?*"
     }
 }

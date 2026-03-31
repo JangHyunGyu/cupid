@@ -704,5 +704,293 @@
     "wall_seo_to_park": {
         "name": "{name}",
         "text": "*I left the house and headed to the park.*"
+    },
+    "wall_seo_7_ins": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "wall_seo_9_ins": {
+        "name": "Seoyeon",
+        "text": "My family looks fine on the outside, right? Big house, nice car, student council president's daughter."
+    },
+    "wall_seo_9_ins2": {
+        "name": "Seoyeon",
+        "text": "But Mom and Dad have been strangers under the same roof for a year. They just haven't filed the papers."
+    },
+    "wall_seo_9_ins3": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "wall_seo_11_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon presses her lips shut. As if swallowing something.*"
+    },
+    "wall_seo_14_ins": {
+        "name": "Seoyeon",
+        "text": "...But you."
+    },
+    "wall_seo_14_ins2": {
+        "name": "{name}",
+        "text": "*Seoyeon stops talking. Her hands are clenched on her knees.*"
+    },
+    "wall_seo_14_ins3": {
+        "name": "{name}",
+        "text": "*And slowly, very slowly, the perfectly maintained expression crumbles. With trembling hands, Seoyeon takes off her glasses.*"
+    },
+    "wall_seo_14_ins4": {
+        "name": "{name}",
+        "text": "*Tears run down silently. Without a sound. I'm seeing Seoyeon's face without glasses for the first time.*"
+    },
+    "wall_seo_hug_2_ins": {
+        "name": "Seoyeon",
+        "text": "...Crying in front of someone, it's the first time since elementary school."
+    },
+    "wall_seo_hug_2_ins2": {
+        "name": "Seoyeon",
+        "text": "Eight years. All that time, I only ever cried alone in the bathroom."
+    },
+    "wall_seo_pinky_5_ins": {
+        "name": "{name}",
+        "text": "*The pinky from Day 1. The pinky from Day 4. Same finger, completely different weight.*"
+    },
+    "wall_seo_line_react_3_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon wipes her tears.*"
+    },
+    "wall_seo_after_line_4_ins": {
+        "name": "Seoyeon",
+        "text": "...I don't think I need a mirror today."
+    },
+    "wall_seo_glimpse_1_ins": {
+        "name": "{name}",
+        "text": "*There's a light in the gym window. Emergency lighting.*"
+    },
+    "wall_dain_2_ins": {
+        "name": "Dain",
+        "text": "*Shouldn't be at school right??*"
+    },
+    "wall_dain_7_ins": {
+        "name": "{name}",
+        "text": "*Dain hands me a volleyball.*"
+    },
+    "wall_dain_8_ins": {
+        "name": "{name}",
+        "text": "*I toss the ball up. Dain jumps and — spikes it.*"
+    },
+    "wall_dain_8_ins2": {
+        "name": "{name}",
+        "text": "*The moment she lands — she grabs her right knee and crouches down.*"
+    },
+    "wall_dain_12_ins": {
+        "name": "Dain",
+        "text": "I said I'm fine!! Really!!"
+    },
+    "wall_dain_12_ins2": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "wall_dain_13_ins": {
+        "name": "{name}",
+        "text": "*A long silence.*"
+    },
+    "wall_dain_14_ins": {
+        "name": "{name}",
+        "text": "*No exclamation marks.*"
+    },
+    "wall_dain_16_ins": {
+        "name": "Dain",
+        "text": "I had surgery and the medical team — they chose their words really carefully."
+    },
+    "wall_dain_18_ins": {
+        "name": "Dain",
+        "text": "But it all ended in one sentence."
+    },
+    "wall_dain_18_ins2": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "wall_dain_18_ins3": {
+        "name": "Dain",
+        "text": "I didn't tell anyone. Not even my parents."
+    },
+    "wall_dain_19_ins": {
+        "name": "{name}",
+        "text": "*Dain clutches her chest.*"
+    },
+    "wall_dain_20_ins": {
+        "name": "Dain",
+        "text": "...I felt like dying."
+    },
+    "wall_dain_22_ins": {
+        "name": "{name}",
+        "text": "*I sat down next to Dain. The court floor is cold. I said nothing.*"
+    },
+    "wall_dain_newdream_2_ins": {
+        "name": "{name}",
+        "text": "*Dain speaks first.*"
+    },
+    "wall_dain_cry_6_ins": {
+        "name": "{name}",
+        "text": "*I tossed the ball up.*"
+    },
+    "wall_dain_lastspike_3_ins": {
+        "name": "Dain",
+        "text": "*Smiling weakly* \"...That hurts."
+    },
+    "wall_dain_lastspike_3_ins2": {
+        "name": "Dain",
+        "text": "But it feels strangely refreshing."
+    },
+    "wall_dain_lastspike_4_ins": {
+        "name": "{name}",
+        "text": "*Dain looks around the court. The dark, empty gym.*"
+    },
+    "wall_dain_glimpse_4_ins": {
+        "name": "{name}",
+        "text": "*10 PM. A message from Yuna.*"
+    },
+    "wall_dain_glimpse_4_ins2": {
+        "name": "Yuna",
+        "text": "*School back gate. Come now.*"
+    },
+    "wall_yuna_9_ins": {
+        "name": "{name}",
+        "text": "*Yuna sets the letter down.*"
+    },
+    "wall_yuna_14_ins": {
+        "name": "Yuna",
+        "text": "For a year I came here alone. Hoping he'd left something behind."
+    },
+    "wall_yuna_14_ins2": {
+        "name": "Yuna",
+        "text": "...There was nothing."
+    },
+    "wall_yuna_14_ins3": {
+        "name": "{name}",
+        "text": "*Yuna looks at me.*"
+    },
+    "wall_yuna_14_ins4": {
+        "name": "Yuna",
+        "text": "When you first came to the library."
+    },
+    "wall_yuna_14_ins5": {
+        "name": "Yuna",
+        "text": "You had the same vibe as him. That's why I was scared."
+    },
+    "wall_yuna_14_ins6": {
+        "name": "Yuna",
+        "text": "If I got close again, you might disappear too."
+    },
+    "wall_yuna_14_ins7": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "wall_yuna_16_ins": {
+        "name": "{name}",
+        "text": "*Yuna grips her sleeve tightly. Her sentences are getting longer.*"
+    },
+    "wall_yuna_16_ins2": {
+        "name": "{name}",
+        "text": "*Yuna pauses briefly.*"
+    },
+    "wall_yuna_moved_5_ins": {
+        "name": "{name}",
+        "text": "*Yuna's expression hardens.*"
+    },
+    "wall_yuna_reject_1_ins": {
+        "name": "{name}",
+        "text": "*Yuna picks up the letter again.*"
+    },
+    "wall_yuna_glimpse_3_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon puts her phone in her pocket and turns around. Her back is straight. Perfectly. She's not trembling. Not this time.*"
+    },
+    "wall_yuna_glimpse_3_ins2": {
+        "name": "{name}",
+        "text": "*Night comes even for the ones not chosen. And they spend that night alone.*"
+    },
+    "wall_yuna_glimpse_3_ins3": {
+        "name": "{name}",
+        "text": "*11 PM. Phone buzzes. The Homeroom Teacher.*"
+    },
+    "wall_yuna_glimpse_3_ins4": {
+        "name": "Homeroom Teacher",
+        "text": "*Message* \"The manuscript deadline is coming up."
+    },
+    "wall_yuna_glimpse_3_ins5": {
+        "name": "Homeroom Teacher",
+        "text": "*Message* \"...There's a part I want to show my first reader."
+    },
+    "wall_yuna_glimpse_3_ins6": {
+        "name": "Homeroom Teacher",
+        "text": "*Message* \"Come to the staff room tomorrow if you're free. After school."
+    },
+    "wall_yuna_glimpse_3_ins7": {
+        "name": "{name}",
+        "text": "*The messages stop. No follow-up.*"
+    },
+    "wall_yuna_glimpse_3_ins8": {
+        "name": "{name}",
+        "text": "*Her sentences are always short. No filler. But this one felt different. \"There's a part I want to show.\" That one line carries weight.*"
+    },
+    "wall_yuna_glimpse_3_ins9": {
+        "name": "{name}",
+        "text": "*First reader. That phrase keeps echoing in my head. The person a writer most wants to show their work to. Does that mean me, or is it just because I happen to be nearby.*"
+    },
+    "wall_yuna_glimpse_3_ins10": {
+        "name": "{name}",
+        "text": "*...I don't know. But I feel like I should go tomorrow.*"
+    },
+    "wall_yuna_glimpse_3_ins11": {
+        "name": "{name}",
+        "text": "*11:30 PM. Phone notification. The School Nurse.*"
+    },
+    "wall_yuna_glimpse_3_ins12": {
+        "name": "School Nurse",
+        "text": "*Message* \"What you said in the nurse's office today."
+    },
+    "wall_yuna_glimpse_3_ins13": {
+        "name": "School Nurse",
+        "text": "*Message* \"...I keep thinking about it tonight."
+    },
+    "wall_yuna_glimpse_3_ins14": {
+        "name": "{name}",
+        "text": "*Read receipt appears. 10 seconds. 20 seconds. No follow-up.*"
+    },
+    "wall_yuna_glimpse_3_ins15": {
+        "name": "{name}",
+        "text": "*One minute later.*"
+    },
+    "wall_yuna_glimpse_3_ins16": {
+        "name": "School Nurse",
+        "text": "*Message* \"Oh, not in a weird way. I just meant it was memorable."
+    },
+    "wall_yuna_glimpse_3_ins17": {
+        "name": "School Nurse",
+        "text": "*Message* \"...Sleep well."
+    },
+    "wall_yuna_glimpse_3_ins18": {
+        "name": "{name}",
+        "text": "*Today there's a school event. The last one. The moment I step into class — signals come from three directions.*"
+    },
+    "wall_yuna_glimpse_3_ins19": {
+        "name": "{name}",
+        "text": "*\"I keep thinking about it tonight.\" Reading that, my fingers froze. Only after the \"not in a weird way\" came through could I breathe again.*"
+    },
+    "wall_yuna_glimpse_3_ins20": {
+        "name": "{name}",
+        "text": "*But the strange part is — the correction took a whole minute. What was she agonizing over for one minute? Did she regret it after sending, or did she already regret it before.*"
+    },
+    "wall_yuna_glimpse_3_ins21": {
+        "name": "{name}",
+        "text": "*There's a note on my desk. Seoyeon's handwriting. \"Make some time this afternoon. I'll leave the rooftop unlocked. — Seoyeon\"*"
+    },
+    "wall_yuna_glimpse_3_ins22": {
+        "name": "{name}",
+        "text": "*...I try to remember what I said. It was nothing special. But maybe it wasn't nothing to her.*"
+    },
+    "wall_yuna_glimpse_3_ins23": {
+        "name": "{name}",
+        "text": "*Walking past the literary club's display in the hallway — a short story is pinned to the board. Title: \"To the Person I Met at the Library.\" It's Yuna. A story only its subject would recognize.*"
     }
 }

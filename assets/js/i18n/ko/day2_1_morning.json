@@ -218,7 +218,10 @@
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
         "text": "*읽는 거. 성적표까지 챙겨보는 사람이구나.*",
-        "choices": ["선생님은요? 뭐 읽으세요?", "읽는 건 좋아해요"]
+        "choices": [
+            "선생님은요? 뭐 읽으세요?",
+            "읽는 건 좋아해요"
+        ]
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "담임선생님",
@@ -255,7 +258,10 @@
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
         "text": "*업무라고 하면서 눈가에 웃음이 남아 있다.*",
-        "choices": ["업무치고 표정이 좋으신데요", "챙겨주셔서 감사합니다"]
+        "choices": [
+            "업무치고 표정이 좋으신데요",
+            "챙겨주셔서 감사합니다"
+        ]
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "담임선생님",
@@ -336,5 +342,89 @@
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
         "text": "*쪽지를 주머니에 넣었다. 두 사람의 반응이 미묘하게 다르다.*"
+    },
+    "morning2_minsu_1_ins": {
+        "name": "{name}",
+        "text": "*서연이 복도를 돌아가는 순간 — 뒤통수가 보이기 직전, 미소가 0.3초 내려간 것 같았다. 원래 표정으로 돌아가는 스위치. — 착각인가?*"
+    },
+    "morning2_break_transition_ins": {
+        "name": "{name}",
+        "text": "*교실 문 앞에 담임이 서 있다. 출석부를 들고, 문 쪽을 힐끗 보다가 — 나와 눈이 마주친다.*"
+    },
+    "hidden_homeroom_d2_1_ins": {
+        "name": "{name}",
+        "text": "뭔가 문제라도...?"
+    },
+    "hidden_homeroom_d2_1_ins2": {
+        "name": "담임선생님",
+        "text": "아니, 전학 서류 확인이야. — 행정적인 거."
+    },
+    "hidden_homeroom_d2_2_ins": {
+        "name": "{name}",
+        "text": "*교무실. 담임의 자리는 구석이다. 책상 위에 서류와 커피잔, 그리고 — 서랍이 살짝 열려 있다.*"
+    },
+    "hidden_homeroom_d2_3_ins": {
+        "name": "담임선생님",
+        "text": "*잠깐 멈칫하며* \"...여러 가지. 주로 — 소설."
+    },
+    "hidden_homeroom_d2_3_ins2": {
+        "name": "{name}",
+        "text": "*소설. 국어 교사가 소설을 읽는 건 당연한데, 왜 말을 아끼는 느낌이지?*"
+    },
+    "hidden_homeroom_d2_3_ins3": {
+        "name": "담임선생님",
+        "text": "읽는 거? — 쓰는 건?"
+    },
+    "hidden_homeroom_d2_3_ins4": {
+        "name": "{name}",
+        "text": "*이상한 질문이다. 국어 성적 얘기에서 왜 갑자기 '쓰는 거'를 물어보지?*"
+    },
+    "hidden_homeroom_d2_3_ins5": {
+        "name": "{name}",
+        "text": "쓰는 건 잘 모르겠어요."
+    },
+    "hidden_homeroom_d2_3_ins6": {
+        "name": "{name}",
+        "text": "*담임이 잠깐 멈칫한다. 시선이 서랍 쪽으로 갔다가 — 바로 돌아온다.*"
+    },
+    "hidden_homeroom_d2_6_ins": {
+        "name": "{name}",
+        "text": "*담임이 자연스럽게 서랍을 밀어 닫는다. 아무렇지 않게.*"
+    },
+    "hidden_homeroom_d2_7_ins": {
+        "name": "{name}",
+        "text": "많이요. 반 애들이 좋아서."
+    },
+    "hidden_homeroom_d2_8_ins": {
+        "name": "{name}",
+        "text": "아시는 거 보니 다인이가 좀 유명한가 봐요."
+    },
+    "hidden_homeroom_d2_8_ins2": {
+        "name": "담임선생님",
+        "text": "유명하다기보다...\" *커피를 한 모금 마시며* \"걱정이 되는 쪽이지."
+    },
+    "hidden_homeroom_d2_8_ins3": {
+        "name": "{name}",
+        "text": "*'걱정이 되는 쪽'. — 담임이 다인을 걱정하고 있다. 다인의 무릎 이야기를 알고 있는 건가?*"
+    },
+    "hidden_homeroom_d2_8_ins4": {
+        "name": "담임선생님",
+        "text": "*커피잔으로 입을 가리며* \"...표정 관리 실패인가. 됐다, 가 봐."
+    },
+    "hidden_homeroom_d2_8_ins5": {
+        "name": "{name}",
+        "text": "*입은 가렸는데 귀가 빨갛다. — 이 사람, 의외로 쉽게 당황하는구나.*"
+    },
+    "hidden_homeroom_d2_11_ins": {
+        "name": "{name}",
+        "text": "*아무도 안 듣고 있는데 혼잣말처럼. — 이 사람은 자기 관심을 '업무'라고 포장하는 게 습관인 것 같다.*"
+    },
+    "morning2_seo_dust_1_ins": {
+        "name": "{name}",
+        "text": "*서연이 멈춘다. 내 어깨를 본다.*"
+    },
+    "morning2_haeun_6_ins": {
+        "name": "{name}",
+        "text": "*하은이 한 발짝 다가온다. 목소리가 낮아진다.*"
     }
 }

@@ -316,5 +316,53 @@
     "lunch3_dain_witness_2b": {
         "name": "{name}",
         "text": "*I headed back to the classroom.*"
+    },
+    "lunch3_start_2_ins": {
+        "name": "Dain",
+        "text": "*Chomping into the egg roll without hesitation* \"Oh! This is good!!"
+    },
+    "lunch3_meal_7_ins": {
+        "name": "Yuna",
+        "text": "*Already chewing* \"...It's good.\""
+    },
+    "lunch3_meal_10_ins": {
+        "name": "{name}",
+        "text": "*\"Let's all eat together,\" I said. — But the mood feels off.*"
+    },
+    "lunch3_meal_10_ins2": {
+        "name": "{name}",
+        "text": "*After the other two leave, I'm alone with the one I chose. — I didn't know choosing could feel this heavy.*"
+    },
+    "lunch3_meal_10_ins3": {
+        "name": "{name}",
+        "text": "*Seoyeon route: Seoyeon's chopsticks pause. \"...Share? I made this for just the two of us.\" Half a second later, she composes herself. The student council president's face returns. \"Well, it's fine.\" — I know it's not fine.*"
+    },
+    "lunch3_meal_10_ins4": {
+        "name": "{name}",
+        "text": "*Dain route: \"All together?! Great!!\" The exclamation marks are alive. — But her voice is half a tone lower. Normally she'd be dragging chairs over, but today she doesn't move from her seat.*"
+    },
+    "lunch3_meal_10_ins5": {
+        "name": "{name}",
+        "text": "*Yuna route: Yuna only nods. She was writing a note, then folds it and slips it into her pocket. She doesn't hand it over. — What was written on that note she almost gave me? I'll never know.*"
+    },
+    "lunch3_expose_3_ins": {
+        "name": "{name}",
+        "text": "*The other two's hands freeze.*"
+    },
+    "lunch3_expose_7_ins": {
+        "name": "{name}",
+        "text": "*The last one quietly sets hers down.*"
+    },
+    "lunch3_expose_honest_4_ins": {
+        "name": "Seoyeon",
+        "text": "I don't want to be one of your options. I'm either your only answer, or I'm nothing. — I can't do halfway."
+    },
+    "lunch3_expose_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*Dain stands up.*"
+    },
+    "lunch3_expose_run_2_ins": {
+        "name": "{name}",
+        "text": "*Lunch ended, afternoon classes continued. The chalk on the blackboard sounds unusually far away. I feel someone's gaze on my back. — There's still an unfinished story left.*"
     }
 }

@@ -489,5 +489,37 @@
     "lunch_yuna_c2_2": {
         "name": "Yuna",
         "text": "...Mais cette bibliothèque, elle est pas mal. C'est calme."
+    },
+    "lunch_start_4_ins": {
+        "name": "{name}",
+        "text": "*À côté de moi, Dain m'attrape le bras.*"
+    },
+    "lunch_seo_6_ins": {
+        "name": "Seoyeon",
+        "text": "*Souriant* \"Méfiant, hein. J'aime juste le vent ici.\""
+    },
+    "lunch_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon détourne légèrement la tête. Ses oreilles sont rouges.*"
+    },
+    "lunch_seo_c1_3_ins": {
+        "name": "{name}",
+        "text": "*Ces oreilles rouges — c'était réel ? — Peut-être juste le vent.*"
+    },
+    "lunch_seo_after_7_ins": {
+        "name": "{name}",
+        "text": "*Dain me traîne par le bras jusqu'à la cantine. Cette fille a une force incroyable.*"
+    },
+    "lunch_dain_12_ins": {
+        "name": "Dain",
+        "text": "Raaah d'accord !! Deux pains soboro !! Madame !!"
+    },
+    "lunch_yuna_5_ins": {
+        "name": "{name}",
+        "text": "...Je peux m'asseoir ?"
+    },
+    "lunch_yuna_10_ins": {
+        "name": "{name}",
+        "text": "*Quelque chose est glissé dans le bureau de Yuna. Un vieux marque-page. Il y a de l'écriture dessus — mais je n'arrive pas à lire. Yuna pose inconsciemment sa main dessus. Quelque chose de précieux, peut-être.*"
     }
 }

@@ -308,5 +308,65 @@
     "date_dain_knee_2b": {
         "name": "{name}",
         "text": "*On est sortis de la salle d'arcade dans la rue.*"
+    },
+    "date_seo_pretty_high_ins": {
+        "name": "Seoyeon",
+        "text": "...Tu avais préparé ça ?"
+    },
+    "date_seo_pretty_high_3_ins": {
+        "name": "Seoyeon",
+        "text": "*Repoussant ses cheveux* \"...Ne te fais pas d'idées."
+    },
+    "date_seo_flower_ins": {
+        "name": "Seoyeon",
+        "text": "*S'arrêtant* \"...On entre ?"
+    },
+    "date_seo_succulent_2_ins": {
+        "name": "{name}",
+        "text": "C'est pour moi ?"
+    },
+    "date_yuna_pretty_high_5_ins": {
+        "name": "{name}",
+        "text": "Tu es belle."
+    },
+    "date_yuna_pretty_high_5_ins2": {
+        "name": "Yuna",
+        "text": "*Les oreilles rougissant* \"...Ça suffit."
+    },
+    "date_yuna_bookstore_2_ins": {
+        "name": "{name}",
+        "text": "C'est la première fois."
+    },
+    "date_yuna_earphone_2_ins": {
+        "name": "{name}",
+        "text": "*Un morceau de piano doux s'écoule. Le bruit de la librairie s'estompe.*"
+    },
+    "date_yuna_oldbook_ins": {
+        "name": "Yuna",
+        "text": "...Ici."
+    },
+    "date_yuna_oldbook_ins2": {
+        "name": "{name}",
+        "text": "*Elle sort un vieux livre. Feuilletant les pages.*"
+    },
+    "date_dain_shop_3_ins": {
+        "name": "Dain",
+        "text": "*Sous sa casquette* \"...Redis ça encore une fois et je te frappe pour de vrai."
+    },
+    "date_dain_arcade_2_ins": {
+        "name": "{name}",
+        "text": "Encore un pari ?"
+    },
+    "date_dain_arcade_3_ins": {
+        "name": "{name}",
+        "text": "*Jeu de rythme. Dain est incroyablement douée.*"
+    },
+    "date_dain_arcade_3_ins2": {
+        "name": "Dain",
+        "text": "*En criant de joie* \"Combo parfait !! T'as vu ?!"
+    },
+    "date_dain_shop_2_ins": {
+        "name": "Dain",
+        "text": "*En détournant la tête* \"C'est rien ! On y va !"
     }
 }

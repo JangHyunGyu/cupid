@@ -168,5 +168,9 @@
     "night_hidden_nurse_2": {
         "name": "{name}",
         "text": "*A school nurse who puts hearts in medical records. Never seen anyone use emojis in health files before.*"
+    },
+    "night_dain_late_4_ins": {
+        "name": "{name}",
+        "text": "*Between the messenger alerts — a post from the homeroom teacher appears on the school notice app.*"
     }
 }

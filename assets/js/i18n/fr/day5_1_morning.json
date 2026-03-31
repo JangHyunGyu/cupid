@@ -158,5 +158,261 @@
         "text": "*Dernière conversation avec l'infirmière devant l'infirmerie.*",
         "context": "Jour 5. Dernier jour. L'infirmière a écrit un message sur un pansement. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "L'infirmière est moins joueuse. Elle attend le jour où les excuses ne seront plus nécessaires."
+    },
+    "morning5_start_ins": {
+        "name": "{name}",
+        "text": "*Il y a un événement scolaire aujourd'hui. Le dernier.*"
+    },
+    "morning5_start_2_ins": {
+        "name": "{name}",
+        "text": "*Un mot est posé sur mon bureau. L'écriture de Seoyeon.*"
+    },
+    "morning5_seo_note_1_ins": {
+        "name": "{name}",
+        "text": "*En passant devant le coin exposition du club littéraire dans le couloir — une nouvelle est affichée au tableau. Titre :*"
+    },
+    "morning5_seo_note_1_ins2": {
+        "name": "{name}",
+        "text": "*« À la personne que j'ai rencontrée à la bibliothèque »*"
+    },
+    "morning5_seo_note_1_ins3": {
+        "name": "{name}",
+        "text": "*C'est celle de Yuna. — Une histoire que seul le protagoniste pourrait reconnaître.*"
+    },
+    "morning5_seo_note_1_ins4": {
+        "name": "{name}",
+        "text": "*De retour en classe, Dain m'attend.*"
+    },
+    "morning5_dain_1_ins": {
+        "name": "{name}",
+        "text": "...Sans me demander ?"
+    },
+    "hidden_homeroom_d5_1_ins": {
+        "name": "Professeure principale",
+        "text": "...Oh."
+    },
+    "hidden_homeroom_d5_1_ins2": {
+        "name": "{name}",
+        "text": "Madame."
+    },
+    "hidden_homeroom_d5_1_ins3": {
+        "name": "Professeure principale",
+        "text": "*Soulevant légèrement l'enveloppe* \"...Ça."
+    },
+    "hidden_homeroom_d5_1_ins4": {
+        "name": "{name}",
+        "text": "Qu'est-ce que c'est ?"
+    },
+    "hidden_homeroom_d5_6_ins": {
+        "name": "{name}",
+        "text": "*Ce qu'elle a dit au café hier. Premier lecteur. — Elle l'a vraiment apporté.*"
+    },
+    "hidden_homeroom_d5_6_ins2": {
+        "name": "{name}",
+        "text": "*Elle tend l'enveloppe. — Sa main tremble légèrement.*"
+    },
+    "hidden_homeroom_d5_6_ins3": {
+        "name": "Professeure principale",
+        "text": "Je ne l'ai montré à personne en sept ans. — Ce n'est pas vraiment dans mes attributions."
+    },
+    "hidden_homeroom_d5_6_ins4": {
+        "name": "{name}",
+        "text": "Madame."
+    },
+    "hidden_homeroom_d5_6_ins5": {
+        "name": "{name}",
+        "text": "Vous n'avez plus besoin de dire ça."
+    },
+    "hidden_homeroom_d5_6_ins6": {
+        "name": "{name}",
+        "text": "*Elle s'arrête un instant. — Puis sourit. Pas un sourire sec. Un sourire chaleureux.*"
+    },
+    "hidden_homeroom_d5_6_ins7": {
+        "name": "Professeure principale",
+        "text": "...Je n'aurais jamais cru qu'un élève me dirait ça un jour."
+    },
+    "hidden_homeroom_d5_6_ins8": {
+        "name": "{name}",
+        "text": "*Elle pose l'enveloppe dans mes mains.*"
+    },
+    "hidden_homeroom_d5_6_ins9": {
+        "name": "Professeure principale",
+        "text": "...Tu veux bien être mon premier lecteur ?"
+    },
+    "hidden_homeroom_d5_6_ins10": {
+        "name": "{name}",
+        "text": "*Les mêmes mots qu'hier. — Mais aujourd'hui, les actes ont suivi. Sept ans de manuscrit entre mes mains.*"
+    },
+    "hidden_homeroom_d5_6_ins11": {
+        "name": "{name}",
+        "text": "Je le lirai. C'est promis."
+    },
+    "hidden_homeroom_d5_6_ins12": {
+        "name": "Professeure principale",
+        "text": "*Repoussant ses cheveux* \"...Je n'accepte pas les comptes rendus."
+    },
+    "hidden_homeroom_d5_6_ins13": {
+        "name": "{name}",
+        "text": "Vous mentez."
+    },
+    "hidden_homeroom_d5_6_ins14": {
+        "name": "Professeure principale",
+        "text": "*Un petit rire* \"...D'accord. Écris-moi au moins une ligne."
+    },
+    "hidden_homeroom_d5_6_ins15": {
+        "name": "{name}",
+        "text": "*Une ligne. — Quelqu'un qui a échoué trois fois à ses débuts littéraires attend l'avis d'un élève en une seule ligne. Si ce n'est pas une déclaration, qu'est-ce que c'est ?*"
+    },
+    "hidden_homeroom_d5_6_ins16": {
+        "name": "{name}",
+        "text": "*Elle quitte la salle — et s'arrête à la porte.*"
+    },
+    "hidden_homeroom_d5_6_ins17": {
+        "name": "Professeure principale",
+        "text": "{name}."
+    },
+    "hidden_homeroom_d5_6_ins18": {
+        "name": "{name}",
+        "text": "*Elle s'arrête. Serre son porte-bloc. — Puis tourne lentement la tête.*"
+    },
+    "hidden_homeroom_d5_6_ins19": {
+        "name": "Professeure principale",
+        "text": "...Après ton diplôme.\" *Sa voix se brise.* \"Oui. Après ton diplôme."
+    },
+    "hidden_homeroom_d5_6_ins20": {
+        "name": "{name}",
+        "text": "*« Après ton diplôme » — deux fois. La première comme permission, la seconde comme attente.*"
+    },
+    "hidden_homeroom_d5_7_ins": {
+        "name": "{name}",
+        "text": "*« Pas en tant que professeure et élève. » — Elle parle de l'après-diplôme. Pas maintenant, mais un jour.*"
+    },
+    "hidden_homeroom_d5_7_ins2": {
+        "name": "Professeure principale",
+        "text": "...Je crois que j'ai un peu dépassé les limites de l'intérêt professionnel. C'est la dernière fois. Juste cette fois."
+    },
+    "hidden_nurse_d5_2_ins": {
+        "name": "{name}",
+        "text": "*Pause pendant l'événement. En passant devant l'infirmerie — la porte s'ouvre. L'infirmière sort.*"
+    },
+    "hidden_nurse_d5_2_ins2": {
+        "name": "{name}",
+        "text": "*— On s'est retrouvés nez à nez.*"
+    },
+    "hidden_nurse_d5_2_ins3": {
+        "name": "Infirmière",
+        "text": "Oh ? {name}."
+    },
+    "hidden_nurse_d5_4_ins": {
+        "name": "{name}",
+        "text": "Madame."
+    },
+    "hidden_nurse_d5_4_ins2": {
+        "name": "{name}",
+        "text": "*Un silence gêné. — Jusqu'à hier c'était naturel, mais aujourd'hui quelque chose est différent.*"
+    },
+    "hidden_nurse_d5_4_ins3": {
+        "name": "Infirmière",
+        "text": "Dernier jour, hein."
+    },
+    "hidden_nurse_d5_1_ins": {
+        "name": "{name}",
+        "text": "*Elle a dit « dernier jour de l'événement », mais un autre sens se cache derrière ces mots.*"
+    },
+    "hidden_nurse_d5_1_ins2": {
+        "name": "Infirmière",
+        "text": "*Avec un léger sourire* \"Viens me voir après ton diplôme."
+    },
+    "hidden_nurse_d5_1_ins3": {
+        "name": "{name}",
+        "text": "Le diplôme, c'est encore loin."
+    },
+    "hidden_nurse_d5_1_ins4": {
+        "name": "Infirmière",
+        "text": "...En attendant, viens si tu as mal quelque part."
+    },
+    "hidden_nurse_d5_1_ins5": {
+        "name": "{name}",
+        "text": "*De « viens après ton diplôme » à « viens si tu as mal » — elle a reculé. Elle a failli franchir la ligne et s'est ravisée.*"
+    },
+    "hidden_nurse_d5_3_ins": {
+        "name": "{name}",
+        "text": "*L'infirmière marque une pause. Sa voix descend d'un ton.*"
+    },
+    "hidden_nurse_d5_3_ins2": {
+        "name": "Infirmière",
+        "text": "...Ça."
+    },
+    "hidden_nurse_d5_3_ins3": {
+        "name": "{name}",
+        "text": "Madame ?"
+    },
+    "hidden_nurse_d5_3_ins4": {
+        "name": "Infirmière",
+        "text": "*En souriant à nouveau* \"Demande-moi ça après ton diplôme. — Je te répondrai à ce moment-là."
+    },
+    "hidden_nurse_d5_3_ins5": {
+        "name": "{name}",
+        "text": "*« Après ton diplôme. » — Les mêmes mots que la professeure principale. Pas maintenant, mais un jour. Le jour où le titre de « professeure » disparaîtra.*"
+    },
+    "hidden_nurse_d5_3_ins6": {
+        "name": "Infirmière",
+        "text": "Allez, file. Tu ne peux pas sécher l'événement~"
+    },
+    "hidden_nurse_d5_3_ins7": {
+        "name": "{name}",
+        "text": "*L'infirmière se retourne pour rentrer — et s'arrête.*"
+    },
+    "hidden_nurse_d5_3_ins8": {
+        "name": "Infirmière",
+        "text": "...{name}."
+    },
+    "hidden_nurse_d5_choice_b_ins": {
+        "name": "Infirmière",
+        "text": "...Tu as dit « juste une fois », alors pourquoi tu dis ça ?"
+    },
+    "hidden_nurse_d5_choice_b_ins2": {
+        "name": "{name}",
+        "text": "*Sa voix a baissé d'un ton. Toute espièglerie a disparu. — C'est toujours comme ça que la sincérité de cette personne arrive.*"
+    },
+    "hidden_nurse_d5_choice_b_ins3": {
+        "name": "{name}",
+        "text": "*L'infirmière riait — puis s'est arrêtée. A fermé la bouche.*"
+    },
+    "hidden_nurse_d5_choice_b_ins4": {
+        "name": "Infirmière",
+        "text": "...Un numéro de téléphone. Pour des consultations médicales ?"
+    },
+    "hidden_nurse_d5_choice_b_ins5": {
+        "name": "Infirmière",
+        "text": "*Ajustant ses lunettes* \"...D'accord. Mais utilise-le après ton diplôme."
+    },
+    "hidden_nurse_d5_choice_b_ins6": {
+        "name": "{name}",
+        "text": "*« Après ton diplôme. » — Elle ne franchit pas la ligne. Mais elle a posé son numéro juste au bord.*"
+    },
+    "hidden_nurse_d5_choice_b_ins7": {
+        "name": "Infirmière",
+        "text": "Je te mets un pansement ?"
+    },
+    "hidden_nurse_d5_choice_b_ins8": {
+        "name": "{name}",
+        "text": "...Je n'ai pas de blessure."
+    },
+    "hidden_nurse_d5_6_ins": {
+        "name": "{name}",
+        "text": "*Sa réplique emblématique du Jour 1. — À l'époque, c'était une présentation. Maintenant, c'est sincère.*"
+    },
+    "hidden_nurse_d5_6_ins2": {
+        "name": "{name}",
+        "text": "*L'infirmière sort un pansement et le colle sur le dos de ma main. Lentement. — Il y a de petits mots écrits sur le pansement.*"
+    },
+    "hidden_nurse_d5_6_ins3": {
+        "name": "{name}",
+        "text": "*« Après ton diplôme, retrouvons-nous dans un café plutôt qu'à l'infirmerie — ♡ »*"
+    },
+    "hidden_nurse_d5_6_ins4": {
+        "name": "{name}",
+        "text": "*Ce cœur-là — ne semble pas être de l'intérêt médical.*"
     }
 }

@@ -571,5 +571,165 @@
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*On est sortis du gymnase et on a marché dans la rue.*"
+    },
+    "after2_dain_9_ins": {
+        "name": "Dain",
+        "text": "*Les yeux écarquillés* \"Hein ? J'allais y aller doucement, mais tant pis.\""
+    },
+    "after2_dain_9_ins2": {
+        "name": "{name}",
+        "text": "*Dain abaisse sa posture. Son regard change.*"
+    },
+    "after2_dain_9_ins3": {
+        "name": "Dain",
+        "text": "Je passe en mode sérieux !"
+    },
+    "after2_dain_9_ins4": {
+        "name": "{name}",
+        "text": "*L'échange se prolonge. Les mouvements de Dain sont — clairement pas ordinaires. Rapides, précis, son corps se souvient de chaque geste.*"
+    },
+    "after2_dain_9_ins5": {
+        "name": "{name}",
+        "text": "*Cette fille est vraiment douée. — Pas juste quelqu'un qui aime le sport, mais quelqu'un qui y a mis toute sa vie.*"
+    },
+    "after2_dain_9_ins6": {
+        "name": "{name}",
+        "text": "*Score final : 3-2. Gagné de justesse.*"
+    },
+    "after2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*Le stand de tteokbokki près de l'école.*"
+    },
+    "after2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*Dain souffle sur le tteokbokki et parle.*"
+    },
+    "after2_dain_end_ins3": {
+        "name": "{name}",
+        "text": "*Le stand de tteokbokki près de l'école.*"
+    },
+    "after2_seo_4_ins": {
+        "name": "{name}",
+        "text": "*Le mot 'faveur' ne semble pas exister dans le vocabulaire de cette personne.*"
+    },
+    "after2_seo_6_ins": {
+        "name": "{name}",
+        "text": "*Le mot 'faveur' ne semble pas exister dans le vocabulaire de cette personne.*"
+    },
+    "after2_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*Je commence à trier les papiers. Budgets d'événements, demandes de clubs. Il y en a pas mal.*"
+    },
+    "after2_seo_8b4_ins": {
+        "name": "{name}",
+        "text": "*Elle a dit 'compliment' directement. — Ça semble rare venant d'elle.*"
+    },
+    "after2_seo_8b4_ins2": {
+        "name": "{name}",
+        "text": "*Pendant le tri, Seoyeon fait rouler son cou. Il semble raide.*"
+    },
+    "after2_seo_sunset_joke_ins": {
+        "name": "Seoyeon",
+        "text": "...Tu es la première personne à sortir une phrase aussi cucul aussi naturellement."
+    },
+    "after2_seo_sunset_react_ins": {
+        "name": "Seoyeon",
+        "text": "Ton cou est assez raide. Ne bouge pas une seconde."
+    },
+    "after2_seo_neck_react_ins": {
+        "name": "Seoyeon",
+        "text": "Ton cou est assez raide. Ne bouge pas une seconde."
+    },
+    "after2_seo_neck_react_ins2": {
+        "name": "{name}",
+        "text": "*Seoyeon se lève et passe derrière moi. Sa main se pose sur mon épaule.*"
+    },
+    "after2_seo_neck_high_ins": {
+        "name": "Seoyeon",
+        "text": "*Doucement* \"...Ne bouge pas. Juste un instant.\""
+    },
+    "after2_seo_neck_high_ins2": {
+        "name": "{name}",
+        "text": "*C'est la main de qui ? — C'est la main de Seoyeon sur mon épaule. Mes pensées sont en vrac. C'est dire à quel point je suis tendu.*"
+    },
+    "after2_seo_neck_low_ins": {
+        "name": "{name}",
+        "text": "C'était quoi, ça, d'un coup ?"
+    },
+    "after2_seo_neck_low_ins2": {
+        "name": "Seoyeon",
+        "text": "*Retirant sa main* \"...C'était rien.\""
+    },
+    "after2_yuna_1_ins": {
+        "name": "{name}",
+        "text": "*Le couloir de l'annexe. Pas âme qui vive. — La porte de la salle de lecture secrète est entrouverte.*"
+    },
+    "after2_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*Le couloir de l'annexe. Pas âme qui vive. — La porte de la salle de lecture secrète est entrouverte.*"
+    },
+    "after2_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Yuna lève les yeux. Pas surprise.*"
+    },
+    "after2_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*Yuna lève les yeux. Pas surprise.*"
+    },
+    "after2_yuna_8b_ins": {
+        "name": "{name}",
+        "text": "*Je m'assieds à côté d'elle. Yuna me tend un de ses écouteurs.*"
+    },
+    "after2_yuna_8b_ins2": {
+        "name": "{name}",
+        "text": "*Je m'assieds à côté d'elle. Yuna me tend un de ses écouteurs.*"
+    },
+    "after2_yuna_choice_pre3_ins": {
+        "name": "{name}",
+        "text": "*Yuna a dit deux phrases d'affilée. — Pour quelqu'un qui s'exprime habituellement en une seule ligne, c'est notable.*"
+    },
+    "after2_yuna_everyday_ins": {
+        "name": "Yuna",
+        "text": "...Viens si tu veux. Je ne t'en empêcherai pas."
+    },
+    "minsu_warn_4_ins": {
+        "name": "{name}",
+        "text": "*Les lèvres de Yuna se relèvent imperceptiblement.*"
+    },
+    "minsu_warn_1_ins": {
+        "name": "Minsu",
+        "text": "*Marchant à côté de moi* \"Tu t'amuses bien en ce moment ?\""
+    },
+    "minsu_warn_7_ins": {
+        "name": "{name}",
+        "text": "*Minsu s'arrête de marcher. Se retourne. Son côté joueur habituel a disparu.*"
+    },
+    "minsu_warn_7_ins2": {
+        "name": "Minsu",
+        "text": "Mec, ça fait un an que je suis dans cette classe. Seoyeon n'adresse jamais la parole aux mecs en premier. Dain n'a jamais acheté de pain à un autre gars. Yuna — des mots ? Elle n'en écrit à personne."
+    },
+    "minsu_warn_12_ins": {
+        "name": "{name}",
+        "text": "*Minsu ajuste la sangle de son sac.*"
+    },
+    "minsu_warn_13_ins": {
+        "name": "{name}",
+        "text": "*— Mon souffle se coupe.*"
+    },
+    "minsu_warn_15_ins": {
+        "name": "Dain",
+        "text": "On parie encore demain !! Un autre jeu !!"
+    },
+    "minsu_warn_15_ins2": {
+        "name": "Seoyeon",
+        "text": "Demain midi, je laisserai le toit ouvert. Viens."
+    },
+    "minsu_warn_15_ins3": {
+        "name": "{name}",
+        "text": "*L'ancien lycée. — Ces mots frappent fort.*"
+    },
+    "minsu_warn_15_ins4": {
+        "name": "{name}",
+        "text": "*— Je m'arrête net.*"
     }
 }

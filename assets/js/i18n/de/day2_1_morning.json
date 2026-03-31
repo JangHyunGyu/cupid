@@ -342,5 +342,89 @@
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
         "text": "*Hab den Zettel eingesteckt. Die Reaktionen der beiden sind subtil verschieden.*"
+    },
+    "morning2_minsu_1_ins": {
+        "name": "{name}",
+        "text": "*In dem Moment, als Seoyeon um die Ecke biegt — kurz bevor ihr Hinterkopf verschwindet, scheint ihr Lächeln für 0,3 Sekunden abzufallen. Ein Schalter zurück zum Standardausdruck. — Hab ich mir das eingebildet?*"
+    },
+    "morning2_break_transition_ins": {
+        "name": "{name}",
+        "text": "*Die Klassenlehrerin steht an der Klassenzimmertür. Mit der Anwesenheitsliste in der Hand schaut sie zur Tür — unsere Blicke treffen sich.*"
+    },
+    "hidden_homeroom_d2_1_ins": {
+        "name": "{name}",
+        "text": "Stimmt etwas nicht...?"
+    },
+    "hidden_homeroom_d2_1_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "Nein, nur die Überprüfung deiner Transferunterlagen. — Verwaltungskram."
+    },
+    "hidden_homeroom_d2_2_ins": {
+        "name": "{name}",
+        "text": "*Das Lehrerzimmer. Der Schreibtisch der Lehrerin steht in der Ecke. Papiere und eine Kaffeetasse auf dem Tisch, und — eine Schublade, leicht geöffnet.*"
+    },
+    "hidden_homeroom_d2_3_ins": {
+        "name": "Klassenlehrerin",
+        "text": "*Kurzes Zögern* \"...Verschiedenes. Hauptsächlich — Romane.\""
+    },
+    "hidden_homeroom_d2_3_ins2": {
+        "name": "{name}",
+        "text": "*Romane. Dass eine Deutschlehrerin Romane liest, ist normal, aber warum scheint sie es ungern zuzugeben?*"
+    },
+    "hidden_homeroom_d2_3_ins3": {
+        "name": "Klassenlehrerin",
+        "text": "Lesen? — Und Schreiben?"
+    },
+    "hidden_homeroom_d2_3_ins4": {
+        "name": "{name}",
+        "text": "*Seltsame Frage. Wir sprachen über Noten, warum der plötzliche Schwenk zum 'Schreiben'?*"
+    },
+    "hidden_homeroom_d2_3_ins5": {
+        "name": "{name}",
+        "text": "Beim Schreiben bin ich mir nicht sicher."
+    },
+    "hidden_homeroom_d2_3_ins6": {
+        "name": "{name}",
+        "text": "*Die Lehrerin zögert kurz. Ihr Blick wandert zur Schublade — und kehrt sofort zurück.*"
+    },
+    "hidden_homeroom_d2_6_ins": {
+        "name": "{name}",
+        "text": "*Die Lehrerin schiebt beiläufig die Schublade zu. Als wäre nichts.*"
+    },
+    "hidden_homeroom_d2_7_ins": {
+        "name": "{name}",
+        "text": "Viel besser. Die Leute in der Klasse sind nett."
+    },
+    "hidden_homeroom_d2_8_ins": {
+        "name": "{name}",
+        "text": "Wenn Sie sie kennen, ist Dain wohl ziemlich bekannt."
+    },
+    "hidden_homeroom_d2_8_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "Berühmt ist nicht das Wort...\" *Nimmt einen Schluck Kaffee* \"Eher jemand, um den ich mir Sorgen mache.\""
+    },
+    "hidden_homeroom_d2_8_ins3": {
+        "name": "{name}",
+        "text": "*'Jemand, um den ich mir Sorgen mache.' — Die Lehrerin sorgt sich um Dain. Weiß sie von Dains Knie?*"
+    },
+    "hidden_homeroom_d2_8_ins4": {
+        "name": "Klassenlehrerin",
+        "text": "*Versteckt sich hinter der Kaffeetasse* \"...Mein Pokerface hat wohl versagt. Egal, geh schon.\""
+    },
+    "hidden_homeroom_d2_8_ins5": {
+        "name": "{name}",
+        "text": "*Den Mund hat sie versteckt, aber die Ohren sind rot. — Diese Person wird leichter verlegen als gedacht.*"
+    },
+    "hidden_homeroom_d2_11_ins": {
+        "name": "{name}",
+        "text": "*Vor sich hin murmelnd, obwohl niemand zuhört. — Diese Person hat die Angewohnheit, ihre Fürsorge als 'Arbeit' zu verpacken.*"
+    },
+    "morning2_seo_dust_1_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon bleibt stehen. Sie schaut auf meine Schulter.*"
+    },
+    "morning2_haeun_6_ins": {
+        "name": "{name}",
+        "text": "*Haeun tritt einen Schritt näher. Ihre Stimme wird leiser.*"
     }
 }

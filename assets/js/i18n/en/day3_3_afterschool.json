@@ -519,5 +519,169 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*I walked out to the school entrance.*"
+    },
+    "after3_seo_5_ins": {
+        "name": "Seoyeon",
+        "text": "*Hurriedly fixing her hair* \"...Did you see?\""
+    },
+    "after3_seo_choice1_react_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon looks out the window. I can't see her expression. — She's deliberately hiding it.*"
+    },
+    "after3_seo_choice1_react_ins2": {
+        "name": "{name}",
+        "text": "*But — her pinky finger twitches on the desk. As if reaching for something. Unconsciously.*"
+    },
+    "after3_seo_choice1_react_ins3": {
+        "name": "{name}",
+        "text": "*Seoyeon straightens up. The student council president's face returns. — But it's not perfect. The angle of her smile is off by half a degree.*"
+    },
+    "after3_seo_choice1_react_ins4": {
+        "name": "Seoyeon",
+        "text": "...Thank you."
+    },
+    "after3_seo_choice1_react_ins5": {
+        "name": "{name}",
+        "text": "I'm good at keeping secrets."
+    },
+    "after3_seo_choice1_react_ins6": {
+        "name": "Seoyeon",
+        "text": "*Sorting through papers* \"I know one of your secrets too.\""
+    },
+    "after3_seo_choice1_react_ins7": {
+        "name": "Seoyeon",
+        "text": "Your eyes lit up when you ate the egg roll at lunch. — You can't fake that."
+    },
+    "after3_seo_choice1_react_ins8": {
+        "name": "{name}",
+        "text": "*I offered to keep her secret, and she pulled out a secret of equal weight. — For this person, equality comes before gratitude.*"
+    },
+    "after3_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*...Isn't this about me?*"
+    },
+    "after3_yuna_choice1_2_ins": {
+        "name": "Yuna",
+        "text": "*Clutching the notebook to her chest* \"...Novels are. Fiction.\""
+    },
+    "after3_yuna_choice2_3_ins": {
+        "name": "{name}",
+        "text": "*Yuna spoke more than two sentences in a row. — I've never seen her say this much before.*"
+    },
+    "after3_dain_5_ins": {
+        "name": "Dain",
+        "text": "I told you I'm fine!! It's nothing!!"
+    },
+    "after3_confront_5_ins": {
+        "name": "Dain",
+        "text": "*Lets out a weak laugh.* \"...Geez. I shouldn't be moved by something like this.\""
+    },
+    "after3_confront_5_ins2": {
+        "name": "{name}",
+        "text": "*She accepted it. — This is the first time Dain hasn't refused someone's help. A smile without exclamation marks feels strangely heavy.*"
+    },
+    "haeun_warn_5c_ins": {
+        "name": "Seoyeon",
+        "text": "When you smile at the other girls, it felt like something inside me was crumbling."
+    },
+    "after3_confront_admit_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon lowers her head.*"
+    },
+    "after3_confront_admit_4_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon turns away. — Then stops.*"
+    },
+    "after3_confront_excuse_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon's eyes are cold. A temperature I've never seen before.*"
+    },
+    "after3_confront_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon pauses. Her eyes waver.*"
+    },
+    "after3_confront_lie_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon turns away. — She doesn't stop.*"
+    },
+    "after3_confront_lie_2_ins2": {
+        "name": "{name}",
+        "text": "*Her back is straight. Perfectly. — But her fists are clenched. Her knuckles are white.*"
+    },
+    "haeun_warn_1_ins": {
+        "name": "{name}",
+        "text": "*Haeun is leaning against the wall. She's fiddling with her student council bracelet.*"
+    },
+    "haeun_warn_2_ins": {
+        "name": "{name}",
+        "text": "Haeun? What are you doing here?"
+    },
+    "haeun_warn_3_ins": {
+        "name": "Haeun",
+        "text": "...She cried."
+    },
+    "haeun_warn_3_ins2": {
+        "name": "{name}",
+        "text": "*— What?*"
+    },
+    "haeun_warn_6_ins": {
+        "name": "{name}",
+        "text": "*Haeun lowers her head.*"
+    },
+    "haeun_warn_7_ins": {
+        "name": "{name}",
+        "text": "*Haeun stops herself. Her face says she knows she shouldn't cross the line.*"
+    },
+    "haeun_warn_7_ins2": {
+        "name": "Haeun",
+        "text": "...Anyway. Please be good to her. I'm asking you."
+    },
+    "haeun_warn_7_ins3": {
+        "name": "{name}",
+        "text": "*Haeun turns and walks away.*"
+    },
+    "haeun_warn_7_ins4": {
+        "name": "{name}",
+        "text": "*Things are complicated at Seoyeon's home. Her parents. — Is that why Seoyeon 'had to be perfect'?*"
+    },
+    "minsu_d3_8_ins": {
+        "name": "{name}",
+        "text": "...What?"
+    },
+    "minsu_d3_3_ins": {
+        "name": "{name}",
+        "text": "*I have nothing to say.*"
+    },
+    "minsu_d3_4_ins": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_d3_4_ins2": {
+        "name": "Minsu",
+        "text": "It's not 'later' anymore. It's now."
+    },
+    "minsu_d3_5_ins": {
+        "name": "{name}",
+        "text": "...Yeah."
+    },
+    "minsu_d3_6b_ins": {
+        "name": "{name}",
+        "text": "*Minsu grabs my shoulder.*"
+    },
+    "minsu_d3_7_ins": {
+        "name": "{name}",
+        "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to say 'no.' Because I couldn't say anything. She got a boyfriend without knowing how I felt, and I transferred with 38 unsent confessions saved in my phone's notes.*"
+    },
+    "minsu_d3_7_ins2": {
+        "name": "{name}",
+        "text": "*If Sojeong had been able to reject me back then — maybe it wouldn't still haunt me.*"
+    },
+    "minsu_d3_7_ins3": {
+        "name": "{name}",
+        "text": "*If saying no is love, then what I need to do now isn't tell everyone 'yes' — it's telling just one person 'yes.'*"
+    },
+    "minsu_d3_10_ins": {
+        "name": "{name}",
+        "text": "*Minsu walks ahead.*"
     }
 }

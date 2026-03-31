@@ -432,5 +432,153 @@
     "lunch2_dain_5b": {
         "name": "{name}",
         "text": "*Schere-Stein-Papier. Dain hat verloren.*"
+    },
+    "lunch2_yuna_17_ins": {
+        "name": "Yuna",
+        "text": "......"
+    },
+    "lunch2_yuna_c1_9_ins": {
+        "name": "{name}",
+        "text": "*Yunas Blick wird für einen Moment kalt.*"
+    },
+    "lunch2_seo_13b_ins": {
+        "name": "Seoyeon",
+        "text": "*Schaut {name} an* \"...Ein fröhliches Mädchen.\""
+    },
+    "lunch2_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*Dains Augen werden groß, als sie zwischen uns beiden hin und her schaut.*"
+    },
+    "lunch2_seo_c1_3_ins": {
+        "name": "Seoyeon",
+        "text": "*Tut so, als wäre nichts* \"War ein Reiskorn.\""
+    },
+    "lunch2_dain_13_ins": {
+        "name": "Dain",
+        "text": "Das— das stört mich nicht! Überhaupt nicht!\" *Beißt kräftig ins Soboro-Brötchen* \"Ich hab nur gefragt!!\""
+    },
+    "lunch2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*Vierte Stunde, Sport. Beim Laufen auf dem Sportplatz — der Typ neben mir bremst abrupt und wir prallen zusammen. Mein Ellbogen ist aufgeschürft.*"
+    },
+    "lunch2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*Nichts Schlimmes, aber es blutet etwas.*"
+    },
+    "lunch2_dain_end_ins3": {
+        "name": "Sportlehrer",
+        "text": "Geh zum Krankenzimmer und lass das desinfizieren."
+    },
+    "lunch2_dain_end_ins4": {
+        "name": "{name}",
+        "text": "*Ich öffne die Tür zum Krankenzimmer. Derselbe Desinfektionsgeruch wie gestern.*"
+    },
+    "lunch2_dain_end_ins5": {
+        "name": "Schulkrankenschwester",
+        "text": "*Schaut auf* \"Oh, der Austauschschüler von gestern.\""
+    },
+    "lunch2_dain_end_ins6": {
+        "name": "{name}",
+        "text": "Hab mir den Ellbogen etwas aufgeschürft."
+    },
+    "lunch2_dain_end_ins7": {
+        "name": "Schulkrankenschwester",
+        "text": "Schon wieder? Willst du Stammkunde werden?"
+    },
+    "lunch2_dain_end_ins8": {
+        "name": "{name}",
+        "text": "*Derselbe spielerische Ton wie gestern. Aber ihre Augen untersuchen bereits die Wunde.*"
+    },
+    "lunch2_dain_end_ins9": {
+        "name": "{name}",
+        "text": "*Die Krankenschwester kommt herüber und greift meinen Ellbogen. Ihre Hände sind kalt.*"
+    },
+    "lunch2_dain_end_ins10": {
+        "name": "Schulkrankenschwester",
+        "text": "Stillhalten~..."
+    },
+    "lunch2_dain_end_ins11": {
+        "name": "{name}",
+        "text": "*Sie holt einen in Desinfektionsmittel getränkten Wattebausch heraus — tupft vorsichtig ab. Dann holt sie ein Pflaster.*"
+    },
+    "lunch2_dain_end_ins12": {
+        "name": "{name}",
+        "text": "*Ein Pflaster aufkleben — sollte höchstens 30 Sekunden dauern. Warum ist sie so akribisch?*"
+    },
+    "lunch2_dain_end_ins13": {
+        "name": "Schulkrankenschwester",
+        "text": "*Klebt das Pflaster auf* \"Hier... so... fertig.\""
+    },
+    "lunch2_dain_end_ins14": {
+        "name": "{name}",
+        "text": "*Die Hand der Krankenschwester hält inne. — 0,5 Sekunden. Dann bewegt sie sich wieder.*"
+    },
+    "lunch2_dain_end_ins15": {
+        "name": "Schulkrankenschwester",
+        "text": "...Meine Hände sind eigentlich kalt. Heute scheinen sie warm zu sein."
+    },
+    "lunch2_dain_end_ins16": {
+        "name": "{name}",
+        "text": "*Das stimmt nicht. Als sie mich vorhin berührt hat, waren sie kalt. — Warm geworden sind sie erst jetzt.*"
+    },
+    "lunch2_dain_end_ins17": {
+        "name": "Schulkrankenschwester",
+        "text": "*Grinsend* \"Das ist Sorgfalt. Echte Sorgfalt. Wenn man es halbherzig aufklebt, fällt es gleich wieder ab.\""
+    },
+    "lunch2_dain_end_ins18": {
+        "name": "{name}",
+        "text": "*Sorgfalt... ist es das? Oder gibt es einen anderen Grund?*"
+    },
+    "lunch2_dain_end_ins19": {
+        "name": "{name}",
+        "text": "*Beim Prüfen des Pflasters — fällt mir ein offener Laptop auf dem Schreibtisch auf. Auf dem Bildschirm steht etwas. Keine Krankenakten — eher ein persönliches Tagebuch.*"
+    },
+    "lunch2_dain_end_ins20": {
+        "name": "{name}",
+        "text": "*Die Krankenschwester klappt schnell den Laptop zu.*"
+    },
+    "lunch2_dain_end_ins21": {
+        "name": "Schulkrankenschwester",
+        "text": "*Verengt die Augen* \"Nur eins? ...Na gut. Ich mag Kakao lieber als Kaffee. Das ist das Geheimnis.\""
+    },
+    "lunch2_dain_end_ins22": {
+        "name": "{name}",
+        "text": "*Als Geheimnis ist es harmlos genug. Aber die Geste des Teilens — das bedeutet etwas.*"
+    },
+    "lunch2_dain_end_ins23": {
+        "name": "Schulkrankenschwester",
+        "text": "*Lacht leise* \"Geheim~ Lehrerinnen haben auch Geheimnisse.\""
+    },
+    "lunch2_dain_end_ins24": {
+        "name": "{name}",
+        "text": "*Sie spielt es mit einem Witz herunter, aber den Laptop hat sie schnell zugeklappt. — Es gibt etwas, das sie nicht zeigen will.*"
+    },
+    "lunch2_dain_end_ins25": {
+        "name": "Schulkrankenschwester",
+        "text": "Fertig, also ab zurück in den Unterricht. — Und nächstes Mal komm unverletzt."
+    },
+    "lunch2_dain_end_ins26": {
+        "name": "{name}",
+        "text": "Wenn ich nicht verletzt bin, hätte ich keinen Grund zu kommen."
+    },
+    "lunch2_dain_end_ins27": {
+        "name": "{name}",
+        "text": "*Die Krankenschwester hält inne. Und dann — wird ihre Stimme einen Ton tiefer.*"
+    },
+    "lunch2_dain_end_ins28": {
+        "name": "Schulkrankenschwester",
+        "text": "Du kannst auch ohne Grund kommen."
+    },
+    "lunch2_dain_end_ins29": {
+        "name": "{name}",
+        "text": "*Die Verspieltheit ist weg. — 0,5 Sekunden. Dann kehrt sie zurück.*"
+    },
+    "lunch2_dain_end_ins30": {
+        "name": "Schulkrankenschwester",
+        "text": "*Wieder fröhlicher Ton* \"Ach, aber nicht während der Schulzeit~! Nach dem Unterricht!\""
+    },
+    "lunch2_dain_end_ins31": {
+        "name": "{name}",
+        "text": "*Dieser Wechsel in ihrer Stimme gerade. — Habe ich mir das eingebildet?*"
     }
 }

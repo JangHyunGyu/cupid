@@ -266,5 +266,257 @@
     "confess_dain_3b": {
         "name": "{name}",
         "text": "*Die Turnhalle. Leer. Der Sonnenuntergang fällt durch die Fenster auf das Spielfeld. Ein Ort, an dem sich in wenigen Tagen unzählige Erinnerungen angesammelt haben.*"
+    },
+    "confess_seo_4_ins": {
+        "name": "{name}",
+        "text": "*Die Worte, die ich an meiner alten Schule nicht sagen konnte, tauchen auf. Diesmal werde ich mich bekennen.*"
+    },
+    "confess_seo_yes_11_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon streckt ihren kleinen Finger aus.*"
+    },
+    "confess_seo_no_4_ins": {
+        "name": "{name}",
+        "text": "*Ihr Rücken ist gerade. Sie zittert.*"
+    },
+    "confess_yuna_yes_3_ins": {
+        "name": "{name}",
+        "text": "Du warst die Person, die sich neben mich gesetzt hat, statt etwas zu sagen."
+    },
+    "confess_yuna_yes_6_ins": {
+        "name": "{name}",
+        "text": "*Ich habe gerade den längsten Satz in diesem Raum gesagt. In Yunas Revier.*"
+    },
+    "confess_yuna_yes_8_ins": {
+        "name": "{name}",
+        "text": "*Sie umklammert ihren Ärmel fest.*"
+    },
+    "confess_yuna_yes_8_ins2": {
+        "name": "Yuna",
+        "text": "...Geh nicht."
+    },
+    "confess_yuna_yes_9_ins": {
+        "name": "{name}",
+        "text": "*\"Diesmal.\" Jemand ist vorher gegangen. Yuna öffnet diese Wunde erneut und hält mich trotzdem fest.*"
+    },
+    "confess_yuna_no_4_ins": {
+        "name": "{name}",
+        "text": "*Drei Schritte entfernt drehte ich mich um. Yuna schaute mich ebenfalls an, über ihr Buch hinweg.*"
+    },
+    "confess_dain_yes_3_ins": {
+        "name": "{name}",
+        "text": "Wenn deine Augen nicht auf mir ruhen — wird das Atmen schwer."
+    },
+    "confess_dain_yes_8_ins": {
+        "name": "{name}",
+        "text": "*Sie bedeckt ihr Gesicht mit beiden Händen. Durch die Lücken zwischen den Fingern sind rote Wangen zu sehen.*"
+    },
+    "confess_dain_yes_9_ins": {
+        "name": "{name}",
+        "text": "*Sie nimmt die Hände herunter und lächelt. Tränen laufen über ihr Gesicht.*"
+    },
+    "confess_dain_yes_10_ins": {
+        "name": "{name}",
+        "text": "*\"Mega.\" Dains Art, Gefühle auszudrücken, ist einfach. Aber diese Einfachheit ist der Beweis ihrer Aufrichtigkeit.*"
+    },
+    "confess_dain_no_4_ins": {
+        "name": "{name}",
+        "text": "*Keine Ausrufezeichen. Sie meint es ernst.*"
+    },
+    "confess_dain_no_4_ins2": {
+        "name": "{name}",
+        "text": "*Die Geständnisszenen der drei Hauptcharaktere verlaufen normal. Dieses versteckte Event wird separat vor dem Hauptdate am frühen Morgen von Tag 4 abgespielt. Nur wenn das Hauptgeständnis von Tag 4 aufgeschoben wurde (`day4_waited`), wird am Tag 5 ein Zweig zur Wahl des versteckten Charakters hinzugefügt.*"
+    },
+    "confess_dain_no_4_ins3": {
+        "name": "{name}",
+        "text": "*Wochenende, früher Morgen. Auf dem Weg ins Café komme ich an der Schule vorbei — in einem leeren Klassenzimmer brennt Licht.*"
+    },
+    "confess_dain_no_4_ins4": {
+        "name": "{name}",
+        "text": "*Die Klassenlehrerin steht am Fenster. Ein Stapel Manuskriptseiten in der Hand. Morgenlicht färbt das Papier.*"
+    },
+    "confess_dain_no_4_ins5": {
+        "name": "Klassenlehrerin",
+        "text": "...Du bist gekommen."
+    },
+    "confess_dain_no_4_ins6": {
+        "name": "{name}",
+        "text": "Sie haben mich gerufen."
+    },
+    "confess_dain_no_4_ins7": {
+        "name": "Klassenlehrerin",
+        "text": "Ich habe dich nicht gerufen.\" *Pause* \"...Aber ich wusste, dass du kommst."
+    },
+    "confess_dain_no_4_ins8": {
+        "name": "{name}",
+        "text": "*Sie ist die Art Mensch, die wartet, ohne zu rufen. Deshalb lag das Manuskript auch sieben Jahre in einer Schublade.*"
+    },
+    "confess_dain_no_4_ins9": {
+        "name": "{name}",
+        "text": "*Sie hält mir das Manuskript hin. Ein Titel steht auf dem Cover. Einer, den ich nie zuvor gesehen habe.*"
+    },
+    "confess_dain_no_4_ins10": {
+        "name": "Klassenlehrerin",
+        "text": "Ich wollte das letzte Kapitel... meinem ersten Leser zeigen."
+    },
+    "confess_dain_no_4_ins11": {
+        "name": "{name}",
+        "text": "Das letzte Kapitel?"
+    },
+    "confess_dain_no_4_ins12": {
+        "name": "Klassenlehrerin",
+        "text": "Sieben Jahre. Drei zum Schreiben, vier zum Beenden."
+    },
+    "confess_dain_no_4_ins13": {
+        "name": "{name}",
+        "text": "*Vier Jahre zum Beenden. Anfangen ist leichter als Aufhören für sie. Beim Schreiben wie bei Gefühlen.*"
+    },
+    "confess_dain_no_4_ins14": {
+        "name": "{name}",
+        "text": "*Ich nehme das Manuskript. Fange an zu lesen. Die Lehrerin schaut aus dem Fenster. Morgenlicht. Ihre Fingerspitzen zittern unmerklich.*"
+    },
+    "confess_dain_no_4_ins15": {
+        "name": "{name}",
+        "text": "*Während ich lese, sagt sie kein Wort. Schaut nur aus dem Fenster. Aber in der Glasscheibe sind ihre Augen auf mich gerichtet.*"
+    },
+    "confess_dain_no_4_ins16": {
+        "name": "{name}",
+        "text": "*Das letzte Kapitel. Es endet mit einem einzigen Satz. Als ich ihn lese, glaube ich zu verstehen, warum dieses Manuskript sieben Jahre gebraucht hat.*"
+    },
+    "confess_dain_no_4_ins17": {
+        "name": "{name}",
+        "text": "...Gefällt mir. Dieses Ende."
+    },
+    "confess_dain_no_4_ins18": {
+        "name": "{name}",
+        "text": "*Die Anspannung weicht aus ihren Schultern. Ganz langsam.*"
+    },
+    "confess_dain_no_4_ins19": {
+        "name": "Klassenlehrerin",
+        "text": "...Wirklich?"
+    },
+    "confess_dain_no_4_ins20": {
+        "name": "Klassenlehrerin",
+        "text": "...Gut."
+    },
+    "confess_dain_no_4_ins21": {
+        "name": "{name}",
+        "text": "*Beim zweiten \"Gut\" brach ihre Stimme. Der erste Eindruck des ersten Lesers. Das eine Wort, auf das sie sieben Jahre gewartet hat.*"
+    },
+    "confess_dain_no_4_ins22": {
+        "name": "{name}",
+        "text": "*Die Geständnisszenen der drei Hauptcharaktere verlaufen normal. Dieses versteckte Event wird separat vor dem Hauptdate am Morgen von Tag 4 abgespielt. Nur wenn das Hauptgeständnis von Tag 4 aufgeschoben wurde (`day4_waited`), wird am Tag 5 ein Zweig zur Wahl des versteckten Charakters hinzugefügt.*"
+    },
+    "confess_dain_no_4_ins23": {
+        "name": "{name}",
+        "text": "*Wochenendmorgen. Aus Gewohnheit gehe ich zum Krankenzimmer. Seit wann ist das zur Gewohnheit geworden.*"
+    },
+    "confess_dain_no_4_ins24": {
+        "name": "{name}",
+        "text": "*Ich öffne die Tür. Die Schulkrankenschwester sitzt in ihrem Stuhl. Weißer Kittel. Aber heute ist etwas anders. Der Scherz fehlt.*"
+    },
+    "confess_dain_no_4_ins25": {
+        "name": "Schulkrankenschwester",
+        "text": "Oh, du bist da."
+    },
+    "confess_dain_no_4_ins26": {
+        "name": "{name}",
+        "text": "*\"Du bist da\" klingt einen halben Ton tiefer als sonst. Die Gefühle dieser Person muss man am Tonfall ablesen.*"
+    },
+    "confess_dain_no_4_ins27": {
+        "name": "{name}",
+        "text": "Letzte Sprechstunde?"
+    },
+    "confess_dain_no_4_ins28": {
+        "name": "Schulkrankenschwester",
+        "text": "Sprechstunde...\" *Dreht ihren Stuhl* \"Ja. Die letzte Sprechstunde."
+    },
+    "confess_dain_no_4_ins29": {
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester tut so, als würde sie Papiere auf ihrem Schreibtisch ordnen — aber sie hat dieselbe Seite dreimal umgeblättert.*"
+    },
+    "confess_dain_no_4_ins30": {
+        "name": "Schulkrankenschwester",
+        "text": "Darf ich dich etwas fragen?"
+    },
+    "confess_dain_no_4_ins31": {
+        "name": "{name}",
+        "text": "Was denn?"
+    },
+    "confess_dain_no_4_ins32": {
+        "name": "{name}",
+        "text": "*Sie berührt ihre Brille. Dahinter sind ihre Augen größer als erwartet. Augen, die sich hinter der Scherzhaftigkeit versteckt hatten.*"
+    },
+    "confess_dain_no_4_ins33": {
+        "name": "Schulkrankenschwester",
+        "text": "...Wirst du auch nach dem Abschluss noch ins Krankenzimmer kommen?"
+    },
+    "confess_dain_no_4_ins34": {
+        "name": "{name}",
+        "text": "*Das ist eigentlich keine Frage. Ihr Gesicht fürchtet bereits die Antwort.*"
+    },
+    "confess_dain_no_4_ins35": {
+        "name": "{name}",
+        "text": "*Ich sehe ihr in die Augen. Das ernste Gesicht ohne jede Scherzhaftigkeit. Das ist das erste Mal, dass sie so schutzlos ist.*"
+    },
+    "confess_dain_no_4_ins36": {
+        "name": "Schulkrankenschwester",
+        "text": "Ach, nein. Ist eine komische Frage, oder? Eine Lehrerin sollte so etwas nicht einen Schüler fragen —"
+    },
+    "confess_dain_no_4_ins37": {
+        "name": "{name}",
+        "text": "Ich komme."
+    },
+    "confess_dain_no_4_ins38": {
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester erstarrt. Die Hand, die an ihrer Brille nestelte, hält inne.*"
+    },
+    "confess_dain_no_4_ins39": {
+        "name": "Schulkrankenschwester",
+        "text": "...Echt?"
+    },
+    "confess_dain_no_4_ins40": {
+        "name": "{name}",
+        "text": "*\"Echt.\" Ihr Bestätigungswort. Heute habe ich es zuerst gehört.*"
+    },
+    "confess_dain_no_4_ins41": {
+        "name": "{name}",
+        "text": "Echt."
+    },
+    "confess_dain_no_4_ins42": {
+        "name": "{name}",
+        "text": "*Ein Moment der Stille. Hinter der Brille wirken ihre Augen feucht. Die Gläser sind beschlagen — ob vom Dampf oder von Tränen, kann ich nicht sagen.*"
+    },
+    "confess_dain_no_4_ins43": {
+        "name": "Schulkrankenschwester",
+        "text": "*Wieder in hellem Ton, aber die Stimme zittert* \"So~ letzte Sprechstunde vorbei! Nächster Termin — den trage ich für nach dem Abschluss ein~"
+    },
+    "confess_dain_no_4_ins44": {
+        "name": "{name}",
+        "text": "*Die Scherzhaftigkeit ist zurück. Aber unter den lächelnden Augen ist eine Spur, wo etwas geflossen ist.*"
+    },
+    "confess_dain_no_4_ins45": {
+        "name": "Seoyeon",
+        "text": "*Der Wind war schön heute*"
+    },
+    "confess_dain_no_4_ins46": {
+        "name": "Seoyeon",
+        "text": "*...Beim nächsten Mal erwarte ich andere Worte*"
+    },
+    "confess_dain_no_4_ins47": {
+        "name": "Dain",
+        "text": "*Hey heute war lustig lol*"
+    },
+    "confess_dain_no_4_ins48": {
+        "name": "Dain",
+        "text": "*...Aber hat nicht irgendwas gefehlt?*"
+    },
+    "confess_dain_no_4_ins49": {
+        "name": "Yuna",
+        "text": "*...Heute*"
+    },
+    "confess_dain_no_4_ins50": {
+        "name": "Yuna",
+        "text": "*War okay*"
     }
 }

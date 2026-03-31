@@ -308,5 +308,65 @@
     "date_dain_knee_2b": {
         "name": "{name}",
         "text": "*오락실을 나와 거리로 나왔다.*"
+    },
+    "date_seo_pretty_high_ins": {
+        "name": "서연",
+        "text": "...그런 말. 준비해 온 거야?"
+    },
+    "date_seo_pretty_high_3_ins": {
+        "name": "서연",
+        "text": "*머리카락을 넘기며* \"...착각하지 마."
+    },
+    "date_seo_flower_ins": {
+        "name": "서연",
+        "text": "*걸음을 멈추며* \"...들어가 볼까?"
+    },
+    "date_seo_succulent_2_ins": {
+        "name": "{name}",
+        "text": "나한테 주는 거야?"
+    },
+    "date_yuna_pretty_high_5_ins": {
+        "name": "{name}",
+        "text": "예쁘다."
+    },
+    "date_yuna_pretty_high_5_ins2": {
+        "name": "유나",
+        "text": "*귀가 빨개지며* \"...됐어."
+    },
+    "date_yuna_bookstore_2_ins": {
+        "name": "{name}",
+        "text": "처음이야."
+    },
+    "date_yuna_earphone_2_ins": {
+        "name": "{name}",
+        "text": "*조용한 피아노 곡이 흐른다. 서점의 소음이 멀어진다.*"
+    },
+    "date_yuna_oldbook_ins": {
+        "name": "유나",
+        "text": "...여기."
+    },
+    "date_yuna_oldbook_ins2": {
+        "name": "{name}",
+        "text": "*오래된 책 한 권을 꺼낸다. 페이지를 넘기며.*"
+    },
+    "date_dain_shop_3_ins": {
+        "name": "다인",
+        "text": "*캡모자 아래서* \"...한 번만 더 말하면 진짜 때린다."
+    },
+    "date_dain_arcade_2_ins": {
+        "name": "{name}",
+        "text": "또 내기?"
+    },
+    "date_dain_arcade_3_ins": {
+        "name": "{name}",
+        "text": "*리듬게임. — 다인이 압도적으로 잘한다.*"
+    },
+    "date_dain_arcade_3_ins2": {
+        "name": "다인",
+        "text": "*꺄아 소리를 지르며* \"풀콤보!! 봤어?!"
+    },
+    "date_dain_shop_2_ins": {
+        "name": "다인",
+        "text": "*고개를 돌리며* \"아무것도 아냐! 가자!"
     }
 }

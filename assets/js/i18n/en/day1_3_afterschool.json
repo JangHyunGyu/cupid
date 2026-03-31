@@ -363,5 +363,201 @@
     "after1_pre_miss": {
         "name": "{name}",
         "text": "*I keep walking down the hallway.*"
+    },
+    "after_miss_dain_6_ins": {
+        "name": "{name}",
+        "text": "*She waves and runs off. — When she stopped short, she dragged her right leg slightly. Or did she? It was too fast to tell.*"
+    },
+    "after_miss_yuna_1_ins": {
+        "name": "{name}",
+        "text": "Excuse me, you dropped this..."
+    },
+    "after_miss_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*I pick it up and hold it out. Yuna stops and takes the bookmark.*"
+    },
+    "after_miss_yuna_3_ins": {
+        "name": "{name}",
+        "text": "*And she walks off again.*"
+    },
+    "after_hidden_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "I was just... wandering around, it being the first day and all."
+    },
+    "after_hidden_homeroom_3_ins2": {
+        "name": "Homeroom Teacher",
+        "text": "Wandered all the way to the faculty office? That's unusual. — Come in for a sec."
+    },
+    "after_homeroom_ok_ins": {
+        "name": "{name}",
+        "text": "*The teacher waves and heads toward the faculty office.*"
+    },
+    "after_homeroom_ok_2_ins": {
+        "name": "{name}",
+        "text": "*The teacher pauses for a moment. Leans against the hallway wall.*"
+    },
+    "after_homeroom_honest_3_ins": {
+        "name": "{name}",
+        "text": "*Something similar? — Does that mean she did something other than teaching before?*"
+    },
+    "after_homeroom_honest_6_ins": {
+        "name": "{name}",
+        "text": "*'Professional concern.' — She's the kind of person who wraps her care in job titles.*"
+    },
+    "after_homeroom_honest_choice2a_ins": {
+        "name": "{name}",
+        "text": "*She admitted it honestly. — This person's facade comes off surprisingly fast.*"
+    },
+    "after_homeroom_honest_choice2b_ins": {
+        "name": "{name}",
+        "text": "*She laughed. — That's the first time I've seen this person laugh at a joke.*"
+    },
+    "after_homeroom_honest_choice2b_ins2": {
+        "name": "{name}",
+        "text": "*The teacher heads toward the faculty office — then stops. Fidgets with something in her pocket. A pen, maybe?*"
+    },
+    "after_homeroom_honest_9_ins": {
+        "name": "{name}",
+        "text": "*Earlier in class she said 'I memorize names on the first try.' — Saying it twice means something.*"
+    },
+    "after_hidden_nurse_intro_ins": {
+        "name": "{name}",
+        "text": "*There's a nurse's office sign. — Let's check it out.*"
+    },
+    "after_hidden_nurse_intro_ins2": {
+        "name": "{name}",
+        "text": "*I open the nurse's office door. A faint scent of antiseptic. White curtains, white beds, a small desk.*"
+    },
+    "after_nurse_enter_2_ins": {
+        "name": "{name}",
+        "text": "*Her tone is light. More like walking into a café than a clinic.*"
+    },
+    "after_nurse_enter_4_ins": {
+        "name": "{name}",
+        "text": "How did you know?"
+    },
+    "after_nurse_enter_4_ins2": {
+        "name": "School Nurse",
+        "text": "Your uniform is stiff as a board. Smells like starch too.\" *Sniff sniff* \"Oh, there's cherry blossom scent mixed in. A romantic transfer student.\""
+    },
+    "after_nurse_enter_4_ins3": {
+        "name": "{name}",
+        "text": "*Is she perceptive, or just teasing? — Probably both.*"
+    },
+    "after_nurse_enter_4_ins4": {
+        "name": "{name}",
+        "text": "*The nurse stands and walks over. Her movements are smooth. — Way beyond an ordinary school nurse's level. Movements ingrained in her body. The hands of someone who's done this hundreds of times.*"
+    },
+    "after_nurse_enter_6_ins": {
+        "name": "{name}",
+        "text": "You can tell blood pressure from touching someone's forehead?"
+    },
+    "after_nurse_enter_7_ins": {
+        "name": "{name}",
+        "text": "*I lie down on the bed. The ceiling is white.*"
+    },
+    "after_nurse_enter_7_ins2": {
+        "name": "School Nurse",
+        "text": "*Pulling the curtain halfway* \"Want some water? Or something warm?\""
+    },
+    "after_nurse_enter_7_ins3": {
+        "name": "{name}",
+        "text": "Water is fine."
+    },
+    "after_nurse_enter_8_ins": {
+        "name": "{name}",
+        "text": "But you're a teacher."
+    },
+    "after_nurse_enter_8_ins2": {
+        "name": "School Nurse",
+        "text": "*Handing over a cup of water* \"Right, I'm a teacher. ...I forget sometimes.\""
+    },
+    "after_nurse_enter_8_ins3": {
+        "name": "{name}",
+        "text": "*Forgets sometimes. — Sounds like a joke, but there's a sliver of truth in it.*"
+    },
+    "after_nurse_enter_9_ins": {
+        "name": "{name}",
+        "text": "That plant — is it yours?"
+    },
+    "after_nurse_enter_9_ins2": {
+        "name": "School Nurse",
+        "text": "Yeah, rosemary. — I've had it since my hospital days."
+    },
+    "after_nurse_enter_9_ins3": {
+        "name": "{name}",
+        "text": "Hospital?"
+    },
+    "after_nurse_enter_9_ins4": {
+        "name": "{name}",
+        "text": "*The nurse pauses for a moment. Then smiles.*"
+    },
+    "after_nurse_enter_10_ins": {
+        "name": "{name}",
+        "text": "*'Just minor injuries.' — There's relief in those words. It also means she's seen plenty of injuries that weren't minor.*"
+    },
+    "after_nurse_enter_10_ins2": {
+        "name": "{name}",
+        "text": "*Ten minutes pass. I get up.*"
+    },
+    "after_nurse_enter_10_ins3": {
+        "name": "{name}",
+        "text": "Thank you. I feel a bit better."
+    },
+    "after_nurse_enter_11_ins": {
+        "name": "{name}",
+        "text": "Bother you how?"
+    },
+    "after_nurse_enter_11_ins2": {
+        "name": "School Nurse",
+        "text": "*Narrowing her eyes* \"When a patient keeps coming back, of course I worry. — Because I'm a teacher.\""
+    },
+    "after_nurse_enter_11_ins3": {
+        "name": "{name}",
+        "text": "*'Because I'm a teacher.' — That phrase is like a shield. She hides something behind the title of 'teacher.'*"
+    },
+    "after_nurse_enter_11_ins4": {
+        "name": "{name}",
+        "text": "*The nurse pauses briefly. Her smile returns 0.3 seconds late.*"
+    },
+    "after_nurse_enter_11_ins5": {
+        "name": "School Nurse",
+        "text": "...You're a perceptive patient. And here I'm supposed to be the one worrying."
+    },
+    "after_nurse_enter_11_ins6": {
+        "name": "{name}",
+        "text": "*She looks surprised that a patient worried about her. — She's always been the one caring for others, never the one being cared for.*"
+    },
+    "after_nurse_enter_11_ins7": {
+        "name": "School Nurse",
+        "text": "Right? It's nice here. — Quiet, and if you ignore the antiseptic smell, it's perfect."
+    },
+    "after_nurse_enter_11_ins8": {
+        "name": "{name}",
+        "text": "*Hearing it called cozy makes her eyes light up. — This space must be her sanctuary.*"
+    },
+    "after_nurse_enter_11_ins9": {
+        "name": "{name}",
+        "text": "*I'm heading out of the nurse's office when — from behind me.*"
+    },
+    "after_nurse_enter_11_ins10": {
+        "name": "School Nurse",
+        "text": "Oh, transfer student."
+    },
+    "after_nurse_enter_11_ins11": {
+        "name": "School Nurse",
+        "text": "What's your name?"
+    },
+    "after_nurse_enter_11_ins12": {
+        "name": "{name}",
+        "text": "{name}."
+    },
+    "after_nurse_enter_12_ins": {
+        "name": "{name}",
+        "text": "*A light laugh, but her eyes aren't laughing. — With this person, the line between joke and sincerity is always blurred.*"
+    },
+    "after_nurse_enter_12_ins2": {
+        "name": "{name}",
+        "text": "*I've explored enough for today. Let's head home and rest.*"
     }
 }

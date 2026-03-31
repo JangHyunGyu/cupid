@@ -257,5 +257,65 @@
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
         "text": "...Ja. Gute Nacht."
+    },
+    "night2_start_ins": {
+        "name": "{name}",
+        "text": "*Drei Leute. Alle gleichzeitig.*"
+    },
+    "night2_reply_yuna_6_ins": {
+        "name": "{name}",
+        "text": "*Der dritte Stern? — Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, keine Ahnung.*"
+    },
+    "night2_reply_yuna_6_ins2": {
+        "name": "{name}",
+        "text": "*Ein typisches Yuna-Rätsel. Eine Person, die dir nie die Antwort gibt. — Eine Person, die dich neugierig macht.*"
+    },
+    "night2_reply_yuna_6_ins3": {
+        "name": "{name}",
+        "text": "*Zwischen den Messenger-Benachrichtigungen — eine persönliche Nachricht von der Klassenlehrerin.*"
+    },
+    "night2_reply_yuna_6_ins4": {
+        "name": "Klassenlehrerin",
+        "text": "*{name}, danke, dass du heute ins Lehrerzimmer gekommen bist*"
+    },
+    "night2_reply_yuna_6_ins5": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Verwaltungssachen sind erledigt, also muss ich dich nicht mehr herbestellen*"
+    },
+    "night2_reply_yuna_6_ins6": {
+        "name": "Klassenlehrerin",
+        "text": "*...Aber wenn dir die Eingewöhnung schwerfällt, komm jederzeit vorbei*"
+    },
+    "night2_end_1_ins": {
+        "name": "{name}",
+        "text": "*Der zweite Tag ist vorbei.*"
+    },
+    "night2_end_2_ins": {
+        "name": "{name}",
+        "text": "*Heute ist — anders. Es ist keine Neugier mehr. Ich denke an sie. Was sie gerade machen, was sie morgen sagen werden.*"
+    },
+    "night2_end_2_ins2": {
+        "name": "{name}",
+        "text": "*Minsus Worte kommen immer wieder zurück. 'Warst du an deiner alten Schule auch so?'*"
+    },
+    "night2_flashback_6_ins": {
+        "name": "{name}",
+        "text": "*'Diesmal sage ich, was ich will, ohne es zu bereuen.' — Das war das Versprechen, das ich mir beim Wechsel an diese Schule gab.*"
+    },
+    "night2_flashback_6_ins2": {
+        "name": "{name}",
+        "text": "*'Diesmal sage ich, was ich will, ohne es zu bereuen.' — Das war das Versprechen, das ich mir beim Wechsel an diese Schule gab.*"
+    },
+    "night2_end_3_ins": {
+        "name": "{name}",
+        "text": "*Das Problem ist, dass sich diese Distanz schneller verringert als erwartet.*"
+    },
+    "night2_end_4_ins": {
+        "name": "{name}",
+        "text": "*Ich öffne den Kühlschrank. Nicht viel drin. Restlicher Reis, Eier, Seetang. — Ich will morgen etwas mitbringen. Für wen? Keine Ahnung. Ich will es einfach.*"
+    },
+    "night2_end_4_ins2": {
+        "name": "{name}",
+        "text": "*Ich habe schnell eine Lunchbox zusammengestellt. Ist nicht toll. Zu grob, um es liebevoll zubereitet zu nennen. — Aber besser als nichts.*"
     }
 }
