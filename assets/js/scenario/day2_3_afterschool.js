@@ -412,6 +412,11 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/student_room.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_shy.png",
+        "next": "after2_seo_neck_high_2_ins"
+    },
+    "after2_seo_neck_high_2_ins": {
+        "background": "assets/images/background/student_room.png",
+        "character": null,
         "next": "after2_seo_9"
     },
     "after2_seo_neck_low": {
@@ -656,6 +661,11 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_shy.png",
+        "next": "after2_yuna_everyday_react_ins"
+    },
+    "after2_yuna_everyday_react_ins": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
         "next": "after2_yuna_end"
     },
     "after2_yuna_quiet": {
