@@ -80,8 +80,7 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1280px;
-    /* 고해상도 모니터에서도 16:9 비율 유지 권장 */
+    max-width: none;
     margin: 0 auto;
     /* 중앙 정렬 */
     background-color: #222;
