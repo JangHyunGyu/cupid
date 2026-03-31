@@ -241,7 +241,7 @@
     },
     "lunch3_seo_witness_1": {
         "name": "{name}",
-        "text": "*Dain bleibt an der Klassentür stehen. Sie sieht Seoyeon die Lunchbox annehmen. \"...Oh.\" Sie dreht um.*"
+        "text": "*Dain bleibt an der Klassentür stehen. Sie sieht Seoyeon die Lunchbox annehmen. ...Oh. Sie dreht um.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -319,15 +319,15 @@
     },
     "lunch3_start_2_ins": {
         "name": "Dain",
-        "text": "*Beißt ohne zu zögern ins Eieromelette* \"Oh! Das ist lecker!!"
+        "text": "*Beißt ohne zu zögern ins Eieromelette* Oh! Das ist lecker!!"
     },
     "lunch3_meal_7_ins": {
         "name": "Yuna",
-        "text": "*Schon kauend* \"...Ist gut.\""
+        "text": "*Schon kauend* ...Ist gut."
     },
     "lunch3_meal_10_ins": {
         "name": "{name}",
-        "text": "*\"Lasst uns alle zusammen essen\", sagte ich. — Aber die Stimmung ist seltsam.*"
+        "text": "*Lasst uns alle zusammen essen, sagte ich. — Aber die Stimmung ist seltsam.*"
     },
     "lunch3_meal_10_ins2": {
         "name": "{name}",
@@ -335,11 +335,11 @@
     },
     "lunch3_meal_10_ins3": {
         "name": "{name}",
-        "text": "*Seoyeon-Route: Seoyeons Stäbchen halten inne. \"...Teilen? Das war für uns zwei gedacht.\" Eine halbe Sekunde später fängt sie sich. Das Gesicht der Schülersprecherin kehrt zurück. \"Na gut, ist okay.\" — Ich weiß, dass es nicht okay ist.*"
+        "text": "*Seoyeon-Route: Seoyeons Stäbchen halten inne. ...Teilen? Das war für uns zwei gedacht. Eine halbe Sekunde später fängt sie sich. Das Gesicht der Schülersprecherin kehrt zurück. Na gut, ist okay. — Ich weiß, dass es nicht okay ist.*"
     },
     "lunch3_meal_10_ins4": {
         "name": "{name}",
-        "text": "*Dain-Route: \"Alle zusammen?! Super!!\" Die Ausrufezeichen sind noch da. — Aber ihre Stimme ist einen halben Ton tiefer. Normalerweise hätte sie Stühle herangeschleppt, aber heute rührt sie sich nicht vom Fleck.*"
+        "text": "*Dain-Route: Alle zusammen?! Super!! Die Ausrufezeichen sind noch da. — Aber ihre Stimme ist einen halben Ton tiefer. Normalerweise hätte sie Stühle herangeschleppt, aber heute rührt sie sich nicht vom Fleck.*"
     },
     "lunch3_meal_10_ins5": {
         "name": "{name}",

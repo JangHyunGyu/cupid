@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Mit großen Augen* \"Hm? Ich wollte es locker angehen, aber vergiss es.\""
+        "text": "*Mit großen Augen* Hm? Ich wollte es locker angehen, aber vergiss es."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*Leise* \"...Nicht bewegen. Nur kurz.\""
+        "text": "*Leise* ...Nicht bewegen. Nur kurz."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Zieht ihre Hand zurück* \"...War nichts.\""
+        "text": "*Zieht ihre Hand zurück* ...War nichts."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Geht neben mir* \"Hast du in letzter Zeit Spaß?\""
+        "text": "*Geht neben mir* Hast du in letzter Zeit Spaß?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

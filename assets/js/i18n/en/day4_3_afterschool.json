@@ -297,7 +297,7 @@
     },
     "confess_yuna_yes_9_ins": {
         "name": "{name}",
-        "text": "*\"This time.\" Someone left before. Yuna is reopening that wound, and still holding onto me.*"
+        "text": "*This time. Someone left before. Yuna is reopening that wound, and still holding onto me.*"
     },
     "confess_yuna_no_4_ins": {
         "name": "{name}",
@@ -317,7 +317,7 @@
     },
     "confess_dain_yes_10_ins": {
         "name": "{name}",
-        "text": "*\"A ton.\" Dain's way of expressing feelings is simple. But that simplicity is proof of sincerity.*"
+        "text": "*A ton. Dain's way of expressing feelings is simple. But that simplicity is proof of sincerity.*"
     },
     "confess_dain_no_4_ins": {
         "name": "{name}",
@@ -345,7 +345,7 @@
     },
     "confess_dain_no_4_ins7": {
         "name": "Homeroom Teacher",
-        "text": "I never called you.\" *Pausing* \"...But I knew you'd come."
+        "text": "I never called you. *Pausing* ...But I knew you'd come."
     },
     "confess_dain_no_4_ins8": {
         "name": "{name}",
@@ -401,7 +401,7 @@
     },
     "confess_dain_no_4_ins21": {
         "name": "{name}",
-        "text": "*Her voice cracked on the second \"yeah.\" The first reader's first impression. The one word she waited seven years to hear.*"
+        "text": "*Her voice cracked on the second yeah. The first reader's first impression. The one word she waited seven years to hear.*"
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
@@ -421,7 +421,7 @@
     },
     "confess_dain_no_4_ins26": {
         "name": "{name}",
-        "text": "*\"Oh, you're here\" is half a tone lower than usual. You have to read this person's feelings through tone.*"
+        "text": "*Oh, you're here is half a tone lower than usual. You have to read this person's feelings through tone.*"
     },
     "confess_dain_no_4_ins27": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "confess_dain_no_4_ins28": {
         "name": "School Nurse",
-        "text": "Session, huh...\" *Turning her chair* \"Right. Last session."
+        "text": "Session, huh... *Turning her chair* Right. Last session."
     },
     "confess_dain_no_4_ins29": {
         "name": "{name}",
@@ -477,7 +477,7 @@
     },
     "confess_dain_no_4_ins40": {
         "name": "{name}",
-        "text": "*\"For real.\" Her confirmation phrase. Today I heard it first.*"
+        "text": "*For real. Her confirmation phrase. Today I heard it first.*"
     },
     "confess_dain_no_4_ins41": {
         "name": "{name}",
@@ -489,7 +489,7 @@
     },
     "confess_dain_no_4_ins43": {
         "name": "School Nurse",
-        "text": "*Switching back to a bright tone, but her voice trembles* \"Alright~ then the last session is over! Next appointment — I'll schedule it for after graduation~"
+        "text": "*Switching back to a bright tone, but her voice trembles* Alright~ then the last session is over! Next appointment — I'll schedule it for after graduation~"
     },
     "confess_dain_no_4_ins44": {
         "name": "{name}",

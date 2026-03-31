@@ -325,7 +325,7 @@
     },
     "hallway_6_ins": {
         "name": "Seoyeon",
-        "text": "*Un bref silence* \"...Tu es perspicace.\""
+        "text": "*Un bref silence* ...Tu es perspicace."
     },
     "hallway_6_ins2": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "classroom_5_ins2": {
         "name": "Professeure principale",
-        "text": "...D'accord. {name}. Je m'en souviendrai.\" *Tout bas, presque pour elle-même* \"Je retiens toujours les noms du premier coup.\""
+        "text": "...D'accord. {name}. Je m'en souviendrai. *Tout bas, presque pour elle-même* Je retiens toujours les noms du premier coup."
     },
     "classroom_5_ins3": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "classroom_minsu_2_ins": {
         "name": "Minsu",
-        "text": "*Désignant Dain du menton* \"Ton endurance.\""
+        "text": "*Désignant Dain du menton* Ton endurance."
     },
     "classroom_yuna_note_5_ins": {
         "name": "{name}",

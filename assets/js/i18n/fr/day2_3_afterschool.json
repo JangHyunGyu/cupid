@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Les yeux écarquillés* \"Hein ? J'allais y aller doucement, mais tant pis.\""
+        "text": "*Les yeux écarquillés* Hein ? J'allais y aller doucement, mais tant pis."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*Doucement* \"...Ne bouge pas. Juste un instant.\""
+        "text": "*Doucement* ...Ne bouge pas. Juste un instant."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Retirant sa main* \"...C'était rien.\""
+        "text": "*Retirant sa main* ...C'était rien."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Marchant à côté de moi* \"Tu t'amuses bien en ce moment ?\""
+        "text": "*Marchant à côté de moi* Tu t'amuses bien en ce moment ?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

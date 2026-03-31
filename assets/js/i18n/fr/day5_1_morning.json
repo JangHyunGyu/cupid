@@ -197,7 +197,7 @@
     },
     "hidden_homeroom_d5_1_ins3": {
         "name": "Professeure principale",
-        "text": "*Soulevant légèrement l'enveloppe* \"...Ça."
+        "text": "*Soulevant légèrement l'enveloppe* ...Ça."
     },
     "hidden_homeroom_d5_1_ins4": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "hidden_homeroom_d5_6_ins12": {
         "name": "Professeure principale",
-        "text": "*Repoussant ses cheveux* \"...Je n'accepte pas les comptes rendus."
+        "text": "*Repoussant ses cheveux* ...Je n'accepte pas les comptes rendus."
     },
     "hidden_homeroom_d5_6_ins13": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "hidden_homeroom_d5_6_ins14": {
         "name": "Professeure principale",
-        "text": "*Un petit rire* \"...D'accord. Écris-moi au moins une ligne."
+        "text": "*Un petit rire* ...D'accord. Écris-moi au moins une ligne."
     },
     "hidden_homeroom_d5_6_ins15": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "hidden_homeroom_d5_6_ins19": {
         "name": "Professeure principale",
-        "text": "...Après ton diplôme.\" *Sa voix se brise.* \"Oui. Après ton diplôme."
+        "text": "...Après ton diplôme. *Sa voix se brise.* Oui. Après ton diplôme."
     },
     "hidden_homeroom_d5_6_ins20": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "hidden_nurse_d5_1_ins2": {
         "name": "Infirmière",
-        "text": "*Avec un léger sourire* \"Viens me voir après ton diplôme."
+        "text": "*Avec un léger sourire* Viens me voir après ton diplôme."
     },
     "hidden_nurse_d5_1_ins3": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d5_3_ins4": {
         "name": "Infirmière",
-        "text": "*En souriant à nouveau* \"Demande-moi ça après ton diplôme. — Je te répondrai à ce moment-là."
+        "text": "*En souriant à nouveau* Demande-moi ça après ton diplôme. — Je te répondrai à ce moment-là."
     },
     "hidden_nurse_d5_3_ins5": {
         "name": "{name}",
@@ -385,7 +385,7 @@
     },
     "hidden_nurse_d5_choice_b_ins5": {
         "name": "Infirmière",
-        "text": "*Ajustant ses lunettes* \"...D'accord. Mais utilise-le après ton diplôme."
+        "text": "*Ajustant ses lunettes* ...D'accord. Mais utilise-le après ton diplôme."
     },
     "hidden_nurse_d5_choice_b_ins6": {
         "name": "{name}",

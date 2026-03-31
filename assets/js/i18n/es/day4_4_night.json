@@ -556,7 +556,7 @@
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
-        "text": "*Le envié un mensaje. \"Seoyeon, ¿estás bien?\" — Un minuto. Leído. Sin respuesta. Entonces — suena mi teléfono.*"
+        "text": "*Le envié un mensaje. Seoyeon, ¿estás bien? — Un minuto. Leído. Sin respuesta. Entonces — suena mi teléfono.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
@@ -695,11 +695,11 @@
     },
     "night_homeroom_msg_1": {
         "name": "Profesora",
-        "text": "*Mensaje* \"La fecha límite del manuscrito se acerca. ...Hay una parte que quiero mostrarle a mi primer lector.\""
+        "text": "*Mensaje* La fecha límite del manuscrito se acerca. ...Hay una parte que quiero mostrarle a mi primer lector."
     },
     "night_homeroom_msg_2": {
         "name": "Profesora",
-        "text": "*Mensaje* \"Ven a la sala de profesores mañana si tienes tiempo. — Después de clases.\""
+        "text": "*Mensaje* Ven a la sala de profesores mañana si tienes tiempo. — Después de clases."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "wall_dain_lastspike_3_ins": {
         "name": "Dain",
-        "text": "*Sonriendo débilmente* \"...Duele."
+        "text": "*Sonriendo débilmente* ...Duele."
     },
     "wall_dain_lastspike_3_ins2": {
         "name": "Dain",
@@ -927,15 +927,15 @@
     },
     "wall_yuna_glimpse_3_ins4": {
         "name": "Profesora",
-        "text": "*Mensaje* \"Se acerca la fecha límite del manuscrito."
+        "text": "*Mensaje* Se acerca la fecha límite del manuscrito."
     },
     "wall_yuna_glimpse_3_ins5": {
         "name": "Profesora",
-        "text": "*Mensaje* \"...Hay una parte que quiero enseñarle a mi primer lector."
+        "text": "*Mensaje* ...Hay una parte que quiero enseñarle a mi primer lector."
     },
     "wall_yuna_glimpse_3_ins6": {
         "name": "Profesora",
-        "text": "*Mensaje* \"Ven a la sala de profesores mañana si puedes. Después de clase."
+        "text": "*Mensaje* Ven a la sala de profesores mañana si puedes. Después de clase."
     },
     "wall_yuna_glimpse_3_ins7": {
         "name": "{name}",
@@ -943,7 +943,7 @@
     },
     "wall_yuna_glimpse_3_ins8": {
         "name": "{name}",
-        "text": "*Sus mensajes siempre son cortos. Sin relleno. Pero este era diferente. \"Hay una parte que quiero enseñarte.\" Esa línea tiene peso.*"
+        "text": "*Sus mensajes siempre son cortos. Sin relleno. Pero este era diferente. Hay una parte que quiero enseñarte. Esa línea tiene peso.*"
     },
     "wall_yuna_glimpse_3_ins9": {
         "name": "{name}",
@@ -959,11 +959,11 @@
     },
     "wall_yuna_glimpse_3_ins12": {
         "name": "Enfermera",
-        "text": "*Mensaje* \"Lo que dijiste hoy en la enfermería."
+        "text": "*Mensaje* Lo que dijiste hoy en la enfermería."
     },
     "wall_yuna_glimpse_3_ins13": {
         "name": "Enfermera",
-        "text": "*Mensaje* \"...No dejo de darle vueltas esta noche."
+        "text": "*Mensaje* ...No dejo de darle vueltas esta noche."
     },
     "wall_yuna_glimpse_3_ins14": {
         "name": "{name}",
@@ -975,11 +975,11 @@
     },
     "wall_yuna_glimpse_3_ins16": {
         "name": "Enfermera",
-        "text": "*Mensaje* \"Ah, no en plan raro. Solo que me impresionó."
+        "text": "*Mensaje* Ah, no en plan raro. Solo que me impresionó."
     },
     "wall_yuna_glimpse_3_ins17": {
         "name": "Enfermera",
-        "text": "*Mensaje* \"...Buenas noches."
+        "text": "*Mensaje* ...Buenas noches."
     },
     "wall_yuna_glimpse_3_ins18": {
         "name": "{name}",
@@ -987,7 +987,7 @@
     },
     "wall_yuna_glimpse_3_ins19": {
         "name": "{name}",
-        "text": "*\"No dejo de darle vueltas esta noche.\" Al leer eso, mis dedos se paralizaron. Solo cuando llegó \"no en plan raro\" pude volver a respirar.*"
+        "text": "*No dejo de darle vueltas esta noche. Al leer eso, mis dedos se paralizaron. Solo cuando llegó no en plan raro pude volver a respirar.*"
     },
     "wall_yuna_glimpse_3_ins20": {
         "name": "{name}",
@@ -995,7 +995,7 @@
     },
     "wall_yuna_glimpse_3_ins21": {
         "name": "{name}",
-        "text": "*Hay una nota en mi mesa. La letra de Seoyeon. \"Saca un rato esta tarde. Dejo la azotea abierta. — Seoyeon\"*"
+        "text": "*Hay una nota en mi mesa. La letra de Seoyeon. Saca un rato esta tarde. Dejo la azotea abierta. — Seoyeon*"
     },
     "wall_yuna_glimpse_3_ins22": {
         "name": "{name}",
@@ -1003,6 +1003,6 @@
     },
     "wall_yuna_glimpse_3_ins23": {
         "name": "{name}",
-        "text": "*Al pasar por el rincón de exposición del club literario en el pasillo — hay un relato corto clavado en el tablón. Título: \"A la persona que conocí en la biblioteca.\" Es de Yuna. Una historia que solo su protagonista reconocería.*"
+        "text": "*Al pasar por el rincón de exposición del club literario en el pasillo — hay un relato corto clavado en el tablón. Título: A la persona que conocí en la biblioteca. Es de Yuna. Una historia que solo su protagonista reconocería.*"
     }
 }

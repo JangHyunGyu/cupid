@@ -325,7 +325,7 @@
     },
     "hallway_6_ins": {
         "name": "Seoyeon",
-        "text": "*A brief pause* \"...You're perceptive.\""
+        "text": "*A brief pause* ...You're perceptive."
     },
     "hallway_6_ins2": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "classroom_5_ins2": {
         "name": "Homeroom Teacher",
-        "text": "...Right. {name}. I'll remember that.\" *Quietly, almost to herself* \"I make it a point to memorize names on the first try.\""
+        "text": "...Right. {name}. I'll remember that. *Quietly, almost to herself* I make it a point to memorize names on the first try."
     },
     "classroom_5_ins3": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "classroom_minsu_2_ins": {
         "name": "Minsu",
-        "text": "*Nodding toward Dain* \"Your stamina.\""
+        "text": "*Nodding toward Dain* Your stamina."
     },
     "classroom_yuna_note_5_ins": {
         "name": "{name}",

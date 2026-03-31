@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Regardant {name}* \"...Une fille pleine d'entrain.\""
+        "text": "*Regardant {name}* ...Une fille pleine d'entrain."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",
@@ -451,11 +451,11 @@
     },
     "lunch2_seo_c1_3_ins": {
         "name": "Seoyeon",
-        "text": "*L'air de rien* \"C'était un grain de riz.\""
+        "text": "*L'air de rien* C'était un grain de riz."
     },
     "lunch2_dain_13_ins": {
         "name": "Dain",
-        "text": "Ça— ça ne me dérange pas ! Pas du tout !\" *Mord un grand coup dans le soboro* \"Je demandais, c'est tout !!\""
+        "text": "Ça— ça ne me dérange pas ! Pas du tout ! *Mord un grand coup dans le soboro* Je demandais, c'est tout !!"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "lunch2_dain_end_ins5": {
         "name": "Infirmière",
-        "text": "*Levant les yeux* \"Oh, le nouveau d'hier.\""
+        "text": "*Levant les yeux* Oh, le nouveau d'hier."
     },
     "lunch2_dain_end_ins6": {
         "name": "{name}",
@@ -507,7 +507,7 @@
     },
     "lunch2_dain_end_ins13": {
         "name": "Infirmière",
-        "text": "*Posant le pansement* \"Là... comme ça... voilà, c'est fait.\""
+        "text": "*Posant le pansement* Là... comme ça... voilà, c'est fait."
     },
     "lunch2_dain_end_ins14": {
         "name": "{name}",
@@ -523,7 +523,7 @@
     },
     "lunch2_dain_end_ins17": {
         "name": "Infirmière",
-        "text": "*Avec un sourire* \"C'est du soin. Du vrai soin. Si on colle ça à moitié, ça tombe tout de suite.\""
+        "text": "*Avec un sourire* C'est du soin. Du vrai soin. Si on colle ça à moitié, ça tombe tout de suite."
     },
     "lunch2_dain_end_ins18": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "lunch2_dain_end_ins21": {
         "name": "Infirmière",
-        "text": "*Plissant les yeux* \"Un seul ? ...Bon, d'accord. Je préfère le cacao au café. Voilà le secret.\""
+        "text": "*Plissant les yeux* Un seul ? ...Bon, d'accord. Je préfère le cacao au café. Voilà le secret."
     },
     "lunch2_dain_end_ins22": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "lunch2_dain_end_ins23": {
         "name": "Infirmière",
-        "text": "*Riant doucement* \"Secret~ Les profs aussi ont des secrets.\""
+        "text": "*Riant doucement* Secret~ Les profs aussi ont des secrets."
     },
     "lunch2_dain_end_ins24": {
         "name": "{name}",
@@ -575,7 +575,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "Infirmière",
-        "text": "*De nouveau sur un ton joyeux* \"Ah, mais pas pendant les cours~ ! Après les cours !\""
+        "text": "*De nouveau sur un ton joyeux* Ah, mais pas pendant les cours~ ! Après les cours !"
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",

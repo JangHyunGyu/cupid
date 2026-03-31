@@ -438,7 +438,7 @@
     },
     "after_nurse_enter_4_ins2": {
         "name": "School Nurse",
-        "text": "Your uniform is stiff as a board. Smells like starch too.\" *Sniff sniff* \"Oh, there's cherry blossom scent mixed in. A romantic transfer student.\""
+        "text": "Your uniform is stiff as a board. Smells like starch too. *Sniff sniff* Oh, there's cherry blossom scent mixed in. A romantic transfer student."
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
@@ -458,7 +458,7 @@
     },
     "after_nurse_enter_7_ins2": {
         "name": "School Nurse",
-        "text": "*Pulling the curtain halfway* \"Want some water? Or something warm?\""
+        "text": "*Pulling the curtain halfway* Want some water? Or something warm?"
     },
     "after_nurse_enter_7_ins3": {
         "name": "{name}",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "School Nurse",
-        "text": "*Handing over a cup of water* \"Right, I'm a teacher. ...I forget sometimes.\""
+        "text": "*Handing over a cup of water* Right, I'm a teacher. ...I forget sometimes."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "School Nurse",
-        "text": "*Narrowing her eyes* \"When a patient keeps coming back, of course I worry. — Because I'm a teacher.\""
+        "text": "*Narrowing her eyes* When a patient keeps coming back, of course I worry. — Because I'm a teacher."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",

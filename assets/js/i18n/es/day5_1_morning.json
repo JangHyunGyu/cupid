@@ -197,7 +197,7 @@
     },
     "hidden_homeroom_d5_1_ins3": {
         "name": "Profesora",
-        "text": "*Levantando ligeramente el sobre* \"...Esto."
+        "text": "*Levantando ligeramente el sobre* ...Esto."
     },
     "hidden_homeroom_d5_1_ins4": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "hidden_homeroom_d5_6_ins12": {
         "name": "Profesora",
-        "text": "*Apartándose el pelo* \"...No acepto reseñas."
+        "text": "*Apartándose el pelo* ...No acepto reseñas."
     },
     "hidden_homeroom_d5_6_ins13": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "hidden_homeroom_d5_6_ins14": {
         "name": "Profesora",
-        "text": "*Sonríe* \"...Vale. Escríbeme aunque sea una línea."
+        "text": "*Sonríe* ...Vale. Escríbeme aunque sea una línea."
     },
     "hidden_homeroom_d5_6_ins15": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "hidden_homeroom_d5_6_ins19": {
         "name": "Profesora",
-        "text": "...Cuando te gradúes.\" *La voz se le quiebra.* \"Sí. Cuando te gradúes."
+        "text": "...Cuando te gradúes. *La voz se le quiebra.* Sí. Cuando te gradúes."
     },
     "hidden_homeroom_d5_6_ins20": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "hidden_nurse_d5_1_ins2": {
         "name": "Enfermera",
-        "text": "*Con una sonrisa ligera* \"Ven a visitarme después de graduarte."
+        "text": "*Con una sonrisa ligera* Ven a visitarme después de graduarte."
     },
     "hidden_nurse_d5_1_ins3": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d5_3_ins4": {
         "name": "Enfermera",
-        "text": "*Volviendo a sonreír* \"Pregúntame eso después de graduarte. — Entonces te responderé."
+        "text": "*Volviendo a sonreír* Pregúntame eso después de graduarte. — Entonces te responderé."
     },
     "hidden_nurse_d5_3_ins5": {
         "name": "{name}",
@@ -385,7 +385,7 @@
     },
     "hidden_nurse_d5_choice_b_ins5": {
         "name": "Enfermera",
-        "text": "*Ajustándose las gafas* \"...Está bien. Pero úsalo después de graduarte."
+        "text": "*Ajustándose las gafas* ...Está bien. Pero úsalo después de graduarte."
     },
     "hidden_nurse_d5_choice_b_ins6": {
         "name": "{name}",

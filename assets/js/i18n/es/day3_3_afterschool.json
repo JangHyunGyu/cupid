@@ -522,7 +522,7 @@
     },
     "after3_seo_5_ins": {
         "name": "Seoyeon",
-        "text": "*Arreglándose el pelo apresuradamente* \"...¿Viste?\""
+        "text": "*Arreglándose el pelo apresuradamente* ...¿Viste?"
     },
     "after3_seo_choice1_react_ins": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "after3_seo_choice1_react_ins6": {
         "name": "Seoyeon",
-        "text": "*Ordenando papeles* \"Yo también sé uno de tus secretos.\""
+        "text": "*Ordenando papeles* Yo también sé uno de tus secretos."
     },
     "after3_seo_choice1_react_ins7": {
         "name": "Seoyeon",
@@ -562,7 +562,7 @@
     },
     "after3_yuna_choice1_2_ins": {
         "name": "Yuna",
-        "text": "*Abrazando el cuaderno contra su pecho* \"...Las novelas son. Ficción.\""
+        "text": "*Abrazando el cuaderno contra su pecho* ...Las novelas son. Ficción."
     },
     "after3_yuna_choice2_3_ins": {
         "name": "{name}",
@@ -574,7 +574,7 @@
     },
     "after3_confront_5_ins": {
         "name": "Dain",
-        "text": "*Suelta una risa débil.* \"...Vaya. No debería conmoverme por algo así.\""
+        "text": "*Suelta una risa débil.* ...Vaya. No debería conmoverme por algo así."
     },
     "after3_confront_5_ins2": {
         "name": "{name}",

@@ -147,7 +147,7 @@
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*Her name. I've been calling her \"School Nurse\" this whole time too.*",
+        "text": "*Her name. I've been calling her School Nurse this whole time too.*",
         "choices": [
             "What's your name? Not \"School Nurse\"",
             "So that's why you came to this school"
@@ -307,7 +307,7 @@
     },
     "minsu_cheer_1_ins3": {
         "name": "Minsu",
-        "text": "*Dain posted in the group chat lol \"Got plans tomorrow!!\" she said*"
+        "text": "*Dain posted in the group chat lol Got plans tomorrow!! she said*"
     },
     "minsu_cheer_1_ins4": {
         "name": "Minsu",
@@ -327,7 +327,7 @@
     },
     "morning4_dain_msg_1_ins": {
         "name": "{name}",
-        "text": "*Short and simple. But \"go get 'em\" hits hard. The same guy who asked \"Were you like this at your old school too?\" on Day 2, who said \"Rejection is also love\" on Day 3 — today it's just \"go get 'em.\"*"
+        "text": "*Short and simple. But go get 'em hits hard. The same guy who asked Were you like this at your old school too? on Day 2, who said Rejection is also love on Day 3 — today it's just go get 'em.*"
     },
     "morning4_dain_msg_1_ins2": {
         "name": "{name}",
@@ -351,7 +351,7 @@
     },
     "morning4_yuna_msg_1_ins": {
         "name": "{name}",
-        "text": "*Short. So Yuna. I now know that \"I'll leave if you're late\" means the same as \"please don't be late.\"*"
+        "text": "*Short. So Yuna. I now know that I'll leave if you're late means the same as please don't be late.*"
     },
     "morning4_yuna_msg_1_ins2": {
         "name": "Dain",
@@ -371,7 +371,7 @@
     },
     "hidden_homeroom_d4_3_ins": {
         "name": "Homeroom Teacher",
-        "text": "*Flustered* \"Oh, it's just — I had some paperwork left."
+        "text": "*Flustered* Oh, it's just — I had some paperwork left."
     },
     "hidden_homeroom_d4_3_ins2": {
         "name": "{name}",
@@ -383,7 +383,7 @@
     },
     "hidden_homeroom_d4_3_ins4": {
         "name": "Homeroom Teacher",
-        "text": "*Hands in pockets* \"...A teacher's still a teacher on weekends. You know how it is."
+        "text": "*Hands in pockets* ...A teacher's still a teacher on weekends. You know how it is."
     },
     "hidden_homeroom_d4_cafe_1_ins": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_homeroom_d4_cafe_1_ins2": {
         "name": "Homeroom Teacher",
-        "text": "*Taking a sip of coffee* \"Honestly? A little."
+        "text": "*Taking a sip of coffee* Honestly? A little."
     },
     "hidden_homeroom_d4_cafe_1_ins3": {
         "name": "{name}",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d4_cafe_2_ins2": {
         "name": "Homeroom Teacher",
-        "text": "More than help...\" *Looking out the window* \"Having someone find out was — a relief. Carrying something alone isn't a secret, it's a burden."
+        "text": "More than help... *Looking out the window* Having someone find out was — a relief. Carrying something alone isn't a secret, it's a burden."
     },
     "hidden_homeroom_d4_cafe_2_ins3": {
         "name": "{name}",
@@ -439,11 +439,11 @@
     },
     "hidden_homeroom_d4_cafe_5_ins3": {
         "name": "{name}",
-        "text": "\"Educational interest,\" right?"
+        "text": "Educational interest, right?"
     },
     "hidden_homeroom_d4_cafe_5_ins4": {
         "name": "Homeroom Teacher",
-        "text": "*Freezes* \"...Don't steal my line before I say it."
+        "text": "*Freezes* ...Don't steal my line before I say it."
     },
     "hidden_homeroom_d4_cafe_5_ins5": {
         "name": "{name}",
@@ -471,7 +471,7 @@
     },
     "hidden_nurse_d4_1_ins2": {
         "name": "School Nurse",
-        "text": "*Turning around* \"Huh? You actually came?"
+        "text": "*Turning around* Huh? You actually came?"
     },
     "hidden_nurse_d4_2_ins": {
         "name": "{name}",
@@ -479,7 +479,7 @@
     },
     "hidden_nurse_d4_2_ins2": {
         "name": "School Nurse",
-        "text": "*Laughing* \"First time a patient ever helped the nurse."
+        "text": "*Laughing* First time a patient ever helped the nurse."
     },
     "hidden_nurse_d4_2_ins3": {
         "name": "{name}",
@@ -491,7 +491,7 @@
     },
     "hidden_nurse_d4_2_ins5": {
         "name": "School Nurse",
-        "text": "*Handing over documents* \"Can you sort these? By grade."
+        "text": "*Handing over documents* Can you sort these? By grade."
     },
     "hidden_nurse_d4_2_ins6": {
         "name": "{name}",
@@ -523,7 +523,7 @@
     },
     "hidden_nurse_d4_4_ins5": {
         "name": "School Nurse",
-        "text": "*Voice dropping half a tone* \"Nobody called me by my name. 'Nurse,' 'night shift,' 'Ward 3.' All titles, never my name."
+        "text": "*Voice dropping half a tone* Nobody called me by my name. 'Nurse,' 'night shift,' 'Ward 3.' All titles, never my name."
     },
     "hidden_nurse_d4_4_ins6": {
         "name": "{name}",
@@ -531,7 +531,7 @@
     },
     "hidden_nurse_d4_4_ins7": {
         "name": "School Nurse",
-        "text": "At school I'm 'School Nurse,' right? Another title.\" *With a slight smile* \"But you — you've never once called me by a title, have you?"
+        "text": "At school I'm 'School Nurse,' right? Another title. *With a slight smile* But you — you've never once called me by a title, have you?"
     },
     "hidden_nurse_d4_4_ins8": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "hidden_nurse_d4_4_ins9": {
         "name": "School Nurse",
-        "text": "Just \"teacher.\" No title attached. That felt nice."
+        "text": "Just teacher. No title attached. That felt nice."
     },
     "hidden_nurse_d4_4_ins10": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_6_ins2": {
         "name": "School Nurse",
-        "text": "*Looking at me* \"...It was something."
+        "text": "*Looking at me* ...It was something."
     },
     "hidden_nurse_d4_6_ins3": {
         "name": "{name}",
@@ -567,7 +567,7 @@
     },
     "hidden_nurse_d4_meal_1_ins2": {
         "name": "School Nurse",
-        "text": "That was ages ago~\" *Laughing* \"I'm old now."
+        "text": "That was ages ago~ *Laughing* I'm old now."
     },
     "hidden_nurse_d4_meal_2_ins": {
         "name": "{name}",
@@ -579,7 +579,7 @@
     },
     "hidden_nurse_d4_meal_3_ins2": {
         "name": "School Nurse",
-        "text": "*Smiling again* \"Alright, meal's over! The teacher still has work left~"
+        "text": "*Smiling again* Alright, meal's over! The teacher still has work left~"
     },
     "hidden_nurse_d4_meal_3_ins3": {
         "name": "{name}",
@@ -591,7 +591,7 @@
     },
     "hidden_nurse_d4_meal_4_ins": {
         "name": "{name}",
-        "text": "*She added \"really.\" When this person adds \"really,\" it means everything before it was sincere.*"
+        "text": "*She added really. When this person adds really, it means everything before it was sincere.*"
     },
     "hidden_nurse_d4_meal_4_ins2": {
         "name": "{name}",

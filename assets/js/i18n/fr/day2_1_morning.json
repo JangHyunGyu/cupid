@@ -321,7 +321,7 @@
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
-        "text": "*Sur le point de m'asseoir — un mot plié sur mon bureau. \"...Merci pour hier.\"*"
+        "text": "*Sur le point de m'asseoir — un mot plié sur mon bureau. ...Merci pour hier.*"
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",
@@ -365,7 +365,7 @@
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "Professeure principale",
-        "text": "*Une brève hésitation* \"...Diverses choses. Surtout — des romans.\""
+        "text": "*Une brève hésitation* ...Diverses choses. Surtout — des romans."
     },
     "hidden_homeroom_d2_3_ins2": {
         "name": "{name}",
@@ -401,7 +401,7 @@
     },
     "hidden_homeroom_d2_8_ins2": {
         "name": "Professeure principale",
-        "text": "Célèbre, ce n'est pas le mot...\" *Boit une gorgée de café* \"Plutôt quelqu'un dont je m'inquiète.\""
+        "text": "Célèbre, ce n'est pas le mot... *Boit une gorgée de café* Plutôt quelqu'un dont je m'inquiète."
     },
     "hidden_homeroom_d2_8_ins3": {
         "name": "{name}",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d2_8_ins4": {
         "name": "Professeure principale",
-        "text": "*Se cachant derrière sa tasse de café* \"...Raté pour l'impassibilité. Bon, allez, file.\""
+        "text": "*Se cachant derrière sa tasse de café* ...Raté pour l'impassibilité. Bon, allez, file."
     },
     "hidden_homeroom_d2_8_ins5": {
         "name": "{name}",

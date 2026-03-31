@@ -325,7 +325,7 @@
     },
     "hallway_6_ins": {
         "name": "Seoyeon",
-        "text": "*Kurzes Zögern* \"...Du bist aufmerksam.\""
+        "text": "*Kurzes Zögern* ...Du bist aufmerksam."
     },
     "hallway_6_ins2": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "classroom_5_ins2": {
         "name": "Klassenlehrerin",
-        "text": "...Gut. {name}. Merk ich mir.\" *Leise, fast wie ein Selbstgespräch* \"Ich mache es mir zur Regel, Namen beim ersten Mal zu merken.\""
+        "text": "...Gut. {name}. Merk ich mir. *Leise, fast wie ein Selbstgespräch* Ich mache es mir zur Regel, Namen beim ersten Mal zu merken."
     },
     "classroom_5_ins3": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "classroom_minsu_2_ins": {
         "name": "Minsu",
-        "text": "*Nickt in Dains Richtung* \"Deine Ausdauer.\""
+        "text": "*Nickt in Dains Richtung* Deine Ausdauer."
     },
     "classroom_yuna_note_5_ins": {
         "name": "{name}",
