@@ -29,7 +29,7 @@
     },
     "lunch_start_7b": {
         "name": "{name}",
-        "text": "*En el instituto anterior no elegí. Para ser exactos, fui posponiendo la decisión hasta que se me paso el momento. — Ah, otra vez con esto. Mi boca se mueve con soltura, pero en los momentos que importan se me congela. Este patrón. Soy lo más patético que hay.*"
+        "text": "*En el instituto anterior no elegí. Para ser exactos, fui posponiendo la decisión hasta que se me pasó el momento. — Ah, otra vez con esto. Mi boca se mueve con soltura, pero en los momentos que importan se me congela. Este patrón. Soy lo más patético que hay.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Sonó como un anuncio personal."
+        "text": "Sonó como tu PR personal."
     },
     "lunch_dain_20": {
         "name": "Dain",

@@ -86,11 +86,11 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*Her hand is warm. Is it sweat, or can I it's because of Dain through our clasped fingers? — No time to think while running.*"
+        "text": "*Her hand is warm. Is it sweat, or is it because of Dain? — No time to think while running.*"
     },
     "morning3_classroom_1": {
         "name": "{name}",
-        "text": "*As I enter the classroom, I feel the stares of the other two who witnessed my arrival companion.*"
+        "text": "*As I enter the classroom, I feel the stares of the other two who saw who I arrived with.*"
     },
     "morning3_react_seo_1": {
         "name": "Dain",

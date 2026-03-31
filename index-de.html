@@ -868,7 +868,7 @@
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
-                    <div class="credits-role">Produktion</div>
+                    <div class="credits-role">Produziert von</div>
                     <div class="credits-name">Hyungyu Jang · Yujin Kim</div>
                 </div>
                 <div class="credits-divider">─ ─ ─</div>
@@ -1159,6 +1159,24 @@
                 combo.classList.remove('open');
             }
         });
+    </script>
+    <script>
+        // Naver Analytics (skip on local dev)
+        if (location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
+            window.addEventListener('load', function () {
+                var wcs_script = document.createElement('script');
+                wcs_script.src = 'https://wcs.pstatic.net/wcslog.js';
+                wcs_script.async = true;
+                wcs_script.onload = function () {
+                    if (!window.wcs_add) window.wcs_add = {};
+                    window.wcs_add["wa"] = "229fd882959ab4";
+                    if (window.wcs) {
+                        wcs_do();
+                    }
+                };
+                document.head.appendChild(wcs_script);
+            });
+        }
     </script>
 </body>
 

@@ -86,7 +86,7 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*Sa main est chaude. C'est la sueur, ou je c'est à cause de Dain à travers nos doigts entrelacés ? — Pas le temps de réfléchir en courant.*"
+        "text": "*Sa main est chaude. C'est la sueur, ou c'est à cause de Dain ? — Pas le temps de réfléchir en courant.*"
     },
     "morning3_classroom_1": {
         "name": "{name}",
@@ -246,7 +246,7 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Professeure principale",
-        "text": "J'ai passé le concours de l'enseignement. Prof de français. — Une aspirante romancière qui enseigne la littérature. Ironique, non ?"
+        "text": "J'ai passé le concours de l'enseignement. Prof de coréen. — Une aspirante romancière qui enseigne la littérature. Ironique, non ?"
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Professeure principale",

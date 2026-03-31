@@ -154,7 +154,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*Hay una luz en la ventana del gimnasio. Luces de emergencia. Alguien esta botando un balón solo. — Puedo distinguir vagamente el número de la camiseta. Es Dain.*"
+        "text": "*Hay una luz en la ventana del gimnasio. Luces de emergencia. Alguien está botando un balón solo. — Puedo distinguir vagamente el número de la camiseta. Es Dain.*"
     },
     "wall_seo_glimpse_3": {
         "name": "{name}",
@@ -434,7 +434,7 @@
         "text": "*Los ojos de Yuna brillan húmedos. — Es la primera vez que la oigo hablar tanto.*",
         "choices": [
             "No soy ese senior. Soy yo. Pero me quedaré a tu lado.",
-            "Olvídate de ese senior. Quien esta frente a ti ahora soy yo.",
+            "Olvídate de ese senior. Quien está frente a ti ahora soy yo.",
             "...¿Así que te acercaste a mí por él? ¿Como reemplazo?"
         ]
     },
@@ -532,7 +532,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Así paso el sábado. Qué traerá el mañana.*"
+        "text": "*Así pasó el sábado. Qué traerá el mañana.*"
     },
     "day4_night_sleep": {
         "name": "{name}",
