@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*방과후. 가방을 챙긴다.*"
+        "text": "*방과후. 점심의 여파가 남아 있다. — 그래도 어딘가에는 가야 한다.*"
     },
     "after3_route_check": {
         "name": "{name}",
