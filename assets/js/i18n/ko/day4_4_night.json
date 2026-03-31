@@ -663,15 +663,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "서연",
-        "text": "오늘 즐거웠어. 내일도 시간 괜찮아?"
+        "text": "오늘 바람 좋았어.\n...다음에는 다른 말 기대할게."
     },
     "day4_night_regret_msg_dain": {
         "name": "다인",
-        "text": "오늘 즐거웠어!! 내일도 시간 돼?!"
+        "text": "야 오늘 재밌었다ㅋㅋ\n...근데 뭔가 빠진 거 없어?"
     },
     "day4_night_regret_msg_yuna": {
         "name": "유나",
-        "text": "...오늘 즐거웠어. 내일도 괜찮아?"
+        "text": "...오늘\n괜찮았어."
     },
     "day4_night_regret_msg": {
         "name": "{name}",

@@ -512,15 +512,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "I had fun today. Are you free tomorrow too?"
+        "text": "The breeze was nice today.\n...Next time, I'm expecting different words."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Today was so fun!! Are you free tomorrow?!"
+        "text": "Hey, today was so fun lol\n...But like, wasn't something missing?"
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "...I had fun today. Are you free tomorrow?"
+        "text": "...Today.\nIt was okay."
     },
     "day4_night_regret_msg": {
         "name": "{name}",

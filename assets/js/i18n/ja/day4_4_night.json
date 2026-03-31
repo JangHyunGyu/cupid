@@ -512,15 +512,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "ソヨン",
-        "text": "「今日は楽しかった。明日も時間ある？」"
+        "text": "今日、風が気持ちよかった。\n…次は、違う言葉を期待してるから。"
     },
     "day4_night_regret_msg_dain": {
         "name": "ダイン",
-        "text": "「今日めっちゃ楽しかった！！明日も空いてる？！」"
+        "text": "ねえ、今日めっちゃ楽しかったｗｗ\n…でも何か足りなくない？"
     },
     "day4_night_regret_msg_yuna": {
         "name": "ユナ",
-        "text": "「…今日は楽しかった。明日も大丈夫？」"
+        "text": "…今日。\n悪くなかった。"
     },
     "day4_night_regret_msg": {
         "name": "{name}",

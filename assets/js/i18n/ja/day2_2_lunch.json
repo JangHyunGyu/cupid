@@ -435,7 +435,7 @@
     },
     "lunch2_yuna_17_ins": {
         "name": "ユナ",
-        "text": "……"
+        "text": "「……」"
     },
     "lunch2_yuna_c1_9_ins": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "lunch2_dain_13_ins": {
         "name": "ダイン",
-        "text": "き、気になんかなってないし！」 *そぼろパンを大きくかじりながら* 「ただ聞いただけだって！！」"
+        "text": "「き、気になんかなってないし！」 *そぼろパンを大きくかじりながら* 「ただ聞いただけだって！！」"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
@@ -467,7 +467,7 @@
     },
     "lunch2_dain_end_ins3": {
         "name": "体育教師",
-        "text": "保健室に行って消毒してもらいなさい。"
+        "text": "「保健室に行って消毒してもらいなさい。」"
     },
     "lunch2_dain_end_ins4": {
         "name": "{name}",
@@ -479,11 +479,11 @@
     },
     "lunch2_dain_end_ins6": {
         "name": "{name}",
-        "text": "肘をちょっと擦りむいたんですけど。"
+        "text": "「肘をちょっと擦りむいたんですけど。」"
     },
     "lunch2_dain_end_ins7": {
         "name": "保健先生",
-        "text": "また来たの？ 常連になりたいの？"
+        "text": "「また来たの？ 常連になりたいの？」"
     },
     "lunch2_dain_end_ins8": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "lunch2_dain_end_ins10": {
         "name": "保健先生",
-        "text": "じっとしてて〜…"
+        "text": "「じっとしてて〜…」"
     },
     "lunch2_dain_end_ins11": {
         "name": "{name}",
@@ -515,7 +515,7 @@
     },
     "lunch2_dain_end_ins15": {
         "name": "保健先生",
-        "text": "…手が冷たい方なんだけど。今日はちょっと温かいみたい"
+        "text": "「…手が冷たい方なんだけど。今日はちょっと温かいみたい」"
     },
     "lunch2_dain_end_ins16": {
         "name": "{name}",
@@ -555,11 +555,11 @@
     },
     "lunch2_dain_end_ins25": {
         "name": "保健先生",
-        "text": "はい、終わりだから授業に戻って。——次はケガしないで来てね"
+        "text": "「はい、終わりだから授業に戻って。——次はケガしないで来てね」"
     },
     "lunch2_dain_end_ins26": {
         "name": "{name}",
-        "text": "ケガしなかったら来る理由がないじゃないですか。"
+        "text": "「ケガしなかったら来る理由がないじゃないですか。」"
     },
     "lunch2_dain_end_ins27": {
         "name": "{name}",
@@ -567,7 +567,7 @@
     },
     "lunch2_dain_end_ins28": {
         "name": "保健先生",
-        "text": "理由がなくても来ていいよ。"
+        "text": "「理由がなくても来ていいよ。」"
     },
     "lunch2_dain_end_ins29": {
         "name": "{name}",
