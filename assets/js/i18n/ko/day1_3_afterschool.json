@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*그냥 집에 가기로 했다. 별거 아닐 거다.*"
+        "text": "*오늘은 충분히 돌아다녔다. 집에 가서 쉬자.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",

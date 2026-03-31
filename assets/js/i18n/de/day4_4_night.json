@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "{name}",
-        "text": "*Seoyeon hörte auf zu sprechen. Mit zitternden Händen nahm sie ihre Brille ab und umklammerte sie. Es ist das erste Mal, dass ich Seoyeons Gesicht ohne Brille sehe. Ihre Hände sind fest auf ihren Knien zusammengepresst.*"
+        "text": "*Seoyeon hört auf zu sprechen. Ihre Hände sind fest auf ihren Knien zusammengepresst.*\n\n*— Und dann langsam, ganz langsam, zerbricht der Ausdruck, den sie perfekt aufrechterhalten hatte. Seoyeon nimmt mit zitternden Händen ihre Brille ab.*\n\n*Tränen fließen aus ihren Augen. Lautlos. — Ich sehe Seoyeons Gesicht ohne Brille zum ersten Mal.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt gerade. — Die Nacht kommt auch für die, die man nicht gewählt hat. Und sie verbringt diese Nacht allein.*"
+        "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt. — Kein Zittern. Diesmal wirklich.*\n\n*Die Nacht kommt auch für die, die nicht gewählt wurden. Sie verbringt diese Nacht allein.*"
     },
     "day4_night_regret": {
         "name": "{name}",

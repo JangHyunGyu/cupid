@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Autant rentrer. C'est sûrement rien.*"
+        "text": "*J'ai assez traîné pour aujourd'hui. Rentrons nous reposer.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",

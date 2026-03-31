@@ -113,9 +113,44 @@ Object.assign(SCENARIO[4], {
     "hidden_homeroom_d4_4": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_4_ins"
+    },
+    "hidden_homeroom_d4_4_ins": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_4_ins2"
+    },
+    "hidden_homeroom_d4_4_ins2": {
+        "background": "assets/images/background/street.png",
+        "character": null,
+        "next": "hidden_homeroom_d4_4_ins3"
+    },
+    "hidden_homeroom_d4_4_ins3": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_4_ins4"
+    },
+    "hidden_homeroom_d4_4_ins4": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_5"
     },
     "hidden_homeroom_d4_5": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_5_ins"
+    },
+    "hidden_homeroom_d4_5_ins": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_5_ins2"
+    },
+    "hidden_homeroom_d4_5_ins2": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "hidden_homeroom_d4_5_ins3"
+    },
+    "hidden_homeroom_d4_5_ins3": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_choice"

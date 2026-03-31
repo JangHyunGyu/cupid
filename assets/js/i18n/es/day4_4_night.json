@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "{name}",
-        "text": "*Seoyeon dejó de hablar. Con las manos temblorosas, se quitó las gafas y las apretó. Es la primera vez que veo el rostro de Seoyeon sin gafas. Sus manos están apretadas sobre las rodillas.*"
+        "text": "*Seoyeon deja de hablar. Sus manos están apretadas sobre las rodillas.*\n\n*— Y entonces, lentamente, muy lentamente, la expresión que había mantenido perfectamente se desmorona. Seoyeon se quita las gafas con manos temblorosas.*\n\n*Las lágrimas le caen de los ojos. En silencio. — Veo el rostro de Seoyeon sin gafas por primera vez.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Seoyeon guarda el móvil en el bolsillo y se da la vuelta. Su espalda está recta. Perfectamente recta. — La noche también llega para los que no elegiste. Y ella pasa esa noche sola.*"
+        "text": "*Seoyeon guarda el móvil en el bolsillo y se da la vuelta. Su espalda está recta. Perfectamente. — No tiembla. Esta vez de verdad.*\n\n*La noche también llega para los que no fueron elegidos. Y ella pasa esa noche sola.*"
     },
     "day4_night_regret": {
         "name": "{name}",

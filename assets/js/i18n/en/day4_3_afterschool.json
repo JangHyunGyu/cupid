@@ -325,7 +325,7 @@
     },
     "confess_dain_no_4_ins2": {
         "name": "{name}",
-        "text": "*The main trio's confession scenes proceed normally. This hidden event plays separately before the main date in Day 4's early morning time slot. Only if the Day 4 main confession was deferred (`day4_waited`) will a branch to choose the hidden character be available on Day 5.*"
+        "text": "*--- Early Morning ---*"
     },
     "confess_dain_no_4_ins3": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
-        "text": "*The main trio's confession scenes proceed normally. This hidden event plays separately before the main date in Day 4's morning time slot. Only if the Day 4 main confession was deferred (`day4_waited`) will a branch to choose the hidden character be available on Day 5.*"
+        "text": "*--- Morning ---*"
     },
     "confess_dain_no_4_ins23": {
         "name": "{name}",

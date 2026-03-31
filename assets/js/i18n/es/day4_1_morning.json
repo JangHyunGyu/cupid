@@ -56,16 +56,44 @@
         "text": "¿Profe? Es fin de semana, ¿qué hace en la escuela?"
     },
     "hidden_homeroom_d4_4": {
+        "name": "{name}",
+        "text": "*La profesora en ropa casual no parece profesora. Solo — alguien que escribe.*"
+    },
+    "hidden_homeroom_d4_4_ins": {
         "name": "Profesora",
-        "text": "Ah, es que — me quedó papeleo. ...Una profesora es profesora incluso los fines de semana."
+        "text": "¿Tú qué haces aquí?"
+    },
+    "hidden_homeroom_d4_4_ins2": {
+        "name": "{name}",
+        "text": "Solo pasaba por aquí."
+    },
+    "hidden_homeroom_d4_4_ins3": {
+        "name": "Profesora",
+        "text": "Eres el primer alumno que se asoma al portón de la escuela mientras 'solo pasa por aquí'."
+    },
+    "hidden_homeroom_d4_4_ins4": {
+        "name": "{name}",
+        "text": "*Silencio incómodo. — La profesora habla primero.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Profesora",
-        "text": "...¿Comiste? Un café está bien, ¿no? — Bueno, un jugo, que eres estudiante."
+        "text": "...¿Comiste?"
+    },
+    "hidden_homeroom_d4_5_ins": {
+        "name": "{name}",
+        "text": "Todavía no."
+    },
+    "hidden_homeroom_d4_5_ins2": {
+        "name": "Profesora",
+        "text": "Digamos que es una extensión del interés pedagógico. *murmurando en voz baja* Un café estaría bien, ¿no? — Bueno, eres estudiante, así que un jugo."
+    },
+    "hidden_homeroom_d4_5_ins3": {
+        "name": "{name}",
+        "text": "*Otra vez lo mismo. El patrón de decir 'interés pedagógico' y cruzar la línea inmediatamente.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*En ropa casual, la profesora no parece profesora. Más bien — una escritora.*",
+        "text": "*Un café. — Interés pedagógico.*",
         "choices": [
             "Dale. ¿Hay algún café cerca?",
             "Profe, ¿no debería hacer eso?"

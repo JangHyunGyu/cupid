@@ -56,16 +56,44 @@
         "text": "Madame ? C'est le weekend, qu'est-ce que vous faites là ?"
     },
     "hidden_homeroom_d4_4": {
+        "name": "{name}",
+        "text": "*La prof principale en civil ne ressemble pas à une prof. Juste — à quelqu'un qui écrit.*"
+    },
+    "hidden_homeroom_d4_4_ins": {
         "name": "Professeure principale",
-        "text": "Ah, c'est que — de la paperasse. ...Une prof reste une prof même le weekend."
+        "text": "Qu'est-ce que tu fais là ?"
+    },
+    "hidden_homeroom_d4_4_ins2": {
+        "name": "{name}",
+        "text": "Je passais dans le coin."
+    },
+    "hidden_homeroom_d4_4_ins3": {
+        "name": "Professeure principale",
+        "text": "T'es le premier élève à regarder à travers le portail de l'école en 'passant dans le coin'."
+    },
+    "hidden_homeroom_d4_4_ins4": {
+        "name": "{name}",
+        "text": "*Silence gêné. — La prof parle en premier.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Professeure principale",
-        "text": "...T'as mangé ? Un café, ça va, non ? — Enfin, un jus pour toi."
+        "text": "...T'as mangé ?"
+    },
+    "hidden_homeroom_d4_5_ins": {
+        "name": "{name}",
+        "text": "Pas encore."
+    },
+    "hidden_homeroom_d4_5_ins2": {
+        "name": "Professeure principale",
+        "text": "Disons que c'est un prolongement de l'intérêt pédagogique. *marmonnant doucement* Un café, ça va, non ? — Enfin, t'es élève, donc un jus."
+    },
+    "hidden_homeroom_d4_5_ins3": {
+        "name": "{name}",
+        "text": "*C'est reparti. Le schéma de dire « intérêt pédagogique » et de franchir la ligne aussitôt.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*En civil, la prof ne ressemble pas à une prof. Plutôt à — une écrivaine.*",
+        "text": "*Un café. — Intérêt pédagogique.*",
         "choices": [
             "D'accord. Il y a un café dans le coin ?",
             "Madame, vous devriez pas, non ?"

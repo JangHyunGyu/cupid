@@ -56,16 +56,44 @@
         "text": "Ma'am? What are you doing here on a weekend?"
     },
     "hidden_homeroom_d4_4": {
+        "name": "{name}",
+        "text": "*The homeroom teacher in casual clothes doesn't look like a teacher. Just — like someone who writes.*"
+    },
+    "hidden_homeroom_d4_4_ins": {
         "name": "Homeroom Teacher",
-        "text": "Oh, it's — leftover paperwork. ...Teachers are teachers even on weekends."
+        "text": "Why are you here?"
+    },
+    "hidden_homeroom_d4_4_ins2": {
+        "name": "{name}",
+        "text": "I was just passing by."
+    },
+    "hidden_homeroom_d4_4_ins3": {
+        "name": "Homeroom Teacher",
+        "text": "You're the first student to peek through the school gate while 'just passing by.'"
+    },
+    "hidden_homeroom_d4_4_ins4": {
+        "name": "{name}",
+        "text": "*Awkward silence. — The teacher speaks first.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Homeroom Teacher",
-        "text": "...Have you eaten? A cup of coffee should be fine, right? — Well, juice, since you're a student."
+        "text": "...Have you eaten?"
+    },
+    "hidden_homeroom_d4_5_ins": {
+        "name": "{name}",
+        "text": "Not yet."
+    },
+    "hidden_homeroom_d4_5_ins2": {
+        "name": "Homeroom Teacher",
+        "text": "Let's call it an extension of educational concern. *muttering quietly* A cup of coffee should be fine, right? — Well, you're a student, so juice."
+    },
+    "hidden_homeroom_d4_5_ins3": {
+        "name": "{name}",
+        "text": "*Here we go again. The pattern of saying 'educational concern' and immediately crossing the line.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*In casual clothes, the teacher doesn't look like a teacher. More like — a writer.*",
+        "text": "*A cup of coffee. — Educational concern.*",
         "choices": [
             "Sure. Is there a cafe nearby?",
             "Ma'am, you probably shouldn't, right?"

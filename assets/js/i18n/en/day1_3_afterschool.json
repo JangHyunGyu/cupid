@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*I decide to just head home. It's probably nothing.*"
+        "text": "*I've wandered around enough today. Let's go home and rest.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
