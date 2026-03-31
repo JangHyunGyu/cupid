@@ -25,7 +25,8 @@
         "choices": [
             "Zu Seoyeon gehen",
             "Zu Yuna gehen",
-            "Zu Dain gehen"
+            "Zu Dain gehen",
+            "Noch etwas nachdenken"
         ]
     },
     "after3_choice": {

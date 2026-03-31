@@ -25,7 +25,8 @@
         "choices": [
             "Ir con Seoyeon",
             "Ir con Yuna",
-            "Ir con Dain"
+            "Ir con Dain",
+            "Pensar un poco más"
         ]
     },
     "after3_choice": {

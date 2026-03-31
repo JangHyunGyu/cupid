@@ -649,7 +649,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Je l'ai lu chez moi. Toute la nuit. — La façon dont parlait le personnage principal m'était familière. Trop familière.*"
+        "text": "*Je suis rentré chez moi et je l'ai lu. Toute la nuit. — La façon dont parlait le personnage principal m'était familière. Trop familière.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Professeure principale",
@@ -1099,7 +1099,7 @@
     },
     "hidden_good_nurse_3_ins": {
         "name": "{name}",
-        "text": "*Ce cœur — cette fois, ce n'est définitivement pas de l'intérêt médical.*"
+        "text": "*J'ai quitté l'infirmerie. Ce cœur — cette fois, ce n'est définitivement pas de l'intérêt médical.*"
     },
     "good_1_seo_ins": {
         "name": "{name}",

@@ -361,7 +361,7 @@
     },
     "hidden_homeroom_d2_2_ins": {
         "name": "{name}",
-        "text": "*La salle des profs. Le bureau de la professeure est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert.*"
+        "text": "*J'ai suivi la professeure jusqu'à la salle des profs.* *Son bureau est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert.*"
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "Professeure principale",

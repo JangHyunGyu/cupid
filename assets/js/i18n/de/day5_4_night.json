@@ -649,7 +649,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Ich las es zu Hause. Die ganze Nacht. — Die Art, wie die Hauptfigur sprach, kam mir bekannt vor. Zu bekannt.*"
+        "text": "*Ich ging nach Hause und las es. Die ganze Nacht. — Die Art, wie die Hauptfigur sprach, kam mir bekannt vor. Zu bekannt.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Klassenlehrerin",
@@ -1099,7 +1099,7 @@
     },
     "hidden_good_nurse_3_ins": {
         "name": "{name}",
-        "text": "*Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.*"
+        "text": "*Ich verließ das Krankenzimmer. Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.*"
     },
     "good_1_seo_ins": {
         "name": "{name}",
