@@ -325,7 +325,7 @@
     },
     "hallway_6_ins": {
         "name": "서연",
-        "text": "*잠깐 멈칫* \"...눈치 빠르네."
+        "text": "*잠깐 멈칫* ...눈치 빠르네."
     },
     "hallway_6_ins2": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "classroom_5_ins2": {
         "name": "담임선생님",
-        "text": "...그래. {name}. 외울게.\" *작게, 거의 혼잣말처럼* \"이름은 한 번에 외우는 주의거든."
+        "text": "...그래. {name}. 외울게. *작게, 거의 혼잣말처럼* 이름은 한 번에 외우는 주의거든."
     },
     "classroom_5_ins3": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "classroom_minsu_2_ins": {
         "name": "민수",
-        "text": "*다인 쪽을 턱짓하며* \"체력 관리."
+        "text": "*다인 쪽을 턱짓하며* 체력 관리."
     },
     "classroom_yuna_note_5_ins": {
         "name": "{name}",
