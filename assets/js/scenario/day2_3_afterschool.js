@@ -412,11 +412,14 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/student_room.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_shy.png",
+        "speaker": "서연",
+        "text": "*조용히* ...가만히 있어. 좀만.",
         "next": "after2_seo_neck_high_2_ins"
     },
     "after2_seo_neck_high_2_ins": {
         "background": "assets/images/background/student_room.png",
         "character": null,
+        "narration": "*누구 손이? — 서연 손이 내 어깨 위에 있는 건데. 말이 뒤집혔다. 그만큼 긴장한 거다.*",
         "next": "after2_seo_9"
     },
     "after2_seo_neck_low": {
@@ -661,11 +664,14 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_shy.png",
+        "speaker": "유나",
+        "text": "...올 거면 와. 말리지는 않을게.",
         "next": "after2_yuna_everyday_react_ins"
     },
     "after2_yuna_everyday_react_ins": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
+        "narration": "*'말리지는 않을게'. — 유나의 언어로 번역하면 '와 줘'다.*",
         "next": "after2_yuna_end"
     },
     "after2_yuna_quiet": {
