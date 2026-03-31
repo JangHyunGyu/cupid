@@ -608,7 +608,7 @@
     "text": "*Die Tür geht auf. — Sie ist es. Beiger Cardigan. Einen Dokumentenumschlag in der Hand.*"
   },
   "hidden_perfect_homeroom_2": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "Herzlichen Glückwunsch zum Abschluss. ...Der Papierkram ist erledigt. Meine Arbeit als deine Lehrerin ist vorbei."
   },
   "hidden_perfect_homeroom_2b": {
@@ -616,7 +616,7 @@
     "text": "Ist das Manuskript noch in Ihrer Schreibtischschublade?"
   },
   "hidden_perfect_homeroom_2c": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "*Sie hält kurz inne. Will noch etwas sagen, schließt dann den Mund.* ...Pass auf dich auf."
   },
   "hidden_perfect_homeroom_3": {
@@ -628,15 +628,15 @@
     "text": "*Die Terrasse eines Cafés. Kirschblüten wehen. Beim Eintreten — sehe ich vertrautes braunes Wellenhaar am Fensterplatz. Eine Leinenjacke statt des Cardigans.*"
   },
   "hidden_perfect_homeroom_3c": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "...Oh. Ich bin auch überrascht. *Sie stellt ihre Kaffeetasse ab.* Möchtest du dich setzen?"
   },
   "hidden_perfect_homeroom_3e": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "*Sie schmunzelt.* Habe aufgehört zu unterrichten. Schreibe nur noch. Teilzeit im Café. — Und du?"
   },
   "hidden_perfect_homeroom_3f": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "...Können wir uns wiedersehen? Ich komme jeden Donnerstag hierher."
   },
   "hidden_perfect_homeroom_3g": {
@@ -644,7 +644,7 @@
     "text": "*Aus dem 'nächsten Mal' wurde das übernächste und wieder das nächste. Jeden Donnerstag derselbe Platz. Als der Barista fragte 'Paartisch?', konnte keiner von uns antworten. An einem Donnerstag. Statt ins Café gingen wir durch die Straßen. Nebeneinander. Beide taten so, als bemerkten wir nicht, dass sich unsere Schatten überlappten.*"
   },
   "hidden_perfect_homeroom_4b": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "*Sie bleibt plötzlich in der Buchhandlung stehen.* ...Ich habe mein Manuskript fertig. Willst du es lesen?"
   },
   "hidden_perfect_homeroom_4c": {
@@ -652,7 +652,7 @@
     "text": "*Ich las es zu Hause. Die ganze Nacht. — Die Art, wie die Hauptfigur sprach, kam mir bekannt vor. Zu bekannt.*"
   },
   "hidden_perfect_homeroom_4d": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "*Nächster Donnerstag, im Café. Sie rührte ihren Kaffee länger als üblich.* ...Und, wie war's?"
   },
   "hidden_perfect_homeroom_4e": {
@@ -664,7 +664,7 @@
     "text": "*Ich reichte ihr den Strauß.* Das ist kein pädagogisches Interesse. Nicht von meiner Seite."
   },
   "hidden_perfect_homeroom_4g": {
-    "name": "Frau Lehrerin",
+    "name": "Klassenlehrerin",
     "text": "*Nimmt den Strauß und starrt ihn lange an. Ihre Hände zittern. — Sie lächelt.* ...Ich auch.\n\n─── Klassenlehrerin PERFECT END ───"
   },
   "hidden_perfect_homeroom_5": {},
