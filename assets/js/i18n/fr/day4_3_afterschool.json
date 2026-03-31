@@ -141,7 +141,7 @@
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
-        "text": "Je t'aime."
+        "text": "Tu me plais."
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "confess_dain_yes_6": {
         "name": "{name}",
-        "text": "Je t'aime."
+        "text": "Tu me plais."
     },
     "confess_dain_yes_7": {
         "name": "{name}",
@@ -237,7 +237,7 @@
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "Moi aussi je t'aime. Énormément."
+        "text": "Moi aussi tu me plais. Énormément."
     },
     "confess_dain_no_1": {
         "name": "{name}",

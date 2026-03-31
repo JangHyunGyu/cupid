@@ -512,15 +512,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Me divertí hoy. ¿Tienes tiempo mañana también?"
+        "text": "La brisa estuvo agradable hoy.\n...La próxima vez, espero otras palabras."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "¡¡Hoy fue súper divertido!! ¡¿Estás libre mañana?!"
+        "text": "¡Oye, hoy fue súper divertido jaja!\n...Pero, ¿no faltó algo?"
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "...Me divertí hoy. ¿Mañana estás libre?"
+        "text": "...Hoy.\nEstuvo bien."
     },
     "day4_night_regret_msg": {
         "name": "{name}",

@@ -512,15 +512,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Je me suis bien amusée aujourd’hui. Tu es libre demain aussi ?"
+        "text": "Le vent était agréable aujourd’hui.\n...La prochaine fois, j’attends d’autres mots."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "C’était trop bien aujourd’hui !! Tu es libre demain ?!"
+        "text": "Eh, c’était trop bien aujourd’hui mdr\n...Mais il manquait pas un truc ?"
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "...Je me suis bien amusée aujourd’hui. Demain, ça te va ?"
+        "text": "...Aujourd’hui.\nC’était bien."
     },
     "day4_night_regret_msg": {
         "name": "{name}",
