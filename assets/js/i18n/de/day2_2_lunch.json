@@ -18,7 +18,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*Der Bibliotheksanbau. Ein aelteres Gebaeude als das Hauptgebaeude. Kaum Schüler hier.*"
+        "text": "*Der Bibliotheksanbau. Ein älteres Gebäude als das Hauptgebäude. Kaum Schüler hier.*"
     },
     "lunch2_yuna_2": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "lunch2_yuna_15": {
         "name": "{name}",
-        "text": "*Yuna setzt sich aufs Sofa. Sie lässt den Platz neben sich unauffaellig frei.*"
+        "text": "*Yuna setzt sich aufs Sofa. Sie lässt den Platz neben sich unauffällig frei.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -126,7 +126,7 @@
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "Dieser Sunbae, vielleicht hat er einfach seinen Abschluss gemacht? Aeltere melden sich eh selten."
+        "text": "Dieser Sunbae, vielleicht hat er einfach seinen Abschluss gemacht? Ältere melden sich eh selten."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -142,7 +142,7 @@
     },
     "lunch2_yuna_c1_13": {
         "name": "{name}",
-        "text": "*Eine peinliche Stille folgt. Nur das Geraeusch umschlagender Seiten fuellt den Raum.*"
+        "text": "*Eine peinliche Stille folgt. Nur das Geräusch umschlagender Seiten füllt den Raum.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "{name}",
-        "text": "*Zwei Saetze. Für Yuna ist das eine lange Rede. -- Und alles steckt in diesen zwei Saetzen.*"
+        "text": "*Zwei Sätze. Für Yuna ist das eine lange Rede. -- Und alles steckt in diesen zwei Sätzen.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "lunch2_seo_12": {
         "name": "{name}",
-        "text": "*Dain setzt sich ohne zu zoegern. Seoyeons Stirn runzelt sich kaum merklich.*"
+        "text": "*Dain setzt sich ohne zu zögern. Seoyeons Stirn runzelt sich kaum merklich.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -258,11 +258,11 @@
     },
     "lunch2_seo_18": {
         "name": "{name}",
-        "text": "*Die Winkel dieses Dreiecks werden schaerfer. -- Und ich fuehle mich weniger wie ein Eckpunkt und mehr wie ein Opfer.*"
+        "text": "*Die Winkel dieses Dreiecks werden schärfer. -- Und ich fühle mich weniger wie ein Eckpunkt und mehr wie ein Opfer.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
-        "text": "*Seoyeon schaut beilaeufig auf {name}s Lippen.*"
+        "text": "*Seoyeon schaut beiläufig auf {name}s Lippen.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -346,7 +346,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ugh... Zwei Soboro-Broetchen bitte..."
+        "text": "Ugh... Zwei Soboro-Brötchen bitte..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -379,11 +379,11 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*Dains Ausdruck erstarrt subtil. Sie beisst in ihr Soboro und dreht den Kopf weg.*"
+        "text": "*Dains Ausdruck erstarrt subtil. Sie beißt in ihr Soboro und dreht den Kopf weg.*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
-        "text": "*Dain nickt und beisst in ihr Soboro-Brot. Tut so, als wäre es ihr egal.*"
+        "text": "*Dain nickt und beißt in ihr Soboro-Brot. Tut so, als wäre es ihr egal.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
@@ -391,11 +391,11 @@
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Ihre Ohrlaeppchen. Rot. -- Die Mädchen an dieser Schule haben sehr ehrliche Ohren.*"
+        "text": "*Ihre Ohrläppchen. Rot. -- Die Mädchen an dieser Schule haben sehr ehrliche Ohren.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*Das Knuspern von Dains Soboro-Brot ist ungewoehnlich laut. Seoyeons Blick, Dains rote Ohren -- die Mittagspause wird von Tag zu Tag komplizierter.*"
+        "text": "*Das Knuspern von Dains Soboro-Brot ist ungewöhnlich laut. Seoyeons Blick, Dains rote Ohren -- die Mittagspause wird von Tag zu Tag komplizierter.*"
     },
     "lunch2_seo_1_check": {
         "name": "{name}",

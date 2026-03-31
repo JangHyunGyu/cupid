@@ -33,7 +33,7 @@
     },
     "lunch_choice": {
         "name": "{name}",
-        "text": "*Qui est-ce que je suis ?*",
+        "text": "*Qui est-ce que je vais suivre ?*",
         "choices": [
             "Suivre Seoyeon sur le toit",
             "Aller à la boutique avec Dain",
@@ -234,7 +234,7 @@
     },
     "lunch_dain_10": {
         "name": "{name}",
-        "text": "*Pierre, papier, ciseaux. — Dain a perdu.*"
+        "text": "*Pierre-feuille-ciseaux. — Dain a perdu.*"
     },
     "lunch_dain_11": {
         "name": "Dain",
@@ -270,7 +270,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "On dirait une petite annonce."
+        "text": "On dirait une annonce de recrutement PR."
     },
     "lunch_dain_20": {
         "name": "Dain",

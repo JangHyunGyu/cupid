@@ -57,7 +57,7 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "Die Schülerratspräsidentin kommt bis ins Klassenzimmer zum Grüßen?"
+        "text": "Die Schülerratsvorsitzende kommt bis ins Klassenzimmer zum Grüßen?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
@@ -77,7 +77,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Alter, zwei Tage als Neuer und die Schülerratspräsidentin kommt dich grüßen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
+        "text": "Alter, zwei Tage als Neuer und die Schülerratsvorsitzende kommt dich grüßen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "morning2_dain_react_1": {
         "name": "{name}",
-        "text": "*Die Berührung an meiner Schulter dringt einen Takt zu spät ins Bewusstsein. — Wohl nicht wegen dem Staub.*"
+        "text": "*Die Berührung an meiner Schulter dringt einen Takt zu spät ins Bewusstsein. — Wohl nicht wegen des Staubs.*"
     },
     "morning2_dain_react_2": {
         "name": "{name}",
