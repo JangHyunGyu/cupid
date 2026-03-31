@@ -1,3 +1,25 @@
+/* 모바일 세로모드(최대 600px)에서 대화창 및 텍스트 크기 조정 */
+@media (max-width: 600px) {
+    .dialog-box, .narration-box {
+        max-width: 95vw;
+        min-height: 60px;
+        padding: 12px 16px;
+        margin-bottom: 12px;
+        font-size: 18px;
+        border-radius: 14px;
+    }
+    .dialog-box .speaker-label {
+        font-size: 15px;
+        padding: 4px 12px;
+    }
+    .choice-list {
+        margin-bottom: 10px;
+    }
+    .choice-list .choice {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
 /* ==========================================================================
    Cupid Global Styles (공통 스타일 및 초기화)
    ========================================================================== */
