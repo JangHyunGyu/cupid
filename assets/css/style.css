@@ -2,22 +2,36 @@
 @media (max-width: 600px) {
     .dialog-box, .narration-box {
         max-width: 95vw;
-        min-height: 60px;
-        padding: 12px 16px;
-        margin-bottom: 12px;
-        font-size: 18px;
-        border-radius: 14px;
+        min-height: 40px;
+        padding: 8px 10px 8px 10px;
+        margin-bottom: 6px;
+        font-size: 15px;
+        border-radius: 12px;
     }
     .dialog-box .speaker-label {
-        font-size: 15px;
-        padding: 4px 12px;
+        font-size: 13px;
+        padding: 3px 10px;
     }
     .choice-list {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
     .choice-list .choice {
-        font-size: 16px;
-        padding: 10px 0;
+        font-size: 14px;
+        padding: 7px 0;
+    }
+    #dialogue-box {
+        min-height: 40px;
+        padding: 10px 10px 8px 10px;
+        margin-bottom: 6px;
+    }
+    #name-tag {
+        font-size: 1rem;
+        padding: 4px 10px;
+        max-width: 200px;
+    }
+    #message {
+        font-size: 1.05rem;
+        line-height: 1.4;
     }
 }
 /* ==========================================================================
