@@ -1484,7 +1484,7 @@ Object.assign(SCENARIO[5], {
     "hidden_good_homeroom_4": {
         "background": "assets/images/background/ending_good_teacher.png",
         "character": null,
-        "next": "hidden_good_homeroom_4_ins"
+        "next": "day5_credits"
     },
 
     // =========================================================================
@@ -1497,7 +1497,7 @@ Object.assign(SCENARIO[5], {
         "fade": true,
         "bgm": "ending.mp3",
         "setFlag": "ending_true_love",
-        "next": "hidden_true_nurse_1_ins"
+        "next": "hidden_true_nurse_2"
     },
     "hidden_true_nurse_2": {
         "background": "assets/images/background/cafe.png",
@@ -1515,7 +1515,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
-        "next": "hidden_true_nurse_4_ins"
+        "next": "hidden_true_nurse_5"
     },
     "hidden_true_nurse_5": {
         "background": "assets/images/background/cafe.png",
@@ -1703,87 +1703,7 @@ Object.assign(SCENARIO[5], {
     "hidden_true_homeroom_7_ins3": {
         "background": "assets/images/background/cafe.png",
         "character": null,
-        "next": "hidden_true_homeroom_7_ins4"
-    },
-    "hidden_true_homeroom_7_ins4": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_homeroom_7_ins5"
-    },
-    "hidden_true_homeroom_7_ins5": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_homeroom_7_ins6"
-    },
-    "hidden_true_homeroom_7_ins6": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_homeroom_7_ins7"
-    },
-    "hidden_true_homeroom_7_ins7": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_true_homeroom_7_ins8"
-    },
-    "hidden_true_homeroom_7_ins8": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_homeroom_7_ins9"
-    },
-    "hidden_true_homeroom_7_ins9": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_true_homeroom_7_ins10"
-    },
-    "hidden_true_homeroom_7_ins10": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_homeroom_7_ins11"
-    },
-    "hidden_true_homeroom_7_ins11": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
         "next": "hidden_true_homeroom_8"
-    },
-    "hidden_true_nurse_1_ins": {
-        "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_true_nurse_1_ins2"
-    },
-    "hidden_true_nurse_1_ins2": {
-        "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_true_nurse_1_ins3"
-    },
-    "hidden_true_nurse_1_ins3": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "hidden_true_nurse_2"
-    },
-    "hidden_true_nurse_4_ins": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_nurse_4_ins2"
-    },
-    "hidden_true_nurse_4_ins2": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_nurse_4_ins3"
-    },
-    "hidden_true_nurse_4_ins3": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_nurse_4_ins4"
-    },
-    "hidden_true_nurse_4_ins4": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_nurse_4_ins5"
-    },
-    "hidden_true_nurse_4_ins5": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
-        "next": "hidden_true_nurse_5"
     },
     "hidden_true_nurse_2_ins": {
         "background": "assets/images/background/cafe.png",
@@ -1873,52 +1793,7 @@ Object.assign(SCENARIO[5], {
     "hidden_true_nurse_7_ins3": {
         "background": "assets/images/background/nurse_home_event1.png",
         "character": null,
-        "next": "hidden_true_nurse_7_ins4"
-    },
-    "hidden_true_nurse_7_ins4": {
-        "background": "assets/images/background/nurse_home_event1.png",
-        "character": null,
-        "next": "hidden_true_nurse_7_ins5"
-    },
-    "hidden_true_nurse_7_ins5": {
-        "background": "assets/images/background/nurse_home_event1.png",
-        "character": null,
-        "next": "hidden_true_nurse_7_ins6"
-    },
-    "hidden_true_nurse_7_ins6": {
-        "background": "assets/images/background/nurse_home_event1.png",
-        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_true_nurse_8"
-    },
-    "hidden_good_homeroom_4_ins": {
-        "background": "assets/images/background/ending_good_teacher.png",
-        "character": null,
-        "next": "hidden_good_homeroom_4_ins2"
-    },
-    "hidden_good_homeroom_4_ins2": {
-        "background": "assets/images/background/ending_good_teacher.png",
-        "character": null,
-        "next": "hidden_good_homeroom_4_ins3"
-    },
-    "hidden_good_homeroom_4_ins3": {
-        "background": "assets/images/background/ending_good_teacher.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_good_homeroom_4_ins4"
-    },
-    "hidden_good_homeroom_4_ins4": {
-        "background": "assets/images/background/ending_good_teacher.png",
-        "character": null,
-        "next": "hidden_good_homeroom_4_ins5"
-    },
-    "hidden_good_homeroom_4_ins5": {
-        "background": "assets/images/background/ending_good_teacher.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_good_homeroom_4_ins6"
-    },
-    "hidden_good_homeroom_4_ins6": {
-        "background": "assets/images/background/ending_good_teacher.png",
-        "character": null,
-        "next": "day5_credits"
     },
     "hidden_good_nurse_2_ins": {
         "background": "assets/images/background/nurse_room.png",

@@ -40,6 +40,10 @@ Object.assign(SCENARIO[4], {
                 "condition": "route_yuna"
             },
             {
+                "next": "night_homeroom_msg_1",
+                "condition": "homeroom_route_unlocked"
+            },
+            {
                 "next": "night_nurse_msg_1",
                 "condition": "nurse_route_unlocked"
             },
@@ -1250,6 +1254,27 @@ Object.assign(SCENARIO[4], {
         "next": "day4_night_regret_reply"
     },
     "day4_night_regret_reply": {
+        "character": null,
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "day4_night_sleep"
+    },
+    // ========================================================================
+    // ★ 담임 루트 밤 메시지
+    // ========================================================================
+    "night_homeroom_msg_1": {
+        "characters": { "center": { "src": "assets/images/characters/teacher_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night_homeroom_msg_2"
+    },
+    "night_homeroom_msg_2": {
+        "characters": { "center": { "src": "assets/images/characters/teacher_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night_homeroom_msg_3"
+    },
+    "night_homeroom_msg_3": {
         "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
