@@ -693,6 +693,18 @@
         "name": "Yuna",
         "text": "...Porque eres cálido."
     },
+    "night_homeroom_msg_1": {
+        "name": "Profesora",
+        "text": "*Mensaje* \"La fecha límite del manuscrito se acerca. ...Hay una parte que quiero mostrarle a mi primer lector.\""
+    },
+    "night_homeroom_msg_2": {
+        "name": "Profesora",
+        "text": "*Mensaje* \"Ven a la sala de profesores mañana si tienes tiempo. — Después de clases.\""
+    },
+    "night_homeroom_msg_3": {
+        "name": "{name}",
+        "text": "*11 de la noche. Un mensaje de la Profesora. Tres líneas cortas. — 'Primer lector'. Esas palabras siguen resonando en mi cabeza.*"
+    },
     "night_nurse_msg_1": {
         "name": "Enfermera",
         "text": "Lo que dijiste en mi oficina hoy... No puedo dejar de pensar en ello durante la noche."
