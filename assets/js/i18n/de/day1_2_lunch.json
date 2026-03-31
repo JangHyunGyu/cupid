@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "Ich bringe nicht jeden hierher.\" *klappt einen Stuhl auf* \"Heute ist eine Ausnahme."
+        "text": "Ich bringe nicht jeden hierher. *klappt einen Stuhl auf* Heute ist eine Ausnahme."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "lunch_seo_6_ins": {
         "name": "Seoyeon",
-        "text": "*Lächelnd* \"Misstrauisch, hm. Mir gefällt einfach der Wind hier oben.\""
+        "text": "*Lächelnd* Misstrauisch, hm. Mir gefällt einfach der Wind hier oben."
     },
     "lunch_seo_c1_2_ins": {
         "name": "{name}",

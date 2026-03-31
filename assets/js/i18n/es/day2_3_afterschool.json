@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Con los ojos muy abiertos* \"¿Eh? Iba a ir suave, pero mejor no.\""
+        "text": "*Con los ojos muy abiertos* ¿Eh? Iba a ir suave, pero mejor no."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*En voz baja* \"...No te muevas. Solo un momento.\""
+        "text": "*En voz baja* ...No te muevas. Solo un momento."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Retirando la mano* \"...No fue nada.\""
+        "text": "*Retirando la mano* ...No fue nada."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Caminando a mi lado* \"¿Te diviertes últimamente?\""
+        "text": "*Caminando a mi lado* ¿Te diviertes últimamente?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

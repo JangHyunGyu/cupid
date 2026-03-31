@@ -321,7 +321,7 @@
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
-        "text": "*A punto de sentarme — una nota doblada en mi escritorio. \"...Gracias por lo de ayer.\"*"
+        "text": "*A punto de sentarme — una nota doblada en mi escritorio. ...Gracias por lo de ayer.*"
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",
@@ -365,7 +365,7 @@
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "Profesora",
-        "text": "*Una breve vacilación* \"...De todo. Sobre todo — novelas.\""
+        "text": "*Una breve vacilación* ...De todo. Sobre todo — novelas."
     },
     "hidden_homeroom_d2_3_ins2": {
         "name": "{name}",
@@ -401,7 +401,7 @@
     },
     "hidden_homeroom_d2_8_ins2": {
         "name": "Profesora",
-        "text": "Más que famosa...\" *Toma un sorbo de café* \"Es más alguien que me preocupa.\""
+        "text": "Más que famosa... *Toma un sorbo de café* Es más alguien que me preocupa."
     },
     "hidden_homeroom_d2_8_ins3": {
         "name": "{name}",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d2_8_ins4": {
         "name": "Profesora",
-        "text": "*Escondiéndose tras la taza de café* \"...Parece que mi cara de póker falló. Da igual, puedes irte.\""
+        "text": "*Escondiéndose tras la taza de café* ...Parece que mi cara de póker falló. Da igual, puedes irte."
     },
     "hidden_homeroom_d2_8_ins5": {
         "name": "{name}",

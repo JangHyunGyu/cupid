@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Eyes widening* \"Huh? I was gonna go easy, but never mind.\""
+        "text": "*Eyes widening* Huh? I was gonna go easy, but never mind."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*Quietly* \"...Don't move. Just for a bit.\""
+        "text": "*Quietly* ...Don't move. Just for a bit."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Pulling her hand back* \"...It was nothing.\""
+        "text": "*Pulling her hand back* ...It was nothing."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Walking beside me* \"Having fun lately?\""
+        "text": "*Walking beside me* Having fun lately?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

@@ -522,7 +522,7 @@
     },
     "after3_seo_5_ins": {
         "name": "Seoyeon",
-        "text": "*Replaçant ses cheveux à la hâte* \"...Tu as vu ?\""
+        "text": "*Replaçant ses cheveux à la hâte* ...Tu as vu ?"
     },
     "after3_seo_choice1_react_ins": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "after3_seo_choice1_react_ins6": {
         "name": "Seoyeon",
-        "text": "*En rangeant des papiers* \"Moi aussi je connais un de tes secrets.\""
+        "text": "*En rangeant des papiers* Moi aussi je connais un de tes secrets."
     },
     "after3_seo_choice1_react_ins7": {
         "name": "Seoyeon",
@@ -562,7 +562,7 @@
     },
     "after3_yuna_choice1_2_ins": {
         "name": "Yuna",
-        "text": "*Serrant le cahier contre sa poitrine* \"...Les romans, c'est. De la fiction.\""
+        "text": "*Serrant le cahier contre sa poitrine* ...Les romans, c'est. De la fiction."
     },
     "after3_yuna_choice2_3_ins": {
         "name": "{name}",
@@ -574,7 +574,7 @@
     },
     "after3_confront_5_ins": {
         "name": "Dain",
-        "text": "*Laisse échapper un rire faible.* \"...N'importe quoi. Je devrais pas être touchée par un truc pareil.\""
+        "text": "*Laisse échapper un rire faible.* ...N'importe quoi. Je devrais pas être touchée par un truc pareil."
     },
     "after3_confront_5_ins2": {
         "name": "{name}",

@@ -695,11 +695,11 @@
     },
     "night_homeroom_msg_1": {
         "name": "Homeroom Teacher",
-        "text": "*Text message* \"The manuscript deadline is coming up. ...There's a part I want to show my first reader.\""
+        "text": "*Text message* The manuscript deadline is coming up. ...There's a part I want to show my first reader."
     },
     "night_homeroom_msg_2": {
         "name": "Homeroom Teacher",
-        "text": "*Text message* \"Come to the faculty office tomorrow if you have time. — After class.\""
+        "text": "*Text message* Come to the faculty office tomorrow if you have time. — After class."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "wall_dain_lastspike_3_ins": {
         "name": "Dain",
-        "text": "*Smiling weakly* \"...That hurts."
+        "text": "*Smiling weakly* ...That hurts."
     },
     "wall_dain_lastspike_3_ins2": {
         "name": "Dain",
@@ -927,15 +927,15 @@
     },
     "wall_yuna_glimpse_3_ins4": {
         "name": "Homeroom Teacher",
-        "text": "*Message* \"The manuscript deadline is coming up."
+        "text": "*Message* The manuscript deadline is coming up."
     },
     "wall_yuna_glimpse_3_ins5": {
         "name": "Homeroom Teacher",
-        "text": "*Message* \"...There's a part I want to show my first reader."
+        "text": "*Message* ...There's a part I want to show my first reader."
     },
     "wall_yuna_glimpse_3_ins6": {
         "name": "Homeroom Teacher",
-        "text": "*Message* \"Come to the staff room tomorrow if you're free. After school."
+        "text": "*Message* Come to the staff room tomorrow if you're free. After school."
     },
     "wall_yuna_glimpse_3_ins7": {
         "name": "{name}",
@@ -943,7 +943,7 @@
     },
     "wall_yuna_glimpse_3_ins8": {
         "name": "{name}",
-        "text": "*Her sentences are always short. No filler. But this one felt different. \"There's a part I want to show.\" That one line carries weight.*"
+        "text": "*Her sentences are always short. No filler. But this one felt different. There's a part I want to show. That one line carries weight.*"
     },
     "wall_yuna_glimpse_3_ins9": {
         "name": "{name}",
@@ -959,11 +959,11 @@
     },
     "wall_yuna_glimpse_3_ins12": {
         "name": "School Nurse",
-        "text": "*Message* \"What you said in the nurse's office today."
+        "text": "*Message* What you said in the nurse's office today."
     },
     "wall_yuna_glimpse_3_ins13": {
         "name": "School Nurse",
-        "text": "*Message* \"...I keep thinking about it tonight."
+        "text": "*Message* ...I keep thinking about it tonight."
     },
     "wall_yuna_glimpse_3_ins14": {
         "name": "{name}",
@@ -975,11 +975,11 @@
     },
     "wall_yuna_glimpse_3_ins16": {
         "name": "School Nurse",
-        "text": "*Message* \"Oh, not in a weird way. I just meant it was memorable."
+        "text": "*Message* Oh, not in a weird way. I just meant it was memorable."
     },
     "wall_yuna_glimpse_3_ins17": {
         "name": "School Nurse",
-        "text": "*Message* \"...Sleep well."
+        "text": "*Message* ...Sleep well."
     },
     "wall_yuna_glimpse_3_ins18": {
         "name": "{name}",
@@ -987,7 +987,7 @@
     },
     "wall_yuna_glimpse_3_ins19": {
         "name": "{name}",
-        "text": "*\"I keep thinking about it tonight.\" Reading that, my fingers froze. Only after the \"not in a weird way\" came through could I breathe again.*"
+        "text": "*I keep thinking about it tonight. Reading that, my fingers froze. Only after the not in a weird way came through could I breathe again.*"
     },
     "wall_yuna_glimpse_3_ins20": {
         "name": "{name}",
@@ -995,7 +995,7 @@
     },
     "wall_yuna_glimpse_3_ins21": {
         "name": "{name}",
-        "text": "*There's a note on my desk. Seoyeon's handwriting. \"Make some time this afternoon. I'll leave the rooftop unlocked. — Seoyeon\"*"
+        "text": "*There's a note on my desk. Seoyeon's handwriting. Make some time this afternoon. I'll leave the rooftop unlocked. — Seoyeon*"
     },
     "wall_yuna_glimpse_3_ins22": {
         "name": "{name}",
@@ -1003,6 +1003,6 @@
     },
     "wall_yuna_glimpse_3_ins23": {
         "name": "{name}",
-        "text": "*Walking past the literary club's display in the hallway — a short story is pinned to the board. Title: \"To the Person I Met at the Library.\" It's Yuna. A story only its subject would recognize.*"
+        "text": "*Walking past the literary club's display in the hallway — a short story is pinned to the board. Title: To the Person I Met at the Library. It's Yuna. A story only its subject would recognize.*"
     }
 }

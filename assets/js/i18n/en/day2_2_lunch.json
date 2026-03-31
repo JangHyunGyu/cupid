@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Looking at {name}* \"...A bright one.\""
+        "text": "*Looking at {name}* ...A bright one."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",
@@ -451,11 +451,11 @@
     },
     "lunch2_seo_c1_3_ins": {
         "name": "Seoyeon",
-        "text": "*Acting like nothing happened* \"It was a grain of rice.\""
+        "text": "*Acting like nothing happened* It was a grain of rice."
     },
     "lunch2_dain_13_ins": {
         "name": "Dain",
-        "text": "I'm— I'm not bothered! At all!\" *Takes a big bite of soboro* \"I was just asking!!\""
+        "text": "I'm— I'm not bothered! At all! *Takes a big bite of soboro* I was just asking!!"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "lunch2_dain_end_ins5": {
         "name": "School Nurse",
-        "text": "*Looks up* \"Oh, yesterday's transfer student.\""
+        "text": "*Looks up* Oh, yesterday's transfer student."
     },
     "lunch2_dain_end_ins6": {
         "name": "{name}",
@@ -507,7 +507,7 @@
     },
     "lunch2_dain_end_ins13": {
         "name": "School Nurse",
-        "text": "*Applying the bandage* \"Here... like this... there, done.\""
+        "text": "*Applying the bandage* Here... like this... there, done."
     },
     "lunch2_dain_end_ins14": {
         "name": "{name}",
@@ -523,7 +523,7 @@
     },
     "lunch2_dain_end_ins17": {
         "name": "School Nurse",
-        "text": "*Grinning* \"It's care. Real care. If you slap it on half-heartedly, it'll fall right off.\""
+        "text": "*Grinning* It's care. Real care. If you slap it on half-heartedly, it'll fall right off."
     },
     "lunch2_dain_end_ins18": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "lunch2_dain_end_ins21": {
         "name": "School Nurse",
-        "text": "*Narrowing her eyes* \"Just one? ...Hmm, fine then. I prefer cocoa over coffee. That's the secret.\""
+        "text": "*Narrowing her eyes* Just one? ...Hmm, fine then. I prefer cocoa over coffee. That's the secret."
     },
     "lunch2_dain_end_ins22": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "lunch2_dain_end_ins23": {
         "name": "School Nurse",
-        "text": "*Laughing lightly* \"Secret~ Teachers have secrets too, you know.\""
+        "text": "*Laughing lightly* Secret~ Teachers have secrets too, you know."
     },
     "lunch2_dain_end_ins24": {
         "name": "{name}",
@@ -575,7 +575,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "School Nurse",
-        "text": "*Bright tone again* \"Oh, but not during class time~! After school!\""
+        "text": "*Bright tone again* Oh, but not during class time~! After school!"
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",

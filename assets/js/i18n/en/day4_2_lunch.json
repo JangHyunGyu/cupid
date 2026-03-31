@@ -315,11 +315,11 @@
     },
     "date_seo_pretty_high_3_ins": {
         "name": "Seoyeon",
-        "text": "*Tucking her hair back* \"...Don't get the wrong idea."
+        "text": "*Tucking her hair back* ...Don't get the wrong idea."
     },
     "date_seo_flower_ins": {
         "name": "Seoyeon",
-        "text": "*Stopping in her tracks* \"...Want to go in?"
+        "text": "*Stopping in her tracks* ...Want to go in?"
     },
     "date_seo_succulent_2_ins": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "date_yuna_pretty_high_5_ins2": {
         "name": "Yuna",
-        "text": "*Ears turning red* \"...Enough."
+        "text": "*Ears turning red* ...Enough."
     },
     "date_yuna_bookstore_2_ins": {
         "name": "{name}",
@@ -351,7 +351,7 @@
     },
     "date_dain_shop_3_ins": {
         "name": "Dain",
-        "text": "*From under her cap* \"...Say that one more time and I'll seriously hit you."
+        "text": "*From under her cap* ...Say that one more time and I'll seriously hit you."
     },
     "date_dain_arcade_2_ins": {
         "name": "{name}",
@@ -363,10 +363,10 @@
     },
     "date_dain_arcade_3_ins2": {
         "name": "Dain",
-        "text": "*Squealing* \"Full combo!! Did you see that?!"
+        "text": "*Squealing* Full combo!! Did you see that?!"
     },
     "date_dain_shop_2_ins": {
         "name": "Dain",
-        "text": "*Turning away* \"It's nothing! Let's go!"
+        "text": "*Turning away* It's nothing! Let's go!"
     }
 }

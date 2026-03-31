@@ -1,1164 +1,1164 @@
 {
-  "ending_start": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_affinity_check": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_aff_check_seo": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_aff_check_yuna": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_aff_check_dain": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_check": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_seo": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_yuna": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_dain": {
-    "name": "System",
-    "text": ""
-  },
-  "perfect_seo_1": {
-    "name": "{name}",
-    "text": "*Seoyeon's rooftop. She stands among the plants she grew herself.*"
-  },
-  "perfect_seo_2": {
-    "name": "{name}",
-    "text": "*Tears running behind her glasses. — A look I've never seen on Seoyeon before.*"
-  },
-  "perfect_seo_3": {
-    "name": "Seoyeon",
-    "text": "...This face — I'll only show it to you."
-  },
-  "perfect_seo_4": {
-    "name": "Seoyeon",
-    "text": "*The rooftop breeze blows.* Even after graduation, I'll come here. These plants only grow when you're around."
-  },
-  "perfect_seo_5": {
-    "name": "{name}",
-    "text": "*Seoyeon reaches out. Not a pinky finger. Her whole hand.*"
-  },
-  "perfect_yuna_1": {
-    "name": "{name}",
-    "text": "*The library annex, the secret attic. Yuna hands over a short story.*"
-  },
-  "perfect_yuna_2": {
-    "name": "{name}",
-    "text": "*The title is the protagonist's name.*"
-  },
-  "perfect_yuna_3": {
-    "name": "Yuna",
-    "text": "...Tell me what you think after you finish reading. That's my answer."
-  },
-  "perfect_yuna_4": {
-    "name": "{name}",
-    "text": "*The last line of the story: 'There was someone who never disappeared. Because of that person, I decided not to disappear either.'*"
-  },
-  "perfect_yuna_5": {
-    "name": "{name}",
-    "text": "*Yuna held on. Without a word. Moonlight poured through the broken windows — tattooed arms wrapped around my waist, silver hair resting on my shoulder. For the first time, Yuna's quiet breathing filled the hideout.*"
-  },
-  "perfect_dain_1": {
-    "name": "{name}",
-    "text": "*The gym. Dain fires off her last serve. Unwrapping her bandages.*"
-  },
-  "perfect_dain_2": {
-    "name": "Dain",
-    "text": "This is the last toss. — But it's also a beginning."
-  },
-  "perfect_dain_3": {
-    "name": "Dain",
-    "text": "Am I a decent person off the court too?"
-  },
-  "perfect_dain_4": {
-    "name": "{name}",
-    "text": "On the court and off it."
-  },
-  "perfect_dain_5": {
-    "name": "{name}",
-    "text": "*Dain leaped. I wasn't ready. The volleyball rolled away across the floor — and in the sunset gym, only two shadows remained.*"
-  },
-  "perfect_epilogue_1_seo": {
-    "name": "{name}",
-    "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
-  },
-  "perfect_epilogue_1_yuna": {
-    "name": "{name}",
-    "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
-  },
-  "perfect_epilogue_1_dain": {
-    "name": "{name}",
-    "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
-  },
-  "perfect_epilogue_2_seo": {
-    "name": "{name}",
-    "text": "*University entrance ceremony day. A message on my phone. 'Watered the plant today. — But come home soon.'*"
-  },
-  "perfect_epilogue_2_yuna": {
-    "name": "{name}",
-    "text": "*Yuna's debut novel was published. The dedication: 'To the third star.'*"
-  },
-  "perfect_epilogue_2_dain": {
-    "name": "{name}",
-    "text": "*Dain became a sports commentator. She smiles in front of the camera. But this time it's a real smile.*"
-  },
-  "perfect_epilogue_3_seo": {
-    "name": "{name}",
-    "text": "*Seoyeon has changed. She knows it's okay not to be perfect. The days of smiling without checking the mirror have grown.*"
-  },
-  "perfect_epilogue_3_yuna": {
-    "name": "{name}",
-    "text": "*Yuna still doesn't talk much. But her sentences got longer. Only with me.*"
-  },
-  "perfect_epilogue_3_dain": {
-    "name": "{name}",
-    "text": "*Sometimes she says her knee hurts. Every time, I just sit beside her and say nothing. That's how we do it.*"
-  },
-  "perfect_epilogue_4_seo": {
-    "name": "System",
-    "text": "─── PERFECT END (Seoyeon) ───"
-  },
-  "perfect_epilogue_4_yuna": {
-    "name": "System",
-    "text": "─── PERFECT END (Yuna) ───"
-  },
-  "perfect_epilogue_4_dain": {
-    "name": "System",
-    "text": "─── PERFECT END (Dain) ───"
-  },
-  "bitter_seo_1": {
-    "name": "{name}",
-    "text": "*I confessed. It was accepted. — But that was the end of it. I walked past the school.*"
-  },
-  "bitter_seo_2": {
-    "name": "Seoyeon",
-    "text": "...I thought we'd work out. I guess we were both a step short."
-  },
-  "bitter_seo_3": {
-    "name": "{name}",
-    "text": "*I left the cafe. It's raining. Seoyeon's gaze behind her glasses was dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
-  },
-  "bitter_yuna_1": {
-    "name": "{name}",
-    "text": "*I confessed. It was accepted. — But that was the end of it. I walked past the school.*"
-  },
-  "bitter_yuna_2": {
-    "name": "Yuna",
-    "text": "...Sometimes I think of you. When I smell the library. I should have said more back then."
-  },
-  "bitter_yuna_3": {
-    "name": "{name}",
-    "text": "*I walked out the school gate. It's raining. — Yuna's last note, tucked in the mailbox. Short. As always. But this time it's not brevity. There's simply nothing left to write.*"
-  },
-  "bitter_dain_1": {
-    "name": "{name}",
-    "text": "*I confessed. It was accepted. — But that was the end of it. I walked past the school.*"
-  },
-  "bitter_dain_2": {
-    "name": "Dain",
-    "text": "It was fun, really! ...But I think fun was all it was. That's kind of sad."
-  },
-  "bitter_dain_3": {
-    "name": "{name}",
-    "text": "*I left the gym. It's raining. — The exclamation marks came back, but the last sentence had none. When Dain ends with a period, it means there's no energy left to share.*"
-  },
-  "bitter_epilogue_1": {
-    "name": "{name}",
-    "text": "*After graduation. Contact grew sparse. Once a month became once every two months, leaving messages on read became the norm, and one day — when I tried to send something and drew a blank on what to say — I knew it was over.*"
-  },
-  "bitter_epilogue_2": {
-    "name": "{name}",
-    "text": "*The record of five days remains. It doesn't hurt. It just — wasn't enough. For either of us.*"
-  },
-  "bitter_epilogue_3": {
-    "name": "System",
-    "text": "─── BITTERSWEET END ───"
-  },
-  "true_seo_1": {
-    "name": "{name}",
-    "text": "*Seoyeon’s room. Her parents are out. The room is tidy — too tidy. A room without emotion.*"
-  },
-  "true_seo_2": {
-    "name": "{name}",
-    "text": "*— Except for one thing. On the desk, a row of plants Seoyeon grew herself.*"
-  },
-  "true_seo_3": {
-    "name": "Seoyeon",
-    "text": "I feel like I don’t have to be perfect in front of you."
-  },
-  "true_seo_4": {
-    "name": "{name}",
-    "text": "You never had to be perfect."
-  },
-  "true_seo_5": {
-    "name": "Seoyeon",
-    "text": "...I know. But it took five days to believe that."
-  },
-  "true_seo_6": {
-    "name": "{name}",
-    "text": "*Seoyeon smiles. Her lips curve on their own.*"
-  },
-  "true_seo_7": {
-    "name": "Seoyeon",
-    "text": "Promise me. — Stay by my side."
-  },
-  "true_seo_8": {
-    "name": "{name}",
-    "text": "*We linked pinkies. Day 1’s habit, Day 4’s promise, and now. — Same finger, third meaning.*"
-  },
-  "true_yuna_1": {
-    "name": "{name}",
-    "text": "*The library annex. Deeper than the secret reading spot — an attic. A space I didn’t even know existed.*"
-  },
-  "true_yuna_2": {
-    "name": "Yuna",
-    "text": "I was the only one who knew about this place."
-  },
-  "true_yuna_3": {
-    "name": "{name}",
-    "text": "*Yuna opens the small window. Stars are visible.*"
-  },
-  "true_yuna_4": {
-    "name": "Yuna",
-    "text": "Now you do too."
-  },
-  "true_yuna_5": {
-    "name": "{name}",
-    "text": "The third star?"
-  },
-  "true_yuna_6": {
-    "name": "Yuna",
-    "text": "...You remembered."
-  },
-  "true_yuna_7": {
-    "name": "{name}",
-    "text": "*Day 2’s riddle. The third star. — Proof that Yuna had been watching me from the very beginning.*"
-  },
-  "true_dain_1": {
-    "name": "{name}",
-    "text": "*The gym. The same emergency lights as yesterday. Lying side by side on the mat.*"
-  },
-  "true_dain_2": {
-    "name": "{name}",
-    "text": "*Dain takes {name}’s hand — pulls it over and presses it against her chest. Without a word.*"
-  },
-  "true_dain_3": {
-    "name": "{name}",
-    "text": "*The heartbeat under my fingertips is vivid.*"
-  },
-  "true_dain_4": {
-    "name": "{name}",
-    "text": "*The heartbeat under my fingertips is vivid.*"
-  },
-  "true_dain_5": {
-    "name": "{name}",
-    "text": "...It’s fast."
-  },
-  "true_dain_6": {
-    "name": "Dain",
-    "text": "*half-covering her face with the volleyball* Why are you staring... That’s not fair."
-  },
-  "true_dain_7": {
-    "name": "{name}",
-    "text": "I wasn’t looking."
-  },
-  "true_dain_8": {
-    "name": "Dain",
-    "text": "You totally were!! ...But you can keep looking."
-  },
-  "true_seo_bridge": {
-    "name": "{name}",
-    "text": "*Seoyeon's promise still lingers at my fingertips.*"
-  },
-  "true_yuna_bridge": {
-    "name": "{name}",
-    "text": "*Yuna's stars are still here, right in front of me.*"
-  },
-  "true_dain_bridge": {
-    "name": "{name}",
-    "text": "*Dain's laughter still lingers in my ears.*"
-  },
-  "true_epilogue_1_seo": {
-    "name": "{name}",
-    "text": "*It was five days.*"
-  },
-  "true_epilogue_1_yuna": {
-    "name": "{name}",
-    "text": "*It was five days.*"
-  },
-  "true_epilogue_1_dain": {
-    "name": "{name}",
-    "text": "*It was five days.*"
-  },
-  "true_epilogue_2": {
-    "name": "{name}",
-    "text": "*The uniform was stiff, the cherry blossoms made me sneeze, and I had no idea what to do in front of the school gate.*"
-  },
-  "true_epilogue_3": {
-    "name": "{name}",
-    "text": "*But looking back — I think it was already decided the moment our eyes first met. It just took five days to admit it.*"
-  },
-  "true_epilogue_4_seo": {
-    "name": "{name}",
-    "text": "*Her family hasn't gotten better. Her mother's calls are still cold, and the rehearsed smiles haven't stopped. — But now there's someone she can show her unguarded face to. That's enough.*"
-  },
-  "true_epilogue_4_yuna": {
-    "name": "{name}",
-    "text": "*The person who left hasn't come back. The senior's number is still gone, and the corner seat in the library is still empty. — But now there's someone she can speak to with her voice, not just notes. Not anymore.*"
-  },
-  "true_epilogue_4_dain": {
-    "name": "{name}",
-    "text": "*The knee hasn't healed. She still wraps the bandage every morning, and the alarm memo still has two exclamation marks. — But now there's someone who'll listen when her sentences end with a period. Not anymore.*"
-  },
-  "true_epilogue_7": {
-    "name": "System",
-    "text": "─── TRUE LOVE END ───"
-  },
-  "day5_ending_good": {
-    "name": "{name}",
-    "text": "*My heart wavered, and I made mistakes.*"
-  },
-  "good_1": {
-    "name": "{name}",
-    "text": "*To someone, it might have seemed like I gave hope only to take it away. I’m sorry.*"
-  },
-  "good_1b": {
-    "name": "{name}",
-    "text": "*A voice comes from ahead.*"
-  },
-  "good_1c": {
-    "name": "{name}",
-    "text": "*She took a step closer.*"
-  },
-  "good_1_seo": {
-    "name": "Seoyeon",
-    "text": "Looking at someone else — I’ll make you pay for that the rest of your life. — With interest."
-  },
-  "good_1_yuna": {
-    "name": "Yuna",
-    "text": "...You really are clueless. But since you came back, I can let it go."
-  },
-  "good_1_dain": {
-    "name": "Dain",
-    "text": "Hey, I was seriously angry, you know? ...But you came to me in the end. That’s enough."
-  },
-  "good_2_seo": {
-    "name": "{name}",
-    "text": "*Walking side by side. Cherry blossoms scatter beneath the streetlights. A petal lands on Seoyeon’s hair.*"
-  },
-  "good_3_seo": {
-    "name": "{name}",
-    "text": "*Seoyeon pretends to be perfect — but I wasn’t perfect either. Maybe that’s why we fit.*"
-  },
-  "good_4_seo": {
-    "name": "{name}",
-    "text": "*There's time to fill what's missing. The cherry blossoms will bloom again next year. We walked together.*"
-  },
-  "good_5_seo": {
-    "name": "{name}",
-    "text": "*Even when the cherry blossom path ends, it’s okay. The story isn’t over yet.*"
-  },
-  "good_2_yuna": {
-    "name": "{name}",
-    "text": "*We climbed up to the rooftop. Yuna is already leaning against the railing. The night skyline sprawls beneath our feet.*"
-  },
-  "good_3_yuna": {
-    "name": "{name}",
-    "text": "*Yuna was chasing the shadow of someone who disappeared. I know now — I’m not that shadow.*"
-  },
-  "good_4_yuna": {
-    "name": "{name}",
-    "text": "*On the rooftop. I want to be remembered as myself, not as a stand-in. Even if it takes time.*"
-  },
-  "good_5_yuna": {
-    "name": "{name}",
-    "text": "*A single star is visible. Imperfect, and that’s okay. The story isn’t over yet.*"
-  },
-  "good_2_dain": {
-    "name": "{name}",
-    "text": "*Standing side by side in front of the school gate. The sunset is fading. Dain holds a volleyball in one hand.*"
-  },
-  "good_3_dain": {
-    "name": "{name}",
-    "text": "*Dain kept running even when her knees hurt. I can — keep running a little longer too.*"
-  },
-  "good_4_dain": {
-    "name": "{name}",
-    "text": "*In front of the school. The last serve hasn't come over yet. The match isn't over.*"
-  },
-  "good_5_dain": {
-    "name": "{name}",
-    "text": "*The sun sets beyond the school gate. Imperfect, and that’s okay. The story isn’t over yet.*"
-  },
-  "good_5_cg_seo": {
-    "name": "System",
-    "text": "─── GOOD END ───"
-  },
-  "good_5_cg_yuna": {
-    "name": "System",
-    "text": "─── GOOD END ───"
-  },
-  "good_5_cg_dain": {
-    "name": "System",
-    "text": "─── GOOD END ───"
-  },
-  "day5_ending_mayhem": {
-    "name": "{name}",
-    "text": "*I liked all three of them. Genuinely. — And that’s why I couldn’t choose anyone.*"
-  },
-  "mayhem_1": {
-    "name": "{name}",
-    "text": "*Seoyeon brushed past me in the hallway. She didn’t turn her head. That 0.5 seconds — this time it was a blade aimed at me.*"
-  },
-  "mayhem_2": {
-    "name": "{name}",
-    "text": "*Yuna’s seat was empty. A single note on the desk. ‘It was fun.’ The period was the end.*"
-  },
-  "mayhem_3": {
-    "name": "{name}",
-    "text": "*Dain was smiling. Bright as always. — But the exclamation marks were gone. Take care. The first time I ever heard Dain end a sentence with a period was, of all things, a farewell.*"
-  },
-  "mayhem_4": {
-    "name": "{name}",
-    "text": "*I watched all three walk away. None of them looked back. — That was the answer.*"
-  },
-  "mayhem_5": {
-    "name": "{name}",
-    "text": "*Spring is ending. The cherry blossoms are falling. No one is by my side.*"
-  },
-  "mayhem_6": {
-    "name": "{name}",
-    "text": "*I'm standing in front of the school gate. Cherry blossoms are falling. No one picks them up.*"
-  },
-  "mayhem_7": {
-    "name": "System",
-    "text": "─── MAYHEM END ───"
-  },
-  "day5_ending_harem": {
-    "name": "{name}",
-    "text": "*I like all of you. — When those words left my mouth, all three faces froze at once.*"
-  },
-  "harem_1": {
-    "name": "{name}",
-    "text": "*Seoyeon smiled first. ...Fine. At least you’re honest. It wasn’t my imagination that I heard teeth grinding behind that smile.*"
-  },
-  "harem_2": {
-    "name": "Yuna",
-    "text": "...Idiot."
-  },
-  "harem_3": {
-    "name": "{name}",
-    "text": "*Dain punched my shoulder with her fist. It hurt. Are you insane? ...But I fell for you knowing you’re like that, so that’s on me. Hmph.*"
-  },
-  "harem_4": {
-    "name": "{name}",
-    "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. In between, the lies pile up to avoid getting caught. I thought it would be sweet — but it’s strangling me.*"
-  },
-  "harem_5": {
-    "name": "{name}",
-    "text": "*This balance will break. Someone will cry first. When that happens, this story stops being a romance — and becomes a catastrophe.*"
-  },
-  "harem_6": {
-    "name": "{name}",
-    "text": "*And yet, today all three are smiling. Even knowing tomorrow’s ruin — I can’t let go of today.*"
-  },
-  "harem_7": {
-    "name": "{name}",
-    "text": "*It's only a matter of time before it breaks. — When it does, who will be hurt the most?*"
-  },
-  "harem_8": {
-    "name": "System",
-    "text": "─── HAREM END ───"
-  },
-  "day5_ending_confess_fail": {
-    "name": "{name}",
-    "text": "*I told them. I said it. — But what came back was silence.*"
-  },
-  "confess_fail_1": {
-    "name": "{name}",
-    "text": "*I found the courage. This time, I didn’t run. — That much is certain.*"
-  },
-  "confess_fail_2": {
-    "name": "{name}",
-    "text": "*But confession alone wasn’t enough. What I’d built over five days — was too thin to support those three words.*"
-  },
-  "confess_fail_3": {
-    "name": "{name}",
-    "text": "*At my old school, I regretted not speaking up. At this school, I spoke up — and a different kind of emptiness remained.*"
-  },
-  "confess_fail_4": {
-    "name": "{name}",
-    "text": "*I walk out the school gate. My phone is quiet. — But I didn’t run this time. That alone is different.*"
-  },
-  "confess_fail_5": {
-    "name": "System",
-    "text": "--- CONFESS FAIL END ---"
-  },
-  "day5_ending_friend": {
-    "name": "{name}",
-    "text": "*I couldn’t convey my feelings. No — I chose not to.*"
-  },
-  "friend_1": {
-    "name": "{name}",
-    "text": "*In the end, I couldn't say it.*"
-  },
-  "friend_2": {
-    "name": "{name}",
-    "text": "*I don't know if it's regret or a choice. I only know — five days ended with those three words stuck in my throat.*"
-  },
-  "friend_3": {
-    "name": "{name}",
-    "text": "*I was like this at my old school too. Here I am, doing it again.*"
-  },
-  "friend_4": {
-    "name": "{name}",
-    "text": "*Walking out the school gate, there's a message on my phone. 'Thanks for today lol' — The tone of a friend. The perfectly friendly tone.*"
-  },
-  "friend_5": {
-    "name": "{name}",
-    "text": "*I typed back. ‘Thanks too.’ — After hitting send, I stare at the screen. Two lines of conversation. I’m smiling, but my chest feels strangely cold.*"
-  },
-  "friend_6": {
-    "name": "{name}",
-    "text": "*We’ll keep exchanging messages like this. Adding smiley emojis, grabbing a meal now and then, asking ‘anything new?’ and answering ‘not really.’ — Close enough to touch, yet never touching. That’s what being friends is.*"
-  },
-  "friend_7": {
-    "name": "{name}",
-    "text": "*...I couldn’t say it at this school either.*"
-  },
-  "friend_8": {
-    "name": "{name}",
-    "text": "*Graduation day. Scrolling through my phone gallery. Where Sojeong’s photo used to be, there’s now a group photo of all of us — with her in it.*"
-  },
-  "friend_9": {
-    "name": "{name}",
-    "text": "*I’m standing next to her again, wearing the perfect mask called ‘friend,’ smiling.*"
-  },
-  "friend_10": {
-    "name": "{name}",
-    "text": "*I open the notes app. ‘I need to tell you something.’ — The cursor blinks. Just like three years ago. I hold down backspace and erase the words.*"
-  },
-  "friend_11": {
-    "name": "{name}",
-    "text": "*Even after transferring, even after running away — in the end, nothing about me changed.*"
-  },
-  "friend_12": {
-    "name": "System",
-    "text": "─── FRIEND END ───"
-  },
-  "day5_ending_alone": {
-    "name": "{name}",
-    "text": "*I walk out the school gate. My phone buzzes. — It’s nobody. Low battery warning.*"
-  },
-  "alone_1": {
-    "name": "{name}",
-    "text": "*Five days. I reached out to people, failed to reach others, and in the end couldn’t choose anyone.*"
-  },
-  "alone_2": {
-    "name": "{name}",
-    "text": "*At my old school, I regretted not speaking up. At this school — do I regret not finding anyone? No. I found them but couldn’t pick. No — I didn’t have the courage to pick.*"
-  },
-  "alone_3": {
-    "name": "{name}",
-    "text": "*The cherry blossoms are now scattering, carried off by the wind.*"
-  },
-  "alone_4": {
-    "name": "{name}",
-    "text": "*...Being alone isn’t a punishment. It’s just — quiet. Much more than I expected.*"
-  },
-  "alone_5": {
-    "name": "System",
-    "text": "─── ALONE END ───"
-  },
-  "day5_credits": {
-    "name": "",
-    "text": ""
-  },
-  "day5_ending_restart": {
-    "name": "System",
-    "text": "",
-    "choices": [
-      "Start over from the beginning"
-    ]
-  },
-  "hidden_perfect_homeroom_check": {},
-  "hidden_perfect_homeroom_1": {
-    "name": "{name}",
-    "text": "*Graduation is over. I'm alone in the empty classroom. The chalk marks on the blackboard haven't been erased yet.*"
-  },
-  "hidden_perfect_homeroom_1b": {
-    "name": "{name}",
-    "text": "*The door opens. — It's her. Beige cardigan. Holding a document envelope.*"
-  },
-  "hidden_perfect_homeroom_2": {
-    "name": "Homeroom Teacher",
-    "text": "Congratulations on graduating. ...The paperwork's all done. My job as your teacher is finished now."
-  },
-  "hidden_perfect_homeroom_2b": {
-    "name": "{name}",
-    "text": "Is the manuscript still in your desk drawer?"
-  },
-  "hidden_perfect_homeroom_2c": {
-    "name": "Homeroom Teacher",
-    "text": "*She pauses. About to say something more, then closes her mouth.* ...Take care."
-  },
-  "hidden_perfect_homeroom_3": {
-    "name": "{name}",
-    "text": "*Three years later.*"
-  },
-  "hidden_perfect_homeroom_3b": {
-    "name": "{name}",
-    "text": "*A cafe terrace. Cherry blossoms drifting. Walking in — I spot familiar brown wavy hair by the window. A linen jacket instead of a cardigan.*"
-  },
-  "hidden_perfect_homeroom_3c": {
-    "name": "Homeroom Teacher",
-    "text": "...Oh. I'm surprised too. *She sets down her coffee cup.* Want to sit?"
-  },
-  "hidden_perfect_homeroom_3e": {
-    "name": "Homeroom Teacher",
-    "text": "*She smirks.* Quit teaching. Just writing now. Part-time at a cafe too. — What about you?"
-  },
-  "hidden_perfect_homeroom_3f": {
-    "name": "Homeroom Teacher",
-    "text": "...Can we meet again? I come here every Thursday."
-  },
-  "hidden_perfect_homeroom_3g": {
-    "name": "{name}",
-    "text": "*That 'next time' became the time after, and the time after that. Same seat every Thursday. When the barista asked 'Couple's table?', neither of us could answer. One Thursday. We walked the streets instead of the cafe. Side by side. Both pretending not to notice our shadows overlapping.*"
-  },
-  "hidden_perfect_homeroom_4b": {
-    "name": "Homeroom Teacher",
-    "text": "*She stops suddenly at the bookstore.* ...I finished my manuscript. Want to read it?"
-  },
-  "hidden_perfect_homeroom_4c": {
-    "name": "{name}",
-    "text": "*I read it at home. All night. — The way the main character spoke felt familiar. Too familiar.*"
-  },
-  "hidden_perfect_homeroom_4d": {
-    "name": "Homeroom Teacher",
-    "text": "*Next Thursday, at the café. She stirred her coffee longer than usual.* ...How was it?"
-  },
-  "hidden_perfect_homeroom_4e": {
-    "name": "{name}",
-    "text": "*Next Thursday. I didn't wait outside the cafe. — I waited outside the flower shop.*"
-  },
-  "hidden_perfect_homeroom_4f": {
-    "name": "{name}",
-    "text": "*I handed her the bouquet.* This isn't professional interest. Not on my end."
-  },
-  "hidden_perfect_homeroom_4g": {
-    "name": "Homeroom Teacher",
-    "text": "*She takes the bouquet and stares at it for a long time. Her hands tremble. — She smiles.* ...Me neither.\n\n─── Homeroom Teacher PERFECT END ───"
-  },
-  "hidden_perfect_homeroom_5": {},
-  "hidden_perfect_nurse_check": {},
-  "hidden_perfect_nurse_1": {
-    "name": "{name}",
-    "text": "*Graduation is over. I opened the nurse's office door. Empty. A single bandage on the desk. 'Come to my place. Address on the back.' — No heart this time.*"
-  },
-  "hidden_perfect_nurse_2": {
-    "name": "School Nurse",
-    "text": "*The person who opened the door isn't in a white coat — cardigan, barefoot.* ...You came. I honestly didn't think you would."
-  },
-  "hidden_perfect_nurse_3": {
-    "name": "{name}",
-    "text": "*Side by side on the living room couch. The sun is setting outside the window. Instead of a bandage, fingers are touching.*"
-  },
-  "hidden_perfect_nurse_3b": {
-    "name": "School Nurse",
-    "text": "*She leans against me.* ...I don't need excuses anymore. Not a patient, not a student."
-  },
-  "hidden_perfect_nurse_4": {
-    "name": "School Nurse",
-    "text": "*Her hand reaches up and grabs my tie. Not playful. Her eyes are serious.* ...I'm not letting you leave tonight."
-  },
-  "hidden_perfect_nurse_4b": {
-    "name": "{name}",
-    "text": "*Morning. Light seeping through the curtains. Breathing beside me. — The person who used to take three minutes to put on a bandage is now asleep holding my hand.*"
-  },
-  "hidden_perfect_nurse_5": {
-    "name": "School Nurse",
-    "text": "*She opens her eyes. Smiles.* ...Does it hurt anywhere? Want me to take a look? *— Not a joke. Not this time.*"
-  },
-  "hidden_perfect_nurse_5b": {
-    "name": "{name}",
-    "text": "*Just — someone I want to be with. Right here.\n\n─── School Nurse PERFECT END ───*"
-  },
-  "hidden_true_homeroom_1": {
-    "name": "{name}",
-    "text": "*Graduation day. — Time has passed. The uniform isn't stiff anymore.*"
-  },
-  "hidden_true_homeroom_2": {
-    "name": "{name}",
-    "text": "*The empty classroom. The one where she wrote. — The homeroom teacher is waiting. In casual clothes.*"
-  },
-  "hidden_true_homeroom_3": {
-    "name": "Homeroom Teacher",
-    "text": "Congratulations on graduating."
-  },
-  "hidden_true_homeroom_4": {
-    "name": "Homeroom Teacher",
-    "text": "...That. You didn't say 'teacher.' First time."
-  },
-  "hidden_true_homeroom_5": {
-    "name": "Homeroom Teacher",
-    "text": "I finished the manuscript. — I could write it because you were my first reader. I asked for one line and you came back with three pages."
-  },
-  "hidden_true_homeroom_6": {
-    "name": "Homeroom Teacher",
-    "text": "...Just one thing. ...Let's go get coffee. Real coffee this time, not juice."
-  },
-  "hidden_true_homeroom_7": {
-    "name": "{name}",
-    "text": "I'd like that."
-  },
-  "hidden_true_homeroom_8": {
-    "name": "Homeroom Teacher",
-    "text": "...I really shouldn't be doing this.\n\n─── Homeroom Teacher TRUE LOVE END ───"
-  },
-  "hidden_true_nurse_1": {
-    "name": "{name}",
-    "text": "*Graduation day. Walking out the school gate — there's a bandage stuck to the nurse's office door.*"
-  },
-  "hidden_true_nurse_2": {
-    "name": "{name}",
-    "text": "*'Congrats on graduating. I'll wait at the cafe.' — Peeling off the bandage, there's a little map inside. The school nurse is sitting at the cafe. Not in her white coat — pink sweater and jeans. Still wearing her glasses, but the vibe is different. Not the school nurse — just a woman at a café.*"
-  },
-  "hidden_true_nurse_3": {
-    "name": "School Nurse",
-    "text": "Congrats on graduating. ...Starting today, you can drop the formalities."
-  },
-  "hidden_true_nurse_4": {
-    "name": "School Nurse",
-    "text": "You know, on Day 1 when you came to the nurse's office. I put my hand on your forehead and said 'I just wanted to touch you.' That was a joke."
-  },
-  "hidden_true_nurse_5": {
-    "name": "School Nurse",
-    "text": "...But right now it's not a joke."
-  },
-  "hidden_true_nurse_6": {
-    "name": "School Nurse",
-    "text": "A teacher shouldn't catch feelings for a student. I know that. — So I kept wrapping everything in jokes. But you saw through them every time."
-  },
-  "hidden_true_nurse_7": {
-    "name": "School Nurse",
-    "text": "...You're the first person to see through me."
-  },
-  "hidden_true_nurse_8": {
-    "name": "School Nurse",
-    "text": "Now we can meet without bandages. — No excuses needed.\n\n─── School Nurse TRUE LOVE END ───"
-  },
-  "hidden_good_homeroom_1": {
-    "name": "Homeroom Teacher",
-    "text": "*She was waiting in front of the school.* Congratulations on graduating."
-  },
-  "hidden_good_homeroom_2": {
-    "name": "{name}",
-    "text": "*During the handshake — something slips into my palm. A folded note.*"
-  },
-  "hidden_good_homeroom_3": {
-    "name": "{name}",
-    "text": "*Leaving the school. 'When I finish the manuscript, I'll reach out. — To my first reader.' There's a phone number.*"
-  },
-  "hidden_good_homeroom_4": {
-    "name": "{name}",
-    "text": "*Her hand held on about three seconds longer than a handshake should. Too long for a handshake, too short for a confession.\n\n─── Homeroom Teacher GOOD END ───*"
-  },
-  "hidden_good_nurse_1": {
-    "name": "School Nurse",
-    "text": "Oh, a graduate. A patient actually coming to say goodbye. That's actually sweet."
-  },
-  "hidden_good_nurse_2": {
-    "name": "School Nurse",
-    "text": "Vitamins. — Take care of yourself in college. ...Medical concern. This time, for real."
-  },
-  "hidden_good_nurse_3": {
-    "name": "{name}",
-    "text": "*Leaving the nurse's office. Inside the cap, tiny writing. 'Call me if you're sick. Call me even if you're not. — ♥'*"
-  },
-  "hidden_good_nurse_4": {
-    "name": "{name}",
-    "text": "*That heart — this time it's definitely not medical concern.\n\n─── School Nurse GOOD END ───*"
-  },
-  "perfect_dain_2b": {
-    "name": "{name}",
-    "text": "*No exclamation mark. For the first time. — Dain is talking about a beginning that isn't volleyball.*"
-  },
-  "perfect_dain_3b": {
-    "name": "{name}",
-    "text": "*Dain sets the volleyball down on the court. Turns around and smiles. A smile without an exclamation mark.*"
-  },
-  "perfect_epilogue_bridge_seo": {
-    "name": "System",
-    "text": "*Epilogue — One Year Later*"
-  },
-  "perfect_epilogue_bridge_yuna": {
-    "name": "System",
-    "text": "*Epilogue — One Year Later*"
-  },
-  "perfect_epilogue_bridge_dain": {
-    "name": "System",
-    "text": "*Epilogue — One Year Later*"
-  },
-  "true_seo_6b": {
-    "name": "Seoyeon",
-    "text": "I always had to smile. But in front of you, I just want to be myself."
-  },
-  "true_seo_7b": {
-    "name": "{name}",
-    "text": "*Seoyeon holds out her pinky finger.*"
-  },
-  "true_yuna_6b": {
-    "name": "Yuna",
-    "text": "Don't go. Stay here tonight."
-  },
-  "true_dain_2b": {
-    "name": "{name}",
-    "text": "*Fast. A speed that needs no words.*"
-  },
-  "true_dain_8b": {
-    "name": "{name}",
-    "text": "*The exclamation mark is back. — But this time, it's a real one.*"
-  },
-  "good_1_yuna_b": {
-    "name": "{name}",
-    "text": "*Yuna hands over a note. \"Don't get lost next time.\" — Short. And warm.*"
-  },
-  "good_epilogue_1": {
-    "name": "{name}",
-    "text": "*But it was that wavering that showed me what I truly felt.*"
-  },
-  "good_epilogue_2": {
-    "name": "{name}",
-    "text": "*I wasn't lost. It was just the process of finding you.*"
-  },
-  "good_epilogue_3": {
-    "name": "{name}",
-    "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
-  },
-  "good_epilogue_1_yuna": {
-    "name": "{name}",
-    "text": "*But it was that wavering that showed me what I truly felt.*"
-  },
-  "good_epilogue_2_yuna": {
-    "name": "{name}",
-    "text": "*I wasn't lost. It was just the process of finding you.*"
-  },
-  "good_epilogue_3_yuna": {
-    "name": "{name}",
-    "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
-  },
-  "good_epilogue_1_dain": {
-    "name": "{name}",
-    "text": "*But it was that wavering that showed me what I truly felt.*"
-  },
-  "good_epilogue_2_dain": {
-    "name": "{name}",
-    "text": "*I wasn't lost. It was just the process of finding you.*"
-  },
-  "good_epilogue_3_dain": {
-    "name": "{name}",
-    "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
-  },
-  "confess_fail_cg_seo": {
-    "name": "{name}",
-    "text": ""
-  },
-  "confess_fail_cg_yuna": {
-    "name": "{name}",
-    "text": ""
-  },
-  "confess_fail_cg_dain": {
-    "name": "{name}",
-    "text": ""
-  },
-  "hidden_perfect_homeroom_ep1": {
-    "name": "{name}",
-    "text": "*We didn't leave the café that day. Not until sunset. — All the words we couldn't say in that classroom four years ago came pouring out.*"
-  },
-  "hidden_perfect_homeroom_ep2": {
-    "name": "{name}",
-    "text": "*Thursday's café became our café. The staff stopped asking 'couple's seat?' They just show us to our table.*"
-  },
-  "hidden_perfect_homeroom_ep3": {
-    "name": "{name}",
-    "text": "*The manuscript was published. No name in the dedication. Just one line: 'Three pages of feedback from the teacher's desk drawer — that's where this story began.'*"
-  },
-  "hidden_perfect_homeroom_ep4": {
-    "name": "{name}",
-    "text": "*Sometimes she says 'I used to be your teacher' and I reply 'I used to be your student.' We both laugh. — Because now we're just two people.*"
-  },
-  "hidden_perfect_nurse_ep1": {
-    "name": "{name}",
-    "text": "*Morning. A bandage stuck to the kitchen table. Today's menu written on it. — Her version of a sticky note.*"
-  },
-  "hidden_perfect_nurse_ep2": {
-    "name": "{name}",
-    "text": "*She went back to the university hospital. This time, the patients call her by name. — Dr. Lee.*"
-  },
-  "hidden_perfect_nurse_ep3": {
-    "name": "{name}",
-    "text": "*The rosemary pot moved to the window. The sunny side. — Someone in an apron instead of a white coat is watering it.*"
-  },
-  "hidden_perfect_nurse_ep4": {
-    "name": "{name}",
-    "text": "*The bandages are still in the drawer. Even though there's no need. — A person who no longer needs excuses still can't let go of the habit.*"
-  },
-  "perfect_seo_1_ins": {
-    "name": "{name}",
-    "text": "*For the first time, she takes off her glasses — and she's crying.*"
-  },
-  "perfect_seo_5_ins": {
-    "name": "{name}",
-    "text": "*The rooftop breeze blows.*"
-  },
-  "true_seo_7_ins": {
-    "name": "{name}",
-    "text": "*We linked pinkies. Day 1's habit, Day 4's promise, and now. — Same finger, third meaning.*"
-  },
-  "true_yuna_2_ins": {
-    "name": "{name}",
-    "text": "*Yuna climbs the small attic ladder. There's a hatch leading up. — When it opens, a breeze rushes in.*"
-  },
-  "true_yuna_2_ins2": {
-    "name": "{name}",
-    "text": "*Above the attic was a rooftop. The library annex rooftop. — A secret passage no one knows about.*"
-  },
-  "true_yuna_2_ins3": {
-    "name": "{name}",
-    "text": "*Yuna leans against the railing. Stars are visible.*"
-  },
-  "true_yuna_5_ins": {
-    "name": "{name}",
-    "text": "*Yuna pauses. — Smiles. A soundless smile I've never seen before.*"
-  },
-  "hidden_true_homeroom_5_ins": {
-    "name": "{name}",
-    "text": "*Graduation day. — Time has passed.*"
-  },
-  "hidden_true_homeroom_5_ins2": {
-    "name": "{name}",
-    "text": "*The uniform isn't stiff anymore. No — today is the day I take it off.*"
-  },
-  "hidden_true_homeroom_2_ins": {
-    "name": "{name}",
-    "text": "*No cardigan, no clipboard. A comfortable sweater and long skirt. — Casual clothes.*"
-  },
-  "hidden_true_homeroom_3_ins": {
-    "name": "{name}",
-    "text": "Thank you."
-  },
-  "hidden_true_homeroom_3_ins2": {
-    "name": "Homeroom Teacher",
-    "text": "...That."
-  },
-  "hidden_true_homeroom_4_ins": {
-    "name": "{name}",
-    "text": "*It was unconscious. — The moment I graduated, the title fell away.*"
-  },
-  "hidden_true_homeroom_4_ins2": {
-    "name": "{name}",
-    "text": "*She pulls out an envelope. This time it's not brown — it's white.*"
-  },
-  "hidden_true_homeroom_4_ins3": {
-    "name": "Homeroom Teacher",
-    "text": "I finished the manuscript. — I could write it because you were my first reader."
-  },
-  "hidden_true_homeroom_4_ins4": {
-    "name": "{name}",
-    "text": "Did my review help?"
-  },
-  "hidden_true_homeroom_4_ins5": {
-    "name": "Homeroom Teacher",
-    "text": "I asked for one line and you came back with three pages.\" *A soft laugh* \"A creative writing teacher nearly crying over a student's review — that's our secret."
-  },
-  "hidden_true_homeroom_4_ins6": {
-    "name": "{name}",
-    "text": "*She looks out the window. Cherry blossoms are falling.*"
-  },
-  "hidden_true_homeroom_4_ins7": {
-    "name": "Homeroom Teacher",
-    "text": "*Turning from the window* \"...Just one thing."
-  },
-  "hidden_true_homeroom_6_ins": {
-    "name": "{name}",
-    "text": "*From juice to coffee. — From student to adult. Not crossing the line — the line itself disappeared.*"
-  },
-  "hidden_true_homeroom_7_ins": {
-    "name": "{name}",
-    "text": "*She smiles. Not a dry one — the smile of someone who finished a seven-year unfinished manuscript.*"
-  },
-  "hidden_true_homeroom_7_ins2": {
-    "name": "Homeroom Teacher",
-    "text": "...I really shouldn't be doing this.\" *— Her voice trails off. Then she smiles.*"
-  },
-  "hidden_true_homeroom_7_ins3": {
-    "name": "{name}",
-    "text": "*One last time. Then the habit breaks. — Seven years of 'teacher' are over, and the day to call her by name has come.*"
-  },
-  "hidden_true_nurse_2_ins": {
-    "name": "{name}",
-    "text": "*Not a teacher — just a woman.*"
-  },
-  "hidden_true_nurse_2_ins2": {
-    "name": "School Nurse",
-    "text": "Congrats on graduating."
-  },
-  "hidden_true_nurse_2_ins3": {
-    "name": "{name}",
-    "text": "Thank you."
-  },
-  "hidden_true_nurse_8_ins": {
-    "name": "School Nurse",
-    "text": "*Turning her coffee cup* \"The diploma takes effect faster than I thought."
-  },
-  "hidden_true_nurse_8_ins2": {
-    "name": "{name}",
-    "text": "*Graduation erases the line. — In a cafe instead of the nurse's office, with a person instead of a teacher.*"
-  },
-  "hidden_true_nurse_8_ins3": {
-    "name": "{name}",
-    "text": "*The school nurse looks at me. No playfulness.*"
-  },
-  "hidden_true_nurse_8_ins4": {
-    "name": "School Nurse",
-    "text": "You know, on Day 1, when you came to the nurse's office."
-  },
-  "hidden_true_nurse_8_ins5": {
-    "name": "{name}",
-    "text": "Because I was dizzy."
-  },
-  "hidden_true_nurse_8_ins6": {
-    "name": "School Nurse",
-    "text": "I put my hand on your forehead and said 'I just wanted to touch you.' That was a joke."
-  },
-  "hidden_true_nurse_8_ins7": {
-    "name": "{name}",
-    "text": "I know."
-  },
-  "hidden_true_nurse_5_ins": {
-    "name": "{name}",
-    "text": "*Her voice dropped a register. All playfulness completely gone. — This is her sincerity.*"
-  },
-  "hidden_true_nurse_5_ins2": {
-    "name": "School Nurse",
-    "text": "A teacher shouldn't catch feelings for a student. I knew that. — So I kept wrapping everything in jokes. Over and over."
-  },
-  "hidden_true_nurse_5_ins3": {
-    "name": "School Nurse",
-    "text": "But you saw through the sincerity behind the jokes."
-  },
-  "hidden_true_nurse_5_ins4": {
-    "name": "{name}",
-    "text": "Taking three minutes to put on a bandage isn't just being careful."
-  },
-  "hidden_true_nurse_5_ins5": {
-    "name": "{name}",
-    "text": "*The school nurse pauses. — Then smiles. Not a playful smile.*"
-  },
-  "hidden_true_nurse_7_ins": {
-    "name": "{name}",
-    "text": "*The school nurse reaches out and touches the bandage on the back of my hand. The one she put on yesterday.*"
-  },
-  "hidden_true_nurse_7_ins2": {
-    "name": "School Nurse",
-    "text": "Now we can meet without bandages. — No excuses needed."
-  },
-  "hidden_true_nurse_7_ins3": {
-    "name": "{name}",
-    "text": "*The person who needed excuses. — The title of 'teacher' was both her excuse and her wall. That wall disappeared today.*"
-  },
-  "hidden_good_nurse_2_ins": {
-    "name": "{name}",
-    "text": "Medical concern?"
-  },
-  "hidden_good_nurse_2_ins2": {
-    "name": "School Nurse",
-    "text": "*Pausing briefly* \"...Yes. Medical concern.\" *Quietly* \"This time, for real."
-  },
-  "hidden_good_nurse_2_ins3": {
-    "name": "{name}",
-    "text": "*'This time, for real.' — Meaning all the other times, it wasn't.*"
-  },
-  "hidden_good_nurse_3_ins": {
-    "name": "{name}",
-    "text": "*That heart — this time it's definitely not medical concern.*"
-  },
-  "good_1_seo_ins": {
-    "name": "{name}",
-    "text": "*A cherry blossom petal lands on Seoyeon's hair. I'm debating whether to brush it off — when Seoyeon tilts her head first.*"
-  },
-  "good_1_seo_ins2": {
-    "name": "{name}",
-    "text": "*She pretends to be perfect, but I wasn't perfect either.*"
-  },
-  "good_1_seo_ins3": {
-    "name": "{name}",
-    "text": "*The cherry blossoms will bloom again next year. We walked side by side.*"
-  },
-  "good_1_seo_ins4": {
-    "name": "{name}",
-    "text": "*The rooftop. Yuna is leaning against the railing. The wind blows through her hair.*"
-  },
-  "good_1_yuna_b_ins": {
-    "name": "{name}",
-    "text": "*She was chasing the shadow of someone who disappeared.*"
-  },
-  "good_4_yuna_ins": {
-    "name": "{name}",
-    "text": "*In front of the school gate. Dain is tossing a volleyball while she waits.*"
-  },
-  "bitter_seo_3_ins": {
-    "name": "{name}",
-    "text": "*Dain throws the volleyball. I catch it. — That's how this person makes peace.*"
-  },
-  "bitter_seo_3_ins2": {
-    "name": "{name}",
-    "text": "*She ran even when her knees hurt.*"
-  },
-  "bitter_seo_2_ins": {
-    "name": "{name}",
-    "text": "*Seoyeon at the cafe. Her gaze behind the glasses is dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
-  },
-  "bitter_dain_3_ins": {
-    "name": "{name}",
-    "text": "*I walked out past the school gate. It's raining. — No umbrella. Cherry blossoms stick to the wet ground at my feet.*"
-  },
-  "bitter_epilogue_2_ins": {
-    "name": "{name}",
-    "text": "*I found the courage. I said it. — But what came back was silence, head bowed.*"
-  },
-  "bitter_epilogue_2_ins2": {
-    "name": "{name}",
-    "text": "*\"...Thank you. Really. But I'm still — I guess five days was too short.\"*"
-  },
-  "bitter_epilogue_2_ins3": {
-    "name": "{name}",
-    "text": "*It wasn't rejection. It was timing. — The result of five days where I didn't get close enough.*"
-  },
-  "harem_1_ins": {
-    "name": "{name}",
-    "text": "*Yuna lowered her head. For a long time. When she looked up, her eyes were dry but smiling. \"...Idiot.\" That one word held two sentences' worth of emotion.*"
-  },
-  "alone_2_ins": {
-    "name": "{name}",
-    "text": "*Cherry blossoms fall outside the window. The same ones that brushed my nose five days ago are now scattering in the wind.*"
-  }
+    "ending_start": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_affinity_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "{name}",
+        "text": "*Seoyeon's rooftop. She stands among the plants she grew herself.*"
+    },
+    "perfect_seo_2": {
+        "name": "{name}",
+        "text": "*Tears running behind her glasses. — A look I've never seen on Seoyeon before.*"
+    },
+    "perfect_seo_3": {
+        "name": "Seoyeon",
+        "text": "...This face — I'll only show it to you."
+    },
+    "perfect_seo_4": {
+        "name": "Seoyeon",
+        "text": "*The rooftop breeze blows.* Even after graduation, I'll come here. These plants only grow when you're around."
+    },
+    "perfect_seo_5": {
+        "name": "{name}",
+        "text": "*Seoyeon reaches out. Not a pinky finger. Her whole hand.*"
+    },
+    "perfect_yuna_1": {
+        "name": "{name}",
+        "text": "*The library annex, the secret attic. Yuna hands over a short story.*"
+    },
+    "perfect_yuna_2": {
+        "name": "{name}",
+        "text": "*The title is the protagonist's name.*"
+    },
+    "perfect_yuna_3": {
+        "name": "Yuna",
+        "text": "...Tell me what you think after you finish reading. That's my answer."
+    },
+    "perfect_yuna_4": {
+        "name": "{name}",
+        "text": "*The last line of the story: 'There was someone who never disappeared. Because of that person, I decided not to disappear either.'*"
+    },
+    "perfect_yuna_5": {
+        "name": "{name}",
+        "text": "*Yuna held on. Without a word. Moonlight poured through the broken windows — tattooed arms wrapped around my waist, silver hair resting on my shoulder. For the first time, Yuna's quiet breathing filled the hideout.*"
+    },
+    "perfect_dain_1": {
+        "name": "{name}",
+        "text": "*The gym. Dain fires off her last serve. Unwrapping her bandages.*"
+    },
+    "perfect_dain_2": {
+        "name": "Dain",
+        "text": "This is the last toss. — But it's also a beginning."
+    },
+    "perfect_dain_3": {
+        "name": "Dain",
+        "text": "Am I a decent person off the court too?"
+    },
+    "perfect_dain_4": {
+        "name": "{name}",
+        "text": "On the court and off it."
+    },
+    "perfect_dain_5": {
+        "name": "{name}",
+        "text": "*Dain leaped. I wasn't ready. The volleyball rolled away across the floor — and in the sunset gym, only two shadows remained.*"
+    },
+    "perfect_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
+    },
+    "perfect_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*Every choice pointed toward one person. It wasn't five days — each day was everything.*"
+    },
+    "perfect_epilogue_2_seo": {
+        "name": "{name}",
+        "text": "*University entrance ceremony day. A message on my phone. 'Watered the plant today. — But come home soon.'*"
+    },
+    "perfect_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*Yuna's debut novel was published. The dedication: 'To the third star.'*"
+    },
+    "perfect_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*Dain became a sports commentator. She smiles in front of the camera. But this time it's a real smile.*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "{name}",
+        "text": "*Seoyeon has changed. She knows it's okay not to be perfect. The days of smiling without checking the mirror have grown.*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*Yuna still doesn't talk much. But her sentences got longer. Only with me.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*Sometimes she says her knee hurts. Every time, I just sit beside her and say nothing. That's how we do it.*"
+    },
+    "perfect_epilogue_4_seo": {
+        "name": "System",
+        "text": "─── PERFECT END (Seoyeon) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "System",
+        "text": "─── PERFECT END (Yuna) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "System",
+        "text": "─── PERFECT END (Dain) ───"
+    },
+    "bitter_seo_1": {
+        "name": "{name}",
+        "text": "*I confessed. It was accepted. — But that was the end of it. I walked past the school.*"
+    },
+    "bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "...I thought we'd work out. I guess we were both a step short."
+    },
+    "bitter_seo_3": {
+        "name": "{name}",
+        "text": "*I left the cafe. It's raining. Seoyeon's gaze behind her glasses was dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
+    },
+    "bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*I confessed. It was accepted. — But that was the end of it. I walked past the school.*"
+    },
+    "bitter_yuna_2": {
+        "name": "Yuna",
+        "text": "...Sometimes I think of you. When I smell the library. I should have said more back then."
+    },
+    "bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*I walked out the school gate. It's raining. — Yuna's last note, tucked in the mailbox. Short. As always. But this time it's not brevity. There's simply nothing left to write.*"
+    },
+    "bitter_dain_1": {
+        "name": "{name}",
+        "text": "*I confessed. It was accepted. — But that was the end of it. I walked past the school.*"
+    },
+    "bitter_dain_2": {
+        "name": "Dain",
+        "text": "It was fun, really! ...But I think fun was all it was. That's kind of sad."
+    },
+    "bitter_dain_3": {
+        "name": "{name}",
+        "text": "*I left the gym. It's raining. — The exclamation marks came back, but the last sentence had none. When Dain ends with a period, it means there's no energy left to share.*"
+    },
+    "bitter_epilogue_1": {
+        "name": "{name}",
+        "text": "*After graduation. Contact grew sparse. Once a month became once every two months, leaving messages on read became the norm, and one day — when I tried to send something and drew a blank on what to say — I knew it was over.*"
+    },
+    "bitter_epilogue_2": {
+        "name": "{name}",
+        "text": "*The record of five days remains. It doesn't hurt. It just — wasn't enough. For either of us.*"
+    },
+    "bitter_epilogue_3": {
+        "name": "System",
+        "text": "─── BITTERSWEET END ───"
+    },
+    "true_seo_1": {
+        "name": "{name}",
+        "text": "*Seoyeon’s room. Her parents are out. The room is tidy — too tidy. A room without emotion.*"
+    },
+    "true_seo_2": {
+        "name": "{name}",
+        "text": "*— Except for one thing. On the desk, a row of plants Seoyeon grew herself.*"
+    },
+    "true_seo_3": {
+        "name": "Seoyeon",
+        "text": "I feel like I don’t have to be perfect in front of you."
+    },
+    "true_seo_4": {
+        "name": "{name}",
+        "text": "You never had to be perfect."
+    },
+    "true_seo_5": {
+        "name": "Seoyeon",
+        "text": "...I know. But it took five days to believe that."
+    },
+    "true_seo_6": {
+        "name": "{name}",
+        "text": "*Seoyeon smiles. Her lips curve on their own.*"
+    },
+    "true_seo_7": {
+        "name": "Seoyeon",
+        "text": "Promise me. — Stay by my side."
+    },
+    "true_seo_8": {
+        "name": "{name}",
+        "text": "*We linked pinkies. Day 1’s habit, Day 4’s promise, and now. — Same finger, third meaning.*"
+    },
+    "true_yuna_1": {
+        "name": "{name}",
+        "text": "*The library annex. Deeper than the secret reading spot — an attic. A space I didn’t even know existed.*"
+    },
+    "true_yuna_2": {
+        "name": "Yuna",
+        "text": "I was the only one who knew about this place."
+    },
+    "true_yuna_3": {
+        "name": "{name}",
+        "text": "*Yuna opens the small window. Stars are visible.*"
+    },
+    "true_yuna_4": {
+        "name": "Yuna",
+        "text": "Now you do too."
+    },
+    "true_yuna_5": {
+        "name": "{name}",
+        "text": "The third star?"
+    },
+    "true_yuna_6": {
+        "name": "Yuna",
+        "text": "...You remembered."
+    },
+    "true_yuna_7": {
+        "name": "{name}",
+        "text": "*Day 2’s riddle. The third star. — Proof that Yuna had been watching me from the very beginning.*"
+    },
+    "true_dain_1": {
+        "name": "{name}",
+        "text": "*The gym. The same emergency lights as yesterday. Lying side by side on the mat.*"
+    },
+    "true_dain_2": {
+        "name": "{name}",
+        "text": "*Dain takes {name}’s hand — pulls it over and presses it against her chest. Without a word.*"
+    },
+    "true_dain_3": {
+        "name": "{name}",
+        "text": "*The heartbeat under my fingertips is vivid.*"
+    },
+    "true_dain_4": {
+        "name": "{name}",
+        "text": "*The heartbeat under my fingertips is vivid.*"
+    },
+    "true_dain_5": {
+        "name": "{name}",
+        "text": "...It’s fast."
+    },
+    "true_dain_6": {
+        "name": "Dain",
+        "text": "*half-covering her face with the volleyball* Why are you staring... That’s not fair."
+    },
+    "true_dain_7": {
+        "name": "{name}",
+        "text": "I wasn’t looking."
+    },
+    "true_dain_8": {
+        "name": "Dain",
+        "text": "You totally were!! ...But you can keep looking."
+    },
+    "true_seo_bridge": {
+        "name": "{name}",
+        "text": "*Seoyeon's promise still lingers at my fingertips.*"
+    },
+    "true_yuna_bridge": {
+        "name": "{name}",
+        "text": "*Yuna's stars are still here, right in front of me.*"
+    },
+    "true_dain_bridge": {
+        "name": "{name}",
+        "text": "*Dain's laughter still lingers in my ears.*"
+    },
+    "true_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*It was five days.*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*It was five days.*"
+    },
+    "true_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*It was five days.*"
+    },
+    "true_epilogue_2": {
+        "name": "{name}",
+        "text": "*The uniform was stiff, the cherry blossoms made me sneeze, and I had no idea what to do in front of the school gate.*"
+    },
+    "true_epilogue_3": {
+        "name": "{name}",
+        "text": "*But looking back — I think it was already decided the moment our eyes first met. It just took five days to admit it.*"
+    },
+    "true_epilogue_4_seo": {
+        "name": "{name}",
+        "text": "*Her family hasn't gotten better. Her mother's calls are still cold, and the rehearsed smiles haven't stopped. — But now there's someone she can show her unguarded face to. That's enough.*"
+    },
+    "true_epilogue_4_yuna": {
+        "name": "{name}",
+        "text": "*The person who left hasn't come back. The senior's number is still gone, and the corner seat in the library is still empty. — But now there's someone she can speak to with her voice, not just notes. Not anymore.*"
+    },
+    "true_epilogue_4_dain": {
+        "name": "{name}",
+        "text": "*The knee hasn't healed. She still wraps the bandage every morning, and the alarm memo still has two exclamation marks. — But now there's someone who'll listen when her sentences end with a period. Not anymore.*"
+    },
+    "true_epilogue_7": {
+        "name": "System",
+        "text": "─── TRUE LOVE END ───"
+    },
+    "day5_ending_good": {
+        "name": "{name}",
+        "text": "*My heart wavered, and I made mistakes.*"
+    },
+    "good_1": {
+        "name": "{name}",
+        "text": "*To someone, it might have seemed like I gave hope only to take it away. I’m sorry.*"
+    },
+    "good_1b": {
+        "name": "{name}",
+        "text": "*A voice comes from ahead.*"
+    },
+    "good_1c": {
+        "name": "{name}",
+        "text": "*She took a step closer.*"
+    },
+    "good_1_seo": {
+        "name": "Seoyeon",
+        "text": "Looking at someone else — I’ll make you pay for that the rest of your life. — With interest."
+    },
+    "good_1_yuna": {
+        "name": "Yuna",
+        "text": "...You really are clueless. But since you came back, I can let it go."
+    },
+    "good_1_dain": {
+        "name": "Dain",
+        "text": "Hey, I was seriously angry, you know? ...But you came to me in the end. That’s enough."
+    },
+    "good_2_seo": {
+        "name": "{name}",
+        "text": "*Walking side by side. Cherry blossoms scatter beneath the streetlights. A petal lands on Seoyeon’s hair.*"
+    },
+    "good_3_seo": {
+        "name": "{name}",
+        "text": "*Seoyeon pretends to be perfect — but I wasn’t perfect either. Maybe that’s why we fit.*"
+    },
+    "good_4_seo": {
+        "name": "{name}",
+        "text": "*There's time to fill what's missing. The cherry blossoms will bloom again next year. We walked together.*"
+    },
+    "good_5_seo": {
+        "name": "{name}",
+        "text": "*Even when the cherry blossom path ends, it’s okay. The story isn’t over yet.*"
+    },
+    "good_2_yuna": {
+        "name": "{name}",
+        "text": "*We climbed up to the rooftop. Yuna is already leaning against the railing. The night skyline sprawls beneath our feet.*"
+    },
+    "good_3_yuna": {
+        "name": "{name}",
+        "text": "*Yuna was chasing the shadow of someone who disappeared. I know now — I’m not that shadow.*"
+    },
+    "good_4_yuna": {
+        "name": "{name}",
+        "text": "*On the rooftop. I want to be remembered as myself, not as a stand-in. Even if it takes time.*"
+    },
+    "good_5_yuna": {
+        "name": "{name}",
+        "text": "*A single star is visible. Imperfect, and that’s okay. The story isn’t over yet.*"
+    },
+    "good_2_dain": {
+        "name": "{name}",
+        "text": "*Standing side by side in front of the school gate. The sunset is fading. Dain holds a volleyball in one hand.*"
+    },
+    "good_3_dain": {
+        "name": "{name}",
+        "text": "*Dain kept running even when her knees hurt. I can — keep running a little longer too.*"
+    },
+    "good_4_dain": {
+        "name": "{name}",
+        "text": "*In front of the school. The last serve hasn't come over yet. The match isn't over.*"
+    },
+    "good_5_dain": {
+        "name": "{name}",
+        "text": "*The sun sets beyond the school gate. Imperfect, and that’s okay. The story isn’t over yet.*"
+    },
+    "good_5_cg_seo": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_yuna": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_dain": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "day5_ending_mayhem": {
+        "name": "{name}",
+        "text": "*I liked all three of them. Genuinely. — And that’s why I couldn’t choose anyone.*"
+    },
+    "mayhem_1": {
+        "name": "{name}",
+        "text": "*Seoyeon brushed past me in the hallway. She didn’t turn her head. That 0.5 seconds — this time it was a blade aimed at me.*"
+    },
+    "mayhem_2": {
+        "name": "{name}",
+        "text": "*Yuna’s seat was empty. A single note on the desk. ‘It was fun.’ The period was the end.*"
+    },
+    "mayhem_3": {
+        "name": "{name}",
+        "text": "*Dain was smiling. Bright as always. — But the exclamation marks were gone. Take care. The first time I ever heard Dain end a sentence with a period was, of all things, a farewell.*"
+    },
+    "mayhem_4": {
+        "name": "{name}",
+        "text": "*I watched all three walk away. None of them looked back. — That was the answer.*"
+    },
+    "mayhem_5": {
+        "name": "{name}",
+        "text": "*Spring is ending. The cherry blossoms are falling. No one is by my side.*"
+    },
+    "mayhem_6": {
+        "name": "{name}",
+        "text": "*I'm standing in front of the school gate. Cherry blossoms are falling. No one picks them up.*"
+    },
+    "mayhem_7": {
+        "name": "System",
+        "text": "─── MAYHEM END ───"
+    },
+    "day5_ending_harem": {
+        "name": "{name}",
+        "text": "*I like all of you. — When those words left my mouth, all three faces froze at once.*"
+    },
+    "harem_1": {
+        "name": "{name}",
+        "text": "*Seoyeon smiled first. ...Fine. At least you’re honest. It wasn’t my imagination that I heard teeth grinding behind that smile.*"
+    },
+    "harem_2": {
+        "name": "Yuna",
+        "text": "...Idiot."
+    },
+    "harem_3": {
+        "name": "{name}",
+        "text": "*Dain punched my shoulder with her fist. It hurt. Are you insane? ...But I fell for you knowing you’re like that, so that’s on me. Hmph.*"
+    },
+    "harem_4": {
+        "name": "{name}",
+        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. In between, the lies pile up to avoid getting caught. I thought it would be sweet — but it’s strangling me.*"
+    },
+    "harem_5": {
+        "name": "{name}",
+        "text": "*This balance will break. Someone will cry first. When that happens, this story stops being a romance — and becomes a catastrophe.*"
+    },
+    "harem_6": {
+        "name": "{name}",
+        "text": "*And yet, today all three are smiling. Even knowing tomorrow’s ruin — I can’t let go of today.*"
+    },
+    "harem_7": {
+        "name": "{name}",
+        "text": "*It's only a matter of time before it breaks. — When it does, who will be hurt the most?*"
+    },
+    "harem_8": {
+        "name": "System",
+        "text": "─── HAREM END ───"
+    },
+    "day5_ending_confess_fail": {
+        "name": "{name}",
+        "text": "*I told them. I said it. — But what came back was silence.*"
+    },
+    "confess_fail_1": {
+        "name": "{name}",
+        "text": "*I found the courage. This time, I didn’t run. — That much is certain.*"
+    },
+    "confess_fail_2": {
+        "name": "{name}",
+        "text": "*But confession alone wasn’t enough. What I’d built over five days — was too thin to support those three words.*"
+    },
+    "confess_fail_3": {
+        "name": "{name}",
+        "text": "*At my old school, I regretted not speaking up. At this school, I spoke up — and a different kind of emptiness remained.*"
+    },
+    "confess_fail_4": {
+        "name": "{name}",
+        "text": "*I walk out the school gate. My phone is quiet. — But I didn’t run this time. That alone is different.*"
+    },
+    "confess_fail_5": {
+        "name": "System",
+        "text": "--- CONFESS FAIL END ---"
+    },
+    "day5_ending_friend": {
+        "name": "{name}",
+        "text": "*I couldn’t convey my feelings. No — I chose not to.*"
+    },
+    "friend_1": {
+        "name": "{name}",
+        "text": "*In the end, I couldn't say it.*"
+    },
+    "friend_2": {
+        "name": "{name}",
+        "text": "*I don't know if it's regret or a choice. I only know — five days ended with those three words stuck in my throat.*"
+    },
+    "friend_3": {
+        "name": "{name}",
+        "text": "*I was like this at my old school too. Here I am, doing it again.*"
+    },
+    "friend_4": {
+        "name": "{name}",
+        "text": "*Walking out the school gate, there's a message on my phone. 'Thanks for today lol' — The tone of a friend. The perfectly friendly tone.*"
+    },
+    "friend_5": {
+        "name": "{name}",
+        "text": "*I typed back. ‘Thanks too.’ — After hitting send, I stare at the screen. Two lines of conversation. I’m smiling, but my chest feels strangely cold.*"
+    },
+    "friend_6": {
+        "name": "{name}",
+        "text": "*We’ll keep exchanging messages like this. Adding smiley emojis, grabbing a meal now and then, asking ‘anything new?’ and answering ‘not really.’ — Close enough to touch, yet never touching. That’s what being friends is.*"
+    },
+    "friend_7": {
+        "name": "{name}",
+        "text": "*...I couldn’t say it at this school either.*"
+    },
+    "friend_8": {
+        "name": "{name}",
+        "text": "*Graduation day. Scrolling through my phone gallery. Where Sojeong’s photo used to be, there’s now a group photo of all of us — with her in it.*"
+    },
+    "friend_9": {
+        "name": "{name}",
+        "text": "*I’m standing next to her again, wearing the perfect mask called ‘friend,’ smiling.*"
+    },
+    "friend_10": {
+        "name": "{name}",
+        "text": "*I open the notes app. ‘I need to tell you something.’ — The cursor blinks. Just like three years ago. I hold down backspace and erase the words.*"
+    },
+    "friend_11": {
+        "name": "{name}",
+        "text": "*Even after transferring, even after running away — in the end, nothing about me changed.*"
+    },
+    "friend_12": {
+        "name": "System",
+        "text": "─── FRIEND END ───"
+    },
+    "day5_ending_alone": {
+        "name": "{name}",
+        "text": "*I walk out the school gate. My phone buzzes. — It’s nobody. Low battery warning.*"
+    },
+    "alone_1": {
+        "name": "{name}",
+        "text": "*Five days. I reached out to people, failed to reach others, and in the end couldn’t choose anyone.*"
+    },
+    "alone_2": {
+        "name": "{name}",
+        "text": "*At my old school, I regretted not speaking up. At this school — do I regret not finding anyone? No. I found them but couldn’t pick. No — I didn’t have the courage to pick.*"
+    },
+    "alone_3": {
+        "name": "{name}",
+        "text": "*The cherry blossoms are now scattering, carried off by the wind.*"
+    },
+    "alone_4": {
+        "name": "{name}",
+        "text": "*...Being alone isn’t a punishment. It’s just — quiet. Much more than I expected.*"
+    },
+    "alone_5": {
+        "name": "System",
+        "text": "─── ALONE END ───"
+    },
+    "day5_credits": {
+        "name": "",
+        "text": ""
+    },
+    "day5_ending_restart": {
+        "name": "System",
+        "text": "",
+        "choices": [
+            "Start over from the beginning"
+        ]
+    },
+    "hidden_perfect_homeroom_check": {},
+    "hidden_perfect_homeroom_1": {
+        "name": "{name}",
+        "text": "*Graduation is over. I'm alone in the empty classroom. The chalk marks on the blackboard haven't been erased yet.*"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "name": "{name}",
+        "text": "*The door opens. — It's her. Beige cardigan. Holding a document envelope.*"
+    },
+    "hidden_perfect_homeroom_2": {
+        "name": "Homeroom Teacher",
+        "text": "Congratulations on graduating. ...The paperwork's all done. My job as your teacher is finished now."
+    },
+    "hidden_perfect_homeroom_2b": {
+        "name": "{name}",
+        "text": "Is the manuscript still in your desk drawer?"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "name": "Homeroom Teacher",
+        "text": "*She pauses. About to say something more, then closes her mouth.* ...Take care."
+    },
+    "hidden_perfect_homeroom_3": {
+        "name": "{name}",
+        "text": "*Three years later.*"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "name": "{name}",
+        "text": "*A cafe terrace. Cherry blossoms drifting. Walking in — I spot familiar brown wavy hair by the window. A linen jacket instead of a cardigan.*"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "name": "Homeroom Teacher",
+        "text": "...Oh. I'm surprised too. *She sets down her coffee cup.* Want to sit?"
+    },
+    "hidden_perfect_homeroom_3e": {
+        "name": "Homeroom Teacher",
+        "text": "*She smirks.* Quit teaching. Just writing now. Part-time at a cafe too. — What about you?"
+    },
+    "hidden_perfect_homeroom_3f": {
+        "name": "Homeroom Teacher",
+        "text": "...Can we meet again? I come here every Thursday."
+    },
+    "hidden_perfect_homeroom_3g": {
+        "name": "{name}",
+        "text": "*That 'next time' became the time after, and the time after that. Same seat every Thursday. When the barista asked 'Couple's table?', neither of us could answer. One Thursday. We walked the streets instead of the cafe. Side by side. Both pretending not to notice our shadows overlapping.*"
+    },
+    "hidden_perfect_homeroom_4b": {
+        "name": "Homeroom Teacher",
+        "text": "*She stops suddenly at the bookstore.* ...I finished my manuscript. Want to read it?"
+    },
+    "hidden_perfect_homeroom_4c": {
+        "name": "{name}",
+        "text": "*I read it at home. All night. — The way the main character spoke felt familiar. Too familiar.*"
+    },
+    "hidden_perfect_homeroom_4d": {
+        "name": "Homeroom Teacher",
+        "text": "*Next Thursday, at the café. She stirred her coffee longer than usual.* ...How was it?"
+    },
+    "hidden_perfect_homeroom_4e": {
+        "name": "{name}",
+        "text": "*Next Thursday. I didn't wait outside the cafe. — I waited outside the flower shop.*"
+    },
+    "hidden_perfect_homeroom_4f": {
+        "name": "{name}",
+        "text": "*I handed her the bouquet.* This isn't professional interest. Not on my end."
+    },
+    "hidden_perfect_homeroom_4g": {
+        "name": "Homeroom Teacher",
+        "text": "*She takes the bouquet and stares at it for a long time. Her hands tremble. — She smiles.* ...Me neither.\n\n─── Homeroom Teacher PERFECT END ───"
+    },
+    "hidden_perfect_homeroom_5": {},
+    "hidden_perfect_nurse_check": {},
+    "hidden_perfect_nurse_1": {
+        "name": "{name}",
+        "text": "*Graduation is over. I opened the nurse's office door. Empty. A single bandage on the desk. 'Come to my place. Address on the back.' — No heart this time.*"
+    },
+    "hidden_perfect_nurse_2": {
+        "name": "School Nurse",
+        "text": "*The person who opened the door isn't in a white coat — cardigan, barefoot.* ...You came. I honestly didn't think you would."
+    },
+    "hidden_perfect_nurse_3": {
+        "name": "{name}",
+        "text": "*Side by side on the living room couch. The sun is setting outside the window. Instead of a bandage, fingers are touching.*"
+    },
+    "hidden_perfect_nurse_3b": {
+        "name": "School Nurse",
+        "text": "*She leans against me.* ...I don't need excuses anymore. Not a patient, not a student."
+    },
+    "hidden_perfect_nurse_4": {
+        "name": "School Nurse",
+        "text": "*Her hand reaches up and grabs my tie. Not playful. Her eyes are serious.* ...I'm not letting you leave tonight."
+    },
+    "hidden_perfect_nurse_4b": {
+        "name": "{name}",
+        "text": "*Morning. Light seeping through the curtains. Breathing beside me. — The person who used to take three minutes to put on a bandage is now asleep holding my hand.*"
+    },
+    "hidden_perfect_nurse_5": {
+        "name": "School Nurse",
+        "text": "*She opens her eyes. Smiles.* ...Does it hurt anywhere? Want me to take a look? *— Not a joke. Not this time.*"
+    },
+    "hidden_perfect_nurse_5b": {
+        "name": "{name}",
+        "text": "*Just — someone I want to be with. Right here.\n\n─── School Nurse PERFECT END ───*"
+    },
+    "hidden_true_homeroom_1": {
+        "name": "{name}",
+        "text": "*Graduation day. — Time has passed. The uniform isn't stiff anymore.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "{name}",
+        "text": "*The empty classroom. The one where she wrote. — The homeroom teacher is waiting. In casual clothes.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "Homeroom Teacher",
+        "text": "Congratulations on graduating."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "Homeroom Teacher",
+        "text": "...That. You didn't say 'teacher.' First time."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "Homeroom Teacher",
+        "text": "I finished the manuscript. — I could write it because you were my first reader. I asked for one line and you came back with three pages."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "Homeroom Teacher",
+        "text": "...Just one thing. ...Let's go get coffee. Real coffee this time, not juice."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "{name}",
+        "text": "I'd like that."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "Homeroom Teacher",
+        "text": "...I really shouldn't be doing this.\n\n─── Homeroom Teacher TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "{name}",
+        "text": "*Graduation day. Walking out the school gate — there's a bandage stuck to the nurse's office door.*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "{name}",
+        "text": "*'Congrats on graduating. I'll wait at the cafe.' — Peeling off the bandage, there's a little map inside. The school nurse is sitting at the cafe. Not in her white coat — pink sweater and jeans. Still wearing her glasses, but the vibe is different. Not the school nurse — just a woman at a café.*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "School Nurse",
+        "text": "Congrats on graduating. ...Starting today, you can drop the formalities."
+    },
+    "hidden_true_nurse_4": {
+        "name": "School Nurse",
+        "text": "You know, on Day 1 when you came to the nurse's office. I put my hand on your forehead and said 'I just wanted to touch you.' That was a joke."
+    },
+    "hidden_true_nurse_5": {
+        "name": "School Nurse",
+        "text": "...But right now it's not a joke."
+    },
+    "hidden_true_nurse_6": {
+        "name": "School Nurse",
+        "text": "A teacher shouldn't catch feelings for a student. I know that. — So I kept wrapping everything in jokes. But you saw through them every time."
+    },
+    "hidden_true_nurse_7": {
+        "name": "School Nurse",
+        "text": "...You're the first person to see through me."
+    },
+    "hidden_true_nurse_8": {
+        "name": "School Nurse",
+        "text": "Now we can meet without bandages. — No excuses needed.\n\n─── School Nurse TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "Homeroom Teacher",
+        "text": "*She was waiting in front of the school.* Congratulations on graduating."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "{name}",
+        "text": "*During the handshake — something slips into my palm. A folded note.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "{name}",
+        "text": "*Leaving the school. 'When I finish the manuscript, I'll reach out. — To my first reader.' There's a phone number.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "{name}",
+        "text": "*Her hand held on about three seconds longer than a handshake should. Too long for a handshake, too short for a confession.\n\n─── Homeroom Teacher GOOD END ───*"
+    },
+    "hidden_good_nurse_1": {
+        "name": "School Nurse",
+        "text": "Oh, a graduate. A patient actually coming to say goodbye. That's actually sweet."
+    },
+    "hidden_good_nurse_2": {
+        "name": "School Nurse",
+        "text": "Vitamins. — Take care of yourself in college. ...Medical concern. This time, for real."
+    },
+    "hidden_good_nurse_3": {
+        "name": "{name}",
+        "text": "*Leaving the nurse's office. Inside the cap, tiny writing. 'Call me if you're sick. Call me even if you're not. — ♥'*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "{name}",
+        "text": "*That heart — this time it's definitely not medical concern.\n\n─── School Nurse GOOD END ───*"
+    },
+    "perfect_dain_2b": {
+        "name": "{name}",
+        "text": "*No exclamation mark. For the first time. — Dain is talking about a beginning that isn't volleyball.*"
+    },
+    "perfect_dain_3b": {
+        "name": "{name}",
+        "text": "*Dain sets the volleyball down on the court. Turns around and smiles. A smile without an exclamation mark.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "System",
+        "text": "*Epilogue — One Year Later*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "System",
+        "text": "*Epilogue — One Year Later*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "System",
+        "text": "*Epilogue — One Year Later*"
+    },
+    "true_seo_6b": {
+        "name": "Seoyeon",
+        "text": "I always had to smile. But in front of you, I just want to be myself."
+    },
+    "true_seo_7b": {
+        "name": "{name}",
+        "text": "*Seoyeon holds out her pinky finger.*"
+    },
+    "true_yuna_6b": {
+        "name": "Yuna",
+        "text": "Don't go. Stay here tonight."
+    },
+    "true_dain_2b": {
+        "name": "{name}",
+        "text": "*Fast. A speed that needs no words.*"
+    },
+    "true_dain_8b": {
+        "name": "{name}",
+        "text": "*The exclamation mark is back. — But this time, it's a real one.*"
+    },
+    "good_1_yuna_b": {
+        "name": "{name}",
+        "text": "*Yuna hands over a note. Don't get lost next time. — Short. And warm.*"
+    },
+    "good_epilogue_1": {
+        "name": "{name}",
+        "text": "*But it was that wavering that showed me what I truly felt.*"
+    },
+    "good_epilogue_2": {
+        "name": "{name}",
+        "text": "*I wasn't lost. It was just the process of finding you.*"
+    },
+    "good_epilogue_3": {
+        "name": "{name}",
+        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*But it was that wavering that showed me what I truly felt.*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*I wasn't lost. It was just the process of finding you.*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*But it was that wavering that showed me what I truly felt.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*I wasn't lost. It was just the process of finding you.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "{name}",
+        "text": ""
+    },
+    "hidden_perfect_homeroom_ep1": {
+        "name": "{name}",
+        "text": "*We didn't leave the café that day. Not until sunset. — All the words we couldn't say in that classroom four years ago came pouring out.*"
+    },
+    "hidden_perfect_homeroom_ep2": {
+        "name": "{name}",
+        "text": "*Thursday's café became our café. The staff stopped asking 'couple's seat?' They just show us to our table.*"
+    },
+    "hidden_perfect_homeroom_ep3": {
+        "name": "{name}",
+        "text": "*The manuscript was published. No name in the dedication. Just one line: 'Three pages of feedback from the teacher's desk drawer — that's where this story began.'*"
+    },
+    "hidden_perfect_homeroom_ep4": {
+        "name": "{name}",
+        "text": "*Sometimes she says 'I used to be your teacher' and I reply 'I used to be your student.' We both laugh. — Because now we're just two people.*"
+    },
+    "hidden_perfect_nurse_ep1": {
+        "name": "{name}",
+        "text": "*Morning. A bandage stuck to the kitchen table. Today's menu written on it. — Her version of a sticky note.*"
+    },
+    "hidden_perfect_nurse_ep2": {
+        "name": "{name}",
+        "text": "*She went back to the university hospital. This time, the patients call her by name. — Dr. Lee.*"
+    },
+    "hidden_perfect_nurse_ep3": {
+        "name": "{name}",
+        "text": "*The rosemary pot moved to the window. The sunny side. — Someone in an apron instead of a white coat is watering it.*"
+    },
+    "hidden_perfect_nurse_ep4": {
+        "name": "{name}",
+        "text": "*The bandages are still in the drawer. Even though there's no need. — A person who no longer needs excuses still can't let go of the habit.*"
+    },
+    "perfect_seo_1_ins": {
+        "name": "{name}",
+        "text": "*For the first time, she takes off her glasses — and she's crying.*"
+    },
+    "perfect_seo_5_ins": {
+        "name": "{name}",
+        "text": "*The rooftop breeze blows.*"
+    },
+    "true_seo_7_ins": {
+        "name": "{name}",
+        "text": "*We linked pinkies. Day 1's habit, Day 4's promise, and now. — Same finger, third meaning.*"
+    },
+    "true_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Yuna climbs the small attic ladder. There's a hatch leading up. — When it opens, a breeze rushes in.*"
+    },
+    "true_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*Above the attic was a rooftop. The library annex rooftop. — A secret passage no one knows about.*"
+    },
+    "true_yuna_2_ins3": {
+        "name": "{name}",
+        "text": "*Yuna leans against the railing. Stars are visible.*"
+    },
+    "true_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*Yuna pauses. — Smiles. A soundless smile I've never seen before.*"
+    },
+    "hidden_true_homeroom_5_ins": {
+        "name": "{name}",
+        "text": "*Graduation day. — Time has passed.*"
+    },
+    "hidden_true_homeroom_5_ins2": {
+        "name": "{name}",
+        "text": "*The uniform isn't stiff anymore. No — today is the day I take it off.*"
+    },
+    "hidden_true_homeroom_2_ins": {
+        "name": "{name}",
+        "text": "*No cardigan, no clipboard. A comfortable sweater and long skirt. — Casual clothes.*"
+    },
+    "hidden_true_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "Thank you."
+    },
+    "hidden_true_homeroom_3_ins2": {
+        "name": "Homeroom Teacher",
+        "text": "...That."
+    },
+    "hidden_true_homeroom_4_ins": {
+        "name": "{name}",
+        "text": "*It was unconscious. — The moment I graduated, the title fell away.*"
+    },
+    "hidden_true_homeroom_4_ins2": {
+        "name": "{name}",
+        "text": "*She pulls out an envelope. This time it's not brown — it's white.*"
+    },
+    "hidden_true_homeroom_4_ins3": {
+        "name": "Homeroom Teacher",
+        "text": "I finished the manuscript. — I could write it because you were my first reader."
+    },
+    "hidden_true_homeroom_4_ins4": {
+        "name": "{name}",
+        "text": "Did my review help?"
+    },
+    "hidden_true_homeroom_4_ins5": {
+        "name": "Homeroom Teacher",
+        "text": "I asked for one line and you came back with three pages. *A soft laugh* A creative writing teacher nearly crying over a student's review — that's our secret."
+    },
+    "hidden_true_homeroom_4_ins6": {
+        "name": "{name}",
+        "text": "*She looks out the window. Cherry blossoms are falling.*"
+    },
+    "hidden_true_homeroom_4_ins7": {
+        "name": "Homeroom Teacher",
+        "text": "*Turning from the window* ...Just one thing."
+    },
+    "hidden_true_homeroom_6_ins": {
+        "name": "{name}",
+        "text": "*From juice to coffee. — From student to adult. Not crossing the line — the line itself disappeared.*"
+    },
+    "hidden_true_homeroom_7_ins": {
+        "name": "{name}",
+        "text": "*She smiles. Not a dry one — the smile of someone who finished a seven-year unfinished manuscript.*"
+    },
+    "hidden_true_homeroom_7_ins2": {
+        "name": "Homeroom Teacher",
+        "text": "...I really shouldn't be doing this. *— Her voice trails off. Then she smiles.*"
+    },
+    "hidden_true_homeroom_7_ins3": {
+        "name": "{name}",
+        "text": "*One last time. Then the habit breaks. — Seven years of 'teacher' are over, and the day to call her by name has come.*"
+    },
+    "hidden_true_nurse_2_ins": {
+        "name": "{name}",
+        "text": "*Not a teacher — just a woman.*"
+    },
+    "hidden_true_nurse_2_ins2": {
+        "name": "School Nurse",
+        "text": "Congrats on graduating."
+    },
+    "hidden_true_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "Thank you."
+    },
+    "hidden_true_nurse_8_ins": {
+        "name": "School Nurse",
+        "text": "*Turning her coffee cup* The diploma takes effect faster than I thought."
+    },
+    "hidden_true_nurse_8_ins2": {
+        "name": "{name}",
+        "text": "*Graduation erases the line. — In a cafe instead of the nurse's office, with a person instead of a teacher.*"
+    },
+    "hidden_true_nurse_8_ins3": {
+        "name": "{name}",
+        "text": "*The school nurse looks at me. No playfulness.*"
+    },
+    "hidden_true_nurse_8_ins4": {
+        "name": "School Nurse",
+        "text": "You know, on Day 1, when you came to the nurse's office."
+    },
+    "hidden_true_nurse_8_ins5": {
+        "name": "{name}",
+        "text": "Because I was dizzy."
+    },
+    "hidden_true_nurse_8_ins6": {
+        "name": "School Nurse",
+        "text": "I put my hand on your forehead and said 'I just wanted to touch you.' That was a joke."
+    },
+    "hidden_true_nurse_8_ins7": {
+        "name": "{name}",
+        "text": "I know."
+    },
+    "hidden_true_nurse_5_ins": {
+        "name": "{name}",
+        "text": "*Her voice dropped a register. All playfulness completely gone. — This is her sincerity.*"
+    },
+    "hidden_true_nurse_5_ins2": {
+        "name": "School Nurse",
+        "text": "A teacher shouldn't catch feelings for a student. I knew that. — So I kept wrapping everything in jokes. Over and over."
+    },
+    "hidden_true_nurse_5_ins3": {
+        "name": "School Nurse",
+        "text": "But you saw through the sincerity behind the jokes."
+    },
+    "hidden_true_nurse_5_ins4": {
+        "name": "{name}",
+        "text": "Taking three minutes to put on a bandage isn't just being careful."
+    },
+    "hidden_true_nurse_5_ins5": {
+        "name": "{name}",
+        "text": "*The school nurse pauses. — Then smiles. Not a playful smile.*"
+    },
+    "hidden_true_nurse_7_ins": {
+        "name": "{name}",
+        "text": "*The school nurse reaches out and touches the bandage on the back of my hand. The one she put on yesterday.*"
+    },
+    "hidden_true_nurse_7_ins2": {
+        "name": "School Nurse",
+        "text": "Now we can meet without bandages. — No excuses needed."
+    },
+    "hidden_true_nurse_7_ins3": {
+        "name": "{name}",
+        "text": "*The person who needed excuses. — The title of 'teacher' was both her excuse and her wall. That wall disappeared today.*"
+    },
+    "hidden_good_nurse_2_ins": {
+        "name": "{name}",
+        "text": "Medical concern?"
+    },
+    "hidden_good_nurse_2_ins2": {
+        "name": "School Nurse",
+        "text": "*Pausing briefly* ...Yes. Medical concern. *Quietly* This time, for real."
+    },
+    "hidden_good_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "*'This time, for real.' — Meaning all the other times, it wasn't.*"
+    },
+    "hidden_good_nurse_3_ins": {
+        "name": "{name}",
+        "text": "*That heart — this time it's definitely not medical concern.*"
+    },
+    "good_1_seo_ins": {
+        "name": "{name}",
+        "text": "*A cherry blossom petal lands on Seoyeon's hair. I'm debating whether to brush it off — when Seoyeon tilts her head first.*"
+    },
+    "good_1_seo_ins2": {
+        "name": "{name}",
+        "text": "*She pretends to be perfect, but I wasn't perfect either.*"
+    },
+    "good_1_seo_ins3": {
+        "name": "{name}",
+        "text": "*The cherry blossoms will bloom again next year. We walked side by side.*"
+    },
+    "good_1_seo_ins4": {
+        "name": "{name}",
+        "text": "*The rooftop. Yuna is leaning against the railing. The wind blows through her hair.*"
+    },
+    "good_1_yuna_b_ins": {
+        "name": "{name}",
+        "text": "*She was chasing the shadow of someone who disappeared.*"
+    },
+    "good_4_yuna_ins": {
+        "name": "{name}",
+        "text": "*In front of the school gate. Dain is tossing a volleyball while she waits.*"
+    },
+    "bitter_seo_3_ins": {
+        "name": "{name}",
+        "text": "*Dain throws the volleyball. I catch it. — That's how this person makes peace.*"
+    },
+    "bitter_seo_3_ins2": {
+        "name": "{name}",
+        "text": "*She ran even when her knees hurt.*"
+    },
+    "bitter_seo_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon at the cafe. Her gaze behind the glasses is dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
+    },
+    "bitter_dain_3_ins": {
+        "name": "{name}",
+        "text": "*I walked out past the school gate. It's raining. — No umbrella. Cherry blossoms stick to the wet ground at my feet.*"
+    },
+    "bitter_epilogue_2_ins": {
+        "name": "{name}",
+        "text": "*I found the courage. I said it. — But what came back was silence, head bowed.*"
+    },
+    "bitter_epilogue_2_ins2": {
+        "name": "{name}",
+        "text": "*...Thank you. Really. But I'm still — I guess five days was too short.*"
+    },
+    "bitter_epilogue_2_ins3": {
+        "name": "{name}",
+        "text": "*It wasn't rejection. It was timing. — The result of five days where I didn't get close enough.*"
+    },
+    "harem_1_ins": {
+        "name": "{name}",
+        "text": "*Yuna lowered her head. For a long time. When she looked up, her eyes were dry but smiling. ...Idiot. That one word held two sentences' worth of emotion.*"
+    },
+    "alone_2_ins": {
+        "name": "{name}",
+        "text": "*Cherry blossoms fall outside the window. The same ones that brushed my nose five days ago are now scattering in the wind.*"
+    }
 }
