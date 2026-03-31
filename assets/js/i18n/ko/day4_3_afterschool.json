@@ -17,7 +17,7 @@
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*— 근데 이미 늦었다.*"
+        "text": ""
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -29,11 +29,11 @@
     },
     "confess_seo_yes_1": {
         "name": "{name}",
-        "text": "있잖아."
+        "text": ""
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*난간을 잡은 손에 힘이 들어간다. 입을 열었다. 소리가 안 난다.*"
+        "text": ""
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": "*말이 옥상 바람에 떠 있다. 서연이 숨을 멈춘다.*"
+        "text": ""
     },
     "confess_seo_yes_8": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*— 근데 이미 늦었다.*"
+        "text": ""
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -121,11 +121,11 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": "있잖아."
+        "text": ""
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*입을 열었다가 닫았다. 소리 없이. 두 번째 시도.*"
+        "text": ""
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": "*글자가 조용한 방 안에 적혀 있는 것 같다. 유나의 눈이 커진다.*"
+        "text": ""
     },
     "confess_yuna_yes_8": {
         "name": "{name}",
@@ -189,7 +189,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": "*— 근데 이미 늦었다.*"
+        "text": ""
     },
     "confess_dain_choice": {
         "name": "{name}",
@@ -201,11 +201,11 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": "있잖아."
+        "text": ""
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": "*공을 잡은 채로 멈췄다. 목이 타들어간다.*"
+        "text": ""
     },
     "confess_dain_yes_3": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": "*세 글자가 텅 빈 체육관에 메아리친다. Day 1에서 체육관 콜?이라고 했던 이 장소에서.*"
+        "text": ""
     },
     "confess_dain_yes_8": {
         "name": "{name}",

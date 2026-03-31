@@ -37,11 +37,11 @@
     },
     "night2_msg_dain_general": {
         "name": "다인",
-        "text": "야!! 내일 뭐 해?!"
+        "text": "야 내일 매점 갈 거지?!"
     },
     "night2_msg_dain_general_merge": {
         "name": "서연",
-        "text": "내일 점심 시간 비워둬"
+        "text": "내일 점심 옥상 열어놓을게"
     },
     "night2_msg_seo_general_alt": {
         "name": "서연",
@@ -49,19 +49,19 @@
     },
     "night2_msg_yuna_general": {
         "name": "유나",
-        "text": "...내일 도서관에 올 거야?"
+        "text": "...그 책, 다 읽었어?"
     },
     "night2_msg_generic": {
         "name": "다인",
-        "text": "야!! 내일 뭐 해?!"
+        "text": "야 내일 매점 갈 거지?!"
     },
     "night2_msg_generic_2": {
         "name": "서연",
-        "text": "내일 점심 시간 비워둬"
+        "text": "내일 점심 옥상 열어놓을게"
     },
     "night2_msg_generic_3": {
         "name": "유나",
-        "text": "...내일 도서관에 올 거야?"
+        "text": "...그 책, 다 읽었어?"
     },
     "night2_msg_7": {
         "name": "{name}",

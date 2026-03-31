@@ -118,11 +118,11 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*하교하려는데 — 뒤에서 목소리.*"
+        "text": "*교무실 앞에서 노크한다. 담임선생님이 문을 연다.*"
     },
     "after_hidden_homeroom_2": {
         "name": "담임선생님",
-        "text": "{name}. 잠깐 남아."
+        "text": "어, {name}? — 무슨 일?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
