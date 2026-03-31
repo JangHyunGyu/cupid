@@ -17,7 +17,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "서연",
-        "text": "뭐, 알고 있었어. 넌 처음부터 내 맘대로 안 됐으니까."
+        "text": "뭐, 알고 있었어. 넌 내 계획에 없는 변수였으니까."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -170,10 +170,6 @@
     "after5_farewell_dain_4_ins3": {
         "name": "{name}",
         "text": "*느낌표가 살아 있다. — 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
-    },
-    "after5_farewell_dain_4_ins4": {
-        "name": "{name}",
-        "text": "*루트가 있지만 정식 고백을 수락/거절하지 않은 경우에만 등장.*"
     },
     "after5_last_chance_2_ins": {
         "name": "{name}",

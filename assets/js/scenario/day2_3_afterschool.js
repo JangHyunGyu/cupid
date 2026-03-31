@@ -58,7 +58,7 @@ Object.assign(SCENARIO[2], {
         "sunset": true,
         "bgm": "daily2.mp3",
         "character": "assets/images/characters/dain_active.png",
-        "stats": { "Dain": { "affinity": 10 } },
+        "stats": { "Dain": { "affinity": 8 } },
         "setFlags": ["chose_dain_after2"],
         "next": "after2_dain_2"
     },
@@ -398,7 +398,7 @@ Object.assign(SCENARIO[2], {
         "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
         "affinityBranches": [
-            { "minAffinity": 40, "next": "after2_seo_neck_high" },
+            { "minAffinity": 50, "next": "after2_seo_neck_high" },
             { "minAffinity": -100, "next": "after2_seo_neck_low" }
         ]
     },
@@ -542,7 +542,7 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_normal.png",
-        "stats": { "Yuna": { "affinity": 10 } },
+        "stats": { "Yuna": { "affinity": 8 } },
         "next": "after2_yuna_2_ins"
     },
     "after2_yuna_3": {
@@ -632,7 +632,7 @@ Object.assign(SCENARIO[2], {
                 "next": "after2_yuna_everyday",
                 "stats": {
                     "Yuna": {
-                        "affinity": 10
+                        "affinity": 8
                     }
                 }
             },

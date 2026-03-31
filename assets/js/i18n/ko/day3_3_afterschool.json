@@ -59,7 +59,7 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "서연",
-        "text": "인기 많네."
+        "text": "학생회 일이 바빠서. 점심은 따로 먹을게."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -193,6 +193,10 @@
         "name": "유나",
         "text": "...그거."
     },
+    "after3_yuna_8b": {
+        "name": "유나",
+        "text": "*빠르게 다가와 노트를 뺏으며* ...허락 안 했어."
+    },
     "after3_yuna_9": {
         "name": "{name}",
         "text": "*귀. 빨갛다. — 유나가 빨개지는 건 처음 본다.*"
@@ -323,11 +327,11 @@
     },
     "after3_confront_5": {
         "name": "서연",
-        "text": "네가 다른 애들한테 웃어줄 때, 솔직히... 기분 진짜 비참했거든."
+        "text": "네가 다른 애들한테 웃어줄 때, 내 안에서 뭔가가 무너지는 기분이었거든."
     },
     "after3_confront_6": {
         "name": "서연",
-        "text": "솔직히 말해. 우리 모두한테 주말을 약속한 거야?"
+        "text": "점심때 그 난장판... 대체 무슨 생각으로 우리 셋 모두한테 약속을 잡은 거야?"
     },
     "after3_confront_choice": {
         "name": "{name}",

@@ -225,7 +225,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "담임선생님",
-        "text": "*잠깐 멈칫한다.* ...나? 업무 자료. — 뭘 기대한 거야?"
+        "text": "*잠깐 멈칫하며* ...여러 가지. 주로 — 소설."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "담임선생님",
@@ -265,11 +265,11 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "담임선생님",
-        "text": "*표정이 살짝 굳는다.* ...표정 관리도 업무야."
+        "text": "*커피잔으로 입을 가리며* ...표정 관리 실패인가. 됐다, 가 봐."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "담임선생님",
-        "text": "당연한 거야. 가 봐."
+        "text": "뭐, 선생님이 학생 걱정하는 건 당연한 거니까. 업무야, 업무."
     },
     "hidden_homeroom_d2_11": {
         "name": "담임선생님",

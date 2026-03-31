@@ -409,7 +409,7 @@ Object.assign(SCENARIO[3], {
                 "setFlags": ["accepted_dain_date"],
                 "stats": {
                     "Dain": {
-                        "affinity": 7
+                        "affinity": 5
                     }
                 }
             },
@@ -475,7 +475,7 @@ Object.assign(SCENARIO[3], {
             {
                 "next": "morning3_date_yuna_accept",
                 "setFlags": ["accepted_yuna_date"],
-                "stats": { "Yuna": { "affinity": 7 } }
+                "stats": { "Yuna": { "affinity": 5 } }
             },
             {
                 "next": "morning3_date_yuna_decline",

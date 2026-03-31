@@ -1293,6 +1293,18 @@ Object.assign(SCENARIO[4], {
         "character": null,
         "background": "assets/images/background/room_my.png",
         "night": true,
+        "next": "night_nurse_msg_3"
+    },
+    "night_nurse_msg_3": {
+        "characters": { "center": { "src": "assets/images/characters/nurse_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
+        "next": "night_nurse_msg_4"
+    },
+    "night_nurse_msg_4": {
+        "characters": { "center": { "src": "assets/images/characters/nurse_normal.png", "opacity": 0.35 } },
+        "background": "assets/images/background/room_my.png",
+        "night": true,
         "next": "day4_night_sleep"
     },
 

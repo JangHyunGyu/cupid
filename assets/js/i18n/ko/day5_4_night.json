@@ -1113,25 +1113,9 @@
     "name": "{name}",
     "text": "*벚꽃은 내년에도 핀다. 나란히 걸었다.*"
   },
-  "good_1_seo_ins4": {
-    "name": "{name}",
-    "text": "*옥상. 유나가 난간에 기대어 서 있다. 바람이 머리카락을 흩날린다.*"
-  },
   "good_1_yuna_b_ins": {
     "name": "{name}",
     "text": "*사라진 사람의 그림자를 쫓고 있었다.*"
-  },
-  "good_4_yuna_ins": {
-    "name": "{name}",
-    "text": "*학교 교문 앞. 다인이 배구공을 던지며 기다리고 있다.*"
-  },
-  "bitter_seo_3_ins": {
-    "name": "{name}",
-    "text": "*다인이 배구공을 던진다. 받았다. — 이게 이 사람의 화해 방식이다.*"
-  },
-  "bitter_seo_3_ins2": {
-    "name": "{name}",
-    "text": "*무릎이 아파도 뛰었다.*"
   },
   "bitter_seo_2_ins": {
     "name": "{name}",
@@ -1140,18 +1124,6 @@
   "bitter_dain_3_ins": {
     "name": "{name}",
     "text": "*교문 밖으로 나왔다. 비가 내린다. — 우산은 없다. 벚꽃이 비에 젖어 발밑에 붙어 있다.*"
-  },
-  "bitter_epilogue_2_ins": {
-    "name": "{name}",
-    "text": "*용기를 냈다. 말했다. — 근데 돌아온 건 고개 숙인 침묵이었다.*"
-  },
-  "bitter_epilogue_2_ins2": {
-    "name": "{name}",
-    "text": "*\"...고마워. 진짜로. 근데 나는 아직 — 5일은 너무 짧았나 봐.\"*"
-  },
-  "bitter_epilogue_2_ins3": {
-    "name": "{name}",
-    "text": "*거절이 아니다. 타이밍이다. — 충분히 다가가지 못한 5일이 만든 결과.*"
   },
   "harem_1_ins": {
     "name": "{name}",

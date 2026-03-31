@@ -368,11 +368,6 @@ Object.assign(SCENARIO[5], {
     "after5_farewell_dain_4_ins3": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "after5_farewell_dain_4_ins4"
-    },
-    "after5_farewell_dain_4_ins4": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
         "next": "after5_farewell_dain_5"
     },
     "after5_last_chance_2_ins": {
