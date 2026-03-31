@@ -378,6 +378,12 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_shy.png",
+        "next": "after3_yuna_8b"
+    },
+    "after3_yuna_8b": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "sunset": true,
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after3_yuna_9"
     },
     "after3_yuna_9": {

@@ -332,13 +332,19 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/room_school.png",
         "branches": [
             {
-                "next": "lunch3_expose_1",
+                "next": "lunch3_harem_1",
                 "condition": "day3_has_multiple_dates"
             },
             {
                 "next": "lunch3_end"
             }
         ]
+    },
+    "lunch3_harem_1": {
+        "character": null,
+        "background": "assets/images/background/room_school.png",
+        "setFlags": ["ending_harem"],
+        "next": "lunch3_end"
     },
 
     "lunch3_expose_1": {
@@ -400,17 +406,6 @@ Object.assign(SCENARIO[3], {
     "lunch3_expose_12": {
         "character": null,
         "background": "assets/images/background/room_school.png",
-        "stats": {
-            "Seoyeon": {
-                "affinity": -5
-            },
-            "Yuna": {
-                "affinity": -5
-            },
-            "Dain": {
-                "affinity": -5
-            }
-        },
         "next": "lunch3_expose_13"
     },
     "lunch3_expose_13": {

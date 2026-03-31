@@ -143,6 +143,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
+        "stats": { "Seoyeon": { "affinity": -5 } },
         "next": "after1_jealousy_dain_2"
     },
     "after1_jealousy_dain_2": {
@@ -156,6 +157,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
+        "stats": { "Dain": { "affinity": -5 } },
         "next": "after1_jealousy_yuna_2"
     },
     "after1_jealousy_yuna_2": {
@@ -587,11 +589,13 @@ Object.assign(SCENARIO[1], {
         "choices": [
             {
                 "next": "after_nurse_enter_choice_a",
-                "stats": { "Nurse": { "affinity": 10 } }
+                "stats": { "Nurse": { "affinity": 10 } },
+                "setFlags": ["nurse_choice_a"]
             },
             {
                 "next": "after_nurse_enter_choice_b",
-                "stats": { "Nurse": { "affinity": 3 } }
+                "stats": { "Nurse": { "affinity": 3 } },
+                "setFlags": ["nurse_choice_b"]
             }
         ]
     },
@@ -837,7 +841,11 @@ Object.assign(SCENARIO[1], {
     "after_nurse_enter_11_ins4": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "after_nurse_enter_11_ins5"
+        "branches": [
+            { "condition": "nurse_choice_a", "next": "after_nurse_enter_11_ins5" },
+            { "condition": "nurse_choice_b", "next": "after_nurse_enter_11_ins7" },
+            { "next": "after_nurse_enter_11_ins9" }
+        ]
     },
     "after_nurse_enter_11_ins5": {
         "background": "assets/images/background/nurse_room.png",
@@ -847,7 +855,7 @@ Object.assign(SCENARIO[1], {
     "after_nurse_enter_11_ins6": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "after_nurse_enter_11_ins7"
+        "next": "after_nurse_enter_11_ins9"
     },
     "after_nurse_enter_11_ins7": {
         "background": "assets/images/background/nurse_room.png",
