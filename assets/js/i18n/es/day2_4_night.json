@@ -257,5 +257,65 @@
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
         "text": "...Sí. Buenas noches."
+    },
+    "night2_start_ins": {
+        "name": "{name}",
+        "text": "*Tres personas. Todas a la vez.*"
+    },
+    "night2_reply_yuna_6_ins": {
+        "name": "{name}",
+        "text": "*¿La tercera estrella? — Abro la ventana y miro el cielo nocturno. Hay estrellas. Cuál es la tercera, ni idea.*"
+    },
+    "night2_reply_yuna_6_ins2": {
+        "name": "{name}",
+        "text": "*Un acertijo muy de Yuna. Una persona que nunca te da la respuesta. — Una persona que te hace querer descubrirla.*"
+    },
+    "night2_reply_yuna_6_ins3": {
+        "name": "{name}",
+        "text": "*Entre las alertas del mensajero — llega un mensaje personal de la profesora.*"
+    },
+    "night2_reply_yuna_6_ins4": {
+        "name": "Profesora",
+        "text": "*{name}, gracias por venir a la sala de profesores hoy*"
+    },
+    "night2_reply_yuna_6_ins5": {
+        "name": "Profesora",
+        "text": "*Lo administrativo ya está, así que no necesitaré llamarte más*"
+    },
+    "night2_reply_yuna_6_ins6": {
+        "name": "Profesora",
+        "text": "*...Pero si te cuesta adaptarte, ven cuando quieras*"
+    },
+    "night2_end_1_ins": {
+        "name": "{name}",
+        "text": "*El segundo día ha terminado.*"
+    },
+    "night2_end_2_ins": {
+        "name": "{name}",
+        "text": "*Hoy es — diferente. Ya no es curiosidad. Pienso en ellas. Qué estarán haciendo, qué dirán mañana.*"
+    },
+    "night2_end_2_ins2": {
+        "name": "{name}",
+        "text": "*Las palabras de Minsu vuelven una y otra vez. '¿Eras así en tu antigua escuela?'*"
+    },
+    "night2_flashback_6_ins": {
+        "name": "{name}",
+        "text": "*'Esta vez diré lo que quiera sin arrepentirme'. — Esa fue la promesa que hice al venir a esta escuela.*"
+    },
+    "night2_flashback_6_ins2": {
+        "name": "{name}",
+        "text": "*'Esta vez diré lo que quiera sin arrepentirme'. — Esa fue la promesa que hice al venir a esta escuela.*"
+    },
+    "night2_end_3_ins": {
+        "name": "{name}",
+        "text": "*El problema es que esa distancia se acorta más rápido de lo esperado.*"
+    },
+    "night2_end_4_ins": {
+        "name": "{name}",
+        "text": "*Abro el refrigerador. No hay mucho. Arroz sobrante, huevos, alga. — Me dan ganas de preparar algo para llevar mañana. ¿Para quién? No lo sé. Simplemente quiero hacerlo.*"
+    },
+    "night2_end_4_ins2": {
+        "name": "{name}",
+        "text": "*Preparé un almuerzo a toda prisa. No está genial. Demasiado tosco para decir que fue hecho con cariño. — Pero es mejor que nada.*"
     }
 }

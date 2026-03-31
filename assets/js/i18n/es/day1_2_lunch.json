@@ -489,5 +489,37 @@
     "lunch_yuna_c2_2": {
         "name": "Yuna",
         "text": "...Pero esta biblioteca no está mal. Es tranquila."
+    },
+    "lunch_start_4_ins": {
+        "name": "{name}",
+        "text": "*A mi lado, Dain me agarra del brazo.*"
+    },
+    "lunch_seo_6_ins": {
+        "name": "Seoyeon",
+        "text": "*Sonriendo* \"Qué desconfiado. Solo me gusta la brisa de aquí arriba.\""
+    },
+    "lunch_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon gira ligeramente la cabeza. Tiene las orejas rojas.*"
+    },
+    "lunch_seo_c1_3_ins": {
+        "name": "{name}",
+        "text": "*Esas orejas rojas, ¿es real? — Quizá sea solo el viento.*"
+    },
+    "lunch_seo_after_7_ins": {
+        "name": "{name}",
+        "text": "*Dain me arrastra del brazo hasta la tienda. Esta chica tiene una fuerza increíble.*"
+    },
+    "lunch_dain_12_ins": {
+        "name": "Dain",
+        "text": "¡¡Aaagh, vale!! ¡¡Dos panes de soboro!! ¡¡Señora!!"
+    },
+    "lunch_yuna_5_ins": {
+        "name": "{name}",
+        "text": "...¿Puedo sentarme aquí?"
+    },
+    "lunch_yuna_10_ins": {
+        "name": "{name}",
+        "text": "*Hay algo metido en el escritorio de Yuna. Un marcapáginas viejo. Tiene algo escrito, pero no alcanzo a leerlo. Yuna pone inconscientemente la mano encima. Quizá sea algo valioso para ella.*"
     }
 }

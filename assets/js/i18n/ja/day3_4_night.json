@@ -187,5 +187,117 @@
     "night3_end": {
         "name": "{name}",
         "text": "*夜が更けていく...*"
+    },
+    "night3_faithful_msg_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*結末を書いたら終わってしまうから。——ユナはこの物語が終わることを恐れている。*"
+    },
+    "night3_cheat_msg_3_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが「お願い」という言葉を使う。——この人の辞書にはなかった言葉だ。それだけ崩れている。*"
+    },
+    "night3_cheat_msg_4_ins": {
+        "name": "ユナ",
+        "text": "*誰の隣に立つのか。その重さを分かってほしい。*"
+    },
+    "night3_nightmare_2_ins": {
+        "name": "{name}",
+        "text": "*ソヨンの声が聞こえる。*"
+    },
+    "night3_nightmare_3_ins": {
+        "name": "{name}",
+        "text": "*ユナの声。*"
+    },
+    "night3_nightmare_4_ins": {
+        "name": "{name}",
+        "text": "*ダインの声。*"
+    },
+    "night3_dream_2_ins": {
+        "name": "{name}",
+        "text": "*今度こそ後悔なく伝えようと思った。この学校では正直に生きようと。*"
+    },
+    "night3_cheat_reflect_3_ins": {
+        "name": "{name}",
+        "text": "*ソジョンの時と正反対なのに、結果は同じだ。誰かが傷つく。*"
+    },
+    "night3_cheat_reflect_3_ins2": {
+        "name": "{name}",
+        "text": "*前の学校：何も言えなくて後悔。*"
+    },
+    "night3_cheat_reflect_3_ins3": {
+        "name": "{name}",
+        "text": "*この学校：みんなに言って後悔。*"
+    },
+    "night3_cheat_reflect_3_ins4": {
+        "name": "{name}",
+        "text": "*結局、問題は「言うか言わないか」じゃなくて——「誰に」なんだ。*"
+    },
+    "night3_cheat_reflect_3_ins5": {
+        "name": "{name}",
+        "text": "*ミンスが言った。「断るのも愛だよ」*"
+    },
+    "night3_cheat_reflect_3_ins6": {
+        "name": "{name}",
+        "text": "*ソヨンが言った。「唯一の答えか、何でもないか」*"
+    },
+    "night3_cheat_reflect_3_ins7": {
+        "name": "{name}",
+        "text": "*ユナが言った。「逃げないで」*"
+    },
+    "night3_cheat_reflect_5_ins": {
+        "name": "{name}",
+        "text": "*夢を見た。——誰かと並んで歩いていた。顔は見えないのに、隣にいるだけで心が安らいだ。*"
+    },
+    "night3_faithful_reflect_2_ins": {
+        "name": "{name}",
+        "text": "*「削除しますか？」*"
+    },
+    "night3_faithful_reflect_2_ins2": {
+        "name": "{name}",
+        "text": "*——削除した。*"
+    },
+    "night3_faithful_reflect_2_ins3": {
+        "name": "{name}",
+        "text": "*「削除しますか？」*"
+    },
+    "night3_faithful_reflect_2_ins4": {
+        "name": "{name}",
+        "text": "*1秒。指が止まる。——ミンスの言葉が蘇る。「断るのも愛だよ」*"
+    },
+    "night3_faithful_reflect_2_ins5": {
+        "name": "{name}",
+        "text": "*……そうだ。まず自分が過去を断らないと。*"
+    },
+    "night3_faithful_reflect_2_ins6": {
+        "name": "{name}",
+        "text": "*——削除した。*"
+    },
+    "night3_faithful_reflect_3_ins": {
+        "name": "{name}",
+        "text": "*ミンスが言った。「断るのも愛だよ」その通りだ。前の学校で、ソジョンは僕を断る機会すらなかった。僕が口を閉ざしたから。——それがソジョンにとっても、僕にとっても、一番不親切な結末だった。*"
+    },
+    "night3_faithful_reflect_4_ins": {
+        "name": "{name}",
+        "text": "*1秒。指が止まる。——ミンスの言葉が蘇る。「断るのも愛だよ」*"
+    },
+    "night3_faithful_reflect_4_ins2": {
+        "name": "{name}",
+        "text": "*……断ること。そうだ、やらなきゃいけないのは分かってる。分かってるのに。*"
+    },
+    "night3_faithful_reflect_4_ins3": {
+        "name": "{name}",
+        "text": "*指が動かない。削除ボタンの上に置いたまま。*"
+    },
+    "night3_faithful_reflect_4_ins4": {
+        "name": "{name}",
+        "text": "*前の学校でもこうだった。分かっていてできなかった。今回も——分かっていて、できない。*"
+    },
+    "night3_faithful_reflect_4_ins5": {
+        "name": "{name}",
+        "text": "*スマホを閉じた。写真はそのままだ。*"
+    },
+    "night3_faithful_reflect_4_ins6": {
+        "name": "{name}",
+        "text": "*……昔も今も、何一つ手放せない臆病者でしかない。*"
     }
 }

@@ -168,5 +168,9 @@
     "night_hidden_nurse_2": {
         "name": "{name}",
         "text": "*Une infirmière qui met des cœurs dans les dossiers médicaux. C'est la première fois que je vois des émojis dans un dossier de santé.*"
+    },
+    "night_dain_late_4_ins": {
+        "name": "{name}",
+        "text": "*Entre les notifications du messageur — un message de la professeure principale apparaît sur l'appli d'annonces de l'école.*"
     }
 }

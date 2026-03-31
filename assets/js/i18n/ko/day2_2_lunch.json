@@ -1,436 +1,584 @@
 {
-  "lunch2_start": {
-    "name": "{name}",
-    "text": "*점심. 어제와 달리 주머니에 유나의 쪽지가 있다. 복도 끝에서는 서연이 도시락을 들고 옥상 쪽으로 향하고 있고, 다인은 또 매점 방향으로 손짓한다.*"
-  },
-  "lunch2_start_2": {
-    "name": "{name}",
-    "text": "*이 학교에서 점심시간은 전쟁이다.*"
-  },
-  "lunch2_choice": {
-    "name": "{name}",
-    "text": "*누구와 함께할까.*",
-    "choices": [
-      "유나의 쪽지를 따라 도서관 별관으로",
-      "서연을 따라 옥상으로",
-      "다인과 매점으로"
-    ]
-  },
-  "lunch2_yuna_1": {
-    "name": "{name}",
-    "text": "*도서관 별관. 본관보다 오래된 건물이다. 학생이 거의 없다.*"
-  },
-  "lunch2_yuna_2": {
-    "name": "{name}",
-    "text": "*계단을 올라가니 복도 끝에 유나가 서 있다. 벽에 기대어 책을 읽고 있다.*"
-  },
-  "lunch2_yuna_3": {
-    "name": "유나",
-    "text": "...왔네."
-  },
-  "lunch2_yuna_4": {
-    "name": "{name}",
-    "text": "쪽지 받았거든."
-  },
-  "lunch2_yuna_5": {
-    "name": "유나",
-    "text": "안 올 수도 있었는데."
-  },
-  "lunch2_yuna_6": {
-    "name": "{name}",
-    "text": "왜?"
-  },
-  "lunch2_yuna_7": {
-    "name": "유나",
-    "text": "시끄러운 애랑 친해진 것 같길래. 그쪽이 더 재밌잖아."
-  },
-  "lunch2_yuna_8": {
-    "name": "{name}",
-    "text": "피난처가 필요할 때도 있어."
-  },
-  "lunch2_yuna_9": {
-    "name": "{name}",
-    "text": "*유나가 아주 살짝 — 입꼬리가 올라간다. 거의 안 보인다.*"
-  },
-  "lunch2_yuna_10": {
-    "name": "유나",
-    "text": "...그래."
-  },
-  "lunch2_yuna_11": {
-    "name": "{name}",
-    "text": "*유나가 앞장서 걷는다. 별관 깊숙이. 아무도 안 올 것 같은 곳.*"
-  },
-  "lunch2_yuna_12": {
-    "name": "{name}",
-    "text": "*작은 방이 나온다. 창문으로 햇살이 들어오고, 낡은 소파와 책장이 있다.*"
-  },
-  "lunch2_yuna_13": {
-    "name": "{name}",
-    "text": "여기 뭐야? 비밀 독서실?"
-  },
-  "lunch2_yuna_14": {
-    "name": "유나",
-    "text": "...여기 아는 사람 거의 없어."
-  },
-  "lunch2_yuna_15": {
-    "name": "{name}",
-    "text": "*유나가 소파에 앉는다. 옆자리를 슬쩍 비워둔다.*"
-  },
-  "lunch2_yuna_16": {
-    "name": "유나",
-    "text": "나랑 한 명 더 있었는데."
-  },
-  "lunch2_yuna_17": {
-    "name": "{name}",
-    "text": "있었는데?"
-  },
-  "lunch2_yuna_choice": {
-    "name": "{name}",
-    "text": "*'있었는데' 뒤에 말이 없다. 과거형. — 물어봐도 될까.*",
-    "choices": [
-      "그 사람, 지금은?",
-      "묻지 않고 옆에 앉는다"
-    ]
-  },
-  "lunch2_yuna_c1_1": {
-    "name": "유나",
-    "text": "...전학 갔어. 1년 전에."
-  },
-  "lunch2_yuna_c1_2": {
-    "name": "{name}",
-    "text": "*유나의 목소리가 한 톤 낮아졌다.*"
-  },
-  "lunch2_yuna_c1_3": {
-    "name": "유나",
-    "text": "연락도 없이."
-  },
-  "lunch2_yuna_c1_4": {
-    "name": "{name}",
-    "text": "*유나의 표정에 그림자가 스친다. 그 '있었는데'가 누구인지는 모르겠지만.*"
-  },
-  "lunch2_yuna_c1_5": {
-    "name": "{name}",
-    "text": "연락 안 한 거야?"
-  },
-  "lunch2_yuna_c1_6": {
-    "name": "유나",
-    "text": "...모르겠어. 안 한 건지, 못 한 건지."
-  },
-  "lunch2_yuna_c1_7": {
-    "name": "{name}",
-    "text": "*유나가 책을 펼친다. 대화 종료의 신호.*"
-  },
-  "lunch2_yuna_c1_8": {
-    "name": "{name}",
-    "text": "*분위기를 바꿔야 한다. — 가벼운 말로 넘기자.*"
-  },
-  "lunch2_yuna_c1_9": {
-    "name": "{name}",
-    "text": "그 선배, 혹시 졸업해서 간 거 아냐? 원래 선배들은 연락 잘 안 하잖아."
-  },
-  "lunch2_yuna_c1_10": {
-    "name": "유나",
-    "text": "...전학이야."
-  },
-  "lunch2_yuna_c1_11": {
-    "name": "{name}",
-    "text": "아..."
-  },
-  "lunch2_yuna_c1_12": {
-    "name": "{name}",
-    "text": "*실수했다. 가볍게 넘기려 한 게 오히려 — 이 사람의 상처를 얕잡아 본 꼴이 됐다.*"
-  },
-  "lunch2_yuna_c1_13": {
-    "name": "{name}",
-    "text": "*어색한 침묵이 흐른다. 책장 넘기는 소리만 크게 울린다.*"
-  },
-  "lunch2_yuna_c1_14": {
-    "name": "{name}",
-    "text": "*눈치가 빠르다고 자부했는데. — 아니었다. 이 사람 앞에서는 아니었다.*"
-  },
-  "lunch2_yuna_c2_1": {
-    "name": "{name}",
-    "text": "*아무 말 없이 옆에 앉는다. 유나가 잠깐 이쪽을 본다.*"
-  },
-  "lunch2_yuna_c2_2": {
-    "name": "{name}",
-    "text": "*그리고 자기 책에서 한 권을 꺼내 내 쪽에 놓는다.*"
-  },
-  "lunch2_yuna_c2_3": {
-    "name": "유나",
-    "text": "...읽어."
-  },
-  "lunch2_yuna_c2_4": {
-    "name": "{name}",
-    "text": "*말 대신 책을 건네는 거. — 이 사람의 언어는 행동이구나. 서연이랑은 다른 방식으로.*"
-  },
-  "lunch2_yuna_c2_5": {
-    "name": "{name}",
-    "text": "*침묵 속에서 나란히 책을 읽는다. 창문으로 들어오는 햇살이 따뜻하다.*"
-  },
-  "lunch2_yuna_c2_6": {
-    "name": "유나",
-    "text": "...여기가 좋은 이유."
-  },
-  "lunch2_yuna_c2_7": {
-    "name": "{name}",
-    "text": "응?"
-  },
-  "lunch2_yuna_c2_8": {
-    "name": "유나",
-    "text": "조용해서. — 근데 혼자가 아니어서."
-  },
-  "lunch2_yuna_c2_9": {
-    "name": "{name}",
-    "text": "*두 문장. 유나치고는 긴 말이다. — 그리고 그 두 문장 안에 전부 담겨 있다.*"
-  },
-  "lunch2_yuna_end": {
-    "name": "{name}",
-    "text": "*유나의 '있었는데'가 머릿속에 맴돈다. 유나가 보여준 이 장소의 의미가... 조금씩 느껴진다.*"
-  },
-  "lunch2_seo_1": {
-    "name": "{name}",
-    "text": "*옥상. 어제와 같은 장소. 서연이 도시락을 펼치고 있다.*"
-  },
-  "lunch2_seo_2": {
-    "name": "서연",
-    "text": "또 왔네. 맛 들렸나 봐."
-  },
-  "lunch2_seo_3": {
-    "name": "{name}",
-    "text": "밥이 맛있었으니까."
-  },
-  "lunch2_seo_4": {
-    "name": "서연",
-    "text": "밥 때문이야?"
-  },
-  "lunch2_seo_5": {
-    "name": "{name}",
-    "text": "바람도 좋고."
-  },
-  "lunch2_seo_6": {
-    "name": "서연",
-    "text": "...바람."
-  },
-  "lunch2_seo_7": {
-    "name": "{name}",
-    "text": "*뭔가 더 듣고 싶었던 것 같은데 — 일부러 안 말했다.*"
-  },
-  "lunch2_seo_8": {
-    "name": "{name}",
-    "text": "*도시락을 먹는데 — 옥상 문이 열린다. 다인이 올라왔다.*"
-  },
-  "lunch2_seo_9": {
-    "name": "다인",
-    "text": "오! 여기 있었어?! 찾았다!"
-  },
-  "lunch2_seo_10": {
-    "name": "서연",
-    "text": "...옥상은 허가제인데."
-  },
-  "lunch2_seo_11": {
-    "name": "다인",
-    "text": "에이, 밥 먹는 데 허가가 어딨어! — 오 뭐야, 도시락이다! 맛있겠다!"
-  },
-  "lunch2_seo_12": {
-    "name": "{name}",
-    "text": "*다인이 거리낌 없이 앉는다. 서연의 미간이 미세하게 좁아진다.*"
-  },
-  "lunch2_seo_13": {
-    "name": "다인",
-    "text": "어제 만났어! 밝은 애더라, 서연 선배!"
-  },
-  "lunch2_seo_14": {
-    "name": "서연",
-    "text": "...밝은 애."
-  },
-  "lunch2_seo_15": {
-    "name": "{name}",
-    "text": "그냥 아는 사이야."
-  },
-  "lunch2_seo_16": {
-    "name": "서연",
-    "text": "왜, 신경 쓰여?"
-  },
-  "lunch2_seo_17": {
-    "name": "다인",
-    "text": "에이, 그냥 궁금해서 물어본 거야!"
-  },
-  "lunch2_seo_18": {
-    "name": "{name}",
-    "text": "*삼각형의 각이 날카로워지고 있다. — 나는 꼭짓점이 아니라 제물인 것 같다.*"
-  },
-  "lunch2_seo_19": {
-    "name": "{name}",
-    "text": "*서연이 무심한 척 {name}의 입가를 본다.*"
-  },
-  "lunch2_seo_20": {
-    "name": "서연",
-    "text": "입가에 뭐 묻었어. 가만있어 봐."
-  },
-  "lunch2_seo_choice": {
-    "name": "{name}",
-    "text": "*서연의 손이 다가온다.*",
-    "choices": [
-      "가만히 있는다",
-      "직접 닦을게"
-    ]
-  },
-  "lunch2_seo_c1_1": {
-    "name": "{name}",
-    "text": "*서연의 손가락이 입가를 스친다. 부드럽게. 천천히. — 필요 이상으로 천천히.*"
-  },
-  "lunch2_seo_c1_2": {
-    "name": "서연",
-    "text": "...됐어."
-  },
-  "lunch2_seo_c1_3": {
-    "name": "다인",
-    "text": "저 지금 뭘 본 거예요?!"
-  },
-  "lunch2_seo_c1_4": {
-    "name": "서연",
-    "text": "밥풀이었어."
-  },
-  "lunch2_seo_c1_5": {
-    "name": "{name}",
-    "text": "*밥풀 하나 떼는 데 3초가 필요한가? — 아무도 모르겠지만, 서연의 귓불이 빨갛다.*"
-  },
-  "lunch2_seo_c2_1": {
-    "name": "{name}",
-    "text": "*손등으로 입가를 닦는다.*"
-  },
-  "lunch2_seo_c2_2": {
-    "name": "서연",
-    "text": "...직접 닦으면 번지잖아."
-  },
-  "lunch2_seo_c2_3": {
-    "name": "{name}",
-    "text": "*살짝 삐친 것 같다. — 근데 표정 관리는 완벽하다. 역시 이 사람은.*"
-  },
-  "lunch2_seo_end_c1": {
-    "name": "{name}",
-    "text": "*서연의 손이 지나간 자리가 아직 신경 쓰인다. — 그리고 다인의 놀란 눈도.*"
-  },
-  "lunch2_seo_end_c2": {
-    "name": "{name}",
-    "text": "*손등에 아직 밥풀 자국이 남아 있다. 서연의 표정 관리는 완벽한데 — 입꼬리만 살짝 내려가 있다.*"
-  },
-  "lunch2_dain_1": {
-    "name": "{name}",
-    "text": "*다인과 매점으로. 어제의 리벤지 가위바위보.*"
-  },
-  "lunch2_dain_2": {
-    "name": "다인",
-    "text": "오늘은 진다!! 각오해!!"
-  },
-  "lunch2_dain_3": {
-    "name": "{name}",
-    "text": "어제도 그렇게 말했는데."
-  },
-  "lunch2_dain_4": {
-    "name": "다인",
-    "text": "어제는 워밍업이었어!!"
-  },
-  "lunch2_dain_5": {
-    "name": "{name}",
-    "text": "*가위바위보. — 다인이 또 진다.*"
-  },
-  "lunch2_dain_6": {
-    "name": "다인",
-    "text": "...이거 조작 아냐?!"
-  },
-  "lunch2_dain_7": {
-    "name": "{name}",
-    "text": "가위바위보를 어떻게 조작해."
-  },
-  "lunch2_dain_8": {
-    "name": "다인",
-    "text": "으으으... 소보로 두 개요..."
-  },
-  "lunch2_dain_9": {
-    "name": "{name}",
-    "text": "*빵을 사서 복도 벤치에 앉는다. — 그때 서연이 지나간다. 도시락 가방을 들고.*"
-  },
-  "lunch2_dain_10": {
-    "name": "{name}",
-    "text": "*서연이 이쪽을 본다. 다인 옆에 앉아 빵을 먹고 있는 나를 — 0.5초 응시하고 지나간다.*"
-  },
-  "lunch2_dain_11": {
-    "name": "다인",
-    "text": "야, 회장님 왜 저래? 왜 쳐다봐?"
-  },
-  "lunch2_dain_12": {
-    "name": "{name}",
-    "text": "모르겠는데."
-  },
-  "lunch2_dain_13": {
-    "name": "다인",
-    "text": "흠... 너 혹시 회장님이랑도 친해?"
-  },
-  "lunch2_dain_choice": {
-    "name": "{name}",
-    "text": "*다인이 나를 빤히 본다.*",
-    "choices": [
-      "어제 좀 얘기했어",
-      "학교 안내 받은 정도?",
-      "왜, 신경 쓰여?"
-    ]
-  },
-  "lunch2_dain_c1_1": {
-    "name": "{name}",
-    "text": "*다인의 표정이 미묘하게 굳는다. 소보로를 한 입 베어 물며 고개를 돌린다.*"
-  },
-  "lunch2_dain_c2_1": {
-    "name": "{name}",
-    "text": "*다인이 고개를 끄덕이며 소보로를 한 입 베어 문다. 별 관심 없다는 듯.*"
-  },
-  "lunch2_dain_c3_1": {
-    "name": "다인",
-    "text": "뭐, 뭐가 신경 쓰인다고 그래!"
-  },
-  "lunch2_dain_c3_2": {
-    "name": "{name}",
-    "text": "*귓불. 빨갛다. — 이 학교 여학생들은 귀가 솔직하다.*"
-  },
-  "lunch2_dain_end": {
-    "name": "{name}",
-    "text": "*다인의 소보로 빵 크런치 소리가 유난히 크다. — 점심시간이 점점 복잡해진다.*"
-  },
-  "lunch2_seo_1_check": {
-    "name": "{name}",
-    "text": "*옥상으로 올라간다.*"
-  },
-  "lunch2_seo_1b": {
-    "name": "{name}",
-    "text": "*옥상. 처음 와보는 장소다. 바람이 시원하고, 시야가 탁 트여 있다. 서연이 도시락을 펼치고 있다.*"
-  },
-  "lunch2_seo_2b": {
-    "name": "서연",
-    "text": "여기까지 올라왔네. 용기 있다."
-  },
-  "lunch2_seo_13b": {
-    "name": "다인",
-    "text": "오! 서연 선배? 반가워요!"
-  },
-  "lunch2_dain_1_check": {
-    "name": "{name}",
-    "text": "*매점 쪽으로 향한다.*"
-  },
-  "lunch2_dain_1b": {
-    "name": "{name}",
-    "text": "*다인과 매점으로. 첫 가위바위보 대결.*"
-  },
-  "lunch2_dain_3b": {
-    "name": "{name}",
-    "text": "정말?"
-  },
-  "lunch2_dain_4b": {
-    "name": "다인",
-    "text": "당연하지!! 나 원래 잘해!!"
-  },
-  "lunch2_dain_5b": {
-    "name": "{name}",
-    "text": "*가위바위보. — 다인이 졌다.*"
-  }
+    "lunch2_start": {
+        "name": "{name}",
+        "text": "*점심. 어제와 달리 주머니에 유나의 쪽지가 있다. 복도 끝에서는 서연이 도시락을 들고 옥상 쪽으로 향하고 있고, 다인은 또 매점 방향으로 손짓한다.*"
+    },
+    "lunch2_start_2": {
+        "name": "{name}",
+        "text": "*이 학교에서 점심시간은 전쟁이다.*"
+    },
+    "lunch2_choice": {
+        "name": "{name}",
+        "text": "*누구와 함께할까.*",
+        "choices": [
+            "유나의 쪽지를 따라 도서관 별관으로",
+            "서연을 따라 옥상으로",
+            "다인과 매점으로"
+        ]
+    },
+    "lunch2_yuna_1": {
+        "name": "{name}",
+        "text": "*도서관 별관. 본관보다 오래된 건물이다. 학생이 거의 없다.*"
+    },
+    "lunch2_yuna_2": {
+        "name": "{name}",
+        "text": "*계단을 올라가니 복도 끝에 유나가 서 있다. 벽에 기대어 책을 읽고 있다.*"
+    },
+    "lunch2_yuna_3": {
+        "name": "유나",
+        "text": "...왔네."
+    },
+    "lunch2_yuna_4": {
+        "name": "{name}",
+        "text": "쪽지 받았거든."
+    },
+    "lunch2_yuna_5": {
+        "name": "유나",
+        "text": "안 올 수도 있었는데."
+    },
+    "lunch2_yuna_6": {
+        "name": "{name}",
+        "text": "왜?"
+    },
+    "lunch2_yuna_7": {
+        "name": "유나",
+        "text": "시끄러운 애랑 친해진 것 같길래. 그쪽이 더 재밌잖아."
+    },
+    "lunch2_yuna_8": {
+        "name": "{name}",
+        "text": "피난처가 필요할 때도 있어."
+    },
+    "lunch2_yuna_9": {
+        "name": "{name}",
+        "text": "*유나가 아주 살짝 — 입꼬리가 올라간다. 거의 안 보인다.*"
+    },
+    "lunch2_yuna_10": {
+        "name": "유나",
+        "text": "...그래."
+    },
+    "lunch2_yuna_11": {
+        "name": "{name}",
+        "text": "*유나가 앞장서 걷는다. 별관 깊숙이. 아무도 안 올 것 같은 곳.*"
+    },
+    "lunch2_yuna_12": {
+        "name": "{name}",
+        "text": "*작은 방이 나온다. 창문으로 햇살이 들어오고, 낡은 소파와 책장이 있다.*"
+    },
+    "lunch2_yuna_13": {
+        "name": "{name}",
+        "text": "여기 뭐야? 비밀 독서실?"
+    },
+    "lunch2_yuna_14": {
+        "name": "유나",
+        "text": "...여기 아는 사람 거의 없어."
+    },
+    "lunch2_yuna_15": {
+        "name": "{name}",
+        "text": "*유나가 소파에 앉는다. 옆자리를 슬쩍 비워둔다.*"
+    },
+    "lunch2_yuna_16": {
+        "name": "유나",
+        "text": "나랑 한 명 더 있었는데."
+    },
+    "lunch2_yuna_17": {
+        "name": "{name}",
+        "text": "있었는데?"
+    },
+    "lunch2_yuna_choice": {
+        "name": "{name}",
+        "text": "*'있었는데' 뒤에 말이 없다. 과거형. — 물어봐도 될까.*",
+        "choices": [
+            "그 사람, 지금은?",
+            "묻지 않고 옆에 앉는다"
+        ]
+    },
+    "lunch2_yuna_c1_1": {
+        "name": "유나",
+        "text": "...전학 갔어. 1년 전에."
+    },
+    "lunch2_yuna_c1_2": {
+        "name": "{name}",
+        "text": "*유나의 목소리가 한 톤 낮아졌다.*"
+    },
+    "lunch2_yuna_c1_3": {
+        "name": "유나",
+        "text": "연락도 없이."
+    },
+    "lunch2_yuna_c1_4": {
+        "name": "{name}",
+        "text": "*유나의 표정에 그림자가 스친다. 그 '있었는데'가 누구인지는 모르겠지만.*"
+    },
+    "lunch2_yuna_c1_5": {
+        "name": "{name}",
+        "text": "연락 안 한 거야?"
+    },
+    "lunch2_yuna_c1_6": {
+        "name": "유나",
+        "text": "...모르겠어. 안 한 건지, 못 한 건지."
+    },
+    "lunch2_yuna_c1_7": {
+        "name": "{name}",
+        "text": "*유나가 책을 펼친다. 대화 종료의 신호.*"
+    },
+    "lunch2_yuna_c1_8": {
+        "name": "{name}",
+        "text": "*분위기를 바꿔야 한다. — 가벼운 말로 넘기자.*"
+    },
+    "lunch2_yuna_c1_9": {
+        "name": "{name}",
+        "text": "그 선배, 혹시 졸업해서 간 거 아냐? 원래 선배들은 연락 잘 안 하잖아."
+    },
+    "lunch2_yuna_c1_10": {
+        "name": "유나",
+        "text": "...전학이야."
+    },
+    "lunch2_yuna_c1_11": {
+        "name": "{name}",
+        "text": "아..."
+    },
+    "lunch2_yuna_c1_12": {
+        "name": "{name}",
+        "text": "*실수했다. 가볍게 넘기려 한 게 오히려 — 이 사람의 상처를 얕잡아 본 꼴이 됐다.*"
+    },
+    "lunch2_yuna_c1_13": {
+        "name": "{name}",
+        "text": "*어색한 침묵이 흐른다. 책장 넘기는 소리만 크게 울린다.*"
+    },
+    "lunch2_yuna_c1_14": {
+        "name": "{name}",
+        "text": "*눈치가 빠르다고 자부했는데. — 아니었다. 이 사람 앞에서는 아니었다.*"
+    },
+    "lunch2_yuna_c2_1": {
+        "name": "{name}",
+        "text": "*아무 말 없이 옆에 앉는다. 유나가 잠깐 이쪽을 본다.*"
+    },
+    "lunch2_yuna_c2_2": {
+        "name": "{name}",
+        "text": "*그리고 자기 책에서 한 권을 꺼내 내 쪽에 놓는다.*"
+    },
+    "lunch2_yuna_c2_3": {
+        "name": "유나",
+        "text": "...읽어."
+    },
+    "lunch2_yuna_c2_4": {
+        "name": "{name}",
+        "text": "*말 대신 책을 건네는 거. — 이 사람의 언어는 행동이구나. 서연이랑은 다른 방식으로.*"
+    },
+    "lunch2_yuna_c2_5": {
+        "name": "{name}",
+        "text": "*침묵 속에서 나란히 책을 읽는다. 창문으로 들어오는 햇살이 따뜻하다.*"
+    },
+    "lunch2_yuna_c2_6": {
+        "name": "유나",
+        "text": "...여기가 좋은 이유."
+    },
+    "lunch2_yuna_c2_7": {
+        "name": "{name}",
+        "text": "응?"
+    },
+    "lunch2_yuna_c2_8": {
+        "name": "유나",
+        "text": "조용해서. — 근데 혼자가 아니어서."
+    },
+    "lunch2_yuna_c2_9": {
+        "name": "{name}",
+        "text": "*두 문장. 유나치고는 긴 말이다. — 그리고 그 두 문장 안에 전부 담겨 있다.*"
+    },
+    "lunch2_yuna_end": {
+        "name": "{name}",
+        "text": "*유나의 '있었는데'가 머릿속에 맴돈다. 유나가 보여준 이 장소의 의미가... 조금씩 느껴진다.*"
+    },
+    "lunch2_seo_1": {
+        "name": "{name}",
+        "text": "*옥상. 어제와 같은 장소. 서연이 도시락을 펼치고 있다.*"
+    },
+    "lunch2_seo_2": {
+        "name": "서연",
+        "text": "또 왔네. 맛 들렸나 봐."
+    },
+    "lunch2_seo_3": {
+        "name": "{name}",
+        "text": "밥이 맛있었으니까."
+    },
+    "lunch2_seo_4": {
+        "name": "서연",
+        "text": "밥 때문이야?"
+    },
+    "lunch2_seo_5": {
+        "name": "{name}",
+        "text": "바람도 좋고."
+    },
+    "lunch2_seo_6": {
+        "name": "서연",
+        "text": "...바람."
+    },
+    "lunch2_seo_7": {
+        "name": "{name}",
+        "text": "*뭔가 더 듣고 싶었던 것 같은데 — 일부러 안 말했다.*"
+    },
+    "lunch2_seo_8": {
+        "name": "{name}",
+        "text": "*도시락을 먹는데 — 옥상 문이 열린다. 다인이 올라왔다.*"
+    },
+    "lunch2_seo_9": {
+        "name": "다인",
+        "text": "오! 여기 있었어?! 찾았다!"
+    },
+    "lunch2_seo_10": {
+        "name": "서연",
+        "text": "...옥상은 허가제인데."
+    },
+    "lunch2_seo_11": {
+        "name": "다인",
+        "text": "에이, 밥 먹는 데 허가가 어딨어! — 오 뭐야, 도시락이다! 맛있겠다!"
+    },
+    "lunch2_seo_12": {
+        "name": "{name}",
+        "text": "*다인이 거리낌 없이 앉는다. 서연의 미간이 미세하게 좁아진다.*"
+    },
+    "lunch2_seo_13": {
+        "name": "다인",
+        "text": "어제 만났어! 밝은 애더라, 서연 선배!"
+    },
+    "lunch2_seo_14": {
+        "name": "서연",
+        "text": "...밝은 애."
+    },
+    "lunch2_seo_15": {
+        "name": "{name}",
+        "text": "그냥 아는 사이야."
+    },
+    "lunch2_seo_16": {
+        "name": "서연",
+        "text": "왜, 신경 쓰여?"
+    },
+    "lunch2_seo_17": {
+        "name": "다인",
+        "text": "에이, 그냥 궁금해서 물어본 거야!"
+    },
+    "lunch2_seo_18": {
+        "name": "{name}",
+        "text": "*삼각형의 각이 날카로워지고 있다. — 나는 꼭짓점이 아니라 제물인 것 같다.*"
+    },
+    "lunch2_seo_19": {
+        "name": "{name}",
+        "text": "*서연이 무심한 척 {name}의 입가를 본다.*"
+    },
+    "lunch2_seo_20": {
+        "name": "서연",
+        "text": "입가에 뭐 묻었어. 가만있어 봐."
+    },
+    "lunch2_seo_choice": {
+        "name": "{name}",
+        "text": "*서연의 손이 다가온다.*",
+        "choices": [
+            "가만히 있는다",
+            "직접 닦을게"
+        ]
+    },
+    "lunch2_seo_c1_1": {
+        "name": "{name}",
+        "text": "*서연의 손가락이 입가를 스친다. 부드럽게. 천천히. — 필요 이상으로 천천히.*"
+    },
+    "lunch2_seo_c1_2": {
+        "name": "서연",
+        "text": "...됐어."
+    },
+    "lunch2_seo_c1_3": {
+        "name": "다인",
+        "text": "저 지금 뭘 본 거예요?!"
+    },
+    "lunch2_seo_c1_4": {
+        "name": "서연",
+        "text": "밥풀이었어."
+    },
+    "lunch2_seo_c1_5": {
+        "name": "{name}",
+        "text": "*밥풀 하나 떼는 데 3초가 필요한가? — 아무도 모르겠지만, 서연의 귓불이 빨갛다.*"
+    },
+    "lunch2_seo_c2_1": {
+        "name": "{name}",
+        "text": "*손등으로 입가를 닦는다.*"
+    },
+    "lunch2_seo_c2_2": {
+        "name": "서연",
+        "text": "...직접 닦으면 번지잖아."
+    },
+    "lunch2_seo_c2_3": {
+        "name": "{name}",
+        "text": "*살짝 삐친 것 같다. — 근데 표정 관리는 완벽하다. 역시 이 사람은.*"
+    },
+    "lunch2_seo_end_c1": {
+        "name": "{name}",
+        "text": "*서연의 손이 지나간 자리가 아직 신경 쓰인다. — 그리고 다인의 놀란 눈도.*"
+    },
+    "lunch2_seo_end_c2": {
+        "name": "{name}",
+        "text": "*손등에 아직 밥풀 자국이 남아 있다. 서연의 표정 관리는 완벽한데 — 입꼬리만 살짝 내려가 있다.*"
+    },
+    "lunch2_dain_1": {
+        "name": "{name}",
+        "text": "*다인과 매점으로. 어제의 리벤지 가위바위보.*"
+    },
+    "lunch2_dain_2": {
+        "name": "다인",
+        "text": "오늘은 진다!! 각오해!!"
+    },
+    "lunch2_dain_3": {
+        "name": "{name}",
+        "text": "어제도 그렇게 말했는데."
+    },
+    "lunch2_dain_4": {
+        "name": "다인",
+        "text": "어제는 워밍업이었어!!"
+    },
+    "lunch2_dain_5": {
+        "name": "{name}",
+        "text": "*가위바위보. — 다인이 또 진다.*"
+    },
+    "lunch2_dain_6": {
+        "name": "다인",
+        "text": "...이거 조작 아냐?!"
+    },
+    "lunch2_dain_7": {
+        "name": "{name}",
+        "text": "가위바위보를 어떻게 조작해."
+    },
+    "lunch2_dain_8": {
+        "name": "다인",
+        "text": "으으으... 소보로 두 개요..."
+    },
+    "lunch2_dain_9": {
+        "name": "{name}",
+        "text": "*빵을 사서 복도 벤치에 앉는다. — 그때 서연이 지나간다. 도시락 가방을 들고.*"
+    },
+    "lunch2_dain_10": {
+        "name": "{name}",
+        "text": "*서연이 이쪽을 본다. 다인 옆에 앉아 빵을 먹고 있는 나를 — 0.5초 응시하고 지나간다.*"
+    },
+    "lunch2_dain_11": {
+        "name": "다인",
+        "text": "야, 회장님 왜 저래? 왜 쳐다봐?"
+    },
+    "lunch2_dain_12": {
+        "name": "{name}",
+        "text": "모르겠는데."
+    },
+    "lunch2_dain_13": {
+        "name": "다인",
+        "text": "흠... 너 혹시 회장님이랑도 친해?"
+    },
+    "lunch2_dain_choice": {
+        "name": "{name}",
+        "text": "*다인이 나를 빤히 본다.*",
+        "choices": [
+            "어제 좀 얘기했어",
+            "학교 안내 받은 정도?",
+            "왜, 신경 쓰여?"
+        ]
+    },
+    "lunch2_dain_c1_1": {
+        "name": "{name}",
+        "text": "*다인의 표정이 미묘하게 굳는다. 소보로를 한 입 베어 물며 고개를 돌린다.*"
+    },
+    "lunch2_dain_c2_1": {
+        "name": "{name}",
+        "text": "*다인이 고개를 끄덕이며 소보로를 한 입 베어 문다. 별 관심 없다는 듯.*"
+    },
+    "lunch2_dain_c3_1": {
+        "name": "다인",
+        "text": "뭐, 뭐가 신경 쓰인다고 그래!"
+    },
+    "lunch2_dain_c3_2": {
+        "name": "{name}",
+        "text": "*귓불. 빨갛다. — 이 학교 여학생들은 귀가 솔직하다.*"
+    },
+    "lunch2_dain_end": {
+        "name": "{name}",
+        "text": "*다인의 소보로 빵 크런치 소리가 유난히 크다. — 점심시간이 점점 복잡해진다.*"
+    },
+    "lunch2_seo_1_check": {
+        "name": "{name}",
+        "text": "*옥상으로 올라간다.*"
+    },
+    "lunch2_seo_1b": {
+        "name": "{name}",
+        "text": "*옥상. 처음 와보는 장소다. 바람이 시원하고, 시야가 탁 트여 있다. 서연이 도시락을 펼치고 있다.*"
+    },
+    "lunch2_seo_2b": {
+        "name": "서연",
+        "text": "여기까지 올라왔네. 용기 있다."
+    },
+    "lunch2_seo_13b": {
+        "name": "다인",
+        "text": "오! 서연 선배? 반가워요!"
+    },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*매점 쪽으로 향한다.*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*다인과 매점으로. 첫 가위바위보 대결.*"
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "정말?"
+    },
+    "lunch2_dain_4b": {
+        "name": "다인",
+        "text": "당연하지!! 나 원래 잘해!!"
+    },
+    "lunch2_dain_5b": {
+        "name": "{name}",
+        "text": "*가위바위보. — 다인이 졌다.*"
+    },
+    "lunch2_yuna_17_ins": {
+        "name": "유나",
+        "text": "......"
+    },
+    "lunch2_yuna_c1_9_ins": {
+        "name": "{name}",
+        "text": "*유나의 눈빛이 순간 차가워진다.*"
+    },
+    "lunch2_seo_13b_ins": {
+        "name": "서연",
+        "text": "*{name}을 보며* \"...밝은 애."
+    },
+    "lunch2_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*다인이 눈이 커진 채 둘을 번갈아 본다.*"
+    },
+    "lunch2_seo_c1_3_ins": {
+        "name": "서연",
+        "text": "*아무렇지 않은 척* \"밥풀이었어."
+    },
+    "lunch2_dain_13_ins": {
+        "name": "다인",
+        "text": "신— 신경 쓰이긴! 뭘!\" *소보로를 크게 한 입 베어 물며* \"그냥 물어본 거야!!"
+    },
+    "lunch2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*4교시 체육. 운동장에서 달리기를 하는데 — 옆 녀석이 급정거하면서 부딪혔다. 팔꿈치가 까졌다.*"
+    },
+    "lunch2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*별거 아닌데 피가 조금 난다.*"
+    },
+    "lunch2_dain_end_ins3": {
+        "name": "체육교사",
+        "text": "보건실 가서 소독 받고 와."
+    },
+    "lunch2_dain_end_ins4": {
+        "name": "{name}",
+        "text": "*보건실 문을 연다. 어제와 같은 소독약 냄새.*"
+    },
+    "lunch2_dain_end_ins5": {
+        "name": "보건선생님",
+        "text": "*고개를 들며* \"어라, 어제의 전학생."
+    },
+    "lunch2_dain_end_ins6": {
+        "name": "{name}",
+        "text": "팔꿈치 좀 까졌는데요."
+    },
+    "lunch2_dain_end_ins7": {
+        "name": "보건선생님",
+        "text": "또 왔네? 단골 되려고?"
+    },
+    "lunch2_dain_end_ins8": {
+        "name": "{name}",
+        "text": "*장난스러운 말투는 어제와 같다. 근데 눈은 이미 상처를 살피고 있다.*"
+    },
+    "lunch2_dain_end_ins9": {
+        "name": "{name}",
+        "text": "*보건선생님이 다가와 팔꿈치를 잡는다. 손이 차갑다.*"
+    },
+    "lunch2_dain_end_ins10": {
+        "name": "보건선생님",
+        "text": "가만있어 봐~..."
+    },
+    "lunch2_dain_end_ins11": {
+        "name": "{name}",
+        "text": "*소독약을 묻힌 솜을 꺼내 — 천천히 닦는다. 밴드를 꺼낸다.*"
+    },
+    "lunch2_dain_end_ins12": {
+        "name": "{name}",
+        "text": "*밴드 하나 붙이는 데 — 30초면 될 걸, 왜 이렇게 꼼꼼하지?*"
+    },
+    "lunch2_dain_end_ins13": {
+        "name": "보건선생님",
+        "text": "*밴드를 붙이며* \"여기... 이렇게... 자, 됐다."
+    },
+    "lunch2_dain_end_ins14": {
+        "name": "{name}",
+        "text": "*보건선생님의 손이 멈춘다. — 0.5초. 그리고 다시 움직인다.*"
+    },
+    "lunch2_dain_end_ins15": {
+        "name": "보건선생님",
+        "text": "...차가운 편인데. 오늘 좀 따뜻한가 봐."
+    },
+    "lunch2_dain_end_ins16": {
+        "name": "{name}",
+        "text": "*거짓말이다. 아까 잡았을 때 차가웠다. — 손이 따뜻해진 건 지금이다.*"
+    },
+    "lunch2_dain_end_ins17": {
+        "name": "보건선생님",
+        "text": "*빙긋* \"정성이야, 정성. 대충 붙이면 떨어지거든."
+    },
+    "lunch2_dain_end_ins18": {
+        "name": "{name}",
+        "text": "*정성... 이건가. 아님 다른 이유가 있는 건가.*"
+    },
+    "lunch2_dain_end_ins19": {
+        "name": "{name}",
+        "text": "*밴드를 확인하는데 — 책상 위에 노트북이 열려 있다. 화면에 뭔가 적혀 있다. 의료 기록이 아니라 — 개인 일기 같은 것.*"
+    },
+    "lunch2_dain_end_ins20": {
+        "name": "{name}",
+        "text": "*보건선생님이 재빨리 노트북을 닫는다.*"
+    },
+    "lunch2_dain_end_ins21": {
+        "name": "보건선생님",
+        "text": "*눈을 가늘게 뜨며* \"하나만? ...음, 그럼. 나 커피보다 코코아 좋아해. 이게 비밀이야."
+    },
+    "lunch2_dain_end_ins22": {
+        "name": "{name}",
+        "text": "*비밀이라기엔 가벼운데, 알려주는 행위 자체가 — 가까워졌다는 의미다.*"
+    },
+    "lunch2_dain_end_ins23": {
+        "name": "보건선생님",
+        "text": "*가볍게 웃으며* \"비밀~ 선생님도 비밀이 있는 거야."
+    },
+    "lunch2_dain_end_ins24": {
+        "name": "{name}",
+        "text": "*장난스럽게 넘기지만, 닫는 속도가 빨랐다. — 보여주고 싶지 않은 게 있다.*"
+    },
+    "lunch2_dain_end_ins25": {
+        "name": "보건선생님",
+        "text": "자, 다 됐으니까 수업 가. — 다음에는 안 다치고 와."
+    },
+    "lunch2_dain_end_ins26": {
+        "name": "{name}",
+        "text": "안 다치면 올 이유가 없잖아요."
+    },
+    "lunch2_dain_end_ins27": {
+        "name": "{name}",
+        "text": "*보건선생님이 잠깐 멈춘다. 그리고 — 목소리가 한 톤 낮아진다.*"
+    },
+    "lunch2_dain_end_ins28": {
+        "name": "보건선생님",
+        "text": "이유 없어도 와도 돼."
+    },
+    "lunch2_dain_end_ins29": {
+        "name": "{name}",
+        "text": "*장난기가 사라졌다. — 0.5초. 그리고 다시 돌아온다.*"
+    },
+    "lunch2_dain_end_ins30": {
+        "name": "보건선생님",
+        "text": "*다시 밝은 톤으로* \"아 물론 수업 시간에는 안 되고~! 방과후에!"
+    },
+    "lunch2_dain_end_ins31": {
+        "name": "{name}",
+        "text": "*방금 목소리가 달라진 거. — 착각인가?*"
+    }
 }

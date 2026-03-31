@@ -397,7 +397,10 @@
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
         "text": "*밴드를 붙여주는 손이 가깝다.*",
-        "choices": ["손이 따뜻하네요", "밴드 하나에 그렇게까지 정성을"]
+        "choices": [
+            "손이 따뜻하네요",
+            "밴드 하나에 그렇게까지 정성을"
+        ]
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "보건선생님",
@@ -418,7 +421,10 @@
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
         "text": "*비밀이라며 웃는데 — 눈은 안 웃고 있다.*",
-        "choices": ["비밀 많으시네요. 하나만 알려주면 안 돼요?", "네, 안 봤어요"]
+        "choices": [
+            "비밀 많으시네요. 하나만 알려주면 안 돼요?",
+            "네, 안 봤어요"
+        ]
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "보건선생님",
@@ -565,5 +571,165 @@
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*체육관을 나와 거리를 걸었다.*"
+    },
+    "after2_dain_9_ins": {
+        "name": "다인",
+        "text": "*눈이 커지며* \"어? 봐주려고 했는데 안 되겠네."
+    },
+    "after2_dain_9_ins2": {
+        "name": "{name}",
+        "text": "*다인이 자세를 낮춘다. 눈빛이 달라졌다.*"
+    },
+    "after2_dain_9_ins3": {
+        "name": "다인",
+        "text": "진심으로 간다!"
+    },
+    "after2_dain_9_ins4": {
+        "name": "{name}",
+        "text": "*랠리가 오간다. 다인의 움직임은 — 확실히 보통이 아니다. 빠르고, 정확하고, 몸이 기억하고 있는 움직임.*"
+    },
+    "after2_dain_9_ins5": {
+        "name": "{name}",
+        "text": "*이 여자, 진짜 잘한다. — 운동을 좋아하는 수준이 아니라, 인생을 걸었던 사람의 몸놀림이다.*"
+    },
+    "after2_dain_9_ins6": {
+        "name": "{name}",
+        "text": "*결국 3:2. 아슬아슬하게 이겼다.*"
+    },
+    "after2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*학교 앞 떡볶이집.*"
+    },
+    "after2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*다인이 떡볶이를 후후 불며 말한다.*"
+    },
+    "after2_dain_end_ins3": {
+        "name": "{name}",
+        "text": "*학교 앞 떡볶이집.*"
+    },
+    "after2_seo_4_ins": {
+        "name": "{name}",
+        "text": "*이 사람의 어휘에서 '부탁'이라는 단어는 존재하지 않는 것 같다.*"
+    },
+    "after2_seo_6_ins": {
+        "name": "{name}",
+        "text": "*이 사람의 어휘에서 '부탁'이라는 단어는 존재하지 않는 것 같다.*"
+    },
+    "after2_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*서류 정리를 시작한다. 행사 예산안, 동아리 신청서. 양이 꽤 많다.*"
+    },
+    "after2_seo_8b4_ins": {
+        "name": "{name}",
+        "text": "*직접 칭찬이라고 말해주는 거. — 이 사람치고는 드문 일인 것 같다.*"
+    },
+    "after2_seo_8b4_ins2": {
+        "name": "{name}",
+        "text": "*정리를 하다가 서연이 목을 돌린다. 뭉친 것 같다.*"
+    },
+    "after2_seo_sunset_joke_ins": {
+        "name": "서연",
+        "text": "...어이없는 말을 이렇게 자연스럽게 하는 사람은 처음이야."
+    },
+    "after2_seo_sunset_react_ins": {
+        "name": "서연",
+        "text": "많이 뭉쳤다. 잠깐 가만히 있어 봐."
+    },
+    "after2_seo_neck_react_ins": {
+        "name": "서연",
+        "text": "많이 뭉쳤다. 잠깐 가만히 있어 봐."
+    },
+    "after2_seo_neck_react_ins2": {
+        "name": "{name}",
+        "text": "*서연이 일어나 내 뒤로 온다. 어깨에 손을 올린다.*"
+    },
+    "after2_seo_neck_high_ins": {
+        "name": "서연",
+        "text": "*조용히* \"...가만히 있어. 좀만."
+    },
+    "after2_seo_neck_high_ins2": {
+        "name": "{name}",
+        "text": "*누구 손이? — 서연 손이 내 어깨 위에 있는 건데. 말이 뒤집혔다. 그만큼 긴장한 거다.*"
+    },
+    "after2_seo_neck_low_ins": {
+        "name": "{name}",
+        "text": "갑자기 뭐야."
+    },
+    "after2_seo_neck_low_ins2": {
+        "name": "서연",
+        "text": "*손을 거두며* \"...아무것도 아냐."
+    },
+    "after2_yuna_1_ins": {
+        "name": "{name}",
+        "text": "*별관 복도. 인기척이 없다. — 비밀 독서 공간 문이 살짝 열려 있다.*"
+    },
+    "after2_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*별관 복도. 인기척이 없다. — 비밀 독서 공간 문이 살짝 열려 있다.*"
+    },
+    "after2_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*유나가 고개를 든다. 놀라지 않는다.*"
+    },
+    "after2_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*유나가 고개를 든다. 놀라지 않는다.*"
+    },
+    "after2_yuna_8b_ins": {
+        "name": "{name}",
+        "text": "*옆에 앉는다. 유나가 자기 이어폰 한쪽을 건넨다.*"
+    },
+    "after2_yuna_8b_ins2": {
+        "name": "{name}",
+        "text": "*옆에 앉는다. 유나가 자기 이어폰 한쪽을 건넨다.*"
+    },
+    "after2_yuna_choice_pre3_ins": {
+        "name": "{name}",
+        "text": "*유나가 두 문장을 연속으로 말했다. — 원래 한 줄짜리 사람인데.*"
+    },
+    "after2_yuna_everyday_ins": {
+        "name": "유나",
+        "text": "...올 거면 와. 말리지는 않을게."
+    },
+    "minsu_warn_4_ins": {
+        "name": "{name}",
+        "text": "*유나가 아주 작게 — 입꼬리가 올라간다.*"
+    },
+    "minsu_warn_1_ins": {
+        "name": "민수",
+        "text": "*옆에 나란히 서며* \"너 요즘 재밌냐?"
+    },
+    "minsu_warn_7_ins": {
+        "name": "{name}",
+        "text": "*민수가 걸음을 멈춘다. 돌아본다. 평소의 장난기가 없다.*"
+    },
+    "minsu_warn_7_ins2": {
+        "name": "민수",
+        "text": "야, 나 1년 동안 이 반에 있었어. 서연이가 남한테 먼저 말 거는 거 한 번도 못 봤거든. 다인이가 다른 남자애한테 빵 사준 적도 없고. 유나는 — 쪽지? 아무한테도 안 써."
+    },
+    "minsu_warn_12_ins": {
+        "name": "{name}",
+        "text": "*민수가 가방 끈을 고쳐 매며.*"
+    },
+    "minsu_warn_13_ins": {
+        "name": "{name}",
+        "text": "*— 숨이 멈칫한다.*"
+    },
+    "minsu_warn_15_ins": {
+        "name": "다인",
+        "text": "내일도 내기하자!! 종목 바꿔서!!"
+    },
+    "minsu_warn_15_ins2": {
+        "name": "서연",
+        "text": "내일 점심에 옥상 열어놓을게. 와"
+    },
+    "minsu_warn_15_ins3": {
+        "name": "{name}",
+        "text": "*전 학교. — 그 단어가 가슴에 박혔다.*"
+    },
+    "minsu_warn_15_ins4": {
+        "name": "{name}",
+        "text": "*— 걷던 발걸음이 우뚝 멈췄다.*"
     }
 }

@@ -363,5 +363,201 @@
     "after1_pre_miss": {
         "name": "{name}",
         "text": "*Ich gehe weiter den Flur entlang.*"
+    },
+    "after_miss_dain_6_ins": {
+        "name": "{name}",
+        "text": "*Sie winkt und rennt los. — Beim Abstoppen hat sie ihr rechtes Bein leicht nachgezogen. Oder? Es ging zu schnell, um es genau zu sehen.*"
+    },
+    "after_miss_yuna_1_ins": {
+        "name": "{name}",
+        "text": "Hey, du hast das fallen lassen..."
+    },
+    "after_miss_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*Ich hebe es auf und halte es hin. Yuna bleibt stehen und nimmt das Lesezeichen.*"
+    },
+    "after_miss_yuna_3_ins": {
+        "name": "{name}",
+        "text": "*Und sie geht weiter.*"
+    },
+    "after_hidden_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "Ich hab nur... die Schule erkundet, ist ja der erste Tag."
+    },
+    "after_hidden_homeroom_3_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "Bis ins Lehrerzimmer gewandert? Das ist ungewöhnlich. — Komm kurz rein."
+    },
+    "after_homeroom_ok_ins": {
+        "name": "{name}",
+        "text": "*Die Lehrerin winkt und geht Richtung Lehrerzimmer.*"
+    },
+    "after_homeroom_ok_2_ins": {
+        "name": "{name}",
+        "text": "*Die Lehrerin hält kurz inne. Lehnt sich an die Flurwand.*"
+    },
+    "after_homeroom_honest_3_ins": {
+        "name": "{name}",
+        "text": "*Etwas Ähnliches? — Heißt das, sie hat vorher etwas anderes als Unterrichten gemacht?*"
+    },
+    "after_homeroom_honest_6_ins": {
+        "name": "{name}",
+        "text": "*'Pädagogisches Interesse'. — Sie ist jemand, der ihre Fürsorge hinter Berufsbezeichnungen versteckt.*"
+    },
+    "after_homeroom_honest_choice2a_ins": {
+        "name": "{name}",
+        "text": "*Sie hat es ehrlich zugegeben. — Die Fassade dieser Person bröckelt überraschend schnell.*"
+    },
+    "after_homeroom_honest_choice2b_ins": {
+        "name": "{name}",
+        "text": "*Sie hat gelacht. — Das ist das erste Mal, dass ich diese Person über einen Witz lachen sehe.*"
+    },
+    "after_homeroom_honest_choice2b_ins2": {
+        "name": "{name}",
+        "text": "*Die Lehrerin geht Richtung Lehrerzimmer — bleibt dann stehen. Nestelt an etwas in ihrer Tasche. Ein Kugelschreiber vielleicht?*"
+    },
+    "after_homeroom_honest_9_ins": {
+        "name": "{name}",
+        "text": "*Vorhin im Unterricht sagte sie 'Ich merk mir Namen beim ersten Mal'. — Es zweimal zu sagen, bedeutet etwas.*"
+    },
+    "after_hidden_nurse_intro_ins": {
+        "name": "{name}",
+        "text": "*Da ist das Schild vom Krankenzimmer. — Schauen wir mal rein.*"
+    },
+    "after_hidden_nurse_intro_ins2": {
+        "name": "{name}",
+        "text": "*Ich öffne die Tür zum Krankenzimmer. Ein leichter Desinfektionsgeruch. Weiße Vorhänge, weiße Betten, ein kleiner Schreibtisch.*"
+    },
+    "after_nurse_enter_2_ins": {
+        "name": "{name}",
+        "text": "*Ihr Ton ist locker. Eher wie in einem Café als in einer Krankenstation.*"
+    },
+    "after_nurse_enter_4_ins": {
+        "name": "{name}",
+        "text": "Woher wissen Sie das?"
+    },
+    "after_nurse_enter_4_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "Deine Uniform ist steif wie ein Brett. Riecht auch nach Stärke.\" *Schnüffel* \"Oh, da ist auch Kirschblütenduft dabei. Ein romantischer Austauschschüler.\""
+    },
+    "after_nurse_enter_4_ins3": {
+        "name": "{name}",
+        "text": "*Ist sie aufmerksam oder neckt sie mich nur? — Wahrscheinlich beides.*"
+    },
+    "after_nurse_enter_4_ins4": {
+        "name": "{name}",
+        "text": "*Die Krankenschwester steht auf und kommt herüber. Ihre Bewegungen sind geschmeidig. — Weit über dem Niveau einer gewöhnlichen Schulkrankenschwester. Dem Körper eingeprägte Bewegungen. Die Hände von jemandem, der das hunderte Male gemacht hat.*"
+    },
+    "after_nurse_enter_6_ins": {
+        "name": "{name}",
+        "text": "Kann man den Blutdruck fühlen, wenn man die Stirn berührt?"
+    },
+    "after_nurse_enter_7_ins": {
+        "name": "{name}",
+        "text": "*Ich lege mich aufs Bett. Die Decke ist weiß.*"
+    },
+    "after_nurse_enter_7_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "*Zieht den Vorhang halb zu* \"Willst du Wasser? Oder etwas Warmes?\""
+    },
+    "after_nurse_enter_7_ins3": {
+        "name": "{name}",
+        "text": "Wasser reicht."
+    },
+    "after_nurse_enter_8_ins": {
+        "name": "{name}",
+        "text": "Aber Sie sind doch Lehrerin."
+    },
+    "after_nurse_enter_8_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "*Reicht ein Glas Wasser* \"Stimmt, bin ich. ...Vergess ich manchmal.\""
+    },
+    "after_nurse_enter_8_ins3": {
+        "name": "{name}",
+        "text": "*Vergisst sie manchmal. — Klingt wie ein Scherz, aber da steckt ein Funken Wahrheit drin.*"
+    },
+    "after_nurse_enter_9_ins": {
+        "name": "{name}",
+        "text": "Die Pflanze da — gehört die Ihnen?"
+    },
+    "after_nurse_enter_9_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "Ja, Rosmarin. — Den hab ich noch aus meiner Zeit im Krankenhaus."
+    },
+    "after_nurse_enter_9_ins3": {
+        "name": "{name}",
+        "text": "Krankenhaus?"
+    },
+    "after_nurse_enter_9_ins4": {
+        "name": "{name}",
+        "text": "*Die Krankenschwester hält kurz inne. Dann lächelt sie.*"
+    },
+    "after_nurse_enter_10_ins": {
+        "name": "{name}",
+        "text": "*'Nur leichte Verletzungen'. — In diesen Worten liegt Erleichterung. Es heißt auch, dass sie viele gesehen hat, die nicht leicht waren.*"
+    },
+    "after_nurse_enter_10_ins2": {
+        "name": "{name}",
+        "text": "*Zehn Minuten vergehen. Ich stehe auf.*"
+    },
+    "after_nurse_enter_10_ins3": {
+        "name": "{name}",
+        "text": "Danke. Mir geht's etwas besser."
+    },
+    "after_nurse_enter_11_ins": {
+        "name": "{name}",
+        "text": "Ihnen Sorgen machen?"
+    },
+    "after_nurse_enter_11_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "*Verengt die Augen* \"Wenn ein Patient immer wiederkommt, mache ich mir natürlich Sorgen. — Weil ich Lehrerin bin.\""
+    },
+    "after_nurse_enter_11_ins3": {
+        "name": "{name}",
+        "text": "*'Weil ich Lehrerin bin.' — Dieser Satz ist wie ein Schutzschild. Sie versteckt etwas hinter der Bezeichnung 'Lehrerin'.*"
+    },
+    "after_nurse_enter_11_ins4": {
+        "name": "{name}",
+        "text": "*Die Krankenschwester hält kurz inne. Ihr Lächeln kehrt 0,3 Sekunden verspätet zurück.*"
+    },
+    "after_nurse_enter_11_ins5": {
+        "name": "Schulkrankenschwester",
+        "text": "...Du bist ein aufmerksamer Patient. Dabei sollte ich diejenige sein, die sich Sorgen macht."
+    },
+    "after_nurse_enter_11_ins6": {
+        "name": "{name}",
+        "text": "*Sie wirkt überrascht, dass sich ein Patient um sie sorgt. — Sie war immer die, die sich kümmert, nie die, um die man sich kümmert.*"
+    },
+    "after_nurse_enter_11_ins7": {
+        "name": "Schulkrankenschwester",
+        "text": "Nicht wahr? Es ist schön hier. — Ruhig, und wenn man vom Desinfektionsgeruch absieht, perfekt."
+    },
+    "after_nurse_enter_11_ins8": {
+        "name": "{name}",
+        "text": "*Als sie hört, dass es gemütlich ist, leuchten ihre Augen auf. — Dieser Raum muss ihr Zufluchtsort sein.*"
+    },
+    "after_nurse_enter_11_ins9": {
+        "name": "{name}",
+        "text": "*Ich gehe gerade aus dem Krankenzimmer, als — von hinten.*"
+    },
+    "after_nurse_enter_11_ins10": {
+        "name": "Schulkrankenschwester",
+        "text": "Oh, Austauschschüler."
+    },
+    "after_nurse_enter_11_ins11": {
+        "name": "Schulkrankenschwester",
+        "text": "Wie heißt du eigentlich?"
+    },
+    "after_nurse_enter_11_ins12": {
+        "name": "{name}",
+        "text": "{name}."
+    },
+    "after_nurse_enter_12_ins": {
+        "name": "{name}",
+        "text": "*Ein leichtes Lachen, aber ihre Augen lachen nicht mit. — Bei dieser Person ist die Grenze zwischen Scherz und Ernst immer verschwommen.*"
+    },
+    "after_nurse_enter_12_ins2": {
+        "name": "{name}",
+        "text": "*Für heute habe ich genug erkundet. Gehen wir nach Hause und ruhen uns aus.*"
     }
 }

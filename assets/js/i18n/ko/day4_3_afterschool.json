@@ -1,270 +1,522 @@
 {
-  "confess_seo_1": {
-    "name": "{name}",
-    "text": "*데이트가 끝나가고 있다. 서연이 학교 쪽으로 발길을 돌린다.*"
-  },
-  "confess_seo_2": {
-    "name": "서연",
-    "text": "마지막으로 보여줄 데가 있어."
-  },
-  "confess_seo_3": {
-    "name": "{name}",
-    "text": "*옥상. 석양이 학교를 물들이고 있다. Day 1에서 처음 왔던 바로 그 장소.*"
-  },
-  "confess_seo_4": {
-    "name": "{name}",
-    "text": "*서연이 난간에 기대서 있다. 바람에 머리카락이 날린다. — 새끼손가락으로 넘기는 그 습관.*"
-  },
-  "confess_seo_5": {
-    "name": "{name}",
-    "text": "*— 근데 이미 늦었다.*"
-  },
-  "confess_seo_choice": {
-    "name": "{name}",
-    "text": "*손끝이 차갑다. 바람이 안 부는데. 지금 말하지 않으면 — 다시는 이 용기가 안 날 것 같다.*",
-    "choices": [
-      "도망치면 내가 쫓아갈 거 알잖아. 그냥 여기서 얘기해.",
-      "...바람 좋다."
-    ]
-  },
-  "confess_seo_yes_1": {
-    "name": "{name}",
-    "text": "있잖아."
-  },
-  "confess_seo_yes_2": {
-    "name": "{name}",
-    "text": "*난간을 잡은 손에 힘이 들어간다. 입을 열었다. 소리가 안 난다.*"
-  },
-  "confess_seo_yes_3": {
-    "name": "{name}",
-    "text": "*전 학교에서 못 했던 말이 떠오른다. 그때 말했으면 어땠을까, 라고 수백 번 되뇌었던 그 후회. — 이번에는 고백한다.*"
-  },
-  "confess_seo_yes_4": {
-    "name": "{name}",
-    "text": "서연아. 너 완벽하게 웃잖아. 항상. 근데 나는 — 네가 웃다가 멈추는 그 0.5초가 자꾸 신경 쓰여."
-  },
-  "confess_seo_yes_5": {
-    "name": "{name}",
-    "text": "*말이 엉망이다. 준비한 것도 아닌데 멈출 수가 없다.*"
-  },
-  "confess_seo_yes_6": {
-    "name": "{name}",
-    "text": "그 순간의 네가 진짜 서연인 것 같아서. 그 서연이 좋아해."
-  },
-  "confess_seo_yes_7": {
-    "name": "{name}",
-    "text": "*말이 옥상 바람에 떠 있다. 서연이 숨을 멈춘다.*"
-  },
-  "confess_seo_yes_8": {
-    "name": "{name}",
-    "text": "*서연이 아무 말도 안 한다. 입술이 떨린다. 학생회장이 아닌, 그냥 한 명의 여자아이가 거기 서 있다.*"
-  },
-  "confess_seo_yes_9": {
-    "name": "서연",
-    "text": "...나도."
-  },
-  "confess_seo_yes_10": {
-    "name": "서연",
-    "text": "...네가 교문 앞에서 '과분한데'라고 했을 때부터."
-  },
-  "confess_seo_yes_11": {
-    "name": "서연",
-    "text": "— 이 말 하려고 얼마나 참았는지 몰라."
-  },
-  "confess_seo_yes_12": {
-    "name": "{name}",
-    "text": "*서연이 새끼손가락을 건넨다. Day 1에서 봤던 새끼손가락. — 그때는 습관인 줄 알았는데, 이게 서연의 약속 방식이었다.*"
-  },
-  "confess_seo_no_1": {
-    "name": "{name}",
-    "text": "...바람 좋다."
-  },
-  "confess_seo_no_2": {
-    "name": "{name}",
-    "text": "*Day 1에서도 같은 말을 했다. 그때는 진심이었는데. 지금은 도망이다.*"
-  },
-  "confess_seo_no_3": {
-    "name": "{name}",
-    "text": "*서연이 웃는다. 연습된 웃음으로. — 돌아서서 걷는다. 세 걸음째, 서연이 멈춘다.*"
-  },
-  "confess_seo_no_4": {
-    "name": "서연",
-    "text": "...다음에 올 때는, 다른 말 준비해 와."
-  },
-  "confess_yuna_1": {
-    "name": "{name}",
-    "text": "*데이트가 끝나가고 있다. 유나가 걸음을 멈춘다.*"
-  },
-  "confess_yuna_2": {
-    "name": "유나",
-    "text": "...마지막으로 갈 데가 있어."
-  },
-  "confess_yuna_3": {
-    "name": "{name}",
-    "text": "*도서관 별관. 비밀 독서 공간. 창문으로 석양이 스며든다. Day 2에서 처음 왔던 바로 그 장소.*"
-  },
-  "confess_yuna_4": {
-    "name": "{name}",
-    "text": "*유나가 소파에 앉아 나를 본다. 기다리고 있었다는 듯이.*"
-  },
-  "confess_yuna_5": {
-    "name": "{name}",
-    "text": "*— 근데 이미 늦었다.*"
-  },
-  "confess_yuna_choice": {
-    "name": "{name}",
-    "text": "*숨이 짧아졌다. 방 안이 좁아진 것 같다. 지금 말하지 않으면 — 다시는 이 용기가 안 날 것 같다.*",
-    "choices": [
-      "도망치면 내가 쫓아갈 거 알잖아. 그냥 여기서 얘기해.",
-      "...여기 진짜 좋다."
-    ]
-  },
-  "confess_yuna_yes_1": {
-    "name": "{name}",
-    "text": "있잖아."
-  },
-  "confess_yuna_yes_2": {
-    "name": "{name}",
-    "text": "*입을 열었다가 닫았다. 소리 없이. 두 번째 시도.*"
-  },
-  "confess_yuna_yes_3": {
-    "name": "{name}",
-    "text": "유나. 처음에 네가 말 안 하는 게 벽인 줄 알았어. 근데 아니더라."
-  },
-  "confess_yuna_yes_4": {
-    "name": "{name}",
-    "text": "*유나 앞에서는 긴 말이 필요 없다. 이 사람은 행간을 읽는 사람이니까.*"
-  },
-  "confess_yuna_yes_5": {
-    "name": "{name}",
-    "text": "너는 — 말 대신 옆에 앉아주는 사람이었어. 그 침묵이 누구의 말보다 따뜻했어."
-  },
-  "confess_yuna_yes_6": {
-    "name": "{name}",
-    "text": "좋아해."
-  },
-  "confess_yuna_yes_7": {
-    "name": "{name}",
-    "text": "*글자가 조용한 방 안에 적혀 있는 것 같다. 유나의 눈이 커진다.*"
-  },
-  "confess_yuna_yes_8": {
-    "name": "{name}",
-    "text": "*유나의 무표정이 갈라져 있다. 나른한 목소리가 사라지고, 아주 작은 — 거의 안 들리는 목소리로. 옷소매를 꽉 쥔다.*"
-  },
-  "confess_yuna_yes_9": {
-    "name": "유나",
-    "text": "...가지 마. 이번엔 가지 마."
-  },
-  "confess_yuna_no_1": {
-    "name": "{name}",
-    "text": "...여기 진짜 좋다."
-  },
-  "confess_yuna_no_2": {
-    "name": "{name}",
-    "text": "*유나는 행간을 읽는 사람이다. 이 말이 도망이라는 걸 알고 있을 거다.*"
-  },
-  "confess_yuna_no_3": {
-    "name": "{name}",
-    "text": "*유나가 책을 집어든다. 표지를 보고 있지만 읽고 있지 않다.*"
-  },
-  "confess_yuna_no_4": {
-    "name": "유나",
-    "text": "...결말은 아직이야."
-  },
-  "confess_dain_1": {
-    "name": "{name}",
-    "text": "*데이트가 끝나가고 있다. 다인이 학교 쪽으로 뛰어간다.*"
-  },
-  "confess_dain_2": {
-    "name": "다인",
-    "text": "마지막! 한 군데만 더 가자!!"
-  },
-  "confess_dain_3": {
-    "name": "{name}",
-    "text": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다. Day 1에서 처음 같이 왔던 바로 그 장소.*"
-  },
-  "confess_dain_4": {
-    "name": "{name}",
-    "text": "*다인이 공을 하나 들고 있다. 아무렇지 않게. — 근데 손가락이 하얗다. 꽉 쥐고 있다.*"
-  },
-  "confess_dain_5": {
-    "name": "{name}",
-    "text": "*— 근데 이미 늦었다.*"
-  },
-  "confess_dain_choice": {
-    "name": "{name}",
-    "text": "*체육관 바닥이 흔들리는 것 같다. 지금 말하지 않으면 — 다시는 이 용기가 안 날 것 같다.*",
-    "choices": [
-      "도망치면 내가 쫓아갈 거 알잖아. 그냥 여기서 얘기해.",
-      "...한 판 더 할까?"
-    ]
-  },
-  "confess_dain_yes_1": {
-    "name": "{name}",
-    "text": "있잖아."
-  },
-  "confess_dain_yes_2": {
-    "name": "{name}",
-    "text": "*공을 잡은 채로 멈췄다. 목이 타들어간다.*"
-  },
-  "confess_dain_yes_3": {
-    "name": "{name}",
-    "text": "다인아. 너 웃을 때 눈이 반달 모양 되는 거 알아? 모를 거야, 자기 얼굴이니까."
-  },
-  "confess_dain_yes_4": {
-    "name": "{name}",
-    "text": "*가위바위보 고백도 아니고. 근데 이게 나한테는 전부다.*"
-  },
-  "confess_dain_yes_5": {
-    "name": "{name}",
-    "text": "— 그 눈이 나를 안 볼 때 숨이 답답해. 언제부터 이랬는지 모르겠어."
-  },
-  "confess_dain_yes_6": {
-    "name": "{name}",
-    "text": "좋아해."
-  },
-  "confess_dain_yes_7": {
-    "name": "{name}",
-    "text": "*세 글자가 텅 빈 체육관에 메아리친다. Day 1에서 체육관 콜?이라고 했던 이 장소에서.*"
-  },
-  "confess_dain_yes_8": {
-    "name": "{name}",
-    "text": "*다인이 멈춰 있다. 에너지가 사라졌다. — 그리고 눈이 천천히 차오른다. 두 손으로 얼굴을 푹 가려버린다. 목덜미까지 달아올라 있다.*"
-  },
-  "confess_dain_yes_9": {
-    "name": "다인",
-    "text": "...잠깐. 숨차 — 나 지금 울 것 같은데 — 왜 울어, 기쁜 건데 —"
-  },
-  "confess_dain_yes_10": {
-    "name": "다인",
-    "text": "나도 좋아해. 엄청."
-  },
-  "confess_dain_no_1": {
-    "name": "{name}",
-    "text": "...한 판 더 할까?"
-  },
-  "confess_dain_no_2": {
-    "name": "{name}",
-    "text": "*토스를 올려주는 건 되는데, 세 글자는 안 된다. 한심하다.*"
-  },
-  "confess_dain_no_3": {
-    "name": "{name}",
-    "text": "*다인이 배구공을 튀긴다. 한 번. 두 번. — 세 번째에 멈춘다.*"
-  },
-  "confess_dain_no_4": {
-    "name": "다인",
-    "text": "...다음에는 도망치지 마."
-  },
-  "confess_yuna_3b": {
-    "name": "{name}",
-    "text": "*도서관 별관. 창문으로 석양이 스며든다. 며칠 사이에 익숙해진 장소.*"
-  },
-  "confess_seo_3b": {
-    "name": "{name}",
-    "text": "*옥상. 석양이 학교를 물들이고 있다. 며칠 사이에 익숙해진 장소.*"
-  },
-  "confess_dain_3b": {
-    "name": "{name}",
-    "text": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다. 며칠 사이에 수많은 추억이 쌓인 장소.*"
-  }
+    "confess_seo_1": {
+        "name": "{name}",
+        "text": "*데이트가 끝나가고 있다. 서연이 학교 쪽으로 발길을 돌린다.*"
+    },
+    "confess_seo_2": {
+        "name": "서연",
+        "text": "마지막으로 보여줄 데가 있어."
+    },
+    "confess_seo_3": {
+        "name": "{name}",
+        "text": "*옥상. 석양이 학교를 물들이고 있다. Day 1에서 처음 왔던 바로 그 장소.*"
+    },
+    "confess_seo_4": {
+        "name": "{name}",
+        "text": "*서연이 난간에 기대서 있다. 바람에 머리카락이 날린다. — 새끼손가락으로 넘기는 그 습관.*"
+    },
+    "confess_seo_5": {
+        "name": "{name}",
+        "text": "*— 근데 이미 늦었다.*"
+    },
+    "confess_seo_choice": {
+        "name": "{name}",
+        "text": "*손끝이 차갑다. 바람이 안 부는데. 지금 말하지 않으면 — 다시는 이 용기가 안 날 것 같다.*",
+        "choices": [
+            "도망치면 내가 쫓아갈 거 알잖아. 그냥 여기서 얘기해.",
+            "...바람 좋다."
+        ]
+    },
+    "confess_seo_yes_1": {
+        "name": "{name}",
+        "text": "있잖아."
+    },
+    "confess_seo_yes_2": {
+        "name": "{name}",
+        "text": "*난간을 잡은 손에 힘이 들어간다. 입을 열었다. 소리가 안 난다.*"
+    },
+    "confess_seo_yes_3": {
+        "name": "{name}",
+        "text": "*전 학교에서 못 했던 말이 떠오른다. 그때 말했으면 어땠을까, 라고 수백 번 되뇌었던 그 후회. — 이번에는 고백한다.*"
+    },
+    "confess_seo_yes_4": {
+        "name": "{name}",
+        "text": "서연아. 너 완벽하게 웃잖아. 항상. 근데 나는 — 네가 웃다가 멈추는 그 0.5초가 자꾸 신경 쓰여."
+    },
+    "confess_seo_yes_5": {
+        "name": "{name}",
+        "text": "*말이 엉망이다. 준비한 것도 아닌데 멈출 수가 없다.*"
+    },
+    "confess_seo_yes_6": {
+        "name": "{name}",
+        "text": "그 순간의 네가 진짜 서연인 것 같아서. 그 서연이 좋아해."
+    },
+    "confess_seo_yes_7": {
+        "name": "{name}",
+        "text": "*말이 옥상 바람에 떠 있다. 서연이 숨을 멈춘다.*"
+    },
+    "confess_seo_yes_8": {
+        "name": "{name}",
+        "text": "*서연이 아무 말도 안 한다. 입술이 떨린다. 학생회장이 아닌, 그냥 한 명의 여자아이가 거기 서 있다.*"
+    },
+    "confess_seo_yes_9": {
+        "name": "서연",
+        "text": "...나도."
+    },
+    "confess_seo_yes_10": {
+        "name": "서연",
+        "text": "...네가 교문 앞에서 '과분한데'라고 했을 때부터."
+    },
+    "confess_seo_yes_11": {
+        "name": "서연",
+        "text": "— 이 말 하려고 얼마나 참았는지 몰라."
+    },
+    "confess_seo_yes_12": {
+        "name": "{name}",
+        "text": "*서연이 새끼손가락을 건넨다. Day 1에서 봤던 새끼손가락. — 그때는 습관인 줄 알았는데, 이게 서연의 약속 방식이었다.*"
+    },
+    "confess_seo_no_1": {
+        "name": "{name}",
+        "text": "...바람 좋다."
+    },
+    "confess_seo_no_2": {
+        "name": "{name}",
+        "text": "*Day 1에서도 같은 말을 했다. 그때는 진심이었는데. 지금은 도망이다.*"
+    },
+    "confess_seo_no_3": {
+        "name": "{name}",
+        "text": "*서연이 웃는다. 연습된 웃음으로. — 돌아서서 걷는다. 세 걸음째, 서연이 멈춘다.*"
+    },
+    "confess_seo_no_4": {
+        "name": "서연",
+        "text": "...다음에 올 때는, 다른 말 준비해 와."
+    },
+    "confess_yuna_1": {
+        "name": "{name}",
+        "text": "*데이트가 끝나가고 있다. 유나가 걸음을 멈춘다.*"
+    },
+    "confess_yuna_2": {
+        "name": "유나",
+        "text": "...마지막으로 갈 데가 있어."
+    },
+    "confess_yuna_3": {
+        "name": "{name}",
+        "text": "*도서관 별관. 비밀 독서 공간. 창문으로 석양이 스며든다. Day 2에서 처음 왔던 바로 그 장소.*"
+    },
+    "confess_yuna_4": {
+        "name": "{name}",
+        "text": "*유나가 소파에 앉아 나를 본다. 기다리고 있었다는 듯이.*"
+    },
+    "confess_yuna_5": {
+        "name": "{name}",
+        "text": "*— 근데 이미 늦었다.*"
+    },
+    "confess_yuna_choice": {
+        "name": "{name}",
+        "text": "*숨이 짧아졌다. 방 안이 좁아진 것 같다. 지금 말하지 않으면 — 다시는 이 용기가 안 날 것 같다.*",
+        "choices": [
+            "도망치면 내가 쫓아갈 거 알잖아. 그냥 여기서 얘기해.",
+            "...여기 진짜 좋다."
+        ]
+    },
+    "confess_yuna_yes_1": {
+        "name": "{name}",
+        "text": "있잖아."
+    },
+    "confess_yuna_yes_2": {
+        "name": "{name}",
+        "text": "*입을 열었다가 닫았다. 소리 없이. 두 번째 시도.*"
+    },
+    "confess_yuna_yes_3": {
+        "name": "{name}",
+        "text": "유나. 처음에 네가 말 안 하는 게 벽인 줄 알았어. 근데 아니더라."
+    },
+    "confess_yuna_yes_4": {
+        "name": "{name}",
+        "text": "*유나 앞에서는 긴 말이 필요 없다. 이 사람은 행간을 읽는 사람이니까.*"
+    },
+    "confess_yuna_yes_5": {
+        "name": "{name}",
+        "text": "너는 — 말 대신 옆에 앉아주는 사람이었어. 그 침묵이 누구의 말보다 따뜻했어."
+    },
+    "confess_yuna_yes_6": {
+        "name": "{name}",
+        "text": "좋아해."
+    },
+    "confess_yuna_yes_7": {
+        "name": "{name}",
+        "text": "*글자가 조용한 방 안에 적혀 있는 것 같다. 유나의 눈이 커진다.*"
+    },
+    "confess_yuna_yes_8": {
+        "name": "{name}",
+        "text": "*유나의 무표정이 갈라져 있다. 나른한 목소리가 사라지고, 아주 작은 — 거의 안 들리는 목소리로. 옷소매를 꽉 쥔다.*"
+    },
+    "confess_yuna_yes_9": {
+        "name": "유나",
+        "text": "...가지 마. 이번엔 가지 마."
+    },
+    "confess_yuna_no_1": {
+        "name": "{name}",
+        "text": "...여기 진짜 좋다."
+    },
+    "confess_yuna_no_2": {
+        "name": "{name}",
+        "text": "*유나는 행간을 읽는 사람이다. 이 말이 도망이라는 걸 알고 있을 거다.*"
+    },
+    "confess_yuna_no_3": {
+        "name": "{name}",
+        "text": "*유나가 책을 집어든다. 표지를 보고 있지만 읽고 있지 않다.*"
+    },
+    "confess_yuna_no_4": {
+        "name": "유나",
+        "text": "...결말은 아직이야."
+    },
+    "confess_dain_1": {
+        "name": "{name}",
+        "text": "*데이트가 끝나가고 있다. 다인이 학교 쪽으로 뛰어간다.*"
+    },
+    "confess_dain_2": {
+        "name": "다인",
+        "text": "마지막! 한 군데만 더 가자!!"
+    },
+    "confess_dain_3": {
+        "name": "{name}",
+        "text": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다. Day 1에서 처음 같이 왔던 바로 그 장소.*"
+    },
+    "confess_dain_4": {
+        "name": "{name}",
+        "text": "*다인이 공을 하나 들고 있다. 아무렇지 않게. — 근데 손가락이 하얗다. 꽉 쥐고 있다.*"
+    },
+    "confess_dain_5": {
+        "name": "{name}",
+        "text": "*— 근데 이미 늦었다.*"
+    },
+    "confess_dain_choice": {
+        "name": "{name}",
+        "text": "*체육관 바닥이 흔들리는 것 같다. 지금 말하지 않으면 — 다시는 이 용기가 안 날 것 같다.*",
+        "choices": [
+            "도망치면 내가 쫓아갈 거 알잖아. 그냥 여기서 얘기해.",
+            "...한 판 더 할까?"
+        ]
+    },
+    "confess_dain_yes_1": {
+        "name": "{name}",
+        "text": "있잖아."
+    },
+    "confess_dain_yes_2": {
+        "name": "{name}",
+        "text": "*공을 잡은 채로 멈췄다. 목이 타들어간다.*"
+    },
+    "confess_dain_yes_3": {
+        "name": "{name}",
+        "text": "다인아. 너 웃을 때 눈이 반달 모양 되는 거 알아? 모를 거야, 자기 얼굴이니까."
+    },
+    "confess_dain_yes_4": {
+        "name": "{name}",
+        "text": "*가위바위보 고백도 아니고. 근데 이게 나한테는 전부다.*"
+    },
+    "confess_dain_yes_5": {
+        "name": "{name}",
+        "text": "— 그 눈이 나를 안 볼 때 숨이 답답해. 언제부터 이랬는지 모르겠어."
+    },
+    "confess_dain_yes_6": {
+        "name": "{name}",
+        "text": "좋아해."
+    },
+    "confess_dain_yes_7": {
+        "name": "{name}",
+        "text": "*세 글자가 텅 빈 체육관에 메아리친다. Day 1에서 체육관 콜?이라고 했던 이 장소에서.*"
+    },
+    "confess_dain_yes_8": {
+        "name": "{name}",
+        "text": "*다인이 멈춰 있다. 에너지가 사라졌다. — 그리고 눈이 천천히 차오른다. 두 손으로 얼굴을 푹 가려버린다. 목덜미까지 달아올라 있다.*"
+    },
+    "confess_dain_yes_9": {
+        "name": "다인",
+        "text": "...잠깐. 숨차 — 나 지금 울 것 같은데 — 왜 울어, 기쁜 건데 —"
+    },
+    "confess_dain_yes_10": {
+        "name": "다인",
+        "text": "나도 좋아해. 엄청."
+    },
+    "confess_dain_no_1": {
+        "name": "{name}",
+        "text": "...한 판 더 할까?"
+    },
+    "confess_dain_no_2": {
+        "name": "{name}",
+        "text": "*토스를 올려주는 건 되는데, 세 글자는 안 된다. 한심하다.*"
+    },
+    "confess_dain_no_3": {
+        "name": "{name}",
+        "text": "*다인이 배구공을 튀긴다. 한 번. 두 번. — 세 번째에 멈춘다.*"
+    },
+    "confess_dain_no_4": {
+        "name": "다인",
+        "text": "...다음에는 도망치지 마."
+    },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*도서관 별관. 창문으로 석양이 스며든다. 며칠 사이에 익숙해진 장소.*"
+    },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*옥상. 석양이 학교를 물들이고 있다. 며칠 사이에 익숙해진 장소.*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다. 며칠 사이에 수많은 추억이 쌓인 장소.*"
+    },
+    "confess_seo_4_ins": {
+        "name": "{name}",
+        "text": "*전 학교에서 못 했던 말이 떠오른다. — 이번에는 고백한다.*"
+    },
+    "confess_seo_yes_11_ins": {
+        "name": "{name}",
+        "text": "*서연이 새끼손가락을 건넨다.*"
+    },
+    "confess_seo_no_4_ins": {
+        "name": "{name}",
+        "text": "*등이 곧다. 떨리고 있다.*"
+    },
+    "confess_yuna_yes_3_ins": {
+        "name": "{name}",
+        "text": "너는 — 말 대신 옆에 앉아주는 사람이었어."
+    },
+    "confess_yuna_yes_6_ins": {
+        "name": "{name}",
+        "text": "*이 방에서 제일 긴 문장을 내가 했다. — 유나의 영역에서.*"
+    },
+    "confess_yuna_yes_8_ins": {
+        "name": "{name}",
+        "text": "*옷소매를 꽉 쥔다.*"
+    },
+    "confess_yuna_yes_8_ins2": {
+        "name": "유나",
+        "text": "...가지 마."
+    },
+    "confess_yuna_yes_9_ins": {
+        "name": "{name}",
+        "text": "*'이번엔'. — 전에 떠난 사람이 있었다. 유나는 다시 그 상처를 꺼내면서도, 나를 잡고 있다.*"
+    },
+    "confess_yuna_no_4_ins": {
+        "name": "{name}",
+        "text": "*세 걸음 뒤에서 돌아봤다. 유나도 책 너머로 이쪽을 보고 있었다.*"
+    },
+    "confess_dain_yes_3_ins": {
+        "name": "{name}",
+        "text": "그 눈이 나를 안 볼 때 — 좀 답답해."
+    },
+    "confess_dain_yes_8_ins": {
+        "name": "{name}",
+        "text": "*두 손으로 얼굴을 가린다. 손가락 사이로 빨간 볼이 보인다.*"
+    },
+    "confess_dain_yes_9_ins": {
+        "name": "{name}",
+        "text": "*손을 내리고 웃는다. 눈물이 흐르고 있다.*"
+    },
+    "confess_dain_yes_10_ins": {
+        "name": "{name}",
+        "text": "*'엄청'. — 다인의 감정 표현은 단순하다. 근데 그 단순함이 진심의 증거다.*"
+    },
+    "confess_dain_no_4_ins": {
+        "name": "{name}",
+        "text": "*느낌표가 없다. — 진심이다.*"
+    },
+    "confess_dain_no_4_ins2": {
+        "name": "{name}",
+        "text": "*메인 3인의 고백 씬은 정상 진행된다. 이 히든 이벤트는 Day 4 이른 아침 시간대에 메인 데이트 전 별도로 재생된다. Day 4 메인 고백을 보류(`day4_waited`)했을 경우에만, Day 5에서 히든 캐릭터를 최종 선택할 수 있는 분기가 추가된다.*"
+    },
+    "confess_dain_no_4_ins3": {
+        "name": "{name}",
+        "text": "*주말 이른 아침. 등교 전 카페에 가려다 — 학교 앞을 지나는데, 빈 교실에 불이 켜져 있다.*"
+    },
+    "confess_dain_no_4_ins4": {
+        "name": "{name}",
+        "text": "*담임이 창가에 서 있다. 손에 원고 뭉치를 들고 있다. 아침 햇살이 종이 위를 물들이고 있다.*"
+    },
+    "confess_dain_no_4_ins5": {
+        "name": "담임선생님",
+        "text": "...와줬네."
+    },
+    "confess_dain_no_4_ins6": {
+        "name": "{name}",
+        "text": "부르셨잖아요."
+    },
+    "confess_dain_no_4_ins7": {
+        "name": "담임선생님",
+        "text": "부른 적 없어.\" *잠깐 멈추고* \"...근데 올 줄 알았어."
+    },
+    "confess_dain_no_4_ins8": {
+        "name": "{name}",
+        "text": "*이 사람은 부르지 않고 기다리는 사람이다. — 그게 7년간 원고를 서랍에 넣어두었던 이유이기도 하다.*"
+    },
+    "confess_dain_no_4_ins9": {
+        "name": "{name}",
+        "text": "*담임이 원고를 내민다. 표지에 제목이 적혀 있다. — 처음 보는 제목이다.*"
+    },
+    "confess_dain_no_4_ins10": {
+        "name": "담임선생님",
+        "text": "첫 번째 독자한테... 마지막 장을 보여주고 싶었어."
+    },
+    "confess_dain_no_4_ins11": {
+        "name": "{name}",
+        "text": "마지막 장이요?"
+    },
+    "confess_dain_no_4_ins12": {
+        "name": "담임선생님",
+        "text": "7년 걸렸어. — 쓰는 데 3년, 끝내는 데 4년."
+    },
+    "confess_dain_no_4_ins13": {
+        "name": "{name}",
+        "text": "*끝내는 데 4년. — 시작보다 끝이 어려운 사람이다. 글도, 감정도.*"
+    },
+    "confess_dain_no_4_ins14": {
+        "name": "{name}",
+        "text": "*원고를 받는다. 읽기 시작한다. — 담임이 창밖을 본다. 아침 햇살. 손끝이 미세하게 떨린다.*"
+    },
+    "confess_dain_no_4_ins15": {
+        "name": "{name}",
+        "text": "*읽는 동안 담임은 한 마디도 하지 않는다. 창밖만 보고 있다. — 근데 유리창에 비친 눈이 나를 향해 있다.*"
+    },
+    "confess_dain_no_4_ins16": {
+        "name": "{name}",
+        "text": "*마지막 장. — 한 문장으로 끝난다. 그 문장을 읽는 순간, 이 원고가 왜 7년 걸렸는지 알 것 같다.*"
+    },
+    "confess_dain_no_4_ins17": {
+        "name": "{name}",
+        "text": "...좋아요. 이 결말."
+    },
+    "confess_dain_no_4_ins18": {
+        "name": "{name}",
+        "text": "*담임의 어깨에서 힘이 빠진다. 아주 천천히.*"
+    },
+    "confess_dain_no_4_ins19": {
+        "name": "담임선생님",
+        "text": "...그래?"
+    },
+    "confess_dain_no_4_ins20": {
+        "name": "담임선생님",
+        "text": "...그래."
+    },
+    "confess_dain_no_4_ins21": {
+        "name": "{name}",
+        "text": "*두 번째 '그래'에 목소리가 갈라졌다. — 첫 번째 독자의 첫 번째 감상. 7년을 기다린 한마디.*"
+    },
+    "confess_dain_no_4_ins22": {
+        "name": "{name}",
+        "text": "*메인 3인의 고백 씬은 정상 진행된다. 이 히든 이벤트는 Day 4 아침 시간대에 메인 데이트 전 별도로 재생된다. Day 4 메인 고백을 보류(`day4_waited`)했을 경우에만, Day 5에서 히든 캐릭터를 최종 선택할 수 있는 분기가 추가된다.*"
+    },
+    "confess_dain_no_4_ins23": {
+        "name": "{name}",
+        "text": "*주말 아침. 습관처럼 보건실로 향한다. — 습관이 된 건 언제부터였지.*"
+    },
+    "confess_dain_no_4_ins24": {
+        "name": "{name}",
+        "text": "*보건실 문을 열었다. 보건선생님이 의자에 앉아 있다. 흰 가운 차림. — 근데 평소와 다르다. 장난기가 없다.*"
+    },
+    "confess_dain_no_4_ins25": {
+        "name": "보건선생님",
+        "text": "어, 왔어."
+    },
+    "confess_dain_no_4_ins26": {
+        "name": "{name}",
+        "text": "*'어, 왔어'가 평소보다 반 톤 낮다. — 이 사람의 감정은 톤으로 읽어야 한다.*"
+    },
+    "confess_dain_no_4_ins27": {
+        "name": "{name}",
+        "text": "마지막 상담이에요?"
+    },
+    "confess_dain_no_4_ins28": {
+        "name": "보건선생님",
+        "text": "상담이라...\" *의자를 돌리며* \"맞아. 마지막 상담."
+    },
+    "confess_dain_no_4_ins29": {
+        "name": "{name}",
+        "text": "*보건선생님이 책상 위 서류를 정리하는 척하지만 — 같은 종이를 세 번째 넘기고 있다.*"
+    },
+    "confess_dain_no_4_ins30": {
+        "name": "보건선생님",
+        "text": "이런 거 물어봐도 돼?"
+    },
+    "confess_dain_no_4_ins31": {
+        "name": "{name}",
+        "text": "뭔데요?"
+    },
+    "confess_dain_no_4_ins32": {
+        "name": "{name}",
+        "text": "*보건선생님이 안경을 만진다. 안경 너머로 보이는 눈이 생각보다 크다. 장난기 뒤에 숨어 있던 눈.*"
+    },
+    "confess_dain_no_4_ins33": {
+        "name": "보건선생님",
+        "text": "...졸업하고도 보건실에 올 거야?"
+    },
+    "confess_dain_no_4_ins34": {
+        "name": "{name}",
+        "text": "*질문이 아니다. — 대답을 이미 두려워하고 있는 얼굴이다.*"
+    },
+    "confess_dain_no_4_ins35": {
+        "name": "{name}",
+        "text": "*눈을 마주친다. 평소 장난기가 사라진 진지한 얼굴로. — 이 사람이 이렇게 무방비한 건 처음이다.*"
+    },
+    "confess_dain_no_4_ins36": {
+        "name": "보건선생님",
+        "text": "아, 아니야. 이상한 질문이지? 선생님이 학생한테 이런 거 물으면 안 —"
+    },
+    "confess_dain_no_4_ins37": {
+        "name": "{name}",
+        "text": "올게요."
+    },
+    "confess_dain_no_4_ins38": {
+        "name": "{name}",
+        "text": "*보건선생님이 멈춘다. 안경을 만지작거리던 손이 멈춘다.*"
+    },
+    "confess_dain_no_4_ins39": {
+        "name": "보건선생님",
+        "text": "...진짜로?"
+    },
+    "confess_dain_no_4_ins40": {
+        "name": "{name}",
+        "text": "*'진짜로'. — 이 사람의 진심 확인 단어. 오늘은 내가 먼저 들었다.*"
+    },
+    "confess_dain_no_4_ins41": {
+        "name": "{name}",
+        "text": "진짜로."
+    },
+    "confess_dain_no_4_ins42": {
+        "name": "{name}",
+        "text": "*잠깐의 침묵. 보건선생님의 안경 너머로 눈이 촉촉해 보인다. — 렌즈가 뿌옇다. 김이 서린 건지, 눈이 젖은 건지.*"
+    },
+    "confess_dain_no_4_ins43": {
+        "name": "보건선생님",
+        "text": "*다시 밝은 톤으로, 하지만 목소리가 떨리며* \"자~ 그럼 마지막 상담 끝! 다음 내원일은 — 졸업 후로 잡아둘게~"
+    },
+    "confess_dain_no_4_ins44": {
+        "name": "{name}",
+        "text": "*장난기가 돌아왔다. — 근데 웃는 눈 아래로 뭔가 흐른 자국이 있다.*"
+    },
+    "confess_dain_no_4_ins45": {
+        "name": "서연",
+        "text": "*오늘 바람 좋았어*"
+    },
+    "confess_dain_no_4_ins46": {
+        "name": "서연",
+        "text": "*...다음에는 다른 말 기대할게*"
+    },
+    "confess_dain_no_4_ins47": {
+        "name": "다인",
+        "text": "*야 오늘 재밌었다ㅋㅋ*"
+    },
+    "confess_dain_no_4_ins48": {
+        "name": "다인",
+        "text": "*...근데 뭔가 빠진 거 없어?*"
+    },
+    "confess_dain_no_4_ins49": {
+        "name": "유나",
+        "text": "*...오늘*"
+    },
+    "confess_dain_no_4_ins50": {
+        "name": "유나",
+        "text": "*괜찮았어*"
+    }
 }

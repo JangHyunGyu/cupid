@@ -17,7 +17,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_start_2": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "next": "lunch3_meal_1"
+        "next": "lunch3_start_2_ins"
     },
     "lunch3_meal_1": {
         "background": "assets/images/background/room_school.png",
@@ -52,7 +52,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_meal_7": {
         "character": "assets/images/characters/seyoun_normal.png",
         "background": "assets/images/background/room_school.png",
-        "next": "lunch3_meal_8"
+        "next": "lunch3_meal_7_ins"
     },
     "lunch3_meal_8": {
         "background": "assets/images/background/room_school.png",
@@ -67,7 +67,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_meal_10": {
         "character": "assets/images/characters/yuna_bored.png",
         "background": "assets/images/background/room_school.png",
-        "next": "lunch3_meal_11"
+        "next": "lunch3_meal_10_ins"
     },
     "lunch3_meal_11": {
         "character": "assets/images/characters/yuna_bored.png",
@@ -355,7 +355,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_expose_3": {
         "character": "assets/images/characters/dain_laugh.png",
         "background": "assets/images/background/room_school.png",
-        "next": "lunch3_expose_4"
+        "next": "lunch3_expose_3_ins"
     },
     "lunch3_expose_4": {
         "character": "assets/images/characters/dain_laugh.png",
@@ -375,7 +375,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_expose_7": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_pout.png",
-        "next": "lunch3_expose_8"
+        "next": "lunch3_expose_7_ins"
     },
     "lunch3_expose_8": {
         "character": "assets/images/characters/dain_pout.png",
@@ -495,7 +495,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_expose_honest_4": {
         "character": "assets/images/characters/seyoun_sad.png",
         "background": "assets/images/background/room_school.png",
-        "next": "lunch3_expose_honest_5"
+        "next": "lunch3_expose_honest_4_ins"
     },
     "lunch3_expose_honest_5": {
         "background": "assets/images/background/room_school.png",
@@ -522,7 +522,7 @@ Object.assign(SCENARIO[3], {
     "lunch3_expose_excuse_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_angry.png",
-        "next": "lunch3_expose_excuse_3"
+        "next": "lunch3_expose_excuse_2_ins"
     },
     "lunch3_expose_excuse_3": {
         "background": "assets/images/background/room_school.png",
@@ -545,12 +545,72 @@ Object.assign(SCENARIO[3], {
     "lunch3_expose_run_2": {
         "character": "assets/images/characters/seyoun_angry.png",
         "background": "assets/images/background/room_school.png",
-        "next": "lunch3_end"
+        "next": "lunch3_expose_run_2_ins"
     },
 
     "lunch3_end": {
         "background": "assets/images/background/room_school.png",
         "character": null,
         "next": "after3_start"
-    }
+    },
+    "lunch3_start_2_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "lunch3_meal_1"
+    },
+    "lunch3_meal_7_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "lunch3_meal_8"
+    },
+    "lunch3_meal_10_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_meal_10_ins2"
+    },
+    "lunch3_meal_10_ins2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_meal_10_ins3"
+    },
+    "lunch3_meal_10_ins3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_meal_10_ins4"
+    },
+    "lunch3_meal_10_ins4": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_meal_10_ins5"
+    },
+    "lunch3_meal_10_ins5": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "lunch3_meal_11"
+    },
+    "lunch3_expose_3_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "lunch3_expose_4"
+    },
+    "lunch3_expose_7_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_pout.png",
+        "next": "lunch3_expose_8"
+    },
+    "lunch3_expose_honest_4_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "lunch3_expose_honest_5"
+    },
+    "lunch3_expose_excuse_2_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_angry.png",
+        "next": "lunch3_expose_excuse_3"
+    },
+    "lunch3_expose_run_2_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_angry.png",
+        "next": "lunch3_end"
+    },
 });

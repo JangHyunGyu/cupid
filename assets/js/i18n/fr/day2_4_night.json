@@ -257,5 +257,65 @@
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
         "text": "...Oui. Bonne nuit."
+    },
+    "night2_start_ins": {
+        "name": "{name}",
+        "text": "*Trois personnes. En même temps.*"
+    },
+    "night2_reply_yuna_6_ins": {
+        "name": "{name}",
+        "text": "*La troisième étoile ? — J'ouvre la fenêtre et regarde le ciel nocturne. Il y a des étoiles. Laquelle est la troisième, aucune idée.*"
+    },
+    "night2_reply_yuna_6_ins2": {
+        "name": "{name}",
+        "text": "*Une devinette très Yuna. Une personne qui ne donne jamais la réponse. — Une personne qui donne envie de chercher.*"
+    },
+    "night2_reply_yuna_6_ins3": {
+        "name": "{name}",
+        "text": "*Entre les notifications du messageur — un message personnel de la professeure principale arrive.*"
+    },
+    "night2_reply_yuna_6_ins4": {
+        "name": "Professeure principale",
+        "text": "*{name}, merci d'être passé au bureau des profs aujourd'hui*"
+    },
+    "night2_reply_yuna_6_ins5": {
+        "name": "Professeure principale",
+        "text": "*L'administratif est bouclé, donc je n'aurai plus besoin de te convoquer*"
+    },
+    "night2_reply_yuna_6_ins6": {
+        "name": "Professeure principale",
+        "text": "*...Mais si l'adaptation est difficile, viens quand tu veux*"
+    },
+    "night2_end_1_ins": {
+        "name": "{name}",
+        "text": "*Le deuxième jour est fini.*"
+    },
+    "night2_end_2_ins": {
+        "name": "{name}",
+        "text": "*Aujourd'hui, c'est — différent. Ce n'est plus de la curiosité. Je pense à elles. Ce qu'elles font, ce qu'elles diront demain.*"
+    },
+    "night2_end_2_ins2": {
+        "name": "{name}",
+        "text": "*Les mots de Minsu reviennent sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*"
+    },
+    "night2_flashback_6_ins": {
+        "name": "{name}",
+        "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
+    },
+    "night2_flashback_6_ins2": {
+        "name": "{name}",
+        "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
+    },
+    "night2_end_3_ins": {
+        "name": "{name}",
+        "text": "*Le problème, c'est que cette distance se réduit plus vite que prévu.*"
+    },
+    "night2_end_4_ins": {
+        "name": "{name}",
+        "text": "*J'ouvre le frigo. Pas grand-chose. Du riz restant, des œufs, des algues. — J'ai envie de préparer quelque chose à apporter demain. Pour qui ? Aucune idée. J'en ai juste envie.*"
+    },
+    "night2_end_4_ins2": {
+        "name": "{name}",
+        "text": "*J'ai bricolé un bentō à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
     }
 }

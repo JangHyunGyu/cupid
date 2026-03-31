@@ -489,5 +489,37 @@
     "lunch_yuna_c2_2": {
         "name": "Yuna",
         "text": "...But this library isn't bad. It's quiet."
+    },
+    "lunch_start_4_ins": {
+        "name": "{name}",
+        "text": "*Dain grabs my arm from beside me.*"
+    },
+    "lunch_seo_6_ins": {
+        "name": "Seoyeon",
+        "text": "*Smiling* \"Suspicious, aren't you. I just like the breeze up here.\""
+    },
+    "lunch_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon turns her head slightly. Her ears are red.*"
+    },
+    "lunch_seo_c1_3_ins": {
+        "name": "{name}",
+        "text": "*Those red ears — was that real? — Maybe it's just the wind.*"
+    },
+    "lunch_seo_after_7_ins": {
+        "name": "{name}",
+        "text": "*Dain drags me by the arm to the snack bar. This girl's strength is no joke.*"
+    },
+    "lunch_dain_12_ins": {
+        "name": "Dain",
+        "text": "Ughhh fine!! Two soboro buns!! Ma'am!!"
+    },
+    "lunch_yuna_5_ins": {
+        "name": "{name}",
+        "text": "...Can I sit here?"
+    },
+    "lunch_yuna_10_ins": {
+        "name": "{name}",
+        "text": "*Something is tucked into Yuna's desk. An old bookmark. There's writing on it — but I can't quite make it out. Yuna unconsciously rests her hand on top of it. Something precious, maybe.*"
     }
 }

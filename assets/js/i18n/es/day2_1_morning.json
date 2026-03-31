@@ -342,5 +342,89 @@
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
         "text": "*Guardé la nota en el bolsillo. Las dos reacciones son sutilmente diferentes.*"
+    },
+    "morning2_minsu_1_ins": {
+        "name": "{name}",
+        "text": "*En el momento en que Seoyeon dobla la esquina del pasillo — justo antes de que desaparezca, su sonrisa parece caer durante 0,3 segundos. Un interruptor de vuelta a su expresión habitual. — ¿Me lo habré imaginado?*"
+    },
+    "morning2_break_transition_ins": {
+        "name": "{name}",
+        "text": "*La profesora está de pie junto a la puerta del aula. Con la lista de asistencia en mano, echa un vistazo hacia la puerta — y nuestras miradas se cruzan.*"
+    },
+    "hidden_homeroom_d2_1_ins": {
+        "name": "{name}",
+        "text": "¿Pasa algo...?"
+    },
+    "hidden_homeroom_d2_1_ins2": {
+        "name": "Profesora",
+        "text": "No, solo revisando tu documentación de traslado. — Cosas administrativas."
+    },
+    "hidden_homeroom_d2_2_ins": {
+        "name": "{name}",
+        "text": "*La sala de profesores. El escritorio de la profesora está en la esquina. Papeles y una taza de café sobre la mesa, y — un cajón ligeramente entreabierto.*"
+    },
+    "hidden_homeroom_d2_3_ins": {
+        "name": "Profesora",
+        "text": "*Una breve vacilación* \"...De todo. Sobre todo — novelas.\""
+    },
+    "hidden_homeroom_d2_3_ins2": {
+        "name": "{name}",
+        "text": "*Novelas. Que una profesora de lengua lea novelas es natural, pero ¿por qué parece reacia a decirlo?*"
+    },
+    "hidden_homeroom_d2_3_ins3": {
+        "name": "Profesora",
+        "text": "¿Leer? — ¿Y escribir?"
+    },
+    "hidden_homeroom_d2_3_ins4": {
+        "name": "{name}",
+        "text": "*Qué pregunta tan rara. Estábamos hablando de notas, ¿por qué el salto repentino a 'escribir'?*"
+    },
+    "hidden_homeroom_d2_3_ins5": {
+        "name": "{name}",
+        "text": "Lo de escribir no lo tengo tan claro."
+    },
+    "hidden_homeroom_d2_3_ins6": {
+        "name": "{name}",
+        "text": "*La profesora duda un instante. Su mirada se desvía hacia el cajón — y vuelve de inmediato.*"
+    },
+    "hidden_homeroom_d2_6_ins": {
+        "name": "{name}",
+        "text": "*La profesora cierra el cajón con naturalidad. Como si nada.*"
+    },
+    "hidden_homeroom_d2_7_ins": {
+        "name": "{name}",
+        "text": "Mucho mejor. Los compañeros de clase me caen bien."
+    },
+    "hidden_homeroom_d2_8_ins": {
+        "name": "{name}",
+        "text": "Si la conoce, parece que Dain es bastante famosa."
+    },
+    "hidden_homeroom_d2_8_ins2": {
+        "name": "Profesora",
+        "text": "Más que famosa...\" *Toma un sorbo de café* \"Es más alguien que me preocupa.\""
+    },
+    "hidden_homeroom_d2_8_ins3": {
+        "name": "{name}",
+        "text": "*'Alguien que me preocupa'. — La profesora se preocupa por Dain. ¿Sabrá lo de la rodilla de Dain?*"
+    },
+    "hidden_homeroom_d2_8_ins4": {
+        "name": "Profesora",
+        "text": "*Escondiéndose tras la taza de café* \"...Parece que mi cara de póker falló. Da igual, puedes irte.\""
+    },
+    "hidden_homeroom_d2_8_ins5": {
+        "name": "{name}",
+        "text": "*Tapó la boca pero tiene las orejas rojas. — Esta persona se azora más fácilmente de lo que pensaba.*"
+    },
+    "hidden_homeroom_d2_11_ins": {
+        "name": "{name}",
+        "text": "*Murmurando cuando nadie escucha. — Esta persona tiene la costumbre de empaquetar su preocupación como 'trabajo'.*"
+    },
+    "morning2_seo_dust_1_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon se detiene. Mira mi hombro.*"
+    },
+    "morning2_haeun_6_ins": {
+        "name": "{name}",
+        "text": "*Haeun da un paso adelante. Su voz baja de tono.*"
     }
 }

@@ -280,5 +280,321 @@
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
         "text": "*Volvimos a la enfermería.*"
+    },
+    "minsu_cheer_4_ins": {
+        "name": "{name}",
+        "text": "*De advertencias a confrontaciones, de confrontaciones a apoyo. Minsu creyó en mí antes que yo mismo.*"
+    },
+    "minsu_cheer_4_ins2": {
+        "name": "{name}",
+        "text": "*Reviso el calendario del móvil. Seoyeon por la mañana, Yuna por la tarde, Dain por la noche. No dormí anoche tratando de encajar a las tres en un solo día. Si algún horario se solapa, se acabó.*"
+    },
+    "minsu_cheer_4_ins3": {
+        "name": "{name}",
+        "text": "*...Pero qué estoy haciendo.*"
+    },
+    "minsu_cheer_4_ins4": {
+        "name": "{name}",
+        "text": "*Me miré al espejo tres veces. Me cambié de ropa dos veces. Qué estoy haciendo.*"
+    },
+    "minsu_cheer_1_ins": {
+        "name": "Minsu",
+        "text": "*Oye, ¿hoy tienes cita?*"
+    },
+    "minsu_cheer_1_ins2": {
+        "name": "{name}",
+        "text": "*Cómo te enteraste*"
+    },
+    "minsu_cheer_1_ins3": {
+        "name": "Minsu",
+        "text": "*Dain lo puso en el grupo jaja \"¡¡Mañana tengo planes!!\" escribió*"
+    },
+    "minsu_cheer_1_ins4": {
+        "name": "Minsu",
+        "text": "*Pero oye*"
+    },
+    "minsu_cheer_1_ins5": {
+        "name": "Minsu",
+        "text": "*Elige solo a una*"
+    },
+    "minsu_cheer_1_ins6": {
+        "name": "Minsu",
+        "text": "*Lo entiendes, ¿verdad?*"
+    },
+    "minsu_cheer_1_ins7": {
+        "name": "{name}",
+        "text": "*...Esta vez, de verdad*"
+    },
+    "morning4_dain_msg_1_ins": {
+        "name": "{name}",
+        "text": "*Corto y directo. Pero \"hazlo bien\" pesa. El mismo que preguntó \"¿Eras así en tu antiguo colegio?\" en el Día 2, que dijo \"Rechazar también es amor\" en el Día 3 — hoy solo dice \"hazlo bien\".*"
+    },
+    "morning4_dain_msg_1_ins2": {
+        "name": "{name}",
+        "text": "*De advertencias a confrontaciones, de confrontaciones a apoyo. Minsu creyó en mí antes que yo mismo.*"
+    },
+    "morning4_seo_msg_1_ins": {
+        "name": "{name}",
+        "text": "*Es una orden. Hasta las citas las plantea como instrucciones. Pero por alguna razón me hace gracia.*"
+    },
+    "morning4_seo_msg_1_ins2": {
+        "name": "{name}",
+        "text": "*Estoy en el punto de encuentro. ¿Vendrá? Después de lo enfadada que estaba el viernes.*"
+    },
+    "hidden_homeroom_d4_1_ins": {
+        "name": "{name}",
+        "text": "*Viene. La veo a lo lejos. Cuesta creer que sea la misma persona que estaba tan enfadada — caminando tan tranquilamente.*"
+    },
+    "hidden_homeroom_d4_1_ins2": {
+        "name": "{name}",
+        "text": "*Debía estar enfadada, pero aun así quiso escuchar mis excusas. O quizá no pudo renunciar ni siquiera estando furiosa. En cualquier caso, no debería tomar a la ligera el motivo por el que vino.*"
+    },
+    "morning4_yuna_msg_1_ins": {
+        "name": "{name}",
+        "text": "*Corto. Muy de Yuna. Ahora sé que \"si llegas tarde me voy\" significa lo mismo que \"por favor no llegues tarde\".*"
+    },
+    "morning4_yuna_msg_1_ins2": {
+        "name": "Dain",
+        "text": "*¡¡¡¡Hoy es el día!!!! ¡¡Entrada del gimnasio, 6 PM!!*"
+    },
+    "morning4_yuna_msg_1_ins3": {
+        "name": "Dain",
+        "text": "*¡¡Si llegas tarde me enfado de verdad!!*"
+    },
+    "morning4_yuna_msg_1_ins4": {
+        "name": "Dain",
+        "text": "*Ahh por qué estoy tan nerviosa jaja debería mandar esto siquiera*"
+    },
+    "morning4_yuna_msg_1_ins5": {
+        "name": "{name}",
+        "text": "*Seguramente no quería mandar esa última línea. Pero es Dain, así que por supuesto que la mandó.*"
+    },
+    "hidden_homeroom_d4_3_ins": {
+        "name": "Profesora",
+        "text": "*Nerviosa* \"Ah, es que... me quedaban unos documentos por ordenar."
+    },
+    "hidden_homeroom_d4_3_ins2": {
+        "name": "{name}",
+        "text": "*Documentos. Seguramente estaba escribiendo su manuscrito en un aula vacía. Ahora lo sé.*"
+    },
+    "hidden_homeroom_d4_3_ins3": {
+        "name": "{name}",
+        "text": "¿Sola?"
+    },
+    "hidden_homeroom_d4_3_ins4": {
+        "name": "Profesora",
+        "text": "*Con las manos en los bolsillos* \"...Una profesora sigue siendo profesora en fin de semana. Es lo que hay."
+    },
+    "hidden_homeroom_d4_cafe_1_ins": {
+        "name": "{name}",
+        "text": "¿Incómodo?"
+    },
+    "hidden_homeroom_d4_cafe_1_ins2": {
+        "name": "Profesora",
+        "text": "*Dando un sorbo al café* \"¿Sinceramente? Un poco."
+    },
+    "hidden_homeroom_d4_cafe_1_ins3": {
+        "name": "{name}",
+        "text": "*Sincera. Esta persona se esconde tras un humor seco, pero a veces se le escapa un momento de franqueza.*"
+    },
+    "hidden_homeroom_d4_cafe_1_ins4": {
+        "name": "{name}",
+        "text": "¿Avanzó más con el manuscrito ayer?"
+    },
+    "hidden_homeroom_d4_cafe_1_ins5": {
+        "name": "{name}",
+        "text": "*Deja la taza de café. Se detiene un momento, como pensando.*"
+    },
+    "hidden_homeroom_d4_cafe_2_ins": {
+        "name": "{name}",
+        "text": "¿De verdad le sirvió que yo lo viera?"
+    },
+    "hidden_homeroom_d4_cafe_2_ins2": {
+        "name": "Profesora",
+        "text": "Más que ayudar...\" *Mirando por la ventana* \"Que alguien se enterara fue — un alivio. Guardar algo sola no es un secreto, es una carga."
+    },
+    "hidden_homeroom_d4_cafe_2_ins3": {
+        "name": "{name}",
+        "text": "*Una carga. Así que el manuscrito sin terminar que cargó sola durante siete años le pesaba.*"
+    },
+    "hidden_homeroom_d4_cafe_2_ins4": {
+        "name": "Profesora",
+        "text": "¿Sabes qué es lo más difícil de escribir una novela?"
+    },
+    "hidden_homeroom_d4_cafe_6_ins": {
+        "name": "{name}",
+        "text": "*Me está mirando. Con ojos que no están secos.*"
+    },
+    "hidden_homeroom_d4_cafe_4_ins": {
+        "name": "{name}",
+        "text": "*Déjà vu. Ayer dijo algo parecido en el aula vacía. Pero hoy es en una cafetería, en ropa de calle, más informal. No — más serio.*"
+    },
+    "hidden_homeroom_d4_cafe_5_ins": {
+        "name": "{name}",
+        "text": "*Sonríe brevemente. No es una sonrisa incómoda — es una sonrisa de alivio.*"
+    },
+    "hidden_homeroom_d4_cafe_5_ins2": {
+        "name": "Profesora",
+        "text": "...Gracias. Pero esto queda entre nosotros, ¿vale? ...Es nuestro secreto. Aunque una profesora no debería tener secretos con un alumno."
+    },
+    "hidden_homeroom_d4_cafe_5_ins3": {
+        "name": "{name}",
+        "text": "\"Interés pedagógico\", ¿no?"
+    },
+    "hidden_homeroom_d4_cafe_5_ins4": {
+        "name": "Profesora",
+        "text": "*Se queda quieta* \"...No me robes la frase antes de que la diga."
+    },
+    "hidden_homeroom_d4_cafe_5_ins5": {
+        "name": "{name}",
+        "text": "*Solté una risita. Ella también. Al mismo tiempo.*"
+    },
+    "hidden_homeroom_d4_cafe_5_ins6": {
+        "name": "Profesora",
+        "text": "...Sí. No debería ser así."
+    },
+    "hidden_homeroom_d4_cafe_5_ins7": {
+        "name": "{name}",
+        "text": "*Saca las manos de los bolsillos. Un gesto como de ajustarse la rebeca — ah, va de calle. Un ademán vacío.*"
+    },
+    "hidden_homeroom_d4_decline_ins": {
+        "name": "{name}",
+        "text": "*Se da la vuelta. Los hombros ligeramente caídos.*"
+    },
+    "hidden_homeroom_d4_decline_ins2": {
+        "name": "{name}",
+        "text": "*La rechacé, así que por qué me siento así.*"
+    },
+    "hidden_nurse_d4_1_ins": {
+        "name": "{name}",
+        "text": "*La enfermería. Documentos y equipos de revisión apilados en el escritorio. La Enfermera está ordenando en ropa de calle. Un suéter beige en lugar de la bata blanca.*"
+    },
+    "hidden_nurse_d4_1_ins2": {
+        "name": "Enfermera",
+        "text": "*Girándose* \"¿Eh? ¿De verdad viniste?"
+    },
+    "hidden_nurse_d4_2_ins": {
+        "name": "{name}",
+        "text": "Así que el paciente ayuda a la enfermera."
+    },
+    "hidden_nurse_d4_2_ins2": {
+        "name": "Enfermera",
+        "text": "*Riendo* \"Es la primera vez que un paciente ayuda a la enfermera."
+    },
+    "hidden_nurse_d4_2_ins3": {
+        "name": "{name}",
+        "text": "*Su risa es natural. Distinta a como es en el colegio. Sin la bata blanca, la Enfermera no parece profesora — más bien una hermana mayor.*"
+    },
+    "hidden_nurse_d4_2_ins4": {
+        "name": "{name}",
+        "text": "*Le ayudo a ordenar los documentos de las revisiones. Clasificar etiquetas, organizar tablas de agudeza visual, desinfectar tensiómetros.*"
+    },
+    "hidden_nurse_d4_2_ins5": {
+        "name": "Enfermera",
+        "text": "*Pasándole documentos* \"¿Puedes clasificar estos? Por curso."
+    },
+    "hidden_nurse_d4_2_ins6": {
+        "name": "{name}",
+        "text": "*Nos sentamos juntos ordenando papeles. Cada vez que nuestras manos se rozan, la Enfermera retira la suya discretamente. ¿Será consciente de ello?*"
+    },
+    "hidden_nurse_d4_2_ins7": {
+        "name": "Enfermera",
+        "text": "...En el hospital, todo esto lo hacía yo sola."
+    },
+    "hidden_nurse_d4_2_ins8": {
+        "name": "{name}",
+        "text": "¿Sola?"
+    },
+    "hidden_nurse_d4_4_ins": {
+        "name": "{name}",
+        "text": "Entonces el agotamiento..."
+    },
+    "hidden_nurse_d4_4_ins2": {
+        "name": "{name}",
+        "text": "*La Enfermera se detiene. Deja los papeles.*"
+    },
+    "hidden_nurse_d4_4_ins3": {
+        "name": "Enfermera",
+        "text": "...Lo más duro de entonces no era la cantidad de trabajo."
+    },
+    "hidden_nurse_d4_4_ins4": {
+        "name": "{name}",
+        "text": "¿Entonces qué era?"
+    },
+    "hidden_nurse_d4_4_ins5": {
+        "name": "Enfermera",
+        "text": "*Con la voz medio tono más baja* \"Nadie me llamaba por mi nombre. 'Enfermera', 'turno de noche', 'ala 3'. Todo títulos, nunca mi nombre."
+    },
+    "hidden_nurse_d4_4_ins6": {
+        "name": "{name}",
+        "text": "*La gracia ha desaparecido por completo. Así es como muestra sus verdaderos sentimientos.*"
+    },
+    "hidden_nurse_d4_4_ins7": {
+        "name": "Enfermera",
+        "text": "En el colegio soy \"la Enfermera\", ¿no? Otro título.\" *Con una leve sonrisa* \"Pero tú nunca me has llamado por el título, ¿verdad?"
+    },
+    "hidden_nurse_d4_4_ins8": {
+        "name": "{name}",
+        "text": "...¿De verdad?"
+    },
+    "hidden_nurse_d4_4_ins9": {
+        "name": "Enfermera",
+        "text": "Solo \"profe.\" Sin título. Eso me gustaba."
+    },
+    "hidden_nurse_d4_4_ins10": {
+        "name": "{name}",
+        "text": "*Ella sabe lo que pesa que te llamen por tu nombre. Porque en el hospital la llamaban por números.*"
+    },
+    "hidden_nurse_d4_4_ins11": {
+        "name": "{name}",
+        "text": "*Hemos terminado de ordenar. La Enfermera se estira.*"
+    },
+    "hidden_nurse_d4_6_ins": {
+        "name": "{name}",
+        "text": "No fue nada."
+    },
+    "hidden_nurse_d4_6_ins2": {
+        "name": "Enfermera",
+        "text": "*Mirándome* \"...Sí fue algo."
+    },
+    "hidden_nurse_d4_6_ins3": {
+        "name": "{name}",
+        "text": "*Dos palabras cortas, pero con peso.*"
+    },
+    "hidden_nurse_d4_meal_1_ins": {
+        "name": "{name}",
+        "text": "Usted también comía esto de estudiante."
+    },
+    "hidden_nurse_d4_meal_1_ins2": {
+        "name": "Enfermera",
+        "text": "Eso fue hace siglos~\" *Riendo* \"Ya estoy vieja."
+    },
+    "hidden_nurse_d4_meal_2_ins": {
+        "name": "{name}",
+        "text": "*La Enfermera se detiene un momento. Deja los palillos.*"
+    },
+    "hidden_nurse_d4_meal_3_ins": {
+        "name": "{name}",
+        "text": "*La broma desapareció. 0,5 segundos. El medidor de sinceridad de esta persona se mueve en intervalos de 0,5 segundos.*"
+    },
+    "hidden_nurse_d4_meal_3_ins2": {
+        "name": "Enfermera",
+        "text": "*Sonriendo de nuevo* \"Bueno, ¡se acabó la comida! La profe aún tiene trabajo pendiente~"
+    },
+    "hidden_nurse_d4_meal_3_ins3": {
+        "name": "{name}",
+        "text": "*De camino de vuelta. La Enfermera llama desde atrás.*"
+    },
+    "hidden_nurse_d4_meal_3_ins4": {
+        "name": "Enfermera",
+        "text": "{name}."
+    },
+    "hidden_nurse_d4_meal_4_ins": {
+        "name": "{name}",
+        "text": "*Ha añadido \"de verdad.\" Cuando esta persona añade \"de verdad,\" significa que todo lo anterior era sincero.*"
+    },
+    "hidden_nurse_d4_meal_4_ins2": {
+        "name": "{name}",
+        "text": "*Replicó enfadada, pero tiene las orejas rojas. Otra vez.*"
     }
 }

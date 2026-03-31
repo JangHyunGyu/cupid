@@ -246,7 +246,7 @@ Object.assign(SCENARIO[5], {
     "tour_dain_11": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
-        "next": "tour_dain_12"
+        "next": "tour_dain_11_ins"
     },
     "tour_dain_12": {
         "background": "assets/images/background/gym.png",
@@ -271,7 +271,7 @@ Object.assign(SCENARIO[5], {
     "tour_dain_end_2": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "after5_start"
+        "next": "tour_dain_end_2_ins"
     }
 ,
     "tour_seo_freetalk": {
@@ -290,5 +290,15 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "tour_dain_end_2"
-    }
+    },
+    "tour_dain_11_ins": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "tour_dain_12"
+    },
+    "tour_dain_end_2_ins": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after5_start"
+    },
 });

@@ -316,5 +316,53 @@
     "lunch3_dain_witness_2b": {
         "name": "{name}",
         "text": "*Je suis retourné en classe.*"
+    },
+    "lunch3_start_2_ins": {
+        "name": "Dain",
+        "text": "*Croquant dans l'omelette sans hésiter* \"Oh ! C'est bon !!"
+    },
+    "lunch3_meal_7_ins": {
+        "name": "Yuna",
+        "text": "*Déjà en train de mâcher* \"...C'est bon.\""
+    },
+    "lunch3_meal_10_ins": {
+        "name": "{name}",
+        "text": "*\"On partage tous ensemble\", j'ai dit. — Mais l'ambiance est bizarre.*"
+    },
+    "lunch3_meal_10_ins2": {
+        "name": "{name}",
+        "text": "*Les deux autres parties, je reste seul avec celle que j'ai choisie. — Je ne savais pas que choisir pesait autant.*"
+    },
+    "lunch3_meal_10_ins3": {
+        "name": "{name}",
+        "text": "*Route Seoyeon : Les baguettes de Seoyeon s'arrêtent. \"...Partager ? C'était prévu pour nous deux.\" Une demi-seconde plus tard, elle reprend contenance. Le visage de la présidente du conseil revient. \"Bon, c'est pas grave.\" — Je sais que c'est grave.*"
+    },
+    "lunch3_meal_10_ins4": {
+        "name": "{name}",
+        "text": "*Route Dain : \"Tous ensemble ?! Super !!\" Les points d'exclamation sont bien là. — Mais sa voix est un demi-ton plus basse. D'habitude elle aurait tiré des chaises, mais aujourd'hui elle ne bouge pas de sa place.*"
+    },
+    "lunch3_meal_10_ins5": {
+        "name": "{name}",
+        "text": "*Route Yuna : Yuna hoche juste la tête. Elle écrivait un mot, le plie et le glisse dans sa poche. Elle ne le donne pas. — Qu'est-ce qui était écrit sur ce mot qu'elle a failli me donner ? Je ne le saurai jamais.*"
+    },
+    "lunch3_expose_3_ins": {
+        "name": "{name}",
+        "text": "*Les mains des deux autres se figent.*"
+    },
+    "lunch3_expose_7_ins": {
+        "name": "{name}",
+        "text": "*La dernière pose les siens en silence.*"
+    },
+    "lunch3_expose_honest_4_ins": {
+        "name": "Seoyeon",
+        "text": "Je ne veux pas être l'une de tes options. Je suis ta seule réponse, ou je ne suis rien. — Je ne fais pas les demi-mesures."
+    },
+    "lunch3_expose_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*Dain se lève.*"
+    },
+    "lunch3_expose_run_2_ins": {
+        "name": "{name}",
+        "text": "*Le déjeuner s'est terminé, les cours de l'après-midi ont repris. Le bruit de la craie sur le tableau semble étrangement lointain. Je sens le regard de quelqu'un dans mon dos. — Il reste encore une histoire inachevée.*"
     }
 }

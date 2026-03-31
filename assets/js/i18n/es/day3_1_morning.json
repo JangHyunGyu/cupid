@@ -463,5 +463,377 @@
     "morning3_date_seo_decline_b": {
         "name": "{name}",
         "text": "*Volví al salón de clases.*"
+    },
+    "morning3_seo_gate_6_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon camina. Con seguridad. No se apresura, aunque llega tarde.*"
+    },
+    "morning3_yuna_gate_6_ins": {
+        "name": "{name}",
+        "text": "*Yuna busca en su bolsa sin decir nada, saca un panecillo, lo parte por la mitad y me lo ofrece. Un papelito asoma del interior de su bolsa.*"
+    },
+    "morning3_yuna_gate_6_ins2": {
+        "name": "{name}",
+        "text": "*La nota: \"Supuse que no habías desayunado.\"*"
+    },
+    "morning3_yuna_gate_6_ins3": {
+        "name": "{name}",
+        "text": "*Alguien que escribe notas cuando podría simplemente decirlo. — Esa es Yuna.*"
+    },
+    "morning3_dain_gate_4_ins": {
+        "name": "Dain",
+        "text": "¡¡Así es más rápido!! ¡¡No lo cuestiones!!"
+    },
+    "morning3_dain_gate_5_ins": {
+        "name": "{name}",
+        "text": "*Al cruzar la puerta, Dain aterrizó y dejó escapar un pequeño \"ngh.\" Pero cuando miré atrás, sonreía como si nada. — ¿Escuché mal?*"
+    },
+    "morning3_react_yuna_1_ins": {
+        "name": "{name}",
+        "text": "*Dain, sin rodeos.*"
+    },
+    "morning3_react_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon, con naturalidad en la puerta del aula.*"
+    },
+    "hidden_homeroom_d3_4_ins": {
+        "name": "{name}",
+        "text": "*Recreo entre la segunda y tercera hora. Volviendo del baño — veo una luz en el aula vacía al final del pasillo.*"
+    },
+    "hidden_homeroom_d3_4_ins2": {
+        "name": "{name}",
+        "text": "*¿Un aula vacía a esta hora? — Hay alguien dentro.*"
+    },
+    "hidden_homeroom_d3_4_ins3": {
+        "name": "{name}",
+        "text": "*Me acerco en silencio. La puerta está entreabierta. — La profesora está sentada en el escritorio, escribiendo algo.*"
+    },
+    "hidden_homeroom_d3_4_ins4": {
+        "name": "{name}",
+        "text": "*No son documentos oficiales. Es papel de manuscrito. — El mismo montón que vi ayer en el cajón de la sala de profesores.*"
+    },
+    "hidden_homeroom_d3_4_ins5": {
+        "name": "{name}",
+        "text": "*La profesora deja de escribir y levanta la vista. — Nuestras miradas se cruzan.*"
+    },
+    "hidden_homeroom_d3_3_ins": {
+        "name": "{name}",
+        "text": "*Medio segundo. Paralizada. — Es una expresión que nunca había visto en la profesora. Ni indiferente, ni seca. La cara de alguien que ha sido descubierto.*"
+    },
+    "hidden_homeroom_d3_3_ins2": {
+        "name": "{name}",
+        "text": "*La profesora rápidamente voltea el manuscrito boca abajo.*"
+    },
+    "hidden_homeroom_d3_reveal_2_ins": {
+        "name": "Profesora",
+        "text": "...No es nada. Son documentos de trabajo."
+    },
+    "hidden_homeroom_d3_reveal_2_ins2": {
+        "name": "{name}",
+        "text": "¿Documentos de trabajo en un aula vacía?"
+    },
+    "hidden_homeroom_d3_reveal_2_ins3": {
+        "name": "{name}",
+        "text": "*La profesora cierra la boca un momento. Luego — suspira. Brevemente.*"
+    },
+    "hidden_homeroom_d3_reveal_2_ins4": {
+        "name": "Profesora",
+        "text": "...Ser perceptivo es una virtud. A veces es un defecto."
+    },
+    "hidden_homeroom_d3_reveal_2_ins5": {
+        "name": "{name}",
+        "text": "*La profesora se detiene. Toca el manuscrito con los dedos. — Luego se recuesta en la silla.*"
+    },
+    "hidden_homeroom_d3_reveal_1_ins": {
+        "name": "{name}",
+        "text": "¿Cuánto tiempo?"
+    },
+    "hidden_homeroom_d3_reveal_1_ins2": {
+        "name": "Profesora",
+        "text": "Siete años.\" *Mirando por la ventana* \"Empecé en la universidad. Especialización en escritura creativa.\""
+    },
+    "hidden_homeroom_d3_reveal_1_ins3": {
+        "name": "{name}",
+        "text": "¿Usted estudió escritura creativa?"
+    },
+    "hidden_homeroom_d3_reveal_1_ins4": {
+        "name": "Profesora",
+        "text": "Después de graduarme, intenté debutar como escritora — fracasé tres veces en dos años. Se acabó el dinero, mis padres dijeron 'hora de ser realista.'"
+    },
+    "hidden_homeroom_d3_reveal_1_ins5": {
+        "name": "{name}",
+        "text": "*La profesora levanta una hoja de manuscrito. Está cubierta de escritura densa.*"
+    },
+    "hidden_homeroom_d3_reveal_3_ins": {
+        "name": "{name}",
+        "text": "¿Lo dejó?"
+    },
+    "hidden_homeroom_d3_reveal_3_ins2": {
+        "name": "{name}",
+        "text": "*La profesora deja el manuscrito. Despacio.*"
+    },
+    "hidden_homeroom_d3_reveal_4_ins": {
+        "name": "{name}",
+        "text": "*Así que esta es la historia detrás de su frialdad. — Un manuscrito inacabado en el cajón del escritorio. Siete años.*"
+    },
+    "hidden_homeroom_d3_reveal_4_ins2": {
+        "name": "Profesora",
+        "text": "*Poniéndose seria de repente* \"...No le puedes contar esto a nadie. Si un alumno supiera que su profesora — tiene este lado, mi autoridad — bueno, nunca tuve mucha.\""
+    },
+    "hidden_homeroom_d3_reveal_4_ins3": {
+        "name": "{name}",
+        "text": "¿Un secreto?"
+    },
+    "hidden_homeroom_d3_reveal_4_ins4": {
+        "name": "Profesora",
+        "text": "*Echándose el pelo hacia atrás* \"Es un secreto. — No es exactamente un buen ejemplo educativo. Contarle algo así a un alumno.\""
+    },
+    "hidden_homeroom_d3_reveal_4_ins5": {
+        "name": "{name}",
+        "text": "*'Educativo.' — Otra vez envolviéndolo en lenguaje profesional. Pero esta vez, el tono lleva arrepentimiento genuino.*"
+    },
+    "hidden_homeroom_d3_reveal_4_ins6": {
+        "name": "{name}",
+        "text": "A mí me gustaría leerla. Su novela."
+    },
+    "hidden_homeroom_d3_reveal_6_ins": {
+        "name": "Profesora",
+        "text": "...Mi primer lector voluntario. En siete años."
+    },
+    "hidden_homeroom_d3_reveal_6_ins2": {
+        "name": "{name}",
+        "text": "*La sonrisa es torpe. — ¿Es que no sabe sonreír, o se ha olvidado cómo?*"
+    },
+    "hidden_homeroom_d3_reveal_6_ins3": {
+        "name": "Profesora",
+        "text": "*Duda. La mano que tocaba el manuscrito se detiene.* \"...Es la primera persona que lo llama perseverancia.\""
+    },
+    "hidden_homeroom_d3_reveal_6_ins4": {
+        "name": "{name}",
+        "text": "*Ella llamó a siete años 'no poder rendirse.' Pero una sola frase que cambió su perspectiva — y sus ojos temblaron.*"
+    },
+    "hidden_homeroom_d3_reveal_6_ins5": {
+        "name": "Profesora",
+        "text": "Porque aquí hay silencio. — La sala de profesores huele a café y todos se observan."
+    },
+    "hidden_homeroom_d3_reveal_6_ins6": {
+        "name": "{name}",
+        "text": "*La razón por la que eligió un aula vacía es práctica, pero también significa — que es alguien que necesita un espacio propio.*"
+    },
+    "hidden_homeroom_d3_reveal_6_ins7": {
+        "name": "{name}",
+        "text": "*Siento que he abierto un cajón oculto detrás del título de 'profesora.' Debería cerrarlo — pero no puedo soltar.*"
+    },
+    "hidden_nurse_d3_2_ins": {
+        "name": "{name}",
+        "text": "*La profesora usa la palabra 'por favor.' — Para ella, es una palabra rara.*"
+    },
+    "hidden_nurse_d3_2_ins2": {
+        "name": "{name}",
+        "text": "*Salgo del aula — y desde atrás, en voz baja.*"
+    },
+    "hidden_nurse_d3_2_ins3": {
+        "name": "Profesora",
+        "text": "...Gracias."
+    },
+    "hidden_nurse_d3_2_ins4": {
+        "name": "{name}",
+        "text": "*No sé por qué me da las gracias. ¿Por no haber mirado? ¿O — por haber llegado hasta aquí?*"
+    },
+    "hidden_nurse_d3_2_ins5": {
+        "name": "{name}",
+        "text": "*Justo antes del almuerzo. — Algo me inquieta desde la mañana. ¿Es el estrés de estar con todas, o la confusión de que todo va demasiado rápido?*"
+    },
+    "hidden_nurse_d3_1_ins": {
+        "name": "{name}",
+        "text": "*Abro la puerta de la enfermería.*"
+    },
+    "hidden_nurse_d3_1_ins2": {
+        "name": "Enfermera",
+        "text": "*Levantando la vista* \"...¿Hm? ¿Qué te duele hoy?\""
+    },
+    "hidden_nurse_d3_1_ins3": {
+        "name": "{name}",
+        "text": "No estoy herido."
+    },
+    "hidden_nurse_d3_1_ins4": {
+        "name": "Enfermera",
+        "text": "¿No estás herido pero vienes a la enfermería?"
+    },
+    "hidden_nurse_d3_1_ins5": {
+        "name": "{name}",
+        "text": "...Solo quería descansar un poco."
+    },
+    "hidden_nurse_d3_3_ins": {
+        "name": "{name}",
+        "text": "*La enfermera me mira un momento. La picardía desaparece.*"
+    },
+    "hidden_nurse_d3_3_ins2": {
+        "name": "Enfermera",
+        "text": "...Siéntate."
+    },
+    "hidden_nurse_d3_3_ins3": {
+        "name": "{name}",
+        "text": "*Su voz cambió. Ya no bromea. — Cuando esta persona se pone seria, el ambiente cambia por completo.*"
+    },
+    "hidden_nurse_d3_3_ins4": {
+        "name": "{name}",
+        "text": "*Me siento en la cama. La enfermera me pasa un vaso de agua.*"
+    },
+    "hidden_nurse_d3_5_ins": {
+        "name": "{name}",
+        "text": "*La enfermera se detiene un momento. — Sus ojos se suavizan.*"
+    },
+    "hidden_nurse_d3_5_ins2": {
+        "name": "Enfermera",
+        "text": "...¿Algo así? Entonces hiciste bien en venir."
+    },
+    "hidden_nurse_d3_5_ins3": {
+        "name": "{name}",
+        "text": "*Un 'algo así' y toda su actitud cambió. — Es alguien que se abre cuando se siente comprendida.*"
+    },
+    "hidden_nurse_d3_5_ins4": {
+        "name": "{name}",
+        "text": "Solo... las relaciones se complicaron."
+    },
+    "hidden_nurse_d3_5_ins5": {
+        "name": "Enfermera",
+        "text": "*Acercando una silla y sentándose enfrente* \"Relaciones.\""
+    },
+    "hidden_nurse_d3_5_ins6": {
+        "name": "{name}",
+        "text": "Me preocupo por varias personas a la vez, pero siento que tengo que elegir solo a una..."
+    },
+    "hidden_nurse_d3_5_ins7": {
+        "name": "{name}",
+        "text": "*La enfermera guarda silencio un momento. Luego.*"
+    },
+    "hidden_nurse_d3_5_ins8": {
+        "name": "Enfermera",
+        "text": "¿Esto es una consulta amorosa?"
+    },
+    "hidden_nurse_d3_5_ins9": {
+        "name": "{name}",
+        "text": "Ah, no es eso..."
+    },
+    "hidden_nurse_d3_5_ins10": {
+        "name": "Enfermera",
+        "text": "*Sonríe* \"Fingir que no lo es, es lo que más te delata.\""
+    },
+    "hidden_nurse_d3_5_ins11": {
+        "name": "{name}",
+        "text": "*Dio en el blanco. — Su capacidad de observación no es ninguna broma.*"
+    },
+    "hidden_nurse_d3_5_ins12": {
+        "name": "Enfermera",
+        "text": "¿Una enfermera debería hacer este tipo de consultas...\" *Apoyando la barbilla en la mano* \"Pero te escucharé. Es la enfermería, al fin y al cabo. No solo el cuerpo tiene que estar sano, ¿verdad?\""
+    },
+    "hidden_nurse_d3_5_ins13": {
+        "name": "{name}",
+        "text": "¿Usted alguna vez se sintió así? ¿Confundida entre varias personas?"
+    },
+    "hidden_nurse_d3_5_ins14": {
+        "name": "{name}",
+        "text": "*La enfermera se detiene. Su mirada se dirige a la ventana.*"
+    },
+    "hidden_nurse_d3_5_ins15": {
+        "name": "Enfermera",
+        "text": "...Sí. Cuando trabajaba en el hospital universitario."
+    },
+    "hidden_nurse_d3_5_ins16": {
+        "name": "{name}",
+        "text": "¿Hospital universitario?"
+    },
+    "hidden_nurse_d3_6_ins": {
+        "name": "{name}",
+        "text": "*Habla de pacientes, pero de alguna manera se superpone con mi situación.*"
+    },
+    "hidden_nurse_d3_6_ins2": {
+        "name": "{name}",
+        "text": "*La enfermera deja el vaso. Despacio.*"
+    },
+    "hidden_nurse_d3_6_ins3": {
+        "name": "Enfermera",
+        "text": "...Más que dejarlo, huí.\" *Con una leve sonrisa* \"No hay una razón glamurosa.\""
+    },
+    "hidden_nurse_d3_6_ins4": {
+        "name": "{name}",
+        "text": "*Ella misma usa la palabra 'huí.' — Esta persona está acostumbrada a reconocer su propia debilidad.*"
+    },
+    "hidden_nurse_d3_6_ins5": {
+        "name": "{name}",
+        "text": "*La enfermera se detiene. Toca su estetoscopio.*"
+    },
+    "hidden_nurse_d3_6_ins6": {
+        "name": "Enfermera",
+        "text": "...Hubo uno. Un paciente que no pude salvar.\" *Su mirada se pierde.* \"Por esa persona estoy aquí.\""
+    },
+    "hidden_nurse_d3_6_ins7": {
+        "name": "{name}",
+        "text": "*Una persona. — Esa persona cambió toda su vida.*"
+    },
+    "hidden_nurse_d3_7_ins": {
+        "name": "{name}",
+        "text": "*La enfermera me mira. En serio.*"
+    },
+    "hidden_nurse_d3_8_ins": {
+        "name": "{name}",
+        "text": "*Lo dice en serio. La picardía ha desaparecido por completo. — Cuando su voz baja un tono, es señal de que habla en serio.*"
+    },
+    "hidden_nurse_d3_8_ins2": {
+        "name": "{name}",
+        "text": "...Gracias."
+    },
+    "hidden_nurse_d3_8_ins3": {
+        "name": "Enfermera",
+        "text": "*De nuevo juguetona* \"¡Ay, por favor~ Esto es cortesía de la casa. — Vuelve cuando quieras. Con heridas o sin ellas.\""
+    },
+    "hidden_nurse_d3_8_ins4": {
+        "name": "{name}",
+        "text": "*'Con heridas o sin ellas.' — ¿Empezará a verme como algo más que un paciente?*"
+    },
+    "hidden_nurse_d3_8_ins5": {
+        "name": "{name}",
+        "text": "*Salgo de la enfermería — y desde atrás, en voz baja.*"
+    },
+    "hidden_nurse_d3_9_ins": {
+        "name": "{name}",
+        "text": "*...¿Qué? — Mis pies se detuvieron. Solo el olor a desinfectante queda pesado en el aire.*"
+    },
+    "hidden_nurse_d3_9_ins2": {
+        "name": "{name}",
+        "text": "*Me di la vuelta despacio.*"
+    },
+    "hidden_nurse_d3_9_ins3": {
+        "name": "{name}",
+        "text": "*La enfermera — no sonríe. Juguetea con su estetoscopio, mirando por la ventana. Como alguien que ni siquiera se dio cuenta de lo que acaba de decir.*"
+    },
+    "hidden_nurse_d3_9_ins4": {
+        "name": "{name}",
+        "text": "*0.7 segundos.*"
+    },
+    "hidden_nurse_d3_9_ins5": {
+        "name": "Enfermera",
+        "text": "*Apenas logrando sonreír* \"¡Era broma~ Anda, vete!\""
+    },
+    "hidden_nurse_d3_9_ins6": {
+        "name": "{name}",
+        "text": "*Una broma. — ¿Verdad?*"
+    },
+    "hidden_nurse_d3_9_ins7": {
+        "name": "{name}",
+        "text": "*Me digo que sí, pero mis pies no se mueven. Esa expresión de 0.7 segundos — no tenía nada de broma.*"
+    },
+    "hidden_nurse_d3_9_ins8": {
+        "name": "{name}",
+        "text": "*El olor a desinfectante se intensificó de repente. Un paso más desde aquí — y quizás ya no pueda llamarla 'profesora.'*"
+    },
+    "morning3_date_yuna_1_ins": {
+        "name": "Seoyeon",
+        "text": "El rollo de huevo está un poco salado. 6 puntos."
+    },
+    "morning3_end_ins": {
+        "name": "Yuna",
+        "text": "...Está bueno."
     }
 }

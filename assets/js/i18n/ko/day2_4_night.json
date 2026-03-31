@@ -257,5 +257,65 @@
     "night2_reply_yuna_react_default": {
         "name": "유나",
         "text": "...응. 잘 자."
+    },
+    "night2_start_ins": {
+        "name": "{name}",
+        "text": "*세 명. 동시에.*"
+    },
+    "night2_reply_yuna_6_ins": {
+        "name": "{name}",
+        "text": "*세 번째 별? — 창문을 열고 밤하늘을 본다. 별이 보인다. 세 번째 별이 어떤 건지는 모르겠지만.*"
+    },
+    "night2_reply_yuna_6_ins2": {
+        "name": "{name}",
+        "text": "*유나다운 수수께끼다. 답을 말해주지 않는 사람. — 알고 싶게 만드는 사람.*"
+    },
+    "night2_reply_yuna_6_ins3": {
+        "name": "{name}",
+        "text": "*메신저 알림 사이에 — 담임선생님에게서 개인 메시지가 왔다.*"
+    },
+    "night2_reply_yuna_6_ins4": {
+        "name": "담임선생님",
+        "text": "*{name}, 오늘 교무실 와줘서 고마웠다*"
+    },
+    "night2_reply_yuna_6_ins5": {
+        "name": "담임선생님",
+        "text": "*행정적인 거 끝났으니까 더 안 불러도 된다*"
+    },
+    "night2_reply_yuna_6_ins6": {
+        "name": "담임선생님",
+        "text": "*...근데 적응 힘들면 언제든 와*"
+    },
+    "night2_end_1_ins": {
+        "name": "{name}",
+        "text": "*둘째 날이 끝났다.*"
+    },
+    "night2_end_2_ins": {
+        "name": "{name}",
+        "text": "*오늘은 — 좀 다르다. 궁금한 게 아니라, 신경이 쓰인다. 뭘 하고 있을지, 내일 뭐라고 말할지.*"
+    },
+    "night2_end_2_ins2": {
+        "name": "{name}",
+        "text": "*민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*"
+    },
+    "night2_flashback_6_ins": {
+        "name": "{name}",
+        "text": "*'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*"
+    },
+    "night2_flashback_6_ins2": {
+        "name": "{name}",
+        "text": "*'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*"
+    },
+    "night2_end_3_ins": {
+        "name": "{name}",
+        "text": "*문제는 그 거리가 생각보다 빠르게 좁아지고 있다는 거다.*"
+    },
+    "night2_end_4_ins": {
+        "name": "{name}",
+        "text": "*냉장고를 열었다. 별거 없다. 남은 밥, 계란, 김. — 내일은 뭔가 해가고 싶다는 생각이 들었다. 누구한테? 그건 모르겠다. 그냥, 해가고 싶었다.*"
+    },
+    "night2_end_4_ins2": {
+        "name": "{name}",
+        "text": "*대충 도시락을 쌌다. 잘 만든 건 아니다. 정성이라고 하기엔 좀 부끄러운 수준. — 근데 안 하는 것보다는 낫겠지.*"
     }
 }

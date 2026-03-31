@@ -257,5 +257,65 @@
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
         "text": "...Yeah. Good night."
+    },
+    "night2_start_ins": {
+        "name": "{name}",
+        "text": "*Three people. All at once.*"
+    },
+    "night2_reply_yuna_6_ins": {
+        "name": "{name}",
+        "text": "*Third star? — I open the window and look at the night sky. There are stars. Which one is the third, I have no idea.*"
+    },
+    "night2_reply_yuna_6_ins2": {
+        "name": "{name}",
+        "text": "*A very Yuna riddle. A person who never gives you the answer. — A person who makes you want to find out.*"
+    },
+    "night2_reply_yuna_6_ins3": {
+        "name": "{name}",
+        "text": "*Between the messenger alerts — a personal message from the homeroom teacher arrives.*"
+    },
+    "night2_reply_yuna_6_ins4": {
+        "name": "Homeroom Teacher",
+        "text": "*{name}, thanks for coming to the faculty office today*"
+    },
+    "night2_reply_yuna_6_ins5": {
+        "name": "Homeroom Teacher",
+        "text": "*The admin stuff is done so I won't need to call you in again*"
+    },
+    "night2_reply_yuna_6_ins6": {
+        "name": "Homeroom Teacher",
+        "text": "*...But if you're having a hard time adjusting, come anytime*"
+    },
+    "night2_end_1_ins": {
+        "name": "{name}",
+        "text": "*The second day is over.*"
+    },
+    "night2_end_2_ins": {
+        "name": "{name}",
+        "text": "*Today is — different. It's not curiosity anymore. I'm thinking about them. What they're doing, what they'll say tomorrow.*"
+    },
+    "night2_end_2_ins2": {
+        "name": "{name}",
+        "text": "*Minsu's words keep coming back. 'Were you like this at your old school?'*"
+    },
+    "night2_flashback_6_ins": {
+        "name": "{name}",
+        "text": "*'This time, I'll say what I want without regrets.' — That was the promise I made coming to this school.*"
+    },
+    "night2_flashback_6_ins2": {
+        "name": "{name}",
+        "text": "*'This time, I'll say what I want without regrets.' — That was the promise I made coming to this school.*"
+    },
+    "night2_end_3_ins": {
+        "name": "{name}",
+        "text": "*The problem is, that distance is closing faster than expected.*"
+    },
+    "night2_end_4_ins": {
+        "name": "{name}",
+        "text": "*I open the fridge. Not much there. Leftover rice, eggs, seaweed. — I find myself wanting to pack something to bring tomorrow. For who? I'm not sure. I just want to.*"
+    },
+    "night2_end_4_ins2": {
+        "name": "{name}",
+        "text": "*I threw together a lunch box. It's not great. Too rough to call it made with care. — But it's better than nothing.*"
     }
 }

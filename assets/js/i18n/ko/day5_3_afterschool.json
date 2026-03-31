@@ -1,154 +1,286 @@
 {
-  "after5_start": {
-    "name": "{name}",
-    "text": "*행사가 끝나가고 있다. 선택하지 않은 두 사람과 자연스럽게 마주친다.*"
-  },
-  "after5_farewell_seo_1": {
-    "name": "{name}",
-    "text": "*복도에서 서연과 마주친다.*"
-  },
-  "after5_farewell_seo_2": {
-    "name": "서연",
-    "text": "...후."
-  },
-  "after5_farewell_seo_3": {
-    "name": "{name}",
-    "text": "*서연이 머리카락을 넘기며.*"
-  },
-  "after5_farewell_seo_4": {
-    "name": "서연",
-    "text": "뭐, 알고 있었어. 넌 처음부터 내 맘대로 안 됐으니까."
-  },
-  "after5_farewell_seo_5": {
-    "name": "{name}",
-    "text": "서연..."
-  },
-  "after5_farewell_seo_6": {
-    "name": "서연",
-    "text": "다음엔 내가 먼저 데려갈 거야."
-  },
-  "after5_farewell_seo_7": {
-    "name": "{name}",
-    "text": "*서연이 돌아서며 손을 흔든다. Day 1과 같은 동작이다. 뒤돌아보지 않는다. 등이 곧다. 완벽하게. 근데 이번에는, 떨리지 않는다.*"
-  },
-  "after5_farewell_yuna_1": {
-    "name": "{name}",
-    "text": "*도서관 앞에서 유나가 다가온다. 아무 말 없이 책 한 권을 건넨다.*"
-  },
-  "after5_farewell_yuna_2": {
-    "name": "{name}",
-    "text": "*책갈피가 끼워져 있다. 책갈피에 한 줄.*"
-  },
-  "after5_farewell_yuna_3": {
-    "name": "{name}",
-    "text": "*'재밌었어. ...다음 이야기에서 보자.'*"
-  },
-  "after5_farewell_yuna_4": {
-    "name": "{name}",
-    "text": "*유나가 돌아선다. 멈추지 않는다.*"
-  },
-  "after5_farewell_yuna_5": {
-    "name": "{name}",
-    "text": "*유나의 '재밌었어'는 보통 사람의 '고마웠어, 좋아했어, 다음에 또 만나자'를 전부 압축한 단어다.*"
-  },
-  "after5_farewell_dain_1": {
-    "name": "{name}",
-    "text": "*체육관 앞에서 다인이 달려온다.*"
-  },
-  "after5_farewell_dain_2": {
-    "name": "다인",
-    "text": "치, 아쉽다!"
-  },
-  "after5_farewell_dain_3": {
-    "name": "{name}",
-    "text": "다인..."
-  },
-  "after5_farewell_dain_4": {
-    "name": "다인",
-    "text": "근데 뭐, 네가 고른 거니까. 다음엔 나한테도 기회 줘야 해!"
-  },
-  "after5_farewell_dain_5": {
-    "name": "{name}",
-    "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. Day 1에서와 같은 힘이다. 느낌표가 살아 있다. 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
-  },
-  "after5_hidden_farewell_1": {
-    "name": "{name}",
-    "text": "*교문 앞. 멀리서 세 사람이 보인다. 서연이 하은과 걸어가고, 다인이 배구공을 던지며 뛰어가고, 유나가 책을 읽으며 천천히 걷는다.*"
-  },
-  "after5_hidden_farewell_2": {
-    "name": "{name}",
-    "text": "*아무도 이쪽을 보지 않는다. — 그게 맞다. 내가 고른 건 다른 사람이니까.*"
-  },
-  "after5_hidden_farewell_3": {
-    "name": "{name}",
-    "text": "*미안하다는 말은 하지 않겠다. 그 말은 — 그 사람들한테 하면 오히려 잔인하니까. 그냥 마음속으로만. 고마웠어.*"
-  },
-  "after5_sunset_1": {
-    "name": "{name}",
-    "text": "*해가 지고 있다. 5일이 끝나간다.*"
-  },
-  "after5_end": {
-    "name": "{name}",
-    "text": "*석양이 교정을 물들인다. 5일이라는 시간이 이렇게 짧았나. — 마지막 선택의 순간이 다가온다.*"
-  },
-  "after5_last_chance_1": {
-    "name": "{name}",
-    "text": "*걸음이 멈춘다. 석양이 등 뒤로 길게 그림자를 만든다.*"
-  },
-  "after5_last_chance_2": {
-    "name": "{name}",
-    "text": "*전 학교에서도 이랬다. 말하지 못했다. 그리고 후회했다. — 이번에도 그럴 건가?*"
-  },
-  "after5_last_chance_choice": {
-    "name": "{name}",
-    "text": "*지금이 아니면 영원히 말 못 한다.*",
-    "choices": [
-      "이번에는 고백하겠다",
-      "...아무 말도 하지 못했다"
-    ]
-  },
-  "after5_confess_yes": {
-    "name": "{name}",
-    "text": "*돌아선다. 목소리가 떨린다. — 그래도 이번에는.*"
-  },
-  "after5_confess_yes_2": {
-    "name": "{name}",
-    "text": "있잖아 — 나, 너한테 할 말이 있어."
-  },
-  "after5_confess_react_seo": {
-    "name": "서연",
-    "text": "*나란히 걸어가며.* ...늦었어. 근데 — 안 늦었어."
-  },
-  "after5_confess_react_dain": {
-    "name": "다인",
-    "text": "*학교를 나서며.* 야, 진짜?! ...진짜?"
-  },
-  "after5_confess_react_yuna": {
-    "name": "유나",
-    "text": "*나란히 걸었다.* ...알고 있었어."
-  },
-  "after5_confess_no": {
-    "name": "{name}",
-    "text": "*입술이 움직이지 않는다. 또. — 또 말하지 못했다.*"
-  },
-  "after5_confess_no_2": {
-    "name": "{name}",
-    "text": "*저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 혼자다.*"
-  },
-  "after5_hidden_farewell_3b": {
-    "name": "{name}",
-    "text": "*학교 뒤편으로 걸어갔다.*"
-  },
-  "after5_farewell_yuna_5b": {
-    "name": "{name}",
-    "text": "*복도로 돌아왔다.*"
-  },
-  "after5_farewell_dain_5b": {
-    "name": "{name}",
-    "text": "*체육관을 나서 학교 뒤편으로 향했다.*"
-  },
-  "after5_confess_no_2b": {
-    "name": "{name}",
-    "text": "*집으로 돌아왔다.*"
-  }
+    "after5_start": {
+        "name": "{name}",
+        "text": "*행사가 끝나가고 있다. 선택하지 않은 두 사람과 자연스럽게 마주친다.*"
+    },
+    "after5_farewell_seo_1": {
+        "name": "{name}",
+        "text": "*복도에서 서연과 마주친다.*"
+    },
+    "after5_farewell_seo_2": {
+        "name": "서연",
+        "text": "...후."
+    },
+    "after5_farewell_seo_3": {
+        "name": "{name}",
+        "text": "*서연이 머리카락을 넘기며.*"
+    },
+    "after5_farewell_seo_4": {
+        "name": "서연",
+        "text": "뭐, 알고 있었어. 넌 처음부터 내 맘대로 안 됐으니까."
+    },
+    "after5_farewell_seo_5": {
+        "name": "{name}",
+        "text": "서연..."
+    },
+    "after5_farewell_seo_6": {
+        "name": "서연",
+        "text": "다음엔 내가 먼저 데려갈 거야."
+    },
+    "after5_farewell_seo_7": {
+        "name": "{name}",
+        "text": "*서연이 돌아서며 손을 흔든다. Day 1과 같은 동작이다. 뒤돌아보지 않는다. 등이 곧다. 완벽하게. 근데 이번에는, 떨리지 않는다.*"
+    },
+    "after5_farewell_yuna_1": {
+        "name": "{name}",
+        "text": "*도서관 앞에서 유나가 다가온다. 아무 말 없이 책 한 권을 건넨다.*"
+    },
+    "after5_farewell_yuna_2": {
+        "name": "{name}",
+        "text": "*책갈피가 끼워져 있다. 책갈피에 한 줄.*"
+    },
+    "after5_farewell_yuna_3": {
+        "name": "{name}",
+        "text": "*'재밌었어. ...다음 이야기에서 보자.'*"
+    },
+    "after5_farewell_yuna_4": {
+        "name": "{name}",
+        "text": "*유나가 돌아선다. 멈추지 않는다.*"
+    },
+    "after5_farewell_yuna_5": {
+        "name": "{name}",
+        "text": "*유나의 '재밌었어'는 보통 사람의 '고마웠어, 좋아했어, 다음에 또 만나자'를 전부 압축한 단어다.*"
+    },
+    "after5_farewell_dain_1": {
+        "name": "{name}",
+        "text": "*체육관 앞에서 다인이 달려온다.*"
+    },
+    "after5_farewell_dain_2": {
+        "name": "다인",
+        "text": "치, 아쉽다!"
+    },
+    "after5_farewell_dain_3": {
+        "name": "{name}",
+        "text": "다인..."
+    },
+    "after5_farewell_dain_4": {
+        "name": "다인",
+        "text": "근데 뭐, 네가 고른 거니까. 다음엔 나한테도 기회 줘야 해!"
+    },
+    "after5_farewell_dain_5": {
+        "name": "{name}",
+        "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. Day 1에서와 같은 힘이다. 느낌표가 살아 있다. 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
+    },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*교문 앞. 멀리서 세 사람이 보인다. 서연이 하은과 걸어가고, 다인이 배구공을 던지며 뛰어가고, 유나가 책을 읽으며 천천히 걷는다.*"
+    },
+    "after5_hidden_farewell_2": {
+        "name": "{name}",
+        "text": "*아무도 이쪽을 보지 않는다. — 그게 맞다. 내가 고른 건 다른 사람이니까.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*미안하다는 말은 하지 않겠다. 그 말은 — 그 사람들한테 하면 오히려 잔인하니까. 그냥 마음속으로만. 고마웠어.*"
+    },
+    "after5_sunset_1": {
+        "name": "{name}",
+        "text": "*해가 지고 있다. 5일이 끝나간다.*"
+    },
+    "after5_end": {
+        "name": "{name}",
+        "text": "*석양이 교정을 물들인다. 5일이라는 시간이 이렇게 짧았나. — 마지막 선택의 순간이 다가온다.*"
+    },
+    "after5_last_chance_1": {
+        "name": "{name}",
+        "text": "*걸음이 멈춘다. 석양이 등 뒤로 길게 그림자를 만든다.*"
+    },
+    "after5_last_chance_2": {
+        "name": "{name}",
+        "text": "*전 학교에서도 이랬다. 말하지 못했다. 그리고 후회했다. — 이번에도 그럴 건가?*"
+    },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*지금이 아니면 영원히 말 못 한다.*",
+        "choices": [
+            "이번에는 고백하겠다",
+            "...아무 말도 하지 못했다"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*돌아선다. 목소리가 떨린다. — 그래도 이번에는.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "있잖아 — 나, 너한테 할 말이 있어."
+    },
+    "after5_confess_react_seo": {
+        "name": "서연",
+        "text": "*나란히 걸어가며.* ...늦었어. 근데 — 안 늦었어."
+    },
+    "after5_confess_react_dain": {
+        "name": "다인",
+        "text": "*학교를 나서며.* 야, 진짜?! ...진짜?"
+    },
+    "after5_confess_react_yuna": {
+        "name": "유나",
+        "text": "*나란히 걸었다.* ...알고 있었어."
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*입술이 움직이지 않는다. 또. — 또 말하지 못했다.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 혼자다.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*학교 뒤편으로 걸어갔다.*"
+    },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*복도로 돌아왔다.*"
+    },
+    "after5_farewell_dain_5b": {
+        "name": "{name}",
+        "text": "*체육관을 나서 학교 뒤편으로 향했다.*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*집으로 돌아왔다.*"
+    },
+    "after5_farewell_seo_6_ins": {
+        "name": "{name}",
+        "text": "*서연이 돌아서며 손을 흔든다. — Day 1과 같은 동작이다. 뒤돌아보지 않는다.*"
+    },
+    "after5_farewell_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*등이 곧다. 완벽하게. — 근데 이번에는, 떨리지 않는다.*"
+    },
+    "after5_farewell_dain_4_ins": {
+        "name": "{name}",
+        "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. — Day 1에서와 같은 힘이다.*"
+    },
+    "after5_farewell_dain_4_ins2": {
+        "name": "다인",
+        "text": "...잘 해. 진짜로."
+    },
+    "after5_farewell_dain_4_ins3": {
+        "name": "{name}",
+        "text": "*느낌표가 살아 있다. — 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
+    },
+    "after5_farewell_dain_4_ins4": {
+        "name": "{name}",
+        "text": "*루트가 있지만 정식 고백을 수락/거절하지 않은 경우에만 등장.*"
+    },
+    "after5_last_chance_2_ins": {
+        "name": "{name}",
+        "text": "*또 도망칠 뻔했다. 전 학교에서처럼. 핸드폰을 주머니에 넣고 아무 말 못 하는 그 순간이 다시 올 뻔했다. — 안 된다. 이번에는.*"
+    },
+    "after5_last_chance_2_ins2": {
+        "name": "{name}",
+        "text": "*다리가 움직인다. 입이 먼저 열린다. 준비한 말 같은 건 없다. — 그냥 몸이 먼저 움직인다.*"
+    },
+    "after5_last_chance_2_ins3": {
+        "name": "{name}",
+        "text": "서연아."
+    },
+    "after5_last_chance_2_ins4": {
+        "name": "{name}",
+        "text": "*서연이 돌아본다. 석양을 등지고 있다.*"
+    },
+    "after5_last_chance_2_ins5": {
+        "name": "서연",
+        "text": "...늦었어."
+    },
+    "after5_last_chance_2_ins6": {
+        "name": "{name}",
+        "text": "*잠깐 침묵. 바람이 머리카락을 날린다. 넘기지 않는다.*"
+    },
+    "after5_last_chance_2_ins7": {
+        "name": "서연",
+        "text": "근데 — 안 늦었어. 네가 도망치지 않고 돌아왔으니까."
+    },
+    "after5_last_chance_2_ins8": {
+        "name": "{name}",
+        "text": "*새끼손가락을 내민다. Day 4에서 못 잡았던 그 손가락.*"
+    },
+    "after5_last_chance_2_ins9": {
+        "name": "서연",
+        "text": "이번엔 잡아."
+    },
+    "after5_last_chance_2_ins10": {
+        "name": "{name}",
+        "text": "*나란히 걸어가며 — 학교를 벗어난다.*"
+    },
+    "after5_last_chance_2_ins11": {
+        "name": "{name}",
+        "text": "다인아."
+    },
+    "after5_last_chance_2_ins12": {
+        "name": "{name}",
+        "text": "*다인이 뛰어오다가 멈춘다.*"
+    },
+    "after5_last_chance_2_ins13": {
+        "name": "다인",
+        "text": "야, 진짜?!"
+    },
+    "after5_last_chance_2_ins14": {
+        "name": "{name}",
+        "text": "*눈이 커진다. 1초. 2초.*"
+    },
+    "after5_last_chance_2_ins15": {
+        "name": "다인",
+        "text": "...진짜?"
+    },
+    "after5_last_chance_2_ins16": {
+        "name": "{name}",
+        "text": "*느낌표가 사라진다. 목소리가 작아진다. — 눈이 차오른다.*"
+    },
+    "after5_last_chance_2_ins17": {
+        "name": "다인",
+        "text": "나 — 기다렸거든. 어제부터. 아니 그저께부터."
+    },
+    "after5_last_chance_2_ins18": {
+        "name": "{name}",
+        "text": "*주먹으로 눈을 비빈다. 웃으면서 운다.*"
+    },
+    "after5_last_chance_2_ins19": {
+        "name": "다인",
+        "text": "아 진짜 왜 울어 — 기쁜 건데 —"
+    },
+    "after5_confess_react_yuna_ins": {
+        "name": "{name}",
+        "text": "*유나가 책을 내려놓는다. 표정이 변하지 않는다. — 근데 손이 떨리고 있다.*"
+    },
+    "after5_confess_react_yuna_ins2": {
+        "name": "유나",
+        "text": "...알고 있었어."
+    },
+    "after5_confess_react_yuna_ins3": {
+        "name": "{name}",
+        "text": "*쪽지를 건넨다. 접힌 종이. 펼치면 한 줄.*"
+    },
+    "after5_confess_react_yuna_ins4": {
+        "name": "{name}",
+        "text": "*'기다렸어. — 오래.'*"
+    },
+    "after5_confess_react_yuna_ins5": {
+        "name": "{name}",
+        "text": "*한 줄인데 잉크가 번져 있다. — 쓰면서 울었다.*"
+    },
+    "after5_confess_react_yuna_ins6": {
+        "name": "유나",
+        "text": "...읽었으면 됐어."
+    },
+    "after5_confess_react_yuna_ins7": {
+        "name": "{name}",
+        "text": "*나란히 걸었다. 아무 말 없이.*"
+    },
+    "after5_confess_react_yuna_ins8": {
+        "name": "{name}",
+        "text": "*주인공의 핵심 서사와 직결: \"말하지 못한 사람이 이번에는 후회 없이 말하려고 한다.\" 이 선택지는 그 테마의 최종 시험이다. — 그리고 기다려준 사람이 있었다.*"
+    }
 }

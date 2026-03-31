@@ -316,5 +316,53 @@
     "lunch3_dain_witness_2b": {
         "name": "{name}",
         "text": "*Ich ging zurück ins Klassenzimmer.*"
+    },
+    "lunch3_start_2_ins": {
+        "name": "Dain",
+        "text": "*Beißt ohne zu zögern ins Eieromelette* \"Oh! Das ist lecker!!"
+    },
+    "lunch3_meal_7_ins": {
+        "name": "Yuna",
+        "text": "*Schon kauend* \"...Ist gut.\""
+    },
+    "lunch3_meal_10_ins": {
+        "name": "{name}",
+        "text": "*\"Lasst uns alle zusammen essen\", sagte ich. — Aber die Stimmung ist seltsam.*"
+    },
+    "lunch3_meal_10_ins2": {
+        "name": "{name}",
+        "text": "*Nachdem die anderen beiden gegangen sind, bleibe ich mit der allein, die ich gewählt habe. — Ich wusste nicht, dass Entscheidungen so schwer wiegen.*"
+    },
+    "lunch3_meal_10_ins3": {
+        "name": "{name}",
+        "text": "*Seoyeon-Route: Seoyeons Stäbchen halten inne. \"...Teilen? Das war für uns zwei gedacht.\" Eine halbe Sekunde später fängt sie sich. Das Gesicht der Schülersprecherin kehrt zurück. \"Na gut, ist okay.\" — Ich weiß, dass es nicht okay ist.*"
+    },
+    "lunch3_meal_10_ins4": {
+        "name": "{name}",
+        "text": "*Dain-Route: \"Alle zusammen?! Super!!\" Die Ausrufezeichen sind noch da. — Aber ihre Stimme ist einen halben Ton tiefer. Normalerweise hätte sie Stühle herangeschleppt, aber heute rührt sie sich nicht vom Fleck.*"
+    },
+    "lunch3_meal_10_ins5": {
+        "name": "{name}",
+        "text": "*Yuna-Route: Yuna nickt nur. Sie war dabei, eine Notiz zu schreiben, faltet sie zusammen und steckt sie in die Tasche. Sie gibt sie nicht weiter. — Was stand auf dem Zettel, den sie mir fast gegeben hätte? Ich werde es nie erfahren.*"
+    },
+    "lunch3_expose_3_ins": {
+        "name": "{name}",
+        "text": "*Die Hände der anderen beiden erstarren.*"
+    },
+    "lunch3_expose_7_ins": {
+        "name": "{name}",
+        "text": "*Die Letzte legt ihres still ab.*"
+    },
+    "lunch3_expose_honest_4_ins": {
+        "name": "Seoyeon",
+        "text": "Ich will nicht eine deiner Optionen sein. Entweder bin ich deine einzige Antwort, oder ich bin nichts. — Halbe Sachen kann ich nicht."
+    },
+    "lunch3_expose_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*Dain steht auf.*"
+    },
+    "lunch3_expose_run_2_ins": {
+        "name": "{name}",
+        "text": "*Die Mittagspause endete, der Nachmittagsunterricht ging weiter. Das Kratzen der Kreide an der Tafel klingt seltsam fern. Ich spüre jemandes Blick auf meinem Rücken. — Es gibt noch eine unerzählte Geschichte.*"
     }
 }

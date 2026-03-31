@@ -150,5 +150,137 @@
     "after5_confess_no_2b": {
         "name": "{name}",
         "text": "*Ich ging nach Hause.*"
+    },
+    "after5_farewell_seo_6_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon dreht sich um und winkt. — Dieselbe Geste wie an Tag 1. Sie schaut nicht zurück.*"
+    },
+    "after5_farewell_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*Ihr Rücken ist gerade. Makellos. — Aber diesmal zittert sie nicht.*"
+    },
+    "after5_farewell_dain_4_ins": {
+        "name": "{name}",
+        "text": "*Sie grinst und boxt mir auf die Schulter. — Dieselbe Kraft wie an Tag 1.*"
+    },
+    "after5_farewell_dain_4_ins2": {
+        "name": "Dain",
+        "text": "...Mach's gut. Echt jetzt."
+    },
+    "after5_farewell_dain_4_ins3": {
+        "name": "{name}",
+        "text": "*Die Ausrufezeichen leben weiter. — Dain bleibt Dain bis zum Schluss. Das ist ihre Stärke.*"
+    },
+    "after5_farewell_dain_4_ins4": {
+        "name": "{name}",
+        "text": "*Erscheint nur, wenn es eine Route gibt, aber das formale Geständnis weder angenommen noch abgelehnt wurde.*"
+    },
+    "after5_last_chance_2_ins": {
+        "name": "{name}",
+        "text": "*Fast wäre ich wieder weggelaufen. Wie an meiner alten Schule. Handy in der Tasche, kein Wort herausbekommen — dieser Moment wäre fast zurückgekehrt. — Nein. Nicht diesmal.*"
+    },
+    "after5_last_chance_2_ins2": {
+        "name": "{name}",
+        "text": "*Meine Beine bewegen sich. Mein Mund öffnet sich zuerst. Keine vorbereiteten Worte. — Mein Körper bewegt sich einfach von selbst.*"
+    },
+    "after5_last_chance_2_ins3": {
+        "name": "{name}",
+        "text": "Seoyeon."
+    },
+    "after5_last_chance_2_ins4": {
+        "name": "{name}",
+        "text": "*Seoyeon dreht sich um. Der Sonnenuntergang hinter ihr.*"
+    },
+    "after5_last_chance_2_ins5": {
+        "name": "Seoyeon",
+        "text": "...Zu spät."
+    },
+    "after5_last_chance_2_ins6": {
+        "name": "{name}",
+        "text": "*Einen Moment Stille. Der Wind weht ihr Haar. Sie streicht es nicht zurück.*"
+    },
+    "after5_last_chance_2_ins7": {
+        "name": "Seoyeon",
+        "text": "Aber — nicht zu spät. Weil du zurückgekommen bist, statt wegzulaufen."
+    },
+    "after5_last_chance_2_ins8": {
+        "name": "{name}",
+        "text": "*Sie streckt ihren kleinen Finger aus. Denselben Finger, den ich an Tag 4 nicht greifen konnte.*"
+    },
+    "after5_last_chance_2_ins9": {
+        "name": "Seoyeon",
+        "text": "Diesmal — halt fest."
+    },
+    "after5_last_chance_2_ins10": {
+        "name": "{name}",
+        "text": "*Seite an Seite gehend — lassen wir die Schule hinter uns.*"
+    },
+    "after5_last_chance_2_ins11": {
+        "name": "{name}",
+        "text": "Dain."
+    },
+    "after5_last_chance_2_ins12": {
+        "name": "{name}",
+        "text": "*Dain kam angelaufen und bleibt stehen.*"
+    },
+    "after5_last_chance_2_ins13": {
+        "name": "Dain",
+        "text": "Warte, echt jetzt?!"
+    },
+    "after5_last_chance_2_ins14": {
+        "name": "{name}",
+        "text": "*Ihre Augen werden groß. Eine Sekunde. Zwei Sekunden.*"
+    },
+    "after5_last_chance_2_ins15": {
+        "name": "Dain",
+        "text": "...Echt?"
+    },
+    "after5_last_chance_2_ins16": {
+        "name": "{name}",
+        "text": "*Die Ausrufezeichen verschwinden. Ihre Stimme wird leise. — Ihre Augen füllen sich.*"
+    },
+    "after5_last_chance_2_ins17": {
+        "name": "Dain",
+        "text": "Ich — ich hab gewartet. Seit gestern. Nein, seit vorgestern."
+    },
+    "after5_last_chance_2_ins18": {
+        "name": "{name}",
+        "text": "*Sie reibt sich mit der Faust die Augen. Lacht und weint gleichzeitig.*"
+    },
+    "after5_last_chance_2_ins19": {
+        "name": "Dain",
+        "text": "Ach Mensch, warum weinst du — das ist doch was Schönes —"
+    },
+    "after5_confess_react_yuna_ins": {
+        "name": "{name}",
+        "text": "*Yuna legt ihr Buch hin. Ihr Gesichtsausdruck ändert sich nicht. — Aber ihre Hände zittern.*"
+    },
+    "after5_confess_react_yuna_ins2": {
+        "name": "Yuna",
+        "text": "...Ich wusste es schon."
+    },
+    "after5_confess_react_yuna_ins3": {
+        "name": "{name}",
+        "text": "*Sie reicht mir einen Zettel. Gefaltetes Papier. Eine Zeile, aufgefaltet.*"
+    },
+    "after5_confess_react_yuna_ins4": {
+        "name": "{name}",
+        "text": "*'Ich habe gewartet. — Lange.'*"
+    },
+    "after5_confess_react_yuna_ins5": {
+        "name": "{name}",
+        "text": "*Eine Zeile, aber die Tinte ist verwischt. — Sie hat beim Schreiben geweint.*"
+    },
+    "after5_confess_react_yuna_ins6": {
+        "name": "Yuna",
+        "text": "...Wenn du es gelesen hast, reicht das."
+    },
+    "after5_confess_react_yuna_ins7": {
+        "name": "{name}",
+        "text": "*Wir gingen nebeneinander. Schweigend.*"
+    },
+    "after5_confess_react_yuna_ins8": {
+        "name": "{name}",
+        "text": "*Direkt verbunden mit dem Kernthema des Protagonisten: „Jemand, der nicht sprechen konnte, versucht diesmal ohne Reue zu sprechen.“ Diese Wahl ist die letzte Prüfung dieses Themas. — Und es gab jemanden, der gewartet hat.*"
     }
 }

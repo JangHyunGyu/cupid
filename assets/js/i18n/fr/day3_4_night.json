@@ -187,5 +187,117 @@
     "night3_end": {
         "name": "{name}",
         "text": "*La nuit s’approfondit...*"
+    },
+    "night3_faithful_msg_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Parce qu'écrire la fin, c'est finir. — Yuna a peur que cette histoire se termine.*"
+    },
+    "night3_cheat_msg_3_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon utilise le mot 's'il te plaît.' — Ce mot n'existait pas dans son vocabulaire. C'est dire à quel point elle est brisée.*"
+    },
+    "night3_cheat_msg_4_ins": {
+        "name": "Yuna",
+        "text": "*À côté de qui tu te tiendras. J'aimerais que tu comprennes le poids de ça.*"
+    },
+    "night3_nightmare_2_ins": {
+        "name": "{name}",
+        "text": "*J'entends la voix de Seoyeon.*"
+    },
+    "night3_nightmare_3_ins": {
+        "name": "{name}",
+        "text": "*La voix de Yuna.*"
+    },
+    "night3_nightmare_4_ins": {
+        "name": "{name}",
+        "text": "*La voix de Dain.*"
+    },
+    "night3_dream_2_ins": {
+        "name": "{name}",
+        "text": "*Cette fois, je voulais le dire sans regrets. Je m'étais promis de vivre honnêtement dans ce lycée.*"
+    },
+    "night3_cheat_reflect_3_ins": {
+        "name": "{name}",
+        "text": "*L'exact opposé de ce qui s'est passé avec Sojeong, mais le résultat est le même. Quelqu'un souffre.*"
+    },
+    "night3_cheat_reflect_3_ins2": {
+        "name": "{name}",
+        "text": "*Ancien lycée : le regret de n'avoir rien dit.*"
+    },
+    "night3_cheat_reflect_3_ins3": {
+        "name": "{name}",
+        "text": "*Ce lycée : le regret d'avoir trop dit.*"
+    },
+    "night3_cheat_reflect_3_ins4": {
+        "name": "{name}",
+        "text": "*Au final, le problème n'a jamais été 'dire ou ne pas dire' — mais 'à qui.'*"
+    },
+    "night3_cheat_reflect_3_ins5": {
+        "name": "{name}",
+        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.'*"
+    },
+    "night3_cheat_reflect_3_ins6": {
+        "name": "{name}",
+        "text": "*Seoyeon l'a dit. 'Ta seule réponse, ou rien du tout.'*"
+    },
+    "night3_cheat_reflect_3_ins7": {
+        "name": "{name}",
+        "text": "*Yuna l'a dit. 'Ne fuis pas.'*"
+    },
+    "night3_cheat_reflect_5_ins": {
+        "name": "{name}",
+        "text": "*J'ai fait un rêve. — Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, mais sa simple présence m'apaisait.*"
+    },
+    "night3_faithful_reflect_2_ins": {
+        "name": "{name}",
+        "text": "*'Supprimer cette photo ?'*"
+    },
+    "night3_faithful_reflect_2_ins2": {
+        "name": "{name}",
+        "text": "*— Supprimée.*"
+    },
+    "night3_faithful_reflect_2_ins3": {
+        "name": "{name}",
+        "text": "*'Supprimer cette photo ?'*"
+    },
+    "night3_faithful_reflect_2_ins4": {
+        "name": "{name}",
+        "text": "*Une seconde. Mon doigt s'arrête. — Les mots de Minsu me reviennent. 'Refuser, c'est aussi de l'amour.'*"
+    },
+    "night3_faithful_reflect_2_ins5": {
+        "name": "{name}",
+        "text": "*...Oui. C'est à moi d'abord de dire non à mon passé.*"
+    },
+    "night3_faithful_reflect_2_ins6": {
+        "name": "{name}",
+        "text": "*— Supprimée.*"
+    },
+    "night3_faithful_reflect_3_ins": {
+        "name": "{name}",
+        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.' Il a raison. Dans mon ancien lycée, Sojeong n'a même jamais eu la chance de me rejeter. Parce que je n'ai rien dit. — C'était la fin la plus cruelle pour nous deux.*"
+    },
+    "night3_faithful_reflect_4_ins": {
+        "name": "{name}",
+        "text": "*Une seconde. Mon doigt s'arrête. — Les mots de Minsu me reviennent. 'Refuser, c'est aussi de l'amour.'*"
+    },
+    "night3_faithful_reflect_4_ins2": {
+        "name": "{name}",
+        "text": "*...Refuser. Oui, je sais que je dois le faire. Je sais, mais.*"
+    },
+    "night3_faithful_reflect_4_ins3": {
+        "name": "{name}",
+        "text": "*Mon doigt ne bouge pas. Posé sur le bouton supprimer.*"
+    },
+    "night3_faithful_reflect_4_ins4": {
+        "name": "{name}",
+        "text": "*C'était pareil dans mon ancien lycée. Je savais mais je ne pouvais pas. Et maintenant — je sais mais je ne peux toujours pas.*"
+    },
+    "night3_faithful_reflect_4_ins5": {
+        "name": "{name}",
+        "text": "*J'ai refermé mon téléphone. La photo est toujours là.*"
+    },
+    "night3_faithful_reflect_4_ins6": {
+        "name": "{name}",
+        "text": "*...Avant comme maintenant, je ne suis qu'un lâche incapable de lâcher quoi que ce soit.*"
     }
 }

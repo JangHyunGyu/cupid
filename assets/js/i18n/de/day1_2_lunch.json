@@ -489,5 +489,37 @@
     "lunch_yuna_c2_2": {
         "name": "Yuna",
         "text": "...Aber diese Bibliothek ist nicht schlecht. Sie ist ruhig."
+    },
+    "lunch_start_4_ins": {
+        "name": "{name}",
+        "text": "*Neben mir greift Dain nach meinem Arm.*"
+    },
+    "lunch_seo_6_ins": {
+        "name": "Seoyeon",
+        "text": "*Lächelnd* \"Misstrauisch, hm. Mir gefällt einfach der Wind hier oben.\""
+    },
+    "lunch_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon dreht leicht den Kopf weg. Ihre Ohren sind rot.*"
+    },
+    "lunch_seo_c1_3_ins": {
+        "name": "{name}",
+        "text": "*Die roten Ohren — war das echt? — Vielleicht liegt es am Wind.*"
+    },
+    "lunch_seo_after_7_ins": {
+        "name": "{name}",
+        "text": "*Dain zerrt mich am Arm zum Kiosk. Dieses Mädchen hat eine unglaubliche Kraft.*"
+    },
+    "lunch_dain_12_ins": {
+        "name": "Dain",
+        "text": "Aaagh, okay!! Zwei Soboro-Brötchen!! Frau Verkäuferin!!"
+    },
+    "lunch_yuna_5_ins": {
+        "name": "{name}",
+        "text": "...Darf ich mich setzen?"
+    },
+    "lunch_yuna_10_ins": {
+        "name": "{name}",
+        "text": "*In Yunas Schreibtisch steckt etwas. Ein altes Lesezeichen. Etwas ist darauf geschrieben — aber ich kann es nicht entziffern. Yuna legt unbewusst ihre Hand darauf. Etwas Wertvolles, vielleicht.*"
     }
 }

@@ -88,7 +88,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "excludeCondition": "route_seoyeon",
-        "next": "after5_farewell_seo_7"
+        "next": "after5_farewell_seo_6_ins"
     },
     "after5_farewell_seo_7": {
         "character": "assets/images/characters/seyoun_normal.png",
@@ -184,7 +184,7 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/dain_laugh.png",
         "sunset": true,
         "excludeCondition": "route_dain",
-        "next": "after5_farewell_dain_5"
+        "next": "after5_farewell_dain_4_ins"
     },
     "after5_farewell_dain_5": {
         "character": "assets/images/characters/dain_laugh.png",
@@ -275,7 +275,7 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "background": "assets/images/background/school_back.png",
         "sunset": true,
-        "next": "after5_last_chance_choice"
+        "next": "after5_last_chance_2_ins"
     },
     "after5_last_chance_choice": {
         "character": null,
@@ -324,7 +324,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/yuna_normal.png",
         "sunset": true,
-        "next": "ending_start"
+        "next": "after5_confess_react_yuna_ins"
     },
     "after5_confess_no": {
         "background": "assets/images/background/school_back.png",
@@ -344,5 +344,170 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "night": true,
         "next": "day5_ending_alone"
-    }
+    },
+    "after5_farewell_seo_6_ins": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after5_farewell_seo_6_ins2"
+    },
+    "after5_farewell_seo_6_ins2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after5_farewell_seo_7"
+    },
+    "after5_farewell_dain_4_ins": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after5_farewell_dain_4_ins2"
+    },
+    "after5_farewell_dain_4_ins2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after5_farewell_dain_4_ins3"
+    },
+    "after5_farewell_dain_4_ins3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after5_farewell_dain_4_ins4"
+    },
+    "after5_farewell_dain_4_ins4": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after5_farewell_dain_5"
+    },
+    "after5_last_chance_2_ins": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins2"
+    },
+    "after5_last_chance_2_ins2": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins3"
+    },
+    "after5_last_chance_2_ins3": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins4"
+    },
+    "after5_last_chance_2_ins4": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins5"
+    },
+    "after5_last_chance_2_ins5": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after5_last_chance_2_ins6"
+    },
+    "after5_last_chance_2_ins6": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins7"
+    },
+    "after5_last_chance_2_ins7": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after5_last_chance_2_ins8"
+    },
+    "after5_last_chance_2_ins8": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins9"
+    },
+    "after5_last_chance_2_ins9": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "after5_last_chance_2_ins10"
+    },
+    "after5_last_chance_2_ins10": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins11"
+    },
+    "after5_last_chance_2_ins11": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins12"
+    },
+    "after5_last_chance_2_ins12": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins13"
+    },
+    "after5_last_chance_2_ins13": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after5_last_chance_2_ins14"
+    },
+    "after5_last_chance_2_ins14": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins15"
+    },
+    "after5_last_chance_2_ins15": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after5_last_chance_2_ins16"
+    },
+    "after5_last_chance_2_ins16": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins17"
+    },
+    "after5_last_chance_2_ins17": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after5_last_chance_2_ins18"
+    },
+    "after5_last_chance_2_ins18": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_2_ins19"
+    },
+    "after5_last_chance_2_ins19": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after5_last_chance_choice"
+    },
+    "after5_confess_react_yuna_ins": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_confess_react_yuna_ins2"
+    },
+    "after5_confess_react_yuna_ins2": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_confess_react_yuna_ins3"
+    },
+    "after5_confess_react_yuna_ins3": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_confess_react_yuna_ins4"
+    },
+    "after5_confess_react_yuna_ins4": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_confess_react_yuna_ins5"
+    },
+    "after5_confess_react_yuna_ins5": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_confess_react_yuna_ins6"
+    },
+    "after5_confess_react_yuna_ins6": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_confess_react_yuna_ins7"
+    },
+    "after5_confess_react_yuna_ins7": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_confess_react_yuna_ins8"
+    },
+    "after5_confess_react_yuna_ins8": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "ending_start"
+    },
 });

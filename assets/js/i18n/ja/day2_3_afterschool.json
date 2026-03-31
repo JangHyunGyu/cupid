@@ -571,5 +571,165 @@
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*体育館を出て、通りを歩いた。*"
+    },
+    "after2_dain_9_ins": {
+        "name": "ダイン",
+        "text": "*目を丸くして* 「え？ 手加減するつもりだったのに、やめた」"
+    },
+    "after2_dain_9_ins2": {
+        "name": "{name}",
+        "text": "*ダインが姿勢を低くする。目つきが変わった。*"
+    },
+    "after2_dain_9_ins3": {
+        "name": "ダイン",
+        "text": "本気で行くよ！"
+    },
+    "after2_dain_9_ins4": {
+        "name": "{name}",
+        "text": "*ラリーが続く。ダインの動きは——明らかに普通じゃない。速くて、正確で、体が覚えている動き。*"
+    },
+    "after2_dain_9_ins5": {
+        "name": "{name}",
+        "text": "*この子、本当にうまい。——スポーツが好きなレベルじゃなくて、人生を賭けていた人の身のこなしだ。*"
+    },
+    "after2_dain_9_ins6": {
+        "name": "{name}",
+        "text": "*結局3対2。ギリギリ勝った。*"
+    },
+    "after2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*学校の前のトッポッキ屋。*"
+    },
+    "after2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*ダインがトッポッキをふーふーしながら話す。*"
+    },
+    "after2_dain_end_ins3": {
+        "name": "{name}",
+        "text": "*学校の前のトッポッキ屋。*"
+    },
+    "after2_seo_4_ins": {
+        "name": "{name}",
+        "text": "*この人の語彙に「お願い」という言葉は存在しないらしい。*"
+    },
+    "after2_seo_6_ins": {
+        "name": "{name}",
+        "text": "*この人の語彙に「お願い」という言葉は存在しないらしい。*"
+    },
+    "after2_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*書類の整理を始める。イベントの予算案、部活の申請書。結構な量だ。*"
+    },
+    "after2_seo_8b4_ins": {
+        "name": "{name}",
+        "text": "*「褒め」ってはっきり言うの。——この人にしては珍しいことみたいだ。*"
+    },
+    "after2_seo_8b4_ins2": {
+        "name": "{name}",
+        "text": "*整理していると、ソヨンが首を回す。凝っているみたいだ。*"
+    },
+    "after2_seo_sunset_joke_ins": {
+        "name": "ソヨン",
+        "text": "…こんな軽い台詞をこんな自然に言える人、初めてだよ"
+    },
+    "after2_seo_sunset_react_ins": {
+        "name": "ソヨン",
+        "text": "結構凝ってるね。ちょっとじっとしてて"
+    },
+    "after2_seo_neck_react_ins": {
+        "name": "ソヨン",
+        "text": "結構凝ってるね。ちょっとじっとしてて"
+    },
+    "after2_seo_neck_react_ins2": {
+        "name": "{name}",
+        "text": "*ソヨンが立ち上がって僕の後ろに回る。肩に手を置く。*"
+    },
+    "after2_seo_neck_high_ins": {
+        "name": "ソヨン",
+        "text": "*静かに* 「…動かないで。ちょっとだけ」"
+    },
+    "after2_seo_neck_high_ins2": {
+        "name": "{name}",
+        "text": "*誰の手だっけ？——ソヨンの手が僕の肩の上にあるんだけど。思考がめちゃくちゃだ。それくらい緊張している。*"
+    },
+    "after2_seo_neck_low_ins": {
+        "name": "{name}",
+        "text": "急に何？"
+    },
+    "after2_seo_neck_low_ins2": {
+        "name": "ソヨン",
+        "text": "*手を引きながら* 「…何でもない」"
+    },
+    "after2_yuna_1_ins": {
+        "name": "{name}",
+        "text": "*別館の廊下。人の気配がない。——秘密の読書スペースのドアが少し開いている。*"
+    },
+    "after2_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*別館の廊下。人の気配がない。——秘密の読書スペースのドアが少し開いている。*"
+    },
+    "after2_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*ユナが顔を上げる。驚いていない。*"
+    },
+    "after2_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*ユナが顔を上げる。驚いていない。*"
+    },
+    "after2_yuna_8b_ins": {
+        "name": "{name}",
+        "text": "*隣に座る。ユナが自分のイヤホンの片方を差し出す。*"
+    },
+    "after2_yuna_8b_ins2": {
+        "name": "{name}",
+        "text": "*隣に座る。ユナが自分のイヤホンの片方を差し出す。*"
+    },
+    "after2_yuna_choice_pre3_ins": {
+        "name": "{name}",
+        "text": "*ユナが二文続けて言った。——普段一行で済ませる人なのに。*"
+    },
+    "after2_yuna_everyday_ins": {
+        "name": "ユナ",
+        "text": "…来たいなら来て。止めないから"
+    },
+    "minsu_warn_4_ins": {
+        "name": "{name}",
+        "text": "*ユナの口元がほんのわずかに上がる。*"
+    },
+    "minsu_warn_1_ins": {
+        "name": "ミンス",
+        "text": "*隣に並んで* 「最近楽しそうだな」"
+    },
+    "minsu_warn_7_ins": {
+        "name": "{name}",
+        "text": "*ミンスが立ち止まる。振り返る。いつものふざけた感じがない。*"
+    },
+    "minsu_warn_7_ins2": {
+        "name": "ミンス",
+        "text": "なあ、俺このクラスに1年いるんだよ。ソヨンが男に自分から話しかけるの見たことない。ダインが他の男にパン買ってあげたこともない。ユナは——手紙？ 誰にも書かないよ"
+    },
+    "minsu_warn_12_ins": {
+        "name": "{name}",
+        "text": "*ミンスがカバンの紐を直す。*"
+    },
+    "minsu_warn_13_ins": {
+        "name": "{name}",
+        "text": "*——息が詰まる。*"
+    },
+    "minsu_warn_15_ins": {
+        "name": "ダイン",
+        "text": "明日も勝負しよう!! 種目変えて!!"
+    },
+    "minsu_warn_15_ins2": {
+        "name": "ソヨン",
+        "text": "明日の昼、屋上開けておくから。来て"
+    },
+    "minsu_warn_15_ins3": {
+        "name": "{name}",
+        "text": "*前の学校。——その言葉が胸に刺さった。*"
+    },
+    "minsu_warn_15_ins4": {
+        "name": "{name}",
+        "text": "*——歩いていた足が止まった。*"
     }
 }

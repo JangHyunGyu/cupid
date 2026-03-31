@@ -920,5 +920,345 @@
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
         "text": "*Las tiritas siguen en el cajón. Aunque ya no hacen falta. — Quien ya no necesita excusas, aún así no puede dejar el hábito.*"
+    },
+    "perfect_seo_1_ins": {
+        "name": "{name}",
+        "text": "*Por primera vez, se quita las gafas — y está llorando.*"
+    },
+    "perfect_seo_5_ins": {
+        "name": "{name}",
+        "text": "*Sopla la brisa de la azotea.*"
+    },
+    "true_seo_7_ins": {
+        "name": "{name}",
+        "text": "*Entrelazamos los meñiques. La costumbre del Día 1, la promesa del Día 4, y ahora. — El mismo dedo, tercer significado.*"
+    },
+    "true_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Yuna sube la pequeña escalera del ático. Hay una trampilla arriba. — Al abrirse, entra una brisa.*"
+    },
+    "true_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*Encima del ático había una azotea. La azotea del anexo de la biblioteca. — Un pasadizo secreto que nadie conoce.*"
+    },
+    "true_yuna_2_ins3": {
+        "name": "{name}",
+        "text": "*Yuna se apoya en la barandilla. Se ven las estrellas.*"
+    },
+    "true_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*Yuna se detiene un momento. — Sonríe. Una sonrisa silenciosa que nunca había visto.*"
+    },
+    "hidden_true_homeroom_5_ins": {
+        "name": "{name}",
+        "text": "*Día de la graduación. — El tiempo ha pasado.*"
+    },
+    "hidden_true_homeroom_5_ins2": {
+        "name": "{name}",
+        "text": "*El uniforme ya no está rígido. No — hoy es el día en que me lo quito.*"
+    },
+    "hidden_true_homeroom_2_ins": {
+        "name": "{name}",
+        "text": "*Sin cárdigan, sin portapapeles. Un jersey cómodo y falda larga. — Ropa de calle.*"
+    },
+    "hidden_true_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "Gracias."
+    },
+    "hidden_true_homeroom_3_ins2": {
+        "name": "Profesora",
+        "text": "...Eso."
+    },
+    "hidden_true_homeroom_4_ins": {
+        "name": "{name}",
+        "text": "*Fue inconsciente. — En el momento de graduarme, el título desapareció.*"
+    },
+    "hidden_true_homeroom_4_ins2": {
+        "name": "{name}",
+        "text": "*Saca un sobre. Esta vez no es marrón — es blanco.*"
+    },
+    "hidden_true_homeroom_4_ins3": {
+        "name": "Profesora",
+        "text": "Terminé el manuscrito. — Pude escribirlo porque fuiste mi primer lector."
+    },
+    "hidden_true_homeroom_4_ins4": {
+        "name": "{name}",
+        "text": "¿Sirvió mi reseña?"
+    },
+    "hidden_true_homeroom_4_ins5": {
+        "name": "Profesora",
+        "text": "Pedí una línea y volviste con tres páginas.\" *Sonríe* \"Que una profesora de escritura creativa casi llore con la reseña de un alumno — es nuestro secreto."
+    },
+    "hidden_true_homeroom_4_ins6": {
+        "name": "{name}",
+        "text": "*Mira por la ventana. Los cerezos están cayendo.*"
+    },
+    "hidden_true_homeroom_4_ins7": {
+        "name": "Profesora",
+        "text": "*Girándose desde la ventana* \"...Solo una cosa."
+    },
+    "hidden_true_homeroom_6_ins": {
+        "name": "{name}",
+        "text": "*De zumo a café. — De estudiante a adulto. No cruzar la línea — la línea misma desapareció.*"
+    },
+    "hidden_true_homeroom_7_ins": {
+        "name": "{name}",
+        "text": "*Sonríe. No una sonrisa seca — la sonrisa de alguien que terminó un manuscrito de siete años.*"
+    },
+    "hidden_true_homeroom_7_ins2": {
+        "name": "Profesora",
+        "text": "...No debería hacer esto.\" *— Su voz se apaga. Y luego sonríe.*"
+    },
+    "hidden_true_homeroom_7_ins3": {
+        "name": "{name}",
+        "text": "*La última vez. Y el hábito se rompe. — Siete años de 'profesora' terminaron, y llegó el día de llamarla por su nombre.*"
+    },
+    "hidden_true_homeroom_7_ins4": {
+        "name": "{name}",
+        "text": "*La graduación terminó. — No la enfermería, no la cafetería prometida. Su casa.*"
+    },
+    "hidden_true_homeroom_7_ins5": {
+        "name": "{name}",
+        "text": "*El salón. Una manta en el sofá. Dos tazas de cacao en la mesita. — Una maceta de romero junto a la ventana. La de la enfermería.*"
+    },
+    "hidden_true_homeroom_7_ins6": {
+        "name": "{name}",
+        "text": "*La enfermera — no, ahora es Juwon — está sentada en el sofá. Sin gafas, un jersey en vez de la bata blanca.*"
+    },
+    "hidden_true_homeroom_7_ins7": {
+        "name": "Enfermera",
+        "text": "Perdona que sea más pequeño que la enfermería."
+    },
+    "hidden_true_homeroom_7_ins8": {
+        "name": "{name}",
+        "text": "Me gusta más lo pequeño."
+    },
+    "hidden_true_homeroom_7_ins9": {
+        "name": "Enfermera",
+        "text": "*Pasándome el cacao* \"...No traje tiritas. Porque hoy te llamé sin excusas."
+    },
+    "hidden_true_homeroom_7_ins10": {
+        "name": "{name}",
+        "text": "*Sin excusas. — Por fin bajó su escudo.*"
+    },
+    "hidden_true_homeroom_7_ins11": {
+        "name": "{name}",
+        "text": "*Se ven los cerezos por la ventana. El aroma del romero se mezcla con el del cacao.*"
+    },
+    "hidden_true_nurse_1_ins": {
+        "name": "Enfermera",
+        "text": "¿Sabes? Dijiste que en el hospital universitario era difícil porque nadie te llamaba por tu nombre."
+    },
+    "hidden_true_nurse_1_ins2": {
+        "name": "Enfermera",
+        "text": "*En voz baja* \"...Fuiste el primero. La primera persona que preguntó mi nombre."
+    },
+    "hidden_true_nurse_1_ins3": {
+        "name": "{name}",
+        "text": "*Juwon. — Solo decir su nombre basta para que se le humedezcan los ojos.*"
+    },
+    "hidden_true_nurse_4_ins": {
+        "name": "{name}",
+        "text": "*Día de la graduación.*"
+    },
+    "hidden_true_nurse_4_ins2": {
+        "name": "{name}",
+        "text": "*Recibí mi diploma y salí por la puerta de la escuela — pasando frente a la enfermería. Por costumbre.*"
+    },
+    "hidden_true_nurse_4_ins3": {
+        "name": "{name}",
+        "text": "*Hay una tirita pegada en la puerta de la enfermería. Letra pequeña.*"
+    },
+    "hidden_true_nurse_4_ins4": {
+        "name": "{name}",
+        "text": "*'Felicidades por graduarte. Te espero en la cafetería, no en la enfermería. — Mapa dentro de la tirita'*"
+    },
+    "hidden_true_nurse_4_ins5": {
+        "name": "{name}",
+        "text": "*Al despegar la tirita — dentro hay un pequeño mapa dibujado. La cafetería frente a la escuela.*"
+    },
+    "hidden_true_nurse_2_ins": {
+        "name": "{name}",
+        "text": "*No una profesora — solo una mujer.*"
+    },
+    "hidden_true_nurse_2_ins2": {
+        "name": "Enfermera",
+        "text": "Felicidades por la graduación."
+    },
+    "hidden_true_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "Gracias."
+    },
+    "hidden_true_nurse_8_ins": {
+        "name": "Enfermera",
+        "text": "*Girando la taza de café* \"El diploma surte efecto más rápido de lo que pensaba."
+    },
+    "hidden_true_nurse_8_ins2": {
+        "name": "{name}",
+        "text": "*La graduación borra la línea. — En una cafetería en vez de la enfermería, con una persona en vez de una profesora.*"
+    },
+    "hidden_true_nurse_8_ins3": {
+        "name": "{name}",
+        "text": "*La enfermera me mira. Sin picardía.*"
+    },
+    "hidden_true_nurse_8_ins4": {
+        "name": "Enfermera",
+        "text": "Oye. El Día 1, cuando viniste a la enfermería."
+    },
+    "hidden_true_nurse_8_ins5": {
+        "name": "{name}",
+        "text": "Porque estaba mareado."
+    },
+    "hidden_true_nurse_8_ins6": {
+        "name": "Enfermera",
+        "text": "Te toqué la frente y dije 'solo quería tocarte'. Fue una broma."
+    },
+    "hidden_true_nurse_8_ins7": {
+        "name": "{name}",
+        "text": "Lo sé."
+    },
+    "hidden_true_nurse_5_ins": {
+        "name": "{name}",
+        "text": "*Su voz bajó un tono. Toda la picardía desapareció por completo. — Esta es su sinceridad.*"
+    },
+    "hidden_true_nurse_5_ins2": {
+        "name": "Enfermera",
+        "text": "Una profesora no debería enamorarse de un alumno. Lo sabía. — Por eso lo envolvía todo en bromas. Una y otra vez."
+    },
+    "hidden_true_nurse_5_ins3": {
+        "name": "Enfermera",
+        "text": "Pero tú viste la sinceridad detrás de las bromas."
+    },
+    "hidden_true_nurse_5_ins4": {
+        "name": "{name}",
+        "text": "Tardar tres minutos en poner una tirita no es solo ser cuidadosa."
+    },
+    "hidden_true_nurse_5_ins5": {
+        "name": "{name}",
+        "text": "*La enfermera se detiene un momento. — Y sonríe. No una sonrisa juguetona.*"
+    },
+    "hidden_true_nurse_7_ins": {
+        "name": "{name}",
+        "text": "*La enfermera extiende la mano y toca la tirita en el dorso de mi mano. La que me puso ayer.*"
+    },
+    "hidden_true_nurse_7_ins2": {
+        "name": "Enfermera",
+        "text": "Ahora podemos vernos sin tiritas. — Sin excusas."
+    },
+    "hidden_true_nurse_7_ins3": {
+        "name": "{name}",
+        "text": "*La persona que necesitaba excusas. — El título de 'profesora' era su excusa y su muro. Ese muro desapareció hoy.*"
+    },
+    "hidden_true_nurse_7_ins4": {
+        "name": "{name}",
+        "text": "*Graduación. Esperando frente a la escuela. La profesora está en la puerta, estrechando la mano de cada graduado.*"
+    },
+    "hidden_true_nurse_7_ins5": {
+        "name": "{name}",
+        "text": "*Llegó mi turno.*"
+    },
+    "hidden_true_nurse_7_ins6": {
+        "name": "Profesora",
+        "text": "Felicidades por tu graduación."
+    },
+    "hidden_good_homeroom_4_ins": {
+        "name": "{name}",
+        "text": "*Después de la graduación. Al pasar frente a la enfermería — la puerta está abierta.*"
+    },
+    "hidden_good_homeroom_4_ins2": {
+        "name": "{name}",
+        "text": "*La enfermera está regando la maceta de romero.*"
+    },
+    "hidden_good_homeroom_4_ins3": {
+        "name": "Enfermera",
+        "text": "Ah, un graduado."
+    },
+    "hidden_good_homeroom_4_ins4": {
+        "name": "{name}",
+        "text": "Vine a despedirme por última vez."
+    },
+    "hidden_good_homeroom_4_ins5": {
+        "name": "Enfermera",
+        "text": "*Sonriendo* \"Un paciente que viene a despedirse al recibir el alta. — Me conmueve."
+    },
+    "hidden_good_homeroom_4_ins6": {
+        "name": "{name}",
+        "text": "*La enfermera saca algo del cajón. Un frasco pequeño.*"
+    },
+    "hidden_good_nurse_2_ins": {
+        "name": "{name}",
+        "text": "¿Interés médico?"
+    },
+    "hidden_good_nurse_2_ins2": {
+        "name": "Enfermera",
+        "text": "*Con una breve pausa* \"...Sí. Interés médico.\" *En voz baja* \"Esta vez, de verdad."
+    },
+    "hidden_good_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "*'Esta vez, de verdad.' — Lo que significa que las otras veces no lo era.*"
+    },
+    "hidden_good_nurse_3_ins": {
+        "name": "{name}",
+        "text": "*Ese corazón — esta vez definitivamente no es interés médico.*"
+    },
+    "good_1_seo_ins": {
+        "name": "{name}",
+        "text": "*Un pétalo de cerezo cae en el pelo de Seoyeon. Dudo si quitarlo — cuando Seoyeon inclina la cabeza primero.*"
+    },
+    "good_1_seo_ins2": {
+        "name": "{name}",
+        "text": "*Ella finge ser perfecta, pero yo tampoco era perfecto.*"
+    },
+    "good_1_seo_ins3": {
+        "name": "{name}",
+        "text": "*Los cerezos florecerán otra vez el año que viene. Caminamos juntos.*"
+    },
+    "good_1_seo_ins4": {
+        "name": "{name}",
+        "text": "*La azotea. Yuna está apoyada en la barandilla. El viento le agita el pelo.*"
+    },
+    "good_1_yuna_b_ins": {
+        "name": "{name}",
+        "text": "*Estaba persiguiendo la sombra de alguien que desapareció.*"
+    },
+    "good_4_yuna_ins": {
+        "name": "{name}",
+        "text": "*Frente a la puerta de la escuela. Dain espera lanzando un balón de voleibol.*"
+    },
+    "bitter_seo_3_ins": {
+        "name": "{name}",
+        "text": "*Dain lanza el balón de voleibol. Lo atrapo. — Así es como esta persona hace las paces.*"
+    },
+    "bitter_seo_3_ins2": {
+        "name": "{name}",
+        "text": "*Corría aunque le dolieran las rodillas.*"
+    },
+    "bitter_seo_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon en la cafetería. Su mirada detrás de las gafas es seca. Sin compostura, sin temblor. Solo — los ojos de alguien que vino a cerrar cuentas.*"
+    },
+    "bitter_dain_3_ins": {
+        "name": "{name}",
+        "text": "*Salí por la puerta de la escuela. Está lloviendo. — Sin paraguas. Los pétalos de cerezo se pegan al suelo mojado bajo mis pies.*"
+    },
+    "bitter_epilogue_2_ins": {
+        "name": "{name}",
+        "text": "*Reuní el valor. Lo dije. — Pero lo que volvió fue silencio, con la cabeza agachada.*"
+    },
+    "bitter_epilogue_2_ins2": {
+        "name": "{name}",
+        "text": "*\"...Gracias. De verdad. Pero yo aún — supongo que cinco días fueron muy pocos.\"*"
+    },
+    "bitter_epilogue_2_ins3": {
+        "name": "{name}",
+        "text": "*No fue un rechazo. Fue el momento. — El resultado de cinco días en los que no me acerqué lo suficiente.*"
+    },
+    "harem_1_ins": {
+        "name": "{name}",
+        "text": "*Yuna agachó la cabeza. Un buen rato. Cuando la levantó, sus ojos estaban secos pero sonreía. \"...Idiota.\" Esa sola palabra contenía la emoción de dos frases.*"
+    },
+    "alone_2_ins": {
+        "name": "{name}",
+        "text": "*Los cerezos caen fuera de la ventana. Los mismos que me rozaron la nariz hace cinco días ahora se dispersan con el viento.*"
     }
 }

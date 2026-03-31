@@ -322,5 +322,57 @@
     "classroom_yuna_note_6": {
         "name": "{name}",
         "text": "*¿Finge que no le importa o de verdad no le importa? — Interesante.*"
+    },
+    "hallway_6_ins": {
+        "name": "Seoyeon",
+        "text": "*Una breve pausa* \"...Eres observador.\""
+    },
+    "hallway_6_ins2": {
+        "name": "{name}",
+        "text": "*Esa pausa. Medio segundo. Seguramente no fue nada, pero por alguna razón se me quedó grabada.*"
+    },
+    "hallway_13_ins": {
+        "name": "{name}",
+        "text": "*Su postura es recta. Perfectamente recta. — Como si la hubiera ensayado. Cada vez que saluda a un estudiante, la misma sonrisa se repite con el mismo ángulo. Amabilidad automatizada. — Tanta precisión resulta un poco extraña.*"
+    },
+    "classroom_2_ins": {
+        "name": "{name}",
+        "text": "*La profesora está de pie frente al estrado. Treinta y pocos. Un botón del cárdigan desabrochado. Su expresión es indiferente, pero — sus ojos recorren a cada estudiante uno por uno.*"
+    },
+    "classroom_3_ins": {
+        "name": "{name}",
+        "text": "*Su voz es seca. No es que no tenga emoción, solo contiene la justa. — Sorprendentemente, no me desagrada.*"
+    },
+    "classroom_5_ins": {
+        "name": "{name}",
+        "text": "*La profesora asiente. Iba a decir algo más — se detiene y vuelve a mirar la lista de asistencia sobre el estrado. Su mano derecha juguetea con un bolígrafo en el bolsillo. Debe ser un hábito.*"
+    },
+    "classroom_5_ins2": {
+        "name": "Profesora",
+        "text": "...Bien. {name}. Lo recordaré.\" *En voz baja, casi para sí misma* \"Tengo por norma memorizar los nombres a la primera.\""
+    },
+    "classroom_5_ins3": {
+        "name": "{name}",
+        "text": "*Nadie más escuchó eso. Solo yo. — ¿Es atenta, o simplemente una costumbre?*"
+    },
+    "classroom_dain_5_ins": {
+        "name": "{name}",
+        "text": "*La profesora suspira levemente. No de exasperación — es el suspiro de quien ya está acostumbrada.*"
+    },
+    "classroom_dain_5_ins2": {
+        "name": "Profesora",
+        "text": "...Guarda algo de energía. La primera clase ni siquiera ha empezado."
+    },
+    "classroom_dain_5_ins3": {
+        "name": "{name}",
+        "text": "*Lo dice con sequedad, pero la comisura de sus labios se eleva ligeramente. Su expresión por defecto es neutra, pero de vez en cuando tiene un fallo.*"
+    },
+    "classroom_minsu_2_ins": {
+        "name": "Minsu",
+        "text": "*Señalando a Dain con la barbilla* \"Tu resistencia.\""
+    },
+    "classroom_yuna_note_5_ins": {
+        "name": "{name}",
+        "text": "*¿Finge que no le importa, o de verdad no le importa? — Interesante. Pero lo extraño es que ya sabía mi nombre. Estaba mirando a otro lado durante la presentación. — Entonces sí estaba escuchando.*"
     }
 }

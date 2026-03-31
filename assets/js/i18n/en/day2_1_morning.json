@@ -342,5 +342,89 @@
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
         "text": "*Pocketed the note. The two reactions are subtly different.*"
+    },
+    "morning2_minsu_1_ins": {
+        "name": "{name}",
+        "text": "*The moment Seoyeon rounds the corner of the hallway — just before the back of her head disappears, her smile seems to drop for 0.3 seconds. A switch back to her default expression. — Was that my imagination?*"
+    },
+    "morning2_break_transition_ins": {
+        "name": "{name}",
+        "text": "*The homeroom teacher is standing by the classroom door. Holding the attendance sheet, she glances toward the door — and our eyes meet.*"
+    },
+    "hidden_homeroom_d2_1_ins": {
+        "name": "{name}",
+        "text": "Is something wrong...?"
+    },
+    "hidden_homeroom_d2_1_ins2": {
+        "name": "Homeroom Teacher",
+        "text": "No, just checking your transfer paperwork. — Administrative stuff."
+    },
+    "hidden_homeroom_d2_2_ins": {
+        "name": "{name}",
+        "text": "*The faculty office. The teacher's desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
+    },
+    "hidden_homeroom_d2_3_ins": {
+        "name": "Homeroom Teacher",
+        "text": "*A brief hesitation* \"...Various things. Mostly — novels.\""
+    },
+    "hidden_homeroom_d2_3_ins2": {
+        "name": "{name}",
+        "text": "*Novels. A Korean teacher reading novels is natural, but why does she seem reluctant to say it?*"
+    },
+    "hidden_homeroom_d2_3_ins3": {
+        "name": "Homeroom Teacher",
+        "text": "Reading? — What about writing?"
+    },
+    "hidden_homeroom_d2_3_ins4": {
+        "name": "{name}",
+        "text": "*Strange question. We were talking about grades, so why the sudden pivot to 'writing'?*"
+    },
+    "hidden_homeroom_d2_3_ins5": {
+        "name": "{name}",
+        "text": "I'm not sure about writing."
+    },
+    "hidden_homeroom_d2_3_ins6": {
+        "name": "{name}",
+        "text": "*The teacher hesitates briefly. Her gaze drifts toward the drawer — then snaps right back.*"
+    },
+    "hidden_homeroom_d2_6_ins": {
+        "name": "{name}",
+        "text": "*The teacher casually pushes the drawer shut. Like it's nothing.*"
+    },
+    "hidden_homeroom_d2_7_ins": {
+        "name": "{name}",
+        "text": "A lot better. I like the people in class."
+    },
+    "hidden_homeroom_d2_8_ins": {
+        "name": "{name}",
+        "text": "Sounds like Dain is pretty famous if you know about her."
+    },
+    "hidden_homeroom_d2_8_ins2": {
+        "name": "Homeroom Teacher",
+        "text": "Famous isn't the word...\" *Takes a sip of coffee* \"More like someone I worry about.\""
+    },
+    "hidden_homeroom_d2_8_ins3": {
+        "name": "{name}",
+        "text": "*'Someone I worry about.' — The teacher worries about Dain. Does she know about Dain's knee?*"
+    },
+    "hidden_homeroom_d2_8_ins4": {
+        "name": "Homeroom Teacher",
+        "text": "*Hiding behind her coffee mug* \"...Guess my poker face failed. Never mind, off you go.\""
+    },
+    "hidden_homeroom_d2_8_ins5": {
+        "name": "{name}",
+        "text": "*She hid her mouth but her ears are red. — This person gets flustered more easily than I thought.*"
+    },
+    "hidden_homeroom_d2_11_ins": {
+        "name": "{name}",
+        "text": "*Muttering when no one's listening. — This person makes a habit of packaging her concern as 'work.'*"
+    },
+    "morning2_seo_dust_1_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon stops. She looks at my shoulder.*"
+    },
+    "morning2_haeun_6_ins": {
+        "name": "{name}",
+        "text": "*Haeun steps closer. Her voice drops lower.*"
     }
 }

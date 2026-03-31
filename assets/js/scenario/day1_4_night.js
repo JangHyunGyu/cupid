@@ -213,7 +213,7 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_my.png",
         "characters": { "center": { "src": "assets/images/characters/dain_normal.png", "opacity": 0.35 } },
         "night": true,
-        "next": "night_dain_freetalk"
+        "next": "night_dain_late_4_ins"
     },
     "night_end_1": {
         "background": "assets/images/background/room_my.png",
@@ -301,5 +301,10 @@ Object.assign(SCENARIO[1], {
         "characters": { "center": { "src": "assets/images/characters/yuna_normal.png", "opacity": 0.35 } },
         "night": true,
         "next": "night_end_1"
-    }
+    },
+    "night_dain_late_4_ins": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "night_dain_freetalk"
+    },
 });
