@@ -33,6 +33,19 @@
         font-size: 1.05rem;
         line-height: 1.4;
     }
+
+    /* 캐릭터 이미지가 좌우로 꽉 차도록 */
+    .char-slot img {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+    }
 }
 /* ==========================================================================
    Cupid Global Styles (공통 스타일 및 초기화)
