@@ -361,7 +361,7 @@
     },
     "hidden_homeroom_d2_2_ins": {
         "name": "{name}",
-        "text": "*La sala de profesores. El escritorio de la profesora está en la esquina. Papeles y una taza de café sobre la mesa, y — un cajón ligeramente entreabierto.*"
+        "text": "*Seguí a la profesora hasta la sala de profesores.* *Su escritorio está en la esquina. Papeles y una taza de café sobre la mesa, y — un cajón ligeramente entreabierto.*"
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "Profesora",

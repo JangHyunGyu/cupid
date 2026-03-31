@@ -70,6 +70,9 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_reject_for_dain_1",
                 "setFlags": ["route_dain"],
                 "condition": "accepted_dain_date"
+            },
+            {
+                "next": "after3_choice"
             }
         ]
     },

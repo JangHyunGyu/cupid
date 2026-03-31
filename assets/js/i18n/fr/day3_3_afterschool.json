@@ -25,7 +25,8 @@
         "choices": [
             "Aller voir Seoyeon",
             "Aller voir Yuna",
-            "Aller voir Dain"
+            "Aller voir Dain",
+            "Réfléchir encore un peu"
         ]
     },
     "after3_choice": {

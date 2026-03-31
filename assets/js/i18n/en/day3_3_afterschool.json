@@ -25,7 +25,8 @@
         "choices": [
             "Go to Seoyeon",
             "Go to Yuna",
-            "Go to Dain"
+            "Go to Dain",
+            "Think a little more"
         ]
     },
     "after3_choice": {

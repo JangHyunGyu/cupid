@@ -361,7 +361,7 @@
     },
     "hidden_homeroom_d2_2_ins": {
         "name": "{name}",
-        "text": "*The faculty office. The teacher's desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
+        "text": "*I headed to the faculty office with the teacher.* *Her desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "Homeroom Teacher",

@@ -361,7 +361,7 @@
     },
     "hidden_homeroom_d2_2_ins": {
         "name": "{name}",
-        "text": "*Das Lehrerzimmer. Der Schreibtisch der Lehrerin steht in der Ecke. Papiere und eine Kaffeetasse auf dem Tisch, und — eine Schublade, leicht geöffnet.*"
+        "text": "*Ich ging der Lehrerin ins Lehrerzimmer nach.* *Ihr Schreibtisch steht in der Ecke. Papiere und eine Kaffeetasse auf dem Tisch, und — eine Schublade, leicht geöffnet.*"
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "Klassenlehrerin",
