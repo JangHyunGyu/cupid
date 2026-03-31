@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "다인",
-        "text": "*눈이 커지며* \"어? 봐주려고 했는데 안 되겠네."
+        "text": "*눈이 커지며* 어? 봐주려고 했는데 안 되겠네."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "서연",
-        "text": "*조용히* \"...가만히 있어. 좀만."
+        "text": "*조용히* ...가만히 있어. 좀만."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "서연",
-        "text": "*손을 거두며* \"...아무것도 아냐."
+        "text": "*손을 거두며* ...아무것도 아냐."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "민수",
-        "text": "*옆에 나란히 서며* \"너 요즘 재밌냐?"
+        "text": "*옆에 나란히 서며* 너 요즘 재밌냐?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

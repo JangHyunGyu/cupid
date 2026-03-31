@@ -197,7 +197,7 @@
     },
     "hidden_homeroom_d5_1_ins3": {
         "name": "담임선생님",
-        "text": "*봉투를 살짝 들어 보이며* \"...이거."
+        "text": "*봉투를 살짝 들어 보이며* ...이거."
     },
     "hidden_homeroom_d5_1_ins4": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "hidden_homeroom_d5_6_ins12": {
         "name": "담임선생님",
-        "text": "*머리카락을 넘기며* \"...감상문은 안 받아."
+        "text": "*머리카락을 넘기며* ...감상문은 안 받아."
     },
     "hidden_homeroom_d5_6_ins13": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "hidden_homeroom_d5_6_ins14": {
         "name": "담임선생님",
-        "text": "*피식* \"...맞아. 한 줄이라도 써 줘."
+        "text": "*피식* ...맞아. 한 줄이라도 써 줘."
     },
     "hidden_homeroom_d5_6_ins15": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "hidden_homeroom_d5_6_ins19": {
         "name": "담임선생님",
-        "text": "...졸업하면.\" *목소리가 갈라진다.* \"그래. 졸업하면."
+        "text": "...졸업하면. *목소리가 갈라진다.* 그래. 졸업하면."
     },
     "hidden_homeroom_d5_6_ins20": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "hidden_nurse_d5_1_ins2": {
         "name": "보건선생님",
-        "text": "*가볍게 웃으며* \"졸업하면 놀러 와."
+        "text": "*가볍게 웃으며* 졸업하면 놀러 와."
     },
     "hidden_nurse_d5_1_ins3": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d5_3_ins4": {
         "name": "보건선생님",
-        "text": "*다시 웃으며* \"그건 졸업하고 물어봐. — 그때는 대답해줄게."
+        "text": "*다시 웃으며* 그건 졸업하고 물어봐. — 그때는 대답해줄게."
     },
     "hidden_nurse_d5_3_ins5": {
         "name": "{name}",
@@ -385,7 +385,7 @@
     },
     "hidden_nurse_d5_choice_b_ins5": {
         "name": "보건선생님",
-        "text": "*안경을 고쳐 쓰며* \"...알았어. 근데 졸업하고 써."
+        "text": "*안경을 고쳐 쓰며* ...알았어. 근데 졸업하고 써."
     },
     "hidden_nurse_d5_choice_b_ins6": {
         "name": "{name}",

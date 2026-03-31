@@ -526,7 +526,7 @@
     },
     "after3_seo_5_ins": {
         "name": "서연",
-        "text": "*급하게 머리카락을 정리하며* \"...봤어?"
+        "text": "*급하게 머리카락을 정리하며* ...봤어?"
     },
     "after3_seo_choice1_react_ins": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "after3_seo_choice1_react_ins6": {
         "name": "서연",
-        "text": "*서류를 정리하며* \"나도 네 비밀 하나 알고 있어."
+        "text": "*서류를 정리하며* 나도 네 비밀 하나 알고 있어."
     },
     "after3_seo_choice1_react_ins7": {
         "name": "서연",
@@ -566,7 +566,7 @@
     },
     "after3_yuna_choice1_2_ins": {
         "name": "유나",
-        "text": "*노트를 가슴에 꼭 안으며* \"...소설은. 허구야."
+        "text": "*노트를 가슴에 꼭 안으며* ...소설은. 허구야."
     },
     "after3_yuna_choice2_3_ins": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "after3_confront_5_ins": {
         "name": "다인",
-        "text": "*힘없이 피식 웃는다.* \"...뭐야. 이런 거에 감동받으면 안 되는데."
+        "text": "*힘없이 피식 웃는다.* ...뭐야. 이런 거에 감동받으면 안 되는데."
     },
     "after3_confront_5_ins2": {
         "name": "{name}",

@@ -365,7 +365,7 @@
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "담임선생님",
-        "text": "*잠깐 멈칫하며* \"...여러 가지. 주로 — 소설."
+        "text": "*잠깐 멈칫하며* ...여러 가지. 주로 — 소설."
     },
     "hidden_homeroom_d2_3_ins2": {
         "name": "{name}",
@@ -401,7 +401,7 @@
     },
     "hidden_homeroom_d2_8_ins2": {
         "name": "담임선생님",
-        "text": "유명하다기보다...\" *커피를 한 모금 마시며* \"걱정이 되는 쪽이지."
+        "text": "유명하다기보다... *커피를 한 모금 마시며* 걱정이 되는 쪽이지."
     },
     "hidden_homeroom_d2_8_ins3": {
         "name": "{name}",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d2_8_ins4": {
         "name": "담임선생님",
-        "text": "*커피잔으로 입을 가리며* \"...표정 관리 실패인가. 됐다, 가 봐."
+        "text": "*커피잔으로 입을 가리며* ...표정 관리 실패인가. 됐다, 가 봐."
     },
     "hidden_homeroom_d2_8_ins5": {
         "name": "{name}",

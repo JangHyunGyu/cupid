@@ -222,7 +222,7 @@ class DialogueSystem {
      */
     parseNarration(text) {
         // HTML 이스케이프 처리 (사용자 입력 등에서 태그 깨짐 방지)
-        let escapedText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        let escapedText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
 
         // * 로 시작해서 * 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
         // 타이핑 중에는 닫는 * 가 아직 없을 수 있으므로 (\*)? 로 처리

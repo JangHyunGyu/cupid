@@ -683,11 +683,11 @@
     },
     "night_homeroom_msg_1": {
         "name": "담임선생님",
-        "text": "*메시지* \"원고 마감이 가까운데. ...첫 번째 독자한테 보여주고 싶은 부분이 있어.\""
+        "text": "*메시지* 원고 마감이 가까운데. ...첫 번째 독자한테 보여주고 싶은 부분이 있어."
     },
     "night_homeroom_msg_2": {
         "name": "담임선생님",
-        "text": "*메시지* \"내일 시간 되면 교무실로 와. — 수업 끝나고.\""
+        "text": "*메시지* 내일 시간 되면 교무실로 와. — 수업 끝나고."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
@@ -855,7 +855,7 @@
     },
     "wall_dain_lastspike_3_ins": {
         "name": "다인",
-        "text": "*힘없이 웃는다.* \"...아프다."
+        "text": "*힘없이 웃는다.* ...아프다."
     },
     "wall_dain_lastspike_3_ins2": {
         "name": "다인",
@@ -935,15 +935,15 @@
     },
     "wall_yuna_glimpse_3_ins4": {
         "name": "담임선생님",
-        "text": "*메시지* \"원고 마감이 가까운데."
+        "text": "*메시지* 원고 마감이 가까운데."
     },
     "wall_yuna_glimpse_3_ins5": {
         "name": "담임선생님",
-        "text": "*메시지* \"...첫 번째 독자한테 보여주고 싶은 부분이 있어."
+        "text": "*메시지* ...첫 번째 독자한테 보여주고 싶은 부분이 있어."
     },
     "wall_yuna_glimpse_3_ins6": {
         "name": "담임선생님",
-        "text": "*메시지* \"내일 시간 되면 교무실로 와. — 수업 끝나고."
+        "text": "*메시지* 내일 시간 되면 교무실로 와. — 수업 끝나고."
     },
     "wall_yuna_glimpse_3_ins7": {
         "name": "{name}",
@@ -967,11 +967,11 @@
     },
     "wall_yuna_glimpse_3_ins12": {
         "name": "보건선생님",
-        "text": "*메시지* \"오늘 보건실에서 네가 한 말."
+        "text": "*메시지* 오늘 보건실에서 네가 한 말."
     },
     "wall_yuna_glimpse_3_ins13": {
         "name": "보건선생님",
-        "text": "*메시지* \"...밤에 자꾸 떠올라."
+        "text": "*메시지* ...밤에 자꾸 떠올라."
     },
     "wall_yuna_glimpse_3_ins14": {
         "name": "{name}",
@@ -983,11 +983,11 @@
     },
     "wall_yuna_glimpse_3_ins16": {
         "name": "보건선생님",
-        "text": "*메시지* \"아 이상한 뜻 아니야. 그냥 인상 깊었다는 거지."
+        "text": "*메시지* 아 이상한 뜻 아니야. 그냥 인상 깊었다는 거지."
     },
     "wall_yuna_glimpse_3_ins17": {
         "name": "보건선생님",
-        "text": "*메시지* \"...자."
+        "text": "*메시지* ...자."
     },
     "wall_yuna_glimpse_3_ins18": {
         "name": "{name}",
