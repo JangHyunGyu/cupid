@@ -60,7 +60,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="favicon-192.png">
     <link rel="manifest" href="manifest-fr.json">
-    <title>Cupid: 5 Days of Love</title>
+    <title>Cupid: 5 Jours d'Amour</title>
     <meta name="description" content="Roman visuel gratuit — jouez dans votre navigateur sans téléchargement. Une romance scolaire de 5 jours. 5 héroïnes, fins multiples, 6 langues.">
     <meta name="keywords" content="jeu de drague anime gratuit sans téléchargement, simulateur de romance scolaire gratuit en ligne, otome game gratuit en français navigateur, roman visuel romantique gratuit jouer maintenant, jeu amour interactif gratuit en ligne, simulateur de rencontre fins multiples gratuit, jeu anime romantique sans installer, visual novel romance gratuit en français, jeu de choix amoureux navigateur, simulateur de rencontre navigateur gratuit 2026, dating sim gratuit sans inscription, jeu lycée romance gratuit">
     <meta name="author" content="Archerlab">
@@ -95,8 +95,8 @@
     {
         "@context": "https://schema.org",
         "@type": "VideoGame",
-        "name": "Cupid: 5 Days of Love",
-        "description": "Free visual novel you can play online in your browser — no download needed. A 5-day school romance starting from your first day as a transfer student. 5 heroines, multiple endings, 6 languages.",
+        "name": "Cupid: 5 Jours d'Amour",
+        "description": "Roman visuel gratuit — jouez dans votre navigateur sans téléchargement. Une romance scolaire de 5 jours dès votre premier jour en tant qu'élève transféré. 5 héroïnes, fins multiples, 6 langues.",
         "genre": ["Visual Novel", "Romance", "Dating Simulation"],
         "gamePlatform": "Web Browser",
         "applicationCategory": "Game",
@@ -683,6 +683,13 @@
 </head>
 
 <body>
+    <noscript>
+        <div style="padding: 20px; text-align: center; color: #fff; background: #1a1a2e;">
+            <h1>Cupid: 5 Jours d'Amour</h1>
+            <p>Roman visuel gratuit — jouez dans votre navigateur sans téléchargement. Une romance scolaire de 5 jours. 5 héroïnes, fins multiples, 6 langues.</p>
+            <p>Veuillez activer JavaScript pour jouer à ce jeu.</p>
+        </div>
+    </noscript>
     <script>
         function toggleLangCombo() {
             document.getElementById('langCombo').classList.toggle('open');
@@ -722,14 +729,14 @@
     <div id="landing-container">
         <!-- Title Heroines -->
         <div class="title-heroines">
-            <img src="assets/images/characters/dain_normal.webp?v=2.3.4" alt="" class="title-heroine pos-1" loading="eager">
-            <img src="assets/images/characters/teacher_normal.webp?v=2.3.4" alt="" class="title-heroine pos-2" loading="eager">
-            <img src="assets/images/characters/seyoun_normal.webp?v=2.3.4" alt="" class="title-heroine pos-3" loading="eager">
-            <img src="assets/images/characters/nurse_normal.webp?v=2.3.4" alt="" class="title-heroine pos-4" loading="eager">
-            <img src="assets/images/characters/yuna_normal.webp?v=2.3.4" alt="" class="title-heroine pos-5" loading="eager">
+            <img src="assets/images/characters/dain_normal.webp?v=2.3.4" alt="Dain - héroïne de Cupid" class="title-heroine pos-1" loading="eager">
+            <img src="assets/images/characters/teacher_normal.webp?v=2.3.4" alt="Professeure - héroïne de Cupid" class="title-heroine pos-2" loading="eager">
+            <img src="assets/images/characters/seyoun_normal.webp?v=2.3.4" alt="Seoyeon - héroïne de Cupid" class="title-heroine pos-3" loading="eager">
+            <img src="assets/images/characters/nurse_normal.webp?v=2.3.4" alt="Infirmière - héroïne de Cupid" class="title-heroine pos-4" loading="eager">
+            <img src="assets/images/characters/yuna_normal.webp?v=2.3.4" alt="Yuna - héroïne de Cupid" class="title-heroine pos-5" loading="eager">
         </div>
         <div class="content">
-            <div class="visual-h1" role="heading" aria-level="2">CUPID</div>
+            <div class="visual-h1" role="heading" aria-level="1">CUPID</div>
             <p>L'histoire de votre premier jour dans un nouveau lycée</p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
                 <button id="start-btn" onclick="startGame()" class="start-btn" style="border:none; cursor:pointer; opacity: 0.5;" disabled>Nouvelle Partie</button>
