@@ -220,10 +220,10 @@ function formatScene(sceneId, scene, i18n) {
     if (entry) {
         if (entry.text !== undefined) {
             lines.push('');
-            const name = entry.name || entry.name === '' ? entry.name : '{name}';
+            // name이 빈 문자열이면 '—'로 표시 (파서가 인식 가능하도록)
+            const name = (entry.name === '' || entry.name === undefined) ? '—' : (entry.name || '{name}');
             if (entry.text === '') {
-                // 빈 텍스트: 이름만 출력
-                lines.push(`**${name || '—'}**: ‹빈›`);
+                lines.push(`**${name}**: ‹빈›`);
             } else {
                 lines.push(`**${name}**: ${entry.text}`);
             }

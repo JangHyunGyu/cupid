@@ -358,7 +358,7 @@ function parse() {
 
         const dialogueMatch = trimmed.match(/^\*\*(.+?)\*\*: (.+)$/);
         if (dialogueMatch) {
-            currentI18n.name = dialogueMatch[1];
+            currentI18n.name = dialogueMatch[1] === '—' ? '' : dialogueMatch[1];
             currentI18n.text = dialogueMatch[2];
             continue;
         }
