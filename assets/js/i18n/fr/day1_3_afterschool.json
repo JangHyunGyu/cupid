@@ -272,7 +272,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "Infirmière",
-        "text": "Hein ? C'est le piège — faudrait pas que tu deviennes un habitué."
+        "text": "N'est-ce pas ? J'aime bien ici. — C'est calme, et si on oublie l'odeur de désinfectant, c'est parfait."
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_4_ins4": {
         "name": "{name}",
-        "text": "*L'infirmière se lève et s'approche. Ses gestes sont fluides. — Bien au-dessus du niveau d'une infirmière scolaire ordinaire. Des mouvements ancrés dans le corps. Les mains de quelqu'un qui a fait ça des centaines de fois.*"
+        "text": "*L'infirmière se lève et s'approche. Ses gestes sont fluides. — Quand sa main m'a touché, j'ai été nerveux sans raison.*"
     },
     "after_nurse_enter_6_ins": {
         "name": "{name}",

@@ -109,7 +109,7 @@
         "text": "¡Un 'poco' no juega así! — Admítelo, eres bueno."
     },
     "after2_dain_end_2d": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "{name} era mucho mejor en eso."
     },
     "after2_dain_end_3": {
@@ -338,7 +338,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "No había habido nadie desde aquel senpai."
+        "text": "No había habido nadie desde esa persona."
     },
     "after2_yuna_choice": {
         "name": "{name}",

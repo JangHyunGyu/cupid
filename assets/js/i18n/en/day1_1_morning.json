@@ -73,7 +73,7 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*She smirks. Just the corner of her lips lifting. Whether it's calculated or just who she is — I can't tell yet.*"
+        "text": "*She smirks. Just the corners of her lips lifting. — Before I knew it, I was smiling back.*"
     },
     "seoyeon_meet_9": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*She's smiling. She seems genuinely entertained. A student council president with this kind of energy on day one.*"
+        "text": "*A student council president with this kind of energy on day one. — Not bad.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -133,7 +133,7 @@
     },
     "hallway_2": {
         "name": "{name}",
-        "text": "*Popular or feared — probably both.*"
+        "text": "*Every passing student greets Seoyeon.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Brown bob cut, volleyball jersey still on. A voice brimming with energy. She's half-standing from her seat. The kid next to her is pulling her down, but it's no use.*"
+        "text": "*Brown bob cut. Wearing a volleyball team uniform. A voice bursting with energy. She's half-risen from her seat.*"
     },
     "classroom_dain_3": {
         "name": "Homeroom Teacher",
@@ -321,7 +321,7 @@
     },
     "hallway_13_ins": {
         "name": "{name}",
-        "text": "*Her posture is straight. Perfectly straight. — Like she's practiced it. Every time she nods to a passing student, the same angle of smile repeats. Automated kindness. — The precision feels almost mechanical.*"
+        "text": "*Her back is straight. Perfectly straight. — As if practiced. I got a little curious about what's behind that composure.*"
     },
     "classroom_2_ins": {
         "name": "{name}",
