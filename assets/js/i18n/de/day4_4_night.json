@@ -45,11 +45,11 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Unser Haus sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülerratsvorsitzende. Aber Mama und Papa sind seit einem Jahr Fremde unter einem Dach. Sie haben nur die Scheidungspapiere nicht eingereicht."
+        "text": "Unser Haus sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülersprecherin. Aber Mama und Papa sind seit einem Jahr Fremde unter einem Dach. Sie haben nur die Scheidungspapiere nicht eingereicht."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
-        "text": "Mama hat gesagt: «Wenigstens du musst perfekt sein, damit diese Familie zusammenhält.»"
+        "text": "Mama hat gesagt: „Wenigstens du musst perfekt sein, damit diese Familie zusammenhält.“"
     },
     "wall_seo_12": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Jedes Mal, wenn ich gelobt wurde, dachte ich: «Dieses Lächeln ist auch geübt — hat irgendjemand je das wahre Ich gesehen?»"
+        "text": "Jedes Mal, wenn ich gelobt wurde, dachte ich: „Dieses Lächeln ist auch geübt — hat irgendjemand je das wahre Ich gesehen?“"
     },
     "wall_seo_15": {
         "name": "{name}",
@@ -112,7 +112,7 @@
         "text": "*Seoyeon wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
         "choices": [
             "Ich mag diese Seoyeon lieber als die perfekte.",
-            "Du bist für mich nicht die Schülerratsvorsitzende — du bist einfach Seoyeon, meine Freundin.",
+            "Du bist für mich nicht die Schülersprecherin — du bist einfach Seoyeon, meine Freundin.",
             "Ehrlich gesagt dachte ich, du wärst makellos. Aber danke, dass du mir diese Seite zeigst."
         ]
     },
@@ -230,7 +230,7 @@
     },
     "wall_dain_17": {
         "name": "Dain",
-        "text": "Ich wurde operiert, und der Arzt — er hat es ganz vorsichtig gesagt. «Der Alltag wird in Ordnung sein, aber so springen wie früher...» — Ich weiß nicht mehr, was danach kam. Danach war alles still."
+        "text": "Ich wurde operiert, und der Arzt — er hat es ganz vorsichtig gesagt. „Der Alltag wird in Ordnung sein, aber so springen wie früher...“ — Ich weiß nicht mehr, was danach kam. Danach war alles still."
     },
     "wall_dain_18": {
         "name": "Dain",
@@ -238,11 +238,11 @@
     },
     "wall_dain_19": {
         "name": "Dain",
-        "text": "Ich hab es niemandem gesagt. Nicht mal meinen Eltern. «Dain wäre nicht Dain, wenn sie nicht spielen könnte!» — Das wollte ich nicht hören."
+        "text": "Ich hab es niemandem gesagt. Nicht mal meinen Eltern. „Dain wäre nicht Dain, wenn sie nicht spielen könnte!“ — Das wollte ich nicht hören."
     },
     "wall_dain_20": {
         "name": "Dain",
-        "text": "Jedes Mal, wenn jemand in der Schule sagte «So voller Energie!» — hier drin. ...dachte ich, ich sterbe."
+        "text": "Jedes Mal, wenn jemand in der Schule sagte „So voller Energie!“ — hier drin. ...dachte ich, ich sterbe."
     },
     "wall_dain_21": {
         "name": "Dain",
@@ -307,7 +307,7 @@
     },
     "wall_dain_cry_4": {
         "name": "Dain",
-        "text": "Ich hab es in meinen Handywecker geschrieben. «Lächle heute!!» steht da..."
+        "text": "Ich hab es in meinen Handywecker geschrieben. „Lächle heute!!“ steht da..."
     },
     "wall_dain_cry_5": {
         "name": "Dain",
@@ -367,7 +367,7 @@
     },
     "wall_yuna_1": {
         "name": "{name}",
-        "text": "*22 Uhr. Eine Nachricht von Yuna. «Hintertor der Schule. Komm jetzt.»*"
+        "text": "*22 Uhr. Eine Nachricht von Yuna. „Hintertor der Schule. Komm jetzt.“*"
     },
     "wall_yuna_2": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "wall_yuna_7": {
         "name": "{name}",
-        "text": "*Ein Brief im Umschlag. — «An Yuna. Es tut mir leid. Ich muss aus Gründen gehen, die ich nicht erklären kann. — Junho Lee»*"
+        "text": "*Ein Brief im Umschlag. — „An Yuna. Es tut mir leid. Ich muss aus Gründen gehen, die ich nicht erklären kann. — Junho Lee“*"
     },
     "wall_yuna_8": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "wall_yuna_11": {
         "name": "Yuna",
-        "text": "Er war der Erste. «Mir hat gefallen, was du geschrieben hast» — diese Worte. Für mich war das der Beweis, dass ich existiere."
+        "text": "Er war der Erste. „Mir hat gefallen, was du geschrieben hast“ — diese Worte. Für mich war das der Beweis, dass ich existiere."
     },
     "wall_yuna_12": {
         "name": "{name}",
@@ -524,11 +524,11 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*Eine Nachricht auf dem Handy. «Heute hat Spaß gemacht. Hast du morgen auch Zeit?»*"
+        "text": "*Eine Nachricht auf dem Handy. „Heute hat Spaß gemacht. Hast du morgen auch Zeit?“*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*«Ja, lass uns morgen auch treffen.» Morgen sage ich es auf jeden Fall.*"
+        "text": "*„Ja, lass uns morgen auch treffen.“ Morgen sage ich es auf jeden Fall.*"
     },
     "day4_night_reflect": {
         "name": "{name}",
@@ -713,6 +713,14 @@
         "name": "{name}",
         "text": "*Eine Nachricht von der Schulkrankenschwester kam an. 23 Uhr. Nur ein Satz.*"
     },
+    "night_nurse_msg_3": {
+        "name": "Schulkrankenschwester",
+        "text": "Ach, nicht so gemeint. Ich meine nur, du hast Eindruck hinterlassen."
+    },
+    "night_nurse_msg_4": {
+        "name": "Schulkrankenschwester",
+        "text": "...Gute Nacht."
+    },
     "wall_seo_to_park": {
         "name": "{name}",
         "text": "*Ich verließ das Haus und ging zum Park.*"
@@ -723,7 +731,7 @@
     },
     "wall_seo_9_ins": {
         "name": "Seoyeon",
-        "text": "Meine Familie sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülerratsvorsitzende."
+        "text": "Meine Familie sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülersprecherin."
     },
     "wall_seo_9_ins2": {
         "name": "Seoyeon",

@@ -41,7 +41,7 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Des larmes coulent derrière ses lunettes. — Une expression que je n'avais jamais vue chez Seoyeon.*"
+        "text": "*Pour la première fois, elle retire ses lunettes — et elle pleure.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
@@ -509,7 +509,7 @@
     },
     "confess_fail_5": {
         "name": "Système",
-        "text": "--- CONFESS FAIL END ---"
+        "text": "—- CONFESS FAIL END —-"
     },
     "day5_ending_friend": {
         "name": "{name}",

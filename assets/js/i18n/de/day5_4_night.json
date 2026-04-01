@@ -509,7 +509,7 @@
     },
     "confess_fail_5": {
         "name": "System",
-        "text": "--- CONFESS FAIL END ---"
+        "text": "—- CONFESS FAIL END —-"
     },
     "day5_ending_friend": {
         "name": "{name}",
@@ -867,7 +867,7 @@
     },
     "good_1_yuna_b": {
         "name": "{name}",
-        "text": "*Yuna reicht mir einen Zettel. «Verirr dich nächstes Mal nicht.» — Kurz. Und warm.*"
+        "text": "*Yuna reicht mir einen Zettel. „Verirr dich nächstes Mal nicht.“ — Kurz. Und warm.*"
     },
     "good_epilogue_1": {
         "name": "{name}",

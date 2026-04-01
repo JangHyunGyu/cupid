@@ -1,7 +1,7 @@
 {
     "morning4_start": {
         "name": "{name}",
-        "text": "*Cuarto día. Fin de semana. -- Hoy no hay clase. Es una cita.*"
+        "text": "*Cuarto día. Fin de semana. — Hoy no hay clase. Es una cita.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -12,8 +12,8 @@
         "text": "Oye, ¿hoy es la cita, no? Dain lo puso en el grupo jaja\nPero eh. Ve solo con una."
     },
     "minsu_cheer_3": {
-        "name": "Minsu",
-        "text": "Sí, confío en ti. — Hazlo bien."
+        "name": "{name}",
+        "text": "Lo sé."
     },
     "minsu_cheer_4": {
         "name": "{name}",

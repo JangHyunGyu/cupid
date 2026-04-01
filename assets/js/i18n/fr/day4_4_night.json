@@ -713,6 +713,14 @@
         "name": "{name}",
         "text": "*Un message de l'infirmière est arrivé. 23h. Une seule phrase.*"
     },
+    "night_nurse_msg_3": {
+        "name": "Infirmière",
+        "text": "Ah, je ne voulais pas dire ça dans ce sens. C'est juste que tu m'as marquée."
+    },
+    "night_nurse_msg_4": {
+        "name": "Infirmière",
+        "text": "...Bonne nuit."
+    },
     "wall_seo_to_park": {
         "name": "{name}",
         "text": "*Je suis sorti de la maison et me suis dirigé vers le parc.*"

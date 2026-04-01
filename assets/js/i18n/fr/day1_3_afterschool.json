@@ -118,11 +118,11 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Je m'apprête à rentrer quand — une voix derrière moi.*"
+        "text": "*Frappe à la porte de la salle des professeurs. La professeure principale ouvre.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Professeure principale",
-        "text": "{name}. Reste une seconde."
+        "text": "Oh, {name} ? Qu'est-ce qu'il y a ?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",

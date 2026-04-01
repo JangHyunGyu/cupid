@@ -41,7 +41,7 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Lágrimas cayendo tras sus gafas. — Una expresión que nunca había visto en Seoyeon.*"
+        "text": "*Por primera vez, se quita las gafas — y está llorando.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
@@ -337,7 +337,7 @@
     },
     "good_1": {
         "name": "{name}",
-        "text": "*Para alguien, quizás pareció que di esperanzas solo para quitárselas. Lo siento.*"
+        "text": "*Dio un paso hacia mí.*"
     },
     "good_1b": {
         "name": "{name}",
@@ -369,7 +369,7 @@
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Lo que falta se puede llenar con tiempo. Los cerezos florecerán de nuevo el próximo año. Caminamos juntos.*"
+        "text": "*Fingía ser perfecta, pero yo tampoco era perfecto.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -401,7 +401,7 @@
     },
     "good_4_dain": {
         "name": "{name}",
-        "text": "*Frente a la escuela. El último saque aún no ha llegado. El partido no ha terminado.*"
+        "text": "*Corrió aunque le dolían las rodillas.*"
     },
     "good_5_dain": {
         "name": "{name}",
@@ -509,7 +509,7 @@
     },
     "confess_fail_5": {
         "name": "Sistema",
-        "text": "--- CONFESS FAIL END ---"
+        "text": "—- CONFESS FAIL END —-"
     },
     "day5_ending_friend": {
         "name": "{name}",
@@ -521,7 +521,7 @@
     },
     "friend_2": {
         "name": "{name}",
-        "text": "*No sé si es arrepentimiento o una decisión. Solo sé que — cinco días terminaron con esas tres palabras atascadas en mi garganta.*"
+        "text": "*Hice lo mismo que en mi antigua escuela. Lo volví a hacer.*"
     },
     "friend_3": {
         "name": "{name}",

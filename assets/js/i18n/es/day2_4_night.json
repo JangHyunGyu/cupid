@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*De vuelta en casa. Me duché y me tumbé en la cama -- y las notificaciones del messenger empiezan a llover.*"
+        "text": "*De vuelta en casa. Me duché y me tumbé en la cama — y las notificaciones del messenger empiezan a llover.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Tengo que responder a las tres a la vez. -- No sé si esto es felicidad o tortura.*"
+        "text": "*Tengo que responder a las tres a la vez. — No sé si esto es felicidad o tortura.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*Un breve silencio. -- Y luego.*"
+        "text": "*Un breve silencio. — Y luego.*"
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*¿La tercera estrella? -- Abro la ventana y miro al cielo nocturno. Se ven estrellas. No estoy seguro de cuál es la tercera, pero. Un acertijo muy de Yuna. Alguien que nunca da la respuesta. -- Alguien que te hace querer encontrarla.*"
+        "text": "*¿La tercera estrella? — Abro la ventana y miro al cielo nocturno. Se ven estrellas. No estoy seguro de cuál es la tercera, pero. Un acertijo muy de Yuna. Alguien que nunca da la respuesta. — Alguien que te hace querer encontrarla.*"
     },
     "night2_end_1": {
         "name": "{name}",

@@ -86,7 +86,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Rien après 'il y avait'. Passé composé. -- Est-ce que je devrais demander ?*",
+        "text": "*Rien après 'il y avait'. Passé composé. — Est-ce que je devrais demander ?*",
         "choices": [
             "Cette personne, où est-elle maintenant ?",
             "Ne pas demander et s'asseoir à côté d'elle"
@@ -122,11 +122,11 @@
     },
     "lunch2_yuna_c1_8": {
         "name": "{name}",
-        "text": "*Je devrais changer l'ambiance. -- Essayons de dédramatiser.*"
+        "text": "*Je devrais changer l'ambiance. — Essayons de dédramatiser.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "Ce sunbae, il a peut-être juste été diplômé ? Les aînés perdent souvent le contact."
+        "text": "Ce senpai, il a peut-être juste été diplômé ? Les aînés perdent souvent le contact."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -146,7 +146,7 @@
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*Je me vantais d'être perspicace. -- J'avais tort. Pas devant cette personne.*"
+        "text": "*Je me vantais d'être perspicace. — J'avais tort. Pas devant cette personne.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Offrir un livre au lieu de mots. -- Le langage de cette personne, ce sont les actes. Différent de Seoyeon, mais à sa manière.*"
+        "text": "*Offrir un livre au lieu de mots. — Le langage de cette personne, ce sont les actes. Différent de Seoyeon, mais à sa manière.*"
     },
     "lunch2_yuna_c2_5": {
         "name": "{name}",
@@ -178,11 +178,11 @@
     },
     "lunch2_yuna_c2_8": {
         "name": "Yuna",
-        "text": "C'est calme. -- Mais je ne suis pas seule."
+        "text": "C'est calme. — Mais je ne suis pas seule."
     },
     "lunch2_yuna_c2_9": {
         "name": "{name}",
-        "text": "*Deux phrases. C'est un long discours pour Yuna. -- Et tout est contenu dans ces deux phrases.*"
+        "text": "*Deux phrases. C'est un long discours pour Yuna. — Et tout est contenu dans ces deux phrases.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Elle semblait vouloir en entendre plus -- mais je me suis retenu exprès.*"
+        "text": "*Elle semblait vouloir en entendre plus — mais je me suis retenu exprès.*"
     },
     "lunch2_seo_8": {
         "name": "{name}",
-        "text": "*En mangeant -- la porte du toit s'ouvre. Dain est montée.*"
+        "text": "*En mangeant — la porte du toit s'ouvre. Dain est montée.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -230,7 +230,7 @@
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Oh la la, y a pas besoin d'autorisation pour manger ! -- Oh, un bento ! Ça a l'air trop bon !"
+        "text": "Oh la la, y a pas besoin d'autorisation pour manger ! — Oh, un bento ! Ça a l'air trop bon !"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "On s'est vues hier ! C'est une fille sympa, Seoyeon sunbae !"
+        "text": "On s'est vues hier ! C'est une fille sympa, Seoyeon-senpai !"
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -258,7 +258,7 @@
     },
     "lunch2_seo_18": {
         "name": "{name}",
-        "text": "*Les angles de ce triangle deviennent plus aigus. -- Et je me sens moins comme un sommet et plus comme un sacrifice.*"
+        "text": "*Les angles de ce triangle deviennent plus aigus. — Et je me sens moins comme un sommet et plus comme un sacrifice.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "{name}",
-        "text": "*Le doigt de Seoyeon effleure le coin de mes lèvres. Doucement. Lentement. -- Plus lentement que nécessaire.*"
+        "text": "*Le doigt de Seoyeon effleure le coin de mes lèvres. Doucement. Lentement. — Plus lentement que nécessaire.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -294,7 +294,7 @@
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
-        "text": "*Il faut trois secondes pour enlever un grain de riz ? -- Personne n'a remarqué, mais les pointes des oreilles de Seoyeon sont rouges.*"
+        "text": "*Il faut trois secondes pour enlever un grain de riz ? — Personne n'a remarqué, mais les pointes des oreilles de Seoyeon sont rouges.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*Elle a l'air un peu vexée. -- Mais sa contenance est impeccable. C'est tout elle.*"
+        "text": "*Elle a l'air un peu vexée. — Mais sa contenance est impeccable. C'est tout elle.*"
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
@@ -334,7 +334,7 @@
     },
     "lunch2_dain_5": {
         "name": "{name}",
-        "text": "*Pierre-papier-ciseaux. -- Dain perd encore.*"
+        "text": "*Pierre-feuille-ciseaux. — Dain perd encore.*"
     },
     "lunch2_dain_6": {
         "name": "Dain",
@@ -350,11 +350,11 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*On achète du pain et on s'assoit sur un banc dans le couloir. -- À ce moment, Seoyeon passe. Avec un sac à bento.*"
+        "text": "*On achète du pain et on s'assoit sur un banc dans le couloir. — À ce moment, Seoyeon passe. Avec un sac à bento.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon regarde par ici. Elle me fixe assis à côté de Dain en train de manger du pain pendant une demi-seconde -- puis continue son chemin.*"
+        "text": "*Seoyeon regarde par ici. Elle me fixe assis à côté de Dain en train de manger du pain pendant une demi-seconde — puis continue son chemin.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -387,15 +387,15 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Bi-Bien sûr que ça me dérange ! Et alors ! *mord un grand coup dans le pain melon* Je demandais, c'est tout !!"
+        "text": "Bi-Bien sûr que ça me dérange ! Et alors ! *mord un grand coup dans le pain soboro* Je demandais, c'est tout !!"
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Ses lobes d'oreilles. Rouges. -- Les filles de cette école ont des oreilles très honnêtes.*"
+        "text": "*Ses lobes d'oreilles. Rouges. — Les filles de cette école ont des oreilles très honnêtes.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*Le craquement du pain soboro de Dain est anormalement fort. Le regard de Seoyeon, les oreilles rouges de Dain -- la pause déjeuner se complique de jour en jour.*"
+        "text": "*Le craquement du pain soboro de Dain est anormalement fort. Le regard de Seoyeon, les oreilles rouges de Dain — la pause déjeuner se complique de jour en jour.*"
     },
     "lunch2_seo_1_check": {
         "name": "{name}",

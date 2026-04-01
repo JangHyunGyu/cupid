@@ -524,7 +524,7 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*A message on my phone. I had fun today. Are you free tomorrow too?*"
+        "text": "*A message came on my phone.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
@@ -712,6 +712,14 @@
     "night_nurse_msg_2": {
         "name": "{name}",
         "text": "*A message from the school nurse came through. 11 PM. Just one sentence.*"
+    },
+    "night_nurse_msg_3": {
+        "name": "School Nurse",
+        "text": "Oh, I don't mean it like that. I just mean you left an impression."
+    },
+    "night_nurse_msg_4": {
+        "name": "School Nurse",
+        "text": "...Good night."
     },
     "wall_seo_to_park": {
         "name": "{name}",

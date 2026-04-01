@@ -138,6 +138,10 @@
         "name": "Yuna",
         "text": "...Ça."
     },
+    "after3_yuna_8b": {
+        "name": "Yuna",
+        "text": "*S'approche rapidement et arrache le carnet* ...Je n'ai pas donné la permission."
+    },
     "after3_yuna_9": {
         "name": "{name}",
         "text": "*Ses oreilles. Rouges. — C’est la première fois que je vois Yuna rougir.*"
@@ -391,11 +395,11 @@
     },
     "haeun_warn_3": {
         "name": "Haeun",
-        "text": "Tu viens de voir Seoyeon-sunbae ?"
+        "text": "Tu viens de voir Seoyeon-senpai ?"
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Sunbae a pleuré. Après être sortie de la salle du conseil. Aux toilettes. — Il n'y avait que moi. En un an, je ne l'avais jamais vue pleurer."
+        "text": "...Senpai a pleuré. Après être sortie de la salle du conseil. Aux toilettes. — Il n'y avait que moi. En un an, je ne l'avais jamais vue pleurer."
     },
     "haeun_warn_5": {
         "name": "{name}",
@@ -403,11 +407,11 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Si sunbae a pleuré — ça veut dire que ce qu'elle ressent pour toi, {name}, c'est sincère."
+        "text": "Si senpai a pleuré — ça veut dire que ce qu'elle ressent pour toi, {name}, c'est sincère."
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Je sais que je me mêle de ce qui ne me regarde pas. Mais c'est que je m'inquiète pour sunbae. — En ce moment chez elle, c'est... compliqué. Ses parents... ...bref. S'il te plaît, sois bien avec elle. Je te le demande."
+        "text": "Je sais que je me mêle de ce qui ne me regarde pas. Mais c'est que je m'inquiète pour senpai. — En ce moment chez elle, c'est... compliqué. Ses parents... ...bref. S'il te plaît, sois bien avec elle. Je te le demande."
     },
     "haeun_warn_8": {
         "name": "{name}",
@@ -467,7 +471,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae est quelqu'un qui croit qu'elle doit être parfaite. Quelqu'un qui pense que pleurer, c'est perdre."
+        "text": "Senpai est quelqu'un qui croit qu'elle doit être parfaite. Quelqu'un qui pense que pleurer, c'est perdre."
     },
     "haeun_warn_5c": {
         "name": "{name}",

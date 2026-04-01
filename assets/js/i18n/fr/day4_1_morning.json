@@ -1,7 +1,7 @@
 {
     "morning4_start": {
         "name": "{name}",
-        "text": "*Quatrième jour. Week-end. -- Aujourd'hui, pas d'école. C'est un rendez-vous.*"
+        "text": "*Quatrième jour. Week-end. — Aujourd'hui, pas d'école. C'est un rendez-vous.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -12,8 +12,8 @@
         "text": "Hé, c'est le rendez-vous aujourd'hui non ? Dain a posté dans le groupe mdr\nMais hé. N'y va qu'avec une seule."
     },
     "minsu_cheer_3": {
-        "name": "Minsu",
-        "text": "Ouais, je te fais confiance. — Assure."
+        "name": "{name}",
+        "text": "Je sais."
     },
     "minsu_cheer_4": {
         "name": "{name}",
@@ -227,7 +227,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Dimanche matin. Je me dirige vers l'infirmerie par habitude. — Depuis quand est-ce devenu une habitude?*"
+        "text": "*Dimanche matin. Je me dirige vers l'infirmerie par habitude. — Depuis quand est-ce devenu une habitude ?*"
     },
     "hidden_nurse_d4_morning_2": {
         "name": "{name}",
@@ -243,7 +243,7 @@
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
-        "text": "C'est la dernière consultation?"
+        "text": "C'est la dernière consultation ?"
     },
     "hidden_nurse_d4_morning_6": {
         "name": "Infirmière",
@@ -255,11 +255,11 @@
     },
     "hidden_nurse_d4_morning_8": {
         "name": "Infirmière",
-        "text": "Je peux te poser une question?"
+        "text": "Je peux te poser une question ?"
     },
     "hidden_nurse_d4_morning_9": {
         "name": "{name}",
-        "text": "Quoi?"
+        "text": "Quoi ?"
     },
     "hidden_nurse_d4_morning_10": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Infirmière",
-        "text": "...Reviendras-tu à l'infirmerie après tes études?"
+        "text": "...Reviendras-tu à l'infirmerie après tes études ?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "hidden_nurse_d4_morning_12": {
         "name": "Infirmière",
-        "text": "...Vraiment?"
+        "text": "...Vraiment ?"
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",

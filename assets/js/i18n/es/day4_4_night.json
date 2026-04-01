@@ -713,6 +713,14 @@
         "name": "{name}",
         "text": "*Un mensaje de la enfermera llegó. 11 PM. Solo una oración.*"
     },
+    "night_nurse_msg_3": {
+        "name": "Enfermera",
+        "text": "Ah, no lo digo en ese sentido. Solo quiero decir que me dejaste una buena impresión."
+    },
+    "night_nurse_msg_4": {
+        "name": "Enfermera",
+        "text": "...Buenas noches."
+    },
     "wall_seo_to_park": {
         "name": "{name}",
         "text": "*Salí de casa y me dirigí al parque.*"

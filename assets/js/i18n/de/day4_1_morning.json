@@ -1,7 +1,7 @@
 {
     "morning4_start": {
         "name": "{name}",
-        "text": "*Vierter Tag. Wochenende. -- Heute ist keine Schule. Es ist ein Date.*"
+        "text": "*Vierter Tag. Wochenende. — Heute ist keine Schule. Es ist ein Date.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -12,8 +12,8 @@
         "text": "Hey, heute ist das Date oder? Dain hat's in die Gruppe gepostet lol\nAber ey. Geh nur mit einer."
     },
     "minsu_cheer_3": {
-        "name": "Minsu",
-        "text": "Ja, ich vertrau dir. — Mach's gut."
+        "name": "{name}",
+        "text": "Ich weiß."
     },
     "minsu_cheer_4": {
         "name": "{name}",

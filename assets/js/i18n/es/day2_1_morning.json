@@ -37,11 +37,11 @@
     },
     "morning2_note_2": {
         "name": "{name}",
-        "text": "*'Ven al anexo de la biblioteca a la hora del almuerzo. -- Yuna'*"
+        "text": "*'Ven al anexo de la biblioteca a la hora del almuerzo. — Yuna'*"
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La misma letra prolija de ayer. Corta. Y el lugar es específico. -- El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
+        "text": "*La misma letra prolija de ayer. Corta. Y el lugar es específico. — El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
     },
     "morning2_seo_1": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Solo iba de paso. -- Que tengas otro día divertido."
+        "text": "Solo iba de paso. — Que tengas otro día divertido."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*¿Se puede reclamar a una persona? -- Pero por alguna razón no tengo ganas de discutir.*"
+        "text": "*¿Se puede reclamar a una persona? — Pero por alguna razón no tengo ganas de discutir.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -157,7 +157,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Probablemente sí había. Quizá. -- Pero no creo que ese sea el punto.*"
+        "text": "*Probablemente sí había. Quizá. — Pero no creo que ese sea el punto.*"
     },
     "morning2_haeun_1": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "morning2_haeun_4": {
         "name": "Haeun",
-        "text": "La presidenta... o sea, Seoyeon sunbae parece un poco diferente últimamente."
+        "text": "La presidenta... o sea, Seoyeon-senpai parece un poco diferente últimamente."
     },
     "morning2_haeun_5": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Profesora",
-        "text": "*Duda un instante.* ...¿Yo? Documentos de trabajo. — ¿Qué esperabas?"
+        "text": "*Duda un momento* ...Varias cosas. Principalmente — novelas."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Profesora",
@@ -265,7 +265,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Profesora",
-        "text": "*Su expresión se tensa levemente.* ...Controlar la expresión también es parte del trabajo."
+        "text": "*Se tapa la boca con la taza de café* ...Fracaso en gestión de expresiones. Está bien, ve."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Profesora",

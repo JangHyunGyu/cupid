@@ -118,11 +118,11 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*I'm about to head home when — a voice from behind.*"
+        "text": "*Knocks on the staffroom door. The homeroom teacher opens it.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",
-        "text": "{name}. Hang on a sec."
+        "text": "Oh, {name}? What brings you here?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",

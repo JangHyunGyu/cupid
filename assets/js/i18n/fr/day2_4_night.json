@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*De retour à la maison. Douche prise, allongé sur le lit -- les notifications du messenger se mettent à pleuvoir.*"
+        "text": "*De retour à la maison. Douche prise, allongé sur le lit — les notifications du messenger se mettent à pleuvoir.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Je dois répondre aux trois en même temps. -- Je sais pas si c'est du bonheur ou de la torture.*"
+        "text": "*Je dois répondre aux trois en même temps. — Je sais pas si c'est du bonheur ou de la torture.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*Un bref silence. -- Et puis.*"
+        "text": "*Un bref silence. — Et puis.*"
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*La troisième étoile ? -- J'ouvre la fenêtre et regarde le ciel nocturne. Des étoiles sont visibles. Je sais pas laquelle est la troisième, mais bon. Une énigme très Yuna. Quelqu'un qui ne donne jamais la réponse. -- Quelqu'un qui te donne envie de la trouver.*"
+        "text": "*La troisième étoile ? — J'ouvre la fenêtre et regarde le ciel nocturne. Des étoiles sont visibles. Je sais pas laquelle est la troisième, mais bon. Une énigme très Yuna. Quelqu'un qui ne donne jamais la réponse. — Quelqu'un qui te donne envie de la trouver.*"
     },
     "night2_end_1": {
         "name": "{name}",
