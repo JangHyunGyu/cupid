@@ -109,8 +109,8 @@
         "text": "Ein 'bisschen' spielt nicht so! -- Gib's zu, du bist gut."
     },
     "after2_dain_end_2d": {
-        "name": "{name}",
-        "text": "Du warst viel besser."
+        "name": "Dain",
+        "text": "{name} war da viel besser."
     },
     "after2_dain_end_3": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Gab's seit diesem Sunbae nicht mehr."
+        "text": "Gab's seit diesem Senpai nicht mehr."
     },
     "after2_yuna_choice": {
         "name": "{name}",

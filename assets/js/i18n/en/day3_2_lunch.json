@@ -97,6 +97,10 @@
         "name": "Dain",
         "text": "What! What about me?!"
     },
+    "lunch3_harem_1": {
+        "name": "{name}",
+        "text": "*The three of us shared. Awkward, but — not bad. Nobody got mad. Strangely, it seems like a world where this is possible does exist.*"
+    },
     "lunch3_expose_1": {
         "name": "{name}",
         "text": "*The moment I said let's all share — Dain spoke first.*"
