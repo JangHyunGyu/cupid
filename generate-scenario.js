@@ -112,15 +112,18 @@ function formatAffinityBranches(scene) {
 }
 
 function formatChoiceLine(choice, idx, choiceText) {
+    // 선택지의 모든 플래그 수집 (setFlags 배열 + setFlag 단수)
+    const choiceFlags = [];
+    if (choice.setFlags) choiceFlags.push(...choice.setFlags);
+    if (choice.setFlag) choiceFlags.push(choice.setFlag);
+    const flagStr = choiceFlags.length ? ` | 플래그: ${choiceFlags.map(f => `\`${f}\``).join(', ')}` : '';
+
     // 호감분기가 있는 선택지
     if (choice.affinityBranches) {
         const lines = [];
         let header = `  ${idx + 1}.`;
         if (choiceText) header += ` "${choiceText}"`;
-        header += ` → 호감분기: ${choice.affinityChar}`;
-        if (choice.setFlags?.length) {
-            header += ` | 플래그: ${choice.setFlags.map(f => `\`${f}\``).join(', ')}`;
-        }
+        header += ` → 호감분기: ${choice.affinityChar}${flagStr}`;
         lines.push(header);
         for (const b of choice.affinityBranches) {
             if (b.minAffinity !== undefined && b.minAffinity > -100) {
@@ -137,9 +140,7 @@ function formatChoiceLine(choice, idx, choiceText) {
     if (choiceText) line += ` "${choiceText}"`;
     line += ` → \`${choice.next}\``;
     if (choice.stats) line += ` | ${formatStats(choice.stats)}`;
-    if (choice.setFlags?.length) {
-        line += ` | 플래그: ${choice.setFlags.map(f => `\`${f}\``).join(', ')}`;
-    }
+    line += flagStr;
     return line;
 }
 
@@ -216,24 +217,63 @@ function formatScene(sceneId, scene, i18n) {
 
     // ── 대사 ──
 
-    if (entry && entry.text !== undefined && entry.text !== '') {
-        lines.push('');
-        const name = entry.name || '{name}';
-        lines.push(`**${name}**: ${entry.text}`);
+    if (entry) {
+        if (entry.text !== undefined) {
+            lines.push('');
+            const name = entry.name || entry.name === '' ? entry.name : '{name}';
+            if (entry.text === '') {
+                // 빈 텍스트: 이름만 출력
+                lines.push(`**${name || '—'}**: ‹빈›`);
+            } else {
+                lines.push(`**${name}**: ${entry.text}`);
+            }
+        } else if (!entry.choices && !entry.context && !entry.personality && !entry.name) {
+            // 완전 빈 엔트리 ({})
+            lines.push('');
+            lines.push(`<!-- i18n -->`);
+        }
     }
 
     return lines.join('\n');
 }
 
+// ─── 마커 ───
+const MARKER_START = '<!-- SCENARIO-AUTO-START -->';
+const MARKER_END = '<!-- SCENARIO-AUTO-END -->';
+
 // ─── 메인 ───
 
 function generate() {
+    // 기존 SCENARIO.md에서 게임 설정 부분 보존
+    let header = '';
+    let footer = '';
+
+    if (fs.existsSync(OUTPUT)) {
+        const existing = fs.readFileSync(OUTPUT, 'utf-8');
+        const startIdx = existing.indexOf(MARKER_START);
+        const endIdx = existing.indexOf(MARKER_END);
+
+        if (startIdx !== -1 && endIdx !== -1) {
+            // 마커가 있으면 마커 사이만 교체
+            header = existing.slice(0, startIdx);
+            footer = existing.slice(endIdx + MARKER_END.length);
+        } else {
+            // 마커가 없으면 "# 1일차" 이전까지 보존
+            const dayMatch = existing.match(/^# 1일차$/m);
+            if (dayMatch) {
+                header = existing.slice(0, dayMatch.index);
+            } else {
+                header = existing + '\n\n';
+            }
+        }
+    }
+
     const output = [];
     let totalScenes = 0;
 
-    output.push('# CUPID 시나리오');
+    output.push(MARKER_START);
     output.push('');
-    output.push('> 이 파일은 `node generate-scenario.js`로 자동 생성되었습니다.');
+    output.push('> 아래 시나리오 섹션은 `node generate-scenario.js`로 자동 생성되었습니다.');
     output.push('> 수정 후 `node parse-scenario.js`로 코드를 재생성할 수 있습니다.');
     output.push('');
 
@@ -262,9 +302,12 @@ function generate() {
         }
     }
 
-    fs.writeFileSync(OUTPUT, output.join('\n'), 'utf-8');
-    const sizeKB = (Buffer.byteLength(output.join('\n'), 'utf-8') / 1024).toFixed(1);
-    console.log(`✅ SCENARIO.md 생성 완료 — ${totalScenes}개 씬, ${sizeKB}KB`);
+    output.push(MARKER_END);
+
+    const finalContent = header + output.join('\n') + footer;
+    fs.writeFileSync(OUTPUT, finalContent, 'utf-8');
+    const sizeKB = (Buffer.byteLength(finalContent, 'utf-8') / 1024).toFixed(1);
+    console.log(`✅ SCENARIO.md 시나리오 섹션 갱신 — ${totalScenes}개 씬, ${sizeKB}KB (게임 설정 보존)`);
 }
 
 generate();

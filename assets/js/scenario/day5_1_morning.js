@@ -11,38 +11,28 @@ Object.assign(SCENARIO[5], {
     "morning5_start": {
         "background": "assets/images/background/room_school.png",
         "bgm": "morning.mp3",
-        "character": null,
         "next": "morning5_start_ins"
     },
     "morning5_start_2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_start_2_ins"
     },
     "morning5_mood_check": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "affinityChar": "selectByHighestAffinity",
-        "affinityBranches": [
-            { "minAffinity": 80, "next": "morning5_mood_high" },
-            { "minAffinity": 50, "next": "morning5_mood_mid" },
-            { "minAffinity": -100, "next": "morning5_mood_low" }
-        ],
+        "affinityBranches": [{"minAffinity":80,"next":"morning5_mood_high"},{"minAffinity":50,"next":"morning5_mood_mid"},{"minAffinity":-100,"next":"morning5_mood_low"}],
         "next": "morning5_mood_low"
     },
     "morning5_mood_high": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_seo_note_1"
     },
     "morning5_mood_mid": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_seo_note_1"
     },
     "morning5_mood_low": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_seo_note_1"
     },
     "morning5_seo_note_1": {
@@ -57,7 +47,6 @@ Object.assign(SCENARIO[5], {
     },
     "morning5_return_class": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_dain_1"
     },
     "morning5_dain_1": {
@@ -107,14 +96,8 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
-            {
-                "next": "hidden_homeroom_d5_choice_a",
-                "stats": { "Teacher": { "affinity": 14 } }
-            },
-            {
-                "next": "hidden_homeroom_d5_choice_b",
-                "stats": { "Teacher": { "affinity": 7 } }
-            }
+            { "next": "hidden_homeroom_d5_choice_a", "stats": {"Teacher":{"affinity":14}} },
+            { "next": "hidden_homeroom_d5_choice_b", "stats": {"Teacher":{"affinity":7}} }
         ]
     },
     "hidden_homeroom_d5_choice_a": {
@@ -139,7 +122,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_choice_b_ins3": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "hidden_homeroom_d5_6"
     },
     "hidden_homeroom_d5_6": {
@@ -155,8 +137,8 @@ Object.assign(SCENARIO[5], {
     "hidden_homeroom_d5_8": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "setFlag": "homeroom_day5",
-        "stats": { "Teacher": { "affinity": 5 } },
+        "setFlags": ["homeroom_day5"],
+        "stats": {"Teacher":{"affinity":5}},
         "next": "hidden_homeroom_d5_freetalk"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -166,7 +148,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_check": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "branches": [
             { "condition": "nurse_day4", "next": "hidden_nurse_d5_1" },
             { "next": "morning5_end" }
@@ -201,14 +182,8 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "choices": [
-            {
-                "next": "hidden_nurse_d5_choice_a",
-                "stats": { "Nurse": { "affinity": 14 } }
-            },
-            {
-                "next": "hidden_nurse_d5_choice_b",
-                "stats": { "Nurse": { "affinity": 7 } }
-            }
+            { "next": "hidden_nurse_d5_choice_a", "stats": {"Nurse":{"affinity":14}} },
+            { "next": "hidden_nurse_d5_choice_b", "stats": {"Nurse":{"affinity":7}} }
         ]
     },
     "hidden_nurse_d5_choice_a": {
@@ -234,8 +209,8 @@ Object.assign(SCENARIO[5], {
     "hidden_nurse_d5_7": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "setFlag": "nurse_day5",
-        "stats": { "Nurse": { "affinity": 7 } },
+        "setFlags": ["nurse_day5"],
+        "stats": {"Nurse":{"affinity":7}},
         "next": "hidden_nurse_d5_freetalk"
     },
     "hidden_nurse_d5_freetalk": {
@@ -243,25 +218,21 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/nurse_normal.png",
         "next": "morning5_end"
     },
-
     "morning5_end": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "branches": [
-            {"condition": "route_dain", "next": "tour_dain_1_check"},
-            {"condition": "route_yuna", "next": "tour_yuna_1_check"},
-            {"condition": "route_seoyeon", "next": "tour_seo_1"},
-            {"next": "tour_seo_1"}
+            { "condition": "route_dain", "next": "tour_dain_1_check" },
+            { "condition": "route_yuna", "next": "tour_yuna_1_check" },
+            { "condition": "route_seoyeon", "next": "tour_seo_1" },
+            { "next": "tour_seo_1" }
         ]
     },
     "morning5_start_ins": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_start_2"
     },
     "morning5_start_2_ins": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_mood_check"
     },
     "morning5_seo_note_1_ins": {
@@ -286,7 +257,6 @@ Object.assign(SCENARIO[5], {
     },
     "morning5_dain_1_ins": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "morning5_dain_2"
     },
     "hidden_homeroom_d5_1_ins": {
@@ -296,7 +266,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_1_ins2": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "hidden_homeroom_d5_1_ins3"
     },
     "hidden_homeroom_d5_1_ins3": {
@@ -306,7 +275,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_1_ins4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "hidden_homeroom_d5_2"
     },
     "hidden_homeroom_d5_6_ins": {
@@ -326,12 +294,10 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_6_ins4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "hidden_homeroom_d5_6_ins5"
     },
     "hidden_homeroom_d5_6_ins5": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "hidden_homeroom_d5_6_ins6"
     },
     "hidden_homeroom_d5_6_ins6": {
@@ -361,7 +327,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_6_ins11": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "hidden_homeroom_d5_6_ins12"
     },
     "hidden_homeroom_d5_6_ins12": {
@@ -371,7 +336,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_homeroom_d5_6_ins13": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "hidden_homeroom_d5_6_ins14"
     },
     "hidden_homeroom_d5_6_ins14": {
@@ -436,7 +400,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_4_ins": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hidden_nurse_d5_4_ins2"
     },
     "hidden_nurse_d5_4_ins2": {
@@ -461,7 +424,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_1_ins3": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hidden_nurse_d5_1_ins4"
     },
     "hidden_nurse_d5_1_ins4": {
@@ -486,7 +448,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_3_ins3": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hidden_nurse_d5_3_ins4"
     },
     "hidden_nurse_d5_3_ins4": {
@@ -546,7 +507,6 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_choice_b_ins8": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "hidden_nurse_d5_6"
     },
     "hidden_nurse_d5_6_ins": {
@@ -568,5 +528,5 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_7"
-    },
+    }
 });

@@ -1,9 +1,4 @@
 {
-    "morning3_gate_branch": {},
-    "morning3_check_multiple": {},
-    "morning3_multi_from_seo": {},
-    "morning3_multi_from_dain": {},
-    "morning3_multi_from_yuna": {},
     "morning3_start": {
         "name": "{name}",
         "text": "*셋째 날. 늦잠을 잤다. 알람을 세 번이나 꺼버렸다. 어젯밤 늦게까지 메시지 보느라 늦게 잔 탓이다.*"
@@ -12,6 +7,7 @@
         "name": "{name}",
         "text": "*전력 질주로 등굣길을 달린다. — 교문이 보인다. 그리고.*"
     },
+    "morning3_gate_branch": {},
     "morning3_seo_gate_1": {
         "name": "{name}",
         "text": "*교문 앞에 서연이 서 있다. 서두르는 기색 없이.*"
@@ -31,18 +27,6 @@
     "morning3_seo_gate_warm_4": {
         "name": "{name}",
         "text": "*서연이 아무 말 없이 나란히 걷기 시작한다. — 교문에서 교실까지, 이 거리가 이렇게 짧았나.*"
-    },
-    "morning3_seo_gate_cold_1": {
-        "name": "{name}",
-        "text": "*서연이 지나가다 잠깐 멈춘다.*"
-    },
-    "morning3_seo_gate_cold_2": {
-        "name": "서연",
-        "text": "...전학생. 아직 다니고 있었구나."
-    },
-    "morning3_seo_gate_cold_3": {
-        "name": "{name}",
-        "text": "*톤이 사무적이다. 교문을 지나가는 서연의 뒷모습이 멀어진다.*"
     },
     "morning3_seo_gate_2": {
         "name": "서연",
@@ -68,6 +52,18 @@
         "name": "{name}",
         "text": "*서연이 걸어간다. 당당하게. 늦었는데도 서두르지 않는다. — 이 사람은 늦어도 당당하다. 아니, 당당한 척하는 게 몸에 배어 있는 거다.*"
     },
+    "morning3_seo_gate_cold_1": {
+        "name": "{name}",
+        "text": "*서연이 지나가다 잠깐 멈춘다.*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "서연",
+        "text": "...전학생. 아직 다니고 있었구나."
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "{name}",
+        "text": "*톤이 사무적이다. 교문을 지나가는 서연의 뒷모습이 멀어진다.*"
+    },
     "morning3_yuna_gate_1": {
         "name": "{name}",
         "text": "*교문 앞에서 멍하니 서 있는 유나를 발견한다. 눈이 반쯤 감겨 있다.*"
@@ -87,14 +83,6 @@
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
         "text": "*유나와 나란히 걷는다. 아무 말이 없다. — 그런데 이상하게 불편하지 않다.*"
-    },
-    "morning3_yuna_gate_cold_1": {
-        "name": "{name}",
-        "text": "*유나가 먼저 지나간다. 눈이 마주쳤지만, 고개를 돌린다.*"
-    },
-    "morning3_yuna_gate_cold_2": {
-        "name": "{name}",
-        "text": "*유나의 발걸음이 빨라진다. — 벽이 다시 올라간 느낌이다.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -120,6 +108,14 @@
         "name": "{name}",
         "text": "*유나가 가방에서 작은 빵을 꺼낸다. 둘이 나눠 먹으며 천천히 교문을 통과한다.*"
     },
+    "morning3_yuna_gate_cold_1": {
+        "name": "{name}",
+        "text": "*유나가 먼저 지나간다. 눈이 마주쳤지만, 고개를 돌린다.*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "{name}",
+        "text": "*유나의 발걸음이 빨라진다. — 벽이 다시 올라간 느낌이다.*"
+    },
     "morning3_dain_gate_1": {
         "name": "{name}",
         "text": "*교문 근처에서 다인이 전력 질주로 달려온다.*"
@@ -135,14 +131,6 @@
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
         "text": "*다인의 팔이 내 팔에 감겨 있다. 힘이 세다. — 뿌리칠 수도 없고, 뿌리치고 싶지도 않다.*"
-    },
-    "morning3_dain_gate_cold_1": {
-        "name": "{name}",
-        "text": "*다인이 다른 친구들과 뛰어간다.*"
-    },
-    "morning3_dain_gate_cold_2": {
-        "name": "다인",
-        "text": "어, 안녕!"
     },
     "morning3_dain_gate_2": {
         "name": "다인",
@@ -160,6 +148,14 @@
         "name": "{name}",
         "text": "*손이 뜨겁다. 땀 때문인지, 다인 때문인지 — 달리면서 생각할 여유가 없다.*"
     },
+    "morning3_dain_gate_cold_1": {
+        "name": "{name}",
+        "text": "*다인이 다른 친구들과 뛰어간다.*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "다인",
+        "text": "어, 안녕!"
+    },
     "morning3_classroom_1": {
         "name": "{name}",
         "text": "*교실에 들어서자, 동행을 목격한 나머지 두 캐릭터의 시선이 느껴진다.*"
@@ -175,6 +171,10 @@
     "morning3_react_yuna_1": {
         "name": "서연",
         "text": "같이 등교? 사이 좋네."
+    },
+    "morning3_react_yuna_1b": {
+        "name": "{name}",
+        "text": "*교실로 돌아왔다.*"
     },
     "morning3_react_yuna_2": {
         "name": "다인",
@@ -192,6 +192,10 @@
         "name": "{name}",
         "text": "*1교시가 끝나고 쉬는 시간. — 세 명이 차례로 접근한다.*"
     },
+    "morning3_date_intro_b": {
+        "name": "{name}",
+        "text": "*쉬는 시간, 복도로 나왔다.*"
+    },
     "morning3_date_seo_1": {
         "name": "서연",
         "text": "이번 주말에 시간 있어? 갈 데가 있는데."
@@ -208,9 +212,17 @@
         "name": "{name}",
         "text": "*서연 주말 약속을 수락했다.*"
     },
+    "morning3_date_seo_accept_b": {
+        "name": "{name}",
+        "text": "*교실로 돌아왔다.*"
+    },
     "morning3_date_seo_decline": {
         "name": "{name}",
         "text": "*서연의 제안을 거절했다.*"
+    },
+    "morning3_date_seo_decline_b": {
+        "name": "{name}",
+        "text": "*교실로 돌아왔다.*"
     },
     "morning3_date_dain_1": {
         "name": "다인",
@@ -276,13 +288,13 @@
         "name": "{name}",
         "text": "*쪽지를 조용히 접어 주머니에 넣었다. 답장은 쓰지 않았다. — 유나가 고개를 살짝 숙인다. 알겠다는 뜻인 것 같다.*"
     },
+    "morning3_check_multiple": {},
+    "morning3_multi_from_seo": {},
+    "morning3_multi_from_dain": {},
+    "morning3_multi_from_yuna": {},
     "morning3_set_multiple": {
         "name": "{name}",
         "text": "*...잠깐. 주말 약속이 겹치는데. 이거 어떡하지.*"
-    },
-    "morning3_end": {
-        "name": "{name}",
-        "text": "*어느덧 수업이 이어지고 점심시간이 다가온다.*"
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
@@ -448,21 +460,9 @@
         "context": "Day 3. 불안한 마음에 보건실을 찾았다. 보건선생님이 진지하게 상담해줬다. 대학병원 번아웃 이야기. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
         "personality": "보건선생님은 평소 장난스럽지만 진지해지면 분위기가 완전히 달라진다. 번아웃 경험을 가진 전문가. 감정과 직함 사이에서 흔들린다."
     },
-    "morning3_react_yuna_1b": {
+    "morning3_end": {
         "name": "{name}",
-        "text": "*교실로 돌아왔다.*"
-    },
-    "morning3_date_intro_b": {
-        "name": "{name}",
-        "text": "*쉬는 시간, 복도로 나왔다.*"
-    },
-    "morning3_date_seo_accept_b": {
-        "name": "{name}",
-        "text": "*교실로 돌아왔다.*"
-    },
-    "morning3_date_seo_decline_b": {
-        "name": "{name}",
-        "text": "*교실로 돌아왔다.*"
+        "text": "*어느덧 수업이 이어지고 점심시간이 다가온다.*"
     },
     "morning3_seo_gate_6_ins": {
         "name": "{name}",

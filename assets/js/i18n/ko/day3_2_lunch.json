@@ -102,6 +102,10 @@
         "name": "다인",
         "text": "...뭐야."
     },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*교실로 돌아왔다.*"
+    },
     "lunch3_seo_focus_1": {
         "name": "{name}",
         "text": "*다인의 발소리가 복도에서 멀어진다.*"
@@ -143,6 +147,10 @@
         "name": "{name}",
         "text": "*다음 쉬는 시간, 유나의 자리가 비어 있다.*"
     },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*교실로 돌아왔다.*"
+    },
     "lunch3_give_dain_3": {
         "name": "유나",
         "text": "......"
@@ -179,6 +187,14 @@
     "lunch3_give_yuna_3": {
         "name": "다인",
         "text": "뭐야! 나는?!"
+    },
+    "lunch3_share_1": {
+        "name": "{name}",
+        "text": "*다 같이 나눠 먹자고 했다. 어색하지만 — 나쁘지 않은 공기다. 셋 다 웃고 있다. 진짜인지 연기인지는 모르겠지만.*"
+    },
+    "lunch3_harem_1": {
+        "name": "{name}",
+        "text": "*셋이 나눠 먹었다. 어색하지만 — 나쁘지 않다. 아무도 화내지 않았다. 이상하게, 이게 가능한 세계도 있는 것 같다.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -301,25 +317,9 @@
         "name": "{name}",
         "text": "*뒤에서 세 사람의 침묵이 등에 꽂힌다.*"
     },
-    "lunch3_share_1": {
-        "name": "{name}",
-        "text": "*다 같이 나눠 먹자고 했다. 어색하지만 — 나쁘지 않은 공기다. 셋 다 웃고 있다. 진짜인지 연기인지는 모르겠지만.*"
-    },
-    "lunch3_harem_1": {
-        "name": "{name}",
-        "text": "*셋이 나눠 먹었다. 어색하지만 — 나쁘지 않다. 아무도 화내지 않았다. 이상하게, 이게 가능한 세계도 있는 것 같다.*"
-    },
     "lunch3_end": {
         "name": "{name}",
         "text": "*점심시간이 끝났다.*"
-    },
-    "lunch3_seo_chase_dain_2b": {
-        "name": "{name}",
-        "text": "*교실로 돌아왔다.*"
-    },
-    "lunch3_dain_witness_2b": {
-        "name": "{name}",
-        "text": "*교실로 돌아왔다.*"
     },
     "lunch3_start_2_ins": {
         "name": "다인",
