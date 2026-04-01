@@ -9,7 +9,7 @@
     },
     "minsu_cheer_2": {
         "name": "Minsu",
-        "text": "Yo, date today right? Dain blasted it in the group chat lol\nBut hey. Just go with one."
+        "text": "Yo, date today right? Dain blasted it in the group chat lol \"I have plans tomorrow!!\" she said"
     },
     "minsu_cheer_3": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*The second the word 'date' surfaces, my hand goes to the closet. Already thinking about what to wear — kind of pathetic. Check the phone. Morning message.*"
+        "text": "*Checked the mirror three times. Changed clothes twice. — What am I even doing.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -121,11 +121,11 @@
     },
     "hidden_homeroom_d4_cafe_choice_a": {
         "name": "Homeroom Teacher",
-        "text": "*She wraps both hands around the cup.* ...Secret. You'll find out when you read it."
+        "text": "...You'll know when you read it. Here's a hint — she's a bit like me."
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Homeroom Teacher",
-        "text": "It's not pressure. Just read it. — That alone is enough."
+        "text": "*chuckles* If it feels heavy, you don't have to read it. — But read it with a light heart. I'd prefer that."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Homeroom Teacher",
@@ -302,7 +302,7 @@
     "hidden_nurse_d4_freetalk": {
         "name": "School Nurse",
         "text": "*Chatting with the nurse in the nurse's office.*",
-        "context": "Day 4. Weekend. Helped with health checkup prep, had a meal at a snack bar, and returned to the nurse's office to talk. Talking about university hospital burnout. Tone: Conversation has become serious. Excitement and tension of a date. More sincerity than jokes. Moments where emotions become honest.",
+        "context": "Day 4. Weekend. Helped with health checkup prep, had a meal at a snack shop, and returned to the nurse's office to talk. Talking about university hospital burnout. Tone: Conversation has become serious. Excitement and tension of a date. More sincerity than jokes. Moments where emotions become honest.",
         "personality": "The nurse in casual clothes feels like an older sister. Playfulness and sincerity alternate, and she understands the weight of being called by name."
     },
     "hidden_nurse_d4_meal_1b": {

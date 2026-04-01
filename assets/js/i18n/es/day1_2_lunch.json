@@ -82,7 +82,7 @@
     },
     "lunch_seo_12": {
         "name": "{name}",
-        "text": "*Abre la lonchera. Guarniciones preparadas con esmero. Tortilla enrollada, salchichas, mini bolas de arroz.*"
+        "text": "*Abre la lonchera. Guarniciones preparadas con esmero. Rollito de huevo, salchichas, mini bolas de arroz.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "lunch_seo_22": {
         "name": "{name}",
-        "text": "*Seoyeon toma un trozo de tortilla enrollada y lo ofrece.*"
+        "text": "*Seoyeon toma un trozo de rollito de huevo y lo ofrece.*"
     },
     "lunch_seo_23": {
         "name": "Seoyeon",
@@ -130,7 +130,7 @@
     },
     "lunch_seo_choice": {
         "name": "{name}",
-        "text": "*Seoyeon me ofrece la tortilla enrollada.*",
+        "text": "*Seoyeon me ofrece el rollito de huevo.*",
         "choices": [
             "Aceptarla",
             "Sabría mejor si te la comieras tú"
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c1_1": {
         "name": "{name}",
-        "text": "*Acepto la tortilla enrollada de los palillos de Seoyeon.*"
+        "text": "*Acepto el rollito de huevo de los palillos de Seoyeon.*"
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "lunch_seo_c2_1": {
         "name": "{name}",
-        "text": "*Seoyeon se mete la tortilla enrollada en su propia boca. Masticando despacio.*"
+        "text": "*Seoyeon se mete el rollito de huevo en su propia boca. Masticando despacio.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
@@ -298,7 +298,7 @@
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
-        "text": "*Sus ojos se vuelven medias lunas. Así que así se ve cuando sonríe. — Un detalle que habría pasado por alto si no estuviera mirando.*"
+        "text": "*Sus ojos se vuelven medias lunas. — Esa sonrisa es trampa.*"
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
@@ -370,7 +370,7 @@
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*Qué momento tan extraño. Sentado en la biblioteca durante el almuerzo sin decir una sola palabra — y sin embargo no es incómodo. ¿Por qué?*"
+        "text": "*En la biblioteca durante el almuerzo sin decir una palabra — y no es incómodo. Es más, es cómodo.*"
     },
     "lunch_yuna_11": {
         "name": "{name}",
@@ -414,7 +414,7 @@
     },
     "lunch_yuna_21": {
         "name": "{name}",
-        "text": "¿Ya?"
+        "text": "Ya suena la campana."
     },
     "lunch_yuna_22": {
         "name": "Yuna",
@@ -434,7 +434,7 @@
     },
     "lunch_yuna_26": {
         "name": "{name}",
-        "text": "*'Fue agradable.' — Las frases de Yuna son cortas. Pero esas dos palabras se quedan conmigo mucho rato.*"
+        "text": "*'Fue agradable.' — Dos palabras que me tocan el corazón. Una frase de esta persona pesa más que diez de cualquier otra.*"
     },
     "lunch_end": {
         "name": "{name}",

@@ -5,7 +5,7 @@
     },
     "lunch_start_2": {
         "name": "{name}",
-        "text": "*I step out of the classroom and the hallway is packed with students. No idea where to go. Cafeteria? Snack bar? Or —*"
+        "text": "*I step out of the classroom and the hallway is packed with students. No idea where to go. Cafeteria? School store? Or —*"
     },
     "lunch_start_3": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "Hey! Have you eaten?! Let's hit the snack bar! I'll buy you bread... loser pays!"
+        "text": "Hey! Have you eaten?! Let's hit the school store! I'll buy you bread... loser pays!"
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -36,7 +36,7 @@
         "text": "*Who do I follow?*",
         "choices": [
             "Follow Seoyeon to the rooftop",
-            "Go to the snack bar with Dain",
+            "Go to the school store with Dain",
             "Follow Yuna to the library"
         ]
     },
@@ -82,7 +82,7 @@
     },
     "lunch_seo_12": {
         "name": "{name}",
-        "text": "*She opens the lunchbox. Carefully prepared side dishes. Rolled eggs, sausages, mini rice balls.*"
+        "text": "*She opens the lunchbox. Carefully prepared side dishes. Rolled omelettes, sausages, mini rice balls.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "lunch_seo_22": {
         "name": "{name}",
-        "text": "*Seoyeon picks up a piece of rolled egg and holds it out.*"
+        "text": "*Seoyeon picks up a piece of rolled omelette and holds it out.*"
     },
     "lunch_seo_23": {
         "name": "Seoyeon",
@@ -130,7 +130,7 @@
     },
     "lunch_seo_choice": {
         "name": "{name}",
-        "text": "*Seoyeon is holding out the rolled egg.*",
+        "text": "*Seoyeon is holding out the rolled omelette.*",
         "choices": [
             "Accept it",
             "It'd taste better if you ate it yourself"
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c1_1": {
         "name": "{name}",
-        "text": "*I take the rolled egg from Seoyeon's chopsticks.*"
+        "text": "*I take the rolled omelette from Seoyeon's chopsticks.*"
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "lunch_seo_c2_1": {
         "name": "{name}",
-        "text": "*Seoyeon puts the rolled egg in her own mouth. Chewing slowly.*"
+        "text": "*Seoyeon puts the rolled omelette in her own mouth. Chewing slowly.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
@@ -250,7 +250,7 @@
     },
     "lunch_dain_15": {
         "name": "{name}",
-        "text": "*We sit on a bench by the snack bar and eat our bread.*"
+        "text": "*We sit on a bench by the school store and eat our bread.*"
     },
     "lunch_dain_16": {
         "name": "Dain",
@@ -298,7 +298,7 @@
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
-        "text": "*Her eyes become half-moons. So that's what she looks like when she smiles. — A detail I'd have missed if I hadn't been watching.*"
+        "text": "*Her eyes curve into half-moons. — That smile is almost unfair.*"
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
@@ -370,7 +370,7 @@
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*Strange time. Sitting in the library during lunch without saying a word — and yet it's not uncomfortable. Why?*"
+        "text": "*Sitting in the library during lunch without saying a word — and it's not uncomfortable. If anything, it's comfortable.*"
     },
     "lunch_yuna_11": {
         "name": "{name}",
@@ -402,7 +402,7 @@
     },
     "lunch_yuna_18": {
         "name": "{name}",
-        "text": "*Her sentences are short. But not cold — more like she's being economical with words. Packing the most meaning into the fewest words.*"
+        "text": "*Her sentences are short. But not cold — more like she's careful with her words.*"
     },
     "lunch_yuna_19": {
         "name": "{name}",
@@ -434,7 +434,7 @@
     },
     "lunch_yuna_26": {
         "name": "{name}",
-        "text": "*'It was nice.' — Those two words reach my heart. One word from this person weighs more than ten words from anyone else.*"
+        "text": "*'It was nice.' — Two words that reach my heart. One word from this person weighs more than ten from anyone else.*"
     },
     "lunch_end": {
         "name": "{name}",

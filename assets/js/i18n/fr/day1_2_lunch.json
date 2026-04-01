@@ -5,7 +5,7 @@
     },
     "lunch_start_2": {
         "name": "{name}",
-        "text": "*Je sors de la salle et le couloir grouille d’élèves. Aucune idée d’où aller. Cantine ? Boutique ? Ou—*"
+        "text": "*Je sors de la salle et le couloir grouille d’élèves. Aucune idée d’où aller. Kiosque ? Boutique ? Ou—*"
     },
     "lunch_start_3": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "lunch_seo_20": {
         "name": "{name}",
-        "text": "La cuisine est bonne."
+        "text": "Le repas est bon."
     },
     "lunch_seo_21": {
         "name": "Seoyeon",
@@ -266,7 +266,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "On dirait une annonce de recrutement PR."
+        "text": "On dirait de l'auto-promo."
     },
     "lunch_dain_20": {
         "name": "Dain",
@@ -298,7 +298,7 @@
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
-        "text": "*Ses yeux deviennent des croissants de lune. C’est comme ça qu’elle sourit. — Un détail que j’aurais raté si je n’avais pas regardé.*"
+        "text": "*Ses yeux deviennent des croissants de lune. — Ce sourire, c’est de la triche.*"
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
@@ -370,7 +370,7 @@
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*Moment étrange. Assis à la bibliothèque pendant le déjeuner sans dire un mot — et pourtant ce n’est pas désagréable. Pourquoi ?*"
+        "text": "*Assise à la bibliothèque pendant le déjeuner sans dire un mot — et pourtant ce n’est pas gênant. C’est même agréable.*"
     },
     "lunch_yuna_11": {
         "name": "{name}",
@@ -434,7 +434,7 @@
     },
     "lunch_yuna_26": {
         "name": "{name}",
-        "text": "*‘C’était bien.’ — Les phrases de Yuna sont courtes. Mais ces deux mots restent longtemps en tête.*"
+        "text": "*« C’était bien. » — Deux mots qui touchent le cœur. Un seul mot de cette personne pèse plus que dix de n’importe qui d’autre.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -448,7 +448,7 @@
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Assis sur un banc avec Dain à la cantine, en train de manger du pain.*",
+        "text": "*Assis sur un banc avec Dain au kiosque, en train de manger du pain.*",
         "context": "Déjeuner du premier jour, vient de jouer à pierre-feuille-ciseaux avec Dain. Elle a perdu. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
         "personality": "Dain est une athlète énergique. Adore le contact physique, utilise beaucoup de points d'exclamation. Dure à l'extérieur, douce à l'intérieur."
     },

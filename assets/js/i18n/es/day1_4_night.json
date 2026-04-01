@@ -29,7 +29,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Envió 'Cortesía de la casa' como mensaje aparte a propósito. — ¿Es cálculo o sinceridad?*"
+        "text": "*Envió 'Cortesía de la casa' como mensaje aparte a propósito. — Me hizo sonreír.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -159,7 +159,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*¿Un mensaje personal en un aviso de clase? — Esta mujer no distingue lo profesional de lo personal, o lo hace a propósito.*"
+        "text": "*¿Un mensaje personal en un aviso? — Se me escapa una sonrisa. Intento ocultarla, pero no puedo.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",

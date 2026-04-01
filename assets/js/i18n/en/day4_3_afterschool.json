@@ -23,7 +23,7 @@
         "name": "{name}",
         "text": "*My fingertips are cold. There's no wind. If I don't say it now — I don't think I'll ever have this courage again.*",
         "choices": [
-            "You know if you run, I'll chase you. So just stay and hear me out.",
+            "Seoyeon. Just a second.",
             "...Nice breeze."
         ]
     },
@@ -115,7 +115,7 @@
         "name": "{name}",
         "text": "*My breathing has shortened. The room feels smaller. If I don't say it now — I don't think I'll ever have this courage again.*",
         "choices": [
-            "You know if you run, I'll chase you. So just stay and hear me out.",
+            "Yuna. Let me ask you one thing.",
             "...This place is really nice."
         ]
     },

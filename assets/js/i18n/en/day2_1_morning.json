@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Day two. The uniform feels a bit more comfortable than yesterday. Am I adapting fast, or just giving up fast?*"
+        "text": "*Day two. The uniform feels a bit more comfortable than yesterday. — So do my steps.*"
     },
     "morning2_start_2": {
         "name": "{name}",
@@ -185,7 +185,7 @@
     },
     "morning2_haeun_6b": {
         "name": "Haeun",
-        "text": "So I have a favor to ask. — Please be careful with her. She's more fragile than she lets on."
+        "text": "So I have a favor to ask. — Please don't throw her off balance. She's only just barely holding it together right now."
     },
     "morning2_haeun_6c": {
         "name": "{name}",

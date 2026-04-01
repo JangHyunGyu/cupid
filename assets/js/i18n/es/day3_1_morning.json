@@ -62,7 +62,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Alguien que se desvela leyendo y llega tarde. — Admirable o lamentable, en cualquier caso, típico de Yuna.*"
+        "text": "*Alguien que se desvela leyendo y llega tarde. — Típico de Yuna. Y me gusta.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -324,7 +324,7 @@
     },
     "hidden_nurse_d3_choice1_a": {
         "name": "Enfermera",
-        "text": "*Se acomoda los lentes.* Honesto. Eso está bien. — No puedo recetarte nada, pero puedo escuchar."
+        "text": "...¿Algo así? Entonces hiciste bien en venir."
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Enfermera",
@@ -352,11 +352,11 @@
     },
     "hidden_nurse_d3_choice2_a": {
         "name": "Enfermera",
-        "text": "*Mira por la ventana.* ...A medias. La otra mitad — aún no quiero decirla."
+        "text": "...Más que dejarlo — huí."
     },
     "hidden_nurse_d3_choice2_b": {
         "name": "Enfermera",
-        "text": "*Sus ojos tiemblan detrás de los lentes.* ...Quién sabe. ¿Cambiaría algo si la tuviera?"
+        "text": "...Sí. Un paciente que no pude salvar."
     },
     "hidden_nurse_d3_9": {
         "name": "Enfermera",
@@ -830,7 +830,7 @@
     },
     "morning3_date_yuna_1_ins": {
         "name": "Seoyeon",
-        "text": "El rollo de huevo está un poco salado. 6 puntos."
+        "text": "El rollito de huevo está un poco salado. 6 puntos."
     },
     "morning3_end_ins": {
         "name": "Yuna",

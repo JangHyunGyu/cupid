@@ -94,7 +94,7 @@
     },
     "lunch2_yuna_c1_1": {
         "name": "Yuna",
-        "text": "...Se fue. Hace un año."
+        "text": "...Se trasladó. Hace un año."
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
-        "text": "*Donde pasó la mano de Seoyeon aún me tiene pensando. — Y los ojos sorprendidos de Dain también.*"
+        "text": "*Donde pasó la mano de Seoyeon aún me quema. — Y los ojos sorprendidos de Dain no dejan de volver.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",

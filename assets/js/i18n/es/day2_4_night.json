@@ -110,7 +110,7 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "......\nMañana al mediodía dejaré la azotea abierta. Si vienes o no, es tu decisión"
+        "text": "Mañana al mediodía dejaré la azotea abierta. Ven"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Esta vez lo diré sin arrepentimientos.' — Eso me prometí al venir a este instituto.*\n\n*Pero Minsu tiene razón. Por no querer arrepentirme, se lo he estado diciendo a todas. ¿Y eso es... aún peor?*"
+        "text": "*'Esta vez lo diré sin arrepentirme.' — Eso me prometí al venir a esta escuela.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -186,7 +186,7 @@
     },
     "night2_end_3": {
         "name": "{name}",
-        "text": "*Entre 'pensar en alguien' y 'querer a alguien' todavía hay distancia. — Pero esa distancia se siente más corta que ayer.*"
+        "text": "*Ayer solo me preocupaban. Hoy — las palabras 'te extraño' subieron hasta la garganta y volvieron a bajar.*"
     },
     "night2_end_4": {
         "name": "{name}",

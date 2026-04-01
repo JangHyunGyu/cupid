@@ -381,7 +381,7 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Yuna jagte dem Schatten von jemandem nach, der verschwunden war. Ich weiß jetzt — ich bin nicht dieser Schatten.*"
+        "text": "*Yuna reicht mir einen Zettel. \"Verirr dich beim nächsten Mal nicht.\" — Kurz. Und warm.*"
     },
     "good_4_yuna": {
         "name": "{name}",
@@ -493,7 +493,7 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Ich fand den Mut. Diesmal bin ich nicht weggelaufen. — Das steht fest.*"
+        "text": "*\"...Danke. Wirklich. Aber ich bin noch nicht so weit — fünf Tage waren wohl zu kurz.\"*"
     },
     "confess_fail_2": {
         "name": "{name}",
@@ -827,11 +827,11 @@
     },
     "perfect_dain_2b": {
         "name": "{name}",
-        "text": "*Kein Ausrufezeichen. Zum ersten Mal. — Dain spricht von einem Anfang, der nicht Volleyball ist.*"
+        "text": "*Kein Ausrufezeichen. Zum ersten Mal. — Dain spricht über einen Anfang, der nicht Volleyball ist.*"
     },
     "perfect_dain_3b": {
         "name": "{name}",
-        "text": "*Dain legt den Ball auf dem Spielfeld ab. Dreht sich um und lächelt. Ein Lächeln ohne Ausrufezeichen.*"
+        "text": "*Dain legt den Volleyball auf dem Spielfeld ab. Sie dreht sich um und lächelt. Ein Lächeln ohne Ausrufezeichen.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "System",

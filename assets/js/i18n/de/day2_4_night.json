@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hey!! Was machst du morgen?!"
+        "text": "Du kommst morgen zum Schulkiosk, oder?!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -174,7 +174,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Diesmal sage ich es ohne Reue.' — Das hatte ich mir vorgenommen, als ich an diese Schule kam.*\n\n*Aber Minsu hat recht. Um es nicht zu bereuen, habe ich es allen gesagt. Ist das... sogar noch schlimmer?*"
+        "text": "*'Diesmal sage ich es ohne Reue.' — Das hatte ich mir vorgenommen, als ich an diese Schule kam.*"
     },
     "night2_flashback_8": {
         "name": "{name}",

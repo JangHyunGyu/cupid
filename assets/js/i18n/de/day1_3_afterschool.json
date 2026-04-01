@@ -146,7 +146,7 @@
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
-        "text": "*Dachte, sie wäre der distanzierte Typ, aber sie kümmert sich tatsächlich. — Oder es ist einfach ihr Job.*"
+        "text": "*Unerwartet fürsorglich. — Etwas Warmes durchfährt mich.*"
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrerin",
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — Pädagogisches Interesse, sagte sie, aber ihre Augen erzählten etwas anderes.*"
+        "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — Ohne Grund habe ich ihr zu lange hinterhergeschaut.*"
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie hält kurz inne.* ...Scharfe Augen. Ist das erste Mal, dass sich ein Patient Sorgen um die Ärztin macht."
+        "text": "...Scharfe Augen. Dabei sollte ich diejenige sein, die sich Sorgen macht."
     },
     "after_nurse_enter_choice_b": {
         "name": "Schulkrankenschwester",
@@ -442,11 +442,11 @@
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
-        "text": "*Ist sie aufmerksam oder neckt sie mich nur? — Wahrscheinlich beides.*"
+        "text": "*Ich lasse mich immer wieder von ihrem Tempo mitreißen. — Von ihrem Tempo.*"
     },
     "after_nurse_enter_4_ins4": {
         "name": "{name}",
-        "text": "*Die Krankenschwester steht auf und kommt herüber. Ihre Bewegungen sind geschmeidig. — Weit über dem Niveau einer gewöhnlichen Schulkrankenschwester. Dem Körper eingeprägte Bewegungen. Die Hände von jemandem, der das hunderte Male gemacht hat.*"
+        "text": "*Die Krankenschwester steht auf und kommt herüber. Ihre Bewegungen sind geschmeidig. — Als ihre Hand mich berührt, werde ich unerwartet nervös.*"
     },
     "after_nurse_enter_6_ins": {
         "name": "{name}",

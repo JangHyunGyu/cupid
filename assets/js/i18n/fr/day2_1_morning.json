@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. Est-ce que je m'adapte vite, ou est-ce que j'abandonne vite ?*"
+        "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. — Mes pas aussi.*"
     },
     "morning2_start_2": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "hidden_homeroom_d2_3": {
         "name": "Professeure principale",
-        "text": "J'ai vu ton ancien bulletin. T'avais de bonnes notes en français. T'aimes lire ?"
+        "text": "J'ai vu ton ancien bulletin. T'avais de bonnes notes en lettres. T'aimes lire ?"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",

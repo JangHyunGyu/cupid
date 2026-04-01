@@ -265,7 +265,7 @@
     },
     "true_dain_4": {
         "name": "{name}",
-        "text": "*Los latidos bajo mis dedos son nítidos.*"
+        "text": ""
     },
     "true_dain_5": {
         "name": "{name}",
@@ -341,11 +341,11 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Se oye una voz desde adelante.*"
+        "text": ""
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Dio un paso hacia mí.*"
+        "text": ""
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -381,7 +381,7 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Yuna perseguía la sombra de alguien que desapareció. Ahora sé — que yo no soy esa sombra.*"
+        "text": "*Yuna me pasa una nota. \"No te pierdas la próxima vez.\" — Corta. Y cálida.*"
     },
     "good_4_yuna": {
         "name": "{name}",
@@ -445,7 +445,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Estoy frente a la puerta del instituto. Los pétalos de cerezo caen. Nadie los recoge.*"
+        "text": ""
     },
     "mayhem_7": {
         "name": "Sistema",
@@ -481,7 +481,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*Es solo cuestión de tiempo que se rompa. — Cuando lo haga, ¿quién será el más herido?*"
+        "text": ""
     },
     "harem_8": {
         "name": "Sistema",
@@ -493,7 +493,7 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Encontré el valor. Esta vez no huí. — Eso es seguro.*"
+        "text": "*\"...Gracias. De verdad. Pero aún no estoy lista — supongo que cinco días fue muy poco.\"*"
     },
     "confess_fail_2": {
         "name": "{name}",
@@ -501,11 +501,11 @@
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": "*En mi escuela anterior, me arrepentí de no hablar. En esta escuela, hablé — y quedó un vacío diferente.*"
+        "text": ""
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Salgo por la puerta de la escuela. Mi teléfono está en silencio. — Pero esta vez no huí. Solo eso es diferente.*"
+        "text": ""
     },
     "confess_fail_5": {
         "name": "Sistema",
@@ -525,7 +525,7 @@
     },
     "friend_3": {
         "name": "{name}",
-        "text": "*En mi antiguo colegio también fue así. Y aquí estoy, haciéndolo otra vez.*"
+        "text": ""
     },
     "friend_4": {
         "name": "{name}",
@@ -827,11 +827,11 @@
     },
     "perfect_dain_2b": {
         "name": "{name}",
-        "text": "*Sin exclamación. Por primera vez. — Dain está hablando de un comienzo que no es el voleibol.*"
+        "text": "*Sin signos de exclamación. Por primera vez. — Dain está hablando de un comienzo que no es voleibol.*"
     },
     "perfect_dain_3b": {
         "name": "{name}",
-        "text": "*Dain deja el balón en la cancha. Se da la vuelta y sonríe. Una sonrisa sin signo de exclamación.*"
+        "text": "*Dain deja el balón en la cancha. Se da la vuelta y sonríe. Una sonrisa sin signos de exclamación.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "Sistema",

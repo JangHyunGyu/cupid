@@ -146,7 +146,7 @@
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
-        "text": "*Pensé que era del tipo distante, pero resulta que se preocupa. — O quizás solo es parte del trabajo.*"
+        "text": "*Más atenta de lo que esperaba. — Algo cálido me recorrió.*"
     },
     "after_homeroom_honest_1": {
         "name": "Profesora",
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*Desaparece por el pasillo. Su largo cabello se balancea. — Dice que es interés profesional, pero sus ojos decían otra cosa.*"
+        "text": "*Desaparece al fondo del pasillo. Su largo cabello se balancea. — Sin darme cuenta, me quedé mirándola demasiado.*"
     },
     "after_homeroom_freetalk": {
         "name": "Profesora",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Enfermera",
-        "text": "*Se detiene un instante.* ...Buen ojo. Es la primera vez que un paciente se preocupa por la doctora."
+        "text": "...Buen ojo. Se supone que la que se preocupa soy yo."
     },
     "after_nurse_enter_choice_b": {
         "name": "Enfermera",
@@ -302,7 +302,7 @@
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Oye, ¿dónde fuiste en el almuerzo? Fui a la cafetería y no estabas."
+        "text": "Oye, ¿dónde fuiste en el almuerzo? Fui a la tienda de la escuela y no estabas."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "Te vi en la cafetería con Dain en el almuerzo. Te adaptas rápido."
+        "text": "Te vi en la tienda de la escuela con Dain en el almuerzo. Te adaptas rápido."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
@@ -442,11 +442,11 @@
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
-        "text": "*¿Es observadora, o simplemente está bromeando? — Probablemente ambas cosas.*"
+        "text": "*Me dejo llevar por su ritmo sin darme cuenta. — Por su ritmo.*"
     },
     "after_nurse_enter_4_ins4": {
         "name": "{name}",
-        "text": "*La enfermera se levanta y se acerca. Sus movimientos son fluidos. — Muy por encima del nivel de una enfermera escolar normal. Movimientos grabados en su cuerpo. Las manos de alguien que ha hecho esto cientos de veces.*"
+        "text": "*La enfermera se levanta y se acerca. Sus movimientos son elegantes. — Al sentir su mano, me puse nervioso sin razón.*"
     },
     "after_nurse_enter_6_ins": {
         "name": "{name}",

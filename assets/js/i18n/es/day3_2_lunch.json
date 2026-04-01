@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "La tortilla está un poco salada. 6 puntos."
+        "text": "El rollito de huevo está un poco salado. 6 puntos."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Solo queda un acompañamiento. La última tortilla.*"
+        "text": "*Solo queda un acompañamiento. El último rollito de huevo.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "lunch3_start_2_ins": {
         "name": "Dain",
-        "text": "*Mordiendo el rollo de huevo sin pensarlo dos veces* ¡Oh! ¡Está bueno!!"
+        "text": "*Mordiendo el rollito de huevo sin pensarlo dos veces* ¡Oh! ¡Está bueno!!"
     },
     "lunch3_meal_7_ins": {
         "name": "Yuna",

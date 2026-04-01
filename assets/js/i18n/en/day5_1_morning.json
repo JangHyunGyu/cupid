@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Day five. The last day. The uniform feels comfortable now. Five days ago it was stiff, but now it fits. — Have I gotten used to this school, or to these people?*"
+        "text": "*Day five. The last day. The uniform feels comfortable now. — Because of these people. I know that.*"
     },
     "morning5_start_2": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Homeroom Teacher",
-        "text": "Haven't shown this to anyone in seven years."
+        "text": "Haven't shown this to anyone in seven years. — It is technically outside my duties."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "hidden_homeroom_d5_choice_a": {
         "name": "Homeroom Teacher",
-        "text": "*Her lips tremble.* ...After you graduate."
+        "text": "*Her voice cracks.* Yeah. After you graduate."
     },
     "hidden_homeroom_d5_choice_b": {
         "name": "Homeroom Teacher",
-        "text": "*She smiles. A smile I've never seen before.* ...Even ten pages would be fine."
+        "text": "*chuckles* If it's a whole page — that's not a review, that's a critique."
     },
     "hidden_homeroom_d5_choice_b_ins": {
         "name": "{name}",

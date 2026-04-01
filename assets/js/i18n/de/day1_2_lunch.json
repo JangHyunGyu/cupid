@@ -5,7 +5,7 @@
     },
     "lunch_start_2": {
         "name": "{name}",
-        "text": "*Ich verlasse das Klassenzimmer und der Flur ist voller Schüler. Keine Ahnung, wohin. Mensa? Kiosk? Oder—*"
+        "text": "*Ich verlasse das Klassenzimmer und der Flur ist voller Schüler. Keine Ahnung, wohin. Mensa? Schulkiosk? Oder—*"
     },
     "lunch_start_3": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "Hey! Schon gegessen?! Lass zum Kiosk gehen! Ich kauf dir Brot... der Verlierer zahlt!"
+        "text": "Hey! Schon gegessen?! Lass zum Schulkiosk gehen! Ich kauf dir Brot... der Verlierer zahlt!"
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -36,7 +36,7 @@
         "text": "*Wem folge ich?*",
         "choices": [
             "Seoyeon aufs Dach folgen",
-            "Mit Dain zum Kiosk",
+            "Mit Dain zum Schulkiosk",
             "Yuna in die Bibliothek folgen"
         ]
     },
@@ -250,7 +250,7 @@
     },
     "lunch_dain_15": {
         "name": "{name}",
-        "text": "*Wir setzen uns auf eine Bank beim Kiosk und essen unser Brot.*"
+        "text": "*Wir setzen uns auf eine Bank beim Schulkiosk und essen unser Brot.*"
     },
     "lunch_dain_16": {
         "name": "Dain",
@@ -298,7 +298,7 @@
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
-        "text": "*Ihre Augen werden zu Halbmonden. So sieht sie also aus, wenn sie lächelt. — Ein Detail, das mir entgangen wäre, wenn ich nicht hingesehen hätte.*"
+        "text": "*Ihre Augen werden zu Halbmonden. — Dieses Lächeln ist nicht fair.*"
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
@@ -370,7 +370,7 @@
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*Seltsame Zeit. In der Mittagspause wortlos in der Bibliothek sitzen — und trotzdem ist es nicht unangenehm. Warum?*"
+        "text": "*In der Mittagspause in der Bibliothek sitzen, ohne ein Wort zu sagen — und es ist nicht unangenehm. Eher sogar angenehm.*"
     },
     "lunch_yuna_11": {
         "name": "{name}",
@@ -434,7 +434,7 @@
     },
     "lunch_yuna_26": {
         "name": "{name}",
-        "text": "*‘War schön.’ — Yunas Sätze sind kurz. Aber diese zwei Worte hallen lange nach.*"
+        "text": "*’War schön.’ — Zwei Worte, die ins Herz treffen. Ein Satz von ihr wiegt schwerer als zehn von anderen.*"
     },
     "lunch_end": {
         "name": "{name}",

@@ -62,7 +62,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Quelqu’un qui veille toute la nuit pour lire et arrive en retard. — Admirable ou navrant, en tout cas, c’est bien Yuna.*"
+        "text": "*Quelqu’un qui lit toute la nuit et arrive en retard. — Typique de Yuna. Et j’aime bien ça.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -246,7 +246,7 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Professeure principale",
-        "text": "J'ai passé le concours de l'enseignement. Prof de coréen. — Une aspirante romancière qui enseigne la littérature. Ironique, non ?"
+        "text": "J'ai passé le concours. Prof de lettres. — Une aspirante romancière qui enseigne les lettres. Ironique, non ?"
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Professeure principale",
@@ -324,7 +324,7 @@
     },
     "hidden_nurse_d3_choice1_a": {
         "name": "Infirmière",
-        "text": "*Remonte ses lunettes.* Honnête. C'est mieux. — Je peux pas prescrire quoi que ce soit, mais je peux écouter."
+        "text": "...C'est similaire ? Alors t'as bien fait de venir ici."
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Infirmière",
@@ -352,11 +352,11 @@
     },
     "hidden_nurse_d3_choice2_a": {
         "name": "Infirmière",
-        "text": "*Elle regarde par la fenêtre.* ...À moitié vrai. L'autre moitié — je ne suis pas encore prête à le dire."
+        "text": "...Plutôt que d'avoir quitté — j'ai fui."
     },
     "hidden_nurse_d3_choice2_b": {
         "name": "Infirmière",
-        "text": "*Ses yeux tremblent derrière ses lunettes.* ...Va savoir. Ça changerait quoi ?"
+        "text": "...Il y en avait un. Un patient que je n'ai pas pu sauver."
     },
     "hidden_nurse_d3_9": {
         "name": "Infirmière",

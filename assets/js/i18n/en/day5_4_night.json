@@ -73,7 +73,7 @@
     },
     "perfect_yuna_5": {
         "name": "{name}",
-        "text": "*Yuna held on. Without a word. Moonlight poured through the broken windows — tattooed arms wrapped around my waist, silver hair resting on my shoulder. For the first time, Yuna's quiet breathing filled the hideout.*"
+        "text": "*Yuna stood up and held me. Without a word. Moonlight poured through the broken windows — tattooed arms wrapped around my waist, silver hair resting on my shoulder. For the first time, Yuna's quiet breathing filled the hideout.*"
     },
     "perfect_dain_1": {
         "name": "{name}",
@@ -381,7 +381,7 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Yuna was chasing the shadow of someone who disappeared. I know now — I’m not that shadow.*"
+        "text": "*Yuna hands me a note. \"Don't get lost next time.\" — Short. And warm.*"
     },
     "good_4_yuna": {
         "name": "{name}",
@@ -493,7 +493,7 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*I found the courage. This time, I didn’t run. — That much is certain.*"
+        "text": "*\"...Thank you. Really. But I'm not there yet — I guess five days was just too short.\"*"
     },
     "confess_fail_2": {
         "name": "{name}",
@@ -827,11 +827,11 @@
     },
     "perfect_dain_2b": {
         "name": "{name}",
-        "text": "*No exclamation mark. For the first time. — Dain is talking about a beginning that isn't volleyball.*"
+        "text": "*No exclamation marks. For the first time. — Dain is talking about a beginning that isn't volleyball.*"
     },
     "perfect_dain_3b": {
         "name": "{name}",
-        "text": "*Dain sets the volleyball down on the court. Turns around and smiles. A smile without an exclamation mark.*"
+        "text": "*Dain sets the volleyball down on the court. She turns around and smiles. A smile without exclamation marks.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "System",

@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "The egg roll is a bit too salty. 6 points."
+        "text": "The rolled omelette is a bit too salty. 6 points."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*One side dish remains. The last egg roll.*"
+        "text": "*One side dish remains. The last rolled omelette.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "lunch3_start_2_ins": {
         "name": "Dain",
-        "text": "*Chomping into the egg roll without hesitation* Oh! This is good!!"
+        "text": "*Chomping into the rolled omelette without hesitation* Oh! This is good!!"
     },
     "lunch3_meal_7_ins": {
         "name": "Yuna",
