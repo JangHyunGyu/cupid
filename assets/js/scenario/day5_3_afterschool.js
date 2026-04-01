@@ -324,6 +324,12 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/yuna_normal.png",
         "sunset": true,
+        "next": "after5_confess_react_yuna_call"
+    },
+    "after5_confess_react_yuna_call": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "sunset": true,
         "next": "after5_confess_react_yuna_ins"
     },
     "after5_confess_no": {
