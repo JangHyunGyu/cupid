@@ -29,7 +29,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*She sent 'It's on the house' as a separate message on purpose. — It makes me laugh.*"
+        "text": "*She sent 'On the house' as a separate message on purpose. — I can't help but smile.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -41,7 +41,7 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*Short. But 'I'll save your seat' — for her, isn't that the warmest welcome she can give?*"
+        "text": "*'I'll save you a seat.' — For Yuna, that's the biggest invitation she can give. My chest feels warm.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
@@ -159,7 +159,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*A personal message in a class announcement? — Does she not know the difference between work and personal, or is she doing it on purpose?*"
+        "text": "*A personal message in a class announcement? — I can't stop my lips from curving up. I try to hide it but can't.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",

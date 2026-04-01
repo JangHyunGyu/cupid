@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "{name}",
-        "text": "*Seoyeon deja de hablar. Sus manos están apretadas sobre las rodillas.*\n\n*— Y entonces, lentamente, muy lentamente, la expresión que había mantenido perfectamente se desmorona. Seoyeon se quita las gafas con manos temblorosas.*\n\n*Las lágrimas le caen de los ojos. En silencio. — Veo el rostro de Seoyeon sin gafas por primera vez.*"
+        "text": "*Seoyeon deja de hablar. Sus manos están apretadas sobre las rodillas.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -528,7 +528,7 @@
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*Sí, vamos a vernos mañana también. Mañana se lo diré seguro.*"
+        "text": ""
     },
     "day4_night_reflect": {
         "name": "{name}",

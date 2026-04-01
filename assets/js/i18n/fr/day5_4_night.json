@@ -83,9 +83,17 @@
         "name": "Dain",
         "text": "C'est la dernière passe. — Mais c'est aussi un début."
     },
+    "perfect_dain_2b": {
+        "name": "{name}",
+        "text": "*Pas de point d'exclamation. Pour la première fois. — Dain parle d'un début qui n'est pas le volleyball.*"
+    },
     "perfect_dain_3": {
         "name": "Dain",
         "text": "En dehors du terrain, est-ce que je suis quelqu'un de bien ?"
+    },
+    "perfect_dain_3b": {
+        "name": "{name}",
+        "text": "*Dain pose le ballon sur le terrain. Elle se retourne et sourit. Un sourire sans point d'exclamation.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
@@ -381,7 +389,7 @@
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Yuna poursuivait l'ombre de quelqu'un qui avait disparu. Je sais maintenant — que je ne suis pas cette ombre.*"
+        "text": "*Yuna me tend un mot. \"Ne te perds plus la prochaine fois.\" — Court. Et chaleureux.*"
     },
     "good_4_yuna": {
         "name": "{name}",
@@ -493,7 +501,7 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*J'ai trouvé le courage. Cette fois, je n'ai pas fui. — Ça, c'est certain.*"
+        "text": "*\"...Merci. Vraiment. Mais je ne suis pas encore prête — cinq jours, c'était trop court.\"*"
     },
     "confess_fail_2": {
         "name": "{name}",
@@ -824,14 +832,6 @@
     "hidden_good_nurse_ending_title": {
         "name": "",
         "text": "─── Infirmière GOOD END ───"
-    },
-    "perfect_dain_2b": {
-        "name": "{name}",
-        "text": "*Pas de point d'exclamation. Pour la première fois. — Dain parle d'un début qui n'est pas le volley.*"
-    },
-    "perfect_dain_3b": {
-        "name": "{name}",
-        "text": "*Dain pose le ballon sur le terrain. Se retourne et sourit. Un sourire sans point d'exclamation.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "Système",

@@ -21,7 +21,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "ソヨン",
-        "text": "「…気づいたんだ。」"
+        "text": "「…そんなセリフ、用意してきたの？」"
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "{name}",
-        "text": "*「何言ってるの」と言い返したけど——耳が赤い。また。*"
+        "text": "*「勘違いしないでよ」と言ったけど——耳が赤い。また。*"
     },
     "date_seo_pretty_low": {
         "name": "ソヨン",
@@ -81,7 +81,7 @@
     },
     "date_seo_end": {
         "name": "{name}",
-        "text": "*プレゼントなのか試験なのか。――たぶん、両方。*"
+        "text": "*ソヨンが渡してくれたもの。——受け取った手が震えている。*"
     },
     "date_yuna_1": {
         "name": "{name}",

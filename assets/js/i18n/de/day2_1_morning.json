@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Tag zwei. Die Uniform fühlt sich etwas bequemer an als gestern. Passe ich mich schnell an, oder gebe ich schnell auf?*"
+        "text": "*Tag zwei. Die Uniform fühlt sich etwas bequemer an als gestern. — Meine Schritte auch.*"
     },
     "morning2_start_2": {
         "name": "{name}",
@@ -341,7 +341,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*Hab den Zettel eingesteckt. Die Reaktionen der beiden sind subtil verschieden.*"
+        "text": "*Ich habe den Zettel eingesteckt. — Sorgfältiger als nötig.*"
     },
     "morning2_minsu_1_ins": {
         "name": "{name}",

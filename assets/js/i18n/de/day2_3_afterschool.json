@@ -109,7 +109,7 @@
         "text": "Ein 'bisschen' spielt nicht so! — Gib's zu, du bist gut."
     },
     "after2_dain_end_2d": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "{name} war da viel besser."
     },
     "after2_dain_end_3": {
@@ -130,7 +130,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*Das Thema hat gewechselt. — Ob sie es absichtlich gewechselt hat oder es wirklich scharf war. Wahrscheinlich beides.*"
+        "text": "*Das Thema hat gewechselt. — Dains Art, sich zu kümmern, ist unbeholfen, aber warm.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...Du bist der erste Mensch, der so etwas Albernes so natürlich sagt.\n\n*Ihre Augen lächelten. — Nicht das eingeübte Lächeln, bei dem sich nur die Mundwinkel heben, sondern ein echtes. Das länger als drei Sekunden dauerte, nicht nur eine halbe.*"
+        "text": "...Du bist der erste Mensch, der so etwas Albernes so natürlich sagt."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -478,7 +478,7 @@
     },
     "minsu_warn_8": {
         "name": "Minsu",
-        "text": "Alter, ich bin seit einem Jahr in dieser Klasse. Die drei sind normalerweise nicht so. Seoyeon redet nie zuerst mit Jungs. Dain macht das nicht mit jedem so. Und Yuna — die redet kaum überhaupt."
+        "text": "Alter, ich bin seit einem Jahr in dieser Klasse. Seoyeon hat noch nie einen Typen zuerst angesprochen. Dain hat noch nie einem anderen Typen Brot gekauft. Und Yuna — Zettel? Die schreibt sie niemandem."
     },
     "minsu_warn_9": {
         "name": "Minsu",

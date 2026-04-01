@@ -17,7 +17,7 @@
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*— Pero ya es demasiado tarde.*"
+        "text": ""
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -29,11 +29,11 @@
     },
     "confess_seo_yes_1": {
         "name": "{name}",
-        "text": "Oye."
+        "text": ""
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*Aprieto la barandilla. Abro la boca. No sale sonido.*"
+        "text": ""
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": "*Las palabras flotan en la brisa de la azotea. Seoyeon deja de respirar.*"
+        "text": ""
     },
     "confess_seo_yes_8": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*— Pero ya es demasiado tarde.*"
+        "text": ""
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -121,11 +121,11 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": "Oye."
+        "text": ""
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*Abro la boca y la cierro. Sin sonido. Segundo intento.*"
+        "text": ""
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -145,7 +145,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": "*Las palabras parecen escritas en la habitación silenciosa. Los ojos de Yuna se abren grandes.*"
+        "text": ""
     },
     "confess_yuna_yes_8": {
         "name": "{name}",
@@ -189,7 +189,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": "*— Pero ya es demasiado tarde.*"
+        "text": ""
     },
     "confess_dain_choice": {
         "name": "{name}",
@@ -201,11 +201,11 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": "Oye."
+        "text": ""
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": "*Me quedo quieto, aún con el balón en las manos. La garganta me arde.*"
+        "text": ""
     },
     "confess_dain_yes_3": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": "*Tres sílabas resuenan en el gimnasio vacío. En este mismo lugar donde ella dijo '¿Gimnasio, va?' el Día 1.*"
+        "text": ""
     },
     "confess_dain_yes_8": {
         "name": "{name}",

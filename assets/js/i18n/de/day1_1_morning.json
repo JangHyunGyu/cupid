@@ -113,7 +113,7 @@
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*Sie lächelt. Sie scheint wirklich amüsiert zu sein. Eine Schülersprecherin mit dieser Energie am ersten Tag.*"
+        "text": "*Eine Schülersprecherin mit dieser Energie am ersten Tag. — Gar nicht schlecht.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Brauner Bob-Schnitt. Im Volleyball-Trikot. Eine Stimme voller Energie. Sie ist halb von ihrem Platz aufgestanden.*"
+        "text": "*Brauner Bob-Schnitt. Im Volleyball-Trikot. Eine Stimme voller Energie. Sie ist halb von ihrem Platz aufgestanden.* Das Mädchen neben ihr zieht sie am Ärmel, aber es nützt nichts."
     },
     "classroom_dain_3": {
         "name": "Klassenlehrerin",
@@ -213,7 +213,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Ach Lehrerin, keine Lust mich umzuziehen. Jedenfalls, willkommen!"
+        "text": "Ach, Frau Lehrerin, keine Lust mich umzuziehen. Jedenfalls, willkommen!"
     },
     "classroom_dain_5": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*Der Platz ist neben Dain.*"
+        "text": "*Der Platz ist neben Dain. Gerettet — oder dem Untergang geweiht — wer weiß, aber eins ist sicher: Ruhig wird es nicht.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "classroom_minsu_2": {
         "name": "Minsu",
-        "text": "Hey, Neuer. Willkommen. — Und ein Rat."
+        "text": "Hey, Neuer. Willkommen. — Und pass auf."
     },
     "classroom_minsu_3": {
         "name": "{name}",
@@ -305,11 +305,11 @@
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Ich schaue zu Yuna. Sie blickt immer noch aus dem Fenster. Aber ich glaube, ihre Ohrspitze hat sich leicht bewegt.*"
+        "text": "*Ich schaue zu Yuna. Sie blickt immer noch aus dem Fenster. Aber ich glaube, ihr Ohrläppchen hat sich leicht bewegt.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Tut sie so, als wäre es ihr egal, oder ist es ihr wirklich egal? — Interessant.*"
+        "text": "*Tut sie so, als wäre es ihr egal, oder ist es ihr wirklich egal? — Irgendwie glaube ich, es ist Ersteres.*"
     },
     "hallway_6_ins": {
         "name": "Seoyeon",

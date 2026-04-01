@@ -113,7 +113,7 @@
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*A student council president with this kind of energy on day one. — Not bad.*"
+        "text": "*A student council president with this kind of energy on the first day. — Not bad.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -137,7 +137,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Third-year building is here, library's over there. Snack bar is in the basement."
+        "text": "Third-year building is here, library's over there. School store is in the basement."
     },
     "hallway_4": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Brown bob cut. Wearing a volleyball team uniform. A voice bursting with energy. She's half-risen from her seat.*"
+        "text": "*Brown bob cut. Wearing a volleyball team uniform. A voice bursting with energy. She's half out of her seat. The girl next to her pulls at her sleeve, but it's no use.*"
     },
     "classroom_dain_3": {
         "name": "Homeroom Teacher",
@@ -213,7 +213,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Ugh teach, I don't wanna change. Anyway, welcome transfer student!"
+        "text": "Aw come on, teach, I don't wanna change. Anyway, welcome transfer student!"
     },
     "classroom_dain_5": {
         "name": "{name}",
@@ -297,7 +297,7 @@
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'Rough spot you got stuck in. — Yuna'*"
+        "text": "*'Got stuck with the noisy seat. — Yuna'*"
     },
     "classroom_yuna_note_4": {
         "name": "{name}",
@@ -309,7 +309,7 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Pretending not to care, or genuinely not caring. — Interesting.*"
+        "text": "*Pretending not to care, or genuinely not caring. — I suspect it's the former.*"
     },
     "hallway_6_ins": {
         "name": "Seoyeon",

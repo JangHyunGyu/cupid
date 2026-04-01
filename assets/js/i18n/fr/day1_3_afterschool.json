@@ -146,7 +146,7 @@
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
-        "text": "*Je la croyais distante, mais elle fait attention en fait. — Ou c'est juste son travail.*"
+        "text": "*Plus attentionnée que je ne pensais. — Quelque chose de chaud m'a traversé.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professeure principale",
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*Elle disparaît au bout du couloir. Ses longs cheveux se balancent. — Elle appelle ça de l'intérêt pédagogique, mais ses yeux racontaient autre chose.*"
+        "text": "*Elle disparaît au bout du couloir. Ses longs cheveux se balancent. — Je l'ai regardée trop longtemps sans raison.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Infirmière",
-        "text": "*Elle s'arrête un instant.* ...T'as l'œil. C'est la première fois qu'un patient s'inquiète pour le médecin."
+        "text": "...Observateur. C'est moi qui devrais m'inquiéter, pourtant."
     },
     "after_nurse_enter_choice_b": {
         "name": "Infirmière",
@@ -302,7 +302,7 @@
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Hé, t'étais où à midi ? Je suis allée à la cantine et t'étais pas là."
+        "text": "Hé, t'étais où à midi ? Je suis allée au kiosque et t'étais pas là."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "Je t'ai vu à la cantine avec Dain à midi. Tu t'adaptes vite."
+        "text": "Je t'ai vu au kiosque avec Dain à midi. Tu t'adaptes vite."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
@@ -442,11 +442,11 @@
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
-        "text": "*Elle est perspicace, ou elle plaisante ? — Sûrement les deux.*"
+        "text": "*Je me laisse emporter par son rythme sans m'en rendre compte. — Par son rythme.*"
     },
     "after_nurse_enter_4_ins4": {
         "name": "{name}",
-        "text": "*L'infirmière se lève et s'approche. Ses gestes sont fluides. — Quand sa main m'a touché, j'ai été nerveux sans raison.*"
+        "text": "*L'infirmière se lève et s'approche. Ses gestes sont fluides. — Quand sa main me touche, je me crispe sans raison.*"
     },
     "after_nurse_enter_6_ins": {
         "name": "{name}",

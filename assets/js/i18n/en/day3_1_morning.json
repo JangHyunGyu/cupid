@@ -62,7 +62,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Someone who stays up all night reading and ends up late. — Admirable or hopeless, either way, that's so Yuna.*"
+        "text": "*Someone who stays up all night reading and ends up late. — Admirable or hopeless, either way, that's so Yuna. I like that.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -830,7 +830,7 @@
     },
     "morning3_date_yuna_1_ins": {
         "name": "Seoyeon",
-        "text": "The egg roll is a bit too salty. 6 points."
+        "text": "The rolled omelette is a bit too salty. 6 points."
     },
     "morning3_end_ins": {
         "name": "Yuna",

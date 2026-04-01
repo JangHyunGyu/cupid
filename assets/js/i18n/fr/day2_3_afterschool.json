@@ -109,7 +109,7 @@
         "text": "Un 'peu' ça joue pas comme ça ! — Avoue, t'es bon."
     },
     "after2_dain_end_2d": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "{name} était bien meilleur(e) que moi."
     },
     "after2_dain_end_3": {
@@ -130,7 +130,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*Le sujet a changé. — Si elle l'a changé exprès ou si c'était vraiment épicé. Probablement les deux.*"
+        "text": "*Le sujet a changé. — La délicatesse de Dain est maladroite, mais chaleureuse.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...T'es la première personne à sortir un truc aussi léger avec autant de naturel."
+        "text": "...Tu es la première personne à dire quelque chose d'aussi absurde avec autant de naturel."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",

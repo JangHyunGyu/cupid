@@ -57,7 +57,7 @@
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*She waves and runs off. Like a storm. We haven't even properly introduced ourselves and she's already this casual.*"
+        "text": "*She waves and runs off. Like a storm. I don't even know her name and she's already talking to me like we're old friends.*"
     },
     "after_miss_yuna_1": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Knocks on the staffroom door. The homeroom teacher opens it.*"
+        "text": "*Knocks on the faculty office door. The homeroom teacher opens it.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",
@@ -146,7 +146,7 @@
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
-        "text": "*Thought she was the distant type, but she actually looks out for people. — Or maybe it's just part of the job.*"
+        "text": "*She's more caring than I expected. — Something warm passes through me.*"
     },
     "after_homeroom_honest_1": {
         "name": "Homeroom Teacher",
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*She disappears down the hallway. Her long hair sways. — She called it professional concern, but her eyes told a different story.*"
+        "text": "*The homeroom teacher disappears down the hallway. Her long hair sways. — I watched her for too long without meaning to.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
@@ -302,7 +302,7 @@
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Hey, where'd you go during lunch? I went to the snack bar but you weren't there."
+        "text": "Hey, where'd you go during lunch? I went to the school store but you weren't there."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "I saw you at the snack bar with Dain during lunch. You adapt fast."
+        "text": "I saw you at the school store with Dain during lunch. You adapt fast."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
@@ -442,11 +442,11 @@
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
-        "text": "*Is she perceptive, or just teasing? — Probably both.*"
+        "text": "*I keep getting drawn into her pace. — This person's pace.*"
     },
     "after_nurse_enter_4_ins4": {
         "name": "{name}",
-        "text": "*The nurse stands and walks over. Her movements are smooth. — Way beyond an ordinary school nurse's level. Movements ingrained in her body. The hands of someone who's done this hundreds of times.*"
+        "text": "*The nurse stands and walks over. Her movements are smooth. — When her hand touches me, I tense up for some reason.*"
     },
     "after_nurse_enter_6_ins": {
         "name": "{name}",

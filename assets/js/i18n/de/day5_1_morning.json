@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Tag fünf. Der letzte Tag. Die Uniform fühlt sich bequem an. Vor fünf Tagen war sie steif, jetzt passt sie. — Habe ich mich an diese Schule gewöhnt, oder an diese Menschen?*"
+        "text": "*Fünfter Tag. Der letzte Tag. Die Uniform fühlt sich vertraut an. — Wegen dieser Menschen. Das weiß ich.*"
     },
     "morning5_start_2": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*Letzter Tag. Seltsamerweise fühlen sich meine Schritte leicht an. Jemanden zu haben, den ich sehen will — das reicht als Grund, den Morgen zu überstehen.*"
+        "text": "*Letzter Tag. Seltsamerweise fühlen sich meine Schritte leicht an. Heute — glaube ich, kann ich es sagen.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",

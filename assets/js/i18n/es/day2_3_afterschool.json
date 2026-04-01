@@ -66,11 +66,11 @@
     },
     "after2_dain_10": {
         "name": "Dain",
-        "text": "*¿Con los ojos bien abiertos* Eh? Iba a ir suave, pero parece que no puedo.\n\n*Dain baja su postura. ¡Sus ojos han cambiado.*\n\nAhora va en serio!"
+        "text": "*¿Con los ojos bien abiertos* Eh? Iba a ir suave, pero parece que no puedo."
     },
     "after2_dain_11": {
         "name": "{name}",
-        "text": "*El intercambio va y viene. El movimiento de Dain es — claramente fuera de lo común. Rápido, preciso, memoria muscular en acción.*\n\n*Esta chica es realmente buena. No del tipo 'le gustan los deportes' — se mueve como alguien que alguna vez apostó su vida en ello.*\n\n*Resultado final: 3 a 2. Gané por poco.*"
+        "text": "*El intercambio va y viene. El movimiento de Dain es — claramente fuera de lo común. Rápido, preciso, memoria muscular en acción.*"
     },
     "after2_dain_12": {
         "name": "Dain",
@@ -94,7 +94,7 @@
     },
     "after2_dain_end": {
         "name": "{name}",
-        "text": "*Sus ojos tienen forma de media luna. Los mismos ojos de ayer. — Así se ve esta persona cuando se divierte de verdad.*\n\n*En la tienda de tteokbokki cerca de la escuela.*\n\n*Dain sopla su tteokbokki y dice —*"
+        "text": "*Sus ojos tienen forma de media luna. Los mismos ojos de ayer. — Así se ve esta persona cuando se divierte de verdad.*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
@@ -162,7 +162,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*La palabra 'pedir' parece no existir en el vocabulario de esta persona.*\n\n*Empiezo a ordenar documentos. Presupuestos de eventos, solicitudes de clubes. Hay bastante.*"
+        "text": "*La palabra 'pedir' parece no existir en el vocabulario de esta persona.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -198,7 +198,7 @@
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Decirlo directamente que es un cumplido. — Eso parece raro viniendo de ella.*\n\n*Mientras organizo, Seoyeon gira el cuello. Parece tenso.*",
+        "text": "*Decirlo directamente que es un cumplido. — Eso parece raro viniendo de ella.*",
         "choices": [
             "El atardecer es hermoso. -- Ah, me refiero al de afuera, no a ti.",
             "¿Te duele el cuello? Descansa un poco."
@@ -210,7 +210,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...Eres la primera persona que dice algo tan tonto con tanta naturalidad.\n\n*Sus ojos sonrieron. — No la sonrisa ensayada donde solo se levantan las comisuras de los labios, sino una real. Que duró más de tres segundos, no solo medio segundo.*"
+        "text": "...Eres la primera persona que dice algo tan tonto con tanta naturalidad."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -222,7 +222,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Está muy tenso. No te muevas un momento.\n\n*Seoyeon se levanta y viene detrás de mi. Pone las manos sobre mis hombros.*"
+        "text": "Está muy tenso. No te muevas un momento."
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -230,15 +230,15 @@
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se apoya en mi hombro.* ...No te muevas. Solo un momento.\n\n*Ella fue quien se recargó diciendo que le dolía el cuello — pero el nervioso soy yo.*"
+        "text": "*En voz baja* ...No te muevas. Solo un momento."
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Me echo un poco hacia atrás.*\n\nQué haces de repente."
+        "text": "*Me echo un poco hacia atrás.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Retirando las manos* ...No es nada.\n\n*Su expresión se congela por medio segundo. — Y luego sonríe de inmediato. Perfectamente.*"
+        "text": "*Retirando las manos* ...No es nada."
     },
     "after2_seo_9": {
         "name": "{name}",
@@ -282,11 +282,11 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*No hubo mensaje de Yuna. Pero mis pies se dirigen hacia la biblioteca. Por qué? — No estoy seguro. Tal vez por la nota de la mañana.*\n\n*El pasillo del anexo. Ni un alma. — La puerta de la sala de lectura secreta está entreabierta.*"
+        "text": "*No hubo mensaje de Yuna. Pero mis pies se dirigen hacia la biblioteca. Por qué? — No estoy seguro. Tal vez por la nota de la mañana.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*Entro silenciosamente. Yuna está en el sofá, leyendo. El atardecer entra por la ventana.*\n\n*Yuna levanta la mirada. No se sorprende.*"
+        "text": "*Entro silenciosamente. Yuna está en el sofá, leyendo. El atardecer entra por la ventana.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
@@ -314,7 +314,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Una puerta abierta por casualidad. — La 'casualidad' de Yuna es sinónimo de 'a propósito'.*\n\n*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
+        "text": "*Una puerta abierta por casualidad. — La 'casualidad' de Yuna es sinónimo de 'a propósito'.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -630,7 +630,7 @@
     },
     "after2_seo_sunset_joke_ins": {
         "name": "Seoyeon",
-        "text": "...Eres la primera persona que dice algo tan cursi con tanta naturalidad."
+        "text": "...Eres la primera persona que dice algo tan absurdo con tanta naturalidad."
     },
     "after2_seo_sunset_react_ins": {
         "name": "Seoyeon",

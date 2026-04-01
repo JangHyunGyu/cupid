@@ -113,7 +113,7 @@
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*Elle sourit. Elle a vraiment l'air de s'amuser. Une présidente du conseil avec cette énergie dès le premier jour.*"
+        "text": "*Une présidente du conseil avec cette intensité dès le premier jour. — Pas mal.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -137,7 +137,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Le bâtiment des troisièmes années est ici, la bibliothèque est là-bas. La cafétéria est au sous-sol."
+        "text": "Le bâtiment des troisièmes années est ici, la bibliothèque est là-bas. Le kiosque est au sous-sol."
     },
     "hallway_4": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Carré court brun. En uniforme de volley-ball. Une voix débordante d'énergie. Elle est à moitié levée de son siège.*"
+        "text": "*Carré court brun. En uniforme de volley-ball. Une voix débordante d'énergie. Elle est à moitié levée de son siège. Même sa voisine qui la tire par la manche n'y peut rien.*"
     },
     "classroom_dain_3": {
         "name": "Professeure principale",
@@ -249,7 +249,7 @@
     },
     "classroom_minsu_2": {
         "name": "Minsu",
-        "text": "Eh, le nouveau. Bienvenue. — Et un conseil."
+        "text": "Eh, le nouveau. Bienvenue. — Et fais gaffe."
     },
     "classroom_minsu_3": {
         "name": "{name}",
@@ -309,11 +309,11 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Elle fait semblant de s'en ficher ou elle s'en fiche vraiment ? — Intéressant.*"
+        "text": "*Elle fait semblant de s'en ficher ou elle s'en fiche vraiment ? — Je pencherais pour la première option.*"
     },
     "hallway_6_ins": {
         "name": "Seoyeon",
-        "text": "*Un bref silence* ...Tu es perspicace."
+        "text": "*Une brève hésitation* ...Tu es perspicace."
     },
     "hallway_6_ins2": {
         "name": "{name}",

@@ -29,7 +29,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Elle a envoyé ‘C’est offert’ dans un message séparé exprès. — C’est calculé, ou sincère ?*"
+        "text": "*Elle a envoyé « C’est offert » dans un message séparé exprès. — Ça me fait sourire.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -53,7 +53,7 @@
     },
     "night_msg_dain_3": {
         "name": "Dain",
-        "text": "*J’ai encore mal pour le prix du pain franchement mdrrr*"
+        "text": "*J’ai toujours pas digéré pour le pain sérieux mdrrr*"
     },
     "night_msg_dain_4": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Un message personnel dans une annonce de classe ? — Elle ne fait pas la différence entre pro et perso, ou elle le fait exprès ?*"
+        "text": "*Un message personnel dans une annonce de classe ? — Mes lèvres se relèvent malgré moi. J'essaie de le cacher mais je n'y arrive pas.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",

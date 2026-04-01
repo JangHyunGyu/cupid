@@ -45,7 +45,7 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Our house looks fine from the outside, right? Big house, nice car, student council president daughter. But Mom and Dad have been strangers under the same roof for a year. They just haven't filed the divorce papers."
+        "text": "Our house looks fine from the outside, right? Big house, nice car, student council president daughter."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "{name}",
-        "text": "*Seoyeon stops talking. Her hands are clenched tight on her knees.*\n\n*-- Then slowly, very slowly, the expression she'd been perfectly maintaining crumbles. Seoyeon takes off her glasses with trembling hands.*\n\n*Tears flow from her eyes. Silently. -- I see Seoyeon's face without glasses for the first time.*"
+        "text": "*Seoyeon stops talking. Her hands are clenched tight on her knees.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",

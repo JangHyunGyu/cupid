@@ -37,11 +37,11 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hey!! What are you doing tomorrow?!"
+        "text": "Hey!! You're coming to the school store tomorrow, right?!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Keep your lunch hour free tomorrow"
+        "text": "I'll leave the rooftop open at lunch tomorrow"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
@@ -53,11 +53,11 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hey!! What are you doing tomorrow?!"
+        "text": "Hey!! You're coming to the school store tomorrow, right?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
-        "text": "Keep your lunch hour free tomorrow"
+        "text": "I'll leave the rooftop open at lunch tomorrow"
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
