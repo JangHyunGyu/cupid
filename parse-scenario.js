@@ -232,6 +232,12 @@ function parse() {
                 continue;
             }
 
+            // 캐릭터: 없음 (명시적으로 캐릭터 제거)
+            if (meta === '캐릭터: `없음`') {
+                currentScene.character = null;
+                continue;
+            }
+
             // 캐릭터 (단일)
             const charMatch = meta.match(/^캐릭터: `([^`]+)`$/);
             if (charMatch) {

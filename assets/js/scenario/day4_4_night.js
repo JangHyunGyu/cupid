@@ -10,12 +10,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
 Object.assign(SCENARIO[4], {
     "day4_night_start": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_shy2.png",
         "bgm": "night2.mp3",
         "night": true,
         "next": "day4_night_branch"
     },
     "day4_night_branch": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_shy2.png",
         "night": true,
         "branches": [
             { "condition": "day4_waited", "next": "day4_night_regret" },
@@ -29,6 +31,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_seo_1": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "bgm": "night2.mp3",
         "night": true,
         "affinityChar": "Seoyeon",
@@ -329,6 +332,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_seo_glimpse_1": {
         "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "night": true,
         "next": "wall_seo_glimpse_1_ins"
     },
@@ -352,6 +356,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_1": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "bgm": "night2.mp3",
         "night": true,
         "affinityChar": "Dain",
@@ -567,6 +572,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_cry_1": {
         "background": "assets/images/background/dain_depression_event1.png",
+        "character": null,
         "night": true,
         "next": "wall_dain_cry_2"
     },
@@ -708,6 +714,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_glimpse_1": {
         "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_shy.png",
         "night": true,
         "next": "wall_dain_glimpse_2"
     },
@@ -731,6 +738,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_1": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "bgm": "night2.mp3",
         "night": true,
         "affinityChar": "Yuna",
@@ -987,6 +995,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_glimpse_1": {
         "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "night": true,
         "next": "wall_yuna_glimpse_2"
     },
@@ -1010,16 +1019,19 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_regret": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "day4_night_regret_2"
     },
     "day4_night_regret_2": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "day4_night_regret_msg_branch"
     },
     "day4_night_regret_msg_branch": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "branches": [
             { "condition": "route_seoyeon", "next": "day4_night_regret_msg_seo" },
@@ -1048,11 +1060,13 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_regret_msg": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "day4_night_regret_reply"
     },
     "day4_night_regret_reply": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "day4_night_sleep"
     },
@@ -1070,6 +1084,7 @@ Object.assign(SCENARIO[4], {
     },
     "night_homeroom_msg_3": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "night": true,
         "next": "day4_night_sleep"
     },
@@ -1081,6 +1096,7 @@ Object.assign(SCENARIO[4], {
     },
     "night_nurse_msg_2": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night_nurse_msg_3"
     },
@@ -1098,20 +1114,25 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_reflect": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "day4_night_sleep"
     },
     "day4_night_sleep": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "day4_final"
     },
     "day4_final": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
         "night": true,
         "next": "morning5_start"
     },
     "wall_seo_7_ins": {
         "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "wall_seo_8"
     },
     "wall_seo_9_ins": {
@@ -1126,6 +1147,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_seo_9_ins3": {
         "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "wall_seo_10"
     },
     "wall_seo_11_ins": {
@@ -1180,6 +1202,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_seo_glimpse_1_ins": {
         "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "wall_seo_glimpse_2"
     },
     "wall_dain_2_ins": {
@@ -1209,6 +1232,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_12_ins2": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "wall_dain_13"
     },
     "wall_dain_13_ins": {
@@ -1233,6 +1257,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_dain_18_ins2": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "wall_dain_18_ins3"
     },
     "wall_dain_18_ins3": {
@@ -1327,6 +1352,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_14_ins7": {
         "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "wall_yuna_15"
     },
     "wall_yuna_16_ins": {
@@ -1361,7 +1387,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_glimpse_3_ins3": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "next": "wall_yuna_glimpse_3_ins4"
     },
     "wall_yuna_glimpse_3_ins4": {
@@ -1401,7 +1427,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_glimpse_3_ins11": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "next": "wall_yuna_glimpse_3_ins12"
     },
     "wall_yuna_glimpse_3_ins12": {
@@ -1461,7 +1487,7 @@ Object.assign(SCENARIO[4], {
     },
     "wall_yuna_glimpse_3_ins23": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "next": "wall_yuna_glimpse_4"
     }
 });

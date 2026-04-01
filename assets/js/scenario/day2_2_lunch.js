@@ -10,15 +10,18 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 Object.assign(SCENARIO[2], {
     "lunch2_start": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "bgm": "daily.mp3",
         "next": "lunch2_start_2"
     },
     "lunch2_start_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "lunch2_choice"
     },
     "lunch2_choice": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
         "choices": [
             { "next": "lunch2_yuna_1" },
             { "next": "lunch2_seo_1_check" },
@@ -27,6 +30,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_1_check": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "branches": [
             { "condition": "chose_seoyeon_lunch", "next": "lunch2_seo_1" },
             { "next": "lunch2_seo_1b" }
@@ -46,6 +50,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_1_check": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "branches": [
             { "condition": "chose_dain_lunch", "next": "lunch2_dain_1" },
             { "next": "lunch2_dain_1b" }
@@ -580,7 +585,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_seo_c1_2_ins": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_c1_3"
     },
     "lunch2_seo_c1_3_ins": {
@@ -605,6 +610,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end_ins3": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_pout.png",
         "next": "lunch2_dain_end_ins4"
     },
     "lunch2_dain_end_ins4": {
@@ -619,6 +625,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end_ins6": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_pout.png",
         "next": "lunch2_dain_end_ins7"
     },
     "lunch2_dain_end_ins7": {
@@ -633,7 +640,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end_ins9": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_pout.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins10"
     },
     "lunch2_dain_end_ins10": {
@@ -658,7 +665,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end_ins14": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_pout.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins15"
     },
     "lunch2_dain_end_ins15": {
@@ -688,7 +695,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end_ins20": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_pout.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins21"
     },
     "lunch2_dain_end_ins21": {
@@ -718,11 +725,12 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end_ins26": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_pout.png",
         "next": "lunch2_dain_end_ins27"
     },
     "lunch2_dain_end_ins27": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_pout.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins28"
     },
     "lunch2_dain_end_ins28": {

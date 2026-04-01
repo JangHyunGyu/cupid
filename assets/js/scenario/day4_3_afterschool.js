@@ -10,6 +10,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
 Object.assign(SCENARIO[4], {
     "confess_seo_1": {
         "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "bgm": "confession.mp3",
         "branches": [
             { "condition": "route_seoyeon", "next": "confess_seo_2" },
@@ -376,6 +377,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_yuna_yes_3_ins": {
         "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "confess_yuna_yes_4"
     },
     "confess_yuna_yes_6_ins": {
@@ -405,6 +407,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_yes_3_ins": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "confess_dain_yes_4"
     },
     "confess_dain_yes_8_ins": {
@@ -439,7 +442,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins4": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins5"
     },
     "confess_dain_no_4_ins5": {
@@ -449,6 +452,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins6": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins7"
     },
     "confess_dain_no_4_ins7": {
@@ -463,7 +467,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins9": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins10"
     },
     "confess_dain_no_4_ins10": {
@@ -473,6 +477,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins11": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins12"
     },
     "confess_dain_no_4_ins12": {
@@ -487,12 +492,12 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins14": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins15"
     },
     "confess_dain_no_4_ins15": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins16"
     },
     "confess_dain_no_4_ins16": {
@@ -502,11 +507,12 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins17": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins18"
     },
     "confess_dain_no_4_ins18": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins19"
     },
     "confess_dain_no_4_ins19": {
@@ -536,7 +542,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins24": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins25"
     },
     "confess_dain_no_4_ins25": {
@@ -551,6 +557,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins27": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins28"
     },
     "confess_dain_no_4_ins28": {
@@ -560,7 +567,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins29": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins30"
     },
     "confess_dain_no_4_ins30": {
@@ -570,11 +577,12 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins31": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins32"
     },
     "confess_dain_no_4_ins32": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins33"
     },
     "confess_dain_no_4_ins33": {
@@ -599,11 +607,12 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins37": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins38"
     },
     "confess_dain_no_4_ins38": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins39"
     },
     "confess_dain_no_4_ins39": {
@@ -618,11 +627,12 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_no_4_ins41": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins42"
     },
     "confess_dain_no_4_ins42": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "confess_dain_no_4_ins43"
     },
     "confess_dain_no_4_ins43": {

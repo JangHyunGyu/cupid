@@ -10,11 +10,13 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 Object.assign(SCENARIO[2], {
     "morning2_start": {
         "background": "assets/images/background/room_school.png",
+        "character": null,
         "bgm": "daily.mp3",
         "next": "morning2_start_2"
     },
     "morning2_start_2": {
         "background": "assets/images/background/room_school.png",
+        "character": null,
         "affinityBranches": [{"char":"Seoyeon","minAffinity":10,"next":"morning2_greet_seo_1"},{"char":"Dain","minAffinity":10,"next":"morning2_greet_dain_1"},{"char":"Yuna","minAffinity":10,"next":"morning2_greet_yuna_1"}],
         "next": "morning2_dain_1"
     },
@@ -30,10 +32,12 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_greet_seo_others": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_greet_seo_others_2"
     },
     "morning2_greet_seo_others_2": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_note_1"
     },
     "morning2_greet_dain_1": {
@@ -58,10 +62,12 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_greet_dain_others_yuna": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_greet_dain_others_2"
     },
     "morning2_greet_dain_others_2": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_note_1"
     },
     "morning2_greet_yuna_1": {
@@ -91,6 +97,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_greet_yuna_others_2": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_seo_2"
     },
     "morning2_dain_1": {
@@ -140,6 +147,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_seo_1": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "morning2_seo_2"
     },
     "morning2_seo_2": {
@@ -164,6 +172,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_minsu_1": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "next": "morning2_minsu_1_ins"
     },
     "morning2_minsu_1b": {
@@ -187,6 +196,7 @@ Object.assign(SCENARIO[2], {
         "next": "morning2_dain_claim_2"
     },
     "morning2_dain_claim_2": {
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/minsu_smirk.png",
         "next": "morning2_dain_claim_3"
     },
@@ -215,6 +225,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_break_transition": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "branches": [
             { "condition": "homeroom_day1", "next": "morning2_break_transition_ins" },
             { "next": "morning2_break_1" }
@@ -222,6 +233,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_break_1": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "morning2_seo_dust_1"
     },
     "morning2_seo_dust_1": {
@@ -256,10 +268,12 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_react_1": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_dain_react_2"
     },
     "morning2_dain_react_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_dain_react_3"
     },
     "morning2_dain_react_3": {
@@ -329,6 +343,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_end": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "lunch2_start"
     },
     "hidden_homeroom_d2_1": {
@@ -430,14 +445,17 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_minsu_1_ins": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "next": "morning2_minsu_1b"
     },
     "morning2_break_transition_ins": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "morning2_break_1"
     },
     "hidden_homeroom_d2_1_ins": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_1_ins2"
     },
     "hidden_homeroom_d2_1_ins2": {
@@ -472,6 +490,7 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_3_ins5": {
         "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_3_ins6"
     },
     "hidden_homeroom_d2_3_ins6": {
@@ -486,10 +505,12 @@ Object.assign(SCENARIO[2], {
     },
     "hidden_homeroom_d2_7_ins": {
         "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_8"
     },
     "hidden_homeroom_d2_8_ins": {
         "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_8_ins2"
     },
     "hidden_homeroom_d2_8_ins2": {

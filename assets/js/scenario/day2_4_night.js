@@ -10,12 +10,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 Object.assign(SCENARIO[2], {
     "night2_start": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "bgm": "night1.mp3",
         "night": true,
         "next": "night2_start_ins"
     },
     "night2_msg_1": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "night": true,
         "branches": [
             { "condition": "chose_dain_after2", "next": "night2_msg_dain_specific" },
@@ -113,11 +115,13 @@ Object.assign(SCENARIO[2], {
     },
     "night2_msg_7": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night2_choice"
     },
     "night2_choice": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "choices": [
             { "next": "night2_reply_dain_1" },
@@ -283,61 +287,73 @@ Object.assign(SCENARIO[2], {
     },
     "night2_end_1": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night2_end_1_ins"
     },
     "night2_flashback_1": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_flashback_2"
     },
     "night2_flashback_2": {
         "background": "assets/images/background/sojeong_flashback.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night2_flashback_3"
     },
     "night2_flashback_3": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night2_flashback_4"
     },
     "night2_flashback_4": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_flashback_5"
     },
     "night2_flashback_5": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_flashback_6"
     },
     "night2_flashback_6": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_flashback_6_ins"
     },
     "night2_flashback_7": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_flashback_8"
     },
     "night2_flashback_8": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_end_2"
     },
     "night2_end_2": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_end_2_ins"
     },
     "night2_end_3": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_end_3_ins"
     },
     "night2_end_4": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_end_4_ins"
     },
@@ -361,6 +377,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_hidden_check": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "branches": [
             { "condition": "homeroom_day2", "next": "night2_hidden_homeroom_1" },
@@ -391,6 +408,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_hidden_nurse_1": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night2_hidden_nurse_2"
     },
@@ -402,14 +420,17 @@ Object.assign(SCENARIO[2], {
     },
     "night2_start_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_msg_1"
     },
     "night2_reply_yuna_6_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "night2_reply_yuna_6_ins2"
     },
     "night2_reply_yuna_6_ins2": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "branches": [
             { "condition": "homeroom_day2", "next": "night2_reply_yuna_6_ins3" },
             { "next": "night2_reply_yuna_7" }
@@ -417,6 +438,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_yuna_6_ins3": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "night2_reply_yuna_6_ins4"
     },
     "night2_reply_yuna_6_ins4": {
@@ -436,34 +458,42 @@ Object.assign(SCENARIO[2], {
     },
     "night2_end_1_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "night2_flashback_1"
     },
     "night2_end_2_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_end_2_ins2"
     },
     "night2_end_2_ins2": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_end_3"
     },
     "night2_flashback_6_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_flashback_6_ins2"
     },
     "night2_flashback_6_ins2": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_flashback_7"
     },
     "night2_end_3_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_end_4"
     },
     "night2_end_4_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_end_4_ins2"
     },
     "night2_end_4_ins2": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "morning3_start"
     }
 });

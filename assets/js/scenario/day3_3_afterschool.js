@@ -10,11 +10,13 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
 Object.assign(SCENARIO[3], {
     "after3_start": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "bgm": "sunset1.mp3",
         "next": "after3_route_check"
     },
     "after3_route_check": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_sad.png",
         "branches": [
             { "condition": "day3_has_multiple_dates", "next": "after3_multi_choice" },
             { "condition": "accepted_dain_date", "next": "after3_auto_dain" },
@@ -25,21 +27,25 @@ Object.assign(SCENARIO[3], {
     },
     "after3_auto_dain": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "setFlags": ["route_dain"],
         "next": "after3_reject_for_dain_1"
     },
     "after3_auto_yuna": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "setFlags": ["route_yuna"],
         "next": "after3_reject_for_yuna_1"
     },
     "after3_auto_seo": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "setFlags": ["route_seoyeon"],
         "next": "after3_reject_for_seo_1"
     },
     "after3_multi_choice": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "choices": [
             { "next": "after3_reject_for_seo_1", "setFlags": ["route_seoyeon"] },
             { "next": "after3_reject_for_yuna_1", "setFlags": ["route_yuna"] },
@@ -49,6 +55,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_choice": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "choices": [
             { "next": "after3_reject_for_seo_1", "setFlags": ["route_seoyeon"] },
             { "next": "after3_reject_for_yuna_1", "setFlags": ["route_yuna"] },
@@ -72,6 +79,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_reject_for_seo_4": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after3_seo_1"
     },
     "after3_reject_for_yuna_1": {
@@ -86,6 +94,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_reject_for_yuna_walk_gym": {
         "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_reject_for_yuna_3"
     },
     "after3_reject_for_yuna_3": {
@@ -105,6 +114,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_reject_for_yuna_4": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "after3_yuna_1"
     },
     "after3_reject_for_dain_1": {
@@ -119,6 +129,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_reject_for_dain_2b": {
         "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_reject_for_dain_3"
     },
     "after3_reject_for_dain_3": {
@@ -128,10 +139,12 @@ Object.assign(SCENARIO[3], {
     },
     "after3_reject_for_dain_3b": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after3_reject_for_dain_4"
     },
     "after3_reject_for_dain_4": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after3_dain_1"
     },
     "after3_seo_1": {
@@ -343,6 +356,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_dain_3": {
         "background": "assets/images/background/dain_hurt_event1.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after3_dain_4"
     },
     "after3_dain_4": {
@@ -479,6 +493,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_confront_admit_6": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_confront_end"
     },
     "after3_confront_excuse": {
@@ -508,14 +523,17 @@ Object.assign(SCENARIO[3], {
     },
     "after3_confront_end": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_final"
     },
     "after3_final": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "haeun_check"
     },
     "haeun_check": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "branches": [
             { "condition": "seoyeon_day3_event", "next": "haeun_warn_1" },
             { "next": "minsu_d3_check" }
@@ -523,6 +541,7 @@ Object.assign(SCENARIO[3], {
     },
     "haeun_warn_1": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "haeun_warn_1_ins"
     },
     "haeun_warn_2": {
@@ -577,14 +596,17 @@ Object.assign(SCENARIO[3], {
     },
     "haeun_warn_8": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_worried.png",
         "next": "haeun_warn_8b"
     },
     "haeun_warn_8b": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_worried.png",
         "next": "minsu_d3_check"
     },
     "minsu_d3_check": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/haeun_worried.png",
         "branches": [
             { "condition": "day3_has_multiple_dates", "next": "minsu_d3_1" },
             { "next": "night3_start" }
@@ -592,6 +614,7 @@ Object.assign(SCENARIO[3], {
     },
     "minsu_d3_1": {
         "background": "assets/images/background/school.png",
+        "character": null,
         "next": "minsu_d3_2"
     },
     "minsu_d3_2": {
@@ -694,6 +717,7 @@ Object.assign(SCENARIO[3], {
     },
     "after3_seo_choice1_react_ins5": {
         "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_cry.png",
         "next": "after3_seo_choice1_react_ins6"
     },
     "after3_seo_choice1_react_ins6": {
@@ -814,10 +838,12 @@ Object.assign(SCENARIO[3], {
     },
     "haeun_warn_1_ins": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "haeun_warn_2"
     },
     "haeun_warn_2_ins": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "haeun_warn_2b"
     },
     "haeun_warn_3_ins": {
@@ -857,6 +883,7 @@ Object.assign(SCENARIO[3], {
     },
     "minsu_d3_8_ins": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_d3_9"
     },
     "minsu_d3_3_ins": {
@@ -866,6 +893,7 @@ Object.assign(SCENARIO[3], {
     },
     "minsu_d3_4_ins": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_d3_4_ins2"
     },
     "minsu_d3_4_ins2": {
@@ -875,6 +903,7 @@ Object.assign(SCENARIO[3], {
     },
     "minsu_d3_5_ins": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "minsu_d3_5b"
     },
     "minsu_d3_6b_ins": {

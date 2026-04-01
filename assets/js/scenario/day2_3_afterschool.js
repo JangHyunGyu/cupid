@@ -10,6 +10,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
 Object.assign(SCENARIO[2], {
     "after2_start": {
         "background": "assets/images/background/room_school.png",
+        "character": null,
         "bgm": "sunset1.mp3",
         "next": "after2_msg_dain"
     },
@@ -33,10 +34,12 @@ Object.assign(SCENARIO[2], {
     },
     "after2_nurse_transition": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "hidden_nurse_d2_1"
     },
     "after2_choice": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "bgm": "sunset1.mp3",
         "choices": [
             { "next": "after2_dain_1" },
@@ -203,6 +206,7 @@ Object.assign(SCENARIO[2], {
     },
     "after2_dain_return": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/dain_shy.png",
         "next": "minsu_warn_1"
     },
     "after2_seo_1": {
@@ -329,6 +333,7 @@ Object.assign(SCENARIO[2], {
     },
     "after2_seo_neck_high_2_ins": {
         "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "after2_seo_9"
     },
     "after2_seo_neck_low": {
@@ -409,6 +414,7 @@ Object.assign(SCENARIO[2], {
     },
     "after2_seo_return": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "minsu_warn_1"
     },
     "after2_yuna_1": {
@@ -509,6 +515,7 @@ Object.assign(SCENARIO[2], {
     },
     "after2_yuna_everyday_react_ins": {
         "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after2_yuna_end"
     },
     "after2_yuna_quiet": {
@@ -546,10 +553,12 @@ Object.assign(SCENARIO[2], {
     },
     "after2_yuna_return": {
         "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/yuna_smile.png",
         "next": "minsu_warn_1"
     },
     "minsu_warn_1": {
         "background": "assets/images/background/school.png",
+        "character": null,
         "bgm": "sunset1.mp3",
         "next": "minsu_warn_1_ins"
     },
@@ -837,6 +846,7 @@ Object.assign(SCENARIO[2], {
     },
     "after2_seo_neck_low_ins": {
         "background": "assets/images/background/teacher_office.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "after2_seo_neck_low_ins2"
     },
     "after2_seo_neck_low_ins2": {

@@ -10,11 +10,13 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
 Object.assign(SCENARIO[3], {
     "lunch3_start": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "bgm": "daily.mp3",
         "next": "lunch3_start_2"
     },
     "lunch3_start_2": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch3_start_2_ins"
     },
     "lunch3_meal_1": {
@@ -290,6 +292,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_harem_1": {
         "background": "assets/images/background/room_school.png",
+        "character": null,
         "setFlags": ["ending_harem"],
         "next": "lunch3_end"
     },
@@ -351,10 +354,12 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_12": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch3_expose_13"
     },
     "lunch3_expose_13": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch3_expose_14"
     },
     "lunch3_expose_14": {
@@ -364,6 +369,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_15": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "lunch3_expose_choice"
     },
     "lunch3_expose_choice": {
@@ -445,6 +451,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_end": {
         "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "after3_start"
     },
     "lunch3_start_2_ins": {
@@ -504,7 +511,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_expose_excuse_2_ins": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_angry.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "lunch3_expose_excuse_3"
     },
     "lunch3_expose_run_2_ins": {

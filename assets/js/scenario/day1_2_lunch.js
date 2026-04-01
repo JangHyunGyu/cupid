@@ -10,19 +10,23 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
 Object.assign(SCENARIO[1], {
     "lunch_start": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "bgm": "daily.mp3",
         "next": "lunch_start_2"
     },
     "lunch_start_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_start_3"
     },
     "lunch_start_3": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_start_4"
     },
     "lunch_start_4": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_start_4_ins"
     },
     "lunch_start_5": {
@@ -32,18 +36,22 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_start_6": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_start_7"
     },
     "lunch_start_7": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_start_7b"
     },
     "lunch_start_7b": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_choice"
     },
     "lunch_choice": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "choices": [
             { "next": "lunch_seo_1", "setFlags": ["chose_seoyeon_lunch","ate_lunch_seoyeon"] },
             { "next": "lunch_dain_1", "setFlags": ["chose_dain_lunch"] },
@@ -593,6 +601,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_end": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_start"
     },
     "lunch_seo_freetalk": {
@@ -615,6 +624,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_start_4_ins": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "lunch_start_5"
     },
     "lunch_seo_6_ins": {
@@ -639,6 +649,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_yuna_5_ins": {
         "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch_yuna_7"
     },
     "lunch_yuna_10_ins": {

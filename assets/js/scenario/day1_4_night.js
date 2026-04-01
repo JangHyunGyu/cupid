@@ -10,17 +10,20 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
 Object.assign(SCENARIO[1], {
     "night_start": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "bgm": "night1.mp3",
         "night": true,
         "next": "night_start_2"
     },
     "night_start_2": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night_start_3"
     },
     "night_start_3": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "branches": [
             { "condition": "chose_seoyeon_lunch", "next": "night_msg_seo_1" },
@@ -55,6 +58,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_seo_5": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_hidden_check"
     },
@@ -72,6 +76,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_yuna_3": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "next": "night_hidden_check"
     },
@@ -95,21 +100,25 @@ Object.assign(SCENARIO[1], {
     },
     "night_msg_dain_4": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/dain_normal.png",
         "night": true,
         "next": "night_hidden_check"
     },
     "night_late_transition": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night_late_transition_2"
     },
     "night_late_transition_2": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night_late_branch"
     },
     "night_late_branch": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "affinityBranches": [{"char":"Seoyeon","minAffinity":10,"next":"night_seo_late_1"},{"char":"Dain","minAffinity":10,"next":"night_dain_late_1"},{"char":"Yuna","minAffinity":10,"next":"night_yuna_late_1"}],
         "next": "night_end_1"
@@ -182,21 +191,25 @@ Object.assign(SCENARIO[1], {
     },
     "night_end_1": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night_end_2"
     },
     "night_end_2": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "night": true,
         "next": "night_end_3"
     },
     "night_end_3": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "night_end_4"
     },
     "night_end_4": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "morning2_start"
     },
@@ -216,6 +229,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_hidden_check": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "branches": [
             { "condition": "homeroom_day1", "next": "night_hidden_homeroom_1" },
@@ -240,6 +254,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_hidden_nurse_1": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
         "night": true,
         "next": "night_hidden_nurse_2"
     },
@@ -258,6 +273,7 @@ Object.assign(SCENARIO[1], {
     },
     "night_dain_late_4_ins": {
         "background": "assets/images/background/room_my.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "night_dain_freetalk"
     }
 });

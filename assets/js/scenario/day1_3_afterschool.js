@@ -10,35 +10,43 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
 Object.assign(SCENARIO[1], {
     "after_start": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "bgm": "daily.mp3",
         "next": "after_start_2"
     },
     "after_start_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_kakao_1"
     },
     "after_kakao_1": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_kakao_2"
     },
     "after_kakao_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_kakao_3"
     },
     "after_kakao_3": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_kakao_4"
     },
     "after_kakao_4": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_kakao_5"
     },
     "after_kakao_5": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_kakao_end"
     },
     "after_kakao_end": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "branches": [
             { "condition": "chose_seoyeon_lunch", "next": "after1_jealousy_seo_1" },
             { "condition": "chose_dain_lunch", "next": "after1_jealousy_dain_1" },
@@ -91,10 +99,12 @@ Object.assign(SCENARIO[1], {
     },
     "after1_jealousy_seo_yuna": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after1_jealousy_seo_yuna_2"
     },
     "after1_jealousy_seo_yuna_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after1_pre_miss"
     },
     "after1_jealousy_dain_1": {
@@ -119,6 +129,7 @@ Object.assign(SCENARIO[1], {
     },
     "after1_pre_miss": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/dain_normal.png",
         "branches": [
             { "condition": "met_dain", "next": "after_dain_skip" },
             { "next": "after_miss_dain_1" }
@@ -262,6 +273,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_end": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "choices": [
             { "next": "after_hidden_homeroom_1", "setFlags": ["homeroom_day1_choice"] },
             { "next": "after_hidden_nurse_intro", "setFlags": ["nurse_day1_choice"] },
@@ -383,14 +395,17 @@ Object.assign(SCENARIO[1], {
     },
     "after_hidden_nurse_intro": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_hidden_nurse_intro_ins"
     },
     "after_hidden_nurse_intro_2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_hidden_nurse_choice"
     },
     "after_hidden_nurse_choice": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "choices": [
             { "next": "after_nurse_enter_1", "stats": {"Nurse":{"affinity":7}} },
             { "next": "after_nurse_skip", "stats": {"Nurse":{"affinity":0}} }
@@ -398,6 +413,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_skip": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "night_start"
     },
     "after_nurse_enter_1": {
@@ -492,6 +508,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_miss_yuna_1_ins": {
         "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after_miss_yuna_1_ins2"
     },
     "after_miss_yuna_1_ins2": {
@@ -506,6 +523,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_hidden_homeroom_3_ins": {
         "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_homeroom_3_ins2"
     },
     "after_hidden_homeroom_3_ins2": {
@@ -555,10 +573,12 @@ Object.assign(SCENARIO[1], {
     },
     "after_hidden_nurse_intro_ins": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_hidden_nurse_intro_ins2"
     },
     "after_hidden_nurse_intro_ins2": {
         "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "after_hidden_nurse_intro_2"
     },
     "after_nurse_enter_2_ins": {
@@ -568,6 +588,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_4_ins": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_4_ins2"
     },
     "after_nurse_enter_4_ins2": {
@@ -587,6 +608,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_6_ins": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_7"
     },
     "after_nurse_enter_7_ins": {
@@ -601,10 +623,12 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_7_ins3": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_choice"
     },
     "after_nurse_enter_8_ins": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_8_ins2"
     },
     "after_nurse_enter_8_ins2": {
@@ -619,6 +643,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_9_ins": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_9_ins2"
     },
     "after_nurse_enter_9_ins2": {
@@ -628,6 +653,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_9_ins3": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_9_ins4"
     },
     "after_nurse_enter_9_ins4": {
@@ -647,10 +673,12 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_10_ins3": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_11"
     },
     "after_nurse_enter_11_ins": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_11_ins2"
     },
     "after_nurse_enter_11_ins2": {
@@ -709,6 +737,7 @@ Object.assign(SCENARIO[1], {
     },
     "after_nurse_enter_11_ins12": {
         "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_12"
     },
     "after_nurse_enter_12_ins": {
