@@ -8,11 +8,6 @@ if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[4]) SCENARIO[4] = {};
 
 Object.assign(SCENARIO[4], {
-
-    // ═══════════════════════════════════════════════════════════════
-    // 서연 데이트 — 공원 산책 (condition: route_seoyeon)
-    // ═══════════════════════════════════════════════════════════════
-
     "date_seo_1": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
@@ -29,31 +24,14 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
-            {
-                "affinityBranches": [
-                    { "minAffinity": 50, "next": "date_seo_pretty_high" },
-                    { "minAffinity": -100, "next": "date_seo_pretty_low" }
-                ],
-                "affinityChar": "Seoyeon"
-            },
-            {
-                "next": "date_seo_bright",
-                "stats": {
-                    "Seoyeon": {
-                        "affinity": 5
-                    }
-                }
-            }
+            { "affinityChar": "Seoyeon", "affinityBranches": [{"minAffinity":50,"next":"date_seo_pretty_high"},{"minAffinity":-100,"next":"date_seo_pretty_low"}] },
+            { "next": "date_seo_bright", "stats": {"Seoyeon":{"affinity":5}} }
         ]
     },
     "date_seo_pretty_high": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy.png",
-        "stats": {
-            "Seoyeon": {
-                "affinity": 10
-            }
-        },
+        "stats": {"Seoyeon":{"affinity":10}},
         "next": "date_seo_pretty_high_ins"
     },
     "date_seo_pretty_high_2": {
@@ -74,11 +52,7 @@ Object.assign(SCENARIO[4], {
     "date_seo_pretty_low": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy.png",
-        "stats": {
-            "Seoyeon": {
-                "affinity": 3
-            }
-        },
+        "stats": {"Seoyeon":{"affinity":3}},
         "next": "date_seo_walk"
     },
     "date_seo_bright": {
@@ -143,14 +117,8 @@ Object.assign(SCENARIO[4], {
     },
     "date_seo_end_b": {
         "background": "assets/images/background/street.png",
-        "character": null,
         "next": "pre_confess_minsu"
     },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 유나 데이트 — 서점과 이어폰 (condition: route_yuna)
-    // ═══════════════════════════════════════════════════════════════
-
     "date_yuna_1": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_normal.png",
@@ -167,31 +135,14 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_normal.png",
         "choices": [
-            {
-                "affinityBranches": [
-                    { "minAffinity": 50, "next": "date_yuna_pretty_high" },
-                    { "minAffinity": -100, "next": "date_yuna_pretty_low" }
-                ],
-                "affinityChar": "Yuna"
-            },
-            {
-                "next": "date_yuna_bright",
-                "stats": {
-                    "Yuna": {
-                        "affinity": 5
-                    }
-                }
-            }
+            { "affinityChar": "Yuna", "affinityBranches": [{"minAffinity":50,"next":"date_yuna_pretty_high"},{"minAffinity":-100,"next":"date_yuna_pretty_low"}] },
+            { "next": "date_yuna_bright", "stats": {"Yuna":{"affinity":5}} }
         ]
     },
     "date_yuna_pretty_high": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "stats": {
-            "Yuna": {
-                "affinity": 10
-            }
-        },
+        "stats": {"Yuna":{"affinity":10}},
         "next": "date_yuna_pretty_high_2"
     },
     "date_yuna_pretty_high_2": {
@@ -217,11 +168,7 @@ Object.assign(SCENARIO[4], {
     "date_yuna_pretty_low": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "stats": {
-            "Yuna": {
-                "affinity": 3
-            }
-        },
+        "stats": {"Yuna":{"affinity":3}},
         "next": "date_yuna_bookstore"
     },
     "date_yuna_bright": {
@@ -284,11 +231,6 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/yuna_smile.png",
         "next": "pre_confess_minsu"
     },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 다인 데이트 — 오락실 (condition: route_dain)
-    // ═══════════════════════════════════════════════════════════════
-
     "date_dain_1": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
@@ -315,31 +257,14 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "choices": [
-            {
-                "affinityBranches": [
-                    { "minAffinity": 50, "next": "date_dain_pretty_high" },
-                    { "minAffinity": -100, "next": "date_dain_pretty_low" }
-                ],
-                "affinityChar": "Dain"
-            },
-            {
-                "next": "date_dain_bright",
-                "stats": {
-                    "Dain": {
-                        "affinity": 5
-                    }
-                }
-            }
+            { "affinityChar": "Dain", "affinityBranches": [{"minAffinity":50,"next":"date_dain_pretty_high"},{"minAffinity":-100,"next":"date_dain_pretty_low"}] },
+            { "next": "date_dain_bright", "stats": {"Dain":{"affinity":5}} }
         ]
     },
     "date_dain_pretty_high": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "stats": {
-            "Dain": {
-                "affinity": 10
-            }
-        },
+        "stats": {"Dain":{"affinity":10}},
         "next": "date_dain_pretty_high_2"
     },
     "date_dain_pretty_high_2": {
@@ -360,11 +285,7 @@ Object.assign(SCENARIO[4], {
     "date_dain_pretty_low": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "stats": {
-            "Dain": {
-                "affinity": 3
-            }
-        },
+        "stats": {"Dain":{"affinity":3}},
         "next": "date_dain_to_arcade"
     },
     "date_dain_bright": {
@@ -442,47 +363,36 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_normal.png",
         "next": "pre_confess_minsu"
     },
-
-    // ═══════════════════════════════════════════════════════════════
-    // 민수 독려 + 소정이 콜백 (공통, 고백 직전)
-    // ═══════════════════════════════════════════════════════════════
     "pre_confess_minsu": {
-        "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/street.png",
-        "sunset": true,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "pre_confess_minsu_2"
     },
     "pre_confess_minsu_2": {
-        "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/street.png",
-        "sunset": true,
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "pre_confess_callback"
     },
     "pre_confess_callback": {
-        "character": null,
         "background": "assets/images/background/street.png",
-        "sunset": true,
         "next": "confess_seo_1"
-    }
-,
+    },
     "date_seo_freetalk": {
-        "type": "free_talk",
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_end"
-    }
-,
-    "date_yuna_freetalk": {
         "type": "free_talk",
+        "next": "date_seo_end"
+    },
+    "date_yuna_freetalk": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_end"
-    }
-,
-    "date_dain_freetalk": {
         "type": "free_talk",
+        "next": "date_yuna_end"
+    },
+    "date_dain_freetalk": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
+        "type": "free_talk",
         "next": "date_dain_end"
     },
     "date_seo_pretty_high_ins": {
@@ -502,12 +412,10 @@ Object.assign(SCENARIO[4], {
     },
     "date_seo_succulent_2_ins": {
         "background": "assets/images/background/park.png",
-        "character": null,
         "next": "date_seo_succulent_3"
     },
     "date_yuna_pretty_high_5_ins": {
         "background": "assets/images/background/cafe.png",
-        "character": null,
         "next": "date_yuna_pretty_high_5_ins2"
     },
     "date_yuna_pretty_high_5_ins2": {
@@ -517,7 +425,6 @@ Object.assign(SCENARIO[4], {
     },
     "date_yuna_bookstore_2_ins": {
         "background": "assets/images/background/bookstore.png",
-        "character": null,
         "next": "date_yuna_bookstore_3"
     },
     "date_yuna_earphone_2_ins": {
@@ -542,7 +449,6 @@ Object.assign(SCENARIO[4], {
     },
     "date_dain_arcade_2_ins": {
         "background": "assets/images/background/arcade.png",
-        "character": null,
         "next": "date_dain_arcade_3"
     },
     "date_dain_arcade_3_ins": {
@@ -559,5 +465,5 @@ Object.assign(SCENARIO[4], {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_shop_3"
-    },
+    }
 });

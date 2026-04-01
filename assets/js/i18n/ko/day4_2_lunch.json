@@ -83,6 +83,10 @@
         "name": "{name}",
         "text": "*선물인 건지 시험인 건지. — 아마 둘 다.*"
     },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*공원을 나서 거리를 걸었다.*"
+    },
     "date_yuna_1": {
         "name": "{name}",
         "text": "*카페 앞. 유나가 벽에 기대어 서 있다. 검은 원피스에 작은 크로스백.*"
@@ -219,6 +223,10 @@
         "name": "다인",
         "text": "당연하지!! 오늘 컨디션 최상이거든!!"
     },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*오락실로 향했다.*"
+    },
     "date_dain_arcade": {
         "name": "{name}",
         "text": "*오락실로 간다. 리듬게임 앞에 선다.*"
@@ -251,6 +259,10 @@
         "name": "{name}",
         "text": "*스포츠용품점을 지나간다. 다인이 쇼윈도 앞에서 멈춘다. 배구화가 진열돼 있다.*"
     },
+    "date_dain_knee_2b": {
+        "name": "{name}",
+        "text": "*오락실을 나와 거리로 나왔다.*"
+    },
     "date_dain_shop": {
         "name": "다인",
         "text": "......"
@@ -266,6 +278,18 @@
     "date_dain_end": {
         "name": "{name}",
         "text": "*웃고 있다. — 근데 눈이 웃지 않는다.*"
+    },
+    "pre_confess_minsu": {
+        "name": "민수",
+        "text": "야, 데이트 중이지? 한마디만 할게"
+    },
+    "pre_confess_minsu_2": {
+        "name": "민수",
+        "text": "이번엔 제대로 해. 도망치지 말고"
+    },
+    "pre_confess_callback": {
+        "name": "{name}",
+        "text": "*주머니 안의 핸드폰이 무겁다. 아무 알림도 없는데. — 첫날, 화면에 뜬 이름을 보고 주머니에 넣었던 그때처럼 도망치면 안 된다. 이번에는.*"
     },
     "date_seo_freetalk": {
         "name": "서연",
@@ -284,30 +308,6 @@
         "text": "*다인이와 데이트 중이다. 다인이 평소보다 조심스럽다.*",
         "context": "4일차 데이트, 다인과 함께. 진지한 분위기가 섞여 있다. 톤: 진지해진 대화. 데이트의 설렘과 긴장. 농담보다 진심이 많아진다. 감정이 솔직해지는 순간들.",
         "personality": "다인은 에너지 넘치는 체육계. 데이트에서는 긴장해서 평소보다 볼륨이 줄어든다. 진심이 나올 때 느낌표가 사라진다."
-    },
-    "pre_confess_minsu": {
-        "name": "민수",
-        "text": "야, 데이트 중이지? 한마디만 할게"
-    },
-    "pre_confess_minsu_2": {
-        "name": "민수",
-        "text": "이번엔 제대로 해. 도망치지 말고"
-    },
-    "pre_confess_callback": {
-        "name": "{name}",
-        "text": "*주머니 안의 핸드폰이 무겁다. 아무 알림도 없는데. — 첫날, 화면에 뜬 이름을 보고 주머니에 넣었던 그때처럼 도망치면 안 된다. 이번에는.*"
-    },
-    "date_seo_end_b": {
-        "name": "{name}",
-        "text": "*공원을 나서 거리를 걸었다.*"
-    },
-    "date_dain_to_arcade": {
-        "name": "{name}",
-        "text": "*오락실로 향했다.*"
-    },
-    "date_dain_knee_2b": {
-        "name": "{name}",
-        "text": "*오락실을 나와 거리로 나왔다.*"
     },
     "date_seo_pretty_high_ins": {
         "name": "서연",

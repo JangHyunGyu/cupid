@@ -83,9 +83,17 @@
         "name": "다인",
         "text": "이게 마지막 토스야. — 근데 시작이기도 해."
     },
+    "perfect_dain_2b": {
+        "name": "{name}",
+        "text": "*느낌표가 없다. 처음으로. — 다인이 배구가 아닌 다른 시작을 말하고 있다.*"
+    },
     "perfect_dain_3": {
         "name": "다인",
         "text": "코트 밖에서도 나, 괜찮은 사람이야?"
+    },
+    "perfect_dain_3b": {
+        "name": "{name}",
+        "text": "*다인이 배구공을 코트에 내려놓는다. 돌아서서 웃는다. 느낌표 없는 웃음.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
@@ -106,6 +114,18 @@
     "perfect_epilogue_1_dain": {
         "name": "{name}",
         "text": "*모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "시스템",
+        "text": "*에필로그 — 1년 후*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "시스템",
+        "text": "*에필로그 — 1년 후*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "시스템",
+        "text": "*에필로그 — 1년 후*"
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
@@ -215,13 +235,25 @@
         "name": "{name}",
         "text": "*서연이 웃는다. 입꼬리가 제멋대로다.*"
     },
+    "true_seo_6b": {
+        "name": "서연",
+        "text": "항상 웃어야 했어. 근데 너 앞에선 그냥 나이고 싶어."
+    },
     "true_seo_7": {
         "name": "서연",
         "text": "약속해. — 계속 내 옆에."
     },
+    "true_seo_7b": {
+        "name": "{name}",
+        "text": "*서연이 새끼손가락을 내민다.*"
+    },
     "true_seo_8": {
         "name": "{name}",
         "text": "*새끼손가락을 걸었다. Day 1의 습관, Day 4의 약속, 그리고 지금. — 같은 손가락, 세 번째 의미.*"
+    },
+    "true_seo_bridge": {
+        "name": "{name}",
+        "text": "*서연의 약속이 아직 손끝에 남아 있다.*"
     },
     "true_yuna_1": {
         "name": "{name}",
@@ -247,9 +279,17 @@
         "name": "유나",
         "text": "...기억하고 있었어."
     },
+    "true_yuna_6b": {
+        "name": "유나",
+        "text": "가지 마. 오늘은 여기 있어."
+    },
     "true_yuna_7": {
         "name": "{name}",
         "text": "*Day 2의 수수께끼. 세 번째 별. — 유나가 처음부터 나를 보고 있었다는 증거.*"
+    },
+    "true_yuna_bridge": {
+        "name": "{name}",
+        "text": "*유나의 별이 아직 눈앞에 남아 있다.*"
     },
     "true_dain_1": {
         "name": "{name}",
@@ -258,6 +298,10 @@
     "true_dain_2": {
         "name": "{name}",
         "text": "*다인이 {name}의 손을 잡아 — 끌어당겨서 자기 왼쪽 가슴에 댄다. 아무 말 없이.*"
+    },
+    "true_dain_2b": {
+        "name": "{name}",
+        "text": "*빠르다. 말하지 않아도 전해지는 속도.*"
     },
     "true_dain_3": {
         "name": "{name}",
@@ -283,13 +327,9 @@
         "name": "다인",
         "text": "봤거든!! ...근데 계속 봐도 돼."
     },
-    "true_seo_bridge": {
+    "true_dain_8b": {
         "name": "{name}",
-        "text": "*서연의 약속이 아직 손끝에 남아 있다.*"
-    },
-    "true_yuna_bridge": {
-        "name": "{name}",
-        "text": "*유나의 별이 아직 눈앞에 남아 있다.*"
+        "text": "*느낌표가 돌아왔다. — 근데 이번에는, 진짜 감정의 느낌표다.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -355,6 +395,10 @@
         "name": "유나",
         "text": "...미련하긴. 근데 돌아온 사람은 용서해줘도 돼."
     },
+    "good_1_yuna_b": {
+        "name": "{name}",
+        "text": "*유나가 쪽지를 건넨다. 다음에는 헤매지 마. — 짧다. 그리고 따뜻하다.*"
+    },
     "good_1_dain": {
         "name": "다인",
         "text": "야, 나 진심으로 화났거든? ...근데 네가 결국 나한테 온 거잖아. 그거면 됐어."
@@ -406,6 +450,42 @@
     "good_5_dain": {
         "name": "{name}",
         "text": "*학교 앞. 마지막 서브는 아직 안 넘어왔다. 경기는 끝나지 않았다.*"
+    },
+    "good_epilogue_1": {
+        "name": "{name}",
+        "text": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*"
+    },
+    "good_epilogue_2": {
+        "name": "{name}",
+        "text": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*"
+    },
+    "good_epilogue_3": {
+        "name": "{name}",
+        "text": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*"
     },
     "good_5_cg_seo": {
         "name": "시스템",
@@ -490,6 +570,18 @@
     "day5_ending_confess_fail": {
         "name": "{name}",
         "text": "*용기를 냈다. 말했다. — 근데 돌아온 건 고개 숙인 침묵이었다.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "{name}",
+        "text": ""
     },
     "confess_fail_1": {
         "name": "{name}",
@@ -587,17 +679,6 @@
         "name": "시스템",
         "text": "─── ALONE END ───"
     },
-    "day5_credits": {
-        "name": "",
-        "text": ""
-    },
-    "day5_ending_restart": {
-        "name": "시스템",
-        "text": "",
-        "choices": [
-            "처음부터 다시 시작하기"
-        ]
-    },
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
@@ -672,41 +753,21 @@
         "text": "─── 담임선생님 PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
-    "hidden_true_homeroom_1": {
+    "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
-        "text": "*졸업식 날. — 시간이 흘렀다. 교복은 더 이상 뻣뻣하지 않다.*"
+        "text": "*그날 카페에서 나가지 않았다. 해가 질 때까지. — 4년 전 교실에서 못 꺼낸 말들을 전부 꺼냈다.*"
     },
-    "hidden_true_homeroom_2": {
+    "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*빈 교실. 원고를 쓰던 그 교실. — 담임선생님이 기다리고 있다. 사복 차림이다.*"
+        "text": "*목요일의 카페는 우리 카페가 됐다. 직원이 더 이상 '커플석이에요?' 안 물어본다. 그냥 자리로 안내한다.*"
     },
-    "hidden_true_homeroom_3": {
-        "name": "담임선생님",
-        "text": "졸업 축하해."
-    },
-    "hidden_true_homeroom_4": {
-        "name": "담임선생님",
-        "text": "...그 말. '선생님'이라고 안 했네. 처음으로."
-    },
-    "hidden_true_homeroom_5": {
-        "name": "담임선생님",
-        "text": "원고 완성했어. — 네가 첫 번째 독자라서 쓸 수 있었어. '한 줄이라도'라고 했는데 세 장을 써왔잖아. *피식* 문예창작과 출신 교사가 학생한테 감상문 받고 울 뻔한 건 비밀이야."
-    },
-    "hidden_true_homeroom_6": {
-        "name": "담임선생님",
-        "text": "...한 마디만. ...커피 마시러 가자. 이번엔 주스 말고 커피."
-    },
-    "hidden_true_homeroom_7": {
+    "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
-        "text": "좋아요."
+        "text": "*원고가 출판됐다. 헌정사에 이름은 없다. 대신 한 줄. '교탁 서랍의 감상문 세 장 — 그걸로 시작된 이야기.'*"
     },
-    "hidden_true_homeroom_8": {
-        "name": "담임선생님",
-        "text": "...선생님이 이러면 안 되는데."
-    },
-    "hidden_true_homeroom_ending_title": {
-        "name": "",
-        "text": "─── 담임선생님 TRUE LOVE END ───"
+    "hidden_perfect_homeroom_ep4": {
+        "name": "{name}",
+        "text": "*가끔 '선생님이었는데' 하면 '학생이었는데' 하고 받는다. 둘 다 웃는다. — 지금은 그냥 두 사람이니까.*"
     },
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
@@ -744,6 +805,78 @@
     "hidden_perfect_nurse_ending_title": {
         "name": "",
         "text": "─── 보건선생님 PERFECT END ───"
+    },
+    "hidden_perfect_nurse_ep1": {
+        "name": "{name}",
+        "text": "*아침. 식탁에 밴드가 붙어 있다. 오늘의 메뉴가 적혀 있다. — 이 사람의 포스트잇이다.*"
+    },
+    "hidden_perfect_nurse_ep2": {
+        "name": "{name}",
+        "text": "*대학병원에 복직했다. 이번에는 환자들이 이름을 불러준다. — 이주원 선생님.*"
+    },
+    "hidden_perfect_nurse_ep3": {
+        "name": "{name}",
+        "text": "*로즈마리 화분이 창가로 옮겨졌다. 해가 잘 드는 쪽. — 흰 가운 대신 앞치마를 두른 사람이 물을 주고 있다.*"
+    },
+    "hidden_perfect_nurse_ep4": {
+        "name": "{name}",
+        "text": "*밴드는 아직 서랍에 있다. 쓸 일이 없어도. — 핑계가 필요 없어진 사람은, 그래도 습관을 버리지 못한다.*"
+    },
+    "hidden_true_homeroom_1": {
+        "name": "{name}",
+        "text": "*졸업식 날. — 시간이 흘렀다. 교복은 더 이상 뻣뻣하지 않다.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "{name}",
+        "text": "*빈 교실. 원고를 쓰던 그 교실. — 담임선생님이 기다리고 있다. 사복 차림이다.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "담임선생님",
+        "text": "졸업 축하해."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "담임선생님",
+        "text": "...그 말. '선생님'이라고 안 했네. 처음으로."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "담임선생님",
+        "text": "원고 완성했어. — 네가 첫 번째 독자라서 쓸 수 있었어. '한 줄이라도'라고 했는데 세 장을 써왔잖아. *피식* 문예창작과 출신 교사가 학생한테 감상문 받고 울 뻔한 건 비밀이야."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "담임선생님",
+        "text": "...한 마디만. ...커피 마시러 가자. 이번엔 주스 말고 커피."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "{name}",
+        "text": "좋아요."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "담임선생님",
+        "text": "...선생님이 이러면 안 되는데."
+    },
+    "hidden_true_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 담임선생님 TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "담임선생님",
+        "text": "*학교 앞에서 기다리고 있었다.* 졸업 축하해."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "{name}",
+        "text": "*악수를 하는데 — 손에 종이가 끼워져 있다. 접힌 쪽지.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "{name}",
+        "text": "*학교를 나서며. '원고 완성하면 연락할게. — 첫 번째 독자에게.' 전화번호가 적혀 있다.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "{name}",
+        "text": "*선생님의 손이 — 3초쯤 더 길게 잡혀 있었다. 악수치고는 길고, 고백치고는 짧은.*"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 담임선생님 GOOD END ───"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -785,26 +918,6 @@
         "name": "",
         "text": "─── 보건선생님 TRUE LOVE END ───"
     },
-    "hidden_good_homeroom_1": {
-        "name": "담임선생님",
-        "text": "*학교 앞에서 기다리고 있었다.* 졸업 축하해."
-    },
-    "hidden_good_homeroom_2": {
-        "name": "{name}",
-        "text": "*악수를 하는데 — 손에 종이가 끼워져 있다. 접힌 쪽지.*"
-    },
-    "hidden_good_homeroom_3": {
-        "name": "{name}",
-        "text": "*학교를 나서며. '원고 완성하면 연락할게. — 첫 번째 독자에게.' 전화번호가 적혀 있다.*"
-    },
-    "hidden_good_homeroom_4": {
-        "name": "{name}",
-        "text": "*선생님의 손이 — 3초쯤 더 길게 잡혀 있었다. 악수치고는 길고, 고백치고는 짧은.*"
-    },
-    "hidden_good_homeroom_ending_title": {
-        "name": "",
-        "text": "─── 담임선생님 GOOD END ───"
-    },
     "hidden_good_nurse_1": {
         "name": "보건선생님",
         "text": "아, 졸업생."
@@ -825,129 +938,16 @@
         "name": "",
         "text": "─── 보건선생님 GOOD END ───"
     },
-    "perfect_dain_2b": {
-        "name": "{name}",
-        "text": "*느낌표가 없다. 처음으로. — 다인이 배구가 아닌 다른 시작을 말하고 있다.*"
-    },
-    "perfect_dain_3b": {
-        "name": "{name}",
-        "text": "*다인이 배구공을 코트에 내려놓는다. 돌아서서 웃는다. 느낌표 없는 웃음.*"
-    },
-    "true_seo_6b": {
-        "name": "서연",
-        "text": "항상 웃어야 했어. 근데 너 앞에선 그냥 나이고 싶어."
-    },
-    "true_seo_7b": {
-        "name": "{name}",
-        "text": "*서연이 새끼손가락을 내민다.*"
-    },
-    "true_yuna_6b": {
-        "name": "유나",
-        "text": "가지 마. 오늘은 여기 있어."
-    },
-    "true_dain_2b": {
-        "name": "{name}",
-        "text": "*빠르다. 말하지 않아도 전해지는 속도.*"
-    },
-    "true_dain_8b": {
-        "name": "{name}",
-        "text": "*느낌표가 돌아왔다. — 근데 이번에는, 진짜 감정의 느낌표다.*"
-    },
-    "good_1_yuna_b": {
-        "name": "{name}",
-        "text": "*유나가 쪽지를 건넨다. 다음에는 헤매지 마. — 짧다. 그리고 따뜻하다.*"
-    },
-    "good_epilogue_1": {
-        "name": "{name}",
-        "text": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*"
-    },
-    "good_epilogue_2": {
-        "name": "{name}",
-        "text": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*"
-    },
-    "good_epilogue_3": {
-        "name": "{name}",
-        "text": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*"
-    },
-    "good_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*"
-    },
-    "good_epilogue_2_yuna": {
-        "name": "{name}",
-        "text": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*"
-    },
-    "good_epilogue_3_yuna": {
-        "name": "{name}",
-        "text": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*"
-    },
-    "good_epilogue_1_dain": {
-        "name": "{name}",
-        "text": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*"
-    },
-    "good_epilogue_2_dain": {
-        "name": "{name}",
-        "text": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*"
-    },
-    "good_epilogue_3_dain": {
-        "name": "{name}",
-        "text": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*"
-    },
-    "confess_fail_cg_seo": {
-        "name": "{name}",
+    "day5_credits": {
+        "name": "",
         "text": ""
     },
-    "confess_fail_cg_yuna": {
-        "name": "{name}",
-        "text": ""
-    },
-    "confess_fail_cg_dain": {
-        "name": "{name}",
-        "text": ""
-    },
-    "perfect_epilogue_bridge_seo": {
+    "day5_ending_restart": {
         "name": "시스템",
-        "text": "*에필로그 — 1년 후*"
-    },
-    "perfect_epilogue_bridge_yuna": {
-        "name": "시스템",
-        "text": "*에필로그 — 1년 후*"
-    },
-    "perfect_epilogue_bridge_dain": {
-        "name": "시스템",
-        "text": "*에필로그 — 1년 후*"
-    },
-    "hidden_perfect_homeroom_ep1": {
-        "name": "{name}",
-        "text": "*그날 카페에서 나가지 않았다. 해가 질 때까지. — 4년 전 교실에서 못 꺼낸 말들을 전부 꺼냈다.*"
-    },
-    "hidden_perfect_homeroom_ep2": {
-        "name": "{name}",
-        "text": "*목요일의 카페는 우리 카페가 됐다. 직원이 더 이상 '커플석이에요?' 안 물어본다. 그냥 자리로 안내한다.*"
-    },
-    "hidden_perfect_homeroom_ep3": {
-        "name": "{name}",
-        "text": "*원고가 출판됐다. 헌정사에 이름은 없다. 대신 한 줄. '교탁 서랍의 감상문 세 장 — 그걸로 시작된 이야기.'*"
-    },
-    "hidden_perfect_homeroom_ep4": {
-        "name": "{name}",
-        "text": "*가끔 '선생님이었는데' 하면 '학생이었는데' 하고 받는다. 둘 다 웃는다. — 지금은 그냥 두 사람이니까.*"
-    },
-    "hidden_perfect_nurse_ep1": {
-        "name": "{name}",
-        "text": "*아침. 식탁에 밴드가 붙어 있다. 오늘의 메뉴가 적혀 있다. — 이 사람의 포스트잇이다.*"
-    },
-    "hidden_perfect_nurse_ep2": {
-        "name": "{name}",
-        "text": "*대학병원에 복직했다. 이번에는 환자들이 이름을 불러준다. — 이주원 선생님.*"
-    },
-    "hidden_perfect_nurse_ep3": {
-        "name": "{name}",
-        "text": "*로즈마리 화분이 창가로 옮겨졌다. 해가 잘 드는 쪽. — 흰 가운 대신 앞치마를 두른 사람이 물을 주고 있다.*"
-    },
-    "hidden_perfect_nurse_ep4": {
-        "name": "{name}",
-        "text": "*밴드는 아직 서랍에 있다. 쓸 일이 없어도. — 핑계가 필요 없어진 사람은, 그래도 습관을 버리지 못한다.*"
+        "text": "",
+        "choices": [
+            "처음부터 다시 시작하기"
+        ]
     },
     "perfect_seo_1_ins": {
         "name": "{name}",

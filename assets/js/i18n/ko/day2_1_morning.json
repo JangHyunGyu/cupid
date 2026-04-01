@@ -7,6 +7,70 @@
         "name": "{name}",
         "text": "*교실 문을 여는 순간 — 등짝에 충격.*"
     },
+    "morning2_greet_seo_1": {
+        "name": "서연",
+        "text": "어제 옥상에서 한 말, 아직 유효한 거지?"
+    },
+    "morning2_greet_seo_2": {
+        "name": "{name}",
+        "text": "*서연이 먼저 다가왔다. 평소의 여유로운 톤인데, 어딘가 확인하려는 느낌.*"
+    },
+    "morning2_greet_seo_others": {
+        "name": "{name}",
+        "text": "*다인이 교실 뒤쪽에서 흘깃 본다. 고개를 돌린다. 유나는 책에 더 파묻힌다. 페이지를 넘기는 속도가 빨라진다.*"
+    },
+    "morning2_greet_seo_others_2": {
+        "name": "{name}",
+        "text": "*두 사람의 미세한 반응. — 눈치를 채야 하나, 못 본 척해야 하나.*"
+    },
+    "morning2_greet_dain_1": {
+        "name": "다인",
+        "text": "야! 어제 재밌었다, 오늘도 같이 뭐 하자!"
+    },
+    "morning2_greet_dain_2": {
+        "name": "{name}",
+        "text": "*다인이 뒤에서 어깨를 탁 친다. 이 사람의 스킨십에는 주저함이 없다.*"
+    },
+    "morning2_greet_dain_others": {
+        "name": "{name}",
+        "text": "*서연이 클립보드를 넘기며 지나간다.*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "서연",
+        "text": "에너지 좋다."
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*빈정인지 감탄인지 알 수 없다. 유나는 무반응. 하지만 쪽지를 쓰던 손이 멈춰 있다.*"
+    },
+    "morning2_greet_dain_others_2": {
+        "name": "{name}",
+        "text": "*가볍게 웃으며 넘겼지만 — 서연의 한마디가 살짝 걸린다.*"
+    },
+    "morning2_greet_yuna_1": {
+        "name": "{name}",
+        "text": "*자리에 앉으려는데 — 책상 위에 접힌 쪽지. '...어제, 고마웠어.'*"
+    },
+    "morning2_greet_yuna_2": {
+        "name": "{name}",
+        "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다. — 뒷면에 작게 '점심에 도서관 별관으로.'*"
+    },
+    "morning2_greet_yuna_others": {
+        "name": "서연",
+        "text": "아침부터 편지야?"
+    },
+    "morning2_greet_yuna_others_seo": {
+        "name": "{name}",
+        "text": "*웃고 있다. 하지만 시선이 쪽지 위에 0.5초 머문다.*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "다인",
+        "text": "뭐야 그거! 나도 보여줘!"
+    },
+    "morning2_greet_yuna_others_2": {
+        "name": "{name}",
+        "text": "*쪽지를 주머니에 넣었다. 두 사람의 반응이 미묘하게 다르다.*"
+    },
     "morning2_dain_1": {
         "name": "다인",
         "text": "왔어?! 좋은 아침!!"
@@ -278,70 +342,6 @@
     "hidden_homeroom_d2_12": {
         "name": "{name}",
         "text": "*교무실을 나서는데 — 서랍에서 봤던 종이뭉치가 자꾸 신경 쓰인다.*"
-    },
-    "morning2_greet_seo_1": {
-        "name": "서연",
-        "text": "어제 옥상에서 한 말, 아직 유효한 거지?"
-    },
-    "morning2_greet_seo_2": {
-        "name": "{name}",
-        "text": "*서연이 먼저 다가왔다. 평소의 여유로운 톤인데, 어딘가 확인하려는 느낌.*"
-    },
-    "morning2_greet_seo_others": {
-        "name": "{name}",
-        "text": "*다인이 교실 뒤쪽에서 흘깃 본다. 고개를 돌린다. 유나는 책에 더 파묻힌다. 페이지를 넘기는 속도가 빨라진다.*"
-    },
-    "morning2_greet_seo_others_2": {
-        "name": "{name}",
-        "text": "*두 사람의 미세한 반응. — 눈치를 채야 하나, 못 본 척해야 하나.*"
-    },
-    "morning2_greet_dain_1": {
-        "name": "다인",
-        "text": "야! 어제 재밌었다, 오늘도 같이 뭐 하자!"
-    },
-    "morning2_greet_dain_2": {
-        "name": "{name}",
-        "text": "*다인이 뒤에서 어깨를 탁 친다. 이 사람의 스킨십에는 주저함이 없다.*"
-    },
-    "morning2_greet_dain_others": {
-        "name": "{name}",
-        "text": "*서연이 클립보드를 넘기며 지나간다.*"
-    },
-    "morning2_greet_dain_others_seo": {
-        "name": "서연",
-        "text": "에너지 좋다."
-    },
-    "morning2_greet_dain_others_yuna": {
-        "name": "{name}",
-        "text": "*빈정인지 감탄인지 알 수 없다. 유나는 무반응. 하지만 쪽지를 쓰던 손이 멈춰 있다.*"
-    },
-    "morning2_greet_dain_others_2": {
-        "name": "{name}",
-        "text": "*가볍게 웃으며 넘겼지만 — 서연의 한마디가 살짝 걸린다.*"
-    },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*자리에 앉으려는데 — 책상 위에 접힌 쪽지. '...어제, 고마웠어.'*"
-    },
-    "morning2_greet_yuna_2": {
-        "name": "{name}",
-        "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다. — 뒷면에 작게 '점심에 도서관 별관으로.'*"
-    },
-    "morning2_greet_yuna_others": {
-        "name": "서연",
-        "text": "아침부터 편지야?"
-    },
-    "morning2_greet_yuna_others_seo": {
-        "name": "{name}",
-        "text": "*웃고 있다. 하지만 시선이 쪽지 위에 0.5초 머문다.*"
-    },
-    "morning2_greet_yuna_others_dain": {
-        "name": "다인",
-        "text": "뭐야 그거! 나도 보여줘!"
-    },
-    "morning2_greet_yuna_others_2": {
-        "name": "{name}",
-        "text": "*쪽지를 주머니에 넣었다. 두 사람의 반응이 미묘하게 다르다.*"
     },
     "morning2_minsu_1_ins": {
         "name": "{name}",

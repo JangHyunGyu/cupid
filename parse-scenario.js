@@ -26,6 +26,15 @@ function parse() {
     const md = fs.readFileSync(INPUT, 'utf-8');
     const lines = md.split('\n');
 
+    // 마커 사이만 파싱 (게임 설정 부분 스킵)
+    const MARKER_START = '<!-- SCENARIO-AUTO-START -->';
+    const MARKER_END = '<!-- SCENARIO-AUTO-END -->';
+    const startIdx = lines.findIndex(l => l.trim() === MARKER_START);
+    const endIdx = lines.findIndex(l => l.trim() === MARKER_END);
+    const parseLines = (startIdx !== -1 && endIdx !== -1)
+        ? lines.slice(startIdx + 1, endIdx)
+        : lines; // 마커 없으면 전체 파싱 (하위호환)
+
     const files = {}; // baseName → { scenes: Map<id, sceneObj>, i18n: Map<id, i18nObj> }
     let currentBase = null;
     let currentSceneId = null;
@@ -37,8 +46,8 @@ function parse() {
     let inChoiceAffinityBranch = false;
     let lastChoiceIdx = -1;
 
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
+    for (let i = 0; i < parseLines.length; i++) {
+        const line = parseLines[i];
         const trimmed = line.trim();
 
         // ── 파일 섹션 헤더 ──
@@ -331,7 +340,22 @@ function parse() {
             }
         }
 
+        // ── 완전 빈 i18n 마커 ──
+        if (trimmed === '<!-- i18n -->') {
+            if (!currentI18n.__empty) currentI18n.__empty = true;
+            continue;
+        }
+
         // ── 대사 ──
+        // 빈 텍스트: **Name**: ‹빈›
+        const emptyTextMatch = trimmed.match(/^\*\*(.+?)\*\*: ‹빈›$/);
+        if (emptyTextMatch) {
+            const name = emptyTextMatch[1] === '—' ? '' : emptyTextMatch[1];
+            currentI18n.name = name;
+            currentI18n.text = '';
+            continue;
+        }
+
         const dialogueMatch = trimmed.match(/^\*\*(.+?)\*\*: (.+)$/);
         if (dialogueMatch) {
             currentI18n.name = dialogueMatch[1];
@@ -348,9 +372,14 @@ function parse() {
             const f = files[currentBase];
             if (f) {
                 f.scenes.set(currentSceneId, currentScene);
-                // i18n: name/text가 없으면 빈 엔트리도 저장 (routing 씬)
-                if (currentI18n.name || currentI18n.text || currentI18n.choices || currentI18n.context) {
-                    f.i18n.set(currentSceneId, currentI18n);
+                // i18n 엔트리 저장
+                if (currentI18n.__empty) {
+                    // 완전 빈 엔트리 ({})
+                    f.i18n.set(currentSceneId, {});
+                } else if (currentI18n.name !== undefined || currentI18n.text !== undefined || currentI18n.choices || currentI18n.context) {
+                    const cleaned = { ...currentI18n };
+                    delete cleaned.__empty;
+                    f.i18n.set(currentSceneId, cleaned);
                 }
             }
         }
@@ -457,9 +486,7 @@ function formatSceneJS(scene) {
         props.push(`"next": ${JSON.stringify(scene.next)}`);
     }
 
-    if (props.length <= 3) {
-        return `{ ${props.join(', ')} }`;
-    }
+    // 항상 여러 줄 포맷 (원본 스타일 유지)
     return `{\n        ${props.join(',\n        ')}\n    }`;
 }
 
