@@ -127,6 +127,10 @@
         "name": "Yuna",
         "text": "*Caminamos juntos.* ...Ya lo sabía."
     },
+    "after5_confess_react_yuna_call": {
+        "name": "{name}",
+        "text": "Yuna."
+    },
     "after5_confess_no": {
         "name": "{name}",
         "text": "*Mis labios no se mueven. Otra vez. — Otra vez no pude decirlo.*"

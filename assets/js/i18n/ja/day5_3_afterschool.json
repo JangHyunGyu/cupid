@@ -127,6 +127,10 @@
         "name": "ユナ",
         "text": "*並んで歩いた。* ...知ってた。"
     },
+    "after5_confess_react_yuna_call": {
+        "name": "{name}",
+        "text": "ユナ。"
+    },
     "after5_confess_no": {
         "name": "{name}",
         "text": "*唇が動かない。また。——また言えなかった。*"
