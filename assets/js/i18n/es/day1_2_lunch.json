@@ -200,6 +200,14 @@
         "name": "Dain",
         "text": "¡Oh! ¡Viniste! ¡Te vi en la presentación! ¡Comamos juntos!"
     },
+    "lunch_dain_1_aff_high": {
+        "name": "Dain",
+        "text": "¡Oh! ¡Viniste! ¡Te vi en la presentación! ¡Comamos juntos!"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "Oye, eres el de la transferencia, ¿no? ¿Ya comiste?"
+    },
     "lunch_dain_2": {
         "name": "Dain",
         "text": "¡Aquí estamos! ¡¿Qué quieres?! ¡Te recomiendo el pan de costra y la leche de fresa!"
@@ -335,6 +343,14 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Sigo a Yuna hasta la biblioteca. Casi nadie viene aquí durante el almuerzo.*"
+    },
+    "lunch_yuna_1_aff_high": {
+        "name": "{name}",
+        "text": "*Le entrega una nota.* \"...Lo que dijiste antes. Lo recordaba.\""
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "Yuna",
+        "text": "*\"...\" Está sentada sin ninguna nota.*"
     },
     "lunch_yuna_2": {
         "name": "{name}",

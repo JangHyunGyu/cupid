@@ -178,7 +178,7 @@ Object.assign(SCENARIO[4], {
                 "next": "date_yuna_bright",
                 "stats": {
                     "Yuna": {
-                        "affinity": 7
+                        "affinity": 5
                     }
                 }
             }
@@ -316,19 +316,19 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_normal.png",
         "choices": [
             {
-                "next": "date_dain_bright",
-                "stats": {
-                    "Dain": {
-                        "affinity": 7
-                    }
-                }
-            },
-            {
                 "affinityBranches": [
                     { "minAffinity": 50, "next": "date_dain_pretty_high" },
                     { "minAffinity": -100, "next": "date_dain_pretty_low" }
                 ],
                 "affinityChar": "Dain"
+            },
+            {
+                "next": "date_dain_bright",
+                "stats": {
+                    "Dain": {
+                        "affinity": 5
+                    }
+                }
             }
         ]
     },

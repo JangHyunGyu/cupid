@@ -87,6 +87,18 @@
         "name": "担任先生",
         "text": "*笑う。見たことのない笑顔だ。* ...十ページでもいいよ。"
     },
+    "hidden_homeroom_d5_choice_b_ins": {
+        "name": "{name}",
+        "text": "「書評書いてもいいですか？」"
+    },
+    "hidden_homeroom_d5_choice_b_ins2": {
+        "name": "担任先生",
+        "text": "*少し笑って、表情が真剣になる。* ...いい書評なら。もう一作書けそうな気がする。"
+    },
+    "hidden_homeroom_d5_choice_b_ins3": {
+        "name": "{name}",
+        "text": "*もう一作。——7年かけて完成させた人が「もう一作」と言っている。*"
+    },
     "hidden_homeroom_d5_6": {
         "name": "担任先生",
         "text": "「…感想文は受け付けない。——…やっぱり一行でも書いてくれ。」"
@@ -140,6 +152,10 @@
     "hidden_nurse_d5_choice_a": {
         "name": "保健先生",
         "text": "*手が震える。ゆっくり絆創膏を貼る。* ...最後って言われると手が動かない。"
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "name": "保健先生",
+        "text": "……一回だけって言ったくせに、なんでそんなこと言うの。"
     },
     "hidden_nurse_d5_choice_b": {
         "name": "保健先生",

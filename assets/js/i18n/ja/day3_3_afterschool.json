@@ -64,7 +64,11 @@
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "「何を？」"
+        "text": "「何を見たって。」"
+    },
+    "after3_seo_7_ins": {
+        "name": "ソヨン",
+        "text": "「完璧じゃない私。」"
     },
     "after3_seo_8": {
         "name": "ソヨン",
@@ -239,8 +243,32 @@
         "text": "「ありがとう。何も聞かないでくれて。」"
     },
     "after3_dain_choice2": {
+        "name": "ダイン",
+        "text": "「あ！大丈夫だってば！湿布とか要らないから！！」"
+    },
+    "after3_dain_choice2_ins": {
         "name": "{name}",
-        "text": "*静かなダイン。— この人の本当の温度を初めて感じる気がする。*"
+        "text": "*保健室から湿布を持ってきた。ダインに差し出した。*"
+    },
+    "after3_dain_choice2_ins2": {
+        "name": "ダイン",
+        "text": "「...あ、本当に持ってきたんだ。」"
+    },
+    "after3_dain_choice2_ins3": {
+        "name": "{name}",
+        "text": "「大丈夫なんでしょ。」"
+    },
+    "after3_dain_choice2_ins4": {
+        "name": "{name}",
+        "text": "*ダインが湿布を受け取って — じっと見つめる。唇を噛む。*"
+    },
+    "after3_dain_choice2_ins5": {
+        "name": "ダイン",
+        "text": "*力なく笑う。* 「...何。こんなので感動したらダメなのに。」"
+    },
+    "after3_dain_choice2_ins6": {
+        "name": "{name}",
+        "text": "*受け取った。— ダインが誰かの助けを拒まなかったのは初めてだ。感嘆符のない笑顔が不思議と重い。*"
     },
     "after3_dain_end": {
         "name": "{name}",
@@ -310,6 +338,10 @@
     "after3_confront_excuse_2": {
         "name": "ソヨン",
         "text": "「約束の数が問題じゃない。約束の重さが問題なの。」"
+    },
+    "after3_confront_lie_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが一瞬止まる。目が揺れている。*"
     },
     "after3_confront_lie": {
         "name": "ソヨン",

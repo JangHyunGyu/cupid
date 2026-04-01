@@ -665,7 +665,11 @@
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Profesora",
-        "text": "*Toma el ramo y lo mira fijamente. Le tiemblan las manos. — Sonríe.* ...Yo también.\n\n─── Profesora PERFECT END ───"
+        "text": "*Toma el ramo y lo mira fijamente. Le tiemblan las manos. — Sonríe.* ...Yo también."
+    },
+    "hidden_perfect_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Profesora PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
@@ -699,7 +703,11 @@
     },
     "hidden_perfect_nurse_5b": {
         "name": "{name}",
-        "text": "*Solo — alguien con quien quiero estar. Aquí.\n\n─── Enfermera PERFECT END ───*"
+        "text": "*Solo — alguien con quien quiero estar. Aquí.*"
+    },
+    "hidden_perfect_nurse_ending_title": {
+        "name": "",
+        "text": "─── Enfermera PERFECT END ───"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
@@ -731,7 +739,11 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Profesora",
-        "text": "...No debería hacer esto.\n\n─── Profesora TRUE LOVE END ───"
+        "text": "...No debería hacer esto."
+    },
+    "hidden_true_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Profesora TRUE LOVE END ───"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -744,6 +756,10 @@
     "hidden_true_nurse_3": {
         "name": "Enfermera",
         "text": "Felicidades. ...Desde hoy puedes tutearme."
+    },
+    "hidden_true_nurse_3_ins": {
+        "name": "{name}",
+        "text": "¿Por qué?"
     },
     "hidden_true_nurse_4": {
         "name": "Enfermera",
@@ -763,7 +779,11 @@
     },
     "hidden_true_nurse_8": {
         "name": "Enfermera",
-        "text": "Ahora podemos vernos sin vendas. — Sin excusas.\n\n─── Enfermera TRUE LOVE END ───"
+        "text": "Ahora podemos vernos sin vendas. — Sin excusas."
+    },
+    "hidden_true_nurse_ending_title": {
+        "name": "",
+        "text": "─── Enfermera TRUE LOVE END ───"
     },
     "hidden_good_homeroom_1": {
         "name": "Profesora",
@@ -779,7 +799,11 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Su mano se quedó tres segundos más. Largo para un apretón, corto para una confesión.\n\n─── Profesora GOOD END ───*"
+        "text": "*Su mano se quedó tres segundos más. Largo para un apretón, corto para una confesión.*"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Profesora GOOD END ───"
     },
     "hidden_good_nurse_1": {
         "name": "Enfermera",
@@ -795,7 +819,11 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Ese corazón — esta vez definitivamente no es interés médico.\n\n─── Enfermera GOOD END ───*"
+        "text": "*Ese corazón — esta vez definitivamente no es interés médico.*"
+    },
+    "hidden_good_nurse_ending_title": {
+        "name": "",
+        "text": "─── Enfermera GOOD END ───"
     },
     "perfect_dain_2b": {
         "name": "{name}",

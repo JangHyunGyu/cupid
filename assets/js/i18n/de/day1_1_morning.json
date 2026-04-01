@@ -151,10 +151,6 @@
         "name": "{name}",
         "text": "Hast du da oben ein Geheimversteck?"
     },
-    "hallway_7": {
-        "name": "Seoyeon",
-        "text": "*Kurzes Zögern* ...Du bist aufmerksam."
-    },
     "hallway_8": {
         "name": "{name}",
         "text": "*Plötzlich habe ich Mittagspläne. — Dabei hab ich nie zugesagt.*"
@@ -258,10 +254,6 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "Welcher?"
-    },
-    "classroom_minsu_4": {
-        "name": "Minsu",
-        "text": "Ausdauertraining."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",

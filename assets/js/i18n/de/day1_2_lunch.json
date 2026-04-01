@@ -200,6 +200,14 @@
         "name": "Dain",
         "text": "Oh! Du bist da! Hab dich bei der Vorstellung gesehen! Lass uns zusammen essen!"
     },
+    "lunch_dain_1_aff_high": {
+        "name": "Dain",
+        "text": "Oh! Du bist da! Hab dich bei der Vorstellung gesehen! Lass uns zusammen essen!"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "Hey, du bist der Neue, oder? Schon gegessen?"
+    },
     "lunch_dain_2": {
         "name": "Dain",
         "text": "Los geht’s! Was willst du?! Mein Tipp: Streuselbrot und Erdbeermilch!"
@@ -335,6 +343,14 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Ich folge Yuna in die Bibliothek. Fast niemand kommt während der Mittagspause hierher.*"
+    },
+    "lunch_yuna_1_aff_high": {
+        "name": "{name}",
+        "text": "*Sie reicht einen Zettel.* \"...Was du vorhin gesagt hast. Ich hab's mir gemerkt.\""
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "Yuna",
+        "text": "*\"...\" Sie sitzt da, ohne einen Zettel.*"
     },
     "lunch_yuna_2": {
         "name": "{name}",

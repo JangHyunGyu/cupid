@@ -64,7 +64,11 @@
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "See what?"
+        "text": "What did you show me?"
+    },
+    "after3_seo_7_ins": {
+        "name": "Seoyeon",
+        "text": "The imperfect me."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
@@ -239,8 +243,32 @@
         "text": "Thanks. For not asking anything."
     },
     "after3_dain_choice2": {
+        "name": "Dain",
+        "text": "Hey! I’m fine! I don’t need a bandage or anything!!"
+    },
+    "after3_dain_choice2_ins": {
         "name": "{name}",
-        "text": "*A quiet Dain. — I think I’m feeling her real temperature for the first time.*"
+        "text": "*Brought a bandage from the nurse’s office. Held it out to Dain.*"
+    },
+    "after3_dain_choice2_ins2": {
+        "name": "Dain",
+        "text": "...Oh, you actually brought one."
+    },
+    "after3_dain_choice2_ins3": {
+        "name": "{name}",
+        "text": "You said you were fine."
+    },
+    "after3_dain_choice2_ins4": {
+        "name": "{name}",
+        "text": "*Dain takes the bandage and stares at it for a long time. Bites her lip.*"
+    },
+    "after3_dain_choice2_ins5": {
+        "name": "Dain",
+        "text": "*Smiles weakly.* ...What. I shouldn’t be moved by something like this."
+    },
+    "after3_dain_choice2_ins6": {
+        "name": "{name}",
+        "text": "*She accepted it. — This is the first time Dain hasn’t refused someone’s help. The smile without exclamation marks feels strangely heavy.*"
     },
     "after3_dain_end": {
         "name": "{name}",
@@ -310,6 +338,10 @@
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
         "text": "It’s not about the number of promises. It’s about the weight of them."
+    },
+    "after3_confront_lie_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon pauses. Her eyes waver.*"
     },
     "after3_confront_lie": {
         "name": "Seoyeon",

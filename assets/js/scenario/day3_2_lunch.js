@@ -566,21 +566,26 @@ Object.assign(SCENARIO[3], {
     "lunch3_meal_10_ins2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "lunch3_meal_10_ins3"
+        "branches": [
+            { "condition": "route_seoyeon", "next": "lunch3_meal_10_ins3" },
+            { "condition": "route_dain", "next": "lunch3_meal_10_ins4" },
+            { "condition": "route_yuna", "next": "lunch3_meal_10_ins5" },
+            { "next": "lunch3_meal_11" }
+        ]
     },
     "lunch3_meal_10_ins3": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "lunch3_meal_10_ins4"
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "lunch3_meal_11"
     },
     "lunch3_meal_10_ins4": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "lunch3_meal_10_ins5"
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "lunch3_meal_11"
     },
     "lunch3_meal_10_ins5": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch3_meal_11"
     },
     "lunch3_expose_3_ins": {

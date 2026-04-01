@@ -151,10 +151,6 @@
         "name": "{name}",
         "text": "Tu as un repaire secret ou quoi ?"
     },
-    "hallway_7": {
-        "name": "Seoyeon",
-        "text": "*Un bref silence* ...Tu es perspicace."
-    },
     "hallway_8": {
         "name": "{name}",
         "text": "*Et voilà que j'ai un rendez-vous pour le déjeuner. — Je n'ai même pas dit oui.*"
@@ -258,10 +254,6 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "Lequel ?"
-    },
-    "classroom_minsu_4": {
-        "name": "Minsu",
-        "text": "Pense à ton endurance."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",

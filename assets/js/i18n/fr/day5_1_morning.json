@@ -87,6 +87,18 @@
         "name": "Professeure principale",
         "text": "*Elle sourit. Un sourire que je n'avais jamais vu.* ...Même dix pages."
     },
+    "hidden_homeroom_d5_choice_b_ins": {
+        "name": "{name}",
+        "text": "Je peux écrire une critique ?"
+    },
+    "hidden_homeroom_d5_choice_b_ins2": {
+        "name": "Professeure principale",
+        "text": "*Elle rit brièvement, puis son expression devient sérieuse.* ...Si c'est une bonne critique. Je crois que je pourrais en écrire un de plus."
+    },
+    "hidden_homeroom_d5_choice_b_ins3": {
+        "name": "{name}",
+        "text": "*Un de plus. — La personne qui a fini après sept ans dit 'un de plus'.*"
+    },
     "hidden_homeroom_d5_6": {
         "name": "Professeure principale",
         "text": "...Pas de compte-rendu. — ...En fait, écris-moi au moins une ligne."
@@ -140,6 +152,10 @@
     "hidden_nurse_d5_choice_a": {
         "name": "Infirmière",
         "text": "*Sa main tremble. Elle pose lentement le pansement.* ...Quand tu dis que c'est la dernière fois, mes mains ne suivent plus."
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "name": "Infirmière",
+        "text": "...Tu as dit « juste une fois », alors pourquoi tu dis ça ?"
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Infirmière",

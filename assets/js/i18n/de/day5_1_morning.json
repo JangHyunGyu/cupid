@@ -87,6 +87,18 @@
         "name": "Klassenlehrerin",
         "text": "*Sie lächelt. Ein Lächeln, das ich nie zuvor gesehen habe.* ...Auch zehn Seiten wären in Ordnung."
     },
+    "hidden_homeroom_d5_choice_b_ins": {
+        "name": "{name}",
+        "text": "Darf ich eine Rezension schreiben?"
+    },
+    "hidden_homeroom_d5_choice_b_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie lacht kurz, dann wird ihr Ausdruck ernst.* ...Wenn es eine gute Rezension ist. Ich glaube, ich könnte noch eins schreiben."
+    },
+    "hidden_homeroom_d5_choice_b_ins3": {
+        "name": "{name}",
+        "text": "*Noch eins. — Die Person, die nach sieben Jahren fertig wurde, sagt 'noch eins'.*"
+    },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
         "text": "...Keine Buchberichte. — ...Schreib mir wenigstens eine Zeile."
@@ -140,6 +152,10 @@
     "hidden_nurse_d5_choice_a": {
         "name": "Schulkrankenschwester",
         "text": "*Ihre Hand zittert. Sie klebt das Pflaster langsam auf.* ...Wenn du sagst, es ist das letzte Mal, gehorchen meine Hände nicht mehr."
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "name": "Schulkrankenschwester",
+        "text": "...Du hast 'nur einmal' gesagt. Warum sagst du dann so etwas?"
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Schulkrankenschwester",

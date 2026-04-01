@@ -212,11 +212,6 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "next": "hallway_6_ins"
     },
-    "hallway_7": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_shy.png",
-        "next": "hallway_8"
-    },
     "hallway_8": {
         "character": "assets/images/characters/seyoun_shy.png",
         "background": "assets/images/background/school_hallway.png",
@@ -341,17 +336,12 @@ Object.assign(SCENARIO[1], {
     "classroom_minsu_2": {
         "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/room_school.png",
-        "next": "classroom_minsu_2_ins"
+        "next": "classroom_minsu_3"
     },
     "classroom_minsu_3": {
         "character": "assets/images/characters/minsu_smirk.png",
         "background": "assets/images/background/room_school.png",
-        "next": "classroom_minsu_4"
-    },
-    "classroom_minsu_4": {
-        "character": "assets/images/characters/minsu_smirk.png",
-        "background": "assets/images/background/room_school.png",
-        "next": "classroom_dain_talk_1"
+        "next": "classroom_minsu_2_ins"
     },
     "classroom_dain_talk_1": {
         "character": null,
@@ -432,7 +422,7 @@ Object.assign(SCENARIO[1], {
     "hallway_6_ins2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "hallway_7"
+        "next": "hallway_8"
     },
     "hallway_13_ins": {
         "background": "assets/images/background/school_hallway.png",
@@ -483,7 +473,7 @@ Object.assign(SCENARIO[1], {
     "classroom_minsu_2_ins": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/minsu_normal.png",
-        "next": "classroom_minsu_3"
+        "next": "classroom_dain_talk_1"
     },
     "classroom_yuna_note_5_ins": {
         "background": "assets/images/background/room_school.png",

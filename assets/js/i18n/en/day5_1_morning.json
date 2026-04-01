@@ -87,6 +87,18 @@
         "name": "Homeroom Teacher",
         "text": "*She smiles. A smile I've never seen before.* ...Even ten pages would be fine."
     },
+    "hidden_homeroom_d5_choice_b_ins": {
+        "name": "{name}",
+        "text": "Can I write a review?"
+    },
+    "hidden_homeroom_d5_choice_b_ins2": {
+        "name": "Homeroom Teacher",
+        "text": "*She laughs briefly, then her expression turns serious.* ...If it's a good review. I think I could write one more."
+    },
+    "hidden_homeroom_d5_choice_b_ins3": {
+        "name": "{name}",
+        "text": "*One more. — The person who finished after seven years is saying 'one more.'*"
+    },
     "hidden_homeroom_d5_6": {
         "name": "Homeroom Teacher",
         "text": "...No book reports. — ...Actually, write me at least one line."
@@ -140,6 +152,10 @@
     "hidden_nurse_d5_choice_a": {
         "name": "School Nurse",
         "text": "*Her hand trembles. She slowly puts on the bandage.* ...When you say it's the last time, my hands won't cooperate."
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "name": "School Nurse",
+        "text": "...You said 'just once,' so why say something like that."
     },
     "hidden_nurse_d5_choice_b": {
         "name": "School Nurse",

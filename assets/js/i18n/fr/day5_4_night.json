@@ -665,7 +665,11 @@
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Professeure principale",
-        "text": "*Prend le bouquet et le fixe longuement. Ses mains tremblent. — Elle sourit.* ...Moi aussi.\n\n─── Professeure PERFECT END ───"
+        "text": "*Prend le bouquet et le fixe longuement. Ses mains tremblent. — Elle sourit.* ...Moi aussi."
+    },
+    "hidden_perfect_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Professeure PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
@@ -699,7 +703,11 @@
     },
     "hidden_perfect_nurse_5b": {
         "name": "{name}",
-        "text": "*Juste — quelqu'un avec qui j'ai envie d'être. Ici.\n\n─── Infirmière PERFECT END ───*"
+        "text": "*Juste — quelqu'un avec qui j'ai envie d'être. Ici.*"
+    },
+    "hidden_perfect_nurse_ending_title": {
+        "name": "",
+        "text": "─── Infirmière PERFECT END ───"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
@@ -731,7 +739,11 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Professeure principale",
-        "text": "...Je ne devrais pas faire ça.\n\n─── Professeure TRUE LOVE END ───"
+        "text": "...Je ne devrais pas faire ça."
+    },
+    "hidden_true_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Professeure TRUE LOVE END ───"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -744,6 +756,10 @@
     "hidden_true_nurse_3": {
         "name": "Infirmière",
         "text": "Félicitations. ...À partir d'aujourd'hui, tu peux me tutoyer."
+    },
+    "hidden_true_nurse_3_ins": {
+        "name": "{name}",
+        "text": "Pourquoi ?"
     },
     "hidden_true_nurse_4": {
         "name": "Infirmière",
@@ -763,7 +779,11 @@
     },
     "hidden_true_nurse_8": {
         "name": "Infirmière",
-        "text": "Maintenant on peut se voir sans pansements. — Sans excuses.\n\n─── Infirmière TRUE LOVE END ───"
+        "text": "Maintenant on peut se voir sans pansements. — Sans excuses."
+    },
+    "hidden_true_nurse_ending_title": {
+        "name": "",
+        "text": "─── Infirmière TRUE LOVE END ───"
     },
     "hidden_good_homeroom_1": {
         "name": "Professeure principale",
@@ -779,7 +799,11 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Sa main est restée trois secondes de plus. Trop long pour une poignée de main, trop court pour une déclaration.\n\n─── Professeure principale GOOD END ───*"
+        "text": "*Sa main est restée trois secondes de plus. Trop long pour une poignée de main, trop court pour une déclaration.*"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Professeure principale GOOD END ───"
     },
     "hidden_good_nurse_1": {
         "name": "Infirmière",
@@ -795,7 +819,11 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Ce cœur — cette fois, ce n'est clairement pas de l'intérêt médical.\n\n─── Infirmière GOOD END ───*"
+        "text": "*Ce cœur — cette fois, ce n'est clairement pas de l'intérêt médical.*"
+    },
+    "hidden_good_nurse_ending_title": {
+        "name": "",
+        "text": "─── Infirmière GOOD END ───"
     },
     "perfect_dain_2b": {
         "name": "{name}",

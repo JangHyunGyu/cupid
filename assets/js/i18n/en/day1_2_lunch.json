@@ -200,6 +200,14 @@
         "name": "Dain",
         "text": "Oh! You came! I saw you during introductions! Let's eat together!"
     },
+    "lunch_dain_1_aff_high": {
+        "name": "Dain",
+        "text": "Oh! You came! I saw you during introductions! Let's eat together!"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "Hey, you're the transfer student, right? Had lunch yet?"
+    },
     "lunch_dain_2": {
         "name": "Dain",
         "text": "Here we go! What do you want?! My pick is the crumble bread and strawberry milk!"
@@ -335,6 +343,14 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*I follow Yuna's back into the library. Almost no one comes here during lunch, it seems.*"
+    },
+    "lunch_yuna_1_aff_high": {
+        "name": "{name}",
+        "text": "*She hands over a note.* \"...What you said earlier. I remembered.\""
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "Yuna",
+        "text": "*\"...\" She sits there without a note.*"
     },
     "lunch_yuna_2": {
         "name": "{name}",

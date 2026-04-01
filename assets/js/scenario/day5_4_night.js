@@ -1292,6 +1292,11 @@ Object.assign(SCENARIO[5], {
     "hidden_perfect_homeroom_4g": {
         "background": "assets/images/background/ending_perfect_teacher.png",
         "character": null,
+        "next": "hidden_perfect_homeroom_ending_title"
+    },
+    "hidden_perfect_homeroom_ending_title": {
+        "background": "assets/images/background/ending_perfect_teacher.png",
+        "character": null,
         "next": "hidden_perfect_homeroom_5"
     },
     "hidden_perfect_homeroom_5": {
@@ -1381,6 +1386,11 @@ Object.assign(SCENARIO[5], {
     "hidden_perfect_nurse_5b": {
         "character": null,
         "night": true,
+        "next": "hidden_perfect_nurse_ending_title"
+    },
+    "hidden_perfect_nurse_ending_title": {
+        "background": "assets/images/background/ending_perfect_nurse.png",
+        "character": null,
         "next": "hidden_perfect_nurse_ep1"
     },
     "hidden_perfect_nurse_ep1": {
@@ -1455,6 +1465,11 @@ Object.assign(SCENARIO[5], {
     "hidden_true_homeroom_8": {
         "background": "assets/images/background/ending_true_teacher.png",
         "character": null,
+        "next": "hidden_true_homeroom_ending_title"
+    },
+    "hidden_true_homeroom_ending_title": {
+        "background": "assets/images/background/ending_true_teacher.png",
+        "character": null,
         "next": "day5_credits"
     },
 
@@ -1484,6 +1499,11 @@ Object.assign(SCENARIO[5], {
     "hidden_good_homeroom_4": {
         "background": "assets/images/background/ending_good_teacher.png",
         "character": null,
+        "next": "hidden_good_homeroom_ending_title"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "background": "assets/images/background/ending_good_teacher.png",
+        "character": null,
         "next": "day5_credits"
     },
 
@@ -1506,6 +1526,12 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_true_nurse_2_ins"
     },
     "hidden_true_nurse_3": {
+        "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "night": true,
+        "next": "hidden_true_nurse_3_ins"
+    },
+    "hidden_true_nurse_3_ins": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/nurse_normal.png",
         "night": true,
@@ -1538,6 +1564,11 @@ Object.assign(SCENARIO[5], {
     "hidden_true_nurse_8": {
         "background": "assets/images/background/ending_true_nurse.png",
         "character": null,
+        "next": "hidden_true_nurse_ending_title"
+    },
+    "hidden_true_nurse_ending_title": {
+        "background": "assets/images/background/ending_true_nurse.png",
+        "character": null,
         "next": "hidden_true_nurse_8_ins"
     },
 
@@ -1565,6 +1596,11 @@ Object.assign(SCENARIO[5], {
         "next": "hidden_good_nurse_3_ins"
     },
     "hidden_good_nurse_4": {
+        "background": "assets/images/background/ending_good_nurse.png",
+        "character": null,
+        "next": "hidden_good_nurse_ending_title"
+    },
+    "hidden_good_nurse_ending_title": {
         "background": "assets/images/background/ending_good_nurse.png",
         "character": null,
         "next": "day5_credits"

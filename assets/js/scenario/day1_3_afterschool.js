@@ -69,7 +69,6 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
-        "stats": { "Dain": { "affinity": -5 } },
         "next": "after1_jealousy_seo_2"
     },
     "after1_jealousy_seo_2": {
@@ -129,7 +128,6 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": null,
-        "stats": { "Yuna": { "affinity": -5 } },
         "next": "after1_jealousy_seo_yuna_2"
     },
     "after1_jealousy_seo_yuna_2": {
@@ -143,7 +141,6 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
-        "stats": { "Seoyeon": { "affinity": -5 } },
         "next": "after1_jealousy_dain_2"
     },
     "after1_jealousy_dain_2": {
@@ -157,7 +154,6 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
-        "stats": { "Dain": { "affinity": -5 } },
         "next": "after1_jealousy_yuna_2"
     },
     "after1_jealousy_yuna_2": {
@@ -498,6 +494,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_homeroom_freetalk"
     },
     "after_homeroom_freetalk": {
+        "type": "free_talk",
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
         "character": "assets/images/characters/teacher_normal.png",
@@ -643,6 +640,7 @@ Object.assign(SCENARIO[1], {
         "next": "after_nurse_enter_12_ins"
     },
     "after_nurse_freetalk": {
+        "type": "free_talk",
         "background": "assets/images/background/nurse_room.png",
         "sunset": true,
         "character": "assets/images/characters/nurse_normal.png",

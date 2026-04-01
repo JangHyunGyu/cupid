@@ -854,6 +854,7 @@ Object.assign(SCENARIO[2], {
 
     // =========================================================================
     // HIDDEN ROUTE - Day 2 보건선생님 체육 시간
+    // NOTE: SCENARIO.MD places this in lunch section, but code implements it in afterschool for gameplay flow reasons
     // =========================================================================
     "hidden_nurse_d2_1": {
         "background": "assets/images/background/nurse_room.png",

@@ -200,6 +200,14 @@
         "name": "Dain",
         "text": "Oh ! T’es là ! Je t’ai vu pendant les présentations ! On mange ensemble !"
     },
+    "lunch_dain_1_aff_high": {
+        "name": "Dain",
+        "text": "Oh ! T’es là ! Je t’ai vu pendant les présentations ! On mange ensemble !"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "Hé, t’es le nouveau, non ? T’as mangé ?"
+    },
     "lunch_dain_2": {
         "name": "Dain",
         "text": "Voilà ! Tu veux quoi ?! Je te recommande le pain croustillant et le lait fraise !"
@@ -335,6 +343,14 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Je suis Yuna jusqu’à la bibliothèque. Presque personne ne vient ici pendant le déjeuner.*"
+    },
+    "lunch_yuna_1_aff_high": {
+        "name": "{name}",
+        "text": "*Elle tend un mot.* \"...Ce que tu as dit tout à l’heure. Je m’en souviens.\""
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "Yuna",
+        "text": "*\"...\" Elle est assise sans mot.*"
     },
     "lunch_yuna_2": {
         "name": "{name}",

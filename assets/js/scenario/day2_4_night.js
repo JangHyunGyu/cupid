@@ -454,7 +454,10 @@ Object.assign(SCENARIO[2], {
     "night2_reply_yuna_6_ins2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_reply_yuna_6_ins3"
+        "branches": [
+            { "condition": "homeroom_day2", "next": "night2_reply_yuna_6_ins3" },
+            { "next": "night2_reply_yuna_7" }
+        ]
     },
     "night2_reply_yuna_6_ins3": {
         "background": "assets/images/background/room_my.png",
