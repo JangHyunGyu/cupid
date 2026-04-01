@@ -543,6 +543,7 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins2"
     },
+    // NOTE: SCENARIO.MD places these as morning pre-date events. Current placement is post-confession-postponement for implementation reasons.
     "confess_dain_no_4_ins2": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",

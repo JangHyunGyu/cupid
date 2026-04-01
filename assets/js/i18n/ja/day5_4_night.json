@@ -665,7 +665,11 @@
   },
   "hidden_perfect_homeroom_4g": {
     "name": "担任先生",
-    "text": "*花束を受け取って、じっと見つめる。手が震えている。——笑う。* ...私も。\n\n─── 担任先生 PERFECT END ───"
+    "text": "*花束を受け取って、じっと見つめる。手が震えている。——笑う。* ...私も。"
+  },
+  "hidden_perfect_homeroom_ending_title": {
+    "name": "",
+    "text": "─── 担任先生 PERFECT END ───"
   },
   "hidden_perfect_homeroom_5": {},
   "hidden_perfect_nurse_check": {},
@@ -699,7 +703,11 @@
   },
   "hidden_perfect_nurse_5b": {
     "name": "{name}",
-    "text": "*ただ——一緒にいたい人。ここに。\n\n─── 保健先生 PERFECT END ───*"
+    "text": "*ただ——一緒にいたい人。ここに。*"
+  },
+  "hidden_perfect_nurse_ending_title": {
+    "name": "",
+    "text": "─── 保健先生 PERFECT END ───"
   },
   "hidden_true_homeroom_1": {
     "name": "{name}",
@@ -731,7 +739,11 @@
   },
   "hidden_true_homeroom_8": {
     "name": "担任先生",
-    "text": "「…先生がこんなことしちゃいけないんだけど。\n\n─── 担任先生 TRUE LOVE END ───」"
+    "text": "「…先生がこんなことしちゃいけないんだけど。」"
+  },
+  "hidden_true_homeroom_ending_title": {
+    "name": "",
+    "text": "─── 担任先生 TRUE LOVE END ───"
   },
   "hidden_true_nurse_1": {
     "name": "{name}",
@@ -744,6 +756,10 @@
   "hidden_true_nurse_3": {
     "name": "保健先生",
     "text": "「卒業おめでとう。…今日から敬語はいらないよ。」"
+  },
+  "hidden_true_nurse_3_ins": {
+    "name": "{name}",
+    "text": "「なんで？」"
   },
   "hidden_true_nurse_4": {
     "name": "保健先生",
@@ -763,7 +779,11 @@
   },
   "hidden_true_nurse_8": {
     "name": "保健先生",
-    "text": "「もう絆創膏なしで会える。——口実なしで。\n\n─── 保健先生 TRUE LOVE END ───」"
+    "text": "「もう絆創膏なしで会える。——口実なしで。」"
+  },
+  "hidden_true_nurse_ending_title": {
+    "name": "",
+    "text": "─── 保健先生 TRUE LOVE END ───"
   },
   "hidden_good_homeroom_1": {
     "name": "担任先生",
@@ -779,7 +799,11 @@
   },
   "hidden_good_homeroom_4": {
     "name": "{name}",
-    "text": "*先生の手が—3秒ほど長く握られていた。握手にしては長く、告白にしては短い。\n\n─── 担任先生 GOOD END ───*"
+    "text": "*先生の手が—3秒ほど長く握られていた。握手にしては長く、告白にしては短い。*"
+  },
+  "hidden_good_homeroom_ending_title": {
+    "name": "",
+    "text": "─── 担任先生 GOOD END ───"
   },
   "hidden_good_nurse_1": {
     "name": "保健先生",
@@ -795,7 +819,11 @@
   },
   "hidden_good_nurse_4": {
     "name": "{name}",
-    "text": "*あのハート——今回は確実に医療的関心じゃない。\n\n─── 保健先生 GOOD END ───*"
+    "text": "*あのハート——今回は確実に医療的関心じゃない。*"
+  },
+  "hidden_good_nurse_ending_title": {
+    "name": "",
+    "text": "─── 保健先生 GOOD END ───"
   },
   "perfect_dain_2b": {
     "name": "{name}",

@@ -665,7 +665,11 @@
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Klassenlehrerin",
-        "text": "*Nimmt den Strauß und starrt ihn lange an. Ihre Hände zittern. — Sie lächelt.* ...Ich auch.\n\n─── Klassenlehrerin PERFECT END ───"
+        "text": "*Nimmt den Strauß und starrt ihn lange an. Ihre Hände zittern. — Sie lächelt.* ...Ich auch."
+    },
+    "hidden_perfect_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Klassenlehrerin PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
     "hidden_perfect_nurse_check": {},
@@ -699,7 +703,11 @@
     },
     "hidden_perfect_nurse_5b": {
         "name": "{name}",
-        "text": "*Einfach — jemand, bei dem ich sein will. Hier.\n\n─── Schulkrankenschwester PERFECT END ───*"
+        "text": "*Einfach — jemand, bei dem ich sein will. Hier.*"
+    },
+    "hidden_perfect_nurse_ending_title": {
+        "name": "",
+        "text": "─── Schulkrankenschwester PERFECT END ───"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
@@ -731,7 +739,11 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Klassenlehrerin",
-        "text": "...Ich sollte das nicht tun.\n\n─── Klassenlehrerin TRUE LOVE END ───"
+        "text": "...Ich sollte das nicht tun."
+    },
+    "hidden_true_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Klassenlehrerin TRUE LOVE END ───"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -744,6 +756,10 @@
     "hidden_true_nurse_3": {
         "name": "Schulkrankenschwester",
         "text": "Glückwunsch zum Abschluss. ...Ab heute kannst du mich duzen."
+    },
+    "hidden_true_nurse_3_ins": {
+        "name": "{name}",
+        "text": "Warum?"
     },
     "hidden_true_nurse_4": {
         "name": "Schulkrankenschwester",
@@ -763,7 +779,11 @@
     },
     "hidden_true_nurse_8": {
         "name": "Schulkrankenschwester",
-        "text": "Jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden.\n\n─── Schulkrankenschwester TRUE LOVE END ───"
+        "text": "Jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden."
+    },
+    "hidden_true_nurse_ending_title": {
+        "name": "",
+        "text": "─── Schulkrankenschwester TRUE LOVE END ───"
     },
     "hidden_good_homeroom_1": {
         "name": "Klassenlehrerin",
@@ -779,7 +799,11 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Ihre Hand hielt etwa drei Sekunden länger. Zu lang für einen Händedruck, zu kurz für ein Geständnis.\n\n─── Klassenlehrerin GOOD END ───*"
+        "text": "*Ihre Hand hielt etwa drei Sekunden länger. Zu lang für einen Händedruck, zu kurz für ein Geständnis.*"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Klassenlehrerin GOOD END ───"
     },
     "hidden_good_nurse_1": {
         "name": "Schulkrankenschwester",
@@ -795,7 +819,11 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.\n\n─── Schulkrankenschwester GOOD END ───*"
+        "text": "*Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.*"
+    },
+    "hidden_good_nurse_ending_title": {
+        "name": "",
+        "text": "─── Schulkrankenschwester GOOD END ───"
     },
     "perfect_dain_2b": {
         "name": "{name}",

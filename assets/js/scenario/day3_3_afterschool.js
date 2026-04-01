@@ -247,7 +247,7 @@ Object.assign(SCENARIO[3], {
         "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
-        "next": "after3_seo_8"
+        "next": "after3_seo_7_ins"
     },
     "after3_seo_8": {
         "background": "assets/images/background/teacher_office.png",
@@ -584,9 +584,8 @@ Object.assign(SCENARIO[3], {
     "after3_dain_choice2": {
         "background": "assets/images/background/gym.png",
         "sunset": true,
-        "character": "assets/images/characters/dain_normal.png",
-        "setFlags": ["dain_day3_event"],
-        "next": "after3_dain_end"
+        "character": "assets/images/characters/dain_sweat.png",
+        "next": "after3_dain_choice2_ins"
     },
     "after3_dain_end": {
         "background": "assets/images/background/gym.png",
@@ -663,12 +662,13 @@ Object.assign(SCENARIO[3], {
                 }
             },
             {
-                "next": "after3_confront_lie",
+                "next": "after3_confront_lie_ins",
                 "stats": {
                     "Seoyeon": {
                         "affinity": -3
                     }
-                }
+                },
+                "setFlags": ["conscience_minus"]
             }
         ]
     },
@@ -726,6 +726,12 @@ Object.assign(SCENARIO[3], {
     },
 
     // --- Lie ---
+    "after3_confront_lie_ins": {
+        "background": "assets/images/background/school_hallway.png",
+        "sunset": true,
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "after3_confront_lie"
+    },
     "after3_confront_lie": {
         "background": "assets/images/background/school_hallway.png",
         "sunset": true,
@@ -1009,10 +1015,53 @@ Object.assign(SCENARIO[3], {
         "character": "assets/images/characters/yuna_shy.png",
         "next": "after3_yuna_choice2_react"
     },
+    "after3_seo_7_ins": {
+        "background": "assets/images/background/teacher_office.png",
+        "sunset": true,
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "after3_seo_8"
+    },
     "after3_dain_5_ins": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "after3_dain_6"
+    },
+    "after3_dain_choice2_ins": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after3_dain_choice2_ins2"
+    },
+    "after3_dain_choice2_ins2": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after3_dain_choice2_ins3"
+    },
+    "after3_dain_choice2_ins3": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after3_dain_choice2_ins4"
+    },
+    "after3_dain_choice2_ins4": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_shy.png",
+        "next": "after3_dain_choice2_ins5"
+    },
+    "after3_dain_choice2_ins5": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_shy.png",
+        "next": "after3_dain_choice2_ins6"
+    },
+    "after3_dain_choice2_ins6": {
+        "background": "assets/images/background/gym.png",
+        "sunset": true,
+        "character": "assets/images/characters/dain_shy.png",
+        "setFlags": ["dain_day3_event"],
+        "next": "after3_dain_end"
     },
     "after3_confront_5_ins": {
         "background": "assets/images/background/school_hallway.png",

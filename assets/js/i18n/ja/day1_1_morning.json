@@ -151,10 +151,6 @@
         "name": "{name}",
         "text": "「秘密の隠れ家でもあるの？」"
     },
-    "hallway_7": {
-        "name": "ソヨン",
-        "text": "*一瞬、言葉が止まる* 「…鋭いね」"
-    },
     "hallway_8": {
         "name": "{name}",
         "text": "*いきなり昼の約束ができた。——断った覚えもないのに。*"
@@ -258,10 +254,6 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "「何を？」"
-    },
-    "classroom_minsu_4": {
-        "name": "ミンス",
-        "text": "「体力管理。」"
     },
     "classroom_dain_talk_1": {
         "name": "{name}",

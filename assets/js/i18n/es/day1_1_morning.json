@@ -151,10 +151,6 @@
         "name": "{name}",
         "text": "¿Tienes algún escondite secreto?"
     },
-    "hallway_7": {
-        "name": "Seoyeon",
-        "text": "*Una breve pausa* ...Eres perspicaz."
-    },
     "hallway_8": {
         "name": "{name}",
         "text": "*De repente tengo planes para comer. — Ni siquiera dije que sí.*"
@@ -258,10 +254,6 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "¿Sobre qué?"
-    },
-    "classroom_minsu_4": {
-        "name": "Minsu",
-        "text": "Tu resistencia física."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",

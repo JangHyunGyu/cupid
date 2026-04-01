@@ -235,7 +235,10 @@ Object.assign(SCENARIO[2], {
     "morning2_break_transition": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "morning2_break_transition_ins"
+        "branches": [
+            { "condition": "homeroom_day1", "next": "morning2_break_transition_ins" },
+            { "next": "morning2_break_1" }
+        ]
     },
     "morning2_break_1": {
         "character": null,

@@ -87,6 +87,18 @@
         "name": "Profesora",
         "text": "*Sonríe. Una sonrisa que nunca había visto.* ...Aunque sean diez páginas."
     },
+    "hidden_homeroom_d5_choice_b_ins": {
+        "name": "{name}",
+        "text": "¿Puedo escribir una reseña?"
+    },
+    "hidden_homeroom_d5_choice_b_ins2": {
+        "name": "Profesora",
+        "text": "*Ríe brevemente, luego su expresión se vuelve seria.* ...Si es una buena reseña. Creo que podría escribir una más."
+    },
+    "hidden_homeroom_d5_choice_b_ins3": {
+        "name": "{name}",
+        "text": "*Una más. — La persona que terminó después de siete años está diciendo 'una más'.*"
+    },
     "hidden_homeroom_d5_6": {
         "name": "Profesora",
         "text": "...No acepto reseñas. — ...Bueno, al menos una línea."
@@ -140,6 +152,10 @@
     "hidden_nurse_d5_choice_a": {
         "name": "Enfermera",
         "text": "*Le tiembla la mano. Pone la tirita despacio.* ...Cuando dices que es la última vez, las manos no me responden."
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "name": "Enfermera",
+        "text": "...Dijiste 'solo una vez', ¿por qué dices algo así?"
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Enfermera",

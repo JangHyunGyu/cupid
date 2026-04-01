@@ -151,10 +151,6 @@
         "name": "{name}",
         "text": "비밀 아지트라도 있어?"
     },
-    "hallway_7": {
-        "name": "서연",
-        "text": "*잠깐 멈칫* ...눈치 빠르네."
-    },
     "hallway_8": {
         "name": "{name}",
         "text": "*갑자기 점심 약속이 생겼다. — 거절한 적 없는데.*"
@@ -258,10 +254,6 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "뭘?"
-    },
-    "classroom_minsu_4": {
-        "name": "민수",
-        "text": "체력 관리."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",

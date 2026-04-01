@@ -64,7 +64,11 @@
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "Vu quoi ?"
+        "text": "Qu'est-ce que j'ai vu ?"
+    },
+    "after3_seo_7_ins": {
+        "name": "Seoyeon",
+        "text": "La moi imparfaite."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
@@ -239,8 +243,32 @@
         "text": "Merci. De ne rien avoir demandé."
     },
     "after3_dain_choice2": {
+        "name": "Dain",
+        "text": "Hé ! Je vais bien ! Pas besoin de pansement !!"
+    },
+    "after3_dain_choice2_ins": {
         "name": "{name}",
-        "text": "*Une Dain silencieuse. — Je crois que je ressens sa vraie température pour la première fois.*"
+        "text": "*J'ai rapporté un pansement de l'infirmerie. Je l'ai tendu à Dain.*"
+    },
+    "after3_dain_choice2_ins2": {
+        "name": "Dain",
+        "text": "...Oh, t'en as vraiment rapporté un."
+    },
+    "after3_dain_choice2_ins3": {
+        "name": "{name}",
+        "text": "Tu disais que ça allait."
+    },
+    "after3_dain_choice2_ins4": {
+        "name": "{name}",
+        "text": "*Dain prend le pansement et le fixe longuement. Elle se mord la lèvre.*"
+    },
+    "after3_dain_choice2_ins5": {
+        "name": "Dain",
+        "text": "*Sourire faible.* ...Quoi. Je devrais pas être touchée par un truc pareil."
+    },
+    "after3_dain_choice2_ins6": {
+        "name": "{name}",
+        "text": "*Elle l'a accepté. — C'est la première fois que Dain ne refuse pas l'aide de quelqu'un. Le sourire sans points d'exclamation est étrangement lourd.*"
     },
     "after3_dain_end": {
         "name": "{name}",
@@ -310,6 +338,10 @@
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
         "text": "Ce n’est pas le nombre de promesses. C’est leur poids."
+    },
+    "after3_confront_lie_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon s'arrête un instant. Ses yeux tremblent.*"
     },
     "after3_confront_lie": {
         "name": "Seoyeon",

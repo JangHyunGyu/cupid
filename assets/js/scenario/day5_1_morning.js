@@ -125,6 +125,21 @@ Object.assign(SCENARIO[5], {
     "hidden_homeroom_d5_choice_b": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_smile.png",
+        "next": "hidden_homeroom_d5_choice_b_ins"
+    },
+    "hidden_homeroom_d5_choice_b_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_smile.png",
+        "next": "hidden_homeroom_d5_choice_b_ins2"
+    },
+    "hidden_homeroom_d5_choice_b_ins2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_smile.png",
+        "next": "hidden_homeroom_d5_choice_b_ins3"
+    },
+    "hidden_homeroom_d5_choice_b_ins3": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "hidden_homeroom_d5_6"
     },
     "hidden_homeroom_d5_6": {
@@ -199,12 +214,17 @@ Object.assign(SCENARIO[5], {
     "hidden_nurse_d5_choice_a": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_shy.png",
+        "next": "hidden_nurse_d5_choice_a_ins"
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_6"
     },
     "hidden_nurse_d5_choice_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_choice_b_ins"
+        "next": "hidden_nurse_d5_choice_b_ins2"
     },
     "hidden_nurse_d5_6": {
         "background": "assets/images/background/school_hallway.png",
@@ -493,11 +513,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d5_4"
-    },
-    "hidden_nurse_d5_choice_b_ins": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_choice_b_ins2"
     },
     "hidden_nurse_d5_choice_b_ins2": {
         "background": "assets/images/background/school_hallway.png",

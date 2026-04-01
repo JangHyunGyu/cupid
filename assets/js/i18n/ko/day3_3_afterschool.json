@@ -124,7 +124,7 @@
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "뭘?"
+        "text": "뭘 봤다고."
     },
     "after3_seo_8": {
         "name": "서연",
@@ -303,8 +303,8 @@
         "text": "고마워. 아무것도 안 물어봐 줘서."
     },
     "after3_dain_choice2": {
-        "name": "{name}",
-        "text": "*조용한 다인. — 이 사람의 진짜 온도를 처음으로 느끼는 것 같다.*"
+        "name": "다인",
+        "text": "아! 괜찮다니까! 파스 같은 거 필요 없어!!"
     },
     "after3_dain_end": {
         "name": "{name}",
@@ -374,6 +374,10 @@
     "after3_confront_excuse_2": {
         "name": "서연",
         "text": "약속의 숫자가 문제가 아니야. 약속의 무게가 문제지."
+    },
+    "after3_confront_lie_ins": {
+        "name": "{name}",
+        "text": "*서연이 잠깐 멈춘다. 눈이 흔들린다.*"
     },
     "after3_confront_lie": {
         "name": "서연",
@@ -573,9 +577,37 @@
         "name": "{name}",
         "text": "*유나가 두 문장 이상 연속으로 말했다. — 이 사람이 이만큼 말하는 건 처음 봤다.*"
     },
+    "after3_seo_7_ins": {
+        "name": "서연",
+        "text": "완벽하지 않은 나."
+    },
     "after3_dain_5_ins": {
         "name": "다인",
         "text": "진짜 괜찮다니까!! 별거 아냐!!"
+    },
+    "after3_dain_choice2_ins": {
+        "name": "{name}",
+        "text": "*보건실에서 파스를 가져왔다. 다인에게 내밀었다.*"
+    },
+    "after3_dain_choice2_ins2": {
+        "name": "다인",
+        "text": "...아 진짜 가져왔네."
+    },
+    "after3_dain_choice2_ins3": {
+        "name": "{name}",
+        "text": "괜찮다면서."
+    },
+    "after3_dain_choice2_ins4": {
+        "name": "{name}",
+        "text": "*다인이 파스를 받아들고 — 한참을 본다. 입술을 깨문다.*"
+    },
+    "after3_dain_choice2_ins5": {
+        "name": "다인",
+        "text": "*힘없이 피식 웃는다.* ...뭐야. 이런 거에 감동받으면 안 되는데."
+    },
+    "after3_dain_choice2_ins6": {
+        "name": "{name}",
+        "text": "*받아들었다. — 다인이 누군가의 도움을 거절하지 않은 건 처음이다. 느낌표가 사라진 웃음이 이상하게 무겁다.*"
     },
     "after3_confront_5_ins": {
         "name": "다인",

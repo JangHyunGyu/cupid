@@ -64,7 +64,11 @@
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "¿Ver qué?"
+        "text": "¿Qué vi?"
+    },
+    "after3_seo_7_ins": {
+        "name": "Seoyeon",
+        "text": "A la yo imperfecta."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
@@ -239,8 +243,32 @@
         "text": "Gracias. Por no preguntar nada."
     },
     "after3_dain_choice2": {
+        "name": "Dain",
+        "text": "Oye, estoy bien! No necesito ninguna venda!!"
+    },
+    "after3_dain_choice2_ins": {
         "name": "{name}",
-        "text": "*Una Dain callada. — Creo que siento su verdadera temperatura por primera vez.*"
+        "text": "*Traje una venda de la enfermería. Se la ofrecí a Dain.*"
+    },
+    "after3_dain_choice2_ins2": {
+        "name": "Dain",
+        "text": "...Ah, de verdad la trajiste."
+    },
+    "after3_dain_choice2_ins3": {
+        "name": "{name}",
+        "text": "Decías que estabas bien."
+    },
+    "after3_dain_choice2_ins4": {
+        "name": "{name}",
+        "text": "*Dain toma la venda y la mira durante un rato. Se muerde el labio.*"
+    },
+    "after3_dain_choice2_ins5": {
+        "name": "Dain",
+        "text": "*Sonríe débilmente.* ...Qué. No debería conmoverme por algo así."
+    },
+    "after3_dain_choice2_ins6": {
+        "name": "{name}",
+        "text": "*La aceptó. — Es la primera vez que Dain no rechaza la ayuda de alguien. La sonrisa sin signos de exclamación se siente extrañamente pesada.*"
     },
     "after3_dain_end": {
         "name": "{name}",
@@ -310,6 +338,10 @@
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
         "text": "No es la cantidad de promesas. Es el peso de cada una."
+    },
+    "after3_confront_lie_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon se detiene un momento. Sus ojos tiemblan.*"
     },
     "after3_confront_lie": {
         "name": "Seoyeon",

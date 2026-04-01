@@ -87,6 +87,18 @@
         "name": "담임선생님",
         "text": "*피식* 한 페이지면 — 소감문이 아니라 서평이지."
     },
+    "hidden_homeroom_d5_choice_b_ins": {
+        "name": "{name}",
+        "text": "서평 써도 돼요?"
+    },
+    "hidden_homeroom_d5_choice_b_ins2": {
+        "name": "담임선생님",
+        "text": "*잠깐 웃다가, 표정이 진지해진다.* ...좋은 서평이면. 한 편 더 쓸 수 있을 것 같아."
+    },
+    "hidden_homeroom_d5_choice_b_ins3": {
+        "name": "{name}",
+        "text": "*한 편 더. — 7년 만에 끝낸 사람이 '한 편 더'를 말하고 있다.*"
+    },
     "hidden_homeroom_d5_6": {
         "name": "담임선생님",
         "text": "*머리카락을 넘기며* ...감상문은 안 받아. — *피식* ...맞아. 한 줄이라도 써 줘."
@@ -140,6 +152,10 @@
     "hidden_nurse_d5_choice_a": {
         "name": "보건선생님",
         "text": "*밴드를 천천히 붙인다. 밴드에 작은 글씨가 적혀 있다.*"
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "name": "보건선생님",
+        "text": "...한 번만이라면서, 왜 그렇게 말해."
     },
     "hidden_nurse_d5_choice_b": {
         "name": "보건선생님",
