@@ -109,8 +109,8 @@
         "text": "¡Un 'poco' no juega así! -- Admítelo, eres bueno."
     },
     "after2_dain_end_2d": {
-        "name": "{name}",
-        "text": "Tú eras mucho mejor."
+        "name": "Dain",
+        "text": "{name} era mucho mejor en eso."
     },
     "after2_dain_end_3": {
         "name": "{name}",

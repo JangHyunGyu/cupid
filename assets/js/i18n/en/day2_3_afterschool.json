@@ -109,8 +109,8 @@
         "text": "A 'little' doesn't play like that! — Just admit it, you're good."
     },
     "after2_dain_end_2d": {
-        "name": "{name}",
-        "text": "You were way better though."
+        "name": "Dain",
+        "text": "{name} was way better at it though."
     },
     "after2_dain_end_3": {
         "name": "{name}",

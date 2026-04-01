@@ -391,11 +391,11 @@
     },
     "haeun_warn_3": {
         "name": "Haeun",
-        "text": "Hast du gerade Seoyeon-Sunbae gesehen?"
+        "text": "Hast du gerade Seoyeon-Senpai gesehen?"
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Sunbae hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
+        "text": "...Senpai hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
     },
     "haeun_warn_5": {
         "name": "{name}",
@@ -403,11 +403,11 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Dass Sunbae geweint hat — das bedeutet, dass sie es wirklich ernst meint mit dir, {name}."
+        "text": "Dass Senpai geweint hat — das bedeutet, dass sie es wirklich ernst meint mit dir, {name}."
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Ich weiß, dass ich mich einmische. Aber ich mache mir Sorgen um Sunbae. — Zuhause ist es gerade... kompliziert bei ihr. Ihre Eltern... ...egal. Bitte, sei gut zu ihr. Ich bitte dich."
+        "text": "Ich weiß, dass ich mich einmische. Aber ich mache mir Sorgen um Senpai. — Zuhause ist es gerade... kompliziert bei ihr. Ihre Eltern... ...egal. Bitte, sei gut zu ihr. Ich bitte dich."
     },
     "haeun_warn_8": {
         "name": "{name}",
@@ -467,7 +467,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
+        "text": "Senpai ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
     },
     "haeun_warn_5c": {
         "name": "{name}",

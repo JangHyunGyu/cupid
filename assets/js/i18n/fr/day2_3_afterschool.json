@@ -109,8 +109,8 @@
         "text": "Un 'peu' ça joue pas comme ça ! -- Avoue, t'es bon."
     },
     "after2_dain_end_2d": {
-        "name": "{name}",
-        "text": "Dain était bien meilleure quand même."
+        "name": "Dain",
+        "text": "{name} était bien meilleur(e) que moi."
     },
     "after2_dain_end_3": {
         "name": "{name}",
