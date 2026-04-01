@@ -272,7 +272,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "Schulkrankenschwester",
-        "text": "Oder? Das ist die Falle — werde bloß kein Stammgast hier."
+        "text": "Oder? Hier ist es schön. — Ruhig, und wenn man vom Desinfektionsgeruch absieht, perfekt."
     },
     "after_nurse_enter_8": {
         "name": "Schulkrankenschwester",
@@ -302,7 +302,7 @@
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Hey, wo warst du in der Mittagspause? Ich war in der Kantine und du warst nicht da."
+        "text": "Hey, wo warst du in der Mittagspause? Ich war beim Schulkiosk und du warst nicht da."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "Hab dich beim Mittagessen mit Dain in der Kantine gesehen. Du passt dich schnell an."
+        "text": "Hab dich beim Mittagessen mit Dain beim Schulkiosk gesehen. Du passt dich schnell an."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",

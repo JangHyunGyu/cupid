@@ -29,7 +29,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*She sent 'It's on the house' as a separate message on purpose. — Is this calculated, or sincere?*"
+        "text": "*She sent 'It's on the house' as a separate message on purpose. — It makes me laugh.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -81,7 +81,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Can't tell if that's a threat or a promise. — This person has no boundaries.*"
+        "text": "*'I'll come find you.' — My heart beat a little faster.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -97,7 +97,7 @@
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Did she leave me on read, or did I leave her on read? — Everything about this person is ambiguous.*"
+        "text": "*Even after the screen went dark, I held the phone for a long time.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

@@ -81,7 +81,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Impossible de savoir si « je viendrai te chercher » est une blague. — Cette personne n’a aucune limite.*"
+        "text": "*« Je viendrai te chercher. » — Mon cœur a battu un peu plus vite.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -97,7 +97,7 @@
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*C’est elle qui m’a ignoré, ou c’est moi ? — Tout est flou avec cette personne.*"
+        "text": "*Même après que l’écran s’est éteint, j’ai gardé le téléphone en main un long moment.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

@@ -73,7 +73,7 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Esboza una sonrisa. Solo la comisura de los labios. Si es calculado o simplemente es así — aún no lo sé.*"
+        "text": "*Esboza una sonrisa. Solo la comisura de los labios. — Sin darme cuenta, yo también estaba sonriendo.*"
     },
     "seoyeon_meet_9": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "hallway_2": {
         "name": "{name}",
-        "text": "*¿Popular o temida? — Probablemente ambas cosas.*"
+        "text": "*Todos los estudiantes que pasan saludan a Seoyeon.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Corte bob castaño. Una voz rebosante de energía. Está medio levantada de su asiento. La de al lado tira de ella, pero es inútil.*"
+        "text": "*Corte bob castaño. Con uniforme del equipo de voleibol. Una voz rebosante de energía. Está medio levantada de su asiento.*"
     },
     "classroom_dain_3": {
         "name": "Profesora",
@@ -321,7 +321,7 @@
     },
     "hallway_13_ins": {
         "name": "{name}",
-        "text": "*Su postura es recta. Perfectamente recta. — Como si la hubiera ensayado. Cada vez que saluda a un estudiante, la misma sonrisa se repite con el mismo ángulo. Amabilidad automatizada. — Tanta precisión resulta un poco extraña.*"
+        "text": "*Su espalda está recta. Perfectamente recta. — Como si lo hubiera practicado. Me dio un poco de curiosidad saber qué hay detrás de esa calma.*"
     },
     "classroom_2_ins": {
         "name": "{name}",

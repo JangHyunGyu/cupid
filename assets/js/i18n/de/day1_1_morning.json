@@ -65,7 +65,7 @@
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "Die Vorsitzende persönlich? Welche Ehre."
+        "text": "Die Schülersprecherin persönlich? Welche Ehre."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
@@ -73,7 +73,7 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Sie schmunzelt. Nur die Mundwinkel heben sich. Ob das berechnet ist oder einfach ihre Art — kann ich noch nicht sagen.*"
+        "text": "*Sie schmunzelt. Nur die Mundwinkel heben sich. — Ohne es zu merken, lächelte ich zurück.*"
     },
     "seoyeon_meet_9": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "Eine furchteinflößende Vorsitzende."
+        "text": "Eine furchteinflößende Schülersprecherin."
     },
     "choice_joke_3": {
         "name": "Seoyeon",
@@ -133,11 +133,11 @@
     },
     "hallway_2": {
         "name": "{name}",
-        "text": "*Beliebt oder gefürchtet — wahrscheinlich beides.*"
+        "text": "*Alle vorbeigehenden Schüler grüßen Seoyeon.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Das Gebäude der Drittjährigen ist hier, die Bibliothek ist drüben. Die Mensa ist im Untergeschoss."
+        "text": "Das Gebäude der Drittjährigen ist hier, die Bibliothek ist drüben. Der Schulkiosk ist im Untergeschoss."
     },
     "hallway_4": {
         "name": "{name}",
@@ -201,11 +201,11 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh! Ein Transferschüler! Endlich!"
+        "text": "Oh! Ein männlicher Transferschüler! Endlich!"
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Brauner Bob-Schnitt. Eine Stimme voller Energie. Sie steht halb von ihrem Platz auf. Die Nachbarin zieht sie runter, aber es nützt nichts.*"
+        "text": "*Brauner Bob-Schnitt. Im Volleyball-Trikot. Eine Stimme voller Energie. Sie ist halb von ihrem Platz aufgestanden.*"
     },
     "classroom_dain_3": {
         "name": "Klassenlehrerin",
@@ -241,7 +241,7 @@
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*Sie ist neben Dain. Gerettet oder verloren — ich bin mir nicht sicher, aber leise wird es bestimmt nicht.*"
+        "text": "*Der Platz ist neben Dain.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "hallway_13_ins": {
         "name": "{name}",
-        "text": "*Ihre Haltung ist gerade. Perfekt gerade. — Wie einstudiert. Bei jedem Schüler, den sie grüßt, wiederholt sich dasselbe Lächeln im selben Winkel. Automatisierte Freundlichkeit. — Diese maschinelle Präzision ist schon etwas seltsam.*"
+        "text": "*Ihre Haltung ist gerade. Perfekt gerade. — Wie einstudiert. Was hinter dieser Gelassenheit steckt, hat mich ein wenig neugierig gemacht.*"
     },
     "classroom_2_ins": {
         "name": "{name}",

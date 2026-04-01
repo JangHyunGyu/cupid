@@ -126,7 +126,7 @@
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "Dieser Senpai, vielleicht hat er einfach seinen Abschluss gemacht? Ältere melden sich eh selten."
+        "text": "Diese Person, vielleicht hat er einfach seinen Abschluss gemacht? Ältere melden sich eh selten."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -238,7 +238,7 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Wir haben uns gestern kennengelernt! Sie ist nett, Seoyeon-Senpai!"
+        "text": "Wir haben uns gestern kennengelernt! Sie ist nett, Seoyeon!"
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -358,7 +358,7 @@
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "Hey, was ist mit der Präsidentin los? Warum starrt sie?"
+        "text": "Hey, was ist mit der Schülersprecherin los? Warum starrt sie?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "lunch2_dain_13": {
         "name": "Dain",
-        "text": "Hmm... bist du mit der Präsidentin auch befreundet?"
+        "text": "Hmm... bist du mit der Schülersprecherin auch befreundet?"
     },
     "lunch2_dain_choice": {
         "name": "{name}",

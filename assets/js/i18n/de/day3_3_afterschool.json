@@ -395,11 +395,11 @@
     },
     "haeun_warn_3": {
         "name": "Haeun",
-        "text": "Hast du gerade Seoyeon-Senpai gesehen?"
+        "text": "Hast du gerade Seoyeon gesehen?"
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Senpai hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
+        "text": "...Seoyeon hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
     },
     "haeun_warn_5": {
         "name": "{name}",
@@ -407,11 +407,11 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Dass Senpai geweint hat — das bedeutet, dass sie es wirklich ernst meint mit dir, {name}."
+        "text": "Dass Seoyeon geweint hat — das bedeutet, dass sie es wirklich ernst meint mit dir, {name}."
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Ich weiß, dass ich mich einmische. Aber ich mache mir Sorgen um Senpai. — Zuhause ist es gerade... kompliziert bei ihr. Ihre Eltern... ...egal. Bitte, sei gut zu ihr. Ich bitte dich."
+        "text": "Ich weiß, dass ich mich einmische. Aber ich mache mir Sorgen um Seoyeon. — Zuhause ist es gerade... kompliziert bei ihr. Ihre Eltern... ...egal. Bitte, sei gut zu ihr. Ich bitte dich."
     },
     "haeun_warn_8": {
         "name": "{name}",
@@ -471,7 +471,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Senpai ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
+        "text": "Seoyeon ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -671,7 +671,7 @@
     },
     "haeun_warn_7_ins2": {
         "name": "Haeun",
-        "text": "...Jedenfalls. Bitte seien Sie gut zu ihr. Ich bitte Sie."
+        "text": "...Jedenfalls. Bitte sei gut zu ihr. Ich bitte dich."
     },
     "haeun_warn_7_ins3": {
         "name": "{name}",

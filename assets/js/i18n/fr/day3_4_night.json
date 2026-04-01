@@ -158,11 +158,11 @@
     },
     "night3_cheat_reflect_3": {
         "name": "{name}",
-        "text": "*Dans mon ancien lycée, je n’ai rien pu dire. À personne. — Cette fois, je voulais le dire sans regrets.*\n\n*Mais avec du recul — je ne l’ai pas vraiment dit. Je l’ai balancé à tout le monde. Ce n’est pas de la sincérité — c’est de la lâcheté.*"
+        "text": "*Dans mon ancien lycée, je n’ai rien pu dire. À personne. — Cette fois, je voulais le dire sans regrets.*"
     },
     "night3_cheat_reflect_4": {
         "name": "{name}",
-        "text": "*Ancien lycée : le regret de n’avoir rien dit.*\n*Ce lycée : le regret d’avoir trop dit.*\n\n*C’est l’inverse de Sojeong, mais le résultat est le même. Quelqu’un est blessé.*\n\n*Au final, le problème n’est pas de dire ou de se taire — c’est à qui on le dit.*"
+        "text": "*Ancien lycée : le regret de n’avoir rien dit.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "night3_faithful_reflect_2": {
         "name": "{name}",
-        "text": "*J’ai sorti le téléphone. Ouvert la galerie. La photo de Sojeong. — J’ai appuyé longuement.*\n\n*’Supprimer ?’*\n\n*— Supprimée.*"
+        "text": "*J’ai sorti le téléphone. Ouvert la galerie. La photo de Sojeong. — J’ai appuyé longuement.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",

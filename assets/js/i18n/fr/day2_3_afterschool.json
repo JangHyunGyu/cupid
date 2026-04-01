@@ -66,11 +66,11 @@
     },
     "after2_dain_10": {
         "name": "Dain",
-        "text": "*Les yeux écarquillés* Hein ? J'allais aller doucement, mais finalement non.\n\n*Dain baisse sa position. Ses yeux ont changé.*\n\nLà je donne tout !"
+        "text": "*Les yeux écarquillés* Hein ? J'allais aller doucement, mais finalement non."
     },
     "after2_dain_11": {
         "name": "{name}",
-        "text": "*Les échanges se prolongent. Le mouvement de Dain est — clairement au-dessus de la moyenne. Rapide, précis, de la mémoire musculaire en action.*\n\n*Cette fille est vraiment douée. Pas juste 'aime le sport' — elle bouge comme quelqu'un qui y a un jour mis sa vie en jeu.*\n\n*Score final : 3 à 2. J'ai gagné de justesse.*"
+        "text": "*Les échanges se prolongent. Le mouvement de Dain est — clairement au-dessus de la moyenne. Rapide, précis, de la mémoire musculaire en action.*"
     },
     "after2_dain_12": {
         "name": "Dain",
@@ -94,7 +94,7 @@
     },
     "after2_dain_end": {
         "name": "{name}",
-        "text": "*Ses yeux sont en forme de croissant. Les mêmes yeux qu'hier. — C'est comme ça que cette personne est quand elle s'amuse vraiment.*\n\n*Au resto de tteokbokki près de l'école.*\n\n*Dain souffle sur son tteokbokki et dit —*"
+        "text": "*Ses yeux sont en forme de croissant. Les mêmes yeux qu'hier. — C'est comme ça que cette personne est quand elle s'amuse vraiment.*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
@@ -162,7 +162,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Le mot 'demander' ne semble pas exister dans le vocabulaire de cette personne.*\n\n*Je commence à trier les documents. Budgets événements, demandes de clubs. Y en a pas mal.*"
+        "text": "*Le mot 'demander' ne semble pas exister dans le vocabulaire de cette personne.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -198,7 +198,7 @@
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Dire directement que c'est un compliment. — Ça semble rare venant d'elle.*\n\n*En rangeant, Seoyeon fait rouler sa nuque. Ça a l'air tendu.*",
+        "text": "*Dire directement que c'est un compliment. — Ça semble rare venant d'elle.*",
         "choices": [
             "Le coucher de soleil est magnifique. — Ah, je parlais de dehors, pas de toi.",
             "T'as mal au cou ? Repose-toi un peu."
@@ -210,7 +210,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...T'es la première personne à sortir un truc aussi léger avec autant de naturel.\n\n*Ses yeux ont souri. — Pas le sourire travaillé où seules les commissures se lèvent, mais un vrai. Qui a duré plus de trois secondes, pas juste une demi-seconde.*"
+        "text": "...T'es la première personne à sortir un truc aussi léger avec autant de naturel."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -222,7 +222,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "C'est vraiment tendu. Bouge pas une seconde.\n\n*Seoyeon se lève et vient derrière moi. Elle pose ses mains sur mes épaules.*"
+        "text": "C'est vraiment tendu. Bouge pas une seconde."
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -230,15 +230,15 @@
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon s'appuie sur mon épaule.* ...Bouge pas. Juste un instant.\n\n*C'est elle qui s'est appuyée en disant qu'elle avait mal au cou — mais c'est moi qui suis nerveux.*"
+        "text": "*Doucement* ...Bouge pas. Juste un instant."
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Je me recule légèrement.*\n\nQu'est-ce que tu fais comme ça."
+        "text": "*Je me recule légèrement.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Retirant ses mains* ...C'est rien.\n\n*Son expression se fige pendant une demi-seconde. — Puis elle sourit immédiatement. Parfaitement.*"
+        "text": "*Retirant ses mains* ...C'est rien."
     },
     "after2_seo_9": {
         "name": "{name}",
@@ -282,11 +282,11 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Pas de message de Yuna. Mais mes pieds se dirigent vers la bibliothèque. Pourquoi ? — Pas sûr. Peut-être à cause du mot ce matin.*\n\n*Le couloir de l'annexe. Pas âme qui vive. — La porte de la salle de lecture secrète est entrouverte.*"
+        "text": "*Pas de message de Yuna. Mais mes pieds se dirigent vers la bibliothèque. Pourquoi ? — Pas sûr. Peut-être à cause du mot ce matin.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*J'entre discrètement. Yuna est sur le canapé, en train de lire. Le soleil couchant entre par la fenêtre.*\n\n*Yuna lève les yeux. Elle n'est pas surprise.*"
+        "text": "*J'entre discrètement. Yuna est sur le canapé, en train de lire. Le soleil couchant entre par la fenêtre.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
@@ -314,7 +314,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Une porte ouverte par hasard. — Le 'par hasard' de Yuna est synonyme de 'exprès'.*\n\n*Je m'assois à côté d'elle. Yuna me tend un de ses écouteurs.*"
+        "text": "*Une porte ouverte par hasard. — Le 'par hasard' de Yuna est synonyme de 'exprès'.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -338,7 +338,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Y en a pas eu depuis ce senpai."
+        "text": "Y en a pas eu depuis cette personne."
     },
     "after2_yuna_choice": {
         "name": "{name}",
@@ -354,7 +354,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Viens si tu veux. Je t'en empêcherai pas.\n\n*'Je t'en empêcherai pas.' — Dans le langage de Yuna, ça se traduit par 's'il te plaît viens'.*"
+        "text": "...Viens si tu veux. Je t'en empêcherai pas."
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -362,7 +362,7 @@
     },
     "after2_yuna_quiet_react": {
         "name": "{name}",
-        "text": "*Les lèvres de Yuna se relèvent très légèrement.*\n\n*Le sourire de Yuna est une espèce rare. Pas beaucoup de gens l'ont vu.*"
+        "text": "*Les lèvres de Yuna se relèvent très légèrement. — Ce sourire, il vaut une journée entière.*"
     },
     "after2_yuna_end": {
         "name": "{name}",

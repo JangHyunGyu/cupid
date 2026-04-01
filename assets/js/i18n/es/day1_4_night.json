@@ -81,7 +81,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*No sé si lo de 'iré a buscarte' es broma o va en serio. — Esta persona no tiene límites.*"
+        "text": "*'Iré a buscarte.' — Mi corazón latió un poco más rápido.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -89,7 +89,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Solo '...' y nada más. Como si hubiera escrito algo y lo hubiera borrado.*"
+        "text": "*Solo '...' y nada más. Como si hubiera escrito algo y lo hubiera borrado. — Me pregunto qué decía ese mensaje borrado, y no puedo dormir.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*¿Me dejó en visto o fui yo quien la dejó en visto? — Todo con esta persona es ambiguo.*"
+        "text": "*Incluso después de que la pantalla se apagó, sostuve el teléfono por un largo rato.*"
     },
     "night_dain_late_1": {
         "name": "Dain",

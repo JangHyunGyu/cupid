@@ -73,7 +73,7 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Elle esquisse un sourire. Juste le coin des lèvres qui se relève. Calculé ou naturel — je ne sais pas encore.*"
+        "text": "*Elle esquisse un sourire. Juste le coin des lèvres qui se relève. — Sans m'en rendre compte, je souriais aussi.*"
     },
     "seoyeon_meet_9": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "hallway_2": {
         "name": "{name}",
-        "text": "*Populaire ou redoutée — probablement les deux.*"
+        "text": "*Tous les élèves qui passent saluent Seoyeon.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Carré court brun. Une voix débordante d'énergie. Elle est à moitié debout. Sa voisine essaie de la retenir, mais c'est peine perdue.*"
+        "text": "*Carré court brun. En uniforme de volley-ball. Une voix débordante d'énergie. Elle est à moitié levée de son siège.*"
     },
     "classroom_dain_3": {
         "name": "Professeure principale",
@@ -321,7 +321,7 @@
     },
     "hallway_13_ins": {
         "name": "{name}",
-        "text": "*Son dos est droit. Parfaitement droit. — Comme si c'était répété. À chaque élève qui passe, le même angle de sourire se reproduit. Une gentillesse automatisée. — Cette précision mécanique a quelque chose d'étrange.*"
+        "text": "*Son dos est droit. Parfaitement droit. — Comme si c'était répété. Ce qui se cache derrière cette décontraction m'a rendu un peu curieux.*"
     },
     "classroom_2_ins": {
         "name": "{name}",
