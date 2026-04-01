@@ -40,8 +40,8 @@
         "text": "*Tiene un marcapáginas dentro. Una sola línea escrita en él.*"
     },
     "after5_farewell_yuna_3": {
-        "name": "{name}",
-        "text": "*'Fue divertido. ...Nos vemos en la próxima historia.'*"
+        "name": "Yuna",
+        "text": "Fue divertido. ...Nos vemos en la próxima historia."
     },
     "after5_farewell_yuna_4": {
         "name": "{name}",

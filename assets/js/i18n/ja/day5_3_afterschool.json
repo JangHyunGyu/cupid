@@ -40,8 +40,8 @@
         "text": "*しおりが挟まっている。しおりに一行。*"
     },
     "after5_farewell_yuna_3": {
-        "name": "{name}",
-        "text": "*『楽しかった。…次の物語で会おう。』*"
+        "name": "ユナ",
+        "text": "楽しかった。…次の物語で会おう。"
     },
     "after5_farewell_yuna_4": {
         "name": "{name}",

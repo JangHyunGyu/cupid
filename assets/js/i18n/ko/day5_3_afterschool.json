@@ -56,8 +56,8 @@
         "text": "*책갈피가 끼워져 있다. 책갈피에 한 줄.*"
     },
     "after5_farewell_yuna_3": {
-        "name": "{name}",
-        "text": "*'재밌었어. ...다음 이야기에서 보자.'*"
+        "name": "유나",
+        "text": "재밌었어. ...다음 이야기에서 보자."
     },
     "after5_farewell_yuna_4": {
         "name": "{name}",

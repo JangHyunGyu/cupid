@@ -40,8 +40,8 @@
         "text": "*A bookmark is tucked inside. A single line on the bookmark.*"
     },
     "after5_farewell_yuna_3": {
-        "name": "{name}",
-        "text": "*'It was fun. ...See you in the next story.'*"
+        "name": "Yuna",
+        "text": "It was fun. ...See you in the next story."
     },
     "after5_farewell_yuna_4": {
         "name": "{name}",

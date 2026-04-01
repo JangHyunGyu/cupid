@@ -40,8 +40,8 @@
         "text": "*Ein Lesezeichen steckt darin. Eine einzige Zeile auf dem Lesezeichen.*"
     },
     "after5_farewell_yuna_3": {
-        "name": "{name}",
-        "text": "*'Es hat Spaß gemacht. ...Wir sehen uns in der nächsten Geschichte.'*"
+        "name": "Yuna",
+        "text": "Es hat Spaß gemacht. ...Wir sehen uns in der nächsten Geschichte."
     },
     "after5_farewell_yuna_4": {
         "name": "{name}",
