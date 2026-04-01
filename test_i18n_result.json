@@ -1,0 +1,15 @@
+{
+  "stats": {
+    "byLang": {
+      "ko": 0,
+      "en": 0,
+      "ja": 0,
+      "es": 0,
+      "fr": 0,
+      "de": 0
+    },
+    "bySeverity": {},
+    "byType": {}
+  },
+  "issues": []
+}
