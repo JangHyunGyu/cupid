@@ -64,10 +64,6 @@
         "name": "{name}",
         "text": "Traitement spécial dès le premier jour ? C’est suspect."
     },
-    "lunch_seo_7": {
-        "name": "Seoyeon",
-        "text": "Tu es parano. L'air de la salle de classe était juste étouffant, c'est tout."
-    },
     "lunch_seo_8": {
         "name": "{name}",
         "text": "*Seoyeon sort un bento de son sac. Soigneusement préparé pour deux.*"
@@ -151,10 +147,6 @@
     "lunch_seo_c1_3": {
         "name": "Seoyeon",
         "text": "...Évidemment."
-    },
-    "lunch_seo_c1_4": {
-        "name": "{name}",
-        "text": "*Seoyeon se racle la gorge et détourne discrètement le regard. Ses doigts effleurent sa nuque — le geste semble un peu gauche.*"
     },
     "lunch_seo_c2_1": {
         "name": "{name}",
@@ -251,10 +243,6 @@
     "lunch_dain_12": {
         "name": "{name}",
         "text": "Une promesse est une promesse."
-    },
-    "lunch_dain_13": {
-        "name": "Dain",
-        "text": "Ah, c'est bon ! J'achète, j'achète ! Madame, deux pains soboro s'il vous plaît !"
     },
     "lunch_dain_14": {
         "name": "{name}",
@@ -367,10 +355,6 @@
     "lunch_yuna_5": {
         "name": "{name}",
         "text": "*5 secondes. 10 secondes. — Pas un mot.*"
-    },
-    "lunch_yuna_6": {
-        "name": "{name}",
-        "text": "...Je peux rester ?"
     },
     "lunch_yuna_7": {
         "name": "Yuna",
@@ -521,10 +505,6 @@
     "lunch_seo_c1_3_ins": {
         "name": "{name}",
         "text": "*Ces oreilles rouges — c'était réel ? — Peut-être juste le vent.*"
-    },
-    "lunch_seo_after_7_ins": {
-        "name": "{name}",
-        "text": "*Dain me traîne par le bras jusqu'à la cantine. Cette fille a une force incroyable.*"
     },
     "lunch_dain_12_ins": {
         "name": "Dain",

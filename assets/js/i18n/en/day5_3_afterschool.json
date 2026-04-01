@@ -175,10 +175,6 @@
         "name": "{name}",
         "text": "*The exclamation marks are alive and well. — Dain is Dain to the very end. That's her strength.*"
     },
-    "after5_farewell_dain_4_ins4": {
-        "name": "{name}",
-        "text": "*Only appears when there's a route but the formal confession hasn't been accepted or rejected.*"
-    },
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*I almost ran away again. Just like at my old school. Phone in my pocket, unable to say a word — that moment nearly came back. — No. Not this time.*"

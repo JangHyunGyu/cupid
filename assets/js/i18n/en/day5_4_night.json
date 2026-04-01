@@ -1141,25 +1141,9 @@
         "name": "{name}",
         "text": "*The cherry blossoms will bloom again next year. We walked side by side.*"
     },
-    "good_1_seo_ins4": {
-        "name": "{name}",
-        "text": "*The rooftop. Yuna is leaning against the railing. The wind blows through her hair.*"
-    },
     "good_1_yuna_b_ins": {
         "name": "{name}",
         "text": "*She was chasing the shadow of someone who disappeared.*"
-    },
-    "good_4_yuna_ins": {
-        "name": "{name}",
-        "text": "*In front of the school gate. Dain is tossing a volleyball while she waits.*"
-    },
-    "bitter_seo_3_ins": {
-        "name": "{name}",
-        "text": "*Dain throws the volleyball. I catch it. — That's how this person makes peace.*"
-    },
-    "bitter_seo_3_ins2": {
-        "name": "{name}",
-        "text": "*She ran even when her knees hurt.*"
     },
     "bitter_seo_2_ins": {
         "name": "{name}",
@@ -1168,18 +1152,6 @@
     "bitter_dain_3_ins": {
         "name": "{name}",
         "text": "*I walked out past the school gate. It's raining. — No umbrella. Cherry blossoms stick to the wet ground at my feet.*"
-    },
-    "bitter_epilogue_2_ins": {
-        "name": "{name}",
-        "text": "*I found the courage. I said it. — But what came back was silence, head bowed.*"
-    },
-    "bitter_epilogue_2_ins2": {
-        "name": "{name}",
-        "text": "*...Thank you. Really. But I'm still — I guess five days was too short.*"
-    },
-    "bitter_epilogue_2_ins3": {
-        "name": "{name}",
-        "text": "*It wasn't rejection. It was timing. — The result of five days where I didn't get close enough.*"
     },
     "harem_1_ins": {
         "name": "{name}",

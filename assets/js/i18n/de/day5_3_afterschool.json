@@ -175,10 +175,6 @@
         "name": "{name}",
         "text": "*Die Ausrufezeichen leben weiter. — Dain bleibt Dain bis zum Schluss. Das ist ihre Stärke.*"
     },
-    "after5_farewell_dain_4_ins4": {
-        "name": "{name}",
-        "text": "*Erscheint nur, wenn es eine Route gibt, aber das formale Geständnis weder angenommen noch abgelehnt wurde.*"
-    },
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*Fast wäre ich wieder weggelaufen. Wie an meiner alten Schule. Handy in der Tasche, kein Wort herausbekommen — dieser Moment wäre fast zurückgekehrt. — Nein. Nicht diesmal.*"

@@ -1141,25 +1141,9 @@
         "name": "{name}",
         "text": "*桜は来年も咲く。並んで歩いた。*"
     },
-    "good_1_seo_ins4": {
-        "name": "{name}",
-        "text": "*屋上。ユナが手すりに寄りかかっている。風が髪を揺らす。*"
-    },
     "good_1_yuna_b_ins": {
         "name": "{name}",
         "text": "*消えた人の影を追いかけていた。*"
-    },
-    "good_4_yuna_ins": {
-        "name": "{name}",
-        "text": "*校門の前。ダインがバレーボールを投げながら待っている。*"
-    },
-    "bitter_seo_3_ins": {
-        "name": "{name}",
-        "text": "*ダインがバレーボールを投げる。受け取った。——これがこの人の仲直りの仕方だ。*"
-    },
-    "bitter_seo_3_ins2": {
-        "name": "{name}",
-        "text": "*膝が痛くても走っていた。*"
     },
     "bitter_seo_2_ins": {
         "name": "{name}",
@@ -1168,18 +1152,6 @@
     "bitter_dain_3_ins": {
         "name": "{name}",
         "text": "*校門の外に出た。雨が降っている。——傘はない。桜の花びらが雨に濡れて足元に貼りついている。*"
-    },
-    "bitter_epilogue_2_ins": {
-        "name": "{name}",
-        "text": "*勇気を出した。言った。——でも返ってきたのはうつむいた沈黙だった。*"
-    },
-    "bitter_epilogue_2_ins2": {
-        "name": "{name}",
-        "text": "*「……ありがとう。本当に。でも私はまだ——5日は短すぎたのかも。」*"
-    },
-    "bitter_epilogue_2_ins3": {
-        "name": "{name}",
-        "text": "*拒否じゃない。タイミングだ。——十分に近づけなかった5日間が作った結果。*"
     },
     "harem_1_ins": {
         "name": "{name}",

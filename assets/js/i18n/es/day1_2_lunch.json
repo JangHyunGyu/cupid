@@ -64,10 +64,6 @@
         "name": "{name}",
         "text": "¿Trato especial el primer día? Suena sospechoso."
     },
-    "lunch_seo_7": {
-        "name": "Seoyeon",
-        "text": "Eres muy desconfiado. El aire del aula estaba sofocante, eso es todo."
-    },
     "lunch_seo_8": {
         "name": "{name}",
         "text": "*Seoyeon saca una lonchera de su bolso. Preparada pulcramente para dos.*"
@@ -151,10 +147,6 @@
     "lunch_seo_c1_3": {
         "name": "Seoyeon",
         "text": "...Obviamente."
-    },
-    "lunch_seo_c1_4": {
-        "name": "{name}",
-        "text": "*Seoyeon carraspea y desvía la mirada disimuladamente. Sus dedos rozan la nuca — el gesto parece un poco torpe.*"
     },
     "lunch_seo_c2_1": {
         "name": "{name}",
@@ -251,10 +243,6 @@
     "lunch_dain_12": {
         "name": "{name}",
         "text": "Una promesa es una promesa."
-    },
-    "lunch_dain_13": {
-        "name": "Dain",
-        "text": "¡Ah, vale! ¡Yo invito, yo invito! ¡Señora, dos panes de soboro por favor!"
     },
     "lunch_dain_14": {
         "name": "{name}",
@@ -367,10 +355,6 @@
     "lunch_yuna_5": {
         "name": "{name}",
         "text": "*5 segundos. 10 segundos. — Ni una palabra.*"
-    },
-    "lunch_yuna_6": {
-        "name": "{name}",
-        "text": "...¿Puedo quedarme?"
     },
     "lunch_yuna_7": {
         "name": "Yuna",
@@ -521,10 +505,6 @@
     "lunch_seo_c1_3_ins": {
         "name": "{name}",
         "text": "*Esas orejas rojas, ¿es real? — Quizá sea solo el viento.*"
-    },
-    "lunch_seo_after_7_ins": {
-        "name": "{name}",
-        "text": "*Dain me arrastra del brazo hasta la tienda. Esta chica tiene una fuerza increíble.*"
     },
     "lunch_dain_12_ins": {
         "name": "Dain",

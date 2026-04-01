@@ -175,10 +175,6 @@
         "name": "{name}",
         "text": "*Les points d'exclamation sont toujours là. — Dain reste Dain jusqu'au bout. C'est sa force.*"
     },
-    "after5_farewell_dain_4_ins4": {
-        "name": "{name}",
-        "text": "*N'apparaît que si une route existe mais que la confession formelle n'a été ni acceptée ni refusée.*"
-    },
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*J'ai failli fuir encore. Comme à mon ancien lycée. Le téléphone dans la poche, incapable de dire un mot — ce moment a failli revenir. — Non. Pas cette fois.*"

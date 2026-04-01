@@ -383,10 +383,6 @@
         "name": "Schulkrankenschwester",
         "text": "...{name}."
     },
-    "hidden_nurse_d5_choice_b_ins": {
-        "name": "Schulkrankenschwester",
-        "text": "...Du hast 'nur einmal' gesagt. Warum sagst du dann so etwas?"
-    },
     "hidden_nurse_d5_choice_b_ins2": {
         "name": "{name}",
         "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit verschwunden. — So kommt die Aufrichtigkeit dieser Person immer.*"

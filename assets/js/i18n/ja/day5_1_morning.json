@@ -383,10 +383,6 @@
         "name": "保健先生",
         "text": "「……{name}。」"
     },
-    "hidden_nurse_d5_choice_b_ins": {
-        "name": "保健先生",
-        "text": "「……一回だけって言ったくせに、なんでそんなこと言うの。」"
-    },
     "hidden_nurse_d5_choice_b_ins2": {
         "name": "{name}",
         "text": "*声が一段低くなった。ふざけた表情が完全に消えている。——この人の本気はいつもこうやって来る。*"
