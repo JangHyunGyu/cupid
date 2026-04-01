@@ -427,7 +427,6 @@ Object.assign(SCENARIO[4], {
         "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins2"
     },
-    // NOTE: SCENARIO.MD는 아침 이벤트로 배치하지만, 게임플레이 흐름상 고백 연기 후에 구현
     "confess_dain_no_4_ins2": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
