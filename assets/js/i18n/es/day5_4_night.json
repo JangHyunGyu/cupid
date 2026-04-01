@@ -1141,25 +1141,9 @@
         "name": "{name}",
         "text": "*Los cerezos florecerán otra vez el año que viene. Caminamos juntos.*"
     },
-    "good_1_seo_ins4": {
-        "name": "{name}",
-        "text": "*La azotea. Yuna está apoyada en la barandilla. El viento le agita el pelo.*"
-    },
     "good_1_yuna_b_ins": {
         "name": "{name}",
         "text": "*Estaba persiguiendo la sombra de alguien que desapareció.*"
-    },
-    "good_4_yuna_ins": {
-        "name": "{name}",
-        "text": "*Frente a la puerta de la escuela. Dain espera lanzando un balón de voleibol.*"
-    },
-    "bitter_seo_3_ins": {
-        "name": "{name}",
-        "text": "*Dain lanza el balón de voleibol. Lo atrapo. — Así es como esta persona hace las paces.*"
-    },
-    "bitter_seo_3_ins2": {
-        "name": "{name}",
-        "text": "*Corría aunque le dolieran las rodillas.*"
     },
     "bitter_seo_2_ins": {
         "name": "{name}",
@@ -1168,18 +1152,6 @@
     "bitter_dain_3_ins": {
         "name": "{name}",
         "text": "*Salí por la puerta de la escuela. Está lloviendo. — Sin paraguas. Los pétalos de cerezo se pegan al suelo mojado bajo mis pies.*"
-    },
-    "bitter_epilogue_2_ins": {
-        "name": "{name}",
-        "text": "*Reuní el valor. Lo dije. — Pero lo que volvió fue silencio, con la cabeza agachada.*"
-    },
-    "bitter_epilogue_2_ins2": {
-        "name": "{name}",
-        "text": "*...Gracias. De verdad. Pero yo aún — supongo que cinco días fueron muy pocos.*"
-    },
-    "bitter_epilogue_2_ins3": {
-        "name": "{name}",
-        "text": "*No fue un rechazo. Fue el momento. — El resultado de cinco días en los que no me acerqué lo suficiente.*"
     },
     "harem_1_ins": {
         "name": "{name}",

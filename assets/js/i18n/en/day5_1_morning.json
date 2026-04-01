@@ -383,10 +383,6 @@
         "name": "School Nurse",
         "text": "...{name}."
     },
-    "hidden_nurse_d5_choice_b_ins": {
-        "name": "School Nurse",
-        "text": "...You said 'just once,' so why say something like that."
-    },
     "hidden_nurse_d5_choice_b_ins2": {
         "name": "{name}",
         "text": "*Her voice dropped a register. All playfulness gone. — This is how this person's sincerity always arrives.*"

@@ -383,10 +383,6 @@
         "name": "Enfermera",
         "text": "...{name}."
     },
-    "hidden_nurse_d5_choice_b_ins": {
-        "name": "Enfermera",
-        "text": "...Dijiste 'solo una vez', ¿por qué dices algo así?"
-    },
     "hidden_nurse_d5_choice_b_ins2": {
         "name": "{name}",
         "text": "*Su voz bajó un tono. Toda la picardía desapareció. — La sinceridad de esta persona siempre llega así.*"

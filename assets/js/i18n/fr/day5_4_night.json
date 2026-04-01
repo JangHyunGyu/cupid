@@ -1141,25 +1141,9 @@
         "name": "{name}",
         "text": "*Les cerisiers refleuriront l'an prochain. On a marché côte à côte.*"
     },
-    "good_1_seo_ins4": {
-        "name": "{name}",
-        "text": "*Le toit. Yuna s'appuie contre la rambarde. Le vent fait voler ses cheveux.*"
-    },
     "good_1_yuna_b_ins": {
         "name": "{name}",
         "text": "*Elle poursuivait l'ombre de quelqu'un qui avait disparu.*"
-    },
-    "good_4_yuna_ins": {
-        "name": "{name}",
-        "text": "*Devant le portail de l'école. Dain attend en lançant un ballon de volley.*"
-    },
-    "bitter_seo_3_ins": {
-        "name": "{name}",
-        "text": "*Dain lance le ballon de volley. Je l'attrape. — C'est comme ça que cette personne fait la paix.*"
-    },
-    "bitter_seo_3_ins2": {
-        "name": "{name}",
-        "text": "*Elle courait même quand ses genoux lui faisaient mal.*"
     },
     "bitter_seo_2_ins": {
         "name": "{name}",
@@ -1168,18 +1152,6 @@
     "bitter_dain_3_ins": {
         "name": "{name}",
         "text": "*Je suis sorti du portail. Il pleut. — Pas de parapluie. Les pétales de cerisier collent au sol mouillé sous mes pieds.*"
-    },
-    "bitter_epilogue_2_ins": {
-        "name": "{name}",
-        "text": "*J'ai trouvé le courage. Je l'ai dit. — Mais ce qui est revenu, c'est un silence, tête baissée.*"
-    },
-    "bitter_epilogue_2_ins2": {
-        "name": "{name}",
-        "text": "*...Merci. Vraiment. Mais moi, je suis encore — peut-être que cinq jours, c'était trop court.*"
-    },
-    "bitter_epilogue_2_ins3": {
-        "name": "{name}",
-        "text": "*Ce n'était pas un refus. C'était le timing. — Le résultat de cinq jours où je ne me suis pas assez rapproché.*"
     },
     "harem_1_ins": {
         "name": "{name}",
