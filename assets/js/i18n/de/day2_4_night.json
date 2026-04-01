@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Zurück zuhause. Geduscht und aufs Bett gelegt -- dann strömen die Messenger-Benachrichtigungen herein.*"
+        "text": "*Zurück zuhause. Geduscht und aufs Bett gelegt — dann strömen die Messenger-Benachrichtigungen herein.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Ich muss allen dreien gleichzeitig antworten. -- Ich weiß nicht, ob das Glück oder Qual ist.*"
+        "text": "*Ich muss allen dreien gleichzeitig antworten. — Ich weiß nicht, ob das Glück oder Qual ist.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*Kurze Stille. -- Und dann.*"
+        "text": "*Kurze Stille. — Und dann.*"
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Der dritte Stern? -- Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, weiß ich nicht, aber. Ein sehr Yuna-typisches Rätsel. Jemand, der nie die Antwort verrät. -- Jemand, der einen dazu bringt, sie finden zu wollen.*"
+        "text": "*Der dritte Stern? — Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, weiß ich nicht, aber. Ein sehr Yuna-typisches Rätsel. Jemand, der nie die Antwort verrät. — Jemand, der einen dazu bringt, sie finden zu wollen.*"
     },
     "night2_end_1": {
         "name": "{name}",

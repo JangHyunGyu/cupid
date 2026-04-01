@@ -138,6 +138,10 @@
         "name": "Yuna",
         "text": "...Eso."
     },
+    "after3_yuna_8b": {
+        "name": "Yuna",
+        "text": "*Se acerca rápidamente y le arrebata el cuaderno* ...No te di permiso."
+    },
     "after3_yuna_9": {
         "name": "{name}",
         "text": "*Sus orejas. Rojas. — Es la primera vez que veo a Yuna sonrojarse.*"
@@ -391,11 +395,11 @@
     },
     "haeun_warn_3": {
         "name": "Haeun",
-        "text": "¿Acabas de ver a Seoyeon-sunbae?"
+        "text": "¿Acabas de ver a Seoyeon-senpai?"
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Sunbae lloró. Después de salir de la sala del consejo. En el baño. — Solo lo vi yo. En un año, nunca la había visto llorar."
+        "text": "...Senpai lloró. Después de salir de la sala del consejo. En el baño. — Solo lo vi yo. En un año, nunca la había visto llorar."
     },
     "haeun_warn_5": {
         "name": "{name}",
@@ -403,11 +407,11 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Que sunbae haya llorado — significa que lo que siente por ti, {name}, es real."
+        "text": "Que senpai haya llorado — significa que lo que siente por ti, {name}, es real."
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Sé que me estoy metiendo donde no me llaman. Pero es que me preocupo por sunbae. — Ahora mismo en su casa las cosas están... complicadas. Sus padres... ...en fin. Por favor, trátala bien. Te lo pido."
+        "text": "Sé que me estoy metiendo donde no me llaman. Pero es que me preocupo por senpai. — Ahora mismo en su casa las cosas están... complicadas. Sus padres... ...en fin. Por favor, trátala bien. Te lo pido."
     },
     "haeun_warn_8": {
         "name": "{name}",
@@ -467,7 +471,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae es de las que creen que tienen que ser perfectas. De las que creen que llorar es perder."
+        "text": "Senpai es de las que creen que tienen que ser perfectas. De las que creen que llorar es perder."
     },
     "haeun_warn_5c": {
         "name": "{name}",

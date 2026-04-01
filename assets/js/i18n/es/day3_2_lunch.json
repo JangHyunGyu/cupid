@@ -97,6 +97,10 @@
         "name": "Dain",
         "text": "¡¿Qué?! ¿Y yo?!"
     },
+    "lunch3_harem_1": {
+        "name": "{name}",
+        "text": "*Los tres compartimos. Incómodo, pero — no estuvo mal. Nadie se enfadó. Extrañamente, parece que un mundo donde esto es posible sí existe.*"
+    },
     "lunch3_expose_1": {
         "name": "{name}",
         "text": "*En el momento en que dije compartamos entre todos — Dain habló primero.*"

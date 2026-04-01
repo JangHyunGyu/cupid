@@ -17,7 +17,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "ソヨン",
-        "text": "「まあ、分かってた。あなたは最初から私の思い通りにならなかったから。」"
+        "text": "「まあ、分かってた。あんたは最初から私の思い通りにならなかったから。」"
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "after5_farewell_dain_4_ins2": {
         "name": "ダイン",
-        "text": "……うまくやりなよ。マジで。"
+        "text": "「……うまくやりなよ。マジで。」"
     },
     "after5_farewell_dain_4_ins3": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "after5_last_chance_2_ins5": {
         "name": "ソヨン",
-        "text": "……遅い。"
+        "text": "「……遅い。」"
     },
     "after5_last_chance_2_ins6": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "after5_last_chance_2_ins7": {
         "name": "ソヨン",
-        "text": "でも——遅くない。逃げずに戻ってきたから。"
+        "text": "「でも——遅くない。逃げずに戻ってきたから。」"
     },
     "after5_last_chance_2_ins8": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "after5_last_chance_2_ins9": {
         "name": "ソヨン",
-        "text": "今度はちゃんと握って。"
+        "text": "「今度はちゃんと握って。」"
     },
     "after5_last_chance_2_ins10": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "after5_last_chance_2_ins13": {
         "name": "ダイン",
-        "text": "え、マジで？！"
+        "text": "「え、マジで？！」"
     },
     "after5_last_chance_2_ins14": {
         "name": "{name}",
@@ -237,7 +237,7 @@
     },
     "after5_last_chance_2_ins15": {
         "name": "ダイン",
-        "text": "……マジで？"
+        "text": "「……マジで？」"
     },
     "after5_last_chance_2_ins16": {
         "name": "{name}",
@@ -245,7 +245,7 @@
     },
     "after5_last_chance_2_ins17": {
         "name": "ダイン",
-        "text": "あたし——待ってたんだよ。昨日から。ていうか一昨日から。"
+        "text": "「あたし——待ってたんだよ。昨日から。ていうか一昨日から。」"
     },
     "after5_last_chance_2_ins18": {
         "name": "{name}",
@@ -253,7 +253,7 @@
     },
     "after5_last_chance_2_ins19": {
         "name": "ダイン",
-        "text": "もー なんで泣くの——嬉しいことなのに——"
+        "text": "「もー なんで泣くの——嬉しいことなのに——」"
     },
     "after5_confess_react_yuna_ins": {
         "name": "{name}",
@@ -261,7 +261,7 @@
     },
     "after5_confess_react_yuna_ins2": {
         "name": "ユナ",
-        "text": "……知ってた。"
+        "text": "「……知ってた。」"
     },
     "after5_confess_react_yuna_ins3": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "after5_confess_react_yuna_ins6": {
         "name": "ユナ",
-        "text": "……読んでくれたなら、それでいい。"
+        "text": "「……読んでくれたなら、それでいい。」"
     },
     "after5_confess_react_yuna_ins7": {
         "name": "{name}",

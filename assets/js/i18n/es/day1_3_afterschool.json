@@ -118,11 +118,11 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Estoy por irme a casa cuando — una voz detrás de mí.*"
+        "text": "*Toca la puerta de la sala de profesores. La profesora abre.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Profesora",
-        "text": "{name}. Espera un momento."
+        "text": "Oh, ¿{name}? ¿Qué pasa?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
@@ -280,7 +280,7 @@
     },
     "after_nurse_enter_9": {
         "name": "{name}",
-        "text": "*Bebo agua y miré alrededor. Una pequeña maceta en la esquina.*"
+        "text": "*Bebo agua y miro alrededor. Una pequeña maceta en la esquina.*"
     },
     "after_nurse_enter_10": {
         "name": "Enfermera",

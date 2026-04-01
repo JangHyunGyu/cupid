@@ -118,11 +118,11 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Ich will gerade nach Hause gehen, als — eine Stimme von hinten.*"
+        "text": "*Klopft an die Tür des Lehrerzimmers. Die Klassenlehrerin öffnet.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Klassenlehrerin",
-        "text": "{name}. Warte kurz."
+        "text": "Oh, {name}? Was gibt's?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
@@ -438,7 +438,7 @@
     },
     "after_nurse_enter_4_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "Deine Uniform ist steif wie ein Brett. Riecht auch nach Stärke. *Schnüffel* Oh, da ist auch Kirschblütenduft dabei. Ein romantischer Austauschschüler."
+        "text": "Deine Uniform ist steif wie ein Brett. Riecht auch nach Stärke. *Schnüffel* Oh, da ist auch Kirschblütenduft dabei. Ein romantischer Transferschüler."
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
@@ -542,7 +542,7 @@
     },
     "after_nurse_enter_11_ins10": {
         "name": "Schulkrankenschwester",
-        "text": "Oh, Austauschschüler."
+        "text": "Oh, Transferschüler."
     },
     "after_nurse_enter_11_ins11": {
         "name": "Schulkrankenschwester",

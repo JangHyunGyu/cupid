@@ -225,7 +225,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Homeroom Teacher",
-        "text": "*Hesitates for a moment.* ...Me? Work documents. — What were you expecting?"
+        "text": "*Hesitates briefly* ...Various things. Mainly — novels."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Homeroom Teacher",
@@ -265,7 +265,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Homeroom Teacher",
-        "text": "*Her expression stiffens slightly.* ...Managing my expression is part of the job too."
+        "text": "*Covers her mouth with her coffee cup* ...Expression management failure. Fine, go ahead."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Homeroom Teacher",

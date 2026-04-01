@@ -44,7 +44,7 @@
     },
     "after3_seo_2": {
         "name": "{name}",
-        "text": "*Das habe ich noch nie gesehen. Die perfekte Schülerratsvorsitzende — wehrlos über dem Tisch zusammengesunken.*"
+        "text": "*Das habe ich noch nie gesehen. Die perfekte Schülersprecherin — wehrlos über dem Tisch zusammengesunken.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -124,7 +124,7 @@
     },
     "after3_yuna_5": {
         "name": "{name}",
-        "text": "*‚Eines Tages kam ein Austauschschüler. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.‘*"
+        "text": "*‚Eines Tages kam ein Transferschüler. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.‘*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -137,6 +137,10 @@
     "after3_yuna_8": {
         "name": "Yuna",
         "text": "...Das."
+    },
+    "after3_yuna_8b": {
+        "name": "Yuna",
+        "text": "*Kommt schnell näher und reißt das Notizbuch weg* ...Hab ich nicht erlaubt."
     },
     "after3_yuna_9": {
         "name": "{name}",
@@ -156,7 +160,7 @@
     },
     "after3_yuna_choice1_2": {
         "name": "{name}",
-        "text": "‚Ein Austauschschüler kam in die Bibliothek‘ ist nur ein Zufall?"
+        "text": "‚Ein Transferschüler kam in die Bibliothek‘ ist nur ein Zufall?"
     },
     "after3_yuna_choice1_3": {
         "name": "Yuna",
@@ -300,7 +304,7 @@
     },
     "after3_confront_choice": {
         "name": "{name}",
-        "text": "*Seoyeon sieht mich geradeheraus an. Nicht mit den Augen einer Schülerratsvorsitzenden. Mit den Augen eines Menschen.*",
+        "text": "*Seoyeon sieht mich geradeheraus an. Nicht mit den Augen einer Schülersprecherin. Mit den Augen eines Menschen.*",
         "choices": [
             "Ehrlich zugeben",
             "Die Uhrzeiten sind unterschiedlich, also dachte ich, es wäre in Ordnung",

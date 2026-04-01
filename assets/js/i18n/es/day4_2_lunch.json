@@ -5,7 +5,7 @@
     },
     "date_seo_2": {
         "name": "{name}",
-        "text": "*Parece otra persona. No -- es la misma persona, pero un lado diferente.*"
+        "text": "*Parece otra persona. No — es la misma persona, pero un lado diferente.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "date_seo_pretty_high": {
         "name": "{name}",
-        "text": "*Seoyeon se detiene un momento. -- Y luego sonríe. No con los labios, sino con los ojos.*"
+        "text": "*Seoyeon se detiene un momento. — Y luego sonríe. No con los labios, sino con los ojos.*"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
@@ -57,7 +57,7 @@
     },
     "date_seo_duck_4": {
         "name": "{name}",
-        "text": "*Suena casual -- pero la experiencia de Seoyeon se filtra en esas palabras.*"
+        "text": "*Suena casual — pero la experiencia de Seoyeon se filtra en esas palabras.*"
     },
     "date_seo_flower": {
         "name": "{name}",
@@ -77,11 +77,11 @@
     },
     "date_seo_succulent_3": {
         "name": "Seoyeon",
-        "text": "Si puedes mantenerla viva. -- Si no puedes, me la llevo de vuelta."
+        "text": "Si puedes mantenerla viva. — Si no puedes, me la llevo de vuelta."
     },
     "date_seo_end": {
         "name": "{name}",
-        "text": "*Un regalo o una prueba. -- Probablemente ambos.*"
+        "text": "*Un regalo o una prueba. — Probablemente ambos.*"
     },
     "date_yuna_1": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "date_yuna_2": {
         "name": "{name}",
-        "text": "*¿Yuna siempre se veía así? -- Es la primera vez que la veo fuera del uniforme.*"
+        "text": "*¿Yuna siempre se veía así? — Es la primera vez que la veo fuera del uniforme.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "{name}",
-        "text": "*¿Otra vez? -- Yuna está pidiendo un otra vez.*"
+        "text": "*¿Otra vez? — Yuna está pidiendo un otra vez.*"
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
@@ -169,7 +169,7 @@
     },
     "date_yuna_end": {
         "name": "{name}",
-        "text": "*Yuna me mira mientras lo dice. -- En sus ojos está escrito por ti.*"
+        "text": "*Yuna me mira mientras lo dice. — En sus ojos está escrito por ti.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "date_dain_pretty_high": {
         "name": "{name}",
-        "text": "*Dain se queda congelada. Los ojos se le agrandan. -- Y se baja la gorra hasta cubrirse la cara.*"
+        "text": "*Dain se queda congelada. Los ojos se le agrandan. — Y se baja la gorra hasta cubrirse la cara.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -245,7 +245,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*No necesita rodillas. -- Lo dijo con ligereza, pero hay peso detrás.*"
+        "text": "*No necesita rodillas. — Lo dijo con ligereza, pero hay peso detrás.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -265,7 +265,7 @@
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*Está sonriendo. -- Pero sus ojos no.*"
+        "text": "*Está sonriendo. — Pero sus ojos no.*"
     },
     "date_seo_freetalk": {
         "name": "Seoyeon",

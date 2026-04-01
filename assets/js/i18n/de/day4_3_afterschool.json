@@ -17,7 +17,7 @@
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*-- Aber es ist bereits zu spät.*"
+        "text": "*— Aber es ist bereits zu spät.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -37,11 +37,11 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "*Ich erinnere mich an die Worte, die ich an meiner alten Schule nicht sagen konnte. Hunderte Male habe ich es wiederholt -- 'was wäre gewesen, wenn ich es damals gesagt hätte.' -- Diesmal gestehe ich es.*"
+        "text": "*Ich erinnere mich an die Worte, die ich an meiner alten Schule nicht sagen konnte. Hunderte Male habe ich es wiederholt — 'was wäre gewesen, wenn ich es damals gesagt hätte.' — Diesmal gestehe ich es.*"
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Du lächelst immer perfekt. Immer. Aber -- diese 0,5 Sekunden, wenn du aufhörst zu lächeln, lassen mich nicht los."
+        "text": "Seoyeon. Du lächelst immer perfekt. Immer. Aber — diese 0,5 Sekunden, wenn du aufhörst zu lächeln, lassen mich nicht los."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_8": {
         "name": "{name}",
-        "text": "*Seoyeon sagt nichts. Ihre Lippen zittern. Nicht die Schülerpräsidentin -- nur ein Mädchen, das dort steht.*"
+        "text": "*Seoyeon sagt nichts. Ihre Lippen zittern. Nicht die Schülersprecherin — nur ein Mädchen, das dort steht.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -69,11 +69,11 @@
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "-- Du hast keine Ahnung, wie lange ich mich zurückgehalten habe."
+        "text": "— Du hast keine Ahnung, wie lange ich mich zurückgehalten habe."
     },
     "confess_seo_yes_12": {
         "name": "{name}",
-        "text": "*Seoyeon streckt ihren kleinen Finger aus. Derselbe kleine Finger, den ich am Tag 1 gesehen habe. -- Damals dachte ich, es sei nur eine Angewohnheit, aber das ist Seoyeons Art, ein Versprechen zu machen.*"
+        "text": "*Seoyeon streckt ihren kleinen Finger aus. Derselbe kleine Finger, den ich am Tag 1 gesehen habe. — Damals dachte ich, es sei nur eine Angewohnheit, aber das ist Seoyeons Art, ein Versprechen zu machen.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "confess_seo_no_3": {
         "name": "{name}",
-        "text": "*Seoyeon lächelt. Ein geübtes Lächeln. -- Sie dreht sich um und geht. Beim dritten Schritt bleibt sie stehen.*"
+        "text": "*Seoyeon lächelt. Ein geübtes Lächeln. — Sie dreht sich um und geht. Beim dritten Schritt bleibt sie stehen.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
@@ -109,7 +109,7 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*-- Aber es ist bereits zu spät.*"
+        "text": "*— Aber es ist bereits zu spät.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "Du warst -- die Art von Mensch, die sich neben einen setzt, statt zu reden. Diese Stille war wärmer als alle Worte."
+        "text": "Du warst — die Art von Mensch, die sich neben einen setzt, statt zu reden. Diese Stille war wärmer als alle Worte."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
@@ -149,7 +149,7 @@
     },
     "confess_yuna_yes_8": {
         "name": "{name}",
-        "text": "*Yunas ausdruckslose Miene bricht auf. Ihre träge Stimme verschwindet, ersetzt durch die kleinste -- kaum hörbare -- Stimme. Sie umklammert ihren Ärmel.*"
+        "text": "*Yunas ausdruckslose Miene bricht auf. Ihre träge Stimme verschwindet, ersetzt durch die kleinste — kaum hörbare — Stimme. Sie umklammert ihren Ärmel.*"
     },
     "confess_yuna_yes_9": {
         "name": "Yuna",
@@ -189,7 +189,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": "*-- Aber es ist bereits zu spät.*"
+        "text": "*— Aber es ist bereits zu spät.*"
     },
     "confess_dain_choice": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain. Weißt du, dass deine Augen zu kleinen Halbmonden werden, wenn du lächelst? Wahrscheinlich nicht -- es ist dein eigenes Gesicht."
+        "text": "Dain. Weißt du, dass deine Augen zu kleinen Halbmonden werden, wenn du lächelst? Wahrscheinlich nicht — es ist dein eigenes Gesicht."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
@@ -217,7 +217,7 @@
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "-- Wenn diese Augen mich nicht ansehen, bekomme ich keine Luft. Ich weiß nicht, seit wann das so ist."
+        "text": "— Wenn diese Augen mich nicht ansehen, bekomme ich keine Luft. Ich weiß nicht, seit wann das so ist."
     },
     "confess_dain_yes_6": {
         "name": "{name}",
@@ -229,11 +229,11 @@
     },
     "confess_dain_yes_8": {
         "name": "{name}",
-        "text": "*Dain ist erstarrt. Ihre Energie ist verschwunden. -- Und dann füllen sich ihre Augen langsam. Sie vergräbt ihr Gesicht in beiden Händen. Die Röte hat sich bis zum Nacken ausgebreitet.*"
+        "text": "*Dain ist erstarrt. Ihre Energie ist verschwunden. — Und dann füllen sich ihre Augen langsam. Sie vergräbt ihr Gesicht in beiden Händen. Die Röte hat sich bis zum Nacken ausgebreitet.*"
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Moment. Ich krieg keine Luft -- ich glaub ich weine gleich -- warum weine ich, ich bin doch glücklich --"
+        "text": "...Moment. Ich krieg keine Luft — ich glaub ich weine gleich — warum weine ich, ich bin doch glücklich —"
     },
     "confess_dain_yes_10": {
         "name": "Dain",
@@ -249,7 +249,7 @@
     },
     "confess_dain_no_3": {
         "name": "{name}",
-        "text": "*Dain lässt einen Volleyball aufprallen. Einmal. Zweimal. -- Beim dritten Mal hält sie inne.*"
+        "text": "*Dain lässt einen Volleyball aufprallen. Einmal. Zweimal. — Beim dritten Mal hält sie inne.*"
     },
     "confess_dain_no_4": {
         "name": "Dain",
@@ -325,7 +325,7 @@
     },
     "confess_dain_no_4_ins2": {
         "name": "{name}",
-        "text": "*--- Früher Morgen ---*"
+        "text": "*—- Früher Morgen —-*"
     },
     "confess_dain_no_4_ins3": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
-        "text": "*--- Morgen ---*"
+        "text": "*—- Morgen —-*"
     },
     "confess_dain_no_4_ins23": {
         "name": "{name}",

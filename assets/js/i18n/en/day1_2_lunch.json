@@ -210,7 +210,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Here we go! What do you want?! My pick is the crumble bread and strawberry milk!"
+        "text": "Here we go! What do you want?! My pick is the soboro bread and strawberry milk!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "lunch_dain_13": {
         "name": "Dain",
-        "text": "Ugh, fine! I'm buying, I'm buying! Ma'am, two crumble breads please!"
+        "text": "Ugh, fine! I'm buying, I'm buying! Ma'am, two soboro breads please!"
     },
     "lunch_dain_14": {
         "name": "{name}",
@@ -528,7 +528,7 @@
     },
     "lunch_dain_12_ins": {
         "name": "Dain",
-        "text": "Ughhh fine!! Two soboro buns!! Ma'am!!"
+        "text": "Ughhh fine!! Two soboro breads!! Ma'am!!"
     },
     "lunch_yuna_5_ins": {
         "name": "{name}",

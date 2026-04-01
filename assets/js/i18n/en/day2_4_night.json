@@ -110,11 +110,11 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "......\nI'll leave the rooftop open at lunch tomorrow. Whether you come or not is up to you"
+        "text": "I'll leave the rooftop open at lunch tomorrow. Come."
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Up to you,' she said. But it doesn't feel optional.*"
+        "text": "*She made it sound optional, but the tone says something will happen if I don't go.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",

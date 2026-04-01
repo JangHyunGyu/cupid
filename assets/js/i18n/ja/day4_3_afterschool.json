@@ -293,7 +293,7 @@
     },
     "confess_yuna_yes_8_ins2": {
         "name": "ユナ",
-        "text": "……行かないで。"
+        "text": "「……行かないで。」"
     },
     "confess_yuna_yes_9_ins": {
         "name": "{name}",
@@ -337,7 +337,7 @@
     },
     "confess_dain_no_4_ins5": {
         "name": "担任先生",
-        "text": "……来たんだ。"
+        "text": "「……来たんだ。」"
     },
     "confess_dain_no_4_ins6": {
         "name": "{name}",
@@ -345,7 +345,7 @@
     },
     "confess_dain_no_4_ins7": {
         "name": "担任先生",
-        "text": "呼んでないよ。」 *少し間を置いて* 「……でも来ると思ってた。"
+        "text": "「呼んでないよ。」 *少し間を置いて* 「……でも来ると思ってた。"
     },
     "confess_dain_no_4_ins8": {
         "name": "{name}",
@@ -357,7 +357,7 @@
     },
     "confess_dain_no_4_ins10": {
         "name": "担任先生",
-        "text": "最初の読者に……最後の章を見せたかったの。"
+        "text": "「最初の読者に……最後の章を見せたかったの。」"
     },
     "confess_dain_no_4_ins11": {
         "name": "{name}",
@@ -365,7 +365,7 @@
     },
     "confess_dain_no_4_ins12": {
         "name": "担任先生",
-        "text": "7年かかった。——書くのに3年、終わらせるのに4年。"
+        "text": "「7年かかった。——書くのに3年、終わらせるのに4年。」"
     },
     "confess_dain_no_4_ins13": {
         "name": "{name}",
@@ -393,11 +393,11 @@
     },
     "confess_dain_no_4_ins19": {
         "name": "担任先生",
-        "text": "……本当？"
+        "text": "「……本当？」"
     },
     "confess_dain_no_4_ins20": {
         "name": "担任先生",
-        "text": "……そう。"
+        "text": "「……そう。」"
     },
     "confess_dain_no_4_ins21": {
         "name": "{name}",
@@ -417,7 +417,7 @@
     },
     "confess_dain_no_4_ins25": {
         "name": "保健先生",
-        "text": "あ、来たんだ。"
+        "text": "「あ、来たんだ。」"
     },
     "confess_dain_no_4_ins26": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "confess_dain_no_4_ins28": {
         "name": "保健先生",
-        "text": "カウンセリングか……」 *椅子を回しながら* 「うん。最後のカウンセリング。"
+        "text": "「カウンセリングか……」 *椅子を回しながら* 「うん。最後のカウンセリング。"
     },
     "confess_dain_no_4_ins29": {
         "name": "{name}",
@@ -437,7 +437,7 @@
     },
     "confess_dain_no_4_ins30": {
         "name": "保健先生",
-        "text": "こういうこと聞いてもいい？"
+        "text": "「こういうこと聞いてもいい？」"
     },
     "confess_dain_no_4_ins31": {
         "name": "{name}",
@@ -449,7 +449,7 @@
     },
     "confess_dain_no_4_ins33": {
         "name": "保健先生",
-        "text": "……卒業しても保健室に来てくれる？"
+        "text": "「……卒業しても保健室に来てくれる？」"
     },
     "confess_dain_no_4_ins34": {
         "name": "{name}",
@@ -461,7 +461,7 @@
     },
     "confess_dain_no_4_ins36": {
         "name": "保健先生",
-        "text": "あ、ごめん。変な質問だよね？ 先生が生徒にこんなこと聞いたら——"
+        "text": "「あ、ごめん。変な質問だよね？ 先生が生徒にこんなこと聞いたら——」"
     },
     "confess_dain_no_4_ins37": {
         "name": "{name}",
@@ -473,7 +473,7 @@
     },
     "confess_dain_no_4_ins39": {
         "name": "保健先生",
-        "text": "……本当に？"
+        "text": "「……本当に？」"
     },
     "confess_dain_no_4_ins40": {
         "name": "{name}",

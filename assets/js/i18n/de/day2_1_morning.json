@@ -5,7 +5,7 @@
     },
     "morning2_start_2": {
         "name": "{name}",
-        "text": "*In dem Moment, als ich die Klassentür öffne -- ein Schlag in den Rücken.*"
+        "text": "*In dem Moment, als ich die Klassentür öffne — ein Schlag in den Rücken.*"
     },
     "morning2_dain_1": {
         "name": "Dain",
@@ -33,19 +33,19 @@
     },
     "morning2_note_1": {
         "name": "{name}",
-        "text": "*Ich will mich gerade setzen, als -- mir ein gefalteter Zettel auf meinem Tisch auffällt.*"
+        "text": "*Ich will mich gerade setzen, als — mir ein gefalteter Zettel auf meinem Tisch auffällt.*"
     },
     "morning2_note_2": {
         "name": "{name}",
-        "text": "*'Komm mittags zum Bibliotheksanbau. -- Yuna'*"
+        "text": "*'Komm mittags zum Bibliotheksanbau. — Yuna'*"
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*Dieselbe ordentliche Handschrift wie gestern. Kurz. Und der Ort ist konkret. -- Der 'Anbau' der Bibliothek? Das ist ein anderer Ort als gestern.*"
+        "text": "*Dieselbe ordentliche Handschrift wie gestern. Kurz. Und der Ort ist konkret. — Der 'Anbau' der Bibliothek? Das ist ein anderer Ort als gestern.*"
     },
     "morning2_seo_1": {
         "name": "{name}",
-        "text": "*Ich will den Zettel gerade einstecken, als -- eine vertraute Stimme vom Flur kommt.*"
+        "text": "*Ich will den Zettel gerade einstecken, als — eine vertraute Stimme vom Flur kommt.*"
     },
     "morning2_seo_2": {
         "name": "Seoyeon",
@@ -57,11 +57,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "Die Schülerratsvorsitzende kommt bis ins Klassenzimmer zum Grüßen?"
+        "text": "Die Schülersprecherin kommt bis ins Klassenzimmer zum Grüßen?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Ich bin nur vorbeigekommen. -- Hab auch heute einen schönen Tag."
+        "text": "Ich bin nur vorbeigekommen. — Hab auch heute einen schönen Tag."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Alter, zwei Tage als Neuer und die Schülerratsvorsitzende kommt dich grüßen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
+        "text": "Alter, zwei Tage als Neuer und die Schülersprecherin kommt dich grüßen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Kann man einen Menschen reservieren? -- Aber irgendwie hab ich keine Lust zu widersprechen.*"
+        "text": "*Kann man einen Menschen reservieren? — Aber irgendwie hab ich keine Lust zu widersprechen.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -157,11 +157,11 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*War wahrscheinlich welcher da. Vielleicht. -- Aber darum geht's wohl nicht.*"
+        "text": "*War wahrscheinlich welcher da. Vielleicht. — Aber darum geht's wohl nicht.*"
     },
     "morning2_haeun_1": {
         "name": "{name}",
-        "text": "*Im Flur, wo Seoyeon verschwunden ist -- ein Mädchen mit einem Schülerrats-Armband kommt näher.*"
+        "text": "*Im Flur, wo Seoyeon verschwunden ist — ein Mädchen mit einem Schülerrats-Armband kommt näher.*"
     },
     "morning2_haeun_2": {
         "name": "Haeun",
@@ -197,7 +197,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Jemand, der ein ganzes Jahr lang nie als Erste auf jemanden zugegangen ist -- ist auf mich zuerst zugekommen? Was bedeutet das?*"
+        "text": "*Jemand, der ein ganzes Jahr lang nie als Erste auf jemanden zugegangen ist — ist auf mich zuerst zugekommen? Was bedeutet das?*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Klassenlehrerin",
@@ -225,7 +225,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Klassenlehrerin",
-        "text": "*Zögert kurz.* ...Ich? Dienstliche Unterlagen. — Was hast du erwartet?"
+        "text": "*Zögert kurz* ...Verschiedenes. Hauptsächlich — Romane."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Klassenlehrerin",
@@ -265,7 +265,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Klassenlehrerin",
-        "text": "*Ihr Ausdruck wird kurz steif.* ...Mein Gesicht unter Kontrolle zu halten ist auch Teil der Arbeit."
+        "text": "*Verdeckt den Mund mit der Kaffeetasse* ...Gesichtsausdruck-Management versagt. Schon gut, geh."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Klassenlehrerin",

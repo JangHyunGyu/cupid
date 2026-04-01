@@ -12,8 +12,8 @@
         "text": "Yo, date today right? Dain blasted it in the group chat lol\nBut hey. Just go with one."
     },
     "minsu_cheer_3": {
-        "name": "Minsu",
-        "text": "Yeah, I trust you. — Go get 'em."
+        "name": "{name}",
+        "text": "I know."
     },
     "minsu_cheer_4": {
         "name": "{name}",

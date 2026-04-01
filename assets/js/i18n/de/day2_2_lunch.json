@@ -86,7 +86,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Nach 'war' kommt nichts mehr. Vergangenheit. -- Soll ich fragen?*",
+        "text": "*Nach 'war' kommt nichts mehr. Vergangenheit. — Soll ich fragen?*",
         "choices": [
             "Diese Person, wo ist sie jetzt?",
             "Nicht fragen und sich neben sie setzen"
@@ -122,7 +122,7 @@
     },
     "lunch2_yuna_c1_8": {
         "name": "{name}",
-        "text": "*Ich sollte die Stimmung ändern. -- Versuchen wir es locker.*"
+        "text": "*Ich sollte die Stimmung ändern. — Versuchen wir es locker.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*Ich war immer stolz auf mein Feingefühl. -- Ich lag falsch. Nicht bei dieser Person.*"
+        "text": "*Ich war immer stolz auf mein Feingefühl. — Ich lag falsch. Nicht bei dieser Person.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Ein Buch statt Worte anbieten. -- Die Sprache dieser Person sind Taten. Anders als Seoyeon, aber auf ihre eigene Art.*"
+        "text": "*Ein Buch statt Worte anbieten. — Die Sprache dieser Person sind Taten. Anders als Seoyeon, aber auf ihre eigene Art.*"
     },
     "lunch2_yuna_c2_5": {
         "name": "{name}",
@@ -178,11 +178,11 @@
     },
     "lunch2_yuna_c2_8": {
         "name": "Yuna",
-        "text": "Es ist ruhig. -- Aber ich bin nicht allein."
+        "text": "Es ist ruhig. — Aber ich bin nicht allein."
     },
     "lunch2_yuna_c2_9": {
         "name": "{name}",
-        "text": "*Zwei Sätze. Für Yuna ist das eine lange Rede. -- Und alles steckt in diesen zwei Sätzen.*"
+        "text": "*Zwei Sätze. Für Yuna ist das eine lange Rede. — Und alles steckt in diesen zwei Sätzen.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Sie schien mehr hören zu wollen -- aber ich habe absichtlich zurückgehalten.*"
+        "text": "*Sie schien mehr hören zu wollen — aber ich habe absichtlich zurückgehalten.*"
     },
     "lunch2_seo_8": {
         "name": "{name}",
-        "text": "*Beim Essen -- die Dachtür öffnet sich. Dain ist hochgekommen.*"
+        "text": "*Beim Essen — die Dachtür öffnet sich. Dain ist hochgekommen.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -230,7 +230,7 @@
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Ach komm, wer braucht eine Genehmigung zum Essen! -- Oh, eine Lunchbox! Sieht lecker aus!"
+        "text": "Ach komm, wer braucht eine Genehmigung zum Essen! — Oh, eine Lunchbox! Sieht lecker aus!"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -258,7 +258,7 @@
     },
     "lunch2_seo_18": {
         "name": "{name}",
-        "text": "*Die Winkel dieses Dreiecks werden schärfer. -- Und ich fühle mich weniger wie ein Eckpunkt und mehr wie ein Opfer.*"
+        "text": "*Die Winkel dieses Dreiecks werden schärfer. — Und ich fühle mich weniger wie ein Eckpunkt und mehr wie ein Opfer.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "{name}",
-        "text": "*Seoyeons Finger streift meinen Mundwinkel. Sanft. Langsam. -- Langsamer als nötig.*"
+        "text": "*Seoyeons Finger streift meinen Mundwinkel. Sanft. Langsam. — Langsamer als nötig.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -294,7 +294,7 @@
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
-        "text": "*Braucht man drei Sekunden, um ein Reiskorn zu entfernen? -- Niemand hat es bemerkt, aber Seoyeons Ohrspitzen sind rot.*"
+        "text": "*Braucht man drei Sekunden, um ein Reiskorn zu entfernen? — Niemand hat es bemerkt, aber Seoyeons Ohrspitzen sind rot.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*Sie scheint leicht beleidigt. -- Aber ihre Haltung ist makellos. Typisch sie.*"
+        "text": "*Sie scheint leicht beleidigt. — Aber ihre Haltung ist makellos. Typisch sie.*"
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
@@ -334,7 +334,7 @@
     },
     "lunch2_dain_5": {
         "name": "{name}",
-        "text": "*Schere-Stein-Papier. -- Dain verliert wieder.*"
+        "text": "*Schere-Stein-Papier. — Dain verliert wieder.*"
     },
     "lunch2_dain_6": {
         "name": "Dain",
@@ -350,11 +350,11 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*Wir kaufen Brot und setzen uns auf eine Bank im Flur. -- Da kommt Seoyeon vorbei. Mit einer Lunchbox-Tasche.*"
+        "text": "*Wir kaufen Brot und setzen uns auf eine Bank im Flur. — Da kommt Seoyeon vorbei. Mit einer Lunchbox-Tasche.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon schaut hierher. Sie starrt mich eine halbe Sekunde an, wie ich neben Dain sitze und Brot esse -- und geht weiter.*"
+        "text": "*Seoyeon schaut hierher. Sie starrt mich eine halbe Sekunde an, wie ich neben Dain sitze und Brot esse — und geht weiter.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -379,23 +379,23 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*Dains Ausdruck erstarrt subtil. Sie beißt in ihr Soboro und dreht den Kopf weg.*"
+        "text": "*Dains Ausdruck erstarrt subtil. Sie beißt in ihr Soboro-Brötchen und dreht den Kopf weg.*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
-        "text": "*Dain nickt und beißt in ihr Soboro-Brot. Tut so, als wäre es ihr egal.*"
+        "text": "*Dain nickt und beißt in ihr Soboro-Brötchen. Tut so, als wäre es ihr egal.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Na-Natürlich stört es mich! Was soll's! *beißt kräftig ins Melonenbrötchen* Ich hab nur gefragt!!"
+        "text": "Na-Natürlich stört es mich! Was soll's! *beißt kräftig ins Soboro-Brötchen* Ich hab nur gefragt!!"
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Ihre Ohrläppchen. Rot. -- Die Mädchen an dieser Schule haben sehr ehrliche Ohren.*"
+        "text": "*Ihre Ohrläppchen. Rot. — Die Mädchen an dieser Schule haben sehr ehrliche Ohren.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*Das Knuspern von Dains Soboro-Brot ist ungewöhnlich laut. Seoyeons Blick, Dains rote Ohren -- die Mittagspause wird von Tag zu Tag komplizierter.*"
+        "text": "*Das Knuspern von Dains Soboro-Brötchen ist ungewöhnlich laut. Seoyeons Blick, Dains rote Ohren — die Mittagspause wird von Tag zu Tag komplizierter.*"
     },
     "lunch2_seo_1_check": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "lunch2_dain_end_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Schaut auf* Oh, der Austauschschüler von gestern."
+        "text": "*Schaut auf* Oh, der Transferschüler von gestern."
     },
     "lunch2_dain_end_ins6": {
         "name": "{name}",

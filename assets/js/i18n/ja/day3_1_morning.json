@@ -482,7 +482,7 @@
     },
     "morning3_dain_gate_4_ins": {
         "name": "ダイン",
-        "text": "こうした方が速いの！！疑問持たないで！！"
+        "text": "「こうした方が速いの！！疑問持たないで！！」"
     },
     "morning3_dain_gate_5_ins": {
         "name": "{name}",
@@ -526,7 +526,7 @@
     },
     "hidden_homeroom_d3_reveal_2_ins": {
         "name": "担任先生",
-        "text": "……何でもないよ。業務書類。"
+        "text": "「……何でもないよ。業務書類。」"
     },
     "hidden_homeroom_d3_reveal_2_ins2": {
         "name": "{name}",
@@ -538,7 +538,7 @@
     },
     "hidden_homeroom_d3_reveal_2_ins4": {
         "name": "担任先生",
-        "text": "……察しがいいのは長所だけど、たまに短所ね。"
+        "text": "「……察しがいいのは長所だけど、たまに短所ね。」"
     },
     "hidden_homeroom_d3_reveal_2_ins5": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "hidden_homeroom_d3_reveal_1_ins2": {
         "name": "担任先生",
-        "text": "7年」 *窓の外を見ながら* 「大学の時に始めたの。文芸創作科」"
+        "text": "「7年」 *窓の外を見ながら* 「大学の時に始めたの。文芸創作科」"
     },
     "hidden_homeroom_d3_reveal_1_ins3": {
         "name": "{name}",
@@ -558,7 +558,7 @@
     },
     "hidden_homeroom_d3_reveal_1_ins4": {
         "name": "担任先生",
-        "text": "卒業してデビューを目指したんだけど——2年間で3回落ちた。生活費は底をつき、親には「もう現実を見なさい」って。"
+        "text": "「卒業してデビューを目指したんだけど——2年間で3回落ちた。生活費は底をつき、親には「もう現実を見なさい」って。」"
     },
     "hidden_homeroom_d3_reveal_1_ins5": {
         "name": "{name}",
@@ -598,7 +598,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins": {
         "name": "担任先生",
-        "text": "……初めての読者志願。7年ぶりに。"
+        "text": "「……初めての読者志願。7年ぶりに。」"
     },
     "hidden_homeroom_d3_reveal_6_ins2": {
         "name": "{name}",
@@ -614,7 +614,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins5": {
         "name": "担任先生",
-        "text": "静かだから。——職員室はコーヒーの匂いもするし、他の先生の目もあるし。"
+        "text": "「静かだから。——職員室はコーヒーの匂いもするし、他の先生の目もあるし。」"
     },
     "hidden_homeroom_d3_reveal_6_ins6": {
         "name": "{name}",
@@ -634,7 +634,7 @@
     },
     "hidden_nurse_d3_2_ins3": {
         "name": "担任先生",
-        "text": "……ありがとう。"
+        "text": "「……ありがとう。」"
     },
     "hidden_nurse_d3_2_ins4": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "hidden_nurse_d3_1_ins4": {
         "name": "保健先生",
-        "text": "怪我してないのに保健室？"
+        "text": "「怪我してないのに保健室？」"
     },
     "hidden_nurse_d3_1_ins5": {
         "name": "{name}",
@@ -670,7 +670,7 @@
     },
     "hidden_nurse_d3_3_ins2": {
         "name": "保健先生",
-        "text": "……座って。"
+        "text": "「……座って。」"
     },
     "hidden_nurse_d3_3_ins3": {
         "name": "{name}",
@@ -686,7 +686,7 @@
     },
     "hidden_nurse_d3_5_ins2": {
         "name": "保健先生",
-        "text": "……そんな感じ？じゃあ来て正解だよ。"
+        "text": "「……そんな感じ？じゃあ来て正解だよ。」"
     },
     "hidden_nurse_d3_5_ins3": {
         "name": "{name}",
@@ -710,7 +710,7 @@
     },
     "hidden_nurse_d3_5_ins8": {
         "name": "保健先生",
-        "text": "それ恋愛相談？"
+        "text": "「それ恋愛相談？」"
     },
     "hidden_nurse_d3_5_ins9": {
         "name": "{name}",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_5_ins12": {
         "name": "保健先生",
-        "text": "保健の先生がこんな相談まで受けるのかな……」 *頬杖をつきながら* 「でも聞いてあげる。保健室だからね。体だけじゃなくて心も健康じゃないと」"
+        "text": "「保健の先生がこんな相談まで受けるのかな……」 *頬杖をつきながら* 「でも聞いてあげる。保健室だからね。体だけじゃなくて心も健康じゃないと」"
     },
     "hidden_nurse_d3_5_ins13": {
         "name": "{name}",
@@ -738,7 +738,7 @@
     },
     "hidden_nurse_d3_5_ins15": {
         "name": "保健先生",
-        "text": "……あったよ。大学病院で働いてた時。"
+        "text": "「……あったよ。大学病院で働いてた時。」"
     },
     "hidden_nurse_d3_5_ins16": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "hidden_nurse_d3_6_ins3": {
         "name": "保健先生",
-        "text": "……やめたっていうより。逃げたんだよね」 *少し笑いながら* 「かっこいい理由なんてないよ」"
+        "text": "「……やめたっていうより。逃げたんだよね」 *少し笑いながら* 「かっこいい理由なんてないよ」"
     },
     "hidden_nurse_d3_6_ins4": {
         "name": "{name}",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_6_ins6": {
         "name": "保健先生",
-        "text": "……いたよ。救えなかった患者が一人」 *視線が遠くなる* 「その人のせいで、ここに来たの」"
+        "text": "「……いたよ。救えなかった患者が一人」 *視線が遠くなる* 「その人のせいで、ここに来たの」"
     },
     "hidden_nurse_d3_6_ins7": {
         "name": "{name}",
@@ -830,10 +830,10 @@
     },
     "morning3_date_yuna_1_ins": {
         "name": "ソヨン",
-        "text": "卵焼き、ちょっと味が濃いね。6点。"
+        "text": "「卵焼き、ちょっと味が濃いね。6点。」"
     },
     "morning3_end_ins": {
         "name": "ユナ",
-        "text": "……おいしい。"
+        "text": "「……おいしい。」"
     }
 }

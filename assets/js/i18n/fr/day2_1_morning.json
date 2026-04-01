@@ -5,7 +5,7 @@
     },
     "morning2_start_2": {
         "name": "{name}",
-        "text": "*Au moment où j'ouvre la porte de la classe -- un choc dans le dos.*"
+        "text": "*Au moment où j'ouvre la porte de la classe — un choc dans le dos.*"
     },
     "morning2_dain_1": {
         "name": "Dain",
@@ -33,19 +33,19 @@
     },
     "morning2_note_1": {
         "name": "{name}",
-        "text": "*Je m'apprête à m'asseoir quand -- je remarque un mot plié sur mon bureau.*"
+        "text": "*Je m'apprête à m'asseoir quand — je remarque un mot plié sur mon bureau.*"
     },
     "morning2_note_2": {
         "name": "{name}",
-        "text": "*'Viens à l'annexe de la bibliothèque à midi. -- Yuna'*"
+        "text": "*'Viens à l'annexe de la bibliothèque à midi. — Yuna'*"
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La même écriture soignée qu'hier. Court. Et le lieu est précis. -- L'annexe de la bibliothèque ? C'est un endroit différent d'hier.*"
+        "text": "*La même écriture soignée qu'hier. Court. Et le lieu est précis. — L'annexe de la bibliothèque ? C'est un endroit différent d'hier.*"
     },
     "morning2_seo_1": {
         "name": "{name}",
-        "text": "*Je suis sur le point de mettre le mot dans ma poche quand -- une voix familière depuis le couloir.*"
+        "text": "*Je suis sur le point de mettre le mot dans ma poche quand — une voix familière depuis le couloir.*"
     },
     "morning2_seo_2": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Je ne faisais que passer. -- Passe une bonne journée aussi."
+        "text": "Je ne faisais que passer. — Passe une bonne journée aussi."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*On peut revendiquer une personne ? -- Mais bizarrement, j'ai pas envie de protester.*"
+        "text": "*On peut revendiquer une personne ? — Mais bizarrement, j'ai pas envie de protester.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -157,11 +157,11 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Y en avait sûrement. Peut-être. -- Mais c'est pas vraiment la question.*"
+        "text": "*Y en avait sûrement. Peut-être. — Mais c'est pas vraiment la question.*"
     },
     "morning2_haeun_1": {
         "name": "{name}",
-        "text": "*Dans le couloir où Seoyeon a disparu -- une fille portant un bracelet du conseil des élèves s'approche.*"
+        "text": "*Dans le couloir où Seoyeon a disparu — une fille portant un bracelet du conseil des élèves s'approche.*"
     },
     "morning2_haeun_2": {
         "name": "Haeun",
@@ -173,7 +173,7 @@
     },
     "morning2_haeun_4": {
         "name": "Haeun",
-        "text": "La présidente... enfin, Seoyeon sunbae semble un peu différente ces derniers temps."
+        "text": "La présidente... enfin, Seoyeon-senpai semble un peu différente ces derniers temps."
     },
     "morning2_haeun_5": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Quelqu'un qui n'a jamais approché personne en premier pendant toute une année -- est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
+        "text": "*Quelqu'un qui n'a jamais approché personne en premier pendant toute une année — est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professeure principale",
@@ -225,7 +225,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Professeure principale",
-        "text": "*Hésite un instant.* ...Moi ? Des dossiers. — Tu t'attendais à quoi ?"
+        "text": "*Hésite un instant* ...Diverses choses. Surtout — des romans."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Professeure principale",
@@ -265,7 +265,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",
-        "text": "*Son expression se fige légèrement.* ...Gérer ses expressions, ça fait aussi partie du boulot."
+        "text": "*Cache sa bouche derrière sa tasse de café* ...Échec de la gestion des expressions. D'accord, vas-y."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professeure principale",

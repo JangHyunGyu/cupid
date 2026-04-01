@@ -138,6 +138,10 @@
         "name": "Yuna",
         "text": "...That."
     },
+    "after3_yuna_8b": {
+        "name": "Yuna",
+        "text": "*Quickly approaches and snatches the notebook* ...I didn't say you could."
+    },
     "after3_yuna_9": {
         "name": "{name}",
         "text": "*Her ears. Red. — It’s the first time I’ve seen Yuna blush.*"
