@@ -297,7 +297,7 @@
     },
     "confess_yuna_yes_9_ins": {
         "name": "{name}",
-        "text": "*\"Esta vez.\" Alguien se fue antes. Yuna está reabriendo esa herida, y aun así me agarra.*"
+        "text": "*Esta vez. Alguien se fue antes. Yuna está reabriendo esa herida, y aun así me agarra.*"
     },
     "confess_yuna_no_4_ins": {
         "name": "{name}",
@@ -317,7 +317,7 @@
     },
     "confess_dain_yes_10_ins": {
         "name": "{name}",
-        "text": "*\"Muchísimo.\" La forma de Dain de expresar sus sentimientos es simple. Pero esa simplicidad es la prueba de su sinceridad.*"
+        "text": "*Muchísimo. La forma de Dain de expresar sus sentimientos es simple. Pero esa simplicidad es la prueba de su sinceridad.*"
     },
     "confess_dain_no_4_ins": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "confess_dain_no_4_ins2": {
         "name": "{name}",
-        "text": "*Las escenas de confesión de las tres principales continúan normalmente. Este evento oculto se reproduce por separado antes de la cita principal en la franja horaria temprana del Día 4. Solo si la confesión principal del Día 4 fue aplazada (`day4_waited`), se añadirá una rama para elegir al personaje oculto en el Día 5.*"
+        "text": "*--- Madrugada ---*"
     },
     "confess_dain_no_4_ins3": {
         "name": "{name}",
@@ -345,7 +345,7 @@
     },
     "confess_dain_no_4_ins7": {
         "name": "Profesora",
-        "text": "Yo no te llamé.\" *Una pausa* \"...Pero sabía que vendrías."
+        "text": "Yo no te llamé. *Una pausa* ...Pero sabía que vendrías."
     },
     "confess_dain_no_4_ins8": {
         "name": "{name}",
@@ -401,11 +401,11 @@
     },
     "confess_dain_no_4_ins21": {
         "name": "{name}",
-        "text": "*En el segundo \"bien\" se le quebró la voz. La primera impresión de su primer lector. La palabra que esperó siete años.*"
+        "text": "*En el segundo bien se le quebró la voz. La primera impresión de su primer lector. La palabra que esperó siete años.*"
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
-        "text": "*Las escenas de confesión de las tres principales continúan normalmente. Este evento oculto se reproduce por separado antes de la cita principal en la franja matutina del Día 4. Solo si la confesión principal del Día 4 fue aplazada (`day4_waited`), se añadirá una rama para elegir al personaje oculto en el Día 5.*"
+        "text": "*--- Mañana ---*"
     },
     "confess_dain_no_4_ins23": {
         "name": "{name}",
@@ -421,7 +421,7 @@
     },
     "confess_dain_no_4_ins26": {
         "name": "{name}",
-        "text": "*\"Has venido\" suena medio tono más bajo de lo habitual. Los sentimientos de esta persona hay que leerlos en el tono.*"
+        "text": "*Has venido suena medio tono más bajo de lo habitual. Los sentimientos de esta persona hay que leerlos en el tono.*"
     },
     "confess_dain_no_4_ins27": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "confess_dain_no_4_ins28": {
         "name": "Enfermera",
-        "text": "Consulta...\" *Girando la silla* \"Sí. La última consulta."
+        "text": "Consulta... *Girando la silla* Sí. La última consulta."
     },
     "confess_dain_no_4_ins29": {
         "name": "{name}",
@@ -477,7 +477,7 @@
     },
     "confess_dain_no_4_ins40": {
         "name": "{name}",
-        "text": "*\"En serio.\" Su frase de confirmación. Hoy fui yo quien la escuchó primero.*"
+        "text": "*En serio. Su frase de confirmación. Hoy fui yo quien la escuchó primero.*"
     },
     "confess_dain_no_4_ins41": {
         "name": "{name}",
@@ -489,7 +489,7 @@
     },
     "confess_dain_no_4_ins43": {
         "name": "Enfermera",
-        "text": "*Volviendo a un tono alegre, pero con la voz temblorosa* \"¡Bueno~ pues última consulta finalizada! La próxima cita — la apunto para después de la graduación~"
+        "text": "*Volviendo a un tono alegre, pero con la voz temblorosa* ¡Bueno~ pues última consulta finalizada! La próxima cita — la apunto para después de la graduación~"
     },
     "confess_dain_no_4_ins44": {
         "name": "{name}",

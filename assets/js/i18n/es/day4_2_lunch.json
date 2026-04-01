@@ -315,11 +315,11 @@
     },
     "date_seo_pretty_high_3_ins": {
         "name": "Seoyeon",
-        "text": "*Apartándose el pelo* \"...No te hagas ilusiones."
+        "text": "*Apartándose el pelo* ...No te hagas ilusiones."
     },
     "date_seo_flower_ins": {
         "name": "Seoyeon",
-        "text": "*Deteniéndose* \"...¿Entramos?"
+        "text": "*Deteniéndose* ...¿Entramos?"
     },
     "date_seo_succulent_2_ins": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "date_yuna_pretty_high_5_ins2": {
         "name": "Yuna",
-        "text": "*Poniéndose roja* \"...Ya vale."
+        "text": "*Poniéndose roja* ...Ya vale."
     },
     "date_yuna_bookstore_2_ins": {
         "name": "{name}",
@@ -351,7 +351,7 @@
     },
     "date_dain_shop_3_ins": {
         "name": "Dain",
-        "text": "*Bajo la gorra* \"...Dilo una vez más y te pego de verdad."
+        "text": "*Bajo la gorra* ...Dilo una vez más y te pego de verdad."
     },
     "date_dain_arcade_2_ins": {
         "name": "{name}",
@@ -363,10 +363,10 @@
     },
     "date_dain_arcade_3_ins2": {
         "name": "Dain",
-        "text": "*Gritando de emoción* \"¡¡Combo perfecto!! ¿¡Lo viste?!"
+        "text": "*Gritando de emoción* ¡¡Combo perfecto!! ¿¡Lo viste?!"
     },
     "date_dain_shop_2_ins": {
         "name": "Dain",
-        "text": "*Girándose* \"¡No es nada! ¡Vamos!"
+        "text": "*Girándose* ¡No es nada! ¡Vamos!"
     }
 }

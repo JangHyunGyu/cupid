@@ -387,7 +387,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "¡¿Qu-Qué quieres decir con que me molesta?!"
+        "text": "¡Cl-Claro que me importa! ¡Y qué! *da un gran mordisco al pan de melón* ¡¡Solo preguntaba!!"
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Mirando a {name}* \"...Una chica alegre.\""
+        "text": "*Mirando a {name}* ...Una chica alegre."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",
@@ -451,11 +451,11 @@
     },
     "lunch2_seo_c1_3_ins": {
         "name": "Seoyeon",
-        "text": "*Como si nada* \"Era un grano de arroz.\""
+        "text": "*Como si nada* Era un grano de arroz."
     },
     "lunch2_dain_13_ins": {
         "name": "Dain",
-        "text": "¡No— no me importa! ¡Para nada!\" *Da un gran mordisco al soboro* \"¡¡Solo preguntaba!!\""
+        "text": "¡No— no me importa! ¡Para nada! *Da un gran mordisco al soboro* ¡¡Solo preguntaba!!"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "lunch2_dain_end_ins5": {
         "name": "Enfermera",
-        "text": "*Levantando la vista* \"Oh, el estudiante nuevo de ayer.\""
+        "text": "*Levantando la vista* Oh, el estudiante nuevo de ayer."
     },
     "lunch2_dain_end_ins6": {
         "name": "{name}",
@@ -507,7 +507,7 @@
     },
     "lunch2_dain_end_ins13": {
         "name": "Enfermera",
-        "text": "*Poniendo la tirita* \"Aquí... así... listo.\""
+        "text": "*Poniendo la tirita* Aquí... así... listo."
     },
     "lunch2_dain_end_ins14": {
         "name": "{name}",
@@ -523,7 +523,7 @@
     },
     "lunch2_dain_end_ins17": {
         "name": "Enfermera",
-        "text": "*Sonriendo* \"Es esmero. Puro esmero. Si lo pones a medias, se cae enseguida.\""
+        "text": "*Sonriendo* Es esmero. Puro esmero. Si lo pones a medias, se cae enseguida."
     },
     "lunch2_dain_end_ins18": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "lunch2_dain_end_ins21": {
         "name": "Enfermera",
-        "text": "*Entornando los ojos* \"¿Solo uno? ...Bueno, vale. Prefiero el cacao al café. Ese es el secreto.\""
+        "text": "*Entornando los ojos* ¿Solo uno? ...Bueno, vale. Prefiero el cacao al café. Ese es el secreto."
     },
     "lunch2_dain_end_ins22": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "lunch2_dain_end_ins23": {
         "name": "Enfermera",
-        "text": "*Riendo suavemente* \"Secreto~ Las profesoras también tienen secretos.\""
+        "text": "*Riendo suavemente* Secreto~ Las profesoras también tienen secretos."
     },
     "lunch2_dain_end_ins24": {
         "name": "{name}",
@@ -575,7 +575,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "Enfermera",
-        "text": "*Con tono alegre de nuevo* \"¡Ah, pero no en horario de clases~! ¡Después de clases!\""
+        "text": "*Con tono alegre de nuevo* ¡Ah, pero no en horario de clases~! ¡Después de clases!"
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",

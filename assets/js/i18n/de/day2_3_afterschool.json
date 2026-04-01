@@ -370,7 +370,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*Tteokbokki mit Dain essen und plaudern.*",
+        "text": "*Wir gingen in den Tteokbokki-Laden in der Nähe der Schule.* *Tteokbokki mit Dain essen und plaudern.*",
         "context": "Tag 2 nach der Schule, nach einer Volleyball-Wette in der Turnhalle. Ton: Näher als gestern. Neckereien fühlen sich natürlich und bequem an. Hin-und-her-Flirten. Noch keine schweren Themen.",
         "personality": "Dain ist ein energiegeladener, wettbewerbsorientierter Sporttyp."
     },
@@ -404,15 +404,15 @@
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Schulkrankenschwester",
-        "text": "*Zieht ihre Hand unauffällig zurück.* ...Berufskrankheit."
+        "text": "...Meine Hände sind eigentlich kalt. Heute scheinen sie warm zu sein."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Schulkrankenschwester",
-        "text": "Bin halt Profi~ Schludern wäre dem Pflaster gegenüber respektlos."
+        "text": "*lächelnd* Das ist Sorgfalt, Sorgfalt. Wenn man es nachlässig aufklebt, fällt es ab."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Beim Prüfen des Pflasters — ihr Laptop steht offen auf dem Tisch. Das ist keine Krankenakte — sieht eher wie ein persönliches Tagebuch aus.*"
+        "text": "*Beim Prüfen des Pflasters — ein Laptop steht offen auf dem Schreibtisch. Etwas ist auf dem Bildschirm geschrieben. Das ist keine Krankenakte — sieht eher wie ein persönliches Tagebuch aus.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
@@ -428,11 +428,11 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Schulkrankenschwester",
-        "text": "Nur eins? — Hmm, dafür müsstest du schon öfter vorbeikommen~"
+        "text": "*verengt die Augen* Nur eins? ...Na gut. Ich mag Kakao lieber als Kaffee. Das ist das Geheimnis."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Schulkrankenschwester",
-        "text": "Braver Junge. Aber du bist der Typ, der nicht lügen kann, oder?"
+        "text": "*lacht leise* Geheimnis~ Lehrerinnen haben auch Geheimnisse."
     },
     "hidden_nurse_d2_8": {
         "name": "Schulkrankenschwester",
@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Mit großen Augen* \"Hm? Ich wollte es locker angehen, aber vergiss es.\""
+        "text": "*Mit großen Augen* Hm? Ich wollte es locker angehen, aber vergiss es."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*Leise* \"...Nicht bewegen. Nur kurz.\""
+        "text": "*Leise* ...Nicht bewegen. Nur kurz."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Zieht ihre Hand zurück* \"...War nichts.\""
+        "text": "*Zieht ihre Hand zurück* ...War nichts."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Geht neben mir* \"Hast du in letzter Zeit Spaß?\""
+        "text": "*Geht neben mir* Hast du in letzter Zeit Spaß?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

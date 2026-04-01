@@ -65,7 +65,7 @@
     },
     "wall_seo_15": {
         "name": "{name}",
-        "text": "*Seoyeon hörte auf zu sprechen. Mit zitternden Händen nahm sie ihre Brille ab und umklammerte sie. Es ist das erste Mal, dass ich Seoyeons Gesicht ohne Brille sehe. Ihre Hände sind fest auf ihren Knien zusammengepresst.*"
+        "text": "*Seoyeon hört auf zu sprechen. Ihre Hände sind fest auf ihren Knien zusammengepresst.*\n\n*— Und dann langsam, ganz langsam, zerbricht der Ausdruck, den sie perfekt aufrechterhalten hatte. Seoyeon nimmt mit zitternden Händen ihre Brille ab.*\n\n*Tränen fließen aus ihren Augen. Lautlos. — Ich sehe Seoyeons Gesicht ohne Brille zum ersten Mal.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt gerade. — Die Nacht kommt auch für die, die man nicht gewählt hat. Und sie verbringt diese Nacht allein.*"
+        "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt. — Kein Zittern. Diesmal wirklich.*\n\n*Die Nacht kommt auch für die, die nicht gewählt wurden. Sie verbringt diese Nacht allein.*"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -556,7 +556,7 @@
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
-        "text": "*Ich habe eine Nachricht geschickt. \"Seoyeon, alles okay?\" — Eine Minute. Gelesen. Keine Antwort. Dann — mein Handy klingelt.*"
+        "text": "*Ich habe eine Nachricht geschickt. Seoyeon, alles okay? — Eine Minute. Gelesen. Keine Antwort. Dann — mein Handy klingelt.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
@@ -695,11 +695,11 @@
     },
     "night_homeroom_msg_1": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* \"Die Abgabefrist für das Manuskript rückt näher. ...Es gibt eine Stelle, die ich meinem ersten Leser zeigen möchte.\""
+        "text": "*Nachricht* Die Abgabefrist für das Manuskript rückt näher. ...Es gibt eine Stelle, die ich meinem ersten Leser zeigen möchte."
     },
     "night_homeroom_msg_2": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* \"Komm morgen ins Lehrerzimmer, wenn du Zeit hast. — Nach dem Unterricht.\""
+        "text": "*Nachricht* Komm morgen ins Lehrerzimmer, wenn du Zeit hast. — Nach dem Unterricht."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "wall_dain_lastspike_3_ins": {
         "name": "Dain",
-        "text": "*Schwach lächelnd* \"...Tut weh."
+        "text": "*Schwach lächelnd* ...Tut weh."
     },
     "wall_dain_lastspike_3_ins2": {
         "name": "Dain",
@@ -927,15 +927,15 @@
     },
     "wall_yuna_glimpse_3_ins4": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* \"Die Abgabefrist für das Manuskript rückt näher."
+        "text": "*Nachricht* Die Abgabefrist für das Manuskript rückt näher."
     },
     "wall_yuna_glimpse_3_ins5": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* \"...Es gibt eine Stelle, die ich meinem ersten Leser zeigen möchte."
+        "text": "*Nachricht* ...Es gibt eine Stelle, die ich meinem ersten Leser zeigen möchte."
     },
     "wall_yuna_glimpse_3_ins6": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* \"Komm morgen ins Lehrerzimmer, wenn du Zeit hast. Nach dem Unterricht."
+        "text": "*Nachricht* Komm morgen ins Lehrerzimmer, wenn du Zeit hast. Nach dem Unterricht."
     },
     "wall_yuna_glimpse_3_ins7": {
         "name": "{name}",
@@ -943,7 +943,7 @@
     },
     "wall_yuna_glimpse_3_ins8": {
         "name": "{name}",
-        "text": "*Ihre Sätze sind immer kurz. Kein Füllwort. Aber dieser war anders. \"Es gibt eine Stelle, die ich zeigen möchte.\" Diese Zeile hat Gewicht.*"
+        "text": "*Ihre Sätze sind immer kurz. Kein Füllwort. Aber dieser war anders. Es gibt eine Stelle, die ich zeigen möchte. Diese Zeile hat Gewicht.*"
     },
     "wall_yuna_glimpse_3_ins9": {
         "name": "{name}",
@@ -959,11 +959,11 @@
     },
     "wall_yuna_glimpse_3_ins12": {
         "name": "Schulkrankenschwester",
-        "text": "*Nachricht* \"Was du heute im Krankenzimmer gesagt hast."
+        "text": "*Nachricht* Was du heute im Krankenzimmer gesagt hast."
     },
     "wall_yuna_glimpse_3_ins13": {
         "name": "Schulkrankenschwester",
-        "text": "*Nachricht* \"...Heute Nacht muss ich immer wieder daran denken."
+        "text": "*Nachricht* ...Heute Nacht muss ich immer wieder daran denken."
     },
     "wall_yuna_glimpse_3_ins14": {
         "name": "{name}",
@@ -975,11 +975,11 @@
     },
     "wall_yuna_glimpse_3_ins16": {
         "name": "Schulkrankenschwester",
-        "text": "*Nachricht* \"Ach, nicht in einem komischen Sinne. Ich meinte nur, es war einprägsam."
+        "text": "*Nachricht* Ach, nicht in einem komischen Sinne. Ich meinte nur, es war einprägsam."
     },
     "wall_yuna_glimpse_3_ins17": {
         "name": "Schulkrankenschwester",
-        "text": "*Nachricht* \"...Schlaf gut."
+        "text": "*Nachricht* ...Schlaf gut."
     },
     "wall_yuna_glimpse_3_ins18": {
         "name": "{name}",
@@ -987,7 +987,7 @@
     },
     "wall_yuna_glimpse_3_ins19": {
         "name": "{name}",
-        "text": "*\"Ich muss immer wieder daran denken.\" Als ich das las, erstarrten meine Finger. Erst nach dem \"nicht in einem komischen Sinne\" konnte ich wieder atmen.*"
+        "text": "*Ich muss immer wieder daran denken. Als ich das las, erstarrten meine Finger. Erst nach dem nicht in einem komischen Sinne konnte ich wieder atmen.*"
     },
     "wall_yuna_glimpse_3_ins20": {
         "name": "{name}",
@@ -995,7 +995,7 @@
     },
     "wall_yuna_glimpse_3_ins21": {
         "name": "{name}",
-        "text": "*Auf meinem Tisch liegt eine Notiz. Seoyeons Handschrift. \"Nimm dir heute Nachmittag Zeit. Ich lasse das Dach offen. — Seoyeon\"*"
+        "text": "*Auf meinem Tisch liegt eine Notiz. Seoyeons Handschrift. Nimm dir heute Nachmittag Zeit. Ich lasse das Dach offen. — Seoyeon*"
     },
     "wall_yuna_glimpse_3_ins22": {
         "name": "{name}",
@@ -1003,6 +1003,6 @@
     },
     "wall_yuna_glimpse_3_ins23": {
         "name": "{name}",
-        "text": "*Beim Vorbeigehen am Aushang des Literaturclubs im Flur — eine Kurzgeschichte hängt am Brett. Titel: \"An die Person, die ich in der Bibliothek traf.\" Es ist Yuna. Eine Geschichte, die nur ihr Adressat erkennen würde.*"
+        "text": "*Beim Vorbeigehen am Aushang des Literaturclubs im Flur — eine Kurzgeschichte hängt am Brett. Titel: An die Person, die ich in der Bibliothek traf. Es ist Yuna. Eine Geschichte, die nur ihr Adressat erkennen würde.*"
     }
 }

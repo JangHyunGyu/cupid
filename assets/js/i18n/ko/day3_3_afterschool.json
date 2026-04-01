@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*방과후. 가방을 챙긴다.*"
+        "text": "*방과후. 점심의 여파가 남아 있다. — 그래도 어딘가에는 가야 한다.*"
     },
     "after3_route_check": {
         "name": "{name}",
@@ -25,7 +25,8 @@
         "choices": [
             "서연이에게",
             "유나에게",
-            "다인이에게"
+            "다인이에게",
+            "조금 더 생각한다"
         ]
     },
     "after3_choice": {
@@ -59,7 +60,7 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "서연",
-        "text": "인기 많네."
+        "text": "학생회 일이 바빠서. 점심은 따로 먹을게."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -193,6 +194,10 @@
         "name": "유나",
         "text": "...그거."
     },
+    "after3_yuna_8b": {
+        "name": "유나",
+        "text": "*빠르게 다가와 노트를 뺏으며* ...허락 안 했어."
+    },
     "after3_yuna_9": {
         "name": "{name}",
         "text": "*귀. 빨갛다. — 유나가 빨개지는 건 처음 본다.*"
@@ -323,11 +328,11 @@
     },
     "after3_confront_5": {
         "name": "서연",
-        "text": "네가 다른 애들한테 웃어줄 때, 솔직히... 기분 진짜 비참했거든."
+        "text": "네가 다른 애들한테 웃어줄 때, 내 안에서 뭔가가 무너지는 기분이었거든."
     },
     "after3_confront_6": {
         "name": "서연",
-        "text": "솔직히 말해. 우리 모두한테 주말을 약속한 거야?"
+        "text": "점심때 그 난장판... 대체 무슨 생각으로 우리 셋 모두한테 약속을 잡은 거야?"
     },
     "after3_confront_choice": {
         "name": "{name}",
@@ -522,7 +527,7 @@
     },
     "after3_seo_5_ins": {
         "name": "서연",
-        "text": "*급하게 머리카락을 정리하며* \"...봤어?"
+        "text": "*급하게 머리카락을 정리하며* ...봤어?"
     },
     "after3_seo_choice1_react_ins": {
         "name": "{name}",
@@ -546,7 +551,7 @@
     },
     "after3_seo_choice1_react_ins6": {
         "name": "서연",
-        "text": "*서류를 정리하며* \"나도 네 비밀 하나 알고 있어."
+        "text": "*서류를 정리하며* 나도 네 비밀 하나 알고 있어."
     },
     "after3_seo_choice1_react_ins7": {
         "name": "서연",
@@ -562,7 +567,7 @@
     },
     "after3_yuna_choice1_2_ins": {
         "name": "유나",
-        "text": "*노트를 가슴에 꼭 안으며* \"...소설은. 허구야."
+        "text": "*노트를 가슴에 꼭 안으며* ...소설은. 허구야."
     },
     "after3_yuna_choice2_3_ins": {
         "name": "{name}",
@@ -574,7 +579,7 @@
     },
     "after3_confront_5_ins": {
         "name": "다인",
-        "text": "*힘없이 피식 웃는다.* \"...뭐야. 이런 거에 감동받으면 안 되는데."
+        "text": "*힘없이 피식 웃는다.* ...뭐야. 이런 거에 감동받으면 안 되는데."
     },
     "after3_confront_5_ins2": {
         "name": "{name}",

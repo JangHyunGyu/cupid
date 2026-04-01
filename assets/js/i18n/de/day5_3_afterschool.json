@@ -109,7 +109,7 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Ich drehe mich um. Meine Stimme zittert. — Aber diesmal.*"
+        "text": "*Fast wäre ich wieder weggelaufen. Wie an meiner alten Schule. Dieser Moment, das Handy in die Tasche zu stecken und kein Wort herauszubringen, wäre fast zurückgekehrt. — Nein. Nicht diesmal.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -281,6 +281,6 @@
     },
     "after5_confess_react_yuna_ins8": {
         "name": "{name}",
-        "text": "*Direkt verbunden mit dem Kernthema des Protagonisten: „Jemand, der nicht sprechen konnte, versucht diesmal ohne Reue zu sprechen.“ Diese Wahl ist die letzte Prüfung dieses Themas. — Und es gab jemanden, der gewartet hat.*"
+        "text": "*Und so — gingen wir über die Schule hinaus.*"
     }
 }

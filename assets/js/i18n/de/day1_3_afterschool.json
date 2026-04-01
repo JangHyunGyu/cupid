@@ -216,7 +216,7 @@
     },
     "after_hidden_nurse_intro_2": {
         "name": "{name}",
-        "text": "*An der Wand ein Schild: \"Krankenzimmer\". — Soll ich reingehen?*"
+        "text": "*An der Wand ein Schild: Krankenzimmer. — Soll ich reingehen?*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Ich gehe einfach nach Hause. Wird schon nichts sein.*"
+        "text": "*Für heute habe ich genug herumgelaufen. Gehen wir nach Hause und ruhen uns aus.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after1_jealousy_seo_yuna_2": {
         "name": "{name}",
-        "text": "*\"Ich hab dich in der Mittagspause auf dem Dach gesehen. ...Du sahst vertraut aus mit der Sprecherin.\" — Drei Punkte am Ende. Verschluckte Worte.*"
+        "text": "*Ich hab dich in der Mittagspause auf dem Dach gesehen. ...Du sahst vertraut aus mit der Sprecherin. — Drei Punkte am Ende. Verschluckte Worte.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -438,7 +438,7 @@
     },
     "after_nurse_enter_4_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "Deine Uniform ist steif wie ein Brett. Riecht auch nach Stärke.\" *Schnüffel* \"Oh, da ist auch Kirschblütenduft dabei. Ein romantischer Austauschschüler.\""
+        "text": "Deine Uniform ist steif wie ein Brett. Riecht auch nach Stärke. *Schnüffel* Oh, da ist auch Kirschblütenduft dabei. Ein romantischer Austauschschüler."
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
@@ -458,7 +458,7 @@
     },
     "after_nurse_enter_7_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Zieht den Vorhang halb zu* \"Willst du Wasser? Oder etwas Warmes?\""
+        "text": "*Zieht den Vorhang halb zu* Willst du Wasser? Oder etwas Warmes?"
     },
     "after_nurse_enter_7_ins3": {
         "name": "{name}",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Reicht ein Glas Wasser* \"Stimmt, bin ich. ...Vergess ich manchmal.\""
+        "text": "*Reicht ein Glas Wasser* Stimmt, bin ich. ...Vergess ich manchmal."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Verengt die Augen* \"Wenn ein Patient immer wiederkommt, mache ich mir natürlich Sorgen. — Weil ich Lehrerin bin.\""
+        "text": "*Verengt die Augen* Wenn ein Patient immer wiederkommt, mache ich mir natürlich Sorgen. — Weil ich Lehrerin bin."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",

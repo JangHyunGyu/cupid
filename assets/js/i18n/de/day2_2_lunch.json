@@ -387,7 +387,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "W-Was meinst du damit, stören?!"
+        "text": "Na-Natürlich stört es mich! Was soll's! *beißt kräftig ins Melonenbrötchen* Ich hab nur gefragt!!"
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Schaut {name} an* \"...Ein fröhliches Mädchen.\""
+        "text": "*Schaut {name} an* ...Ein fröhliches Mädchen."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",
@@ -451,11 +451,11 @@
     },
     "lunch2_seo_c1_3_ins": {
         "name": "Seoyeon",
-        "text": "*Tut so, als wäre nichts* \"War ein Reiskorn.\""
+        "text": "*Tut so, als wäre nichts* War ein Reiskorn."
     },
     "lunch2_dain_13_ins": {
         "name": "Dain",
-        "text": "Das— das stört mich nicht! Überhaupt nicht!\" *Beißt kräftig ins Soboro-Brötchen* \"Ich hab nur gefragt!!\""
+        "text": "Das— das stört mich nicht! Überhaupt nicht! *Beißt kräftig ins Soboro-Brötchen* Ich hab nur gefragt!!"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "lunch2_dain_end_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Schaut auf* \"Oh, der Austauschschüler von gestern.\""
+        "text": "*Schaut auf* Oh, der Austauschschüler von gestern."
     },
     "lunch2_dain_end_ins6": {
         "name": "{name}",
@@ -507,7 +507,7 @@
     },
     "lunch2_dain_end_ins13": {
         "name": "Schulkrankenschwester",
-        "text": "*Klebt das Pflaster auf* \"Hier... so... fertig.\""
+        "text": "*Klebt das Pflaster auf* Hier... so... fertig."
     },
     "lunch2_dain_end_ins14": {
         "name": "{name}",
@@ -523,7 +523,7 @@
     },
     "lunch2_dain_end_ins17": {
         "name": "Schulkrankenschwester",
-        "text": "*Grinsend* \"Das ist Sorgfalt. Echte Sorgfalt. Wenn man es halbherzig aufklebt, fällt es gleich wieder ab.\""
+        "text": "*Grinsend* Das ist Sorgfalt. Echte Sorgfalt. Wenn man es halbherzig aufklebt, fällt es gleich wieder ab."
     },
     "lunch2_dain_end_ins18": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "lunch2_dain_end_ins21": {
         "name": "Schulkrankenschwester",
-        "text": "*Verengt die Augen* \"Nur eins? ...Na gut. Ich mag Kakao lieber als Kaffee. Das ist das Geheimnis.\""
+        "text": "*Verengt die Augen* Nur eins? ...Na gut. Ich mag Kakao lieber als Kaffee. Das ist das Geheimnis."
     },
     "lunch2_dain_end_ins22": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "lunch2_dain_end_ins23": {
         "name": "Schulkrankenschwester",
-        "text": "*Lacht leise* \"Geheim~ Lehrerinnen haben auch Geheimnisse.\""
+        "text": "*Lacht leise* Geheim~ Lehrerinnen haben auch Geheimnisse."
     },
     "lunch2_dain_end_ins24": {
         "name": "{name}",
@@ -575,7 +575,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder fröhlicher Ton* \"Ach, aber nicht während der Schulzeit~! Nach dem Unterricht!\""
+        "text": "*Wieder fröhlicher Ton* Ach, aber nicht während der Schulzeit~! Nach dem Unterricht!"
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",

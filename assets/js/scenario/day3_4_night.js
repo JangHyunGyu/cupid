@@ -139,21 +139,21 @@ Object.assign(SCENARIO[3], {
         "character": null,
         "night": true,
         "fade": true,
-        "stats": { "Seoyeon": { "affinity": 9 }, "Dain": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
+        "stats": { "Seoyeon": { "affinity": 9 } },
         "next": "night3_end"
     },
     "night3_dream_yuna_bonus": {
         "character": null,
         "night": true,
         "fade": true,
-        "stats": { "Yuna": { "affinity": 9 }, "Seoyeon": { "affinity": -5 }, "Dain": { "affinity": -5 } },
+        "stats": { "Yuna": { "affinity": 9 } },
         "next": "night3_end"
     },
     "night3_dream_dain_bonus": {
         "character": null,
         "night": true,
         "fade": true,
-        "stats": { "Dain": { "affinity": 9 }, "Seoyeon": { "affinity": -5 }, "Yuna": { "affinity": -5 } },
+        "stats": { "Dain": { "affinity": 9 } },
         "next": "night3_end"
     },
     "night3_cheat_msg_1": {

@@ -370,7 +370,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*Comiendo tteokbokki con Dain y charlando.*",
+        "text": "*Entramos en la tienda de tteokbokki cerca de la escuela.* *Comiendo tteokbokki con Dain y charlando.*",
         "context": "Día 2 después de clases, vinieron a la tienda de tteokbokki tras una apuesta de voleibol. Tono: Sintiéndose más cerca que ayer. Las bromas se sienten naturales y cómodas. Coqueteo de tira y afloja. Aún sin temas pesados.",
         "personality": "Dain es una atleta enérgica y competitiva."
     },
@@ -404,15 +404,15 @@
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Enfermera",
-        "text": "*Retira la mano disimuladamente.* ...Deformación profesional."
+        "text": "...Suelo tener las manos frías. Parece que hoy están calientes."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Enfermera",
-        "text": "Soy una profesional~ Si la pongo mal, le falté el respeto a la tirita."
+        "text": "*sonriendo* Es esmero, esmero. Si lo pones a medias, se cae enseguida."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Revisando la tirita cuando — su portátil está abierto en el escritorio. No es un historial médico — parece un diario personal.*"
+        "text": "*Revisando la tirita cuando — hay un portátil abierto en el escritorio. Algo está escrito en la pantalla. No es un historial médico — parece un diario personal.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
@@ -428,11 +428,11 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Enfermera",
-        "text": "¿Solo uno? — Mmm, para eso tendrías que venir mucho más seguido~"
+        "text": "*entornando los ojos* ¿Solo uno? ...Bueno, vale. Prefiero el cacao al café. Ese es el secreto."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Enfermera",
-        "text": "Buen chico. Pero eres de los que no saben mentir, ¿verdad?"
+        "text": "*riendo suavemente* Secreto~ Las profesoras también tienen secretos."
     },
     "hidden_nurse_d2_8": {
         "name": "Enfermera",
@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Con los ojos muy abiertos* \"¿Eh? Iba a ir suave, pero mejor no.\""
+        "text": "*Con los ojos muy abiertos* ¿Eh? Iba a ir suave, pero mejor no."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*En voz baja* \"...No te muevas. Solo un momento.\""
+        "text": "*En voz baja* ...No te muevas. Solo un momento."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Retirando la mano* \"...No fue nada.\""
+        "text": "*Retirando la mano* ...No fue nada."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Caminando a mi lado* \"¿Te diviertes últimamente?\""
+        "text": "*Caminando a mi lado* ¿Te diviertes últimamente?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

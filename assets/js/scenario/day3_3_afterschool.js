@@ -70,6 +70,9 @@ Object.assign(SCENARIO[3], {
                 "next": "after3_reject_for_dain_1",
                 "setFlags": ["route_dain"],
                 "condition": "accepted_dain_date"
+            },
+            {
+                "next": "after3_choice"
             }
         ]
     },
@@ -205,61 +208,61 @@ Object.assign(SCENARIO[3], {
     // ========== SEOYEON ROUTE ==========
     "after3_seo_1": {
         "character": "assets/images/characters/seyoun_sad.png",
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "bgm": "sunset1.mp3",
         "next": "after3_seo_2"
     },
     "after3_seo_2": {
         "character": "assets/images/characters/seyoun_sad.png",
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "next": "after3_seo_3"
     },
     "after3_seo_3": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_4"
     },
     "after3_seo_4": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_5"
     },
     "after3_seo_5": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_5_ins"
     },
     "after3_seo_6": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_7"
     },
     "after3_seo_7": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_8"
     },
     "after3_seo_8": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_9"
     },
     "after3_seo_9": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_choice"
     },
     "after3_seo_choice": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
@@ -282,27 +285,27 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "after3_seo_choice1": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_cry.png",
         "next": "after3_seo_choice1_react"
     },
     "after3_seo_choice1_react": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_cry.png",
         "setFlags": ["seoyeon_day3_event"],
         "next": "after3_seo_choice1_react_ins"
     },
     "after3_seo_choice2": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
         "setFlags": ["seoyeon_day3_event"],
         "next": "after3_seo_end_c2"
     },
     "after3_seo_end": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "branches": [
@@ -316,7 +319,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "after3_seo_end_c2": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_sad.png",
         "branches": [
@@ -375,6 +378,12 @@ Object.assign(SCENARIO[3], {
         "next": "after3_yuna_8"
     },
     "after3_yuna_8": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "sunset": true,
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "after3_yuna_8b"
+    },
+    "after3_yuna_8b": {
         "background": "assets/images/background/yuna_hideout.png",
         "sunset": true,
         "character": "assets/images/characters/yuna_shy.png",
@@ -919,7 +928,7 @@ Object.assign(SCENARIO[3], {
 ,
     "after3_seo_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "sunset": true,
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_seo_end"
@@ -935,53 +944,53 @@ Object.assign(SCENARIO[3], {
 ,
     "after3_dain_freetalk": {
         "type": "free_talk",
-        "background": "assets/images/background/playground.png",
+        "background": "assets/images/background/gym.png",
         "sunset": true,
         "character": "assets/images/characters/dain_normal.png",
         "next": "after3_dain_end"
     },
     "after3_seo_5_ins": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_seo_6"
     },
     "after3_seo_choice1_react_ins": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "next": "after3_seo_choice1_react_ins2"
     },
     "after3_seo_choice1_react_ins2": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "next": "after3_seo_choice1_react_ins3"
     },
     "after3_seo_choice1_react_ins3": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "next": "after3_seo_choice1_react_ins4"
     },
     "after3_seo_choice1_react_ins4": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_seo_choice1_react_ins5"
     },
     "after3_seo_choice1_react_ins5": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": null,
         "next": "after3_seo_choice1_react_ins6"
     },
     "after3_seo_choice1_react_ins6": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_seo_choice1_react_ins7"
     },
     "after3_seo_choice1_react_ins7": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_seo_choice1_react_ins8"
     },
     "after3_seo_choice1_react_ins8": {
-        "background": "assets/images/background/student_room.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "next": "after3_seo_freetalk"
     },

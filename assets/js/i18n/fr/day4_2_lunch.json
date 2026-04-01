@@ -315,11 +315,11 @@
     },
     "date_seo_pretty_high_3_ins": {
         "name": "Seoyeon",
-        "text": "*Repoussant ses cheveux* \"...Ne te fais pas d'idées."
+        "text": "*Repoussant ses cheveux* ...Ne te fais pas d'idées."
     },
     "date_seo_flower_ins": {
         "name": "Seoyeon",
-        "text": "*S'arrêtant* \"...On entre ?"
+        "text": "*S'arrêtant* ...On entre ?"
     },
     "date_seo_succulent_2_ins": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "date_yuna_pretty_high_5_ins2": {
         "name": "Yuna",
-        "text": "*Les oreilles rougissant* \"...Ça suffit."
+        "text": "*Les oreilles rougissant* ...Ça suffit."
     },
     "date_yuna_bookstore_2_ins": {
         "name": "{name}",
@@ -351,7 +351,7 @@
     },
     "date_dain_shop_3_ins": {
         "name": "Dain",
-        "text": "*Sous sa casquette* \"...Redis ça encore une fois et je te frappe pour de vrai."
+        "text": "*Sous sa casquette* ...Redis ça encore une fois et je te frappe pour de vrai."
     },
     "date_dain_arcade_2_ins": {
         "name": "{name}",
@@ -363,10 +363,10 @@
     },
     "date_dain_arcade_3_ins2": {
         "name": "Dain",
-        "text": "*En criant de joie* \"Combo parfait !! T'as vu ?!"
+        "text": "*En criant de joie* Combo parfait !! T'as vu ?!"
     },
     "date_dain_shop_2_ins": {
         "name": "Dain",
-        "text": "*En détournant la tête* \"C'est rien ! On y va !"
+        "text": "*En détournant la tête* C'est rien ! On y va !"
     }
 }

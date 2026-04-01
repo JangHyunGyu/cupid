@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "No traigo a cualquiera aquí.\" *despliega una silla* \"Hoy es especial."
+        "text": "No traigo a cualquiera aquí. *despliega una silla* Hoy es especial."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "lunch_seo_6_ins": {
         "name": "Seoyeon",
-        "text": "*Sonriendo* \"Qué desconfiado. Solo me gusta la brisa de aquí arriba.\""
+        "text": "*Sonriendo* Qué desconfiado. Solo me gusta la brisa de aquí arriba."
     },
     "lunch_seo_c1_2_ins": {
         "name": "{name}",

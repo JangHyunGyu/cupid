@@ -414,7 +414,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*Una sola palabra en la nota. \"Esperé.\"*"
+        "text": "*Una sola palabra en la nota. Esperé.*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "morning3_yuna_gate_6_ins2": {
         "name": "{name}",
-        "text": "*La nota: \"Supuse que no habías desayunado.\"*"
+        "text": "*La nota: Supuse que no habías desayunado.*"
     },
     "morning3_yuna_gate_6_ins3": {
         "name": "{name}",
@@ -486,7 +486,7 @@
     },
     "morning3_dain_gate_5_ins": {
         "name": "{name}",
-        "text": "*Al cruzar la puerta, Dain aterrizó y dejó escapar un pequeño \"ngh.\" Pero cuando miré atrás, sonreía como si nada. — ¿Escuché mal?*"
+        "text": "*Al cruzar la puerta, Dain aterrizó y dejó escapar un pequeño ngh. Pero cuando miré atrás, sonreía como si nada. — ¿Escuché mal?*"
     },
     "morning3_react_yuna_1_ins": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "hidden_homeroom_d3_reveal_1_ins2": {
         "name": "Profesora",
-        "text": "Siete años.\" *Mirando por la ventana* \"Empecé en la universidad. Especialización en escritura creativa.\""
+        "text": "Siete años. *Mirando por la ventana* Empecé en la universidad. Especialización en escritura creativa."
     },
     "hidden_homeroom_d3_reveal_1_ins3": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins2": {
         "name": "Profesora",
-        "text": "*Poniéndose seria de repente* \"...No le puedes contar esto a nadie. Si un alumno supiera que su profesora — tiene este lado, mi autoridad — bueno, nunca tuve mucha.\""
+        "text": "*Poniéndose seria de repente* ...No le puedes contar esto a nadie. Si un alumno supiera que su profesora — tiene este lado, mi autoridad — bueno, nunca tuve mucha."
     },
     "hidden_homeroom_d3_reveal_4_ins3": {
         "name": "{name}",
@@ -586,7 +586,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins4": {
         "name": "Profesora",
-        "text": "*Echándose el pelo hacia atrás* \"Es un secreto. — No es exactamente un buen ejemplo educativo. Contarle algo así a un alumno.\""
+        "text": "*Echándose el pelo hacia atrás* Es un secreto. — No es exactamente un buen ejemplo educativo. Contarle algo así a un alumno."
     },
     "hidden_homeroom_d3_reveal_4_ins5": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins3": {
         "name": "Profesora",
-        "text": "*Duda. La mano que tocaba el manuscrito se detiene.* \"...Es la primera persona que lo llama perseverancia.\""
+        "text": "*Duda. La mano que tocaba el manuscrito se detiene.* ...Es la primera persona que lo llama perseverancia."
     },
     "hidden_homeroom_d3_reveal_6_ins4": {
         "name": "{name}",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_1_ins2": {
         "name": "Enfermera",
-        "text": "*Levantando la vista* \"...¿Hm? ¿Qué te duele hoy?\""
+        "text": "*Levantando la vista* ...¿Hm? ¿Qué te duele hoy?"
     },
     "hidden_nurse_d3_1_ins3": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "hidden_nurse_d3_5_ins5": {
         "name": "Enfermera",
-        "text": "*Acercando una silla y sentándose enfrente* \"Relaciones.\""
+        "text": "*Acercando una silla y sentándose enfrente* Relaciones."
     },
     "hidden_nurse_d3_5_ins6": {
         "name": "{name}",
@@ -718,7 +718,7 @@
     },
     "hidden_nurse_d3_5_ins10": {
         "name": "Enfermera",
-        "text": "*Sonríe* \"Fingir que no lo es, es lo que más te delata.\""
+        "text": "*Sonríe* Fingir que no lo es, es lo que más te delata."
     },
     "hidden_nurse_d3_5_ins11": {
         "name": "{name}",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_5_ins12": {
         "name": "Enfermera",
-        "text": "¿Una enfermera debería hacer este tipo de consultas...\" *Apoyando la barbilla en la mano* \"Pero te escucharé. Es la enfermería, al fin y al cabo. No solo el cuerpo tiene que estar sano, ¿verdad?\""
+        "text": "¿Una enfermera debería hacer este tipo de consultas... *Apoyando la barbilla en la mano* Pero te escucharé. Es la enfermería, al fin y al cabo. No solo el cuerpo tiene que estar sano, ¿verdad?"
     },
     "hidden_nurse_d3_5_ins13": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "hidden_nurse_d3_6_ins3": {
         "name": "Enfermera",
-        "text": "...Más que dejarlo, huí.\" *Con una leve sonrisa* \"No hay una razón glamurosa.\""
+        "text": "...Más que dejarlo, huí. *Con una leve sonrisa* No hay una razón glamurosa."
     },
     "hidden_nurse_d3_6_ins4": {
         "name": "{name}",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_6_ins6": {
         "name": "Enfermera",
-        "text": "...Hubo uno. Un paciente que no pude salvar.\" *Su mirada se pierde.* \"Por esa persona estoy aquí.\""
+        "text": "...Hubo uno. Un paciente que no pude salvar. *Su mirada se pierde.* Por esa persona estoy aquí."
     },
     "hidden_nurse_d3_6_ins7": {
         "name": "{name}",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Enfermera",
-        "text": "*De nuevo juguetona* \"¡Ay, por favor~ Esto es cortesía de la casa. — Vuelve cuando quieras. Con heridas o sin ellas.\""
+        "text": "*De nuevo juguetona* ¡Ay, por favor~ Esto es cortesía de la casa. — Vuelve cuando quieras. Con heridas o sin ellas."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -814,7 +814,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "Enfermera",
-        "text": "*Apenas logrando sonreír* \"¡Era broma~ Anda, vete!\""
+        "text": "*Apenas logrando sonreír* ¡Era broma~ Anda, vete!"
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",

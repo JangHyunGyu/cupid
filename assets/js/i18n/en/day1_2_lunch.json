@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "I don't just bring anyone up here.\" *unfolds a chair* \"Today's special."
+        "text": "I don't just bring anyone up here. *unfolds a chair* Today's special."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "lunch_seo_6_ins": {
         "name": "Seoyeon",
-        "text": "*Smiling* \"Suspicious, aren't you. I just like the breeze up here.\""
+        "text": "*Smiling* Suspicious, aren't you. I just like the breeze up here."
     },
     "lunch_seo_c1_2_ins": {
         "name": "{name}",

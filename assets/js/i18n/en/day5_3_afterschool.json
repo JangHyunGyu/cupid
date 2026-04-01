@@ -109,7 +109,7 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*I turn around. My voice trembles. — But this time.*"
+        "text": "*I almost ran away again. Like at my old school. That moment of putting the phone in my pocket and not being able to say anything almost came back. — No. Not this time.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -281,6 +281,6 @@
     },
     "after5_confess_react_yuna_ins8": {
         "name": "{name}",
-        "text": "*Directly tied to the protagonist's core arc: \"A person who couldn't speak is trying to speak without regrets this time.\" This choice is the final test of that theme. — And there was someone who waited.*"
+        "text": "*And so — we walked beyond the school.*"
     }
 }

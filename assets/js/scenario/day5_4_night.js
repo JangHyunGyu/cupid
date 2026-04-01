@@ -388,7 +388,7 @@ Object.assign(SCENARIO[5], {
     "bitter_seo_3": {
         "background": "assets/images/background/ending_bittersweet.png",
         "character": null,
-        "next": "bitter_seo_3_ins"
+        "next": "bitter_epilogue_1"
     },
 
     // =========================================================================
@@ -450,7 +450,7 @@ Object.assign(SCENARIO[5], {
     "bitter_epilogue_2": {
         "character": null,
         "night": true,
-        "next": "bitter_epilogue_2_ins"
+        "next": "bitter_epilogue_3"
     },
     "bitter_epilogue_3": {
         "character": null,
@@ -812,7 +812,7 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/top_school.png",
         "character": null,
         "night": true,
-        "next": "good_4_yuna_ins"
+        "next": "good_5_yuna"
     },
     "good_5_yuna": {
         "background": "assets/images/background/ending_good_yuna.png",
@@ -1828,32 +1828,12 @@ Object.assign(SCENARIO[5], {
     "good_1_seo_ins3": {
         "background": "assets/images/background/park.png",
         "character": null,
-        "next": "good_1_seo_ins4"
-    },
-    "good_1_seo_ins4": {
-        "background": "assets/images/background/park.png",
-        "character": null,
         "next": "good_2_seo"
     },
     "good_1_yuna_b_ins": {
         "background": "assets/images/background/park.png",
         "character": null,
         "next": "good_2_yuna"
-    },
-    "good_4_yuna_ins": {
-        "background": "assets/images/background/top_school.png",
-        "character": null,
-        "next": "good_5_yuna"
-    },
-    "bitter_seo_3_ins": {
-        "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
-        "next": "bitter_seo_3_ins2"
-    },
-    "bitter_seo_3_ins2": {
-        "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
-        "next": "bitter_epilogue_1"
     },
     "bitter_seo_2_ins": {
         "background": "assets/images/background/cafe.png",
@@ -1864,21 +1844,6 @@ Object.assign(SCENARIO[5], {
         "background": "assets/images/background/ending_bittersweet.png",
         "character": null,
         "next": "bitter_epilogue_1"
-    },
-    "bitter_epilogue_2_ins": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "bitter_epilogue_2_ins2"
-    },
-    "bitter_epilogue_2_ins2": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "bitter_epilogue_2_ins3"
-    },
-    "bitter_epilogue_2_ins3": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "bitter_epilogue_3"
     },
     "harem_1_ins": {
         "background": "assets/images/background/ending_harem.png",

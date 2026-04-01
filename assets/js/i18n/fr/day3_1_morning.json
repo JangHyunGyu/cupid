@@ -414,7 +414,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*Un seul mot sur le papier. \"Attendu.\"*"
+        "text": "*Un seul mot sur le papier. Attendu.*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "morning3_yuna_gate_6_ins2": {
         "name": "{name}",
-        "text": "*Le mot : \"Je me suis dit que tu n'avais pas pris de petit-déjeuner.\"*"
+        "text": "*Le mot : Je me suis dit que tu n'avais pas pris de petit-déjeuner.*"
     },
     "morning3_yuna_gate_6_ins3": {
         "name": "{name}",
@@ -486,7 +486,7 @@
     },
     "morning3_dain_gate_5_ins": {
         "name": "{name}",
-        "text": "*En passant le portail, Dain a atterri en laissant échapper un petit \"ngh\". Mais quand je me suis retourné, elle souriait comme si de rien n'était. — J'ai mal entendu ?*"
+        "text": "*En passant le portail, Dain a atterri en laissant échapper un petit ngh. Mais quand je me suis retourné, elle souriait comme si de rien n'était. — J'ai mal entendu ?*"
     },
     "morning3_react_yuna_1_ins": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "hidden_homeroom_d3_reveal_1_ins2": {
         "name": "Professeure principale",
-        "text": "Sept ans.\" *Regardant par la fenêtre* \"J'ai commencé à la fac. En création littéraire.\""
+        "text": "Sept ans. *Regardant par la fenêtre* J'ai commencé à la fac. En création littéraire."
     },
     "hidden_homeroom_d3_reveal_1_ins3": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins2": {
         "name": "Professeure principale",
-        "text": "*Soudain sérieuse* \"...Tu ne dois en parler à personne. Si un élève savait que sa prof — a ce côté, mon autorité — enfin, je n'en ai jamais eu beaucoup.\""
+        "text": "*Soudain sérieuse* ...Tu ne dois en parler à personne. Si un élève savait que sa prof — a ce côté, mon autorité — enfin, je n'en ai jamais eu beaucoup."
     },
     "hidden_homeroom_d3_reveal_4_ins3": {
         "name": "{name}",
@@ -586,7 +586,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins4": {
         "name": "Professeure principale",
-        "text": "*Repoussant ses cheveux* \"C'est un secret. — Pas vraiment un bon exemple pédagogique. Raconter ça à un élève.\""
+        "text": "*Repoussant ses cheveux* C'est un secret. — Pas vraiment un bon exemple pédagogique. Raconter ça à un élève."
     },
     "hidden_homeroom_d3_reveal_4_ins5": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins3": {
         "name": "Professeure principale",
-        "text": "*Elle hésite. La main qui touchait le manuscrit s'arrête.* \"...Tu es le premier à appeler ça de la persévérance.\""
+        "text": "*Elle hésite. La main qui touchait le manuscrit s'arrête.* ...Tu es le premier à appeler ça de la persévérance."
     },
     "hidden_homeroom_d3_reveal_6_ins4": {
         "name": "{name}",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_1_ins2": {
         "name": "Infirmière",
-        "text": "*Levant les yeux* \"...Hm ? Tu t'es blessé où aujourd'hui ?\""
+        "text": "*Levant les yeux* ...Hm ? Tu t'es blessé où aujourd'hui ?"
     },
     "hidden_nurse_d3_1_ins3": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "hidden_nurse_d3_5_ins5": {
         "name": "Infirmière",
-        "text": "*Tirant une chaise pour s'asseoir en face* \"Les relations.\""
+        "text": "*Tirant une chaise pour s'asseoir en face* Les relations."
     },
     "hidden_nurse_d3_5_ins6": {
         "name": "{name}",
@@ -718,7 +718,7 @@
     },
     "hidden_nurse_d3_5_ins10": {
         "name": "Infirmière",
-        "text": "*Petit sourire* \"Faire semblant que non, c'est ce qui se voit le plus.\""
+        "text": "*Petit sourire* Faire semblant que non, c'est ce qui se voit le plus."
     },
     "hidden_nurse_d3_5_ins11": {
         "name": "{name}",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_5_ins12": {
         "name": "Infirmière",
-        "text": "Est-ce qu'une infirmière est censée faire ce genre de consultation...\" *Le menton dans la main* \"Mais je t'écoute. C'est l'infirmerie après tout. Le cœur aussi doit être en bonne santé, non ?\""
+        "text": "Est-ce qu'une infirmière est censée faire ce genre de consultation... *Le menton dans la main* Mais je t'écoute. C'est l'infirmerie après tout. Le cœur aussi doit être en bonne santé, non ?"
     },
     "hidden_nurse_d3_5_ins13": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "hidden_nurse_d3_6_ins3": {
         "name": "Infirmière",
-        "text": "...Plutôt que d'avoir démissionné, j'ai fui.\" *Avec un léger sourire* \"Il n'y a pas de raison noble.\""
+        "text": "...Plutôt que d'avoir démissionné, j'ai fui. *Avec un léger sourire* Il n'y a pas de raison noble."
     },
     "hidden_nurse_d3_6_ins4": {
         "name": "{name}",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_6_ins6": {
         "name": "Infirmière",
-        "text": "...Il y en avait un. Un patient que je n'ai pas pu sauver.\" *Son regard se perd.* \"C'est à cause de cette personne que je suis ici.\""
+        "text": "...Il y en avait un. Un patient que je n'ai pas pu sauver. *Son regard se perd.* C'est à cause de cette personne que je suis ici."
     },
     "hidden_nurse_d3_6_ins7": {
         "name": "{name}",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Infirmière",
-        "text": "*Redevenue espiègle* \"Oh allez~ C'est offert par la maison. — Reviens quand tu veux. Blessé ou non.\""
+        "text": "*Redevenue espiègle* Oh allez~ C'est offert par la maison. — Reviens quand tu veux. Blessé ou non."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -814,7 +814,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "Infirmière",
-        "text": "*Parvenant à peine à sourire* \"Je plaisante~ Allez, file !\""
+        "text": "*Parvenant à peine à sourire* Je plaisante~ Allez, file !"
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",

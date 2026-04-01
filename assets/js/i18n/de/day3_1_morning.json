@@ -414,7 +414,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*Ein Wort auf dem Zettel. \"Gewartet.\"*"
+        "text": "*Ein Wort auf dem Zettel. Gewartet.*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "morning3_yuna_gate_6_ins2": {
         "name": "{name}",
-        "text": "*Der Zettel: \"Ich dachte, du hättest kein Frühstück gehabt.\"*"
+        "text": "*Der Zettel: Ich dachte, du hättest kein Frühstück gehabt.*"
     },
     "morning3_yuna_gate_6_ins3": {
         "name": "{name}",
@@ -486,7 +486,7 @@
     },
     "morning3_dain_gate_5_ins": {
         "name": "{name}",
-        "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines \"ngh\" hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
+        "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines ngh hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
     },
     "morning3_react_yuna_1_ins": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "hidden_homeroom_d3_reveal_1_ins2": {
         "name": "Klassenlehrerin",
-        "text": "Sieben Jahre.\" *Aus dem Fenster schauend* \"Habe in der Uni angefangen. Kreatives Schreiben.\""
+        "text": "Sieben Jahre. *Aus dem Fenster schauend* Habe in der Uni angefangen. Kreatives Schreiben."
     },
     "hidden_homeroom_d3_reveal_1_ins3": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins2": {
         "name": "Klassenlehrerin",
-        "text": "*Plötzlich ernst* \"...Du darfst niemandem davon erzählen. Wenn ein Schüler wüsste, dass seine Lehrerin — so eine Seite hat, meine Autorität — na ja, die hatte ich sowieso nie wirklich.\""
+        "text": "*Plötzlich ernst* ...Du darfst niemandem davon erzählen. Wenn ein Schüler wüsste, dass seine Lehrerin — so eine Seite hat, meine Autorität — na ja, die hatte ich sowieso nie wirklich."
     },
     "hidden_homeroom_d3_reveal_4_ins3": {
         "name": "{name}",
@@ -586,7 +586,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins4": {
         "name": "Klassenlehrerin",
-        "text": "*Die Haare zurückstreichend* \"Es ist ein Geheimnis. — Kein besonders gutes pädagogisches Vorbild. Einem Schüler so etwas zu erzählen.\""
+        "text": "*Die Haare zurückstreichend* Es ist ein Geheimnis. — Kein besonders gutes pädagogisches Vorbild. Einem Schüler so etwas zu erzählen."
     },
     "hidden_homeroom_d3_reveal_4_ins5": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins3": {
         "name": "Klassenlehrerin",
-        "text": "*Sie stockt. Die Hand, die das Manuskriptpapier berührt, hält inne.* \"...Du bist der Erste, der das Ausdauer nennt.\""
+        "text": "*Sie stockt. Die Hand, die das Manuskriptpapier berührt, hält inne.* ...Du bist der Erste, der das Ausdauer nennt."
     },
     "hidden_homeroom_d3_reveal_6_ins4": {
         "name": "{name}",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_1_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Aufblickend* \"...Hm? Wo hast du dich heute verletzt?\""
+        "text": "*Aufblickend* ...Hm? Wo hast du dich heute verletzt?"
     },
     "hidden_nurse_d3_1_ins3": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "hidden_nurse_d3_5_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Einen Stuhl heranziehend und sich gegenüber setzend* \"Beziehungen.\""
+        "text": "*Einen Stuhl heranziehend und sich gegenüber setzend* Beziehungen."
     },
     "hidden_nurse_d3_5_ins6": {
         "name": "{name}",
@@ -718,7 +718,7 @@
     },
     "hidden_nurse_d3_5_ins10": {
         "name": "Schulkrankenschwester",
-        "text": "*Schmunzelt* \"So zu tun als wäre es nicht so, ist das Offensichtlichste.\""
+        "text": "*Schmunzelt* So zu tun als wäre es nicht so, ist das Offensichtlichste."
     },
     "hidden_nurse_d3_5_ins11": {
         "name": "{name}",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_5_ins12": {
         "name": "Schulkrankenschwester",
-        "text": "Sollte eine Schulkrankenschwester so eine Beratung machen...\" *Das Kinn in die Hand gestützt* \"Aber ich höre zu. Das ist immerhin das Krankenzimmer. Nicht nur der Körper muss gesund sein, oder?\""
+        "text": "Sollte eine Schulkrankenschwester so eine Beratung machen... *Das Kinn in die Hand gestützt* Aber ich höre zu. Das ist immerhin das Krankenzimmer. Nicht nur der Körper muss gesund sein, oder?"
     },
     "hidden_nurse_d3_5_ins13": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "hidden_nurse_d3_6_ins3": {
         "name": "Schulkrankenschwester",
-        "text": "...Eher als aufgehört zu haben, bin ich weggelaufen.\" *Mit einem schwachen Lächeln* \"Es gibt keinen noblen Grund.\""
+        "text": "...Eher als aufgehört zu haben, bin ich weggelaufen. *Mit einem schwachen Lächeln* Es gibt keinen noblen Grund."
     },
     "hidden_nurse_d3_6_ins4": {
         "name": "{name}",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_6_ins6": {
         "name": "Schulkrankenschwester",
-        "text": "...Da war einer. Ein Patient, den ich nicht retten konnte.\" *Ihr Blick schweift ab.* \"Wegen dieser Person bin ich hier.\""
+        "text": "...Da war einer. Ein Patient, den ich nicht retten konnte. *Ihr Blick schweift ab.* Wegen dieser Person bin ich hier."
     },
     "hidden_nurse_d3_6_ins7": {
         "name": "{name}",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder verspielt* \"Ach was~ Das geht aufs Haus. — Komm wieder. Verletzt oder nicht.\""
+        "text": "*Wieder verspielt* Ach was~ Das geht aufs Haus. — Komm wieder. Verletzt oder nicht."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -814,7 +814,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Mit einem angestrengten Lächeln* \"War nur Spaß~ Los, geh!\""
+        "text": "*Mit einem angestrengten Lächeln* War nur Spaß~ Los, geh!"
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",

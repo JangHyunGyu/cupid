@@ -216,7 +216,7 @@
     },
     "after_hidden_nurse_intro_2": {
         "name": "{name}",
-        "text": "*Veo un letrero de \"Enfermería\" en la pared. — ¿Entro o no?*"
+        "text": "*Veo un letrero de Enfermería en la pared. — ¿Entro o no?*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Mejor me voy a casa. No será nada.*"
+        "text": "*Ya he recorrido bastante por hoy. Vamos a casa a descansar.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after1_jealousy_seo_yuna_2": {
         "name": "{name}",
-        "text": "*\"Te vi en la azotea en el almuerzo. ...Parecías cercano a la presidenta.\" — Tres puntos al final. Palabras tragadas.*"
+        "text": "*Te vi en la azotea en el almuerzo. ...Parecías cercano a la presidenta. — Tres puntos al final. Palabras tragadas.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -438,7 +438,7 @@
     },
     "after_nurse_enter_4_ins2": {
         "name": "Enfermera",
-        "text": "Tu uniforme está tieso como una tabla. Huele a almidón.\" *Olfatea* \"Ah, también huele a flores de cerezo. Un estudiante transferido romántico.\""
+        "text": "Tu uniforme está tieso como una tabla. Huele a almidón. *Olfatea* Ah, también huele a flores de cerezo. Un estudiante transferido romántico."
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
@@ -458,7 +458,7 @@
     },
     "after_nurse_enter_7_ins2": {
         "name": "Enfermera",
-        "text": "*Corriendo la cortina a medias* \"¿Quieres agua? ¿O algo caliente?\""
+        "text": "*Corriendo la cortina a medias* ¿Quieres agua? ¿O algo caliente?"
     },
     "after_nurse_enter_7_ins3": {
         "name": "{name}",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "Enfermera",
-        "text": "*Entregando un vaso de agua* \"Sí, soy profesora. ...A veces se me olvida.\""
+        "text": "*Entregando un vaso de agua* Sí, soy profesora. ...A veces se me olvida."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "Enfermera",
-        "text": "*Entornando los ojos* \"Si un paciente sigue viniendo, claro que me preocupo. — Porque soy profesora.\""
+        "text": "*Entornando los ojos* Si un paciente sigue viniendo, claro que me preocupo. — Porque soy profesora."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",

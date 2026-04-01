@@ -118,11 +118,11 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*하교하려는데 — 뒤에서 목소리.*"
+        "text": "*교무실 앞에서 노크한다. 담임선생님이 문을 연다.*"
     },
     "after_hidden_homeroom_2": {
         "name": "담임선생님",
-        "text": "{name}. 잠깐 남아."
+        "text": "어, {name}? — 무슨 일?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*그냥 집에 가기로 했다. 별거 아닐 거다.*"
+        "text": "*오늘은 충분히 돌아다녔다. 집에 가서 쉬자.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -268,11 +268,11 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "보건선생님",
-        "text": "*멈칫한다.* ...눈이 좋네. 환자가 선생님 걱정하는 거 처음 봐."
+        "text": "...눈치 빠른 환자네. 걱정하는 건 내 쪽인데."
     },
     "after_nurse_enter_choice_b": {
         "name": "보건선생님",
-        "text": "그치? 여기 단골 되면 안 되는데~ 편한 게 함정이야."
+        "text": "그렇지? 여기 좋아. — 조용하고, 소독약 냄새 빼면 완벽해."
     },
     "after_nurse_enter_8": {
         "name": "보건선생님",
@@ -438,7 +438,7 @@
     },
     "after_nurse_enter_4_ins2": {
         "name": "보건선생님",
-        "text": "교복이 뻣뻣하잖아. 풀 냄새도 나고.\" *킁킁* \"아, 벚꽃 냄새도 섞여 있다. 로맨틱한 전학생이네."
+        "text": "교복이 뻣뻣하잖아. 풀 냄새도 나고. *킁킁* 아, 벚꽃 냄새도 섞여 있다. 로맨틱한 전학생이네."
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
@@ -458,7 +458,7 @@
     },
     "after_nurse_enter_7_ins2": {
         "name": "보건선생님",
-        "text": "*커튼을 반쯤 치며* \"물 줄까? 아님 따뜻한 거?"
+        "text": "*커튼을 반쯤 치며* 물 줄까? 아님 따뜻한 거?"
     },
     "after_nurse_enter_7_ins3": {
         "name": "{name}",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "보건선생님",
-        "text": "*물컵을 건네며* \"맞아, 선생님이지. ...가끔 까먹어."
+        "text": "*물컵을 건네며* 맞아, 선생님이지. ...가끔 까먹어."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "보건선생님",
-        "text": "*눈을 가늘게 뜨며* \"환자가 자꾸 오면 걱정되잖아? — 선생님이니까."
+        "text": "*눈을 가늘게 뜨며* 환자가 자꾸 오면 걱정되잖아? — 선생님이니까."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",
