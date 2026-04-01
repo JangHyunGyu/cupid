@@ -648,7 +648,6 @@ Object.assign(SCENARIO[2], {
         "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_end"
     },
-    // NOTE: SCENARIO.MD는 점심 파트에 배치하지만, 게임플레이 흐름상 방과후에 구현
     "hidden_nurse_d2_1": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
