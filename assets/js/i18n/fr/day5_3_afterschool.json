@@ -40,8 +40,8 @@
         "text": "*Un marque-page est glissé à l'intérieur. Une seule ligne sur le marque-page.*"
     },
     "after5_farewell_yuna_3": {
-        "name": "{name}",
-        "text": "*'C'était bien. ...On se retrouve dans la prochaine histoire.'*"
+        "name": "Yuna",
+        "text": "C'était bien. ...On se retrouve dans la prochaine histoire."
     },
     "after5_farewell_yuna_4": {
         "name": "{name}",
