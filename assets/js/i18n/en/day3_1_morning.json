@@ -414,7 +414,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*One word on the note. \"Waited.\"*"
+        "text": "*One word on the note. Waited.*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "morning3_yuna_gate_6_ins2": {
         "name": "{name}",
-        "text": "*The note: \"I figured you hadn't eaten breakfast.\"*"
+        "text": "*The note: I figured you hadn't eaten breakfast.*"
     },
     "morning3_yuna_gate_6_ins3": {
         "name": "{name}",
@@ -486,7 +486,7 @@
     },
     "morning3_dain_gate_5_ins": {
         "name": "{name}",
-        "text": "*The moment we crossed the gate, Dain landed and let out a small \"ngh.\" But when I looked back, she was smiling like nothing happened. — Did I mishear?*"
+        "text": "*The moment we crossed the gate, Dain landed and let out a small ngh. But when I looked back, she was smiling like nothing happened. — Did I mishear?*"
     },
     "morning3_react_yuna_1_ins": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "hidden_homeroom_d3_reveal_1_ins2": {
         "name": "Homeroom Teacher",
-        "text": "Seven years.\" *Looking out the window* \"Started in college. Creative writing major.\""
+        "text": "Seven years. *Looking out the window* Started in college. Creative writing major."
     },
     "hidden_homeroom_d3_reveal_1_ins3": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins2": {
         "name": "Homeroom Teacher",
-        "text": "*Suddenly serious* \"...You can't tell anyone about this. If a student knew their teacher's — this side, my authority — well, I never had much to begin with.\""
+        "text": "*Suddenly serious* ...You can't tell anyone about this. If a student knew their teacher's — this side, my authority — well, I never had much to begin with."
     },
     "hidden_homeroom_d3_reveal_4_ins3": {
         "name": "{name}",
@@ -586,7 +586,7 @@
     },
     "hidden_homeroom_d3_reveal_4_ins4": {
         "name": "Homeroom Teacher",
-        "text": "*Tucking her hair back* \"It's a secret. — Not exactly a good educational example. Telling a student something like this.\""
+        "text": "*Tucking her hair back* It's a secret. — Not exactly a good educational example. Telling a student something like this."
     },
     "hidden_homeroom_d3_reveal_4_ins5": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins3": {
         "name": "Homeroom Teacher",
-        "text": "*She hesitates. The hand touching the manuscript paper stops.* \"...You're the first person to call it perseverance.\""
+        "text": "*She hesitates. The hand touching the manuscript paper stops.* ...You're the first person to call it perseverance."
     },
     "hidden_homeroom_d3_reveal_6_ins4": {
         "name": "{name}",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_1_ins2": {
         "name": "School Nurse",
-        "text": "*Looking up* \"...Hm? Where are you hurt today?\""
+        "text": "*Looking up* ...Hm? Where are you hurt today?"
     },
     "hidden_nurse_d3_1_ins3": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "hidden_nurse_d3_5_ins5": {
         "name": "School Nurse",
-        "text": "*Pulling up a chair and sitting across from me* \"Relationships.\""
+        "text": "*Pulling up a chair and sitting across from me* Relationships."
     },
     "hidden_nurse_d3_5_ins6": {
         "name": "{name}",
@@ -718,7 +718,7 @@
     },
     "hidden_nurse_d3_5_ins10": {
         "name": "School Nurse",
-        "text": "*Smirks* \"Pretending it's not is the most obvious giveaway.\""
+        "text": "*Smirks* Pretending it's not is the most obvious giveaway."
     },
     "hidden_nurse_d3_5_ins11": {
         "name": "{name}",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_5_ins12": {
         "name": "School Nurse",
-        "text": "Should a school nurse even be doing this kind of counseling...\" *Resting her chin on her hand* \"But I'll listen. This is the nurse's office, after all. Your heart needs to be healthy too, right?\""
+        "text": "Should a school nurse even be doing this kind of counseling... *Resting her chin on her hand* But I'll listen. This is the nurse's office, after all. Your heart needs to be healthy too, right?"
     },
     "hidden_nurse_d3_5_ins13": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "hidden_nurse_d3_6_ins3": {
         "name": "School Nurse",
-        "text": "...It wasn't so much quitting. I ran away.\" *With a faint smile* \"There's no glamorous reason.\""
+        "text": "...It wasn't so much quitting. I ran away. *With a faint smile* There's no glamorous reason."
     },
     "hidden_nurse_d3_6_ins4": {
         "name": "{name}",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_6_ins6": {
         "name": "School Nurse",
-        "text": "...There was one. A patient I couldn't save.\" *Her gaze drifts.* \"That person is why I'm here.\""
+        "text": "...There was one. A patient I couldn't save. *Her gaze drifts.* That person is why I'm here."
     },
     "hidden_nurse_d3_6_ins7": {
         "name": "{name}",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "School Nurse",
-        "text": "*Playful again* \"Oh please~ This much is on the house. — Come again anytime. Hurt or not.\""
+        "text": "*Playful again* Oh please~ This much is on the house. — Come again anytime. Hurt or not."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -814,7 +814,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "School Nurse",
-        "text": "*Barely managing a smile* \"Just kidding~ Get going!\""
+        "text": "*Barely managing a smile* Just kidding~ Get going!"
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",

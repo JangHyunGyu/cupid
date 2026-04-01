@@ -197,7 +197,7 @@
     },
     "hidden_homeroom_d5_1_ins3": {
         "name": "Klassenlehrerin",
-        "text": "*Hebt den Umschlag leicht hoch* \"...Das hier."
+        "text": "*Hebt den Umschlag leicht hoch* ...Das hier."
     },
     "hidden_homeroom_d5_1_ins4": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "hidden_homeroom_d5_6_ins12": {
         "name": "Klassenlehrerin",
-        "text": "*Streicht sich die Haare zurück* \"...Buchbesprechungen nehme ich nicht an."
+        "text": "*Streicht sich die Haare zurück* ...Buchbesprechungen nehme ich nicht an."
     },
     "hidden_homeroom_d5_6_ins13": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "hidden_homeroom_d5_6_ins14": {
         "name": "Klassenlehrerin",
-        "text": "*Schmunzelt* \"...Stimmt. Schreib mir wenigstens eine Zeile."
+        "text": "*Schmunzelt* ...Stimmt. Schreib mir wenigstens eine Zeile."
     },
     "hidden_homeroom_d5_6_ins15": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "hidden_homeroom_d5_6_ins19": {
         "name": "Klassenlehrerin",
-        "text": "...Nach dem Abschluss.\" *Ihre Stimme bricht.* \"Ja. Nach dem Abschluss."
+        "text": "...Nach dem Abschluss. *Ihre Stimme bricht.* Ja. Nach dem Abschluss."
     },
     "hidden_homeroom_d5_6_ins20": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "hidden_nurse_d5_1_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Mit einem leichten Lächeln* \"Komm nach dem Abschluss mal vorbei."
+        "text": "*Mit einem leichten Lächeln* Komm nach dem Abschluss mal vorbei."
     },
     "hidden_nurse_d5_1_ins3": {
         "name": "{name}",
@@ -349,7 +349,7 @@
     },
     "hidden_nurse_d5_3_ins4": {
         "name": "Schulkrankenschwester",
-        "text": "*Lächelt wieder* \"Frag mich das nach dem Abschluss. — Dann antworte ich."
+        "text": "*Lächelt wieder* Frag mich das nach dem Abschluss. — Dann antworte ich."
     },
     "hidden_nurse_d5_3_ins5": {
         "name": "{name}",
@@ -385,7 +385,7 @@
     },
     "hidden_nurse_d5_choice_b_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Rückt ihre Brille zurecht* \"...In Ordnung. Aber benutz sie erst nach dem Abschluss."
+        "text": "*Rückt ihre Brille zurecht* ...In Ordnung. Aber benutz sie erst nach dem Abschluss."
     },
     "hidden_nurse_d5_choice_b_ins6": {
         "name": "{name}",

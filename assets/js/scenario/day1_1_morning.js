@@ -247,12 +247,6 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/seyoun_back.png",
         "next": "hallway_13_ins"
     },
-    "hallway_14": {
-        "character": "assets/images/characters/seyoun_back.png",
-        "background": "assets/images/background/school_hallway.png",
-        "setFlags": ["met_seoyeon"],
-        "next": "classroom_1"
-    },
     "classroom_1": {
         "character": null,
         "background": "assets/images/background/room_school.png",
@@ -443,7 +437,8 @@ Object.assign(SCENARIO[1], {
     "hallway_13_ins": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_back.png",
-        "next": "hallway_14"
+        "setFlags": ["met_seoyeon"],
+        "next": "classroom_1"
     },
     "classroom_2_ins": {
         "background": "assets/images/background/room_school.png",

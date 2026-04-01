@@ -109,7 +109,7 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Me doy la vuelta. Mi voz tiembla. — Pero esta vez.*"
+        "text": "*Casi huyo otra vez. Como en mi antigua escuela. Ese momento de guardar el móvil en el bolsillo sin poder decir nada casi volvió. — No. Esta vez no.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -281,6 +281,6 @@
     },
     "after5_confess_react_yuna_ins8": {
         "name": "{name}",
-        "text": "*Directamente ligado a la historia central del protagonista: \"Alguien que no pudo hablar intenta esta vez hacerlo sin arrepentimientos.\" Esta elección es la prueba final de ese tema. — Y había alguien que esperó.*"
+        "text": "*Y así — caminamos más allá de la escuela.*"
     }
 }

@@ -216,7 +216,7 @@
     },
     "after_hidden_nurse_intro_2": {
         "name": "{name}",
-        "text": "*Un panneau \"Infirmerie\" sur le mur. — J'y vais ou pas ?*"
+        "text": "*Un panneau Infirmerie sur le mur. — J'y vais ou pas ?*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Autant rentrer. C'est sûrement rien.*"
+        "text": "*J'ai assez traîné pour aujourd'hui. Rentrons nous reposer.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after1_jealousy_seo_yuna_2": {
         "name": "{name}",
-        "text": "*\"Je t'ai vu sur le toit à midi. ...Tu avais l'air proche de la présidente.\" — Trois points à la fin. Des mots avalés.*"
+        "text": "*Je t'ai vu sur le toit à midi. ...Tu avais l'air proche de la présidente. — Trois points à la fin. Des mots avalés.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -438,7 +438,7 @@
     },
     "after_nurse_enter_4_ins2": {
         "name": "Infirmière",
-        "text": "Ton uniforme est raide comme du carton. Ça sent l'amidon.\" *Snif snif* \"Oh, il y a aussi une odeur de cerisier. Un élève transféré romantique.\""
+        "text": "Ton uniforme est raide comme du carton. Ça sent l'amidon. *Snif snif* Oh, il y a aussi une odeur de cerisier. Un élève transféré romantique."
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
@@ -458,7 +458,7 @@
     },
     "after_nurse_enter_7_ins2": {
         "name": "Infirmière",
-        "text": "*Tirant le rideau à moitié* \"Tu veux de l'eau ? Ou quelque chose de chaud ?\""
+        "text": "*Tirant le rideau à moitié* Tu veux de l'eau ? Ou quelque chose de chaud ?"
     },
     "after_nurse_enter_7_ins3": {
         "name": "{name}",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "Infirmière",
-        "text": "*Tendant un verre d'eau* \"C'est vrai, je suis enseignante. ...J'oublie parfois.\""
+        "text": "*Tendant un verre d'eau* C'est vrai, je suis enseignante. ...J'oublie parfois."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "Infirmière",
-        "text": "*Plissant les yeux* \"Quand un patient revient sans cesse, évidemment que je m'inquiète. — Parce que je suis enseignante.\""
+        "text": "*Plissant les yeux* Quand un patient revient sans cesse, évidemment que je m'inquiète. — Parce que je suis enseignante."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",

@@ -361,11 +361,11 @@
     },
     "hidden_homeroom_d2_2_ins": {
         "name": "{name}",
-        "text": "*The faculty office. The teacher's desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
+        "text": "*I headed to the faculty office with the teacher.* *Her desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
     },
     "hidden_homeroom_d2_3_ins": {
         "name": "Homeroom Teacher",
-        "text": "*A brief hesitation* \"...Various things. Mostly — novels.\""
+        "text": "*A brief hesitation* ...Various things. Mostly — novels."
     },
     "hidden_homeroom_d2_3_ins2": {
         "name": "{name}",
@@ -401,7 +401,7 @@
     },
     "hidden_homeroom_d2_8_ins2": {
         "name": "Homeroom Teacher",
-        "text": "Famous isn't the word...\" *Takes a sip of coffee* \"More like someone I worry about.\""
+        "text": "Famous isn't the word... *Takes a sip of coffee* More like someone I worry about."
     },
     "hidden_homeroom_d2_8_ins3": {
         "name": "{name}",
@@ -409,7 +409,7 @@
     },
     "hidden_homeroom_d2_8_ins4": {
         "name": "Homeroom Teacher",
-        "text": "*Hiding behind her coffee mug* \"...Guess my poker face failed. Never mind, off you go.\""
+        "text": "*Hiding behind her coffee mug* ...Guess my poker face failed. Never mind, off you go."
     },
     "hidden_homeroom_d2_8_ins5": {
         "name": "{name}",

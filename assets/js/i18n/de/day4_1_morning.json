@@ -56,16 +56,44 @@
         "text": "Frau Lehrerin? Es ist Wochenende, was machen Sie hier?"
     },
     "hidden_homeroom_d4_4": {
+        "name": "{name}",
+        "text": "*Die Klassenlehrerin in Freizeitkleidung sieht nicht wie eine Lehrerin aus. Einfach — wie jemand, der schreibt.*"
+    },
+    "hidden_homeroom_d4_4_ins": {
         "name": "Klassenlehrerin",
-        "text": "Ach, da war noch — Papierkram. ...Lehrerinnen sind auch am Wochenende Lehrerinnen."
+        "text": "Was machst du denn hier?"
+    },
+    "hidden_homeroom_d4_4_ins2": {
+        "name": "{name}",
+        "text": "Ich kam gerade vorbei."
+    },
+    "hidden_homeroom_d4_4_ins3": {
+        "name": "Klassenlehrerin",
+        "text": "Du bist der erste Schüler, der beim 'Vorbeikommen' durchs Schultor schaut."
+    },
+    "hidden_homeroom_d4_4_ins4": {
+        "name": "{name}",
+        "text": "*Unangenehme Stille. — Die Lehrerin spricht zuerst.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Klassenlehrerin",
-        "text": "...Schon gegessen? Ein Kaffee geht doch, oder? — Also Saft, weil du Schüler bist."
+        "text": "...Schon gegessen?"
+    },
+    "hidden_homeroom_d4_5_ins": {
+        "name": "{name}",
+        "text": "Noch nicht."
+    },
+    "hidden_homeroom_d4_5_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "Nennen wir es eine Erweiterung des pädagogischen Interesses. *leise murmelnd* Ein Kaffee geht doch, oder? — Naja, du bist Schüler, also Saft."
+    },
+    "hidden_homeroom_d4_5_ins3": {
+        "name": "{name}",
+        "text": "*Schon wieder. Das Muster, 'pädagogisches Interesse' zu sagen und sofort die Grenze zu überschreiten.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*In Freizeitkleidung sieht die Lehrerin nicht wie eine Lehrerin aus. Eher wie — eine Schriftstellerin.*",
+        "text": "*Eine Tasse Kaffee. — Pädagogisches Interesse.*",
         "choices": [
             "Klar. Gibt's ein Café in der Nähe?",
             "Das sollten Sie nicht tun, oder?"
@@ -147,7 +175,7 @@
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*Ihr Name. Ich habe sie auch die ganze Zeit nur \"Schulkrankenschwester\" genannt.*",
+        "text": "*Ihr Name. Ich habe sie auch die ganze Zeit nur Schulkrankenschwester genannt.*",
         "choices": [
             "Wie heißen Sie? Nicht \"Schulkrankenschwester\"",
             "Deshalb sind Sie an diese Schule gekommen"
@@ -307,7 +335,7 @@
     },
     "minsu_cheer_1_ins3": {
         "name": "Minsu",
-        "text": "*Dain hat es in den Gruppenchat geschrieben lol \"Hab morgen was vor!!\" hat sie geschrieben*"
+        "text": "*Dain hat es in den Gruppenchat geschrieben lol Hab morgen was vor!! hat sie geschrieben*"
     },
     "minsu_cheer_1_ins4": {
         "name": "Minsu",
@@ -327,7 +355,7 @@
     },
     "morning4_dain_msg_1_ins": {
         "name": "{name}",
-        "text": "*Kurz und knapp. Aber \"mach's gut\" wiegt schwer. Derselbe Typ, der am Tag 2 fragte \"Warst du an deiner alten Schule auch so?\", der am Tag 3 sagte \"Ablehnung ist auch Liebe\" — heute sagt er nur \"mach's gut\".*"
+        "text": "*Kurz und knapp. Aber mach's gut wiegt schwer. Derselbe Typ, der am Tag 2 fragte Warst du an deiner alten Schule auch so?, der am Tag 3 sagte Ablehnung ist auch Liebe — heute sagt er nur mach's gut.*"
     },
     "morning4_dain_msg_1_ins2": {
         "name": "{name}",
@@ -351,7 +379,7 @@
     },
     "morning4_yuna_msg_1_ins": {
         "name": "{name}",
-        "text": "*Kurz. Typisch Yuna. Ich weiß jetzt, dass \"Wenn du zu spät kommst, gehe ich\" dasselbe bedeutet wie \"Bitte komm nicht zu spät.\"*"
+        "text": "*Kurz. Typisch Yuna. Ich weiß jetzt, dass Wenn du zu spät kommst, gehe ich dasselbe bedeutet wie Bitte komm nicht zu spät.*"
     },
     "morning4_yuna_msg_1_ins2": {
         "name": "Dain",
@@ -371,7 +399,7 @@
     },
     "hidden_homeroom_d4_3_ins": {
         "name": "Klassenlehrerin",
-        "text": "*Verlegen* \"Ach, das ist nur — ich hatte noch Papierkram zu erledigen."
+        "text": "*Verlegen* Ach, das ist nur — ich hatte noch Papierkram zu erledigen."
     },
     "hidden_homeroom_d4_3_ins2": {
         "name": "{name}",
@@ -383,7 +411,7 @@
     },
     "hidden_homeroom_d4_3_ins4": {
         "name": "Klassenlehrerin",
-        "text": "*Hände in den Taschen* \"...Eine Lehrerin ist auch am Wochenende Lehrerin. So ist das."
+        "text": "*Hände in den Taschen* ...Eine Lehrerin ist auch am Wochenende Lehrerin. So ist das."
     },
     "hidden_homeroom_d4_cafe_1_ins": {
         "name": "{name}",
@@ -391,7 +419,7 @@
     },
     "hidden_homeroom_d4_cafe_1_ins2": {
         "name": "Klassenlehrerin",
-        "text": "*Einen Schluck Kaffee trinkend* \"Ehrlich gesagt? Ein bisschen."
+        "text": "*Einen Schluck Kaffee trinkend* Ehrlich gesagt? Ein bisschen."
     },
     "hidden_homeroom_d4_cafe_1_ins3": {
         "name": "{name}",
@@ -411,7 +439,7 @@
     },
     "hidden_homeroom_d4_cafe_2_ins2": {
         "name": "Klassenlehrerin",
-        "text": "Eher als geholfen...\" *Aus dem Fenster schauend* \"Dass jemand es herausgefunden hat — das war eine Erleichterung. Etwas allein zu tragen ist kein Geheimnis, sondern eine Last."
+        "text": "Eher als geholfen... *Aus dem Fenster schauend* Dass jemand es herausgefunden hat — das war eine Erleichterung. Etwas allein zu tragen ist kein Geheimnis, sondern eine Last."
     },
     "hidden_homeroom_d4_cafe_2_ins3": {
         "name": "{name}",
@@ -439,11 +467,11 @@
     },
     "hidden_homeroom_d4_cafe_5_ins3": {
         "name": "{name}",
-        "text": "\"Pädagogisches Interesse\", oder?"
+        "text": "Pädagogisches Interesse, oder?"
     },
     "hidden_homeroom_d4_cafe_5_ins4": {
         "name": "Klassenlehrerin",
-        "text": "*Stockt* \"...Nimm mir nicht die Worte vorweg."
+        "text": "*Stockt* ...Nimm mir nicht die Worte vorweg."
     },
     "hidden_homeroom_d4_cafe_5_ins5": {
         "name": "{name}",
@@ -463,7 +491,7 @@
     },
     "hidden_homeroom_d4_decline_ins2": {
         "name": "{name}",
-        "text": "*Ich habe abgelehnt, also warum fühlt sich das so an.*"
+        "text": "*Ich habe abgelehnt, also warum fühlt sich das so an. Ich ging nach Hause.*"
     },
     "hidden_nurse_d4_1_ins": {
         "name": "{name}",
@@ -471,7 +499,7 @@
     },
     "hidden_nurse_d4_1_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Dreht sich um* \"Hm? Du bist wirklich gekommen?"
+        "text": "*Dreht sich um* Hm? Du bist wirklich gekommen?"
     },
     "hidden_nurse_d4_2_ins": {
         "name": "{name}",
@@ -479,7 +507,7 @@
     },
     "hidden_nurse_d4_2_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Lachend* \"Zum ersten Mal hilft ein Patient der Krankenschwester."
+        "text": "*Lachend* Zum ersten Mal hilft ein Patient der Krankenschwester."
     },
     "hidden_nurse_d4_2_ins3": {
         "name": "{name}",
@@ -491,7 +519,7 @@
     },
     "hidden_nurse_d4_2_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Reicht Dokumente rüber* \"Kannst du die hier sortieren? Nach Jahrgang."
+        "text": "*Reicht Dokumente rüber* Kannst du die hier sortieren? Nach Jahrgang."
     },
     "hidden_nurse_d4_2_ins6": {
         "name": "{name}",
@@ -523,7 +551,7 @@
     },
     "hidden_nurse_d4_4_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Stimme wird einen halben Ton leiser* \"Niemand hat mich beim Namen gerufen. 'Schwester', 'Nachtdienst', 'Station 3.' Alles Titel, nie mein Name."
+        "text": "*Stimme wird einen halben Ton leiser* Niemand hat mich beim Namen gerufen. 'Schwester', 'Nachtdienst', 'Station 3.' Alles Titel, nie mein Name."
     },
     "hidden_nurse_d4_4_ins6": {
         "name": "{name}",
@@ -531,7 +559,7 @@
     },
     "hidden_nurse_d4_4_ins7": {
         "name": "Schulkrankenschwester",
-        "text": "In der Schule bin ich \"die Schulkrankenschwester,\" richtig? Wieder ein Titel.\" *Leicht lächelnd* \"Aber du — du hast mich nie beim Titel genannt, oder?"
+        "text": "In der Schule bin ich die Schulkrankenschwester, richtig? Wieder ein Titel. *Leicht lächelnd* Aber du — du hast mich nie beim Titel genannt, oder?"
     },
     "hidden_nurse_d4_4_ins8": {
         "name": "{name}",
@@ -539,7 +567,7 @@
     },
     "hidden_nurse_d4_4_ins9": {
         "name": "Schulkrankenschwester",
-        "text": "Einfach nur \"Frau Lehrerin.\" Ohne Titel davor. Das hat sich gut angefühlt."
+        "text": "Einfach nur Frau Lehrerin. Ohne Titel davor. Das hat sich gut angefühlt."
     },
     "hidden_nurse_d4_4_ins10": {
         "name": "{name}",
@@ -555,7 +583,7 @@
     },
     "hidden_nurse_d4_6_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Mich anschauend* \"...Doch, das war was."
+        "text": "*Mich anschauend* ...Doch, das war was."
     },
     "hidden_nurse_d4_6_ins3": {
         "name": "{name}",
@@ -567,7 +595,7 @@
     },
     "hidden_nurse_d4_meal_1_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "Das ist ewig her~\" *Lachend* \"Ich bin jetzt alt."
+        "text": "Das ist ewig her~ *Lachend* Ich bin jetzt alt."
     },
     "hidden_nurse_d4_meal_2_ins": {
         "name": "{name}",
@@ -579,7 +607,7 @@
     },
     "hidden_nurse_d4_meal_3_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder lächelnd* \"So, Essen ist vorbei! Die Lehrerin hat noch Arbeit~"
+        "text": "*Wieder lächelnd* So, Essen ist vorbei! Die Lehrerin hat noch Arbeit~"
     },
     "hidden_nurse_d4_meal_3_ins3": {
         "name": "{name}",
@@ -591,7 +619,7 @@
     },
     "hidden_nurse_d4_meal_4_ins": {
         "name": "{name}",
-        "text": "*Sie hat \"wirklich\" hinzugefügt. Wenn diese Person \"wirklich\" anfügt, bedeutet das, dass alles davor aufrichtig gemeint war.*"
+        "text": "*Sie hat wirklich hinzugefügt. Wenn diese Person wirklich anfügt, bedeutet das, dass alles davor aufrichtig gemeint war.*"
     },
     "hidden_nurse_d4_meal_4_ins2": {
         "name": "{name}",

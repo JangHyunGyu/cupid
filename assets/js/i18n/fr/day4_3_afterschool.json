@@ -297,7 +297,7 @@
     },
     "confess_yuna_yes_9_ins": {
         "name": "{name}",
-        "text": "*\"Cette fois.\" Quelqu'un est parti avant. Yuna rouvre cette blessure, et pourtant elle me retient.*"
+        "text": "*Cette fois. Quelqu'un est parti avant. Yuna rouvre cette blessure, et pourtant elle me retient.*"
     },
     "confess_yuna_no_4_ins": {
         "name": "{name}",
@@ -317,7 +317,7 @@
     },
     "confess_dain_yes_10_ins": {
         "name": "{name}",
-        "text": "*\"Énormément.\" La façon dont Dain exprime ses sentiments est simple. Mais cette simplicité est la preuve de sa sincérité.*"
+        "text": "*Énormément. La façon dont Dain exprime ses sentiments est simple. Mais cette simplicité est la preuve de sa sincérité.*"
     },
     "confess_dain_no_4_ins": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "confess_dain_no_4_ins2": {
         "name": "{name}",
-        "text": "*Les scènes de confession du trio principal se déroulent normalement. Cet événement caché se joue séparément avant le rendez-vous principal le matin du Jour 4. Ce n'est que si la confession principale du Jour 4 a été reportée (`day4_waited`) qu'une branche pour choisir le personnage caché sera disponible au Jour 5.*"
+        "text": "*--- Petit matin ---*"
     },
     "confess_dain_no_4_ins3": {
         "name": "{name}",
@@ -345,7 +345,7 @@
     },
     "confess_dain_no_4_ins7": {
         "name": "Professeure principale",
-        "text": "Je ne t'ai pas appelé.\" *Un temps* \"...Mais je savais que tu viendrais."
+        "text": "Je ne t'ai pas appelé. *Un temps* ...Mais je savais que tu viendrais."
     },
     "confess_dain_no_4_ins8": {
         "name": "{name}",
@@ -401,11 +401,11 @@
     },
     "confess_dain_no_4_ins21": {
         "name": "{name}",
-        "text": "*Sa voix s'est brisée au deuxième \"bien.\" La première impression du premier lecteur. Le mot qu'elle a attendu sept ans.*"
+        "text": "*Sa voix s'est brisée au deuxième bien. La première impression du premier lecteur. Le mot qu'elle a attendu sept ans.*"
     },
     "confess_dain_no_4_ins22": {
         "name": "{name}",
-        "text": "*Les scènes de confession du trio principal se déroulent normalement. Cet événement caché se joue séparément avant le rendez-vous principal le matin du Jour 4. Ce n'est que si la confession principale du Jour 4 a été reportée (`day4_waited`) qu'une branche pour choisir le personnage caché sera disponible au Jour 5.*"
+        "text": "*--- Matin ---*"
     },
     "confess_dain_no_4_ins23": {
         "name": "{name}",
@@ -421,7 +421,7 @@
     },
     "confess_dain_no_4_ins26": {
         "name": "{name}",
-        "text": "*\"Tu es là\" est d'un demi-ton plus bas que d'habitude. Il faut lire les sentiments de cette personne à travers le ton.*"
+        "text": "*Tu es là est d'un demi-ton plus bas que d'habitude. Il faut lire les sentiments de cette personne à travers le ton.*"
     },
     "confess_dain_no_4_ins27": {
         "name": "{name}",
@@ -429,7 +429,7 @@
     },
     "confess_dain_no_4_ins28": {
         "name": "Infirmière",
-        "text": "Consultation...\" *Tournant sa chaise* \"Oui. La dernière consultation."
+        "text": "Consultation... *Tournant sa chaise* Oui. La dernière consultation."
     },
     "confess_dain_no_4_ins29": {
         "name": "{name}",
@@ -477,7 +477,7 @@
     },
     "confess_dain_no_4_ins40": {
         "name": "{name}",
-        "text": "*\"Pour de vrai.\" Sa phrase de confirmation. Aujourd'hui c'est moi qui l'ai entendue en premier.*"
+        "text": "*Pour de vrai. Sa phrase de confirmation. Aujourd'hui c'est moi qui l'ai entendue en premier.*"
     },
     "confess_dain_no_4_ins41": {
         "name": "{name}",
@@ -489,7 +489,7 @@
     },
     "confess_dain_no_4_ins43": {
         "name": "Infirmière",
-        "text": "*Reprenant un ton joyeux, mais la voix tremblante* \"Bon~ alors la dernière consultation est terminée ! Le prochain rendez-vous — je le note pour après la remise des diplômes~"
+        "text": "*Reprenant un ton joyeux, mais la voix tremblante* Bon~ alors la dernière consultation est terminée ! Le prochain rendez-vous — je le note pour après la remise des diplômes~"
     },
     "confess_dain_no_4_ins44": {
         "name": "{name}",

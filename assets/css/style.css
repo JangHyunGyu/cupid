@@ -1,3 +1,52 @@
+/* 모바일 세로모드(최대 600px)에서 대화창 및 텍스트 크기 조정 */
+@media (max-width: 600px) {
+    .dialog-box, .narration-box {
+        max-width: 95vw;
+        min-height: 40px;
+        padding: 8px 10px 8px 10px;
+        margin-bottom: 6px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+    .dialog-box .speaker-label {
+        font-size: 13px;
+        padding: 3px 10px;
+    }
+    .choice-list {
+        margin-bottom: 6px;
+    }
+    .choice-list .choice {
+        font-size: 14px;
+        padding: 7px 0;
+    }
+    #dialogue-box {
+        min-height: 40px;
+        padding: 10px 10px 8px 10px;
+        margin-bottom: 6px;
+    }
+    #name-tag {
+        font-size: 1rem;
+        padding: 4px 10px;
+        max-width: 200px;
+    }
+    #message {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    /* 캐릭터 이미지가 좌우로 꽉 차도록 */
+    .char-slot img {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+    }
+}
 /* ==========================================================================
    Cupid Global Styles (공통 스타일 및 초기화)
    ========================================================================== */
@@ -31,8 +80,7 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 1280px;
-    /* 고해상도 모니터에서도 16:9 비율 유지 권장 */
+    max-width: none;
     margin: 0 auto;
     /* 중앙 정렬 */
     background-color: #222;
@@ -833,6 +881,50 @@ html[lang="de"] #message {
 /* ==========================================================================
    Responsive Design & Media Queries (반응형 최적화)
    ========================================================================== */
+
+/* 데스크탑(PC) 해상도에서 UI 요소 크기 확대 */
+@media (min-width: 1024px) {
+    #dialogue-box {
+        min-height: 200px;
+        padding: 32px 32px;
+    }
+    #name-tag {
+        font-size: 1.5rem;
+        padding: 8px 28px;
+        max-width: 500px;
+    }
+    #message {
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+    .choice-btn {
+        font-size: 1.3rem;
+        padding: 20px 32px;
+        border-radius: 20px;
+    }
+    #game-container #home-btn,
+    #game-container #settings-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    .modal-container,
+    .modal-content {
+        max-width: 540px;
+        padding: 48px 32px;
+        border-radius: 28px;
+    }
+    .modal-title {
+        font-size: 2rem;
+    }
+    .modal-content p {
+        font-size: 1.4rem;
+    }
+    .modal-buttons button {
+        font-size: 1.2rem;
+        padding: 16px 36px;
+    }
+}
 
 /* 세로 모드 (Portrait) 최적화 */
 @media (orientation: portrait) {

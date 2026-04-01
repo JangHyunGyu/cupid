@@ -370,7 +370,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*Eating tteokbokki with Dain and chatting.*",
+        "text": "*We stepped into the tteokbokki shop near school.* *Eating tteokbokki with Dain and chatting.*",
         "context": "Day 2 afterschool, came to tteokbokki shop after a volleyball bet at the gym. Getting closer. Tone: Feeling closer than yesterday. Banter feels natural and comfortable. Push-pull flirting. No heavy topics yet.",
         "personality": "Dain is an energetic athlete. Competitive and straightforward, but exclamation marks disappear when she's being genuine."
     },
@@ -404,15 +404,15 @@
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "School Nurse",
-        "text": "*She pulls her hand back.* ...Occupational hazard."
+        "text": "...My hands are usually cold. I guess they're warm today."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "School Nurse",
-        "text": "I'm a pro~ Slacking off would be an insult to the bandage."
+        "text": "*smiles* It's care, care. If you put it on carelessly, it falls off."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Checking the bandage when — her laptop is open on the desk. That's not a medical record — looks more like a personal diary.*"
+        "text": "*Checking the bandage when — a laptop is open on the desk. Something is written on the screen. Not a medical record — looks more like a personal diary.*"
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
@@ -428,11 +428,11 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "School Nurse",
-        "text": "Just one? — Hmm, you'd have to visit a lot more to earn that~"
+        "text": "*narrows eyes* Just one? ...Fine then. I like cocoa more than coffee. That's the secret."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "School Nurse",
-        "text": "Good kid. But you're the type who can't lie, aren't you."
+        "text": "*laughs lightly* Secret~ Teachers have secrets too."
     },
     "hidden_nurse_d2_8": {
         "name": "School Nurse",
@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Eyes widening* \"Huh? I was gonna go easy, but never mind.\""
+        "text": "*Eyes widening* Huh? I was gonna go easy, but never mind."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*Quietly* \"...Don't move. Just for a bit.\""
+        "text": "*Quietly* ...Don't move. Just for a bit."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Pulling her hand back* \"...It was nothing.\""
+        "text": "*Pulling her hand back* ...It was nothing."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Walking beside me* \"Having fun lately?\""
+        "text": "*Walking beside me* Having fun lately?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

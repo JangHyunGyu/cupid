@@ -370,7 +370,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*En train de manger du tteokbokki avec Dain et de discuter.*",
+        "text": "*On est entrés dans le restaurant de tteokbokki près de l'école.* *En train de manger du tteokbokki avec Dain et de discuter.*",
         "context": "Jour 2 après les cours, venus manger du tteokbokki après un pari au gym. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
         "personality": "Dain est une athlète énergique et compétitive."
     },
@@ -404,15 +404,15 @@
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Infirmière",
-        "text": "*Elle retire discrètement sa main.* ...Déformation professionnelle."
+        "text": "...J'ai les mains plutôt froides d'habitude. On dirait qu'elles sont chaudes aujourd'hui."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Infirmière",
-        "text": "Je suis une pro~ Bâcler le travail, ce serait une insulte au pansement."
+        "text": "*avec un sourire* C'est du soin, du soin. Si on le colle n'importe comment, ça tombe."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement — son ordinateur est ouvert sur le bureau. Ce n'est pas un dossier médical — on dirait un journal intime.*"
+        "text": "*En vérifiant le pansement — un ordinateur portable est ouvert sur le bureau. Quelque chose est écrit sur l'écran. Ce n'est pas un dossier médical — on dirait un journal intime.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
@@ -428,11 +428,11 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Infirmière",
-        "text": "Un seul ? — Hmm, pour ça il faudrait venir beaucoup plus souvent~"
+        "text": "*plissant les yeux* Un seul ? ...Bon, d'accord. Je préfère le cacao au café. Voilà le secret."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Infirmière",
-        "text": "Sage garçon. Mais t'es du genre à pas savoir mentir, hein."
+        "text": "*riant doucement* Secret~ Les profs aussi ont des secrets."
     },
     "hidden_nurse_d2_8": {
         "name": "Infirmière",
@@ -574,7 +574,7 @@
     },
     "after2_dain_9_ins": {
         "name": "Dain",
-        "text": "*Les yeux écarquillés* \"Hein ? J'allais y aller doucement, mais tant pis.\""
+        "text": "*Les yeux écarquillés* Hein ? J'allais y aller doucement, mais tant pis."
     },
     "after2_dain_9_ins2": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "after2_seo_neck_high_ins": {
         "name": "Seoyeon",
-        "text": "*Doucement* \"...Ne bouge pas. Juste un instant.\""
+        "text": "*Doucement* ...Ne bouge pas. Juste un instant."
     },
     "after2_seo_neck_high_ins2": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "after2_seo_neck_low_ins2": {
         "name": "Seoyeon",
-        "text": "*Retirant sa main* \"...C'était rien.\""
+        "text": "*Retirant sa main* ...C'était rien."
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "minsu_warn_1_ins": {
         "name": "Minsu",
-        "text": "*Marchant à côté de moi* \"Tu t'amuses bien en ce moment ?\""
+        "text": "*Marchant à côté de moi* Tu t'amuses bien en ce moment ?"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",
