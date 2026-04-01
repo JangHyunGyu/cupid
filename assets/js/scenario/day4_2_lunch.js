@@ -117,6 +117,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_seo_end_b": {
         "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "pre_confess_minsu"
     },
     "date_yuna_1": {
@@ -375,6 +376,7 @@ Object.assign(SCENARIO[4], {
     },
     "pre_confess_callback": {
         "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "confess_seo_1"
     },
     "date_seo_freetalk": {
@@ -412,10 +414,12 @@ Object.assign(SCENARIO[4], {
     },
     "date_seo_succulent_2_ins": {
         "background": "assets/images/background/park.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_succulent_3"
     },
     "date_yuna_pretty_high_5_ins": {
         "background": "assets/images/background/cafe.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "date_yuna_pretty_high_5_ins2"
     },
     "date_yuna_pretty_high_5_ins2": {
@@ -425,6 +429,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_yuna_bookstore_2_ins": {
         "background": "assets/images/background/bookstore.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_bookstore_3"
     },
     "date_yuna_earphone_2_ins": {
@@ -449,6 +454,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_dain_arcade_2_ins": {
         "background": "assets/images/background/arcade.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_arcade_3"
     },
     "date_dain_arcade_3_ins": {

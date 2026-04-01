@@ -87,6 +87,7 @@ Object.assign(SCENARIO[5], {
     },
     "tour_yuna_1_check": {
         "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
         "bgm": "sunset1.mp3",
         "branches": [
             { "condition": "chose_yuna_lunch", "next": "tour_yuna_1" },
@@ -166,6 +167,7 @@ Object.assign(SCENARIO[5], {
     },
     "tour_dain_1_check": {
         "background": "assets/images/background/store.png",
+        "character": null,
         "bgm": "sunset1.mp3",
         "branches": [
             { "condition": "chose_dain_lunch", "next": "tour_dain_1" },
@@ -174,10 +176,12 @@ Object.assign(SCENARIO[5], {
     },
     "tour_dain_1": {
         "background": "assets/images/background/store.png",
+        "character": null,
         "next": "tour_dain_2"
     },
     "tour_dain_1b": {
         "background": "assets/images/background/store.png",
+        "character": null,
         "next": "tour_dain_2"
     },
     "tour_dain_2": {

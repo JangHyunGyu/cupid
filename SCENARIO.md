@@ -17,6 +17,7 @@
 - BGM: `intro.mp3`
 - 다음: `start_2`
 
+- 캐릭터: `없음`
 **{name}**: *4월. 벚꽃이 흩날린다.*
 
 ---
@@ -25,6 +26,7 @@
 - 배경: `school.png`
 - 다음: `start_3`
 
+- 캐릭터: `없음`
 **{name}**: *교복이 아직 뻣뻣하다. 풀 냄새가 은은하게 난다. 어제 다림질했는데도 접은 자국이 지 멋대로 남아 있다. 교복이랑 벌써 사이가 안 좋다.*
 
 ---
@@ -33,6 +35,7 @@
 - 배경: `school.png`
 - 다음: `start_3b`
 
+- 캐릭터: `없음`
 **{name}**: *오늘부터 이 학교 학생이다. 전학. 처음이다.*
 
 ---
@@ -41,6 +44,7 @@
 - 배경: `school.png`
 - 다음: `start_4`
 
+- 캐릭터: `없음`
 **{name}**: *손이 주머니 안에서 핸드폰 모서리를 만지작거린다. 인정하기 싫지만, 긴장할 때 나오는 습관이다.*
 
 ---
@@ -49,6 +53,7 @@
 - 배경: `school.png`
 - 다음: `start_5`
 
+- 캐릭터: `없음`
 **{name}**: *주머니에서 핸드폰이 울린다. 이전 학교 단체 카톡방. 화면에 뜬 이름을 보고 — 주머니에 도로 넣었다. 아직은.*
 
 ---
@@ -57,6 +62,7 @@
 - 배경: `school.png`
 - 다음: `start_6`
 
+- 캐릭터: `없음`
 **{name}**: *벚꽃잎이 코끝을 스친다. — 재채기가 나올 뻔했다. 드라마면 여기서 예쁜 애가 부딪히면서 등장하는 건데.*
 
 ---
@@ -65,6 +71,7 @@
 - 배경: `school.png`
 - 다음: `name_input_scene`
 
+- 캐릭터: `없음`
 **{name}**: *현실은 그냥 재채기다.*
 
 ---
@@ -74,6 +81,7 @@
 - 타입: `input`
 - 다음: `gate_1`
 
+- 캐릭터: `없음`
 **시스템**: 전학생, 당신의 이름은?
 
 ---
@@ -82,6 +90,7 @@
 - 배경: `school.png`
 - 다음: `gate_2`
 
+- 캐릭터: `없음`
 **{name}**: *낯선 교문 앞에 섰다. 꽤 큰 학교다. 건물이 깨끗하고 운동장도 넓다.*
 
 ---
@@ -90,6 +99,7 @@
 - 배경: `school.png`
 - 다음: `gate_3`
 
+- 캐릭터: `없음`
 **{name}**: *학생들이 삼삼오오 교문을 지나간다. 나만 교복이 새하얗게 뻣뻣하다. 광고판 같다 — '저 새로 왔어요'.*
 
 ---
@@ -98,6 +108,7 @@
 - 배경: `school.png`
 - 다음: `seoyeon_meet_1`
 
+- 캐릭터: `없음`
 **{name}**: *교문 앞에 한 여학생이 서 있다. 검은 긴머리를 가볍게 넘기며 — 안경 너머로 걸음이 여유롭다. 서두르는 기색이 전혀 없다.*
 
 ---
@@ -397,6 +408,7 @@
 - BGM: `daily.mp3`
 - 다음: `classroom_2`
 
+- 캐릭터: `없음`
 **{name}**: *교실 문을 연다. 시선이 쏟아진다.*
 
 ---
@@ -405,6 +417,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_2_ins`
 
+- 캐릭터: `없음`
 **{name}**: *예상은 했지만, 30명분의 시선은 역시 무겁다.*
 
 ---
@@ -440,6 +453,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_dain_1`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *교실 한쪽에서 휘파람 소리.*
 
 ---
@@ -529,6 +543,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_seat_2`
 
+- 캐릭터: `yuna_bored.png`
 **{name}**: *담임이 빈자리를 가리킨다.*
 
 ---
@@ -573,6 +588,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_dain_talk_2`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *이 학교에도 상식인이 있구나. — 앞자리 이름표에 '민수'라고 적혀 있다.*
 
 ---
@@ -635,6 +651,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_yuna_note_1`
 
+- 캐릭터: `dain_laugh.png`
 **{name}**: *'아마'가 붙었다. 볼 머신보다 나을 수도 있다는 뜻이다. 포지션이 위험하다.*
 
 ---
@@ -724,6 +741,7 @@
 
 ### `classroom_2_ins`
 - 배경: `room_school.png`
+- 캐릭터: `없음`
 - 다음: `classroom_3`
 
 **{name}**: *교탁 앞에 담임선생님이 서 있다. 30대 초반. 가디건 단추가 하나 풀려 있다. 표정은 무심한데 — 눈은 학생 하나하나를 훑고 있다.*
@@ -768,7 +786,7 @@
 
 ### `classroom_dain_5_ins`
 - 배경: `room_school.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `teacher_normal.png`
 - 다음: `classroom_dain_5_ins2`
 
 **{name}**: *담임이 한숨을 살짝 쉰다. 한심하다는 게 아니라, 익숙하다는 한숨이다.*
@@ -818,6 +836,7 @@
 - BGM: `daily.mp3`
 - 다음: `lunch_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *점심시간. 종이 울렸다.*
 
 ---
@@ -826,6 +845,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_3`
 
+- 캐릭터: `없음`
 **{name}**: *교실을 나서니 복도가 학생들로 가득하다. 어디 가야 할지 모르겠다. 학식? 매점? 아니면 —*
 
 ---
@@ -834,6 +854,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_4`
 
+- 캐릭터: `없음`
 **{name}**: *세 방향에서 동시에 신호가 온다.*
 
 ---
@@ -842,6 +863,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_4_ins`
 
+- 캐릭터: `없음`
 **{name}**: *복도 끝에서 서연이 눈을 마주치고 손짓한다. 옥상 쪽을 가리키며.*
 
 ---
@@ -859,6 +881,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_7`
 
+- 캐릭터: `없음`
 **{name}**: *그리고 유나가 가방만 들고 조용히 교실을 빠져나간다. 도서관 방향.*
 
 ---
@@ -867,6 +890,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_7b`
 
+- 캐릭터: `없음`
 **{name}**: *세 갈래 길. 첫날부터 이런 선택이라니.*
 
 ---
@@ -875,6 +899,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_choice`
 
+- 캐릭터: `없음`
 **{name}**: *전 학교에서는 선택을 안 했다. 정확히는, 선택을 미루다가 타이밍을 놓쳤다. — 아, 또 이 생각. 입은 능글맞게 움직이는데, 정작 중요한 순간에는 굳어버리는 이 패턴. 나 자신이 제일 한심하다.*
 
 ---
@@ -886,6 +911,7 @@
   2. "다인과 매점으로" → `lunch_dain_1` | 플래그: `chose_dain_lunch`
   3. "유나를 따라 도서관으로" → `lunch_yuna_1` | 플래그: `chose_yuna_lunch`
 
+- 캐릭터: `없음`
 **{name}**: *누구를 따라갈까?*
 
 ---
@@ -1851,6 +1877,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_start`
 
+- 캐릭터: `없음`
 **{name}**: *종이 울린다. 점심시간이 끝났다.*
 
 ---
@@ -1895,6 +1922,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_5`
 
+- 캐릭터: `없음`
 **{name}**: *옆에서 다인이 팔을 잡는다.*
 
 ---
@@ -1939,6 +1967,7 @@
 - 배경: `library_old.png`
 - 다음: `lunch_yuna_7`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: ...앉아도 돼?
 
 ---
@@ -1959,6 +1988,7 @@
 - BGM: `daily.mp3`
 - 다음: `after_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *방과후. 학교를 좀 둘러보기로 했다. 아직 구조를 잘 모르니까.*
 
 ---
@@ -1967,6 +1997,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_kakao_1`
 
+- 캐릭터: `없음`
 **{name}**: *복도를 걷는다. 핸드폰이 진동한다. — 이전 학교 단체 카톡방.*
 
 ---
@@ -1975,6 +2006,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_kakao_2`
 
+- 캐릭터: `없음`
 **{name}**: *'소정이 남친이랑 벚꽃 사진 올렸다 ㅋㅋ'*
 
 ---
@@ -1983,6 +2015,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_kakao_3`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 주머니에 넣었다.*
 
 ---
@@ -1991,6 +2024,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_kakao_4`
 
+- 캐릭터: `없음`
 **{name}**: *...아.*
 
 ---
@@ -1999,6 +2033,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_kakao_5`
 
+- 캐릭터: `없음`
 **{name}**: *괜찮다. 진짜로. 이미 지난 일이다. 고백도 못 하고 끝난 거잖아. 미련이 아니라 후회다. — 그때 말했으면 어땠을까. 차였어도 이렇게 찜찜하지는 않았을 텐데.*
 
 ---
@@ -2007,6 +2042,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_kakao_end`
 
+- 캐릭터: `없음`
 **{name}**: *이 학교에서는 — 하고 싶은 말은 하자. 이번에는.*
 
 ---
@@ -2019,6 +2055,7 @@
   - [`chose_yuna_lunch`] → `after1_jealousy_yuna_1`
   - [기본] → `after1_pre_miss`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 다시 꺼내서 단체방을 나갔다. 정리 끝. — 이제 이 학교 사람이다.*
 
 ---
@@ -2101,6 +2138,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after1_jealousy_seo_yuna_2`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *주머니에서 접힌 쪽지가 나온다. 유나의 필체.*
 
 ---
@@ -2109,6 +2147,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after1_pre_miss`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *'점심때 옥상에서 봤어. ...학생회장이랑 사이 좋아 보였어.' — 끝에 점이 세 개. 하고 싶은 말을 삼켰다는 뜻이다.*
 
 ---
@@ -2155,6 +2194,7 @@
   - [`met_dain`] → `after_dain_skip`
   - [기본] → `after_miss_dain_1`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *복도를 계속 걷는다.*
 
 ---
@@ -2378,6 +2418,7 @@
   2. "보건실" → `after_hidden_nurse_intro` | 플래그: `nurse_day1_choice`
   3. "하교" → `night_start` | 플래그: `skip_hidden_day1`
 
+- 캐릭터: `없음`
 **{name}**: *미소를 남기고 지나간다.*
 
 ---
@@ -2583,6 +2624,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_hidden_nurse_intro_ins`
 
+- 캐릭터: `없음`
 **{name}**: *복도를 걷는데 — 갑자기 머리가 살짝 핑 돈다. 첫날의 긴장 때문인가.*
 
 ---
@@ -2591,6 +2633,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_hidden_nurse_choice`
 
+- 캐릭터: `없음`
 **{name}**: *복도 한쪽에 '보건실' 표지판이 보인다. — 들어갈까 말까.*
 
 ---
@@ -2601,6 +2644,7 @@
   1. "보건실에 들어간다" → `after_nurse_enter_1` | Nurse +7
   2. "그냥 집에 간다" → `after_nurse_skip` | Nurse +0
 
+- 캐릭터: `없음`
 **{name}**: *아침부터 쉴 틈 없이 사람을 만났으니까.*
 
 ---
@@ -2609,6 +2653,7 @@
 - 배경: `school_hallway.png`
 - 다음: `night_start`
 
+- 캐릭터: `없음`
 **{name}**: *오늘은 충분히 돌아다녔다. 집에 가서 쉬자.*
 
 ---
@@ -2776,6 +2821,7 @@
 - 배경: `library_old.png`
 - 다음: `after_miss_yuna_1_ins2`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: 저기, 이거...
 
 ---
@@ -2802,6 +2848,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_hidden_homeroom_3_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 그냥... 첫날이라 학교 구경하다가요.
 
 ---
@@ -2891,6 +2938,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_hidden_nurse_intro_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *보건실 표지판이 보인다. — 들어가보자.*
 
 ---
@@ -2899,6 +2947,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after_hidden_nurse_intro_2`
 
+- 캐릭터: `없음`
 **{name}**: *보건실 문을 연다. 소독약 냄새가 은은하게 난다. 흰 커튼, 하얀 침대, 작은 책상.*
 
 ---
@@ -2916,6 +2965,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_4_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 어떻게 알았어요?
 
 ---
@@ -2951,6 +3001,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_7`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 이마를 만져보면 혈압을 알 수 있어요?
 
 ---
@@ -2977,6 +3028,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_choice`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 물이면 됩니다.
 
 ---
@@ -2985,6 +3037,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_8_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 선생님이시잖아요.
 
 ---
@@ -3011,6 +3064,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_9_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 저 화분, 선생님이 키우시는 거예요?
 
 ---
@@ -3028,6 +3082,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_9_ins4`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 병원이요?
 
 ---
@@ -3063,6 +3118,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_11`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 감사합니다. 좀 나은 것 같아요.
 
 ---
@@ -3071,6 +3127,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_11_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 신경 쓰이다니요?
 
 ---
@@ -3172,6 +3229,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_12`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: {name}이요.
 
 ---
@@ -3202,6 +3260,7 @@
 - 야간: true
 - 다음: `night_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *방에 돌아왔다. 침대에 누웠다.*
 
 ---
@@ -3211,6 +3270,7 @@
 - 야간: true
 - 다음: `night_start_3`
 
+- 캐릭터: `없음`
 **{name}**: *첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*
 
 ---
@@ -3224,6 +3284,7 @@
   - [`chose_dain_lunch`] → `night_msg_dain_1`
   - [기본] → `night_hidden_check`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰이 울린다. 학교 메신저.*
 
 ---
@@ -3273,6 +3334,7 @@
 - 야간: true
 - 다음: `night_hidden_check`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *'서비스야'를 일부러 한 줄 띄어서 보냈다. — 웃음이 나온다.*
 
 ---
@@ -3302,6 +3364,7 @@
 - 야간: true
 - 다음: `night_hidden_check`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *'자리 비워 놓을게'. — 유나한테 이건 최대한의 초대다. 가슴이 따뜻해진다.*
 
 ---
@@ -3341,6 +3404,7 @@
 - 야간: true
 - 다음: `night_hidden_check`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *세 줄 연속. 숨 좀 쉬고 보내면 안 되나.*
 
 ---
@@ -3350,6 +3414,7 @@
 - 야간: true
 - 다음: `night_late_transition_2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *잠들려는데 — 핸드폰이 한 번 더 울린다.*
 
 ---
@@ -3359,6 +3424,7 @@
 - 야간: true
 - 다음: `night_late_branch`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *밤 11시. 누구지?*
 
 ---
@@ -3372,6 +3438,7 @@
   - [Yuna 10+] → `night_yuna_late_1`
 - 다음: `night_end_1`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *화면이 밝아진다.*
 
 ---
@@ -3491,6 +3558,7 @@
 - 야간: true
 - 다음: `night_end_2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *핸드폰을 내려놓았다.*
 
 ---
@@ -3500,6 +3568,7 @@
 - 야간: true
 - 다음: `night_end_3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*
 
 ---
@@ -3509,6 +3578,7 @@
 - 야간: true
 - 다음: `night_end_4`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *나쁘지 않은 첫날이었다.*
 
 ---
@@ -3518,6 +3588,7 @@
 - 야간: true
 - 다음: `morning2_start`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *내일은 — 좀 더 재밌을 것 같다.*
 
 ---
@@ -3556,6 +3627,7 @@
   - [`nurse_day1`] → `night_hidden_nurse_1`
   - [기본] → `night_late_transition`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *메신저 알림 사이에 — 다른 알림이 보인다.*
 
 ---
@@ -3587,6 +3659,7 @@
 - 야간: true
 - 다음: `night_hidden_nurse_2`
 
+- 캐릭터: `없음`
 **{name}**: *학교 건강 관리 앱에 알림이 와 있다. '보건실 기록: {name} — 어지러움 (경미). 메모: 내일도 증상 있으면 다시 와. 물 많이 마시고. — ♥은 의료적 관심입니다 ^^'*
 
 ---
@@ -3618,6 +3691,7 @@
 - 배경: `room_my.png`
 - 다음: `night_dain_freetalk`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *메신저 알림 사이에 — 학교 공지 앱에 담임선생님이 올린 글이 보인다.*
 
 ---
@@ -3631,6 +3705,7 @@
 - BGM: `daily.mp3`
 - 다음: `morning2_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *둘째 날. 어제보다 교복이 조금 편하다. — 발걸음도.*
 
 ---
@@ -3643,6 +3718,7 @@
   - [Yuna 10+] → `morning2_greet_yuna_1`
 - 다음: `morning2_dain_1`
 
+- 캐릭터: `없음`
 **{name}**: *교실 문을 여는 순간 — 등짝에 충격.*
 
 ---
@@ -3669,6 +3745,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_greet_seo_others_2`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *다인이 교실 뒤쪽에서 흘깃 본다. 고개를 돌린다. 유나는 책에 더 파묻힌다. 페이지를 넘기는 속도가 빨라진다.*
 
 ---
@@ -3677,6 +3754,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_note_1`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *두 사람의 미세한 반응. — 눈치를 채야 하나, 못 본 척해야 하나.*
 
 ---
@@ -3721,6 +3799,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_greet_dain_others_2`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *빈정인지 감탄인지 알 수 없다. 유나는 무반응. 하지만 쪽지를 쓰던 손이 멈춰 있다.*
 
 ---
@@ -3729,6 +3808,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_note_1`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *가볍게 웃으며 넘겼지만 — 서연의 한마디가 살짝 걸린다.*
 
 ---
@@ -3782,6 +3862,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_seo_2`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *쪽지를 주머니에 넣었다. — 괜히 소중하게.*
 
 ---
@@ -3871,6 +3952,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_seo_2`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *쪽지를 주머니에 넣으려는데 — 복도에서 익숙한 목소리.*
 
 ---
@@ -3915,6 +3997,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_minsu_1_ins`
 
+- 캐릭터: `seyoun_laugh.png`
 **{name}**: *걸음을 멈추지 않았다. 하지만 시선은 분명히 이쪽이었다.*
 
 ---
@@ -3959,6 +4042,7 @@
 - 캐릭터: `minsu_smirk.png`
 - 다음: `morning2_dain_claim_3`
 
+- 배경: `room_school.png`
 **민수**: ...그건 맞는데 그게 중요한 게 아니잖아.
 
 ---
@@ -4007,6 +4091,7 @@
   - [`homeroom_day1`] → `morning2_break_transition_ins`
   - [기본] → `morning2_break_1`
 
+- 캐릭터: `없음`
 **{name}**: *쉬는 시간. 복도로 나왔다.*
 
 ---
@@ -4015,6 +4100,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_seo_dust_1`
 
+- 캐릭터: `없음`
 **{name}**: *사람이 선점의 대상인가. — 근데 싫지 않다. 그게 좀 무섭다.*
 
 ---
@@ -4077,6 +4163,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_dain_react_2`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *어깨에 닿은 감촉이 한 박자 늦게 의식된다. — 먼지 때문은 아닐 텐데.*
 
 ---
@@ -4085,6 +4172,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_dain_react_3`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *서연이 아무렇지 않게 걸어간다. 뒤에서 다인의 목소리.*
 
 ---
@@ -4210,6 +4298,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_start`
 
+- 캐릭터: `haeun_normal.png`
 **{name}**: *1년 동안 한 번도 먼저 다가간 적 없는 사람이 — 나한테는 먼저 왔다? 그건 무슨 의미지.*
 
 ---
@@ -4385,6 +4474,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_minsu_1b`
 
+- 캐릭터: `seyoun_laugh.png`
 **{name}**: *서연이 복도를 돌아가는 순간 — 뒤통수가 보이기 직전, 미소가 0.3초 내려간 것 같았다. 원래 표정으로 돌아가는 스위치. — 착각인가?*
 
 ---
@@ -4393,6 +4483,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_break_1`
 
+- 캐릭터: `없음`
 **{name}**: *교실 문 앞에 담임이 서 있다. 출석부를 들고, 문 쪽을 힐끗 보다가 — 나와 눈이 마주친다.*
 
 ---
@@ -4401,6 +4492,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hidden_homeroom_d2_1_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 뭔가 문제라도...?
 
 ---
@@ -4463,6 +4555,7 @@
 - 배경: `teacher_office.png`
 - 다음: `hidden_homeroom_d2_3_ins6`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 쓰는 건 잘 모르겠어요.
 
 ---
@@ -4489,6 +4582,7 @@
 - 배경: `teacher_office.png`
 - 다음: `hidden_homeroom_d2_8`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 많이요. 반 애들이 좋아서.
 
 ---
@@ -4497,6 +4591,7 @@
 - 배경: `teacher_office.png`
 - 다음: `hidden_homeroom_d2_8_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 아시는 거 보니 다인이가 좀 유명한가 봐요.
 
 ---
@@ -4571,6 +4666,7 @@
 - BGM: `daily.mp3`
 - 다음: `lunch2_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *점심. 어제와 달리 주머니에 유나의 쪽지가 있다. 복도 끝에서는 서연이 도시락을 들고 옥상 쪽으로 향하고 있고, 다인은 또 매점 방향으로 손짓한다.*
 
 ---
@@ -4579,6 +4675,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_choice`
 
+- 캐릭터: `haeun_normal.png`
 **{name}**: *이 학교에서 점심시간은 전쟁이다.*
 
 ---
@@ -4590,6 +4687,7 @@
   2. "서연을 따라 옥상으로" → `lunch2_seo_1_check`
   3. "다인과 매점으로" → `lunch2_dain_1_check`
 
+- 캐릭터: `haeun_normal.png`
 **{name}**: *누구와 함께할까.*
 
 ---
@@ -4600,6 +4698,7 @@
   - [`chose_seoyeon_lunch`] → `lunch2_seo_1`
   - [기본] → `lunch2_seo_1b`
 
+- 캐릭터: `없음`
 **{name}**: *옥상으로 올라간다.*
 
 ---
@@ -4630,6 +4729,7 @@
   - [`chose_dain_lunch`] → `lunch2_dain_1`
   - [기본] → `lunch2_dain_1b`
 
+- 캐릭터: `없음`
 **{name}**: *매점 쪽으로 향한다.*
 
 ---
@@ -5558,7 +5658,7 @@
 
 ### `lunch2_seo_c1_2_ins`
 - 배경: `top_school.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `dain_normal.png`
 - 다음: `lunch2_seo_c1_3`
 
 **{name}**: *다인이 눈이 커진 채 둘을 번갈아 본다.*
@@ -5605,6 +5705,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_dain_end_ins4`
 
+- 캐릭터: `dain_pout.png`
 **체육교사**: 보건실 가서 소독 받고 와.
 
 ---
@@ -5631,6 +5732,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_dain_end_ins7`
 
+- 캐릭터: `dain_pout.png`
 **{name}**: 팔꿈치 좀 까졌는데요.
 
 ---
@@ -5655,7 +5757,7 @@
 
 ### `lunch2_dain_end_ins9`
 - 배경: `school_hallway.png`
-- 캐릭터: `dain_pout.png`
+- 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins10`
 
 **{name}**: *보건선생님이 다가와 팔꿈치를 잡는다. 손이 차갑다.*
@@ -5700,7 +5802,7 @@
 
 ### `lunch2_dain_end_ins14`
 - 배경: `school_hallway.png`
-- 캐릭터: `dain_pout.png`
+- 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins15`
 
 **{name}**: *보건선생님의 손이 멈춘다. 그리고 — 아무 일 없다는 듯 다시 움직인다.*
@@ -5754,7 +5856,7 @@
 
 ### `lunch2_dain_end_ins20`
 - 배경: `school_hallway.png`
-- 캐릭터: `dain_pout.png`
+- 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins21`
 
 **{name}**: *보건선생님이 재빨리 노트북을 닫는다.*
@@ -5810,13 +5912,14 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_dain_end_ins27`
 
+- 캐릭터: `dain_pout.png`
 **{name}**: 안 다치면 올 이유가 없잖아요.
 
 ---
 
 ### `lunch2_dain_end_ins27`
 - 배경: `school_hallway.png`
-- 캐릭터: `dain_pout.png`
+- 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins28`
 
 **{name}**: *보건선생님이 잠깐 멈춘다. 그리고 — 목소리가 한 톤 낮아진다.*
@@ -5866,6 +5969,7 @@
 - BGM: `sunset1.mp3`
 - 다음: `after2_msg_dain`
 
+- 캐릭터: `없음`
 **{name}**: *방과후. 핸드폰에 알림이 두 개 와 있다.*
 
 ---
@@ -5903,6 +6007,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hidden_nurse_d2_1`
 
+- 캐릭터: `없음`
 **{name}**: *그런데 — 체육 시간에 까진 팔꿈치가 욱신거린다. 보건실에 들러야겠다.*
 
 ---
@@ -5915,6 +6020,7 @@
   2. "학생회실로 (서연)" → `after2_seo_1`
   3. "도서관 별관을 지나가 본다 (유나)" → `after2_yuna_1`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *어디로 갈까.*
 
 ---
@@ -6201,6 +6307,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_1`
 
+- 캐릭터: `dain_shy.png`
 **{name}**: *학교로 돌아오는 길. 교문 앞에 다다랐다.*
 
 ---
@@ -6423,6 +6530,7 @@
 - 배경: `teacher_office.png`
 - 다음: `after2_seo_9`
 
+- 캐릭터: `seyoun_shy.png`
 ---
 
 ### `after2_seo_neck_low`
@@ -6561,6 +6669,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_1`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *학생회실을 나섰다. 교문 쪽으로 걸어간다.*
 
 ---
@@ -6736,6 +6845,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `after2_yuna_end`
 
+- 캐릭터: `yuna_shy.png`
 ---
 
 ### `after2_yuna_quiet`
@@ -6800,6 +6910,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_1`
 
+- 캐릭터: `yuna_smile.png`
 **{name}**: *도서관 별관을 나왔다. 노을이 지고 있다.*
 
 ---
@@ -6809,6 +6920,7 @@
 - BGM: `sunset1.mp3`
 - 다음: `minsu_warn_1_ins`
 
+- 캐릭터: `없음`
 **{name}**: *하교길. 교문을 나서는데 — 민수가 뒤에서 따라온다.*
 
 ---
@@ -7317,6 +7429,7 @@
 - 배경: `teacher_office.png`
 - 다음: `after2_seo_neck_low_ins2`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: 갑자기 뭐야.
 
 ---
@@ -7500,6 +7613,7 @@
 - 야간: true
 - 다음: `night2_start_ins`
 
+- 캐릭터: `없음`
 **{name}**: *집에 돌아왔다. 샤워하고 침대에 누웠는데 — 메신저 알림이 쏟아진다.*
 
 ---
@@ -7513,6 +7627,7 @@
   - [`chose_yuna_after2`] → `night2_msg_yuna_specific`
   - [기본] → `night2_msg_generic`
 
+- 캐릭터: `minsu_smirk.png`
 **{name}**: *세 명에게서 메시지가 왔다.*
 
 ---
@@ -7664,6 +7779,7 @@
 - 야간: true
 - 다음: `night2_choice`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *세 명에게 동시에 답장해야 하는 상황. — 이게 행복인지 고문인지 모르겠다.*
 
 ---
@@ -7676,6 +7792,7 @@
   2. "서연에게 먼저 답장한다" → `night2_reply_seo_1`
   3. "유나에게 먼저 답장한다" → `night2_reply_yuna_1`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *누구에게 먼저 답장할까?*
 
 ---
@@ -7936,6 +8053,7 @@
 - 야간: true
 - 다음: `night2_end_1_ins`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *답장을 보내고 핸드폰을 내려놓았다.*
 
 ---
@@ -7945,6 +8063,7 @@
 - 야간: true
 - 다음: `night2_flashback_2`
 
+- 캐릭터: `없음`
 **{name}**: *민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*
 
 ---
@@ -7954,6 +8073,7 @@
 - 야간: true
 - 다음: `night2_flashback_3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *스크롤을 한참 내렸다. 3개월 전. — 사진 한 장이 보인다. 도서관 앞에서 찍은 단체 사진. 소정이가 웃고 있다. 내 옆에서.*
 
 ---
@@ -7963,6 +8083,7 @@
 - 야간: true
 - 다음: `night2_flashback_4`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *그때 나는 '좋아해'를 한 달째 연습하고 있었다. 매일 밤 핸드폰 메모장에 써봤다. 고백 시뮬레이션. — 매번 거기서 멈췄다.*
 
 ---
@@ -7972,6 +8093,7 @@
 - 야간: true
 - 다음: `night2_flashback_5`
 
+- 캐릭터: `없음`
 **{name}**: *그리고 3월 어느 날, 조회 시간에 옆자리 녀석이 말했다. '소정이 남친 생겼대.'*
 
 ---
@@ -7981,6 +8103,7 @@
 - 야간: true
 - 다음: `night2_flashback_6`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰 메모장의 시뮬레이션은 38번째에서 멈춰 있다. 39번째는 없다. 쓸 필요가 없어졌으니까.*
 
 ---
@@ -7990,6 +8113,7 @@
 - 야간: true
 - 다음: `night2_flashback_6_ins`
 
+- 캐릭터: `없음`
 **{name}**: *전학은 소정이 때문이 아니다. 아버지 직장 때문이다. — 근데 전학이 싫지 않았다. 소정이가 웃는 복도를 매일 지나가지 않아도 되니까.*
 
 ---
@@ -7999,6 +8123,7 @@
 - 야간: true
 - 다음: `night2_flashback_8`
 
+- 캐릭터: `없음`
 **{name}**: *'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*
 
 ---
@@ -8008,6 +8133,7 @@
 - 야간: true
 - 다음: `night2_end_2`
 
+- 캐릭터: `없음`
 **{name}**: *갤러리를 닫았다. 사진을 지울까 말까 고민하다가 — 남겨뒀다. 지우면 후회까지 지워지는 것 같아서.*
 
 ---
@@ -8017,6 +8143,7 @@
 - 야간: true
 - 다음: `night2_end_2_ins`
 
+- 캐릭터: `없음`
 **{name}**: *둘째 날이 끝났다. 첫날에는 호기심이었다. 이 사람들이 어떤 사람인지 궁금했다.*
 
 ---
@@ -8026,6 +8153,7 @@
 - 야간: true
 - 다음: `night2_end_3_ins`
 
+- 캐릭터: `없음`
 **{name}**: *어제는 신경 쓰이는 정도였다. 오늘은 — 보고 싶다는 말이 목까지 올라왔다가 내려갔다.*
 
 ---
@@ -8035,6 +8163,7 @@
 - 야간: true
 - 다음: `night2_end_4_ins`
 
+- 캐릭터: `없음`
 **{name}**: *눈을 감는다. — 내일은 조금 더 정직해져야 할지도.*
 
 ---
@@ -8077,6 +8206,7 @@
   - [`nurse_day2`] → `night2_hidden_nurse_1`
   - [기본] → `night2_end_1`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *메신저 알림 사이에 — 또 다른 알림이 보인다.*
 
 ---
@@ -8118,6 +8248,7 @@
 - 야간: true
 - 다음: `night2_hidden_nurse_2`
 
+- 캐릭터: `없음`
 **{name}**: *건강 관리 앱 알림. '보건실 기록: {name} — 팔꿈치 찰과상 (경미). 메모: 밴드 내일 아침에 갈아줄게. 밴드 갈아주는 건 의료 행위니까 거부권 없음 ^^'*
 
 ---
@@ -8136,6 +8267,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_msg_1`
 
+- 캐릭터: `없음`
 **{name}**: *세 명. 동시에.*
 
 ---
@@ -8144,6 +8276,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_reply_yuna_6_ins2`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *세 번째 별? — 창문을 열고 밤하늘을 본다. 별이 보인다. 세 번째 별이 어떤 건지는 모르겠지만.*
 
 ---
@@ -8154,6 +8287,7 @@
   - [`homeroom_day2`] → `night2_reply_yuna_6_ins3`
   - [기본] → `night2_reply_yuna_7`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *유나다운 수수께끼다. 답을 말해주지 않는 사람. — 알고 싶게 만드는 사람.*
 
 ---
@@ -8162,6 +8296,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_reply_yuna_6_ins4`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *메신저 알림 사이에 — 담임선생님에게서 개인 메시지가 왔다.*
 
 ---
@@ -8197,6 +8332,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_flashback_1`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *둘째 날이 끝났다.*
 
 ---
@@ -8205,6 +8341,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_end_2_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *오늘은 — 좀 다르다. 궁금한 게 아니라, 신경이 쓰인다. 뭘 하고 있을지, 내일 뭐라고 말할지.*
 
 ---
@@ -8213,6 +8350,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_end_3`
 
+- 캐릭터: `없음`
 **{name}**: *민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*
 
 ---
@@ -8221,6 +8359,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_flashback_6_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*
 
 ---
@@ -8229,6 +8368,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_flashback_7`
 
+- 캐릭터: `없음`
 **{name}**: *'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*
 
 ---
@@ -8237,6 +8377,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_end_4`
 
+- 캐릭터: `없음`
 **{name}**: *문제는 그 거리가 생각보다 빠르게 좁아지고 있다는 거다.*
 
 ---
@@ -8245,6 +8386,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_end_4_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *냉장고를 열었다. 별거 없다. 남은 밥, 계란, 김. — 내일은 뭔가 해가고 싶다는 생각이 들었다. 누구한테? 그건 모르겠다. 그냥, 해가고 싶었다.*
 
 ---
@@ -8253,6 +8395,7 @@
 - 배경: `room_my.png`
 - 다음: `morning3_start`
 
+- 캐릭터: `없음`
 **{name}**: *대충 도시락을 쌌다. 잘 만든 건 아니다. 정성이라고 하기엔 좀 부끄러운 수준. — 근데 안 하는 것보다는 낫겠지.*
 
 ---
@@ -8266,6 +8409,7 @@
 - BGM: `morning.mp3`
 - 다음: `morning3_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *셋째 날. 늦잠을 잤다. 알람을 세 번이나 꺼버렸다. 어젯밤 늦게까지 메시지 보느라 늦게 잔 탓이다.*
 
 ---
@@ -8277,6 +8421,7 @@
   - [`nurse_day2`] → `hidden_nurse_d3_check`
   - [기본] → `morning3_gate_branch`
 
+- 캐릭터: `없음`
 **{name}**: *전력 질주로 등굣길을 달린다. — 교문이 보인다. 그리고.*
 
 ---
@@ -8652,6 +8797,7 @@
   - [`morning3_companion_dain`] → `morning3_react_dain_1`
   - [기본] → `morning3_react_seo_1`
 
+- 캐릭터: `seyoun_laugh.png`
 **{name}**: *교실에 들어서자, 동행을 목격한 나머지 두 캐릭터의 시선이 느껴진다.*
 
 ---
@@ -8723,6 +8869,7 @@
 - 배경: `room_school.png`
 - 다음: `morning3_date_intro_b`
 
+- 캐릭터: `yuna_bored.png`
 **{name}**: *1교시가 끝나고 쉬는 시간. — 세 명이 차례로 접근한다.*
 
 ---
@@ -8731,6 +8878,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning3_date_seo_1`
 
+- 캐릭터: `yuna_bored.png`
 **{name}**: *쉬는 시간, 복도로 나왔다.*
 
 ---
@@ -8853,6 +9001,7 @@
   - [기본] → `morning3_date_dain_decline_inner`
   - [기본] → `morning3_date_yuna_1`
 
+- 캐릭터: `dain_laugh.png`
 **{name}**: *다인의 반응을 지켜본다.*
 
 ---
@@ -8861,6 +9010,7 @@
 - 배경: `room_school.png`
 - 다음: `morning3_date_dain_decline_inner_2`
 
+- 캐릭터: `없음`
 **{name}**: *밝게 웃으며 돌아갔다. — 그때는 몰랐다. 다인이 그 손가락 두드리는 걸 멈추고, 주머니에 손을 넣은 걸. 용기 내서 물어본 거였다는 걸.*
 
 ---
@@ -8869,6 +9019,7 @@
 - 배경: `room_school.png`
 - 다음: `morning3_date_yuna_1`
 
+- 캐릭터: `없음`
 **{name}**: *눈치 빠르다고 자부하면서. — 정작 중요한 순간에 틀린다.*
 
 ---
@@ -8957,6 +9108,7 @@
 - 캐릭터: `yuna_shy.png`
 - 다음: `morning3_end`
 
+- 배경: `school.png`
 <!-- i18n -->
 
 ---
@@ -8966,6 +9118,7 @@
 - 플래그: `day3_has_multiple_dates`
 - 다음: `morning3_end`
 
+- 캐릭터: `없음`
 **{name}**: *...잠깐. 주말 약속이 겹치는데. 이거 어떡하지.*
 
 ---
@@ -9138,6 +9291,7 @@
   - [`nurse_day2`] → `hidden_nurse_d3_1`
   - [기본] → `morning3_date_seo_1`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *쉬는 시간이 끝나간다.*
 
 ---
@@ -9469,6 +9623,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d3_reveal_2_ins3`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 업무 서류를 빈 교실에서요?
 
 ---
@@ -9504,6 +9659,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d3_reveal_1_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 얼마나요?
 
 ---
@@ -9521,6 +9677,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d3_reveal_1_ins4`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 선생님이 문예창작과요?
 
 ---
@@ -9547,6 +9704,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d3_reveal_3_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 포기한 거예요?
 
 ---
@@ -9582,6 +9740,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d3_reveal_4_ins4`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 비밀이요?
 
 ---
@@ -9608,6 +9767,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d3_reveal_choice`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 저는 읽어보고 싶은데요. 그 소설.
 
 ---
@@ -9742,6 +9902,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_1_ins4`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 아프진 않은데요.
 
 ---
@@ -9759,6 +9920,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: ...좀 쉬고 싶어서요.
 
 ---
@@ -9830,6 +9992,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_5_ins5`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 그냥... 사람 관계가 복잡해져서.
 
 ---
@@ -9847,6 +10010,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_5_ins7`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 여러 명이 동시에 신경 쓰이는데, 한 명만 선택해야 할 것 같은...
 
 ---
@@ -9873,6 +10037,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_5_ins10`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 아, 그런 건 아니...
 
 ---
@@ -9908,6 +10073,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_5_ins14`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 선생님도 그런 적 있어요? 여러 사람 사이에서 혼란스러운.
 
 ---
@@ -9934,6 +10100,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_choice1`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 대학병원이요?
 
 ---
@@ -10023,6 +10190,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d3_8_ins3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: ...감사합니다.
 
 ---
@@ -10151,6 +10319,7 @@
 - BGM: `daily.mp3`
 - 다음: `lunch3_start_2`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *점심시간. 오늘은 특이하게 — 세 명이 한자리에 모였다.*
 
 ---
@@ -10159,6 +10328,7 @@
 - 배경: `room_school.png`
 - 다음: `lunch3_start_2_ins`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *{name}이 도시락을 펼친다. 서연이 자연스럽게 옆에 앉고, 다인이 맞은편에 털썩 앉고, 유나가 구석에서 자기 빵을 먹으며 슬쩍 끼어든다.*
 
 ---
@@ -10619,6 +10789,7 @@
 - 플래그: `ending_harem`
 - 다음: `lunch3_end`
 
+- 캐릭터: `없음`
 **{name}**: *셋이 나눠 먹었다. 어색하지만 — 나쁘지 않다. 아무도 화내지 않았다.*
 
 ---
@@ -10727,6 +10898,7 @@
 - 배경: `room_school.png`
 - 다음: `lunch3_expose_13`
 
+- 캐릭터: `yuna_sad.png`
 **{name}**: *세 쌍의 젓가락이 멈췄다. 급식실 소음이 갑자기 먼 데서 들린다.*
 
 ---
@@ -10735,6 +10907,7 @@
 - 배경: `room_school.png`
 - 다음: `lunch3_expose_14`
 
+- 캐릭터: `yuna_sad.png`
 **{name}**: *옆 테이블에서 민수가 이쪽을 보고 있다. 고개를 절레절레 흔든다.*
 
 ---
@@ -10752,6 +10925,7 @@
 - 배경: `room_school.png`
 - 다음: `lunch3_expose_choice`
 
+- 캐릭터: `minsu_smirk.png`
 **{name}**: *아무 말도 못 하겠다. 민수가 맞다.*
 
 ---
@@ -10892,6 +11066,7 @@
 - 배경: `room_school.png`
 - 다음: `after3_start`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: *점심시간이 끝났다.*
 
 ---
@@ -10992,7 +11167,7 @@
 
 ### `lunch3_expose_excuse_2_ins`
 - 배경: `room_school.png`
-- 캐릭터: `seyoun_angry.png`
+- 캐릭터: `dain_sad.png`
 - 다음: `lunch3_expose_excuse_3`
 
 **{name}**: *다인이 일어선다.*
@@ -11015,6 +11190,7 @@
 - BGM: `sunset1.mp3`
 - 다음: `after3_route_check`
 
+- 캐릭터: `없음`
 **{name}**: *방과후. 점심의 여파가 남아 있다. — 그래도 어딘가에는 가야 한다.*
 
 ---
@@ -11028,6 +11204,7 @@
   - [`accepted_seoyeon_date`] → `after3_auto_seo`
   - [기본] → `after3_choice`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: *방과후. 핸드폰을 확인한다.*
 
 ---
@@ -11037,6 +11214,7 @@
 - 플래그: `route_dain`
 - 다음: `after3_reject_for_dain_1`
 
+- 캐릭터: `없음`
 **{name}**: *다인이와 약속이 있다. 체육관으로 향한다.*
 
 ---
@@ -11046,6 +11224,7 @@
 - 플래그: `route_yuna`
 - 다음: `after3_reject_for_yuna_1`
 
+- 캐릭터: `없음`
 **{name}**: *유나와 약속이 있다. 도서관 별관으로 향한다.*
 
 ---
@@ -11055,6 +11234,7 @@
 - 플래그: `route_seoyeon`
 - 다음: `after3_reject_for_seo_1`
 
+- 캐릭터: `없음`
 **{name}**: *서연이와 약속이 있다. 학생회실로 향한다.*
 
 ---
@@ -11067,6 +11247,7 @@
   3. "다인이에게" → `after3_reject_for_dain_1` | 플래그: `route_dain`
   4. "조금 더 생각한다" → `after3_choice`
 
+- 캐릭터: `없음`
 **{name}**: *약속이 겹쳤다. — 다들 기다리고 있다. 누구에게 먼저 갈까.*
 
 ---
@@ -11078,6 +11259,7 @@
   2. "도서관으로" → `after3_reject_for_yuna_1` | 플래그: `route_yuna`
   3. "체육관으로" → `after3_reject_for_dain_1` | 플래그: `route_dain`
 
+- 캐릭터: `없음`
 **{name}**: *어디로 갈까.*
 
 ---
@@ -11113,6 +11295,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_seo_1`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *복도로 나왔다. 느낌표가 없는 다인의 문장, 세 글자밖에 안 되는 유나의 쪽지. — 선택의 무게가 어깨에 내려앉는다.*
 
 ---
@@ -11139,6 +11322,7 @@
 - 배경: `gym.png`
 - 다음: `after3_reject_for_yuna_3`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *체육관 쪽으로 발길이 향한다.*
 
 ---
@@ -11174,6 +11358,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_yuna_1`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: *체육관을 나와 복도로 돌아왔다. 서연의 한마디, 다인의 빨간 눈. — 돌아서는 길이 무겁다.*
 
 ---
@@ -11200,6 +11385,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `after3_reject_for_dain_3`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *유나의 아지트로 향했다.*
 
 ---
@@ -11217,6 +11403,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_reject_for_dain_4`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *다시 복도로 돌아왔다.*
 
 ---
@@ -11225,6 +11412,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_dain_1`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *서연의 연습한 웃음, 유나의 빈 자리. — 남은 두 사람의 자리가 비어 가는 느낌.*
 
 ---
@@ -11583,6 +11771,7 @@
 - 배경: `dain_hurt_event1.png`
 - 다음: `after3_dain_4`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: 다인!
 
 ---
@@ -11816,6 +12005,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_confront_end`
 
+- 캐릭터: `seyoun_sad.png`
 **{name}**: *등이 곧다. 완벽하게. — 근데 주먹이 쥐어져 있다. 손등이 하얗다.*
 
 ---
@@ -11869,6 +12059,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_final`
 
+- 캐릭터: `seyoun_sad.png`
 **{name}**: *서연이 사라진 복도에 혼자 서 있다. — 등이 곧았다. 완벽하게. 근데 주먹이 쥐어져 있었다.*
 
 ---
@@ -11877,6 +12068,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_check`
 
+- 캐릭터: `seyoun_sad.png`
 **{name}**: *방과후가 끝났다. — 오늘 본 것들이 머릿속에서 떠나지 않는다.*
 
 ---
@@ -11887,6 +12079,7 @@
   - [`seoyeon_day3_event`] → `haeun_warn_1`
   - [기본] → `minsu_d3_check`
 
+- 캐릭터: `seyoun_sad.png`
 **{name}**: ‹빈›
 
 ---
@@ -11895,6 +12088,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_1_ins`
 
+- 캐릭터: `없음`
 **{name}**: *학생회실을 나왔다. 복도가 비어 있다. — 누군가 기다리고 있었다.*
 
 ---
@@ -11993,6 +12187,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_8b`
 
+- 캐릭터: `haeun_worried.png`
 **{name}**: *서연이 화장실에서 혼자 우는 모습이 머릿속에서 안 지워진다. 완벽하게 곧은 등, 하얀 주먹, 그리고 — 아무도 없는 화장실.*
 
 ---
@@ -12001,6 +12196,7 @@
 - 배경: `school.png`
 - 다음: `minsu_d3_check`
 
+- 캐릭터: `haeun_worried.png`
 **{name}**: *학교 앞으로 나왔다.*
 
 ---
@@ -12011,6 +12207,7 @@
   - [`day3_has_multiple_dates`] → `minsu_d3_1`
   - [기본] → `night3_start`
 
+- 캐릭터: `haeun_worried.png`
 **{name}**: ‹빈›
 
 ---
@@ -12019,6 +12216,7 @@
 - 배경: `school.png`
 - 다음: `minsu_d3_2`
 
+- 캐릭터: `없음`
 **{name}**: *하교길. 교문에서 민수가 기다리고 있다.*
 
 ---
@@ -12207,6 +12405,7 @@
 - 배경: `teacher_office.png`
 - 다음: `after3_seo_choice1_react_ins6`
 
+- 캐릭터: `seyoun_cry.png`
 **{name}**: 비밀은 잘 지켜.
 
 ---
@@ -12423,6 +12622,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_2`
 
+- 캐릭터: `없음`
 **{name}**: *하은이 벽에 기대어 서 있다. 학생회 팔찌를 만지작거리고 있다.*
 
 ---
@@ -12431,6 +12631,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_2b`
 
+- 캐릭터: `haeun_normal.png`
 **{name}**: 하은? 왜 여기서?
 
 ---
@@ -12502,6 +12703,7 @@
 - 배경: `school.png`
 - 다음: `minsu_d3_9`
 
+- 캐릭터: `minsu_smirk.png`
 **{name}**: ...뭘?
 
 ---
@@ -12519,6 +12721,7 @@
 - 배경: `school.png`
 - 다음: `minsu_d3_4_ins2`
 
+- 캐릭터: `minsu_smirk.png`
 **{name}**: ......
 
 ---
@@ -12536,6 +12739,7 @@
 - 배경: `school.png`
 - 다음: `minsu_d3_5b`
 
+- 캐릭터: `minsu_smirk.png`
 **{name}**: ......맞아.
 
 ---
@@ -12593,6 +12797,7 @@
 - 야간: true
 - 다음: `night3_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *방에 돌아왔다. 무거운 하루였다.*
 
 ---
@@ -12604,6 +12809,7 @@
   - [`day3_has_multiple_dates`] → `night3_cheat_msg_1`
   - [기본] → `night3_faithful_check`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 본다.*
 
 ---
@@ -12616,6 +12822,8 @@
   - [`dain_day3_event`] → `night3_faithful_msg_dain_1`
   - [기본] → `night3_dream_1`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *메시지가 와 있다.*
 
 ---
@@ -12625,6 +12833,7 @@
 - 야간: true
 - 다음: `night3_faithful_msg_seo_2`
 
+- 배경: `room_my.png`
 **서연**: 오늘 본 거, 비밀이야
 
 ---
@@ -12634,6 +12843,7 @@
 - 야간: true
 - 다음: `night3_faithful_msg_seo_3`
 
+- 배경: `room_my.png`
 **서연**: ...근데 또 와도 돼
 
 ---
@@ -12643,6 +12853,7 @@
 - 야간: true
 - 다음: `night3_dream_1`
 
+- 배경: `room_my.png`
 **{name}**: *'또 와도 돼'. — 이 사람한테는 이게 '와 줘'와 같은 말이다.*
 
 ---
@@ -12652,6 +12863,7 @@
 - 야간: true
 - 다음: `night3_faithful_msg_yuna_2`
 
+- 배경: `room_my.png`
 **{name}**: *유나가 쪽지 사진을 보냈다. 노트에 쓰인 한 줄.*
 
 ---
@@ -12661,6 +12873,7 @@
 - 야간: true
 - 다음: `night3_faithful_msg_yuna_2_ins`
 
+- 배경: `room_my.png`
 **유나**: 그 소설, 결말은 아직 안 정했어
 
 ---
@@ -12670,6 +12883,7 @@
 - 야간: true
 - 다음: `night3_faithful_msg_dain_2`
 
+- 배경: `room_my.png`
 **다인**: 발목 괜찮냐고 물어볼 거면 직접 와서 물어봐ㅋㅋ
 
 ---
@@ -12679,6 +12893,7 @@
 - 야간: true
 - 다음: `night3_faithful_msg_dain_3`
 
+- 배경: `room_my.png`
 **다인**: 아 근데 고마워
 
 ---
@@ -12687,6 +12902,8 @@
 - 야간: true
 - 다음: `night3_dream_1`
 
+- 배경: `room_my.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: *'ㅋㅋ'로 위장했지만 — 진심이 보인다.*
 
 ---
@@ -12695,6 +12912,8 @@
 - 야간: true
 - 다음: `night3_dream_2`
 
+- 배경: `school.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *꿈을 꿨다. — 누군가와 나란히 걷고 있었다.*
 
 ---
@@ -12703,6 +12922,8 @@
 - 야간: true
 - 다음: `night3_dream_2_ins`
 
+- 배경: `school.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *얼굴은 보이지 않는데, 옆에 있다는 것만으로 마음이 편했다.*
 
 ---
@@ -12712,6 +12933,7 @@
 - 야간: true
 - 다음: `night3_faithful_reflect_2`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *눈을 떴다. 아침 햇살이 커튼 사이로 들어온다. — 오늘의 꿈은 좋았다.*
 
 ---
@@ -12721,6 +12943,7 @@
 - 야간: true
 - 다음: `night3_faithful_reflect_2_ins`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *핸드폰을 꺼냈다. 갤러리를 열었다. 소정이 사진. — 스크롤을 멈추고, 길게 눌렀다.*
 
 ---
@@ -12730,6 +12953,7 @@
 - 야간: true
 - 다음: `night3_faithful_reflect_3_ins`
 
+- 캐릭터: `없음`
 **{name}**: *지우면 후회까지 지워지는 것 같아서 남겨뒀었다. 근데 이제 후회가 아니라 교훈이다. 고백할 용기를 가르쳐준 사진. — 역할을 다했다.*
 
 ---
@@ -12739,6 +12963,7 @@
 - 야간: true
 - 다음: `night3_faithful_reflect_4_ins`
 
+- 캐릭터: `없음`
 **{name}**: *이번에는 다르다. 한 사람에게만 말하겠다. 나머지에게는 — 제대로 거절하겠다. 그게 내가 할 수 있는 유일한 성실함이다.*
 
 ---
@@ -12751,11 +12976,15 @@
   - [`dain_day3_event`] → `night3_dream_dain_bonus`
   - [기본] → `night3_end`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *좋은 꿈이었다.*
 
 ---
 
 ### `night3_dream_seo_bonus`
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 - 야간: true
 - 스탯: Seoyeon +9
 - 다음: `night3_end`
@@ -12763,6 +12992,8 @@
 ---
 
 ### `night3_dream_yuna_bonus`
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 - 야간: true
 - 스탯: Yuna +9
 - 다음: `night3_end`
@@ -12770,6 +13001,8 @@
 ---
 
 ### `night3_dream_dain_bonus`
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 - 야간: true
 - 스탯: Dain +9
 - 다음: `night3_end`
@@ -12780,6 +13013,8 @@
 - 야간: true
 - 다음: `night3_cheat_msg_2`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *방에 돌아왔다. 무거운 하루였다. 핸드폰을 본다.*
 
 ---
@@ -12789,6 +13024,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_3`
 
+- 배경: `room_my.png`
 **서연**: 나한테만 그래줘
 
 ---
@@ -12798,6 +13034,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_3_ins`
 
+- 배경: `room_my.png`
 **서연**: ...부탁이야
 
 ---
@@ -12807,6 +13044,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_4_ins`
 
+- 배경: `school.png`
 **유나**: ...다 알고 있었어
 
 ---
@@ -12816,6 +13054,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_6`
 
+- 배경: `school.png`
 **유나**: *네가 누구 옆에 설 건지. 그 무게를 알았으면 해*
 
 ---
@@ -12825,6 +13064,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_dain_1`
 
+- 배경: `school.png`
 **유나**: ...도망치지 마. 그것만
 
 ---
@@ -12834,6 +13074,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_7`
 
+- 배경: `school.png`
 **다인**: ...ㅋㅋ 농담이었으면 좋겠다
 
 ---
@@ -12842,6 +13083,8 @@
 - 야간: true
 - 다음: `night3_nightmare_1`
 
+- 배경: `school.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: *유나가 메시지로 세 줄을 보냈다. 평소 한 줄도 안 보내는 사람이. — 그만큼 화가 났다는 뜻이다.*
 
 ---
@@ -12852,6 +13095,7 @@
 - 야간: true
 - 다음: `night3_nightmare_2`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *잠이 들었다. — 꿈.*
 
 ---
@@ -12860,6 +13104,8 @@
 - 야간: true
 - 다음: `night3_nightmare_2_ins`
 
+- 배경: `school_back.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: *어둠 속에 서 있다. 아무것도 보이지 않는다.*
 
 ---
@@ -12869,6 +13115,7 @@
 - 야간: true
 - 다음: `night3_nightmare_3_ins`
 
+- 배경: `school.png`
 **서연**: 약속했잖아. 나한테만이라고...
 
 ---
@@ -12878,6 +13125,7 @@
 - 야간: true
 - 다음: `night3_nightmare_4_ins`
 
+- 배경: `school.png`
 **유나**: 거짓말하지 말라고 했지.
 
 ---
@@ -12887,6 +13135,7 @@
 - 야간: true
 - 다음: `night3_nightmare_6`
 
+- 배경: `school.png`
 **다인**: 온다면서. 기다렸는데.
 
 ---
@@ -12895,6 +13144,8 @@
 - 야간: true
 - 다음: `night3_nightmare_choice`
 
+- 배경: `school.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: *세 방향에서 손이 보인다. 어둠 속에서 희미하게.*
 
 ---
@@ -12906,6 +13157,8 @@
   2. "유나의 손을 잡는다" → `night3_nightmare_yuna`
   3. "다인의 손을 잡는다" → `night3_nightmare_dain`
 
+- 배경: `school.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: *누구의 손을 잡을 것인가.*
 
 ---
@@ -12914,6 +13167,8 @@
 - 야간: true
 - 다음: `night3_nightmare_end`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *서연 쪽으로 손을 뻗었다. 그 미소가 보이는 순간 — 사라진다.*
 
 ---
@@ -12922,6 +13177,8 @@
 - 야간: true
 - 다음: `night3_nightmare_end`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *유나 쪽으로 발을 옮겼다. 손끝이 닿기 직전 — 사라진다.*
 
 ---
@@ -12930,6 +13187,8 @@
 - 야간: true
 - 다음: `night3_nightmare_end`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *다인 쪽으로 달려갔다. 잡았다고 생각한 순간 — 사라진다.*
 
 ---
@@ -12938,6 +13197,8 @@
 - 야간: true
 - 다음: `night3_nightmare_end_2`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *손을 뻗었다. — 잡히지 않는다.*
 
 ---
@@ -12946,6 +13207,8 @@
 - 야간: true
 - 다음: `night3_nightmare_end_3`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *모두 사라지고, 남은 건 어둠뿐.*
 
 ---
@@ -12955,6 +13218,7 @@
 - 야간: true
 - 다음: `night3_cheat_reflect_1`
 
+- 캐릭터: `없음`
 **{name}**: *— 땀에 젖은 채 눈을 떴다. 새벽 3시. 천장이 보인다.*
 
 ---
@@ -12964,6 +13228,7 @@
 - 야간: true
 - 다음: `night3_cheat_reflect_2`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 꺼냈다. 갤러리. 또 스크롤한다. — 소정이 사진.*
 
 ---
@@ -12973,6 +13238,7 @@
 - 야간: true
 - 다음: `night3_cheat_reflect_3`
 
+- 캐릭터: `없음`
 **{name}**: *웃고 있다. 단체 사진 속에서 나를 보고 웃고 있다. 아무것도 모른 채.*
 
 ---
@@ -12982,6 +13248,7 @@
 - 야간: true
 - 다음: `night3_cheat_reflect_3_ins`
 
+- 캐릭터: `없음`
 **{name}**: *이번에는 후회 없이 말하려고 했다. 이 학교에서는 솔직하게 살겠다고.*
 
 ---
@@ -12991,6 +13258,7 @@
 - 야간: true
 - 다음: `night3_cheat_reflect_5`
 
+- 캐릭터: `없음`
 **{name}**: *전 학교: 아무 말도 못 해서 후회.*
 
 ---
@@ -13000,6 +13268,7 @@
 - 야간: true
 - 다음: `night3_cheat_reflect_5_ins`
 
+- 캐릭터: `없음`
 **{name}**: *— 도망치지 않겠다. 이번에는 한 사람에게만.*
 
 ---
@@ -13008,6 +13277,8 @@
 - 야간: true
 - 다음: `night3_end`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *내가 뭘 한 거지.*
 
 ---
@@ -13016,6 +13287,8 @@
 - 야간: true
 - 다음: `morning4_start`
 
+- 배경: `room_my.png`
+- 캐릭터: `없음`
 **{name}**: *밤이 깊어간다...*
 
 ---
@@ -13024,6 +13297,7 @@
 - 배경: `school.png`
 - 다음: `night3_dream_1`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *결말을 안 쓰면 이야기가 끝나지 않으니까. — 나도 같은 마음이다.*
 
 ---
@@ -13032,6 +13306,7 @@
 - 배경: `school.png`
 - 다음: `night3_cheat_msg_4`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *서연이 '부탁'이라는 말을 쓴다. — 이 사람의 어휘에 없던 단어다. 그만큼 무너져 있다.*
 
 ---
@@ -13049,13 +13324,14 @@
 - 배경: `school.png`
 - 다음: `night3_nightmare_3`
 
+- 캐릭터: `없음`
 **{name}**: *서연의 목소리가 들린다.*
 
 ---
 
 ### `night3_nightmare_3_ins`
 - 배경: `school.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 - 다음: `night3_nightmare_4`
 
 **{name}**: *유나의 목소리.*
@@ -13064,7 +13340,7 @@
 
 ### `night3_nightmare_4_ins`
 - 배경: `school.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 - 다음: `night3_nightmare_5`
 
 **{name}**: *다인의 목소리.*
@@ -13075,6 +13351,7 @@
 - 배경: `school.png`
 - 다음: `night3_faithful_reflect_1`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *이번에는 후회 없이 말하려고 했다. 이 학교에서는 솔직하게 살겠다고.*
 
 ---
@@ -13083,6 +13360,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_cheat_reflect_3_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *소정이 때랑 정반대인데, 결과는 똑같다. 누군가가 상처받는다.*
 
 ---
@@ -13091,6 +13369,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_cheat_reflect_3_ins3`
 
+- 캐릭터: `없음`
 **{name}**: *전 학교: 아무 말도 못 해서 후회.*
 
 ---
@@ -13099,6 +13378,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_cheat_reflect_3_ins4`
 
+- 캐릭터: `없음`
 **{name}**: *이 학교: 모두에게 말해서 후회.*
 
 ---
@@ -13107,6 +13387,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_cheat_reflect_3_ins5`
 
+- 캐릭터: `없음`
 **{name}**: *결국 문제는 '말하느냐 마느냐'가 아니라 — '누구에게'인 거다.*
 
 ---
@@ -13115,6 +13396,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_cheat_reflect_3_ins6`
 
+- 캐릭터: `없음`
 **{name}**: *민수가 말했다. '거절도 사랑이야.'*
 
 ---
@@ -13123,6 +13405,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_cheat_reflect_3_ins7`
 
+- 캐릭터: `없음`
 **{name}**: *서연이 말했다. '유일한 답이거나, 아무것도 아니거나.'*
 
 ---
@@ -13131,6 +13414,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_cheat_reflect_4`
 
+- 캐릭터: `없음`
 **{name}**: *유나가 말했다. '도망치지 마.'*
 
 ---
@@ -13139,6 +13423,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_nightmare_end_4`
 
+- 캐릭터: `없음`
 **{name}**: *꿈을 꿨다. — 누군가와 나란히 걷고 있었다. 얼굴은 보이지 않는데, 옆에 있다는 것만으로 마음이 편했다.*
 
 ---
@@ -13147,6 +13432,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_2_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *'삭제하시겠습니까?'*
 
 ---
@@ -13155,6 +13441,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_2_ins3`
 
+- 캐릭터: `없음`
 **{name}**: *— 삭제했다.*
 
 ---
@@ -13163,6 +13450,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_2_ins4`
 
+- 캐릭터: `없음`
 **{name}**: *'삭제하시겠습니까?'*
 
 ---
@@ -13171,6 +13459,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_2_ins5`
 
+- 캐릭터: `없음`
 **{name}**: *1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑이야.'*
 
 ---
@@ -13179,6 +13468,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_2_ins6`
 
+- 캐릭터: `없음`
 **{name}**: *...그래. 나부터 과거를 거절해야 한다.*
 
 ---
@@ -13187,6 +13477,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_3`
 
+- 캐릭터: `없음`
 **{name}**: *— 삭제했다.*
 
 ---
@@ -13195,6 +13486,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_4`
 
+- 캐릭터: `없음`
 **{name}**: *민수가 말했다. '거절도 사랑이야.' 맞다. 전 학교에서 소정이는 나를 거절할 기회조차 없었다. 내가 입을 닫았으니까. — 그게 소정이한테도, 나한테도 가장 불친절한 결말이었다.*
 
 ---
@@ -13203,6 +13495,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_4_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑이야.'*
 
 ---
@@ -13211,6 +13504,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_4_ins3`
 
+- 캐릭터: `없음`
 **{name}**: *...거절. 그래, 해야 하는 건 알고 있다. 알고 있는데.*
 
 ---
@@ -13219,6 +13513,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_4_ins4`
 
+- 캐릭터: `없음`
 **{name}**: *손가락이 움직이지 않는다. 삭제 버튼 위에 올려놓은 채로.*
 
 ---
@@ -13227,6 +13522,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_4_ins5`
 
+- 캐릭터: `없음`
 **{name}**: *전 학교에서도 이랬다. 알면서 못 했다. 이번에도 — 알면서 못 하고 있다.*
 
 ---
@@ -13235,6 +13531,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_faithful_reflect_4_ins6`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 덮었다. 사진은 그대로다.*
 
 ---
@@ -13243,6 +13540,7 @@
 - 배경: `room_my.png`
 - 다음: `night3_dream_3`
 
+- 캐릭터: `없음`
 **{name}**: *...나는 과거에도 지금도, 아무것도 놓지 못하는 비겁한 놈일 뿐이다.*
 
 ---
@@ -13256,6 +13554,7 @@
 - BGM: `morning.mp3`
 - 다음: `minsu_cheer_1`
 
+- 캐릭터: `없음`
 **{name}**: *넷째 날. 주말. — 오늘은 학교가 아니다. 데이트다.*
 
 ---
@@ -13264,6 +13563,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 본다. 아침 메시지. — 맨 위에 민수.*
 
 ---
@@ -13290,6 +13590,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *짧다. 그런데 '잘하고 와'가 묵직하다. Day 2에 '전 학교에서도 이랬어?'라고 물었던 놈이, Day 3에 '거절도 사랑이야'라고 말했던 놈이 — 오늘은 '잘하고 와'다.*
 
 ---
@@ -13302,6 +13603,7 @@
   - [`route_dain`] → `morning4_dain_msg_1`
   - [기본] → `morning4_dain_msg_1_ins`
 
+- 캐릭터: `없음`
 **{name}**: *거울을 세 번 봤다. 옷을 두 번 갈아입었다. — 뭘 하는 거지 나.*
 
 ---
@@ -13340,6 +13642,7 @@
   - [`nurse_route_unlocked && nurse_day4`] → `hidden_nurse_d4_morning_1`
   - [기본] → `hidden_nurse_d4_check`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *주말. 학교 근처를 지나가게 됐다.*
 
 ---
@@ -13354,6 +13657,7 @@
 
 ### `hidden_homeroom_d4_skip`
 - 배경: `room_my.png`
+- 캐릭터: `없음`
 - 다음: `hidden_nurse_d4_check`
 
 ---
@@ -13408,6 +13712,7 @@
 - 배경: `street.png`
 - 다음: `hidden_homeroom_d4_4_ins3`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 지나가다가요.
 
 ---
@@ -13589,6 +13894,7 @@
   - [`nurse_day3`] → `hidden_nurse_d4_1`
   - [기본] → `morning4_end`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *주말이 끝나간다.*
 
 ---
@@ -13692,6 +13998,7 @@
 - 배경: `store.png`
 - 다음: `hidden_nurse_d4_meal_1`
 
+- 캐릭터: `없음`
 **{name}**: *학교 앞 분식집으로 향했다.*
 
 ---
@@ -13930,6 +14237,7 @@
   - [`accepted_yuna_date`] → `date_yuna_1`
   - [`accepted_seoyeon_date`] → `date_seo_1`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *거울을 한 번 더 본다. — 됐다. 나가자.*
 
 ---
@@ -13938,6 +14246,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins2`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *경고에서 직면으로, 직면에서 응원으로. — 민수가 나보다 먼저 나를 믿어주고 있다.*
 
 ---
@@ -13946,6 +14255,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins3`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *핸드폰 캘린더를 본다. 오전 서연, 오후 유나, 저녁 다인. — 하루 안에 세 명을 쪼개 넣느라 어젯밤에 잠을 못 잤다. 한 명이라도 시간이 겹치면 끝이다.*
 
 ---
@@ -13954,6 +14264,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins4`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *...뭘 하고 있는 거지, 나.*
 
 ---
@@ -13962,6 +14273,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_start_2`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *거울을 세 번 봤다. 옷을 두 번 갈아입었다. — 뭘 하는 거지 나.*
 
 ---
@@ -13979,6 +14291,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins3`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *어떻게 알았어*
 
 ---
@@ -14023,6 +14336,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_2`
 
+- 캐릭터: `minsu_normal.png`
 **{name}**: *...이번엔 진짜로*
 
 ---
@@ -14031,6 +14345,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_dain_msg_1_ins2`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *짧다. 그런데 '잘하고 와'가 묵직하다. Day 2에 전 학교에서도 이랬어?라고 물었던 놈이, Day 3에 거절도 사랑이야라고 말했던 놈이 — 오늘은 '잘하고 와'다.*
 
 ---
@@ -14039,6 +14354,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_hidden_check`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *경고에서 직면으로, 직면에서 응원으로. — 민수가 나보다 먼저 나를 믿어주고 있다.*
 
 ---
@@ -14047,6 +14363,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_seo_msg_1_ins2`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *명령형이다. 이 사람은 데이트 약속도 지시처럼 한다. — 근데 왜 웃기지.*
 
 ---
@@ -14055,6 +14372,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_hidden_check`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *약속 장소에 서 있다. — 올까? 금요일에 저렇게 화가 났는데.*
 
 ---
@@ -14081,6 +14399,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_yuna_msg_1_ins2`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *짧다. 유나답다. — '늦으면 간다'가 '제발 늦지 마'와 같은 뜻이라는 걸 이제 안다.*
 
 ---
@@ -14116,6 +14435,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_hidden_check`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *마지막 줄은 안 보낼 생각이었겠지. — 근데 다인이니까.*
 
 ---
@@ -14142,6 +14462,7 @@
 - 배경: `street.png`
 - 다음: `hidden_homeroom_d4_3_ins4`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 혼자서요?
 
 ---
@@ -14159,6 +14480,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_homeroom_d4_cafe_1_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 어색해요?
 
 ---
@@ -14185,6 +14507,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_homeroom_d4_cafe_1_ins5`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 어제 원고, 더 쓰셨어요?
 
 ---
@@ -14202,6 +14525,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_homeroom_d4_cafe_2_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 제가 본 게 도움이 됐어요?
 
 ---
@@ -14273,6 +14597,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_homeroom_d4_cafe_5_ins4`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 교육적 관심이라고 하실 거죠?
 
 ---
@@ -14353,6 +14678,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_2_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 환자가 간호사를 도와주는 거네요.
 
 ---
@@ -14415,6 +14741,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 혼자서요?
 
 ---
@@ -14423,6 +14750,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_4_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 그래서 번아웃이...
 
 ---
@@ -14449,6 +14777,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_4_ins5`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 그럼 뭐였어요?
 
 ---
@@ -14484,6 +14813,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_4_ins9`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: ...그런가요?
 
 ---
@@ -14519,6 +14849,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_6_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 별거 아닌데요.
 
 ---
@@ -14545,6 +14876,7 @@
 - 배경: `store.png`
 - 다음: `hidden_nurse_d4_meal_1_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 선생님도 학생 때 먹었을 텐데요.
 
 ---
@@ -14815,6 +15147,7 @@
 - 배경: `street.png`
 - 다음: `pre_confess_minsu`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *공원을 나서 거리를 걸었다.*
 
 ---
@@ -15271,6 +15604,7 @@
 - 배경: `street.png`
 - 다음: `confess_seo_1`
 
+- 캐릭터: `minsu_smirk.png`
 **{name}**: *주머니 안의 핸드폰이 무겁다. 아무 알림도 없는데. — 첫날, 화면에 뜬 이름을 보고 주머니에 넣었던 그때처럼 도망치면 안 된다. 이번에는.*
 
 ---
@@ -15342,6 +15676,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_succulent_3`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: 나한테 주는 거야?
 
 ---
@@ -15350,6 +15685,7 @@
 - 배경: `cafe.png`
 - 다음: `date_yuna_pretty_high_5_ins2`
 
+- 캐릭터: `yuna_shy.png`
 **{name}**: 예쁘다.
 
 ---
@@ -15367,6 +15703,7 @@
 - 배경: `bookstore.png`
 - 다음: `date_yuna_bookstore_3`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: 처음이야.
 
 ---
@@ -15411,6 +15748,7 @@
 - 배경: `arcade.png`
 - 다음: `date_dain_arcade_3`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: 또 내기?
 
 ---
@@ -15453,6 +15791,7 @@
   - [`route_dain`] → `confess_dain_1`
   - [기본] → `day4_night_start`
 
+- 캐릭터: `minsu_smirk.png`
 **{name}**: *데이트가 끝나가고 있다.*
 
 ---
@@ -16075,6 +16414,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `confess_yuna_yes_4`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: 너는 — 말 대신 옆에 앉아주는 사람이었어.
 
 ---
@@ -16128,6 +16468,7 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_yes_4`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: 그 눈이 나를 안 볼 때 — 좀 답답해.
 
 ---
@@ -16188,7 +16529,7 @@
 
 ### `confess_dain_no_4_ins4`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins5`
 
 **{name}**: *담임이 창가에 서 있다. 손에 원고 뭉치를 들고 있다. 아침 햇살이 종이 위를 물들이고 있다.*
@@ -16208,6 +16549,7 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_no_4_ins7`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: 부르셨잖아요.
 
 ---
@@ -16232,7 +16574,7 @@
 
 ### `confess_dain_no_4_ins9`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins10`
 
 **{name}**: *담임이 원고를 내민다. 표지에 제목이 적혀 있다. — 처음 보는 제목이다.*
@@ -16252,6 +16594,7 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_no_4_ins12`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: 마지막 장이요?
 
 ---
@@ -16276,7 +16619,7 @@
 
 ### `confess_dain_no_4_ins14`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins15`
 
 **{name}**: *원고를 받는다. 읽기 시작한다. — 담임이 창밖을 본다. 아침 햇살. 손끝이 미세하게 떨린다.*
@@ -16285,7 +16628,7 @@
 
 ### `confess_dain_no_4_ins15`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins16`
 
 **{name}**: *읽는 동안 담임은 한 마디도 하지 않는다. 창밖만 보고 있다. — 근데 유리창에 비친 눈이 나를 향해 있다.*
@@ -16305,13 +16648,14 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_no_4_ins18`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: ...좋아요. 이 결말.
 
 ---
 
 ### `confess_dain_no_4_ins18`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins19`
 
 **{name}**: *담임의 어깨에서 힘이 빠진다. 아주 천천히.*
@@ -16365,7 +16709,7 @@
 
 ### `confess_dain_no_4_ins24`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins25`
 
 **{name}**: *보건실 문을 열었다. 보건선생님이 의자에 앉아 있다. 흰 가운 차림. — 근데 평소와 다르다. 장난기가 없다.*
@@ -16394,6 +16738,7 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_no_4_ins28`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: 마지막 상담이에요?
 
 ---
@@ -16409,7 +16754,7 @@
 
 ### `confess_dain_no_4_ins29`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins30`
 
 **{name}**: *보건선생님이 책상 위 서류를 정리하는 척하지만 — 같은 종이를 세 번째 넘기고 있다.*
@@ -16429,13 +16774,14 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_no_4_ins32`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: 뭔데요?
 
 ---
 
 ### `confess_dain_no_4_ins32`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins33`
 
 **{name}**: *보건선생님이 안경을 만진다. 안경 너머로 보이는 눈이 생각보다 크다. 장난기 뒤에 숨어 있던 눈.*
@@ -16482,13 +16828,14 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_no_4_ins38`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: 올게요.
 
 ---
 
 ### `confess_dain_no_4_ins38`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins39`
 
 **{name}**: *보건선생님이 멈춘다. 안경을 만지작거리던 손이 멈춘다.*
@@ -16517,13 +16864,14 @@
 - 배경: `gym.png`
 - 다음: `confess_dain_no_4_ins42`
 
+- 캐릭터: `dain_sad.png`
 **{name}**: 진짜로.
 
 ---
 
 ### `confess_dain_no_4_ins42`
 - 배경: `gym.png`
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins43`
 
 **{name}**: *보건선생님의 안경 너머로 눈이 촉촉하다. — 지금 울고 있는 건가. 마음이 무너진다.*
@@ -16610,6 +16958,7 @@
 - 야간: true
 - 다음: `day4_night_branch`
 
+- 캐릭터: `seyoun_shy2.png`
 **{name}**: *집에 돌아왔다. 방에 누우니 오늘의 기억이 필름처럼 스쳐 지나간다.*
 
 ---
@@ -16626,6 +16975,7 @@
   - [`nurse_route_unlocked`] → `night_nurse_msg_1`
   - [기본] → `day4_night_reflect`
 
+- 캐릭터: `seyoun_shy2.png`
 **시스템**: ‹빈›
 
 ---
@@ -16638,6 +16988,7 @@
   - [60+] → `wall_seo_pre_high_1`
   - [기본] → `wall_seo_pre_low_1`
 
+- 캐릭터: `없음`
 **{name}**: *밤 10시. 서연에게서 전화가 온다. 목소리에 웃음기가 없다.*
 
 ---
@@ -17128,6 +17479,7 @@
 - 야간: true
 - 다음: `wall_seo_glimpse_1_ins`
 
+- 캐릭터: `seyoun_shy.png`
 **{name}**: *서연을 집까지 바래다주고 돌아오는 길. — 학교 앞을 지나가는데.*
 
 ---
@@ -17170,6 +17522,7 @@
   - [60+] → `wall_dain_pre_high_1`
   - [기본] → `wall_dain_pre_low_1`
 
+- 캐릭터: `없음`
 **{name}**: *밤 10시. 다인에게서 메시지.*
 
 ---
@@ -17522,6 +17875,7 @@
 - 야간: true
 - 다음: `wall_dain_cry_2`
 
+- 캐릭터: `없음`
 **{name}**: *다인이 코트 위에 주저앉았다. 배구공을 껴안고 울기 시작했다.*
 
 ---
@@ -17757,6 +18111,7 @@
 - 야간: true
 - 다음: `wall_dain_glimpse_2`
 
+- 캐릭터: `dain_shy.png`
 **{name}**: *도서관 별관 창문에 불빛이 보인다. 작은 스탠드 불.*
 
 ---
@@ -17799,6 +18154,7 @@
   - [60+] → `wall_yuna_pre_high_1`
   - [기본] → `wall_yuna_pre_low_1`
 
+- 캐릭터: `없음`
 **{name}**: *밤 10시. 유나에게서 메시지. '학교 후문. 지금 와.'*
 
 ---
@@ -18218,6 +18574,7 @@
 - 야간: true
 - 다음: `wall_yuna_glimpse_2`
 
+- 캐릭터: `yuna_shy.png`
 **{name}**: *유나를 두고 학교를 나온다. 정문을 지나가는데.*
 
 ---
@@ -18257,6 +18614,7 @@
 - 야간: true
 - 다음: `day4_night_regret_2`
 
+- 캐릭터: `없음`
 **{name}**: *...오늘 말할 수 있었는데. 그 석양 아래서, 완벽한 순간이었는데.*
 
 ---
@@ -18266,6 +18624,7 @@
 - 야간: true
 - 다음: `day4_night_regret_msg_branch`
 
+- 캐릭터: `없음`
 **{name}**: *괜찮아. 내일이 있으니까. 내일은 반드시.*
 
 ---
@@ -18279,6 +18638,7 @@
   - [`route_yuna`] → `day4_night_regret_msg_yuna`
   - [기본] → `day4_night_regret_msg`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -18318,6 +18678,7 @@
 - 야간: true
 - 다음: `day4_night_regret_reply`
 
+- 캐릭터: `없음`
 **{name}**: *핸드폰에 메시지가 왔다.*
 
 ---
@@ -18327,6 +18688,7 @@
 - 야간: true
 - 다음: `day4_night_sleep`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: ‹빈›
 
 ---
@@ -18356,6 +18718,7 @@
 - 야간: true
 - 다음: `day4_night_sleep`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *밤 11시. 담임선생님에게서 문자가 왔다. 짧은 문장 세 줄. — '첫 번째 독자'. 그 단어가 자꾸 머릿속에 남는다.*
 
 ---
@@ -18375,6 +18738,7 @@
 - 야간: true
 - 다음: `night_nurse_msg_3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *읽음 표시가 뜬다. 10초. 20초. 추가 메시지 없음. — 1분 뒤.*
 
 ---
@@ -18404,6 +18768,7 @@
 - 야간: true
 - 다음: `day4_night_sleep`
 
+- 캐릭터: `없음`
 **{name}**: *토요일이 이렇게 지나갔다. 내일은 뭘 하게 될까.*
 
 ---
@@ -18413,6 +18778,7 @@
 - 야간: true
 - 다음: `day4_final`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *눈을 감는다. 내일이 마지막이다. — 할 말이 남아 있다.*
 
 ---
@@ -18421,6 +18787,8 @@
 - 야간: true
 - 다음: `morning5_start`
 
+- 배경: `school_back.png`
+- 캐릭터: `없음`
 **{name}**: *토요일 밤이 깊어간다. 내일은 일요일, 마지막 날이다.*
 
 ---
@@ -18429,6 +18797,7 @@
 - 배경: `park.png`
 - 다음: `wall_seo_8`
 
+- 캐릭터: `seyoun_sad.png`
 **{name}**: ......
 
 ---
@@ -18455,6 +18824,7 @@
 - 배경: `park.png`
 - 다음: `wall_seo_10`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: ......
 
 ---
@@ -18553,6 +18923,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_seo_glimpse_2`
 
+- 캐릭터: `seyoun_shy.png`
 **{name}**: *체육관 창문에 불이 켜져 있다. 비상등.*
 
 ---
@@ -18606,6 +18977,7 @@
 - 배경: `gym.png`
 - 다음: `wall_dain_13`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: ......
 
 ---
@@ -18650,6 +19022,7 @@
 - 배경: `gym.png`
 - 다음: `wall_dain_18_ins3`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: ......
 
 ---
@@ -18820,6 +19193,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `wall_yuna_15`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: ......
 
 ---
@@ -18880,7 +19254,7 @@
 
 ### `wall_yuna_glimpse_3_ins3`
 - 배경: `school_back.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 - 다음: `wall_yuna_glimpse_3_ins4`
 
 **{name}**: *밤 11시. 핸드폰이 울린다. 담임선생님.*
@@ -18952,7 +19326,7 @@
 
 ### `wall_yuna_glimpse_3_ins11`
 - 배경: `school_back.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 - 다음: `wall_yuna_glimpse_3_ins12`
 
 **{name}**: *밤 11시 반. 핸드폰 알림. 보건선생님.*
@@ -19060,7 +19434,7 @@
 
 ### `wall_yuna_glimpse_3_ins23`
 - 배경: `school_back.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 - 다음: `wall_yuna_glimpse_4`
 
 **{name}**: *복도 문예부 전시 코너를 지나가다 — 게시판에 단편소설이 붙어 있다. 제목: '도서관에서 만난 사람에게'. 유나다. — 주인공만 알아볼 수 있는 이야기.*
@@ -19076,6 +19450,7 @@
 - BGM: `morning.mp3`
 - 다음: `morning5_start_ins`
 
+- 캐릭터: `없음`
 **{name}**: *다섯째 날. 마지막 날. 교복이 편해졌다. — 이 사람들 때문이다. 알고 있다.*
 
 ---
@@ -19084,6 +19459,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_start_2_ins`
 
+- 캐릭터: `없음`
 **{name}**: *오늘은 학교 행사가 있다. 마지막 이벤트. 교실에 들어서자마자 — 세 방향에서 신호가 온다.*
 
 ---
@@ -19096,6 +19472,7 @@
   - [기본] → `morning5_mood_low`
 - 다음: `morning5_mood_low`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -19104,6 +19481,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_seo_note_1`
 
+- 캐릭터: `없음`
 **{name}**: 마지막 날이다. 이상하게 발걸음이 가볍다. 오늘은 — 말할 수 있을 것 같다.
 
 ---
@@ -19112,6 +19490,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_seo_note_1`
 
+- 캐릭터: `없음`
 **{name}**: 마지막 날. 아직 확신이 없다. 하지만 가야 한다.
 
 ---
@@ -19120,6 +19499,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_seo_note_1`
 
+- 캐릭터: `없음`
 **{name}**: 마지막 날. 5일이 이렇게 빨리 지나갈 줄 몰랐다. ...뭘 한 건지 모르겠다.
 
 ---
@@ -19146,6 +19526,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_dain_1`
 
+- 캐릭터: `없음`
 **{name}**: *교실로 돌아오니 다인이 기다리고 있다.*
 
 ---
@@ -19275,6 +19656,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_6`
 
+- 캐릭터: `teacher_smile.png`
 **{name}**: *한 편 더. — 7년 만에 끝낸 사람이 '한 편 더'를 말하고 있다.*
 
 ---
@@ -19323,6 +19705,7 @@
   - [`nurse_day4`] → `hidden_nurse_d5_1`
   - [기본] → `morning5_end`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *행사 중간 쉬는 시간. 보건실 앞을 지나간다.*
 
 ---
@@ -19447,6 +19830,7 @@
   - [`route_seoyeon`] → `tour_seo_1`
   - [기본] → `tour_seo_1`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *세 방향에서 보낸 신호. — 답을 골라야 한다.*
 
 ---
@@ -19455,6 +19839,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_start_2`
 
+- 캐릭터: `없음`
 **{name}**: *오늘은 학교 행사가 있다. 마지막 이벤트.*
 
 ---
@@ -19463,6 +19848,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_mood_check`
 
+- 캐릭터: `없음`
 **{name}**: *책상 위에 쪽지가 놓여 있다. 서연의 글씨.*
 
 ---
@@ -19487,7 +19873,7 @@
 
 ### `morning5_seo_note_1_ins3`
 - 배경: `room_school.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 - 다음: `morning5_seo_note_1_ins4`
 
 **{name}**: *유나다. — 주인공만 알아볼 수 있는 이야기.*
@@ -19496,7 +19882,7 @@
 
 ### `morning5_seo_note_1_ins4`
 - 배경: `room_school.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 - 다음: `morning5_yuna_story_1`
 
 **{name}**: *교실로 돌아오니 다인이 기다리고 있다.*
@@ -19507,6 +19893,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_dain_2`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: ...허락도 없이?
 
 ---
@@ -19524,6 +19911,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_1_ins3`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 선생님.
 
 ---
@@ -19541,6 +19929,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 뭔데요?
 
 ---
@@ -19576,6 +19965,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_6_ins5`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 선생님.
 
 ---
@@ -19584,6 +19974,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_6_ins6`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 그 말, 이제 안 하셔도 될 것 같아요.
 
 ---
@@ -19637,6 +20028,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_6_ins12`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 읽을게요. 반드시.
 
 ---
@@ -19654,6 +20046,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_6_ins14`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 거짓말이시죠.
 
 ---
@@ -19770,6 +20163,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hidden_nurse_d5_4_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 선생님.
 
 ---
@@ -19814,6 +20208,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hidden_nurse_d5_1_ins4`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 졸업은 아직 먼데요.
 
 ---
@@ -19858,6 +20253,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hidden_nurse_d5_3_ins4`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 선생님?
 
 ---
@@ -19965,6 +20361,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hidden_nurse_d5_6`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: ...상처 없는데요.
 
 ---
@@ -20151,6 +20548,7 @@
   - [`chose_yuna_lunch`] → `tour_yuna_1`
   - [기본] → `tour_yuna_1b`
 
+- 캐릭터: `없음`
 **{name}**: *도서관 별관으로 향한다.*
 
 ---
@@ -20289,6 +20687,7 @@
   - [`chose_dain_lunch`] → `tour_dain_1`
   - [기본] → `tour_dain_1b`
 
+- 캐릭터: `없음`
 **{name}**: *체육관으로 향한다.*
 
 ---
@@ -20297,6 +20696,7 @@
 - 배경: `store.png`
 - 다음: `tour_dain_2`
 
+- 캐릭터: `없음`
 **{name}**: *체육관. Day 1에서 처음 내기를 하고, Day 4에서 마지막 스파이크를 쳤던 곳. — 오늘은 불이 켜져 있다.*
 
 ---
@@ -20305,6 +20705,7 @@
 - 배경: `store.png`
 - 다음: `tour_dain_2`
 
+- 캐릭터: `없음`
 **{name}**: *체육관. 며칠 사이에 수많은 내기와 스파이크가 오갔던 곳. — 오늘은 불이 켜져 있다.*
 
 ---
@@ -20483,6 +20884,7 @@
   - [`route_seoyeon`] → `after5_farewell_yuna_check`
   - [기본] → `after5_farewell_seo_1`
 
+- 캐릭터: `없음`
 **{name}**: *행사가 끝나가고 있다. 선택하지 않은 두 사람과 자연스럽게 마주친다.*
 
 ---
@@ -20491,6 +20893,7 @@
 - 배경: `school.png`
 - 다음: `after5_hidden_farewell_2`
 
+- 캐릭터: `없음`
 **{name}**: *교문 앞. 멀리서 세 사람이 보인다. 서연이 하은과 걸어가고, 다인이 배구공을 던지며 뛰어가고, 유나가 책을 읽으며 천천히 걷는다.*
 
 ---
@@ -20499,6 +20902,7 @@
 - 배경: `school.png`
 - 다음: `after5_hidden_farewell_3`
 
+- 캐릭터: `없음`
 **{name}**: *아무도 이쪽을 보지 않는다. — 그게 맞다. 내가 고른 건 다른 사람이니까.*
 
 ---
@@ -20507,6 +20911,7 @@
 - 배경: `school.png`
 - 다음: `after5_hidden_farewell_3b`
 
+- 캐릭터: `없음`
 **{name}**: *미안하다는 말은 하지 않겠다. 그 말은 — 그 사람들한테 하면 오히려 잔인하니까. 그냥 마음속으로만. 고마웠어.*
 
 ---
@@ -20515,6 +20920,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_sunset_1`
 
+- 캐릭터: `없음`
 **{name}**: *학교 뒤편으로 걸어갔다.*
 
 ---
@@ -20646,6 +21052,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after5_farewell_dain_check`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *복도로 돌아왔다.*
 
 ---
@@ -20711,6 +21118,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_sunset_1`
 
+- 캐릭터: `dain_laugh.png`
 **{name}**: *체육관을 나서 학교 뒤편으로 향했다.*
 
 ---
@@ -20720,6 +21128,7 @@
 - BGM: `confession.mp3`
 - 다음: `after5_end`
 
+- 캐릭터: `dain_laugh.png`
 **{name}**: *해가 지고 있다. 5일이 끝나간다.*
 
 ---
@@ -20728,6 +21137,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_ending_check`
 
+- 캐릭터: `dain_laugh.png`
 **{name}**: *석양이 교정을 물들인다. 5일이라는 시간이 이렇게 짧았나. — 마지막 선택의 순간이 다가온다.*
 
 ---
@@ -20746,6 +21156,8 @@
 ---
 
 ### `after5_set_harem`
+- 배경: `school_back.png`
+- 캐릭터: `없음`
 - 플래그: `ending_harem`
 - 다음: `ending_start`
 
@@ -20755,6 +21167,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2`
 
+- 캐릭터: `없음`
 **{name}**: *걸음이 멈춘다. 석양이 등 뒤로 길게 그림자를 만든다.*
 
 ---
@@ -20763,6 +21176,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins`
 
+- 캐릭터: `없음`
 **{name}**: *전 학교에서도 이랬다. 말하지 못했다. 그리고 후회했다. — 이번에도 그럴 건가?*
 
 ---
@@ -20773,6 +21187,7 @@
   1. "이번에는 고백하겠다" → `after5_confess_yes` | 플래그: `day5_confessed`
   2. "...아무 말도 하지 못했다" → `after5_confess_no`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *지금이 아니면 영원히 말 못 한다.*
 
 ---
@@ -20781,6 +21196,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_confess_yes_2`
 
+- 캐릭터: `없음`
 **{name}**: *또 도망칠 뻔했다. 전 학교에서처럼. 핸드폰을 주머니에 넣고 아무 말 못 하는 그 순간이 다시 올 뻔했다. — 안 된다. 이번에는.*
 
 ---
@@ -20793,6 +21209,7 @@
   - [`route_yuna`] → `after5_confess_react_yuna`
   - [기본] → `ending_start`
 
+- 캐릭터: `없음`
 **{name}**: 있잖아 — 나, 너한테 할 말이 있어.
 
 ---
@@ -20837,6 +21254,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_confess_no_2`
 
+- 캐릭터: `없음`
 **{name}**: *입술이 움직이지 않는다. 또. — 또 말하지 못했다.*
 
 ---
@@ -20845,6 +21263,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_confess_no_2b`
 
+- 캐릭터: `없음`
 **{name}**: *저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 혼자다.*
 
 ---
@@ -20854,6 +21273,7 @@
 - 야간: true
 - 다음: `day5_ending_alone`
 
+- 캐릭터: `없음`
 **{name}**: *집으로 돌아왔다.*
 
 ---
@@ -20907,6 +21327,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins2`
 
+- 캐릭터: `없음`
 **{name}**: *또 도망칠 뻔했다. 전 학교에서처럼. 핸드폰을 주머니에 넣고 아무 말 못 하는 그 순간이 다시 올 뻔했다. — 안 된다. 이번에는.*
 
 ---
@@ -20915,6 +21336,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins3`
 
+- 캐릭터: `없음`
 **{name}**: *다리가 움직인다. 입이 먼저 열린다. 준비한 말 같은 건 없다. — 그냥 몸이 먼저 움직인다.*
 
 ---
@@ -20923,6 +21345,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins4`
 
+- 캐릭터: `없음`
 **{name}**: 서연아.
 
 ---
@@ -20931,6 +21354,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins5`
 
+- 캐릭터: `없음`
 **{name}**: *서연이 돌아본다. 석양을 등지고 있다.*
 
 ---
@@ -20948,6 +21372,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins7`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *잠깐 침묵. 바람이 머리카락을 날린다. 넘기지 않는다.*
 
 ---
@@ -20965,6 +21390,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins9`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *새끼손가락을 내민다. Day 4에서 못 잡았던 그 손가락.*
 
 ---
@@ -20982,6 +21408,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins11`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *나란히 걸어가며 — 학교를 벗어난다.*
 
 ---
@@ -20990,6 +21417,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins12`
 
+- 캐릭터: `없음`
 **{name}**: 다인아.
 
 ---
@@ -20998,6 +21426,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins13`
 
+- 캐릭터: `없음`
 **{name}**: *다인이 뛰어오다가 멈춘다.*
 
 ---
@@ -21015,6 +21444,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins15`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *눈이 커진다. 1초. 2초.*
 
 ---
@@ -21032,6 +21462,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins17`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *느낌표가 사라진다. 목소리가 작아진다. — 눈이 차오른다.*
 
 ---
@@ -21049,6 +21480,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins19`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *주먹으로 눈을 비빈다. 웃으면서 운다.*
 
 ---
@@ -21152,6 +21584,7 @@
   - [`day4_waited`] → `day5_ending_friend`
   - [기본] → `day5_ending_alone`
 
+- 캐릭터: `seyoun_normal.png`
 **시스템**: ‹빈›
 
 ---
@@ -21164,6 +21597,7 @@
   - [`route_yuna`] → `ending_aff_check_yuna`
   - [`route_dain`] → `ending_aff_check_dain`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21178,6 +21612,7 @@
   - [기본] → `bitter_seo_1`
 - 다음: `bitter_seo_1`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21192,6 +21627,7 @@
   - [기본] → `bitter_yuna_1`
 - 다음: `bitter_yuna_1`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21206,6 +21642,7 @@
   - [기본] → `bitter_dain_1`
 - 다음: `bitter_dain_1`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21219,6 +21656,7 @@
   - [`route_dain`] → `ending_confessed_aff_dain`
   - [기본] → `day5_ending_friend`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21230,6 +21668,7 @@
   - [50+] → `day5_ending_good`
 - 다음: `day5_ending_confess_fail`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21241,6 +21680,7 @@
   - [50+] → `day5_ending_good`
 - 다음: `day5_ending_confess_fail`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21252,6 +21692,7 @@
   - [50+] → `day5_ending_good`
 - 다음: `day5_ending_confess_fail`
 
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -21263,6 +21704,7 @@
 - 플래그: `ending_perfect`
 - 다음: `perfect_seo_1_ins`
 
+- 캐릭터: `없음`
 **{name}**: *서연의 옥상. 서연이 직접 가꾼 화분 사이에 서 있다.*
 
 ---
@@ -21301,6 +21743,7 @@
 - 배경: `ending_perfect_seoyeon.png`
 - 다음: `perfect_seo_5_ins`
 
+- 캐릭터: `seyoun_laugh.png`
 **{name}**: *서연이 손을 뻗는다. 새끼손가락이 아니다. 손 전체를.*
 
 ---
@@ -21312,6 +21755,7 @@
 - 플래그: `ending_perfect`
 - 다음: `perfect_yuna_2`
 
+- 캐릭터: `없음`
 **{name}**: *도서관 별관, 비밀 다락방. 유나가 소설 한 편을 건넨다.*
 
 ---
@@ -21350,6 +21794,7 @@
 - 배경: `ending_perfect_yuna.png`
 - 다음: `perfect_epilogue_1_yuna`
 
+- 캐릭터: `yuna_shy.png`
 **{name}**: *유나가 자리에서 일어나 안겼다. 아무 말 없이. 깨진 창문으로 달빛이 쏟아지고 — 문신이 새겨진 팔이 허리를 감쌌다. 은발이 어깨에 닿았다. 처음으로 유나의 고른 숨소리가 아지트를 채웠다.*
 
 ---
@@ -21361,6 +21806,7 @@
 - 플래그: `ending_perfect`
 - 다음: `perfect_dain_2`
 
+- 캐릭터: `없음`
 **{name}**: *체육관. 다인이 마지막 서브를 날린다. 붕대를 풀면서.*
 
 ---
@@ -21419,6 +21865,7 @@
 - 배경: `ending_perfect_dain.png`
 - 다음: `perfect_epilogue_1_dain`
 
+- 캐릭터: `dain_shy.png`
 **{name}**: *다인이 자리에서 뛰어올랐다. 준비가 안 됐다. 배구공이 바닥을 굴러갔고 — 노을 진 체육관에 두 사람의 그림자만 남았다.*
 
 ---
@@ -21427,6 +21874,7 @@
 - 배경: `ending_perfect_seoyeon.png`
 - 다음: `perfect_epilogue_bridge_seo`
 
+- 캐릭터: `seyoun_laugh.png`
 **{name}**: *모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*
 
 ---
@@ -21435,6 +21883,7 @@
 - 배경: `ending_perfect_yuna.png`
 - 다음: `perfect_epilogue_bridge_yuna`
 
+- 캐릭터: `yuna_shy.png`
 **{name}**: *모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*
 
 ---
@@ -21443,6 +21892,7 @@
 - 배경: `ending_perfect_dain.png`
 - 다음: `perfect_epilogue_bridge_dain`
 
+- 캐릭터: `dain_shy.png`
 **{name}**: *모든 선택이 하나의 사람을 향해 있었다. 5일이 아니라, 하루하루가 전부였다.*
 
 ---
@@ -21451,6 +21901,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_2_seo`
 
+- 배경: `ending_perfect_seoyeon.png`
+- 캐릭터: `seyoun_laugh.png`
 **시스템**: *에필로그 — 1년 후*
 
 ---
@@ -21459,6 +21911,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_2_yuna`
 
+- 배경: `ending_perfect_yuna.png`
+- 캐릭터: `yuna_shy.png`
 **시스템**: *에필로그 — 1년 후*
 
 ---
@@ -21467,6 +21921,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_2_dain`
 
+- 배경: `ending_perfect_dain.png`
+- 캐릭터: `dain_shy.png`
 **시스템**: *에필로그 — 1년 후*
 
 ---
@@ -21475,6 +21931,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_3_seo`
 
+- 배경: `ending_perfect_seoyeon.png`
+- 캐릭터: `seyoun_laugh.png`
 **{name}**: *대학 입학식 날. 핸드폰에 메시지. '오늘도 화분 물 줬어. — 근데 빨리 와.'*
 
 ---
@@ -21483,6 +21941,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_3_yuna`
 
+- 배경: `ending_perfect_yuna.png`
+- 캐릭터: `yuna_shy.png`
 **{name}**: *유나의 첫 장편소설이 출판됐다. 헌정사: '세 번째 별에게.'*
 
 ---
@@ -21491,6 +21951,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_3_dain`
 
+- 배경: `ending_perfect_dain.png`
+- 캐릭터: `dain_shy.png`
 **{name}**: *다인은 스포츠 해설가가 됐다. 카메라 앞에서도 웃고 있다. 근데 이번에는 진짜 웃음이다.*
 
 ---
@@ -21499,6 +21961,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_4_seo`
 
+- 배경: `ending_perfect_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: *서연이 달라졌다. 완벽하지 않아도 괜찮다는 걸 안다. 거울 안 보고 웃는 날이 늘었다.*
 
 ---
@@ -21507,6 +21971,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_4_yuna`
 
+- 배경: `ending_perfect_yuna.png`
+- 캐릭터: `yuna_shy.png`
 **{name}**: *유나는 여전히 말이 적다. 하지만 문장의 길이가 달라졌다. 나한테만.*
 
 ---
@@ -21515,6 +21981,8 @@
 - 야간: true
 - 다음: `perfect_epilogue_4_dain`
 
+- 배경: `ending_perfect_dain.png`
+- 캐릭터: `dain_shy.png`
 **{name}**: *가끔 무릎이 아프다고 한다. 그때마다 옆에 앉아서 아무 말 안 한다. 그게 우리의 방식이다.*
 
 ---
@@ -21523,6 +21991,8 @@
 - 야간: true
 - 다음: `day5_credits`
 
+- 배경: `ending_perfect_seoyeon.png`
+- 캐릭터: `없음`
 **시스템**: ─── PERFECT END (서연) ───
 
 ---
@@ -21531,6 +22001,8 @@
 - 야간: true
 - 다음: `day5_credits`
 
+- 배경: `ending_perfect_yuna.png`
+- 캐릭터: `없음`
 **시스템**: ─── PERFECT END (유나) ───
 
 ---
@@ -21539,6 +22011,8 @@
 - 야간: true
 - 다음: `day5_credits`
 
+- 배경: `ending_perfect_dain.png`
+- 캐릭터: `없음`
 **시스템**: ─── PERFECT END (다인) ───
 
 ---
@@ -21550,6 +22024,7 @@
 - 플래그: `ending_bittersweet`
 - 다음: `bitter_seo_2`
 
+- 캐릭터: `없음`
 **{name}**: *고백은 했다. 받아들여졌다. — 근데 그게 끝이었다. 학교 앞을 걸었다.*
 
 ---
@@ -21568,6 +22043,7 @@
 - 배경: `ending_bittersweet.png`
 - 다음: `bitter_epilogue_1`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *카페를 나왔다. 비가 내린다. 서연의 안경 너머 시선이 건조했다. 예전의 여유도, 떨림도 없었다. 그냥 — 정리하러 온 사람의 눈이었다.*
 
 ---
@@ -21579,6 +22055,7 @@
 - 플래그: `ending_bittersweet`
 - 다음: `bitter_yuna_2`
 
+- 캐릭터: `없음`
 **{name}**: *고백은 했다. 받아들여졌다. — 근데 그게 끝이었다. 학교 앞을 걸었다.*
 
 ---
@@ -21609,6 +22086,7 @@
 - 플래그: `ending_bittersweet`
 - 다음: `bitter_dain_2`
 
+- 캐릭터: `없음`
 **{name}**: *고백은 했다. 받아들여졌다. — 근데 그게 끝이었다. 학교 앞을 걸었다.*
 
 ---
@@ -21627,6 +22105,7 @@
 - 배경: `ending_bittersweet.png`
 - 다음: `bitter_dain_3_ins`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *체육관을 나왔다. 비가 내린다. — 느낌표가 돌아왔지만 마지막 문장에는 없었다. 다인이 마침표로 끝내는 건, 더 이상 함께할 에너지가 남지 않았다는 뜻이다.*
 
 ---
@@ -21635,6 +22114,8 @@
 - 야간: true
 - 다음: `bitter_epilogue_2`
 
+- 배경: `ending_bittersweet.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *졸업 후. 연락이 뜸해졌다. 한 달에 한 번이 두 달에 한 번이 되고, 읽씹이 일상이 되고, 어느 날 메시지를 보내려다 뭐라고 하지?가 떠올랐을 때 — 끝났다는 걸 알았다.*
 
 ---
@@ -21643,6 +22124,8 @@
 - 야간: true
 - 다음: `bitter_epilogue_3`
 
+- 배경: `ending_bittersweet.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *5일의 기록은 남았다. 아프지 않다. 다만 — 충분하지 않았다. 서로에게.*
 
 ---
@@ -21651,6 +22134,8 @@
 - 야간: true
 - 다음: `day5_credits`
 
+- 배경: `ending_bittersweet.png`
+- 캐릭터: `seyoun_normal.png`
 **시스템**: ─── BITTERSWEET END ───
 
 ---
@@ -21662,6 +22147,7 @@
 - 플래그: `ending_true_love`
 - 다음: `true_seo_2`
 
+- 캐릭터: `없음`
 **{name}**: *서연의 방. 부모는 외출 중이다. 방은 깔끔하다 — 너무 깔끔하다. 감정이 없는 방.*
 
 ---
@@ -21671,6 +22157,7 @@
 - 야간: true
 - 다음: `true_seo_3`
 
+- 캐릭터: `없음`
 **{name}**: *— 하나만 빼고. 책상 위에 서연이 직접 키운 화분들이 줄지어 있다.*
 
 ---
@@ -21759,6 +22246,7 @@
 - 배경: `ending_true_seoyeon.png`
 - 다음: `true_epilogue_1_seo`
 
+- 캐릭터: `seyoun_shy.png`
 **{name}**: *서연의 약속이 아직 손끝에 남아 있다.*
 
 ---
@@ -21770,6 +22258,7 @@
 - 플래그: `ending_true_love`
 - 다음: `true_yuna_2`
 
+- 캐릭터: `없음`
 **{name}**: *도서관 별관. 비밀 독서 공간보다 더 깊숙이 — 다락방. 존재조차 몰랐던 공간.*
 
 ---
@@ -21848,6 +22337,7 @@
 - 배경: `ending_true_yuna.png`
 - 다음: `true_epilogue_1_yuna`
 
+- 캐릭터: `yuna_shy.png`
 **{name}**: *유나의 별이 아직 눈앞에 남아 있다.*
 
 ---
@@ -21859,6 +22349,7 @@
 - 플래그: `ending_true_love`
 - 다음: `true_dain_2`
 
+- 캐릭터: `없음`
 **{name}**: *체육관. 어제와 같은 비상등. 매트 위에 나란히 누워 있다.*
 
 ---
@@ -21868,6 +22359,7 @@
 - 야간: true
 - 다음: `true_dain_2b`
 
+- 캐릭터: `없음`
 **{name}**: *다인이 {name}의 손을 잡아 — 끌어당겨서 자기 왼쪽 가슴에 댄다. 아무 말 없이.*
 
 ---
@@ -21956,6 +22448,7 @@
 - 배경: `ending_true_dain.png`
 - 다음: `true_epilogue_1_dain`
 
+- 캐릭터: `dain_laugh.png`
 **{name}**: *다인의 웃음이 아직 귓가에 남아 있다.*
 
 ---
@@ -21964,6 +22457,7 @@
 - 배경: `ending_true_seoyeon.png`
 - 다음: `true_epilogue_2`
 
+- 캐릭터: `seyoun_shy.png`
 **{name}**: *5일이었다.*
 
 ---
@@ -21972,6 +22466,7 @@
 - 배경: `ending_true_yuna.png`
 - 다음: `true_epilogue_2`
 
+- 캐릭터: `yuna_shy.png`
 **{name}**: *5일이었다.*
 
 ---
@@ -21980,6 +22475,7 @@
 - 배경: `ending_true_dain.png`
 - 다음: `true_epilogue_2`
 
+- 캐릭터: `dain_laugh.png`
 **{name}**: *5일이었다.*
 
 ---
@@ -21988,6 +22484,8 @@
 - 야간: true
 - 다음: `true_epilogue_3`
 
+- 배경: `ending_true_seoyeon.png`
+- 캐릭터: `seyoun_shy.png`
 **{name}**: *교복은 뻣뻣했고, 벚꽃은 재채기였고, 교문 앞에서 뭘 해야 할지 몰랐다.*
 
 ---
@@ -21996,6 +22494,8 @@
 - 야간: true
 - 다음: `true_epilogue_4`
 
+- 배경: `ending_true_seoyeon.png`
+- 캐릭터: `seyoun_shy.png`
 **{name}**: *근데 돌아보면 — 처음 눈 마주친 그 순간에 이미 끝나 있었던 것 같다. 다만 인정하기까지 5일이 걸렸을 뿐.*
 
 ---
@@ -22014,6 +22514,8 @@
 - 야간: true
 - 다음: `true_epilogue_7`
 
+- 배경: `park.png`
+- 캐릭터: `없음`
 **{name}**: *가정이 화목해진 건 아니다. 어머니의 전화는 여전히 차갑고, 거울 앞 연습은 끝나지 않았다. — 다만, 연습 안 한 표정을 보여줄 사람이 생긴 거다. 이제는.*
 
 ---
@@ -22022,6 +22524,8 @@
 - 야간: true
 - 다음: `true_epilogue_7`
 
+- 배경: `park.png`
+- 캐릭터: `없음`
 **{name}**: *사라진 사람이 돌아온 건 아니다. 선배의 연락처는 여전히 없고, 도서관 구석 자리는 비어 있다. — 다만, 쪽지가 아니라 목소리로 말할 사람이 생긴 거다. 이제는.*
 
 ---
@@ -22030,6 +22534,8 @@
 - 야간: true
 - 다음: `true_epilogue_7`
 
+- 배경: `park.png`
+- 캐릭터: `없음`
 **{name}**: *무릎이 나은 건 아니다. 아침마다 붕대를 감고, 알람 메모에는 여전히 느낌표가 두 개다. — 다만, 마침표로 끝나는 문장을 들어줄 사람이 생긴 거다. 이제는.*
 
 ---
@@ -22038,6 +22544,8 @@
 - 야간: true
 - 다음: `day5_credits`
 
+- 배경: `park.png`
+- 캐릭터: `없음`
 **시스템**: ─── TRUE LOVE END ───
 
 ---
@@ -22048,6 +22556,7 @@
 - 야간: true
 - 다음: `good_1`
 
+- 캐릭터: `없음`
 **{name}**: *누군가에겐 희망을 줬다가 거둔 셈이 됐을지도 모른다. 미안하다.*
 
 ---
@@ -22057,6 +22566,7 @@
 - 야간: true
 - 다음: `good_1b`
 
+- 캐릭터: `없음`
 **{name}**: *한 걸음 다가왔다.*
 
 ---
@@ -22066,6 +22576,7 @@
 - 야간: true
 - 다음: `good_1c`
 
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22079,6 +22590,7 @@
   - [`route_seoyeon`] → `good_1_seo`
   - [기본] → `good_1_seo`
 
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22128,6 +22640,7 @@
 - 야간: true
 - 다음: `good_3_seo`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *벚꽃길. 서연이 한 발짝 앞에 서 있다. 돌아본다.*
 
 ---
@@ -22137,6 +22650,7 @@
 - 야간: true
 - 다음: `good_4_seo`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *벚꽃이 서연의 머리카락에 내려앉는다. 털어줄까 말까 고민하는데 — 서연이 먼저 머리를 기울인다.*
 
 ---
@@ -22146,6 +22660,7 @@
 - 야간: true
 - 다음: `good_5_seo`
 
+- 캐릭터: `없음`
 **{name}**: *완벽한 척하지만 나도 완벽하지 않았다.*
 
 ---
@@ -22154,6 +22669,7 @@
 - 배경: `ending_good_seoyeon.png`
 - 다음: `good_epilogue_1`
 
+- 캐릭터: `없음`
 **{name}**: *벚꽃은 내년에도 핀다. 나란히 걸었다.*
 
 ---
@@ -22163,6 +22679,7 @@
 - 야간: true
 - 다음: `good_3_yuna`
 
+- 캐릭터: `yuna_smile.png`
 **{name}**: *옥상. 유나가 난간에 기대어 서 있다. 바람이 머리카락을 흩날린다.*
 
 ---
@@ -22172,6 +22689,7 @@
 - 야간: true
 - 다음: `good_4_yuna`
 
+- 캐릭터: `yuna_smile.png`
 **{name}**: *유나가 쪽지를 건넨다. "다음에는 헤매지 마." — 짧다. 그리고 따뜻하다.*
 
 ---
@@ -22181,6 +22699,7 @@
 - 야간: true
 - 다음: `good_5_yuna`
 
+- 캐릭터: `yuna_smile.png`
 **{name}**: *사라진 사람의 그림자를 쫓고 있었다.*
 
 ---
@@ -22189,6 +22708,7 @@
 - 배경: `ending_good_yuna.png`
 - 다음: `good_epilogue_1_yuna`
 
+- 캐릭터: `yuna_smile.png`
 **{name}**: *옥상 위. 대역이 아닌 사람으로 기억되고 싶다. 시간이 걸려도.*
 
 ---
@@ -22198,6 +22718,7 @@
 - 야간: true
 - 다음: `good_3_dain`
 
+- 캐릭터: `dain_pout.png`
 **{name}**: *학교 교문 앞. 다인이 배구공을 던지며 기다리고 있다.*
 
 ---
@@ -22207,6 +22728,7 @@
 - 야간: true
 - 다음: `good_4_dain`
 
+- 캐릭터: `dain_pout.png`
 **{name}**: *다인이 배구공을 던진다. 받았다. — 이게 이 사람의 화해 방식이다.*
 
 ---
@@ -22216,6 +22738,7 @@
 - 야간: true
 - 다음: `good_5_dain`
 
+- 캐릭터: `dain_pout.png`
 **{name}**: *무릎이 아파도 뛰었다.*
 
 ---
@@ -22224,6 +22747,7 @@
 - 배경: `ending_good_dain.png`
 - 다음: `good_epilogue_1_dain`
 
+- 캐릭터: `dain_pout.png`
 **{name}**: *학교 앞. 마지막 서브는 아직 안 넘어왔다. 경기는 끝나지 않았다.*
 
 ---
@@ -22232,6 +22756,8 @@
 - 야간: true
 - 다음: `good_epilogue_2`
 
+- 배경: `ending_good_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: *하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*
 
 ---
@@ -22240,6 +22766,8 @@
 - 야간: true
 - 다음: `good_epilogue_3`
 
+- 배경: `ending_good_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: *길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*
 
 ---
@@ -22248,6 +22776,8 @@
 - 야간: true
 - 다음: `good_5_cg_seo`
 
+- 배경: `ending_good_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: *불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*
 
 ---
@@ -22255,6 +22785,8 @@
 ### `good_epilogue_1_yuna`
 - 다음: `good_epilogue_2_yuna`
 
+- 배경: `ending_good_yuna.png`
+- 캐릭터: `없음`
 **{name}**: *하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*
 
 ---
@@ -22263,6 +22795,8 @@
 - 야간: true
 - 다음: `good_epilogue_3_yuna`
 
+- 배경: `ending_good_yuna.png`
+- 캐릭터: `없음`
 **{name}**: *길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*
 
 ---
@@ -22271,6 +22805,8 @@
 - 야간: true
 - 다음: `good_5_cg_yuna`
 
+- 배경: `ending_good_yuna.png`
+- 캐릭터: `없음`
 **{name}**: *불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*
 
 ---
@@ -22278,6 +22814,8 @@
 ### `good_epilogue_1_dain`
 - 다음: `good_epilogue_2_dain`
 
+- 배경: `ending_good_dain.png`
+- 캐릭터: `dain_pout.png`
 **{name}**: *하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*
 
 ---
@@ -22286,6 +22824,8 @@
 - 야간: true
 - 다음: `good_epilogue_3_dain`
 
+- 배경: `ending_good_dain.png`
+- 캐릭터: `없음`
 **{name}**: *길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*
 
 ---
@@ -22294,6 +22834,8 @@
 - 야간: true
 - 다음: `good_5_cg_dain`
 
+- 배경: `ending_good_dain.png`
+- 캐릭터: `없음`
 **{name}**: *불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*
 
 ---
@@ -22302,6 +22844,7 @@
 - 배경: `ending_good_seoyeon.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `없음`
 **시스템**: ─── GOOD END ───
 
 ---
@@ -22310,6 +22853,7 @@
 - 배경: `ending_good_yuna.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `없음`
 **시스템**: ─── GOOD END ───
 
 ---
@@ -22318,6 +22862,7 @@
 - 배경: `ending_good_dain.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `없음`
 **시스템**: ─── GOOD END ───
 
 ---
@@ -22327,6 +22872,7 @@
 - BGM: `night1.mp3`
 - 다음: `mayhem_1`
 
+- 캐릭터: `없음`
 **{name}**: *셋 다 좋았다. 진심이었다. — 그래서 아무도 선택하지 못했다.*
 
 ---
@@ -22335,6 +22881,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_2`
 
+- 캐릭터: `없음`
 **{name}**: *서연이 복도에서 나를 스쳐 지나갔다. 고개를 돌리지 않았다. — 당연하다.*
 
 ---
@@ -22352,6 +22899,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_4`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *다인이 웃고 있었다. 평소처럼 밝게. — 근데 느낌표가 없었다. 잘 지내. 마침표로 끝나는 다인의 문장을 처음 들은 게 하필 이별이었다.*
 
 ---
@@ -22360,6 +22908,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_5`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *세 사람의 등을 봤다. 셋 다 돌아보지 않았다. — 그게 답이었다.*
 
 ---
@@ -22368,6 +22917,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_6`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *봄이 끝나고 있다. 벚꽃이 지고 있다. 아무도 내 옆에 없다.*
 
 ---
@@ -22376,6 +22926,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_7`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: ‹빈›
 
 ---
@@ -22384,6 +22935,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `yuna_normal.png`
 **시스템**: ─── MAYHEM END ───
 
 ---
@@ -22393,6 +22945,7 @@
 - BGM: `night1.mp3`
 - 다음: `harem_1`
 
+- 캐릭터: `없음`
 **{name}**: *전부 좋아해. — 그 말이 입에서 나왔을 때, 세 사람의 표정이 동시에 얼어붙었다.*
 
 ---
@@ -22401,6 +22954,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_1_ins`
 
+- 캐릭터: `없음`
 **{name}**: *서연이 먼저 웃었다. ...그래. 솔직하네. 웃음 뒤에 이가 갈리는 소리가 들린 건 착각이 아니었다.*
 
 ---
@@ -22409,6 +22963,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_3`
 
+- 캐릭터: `yuna_normal.png`
 **유나**: ...멍청해.
 
 ---
@@ -22417,6 +22972,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_4`
 
+- 캐릭터: `없음`
 **{name}**: *다인이 주먹으로 내 어깨를 쳤다. 아팠다. 야, 미친 거 아냐? ...근데 네가 그런 사람인 거 알면서 좋아한 건 나잖아. 씁.*
 
 ---
@@ -22425,6 +22981,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_5`
 
+- 캐릭터: `없음`
 **{name}**: *월요일은 서연. 수요일은 유나. 금요일은 다인. 사이사이에 들키지 않기 위한 거짓말이 쌓인다. 달콤한 줄 알았는데 — 목을 조여온다.*
 
 ---
@@ -22433,6 +22990,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_6`
 
+- 캐릭터: `없음`
 **{name}**: *이 균형은 반드시 깨진다. 누군가 먼저 울게 된다. 그때 이 이야기는 로맨스가 아니라 — 참사가 된다.*
 
 ---
@@ -22441,6 +22999,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_7`
 
+- 캐릭터: `없음`
 **{name}**: *그래도 오늘은 세 사람이 웃고 있다. 내일의 파국을 알면서도 — 오늘을 놓지 못한다.*
 
 ---
@@ -22449,6 +23008,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_8`
 
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22457,6 +23017,7 @@
 - 배경: `ending_harem.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `없음`
 **시스템**: ─── HAREM END ───
 
 ---
@@ -22470,6 +23031,7 @@
   - [`route_yuna`] → `confess_fail_cg_yuna`
   - [`route_dain`] → `confess_fail_cg_dain`
 
+- 캐릭터: `없음`
 **{name}**: *용기를 냈다. 말했다. — 근데 돌아온 건 고개 숙인 침묵이었다.*
 
 ---
@@ -22478,6 +23040,7 @@
 - 배경: `ending_confess_fail_seoyeon.png`
 - 다음: `confess_fail_1`
 
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22486,6 +23049,7 @@
 - 배경: `ending_confess_fail_yuna.png`
 - 다음: `confess_fail_1`
 
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22494,6 +23058,7 @@
 - 배경: `ending_confess_fail_dain.png`
 - 다음: `confess_fail_1`
 
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22502,6 +23067,8 @@
 - 야간: true
 - 다음: `confess_fail_2`
 
+- 배경: `ending_confess_fail_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: *"...고마워. 진짜로. 근데 나는 아직 — 5일은 너무 짧았나 봐."*
 
 ---
@@ -22510,6 +23077,8 @@
 - 야간: true
 - 다음: `confess_fail_3`
 
+- 배경: `ending_confess_fail_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: *거절이 아니다. 타이밍이다. — 충분히 다가가지 못한 5일이 만든 결과.*
 
 ---
@@ -22518,6 +23087,8 @@
 - 야간: true
 - 다음: `confess_fail_4`
 
+- 배경: `ending_confess_fail_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22526,6 +23097,8 @@
 - 야간: true
 - 다음: `confess_fail_5`
 
+- 배경: `ending_confess_fail_seoyeon.png`
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22534,6 +23107,8 @@
 - 야간: true
 - 다음: `day5_credits`
 
+- 배경: `ending_confess_fail_seoyeon.png`
+- 캐릭터: `없음`
 **시스템**: ─── FRIEND END (고백 실패) ───
 
 ---
@@ -22544,6 +23119,7 @@
 - 야간: true
 - 다음: `friend_1`
 
+- 캐릭터: `없음`
 **{name}**: *결국 말하지 못했다.*
 
 ---
@@ -22553,6 +23129,7 @@
 - 야간: true
 - 다음: `friend_2`
 
+- 캐릭터: `없음`
 **{name}**: *벚꽃이 지금은 바람에 날려 사라지고 있다.*
 
 ---
@@ -22562,6 +23139,7 @@
 - 야간: true
 - 다음: `friend_3`
 
+- 캐릭터: `없음`
 **{name}**: *전 학교에서도 이랬다. 또 이랬다.*
 
 ---
@@ -22571,6 +23149,7 @@
 - 야간: true
 - 다음: `friend_4`
 
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22580,6 +23159,7 @@
 - 야간: true
 - 다음: `friend_5`
 
+- 캐릭터: `없음`
 **{name}**: *교문을 나서는데 핸드폰에 메시지가 와 있다. '오늘 고마웠어 ㅋㅋ' — 친구의 말투다. 완벽한 친구의 말투.*
 
 ---
@@ -22589,6 +23169,7 @@
 - 야간: true
 - 다음: `friend_6`
 
+- 캐릭터: `없음`
 **{name}**: *답장을 쳤다. '나도 고마워.' — 보내고 나서 화면을 본다. 두 줄의 대화. 웃고 있는데, 가슴이 서늘하다.*
 
 ---
@@ -22598,6 +23179,7 @@
 - 야간: true
 - 다음: `friend_7`
 
+- 캐릭터: `없음`
 **{name}**: *앞으로도 이렇게 메시지를 주고받겠지. 웃는 이모티콘을 붙이고, 가끔 밥을 먹고, 별일 없냐고 물으면 별일 없다고 답하겠지. — 손 닿을 거리에 있는데 영원히 닿지 않는 관계. 그게 친구다.*
 
 ---
@@ -22607,6 +23189,7 @@
 - 야간: true
 - 다음: `friend_8`
 
+- 캐릭터: `없음`
 **{name}**: *...이 학교에서도 말하지 못했다.*
 
 ---
@@ -22615,6 +23198,7 @@
 - 배경: `ending_friend.png`
 - 다음: `friend_9`
 
+- 캐릭터: `없음`
 **{name}**: *졸업식 날. 핸드폰 갤러리를 넘긴다. 3년 전 소정이의 사진이 있던 자리에, 이제는 그녀와 다 같이 찍은 단체 사진이 있다.*
 
 ---
@@ -22623,6 +23207,7 @@
 - 배경: `ending_friend.png`
 - 다음: `friend_10`
 
+- 캐릭터: `없음`
 **{name}**: *나는 또 그 사람의 옆자리에 서서, 친구라는 완벽한 가면을 쓴 채 웃고 있다.*
 
 ---
@@ -22631,6 +23216,7 @@
 - 배경: `ending_friend.png`
 - 다음: `friend_11`
 
+- 캐릭터: `없음`
 **{name}**: *메모장을 켠다. '나 할 말이 있는데.' — 커서가 깜빡인다. 3년 전처럼. 백스페이스를 꾹 눌러 글자를 지운다.*
 
 ---
@@ -22639,6 +23225,7 @@
 - 배경: `ending_friend.png`
 - 다음: `friend_12`
 
+- 캐릭터: `없음`
 **{name}**: *전학을 와도, 도망쳐도 — 결국 나는 아무것도 변하지 않았다.*
 
 ---
@@ -22647,6 +23234,7 @@
 - 배경: `ending_friend.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `없음`
 **시스템**: ─── FRIEND END ───
 
 ---
@@ -22656,6 +23244,7 @@
 - BGM: `night2.mp3`
 - 다음: `alone_1`
 
+- 캐릭터: `없음`
 **{name}**: *교문을 나선다. 핸드폰이 울린다. — 아무도 아니다. 배터리 부족 알림.*
 
 ---
@@ -22664,6 +23253,7 @@
 - 배경: `ending_alone.png`
 - 다음: `alone_2`
 
+- 캐릭터: `없음`
 **{name}**: *5일이었다. 누군가에게 다가갔고, 다가가지 못했고, 결국 선택하지 못했다.*
 
 ---
@@ -22672,6 +23262,7 @@
 - 배경: `ending_alone.png`
 - 다음: `alone_2_ins`
 
+- 캐릭터: `없음`
 **{name}**: *전 학교에서는 말하지 못해서 후회했다. 이 학교에서는 — 말할 사람을 찾지 못해서 후회하나? 아니. 찾았는데 고르지 못한 거다. 아니, 고를 용기가 없었던 거다.*
 
 ---
@@ -22680,6 +23271,7 @@
 - 배경: `ending_alone.png`
 - 다음: `alone_4`
 
+- 캐릭터: `없음`
 **{name}**: *창밖으로 벚꽃이 진다. 5일 전에 코끝을 스쳤던 그 벚꽃이 지금은 바람에 날려 사라지고 있다.*
 
 ---
@@ -22688,6 +23280,7 @@
 - 배경: `ending_alone.png`
 - 다음: `alone_5`
 
+- 캐릭터: `없음`
 **{name}**: *...혼자라는 건 벌이 아니다. 다만 — 조용하다. 생각보다 많이.*
 
 ---
@@ -22696,6 +23289,7 @@
 - 배경: `ending_alone.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `없음`
 **시스템**: ─── ALONE END ───
 
 ---
@@ -22720,6 +23314,7 @@
 - 플래그: `ending_perfect`, `isDating_Teacher`
 - 다음: `hidden_perfect_homeroom_1b`
 
+- 캐릭터: `없음`
 **{name}**: *졸업식이 끝났다. 빈 교실에 혼자 남았다. 칠판 위 분필 자국이 아직 지워지지 않았다.*
 
 ---
@@ -22768,6 +23363,8 @@
 - 야간: true
 - 다음: `hidden_perfect_homeroom_3b`
 
+- 배경: `room_school.png`
+- 캐릭터: `teacher_sad.png`
 **{name}**: *3년 후.*
 
 ---
@@ -22777,6 +23374,7 @@
 - 야간: true
 - 다음: `hidden_perfect_homeroom_3c`
 
+- 캐릭터: `teacher_sad.png`
 **{name}**: *카페 테라스. 벚꽃이 날린다. 들어서는데 — 창가 자리에 낯익은 갈색 웨이브 머리가 보인다. 가디건 대신 리넨 재킷.*
 
 ---
@@ -22815,6 +23413,7 @@
 - 캐릭터: `teacher_shy.png`
 - 다음: `hidden_perfect_homeroom_4b`
 
+- 배경: `cafe.png`
 **{name}**: *그 '다음'이 다다음이 되고, 또 그다음이 됐다. 목요일마다 같은 자리. 카페 직원이 '커플석이에요?' 물었을 때 둘 다 대답을 못 했다. 어느 목요일. 카페 대신 거리를 걸었다. 나란히. 그림자가 겹치는 걸 둘 다 모른 척했다.*
 
 ---
@@ -22863,6 +23462,7 @@
 - 배경: `ending_perfect_teacher.png`
 - 다음: `hidden_perfect_homeroom_4g`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *꽃다발을 건넸다.* 이거 교육적 관심 아닙니다. 제 쪽은요.
 
 ---
@@ -22871,6 +23471,7 @@
 - 배경: `ending_perfect_teacher.png`
 - 다음: `hidden_perfect_homeroom_ending_title`
 
+- 캐릭터: `teacher_normal.png`
 **담임선생님**: *꽃다발을 받아 들고, 한참을 내려다본다. 손이 떨린다. — 웃는다.* ...나도.
 
 ---
@@ -22879,11 +23480,14 @@
 - 배경: `ending_perfect_teacher.png`
 - 다음: `hidden_perfect_homeroom_5`
 
+- 캐릭터: `teacher_normal.png`
 **—**: ─── 담임선생님 PERFECT END ───
 
 ---
 
 ### `hidden_perfect_homeroom_5`
+- 배경: `teacher_room.png`
+- 캐릭터: `teacher_shy.png`
 - 다음: `hidden_perfect_homeroom_ep1`
 
 <!-- i18n -->
@@ -22894,6 +23498,7 @@
 - 배경: `ending_perfect_teacher.png`
 - 다음: `hidden_perfect_homeroom_ep2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *그날 카페에서 나가지 않았다. 해가 질 때까지. — 4년 전 교실에서 못 꺼낸 말들을 전부 꺼냈다.*
 
 ---
@@ -22901,6 +23506,8 @@
 ### `hidden_perfect_homeroom_ep2`
 - 다음: `hidden_perfect_homeroom_ep3`
 
+- 배경: `ending_perfect_teacher.png`
+- 캐릭터: `없음`
 **{name}**: *목요일의 카페는 우리 카페가 됐다. 직원이 더 이상 '커플석이에요?' 안 물어본다. 그냥 자리로 안내한다.*
 
 ---
@@ -22908,6 +23515,8 @@
 ### `hidden_perfect_homeroom_ep3`
 - 다음: `hidden_perfect_homeroom_ep4`
 
+- 배경: `ending_perfect_teacher.png`
+- 캐릭터: `없음`
 **{name}**: *원고가 출판됐다. 헌정사에 이름은 없다. 대신 한 줄. '교탁 서랍의 감상문 세 장 — 그걸로 시작된 이야기.'*
 
 ---
@@ -22915,6 +23524,8 @@
 ### `hidden_perfect_homeroom_ep4`
 - 다음: `day5_credits`
 
+- 배경: `ending_perfect_teacher.png`
+- 캐릭터: `없음`
 **{name}**: *가끔 '선생님이었는데' 하면 '학생이었는데' 하고 받는다. 둘 다 웃는다. — 지금은 그냥 두 사람이니까.*
 
 ---
@@ -22939,6 +23550,7 @@
 - 플래그: `ending_perfect`, `isDating_Nurse`
 - 다음: `hidden_perfect_nurse_2`
 
+- 캐릭터: `없음`
 **{name}**: *졸업식이 끝나고 보건실 문을 열었다. 빈 보건실. 책상 위에 밴드가 하나 놓여 있다. '집으로 와. 주소는 뒤에.' — 하트 없이.*
 
 ---
@@ -22958,6 +23570,7 @@
 - 야간: true
 - 다음: `hidden_perfect_nurse_3b`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *거실 소파에 나란히 앉았다. 창밖으로 해가 진다. 밴드 대신 손가락이 닿아 있다.*
 
 ---
@@ -22967,6 +23580,7 @@
 - 야간: true
 - 다음: `hidden_perfect_nurse_4`
 
+- 캐릭터: `nurse_normal.png`
 **보건선생님**: *기대온다.* ...이제 핑계 안 대도 돼. 환자도 아니고, 학생도 아니니까.
 
 ---
@@ -22976,6 +23590,7 @@
 - 야간: true
 - 다음: `hidden_perfect_nurse_4b`
 
+- 캐릭터: `nurse_normal.png`
 **보건선생님**: *손이 올라와 넥타이를 잡는다. 장난기가 아니다. 눈이 진지하다.* ...오늘은 안 돌려보낼 거야.
 
 ---
@@ -22984,6 +23599,7 @@
 - 배경: `ending_perfect_nurse.png`
 - 다음: `hidden_perfect_nurse_5`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *아침. 커튼 사이로 빛이 들어온다. 옆에서 숨소리가 들린다. — 밴드 하나 붙이는 데 3분 걸리던 사람이, 지금은 내 손을 잡은 채 자고 있다.*
 
 ---
@@ -22992,6 +23608,7 @@
 - 배경: `ending_perfect_nurse.png`
 - 다음: `hidden_perfect_nurse_5b`
 
+- 캐릭터: `nurse_normal.png`
 **보건선생님**: *눈을 뜬다. 웃는다.* ...어디 아파? 내가 봐줄까? *— 장난이 아니다. 이번엔.*
 
 ---
@@ -23000,6 +23617,8 @@
 - 야간: true
 - 다음: `hidden_perfect_nurse_ending_title`
 
+- 배경: `ending_perfect_nurse.png`
+- 캐릭터: `없음`
 **{name}**: *그냥 — 있고 싶은 사람. 여기에.*
 
 ---
@@ -23008,6 +23627,7 @@
 - 배경: `ending_perfect_nurse.png`
 - 다음: `hidden_perfect_nurse_ep1`
 
+- 캐릭터: `없음`
 **—**: ─── 보건선생님 PERFECT END ───
 
 ---
@@ -23016,6 +23636,7 @@
 - 배경: `ending_perfect_nurse.png`
 - 다음: `hidden_perfect_nurse_ep2`
 
+- 캐릭터: `없음`
 **{name}**: *아침. 식탁에 밴드가 붙어 있다. 오늘의 메뉴가 적혀 있다. — 이 사람의 포스트잇이다.*
 
 ---
@@ -23024,6 +23645,8 @@
 - 야간: true
 - 다음: `hidden_perfect_nurse_ep3`
 
+- 배경: `ending_perfect_nurse.png`
+- 캐릭터: `없음`
 **{name}**: *대학병원에 복직했다. 이번에는 환자들이 이름을 불러준다. — 이주원 선생님.*
 
 ---
@@ -23032,6 +23655,8 @@
 - 야간: true
 - 다음: `hidden_perfect_nurse_ep4`
 
+- 배경: `ending_perfect_nurse.png`
+- 캐릭터: `없음`
 **{name}**: *로즈마리 화분이 창가로 옮겨졌다. 해가 잘 드는 쪽. — 흰 가운 대신 앞치마를 두른 사람이 물을 주고 있다.*
 
 ---
@@ -23040,6 +23665,8 @@
 - 야간: true
 - 다음: `day5_credits`
 
+- 배경: `ending_perfect_nurse.png`
+- 캐릭터: `없음`
 **{name}**: *밴드는 아직 서랍에 있다. 쓸 일이 없어도. — 핑계가 필요 없어진 사람은, 그래도 습관을 버리지 못한다.*
 
 ---
@@ -23051,6 +23678,7 @@
 - 플래그: `ending_true_love`
 - 다음: `hidden_true_homeroom_2`
 
+- 캐릭터: `없음`
 **{name}**: *졸업식 날. — 시간이 흘렀다. 교복은 더 이상 뻣뻣하지 않다.*
 
 ---
@@ -23110,6 +23738,7 @@
 - 야간: true
 - 다음: `hidden_true_homeroom_7_ins`
 
+- 캐릭터: `teacher_shy.png`
 **{name}**: 좋아요.
 
 ---
@@ -23118,6 +23747,7 @@
 - 배경: `ending_true_teacher.png`
 - 다음: `hidden_true_homeroom_ending_title`
 
+- 캐릭터: `teacher_normal.png`
 **담임선생님**: ...선생님이 이러면 안 되는데.
 
 ---
@@ -23126,6 +23756,7 @@
 - 배경: `ending_true_teacher.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `teacher_normal.png`
 **—**: ─── 담임선생님 TRUE LOVE END ───
 
 ---
@@ -23146,6 +23777,7 @@
 - 야간: true
 - 다음: `hidden_good_homeroom_3`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *악수를 하는데 — 손에 종이가 끼워져 있다. 접힌 쪽지.*
 
 ---
@@ -23155,6 +23787,7 @@
 - 야간: true
 - 다음: `hidden_good_homeroom_4`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *학교를 나서며. '원고 완성하면 연락할게. — 첫 번째 독자에게.' 전화번호가 적혀 있다.*
 
 ---
@@ -23163,6 +23796,7 @@
 - 배경: `ending_good_teacher.png`
 - 다음: `hidden_good_homeroom_ending_title`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *선생님의 손이 — 3초쯤 더 길게 잡혀 있었다. 악수치고는 길고, 고백치고는 짧은.*
 
 ---
@@ -23171,6 +23805,7 @@
 - 배경: `ending_good_teacher.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `teacher_normal.png`
 **—**: ─── 담임선생님 GOOD END ───
 
 ---
@@ -23182,6 +23817,7 @@
 - 플래그: `ending_true_love`
 - 다음: `hidden_true_nurse_2`
 
+- 캐릭터: `없음`
 **{name}**: *졸업식 날. 교문을 나오는데 — 보건실 앞에 밴드가 붙어 있다.*
 
 ---
@@ -23251,6 +23887,7 @@
 - 야간: true
 - 다음: `hidden_true_nurse_7_ins`
 
+- 캐릭터: `nurse_normal.png`
 **보건선생님**: ...들킨 건 너가 처음이야.
 
 ---
@@ -23259,6 +23896,7 @@
 - 배경: `ending_true_nurse.png`
 - 다음: `hidden_true_nurse_ending_title`
 
+- 캐릭터: `nurse_normal.png`
 **보건선생님**: 이제는 밴드 없이도 만날 수 있어. — 핑계 없이.
 
 ---
@@ -23267,6 +23905,7 @@
 - 배경: `ending_true_nurse.png`
 - 다음: `hidden_true_nurse_8_ins`
 
+- 캐릭터: `nurse_normal.png`
 **—**: ─── 보건선생님 TRUE LOVE END ───
 
 ---
@@ -23297,6 +23936,7 @@
 - 야간: true
 - 다음: `hidden_good_nurse_3_ins`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *보건실을 나서며. 병 뚜껑 안쪽에 작은 글씨. '아프면 연락해. 안 아파도 연락해. — ♥'*
 
 ---
@@ -23305,6 +23945,7 @@
 - 배경: `ending_good_nurse.png`
 - 다음: `hidden_good_nurse_ending_title`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *하트가 — 이번에는 확실히 의료적 관심이 아니다.*
 
 ---
@@ -23313,6 +23954,7 @@
 - 배경: `ending_good_nurse.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `nurse_normal.png`
 **—**: ─── 보건선생님 GOOD END ───
 
 ---
@@ -23322,6 +23964,8 @@
 - 타입: `credits`
 - 다음: `day5_ending_restart`
 
+- 배경: `ending_perfect_seoyeon.png`
+- 캐릭터: `yuna_normal.png`
 **—**: ‹빈›
 
 ---
@@ -23331,6 +23975,8 @@
 - 선택지:
   1. "처음부터 다시 시작하기" → `index.html`
 
+- 배경: `ending_bittersweet.png`
+- 캐릭터: `yuna_normal.png`
 **시스템**: ‹빈›
 
 ---
@@ -23339,6 +23985,7 @@
 - 배경: `top_school.png`
 - 다음: `perfect_seo_2`
 
+- 캐릭터: `없음`
 **{name}**: *처음으로 안경을 벗고 — 울고 있다.*
 
 ---
@@ -23347,6 +23994,7 @@
 - 배경: `ending_perfect_seoyeon.png`
 - 다음: `perfect_epilogue_1_seo`
 
+- 캐릭터: `seyoun_laugh.png`
 **{name}**: *옥상 바람이 분다.*
 
 ---
@@ -23355,6 +24003,7 @@
 - 배경: `seyoun_room.png`
 - 다음: `true_seo_7b`
 
+- 캐릭터: `seyoun_shy.png`
 **{name}**: *새끼손가락을 걸었다. Day 1의 습관, Day 4의 약속, 그리고 지금. — 같은 손가락, 세 번째 의미.*
 
 ---
@@ -23363,6 +24012,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `true_yuna_2_ins2`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *유나가 다락방의 작은 사다리를 올라간다. 위로 향하는 해치가 있다. — 열리자 바람이 불어온다.*
 
 ---
@@ -23371,6 +24021,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `true_yuna_2_ins3`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *다락방 위는 옥상이었다. 도서관 별관의 옥상. — 아무도 모르는 비밀 통로.*
 
 ---
@@ -23379,6 +24030,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `true_yuna_3`
 
+- 캐릭터: `yuna_normal.png`
 **{name}**: *유나가 난간에 기대어 선다. 별이 보인다.*
 
 ---
@@ -23387,6 +24039,7 @@
 - 배경: `yuna_hideout.png`
 - 다음: `true_yuna_6`
 
+- 캐릭터: `yuna_smile.png`
 **{name}**: *유나가 잠깐 멈춘다. — 웃는다. 처음 보는, 소리 없는 웃음.*
 
 ---
@@ -23395,6 +24048,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_5_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *졸업식 날. — 시간이 흘렀다.*
 
 ---
@@ -23403,6 +24057,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_6`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *교복은 이제 더 이상 뻣뻣하지 않다. 아니, 오늘 벗는 날이다.*
 
 ---
@@ -23411,6 +24066,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_3`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *가디건도 클립보드도 없다. 편안한 니트에 롱스커트. — 사복 차림이다.*
 
 ---
@@ -23419,6 +24075,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_3_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 감사합니다.
 
 ---
@@ -23436,6 +24093,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_4_ins2`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *무의식이었다. — 졸업한 순간, 직함이 벗겨졌다.*
 
 ---
@@ -23444,6 +24102,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_4_ins3`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *담임이 봉투를 꺼낸다. 이번에는 갈색 봉투가 아니라 — 흰 봉투.*
 
 ---
@@ -23461,6 +24120,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_4_ins5`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: 제 감상문이 도움이 됐어요?
 
 ---
@@ -23478,6 +24138,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_true_homeroom_4_ins7`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *담임이 창밖을 본다. 벚꽃이 지고 있다.*
 
 ---
@@ -23495,6 +24156,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_homeroom_7`
 
+- 캐릭터: `teacher_shy.png`
 **{name}**: *주스에서 커피로. — 학생에서 어른으로. 선을 넘는 게 아니라, 선이 사라진 거다.*
 
 ---
@@ -23503,6 +24165,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_homeroom_7_ins2`
 
+- 캐릭터: `teacher_shy.png`
 **{name}**: *담임이 웃는다. 건조하지 않은, 7년의 미완성 원고를 완성한 사람의 웃음.*
 
 ---
@@ -23520,6 +24183,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_homeroom_8`
 
+- 캐릭터: `teacher_normal.png`
 **{name}**: *마지막 한 번. 그리고 고쳐지는 습관. — 7년간의 '선생님'이 끝나고, 이름을 부르는 날이 왔다.*
 
 ---
@@ -23528,6 +24192,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_nurse_2_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *선생님이 아니라 그냥 — 여자다.*
 
 ---
@@ -23545,6 +24210,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_nurse_3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 감사합니다.
 
 ---
@@ -23562,6 +24228,7 @@
 - 배경: `ending_true_nurse.png`
 - 다음: `hidden_true_nurse_8_ins3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *졸업이라는 날짜가 선을 지운다. — 보건실이 아닌 카페에서, 선생님이 아닌 사람과.*
 
 ---
@@ -23570,6 +24237,7 @@
 - 배경: `ending_true_nurse.png`
 - 다음: `hidden_true_nurse_8_ins4`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *보건선생님이 나를 본다. 장난기가 없다.*
 
 ---
@@ -23587,6 +24255,7 @@
 - 배경: `ending_true_nurse.png`
 - 다음: `hidden_true_nurse_8_ins6`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 어지러워서요.
 
 ---
@@ -23604,6 +24273,7 @@
 - 배경: `ending_true_nurse.png`
 - 다음: `day5_credits`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 알아요.
 
 ---
@@ -23612,6 +24282,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_nurse_5_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *목소리가 한 톤 낮아졌다. 장난기가 완전히 사라졌다. — 이게 이 사람의 진심이다.*
 
 ---
@@ -23638,6 +24309,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_nurse_5_ins5`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 밴드 붙이는 데 3분 걸리는 건 정성이 아니잖아요.
 
 ---
@@ -23646,6 +24318,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_nurse_6`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *보건선생님이 잠깐 멈춘다. — 그리고 웃는다. 장난이 아닌 웃음.*
 
 ---
@@ -23654,6 +24327,7 @@
 - 배경: `nurse_home_event1.png`
 - 다음: `hidden_true_nurse_7_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *보건선생님이 손을 뻗어 내 손등의 밴드를 만진다. 어제 붙여준 그 밴드.*
 
 ---
@@ -23671,6 +24345,7 @@
 - 배경: `nurse_home_event1.png`
 - 다음: `hidden_true_nurse_8`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *핑계가 필요했던 사람. — 선생님이라는 직함이 핑계이자 벽이었다. 그 벽이 오늘 사라졌다.*
 
 ---
@@ -23679,6 +24354,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_2_ins2`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: 의료적 관심이에요?
 
 ---
@@ -23696,6 +24372,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_3`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *'이번에는 진짜로'. — 그동안은 아니었다는 뜻이다.*
 
 ---
@@ -23704,6 +24381,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_good_nurse_4`
 
+- 캐릭터: `nurse_normal.png`
 **{name}**: *보건실을 나왔다. 하트가 — 이번에는 확실히 의료적 관심이 아니다.*
 
 ---
@@ -23712,6 +24390,7 @@
 - 배경: `park.png`
 - 다음: `good_1_seo_ins2`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *벚꽃이 서연의 머리카락에 내려앉는다. 털어줄까 말까 고민하는데 — 서연이 먼저 머리를 기울인다.*
 
 ---
@@ -23720,6 +24399,7 @@
 - 배경: `park.png`
 - 다음: `good_1_seo_ins3`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *완벽한 척하지만 나도 완벽하지 않았다.*
 
 ---
@@ -23728,6 +24408,7 @@
 - 배경: `park.png`
 - 다음: `good_2_seo`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *벚꽃은 내년에도 핀다. 나란히 걸었다.*
 
 ---
@@ -23736,6 +24417,7 @@
 - 배경: `park.png`
 - 다음: `good_2_yuna`
 
+- 캐릭터: `yuna_smile.png`
 **{name}**: *사라진 사람의 그림자를 쫓고 있었다.*
 
 ---
@@ -23744,6 +24426,7 @@
 - 배경: `cafe.png`
 - 다음: `bitter_seo_3`
 
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *카페에서 만난 서연. 안경 너머 시선이 건조하다. 예전의 여유도, 떨림도 없다. 그냥 — 정리하러 온 사람의 눈이다.*
 
 ---
@@ -23752,6 +24435,7 @@
 - 배경: `ending_bittersweet.png`
 - 다음: `bitter_epilogue_1`
 
+- 캐릭터: `dain_normal.png`
 **{name}**: *교문 밖으로 나왔다. 비가 내린다. — 우산은 없다. 벚꽃이 비에 젖어 발밑에 붙어 있다.*
 
 ---
@@ -23760,6 +24444,7 @@
 - 배경: `ending_harem.png`
 - 다음: `harem_2`
 
+- 캐릭터: `없음`
 **{name}**: *유나가 고개를 숙였다. 한참을. 그리고 올려다봤을 때 눈이 마른 채로 웃고 있었다. ...멍청해. 그 한마디에 두 문장 분량의 감정이 들어 있었다.*
 
 ---
@@ -23768,6 +24453,7 @@
 - 배경: `ending_alone.png`
 - 다음: `alone_3`
 
+- 캐릭터: `없음`
 **{name}**: *창밖으로 벚꽃이 진다. 5일 전에 코끝을 스쳤던 그 벚꽃이 지금은 바람에 날려 사라지고 있다.*
 
 ---
