@@ -2,7 +2,7 @@
 # 시나리오 파일의 노드 연결 상태를 빠르게 체크
 
 param(
-    [string]$Pattern = "ko_*.js"
+    [string]$Pattern = "day*.js"
 )
 
 $scenarioPath = Join-Path $PSScriptRoot "..\assets\js\scenario"
@@ -10,107 +10,236 @@ $scenarioPath = Join-Path $PSScriptRoot "..\assets\js\scenario"
 Write-Host "`n=== Cupid Scenario Node Checker ===" -ForegroundColor Cyan
 Write-Host "Checking: $Pattern`n" -ForegroundColor Gray
 
-$files = Get-ChildItem -Path $scenarioPath -Filter $Pattern
+$files = Get-ChildItem -Path $scenarioPath -Filter $Pattern | Sort-Object Name
 
-# 1단계: 모든 파일의 노드 ID를 먼저 수집 (크로스 파일 참조 검증용)
-Write-Host "Building global node index..." -ForegroundColor Gray
-$globalNodeIds = @()
-foreach ($file in $files) {
-    $content = Get-Content $file.FullName -Raw -Encoding UTF8
-    $nodeIds = [regex]::Matches($content, '"([^"]+)":\s*\{') | ForEach-Object { $_.Groups[1].Value }
-    $globalNodeIds += $nodeIds
+if ($files.Count -eq 0) {
+    Write-Host "No scenario files matched the pattern." -ForegroundColor Yellow
+    return
 }
-Write-Host "Total global nodes: $($globalNodeIds.Count)`n" -ForegroundColor Green
 
-# 특수 참조 (게임 엔진이 별도로 처리하는 값들)
-$specialReferences = @('index.html', 'index-en.html')
+$script = @'
+const fs = require('fs');
+const path = require('path');
 
-foreach ($file in $files) {
+const scenarioPath = process.argv[2];
+const pattern = process.argv[3];
+
+function globToRegex(glob) {
+    const escaped = glob.replace(/[.+^${}()|[\]\\]/g, '\\$&');
+    return new RegExp('^' + escaped.replace(/\*/g, '.*').replace(/\?/g, '.') + '$');
+}
+
+function collectTargets(scene) {
+    const targets = [];
+    const addTarget = (value) => {
+        if (typeof value === 'string' && value.trim()) targets.push(value);
+    };
+
+    addTarget(scene.next);
+    addTarget(scene.fallback);
+
+    (scene.choices || []).forEach(choice => {
+        addTarget(choice.next);
+        addTarget(choice.fallback);
+        (choice.affinityBranches || []).forEach(branch => addTarget(branch.next));
+    });
+
+    (scene.branches || []).forEach(branch => addTarget(branch.next));
+    (scene.affinityBranches || []).forEach(branch => addTarget(branch.next));
+
+    return targets;
+}
+
+const fileRegex = globToRegex(pattern);
+const files = fs.readdirSync(scenarioPath)
+    .filter(file => fileRegex.test(file))
+    .sort((left, right) => left.localeCompare(right));
+
+if (files.length === 0) {
+    console.log('[NO_FILES] Pattern matched no scenario files.');
+    process.exit(0);
+}
+
+const allScenes = new Map();
+const fileSceneIds = new Map();
+const loadErrors = [];
+
+for (const file of files) {
+    const localScenario = {};
+    for (let day = 0; day <= 5; day++) localScenario[day] = {};
+
+    try {
+        const source = fs.readFileSync(path.join(scenarioPath, file), 'utf8');
+        new Function('SCENARIO', 'Object', source)(localScenario, Object);
+    } catch (error) {
+        loadErrors.push({ file, message: error.message });
+        continue;
+    }
+
+    const sceneIds = [];
+    for (const [day, scenes] of Object.entries(localScenario)) {
+        for (const [sceneId, scene] of Object.entries(scenes)) {
+            allScenes.set(sceneId, { day: Number(day), file, scene });
+            sceneIds.push(sceneId);
+        }
+    }
+
+    fileSceneIds.set(file, sceneIds);
+}
+
+const allSceneIds = new Set(allScenes.keys());
+const globalReferences = new Set();
+for (const { scene } of allScenes.values()) {
+    for (const target of collectTargets(scene)) globalReferences.add(target);
+}
+
+const entryScenes = new Set([
+    'start', 'morning2_start', 'morning3_start', 'morning4_start', 'morning5_start',
+    'lunch_start', 'lunch2_start', 'lunch3_start', 'lunch4_start', 'lunch5_start',
+    'after_start', 'after2_start', 'after3_start', 'after4_start', 'after5_start',
+    'night_start', 'night2_start', 'night3_start', 'night4_start', 'night5_start'
+]);
+
+console.log('GLOBAL_NODE_COUNT=' + allSceneIds.size);
+for (const error of loadErrors) {
+    console.log('LOAD_ERROR=' + error.file + '|' + error.message);
+}
+
+for (const file of files) {
+    const sceneIds = fileSceneIds.get(file) || [];
+    const references = [];
+    for (const sceneId of sceneIds) {
+        const scene = allScenes.get(sceneId)?.scene;
+        if (!scene) continue;
+        references.push(...collectTargets(scene));
+    }
+
+    const broken = [...new Set(references.filter(target => !target.endsWith('.html') && !allSceneIds.has(target)))];
+    const ghost = sceneIds.filter(sceneId => !entryScenes.has(sceneId) && !globalReferences.has(sceneId));
+    const deadEnds = sceneIds.filter(sceneId => {
+        const scene = allScenes.get(sceneId)?.scene;
+        if (!scene) return false;
+        const hasTransition = Boolean(scene.next || scene.fallback || (scene.choices && scene.choices.length) || (scene.branches && scene.branches.length) || (scene.affinityBranches && scene.affinityBranches.length));
+        return !hasTransition && scene.type !== 'credits' && scene.type !== 'input' && scene.type !== 'free_talk';
+    });
+
+    console.log('FILE=' + file);
+    console.log('TOTAL=' + sceneIds.length);
+    console.log('REFERENCES=' + references.length);
+    console.log('GHOST=' + ghost.join(','));
+    console.log('BROKEN=' + broken.join(','));
+    console.log('DEAD=' + deadEnds.join(','));
+}
+
+console.log('ALL_NODES_BEGIN');
+for (const file of files) {
+    const sceneIds = fileSceneIds.get(file) || [];
+    console.log('=== ' + file + ' ===');
+    sceneIds.forEach(sceneId => console.log(sceneId));
+}
+console.log('ALL_NODES_END');
+'@
+
+$result = $script | node - $scenarioPath $Pattern
+
+$globalCount = 0
+$currentFile = $null
+$captureAllNodes = $false
+$allNodeLines = New-Object System.Collections.Generic.List[string]
+$summary = @{}
+
+foreach ($line in $result) {
+    if ($line -eq 'ALL_NODES_BEGIN') {
+        $captureAllNodes = $true
+        continue
+    }
+
+    if ($line -eq 'ALL_NODES_END') {
+        $captureAllNodes = $false
+        continue
+    }
+
+    if ($captureAllNodes) {
+        $allNodeLines.Add($line)
+        continue
+    }
+
+    if ($line.StartsWith('GLOBAL_NODE_COUNT=')) {
+        $globalCount = [int]$line.Substring('GLOBAL_NODE_COUNT='.Length)
+        continue
+    }
+
+    if ($line.StartsWith('LOAD_ERROR=')) {
+        $payload = $line.Substring('LOAD_ERROR='.Length)
+        $parts = $payload -split '\|', 2
+        Write-Host "[LOAD ERROR] $($parts[0]): $($parts[1])" -ForegroundColor Red
+        continue
+    }
+
+    if ($line.StartsWith('FILE=')) {
+        $currentFile = $line.Substring('FILE='.Length)
+        $summary[$currentFile] = [ordered]@{ Total = 0; References = 0; Ghost = @(); Broken = @(); Dead = @() }
+        continue
+    }
+
+    if (-not $currentFile) { continue }
+
+    if ($line.StartsWith('TOTAL=')) {
+        $summary[$currentFile].Total = [int]$line.Substring('TOTAL='.Length)
+    } elseif ($line.StartsWith('REFERENCES=')) {
+        $summary[$currentFile].References = [int]$line.Substring('REFERENCES='.Length)
+    } elseif ($line.StartsWith('GHOST=')) {
+        $payload = $line.Substring('GHOST='.Length)
+        $summary[$currentFile].Ghost = if ($payload) { $payload -split ',' } else { @() }
+    } elseif ($line.StartsWith('BROKEN=')) {
+        $payload = $line.Substring('BROKEN='.Length)
+        $summary[$currentFile].Broken = if ($payload) { $payload -split ',' } else { @() }
+    } elseif ($line.StartsWith('DEAD=')) {
+        $payload = $line.Substring('DEAD='.Length)
+        $summary[$currentFile].Dead = if ($payload) { $payload -split ',' } else { @() }
+    }
+}
+
+Write-Host "Building global node index..." -ForegroundColor Gray
+Write-Host "Total global nodes: $globalCount`n" -ForegroundColor Green
+
+foreach ($file in $files | Sort-Object Name) {
+    $item = $summary[$file.Name]
+    if (-not $item) { continue }
+
     Write-Host "`n[$($file.Name)]" -ForegroundColor Yellow
-    
-    $content = Get-Content $file.FullName -Raw -Encoding UTF8
-    
-    # 모든 노드 ID 추출 (현재 파일)
-    $nodeIds = [regex]::Matches($content, '"([^"]+)":\s*\{') | ForEach-Object { $_.Groups[1].Value }
-    
-    # next로 참조되는 노드 추출
-    $nextNodes = [regex]::Matches($content, 'next:\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value }
-    
-    # 모든 참조 수집 (choices와 affinityBranches 포함)
-    $allReferences = @()
-    $allReferences += $nextNodes
-    $allReferences += [regex]::Matches($content, 'next:\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value }
-    
-    Write-Host "  Total Nodes: $($nodeIds.Count)" -ForegroundColor White
-    Write-Host "  Referenced Nodes: $($allReferences.Count)" -ForegroundColor White
-    
-    # 유령 노드 찾기 (전역에서 참조되지 않는 노드)
-    $unreferenced = $nodeIds | Where-Object { 
-        $node = $_
-        ($node -ne "start") -and 
-        ($allReferences -notcontains $node) -and
-        ($node -notmatch '(lunch_time|after_school|end|day\d+_)')
-    }
-    
-    if ($unreferenced) {
-        Write-Host "`n  Ghost Nodes (unreferenced in current file):" -ForegroundColor Magenta
-        $unreferenced | ForEach-Object {
-            Write-Host "    - $_" -ForegroundColor Red
+    Write-Host "  Total Nodes: $($item.Total)" -ForegroundColor White
+    Write-Host "  Referenced Nodes: $($item.References)" -ForegroundColor White
+
+    if ($item.Ghost.Count -gt 0) {
+        Write-Host "`n  Ghost Nodes (unreferenced globally):" -ForegroundColor Magenta
+        foreach ($node in $item.Ghost) {
+            Write-Host "    - $node" -ForegroundColor Red
         }
     }
-    
-    # 깨진 참조 찾기 (전역 노드 목록에도 없고 특수 참조도 아닌 것)
-    $broken = $nextNodes | Where-Object {
-        $next = $_
-        ($globalNodeIds -notcontains $next) -and
-        ($specialReferences -notcontains $next) -and
-        ($next -notmatch '(lunch_time|after_school|night_|day\d+_)')
-    } | Select-Object -Unique
-    
-    if ($broken) {
+
+    if ($item.Broken.Count -gt 0) {
         Write-Host "`n  Broken References (not found globally):" -ForegroundColor Red
-        $broken | ForEach-Object {
-            Write-Host "    - $_" -ForegroundColor Red
+        foreach ($node in $item.Broken) {
+            Write-Host "    - $node" -ForegroundColor Red
         }
     }
-    
-    # 끊긴 노드 찾기 (next가 없는 노드)
-    $deadEnds = $nodeIds | Where-Object {
-        $node = $_
-        $nodePattern = [regex]::Escape($node)
-        $nodeBlock = [regex]::Match($content, "`"$nodePattern`":\s*\{([^}]*(?:\{[^}]*\}[^}]*)*)\}").Groups[1].Value
-        
-        ($nodeBlock -notmatch 'next:') -and
-        ($nodeBlock -notmatch 'choices:') -and
-        ($node -notmatch '(lunch_time|after_school|end|ending|day\d+_end)')
-    }
-    
-    if ($deadEnds) {
+
+    if ($item.Dead.Count -gt 0) {
         Write-Host "`n  Dead Ends (no next node):" -ForegroundColor Yellow
-        $deadEnds | ForEach-Object {
-            Write-Host "    - $_" -ForegroundColor Yellow
+        foreach ($node in $item.Dead) {
+            Write-Host "    - $node" -ForegroundColor Yellow
         }
     }
-    
-    if (-not $unreferenced -and -not $broken -and -not $deadEnds) {
+
+    if ($item.Ghost.Count -eq 0 -and $item.Broken.Count -eq 0 -and $item.Dead.Count -eq 0) {
         Write-Host "  OK - No issues found!" -ForegroundColor Green
     }
 }
 
 Write-Host "`n=== Check Complete ===" -ForegroundColor Cyan
 
-# Node 목록을 파일로 출력
 Write-Host "`nGenerating all_nodes.txt..." -ForegroundColor Gray
 $allNodesPath = Join-Path (Split-Path $scenarioPath) "all_nodes.txt"
-$allContent = ""
-
-foreach ($file in $files) {
-    $content = Get-Content $file.FullName -Raw -Encoding UTF8
-    $nodeIds = [regex]::Matches($content, '"([^"]+)":\s*\{') | ForEach-Object { $_.Groups[1].Value }
-    
-    $allContent += "`n=== $($file.Name) ===`n"
-    $allContent += ($nodeIds -join "`n") + "`n"
-}
-
-$allContent | Out-File -FilePath $allNodesPath -Encoding UTF8
+$allNodeLines | Out-File -FilePath $allNodesPath -Encoding UTF8
 Write-Host "Saved: $allNodesPath`n" -ForegroundColor Green

@@ -10,7 +10,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
 Object.assign(SCENARIO[5], {
     "ending_start": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "night": true,
         "branches": [
             { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
@@ -217,19 +217,16 @@ Object.assign(SCENARIO[5], {
     },
     "perfect_epilogue_bridge_seo": {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
         "night": true,
         "next": "perfect_epilogue_2_seo"
     },
     "perfect_epilogue_bridge_yuna": {
         "background": "assets/images/background/ending_perfect_yuna.png",
-        "character": "assets/images/characters/yuna_shy.png",
         "night": true,
         "next": "perfect_epilogue_2_yuna"
     },
     "perfect_epilogue_bridge_dain": {
         "background": "assets/images/background/ending_perfect_dain.png",
-        "character": "assets/images/characters/dain_shy.png",
         "night": true,
         "next": "perfect_epilogue_2_dain"
     },
@@ -358,7 +355,6 @@ Object.assign(SCENARIO[5], {
     },
     "bitter_epilogue_3": {
         "background": "assets/images/background/ending_bittersweet.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "night": true,
         "next": "day5_credits"
     },
@@ -839,7 +835,6 @@ Object.assign(SCENARIO[5], {
     },
     "mayhem_7": {
         "background": "assets/images/background/ending_mayhem.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "day5_credits"
     },
     "day5_ending_harem": {
@@ -1444,14 +1439,13 @@ Object.assign(SCENARIO[5], {
     },
     "day5_credits": {
         "background": "assets/images/background/ending_perfect_seoyeon.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": null,
         "night": true,
         "type": "credits",
         "next": "day5_ending_restart"
     },
     "day5_ending_restart": {
         "background": "assets/images/background/ending_bittersweet.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "night": true,
         "choices": [
             { "next": "index.html" }

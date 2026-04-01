@@ -17,7 +17,7 @@ Object.assign(SCENARIO[4], {
     },
     "day4_night_branch": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": null,
         "night": true,
         "branches": [
             { "condition": "day4_waited", "next": "day4_night_regret" },
