@@ -22879,7 +22879,7 @@
 - 배경: `ending_perfect_teacher.png`
 - 다음: `hidden_perfect_homeroom_5`
 
-****: ─── 담임선생님 PERFECT END ───
+**—**: ─── 담임선생님 PERFECT END ───
 
 ---
 
@@ -23008,7 +23008,7 @@
 - 배경: `ending_perfect_nurse.png`
 - 다음: `hidden_perfect_nurse_ep1`
 
-****: ─── 보건선생님 PERFECT END ───
+**—**: ─── 보건선생님 PERFECT END ───
 
 ---
 
@@ -23126,7 +23126,7 @@
 - 배경: `ending_true_teacher.png`
 - 다음: `day5_credits`
 
-****: ─── 담임선생님 TRUE LOVE END ───
+**—**: ─── 담임선생님 TRUE LOVE END ───
 
 ---
 
@@ -23171,7 +23171,7 @@
 - 배경: `ending_good_teacher.png`
 - 다음: `day5_credits`
 
-****: ─── 담임선생님 GOOD END ───
+**—**: ─── 담임선생님 GOOD END ───
 
 ---
 
@@ -23267,7 +23267,7 @@
 - 배경: `ending_true_nurse.png`
 - 다음: `hidden_true_nurse_8_ins`
 
-****: ─── 보건선생님 TRUE LOVE END ───
+**—**: ─── 보건선생님 TRUE LOVE END ───
 
 ---
 
@@ -23313,7 +23313,7 @@
 - 배경: `ending_good_nurse.png`
 - 다음: `day5_credits`
 
-****: ─── 보건선생님 GOOD END ───
+**—**: ─── 보건선생님 GOOD END ───
 
 ---
 
