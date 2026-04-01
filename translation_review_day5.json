@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "generated": "2026-04-01T14:59:30.047Z",
+    "generated": "2026-04-01T15:01:28.279Z",
     "day": 5,
     "total_nodes": 517,
     "lang_avg": {
-      "en": 9.9,
-      "ja": 9.9,
-      "es": 9.9,
-      "fr": 9.9,
-      "de": 9.9
+      "en": 10,
+      "ja": 10,
+      "es": 10,
+      "fr": 10,
+      "de": 10
     },
     "all_reviewed": true
   },
@@ -5295,10 +5295,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_2_lunch.json#tour_dain_11",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_2_lunch.json#tour_dain_11",
@@ -5309,26 +5307,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day5_2_lunch.json#tour_dain_11",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_2_lunch.json#tour_dain_11",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_2_lunch.json#tour_dain_11",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "tour_dain_12": {
@@ -10029,42 +10021,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#bitter_epilogue_3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#bitter_epilogue_3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#bitter_epilogue_3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#bitter_epilogue_3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#bitter_epilogue_3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "true_seo_1": {
@@ -11479,42 +11461,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#true_epilogue_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#true_epilogue_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#true_epilogue_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#true_epilogue_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#true_epilogue_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "day5_ending_good": {
@@ -12569,42 +12541,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_5_cg_seo",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_5_cg_seo",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_5_cg_seo",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_5_cg_seo",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_5_cg_seo",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "good_5_cg_yuna": {
@@ -12615,42 +12577,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_5_cg_yuna",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_5_cg_yuna",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_5_cg_yuna",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_5_cg_yuna",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_5_cg_yuna",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "good_5_cg_dain": {
@@ -12661,42 +12613,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_5_cg_dain",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_5_cg_dain",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_5_cg_dain",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_5_cg_dain",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_5_cg_dain",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "day5_ending_mayhem": {
@@ -12959,42 +12901,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#mayhem_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#mayhem_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#mayhem_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#mayhem_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#mayhem_7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "day5_ending_harem": {
@@ -13293,42 +13225,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#harem_8",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#harem_8",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#harem_8",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#harem_8",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#harem_8",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "day5_ending_confess_fail": {
@@ -14095,42 +14017,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#friend_12",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#friend_12",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#friend_12",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#friend_12",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#friend_12",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "day5_ending_alone": {
@@ -14321,42 +14233,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#alone_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#alone_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#alone_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#alone_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#alone_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "hidden_perfect_homeroom_check": {

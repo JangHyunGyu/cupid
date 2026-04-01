@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-04-01T14:59:28.115Z",
+    "generated": "2026-04-01T15:01:26.455Z",
     "day": 1,
     "total_nodes": 389,
     "lang_avg": {
@@ -6359,10 +6359,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_yuna_4",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_yuna_4",
@@ -6373,26 +6371,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day1_2_lunch.json#lunch_yuna_4",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_2_lunch.json#lunch_yuna_4",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_yuna_4",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "lunch_yuna_5": {
