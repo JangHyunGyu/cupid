@@ -237,7 +237,7 @@
     },
     "classroom_seat_1": {
         "name": "{name}",
-        "text": "*El tutor señala un asiento vacío.*"
+        "text": "*La profesora señala un asiento vacío.*"
     },
     "classroom_seat_2": {
         "name": "{name}",

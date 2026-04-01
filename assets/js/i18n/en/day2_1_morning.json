@@ -1,430 +1,430 @@
 {
-    "morning2_start": {
-        "name": "{name}",
-        "text": "*Day two. The uniform feels a bit more comfortable than yesterday. — So do my steps.*"
-    },
-    "morning2_start_2": {
-        "name": "{name}",
-        "text": "*The moment I open the classroom door — something slams into my back.*"
-    },
-    "morning2_dain_1": {
-        "name": "Dain",
-        "text": "You're here?! Good morning!!"
-    },
-    "morning2_dain_2": {
-        "name": "{name}",
-        "text": "...You nearly broke my spine."
-    },
-    "morning2_dain_3": {
-        "name": "Dain",
-        "text": "Haha, from that?! You need to work out more!"
-    },
-    "morning2_dain_4": {
-        "name": "{name}",
-        "text": "Isn't it a bit early for this much energy?"
-    },
-    "morning2_dain_5": {
-        "name": "Dain",
-        "text": "This is normal! You're the one running low!"
-    },
-    "morning2_dain_6": {
-        "name": "{name}",
-        "text": "*If there's a world where this volume at 8 AM is normal, Dain would be its president.*"
-    },
-    "morning2_note_1": {
-        "name": "{name}",
-        "text": "*I'm about to sit down when — I spot a folded note on my desk.*"
-    },
-    "morning2_note_2": {
-        "name": "{name}",
-        "text": "*'Come to the library annex at lunch. — Yuna'*"
-    },
-    "morning2_note_3": {
-        "name": "{name}",
-        "text": "*Same neat handwriting as yesterday. Short. And the location is specific. — The library 'annex'? That's a different place from yesterday.*"
-    },
-    "morning2_seo_1": {
-        "name": "{name}",
-        "text": "*I'm about to pocket the note when — a familiar voice from the hallway.*"
-    },
-    "morning2_seo_2": {
-        "name": "Seoyeon",
-        "text": "Did you sleep well?"
-    },
-    "morning2_seo_3": {
-        "name": "{name}",
-        "text": "*Seoyeon passes through the hallway, glancing into the classroom. Her gaze locks precisely onto me.*"
-    },
-    "morning2_seo_4": {
-        "name": "{name}",
-        "text": "The student council president comes all the way to the classroom to say hi?"
-    },
-    "morning2_seo_5": {
-        "name": "Seoyeon",
-        "text": "I was just passing by. — Have a fun day today too."
-    },
-    "morning2_minsu_1": {
-        "name": "{name}",
-        "text": "*She didn't stop walking. But her eyes were definitely on me.*"
-    },
-    "morning2_minsu_1b": {
-        "name": "{name}",
-        "text": "*I'm staring at the hallway where Seoyeon disappeared — when I hear a chair scraping behind me.*"
-    },
-    "morning2_minsu_2": {
-        "name": "{name}",
-        "text": "*Minsu turns around from the seat in front of me.*"
-    },
-    "morning2_minsu_3": {
-        "name": "Minsu",
-        "text": "Dude, two days as a transfer student and the student council president comes to greet you? I've been here a year and she won't even make eye contact."
-    },
-    "morning2_dain_claim_1": {
-        "name": "{name}",
-        "text": "Maybe you're just unpopular."
-    },
-    "morning2_dain_claim_2": {
-        "name": "Minsu",
-        "text": "...That's true, but that's not the point."
-    },
-    "morning2_dain_claim_3": {
-        "name": "{name}",
-        "text": "*Dain watches Seoyeon walk away.*"
-    },
-    "morning2_dain_claim_4": {
-        "name": "Dain",
-        "text": "The student council president is interested in the transfer student too? Popular guy!"
-    },
-    "morning2_dain_claim_5": {
-        "name": "{name}",
-        "text": "'Our' transfer student?"
-    },
-    "morning2_dain_claim_6": {
-        "name": "Dain",
-        "text": "I found you first, so you're our transfer student! Dibs! I called dibs!"
-    },
-    "morning2_break_transition": {
-        "name": "{name}",
-        "text": "*Break time. Stepped out into the hallway.*"
-    },
-    "morning2_break_1": {
-        "name": "{name}",
-        "text": "*Can you call dibs on a person? — But somehow I can't be bothered to argue.*"
-    },
-    "morning2_seo_dust_1": {
-        "name": "{name}",
-        "text": "*Break after first period. I pass Seoyeon in the hallway. She stops. Looks at my shoulder.*"
-    },
-    "morning2_seo_dust_2": {
-        "name": "Seoyeon",
-        "text": "Hold on."
-    },
-    "morning2_seo_dust_3": {
-        "name": "{name}",
-        "text": "*Seoyeon's hand reaches toward my shoulder. She brushes something off. Naturally. Too naturally.*"
-    },
-    "morning2_seo_dust_4": {
-        "name": "Seoyeon",
-        "text": "You had something on your clothes."
-    },
-    "morning2_seo_dust_5": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "morning2_seo_dust_6": {
-        "name": "Seoyeon",
-        "text": "What? It was just dust."
-    },
-    "morning2_dain_react_1": {
-        "name": "{name}",
-        "text": "*The touch on my shoulder registers a beat too late. — Probably not because of the dust.*"
-    },
-    "morning2_dain_react_2": {
-        "name": "{name}",
-        "text": "*Seoyeon walks away like nothing happened. Dain's voice comes from behind.*"
-    },
-    "morning2_dain_react_3": {
-        "name": "Dain",
-        "text": "Hey! What was that?! Did she just touch your shoulder?!"
-    },
-    "morning2_dain_react_4": {
-        "name": "{name}",
-        "text": "She was brushing off dust."
-    },
-    "morning2_dain_react_5": {
-        "name": "Dain",
-        "text": "Dust... was there actually dust?!"
-    },
-    "morning2_dain_react_6": {
-        "name": "{name}",
-        "text": "*There probably was. Maybe. — But I don't think that's the point.*"
-    },
-    "morning2_haeun_1": {
-        "name": "{name}",
-        "text": "*In the hallway where Seoyeon disappeared — a girl wearing a student council bracelet approaches.*"
-    },
-    "morning2_haeun_2": {
-        "name": "Haeun",
-        "text": "Um, you're the transfer student, right? I'm Haeun, the student council vice president."
-    },
-    "morning2_haeun_3": {
-        "name": "{name}",
-        "text": "Oh, yeah."
-    },
-    "morning2_haeun_4": {
-        "name": "Haeun",
-        "text": "The student council president... I mean, Seoyeon sunbae seems a bit different lately."
-    },
-    "morning2_haeun_5": {
-        "name": "{name}",
-        "text": "Different how?"
-    },
-    "morning2_haeun_6": {
-        "name": "Haeun",
-        "text": "She doesn't usually do that. Approaching someone first... I've known her for a year, and this is the first time."
-    },
-    "morning2_haeun_6b": {
-        "name": "Haeun",
-        "text": "So I have a favor to ask. — Please don't throw her off balance. She's only just barely holding it together right now."
-    },
-    "morning2_haeun_6c": {
-        "name": "{name}",
-        "text": "*She said it was a favor, but those eyes were a warning. — This girl genuinely cares about Seoyeon.*"
-    },
-    "morning2_haeun_7": {
-        "name": "{name}",
-        "text": "*Haeun gives a slight bow and leaves.*"
-    },
-    "morning2_end": {
-        "name": "{name}",
-        "text": "*Someone who never once approached anyone first in a whole year — came to me first? What does that mean?*"
-    },
-    "hidden_homeroom_d2_1": {
-        "name": "Homeroom Teacher",
-        "text": "Oh, {name}. Come to the faculty office for a sec."
-    },
-    "hidden_homeroom_d2_2": {
-        "name": "{name}",
-        "text": "*She says it's administrative. She always wraps her interest in official business.*"
-    },
-    "hidden_homeroom_d2_walk": {
-        "name": "{name}",
-        "text": "*Followed the teacher into the faculty office.*"
-    },
-    "hidden_homeroom_d2_3": {
-        "name": "Homeroom Teacher",
-        "text": "Looked at your old transcript. Your Korean grades were solid. You like reading?"
-    },
-    "hidden_homeroom_d2_choice1": {
-        "name": "{name}",
-        "text": "*Reading. So she even checks report cards.*",
-        "choices": [
-            "What about you? What do you read?",
-            "Yeah, I like reading"
-        ]
-    },
-    "hidden_homeroom_d2_choice1_a": {
-        "name": "Homeroom Teacher",
-        "text": "*Hesitates briefly* ...Various things. Mainly — novels."
-    },
-    "hidden_homeroom_d2_choice1_b": {
-        "name": "Homeroom Teacher",
-        "text": "...Right. Just asking."
-    },
-    "hidden_homeroom_d2_5": {
-        "name": "Homeroom Teacher",
-        "text": "...Right. Just asking."
-    },
-    "hidden_homeroom_d2_6": {
-        "name": "{name}",
-        "text": "*The drawer. Did she just glance at it? — Through the crack I can see a stack of papers. Looks like manuscript pages.*"
-    },
-    "hidden_homeroom_d2_7": {
-        "name": "Homeroom Teacher",
-        "text": "How's the adjustment? Better than yesterday?"
-    },
-    "hidden_homeroom_d2_8": {
-        "name": "Homeroom Teacher",
-        "text": "Dain's loud, right? — She's always like that. Not a bad kid though. More the type you worry about."
-    },
-    "hidden_homeroom_d2_9": {
-        "name": "{name}",
-        "text": "Thank you, ma'am."
-    },
-    "hidden_homeroom_d2_10": {
-        "name": "Homeroom Teacher",
-        "text": "Well, teachers worrying about students is just part of the job. Strictly professional."
-    },
-    "hidden_homeroom_d2_choice2": {
-        "name": "{name}",
-        "text": "*She says it's work, but there's still a smile in her eyes.*",
-        "choices": [
-            "For work, you look awfully happy about it",
-            "Thanks for looking out for me"
-        ]
-    },
-    "hidden_homeroom_d2_choice2_a": {
-        "name": "Homeroom Teacher",
-        "text": "*Covers her mouth with her coffee cup* ...Expression management failure. Fine, go ahead."
-    },
-    "hidden_homeroom_d2_choice2_b": {
-        "name": "Homeroom Teacher",
-        "text": "It's nothing. Get going."
-    },
-    "hidden_homeroom_d2_11": {
-        "name": "Homeroom Teacher",
-        "text": "...Giving the transfer student special treatment — the others would talk."
-    },
-    "hidden_homeroom_d2_12": {
-        "name": "{name}",
-        "text": "*Leaving the faculty office — I can't stop thinking about those papers in the drawer.*"
-    },
-    "morning2_greet_seo_1": {
-        "name": "Seoyeon",
-        "text": "What you said on the rooftop yesterday — still valid?"
-    },
-    "morning2_greet_seo_2": {
-        "name": "{name}",
-        "text": "*Seoyeon came to me first. Her usual composed tone, but with a hint of wanting confirmation.*"
-    },
-    "morning2_greet_seo_others": {
-        "name": "{name}",
-        "text": "*Dain glances from the back of the classroom. Turns away. Yuna buries deeper into her book. Pages turning faster.*"
-    },
-    "morning2_greet_seo_others_2": {
-        "name": "{name}",
-        "text": "*Two subtle reactions. — Should I notice, or pretend I didn't?*"
-    },
-    "morning2_greet_dain_1": {
-        "name": "Dain",
-        "text": "Hey! Yesterday was fun, let's do something again today!"
-    },
-    "morning2_greet_dain_2": {
-        "name": "{name}",
-        "text": "*Dain slaps my shoulder from behind. No hesitation in her touch.*"
-    },
-    "morning2_greet_dain_others": {
-        "name": "{name}",
-        "text": "*Seoyeon passes by, flipping her clipboard.*"
-    },
-    "morning2_greet_dain_others_seo": {
-        "name": "Seoyeon",
-        "text": "Such energy."
-    },
-    "morning2_greet_dain_others_yuna": {
-        "name": "{name}",
-        "text": "*Can't tell if it's sarcasm or admiration. Yuna doesn't react. But the hand writing a note has stopped.*"
-    },
-    "morning2_greet_dain_others_2": {
-        "name": "{name}",
-        "text": "*Laughed it off, but — Seoyeon's remark lingers.*"
-    },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*About to sit down — a folded note on my desk. '...Thank you for yesterday.'*"
-    },
-    "morning2_greet_yuna_2": {
-        "name": "{name}",
-        "text": "*Yuna's handwriting. One sentence longer than yesterday. — On the back, in tiny letters: 'Library annex at lunch.'*"
-    },
-    "morning2_greet_yuna_others": {
-        "name": "Seoyeon",
-        "text": "A letter this early?"
-    },
-    "morning2_greet_yuna_others_seo": {
-        "name": "{name}",
-        "text": "*She's smiling. But her eyes linger on the note for half a second.*"
-    },
-    "morning2_greet_yuna_others_dain": {
-        "name": "Dain",
-        "text": "What's that! Let me see!"
-    },
-    "morning2_greet_yuna_others_2": {
-        "name": "{name}",
-        "text": "*Pocketed the note. The two reactions are subtly different.*"
-    },
-    "morning2_minsu_1_ins": {
-        "name": "{name}",
-        "text": "*The moment Seoyeon rounds the corner of the hallway — just before the back of her head disappears, her smile seems to drop for 0.3 seconds. A switch back to her default expression. — Was that my imagination?*"
-    },
-    "morning2_break_transition_ins": {
-        "name": "{name}",
-        "text": "*The homeroom teacher is standing by the classroom door. Holding the attendance sheet, she glances toward the door — and our eyes meet.*"
-    },
-    "hidden_homeroom_d2_1_ins": {
-        "name": "{name}",
-        "text": "Is something wrong...?"
-    },
-    "hidden_homeroom_d2_1_ins2": {
-        "name": "Homeroom Teacher",
-        "text": "No, just checking your transfer paperwork. — Administrative stuff."
-    },
-    "hidden_homeroom_d2_2_ins": {
-        "name": "{name}",
-        "text": "*I headed to the faculty office with the teacher.* *Her desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
-    },
-    "hidden_homeroom_d2_3_ins": {
-        "name": "Homeroom Teacher",
-        "text": "*A brief hesitation* ...Various things. Mostly — novels."
-    },
-    "hidden_homeroom_d2_3_ins2": {
-        "name": "{name}",
-        "text": "*Novels. A Korean teacher reading novels is natural, but why does she seem reluctant to say it?*"
-    },
-    "hidden_homeroom_d2_3_ins3": {
-        "name": "Homeroom Teacher",
-        "text": "Reading? — What about writing?"
-    },
-    "hidden_homeroom_d2_3_ins4": {
-        "name": "{name}",
-        "text": "*Strange question. We were talking about grades, so why the sudden pivot to 'writing'?*"
-    },
-    "hidden_homeroom_d2_3_ins5": {
-        "name": "{name}",
-        "text": "I'm not sure about writing."
-    },
-    "hidden_homeroom_d2_3_ins6": {
-        "name": "{name}",
-        "text": "*The teacher hesitates briefly. Her gaze drifts toward the drawer — then snaps right back.*"
-    },
-    "hidden_homeroom_d2_6_ins": {
-        "name": "{name}",
-        "text": "*The teacher casually pushes the drawer shut. Like it's nothing.*"
-    },
-    "hidden_homeroom_d2_7_ins": {
-        "name": "{name}",
-        "text": "A lot better. I like the people in class."
-    },
-    "hidden_homeroom_d2_8_ins": {
-        "name": "{name}",
-        "text": "Sounds like Dain is pretty famous if you know about her."
-    },
-    "hidden_homeroom_d2_8_ins2": {
-        "name": "Homeroom Teacher",
-        "text": "Famous isn't the word... *Takes a sip of coffee* More like someone I worry about."
-    },
-    "hidden_homeroom_d2_8_ins3": {
-        "name": "{name}",
-        "text": "*'Someone I worry about.' — The teacher worries about Dain. Does she know about Dain's knee?*"
-    },
-    "hidden_homeroom_d2_8_ins4": {
-        "name": "Homeroom Teacher",
-        "text": "*Setting down her coffee* ...Anyway, nothing to worry about. You're doing fine."
-    },
-    "hidden_homeroom_d2_8_ins5": {
-        "name": "{name}",
-        "text": "*She hid her mouth but her ears are red. — This person gets flustered more easily than I thought.*"
-    },
-    "hidden_homeroom_d2_11_ins": {
-        "name": "{name}",
-        "text": "*Muttering when no one's listening. — This person makes a habit of packaging her concern as 'work.'*"
-    },
-    "morning2_seo_dust_1_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon stops. She looks at my shoulder.*"
-    },
-    "morning2_haeun_6_ins": {
-        "name": "{name}",
-        "text": "*Haeun steps closer. Her voice drops lower.*"
-    }
+  "morning2_start": {
+    "name": "{name}",
+    "text": "*Day two. The uniform feels a bit more comfortable than yesterday. — So do my steps.*"
+  },
+  "morning2_start_2": {
+    "name": "{name}",
+    "text": "*The moment I open the classroom door — something slams into my back.*"
+  },
+  "morning2_dain_1": {
+    "name": "Dain",
+    "text": "You're here?! Good morning!!"
+  },
+  "morning2_dain_2": {
+    "name": "{name}",
+    "text": "...You nearly broke my spine."
+  },
+  "morning2_dain_3": {
+    "name": "Dain",
+    "text": "Haha, from that?! You need to work out more!"
+  },
+  "morning2_dain_4": {
+    "name": "{name}",
+    "text": "Isn't it a bit early for this much energy?"
+  },
+  "morning2_dain_5": {
+    "name": "Dain",
+    "text": "This is normal! You're the one running low!"
+  },
+  "morning2_dain_6": {
+    "name": "{name}",
+    "text": "*If there's a world where this volume at 8 AM is normal, Dain would be its president.*"
+  },
+  "morning2_note_1": {
+    "name": "{name}",
+    "text": "*I'm about to sit down when — I spot a folded note on my desk.*"
+  },
+  "morning2_note_2": {
+    "name": "{name}",
+    "text": "*'Come to the library annex at lunch. — Yuna'*"
+  },
+  "morning2_note_3": {
+    "name": "{name}",
+    "text": "*Same neat handwriting as yesterday. Short. And the location is specific. — The library 'annex'? That's a different place from yesterday.*"
+  },
+  "morning2_seo_1": {
+    "name": "{name}",
+    "text": "*I'm about to pocket the note when — a familiar voice from the hallway.*"
+  },
+  "morning2_seo_2": {
+    "name": "Seoyeon",
+    "text": "Did you sleep well?"
+  },
+  "morning2_seo_3": {
+    "name": "{name}",
+    "text": "*Seoyeon passes through the hallway, glancing into the classroom. Her gaze locks precisely onto me.*"
+  },
+  "morning2_seo_4": {
+    "name": "{name}",
+    "text": "The student council president comes all the way to the classroom to say hi?"
+  },
+  "morning2_seo_5": {
+    "name": "Seoyeon",
+    "text": "I was just passing by. — Have a fun day today too."
+  },
+  "morning2_minsu_1": {
+    "name": "{name}",
+    "text": "*She didn't stop walking. But her eyes were definitely on me.*"
+  },
+  "morning2_minsu_1b": {
+    "name": "{name}",
+    "text": "*I'm staring at the hallway where Seoyeon disappeared — when I hear a chair scraping behind me.*"
+  },
+  "morning2_minsu_2": {
+    "name": "{name}",
+    "text": "*Minsu turns around from the seat in front of me.*"
+  },
+  "morning2_minsu_3": {
+    "name": "Minsu",
+    "text": "Dude, two days as a transfer student and the student council president comes to greet you? I've been here a year and she won't even make eye contact."
+  },
+  "morning2_dain_claim_1": {
+    "name": "{name}",
+    "text": "Maybe you're just unpopular."
+  },
+  "morning2_dain_claim_2": {
+    "name": "Minsu",
+    "text": "...That's true, but that's not the point."
+  },
+  "morning2_dain_claim_3": {
+    "name": "{name}",
+    "text": "*Dain watches Seoyeon walk away.*"
+  },
+  "morning2_dain_claim_4": {
+    "name": "Dain",
+    "text": "The student council president is interested in the transfer student too? Popular guy!"
+  },
+  "morning2_dain_claim_5": {
+    "name": "{name}",
+    "text": "'Our' transfer student?"
+  },
+  "morning2_dain_claim_6": {
+    "name": "Dain",
+    "text": "I found you first, so you're our transfer student! Dibs! I called dibs!"
+  },
+  "morning2_break_transition": {
+    "name": "{name}",
+    "text": "*Break time. Stepped out into the hallway.*"
+  },
+  "morning2_break_1": {
+    "name": "{name}",
+    "text": "*Can you call dibs on a person? — But I don't mind it. That's a little scary.*"
+  },
+  "morning2_seo_dust_1": {
+    "name": "{name}",
+    "text": "*Break after first period. I pass Seoyeon in the hallway. She stops. Looks at my shoulder.*"
+  },
+  "morning2_seo_dust_2": {
+    "name": "Seoyeon",
+    "text": "Hold on."
+  },
+  "morning2_seo_dust_3": {
+    "name": "{name}",
+    "text": "*Seoyeon's hand reaches toward my shoulder. She brushes something off. Naturally. Too naturally.*"
+  },
+  "morning2_seo_dust_4": {
+    "name": "Seoyeon",
+    "text": "You had something on your clothes."
+  },
+  "morning2_seo_dust_5": {
+    "name": "{name}",
+    "text": "......"
+  },
+  "morning2_seo_dust_6": {
+    "name": "Seoyeon",
+    "text": "What? It was just dust."
+  },
+  "morning2_dain_react_1": {
+    "name": "{name}",
+    "text": "*The touch on my shoulder registers a beat too late. — Probably not because of the dust.*"
+  },
+  "morning2_dain_react_2": {
+    "name": "{name}",
+    "text": "*Seoyeon walks away like nothing happened. Dain's voice comes from behind.*"
+  },
+  "morning2_dain_react_3": {
+    "name": "Dain",
+    "text": "Hey! What was that?! Did she just touch your shoulder?!"
+  },
+  "morning2_dain_react_4": {
+    "name": "{name}",
+    "text": "She was brushing off dust."
+  },
+  "morning2_dain_react_5": {
+    "name": "Dain",
+    "text": "Dust... was there actually dust?!"
+  },
+  "morning2_dain_react_6": {
+    "name": "{name}",
+    "text": "*There probably was. Maybe. — But I don't think that's the point.*"
+  },
+  "morning2_haeun_1": {
+    "name": "{name}",
+    "text": "*In the hallway where Seoyeon disappeared — a girl wearing a student council bracelet approaches.*"
+  },
+  "morning2_haeun_2": {
+    "name": "Haeun",
+    "text": "Um, you're the transfer student, right? I'm Haeun, the student council vice president."
+  },
+  "morning2_haeun_3": {
+    "name": "{name}",
+    "text": "Oh, yeah."
+  },
+  "morning2_haeun_4": {
+    "name": "Haeun",
+    "text": "The student council president... I mean, Seoyeon sunbae seems a bit different lately."
+  },
+  "morning2_haeun_5": {
+    "name": "{name}",
+    "text": "Different how?"
+  },
+  "morning2_haeun_6": {
+    "name": "Haeun",
+    "text": "She doesn't usually do that. Approaching someone first... I've known her for a year, and this is the first time."
+  },
+  "morning2_haeun_6b": {
+    "name": "Haeun",
+    "text": "So I have a favor to ask. — Please don't throw her off balance. She's only just barely holding it together right now."
+  },
+  "morning2_haeun_6c": {
+    "name": "{name}",
+    "text": "*She said it was a favor, but those eyes were a warning. — This girl genuinely cares about Seoyeon.*"
+  },
+  "morning2_haeun_7": {
+    "name": "{name}",
+    "text": "*Haeun gives a slight bow and leaves.*"
+  },
+  "morning2_end": {
+    "name": "{name}",
+    "text": "*Someone who never once approached anyone first in a whole year — came to me first? What does that mean?*"
+  },
+  "hidden_homeroom_d2_1": {
+    "name": "Homeroom Teacher",
+    "text": "Oh, {name}. Come to the faculty office for a sec."
+  },
+  "hidden_homeroom_d2_2": {
+    "name": "{name}",
+    "text": "*She says it's administrative. She always wraps her interest in official business.*"
+  },
+  "hidden_homeroom_d2_walk": {
+    "name": "{name}",
+    "text": "*Followed the teacher into the faculty office.*"
+  },
+  "hidden_homeroom_d2_3": {
+    "name": "Homeroom Teacher",
+    "text": "Looked at your old transcript. Your Korean grades were solid. You like reading?"
+  },
+  "hidden_homeroom_d2_choice1": {
+    "name": "{name}",
+    "text": "*Reading. So she even checks report cards.*",
+    "choices": [
+      "What about you? What do you read?",
+      "Yeah, I like reading"
+    ]
+  },
+  "hidden_homeroom_d2_choice1_a": {
+    "name": "Homeroom Teacher",
+    "text": "*Hesitates briefly* ...Various things. Mainly — novels."
+  },
+  "hidden_homeroom_d2_choice1_b": {
+    "name": "Homeroom Teacher",
+    "text": "...Right. Just asking."
+  },
+  "hidden_homeroom_d2_5": {
+    "name": "Homeroom Teacher",
+    "text": "...Right. Just asking."
+  },
+  "hidden_homeroom_d2_6": {
+    "name": "{name}",
+    "text": "*The drawer. Did she just glance at it? — Through the crack I can see a stack of papers. Looks like manuscript pages.*"
+  },
+  "hidden_homeroom_d2_7": {
+    "name": "Homeroom Teacher",
+    "text": "How's the adjustment? Better than yesterday?"
+  },
+  "hidden_homeroom_d2_8": {
+    "name": "Homeroom Teacher",
+    "text": "Dain's loud, right? — She's always like that. Not a bad kid though. More the type you worry about."
+  },
+  "hidden_homeroom_d2_9": {
+    "name": "{name}",
+    "text": "Thank you, ma'am."
+  },
+  "hidden_homeroom_d2_10": {
+    "name": "Homeroom Teacher",
+    "text": "Well, teachers worrying about students is just part of the job. Strictly professional."
+  },
+  "hidden_homeroom_d2_choice2": {
+    "name": "{name}",
+    "text": "*She says it's work, but there's still a smile in her eyes.*",
+    "choices": [
+      "For work, you look awfully happy about it",
+      "Thanks for looking out for me"
+    ]
+  },
+  "hidden_homeroom_d2_choice2_a": {
+    "name": "Homeroom Teacher",
+    "text": "*Covers her mouth with her coffee cup* ...Expression management failure. Fine, go ahead."
+  },
+  "hidden_homeroom_d2_choice2_b": {
+    "name": "Homeroom Teacher",
+    "text": "It's nothing. Get going."
+  },
+  "hidden_homeroom_d2_11": {
+    "name": "Homeroom Teacher",
+    "text": "...Giving the transfer student special treatment — the others would talk."
+  },
+  "hidden_homeroom_d2_12": {
+    "name": "{name}",
+    "text": "*Leaving the faculty office — I can't stop thinking about those papers in the drawer.*"
+  },
+  "morning2_greet_seo_1": {
+    "name": "Seoyeon",
+    "text": "What you said on the rooftop yesterday — still valid?"
+  },
+  "morning2_greet_seo_2": {
+    "name": "{name}",
+    "text": "*Seoyeon came to me first. Her usual composed tone, but with a hint of wanting confirmation.*"
+  },
+  "morning2_greet_seo_others": {
+    "name": "{name}",
+    "text": "*Dain glances from the back of the classroom. Turns away. Yuna buries deeper into her book. Pages turning faster.*"
+  },
+  "morning2_greet_seo_others_2": {
+    "name": "{name}",
+    "text": "*Two subtle reactions. — Should I notice, or pretend I didn't?*"
+  },
+  "morning2_greet_dain_1": {
+    "name": "Dain",
+    "text": "Hey! Yesterday was fun, let's do something again today!"
+  },
+  "morning2_greet_dain_2": {
+    "name": "{name}",
+    "text": "*Dain slaps my shoulder from behind. No hesitation in her touch.*"
+  },
+  "morning2_greet_dain_others": {
+    "name": "{name}",
+    "text": "*Seoyeon passes by, flipping her clipboard.*"
+  },
+  "morning2_greet_dain_others_seo": {
+    "name": "Seoyeon",
+    "text": "Such energy."
+  },
+  "morning2_greet_dain_others_yuna": {
+    "name": "{name}",
+    "text": "*Can't tell if it's sarcasm or admiration. Yuna doesn't react. But the hand writing a note has stopped.*"
+  },
+  "morning2_greet_dain_others_2": {
+    "name": "{name}",
+    "text": "*Laughed it off, but — Seoyeon's remark lingers.*"
+  },
+  "morning2_greet_yuna_1": {
+    "name": "{name}",
+    "text": "*About to sit down — a folded note on my desk. '...Thank you for yesterday.'*"
+  },
+  "morning2_greet_yuna_2": {
+    "name": "{name}",
+    "text": "*Yuna's handwriting. One sentence longer than yesterday. — On the back, in tiny letters: 'Library annex at lunch.'*"
+  },
+  "morning2_greet_yuna_others": {
+    "name": "Seoyeon",
+    "text": "A letter this early?"
+  },
+  "morning2_greet_yuna_others_seo": {
+    "name": "{name}",
+    "text": "*She's smiling. But her eyes linger on the note for half a second.*"
+  },
+  "morning2_greet_yuna_others_dain": {
+    "name": "Dain",
+    "text": "What's that! Let me see!"
+  },
+  "morning2_greet_yuna_others_2": {
+    "name": "{name}",
+    "text": "*Pocketed the note. — Carefully, for some reason.*"
+  },
+  "morning2_minsu_1_ins": {
+    "name": "{name}",
+    "text": "*The moment Seoyeon rounds the corner of the hallway — just before the back of her head disappears, her smile seems to drop for 0.3 seconds. A switch back to her default expression. — Was that my imagination?*"
+  },
+  "morning2_break_transition_ins": {
+    "name": "{name}",
+    "text": "*The homeroom teacher is standing by the classroom door. Holding the attendance sheet, she glances toward the door — and our eyes meet.*"
+  },
+  "hidden_homeroom_d2_1_ins": {
+    "name": "{name}",
+    "text": "Is something wrong...?"
+  },
+  "hidden_homeroom_d2_1_ins2": {
+    "name": "Homeroom Teacher",
+    "text": "No, just checking your transfer paperwork. — Administrative stuff."
+  },
+  "hidden_homeroom_d2_2_ins": {
+    "name": "{name}",
+    "text": "*I headed to the faculty office with the teacher.* *Her desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
+  },
+  "hidden_homeroom_d2_3_ins": {
+    "name": "Homeroom Teacher",
+    "text": "*A brief hesitation* ...Various things. Mostly — novels."
+  },
+  "hidden_homeroom_d2_3_ins2": {
+    "name": "{name}",
+    "text": "*Novels. A Korean teacher reading novels is natural, but why does she seem reluctant to say it?*"
+  },
+  "hidden_homeroom_d2_3_ins3": {
+    "name": "Homeroom Teacher",
+    "text": "Reading? — What about writing?"
+  },
+  "hidden_homeroom_d2_3_ins4": {
+    "name": "{name}",
+    "text": "*Strange question. We were talking about grades, so why the sudden pivot to 'writing'?*"
+  },
+  "hidden_homeroom_d2_3_ins5": {
+    "name": "{name}",
+    "text": "I'm not sure about writing."
+  },
+  "hidden_homeroom_d2_3_ins6": {
+    "name": "{name}",
+    "text": "*The teacher hesitates briefly. Her gaze drifts toward the drawer — then snaps right back.*"
+  },
+  "hidden_homeroom_d2_6_ins": {
+    "name": "{name}",
+    "text": "*The teacher casually pushes the drawer shut. Like it's nothing.*"
+  },
+  "hidden_homeroom_d2_7_ins": {
+    "name": "{name}",
+    "text": "A lot better. I like the people in class."
+  },
+  "hidden_homeroom_d2_8_ins": {
+    "name": "{name}",
+    "text": "Sounds like Dain is pretty famous if you know about her."
+  },
+  "hidden_homeroom_d2_8_ins2": {
+    "name": "Homeroom Teacher",
+    "text": "Famous isn't the word... *Takes a sip of coffee* More like someone I worry about."
+  },
+  "hidden_homeroom_d2_8_ins3": {
+    "name": "{name}",
+    "text": "*'Someone I worry about.' — The teacher worries about Dain. Does she know about Dain's knee?*"
+  },
+  "hidden_homeroom_d2_8_ins4": {
+    "name": "Homeroom Teacher",
+    "text": "*Setting down her coffee* ...Anyway, nothing to worry about. You're doing fine."
+  },
+  "hidden_homeroom_d2_8_ins5": {
+    "name": "{name}",
+    "text": "*She hid her mouth but her ears are red. — This person gets flustered more easily than I thought.*"
+  },
+  "hidden_homeroom_d2_11_ins": {
+    "name": "{name}",
+    "text": "*Muttering when no one's listening. — This person makes a habit of packaging her concern as 'work.'*"
+  },
+  "morning2_seo_dust_1_ins": {
+    "name": "{name}",
+    "text": "*Seoyeon stops. She looks at my shoulder.*"
+  },
+  "morning2_haeun_6_ins": {
+    "name": "{name}",
+    "text": "*Haeun steps closer. Her voice drops lower.*"
+  }
 }

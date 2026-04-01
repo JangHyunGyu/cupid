@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Profesora",
-        "text": "...No le digas esto a nadie. Una profesora compartiéndole esto a un alumno — es un secreto."
+        "text": "*De repente seria.* ...No le digas esto a nadie. Una profesora compartiéndole esto a un alumno — es un secreto."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
@@ -328,7 +328,7 @@
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Enfermera",
-        "text": "Lo complicado es complicado, sea amor o lo que sea. No intentes ordenarlo. Solo siéntelo."
+        "text": "*Acerca una silla y se sienta.* Relaciones. — ¿Esto es una consulta sentimental? *Pfff.* Cuanto más lo finges, más se nota."
     },
     "hidden_nurse_d3_6": {
         "name": "Enfermera",

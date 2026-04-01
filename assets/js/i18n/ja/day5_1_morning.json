@@ -1,430 +1,430 @@
 {
-    "morning5_start": {
-        "name": "{name}",
-        "text": "*五日目。最後の日。制服が馴染んできた。——この人たちのおかげだ。分かっている。*"
-    },
-    "morning5_start_2": {
-        "name": "{name}",
-        "text": "*今日は学校行事がある。最後のイベント。教室に入った瞬間——三方向から信号が来る。*"
-    },
-    "morning5_mood_check": {
-        "name": "システム",
-        "text": ""
-    },
-    "morning5_mood_high": {
-        "name": "{name}",
-        "text": "最後の日だ。不思議と足取りが軽い。"
-    },
-    "morning5_mood_mid": {
-        "name": "{name}",
-        "text": "最後の日。まだ確信がない。"
-    },
-    "morning5_mood_low": {
-        "name": "{name}",
-        "text": "最後の日。5日間がこんなに早く過ぎるとは思わなかった。"
-    },
-    "morning5_seo_note_1": {
-        "name": "{name}",
-        "text": "*机の上にメモが置いてある。ソヨンの字だ。——『午後にちょっと時間を作って。屋上を開けておくから。——ソヨン』*"
-    },
-    "morning5_yuna_story_1": {
-        "name": "{name}",
-        "text": "*廊下の文芸部展示コーナーを通りかかると——掲示板に短編小説が貼ってある。タイトル：『図書館で出会った人へ』。ユナだ。——主人公だけが分かる物語。*"
-    },
-    "morning5_return_class": {
-        "name": "{name}",
-        "text": "*教室に戻った。*"
-    },
-    "morning5_dain_1": {
-        "name": "ダイン",
-        "text": "「ねえ！今日の体育イベント、パートナーにあんたって書いておいたから！」"
-    },
-    "morning5_dain_2": {
-        "name": "ダイン",
-        "text": "「逃げたら本気で怒るよ？」"
-    },
-    "morning5_end": {
-        "name": "{name}",
-        "text": "*三方向からの信号。——答えを選ばなければ。*"
-    },
-    "hidden_homeroom_d5_check": {
-        "name": "{name}",
-        "text": "*イベント準備時間。廊下を歩いていると——空き教室の前。ドアが開いている。*"
-    },
-    "hidden_homeroom_d5_1": {
-        "name": "{name}",
-        "text": "*担任が教壇に座っている。——原稿じゃなく、封筒を持っている。茶色の封筒。*"
-    },
-    "hidden_homeroom_d5_2": {
-        "name": "担任先生",
-        "text": "「原稿。——未完成だけど。最初の読者に渡そうと思って。」"
-    },
-    "hidden_homeroom_d5_3": {
-        "name": "担任先生",
-        "text": "「7年間誰にも見せなかった。」"
-    },
-    "hidden_homeroom_d5_4": {
-        "name": "{name}",
-        "text": "「...原稿を受け取る。思ったより重い。」"
-    },
-    "hidden_homeroom_d5_5": {
-        "name": "担任先生",
-        "text": "「...最初の読者に渡すの、思ったより緊張する。」"
-    },
-    "hidden_homeroom_d5_choice": {
-        "name": "{name}",
-        "text": "*原稿を抱えている。この人の7年が手の中にある。*",
-        "choices": [
-            "卒業したら名前で呼んでいいですか？",
-            "感想文、一行じゃなくて一ページ書いてもいいですか？"
-        ]
-    },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "担任先生",
-        "text": "*唇が震える。* ...卒業したら。"
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "担任先生",
-        "text": "*笑う。見たことのない笑顔だ。* ...十ページでもいいよ。"
-    },
-    "hidden_homeroom_d5_choice_b_ins": {
-        "name": "{name}",
-        "text": "「書評書いてもいいですか？」"
-    },
-    "hidden_homeroom_d5_choice_b_ins2": {
-        "name": "担任先生",
-        "text": "*少し笑って、表情が真剣になる。* ...いい書評なら。もう一作書けそうな気がする。"
-    },
-    "hidden_homeroom_d5_choice_b_ins3": {
-        "name": "{name}",
-        "text": "*もう一作。——7年かけて完成させた人が「もう一作」と言っている。*"
-    },
-    "hidden_homeroom_d5_6": {
-        "name": "担任先生",
-        "text": "*髪をかき上げながら* ...感想文は受け付けない。"
-    },
-    "hidden_homeroom_d5_7": {
-        "name": "担任先生",
-        "text": "「卒業したら——会おう。先生と生徒じゃない名前で。」"
-    },
-    "hidden_homeroom_d5_8": {
-        "name": "{name}",
-        "text": "*担任が振り返る。長い髪が揺れる。——今日はカーディガンのボタンが真っ直ぐだ。*"
-    },
-    "hidden_homeroom_d5_freetalk": {
-        "name": "担任先生",
-        "text": "*担任先生と空き教室で最後の会話。*",
-        "context": "Day 5。最後の日。担任が7年の原稿を渡した。卒業後の約束。 トーン：最後だと二人とも分かっている。笑いながらも名残惜しさがにじむ。いつもより素直になり、些細なことも大切に感じる。",
-        "personality": "担任は最後だから普段より素直。原稿を渡した後の最後の会話。"
-    },
-    "hidden_nurse_d5_check": {
-        "name": "{name}",
-        "text": "*イベントの休憩時間。保健室の前を通る。*"
-    },
-    "hidden_nurse_d5_1": {
-        "name": "保健先生",
-        "text": "「え？{name}。——最後の日だね。イベント最終日。」"
-    },
-    "hidden_nurse_d5_2": {
-        "name": "保健先生",
-        "text": "*軽く笑いながら* 卒業したら遊びにおいで。"
-    },
-    "hidden_nurse_d5_3": {
-        "name": "{name}",
-        "text": "「痛くなくても行っちゃダメですか？」"
-    },
-    "hidden_nurse_d5_4": {
-        "name": "保健先生",
-        "text": "*また笑いながら* それは卒業してから聞いて。"
-    },
-    "hidden_nurse_d5_5": {
-        "name": "保健先生",
-        "text": "「…{name}。絆創膏貼ってあげようか？」"
-    },
-    "hidden_nurse_d5_choice": {
-        "name": "{name}",
-        "text": "*怪我なんてしてない。分かってて聞いてるんだ。*",
-        "choices": [
-            "はい、最後ですから。一回だけ。",
-            "絆創膏じゃなくて電話番号を"
-        ]
-    },
-    "hidden_nurse_d5_choice_a": {
-        "name": "保健先生",
-        "text": "*手が震える。ゆっくり絆創膏を貼る。* ...最後って言われると手が動かない。"
-    },
-    "hidden_nurse_d5_choice_a_ins": {
-        "name": "保健先生",
-        "text": "「……一回だけって言ったくせに、なんでそんなこと言うの。」"
-    },
-    "hidden_nurse_d5_choice_b": {
-        "name": "保健先生",
-        "text": "...電話番号。医療相談用？ *眼鏡を直しながら* ...分かった。でも卒業してから使って。"
-    },
-    "hidden_nurse_d5_6": {
-        "name": "保健先生",
-        "text": "「わかってる。ただ口実が必要だったの。」"
-    },
-    "hidden_nurse_d5_7": {
-        "name": "{name}",
-        "text": "*絆創膏に小さな文字が書いてある。『卒業したら保健室じゃなくてカフェで会おう — ♥』*"
-    },
-    "hidden_nurse_d5_freetalk": {
-        "name": "保健先生",
-        "text": "*保健先生と保健室の前で最後の会話。*",
-        "context": "Day 5。最後の日。保健先生が絆創膏にメッセージ。卒業後の約束。 トーン：最後だと二人とも分かっている。笑いながらも名残惜しさがにじむ。いつもより素直になり、些細なことも大切に感じる。",
-        "personality": "保健先生はいつもよりいたずらが少ない。口実が要らない日を待っている。"
-    },
-    "morning5_start_ins": {
-        "name": "{name}",
-        "text": "*今日は学校行事がある。最後のイベント。*"
-    },
-    "morning5_start_2_ins": {
-        "name": "{name}",
-        "text": "*机の上にメモが置いてある。ソヨンの字だ。*"
-    },
-    "morning5_seo_note_1_ins": {
-        "name": "{name}",
-        "text": "*廊下の文芸部展示コーナーを通りかかる——掲示板に短編小説が貼ってある。タイトルは:*"
-    },
-    "morning5_seo_note_1_ins2": {
-        "name": "{name}",
-        "text": "*『図書館で出会った人へ』*"
-    },
-    "morning5_seo_note_1_ins3": {
-        "name": "{name}",
-        "text": "*ユナだ。——主人公だけが気づく物語。*"
-    },
-    "morning5_seo_note_1_ins4": {
-        "name": "{name}",
-        "text": "*教室に戻ると、ダインが待っていた。*"
-    },
-    "morning5_dain_1_ins": {
-        "name": "{name}",
-        "text": "……勝手に？"
-    },
-    "hidden_homeroom_d5_1_ins": {
-        "name": "担任先生",
-        "text": "「……あ。」"
-    },
-    "hidden_homeroom_d5_1_ins2": {
-        "name": "{name}",
-        "text": "先生。"
-    },
-    "hidden_homeroom_d5_1_ins3": {
-        "name": "担任先生",
-        "text": "*封筒をちらっと見せながら*「……これ。」"
-    },
-    "hidden_homeroom_d5_1_ins4": {
-        "name": "{name}",
-        "text": "なんですか？"
-    },
-    "hidden_homeroom_d5_6_ins": {
-        "name": "{name}",
-        "text": "*昨日カフェで言っていたこと。最初の読者。——本当に持ってきたんだ。*"
-    },
-    "hidden_homeroom_d5_6_ins2": {
-        "name": "{name}",
-        "text": "*担任が封筒を差し出す。——手がわずかに震えている。*"
-    },
-    "hidden_homeroom_d5_6_ins3": {
-        "name": "担任先生",
-        "text": "「7年間、誰にも見せなかった。——業務外の行動ではあるんだけど。」"
-    },
-    "hidden_homeroom_d5_6_ins4": {
-        "name": "{name}",
-        "text": "先生。"
-    },
-    "hidden_homeroom_d5_6_ins5": {
-        "name": "{name}",
-        "text": "その言い訳、もうしなくていいと思います。"
-    },
-    "hidden_homeroom_d5_6_ins6": {
-        "name": "{name}",
-        "text": "*担任が一瞬止まる。——そして笑う。乾いた笑みではない、温かい笑み。*"
-    },
-    "hidden_homeroom_d5_6_ins7": {
-        "name": "担任先生",
-        "text": "「……生徒にそう言われる日が来るとは思わなかった。」"
-    },
-    "hidden_homeroom_d5_6_ins8": {
-        "name": "{name}",
-        "text": "*担任が封筒を僕の手に置く。*"
-    },
-    "hidden_homeroom_d5_6_ins9": {
-        "name": "担任先生",
-        "text": "「……最初の読者になってくれる？」"
-    },
-    "hidden_homeroom_d5_6_ins10": {
-        "name": "{name}",
-        "text": "*昨日と同じ言葉だ。——でも今日は言葉だけじゃない。行動が伴った。7年分の原稿が手の中にある。*"
-    },
-    "hidden_homeroom_d5_6_ins11": {
-        "name": "{name}",
-        "text": "読みます。必ず。"
-    },
-    "hidden_homeroom_d5_6_ins12": {
-        "name": "担任先生",
-        "text": "*髪をかき上げながら*「……感想文はいらない。」"
-    },
-    "hidden_homeroom_d5_6_ins13": {
-        "name": "{name}",
-        "text": "嘘でしょ。"
-    },
-    "hidden_homeroom_d5_6_ins14": {
-        "name": "担任先生",
-        "text": "*ふっと笑って*「……そうだね。一行でもいいから書いて。」"
-    },
-    "hidden_homeroom_d5_6_ins15": {
-        "name": "{name}",
-        "text": "*一行。——デビューに三度落ちた人が、生徒の一行感想を待っている。これが告白じゃなかったら何なんだ。*"
-    },
-    "hidden_homeroom_d5_6_ins16": {
-        "name": "{name}",
-        "text": "*担任が教室を出ようとして——ドアの前で止まる。*"
-    },
-    "hidden_homeroom_d5_6_ins17": {
-        "name": "担任先生",
-        "text": "「{name}。」"
-    },
-    "hidden_homeroom_d5_6_ins18": {
-        "name": "{name}",
-        "text": "*担任が立ち止まる。クリップボードをぎゅっと握る。——そしてゆっくり振り返る。*"
-    },
-    "hidden_homeroom_d5_6_ins19": {
-        "name": "担任先生",
-        "text": "「……卒業したら。」*声がかすれる。*「うん。卒業したら。」"
-    },
-    "hidden_homeroom_d5_6_ins20": {
-        "name": "{name}",
-        "text": "*「卒業したら」が二回。——一回目は許可、二回目は待つことの表明。*"
-    },
-    "hidden_homeroom_d5_7_ins": {
-        "name": "{name}",
-        "text": "*「先生としてではない名前で」。——卒業後のことを言っている。今ではないけど、いつか。*"
-    },
-    "hidden_homeroom_d5_7_ins2": {
-        "name": "担任先生",
-        "text": "「……教育的関心の範囲をちょっと超えちゃったかな。最後だから。最後の一回だけ。」"
-    },
-    "hidden_nurse_d5_2_ins": {
-        "name": "{name}",
-        "text": "*行事の合間の休憩時間。保健室の前を通りかかると——ドアが開く。保健先生が出てくる。*"
-    },
-    "hidden_nurse_d5_2_ins2": {
-        "name": "{name}",
-        "text": "*——目の前で鉢合わせした。*"
-    },
-    "hidden_nurse_d5_2_ins3": {
-        "name": "保健先生",
-        "text": "「あれ？{name}。」"
-    },
-    "hidden_nurse_d5_4_ins": {
-        "name": "{name}",
-        "text": "先生。"
-    },
-    "hidden_nurse_d5_4_ins2": {
-        "name": "{name}",
-        "text": "*気まずい沈黙。——昨日までは自然だったのに、今日は何かが違う。*"
-    },
-    "hidden_nurse_d5_4_ins3": {
-        "name": "保健先生",
-        "text": "「最後の日だね。」"
-    },
-    "hidden_nurse_d5_1_ins": {
-        "name": "{name}",
-        "text": "*行事の最終日と言ったけど、別の意味が滲んでいる。*"
-    },
-    "hidden_nurse_d5_1_ins2": {
-        "name": "保健先生",
-        "text": "*軽く笑って*「卒業したら遊びに来て。」"
-    },
-    "hidden_nurse_d5_1_ins3": {
-        "name": "{name}",
-        "text": "卒業はまだ先ですよ。"
-    },
-    "hidden_nurse_d5_1_ins4": {
-        "name": "保健先生",
-        "text": "「……それまでは、具合が悪かったら来て。」"
-    },
-    "hidden_nurse_d5_1_ins5": {
-        "name": "{name}",
-        "text": "*「卒業したら遊びに来て」から「具合が悪かったら来て」に後退した。——線を越えかけて、戻ったんだ。*"
-    },
-    "hidden_nurse_d5_3_ins": {
-        "name": "{name}",
-        "text": "*保健先生が一瞬止まる。声が一段低くなる。*"
-    },
-    "hidden_nurse_d5_3_ins2": {
-        "name": "保健先生",
-        "text": "「……それは。」"
-    },
-    "hidden_nurse_d5_3_ins3": {
-        "name": "{name}",
-        "text": "先生？"
-    },
-    "hidden_nurse_d5_3_ins4": {
-        "name": "保健先生",
-        "text": "*また笑って*「それは卒業してから聞いて。——その時は答えるから。」"
-    },
-    "hidden_nurse_d5_3_ins5": {
-        "name": "{name}",
-        "text": "*「卒業してから」。——担任先生と同じ言葉だ。今はダメだけど、いつか。「先生」という肩書きが外れる日。*"
-    },
-    "hidden_nurse_d5_3_ins6": {
-        "name": "保健先生",
-        "text": "「さ、行って。行事サボっちゃダメでしょ～」"
-    },
-    "hidden_nurse_d5_3_ins7": {
-        "name": "{name}",
-        "text": "*保健先生が保健室の中に入ろうとして——立ち止まる。*"
-    },
-    "hidden_nurse_d5_3_ins8": {
-        "name": "保健先生",
-        "text": "「……{name}。」"
-    },
-    "hidden_nurse_d5_choice_b_ins2": {
-        "name": "{name}",
-        "text": "*声が一段低くなった。ふざけた表情が完全に消えている。——この人の本気はいつもこうやって来る。*"
-    },
-    "hidden_nurse_d5_choice_b_ins3": {
-        "name": "{name}",
-        "text": "*保健先生が笑いかけて——止まる。口を閉じる。*"
-    },
-    "hidden_nurse_d5_choice_b_ins4": {
-        "name": "保健先生",
-        "text": "「……電話番号。医療相談用？」"
-    },
-    "hidden_nurse_d5_choice_b_ins5": {
-        "name": "保健先生",
-        "text": "*眼鏡を直しながら*「……わかった。でも卒業してから使って。」"
-    },
-    "hidden_nurse_d5_choice_b_ins6": {
-        "name": "{name}",
-        "text": "*「卒業してから」。——この人は線を越えない。でも線のギリギリに電話番号を置いた。*"
-    },
-    "hidden_nurse_d5_choice_b_ins7": {
-        "name": "保健先生",
-        "text": "「バンドエイド貼ろうか？」"
-    },
-    "hidden_nurse_d5_choice_b_ins8": {
-        "name": "{name}",
-        "text": "……傷、ないですけど。"
-    },
-    "hidden_nurse_d5_6_ins": {
-        "name": "{name}",
-        "text": "*Day 1の決め台詞。——あの時はキャラ紹介だった。今は本気だ。*"
-    },
-    "hidden_nurse_d5_6_ins2": {
-        "name": "{name}",
-        "text": "*保健先生がバンドエイドを取り出して僕の手の甲に貼る。ゆっくりと。——バンドエイドに小さな文字が書いてある。*"
-    },
-    "hidden_nurse_d5_6_ins3": {
-        "name": "{name}",
-        "text": "*「卒業したら保健室じゃなくてカフェで会おう——♡」*"
-    },
-    "hidden_nurse_d5_6_ins4": {
-        "name": "{name}",
-        "text": "*今回のハートは——医療的関心ではなさそうだ。*"
-    }
+  "morning5_start": {
+    "name": "{name}",
+    "text": "*五日目。最後の日。制服が馴染んできた。——この人たちのおかげだ。分かっている。*"
+  },
+  "morning5_start_2": {
+    "name": "{name}",
+    "text": "*今日は学校行事がある。最後のイベント。教室に入った瞬間——三方向から信号が来る。*"
+  },
+  "morning5_mood_check": {
+    "name": "システム",
+    "text": ""
+  },
+  "morning5_mood_high": {
+    "name": "{name}",
+    "text": "最後の日だ。不思議と足取りが軽い。今日は——言えそうな気がする。"
+  },
+  "morning5_mood_mid": {
+    "name": "{name}",
+    "text": "最後の日。まだ確信がない。でも行かなきゃ。"
+  },
+  "morning5_mood_low": {
+    "name": "{name}",
+    "text": "最後の日。5日間がこんなに早く過ぎるとは思わなかった。…何をしたんだか分からない。"
+  },
+  "morning5_seo_note_1": {
+    "name": "{name}",
+    "text": "*机の上にメモが置いてある。ソヨンの字だ。——『午後にちょっと時間を作って。屋上を開けておくから。——ソヨン』*"
+  },
+  "morning5_yuna_story_1": {
+    "name": "{name}",
+    "text": "*廊下の文芸部展示コーナーを通りかかると——掲示板に短編小説が貼ってある。タイトル：『図書館で出会った人へ』。ユナだ。——主人公だけが分かる物語。*"
+  },
+  "morning5_return_class": {
+    "name": "{name}",
+    "text": "*教室に戻ると、ダインが待っていた。*"
+  },
+  "morning5_dain_1": {
+    "name": "ダイン",
+    "text": "「ねえ！今日の体育イベント、パートナーにあんたって書いておいたから！」"
+  },
+  "morning5_dain_2": {
+    "name": "ダイン",
+    "text": "「逃げたら本気で怒るよ？」"
+  },
+  "morning5_end": {
+    "name": "{name}",
+    "text": "*三方向からの信号。——答えを選ばなければ。*"
+  },
+  "hidden_homeroom_d5_check": {
+    "name": "{name}",
+    "text": "*イベント準備時間。廊下を歩いていると——空き教室の前。ドアが開いている。*"
+  },
+  "hidden_homeroom_d5_1": {
+    "name": "{name}",
+    "text": "*担任が教壇に座っている。——原稿じゃなく、封筒を持っている。茶色の封筒。*"
+  },
+  "hidden_homeroom_d5_2": {
+    "name": "担任先生",
+    "text": "「原稿。——未完成だけど。最初の読者に渡そうと思って。」"
+  },
+  "hidden_homeroom_d5_3": {
+    "name": "担任先生",
+    "text": "「7年間誰にも見せなかった。——業務外の行動ではあるんだけど。」"
+  },
+  "hidden_homeroom_d5_4": {
+    "name": "{name}",
+    "text": "「...原稿を受け取る。思ったより重い。」"
+  },
+  "hidden_homeroom_d5_5": {
+    "name": "担任先生",
+    "text": "「...最初の読者に渡すの、思ったより緊張する。」"
+  },
+  "hidden_homeroom_d5_choice": {
+    "name": "{name}",
+    "text": "*原稿を抱えている。この人の7年が手の中にある。*",
+    "choices": [
+      "卒業したら名前で呼んでいいですか？",
+      "感想文、一行じゃなくて一ページ書いてもいいですか？"
+    ]
+  },
+  "hidden_homeroom_d5_choice_a": {
+    "name": "担任先生",
+    "text": "*声がかすれる。* うん。卒業したら。"
+  },
+  "hidden_homeroom_d5_choice_b": {
+    "name": "担任先生",
+    "text": "*ふっ* 一ページなら——感想文じゃなくて書評でしょ。"
+  },
+  "hidden_homeroom_d5_choice_b_ins": {
+    "name": "{name}",
+    "text": "「書評書いてもいいですか？」"
+  },
+  "hidden_homeroom_d5_choice_b_ins2": {
+    "name": "担任先生",
+    "text": "*少し笑って、表情が真剣になる。* ...いい書評なら。もう一作書けそうな気がする。"
+  },
+  "hidden_homeroom_d5_choice_b_ins3": {
+    "name": "{name}",
+    "text": "*もう一作。——7年かけて完成させた人が「もう一作」と言っている。*"
+  },
+  "hidden_homeroom_d5_6": {
+    "name": "担任先生",
+    "text": "*髪をかき上げながら* ...感想文は受け付けない。"
+  },
+  "hidden_homeroom_d5_7": {
+    "name": "担任先生",
+    "text": "「卒業したら——会おう。先生と生徒じゃない名前で。」"
+  },
+  "hidden_homeroom_d5_8": {
+    "name": "{name}",
+    "text": "*担任が振り返る。長い髪が揺れる。——今日はカーディガンのボタンが真っ直ぐだ。*"
+  },
+  "hidden_homeroom_d5_freetalk": {
+    "name": "担任先生",
+    "text": "*担任先生と空き教室で最後の会話。*",
+    "context": "Day 5。最後の日。担任が7年の原稿を渡した。卒業後の約束。 トーン：最後だと二人とも分かっている。笑いながらも名残惜しさがにじむ。いつもより素直になり、些細なことも大切に感じる。",
+    "personality": "担任は最後だから普段より素直。原稿を渡した後の最後の会話。"
+  },
+  "hidden_nurse_d5_check": {
+    "name": "{name}",
+    "text": "*イベントの休憩時間。保健室の前を通る。*"
+  },
+  "hidden_nurse_d5_1": {
+    "name": "保健先生",
+    "text": "「え？{name}。——最後の日だね。イベント最終日じゃん。5日間。——あっという間だ。」"
+  },
+  "hidden_nurse_d5_2": {
+    "name": "保健先生",
+    "text": "*軽く笑いながら* 卒業したら遊びにおいで。"
+  },
+  "hidden_nurse_d5_3": {
+    "name": "{name}",
+    "text": "「痛くなくても行っちゃダメですか？」"
+  },
+  "hidden_nurse_d5_4": {
+    "name": "保健先生",
+    "text": "*また笑いながら* それは卒業してから聞いて。"
+  },
+  "hidden_nurse_d5_5": {
+    "name": "保健先生",
+    "text": "「…{name}。絆創膏貼ってあげようか？」"
+  },
+  "hidden_nurse_d5_choice": {
+    "name": "{name}",
+    "text": "*怪我なんてしてない。分かってて聞いてるんだ。*",
+    "choices": [
+      "はい、最後ですから。一回だけ。",
+      "絆創膏じゃなくて電話番号を"
+    ]
+  },
+  "hidden_nurse_d5_choice_a": {
+    "name": "保健先生",
+    "text": "*ゆっくりと絆創膏を貼る。絆創膏に小さな文字が書いてある。*"
+  },
+  "hidden_nurse_d5_choice_a_ins": {
+    "name": "保健先生",
+    "text": "「……一回だけって言ったくせに、なんでそんなこと言うの。」"
+  },
+  "hidden_nurse_d5_choice_b": {
+    "name": "保健先生",
+    "text": "...電話番号。医療相談用？ *眼鏡を直しながら* ...分かった。でも卒業してから使って。"
+  },
+  "hidden_nurse_d5_6": {
+    "name": "保健先生",
+    "text": "「わかってる。ただ口実が必要だったの。」"
+  },
+  "hidden_nurse_d5_7": {
+    "name": "{name}",
+    "text": "*絆創膏に小さな文字が書いてある。『卒業したら保健室じゃなくてカフェで会おう — ♥』*"
+  },
+  "hidden_nurse_d5_freetalk": {
+    "name": "保健先生",
+    "text": "*保健先生と保健室の前で最後の会話。*",
+    "context": "Day 5。最後の日。保健先生が絆創膏にメッセージ。卒業後の約束。 トーン：最後だと二人とも分かっている。笑いながらも名残惜しさがにじむ。いつもより素直になり、些細なことも大切に感じる。",
+    "personality": "保健先生はいつもよりいたずらが少ない。口実が要らない日を待っている。"
+  },
+  "morning5_start_ins": {
+    "name": "{name}",
+    "text": "*今日は学校行事がある。最後のイベント。*"
+  },
+  "morning5_start_2_ins": {
+    "name": "{name}",
+    "text": "*机の上にメモが置いてある。ソヨンの字だ。*"
+  },
+  "morning5_seo_note_1_ins": {
+    "name": "{name}",
+    "text": "*廊下の文芸部展示コーナーを通りかかる——掲示板に短編小説が貼ってある。タイトルは:*"
+  },
+  "morning5_seo_note_1_ins2": {
+    "name": "{name}",
+    "text": "*『図書館で出会った人へ』*"
+  },
+  "morning5_seo_note_1_ins3": {
+    "name": "{name}",
+    "text": "*ユナだ。——主人公だけが気づく物語。*"
+  },
+  "morning5_seo_note_1_ins4": {
+    "name": "{name}",
+    "text": "*教室に戻ると、ダインが待っていた。*"
+  },
+  "morning5_dain_1_ins": {
+    "name": "{name}",
+    "text": "……勝手に？"
+  },
+  "hidden_homeroom_d5_1_ins": {
+    "name": "担任先生",
+    "text": "「……あ。」"
+  },
+  "hidden_homeroom_d5_1_ins2": {
+    "name": "{name}",
+    "text": "先生。"
+  },
+  "hidden_homeroom_d5_1_ins3": {
+    "name": "担任先生",
+    "text": "*封筒をちらっと見せながら*「……これ。」"
+  },
+  "hidden_homeroom_d5_1_ins4": {
+    "name": "{name}",
+    "text": "なんですか？"
+  },
+  "hidden_homeroom_d5_6_ins": {
+    "name": "{name}",
+    "text": "*昨日カフェで言っていたこと。最初の読者。——本当に持ってきたんだ。*"
+  },
+  "hidden_homeroom_d5_6_ins2": {
+    "name": "{name}",
+    "text": "*担任が封筒を差し出す。——手がわずかに震えている。*"
+  },
+  "hidden_homeroom_d5_6_ins3": {
+    "name": "担任先生",
+    "text": "「7年間、誰にも見せなかった。——業務外の行動ではあるんだけど。」"
+  },
+  "hidden_homeroom_d5_6_ins4": {
+    "name": "{name}",
+    "text": "先生。"
+  },
+  "hidden_homeroom_d5_6_ins5": {
+    "name": "{name}",
+    "text": "その言い訳、もうしなくていいと思います。"
+  },
+  "hidden_homeroom_d5_6_ins6": {
+    "name": "{name}",
+    "text": "*担任が一瞬止まる。——そして笑う。乾いた笑みではない、温かい笑み。*"
+  },
+  "hidden_homeroom_d5_6_ins7": {
+    "name": "担任先生",
+    "text": "「……生徒にそう言われる日が来るとは思わなかった。」"
+  },
+  "hidden_homeroom_d5_6_ins8": {
+    "name": "{name}",
+    "text": "*担任が封筒を僕の手に置く。*"
+  },
+  "hidden_homeroom_d5_6_ins9": {
+    "name": "担任先生",
+    "text": "「……最初の読者になってくれる？」"
+  },
+  "hidden_homeroom_d5_6_ins10": {
+    "name": "{name}",
+    "text": "*昨日と同じ言葉だ。——でも今日は言葉だけじゃない。行動が伴った。7年分の原稿が手の中にある。*"
+  },
+  "hidden_homeroom_d5_6_ins11": {
+    "name": "{name}",
+    "text": "読みます。必ず。"
+  },
+  "hidden_homeroom_d5_6_ins12": {
+    "name": "担任先生",
+    "text": "*髪をかき上げながら*「……感想文はいらない。」"
+  },
+  "hidden_homeroom_d5_6_ins13": {
+    "name": "{name}",
+    "text": "嘘でしょ。"
+  },
+  "hidden_homeroom_d5_6_ins14": {
+    "name": "担任先生",
+    "text": "*ふっと笑って*「……そうだね。一行でもいいから書いて。」"
+  },
+  "hidden_homeroom_d5_6_ins15": {
+    "name": "{name}",
+    "text": "*一行。——デビューに三度落ちた人が、生徒の一行感想を待っている。これが告白じゃなかったら何なんだ。*"
+  },
+  "hidden_homeroom_d5_6_ins16": {
+    "name": "{name}",
+    "text": "*担任が教室を出ようとして——ドアの前で止まる。*"
+  },
+  "hidden_homeroom_d5_6_ins17": {
+    "name": "担任先生",
+    "text": "「{name}。」"
+  },
+  "hidden_homeroom_d5_6_ins18": {
+    "name": "{name}",
+    "text": "*担任が立ち止まる。クリップボードをぎゅっと握る。——そしてゆっくり振り返る。*"
+  },
+  "hidden_homeroom_d5_6_ins19": {
+    "name": "担任先生",
+    "text": "「……卒業したら。」*声がかすれる。*「うん。卒業したら。」"
+  },
+  "hidden_homeroom_d5_6_ins20": {
+    "name": "{name}",
+    "text": "*「卒業したら」が二回。——一回目は許可、二回目は待つことの表明。*"
+  },
+  "hidden_homeroom_d5_7_ins": {
+    "name": "{name}",
+    "text": "*「先生としてではない名前で」。——卒業後のことを言っている。今ではないけど、いつか。*"
+  },
+  "hidden_homeroom_d5_7_ins2": {
+    "name": "担任先生",
+    "text": "「……教育的関心の範囲をちょっと超えちゃったかな。最後だから。最後の一回だけ。」"
+  },
+  "hidden_nurse_d5_2_ins": {
+    "name": "{name}",
+    "text": "*行事の合間の休憩時間。保健室の前を通りかかると——ドアが開く。保健先生が出てくる。*"
+  },
+  "hidden_nurse_d5_2_ins2": {
+    "name": "{name}",
+    "text": "*——目の前で鉢合わせした。*"
+  },
+  "hidden_nurse_d5_2_ins3": {
+    "name": "保健先生",
+    "text": "「あれ？{name}。」"
+  },
+  "hidden_nurse_d5_4_ins": {
+    "name": "{name}",
+    "text": "先生。"
+  },
+  "hidden_nurse_d5_4_ins2": {
+    "name": "{name}",
+    "text": "*気まずい沈黙。——昨日までは自然だったのに、今日は何かが違う。*"
+  },
+  "hidden_nurse_d5_4_ins3": {
+    "name": "保健先生",
+    "text": "「最後の日だね。」"
+  },
+  "hidden_nurse_d5_1_ins": {
+    "name": "{name}",
+    "text": "*行事の最終日と言ったけど、別の意味が滲んでいる。*"
+  },
+  "hidden_nurse_d5_1_ins2": {
+    "name": "保健先生",
+    "text": "*軽く笑って*「卒業したら遊びに来て。」"
+  },
+  "hidden_nurse_d5_1_ins3": {
+    "name": "{name}",
+    "text": "卒業はまだ先ですよ。"
+  },
+  "hidden_nurse_d5_1_ins4": {
+    "name": "保健先生",
+    "text": "「……それまでは、具合が悪かったら来て。」"
+  },
+  "hidden_nurse_d5_1_ins5": {
+    "name": "{name}",
+    "text": "*「卒業したら遊びに来て」から「具合が悪かったら来て」に後退した。——線を越えかけて、戻ったんだ。*"
+  },
+  "hidden_nurse_d5_3_ins": {
+    "name": "{name}",
+    "text": "*保健先生が一瞬止まる。声が一段低くなる。*"
+  },
+  "hidden_nurse_d5_3_ins2": {
+    "name": "保健先生",
+    "text": "「……それは。」"
+  },
+  "hidden_nurse_d5_3_ins3": {
+    "name": "{name}",
+    "text": "先生？"
+  },
+  "hidden_nurse_d5_3_ins4": {
+    "name": "保健先生",
+    "text": "*また笑って*「それは卒業してから聞いて。——その時は答えるから。」"
+  },
+  "hidden_nurse_d5_3_ins5": {
+    "name": "{name}",
+    "text": "*「卒業してから」。——担任先生と同じ言葉だ。今はダメだけど、いつか。「先生」という肩書きが外れる日。*"
+  },
+  "hidden_nurse_d5_3_ins6": {
+    "name": "保健先生",
+    "text": "「さ、行って。行事サボっちゃダメでしょ～」"
+  },
+  "hidden_nurse_d5_3_ins7": {
+    "name": "{name}",
+    "text": "*保健先生が保健室の中に入ろうとして——立ち止まる。*"
+  },
+  "hidden_nurse_d5_3_ins8": {
+    "name": "保健先生",
+    "text": "「……{name}。」"
+  },
+  "hidden_nurse_d5_choice_b_ins2": {
+    "name": "{name}",
+    "text": "*声が一段低くなった。ふざけた表情が完全に消えている。——この人の本気はいつもこうやって来る。*"
+  },
+  "hidden_nurse_d5_choice_b_ins3": {
+    "name": "{name}",
+    "text": "*保健先生が笑いかけて——止まる。口を閉じる。*"
+  },
+  "hidden_nurse_d5_choice_b_ins4": {
+    "name": "保健先生",
+    "text": "「……電話番号。医療相談用？」"
+  },
+  "hidden_nurse_d5_choice_b_ins5": {
+    "name": "保健先生",
+    "text": "*眼鏡を直しながら*「……わかった。でも卒業してから使って。」"
+  },
+  "hidden_nurse_d5_choice_b_ins6": {
+    "name": "{name}",
+    "text": "*「卒業してから」。——この人は線を越えない。でも線のギリギリに電話番号を置いた。*"
+  },
+  "hidden_nurse_d5_choice_b_ins7": {
+    "name": "保健先生",
+    "text": "「バンドエイド貼ろうか？」"
+  },
+  "hidden_nurse_d5_choice_b_ins8": {
+    "name": "{name}",
+    "text": "……傷、ないですけど。"
+  },
+  "hidden_nurse_d5_6_ins": {
+    "name": "{name}",
+    "text": "*Day 1の決め台詞。——あの時はキャラ紹介だった。今は本気だ。*"
+  },
+  "hidden_nurse_d5_6_ins2": {
+    "name": "{name}",
+    "text": "*保健先生がバンドエイドを取り出して僕の手の甲に貼る。ゆっくりと。——バンドエイドに小さな文字が書いてある。*"
+  },
+  "hidden_nurse_d5_6_ins3": {
+    "name": "{name}",
+    "text": "*「卒業したら保健室じゃなくてカフェで会おう——♡」*"
+  },
+  "hidden_nurse_d5_6_ins4": {
+    "name": "{name}",
+    "text": "*今回のハートは——医療的関心ではなさそうだ。*"
+  }
 }

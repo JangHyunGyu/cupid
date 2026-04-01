@@ -265,7 +265,7 @@
     },
     "true_dain_4": {
         "name": "{name}",
-        "text": "*The heartbeat under my fingertips is vivid.*"
+        "text": ""
     },
     "true_dain_5": {
         "name": "{name}",
@@ -333,7 +333,7 @@
     },
     "day5_ending_good": {
         "name": "{name}",
-        "text": "*My heart wavered, and I made mistakes.*"
+        "text": "*I might have given someone hope and then taken it away. I'm sorry.*"
     },
     "good_1": {
         "name": "{name}",
@@ -341,11 +341,11 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*A voice comes from ahead.*"
+        "text": ""
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*She took a step closer.*"
+        "text": ""
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -361,11 +361,11 @@
     },
     "good_2_seo": {
         "name": "{name}",
-        "text": "*Walking side by side. Cherry blossoms scatter beneath the streetlights. A petal lands on Seoyeon’s hair.*"
+        "text": "*The cherry blossom path. Seoyeon stands a step ahead of me. She looks back.*"
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*Seoyeon pretends to be perfect — but I wasn’t perfect either. Maybe that’s why we fit.*"
+        "text": "*A cherry blossom petal lands on Seoyeon's hair. I'm debating whether to brush it off — and she tilts her head first.*"
     },
     "good_4_seo": {
         "name": "{name}",
@@ -373,11 +373,11 @@
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*Even when the cherry blossom path ends, it’s okay. The story isn’t over yet.*"
+        "text": "*The cherry blossoms will bloom next year too. We walked side by side.*"
     },
     "good_2_yuna": {
         "name": "{name}",
-        "text": "*We climbed up to the rooftop. Yuna is already leaning against the railing. The night skyline sprawls beneath our feet.*"
+        "text": "*The rooftop. Yuna leans against the railing. The wind scatters her hair.*"
     },
     "good_3_yuna": {
         "name": "{name}",
@@ -385,19 +385,19 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*On the rooftop. I want to be remembered as myself, not as a stand-in. Even if it takes time.*"
+        "text": "*I was chasing the shadow of someone who disappeared.*"
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*A single star is visible. Imperfect, and that’s okay. The story isn’t over yet.*"
+        "text": "*On the rooftop. I want to be remembered as myself, not as a stand-in. Even if it takes time.*"
     },
     "good_2_dain": {
         "name": "{name}",
-        "text": "*Standing side by side in front of the school gate. The sunset is fading. Dain holds a volleyball in one hand.*"
+        "text": "*In front of the school gate. Dain is tossing a volleyball, waiting.*"
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Dain kept running even when her knees hurt. I can — keep running a little longer too.*"
+        "text": "*Dain throws the volleyball. I catch it. — This is her way of making up.*"
     },
     "good_4_dain": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*The sun sets beyond the school gate. Imperfect, and that’s okay. The story isn’t over yet.*"
+        "text": "*In front of the school. The last serve hasn't come yet. The game isn't over.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -425,7 +425,7 @@
     },
     "mayhem_1": {
         "name": "{name}",
-        "text": "*Seoyeon brushed past me in the hallway. She didn’t turn her head. That 0.5 seconds — this time it was a blade aimed at me.*"
+        "text": "*Seoyeon brushed past me in the hallway. She didn't turn her head. — Of course.*"
     },
     "mayhem_2": {
         "name": "{name}",
@@ -445,7 +445,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*I'm standing in front of the school gate. Cherry blossoms are falling. No one picks them up.*"
+        "text": ""
     },
     "mayhem_7": {
         "name": "System",
@@ -481,7 +481,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*It's only a matter of time before it breaks. — When it does, who will be hurt the most?*"
+        "text": ""
     },
     "harem_8": {
         "name": "System",
@@ -497,27 +497,27 @@
     },
     "confess_fail_2": {
         "name": "{name}",
-        "text": "*But confession alone wasn’t enough. What I’d built over five days — was too thin to support those three words.*"
+        "text": "*It's not rejection. It's timing. — The result of five days that weren't enough to get close.*"
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": "*At my old school, I regretted not speaking up. At this school, I spoke up — and a different kind of emptiness remained.*"
+        "text": ""
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*I walk out the school gate. My phone is quiet. — But I didn’t run this time. That alone is different.*"
+        "text": ""
     },
     "confess_fail_5": {
         "name": "System",
-        "text": "--- CONFESS FAIL END ---"
+        "text": "─── FRIEND END (Confession Failed) ───"
     },
     "day5_ending_friend": {
         "name": "{name}",
-        "text": "*I couldn’t convey my feelings. No — I chose not to.*"
+        "text": "*In the end, I couldn't say it.*"
     },
     "friend_1": {
         "name": "{name}",
-        "text": "*In the end, I couldn't say it.*"
+        "text": "*The cherry blossoms are being blown away by the wind.*"
     },
     "friend_2": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "friend_3": {
         "name": "{name}",
-        "text": "*I was like this at my old school too. Here I am, doing it again.*"
+        "text": ""
     },
     "friend_4": {
         "name": "{name}",
@@ -727,7 +727,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Homeroom Teacher",
-        "text": "I finished the manuscript. — I could write it because you were my first reader. I asked for one line and you came back with three pages."
+        "text": "I finished the manuscript. — I could write it because you were my first reader. I asked for one line and you came back with three pages. *A soft laugh* A creative writing teacher nearly crying over a student's review — that's a secret."
     },
     "hidden_true_homeroom_6": {
         "name": "Homeroom Teacher",
@@ -807,7 +807,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "School Nurse",
-        "text": "Oh, a graduate. A patient actually coming to say goodbye. That's actually sweet."
+        "text": "Oh, a graduate."
     },
     "hidden_good_nurse_2": {
         "name": "School Nurse",
