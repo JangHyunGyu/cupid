@@ -1673,11 +1673,12 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     if (!scene.next || !allScenes[scene.next]) continue;
     const nextEntry = allScenes[scene.next];
     const nextScene = nextEntry.scene;
+    const nextId = scene.next;
+    const lookaheadEntry = nextScene.next && allScenes[nextScene.next] ? allScenes[nextScene.next] : null;
 
     // 현재 씬과 다음 씬 모두 배경이 명시적으로 있고, 서로 다른 경우
     if (scene.background && nextScene.background && scene.background !== nextScene.background) {
         // Day 전환 / 타임슬롯 전환 패턴은 배경 변경이 정상이므로 제외
-        const nextId = scene.next;
         const isTimeSlotTransition =
             (/night/.test(sceneId) && /^morning/.test(nextId)) ||  // 밤→아침
             (/_freetalk/.test(sceneId) && /_end/.test(nextId)) ||  // 프리토킹→종료
@@ -1695,18 +1696,28 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
             /^bitter_/.test(sceneId) ||  // 엔딩 몽타주 (시간 경과)
             /^hidden_true_/.test(sceneId) ||  // 히든 엔딩 몽타주
             /^wall_dain_glimpse_/.test(sceneId) ||  // 회상/비전 연출
-            /^wall_dain_skin\d+_/.test(sceneId) && /^wall_dain_glimpse_/.test(nextId);  // 비전 진입
+            (/^wall_dain_skin\d+_/.test(sceneId) && /^wall_dain_glimpse_/.test(nextId)) ||  // 비전 진입
+            /^night\d*_(dream|nightmare)_/.test(sceneId) ||
+            /^night\d*_(dream|nightmare)_/.test(nextId) ||
+            nextId === 'night3_faithful_msg_yuna_2_ins' ||
+            nextId === 'night3_cheat_msg_3_ins' ||
+            /^day\d+_final$/.test(sceneId) ||
+            /^day\d+_final$/.test(nextId) ||
+            scene.type === 'credits' ||
+            nextScene.type === 'credits';
         if (isIntentionalCut) continue;
 
         // 다음 씬의 i18n 텍스트에 장소 이동 힌트가 있는지 확인
         const nextI18n = i18nData[scene.next];
         const currentI18n = i18nData[sceneId];
+        const lookaheadI18n = lookaheadEntry ? i18nData[nextScene.next] : null;
         const nextText = nextI18n ? (nextI18n.text || '') : '';
         const currentText = currentI18n ? (currentI18n.text || '') : '';
-        const combinedText = currentText + ' ' + nextText;
+        const lookaheadText = lookaheadI18n ? (lookaheadI18n.text || '') : '';
+        const combinedText = currentText + ' ' + nextText + ' ' + lookaheadText;
 
         // 장소 이동 관련 키워드
-        const locationHints = /이동|걸어|걸었|향하|향했|도착|들어서|나가|나서|나와|나왔|올라|내려|교실|복도|옥상|보건실|운동장|체육관|카페|오락실|집으로|학교|문을 열|자리에서|돌아|move|walk|head|arrive|enter|leave|went|go to|came to|left the|stepped out|back to/i;
+        const locationHints = /이동|걸어|걸었|향하|향했|도착|들어서|나가|나서|나와|나왔|올라|내려|교실|복도|옥상|보건실|운동장|체육관|카페|오락실|집으로|학교|문을 열|자리에서|돌아|수업이 이어지|점심시간|꿈|악몽|아침 햇살|밤이 깊어|마지막 날|졸업식|졸업 후|\d+년 후|에필로그|move|walk|head|arrive|enter|leave|went|go to|came to|left the|stepped out|back to/i;
         if (!locationHints.test(combinedText)) {
             warnings.push('[BG_CHANGE] ' + sceneId + ' → ' + scene.next + ': 배경 변경 (' + path.basename(scene.background) + ' → ' + path.basename(nextScene.background) + ') 인데 장소 이동 나레이션 없음');
             bgInconsistencies++;

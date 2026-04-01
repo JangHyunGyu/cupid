@@ -417,7 +417,7 @@ Object.assign(SCENARIO[3], {
         ]
     },
     "morning3_multi_from_yuna": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "morning3_end"
     },
