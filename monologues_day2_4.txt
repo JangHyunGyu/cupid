@@ -1,0 +1,1658 @@
+Total monologues found: 552
+
+1. Node: morning2_start
+   Text: 둘째 날. 어제보다 교복이 조금 편하다. 적응이 빠른 건지, 포기가 빠른 건지.
+
+2. Node: morning2_start_2
+   Text: 교실 문을 여는 순간 — 등짝에 충격.
+
+3. Node: morning2_greet_seo_2
+   Text: 서연이 먼저 다가왔다. 평소의 여유로운 톤인데, 어딘가 확인하려는 느낌.
+
+4. Node: morning2_greet_seo_others
+   Text: 다인이 교실 뒤쪽에서 흘깃 본다. 고개를 돌린다. 유나는 책에 더 파묻힌다. 페이지를 넘기는 속도가 빨라진다.
+
+5. Node: morning2_greet_seo_others_2
+   Text: 두 사람의 미세한 반응. — 눈치를 채야 하나, 못 본 척해야 하나.
+
+6. Node: morning2_greet_dain_2
+   Text: 다인이 뒤에서 어깨를 탁 친다. 이 사람의 스킨십에는 주저함이 없다.
+
+7. Node: morning2_greet_dain_others
+   Text: 서연이 클립보드를 넘기며 지나간다.
+
+8. Node: morning2_greet_dain_others_yuna
+   Text: 빈정인지 감탄인지 알 수 없다. 유나는 무반응. 하지만 쪽지를 쓰던 손이 멈춰 있다.
+
+9. Node: morning2_greet_dain_others_2
+   Text: 가볍게 웃으며 넘겼지만 — 서연의 한마디가 살짝 걸린다.
+
+10. Node: morning2_greet_yuna_1
+   Text: 자리에 앉으려는데 — 책상 위에 접힌 쪽지. '...어제, 고마웠어.'
+
+11. Node: morning2_greet_yuna_2
+   Text: 유나의 글씨. 어제보다 한 문장이 길어졌다. — 뒷면에 작게 '점심에 도서관 별관으로.'
+
+12. Node: morning2_greet_yuna_others_seo
+   Text: 웃고 있다. 하지만 시선이 쪽지 위에 0.5초 머문다.
+
+13. Node: morning2_greet_yuna_others_2
+   Text: 쪽지를 주머니에 넣었다. 두 사람의 반응이 미묘하게 다르다.
+
+14. Node: morning2_dain_6
+   Text: 아침 8시에 이 볼륨이 정상인 세계가 있다면, 거기에 다인이 대통령이겠지.
+
+15. Node: morning2_note_1
+   Text: 자리에 앉으려는데 — 책상 위에 접힌 쪽지가 하나 놓여 있다.
+
+16. Node: morning2_note_2
+   Text: '점심에 도서관 별관으로. — 유나'
+
+17. Node: morning2_note_3
+   Text: 어제와 같은 깔끔한 글씨. 짧다. 그리고 장소가 구체적이다. — 도서관 '별관'? 어제랑 다른 곳인데.
+
+18. Node: morning2_seo_1
+   Text: 쪽지를 주머니에 넣으려는데 — 복도에서 익숙한 목소리.
+
+19. Node: morning2_seo_3
+   Text: 서연이 복도를 지나가며 교실 안을 힐끗 본다. 시선이 정확히 나를 겨냥한다.
+
+20. Node: morning2_minsu_1
+   Text: 걸음을 멈추지 않았다. 하지만 시선은 분명히 이쪽이었다.
+
+21. Node: morning2_minsu_1b
+   Text: 서연이 사라진 복도를 바라보는데 — 뒤에서 의자 끄는 소리.
+
+22. Node: morning2_minsu_2
+   Text: 앞자리에서 민수가 돌아본다.
+
+23. Node: morning2_dain_claim_3
+   Text: 다인이 서연의 뒷모습을 보며.
+
+24. Node: morning2_break_transition
+   Text: 쉬는 시간. 복도로 나왔다.
+
+25. Node: morning2_break_1
+   Text: 사람이 선점의 대상인가. — 근데 반박하기가 묘하게 귀찮다.
+
+26. Node: morning2_seo_dust_1
+   Text: 1교시가 끝나고 쉬는 시간. 복도에서 서연과 스친다. 서연이 멈춘다. 내 어깨를 본다.
+
+27. Node: morning2_seo_dust_3
+   Text: 서연의 손이 내 어깨 위로 온다. 먼지를 쓸어내린다. 자연스럽게. 너무 자연스럽게.
+
+28. Node: morning2_dain_react_1
+   Text: 어깨에 닿은 감촉이 한 박자 늦게 의식된다. — 먼지 때문은 아닐 텐데.
+
+29. Node: morning2_dain_react_2
+   Text: 서연이 아무렇지 않게 걸어간다. 뒤에서 다인의 목소리.
+
+30. Node: morning2_dain_react_6
+   Text: 있었을 거다. 아마. — 중요한 건 그게 아닌 것 같지만.
+
+31. Node: morning2_haeun_1
+   Text: 서연이 사라진 복도에서 — 학생회 팔찌를 찬 여학생이 다가온다.
+
+32. Node: morning2_haeun_6c
+   Text: 부탁이라고 했지만, 눈빛은 경고다. — 이 사람, 서연을 진심으로 걱정하고 있구나.
+
+33. Node: morning2_haeun_7
+   Text: 하은이 고개를 살짝 숙이고 간다.
+
+34. Node: morning2_end
+   Text: 1년 동안 한 번도 먼저 다가간 적 없는 사람이 — 나한테는 먼저 왔다? 그건 무슨 의미지.
+
+35. Node: hidden_homeroom_d2_2
+   Text: 행정적인 거라고 한다. 이 사람은 자기 관심을 항상 업무로 포장한다.
+
+36. Node: hidden_homeroom_d2_walk
+   Text: 담임선생님을 따라 교무실로 들어갔다.
+
+37. Node: hidden_homeroom_d2_choice1
+   Text: 읽는 거. 성적표까지 챙겨보는 사람이구나.
+
+38. Node: hidden_homeroom_d2_6
+   Text: 서랍. 방금 뭔가 의식하지 않았나? — 살짝 열린 서랍 사이로 종이뭉치가 보인다. 원고지 같은 것.
+
+39. Node: hidden_homeroom_d2_choice2
+   Text: 업무라고 하면서 눈가에 웃음이 남아 있다.
+
+40. Node: hidden_homeroom_d2_12
+   Text: 교무실을 나서는데 — 서랍에서 봤던 종이뭉치가 자꾸 신경 쓰인다.
+
+41. Node: morning2_minsu_1_ins
+   Text: 서연이 복도를 돌아가는 순간 — 뒤통수가 보이기 직전, 미소가 0.3초 내려간 것 같았다. 원래 표정으로 돌아가는 스위치. — 착각인가?
+
+42. Node: morning2_break_transition_ins
+   Text: 교실 문 앞에 담임이 서 있다. 출석부를 들고, 문 쪽을 힐끗 보다가 — 나와 눈이 마주친다.
+
+43. Node: hidden_homeroom_d2_2_ins
+   Text: 담임을 따라 교무실로 향했다.* *담임의 자리는 구석이다. 책상 위에 서류와 커피잔, 그리고 — 서랍이 살짝 열려 있다.
+
+44. Node: hidden_homeroom_d2_3_ins2
+   Text: 소설. 국어 교사가 소설을 읽는 건 당연한데, 왜 말을 아끼는 느낌이지?
+
+45. Node: hidden_homeroom_d2_3_ins4
+   Text: 이상한 질문이다. 국어 성적 얘기에서 왜 갑자기 '쓰는 거'를 물어보지?
+
+46. Node: hidden_homeroom_d2_3_ins6
+   Text: 담임이 잠깐 멈칫한다. 시선이 서랍 쪽으로 갔다가 — 바로 돌아온다.
+
+47. Node: hidden_homeroom_d2_6_ins
+   Text: 담임이 자연스럽게 서랍을 밀어 닫는다. 아무렇지 않게.
+
+48. Node: hidden_homeroom_d2_8_ins3
+   Text: '걱정이 되는 쪽'. — 담임이 다인을 걱정하고 있다. 다인의 무릎 이야기를 알고 있는 건가?
+
+49. Node: hidden_homeroom_d2_8_ins5
+   Text: 입은 가렸는데 귀가 빨갛다. — 이 사람, 의외로 쉽게 당황하는구나.
+
+50. Node: hidden_homeroom_d2_11_ins
+   Text: 아무도 안 듣고 있는데 혼잣말처럼. — 이 사람은 자기 관심을 '업무'라고 포장하는 게 습관인 것 같다.
+
+51. Node: morning2_seo_dust_1_ins
+   Text: 서연이 멈춘다. 내 어깨를 본다.
+
+52. Node: morning2_haeun_6_ins
+   Text: 하은이 한 발짝 다가온다. 목소리가 낮아진다.
+
+53. Node: lunch2_start
+   Text: 점심. 어제와 달리 주머니에 유나의 쪽지가 있다. 복도 끝에서는 서연이 도시락을 들고 옥상 쪽으로 향하고 있고, 다인은 또 매점 방향으로 손짓한다.
+
+54. Node: lunch2_start_2
+   Text: 이 학교에서 점심시간은 전쟁이다.
+
+55. Node: lunch2_choice
+   Text: 누구와 함께할까.
+
+56. Node: lunch2_seo_1_check
+   Text: 옥상으로 올라간다.
+
+57. Node: lunch2_seo_1b
+   Text: 옥상. 처음 와보는 장소다. 바람이 시원하고, 시야가 탁 트여 있다. 서연이 도시락을 펼치고 있다.
+
+58. Node: lunch2_dain_1_check
+   Text: 매점 쪽으로 향한다.
+
+59. Node: lunch2_dain_1b
+   Text: 다인과 매점으로. 첫 가위바위보 대결.
+
+60. Node: lunch2_yuna_1
+   Text: 도서관 별관. 본관보다 오래된 건물이다. 학생이 거의 없다.
+
+61. Node: lunch2_yuna_2
+   Text: 계단을 올라가니 복도 끝에 유나가 서 있다. 벽에 기대어 책을 읽고 있다.
+
+62. Node: lunch2_yuna_9
+   Text: 유나가 아주 살짝 — 입꼬리가 올라간다. 거의 안 보인다.
+
+63. Node: lunch2_yuna_11
+   Text: 유나가 앞장서 걷는다. 별관 깊숙이. 아무도 안 올 것 같은 곳.
+
+64. Node: lunch2_yuna_12
+   Text: 작은 방이 나온다. 창문으로 햇살이 들어오고, 낡은 소파와 책장이 있다.
+
+65. Node: lunch2_yuna_15
+   Text: 유나가 소파에 앉는다. 옆자리를 슬쩍 비워둔다.
+
+66. Node: lunch2_yuna_choice
+   Text: '있었는데' 뒤에 말이 없다. 과거형. — 물어봐도 될까.
+
+67. Node: lunch2_yuna_c1_2
+   Text: 유나의 목소리가 한 톤 낮아졌다.
+
+68. Node: lunch2_yuna_c1_4
+   Text: 유나의 표정에 그림자가 스친다. 그 '있었는데'가 누구인지는 모르겠지만.
+
+69. Node: lunch2_yuna_c1_7
+   Text: 유나가 책을 펼친다. 대화 종료의 신호.
+
+70. Node: lunch2_yuna_c1_8
+   Text: 분위기를 바꿔야 한다. — 가벼운 말로 넘기자.
+
+71. Node: lunch2_yuna_c1_12
+   Text: 실수했다. 가볍게 넘기려 한 게 오히려 — 이 사람의 상처를 얕잡아 본 꼴이 됐다.
+
+72. Node: lunch2_yuna_c1_13
+   Text: 어색한 침묵이 흐른다. 책장 넘기는 소리만 크게 울린다.
+
+73. Node: lunch2_yuna_c1_14
+   Text: 눈치가 빠르다고 자부했는데. — 아니었다. 이 사람 앞에서는 아니었다.
+
+74. Node: lunch2_yuna_c2_1
+   Text: 아무 말 없이 옆에 앉는다. 유나가 잠깐 이쪽을 본다.
+
+75. Node: lunch2_yuna_c2_2
+   Text: 그리고 자기 책에서 한 권을 꺼내 내 쪽에 놓는다.
+
+76. Node: lunch2_yuna_c2_4
+   Text: 말 대신 책을 건네는 거. — 이 사람의 언어는 행동이구나. 서연이랑은 다른 방식으로.
+
+77. Node: lunch2_yuna_c2_5
+   Text: 침묵 속에서 나란히 책을 읽는다. 창문으로 들어오는 햇살이 따뜻하다.
+
+78. Node: lunch2_yuna_c2_9
+   Text: 두 문장. 유나치고는 긴 말이다. — 그리고 그 두 문장 안에 전부 담겨 있다.
+
+79. Node: lunch2_yuna_end
+   Text: 유나의 '있었는데'가 머릿속에 맴돈다. 유나가 보여준 이 장소의 의미가... 조금씩 느껴진다.
+
+80. Node: lunch2_seo_1
+   Text: 옥상. 어제와 같은 장소. 서연이 도시락을 펼치고 있다.
+
+81. Node: lunch2_seo_7
+   Text: 뭔가 더 듣고 싶었던 것 같은데 — 일부러 안 말했다.
+
+82. Node: lunch2_seo_8
+   Text: 도시락을 먹는데 — 옥상 문이 열린다. 다인이 올라왔다.
+
+83. Node: lunch2_seo_12
+   Text: 다인이 거리낌 없이 앉는다. 서연의 미간이 미세하게 좁아진다.
+
+84. Node: lunch2_seo_18
+   Text: 삼각형의 각이 날카로워지고 있다. — 나는 꼭짓점이 아니라 제물인 것 같다.
+
+85. Node: lunch2_seo_19
+   Text: 서연이 무심한 척 {name}의 입가를 본다.
+
+86. Node: lunch2_seo_choice
+   Text: 서연의 손이 다가온다.
+
+87. Node: lunch2_seo_c1_1
+   Text: 서연의 손가락이 입가를 스친다. 부드럽게. 천천히. — 필요 이상으로 천천히.
+
+88. Node: lunch2_seo_c1_5
+   Text: 밥풀 하나 떼는 데 3초가 필요한가? — 아무도 모르겠지만, 서연의 귓불이 빨갛다.
+
+89. Node: lunch2_seo_end_c1
+   Text: 서연의 손이 지나간 자리가 아직 신경 쓰인다. — 그리고 다인의 놀란 눈도.
+
+90. Node: lunch2_seo_c2_1
+   Text: 손등으로 입가를 닦는다.
+
+91. Node: lunch2_seo_c2_3
+   Text: 살짝 삐친 것 같다. — 근데 표정 관리는 완벽하다. 역시 이 사람은.
+
+92. Node: lunch2_seo_end_c2
+   Text: 손등에 아직 밥풀 자국이 남아 있다. 서연의 표정 관리는 완벽한데 — 입꼬리만 살짝 내려가 있다.
+
+93. Node: lunch2_dain_1
+   Text: 다인과 매점으로. 어제의 리벤지 가위바위보.
+
+94. Node: lunch2_dain_5b
+   Text: 가위바위보. — 다인이 졌다.
+
+95. Node: lunch2_dain_5
+   Text: 가위바위보. — 다인이 또 진다.
+
+96. Node: lunch2_dain_9
+   Text: 빵을 사서 복도 벤치에 앉는다. — 그때 서연이 지나간다. 도시락 가방을 들고.
+
+97. Node: lunch2_dain_10
+   Text: 서연이 이쪽을 본다. 다인 옆에 앉아 빵을 먹고 있는 나를 — 0.5초 응시하고 지나간다.
+
+98. Node: lunch2_dain_choice
+   Text: 다인이 나를 빤히 본다.
+
+99. Node: lunch2_dain_c1_1
+   Text: 다인의 표정이 미묘하게 굳는다. 소보로를 한 입 베어 물며 고개를 돌린다.
+
+100. Node: lunch2_dain_c2_1
+   Text: 다인이 고개를 끄덕이며 소보로를 한 입 베어 문다. 별 관심 없다는 듯.
+
+101. Node: lunch2_dain_c3_2
+   Text: 귓불. 빨갛다. — 이 학교 여학생들은 귀가 솔직하다.
+
+102. Node: lunch2_dain_end
+   Text: 다인의 소보로 빵 크런치 소리가 유난히 크다. — 점심시간이 점점 복잡해진다.
+
+103. Node: lunch2_yuna_c1_9_ins
+   Text: 유나의 눈빛이 순간 차가워진다.
+
+104. Node: lunch2_seo_c1_2_ins
+   Text: 다인이 눈이 커진 채 둘을 번갈아 본다.
+
+105. Node: lunch2_dain_end_ins
+   Text: 4교시 체육. 운동장에서 달리기를 하는데 — 옆 녀석이 급정거하면서 부딪혔다. 팔꿈치가 까졌다.
+
+106. Node: lunch2_dain_end_ins2
+   Text: 별거 아닌데 피가 조금 난다.
+
+107. Node: lunch2_dain_end_ins4
+   Text: 보건실 문을 연다. 어제와 같은 소독약 냄새.
+
+108. Node: lunch2_dain_end_ins8
+   Text: 장난스러운 말투는 어제와 같다. 근데 눈은 이미 상처를 살피고 있다.
+
+109. Node: lunch2_dain_end_ins9
+   Text: 보건선생님이 다가와 팔꿈치를 잡는다. 손이 차갑다.
+
+110. Node: lunch2_dain_end_ins11
+   Text: 소독약을 묻힌 솜을 꺼내 — 천천히 닦는다. 밴드를 꺼낸다.
+
+111. Node: lunch2_dain_end_ins12
+   Text: 밴드 하나 붙이는 데 — 30초면 될 걸, 왜 이렇게 꼼꼼하지?
+
+112. Node: lunch2_dain_end_ins14
+   Text: 보건선생님의 손이 멈춘다. — 0.5초. 그리고 다시 움직인다.
+
+113. Node: lunch2_dain_end_ins16
+   Text: 거짓말이다. 아까 잡았을 때 차가웠다. — 손이 따뜻해진 건 지금이다.
+
+114. Node: lunch2_dain_end_ins18
+   Text: 정성... 이건가. 아님 다른 이유가 있는 건가.
+
+115. Node: lunch2_dain_end_ins19
+   Text: 밴드를 확인하는데 — 책상 위에 노트북이 열려 있다. 화면에 뭔가 적혀 있다. 의료 기록이 아니라 — 개인 일기 같은 것.
+
+116. Node: lunch2_dain_end_ins20
+   Text: 보건선생님이 재빨리 노트북을 닫는다.
+
+117. Node: lunch2_dain_end_ins22
+   Text: 비밀이라기엔 가벼운데, 알려주는 행위 자체가 — 가까워졌다는 의미다.
+
+118. Node: lunch2_dain_end_ins24
+   Text: 장난스럽게 넘기지만, 닫는 속도가 빨랐다. — 보여주고 싶지 않은 게 있다.
+
+119. Node: lunch2_dain_end_ins27
+   Text: 보건선생님이 잠깐 멈춘다. 그리고 — 목소리가 한 톤 낮아진다.
+
+120. Node: lunch2_dain_end_ins29
+   Text: 장난기가 사라졌다. — 0.5초. 그리고 다시 돌아온다.
+
+121. Node: lunch2_dain_end_ins31
+   Text: 방금 목소리가 달라진 거. — 착각인가?
+
+122. Node: after2_start
+   Text: 방과후. 핸드폰에 알림이 두 개 와 있다.
+
+123. Node: after2_msg_yuna
+   Text: 유나에게서는 아무 연락이 없다. — 그게 유나다. 근데 가방을 챙기다 보니 주머니에서 아침 쪽지가 나온다. '도서관 별관'이라는 글씨가 눈에 밟힌다.
+
+124. Node: after2_nurse_transition
+   Text: 그런데 — 체육 시간에 까진 팔꿈치가 아까부터 계속 신경 쓰인다. 보건실에 들러야겠다.
+
+125. Node: after2_choice
+   Text: 어디로 갈까.
+
+126. Node: after2_dain_1
+   Text: 체육관. 다인이 배구 네트 앞에서 준비운동을 하고 있다.
+
+127. Node: after2_dain_5
+   Text: 그건 네가 일찍 온 거지, 내가 늦은 게 아닌데.
+
+128. Node: after2_dain_9
+   Text: 서브를 한다. — 의외로 두 번째 서브가 깔끔하게 넘어간다.
+
+129. Node: after2_dain_11
+   Text: 랠리가 오간다. 다인의 움직임은 — 확실히 보통이 아니다. 빠르고, 정확하고, 몸이 기억하고 있는 움직임.
+
+130. Node: after2_dain_11b
+   Text: 체육관을 나와 거리를 걸었다.
+
+131. Node: after2_dain_skinship_1
+   Text: 다인이 손을 번쩍 든다. 하이파이브.
+
+132. Node: after2_dain_skinship_3
+   Text: 손을 뗐다. 안 미안해 보인다. — 손바닥이 아직 뜨겁다.
+
+133. Node: after2_dain_end
+   Text: 눈이 반달 모양이다. 어제도 봤던 그 눈. — 이 사람은 진심으로 즐길 때 저렇게 되는구나.
+
+134. Node: after2_dain_end_3
+   Text: 다인이 젓가락을 멈춘다. 아주 짧게.
+
+135. Node: after2_dain_end_3c
+   Text: '이었거든'. 과거형. — 왠지 묻지 않는 게 나을 것 같다.
+
+136. Node: after2_dain_end_3e
+   Text: 화제가 바뀌었다. — 일부러 바꾼 건지, 진짜 매운 건지. 아마 둘 다.
+
+137. Node: after2_dain_return
+   Text: 학교로 돌아오는 길. 교문 앞에 다다랐다.
+
+138. Node: after2_seo_1
+   Text: 학생회실. 서연이 서류 더미 앞에 앉아 있다. 혼자.
+
+139. Node: after2_seo_7
+   Text: 이 사람의 어휘에서 '부탁'이라는 단어는 존재하지 않는 것 같다.
+
+140. Node: after2_seo_8b
+   Text: 서연이 서류에서 눈을 떼고 이쪽을 본다.
+
+141. Node: after2_seo_choice1
+   Text: 직접 칭찬이라고 말해주는 거. — 이 사람치고는 드문 일인 것 같다.
+
+142. Node: after2_seo_sunset_joke
+   Text: 서연이 잠깐 멈춘다. 그리고 — 웃는다. 입꼬리가 아니라 눈이 웃는다. 처음 보는 웃음.
+
+143. Node: after2_seo_neck_react
+   Text: 서연이 어깨를 돌린다. 뭉친 소리가 난다.
+
+144. Node: after2_seo_neck_high
+   Text: 눈을 감고 몸을 맡긴다.
+
+145. Node: after2_seo_neck_low
+   Text: 몸을 살짝 뺀다.
+
+146. Node: after2_seo_9
+   Text: 노을이 학생회실을 물들인다. 서류 정리가 거의 끝났다.
+
+147. Node: after2_seo_choice2
+   Text: 서류 정리가 거의 끝났다.
+
+148. Node: after2_seo_stay
+   Text: 서연이 서류를 내려놓고 창밖을 본다. 노을빛이 얼굴에 닿는다.
+
+149. Node: after2_seo_stay_3c
+   Text: '여기서만'. — 이 옥상이든 학생회실이든, 서연에게는 가면을 벗을 수 있는 장소가 필요한 사람이다.
+
+150. Node: after2_seo_leave
+   Text: 서연이 고개를 끄덕인다.
+
+151. Node: after2_seo_end
+   Text: 학생회실을 나섰다. 노을이 복도를 물들이고 있다.
+
+152. Node: after2_seo_skinship_1
+   Text: 서연이 손을 뻗는다. 옷깃에 묻은 먼지를 떼어준다. 손이 목에 스친다.
+
+153. Node: after2_seo_skinship_2
+   Text: 서연의 손가락이 0.5초 멈춘다. 아무 말도 안 하고 고개를 돌린다.
+
+154. Node: after2_seo_return
+   Text: 학생회실을 나섰다. 교문 쪽으로 걸어간다.
+
+155. Node: after2_yuna_1
+   Text: 유나한테는 연락이 없었다. 근데 발이 도서관 쪽으로 향하고 있다. 왜? — 모르겠다. 아침 쪽지 때문인 것 같기도 하고.
+
+156. Node: after2_yuna_2
+   Text: 조용히 들어간다. 유나가 소파에서 책을 읽고 있다. 창문으로 노을이 들어오고 있다.
+
+157. Node: after2_yuna_6
+   Text: 묘하게 꼬인 질문이다. — 근데 어딘가 기다리고 있었다는 뉘앙스가 있다.
+
+158. Node: after2_yuna_8b
+   Text: 우연히 열려 있는 문. — 유나의 '우연히'는 '계획적으로'와 같은 뜻이다.
+
+159. Node: after2_yuna_8d
+   Text: 조용한 피아노 곡이 흐른다. 노을이 방을 물들이고 있다.
+
+160. Node: after2_yuna_9
+   Text: 유나가 책을 읽고, 나는 음악을 듣는다. 아무 말이 없다. — 불편하지 않다.
+
+161. Node: after2_yuna_choice
+   Text: 유나가 두 문장을 연속으로 말했다. — 원래 한 줄짜리 사람인데.
+
+162. Node: after2_yuna_everyday
+   Text: 유나가 이어폰 줄을 만지작거린다.
+
+163. Node: after2_yuna_quiet_react
+   Text: 유나가 아주 작게 — 입꼬리가 올라간다.
+
+164. Node: after2_yuna_end
+   Text: 노을이 지고 있다. 유나와 나란히 앉아 음악을 듣는다. 아무 말도 필요 없는 시간.
+
+165. Node: after2_yuna_skinship_1
+   Text: 같은 책을 잡으려다 — 손이 겹쳤다.
+
+166. Node: after2_yuna_skinship_2
+   Text: 유나가 먼저 빼지 않는다. 3초. 유나가 시선을 내린다.
+
+167. Node: after2_yuna_skinship_3
+   Text: 손을 뗐다. 유나가 책을 집어 건넨다. 아무 말 없이.
+
+168. Node: after2_yuna_return
+   Text: 도서관 별관을 나왔다. 노을이 지고 있다.
+
+169. Node: minsu_warn_1
+   Text: 하교길. 교문을 나서는데 — 민수가 뒤에서 따라온다.
+
+170. Node: minsu_warn_10
+   Text: 알고 있다. 모른 척하고 있을 뿐이다.
+
+171. Node: minsu_warn_12
+   Text: 할 말이 없다. 민수가 맞다. — 눈치 빠르다고 자부하면서, 정작 내가 뿌리고 다니는 오해는 못 보고 있었다.
+
+172. Node: minsu_warn_14
+   Text: — 걷던 발걸음이 우뚝 멈췄다.
+
+173. Node: hidden_nurse_d2_1
+   Text: 체육 시간에 팔꿈치가 까졌다. 별거 아닌데 피가 조금 난다.
+
+174. Node: hidden_nurse_d2_choice1
+   Text: 밴드를 붙여주는 손이 가깝다.
+
+175. Node: hidden_nurse_d2_6
+   Text: 밴드를 확인하는데 — 책상 위에 노트북이 열려 있다. 화면에 뭔가 적혀 있다. 의료 기록이 아니라 — 개인 일기 같은 것.
+
+176. Node: hidden_nurse_d2_choice2
+   Text: 비밀이라며 웃는데 — 눈은 안 웃고 있다.
+
+177. Node: after2_dain_9_ins2
+   Text: 다인이 자세를 낮춘다. 눈빛이 달라졌다.
+
+178. Node: after2_dain_9_ins4
+   Text: 랠리가 오간다. 다인의 움직임은 — 확실히 보통이 아니다. 빠르고, 정확하고, 몸이 기억하고 있는 움직임.
+
+179. Node: after2_dain_9_ins5
+   Text: 이 여자, 진짜 잘한다. — 운동을 좋아하는 수준이 아니라, 인생을 걸었던 사람의 몸놀림이다.
+
+180. Node: after2_dain_9_ins6
+   Text: 결국 3:2. 아슬아슬하게 이겼다.
+
+181. Node: after2_dain_end_ins
+   Text: 학교 앞 떡볶이집.
+
+182. Node: after2_dain_end_ins2
+   Text: 다인이 떡볶이를 후후 불며 말한다.
+
+183. Node: after2_dain_end_ins3
+   Text: 학교 앞 떡볶이집.
+
+184. Node: after2_seo_4_ins
+   Text: 이 사람의 어휘에서 '부탁'이라는 단어는 존재하지 않는 것 같다.
+
+185. Node: after2_seo_6_ins
+   Text: 이 사람의 어휘에서 '부탁'이라는 단어는 존재하지 않는 것 같다.
+
+186. Node: after2_seo_6_ins2
+   Text: 서류 정리를 시작한다. 행사 예산안, 동아리 신청서. 양이 꽤 많다.
+
+187. Node: after2_seo_8b4_ins
+   Text: 직접 칭찬이라고 말해주는 거. — 이 사람치고는 드문 일인 것 같다.
+
+188. Node: after2_seo_8b4_ins2
+   Text: 정리를 하다가 서연이 목을 돌린다. 뭉친 것 같다.
+
+189. Node: after2_seo_neck_react_ins2
+   Text: 서연이 일어나 내 뒤로 온다. 어깨에 손을 올린다.
+
+190. Node: after2_seo_neck_high_ins2
+   Text: 누구 손이? — 서연 손이 내 어깨 위에 있는 건데. 말이 뒤집혔다. 그만큼 긴장한 거다.
+
+191. Node: after2_yuna_1_ins
+   Text: 별관 복도. 인기척이 없다. — 비밀 독서 공간 문이 살짝 열려 있다.
+
+192. Node: after2_yuna_1_ins2
+   Text: 별관 복도. 인기척이 없다. — 비밀 독서 공간 문이 살짝 열려 있다.
+
+193. Node: after2_yuna_2_ins
+   Text: 유나가 고개를 든다. 놀라지 않는다.
+
+194. Node: after2_yuna_2_ins2
+   Text: 유나가 고개를 든다. 놀라지 않는다.
+
+195. Node: after2_yuna_8b_ins
+   Text: 옆에 앉는다. 유나가 자기 이어폰 한쪽을 건넨다.
+
+196. Node: after2_yuna_8b_ins2
+   Text: 옆에 앉는다. 유나가 자기 이어폰 한쪽을 건넨다.
+
+197. Node: after2_yuna_choice_pre3_ins
+   Text: 유나가 두 문장을 연속으로 말했다. — 원래 한 줄짜리 사람인데.
+
+198. Node: minsu_warn_4_ins
+   Text: 유나가 아주 작게 — 입꼬리가 올라간다.
+
+199. Node: minsu_warn_7_ins
+   Text: 민수가 걸음을 멈춘다. 돌아본다. 평소의 장난기가 없다.
+
+200. Node: minsu_warn_12_ins
+   Text: 민수가 가방 끈을 고쳐 매며.
+
+201. Node: minsu_warn_13_ins
+   Text: — 숨이 멈칫한다.
+
+202. Node: minsu_warn_15_ins3
+   Text: 전 학교. — 그 단어가 가슴에 박혔다.
+
+203. Node: minsu_warn_15_ins4
+   Text: — 걷던 발걸음이 우뚝 멈췄다.
+
+204. Node: night2_start
+   Text: 집에 돌아왔다. 샤워하고 침대에 누웠는데 — 메신저 알림이 쏟아진다.
+
+205. Node: night2_msg_1
+   Text: 세 명에게서 메시지가 왔다.
+
+206. Node: night2_msg_7
+   Text: 세 명에게 동시에 답장해야 하는 상황. — 이게 행복인지 고문인지 모르겠다.
+
+207. Node: night2_choice
+   Text: 누구에게 먼저 답장할까?
+
+208. Node: night2_reply_dain_5
+   Text: 또 세 줄 연속이다. 이 사람은 한 문장으로 끝내는 법이 없다.
+
+209. Node: night2_reply_seo_5
+   Text: '자유'라고 했지만, 안 가면 뭔가 벌어질 것 같은 톤이다.
+
+210. Node: night2_reply_yuna_3
+   Text: 잠시 침묵. — 그리고.
+
+211. Node: night2_reply_yuna_7
+   Text: 세 번째 별? — 창문을 열고 밤하늘을 본다. 별이 보인다. 세 번째 별이 어떤 건지는 모르겠지만. 유나다운 수수께끼다. 답을 말해주지 않는 사람. — 알고 싶게 만드는 사람.
+
+212. Node: night2_end_1
+   Text: 답장을 보내고 핸드폰을 내려놓았다.
+
+213. Node: night2_flashback_1
+   Text: 민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'
+
+214. Node: night2_flashback_2
+   Text: 스크롤을 한참 내렸다. 3개월 전. — 사진 한 장이 보인다. 도서관 앞에서 찍은 단체 사진. 소정이가 웃고 있다. 내 옆에서.
+
+215. Node: night2_flashback_3
+   Text: 그때 나는 '좋아해'를 한 달째 연습하고 있었다. 매일 밤 핸드폰 메모장에 써봤다. 고백 시뮬레이션. — 매번 거기서 멈췄다.
+
+216. Node: night2_flashback_4
+   Text: 그리고 3월 어느 날, 조회 시간에 옆자리 녀석이 말했다. '소정이 남친 생겼대.'
+
+217. Node: night2_flashback_5
+   Text: 핸드폰 메모장의 시뮬레이션은 38번째에서 멈춰 있다. 39번째는 없다. 쓸 필요가 없어졌으니까.
+
+218. Node: night2_flashback_6
+   Text: 전학은 소정이 때문이 아니다. 아버지 직장 때문이다. — 근데 전학이 싫지 않았다. 소정이가 웃는 복도를 매일 지나가지 않아도 되니까.
+
+219. Node: night2_flashback_7
+   Text: '이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.
+
+220. Node: night2_flashback_8
+   Text: 갤러리를 닫았다. 사진을 지울까 말까 고민하다가 — 남겨뒀다. 지우면 후회까지 지워지는 것 같아서.
+
+221. Node: night2_end_2
+   Text: 둘째 날이 끝났다. 첫날에는 호기심이었다. 이 사람들이 어떤 사람인지 궁금했다.
+
+222. Node: night2_end_3
+   Text: '신경 쓰인다'와 '좋아한다' 사이에는 아직 거리가 있다. — 근데 그 거리가 어제보다 짧아진 것 같다.
+
+223. Node: night2_end_4
+   Text: 눈을 감는다. — 내일은 조금 더 정직해져야 할지도.
+
+224. Node: night2_hidden_check
+   Text: 메신저 알림 사이에 — 또 다른 알림이 보인다.
+
+225. Node: night2_hidden_homeroom_1
+   Text: 담임선생님에게서 개인 메시지가 왔다. '{name}, 오늘 교무실 와줘서 고마웠다. 행정적인 거 끝났으니까 더 안 불러도 된다. ...근데 적응 힘들면 언제든 와.'
+
+226. Node: night2_hidden_homeroom_2
+   Text: 세 줄. 감사, 거리 두기, 다시 다가오기. — 줄다리기를 혼자서 하고 있다.
+
+227. Node: night2_hidden_homeroom_3
+   Text: '더 안 불러도 된다'와 '언제든 와'가 같은 메시지에 들어 있다. 모순인데 — 이 사람답다.
+
+228. Node: night2_hidden_nurse_1
+   Text: 건강 관리 앱 알림. '보건실 기록: {name} — 팔꿈치 찰과상 (경미). 메모: 밴드 내일 아침에 갈아줄게. 밴드 갈아주는 건 의료 행위니까 거부권 없음 ^^'
+
+229. Node: night2_hidden_nurse_2
+   Text: 거부권 없음. — 의료적 강제인 건지 개인적 관심인 건지, 이모티콘이 경계를 흐린다.
+
+230. Node: night2_start_ins
+   Text: 세 명. 동시에.
+
+231. Node: night2_reply_yuna_6_ins
+   Text: 세 번째 별? — 창문을 열고 밤하늘을 본다. 별이 보인다. 세 번째 별이 어떤 건지는 모르겠지만.
+
+232. Node: night2_reply_yuna_6_ins2
+   Text: 유나다운 수수께끼다. 답을 말해주지 않는 사람. — 알고 싶게 만드는 사람.
+
+233. Node: night2_reply_yuna_6_ins3
+   Text: 메신저 알림 사이에 — 담임선생님에게서 개인 메시지가 왔다.
+
+234. Node: night2_end_1_ins
+   Text: 둘째 날이 끝났다.
+
+235. Node: night2_end_2_ins
+   Text: 오늘은 — 좀 다르다. 궁금한 게 아니라, 신경이 쓰인다. 뭘 하고 있을지, 내일 뭐라고 말할지.
+
+236. Node: night2_end_2_ins2
+   Text: 민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'
+
+237. Node: night2_flashback_6_ins
+   Text: '이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.
+
+238. Node: night2_flashback_6_ins2
+   Text: '이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.
+
+239. Node: night2_end_3_ins
+   Text: 문제는 그 거리가 생각보다 빠르게 좁아지고 있다는 거다.
+
+240. Node: night2_end_4_ins
+   Text: 냉장고를 열었다. 별거 없다. 남은 밥, 계란, 김. — 내일은 뭔가 해가고 싶다는 생각이 들었다. 누구한테? 그건 모르겠다. 그냥, 해가고 싶었다.
+
+241. Node: night2_end_4_ins2
+   Text: 대충 도시락을 쌌다. 잘 만든 건 아니다. 정성이라고 하기엔 좀 부끄러운 수준. — 근데 안 하는 것보다는 낫겠지.
+
+242. Node: morning3_start
+   Text: 셋째 날. 늦잠을 잤다. 알람을 세 번이나 꺼버렸다. 어젯밤 늦게까지 메시지 보느라 늦게 잔 탓이다.
+
+243. Node: morning3_start_2
+   Text: 전력 질주로 등굣길을 달린다. — 교문이 보인다. 그리고.
+
+244. Node: morning3_seo_gate_1
+   Text: 교문 앞에 서연이 서 있다. 서두르는 기색 없이.
+
+245. Node: morning3_seo_gate_warm_1
+   Text: 서연이 평소와 다르게 교문 앞에서 기다리고 있다.
+
+246. Node: morning3_seo_gate_warm_3
+   Text: 손에 아무것도 없다. 서류도, 클립보드도.
+
+247. Node: morning3_seo_gate_warm_4
+   Text: 서연이 아무 말 없이 나란히 걷기 시작한다. — 교문에서 교실까지, 이 거리가 이렇게 짧았나.
+
+248. Node: morning3_seo_gate_7
+   Text: 서연이 걸어간다. 당당하게. 늦었는데도 서두르지 않는다. — 이 사람은 늦어도 당당하다. 아니, 당당한 척하는 게 몸에 배어 있는 거다.
+
+249. Node: morning3_seo_gate_cold_1
+   Text: 서연이 지나가다 잠깐 멈춘다.
+
+250. Node: morning3_seo_gate_cold_3
+   Text: 톤이 사무적이다. 교문을 지나가는 서연의 뒷모습이 멀어진다.
+
+251. Node: morning3_yuna_gate_1
+   Text: 교문 앞에서 멍하니 서 있는 유나를 발견한다. 눈이 반쯤 감겨 있다.
+
+252. Node: morning3_yuna_gate_warm_1
+   Text: 교문 벽에 기대어 서 있던 유나가 쪽지를 건넨다.
+
+253. Node: morning3_yuna_gate_warm_3
+   Text: 쪽지를 꺼냈다. '기다렸어.'
+
+254. Node: morning3_yuna_gate_warm_4
+   Text: 유나와 나란히 걷는다. 아무 말이 없다. — 그런데 이상하게 불편하지 않다.
+
+255. Node: morning3_yuna_gate_6
+   Text: 밤새 책 읽고 지각하는 사람. — 대단한 건지 한심한 건지, 아무튼 유나답다.
+
+256. Node: morning3_yuna_gate_7
+   Text: 유나가 가방에서 작은 빵을 꺼낸다. 둘이 나눠 먹으며 천천히 교문을 통과한다.
+
+257. Node: morning3_yuna_gate_cold_1
+   Text: 유나가 먼저 지나간다. 눈이 마주쳤지만, 고개를 돌린다.
+
+258. Node: morning3_yuna_gate_cold_2
+   Text: 유나의 발걸음이 빨라진다. — 벽이 다시 올라간 느낌이다.
+
+259. Node: morning3_dain_gate_1
+   Text: 교문 근처에서 다인이 전력 질주로 달려온다.
+
+260. Node: morning3_dain_gate_warm_1
+   Text: 다인이 달려오며 팔짱을 낀다.
+
+261. Node: morning3_dain_gate_warm_3
+   Text: 다인의 팔이 내 팔에 감겨 있다. 힘이 세다. — 뿌리칠 수도 없고, 뿌리치고 싶지도 않다.
+
+262. Node: morning3_dain_gate_3
+   Text: 다인이 다짜고짜 손을 잡고 달리기 시작한다.
+
+263. Node: morning3_dain_gate_5
+   Text: 손이 뜨겁다. 땀 때문인지, 다인 때문인지 — 달리면서 생각할 여유가 없다.
+
+264. Node: morning3_dain_gate_cold_1
+   Text: 다인이 다른 친구들과 뛰어간다.
+
+265. Node: morning3_classroom_1
+   Text: 교실에 들어서자, 동행을 목격한 나머지 두 캐릭터의 시선이 느껴진다.
+
+266. Node: morning3_react_seo_2
+   Text: 유나가 창밖에서 시선을 돌려 잠깐 이쪽을 본다. — 다시 창밖으로.
+
+267. Node: morning3_react_yuna_1b
+   Text: 교실로 돌아왔다.
+
+268. Node: morning3_react_dain_2
+   Text: 유나가 조용히 관찰하고 있다. 쪽지를 쓰는 것 같다.
+
+269. Node: morning3_date_intro
+   Text: 1교시가 끝나고 쉬는 시간. — 세 명이 차례로 접근한다.
+
+270. Node: morning3_date_intro_b
+   Text: 쉬는 시간, 복도로 나왔다.
+
+271. Node: morning3_date_seo_choice
+   Text: 서연이 복도에서 스치며 물어본다.
+
+272. Node: morning3_date_seo_accept
+   Text: 서연 주말 약속을 수락했다.
+
+273. Node: morning3_date_seo_accept_b
+   Text: 교실로 돌아왔다.
+
+274. Node: morning3_date_seo_decline
+   Text: 서연의 제안을 거절했다.
+
+275. Node: morning3_date_seo_decline_b
+   Text: 교실로 돌아왔다.
+
+276. Node: morning3_date_dain_2
+   Text: 다인의 손가락이 책상 모서리를 두드리고 있다. 긴장하는 건가? — 아니다. 다인이 긴장할 리 없다. 이 정도는 일상이겠지.
+
+277. Node: morning3_date_dain_3
+   Text: ...맞겠지?
+
+278. Node: morning3_date_dain_choice
+   Text: 다인이 쉬는 시간에 자리로 와서 물어본다.
+
+279. Node: morning3_date_dain_accept
+   Text: 다인 주말 약속을 수락했다.
+
+280. Node: morning3_date_dain_decline_narr
+   Text: 다인의 반응을 지켜본다.
+
+281. Node: morning3_date_dain_decline_inner
+   Text: 밝게 웃으며 돌아갔다. — 그때는 몰랐다. 다인이 그 손가락 두드리는 걸 멈추고, 주머니에 손을 넣은 걸. 용기 내서 물어본 거였다는 걸.
+
+282. Node: morning3_date_dain_decline_inner_2
+   Text: 눈치 빠르다고 자부하면서. — 정작 중요한 순간에 틀린다.
+
+283. Node: morning3_date_yuna_1
+   Text: 유나의 쪽지가 책상 위에 놓여 있다.
+
+284. Node: morning3_date_yuna_2
+   Text: '주말. 헌책방 가는데. 올 거면 와. — 유나'
+
+285. Node: morning3_date_yuna_choice
+   Text: 유나의 쪽지를 읽고...
+
+286. Node: morning3_date_yuna_accept
+   Text: 유나 주말 약속을 수락했다.
+
+287. Node: morning3_date_yuna_decline
+   Text: 쪽지를 조용히 접어 주머니에 넣었다. 답장은 쓰지 않았다. — 유나가 고개를 살짝 숙인다. 알겠다는 뜻인 것 같다.
+
+288. Node: morning3_set_multiple
+   Text: ...잠깐. 주말 약속이 겹치는데. 이거 어떡하지.
+
+289. Node: hidden_homeroom_d3_1
+   Text: 쉬는 시간. 빈 교실 앞을 지나가는데 — 안에서 인기척이 난다. 조용히 다가간다.
+
+290. Node: hidden_homeroom_d3_2
+   Text: 담임선생님이 교탁에 앉아 뭔가를 쓰고 있다. 펜을 멈추고 고개를 든다. — 나와 눈이 마주친다.
+
+291. Node: hidden_homeroom_d3_choice
+   Text: 원고지다. 들킨 사람의 얼굴을 하고 있다.
+
+292. Node: hidden_homeroom_d3_reveal_choice
+   Text: 7년. 교탁 위의 원고지가 닳아 있다.
+
+293. Node: hidden_homeroom_d3_reveal_6
+   Text: 담임이 웃는다. 건조하지 않은, 살짝 어색한 웃음. 웃는 법을 까먹은 사람처럼.
+
+294. Node: hidden_homeroom_d3_end
+   Text: 담임이 머리카락을 넘기며 교실을 나선다. — 이 사람한테 '부탁'은 드문 단어다.
+
+295. Node: hidden_nurse_d3_check
+   Text: 쉬는 시간이 끝나간다.
+
+296. Node: hidden_nurse_d3_1
+   Text: 아침부터 뭔가 불안하다. 발이 보건실로 향한다. 아프지 않은데.
+
+297. Node: hidden_nurse_d3_choice1
+   Text: ...맞는 말이긴 하다.
+
+298. Node: hidden_nurse_d3_choice2
+   Text: 한 명을 제대로 — 대학병원 얘기만은 아닌 것 같다.
+
+299. Node: hidden_nurse_d3_10
+   Text: ...뭐? — 돌아봤다. 보건선생님이 창밖을 보고 있다. 웃고 있지 않다. 처음 보는 표정이다.
+
+300. Node: morning3_end
+   Text: 어느덧 수업이 이어지고 점심시간이 다가온다.
+
+301. Node: morning3_seo_gate_6_ins
+   Text: 서연이 걸어간다. 당당하게. 늦었는데도 서두르지 않는다.
+
+302. Node: morning3_yuna_gate_6_ins
+   Text: 유나가 말 없이 가방을 뒤적이더니, 작은 빵을 꺼내 반으로 갈라 내밀었다. 가방 안쪽에서 쪽지가 살짝 보인다.
+
+303. Node: morning3_yuna_gate_6_ins2
+   Text: 쪽지: 아침 안 먹었을 것 같아서.
+
+304. Node: morning3_yuna_gate_6_ins3
+   Text: 말로 하면 될 걸 굳이 쪽지로 쓰는 사람. — 그게 유나다.
+
+305. Node: morning3_dain_gate_5_ins
+   Text: 교문을 넘어가는 순간 다인이 착지하면서 읏 하고 작게 소리를 냈다. 근데 돌아보면 아무렇지 않게 웃고 있다. — 잘못 들은 건가.
+
+306. Node: morning3_react_yuna_1_ins
+   Text: 다인이 대놓고.
+
+307. Node: morning3_react_yuna_2_ins
+   Text: 서연이 교실 문 앞에서 자연스럽게.
+
+308. Node: hidden_homeroom_d3_4_ins
+   Text: 2교시와 3교시 사이 쉬는 시간. 화장실을 다녀오는 길에 — 복도 끝 빈 교실에서 불빛이 보인다.
+
+309. Node: hidden_homeroom_d3_4_ins2
+   Text: 이 시간에 빈 교실을? — 누군가 있다.
+
+310. Node: hidden_homeroom_d3_4_ins3
+   Text: 조용히 다가간다. 문이 살짝 열려 있다. — 담임선생님이 교탁에 앉아 뭔가를 쓰고 있다.
+
+311. Node: hidden_homeroom_d3_4_ins4
+   Text: 서류가 아니다. 원고지다. — 어제 교무실 서랍에서 본 그 종이뭉치.
+
+312. Node: hidden_homeroom_d3_4_ins5
+   Text: 담임이 펜을 멈추고 고개를 든다. — 나와 눈이 마주친다.
+
+313. Node: hidden_homeroom_d3_3_ins
+   Text: 0.5초. 얼어붙는다. — 담임의 표정이 처음 보는 거다. 무심한 것도, 건조한 것도 아닌. 들킨 사람의 얼굴.
+
+314. Node: hidden_homeroom_d3_3_ins2
+   Text: 담임이 재빨리 원고지를 뒤집어 놓는다.
+
+315. Node: hidden_homeroom_d3_reveal_2_ins3
+   Text: 담임이 잠깐 입을 다문다. 그리고 — 한숨을 쉰다. 짧게.
+
+316. Node: hidden_homeroom_d3_reveal_2_ins5
+   Text: 담임이 잠깐 멈춘다. 원고지를 만지작거린다. — 그리고 의자에 기대앉는다.
+
+317. Node: hidden_homeroom_d3_reveal_1_ins5
+   Text: 담임이 원고지를 한 장 들어올린다. 글씨가 빼곡하다.
+
+318. Node: hidden_homeroom_d3_reveal_3_ins2
+   Text: 담임이 원고지를 내려놓는다. 천천히.
+
+319. Node: hidden_homeroom_d3_reveal_4_ins
+   Text: 이 사람의 건조함 뒤에 이런 이야기가 있었구나. — 교탁 서랍의 미완성 원고. 7년 동안.
+
+320. Node: hidden_homeroom_d3_reveal_4_ins5
+   Text: '교육적으로'. — 또 업무로 포장하고 있다. 근데 이번에는 진심으로 후회하는 톤이다.
+
+321. Node: hidden_homeroom_d3_reveal_6_ins2
+   Text: 웃음이 어색하다. — 이 사람이 웃는 게 어색한 건지, 웃는 법을 잊은 건지.
+
+322. Node: hidden_homeroom_d3_reveal_6_ins4
+   Text: 이 사람은 7년을 '포기 못 한 거'라고 했다. 근데 관점을 바꿔주는 한마디에 — 눈이 흔들렸다.
+
+323. Node: hidden_homeroom_d3_reveal_6_ins6
+   Text: 빈 교실을 고른 이유가 실용적이면서도 — 혼자만의 공간이 필요한 사람이라는 뜻이기도 하다.
+
+324. Node: hidden_homeroom_d3_reveal_6_ins7
+   Text: 선생님이라는 직함 뒤에 숨겨진 서랍을 열어버린 기분이다. 닫아야 하는데 — 손이 떨어지지 않는다.
+
+325. Node: hidden_nurse_d3_2_ins
+   Text: 담임이 '부탁'이라는 말을 쓴다. — 이 사람한테 그건 드문 단어다.
+
+326. Node: hidden_nurse_d3_2_ins2
+   Text: 교실을 나서는데 — 뒤에서 작게.
+
+327. Node: hidden_nurse_d3_2_ins4
+   Text: 뭐가 고마운 건지는 모르겠다. 안 봐줘서? 아니면 — 여기까지 와줘서?
+
+328. Node: hidden_nurse_d3_2_ins5
+   Text: 점심시간 직전. — 아침부터 뭔가 불안하다. 양다리 스트레스인지, 아니면 모든 게 너무 빨리 진행되는 것 같은 혼란인지.
+
+329. Node: hidden_nurse_d3_1_ins
+   Text: 보건실 문을 연다.
+
+330. Node: hidden_nurse_d3_3_ins
+   Text: 보건선생님이 잠깐 나를 본다. 장난기가 사라진다.
+
+331. Node: hidden_nurse_d3_3_ins3
+   Text: 목소리가 달라졌다. 장난이 아닌 톤. — 이 사람이 진지해지면 분위기가 확 바뀐다.
+
+332. Node: hidden_nurse_d3_3_ins4
+   Text: 침대에 앉는다. 보건선생님이 물을 건넨다.
+
+333. Node: hidden_nurse_d3_5_ins
+   Text: 보건선생님이 잠깐 멈춘다. — 눈이 부드러워진다.
+
+334. Node: hidden_nurse_d3_5_ins3
+   Text: '비슷하다'는 한마디에 태도가 달라졌다. — 공감을 받으면 열리는 사람이구나.
+
+335. Node: hidden_nurse_d3_5_ins7
+   Text: 보건선생님이 잠깐 침묵한다. 그리고.
+
+336. Node: hidden_nurse_d3_5_ins11
+   Text: 정곡이다. — 이 사람의 관찰력은 장난이 아니다.
+
+337. Node: hidden_nurse_d3_5_ins14
+   Text: 보건선생님이 잠깐 멈춘다. 시선이 창밖으로 간다.
+
+338. Node: hidden_nurse_d3_6_ins
+   Text: 환자 이야기를 하는데, 왠지 지금 내 상황이랑 겹친다.
+
+339. Node: hidden_nurse_d3_6_ins2
+   Text: 보건선생님이 물컵을 내려놓는다. 천천히.
+
+340. Node: hidden_nurse_d3_6_ins4
+   Text: '도망'이라는 단어를 스스로 쓴다. — 이 사람은 자기 약함을 인정하는 데 익숙하다.
+
+341. Node: hidden_nurse_d3_6_ins5
+   Text: 보건선생님이 잠깐 멈춘다. 청진기를 만진다.
+
+342. Node: hidden_nurse_d3_6_ins7
+   Text: 한 명. — 그 한 명이 이 사람의 인생을 바꿨구나.
+
+343. Node: hidden_nurse_d3_7_ins
+   Text: 보건선생님이 나를 본다. 진지하게.
+
+344. Node: hidden_nurse_d3_8_ins
+   Text: 진심이다. 장난기가 완전히 사라졌다. — 이 사람의 목소리가 한 톤 낮아지면, 그건 진심의 신호다.
+
+345. Node: hidden_nurse_d3_8_ins4
+   Text: '아프든 안 아프든'. — 이 사람이 나를 환자가 아닌 다른 뭔가로 보기 시작한 건 아닐까.
+
+346. Node: hidden_nurse_d3_8_ins5
+   Text: 보건실을 나서는데 — 뒤에서 작게.
+
+347. Node: hidden_nurse_d3_9_ins
+   Text: ...뭐? — 발이 멈췄다. 소독약 냄새만 공기 중에 무겁게 가라앉았다.
+
+348. Node: hidden_nurse_d3_9_ins2
+   Text: 천천히 돌아봤다.
+
+349. Node: hidden_nurse_d3_9_ins3
+   Text: 보건선생님이 — 웃고 있지 않다. 청진기를 만지작거리며 창밖을 보고 있다. 방금 자기가 한 말을 자기도 몰랐던 사람처럼.
+
+350. Node: hidden_nurse_d3_9_ins4
+   Text: 0.7초.
+
+351. Node: hidden_nurse_d3_9_ins6
+   Text: 농담. — 맞겠지?
+
+352. Node: hidden_nurse_d3_9_ins7
+   Text: 맞겠지, 라고 생각하면서도 발이 안 떼진다. 방금 그 0.7초짜리 표정이 — 장난기가 없었다.
+
+353. Node: hidden_nurse_d3_9_ins8
+   Text: 소독약 냄새가 갑자기 짙어졌다. 여기서 한 발짝 더 가면 — 이 사람을 더 이상 '선생님'으로 부를 수 없을 것 같다.
+
+354. Node: lunch3_start
+   Text: 점심시간. 오늘은 특이하게 — 세 명이 한자리에 모였다.
+
+355. Node: lunch3_start_2
+   Text: {name}이 도시락을 펼친다. 서연이 자연스럽게 옆에 앉고, 다인이 맞은편에 털썩 앉고, 유나가 구석에서 자기 빵을 먹으며 슬쩍 끼어든다.
+
+356. Node: lunch3_meal_6
+   Text: 유나가 말없이 젓가락을 뻗어 제일 맛있어 보이는 소시지를 집어간다.
+
+357. Node: lunch3_meal_9
+   Text: 약탈당했다. 세 명에게 동시에.
+
+358. Node: lunch3_meal_10
+   Text: 반찬이 하나 남았다. 마지막 계란말이.
+
+359. Node: lunch3_meal_11
+   Text: 누구에게 줄까?
+
+360. Node: lunch3_choice
+   Text: 마지막 반찬을 누구에게 줄지 고민한다.
+
+361. Node: lunch3_seo_skin_1
+   Text: 도시락을 먹다가 입가에 밥풀이 묻었다. 서연이 손을 뻗어 떼어낸다.
+
+362. Node: lunch3_seo_skin_3
+   Text: 손을 거둔 서연이 젓가락을 떨어뜨렸다. — 자연스러운 동작처럼 보였지만, 손끝이 살짝 떨리고 있었다.
+
+363. Node: lunch3_seo_witness_1
+   Text: 다인이 교실 문 앞에서 멈춰 선다. 서연이 도시락을 받는 모습을 본다. ...아. 돌아간다.
+
+364. Node: lunch3_seo_witness_choice
+   Text: 다인의 뒷모습이 복도로 사라지고 있다.
+
+365. Node: lunch3_seo_chase_dain_1
+   Text: 서연이 도시락을 내려놓는다. 표정이 없다.
+
+366. Node: lunch3_seo_chase_dain_2b
+   Text: 교실로 돌아왔다.
+
+367. Node: lunch3_seo_focus_1
+   Text: 다인의 발소리가 복도에서 멀어진다.
+
+368. Node: lunch3_dain_skin_1
+   Text: 점심 내기에서 이겨서 흥분한 다인이 양팔을 벌린다. 안긴다. 1초.
+
+369. Node: lunch3_dain_skin_2
+   Text: 다인이 튕기듯 떨어진다. 귀가 빨갛다.
+
+370. Node: lunch3_dain_witness_1
+   Text: 유나가 복도를 지나가다 체육관 안을 본다. 다인이 웃고 있다. 유나는 발걸음을 빠르게 한다.
+
+371. Node: lunch3_dain_witness_2
+   Text: 다음 쉬는 시간, 유나의 자리가 비어 있다.
+
+372. Node: lunch3_dain_witness_2b
+   Text: 교실로 돌아왔다.
+
+373. Node: lunch3_yuna_skin_1
+   Text: 쪽지를 건네면서 유나가 손을 잡는다. 놓지 않는다.
+
+374. Node: lunch3_yuna_skin_3
+   Text: 문장이 끝나고 나서야 손을 뗀다.
+
+375. Node: lunch3_yuna_witness_2
+   Text: 표정이 무감정하다. 그게 더 무섭다.
+
+376. Node: lunch3_share_1
+   Text: 다 같이 나눠 먹자고 했다. 어색하지만 — 나쁘지 않은 공기다. 셋 다 웃고 있다. 진짜인지 연기인지는 모르겠지만.
+
+377. Node: lunch3_harem_1
+   Text: 셋이 나눠 먹었다. 어색하지만 — 나쁘지 않다. 아무도 화내지 않았다. 이상하게, 이게 가능한 세계도 있는 것 같다.
+
+378. Node: lunch3_expose_1
+   Text: 그때 — 다인이 먼저 입을 열었다.
+
+379. Node: lunch3_expose_3
+   Text: — 얼어붙었다.
+
+380. Node: lunch3_expose_4
+   Text: 서연의 젓가락이 멈춘다. 유나의 빵 뜯는 손이 멈춘다.
+
+381. Node: lunch3_expose_8
+   Text: 유나가 빵을 내려놓는다.
+
+382. Node: lunch3_expose_10
+   Text: 잠시 침묵.
+
+383. Node: lunch3_expose_12
+   Text: 세 쌍의 젓가락이 멈췄다. 급식실 소음이 갑자기 먼 데서 들린다.
+
+384. Node: lunch3_expose_13
+   Text: 옆 테이블에서 민수가 이쪽을 보고 있다. 고개를 절레절레 흔든다.
+
+385. Node: lunch3_expose_15
+   Text: 아무 말도 못 하겠다. 민수가 맞다.
+
+386. Node: lunch3_expose_choice
+   Text: 뭐라고 해야 하지...
+
+387. Node: lunch3_expose_honest_4
+   Text: 서연이 도시락 뚜껑을 닫는다.
+
+388. Node: lunch3_expose_honest_6
+   Text: 서연이 자리를 뜬다.
+
+389. Node: lunch3_expose_honest_7
+   Text: 느낌표가 없다. — 다인의 문장에서 느낌표가 사라졌다. 처음이다.
+
+390. Node: lunch3_expose_excuse_4
+   Text: 느낌표가 없다. — 다인의 문장에서 느낌표가 사라졌다. 처음이다.
+
+391. Node: lunch3_expose_run_1
+   Text: 도망쳤다. 교실에서. — 가장 비겁한 선택이다.
+
+392. Node: lunch3_expose_run_2
+   Text: 뒤에서 세 사람의 침묵이 등에 꽂힌다.
+
+393. Node: lunch3_end
+   Text: 점심시간이 끝났다.
+
+394. Node: lunch3_meal_10_ins
+   Text: 다 같이 먹자라고 말했다. — 근데 분위기가 이상하다.
+
+395. Node: lunch3_meal_10_ins2
+   Text: 두 사람이 자리를 뜬 뒤, 선택한 히로인과 단둘이 남는다. — 선택이라는 게 이렇게 무겁다.
+
+396. Node: lunch3_meal_10_ins3
+   Text: 서연의 젓가락이 잠깐 멈춘다. ...나눠 먹자고? 둘이 먹으려고 한 건데. 0.5초 뒤 표정 관리. 학생회장의 얼굴로 돌아간다. 뭐, 괜찮아. — 괜찮지 않다는 걸 안다.
+
+397. Node: lunch3_meal_10_ins4
+   Text: 다인이 다 같이?! 좋지!! 느낌표가 살아 있다. — 근데 목소리가 반 톤 낮다. 평소 같았으면 의자를 끌고 왔을 텐데, 오늘은 앉은 자리에서 움직이지 않는다.
+
+398. Node: lunch3_meal_10_ins5
+   Text: 유나가 고개만 끄덕인다. 쪽지를 쓰다 접어서 주머니에 넣는다. 안 건넨다. — 건네려던 쪽지에 뭐가 적혀 있었을까. 영원히 알 수 없다.
+
+399. Node: lunch3_expose_3_ins
+   Text: 나머지 두 명의 손이 멈춘다.
+
+400. Node: lunch3_expose_7_ins
+   Text: 남은 한 명이 조용히 내려놓는다.
+
+401. Node: lunch3_expose_excuse_2_ins
+   Text: 다인이 일어선다.
+
+402. Node: lunch3_expose_run_2_ins
+   Text: 점심시간이 끝나고, 오후 수업이 이어졌다. 칠판 위의 분필 소리가 유독 멀게 들린다. 누군가의 시선이 등에 닿는 걸 느낀다. — 아직 끝나지 않은 이야기가 남아 있다.
+
+403. Node: after3_start
+   Text: 방과후. 점심의 여파가 남아 있다. — 그래도 어딘가에는 가야 한다.
+
+404. Node: after3_route_check
+   Text: 방과후. 핸드폰을 확인한다.
+
+405. Node: after3_auto_dain
+   Text: 다인이와 약속이 있다. 체육관으로 향한다.
+
+406. Node: after3_auto_yuna
+   Text: 유나와 약속이 있다. 도서관 별관으로 향한다.
+
+407. Node: after3_auto_seo
+   Text: 서연이와 약속이 있다. 학생회실로 향한다.
+
+408. Node: after3_multi_choice
+   Text: 약속이 겹쳤다. — 다들 기다리고 있다. 누구에게 먼저 갈까.
+
+409. Node: after3_choice
+   Text: 어디로 갈까.
+
+410. Node: after3_reject_for_seo_1
+   Text: 복도에서 다인과 마주친다. 평소의 에너지가 없다.
+
+411. Node: after3_reject_for_seo_3
+   Text: 도서관 옆을 지나간다. 유나의 자리가 비어 있다. 쪽지가 하나 남아 있다. '...알겠어.' 세 글자.
+
+412. Node: after3_reject_for_seo_4
+   Text: 복도로 나왔다. 느낌표가 없는 다인의 문장, 세 글자밖에 안 되는 유나의 쪽지. — 선택의 무게가 어깨에 내려앉는다.
+
+413. Node: after3_reject_for_yuna_1
+   Text: 복도에서 서연이 클립보드를 정리하고 있다.
+
+414. Node: after3_reject_for_yuna_walk_gym
+   Text: 체육관 쪽으로 발길이 향한다.
+
+415. Node: after3_reject_for_yuna_3
+   Text: 다인이 체육관에서 혼자 공을 치고 있다.
+
+416. Node: after3_reject_for_yuna_3_react
+   Text: 하지만 얼굴을 돌린다. 눈이 빨갛다.
+
+417. Node: after3_reject_for_yuna_4
+   Text: 체육관을 나와 복도로 돌아왔다. 서연의 한마디, 다인의 빨간 눈. — 돌아서는 길이 무겁다.
+
+418. Node: after3_reject_for_dain_1
+   Text: 서연이 클립보드를 정리하고 있다.
+
+419. Node: after3_reject_for_dain_2b
+   Text: 유나의 아지트로 향했다.
+
+420. Node: after3_reject_for_dain_3
+   Text: 도서관에 쪽지가 없다. 유나의 가방이 없다. 일찍 간 것 같다.
+
+421. Node: after3_reject_for_dain_3b
+   Text: 다시 복도로 돌아왔다.
+
+422. Node: after3_reject_for_dain_4
+   Text: 서연의 연습한 웃음, 유나의 빈 자리. — 남은 두 사람의 자리가 비어 가는 느낌.
+
+423. Node: after3_seo_1
+   Text: 학생회실 문을 열었다. — 서연이 책상에 엎드려 있다.
+
+424. Node: after3_seo_2
+   Text: 처음 보는 모습이다. 완벽한 학생회장이 — 무방비 상태로 엎드려 있다.
+
+425. Node: after3_seo_3
+   Text: 서연이 인기척에 고개를 든다. 눈이 피곤해 보인다. 화장이 살짝 번져 있다.
+
+426. Node: after3_seo_9
+   Text: 서연이 자세를 바로잡는다. 하지만 — 평소의 완벽한 웃음이 돌아오지 않는다.
+
+427. Node: after3_seo_choice1
+   Text: 서연이 잠깐 멈춘다. 펜을 내려놓는다. 천천히.
+
+428. Node: after3_seo_choice2
+   Text: 눈가가 붉어졌다. — 울지는 않았다. 아직은.
+
+429. Node: after3_seo_end
+   Text: 그 한마디가 묵직하다. — 이 사람에게 '완벽하지 않은 모습을 보이는 것'이 얼마나 큰 일인지, 이제 조금 알 것 같다.
+
+430. Node: after3_seo_end_c2
+   Text: 비밀을 지켜주겠다는 말이 — 이 사람한테는 큰 의미인 것 같다.
+
+431. Node: after3_yuna_1
+   Text: 도서관 별관. 유나가 있던 비밀 독서 공간. — 문이 열려 있다.
+
+432. Node: after3_yuna_2
+   Text: 들어가니 유나가 없다. 대신 — 소파 위에 노트가 펼쳐져 있다. 손글씨가 빼곡하다.
+
+433. Node: after3_yuna_3
+   Text: 소설이다. 유나가 쓴 소설. — 읽어봐도 될까?
+
+434. Node: after3_yuna_4
+   Text: 첫 페이지.
+
+435. Node: after3_yuna_5
+   Text: '어느 날 전학생이 왔다. 그는 도서관에 찾아와 아무 말 없이 옆에 앉았다. — 나는 그게 싫지 않았다.'
+
+436. Node: after3_yuna_7
+   Text: 뒤에서 유나의 목소리. 돌아보니 유나가 음료수 두 개를 들고 서 있다. — 노트를 보고 있는 나를 보고 얼어붙는다.
+
+437. Node: after3_yuna_9
+   Text: 귀. 빨갛다. — 유나가 빨개지는 건 처음 본다.
+
+438. Node: after3_yuna_choice1_react
+   Text: '허구'라고 했지만, 귀가 거짓말을 하고 있다.
+
+439. Node: after3_yuna_choice2
+   Text: 유나가 잠깐 멈춘다. 노트를 내려다본다.
+
+440. Node: after3_yuna_choice2_react
+   Text: 유나가 두 문장 이상 연속으로 말했다. — 이 사람에게 그건 감정의 증거다.
+
+441. Node: after3_yuna_end
+   Text: 유나가 노트를 가슴에 꼭 안고 있다.
+
+442. Node: after3_dain_1
+   Text: 체육관. 다인이 혼자 스트레칭을 하고 있다. 가볍게 뛰어보는데 —
+
+443. Node: after3_dain_2
+   Text: — 오른쪽 다리를 살짝 삐끗한다. 인상을 쓴다.
+
+444. Node: after3_dain_6
+   Text: 느낌표가 많다. — 너무 많다. 이 사람은 괜찮지 않을 때 느낌표가 더 많아지는 건가.
+
+445. Node: after3_dain_choice
+   Text: 다인이 벤치에 앉는다. 무릎을 문지른다.
+
+446. Node: after3_dain_choice1
+   Text: 아무 말 없이 옆에 앉는다. 다인이 이쪽을 힐끗 본다.
+
+447. Node: after3_dain_choice1_react
+   Text: 다인이 멈칫한다. — 그리고 작게 웃는다. 처음 보는 웃음이다.
+
+448. Node: after3_dain_end
+   Text: 다인이 주먹으로 어깨를 가볍게 친다. — 어제보다 약하다.
+
+449. Node: after3_confront_1
+   Text: 방과후 장소에서 나오는데 — 서연이 복도에서 기다리고 있다. 팔짱을 끼고. 평소의 여유가 없다.
+
+450. Node: after3_confront_3
+   Text: 서연이 복도 끝으로 데려간다. 아무도 없는 곳.
+
+451. Node: after3_confront_choice
+   Text: 서연이 나를 똑바로 본다. 학생회장의 눈이 아니다. 한 사람의 눈이다.
+
+452. Node: after3_confront_admit_3
+   Text: 서연이 도시락 가방을 집어든다. 손이 떨리고 있다.
+
+453. Node: after3_confront_admit_6
+   Text: 등이 곧다. 완벽하게. — 근데 주먹이 쥐어져 있다. 손등이 하얗다.
+
+454. Node: after3_confront_lie_ins
+   Text: 서연이 잠깐 멈춘다. 눈이 흔들린다.
+
+455. Node: after3_confront_lie_2
+   Text: 믿고 싶어하는 눈. — 거짓말이 이렇게 무거울 줄 몰랐다.
+
+456. Node: after3_confront_end
+   Text: 서연이 사라진 복도에 혼자 서 있다. — 등이 곧았다. 완벽하게. 근데 주먹이 쥐어져 있었다.
+
+457. Node: after3_final
+   Text: 방과후가 끝났다. — 오늘 본 것들이 머릿속에서 떠나지 않는다.
+
+458. Node: haeun_warn_1
+   Text: 학생회실을 나왔다. 복도가 비어 있다. — 누군가 기다리고 있었다.
+
+459. Node: haeun_warn_5
+   Text: 서연이 울었다. — 나한테는 '완벽하지 않은 모습을 봤다'고만 했는데. 그 뒤에 울었다.
+
+460. Node: haeun_warn_8
+   Text: 서연이 화장실에서 혼자 우는 모습이 머릿속에서 안 지워진다. 완벽하게 곧은 등, 하얀 주먹, 그리고 — 아무도 없는 화장실.
+
+461. Node: haeun_warn_8b
+   Text: 학교 앞으로 나왔다.
+
+462. Node: minsu_d3_1
+   Text: 하교길. 교문에서 민수가 기다리고 있다.
+
+463. Node: minsu_d3_5b
+   Text: 민수가 한숨을 쉰다. 한심하다는 게 아니라, 진짜 걱정하는 한숨이다.
+
+464. Node: minsu_d3_8
+   Text: 거절도 사랑. — 전 학교에서 소정이가 나한테 '거절'할 기회조차 주지 못했다. 내가 말하지 못했으니까.
+
+465. Node: minsu_d3_9
+   Text: 그때 소정이가 거절해줬다면 — 이렇게 미련이 남지는 않았을 거다. 거절도 사랑이라면, 내가 지금 해야 할 건 — 한 사람에게만 '좋다'고 말하는 거다.
+
+466. Node: after3_seo_choice1_react_ins
+   Text: 서연이 창밖을 본다. 표정이 안 보인다. — 의도적으로 안 보여주는 거다.
+
+467. Node: after3_seo_choice1_react_ins2
+   Text: 근데 — 새끼손가락이 책상 위에서 가볍게 움직인다. 뭔가를 잡으려는 것처럼. 무의식적으로.
+
+468. Node: after3_seo_choice1_react_ins3
+   Text: 서연이 자세를 바로잡는다. 학생회장의 얼굴이 돌아온다. — 근데 완벽하지 않다. 웃음의 각도가 0.5도쯤 어긋나 있다.
+
+469. Node: after3_seo_choice1_react_ins8
+   Text: 비밀을 지켜준다고 했더니, 동등한 비밀을 꺼냈다. — 이 사람은 '고마워'보다 '대등함'이 먼저다.
+
+470. Node: after3_yuna_5_ins
+   Text: ...이거 나 얘기 아닌가?
+
+471. Node: after3_yuna_choice2_3_ins
+   Text: 유나가 두 문장 이상 연속으로 말했다. — 이 사람이 이만큼 말하는 건 처음 봤다.
+
+472. Node: after3_dain_choice2_ins
+   Text: 보건실에서 파스를 가져왔다. 다인에게 내밀었다.
+
+473. Node: after3_dain_choice2_ins4
+   Text: 다인이 파스를 받아들고 — 한참을 본다. 입술을 깨문다.
+
+474. Node: after3_dain_choice2_ins6
+   Text: 받아들었다. — 다인이 누군가의 도움을 거절하지 않은 건 처음이다. 느낌표가 사라진 웃음이 이상하게 무겁다.
+
+475. Node: after3_confront_5_ins2
+   Text: 받아들었다. — 다인이 누군가의 도움을 거절하지 않은 건 처음이다. 느낌표가 사라진 웃음이 이상하게 무겁다.
+
+476. Node: after3_confront_admit_ins
+   Text: 서연이 고개를 숙인다.
+
+477. Node: after3_confront_admit_4_ins
+   Text: 서연이 돌아선다. — 멈춘다.
+
+478. Node: after3_confront_excuse_ins
+   Text: 서연의 눈이 차갑다. 처음 보는 온도다.
+
+479. Node: after3_confront_excuse_2_ins
+   Text: 서연이 잠깐 멈춘다. 눈이 흔들린다.
+
+480. Node: after3_confront_lie_2_ins
+   Text: 서연이 돌아선다. — 멈추지 않는다.
+
+481. Node: after3_confront_lie_2_ins2
+   Text: 등이 곧다. 완벽하게. — 근데 주먹이 쥐어져 있다. 손등이 하얗다.
+
+482. Node: haeun_warn_1_ins
+   Text: 하은이 벽에 기대어 서 있다. 학생회 팔찌를 만지작거리고 있다.
+
+483. Node: haeun_warn_3_ins2
+   Text: — 뭐?
+
+484. Node: haeun_warn_6_ins
+   Text: 하은이 고개를 숙인다.
+
+485. Node: haeun_warn_7_ins
+   Text: 하은이 말을 멈춘다. 선을 넘으면 안 된다는 표정.
+
+486. Node: haeun_warn_7_ins3
+   Text: 하은이 돌아서서 간다.
+
+487. Node: haeun_warn_7_ins4
+   Text: 서연의 집이 복잡하다. 부모님. — 서연이 '완벽해야만 했던 이유'가 거기 있는 건가.
+
+488. Node: minsu_d3_3_ins
+   Text: 할 말이 없다.
+
+489. Node: minsu_d3_6b_ins
+   Text: 민수가 내 어깨를 잡는다.
+
+490. Node: minsu_d3_7_ins
+   Text: 거절도 사랑. — 전 학교에서 소정이가 나한테 '거절'할 기회조차 주지 못했다. 내가 말하지 못했으니까. 소정이는 아무것도 모른 채 남자친구를 사귀었고, 나는 핸드폰 메모장에 38번째 시뮬레이션을 남긴 채 전학을 갔다.
+
+491. Node: minsu_d3_7_ins2
+   Text: 그때 소정이가 거절해줬다면 — 이렇게 미련이 남지는 않았을 거다.
+
+492. Node: minsu_d3_7_ins3
+   Text: 거절도 사랑이라면, 내가 지금 해야 할 건 — 모두에게 '좋다'고 말하는 게 아니라, 한 사람에게만 '좋다'고 말하는 거다.
+
+493. Node: minsu_d3_10_ins
+   Text: 민수가 먼저 걸어간다.
+
+494. Node: night3_start
+   Text: 방에 돌아왔다. 무거운 하루였다.
+
+495. Node: night3_start_2
+   Text: 핸드폰을 본다.
+
+496. Node: night3_faithful_check
+   Text: 메시지가 와 있다.
+
+497. Node: night3_faithful_msg_seo_3
+   Text: '또 와도 돼'. — 이 사람한테는 이게 '와 줘'와 같은 말이다.
+
+498. Node: night3_faithful_msg_yuna_1
+   Text: 유나가 쪽지 사진을 보냈다. 노트에 쓰인 한 줄.
+
+499. Node: night3_faithful_msg_dain_3
+   Text: 'ㅋㅋ'로 위장했지만 — 진심이 보인다.
+
+500. Node: night3_dream_1
+   Text: 꿈을 꿨다. — 누군가와 나란히 걷고 있었다.
+
+501. Node: night3_dream_2
+   Text: 얼굴은 보이지 않는데, 옆에 있다는 것만으로 마음이 편했다.
+
+502. Node: night3_faithful_reflect_1
+   Text: 눈을 떴다. 아침 햇살이 커튼 사이로 들어온다. — 오늘의 꿈은 좋았다.
+
+503. Node: night3_faithful_reflect_2
+   Text: 핸드폰을 꺼냈다. 갤러리를 열었다. 소정이 사진. — 스크롤을 멈추고, 길게 눌렀다.
+
+504. Node: night3_faithful_reflect_3
+   Text: 지우면 후회까지 지워지는 것 같아서 남겨뒀었다. 근데 이제 후회가 아니라 교훈이다. 고백할 용기를 가르쳐준 사진. — 역할을 다했다.
+
+505. Node: night3_faithful_reflect_4
+   Text: 이번에는 다르다. 한 사람에게만 말하겠다. 나머지에게는 — 제대로 거절하겠다. 그게 내가 할 수 있는 유일한 성실함이다.
+
+506. Node: night3_dream_3
+   Text: 좋은 꿈이었다.
+
+507. Node: night3_cheat_msg_1
+   Text: 방에 돌아왔다. 무거운 하루였다. 핸드폰을 본다.
+
+508. Node: night3_cheat_msg_7
+   Text: 유나가 메시지로 세 줄을 보냈다. 평소 한 줄도 안 보내는 사람이. — 그만큼 화가 났다는 뜻이다.
+
+509. Node: night3_nightmare_1
+   Text: 잠이 들었다. — 꿈.
+
+510. Node: night3_nightmare_2
+   Text: 어둠 속에 서 있다. 아무것도 보이지 않는다.
+
+511. Node: night3_nightmare_6
+   Text: 세 방향에서 손이 보인다. 어둠 속에서 희미하게.
+
+512. Node: night3_nightmare_choice
+   Text: 누구의 손을 잡을 것인가.
+
+513. Node: night3_nightmare_seo
+   Text: 서연 쪽으로 손을 뻗었다. 그 미소가 보이는 순간 — 사라진다.
+
+514. Node: night3_nightmare_yuna
+   Text: 유나 쪽으로 발을 옮겼다. 손끝이 닿기 직전 — 사라진다.
+
+515. Node: night3_nightmare_dain
+   Text: 다인 쪽으로 달려갔다. 잡았다고 생각한 순간 — 사라진다.
+
+516. Node: night3_nightmare_end
+   Text: 손을 뻗었다. — 잡히지 않는다.
+
+517. Node: night3_nightmare_end_2
+   Text: 모두 사라지고, 남은 건 어둠뿐.
+
+518. Node: night3_nightmare_end_3
+   Text: — 땀에 젖은 채 눈을 떴다. 새벽 3시. 천장이 보인다.
+
+519. Node: night3_cheat_reflect_1
+   Text: 핸드폰을 꺼냈다. 갤러리. 또 스크롤한다. — 소정이 사진.
+
+520. Node: night3_cheat_reflect_2
+   Text: 웃고 있다. 단체 사진 속에서 나를 보고 웃고 있다. 아무것도 모른 채.
+
+521. Node: night3_cheat_reflect_3
+   Text: 이번에는 후회 없이 말하려고 했다. 이 학교에서는 솔직하게 살겠다고.
+
+522. Node: night3_cheat_reflect_4
+   Text: 전 학교: 아무 말도 못 해서 후회.
+
+523. Node: night3_cheat_reflect_5
+   Text: — 도망치지 않겠다. 이번에는 한 사람에게만.
+
+524. Node: night3_nightmare_end_4
+   Text: 내가 뭘 한 거지.
+
+525. Node: night3_end
+   Text: 밤이 깊어간다...
+
+526. Node: night3_faithful_msg_yuna_2_ins
+   Text: 결말을 쓰면 끝나니까. — 유나는 이 이야기가 끝나는 걸 두려워하고 있다.
+
+527. Node: night3_cheat_msg_3_ins
+   Text: 서연이 '부탁'이라는 말을 쓴다. — 이 사람의 어휘에 없던 단어다. 그만큼 무너져 있다.
+
+528. Node: night3_nightmare_2_ins
+   Text: 서연의 목소리가 들린다.
+
+529. Node: night3_nightmare_3_ins
+   Text: 유나의 목소리.
+
+530. Node: night3_nightmare_4_ins
+   Text: 다인의 목소리.
+
+531. Node: night3_dream_2_ins
+   Text: 이번에는 후회 없이 말하려고 했다. 이 학교에서는 솔직하게 살겠다고.
+
+532. Node: night3_cheat_reflect_3_ins
+   Text: 소정이 때랑 정반대인데, 결과는 똑같다. 누군가가 상처받는다.
+
+533. Node: night3_cheat_reflect_3_ins2
+   Text: 전 학교: 아무 말도 못 해서 후회.
+
+534. Node: night3_cheat_reflect_3_ins3
+   Text: 이 학교: 모두에게 말해서 후회.
+
+535. Node: night3_cheat_reflect_3_ins4
+   Text: 결국 문제는 '말하느냐 마느냐'가 아니라 — '누구에게'인 거다.
+
+536. Node: night3_cheat_reflect_3_ins5
+   Text: 민수가 말했다. '거절도 사랑이야.'
+
+537. Node: night3_cheat_reflect_3_ins6
+   Text: 서연이 말했다. '유일한 답이거나, 아무것도 아니거나.'
+
+538. Node: night3_cheat_reflect_3_ins7
+   Text: 유나가 말했다. '도망치지 마.'
+
+539. Node: night3_cheat_reflect_5_ins
+   Text: 꿈을 꿨다. — 누군가와 나란히 걷고 있었다. 얼굴은 보이지 않는데, 옆에 있다는 것만으로 마음이 편했다.
+
+540. Node: night3_faithful_reflect_2_ins
+   Text: '삭제하시겠습니까?'
+
+541. Node: night3_faithful_reflect_2_ins2
+   Text: — 삭제했다.
+
+542. Node: night3_faithful_reflect_2_ins3
+   Text: '삭제하시겠습니까?'
+
+543. Node: night3_faithful_reflect_2_ins4
+   Text: 1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑이야.'
+
+544. Node: night3_faithful_reflect_2_ins5
+   Text: ...그래. 나부터 과거를 거절해야 한다.
+
+545. Node: night3_faithful_reflect_2_ins6
+   Text: — 삭제했다.
+
+546. Node: night3_faithful_reflect_3_ins
+   Text: 민수가 말했다. '거절도 사랑이야.' 맞다. 전 학교에서 소정이는 나를 거절할 기회조차 없었다. 내가 입을 닫았으니까. — 그게 소정이한테도, 나한테도 가장 불친절한 결말이었다.
+
+547. Node: night3_faithful_reflect_4_ins
+   Text: 1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑이야.'
+
+548. Node: night3_faithful_reflect_4_ins2
+   Text: ...거절. 그래, 해야 하는 건 알고 있다. 알고 있는데.
+
+549. Node: night3_faithful_reflect_4_ins3
+   Text: 손가락이 움직이지 않는다. 삭제 버튼 위에 올려놓은 채로.
+
+550. Node: night3_faithful_reflect_4_ins4
+   Text: 전 학교에서도 이랬다. 알면서 못 했다. 이번에도 — 알면서 못 하고 있다.
+
+551. Node: night3_faithful_reflect_4_ins5
+   Text: 핸드폰을 덮었다. 사진은 그대로다.
+
+552. Node: night3_faithful_reflect_4_ins6
+   Text: ...나는 과거에도 지금도, 아무것도 놓지 못하는 비겁한 놈일 뿐이다.
+

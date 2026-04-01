@@ -1,0 +1,232 @@
+=== DETAILED PROTAGONIST MONOLOGUE ANALYSIS (DAY 2-4) ===
+
+
+CATEGORY 1: REDUNDANT ANALYSIS
+================================================================================
+Found: 0 instances
+
+
+CATEGORY 2: REPETITIVE OBSERVATION
+================================================================================
+Found: 13 instances
+
+Node: morning2_greet_yuna_others_2
+Text: 쪽지를 주머니에 넣었다. 두 사람의 반응이 미묘하게 다르다.
+Issue: Vague observation without insight
+
+Node: morning2_break_1
+Text: 사람이 선점의 대상인가. — 근데 반박하기가 묘하게 귀찮다.
+Issue: Vague observation without insight
+
+Node: hidden_homeroom_d2_12
+Text: 교무실을 나서는데 — 서랍에서 봤던 종이뭉치가 자꾸 신경 쓰인다.
+Issue: Vague observation without insight
+
+Node: lunch2_seo_end_c1
+Text: 서연의 손이 지나간 자리가 아직 신경 쓰인다. — 그리고 다인의 놀란 눈도.
+Issue: Vague observation without insight
+
+Node: lunch2_dain_c1_1
+Text: 다인의 표정이 미묘하게 굳는다. 소보로를 한 입 베어 물며 고개를 돌린다.
+Issue: Vague observation without insight
+
+Node: after2_nurse_transition
+Text: 그런데 — 체육 시간에 까진 팔꿈치가 아까부터 계속 신경 쓰인다. 보건실에 들러야겠다.
+Issue: Vague observation without insight
+
+Node: after2_yuna_6
+Text: 묘하게 꼬인 질문이다. — 근데 어딘가 기다리고 있었다는 뉘앙스가 있다.
+Issue: Vague observation without insight
+
+Node: night2_end_3
+Text: '신경 쓰인다'와 '좋아한다' 사이에는 아직 거리가 있다. — 근데 그 거리가 어제보다 짧아진 것 같다.
+Issue: Vague observation without insight
+
+Node: morning3_yuna_gate_warm_4
+Text: 유나와 나란히 걷는다. 아무 말이 없다. — 그런데 이상하게 불편하지 않다.
+Issue: Vague observation without insight
+
+Node: lunch3_harem_1
+Text: 셋이 나눠 먹었다. 어색하지만 — 나쁘지 않다. 아무도 화내지 않았다. 이상하게, 이게 가능한 세계도 있는 것 같다.
+Issue: Vague observation without insight
+
+Node: lunch3_meal_10_ins
+Text: 다 같이 먹자라고 말했다. — 근데 분위기가 이상하다.
+Issue: Vague observation without insight
+
+Node: after3_dain_choice2_ins6
+Text: 받아들었다. — 다인이 누군가의 도움을 거절하지 않은 건 처음이다. 느낌표가 사라진 웃음이 이상하게 무겁다.
+Issue: Vague observation without insight
+
+Node: after3_confront_5_ins2
+Text: 받아들었다. — 다인이 누군가의 도움을 거절하지 않은 건 처음이다. 느낌표가 사라진 웃음이 이상하게 무겁다.
+Issue: Vague observation without insight
+
+
+CATEGORY 3: OVER-EXPLANATION
+================================================================================
+Found: 21 instances
+
+Node: morning2_seo_dust_3
+Text: 서연의 손이 내 어깨 위로 온다. 먼지를 쓸어내린다. 자연스럽게. 너무 자연스럽게.
+Issue: Describing action visible to reader
+
+Node: lunch2_yuna_c1_2
+Text: 유나의 목소리가 한 톤 낮아졌다.
+Issue: Describing action visible to reader
+
+Node: lunch2_yuna_c1_4
+Text: 유나의 표정에 그림자가 스친다. 그 '있었는데'가 누구인지는 모르겠지만.
+Issue: Describing action visible to reader
+
+Node: lunch2_seo_choice
+Text: 서연의 손이 다가온다.
+Issue: Describing action visible to reader
+
+Node: lunch2_seo_c1_1
+Text: 서연의 손가락이 입가를 스친다. 부드럽게. 천천히. — 필요 이상으로 천천히.
+Issue: Describing action visible to reader
+
+Node: lunch2_seo_end_c1
+Text: 서연의 손이 지나간 자리가 아직 신경 쓰인다. — 그리고 다인의 놀란 눈도.
+Issue: Describing action visible to reader
+
+Node: lunch2_seo_end_c2
+Text: 손등에 아직 밥풀 자국이 남아 있다. 서연의 표정 관리는 완벽한데 — 입꼬리만 살짝 내려가 있다.
+Issue: Describing action visible to reader
+
+Node: lunch2_dain_c1_1
+Text: 다인의 표정이 미묘하게 굳는다. 소보로를 한 입 베어 물며 고개를 돌린다.
+Issue: Describing action visible to reader
+
+Node: lunch2_yuna_c1_9_ins
+Text: 유나의 눈빛이 순간 차가워진다.
+Issue: Describing action visible to reader
+
+Node: lunch2_dain_end_ins14
+Text: 보건선생님의 손이 멈춘다. — 0.5초. 그리고 다시 움직인다.
+Issue: Describing action visible to reader
+
+Node: after2_seo_skinship_2
+Text: 서연의 손가락이 0.5초 멈춘다. 아무 말도 안 하고 고개를 돌린다.
+Issue: Describing action visible to reader
+
+Node: morning3_dain_gate_warm_3
+Text: 다인의 팔이 내 팔에 감겨 있다. 힘이 세다. — 뿌리칠 수도 없고, 뿌리치고 싶지도 않다.
+Issue: Describing action visible to reader
+
+Node: morning3_date_dain_2
+Text: 다인의 손가락이 책상 모서리를 두드리고 있다. 긴장하는 건가? — 아니다. 다인이 긴장할 리 없다. 이 정도는 일상이겠지.
+Issue: Describing action visible to reader
+
+Node: hidden_homeroom_d3_3_ins
+Text: 0.5초. 얼어붙는다. — 담임의 표정이 처음 보는 거다. 무심한 것도, 건조한 것도 아닌. 들킨 사람의 얼굴.
+Issue: Describing action visible to reader
+
+Node: hidden_nurse_d3_8_ins
+Text: 진심이다. 장난기가 완전히 사라졌다. — 이 사람의 목소리가 한 톤 낮아지면, 그건 진심의 신호다.
+Issue: Describing action visible to reader
+
+
+CATEGORY 4: MICRO-DESCRIPTION FILLER
+================================================================================
+Found: 25 instances
+
+Node: morning2_seo_1
+Text: 쪽지를 주머니에 넣으려는데 — 복도에서 익숙한 목소리.
+Issue: Trivial physical observation
+
+Node: morning2_dain_react_2
+Text: 서연이 아무렇지 않게 걸어간다. 뒤에서 다인의 목소리.
+Issue: Trivial physical observation
+
+Node: hidden_homeroom_d2_8_ins5
+Text: 입은 가렸는데 귀가 빨갛다. — 이 사람, 의외로 쉽게 당황하는구나.
+Issue: Trivial physical observation
+
+Node: morning2_haeun_6_ins
+Text: 하은이 한 발짝 다가온다. 목소리가 낮아진다.
+Issue: Trivial physical observation
+
+Node: lunch2_yuna_9
+Text: 유나가 아주 살짝 — 입꼬리가 올라간다. 거의 안 보인다.
+Issue: Trivial physical observation
+
+Node: lunch2_yuna_c1_2
+Text: 유나의 목소리가 한 톤 낮아졌다.
+Issue: Trivial physical observation
+
+Node: lunch2_seo_end_c2
+Text: 손등에 아직 밥풀 자국이 남아 있다. 서연의 표정 관리는 완벽한데 — 입꼬리만 살짝 내려가 있다.
+Issue: Trivial physical observation
+
+Node: lunch2_dain_end_ins
+Text: 4교시 체육. 운동장에서 달리기를 하는데 — 옆 녀석이 급정거하면서 부딪혔다. 팔꿈치가 까졌다.
+Issue: Trivial physical observation
+
+Node: lunch2_dain_end_ins9
+Text: 보건선생님이 다가와 팔꿈치를 잡는다. 손이 차갑다.
+Issue: Trivial physical observation
+
+Node: lunch2_dain_end_ins27
+Text: 보건선생님이 잠깐 멈춘다. 그리고 — 목소리가 한 톤 낮아진다.
+Issue: Trivial physical observation
+
+Node: lunch2_dain_end_ins31
+Text: 방금 목소리가 달라진 거. — 착각인가?
+Issue: Trivial physical observation
+
+Node: after2_nurse_transition
+Text: 그런데 — 체육 시간에 까진 팔꿈치가 아까부터 계속 신경 쓰인다. 보건실에 들러야겠다.
+Issue: Trivial physical observation
+
+Node: after2_seo_sunset_joke
+Text: 서연이 잠깐 멈춘다. 그리고 — 웃는다. 입꼬리가 아니라 눈이 웃는다. 처음 보는 웃음.
+Issue: Trivial physical observation
+
+Node: after2_seo_skinship_1
+Text: 서연이 손을 뻗는다. 옷깃에 묻은 먼지를 떼어준다. 손이 목에 스친다.
+Issue: Trivial physical observation
+
+Node: after2_yuna_quiet_react
+Text: 유나가 아주 작게 — 입꼬리가 올라간다.
+Issue: Trivial physical observation
+
+
+
+EMOTIONAL AWARENESS OPPORTUNITIES (Day 2-3)
+================================================================================
+Identified: 8 key moments
+
+Node: morning2_seo_dust_1
+Current text: 1교시가 끝나고 쉬는 시간. 복도에서 서연과 스친다. 서연이 멈춘다. 내 어깨를 본다.
+Opportunity: Could add: feeling of attraction/confusion about physical response
+
+Node: morning2_seo_dust_3
+Current text: 서연의 손이 내 어깨 위로 온다. 먼지를 쓸어내린다. 자연스럽게. 너무 자연스럽게.
+Opportunity: Could add: feeling of attraction/confusion about physical response
+
+Node: morning2_seo_dust_1_ins
+Current text: 서연이 멈춘다. 내 어깨를 본다.
+Opportunity: Could add: feeling of attraction/confusion about physical response
+
+Node: lunch2_yuna_c2_1
+Current text: 아무 말 없이 옆에 앉는다. 유나가 잠깐 이쪽을 본다.
+Opportunity: Could add: recognition of feeling safe/connected
+
+Node: lunch2_yuna_c2_2
+Current text: 그리고 자기 책에서 한 권을 꺼내 내 쪽에 놓는다.
+Opportunity: Could add: recognition of feeling safe/connected
+
+Node: lunch2_yuna_c2_4
+Current text: 말 대신 책을 건네는 거. — 이 사람의 언어는 행동이구나. 서연이랑은 다른 방식으로.
+Opportunity: Could add: recognition of feeling safe/connected
+
+Node: lunch2_yuna_c2_5
+Current text: 침묵 속에서 나란히 책을 읽는다. 창문으로 들어오는 햇살이 따뜻하다.
+Opportunity: Could add: recognition of feeling safe/connected
+
+Node: lunch2_yuna_c2_9
+Current text: 두 문장. 유나치고는 긴 말이다. — 그리고 그 두 문장 안에 전부 담겨 있다.
+Opportunity: Could add: recognition of feeling safe/connected
+
