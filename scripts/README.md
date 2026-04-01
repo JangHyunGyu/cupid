@@ -25,7 +25,7 @@ cd c:\workspace\cupid\scripts
 
 **출력 예시:**
 ```
-[ko_day1_2_lunch.js]
+[day1_2_lunch.js]
   Total Nodes: 118
   Referenced Nodes: 171
 
@@ -40,7 +40,7 @@ cd c:\workspace\cupid\scripts
 ### 2. 플로우 차트 생성
 
 ```powershell
-.\scenario_visualizer.ps1 -FileName "ko_day1_1_morning.js" -Simplified
+.\scenario_visualizer.ps1 -FileName "day1_1_morning.js" -Simplified
 ```
 
 생성된 `scenario_flow_*.md` 파일을 VS Code에서 열어보세요!
@@ -69,15 +69,15 @@ cd c:\workspace\cupid\scripts
 
 | 파일 | 노드 | Dead Ends | Ghost | Broken |
 |------|------|-----------|-------|--------|
-| ko_day1_1_morning.js | 97 | 29 | 0 | 0 |
-| ko_day1_2_lunch.js | 118 | 38 | 1 | 0 |
-| ko_day1_3_afterschool.js | 125 | 33 | 0 | 1 |
-| ko_day1_4_night.js | 34 | 14 | 1 | 0 |
-| ko_day2_1_morning.js | 50 | 9 | 0 | 0 |
-| ko_day2_2_lunch.js | 146 | 43 | 0 | 0 |
-| ko_day2_3_afterschool.js | 117 | 57 | 0 | 0 |
-| ko_day2_4_night.js | 49 | 6 | 0 | 1 |
-| ko_day3_1_morning.js | 30 | 5 | 0 | 1 |
+| day1_1_morning.js | 97 | 29 | 0 | 0 |
+| day1_2_lunch.js | 118 | 38 | 1 | 0 |
+| day1_3_afterschool.js | 125 | 33 | 0 | 1 |
+| day1_4_night.js | 34 | 14 | 1 | 0 |
+| day2_1_morning.js | 50 | 9 | 0 | 0 |
+| day2_2_lunch.js | 146 | 43 | 0 | 0 |
+| day2_3_afterschool.js | 117 | 57 | 0 | 0 |
+| day2_4_night.js | 49 | 6 | 0 | 1 |
+| day3_1_morning.js | 30 | 5 | 0 | 1 |
 
 ---
 
@@ -189,11 +189,11 @@ graph LR
 # 전체 검증
 .\quick_scenario_check.ps1
 
-# 한국어만
-.\quick_scenario_check.ps1 -Pattern "ko_*.js"
+# 날짜별 패턴
+.\quick_scenario_check.ps1 -Pattern "day*.js"
 
 # 특정 파일
-.\quick_scenario_check.ps1 -Pattern "ko_day1_2_lunch.js"
+.\quick_scenario_check.ps1 -Pattern "day1_2_lunch.js"
 ```
 
 **출력:**
@@ -212,10 +212,10 @@ graph LR
 **옵션:**
 ```powershell
 # 전체 노드 표시
-.\scenario_visualizer.ps1 -FileName "ko_day1_1_morning.js"
+.\scenario_visualizer.ps1 -FileName "day1_1_morning.js"
 
 # 간소화 모드 (추천!)
-.\scenario_visualizer.ps1 -FileName "ko_day1_1_morning.js" -Simplified
+.\scenario_visualizer.ps1 -FileName "day1_1_morning.js" -Simplified
 ```
 
 **출력:**
@@ -275,7 +275,7 @@ graph LR
 ### 3. 복잡한 파일은 간소화 모드로
 
 ```powershell
-.\scenario_visualizer.ps1 -FileName "ko_day2_2_lunch.js" -Simplified
+.\scenario_visualizer.ps1 -FileName "day2_2_lunch.js" -Simplified
 ```
 
 ### 4. PowerShell Alias 설정 (선택)
@@ -287,7 +287,7 @@ Set-Alias sviz "c:\workspace\cupid\scripts\scenario_visualizer.ps1"
 
 # 사용
 scheck
-sviz -FileName "ko_day1_1_morning.js" -Simplified
+sviz -FileName "day1_1_morning.js" -Simplified
 ```
 
 ---

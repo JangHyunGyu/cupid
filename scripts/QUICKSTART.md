@@ -21,7 +21,7 @@ cd c:\workspace\cupid\scripts
 
 **결과:**
 ```
-[ko_day1_2_lunch.js]
+[day1_2_lunch.js]
   Total Nodes: 118
   Referenced Nodes: 171
 
@@ -39,11 +39,11 @@ cd c:\workspace\cupid\scripts
 
 ```powershell
 # 하나의 파일만
-.\quick_scenario_check.ps1 -Pattern "ko_day1_2_lunch.js"
+.\quick_scenario_check.ps1 -Pattern "day1_2_lunch.js"
 
 # 특정 패턴
-.\quick_scenario_check.ps1 -Pattern "ko_day1_*.js"
-.\quick_scenario_check.ps1 -Pattern "en_*.js"
+.\quick_scenario_check.ps1 -Pattern "day1_*.js"
+.\quick_scenario_check.ps1 -Pattern "day4_*.js"
 ```
 
 ---
@@ -52,13 +52,13 @@ cd c:\workspace\cupid\scripts
 
 ```powershell
 # 기본 모드 (모든 노드 표시)
-.\scenario_visualizer.ps1 -FileName "ko_day1_1_morning.js"
+.\scenario_visualizer.ps1 -FileName "day1_1_morning.js"
 
 # 간소화 모드 (선택지와 중요 노드만)
-.\scenario_visualizer.ps1 -FileName "ko_day1_1_morning.js" -Simplified
+.\scenario_visualizer.ps1 -FileName "day1_1_morning.js" -Simplified
 ```
 
-**생성 파일:** `scenario_flow_ko_day1_1_morning.js.md`
+**생성 파일:** `scenario_flow_day1_1_morning.js.md`
 
 이 파일을:
 - VS Code에서 Markdown Preview로 보기 (Ctrl+Shift+V)
@@ -174,7 +174,7 @@ Set-Alias -Name sviz -Value Viz-Scenario
 이제 어디서든:
 ```powershell
 scheck
-sviz -FileName "ko_day1_1_morning.js" -Simplified
+sviz -FileName "day1_1_morning.js" -Simplified
 ```
 
 ---
@@ -205,9 +205,9 @@ sviz -FileName "ko_day1_1_morning.js" -Simplified
 ### 예시 1: Day 1 점심 시나리오 검증
 
 ```powershell
-PS> .\quick_scenario_check.ps1 -Pattern "ko_day1_2_lunch.js"
+PS> .\quick_scenario_check.ps1 -Pattern "day1_2_lunch.js"
 
-[ko_day1_2_lunch.js]
+[day1_2_lunch.js]
   Total Nodes: 118
   
   Ghost Nodes:
@@ -226,7 +226,7 @@ PS> .\quick_scenario_check.ps1 -Pattern "ko_day1_2_lunch.js"
 ### 예시 2: 플로우 차트로 구조 파악
 
 ```powershell
-PS> .\scenario_visualizer.ps1 -FileName "ko_day1_1_morning.js" -Simplified
+PS> .\scenario_visualizer.ps1 -FileName "day1_1_morning.js" -Simplified
 ```
 
 생성된 차트에서:
