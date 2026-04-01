@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Klassenlehrerin",
-        "text": "...Erzähl das niemandem. Eine Lehrerin, die das mit einem Schüler teilt — das ist ein Geheimnis."
+        "text": "*Plötzlich ernst.* ...Erzähl das niemandem. Eine Lehrerin, die das mit einem Schüler teilt — das ist ein Geheimnis."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
@@ -324,11 +324,11 @@
     },
     "hidden_nurse_d3_choice1_a": {
         "name": "Schulkrankenschwester",
-        "text": "*Schiebt ihre Brille hoch.* Ehrlich. Das ist besser. — Verschreiben kann ich nichts, aber zuhören schon."
+        "text": "...Ähnlich? Dann war es gut, dass du hergekommen bist."
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Schulkrankenschwester",
-        "text": "Kompliziert ist kompliziert, ob Liebe oder was auch immer. Versuch nicht, es zu ordnen. Fühl es einfach."
+        "text": "*Zieht einen Stuhl heran und setzt sich.* Beziehungen. — Ist das eine Liebesberatung? *Heh.* Wer so tut als wäre nichts, fällt am meisten auf."
     },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
@@ -352,11 +352,11 @@
     },
     "hidden_nurse_d3_choice2_a": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie schaut aus dem Fenster.* ...Halb richtig. Die andere Hälfte — will ich noch nicht sagen."
+        "text": "...Eher als aufgehört. Ich bin weggelaufen."
     },
     "hidden_nurse_d3_choice2_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Ihre Augen zittern hinter der Brille.* ...Wer weiß. Würde es etwas ändern?"
+        "text": "...Es gab einen. Einen Patienten, den ich nicht retten konnte."
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",

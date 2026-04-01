@@ -1,286 +1,286 @@
 {
-    "after5_start": {
-        "name": "{name}",
-        "text": "*行事が終わりに近づいている。選ばなかった二人と自然にすれ違う。*"
-    },
-    "after5_farewell_seo_1": {
-        "name": "{name}",
-        "text": "*廊下でソヨンと出くわす。*"
-    },
-    "after5_farewell_seo_2": {
-        "name": "ソヨン",
-        "text": "「…ふぅ。」"
-    },
-    "after5_farewell_seo_3": {
-        "name": "{name}",
-        "text": "*ソヨンが髪をかき上げながら。*"
-    },
-    "after5_farewell_seo_4": {
-        "name": "ソヨン",
-        "text": "「まあ、分かってた。あんたは最初から私の思い通りにならなかったから。」"
-    },
-    "after5_farewell_seo_5": {
-        "name": "{name}",
-        "text": "「ソヨン…」"
-    },
-    "after5_farewell_seo_6": {
-        "name": "ソヨン",
-        "text": "「次は私が先に連れて行くから。」"
-    },
-    "after5_farewell_seo_7": {
-        "name": "{name}",
-        "text": "*ソヨンが振り返りながら手を振る。初日と同じ仕草だ。振り返らない。背筋が真っ直ぐだ。完璧に。でも今回は、震えていない。*"
-    },
-    "after5_farewell_yuna_1": {
-        "name": "{name}",
-        "text": "*図書館の前でユナが近づいてくる。何も言わずに一冊の本を差し出す。*"
-    },
-    "after5_farewell_yuna_2": {
-        "name": "{name}",
-        "text": "*しおりが挟まっている。しおりに一行。*"
-    },
-    "after5_farewell_yuna_3": {
-        "name": "ユナ",
-        "text": "楽しかった。…次の物語で会おう。"
-    },
-    "after5_farewell_yuna_4": {
-        "name": "{name}",
-        "text": "*ユナが背を向ける。立ち止まらない。*"
-    },
-    "after5_farewell_yuna_5": {
-        "name": "{name}",
-        "text": "*ユナの『楽しかった』は、普通の人の『ありがとう、好きだった、また会おう』を全部圧縮した言葉だ。*"
-    },
-    "after5_farewell_dain_1": {
-        "name": "{name}",
-        "text": "*体育館の前からダインが走ってくる。*"
-    },
-    "after5_farewell_dain_2": {
-        "name": "ダイン",
-        "text": "「ちっ、残念！」"
-    },
-    "after5_farewell_dain_3": {
-        "name": "{name}",
-        "text": "「ダイン…」"
-    },
-    "after5_farewell_dain_4": {
-        "name": "ダイン",
-        "text": "「でもまあ、あんたが選んだんだから。次は私にもチャンスちょうだいよね！」"
-    },
-    "after5_farewell_dain_5": {
-        "name": "{name}",
-        "text": "*ニッと笑って拳で肩を叩く。初日と同じ力。感嘆符が生きている。ダインは最後までダインだ。それがこの人の強さだ。*"
-    },
-    "after5_hidden_farewell_1": {
-        "name": "{name}",
-        "text": "*校門の前。遠くに三人の姿が見える。ソヨンがハウンと歩いている。ダインがバレーボールを投げながら走っている。ユナが本を読みながらゆっくり歩いている。*"
-    },
-    "after5_hidden_farewell_2": {
-        "name": "{name}",
-        "text": "*誰もこちらを見ない。——それでいい。僕が選んだのは別の人だから。*"
-    },
-    "after5_hidden_farewell_3": {
-        "name": "{name}",
-        "text": "*ごめんとは言わない。その言葉は——あの人たちに言えばかえって残酷だから。心の中だけで。ありがとう。*"
-    },
-    "after5_sunset_1": {
-        "name": "{name}",
-        "text": "*日が沈んでいく。五日間が終わろうとしている。*"
-    },
-    "after5_end": {
-        "name": "{name}",
-        "text": "*夕日が校庭を染めている。5日間がこんなに短かったとは。——最後の選択の瞬間が近づいてくる。*"
-    },
-    "after5_last_chance_1": {
-        "name": "{name}",
-        "text": "*足が止まる。夕日が背中の後ろに長い影を作る。*"
-    },
-    "after5_last_chance_2": {
-        "name": "{name}",
-        "text": "*前の学校でもこうだった。言えなかった。そして後悔した。——今回もそうするのか？*"
-    },
-    "after5_last_chance_choice": {
-        "name": "{name}",
-        "text": "*今言わなければ、永遠に言えない。*",
-        "choices": [
-            "今度は告白する",
-            "...何も言えなかった"
-        ]
-    },
-    "after5_confess_yes": {
-        "name": "{name}",
-        "text": "*また逃げるところだった。前の学校と同じように。携帯をポケットに入れて何も言えないあの瞬間がまた来るところだった。——ダメだ。今回は。*"
-    },
-    "after5_confess_yes_2": {
-        "name": "{name}",
-        "text": "「あのさ——僕、君に言いたいことがあるんだ。」"
-    },
-    "after5_confess_react_seo": {
-        "name": "ソヨン",
-        "text": "*並んで歩きながら。* ...遅い。でも——間に合った。"
-    },
-    "after5_confess_react_dain": {
-        "name": "ダイン",
-        "text": "*学校を出ながら。* え、マジ？！…マジで？"
-    },
-    "after5_confess_react_yuna": {
-        "name": "ユナ",
-        "text": "*並んで歩いた。* ...知ってた。"
-    },
-    "after5_confess_react_yuna_call": {
-        "name": "{name}",
-        "text": "ユナ。"
-    },
-    "after5_confess_no": {
-        "name": "{name}",
-        "text": "*唇が動かない。また。——また言えなかった。*"
-    },
-    "after5_confess_no_2": {
-        "name": "{name}",
-        "text": "*夕風が吹いてくる。背中の後ろの影が伸びていく。——一人だ。*"
-    },
-    "after5_hidden_farewell_3b": {
-        "name": "{name}",
-        "text": "*校舎の裏手へ歩いていった。*"
-    },
-    "after5_farewell_yuna_5b": {
-        "name": "{name}",
-        "text": "*廊下に戻った。*"
-    },
-    "after5_farewell_dain_5b": {
-        "name": "{name}",
-        "text": "*体育館を出て、校舎の裏手へ向かった。*"
-    },
-    "after5_confess_no_2b": {
-        "name": "{name}",
-        "text": "*家に帰った。*"
-    },
-    "after5_farewell_seo_6_ins": {
-        "name": "{name}",
-        "text": "*ソヨンが振り返って手を振る。——Day 1と同じ動作だ。振り向かない。*"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*背筋が伸びている。完璧に。——でも今回は、震えていない。*"
-    },
-    "after5_farewell_dain_4_ins": {
-        "name": "{name}",
-        "text": "*ニッと笑って拳で肩を叩く。——Day 1と同じ力だ。*"
-    },
-    "after5_farewell_dain_4_ins2": {
-        "name": "ダイン",
-        "text": "「……うまくやりなよ。マジで。」"
-    },
-    "after5_farewell_dain_4_ins3": {
-        "name": "{name}",
-        "text": "*感嘆符は健在だ。——ダインは最後までダインだ。それがこの人の強さ。*"
-    },
-    "after5_last_chance_2_ins": {
-        "name": "{name}",
-        "text": "*また逃げるところだった。前の学校と同じように。ポケットの中のスマホを握りしめて何も言えないあの瞬間が繰り返されるところだった。——ダメだ。今回は。*"
-    },
-    "after5_last_chance_2_ins2": {
-        "name": "{name}",
-        "text": "*足が動く。口が先に開く。用意した言葉なんてない。——ただ体が先に動く。*"
-    },
-    "after5_last_chance_2_ins3": {
-        "name": "{name}",
-        "text": "ソヨン。"
-    },
-    "after5_last_chance_2_ins4": {
-        "name": "{name}",
-        "text": "*ソヨンが振り返る。夕日を背にしている。*"
-    },
-    "after5_last_chance_2_ins5": {
-        "name": "ソヨン",
-        "text": "「……遅い。」"
-    },
-    "after5_last_chance_2_ins6": {
-        "name": "{name}",
-        "text": "*少しの沈黙。風が髪を揺らす。払わない。*"
-    },
-    "after5_last_chance_2_ins7": {
-        "name": "ソヨン",
-        "text": "「でも——遅くない。逃げずに戻ってきたから。」"
-    },
-    "after5_last_chance_2_ins8": {
-        "name": "{name}",
-        "text": "*小指を差し出す。Day 4で掴めなかったあの指。*"
-    },
-    "after5_last_chance_2_ins9": {
-        "name": "ソヨン",
-        "text": "「今度はちゃんと握って。」"
-    },
-    "after5_last_chance_2_ins10": {
-        "name": "{name}",
-        "text": "*並んで歩きながら——学校を後にする。*"
-    },
-    "after5_last_chance_2_ins11": {
-        "name": "{name}",
-        "text": "ダイン。"
-    },
-    "after5_last_chance_2_ins12": {
-        "name": "{name}",
-        "text": "*ダインが走ってきて——立ち止まる。*"
-    },
-    "after5_last_chance_2_ins13": {
-        "name": "ダイン",
-        "text": "「え、マジで？！」"
-    },
-    "after5_last_chance_2_ins14": {
-        "name": "{name}",
-        "text": "*目が大きくなる。1秒。2秒。*"
-    },
-    "after5_last_chance_2_ins15": {
-        "name": "ダイン",
-        "text": "「……マジで？」"
-    },
-    "after5_last_chance_2_ins16": {
-        "name": "{name}",
-        "text": "*感嘆符が消える。声が小さくなる。——目が潤んでくる。*"
-    },
-    "after5_last_chance_2_ins17": {
-        "name": "ダイン",
-        "text": "「あたし——待ってたんだよ。昨日から。ていうか一昨日から。」"
-    },
-    "after5_last_chance_2_ins18": {
-        "name": "{name}",
-        "text": "*拳で目をこする。笑いながら泣いている。*"
-    },
-    "after5_last_chance_2_ins19": {
-        "name": "ダイン",
-        "text": "「もー なんで泣くの——嬉しいことなのに——」"
-    },
-    "after5_confess_react_yuna_ins": {
-        "name": "{name}",
-        "text": "*ユナが本を置く。表情は変わらない。——でも手が震えている。*"
-    },
-    "after5_confess_react_yuna_ins2": {
-        "name": "ユナ",
-        "text": "「……知ってた。」"
-    },
-    "after5_confess_react_yuna_ins3": {
-        "name": "{name}",
-        "text": "*メモを渡される。折りたたまれた紙。開くと一行。*"
-    },
-    "after5_confess_react_yuna_ins4": {
-        "name": "{name}",
-        "text": "*「待ってた。——ずっと。」*"
-    },
-    "after5_confess_react_yuna_ins5": {
-        "name": "{name}",
-        "text": "*一行なのにインクがにじんでいる。——書きながら泣いていた。*"
-    },
-    "after5_confess_react_yuna_ins6": {
-        "name": "ユナ",
-        "text": "「……読んでくれたなら、それでいい。」"
-    },
-    "after5_confess_react_yuna_ins7": {
-        "name": "{name}",
-        "text": "*並んで歩いた。何も言わずに。*"
-    },
-    "after5_confess_react_yuna_ins8": {
-        "name": "{name}",
-        "text": "*そうして——学校を出て歩いた。*"
-    }
+  "after5_start": {
+    "name": "{name}",
+    "text": "*行事が終わりに近づいている。選ばなかった二人と自然にすれ違う。*"
+  },
+  "after5_farewell_seo_1": {
+    "name": "{name}",
+    "text": "*廊下でソヨンと出くわす。*"
+  },
+  "after5_farewell_seo_2": {
+    "name": "ソヨン",
+    "text": "「…ふぅ。」"
+  },
+  "after5_farewell_seo_3": {
+    "name": "{name}",
+    "text": "*ソヨンが髪をかき上げながら。*"
+  },
+  "after5_farewell_seo_4": {
+    "name": "ソヨン",
+    "text": "「まあ、分かってた。あんたは最初から私の思い通りにならなかったから。」"
+  },
+  "after5_farewell_seo_5": {
+    "name": "{name}",
+    "text": "「ソヨン…」"
+  },
+  "after5_farewell_seo_6": {
+    "name": "ソヨン",
+    "text": "「次は私が先に連れて行くから。」"
+  },
+  "after5_farewell_seo_7": {
+    "name": "{name}",
+    "text": "*ソヨンが振り返りながら手を振る。初日と同じ仕草だ。振り返らない。背筋が真っ直ぐだ。完璧に。でも今回は、震えていない。*"
+  },
+  "after5_farewell_yuna_1": {
+    "name": "{name}",
+    "text": "*図書館の前でユナが近づいてくる。何も言わずに一冊の本を差し出す。*"
+  },
+  "after5_farewell_yuna_2": {
+    "name": "{name}",
+    "text": "*しおりが挟まっている。しおりに一行。*"
+  },
+  "after5_farewell_yuna_3": {
+    "name": "ユナ",
+    "text": "楽しかった。…次の物語で会おう。"
+  },
+  "after5_farewell_yuna_4": {
+    "name": "{name}",
+    "text": "*ユナが背を向ける。立ち止まらない。*"
+  },
+  "after5_farewell_yuna_5": {
+    "name": "{name}",
+    "text": "*ユナの『楽しかった』は、普通の人の『ありがとう、好きだった、また会おう』を全部圧縮した言葉だ。*"
+  },
+  "after5_farewell_dain_1": {
+    "name": "{name}",
+    "text": "*体育館の前からダインが走ってくる。*"
+  },
+  "after5_farewell_dain_2": {
+    "name": "ダイン",
+    "text": "「ちっ、残念！」"
+  },
+  "after5_farewell_dain_3": {
+    "name": "{name}",
+    "text": "「ダイン…」"
+  },
+  "after5_farewell_dain_4": {
+    "name": "ダイン",
+    "text": "「でもまあ、あんたが選んだんだから。次は私にもチャンスちょうだいよね！」"
+  },
+  "after5_farewell_dain_5": {
+    "name": "{name}",
+    "text": "*ニッと笑って拳で肩を叩く。初日と同じ力。感嘆符が生きている。ダインは最後までダインだ。それがこの人の強さだ。*"
+  },
+  "after5_hidden_farewell_1": {
+    "name": "{name}",
+    "text": "*校門の前。遠くに三人の姿が見える。ソヨンがハウンと歩いている。ダインがバレーボールを投げながら走っている。ユナが本を読みながらゆっくり歩いている。*"
+  },
+  "after5_hidden_farewell_2": {
+    "name": "{name}",
+    "text": "*誰もこちらを見ない。——それでいい。僕が選んだのは別の人だから。*"
+  },
+  "after5_hidden_farewell_3": {
+    "name": "{name}",
+    "text": "*ごめんとは言わない。その言葉は——あの人たちに言えばかえって残酷だから。心の中だけで。ありがとう。*"
+  },
+  "after5_sunset_1": {
+    "name": "{name}",
+    "text": "*日が沈んでいく。五日間が終わろうとしている。*"
+  },
+  "after5_end": {
+    "name": "{name}",
+    "text": "*夕日が校庭を染めている。5日間がこんなに短かったとは。——最後の選択の瞬間が近づいてくる。*"
+  },
+  "after5_last_chance_1": {
+    "name": "{name}",
+    "text": "*足が止まる。夕日が背中の後ろに長い影を作る。*"
+  },
+  "after5_last_chance_2": {
+    "name": "{name}",
+    "text": "*前の学校でもこうだった。言えなかった。そして後悔した。——今回もそうするのか？*"
+  },
+  "after5_last_chance_choice": {
+    "name": "{name}",
+    "text": "*今言わなければ、永遠に言えない。*",
+    "choices": [
+      "今度は告白する",
+      "...何も言えなかった"
+    ]
+  },
+  "after5_confess_yes": {
+    "name": "{name}",
+    "text": "*また逃げるところだった。前の学校と同じように。携帯をポケットに入れて何も言えないあの瞬間がまた来るところだった。——ダメだ。今回は。*"
+  },
+  "after5_confess_yes_2": {
+    "name": "{name}",
+    "text": "「あのさ——僕、君に言いたいことがあるんだ。」"
+  },
+  "after5_confess_react_seo": {
+    "name": "ソヨン",
+    "text": "*並んで歩きながら。* ...遅い。でも——遅くない。逃げずに戻ってきたから。"
+  },
+  "after5_confess_react_dain": {
+    "name": "ダイン",
+    "text": "*学校を出ながら。* え、マジ？！…マジで？あたし——待ってたんだよ。昨日から。っていうか一昨日から。"
+  },
+  "after5_confess_react_yuna": {
+    "name": "ユナ",
+    "text": "*並んで歩いた。* ...知ってた。...読んでくれたなら、それでいい。"
+  },
+  "after5_confess_react_yuna_call": {
+    "name": "{name}",
+    "text": "ユナ。"
+  },
+  "after5_confess_no": {
+    "name": "{name}",
+    "text": "*唇が動かない。また。——また言えなかった。*"
+  },
+  "after5_confess_no_2": {
+    "name": "{name}",
+    "text": "*夕風が吹いてくる。背中の後ろの影が伸びていく。——一人だ。*"
+  },
+  "after5_hidden_farewell_3b": {
+    "name": "{name}",
+    "text": "*校舎の裏手へ歩いていった。*"
+  },
+  "after5_farewell_yuna_5b": {
+    "name": "{name}",
+    "text": "*廊下に戻った。*"
+  },
+  "after5_farewell_dain_5b": {
+    "name": "{name}",
+    "text": "*体育館を出て、校舎の裏手へ向かった。*"
+  },
+  "after5_confess_no_2b": {
+    "name": "{name}",
+    "text": "*家に帰った。*"
+  },
+  "after5_farewell_seo_6_ins": {
+    "name": "{name}",
+    "text": "*ソヨンが振り返って手を振る。——Day 1と同じ動作だ。振り向かない。*"
+  },
+  "after5_farewell_seo_6_ins2": {
+    "name": "{name}",
+    "text": "*背筋が伸びている。完璧に。——でも今回は、震えていない。*"
+  },
+  "after5_farewell_dain_4_ins": {
+    "name": "{name}",
+    "text": "*ニッと笑って拳で肩を叩く。——Day 1と同じ力だ。*"
+  },
+  "after5_farewell_dain_4_ins2": {
+    "name": "ダイン",
+    "text": "「……うまくやりなよ。マジで。」"
+  },
+  "after5_farewell_dain_4_ins3": {
+    "name": "{name}",
+    "text": "*感嘆符は健在だ。——ダインは最後までダインだ。それがこの人の強さ。*"
+  },
+  "after5_last_chance_2_ins": {
+    "name": "{name}",
+    "text": "*また逃げるところだった。前の学校と同じように。ポケットの中のスマホを握りしめて何も言えないあの瞬間が繰り返されるところだった。——ダメだ。今回は。*"
+  },
+  "after5_last_chance_2_ins2": {
+    "name": "{name}",
+    "text": "*足が動く。口が先に開く。用意した言葉なんてない。——ただ体が先に動く。*"
+  },
+  "after5_last_chance_2_ins3": {
+    "name": "{name}",
+    "text": "ソヨン。"
+  },
+  "after5_last_chance_2_ins4": {
+    "name": "{name}",
+    "text": "*ソヨンが振り返る。夕日を背にしている。*"
+  },
+  "after5_last_chance_2_ins5": {
+    "name": "ソヨン",
+    "text": "「……遅い。」"
+  },
+  "after5_last_chance_2_ins6": {
+    "name": "{name}",
+    "text": "*少しの沈黙。風が髪を揺らす。払わない。*"
+  },
+  "after5_last_chance_2_ins7": {
+    "name": "ソヨン",
+    "text": "「でも——遅くない。逃げずに戻ってきたから。」"
+  },
+  "after5_last_chance_2_ins8": {
+    "name": "{name}",
+    "text": "*小指を差し出す。Day 4で掴めなかったあの指。*"
+  },
+  "after5_last_chance_2_ins9": {
+    "name": "ソヨン",
+    "text": "「今度はちゃんと握って。」"
+  },
+  "after5_last_chance_2_ins10": {
+    "name": "{name}",
+    "text": "*並んで歩きながら——学校を後にする。*"
+  },
+  "after5_last_chance_2_ins11": {
+    "name": "{name}",
+    "text": "ダイン。"
+  },
+  "after5_last_chance_2_ins12": {
+    "name": "{name}",
+    "text": "*ダインが走ってきて——立ち止まる。*"
+  },
+  "after5_last_chance_2_ins13": {
+    "name": "ダイン",
+    "text": "「え、マジで？！」"
+  },
+  "after5_last_chance_2_ins14": {
+    "name": "{name}",
+    "text": "*目が大きくなる。1秒。2秒。*"
+  },
+  "after5_last_chance_2_ins15": {
+    "name": "ダイン",
+    "text": "「……マジで？」"
+  },
+  "after5_last_chance_2_ins16": {
+    "name": "{name}",
+    "text": "*感嘆符が消える。声が小さくなる。——目が潤んでくる。*"
+  },
+  "after5_last_chance_2_ins17": {
+    "name": "ダイン",
+    "text": "「あたし——待ってたんだよ。昨日から。ていうか一昨日から。」"
+  },
+  "after5_last_chance_2_ins18": {
+    "name": "{name}",
+    "text": "*拳で目をこする。笑いながら泣いている。*"
+  },
+  "after5_last_chance_2_ins19": {
+    "name": "ダイン",
+    "text": "「もー なんで泣くの——嬉しいことなのに——」"
+  },
+  "after5_confess_react_yuna_ins": {
+    "name": "{name}",
+    "text": "*ユナが本を置く。表情は変わらない。——でも手が震えている。*"
+  },
+  "after5_confess_react_yuna_ins2": {
+    "name": "ユナ",
+    "text": "「……知ってた。」"
+  },
+  "after5_confess_react_yuna_ins3": {
+    "name": "{name}",
+    "text": "*メモを渡される。折りたたまれた紙。開くと一行。*"
+  },
+  "after5_confess_react_yuna_ins4": {
+    "name": "{name}",
+    "text": "*「待ってた。——ずっと。」*"
+  },
+  "after5_confess_react_yuna_ins5": {
+    "name": "{name}",
+    "text": "*一行なのにインクがにじんでいる。——書きながら泣いていた。*"
+  },
+  "after5_confess_react_yuna_ins6": {
+    "name": "ユナ",
+    "text": "「……読んでくれたなら、それでいい。」"
+  },
+  "after5_confess_react_yuna_ins7": {
+    "name": "{name}",
+    "text": "*並んで歩いた。何も言わずに。*"
+  },
+  "after5_confess_react_yuna_ins8": {
+    "name": "{name}",
+    "text": "*そうして——学校を出て歩いた。*"
+  }
 }

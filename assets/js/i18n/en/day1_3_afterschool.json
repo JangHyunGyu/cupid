@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "School Nurse",
-        "text": "*She pauses.* ...Sharp eyes. First time a patient's worried about the doctor."
+        "text": "...Sharp patient. I'm the one who should be worrying here."
     },
     "after_nurse_enter_choice_b": {
         "name": "School Nurse",

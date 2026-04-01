@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Professeure principale",
-        "text": "...N'en parle à personne. Un prof qui partage ça avec un élève — c'est un secret."
+        "text": "*Soudain sérieuse.* ...N'en parle à personne. Un prof qui partage ça avec un élève — c'est un secret."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
@@ -328,7 +328,7 @@
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Infirmière",
-        "text": "Compliqué, c'est compliqué, que ce soit l'amour ou autre chose. N'essaie pas de ranger. Ressens, c'est tout."
+        "text": "*Tire une chaise et s'assoit.* Les relations. — C'est une consultation sentimentale ? *Pfff.* Plus tu fais semblant, plus ça se voit."
     },
     "hidden_nurse_d3_6": {
         "name": "Infirmière",

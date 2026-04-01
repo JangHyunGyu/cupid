@@ -1,321 +1,321 @@
 {
-    "night2_start": {
-        "name": "{name}",
-        "text": "*De retour à la maison. Douche prise, allongé sur le lit — les notifications du messenger se mettent à pleuvoir.*"
-    },
-    "night2_msg_1": {
-        "name": "{name}",
-        "text": "*Des messages de trois personnes.*"
-    },
-    "night2_msg_dain_specific": {
-        "name": "Dain",
-        "text": "Hé !! Le tteokbokki d'aujourd'hui était trop bon !!"
-    },
-    "night2_msg_dain_specific_2": {
-        "name": "Dain",
-        "text": "Demain on remet ça !! On change de jeu !!"
-    },
-    "night2_msg_seo_specific": {
-        "name": "Seoyeon",
-        "text": "Merci pour aujourd'hui. On a fini tôt grâce à toi"
-    },
-    "night2_msg_seo_specific_2": {
-        "name": "Seoyeon",
-        "text": "Je risque de te rappeler la prochaine fois, alors tiens-toi prêt"
-    },
-    "night2_msg_yuna_specific": {
-        "name": "Yuna",
-        "text": "...Ce morceau aujourd'hui. C'était bien"
-    },
-    "night2_msg_yuna_specific_2": {
-        "name": "Yuna",
-        "text": "...Rejoue-le pour moi un jour"
-    },
-    "night2_msg_seo_general": {
-        "name": "Seoyeon",
-        "text": "Demain midi, je laisse le toit ouvert. Viens"
-    },
-    "night2_msg_dain_general": {
-        "name": "Dain",
-        "text": "Hé !! Tu fais quoi demain ?!"
-    },
-    "night2_msg_dain_general_merge": {
-        "name": "Seoyeon",
-        "text": "Garde ta pause déjeuner libre demain"
-    },
-    "night2_msg_seo_general_alt": {
-        "name": "Seoyeon",
-        "text": "Demain midi, je laisse le toit ouvert. Viens"
-    },
-    "night2_msg_yuna_general": {
-        "name": "Yuna",
-        "text": "...Tu viens à la bibliothèque demain ?"
-    },
-    "night2_msg_generic": {
-        "name": "Dain",
-        "text": "Hé !! Tu fais quoi demain ?!"
-    },
-    "night2_msg_generic_2": {
-        "name": "Seoyeon",
-        "text": "Garde ta pause déjeuner libre demain"
-    },
-    "night2_msg_generic_3": {
-        "name": "Yuna",
-        "text": "...Tu viens à la bibliothèque demain ?"
-    },
-    "night2_msg_7": {
-        "name": "{name}",
-        "text": "*Je dois répondre aux trois en même temps. — Je sais pas si c'est du bonheur ou de la torture.*"
-    },
-    "night2_choice": {
-        "name": "{name}",
-        "text": "*À qui je réponds en premier ?*",
-        "choices": [
-            "Répondre à Dain en premier",
-            "Répondre à Seoyeon en premier",
-            "Répondre à Yuna en premier"
-        ]
-    },
-    "night2_reply_dain_1": {
-        "name": "{name}",
-        "text": "Le tteokbokki était épicé mdr"
-    },
-    "night2_reply_dain_2": {
-        "name": "Dain",
-        "text": "Mdr tu supportes pas l'épicé ?!"
-    },
-    "night2_reply_dain_3": {
-        "name": "Dain",
-        "text": "Demain on prend du doux !!"
-    },
-    "night2_reply_dain_4": {
-        "name": "Dain",
-        "text": "Ah mais le tteokbokki doux c'est pas du vrai tteokbokki mdr"
-    },
-    "night2_reply_dain_5": {
-        "name": "{name}",
-        "text": "*Encore trois messages d'affilée. Cette personne ne finit jamais en une phrase.*"
-    },
-    "night2_reply_seo_1": {
-        "name": "{name}",
-        "text": "Appelle-moi et je reviendrai"
-    },
-    "night2_reply_seo_2": {
-        "name": "Seoyeon",
-        "text": "Tu fais des promesses facilement"
-    },
-    "night2_reply_seo_3": {
-        "name": "{name}",
-        "text": "C'est une promesse facile"
-    },
-    "night2_reply_seo_4": {
-        "name": "Seoyeon",
-        "text": "......\nDemain midi je laisserai le toit ouvert. Que tu viennes ou non, c'est toi qui vois"
-    },
-    "night2_reply_seo_5": {
-        "name": "{name}",
-        "text": "*Elle a dit 'toi qui vois', mais le ton suggère que quelque chose arrivera si je me montre pas.*"
-    },
-    "night2_reply_yuna_1": {
-        "name": "{name}",
-        "text": "À peu près à la moitié. C'est bien"
-    },
-    "night2_reply_yuna_2": {
-        "name": "Yuna",
-        "text": "...Tant mieux"
-    },
-    "night2_reply_yuna_3": {
-        "name": "{name}",
-        "text": "*Un bref silence. — Et puis.*"
-    },
-    "night2_reply_yuna_4": {
-        "name": "Yuna",
-        "text": "Regarde la troisième étoile"
-    },
-    "night2_reply_yuna_5": {
-        "name": "{name}",
-        "text": "?"
-    },
-    "night2_reply_yuna_6": {
-        "name": "Yuna",
-        "text": "La raison, plus tard"
-    },
-    "night2_reply_yuna_7": {
-        "name": "{name}",
-        "text": "*La troisième étoile ? — J'ouvre la fenêtre et regarde le ciel nocturne. Des étoiles sont visibles. Je sais pas laquelle est la troisième, mais bon. Une énigme très Yuna. Quelqu'un qui ne donne jamais la réponse. — Quelqu'un qui te donne envie de la trouver.*"
-    },
-    "night2_end_1": {
-        "name": "{name}",
-        "text": "*J'ai envoyé mes réponses et posé le téléphone.*"
-    },
-    "night2_flashback_1": {
-        "name": "{name}",
-        "text": "*Ce que Minsu a dit me revient sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*"
-    },
-    "night2_flashback_2": {
-        "name": "{name}",
-        "text": "*Je fais défiler longtemps. Trois mois en arrière. — Une photo. Photo de groupe devant la bibliothèque. Sojeong sourit. À côté de moi.*"
-    },
-    "night2_flashback_3": {
-        "name": "{name}",
-        "text": "*À cette époque, ça faisait un mois que je répétais 'je t'aime bien'. Chaque soir, je l'écrivais dans le bloc-notes du téléphone. Des simulations de déclaration. — À chaque fois, je m'arrêtais là.*"
-    },
-    "night2_flashback_4": {
-        "name": "{name}",
-        "text": "*Et un jour de mars, pendant l'appel du matin, mon voisin de table m'a dit : 'Sojeong a un copain.'*"
-    },
-    "night2_flashback_5": {
-        "name": "{name}",
-        "text": "*Les simulations dans le bloc-notes se sont arrêtées à la 38ème. La 39ème n'existe pas. Plus besoin de l'écrire.*"
-    },
-    "night2_flashback_6": {
-        "name": "{name}",
-        "text": "*Le transfert, c'était pas à cause de Sojeong. C'était pour le travail de mon père. — Mais ça ne m'a pas dérangé de partir. Au moins, je n'aurais plus à passer chaque jour dans le couloir où elle souriait.*"
-    },
-    "night2_flashback_7": {
-        "name": "{name}",
-        "text": "*'Cette fois, je le dirai sans regrets.' — C'est ce que je m'étais promis en arrivant dans ce lycée.*"
-    },
-    "night2_flashback_8": {
-        "name": "{name}",
-        "text": "*J'ai fermé la galerie. J'ai hésité à supprimer la photo — je l'ai gardée. La supprimer, ce serait comme effacer aussi les regrets.*"
-    },
-    "night2_end_2": {
-        "name": "{name}",
-        "text": "*Le deuxième jour est fini. Le premier jour, c'était de la curiosité. Je me demandais quel genre de personnes elles étaient.*"
-    },
-    "night2_end_3": {
-        "name": "{name}",
-        "text": "*Hier, c'était juste de l'intérêt. Aujourd'hui — les mots « tu me manques » sont montés jusqu'au bout de ma gorge avant de redescendre.*"
-    },
-    "night2_end_4": {
-        "name": "{name}",
-        "text": "*Je ferme les yeux. — Peut-être que demain, je devrais être un peu plus honnête.*"
-    },
-    "night2_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Échange de messages nocturnes avec Seoyeon.*",
-        "context": "Nuit 2, discussion avec Seoyeon. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
-        "personality": "Seoyeon montre un côté plus honnête la nuit."
-    },
-    "night2_dain_freetalk": {
-        "name": "Dain",
-        "text": "*Échange de messages nocturnes avec Dain.*",
-        "context": "Nuit 2, discussion avec Dain. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
-        "personality": "Dain est énergique même la nuit, mais parfois sérieuse."
-    },
-    "night2_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Échange de messages nocturnes avec Yuna.*",
-        "context": "Nuit 2, discussion avec Yuna. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
-        "personality": "Yuna baisse ses murs la nuit. Des messages plus longs signifient qu'elle s'ouvre."
-    },
-    "night2_hidden_check": {
-        "name": "{name}",
-        "text": "*Entre les alertes du chat — d'autres notifications apparaissent.*"
-    },
-    "night2_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*Un message privé de la prof principale. '{name}, merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
-    },
-    "night2_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*Trois lignes. Remerciement, distance, puis rapprochement. — Elle joue au tir à la corde avec elle-même.*"
-    },
-    "night2_hidden_homeroom_3": {
-        "name": "{name}",
-        "text": "*'Plus besoin de revenir' et 'passe quand tu veux' dans le même message. Contradictoire — mais tellement elle.*"
-    },
-    "night2_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Notification de l'appli santé. 'Dossier infirmerie : {name} — Écorchure au coude (légère). Note : Je changerai le pansement demain matin. Le changement de pansement est un acte médical, pas de droit de refus ^^'*"
-    },
-    "night2_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*Pas de droit de refus. — Autorité médicale ou intérêt personnel ? L'émoji brouille la frontière.*"
-    },
-    "night2_reply_dain_react_high": {
-        "name": "Dain",
-        "text": "AAAH !!!!! Je viens de me rouler dans mon lit tellement c'était drôle mdr !! Viens au gymnase demain, PROMIS !!"
-    },
-    "night2_reply_dain_react_default": {
-        "name": "Dain",
-        "text": "lol ok~ bonne nuit !"
-    },
-    "night2_reply_seo_react_high": {
-        "name": "Seoyeon",
-        "text": "...Tu es plus intéressant que prévu. Tu veux déjeuner sur le toit demain ?"
-    },
-    "night2_reply_seo_react_default": {
-        "name": "Seoyeon",
-        "text": "Heh. Compris. À demain."
-    },
-    "night2_reply_yuna_react_high": {
-        "name": "Yuna",
-        "text": "...Quelqu'un répond à cette heure. Tu veux venir à la bibliothèque demain ?"
-    },
-    "night2_reply_yuna_react_default": {
-        "name": "Yuna",
-        "text": "...Oui. Bonne nuit."
-    },
-    "night2_start_ins": {
-        "name": "{name}",
-        "text": "*Trois personnes. En même temps.*"
-    },
-    "night2_reply_yuna_6_ins": {
-        "name": "{name}",
-        "text": "*La troisième étoile ? — J'ouvre la fenêtre et regarde le ciel nocturne. Il y a des étoiles. Laquelle est la troisième, aucune idée.*"
-    },
-    "night2_reply_yuna_6_ins2": {
-        "name": "{name}",
-        "text": "*Une devinette très Yuna. Une personne qui ne donne jamais la réponse. — Une personne qui donne envie de chercher.*"
-    },
-    "night2_reply_yuna_6_ins3": {
-        "name": "{name}",
-        "text": "*Entre les notifications du messageur — un message personnel de la professeure principale arrive.*"
-    },
-    "night2_reply_yuna_6_ins4": {
-        "name": "Professeure principale",
-        "text": "*{name}, merci d'être passé au bureau des profs aujourd'hui*"
-    },
-    "night2_reply_yuna_6_ins5": {
-        "name": "Professeure principale",
-        "text": "*L'administratif est bouclé, donc je n'aurai plus besoin de te convoquer*"
-    },
-    "night2_reply_yuna_6_ins6": {
-        "name": "Professeure principale",
-        "text": "*...Mais si l'adaptation est difficile, viens quand tu veux*"
-    },
-    "night2_end_1_ins": {
-        "name": "{name}",
-        "text": "*Le deuxième jour est fini.*"
-    },
-    "night2_end_2_ins": {
-        "name": "{name}",
-        "text": "*Aujourd'hui, c'est — différent. Ce n'est plus de la curiosité. Je pense à elles. Ce qu'elles font, ce qu'elles diront demain.*"
-    },
-    "night2_end_2_ins2": {
-        "name": "{name}",
-        "text": "*Les mots de Minsu reviennent sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*"
-    },
-    "night2_flashback_6_ins": {
-        "name": "{name}",
-        "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
-    },
-    "night2_flashback_6_ins2": {
-        "name": "{name}",
-        "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
-    },
-    "night2_end_3_ins": {
-        "name": "{name}",
-        "text": "*Le problème, c'est que cette distance se réduit plus vite que prévu.*"
-    },
-    "night2_end_4_ins": {
-        "name": "{name}",
-        "text": "*J'ouvre le frigo. Pas grand-chose. Du riz restant, des œufs, des algues. — J'ai envie de préparer quelque chose à apporter demain. Pour qui ? Aucune idée. J'en ai juste envie.*"
-    },
-    "night2_end_4_ins2": {
-        "name": "{name}",
-        "text": "*J'ai bricolé un bentō à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
-    }
+  "night2_start": {
+    "name": "{name}",
+    "text": "*De retour à la maison. Douche prise, allongé sur le lit — les notifications du messenger se mettent à pleuvoir.*"
+  },
+  "night2_msg_1": {
+    "name": "{name}",
+    "text": "*Des messages de trois personnes.*"
+  },
+  "night2_msg_dain_specific": {
+    "name": "Dain",
+    "text": "Hé !! Le tteokbokki d'aujourd'hui était trop bon !!"
+  },
+  "night2_msg_dain_specific_2": {
+    "name": "Dain",
+    "text": "Demain on remet ça !! On change de jeu !!"
+  },
+  "night2_msg_seo_specific": {
+    "name": "Seoyeon",
+    "text": "Merci pour aujourd'hui. On a fini tôt grâce à toi"
+  },
+  "night2_msg_seo_specific_2": {
+    "name": "Seoyeon",
+    "text": "Je risque de te rappeler la prochaine fois, alors tiens-toi prêt"
+  },
+  "night2_msg_yuna_specific": {
+    "name": "Yuna",
+    "text": "...Ce morceau aujourd'hui. C'était bien"
+  },
+  "night2_msg_yuna_specific_2": {
+    "name": "Yuna",
+    "text": "...Rejoue-le pour moi un jour"
+  },
+  "night2_msg_seo_general": {
+    "name": "Seoyeon",
+    "text": "Demain midi, je laisse le toit ouvert. Viens"
+  },
+  "night2_msg_dain_general": {
+    "name": "Dain",
+    "text": "Hé !! Tu fais quoi demain ?!"
+  },
+  "night2_msg_dain_general_merge": {
+    "name": "Seoyeon",
+    "text": "Garde ta pause déjeuner libre demain"
+  },
+  "night2_msg_seo_general_alt": {
+    "name": "Seoyeon",
+    "text": "Demain midi, je laisse le toit ouvert. Viens"
+  },
+  "night2_msg_yuna_general": {
+    "name": "Yuna",
+    "text": "...Tu viens à la bibliothèque demain ?"
+  },
+  "night2_msg_generic": {
+    "name": "Dain",
+    "text": "Hé !! Tu fais quoi demain ?!"
+  },
+  "night2_msg_generic_2": {
+    "name": "Seoyeon",
+    "text": "Garde ta pause déjeuner libre demain"
+  },
+  "night2_msg_generic_3": {
+    "name": "Yuna",
+    "text": "...Tu viens à la bibliothèque demain ?"
+  },
+  "night2_msg_7": {
+    "name": "{name}",
+    "text": "*Je dois répondre aux trois en même temps. — Je sais pas si c'est du bonheur ou de la torture.*"
+  },
+  "night2_choice": {
+    "name": "{name}",
+    "text": "*À qui je réponds en premier ?*",
+    "choices": [
+      "Répondre à Dain en premier",
+      "Répondre à Seoyeon en premier",
+      "Répondre à Yuna en premier"
+    ]
+  },
+  "night2_reply_dain_1": {
+    "name": "{name}",
+    "text": "Le tteokbokki était épicé mdr"
+  },
+  "night2_reply_dain_2": {
+    "name": "Dain",
+    "text": "Mdr tu supportes pas l'épicé ?!"
+  },
+  "night2_reply_dain_3": {
+    "name": "Dain",
+    "text": "Demain on prend du doux !!"
+  },
+  "night2_reply_dain_4": {
+    "name": "Dain",
+    "text": "Ah mais le tteokbokki doux c'est pas du vrai tteokbokki mdr"
+  },
+  "night2_reply_dain_5": {
+    "name": "{name}",
+    "text": "*Encore trois messages d'affilée. Cette personne ne finit jamais en une phrase.*"
+  },
+  "night2_reply_seo_1": {
+    "name": "{name}",
+    "text": "Appelle-moi et je reviendrai"
+  },
+  "night2_reply_seo_2": {
+    "name": "Seoyeon",
+    "text": "Tu fais des promesses facilement"
+  },
+  "night2_reply_seo_3": {
+    "name": "{name}",
+    "text": "C'est une promesse facile"
+  },
+  "night2_reply_seo_4": {
+    "name": "Seoyeon",
+    "text": "Demain midi je laisserai le toit ouvert. Viens"
+  },
+  "night2_reply_seo_5": {
+    "name": "{name}",
+    "text": "*Elle a dit 'toi qui vois', mais le ton suggère que quelque chose arrivera si je me montre pas.*"
+  },
+  "night2_reply_yuna_1": {
+    "name": "{name}",
+    "text": "À peu près à la moitié. C'est bien"
+  },
+  "night2_reply_yuna_2": {
+    "name": "Yuna",
+    "text": "...Tant mieux"
+  },
+  "night2_reply_yuna_3": {
+    "name": "{name}",
+    "text": "*Un bref silence. — Et puis.*"
+  },
+  "night2_reply_yuna_4": {
+    "name": "Yuna",
+    "text": "Regarde la troisième étoile"
+  },
+  "night2_reply_yuna_5": {
+    "name": "{name}",
+    "text": "?"
+  },
+  "night2_reply_yuna_6": {
+    "name": "Yuna",
+    "text": "La raison, plus tard"
+  },
+  "night2_reply_yuna_7": {
+    "name": "{name}",
+    "text": "*La troisième étoile ? — J'ouvre la fenêtre et regarde le ciel nocturne. Des étoiles sont visibles. Je sais pas laquelle est la troisième, mais bon. Une énigme très Yuna. Quelqu'un qui ne donne jamais la réponse. — Quelqu'un qui te donne envie de la trouver.*"
+  },
+  "night2_end_1": {
+    "name": "{name}",
+    "text": "*J'ai envoyé mes réponses et posé le téléphone.*"
+  },
+  "night2_flashback_1": {
+    "name": "{name}",
+    "text": "*Ce que Minsu a dit me revient sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*"
+  },
+  "night2_flashback_2": {
+    "name": "{name}",
+    "text": "*Je fais défiler longtemps. Trois mois en arrière. — Une photo. Photo de groupe devant la bibliothèque. Sojeong sourit. À côté de moi.*"
+  },
+  "night2_flashback_3": {
+    "name": "{name}",
+    "text": "*À cette époque, ça faisait un mois que je répétais 'je t'aime bien'. Chaque soir, je l'écrivais dans le bloc-notes du téléphone. Des simulations de déclaration. — À chaque fois, je m'arrêtais là.*"
+  },
+  "night2_flashback_4": {
+    "name": "{name}",
+    "text": "*Et un jour de mars, pendant l'appel du matin, mon voisin de table m'a dit : 'Sojeong a un copain.'*"
+  },
+  "night2_flashback_5": {
+    "name": "{name}",
+    "text": "*Les simulations dans le bloc-notes se sont arrêtées à la 38ème. La 39ème n'existe pas. Plus besoin de l'écrire.*"
+  },
+  "night2_flashback_6": {
+    "name": "{name}",
+    "text": "*Le transfert, c'était pas à cause de Sojeong. C'était pour le travail de mon père. — Mais ça ne m'a pas dérangé de partir. Au moins, je n'aurais plus à passer chaque jour dans le couloir où elle souriait.*"
+  },
+  "night2_flashback_7": {
+    "name": "{name}",
+    "text": "*'Cette fois, je le dirai sans regrets.' — C'est ce que je m'étais promis en arrivant dans ce lycée.*"
+  },
+  "night2_flashback_8": {
+    "name": "{name}",
+    "text": "*J'ai fermé la galerie. J'ai hésité à supprimer la photo — je l'ai gardée. La supprimer, ce serait comme effacer aussi les regrets.*"
+  },
+  "night2_end_2": {
+    "name": "{name}",
+    "text": "*Le deuxième jour est fini. Le premier jour, c'était de la curiosité. Je me demandais quel genre de personnes elles étaient.*"
+  },
+  "night2_end_3": {
+    "name": "{name}",
+    "text": "*Hier, c'était juste de l'intérêt. Aujourd'hui — les mots « tu me manques » sont montés jusqu'au bout de ma gorge avant de redescendre.*"
+  },
+  "night2_end_4": {
+    "name": "{name}",
+    "text": "*Je ferme les yeux. — Peut-être que demain, je devrais être un peu plus honnête.*"
+  },
+  "night2_seo_freetalk": {
+    "name": "Seoyeon",
+    "text": "*Échange de messages nocturnes avec Seoyeon.*",
+    "context": "Nuit 2, discussion avec Seoyeon. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
+    "personality": "Seoyeon montre un côté plus honnête la nuit."
+  },
+  "night2_dain_freetalk": {
+    "name": "Dain",
+    "text": "*Échange de messages nocturnes avec Dain.*",
+    "context": "Nuit 2, discussion avec Dain. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
+    "personality": "Dain est énergique même la nuit, mais parfois sérieuse."
+  },
+  "night2_yuna_freetalk": {
+    "name": "Yuna",
+    "text": "*Échange de messages nocturnes avec Yuna.*",
+    "context": "Nuit 2, discussion avec Yuna. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
+    "personality": "Yuna baisse ses murs la nuit. Des messages plus longs signifient qu'elle s'ouvre."
+  },
+  "night2_hidden_check": {
+    "name": "{name}",
+    "text": "*Entre les alertes du chat — d'autres notifications apparaissent.*"
+  },
+  "night2_hidden_homeroom_1": {
+    "name": "{name}",
+    "text": "*Un message privé de la prof principale. '{name}, merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
+  },
+  "night2_hidden_homeroom_2": {
+    "name": "{name}",
+    "text": "*Trois lignes. Remerciement, distance, puis rapprochement. — Elle joue au tir à la corde avec elle-même.*"
+  },
+  "night2_hidden_homeroom_3": {
+    "name": "{name}",
+    "text": "*'Plus besoin de revenir' et 'passe quand tu veux' dans le même message. Contradictoire — mais tellement elle.*"
+  },
+  "night2_hidden_nurse_1": {
+    "name": "{name}",
+    "text": "*Notification de l'appli santé. 'Dossier infirmerie : {name} — Écorchure au coude (légère). Note : Je changerai le pansement demain matin. Le changement de pansement est un acte médical, pas de droit de refus ^^'*"
+  },
+  "night2_hidden_nurse_2": {
+    "name": "{name}",
+    "text": "*Pas de droit de refus. — Autorité médicale ou intérêt personnel ? L'émoji brouille la frontière.*"
+  },
+  "night2_reply_dain_react_high": {
+    "name": "Dain",
+    "text": "AAAH !!!!! Je viens de me rouler dans mon lit tellement c'était drôle mdr !! Viens au gymnase demain, PROMIS !!"
+  },
+  "night2_reply_dain_react_default": {
+    "name": "Dain",
+    "text": "lol ok~ bonne nuit !"
+  },
+  "night2_reply_seo_react_high": {
+    "name": "Seoyeon",
+    "text": "...Tu es plus intéressant que prévu. Tu veux déjeuner sur le toit demain ?"
+  },
+  "night2_reply_seo_react_default": {
+    "name": "Seoyeon",
+    "text": "Heh. Compris. À demain."
+  },
+  "night2_reply_yuna_react_high": {
+    "name": "Yuna",
+    "text": "...Quelqu'un répond à cette heure. Tu veux venir à la bibliothèque demain ?"
+  },
+  "night2_reply_yuna_react_default": {
+    "name": "Yuna",
+    "text": "...Oui. Bonne nuit."
+  },
+  "night2_start_ins": {
+    "name": "{name}",
+    "text": "*Trois personnes. En même temps.*"
+  },
+  "night2_reply_yuna_6_ins": {
+    "name": "{name}",
+    "text": "*La troisième étoile ? — J'ouvre la fenêtre et regarde le ciel nocturne. Il y a des étoiles. Laquelle est la troisième, aucune idée.*"
+  },
+  "night2_reply_yuna_6_ins2": {
+    "name": "{name}",
+    "text": "*Une devinette très Yuna. Une personne qui ne donne jamais la réponse. — Une personne qui donne envie de chercher.*"
+  },
+  "night2_reply_yuna_6_ins3": {
+    "name": "{name}",
+    "text": "*Entre les notifications du messageur — un message personnel de la professeure principale arrive.*"
+  },
+  "night2_reply_yuna_6_ins4": {
+    "name": "Professeure principale",
+    "text": "*{name}, merci d'être passé au bureau des profs aujourd'hui*"
+  },
+  "night2_reply_yuna_6_ins5": {
+    "name": "Professeure principale",
+    "text": "*L'administratif est bouclé, donc je n'aurai plus besoin de te convoquer*"
+  },
+  "night2_reply_yuna_6_ins6": {
+    "name": "Professeure principale",
+    "text": "*...Mais si l'adaptation est difficile, viens quand tu veux*"
+  },
+  "night2_end_1_ins": {
+    "name": "{name}",
+    "text": "*Le deuxième jour est fini.*"
+  },
+  "night2_end_2_ins": {
+    "name": "{name}",
+    "text": "*Aujourd'hui, c'est — différent. Ce n'est plus de la curiosité. Je pense à elles. Ce qu'elles font, ce qu'elles diront demain.*"
+  },
+  "night2_end_2_ins2": {
+    "name": "{name}",
+    "text": "*Les mots de Minsu reviennent sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*"
+  },
+  "night2_flashback_6_ins": {
+    "name": "{name}",
+    "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
+  },
+  "night2_flashback_6_ins2": {
+    "name": "{name}",
+    "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
+  },
+  "night2_end_3_ins": {
+    "name": "{name}",
+    "text": "*Le problème, c'est que cette distance se réduit plus vite que prévu.*"
+  },
+  "night2_end_4_ins": {
+    "name": "{name}",
+    "text": "*J'ouvre le frigo. Pas grand-chose. Du riz restant, des œufs, des algues. — J'ai envie de préparer quelque chose à apporter demain. Pour qui ? Aucune idée. J'en ai juste envie.*"
+  },
+  "night2_end_4_ins2": {
+    "name": "{name}",
+    "text": "*J'ai bricolé un bentō à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
+  }
 }
