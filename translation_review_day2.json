@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-04-01T14:59:28.455Z",
+    "generated": "2026-04-01T15:01:26.775Z",
     "day": 2,
     "total_nodes": 499,
     "lang_avg": {
@@ -1749,10 +1749,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day2_1_morning.json#morning2_seo_dust_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_1_morning.json#morning2_seo_dust_5",
@@ -1763,26 +1761,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day2_1_morning.json#morning2_seo_dust_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_1_morning.json#morning2_seo_dust_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_1_morning.json#morning2_seo_dust_5",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "morning2_seo_dust_6": {
@@ -7555,10 +7547,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_yuna_17_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_yuna_17_ins",
@@ -7569,26 +7559,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_yuna_17_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_yuna_17_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_yuna_17_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "lunch2_yuna_c1_9_ins": {
@@ -12785,10 +12769,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#minsu_warn_8b",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#minsu_warn_8b",
@@ -12799,26 +12781,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#minsu_warn_8b",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#minsu_warn_8b",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#minsu_warn_8b",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "minsu_warn_9": {

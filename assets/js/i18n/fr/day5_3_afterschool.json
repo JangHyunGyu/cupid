@@ -1,286 +1,286 @@
 {
-  "after5_start": {
-    "name": "{name}",
-    "text": "*L'événement touche à sa fin. Je croise naturellement les deux personnes que je n'ai pas choisies.*"
-  },
-  "after5_farewell_seo_1": {
-    "name": "{name}",
-    "text": "*Je croise Seoyeon dans le couloir.*"
-  },
-  "after5_farewell_seo_2": {
-    "name": "Seoyeon",
-    "text": "...Pfff."
-  },
-  "after5_farewell_seo_3": {
-    "name": "{name}",
-    "text": "*Seoyeon repousse ses cheveux en arrière.*"
-  },
-  "after5_farewell_seo_4": {
-    "name": "Seoyeon",
-    "text": "Bon, je le savais. Tu n'as jamais fait ce que j'attendais, depuis le début."
-  },
-  "after5_farewell_seo_5": {
-    "name": "{name}",
-    "text": "Seoyeon..."
-  },
-  "after5_farewell_seo_6": {
-    "name": "Seoyeon",
-    "text": "La prochaine fois, c'est moi qui t'emmènerai."
-  },
-  "after5_farewell_seo_7": {
-    "name": "{name}",
-    "text": "*Seoyeon se retourne et fait un signe de la main. Le même geste qu'au premier jour. Elle ne se retourne pas. Son dos est droit. Parfaitement. Mais cette fois, elle ne tremble pas.*"
-  },
-  "after5_farewell_yuna_1": {
-    "name": "{name}",
-    "text": "*Yuna s'approche devant la bibliothèque. Sans un mot, elle me tend un livre.*"
-  },
-  "after5_farewell_yuna_2": {
-    "name": "{name}",
-    "text": "*Un marque-page est glissé à l'intérieur. Une seule ligne sur le marque-page.*"
-  },
-  "after5_farewell_yuna_3": {
-    "name": "Yuna",
-    "text": "C'était bien. ...On se retrouve dans la prochaine histoire."
-  },
-  "after5_farewell_yuna_4": {
-    "name": "{name}",
-    "text": "*Yuna se retourne. Elle ne s'arrête pas.*"
-  },
-  "after5_farewell_yuna_5": {
-    "name": "{name}",
-    "text": "*Le 'C'était bien' de Yuna est un mot qui compresse tout ce qu'une personne ordinaire dirait — 'Merci, je t'aimais bien, revoyons-nous.'*"
-  },
-  "after5_farewell_dain_1": {
-    "name": "{name}",
-    "text": "*Dain arrive en courant depuis le gymnase.*"
-  },
-  "after5_farewell_dain_2": {
-    "name": "Dain",
-    "text": "Tch, c'est dommage !"
-  },
-  "after5_farewell_dain_3": {
-    "name": "{name}",
-    "text": "Dain..."
-  },
-  "after5_farewell_dain_4": {
-    "name": "Dain",
-    "text": "Mais bon, c'est toi qui as choisi. La prochaine fois, t'as intérêt à me donner ma chance !"
-  },
-  "after5_farewell_dain_5": {
-    "name": "{name}",
-    "text": "*Elle sourit et me donne un coup de poing à l'épaule. La même force qu'au premier jour. Les points d'exclamation sont bien vivants. Dain est Dain jusqu'au bout. C'est sa force.*"
-  },
-  "after5_hidden_farewell_1": {
-    "name": "{name}",
-    "text": "*Devant le portail. Au loin, trois silhouettes.*"
-  },
-  "after5_hidden_farewell_2": {
-    "name": "{name}",
-    "text": "*Personne ne regarde par ici. — C'est normal. Celle que j'ai choisie, c'est quelqu'un d'autre.*"
-  },
-  "after5_hidden_farewell_3": {
-    "name": "{name}",
-    "text": "*Je ne dirai pas pardon. Ces mots — les leur dire serait plutôt cruel.*"
-  },
-  "after5_sunset_1": {
-    "name": "{name}",
-    "text": "*Le soleil se couche. Les cinq jours touchent à leur fin.*"
-  },
-  "after5_end": {
-    "name": "{name}",
-    "text": "*Le coucher de soleil teinte la cour. Cinq jours, c'était vraiment si court que ça ? — Le moment du dernier choix approche.*"
-  },
-  "after5_last_chance_1": {
-    "name": "{name}",
-    "text": "*Mes pas s'arrêtent. Le soleil couchant projette une longue ombre derrière moi.*"
-  },
-  "after5_last_chance_2": {
-    "name": "{name}",
-    "text": "*Dans mon ancien lycée aussi, c'était pareil. Je n'ai pas pu le dire. Et j'ai regretté. — Ça va recommencer ?*"
-  },
-  "after5_last_chance_choice": {
-    "name": "{name}",
-    "text": "*Si ce n'est pas maintenant, je ne pourrai jamais le dire.*",
-    "choices": [
-      "Cette fois, je me déclare",
-      "...Je n'ai rien pu dire"
-    ]
-  },
-  "after5_confess_yes": {
-    "name": "{name}",
-    "text": "*J'ai failli fuir encore. Comme dans mon ancien lycée. Ce moment où je range le téléphone dans ma poche sans pouvoir rien dire a failli revenir. — Non. Pas cette fois.*"
-  },
-  "after5_confess_yes_2": {
-    "name": "{name}",
-    "text": "Écoute... j'ai quelque chose à te dire."
-  },
-  "after5_confess_react_seo": {
-    "name": "Seoyeon",
-    "text": "*Marchant côte à côte.* ...T'es en retard. Mais — pas trop tard. Parce que tu es revenu au lieu de fuir."
-  },
-  "after5_confess_react_dain": {
-    "name": "Dain",
-    "text": "Attends, sérieux ?! ...Sérieux ? Moi — j'attendais. Depuis hier. Non, depuis avant-hier."
-  },
-  "after5_confess_react_yuna": {
-    "name": "Yuna",
-    "text": "*On a marché côte à côte.* ...Je le savais déjà. ...Si tu l'as lu, ça me suffit."
-  },
-  "after5_confess_react_yuna_call": {
-    "name": "{name}",
-    "text": "Yuna."
-  },
-  "after5_confess_no": {
-    "name": "{name}",
-    "text": "*Mes lèvres ne bougent pas. Encore. — Encore une fois, je n'ai pas pu le dire.*"
-  },
-  "after5_confess_no_2": {
-    "name": "{name}",
-    "text": "*La brise du soir souffle. L'ombre derrière moi s'allonge. — Je suis seul.*"
-  },
-  "after5_hidden_farewell_3b": {
-    "name": "{name}",
-    "text": "*Je me suis dirigé vers l'arrière de l'école.*"
-  },
-  "after5_farewell_yuna_5b": {
-    "name": "{name}",
-    "text": "*Je suis retourné dans le couloir.*"
-  },
-  "after5_farewell_dain_5b": {
-    "name": "{name}",
-    "text": "*J'ai quitté le gymnase et me suis dirigé vers l'arrière de l'école.*"
-  },
-  "after5_confess_no_2b": {
-    "name": "{name}",
-    "text": "*Je suis rentré chez moi.*"
-  },
-  "after5_farewell_seo_6_ins": {
-    "name": "{name}",
-    "text": "*Seoyeon se retourne et fait un signe de la main. — Le même geste que le Jour 1. Elle ne se retourne pas.*"
-  },
-  "after5_farewell_seo_6_ins2": {
-    "name": "{name}",
-    "text": "*Son dos est droit. Parfaitement. — Mais cette fois, elle ne tremble pas.*"
-  },
-  "after5_farewell_dain_4_ins": {
-    "name": "{name}",
-    "text": "*Elle sourit et me donne un coup de poing à l'épaule. — La même force que le Jour 1.*"
-  },
-  "after5_farewell_dain_4_ins2": {
-    "name": "Dain",
-    "text": "...Fais bien les choses. Pour de vrai."
-  },
-  "after5_farewell_dain_4_ins3": {
-    "name": "{name}",
-    "text": "*Les points d'exclamation sont toujours là. — Dain reste Dain jusqu'au bout. C'est sa force.*"
-  },
-  "after5_last_chance_2_ins": {
-    "name": "{name}",
-    "text": "*J'ai failli fuir encore. Comme à mon ancien lycée. Le téléphone dans la poche, incapable de dire un mot — ce moment a failli revenir. — Non. Pas cette fois.*"
-  },
-  "after5_last_chance_2_ins2": {
-    "name": "{name}",
-    "text": "*Mes jambes bougent. Ma bouche s'ouvre en premier. Pas de mots préparés. — Mon corps bouge tout seul.*"
-  },
-  "after5_last_chance_2_ins3": {
-    "name": "{name}",
-    "text": "Seoyeon."
-  },
-  "after5_last_chance_2_ins4": {
-    "name": "{name}",
-    "text": "*Seoyeon se retourne. Le soleil couchant dans son dos.*"
-  },
-  "after5_last_chance_2_ins5": {
-    "name": "Seoyeon",
-    "text": "...T'es en retard."
-  },
-  "after5_last_chance_2_ins6": {
-    "name": "{name}",
-    "text": "*Un instant de silence. Le vent fait voler ses cheveux. Elle ne les repousse pas.*"
-  },
-  "after5_last_chance_2_ins7": {
-    "name": "Seoyeon",
-    "text": "Mais — pas trop tard. Parce que tu es revenu au lieu de fuir."
-  },
-  "after5_last_chance_2_ins8": {
-    "name": "{name}",
-    "text": "*Elle tend son petit doigt. Celui que je n'ai pas pu saisir au Jour 4.*"
-  },
-  "after5_last_chance_2_ins9": {
-    "name": "Seoyeon",
-    "text": "Cette fois, accroche-toi."
-  },
-  "after5_last_chance_2_ins10": {
-    "name": "{name}",
-    "text": "*Marchant côte à côte — on quitte l'école.*"
-  },
-  "after5_last_chance_2_ins11": {
-    "name": "{name}",
-    "text": "Dain."
-  },
-  "after5_last_chance_2_ins12": {
-    "name": "{name}",
-    "text": "*Dain accourait et s'arrête net.*"
-  },
-  "after5_last_chance_2_ins13": {
-    "name": "Dain",
-    "text": "Attends, sérieux ?!"
-  },
-  "after5_last_chance_2_ins14": {
-    "name": "{name}",
-    "text": "*Ses yeux s'écarquillent. Une seconde. Deux secondes.*"
-  },
-  "after5_last_chance_2_ins15": {
-    "name": "Dain",
-    "text": "...Sérieux ?"
-  },
-  "after5_last_chance_2_ins16": {
-    "name": "{name}",
-    "text": "*Les points d'exclamation disparaissent. Sa voix devient toute petite. — Ses yeux se remplissent.*"
-  },
-  "after5_last_chance_2_ins17": {
-    "name": "Dain",
-    "text": "Moi — j'attendais. Depuis hier. Non, depuis avant-hier."
-  },
-  "after5_last_chance_2_ins18": {
-    "name": "{name}",
-    "text": "*Elle se frotte les yeux du poing. Elle rit et pleure en même temps.*"
-  },
-  "after5_last_chance_2_ins19": {
-    "name": "Dain",
-    "text": "Mais pourquoi tu pleures — c'est censé être joyeux —"
-  },
-  "after5_confess_react_yuna_ins": {
-    "name": "{name}",
-    "text": "*Yuna pose son livre. Son expression ne change pas. — Mais ses mains tremblent.*"
-  },
-  "after5_confess_react_yuna_ins2": {
-    "name": "Yuna",
-    "text": "...Je le savais déjà."
-  },
-  "after5_confess_react_yuna_ins3": {
-    "name": "{name}",
-    "text": "*Elle me tend un mot. Un papier plié. Une seule ligne en le dépliant.*"
-  },
-  "after5_confess_react_yuna_ins4": {
-    "name": "{name}",
-    "text": "*« J'ai attendu. — Longtemps. »*"
-  },
-  "after5_confess_react_yuna_ins5": {
-    "name": "{name}",
-    "text": "*Une seule ligne, mais l'encre a coulé. — Elle pleurait en l'écrivant.*"
-  },
-  "after5_confess_react_yuna_ins6": {
-    "name": "Yuna",
-    "text": "...Si tu l'as lu, ça me suffit."
-  },
-  "after5_confess_react_yuna_ins7": {
-    "name": "{name}",
-    "text": "*On a marché côte à côte. En silence.*"
-  },
-  "after5_confess_react_yuna_ins8": {
-    "name": "{name}",
-    "text": "*Et ainsi — on a marché au-delà de l'école.*"
-  }
+    "after5_start": {
+        "name": "{name}",
+        "text": "*L'événement touche à sa fin. Je croise naturellement les deux personnes que je n'ai pas choisies.*"
+    },
+    "after5_farewell_seo_1": {
+        "name": "{name}",
+        "text": "*Je croise Seoyeon dans le couloir.*"
+    },
+    "after5_farewell_seo_2": {
+        "name": "Seoyeon",
+        "text": "...Pfff."
+    },
+    "after5_farewell_seo_3": {
+        "name": "{name}",
+        "text": "*Seoyeon repousse ses cheveux en arrière.*"
+    },
+    "after5_farewell_seo_4": {
+        "name": "Seoyeon",
+        "text": "Bon, je le savais. Tu n'as jamais fait ce que j'attendais, depuis le début."
+    },
+    "after5_farewell_seo_5": {
+        "name": "{name}",
+        "text": "Seoyeon..."
+    },
+    "after5_farewell_seo_6": {
+        "name": "Seoyeon",
+        "text": "La prochaine fois, c'est moi qui t'emmènerai."
+    },
+    "after5_farewell_seo_7": {
+        "name": "{name}",
+        "text": "*Seoyeon se retourne et fait un signe de la main. Le même geste qu'au premier jour. Elle ne se retourne pas. Son dos est droit. Parfaitement. Mais cette fois, elle ne tremble pas.*"
+    },
+    "after5_farewell_yuna_1": {
+        "name": "{name}",
+        "text": "*Yuna s'approche devant la bibliothèque. Sans un mot, elle me tend un livre.*"
+    },
+    "after5_farewell_yuna_2": {
+        "name": "{name}",
+        "text": "*Un marque-page est glissé à l'intérieur. Une seule ligne sur le marque-page.*"
+    },
+    "after5_farewell_yuna_3": {
+        "name": "Yuna",
+        "text": "C'était bien. ...On se retrouve dans la prochaine histoire."
+    },
+    "after5_farewell_yuna_4": {
+        "name": "{name}",
+        "text": "*Yuna se retourne. Elle ne s'arrête pas.*"
+    },
+    "after5_farewell_yuna_5": {
+        "name": "{name}",
+        "text": "*Le 'C'était bien' de Yuna est un mot qui compresse tout ce qu'une personne ordinaire dirait — 'Merci, je t'aimais bien, revoyons-nous.'*"
+    },
+    "after5_farewell_dain_1": {
+        "name": "{name}",
+        "text": "*Dain arrive en courant depuis le gymnase.*"
+    },
+    "after5_farewell_dain_2": {
+        "name": "Dain",
+        "text": "Tch, c'est dommage !"
+    },
+    "after5_farewell_dain_3": {
+        "name": "{name}",
+        "text": "Dain..."
+    },
+    "after5_farewell_dain_4": {
+        "name": "Dain",
+        "text": "Mais bon, c'est toi qui as choisi. La prochaine fois, t'as intérêt à me donner ma chance !"
+    },
+    "after5_farewell_dain_5": {
+        "name": "{name}",
+        "text": "*Elle sourit et me donne un coup de poing à l'épaule. La même force qu'au premier jour. Les points d'exclamation sont bien vivants. Dain est Dain jusqu'au bout. C'est sa force.*"
+    },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*Devant le portail. Au loin, trois silhouettes.*"
+    },
+    "after5_hidden_farewell_2": {
+        "name": "{name}",
+        "text": "*Personne ne regarde par ici. — C'est normal. Celle que j'ai choisie, c'est quelqu'un d'autre.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*Je ne dirai pas pardon. Ces mots — les leur dire serait plutôt cruel.*"
+    },
+    "after5_sunset_1": {
+        "name": "{name}",
+        "text": "*Le soleil se couche. Les cinq jours touchent à leur fin.*"
+    },
+    "after5_end": {
+        "name": "{name}",
+        "text": "*Le coucher de soleil teinte la cour. Cinq jours, c'était vraiment si court que ça ? — Le moment du dernier choix approche.*"
+    },
+    "after5_last_chance_1": {
+        "name": "{name}",
+        "text": "*Mes pas s'arrêtent. Le soleil couchant projette une longue ombre derrière moi.*"
+    },
+    "after5_last_chance_2": {
+        "name": "{name}",
+        "text": "*Dans mon ancien lycée aussi, c'était pareil. Je n'ai pas pu le dire. Et j'ai regretté. — Ça va recommencer ?*"
+    },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*Si ce n'est pas maintenant, je ne pourrai jamais le dire.*",
+        "choices": [
+            "Cette fois, je me déclare",
+            "...Je n'ai rien pu dire"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*J'ai failli fuir encore. Comme dans mon ancien lycée. Ce moment où je range le téléphone dans ma poche sans pouvoir rien dire a failli revenir. — Non. Pas cette fois.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "Écoute... j'ai quelque chose à te dire."
+    },
+    "after5_confess_react_seo": {
+        "name": "Seoyeon",
+        "text": "*Marchant côte à côte.* ...T'es en retard. Mais — pas trop tard. Parce que tu es revenu au lieu de fuir."
+    },
+    "after5_confess_react_dain": {
+        "name": "Dain",
+        "text": "*En sortant de l'école.* Attends, sérieux ?! ...Sérieux ? Moi — j'attendais. Depuis hier. Non, depuis avant-hier."
+    },
+    "after5_confess_react_yuna": {
+        "name": "Yuna",
+        "text": "*On a marché côte à côte.* ...Je le savais déjà. ...Si tu l'as lu, ça me suffit."
+    },
+    "after5_confess_react_yuna_call": {
+        "name": "{name}",
+        "text": "Yuna."
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*Mes lèvres ne bougent pas. Encore. — Encore une fois, je n'ai pas pu le dire.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*La brise du soir souffle. L'ombre derrière moi s'allonge. — Je suis seul.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*Je me suis dirigé vers l'arrière de l'école.*"
+    },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*Je suis retourné dans le couloir.*"
+    },
+    "after5_farewell_dain_5b": {
+        "name": "{name}",
+        "text": "*J'ai quitté le gymnase et me suis dirigé vers l'arrière de l'école.*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*Je suis rentré chez moi.*"
+    },
+    "after5_farewell_seo_6_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon se retourne et fait un signe de la main. — Le même geste que le Jour 1. Elle ne se retourne pas.*"
+    },
+    "after5_farewell_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*Son dos est droit. Parfaitement. — Mais cette fois, elle ne tremble pas.*"
+    },
+    "after5_farewell_dain_4_ins": {
+        "name": "{name}",
+        "text": "*Elle sourit et me donne un coup de poing à l'épaule. — La même force que le Jour 1.*"
+    },
+    "after5_farewell_dain_4_ins2": {
+        "name": "Dain",
+        "text": "...Fais bien les choses. Pour de vrai."
+    },
+    "after5_farewell_dain_4_ins3": {
+        "name": "{name}",
+        "text": "*Les points d'exclamation sont toujours là. — Dain reste Dain jusqu'au bout. C'est sa force.*"
+    },
+    "after5_last_chance_2_ins": {
+        "name": "{name}",
+        "text": "*J'ai failli fuir encore. Comme à mon ancien lycée. Le téléphone dans la poche, incapable de dire un mot — ce moment a failli revenir. — Non. Pas cette fois.*"
+    },
+    "after5_last_chance_2_ins2": {
+        "name": "{name}",
+        "text": "*Mes jambes bougent. Ma bouche s'ouvre en premier. Pas de mots préparés. — Mon corps bouge tout seul.*"
+    },
+    "after5_last_chance_2_ins3": {
+        "name": "{name}",
+        "text": "Seoyeon."
+    },
+    "after5_last_chance_2_ins4": {
+        "name": "{name}",
+        "text": "*Seoyeon se retourne. Le soleil couchant dans son dos.*"
+    },
+    "after5_last_chance_2_ins5": {
+        "name": "Seoyeon",
+        "text": "...T'es en retard."
+    },
+    "after5_last_chance_2_ins6": {
+        "name": "{name}",
+        "text": "*Un instant de silence. Le vent fait voler ses cheveux. Elle ne les repousse pas.*"
+    },
+    "after5_last_chance_2_ins7": {
+        "name": "Seoyeon",
+        "text": "Mais — pas trop tard. Parce que tu es revenu au lieu de fuir."
+    },
+    "after5_last_chance_2_ins8": {
+        "name": "{name}",
+        "text": "*Elle tend son petit doigt. Celui que je n'ai pas pu saisir au Jour 4.*"
+    },
+    "after5_last_chance_2_ins9": {
+        "name": "Seoyeon",
+        "text": "Cette fois, accroche-toi."
+    },
+    "after5_last_chance_2_ins10": {
+        "name": "{name}",
+        "text": "*Marchant côte à côte — on quitte l'école.*"
+    },
+    "after5_last_chance_2_ins11": {
+        "name": "{name}",
+        "text": "Dain."
+    },
+    "after5_last_chance_2_ins12": {
+        "name": "{name}",
+        "text": "*Dain accourait et s'arrête net.*"
+    },
+    "after5_last_chance_2_ins13": {
+        "name": "Dain",
+        "text": "Attends, sérieux ?!"
+    },
+    "after5_last_chance_2_ins14": {
+        "name": "{name}",
+        "text": "*Ses yeux s'écarquillent. Une seconde. Deux secondes.*"
+    },
+    "after5_last_chance_2_ins15": {
+        "name": "Dain",
+        "text": "...Sérieux ?"
+    },
+    "after5_last_chance_2_ins16": {
+        "name": "{name}",
+        "text": "*Les points d'exclamation disparaissent. Sa voix devient toute petite. — Ses yeux se remplissent.*"
+    },
+    "after5_last_chance_2_ins17": {
+        "name": "Dain",
+        "text": "Moi — j'attendais. Depuis hier. Non, depuis avant-hier."
+    },
+    "after5_last_chance_2_ins18": {
+        "name": "{name}",
+        "text": "*Elle se frotte les yeux du poing. Elle rit et pleure en même temps.*"
+    },
+    "after5_last_chance_2_ins19": {
+        "name": "Dain",
+        "text": "Mais pourquoi tu pleures — c'est censé être joyeux —"
+    },
+    "after5_confess_react_yuna_ins": {
+        "name": "{name}",
+        "text": "*Yuna pose son livre. Son expression ne change pas. — Mais ses mains tremblent.*"
+    },
+    "after5_confess_react_yuna_ins2": {
+        "name": "Yuna",
+        "text": "...Je le savais déjà."
+    },
+    "after5_confess_react_yuna_ins3": {
+        "name": "{name}",
+        "text": "*Elle me tend un mot. Un papier plié. Une seule ligne en le dépliant.*"
+    },
+    "after5_confess_react_yuna_ins4": {
+        "name": "{name}",
+        "text": "*« J'ai attendu. — Longtemps. »*"
+    },
+    "after5_confess_react_yuna_ins5": {
+        "name": "{name}",
+        "text": "*Une seule ligne, mais l'encre a coulé. — Elle pleurait en l'écrivant.*"
+    },
+    "after5_confess_react_yuna_ins6": {
+        "name": "Yuna",
+        "text": "...Si tu l'as lu, ça me suffit."
+    },
+    "after5_confess_react_yuna_ins7": {
+        "name": "{name}",
+        "text": "*On a marché côte à côte. En silence.*"
+    },
+    "after5_confess_react_yuna_ins8": {
+        "name": "{name}",
+        "text": "*Et ainsi — on a marché au-delà de l'école.*"
+    }
 }

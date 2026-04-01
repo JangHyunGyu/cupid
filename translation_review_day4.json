@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "generated": "2026-04-01T14:59:29.402Z",
+    "generated": "2026-04-01T15:01:27.718Z",
     "day": 4,
     "total_nodes": 616,
     "lang_avg": {
-      "en": 9.9,
+      "en": 10,
       "ja": 10,
-      "es": 9.9,
-      "fr": 9.9,
-      "de": 9.9
+      "es": 10,
+      "fr": 10,
+      "de": 10
     },
     "all_reviewed": true
   },
@@ -7699,42 +7699,32 @@
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_shop",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_2_lunch.json#date_dain_shop",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_2_lunch.json#date_dain_shop",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_2_lunch.json#date_dain_shop",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_shop",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_shop_2": {
@@ -19626,10 +19616,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_7_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_seo_7_ins",
@@ -19640,26 +19628,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_seo_7_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_seo_7_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_7_ins",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_9_ins": {
@@ -19742,10 +19724,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_9_ins3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_seo_9_ins3",
@@ -19756,26 +19736,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_seo_9_ins3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_seo_9_ins3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_9_ins3",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_11_ins": {
@@ -20362,10 +20336,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_12_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_dain_12_ins2",
@@ -20376,26 +20348,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_dain_12_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_dain_12_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_12_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_13_ins": {
@@ -20550,10 +20516,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_18_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_dain_18_ins2",
@@ -20564,26 +20528,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_dain_18_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_dain_18_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_18_ins2",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_18_ins3": {
@@ -21242,10 +21200,8 @@
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_14_ins7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_yuna_14_ins7",
@@ -21256,26 +21212,20 @@
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_yuna_14_ins7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_yuna_14_ins7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_14_ins7",
         "_reviewed": true,
-        "_score": 5,
-        "_issues": [
-          "미번역"
-        ]
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_16_ins": {
