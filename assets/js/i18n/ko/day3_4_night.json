@@ -190,7 +190,7 @@
     },
     "night3_faithful_msg_yuna_2_ins": {
         "name": "{name}",
-        "text": "*결말을 쓰면 끝나니까. — 유나는 이 이야기가 끝나는 걸 두려워하고 있다.*"
+        "text": "*결말을 안 쓰면 이야기가 끝나지 않으니까. — 나도 같은 마음이다.*"
     },
     "night3_cheat_msg_3_ins": {
         "name": "{name}",

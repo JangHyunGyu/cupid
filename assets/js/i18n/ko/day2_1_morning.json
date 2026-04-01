@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*둘째 날. 어제보다 교복이 조금 편하다. 적응이 빠른 건지, 포기가 빠른 건지.*"
+        "text": "*둘째 날. 어제보다 교복이 조금 편하다. — 발걸음도.*"
     },
     "morning2_start_2": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*웃고 있다. 하지만 시선이 쪽지 위에 0.5초 머문다.*"
+        "text": "*웃고 있다. 하지만 시선이 쪽지 위에 멈춘다.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "다인",
@@ -69,7 +69,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*쪽지를 주머니에 넣었다. 두 사람의 반응이 미묘하게 다르다.*"
+        "text": "*쪽지를 주머니에 넣었다. — 괜히 소중하게.*"
     },
     "morning2_dain_1": {
         "name": "다인",
@@ -173,7 +173,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*사람이 선점의 대상인가. — 근데 반박하기가 묘하게 귀찮다.*"
+        "text": "*사람이 선점의 대상인가. — 근데 싫지 않다. 그게 좀 무섭다.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -341,7 +341,7 @@
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
-        "text": "*교무실을 나서는데 — 서랍에서 봤던 종이뭉치가 자꾸 신경 쓰인다.*"
+        "text": "*교무실을 나서는데 — 서랍에서 봤던 종이뭉치가 머릿속에서 안 떠난다.*"
     },
     "morning2_minsu_1_ins": {
         "name": "{name}",
@@ -385,7 +385,7 @@
     },
     "hidden_homeroom_d2_3_ins6": {
         "name": "{name}",
-        "text": "*담임이 잠깐 멈칫한다. 시선이 서랍 쪽으로 갔다가 — 바로 돌아온다.*"
+        "text": "*담임의 시선이 서랍 쪽으로 갔다가 — 바로 돌아온다.*"
     },
     "hidden_homeroom_d2_6_ins": {
         "name": "{name}",

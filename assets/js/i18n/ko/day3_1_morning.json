@@ -82,7 +82,7 @@
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
-        "text": "*유나와 나란히 걷는다. 아무 말이 없다. — 그런데 이상하게 불편하지 않다.*"
+        "text": "*유나와 나란히 걷는다. 아무 말이 없다. — 이 침묵이 편하다.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*밤새 책 읽고 지각하는 사람. — 대단한 건지 한심한 건지, 아무튼 유나답다.*"
+        "text": "*밤새 책 읽고 지각하는 사람. — 유나답다. 그게 좋다.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -518,7 +518,7 @@
     },
     "hidden_homeroom_d3_3_ins": {
         "name": "{name}",
-        "text": "*0.5초. 얼어붙는다. — 담임의 표정이 처음 보는 거다. 무심한 것도, 건조한 것도 아닌. 들킨 사람의 얼굴.*"
+        "text": "*얼어붙는다. — 담임의 표정이 처음 보는 거다. 들킨 사람의 얼굴.*"
     },
     "hidden_homeroom_d3_3_ins2": {
         "name": "{name}",
@@ -602,7 +602,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins2": {
         "name": "{name}",
-        "text": "*웃음이 어색하다. — 이 사람이 웃는 게 어색한 건지, 웃는 법을 잊은 건지.*"
+        "text": "*웃음이 어색하다. — 그 어색함이 마음을 찔렀다.*"
     },
     "hidden_homeroom_d3_reveal_6_ins3": {
         "name": "담임선생님",
