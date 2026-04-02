@@ -929,18 +929,21 @@ html[lang="de"] #message {
 /* 세로 모드 (Portrait) 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 80%;
-        /* 세로 화면에서 캐릭터가 너무 크지 않게 축소 */
-        bottom: -4svh;
+        height: 88%;
+        /* 세로 화면에서 캐릭터가 화면을 더 채우도록 확대 */
+        bottom: -8svh;
         /* 1:1 캐릭터 소스 하단의 투명 여백을 화면 밖으로 내림 */
-    }
-
-    .char-slot img {
-        height: 89%;
     }
 
     .char-slot {
         max-width: 100%;
+        bottom: -2svh;
+    }
+
+    .char-slot img {
+        width: auto !important;
+        max-width: none !important;
+        height: 92%;
     }
 
     #char-left {
