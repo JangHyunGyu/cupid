@@ -931,7 +931,8 @@ html[lang="de"] #message {
     #character-layer {
         height: 80%;
         /* 세로 화면에서 캐릭터가 너무 크지 않게 축소 */
-        bottom: 0;
+        bottom: -4svh;
+        /* 1:1 캐릭터 소스 하단의 투명 여백을 화면 밖으로 내림 */
     }
 
     .char-slot img {
