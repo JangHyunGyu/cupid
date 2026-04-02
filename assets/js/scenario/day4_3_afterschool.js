@@ -7,7 +7,8 @@
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[4]) SCENARIO[4] = {};
 
-Object.assign(SCENARIO[4], {
+(function() {
+const _scenes = {
     "confess_seo_1": {
         "background": "assets/images/background/top_school.png",
         "character": null,
@@ -648,31 +649,40 @@ Object.assign(SCENARIO[4], {
     "confess_dain_no_4_ins45": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "night": true,
         "next": "confess_dain_no_4_ins46"
     },
     "confess_dain_no_4_ins46": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "night": true,
         "next": "confess_dain_no_4_ins47"
     },
     "confess_dain_no_4_ins47": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "night": true,
         "next": "confess_dain_no_4_ins48"
     },
     "confess_dain_no_4_ins48": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "night": true,
         "next": "confess_dain_no_4_ins49"
     },
     "confess_dain_no_4_ins49": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "night": true,
         "next": "confess_dain_no_4_ins50"
     },
     "confess_dain_no_4_ins50": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "night": true,
         "next": "day4_night_start"
     }
-});
+};
+Object.assign(SCENARIO[4], _scenes);
+Object.values(_scenes).forEach(s => { if (!(s.background||'').includes('ending_') && !(s.background||'').includes('_event')) s.sunset = true; });
+})();
