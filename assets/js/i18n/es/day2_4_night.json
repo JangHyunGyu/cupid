@@ -142,7 +142,7 @@
   },
   "night2_reply_yuna_7": {
     "name": "{name}",
-    "text": "*¿La tercera estrella? — Abro la ventana y miro al cielo nocturno. Se ven estrellas. No estoy seguro de cuál es la tercera, pero. Un acertijo muy de Yuna. Alguien que nunca da la respuesta. — Alguien que te hace querer encontrarla.*"
+    "text": "*¿La tercera estrella? — Abro la ventana y miro al cielo nocturno. No sé cuál es la tercera. Un acertijo típico de Yuna. — No te da la respuesta, pero te hace querer buscarla.*"
   },
   "night2_end_1": {
     "name": "{name}",
@@ -158,7 +158,7 @@
   },
   "night2_flashback_3": {
     "name": "{name}",
-    "text": "*En aquella época llevaba un mes ensayando un 'me gustas'. Cada noche lo escribía en las notas del móvil. Simulaciones de confesión. — Siempre me quedaba ahí.*"
+    "text": "*En esa época, abría el teléfono todas las noches. Escribía algo en las notas y lo borraba una y otra vez. — Cada vez, me detenía justo antes de enviarlo.*"
   },
   "night2_flashback_4": {
     "name": "{name}",
@@ -264,11 +264,11 @@
   },
   "night2_reply_yuna_6_ins": {
     "name": "{name}",
-    "text": "*¿La tercera estrella? — Abro la ventana y miro el cielo nocturno. Hay estrellas. Cuál es la tercera, ni idea.*"
+    "text": "*¿La tercera estrella? — Abro la ventana y miro al cielo nocturno. No sé cuál es la tercera. Un acertijo típico de Yuna. — No te da la respuesta, pero te hace querer buscarla.*"
   },
   "night2_reply_yuna_6_ins2": {
     "name": "{name}",
-    "text": "*Un acertijo muy de Yuna. Una persona que nunca te da la respuesta. — Una persona que te hace querer descubrirla.*"
+    "text": "*Un acertijo típico de Yuna. — No te da la respuesta, pero te hace querer buscarla.*"
   },
   "night2_reply_yuna_6_ins3": {
     "name": "{name}",

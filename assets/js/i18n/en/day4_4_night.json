@@ -93,7 +93,7 @@
   },
   "wall_seo_pinky_2": {
     "name": "{name}",
-    "text": "I promise. When you want to cry, you can cry in front of me."
+    "text": "When you want to cry, text me. I won't ask why."
   },
   "wall_seo_pinky_3": {
     "name": "{name}",
@@ -111,9 +111,9 @@
     "name": "{name}",
     "text": "*Seoyeon is wiping her tears, looking up at me with trembling eyes.*",
     "choices": [
-      "I like this Seoyeon more than the perfect one.",
-      "You're not the student council president to me — you're just Seoyeon, my girlfriend.",
-      "Honestly, I thought you were flawless. But thank you for showing me this side of you."
+      "You don't have to be perfect. I like this Seoyeon more.",
+      "Not student council president Seoyeon — just Seoyeon is my girlfriend.",
+      "Honestly, I thought you were good at everything. Thanks for showing me this side too."
     ]
   },
   "wall_seo_line_react_1": {

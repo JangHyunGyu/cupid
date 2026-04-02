@@ -111,9 +111,9 @@
     "name": "{name}",
     "text": "*Seoyeon essuie ses larmes, me regardant avec des yeux tremblants.*",
     "choices": [
-      "Je préfère cette Seoyeon à la parfaite.",
-      "Tu n’es pas la présidente du conseil pour moi — tu es juste Seoyeon, ma petite amie.",
-      "Honnêtement, je te croyais parfaite. Mais merci de me montrer ce côté de toi."
+      "Tu n'as pas besoin d'être parfaite. C'est cette Seoyeon que je préfère.",
+      "Pas la présidente du conseil — juste Seoyeon, c’est elle ma petite amie.",
+      "Honnêtement, je pensais que tu étais douée en tout. Merci de me montrer ce côté aussi."
     ]
   },
   "wall_seo_line_react_1": {
@@ -257,7 +257,7 @@
     "text": "*Dain serre le ballon, tête baissée. Ses épaules tremblent.*",
     "choices": [
       "...Je peux m’asseoir à côté de toi ?",
-      "Tu peux pleurer. Tu n’as pas à faire semblant d’être joyeuse. Pas avec moi.",
+      "Quand tu veux pleurer, écris-moi. Je ne poserai pas de questions.",
       "...On se relève ensemble ? Juste une dernière fois."
     ]
   },

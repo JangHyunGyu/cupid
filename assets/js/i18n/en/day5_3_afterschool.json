@@ -101,7 +101,7 @@
   },
   "after5_last_chance_choice": {
     "name": "{name}",
-    "text": "*If not now, I'll never be able to say it.*",
+    "text": "*If not now, there's no chance.*",
     "choices": [
       "This time, I'll confess",
       "...I couldn't say anything"

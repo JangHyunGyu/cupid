@@ -49,7 +49,7 @@
   },
   "night3_dream_2": {
     "name": "{name}",
-    "text": "*I couldn’t see their face, but just having them beside me put my heart at ease.*"
+    "text": "*Couldn’t see their face, but strangely, I wasn’t anxious.*"
   },
   "night3_dream_3": {
     "name": "{name}",
@@ -97,7 +97,7 @@
   },
   "night3_nightmare_3": {
     "name": "Seoyeon",
-    "text": "You promised. That it would only be me..."
+    "text": "You only did that with me..."
   },
   "night3_nightmare_4": {
     "name": "Yuna",
@@ -178,11 +178,11 @@
   },
   "night3_faithful_reflect_3": {
     "name": "{name}",
-    "text": "*I'd kept it because deleting it felt like erasing the regret. But now it's not regret anymore — it's a lesson. The photo that gave me the courage to confess. — It served its purpose.*"
+    "text": "*I kept it because deleting it felt like erasing those feelings too. But now it's not lingering attachment — it's just a record. — Its purpose is done.*"
   },
   "night3_faithful_reflect_4": {
     "name": "{name}",
-    "text": "*This time is different. I'll only speak to one person. The rest — I'll turn down properly. That's the only honest thing I can do.*"
+    "text": "*This time is different. I'll speak to only one person. The rest — I'll be clear with them.*"
   },
   "night3_end": {
     "name": "{name}",
@@ -246,7 +246,7 @@
   },
   "night3_cheat_reflect_5_ins": {
     "name": "{name}",
-    "text": "*I had a dream. — I was walking side by side with someone. I couldn't see their face, but just having them beside me put my heart at ease.*"
+    "text": "*I had a dream. — I was walking side by side with someone. Couldn't see their face, but strangely, I wasn't anxious.*"
   },
   "night3_faithful_reflect_2_ins": {
     "name": "{name}",

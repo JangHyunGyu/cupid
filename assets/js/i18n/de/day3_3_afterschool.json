@@ -296,7 +296,7 @@
     },
     "after3_confront_5": {
         "name": "Seoyeon",
-        "text": "Wenn du die anderen Mädchen anlächelst, ehrlich gesagt... das war wirklich schlimm."
+        "text": "Wenn du den anderen genauso zugelächelt hast, das hat mich gestört."
     },
     "after3_confront_6": {
         "name": "Seoyeon",
@@ -341,7 +341,7 @@
     },
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
-        "text": "Es geht nicht um die Anzahl der Versprechen. Es geht um ihr Gewicht."
+        "text": "Es geht nicht darum, mit wie vielen du dich verabredet hast. Es geht darum, was dieses Versprechen für mich bedeutet hat."
     },
     "after3_confront_lie_ins": {
         "name": "{name}",
@@ -619,7 +619,7 @@
     },
     "haeun_warn_5c_ins": {
         "name": "Seoyeon",
-        "text": "Wenn du die anderen Mädchen anlächelst, fühlte es sich an, als würde etwas in mir zusammenbrechen."
+        "text": "Wenn du den anderen genauso zugelächelt hast, das hat mich gestört."
     },
     "after3_confront_admit_ins": {
         "name": "{name}",

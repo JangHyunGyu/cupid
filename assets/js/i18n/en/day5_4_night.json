@@ -217,7 +217,7 @@
     },
     "true_seo_7": {
         "name": "Seoyeon",
-        "text": "Promise me. — Stay by my side."
+        "text": "...Stay with me."
     },
     "true_seo_8": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "friend_6": {
         "name": "{name}",
-        "text": "*We’ll keep exchanging messages like this. Adding smiley emojis, grabbing a meal now and then, asking ‘anything new?’ and answering ‘not really.’ — Close enough to touch, yet never touching. That’s what being friends is.*"
+        "text": "*We’ll keep texting like this. Attach emoji, grab food sometimes, ask if anything’s new and say nothing is. — Right next to each other but a line we can’t cross. That’s what friends are.*"
     },
     "friend_7": {
         "name": "{name}",
@@ -871,39 +871,39 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*But it was that wavering that showed me what I truly felt.*"
+        "text": "*I wavered, so I found out. What my real feelings are.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
-        "text": "*I wasn't lost. It was just the process of finding you.*"
+        "text": "*Felt like I took a detour, but this is where I was headed all along.*"
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+        "text": "*It's okay to be clumsy. It's our first time, after all.*"
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*But it was that wavering that showed me what I truly felt.*"
+        "text": "*I wavered, so I found out. What my real feelings are.*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*I wasn't lost. It was just the process of finding you.*"
+        "text": "*Felt like I took a detour, but this is where I was headed all along.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
-        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+        "text": "*It's okay to be clumsy. It's our first time, after all.*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*But it was that wavering that showed me what I truly felt.*"
+        "text": "*I wavered, so I found out. What my real feelings are.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*I wasn't lost. It was just the process of finding you.*"
+        "text": "*Felt like I took a detour, but this is where I was headed all along.*"
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Imperfect love is still love. Maybe it's more precious because it's incomplete.*"
+        "text": "*It's okay to be clumsy. It's our first time, after all.*"
     },
     "confess_fail_cg_seo": {
         "name": "{name}",

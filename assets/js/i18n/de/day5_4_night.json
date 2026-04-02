@@ -217,7 +217,7 @@
   },
   "true_seo_7": {
     "name": "Seoyeon",
-    "text": "Versprich es mir. — Bleib an meiner Seite."
+    "text": "...Bleib bei mir."
   },
   "true_seo_8": {
     "name": "{name}",
@@ -537,7 +537,7 @@
   },
   "friend_6": {
     "name": "{name}",
-    "text": "*So wird es ab jetzt sein. Lachende Emojis, ab und zu zusammen essen, 'Wie geht's?' mit 'Gut' beantwortet. In Reichweite, aber für immer unerreichbar. Das ist Freundschaft.*"
+    "text": "Wir werden weiter so Nachrichten schreiben. Mit Emojis, ab und zu essen gehen, fragen ob was los ist und sagen, dass nichts los ist. — Direkt nebeneinander, aber eine Linie, die man nicht überschreiten kann. Das ist Freundschaft."
   },
   "friend_7": {
     "name": "{name}",
@@ -871,39 +871,39 @@
   },
   "good_epilogue_1": {
     "name": "{name}",
-    "text": "*Aber gerade dieses Schwanken hat mir gezeigt, was ich wirklich fühlte.*"
+    "text": "Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind."
   },
   "good_epilogue_2": {
     "name": "{name}",
-    "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    "text": "Fühlte sich wie ein Umweg an, aber am Ende war es hier."
   },
   "good_epilogue_3": {
     "name": "{name}",
-    "text": "*Unvollkommene Liebe ist immer noch Liebe. Vielleicht ist sie gerade deshalb wertvoller, weil sie unvollständig ist.*"
+    "text": "Unbeholfen ist okay. Es ist schließlich unser erstes Mal."
   },
   "good_epilogue_1_yuna": {
     "name": "{name}",
-    "text": "*Aber gerade dieses Schwanken hat mir gezeigt, was ich wirklich fühlte.*"
+    "text": "Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind."
   },
   "good_epilogue_2_yuna": {
     "name": "{name}",
-    "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    "text": "Fühlte sich wie ein Umweg an, aber am Ende war es hier."
   },
   "good_epilogue_3_yuna": {
     "name": "{name}",
-    "text": "*Unvollkommene Liebe ist immer noch Liebe. Vielleicht ist sie gerade deshalb wertvoller, weil sie unvollständig ist.*"
+    "text": "Unbeholfen ist okay. Es ist schließlich unser erstes Mal."
   },
   "good_epilogue_1_dain": {
     "name": "{name}",
-    "text": "*Aber gerade dieses Schwanken hat mir gezeigt, was ich wirklich fühlte.*"
+    "text": "Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind."
   },
   "good_epilogue_2_dain": {
     "name": "{name}",
-    "text": "*Ich war nicht verloren. Es war nur der Weg, dich zu finden.*"
+    "text": "Fühlte sich wie ein Umweg an, aber am Ende war es hier."
   },
   "good_epilogue_3_dain": {
     "name": "{name}",
-    "text": "*Unvollkommene Liebe ist immer noch Liebe. Vielleicht ist sie gerade deshalb wertvoller, weil sie unvollständig ist.*"
+    "text": "Unbeholfen ist okay. Es ist schließlich unser erstes Mal."
   },
   "confess_fail_cg_seo": {
     "name": "{name}",
