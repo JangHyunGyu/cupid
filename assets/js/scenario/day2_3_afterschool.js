@@ -83,7 +83,7 @@ const _scenes = {
     },
     "after2_dain_7": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sweat.png",
+        "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_8"
     },
     "after2_dain_8": {
@@ -747,7 +747,7 @@ const _scenes = {
     },
     "after2_dain_9_ins": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_9_ins2"
     },
     "after2_dain_9_ins2": {
@@ -897,7 +897,7 @@ const _scenes = {
     },
     "minsu_warn_4_ins": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/yuna_smile.png",
         "next": "minsu_warn_5"
     },
     "minsu_warn_1_ins": {

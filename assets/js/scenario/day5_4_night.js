@@ -671,7 +671,7 @@ const _scenes = {
     },
     "good_epilogue_1_dain": {
         "background": "assets/images/background/ending_good_dain.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "next": "good_epilogue_2_dain"
     },
     "good_epilogue_2_dain": {
@@ -1295,7 +1295,7 @@ const _scenes = {
     },
     "perfect_seo_1_ins": {
         "background": "assets/images/background/top_school.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_cry.png",
         "next": "perfect_seo_2"
     },
     "perfect_seo_5_ins": {

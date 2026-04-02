@@ -383,13 +383,13 @@ const _scenes = {
         "next": "after_homeroom_honest_9_ins"
     },
     "after_homeroom_honest_10": {
-        "background": "assets/images/background/teacher_office.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
         "setFlags": ["homeroom_day1"],
         "next": "after_homeroom_freetalk"
     },
     "after_homeroom_freetalk": {
-        "background": "assets/images/background/teacher_office.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "next": "night_start"

@@ -217,7 +217,7 @@ const _scenes = {
     },
     "night_hidden_nurse_1": {
         "background": "assets/images/background/room_my.png",
-        "character": null,
+        "characters": { "center": { "src": "assets/images/characters/nurse_normal.png", "opacity": 0.35 } },
         "next": "night_hidden_nurse_2"
     },
     "night_hidden_nurse_2": {

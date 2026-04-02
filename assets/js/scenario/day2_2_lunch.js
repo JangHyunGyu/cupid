@@ -600,12 +600,12 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_dain_end_ins": {
         "background": "assets/images/background/playground.png",
-        "character": "assets/images/characters/dain_pout.png",
+        "character": null,
         "next": "lunch2_dain_end_ins2"
     },
     "lunch2_dain_end_ins2": {
         "background": "assets/images/background/playground.png",
-        "character": "assets/images/characters/dain_pout.png",
+        "character": null,
         "next": "lunch2_dain_end_ins3"
     },
     "lunch2_dain_end_ins3": {
