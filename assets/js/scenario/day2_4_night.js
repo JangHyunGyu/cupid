@@ -17,7 +17,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_msg_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": null,
         "night": true,
         "branches": [
             { "condition": "chose_dain_after2", "next": "night2_msg_dain_specific" },
@@ -115,13 +115,13 @@ Object.assign(SCENARIO[2], {
     },
     "night2_msg_7": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "night": true,
         "next": "night2_choice"
     },
     "night2_choice": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": null,
         "night": true,
         "choices": [
             { "next": "night2_reply_dain_1" },
@@ -287,7 +287,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_end_1": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "night": true,
         "next": "night2_end_1_ins"
     },
@@ -299,13 +299,13 @@ Object.assign(SCENARIO[2], {
     },
     "night2_flashback_2": {
         "background": "assets/images/background/sojeong_flashback.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "night": true,
         "next": "night2_flashback_3"
     },
     "night2_flashback_3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "night": true,
         "next": "night2_flashback_4"
     },
@@ -377,7 +377,7 @@ Object.assign(SCENARIO[2], {
     },
     "night2_hidden_check": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "night": true,
         "branches": [
             { "condition": "homeroom_day2", "next": "night2_hidden_homeroom_1" },
@@ -425,12 +425,12 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_yuna_6_ins": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "night2_reply_yuna_6_ins2"
     },
     "night2_reply_yuna_6_ins2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "branches": [
             { "condition": "homeroom_day2", "next": "night2_reply_yuna_6_ins3" },
             { "next": "night2_reply_yuna_7" }
@@ -438,27 +438,28 @@ Object.assign(SCENARIO[2], {
     },
     "night2_reply_yuna_6_ins3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "night2_reply_yuna_6_ins4"
     },
     "night2_reply_yuna_6_ins4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "night2_reply_yuna_6_ins5"
     },
     "night2_reply_yuna_6_ins5": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "night2_reply_yuna_6_ins6"
     },
     "night2_reply_yuna_6_ins6": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "night2_reply_yuna_7"
     },
     "night2_end_1_ins": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
+        "night": true,
         "next": "night2_flashback_1"
     },
     "night2_end_2_ins": {

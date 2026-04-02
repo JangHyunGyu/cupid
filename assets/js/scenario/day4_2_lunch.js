@@ -335,7 +335,7 @@ Object.assign(SCENARIO[4], {
         "next": "date_dain_knee_2"
     },
     "date_dain_knee_2": {
-        "background": "assets/images/background/arcade.png",
+        "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_knee_2b"
     },

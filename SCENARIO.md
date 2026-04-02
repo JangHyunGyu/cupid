@@ -1112,7 +1112,7 @@
 
 ### `lunch_seo_21`
 - 배경: `top_school.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_laugh.png`
 - 다음: `lunch_seo_22`
 
 **서연**: *피식* 학교를 물었는데 밥을 답하네.
@@ -2451,7 +2451,7 @@
 ---
 
 ### `after_hidden_homeroom_4`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_hidden_homeroom_choice`
 
@@ -2460,7 +2460,7 @@
 ---
 
 ### `after_hidden_homeroom_choice`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 선택지:
   1. "괜찮습니다. 생각보다 좋은 학교네요." → `after_homeroom_ok` | Teacher +0
@@ -2471,7 +2471,7 @@
 ---
 
 ### `after_homeroom_ok`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_ok_ins`
 
@@ -2480,7 +2480,7 @@
 ---
 
 ### `after_homeroom_ok_2`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_ok_2_ins`
 
@@ -2489,7 +2489,7 @@
 ---
 
 ### `after_homeroom_honest_1`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_2`
 
@@ -2498,7 +2498,7 @@
 ---
 
 ### `after_homeroom_honest_2`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_3`
 
@@ -2507,7 +2507,7 @@
 ---
 
 ### `after_homeroom_honest_3`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_3_ins`
 
@@ -2516,7 +2516,7 @@
 ---
 
 ### `after_homeroom_honest_4`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_5`
 
@@ -2525,7 +2525,7 @@
 ---
 
 ### `after_homeroom_honest_5`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_6`
 
@@ -2534,7 +2534,7 @@
 ---
 
 ### `after_homeroom_honest_6`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_6_ins`
 
@@ -2543,7 +2543,7 @@
 ---
 
 ### `after_homeroom_honest_choice2`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 선택지:
   1. "걱정이면 걱정이라고 하시면 되잖아요" → `after_homeroom_honest_choice2a` | Teacher +10
@@ -2554,7 +2554,7 @@
 ---
 
 ### `after_homeroom_honest_choice2a`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_shy.png`
 - 다음: `after_homeroom_honest_choice2a_ins`
 
@@ -2563,7 +2563,7 @@
 ---
 
 ### `after_homeroom_honest_choice2b`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_smile.png`
 - 다음: `after_homeroom_honest_choice2b_ins`
 
@@ -2572,7 +2572,7 @@
 ---
 
 ### `after_homeroom_honest_7`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_8`
 
@@ -2581,7 +2581,7 @@
 ---
 
 ### `after_homeroom_honest_8`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_9`
 
@@ -2590,7 +2590,7 @@
 ---
 
 ### `after_homeroom_honest_9`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_9_ins`
 
@@ -2599,7 +2599,7 @@
 ---
 
 ### `after_homeroom_honest_10`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 플래그: `homeroom_day1`
 - 다음: `after_homeroom_freetalk`
@@ -2609,7 +2609,7 @@
 ---
 
 ### `after_homeroom_freetalk`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 타입: `free_talk`
 - 다음: `night_start`
@@ -2863,7 +2863,7 @@
 ---
 
 ### `after_homeroom_ok_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_ok_2`
 
@@ -2872,7 +2872,7 @@
 ---
 
 ### `after_homeroom_ok_2_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `night_start`
 
@@ -2881,7 +2881,7 @@
 ---
 
 ### `after_homeroom_honest_3_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_4`
 
@@ -2890,7 +2890,7 @@
 ---
 
 ### `after_homeroom_honest_6_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_choice2`
 
@@ -2899,7 +2899,7 @@
 ---
 
 ### `after_homeroom_honest_choice2a_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_shy.png`
 - 다음: `after_homeroom_honest_7`
 
@@ -2908,7 +2908,7 @@
 ---
 
 ### `after_homeroom_honest_choice2b_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_smile.png`
 - 다음: `after_homeroom_honest_choice2b_ins2`
 
@@ -2917,7 +2917,7 @@
 ---
 
 ### `after_homeroom_honest_choice2b_ins2`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_smile.png`
 - 다음: `after_homeroom_honest_7`
 
@@ -2926,7 +2926,7 @@
 ---
 
 ### `after_homeroom_honest_9_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `after_homeroom_honest_10`
 
@@ -3800,7 +3800,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_greet_dain_others_2`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `yuna_bored.png`
 **{name}**: *빈정인지 감탄인지 알 수 없다. 유나는 무반응. 하지만 쪽지를 쓰던 손이 멈춰 있다.*
 
 ---
@@ -3809,7 +3809,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_note_1`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `dain_laugh.png`
 **{name}**: *가볍게 웃으며 넘겼지만 — 서연의 한마디가 살짝 걸린다.*
 
 ---
@@ -3953,7 +3953,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_seo_2`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **{name}**: *쪽지를 주머니에 넣으려는데 — 복도에서 익숙한 목소리.*
 
 ---
@@ -4050,7 +4050,7 @@
 
 ### `morning2_dain_claim_3`
 - 배경: `room_school.png`
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_normal.png`
 - 다음: `morning2_dain_claim_4`
 
 **{name}**: *다인이 서연의 뒷모습을 보며.*
@@ -4173,7 +4173,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_dain_react_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: *서연이 아무렇지 않게 걸어간다. 뒤에서 다인의 목소리.*
 
 ---
@@ -5685,7 +5685,7 @@
 ---
 
 ### `lunch2_dain_end_ins`
-- 배경: `school_hallway.png`
+- 배경: `playground.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins2`
 
@@ -5694,7 +5694,7 @@
 ---
 
 ### `lunch2_dain_end_ins2`
-- 배경: `school_hallway.png`
+- 배경: `playground.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins3`
 
@@ -5703,7 +5703,7 @@
 ---
 
 ### `lunch2_dain_end_ins3`
-- 배경: `school_hallway.png`
+- 배경: `playground.png`
 - 다음: `lunch2_dain_end_ins4`
 
 - 캐릭터: `없음`
@@ -9293,7 +9293,7 @@
   - [`nurse_day2`] → `hidden_nurse_d3_1`
   - [기본] → `morning3_date_seo_1`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `없음`
 **{name}**: *쉬는 시간이 끝나간다.*
 
 ---
@@ -9848,7 +9848,7 @@
 
 ### `hidden_nurse_d3_2_ins2`
 - 배경: `school_hallway.png`
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 - 다음: `hidden_nurse_d3_2_ins3`
 
 **{name}**: *교실을 나서는데 — 뒤에서 작게.*
@@ -11297,7 +11297,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_seo_1`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **{name}**: *복도로 나왔다. 느낌표가 없는 다인의 문장, 세 글자밖에 안 되는 유나의 쪽지. — 선택의 무게가 어깨에 내려앉는다.*
 
 ---
@@ -11360,7 +11360,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_yuna_1`
 
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 **{name}**: *체육관을 나와 복도로 돌아왔다. 서연의 한마디, 다인의 빨간 눈. — 돌아서는 길이 무겁다.*
 
 ---
@@ -11575,7 +11575,7 @@
 
 ### `after3_yuna_2`
 - 배경: `yuna_hideout.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 - 다음: `after3_yuna_3`
 
 **{name}**: *들어가니 유나가 없다. 대신 — 소파 위에 노트가 펼쳐져 있다. 손글씨가 빼곡하다.*
@@ -11584,7 +11584,7 @@
 
 ### `after3_yuna_3`
 - 배경: `yuna_hideout.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 - 다음: `after3_yuna_4`
 
 **{name}**: *소설이다. 유나가 쓴 소설. — 읽어봐도 될까?*
@@ -11593,7 +11593,7 @@
 
 ### `after3_yuna_4`
 - 배경: `yuna_hideout.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 - 다음: `after3_yuna_5`
 
 **{name}**: *첫 페이지.*
@@ -11602,7 +11602,7 @@
 
 ### `after3_yuna_5`
 - 배경: `yuna_hideout.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 - 다음: `after3_yuna_5_ins`
 
 **{name}**: *'어느 날 전학생이 왔다. 그는 도서관에 찾아와 아무 말 없이 옆에 앉았다. — 나는 그게 싫지 않았다.'*
@@ -11773,7 +11773,7 @@
 - 배경: `dain_hurt_event1.png`
 - 다음: `after3_dain_4`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: 다인!
 
 ---
@@ -12541,7 +12541,7 @@
 
 ### `after3_confront_5_ins`
 - 배경: `school_hallway.png`
-- 캐릭터: `dain_shy.png`
+- 캐릭터: `dain_sad.png`
 - 다음: `after3_confront_5_ins2`
 
 **다인**: *힘없이 피식 웃는다.* ...뭐야. 이런 거에 감동받으면 안 되는데.
@@ -15535,7 +15535,7 @@
 ---
 
 ### `date_dain_knee_2`
-- 배경: `arcade.png`
+- 배경: `street.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `date_dain_knee_2b`
 
@@ -16490,7 +16490,7 @@
 
 ### `confess_dain_yes_9_ins`
 - 배경: `gym.png`
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_shy.png`
 - 다음: `confess_dain_yes_10`
 
 **{name}**: *손을 내리고 웃는다. 눈물이 흐르고 있다.*
@@ -16580,7 +16580,7 @@
 
 ### `confess_dain_no_4_ins9`
 - 배경: `room_school.png`
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins10`
 
 **{name}**: *담임이 원고를 내민다. 표지에 제목이 적혀 있다. — 처음 보는 제목이다.*
@@ -16661,7 +16661,7 @@
 
 ### `confess_dain_no_4_ins18`
 - 배경: `room_school.png`
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins19`
 
 **{name}**: *담임의 어깨에서 힘이 빠진다. 아주 천천히.*
@@ -16760,7 +16760,7 @@
 
 ### `confess_dain_no_4_ins29`
 - 배경: `nurse_room.png`
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins30`
 
 **{name}**: *보건선생님이 책상 위 서류를 정리하는 척하지만 — 같은 종이를 세 번째 넘기고 있다.*
@@ -16787,7 +16787,7 @@
 
 ### `confess_dain_no_4_ins32`
 - 배경: `nurse_room.png`
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins33`
 
 **{name}**: *보건선생님이 안경을 만진다. 안경 너머로 보이는 눈이 생각보다 크다. 장난기 뒤에 숨어 있던 눈.*
@@ -16841,7 +16841,7 @@
 
 ### `confess_dain_no_4_ins38`
 - 배경: `nurse_room.png`
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins39`
 
 **{name}**: *보건선생님이 멈춘다. 안경을 만지작거리던 손이 멈춘다.*
@@ -16877,7 +16877,7 @@
 
 ### `confess_dain_no_4_ins42`
 - 배경: `nurse_room.png`
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins43`
 
 **{name}**: *보건선생님의 안경 너머로 눈이 촉촉하다. — 지금 울고 있는 건가. 마음이 무너진다.*
@@ -17482,10 +17482,9 @@
 
 ### `wall_seo_glimpse_1`
 - 배경: `school_back.png`
+- 캐릭터: `없음`
 - 야간: true
 - 다음: `wall_seo_glimpse_1_ins`
-
-- 캐릭터: `seyoun_shy.png`
 **{name}**: *서연을 집까지 바래다주고 돌아오는 길. — 학교 앞을 지나가는데.*
 
 ---
@@ -18018,7 +18017,7 @@
 ---
 
 ### `wall_dain_mention_1`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_sad.png`
 - 야간: true
 - 다음: `wall_dain_mention_2`
@@ -18028,7 +18027,7 @@
 ---
 
 ### `wall_dain_mention_2`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_sad.png`
 - 야간: true
 - 다음: `wall_dain_mention_3`
@@ -18038,7 +18037,7 @@
 ---
 
 ### `wall_dain_mention_3`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_normal.png`
 - 야간: true
 - 다음: `wall_dain_skin_check`
@@ -18048,7 +18047,7 @@
 ---
 
 ### `wall_dain_skin_check`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_normal.png`
 - 야간: true
 - 호감분기: Dain
@@ -18061,7 +18060,7 @@
 ---
 
 ### `wall_dain_skin70_1`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_shy.png`
 - 야간: true
 - 다음: `wall_dain_skin70_2`
@@ -18071,7 +18070,7 @@
 ---
 
 ### `wall_dain_skin70_2`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_shy.png`
 - 야간: true
 - 다음: `wall_dain_skin70_3`
@@ -18081,7 +18080,7 @@
 ---
 
 ### `wall_dain_skin70_3`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_shy.png`
 - 야간: true
 - 플래그: `day4_skinship_dain_70`
@@ -18092,7 +18091,7 @@
 ---
 
 ### `wall_dain_skin60_1`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_shy.png`
 - 야간: true
 - 다음: `wall_dain_skin60_2`
@@ -18102,7 +18101,7 @@
 ---
 
 ### `wall_dain_skin60_2`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 캐릭터: `dain_shy.png`
 - 야간: true
 - 플래그: `day4_skinship_dain_60`
@@ -18114,10 +18113,9 @@
 
 ### `wall_dain_glimpse_1`
 - 배경: `school_back.png`
+- 캐릭터: `없음`
 - 야간: true
 - 다음: `wall_dain_glimpse_2`
-
-- 캐릭터: `dain_shy.png`
 **{name}**: *도서관 별관 창문에 불빛이 보인다. 작은 스탠드 불.*
 
 ---
@@ -18144,7 +18142,7 @@
 
 ### `wall_dain_glimpse_4`
 - 배경: `school_back.png`
-- 캐릭터: `yuna_sad.png`
+- 캐릭터: `없음`
 - 야간: true
 - 다음: `wall_dain_glimpse_4_ins`
 
@@ -18577,10 +18575,9 @@
 
 ### `wall_yuna_glimpse_1`
 - 배경: `school_back.png`
+- 캐릭터: `없음`
 - 야간: true
 - 다음: `wall_yuna_glimpse_2`
-
-- 캐릭터: `yuna_shy.png`
 **{name}**: *유나를 두고 학교를 나온다. 정문을 지나가는데.*
 
 ---
@@ -18810,7 +18807,7 @@
 
 ### `wall_seo_9_ins`
 - 배경: `park.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_sad.png`
 - 다음: `wall_seo_9_ins2`
 
 **서연**: 우리 집 겉으로는 멀쩡해 보이지? 넓은 집, 좋은 차, 학생회장 딸.
@@ -18819,7 +18816,7 @@
 
 ### `wall_seo_9_ins2`
 - 배경: `park.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_sad.png`
 - 다음: `wall_seo_9_ins3`
 
 **서연**: 근데 엄마 아빠는 1년째 같은 지붕 아래서 남남이야. 이혼 서류만 안 냈을 뿐.
@@ -18828,9 +18825,8 @@
 
 ### `wall_seo_9_ins3`
 - 배경: `park.png`
+- 캐릭터: `seyoun_sad.png`
 - 다음: `wall_seo_10`
-
-- 캐릭터: `seyoun_normal.png`
 **{name}**: ......
 
 ---
@@ -18927,9 +18923,8 @@
 
 ### `wall_seo_glimpse_1_ins`
 - 배경: `school_back.png`
+- 캐릭터: `없음`
 - 다음: `wall_seo_glimpse_2`
-
-- 캐릭터: `seyoun_shy.png`
 **{name}**: *체육관 창문에 불이 켜져 있다. 비상등.*
 
 ---
@@ -19368,7 +19363,7 @@
 
 ### `wall_yuna_glimpse_3_ins15`
 - 배경: `school_back.png`
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png` @ 0.35
 - 다음: `wall_yuna_glimpse_3_ins16`
 
 **{name}**: *1분 뒤.*
@@ -19532,7 +19527,7 @@
 - 배경: `room_school.png`
 - 다음: `morning5_dain_1`
 
-- 캐릭터: `없음`
+- 캐릭터: `dain_normal.png`
 **{name}**: *교실로 돌아오니 다인이 기다리고 있다.*
 
 ---
@@ -21240,7 +21235,7 @@
 
 ### `after5_confess_react_yuna`
 - 배경: `school_back.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_shy.png`
 - 다음: `after5_confess_react_yuna_call`
 
 **유나**: *나란히 걸었다.* ...알고 있었어. ...읽었으면 됐어.
@@ -21439,7 +21434,7 @@
 
 ### `after5_last_chance_2_ins13`
 - 배경: `school_back.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_laugh.png`
 - 다음: `after5_last_chance_2_ins14`
 
 **다인**: 야, 진짜?!
@@ -21457,7 +21452,7 @@
 
 ### `after5_last_chance_2_ins15`
 - 배경: `school_back.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_shy.png`
 - 다음: `after5_last_chance_2_ins16`
 
 **다인**: ...진짜?
@@ -21468,7 +21463,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins17`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_sad.png`
 **{name}**: *느낌표가 사라진다. 목소리가 작아진다. — 눈이 차오른다.*
 
 ---
@@ -21486,14 +21481,14 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_2_ins19`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_sad.png`
 **{name}**: *주먹으로 눈을 비빈다. 웃으면서 운다.*
 
 ---
 
 ### `after5_last_chance_2_ins19`
 - 배경: `school_back.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_laugh.png`
 - 다음: `after5_last_chance_choice`
 
 **다인**: 아 진짜 왜 울어 — 기쁜 건데 —
@@ -21502,7 +21497,7 @@
 
 ### `after5_confess_react_yuna_ins`
 - 배경: `school_back.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_shy.png`
 - 다음: `after5_confess_react_yuna_ins2`
 
 **{name}**: *유나가 책을 내려놓는다. 표정이 변하지 않는다. — 근데 손이 떨리고 있다.*
@@ -21529,7 +21524,7 @@
 
 ### `after5_confess_react_yuna_ins4`
 - 배경: `school_back.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_shy.png`
 - 다음: `after5_confess_react_yuna_ins5`
 
 **{name}**: *'기다렸어. — 오래.'*
@@ -21538,7 +21533,7 @@
 
 ### `after5_confess_react_yuna_ins5`
 - 배경: `school_back.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_sad.png`
 - 다음: `after5_confess_react_yuna_ins6`
 
 **{name}**: *한 줄인데 잉크가 번져 있다. — 쓰면서 울었다.*
@@ -21908,7 +21903,7 @@
 - 다음: `perfect_epilogue_2_seo`
 
 - 배경: `ending_perfect_seoyeon.png`
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `없음`
 **시스템**: *에필로그 — 1년 후*
 
 ---
@@ -21918,7 +21913,7 @@
 - 다음: `perfect_epilogue_2_yuna`
 
 - 배경: `ending_perfect_yuna.png`
-- 캐릭터: `yuna_shy.png`
+- 캐릭터: `없음`
 **시스템**: *에필로그 — 1년 후*
 
 ---
@@ -21928,7 +21923,7 @@
 - 다음: `perfect_epilogue_2_dain`
 
 - 배경: `ending_perfect_dain.png`
-- 캐릭터: `dain_shy.png`
+- 캐릭터: `없음`
 **시스템**: *에필로그 — 1년 후*
 
 ---
@@ -22666,7 +22661,7 @@
 - 야간: true
 - 다음: `good_5_seo`
 
-- 캐릭터: `없음`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *완벽한 척하지만 나도 완벽하지 않았다.*
 
 ---
@@ -22744,7 +22739,7 @@
 - 야간: true
 - 다음: `good_5_dain`
 
-- 캐릭터: `dain_pout.png`
+- 캐릭터: `dain_laugh.png`
 **{name}**: *무릎이 아파도 뛰었다.*
 
 ---
@@ -22753,7 +22748,7 @@
 - 배경: `ending_good_dain.png`
 - 다음: `good_epilogue_1_dain`
 
-- 캐릭터: `dain_pout.png`
+- 캐릭터: `dain_laugh.png`
 **{name}**: *학교 앞. 마지막 서브는 아직 안 넘어왔다. 경기는 끝나지 않았다.*
 
 ---
@@ -23370,7 +23365,7 @@
 - 다음: `hidden_perfect_homeroom_3b`
 
 - 배경: `room_school.png`
-- 캐릭터: `teacher_sad.png`
+- 캐릭터: `teacher_normal.png`
 **{name}**: *3년 후.*
 
 ---
@@ -23380,7 +23375,7 @@
 - 야간: true
 - 다음: `hidden_perfect_homeroom_3c`
 
-- 캐릭터: `teacher_sad.png`
+- 캐릭터: `teacher_smile.png`
 **{name}**: *카페 테라스. 벚꽃이 날린다. 들어서는데 — 창가 자리에 낯익은 갈색 웨이브 머리가 보인다. 가디건 대신 리넨 재킷.*
 
 ---

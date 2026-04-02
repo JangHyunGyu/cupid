@@ -169,7 +169,7 @@ Object.assign(SCENARIO[1], {
     },
     "lunch_seo_21": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "next": "lunch_seo_22"
     },
     "lunch_seo_22": {

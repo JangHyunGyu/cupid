@@ -39,7 +39,7 @@ Object.assign(SCENARIO[2], {
     },
     "after2_choice": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "bgm": "sunset1.mp3",
         "choices": [
             { "next": "after2_dain_1" },
@@ -398,17 +398,17 @@ Object.assign(SCENARIO[2], {
         "next": "after2_seo_return"
     },
     "after2_seo_skinship_1": {
-        "background": "assets/images/background/teacher_office.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after2_seo_skinship_2"
     },
     "after2_seo_skinship_2": {
-        "background": "assets/images/background/teacher_office.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "next": "after2_seo_skinship_3"
     },
     "after2_seo_skinship_3": {
-        "background": "assets/images/background/teacher_office.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after2_seo_return"
     },
