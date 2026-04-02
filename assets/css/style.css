@@ -936,7 +936,7 @@ html[lang="de"] #message {
     }
 
     .char-slot img {
-        height: 85%;
+        height: 89%;
     }
 
     .char-slot {
@@ -948,7 +948,7 @@ html[lang="de"] #message {
     }
 
     #char-left img {
-        transform: scale(0.75);
+        transform: scale(0.8);
         /* 모바일에서 더 작게 */
     }
 
@@ -957,7 +957,7 @@ html[lang="de"] #message {
     }
 
     #char-right img {
-        transform: scale(0.75);
+        transform: scale(0.8);
         /* 모바일에서 더 작게 */
         mix-blend-mode: lighten;
     }
