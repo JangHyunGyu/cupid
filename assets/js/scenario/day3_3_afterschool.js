@@ -7,7 +7,8 @@
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[3]) SCENARIO[3] = {};
 
-Object.assign(SCENARIO[3], {
+(function() {
+const _scenes = {
     "after3_start": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
@@ -931,4 +932,7 @@ Object.assign(SCENARIO[3], {
         "character": "assets/images/characters/minsu_normal.png",
         "next": "night3_start"
     }
-});
+};
+Object.assign(SCENARIO[3], _scenes);
+Object.values(_scenes).forEach(s => { if (!(s.background||'').includes('ending_') && !(s.background||'').includes('_event')) s.sunset = true; });
+})();
