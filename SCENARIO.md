@@ -2845,7 +2845,7 @@
 ---
 
 ### `after_hidden_homeroom_3_ins`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 다음: `after_hidden_homeroom_3_ins2`
 
 - 캐릭터: `teacher_normal.png`
@@ -2854,7 +2854,7 @@
 ---
 
 ### `after_hidden_homeroom_3_ins2`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 다음: `after_hidden_homeroom_4`
 
 - 캐릭터: `teacher_normal.png`
