@@ -2427,13 +2427,13 @@
 - 배경: `school_hallway.png`
 - 다음: `after_hidden_homeroom_2`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `없음`
 **{name}**: *교무실 앞에서 노크한다. 담임이 문을 연다.*
 
 ---
 
 ### `after_hidden_homeroom_2`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 다음: `after_hidden_homeroom_3`
 
 - 캐릭터: `teacher_normal.png`
@@ -2442,7 +2442,7 @@
 ---
 
 ### `after_hidden_homeroom_3`
-- 배경: `school_hallway.png`
+- 배경: `teacher_office.png`
 - 다음: `after_hidden_homeroom_3_ins`
 
 - 캐릭터: `teacher_normal.png`

@@ -283,16 +283,16 @@ const _scenes = {
     },
     "after_hidden_homeroom_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": null,
         "next": "after_hidden_homeroom_2"
     },
     "after_hidden_homeroom_2": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_homeroom_3"
     },
     "after_hidden_homeroom_3": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_homeroom_3_ins"
     },
