@@ -227,7 +227,7 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_classroom_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": null,
         "branches": [
             { "condition": "morning3_companion_seoyeon", "next": "morning3_react_seo_1" },
             { "condition": "morning3_companion_yuna", "next": "morning3_react_yuna_1" },
@@ -272,12 +272,12 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_date_intro": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
+        "character": null,
         "next": "morning3_date_intro_b"
     },
     "morning3_date_intro_b": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_bored.png",
+        "character": null,
         "next": "morning3_date_seo_1"
     },
     "morning3_date_seo_1": {
@@ -523,7 +523,7 @@ Object.assign(SCENARIO[3], {
     },
     "hidden_nurse_d3_check": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": null,
         "branches": [
             { "condition": "nurse_day2", "next": "hidden_nurse_d3_1" },
             { "next": "morning3_date_seo_1" }
@@ -629,7 +629,7 @@ Object.assign(SCENARIO[3], {
     },
     "morning3_end": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_shy.png",
+        "character": null,
         "next": "morning3_end_ins"
     },
     "morning3_seo_gate_6_ins": {
@@ -833,28 +833,28 @@ Object.assign(SCENARIO[3], {
         "next": "hidden_homeroom_d3_end"
     },
     "hidden_nurse_d3_2_ins": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d3_2_ins2"
     },
     "hidden_nurse_d3_2_ins2": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d3_2_ins3"
     },
     "hidden_nurse_d3_2_ins3": {
-        "background": "assets/images/background/nurse_room.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d3_2_ins4"
     },
     "hidden_nurse_d3_2_ins4": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "hidden_nurse_d3_2_ins5"
     },
     "hidden_nurse_d3_2_ins5": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "hidden_nurse_d3_3"
     },
     "hidden_nurse_d3_1_ins": {

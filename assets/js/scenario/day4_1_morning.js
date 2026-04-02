@@ -61,7 +61,7 @@ Object.assign(SCENARIO[4], {
     },
     "morning4_hidden_check": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "branches": [
             { "condition": "homeroom_day3", "next": "morning4_manuscript_check" },
             { "condition": "nurse_route_unlocked && nurse_day4", "next": "hidden_nurse_d4_morning_1" },
@@ -212,7 +212,7 @@ Object.assign(SCENARIO[4], {
     },
     "hidden_nurse_d4_check": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": null,
         "branches": [
             { "condition": "nurse_day3", "next": "hidden_nurse_d4_1" },
             { "next": "morning4_end" }
@@ -409,7 +409,7 @@ Object.assign(SCENARIO[4], {
     },
     "morning4_end": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "branches": [
             { "condition": "route_dain", "next": "date_dain_1" },
             { "condition": "route_yuna", "next": "date_yuna_1" },
@@ -476,22 +476,22 @@ Object.assign(SCENARIO[4], {
     },
     "morning4_dain_msg_1_ins": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "next": "morning4_dain_msg_1_ins2"
     },
     "morning4_dain_msg_1_ins2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "next": "morning4_hidden_check"
     },
     "morning4_seo_msg_1_ins": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "next": "morning4_seo_msg_1_ins2"
     },
     "morning4_seo_msg_1_ins2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "next": "morning4_hidden_check"
     },
     "hidden_homeroom_d4_1_ins": {
@@ -506,27 +506,27 @@ Object.assign(SCENARIO[4], {
     },
     "morning4_yuna_msg_1_ins": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "morning4_yuna_msg_1_ins2"
     },
     "morning4_yuna_msg_1_ins2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "morning4_yuna_msg_1_ins3"
     },
     "morning4_yuna_msg_1_ins3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "morning4_yuna_msg_1_ins4"
     },
     "morning4_yuna_msg_1_ins4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "morning4_yuna_msg_1_ins5"
     },
     "morning4_yuna_msg_1_ins5": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "morning4_hidden_check"
     },
     "hidden_homeroom_d4_3_ins": {

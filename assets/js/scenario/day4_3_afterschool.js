@@ -10,7 +10,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
 Object.assign(SCENARIO[4], {
     "confess_seo_1": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": null,
         "bgm": "confession.mp3",
         "branches": [
             { "condition": "route_seoyeon", "next": "confess_seo_2" },
@@ -330,12 +330,12 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_yes_9": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_shy.png",
         "next": "confess_dain_yes_9_ins"
     },
     "confess_dain_yes_10": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_shy.png",
         "setFlags": ["day4_confession_accepted","isDating_Dain"],
         "next": "confess_dain_yes_10_ins"
     },
@@ -417,7 +417,7 @@ Object.assign(SCENARIO[4], {
     },
     "confess_dain_yes_9_ins": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_shy.png",
         "next": "confess_dain_yes_10"
     },
     "confess_dain_yes_10_ins": {
@@ -436,243 +436,243 @@ Object.assign(SCENARIO[4], {
         "next": "confess_dain_no_4_ins3"
     },
     "confess_dain_no_4_ins3": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "confess_dain_no_4_ins4"
     },
     "confess_dain_no_4_ins4": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "next": "confess_dain_no_4_ins5"
     },
     "confess_dain_no_4_ins5": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins6"
     },
     "confess_dain_no_4_ins6": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins7"
     },
     "confess_dain_no_4_ins7": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins8"
     },
     "confess_dain_no_4_ins8": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins9"
     },
     "confess_dain_no_4_ins9": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins10"
     },
     "confess_dain_no_4_ins10": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins11"
     },
     "confess_dain_no_4_ins11": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins12"
     },
     "confess_dain_no_4_ins12": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins13"
     },
     "confess_dain_no_4_ins13": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins14"
     },
     "confess_dain_no_4_ins14": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "next": "confess_dain_no_4_ins15"
     },
     "confess_dain_no_4_ins15": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": null,
         "next": "confess_dain_no_4_ins16"
     },
     "confess_dain_no_4_ins16": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "confess_dain_no_4_ins17"
     },
     "confess_dain_no_4_ins17": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins18"
     },
     "confess_dain_no_4_ins18": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins19"
     },
     "confess_dain_no_4_ins19": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins20"
     },
     "confess_dain_no_4_ins20": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins21"
     },
     "confess_dain_no_4_ins21": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "confess_dain_no_4_ins22"
     },
     "confess_dain_no_4_ins22": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_school.png",
+        "character": null,
         "next": "confess_dain_no_4_ins23"
     },
     "confess_dain_no_4_ins23": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "confess_dain_no_4_ins24"
     },
     "confess_dain_no_4_ins24": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": null,
         "next": "confess_dain_no_4_ins25"
     },
     "confess_dain_no_4_ins25": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins26"
     },
     "confess_dain_no_4_ins26": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins27"
     },
     "confess_dain_no_4_ins27": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins28"
     },
     "confess_dain_no_4_ins28": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins29"
     },
     "confess_dain_no_4_ins29": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins30"
     },
     "confess_dain_no_4_ins30": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins31"
     },
     "confess_dain_no_4_ins31": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins32"
     },
     "confess_dain_no_4_ins32": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins33"
     },
     "confess_dain_no_4_ins33": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins34"
     },
     "confess_dain_no_4_ins34": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins35"
     },
     "confess_dain_no_4_ins35": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins36"
     },
     "confess_dain_no_4_ins36": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins37"
     },
     "confess_dain_no_4_ins37": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins38"
     },
     "confess_dain_no_4_ins38": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins39"
     },
     "confess_dain_no_4_ins39": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins40"
     },
     "confess_dain_no_4_ins40": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins41"
     },
     "confess_dain_no_4_ins41": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins42"
     },
     "confess_dain_no_4_ins42": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins43"
     },
     "confess_dain_no_4_ins43": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins44"
     },
     "confess_dain_no_4_ins44": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "confess_dain_no_4_ins45"
     },
     "confess_dain_no_4_ins45": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "next": "confess_dain_no_4_ins46"
     },
     "confess_dain_no_4_ins46": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "next": "confess_dain_no_4_ins47"
     },
     "confess_dain_no_4_ins47": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "confess_dain_no_4_ins48"
     },
     "confess_dain_no_4_ins48": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "confess_dain_no_4_ins49"
     },
     "confess_dain_no_4_ins49": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "confess_dain_no_4_ins50"
     },
     "confess_dain_no_4_ins50": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "day4_night_start"
     }
 });

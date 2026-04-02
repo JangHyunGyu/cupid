@@ -451,7 +451,7 @@ Object.assign(SCENARIO[3], {
     },
     "lunch3_end": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "after3_start"
     },
     "lunch3_start_2_ins": {

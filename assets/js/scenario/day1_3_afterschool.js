@@ -129,7 +129,7 @@ Object.assign(SCENARIO[1], {
     },
     "after1_pre_miss": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "branches": [
             { "condition": "met_dain", "next": "after_dain_skip" },
             { "next": "after_miss_dain_1" }
@@ -296,12 +296,12 @@ Object.assign(SCENARIO[1], {
         "next": "after_hidden_homeroom_3_ins"
     },
     "after_hidden_homeroom_4": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_homeroom_choice"
     },
     "after_hidden_homeroom_choice": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "after_homeroom_ok", "stats": {"Teacher":{"affinity":0}} },
@@ -309,47 +309,47 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_homeroom_ok": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_ok_ins"
     },
     "after_homeroom_ok_2": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_ok_2_ins"
     },
     "after_homeroom_honest_1": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_2"
     },
     "after_homeroom_honest_2": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_3"
     },
     "after_homeroom_honest_3": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_3_ins"
     },
     "after_homeroom_honest_4": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_5"
     },
     "after_homeroom_honest_5": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_6"
     },
     "after_homeroom_honest_6": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_6_ins"
     },
     "after_homeroom_honest_choice2": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "choices": [
             { "next": "after_homeroom_honest_choice2a", "stats": {"Teacher":{"affinity":10}} },
@@ -357,38 +357,38 @@ Object.assign(SCENARIO[1], {
         ]
     },
     "after_homeroom_honest_choice2a": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_shy.png",
         "next": "after_homeroom_honest_choice2a_ins"
     },
     "after_homeroom_honest_choice2b": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_smile.png",
         "next": "after_homeroom_honest_choice2b_ins"
     },
     "after_homeroom_honest_7": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_8"
     },
     "after_homeroom_honest_8": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_9"
     },
     "after_homeroom_honest_9": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_9_ins"
     },
     "after_homeroom_honest_10": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "setFlags": ["homeroom_day1"],
         "next": "after_homeroom_freetalk"
     },
     "after_homeroom_freetalk": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "next": "night_start"
@@ -532,42 +532,42 @@ Object.assign(SCENARIO[1], {
         "next": "after_hidden_homeroom_4"
     },
     "after_homeroom_ok_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_ok_2"
     },
     "after_homeroom_ok_2_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "night_start"
     },
     "after_homeroom_honest_3_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_4"
     },
     "after_homeroom_honest_6_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_choice2"
     },
     "after_homeroom_honest_choice2a_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_shy.png",
         "next": "after_homeroom_honest_7"
     },
     "after_homeroom_honest_choice2b_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_smile.png",
         "next": "after_homeroom_honest_choice2b_ins2"
     },
     "after_homeroom_honest_choice2b_ins2": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_smile.png",
         "next": "after_homeroom_honest_7"
     },
     "after_homeroom_honest_9_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_honest_10"
     },

@@ -161,13 +161,13 @@ Object.assign(SCENARIO[5], {
     },
     "after5_sunset_1": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": null,
         "bgm": "confession.mp3",
         "next": "after5_end"
     },
     "after5_end": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": null,
         "next": "after5_ending_check"
     },
     "after5_ending_check": {
@@ -200,7 +200,7 @@ Object.assign(SCENARIO[5], {
     },
     "after5_last_chance_choice": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "choices": [
             { "next": "after5_confess_yes", "setFlags": ["day5_confessed"] },
             { "next": "after5_confess_no" }
@@ -233,7 +233,7 @@ Object.assign(SCENARIO[5], {
     },
     "after5_confess_react_yuna": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after5_confess_react_yuna_call"
     },
     "after5_confess_react_yuna_call": {
@@ -344,7 +344,7 @@ Object.assign(SCENARIO[5], {
     },
     "after5_last_chance_2_ins13": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_laugh.png",
         "next": "after5_last_chance_2_ins14"
     },
     "after5_last_chance_2_ins14": {
@@ -354,12 +354,12 @@ Object.assign(SCENARIO[5], {
     },
     "after5_last_chance_2_ins15": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_shy.png",
         "next": "after5_last_chance_2_ins16"
     },
     "after5_last_chance_2_ins16": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "after5_last_chance_2_ins17"
     },
     "after5_last_chance_2_ins17": {
@@ -369,17 +369,17 @@ Object.assign(SCENARIO[5], {
     },
     "after5_last_chance_2_ins18": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "after5_last_chance_2_ins19"
     },
     "after5_last_chance_2_ins19": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_laugh.png",
         "next": "after5_last_chance_choice"
     },
     "after5_confess_react_yuna_ins": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after5_confess_react_yuna_ins2"
     },
     "after5_confess_react_yuna_ins2": {
@@ -394,12 +394,12 @@ Object.assign(SCENARIO[5], {
     },
     "after5_confess_react_yuna_ins4": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after5_confess_react_yuna_ins5"
     },
     "after5_confess_react_yuna_ins5": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "after5_confess_react_yuna_ins6"
     },
     "after5_confess_react_yuna_ins6": {

@@ -53,7 +53,7 @@ Object.assign(SCENARIO[5], {
     },
     "morning5_return_class": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning5_dain_1"
     },
     "morning5_dain_1": {
@@ -156,7 +156,7 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_check": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": null,
         "branches": [
             { "condition": "nurse_day4", "next": "hidden_nurse_d5_1" },
             { "next": "morning5_end" }
@@ -229,7 +229,7 @@ Object.assign(SCENARIO[5], {
     },
     "morning5_end": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": null,
         "branches": [
             { "condition": "route_dain", "next": "tour_dain_1_check" },
             { "condition": "route_yuna", "next": "tour_yuna_1_check" },
@@ -248,23 +248,23 @@ Object.assign(SCENARIO[5], {
         "next": "morning5_mood_check"
     },
     "morning5_seo_note_1_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "morning5_seo_note_1_ins2"
     },
     "morning5_seo_note_1_ins2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "morning5_seo_note_1_ins3"
     },
     "morning5_seo_note_1_ins3": {
-        "background": "assets/images/background/room_school.png",
+        "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "morning5_seo_note_1_ins4"
     },
     "morning5_seo_note_1_ins4": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning5_yuna_story_1"
     },
     "morning5_dain_1_ins": {
