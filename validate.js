@@ -1586,6 +1586,128 @@ try {
 
 console.log('[FREETALK_CHECK] AI 프리토킹 검증 완료\n');
 
+// ===== Relationship Continuity Check: 재회 대사 분기 누락 탐지 =====
+console.log('[REL_CHECK] 관계 연속성(재회 대사) 검증 시작...');
+
+const SPEAKER_TO_MET_FLAG = {
+    '서연': 'met_seoyeon',
+    '유나': 'met_yuna',
+    '다인': 'met_dain',
+    '담임': 'homeroom_day1',
+    '담임선생님': 'homeroom_day1',
+    '보건': 'nurse_day1',
+    '보건선생님': 'nurse_day1',
+    'Seoyeon': 'met_seoyeon',
+    'Yuna': 'met_yuna',
+    'Dain': 'met_dain',
+    'Teacher': 'homeroom_day1',
+    'Nurse': 'nurse_day1',
+    'Homeroom Teacher': 'homeroom_day1',
+    'School Nurse': 'nurse_day1'
+};
+
+// "이전에 만난 관계"를 전제로 하는 문맥만 추려서 점검
+const REUNION_CUE_REGEX = /(어제의\s*전학생|어제\s*만났|어제도\s*그렇|어제와\s*같은|또\s*왔네|다시\s*왔|어제\s*옥상|어제\s*카페)/;
+
+function hasAnyConditionGuard(scene, requiredFlag) {
+    // 씬 자체 condition
+    if (scene.condition && scene.condition.includes(requiredFlag)) return true;
+    if (scene.excludeCondition && scene.excludeCondition.includes(requiredFlag)) return true;
+
+    // branches 조건
+    if (scene.branches && scene.branches.some(b =>
+        (b.condition && b.condition.includes(requiredFlag)) ||
+        (b.excludeCondition && b.excludeCondition.includes(requiredFlag))
+    )) return true;
+
+    // choices 조건
+    if (scene.choices && scene.choices.some(c =>
+        (c.condition && c.condition.includes(requiredFlag)) ||
+        (c.excludeCondition && c.excludeCondition.includes(requiredFlag))
+    )) return true;
+
+    return false;
+}
+
+function canReachSceneWithoutFlag(targetSceneId, requiredFlag) {
+    const keyOf = (sid, st) => sid + '|' + (st.currentDay || 1) + '|' + Object.keys(st.flags).filter(k => st.flags[k]).sort().join(',');
+    const q = [{ sceneId: 'start', state: new SimState(), depth: 0 }];
+    const visited = new Set();
+    const MAX_REL_STEPS = 2500;
+    const MAX_REL_STATES = 20000;
+    let expanded = 0;
+
+    while (q.length > 0 && expanded < MAX_REL_STATES) {
+        const { sceneId, state, depth } = q.shift();
+        if (!sceneId || sceneId.endsWith('.html') || depth > MAX_REL_STEPS) continue;
+        const entry = allScenes[sceneId];
+        if (!entry) continue;
+
+        const sig = keyOf(sceneId, state);
+        if (visited.has(sig)) continue;
+        visited.add(sig);
+        expanded++;
+
+        // 타겟 도달 시 requiredFlag가 false면 "누락 가능"으로 판정
+        if (sceneId === targetSceneId && !state.getFlag(requiredFlag)) return true;
+
+        const scene = entry.scene;
+        const nextState = state.clone();
+        simApplyScene(scene, nextState);
+
+        if (scene.type === 'free_talk' || scene.type === 'input' || scene.type === 'credits') {
+            const n = simResolveNext(scene, nextState);
+            if (n) q.push({ sceneId: n, state: nextState, depth: depth + 1 });
+            continue;
+        }
+
+        if (scene.choices && scene.choices.length > 0) {
+            const available = simGetAvailableChoices(scene.choices, nextState);
+            for (const c of available) {
+                const cs = nextState.clone();
+                simApplyChoice(c, cs);
+                let cn = c.next || null;
+                if (!cn && c.affinityBranches && c.affinityChar) {
+                    const aff = cs.getAffinity(c.affinityChar);
+                    const sorted = [...c.affinityBranches].sort((a, b) => (b.minAffinity || 0) - (a.minAffinity || 0));
+                    for (const ab of sorted) {
+                        if (aff >= (ab.minAffinity || 0)) { cn = ab.next; break; }
+                    }
+                }
+                if (cn) q.push({ sceneId: cn, state: cs, depth: depth + 1 });
+            }
+            continue;
+        }
+
+        const n = simResolveNext(scene, nextState);
+        if (n) q.push({ sceneId: n, state: nextState, depth: depth + 1 });
+    }
+
+    return false;
+}
+
+let relWarnings = 0;
+for (const [sceneId, { scene }] of Object.entries(allScenes)) {
+    const i18n = i18nData[sceneId];
+    if (!i18n || !i18n.text || !i18n.name) continue;
+    if (!REUNION_CUE_REGEX.test(i18n.text)) continue;
+
+    const speaker = i18n.name.replace(/{name}/g, '').trim();
+    const requiredFlag = SPEAKER_TO_MET_FLAG[speaker];
+    if (!requiredFlag) continue;
+
+    // 이미 명시적인 조건 가드가 있으면 통과
+    if (hasAnyConditionGuard(scene, requiredFlag)) continue;
+
+    // 실제로 met_* 없이도 도달 가능한지 시뮬레이션
+    if (canReachSceneWithoutFlag(sceneId, requiredFlag)) {
+        warnings.push('[REL_CONTINUITY] ' + sceneId + ': "' + speaker + '" 재회 문맥 대사인데 ' + requiredFlag + ' 없이 도달 가능 (분기/플래그 가드 누락 의심)');
+        relWarnings++;
+    }
+}
+
+console.log('[REL_CHECK] 관계 연속성 검증 완료 (' + relWarnings + '건 발견)\n');
+
 // ===== Style Check: 지문 형식 + 오글/올드체 검출 =====
 console.log('[STYLE_CHECK] 대사 스타일 검증 시작...');
 

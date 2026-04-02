@@ -611,14 +611,27 @@ Object.assign(SCENARIO[2], {
     "lunch2_dain_end_ins3": {
         "background": "assets/images/background/playground.png",
         "character": null,
-        "next": "lunch2_dain_end_ins4"
+        "branches": [
+            { "condition": "nurse_day1", "next": "lunch2_dain_end_ins4" },
+            { "next": "lunch2_dain_end_ins4_first" }
+        ]
     },
     "lunch2_dain_end_ins4": {
         "background": "assets/images/background/nurse_room.png",
         "character": null,
         "next": "lunch2_dain_end_ins5"
     },
+    "lunch2_dain_end_ins4_first": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
+        "next": "lunch2_dain_end_ins5_first"
+    },
     "lunch2_dain_end_ins5": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "lunch2_dain_end_ins6"
+    },
+    "lunch2_dain_end_ins5_first": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins6"
@@ -626,14 +639,27 @@ Object.assign(SCENARIO[2], {
     "lunch2_dain_end_ins6": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins7"
+        "branches": [
+            { "condition": "nurse_day1", "next": "lunch2_dain_end_ins7" },
+            { "next": "lunch2_dain_end_ins7_first" }
+        ]
     },
     "lunch2_dain_end_ins7": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins8"
     },
+    "lunch2_dain_end_ins7_first": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "lunch2_dain_end_ins8_first"
+    },
     "lunch2_dain_end_ins8": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "lunch2_dain_end_ins9"
+    },
+    "lunch2_dain_end_ins8_first": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins9"

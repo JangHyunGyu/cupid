@@ -159,6 +159,11 @@ const _scenes = {
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_ins"
     },
+    "after2_dain_end_first": {
+        "background": "assets/images/background/store.png",
+        "character": "assets/images/characters/dain_laugh.png",
+        "next": "after2_dain_end_ins"
+    },
     "after2_dain_end_2": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_laugh.png",
@@ -656,7 +661,10 @@ const _scenes = {
     "after2_dain_freetalk": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "after2_dain_end"
+        "branches": [
+            { "condition": "chose_dain_lunch", "next": "after2_dain_end" },
+            { "next": "after2_dain_end_first" }
+        ]
     },
     "hidden_nurse_d2_1": {
         "background": "assets/images/background/nurse_room.png",
