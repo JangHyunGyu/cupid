@@ -929,15 +929,15 @@ html[lang="de"] #message {
 /* 세로 모드 (Portrait) 최적화 */
 @media (orientation: portrait) {
     #character-layer {
-        height: 88%;
-        /* 세로 화면에서 캐릭터가 화면을 더 채우도록 확대 */
-        bottom: -8svh;
-        /* 1:1 캐릭터 소스 하단의 투명 여백을 화면 밖으로 내림 */
+        height: 100%;
+        /* 세로 화면에서도 캐릭터 레이어를 화면 하단까지 꽉 채움 */
+        bottom: 0;
+        /* 캐릭터 아래쪽 빈 여백이 생기지 않도록 하단 기준 정렬 */
     }
 
     .char-slot {
         max-width: 100%;
-        bottom: -2svh;
+        bottom: 0;
     }
 
     .char-slot img {
