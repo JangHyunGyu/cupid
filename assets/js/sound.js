@@ -23,12 +23,18 @@ class SoundManager {
         // 진행 중인 로딩 Promise 캐시 (중복 fetch 방지)
         this._loadingPromises = {};
 
-        // 볼륨 설정 로드
-        const savedSfx = localStorage.getItem('sfxVolume');
-        const savedBgm = localStorage.getItem('bgmVolume');
-        this.sfxVolume = savedSfx !== null ? parseFloat(savedSfx) : 0.5;
-        this.bgmVolume = savedBgm !== null ? parseFloat(savedBgm) : 0.5;
-        this.muted = localStorage.getItem('soundMuted') === 'true';
+        // 볼륨 설정 로드 (시크릿 모드 등 localStorage 차단 환경 대응)
+        try {
+            const savedSfx = localStorage.getItem('sfxVolume');
+            const savedBgm = localStorage.getItem('bgmVolume');
+            this.sfxVolume = savedSfx !== null ? parseFloat(savedSfx) : 0.5;
+            this.bgmVolume = savedBgm !== null ? parseFloat(savedBgm) : 0.5;
+            this.muted = localStorage.getItem('soundMuted') === 'true';
+        } catch (e) {
+            this.sfxVolume = 0.5;
+            this.bgmVolume = 0.5;
+            this.muted = false;
+        }
 
         this.isInitialized = false;
         this.currentBgmPath = '';
@@ -341,7 +347,7 @@ class SoundManager {
      */
     setBgmVolume(volume) {
         this.bgmVolume = volume;
-        localStorage.setItem('bgmVolume', volume);
+        try { localStorage.setItem('bgmVolume', volume); } catch (e) {}
         if (this.bgmGain && this.audioContext) {
             const now = this.audioContext.currentTime;
             const targetVol = this.muted ? 0 : volume;
@@ -356,7 +362,7 @@ class SoundManager {
      */
     setSfxVolume(volume) {
         this.sfxVolume = volume;
-        localStorage.setItem('sfxVolume', volume);
+        try { localStorage.setItem('sfxVolume', volume); } catch (e) {}
     }
 
     /**
@@ -364,7 +370,7 @@ class SoundManager {
      */
     setMuted(muted) {
         this.muted = muted;
-        localStorage.setItem('soundMuted', muted);
+        try { localStorage.setItem('soundMuted', muted); } catch (e) {}
         if (this.bgmGain && this.audioContext) {
             const now = this.audioContext.currentTime;
             const targetVol = muted ? 0 : this.bgmVolume;
@@ -375,5 +381,11 @@ class SoundManager {
     }
 }
 
-const soundManager = new SoundManager();
+let soundManager;
+try {
+    soundManager = new SoundManager();
+} catch (e) {
+    console.warn('[SoundManager] 초기화 실패, 더미 매니저 사용:', e);
+    soundManager = { init() {}, playBgm() {}, stopBgm() {}, playSfx() {}, setBgmVolume() {}, setSfxVolume() {}, setMuted() {}, muted: false, bgmVolume: 0.5, sfxVolume: 0.5, isInitialized: false };
+}
 window.soundManager = soundManager;

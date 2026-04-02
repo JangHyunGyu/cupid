@@ -74,7 +74,13 @@ class GalleryProgress {
      * @returns {Object} 로드된 또는 새로 생성된 진행 데이터
      */
     load() {
-        const saved = localStorage.getItem(this.storageKey);
+        let saved = null;
+        try {
+            saved = localStorage.getItem(this.storageKey);
+        } catch (e) {
+            // 시크릿 모드 등 localStorage 접근 차단 시
+            console.warn('[GalleryProgress] localStorage 접근 불가, 기본값 사용');
+        }
         let needsReset = false;
 
         if (saved) {
@@ -138,7 +144,7 @@ class GalleryProgress {
      * 현재 진행 상태를 localStorage에 저장
      */
     save() {
-        localStorage.setItem(this.storageKey, JSON.stringify(this.data));
+        try { localStorage.setItem(this.storageKey, JSON.stringify(this.data)); } catch (e) {}
     }
 
     /**
@@ -148,7 +154,8 @@ class GalleryProgress {
      * @returns {Object} 현재 저장된 진행 데이터
      */
     refresh() {
-        const saved = localStorage.getItem(this.storageKey);
+        let saved = null;
+        try { saved = localStorage.getItem(this.storageKey); } catch (e) {}
         if (saved) {
             try {
                 this.data = JSON.parse(saved);
