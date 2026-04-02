@@ -62,7 +62,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Jemand, der die ganze Nacht liest und dann zu spät kommt. — Bewundernswert oder kläglich, jedenfalls typisch Yuna.*"
+        "text": "*Jemand, der die ganze Nacht liest und dann zu spät kommt. — Typisch Yuna. Das mag ich.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "morning3_end": {
         "name": "{name}",
-        "text": "*Die Wochenendpläne überschneiden sich... Ehe ich mich versehe, gehen die Stunden weiter und die Mittagspause naht.*"
+        "text": "*Ehe ich mich versehe, gehen die Stunden weiter und die Mittagspause naht.*"
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",

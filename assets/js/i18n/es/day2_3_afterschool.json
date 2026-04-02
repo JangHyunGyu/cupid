@@ -66,7 +66,7 @@
   },
   "after2_dain_10": {
     "name": "Dain",
-    "text": "*¿Con los ojos bien abiertos* Eh? Iba a ir suave, pero parece que no puedo."
+    "text": "*Con los ojos muy abiertos* Eh? Iba a ir suave, pero parece que no puedo."
   },
   "after2_dain_11": {
     "name": "{name}",
@@ -82,7 +82,7 @@
   },
   "after2_dain_14": {
     "name": "Dain",
-    "text": "*¡¿Genuinamente sorprendida* ¡¿Qué?! ¡¿Me engañaste?!"
+    "text": "*Genuinamente sorprendida* ¡¿Qué?! ¡¿Me engañaste?!"
   },
   "after2_dain_15": {
     "name": "{name}",
@@ -90,7 +90,7 @@
   },
   "after2_dain_16": {
     "name": "Dain",
-    "text": "*¡Dándome un puñetazo en el hombro* Tramposo!! Jajaja — ¡pero fue divertido!"
+    "text": "*Dándome un puñetazo en el hombro* Tramposo!! Jajaja — ¡pero fue divertido!"
   },
   "after2_dain_end": {
     "name": "{name}",
@@ -130,7 +130,7 @@
   },
   "after2_dain_end_3e": {
     "name": "{name}",
-    "text": "*El tema cambió. — Si lo cambió a propósito o de verdad estaba picante. Probablemente ambas.*"
+    "text": "*El tema cambió. — La consideración de Dain es torpe, pero cálida.*"
   },
   "after2_dain_return": {
     "name": "{name}",

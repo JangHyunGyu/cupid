@@ -45,7 +45,7 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Notre maison a l’air normale de l’extérieur, non ? Grande maison, belle voiture, fille présidente du conseil des élèves. Mais maman et papa sont des étrangers sous le même toit depuis un an. Ils n’ont juste pas signé les papiers du divorce."
+        "text": "Notre maison a l’air normale de l’extérieur, non ? Grande maison, belle voiture, fille présidente du conseil des élèves."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
@@ -359,7 +359,7 @@
     },
     "wall_dain_glimpse_3": {
         "name": "{name}",
-        "text": "*Yuna ne m’a pas envoyé de message aujourd’hui. — Yuna n’envoie jamais de messages. Si c’est normal ou juste aujourd’hui — je ne sais pas.*"
+        "text": "*Yuna ne m’a pas envoyé de message aujourd’hui. — Pardon.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -512,7 +512,7 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Le vent était agréable aujourd’hui.\n...La prochaine fois, j’attends d’autres mots."
+        "text": "Le vent était agréable aujourd’hui."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
@@ -520,11 +520,11 @@
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "...Aujourd’hui.\nC’était bien."
+        "text": "...Aujourd’hui."
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*Un message sur mon téléphone. «Je me suis bien amusé aujourd’hui. Tu es libre demain aussi ?»*"
+        "text": "*Un message sur mon téléphone.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",

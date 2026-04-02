@@ -23,7 +23,7 @@
     "name": "{name}",
     "text": "*Tengo las puntas de los dedos frías. No hay viento. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
     "choices": [
-      "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
+      "Seoyeon. Espera un momento.",
       "...Hace buen viento."
     ]
   },
@@ -115,7 +115,7 @@
     "name": "{name}",
     "text": "*Mi respiración se acorta. La habitación parece más pequeña. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
     "choices": [
-      "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
+      "Yuna. Quiero preguntarte algo.",
       "...Este lugar es realmente bonito."
     ]
   },
@@ -195,7 +195,7 @@
     "name": "{name}",
     "text": "*El suelo del gimnasio parece temblar. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
     "choices": [
-      "Sabes que si huyes, te perseguiré. Así que quédate y escúchame.",
+      "Dain. Suelta la pelota.",
       "...¿Jugamos otra ronda?"
     ]
   },

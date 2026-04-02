@@ -325,15 +325,15 @@
   },
   "true_epilogue_4_seo": {
     "name": "{name}",
-    "text": "*Sa famille ne va pas mieux. Les appels de sa mère sont toujours froids, et les sourires répétés n'ont pas cessé. — Mais maintenant, il y a quelqu'un à qui elle peut montrer son visage non répété. Plus maintenant.*"
+    "text": "*Sa famille ne va pas mieux. Les appels de sa mère sont toujours froids, et les sourires répétés n'ont pas cessé. — Mais maintenant, il y a quelqu'un à qui elle peut montrer son visage non répété. Désormais.*"
   },
   "true_epilogue_4_yuna": {
     "name": "{name}",
-    "text": "*Celui qui est parti n'est pas revenu. Le numéro du senior est toujours introuvable, et le coin de la bibliothèque est toujours vide. — Mais maintenant, il y a quelqu'un à qui elle peut parler avec sa voix, pas seulement des notes. Plus maintenant.*"
+    "text": "*Celui qui est parti n'est pas revenu. Le numéro du senior est toujours introuvable, et le coin de la bibliothèque est toujours vide. — Mais maintenant, il y a quelqu'un à qui elle peut parler avec sa voix, pas seulement des notes. Désormais.*"
   },
   "true_epilogue_4_dain": {
     "name": "{name}",
-    "text": "*Son genou n'a pas guéri. Elle se bande encore chaque matin, et le mémo d'alarme a toujours deux points d'exclamation. — Mais maintenant, il y a quelqu'un qui écoute quand ses phrases se terminent par un point. Plus maintenant.*"
+    "text": "*Son genou n'a pas guéri. Elle se bande encore chaque matin, et le mémo d'alarme a toujours deux points d'exclamation. — Mais maintenant, il y a quelqu'un qui écoute quand ses phrases se terminent par un point. Désormais.*"
   },
   "true_epilogue_7": {
     "name": "Système",
@@ -397,7 +397,7 @@
   },
   "good_5_yuna": {
     "name": "{name}",
-    "text": "*Une étoile est visible. Imparfait, et c'est bien ainsi. L'histoire n'est pas encore terminée.*"
+    "text": "*Sur le toit. Je veux qu'elle se souvienne de moi — pas comme un remplaçant. Même si ça prend du temps.*"
   },
   "good_2_dain": {
     "name": "{name}",
@@ -413,7 +413,7 @@
   },
   "good_5_dain": {
     "name": "{name}",
-    "text": "*Le soleil disparaît derrière le portail. Imparfait, et c'est bien ainsi. L'histoire n'est pas encore terminée.*"
+    "text": "*Devant l'école. Le dernier service n'a pas encore été lancé. Le match n'est pas fini.*"
   },
   "good_5_cg_seo": {
     "name": "Système",
@@ -517,7 +517,7 @@
   },
   "confess_fail_5": {
     "name": "Système",
-    "text": "—- CONFESS FAIL END —-"
+    "text": "─── FRIEND END (confession ratée) ───"
   },
   "day5_ending_friend": {
     "name": "{name}",
@@ -525,7 +525,7 @@
   },
   "friend_1": {
     "name": "{name}",
-    "text": "*Au final, je n'ai pas pu le dire.*"
+    "text": "*Les pétales de cerisier se dispersent dans le vent.*"
   },
   "friend_2": {
     "name": "{name}",
