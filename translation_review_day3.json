@@ -10450,37 +10450,37 @@
     "lunch3_meal_10_ins5": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_meal_10_ins5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 고개만 끄덕인다. 쪽지를 쓰다 접어서 주머니에 넣는다. 안 건넨...",
+      "_ko_text_preview": "*유나가 고개만 끄덕인다. 쪽지를 쓰다 접어서 주머니에 넣는다. 안 건넨다. — 뭐라고 적었는지는, 모르겠다...",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_meal_10_ins5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_meal_10_ins5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_meal_10_ins5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_meal_10_ins5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_meal_10_ins5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "lunch3_expose_3_ins": {
@@ -13476,37 +13476,37 @@
     "after3_confront_5": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_confront_5",
       "_ko_name": "서연",
-      "_ko_text_preview": "네가 다른 애들한테 웃어줄 때, 내 안에서 뭔가가 무너지는 기분이었거든.",
+      "_ko_text_preview": "네가 다른 애들한테 웃어줄 때, 똑같이 웃어줄 때, 그게 좀 싫었어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_confront_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_confront_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_confront_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_confront_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_confront_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "after3_confront_6": {
@@ -13836,37 +13836,37 @@
     "after3_confront_excuse_2": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_confront_excuse_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "약속의 숫자가 문제가 아니야. 약속의 무게가 문제지.",
+      "_ko_text_preview": "몇 명이랑 약속했냐가 문제가 아니야. 나한테 그 약속이 뭐였는지가 문제야.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_confront_excuse_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_confront_excuse_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_confront_excuse_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_confront_excuse_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_confront_excuse_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "after3_confront_lie_ins": {
@@ -15924,37 +15924,37 @@
     "haeun_warn_5c_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#haeun_warn_5c_ins",
       "_ko_name": "서연",
-      "_ko_text_preview": "네가 다른 애들한테 웃어줄 때, 내 안에서 뭔가가 무너지는 기분이었거든.",
+      "_ko_text_preview": "네가 다른 애들한테 웃어줄 때, 똑같이 웃어줄 때, 그게 좀 싫었어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#haeun_warn_5c_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#haeun_warn_5c_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#haeun_warn_5c_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#haeun_warn_5c_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#haeun_warn_5c_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "after3_confront_admit_ins": {
@@ -17294,37 +17294,37 @@
     "night3_dream_2": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_dream_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*얼굴은 보이지 않는데, 옆에 있다는 것만으로 마음이 편했다.*",
+      "_ko_text_preview": "*얼굴은 안 보이는데, 이상하게 불안하지 않았다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_dream_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_dream_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_4_night.json#night3_dream_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_dream_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_dream_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night3_faithful_reflect_1": {
@@ -17402,73 +17402,73 @@
     "night3_faithful_reflect_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*지우면 후회까지 지워지는 것 같아서 남겨뒀었다. 근데 이제 후회가 아니...",
+      "_ko_text_preview": "*지우면 그때 감정까지 없어질 것 같아서 남겨뒀었다. 근데 이제 미련이 아니라 기록이다. — 역할은 끝났다....",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night3_faithful_reflect_4": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*이번에는 다르다. 한 사람에게만 말하겠다. 나머지에게는 — 제대로 거절...",
+      "_ko_text_preview": "*이번에는 다르다. 한 사람에게만 말하겠다. 나머지에게는 — 확실하게 말하겠다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night3_dream_3": {
@@ -17870,37 +17870,37 @@
     "night3_nightmare_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_nightmare_3",
       "_ko_name": "서연",
-      "_ko_text_preview": "약속했잖아. 나한테만이라고...",
+      "_ko_text_preview": "나한테만 그랬잖아...",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_nightmare_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_nightmare_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_4_night.json#night3_nightmare_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_nightmare_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_nightmare_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night3_nightmare_4": {
@@ -19022,37 +19022,37 @@
     "night3_cheat_reflect_5_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_5_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*꿈을 꿨다. — 누군가와 나란히 걷고 있었다. 얼굴은 보이지 않는데, ...",
+      "_ko_text_preview": "*꿈을 꿨다. — 누군가와 나란히 걷고 있었다. 얼굴은 안 보이는데, 이상하게 불안하지 않았다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_5_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_5_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_5_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_5_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_5_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night3_faithful_reflect_2_ins": {

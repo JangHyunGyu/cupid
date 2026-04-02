@@ -81,11 +81,19 @@
 - fixed/absolute 요소는 모든 뷰포트에서 다른 요소와 겹치지 않는지 확인
 - 기존 UI 요소와 중복되는 요소가 없는지 확인 (같은 기능의 버튼이 2개 이상 존재 금지)
 
+## 번역테이블 (translation_review)
+- `translation_review_day{1~5}.json` — 씬별 번역 상태 추적 파일 (번역테이블)
+- 구조: `{ section: { nodeId: { _ko_text_preview, en: { _reviewed, _score, _issues }, ja: {...}, ... } } }`
+- `_reviewed: false` = 미검토, `_issues` = 문제 사유
+- 대사 수정 시 해당 씬의 `_ko_text_preview` 갱신 + 5개 언어 `_reviewed: false` 마킹
+- 다국어 번역 일괄 적용: `fix_translation_deviations.js` 패턴으로 스크립트 작성 후 `node` 실행
+
 ## 시나리오 수정 작업 순서
 1. **SCENARIO.md 먼저 수정** — 시나리오 문서에서 대사/구조 변경을 확정
 2. **시나리오 JS 반영** — `assets/js/scenario/day*_*.js`에 씬 추가/라우팅 변경
-3. **i18n 6개 언어 동기화** — `assets/js/i18n/{ko,en,ja,es,fr,de}/day*_*.json` 전부 반영
-4. **`node validate.js` 실행** — 0 데드엔드, UNREACHABLE 확인
+3. **i18n 6개 언어 동기화** — `assets/js/i18n/{ko,en,ja,es,fr,de}/day*_*.json` 전부 반영 (번역 스크립트 사용 권장)
+4. **translation_review 갱신** — `translation_review_day{1~5}.json`의 `_ko_text_preview` + `_reviewed` 업데이트
+5. **`node validate.js` 실행** — 0 데드엔드, UNREACHABLE 확인
 5. 씬 제거 시 고아 씬을 남기지 말고 완전 삭제 (UNREACHABLE 경고 방지)
 6. 씬 삽입 시 기존 체인의 `next`를 새 씬으로 변경하고, 새 씬의 마지막 `next`가 원래 목적지를 가리키는지 확인
 

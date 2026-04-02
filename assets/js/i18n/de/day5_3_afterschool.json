@@ -101,7 +101,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "Wenn nicht jetzt, dann nie.",
+        "text": "*Wenn nicht jetzt, dann nie.*",
         "choices": [
             "Diesmal gestehe ich es",
             "...Ich konnte nichts sagen"

@@ -4806,37 +4806,37 @@
     "tour_yuna_end_2": {
       "_ko_ref": "assets/js/i18n/ko/day5_2_lunch.json#tour_yuna_end_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'당분간은'에 유나의 전부가 들어 있다. 영원히라고 말할 수 없는 사람...",
+      "_ko_text_preview": "*'당분간은'. — 유나가 할 수 있는 최대한의 약속이다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_2_lunch.json#tour_yuna_end_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_2_lunch.json#tour_yuna_end_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_2_lunch.json#tour_yuna_end_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_2_lunch.json#tour_yuna_end_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_2_lunch.json#tour_yuna_end_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "tour_dain_1_check": {
@@ -6608,37 +6608,37 @@
     "after5_last_chance_choice": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_last_chance_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*지금이 아니면 영원히 말 못 한다.*",
+      "_ko_text_preview": "*지금 아니면 기회 없다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_last_chance_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_3_afterschool.json#after5_last_chance_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_3_afterschool.json#after5_last_chance_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_3_afterschool.json#after5_last_chance_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_3_afterschool.json#after5_last_chance_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "after5_confess_yes": {
@@ -10282,37 +10282,37 @@
     "true_seo_7": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#true_seo_7",
       "_ko_name": "서연",
-      "_ko_text_preview": "약속해. — 계속 내 옆에.",
+      "_ko_text_preview": "...옆에 있어줘.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#true_seo_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#true_seo_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#true_seo_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#true_seo_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#true_seo_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "true_seo_7b": {
@@ -12190,325 +12190,325 @@
     "good_epilogue_1": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*",
+      "_ko_text_preview": "*흔들렸으니까 알았다. 진짜 마음이 뭔지.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_1",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_1",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_1",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_1",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_1",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_2": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*",
+      "_ko_text_preview": "*돌아간 것 같았는데, 결국 여기였다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_3": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*",
+      "_ko_text_preview": "*서툴러도 괜찮다. 처음이니까.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_1_yuna": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_1_yuna",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*",
+      "_ko_text_preview": "*흔들렸으니까 알았다. 진짜 마음이 뭔지.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_1_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_1_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_1_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_1_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_1_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_2_yuna": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_2_yuna",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*",
+      "_ko_text_preview": "*돌아간 것 같았는데, 결국 여기였다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_2_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_2_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_2_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_2_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_2_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_3_yuna": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_3_yuna",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*",
+      "_ko_text_preview": "*서툴러도 괜찮다. 처음이니까.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_3_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_3_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_3_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_3_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_3_yuna",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_1_dain": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_1_dain",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*하지만 그 흔들림이 있었기에, 진짜 마음이 뭔지 알게 됐다.*",
+      "_ko_text_preview": "*흔들렸으니까 알았다. 진짜 마음이 뭔지.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_1_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_1_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_1_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_1_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_1_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_2_dain": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_2_dain",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*길을 잃었던 게 아니다. 너를 찾기 위한 과정이었을 뿐.*",
+      "_ko_text_preview": "*돌아간 것 같았는데, 결국 여기였다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_2_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_2_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_2_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_2_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_2_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_epilogue_3_dain": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_epilogue_3_dain",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*불완전한 사랑도 사랑이다. 어쩌면 부족하기에 더 소중한 건지도.*",
+      "_ko_text_preview": "*서툴러도 괜찮다. 처음이니까.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_epilogue_3_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#good_epilogue_3_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#good_epilogue_3_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#good_epilogue_3_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#good_epilogue_3_dain",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "good_5_cg_seo": {
@@ -13774,37 +13774,37 @@
     "friend_6": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#friend_6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*앞으로도 이렇게 메시지를 주고받겠지. 웃는 이모티콘을 붙이고, 가끔 밥...",
+      "_ko_text_preview": "*앞으로도 이렇게 메시지를 주고받겠지. 이모티콘 붙이고, 가끔 밥 먹고, 별일 없냐고 물으면 없다고 답하겠지...",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#friend_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#friend_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#friend_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#friend_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#friend_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "friend_7": {
