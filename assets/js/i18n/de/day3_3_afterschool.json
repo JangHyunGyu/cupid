@@ -38,6 +38,74 @@
             "Zur Turnhalle"
         ]
     },
+    "after3_reject_for_seo_1": {
+        "name": "{name}",
+        "text": "*Ich treffe Dain im Flur. Ihre übliche Energie fehlt.*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "Dain",
+        "text": "...Du kommst heute nicht in die Turnhalle, oder?"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "{name}",
+        "text": "*Ich gehe an der Bibliothek vorbei. Yunas Platz ist leer. Ein einzelner Zettel liegt da. '...Verstanden.' Drei Wörter.*"
+    },
+    "after3_reject_for_seo_4": {
+        "name": "{name}",
+        "text": "*Ging auf den Flur hinaus. Dains Satz ohne Ausrufezeichen, Yunas Zettel mit nur drei Wörtern. — Das Gewicht der Wahl lastet auf meinen Schultern.*"
+    },
+    "after3_reject_for_yuna_1": {
+        "name": "{name}",
+        "text": "*Seoyeon ordnet ihr Klemmbrett im Flur.*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "Seoyeon",
+        "text": "Beliebt, was."
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "name": "{name}",
+        "text": "*Meine Füße tragen mich zur Turnhalle.*"
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "{name}",
+        "text": "*Dain schlägt allein Bälle in der Turnhalle.*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "Dain",
+        "text": "Ah, hey!"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*Aber sie wendet das Gesicht ab. Ihre Augen sind rot.*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "{name}",
+        "text": "*Verließ die Turnhalle und ging zurück auf den Flur. Seoyeons eine Zeile, Dains rote Augen. — Der Rückweg fühlt sich schwer an.*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "{name}",
+        "text": "*Seoyeon ordnet ihr Klemmbrett.*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "Seoyeon",
+        "text": "Der Schülerrat hat viel zu tun. Ich esse mittags getrennt."
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*Ich ging zu Yunas Versteck.*"
+    },
+    "after3_reject_for_dain_3": {
+        "name": "{name}",
+        "text": "*Keine Zettel in der Bibliothek. Yunas Tasche ist weg. Sie ist wohl früh gegangen.*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*Ich ging zurück in den Flur.*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "{name}",
+        "text": "*Seoyeons einstudiertes Lächeln, Yunas leerer Platz. — Die verbleibenden zwei Plätze werden leerer.*"
+    },
     "after3_seo_1": {
         "name": "{name}",
         "text": "*Ich öffnete die Tür zum Schülerratszimmer. — Seoyeon liegt über dem Schreibtisch zusammengesunken.*"
@@ -65,10 +133,6 @@
     "after3_seo_7": {
         "name": "{name}",
         "text": "Was habe ich gesehen?"
-    },
-    "after3_seo_7_ins": {
-        "name": "Seoyeon",
-        "text": "Das unvollkommene Ich."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
@@ -250,33 +314,17 @@
         "name": "Dain",
         "text": "Hey! Mir geht's gut! Ich brauch kein Pflaster!!"
     },
-    "after3_dain_choice2_ins": {
-        "name": "{name}",
-        "text": "*Ich habe ein Pflaster aus dem Krankenzimmer geholt. Hielt es Dain hin.*"
-    },
-    "after3_dain_choice2_ins2": {
-        "name": "Dain",
-        "text": "...Oh, du hast wirklich eins gebracht."
-    },
-    "after3_dain_choice2_ins3": {
-        "name": "{name}",
-        "text": "Du sagtest doch, alles gut."
-    },
-    "after3_dain_choice2_ins4": {
-        "name": "{name}",
-        "text": "*Dain nimmt das Pflaster und starrt es lange an. Beißt sich auf die Lippe.*"
-    },
-    "after3_dain_choice2_ins5": {
-        "name": "Dain",
-        "text": "*Lächelt schwach.* ...Was. Ich sollte mich von so was nicht berühren lassen."
-    },
-    "after3_dain_choice2_ins6": {
-        "name": "{name}",
-        "text": "*Sie hat es angenommen. — Zum ersten Mal hat Dain Hilfe nicht abgelehnt. Das Lächeln ohne Ausrufezeichen fühlt sich seltsam schwer an.*"
-    },
     "after3_dain_end": {
         "name": "{name}",
         "text": "*Dain boxt mir leicht gegen die Schulter. — Schwächer als gestern.*"
+    },
+    "after3_dain_end_check": {
+        "name": "{name}",
+        "text": "*Dain schlägt mir leicht auf die Schulter.*"
+    },
+    "after3_dain_end_first": {
+        "name": "{name}",
+        "text": "*Dain schlägt mir leicht auf die Schulter. — Sie scheint verlegen zu sein.*"
     },
     "after3_confront_1": {
         "name": "{name}",
@@ -363,24 +411,6 @@
         "name": "{name}",
         "text": "*Der Nachmittag ist vorbei. — Was ich heute gesehen habe, lässt mich nicht los.*"
     },
-    "after3_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon im Flur gegenüberstehend. Ihr Ausdruck ist kompliziert.*",
-        "context": "Tag 3, nach der Konfrontation mit Seoyeon. Das Vertrauen ist erschüttert. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
-        "personality": "Seoyeon ist besitzergreifend und direkt wenn eifersüchtig. Verletzt aber versucht es nicht zu zeigen."
-    },
-    "after3_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Neben Yuna gehend. Ihr Blick ist kühl.*",
-        "context": "Tag 3, nach dem Gespräch mit Yuna. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
-        "personality": "Yuna ist emotional erschüttert. Mehr Bestätigung suchend als eifersüchtig."
-    },
-    "after3_dain_freetalk": {
-        "name": "Dain",
-        "text": "*Mit Dain auf einer Bank am Spielplatz sitzend. Sie ist ruhiger als sonst.*",
-        "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
-        "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
-    },
     "haeun_check": {
         "name": "{name}",
         "text": ""
@@ -393,6 +423,10 @@
         "name": "Haeun",
         "text": "...{name}."
     },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "Ja."
+    },
     "haeun_warn_3": {
         "name": "Haeun",
         "text": "Hast du gerade Seoyeon gesehen?"
@@ -401,9 +435,21 @@
         "name": "Haeun",
         "text": "...Seoyeon hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
     },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "Sie hat geweint?"
+    },
     "haeun_warn_5": {
         "name": "{name}",
         "text": "*Seoyeon hat geweint. — Mir hat sie nur gesagt, ich hätte 'ihre unvollkommene Seite gesehen'. Danach hat sie geweint.*"
+    },
+    "haeun_warn_5b": {
+        "name": "Haeun",
+        "text": "Seoyeon ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "......"
     },
     "haeun_warn_6": {
         "name": "Haeun",
@@ -416,6 +462,10 @@
     "haeun_warn_8": {
         "name": "{name}",
         "text": "*Das Bild von Seoyeon, die allein auf der Toilette weint, geht mir nicht aus dem Kopf. Der perfekt gerade Rücken, die weißen Knöchel vor Anspannung, und — eine leere Toilette.*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*Ich ging zum Schuleingang hinaus.*"
     },
     "minsu_d3_check": {
         "name": "{name}",
@@ -441,9 +491,17 @@
         "name": "Minsu",
         "text": "Alter, mir fällt's auch schwer, das von der Seite mit anzusehen. Die sind alle drei gute Leute. — Ich weiß, dass du kein Arsch bist. Du kannst einfach nicht nein sagen."
     },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*Minsu seufzt. Nicht genervt — ehrlich besorgt.*"
+    },
     "minsu_d3_6": {
         "name": "{name}",
         "text": "......Stimmt."
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "Ich frag dich nicht, was an deiner alten Schule passiert ist. Aber eins will ich dir sagen."
     },
     "minsu_d3_7": {
         "name": "Minsu",
@@ -461,101 +519,23 @@
         "name": "Minsu",
         "text": "Wir sehen uns morgen in der Schule. — Denk mal drüber nach, ernsthaft."
     },
-    "haeun_warn_2b": {
-        "name": "{name}",
-        "text": "Ja."
-    },
-    "haeun_warn_4b": {
-        "name": "{name}",
-        "text": "Sie hat geweint?"
-    },
-    "haeun_warn_5b": {
-        "name": "Haeun",
-        "text": "Seoyeon ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
-    },
-    "haeun_warn_5c": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "minsu_d3_5b": {
-        "name": "{name}",
-        "text": "*Minsu seufzt. Nicht genervt — ehrlich besorgt.*"
-    },
-    "minsu_d3_6b": {
-        "name": "Minsu",
-        "text": "Ich frag dich nicht, was an deiner alten Schule passiert ist. Aber eins will ich dir sagen."
-    },
-    "after3_reject_for_seo_1": {
-        "name": "{name}",
-        "text": "*Ich treffe Dain im Flur. Ihre übliche Energie fehlt.*"
-    },
-    "after3_reject_for_seo_2": {
-        "name": "Dain",
-        "text": "...Du kommst heute nicht in die Turnhalle, oder?"
-    },
-    "after3_reject_for_seo_3": {
-        "name": "{name}",
-        "text": "*Ich gehe an der Bibliothek vorbei. Yunas Platz ist leer. Ein einzelner Zettel liegt da. '...Verstanden.' Drei Wörter.*"
-    },
-    "after3_reject_for_seo_4": {
-        "name": "{name}",
-        "text": "*Ging auf den Flur hinaus. Dains Satz ohne Ausrufezeichen, Yunas Zettel mit nur drei Wörtern. — Das Gewicht der Wahl lastet auf meinen Schultern.*"
-    },
-    "after3_reject_for_yuna_1": {
-        "name": "{name}",
-        "text": "*Seoyeon ordnet ihr Klemmbrett im Flur.*"
-    },
-    "after3_reject_for_yuna_2": {
+    "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "Beliebt, was."
+        "text": "*Seoyeon im Flur gegenüberstehend. Ihr Ausdruck ist kompliziert.*",
+        "context": "Tag 3, nach der Konfrontation mit Seoyeon. Das Vertrauen ist erschüttert. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
+        "personality": "Seoyeon ist besitzergreifend und direkt wenn eifersüchtig. Verletzt aber versucht es nicht zu zeigen."
     },
-    "after3_reject_for_yuna_walk_gym": {
-        "name": "{name}",
-        "text": "*Meine Füße tragen mich zur Turnhalle.*"
+    "after3_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Neben Yuna gehend. Ihr Blick ist kühl.*",
+        "context": "Tag 3, nach dem Gespräch mit Yuna. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
+        "personality": "Yuna ist emotional erschüttert. Mehr Bestätigung suchend als eifersüchtig."
     },
-    "after3_reject_for_yuna_3": {
-        "name": "{name}",
-        "text": "*Dain schlägt allein Bälle in der Turnhalle.*"
-    },
-    "after3_reject_for_yuna_3_dain": {
+    "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "Ah, hey!"
-    },
-    "after3_reject_for_yuna_3_react": {
-        "name": "{name}",
-        "text": "*Aber sie wendet das Gesicht ab. Ihre Augen sind rot.*"
-    },
-    "after3_reject_for_yuna_4": {
-        "name": "{name}",
-        "text": "*Verließ die Turnhalle und ging zurück auf den Flur. Seoyeons eine Zeile, Dains rote Augen. — Der Rückweg fühlt sich schwer an.*"
-    },
-    "after3_reject_for_dain_1": {
-        "name": "{name}",
-        "text": "*Seoyeon ordnet ihr Klemmbrett.*"
-    },
-    "after3_reject_for_dain_2": {
-        "name": "Seoyeon",
-        "text": "Der Schülerrat hat viel zu tun. Ich esse mittags getrennt."
-    },
-    "after3_reject_for_dain_3": {
-        "name": "{name}",
-        "text": "*Keine Zettel in der Bibliothek. Yunas Tasche ist weg. Sie ist wohl früh gegangen.*"
-    },
-    "after3_reject_for_dain_4": {
-        "name": "{name}",
-        "text": "*Seoyeons einstudiertes Lächeln, Yunas leerer Platz. — Die verbleibenden zwei Plätze werden leerer.*"
-    },
-    "after3_reject_for_dain_2b": {
-        "name": "{name}",
-        "text": "*Ich ging zu Yunas Versteck.*"
-    },
-    "after3_reject_for_dain_3b": {
-        "name": "{name}",
-        "text": "*Ich ging zurück in den Flur.*"
-    },
-    "haeun_warn_8b": {
-        "name": "{name}",
-        "text": "*Ich ging zum Schuleingang hinaus.*"
+        "text": "*Mit Dain auf einer Bank am Spielplatz sitzend. Sie ist ruhiger als sonst.*",
+        "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
+        "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
     },
     "after3_seo_5_ins": {
         "name": "Seoyeon",
@@ -605,9 +585,37 @@
         "name": "{name}",
         "text": "*Yuna hat mehr als zwei Sätze am Stück gesagt. — Ich habe sie noch nie so viel reden sehen.*"
     },
+    "after3_seo_7_ins": {
+        "name": "Seoyeon",
+        "text": "Das unvollkommene Ich."
+    },
     "after3_dain_5_ins": {
         "name": "Dain",
         "text": "Ich sag doch, mir geht's gut!! Ist nichts Schlimmes!!"
+    },
+    "after3_dain_choice2_ins": {
+        "name": "{name}",
+        "text": "*Ich habe ein Pflaster aus dem Krankenzimmer geholt. Hielt es Dain hin.*"
+    },
+    "after3_dain_choice2_ins2": {
+        "name": "Dain",
+        "text": "...Oh, du hast wirklich eins gebracht."
+    },
+    "after3_dain_choice2_ins3": {
+        "name": "{name}",
+        "text": "Du sagtest doch, alles gut."
+    },
+    "after3_dain_choice2_ins4": {
+        "name": "{name}",
+        "text": "*Dain nimmt das Pflaster und starrt es lange an. Beißt sich auf die Lippe.*"
+    },
+    "after3_dain_choice2_ins5": {
+        "name": "Dain",
+        "text": "*Lächelt schwach.* ...Was. Ich sollte mich von so was nicht berühren lassen."
+    },
+    "after3_dain_choice2_ins6": {
+        "name": "{name}",
+        "text": "*Sie hat es angenommen. — Zum ersten Mal hat Dain Hilfe nicht abgelehnt. Das Lächeln ohne Ausrufezeichen fühlt sich seltsam schwer an.*"
     },
     "after3_confront_5_ins": {
         "name": "Dain",
