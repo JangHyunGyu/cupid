@@ -49,19 +49,19 @@
     },
     "night2_msg_dain_general": {
         "name": "다인",
-        "text": "야 내일 매점 갈 거지?!"
+        "text": "야~ 내일 매점 가자! 오늘 못 간 거 아직 아쉽다구!"
     },
     "night2_msg_dain_general_merge": {
         "name": "서연",
-        "text": "내일 점심 옥상 열어놓을게"
+        "text": "점심에 옥상 올래? 바람 좋을 거야"
     },
     "night2_msg_seo_general_alt": {
         "name": "서연",
-        "text": "내일 점심에 옥상 열어놓을게. 와"
+        "text": "내일 옥상 열어둘게. 시간 되면 와"
     },
     "night2_msg_yuna_general": {
         "name": "유나",
-        "text": "...그 책, 다 읽었어?"
+        "text": "...내일 별관 올 거야?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "night2_reply_seo_4": {
         "name": "서연",
-        "text": "내일 점심에 옥상 열어놓을게. 와"
+        "text": "점심에 옥상 열어둘게. 이번엔 진짜 와"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -297,14 +297,6 @@
     "night2_end_2_ins2": {
         "name": "{name}",
         "text": "*민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*"
-    },
-    "night2_flashback_6_ins": {
-        "name": "{name}",
-        "text": "*'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*"
-    },
-    "night2_flashback_6_ins2": {
-        "name": "{name}",
-        "text": "*'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*"
     },
     "night2_end_3_ins": {
         "name": "{name}",

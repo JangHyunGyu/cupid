@@ -866,34 +866,19 @@ const _scenes = {
     "after2_yuna_1_ins": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "after2_yuna_1_ins2"
-    },
-    "after2_yuna_1_ins2": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_yuna_2"
     },
-    "after2_yuna_2_ins": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "after2_yuna_2_ins2"
-    },
-    "after2_yuna_2_ins2": {
+"after2_yuna_2_ins": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_yuna_3"
     },
-    "after2_yuna_8b_ins": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "after2_yuna_8b_ins2"
-    },
-    "after2_yuna_8b_ins2": {
+"after2_yuna_8b_ins": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_yuna_8c"
     },
-    "after2_yuna_choice_pre3_ins": {
+"after2_yuna_choice_pre3_ins": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_yuna_choice"

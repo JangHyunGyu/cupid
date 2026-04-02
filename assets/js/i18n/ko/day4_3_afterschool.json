@@ -518,5 +518,9 @@
     "confess_dain_no_4_ins50": {
         "name": "유나",
         "text": "*괜찮았어*"
+    },
+    "confess_dain_no_4_nurse_skip": {
+        "name": "{name}",
+        "text": "*아침에 보건실에서 마지막 상담을 했다. — 선생님의 촉촉한 눈이 아직 머릿속에 남아 있다.*"
     }
 }
