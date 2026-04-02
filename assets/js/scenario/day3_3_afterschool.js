@@ -419,7 +419,23 @@ const _scenes = {
         "character": "assets/images/characters/dain_sweat.png",
         "next": "after3_dain_choice2_ins"
     },
+    "after3_dain_end_check": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "branches": [
+            { "condition": "chose_dain_after2", "next": "after3_dain_end" },
+            { "next": "after3_dain_end_first" }
+        ]
+    },
     "after3_dain_end": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_shy.png",
+        "branches": [
+            { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
+            { "next": "after3_final" }
+        ]
+    },
+    "after3_dain_end_first": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "branches": [
@@ -689,7 +705,7 @@ const _scenes = {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
-        "next": "after3_dain_end"
+        "next": "after3_dain_end_check"
     },
     "after3_seo_5_ins": {
         "background": "assets/images/background/teacher_office.png",
@@ -790,7 +806,7 @@ const _scenes = {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "setFlags": ["dain_day3_event"],
-        "next": "after3_dain_end"
+        "next": "after3_dain_end_check"
     },
     "after3_confront_5_ins": {
         "background": "assets/images/background/school_hallway.png",

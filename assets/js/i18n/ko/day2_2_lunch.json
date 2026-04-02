@@ -473,9 +473,17 @@
         "name": "{name}",
         "text": "*보건실 문을 연다. 어제와 같은 소독약 냄새.*"
     },
+    "lunch2_dain_end_ins4_first": {
+        "name": "{name}",
+        "text": "*보건실 문을 연다. 낯선 소독약 냄새가 코끝을 스친다.*"
+    },
     "lunch2_dain_end_ins5": {
         "name": "보건선생님",
         "text": "*고개를 들며* 어라, 어제의 전학생."
+    },
+    "lunch2_dain_end_ins5_first": {
+        "name": "보건선생님",
+        "text": "*고개를 들며* 처음 오셨죠? 전학생 맞나요.*"
     },
     "lunch2_dain_end_ins6": {
         "name": "{name}",
@@ -485,9 +493,17 @@
         "name": "보건선생님",
         "text": "또 왔네? 단골 되려고?"
     },
+    "lunch2_dain_end_ins7_first": {
+        "name": "보건선생님",
+        "text": "처음이라 그랬지? 소독 받고 가자."
+    },
     "lunch2_dain_end_ins8": {
         "name": "{name}",
         "text": "*장난스러운 말투는 어제와 같다. 근데 눈은 이미 상처를 살피고 있다.*"
+    },
+    "lunch2_dain_end_ins8_first": {
+        "name": "{name}",
+        "text": "*장난스러운 말투는 여전한데. 근데 눈은 이미 상처를 살피고 있다.*"
     },
     "lunch2_dain_end_ins9": {
         "name": "{name}",
