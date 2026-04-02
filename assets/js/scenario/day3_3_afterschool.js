@@ -635,37 +635,37 @@ const _scenes = {
     },
     "minsu_d3_5": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_5_ins"
     },
     "minsu_d3_5b": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_6"
     },
     "minsu_d3_6": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_6b"
     },
     "minsu_d3_6b": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_6b_ins"
     },
     "minsu_d3_7": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_7_ins"
     },
     "minsu_d3_8": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_8_ins"
     },
     "minsu_d3_9": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_10"
     },
     "minsu_d3_10": {
@@ -718,7 +718,7 @@ const _scenes = {
     },
     "after3_seo_choice1_react_ins5": {
         "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/seyoun_cry.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_seo_choice1_react_ins6"
     },
     "after3_seo_choice1_react_ins6": {
@@ -733,7 +733,7 @@ const _scenes = {
     },
     "after3_seo_choice1_react_ins8": {
         "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/seyoun_cry.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "after3_seo_freetalk"
     },
     "after3_yuna_5_ins": {
@@ -884,7 +884,7 @@ const _scenes = {
     },
     "minsu_d3_8_ins": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_9"
     },
     "minsu_d3_3_ins": {
@@ -904,27 +904,27 @@ const _scenes = {
     },
     "minsu_d3_5_ins": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_5b"
     },
     "minsu_d3_6b_ins": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_7"
     },
     "minsu_d3_7_ins": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_7_ins2"
     },
     "minsu_d3_7_ins2": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_7_ins3"
     },
     "minsu_d3_7_ins3": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_8"
     },
     "minsu_d3_10_ins": {

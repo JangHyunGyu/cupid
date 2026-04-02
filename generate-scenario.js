@@ -156,19 +156,7 @@ function formatScene(sceneId, scene, i18n) {
         lines.push(`- 배경: \`${img(scene.background)}\``);
     }
 
-    // 캐릭터 (단일)
-    if (scene.character !== undefined && scene.character !== null) {
-        lines.push(`- 캐릭터: \`${img(scene.character)}\``);
-    }
-
-    // 캐릭터 (투명도 포함)
-    if (scene.characters?.center) {
-        const c = scene.characters.center;
-        lines.push(`- 캐릭터: \`${img(c.src)}\` @ ${c.opacity}`);
-    }
-
     if (scene.bgm) lines.push(`- BGM: \`${scene.bgm}\``);
-    if (scene.night) lines.push(`- 야간: true`);
     if (scene.type) lines.push(`- 타입: \`${scene.type}\``);
     if (scene.condition) lines.push(`- 조건: \`${scene.condition}\``);
     if (scene.excludeCondition) lines.push(`- 제외조건: \`${scene.excludeCondition}\``);
@@ -215,11 +203,31 @@ function formatScene(sceneId, scene, i18n) {
         if (entry.personality) lines.push(`- 성격: "${entry.personality}"`);
     }
 
-    // ── 대사 ──
+    // ── 캐릭터 + 대사 (흐름 뒤) ──
+    // 원본 순서: 배경 → BGM → 다음/분기 → (빈줄) → 캐릭터 → 대사
+
+    // 캐릭터 (단일)
+    if (scene.character !== undefined && scene.character !== null) {
+        lines.push('');
+        lines.push(`- 캐릭터: \`${img(scene.character)}\``);
+    } else if (scene.character === null && !scene.characters?.center) {
+        lines.push('');
+        lines.push(`- 캐릭터: \`없음\``);
+    }
+
+    // 캐릭터 (투명도 포함)
+    if (scene.characters?.center) {
+        const c = scene.characters.center;
+        lines.push('');
+        lines.push(`- 캐릭터: \`${img(c.src)}\` @ ${c.opacity}`);
+    }
 
     if (entry) {
         if (entry.text !== undefined) {
-            lines.push('');
+            // 캐릭터 줄이 없으면 빈줄 추가
+            if (scene.character === undefined && !scene.characters?.center) {
+                lines.push('');
+            }
             // name이 빈 문자열이면 '—'로 표시 (파서가 인식 가능하도록)
             const name = (entry.name === '' || entry.name === undefined) ? '—' : (entry.name || '{name}');
             if (entry.text === '') {

@@ -115,7 +115,7 @@ const _scenes = {
     },
     "after1_jealousy_dain_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "next": "after1_pre_miss"
     },
     "after1_jealousy_yuna_1": {

@@ -897,7 +897,7 @@ const _scenes = {
     },
     "minsu_warn_4_ins": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_warn_5"
     },
     "minsu_warn_1_ins": {
