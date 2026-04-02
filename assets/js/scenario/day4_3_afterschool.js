@@ -647,12 +647,12 @@ const _scenes = {
     "confess_dain_no_4_ins44": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "confess_dain_no_4_nurse_skip": {
+        "next": "confess_dain_no_4_nurse_skip"
+    },
+    "confess_dain_no_4_nurse_skip": {
         "background": "assets/images/background/nurse_room.png",
         "character": null,
         "next": "confess_dain_no_4_ins45"
-    },
-    "confess_dain_no_4_ins45"
     },
     "confess_dain_no_4_ins45": {
         "background": "assets/images/background/room_my.png",
