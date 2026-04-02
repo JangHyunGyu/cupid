@@ -1012,8 +1012,8 @@ html[lang="de"] #message {
     }
 
     #dialogue-box {
-        min-height: 160px;
-        padding: 25px 20px;
+        min-height: 80px;
+        padding: 12px 10px;
     }
 
     #message {
