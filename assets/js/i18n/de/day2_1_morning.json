@@ -213,7 +213,7 @@
   },
   "hidden_homeroom_d2_3": {
     "name": "Klassenlehrerin",
-    "text": "Hab dein altes Zeugnis gesehen. Deine Deutschnoten waren gut. Liest du gerne?"
+    "text": "Hab dein altes Zeugnis gesehen. Deine Koreanischnoten waren gut. Liest du gerne?"
   },
   "hidden_homeroom_d2_choice1": {
     "name": "{name}",
@@ -369,7 +369,7 @@
   },
   "hidden_homeroom_d2_3_ins2": {
     "name": "{name}",
-    "text": "*Romane. Dass eine Deutschlehrerin Romane liest, ist normal, aber warum scheint sie es ungern zuzugeben?*"
+    "text": "*Romane. Dass eine Koreanischlehrerin Romane liest, ist normal, aber warum scheint sie es ungern zuzugeben?*"
   },
   "hidden_homeroom_d2_3_ins3": {
     "name": "Klassenlehrerin",

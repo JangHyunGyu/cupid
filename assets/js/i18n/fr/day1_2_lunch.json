@@ -5,7 +5,7 @@
     },
     "lunch_start_2": {
         "name": "{name}",
-        "text": "*Je sors de la salle et le couloir grouille d’élèves. Aucune idée d’où aller. Kiosque ? Boutique ? Ou—*"
+        "text": "*Je sors de la salle et le couloir grouille d’élèves. Aucune idée d’où aller. Cantine ? Kiosque ? Ou—*"
     },
     "lunch_start_3": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "On dirait de l'auto-promo."
+        "text": "J'ai cru que c'était ton PR."
     },
     "lunch_dain_20": {
         "name": "Dain",

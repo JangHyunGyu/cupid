@@ -512,7 +512,7 @@
   },
   "day4_night_regret_msg_seo": {
     "name": "Seoyeon",
-    "text": "The breeze was nice today.\n...Next time, I'm expecting different words."
+    "text": "The breeze was nice today."
   },
   "day4_night_regret_msg_dain": {
     "name": "Dain",
@@ -520,7 +520,7 @@
   },
   "day4_night_regret_msg_yuna": {
     "name": "Yuna",
-    "text": "...Today.\nIt was okay."
+    "text": "...Today."
   },
   "day4_night_regret_msg": {
     "name": "{name}",

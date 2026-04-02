@@ -45,7 +45,7 @@
   },
   "wall_seo_10": {
     "name": "Seoyeon",
-    "text": "Unser Haus sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülersprecherin. Aber Mama und Papa sind seit einem Jahr Fremde unter einem Dach. Sie haben nur die Scheidungspapiere nicht eingereicht."
+    "text": "Unser Haus sieht von außen normal aus, oder? Großes Haus, schönes Auto, Tochter als Schülersprecherin."
   },
   "wall_seo_11": {
     "name": "Seoyeon",
@@ -359,7 +359,7 @@
   },
   "wall_dain_glimpse_3": {
     "name": "{name}",
-    "text": "*Yuna hat mir heute keine Nachricht geschrieben. — Yuna schreibt nie. Ob das normal ist oder nur heute so — weiß ich nicht.*"
+    "text": "*Yuna hat mir heute keine Nachricht geschrieben. — Es tut mir leid.*"
   },
   "wall_dain_glimpse_4": {
     "name": "{name}",
@@ -512,7 +512,7 @@
   },
   "day4_night_regret_msg_seo": {
     "name": "Seoyeon",
-    "text": "Der Wind war schön heute.\n...Nächstes Mal erwarte ich andere Worte."
+    "text": "Der Wind war schön heute."
   },
   "day4_night_regret_msg_dain": {
     "name": "Dain",
@@ -520,11 +520,11 @@
   },
   "day4_night_regret_msg_yuna": {
     "name": "Yuna",
-    "text": "...Heute.\nWar okay."
+    "text": "...Heute."
   },
   "day4_night_regret_msg": {
     "name": "{name}",
-    "text": "*Eine Nachricht auf dem Handy. „Heute hat Spaß gemacht. Hast du morgen auch Zeit?“*"
+    "text": "*Eine Nachricht auf dem Handy.*"
   },
   "day4_night_regret_reply": {
     "name": "{name}",

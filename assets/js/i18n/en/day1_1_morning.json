@@ -65,11 +65,11 @@
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "The president herself? I'm honored."
+        "text": "The president herself? That's too kind."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "Whether you're honored or not — that's for me to decide."
+        "text": "Whether it's too kind or not — that's for me to decide."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Brown bob cut. Wearing a volleyball team uniform. A voice bursting with energy. She's half out of her seat. The girl next to her pulls at her sleeve, but it's no use.*"
+        "text": "*Brown short cut. Wearing a volleyball team uniform. A voice bursting with energy. She's half out of her seat. The girl next to her pulls at her sleeve, but it's no use.*"
     },
     "classroom_dain_3": {
         "name": "Homeroom Teacher",

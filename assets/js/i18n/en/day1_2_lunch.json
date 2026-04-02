@@ -266,7 +266,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Sounded like a self-promotion pitch."
+        "text": "Sounded like a PR pitch."
     },
     "lunch_dain_20": {
         "name": "Dain",
@@ -434,7 +434,7 @@
     },
     "lunch_yuna_26": {
         "name": "{name}",
-        "text": "*'That was nice.' — Just those words lift my mood. This person's single word carries more weight than ten from anyone else.*"
+        "text": "*'That was nice.' — Just those words lift my mood. Her words carry weight precisely because she uses so few.*"
     },
     "lunch_end": {
         "name": "{name}",
