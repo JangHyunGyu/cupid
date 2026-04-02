@@ -549,7 +549,7 @@ const _scenes = {
         "next": "wall_dain_farewell_2"
     },
     "wall_dain_farewell_2": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "wall_dain_mention_1"
     },
@@ -591,7 +591,7 @@ const _scenes = {
         "next": "wall_dain_glimpse_1"
     },
     "wall_dain_skin60_1": {
-        "background": "assets/images/background/school_back.png",
+        "background": "assets/images/background/park.png",
         "character": "assets/images/characters/dain_shy.png",
         "next": "wall_dain_skin60_2"
     },
@@ -813,7 +813,7 @@ const _scenes = {
     },
     "wall_yuna_sub_2": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_sad.png",
+        "character": "assets/images/characters/yuna_smile.png",
         "setFlags": ["day4_yuna_wall_broken"],
         "next": "wall_yuna_glimpse_1"
     },

@@ -174,7 +174,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_yuna_c1_4": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch2_yuna_c1_5"
     },
     "lunch2_yuna_c1_5": {
@@ -575,7 +575,7 @@ Object.assign(SCENARIO[2], {
     },
     "lunch2_yuna_c1_9_ins": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_angry.png",
         "next": "lunch2_yuna_c1_10"
     },
     "lunch2_seo_13b_ins": {

@@ -432,13 +432,13 @@ const _scenes = {
         "next": "confess_dain_no_4_ins2"
     },
     "confess_dain_no_4_ins2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "confess_dain_no_4_ins3"
     },
     "confess_dain_no_4_ins3": {
-        "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "background": "assets/images/background/street.png",
+        "character": null,
         "next": "confess_dain_no_4_ins4"
     },
     "confess_dain_no_4_ins4": {
