@@ -11468,37 +11468,37 @@
     "after2_seo_skinship_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_skinship_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연의 손가락이 멈춘다. 아무 말도 안 하고 고개를 돌린다. — 심장이...",
+      "_ko_text_preview": "*서연의 손가락이 멈춘다. 아무 말도 안 하고 고개를 돌린다. — 숨이 잠깐 멈췄다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_skinship_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_skinship_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_skinship_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_skinship_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_skinship_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "after2_seo_skinship_3": {
@@ -16582,37 +16582,37 @@
     "night2_reply_yuna_7": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*세 번째 별? — 창문을 열고 밤하늘을 본다. 별이 보인다. 세 번째 ...",
+      "_ko_text_preview": "*세 번째 별? — 창문을 열고 밤하늘을 올려다본다. 세 번째가 어떤 건지는 모르겠다. 유나다운 수수께끼다....",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night2_reply_yuna_react_high": {
@@ -16798,37 +16798,37 @@
     "night2_flashback_3": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*그때 나는 '좋아해'를 한 달째 연습하고 있었다. 매일 밤 핸드폰 메모...",
+      "_ko_text_preview": "*그때 나는 매일 밤 핸드폰을 열었다. 메모장에 뭔가를 쓰다 지우기를 반복했다. — 매번 보내기 직전에 멈췄...",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night2_flashback_4": {
@@ -17482,37 +17482,37 @@
     "night2_reply_yuna_6_ins": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*세 번째 별? — 창문을 열고 밤하늘을 본다. 별이 보인다. 세 번째 ...",
+      "_ko_text_preview": "*세 번째 별? — 창문을 열고 밤하늘을 올려다본다. 세 번째가 어떤 건지는 모르겠다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_6_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_6_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_6_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_6_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_6_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night2_reply_yuna_6_ins2": {

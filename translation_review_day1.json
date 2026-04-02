@@ -4914,37 +4914,37 @@
     "lunch_seo_after_7": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_seo_after_7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*새끼손가락. — 별거 아닌 건데 눈을 못 떼겠다.*",
+      "_ko_text_preview": "*새끼손가락. — 별거 아닌 건데, 괜히 눈이 간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_seo_after_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_seo_after_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_2_lunch.json#lunch_seo_after_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_2_lunch.json#lunch_seo_after_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_seo_after_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "lunch_dain_1": {
@@ -7110,37 +7110,37 @@
     "lunch_yuna_26": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_yuna_26",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'좋았어.' — 두 글자가 심장에 닿는다. 이 사람의 한마디는 다른 사...",
+      "_ko_text_preview": "*'좋았어.' — 그 한마디에 괜히 기분이 좋아진다. 이 사람은 말이 적은 만큼 무겁다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_yuna_26",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_yuna_26",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_2_lunch.json#lunch_yuna_26",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_2_lunch.json#lunch_yuna_26",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_yuna_26",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "lunch_yuna_choice": {
@@ -13234,37 +13234,37 @@
     "night_seo_late_3": {
       "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_seo_late_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'찾으러 갈 거야'. — 심장이 한 박자 빨라졌다.*",
+      "_ko_text_preview": "*'찾으러 갈 거야'. — 핸드폰을 내려놓은 손이 멈춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_4_night.json#night_seo_late_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_4_night.json#night_seo_late_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_4_night.json#night_seo_late_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_4_night.json#night_seo_late_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_4_night.json#night_seo_late_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "night_yuna_late_1": {

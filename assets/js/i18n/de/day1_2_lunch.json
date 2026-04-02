@@ -186,7 +186,7 @@
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "Ihr kleiner Finger. — Nichts Besonderes, aber mein Blick bleibt hängen."
+        "text": "*Ihr kleiner Finger. — Nichts Besonderes, aber mein Blick bleibt hängen.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -434,7 +434,7 @@
     },
     "lunch_yuna_26": {
         "name": "{name}",
-        "text": "‚Das war schön.’ — Allein dieses Wort hebt meine Stimmung. Ein einziges Wort von ihr wiegt mehr als zehn von jedem anderen."
+        "text": "*‚Das war schön.' — Allein dieses Wort hebt meine Stimmung. Ein einziges Wort von ihr wiegt mehr als zehn von jedem anderen.*"
     },
     "lunch_end": {
         "name": "{name}",

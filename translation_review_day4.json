@@ -9020,37 +9020,37 @@
     "confess_seo_yes_6": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_yes_6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그 순간의 네가 진짜 서연인 것 같아서. 그 서연이 좋아해.",
+      "_ko_text_preview": "그때 네가 진짜 서연이었어. 나는 그 서연이 좋아.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_yes_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_3_afterschool.json#confess_seo_yes_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_3_afterschool.json#confess_seo_yes_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_3_afterschool.json#confess_seo_yes_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_yes_6",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "confess_seo_yes_7": {
@@ -11324,37 +11324,37 @@
     "confess_dain_yes_10_ins": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_10_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'엄청'. — 다인의 감정 표현은 단순하다. 근데 그 단순함이 진심의 ...",
+      "_ko_text_preview": "*'엄청'. — 다인은 늘 이렇다. 짧고 솔직하다. 그래서 믿긴다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_10_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_3_afterschool.json#confess_dain_yes_10_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_3_afterschool.json#confess_dain_yes_10_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_3_afterschool.json#confess_dain_yes_10_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_yes_10_ins",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "confess_dain_no_4_ins": {
@@ -14170,37 +14170,37 @@
     "wall_seo_pinky_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_pinky_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "약속할게. 울고 싶을 때, 나한테 울어도 돼.",
+      "_ko_text_preview": "울고 싶으면 나한테 연락해. 안 물어볼게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_pinky_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_seo_pinky_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_seo_pinky_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_seo_pinky_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_pinky_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "wall_seo_pinky_3": {
@@ -14320,31 +14320,31 @@
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_line_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_seo_line_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_seo_line_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_seo_line_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_line_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "text_updated_cringe_fix"
       }
     },
     "wall_seo_line_react_1": {

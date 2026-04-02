@@ -1,303 +1,303 @@
 {
-  "night3_start": {
-    "name": "{name}",
-    "text": "*部屋に戻った。重い一日だった。*"
-  },
-  "night3_start_2": {
-    "name": "{name}",
-    "text": "*スマホを見る。*"
-  },
-  "night3_faithful_check": {
-    "name": "{name}",
-    "text": "*メッセージが来ている。*"
-  },
-  "night3_faithful_msg_seo_1": {
-    "name": "ソヨン",
-    "text": "「今日見たの、秘密だよ」"
-  },
-  "night3_faithful_msg_seo_2": {
-    "name": "ソヨン",
-    "text": "「...でもまた来てもいいよ」"
-  },
-  "night3_faithful_msg_seo_3": {
-    "name": "{name}",
-    "text": "*「また来てもいいよ」。— この人にとってこれは「来て」と同じ言葉だ。*"
-  },
-  "night3_faithful_msg_yuna_1": {
-    "name": "{name}",
-    "text": "*ユナがメモの写真を送ってきた。ノートに書かれた一行。*"
-  },
-  "night3_faithful_msg_yuna_2": {
-    "name": "ユナ",
-    "text": "「あの小説、結末はまだ決めてない」"
-  },
-  "night3_faithful_msg_dain_1": {
-    "name": "ダイン",
-    "text": "「足首大丈夫かって聞くなら直接来て聞けよ笑」"
-  },
-  "night3_faithful_msg_dain_2": {
-    "name": "ダイン",
-    "text": "「あ、でもありがとう」"
-  },
-  "night3_faithful_msg_dain_3": {
-    "name": "{name}",
-    "text": "*「笑」で隠してるけど——本心が透けて見える。*"
-  },
-  "night3_dream_1": {
-    "name": "{name}",
-    "text": "*夢を見た。— 誰かと並んで歩いていた。*"
-  },
-  "night3_dream_2": {
-    "name": "{name}",
-    "text": "*顔は見えないのに、不思議と不安じゃなかった。*"
-  },
-  "night3_dream_3": {
-    "name": "{name}",
-    "text": "*いい夢だった。*"
-  },
-  "night3_cheat_msg_1": {
-    "name": "{name}",
-    "text": "*部屋に戻った。重い一日だった。スマホを見る。*"
-  },
-  "night3_cheat_msg_2": {
-    "name": "ソヨン",
-    "text": "「私にだけそうして」"
-  },
-  "night3_cheat_msg_3": {
-    "name": "ソヨン",
-    "text": "「...お願い」"
-  },
-  "night3_cheat_msg_4": {
-    "name": "ユナ",
-    "text": "「...全部知ってた」"
-  },
-  "night3_cheat_msg_5": {
-    "name": "ユナ",
-    "text": "*「誰の隣に立つのか。その選択がどんな意味を持つのか、真剣に考えてほしい」*"
-  },
-  "night3_cheat_msg_6": {
-    "name": "ユナ",
-    "text": "「...逃げないで。それだけ」"
-  },
-  "night3_cheat_msg_dain_1": {
-    "name": "ダイン",
-    "text": "「...笑 冗談だったらよかったのに」"
-  },
-  "night3_cheat_msg_7": {
-    "name": "{name}",
-    "text": "*ユナがメッセージを三通送ってきた。普段一通も送らない人が。— それだけ怒っているということだ。*"
-  },
-  "night3_nightmare_1": {
-    "name": "{name}",
-    "text": "*眠りに落ちた。— 夢。*"
-  },
-  "night3_nightmare_2": {
-    "name": "{name}",
-    "text": "*闇の中に立っている。何も見えない。*"
-  },
-  "night3_nightmare_3": {
-    "name": "ソヨン",
-    "text": "「私にだけそうしたじゃない…」"
-  },
-  "night3_nightmare_4": {
-    "name": "ユナ",
-    "text": "「嘘つかないでって言ったのに。」"
-  },
-  "night3_nightmare_5": {
-    "name": "ダイン",
-    "text": "「来るって言ったのに。待ってたのに。」"
-  },
-  "night3_nightmare_6": {
-    "name": "{name}",
-    "text": "*三方向から手が見える。闇の中でかすかに。*"
-  },
-  "night3_nightmare_choice": {
-    "name": "{name}",
-    "text": "*誰の手を取るか。*",
-    "choices": [
-      "ソヨンの手を取る",
-      "ユナの手を取る",
-      "ダインの手を取る"
-    ]
-  },
-  "night3_nightmare_seo": {
-    "name": "{name}",
-    "text": "*ソヨンの方に手を伸ばした。あの微笑みが見えた瞬間——消えた。*"
-  },
-  "night3_nightmare_yuna": {
-    "name": "{name}",
-    "text": "*ユナの方に足を踏み出した。指先が触れる寸前——消えた。*"
-  },
-  "night3_nightmare_dain": {
-    "name": "{name}",
-    "text": "*ダインの方に走った。つかんだと思った瞬間——消えた。*"
-  },
-  "night3_nightmare_end": {
-    "name": "{name}",
-    "text": "*手を伸ばした。— 届かない。*"
-  },
-  "night3_nightmare_end_2": {
-    "name": "{name}",
-    "text": "*全員消えて、残ったのは闇だけ。*"
-  },
-  "night3_nightmare_end_3": {
-    "name": "{name}",
-    "text": "*— 汗だくになって目を覚ました。午前3時。天井が見える。*"
-  },
-  "night3_nightmare_end_4": {
-    "name": "{name}",
-    "text": "*僕は何をしたんだ。*"
-  },
-  "night3_cheat_reflect_1": {
-    "name": "{name}",
-    "text": "*スマホを取り出した。ギャラリー。またスクロールする。——ソジョンの写真。*"
-  },
-  "night3_cheat_reflect_2": {
-    "name": "{name}",
-    "text": "*笑っている。集合写真の中で僕を見て笑っている。何も知らないまま。*"
-  },
-  "night3_cheat_reflect_3": {
-    "name": "{name}",
-    "text": "*今回は後悔しないように言おうとした。この学校では正直に生きようと。*"
-  },
-  "night3_cheat_reflect_4": {
-    "name": "{name}",
-    "text": "*前の学校：何も言えなくて後悔。*"
-  },
-  "night3_cheat_reflect_5": {
-    "name": "{name}",
-    "text": "*——逃げない。今度こそ、一人だけに。*"
-  },
-  "night3_faithful_reflect_1": {
-    "name": "{name}",
-    "text": "*目を開けた。朝の光がカーテンの隙間から差し込んでいる。——今日の夢は良かった。*"
-  },
-  "night3_faithful_reflect_2": {
-    "name": "{name}",
-    "text": "*スマホを取り出した。ギャラリーを開いた。ソジョンの写真。——スクロールを止めて、長押しした。*"
-  },
-  "night3_faithful_reflect_3": {
-    "name": "{name}",
-    "text": "*消したらあの時の感情まで消える気がして残していた。でも今は未練じゃなくて記録だ。——役目は終わった。*"
-  },
-  "night3_faithful_reflect_4": {
-    "name": "{name}",
-    "text": "*今度は違う。一人にだけ言う。残りには——はっきり伝える。*"
-  },
-  "night3_end": {
-    "name": "{name}",
-    "text": "*夜が更けていく...*"
-  },
-  "night3_faithful_msg_yuna_2_ins": {
-    "name": "{name}",
-    "text": "*結末を書いたら終わってしまうから。——ユナはこの物語が終わることを恐れている。*"
-  },
-  "night3_cheat_msg_3_ins": {
-    "name": "{name}",
-    "text": "*ソヨンが「お願い」という言葉を使う。——この人の辞書にはなかった言葉だ。それだけ崩れている。*"
-  },
-  "night3_cheat_msg_4_ins": {
-    "name": "ユナ",
-    "text": "*誰の隣に立つのか。その重さを分かってほしい。*"
-  },
-  "night3_nightmare_2_ins": {
-    "name": "{name}",
-    "text": "*ソヨンの声が聞こえる。*"
-  },
-  "night3_nightmare_3_ins": {
-    "name": "{name}",
-    "text": "*ユナの声。*"
-  },
-  "night3_nightmare_4_ins": {
-    "name": "{name}",
-    "text": "*ダインの声。*"
-  },
-  "night3_dream_2_ins": {
-    "name": "{name}",
-    "text": "*今度こそ後悔なく伝えようと思った。この学校では正直に生きようと。*"
-  },
-  "night3_cheat_reflect_3_ins": {
-    "name": "{name}",
-    "text": "*ソジョンの時と正反対なのに、結果は同じだ。誰かが傷つく。*"
-  },
-  "night3_cheat_reflect_3_ins2": {
-    "name": "{name}",
-    "text": "*前の学校：何も言えなくて後悔。*"
-  },
-  "night3_cheat_reflect_3_ins3": {
-    "name": "{name}",
-    "text": "*この学校：みんなに言って後悔。*"
-  },
-  "night3_cheat_reflect_3_ins4": {
-    "name": "{name}",
-    "text": "*結局、問題は「言うか言わないか」じゃなくて——「誰に」なんだ。*"
-  },
-  "night3_cheat_reflect_3_ins5": {
-    "name": "{name}",
-    "text": "*ミンスが言った。「断るのも愛だよ」*"
-  },
-  "night3_cheat_reflect_3_ins6": {
-    "name": "{name}",
-    "text": "*ソヨンが言った。「唯一の答えか、何でもないか」*"
-  },
-  "night3_cheat_reflect_3_ins7": {
-    "name": "{name}",
-    "text": "*ユナが言った。「逃げないで」*"
-  },
-  "night3_cheat_reflect_5_ins": {
-    "name": "{name}",
-    "text": "*夢を見た。——誰かと並んで歩いていた。顔は見えないのに、不思議と不安じゃなかった。*"
-  },
-  "night3_faithful_reflect_2_ins": {
-    "name": "{name}",
-    "text": "*「削除しますか？」*"
-  },
-  "night3_faithful_reflect_2_ins2": {
-    "name": "{name}",
-    "text": "*——削除した。*"
-  },
-  "night3_faithful_reflect_2_ins3": {
-    "name": "{name}",
-    "text": "*「削除しますか？」*"
-  },
-  "night3_faithful_reflect_2_ins4": {
-    "name": "{name}",
-    "text": "*1秒。指が止まる。——ミンスの言葉が蘇る。「断るのも愛だよ」*"
-  },
-  "night3_faithful_reflect_2_ins5": {
-    "name": "{name}",
-    "text": "*……そうだ。まず自分が過去を断らないと。*"
-  },
-  "night3_faithful_reflect_2_ins6": {
-    "name": "{name}",
-    "text": "*——削除した。*"
-  },
-  "night3_faithful_reflect_3_ins": {
-    "name": "{name}",
-    "text": "*ミンスが言った。「断るのも愛だよ」その通りだ。前の学校で、ソジョンは僕を断る機会すらなかった。僕が口を閉ざしたから。——それがソジョンにとっても、僕にとっても、一番不親切な結末だった。*"
-  },
-  "night3_faithful_reflect_4_ins": {
-    "name": "{name}",
-    "text": "*1秒。指が止まる。——ミンスの言葉が蘇る。「断るのも愛だよ」*"
-  },
-  "night3_faithful_reflect_4_ins2": {
-    "name": "{name}",
-    "text": "*……断ること。そうだ、やらなきゃいけないのは分かってる。分かってるのに。*"
-  },
-  "night3_faithful_reflect_4_ins3": {
-    "name": "{name}",
-    "text": "*指が動かない。削除ボタンの上に置いたまま。*"
-  },
-  "night3_faithful_reflect_4_ins4": {
-    "name": "{name}",
-    "text": "*前の学校でもこうだった。分かっていてできなかった。今回も——分かっていて、できない。*"
-  },
-  "night3_faithful_reflect_4_ins5": {
-    "name": "{name}",
-    "text": "*スマホを閉じた。写真はそのままだ。*"
-  },
-  "night3_faithful_reflect_4_ins6": {
-    "name": "{name}",
-    "text": "*……昔も今も、何一つ手放せない臆病者でしかない。*"
-  }
+    "night3_start": {
+        "name": "{name}",
+        "text": "*部屋に戻った。重い一日だった。*"
+    },
+    "night3_start_2": {
+        "name": "{name}",
+        "text": "*スマホを見る。*"
+    },
+    "night3_faithful_check": {
+        "name": "{name}",
+        "text": "*メッセージが来ている。*"
+    },
+    "night3_faithful_msg_seo_1": {
+        "name": "ソヨン",
+        "text": "「今日見たの、秘密だよ」"
+    },
+    "night3_faithful_msg_seo_2": {
+        "name": "ソヨン",
+        "text": "「...でもまた来てもいいよ」"
+    },
+    "night3_faithful_msg_seo_3": {
+        "name": "{name}",
+        "text": "*「また来てもいいよ」。— この人にとってこれは「来て」と同じ言葉だ。*"
+    },
+    "night3_faithful_msg_yuna_1": {
+        "name": "{name}",
+        "text": "*ユナがメモの写真を送ってきた。ノートに書かれた一行。*"
+    },
+    "night3_faithful_msg_yuna_2": {
+        "name": "ユナ",
+        "text": "「あの小説、結末はまだ決めてない」"
+    },
+    "night3_faithful_msg_dain_1": {
+        "name": "ダイン",
+        "text": "「足首大丈夫かって聞くなら直接来て聞けよ笑」"
+    },
+    "night3_faithful_msg_dain_2": {
+        "name": "ダイン",
+        "text": "「あ、でもありがとう」"
+    },
+    "night3_faithful_msg_dain_3": {
+        "name": "{name}",
+        "text": "*「笑」で隠してるけど——本心が透けて見える。*"
+    },
+    "night3_dream_1": {
+        "name": "{name}",
+        "text": "*夢を見た。— 誰かと並んで歩いていた。*"
+    },
+    "night3_dream_2": {
+        "name": "{name}",
+        "text": "*顔は見えないのに、不思議と不安じゃなかった。*"
+    },
+    "night3_dream_3": {
+        "name": "{name}",
+        "text": "*いい夢だった。*"
+    },
+    "night3_cheat_msg_1": {
+        "name": "{name}",
+        "text": "*部屋に戻った。重い一日だった。スマホを見る。*"
+    },
+    "night3_cheat_msg_2": {
+        "name": "ソヨン",
+        "text": "「私にだけそうして」"
+    },
+    "night3_cheat_msg_3": {
+        "name": "ソヨン",
+        "text": "「...お願い」"
+    },
+    "night3_cheat_msg_4": {
+        "name": "ユナ",
+        "text": "「...全部知ってた」"
+    },
+    "night3_cheat_msg_5": {
+        "name": "ユナ",
+        "text": "*「誰の隣に立つのか。その選択がどんな意味を持つのか、真剣に考えてほしい」*"
+    },
+    "night3_cheat_msg_6": {
+        "name": "ユナ",
+        "text": "「...逃げないで。それだけ」"
+    },
+    "night3_cheat_msg_dain_1": {
+        "name": "ダイン",
+        "text": "「...笑 冗談だったらよかったのに」"
+    },
+    "night3_cheat_msg_7": {
+        "name": "{name}",
+        "text": "*ユナがメッセージを三通送ってきた。普段一通も送らない人が。— それだけ怒っているということだ。*"
+    },
+    "night3_nightmare_1": {
+        "name": "{name}",
+        "text": "*眠りに落ちた。— 夢。*"
+    },
+    "night3_nightmare_2": {
+        "name": "{name}",
+        "text": "*闇の中に立っている。何も見えない。*"
+    },
+    "night3_nightmare_3": {
+        "name": "ソヨン",
+        "text": "私にだけそうしたじゃない…"
+    },
+    "night3_nightmare_4": {
+        "name": "ユナ",
+        "text": "「嘘つかないでって言ったのに。」"
+    },
+    "night3_nightmare_5": {
+        "name": "ダイン",
+        "text": "「来るって言ったのに。待ってたのに。」"
+    },
+    "night3_nightmare_6": {
+        "name": "{name}",
+        "text": "*三方向から手が見える。闇の中でかすかに。*"
+    },
+    "night3_nightmare_choice": {
+        "name": "{name}",
+        "text": "*誰の手を取るか。*",
+        "choices": [
+            "ソヨンの手を取る",
+            "ユナの手を取る",
+            "ダインの手を取る"
+        ]
+    },
+    "night3_nightmare_seo": {
+        "name": "{name}",
+        "text": "*ソヨンの方に手を伸ばした。あの微笑みが見えた瞬間——消えた。*"
+    },
+    "night3_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*ユナの方に足を踏み出した。指先が触れる寸前——消えた。*"
+    },
+    "night3_nightmare_dain": {
+        "name": "{name}",
+        "text": "*ダインの方に走った。つかんだと思った瞬間——消えた。*"
+    },
+    "night3_nightmare_end": {
+        "name": "{name}",
+        "text": "*手を伸ばした。— 届かない。*"
+    },
+    "night3_nightmare_end_2": {
+        "name": "{name}",
+        "text": "*全員消えて、残ったのは闇だけ。*"
+    },
+    "night3_nightmare_end_3": {
+        "name": "{name}",
+        "text": "*— 汗だくになって目を覚ました。午前3時。天井が見える。*"
+    },
+    "night3_nightmare_end_4": {
+        "name": "{name}",
+        "text": "*僕は何をしたんだ。*"
+    },
+    "night3_cheat_reflect_1": {
+        "name": "{name}",
+        "text": "*スマホを取り出した。ギャラリー。またスクロールする。——ソジョンの写真。*"
+    },
+    "night3_cheat_reflect_2": {
+        "name": "{name}",
+        "text": "*笑っている。集合写真の中で僕を見て笑っている。何も知らないまま。*"
+    },
+    "night3_cheat_reflect_3": {
+        "name": "{name}",
+        "text": "*今回は後悔しないように言おうとした。この学校では正直に生きようと。*"
+    },
+    "night3_cheat_reflect_4": {
+        "name": "{name}",
+        "text": "*前の学校：何も言えなくて後悔。*"
+    },
+    "night3_cheat_reflect_5": {
+        "name": "{name}",
+        "text": "*——逃げない。今度こそ、一人だけに。*"
+    },
+    "night3_faithful_reflect_1": {
+        "name": "{name}",
+        "text": "*目を開けた。朝の光がカーテンの隙間から差し込んでいる。——今日の夢は良かった。*"
+    },
+    "night3_faithful_reflect_2": {
+        "name": "{name}",
+        "text": "*スマホを取り出した。ギャラリーを開いた。ソジョンの写真。——スクロールを止めて、長押しした。*"
+    },
+    "night3_faithful_reflect_3": {
+        "name": "{name}",
+        "text": "*消したらあの時の感情まで消える気がして残していた。でも今は未練じゃなくて記録だ。——役目は終わった。*"
+    },
+    "night3_faithful_reflect_4": {
+        "name": "{name}",
+        "text": "*今度は違う。一人にだけ言う。残りには——はっきり伝える。*"
+    },
+    "night3_end": {
+        "name": "{name}",
+        "text": "*夜が更けていく...*"
+    },
+    "night3_faithful_msg_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*結末を書いたら終わってしまうから。——ユナはこの物語が終わることを恐れている。*"
+    },
+    "night3_cheat_msg_3_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが「お願い」という言葉を使う。——この人の辞書にはなかった言葉だ。それだけ崩れている。*"
+    },
+    "night3_cheat_msg_4_ins": {
+        "name": "ユナ",
+        "text": "*誰の隣に立つのか。その重さを分かってほしい。*"
+    },
+    "night3_nightmare_2_ins": {
+        "name": "{name}",
+        "text": "*ソヨンの声が聞こえる。*"
+    },
+    "night3_nightmare_3_ins": {
+        "name": "{name}",
+        "text": "*ユナの声。*"
+    },
+    "night3_nightmare_4_ins": {
+        "name": "{name}",
+        "text": "*ダインの声。*"
+    },
+    "night3_dream_2_ins": {
+        "name": "{name}",
+        "text": "*今度こそ後悔なく伝えようと思った。この学校では正直に生きようと。*"
+    },
+    "night3_cheat_reflect_3_ins": {
+        "name": "{name}",
+        "text": "*ソジョンの時と正反対なのに、結果は同じだ。誰かが傷つく。*"
+    },
+    "night3_cheat_reflect_3_ins2": {
+        "name": "{name}",
+        "text": "*前の学校：何も言えなくて後悔。*"
+    },
+    "night3_cheat_reflect_3_ins3": {
+        "name": "{name}",
+        "text": "*この学校：みんなに言って後悔。*"
+    },
+    "night3_cheat_reflect_3_ins4": {
+        "name": "{name}",
+        "text": "*結局、問題は「言うか言わないか」じゃなくて——「誰に」なんだ。*"
+    },
+    "night3_cheat_reflect_3_ins5": {
+        "name": "{name}",
+        "text": "*ミンスが言った。「断るのも愛だよ」*"
+    },
+    "night3_cheat_reflect_3_ins6": {
+        "name": "{name}",
+        "text": "*ソヨンが言った。「唯一の答えか、何でもないか」*"
+    },
+    "night3_cheat_reflect_3_ins7": {
+        "name": "{name}",
+        "text": "*ユナが言った。「逃げないで」*"
+    },
+    "night3_cheat_reflect_5_ins": {
+        "name": "{name}",
+        "text": "*夢を見た。——誰かと並んで歩いていた。顔は見えないのに、不思議と不安じゃなかった。*"
+    },
+    "night3_faithful_reflect_2_ins": {
+        "name": "{name}",
+        "text": "*「削除しますか？」*"
+    },
+    "night3_faithful_reflect_2_ins2": {
+        "name": "{name}",
+        "text": "*——削除した。*"
+    },
+    "night3_faithful_reflect_2_ins3": {
+        "name": "{name}",
+        "text": "*「削除しますか？」*"
+    },
+    "night3_faithful_reflect_2_ins4": {
+        "name": "{name}",
+        "text": "*1秒。指が止まる。——ミンスの言葉が蘇る。「断るのも愛だよ」*"
+    },
+    "night3_faithful_reflect_2_ins5": {
+        "name": "{name}",
+        "text": "*……そうだ。まず自分が過去を断らないと。*"
+    },
+    "night3_faithful_reflect_2_ins6": {
+        "name": "{name}",
+        "text": "*——削除した。*"
+    },
+    "night3_faithful_reflect_3_ins": {
+        "name": "{name}",
+        "text": "*ミンスが言った。「断るのも愛だよ」その通りだ。前の学校で、ソジョンは僕を断る機会すらなかった。僕が口を閉ざしたから。——それがソジョンにとっても、僕にとっても、一番不親切な結末だった。*"
+    },
+    "night3_faithful_reflect_4_ins": {
+        "name": "{name}",
+        "text": "*1秒。指が止まる。——ミンスの言葉が蘇る。「断るのも愛だよ」*"
+    },
+    "night3_faithful_reflect_4_ins2": {
+        "name": "{name}",
+        "text": "*……断ること。そうだ、やらなきゃいけないのは分かってる。分かってるのに。*"
+    },
+    "night3_faithful_reflect_4_ins3": {
+        "name": "{name}",
+        "text": "*指が動かない。削除ボタンの上に置いたまま。*"
+    },
+    "night3_faithful_reflect_4_ins4": {
+        "name": "{name}",
+        "text": "*前の学校でもこうだった。分かっていてできなかった。今回も——分かっていて、できない。*"
+    },
+    "night3_faithful_reflect_4_ins5": {
+        "name": "{name}",
+        "text": "*スマホを閉じた。写真はそのままだ。*"
+    },
+    "night3_faithful_reflect_4_ins6": {
+        "name": "{name}",
+        "text": "*……昔も今も、何一つ手放せない臆病者でしかない。*"
+    }
 }

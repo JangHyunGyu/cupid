@@ -317,7 +317,7 @@
     },
     "confess_dain_yes_10_ins": {
         "name": "{name}",
-        "text": "‚Total.' — Dain ist immer so. Kurz und ehrlich. Deshalb glaubt man ihr."
+        "text": "*‚Total.' — Dain ist immer so. Kurz und ehrlich. Deshalb glaubt man ihr.*"
     },
     "confess_dain_no_4_ins": {
         "name": "{name}",

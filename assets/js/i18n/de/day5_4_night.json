@@ -1,1164 +1,1164 @@
 {
-  "ending_start": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_affinity_check": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_aff_check_seo": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_aff_check_yuna": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_aff_check_dain": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_check": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_seo": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_yuna": {
-    "name": "System",
-    "text": ""
-  },
-  "ending_confessed_aff_dain": {
-    "name": "System",
-    "text": ""
-  },
-  "perfect_seo_1": {
-    "name": "{name}",
-    "text": "*Seoyeons Dachterrasse. Sie steht zwischen den Pflanzen, die sie selbst gezogen hat.*"
-  },
-  "perfect_seo_2": {
-    "name": "{name}",
-    "text": "*Zum ersten Mal nimmt sie die Brille ab — und weint.*"
-  },
-  "perfect_seo_3": {
-    "name": "Seoyeon",
-    "text": "...Dieses Gesicht — das zeige ich nur dir."
-  },
-  "perfect_seo_4": {
-    "name": "Seoyeon",
-    "text": "*Der Wind auf dem Dach weht.* Auch nach dem Abschluss werde ich herkommen. Diese Pflanzen wachsen nur, wenn du da bist."
-  },
-  "perfect_seo_5": {
-    "name": "{name}",
-    "text": "*Seoyeon streckt die Hand aus. Nicht den kleinen Finger. Die ganze Hand.*"
-  },
-  "perfect_yuna_1": {
-    "name": "{name}",
-    "text": "*Der Bibliotheksanbau, der geheime Dachboden. Yuna reicht eine Kurzgeschichte.*"
-  },
-  "perfect_yuna_2": {
-    "name": "{name}",
-    "text": "*Der Titel ist der Name des Protagonisten.*"
-  },
-  "perfect_yuna_3": {
-    "name": "Yuna",
-    "text": "...Sag mir, was du denkst, wenn du fertig bist. Das ist meine Antwort."
-  },
-  "perfect_yuna_4": {
-    "name": "{name}",
-    "text": "*Der letzte Satz der Geschichte: 'Es gab jemanden, der nie verschwand. Dank dieser Person beschloss auch ich, nicht zu verschwinden.'*"
-  },
-  "perfect_yuna_5": {
-    "name": "{name}",
-    "text": "*Yuna hielt sich fest. Wortlos. Mondlicht fiel durch die zerbrochenen Fenster — tätowierte Arme schlangen sich um meine Taille, silbernes Haar lehnte an meiner Schulter. Zum ersten Mal füllte Yunas leises Atmen das Versteck.*"
-  },
-  "perfect_dain_1": {
-    "name": "{name}",
-    "text": "*Die Turnhalle. Dain schlägt ihren letzten Aufschlag. Während sie ihre Bandagen löst.*"
-  },
-  "perfect_dain_2": {
-    "name": "Dain",
-    "text": "Das ist der letzte Wurf. — Aber es ist auch ein Anfang."
-  },
-  "perfect_dain_3": {
-    "name": "Dain",
-    "text": "Bin ich auch abseits des Spielfelds ein guter Mensch?"
-  },
-  "perfect_dain_4": {
-    "name": "{name}",
-    "text": "Auf dem Feld und daneben."
-  },
-  "perfect_dain_5": {
-    "name": "{name}",
-    "text": "*Dain sprang. Ich war nicht bereit. Der Volleyball rollte über den Boden — und in der Turnhalle im Abendlicht blieben nur zwei Schatten übrig.*"
-  },
-  "perfect_epilogue_1_seo": {
-    "name": "{name}",
-    "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
-  },
-  "perfect_epilogue_1_yuna": {
-    "name": "{name}",
-    "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
-  },
-  "perfect_epilogue_1_dain": {
-    "name": "{name}",
-    "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
-  },
-  "perfect_epilogue_2_seo": {
-    "name": "{name}",
-    "text": "*Tag der Universitätseinschreibung. Eine Nachricht auf meinem Handy. 'Hab heute die Pflanze gegossen. — Aber komm bald nach Hause.'*"
-  },
-  "perfect_epilogue_2_yuna": {
-    "name": "{name}",
-    "text": "*Yunas erster Roman wurde veröffentlicht. Die Widmung: 'Dem dritten Stern.'*"
-  },
-  "perfect_epilogue_2_dain": {
-    "name": "{name}",
-    "text": "*Dain wurde Sportkommentatorin. Vor der Kamera lächelt sie. Aber diesmal ist es ein echtes Lächeln.*"
-  },
-  "perfect_epilogue_3_seo": {
-    "name": "{name}",
-    "text": "*Seoyeon hat sich verändert. Sie weiß, dass es in Ordnung ist, nicht perfekt zu sein. Die Tage, an denen sie lächelt ohne in den Spiegel zu schauen, sind mehr geworden.*"
-  },
-  "perfect_epilogue_3_yuna": {
-    "name": "{name}",
-    "text": "*Yuna redet immer noch wenig. Aber ihre Sätze sind länger geworden. Nur mir gegenüber.*"
-  },
-  "perfect_epilogue_3_dain": {
-    "name": "{name}",
-    "text": "*Manchmal sagt sie, ihr Knie tut weh. Dann setze ich mich einfach neben sie und sage nichts. So machen wir das.*"
-  },
-  "perfect_epilogue_4_seo": {
-    "name": "System",
-    "text": "─── PERFECT END (Seoyeon) ───"
-  },
-  "perfect_epilogue_4_yuna": {
-    "name": "System",
-    "text": "─── PERFECT END (Yuna) ───"
-  },
-  "perfect_epilogue_4_dain": {
-    "name": "System",
-    "text": "─── PERFECT END (Dain) ───"
-  },
-  "bitter_seo_1": {
-    "name": "{name}",
-    "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles. Ich ging an der Schule vorbei.*"
-  },
-  "bitter_seo_2": {
-    "name": "Seoyeon",
-    "text": "...Ich dachte, es würde klappen. Wir waren wohl beide einen Schritt zu kurz."
-  },
-  "bitter_seo_3": {
-    "name": "{name}",
-    "text": "*Ich verließ das Café. Es regnet. Seoyeons Blick hinter der Brille war trocken. Keine Gelassenheit, kein Zittern. Nur — die Augen von jemandem, der gekommen ist, um abzuschließen.*"
-  },
-  "bitter_yuna_1": {
-    "name": "{name}",
-    "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles. Ich ging an der Schule vorbei.*"
-  },
-  "bitter_yuna_2": {
-    "name": "Yuna",
-    "text": "...Manchmal denke ich an dich. Wenn ich die Bibliothek rieche. Ich hatte damals mehr sagen sollen."
-  },
-  "bitter_yuna_3": {
-    "name": "{name}",
-    "text": "*Ich ging durch das Schultor. Es regnet. — Yunas letzter Zettel, im Briefkasten. Kurz. Wie immer. Aber diesmal ist es nicht Kürze. Es gibt einfach nichts mehr zu schreiben.*"
-  },
-  "bitter_dain_1": {
-    "name": "{name}",
-    "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles. Ich ging an der Schule vorbei.*"
-  },
-  "bitter_dain_2": {
-    "name": "Dain",
-    "text": "Es hat Spaß gemacht, echt! ...Aber ich glaube, Spaß war alles. Das ist irgendwie schade."
-  },
-  "bitter_dain_3": {
-    "name": "{name}",
-    "text": "*Ich verließ die Turnhalle. Es regnet. — Die Ausrufezeichen waren zurück, aber der letzte Satz hatte keines. Wenn Dain mit einem Punkt endet, bedeutet das, dass keine Energie mehr übrig ist, um sie zu teilen.*"
-  },
-  "bitter_epilogue_1": {
-    "name": "{name}",
-    "text": "*Nach dem Abschluss. Der Kontakt wurde seltener. Einmal im Monat wurde zu einmal alle zwei Monate, Nachrichten ungelesen zu lassen wurde zur Gewohnheit, und eines Tages — als ich schreiben wollte und nicht wusste was — wusste ich, dass es vorbei war.*"
-  },
-  "bitter_epilogue_2": {
-    "name": "{name}",
-    "text": "*Die Erinnerung an fünf Tage bleibt. Es tut nicht weh. Es war nur — nicht genug. Für uns beide.*"
-  },
-  "bitter_epilogue_3": {
-    "name": "System",
-    "text": "─── BITTERSWEET END ───"
-  },
-  "true_seo_1": {
-    "name": "{name}",
-    "text": "*Seoyeons Zimmer. Ihre Eltern sind unterwegs. Das Zimmer ist ordentlich — zu ordentlich. Ein Zimmer ohne Emotion.*"
-  },
-  "true_seo_2": {
-    "name": "{name}",
-    "text": "*— Bis auf eine Sache. Auf dem Schreibtisch reihen sich Topfpflanzen, die Seoyeon selbst gezogen hat.*"
-  },
-  "true_seo_3": {
-    "name": "Seoyeon",
-    "text": "Vor dir habe ich das Gefühl, nicht perfekt sein zu müssen."
-  },
-  "true_seo_4": {
-    "name": "{name}",
-    "text": "Du musstest nie perfekt sein."
-  },
-  "true_seo_5": {
-    "name": "Seoyeon",
-    "text": "...Ich weiß. Aber es hat fünf Tage gedauert, das zu glauben."
-  },
-  "true_seo_6": {
-    "name": "{name}",
-    "text": "*Seoyeon lächelt. Ihre Mundwinkel bewegen sich von allein.*"
-  },
-  "true_seo_7": {
-    "name": "Seoyeon",
-    "text": "...Bleib bei mir."
-  },
-  "true_seo_8": {
-    "name": "{name}",
-    "text": "*Wir hakten die kleinen Finger ineinander. Die Gewohnheit von Tag 1, das Versprechen von Tag 4, und jetzt. — Derselbe Finger, eine dritte Bedeutung.*"
-  },
-  "true_yuna_1": {
-    "name": "{name}",
-    "text": "*Der Anbau der Bibliothek. Tiefer als der geheime Leseort — ein Dachboden. Ein Raum, von dessen Existenz ich nicht einmal wusste.*"
-  },
-  "true_yuna_2": {
-    "name": "Yuna",
-    "text": "Nur ich wusste von diesem Ort."
-  },
-  "true_yuna_3": {
-    "name": "{name}",
-    "text": "*Yuna öffnet das kleine Fenster. Sterne sind zu sehen.*"
-  },
-  "true_yuna_4": {
-    "name": "Yuna",
-    "text": "Jetzt du auch."
-  },
-  "true_yuna_5": {
-    "name": "{name}",
-    "text": "Der dritte Stern?"
-  },
-  "true_yuna_6": {
-    "name": "Yuna",
-    "text": "...Du hast dich erinnert."
-  },
-  "true_yuna_7": {
-    "name": "{name}",
-    "text": "*Das Rätsel von Tag 2. Der dritte Stern. — Der Beweis, dass Yuna mich von Anfang an beobachtet hat.*"
-  },
-  "true_dain_1": {
-    "name": "{name}",
-    "text": "*Die Turnhalle. Die gleichen Notlichter wie gestern. Seite an Seite auf der Matte liegend.*"
-  },
-  "true_dain_2": {
-    "name": "{name}",
-    "text": "*Dain nimmt {name}s Hand — zieht sie zu sich und legt sie auf ihre linke Brust. Ohne ein Wort.*"
-  },
-  "true_dain_3": {
-    "name": "{name}",
-    "text": "*Der Herzschlag unter meinen Fingerspitzen ist deutlich spürbar.*"
-  },
-  "true_dain_4": {
-    "name": "{name}",
-    "text": ""
-  },
-  "true_dain_5": {
-    "name": "{name}",
-    "text": "...Schnell."
-  },
-  "true_dain_6": {
-    "name": "Dain",
-    "text": "*halb das Gesicht mit dem Volleyball versteckend* Warum starrst du mich so an... Das ist nicht fair."
-  },
-  "true_dain_7": {
-    "name": "{name}",
-    "text": "Hab ich nicht."
-  },
-  "true_dain_8": {
-    "name": "Dain",
-    "text": "Hast du wohl!! ...Aber du darfst weiter schauen."
-  },
-  "true_seo_bridge": {
-    "name": "{name}",
-    "text": "*Seoyeons Versprechen liegt noch an meinen Fingerspitzen.*"
-  },
-  "true_yuna_bridge": {
-    "name": "{name}",
-    "text": "*Yunas Sterne sind noch da, direkt vor mir.*"
-  },
-  "true_dain_bridge": {
-    "name": "{name}",
-    "text": "*Dains Lachen klingt noch in meinen Ohren.*"
-  },
-  "true_epilogue_1_seo": {
-    "name": "{name}",
-    "text": "*Es waren fünf Tage.*"
-  },
-  "true_epilogue_1_yuna": {
-    "name": "{name}",
-    "text": "*Es waren fünf Tage.*"
-  },
-  "true_epilogue_1_dain": {
-    "name": "{name}",
-    "text": "*Es waren fünf Tage.*"
-  },
-  "true_epilogue_2": {
-    "name": "{name}",
-    "text": "*Die Uniform war steif, die Kirschblüten ließen mich niesen, und ich wusste nicht, was ich vor dem Schultor tun sollte.*"
-  },
-  "true_epilogue_3": {
-    "name": "{name}",
-    "text": "*Aber rückblickend — ich glaube, es war schon in dem Moment entschieden, als sich unsere Blicke zum ersten Mal trafen. Ich brauchte nur fünf Tage, um es zuzugeben.*"
-  },
-  "true_epilogue_4_seo": {
-    "name": "{name}",
-    "text": "*Ihre Familie ist nicht besser geworden. Die Anrufe ihrer Mutter sind immer noch kalt, und das einstudierte Lächeln hat nicht aufgehört. — Aber jetzt gibt es jemanden, dem sie ihr ungeübtes Gesicht zeigen kann. Nicht mehr.*"
-  },
-  "true_epilogue_4_yuna": {
-    "name": "{name}",
-    "text": "*Die Person, die gegangen ist, ist nicht zurückgekommen. Die Nummer des Seniors fehlt immer noch, und der Platz in der Bibliotheksecke ist immer noch leer. — Aber jetzt gibt es jemanden, mit dem sie mit ihrer Stimme sprechen kann, nicht nur mit Notizen. Nicht mehr.*"
-  },
-  "true_epilogue_4_dain": {
-    "name": "{name}",
-    "text": "*Ihr Knie ist nicht geheilt. Sie wickelt immer noch jeden Morgen den Verband, und die Alarm-Notiz hat immer noch zwei Ausrufezeichen. — Aber jetzt gibt es jemanden, der zuhört, wenn ihre Sätze mit einem Punkt enden. Nicht mehr.*"
-  },
-  "true_epilogue_7": {
-    "name": "System",
-    "text": "─── TRUE LOVE END ───"
-  },
-  "day5_ending_good": {
-    "name": "{name}",
-    "text": "*Vielleicht habe ich jemandem Hoffnung gegeben, nur um sie wieder zu nehmen. Es tut mir leid.*"
-  },
-  "good_1": {
-    "name": "{name}",
-    "text": "*Sie kam einen Schritt auf mich zu.*"
-  },
-  "good_1b": {
-    "name": "{name}",
-    "text": ""
-  },
-  "good_1c": {
-    "name": "{name}",
-    "text": ""
-  },
-  "good_1_seo": {
-    "name": "Seoyeon",
-    "text": "Dass du woanders hingeschaut hast, wirst du mir ein Leben lang zurückzahlen. — Mit Zinsen."
-  },
-  "good_1_yuna": {
-    "name": "Yuna",
-    "text": "...Du bist wirklich begriffsstutzig. Aber weil du zurückgekommen bist, kann ich es verzeihen."
-  },
-  "good_1_dain": {
-    "name": "Dain",
-    "text": "Hey, ich war echt sauer, weißt du? ...Aber am Ende bist du zu mir gekommen. Das reicht mir."
-  },
-  "good_2_seo": {
-    "name": "{name}",
-    "text": "*Der Kirschblütenweg. Seoyeon steht einen Schritt voraus. Sie dreht sich um.*"
-  },
-  "good_3_seo": {
-    "name": "{name}",
-    "text": "*Eine Kirschblüte landet auf Seoyeons Haar. Ich überlege, ob ich sie wegwische — und sie neigt zuerst den Kopf.*"
-  },
-  "good_4_seo": {
-    "name": "{name}",
-    "text": "*Sie tut so, als wäre sie perfekt, aber ich war es auch nicht.*"
-  },
-  "good_5_seo": {
-    "name": "{name}",
-    "text": "*Die Kirschblüten blühen auch nächstes Jahr. Wir gingen zusammen.*"
-  },
-  "good_2_yuna": {
-    "name": "{name}",
-    "text": "*Das Dach. Yuna lehnt am Geländer. Der Wind weht ihr durch die Haare.*"
-  },
-  "good_3_yuna": {
-    "name": "{name}",
-    "text": "*Yuna reicht mir einen Zettel. \"Verirr dich beim nächsten Mal nicht.\" — Kurz. Und warm.*"
-  },
-  "good_4_yuna": {
-    "name": "{name}",
-    "text": "*Ich jagte dem Schatten einer verschwundenen Person hinterher.*"
-  },
-  "good_5_yuna": {
-    "name": "{name}",
-    "text": "*Ein einzelner Stern ist zu sehen. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
-  },
-  "good_2_dain": {
-    "name": "{name}",
-    "text": "*Vor dem Schultor. Dain wirft einen Volleyball hoch und wartet.*"
-  },
-  "good_3_dain": {
-    "name": "{name}",
-    "text": "*Dain wirft den Volleyball. Ich fange ihn. — So versöhnt sich dieser Mensch.*"
-  },
-  "good_4_dain": {
-    "name": "{name}",
-    "text": "*Sie lief weiter, auch wenn ihre Knie schmerzten.*"
-  },
-  "good_5_dain": {
-    "name": "{name}",
-    "text": "*Die Sonne geht hinter dem Schultor unter. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
-  },
-  "good_5_cg_seo": {
-    "name": "System",
-    "text": "─── GOOD END ───"
-  },
-  "good_5_cg_yuna": {
-    "name": "System",
-    "text": "─── GOOD END ───"
-  },
-  "good_5_cg_dain": {
-    "name": "System",
-    "text": "─── GOOD END ───"
-  },
-  "day5_ending_mayhem": {
-    "name": "{name}",
-    "text": "*Alle drei gefielen mir. Aufrichtig. — Und genau deshalb konnte ich mich für niemanden entscheiden.*"
-  },
-  "mayhem_1": {
-    "name": "{name}",
-    "text": "*Seoyeon streifte im Flur an mir vorbei. Sie drehte den Kopf nicht. — Natürlich.*"
-  },
-  "mayhem_2": {
-    "name": "{name}",
-    "text": "*Yunas Platz war leer. Ein einzelner Zettel auf dem Tisch. 'Es hat Spaß gemacht.' Der Punkt war das Ende.*"
-  },
-  "mayhem_3": {
-    "name": "{name}",
-    "text": "*Dain lächelte. Strahlend wie immer. — Aber die Ausrufezeichen fehlten. Pass auf dich auf. Das erste Mal, dass ich Dain einen Satz mit einem Punkt beenden hörte, war ausgerechnet ein Abschied.*"
-  },
-  "mayhem_4": {
-    "name": "{name}",
-    "text": "*Ich sah den dreien hinterher. Keine drehte sich um. — Das war die Antwort.*"
-  },
-  "mayhem_5": {
-    "name": "{name}",
-    "text": "*Der Frühling geht zu Ende. Die Kirschblüten fallen. Niemand ist an meiner Seite.*"
-  },
-  "mayhem_6": {
-    "name": "{name}",
-    "text": ""
-  },
-  "mayhem_7": {
-    "name": "System",
-    "text": "─── MAYHEM END ───"
-  },
-  "day5_ending_harem": {
-    "name": "{name}",
-    "text": "*Ich mag euch alle. — Als diese Worte meinen Mund verließen, erstarrten alle drei Gesichter gleichzeitig.*"
-  },
-  "harem_1": {
-    "name": "{name}",
-    "text": "*Seoyeon lächelte zuerst. ...Gut. Wenigstens bist du ehrlich. Es war keine Einbildung, dass ich Zähneknirschen hinter diesem Lächeln hörte.*"
-  },
-  "harem_2": {
-    "name": "Yuna",
-    "text": "...Idiot."
-  },
-  "harem_3": {
-    "name": "{name}",
-    "text": "*Dain boxte mir mit der Faust gegen die Schulter. Es tat weh. Spinnst du? ...Aber ich hab mich in dich verliebt, obwohl ich wusste, dass du so bist. Selbst schuld. Hmpf.*"
-  },
-  "harem_4": {
-    "name": "{name}",
-    "text": "*Montag ist Seoyeon. Mittwoch ist Yuna. Freitag ist Dain. Dazwischen häufen sich die Lügen, um nicht aufzufliegen. Ich dachte, es wäre süß — aber es schnürt mir die Kehle zu.*"
-  },
-  "harem_5": {
-    "name": "{name}",
-    "text": "*Dieses Gleichgewicht wird brechen. Jemand wird zuerst weinen. Wenn das passiert, ist diese Geschichte keine Romanze mehr — sondern eine Katastrophe.*"
-  },
-  "harem_6": {
-    "name": "{name}",
-    "text": "*Und trotzdem lächeln heute alle drei. Selbst im Wissen um den Untergang von morgen — kann ich das Heute nicht loslassen.*"
-  },
-  "harem_7": {
-    "name": "{name}",
-    "text": ""
-  },
-  "harem_8": {
-    "name": "System",
-    "text": "─── HAREM END ───"
-  },
-  "day5_ending_confess_fail": {
-    "name": "{name}",
-    "text": "*Ich habe es gesagt. Ich habe gesprochen. — Aber was zurückkam, war Stille.*"
-  },
-  "confess_fail_1": {
-    "name": "{name}",
-    "text": "*\"...Danke. Wirklich. Aber ich bin noch nicht so weit — fünf Tage waren wohl zu kurz.\"*"
-  },
-  "confess_fail_2": {
-    "name": "{name}",
-    "text": "*Es ist keine Ablehnung. Es ist das Timing. — Das Ergebnis von fünf Tagen, die nicht gereicht haben, um näher zu kommen.*"
-  },
-  "confess_fail_3": {
-    "name": "{name}",
-    "text": ""
-  },
-  "confess_fail_4": {
-    "name": "{name}",
-    "text": ""
-  },
-  "confess_fail_5": {
-    "name": "System",
-    "text": "—- CONFESS FAIL END —-"
-  },
-  "day5_ending_friend": {
-    "name": "{name}",
-    "text": "*Am Ende konnte ich es nicht sagen.*"
-  },
-  "friend_1": {
-    "name": "{name}",
-    "text": "*Am Ende konnte ich es nicht sagen.*"
-  },
-  "friend_2": {
-    "name": "{name}",
-    "text": "*An meiner alten Schule war es genauso. Schon wieder.*"
-  },
-  "friend_3": {
-    "name": "{name}",
-    "text": ""
-  },
-  "friend_4": {
-    "name": "{name}",
-    "text": "*Beim Verlassen des Schultors ist eine Nachricht auf meinem Handy. 'Danke für heute lol' — Der Ton eines Freundes. Ein perfekt freundschaftlicher Ton.*"
-  },
-  "friend_5": {
-    "name": "{name}",
-    "text": "*Ich tippte eine Antwort. 'Dir auch danke.' — Nach dem Senden starrte ich auf den Bildschirm. Zwei Zeilen Gespräch. Ich lächle, doch innerlich ist es seltsam kalt.*"
-  },
-  "friend_6": {
-    "name": "{name}",
-    "text": "Wir werden weiter so Nachrichten schreiben. Mit Emojis, ab und zu essen gehen, fragen ob was los ist und sagen, dass nichts los ist. — Direkt nebeneinander, aber eine Linie, die man nicht überschreiten kann. Das ist Freundschaft."
-  },
-  "friend_7": {
-    "name": "{name}",
-    "text": "*...Auch an dieser Schule konnte ich es nicht sagen.*"
-  },
-  "friend_8": {
-    "name": "{name}",
-    "text": "*Abschlusstag. Ich scrolle durch die Handygalerie. Wo einmal Sojeongs Foto war, ist jetzt ein Gruppenfoto mit ihr.*"
-  },
-  "friend_9": {
-    "name": "{name}",
-    "text": "*Wieder stehe ich neben ihr, trage die perfekte Maske des 'Freundes', und lächle.*"
-  },
-  "friend_10": {
-    "name": "{name}",
-    "text": "*Ich öffne die Notizen-App. 'Ich muss dir was sagen.' — Der Cursor blinkt. Wie vor drei Jahren. Löschtaste gedrückt halten. Gelöscht.*"
-  },
-  "friend_11": {
-    "name": "{name}",
-    "text": "*Die Schule wechseln, davonlaufen — am Ende hat sich nichts an mir verändert.*"
-  },
-  "friend_12": {
-    "name": "System",
-    "text": "─── FRIEND END ───"
-  },
-  "day5_ending_alone": {
-    "name": "{name}",
-    "text": "*Ich gehe durch das Schultor. Das Handy summt. — Niemand. Akkuwarnung.*"
-  },
-  "alone_1": {
-    "name": "{name}",
-    "text": "*Fünf Tage. Auf jemanden zugegangen, auf andere nicht zugehen können, und am Ende nicht wählen können.*"
-  },
-  "alone_2": {
-    "name": "{name}",
-    "text": "*An der alten Schule bereute ich, nicht gesprochen zu haben. An dieser Schule — bereue ich, niemanden zum Reden gefunden zu haben? Nein. Gefunden, aber nicht wählen können. Nein, nicht den Mut gehabt zu wählen.*"
-  },
-  "alone_3": {
-    "name": "{name}",
-    "text": "*Die Kirschblüten treiben jetzt im Wind davon.*"
-  },
-  "alone_4": {
-    "name": "{name}",
-    "text": "*...Allein zu sein ist keine Strafe. Es ist nur — still. Stiller als erwartet.*"
-  },
-  "alone_5": {
-    "name": "System",
-    "text": "─── ALONE END ───"
-  },
-  "day5_credits": {
-    "name": "",
-    "text": ""
-  },
-  "day5_ending_restart": {
-    "name": "System",
-    "text": "",
-    "choices": [
-      "Von vorne beginnen"
-    ]
-  },
-  "hidden_perfect_homeroom_check": {},
-  "hidden_perfect_homeroom_1": {
-    "name": "{name}",
-    "text": "*Die Abschlussfeier ist vorbei. Ich bin allein im leeren Klassenzimmer. Die Kreidemarkierungen an der Tafel sind noch nicht gelöscht.*"
-  },
-  "hidden_perfect_homeroom_1b": {
-    "name": "{name}",
-    "text": "*Die Tür geht auf. — Sie ist es. Beiger Cardigan. Einen Dokumentenumschlag in der Hand.*"
-  },
-  "hidden_perfect_homeroom_2": {
-    "name": "Klassenlehrerin",
-    "text": "Herzlichen Glückwunsch zum Abschluss. ...Der Papierkram ist erledigt. Meine Arbeit als deine Lehrerin ist vorbei."
-  },
-  "hidden_perfect_homeroom_2b": {
-    "name": "{name}",
-    "text": "Ist das Manuskript noch in Ihrer Schreibtischschublade?"
-  },
-  "hidden_perfect_homeroom_2c": {
-    "name": "Klassenlehrerin",
-    "text": "*Sie hält kurz inne. Will noch etwas sagen, schließt dann den Mund.* ...Pass auf dich auf."
-  },
-  "hidden_perfect_homeroom_3": {
-    "name": "{name}",
-    "text": "*Drei Jahre später.*"
-  },
-  "hidden_perfect_homeroom_3b": {
-    "name": "{name}",
-    "text": "*Die Terrasse eines Cafés. Kirschblüten wehen. Beim Eintreten — sehe ich vertrautes braunes Wellenhaar am Fensterplatz. Eine Leinenjacke statt des Cardigans.*"
-  },
-  "hidden_perfect_homeroom_3c": {
-    "name": "Klassenlehrerin",
-    "text": "...Oh. Ich bin auch überrascht. *Sie stellt ihre Kaffeetasse ab.* Möchtest du dich setzen?"
-  },
-  "hidden_perfect_homeroom_3e": {
-    "name": "Klassenlehrerin",
-    "text": "*Sie schmunzelt.* Habe aufgehört zu unterrichten. Schreibe nur noch. Teilzeit im Café. — Und du?"
-  },
-  "hidden_perfect_homeroom_3f": {
-    "name": "Klassenlehrerin",
-    "text": "...Können wir uns wiedersehen? Ich komme jeden Donnerstag hierher."
-  },
-  "hidden_perfect_homeroom_3g": {
-    "name": "{name}",
-    "text": "*Aus dem 'nächsten Mal' wurde das übernächste und wieder das nächste. Jeden Donnerstag derselbe Platz. Als der Barista fragte 'Paartisch?', konnte keiner von uns antworten. An einem Donnerstag. Statt ins Café gingen wir durch die Straßen. Nebeneinander. Beide taten so, als bemerkten wir nicht, dass sich unsere Schatten überlappten.*"
-  },
-  "hidden_perfect_homeroom_4b": {
-    "name": "Klassenlehrerin",
-    "text": "*Sie bleibt plötzlich in der Buchhandlung stehen.* ...Ich habe mein Manuskript fertig. Willst du es lesen?"
-  },
-  "hidden_perfect_homeroom_4c": {
-    "name": "{name}",
-    "text": "*Ich ging nach Hause und las es. Die ganze Nacht. — Die Art, wie die Hauptfigur sprach, kam mir bekannt vor. Zu bekannt.*"
-  },
-  "hidden_perfect_homeroom_4d": {
-    "name": "Klassenlehrerin",
-    "text": "*Nächster Donnerstag, im Café. Sie rührte ihren Kaffee länger als üblich.* ...Und, wie war's?"
-  },
-  "hidden_perfect_homeroom_4e": {
-    "name": "{name}",
-    "text": "*Nächster Donnerstag. Ich wartete nicht vor dem Café. — Ich wartete vor dem Blumenladen.*"
-  },
-  "hidden_perfect_homeroom_4f": {
-    "name": "{name}",
-    "text": "*Ich reichte ihr den Strauß.* Das ist kein pädagogisches Interesse. Nicht von meiner Seite."
-  },
-  "hidden_perfect_homeroom_4g": {
-    "name": "Klassenlehrerin",
-    "text": "*Nimmt den Strauß und starrt ihn lange an. Ihre Hände zittern. — Sie lächelt.* ...Ich auch."
-  },
-  "hidden_perfect_homeroom_ending_title": {
-    "name": "",
-    "text": "─── Klassenlehrerin PERFECT END ───"
-  },
-  "hidden_perfect_homeroom_5": {},
-  "hidden_perfect_nurse_check": {},
-  "hidden_perfect_nurse_1": {
-    "name": "{name}",
-    "text": "*Die Abschlussfeier ist vorbei. Ich öffnete die Tür zum Krankenzimmer. Leer. Ein Pflaster auf dem Schreibtisch. 'Komm zu mir. Adresse auf der Rückseite.' — Ohne Herz diesmal.*"
-  },
-  "hidden_perfect_nurse_2": {
-    "name": "Schulkrankenschwester",
-    "text": "*Die Person, die die Tür öffnete, trägt keinen weißen Kittel — Strickjacke, barfuß.* ...Du bist gekommen. Ich hätte nicht gedacht, dass du wirklich kommst."
-  },
-  "hidden_perfect_nurse_3": {
-    "name": "{name}",
-    "text": "*Nebeneinander auf dem Wohnzimmersofa. Die Sonne geht hinter dem Fenster unter. Statt eines Pflasters berühren sich die Finger.*"
-  },
-  "hidden_perfect_nurse_3b": {
-    "name": "Schulkrankenschwester",
-    "text": "*Lehnt sich an mich.* ...Keine Ausreden mehr nötig. Kein Patient, kein Schüler."
-  },
-  "hidden_perfect_nurse_4": {
-    "name": "Schulkrankenschwester",
-    "text": "*Ihre Hand greift nach meiner Krawatte. Nicht spielerisch. Ihre Augen sind ernst.* ...Heute Nacht lasse ich dich nicht gehen."
-  },
-  "hidden_perfect_nurse_4b": {
-    "name": "{name}",
-    "text": "*Morgen. Licht sickert durch die Vorhänge. Atmen neben mir. — Die Person, die drei Minuten brauchte, um ein Pflaster zu kleben, schläft jetzt mit meiner Hand in ihrer.*"
-  },
-  "hidden_perfect_nurse_5": {
-    "name": "Schulkrankenschwester",
-    "text": "*Öffnet die Augen. Lächelt.* ...Tut dir was weh? Soll ich nachschauen? *— Kein Scherz. Diesmal nicht.*"
-  },
-  "hidden_perfect_nurse_5b": {
-    "name": "{name}",
-    "text": "*Einfach — jemand, bei dem ich sein will. Hier.*"
-  },
-  "hidden_perfect_nurse_ending_title": {
-    "name": "",
-    "text": "─── Schulkrankenschwester PERFECT END ───"
-  },
-  "hidden_true_homeroom_1": {
-    "name": "{name}",
-    "text": "*Abschlusstag. — Die Zeit ist vergangen. Die Uniform ist nicht mehr steif.*"
-  },
-  "hidden_true_homeroom_2": {
-    "name": "{name}",
-    "text": "*Das leere Klassenzimmer. Das, in dem sie geschrieben hat. — Die Klassenlehrerin wartet. In Freizeitkleidung.*"
-  },
-  "hidden_true_homeroom_3": {
-    "name": "Klassenlehrerin",
-    "text": "Glückwunsch zum Abschluss."
-  },
-  "hidden_true_homeroom_4": {
-    "name": "Klassenlehrerin",
-    "text": "...Das. Du hast nicht 'Frau Lehrerin' gesagt. Zum ersten Mal."
-  },
-  "hidden_true_homeroom_5": {
-    "name": "Klassenlehrerin",
-    "text": "Ich hab das Manuskript fertig. — Weil du mein erster Leser warst. Ich sagte eine Zeile und du kamst mit drei Seiten. *Schmunzelt* Eine Kreativschreib-Lehrerin, die wegen der Rezension eines Schülers fast weint — das bleibt unser Geheimnis."
-  },
-  "hidden_true_homeroom_6": {
-    "name": "Klassenlehrerin",
-    "text": "...Nur eins. ...Lass uns Kaffee trinken gehen. Diesmal echten, keinen Saft."
-  },
-  "hidden_true_homeroom_7": {
-    "name": "{name}",
-    "text": "Gerne."
-  },
-  "hidden_true_homeroom_8": {
-    "name": "Klassenlehrerin",
-    "text": "...Ich sollte das nicht tun."
-  },
-  "hidden_true_homeroom_ending_title": {
-    "name": "",
-    "text": "─── Klassenlehrerin TRUE LOVE END ───"
-  },
-  "hidden_true_nurse_1": {
-    "name": "{name}",
-    "text": "*Abschlusstag. Beim Rausgehen — ein Pflaster an der Tür des Krankenzimmers.*"
-  },
-  "hidden_true_nurse_2": {
-    "name": "{name}",
-    "text": "*'Glückwunsch. Ich warte im Café.' — Unter dem Pflaster eine kleine Karte. Die Schulkrankenschwester sitzt im Café. Nicht im weißen Kittel — sondern in einem elfenbeinfarbenen Kleid. Ohne ihre übliche Brille, das braune Haar offen.*"
-  },
-  "hidden_true_nurse_3": {
-    "name": "Schulkrankenschwester",
-    "text": "Glückwunsch zum Abschluss. ...Ab heute kannst du mich duzen."
-  },
-  "hidden_true_nurse_3_ins": {
-    "name": "{name}",
-    "text": "Warum?"
-  },
-  "hidden_true_nurse_4": {
-    "name": "Schulkrankenschwester",
-    "text": "Weißt du, am ersten Tag, als du kamst. Ich hab deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen'. Das war ein Witz."
-  },
-  "hidden_true_nurse_5": {
-    "name": "Schulkrankenschwester",
-    "text": "...Aber jetzt ist es kein Witz."
-  },
-  "hidden_true_nurse_6": {
-    "name": "Schulkrankenschwester",
-    "text": "Eine Lehrerin sollte keine Gefühle für einen Schüler entwickeln. Wusste ich. — Deshalb hab ich alles in Witze verpackt. Aber du hast immer durchgeschaut."
-  },
-  "hidden_true_nurse_7": {
-    "name": "Schulkrankenschwester",
-    "text": "...Du bist der Erste, der mich durchschaut hat."
-  },
-  "hidden_true_nurse_8": {
-    "name": "Schulkrankenschwester",
-    "text": "Jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden."
-  },
-  "hidden_true_nurse_ending_title": {
-    "name": "",
-    "text": "─── Schulkrankenschwester TRUE LOVE END ───"
-  },
-  "hidden_good_homeroom_1": {
-    "name": "Klassenlehrerin",
-    "text": "*Sie wartete vor der Schule.* Glückwunsch zum Abschluss."
-  },
-  "hidden_good_homeroom_2": {
-    "name": "{name}",
-    "text": "*Beim Händeschütteln — etwas gleitet in meine Hand. Eine gefaltete Notiz.*"
-  },
-  "hidden_good_homeroom_3": {
-    "name": "{name}",
-    "text": "*Die Schule verlassend. 'Wenn das Manuskript fertig ist, melde ich mich. — An meinen ersten Leser.' Eine Telefonnummer.*"
-  },
-  "hidden_good_homeroom_4": {
-    "name": "{name}",
-    "text": "*Ihre Hand hielt etwa drei Sekunden länger. Zu lang für einen Händedruck, zu kurz für ein Geständnis.*"
-  },
-  "hidden_good_homeroom_ending_title": {
-    "name": "",
-    "text": "─── Klassenlehrerin GOOD END ───"
-  },
-  "hidden_good_nurse_1": {
-    "name": "Schulkrankenschwester",
-    "text": "Oh, ein Absolvent."
-  },
-  "hidden_good_nurse_2": {
-    "name": "Schulkrankenschwester",
-    "text": "Vitamine. — Pass an der Uni auf dich auf. ...Medizinisches Interesse. Diesmal wirklich."
-  },
-  "hidden_good_nurse_3": {
-    "name": "{name}",
-    "text": "*Das Krankenzimmer verlassend. Im Deckel, winzige Schrift. 'Ruf an, wenn du krank bist. Ruf auch an, wenn nicht. — ♥'*"
-  },
-  "hidden_good_nurse_4": {
-    "name": "{name}",
-    "text": "*Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.*"
-  },
-  "hidden_good_nurse_ending_title": {
-    "name": "",
-    "text": "─── Schulkrankenschwester GOOD END ───"
-  },
-  "perfect_dain_2b": {
-    "name": "{name}",
-    "text": "*Kein Ausrufezeichen. Zum ersten Mal. — Dain spricht über einen Anfang, der nicht Volleyball ist.*"
-  },
-  "perfect_dain_3b": {
-    "name": "{name}",
-    "text": "*Dain legt den Volleyball auf dem Spielfeld ab. Sie dreht sich um und lächelt. Ein Lächeln ohne Ausrufezeichen.*"
-  },
-  "perfect_epilogue_bridge_seo": {
-    "name": "System",
-    "text": "*Epilog — Ein Jahr später*"
-  },
-  "perfect_epilogue_bridge_yuna": {
-    "name": "System",
-    "text": "*Epilog — Ein Jahr später*"
-  },
-  "perfect_epilogue_bridge_dain": {
-    "name": "System",
-    "text": "*Epilog — Ein Jahr später*"
-  },
-  "true_seo_6b": {
-    "name": "Seoyeon",
-    "text": "Ich musste immer lächeln. Aber vor dir will ich einfach ich selbst sein."
-  },
-  "true_seo_7b": {
-    "name": "{name}",
-    "text": "*Seoyeon streckt ihren kleinen Finger aus.*"
-  },
-  "true_yuna_6b": {
-    "name": "Yuna",
-    "text": "Geh nicht. Bleib heute Nacht hier."
-  },
-  "true_dain_2b": {
-    "name": "{name}",
-    "text": "*Schnell. Eine Geschwindigkeit, die keine Worte braucht.*"
-  },
-  "true_dain_8b": {
-    "name": "{name}",
-    "text": "*Das Ausrufezeichen ist zurück. — Aber diesmal ist es ein echtes.*"
-  },
-  "good_1_yuna_b": {
-    "name": "{name}",
-    "text": "*Yuna reicht mir einen Zettel. „Verirr dich nächstes Mal nicht.“ — Kurz. Und warm.*"
-  },
-  "good_epilogue_1": {
-    "name": "{name}",
-    "text": "Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind."
-  },
-  "good_epilogue_2": {
-    "name": "{name}",
-    "text": "Fühlte sich wie ein Umweg an, aber am Ende war es hier."
-  },
-  "good_epilogue_3": {
-    "name": "{name}",
-    "text": "Unbeholfen ist okay. Es ist schließlich unser erstes Mal."
-  },
-  "good_epilogue_1_yuna": {
-    "name": "{name}",
-    "text": "Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind."
-  },
-  "good_epilogue_2_yuna": {
-    "name": "{name}",
-    "text": "Fühlte sich wie ein Umweg an, aber am Ende war es hier."
-  },
-  "good_epilogue_3_yuna": {
-    "name": "{name}",
-    "text": "Unbeholfen ist okay. Es ist schließlich unser erstes Mal."
-  },
-  "good_epilogue_1_dain": {
-    "name": "{name}",
-    "text": "Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind."
-  },
-  "good_epilogue_2_dain": {
-    "name": "{name}",
-    "text": "Fühlte sich wie ein Umweg an, aber am Ende war es hier."
-  },
-  "good_epilogue_3_dain": {
-    "name": "{name}",
-    "text": "Unbeholfen ist okay. Es ist schließlich unser erstes Mal."
-  },
-  "confess_fail_cg_seo": {
-    "name": "{name}",
-    "text": ""
-  },
-  "confess_fail_cg_yuna": {
-    "name": "{name}",
-    "text": ""
-  },
-  "confess_fail_cg_dain": {
-    "name": "{name}",
-    "text": ""
-  },
-  "hidden_perfect_homeroom_ep1": {
-    "name": "{name}",
-    "text": "*Wir verließen das Café an diesem Tag nicht. Bis zum Sonnenuntergang. — Alle Worte, die wir vor vier Jahren im Klassenzimmer nicht sagen konnten, kamen endlich heraus.*"
-  },
-  "hidden_perfect_homeroom_ep2": {
-    "name": "{name}",
-    "text": "*Das Donnerstags-Café wurde unser Café. Das Personal fragt nicht mehr 'Pärchentisch?' Sie führen uns einfach zu unserem Platz.*"
-  },
-  "hidden_perfect_homeroom_ep3": {
-    "name": "{name}",
-    "text": "*Das Manuskript wurde veröffentlicht. Kein Name in der Widmung. Nur eine Zeile: 'Drei Seiten Feedback aus der Schreibtischschublade — dort begann diese Geschichte.'*"
-  },
-  "hidden_perfect_homeroom_ep4": {
-    "name": "{name}",
-    "text": "*Manchmal sagt sie 'Ich war deine Lehrerin' und ich antworte 'Ich war dein Schüler.' Wir lachen beide. — Weil wir jetzt einfach zwei Menschen sind.*"
-  },
-  "hidden_perfect_nurse_ep1": {
-    "name": "{name}",
-    "text": "*Morgen. Ein Pflaster klebt am Küchentisch. Das heutige Menü steht drauf. — Ihre Version eines Notizzettels.*"
-  },
-  "hidden_perfect_nurse_ep2": {
-    "name": "{name}",
-    "text": "*Sie kehrte ans Universitätskrankenhaus zurück. Diesmal nennen die Patienten sie beim Namen. — Frau Dr. Lee.*"
-  },
-  "hidden_perfect_nurse_ep3": {
-    "name": "{name}",
-    "text": "*Der Rosmarintopf ist ans Fenster umgezogen. Die sonnige Seite. — Jemand mit Schürze statt weißem Kittel gießt ihn.*"
-  },
-  "hidden_perfect_nurse_ep4": {
-    "name": "{name}",
-    "text": "*Die Pflaster sind noch in der Schublade. Auch wenn es keinen Grund mehr gibt. — Wer keine Ausreden mehr braucht, kann die Gewohnheit trotzdem nicht ablegen.*"
-  },
-  "perfect_seo_1_ins": {
-    "name": "{name}",
-    "text": "*Zum ersten Mal nimmt sie die Brille ab — und weint.*"
-  },
-  "perfect_seo_5_ins": {
-    "name": "{name}",
-    "text": "*Der Wind auf dem Dach weht.*"
-  },
-  "true_seo_7_ins": {
-    "name": "{name}",
-    "text": "*Wir hakten die kleinen Finger ein. Die Gewohnheit von Tag 1, das Versprechen von Tag 4, und jetzt. — Derselbe Finger, dritte Bedeutung.*"
-  },
-  "true_yuna_2_ins": {
-    "name": "{name}",
-    "text": "*Yuna klettert die kleine Dachbodenleiter hoch. Es gibt eine Luke nach oben. — Als sie sich öffnet, weht eine Brise herein.*"
-  },
-  "true_yuna_2_ins2": {
-    "name": "{name}",
-    "text": "*Über dem Dachboden war ein Dach. Das Dach des Bibliotheksanbaus. — Ein geheimer Durchgang, den niemand kennt.*"
-  },
-  "true_yuna_2_ins3": {
-    "name": "{name}",
-    "text": "*Yuna lehnt sich ans Geländer. Sterne sind zu sehen.*"
-  },
-  "true_yuna_5_ins": {
-    "name": "{name}",
-    "text": "*Yuna hält inne. — Lächelt. Ein lautloses Lächeln, das ich noch nie gesehen habe.*"
-  },
-  "hidden_true_homeroom_5_ins": {
-    "name": "{name}",
-    "text": "*Tag der Abschlussfeier. — Die Zeit ist vergangen.*"
-  },
-  "hidden_true_homeroom_5_ins2": {
-    "name": "{name}",
-    "text": "*Die Uniform ist nicht mehr steif. Nein — heute ist der Tag, an dem ich sie ablege.*"
-  },
-  "hidden_true_homeroom_2_ins": {
-    "name": "{name}",
-    "text": "*Keine Strickjacke, kein Klemmbrett. Ein gemütlicher Pullover und langer Rock. — Alltagskleidung.*"
-  },
-  "hidden_true_homeroom_3_ins": {
-    "name": "{name}",
-    "text": "Danke."
-  },
-  "hidden_true_homeroom_3_ins2": {
-    "name": "Klassenlehrerin",
-    "text": "...Das."
-  },
-  "hidden_true_homeroom_4_ins": {
-    "name": "{name}",
-    "text": "*Es war unbewusst. — In dem Moment, als ich den Abschluss hatte, fiel der Titel ab.*"
-  },
-  "hidden_true_homeroom_4_ins2": {
-    "name": "{name}",
-    "text": "*Sie zieht einen Umschlag hervor. Diesmal nicht braun — weiß.*"
-  },
-  "hidden_true_homeroom_4_ins3": {
-    "name": "Klassenlehrerin",
-    "text": "Ich habe das Manuskript fertiggestellt. — Ich konnte es schreiben, weil du mein erster Leser warst."
-  },
-  "hidden_true_homeroom_4_ins4": {
-    "name": "{name}",
-    "text": "Hat meine Rezension geholfen?"
-  },
-  "hidden_true_homeroom_4_ins5": {
-    "name": "Klassenlehrerin",
-    "text": "Ich habe um eine Zeile gebeten und du kamst mit drei Seiten zurück. *Schmunzelt* Eine Kreativschreib-Lehrerin, die wegen der Rezension eines Schülers fast weint — das bleibt unser Geheimnis."
-  },
-  "hidden_true_homeroom_4_ins6": {
-    "name": "{name}",
-    "text": "*Sie blickt aus dem Fenster. Kirschblüten fallen.*"
-  },
-  "hidden_true_homeroom_4_ins7": {
-    "name": "Klassenlehrerin",
-    "text": "*Dreht sich vom Fenster weg* ...Nur eines."
-  },
-  "hidden_true_homeroom_6_ins": {
-    "name": "{name}",
-    "text": "*Von Saft zu Kaffee. — Von Schüler zu Erwachsenem. Die Grenze wurde nicht überschritten — sie ist verschwunden.*"
-  },
-  "hidden_true_homeroom_7_ins": {
-    "name": "{name}",
-    "text": "*Sie lächelt. Kein trockenes Lächeln — das Lächeln von jemandem, der ein sieben Jahre altes Manuskript vollendet hat.*"
-  },
-  "hidden_true_homeroom_7_ins2": {
-    "name": "Klassenlehrerin",
-    "text": "...Eigentlich sollte ich das nicht tun. *— Ihre Stimme verklingt. Dann lächelt sie.*"
-  },
-  "hidden_true_homeroom_7_ins3": {
-    "name": "{name}",
-    "text": "*Ein letztes Mal. Dann bricht die Gewohnheit. — Sieben Jahre 'Lehrerin' sind vorbei, und der Tag, sie beim Namen zu nennen, ist gekommen.*"
-  },
-  "hidden_true_nurse_2_ins": {
-    "name": "{name}",
-    "text": "*Keine Lehrerin — einfach eine Frau.*"
-  },
-  "hidden_true_nurse_2_ins2": {
-    "name": "Schulkrankenschwester",
-    "text": "Herzlichen Glückwunsch zum Abschluss."
-  },
-  "hidden_true_nurse_2_ins3": {
-    "name": "{name}",
-    "text": "Danke."
-  },
-  "hidden_true_nurse_8_ins": {
-    "name": "Schulkrankenschwester",
-    "text": "*Dreht die Kaffeetasse* Das Zeugnis wirkt schneller als gedacht."
-  },
-  "hidden_true_nurse_8_ins2": {
-    "name": "{name}",
-    "text": "*Der Abschluss löscht die Grenze. — Im Café statt im Krankenzimmer, mit einer Person statt einer Lehrerin.*"
-  },
-  "hidden_true_nurse_8_ins3": {
-    "name": "{name}",
-    "text": "*Die Schulkrankenschwester sieht mich an. Ohne Schalk.*"
-  },
-  "hidden_true_nurse_8_ins4": {
-    "name": "Schulkrankenschwester",
-    "text": "Weißt du, an Tag 1, als du ins Krankenzimmer kamst."
-  },
-  "hidden_true_nurse_8_ins5": {
-    "name": "{name}",
-    "text": "Weil mir schwindelig war."
-  },
-  "hidden_true_nurse_8_ins6": {
-    "name": "Schulkrankenschwester",
-    "text": "Ich habe deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen.' Das war ein Witz."
-  },
-  "hidden_true_nurse_8_ins7": {
-    "name": "{name}",
-    "text": "Ich weiß."
-  },
-  "hidden_true_nurse_5_ins": {
-    "name": "{name}",
-    "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit vollständig verschwunden. — Das ist ihre Aufrichtigkeit.*"
-  },
-  "hidden_true_nurse_5_ins2": {
-    "name": "Schulkrankenschwester",
-    "text": "Eine Lehrerin sollte keine Gefühle für einen Schüler entwickeln. Das wusste ich. — Also habe ich alles immer wieder in Witze verpackt."
-  },
-  "hidden_true_nurse_5_ins3": {
-    "name": "Schulkrankenschwester",
-    "text": "Aber du hast die Aufrichtigkeit hinter den Witzen erkannt."
-  },
-  "hidden_true_nurse_5_ins4": {
-    "name": "{name}",
-    "text": "Drei Minuten für ein Pflaster — das ist nicht nur Sorgfalt."
-  },
-  "hidden_true_nurse_5_ins5": {
-    "name": "{name}",
-    "text": "*Die Schulkrankenschwester hält inne. — Dann lächelt sie. Kein verspieltes Lächeln.*"
-  },
-  "hidden_true_nurse_7_ins": {
-    "name": "{name}",
-    "text": "*Die Schulkrankenschwester streckt die Hand aus und berührt das Pflaster auf meinem Handrücken. Das von gestern.*"
-  },
-  "hidden_true_nurse_7_ins2": {
-    "name": "Schulkrankenschwester",
-    "text": "Ab jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden."
-  },
-  "hidden_true_nurse_7_ins3": {
-    "name": "{name}",
-    "text": "*Die Person, die Ausreden brauchte. — Der Titel 'Lehrerin' war ihre Ausrede und ihre Mauer zugleich. Diese Mauer ist heute verschwunden.*"
-  },
-  "hidden_good_nurse_2_ins": {
-    "name": "{name}",
-    "text": "Medizinisches Interesse?"
-  },
-  "hidden_good_nurse_2_ins2": {
-    "name": "Schulkrankenschwester",
-    "text": "*Kurz innehaltend* ...Ja. Medizinisches Interesse. *Leise* Diesmal wirklich."
-  },
-  "hidden_good_nurse_2_ins3": {
-    "name": "{name}",
-    "text": "*'Diesmal wirklich.' — Was bedeutet, dass es die anderen Male nicht war.*"
-  },
-  "hidden_good_nurse_3_ins": {
-    "name": "{name}",
-    "text": "*Ich verließ das Krankenzimmer. Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.*"
-  },
-  "good_1_seo_ins": {
-    "name": "{name}",
-    "text": "*Ein Kirschblütenblatt landet auf Seoyeons Haar. Ich überlege, ob ich es wegstreichen soll — als Seoyeon zuerst den Kopf neigt.*"
-  },
-  "good_1_seo_ins2": {
-    "name": "{name}",
-    "text": "*Sie tut so, als wäre sie perfekt, aber ich war auch nicht perfekt.*"
-  },
-  "good_1_seo_ins3": {
-    "name": "{name}",
-    "text": "*Die Kirschblüten werden nächstes Jahr wieder blühen. Wir gingen nebeneinander.*"
-  },
-  "good_1_yuna_b_ins": {
-    "name": "{name}",
-    "text": "*Sie jagte dem Schatten einer verschwundenen Person nach.*"
-  },
-  "bitter_seo_2_ins": {
-    "name": "{name}",
-    "text": "*Seoyeon im Café. Ihr Blick hinter der Brille ist nüchtern. Keine Gelassenheit, kein Zittern. Nur — die Augen von jemandem, der zum Abschließen gekommen ist.*"
-  },
-  "bitter_dain_3_ins": {
-    "name": "{name}",
-    "text": "*Ich ging durchs Schultor hinaus. Es regnet. — Kein Regenschirm. Kirschblütenblätter kleben am nassen Boden unter meinen Füßen.*"
-  },
-  "harem_1_ins": {
-    "name": "{name}",
-    "text": "*Yuna senkte den Kopf. Lange. Als sie wieder aufblickte, waren ihre Augen trocken, aber sie lächelte. ...Idiot. In diesem einen Wort steckte die Emotion von zwei Sätzen.*"
-  },
-  "alone_2_ins": {
-    "name": "{name}",
-    "text": "*Kirschblüten fallen vor dem Fenster. Dieselben, die vor fünf Tagen meine Nasenspitze streiften, werden jetzt vom Wind davongetragen.*"
-  }
+    "ending_start": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_affinity_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_aff_check_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "System",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "System",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "{name}",
+        "text": "*Seoyeons Dachterrasse. Sie steht zwischen den Pflanzen, die sie selbst gezogen hat.*"
+    },
+    "perfect_seo_2": {
+        "name": "{name}",
+        "text": "*Zum ersten Mal nimmt sie die Brille ab — und weint.*"
+    },
+    "perfect_seo_3": {
+        "name": "Seoyeon",
+        "text": "...Dieses Gesicht — das zeige ich nur dir."
+    },
+    "perfect_seo_4": {
+        "name": "Seoyeon",
+        "text": "*Der Wind auf dem Dach weht.* Auch nach dem Abschluss werde ich herkommen. Diese Pflanzen wachsen nur, wenn du da bist."
+    },
+    "perfect_seo_5": {
+        "name": "{name}",
+        "text": "*Seoyeon streckt die Hand aus. Nicht den kleinen Finger. Die ganze Hand.*"
+    },
+    "perfect_yuna_1": {
+        "name": "{name}",
+        "text": "*Der Bibliotheksanbau, der geheime Dachboden. Yuna reicht eine Kurzgeschichte.*"
+    },
+    "perfect_yuna_2": {
+        "name": "{name}",
+        "text": "*Der Titel ist der Name des Protagonisten.*"
+    },
+    "perfect_yuna_3": {
+        "name": "Yuna",
+        "text": "...Sag mir, was du denkst, wenn du fertig bist. Das ist meine Antwort."
+    },
+    "perfect_yuna_4": {
+        "name": "{name}",
+        "text": "*Der letzte Satz der Geschichte: 'Es gab jemanden, der nie verschwand. Dank dieser Person beschloss auch ich, nicht zu verschwinden.'*"
+    },
+    "perfect_yuna_5": {
+        "name": "{name}",
+        "text": "*Yuna hielt sich fest. Wortlos. Mondlicht fiel durch die zerbrochenen Fenster — tätowierte Arme schlangen sich um meine Taille, silbernes Haar lehnte an meiner Schulter. Zum ersten Mal füllte Yunas leises Atmen das Versteck.*"
+    },
+    "perfect_dain_1": {
+        "name": "{name}",
+        "text": "*Die Turnhalle. Dain schlägt ihren letzten Aufschlag. Während sie ihre Bandagen löst.*"
+    },
+    "perfect_dain_2": {
+        "name": "Dain",
+        "text": "Das ist der letzte Wurf. — Aber es ist auch ein Anfang."
+    },
+    "perfect_dain_3": {
+        "name": "Dain",
+        "text": "Bin ich auch abseits des Spielfelds ein guter Mensch?"
+    },
+    "perfect_dain_4": {
+        "name": "{name}",
+        "text": "Auf dem Feld und daneben."
+    },
+    "perfect_dain_5": {
+        "name": "{name}",
+        "text": "*Dain sprang. Ich war nicht bereit. Der Volleyball rollte über den Boden — und in der Turnhalle im Abendlicht blieben nur zwei Schatten übrig.*"
+    },
+    "perfect_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
+    },
+    "perfect_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*Jede Entscheidung zielte auf eine Person. Es waren nicht fünf Tage — jeder einzelne Tag war alles.*"
+    },
+    "perfect_epilogue_2_seo": {
+        "name": "{name}",
+        "text": "*Tag der Universitätseinschreibung. Eine Nachricht auf meinem Handy. 'Hab heute die Pflanze gegossen. — Aber komm bald nach Hause.'*"
+    },
+    "perfect_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*Yunas erster Roman wurde veröffentlicht. Die Widmung: 'Dem dritten Stern.'*"
+    },
+    "perfect_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*Dain wurde Sportkommentatorin. Vor der Kamera lächelt sie. Aber diesmal ist es ein echtes Lächeln.*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "{name}",
+        "text": "*Seoyeon hat sich verändert. Sie weiß, dass es in Ordnung ist, nicht perfekt zu sein. Die Tage, an denen sie lächelt ohne in den Spiegel zu schauen, sind mehr geworden.*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*Yuna redet immer noch wenig. Aber ihre Sätze sind länger geworden. Nur mir gegenüber.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*Manchmal sagt sie, ihr Knie tut weh. Dann setze ich mich einfach neben sie und sage nichts. So machen wir das.*"
+    },
+    "perfect_epilogue_4_seo": {
+        "name": "System",
+        "text": "─── PERFECT END (Seoyeon) ───"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "System",
+        "text": "─── PERFECT END (Yuna) ───"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "System",
+        "text": "─── PERFECT END (Dain) ───"
+    },
+    "bitter_seo_1": {
+        "name": "{name}",
+        "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles. Ich ging an der Schule vorbei.*"
+    },
+    "bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "...Ich dachte, es würde klappen. Wir waren wohl beide einen Schritt zu kurz."
+    },
+    "bitter_seo_3": {
+        "name": "{name}",
+        "text": "*Ich verließ das Café. Es regnet. Seoyeons Blick hinter der Brille war trocken. Keine Gelassenheit, kein Zittern. Nur — die Augen von jemandem, der gekommen ist, um abzuschließen.*"
+    },
+    "bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles. Ich ging an der Schule vorbei.*"
+    },
+    "bitter_yuna_2": {
+        "name": "Yuna",
+        "text": "...Manchmal denke ich an dich. Wenn ich die Bibliothek rieche. Ich hatte damals mehr sagen sollen."
+    },
+    "bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*Ich ging durch das Schultor. Es regnet. — Yunas letzter Zettel, im Briefkasten. Kurz. Wie immer. Aber diesmal ist es nicht Kürze. Es gibt einfach nichts mehr zu schreiben.*"
+    },
+    "bitter_dain_1": {
+        "name": "{name}",
+        "text": "*Ich habe gestanden. Es wurde angenommen. — Aber das war alles. Ich ging an der Schule vorbei.*"
+    },
+    "bitter_dain_2": {
+        "name": "Dain",
+        "text": "Es hat Spaß gemacht, echt! ...Aber ich glaube, Spaß war alles. Das ist irgendwie schade."
+    },
+    "bitter_dain_3": {
+        "name": "{name}",
+        "text": "*Ich verließ die Turnhalle. Es regnet. — Die Ausrufezeichen waren zurück, aber der letzte Satz hatte keines. Wenn Dain mit einem Punkt endet, bedeutet das, dass keine Energie mehr übrig ist, um sie zu teilen.*"
+    },
+    "bitter_epilogue_1": {
+        "name": "{name}",
+        "text": "*Nach dem Abschluss. Der Kontakt wurde seltener. Einmal im Monat wurde zu einmal alle zwei Monate, Nachrichten ungelesen zu lassen wurde zur Gewohnheit, und eines Tages — als ich schreiben wollte und nicht wusste was — wusste ich, dass es vorbei war.*"
+    },
+    "bitter_epilogue_2": {
+        "name": "{name}",
+        "text": "*Die Erinnerung an fünf Tage bleibt. Es tut nicht weh. Es war nur — nicht genug. Für uns beide.*"
+    },
+    "bitter_epilogue_3": {
+        "name": "System",
+        "text": "─── BITTERSWEET END ───"
+    },
+    "true_seo_1": {
+        "name": "{name}",
+        "text": "*Seoyeons Zimmer. Ihre Eltern sind unterwegs. Das Zimmer ist ordentlich — zu ordentlich. Ein Zimmer ohne Emotion.*"
+    },
+    "true_seo_2": {
+        "name": "{name}",
+        "text": "*— Bis auf eine Sache. Auf dem Schreibtisch reihen sich Topfpflanzen, die Seoyeon selbst gezogen hat.*"
+    },
+    "true_seo_3": {
+        "name": "Seoyeon",
+        "text": "Vor dir habe ich das Gefühl, nicht perfekt sein zu müssen."
+    },
+    "true_seo_4": {
+        "name": "{name}",
+        "text": "Du musstest nie perfekt sein."
+    },
+    "true_seo_5": {
+        "name": "Seoyeon",
+        "text": "...Ich weiß. Aber es hat fünf Tage gedauert, das zu glauben."
+    },
+    "true_seo_6": {
+        "name": "{name}",
+        "text": "*Seoyeon lächelt. Ihre Mundwinkel bewegen sich von allein.*"
+    },
+    "true_seo_7": {
+        "name": "Seoyeon",
+        "text": "...Bleib bei mir."
+    },
+    "true_seo_8": {
+        "name": "{name}",
+        "text": "*Wir hakten die kleinen Finger ineinander. Die Gewohnheit von Tag 1, das Versprechen von Tag 4, und jetzt. — Derselbe Finger, eine dritte Bedeutung.*"
+    },
+    "true_yuna_1": {
+        "name": "{name}",
+        "text": "*Der Anbau der Bibliothek. Tiefer als der geheime Leseort — ein Dachboden. Ein Raum, von dessen Existenz ich nicht einmal wusste.*"
+    },
+    "true_yuna_2": {
+        "name": "Yuna",
+        "text": "Nur ich wusste von diesem Ort."
+    },
+    "true_yuna_3": {
+        "name": "{name}",
+        "text": "*Yuna öffnet das kleine Fenster. Sterne sind zu sehen.*"
+    },
+    "true_yuna_4": {
+        "name": "Yuna",
+        "text": "Jetzt du auch."
+    },
+    "true_yuna_5": {
+        "name": "{name}",
+        "text": "Der dritte Stern?"
+    },
+    "true_yuna_6": {
+        "name": "Yuna",
+        "text": "...Du hast dich erinnert."
+    },
+    "true_yuna_7": {
+        "name": "{name}",
+        "text": "*Das Rätsel von Tag 2. Der dritte Stern. — Der Beweis, dass Yuna mich von Anfang an beobachtet hat.*"
+    },
+    "true_dain_1": {
+        "name": "{name}",
+        "text": "*Die Turnhalle. Die gleichen Notlichter wie gestern. Seite an Seite auf der Matte liegend.*"
+    },
+    "true_dain_2": {
+        "name": "{name}",
+        "text": "*Dain nimmt {name}s Hand — zieht sie zu sich und legt sie auf ihre linke Brust. Ohne ein Wort.*"
+    },
+    "true_dain_3": {
+        "name": "{name}",
+        "text": "*Der Herzschlag unter meinen Fingerspitzen ist deutlich spürbar.*"
+    },
+    "true_dain_4": {
+        "name": "{name}",
+        "text": ""
+    },
+    "true_dain_5": {
+        "name": "{name}",
+        "text": "...Schnell."
+    },
+    "true_dain_6": {
+        "name": "Dain",
+        "text": "*halb das Gesicht mit dem Volleyball versteckend* Warum starrst du mich so an... Das ist nicht fair."
+    },
+    "true_dain_7": {
+        "name": "{name}",
+        "text": "Hab ich nicht."
+    },
+    "true_dain_8": {
+        "name": "Dain",
+        "text": "Hast du wohl!! ...Aber du darfst weiter schauen."
+    },
+    "true_seo_bridge": {
+        "name": "{name}",
+        "text": "*Seoyeons Versprechen liegt noch an meinen Fingerspitzen.*"
+    },
+    "true_yuna_bridge": {
+        "name": "{name}",
+        "text": "*Yunas Sterne sind noch da, direkt vor mir.*"
+    },
+    "true_dain_bridge": {
+        "name": "{name}",
+        "text": "*Dains Lachen klingt noch in meinen Ohren.*"
+    },
+    "true_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*Es waren fünf Tage.*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*Es waren fünf Tage.*"
+    },
+    "true_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*Es waren fünf Tage.*"
+    },
+    "true_epilogue_2": {
+        "name": "{name}",
+        "text": "*Die Uniform war steif, die Kirschblüten ließen mich niesen, und ich wusste nicht, was ich vor dem Schultor tun sollte.*"
+    },
+    "true_epilogue_3": {
+        "name": "{name}",
+        "text": "*Aber rückblickend — ich glaube, es war schon in dem Moment entschieden, als sich unsere Blicke zum ersten Mal trafen. Ich brauchte nur fünf Tage, um es zuzugeben.*"
+    },
+    "true_epilogue_4_seo": {
+        "name": "{name}",
+        "text": "*Ihre Familie ist nicht besser geworden. Die Anrufe ihrer Mutter sind immer noch kalt, und das einstudierte Lächeln hat nicht aufgehört. — Aber jetzt gibt es jemanden, dem sie ihr ungeübtes Gesicht zeigen kann. Nicht mehr.*"
+    },
+    "true_epilogue_4_yuna": {
+        "name": "{name}",
+        "text": "*Die Person, die gegangen ist, ist nicht zurückgekommen. Die Nummer des Seniors fehlt immer noch, und der Platz in der Bibliotheksecke ist immer noch leer. — Aber jetzt gibt es jemanden, mit dem sie mit ihrer Stimme sprechen kann, nicht nur mit Notizen. Nicht mehr.*"
+    },
+    "true_epilogue_4_dain": {
+        "name": "{name}",
+        "text": "*Ihr Knie ist nicht geheilt. Sie wickelt immer noch jeden Morgen den Verband, und die Alarm-Notiz hat immer noch zwei Ausrufezeichen. — Aber jetzt gibt es jemanden, der zuhört, wenn ihre Sätze mit einem Punkt enden. Nicht mehr.*"
+    },
+    "true_epilogue_7": {
+        "name": "System",
+        "text": "─── TRUE LOVE END ───"
+    },
+    "day5_ending_good": {
+        "name": "{name}",
+        "text": "*Vielleicht habe ich jemandem Hoffnung gegeben, nur um sie wieder zu nehmen. Es tut mir leid.*"
+    },
+    "good_1": {
+        "name": "{name}",
+        "text": "*Sie kam einen Schritt auf mich zu.*"
+    },
+    "good_1b": {
+        "name": "{name}",
+        "text": ""
+    },
+    "good_1c": {
+        "name": "{name}",
+        "text": ""
+    },
+    "good_1_seo": {
+        "name": "Seoyeon",
+        "text": "Dass du woanders hingeschaut hast, wirst du mir ein Leben lang zurückzahlen. — Mit Zinsen."
+    },
+    "good_1_yuna": {
+        "name": "Yuna",
+        "text": "...Du bist wirklich begriffsstutzig. Aber weil du zurückgekommen bist, kann ich es verzeihen."
+    },
+    "good_1_dain": {
+        "name": "Dain",
+        "text": "Hey, ich war echt sauer, weißt du? ...Aber am Ende bist du zu mir gekommen. Das reicht mir."
+    },
+    "good_2_seo": {
+        "name": "{name}",
+        "text": "*Der Kirschblütenweg. Seoyeon steht einen Schritt voraus. Sie dreht sich um.*"
+    },
+    "good_3_seo": {
+        "name": "{name}",
+        "text": "*Eine Kirschblüte landet auf Seoyeons Haar. Ich überlege, ob ich sie wegwische — und sie neigt zuerst den Kopf.*"
+    },
+    "good_4_seo": {
+        "name": "{name}",
+        "text": "*Sie tut so, als wäre sie perfekt, aber ich war es auch nicht.*"
+    },
+    "good_5_seo": {
+        "name": "{name}",
+        "text": "*Die Kirschblüten blühen auch nächstes Jahr. Wir gingen zusammen.*"
+    },
+    "good_2_yuna": {
+        "name": "{name}",
+        "text": "*Das Dach. Yuna lehnt am Geländer. Der Wind weht ihr durch die Haare.*"
+    },
+    "good_3_yuna": {
+        "name": "{name}",
+        "text": "*Yuna reicht mir einen Zettel. \"Verirr dich beim nächsten Mal nicht.\" — Kurz. Und warm.*"
+    },
+    "good_4_yuna": {
+        "name": "{name}",
+        "text": "*Ich jagte dem Schatten einer verschwundenen Person hinterher.*"
+    },
+    "good_5_yuna": {
+        "name": "{name}",
+        "text": "*Ein einzelner Stern ist zu sehen. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
+    },
+    "good_2_dain": {
+        "name": "{name}",
+        "text": "*Vor dem Schultor. Dain wirft einen Volleyball hoch und wartet.*"
+    },
+    "good_3_dain": {
+        "name": "{name}",
+        "text": "*Dain wirft den Volleyball. Ich fange ihn. — So versöhnt sich dieser Mensch.*"
+    },
+    "good_4_dain": {
+        "name": "{name}",
+        "text": "*Sie lief weiter, auch wenn ihre Knie schmerzten.*"
+    },
+    "good_5_dain": {
+        "name": "{name}",
+        "text": "*Die Sonne geht hinter dem Schultor unter. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
+    },
+    "good_5_cg_seo": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_yuna": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "good_5_cg_dain": {
+        "name": "System",
+        "text": "─── GOOD END ───"
+    },
+    "day5_ending_mayhem": {
+        "name": "{name}",
+        "text": "*Alle drei gefielen mir. Aufrichtig. — Und genau deshalb konnte ich mich für niemanden entscheiden.*"
+    },
+    "mayhem_1": {
+        "name": "{name}",
+        "text": "*Seoyeon streifte im Flur an mir vorbei. Sie drehte den Kopf nicht. — Natürlich.*"
+    },
+    "mayhem_2": {
+        "name": "{name}",
+        "text": "*Yunas Platz war leer. Ein einzelner Zettel auf dem Tisch. 'Es hat Spaß gemacht.' Der Punkt war das Ende.*"
+    },
+    "mayhem_3": {
+        "name": "{name}",
+        "text": "*Dain lächelte. Strahlend wie immer. — Aber die Ausrufezeichen fehlten. Pass auf dich auf. Das erste Mal, dass ich Dain einen Satz mit einem Punkt beenden hörte, war ausgerechnet ein Abschied.*"
+    },
+    "mayhem_4": {
+        "name": "{name}",
+        "text": "*Ich sah den dreien hinterher. Keine drehte sich um. — Das war die Antwort.*"
+    },
+    "mayhem_5": {
+        "name": "{name}",
+        "text": "*Der Frühling geht zu Ende. Die Kirschblüten fallen. Niemand ist an meiner Seite.*"
+    },
+    "mayhem_6": {
+        "name": "{name}",
+        "text": ""
+    },
+    "mayhem_7": {
+        "name": "System",
+        "text": "─── MAYHEM END ───"
+    },
+    "day5_ending_harem": {
+        "name": "{name}",
+        "text": "*Ich mag euch alle. — Als diese Worte meinen Mund verließen, erstarrten alle drei Gesichter gleichzeitig.*"
+    },
+    "harem_1": {
+        "name": "{name}",
+        "text": "*Seoyeon lächelte zuerst. ...Gut. Wenigstens bist du ehrlich. Es war keine Einbildung, dass ich Zähneknirschen hinter diesem Lächeln hörte.*"
+    },
+    "harem_2": {
+        "name": "Yuna",
+        "text": "...Idiot."
+    },
+    "harem_3": {
+        "name": "{name}",
+        "text": "*Dain boxte mir mit der Faust gegen die Schulter. Es tat weh. Spinnst du? ...Aber ich hab mich in dich verliebt, obwohl ich wusste, dass du so bist. Selbst schuld. Hmpf.*"
+    },
+    "harem_4": {
+        "name": "{name}",
+        "text": "*Montag ist Seoyeon. Mittwoch ist Yuna. Freitag ist Dain. Dazwischen häufen sich die Lügen, um nicht aufzufliegen. Ich dachte, es wäre süß — aber es schnürt mir die Kehle zu.*"
+    },
+    "harem_5": {
+        "name": "{name}",
+        "text": "*Dieses Gleichgewicht wird brechen. Jemand wird zuerst weinen. Wenn das passiert, ist diese Geschichte keine Romanze mehr — sondern eine Katastrophe.*"
+    },
+    "harem_6": {
+        "name": "{name}",
+        "text": "*Und trotzdem lächeln heute alle drei. Selbst im Wissen um den Untergang von morgen — kann ich das Heute nicht loslassen.*"
+    },
+    "harem_7": {
+        "name": "{name}",
+        "text": ""
+    },
+    "harem_8": {
+        "name": "System",
+        "text": "─── HAREM END ───"
+    },
+    "day5_ending_confess_fail": {
+        "name": "{name}",
+        "text": "*Ich habe es gesagt. Ich habe gesprochen. — Aber was zurückkam, war Stille.*"
+    },
+    "confess_fail_1": {
+        "name": "{name}",
+        "text": "*\"...Danke. Wirklich. Aber ich bin noch nicht so weit — fünf Tage waren wohl zu kurz.\"*"
+    },
+    "confess_fail_2": {
+        "name": "{name}",
+        "text": "*Es ist keine Ablehnung. Es ist das Timing. — Das Ergebnis von fünf Tagen, die nicht gereicht haben, um näher zu kommen.*"
+    },
+    "confess_fail_3": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_4": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_5": {
+        "name": "System",
+        "text": "—- CONFESS FAIL END —-"
+    },
+    "day5_ending_friend": {
+        "name": "{name}",
+        "text": "*Am Ende konnte ich es nicht sagen.*"
+    },
+    "friend_1": {
+        "name": "{name}",
+        "text": "*Am Ende konnte ich es nicht sagen.*"
+    },
+    "friend_2": {
+        "name": "{name}",
+        "text": "*An meiner alten Schule war es genauso. Schon wieder.*"
+    },
+    "friend_3": {
+        "name": "{name}",
+        "text": ""
+    },
+    "friend_4": {
+        "name": "{name}",
+        "text": "*Beim Verlassen des Schultors ist eine Nachricht auf meinem Handy. 'Danke für heute lol' — Der Ton eines Freundes. Ein perfekt freundschaftlicher Ton.*"
+    },
+    "friend_5": {
+        "name": "{name}",
+        "text": "*Ich tippte eine Antwort. 'Dir auch danke.' — Nach dem Senden starrte ich auf den Bildschirm. Zwei Zeilen Gespräch. Ich lächle, doch innerlich ist es seltsam kalt.*"
+    },
+    "friend_6": {
+        "name": "{name}",
+        "text": "*Wir werden weiter so Nachrichten schreiben. Mit Emojis, ab und zu essen gehen, fragen ob was los ist und sagen, dass nichts los ist. — Direkt nebeneinander, aber eine Linie, die man nicht überschreiten kann. Das ist Freundschaft.*"
+    },
+    "friend_7": {
+        "name": "{name}",
+        "text": "*...Auch an dieser Schule konnte ich es nicht sagen.*"
+    },
+    "friend_8": {
+        "name": "{name}",
+        "text": "*Abschlusstag. Ich scrolle durch die Handygalerie. Wo einmal Sojeongs Foto war, ist jetzt ein Gruppenfoto mit ihr.*"
+    },
+    "friend_9": {
+        "name": "{name}",
+        "text": "*Wieder stehe ich neben ihr, trage die perfekte Maske des 'Freundes', und lächle.*"
+    },
+    "friend_10": {
+        "name": "{name}",
+        "text": "*Ich öffne die Notizen-App. 'Ich muss dir was sagen.' — Der Cursor blinkt. Wie vor drei Jahren. Löschtaste gedrückt halten. Gelöscht.*"
+    },
+    "friend_11": {
+        "name": "{name}",
+        "text": "*Die Schule wechseln, davonlaufen — am Ende hat sich nichts an mir verändert.*"
+    },
+    "friend_12": {
+        "name": "System",
+        "text": "─── FRIEND END ───"
+    },
+    "day5_ending_alone": {
+        "name": "{name}",
+        "text": "*Ich gehe durch das Schultor. Das Handy summt. — Niemand. Akkuwarnung.*"
+    },
+    "alone_1": {
+        "name": "{name}",
+        "text": "*Fünf Tage. Auf jemanden zugegangen, auf andere nicht zugehen können, und am Ende nicht wählen können.*"
+    },
+    "alone_2": {
+        "name": "{name}",
+        "text": "*An der alten Schule bereute ich, nicht gesprochen zu haben. An dieser Schule — bereue ich, niemanden zum Reden gefunden zu haben? Nein. Gefunden, aber nicht wählen können. Nein, nicht den Mut gehabt zu wählen.*"
+    },
+    "alone_3": {
+        "name": "{name}",
+        "text": "*Die Kirschblüten treiben jetzt im Wind davon.*"
+    },
+    "alone_4": {
+        "name": "{name}",
+        "text": "*...Allein zu sein ist keine Strafe. Es ist nur — still. Stiller als erwartet.*"
+    },
+    "alone_5": {
+        "name": "System",
+        "text": "─── ALONE END ───"
+    },
+    "day5_credits": {
+        "name": "",
+        "text": ""
+    },
+    "day5_ending_restart": {
+        "name": "System",
+        "text": "",
+        "choices": [
+            "Von vorne beginnen"
+        ]
+    },
+    "hidden_perfect_homeroom_check": {},
+    "hidden_perfect_homeroom_1": {
+        "name": "{name}",
+        "text": "*Die Abschlussfeier ist vorbei. Ich bin allein im leeren Klassenzimmer. Die Kreidemarkierungen an der Tafel sind noch nicht gelöscht.*"
+    },
+    "hidden_perfect_homeroom_1b": {
+        "name": "{name}",
+        "text": "*Die Tür geht auf. — Sie ist es. Beiger Cardigan. Einen Dokumentenumschlag in der Hand.*"
+    },
+    "hidden_perfect_homeroom_2": {
+        "name": "Klassenlehrerin",
+        "text": "Herzlichen Glückwunsch zum Abschluss. ...Der Papierkram ist erledigt. Meine Arbeit als deine Lehrerin ist vorbei."
+    },
+    "hidden_perfect_homeroom_2b": {
+        "name": "{name}",
+        "text": "Ist das Manuskript noch in Ihrer Schreibtischschublade?"
+    },
+    "hidden_perfect_homeroom_2c": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie hält kurz inne. Will noch etwas sagen, schließt dann den Mund.* ...Pass auf dich auf."
+    },
+    "hidden_perfect_homeroom_3": {
+        "name": "{name}",
+        "text": "*Drei Jahre später.*"
+    },
+    "hidden_perfect_homeroom_3b": {
+        "name": "{name}",
+        "text": "*Die Terrasse eines Cafés. Kirschblüten wehen. Beim Eintreten — sehe ich vertrautes braunes Wellenhaar am Fensterplatz. Eine Leinenjacke statt des Cardigans.*"
+    },
+    "hidden_perfect_homeroom_3c": {
+        "name": "Klassenlehrerin",
+        "text": "...Oh. Ich bin auch überrascht. *Sie stellt ihre Kaffeetasse ab.* Möchtest du dich setzen?"
+    },
+    "hidden_perfect_homeroom_3e": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie schmunzelt.* Habe aufgehört zu unterrichten. Schreibe nur noch. Teilzeit im Café. — Und du?"
+    },
+    "hidden_perfect_homeroom_3f": {
+        "name": "Klassenlehrerin",
+        "text": "...Können wir uns wiedersehen? Ich komme jeden Donnerstag hierher."
+    },
+    "hidden_perfect_homeroom_3g": {
+        "name": "{name}",
+        "text": "*Aus dem 'nächsten Mal' wurde das übernächste und wieder das nächste. Jeden Donnerstag derselbe Platz. Als der Barista fragte 'Paartisch?', konnte keiner von uns antworten. An einem Donnerstag. Statt ins Café gingen wir durch die Straßen. Nebeneinander. Beide taten so, als bemerkten wir nicht, dass sich unsere Schatten überlappten.*"
+    },
+    "hidden_perfect_homeroom_4b": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie bleibt plötzlich in der Buchhandlung stehen.* ...Ich habe mein Manuskript fertig. Willst du es lesen?"
+    },
+    "hidden_perfect_homeroom_4c": {
+        "name": "{name}",
+        "text": "*Ich ging nach Hause und las es. Die ganze Nacht. — Die Art, wie die Hauptfigur sprach, kam mir bekannt vor. Zu bekannt.*"
+    },
+    "hidden_perfect_homeroom_4d": {
+        "name": "Klassenlehrerin",
+        "text": "*Nächster Donnerstag, im Café. Sie rührte ihren Kaffee länger als üblich.* ...Und, wie war's?"
+    },
+    "hidden_perfect_homeroom_4e": {
+        "name": "{name}",
+        "text": "*Nächster Donnerstag. Ich wartete nicht vor dem Café. — Ich wartete vor dem Blumenladen.*"
+    },
+    "hidden_perfect_homeroom_4f": {
+        "name": "{name}",
+        "text": "*Ich reichte ihr den Strauß.* Das ist kein pädagogisches Interesse. Nicht von meiner Seite."
+    },
+    "hidden_perfect_homeroom_4g": {
+        "name": "Klassenlehrerin",
+        "text": "*Nimmt den Strauß und starrt ihn lange an. Ihre Hände zittern. — Sie lächelt.* ...Ich auch."
+    },
+    "hidden_perfect_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Klassenlehrerin PERFECT END ───"
+    },
+    "hidden_perfect_homeroom_5": {},
+    "hidden_perfect_nurse_check": {},
+    "hidden_perfect_nurse_1": {
+        "name": "{name}",
+        "text": "*Die Abschlussfeier ist vorbei. Ich öffnete die Tür zum Krankenzimmer. Leer. Ein Pflaster auf dem Schreibtisch. 'Komm zu mir. Adresse auf der Rückseite.' — Ohne Herz diesmal.*"
+    },
+    "hidden_perfect_nurse_2": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Person, die die Tür öffnete, trägt keinen weißen Kittel — Strickjacke, barfuß.* ...Du bist gekommen. Ich hätte nicht gedacht, dass du wirklich kommst."
+    },
+    "hidden_perfect_nurse_3": {
+        "name": "{name}",
+        "text": "*Nebeneinander auf dem Wohnzimmersofa. Die Sonne geht hinter dem Fenster unter. Statt eines Pflasters berühren sich die Finger.*"
+    },
+    "hidden_perfect_nurse_3b": {
+        "name": "Schulkrankenschwester",
+        "text": "*Lehnt sich an mich.* ...Keine Ausreden mehr nötig. Kein Patient, kein Schüler."
+    },
+    "hidden_perfect_nurse_4": {
+        "name": "Schulkrankenschwester",
+        "text": "*Ihre Hand greift nach meiner Krawatte. Nicht spielerisch. Ihre Augen sind ernst.* ...Heute Nacht lasse ich dich nicht gehen."
+    },
+    "hidden_perfect_nurse_4b": {
+        "name": "{name}",
+        "text": "*Morgen. Licht sickert durch die Vorhänge. Atmen neben mir. — Die Person, die drei Minuten brauchte, um ein Pflaster zu kleben, schläft jetzt mit meiner Hand in ihrer.*"
+    },
+    "hidden_perfect_nurse_5": {
+        "name": "Schulkrankenschwester",
+        "text": "*Öffnet die Augen. Lächelt.* ...Tut dir was weh? Soll ich nachschauen? *— Kein Scherz. Diesmal nicht.*"
+    },
+    "hidden_perfect_nurse_5b": {
+        "name": "{name}",
+        "text": "*Einfach — jemand, bei dem ich sein will. Hier.*"
+    },
+    "hidden_perfect_nurse_ending_title": {
+        "name": "",
+        "text": "─── Schulkrankenschwester PERFECT END ───"
+    },
+    "hidden_true_homeroom_1": {
+        "name": "{name}",
+        "text": "*Abschlusstag. — Die Zeit ist vergangen. Die Uniform ist nicht mehr steif.*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "{name}",
+        "text": "*Das leere Klassenzimmer. Das, in dem sie geschrieben hat. — Die Klassenlehrerin wartet. In Freizeitkleidung.*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "Klassenlehrerin",
+        "text": "Glückwunsch zum Abschluss."
+    },
+    "hidden_true_homeroom_4": {
+        "name": "Klassenlehrerin",
+        "text": "...Das. Du hast nicht 'Frau Lehrerin' gesagt. Zum ersten Mal."
+    },
+    "hidden_true_homeroom_5": {
+        "name": "Klassenlehrerin",
+        "text": "Ich hab das Manuskript fertig. — Weil du mein erster Leser warst. Ich sagte eine Zeile und du kamst mit drei Seiten. *Schmunzelt* Eine Kreativschreib-Lehrerin, die wegen der Rezension eines Schülers fast weint — das bleibt unser Geheimnis."
+    },
+    "hidden_true_homeroom_6": {
+        "name": "Klassenlehrerin",
+        "text": "...Nur eins. ...Lass uns Kaffee trinken gehen. Diesmal echten, keinen Saft."
+    },
+    "hidden_true_homeroom_7": {
+        "name": "{name}",
+        "text": "Gerne."
+    },
+    "hidden_true_homeroom_8": {
+        "name": "Klassenlehrerin",
+        "text": "...Ich sollte das nicht tun."
+    },
+    "hidden_true_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Klassenlehrerin TRUE LOVE END ───"
+    },
+    "hidden_true_nurse_1": {
+        "name": "{name}",
+        "text": "*Abschlusstag. Beim Rausgehen — ein Pflaster an der Tür des Krankenzimmers.*"
+    },
+    "hidden_true_nurse_2": {
+        "name": "{name}",
+        "text": "*'Glückwunsch. Ich warte im Café.' — Unter dem Pflaster eine kleine Karte. Die Schulkrankenschwester sitzt im Café. Nicht im weißen Kittel — sondern in einem elfenbeinfarbenen Kleid. Ohne ihre übliche Brille, das braune Haar offen.*"
+    },
+    "hidden_true_nurse_3": {
+        "name": "Schulkrankenschwester",
+        "text": "Glückwunsch zum Abschluss. ...Ab heute kannst du mich duzen."
+    },
+    "hidden_true_nurse_3_ins": {
+        "name": "{name}",
+        "text": "Warum?"
+    },
+    "hidden_true_nurse_4": {
+        "name": "Schulkrankenschwester",
+        "text": "Weißt du, am ersten Tag, als du kamst. Ich hab deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen'. Das war ein Witz."
+    },
+    "hidden_true_nurse_5": {
+        "name": "Schulkrankenschwester",
+        "text": "...Aber jetzt ist es kein Witz."
+    },
+    "hidden_true_nurse_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Eine Lehrerin sollte keine Gefühle für einen Schüler entwickeln. Wusste ich. — Deshalb hab ich alles in Witze verpackt. Aber du hast immer durchgeschaut."
+    },
+    "hidden_true_nurse_7": {
+        "name": "Schulkrankenschwester",
+        "text": "...Du bist der Erste, der mich durchschaut hat."
+    },
+    "hidden_true_nurse_8": {
+        "name": "Schulkrankenschwester",
+        "text": "Jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden."
+    },
+    "hidden_true_nurse_ending_title": {
+        "name": "",
+        "text": "─── Schulkrankenschwester TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie wartete vor der Schule.* Glückwunsch zum Abschluss."
+    },
+    "hidden_good_homeroom_2": {
+        "name": "{name}",
+        "text": "*Beim Händeschütteln — etwas gleitet in meine Hand. Eine gefaltete Notiz.*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "{name}",
+        "text": "*Die Schule verlassend. 'Wenn das Manuskript fertig ist, melde ich mich. — An meinen ersten Leser.' Eine Telefonnummer.*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "{name}",
+        "text": "*Ihre Hand hielt etwa drei Sekunden länger. Zu lang für einen Händedruck, zu kurz für ein Geständnis.*"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "name": "",
+        "text": "─── Klassenlehrerin GOOD END ───"
+    },
+    "hidden_good_nurse_1": {
+        "name": "Schulkrankenschwester",
+        "text": "Oh, ein Absolvent."
+    },
+    "hidden_good_nurse_2": {
+        "name": "Schulkrankenschwester",
+        "text": "Vitamine. — Pass an der Uni auf dich auf. ...Medizinisches Interesse. Diesmal wirklich."
+    },
+    "hidden_good_nurse_3": {
+        "name": "{name}",
+        "text": "*Das Krankenzimmer verlassend. Im Deckel, winzige Schrift. 'Ruf an, wenn du krank bist. Ruf auch an, wenn nicht. — ♥'*"
+    },
+    "hidden_good_nurse_4": {
+        "name": "{name}",
+        "text": "*Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.*"
+    },
+    "hidden_good_nurse_ending_title": {
+        "name": "",
+        "text": "─── Schulkrankenschwester GOOD END ───"
+    },
+    "perfect_dain_2b": {
+        "name": "{name}",
+        "text": "*Kein Ausrufezeichen. Zum ersten Mal. — Dain spricht über einen Anfang, der nicht Volleyball ist.*"
+    },
+    "perfect_dain_3b": {
+        "name": "{name}",
+        "text": "*Dain legt den Volleyball auf dem Spielfeld ab. Sie dreht sich um und lächelt. Ein Lächeln ohne Ausrufezeichen.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "System",
+        "text": "*Epilog — Ein Jahr später*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "System",
+        "text": "*Epilog — Ein Jahr später*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "System",
+        "text": "*Epilog — Ein Jahr später*"
+    },
+    "true_seo_6b": {
+        "name": "Seoyeon",
+        "text": "Ich musste immer lächeln. Aber vor dir will ich einfach ich selbst sein."
+    },
+    "true_seo_7b": {
+        "name": "{name}",
+        "text": "*Seoyeon streckt ihren kleinen Finger aus.*"
+    },
+    "true_yuna_6b": {
+        "name": "Yuna",
+        "text": "Geh nicht. Bleib heute Nacht hier."
+    },
+    "true_dain_2b": {
+        "name": "{name}",
+        "text": "*Schnell. Eine Geschwindigkeit, die keine Worte braucht.*"
+    },
+    "true_dain_8b": {
+        "name": "{name}",
+        "text": "*Das Ausrufezeichen ist zurück. — Aber diesmal ist es ein echtes.*"
+    },
+    "good_1_yuna_b": {
+        "name": "{name}",
+        "text": "*Yuna reicht mir einen Zettel. „Verirr dich nächstes Mal nicht.“ — Kurz. Und warm.*"
+    },
+    "good_epilogue_1": {
+        "name": "{name}",
+        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
+    },
+    "good_epilogue_2": {
+        "name": "{name}",
+        "text": "*Fühlte sich wie ein Umweg an, aber am Ende war es hier.*"
+    },
+    "good_epilogue_3": {
+        "name": "{name}",
+        "text": "*Unbeholfen ist okay. Es ist schließlich unser erstes Mal.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*Fühlte sich wie ein Umweg an, aber am Ende war es hier.*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*Unbeholfen ist okay. Es ist schließlich unser erstes Mal.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*Fühlte sich wie ein Umweg an, aber am Ende war es hier.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*Unbeholfen ist okay. Es ist schließlich unser erstes Mal.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "{name}",
+        "text": ""
+    },
+    "hidden_perfect_homeroom_ep1": {
+        "name": "{name}",
+        "text": "*Wir verließen das Café an diesem Tag nicht. Bis zum Sonnenuntergang. — Alle Worte, die wir vor vier Jahren im Klassenzimmer nicht sagen konnten, kamen endlich heraus.*"
+    },
+    "hidden_perfect_homeroom_ep2": {
+        "name": "{name}",
+        "text": "*Das Donnerstags-Café wurde unser Café. Das Personal fragt nicht mehr 'Pärchentisch?' Sie führen uns einfach zu unserem Platz.*"
+    },
+    "hidden_perfect_homeroom_ep3": {
+        "name": "{name}",
+        "text": "*Das Manuskript wurde veröffentlicht. Kein Name in der Widmung. Nur eine Zeile: 'Drei Seiten Feedback aus der Schreibtischschublade — dort begann diese Geschichte.'*"
+    },
+    "hidden_perfect_homeroom_ep4": {
+        "name": "{name}",
+        "text": "*Manchmal sagt sie 'Ich war deine Lehrerin' und ich antworte 'Ich war dein Schüler.' Wir lachen beide. — Weil wir jetzt einfach zwei Menschen sind.*"
+    },
+    "hidden_perfect_nurse_ep1": {
+        "name": "{name}",
+        "text": "*Morgen. Ein Pflaster klebt am Küchentisch. Das heutige Menü steht drauf. — Ihre Version eines Notizzettels.*"
+    },
+    "hidden_perfect_nurse_ep2": {
+        "name": "{name}",
+        "text": "*Sie kehrte ans Universitätskrankenhaus zurück. Diesmal nennen die Patienten sie beim Namen. — Frau Dr. Lee.*"
+    },
+    "hidden_perfect_nurse_ep3": {
+        "name": "{name}",
+        "text": "*Der Rosmarintopf ist ans Fenster umgezogen. Die sonnige Seite. — Jemand mit Schürze statt weißem Kittel gießt ihn.*"
+    },
+    "hidden_perfect_nurse_ep4": {
+        "name": "{name}",
+        "text": "*Die Pflaster sind noch in der Schublade. Auch wenn es keinen Grund mehr gibt. — Wer keine Ausreden mehr braucht, kann die Gewohnheit trotzdem nicht ablegen.*"
+    },
+    "perfect_seo_1_ins": {
+        "name": "{name}",
+        "text": "*Zum ersten Mal nimmt sie die Brille ab — und weint.*"
+    },
+    "perfect_seo_5_ins": {
+        "name": "{name}",
+        "text": "*Der Wind auf dem Dach weht.*"
+    },
+    "true_seo_7_ins": {
+        "name": "{name}",
+        "text": "*Wir hakten die kleinen Finger ein. Die Gewohnheit von Tag 1, das Versprechen von Tag 4, und jetzt. — Derselbe Finger, dritte Bedeutung.*"
+    },
+    "true_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*Yuna klettert die kleine Dachbodenleiter hoch. Es gibt eine Luke nach oben. — Als sie sich öffnet, weht eine Brise herein.*"
+    },
+    "true_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*Über dem Dachboden war ein Dach. Das Dach des Bibliotheksanbaus. — Ein geheimer Durchgang, den niemand kennt.*"
+    },
+    "true_yuna_2_ins3": {
+        "name": "{name}",
+        "text": "*Yuna lehnt sich ans Geländer. Sterne sind zu sehen.*"
+    },
+    "true_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*Yuna hält inne. — Lächelt. Ein lautloses Lächeln, das ich noch nie gesehen habe.*"
+    },
+    "hidden_true_homeroom_5_ins": {
+        "name": "{name}",
+        "text": "*Tag der Abschlussfeier. — Die Zeit ist vergangen.*"
+    },
+    "hidden_true_homeroom_5_ins2": {
+        "name": "{name}",
+        "text": "*Die Uniform ist nicht mehr steif. Nein — heute ist der Tag, an dem ich sie ablege.*"
+    },
+    "hidden_true_homeroom_2_ins": {
+        "name": "{name}",
+        "text": "*Keine Strickjacke, kein Klemmbrett. Ein gemütlicher Pullover und langer Rock. — Alltagskleidung.*"
+    },
+    "hidden_true_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "Danke."
+    },
+    "hidden_true_homeroom_3_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "...Das."
+    },
+    "hidden_true_homeroom_4_ins": {
+        "name": "{name}",
+        "text": "*Es war unbewusst. — In dem Moment, als ich den Abschluss hatte, fiel der Titel ab.*"
+    },
+    "hidden_true_homeroom_4_ins2": {
+        "name": "{name}",
+        "text": "*Sie zieht einen Umschlag hervor. Diesmal nicht braun — weiß.*"
+    },
+    "hidden_true_homeroom_4_ins3": {
+        "name": "Klassenlehrerin",
+        "text": "Ich habe das Manuskript fertiggestellt. — Ich konnte es schreiben, weil du mein erster Leser warst."
+    },
+    "hidden_true_homeroom_4_ins4": {
+        "name": "{name}",
+        "text": "Hat meine Rezension geholfen?"
+    },
+    "hidden_true_homeroom_4_ins5": {
+        "name": "Klassenlehrerin",
+        "text": "Ich habe um eine Zeile gebeten und du kamst mit drei Seiten zurück. *Schmunzelt* Eine Kreativschreib-Lehrerin, die wegen der Rezension eines Schülers fast weint — das bleibt unser Geheimnis."
+    },
+    "hidden_true_homeroom_4_ins6": {
+        "name": "{name}",
+        "text": "*Sie blickt aus dem Fenster. Kirschblüten fallen.*"
+    },
+    "hidden_true_homeroom_4_ins7": {
+        "name": "Klassenlehrerin",
+        "text": "*Dreht sich vom Fenster weg* ...Nur eines."
+    },
+    "hidden_true_homeroom_6_ins": {
+        "name": "{name}",
+        "text": "*Von Saft zu Kaffee. — Von Schüler zu Erwachsenem. Die Grenze wurde nicht überschritten — sie ist verschwunden.*"
+    },
+    "hidden_true_homeroom_7_ins": {
+        "name": "{name}",
+        "text": "*Sie lächelt. Kein trockenes Lächeln — das Lächeln von jemandem, der ein sieben Jahre altes Manuskript vollendet hat.*"
+    },
+    "hidden_true_homeroom_7_ins2": {
+        "name": "Klassenlehrerin",
+        "text": "...Eigentlich sollte ich das nicht tun. *— Ihre Stimme verklingt. Dann lächelt sie.*"
+    },
+    "hidden_true_homeroom_7_ins3": {
+        "name": "{name}",
+        "text": "*Ein letztes Mal. Dann bricht die Gewohnheit. — Sieben Jahre 'Lehrerin' sind vorbei, und der Tag, sie beim Namen zu nennen, ist gekommen.*"
+    },
+    "hidden_true_nurse_2_ins": {
+        "name": "{name}",
+        "text": "*Keine Lehrerin — einfach eine Frau.*"
+    },
+    "hidden_true_nurse_2_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "Herzlichen Glückwunsch zum Abschluss."
+    },
+    "hidden_true_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "Danke."
+    },
+    "hidden_true_nurse_8_ins": {
+        "name": "Schulkrankenschwester",
+        "text": "*Dreht die Kaffeetasse* Das Zeugnis wirkt schneller als gedacht."
+    },
+    "hidden_true_nurse_8_ins2": {
+        "name": "{name}",
+        "text": "*Der Abschluss löscht die Grenze. — Im Café statt im Krankenzimmer, mit einer Person statt einer Lehrerin.*"
+    },
+    "hidden_true_nurse_8_ins3": {
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester sieht mich an. Ohne Schalk.*"
+    },
+    "hidden_true_nurse_8_ins4": {
+        "name": "Schulkrankenschwester",
+        "text": "Weißt du, an Tag 1, als du ins Krankenzimmer kamst."
+    },
+    "hidden_true_nurse_8_ins5": {
+        "name": "{name}",
+        "text": "Weil mir schwindelig war."
+    },
+    "hidden_true_nurse_8_ins6": {
+        "name": "Schulkrankenschwester",
+        "text": "Ich habe deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen.' Das war ein Witz."
+    },
+    "hidden_true_nurse_8_ins7": {
+        "name": "{name}",
+        "text": "Ich weiß."
+    },
+    "hidden_true_nurse_5_ins": {
+        "name": "{name}",
+        "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit vollständig verschwunden. — Das ist ihre Aufrichtigkeit.*"
+    },
+    "hidden_true_nurse_5_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "Eine Lehrerin sollte keine Gefühle für einen Schüler entwickeln. Das wusste ich. — Also habe ich alles immer wieder in Witze verpackt."
+    },
+    "hidden_true_nurse_5_ins3": {
+        "name": "Schulkrankenschwester",
+        "text": "Aber du hast die Aufrichtigkeit hinter den Witzen erkannt."
+    },
+    "hidden_true_nurse_5_ins4": {
+        "name": "{name}",
+        "text": "Drei Minuten für ein Pflaster — das ist nicht nur Sorgfalt."
+    },
+    "hidden_true_nurse_5_ins5": {
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester hält inne. — Dann lächelt sie. Kein verspieltes Lächeln.*"
+    },
+    "hidden_true_nurse_7_ins": {
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester streckt die Hand aus und berührt das Pflaster auf meinem Handrücken. Das von gestern.*"
+    },
+    "hidden_true_nurse_7_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "Ab jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden."
+    },
+    "hidden_true_nurse_7_ins3": {
+        "name": "{name}",
+        "text": "*Die Person, die Ausreden brauchte. — Der Titel 'Lehrerin' war ihre Ausrede und ihre Mauer zugleich. Diese Mauer ist heute verschwunden.*"
+    },
+    "hidden_good_nurse_2_ins": {
+        "name": "{name}",
+        "text": "Medizinisches Interesse?"
+    },
+    "hidden_good_nurse_2_ins2": {
+        "name": "Schulkrankenschwester",
+        "text": "*Kurz innehaltend* ...Ja. Medizinisches Interesse. *Leise* Diesmal wirklich."
+    },
+    "hidden_good_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "*'Diesmal wirklich.' — Was bedeutet, dass es die anderen Male nicht war.*"
+    },
+    "hidden_good_nurse_3_ins": {
+        "name": "{name}",
+        "text": "*Ich verließ das Krankenzimmer. Dieses Herz — diesmal ist es definitiv kein medizinisches Interesse.*"
+    },
+    "good_1_seo_ins": {
+        "name": "{name}",
+        "text": "*Ein Kirschblütenblatt landet auf Seoyeons Haar. Ich überlege, ob ich es wegstreichen soll — als Seoyeon zuerst den Kopf neigt.*"
+    },
+    "good_1_seo_ins2": {
+        "name": "{name}",
+        "text": "*Sie tut so, als wäre sie perfekt, aber ich war auch nicht perfekt.*"
+    },
+    "good_1_seo_ins3": {
+        "name": "{name}",
+        "text": "*Die Kirschblüten werden nächstes Jahr wieder blühen. Wir gingen nebeneinander.*"
+    },
+    "good_1_yuna_b_ins": {
+        "name": "{name}",
+        "text": "*Sie jagte dem Schatten einer verschwundenen Person nach.*"
+    },
+    "bitter_seo_2_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon im Café. Ihr Blick hinter der Brille ist nüchtern. Keine Gelassenheit, kein Zittern. Nur — die Augen von jemandem, der zum Abschließen gekommen ist.*"
+    },
+    "bitter_dain_3_ins": {
+        "name": "{name}",
+        "text": "*Ich ging durchs Schultor hinaus. Es regnet. — Kein Regenschirm. Kirschblütenblätter kleben am nassen Boden unter meinen Füßen.*"
+    },
+    "harem_1_ins": {
+        "name": "{name}",
+        "text": "*Yuna senkte den Kopf. Lange. Als sie wieder aufblickte, waren ihre Augen trocken, aber sie lächelte. ...Idiot. In diesem einen Wort steckte die Emotion von zwei Sätzen.*"
+    },
+    "alone_2_ins": {
+        "name": "{name}",
+        "text": "*Kirschblüten fallen vor dem Fenster. Dieselben, die vor fünf Tagen meine Nasenspitze streiften, werden jetzt vom Wind davongetragen.*"
+    }
 }
