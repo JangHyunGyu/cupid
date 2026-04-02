@@ -15662,7 +15662,7 @@
 
 ### `date_seo_pretty_high_3_ins`
 - 배경: `park.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_shy2.png`
 - 다음: `date_seo_pretty_high_4`
 
 **서연**: *머리카락을 넘기며* ...착각하지 마.
