@@ -523,12 +523,12 @@ const _scenes = {
         "next": "after_miss_yuna_4"
     },
     "after_hidden_homeroom_3_ins": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_homeroom_3_ins2"
     },
     "after_hidden_homeroom_3_ins2": {
-        "background": "assets/images/background/school_hallway.png",
+        "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "after_hidden_homeroom_4"
     },
