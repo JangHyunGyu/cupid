@@ -189,7 +189,7 @@
     },
     "classroom_4": {
         "name": "{name}",
-        "text": "Soy {name}. Encantado de conoceros."
+        "text": "Soy {name}. Encantado de conocerlos."
     },
     "classroom_5": {
         "name": "{name}",
@@ -205,7 +205,7 @@
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Corte bob castaño. Con uniforme del equipo de voleibol. Una voz rebosante de energía. Está medio levantada de su asiento. La chica de al lado la jala del brazo, pero no sirve de nada.*"
+        "text": "*Corte bob castaño. Con uniforme del equipo de voleibol. Una voz rebosante de energía. Está medio levantada de su asiento. La chica de al lado la tira del brazo, pero no sirve de nada.*"
     },
     "classroom_dain_3": {
         "name": "Profesora",

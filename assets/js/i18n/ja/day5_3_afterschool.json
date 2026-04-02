@@ -9,7 +9,7 @@
   },
   "after5_farewell_seo_2": {
     "name": "ソヨン",
-    "text": "「…ふぅ。」"
+    "text": "…ふぅ。"
   },
   "after5_farewell_seo_3": {
     "name": "{name}",
@@ -17,15 +17,15 @@
   },
   "after5_farewell_seo_4": {
     "name": "ソヨン",
-    "text": "「まあ、分かってた。あんたは最初から私の思い通りにならなかったから。」"
+    "text": "まあ、分かってた。あんたは私の計画にない変数だったから。"
   },
   "after5_farewell_seo_5": {
     "name": "{name}",
-    "text": "「ソヨン…」"
+    "text": "ソヨン…"
   },
   "after5_farewell_seo_6": {
     "name": "ソヨン",
-    "text": "「次は私が先に連れて行くから。」"
+    "text": "次は私が先に連れて行くから。"
   },
   "after5_farewell_seo_7": {
     "name": "{name}",
@@ -49,7 +49,7 @@
   },
   "after5_farewell_yuna_5": {
     "name": "{name}",
-    "text": "*ユナの『楽しかった』は、普通の人の『ありがとう、好きだった、また会おう』を全部圧縮した言葉だ。*"
+    "text": "*『楽しかった』。——ユナが言える中で、一番大きな言葉だったんだろう。*"
   },
   "after5_farewell_dain_1": {
     "name": "{name}",
@@ -57,15 +57,15 @@
   },
   "after5_farewell_dain_2": {
     "name": "ダイン",
-    "text": "「ちっ、残念！」"
+    "text": "ちっ、残念！"
   },
   "after5_farewell_dain_3": {
     "name": "{name}",
-    "text": "「ダイン…」"
+    "text": "ダイン…"
   },
   "after5_farewell_dain_4": {
     "name": "ダイン",
-    "text": "「でもまあ、あんたが選んだんだから。次は私にもチャンスちょうだいよね！」"
+    "text": "でもまあ、あんたが選んだんだから。次は私にもチャンスちょうだいよね！"
   },
   "after5_farewell_dain_5": {
     "name": "{name}",
@@ -113,7 +113,7 @@
   },
   "after5_confess_yes_2": {
     "name": "{name}",
-    "text": "「あのさ——僕、君に言いたいことがあるんだ。」"
+    "text": "あのさ——僕、君に言いたいことがあるんだ。"
   },
   "after5_confess_react_seo": {
     "name": "ソヨン",
@@ -169,7 +169,7 @@
   },
   "after5_farewell_dain_4_ins2": {
     "name": "ダイン",
-    "text": "「……うまくやりなよ。マジで。」"
+    "text": "……うまくやりなよ。マジで。"
   },
   "after5_farewell_dain_4_ins3": {
     "name": "{name}",
@@ -193,7 +193,7 @@
   },
   "after5_last_chance_2_ins5": {
     "name": "ソヨン",
-    "text": "「……遅い。」"
+    "text": "……遅い。"
   },
   "after5_last_chance_2_ins6": {
     "name": "{name}",
@@ -201,7 +201,7 @@
   },
   "after5_last_chance_2_ins7": {
     "name": "ソヨン",
-    "text": "「でも——遅くない。逃げずに戻ってきたから。」"
+    "text": "でも——遅くない。逃げずに戻ってきたから。"
   },
   "after5_last_chance_2_ins8": {
     "name": "{name}",
@@ -209,7 +209,7 @@
   },
   "after5_last_chance_2_ins9": {
     "name": "ソヨン",
-    "text": "「今度はちゃんと握って。」"
+    "text": "今度はちゃんと握って。"
   },
   "after5_last_chance_2_ins10": {
     "name": "{name}",
@@ -225,7 +225,7 @@
   },
   "after5_last_chance_2_ins13": {
     "name": "ダイン",
-    "text": "「え、マジで？！」"
+    "text": "え、マジで？！"
   },
   "after5_last_chance_2_ins14": {
     "name": "{name}",
@@ -233,7 +233,7 @@
   },
   "after5_last_chance_2_ins15": {
     "name": "ダイン",
-    "text": "「……マジで？」"
+    "text": "……マジで？"
   },
   "after5_last_chance_2_ins16": {
     "name": "{name}",
@@ -241,7 +241,7 @@
   },
   "after5_last_chance_2_ins17": {
     "name": "ダイン",
-    "text": "「あたし——待ってたんだよ。昨日から。ていうか一昨日から。」"
+    "text": "あたし——待ってたんだよ。昨日から。ていうか一昨日から。"
   },
   "after5_last_chance_2_ins18": {
     "name": "{name}",
@@ -249,7 +249,7 @@
   },
   "after5_last_chance_2_ins19": {
     "name": "ダイン",
-    "text": "「もー なんで泣くの——嬉しいことなのに——」"
+    "text": "もー なんで泣くの——嬉しいことなのに——"
   },
   "after5_confess_react_yuna_ins": {
     "name": "{name}",
@@ -257,7 +257,7 @@
   },
   "after5_confess_react_yuna_ins2": {
     "name": "ユナ",
-    "text": "「……知ってた。」"
+    "text": "……知ってた。"
   },
   "after5_confess_react_yuna_ins3": {
     "name": "{name}",
@@ -265,7 +265,7 @@
   },
   "after5_confess_react_yuna_ins4": {
     "name": "{name}",
-    "text": "*「待ってた。——ずっと。」*"
+    "text": "*待ってた。——ずっと。*"
   },
   "after5_confess_react_yuna_ins5": {
     "name": "{name}",
@@ -273,7 +273,7 @@
   },
   "after5_confess_react_yuna_ins6": {
     "name": "ユナ",
-    "text": "「……読んでくれたなら、それでいい。」"
+    "text": "……読んでくれたなら、それでいい。"
   },
   "after5_confess_react_yuna_ins7": {
     "name": "{name}",

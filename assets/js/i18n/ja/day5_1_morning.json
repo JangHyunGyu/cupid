@@ -37,11 +37,11 @@
   },
   "morning5_dain_1": {
     "name": "ダイン",
-    "text": "「ねえ！今日の体育イベント、パートナーにあんたって書いておいたから！」"
+    "text": "ねえ！今日の体育イベント、パートナーにあんたって書いておいたから！"
   },
   "morning5_dain_2": {
     "name": "ダイン",
-    "text": "「逃げたら本気で怒るよ？」"
+    "text": "逃げたら本気で怒るよ？"
   },
   "morning5_end": {
     "name": "{name}",
@@ -57,19 +57,19 @@
   },
   "hidden_homeroom_d5_2": {
     "name": "担任先生",
-    "text": "「原稿。——未完成だけど。最初の読者に渡そうと思って。」"
+    "text": "原稿。——未完成だけど。最初の読者に渡そうと思って。"
   },
   "hidden_homeroom_d5_3": {
     "name": "担任先生",
-    "text": "「7年間誰にも見せなかった。——業務外の行動ではあるんだけど。」"
+    "text": "7年間誰にも見せなかった。——業務外の行動ではあるんだけど。"
   },
   "hidden_homeroom_d5_4": {
     "name": "{name}",
-    "text": "「...原稿を受け取る。思ったより重い。」"
+    "text": "...原稿を受け取る。思ったより重い。"
   },
   "hidden_homeroom_d5_5": {
     "name": "担任先生",
-    "text": "「...最初の読者に渡すの、思ったより緊張する。」"
+    "text": "...最初の読者に渡すの、思ったより緊張する。"
   },
   "hidden_homeroom_d5_choice": {
     "name": "{name}",
@@ -89,7 +89,7 @@
   },
   "hidden_homeroom_d5_choice_b_ins": {
     "name": "{name}",
-    "text": "「書評書いてもいいですか？」"
+    "text": "書評書いてもいいですか？"
   },
   "hidden_homeroom_d5_choice_b_ins2": {
     "name": "担任先生",
@@ -97,7 +97,7 @@
   },
   "hidden_homeroom_d5_choice_b_ins3": {
     "name": "{name}",
-    "text": "*もう一作。——7年かけて完成させた人が「もう一作」と言っている。*"
+    "text": "*もう一作。——7年かけて完成させた人がもう一作と言っている。*"
   },
   "hidden_homeroom_d5_6": {
     "name": "担任先生",
@@ -105,7 +105,7 @@
   },
   "hidden_homeroom_d5_7": {
     "name": "担任先生",
-    "text": "「卒業したら——会おう。先生と生徒じゃない名前で。」"
+    "text": "卒業したら——会おう。先生と生徒じゃない名前で。"
   },
   "hidden_homeroom_d5_8": {
     "name": "{name}",
@@ -123,7 +123,7 @@
   },
   "hidden_nurse_d5_1": {
     "name": "保健先生",
-    "text": "「え？{name}。——最後の日だね。イベント最終日じゃん。5日間。——あっという間だ。」"
+    "text": "え？{name}。——最後の日だね。イベント最終日じゃん。5日間。——あっという間だ。"
   },
   "hidden_nurse_d5_2": {
     "name": "保健先生",
@@ -131,7 +131,7 @@
   },
   "hidden_nurse_d5_3": {
     "name": "{name}",
-    "text": "「痛くなくても行っちゃダメですか？」"
+    "text": "痛くなくても行っちゃダメですか？"
   },
   "hidden_nurse_d5_4": {
     "name": "保健先生",
@@ -139,7 +139,7 @@
   },
   "hidden_nurse_d5_5": {
     "name": "保健先生",
-    "text": "「…{name}。絆創膏貼ってあげようか？」"
+    "text": "…{name}。絆創膏貼ってあげようか？"
   },
   "hidden_nurse_d5_choice": {
     "name": "{name}",
@@ -155,7 +155,7 @@
   },
   "hidden_nurse_d5_choice_a_ins": {
     "name": "保健先生",
-    "text": "「……一回だけって言ったくせに、なんでそんなこと言うの。」"
+    "text": "……一回だけって言ったくせに、なんでそんなこと言うの。"
   },
   "hidden_nurse_d5_choice_b": {
     "name": "保健先生",
@@ -163,7 +163,7 @@
   },
   "hidden_nurse_d5_6": {
     "name": "保健先生",
-    "text": "「わかってる。ただ口実が必要だったの。」"
+    "text": "わかってる。ただ口実が必要だったの。"
   },
   "hidden_nurse_d5_7": {
     "name": "{name}",
@@ -205,7 +205,7 @@
   },
   "hidden_homeroom_d5_1_ins": {
     "name": "担任先生",
-    "text": "「……あ。」"
+    "text": "……あ。"
   },
   "hidden_homeroom_d5_1_ins2": {
     "name": "{name}",
@@ -213,7 +213,7 @@
   },
   "hidden_homeroom_d5_1_ins3": {
     "name": "担任先生",
-    "text": "*封筒をちらっと見せながら*「……これ。」"
+    "text": "*封筒をちらっと見せながら*……これ。"
   },
   "hidden_homeroom_d5_1_ins4": {
     "name": "{name}",
@@ -229,7 +229,7 @@
   },
   "hidden_homeroom_d5_6_ins3": {
     "name": "担任先生",
-    "text": "「7年間、誰にも見せなかった。——業務外の行動ではあるんだけど。」"
+    "text": "7年間、誰にも見せなかった。——業務外の行動ではあるんだけど。"
   },
   "hidden_homeroom_d5_6_ins4": {
     "name": "{name}",
@@ -245,7 +245,7 @@
   },
   "hidden_homeroom_d5_6_ins7": {
     "name": "担任先生",
-    "text": "「……生徒にそう言われる日が来るとは思わなかった。」"
+    "text": "……生徒にそう言われる日が来るとは思わなかった。"
   },
   "hidden_homeroom_d5_6_ins8": {
     "name": "{name}",
@@ -253,7 +253,7 @@
   },
   "hidden_homeroom_d5_6_ins9": {
     "name": "担任先生",
-    "text": "「……最初の読者になってくれる？」"
+    "text": "……最初の読者になってくれる？"
   },
   "hidden_homeroom_d5_6_ins10": {
     "name": "{name}",
@@ -265,7 +265,7 @@
   },
   "hidden_homeroom_d5_6_ins12": {
     "name": "担任先生",
-    "text": "*髪をかき上げながら*「……感想文はいらない。」"
+    "text": "*髪をかき上げながら*……感想文はいらない。"
   },
   "hidden_homeroom_d5_6_ins13": {
     "name": "{name}",
@@ -273,7 +273,7 @@
   },
   "hidden_homeroom_d5_6_ins14": {
     "name": "担任先生",
-    "text": "*ふっと笑って*「……そうだね。一行でもいいから書いて。」"
+    "text": "*ふっと笑って*……そうだね。一行でもいいから書いて。"
   },
   "hidden_homeroom_d5_6_ins15": {
     "name": "{name}",
@@ -285,7 +285,7 @@
   },
   "hidden_homeroom_d5_6_ins17": {
     "name": "担任先生",
-    "text": "「{name}。」"
+    "text": "{name}。"
   },
   "hidden_homeroom_d5_6_ins18": {
     "name": "{name}",
@@ -293,19 +293,19 @@
   },
   "hidden_homeroom_d5_6_ins19": {
     "name": "担任先生",
-    "text": "「……卒業したら。」*声がかすれる。*「うん。卒業したら。」"
+    "text": "……卒業したら。*声がかすれる。*うん。卒業したら。"
   },
   "hidden_homeroom_d5_6_ins20": {
     "name": "{name}",
-    "text": "*「卒業したら」が二回。——一回目は許可、二回目は待つことの表明。*"
+    "text": "*卒業したらが二回。——一回目は許可、二回目は待つことの表明。*"
   },
   "hidden_homeroom_d5_7_ins": {
     "name": "{name}",
-    "text": "*「先生としてではない名前で」。——卒業後のことを言っている。今ではないけど、いつか。*"
+    "text": "*先生としてではない名前で。——卒業後のことを言っている。今ではないけど、いつか。*"
   },
   "hidden_homeroom_d5_7_ins2": {
     "name": "担任先生",
-    "text": "「……教育的関心の範囲をちょっと超えちゃったかな。最後だから。最後の一回だけ。」"
+    "text": "……教育的関心の範囲をちょっと超えちゃったかな。最後だから。最後の一回だけ。"
   },
   "hidden_nurse_d5_2_ins": {
     "name": "{name}",
@@ -317,7 +317,7 @@
   },
   "hidden_nurse_d5_2_ins3": {
     "name": "保健先生",
-    "text": "「あれ？{name}。」"
+    "text": "あれ？{name}。"
   },
   "hidden_nurse_d5_4_ins": {
     "name": "{name}",
@@ -329,7 +329,7 @@
   },
   "hidden_nurse_d5_4_ins3": {
     "name": "保健先生",
-    "text": "「最後の日だね。」"
+    "text": "最後の日だね。"
   },
   "hidden_nurse_d5_1_ins": {
     "name": "{name}",
@@ -337,7 +337,7 @@
   },
   "hidden_nurse_d5_1_ins2": {
     "name": "保健先生",
-    "text": "*軽く笑って*「卒業したら遊びに来て。」"
+    "text": "*軽く笑って*卒業したら遊びに来て。"
   },
   "hidden_nurse_d5_1_ins3": {
     "name": "{name}",
@@ -345,11 +345,11 @@
   },
   "hidden_nurse_d5_1_ins4": {
     "name": "保健先生",
-    "text": "「……それまでは、具合が悪かったら来て。」"
+    "text": "……それまでは、具合が悪かったら来て。"
   },
   "hidden_nurse_d5_1_ins5": {
     "name": "{name}",
-    "text": "*「卒業したら遊びに来て」から「具合が悪かったら来て」に後退した。——線を越えかけて、戻ったんだ。*"
+    "text": "*卒業したら遊びに来てから具合が悪かったら来てに後退した。——線を越えかけて、戻ったんだ。*"
   },
   "hidden_nurse_d5_3_ins": {
     "name": "{name}",
@@ -357,7 +357,7 @@
   },
   "hidden_nurse_d5_3_ins2": {
     "name": "保健先生",
-    "text": "「……それは。」"
+    "text": "……それは。"
   },
   "hidden_nurse_d5_3_ins3": {
     "name": "{name}",
@@ -365,15 +365,15 @@
   },
   "hidden_nurse_d5_3_ins4": {
     "name": "保健先生",
-    "text": "*また笑って*「それは卒業してから聞いて。——その時は答えるから。」"
+    "text": "*また笑って*それは卒業してから聞いて。——その時は答えるから。"
   },
   "hidden_nurse_d5_3_ins5": {
     "name": "{name}",
-    "text": "*「卒業してから」。——担任先生と同じ言葉だ。今はダメだけど、いつか。「先生」という肩書きが外れる日。*"
+    "text": "*卒業してから。——担任先生と同じ言葉だ。今はダメだけど、いつか。先生という肩書きが外れる日。*"
   },
   "hidden_nurse_d5_3_ins6": {
     "name": "保健先生",
-    "text": "「さ、行って。行事サボっちゃダメでしょ～」"
+    "text": "さ、行って。行事サボっちゃダメでしょ～"
   },
   "hidden_nurse_d5_3_ins7": {
     "name": "{name}",
@@ -381,7 +381,7 @@
   },
   "hidden_nurse_d5_3_ins8": {
     "name": "保健先生",
-    "text": "「……{name}。」"
+    "text": "……{name}。"
   },
   "hidden_nurse_d5_choice_b_ins2": {
     "name": "{name}",
@@ -393,19 +393,19 @@
   },
   "hidden_nurse_d5_choice_b_ins4": {
     "name": "保健先生",
-    "text": "「……電話番号。医療相談用？」"
+    "text": "……電話番号。医療相談用？"
   },
   "hidden_nurse_d5_choice_b_ins5": {
     "name": "保健先生",
-    "text": "*眼鏡を直しながら*「……わかった。でも卒業してから使って。」"
+    "text": "*眼鏡を直しながら*……わかった。でも卒業してから使って。"
   },
   "hidden_nurse_d5_choice_b_ins6": {
     "name": "{name}",
-    "text": "*「卒業してから」。——この人は線を越えない。でも線のギリギリに電話番号を置いた。*"
+    "text": "*卒業してから。——この人は線を越えない。でも線のギリギリに電話番号を置いた。*"
   },
   "hidden_nurse_d5_choice_b_ins7": {
     "name": "保健先生",
-    "text": "「バンドエイド貼ろうか？」"
+    "text": "バンドエイド貼ろうか？"
   },
   "hidden_nurse_d5_choice_b_ins8": {
     "name": "{name}",
@@ -421,7 +421,7 @@
   },
   "hidden_nurse_d5_6_ins3": {
     "name": "{name}",
-    "text": "*「卒業したら保健室じゃなくてカフェで会おう——♡」*"
+    "text": "*卒業したら保健室じゃなくてカフェで会おう——♡*"
   },
   "hidden_nurse_d5_6_ins4": {
     "name": "{name}",

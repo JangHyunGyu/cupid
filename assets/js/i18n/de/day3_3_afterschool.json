@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Ich packe meine Tasche.*"
+        "text": "*Nach der Schule. Die Nachwirkungen der Mittagspause hallen noch nach. — Trotzdem muss ich irgendwohin.*"
     },
     "after3_route_check": {
         "name": "{name}",

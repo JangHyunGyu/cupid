@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Después de clases. Recojo mi mochila.*"
+        "text": "*Después de clases. El eco del almuerzo aún pesa. — Aun así, tengo que ir a algún sitio.*"
     },
     "after3_route_check": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "minsu_d3_5": {
         "name": "Minsu",
-        "text": "Tío, a mí también me cuesta verlo desde fuera. Son buenas personas las tres. — Sé que no eres mala persona. Es que no sabes rechazar."
+        "text": "Oye, a mí también me cuesta verlo desde fuera. Son buenas personas las tres. — Sé que no eres mala persona. Es que no sabes rechazar."
     },
     "minsu_d3_6": {
         "name": "{name}",

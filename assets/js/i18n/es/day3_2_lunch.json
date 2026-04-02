@@ -155,7 +155,7 @@
     },
     "lunch3_expose_14": {
         "name": "Minsu",
-        "text": "...Tío. ¿Estás loco?"
+        "text": "...Oye. ¿Estás loco?"
     },
     "lunch3_expose_15": {
         "name": "{name}",
@@ -165,14 +165,14 @@
         "name": "{name}",
         "text": "*¿Qué debería decir...?*",
         "choices": [
-            "Lo siento. Sois tan buenas que no pude rechazar a nadie.",
+            "Lo siento. Son tan buenas que no pude rechazar a nadie.",
             "Los horarios son diferentes, así que pensé que no pasaría nada...",
             "Huir"
         ]
     },
     "lunch3_expose_honest_1": {
         "name": "{name}",
-        "text": "Lo siento. Sois tan buenas que no pude rechazar a nadie."
+        "text": "Lo siento. Son tan buenas que no pude rechazar a nadie."
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",

@@ -95,7 +95,7 @@ const _scenes = {
     },
     "after3_reject_for_yuna_walk_gym": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": null,
         "next": "after3_reject_for_yuna_3"
     },
     "after3_reject_for_yuna_3": {
@@ -357,7 +357,7 @@ const _scenes = {
     },
     "after3_dain_3": {
         "background": "assets/images/background/dain_hurt_event1.png",
-        "character": null,
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "after3_dain_4"
     },
     "after3_dain_4": {
@@ -839,7 +839,7 @@ const _scenes = {
     },
     "haeun_warn_1_ins": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "haeun_warn_2"
     },
     "haeun_warn_2_ins": {

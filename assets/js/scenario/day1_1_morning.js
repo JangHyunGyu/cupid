@@ -418,7 +418,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_2_ins": {
         "background": "assets/images/background/room_school.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_3"
     },
     "classroom_3_ins": {

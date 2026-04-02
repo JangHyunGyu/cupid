@@ -21,23 +21,23 @@
   },
   "date_seo_pretty_high_2": {
     "name": "ソヨン",
-    "text": "「…そんなセリフ、用意してきたの？」"
+    "text": "…そんなセリフ、用意してきたの？"
   },
   "date_seo_pretty_high_3": {
     "name": "{name}",
-    "text": "「今出てきた言葉だよ。」"
+    "text": "今出てきた言葉だよ。"
   },
   "date_seo_pretty_high_4": {
     "name": "{name}",
-    "text": "*「勘違いしないでよ」と言ったけど——耳が赤い。また。*"
+    "text": "*勘違いしないでよと言ったけど——耳が赤い。また。*"
   },
   "date_seo_pretty_low": {
     "name": "ソヨン",
-    "text": "「…何よ急に。そういうのは予告してから言ってよ。」"
+    "text": "…何よ急に。そういうのは予告してから言ってよ。"
   },
   "date_seo_bright": {
     "name": "ソヨン",
-    "text": "「当然でしょ。今日はちょっと気合い入れたんだから。」"
+    "text": "当然でしょ。今日はちょっと気合い入れたんだから。"
   },
   "date_seo_walk": {
     "name": "{name}",
@@ -45,15 +45,15 @@
   },
   "date_seo_duck": {
     "name": "ソヨン",
-    "text": "「この子たちは単純でいいよね。パンをあげればついてくるし、あげなければ来ない。」"
+    "text": "この子たちは単純でいいよね。パンをあげればついてくるし、あげなければ来ない。"
   },
   "date_seo_duck_2": {
     "name": "{name}",
-    "text": "「人間もそんなもんじゃない？」"
+    "text": "人間もそんなもんじゃない？"
   },
   "date_seo_duck_3": {
     "name": "ソヨン",
-    "text": "「人間はパンをあげても来ない時があるから。」"
+    "text": "人間はパンをあげても来ない時があるから。"
   },
   "date_seo_duck_4": {
     "name": "{name}",
@@ -65,7 +65,7 @@
   },
   "date_seo_flower_2": {
     "name": "ソヨン",
-    "text": "「…入ってみる？」"
+    "text": "…入ってみる？"
   },
   "date_seo_succulent": {
     "name": "{name}",
@@ -73,11 +73,11 @@
   },
   "date_seo_succulent_2": {
     "name": "ソヨン",
-    "text": "「これは育てやすいよ。水をあげなくてもちゃんと生きるから。」"
+    "text": "これは育てやすいよ。水をあげなくてもちゃんと生きるから。"
   },
   "date_seo_succulent_3": {
     "name": "ソヨン",
-    "text": "「育てられるなら。――育てられなかったら私が引き取るからね。」"
+    "text": "育てられるなら。――育てられなかったら私が引き取るからね。"
   },
   "date_seo_end": {
     "name": "{name}",
@@ -105,27 +105,27 @@
   },
   "date_yuna_pretty_high_2": {
     "name": "ユナ",
-    "text": "「…それ。」"
+    "text": "…それ。"
   },
   "date_yuna_pretty_high_3": {
     "name": "{name}",
-    "text": "「ん？」"
+    "text": "ん？"
   },
   "date_yuna_pretty_high_4": {
     "name": "ユナ",
-    "text": "「もう一回言って。」"
+    "text": "もう一回言って。"
   },
   "date_yuna_pretty_high_5": {
     "name": "{name}",
-    "text": "*もう一回？――ユナが「もう一回」を求めてくる。*"
+    "text": "*もう一回？――ユナがもう一回を求めてくる。*"
   },
   "date_yuna_pretty_low": {
     "name": "ユナ",
-    "text": "「…そんなこと、初めて言われた。」"
+    "text": "…そんなこと、初めて言われた。"
   },
   "date_yuna_bright": {
     "name": "ユナ",
-    "text": "「…別に明るくはないけど。」"
+    "text": "…別に明るくはないけど。"
   },
   "date_yuna_bookstore": {
     "name": "{name}",
@@ -133,11 +133,11 @@
   },
   "date_yuna_bookstore_2": {
     "name": "ユナ",
-    "text": "「ここ、来たことある？」"
+    "text": "ここ、来たことある？"
   },
   "date_yuna_bookstore_3": {
     "name": "ユナ",
-    "text": "「…よかった。私が先に見せたってことだね。」"
+    "text": "…よかった。私が先に見せたってことだね。"
   },
   "date_yuna_earphone": {
     "name": "{name}",
@@ -145,7 +145,7 @@
   },
   "date_yuna_earphone_2": {
     "name": "ユナ",
-    "text": "「…聴いて。」"
+    "text": "…聴いて。"
   },
   "date_yuna_earphone_3": {
     "name": "{name}",
@@ -157,19 +157,19 @@
   },
   "date_yuna_oldbook_2": {
     "name": "ユナ",
-    "text": "「この本、1年前に読んだ。あの時は結末が悲しかった。」"
+    "text": "この本、1年前に読んだ。あの時は結末が悲しかった。"
   },
   "date_yuna_oldbook_3": {
     "name": "{name}",
-    "text": "「今は？」"
+    "text": "今は？"
   },
   "date_yuna_oldbook_4": {
     "name": "ユナ",
-    "text": "「…今は違うふうに読める。」"
+    "text": "…今は違うふうに読める。"
   },
   "date_yuna_end": {
     "name": "{name}",
-    "text": "*ユナが僕を見てそう言う。――その目に「あなたのおかげで」と書いてある。*"
+    "text": "*ユナが僕を見てそう言う。――その目にあなたのおかげでと書いてある。*"
   },
   "date_dain_1": {
     "name": "{name}",
@@ -177,15 +177,15 @@
   },
   "date_dain_2": {
     "name": "ダイン",
-    "text": "「来た!! 遅れるところだったでしょ？！」"
+    "text": "来た!! 遅れるところだったでしょ？！"
   },
   "date_dain_3": {
     "name": "{name}",
-    "text": "「10分前に来たんだけど。」"
+    "text": "10分前に来たんだけど。"
   },
   "date_dain_4": {
     "name": "ダイン",
-    "text": "「私は20分前に来たんだからね!!」"
+    "text": "私は20分前に来たんだからね!!"
   },
   "date_dain_compliment_choice": {
     "name": "{name}",
@@ -201,11 +201,11 @@
   },
   "date_dain_pretty_high_2": {
     "name": "ダイン",
-    "text": "「ちょっ！！予告なしに！！そういうこと言うなって！！」"
+    "text": "ちょっ！！予告なしに！！そういうこと言うなって！！"
   },
   "date_dain_pretty_high_3": {
     "name": "{name}",
-    "text": "「本当のことだよ。」"
+    "text": "本当のことだよ。"
   },
   "date_dain_pretty_high_4": {
     "name": "{name}",
@@ -213,11 +213,11 @@
   },
   "date_dain_pretty_low": {
     "name": "ダイン",
-    "text": "「え、急に！！ ……笑 ありがとうだけど、恥ずかしいからもうやめて。」"
+    "text": "え、急に！！ ……笑 ありがとうだけど、恥ずかしいからもうやめて。"
   },
   "date_dain_bright": {
     "name": "ダイン",
-    "text": "「当然でしょ!! 今日はコンディション最高なんだから!!」"
+    "text": "当然でしょ!! 今日はコンディション最高なんだから!!"
   },
   "date_dain_arcade": {
     "name": "{name}",
@@ -225,27 +225,27 @@
   },
   "date_dain_arcade_2": {
     "name": "ダイン",
-    "text": "「さあ、勝負だ!! 負けた方がジュース!!」"
+    "text": "さあ、勝負だ!! 負けた方がジュース!!"
   },
   "date_dain_arcade_3": {
     "name": "ダイン",
-    "text": "「賭けがないとつまんないじゃん!!」"
+    "text": "賭けがないとつまんないじゃん!!"
   },
   "date_dain_rhythm": {
     "name": "ダイン",
-    "text": "「フルコンボ!! 見た？！」"
+    "text": "フルコンボ!! 見た？！"
   },
   "date_dain_rhythm_2": {
     "name": "{name}",
-    "text": "「…すごいな。」"
+    "text": "…すごいな。"
   },
   "date_dain_rhythm_3": {
     "name": "ダイン",
-    "text": "「ｗｗｗ当然でしょ!! これは膝使わなくていいからね!!」"
+    "text": "ｗｗｗ当然でしょ!! これは膝使わなくていいからね!!"
   },
   "date_dain_knee": {
     "name": "{name}",
-    "text": "*「膝使わなくていいからね」。――軽く言ったけど、そこに重みがある。*"
+    "text": "*膝使わなくていいからね。――軽く言ったけど、そこに重みがある。*"
   },
   "date_dain_knee_2": {
     "name": "{name}",
@@ -257,11 +257,11 @@
   },
   "date_dain_shop_2": {
     "name": "{name}",
-    "text": "「ダイン？」"
+    "text": "ダイン？"
   },
   "date_dain_shop_3": {
     "name": "ダイン",
-    "text": "「なんでもない! 行こう!」"
+    "text": "なんでもない! 行こう!"
   },
   "date_dain_end": {
     "name": "{name}",
@@ -287,11 +287,11 @@
   },
   "pre_confess_minsu": {
     "name": "ミンス",
-    "text": "「おい、デート中だろ？一言だけ」"
+    "text": "おい、デート中だろ？一言だけ"
   },
   "pre_confess_minsu_2": {
     "name": "ミンス",
-    "text": "「今度はちゃんとやれ。逃げるなよ」"
+    "text": "今度はちゃんとやれ。逃げるなよ"
   },
   "pre_confess_callback": {
     "name": "{name}",
@@ -311,19 +311,19 @@
   },
   "date_seo_pretty_high_ins": {
     "name": "ソヨン",
-    "text": "「……その台詞。用意してきたの？」"
+    "text": "……その台詞。用意してきたの？"
   },
   "date_seo_pretty_high_3_ins": {
     "name": "ソヨン",
-    "text": "*髪をかき上げながら* 「……勘違いしないで。"
+    "text": "*髪をかき上げながら* ……勘違いしないで。"
   },
   "date_seo_flower_ins": {
     "name": "ソヨン",
-    "text": "*足を止めて* 「……入ってみる？"
+    "text": "*足を止めて* ……入ってみる？"
   },
   "date_seo_succulent_2_ins": {
     "name": "{name}",
-    "text": "俺にくれるの？"
+    "text": "僕にくれるの？"
   },
   "date_yuna_pretty_high_5_ins": {
     "name": "{name}",
@@ -331,7 +331,7 @@
   },
   "date_yuna_pretty_high_5_ins2": {
     "name": "ユナ",
-    "text": "*耳が赤くなりながら* 「……もういい。"
+    "text": "*耳が赤くなりながら* ……もういい。"
   },
   "date_yuna_bookstore_2_ins": {
     "name": "{name}",
@@ -343,7 +343,7 @@
   },
   "date_yuna_oldbook_ins": {
     "name": "ユナ",
-    "text": "「……ここ。」"
+    "text": "……ここ。"
   },
   "date_yuna_oldbook_ins2": {
     "name": "{name}",
@@ -351,7 +351,7 @@
   },
   "date_dain_shop_3_ins": {
     "name": "ダイン",
-    "text": "*キャップの下から* 「……もう一回言ったらマジで殴る。"
+    "text": "*キャップの下から* ……もう一回言ったらマジで殴る。"
   },
   "date_dain_arcade_2_ins": {
     "name": "{name}",
@@ -363,10 +363,10 @@
   },
   "date_dain_arcade_3_ins2": {
     "name": "ダイン",
-    "text": "*キャーと叫びながら* 「フルコンボ！！ 見た？！"
+    "text": "*キャーと叫びながら* フルコンボ！！ 見た？！"
   },
   "date_dain_shop_2_ins": {
     "name": "ダイン",
-    "text": "*顔をそらして* 「なんでもない！ 行こ！"
+    "text": "*顔をそらして* なんでもない！ 行こ！"
   }
 }

@@ -450,7 +450,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_break_transition_ins": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "morning2_break_1"
     },
     "hidden_homeroom_d2_1_ins": {
