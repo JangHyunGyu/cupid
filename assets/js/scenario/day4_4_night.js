@@ -484,7 +484,7 @@ const _scenes = {
     },
     "wall_dain_cry_1": {
         "background": "assets/images/background/dain_depression_event1.png",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": null,
         "next": "wall_dain_cry_2"
     },
     "wall_dain_cry_2": {
