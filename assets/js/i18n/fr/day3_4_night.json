@@ -49,7 +49,7 @@
   },
   "night3_dream_2": {
     "name": "{name}",
-    "text": "*Je ne voyais pas son visage, mais sa seule présence à côté de moi m’apaisait.*"
+    "text": "*Je ne voyais pas son visage, mais étrangement, je n’étais pas inquiet.*"
   },
   "night3_dream_3": {
     "name": "{name}",
@@ -97,7 +97,7 @@
   },
   "night3_nightmare_3": {
     "name": "Seoyeon",
-    "text": "Tu avais promis. Que ce serait seulement moi..."
+    "text": "Tu ne faisais ça qu'avec moi..."
   },
   "night3_nightmare_4": {
     "name": "Yuna",
@@ -178,11 +178,11 @@
   },
   "night3_faithful_reflect_3": {
     "name": "{name}",
-    "text": "*Je l’avais gardée parce que la supprimer, c’était comme effacer les regrets. Mais maintenant ce n’est plus du regret — c’est une leçon. La photo qui m’a donné le courage de me déclarer. — Elle a rempli son rôle.*"
+    "text": "*Je l’avais gardée parce que la supprimer, c’était comme effacer ces sentiments aussi. Mais maintenant ce n’est plus de l’attachement — c’est juste un souvenir. — Son rôle est terminé.*"
   },
   "night3_faithful_reflect_4": {
     "name": "{name}",
-    "text": "*Cette fois, c’est différent. Je ne le dirai qu’à une seule personne. Aux autres — je refuserai correctement. C’est la seule honnêteté qui me reste.*"
+    "text": "*Cette fois c’est différent. Je ne parlerai qu’à une seule personne. Aux autres — je serai clair.*"
   },
   "night3_end": {
     "name": "{name}",
@@ -246,7 +246,7 @@
   },
   "night3_cheat_reflect_5_ins": {
     "name": "{name}",
-    "text": "*J'ai fait un rêve. — Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, mais sa simple présence m'apaisait.*"
+    "text": "*Je ne voyais pas son visage, mais étrangement, je n'étais pas inquiet.*"
   },
   "night3_faithful_reflect_2_ins": {
     "name": "{name}",

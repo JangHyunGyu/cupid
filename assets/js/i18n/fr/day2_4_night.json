@@ -142,7 +142,7 @@
   },
   "night2_reply_yuna_7": {
     "name": "{name}",
-    "text": "*La troisième étoile ? — J'ouvre la fenêtre et regarde le ciel nocturne. Des étoiles sont visibles. Je sais pas laquelle est la troisième, mais bon. Une énigme très Yuna. Quelqu'un qui ne donne jamais la réponse. — Quelqu'un qui te donne envie de la trouver.*"
+    "text": "*La troisième étoile ? — J'ouvre la fenêtre et lève les yeux vers le ciel. Impossible de savoir laquelle est la troisième. Une énigme typique de Yuna. — Elle ne donne jamais la réponse, mais donne envie de chercher.*"
   },
   "night2_end_1": {
     "name": "{name}",
@@ -158,7 +158,7 @@
   },
   "night2_flashback_3": {
     "name": "{name}",
-    "text": "*À cette époque, ça faisait un mois que je répétais 'je t'aime bien'. Chaque soir, je l'écrivais dans le bloc-notes du téléphone. Des simulations de déclaration. — À chaque fois, je m'arrêtais là.*"
+    "text": "*À cette époque, j'ouvrais mon téléphone chaque soir. J'écrivais quelque chose dans les notes et je l'effaçais encore et encore. — Chaque fois, je m'arrêtais juste avant d'envoyer.*"
   },
   "night2_flashback_4": {
     "name": "{name}",

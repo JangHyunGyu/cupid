@@ -101,7 +101,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Si no es ahora, no podré decirlo nunca.*",
+        "text": "*Si no es ahora, no habrá oportunidad.*",
         "choices": [
             "Esta vez me confesaré",
             "...No pude decir nada"

@@ -225,7 +225,7 @@
   },
   "true_seo_7": {
     "name": "Seoyeon",
-    "text": "Promets-moi. — Reste à mes côtés."
+    "text": "...Reste avec moi."
   },
   "true_seo_8": {
     "name": "{name}",
@@ -545,7 +545,7 @@
   },
   "friend_6": {
     "name": "{name}",
-    "text": "*Ce sera comme ça désormais. Des emojis souriants, un repas de temps en temps, 'ça va ?' répondu par 'ça va'. À portée de main mais à jamais intouchable. C'est ça, l'amitié.*"
+    "text": "*On continuera à s'envoyer des messages comme ça. Avec des emojis, manger ensemble de temps en temps, demander si tout va bien et répondre que oui. — Juste à côté mais une ligne qu'on ne peut pas franchir. C'est ça, l'amitié.*"
   },
   "friend_7": {
     "name": "{name}",
@@ -871,39 +871,39 @@
   },
   "good_epilogue_1": {
     "name": "{name}",
-    "text": "*Mais c'est cette hésitation qui m'a montré ce que je ressentais vraiment.*"
+    "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
   },
   "good_epilogue_2": {
     "name": "{name}",
-    "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    "text": "*J'avais l'impression d'avoir fait un détour, mais c'était ici depuis le début.*"
   },
   "good_epilogue_3": {
     "name": "{name}",
-    "text": "*Un amour imparfait reste un amour. Peut-être qu'il est plus précieux justement parce qu'il est incomplet.*"
+    "text": "*C'est pas grave d'être maladroit. C'est la première fois, après tout.*"
   },
   "good_epilogue_1_yuna": {
     "name": "{name}",
-    "text": "*Mais c'est cette hésitation qui m'a montré ce que je ressentais vraiment.*"
+    "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
   },
   "good_epilogue_2_yuna": {
     "name": "{name}",
-    "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    "text": "*J'avais l'impression d'avoir fait un détour, mais c'était ici depuis le début.*"
   },
   "good_epilogue_3_yuna": {
     "name": "{name}",
-    "text": "*Un amour imparfait reste un amour. Peut-être qu'il est plus précieux justement parce qu'il est incomplet.*"
+    "text": "*C'est pas grave d'être maladroit. C'est la première fois, après tout.*"
   },
   "good_epilogue_1_dain": {
     "name": "{name}",
-    "text": "*Mais c'est cette hésitation qui m'a montré ce que je ressentais vraiment.*"
+    "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
   },
   "good_epilogue_2_dain": {
     "name": "{name}",
-    "text": "*Je n'étais pas perdu. C'était juste le chemin pour te trouver.*"
+    "text": "*J'avais l'impression d'avoir fait un détour, mais c'était ici depuis le début.*"
   },
   "good_epilogue_3_dain": {
     "name": "{name}",
-    "text": "*Un amour imparfait reste un amour. Peut-être qu'il est plus précieux justement parce qu'il est incomplet.*"
+    "text": "*C'est pas grave d'être maladroit. C'est la première fois, après tout.*"
   },
   "confess_fail_cg_seo": {
     "name": "{name}",

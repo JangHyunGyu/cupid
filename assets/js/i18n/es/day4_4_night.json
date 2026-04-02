@@ -93,7 +93,7 @@
   },
   "wall_seo_pinky_2": {
     "name": "{name}",
-    "text": "Te lo prometo. Cuando quieras llorar, puedes llorar conmigo."
+    "text": "Cuando quieras llorar, escríbeme. No preguntaré nada."
   },
   "wall_seo_pinky_3": {
     "name": "{name}",
@@ -111,9 +111,9 @@
     "name": "{name}",
     "text": "*Seoyeon se seca las lágrimas, mirándome con ojos temblorosos.*",
     "choices": [
-      "Me gusta más esta Seoyeon que la perfecta.",
-      "No eres la presidenta del consejo para mí — eres solo Seoyeon, mi novia.",
-      "Sinceramente, pensé que eras perfecta. Pero gracias por mostrarme este lado tuyo."
+      "No tienes que ser perfecta. Me gusta más esta Seoyeon.",
+      "No la presidenta del consejo, solo Seoyeon — esa es mi novia.",
+      "Sinceramente, pensaba que eras buena en todo. Gracias por mostrarme este lado también."
     ]
   },
   "wall_seo_line_react_1": {

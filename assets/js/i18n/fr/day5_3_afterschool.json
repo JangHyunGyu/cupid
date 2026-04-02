@@ -101,7 +101,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Si ce n'est pas maintenant, je ne pourrai jamais le dire.*",
+        "text": "*Si ce n'est pas maintenant, il n'y aura pas d'autre chance.*",
         "choices": [
             "Cette fois, je me déclare",
             "...Je n'ai rien pu dire"

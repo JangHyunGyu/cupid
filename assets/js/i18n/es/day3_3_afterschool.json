@@ -296,7 +296,7 @@
     },
     "after3_confront_5": {
         "name": "Seoyeon",
-        "text": "Cuando les sonríes a las demás, sinceramente... me sentía fatal."
+        "text": "Cuando les sonreías igual a las demás, eso me molestaba un poco."
     },
     "after3_confront_6": {
         "name": "Seoyeon",
@@ -341,7 +341,7 @@
     },
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
-        "text": "No es la cantidad de promesas. Es el peso de cada una."
+        "text": "No es cuántas personas tenían planes contigo. Es lo que esa promesa significaba para mí."
     },
     "after3_confront_lie_ins": {
         "name": "{name}",
@@ -619,7 +619,7 @@
     },
     "haeun_warn_5c_ins": {
         "name": "Seoyeon",
-        "text": "Cuando les sonríes a las demás, sentía como si algo dentro de mí se derrumbara."
+        "text": "Cuando les sonreías igual a las demás, eso me molestaba un poco."
     },
     "after3_confront_admit_ins": {
         "name": "{name}",

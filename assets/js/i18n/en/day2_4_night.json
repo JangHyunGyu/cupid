@@ -142,7 +142,7 @@
   },
   "night2_reply_yuna_7": {
     "name": "{name}",
-    "text": "*The third star? — I open the window and look up. I can see stars, but I don't know which one is the third. Very Yuna. Someone who never gives you the answer. — Someone who makes you want to find it.*"
+    "text": "*The third star? — I open the window and look up at the night sky. Not sure which one is the third. A Yuna-like riddle. — Never tells the answer, but makes you want to find it.*"
   },
   "night2_end_1": {
     "name": "{name}",
@@ -162,7 +162,7 @@
   },
   "night2_flashback_3": {
     "name": "{name}",
-    "text": "*Back then, I'd been rehearsing 'I like you' for a month. Every night, typing it out in the notes app on my phone. Confession simulations. — I always stopped there.*"
+    "text": "*Back then, I opened my phone every night. Typed something in the notes app and deleted it over and over. — Every time, I stopped right before hitting send.*"
   },
   "night2_flashback_4": {
     "name": "{name}",
@@ -264,7 +264,7 @@
   },
   "night2_reply_yuna_6_ins": {
     "name": "{name}",
-    "text": "*Third star? — I open the window and look at the night sky. There are stars. Which one is the third, I have no idea.*"
+    "text": "*The third star? — I open the window and look up at the night sky. Not sure which one is the third.*"
   },
   "night2_reply_yuna_6_ins2": {
     "name": "{name}",

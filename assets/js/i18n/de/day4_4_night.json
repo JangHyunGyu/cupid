@@ -93,7 +93,7 @@
   },
   "wall_seo_pinky_2": {
     "name": "{name}",
-    "text": "Ich verspreche es. Wenn du weinen willst, darfst du vor mir weinen."
+    "text": "Wenn du weinen willst, schreib mir. Ich frag nicht nach."
   },
   "wall_seo_pinky_3": {
     "name": "{name}",
@@ -111,9 +111,9 @@
     "name": "{name}",
     "text": "*Seoyeon wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
     "choices": [
-      "Ich mag diese Seoyeon lieber als die perfekte.",
-      "Du bist für mich nicht die Schülersprecherin — du bist einfach Seoyeon, meine Freundin.",
-      "Ehrlich gesagt dachte ich, du wärst makellos. Aber danke, dass du mir diese Seite zeigst."
+      "Du musst nicht perfekt sein. Diese Seoyeon mag ich lieber.",
+      "Nicht die Schülerratsvorsitzende — einfach Seoyeon ist meine Freundin.",
+      "Ehrlich gesagt dachte ich, du könntest alles. Danke, dass du mir auch diese Seite zeigst."
     ]
   },
   "wall_seo_line_react_1": {

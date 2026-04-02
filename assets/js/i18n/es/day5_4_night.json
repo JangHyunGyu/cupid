@@ -217,7 +217,7 @@
   },
   "true_seo_7": {
     "name": "Seoyeon",
-    "text": "Prométemelo. — Quédate a mi lado."
+    "text": "...Quédate conmigo."
   },
   "true_seo_8": {
     "name": "{name}",
@@ -537,7 +537,7 @@
   },
   "friend_6": {
     "name": "{name}",
-    "text": "*Así será a partir de ahora. Emojis sonrientes, una comida de vez en cuando, ‘¿qué tal?’ contestado con ‘bien’. Al alcance de la mano pero sin poder tocar nunca. Eso es la amistad.*"
+    "text": "*Seguiremos mandándonos mensajes así. Con emojis, comiendo juntos a veces, preguntando si hay algo nuevo y respondiendo que no. — Justo al lado pero sin cruzar la línea. Eso es ser amigos.*"
   },
   "friend_7": {
     "name": "{name}",
@@ -871,39 +871,39 @@
   },
   "good_epilogue_1": {
     "name": "{name}",
-    "text": "*Pero fue ese titubeo el que me mostró lo que de verdad sentía.*"
+    "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
   },
   "good_epilogue_2": {
     "name": "{name}",
-    "text": "*No estaba perdido. Era solo el proceso de encontrarte.*"
+    "text": "*Parecía un rodeo, pero al final era aquí.*"
   },
   "good_epilogue_3": {
     "name": "{name}",
-    "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente por ser incompleto.*"
+    "text": "*Está bien ser torpe. Es nuestra primera vez, después de todo.*"
   },
   "good_epilogue_1_yuna": {
     "name": "{name}",
-    "text": "*Pero fue ese titubeo el que me mostró lo que de verdad sentía.*"
+    "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
   },
   "good_epilogue_2_yuna": {
     "name": "{name}",
-    "text": "*No estaba perdido. Era solo el proceso de encontrarte.*"
+    "text": "*Parecía un rodeo, pero al final era aquí.*"
   },
   "good_epilogue_3_yuna": {
     "name": "{name}",
-    "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente por ser incompleto.*"
+    "text": "*Está bien ser torpe. Es nuestra primera vez, después de todo.*"
   },
   "good_epilogue_1_dain": {
     "name": "{name}",
-    "text": "*Pero fue ese titubeo el que me mostró lo que de verdad sentía.*"
+    "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
   },
   "good_epilogue_2_dain": {
     "name": "{name}",
-    "text": "*No estaba perdido. Era solo el proceso de encontrarte.*"
+    "text": "*Parecía un rodeo, pero al final era aquí.*"
   },
   "good_epilogue_3_dain": {
     "name": "{name}",
-    "text": "*El amor imperfecto también es amor. Quizás es más valioso precisamente por ser incompleto.*"
+    "text": "*Está bien ser torpe. Es nuestra primera vez, después de todo.*"
   },
   "confess_fail_cg_seo": {
     "name": "{name}",

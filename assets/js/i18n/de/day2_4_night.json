@@ -142,7 +142,7 @@
   },
   "night2_reply_yuna_7": {
     "name": "{name}",
-    "text": "*Der dritte Stern? — Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, weiß ich nicht, aber. Ein sehr Yuna-typisches Rätsel. Jemand, der nie die Antwort verrät. — Jemand, der einen dazu bringt, sie finden zu wollen.*"
+    "text": "Der dritte Stern? — Ich öffne das Fenster und schaue zum Nachthimmel hoch. Keine Ahnung, welcher der dritte ist. Ein Rätsel, typisch Yuna. — Verrät die Antwort nie, aber macht einen neugierig."
   },
   "night2_end_1": {
     "name": "{name}",
@@ -158,7 +158,7 @@
   },
   "night2_flashback_3": {
     "name": "{name}",
-    "text": "*Damals hatte ich seit einem Monat 'Ich mag dich' geübt. Jeden Abend in die Notizen-App getippt. Geständnis-Simulationen. — Jedes Mal blieb ich an der gleichen Stelle stehen.*"
+    "text": "Damals öffnete ich jeden Abend mein Handy. Schrieb etwas in die Notizen und löschte es wieder und wieder. — Jedes Mal hielt ich kurz vor dem Absenden inne."
   },
   "night2_flashback_4": {
     "name": "{name}",
@@ -264,7 +264,7 @@
   },
   "night2_reply_yuna_6_ins": {
     "name": "{name}",
-    "text": "*Der dritte Stern? — Ich öffne das Fenster und schaue in den Nachthimmel. Sterne sind zu sehen. Welcher der dritte ist, keine Ahnung.*"
+    "text": "Der dritte Stern? — Ich öffne das Fenster und schaue zum Nachthimmel hoch. Keine Ahnung, welcher der dritte ist."
   },
   "night2_reply_yuna_6_ins2": {
     "name": "{name}",
