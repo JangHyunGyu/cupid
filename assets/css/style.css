@@ -1,6 +1,8 @@
 /* 모바일 세로모드(최대 600px)에서 대화창 및 텍스트 크기 조정 */
 @media (max-width: 600px) {
-    .dialog-box, .narration-box {
+
+    .dialog-box,
+    .narration-box {
         max-width: 95vw;
         min-height: 40px;
         padding: 8px 10px 8px 10px;
@@ -8,27 +10,33 @@
         font-size: 15px;
         border-radius: 12px;
     }
+
     .dialog-box .speaker-label {
         font-size: 13px;
         padding: 3px 10px;
     }
+
     .choice-list {
         margin-bottom: 6px;
     }
+
     .choice-list .choice {
         font-size: 14px;
         padding: 7px 0;
     }
+
     #dialogue-box {
         min-height: 40px;
         padding: 10px 10px 8px 10px;
         margin-bottom: 6px;
     }
+
     #name-tag {
         font-size: 1rem;
         padding: 4px 10px;
         max-width: 200px;
     }
+
     #message {
         font-size: 1.05rem;
         line-height: 1.4;
@@ -47,6 +55,7 @@
         display: block;
     }
 }
+
 /* ==========================================================================
    Cupid Global Styles (공통 스타일 및 초기화)
    ========================================================================== */
@@ -122,6 +131,7 @@ html {
     pointer-events: none;
     z-index: 0;
 }
+
 #background-layer.bg-crossfade::after {
     opacity: 1;
 }
@@ -191,10 +201,12 @@ html {
     will-change: transform, opacity;
     transform: translateZ(0);
 }
+
 /* 캐릭터 페이드 인/아웃 */
 .char-slot img.char-fade-in {
     opacity: 0;
 }
+
 .char-slot img.char-fade-out {
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
@@ -430,14 +442,39 @@ html[lang="de"] #message {
 
 /* 메시지 알림 진동 효과 */
 @keyframes msgVibrate {
-    0%, 100% { transform: translateX(0); }
-    10% { transform: translateX(-3px); }
-    20% { transform: translateX(3px); }
-    30% { transform: translateX(-2px); }
-    40% { transform: translateX(2px); }
-    50% { transform: translateX(-1px); }
-    60% { transform: translateX(1px); }
-    70% { transform: translateX(0); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-3px);
+    }
+
+    20% {
+        transform: translateX(3px);
+    }
+
+    30% {
+        transform: translateX(-2px);
+    }
+
+    40% {
+        transform: translateX(2px);
+    }
+
+    50% {
+        transform: translateX(-1px);
+    }
+
+    60% {
+        transform: translateX(1px);
+    }
+
+    70% {
+        transform: translateX(0);
+    }
 }
 
 #dialogue-box.msg-vibrate {
@@ -744,6 +781,7 @@ html[lang="de"] #message {
         border-color: #ff69b4;
         box-shadow: none;
     }
+
     to {
         background: rgba(0, 0, 0, 0.7);
         border-color: rgba(255, 255, 255, 0.4);
@@ -888,38 +926,46 @@ html[lang="de"] #message {
         min-height: 200px;
         padding: 32px 32px;
     }
+
     #name-tag {
         font-size: 1.5rem;
         padding: 8px 28px;
         max-width: 500px;
     }
+
     #message {
         font-size: 1.6rem;
         line-height: 1.8;
     }
+
     .choice-btn {
         font-size: 1.3rem;
         padding: 20px 32px;
         border-radius: 20px;
     }
+
     #game-container #home-btn,
     #game-container #settings-btn {
         width: 60px;
         height: 60px;
         font-size: 2rem;
     }
+
     .modal-container,
     .modal-content {
         max-width: 540px;
         padding: 48px 32px;
         border-radius: 28px;
     }
+
     .modal-title {
         font-size: 2rem;
     }
+
     .modal-content p {
         font-size: 1.4rem;
     }
+
     .modal-buttons button {
         font-size: 1.2rem;
         padding: 16px 36px;
@@ -943,7 +989,7 @@ html[lang="de"] #message {
     .char-slot img {
         width: auto !important;
         max-width: none !important;
-        height: 88%;
+        height: 70%;
     }
 
     #char-left {
@@ -1359,7 +1405,7 @@ html[lang="de"] .modal-content p {
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(6px);
     font-weight: 700;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .affinity-nametag-left {
@@ -1374,8 +1420,13 @@ html[lang="de"] .modal-content p {
     animation: nametagSlideRight 4s ease-out forwards;
 }
 
-.affinity-nametag.positive { color: #ff6b9d; }
-.affinity-nametag.negative { color: #7799ff; }
+.affinity-nametag.positive {
+    color: #ff6b9d;
+}
+
+.affinity-nametag.negative {
+    color: #7799ff;
+}
 
 .affinity-nametag-name {
     font-size: clamp(0.8rem, 1.8vmin, 1.2rem);
@@ -1389,17 +1440,47 @@ html[lang="de"] .modal-content p {
 }
 
 @keyframes nametagSlideLeft {
-    0% { transform: translateX(-100%); opacity: 0; }
-    10% { transform: translateX(0); opacity: 1; }
-    75% { transform: translateX(0); opacity: 1; }
-    100% { transform: translateX(-100%); opacity: 0; }
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
 }
 
 @keyframes nametagSlideRight {
-    0% { transform: translateX(100%); opacity: 0; }
-    10% { transform: translateX(0); opacity: 1; }
-    75% { transform: translateX(0); opacity: 1; }
-    100% { transform: translateX(100%); opacity: 0; }
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 }
 
 /* nametag 반응형은 clamp()로 처리 — 별도 미디어쿼리 불필요 */
@@ -1474,9 +1555,12 @@ html[lang="de"] .modal-content p {
 
 /* 펄스 효과 - 호감도 변화를 강조 */
 @keyframes affinityPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.15);
     }
@@ -1527,6 +1611,7 @@ html[lang="de"] .modal-content p {
     0% {
         transform: translateY(100vh);
     }
+
     100% {
         transform: translateY(-200%);
     }
@@ -1631,9 +1716,11 @@ html[lang="de"] .modal-content p {
     0% {
         transform: rotate(0deg) scale(0.5);
     }
+
     50% {
         transform: rotate(180deg) scale(1.2);
     }
+
     100% {
         transform: rotate(360deg) scale(1);
     }
@@ -1641,6 +1728,7 @@ html[lang="de"] .modal-content p {
 
 /* ===== 모션 감소 설정 (접근성) ===== */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
