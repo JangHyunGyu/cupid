@@ -213,7 +213,7 @@
 ### 히든: 담임선생님 상담
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
-| after_hidden_homeroom_1 ~ 4 | school_hallway.png | teacher_normal | 복도에서 담임 호출 |
+| after_hidden_homeroom_1 ~ 4 | school_hallway.png | 없음 | 복도에서 담임 호출 |
 | after_homeroom_honest_1 ~ 10 | school_hallway.png | teacher_normal/smile/shy | "선생님이 이러면 안 되는데" |
 | after_homeroom_freetalk | school_hallway.png | teacher_normal | **프리토킹** |
 
