@@ -2194,7 +2194,7 @@
   - [`met_dain`] → `after_dain_skip`
   - [기본] → `after_miss_dain_1`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: *복도를 계속 걷는다.*
 
 ---
@@ -3334,7 +3334,7 @@
 - 야간: true
 - 다음: `night_hidden_check`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_normal.png` @ 0.35
 **{name}**: *'서비스야'를 일부러 한 줄 띄어서 보냈다. — 웃음이 나온다.*
 
 ---
@@ -3364,7 +3364,7 @@
 - 야간: true
 - 다음: `night_hidden_check`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_normal.png` @ 0.35
 **{name}**: *'자리 비워 놓을게'. — 유나한테 이건 최대한의 초대다. 가슴이 따뜻해진다.*
 
 ---
@@ -3404,7 +3404,7 @@
 - 야간: true
 - 다음: `night_hidden_check`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_normal.png` @ 0.35
 **{name}**: *세 줄 연속. 숨 좀 쉬고 보내면 안 되나.*
 
 ---
@@ -3414,7 +3414,7 @@
 - 야간: true
 - 다음: `night_late_transition_2`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *잠들려는데 — 핸드폰이 한 번 더 울린다.*
 
 ---
@@ -3424,7 +3424,7 @@
 - 야간: true
 - 다음: `night_late_branch`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *밤 11시. 누구지?*
 
 ---
@@ -3438,7 +3438,7 @@
   - [Yuna 10+] → `night_yuna_late_1`
 - 다음: `night_end_1`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *화면이 밝아진다.*
 
 ---
@@ -3558,7 +3558,7 @@
 - 야간: true
 - 다음: `night_end_2`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 내려놓았다.*
 
 ---
@@ -3568,7 +3568,7 @@
 - 야간: true
 - 다음: `night_end_3`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*
 
 ---
@@ -3578,7 +3578,7 @@
 - 야간: true
 - 다음: `night_end_4`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *나쁘지 않은 첫날이었다.*
 
 ---
@@ -3588,7 +3588,7 @@
 - 야간: true
 - 다음: `morning2_start`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *내일은 — 좀 더 재밌을 것 같다.*
 
 ---
@@ -3627,7 +3627,7 @@
   - [`nurse_day1`] → `night_hidden_nurse_1`
   - [기본] → `night_late_transition`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *메신저 알림 사이에 — 다른 알림이 보인다.*
 
 ---
@@ -3689,9 +3689,10 @@
 
 ### `night_dain_late_4_ins`
 - 배경: `room_my.png`
+- 야간: true
 - 다음: `night_dain_freetalk`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_normal.png` @ 0.35
 **{name}**: *메신저 알림 사이에 — 학교 공지 앱에 담임선생님이 올린 글이 보인다.*
 
 ---
@@ -4675,7 +4676,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_choice`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *이 학교에서 점심시간은 전쟁이다.*
 
 ---
@@ -4687,7 +4688,7 @@
   2. "서연을 따라 옥상으로" → `lunch2_seo_1_check`
   3. "다인과 매점으로" → `lunch2_dain_1_check`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *누구와 함께할까.*
 
 ---
@@ -5711,7 +5712,7 @@
 ---
 
 ### `lunch2_dain_end_ins4`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins5`
 
@@ -5720,7 +5721,7 @@
 ---
 
 ### `lunch2_dain_end_ins5`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins6`
 
@@ -5729,7 +5730,7 @@
 ---
 
 ### `lunch2_dain_end_ins6`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 다음: `lunch2_dain_end_ins7`
 
 - 캐릭터: `dain_pout.png`
@@ -5738,7 +5739,7 @@
 ---
 
 ### `lunch2_dain_end_ins7`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins8`
 
@@ -5747,7 +5748,7 @@
 ---
 
 ### `lunch2_dain_end_ins8`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins9`
 
@@ -5756,7 +5757,7 @@
 ---
 
 ### `lunch2_dain_end_ins9`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins10`
 
@@ -5765,7 +5766,7 @@
 ---
 
 ### `lunch2_dain_end_ins10`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins11`
 
@@ -5774,7 +5775,7 @@
 ---
 
 ### `lunch2_dain_end_ins11`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins12`
 
@@ -5783,7 +5784,7 @@
 ---
 
 ### `lunch2_dain_end_ins12`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins13`
 
@@ -5792,7 +5793,7 @@
 ---
 
 ### `lunch2_dain_end_ins13`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins14`
 
@@ -5801,7 +5802,7 @@
 ---
 
 ### `lunch2_dain_end_ins14`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins15`
 
@@ -5810,7 +5811,7 @@
 ---
 
 ### `lunch2_dain_end_ins15`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins16`
 
@@ -5819,7 +5820,7 @@
 ---
 
 ### `lunch2_dain_end_ins16`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins17`
 
@@ -5828,7 +5829,7 @@
 ---
 
 ### `lunch2_dain_end_ins17`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins18`
 
@@ -5837,7 +5838,7 @@
 ---
 
 ### `lunch2_dain_end_ins18`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins19`
 
@@ -5846,7 +5847,7 @@
 ---
 
 ### `lunch2_dain_end_ins19`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins20`
 
@@ -5855,7 +5856,7 @@
 ---
 
 ### `lunch2_dain_end_ins20`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins21`
 
@@ -5864,7 +5865,7 @@
 ---
 
 ### `lunch2_dain_end_ins21`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins22`
 
@@ -5873,7 +5874,7 @@
 ---
 
 ### `lunch2_dain_end_ins22`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins23`
 
@@ -5882,7 +5883,7 @@
 ---
 
 ### `lunch2_dain_end_ins23`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins24`
 
@@ -5891,7 +5892,7 @@
 ---
 
 ### `lunch2_dain_end_ins24`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins25`
 
@@ -5900,7 +5901,7 @@
 ---
 
 ### `lunch2_dain_end_ins25`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins26`
 
@@ -5909,7 +5910,7 @@
 ---
 
 ### `lunch2_dain_end_ins26`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 다음: `lunch2_dain_end_ins27`
 
 - 캐릭터: `dain_pout.png`
@@ -5918,7 +5919,7 @@
 ---
 
 ### `lunch2_dain_end_ins27`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins28`
 
@@ -5927,7 +5928,7 @@
 ---
 
 ### `lunch2_dain_end_ins28`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins29`
 
@@ -5936,7 +5937,7 @@
 ---
 
 ### `lunch2_dain_end_ins29`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `lunch2_dain_end_ins30`
 
@@ -5945,7 +5946,7 @@
 ---
 
 ### `lunch2_dain_end_ins30`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `lunch2_dain_end_ins31`
 
@@ -5954,7 +5955,7 @@
 ---
 
 ### `lunch2_dain_end_ins31`
-- 배경: `school_hallway.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_pout.png`
 - 다음: `after2_start`
 
@@ -6020,7 +6021,7 @@
   2. "학생회실로 (서연)" → `after2_seo_1`
   3. "도서관 별관을 지나가 본다 (유나)" → `after2_yuna_1`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *어디로 갈까.*
 
 ---
@@ -6639,7 +6640,7 @@
 ---
 
 ### `after2_seo_skinship_1`
-- 배경: `teacher_office.png`
+- 배경: `school_hallway.png`
 - 캐릭터: `seyoun_normal.png`
 - 다음: `after2_seo_skinship_2`
 
@@ -6648,7 +6649,7 @@
 ---
 
 ### `after2_seo_skinship_2`
-- 배경: `teacher_office.png`
+- 배경: `school_hallway.png`
 - 캐릭터: `seyoun_shy.png`
 - 다음: `after2_seo_skinship_3`
 
@@ -6657,7 +6658,7 @@
 ---
 
 ### `after2_seo_skinship_3`
-- 배경: `teacher_office.png`
+- 배경: `school_hallway.png`
 - 캐릭터: `seyoun_normal.png`
 - 다음: `after2_seo_return`
 
@@ -7627,7 +7628,7 @@
   - [`chose_yuna_after2`] → `night2_msg_yuna_specific`
   - [기본] → `night2_msg_generic`
 
-- 캐릭터: `minsu_smirk.png`
+- 캐릭터: `없음`
 **{name}**: *세 명에게서 메시지가 왔다.*
 
 ---
@@ -7779,7 +7780,7 @@
 - 야간: true
 - 다음: `night2_choice`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_normal.png` @ 0.35
 **{name}**: *세 명에게 동시에 답장해야 하는 상황. — 이게 행복인지 고문인지 모르겠다.*
 
 ---
@@ -7792,7 +7793,7 @@
   2. "서연에게 먼저 답장한다" → `night2_reply_seo_1`
   3. "유나에게 먼저 답장한다" → `night2_reply_yuna_1`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **{name}**: *누구에게 먼저 답장할까?*
 
 ---
@@ -8053,7 +8054,7 @@
 - 야간: true
 - 다음: `night2_end_1_ins`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *답장을 보내고 핸드폰을 내려놓았다.*
 
 ---
@@ -8073,7 +8074,7 @@
 - 야간: true
 - 다음: `night2_flashback_3`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *스크롤을 한참 내렸다. 3개월 전. — 사진 한 장이 보인다. 도서관 앞에서 찍은 단체 사진. 소정이가 웃고 있다. 내 옆에서.*
 
 ---
@@ -8083,7 +8084,7 @@
 - 야간: true
 - 다음: `night2_flashback_4`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *그때 나는 '좋아해'를 한 달째 연습하고 있었다. 매일 밤 핸드폰 메모장에 써봤다. 고백 시뮬레이션. — 매번 거기서 멈췄다.*
 
 ---
@@ -8206,7 +8207,7 @@
   - [`nurse_day2`] → `night2_hidden_nurse_1`
   - [기본] → `night2_end_1`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *메신저 알림 사이에 — 또 다른 알림이 보인다.*
 
 ---
@@ -8330,9 +8331,10 @@
 
 ### `night2_end_1_ins`
 - 배경: `room_my.png`
+- 야간: true
 - 다음: `night2_flashback_1`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *둘째 날이 끝났다.*
 
 ---
@@ -9108,7 +9110,7 @@
 - 캐릭터: `yuna_shy.png`
 - 다음: `morning3_end`
 
-- 배경: `school.png`
+- 배경: `room_school.png`
 <!-- i18n -->
 
 ---
@@ -9836,8 +9838,8 @@
 ---
 
 ### `hidden_nurse_d3_2_ins`
-- 배경: `nurse_room.png`
-- 캐릭터: `nurse_normal.png`
+- 배경: `room_school.png`
+- 캐릭터: `teacher_normal.png`
 - 다음: `hidden_nurse_d3_2_ins2`
 
 **{name}**: *담임이 '부탁'이라는 말을 쓴다. — 이 사람한테 그건 드문 단어다.*
@@ -9845,8 +9847,8 @@
 ---
 
 ### `hidden_nurse_d3_2_ins2`
-- 배경: `nurse_room.png`
-- 캐릭터: `nurse_normal.png`
+- 배경: `school_hallway.png`
+- 캐릭터: `없음`
 - 다음: `hidden_nurse_d3_2_ins3`
 
 **{name}**: *교실을 나서는데 — 뒤에서 작게.*
@@ -9854,7 +9856,7 @@
 ---
 
 ### `hidden_nurse_d3_2_ins3`
-- 배경: `nurse_room.png`
+- 배경: `school_hallway.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `hidden_nurse_d3_2_ins4`
 
@@ -9863,8 +9865,8 @@
 ---
 
 ### `hidden_nurse_d3_2_ins4`
-- 배경: `nurse_room.png`
-- 캐릭터: `nurse_normal.png`
+- 배경: `school_hallway.png`
+- 캐릭터: `없음`
 - 다음: `hidden_nurse_d3_2_ins5`
 
 **{name}**: *뭐가 고마운 건지는 모르겠다. 안 봐줘서? 아니면 — 여기까지 와줘서?*
@@ -9872,8 +9874,8 @@
 ---
 
 ### `hidden_nurse_d3_2_ins5`
-- 배경: `nurse_room.png`
-- 캐릭터: `nurse_normal.png`
+- 배경: `school_hallway.png`
+- 캐릭터: `없음`
 - 다음: `hidden_nurse_d3_3`
 
 **{name}**: *점심시간 직전. — 아침부터 뭔가 불안하다. 양다리 스트레스인지, 아니면 모든 게 너무 빨리 진행되는 것 같은 혼란인지.*
@@ -11204,7 +11206,7 @@
   - [`accepted_seoyeon_date`] → `after3_auto_seo`
   - [기본] → `after3_choice`
 
-- 캐릭터: `dain_sad.png`
+- 캐릭터: `없음`
 **{name}**: *방과후. 핸드폰을 확인한다.*
 
 ---
@@ -12068,7 +12070,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_check`
 
-- 캐릭터: `seyoun_sad.png`
+- 캐릭터: `없음`
 **{name}**: *방과후가 끝났다. — 오늘 본 것들이 머릿속에서 떠나지 않는다.*
 
 ---
@@ -12079,7 +12081,7 @@
   - [`seoyeon_day3_event`] → `haeun_warn_1`
   - [기본] → `minsu_d3_check`
 
-- 캐릭터: `seyoun_sad.png`
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -12207,7 +12209,7 @@
   - [`day3_has_multiple_dates`] → `minsu_d3_1`
   - [기본] → `night3_start`
 
-- 캐릭터: `haeun_worried.png`
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -12903,7 +12905,7 @@
 - 다음: `night3_dream_1`
 
 - 배경: `room_my.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_normal.png` @ 0.35
 **{name}**: *'ㅋㅋ'로 위장했지만 — 진심이 보인다.*
 
 ---
@@ -12913,7 +12915,7 @@
 - 다음: `night3_dream_2`
 
 - 배경: `school.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *꿈을 꿨다. — 누군가와 나란히 걷고 있었다.*
 
 ---
@@ -12923,7 +12925,7 @@
 - 다음: `night3_dream_2_ins`
 
 - 배경: `school.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *얼굴은 보이지 않는데, 옆에 있다는 것만으로 마음이 편했다.*
 
 ---
@@ -12933,7 +12935,7 @@
 - 야간: true
 - 다음: `night3_faithful_reflect_2`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *눈을 떴다. 아침 햇살이 커튼 사이로 들어온다. — 오늘의 꿈은 좋았다.*
 
 ---
@@ -12943,7 +12945,7 @@
 - 야간: true
 - 다음: `night3_faithful_reflect_2_ins`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *핸드폰을 꺼냈다. 갤러리를 열었다. 소정이 사진. — 스크롤을 멈추고, 길게 눌렀다.*
 
 ---
@@ -13044,7 +13046,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_4_ins`
 
-- 배경: `school.png`
+- 배경: `room_my.png`
 **유나**: ...다 알고 있었어
 
 ---
@@ -13054,7 +13056,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_6`
 
-- 배경: `school.png`
+- 배경: `room_my.png`
 **유나**: *네가 누구 옆에 설 건지. 그 무게를 알았으면 해*
 
 ---
@@ -13064,7 +13066,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_dain_1`
 
-- 배경: `school.png`
+- 배경: `room_my.png`
 **유나**: ...도망치지 마. 그것만
 
 ---
@@ -13074,7 +13076,7 @@
 - 야간: true
 - 다음: `night3_cheat_msg_7`
 
-- 배경: `school.png`
+- 배경: `room_my.png`
 **다인**: ...ㅋㅋ 농담이었으면 좋겠다
 
 ---
@@ -13083,8 +13085,8 @@
 - 야간: true
 - 다음: `night3_nightmare_1`
 
-- 배경: `school.png`
-- 캐릭터: `dain_normal.png`
+- 배경: `room_my.png`
+- 캐릭터: `dain_normal.png` @ 0.35
 **{name}**: *유나가 메시지로 세 줄을 보냈다. 평소 한 줄도 안 보내는 사람이. — 그만큼 화가 났다는 뜻이다.*
 
 ---
@@ -13095,7 +13097,7 @@
 - 야간: true
 - 다음: `night3_nightmare_2`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: *잠이 들었다. — 꿈.*
 
 ---
@@ -13105,7 +13107,7 @@
 - 다음: `night3_nightmare_2_ins`
 
 - 배경: `school_back.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: *어둠 속에 서 있다. 아무것도 보이지 않는다.*
 
 ---
@@ -13145,7 +13147,7 @@
 - 다음: `night3_nightmare_choice`
 
 - 배경: `school.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: *세 방향에서 손이 보인다. 어둠 속에서 희미하게.*
 
 ---
@@ -13158,7 +13160,7 @@
   3. "다인의 손을 잡는다" → `night3_nightmare_dain`
 
 - 배경: `school.png`
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: *누구의 손을 잡을 것인가.*
 
 ---
@@ -13294,26 +13296,29 @@
 ---
 
 ### `night3_faithful_msg_yuna_2_ins`
-- 배경: `school.png`
+- 배경: `room_my.png`
+- 야간: true
 - 다음: `night3_dream_1`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_normal.png` @ 0.35
 **{name}**: *결말을 안 쓰면 이야기가 끝나지 않으니까. — 나도 같은 마음이다.*
 
 ---
 
 ### `night3_cheat_msg_3_ins`
-- 배경: `school.png`
+- 배경: `room_my.png`
+- 야간: true
 - 다음: `night3_cheat_msg_4`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_normal.png` @ 0.35
 **{name}**: *서연이 '부탁'이라는 말을 쓴다. — 이 사람의 어휘에 없던 단어다. 그만큼 무너져 있다.*
 
 ---
 
 ### `night3_cheat_msg_4_ins`
-- 배경: `school.png`
-- 캐릭터: `yuna_normal.png`
+- 배경: `room_my.png`
+- 야간: true
+- 캐릭터: `yuna_normal.png` @ 0.35
 - 다음: `night3_cheat_msg_5`
 
 **유나**: *네가 누구 옆에 설 건지. 그 무게를 알았으면 해*
@@ -13349,9 +13354,10 @@
 
 ### `night3_dream_2_ins`
 - 배경: `school.png`
+- 야간: true
 - 다음: `night3_faithful_reflect_1`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *이번에는 후회 없이 말하려고 했다. 이 학교에서는 솔직하게 살겠다고.*
 
 ---
@@ -13642,7 +13648,7 @@
   - [`nurse_route_unlocked && nurse_day4`] → `hidden_nurse_d4_morning_1`
   - [기본] → `hidden_nurse_d4_check`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: *주말. 학교 근처를 지나가게 됐다.*
 
 ---
@@ -13894,7 +13900,7 @@
   - [`nurse_day3`] → `hidden_nurse_d4_1`
   - [기본] → `morning4_end`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `없음`
 **{name}**: *주말이 끝나간다.*
 
 ---
@@ -14237,7 +14243,7 @@
   - [`accepted_yuna_date`] → `date_yuna_1`
   - [`accepted_seoyeon_date`] → `date_seo_1`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *거울을 한 번 더 본다. — 됐다. 나가자.*
 
 ---
@@ -16519,7 +16525,7 @@
 ---
 
 ### `confess_dain_no_4_ins3`
-- 배경: `gym.png`
+- 배경: `school.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins4`
 
@@ -16528,7 +16534,7 @@
 ---
 
 ### `confess_dain_no_4_ins4`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins5`
 
@@ -16537,7 +16543,7 @@
 ---
 
 ### `confess_dain_no_4_ins5`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins6`
 
@@ -16546,7 +16552,7 @@
 ---
 
 ### `confess_dain_no_4_ins6`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 다음: `confess_dain_no_4_ins7`
 
 - 캐릭터: `dain_sad.png`
@@ -16555,7 +16561,7 @@
 ---
 
 ### `confess_dain_no_4_ins7`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins8`
 
@@ -16564,7 +16570,7 @@
 ---
 
 ### `confess_dain_no_4_ins8`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins9`
 
@@ -16573,7 +16579,7 @@
 ---
 
 ### `confess_dain_no_4_ins9`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins10`
 
@@ -16582,7 +16588,7 @@
 ---
 
 ### `confess_dain_no_4_ins10`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins11`
 
@@ -16591,7 +16597,7 @@
 ---
 
 ### `confess_dain_no_4_ins11`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 다음: `confess_dain_no_4_ins12`
 
 - 캐릭터: `dain_sad.png`
@@ -16600,7 +16606,7 @@
 ---
 
 ### `confess_dain_no_4_ins12`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins13`
 
@@ -16609,7 +16615,7 @@
 ---
 
 ### `confess_dain_no_4_ins13`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins14`
 
@@ -16618,7 +16624,7 @@
 ---
 
 ### `confess_dain_no_4_ins14`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins15`
 
@@ -16627,7 +16633,7 @@
 ---
 
 ### `confess_dain_no_4_ins15`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins16`
 
@@ -16636,7 +16642,7 @@
 ---
 
 ### `confess_dain_no_4_ins16`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins17`
 
@@ -16645,7 +16651,7 @@
 ---
 
 ### `confess_dain_no_4_ins17`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 다음: `confess_dain_no_4_ins18`
 
 - 캐릭터: `dain_sad.png`
@@ -16654,7 +16660,7 @@
 ---
 
 ### `confess_dain_no_4_ins18`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins19`
 
@@ -16663,7 +16669,7 @@
 ---
 
 ### `confess_dain_no_4_ins19`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins20`
 
@@ -16672,7 +16678,7 @@
 ---
 
 ### `confess_dain_no_4_ins20`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `teacher_normal.png`
 - 다음: `confess_dain_no_4_ins21`
 
@@ -16681,7 +16687,7 @@
 ---
 
 ### `confess_dain_no_4_ins21`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins22`
 
@@ -16690,7 +16696,7 @@
 ---
 
 ### `confess_dain_no_4_ins22`
-- 배경: `gym.png`
+- 배경: `room_school.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins23`
 
@@ -16699,7 +16705,7 @@
 ---
 
 ### `confess_dain_no_4_ins23`
-- 배경: `gym.png`
+- 배경: `school_hallway.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins24`
 
@@ -16708,7 +16714,7 @@
 ---
 
 ### `confess_dain_no_4_ins24`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins25`
 
@@ -16717,7 +16723,7 @@
 ---
 
 ### `confess_dain_no_4_ins25`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins26`
 
@@ -16726,7 +16732,7 @@
 ---
 
 ### `confess_dain_no_4_ins26`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins27`
 
@@ -16735,7 +16741,7 @@
 ---
 
 ### `confess_dain_no_4_ins27`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 다음: `confess_dain_no_4_ins28`
 
 - 캐릭터: `dain_sad.png`
@@ -16744,7 +16750,7 @@
 ---
 
 ### `confess_dain_no_4_ins28`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins29`
 
@@ -16753,7 +16759,7 @@
 ---
 
 ### `confess_dain_no_4_ins29`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins30`
 
@@ -16762,7 +16768,7 @@
 ---
 
 ### `confess_dain_no_4_ins30`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins31`
 
@@ -16771,7 +16777,7 @@
 ---
 
 ### `confess_dain_no_4_ins31`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 다음: `confess_dain_no_4_ins32`
 
 - 캐릭터: `dain_sad.png`
@@ -16780,7 +16786,7 @@
 ---
 
 ### `confess_dain_no_4_ins32`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins33`
 
@@ -16789,7 +16795,7 @@
 ---
 
 ### `confess_dain_no_4_ins33`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins34`
 
@@ -16798,7 +16804,7 @@
 ---
 
 ### `confess_dain_no_4_ins34`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins35`
 
@@ -16807,7 +16813,7 @@
 ---
 
 ### `confess_dain_no_4_ins35`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins36`
 
@@ -16816,7 +16822,7 @@
 ---
 
 ### `confess_dain_no_4_ins36`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins37`
 
@@ -16825,7 +16831,7 @@
 ---
 
 ### `confess_dain_no_4_ins37`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 다음: `confess_dain_no_4_ins38`
 
 - 캐릭터: `dain_sad.png`
@@ -16834,7 +16840,7 @@
 ---
 
 ### `confess_dain_no_4_ins38`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins39`
 
@@ -16843,7 +16849,7 @@
 ---
 
 ### `confess_dain_no_4_ins39`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins40`
 
@@ -16852,7 +16858,7 @@
 ---
 
 ### `confess_dain_no_4_ins40`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins41`
 
@@ -16861,7 +16867,7 @@
 ---
 
 ### `confess_dain_no_4_ins41`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 다음: `confess_dain_no_4_ins42`
 
 - 캐릭터: `dain_sad.png`
@@ -16870,7 +16876,7 @@
 ---
 
 ### `confess_dain_no_4_ins42`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `없음`
 - 다음: `confess_dain_no_4_ins43`
 
@@ -16879,7 +16885,7 @@
 ---
 
 ### `confess_dain_no_4_ins43`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `nurse_normal.png`
 - 다음: `confess_dain_no_4_ins44`
 
@@ -16888,7 +16894,7 @@
 ---
 
 ### `confess_dain_no_4_ins44`
-- 배경: `gym.png`
+- 배경: `nurse_room.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `confess_dain_no_4_ins45`
 
@@ -16897,8 +16903,8 @@
 ---
 
 ### `confess_dain_no_4_ins45`
-- 배경: `gym.png`
-- 캐릭터: `seyoun_normal.png`
+- 배경: `room_my.png`
+- 캐릭터: `seyoun_normal.png` @ 0.35
 - 다음: `confess_dain_no_4_ins46`
 
 **서연**: *오늘 바람 좋았어*
@@ -16906,8 +16912,8 @@
 ---
 
 ### `confess_dain_no_4_ins46`
-- 배경: `gym.png`
-- 캐릭터: `seyoun_normal.png`
+- 배경: `room_my.png`
+- 캐릭터: `seyoun_normal.png` @ 0.35
 - 다음: `confess_dain_no_4_ins47`
 
 **서연**: *...다음에는 다른 말 기대할게*
@@ -16915,8 +16921,8 @@
 ---
 
 ### `confess_dain_no_4_ins47`
-- 배경: `gym.png`
-- 캐릭터: `dain_normal.png`
+- 배경: `room_my.png`
+- 캐릭터: `dain_normal.png` @ 0.35
 - 다음: `confess_dain_no_4_ins48`
 
 **다인**: *야 오늘 재밌었다ㅋㅋ*
@@ -16924,8 +16930,8 @@
 ---
 
 ### `confess_dain_no_4_ins48`
-- 배경: `gym.png`
-- 캐릭터: `dain_normal.png`
+- 배경: `room_my.png`
+- 캐릭터: `dain_normal.png` @ 0.35
 - 다음: `confess_dain_no_4_ins49`
 
 **다인**: *...근데 뭔가 빠진 거 없어?*
@@ -16933,8 +16939,8 @@
 ---
 
 ### `confess_dain_no_4_ins49`
-- 배경: `gym.png`
-- 캐릭터: `yuna_normal.png`
+- 배경: `room_my.png`
+- 캐릭터: `yuna_normal.png` @ 0.35
 - 다음: `confess_dain_no_4_ins50`
 
 **유나**: *...오늘*
@@ -16942,8 +16948,8 @@
 ---
 
 ### `confess_dain_no_4_ins50`
-- 배경: `gym.png`
-- 캐릭터: `yuna_normal.png`
+- 배경: `room_my.png`
+- 캐릭터: `yuna_normal.png` @ 0.35
 - 다음: `day4_night_start`
 
 **유나**: *괜찮았어*
@@ -16958,7 +16964,7 @@
 - 야간: true
 - 다음: `day4_night_branch`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `없음`
 **{name}**: *집에 돌아왔다. 방에 누우니 오늘의 기억이 필름처럼 스쳐 지나간다.*
 
 ---
@@ -16975,7 +16981,7 @@
   - [`nurse_route_unlocked`] → `night_nurse_msg_1`
   - [기본] → `day4_night_reflect`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -18688,7 +18694,7 @@
 - 야간: true
 - 다음: `day4_night_sleep`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -18778,7 +18784,7 @@
 - 야간: true
 - 다음: `day4_final`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *눈을 감는다. 내일이 마지막이다. — 할 말이 남아 있다.*
 
 ---
@@ -18787,7 +18793,7 @@
 - 야간: true
 - 다음: `morning5_start`
 
-- 배경: `school_back.png`
+- 배경: `room_my.png`
 - 캐릭터: `없음`
 **{name}**: *토요일 밤이 깊어간다. 내일은 일요일, 마지막 날이다.*
 
@@ -18840,7 +18846,7 @@
 
 ### `wall_seo_14_ins`
 - 배경: `park.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_sad.png`
 - 다음: `wall_seo_14_ins2`
 
 **서연**: ...근데 너는.
@@ -18876,7 +18882,7 @@
 
 ### `wall_seo_hug_2_ins`
 - 배경: `park.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_cry.png`
 - 다음: `wall_seo_hug_2_ins2`
 
 **서연**: ...누구 앞에서 우는 거, 초등학교 이후로 처음이야.
@@ -18885,7 +18891,7 @@
 
 ### `wall_seo_hug_2_ins2`
 - 배경: `park.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_cry.png`
 - 다음: `wall_seo_hug_3`
 
 **서연**: 8년. — 그동안 혼자 화장실에서만 울었거든.
@@ -19705,7 +19711,7 @@
   - [`nurse_day4`] → `hidden_nurse_d5_1`
   - [기본] → `morning5_end`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `없음`
 **{name}**: *행사 중간 쉬는 시간. 보건실 앞을 지나간다.*
 
 ---
@@ -19830,7 +19836,7 @@
   - [`route_seoyeon`] → `tour_seo_1`
   - [기본] → `tour_seo_1`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `없음`
 **{name}**: *세 방향에서 보낸 신호. — 답을 골라야 한다.*
 
 ---
@@ -20681,7 +20687,7 @@
 ---
 
 ### `tour_dain_1_check`
-- 배경: `store.png`
+- 배경: `gym.png`
 - BGM: `sunset1.mp3`
 - 분기:
   - [`chose_dain_lunch`] → `tour_dain_1`
@@ -20693,7 +20699,7 @@
 ---
 
 ### `tour_dain_1`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 다음: `tour_dain_2`
 
 - 캐릭터: `없음`
@@ -20702,7 +20708,7 @@
 ---
 
 ### `tour_dain_1b`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 다음: `tour_dain_2`
 
 - 캐릭터: `없음`
@@ -20711,7 +20717,7 @@
 ---
 
 ### `tour_dain_2`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_3`
 
@@ -20720,7 +20726,7 @@
 ---
 
 ### `tour_dain_3`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_laugh.png`
 - 다음: `tour_dain_4`
 
@@ -20729,7 +20735,7 @@
 ---
 
 ### `tour_dain_4`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_5`
 
@@ -20738,7 +20744,7 @@
 ---
 
 ### `tour_dain_5`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_laugh.png`
 - 다음: `tour_dain_6`
 
@@ -20747,7 +20753,7 @@
 ---
 
 ### `tour_dain_6`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_7`
 
@@ -20756,7 +20762,7 @@
 ---
 
 ### `tour_dain_7`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_laugh.png`
 - 다음: `tour_dain_8`
 
@@ -20765,7 +20771,7 @@
 ---
 
 ### `tour_dain_8`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_9`
 
@@ -20774,7 +20780,7 @@
 ---
 
 ### `tour_dain_9`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_10`
 
@@ -20783,7 +20789,7 @@
 ---
 
 ### `tour_dain_10`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `tour_dain_11`
 
@@ -20792,7 +20798,7 @@
 ---
 
 ### `tour_dain_11`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `tour_dain_11_ins`
 
@@ -20801,7 +20807,7 @@
 ---
 
 ### `tour_dain_12`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_sad.png`
 - 다음: `tour_dain_13`
 
@@ -20810,7 +20816,7 @@
 ---
 
 ### `tour_dain_13`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_end`
 
@@ -20819,7 +20825,7 @@
 ---
 
 ### `tour_dain_end`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_shy.png`
 - 스탯: Dain +7
 - 다음: `tour_dain_freetalk`
@@ -20829,7 +20835,7 @@
 ---
 
 ### `tour_dain_end_2`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_shy.png`
 - 다음: `after5_start`
 
@@ -20856,7 +20862,7 @@
 ---
 
 ### `tour_dain_freetalk`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_end_2`
 
@@ -20865,7 +20871,7 @@
 ---
 
 ### `tour_dain_11_ins`
-- 배경: `store.png`
+- 배경: `gym.png`
 - 캐릭터: `dain_normal.png`
 - 다음: `tour_dain_12`
 
@@ -21128,7 +21134,7 @@
 - BGM: `confession.mp3`
 - 다음: `after5_end`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `없음`
 **{name}**: *해가 지고 있다. 5일이 끝나간다.*
 
 ---
@@ -21137,7 +21143,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_ending_check`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `없음`
 **{name}**: *석양이 교정을 물들인다. 5일이라는 시간이 이렇게 짧았나. — 마지막 선택의 순간이 다가온다.*
 
 ---
@@ -21187,7 +21193,7 @@
   1. "이번에는 고백하겠다" → `after5_confess_yes` | 플래그: `day5_confessed`
   2. "...아무 말도 하지 못했다" → `after5_confess_no`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `없음`
 **{name}**: *지금이 아니면 영원히 말 못 한다.*
 
 ---
@@ -21584,7 +21590,7 @@
   - [`day4_waited`] → `day5_ending_friend`
   - [기본] → `day5_ending_alone`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
@@ -22115,7 +22121,7 @@
 - 다음: `bitter_epilogue_2`
 
 - 배경: `ending_bittersweet.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *졸업 후. 연락이 뜸해졌다. 한 달에 한 번이 두 달에 한 번이 되고, 읽씹이 일상이 되고, 어느 날 메시지를 보내려다 뭐라고 하지?가 떠올랐을 때 — 끝났다는 걸 알았다.*
 
 ---
@@ -22125,7 +22131,7 @@
 - 다음: `bitter_epilogue_3`
 
 - 배경: `ending_bittersweet.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *5일의 기록은 남았다. 아프지 않다. 다만 — 충분하지 않았다. 서로에게.*
 
 ---
@@ -22135,7 +22141,7 @@
 - 다음: `day5_credits`
 
 - 배경: `ending_bittersweet.png`
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **시스템**: ─── BITTERSWEET END ───
 
 ---
@@ -22484,8 +22490,8 @@
 - 야간: true
 - 다음: `true_epilogue_3`
 
-- 배경: `ending_true_seoyeon.png`
-- 캐릭터: `seyoun_shy.png`
+- 배경: `ending_bittersweet.png`
+- 캐릭터: `없음`
 **{name}**: *교복은 뻣뻣했고, 벚꽃은 재채기였고, 교문 앞에서 뭘 해야 할지 몰랐다.*
 
 ---
@@ -22494,8 +22500,8 @@
 - 야간: true
 - 다음: `true_epilogue_4`
 
-- 배경: `ending_true_seoyeon.png`
-- 캐릭터: `seyoun_shy.png`
+- 배경: `ending_bittersweet.png`
+- 캐릭터: `없음`
 **{name}**: *근데 돌아보면 — 처음 눈 마주친 그 순간에 이미 끝나 있었던 것 같다. 다만 인정하기까지 5일이 걸렸을 뿐.*
 
 ---
@@ -22899,7 +22905,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_4`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **{name}**: *다인이 웃고 있었다. 평소처럼 밝게. — 근데 느낌표가 없었다. 잘 지내. 마침표로 끝나는 다인의 문장을 처음 들은 게 하필 이별이었다.*
 
 ---
@@ -22908,7 +22914,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_5`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **{name}**: *세 사람의 등을 봤다. 셋 다 돌아보지 않았다. — 그게 답이었다.*
 
 ---
@@ -22917,7 +22923,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_6`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **{name}**: *봄이 끝나고 있다. 벚꽃이 지고 있다. 아무도 내 옆에 없다.*
 
 ---
@@ -22926,7 +22932,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `mayhem_7`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **{name}**: ‹빈›
 
 ---
@@ -22935,7 +22941,7 @@
 - 배경: `ending_mayhem.png`
 - 다음: `day5_credits`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **시스템**: ─── MAYHEM END ───
 
 ---
@@ -23067,7 +23073,7 @@
 - 야간: true
 - 다음: `confess_fail_2`
 
-- 배경: `ending_confess_fail_seoyeon.png`
+- 배경: `ending_bittersweet.png`
 - 캐릭터: `없음`
 **{name}**: *"...고마워. 진짜로. 근데 나는 아직 — 5일은 너무 짧았나 봐."*
 
@@ -23077,7 +23083,7 @@
 - 야간: true
 - 다음: `confess_fail_3`
 
-- 배경: `ending_confess_fail_seoyeon.png`
+- 배경: `ending_bittersweet.png`
 - 캐릭터: `없음`
 **{name}**: *거절이 아니다. 타이밍이다. — 충분히 다가가지 못한 5일이 만든 결과.*
 
@@ -23087,7 +23093,7 @@
 - 야간: true
 - 다음: `confess_fail_4`
 
-- 배경: `ending_confess_fail_seoyeon.png`
+- 배경: `ending_bittersweet.png`
 - 캐릭터: `없음`
 **{name}**: ‹빈›
 
@@ -23097,7 +23103,7 @@
 - 야간: true
 - 다음: `confess_fail_5`
 
-- 배경: `ending_confess_fail_seoyeon.png`
+- 배경: `ending_bittersweet.png`
 - 캐릭터: `없음`
 **{name}**: ‹빈›
 
@@ -23107,7 +23113,7 @@
 - 야간: true
 - 다음: `day5_credits`
 
-- 배경: `ending_confess_fail_seoyeon.png`
+- 배경: `ending_bittersweet.png`
 - 캐릭터: `없음`
 **시스템**: ─── FRIEND END (고백 실패) ───
 
@@ -23964,8 +23970,8 @@
 - 타입: `credits`
 - 다음: `day5_ending_restart`
 
-- 배경: `ending_perfect_seoyeon.png`
-- 캐릭터: `yuna_normal.png`
+- 배경: `ending_bittersweet.png`
+- 캐릭터: `없음`
 **—**: ‹빈›
 
 ---
@@ -23976,7 +23982,7 @@
   1. "처음부터 다시 시작하기" → `index.html`
 
 - 배경: `ending_bittersweet.png`
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **시스템**: ‹빈›
 
 ---
