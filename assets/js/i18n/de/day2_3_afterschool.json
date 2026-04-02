@@ -72,6 +72,10 @@
         "name": "{name}",
         "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist — eindeutig nicht gewöhnlich. Schnell, präzise, Muskelgedächtnis in Aktion.*"
     },
+    "after2_dain_11b": {
+        "name": "{name}",
+        "text": "*Wir verließen die Sporthalle und gingen die Straße entlang.*"
+    },
     "after2_dain_12": {
         "name": "Dain",
         "text": "Aaaargh!! Verloren!! — Aber du bist ganz gut?! Ich dachte du machst keinen Sport?!"
@@ -92,9 +96,25 @@
         "name": "Dain",
         "text": "*Boxt mir in die Schulter* Du Betrüger!! Hahaha — aber das hat Spaß gemacht!"
     },
+    "after2_dain_skinship_1": {
+        "name": "{name}",
+        "text": "*Dain reißt die Hand hoch. High-Five.*"
+    },
+    "after2_dain_skinship_2": {
+        "name": "Dain",
+        "text": "...Oh sorry! Ist Gewohnheit!"
+    },
+    "after2_dain_skinship_3": {
+        "name": "{name}",
+        "text": "*Sie hat die Hand weggezogen. Sieht überhaupt nicht sorry aus. — Meine Handfläche ist noch warm.*"
+    },
     "after2_dain_end": {
         "name": "{name}",
         "text": "*Ihre Augen haben Halbmondform. Dieselben Augen wie gestern. — So sieht diese Person aus, wenn sie ehrlich Spaß hat.*"
+    },
+    "after2_dain_end_first": {
+        "name": "{name}",
+        "text": "*Ihre Augen biegen sich zu Halbmonden. — So sieht sie aus, wenn sie wirklich Spaß hat.*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
@@ -280,6 +300,22 @@
         "name": "{name}",
         "text": "*Ich verlasse die Schülerratskammer. Der Sonnenuntergang färbt den Flur.*"
     },
+    "after2_seo_skinship_1": {
+        "name": "{name}",
+        "text": "*Seoyeon streckt die Hand aus. Entfernt ein Stäubchen von meinem Kragen. Ihre Hand streift meinen Hals.*"
+    },
+    "after2_seo_skinship_2": {
+        "name": "{name}",
+        "text": "*Seoyeons Finger stoppen. Sie dreht den Kopf weg, ohne ein Wort. — Mir stockt kurz der Atem.*"
+    },
+    "after2_seo_skinship_3": {
+        "name": "Seoyeon",
+        "text": "...Du hattest Staub."
+    },
+    "after2_seo_return": {
+        "name": "{name}",
+        "text": "*Verließ den Schülerrat. Ging Richtung Schultor.*"
+    },
     "after2_yuna_1": {
         "name": "{name}",
         "text": "*Von Yuna kam keine Nachricht. Aber meine Füße gehen Richtung Bibliothek. Warum? — Weiß nicht genau. Vielleicht wegen dem Morgenzettel.*"
@@ -368,6 +404,98 @@
         "name": "{name}",
         "text": "*Der Sonnenuntergang verblasst. Neben Yuna sitzen und Musik hören. Ein Moment, in dem keine Worte nötig sind.*"
     },
+    "after2_yuna_skinship_1": {
+        "name": "{name}",
+        "text": "*Wir greifen nach dem gleichen Buch — unsere Hände überlappen sich.*"
+    },
+    "after2_yuna_skinship_2": {
+        "name": "{name}",
+        "text": "*Yuna zieht ihre Hand nicht zuerst zurück. Drei Sekunden. Sie senkt den Blick.*"
+    },
+    "after2_yuna_skinship_3": {
+        "name": "{name}",
+        "text": "*Die Hände trennen sich. Yuna nimmt das Buch und reicht es mir. Ohne ein Wort.*"
+    },
+    "after2_yuna_return": {
+        "name": "{name}",
+        "text": "*Verließ den Bibliotheksanbau. Die Sonne geht unter.*"
+    },
+    "minsu_warn_1": {
+        "name": "{name}",
+        "text": "*Auf dem Heimweg. Am Schultor — Minsu folgt mir von hinten.*"
+    },
+    "minsu_warn_2": {
+        "name": "Minsu",
+        "text": "Hey."
+    },
+    "minsu_warn_3": {
+        "name": "{name}",
+        "text": "Was?"
+    },
+    "minsu_warn_4": {
+        "name": "Minsu",
+        "text": "Hast du gerade Spaß in letzter Zeit?"
+    },
+    "minsu_warn_5": {
+        "name": "{name}",
+        "text": "Wie kommst du darauf?"
+    },
+    "minsu_warn_6": {
+        "name": "Minsu",
+        "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an."
+    },
+    "minsu_warn_7": {
+        "name": "{name}",
+        "text": "Die sind einfach nett, oder?"
+    },
+    "minsu_warn_8": {
+        "name": "Minsu",
+        "text": "Alter, ich bin seit einem Jahr in dieser Klasse. Seoyeon hat noch nie einen Typen zuerst angesprochen. Dain hat noch nie einem anderen Typen Brot gekauft. Und Yuna — Zettel? Die schreibt sie niemandem."
+    },
+    "minsu_warn_8b": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "minsu_warn_9": {
+        "name": "Minsu",
+        "text": "Alle drei machen das nur bei dir. — Das weißt du auch."
+    },
+    "minsu_warn_10": {
+        "name": "{name}",
+        "text": "*Ich weiß es. Ich tu nur so, als würde ich es nicht sehen.*"
+    },
+    "minsu_warn_11": {
+        "name": "Minsu",
+        "text": "Das Problem ist, dass du allen dreien gleich zulächelst."
+    },
+    "minsu_warn_11b": {
+        "name": "{name}",
+        "text": "Ich hab doch nur —"
+    },
+    "minsu_warn_11c": {
+        "name": "Minsu",
+        "text": "Nur? Dieses 'nur' ist das Grausamste daran. Für die ist es nicht 'nur' irgendwas."
+    },
+    "minsu_warn_12": {
+        "name": "{name}",
+        "text": "*Mir fehlen die Worte. Minsu hat recht. — Ich bilde mir ein, aufmerksam zu sein, aber die Missverständnisse, die ich selbst verbreite, sehe ich nicht.*"
+    },
+    "minsu_warn_13": {
+        "name": "Minsu",
+        "text": "War das in deiner alten Schule auch so?"
+    },
+    "minsu_warn_13b": {
+        "name": "{name}",
+        "text": "...Was?"
+    },
+    "minsu_warn_14": {
+        "name": "{name}",
+        "text": "*— Meine Schritte blieben abrupt stehen.*"
+    },
+    "minsu_warn_15": {
+        "name": "Minsu",
+        "text": "Keine Ahnung, vielleicht geht mich das nichts an. — Aber wenn am Ende alle drei heulen, dann ist das deine Schuld. Echt jetzt."
+    },
     "after2_dain_freetalk": {
         "name": "Dain",
         "text": "*Wir gingen in den Tteokbokki-Laden in der Nähe der Schule.* *Tteokbokki mit Dain essen und plaudern.*",
@@ -447,130 +575,6 @@
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
         "context": "Tag 2. Ellbogen beim Sport aufgeschürft. Ton: Näher als gestern. Neckereien fühlen sich natürlich und bequem an. Hin-und-her-Flirten. Noch keine schweren Themen.",
         "personality": "Die Schulkrankenschwester ist verspielt aber gründlich. Braucht lange für Pflaster."
-    },
-    "minsu_warn_1": {
-        "name": "{name}",
-        "text": "*Auf dem Heimweg. Am Schultor — Minsu folgt mir von hinten.*"
-    },
-    "minsu_warn_2": {
-        "name": "Minsu",
-        "text": "Hey."
-    },
-    "minsu_warn_3": {
-        "name": "{name}",
-        "text": "Was?"
-    },
-    "minsu_warn_4": {
-        "name": "Minsu",
-        "text": "Hast du gerade Spaß in letzter Zeit?"
-    },
-    "minsu_warn_5": {
-        "name": "{name}",
-        "text": "Wie kommst du darauf?"
-    },
-    "minsu_warn_6": {
-        "name": "Minsu",
-        "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an."
-    },
-    "minsu_warn_7": {
-        "name": "{name}",
-        "text": "Die sind einfach nett, oder?"
-    },
-    "minsu_warn_8": {
-        "name": "Minsu",
-        "text": "Alter, ich bin seit einem Jahr in dieser Klasse. Seoyeon hat noch nie einen Typen zuerst angesprochen. Dain hat noch nie einem anderen Typen Brot gekauft. Und Yuna — Zettel? Die schreibt sie niemandem."
-    },
-    "minsu_warn_9": {
-        "name": "Minsu",
-        "text": "Alle drei machen das nur bei dir. — Das weißt du auch."
-    },
-    "minsu_warn_10": {
-        "name": "{name}",
-        "text": "*Ich weiß es. Ich tu nur so, als würde ich es nicht sehen.*"
-    },
-    "minsu_warn_11": {
-        "name": "Minsu",
-        "text": "Das Problem ist, dass du allen dreien gleich zulächelst."
-    },
-    "minsu_warn_12": {
-        "name": "{name}",
-        "text": "*Mir fehlen die Worte. Minsu hat recht. — Ich bilde mir ein, aufmerksam zu sein, aber die Missverständnisse, die ich selbst verbreite, sehe ich nicht.*"
-    },
-    "minsu_warn_13": {
-        "name": "Minsu",
-        "text": "War das in deiner alten Schule auch so?"
-    },
-    "minsu_warn_14": {
-        "name": "{name}",
-        "text": "*— Meine Schritte blieben abrupt stehen.*"
-    },
-    "minsu_warn_15": {
-        "name": "Minsu",
-        "text": "Keine Ahnung, vielleicht geht mich das nichts an. — Aber wenn am Ende alle drei heulen, dann ist das deine Schuld. Echt jetzt."
-    },
-    "minsu_warn_8b": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "minsu_warn_11b": {
-        "name": "{name}",
-        "text": "Ich hab doch nur —"
-    },
-    "minsu_warn_11c": {
-        "name": "Minsu",
-        "text": "Nur? Dieses 'nur' ist das Grausamste daran. Für die ist es nicht 'nur' irgendwas."
-    },
-    "minsu_warn_13b": {
-        "name": "{name}",
-        "text": "...Was?"
-    },
-    "after2_dain_skinship_1": {
-        "name": "{name}",
-        "text": "*Dain reißt die Hand hoch. High-Five.*"
-    },
-    "after2_dain_skinship_2": {
-        "name": "Dain",
-        "text": "...Oh sorry! Ist Gewohnheit!"
-    },
-    "after2_dain_skinship_3": {
-        "name": "{name}",
-        "text": "*Sie hat die Hand weggezogen. Sieht überhaupt nicht sorry aus. — Meine Handfläche ist noch warm.*"
-    },
-    "after2_seo_return": {
-        "name": "{name}",
-        "text": "*Verließ den Schülerrat. Ging Richtung Schultor.*"
-    },
-    "after2_seo_skinship_1": {
-        "name": "{name}",
-        "text": "*Seoyeon streckt die Hand aus. Entfernt ein Stäubchen von meinem Kragen. Ihre Hand streift meinen Hals.*"
-    },
-    "after2_seo_skinship_2": {
-        "name": "{name}",
-        "text": "*Seoyeons Finger stoppen. Sie dreht den Kopf weg, ohne ein Wort. — Mir stockt kurz der Atem.*"
-    },
-    "after2_seo_skinship_3": {
-        "name": "Seoyeon",
-        "text": "...Du hattest Staub."
-    },
-    "after2_yuna_return": {
-        "name": "{name}",
-        "text": "*Verließ den Bibliotheksanbau. Die Sonne geht unter.*"
-    },
-    "after2_yuna_skinship_1": {
-        "name": "{name}",
-        "text": "*Wir greifen nach dem gleichen Buch — unsere Hände überlappen sich.*"
-    },
-    "after2_yuna_skinship_2": {
-        "name": "{name}",
-        "text": "*Yuna zieht ihre Hand nicht zuerst zurück. Drei Sekunden. Sie senkt den Blick.*"
-    },
-    "after2_yuna_skinship_3": {
-        "name": "{name}",
-        "text": "*Die Hände trennen sich. Yuna nimmt das Buch und reicht es mir. Ohne ein Wort.*"
-    },
-    "after2_dain_11b": {
-        "name": "{name}",
-        "text": "*Wir verließen die Sporthalle und gingen die Straße entlang.*"
     },
     "after2_dain_9_ins": {
         "name": "Dain",

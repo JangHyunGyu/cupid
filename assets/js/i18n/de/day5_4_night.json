@@ -1103,7 +1103,7 @@
     },
     "hidden_true_nurse_7_ins": {
         "name": "{name}",
-        "text": "*Die Schulkrankenschwester streckt die Hand aus und berührt das Pflaster auf meinem Handrücken. Das von gestern.*"
+        "text": "*Die Krankenschwester streckt die Hand aus und berührt das Pflaster auf meinem Handrücken. Dasselbe Pflaster, das sie heute Morgen aufgeklebt hat.*"
     },
     "hidden_true_nurse_7_ins2": {
         "name": "Schulkrankenschwester",

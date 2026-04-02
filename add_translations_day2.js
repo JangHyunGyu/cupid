@@ -779,6 +779,15 @@ c("Stop messaging and go to sleep.", "Dejar de enviar mensajes y dormir.", "メ�
 c("Stay a little longer.", "Quedarme un poco más.", "もう少しいる。");
 c("It's late, I should head back.", "Es tarde, debería irme.", "もう遅い、帰らなきゃ。");
 
+// New branches for lunch
+t("*I open the door to the nurse's office. An unfamiliar scent of antiseptic tickles my nose.*", "*Abro la puerta de la enfermería. Un olor desconocido a antiséptico me hace cosquillas en la nariz.*", "*保健室のドアを開ける。見慣れない消毒薬の匂いが鼻をかすめる。*");
+t("*Inside the nurse's office. Documents are piled on the desk, and the nurse is sitting in her chair.*", "*Dentro de la enfermería. Hay documentos apilados en el escritorio y la enfermera está sentada en su silla.*", "*保健室の中。机の上に書類が積まれ、保健室の先生が椅子に座っている。*");
+t("...Oh? You're the one from earlier. What brings you here during lunch?", "...¿Oh? Eres el de antes. ¿Qué te trae por aquí durante el almuerzo?", "…あれ？さっきの。昼休みになんの用？");
+t("You look better than you did this morning. That's a relief.", "Te ves mejor que esta mañana. Es un alivio.", "朝よりは顔色がいいみたいね。よかった。");
+
+// New branches for afterschool
+t("*Her eyes curve into half-moons. — This is how she looks when she's genuinely having fun.*", "*Sus ojos se curvan en medias lunas. — Así es como se ve cuando realmente se divierte.*", "*目が半月型になっている。—この人は本当に楽しい時、こんな顔をするんだな。*");
+
 // ======== PROCESSING LOGIC ========
 function findMatchingBrace(text, startIdx) {
     let depth = 0, inStr = false, esc = false;

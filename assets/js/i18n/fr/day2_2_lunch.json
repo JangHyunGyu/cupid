@@ -1,584 +1,600 @@
 {
-  "lunch2_start": {
-    "name": "{name}",
-    "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait signe vers la boutique de l'école.*"
-  },
-  "lunch2_start_2": {
-    "name": "{name}",
-    "text": "*La pause déjeuner dans cette école, c'est la guerre.*"
-  },
-  "lunch2_choice": {
-    "name": "{name}",
-    "text": "*Avec qui je vais ?*",
-    "choices": [
-      "Suivre le mot de Yuna vers l'annexe de la bibliothèque",
-      "Suivre Seoyeon sur le toit",
-      "Aller à la boutique avec Dain"
-    ]
-  },
-  "lunch2_yuna_1": {
-    "name": "{name}",
-    "text": "*L'annexe de la bibliothèque. Un bâtiment plus ancien que le principal. Presque aucun élève.*"
-  },
-  "lunch2_yuna_2": {
-    "name": "{name}",
-    "text": "*Je monte les escaliers et trouve Yuna au bout du couloir. Adossée au mur, elle lit un livre.*"
-  },
-  "lunch2_yuna_3": {
-    "name": "Yuna",
-    "text": "...T'es venu."
-  },
-  "lunch2_yuna_4": {
-    "name": "{name}",
-    "text": "J'ai reçu ton mot."
-  },
-  "lunch2_yuna_5": {
-    "name": "Yuna",
-    "text": "T'aurais pu ne pas venir."
-  },
-  "lunch2_yuna_6": {
-    "name": "{name}",
-    "text": "Pourquoi ?"
-  },
-  "lunch2_yuna_7": {
-    "name": "Yuna",
-    "text": "T'as l'air de bien t'entendre avec la bruyante. C'est plus amusant, non ?"
-  },
-  "lunch2_yuna_8": {
-    "name": "{name}",
-    "text": "Parfois j'ai besoin d'un refuge."
-  },
-  "lunch2_yuna_9": {
-    "name": "{name}",
-    "text": "*Yuna sourit à peine. Presque invisible. — Mais je l'ai vu. Je suis venu ici pour voir ce sourire ?*"
-  },
-  "lunch2_yuna_10": {
-    "name": "Yuna",
-    "text": "...D'accord."
-  },
-  "lunch2_yuna_11": {
-    "name": "{name}",
-    "text": "*Yuna marche devant. Au fond de l'annexe. Un endroit où personne ne semble venir.*"
-  },
-  "lunch2_yuna_12": {
-    "name": "{name}",
-    "text": "*Une petite pièce apparaît. La lumière du soleil entre par la fenêtre, avec un vieux canapé et une étagère.*"
-  },
-  "lunch2_yuna_13": {
-    "name": "{name}",
-    "text": "C'est quoi ici ? Une salle de lecture secrète ?"
-  },
-  "lunch2_yuna_14": {
-    "name": "Yuna",
-    "text": "...Presque personne ne connaît cet endroit."
-  },
-  "lunch2_yuna_15": {
-    "name": "{name}",
-    "text": "*Yuna s'assoit sur le canapé. Elle laisse discrètement la place à côté d'elle libre.*"
-  },
-  "lunch2_yuna_16": {
-    "name": "Yuna",
-    "text": "Il y avait une autre personne ici."
-  },
-  "lunch2_yuna_17": {
-    "name": "{name}",
-    "text": "Il y avait ?"
-  },
-  "lunch2_yuna_choice": {
-    "name": "{name}",
-    "text": "*Rien après 'il y avait'. Passé composé. — Est-ce que je devrais demander ?*",
-    "choices": [
-      "Cette personne, où est-elle maintenant ?",
-      "Ne pas demander et s'asseoir à côté d'elle"
-    ]
-  },
-  "lunch2_yuna_c1_1": {
-    "name": "Yuna",
-    "text": "...Parti. Il y a un an."
-  },
-  "lunch2_yuna_c1_2": {
-    "name": "{name}",
-    "text": "*La voix de Yuna a baissé d'un ton.*"
-  },
-  "lunch2_yuna_c1_3": {
-    "name": "Yuna",
-    "text": "Sans un mot."
-  },
-  "lunch2_yuna_c1_4": {
-    "name": "{name}",
-    "text": "*Une ombre passe sur le visage de Yuna. Je ne sais pas qui est ce « quelqu'un », mais—*"
-  },
-  "lunch2_yuna_c1_5": {
-    "name": "{name}",
-    "text": "Il n'a pas donné de nouvelles ?"
-  },
-  "lunch2_yuna_c1_6": {
-    "name": "Yuna",
-    "text": "...Je ne sais pas. S'il ne l'a pas fait, ou s'il ne pouvait pas."
-  },
-  "lunch2_yuna_c1_7": {
-    "name": "{name}",
-    "text": "*Yuna ouvre son livre. Le signal que la conversation est terminée.*"
-  },
-  "lunch2_yuna_c1_8": {
-    "name": "{name}",
-    "text": "*Je devrais changer l'ambiance. — Essayons de dédramatiser.*"
-  },
-  "lunch2_yuna_c1_9": {
-    "name": "{name}",
-    "text": "Cette personne, elle a peut-être juste été diplômée ? Les aînés perdent souvent le contact."
-  },
-  "lunch2_yuna_c1_10": {
-    "name": "Yuna",
-    "text": "...C'était un transfert."
-  },
-  "lunch2_yuna_c1_11": {
-    "name": "{name}",
-    "text": "Ah..."
-  },
-  "lunch2_yuna_c1_12": {
-    "name": "{name}",
-    "text": "*J'ai gaffé. Essayer de dédramatiser a juste donné l'impression que je minimisais sa blessure.*"
-  },
-  "lunch2_yuna_c1_13": {
-    "name": "{name}",
-    "text": "*Un silence gênant suit. Seul le bruit des pages qui tournent remplit la pièce.*"
-  },
-  "lunch2_yuna_c1_14": {
-    "name": "{name}",
-    "text": "*Je me vantais d'être perspicace. — J'avais tort. Pas devant cette personne.*"
-  },
-  "lunch2_yuna_c2_1": {
-    "name": "{name}",
-    "text": "*Je m'assois à côté d'elle sans rien dire. Yuna jette un bref coup d'œil.*"
-  },
-  "lunch2_yuna_c2_2": {
-    "name": "{name}",
-    "text": "*Elle sort un livre de sa pile et le pose à côté de moi.*"
-  },
-  "lunch2_yuna_c2_3": {
-    "name": "Yuna",
-    "text": "...Lis."
-  },
-  "lunch2_yuna_c2_4": {
-    "name": "{name}",
-    "text": "*Offrir un livre au lieu de mots. — Le langage de cette personne, ce sont les actes. Différent de Seoyeon, mais à sa manière.*"
-  },
-  "lunch2_yuna_c2_5": {
-    "name": "{name}",
-    "text": "*On lit côte à côte en silence. La lumière du soleil par la fenêtre est chaude.*"
-  },
-  "lunch2_yuna_c2_6": {
-    "name": "Yuna",
-    "text": "...La raison pour laquelle j'aime cet endroit."
-  },
-  "lunch2_yuna_c2_7": {
-    "name": "{name}",
-    "text": "Hm ?"
-  },
-  "lunch2_yuna_c2_8": {
-    "name": "Yuna",
-    "text": "C'est calme. — Mais je ne suis pas seule."
-  },
-  "lunch2_yuna_c2_9": {
-    "name": "{name}",
-    "text": "*Deux phrases. C'est un long discours pour Yuna. — Et tout est contenu dans ces deux phrases.*"
-  },
-  "lunch2_yuna_end": {
-    "name": "{name}",
-    "text": "*Le 'il y avait' de Yuna tourne dans ma tête. La signification de cet endroit qu'elle m'a montré... commence à prendre forme.*"
-  },
-  "lunch2_seo_1": {
-    "name": "{name}",
-    "text": "*Le toit. Le même endroit qu'hier. Seoyeon ouvre son bento.*"
-  },
-  "lunch2_seo_2": {
-    "name": "Seoyeon",
-    "text": "T'es revenu. Tu y as pris goût ?"
-  },
-  "lunch2_seo_3": {
-    "name": "{name}",
-    "text": "C'était bon à manger."
-  },
-  "lunch2_seo_4": {
-    "name": "Seoyeon",
-    "text": "C'est pour la nourriture ?"
-  },
-  "lunch2_seo_5": {
-    "name": "{name}",
-    "text": "La brise est agréable aussi."
-  },
-  "lunch2_seo_6": {
-    "name": "Seoyeon",
-    "text": "...La brise."
-  },
-  "lunch2_seo_7": {
-    "name": "{name}",
-    "text": "*Elle semblait vouloir en entendre plus — mais je me suis retenu exprès.*"
-  },
-  "lunch2_seo_8": {
-    "name": "{name}",
-    "text": "*En mangeant — la porte du toit s'ouvre. Dain est montée.*"
-  },
-  "lunch2_seo_9": {
-    "name": "Dain",
-    "text": "Oh ! Vous êtes là ?! Trouvé !"
-  },
-  "lunch2_seo_10": {
-    "name": "Seoyeon",
-    "text": "...Le toit est sur autorisation seulement."
-  },
-  "lunch2_seo_11": {
-    "name": "Dain",
-    "text": "Oh la la, y a pas besoin d'autorisation pour manger ! — Oh, un bento ! Ça a l'air trop bon !"
-  },
-  "lunch2_seo_12": {
-    "name": "{name}",
-    "text": "*Dain s'assoit sans hésiter. Les sourcils de Seoyeon se froncent très légèrement.*"
-  },
-  "lunch2_seo_13": {
-    "name": "Dain",
-    "text": "On s'est vues hier ! C'est une fille super, Seoyeon-senpai !"
-  },
-  "lunch2_seo_14": {
-    "name": "Seoyeon",
-    "text": "...Une fille sympa."
-  },
-  "lunch2_seo_15": {
-    "name": "{name}",
-    "text": "On se connaît juste."
-  },
-  "lunch2_seo_16": {
-    "name": "Seoyeon",
-    "text": "Pourquoi, ça te dérange ?"
-  },
-  "lunch2_seo_17": {
-    "name": "Dain",
-    "text": "Oh, c'était juste par curiosité !"
-  },
-  "lunch2_seo_18": {
-    "name": "{name}",
-    "text": "*Les angles de ce triangle deviennent plus aigus. — Et je me sens moins comme un sommet et plus comme un sacrifice.*"
-  },
-  "lunch2_seo_19": {
-    "name": "{name}",
-    "text": "*Seoyeon jette un coup d'œil nonchalant aux lèvres de {name}.*"
-  },
-  "lunch2_seo_20": {
-    "name": "Seoyeon",
-    "text": "T'as un truc sur la lèvre. Bouge pas."
-  },
-  "lunch2_seo_choice": {
-    "name": "{name}",
-    "text": "*La main de Seoyeon s'approche.*",
-    "choices": [
-      "Rester immobile",
-      "Je m'essuie moi-même"
-    ]
-  },
-  "lunch2_seo_c1_1": {
-    "name": "{name}",
-    "text": "*Le doigt de Seoyeon effleure le coin de mes lèvres. Doucement. Lentement. — Plus lentement que nécessaire.*"
-  },
-  "lunch2_seo_c1_2": {
-    "name": "Seoyeon",
-    "text": "...Voilà."
-  },
-  "lunch2_seo_c1_3": {
-    "name": "Dain",
-    "text": "Qu'est-ce que je viens de voir ?!"
-  },
-  "lunch2_seo_c1_4": {
-    "name": "Seoyeon",
-    "text": "C'était un grain de riz."
-  },
-  "lunch2_seo_c1_5": {
-    "name": "{name}",
-    "text": "*Il faut trois secondes pour enlever un grain de riz ? — Personne n'a remarqué, mais les pointes des oreilles de Seoyeon sont rouges.*"
-  },
-  "lunch2_seo_c2_1": {
-    "name": "{name}",
-    "text": "*Je m'essuie la bouche avec le dos de la main.*"
-  },
-  "lunch2_seo_c2_2": {
-    "name": "Seoyeon",
-    "text": "...Si tu t'essuies toi-même, ça va juste étaler."
-  },
-  "lunch2_seo_c2_3": {
-    "name": "{name}",
-    "text": "*Elle a l'air un peu vexée. — Mais sa contenance est impeccable. C'est tout elle.*"
-  },
-  "lunch2_seo_end_c1": {
-    "name": "{name}",
-    "text": "*Là où la main de Seoyeon est passée me trotte encore dans la tête. — Et les yeux surpris de Dain aussi.*"
-  },
-  "lunch2_seo_end_c2": {
-    "name": "{name}",
-    "text": "*Il reste encore une trace de grain de riz sur le dos de ma main. La contenance de Seoyeon est impeccable — mais les coins de ses lèvres se sont légèrement affaissés.*"
-  },
-  "lunch2_dain_1": {
-    "name": "{name}",
-    "text": "*À la boutique avec Dain. Revanche du pierre-feuille-ciseaux d'hier.*"
-  },
-  "lunch2_dain_2": {
-    "name": "Dain",
-    "text": "Aujourd'hui tu perds !! Prépare-toi !!"
-  },
-  "lunch2_dain_3": {
-    "name": "{name}",
-    "text": "T'as dit la même chose hier."
-  },
-  "lunch2_dain_4": {
-    "name": "Dain",
-    "text": "Hier c'était juste l'échauffement !!"
-  },
-  "lunch2_dain_5": {
-    "name": "{name}",
-    "text": "*Pierre-feuille-ciseaux. — Dain perd encore.*"
-  },
-  "lunch2_dain_6": {
-    "name": "Dain",
-    "text": "...C'est truqué ?!"
-  },
-  "lunch2_dain_7": {
-    "name": "{name}",
-    "text": "Comment on truque un pierre-feuille-ciseaux ?"
-  },
-  "lunch2_dain_8": {
-    "name": "Dain",
-    "text": "Rrrh... Deux pains soboro s'il vous plaît..."
-  },
-  "lunch2_dain_9": {
-    "name": "{name}",
-    "text": "*On achète du pain et on s'assoit sur un banc dans le couloir. — À ce moment, Seoyeon passe. Avec un sac à bento.*"
-  },
-  "lunch2_dain_10": {
-    "name": "{name}",
-    "text": "*Seoyeon regarde par ici. Elle me fixe assis à côté de Dain en train de manger du pain pendant une demi-seconde — puis continue son chemin.*"
-  },
-  "lunch2_dain_11": {
-    "name": "Dain",
-    "text": "Hé, c'est quoi le problème de la présidente ? Pourquoi elle nous fixe ?"
-  },
-  "lunch2_dain_12": {
-    "name": "{name}",
-    "text": "Aucune idée."
-  },
-  "lunch2_dain_13": {
-    "name": "Dain",
-    "text": "Hmm... t'es proche de la présidente aussi ?"
-  },
-  "lunch2_dain_choice": {
-    "name": "{name}",
-    "text": "*Dain me fixe intensément.*",
-    "choices": [
-      "On a un peu discuté hier",
-      "Elle m'a juste fait visiter l'école ?",
-      "Pourquoi, ça te dérange ?"
-    ]
-  },
-  "lunch2_dain_c1_1": {
-    "name": "{name}",
-    "text": "*L'expression de Dain se fige subtilement. Elle croque son soboro et détourne la tête.*"
-  },
-  "lunch2_dain_c2_1": {
-    "name": "{name}",
-    "text": "*Dain hoche la tête et croque son pain soboro. Comme si ça ne l'intéressait pas.*"
-  },
-  "lunch2_dain_c3_1": {
-    "name": "Dain",
-    "text": "Bi— Bien sûr que non ! C'est pas ça ! *mord un grand coup dans le pain soboro* Je demandais, c'est tout !!"
-  },
-  "lunch2_dain_c3_2": {
-    "name": "{name}",
-    "text": "*Ses lobes d'oreilles. Rouges. — Les filles de cette école ont des oreilles très honnêtes.*"
-  },
-  "lunch2_dain_end": {
-    "name": "{name}",
-    "text": "*Le craquement du pain soboro de Dain est anormalement fort. Le regard de Seoyeon, les oreilles rouges de Dain — la pause déjeuner se complique de jour en jour.*"
-  },
-  "lunch2_seo_1_check": {
-    "name": "{name}",
-    "text": "*Direction le toit.*"
-  },
-  "lunch2_seo_1b": {
-    "name": "{name}",
-    "text": "*Le toit. C'est la première fois que je viens ici. La brise est fraîche et la vue est dégagée. Seoyeon déballe son déjeuner.*"
-  },
-  "lunch2_seo_2b": {
-    "name": "Seoyeon",
-    "text": "Tu es monté jusqu'ici. Courageux."
-  },
-  "lunch2_seo_13b": {
-    "name": "Dain",
-    "text": "Oh ! Seoyeon-senpai ? Enchantée !"
-  },
-  "lunch2_dain_1_check": {
-    "name": "{name}",
-    "text": "*Direction la boutique.*"
-  },
-  "lunch2_dain_1b": {
-    "name": "{name}",
-    "text": "*À la boutique avec Dain. Premier duel de pierre-feuille-ciseaux.*"
-  },
-  "lunch2_dain_3b": {
-    "name": "{name}",
-    "text": "Vraiment ?"
-  },
-  "lunch2_dain_4b": {
-    "name": "Dain",
-    "text": "Évidemment !! Je suis douée à la base !!"
-  },
-  "lunch2_dain_5b": {
-    "name": "{name}",
-    "text": "*Pierre-feuille-ciseaux. Dain a perdu.*"
-  },
-  "lunch2_yuna_17_ins": {
-    "name": "Yuna",
-    "text": "......"
-  },
-  "lunch2_yuna_c1_9_ins": {
-    "name": "{name}",
-    "text": "*Le regard de Yuna se glace un instant.*"
-  },
-  "lunch2_seo_13b_ins": {
-    "name": "Seoyeon",
-    "text": "*Regardant {name}* ...Une fille pleine d'entrain."
-  },
-  "lunch2_seo_c1_2_ins": {
-    "name": "{name}",
-    "text": "*Les yeux de Dain s'écarquillent en nous regardant tour à tour.*"
-  },
-  "lunch2_seo_c1_3_ins": {
-    "name": "Seoyeon",
-    "text": "*L'air de rien* C'était un grain de riz."
-  },
-  "lunch2_dain_13_ins": {
-    "name": "Dain",
-    "text": "Ça— ça ne me dérange pas ! Pas du tout ! *Mord un grand coup dans le soboro* Je demandais, c'est tout !!"
-  },
-  "lunch2_dain_end_ins": {
-    "name": "{name}",
-    "text": "*Quatrième heure, sport. On courait sur le terrain quand — le gars à côté pile net et on se percute. Mon coude s'est éraflé.*"
-  },
-  "lunch2_dain_end_ins2": {
-    "name": "{name}",
-    "text": "*Rien de grave, mais ça saigne un peu.*"
-  },
-  "lunch2_dain_end_ins3": {
-    "name": "Prof de sport",
-    "text": "Va à l'infirmerie te faire désinfecter ça."
-  },
-  "lunch2_dain_end_ins4": {
-    "name": "{name}",
-    "text": "*J'ouvre la porte de l'infirmerie. La même odeur de désinfectant qu'hier.*"
-  },
-  "lunch2_dain_end_ins5": {
-    "name": "Infirmière",
-    "text": "*Levant les yeux* Oh, le nouveau d'hier."
-  },
-  "lunch2_dain_end_ins6": {
-    "name": "{name}",
-    "text": "Je me suis un peu éraflé le coude."
-  },
-  "lunch2_dain_end_ins7": {
-    "name": "Infirmière",
-    "text": "Encore toi ? Tu veux devenir un habitué ?"
-  },
-  "lunch2_dain_end_ins8": {
-    "name": "{name}",
-    "text": "*Le même ton taquin qu'hier. Mais ses yeux examinent déjà la blessure.*"
-  },
-  "lunch2_dain_end_ins9": {
-    "name": "{name}",
-    "text": "*L'infirmière s'approche et prend mon coude. Ses mains sont froides.*"
-  },
-  "lunch2_dain_end_ins10": {
-    "name": "Infirmière",
-    "text": "Ne bouge pas~..."
-  },
-  "lunch2_dain_end_ins11": {
-    "name": "{name}",
-    "text": "*Elle sort un coton imbibé de désinfectant — tamponne doucement. Puis sort un pansement.*"
-  },
-  "lunch2_dain_end_ins12": {
-    "name": "{name}",
-    "text": "*Mettre un pansement — ça devrait prendre 30 secondes tout au plus. Pourquoi est-elle si méticuleuse ?*"
-  },
-  "lunch2_dain_end_ins13": {
-    "name": "Infirmière",
-    "text": "*Posant le pansement* Là... comme ça... voilà, c'est fait."
-  },
-  "lunch2_dain_end_ins14": {
-    "name": "{name}",
-    "text": "*La main de l'infirmière s'arrête. — 0,5 seconde. Puis elle bouge à nouveau.*"
-  },
-  "lunch2_dain_end_ins15": {
-    "name": "Infirmière",
-    "text": "...J'ai les mains plutôt froides d'habitude. On dirait qu'elles sont chaudes aujourd'hui."
-  },
-  "lunch2_dain_end_ins16": {
-    "name": "{name}",
-    "text": "*C'est faux. Quand elle m'a touché tout à l'heure, elles étaient froides. — Elles ne sont devenues chaudes que maintenant.*"
-  },
-  "lunch2_dain_end_ins17": {
-    "name": "Infirmière",
-    "text": "*Avec un sourire* C'est du soin. Du vrai soin. Si on colle ça à moitié, ça tombe tout de suite."
-  },
-  "lunch2_dain_end_ins18": {
-    "name": "{name}",
-    "text": "*Du soin... c'est vraiment ça ? Ou il y a une autre raison ?*"
-  },
-  "lunch2_dain_end_ins19": {
-    "name": "{name}",
-    "text": "*En vérifiant le pansement — je remarque un ordinateur portable ouvert sur le bureau. Quelque chose est affiché à l'écran. Pas des dossiers médicaux — plutôt un journal personnel.*"
-  },
-  "lunch2_dain_end_ins20": {
-    "name": "{name}",
-    "text": "*L'infirmière ferme rapidement l'ordinateur.*"
-  },
-  "lunch2_dain_end_ins21": {
-    "name": "Infirmière",
-    "text": "*Plissant les yeux* Un seul ? ...Bon, d'accord. Je préfère le cacao au café. Voilà le secret."
-  },
-  "lunch2_dain_end_ins22": {
-    "name": "{name}",
-    "text": "*Comme secret, c'est assez anodin. Mais le fait de le partager — ça veut dire quelque chose.*"
-  },
-  "lunch2_dain_end_ins23": {
-    "name": "Infirmière",
-    "text": "*Riant doucement* Secret~ Les profs aussi ont des secrets."
-  },
-  "lunch2_dain_end_ins24": {
-    "name": "{name}",
-    "text": "*Elle noie le poisson avec une blague, mais elle a fermé cet ordinateur vite. — Il y a quelque chose qu'elle ne veut pas qu'on voie.*"
-  },
-  "lunch2_dain_end_ins25": {
-    "name": "Infirmière",
-    "text": "C'est fini, alors retourne en cours. — Et la prochaine fois, viens sans être blessé."
-  },
-  "lunch2_dain_end_ins26": {
-    "name": "{name}",
-    "text": "Si je ne suis pas blessé, je n'aurais aucune raison de venir."
-  },
-  "lunch2_dain_end_ins27": {
-    "name": "{name}",
-    "text": "*L'infirmière marque une pause. Et puis — sa voix descend d'un ton.*"
-  },
-  "lunch2_dain_end_ins28": {
-    "name": "Infirmière",
-    "text": "Tu peux venir même sans raison."
-  },
-  "lunch2_dain_end_ins29": {
-    "name": "{name}",
-    "text": "*Le côté taquin a disparu. — 0,5 seconde. Puis il revient.*"
-  },
-  "lunch2_dain_end_ins30": {
-    "name": "Infirmière",
-    "text": "*De nouveau sur un ton joyeux* Ah, mais pas pendant les cours~ ! Après les cours !"
-  },
-  "lunch2_dain_end_ins31": {
-    "name": "{name}",
-    "text": "*Ce changement de voix à l'instant. — Est-ce que j'ai rêvé ?*"
-  }
+    "lunch2_start": {
+        "name": "{name}",
+        "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait signe vers la boutique de l'école.*"
+    },
+    "lunch2_start_2": {
+        "name": "{name}",
+        "text": "*La pause déjeuner dans cette école, c'est la guerre.*"
+    },
+    "lunch2_choice": {
+        "name": "{name}",
+        "text": "*Avec qui je vais ?*",
+        "choices": [
+            "Suivre le mot de Yuna vers l'annexe de la bibliothèque",
+            "Suivre Seoyeon sur le toit",
+            "Aller à la boutique avec Dain"
+        ]
+    },
+    "lunch2_seo_1_check": {
+        "name": "{name}",
+        "text": "*Direction le toit.*"
+    },
+    "lunch2_seo_1b": {
+        "name": "{name}",
+        "text": "*Le toit. C'est la première fois que je viens ici. La brise est fraîche et la vue est dégagée. Seoyeon déballe son déjeuner.*"
+    },
+    "lunch2_seo_2b": {
+        "name": "Seoyeon",
+        "text": "Tu es monté jusqu'ici. Courageux."
+    },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*Direction la boutique.*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*À la boutique avec Dain. Premier duel de pierre-feuille-ciseaux.*"
+    },
+    "lunch2_yuna_1": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. Un bâtiment plus ancien que le principal. Presque aucun élève.*"
+    },
+    "lunch2_yuna_2": {
+        "name": "{name}",
+        "text": "*Je monte les escaliers et trouve Yuna au bout du couloir. Adossée au mur, elle lit un livre.*"
+    },
+    "lunch2_yuna_3": {
+        "name": "Yuna",
+        "text": "...T'es venu."
+    },
+    "lunch2_yuna_4": {
+        "name": "{name}",
+        "text": "J'ai reçu ton mot."
+    },
+    "lunch2_yuna_5": {
+        "name": "Yuna",
+        "text": "T'aurais pu ne pas venir."
+    },
+    "lunch2_yuna_6": {
+        "name": "{name}",
+        "text": "Pourquoi ?"
+    },
+    "lunch2_yuna_7": {
+        "name": "Yuna",
+        "text": "T'as l'air de bien t'entendre avec la bruyante. C'est plus amusant, non ?"
+    },
+    "lunch2_yuna_8": {
+        "name": "{name}",
+        "text": "Parfois j'ai besoin d'un refuge."
+    },
+    "lunch2_yuna_9": {
+        "name": "{name}",
+        "text": "*Yuna sourit à peine. Presque invisible. — Mais je l'ai vu. Je suis venu ici pour voir ce sourire ?*"
+    },
+    "lunch2_yuna_10": {
+        "name": "Yuna",
+        "text": "...D'accord."
+    },
+    "lunch2_yuna_11": {
+        "name": "{name}",
+        "text": "*Yuna marche devant. Au fond de l'annexe. Un endroit où personne ne semble venir.*"
+    },
+    "lunch2_yuna_12": {
+        "name": "{name}",
+        "text": "*Une petite pièce apparaît. La lumière du soleil entre par la fenêtre, avec un vieux canapé et une étagère.*"
+    },
+    "lunch2_yuna_13": {
+        "name": "{name}",
+        "text": "C'est quoi ici ? Une salle de lecture secrète ?"
+    },
+    "lunch2_yuna_14": {
+        "name": "Yuna",
+        "text": "...Presque personne ne connaît cet endroit."
+    },
+    "lunch2_yuna_15": {
+        "name": "{name}",
+        "text": "*Yuna s'assoit sur le canapé. Elle laisse discrètement la place à côté d'elle libre.*"
+    },
+    "lunch2_yuna_16": {
+        "name": "Yuna",
+        "text": "Il y avait une autre personne ici."
+    },
+    "lunch2_yuna_17": {
+        "name": "{name}",
+        "text": "Il y avait ?"
+    },
+    "lunch2_yuna_choice": {
+        "name": "{name}",
+        "text": "*Rien après 'il y avait'. Passé composé. — Est-ce que je devrais demander ?*",
+        "choices": [
+            "Cette personne, où est-elle maintenant ?",
+            "Ne pas demander et s'asseoir à côté d'elle"
+        ]
+    },
+    "lunch2_yuna_c1_1": {
+        "name": "Yuna",
+        "text": "...Parti. Il y a un an."
+    },
+    "lunch2_yuna_c1_2": {
+        "name": "{name}",
+        "text": "*La voix de Yuna a baissé d'un ton.*"
+    },
+    "lunch2_yuna_c1_3": {
+        "name": "Yuna",
+        "text": "Sans un mot."
+    },
+    "lunch2_yuna_c1_4": {
+        "name": "{name}",
+        "text": "*Une ombre passe sur le visage de Yuna. Je ne sais pas qui est ce « quelqu'un », mais—*"
+    },
+    "lunch2_yuna_c1_5": {
+        "name": "{name}",
+        "text": "Il n'a pas donné de nouvelles ?"
+    },
+    "lunch2_yuna_c1_6": {
+        "name": "Yuna",
+        "text": "...Je ne sais pas. S'il ne l'a pas fait, ou s'il ne pouvait pas."
+    },
+    "lunch2_yuna_c1_7": {
+        "name": "{name}",
+        "text": "*Yuna ouvre son livre. Le signal que la conversation est terminée.*"
+    },
+    "lunch2_yuna_c1_8": {
+        "name": "{name}",
+        "text": "*Je devrais changer l'ambiance. — Essayons de dédramatiser.*"
+    },
+    "lunch2_yuna_c1_9": {
+        "name": "{name}",
+        "text": "Cette personne, elle a peut-être juste été diplômée ? Les aînés perdent souvent le contact."
+    },
+    "lunch2_yuna_c1_10": {
+        "name": "Yuna",
+        "text": "...C'était un transfert."
+    },
+    "lunch2_yuna_c1_11": {
+        "name": "{name}",
+        "text": "Ah..."
+    },
+    "lunch2_yuna_c1_12": {
+        "name": "{name}",
+        "text": "*J'ai gaffé. Essayer de dédramatiser a juste donné l'impression que je minimisais sa blessure.*"
+    },
+    "lunch2_yuna_c1_13": {
+        "name": "{name}",
+        "text": "*Un silence gênant suit. Seul le bruit des pages qui tournent remplit la pièce.*"
+    },
+    "lunch2_yuna_c1_14": {
+        "name": "{name}",
+        "text": "*Je me vantais d'être perspicace. — J'avais tort. Pas devant cette personne.*"
+    },
+    "lunch2_yuna_c2_1": {
+        "name": "{name}",
+        "text": "*Je m'assois à côté d'elle sans rien dire. Yuna jette un bref coup d'œil.*"
+    },
+    "lunch2_yuna_c2_2": {
+        "name": "{name}",
+        "text": "*Elle sort un livre de sa pile et le pose à côté de moi.*"
+    },
+    "lunch2_yuna_c2_3": {
+        "name": "Yuna",
+        "text": "...Lis."
+    },
+    "lunch2_yuna_c2_4": {
+        "name": "{name}",
+        "text": "*Offrir un livre au lieu de mots. — Le langage de cette personne, ce sont les actes. Différent de Seoyeon, mais à sa manière.*"
+    },
+    "lunch2_yuna_c2_5": {
+        "name": "{name}",
+        "text": "*On lit côte à côte en silence. La lumière du soleil par la fenêtre est chaude.*"
+    },
+    "lunch2_yuna_c2_6": {
+        "name": "Yuna",
+        "text": "...La raison pour laquelle j'aime cet endroit."
+    },
+    "lunch2_yuna_c2_7": {
+        "name": "{name}",
+        "text": "Hm ?"
+    },
+    "lunch2_yuna_c2_8": {
+        "name": "Yuna",
+        "text": "C'est calme. — Mais je ne suis pas seule."
+    },
+    "lunch2_yuna_c2_9": {
+        "name": "{name}",
+        "text": "*Deux phrases. C'est un long discours pour Yuna. — Et tout est contenu dans ces deux phrases.*"
+    },
+    "lunch2_yuna_end": {
+        "name": "{name}",
+        "text": "*Le 'il y avait' de Yuna tourne dans ma tête. La signification de cet endroit qu'elle m'a montré... commence à prendre forme.*"
+    },
+    "lunch2_seo_1": {
+        "name": "{name}",
+        "text": "*Le toit. Le même endroit qu'hier. Seoyeon ouvre son bento.*"
+    },
+    "lunch2_seo_2": {
+        "name": "Seoyeon",
+        "text": "T'es revenu. Tu y as pris goût ?"
+    },
+    "lunch2_seo_3": {
+        "name": "{name}",
+        "text": "C'était bon à manger."
+    },
+    "lunch2_seo_4": {
+        "name": "Seoyeon",
+        "text": "C'est pour la nourriture ?"
+    },
+    "lunch2_seo_5": {
+        "name": "{name}",
+        "text": "La brise est agréable aussi."
+    },
+    "lunch2_seo_6": {
+        "name": "Seoyeon",
+        "text": "...La brise."
+    },
+    "lunch2_seo_7": {
+        "name": "{name}",
+        "text": "*Elle semblait vouloir en entendre plus — mais je me suis retenu exprès.*"
+    },
+    "lunch2_seo_8": {
+        "name": "{name}",
+        "text": "*En mangeant — la porte du toit s'ouvre. Dain est montée.*"
+    },
+    "lunch2_seo_9": {
+        "name": "Dain",
+        "text": "Oh ! Vous êtes là ?! Trouvé !"
+    },
+    "lunch2_seo_10": {
+        "name": "Seoyeon",
+        "text": "...Le toit est sur autorisation seulement."
+    },
+    "lunch2_seo_11": {
+        "name": "Dain",
+        "text": "Oh la la, y a pas besoin d'autorisation pour manger ! — Oh, un bento ! Ça a l'air trop bon !"
+    },
+    "lunch2_seo_12": {
+        "name": "{name}",
+        "text": "*Dain s'assoit sans hésiter. Les sourcils de Seoyeon se froncent très légèrement.*"
+    },
+    "lunch2_seo_13": {
+        "name": "Dain",
+        "text": "On s'est vues hier ! C'est une fille super, Seoyeon-senpai !"
+    },
+    "lunch2_seo_13b": {
+        "name": "Dain",
+        "text": "Oh ! Seoyeon-senpai ? Enchantée !"
+    },
+    "lunch2_seo_14": {
+        "name": "Seoyeon",
+        "text": "...Une fille sympa."
+    },
+    "lunch2_seo_15": {
+        "name": "{name}",
+        "text": "On se connaît juste."
+    },
+    "lunch2_seo_16": {
+        "name": "Seoyeon",
+        "text": "Pourquoi, ça te dérange ?"
+    },
+    "lunch2_seo_17": {
+        "name": "Dain",
+        "text": "Oh, c'était juste par curiosité !"
+    },
+    "lunch2_seo_18": {
+        "name": "{name}",
+        "text": "*Les angles de ce triangle deviennent plus aigus. — Et je me sens moins comme un sommet et plus comme un sacrifice.*"
+    },
+    "lunch2_seo_19": {
+        "name": "{name}",
+        "text": "*Seoyeon jette un coup d'œil nonchalant aux lèvres de {name}.*"
+    },
+    "lunch2_seo_20": {
+        "name": "Seoyeon",
+        "text": "T'as un truc sur la lèvre. Bouge pas."
+    },
+    "lunch2_seo_choice": {
+        "name": "{name}",
+        "text": "*La main de Seoyeon s'approche.*",
+        "choices": [
+            "Rester immobile",
+            "Je m'essuie moi-même"
+        ]
+    },
+    "lunch2_seo_c1_1": {
+        "name": "{name}",
+        "text": "*Le doigt de Seoyeon effleure le coin de mes lèvres. Doucement. Lentement. — Plus lentement que nécessaire.*"
+    },
+    "lunch2_seo_c1_2": {
+        "name": "Seoyeon",
+        "text": "...Voilà."
+    },
+    "lunch2_seo_c1_3": {
+        "name": "Dain",
+        "text": "Qu'est-ce que je viens de voir ?!"
+    },
+    "lunch2_seo_c1_4": {
+        "name": "Seoyeon",
+        "text": "C'était un grain de riz."
+    },
+    "lunch2_seo_c1_5": {
+        "name": "{name}",
+        "text": "*Il faut trois secondes pour enlever un grain de riz ? — Personne n'a remarqué, mais les pointes des oreilles de Seoyeon sont rouges.*"
+    },
+    "lunch2_seo_end_c1": {
+        "name": "{name}",
+        "text": "*Là où la main de Seoyeon est passée me trotte encore dans la tête. — Et les yeux surpris de Dain aussi.*"
+    },
+    "lunch2_seo_c2_1": {
+        "name": "{name}",
+        "text": "*Je m'essuie la bouche avec le dos de la main.*"
+    },
+    "lunch2_seo_c2_2": {
+        "name": "Seoyeon",
+        "text": "...Si tu t'essuies toi-même, ça va juste étaler."
+    },
+    "lunch2_seo_c2_3": {
+        "name": "{name}",
+        "text": "*Elle a l'air un peu vexée. — Mais sa contenance est impeccable. C'est tout elle.*"
+    },
+    "lunch2_seo_end_c2": {
+        "name": "{name}",
+        "text": "*Il reste encore une trace de grain de riz sur le dos de ma main. La contenance de Seoyeon est impeccable — mais les coins de ses lèvres se sont légèrement affaissés.*"
+    },
+    "lunch2_dain_1": {
+        "name": "{name}",
+        "text": "*À la boutique avec Dain. Revanche du pierre-feuille-ciseaux d'hier.*"
+    },
+    "lunch2_dain_2": {
+        "name": "Dain",
+        "text": "Aujourd'hui tu perds !! Prépare-toi !!"
+    },
+    "lunch2_dain_3": {
+        "name": "{name}",
+        "text": "T'as dit la même chose hier."
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "Vraiment ?"
+    },
+    "lunch2_dain_4": {
+        "name": "Dain",
+        "text": "Hier c'était juste l'échauffement !!"
+    },
+    "lunch2_dain_4b": {
+        "name": "Dain",
+        "text": "Évidemment !! Je suis douée à la base !!"
+    },
+    "lunch2_dain_5b": {
+        "name": "{name}",
+        "text": "*Pierre-feuille-ciseaux. Dain a perdu.*"
+    },
+    "lunch2_dain_5": {
+        "name": "{name}",
+        "text": "*Pierre-feuille-ciseaux. — Dain perd encore.*"
+    },
+    "lunch2_dain_6": {
+        "name": "Dain",
+        "text": "...C'est truqué ?!"
+    },
+    "lunch2_dain_7": {
+        "name": "{name}",
+        "text": "Comment on truque un pierre-feuille-ciseaux ?"
+    },
+    "lunch2_dain_8": {
+        "name": "Dain",
+        "text": "Rrrh... Deux pains soboro s'il vous plaît..."
+    },
+    "lunch2_dain_9": {
+        "name": "{name}",
+        "text": "*On achète du pain et on s'assoit sur un banc dans le couloir. — À ce moment, Seoyeon passe. Avec un sac à bento.*"
+    },
+    "lunch2_dain_10": {
+        "name": "{name}",
+        "text": "*Seoyeon regarde par ici. Elle me fixe assis à côté de Dain en train de manger du pain pendant une demi-seconde — puis continue son chemin.*"
+    },
+    "lunch2_dain_11": {
+        "name": "Dain",
+        "text": "Hé, c'est quoi le problème de la présidente ? Pourquoi elle nous fixe ?"
+    },
+    "lunch2_dain_12": {
+        "name": "{name}",
+        "text": "Aucune idée."
+    },
+    "lunch2_dain_13": {
+        "name": "Dain",
+        "text": "Hmm... t'es proche de la présidente aussi ?"
+    },
+    "lunch2_dain_choice": {
+        "name": "{name}",
+        "text": "*Dain me fixe intensément.*",
+        "choices": [
+            "On a un peu discuté hier",
+            "Elle m'a juste fait visiter l'école ?",
+            "Pourquoi, ça te dérange ?"
+        ]
+    },
+    "lunch2_dain_c1_1": {
+        "name": "{name}",
+        "text": "*L'expression de Dain se fige subtilement. Elle croque son soboro et détourne la tête.*"
+    },
+    "lunch2_dain_c2_1": {
+        "name": "{name}",
+        "text": "*Dain hoche la tête et croque son pain soboro. Comme si ça ne l'intéressait pas.*"
+    },
+    "lunch2_dain_c3_1": {
+        "name": "Dain",
+        "text": "Bi— Bien sûr que non ! C'est pas ça ! *mord un grand coup dans le pain soboro* Je demandais, c'est tout !!"
+    },
+    "lunch2_dain_c3_2": {
+        "name": "{name}",
+        "text": "*Ses lobes d'oreilles. Rouges. — Les filles de cette école ont des oreilles très honnêtes.*"
+    },
+    "lunch2_dain_end": {
+        "name": "{name}",
+        "text": "*Le craquement du pain soboro de Dain est anormalement fort. Le regard de Seoyeon, les oreilles rouges de Dain — la pause déjeuner se complique de jour en jour.*"
+    },
+    "lunch2_yuna_17_ins": {
+        "name": "Yuna",
+        "text": "......"
+    },
+    "lunch2_yuna_c1_9_ins": {
+        "name": "{name}",
+        "text": "*Le regard de Yuna se glace un instant.*"
+    },
+    "lunch2_seo_13b_ins": {
+        "name": "Seoyeon",
+        "text": "*Regardant {name}* ...Une fille pleine d'entrain."
+    },
+    "lunch2_seo_c1_2_ins": {
+        "name": "{name}",
+        "text": "*Les yeux de Dain s'écarquillent en nous regardant tour à tour.*"
+    },
+    "lunch2_seo_c1_3_ins": {
+        "name": "Seoyeon",
+        "text": "*L'air de rien* C'était un grain de riz."
+    },
+    "lunch2_dain_13_ins": {
+        "name": "Dain",
+        "text": "Ça— ça ne me dérange pas ! Pas du tout ! *Mord un grand coup dans le soboro* Je demandais, c'est tout !!"
+    },
+    "lunch2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*Quatrième heure, sport. On courait sur le terrain quand — le gars à côté pile net et on se percute. Mon coude s'est éraflé.*"
+    },
+    "lunch2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*Rien de grave, mais ça saigne un peu.*"
+    },
+    "lunch2_dain_end_ins3": {
+        "name": "Prof de sport",
+        "text": "Va à l'infirmerie te faire désinfecter ça."
+    },
+    "lunch2_dain_end_ins4": {
+        "name": "{name}",
+        "text": "*J'ouvre la porte de l'infirmerie. La même odeur de désinfectant qu'hier.*"
+    },
+    "lunch2_dain_end_ins4_first": {
+        "name": "{name}",
+        "text": "*J'ouvre la porte de l'infirmerie. Une odeur inconnue d'antiseptique me chatouille le nez.*"
+    },
+    "lunch2_dain_end_ins5": {
+        "name": "Infirmière",
+        "text": "*Levant les yeux* Oh, le nouveau d'hier."
+    },
+    "lunch2_dain_end_ins5_first": {
+        "name": "보건선생님",
+        "text": "*À l'intérieur de l'infirmerie. Des documents sont empilés sur le bureau, et l'infirmière est assise sur sa chaise.*"
+    },
+    "lunch2_dain_end_ins6": {
+        "name": "{name}",
+        "text": "Je me suis un peu éraflé le coude."
+    },
+    "lunch2_dain_end_ins7": {
+        "name": "Infirmière",
+        "text": "Encore toi ? Tu veux devenir un habitué ?"
+    },
+    "lunch2_dain_end_ins7_first": {
+        "name": "보건선생님",
+        "text": "...Oh ? Tu es celui de tout à l'heure. Qu'est-ce qui t'amène ici pendant le déjeuner ?"
+    },
+    "lunch2_dain_end_ins8": {
+        "name": "{name}",
+        "text": "*Le même ton taquin qu'hier. Mais ses yeux examinent déjà la blessure.*"
+    },
+    "lunch2_dain_end_ins8_first": {
+        "name": "{name}",
+        "text": "Tu as meilleure mine que ce matin. C'est un soulagement."
+    },
+    "lunch2_dain_end_ins9": {
+        "name": "{name}",
+        "text": "*L'infirmière s'approche et prend mon coude. Ses mains sont froides.*"
+    },
+    "lunch2_dain_end_ins10": {
+        "name": "Infirmière",
+        "text": "Ne bouge pas~..."
+    },
+    "lunch2_dain_end_ins11": {
+        "name": "{name}",
+        "text": "*Elle sort un coton imbibé de désinfectant — tamponne doucement. Puis sort un pansement.*"
+    },
+    "lunch2_dain_end_ins12": {
+        "name": "{name}",
+        "text": "*Mettre un pansement — ça devrait prendre 30 secondes tout au plus. Pourquoi est-elle si méticuleuse ?*"
+    },
+    "lunch2_dain_end_ins13": {
+        "name": "Infirmière",
+        "text": "*Posant le pansement* Là... comme ça... voilà, c'est fait."
+    },
+    "lunch2_dain_end_ins14": {
+        "name": "{name}",
+        "text": "*La main de l'infirmière s'arrête. — 0,5 seconde. Puis elle bouge à nouveau.*"
+    },
+    "lunch2_dain_end_ins15": {
+        "name": "Infirmière",
+        "text": "...J'ai les mains plutôt froides d'habitude. On dirait qu'elles sont chaudes aujourd'hui."
+    },
+    "lunch2_dain_end_ins16": {
+        "name": "{name}",
+        "text": "*C'est faux. Quand elle m'a touché tout à l'heure, elles étaient froides. — Elles ne sont devenues chaudes que maintenant.*"
+    },
+    "lunch2_dain_end_ins17": {
+        "name": "Infirmière",
+        "text": "*Avec un sourire* C'est du soin. Du vrai soin. Si on colle ça à moitié, ça tombe tout de suite."
+    },
+    "lunch2_dain_end_ins18": {
+        "name": "{name}",
+        "text": "*Du soin... c'est vraiment ça ? Ou il y a une autre raison ?*"
+    },
+    "lunch2_dain_end_ins19": {
+        "name": "{name}",
+        "text": "*En vérifiant le pansement — je remarque un ordinateur portable ouvert sur le bureau. Quelque chose est affiché à l'écran. Pas des dossiers médicaux — plutôt un journal personnel.*"
+    },
+    "lunch2_dain_end_ins20": {
+        "name": "{name}",
+        "text": "*L'infirmière ferme rapidement l'ordinateur.*"
+    },
+    "lunch2_dain_end_ins21": {
+        "name": "Infirmière",
+        "text": "*Plissant les yeux* Un seul ? ...Bon, d'accord. Je préfère le cacao au café. Voilà le secret."
+    },
+    "lunch2_dain_end_ins22": {
+        "name": "{name}",
+        "text": "*Comme secret, c'est assez anodin. Mais le fait de le partager — ça veut dire quelque chose.*"
+    },
+    "lunch2_dain_end_ins23": {
+        "name": "Infirmière",
+        "text": "*Riant doucement* Secret~ Les profs aussi ont des secrets."
+    },
+    "lunch2_dain_end_ins24": {
+        "name": "{name}",
+        "text": "*Elle noie le poisson avec une blague, mais elle a fermé cet ordinateur vite. — Il y a quelque chose qu'elle ne veut pas qu'on voie.*"
+    },
+    "lunch2_dain_end_ins25": {
+        "name": "Infirmière",
+        "text": "C'est fini, alors retourne en cours. — Et la prochaine fois, viens sans être blessé."
+    },
+    "lunch2_dain_end_ins26": {
+        "name": "{name}",
+        "text": "Si je ne suis pas blessé, je n'aurais aucune raison de venir."
+    },
+    "lunch2_dain_end_ins27": {
+        "name": "{name}",
+        "text": "*L'infirmière marque une pause. Et puis — sa voix descend d'un ton.*"
+    },
+    "lunch2_dain_end_ins28": {
+        "name": "Infirmière",
+        "text": "Tu peux venir même sans raison."
+    },
+    "lunch2_dain_end_ins29": {
+        "name": "{name}",
+        "text": "*Le côté taquin a disparu. — 0,5 seconde. Puis il revient.*"
+    },
+    "lunch2_dain_end_ins30": {
+        "name": "Infirmière",
+        "text": "*De nouveau sur un ton joyeux* Ah, mais pas pendant les cours~ ! Après les cours !"
+    },
+    "lunch2_dain_end_ins31": {
+        "name": "{name}",
+        "text": "*Ce changement de voix à l'instant. — Est-ce que j'ai rêvé ?*"
+    }
 }

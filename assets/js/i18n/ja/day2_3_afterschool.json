@@ -1,735 +1,739 @@
 {
-  "after2_start": {
-    "name": "{name}",
-    "text": "*放課後。スマホに通知が二件来ている。*"
-  },
-  "after2_msg_dain": {
-    "name": "ダイン",
-    "text": "体育館来て！！今日はマジだから！！"
-  },
-  "after2_msg_seo": {
-    "name": "ソヨン",
-    "text": "生徒会室に来れる？人手が足りなくて"
-  },
-  "after2_msg_yuna": {
-    "name": "{name}",
-    "text": "*ユナからは何の連絡もない。——それがユナだ。でも鞄を片付けていたらポケットから朝のメモが出てくる。『図書館別館』という文字が目に引っかかる。*"
-  },
-  "after2_nurse_transition": {
-    "name": "{name}",
-    "text": "*でも——体育の時間に擦りむいた肘がさっきからずっと気になる。保健室に寄ろう。*"
-  },
-  "after2_choice": {
-    "name": "{name}",
-    "text": "*どこへ行こうか。*",
-    "choices": [
-      "体育館へ（ダイン）",
-      "生徒会室へ（ソヨン）",
-      "図書館別館を覗いてみる（ユナ）"
-    ]
-  },
-  "after2_dain_1": {
-    "name": "{name}",
-    "text": "*体育館。ダインがバレーネットの前で準備運動をしている。*"
-  },
-  "after2_dain_2": {
-    "name": "ダイン",
-    "text": "来た？！遅い！！"
-  },
-  "after2_dain_3": {
-    "name": "{name}",
-    "text": "5分前なんだけど"
-  },
-  "after2_dain_4": {
-    "name": "ダイン",
-    "text": "あたしは10分前に来たの！！"
-  },
-  "after2_dain_5": {
-    "name": "{name}",
-    "text": "*それは君が早く来たんであって、僕が遅れたわけじゃないんだけど。*"
-  },
-  "after2_dain_6": {
-    "name": "ダイン",
-    "text": "さあ、勝負！サーブ5本、3本以上ネット越えたらあんたの勝ち！ダメなら今日のトッポッキはあんた持ち！"
-  },
-  "after2_dain_7": {
-    "name": "{name}",
-    "text": "いきなりトッポッキ？"
-  },
-  "after2_dain_8": {
-    "name": "ダイン",
-    "text": "お腹空いてるの！！"
-  },
-  "after2_dain_9": {
-    "name": "{name}",
-    "text": "*サーブを打つ。——意外にも二本目のサーブが綺麗にネットを越える。*"
-  },
-  "after2_dain_10": {
-    "name": "ダイン",
-    "text": "*目を見開いて* え？手加減しようと思ったけど無理だわ"
-  },
-  "after2_dain_11": {
-    "name": "{name}",
-    "text": "*ラリーが続く。ダインの動きは——明らかに普通じゃない。速く、正確で、体が覚えている動き。*"
-  },
-  "after2_dain_12": {
-    "name": "ダイン",
-    "text": "うわああ！！負けた！！——でも結構やるじゃん？！運動しないって言ったよね？！"
-  },
-  "after2_dain_13": {
-    "name": "{name}",
-    "text": "しないとは言ってないけど"
-  },
-  "after2_dain_14": {
-    "name": "ダイン",
-    "text": "*驚いて* は？！騙されたの？！"
-  },
-  "after2_dain_15": {
-    "name": "{name}",
-    "text": "騙してないよ、聞かれなかっただけで"
-  },
-  "after2_dain_16": {
-    "name": "ダイン",
-    "text": "*肩をグーで叩きながら* この詐欺師！！ははは——でも楽しかった！"
-  },
-  "after2_dain_end": {
-    "name": "{name}",
-    "text": "*目が三日月型だ。昨日も見たあの目。——この人は本気で楽しんでる時にああなるんだな。*"
-  },
-  "after2_dain_end_2": {
-    "name": "ダイン",
-    "text": "ねえ、あんた本当は運動できるんでしょ？"
-  },
-  "after2_dain_end_2b": {
-    "name": "{name}",
-    "text": "少しね"
-  },
-  "after2_dain_end_2c": {
-    "name": "ダイン",
-    "text": "少しであんな打てないよ！——認めなよ、うまいって"
-  },
-  "after2_dain_end_2d": {
-    "name": "{name}",
-    "text": "{name}の方がずっとうまかったけど。"
-  },
-  "after2_dain_end_3": {
-    "name": "{name}",
-    "text": "*ダインが箸を止める。ほんの一瞬。*"
-  },
-  "after2_dain_end_3b": {
-    "name": "ダイン",
-    "text": "……当たり前じゃん！あたし体育特待生だったんだから！"
-  },
-  "after2_dain_end_3c": {
-    "name": "{name}",
-    "text": "*『だったんだから』。過去形。——なんとなく聞かない方がよさそうだ。*"
-  },
-  "after2_dain_end_3d": {
-    "name": "ダイン",
-    "text": "あー辛い！！水水！！"
-  },
-  "after2_dain_end_3e": {
-    "name": "{name}",
-    "text": "*話題が変わった。——ダインの気遣いは不器用だけど、温かい。*"
-  },
-  "after2_dain_return": {
-    "name": "{name}",
-    "text": "*学校に戻る道。校門前に着いた。*"
-  },
-  "after2_seo_1": {
-    "name": "{name}",
-    "text": "*生徒会室。ソヨンが書類の山の前に座っている。一人で。*"
-  },
-  "after2_seo_2": {
-    "name": "ソヨン",
-    "text": "来てくれたんだ。——正直、来ないと思った"
-  },
-  "after2_seo_3": {
-    "name": "{name}",
-    "text": "呼ばれたら行くタイプだから"
-  },
-  "after2_seo_4": {
-    "name": "ソヨン",
-    "text": "*少し笑って* 従順なのね"
-  },
-  "after2_seo_5": {
-    "name": "{name}",
-    "text": "助けてって言ったのはそっちでしょ"
-  },
-  "after2_seo_6": {
-    "name": "ソヨン",
-    "text": "お願いじゃなくて、チャンスをあげたの"
-  },
-  "after2_seo_7": {
-    "name": "{name}",
-    "text": "*この人の語彙に『お願い』という言葉は存在しないらしい。*"
-  },
-  "after2_seo_8": {
-    "name": "ソヨン",
-    "text": "こっちは日付順、あっちは部活別。——整理するの得意？"
-  },
-  "after2_seo_8a2": {
-    "name": "{name}",
-    "text": "得意じゃないけど、下手でもない"
-  },
-  "after2_seo_8a3": {
-    "name": "ソヨン",
-    "text": "曖昧ね"
-  },
-  "after2_seo_8a4": {
-    "name": "{name}",
-    "text": "褒め方と似てるよね。そっちも曖昧だし"
-  },
-  "after2_seo_8b": {
-    "name": "{name}",
-    "text": "*ソヨンが書類から目を離してこちらを見る。*"
-  },
-  "after2_seo_8b2": {
-    "name": "ソヨン",
-    "text": "……意外と使えるのね"
-  },
-  "after2_seo_8b3": {
-    "name": "{name}",
-    "text": "それは褒めてるの？"
-  },
-  "after2_seo_8b4": {
-    "name": "ソヨン",
-    "text": "褒めてる。受け取って"
-  },
-  "after2_seo_choice1": {
-    "name": "{name}",
-    "text": "*褒めてると直接言ってくれること。——この人にしては珍しいことな気がする。*",
-    "choices": [
-      "夕焼けが綺麗だね。——あ、君じゃなくて外が",
-      "首痛い？休みながらやろうよ"
-    ]
-  },
-  "after2_seo_sunset_joke": {
-    "name": "{name}",
-    "text": "*ソヨンが一瞬止まる。そして——笑う。口角じゃなくて目が笑う。初めて見る笑顔。*"
-  },
-  "after2_seo_sunset_react": {
-    "name": "ソヨン",
-    "text": "……そんなくだらないことをこんな自然に言う人、初めて"
-  },
-  "after2_seo_neck_worry": {
-    "name": "ソヨン",
-    "text": "大丈夫。これくらい毎日のことだから"
-  },
-  "after2_seo_neck_react": {
-    "name": "{name}",
-    "text": "*ソヨンが肩を回す。凝りがほぐれる音がする。*"
-  },
-  "after2_seo_neck_touch": {
-    "name": "ソヨン",
-    "text": "かなり凝ってるね。ちょっとじっとしてて。"
-  },
-  "after2_seo_neck_high": {
-    "name": "{name}",
-    "text": "*目を閉じて身を委ねる。*"
-  },
-  "after2_seo_neck_high_2": {
-    "name": "ソヨン",
-    "text": "*静かに* ……じっとしてて。もうちょっとだけ。"
-  },
-  "after2_seo_neck_low": {
-    "name": "{name}",
-    "text": "*少し体を引く。*"
-  },
-  "after2_seo_neck_low_2": {
-    "name": "ソヨン",
-    "text": "*手を引いて* …何でもない。"
-  },
-  "after2_seo_9": {
-    "name": "{name}",
-    "text": "*夕焼けが生徒会室を染めていく。書類整理がほぼ終わった。*"
-  },
-  "after2_seo_choice2": {
-    "name": "{name}",
-    "text": "*書類整理がほぼ終わった。*",
-    "choices": [
-      "もう少しいようか？まだ残ってるみたいだし",
-      "終わったなら帰るよ"
-    ]
-  },
-  "after2_seo_stay": {
-    "name": "{name}",
-    "text": "*ソヨンが書類を置いて窓の外を見る。夕焼けの光が顔に当たっている。*"
-  },
-  "after2_seo_stay_2": {
-    "name": "ソヨン",
-    "text": "……この時間が好き。生徒会室に一人でいると、どんな役割も演じなくていいから"
-  },
-  "after2_seo_stay_3": {
-    "name": "{name}",
-    "text": "生徒会長も休む時あるの？"
-  },
-  "after2_seo_stay_3b": {
-    "name": "ソヨン",
-    "text": "ないよ。——ここ以外は"
-  },
-  "after2_seo_stay_3c": {
-    "name": "{name}",
-    "text": "*『ここ以外は』。——屋上でも生徒会室でも、ソヨンにとっては仮面を外せる場所が必要な人なんだ。*"
-  },
-  "after2_seo_leave": {
-    "name": "{name}",
-    "text": "*ソヨンが小さくうなずく。*"
-  },
-  "after2_seo_end": {
-    "name": "{name}",
-    "text": "*生徒会室を出た。夕焼けが廊下を染めている。*"
-  },
-  "after2_yuna_1": {
-    "name": "{name}",
-    "text": "*ユナからは連絡がなかった。でも足が図書館の方へ向いている。なぜ？——わからない。朝のメモのせいかもしれない。*"
-  },
-  "after2_yuna_2": {
-    "name": "{name}",
-    "text": "*静かに入る。ユナがソファで本を読んでいる。窓から夕焼けが差し込んでいる。*"
-  },
-  "after2_yuna_3": {
-    "name": "ユナ",
-    "text": "……来たね"
-  },
-  "after2_yuna_4": {
-    "name": "{name}",
-    "text": "呼んでないじゃん"
-  },
-  "after2_yuna_5": {
-    "name": "ユナ",
-    "text": "呼ばないと来ないの？"
-  },
-  "after2_yuna_6": {
-    "name": "{name}",
-    "text": "*待っていてくれたんだ。——その事実が、ちょっと嬉しい。*"
-  },
-  "after2_yuna_7": {
-    "name": "{name}",
-    "text": "ドアが開いてたから"
-  },
-  "after2_yuna_8": {
-    "name": "ユナ",
-    "text": "……たまたま"
-  },
-  "after2_yuna_8b": {
-    "name": "{name}",
-    "text": "*たまたま開いていたドア。——ユナの『たまたま』は『計画的に』と同じ意味だ。*"
-  },
-  "after2_yuna_8c": {
-    "name": "ユナ",
-    "text": "聴いて"
-  },
-  "after2_yuna_8d": {
-    "name": "{name}",
-    "text": "*静かなピアノ曲が流れる。夕焼けが部屋を染めている。*"
-  },
-  "after2_yuna_9": {
-    "name": "{name}",
-    "text": "*ユナが本を読み、僕は音楽を聴く。何も言わない。——不快じゃない。*"
-  },
-  "after2_yuna_choice_pre1": {
-    "name": "ユナ",
-    "text": "*しばらくして* ……放課後にここに来る人"
-  },
-  "after2_yuna_choice_pre2": {
-    "name": "{name}",
-    "text": "ん？"
-  },
-  "after2_yuna_choice_pre3": {
-    "name": "ユナ",
-    "text": "先輩の後、いなかった"
-  },
-  "after2_yuna_choice": {
-    "name": "{name}",
-    "text": "*ユナが二文言った。——この人にとってそれは『ありがとう』と同じだ。*",
-    "choices": [
-      "毎日来ようか？",
-      "静かだからいいね"
-    ]
-  },
-  "after2_yuna_everyday": {
-    "name": "{name}",
-    "text": "*ユナがイヤホンのコードをいじっている。*"
-  },
-  "after2_yuna_everyday_react": {
-    "name": "ユナ",
-    "text": "……来たいなら来て。止めはしないから"
-  },
-  "after2_yuna_quiet": {
-    "name": "ユナ",
-    "text": "……だからここが好きなの"
-  },
-  "after2_yuna_quiet_react": {
-    "name": "{name}",
-    "text": "*ユナがほんの少しだけ笑う。——この笑顔ひとつで一日が大丈夫になる。*"
-  },
-  "after2_yuna_end": {
-    "name": "{name}",
-    "text": "*夕焼けが沈んでいく。ユナと並んで座って音楽を聴く。何も言葉のいらない時間。*"
-  },
-  "after2_dain_freetalk": {
-    "name": "ダイン",
-    "text": "*学校前のトッポッキ屋に入った。* *ダインとトッポッキを食べながら話している。*",
-    "context": "2日目の放課後、体育館でバレー勝負をしてトッポッキ屋に来た状態。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
-    "personality": "ダインはエネルギッシュな体育系。負けず嫌いでさっぱりしているが本音を言う時は感嘆符が消える。"
-  },
-  "hidden_nurse_d2_1": {
-    "name": "{name}",
-    "text": "*体育の時間に肘を擦りむいた。大したことないけど、少し血が出ている。*"
-  },
-  "hidden_nurse_d2_2": {
-    "name": "保健先生",
-    "text": "あれ、昨日の転校生。また来たの？常連になる気？"
-  },
-  "hidden_nurse_d2_3": {
-    "name": "{name}",
-    "text": "肘をちょっと擦りむいて。"
-  },
-  "hidden_nurse_d2_4": {
-    "name": "保健先生",
-    "text": "じっとしてて～…"
-  },
-  "hidden_nurse_d2_5": {
-    "name": "保健先生",
-    "text": "ここ…こうして…よし、できた。雑に貼ったらすぐ剥がれちゃうからね。"
-  },
-  "hidden_nurse_d2_choice1": {
-    "name": "{name}",
-    "text": "*絆創膏を貼ってくれる手が近い。*",
-    "choices": [
-      "手、あったかいですね",
-      "絆創膏一枚にそこまで丁寧に"
-    ]
-  },
-  "hidden_nurse_d2_choice1_a": {
-    "name": "保健先生",
-    "text": "…手が冷たい方なんだけど。今日はちょっと温かいみたい"
-  },
-  "hidden_nurse_d2_choice1_b": {
-    "name": "保健先生",
-    "text": "*にっこり* 丁寧にやってるの。雑に貼ったらすぐ剥がれちゃうでしょ"
-  },
-  "hidden_nurse_d2_6": {
-    "name": "{name}",
-    "text": "*絆創膏を確認していると——机の上にノートパソコンが開いている。画面に何か書いてある。医療記録じゃなくて——個人的な日記のようなもの。*"
-  },
-  "hidden_nurse_d2_7": {
-    "name": "保健先生",
-    "text": "それ、見てないよね？秘密～先生にも秘密があるの。"
-  },
-  "hidden_nurse_d2_choice2": {
-    "name": "{name}",
-    "text": "*秘密だと笑うけど——目は笑っていない。*",
-    "choices": [
-      "秘密多いですね。一つだけ教えてくれませんか？",
-      "はい、見てません"
-    ]
-  },
-  "hidden_nurse_d2_choice2_a": {
-    "name": "保健先生",
-    "text": "*目を細めて* 一つだけ？ …うーん、じゃあね。私、コーヒーよりココアの方が好き。それが秘密"
-  },
-  "hidden_nurse_d2_choice2_b": {
-    "name": "保健先生",
-    "text": "*軽く笑いながら* 秘密〜 先生にも秘密はあるのよ"
-  },
-  "hidden_nurse_d2_8": {
-    "name": "保健先生",
-    "text": "よし、終わったから授業に戻りな。——次は怪我しないで来てね。"
-  },
-  "hidden_nurse_d2_9": {
-    "name": "保健先生",
-    "text": "理由がなくても来ていいよ。——あ、もちろん授業中はダメ～！放課後にね！"
-  },
-  "hidden_nurse_d2_freetalk": {
-    "name": "保健先生",
-    "text": "*保健先生と保健室で会話中。*",
-    "context": "Day 2。体育で肘を擦りむいて保健室に来た。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
-    "personality": "保健先生はいたずら好きだが丁寧。絆創膏に時間をかける。何か隠している。"
-  },
-  "minsu_warn_1": {
-    "name": "{name}",
-    "text": "*下校の道。校門を出たところで——ミンスが後ろからついてくる。*"
-  },
-  "minsu_warn_2": {
-    "name": "ミンス",
-    "text": "おい。"
-  },
-  "minsu_warn_3": {
-    "name": "{name}",
-    "text": "なに？"
-  },
-  "minsu_warn_4": {
-    "name": "ミンス",
-    "text": "最近、楽しそうだな？"
-  },
-  "minsu_warn_5": {
-    "name": "{name}",
-    "text": "急にどうした？"
-  },
-  "minsu_warn_6": {
-    "name": "ミンス",
-    "text": "ソヨン、ダイン、ユナ。三人ともお前に笑ってたぞ。"
-  },
-  "minsu_warn_7": {
-    "name": "{name}",
-    "text": "ただ親切にしてくれてるだけじゃない？"
-  },
-  "minsu_warn_8": {
-    "name": "ミンス",
-    "text": "なあ、俺は一年このクラスにいたんだぞ。三人とも普段はああじゃないんだよ。ソヨンは自分から男に話しかけないし、ダインだって誰にでもああしないし。ユナは——そもそも誰とも喋らないだろ。"
-  },
-  "minsu_warn_9": {
-    "name": "ミンス",
-    "text": "三人ともお前にだけそうしてるんだよ。——それ、自分でも分かってるだろ。"
-  },
-  "minsu_warn_10": {
-    "name": "{name}",
-    "text": "*分かってる。気づかないふりをしてるだけだ。*"
-  },
-  "minsu_warn_11": {
-    "name": "ミンス",
-    "text": "問題は、お前が三人全員に同じように笑顔を向けてることだよ。"
-  },
-  "minsu_warn_12": {
-    "name": "{name}",
-    "text": "*何も言えない。ミンスの言う通りだ。——察しがいいと自負しておきながら、自分がばらまいてる誤解には気づけてなかった。*"
-  },
-  "minsu_warn_13": {
-    "name": "ミンス",
-    "text": "前の学校でもこうだったの？"
-  },
-  "minsu_warn_14": {
-    "name": "{name}",
-    "text": "*——歩いていた足がぴたりと止まった。*"
-  },
-  "minsu_warn_15": {
-    "name": "ミンス",
-    "text": "知らんけど、おせっかいかもな。——でもな、後で三人とも泣いたら、それはお前のせいだからな。マジで。"
-  },
-  "minsu_warn_8b": {
-    "name": "{name}",
-    "text": "……"
-  },
-  "minsu_warn_11b": {
-    "name": "{name}",
-    "text": "僕はただ——"
-  },
-  "minsu_warn_11c": {
-    "name": "ミンス",
-    "text": "ただ？その『ただ』が一番残酷なんだよ。あいつらにとっては『ただ』じゃないんだから。"
-  },
-  "minsu_warn_13b": {
-    "name": "{name}",
-    "text": "……え？"
-  },
-  "after2_dain_skinship_1": {
-    "name": "{name}",
-    "text": "*ダインが手をバッと上げる。ハイタッチ。*"
-  },
-  "after2_dain_skinship_2": {
-    "name": "ダイン",
-    "text": "...あ、ごめん！癖なの！"
-  },
-  "after2_dain_skinship_3": {
-    "name": "{name}",
-    "text": "*手を離した。全然ごめんって顔じゃない。——手のひらがまだ熱い。*"
-  },
-  "after2_seo_return": {
-    "name": "{name}",
-    "text": "*生徒会室を出た。校門の方へ歩いていく。*"
-  },
-  "after2_seo_skinship_1": {
-    "name": "{name}",
-    "text": "*ソヨンが手を伸ばす。襟についた埃を取ってくれる。手が首に触れる。*"
-  },
-  "after2_seo_skinship_2": {
-    "name": "{name}",
-    "text": "*ソヨンの指が止まる。何も言わずに顔をそらす。——息が一瞬止まった。*"
-  },
-  "after2_seo_skinship_3": {
-    "name": "ソヨン",
-    "text": "...埃ついてた。"
-  },
-  "after2_yuna_return": {
-    "name": "{name}",
-    "text": "*図書館別館を出た。夕日が沈んでいく。*"
-  },
-  "after2_yuna_skinship_1": {
-    "name": "{name}",
-    "text": "*同じ本を取ろうとして——手が重なった。*"
-  },
-  "after2_yuna_skinship_2": {
-    "name": "{name}",
-    "text": "*ユナが先に引かない。3秒。ユナが視線を下ろす。*"
-  },
-  "after2_yuna_skinship_3": {
-    "name": "{name}",
-    "text": "*手が離れた。ユナが本を取って渡す。何も言わずに。*"
-  },
-  "after2_dain_11b": {
-    "name": "{name}",
-    "text": "*体育館を出て、通りを歩いた。*"
-  },
-  "after2_dain_9_ins": {
-    "name": "ダイン",
-    "text": "*目を丸くして* え？ 手加減するつもりだったのに、やめた"
-  },
-  "after2_dain_9_ins2": {
-    "name": "{name}",
-    "text": "*ダインが姿勢を低くする。目つきが変わった。*"
-  },
-  "after2_dain_9_ins3": {
-    "name": "ダイン",
-    "text": "本気で行くよ！"
-  },
-  "after2_dain_9_ins4": {
-    "name": "{name}",
-    "text": "*ラリーが続く。ダインの動きは——明らかに普通じゃない。速くて、正確で、体が覚えている動き。*"
-  },
-  "after2_dain_9_ins5": {
-    "name": "{name}",
-    "text": "*この子、本当にうまい。——スポーツが好きなレベルじゃなくて、人生を賭けていた人の身のこなしだ。*"
-  },
-  "after2_dain_9_ins6": {
-    "name": "{name}",
-    "text": "*結局3対2。ギリギリ勝った。*"
-  },
-  "after2_dain_end_ins": {
-    "name": "{name}",
-    "text": "*学校の前のトッポッキ屋。*"
-  },
-  "after2_dain_end_ins2": {
-    "name": "{name}",
-    "text": "*ダインがトッポッキをふーふーしながら話す。*"
-  },
-  "after2_dain_end_ins3": {
-    "name": "{name}",
-    "text": "*学校の前のトッポッキ屋。*"
-  },
-  "after2_seo_4_ins": {
-    "name": "{name}",
-    "text": "*この人の語彙にお願いという言葉は存在しないらしい。*"
-  },
-  "after2_seo_6_ins": {
-    "name": "{name}",
-    "text": "*この人の語彙にお願いという言葉は存在しないらしい。*"
-  },
-  "after2_seo_6_ins2": {
-    "name": "{name}",
-    "text": "*書類の整理を始める。イベントの予算案、部活の申請書。結構な量だ。*"
-  },
-  "after2_seo_8b4_ins": {
-    "name": "{name}",
-    "text": "*褒めってはっきり言うの。——この人にしては珍しいことみたいだ。*"
-  },
-  "after2_seo_8b4_ins2": {
-    "name": "{name}",
-    "text": "*整理していると、ソヨンが首を回す。凝っているみたいだ。*"
-  },
-  "after2_seo_sunset_joke_ins": {
-    "name": "ソヨン",
-    "text": "…こんな軽い台詞をこんな自然に言える人、初めてだよ"
-  },
-  "after2_seo_sunset_react_ins": {
-    "name": "ソヨン",
-    "text": "結構凝ってるね。ちょっとじっとしてて"
-  },
-  "after2_seo_neck_react_ins": {
-    "name": "ソヨン",
-    "text": "結構凝ってるね。ちょっとじっとしてて"
-  },
-  "after2_seo_neck_react_ins2": {
-    "name": "{name}",
-    "text": "*ソヨンが立ち上がって僕の後ろに回る。肩に手を置く。*"
-  },
-  "after2_seo_neck_high_ins": {
-    "name": "ソヨン",
-    "text": "*静かに* …動かないで。ちょっとだけ"
-  },
-  "after2_seo_neck_high_ins2": {
-    "name": "{name}",
-    "text": "*誰の手だっけ？——ソヨンの手が僕の肩の上にあるんだけど。思考がめちゃくちゃだ。それくらい緊張している。*"
-  },
-  "after2_seo_neck_low_ins": {
-    "name": "{name}",
-    "text": "急に何？"
-  },
-  "after2_seo_neck_low_ins2": {
-    "name": "ソヨン",
-    "text": "*手を引きながら* …何でもない"
-  },
-  "after2_yuna_1_ins": {
-    "name": "{name}",
-    "text": "*別館の廊下。人の気配がない。——秘密の読書スペースのドアが少し開いている。*"
-  },
-  "after2_yuna_1_ins2": {
-    "name": "{name}",
-    "text": "*別館の廊下。人の気配がない。——秘密の読書スペースのドアが少し開いている。*"
-  },
-  "after2_yuna_2_ins": {
-    "name": "{name}",
-    "text": "*ユナが顔を上げる。驚いていない。*"
-  },
-  "after2_yuna_2_ins2": {
-    "name": "{name}",
-    "text": "*ユナが顔を上げる。驚いていない。*"
-  },
-  "after2_yuna_8b_ins": {
-    "name": "{name}",
-    "text": "*隣に座る。ユナが自分のイヤホンの片方を差し出す。*"
-  },
-  "after2_yuna_8b_ins2": {
-    "name": "{name}",
-    "text": "*隣に座る。ユナが自分のイヤホンの片方を差し出す。*"
-  },
-  "after2_yuna_choice_pre3_ins": {
-    "name": "{name}",
-    "text": "*ユナが二文続けて言った。——普段一行で済ませる人なのに。*"
-  },
-  "after2_yuna_everyday_ins": {
-    "name": "ユナ",
-    "text": "…来たいなら来て。止めないから"
-  },
-  "minsu_warn_4_ins": {
-    "name": "{name}",
-    "text": "*ユナの口元がほんのわずかに上がる。*"
-  },
-  "minsu_warn_1_ins": {
-    "name": "ミンス",
-    "text": "*隣に並んで* 最近楽しそうだな"
-  },
-  "minsu_warn_7_ins": {
-    "name": "{name}",
-    "text": "*ミンスが立ち止まる。振り返る。いつものふざけた感じがない。*"
-  },
-  "minsu_warn_7_ins2": {
-    "name": "ミンス",
-    "text": "なあ、俺このクラスに1年いるんだよ。ソヨンが男に自分から話しかけるの見たことない。ダインが他の男にパン買ってあげたこともない。ユナは——手紙？ 誰にも書かないよ"
-  },
-  "minsu_warn_12_ins": {
-    "name": "{name}",
-    "text": "*ミンスがカバンの紐を直す。*"
-  },
-  "minsu_warn_13_ins": {
-    "name": "{name}",
-    "text": "*——息が詰まる。*"
-  },
-  "minsu_warn_15_ins": {
-    "name": "ダイン",
-    "text": "明日も勝負しよう!! 種目変えて!!"
-  },
-  "minsu_warn_15_ins2": {
-    "name": "ソヨン",
-    "text": "明日の昼、屋上開けておくから。来て"
-  },
-  "minsu_warn_15_ins3": {
-    "name": "{name}",
-    "text": "*前の学校。——その言葉が胸に刺さった。*"
-  },
-  "minsu_warn_15_ins4": {
-    "name": "{name}",
-    "text": "*——歩いていた足が止まった。*"
-  }
+    "after2_start": {
+        "name": "{name}",
+        "text": "*放課後。スマホに通知が二件来ている。*"
+    },
+    "after2_msg_dain": {
+        "name": "ダイン",
+        "text": "体育館来て！！今日はマジだから！！"
+    },
+    "after2_msg_seo": {
+        "name": "ソヨン",
+        "text": "生徒会室に来れる？人手が足りなくて"
+    },
+    "after2_msg_yuna": {
+        "name": "{name}",
+        "text": "*ユナからは何の連絡もない。——それがユナだ。でも鞄を片付けていたらポケットから朝のメモが出てくる。『図書館別館』という文字が目に引っかかる。*"
+    },
+    "after2_nurse_transition": {
+        "name": "{name}",
+        "text": "*でも——体育の時間に擦りむいた肘がさっきからずっと気になる。保健室に寄ろう。*"
+    },
+    "after2_choice": {
+        "name": "{name}",
+        "text": "*どこへ行こうか。*",
+        "choices": [
+            "体育館へ（ダイン）",
+            "生徒会室へ（ソヨン）",
+            "図書館別館を覗いてみる（ユナ）"
+        ]
+    },
+    "after2_dain_1": {
+        "name": "{name}",
+        "text": "*体育館。ダインがバレーネットの前で準備運動をしている。*"
+    },
+    "after2_dain_2": {
+        "name": "ダイン",
+        "text": "来た？！遅い！！"
+    },
+    "after2_dain_3": {
+        "name": "{name}",
+        "text": "5分前なんだけど"
+    },
+    "after2_dain_4": {
+        "name": "ダイン",
+        "text": "あたしは10分前に来たの！！"
+    },
+    "after2_dain_5": {
+        "name": "{name}",
+        "text": "*それは君が早く来たんであって、僕が遅れたわけじゃないんだけど。*"
+    },
+    "after2_dain_6": {
+        "name": "ダイン",
+        "text": "さあ、勝負！サーブ5本、3本以上ネット越えたらあんたの勝ち！ダメなら今日のトッポッキはあんた持ち！"
+    },
+    "after2_dain_7": {
+        "name": "{name}",
+        "text": "いきなりトッポッキ？"
+    },
+    "after2_dain_8": {
+        "name": "ダイン",
+        "text": "お腹空いてるの！！"
+    },
+    "after2_dain_9": {
+        "name": "{name}",
+        "text": "*サーブを打つ。——意外にも二本目のサーブが綺麗にネットを越える。*"
+    },
+    "after2_dain_10": {
+        "name": "ダイン",
+        "text": "*目を見開いて* え？手加減しようと思ったけど無理だわ"
+    },
+    "after2_dain_11": {
+        "name": "{name}",
+        "text": "*ラリーが続く。ダインの動きは——明らかに普通じゃない。速く、正確で、体が覚えている動き。*"
+    },
+    "after2_dain_11b": {
+        "name": "{name}",
+        "text": "*体育館を出て、通りを歩いた。*"
+    },
+    "after2_dain_12": {
+        "name": "ダイン",
+        "text": "うわああ！！負けた！！——でも結構やるじゃん？！運動しないって言ったよね？！"
+    },
+    "after2_dain_13": {
+        "name": "{name}",
+        "text": "しないとは言ってないけど"
+    },
+    "after2_dain_14": {
+        "name": "ダイン",
+        "text": "*驚いて* は？！騙されたの？！"
+    },
+    "after2_dain_15": {
+        "name": "{name}",
+        "text": "騙してないよ、聞かれなかっただけで"
+    },
+    "after2_dain_16": {
+        "name": "ダイン",
+        "text": "*肩をグーで叩きながら* この詐欺師！！ははは——でも楽しかった！"
+    },
+    "after2_dain_skinship_1": {
+        "name": "{name}",
+        "text": "*ダインが手をバッと上げる。ハイタッチ。*"
+    },
+    "after2_dain_skinship_2": {
+        "name": "ダイン",
+        "text": "...あ、ごめん！癖なの！"
+    },
+    "after2_dain_skinship_3": {
+        "name": "{name}",
+        "text": "*手を離した。全然ごめんって顔じゃない。——手のひらがまだ熱い。*"
+    },
+    "after2_dain_end": {
+        "name": "{name}",
+        "text": "*目が三日月型だ。昨日も見たあの目。——この人は本気で楽しんでる時にああなるんだな。*"
+    },
+    "after2_dain_end_first": {
+        "name": "{name}",
+        "text": "*目が半月型になっている。—この人は本当に楽しい時、こんな顔をするんだな。*"
+    },
+    "after2_dain_end_2": {
+        "name": "ダイン",
+        "text": "ねえ、あんた本当は運動できるんでしょ？"
+    },
+    "after2_dain_end_2b": {
+        "name": "{name}",
+        "text": "少しね"
+    },
+    "after2_dain_end_2c": {
+        "name": "ダイン",
+        "text": "少しであんな打てないよ！——認めなよ、うまいって"
+    },
+    "after2_dain_end_2d": {
+        "name": "{name}",
+        "text": "{name}の方がずっとうまかったけど。"
+    },
+    "after2_dain_end_3": {
+        "name": "{name}",
+        "text": "*ダインが箸を止める。ほんの一瞬。*"
+    },
+    "after2_dain_end_3b": {
+        "name": "ダイン",
+        "text": "……当たり前じゃん！あたし体育特待生だったんだから！"
+    },
+    "after2_dain_end_3c": {
+        "name": "{name}",
+        "text": "*『だったんだから』。過去形。——なんとなく聞かない方がよさそうだ。*"
+    },
+    "after2_dain_end_3d": {
+        "name": "ダイン",
+        "text": "あー辛い！！水水！！"
+    },
+    "after2_dain_end_3e": {
+        "name": "{name}",
+        "text": "*話題が変わった。——ダインの気遣いは不器用だけど、温かい。*"
+    },
+    "after2_dain_return": {
+        "name": "{name}",
+        "text": "*学校に戻る道。校門前に着いた。*"
+    },
+    "after2_seo_1": {
+        "name": "{name}",
+        "text": "*生徒会室。ソヨンが書類の山の前に座っている。一人で。*"
+    },
+    "after2_seo_2": {
+        "name": "ソヨン",
+        "text": "来てくれたんだ。——正直、来ないと思った"
+    },
+    "after2_seo_3": {
+        "name": "{name}",
+        "text": "呼ばれたら行くタイプだから"
+    },
+    "after2_seo_4": {
+        "name": "ソヨン",
+        "text": "*少し笑って* 従順なのね"
+    },
+    "after2_seo_5": {
+        "name": "{name}",
+        "text": "助けてって言ったのはそっちでしょ"
+    },
+    "after2_seo_6": {
+        "name": "ソヨン",
+        "text": "お願いじゃなくて、チャンスをあげたの"
+    },
+    "after2_seo_7": {
+        "name": "{name}",
+        "text": "*この人の語彙に『お願い』という言葉は存在しないらしい。*"
+    },
+    "after2_seo_8": {
+        "name": "ソヨン",
+        "text": "こっちは日付順、あっちは部活別。——整理するの得意？"
+    },
+    "after2_seo_8a2": {
+        "name": "{name}",
+        "text": "得意じゃないけど、下手でもない"
+    },
+    "after2_seo_8a3": {
+        "name": "ソヨン",
+        "text": "曖昧ね"
+    },
+    "after2_seo_8a4": {
+        "name": "{name}",
+        "text": "褒め方と似てるよね。そっちも曖昧だし"
+    },
+    "after2_seo_8b": {
+        "name": "{name}",
+        "text": "*ソヨンが書類から目を離してこちらを見る。*"
+    },
+    "after2_seo_8b2": {
+        "name": "ソヨン",
+        "text": "……意外と使えるのね"
+    },
+    "after2_seo_8b3": {
+        "name": "{name}",
+        "text": "それは褒めてるの？"
+    },
+    "after2_seo_8b4": {
+        "name": "ソヨン",
+        "text": "褒めてる。受け取って"
+    },
+    "after2_seo_choice1": {
+        "name": "{name}",
+        "text": "*褒めてると直接言ってくれること。——この人にしては珍しいことな気がする。*",
+        "choices": [
+            "夕焼けが綺麗だね。——あ、君じゃなくて外が",
+            "首痛い？休みながらやろうよ"
+        ]
+    },
+    "after2_seo_sunset_joke": {
+        "name": "{name}",
+        "text": "*ソヨンが一瞬止まる。そして——笑う。口角じゃなくて目が笑う。初めて見る笑顔。*"
+    },
+    "after2_seo_sunset_react": {
+        "name": "ソヨン",
+        "text": "……そんなくだらないことをこんな自然に言う人、初めて"
+    },
+    "after2_seo_neck_worry": {
+        "name": "ソヨン",
+        "text": "大丈夫。これくらい毎日のことだから"
+    },
+    "after2_seo_neck_react": {
+        "name": "{name}",
+        "text": "*ソヨンが肩を回す。凝りがほぐれる音がする。*"
+    },
+    "after2_seo_neck_touch": {
+        "name": "ソヨン",
+        "text": "かなり凝ってるね。ちょっとじっとしてて。"
+    },
+    "after2_seo_neck_high": {
+        "name": "{name}",
+        "text": "*目を閉じて身を委ねる。*"
+    },
+    "after2_seo_neck_high_2": {
+        "name": "ソヨン",
+        "text": "*静かに* ……じっとしてて。もうちょっとだけ。"
+    },
+    "after2_seo_neck_low": {
+        "name": "{name}",
+        "text": "*少し体を引く。*"
+    },
+    "after2_seo_neck_low_2": {
+        "name": "ソヨン",
+        "text": "*手を引いて* …何でもない。"
+    },
+    "after2_seo_9": {
+        "name": "{name}",
+        "text": "*夕焼けが生徒会室を染めていく。書類整理がほぼ終わった。*"
+    },
+    "after2_seo_choice2": {
+        "name": "{name}",
+        "text": "*書類整理がほぼ終わった。*",
+        "choices": [
+            "もう少しいようか？まだ残ってるみたいだし",
+            "終わったなら帰るよ"
+        ]
+    },
+    "after2_seo_stay": {
+        "name": "{name}",
+        "text": "*ソヨンが書類を置いて窓の外を見る。夕焼けの光が顔に当たっている。*"
+    },
+    "after2_seo_stay_2": {
+        "name": "ソヨン",
+        "text": "……この時間が好き。生徒会室に一人でいると、どんな役割も演じなくていいから"
+    },
+    "after2_seo_stay_3": {
+        "name": "{name}",
+        "text": "生徒会長も休む時あるの？"
+    },
+    "after2_seo_stay_3b": {
+        "name": "ソヨン",
+        "text": "ないよ。——ここ以外は"
+    },
+    "after2_seo_stay_3c": {
+        "name": "{name}",
+        "text": "*『ここ以外は』。——屋上でも生徒会室でも、ソヨンにとっては仮面を外せる場所が必要な人なんだ。*"
+    },
+    "after2_seo_leave": {
+        "name": "{name}",
+        "text": "*ソヨンが小さくうなずく。*"
+    },
+    "after2_seo_end": {
+        "name": "{name}",
+        "text": "*生徒会室を出た。夕焼けが廊下を染めている。*"
+    },
+    "after2_seo_skinship_1": {
+        "name": "{name}",
+        "text": "*ソヨンが手を伸ばす。襟についた埃を取ってくれる。手が首に触れる。*"
+    },
+    "after2_seo_skinship_2": {
+        "name": "{name}",
+        "text": "*ソヨンの指が止まる。何も言わずに顔をそらす。——息が一瞬止まった。*"
+    },
+    "after2_seo_skinship_3": {
+        "name": "ソヨン",
+        "text": "...埃ついてた。"
+    },
+    "after2_seo_return": {
+        "name": "{name}",
+        "text": "*生徒会室を出た。校門の方へ歩いていく。*"
+    },
+    "after2_yuna_1": {
+        "name": "{name}",
+        "text": "*ユナからは連絡がなかった。でも足が図書館の方へ向いている。なぜ？——わからない。朝のメモのせいかもしれない。*"
+    },
+    "after2_yuna_2": {
+        "name": "{name}",
+        "text": "*静かに入る。ユナがソファで本を読んでいる。窓から夕焼けが差し込んでいる。*"
+    },
+    "after2_yuna_3": {
+        "name": "ユナ",
+        "text": "……来たね"
+    },
+    "after2_yuna_4": {
+        "name": "{name}",
+        "text": "呼んでないじゃん"
+    },
+    "after2_yuna_5": {
+        "name": "ユナ",
+        "text": "呼ばないと来ないの？"
+    },
+    "after2_yuna_6": {
+        "name": "{name}",
+        "text": "*待っていてくれたんだ。——その事実が、ちょっと嬉しい。*"
+    },
+    "after2_yuna_7": {
+        "name": "{name}",
+        "text": "ドアが開いてたから"
+    },
+    "after2_yuna_8": {
+        "name": "ユナ",
+        "text": "……たまたま"
+    },
+    "after2_yuna_8b": {
+        "name": "{name}",
+        "text": "*たまたま開いていたドア。——ユナの『たまたま』は『計画的に』と同じ意味だ。*"
+    },
+    "after2_yuna_8c": {
+        "name": "ユナ",
+        "text": "聴いて"
+    },
+    "after2_yuna_8d": {
+        "name": "{name}",
+        "text": "*静かなピアノ曲が流れる。夕焼けが部屋を染めている。*"
+    },
+    "after2_yuna_9": {
+        "name": "{name}",
+        "text": "*ユナが本を読み、僕は音楽を聴く。何も言わない。——不快じゃない。*"
+    },
+    "after2_yuna_choice_pre1": {
+        "name": "ユナ",
+        "text": "*しばらくして* ……放課後にここに来る人"
+    },
+    "after2_yuna_choice_pre2": {
+        "name": "{name}",
+        "text": "ん？"
+    },
+    "after2_yuna_choice_pre3": {
+        "name": "ユナ",
+        "text": "先輩の後、いなかった"
+    },
+    "after2_yuna_choice": {
+        "name": "{name}",
+        "text": "*ユナが二文言った。——この人にとってそれは『ありがとう』と同じだ。*",
+        "choices": [
+            "毎日来ようか？",
+            "静かだからいいね"
+        ]
+    },
+    "after2_yuna_everyday": {
+        "name": "{name}",
+        "text": "*ユナがイヤホンのコードをいじっている。*"
+    },
+    "after2_yuna_everyday_react": {
+        "name": "ユナ",
+        "text": "……来たいなら来て。止めはしないから"
+    },
+    "after2_yuna_quiet": {
+        "name": "ユナ",
+        "text": "……だからここが好きなの"
+    },
+    "after2_yuna_quiet_react": {
+        "name": "{name}",
+        "text": "*ユナがほんの少しだけ笑う。——この笑顔ひとつで一日が大丈夫になる。*"
+    },
+    "after2_yuna_end": {
+        "name": "{name}",
+        "text": "*夕焼けが沈んでいく。ユナと並んで座って音楽を聴く。何も言葉のいらない時間。*"
+    },
+    "after2_yuna_skinship_1": {
+        "name": "{name}",
+        "text": "*同じ本を取ろうとして——手が重なった。*"
+    },
+    "after2_yuna_skinship_2": {
+        "name": "{name}",
+        "text": "*ユナが先に引かない。3秒。ユナが視線を下ろす。*"
+    },
+    "after2_yuna_skinship_3": {
+        "name": "{name}",
+        "text": "*手が離れた。ユナが本を取って渡す。何も言わずに。*"
+    },
+    "after2_yuna_return": {
+        "name": "{name}",
+        "text": "*図書館別館を出た。夕日が沈んでいく。*"
+    },
+    "minsu_warn_1": {
+        "name": "{name}",
+        "text": "*下校の道。校門を出たところで——ミンスが後ろからついてくる。*"
+    },
+    "minsu_warn_2": {
+        "name": "ミンス",
+        "text": "おい。"
+    },
+    "minsu_warn_3": {
+        "name": "{name}",
+        "text": "なに？"
+    },
+    "minsu_warn_4": {
+        "name": "ミンス",
+        "text": "最近、楽しそうだな？"
+    },
+    "minsu_warn_5": {
+        "name": "{name}",
+        "text": "急にどうした？"
+    },
+    "minsu_warn_6": {
+        "name": "ミンス",
+        "text": "ソヨン、ダイン、ユナ。三人ともお前に笑ってたぞ。"
+    },
+    "minsu_warn_7": {
+        "name": "{name}",
+        "text": "ただ親切にしてくれてるだけじゃない？"
+    },
+    "minsu_warn_8": {
+        "name": "ミンス",
+        "text": "なあ、俺は一年このクラスにいたんだぞ。三人とも普段はああじゃないんだよ。ソヨンは自分から男に話しかけないし、ダインだって誰にでもああしないし。ユナは——そもそも誰とも喋らないだろ。"
+    },
+    "minsu_warn_8b": {
+        "name": "{name}",
+        "text": "……"
+    },
+    "minsu_warn_9": {
+        "name": "ミンス",
+        "text": "三人ともお前にだけそうしてるんだよ。——それ、自分でも分かってるだろ。"
+    },
+    "minsu_warn_10": {
+        "name": "{name}",
+        "text": "*分かってる。気づかないふりをしてるだけだ。*"
+    },
+    "minsu_warn_11": {
+        "name": "ミンス",
+        "text": "問題は、お前が三人全員に同じように笑顔を向けてることだよ。"
+    },
+    "minsu_warn_11b": {
+        "name": "{name}",
+        "text": "僕はただ——"
+    },
+    "minsu_warn_11c": {
+        "name": "ミンス",
+        "text": "ただ？その『ただ』が一番残酷なんだよ。あいつらにとっては『ただ』じゃないんだから。"
+    },
+    "minsu_warn_12": {
+        "name": "{name}",
+        "text": "*何も言えない。ミンスの言う通りだ。——察しがいいと自負しておきながら、自分がばらまいてる誤解には気づけてなかった。*"
+    },
+    "minsu_warn_13": {
+        "name": "ミンス",
+        "text": "前の学校でもこうだったの？"
+    },
+    "minsu_warn_13b": {
+        "name": "{name}",
+        "text": "……え？"
+    },
+    "minsu_warn_14": {
+        "name": "{name}",
+        "text": "*——歩いていた足がぴたりと止まった。*"
+    },
+    "minsu_warn_15": {
+        "name": "ミンス",
+        "text": "知らんけど、おせっかいかもな。——でもな、後で三人とも泣いたら、それはお前のせいだからな。マジで。"
+    },
+    "after2_dain_freetalk": {
+        "name": "ダイン",
+        "text": "*学校前のトッポッキ屋に入った。* *ダインとトッポッキを食べながら話している。*",
+        "context": "2日目の放課後、体育館でバレー勝負をしてトッポッキ屋に来た状態。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
+        "personality": "ダインはエネルギッシュな体育系。負けず嫌いでさっぱりしているが本音を言う時は感嘆符が消える。"
+    },
+    "hidden_nurse_d2_1": {
+        "name": "{name}",
+        "text": "*体育の時間に肘を擦りむいた。大したことないけど、少し血が出ている。*"
+    },
+    "hidden_nurse_d2_2": {
+        "name": "保健先生",
+        "text": "あれ、昨日の転校生。また来たの？常連になる気？"
+    },
+    "hidden_nurse_d2_3": {
+        "name": "{name}",
+        "text": "肘をちょっと擦りむいて。"
+    },
+    "hidden_nurse_d2_4": {
+        "name": "保健先生",
+        "text": "じっとしてて～…"
+    },
+    "hidden_nurse_d2_5": {
+        "name": "保健先生",
+        "text": "ここ…こうして…よし、できた。雑に貼ったらすぐ剥がれちゃうからね。"
+    },
+    "hidden_nurse_d2_choice1": {
+        "name": "{name}",
+        "text": "*絆創膏を貼ってくれる手が近い。*",
+        "choices": [
+            "手、あったかいですね",
+            "絆創膏一枚にそこまで丁寧に"
+        ]
+    },
+    "hidden_nurse_d2_choice1_a": {
+        "name": "保健先生",
+        "text": "…手が冷たい方なんだけど。今日はちょっと温かいみたい"
+    },
+    "hidden_nurse_d2_choice1_b": {
+        "name": "保健先生",
+        "text": "*にっこり* 丁寧にやってるの。雑に貼ったらすぐ剥がれちゃうでしょ"
+    },
+    "hidden_nurse_d2_6": {
+        "name": "{name}",
+        "text": "*絆創膏を確認していると——机の上にノートパソコンが開いている。画面に何か書いてある。医療記録じゃなくて——個人的な日記のようなもの。*"
+    },
+    "hidden_nurse_d2_7": {
+        "name": "保健先生",
+        "text": "それ、見てないよね？秘密～先生にも秘密があるの。"
+    },
+    "hidden_nurse_d2_choice2": {
+        "name": "{name}",
+        "text": "*秘密だと笑うけど——目は笑っていない。*",
+        "choices": [
+            "秘密多いですね。一つだけ教えてくれませんか？",
+            "はい、見てません"
+        ]
+    },
+    "hidden_nurse_d2_choice2_a": {
+        "name": "保健先生",
+        "text": "*目を細めて* 一つだけ？ …うーん、じゃあね。私、コーヒーよりココアの方が好き。それが秘密"
+    },
+    "hidden_nurse_d2_choice2_b": {
+        "name": "保健先生",
+        "text": "*軽く笑いながら* 秘密〜 先生にも秘密はあるのよ"
+    },
+    "hidden_nurse_d2_8": {
+        "name": "保健先生",
+        "text": "よし、終わったから授業に戻りな。——次は怪我しないで来てね。"
+    },
+    "hidden_nurse_d2_9": {
+        "name": "保健先生",
+        "text": "理由がなくても来ていいよ。——あ、もちろん授業中はダメ～！放課後にね！"
+    },
+    "hidden_nurse_d2_freetalk": {
+        "name": "保健先生",
+        "text": "*保健先生と保健室で会話中。*",
+        "context": "Day 2。体育で肘を擦りむいて保健室に来た。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
+        "personality": "保健先生はいたずら好きだが丁寧。絆創膏に時間をかける。何か隠している。"
+    },
+    "after2_dain_9_ins": {
+        "name": "ダイン",
+        "text": "*目を丸くして* え？ 手加減するつもりだったのに、やめた"
+    },
+    "after2_dain_9_ins2": {
+        "name": "{name}",
+        "text": "*ダインが姿勢を低くする。目つきが変わった。*"
+    },
+    "after2_dain_9_ins3": {
+        "name": "ダイン",
+        "text": "本気で行くよ！"
+    },
+    "after2_dain_9_ins4": {
+        "name": "{name}",
+        "text": "*ラリーが続く。ダインの動きは——明らかに普通じゃない。速くて、正確で、体が覚えている動き。*"
+    },
+    "after2_dain_9_ins5": {
+        "name": "{name}",
+        "text": "*この子、本当にうまい。——スポーツが好きなレベルじゃなくて、人生を賭けていた人の身のこなしだ。*"
+    },
+    "after2_dain_9_ins6": {
+        "name": "{name}",
+        "text": "*結局3対2。ギリギリ勝った。*"
+    },
+    "after2_dain_end_ins": {
+        "name": "{name}",
+        "text": "*学校の前のトッポッキ屋。*"
+    },
+    "after2_dain_end_ins2": {
+        "name": "{name}",
+        "text": "*ダインがトッポッキをふーふーしながら話す。*"
+    },
+    "after2_dain_end_ins3": {
+        "name": "{name}",
+        "text": "*学校の前のトッポッキ屋。*"
+    },
+    "after2_seo_4_ins": {
+        "name": "{name}",
+        "text": "*この人の語彙にお願いという言葉は存在しないらしい。*"
+    },
+    "after2_seo_6_ins": {
+        "name": "{name}",
+        "text": "*この人の語彙にお願いという言葉は存在しないらしい。*"
+    },
+    "after2_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*書類の整理を始める。イベントの予算案、部活の申請書。結構な量だ。*"
+    },
+    "after2_seo_8b4_ins": {
+        "name": "{name}",
+        "text": "*褒めってはっきり言うの。——この人にしては珍しいことみたいだ。*"
+    },
+    "after2_seo_8b4_ins2": {
+        "name": "{name}",
+        "text": "*整理していると、ソヨンが首を回す。凝っているみたいだ。*"
+    },
+    "after2_seo_sunset_joke_ins": {
+        "name": "ソヨン",
+        "text": "…こんな軽い台詞をこんな自然に言える人、初めてだよ"
+    },
+    "after2_seo_sunset_react_ins": {
+        "name": "ソヨン",
+        "text": "結構凝ってるね。ちょっとじっとしてて"
+    },
+    "after2_seo_neck_react_ins": {
+        "name": "ソヨン",
+        "text": "結構凝ってるね。ちょっとじっとしてて"
+    },
+    "after2_seo_neck_react_ins2": {
+        "name": "{name}",
+        "text": "*ソヨンが立ち上がって僕の後ろに回る。肩に手を置く。*"
+    },
+    "after2_seo_neck_high_ins": {
+        "name": "ソヨン",
+        "text": "*静かに* …動かないで。ちょっとだけ"
+    },
+    "after2_seo_neck_high_ins2": {
+        "name": "{name}",
+        "text": "*誰の手だっけ？——ソヨンの手が僕の肩の上にあるんだけど。思考がめちゃくちゃだ。それくらい緊張している。*"
+    },
+    "after2_seo_neck_low_ins": {
+        "name": "{name}",
+        "text": "急に何？"
+    },
+    "after2_seo_neck_low_ins2": {
+        "name": "ソヨン",
+        "text": "*手を引きながら* …何でもない"
+    },
+    "after2_yuna_1_ins": {
+        "name": "{name}",
+        "text": "*別館の廊下。人の気配がない。——秘密の読書スペースのドアが少し開いている。*"
+    },
+    "after2_yuna_1_ins2": {
+        "name": "{name}",
+        "text": "*別館の廊下。人の気配がない。——秘密の読書スペースのドアが少し開いている。*"
+    },
+    "after2_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*ユナが顔を上げる。驚いていない。*"
+    },
+    "after2_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*ユナが顔を上げる。驚いていない。*"
+    },
+    "after2_yuna_8b_ins": {
+        "name": "{name}",
+        "text": "*隣に座る。ユナが自分のイヤホンの片方を差し出す。*"
+    },
+    "after2_yuna_8b_ins2": {
+        "name": "{name}",
+        "text": "*隣に座る。ユナが自分のイヤホンの片方を差し出す。*"
+    },
+    "after2_yuna_choice_pre3_ins": {
+        "name": "{name}",
+        "text": "*ユナが二文続けて言った。——普段一行で済ませる人なのに。*"
+    },
+    "after2_yuna_everyday_ins": {
+        "name": "ユナ",
+        "text": "…来たいなら来て。止めないから"
+    },
+    "minsu_warn_4_ins": {
+        "name": "{name}",
+        "text": "*ユナの口元がほんのわずかに上がる。*"
+    },
+    "minsu_warn_1_ins": {
+        "name": "ミンス",
+        "text": "*隣に並んで* 最近楽しそうだな"
+    },
+    "minsu_warn_7_ins": {
+        "name": "{name}",
+        "text": "*ミンスが立ち止まる。振り返る。いつものふざけた感じがない。*"
+    },
+    "minsu_warn_7_ins2": {
+        "name": "ミンス",
+        "text": "なあ、俺このクラスに1年いるんだよ。ソヨンが男に自分から話しかけるの見たことない。ダインが他の男にパン買ってあげたこともない。ユナは——手紙？ 誰にも書かないよ"
+    },
+    "minsu_warn_12_ins": {
+        "name": "{name}",
+        "text": "*ミンスがカバンの紐を直す。*"
+    },
+    "minsu_warn_13_ins": {
+        "name": "{name}",
+        "text": "*——息が詰まる。*"
+    },
+    "minsu_warn_15_ins": {
+        "name": "ダイン",
+        "text": "明日も勝負しよう!! 種目変えて!!"
+    },
+    "minsu_warn_15_ins2": {
+        "name": "ソヨン",
+        "text": "明日の昼、屋上開けておくから。来て"
+    },
+    "minsu_warn_15_ins3": {
+        "name": "{name}",
+        "text": "*前の学校。——その言葉が胸に刺さった。*"
+    },
+    "minsu_warn_15_ins4": {
+        "name": "{name}",
+        "text": "*——歩いていた足が止まった。*"
+    }
 }

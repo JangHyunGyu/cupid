@@ -1,724 +1,732 @@
 {
-  "after3_start": {
-    "name": "{name}",
-    "text": "*放課後。昼の余韻がまだ残っている。——それでも、どこかには行かないと。*"
-  },
-  "after3_route_check": {
-    "name": "{name}",
-    "text": "*放課後。スマホを確認する。*"
-  },
-  "after3_auto_dain": {
-    "name": "{name}",
-    "text": "*ダインとの約束がある。体育館に向かう。*"
-  },
-  "after3_auto_yuna": {
-    "name": "{name}",
-    "text": "*ユナとの約束がある。図書館別館に向かう。*"
-  },
-  "after3_auto_seo": {
-    "name": "{name}",
-    "text": "*ソヨンとの約束がある。生徒会室に向かう。*"
-  },
-  "after3_multi_choice": {
-    "name": "{name}",
-    "text": "*約束が重なった。——みんな待っている。誰のところに先に行こうか。*",
-    "choices": [
-      "ソヨンのところへ",
-      "ユナのところへ",
-      "ダインのところへ",
-      "もう少し考える"
-    ]
-  },
-  "after3_choice": {
-    "name": "{name}",
-    "text": "*どこへ行こう。*",
-    "choices": [
-      "生徒会室へ",
-      "図書館へ",
-      "体育館へ"
-    ]
-  },
-  "after3_seo_1": {
-    "name": "{name}",
-    "text": "*生徒会室のドアを開けた。— ソヨンが机に突っ伏している。*"
-  },
-  "after3_seo_2": {
-    "name": "{name}",
-    "text": "*初めて見る姿だ。完璧な生徒会長が— 無防備に突っ伏している。*"
-  },
-  "after3_seo_3": {
-    "name": "{name}",
-    "text": "*ソヨンが気配に顔を上げる。目が疲れて見える。化粧が少し崩れている。*"
-  },
-  "after3_seo_4": {
-    "name": "ソヨン",
-    "text": "......"
-  },
-  "after3_seo_5": {
-    "name": "{name}",
-    "text": "ソヨン？"
-  },
-  "after3_seo_6": {
-    "name": "ソヨン",
-    "text": "...見た？"
-  },
-  "after3_seo_7": {
-    "name": "{name}",
-    "text": "何を見たって。"
-  },
-  "after3_seo_7_ins": {
-    "name": "ソヨン",
-    "text": "完璧じゃない私。"
-  },
-  "after3_seo_8": {
-    "name": "ソヨン",
-    "text": "こんな姿。— これは秘密だよ。"
-  },
-  "after3_seo_9": {
-    "name": "{name}",
-    "text": "*ソヨンが姿勢を正す。だけど— いつもの完璧な笑顔が戻らない。*"
-  },
-  "after3_seo_choice": {
-    "name": "ソヨン",
-    "text": "今度私がお願いしたら、無条件で聞いて。— それが代償。",
-    "choices": [
-      "完璧じゃなくてもいいんだけど",
-      "秘密は守るよ"
-    ]
-  },
-  "after3_seo_choice1": {
-    "name": "{name}",
-    "text": "*ソヨンが少し止まる。ペンを置く。ゆっくりと。*"
-  },
-  "after3_seo_choice1_react": {
-    "name": "ソヨン",
-    "text": "...そんなこと。簡単に言っちゃダメなのに。"
-  },
-  "after3_seo_choice2": {
-    "name": "{name}",
-    "text": "*目が潤んでいる。— 泣かなかった。まだ。*"
-  },
-  "after3_seo_end": {
-    "name": "{name}",
-    "text": "*その一言が重い。— この人にとって完璧でない姿を見せることがどれほど大きなことか、少し分かった気がする。*"
-  },
-  "after3_seo_end_c2": {
-    "name": "{name}",
-    "text": "*秘密を守るという言葉が——この人にとっては大きな意味を持つようだ。*"
-  },
-  "after3_yuna_1": {
-    "name": "{name}",
-    "text": "*図書館の別館。ユナがいた秘密の読書スペース。— ドアが開いている。*"
-  },
-  "after3_yuna_2": {
-    "name": "{name}",
-    "text": "*入るとユナがいない。代わりに— ソファの上にノートが開いている。手書きがびっしり。*"
-  },
-  "after3_yuna_3": {
-    "name": "{name}",
-    "text": "*小説だ。ユナが書いた小説。— 読んでもいいかな？*"
-  },
-  "after3_yuna_4": {
-    "name": "{name}",
-    "text": "*最初のページ。*"
-  },
-  "after3_yuna_5": {
-    "name": "{name}",
-    "text": "*『ある日、転校生が来た。彼は図書館に来て、何も言わず隣に座った。— 私はそれが嫌じゃなかった。』*"
-  },
-  "after3_yuna_6": {
-    "name": "ユナ",
-    "text": "何してるの。"
-  },
-  "after3_yuna_7": {
-    "name": "{name}",
-    "text": "*後ろからユナの声。振り返るとユナが飲み物を二つ持って立っている。— ノートを見ている僕を見て、固まる。*"
-  },
-  "after3_yuna_8": {
-    "name": "ユナ",
-    "text": "...それ。"
-  },
-  "after3_yuna_8b": {
-    "name": "ユナ",
-    "text": "*素早く近づいてノートを奪いながら* ...許可してない。"
-  },
-  "after3_yuna_9": {
-    "name": "{name}",
-    "text": "*耳。赤い。— ユナが赤くなるのを初めて見た。*"
-  },
-  "after3_yuna_choice": {
-    "name": "{name}",
-    "text": "楽しく読んでたよ。",
-    "choices": [
-      "主人公の名前、変えた方がいいんじゃない",
-      "結末はどうなるの？"
-    ]
-  },
-  "after3_yuna_choice1": {
-    "name": "ユナ",
-    "text": "...主人公の名前なんてない。"
-  },
-  "after3_yuna_choice1_2": {
-    "name": "{name}",
-    "text": "『転校生が図書館に来た』は偶然の一致？"
-  },
-  "after3_yuna_choice1_3": {
-    "name": "ユナ",
-    "text": "...小説は。フィクションだから。"
-  },
-  "after3_yuna_choice1_react": {
-    "name": "{name}",
-    "text": "*『フィクション』と言ったけど、耳が嘘をついている。*"
-  },
-  "after3_yuna_choice2": {
-    "name": "{name}",
-    "text": "*ユナが一瞬止まる。ノートを見下ろす。*"
-  },
-  "after3_yuna_choice2_2": {
-    "name": "ユナ",
-    "text": "...結末はまだ決めてない。"
-  },
-  "after3_yuna_choice2_3": {
-    "name": "ユナ",
-    "text": "...結末を書いたら終わっちゃうから。"
-  },
-  "after3_yuna_choice2_react": {
-    "name": "{name}",
-    "text": "*ユナが二文以上続けて話した。— この人にとってそれは感情の証拠だ。*"
-  },
-  "after3_yuna_end": {
-    "name": "{name}",
-    "text": "*ユナがノートを胸にぎゅっと抱えている。*"
-  },
-  "after3_dain_1": {
-    "name": "{name}",
-    "text": "*体育館。ダインが一人でストレッチしている。軽く走ってみると—*"
-  },
-  "after3_dain_2": {
-    "name": "{name}",
-    "text": "*— 右足を少しひねった。顔をしかめる。*"
-  },
-  "after3_dain_3": {
-    "name": "{name}",
-    "text": "ダイン！"
-  },
-  "after3_dain_4": {
-    "name": "ダイン",
-    "text": "あ！大丈夫！！ちょっとひねっただけ！！"
-  },
-  "after3_dain_5": {
-    "name": "{name}",
-    "text": "大丈夫には見えないけど。"
-  },
-  "after3_dain_6": {
-    "name": "{name}",
-    "text": "*ビックリマークが多すぎる。— 多すぎる。この人は大丈夫じゃない時ほどビックリマークが増えるのか。*"
-  },
-  "after3_dain_choice": {
-    "name": "{name}",
-    "text": "*ダインがベンチに座る。膝をさする。*",
-    "choices": [
-      "隣に座って静かに待つ",
-      "湿布ある？取ってこようか？"
-    ]
-  },
-  "after3_dain_choice1": {
-    "name": "{name}",
-    "text": "*何も言わず隣に座る。ダインがちらっとこちらを見る。*"
-  },
-  "after3_dain_choice1_2": {
-    "name": "ダイン",
-    "text": "...なんで聞かないの？"
-  },
-  "after3_dain_choice1_3": {
-    "name": "{name}",
-    "text": "聞いたら大丈夫って言うだろ。"
-  },
-  "after3_dain_choice1_react": {
-    "name": "{name}",
-    "text": "*ダインが一瞬ためらう。——そして小さく笑う。初めて見る笑顔だ。*"
-  },
-  "after3_dain_choice1_react2": {
-    "name": "ダイン",
-    "text": "...そうだね。大丈夫って言ってた。"
-  },
-  "after3_dain_choice1_react3": {
-    "name": "ダイン",
-    "text": "ありがとう。何も聞かないでくれて。"
-  },
-  "after3_dain_choice2": {
-    "name": "ダイン",
-    "text": "あ！大丈夫だってば！湿布とか要らないから！！"
-  },
-  "after3_dain_choice2_ins": {
-    "name": "{name}",
-    "text": "*保健室から湿布を持ってきた。ダインに差し出した。*"
-  },
-  "after3_dain_choice2_ins2": {
-    "name": "ダイン",
-    "text": "...あ、本当に持ってきたんだ。"
-  },
-  "after3_dain_choice2_ins3": {
-    "name": "{name}",
-    "text": "大丈夫なんでしょ。"
-  },
-  "after3_dain_choice2_ins4": {
-    "name": "{name}",
-    "text": "*ダインが湿布を受け取って — じっと見つめる。唇を噛む。*"
-  },
-  "after3_dain_choice2_ins5": {
-    "name": "ダイン",
-    "text": "*力なく笑う。* ...何。こんなので感動したらダメなのに。"
-  },
-  "after3_dain_choice2_ins6": {
-    "name": "{name}",
-    "text": "*受け取った。— ダインが誰かの助けを拒まなかったのは初めてだ。感嘆符のない笑顔が不思議と重い。*"
-  },
-  "after3_dain_end": {
-    "name": "{name}",
-    "text": "*ダインが拳で軽く肩を叩く。— 昨日より弱い。*"
-  },
-  "after3_confront_1": {
-    "name": "{name}",
-    "text": "*放課後の場所から出ると— ソヨンが廊下で待っている。腕を組んで。いつもの余裕がない。*"
-  },
-  "after3_confront_2": {
-    "name": "ソヨン",
-    "text": "{name}。ちょっと。"
-  },
-  "after3_confront_3": {
-    "name": "{name}",
-    "text": "*ソヨンが廊下の端まで連れて行く。誰もいない場所。*"
-  },
-  "after3_confront_4": {
-    "name": "ソヨン",
-    "text": "昼食の時のことなんだけど。"
-  },
-  "after3_confront_5": {
-    "name": "ソヨン",
-    "text": "あなたが他の子にも同じように笑いかけるの、ちょっと嫌だった。"
-  },
-  "after3_confront_6": {
-    "name": "ソヨン",
-    "text": "正直に言って。みんなに週末の約束したの？"
-  },
-  "after3_confront_choice": {
-    "name": "{name}",
-    "text": "*ソヨンがまっすぐ見つめてくる。生徒会長の目じゃない。一人の人間の目だ。*",
-    "choices": [
-      "正直に認める",
-      "時間帯が違うから大丈夫だと思った",
-      "ソヨンだけが本気だよ"
-    ]
-  },
-  "after3_confront_admit": {
-    "name": "ソヨン",
-    "text": "...断れなかったから。"
-  },
-  "after3_confront_admit_2": {
-    "name": "ソヨン",
-    "text": "それが一番残酷な言葉だよ、{name}。断れない優しさが— 偽りの希望を与えるんだから。"
-  },
-  "after3_confront_admit_3": {
-    "name": "{name}",
-    "text": "*ソヨンがお弁当の袋を掴み上げる。手が震えている。*"
-  },
-  "after3_confront_admit_4": {
-    "name": "ソヨン",
-    "text": "私に完璧じゃなくていいって言っておいて——あんたはみんなにとって完璧な人間になろうとしてたんじゃない。それはもっとたちが悪い。"
-  },
-  "after3_confront_admit_5": {
-    "name": "ソヨン",
-    "text": "...今日は屋上、開けておかないから。"
-  },
-  "after3_confront_admit_6": {
-    "name": "{name}",
-    "text": "*背筋が伸びている。完璧に。——でも拳が握られている。手の甲が白い。*"
-  },
-  "after3_confront_excuse": {
-    "name": "ソヨン",
-    "text": "...それが問題だって分からない？"
-  },
-  "after3_confront_excuse_2": {
-    "name": "ソヨン",
-    "text": "何人と約束したかが問題じゃないの。私にとってその約束が何だったかが問題なの。"
-  },
-  "after3_confront_lie_ins": {
-    "name": "{name}",
-    "text": "*ソヨンが一瞬止まる。目が揺れている。*"
-  },
-  "after3_confront_lie": {
-    "name": "ソヨン",
-    "text": "...本当？その言葉...信じていいの？"
-  },
-  "after3_confront_lie_2": {
-    "name": "{name}",
-    "text": "*信じたい目。— 嘘がこんなに重いとは知らなかった。*"
-  },
-  "after3_confront_end": {
-    "name": "{name}",
-    "text": "*ソヨンが消えた廊下に一人で立っている。— 背筋はまっすぐだった。完璧に。でも拳は握りしめられていた。*"
-  },
-  "after3_final": {
-    "name": "{name}",
-    "text": "*放課後が終わった。— 今日見たものが頭から離れない。*"
-  },
-  "after3_seo_freetalk": {
-    "name": "ソヨン",
-    "text": "*ソヨンと廊下で向き合っている。ソヨンの表情が複雑だ。*",
-    "context": "3日目の放課後、ソヨンとの対立・和解の直後。二股疑惑で関係に亀裂が入った状態。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
-    "personality": "ソヨンはクールビューティーな生徒会長。独占欲が強く嫉妬時は直接的。今は傷ついているが隠そうとしている。"
-  },
-  "after3_yuna_freetalk": {
-    "name": "ユナ",
-    "text": "*ユナと並んで歩いている。ユナの目が冷たい。*",
-    "context": "3日目の放課後、ユナとの会話の直後。ユナがいつもより感情を見せている。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
-    "personality": "ユナは神秘的な文学少女。普段は落ち着いているが今は感情が揺れている。嫉妬より確認したい気持ち。"
-  },
-  "after3_dain_freetalk": {
-    "name": "ダイン",
-    "text": "*ダインと運動場のベンチに座っている。ダインがいつもより静かだ。*",
-    "context": "3日目の放課後、ダインとの会話の直後。傷ついているが明るいふりをしている。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
-    "personality": "ダインはエネルギッシュな体育系。明るいふりが唯一の防衛機制。感嘆符が減れば本音が出ている。"
-  },
-  "haeun_check": {
-    "name": "{name}",
-    "text": ""
-  },
-  "haeun_warn_1": {
-    "name": "{name}",
-    "text": "*生徒会室を出た。廊下は人気がない。——誰かが待っていた。*"
-  },
-  "haeun_warn_2": {
-    "name": "ハウン",
-    "text": "……{name}さん。"
-  },
-  "haeun_warn_3": {
-    "name": "ハウン",
-    "text": "先輩——ソヨン先輩、さっき会いました？"
-  },
-  "haeun_warn_4": {
-    "name": "ハウン",
-    "text": "……先輩が泣いてたんです。生徒会室を出た後、トイレで。——私だけが見ました。一年間、先輩が泣くのは初めてです。"
-  },
-  "haeun_warn_5": {
-    "name": "{name}",
-    "text": "*ソヨンが泣いた。——僕には完璧じゃない姿を見られたとだけ言ったのに。その後で泣いていた。*"
-  },
-  "haeun_warn_6": {
-    "name": "ハウン",
-    "text": "あの先輩が泣いたっていうのは——それだけ{name}さんに本気だってことです。"
-  },
-  "haeun_warn_7": {
-    "name": "ハウン",
-    "text": "おせっかいなのは分かってます。でも先輩が心配で。——先輩、今ちょっと家がごたごたしてて。ご両親が……とにかく。先輩に優しくしてあげてください。お願いします。"
-  },
-  "haeun_warn_8": {
-    "name": "{name}",
-    "text": "*ソヨンがトイレで一人で泣いている姿が頭から消えない。完璧にまっすぐな背中、白い拳、そして——誰もいないトイレ。*"
-  },
-  "minsu_d3_check": {
-    "name": "{name}",
-    "text": ""
-  },
-  "minsu_d3_1": {
-    "name": "{name}",
-    "text": "*下校の道。校門でミンスが待っている。*"
-  },
-  "minsu_d3_2": {
-    "name": "ミンス",
-    "text": "見てた。"
-  },
-  "minsu_d3_3": {
-    "name": "ミンス",
-    "text": "昼休み。それとさっきのソヨンの表情も。"
-  },
-  "minsu_d3_4": {
-    "name": "ミンス",
-    "text": "昨日俺がなんて言った？『後で三人とも泣いたらお前のせいだ』って言ったよな。まだ後でじゃないぞ。今だよ。"
-  },
-  "minsu_d3_5": {
-    "name": "ミンス",
-    "text": "なあ、俺だって見てて辛いんだよ。あいつら全員いいやつだ。——お前が悪いやつだからじゃないのは分かってる。断れないからこうなってんだろ。"
-  },
-  "minsu_d3_6": {
-    "name": "{name}",
-    "text": "……そうだな。"
-  },
-  "minsu_d3_7": {
-    "name": "ミンス",
-    "text": "断るのも愛だぞ。ダメな相手にちゃんと断ってやる方が——嘘の希望より百倍マシだ。"
-  },
-  "minsu_d3_8": {
-    "name": "{name}",
-    "text": "*断るのも愛。——前の学校でソジョンに断る機会すら与えられなかった。僕が言えなかったから。*"
-  },
-  "minsu_d3_9": {
-    "name": "{name}",
-    "text": "*あの時ソジョンが断ってくれていたら——こんなに引きずらなかったはずだ。断るのも愛なら、今僕がすべきことは——一人にだけ好きだと伝えることだ。*"
-  },
-  "minsu_d3_10": {
-    "name": "ミンス",
-    "text": "明日学校でな。——ちょっと真剣に考えろよ。"
-  },
-  "haeun_warn_2b": {
-    "name": "{name}",
-    "text": "うん。"
-  },
-  "haeun_warn_4b": {
-    "name": "{name}",
-    "text": "泣いたって？"
-  },
-  "haeun_warn_5b": {
-    "name": "ハウン",
-    "text": "先輩は完璧じゃなきゃいけないと思ってる人です。泣くのは負けだと思ってる人です。"
-  },
-  "haeun_warn_5c": {
-    "name": "{name}",
-    "text": "……"
-  },
-  "minsu_d3_5b": {
-    "name": "{name}",
-    "text": "*ミンスがため息をつく。呆れてるんじゃなくて、本気で心配してるため息だ。*"
-  },
-  "minsu_d3_6b": {
-    "name": "ミンス",
-    "text": "前の学校で何があったかは聞かない。でも一つだけ言わせてくれ。"
-  },
-  "after3_reject_for_seo_1": {
-    "name": "{name}",
-    "text": "*廊下でダインとばったり会う。いつものエネルギーがない。*"
-  },
-  "after3_reject_for_seo_2": {
-    "name": "ダイン",
-    "text": "…今日は体育館、来ないでしょ？"
-  },
-  "after3_reject_for_seo_3": {
-    "name": "{name}",
-    "text": "*図書館の横を通る。ユナの席が空いている。メモが一枚残っている。…わかった。三文字。*"
-  },
-  "after3_reject_for_seo_4": {
-    "name": "{name}",
-    "text": "*廊下に出た。感嘆符のないダインの文、三文字だけのユナのメモ。——選択の重さが肩にのしかかる。*"
-  },
-  "after3_reject_for_yuna_1": {
-    "name": "{name}",
-    "text": "*廊下でソヨンがクリップボードを整理している。*"
-  },
-  "after3_reject_for_yuna_2": {
-    "name": "ソヨン",
-    "text": "人気者だね。"
-  },
-  "after3_reject_for_yuna_walk_gym": {
-    "name": "{name}",
-    "text": "*足が体育館の方に向かう。*"
-  },
-  "after3_reject_for_yuna_3": {
-    "name": "{name}",
-    "text": "*ダインが体育館で一人ボールを打っている。*"
-  },
-  "after3_reject_for_yuna_3_dain": {
-    "name": "ダイン",
-    "text": "あ、やっほー！"
-  },
-  "after3_reject_for_yuna_3_react": {
-    "name": "{name}",
-    "text": "*でも顔をそらす。目が赤い。*"
-  },
-  "after3_reject_for_yuna_4": {
-    "name": "{name}",
-    "text": "*体育館を出て廊下に戻った。ソヨンの一言、ダインの赤い目。——帰り道が重い。*"
-  },
-  "after3_reject_for_dain_1": {
-    "name": "{name}",
-    "text": "*ソヨンがクリップボードを整理している。*"
-  },
-  "after3_reject_for_dain_2": {
-    "name": "ソヨン",
-    "text": "生徒会が忙しくて。お昼は別々に食べるよ。"
-  },
-  "after3_reject_for_dain_3": {
-    "name": "{name}",
-    "text": "*図書館にメモがない。ユナのカバンがない。早く帰ったようだ。*"
-  },
-  "after3_reject_for_dain_4": {
-    "name": "{name}",
-    "text": "*ソヨンの練習した笑顔、ユナの空いた席。——残りの二人の席が空いていく感覚。*"
-  },
-  "after3_reject_for_dain_2b": {
-    "name": "{name}",
-    "text": "*ユナのアジトへ向かった。*"
-  },
-  "after3_reject_for_dain_3b": {
-    "name": "{name}",
-    "text": "*廊下に戻った。*"
-  },
-  "haeun_warn_8b": {
-    "name": "{name}",
-    "text": "*校門の前に出た。*"
-  },
-  "after3_seo_5_ins": {
-    "name": "ソヨン",
-    "text": "*慌てて髪を整えながら* ……見た？"
-  },
-  "after3_seo_choice1_react_ins": {
-    "name": "{name}",
-    "text": "*ソヨンが窓の外を見る。表情が見えない。——わざと見せないようにしている。*"
-  },
-  "after3_seo_choice1_react_ins2": {
-    "name": "{name}",
-    "text": "*でも——小指が机の上でかすかに動いている。何かを掴もうとするように。無意識に。*"
-  },
-  "after3_seo_choice1_react_ins3": {
-    "name": "{name}",
-    "text": "*ソヨンが姿勢を正す。生徒会長の顔が戻る。——でも完璧じゃない。笑顔の角度が0.5度ずれている。*"
-  },
-  "after3_seo_choice1_react_ins4": {
-    "name": "ソヨン",
-    "text": "……ありがとう。"
-  },
-  "after3_seo_choice1_react_ins5": {
-    "name": "{name}",
-    "text": "秘密は守るよ。"
-  },
-  "after3_seo_choice1_react_ins6": {
-    "name": "ソヨン",
-    "text": "*書類を整理しながら* 私もあんたの秘密、一つ知ってるよ"
-  },
-  "after3_seo_choice1_react_ins7": {
-    "name": "ソヨン",
-    "text": "お昼に卵焼き食べたとき、目がキラキラしてたよ。——あれは演技できないから。"
-  },
-  "after3_seo_choice1_react_ins8": {
-    "name": "{name}",
-    "text": "*秘密を守ると言ったら、同等の秘密を出してきた。——この人はありがとうより対等が先なんだ。*"
-  },
-  "after3_yuna_5_ins": {
-    "name": "{name}",
-    "text": "*……これ、僕のことじゃないか？*"
-  },
-  "after3_yuna_choice1_2_ins": {
-    "name": "ユナ",
-    "text": "*ノートを胸に抱きしめながら* ……小説は。フィクションだから"
-  },
-  "after3_yuna_choice2_3_ins": {
-    "name": "{name}",
-    "text": "*ユナが二文以上続けて話した。——この人がこれだけ話すのは初めて見た。*"
-  },
-  "after3_dain_5_ins": {
-    "name": "ダイン",
-    "text": "だから大丈夫だって！！大したことないから！！"
-  },
-  "after3_confront_5_ins": {
-    "name": "ダイン",
-    "text": "*力なく笑う。* ……なんだよ。こんなことで感動しちゃダメなのに"
-  },
-  "after3_confront_5_ins2": {
-    "name": "{name}",
-    "text": "*受け入れた。——ダインが誰かの助けを断らなかったのは初めてだ。ビックリマークのない笑顔が、不思議なほど重い。*"
-  },
-  "haeun_warn_5c_ins": {
-    "name": "ソヨン",
-    "text": "あなたが他の子にも同じように笑いかけるの、ちょっと嫌だった。"
-  },
-  "after3_confront_admit_ins": {
-    "name": "{name}",
-    "text": "*ソヨンがうつむく。*"
-  },
-  "after3_confront_admit_4_ins": {
-    "name": "{name}",
-    "text": "*ソヨンが背を向ける。——立ち止まる。*"
-  },
-  "after3_confront_excuse_ins": {
-    "name": "{name}",
-    "text": "*ソヨンの目が冷たい。初めて見る温度だ。*"
-  },
-  "after3_confront_excuse_2_ins": {
-    "name": "{name}",
-    "text": "*ソヨンが一瞬止まる。目が揺れる。*"
-  },
-  "after3_confront_lie_2_ins": {
-    "name": "{name}",
-    "text": "*ソヨンが背を向ける。——止まらない。*"
-  },
-  "after3_confront_lie_2_ins2": {
-    "name": "{name}",
-    "text": "*背筋が真っ直ぐだ。完璧に。——でも拳が握られている。手の甲が白い。*"
-  },
-  "haeun_warn_1_ins": {
-    "name": "{name}",
-    "text": "*ハウンが壁にもたれて立っている。生徒会のブレスレットをいじっている。*"
-  },
-  "haeun_warn_2_ins": {
-    "name": "{name}",
-    "text": "ハウン？なんでここに？"
-  },
-  "haeun_warn_3_ins": {
-    "name": "ハウン",
-    "text": "……先輩が、泣いてました。"
-  },
-  "haeun_warn_3_ins2": {
-    "name": "{name}",
-    "text": "*——え？*"
-  },
-  "haeun_warn_6_ins": {
-    "name": "{name}",
-    "text": "*ハウンがうつむく。*"
-  },
-  "haeun_warn_7_ins": {
-    "name": "{name}",
-    "text": "*ハウンが言葉を止める。踏み込みすぎてはいけないという顔。*"
-  },
-  "haeun_warn_7_ins2": {
-    "name": "ハウン",
-    "text": "……とにかく。先輩に優しくしてあげてください。お願いです。"
-  },
-  "haeun_warn_7_ins3": {
-    "name": "{name}",
-    "text": "*ハウンが振り返って歩いていく。*"
-  },
-  "haeun_warn_7_ins4": {
-    "name": "{name}",
-    "text": "*ソヨンの家が複雑だ。両親。——ソヨンが完璧でなければならなかった理由がそこにあるのか。*"
-  },
-  "minsu_d3_8_ins": {
-    "name": "{name}",
-    "text": "……何を？"
-  },
-  "minsu_d3_3_ins": {
-    "name": "{name}",
-    "text": "*何も言えない。*"
-  },
-  "minsu_d3_4_ins": {
-    "name": "{name}",
-    "text": "……"
-  },
-  "minsu_d3_4_ins2": {
-    "name": "ミンス",
-    "text": "もうあとでじゃない。今だよ。"
-  },
-  "minsu_d3_5_ins": {
-    "name": "{name}",
-    "text": "……そうだよな。"
-  },
-  "minsu_d3_6b_ins": {
-    "name": "{name}",
-    "text": "*ミンスが僕の肩を掴む。*"
-  },
-  "minsu_d3_7_ins": {
-    "name": "{name}",
-    "text": "*断るのも愛。——前の学校で、ソジョンに断る機会すら与えられなかった。僕が何も言えなかったから。ソジョンは何も知らないまま彼氏ができて、僕はスマホのメモ帳に38回目のシミュレーションを残したまま転校した。*"
-  },
-  "minsu_d3_7_ins2": {
-    "name": "{name}",
-    "text": "*あの時ソジョンに断ってもらえていたら——こんなに未練は残らなかったはずだ。*"
-  },
-  "minsu_d3_7_ins3": {
-    "name": "{name}",
-    "text": "*断るのも愛なら、今僕がすべきことは——みんなに好きと言うことじゃなくて、一人にだけ好きと言うことだ。*"
-  },
-  "minsu_d3_10_ins": {
-    "name": "{name}",
-    "text": "*ミンスが先に歩いていく。*"
-  }
+    "after3_start": {
+        "name": "{name}",
+        "text": "*放課後。昼の余韻がまだ残っている。——それでも、どこかには行かないと。*"
+    },
+    "after3_route_check": {
+        "name": "{name}",
+        "text": "*放課後。スマホを確認する。*"
+    },
+    "after3_auto_dain": {
+        "name": "{name}",
+        "text": "*ダインとの約束がある。体育館に向かう。*"
+    },
+    "after3_auto_yuna": {
+        "name": "{name}",
+        "text": "*ユナとの約束がある。図書館別館に向かう。*"
+    },
+    "after3_auto_seo": {
+        "name": "{name}",
+        "text": "*ソヨンとの約束がある。生徒会室に向かう。*"
+    },
+    "after3_multi_choice": {
+        "name": "{name}",
+        "text": "*約束が重なった。——みんな待っている。誰のところに先に行こうか。*",
+        "choices": [
+            "ソヨンのところへ",
+            "ユナのところへ",
+            "ダインのところへ",
+            "もう少し考える"
+        ]
+    },
+    "after3_choice": {
+        "name": "{name}",
+        "text": "*どこへ行こう。*",
+        "choices": [
+            "生徒会室へ",
+            "図書館へ",
+            "体育館へ"
+        ]
+    },
+    "after3_reject_for_seo_1": {
+        "name": "{name}",
+        "text": "*廊下でダインとばったり会う。いつものエネルギーがない。*"
+    },
+    "after3_reject_for_seo_2": {
+        "name": "ダイン",
+        "text": "…今日は体育館、来ないでしょ？"
+    },
+    "after3_reject_for_seo_3": {
+        "name": "{name}",
+        "text": "*図書館の横を通る。ユナの席が空いている。メモが一枚残っている。…わかった。三文字。*"
+    },
+    "after3_reject_for_seo_4": {
+        "name": "{name}",
+        "text": "*廊下に出た。感嘆符のないダインの文、三文字だけのユナのメモ。——選択の重さが肩にのしかかる。*"
+    },
+    "after3_reject_for_yuna_1": {
+        "name": "{name}",
+        "text": "*廊下でソヨンがクリップボードを整理している。*"
+    },
+    "after3_reject_for_yuna_2": {
+        "name": "ソヨン",
+        "text": "人気者だね。"
+    },
+    "after3_reject_for_yuna_walk_gym": {
+        "name": "{name}",
+        "text": "*足が体育館の方に向かう。*"
+    },
+    "after3_reject_for_yuna_3": {
+        "name": "{name}",
+        "text": "*ダインが体育館で一人ボールを打っている。*"
+    },
+    "after3_reject_for_yuna_3_dain": {
+        "name": "ダイン",
+        "text": "あ、やっほー！"
+    },
+    "after3_reject_for_yuna_3_react": {
+        "name": "{name}",
+        "text": "*でも顔をそらす。目が赤い。*"
+    },
+    "after3_reject_for_yuna_4": {
+        "name": "{name}",
+        "text": "*体育館を出て廊下に戻った。ソヨンの一言、ダインの赤い目。——帰り道が重い。*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "{name}",
+        "text": "*ソヨンがクリップボードを整理している。*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "ソヨン",
+        "text": "生徒会が忙しくて。お昼は別々に食べるよ。"
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*ユナのアジトへ向かった。*"
+    },
+    "after3_reject_for_dain_3": {
+        "name": "{name}",
+        "text": "*図書館にメモがない。ユナのカバンがない。早く帰ったようだ。*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*廊下に戻った。*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "{name}",
+        "text": "*ソヨンの練習した笑顔、ユナの空いた席。——残りの二人の席が空いていく感覚。*"
+    },
+    "after3_seo_1": {
+        "name": "{name}",
+        "text": "*生徒会室のドアを開けた。— ソヨンが机に突っ伏している。*"
+    },
+    "after3_seo_2": {
+        "name": "{name}",
+        "text": "*初めて見る姿だ。完璧な生徒会長が— 無防備に突っ伏している。*"
+    },
+    "after3_seo_3": {
+        "name": "{name}",
+        "text": "*ソヨンが気配に顔を上げる。目が疲れて見える。化粧が少し崩れている。*"
+    },
+    "after3_seo_4": {
+        "name": "ソヨン",
+        "text": "......"
+    },
+    "after3_seo_5": {
+        "name": "{name}",
+        "text": "ソヨン？"
+    },
+    "after3_seo_6": {
+        "name": "ソヨン",
+        "text": "...見た？"
+    },
+    "after3_seo_7": {
+        "name": "{name}",
+        "text": "何を見たって。"
+    },
+    "after3_seo_8": {
+        "name": "ソヨン",
+        "text": "こんな姿。— これは秘密だよ。"
+    },
+    "after3_seo_9": {
+        "name": "{name}",
+        "text": "*ソヨンが姿勢を正す。だけど— いつもの完璧な笑顔が戻らない。*"
+    },
+    "after3_seo_choice": {
+        "name": "ソヨン",
+        "text": "今度私がお願いしたら、無条件で聞いて。— それが代償。",
+        "choices": [
+            "完璧じゃなくてもいいんだけど",
+            "秘密は守るよ"
+        ]
+    },
+    "after3_seo_choice1": {
+        "name": "{name}",
+        "text": "*ソヨンが少し止まる。ペンを置く。ゆっくりと。*"
+    },
+    "after3_seo_choice1_react": {
+        "name": "ソヨン",
+        "text": "...そんなこと。簡単に言っちゃダメなのに。"
+    },
+    "after3_seo_choice2": {
+        "name": "{name}",
+        "text": "*目が潤んでいる。— 泣かなかった。まだ。*"
+    },
+    "after3_seo_end": {
+        "name": "{name}",
+        "text": "*その一言が重い。— この人にとって完璧でない姿を見せることがどれほど大きなことか、少し分かった気がする。*"
+    },
+    "after3_seo_end_c2": {
+        "name": "{name}",
+        "text": "*秘密を守るという言葉が——この人にとっては大きな意味を持つようだ。*"
+    },
+    "after3_yuna_1": {
+        "name": "{name}",
+        "text": "*図書館の別館。ユナがいた秘密の読書スペース。— ドアが開いている。*"
+    },
+    "after3_yuna_2": {
+        "name": "{name}",
+        "text": "*入るとユナがいない。代わりに— ソファの上にノートが開いている。手書きがびっしり。*"
+    },
+    "after3_yuna_3": {
+        "name": "{name}",
+        "text": "*小説だ。ユナが書いた小説。— 読んでもいいかな？*"
+    },
+    "after3_yuna_4": {
+        "name": "{name}",
+        "text": "*最初のページ。*"
+    },
+    "after3_yuna_5": {
+        "name": "{name}",
+        "text": "*『ある日、転校生が来た。彼は図書館に来て、何も言わず隣に座った。— 私はそれが嫌じゃなかった。』*"
+    },
+    "after3_yuna_6": {
+        "name": "ユナ",
+        "text": "何してるの。"
+    },
+    "after3_yuna_7": {
+        "name": "{name}",
+        "text": "*後ろからユナの声。振り返るとユナが飲み物を二つ持って立っている。— ノートを見ている僕を見て、固まる。*"
+    },
+    "after3_yuna_8": {
+        "name": "ユナ",
+        "text": "...それ。"
+    },
+    "after3_yuna_8b": {
+        "name": "ユナ",
+        "text": "*素早く近づいてノートを奪いながら* ...許可してない。"
+    },
+    "after3_yuna_9": {
+        "name": "{name}",
+        "text": "*耳。赤い。— ユナが赤くなるのを初めて見た。*"
+    },
+    "after3_yuna_choice": {
+        "name": "{name}",
+        "text": "楽しく読んでたよ。",
+        "choices": [
+            "主人公の名前、変えた方がいいんじゃない",
+            "結末はどうなるの？"
+        ]
+    },
+    "after3_yuna_choice1": {
+        "name": "ユナ",
+        "text": "...主人公の名前なんてない。"
+    },
+    "after3_yuna_choice1_2": {
+        "name": "{name}",
+        "text": "『転校生が図書館に来た』は偶然の一致？"
+    },
+    "after3_yuna_choice1_3": {
+        "name": "ユナ",
+        "text": "...小説は。フィクションだから。"
+    },
+    "after3_yuna_choice1_react": {
+        "name": "{name}",
+        "text": "*『フィクション』と言ったけど、耳が嘘をついている。*"
+    },
+    "after3_yuna_choice2": {
+        "name": "{name}",
+        "text": "*ユナが一瞬止まる。ノートを見下ろす。*"
+    },
+    "after3_yuna_choice2_2": {
+        "name": "ユナ",
+        "text": "...結末はまだ決めてない。"
+    },
+    "after3_yuna_choice2_3": {
+        "name": "ユナ",
+        "text": "...結末を書いたら終わっちゃうから。"
+    },
+    "after3_yuna_choice2_react": {
+        "name": "{name}",
+        "text": "*ユナが二文以上続けて話した。— この人にとってそれは感情の証拠だ。*"
+    },
+    "after3_yuna_end": {
+        "name": "{name}",
+        "text": "*ユナがノートを胸にぎゅっと抱えている。*"
+    },
+    "after3_dain_1": {
+        "name": "{name}",
+        "text": "*体育館。ダインが一人でストレッチしている。軽く走ってみると—*"
+    },
+    "after3_dain_2": {
+        "name": "{name}",
+        "text": "*— 右足を少しひねった。顔をしかめる。*"
+    },
+    "after3_dain_3": {
+        "name": "{name}",
+        "text": "ダイン！"
+    },
+    "after3_dain_4": {
+        "name": "ダイン",
+        "text": "あ！大丈夫！！ちょっとひねっただけ！！"
+    },
+    "after3_dain_5": {
+        "name": "{name}",
+        "text": "大丈夫には見えないけど。"
+    },
+    "after3_dain_6": {
+        "name": "{name}",
+        "text": "*ビックリマークが多すぎる。— 多すぎる。この人は大丈夫じゃない時ほどビックリマークが増えるのか。*"
+    },
+    "after3_dain_choice": {
+        "name": "{name}",
+        "text": "*ダインがベンチに座る。膝をさする。*",
+        "choices": [
+            "隣に座って静かに待つ",
+            "湿布ある？取ってこようか？"
+        ]
+    },
+    "after3_dain_choice1": {
+        "name": "{name}",
+        "text": "*何も言わず隣に座る。ダインがちらっとこちらを見る。*"
+    },
+    "after3_dain_choice1_2": {
+        "name": "ダイン",
+        "text": "...なんで聞かないの？"
+    },
+    "after3_dain_choice1_3": {
+        "name": "{name}",
+        "text": "聞いたら大丈夫って言うだろ。"
+    },
+    "after3_dain_choice1_react": {
+        "name": "{name}",
+        "text": "*ダインが一瞬ためらう。——そして小さく笑う。初めて見る笑顔だ。*"
+    },
+    "after3_dain_choice1_react2": {
+        "name": "ダイン",
+        "text": "...そうだね。大丈夫って言ってた。"
+    },
+    "after3_dain_choice1_react3": {
+        "name": "ダイン",
+        "text": "ありがとう。何も聞かないでくれて。"
+    },
+    "after3_dain_choice2": {
+        "name": "ダイン",
+        "text": "あ！大丈夫だってば！湿布とか要らないから！！"
+    },
+    "after3_dain_end": {
+        "name": "{name}",
+        "text": "*ダインが拳で軽く肩を叩く。— 昨日より弱い。*"
+    },
+    "after3_dain_end_check": {
+        "name": "{name}",
+        "text": "*ダインが軽く肩をパンチしてくる。*"
+    },
+    "after3_dain_end_first": {
+        "name": "{name}",
+        "text": "*ダインが軽く肩をパンチしてくる。—照れ隠しみたいだ。*"
+    },
+    "after3_confront_1": {
+        "name": "{name}",
+        "text": "*放課後の場所から出ると— ソヨンが廊下で待っている。腕を組んで。いつもの余裕がない。*"
+    },
+    "after3_confront_2": {
+        "name": "ソヨン",
+        "text": "{name}。ちょっと。"
+    },
+    "after3_confront_3": {
+        "name": "{name}",
+        "text": "*ソヨンが廊下の端まで連れて行く。誰もいない場所。*"
+    },
+    "after3_confront_4": {
+        "name": "ソヨン",
+        "text": "昼食の時のことなんだけど。"
+    },
+    "after3_confront_5": {
+        "name": "ソヨン",
+        "text": "あなたが他の子にも同じように笑いかけるの、ちょっと嫌だった。"
+    },
+    "after3_confront_6": {
+        "name": "ソヨン",
+        "text": "正直に言って。みんなに週末の約束したの？"
+    },
+    "after3_confront_choice": {
+        "name": "{name}",
+        "text": "*ソヨンがまっすぐ見つめてくる。生徒会長の目じゃない。一人の人間の目だ。*",
+        "choices": [
+            "正直に認める",
+            "時間帯が違うから大丈夫だと思った",
+            "ソヨンだけが本気だよ"
+        ]
+    },
+    "after3_confront_admit": {
+        "name": "ソヨン",
+        "text": "...断れなかったから。"
+    },
+    "after3_confront_admit_2": {
+        "name": "ソヨン",
+        "text": "それが一番残酷な言葉だよ、{name}。断れない優しさが— 偽りの希望を与えるんだから。"
+    },
+    "after3_confront_admit_3": {
+        "name": "{name}",
+        "text": "*ソヨンがお弁当の袋を掴み上げる。手が震えている。*"
+    },
+    "after3_confront_admit_4": {
+        "name": "ソヨン",
+        "text": "私に完璧じゃなくていいって言っておいて——あんたはみんなにとって完璧な人間になろうとしてたんじゃない。それはもっとたちが悪い。"
+    },
+    "after3_confront_admit_5": {
+        "name": "ソヨン",
+        "text": "...今日は屋上、開けておかないから。"
+    },
+    "after3_confront_admit_6": {
+        "name": "{name}",
+        "text": "*背筋が伸びている。完璧に。——でも拳が握られている。手の甲が白い。*"
+    },
+    "after3_confront_excuse": {
+        "name": "ソヨン",
+        "text": "...それが問題だって分からない？"
+    },
+    "after3_confront_excuse_2": {
+        "name": "ソヨン",
+        "text": "何人と約束したかが問題じゃないの。私にとってその約束が何だったかが問題なの。"
+    },
+    "after3_confront_lie_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが一瞬止まる。目が揺れている。*"
+    },
+    "after3_confront_lie": {
+        "name": "ソヨン",
+        "text": "...本当？その言葉...信じていいの？"
+    },
+    "after3_confront_lie_2": {
+        "name": "{name}",
+        "text": "*信じたい目。— 嘘がこんなに重いとは知らなかった。*"
+    },
+    "after3_confront_end": {
+        "name": "{name}",
+        "text": "*ソヨンが消えた廊下に一人で立っている。— 背筋はまっすぐだった。完璧に。でも拳は握りしめられていた。*"
+    },
+    "after3_final": {
+        "name": "{name}",
+        "text": "*放課後が終わった。— 今日見たものが頭から離れない。*"
+    },
+    "haeun_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "haeun_warn_1": {
+        "name": "{name}",
+        "text": "*生徒会室を出た。廊下は人気がない。——誰かが待っていた。*"
+    },
+    "haeun_warn_2": {
+        "name": "ハウン",
+        "text": "……{name}さん。"
+    },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "うん。"
+    },
+    "haeun_warn_3": {
+        "name": "ハウン",
+        "text": "先輩——ソヨン先輩、さっき会いました？"
+    },
+    "haeun_warn_4": {
+        "name": "ハウン",
+        "text": "……先輩が泣いてたんです。生徒会室を出た後、トイレで。——私だけが見ました。一年間、先輩が泣くのは初めてです。"
+    },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "泣いたって？"
+    },
+    "haeun_warn_5": {
+        "name": "{name}",
+        "text": "*ソヨンが泣いた。——僕には完璧じゃない姿を見られたとだけ言ったのに。その後で泣いていた。*"
+    },
+    "haeun_warn_5b": {
+        "name": "ハウン",
+        "text": "先輩は完璧じゃなきゃいけないと思ってる人です。泣くのは負けだと思ってる人です。"
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "……"
+    },
+    "haeun_warn_6": {
+        "name": "ハウン",
+        "text": "あの先輩が泣いたっていうのは——それだけ{name}さんに本気だってことです。"
+    },
+    "haeun_warn_7": {
+        "name": "ハウン",
+        "text": "おせっかいなのは分かってます。でも先輩が心配で。——先輩、今ちょっと家がごたごたしてて。ご両親が……とにかく。先輩に優しくしてあげてください。お願いします。"
+    },
+    "haeun_warn_8": {
+        "name": "{name}",
+        "text": "*ソヨンがトイレで一人で泣いている姿が頭から消えない。完璧にまっすぐな背中、白い拳、そして——誰もいないトイレ。*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*校門の前に出た。*"
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*下校の道。校門でミンスが待っている。*"
+    },
+    "minsu_d3_2": {
+        "name": "ミンス",
+        "text": "見てた。"
+    },
+    "minsu_d3_3": {
+        "name": "ミンス",
+        "text": "昼休み。それとさっきのソヨンの表情も。"
+    },
+    "minsu_d3_4": {
+        "name": "ミンス",
+        "text": "昨日俺がなんて言った？『後で三人とも泣いたらお前のせいだ』って言ったよな。まだ後でじゃないぞ。今だよ。"
+    },
+    "minsu_d3_5": {
+        "name": "ミンス",
+        "text": "なあ、俺だって見てて辛いんだよ。あいつら全員いいやつだ。——お前が悪いやつだからじゃないのは分かってる。断れないからこうなってんだろ。"
+    },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*ミンスがため息をつく。呆れてるんじゃなくて、本気で心配してるため息だ。*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "……そうだな。"
+    },
+    "minsu_d3_6b": {
+        "name": "ミンス",
+        "text": "前の学校で何があったかは聞かない。でも一つだけ言わせてくれ。"
+    },
+    "minsu_d3_7": {
+        "name": "ミンス",
+        "text": "断るのも愛だぞ。ダメな相手にちゃんと断ってやる方が——嘘の希望より百倍マシだ。"
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*断るのも愛。——前の学校でソジョンに断る機会すら与えられなかった。僕が言えなかったから。*"
+    },
+    "minsu_d3_9": {
+        "name": "{name}",
+        "text": "*あの時ソジョンが断ってくれていたら——こんなに引きずらなかったはずだ。断るのも愛なら、今僕がすべきことは——一人にだけ好きだと伝えることだ。*"
+    },
+    "minsu_d3_10": {
+        "name": "ミンス",
+        "text": "明日学校でな。——ちょっと真剣に考えろよ。"
+    },
+    "after3_seo_freetalk": {
+        "name": "ソヨン",
+        "text": "*ソヨンと廊下で向き合っている。ソヨンの表情が複雑だ。*",
+        "context": "3日目の放課後、ソヨンとの対立・和解の直後。二股疑惑で関係に亀裂が入った状態。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
+        "personality": "ソヨンはクールビューティーな生徒会長。独占欲が強く嫉妬時は直接的。今は傷ついているが隠そうとしている。"
+    },
+    "after3_yuna_freetalk": {
+        "name": "ユナ",
+        "text": "*ユナと並んで歩いている。ユナの目が冷たい。*",
+        "context": "3日目の放課後、ユナとの会話の直後。ユナがいつもより感情を見せている。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
+        "personality": "ユナは神秘的な文学少女。普段は落ち着いているが今は感情が揺れている。嫉妬より確認したい気持ち。"
+    },
+    "after3_dain_freetalk": {
+        "name": "ダイン",
+        "text": "*ダインと運動場のベンチに座っている。ダインがいつもより静かだ。*",
+        "context": "3日目の放課後、ダインとの会話の直後。傷ついているが明るいふりをしている。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
+        "personality": "ダインはエネルギッシュな体育系。明るいふりが唯一の防衛機制。感嘆符が減れば本音が出ている。"
+    },
+    "after3_seo_5_ins": {
+        "name": "ソヨン",
+        "text": "*慌てて髪を整えながら* ……見た？"
+    },
+    "after3_seo_choice1_react_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが窓の外を見る。表情が見えない。——わざと見せないようにしている。*"
+    },
+    "after3_seo_choice1_react_ins2": {
+        "name": "{name}",
+        "text": "*でも——小指が机の上でかすかに動いている。何かを掴もうとするように。無意識に。*"
+    },
+    "after3_seo_choice1_react_ins3": {
+        "name": "{name}",
+        "text": "*ソヨンが姿勢を正す。生徒会長の顔が戻る。——でも完璧じゃない。笑顔の角度が0.5度ずれている。*"
+    },
+    "after3_seo_choice1_react_ins4": {
+        "name": "ソヨン",
+        "text": "……ありがとう。"
+    },
+    "after3_seo_choice1_react_ins5": {
+        "name": "{name}",
+        "text": "秘密は守るよ。"
+    },
+    "after3_seo_choice1_react_ins6": {
+        "name": "ソヨン",
+        "text": "*書類を整理しながら* 私もあんたの秘密、一つ知ってるよ"
+    },
+    "after3_seo_choice1_react_ins7": {
+        "name": "ソヨン",
+        "text": "お昼に卵焼き食べたとき、目がキラキラしてたよ。——あれは演技できないから。"
+    },
+    "after3_seo_choice1_react_ins8": {
+        "name": "{name}",
+        "text": "*秘密を守ると言ったら、同等の秘密を出してきた。——この人はありがとうより対等が先なんだ。*"
+    },
+    "after3_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*……これ、僕のことじゃないか？*"
+    },
+    "after3_yuna_choice1_2_ins": {
+        "name": "ユナ",
+        "text": "*ノートを胸に抱きしめながら* ……小説は。フィクションだから"
+    },
+    "after3_yuna_choice2_3_ins": {
+        "name": "{name}",
+        "text": "*ユナが二文以上続けて話した。——この人がこれだけ話すのは初めて見た。*"
+    },
+    "after3_seo_7_ins": {
+        "name": "ソヨン",
+        "text": "完璧じゃない私。"
+    },
+    "after3_dain_5_ins": {
+        "name": "ダイン",
+        "text": "だから大丈夫だって！！大したことないから！！"
+    },
+    "after3_dain_choice2_ins": {
+        "name": "{name}",
+        "text": "*保健室から湿布を持ってきた。ダインに差し出した。*"
+    },
+    "after3_dain_choice2_ins2": {
+        "name": "ダイン",
+        "text": "...あ、本当に持ってきたんだ。"
+    },
+    "after3_dain_choice2_ins3": {
+        "name": "{name}",
+        "text": "大丈夫なんでしょ。"
+    },
+    "after3_dain_choice2_ins4": {
+        "name": "{name}",
+        "text": "*ダインが湿布を受け取って — じっと見つめる。唇を噛む。*"
+    },
+    "after3_dain_choice2_ins5": {
+        "name": "ダイン",
+        "text": "*力なく笑う。* ...何。こんなので感動したらダメなのに。"
+    },
+    "after3_dain_choice2_ins6": {
+        "name": "{name}",
+        "text": "*受け取った。— ダインが誰かの助けを拒まなかったのは初めてだ。感嘆符のない笑顔が不思議と重い。*"
+    },
+    "after3_confront_5_ins": {
+        "name": "ダイン",
+        "text": "*力なく笑う。* ……なんだよ。こんなことで感動しちゃダメなのに"
+    },
+    "after3_confront_5_ins2": {
+        "name": "{name}",
+        "text": "*受け入れた。——ダインが誰かの助けを断らなかったのは初めてだ。ビックリマークのない笑顔が、不思議なほど重い。*"
+    },
+    "haeun_warn_5c_ins": {
+        "name": "ソヨン",
+        "text": "あなたが他の子にも同じように笑いかけるの、ちょっと嫌だった。"
+    },
+    "after3_confront_admit_ins": {
+        "name": "{name}",
+        "text": "*ソヨンがうつむく。*"
+    },
+    "after3_confront_admit_4_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが背を向ける。——立ち止まる。*"
+    },
+    "after3_confront_excuse_ins": {
+        "name": "{name}",
+        "text": "*ソヨンの目が冷たい。初めて見る温度だ。*"
+    },
+    "after3_confront_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが一瞬止まる。目が揺れる。*"
+    },
+    "after3_confront_lie_2_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが背を向ける。——止まらない。*"
+    },
+    "after3_confront_lie_2_ins2": {
+        "name": "{name}",
+        "text": "*背筋が真っ直ぐだ。完璧に。——でも拳が握られている。手の甲が白い。*"
+    },
+    "haeun_warn_1_ins": {
+        "name": "{name}",
+        "text": "*ハウンが壁にもたれて立っている。生徒会のブレスレットをいじっている。*"
+    },
+    "haeun_warn_2_ins": {
+        "name": "{name}",
+        "text": "ハウン？なんでここに？"
+    },
+    "haeun_warn_3_ins": {
+        "name": "ハウン",
+        "text": "……先輩が、泣いてました。"
+    },
+    "haeun_warn_3_ins2": {
+        "name": "{name}",
+        "text": "*——え？*"
+    },
+    "haeun_warn_6_ins": {
+        "name": "{name}",
+        "text": "*ハウンがうつむく。*"
+    },
+    "haeun_warn_7_ins": {
+        "name": "{name}",
+        "text": "*ハウンが言葉を止める。踏み込みすぎてはいけないという顔。*"
+    },
+    "haeun_warn_7_ins2": {
+        "name": "ハウン",
+        "text": "……とにかく。先輩に優しくしてあげてください。お願いです。"
+    },
+    "haeun_warn_7_ins3": {
+        "name": "{name}",
+        "text": "*ハウンが振り返って歩いていく。*"
+    },
+    "haeun_warn_7_ins4": {
+        "name": "{name}",
+        "text": "*ソヨンの家が複雑だ。両親。——ソヨンが完璧でなければならなかった理由がそこにあるのか。*"
+    },
+    "minsu_d3_8_ins": {
+        "name": "{name}",
+        "text": "……何を？"
+    },
+    "minsu_d3_3_ins": {
+        "name": "{name}",
+        "text": "*何も言えない。*"
+    },
+    "minsu_d3_4_ins": {
+        "name": "{name}",
+        "text": "……"
+    },
+    "minsu_d3_4_ins2": {
+        "name": "ミンス",
+        "text": "もうあとでじゃない。今だよ。"
+    },
+    "minsu_d3_5_ins": {
+        "name": "{name}",
+        "text": "……そうだよな。"
+    },
+    "minsu_d3_6b_ins": {
+        "name": "{name}",
+        "text": "*ミンスが僕の肩を掴む。*"
+    },
+    "minsu_d3_7_ins": {
+        "name": "{name}",
+        "text": "*断るのも愛。——前の学校で、ソジョンに断る機会すら与えられなかった。僕が何も言えなかったから。ソジョンは何も知らないまま彼氏ができて、僕はスマホのメモ帳に38回目のシミュレーションを残したまま転校した。*"
+    },
+    "minsu_d3_7_ins2": {
+        "name": "{name}",
+        "text": "*あの時ソジョンに断ってもらえていたら——こんなに未練は残らなかったはずだ。*"
+    },
+    "minsu_d3_7_ins3": {
+        "name": "{name}",
+        "text": "*断るのも愛なら、今僕がすべきことは——みんなに好きと言うことじゃなくて、一人にだけ好きと言うことだ。*"
+    },
+    "minsu_d3_10_ins": {
+        "name": "{name}",
+        "text": "*ミンスが先に歩いていく。*"
+    }
 }
