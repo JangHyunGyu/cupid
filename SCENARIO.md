@@ -743,7 +743,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_3`
 
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 **{name}**: *교탁 앞에 담임선생님이 서 있다. 30대 초반. 가디건 단추가 하나 풀려 있다. 표정은 무심한데 — 눈은 학생 하나하나를 훑고 있다.*
 
 ---
@@ -881,7 +881,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_7`
 
-- 캐릭터: `없음`
+- 캐릭터: `dain_normal.png`
 **{name}**: *그리고 유나가 가방만 들고 조용히 교실을 빠져나간다. 도서관 방향.*
 
 ---
@@ -4442,7 +4442,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_break_1`
 
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 **{name}**: *교실 문 앞에 담임이 서 있다. 출석부를 들고, 문 쪽을 힐끗 보다가 — 나와 눈이 마주친다.*
 
 ---
@@ -7534,7 +7534,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_15_ins2`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_normal.png` @ 0.35
 **다인**: 내일도 내기하자!! 종목 바꿔서!!
 
 ---
@@ -7543,7 +7543,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_15_ins3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_normal.png` @ 0.35
 **서연**: 내일 점심에 옥상 열어놓을게. 와
 
 ---
@@ -8148,7 +8148,7 @@
 - 배경: `room_my.png`
 - 다음: `night2_hidden_nurse_2`
 
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png` @ 0.35
 **{name}**: *건강 관리 앱 알림. '보건실 기록: {name} — 팔꿈치 찰과상 (경미). 메모: 밴드 내일 아침에 갈아줄게. 밴드 갈아주는 건 의료 행위니까 거부권 없음 ^^'*
 
 ---
@@ -8720,7 +8720,7 @@
 ---
 
 ### `morning3_react_yuna_1`
-- 배경: `school_hallway.png`
+- 배경: `room_school.png`
 - 다음: `morning3_react_yuna_1_ins`
 
 - 캐릭터: `seyoun_pout.png`
@@ -8909,7 +8909,7 @@
 - 배경: `room_school.png`
 - 다음: `morning3_date_dain_decline_inner_2`
 
-- 캐릭터: `없음`
+- 캐릭터: `dain_laugh.png`
 **{name}**: *밝게 웃으며 돌아갔다. — 그때는 몰랐다. 다인이 그 손가락 두드리는 걸 멈추고, 주머니에 손을 넣은 걸. 용기 내서 물어본 거였다는 걸.*
 
 ---
@@ -8918,7 +8918,7 @@
 - 배경: `room_school.png`
 - 다음: `morning3_date_yuna_1`
 
-- 캐릭터: `없음`
+- 캐릭터: `dain_laugh.png`
 **{name}**: *눈치 빠르다고 자부하면서. — 정작 중요한 순간에 틀린다.*
 
 ---
@@ -9430,7 +9430,7 @@
 ---
 
 ### `morning3_react_yuna_1_ins`
-- 배경: `school_hallway.png`
+- 배경: `room_school.png`
 - 다음: `morning3_react_yuna_1b`
 
 - 캐릭터: `seyoun_pout.png`
@@ -11225,7 +11225,7 @@
 - 배경: `gym.png`
 - 다음: `after3_reject_for_yuna_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `없음`
 **{name}**: *체육관 쪽으로 발길이 향한다.*
 
 ---
@@ -11674,7 +11674,7 @@
 - 배경: `dain_hurt_event1.png`
 - 다음: `after3_dain_4`
 
-- 캐릭터: `없음`
+- 캐릭터: `dain_sweat.png`
 **{name}**: 다인!
 
 ---
@@ -12525,7 +12525,7 @@
 - 배경: `school_hallway.png`
 - 다음: `haeun_warn_2`
 
-- 캐릭터: `없음`
+- 캐릭터: `haeun_normal.png`
 **{name}**: *하은이 벽에 기대어 서 있다. 학생회 팔찌를 만지작거리고 있다.*
 
 ---
@@ -13856,7 +13856,7 @@
 - 배경: `store.png`
 - 다음: `hidden_nurse_d4_meal_1`
 
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 **{name}**: *학교 앞 분식집으로 향했다.*
 
 ---
@@ -16479,7 +16479,7 @@
 - 배경: `room_school.png`
 - 다음: `confess_dain_no_4_ins15`
 
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 **{name}**: *원고를 받는다. 읽기 시작한다. — 담임이 창밖을 본다. 아침 햇살. 손끝이 미세하게 떨린다.*
 
 ---
@@ -16488,7 +16488,7 @@
 - 배경: `room_school.png`
 - 다음: `confess_dain_no_4_ins16`
 
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 **{name}**: *읽는 동안 담임은 한 마디도 하지 않는다. 창밖만 보고 있다. — 근데 유리창에 비친 눈이 나를 향해 있다.*
 
 ---
@@ -16497,7 +16497,7 @@
 - 배경: `room_school.png`
 - 다음: `confess_dain_no_4_ins17`
 
-- 캐릭터: `없음`
+- 캐릭터: `teacher_normal.png`
 **{name}**: *마지막 장. — 한 문장으로 끝난다. 그 문장을 읽는 순간, 이 원고가 왜 7년 걸렸는지 알 것 같다.*
 
 ---
@@ -16569,7 +16569,7 @@
 - 배경: `nurse_room.png`
 - 다음: `confess_dain_no_4_ins25`
 
-- 캐릭터: `없음`
+- 캐릭터: `nurse_normal.png`
 **{name}**: *보건실 문을 열었다. 보건선생님이 의자에 앉아 있다. 흰 가운 차림. — 근데 평소와 다르다. 장난기가 없다.*
 
 ---
@@ -17293,7 +17293,7 @@
 ---
 
 ### `wall_seo_glimpse_2`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 다음: `wall_seo_glimpse_3`
 
 - 캐릭터: `dain_sad.png`
@@ -17302,7 +17302,7 @@
 ---
 
 ### `wall_seo_glimpse_3`
-- 배경: `gym.png`
+- 배경: `school_back.png`
 - 다음: `wall_seo_glimpse_4`
 
 - 캐릭터: `dain_sad.png`
@@ -17644,7 +17644,7 @@
 - 배경: `dain_depression_event1.png`
 - 다음: `wall_dain_cry_2`
 
-- 캐릭터: `없음`
+- 캐릭터: `dain_sad.png`
 **{name}**: *다인이 코트 위에 주저앉았다. 배구공을 껴안고 울기 시작했다.*
 
 ---
@@ -17836,7 +17836,7 @@
 ---
 
 ### `wall_dain_skin60_1`
-- 배경: `park.png`
+- 배경: `school_back.png`
 - 다음: `wall_dain_skin60_2`
 
 - 캐릭터: `dain_shy.png`
@@ -18794,7 +18794,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_dain_glimpse_4_ins2`
 
-- 캐릭터: `yuna_sad.png`
+- 캐릭터: `yuna_sad.png` @ 0.35
 **{name}**: *밤 10시. 유나에게서 메시지.*
 
 ---
@@ -18803,7 +18803,7 @@
 - 배경: `school_back.png`
 - 다음: `day4_final`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_normal.png` @ 0.35
 **유나**: *학교 후문. 지금 와.*
 
 ---
@@ -18947,7 +18947,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_yuna_glimpse_3_ins5`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `teacher_normal.png` @ 0.35
 **담임선생님**: *메시지* 원고 마감이 가까운데.
 
 ---
@@ -18956,7 +18956,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_yuna_glimpse_3_ins6`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `teacher_normal.png` @ 0.35
 **담임선생님**: *메시지* ...첫 번째 독자한테 보여주고 싶은 부분이 있어.
 
 ---
@@ -18965,7 +18965,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_yuna_glimpse_3_ins7`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `teacher_normal.png` @ 0.35
 **담임선생님**: *메시지* 내일 시간 되면 교무실로 와. — 수업 끝나고.
 
 ---
@@ -19019,7 +19019,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_yuna_glimpse_3_ins13`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_normal.png` @ 0.35
 **보건선생님**: *메시지* 오늘 보건실에서 네가 한 말.
 
 ---
@@ -19028,7 +19028,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_yuna_glimpse_3_ins14`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_normal.png` @ 0.35
 **보건선생님**: *메시지* ...밤에 자꾸 떠올라.
 
 ---
@@ -19055,7 +19055,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_yuna_glimpse_3_ins17`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_normal.png` @ 0.35
 **보건선생님**: *메시지* 아 이상한 뜻 아니야. 그냥 인상 깊었다는 거지.
 
 ---
@@ -19064,7 +19064,7 @@
 - 배경: `school_back.png`
 - 다음: `wall_yuna_glimpse_3_ins18`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_normal.png` @ 0.35
 **보건선생님**: *메시지* ...자.
 
 ---

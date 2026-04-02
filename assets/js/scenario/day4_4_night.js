@@ -287,12 +287,12 @@ const _scenes = {
         "next": "wall_seo_glimpse_1_ins"
     },
     "wall_seo_glimpse_2": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "wall_seo_glimpse_3"
     },
     "wall_seo_glimpse_3": {
-        "background": "assets/images/background/gym.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "wall_seo_glimpse_4"
     },
@@ -484,7 +484,7 @@ const _scenes = {
     },
     "wall_dain_cry_1": {
         "background": "assets/images/background/dain_depression_event1.png",
-        "character": null,
+        "character": "assets/images/characters/dain_sad.png",
         "next": "wall_dain_cry_2"
     },
     "wall_dain_cry_2": {
@@ -591,7 +591,7 @@ const _scenes = {
         "next": "wall_dain_glimpse_1"
     },
     "wall_dain_skin60_1": {
-        "background": "assets/images/background/park.png",
+        "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
         "next": "wall_dain_skin60_2"
     },
@@ -1129,12 +1129,12 @@ const _scenes = {
     },
     "wall_dain_glimpse_4_ins": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_sad.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_sad.png","opacity":0.35}},
         "next": "wall_dain_glimpse_4_ins2"
     },
     "wall_dain_glimpse_4_ins2": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "day4_final"
     },
     "wall_yuna_9_ins": {
@@ -1214,17 +1214,17 @@ const _scenes = {
     },
     "wall_yuna_glimpse_3_ins4": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "wall_yuna_glimpse_3_ins5"
     },
     "wall_yuna_glimpse_3_ins5": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "wall_yuna_glimpse_3_ins6"
     },
     "wall_yuna_glimpse_3_ins6": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "wall_yuna_glimpse_3_ins7"
     },
     "wall_yuna_glimpse_3_ins7": {
@@ -1254,12 +1254,12 @@ const _scenes = {
     },
     "wall_yuna_glimpse_3_ins12": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/nurse_normal.png","opacity":0.35}},
         "next": "wall_yuna_glimpse_3_ins13"
     },
     "wall_yuna_glimpse_3_ins13": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/nurse_normal.png","opacity":0.35}},
         "next": "wall_yuna_glimpse_3_ins14"
     },
     "wall_yuna_glimpse_3_ins14": {
@@ -1274,12 +1274,12 @@ const _scenes = {
     },
     "wall_yuna_glimpse_3_ins16": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/nurse_normal.png","opacity":0.35}},
         "next": "wall_yuna_glimpse_3_ins17"
     },
     "wall_yuna_glimpse_3_ins17": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/nurse_normal.png","opacity":0.35}},
         "next": "wall_yuna_glimpse_3_ins18"
     },
     "wall_yuna_glimpse_3_ins18": {

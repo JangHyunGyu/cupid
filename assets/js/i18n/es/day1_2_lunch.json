@@ -222,7 +222,7 @@
     },
     "lunch_dain_7": {
         "name": "{name}",
-        "text": "...Vale, vamos."
+        "text": "...Está bien, vamos."
     },
     "lunch_dain_8": {
         "name": "{name}",
@@ -508,7 +508,7 @@
     },
     "lunch_dain_12_ins": {
         "name": "Dain",
-        "text": "¡¡Aaagh, vale!! ¡¡Dos panes de soboro!! ¡¡Señora!!"
+        "text": "¡¡Aaagh, ya!! ¡¡Dos panes de soboro!! ¡¡Señora!!"
     },
     "lunch_yuna_5_ins": {
         "name": "{name}",

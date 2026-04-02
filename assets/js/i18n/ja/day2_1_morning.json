@@ -9,23 +9,23 @@
   },
   "morning2_dain_1": {
     "name": "ダイン",
-    "text": "「来た？！おはよう！！」"
+    "text": "来た？！おはよう！！"
   },
   "morning2_dain_2": {
     "name": "{name}",
-    "text": "「……背骨が折れるかと思った」"
+    "text": "……背骨が折れるかと思った"
   },
   "morning2_dain_3": {
     "name": "ダイン",
-    "text": "「ははっ、この程度で？！体力つけなよ！」"
+    "text": "ははっ、この程度で？！体力つけなよ！"
   },
   "morning2_dain_4": {
     "name": "{name}",
-    "text": "「朝からエネルギー過剰じゃない？」"
+    "text": "朝からエネルギー過剰じゃない？"
   },
   "morning2_dain_5": {
     "name": "ダイン",
-    "text": "「これが普通！あんたが足りないの！」"
+    "text": "これが普通！あんたが足りないの！"
   },
   "morning2_dain_6": {
     "name": "{name}",
@@ -49,7 +49,7 @@
   },
   "morning2_seo_2": {
     "name": "ソヨン",
-    "text": "「昨日はよく眠れた？」"
+    "text": "昨日はよく眠れた？"
   },
   "morning2_seo_3": {
     "name": "{name}",
@@ -57,11 +57,11 @@
   },
   "morning2_seo_4": {
     "name": "{name}",
-    "text": "「生徒会長が教室まで挨拶しに来るの？」"
+    "text": "生徒会長が教室まで挨拶しに来るの？"
   },
   "morning2_seo_5": {
     "name": "ソヨン",
-    "text": "「通りかかっただけ。——今日も楽しい一日を」"
+    "text": "通りかかっただけ。——今日も楽しい一日を"
   },
   "morning2_minsu_1": {
     "name": "{name}",
@@ -77,15 +77,15 @@
   },
   "morning2_minsu_3": {
     "name": "ミンス",
-    "text": "「おい、転校二日目で生徒会長が挨拶に来るのか？俺1年通っても目も合わせてくれなかったのに」"
+    "text": "おい、転校二日目で生徒会長が挨拶に来るのか？俺1年通っても目も合わせてくれなかったのに"
   },
   "morning2_dain_claim_1": {
     "name": "{name}",
-    "text": "「人気がないんじゃない？」"
+    "text": "人気がないんじゃない？"
   },
   "morning2_dain_claim_2": {
     "name": "ミンス",
-    "text": "「……それは合ってるけど、そこが問題じゃないだろ」"
+    "text": "……それは合ってるけど、そこが問題じゃないだろ"
   },
   "morning2_dain_claim_3": {
     "name": "{name}",
@@ -93,15 +93,15 @@
   },
   "morning2_dain_claim_4": {
     "name": "ダイン",
-    "text": "「会長も転校生に興味あるの？人気者じゃん！」"
+    "text": "会長も転校生に興味あるの？人気者じゃん！"
   },
   "morning2_dain_claim_5": {
     "name": "{name}",
-    "text": "「『うちの』転校生？」"
+    "text": "『うちの』転校生？"
   },
   "morning2_dain_claim_6": {
     "name": "ダイン",
-    "text": "「あたしが先に見つけたんだから、うちの転校生！先取りだよ先取り！」"
+    "text": "あたしが先に見つけたんだから、うちの転校生！先取りだよ先取り！"
   },
   "morning2_break_transition": {
     "name": "{name}",
@@ -117,7 +117,7 @@
   },
   "morning2_seo_dust_2": {
     "name": "ソヨン",
-    "text": "「ちょっと」"
+    "text": "ちょっと"
   },
   "morning2_seo_dust_3": {
     "name": "{name}",
@@ -125,15 +125,15 @@
   },
   "morning2_seo_dust_4": {
     "name": "ソヨン",
-    "text": "「服に何かついてた」"
+    "text": "服に何かついてた"
   },
   "morning2_seo_dust_5": {
     "name": "{name}",
-    "text": "「……」"
+    "text": "……"
   },
   "morning2_seo_dust_6": {
     "name": "ソヨン",
-    "text": "「何？ホコリじゃん」"
+    "text": "何？ホコリじゃん"
   },
   "morning2_dain_react_1": {
     "name": "{name}",
@@ -145,15 +145,15 @@
   },
   "morning2_dain_react_3": {
     "name": "ダイン",
-    "text": "「ねえ！今の何？！肩触ったの？！」"
+    "text": "ねえ！今の何？！肩触ったの？！"
   },
   "morning2_dain_react_4": {
     "name": "{name}",
-    "text": "「ホコリを払ってくれたんだよ」"
+    "text": "ホコリを払ってくれたんだよ"
   },
   "morning2_dain_react_5": {
     "name": "ダイン",
-    "text": "「ホコリ……本当にホコリあったの？！」"
+    "text": "ホコリ……本当にホコリあったの？！"
   },
   "morning2_dain_react_6": {
     "name": "{name}",
@@ -165,27 +165,27 @@
   },
   "morning2_haeun_2": {
     "name": "ハウン",
-    "text": "「あの、転校生の方ですよね？生徒会副会長のハウンです」"
+    "text": "あの、転校生の方ですよね？生徒会副会長のハウンです"
   },
   "morning2_haeun_3": {
     "name": "{name}",
-    "text": "「あ、はい」"
+    "text": "あ、はい"
   },
   "morning2_haeun_4": {
     "name": "ハウン",
-    "text": "「会長が……つまりソヨン先輩が、最近ちょっと変わった気がして」"
+    "text": "会長が……つまりソヨン先輩が、最近ちょっと変わった気がして"
   },
   "morning2_haeun_5": {
     "name": "{name}",
-    "text": "「変わったって？」"
+    "text": "変わったって？"
   },
   "morning2_haeun_6": {
     "name": "ハウン",
-    "text": "「元々ああいう方じゃないんです。他の生徒に自分から近づくなんて……私が1年見てきて初めてです」"
+    "text": "元々ああいう方じゃないんです。他の生徒に自分から近づくなんて……私が1年見てきて初めてです"
   },
   "morning2_haeun_6b": {
     "name": "ハウン",
-    "text": "「だからお願いなんですけど。——会長を揺さぶらないでください。あの人、今やっとバランスを保ってるところなんです。」"
+    "text": "だからお願いなんですけど。——会長を揺さぶらないでください。あの人、今やっとバランスを保ってるところなんです。"
   },
   "morning2_haeun_6c": {
     "name": "{name}",
@@ -201,7 +201,7 @@
   },
   "hidden_homeroom_d2_1": {
     "name": "担任先生",
-    "text": "「あ、{name}。ちょっと職員室に。」"
+    "text": "あ、{name}。ちょっと職員室に。"
   },
   "hidden_homeroom_d2_2": {
     "name": "{name}",
@@ -213,7 +213,7 @@
   },
   "hidden_homeroom_d2_3": {
     "name": "担任先生",
-    "text": "「前の学校の成績見たんだけど、国語が良かったね。読むのが好き？」"
+    "text": "前の学校の成績見たんだけど、国語が良かったね。読むのが好き？"
   },
   "hidden_homeroom_d2_choice1": {
     "name": "{name}",
@@ -225,15 +225,15 @@
   },
   "hidden_homeroom_d2_choice1_a": {
     "name": "担任先生",
-    "text": "*少し間を置いて* 「...色々。主に — 小説。」"
+    "text": "*少し間を置いて* ...色々。主に — 小説。"
   },
   "hidden_homeroom_d2_choice1_b": {
     "name": "担任先生",
-    "text": "「...そう。まあ、聞いてみただけ。」"
+    "text": "...そう。まあ、聞いてみただけ。"
   },
   "hidden_homeroom_d2_5": {
     "name": "担任先生",
-    "text": "「...そうか。まあ、ただ聞いてみただけだ。」"
+    "text": "...そうか。まあ、ただ聞いてみただけだ。"
   },
   "hidden_homeroom_d2_6": {
     "name": "{name}",
@@ -241,19 +241,19 @@
   },
   "hidden_homeroom_d2_7": {
     "name": "担任先生",
-    "text": "「適応はどう？昨日より良くなった？」"
+    "text": "適応はどう？昨日より良くなった？"
   },
   "hidden_homeroom_d2_8": {
     "name": "担任先生",
-    "text": "「ダインはうるさいだろ？——あれが普通なんだ。でも悪い子じゃない。どちらかというと心配なタイプだ。」"
+    "text": "ダインはうるさいだろ？——あれが普通なんだ。でも悪い子じゃない。どちらかというと心配なタイプだ。"
   },
   "hidden_homeroom_d2_9": {
     "name": "{name}",
-    "text": "「ありがとうございます、先生。」"
+    "text": "ありがとうございます、先生。"
   },
   "hidden_homeroom_d2_10": {
     "name": "担任先生",
-    "text": "「まあ、先生が生徒を心配するのは当たり前だから。業務だよ、業務。」"
+    "text": "まあ、先生が生徒を心配するのは当たり前だから。業務だよ、業務。"
   },
   "hidden_homeroom_d2_choice2": {
     "name": "{name}",
@@ -265,15 +265,15 @@
   },
   "hidden_homeroom_d2_choice2_a": {
     "name": "担任先生",
-    "text": "*コーヒーカップで口を隠しながら* 「...表情管理失敗。分かった、行って。」"
+    "text": "*コーヒーカップで口を隠しながら* ...表情管理失敗。分かった、行って。"
   },
   "hidden_homeroom_d2_choice2_b": {
     "name": "担任先生",
-    "text": "「当然のことだよ。行きな。」"
+    "text": "当然のことだよ。行きな。"
   },
   "hidden_homeroom_d2_11": {
     "name": "担任先生",
-    "text": "「...転校生だからって特別扱いしたら他の子がなんて言うか。」"
+    "text": "...転校生だからって特別扱いしたら他の子がなんて言うか。"
   },
   "hidden_homeroom_d2_12": {
     "name": "{name}",
@@ -281,7 +281,7 @@
   },
   "morning2_greet_seo_1": {
     "name": "ソヨン",
-    "text": "「昨日屋上で言ったこと、まだ有効？」"
+    "text": "昨日屋上で言ったこと、まだ有効？"
   },
   "morning2_greet_seo_2": {
     "name": "{name}",
@@ -297,7 +297,7 @@
   },
   "morning2_greet_dain_1": {
     "name": "ダイン",
-    "text": "「ねえ！昨日楽しかったよね、今日も一緒に何かしよ！」"
+    "text": "ねえ！昨日楽しかったよね、今日も一緒に何かしよ！"
   },
   "morning2_greet_dain_2": {
     "name": "{name}",
@@ -309,7 +309,7 @@
   },
   "morning2_greet_dain_others_seo": {
     "name": "ソヨン",
-    "text": "「元気だね。」"
+    "text": "元気だね。"
   },
   "morning2_greet_dain_others_yuna": {
     "name": "{name}",
@@ -321,15 +321,15 @@
   },
   "morning2_greet_yuna_1": {
     "name": "{name}",
-    "text": "*座ろうとしたら——机の上に折りたたんだメモ。「...昨日、ありがとう。」*"
+    "text": "*座ろうとしたら——机の上に折りたたんだメモ。...昨日、ありがとう。*"
   },
   "morning2_greet_yuna_2": {
     "name": "{name}",
-    "text": "*ユナの字。昨日より一文長くなった。——裏に小さく「昼休みに図書館別館で。」*"
+    "text": "*ユナの字。昨日より一文長くなった。——裏に小さく昼休みに図書館別館で。*"
   },
   "morning2_greet_yuna_others": {
     "name": "ソヨン",
-    "text": "「朝から手紙？」"
+    "text": "朝から手紙？"
   },
   "morning2_greet_yuna_others_seo": {
     "name": "{name}",
@@ -337,7 +337,7 @@
   },
   "morning2_greet_yuna_others_dain": {
     "name": "ダイン",
-    "text": "「何それ！見せて！」"
+    "text": "何それ！見せて！"
   },
   "morning2_greet_yuna_others_2": {
     "name": "{name}",
@@ -353,11 +353,11 @@
   },
   "hidden_homeroom_d2_1_ins": {
     "name": "{name}",
-    "text": "「何か問題でも…？」"
+    "text": "何か問題でも…？"
   },
   "hidden_homeroom_d2_1_ins2": {
     "name": "担任先生",
-    "text": "「いや、転校書類の確認。——事務的なことだよ」"
+    "text": "いや、転校書類の確認。——事務的なことだよ"
   },
   "hidden_homeroom_d2_2_ins": {
     "name": "{name}",
@@ -365,7 +365,7 @@
   },
   "hidden_homeroom_d2_3_ins": {
     "name": "担任先生",
-    "text": "*少し躊躇して* 「…いろいろ。主に——小説かな」"
+    "text": "*少し躊躇して* …いろいろ。主に——小説かな"
   },
   "hidden_homeroom_d2_3_ins2": {
     "name": "{name}",
@@ -373,15 +373,15 @@
   },
   "hidden_homeroom_d2_3_ins3": {
     "name": "担任先生",
-    "text": "「読むこと？——書くことは？」"
+    "text": "読むこと？——書くことは？"
   },
   "hidden_homeroom_d2_3_ins4": {
     "name": "{name}",
-    "text": "*変な質問だ。成績の話から、なぜ急に「書くこと」を聞くんだろう？*"
+    "text": "*変な質問だ。成績の話から、なぜ急に書くことを聞くんだろう？*"
   },
   "hidden_homeroom_d2_3_ins5": {
     "name": "{name}",
-    "text": "「書くのはよく分からないです。」"
+    "text": "書くのはよく分からないです。"
   },
   "hidden_homeroom_d2_3_ins6": {
     "name": "{name}",
@@ -393,23 +393,23 @@
   },
   "hidden_homeroom_d2_7_ins": {
     "name": "{name}",
-    "text": "「だいぶ。クラスのみんなが良くて。」"
+    "text": "だいぶ。クラスのみんなが良くて。"
   },
   "hidden_homeroom_d2_8_ins": {
     "name": "{name}",
-    "text": "「先生がご存じなんですから、ダインは結構有名なんですね。」"
+    "text": "先生がご存じなんですから、ダインは結構有名なんですね。"
   },
   "hidden_homeroom_d2_8_ins2": {
     "name": "担任先生",
-    "text": "「有名っていうか…」 *コーヒーを一口飲みながら* 「心配な方だね」"
+    "text": "有名っていうか… *コーヒーを一口飲みながら* 心配な方だね"
   },
   "hidden_homeroom_d2_8_ins3": {
     "name": "{name}",
-    "text": "*「心配な方」。——担任がダインを心配している。ダインの膝のことを知っているのだろうか。*"
+    "text": "*心配な方。——担任がダインを心配している。ダインの膝のことを知っているのだろうか。*"
   },
   "hidden_homeroom_d2_8_ins4": {
     "name": "担任先生",
-    "text": "*コーヒーを置きながら* 「…まあとにかく、心配することはないよ。ちゃんとやれてるじゃない」"
+    "text": "*コーヒーを置きながら* …まあとにかく、心配することはないよ。ちゃんとやれてるじゃない"
   },
   "hidden_homeroom_d2_8_ins5": {
     "name": "{name}",
@@ -417,7 +417,7 @@
   },
   "hidden_homeroom_d2_11_ins": {
     "name": "{name}",
-    "text": "*誰も聞いていないのに独り言みたいに。——この人は自分の関心を「業務」と包装するのが癖らしい。*"
+    "text": "*誰も聞いていないのに独り言みたいに。——この人は自分の関心を業務と包装するのが癖らしい。*"
   },
   "morning2_seo_dust_1_ins": {
     "name": "{name}",

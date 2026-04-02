@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Après les cours. Je range mon sac.*"
+        "text": "*Après les cours. L'écho du déjeuner persiste encore. — Mais il faut bien aller quelque part.*"
     },
     "after3_route_check": {
         "name": "{name}",

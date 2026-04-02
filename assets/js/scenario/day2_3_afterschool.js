@@ -927,12 +927,12 @@ const _scenes = {
     },
     "minsu_warn_15_ins": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "minsu_warn_15_ins2"
     },
     "minsu_warn_15_ins2": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "next": "minsu_warn_15_ins3"
     },
     "minsu_warn_15_ins3": {
