@@ -184,17 +184,17 @@ const _scenes = {
     },
     "night3_nightmare_3": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "night3_nightmare_3_ins"
     },
     "night3_nightmare_4": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "night3_nightmare_4_ins"
     },
     "night3_nightmare_5": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "night3_nightmare_6"
     },
     "night3_nightmare_6": {

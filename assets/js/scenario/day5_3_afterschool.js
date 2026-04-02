@@ -116,7 +116,7 @@ const _scenes = {
     },
     "after5_farewell_yuna_5b": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": null,
         "next": "after5_farewell_dain_check"
     },
     "after5_farewell_dain_check": {
@@ -157,7 +157,7 @@ const _scenes = {
     },
     "after5_farewell_dain_5b": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": null,
         "next": "after5_sunset_1"
     },
     "after5_sunset_1": {

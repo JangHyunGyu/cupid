@@ -1069,22 +1069,22 @@ const _scenes = {
     },
     "wall_dain_16_ins": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "wall_dain_17"
     },
     "wall_dain_18_ins": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "wall_dain_18_ins2"
     },
     "wall_dain_18_ins2": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "wall_dain_18_ins3"
     },
     "wall_dain_18_ins3": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "wall_dain_19"
     },
     "wall_dain_19_ins": {
@@ -1094,7 +1094,7 @@ const _scenes = {
     },
     "wall_dain_20_ins": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "wall_dain_21"
     },
     "wall_dain_22_ins": {

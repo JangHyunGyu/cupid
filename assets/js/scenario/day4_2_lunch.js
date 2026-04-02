@@ -399,7 +399,7 @@ Object.assign(SCENARIO[4], {
     },
     "date_seo_pretty_high_ins": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "date_seo_pretty_high_2"
     },
     "date_seo_pretty_high_3_ins": {

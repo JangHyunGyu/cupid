@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "그 순간의 네가 진짜 서연인 것 같아서. 그 서연이 좋아해."
+        "text": "그때 네가 진짜 서연이었어. 나는 그 서연이 좋아."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -317,7 +317,7 @@
     },
     "confess_dain_yes_10_ins": {
         "name": "{name}",
-        "text": "*'엄청'. — 다인의 감정 표현은 단순하다. 근데 그 단순함이 진심의 증거다.*"
+        "text": "*'엄청'. — 다인은 늘 이렇다. 짧고 솔직하다. 그래서 믿긴다.*"
     },
     "confess_dain_no_4_ins": {
         "name": "{name}",
