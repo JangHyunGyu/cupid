@@ -534,7 +534,10 @@ const _scenes = {
     "confess_dain_no_4_ins22": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "next": "confess_dain_no_4_ins23"
+        "branches": [
+            { "condition": "nurse_day4_afterschool", "next": "confess_dain_no_4_nurse_skip" },
+            { "next": "confess_dain_no_4_ins23" }
+        ]
     },
     "confess_dain_no_4_ins23": {
         "background": "assets/images/background/school_hallway.png",
@@ -644,7 +647,12 @@ const _scenes = {
     "confess_dain_no_4_ins44": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
+        "next": "confess_dain_no_4_nurse_skip": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": null,
         "next": "confess_dain_no_4_ins45"
+    },
+    "confess_dain_no_4_ins45"
     },
     "confess_dain_no_4_ins45": {
         "background": "assets/images/background/room_my.png",

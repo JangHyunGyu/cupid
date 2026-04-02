@@ -289,11 +289,11 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "담임선생님",
-        "text": "*잠깐 멈칫하며* ...여러 가지. 주로 — 소설."
+        "text": "...추리소설. 범인 잡는 거 말고 — 동기를 추적하는 쪽."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "담임선생님",
-        "text": "...그래. 뭐, 그냥 물어본 거야."
+        "text": "*살짝 웃으며* 그래? ...좋은 취미네."
     },
     "hidden_homeroom_d2_5": {
         "name": "담임선생님",
@@ -333,7 +333,7 @@
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "담임선생님",
-        "text": "뭐, 선생님이 학생 걱정하는 건 당연한 거니까. 업무야, 업무."
+        "text": "*손을 저으며* 됐다 됐다, 쑥스럽게. ...가 봐."
     },
     "hidden_homeroom_d2_11": {
         "name": "담임선생님",

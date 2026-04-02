@@ -423,7 +423,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "다인",
-        "text": "신— 신경 쓰이긴! 뭘! *소보로를 크게 한 입 베어 물며* 그냥 물어본 거야!!"
+        "text": "뭐야, 웃지 마! *소보로를 반 갈라서 하나 내밀며* ...이거나 먹어."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -596,5 +596,17 @@
     "lunch2_dain_end_ins31": {
         "name": "{name}",
         "text": "*방금 목소리가 달라진 거. — 착각인가?*"
+    },
+    "lunch2_dain_end_nurse_short1": {
+        "name": "보건선생님",
+        "text": "자, 됐다. 다음에는 안 다치고 와."
+    },
+    "lunch2_dain_end_nurse_short2": {
+        "name": "{name}",
+        "text": "*밴드를 붙이고 보건실을 나왔다. — 아까 봤을 때보다 좀 더 편한 공간이었다.*"
+    },
+    "lunch2_dain_end_nurse_short3": {
+        "name": "{name}",
+        "text": "*방과후에 다시 와도 될 것 같다.*"
     }
 }

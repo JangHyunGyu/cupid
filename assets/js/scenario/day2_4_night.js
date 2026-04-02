@@ -278,7 +278,7 @@ const _scenes = {
     "night2_flashback_6": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_6_ins"
+        "next": "night2_flashback_7"
     },
     "night2_flashback_7": {
         "background": "assets/images/background/room_my.png",
@@ -410,17 +410,7 @@ const _scenes = {
         "character": null,
         "next": "night2_end_3"
     },
-    "night2_flashback_6_ins": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night2_flashback_6_ins2"
-    },
-    "night2_flashback_6_ins2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night2_flashback_7"
-    },
-    "night2_end_3_ins": {
+"night2_end_3_ins": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_end_4"

@@ -687,7 +687,10 @@ Object.assign(SCENARIO[2], {
     "lunch2_dain_end_ins13": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins14"
+        "branches": [
+            { "condition": "nurse_day1", "next": "lunch2_dain_end_nurse_short1" },
+            { "next": "lunch2_dain_end_ins14" }
+        ]
     },
     "lunch2_dain_end_ins14": {
         "background": "assets/images/background/nurse_room.png",
@@ -773,6 +776,21 @@ Object.assign(SCENARIO[2], {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins31"
+    },
+    "lunch2_dain_end_nurse_short1": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "lunch2_dain_end_nurse_short2"
+    },
+    "lunch2_dain_end_nurse_short2": {
+        "background": "assets/images/background/nurse_room.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "next": "lunch2_dain_end_nurse_short3"
+    },
+    "lunch2_dain_end_nurse_short3": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after2_start"
     },
     "lunch2_dain_end_ins31": {
         "background": "assets/images/background/nurse_room.png",

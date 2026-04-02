@@ -668,23 +668,11 @@
         "name": "{name}",
         "text": "*별관 복도. 인기척이 없다. — 비밀 독서 공간 문이 살짝 열려 있다.*"
     },
-    "after2_yuna_1_ins2": {
-        "name": "{name}",
-        "text": "*별관 복도. 인기척이 없다. — 비밀 독서 공간 문이 살짝 열려 있다.*"
-    },
     "after2_yuna_2_ins": {
         "name": "{name}",
         "text": "*유나가 고개를 든다. 놀라지 않는다.*"
     },
-    "after2_yuna_2_ins2": {
-        "name": "{name}",
-        "text": "*유나가 고개를 든다. 놀라지 않는다.*"
-    },
     "after2_yuna_8b_ins": {
-        "name": "{name}",
-        "text": "*옆에 앉는다. 유나가 자기 이어폰 한쪽을 건넨다.*"
-    },
-    "after2_yuna_8b_ins2": {
         "name": "{name}",
         "text": "*옆에 앉는다. 유나가 자기 이어폰 한쪽을 건넨다.*"
     },
