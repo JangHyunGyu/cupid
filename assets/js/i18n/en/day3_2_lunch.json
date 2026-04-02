@@ -212,7 +212,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "{name}",
-        "text": "*No exclamation marks. — The exclamation marks have vanished from Dain's sentences. For the first time.*"
+        "text": "*Dain turns her head away. She hasn't touched her soboro bread.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
@@ -358,8 +358,8 @@
         "text": "*The last one quietly sets hers down.*"
     },
     "lunch3_expose_honest_4_ins": {
-        "name": "Seoyeon",
-        "text": "I don't want to be one of your options. I'm either your only answer, or I'm nothing. — I can't do halfway."
+        "name": "{name}",
+        "text": "*Seoyeon's expression changes. — Still calm, but there's an edge to it now.*"
     },
     "lunch3_expose_excuse_2_ins": {
         "name": "{name}",

@@ -558,6 +558,6 @@
     },
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
-        "text": "*I've explored enough for today. Let's head home and rest.*"
+        "text": "*I look at the bandage on my hand. — That was a strange nurse's office. The good kind of strange.*"
     }
 }

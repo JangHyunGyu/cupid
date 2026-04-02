@@ -37,19 +37,19 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Du kommst morgen zum Schulkiosk, oder?!"
+        "text": "Hey~ lass uns morgen zum Laden gehen! Ich bin immer noch sauer, dass wir heute nicht konnten!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Halt dir morgen die Mittagspause frei"
+        "text": "Willst du mittags aufs Dach kommen? Der Wind wird schön sein"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
-        "text": "Morgen Mittag lass ich das Dach offen. Komm"
+        "text": "Ich lass morgen das Dach offen. Komm, wenn du Zeit hast"
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...Kommst du morgen in die Bibliothek?"
+        "text": "...kommst du morgen zum Nebengebäude?"
     },
     "night2_msg_generic": {
         "name": "Dain",
@@ -110,7 +110,7 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "Morgen Mittag lass ich das Dach offen. Komm"
+        "text": "Ich lass das Dach mittags offen. Komm diesmal wirklich"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -297,14 +297,6 @@
     "night2_end_2_ins2": {
         "name": "{name}",
         "text": "*Minsus Worte kommen immer wieder zurück. 'Warst du an deiner alten Schule auch so?'*"
-    },
-    "night2_flashback_6_ins": {
-        "name": "{name}",
-        "text": "*'Diesmal sage ich, was ich will, ohne es zu bereuen.' — Das war das Versprechen, das ich mir beim Wechsel an diese Schule gab.*"
-    },
-    "night2_flashback_6_ins2": {
-        "name": "{name}",
-        "text": "*'Diesmal sage ich, was ich will, ohne es zu bereuen.' — Das war das Versprechen, das ich mir beim Wechsel an diese Schule gab.*"
     },
     "night2_end_3_ins": {
         "name": "{name}",

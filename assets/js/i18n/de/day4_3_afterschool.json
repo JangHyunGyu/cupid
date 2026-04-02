@@ -518,5 +518,9 @@
     "confess_dain_no_4_ins50": {
         "name": "Yuna",
         "text": "*War okay*"
+    },
+    "confess_dain_no_4_nurse_skip": {
+        "name": "{name}",
+        "text": "*Heute Morgen hatte ich meine letzte Beratung im Krankenzimmer. — Ihre feuchten Augen gehen mir nicht aus dem Kopf.*"
     }
 }

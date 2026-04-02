@@ -423,7 +423,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "I-I am bothered! So what! *takes a big bite of soboro bread* I was just asking!!"
+        "text": "W-what, don't laugh! *breaks soboro bread in half and shoves one piece over* ...Here, just eat this."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -596,5 +596,17 @@
     "lunch2_dain_end_ins31": {
         "name": "{name}",
         "text": "*That shift in her voice just now. — Was I imagining things?*"
+    },
+    "lunch2_dain_end_nurse_short1": {
+        "name": "School Nurse",
+        "text": "There, all done. Try not to get hurt next time."
+    },
+    "lunch2_dain_end_nurse_short2": {
+        "name": "{name}",
+        "text": "*Got the bandage and left the nurse's office. — It felt more comfortable than it looked from outside.*"
+    },
+    "lunch2_dain_end_nurse_short3": {
+        "name": "{name}",
+        "text": "*I could probably come back after school.*"
     }
 }

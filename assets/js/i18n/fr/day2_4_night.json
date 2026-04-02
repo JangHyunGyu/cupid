@@ -37,19 +37,19 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hé !! Tu fais quoi demain ?!"
+        "text": "Hé~ on va à la boutique demain ! Je suis encore dégoûtée qu'on n'y soit pas allés aujourd'hui !"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Garde ta pause déjeuner libre demain"
+        "text": "Tu veux monter sur le toit à midi ? Il y aura une bonne brise"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
-        "text": "Demain midi, je laisse le toit ouvert. Viens"
+        "text": "Je laisserai le toit ouvert demain. Viens si tu as le temps"
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...Tu viens à la bibliothèque demain ?"
+        "text": "...tu viendras à l'annexe demain ?"
     },
     "night2_msg_generic": {
         "name": "Dain",
@@ -110,7 +110,7 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "Demain midi je laisserai le toit ouvert. Viens"
+        "text": "Je laisserai le toit ouvert à midi. Cette fois, viens pour de vrai"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -297,14 +297,6 @@
     "night2_end_2_ins2": {
         "name": "{name}",
         "text": "*Les mots de Minsu reviennent sans cesse. 'Tu faisais pareil dans ton ancien lycée ?'*"
-    },
-    "night2_flashback_6_ins": {
-        "name": "{name}",
-        "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
-    },
-    "night2_flashback_6_ins2": {
-        "name": "{name}",
-        "text": "*'Cette fois, je dirai ce que je veux sans regrets'. — C'est la promesse que je me suis faite en arrivant dans ce lycée.*"
     },
     "night2_end_3_ins": {
         "name": "{name}",

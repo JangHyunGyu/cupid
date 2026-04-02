@@ -423,7 +423,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Na-Natürlich stört es mich! Was soll's! *beißt kräftig ins Soboro-Brötchen* Ich hab nur gefragt!!"
+        "text": "W-was, lach nicht! *bricht das Soboro-Brot in zwei Hälften und schiebt ein Stück rüber* ...Hier, iss das."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -596,5 +596,17 @@
     "lunch2_dain_end_ins31": {
         "name": "{name}",
         "text": "*Dieser Wechsel in ihrer Stimme gerade. — Habe ich mir das eingebildet?*"
+    },
+    "lunch2_dain_end_nurse_short1": {
+        "name": "Schulkrankenschwester",
+        "text": "So, fertig. Versuch nächstes Mal, dich nicht zu verletzen."
+    },
+    "lunch2_dain_end_nurse_short2": {
+        "name": "{name}",
+        "text": "*Pflaster drauf und raus aus dem Krankenzimmer. — Es war gemütlicher, als es von außen aussah.*"
+    },
+    "lunch2_dain_end_nurse_short3": {
+        "name": "{name}",
+        "text": "*Vielleicht kann ich nach der Schule nochmal vorbeikommen.*"
     }
 }

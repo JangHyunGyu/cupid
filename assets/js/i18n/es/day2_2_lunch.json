@@ -423,7 +423,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "¡Cl-Claro que me importa! ¡Y qué! *da un gran mordisco al pan de soboro* ¡¡Solo preguntaba!!"
+        "text": "¡Q-qué, no te rías! *parte el pan soboro por la mitad y empuja un trozo* ...Toma, come esto."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -596,5 +596,17 @@
     "lunch2_dain_end_ins31": {
         "name": "{name}",
         "text": "*Ese cambio en su voz recién. — ¿Me lo habré imaginado?*"
+    },
+    "lunch2_dain_end_nurse_short1": {
+        "name": "Enfermera",
+        "text": "Listo. La próxima vez, intenta no lastimarte."
+    },
+    "lunch2_dain_end_nurse_short2": {
+        "name": "{name}",
+        "text": "*Me puse la venda y salí de la enfermería. — Era más acogedor de lo que parecía desde fuera.*"
+    },
+    "lunch2_dain_end_nurse_short3": {
+        "name": "{name}",
+        "text": "*Quizás pueda volver después de clases.*"
     }
 }
