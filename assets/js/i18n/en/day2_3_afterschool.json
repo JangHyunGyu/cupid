@@ -668,23 +668,11 @@
         "name": "{name}",
         "text": "*The annex hallway. Not a soul around. — The door to the secret reading room is slightly ajar.*"
     },
-    "after2_yuna_1_ins2": {
-        "name": "{name}",
-        "text": "*The annex hallway. Not a soul around. — The door to the secret reading room is slightly ajar.*"
-    },
     "after2_yuna_2_ins": {
         "name": "{name}",
         "text": "*Yuna looks up. Not surprised.*"
     },
-    "after2_yuna_2_ins2": {
-        "name": "{name}",
-        "text": "*Yuna looks up. Not surprised.*"
-    },
     "after2_yuna_8b_ins": {
-        "name": "{name}",
-        "text": "*I sit down next to her. Yuna offers one of her earbuds.*"
-    },
-    "after2_yuna_8b_ins2": {
         "name": "{name}",
         "text": "*I sit down next to her. Yuna offers one of her earbuds.*"
     },

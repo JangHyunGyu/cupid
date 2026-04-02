@@ -212,7 +212,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "{name}",
-        "text": "*Pas de points d’exclamation. — Les points d’exclamation ont disparu des phrases de Dain. C’est la première fois.*"
+        "text": "*Dain détourne la tête. Elle n'a pas touché à son pain soboro.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
@@ -358,8 +358,8 @@
         "text": "*La dernière pose les siens en silence.*"
     },
     "lunch3_expose_honest_4_ins": {
-        "name": "Seoyeon",
-        "text": "Je ne veux pas être l'une de tes options. Je suis ta seule réponse, ou je ne suis rien. — Je ne fais pas les demi-mesures."
+        "name": "{name}",
+        "text": "*L'expression de Seoyeon change. — Toujours calme, mais avec quelque chose de tranchant maintenant.*"
     },
     "lunch3_expose_excuse_2_ins": {
         "name": "{name}",

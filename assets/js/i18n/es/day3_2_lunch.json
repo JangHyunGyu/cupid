@@ -212,7 +212,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "{name}",
-        "text": "*No hay exclamaciones. — De las frases de Dain han desaparecido los signos de exclamación. Es la primera vez.*"
+        "text": "*Dain gira la cabeza. No ha tocado su pan soboro.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
@@ -358,8 +358,8 @@
         "text": "*La última baja lo suyo en silencio.*"
     },
     "lunch3_expose_honest_4_ins": {
-        "name": "Seoyeon",
-        "text": "No quiero ser una de tus opciones. O soy tu única respuesta, o no soy nada. — No puedo con las medias tintas."
+        "name": "{name}",
+        "text": "*La expresión de Seoyeon cambia. — Sigue tranquila, pero ahora hay algo afilado en ella.*"
     },
     "lunch3_expose_excuse_2_ins": {
         "name": "{name}",

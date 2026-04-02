@@ -668,23 +668,11 @@
         "name": "{name}",
         "text": "*Der Flur des Nebengebäudes. Keine Menschenseele. — Die Tür zum geheimen Leseraum steht einen Spalt offen.*"
     },
-    "after2_yuna_1_ins2": {
-        "name": "{name}",
-        "text": "*Der Flur des Nebengebäudes. Keine Menschenseele. — Die Tür zum geheimen Leseraum steht einen Spalt offen.*"
-    },
     "after2_yuna_2_ins": {
         "name": "{name}",
         "text": "*Yuna schaut auf. Nicht überrascht.*"
     },
-    "after2_yuna_2_ins2": {
-        "name": "{name}",
-        "text": "*Yuna schaut auf. Nicht überrascht.*"
-    },
     "after2_yuna_8b_ins": {
-        "name": "{name}",
-        "text": "*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrstöpsel.*"
-    },
-    "after2_yuna_8b_ins2": {
         "name": "{name}",
         "text": "*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrstöpsel.*"
     },

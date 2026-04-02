@@ -668,23 +668,11 @@
         "name": "{name}",
         "text": "*Le couloir de l'annexe. Pas âme qui vive. — La porte de la salle de lecture secrète est entrouverte.*"
     },
-    "after2_yuna_1_ins2": {
-        "name": "{name}",
-        "text": "*Le couloir de l'annexe. Pas âme qui vive. — La porte de la salle de lecture secrète est entrouverte.*"
-    },
     "after2_yuna_2_ins": {
         "name": "{name}",
         "text": "*Yuna lève les yeux. Pas surprise.*"
     },
-    "after2_yuna_2_ins2": {
-        "name": "{name}",
-        "text": "*Yuna lève les yeux. Pas surprise.*"
-    },
     "after2_yuna_8b_ins": {
-        "name": "{name}",
-        "text": "*Je m'assieds à côté d'elle. Yuna me tend un de ses écouteurs.*"
-    },
-    "after2_yuna_8b_ins2": {
         "name": "{name}",
         "text": "*Je m'assieds à côté d'elle. Yuna me tend un de ses écouteurs.*"
     },

@@ -1,372 +1,372 @@
 {
-  "lunch3_start": {
-    "name": "{name}",
-    "text": "*昼休み。今日は珍しく — 三人が一か所に集まった。*"
-  },
-  "lunch3_start_2": {
-    "name": "{name}",
-    "text": "*{name}が弁当を広げる。ソヨンが自然に隣に座り、ダインが向かいにドスンと座り、ユナが隅からパンをかじりながらそっと加わる。*"
-  },
-  "lunch3_meal_1": {
-    "name": "ダイン",
-    "text": "おっ！おいしい！！"
-  },
-  "lunch3_meal_2": {
-    "name": "{name}",
-    "text": "それ僕のなんだけど…"
-  },
-  "lunch3_meal_3": {
-    "name": "ソヨン",
-    "text": "卵焼き、ちょっと味が濃いね。6点。"
-  },
-  "lunch3_meal_4": {
-    "name": "{name}",
-    "text": "点数つけないでよ。"
-  },
-  "lunch3_meal_5": {
-    "name": "ソヨン",
-    "text": "10点満点よ。悪くないでしょ？"
-  },
-  "lunch3_meal_6": {
-    "name": "{name}",
-    "text": "*ユナが黙って箸を伸ばし、一番おいしそうなソーセージを取っていく。*"
-  },
-  "lunch3_meal_7": {
-    "name": "{name}",
-    "text": "…ユナ、それ僕が一番好きなやつなんだけど。"
-  },
-  "lunch3_meal_8": {
-    "name": "ユナ",
-    "text": "…おいしい。"
-  },
-  "lunch3_meal_9": {
-    "name": "{name}",
-    "text": "*略奪された。三人同時に。*"
-  },
-  "lunch3_meal_10": {
-    "name": "{name}",
-    "text": "*おかずが一つ残った。最後の卵焼き。*"
-  },
-  "lunch3_meal_11": {
-    "name": "{name}",
-    "text": "*誰にあげよう？*"
-  },
-  "lunch3_choice": {
-    "name": "{name}",
-    "text": "*最後のおかずを誰にあげるか悩む。*",
-    "choices": [
-      "ソヨンにあげる",
-      "ダインにあげる",
-      "ユナにあげる",
-      "みんなで分けよう"
-    ]
-  },
-  "lunch3_give_seo_1": {
-    "name": "ソヨン",
-    "text": "…ありがと。やっぱりセンスあるね。"
-  },
-  "lunch3_give_seo_2": {
-    "name": "ダイン",
-    "text": "えー！私も食べたかったのに！"
-  },
-  "lunch3_give_seo_3": {
-    "name": "ユナ",
-    "text": "……"
-  },
-  "lunch3_give_dain_1": {
-    "name": "ダイン",
-    "text": "本当？！ありがとう！！{name}が最高！！"
-  },
-  "lunch3_give_dain_2": {
-    "name": "ソヨン",
-    "text": "…まったく。点数までつけてあげたのに。"
-  },
-  "lunch3_give_dain_3": {
-    "name": "ユナ",
-    "text": "……"
-  },
-  "lunch3_give_yuna_1": {
-    "name": "ユナ",
-    "text": "…ありがとう。"
-  },
-  "lunch3_give_yuna_2": {
-    "name": "ソヨン",
-    "text": "…私にくれると思ったのに。"
-  },
-  "lunch3_give_yuna_3": {
-    "name": "ダイン",
-    "text": "なんで！私は？！"
-  },
-  "lunch3_harem_1": {
-    "name": "{name}",
-    "text": "*三人で分けて食べた。気まずいけど — 悪くない。誰も怒らなかった。不思議と、こういう世界もあるらしい。*"
-  },
-  "lunch3_expose_1": {
-    "name": "{name}",
-    "text": "*みんなで食べようと言った瞬間 — ダインが先に口を開いた。*"
-  },
-  "lunch3_expose_2": {
-    "name": "ダイン",
-    "text": "あ、そうだ！{name}、週末一緒にゲーセン行くんだよね！！何食べてから行く？！"
-  },
-  "lunch3_expose_3": {
-    "name": "{name}",
-    "text": "*——凍りついた。*"
-  },
-  "lunch3_expose_4": {
-    "name": "{name}",
-    "text": "*ソヨンの箸が止まる。ユナのパンをちぎる手が止まる。*"
-  },
-  "lunch3_expose_5": {
-    "name": "ソヨン",
-    "text": "…ゲーセン？"
-  },
-  "lunch3_expose_6": {
-    "name": "ソヨン",
-    "text": "私には一緒に行くところがあるって言ったのに。"
-  },
-  "lunch3_expose_7": {
-    "name": "ダイン",
-    "text": "…ちょっと待って。私にも週末遊ぼうって言ったよね？"
-  },
-  "lunch3_expose_8": {
-    "name": "{name}",
-    "text": "*ユナがパンを置く。*"
-  },
-  "lunch3_expose_9": {
-    "name": "ユナ",
-    "text": "知ってた。"
-  },
-  "lunch3_expose_10": {
-    "name": "{name}",
-    "text": "*しばし沈黙。*"
-  },
-  "lunch3_expose_11": {
-    "name": "ユナ",
-    "text": "…嘘。私も知らなかった。"
-  },
-  "lunch3_expose_12": {
-    "name": "{name}",
-    "text": "*三組の箸が止まった。食堂の喧騒が急に遠くなる。*"
-  },
-  "lunch3_expose_13": {
-    "name": "{name}",
-    "text": "*隣のテーブルでミンスがこっちを見ている。首を横に振っている。*"
-  },
-  "lunch3_expose_14": {
-    "name": "ミンス",
-    "text": "…おい。お前マジか。"
-  },
-  "lunch3_expose_15": {
-    "name": "{name}",
-    "text": "*何も言えない。ミンスが正しい。*"
-  },
-  "lunch3_expose_choice": {
-    "name": "{name}",
-    "text": "*何て言えばいいんだ…*",
-    "choices": [
-      "ごめん。みんないい人だから断れなかった。",
-      "時間帯が違うから大丈夫だと思って…",
-      "逃げる"
-    ]
-  },
-  "lunch3_expose_honest_1": {
-    "name": "{name}",
-    "text": "ごめん。みんないい人だから断れなかった。"
-  },
-  "lunch3_expose_honest_2": {
-    "name": "ソヨン",
-    "text": "…断れなかったから。その言葉が一番残酷なのよ、{name}。"
-  },
-  "lunch3_expose_honest_3": {
-    "name": "ソヨン",
-    "text": "断れない優しさが——偽りの希望を与えるの。"
-  },
-  "lunch3_expose_honest_4": {
-    "name": "{name}",
-    "text": "*ソヨンが弁当の蓋を閉じる。*"
-  },
-  "lunch3_expose_honest_5": {
-    "name": "ソヨン",
-    "text": "はっきりさせるか、完全に終わらせるか。——中途半端は絶対に嫌。"
-  },
-  "lunch3_expose_honest_6": {
-    "name": "{name}",
-    "text": "*ソヨンが席を立つ。*"
-  },
-  "lunch3_expose_honest_7": {
-    "name": "{name}",
-    "text": "*感嘆符がない。——ダインの文章から感嘆符が消えた。初めてだ。*"
-  },
-  "lunch3_expose_excuse_1": {
-    "name": "{name}",
-    "text": "時間帯が違うから大丈夫だと思って…"
-  },
-  "lunch3_expose_excuse_2": {
-    "name": "ソヨン",
-    "text": "…それが問題だって分からないの？"
-  },
-  "lunch3_expose_excuse_3": {
-    "name": "ダイン",
-    "text": "私にも考える時間をちょうだい。"
-  },
-  "lunch3_expose_excuse_4": {
-    "name": "{name}",
-    "text": "*感嘆符がない。——ダインの文章から感嘆符が消えた。初めてだ。*"
-  },
-  "lunch3_expose_run_1": {
-    "name": "{name}",
-    "text": "*逃げた。教室から。——一番卑怯な選択だ。*"
-  },
-  "lunch3_expose_run_2": {
-    "name": "{name}",
-    "text": "*背後から三人の沈黙が背中に突き刺さる。*"
-  },
-  "lunch3_end": {
-    "name": "{name}",
-    "text": "*昼休みが終わった。*"
-  },
-  "lunch3_share_1": {
-    "name": "{name}",
-    "text": "*みんなで分けようと言った。気まずいけど — 悪くない空気だ。三人とも笑っている。本心かどうかはわからないけど。*"
-  },
-  "lunch3_seo_skin_check": {},
-  "lunch3_seo_skin_1": {
-    "name": "{name}",
-    "text": "*お弁当を食べていたら、口元にご飯粒が付いた。ソヨンが手を伸ばして取ってくれる。*"
-  },
-  "lunch3_seo_skin_2": {
-    "name": "ソヨン",
-    "text": "…人前でもう少し気をつけて。"
-  },
-  "lunch3_seo_skin_3": {
-    "name": "{name}",
-    "text": "*手を引いたソヨンが箸を落とした。——自然な動作に見えたが、指先がわずかに震えていた。*"
-  },
-  "lunch3_seo_witness_1": {
-    "name": "{name}",
-    "text": "*ダインが教室のドアの前で立ち止まる。ソヨンがお弁当を受け取るのを見る。…あ。戻っていく。*"
-  },
-  "lunch3_seo_witness_choice": {
-    "name": "{name}",
-    "text": "*ダインの後ろ姿が廊下に消えていく。*",
-    "choices": [
-      "ダイン！",
-      "ソヨンに集中する"
-    ]
-  },
-  "lunch3_seo_chase_dain_1": {
-    "name": "{name}",
-    "text": "*ソヨンがお弁当を置く。表情がない。*"
-  },
-  "lunch3_seo_chase_dain_2": {
-    "name": "ダイン",
-    "text": "…なに。"
-  },
-  "lunch3_seo_focus_1": {
-    "name": "{name}",
-    "text": "*ダインの足音が廊下に遠ざかる。*"
-  },
-  "lunch3_seo_focus_2": {
-    "name": "ソヨン",
-    "text": "…気になる？"
-  },
-  "lunch3_dain_skin_check": {},
-  "lunch3_dain_skin_1": {
-    "name": "{name}",
-    "text": "*お昼の賭けに勝って興奮したダインが両腕を広げる。抱きつかれる。1秒。*"
-  },
-  "lunch3_dain_skin_2": {
-    "name": "{name}",
-    "text": "*ダインが弾かれたように離れる。耳が赤い。*"
-  },
-  "lunch3_dain_skin_3": {
-    "name": "ダイン",
-    "text": "今のカウントしないで！！"
-  },
-  "lunch3_dain_witness_1": {
-    "name": "{name}",
-    "text": "*ユナが廊下を通りかかり体育館の中を見る。ダインが笑っている。ユナは足を速める。*"
-  },
-  "lunch3_dain_witness_2": {
-    "name": "{name}",
-    "text": "*次の休み時間、ユナの席が空いている。*"
-  },
-  "lunch3_yuna_skin_check": {},
-  "lunch3_yuna_skin_1": {
-    "name": "{name}",
-    "text": "*メモを渡しながらユナが手を握る。離さない。*"
-  },
-  "lunch3_yuna_skin_2": {
-    "name": "ユナ",
-    "text": "…これはメモの内容じゃない。ただ。"
-  },
-  "lunch3_yuna_skin_3": {
-    "name": "{name}",
-    "text": "*文が終わってからやっと手を離す。*"
-  },
-  "lunch3_yuna_witness_1": {
-    "name": "ソヨン",
-    "text": "図書館でお弁当の匂いがしたらしいよ。…ユナと？"
-  },
-  "lunch3_yuna_witness_2": {
-    "name": "{name}",
-    "text": "*表情が無い。それが余計に怖い。*"
-  },
-  "lunch3_seo_chase_dain_2b": {
-    "name": "{name}",
-    "text": "*教室に戻った。*"
-  },
-  "lunch3_dain_witness_2b": {
-    "name": "{name}",
-    "text": "*教室に戻った。*"
-  },
-  "lunch3_start_2_ins": {
-    "name": "ダイン",
-    "text": "*遠慮なく卵焼きにかぶりつきながら* おっ！おいしい！！"
-  },
-  "lunch3_meal_7_ins": {
-    "name": "ユナ",
-    "text": "*もう噛みながら* ……おいしい"
-  },
-  "lunch3_meal_10_ins": {
-    "name": "{name}",
-    "text": "*みんなで食べようと言った。——でも、空気がおかしい。*"
-  },
-  "lunch3_meal_10_ins2": {
-    "name": "{name}",
-    "text": "*二人が席を立った後、選んだ子と二人きりになる。——選ぶということが、こんなに重いとは。*"
-  },
-  "lunch3_meal_10_ins3": {
-    "name": "{name}",
-    "text": "*ソヨンの箸が一瞬止まる。表情を整える。生徒会長の顔に戻る。——よくないことは分かっている。申し訳なくなった。*"
-  },
-  "lunch3_meal_10_ins4": {
-    "name": "{name}",
-    "text": "*みんなで？！いいじゃん！！ビックリマークは健在だ。——でも声が半トーン低い。いつもなら椅子を引っ張ってくるのに、今日は座ったまま動かない。*"
-  },
-  "lunch3_meal_10_ins5": {
-    "name": "{name}",
-    "text": "*ユナはただ頷く。メモを書きかけて折り畳んでポケットにしまう。渡さない。——何を書いたのかは、わからない。*"
-  },
-  "lunch3_expose_3_ins": {
-    "name": "{name}",
-    "text": "*残りの二人の手が止まる。*"
-  },
-  "lunch3_expose_7_ins": {
-    "name": "{name}",
-    "text": "*残りの一人が静かに下ろす。*"
-  },
-  "lunch3_expose_honest_4_ins": {
-    "name": "ソヨン",
-    "text": "あんたの選択肢の一つになりたいんじゃない。唯一の答えか、何でもないか。——中途半端は無理。"
-  },
-  "lunch3_expose_excuse_2_ins": {
-    "name": "{name}",
-    "text": "*ダインが立ち上がる。*"
-  },
-  "lunch3_expose_run_2_ins": {
-    "name": "{name}",
-    "text": "*昼休みが終わり、午後の授業が続いた。黒板のチョークの音がやけに遠く聞こえる。誰かの視線が背中に触れるのを感じる。——まだ終わっていない話が残っている。*"
-  }
+    "lunch3_start": {
+        "name": "{name}",
+        "text": "*昼休み。今日は珍しく — 三人が一か所に集まった。*"
+    },
+    "lunch3_start_2": {
+        "name": "{name}",
+        "text": "*{name}が弁当を広げる。ソヨンが自然に隣に座り、ダインが向かいにドスンと座り、ユナが隅からパンをかじりながらそっと加わる。*"
+    },
+    "lunch3_meal_1": {
+        "name": "ダイン",
+        "text": "おっ！おいしい！！"
+    },
+    "lunch3_meal_2": {
+        "name": "{name}",
+        "text": "それ僕のなんだけど…"
+    },
+    "lunch3_meal_3": {
+        "name": "ソヨン",
+        "text": "卵焼き、ちょっと味が濃いね。6点。"
+    },
+    "lunch3_meal_4": {
+        "name": "{name}",
+        "text": "点数つけないでよ。"
+    },
+    "lunch3_meal_5": {
+        "name": "ソヨン",
+        "text": "10点満点よ。悪くないでしょ？"
+    },
+    "lunch3_meal_6": {
+        "name": "{name}",
+        "text": "*ユナが黙って箸を伸ばし、一番おいしそうなソーセージを取っていく。*"
+    },
+    "lunch3_meal_7": {
+        "name": "{name}",
+        "text": "…ユナ、それ僕が一番好きなやつなんだけど。"
+    },
+    "lunch3_meal_8": {
+        "name": "ユナ",
+        "text": "…おいしい。"
+    },
+    "lunch3_meal_9": {
+        "name": "{name}",
+        "text": "*略奪された。三人同時に。*"
+    },
+    "lunch3_meal_10": {
+        "name": "{name}",
+        "text": "*おかずが一つ残った。最後の卵焼き。*"
+    },
+    "lunch3_meal_11": {
+        "name": "{name}",
+        "text": "*誰にあげよう？*"
+    },
+    "lunch3_choice": {
+        "name": "{name}",
+        "text": "*最後のおかずを誰にあげるか悩む。*",
+        "choices": [
+            "ソヨンにあげる",
+            "ダインにあげる",
+            "ユナにあげる",
+            "みんなで分けよう"
+        ]
+    },
+    "lunch3_give_seo_1": {
+        "name": "ソヨン",
+        "text": "…ありがと。やっぱりセンスあるね。"
+    },
+    "lunch3_give_seo_2": {
+        "name": "ダイン",
+        "text": "えー！私も食べたかったのに！"
+    },
+    "lunch3_give_seo_3": {
+        "name": "ユナ",
+        "text": "……"
+    },
+    "lunch3_give_dain_1": {
+        "name": "ダイン",
+        "text": "本当？！ありがとう！！{name}が最高！！"
+    },
+    "lunch3_give_dain_2": {
+        "name": "ソヨン",
+        "text": "…まったく。点数までつけてあげたのに。"
+    },
+    "lunch3_give_dain_3": {
+        "name": "ユナ",
+        "text": "……"
+    },
+    "lunch3_give_yuna_1": {
+        "name": "ユナ",
+        "text": "…ありがとう。"
+    },
+    "lunch3_give_yuna_2": {
+        "name": "ソヨン",
+        "text": "…私にくれると思ったのに。"
+    },
+    "lunch3_give_yuna_3": {
+        "name": "ダイン",
+        "text": "なんで！私は？！"
+    },
+    "lunch3_harem_1": {
+        "name": "{name}",
+        "text": "*三人で分けて食べた。気まずいけど — 悪くない。誰も怒らなかった。不思議と、こういう世界もあるらしい。*"
+    },
+    "lunch3_expose_1": {
+        "name": "{name}",
+        "text": "*みんなで食べようと言った瞬間 — ダインが先に口を開いた。*"
+    },
+    "lunch3_expose_2": {
+        "name": "ダイン",
+        "text": "あ、そうだ！{name}、週末一緒にゲーセン行くんだよね！！何食べてから行く？！"
+    },
+    "lunch3_expose_3": {
+        "name": "{name}",
+        "text": "*——凍りついた。*"
+    },
+    "lunch3_expose_4": {
+        "name": "{name}",
+        "text": "*ソヨンの箸が止まる。ユナのパンをちぎる手が止まる。*"
+    },
+    "lunch3_expose_5": {
+        "name": "ソヨン",
+        "text": "…ゲーセン？"
+    },
+    "lunch3_expose_6": {
+        "name": "ソヨン",
+        "text": "私には一緒に行くところがあるって言ったのに。"
+    },
+    "lunch3_expose_7": {
+        "name": "ダイン",
+        "text": "…ちょっと待って。私にも週末遊ぼうって言ったよね？"
+    },
+    "lunch3_expose_8": {
+        "name": "{name}",
+        "text": "*ユナがパンを置く。*"
+    },
+    "lunch3_expose_9": {
+        "name": "ユナ",
+        "text": "知ってた。"
+    },
+    "lunch3_expose_10": {
+        "name": "{name}",
+        "text": "*しばし沈黙。*"
+    },
+    "lunch3_expose_11": {
+        "name": "ユナ",
+        "text": "…嘘。私も知らなかった。"
+    },
+    "lunch3_expose_12": {
+        "name": "{name}",
+        "text": "*三組の箸が止まった。食堂の喧騒が急に遠くなる。*"
+    },
+    "lunch3_expose_13": {
+        "name": "{name}",
+        "text": "*隣のテーブルでミンスがこっちを見ている。首を横に振っている。*"
+    },
+    "lunch3_expose_14": {
+        "name": "ミンス",
+        "text": "…おい。お前マジか。"
+    },
+    "lunch3_expose_15": {
+        "name": "{name}",
+        "text": "*何も言えない。ミンスが正しい。*"
+    },
+    "lunch3_expose_choice": {
+        "name": "{name}",
+        "text": "*何て言えばいいんだ…*",
+        "choices": [
+            "ごめん。みんないい人だから断れなかった。",
+            "時間帯が違うから大丈夫だと思って…",
+            "逃げる"
+        ]
+    },
+    "lunch3_expose_honest_1": {
+        "name": "{name}",
+        "text": "ごめん。みんないい人だから断れなかった。"
+    },
+    "lunch3_expose_honest_2": {
+        "name": "ソヨン",
+        "text": "…断れなかったから。その言葉が一番残酷なのよ、{name}。"
+    },
+    "lunch3_expose_honest_3": {
+        "name": "ソヨン",
+        "text": "断れない優しさが——偽りの希望を与えるの。"
+    },
+    "lunch3_expose_honest_4": {
+        "name": "{name}",
+        "text": "*ソヨンが弁当の蓋を閉じる。*"
+    },
+    "lunch3_expose_honest_5": {
+        "name": "ソヨン",
+        "text": "はっきりさせるか、完全に終わらせるか。——中途半端は絶対に嫌。"
+    },
+    "lunch3_expose_honest_6": {
+        "name": "{name}",
+        "text": "*ソヨンが席を立つ。*"
+    },
+    "lunch3_expose_honest_7": {
+        "name": "{name}",
+        "text": "*感嘆符がない。——ダインの文章から感嘆符が消えた。初めてだ。*"
+    },
+    "lunch3_expose_excuse_1": {
+        "name": "{name}",
+        "text": "時間帯が違うから大丈夫だと思って…"
+    },
+    "lunch3_expose_excuse_2": {
+        "name": "ソヨン",
+        "text": "…それが問題だって分からないの？"
+    },
+    "lunch3_expose_excuse_3": {
+        "name": "ダイン",
+        "text": "私にも考える時間をちょうだい。"
+    },
+    "lunch3_expose_excuse_4": {
+        "name": "{name}",
+        "text": "*ダインが顔を背ける。ソボロパンに一口も手をつけていない。*"
+    },
+    "lunch3_expose_run_1": {
+        "name": "{name}",
+        "text": "*逃げた。教室から。——一番卑怯な選択だ。*"
+    },
+    "lunch3_expose_run_2": {
+        "name": "{name}",
+        "text": "*背後から三人の沈黙が背中に突き刺さる。*"
+    },
+    "lunch3_end": {
+        "name": "{name}",
+        "text": "*昼休みが終わった。*"
+    },
+    "lunch3_share_1": {
+        "name": "{name}",
+        "text": "*みんなで分けようと言った。気まずいけど — 悪くない空気だ。三人とも笑っている。本心かどうかはわからないけど。*"
+    },
+    "lunch3_seo_skin_check": {},
+    "lunch3_seo_skin_1": {
+        "name": "{name}",
+        "text": "*お弁当を食べていたら、口元にご飯粒が付いた。ソヨンが手を伸ばして取ってくれる。*"
+    },
+    "lunch3_seo_skin_2": {
+        "name": "ソヨン",
+        "text": "…人前でもう少し気をつけて。"
+    },
+    "lunch3_seo_skin_3": {
+        "name": "{name}",
+        "text": "*手を引いたソヨンが箸を落とした。——自然な動作に見えたが、指先がわずかに震えていた。*"
+    },
+    "lunch3_seo_witness_1": {
+        "name": "{name}",
+        "text": "*ダインが教室のドアの前で立ち止まる。ソヨンがお弁当を受け取るのを見る。…あ。戻っていく。*"
+    },
+    "lunch3_seo_witness_choice": {
+        "name": "{name}",
+        "text": "*ダインの後ろ姿が廊下に消えていく。*",
+        "choices": [
+            "ダイン！",
+            "ソヨンに集中する"
+        ]
+    },
+    "lunch3_seo_chase_dain_1": {
+        "name": "{name}",
+        "text": "*ソヨンがお弁当を置く。表情がない。*"
+    },
+    "lunch3_seo_chase_dain_2": {
+        "name": "ダイン",
+        "text": "…なに。"
+    },
+    "lunch3_seo_focus_1": {
+        "name": "{name}",
+        "text": "*ダインの足音が廊下に遠ざかる。*"
+    },
+    "lunch3_seo_focus_2": {
+        "name": "ソヨン",
+        "text": "…気になる？"
+    },
+    "lunch3_dain_skin_check": {},
+    "lunch3_dain_skin_1": {
+        "name": "{name}",
+        "text": "*お昼の賭けに勝って興奮したダインが両腕を広げる。抱きつかれる。1秒。*"
+    },
+    "lunch3_dain_skin_2": {
+        "name": "{name}",
+        "text": "*ダインが弾かれたように離れる。耳が赤い。*"
+    },
+    "lunch3_dain_skin_3": {
+        "name": "ダイン",
+        "text": "今のカウントしないで！！"
+    },
+    "lunch3_dain_witness_1": {
+        "name": "{name}",
+        "text": "*ユナが廊下を通りかかり体育館の中を見る。ダインが笑っている。ユナは足を速める。*"
+    },
+    "lunch3_dain_witness_2": {
+        "name": "{name}",
+        "text": "*次の休み時間、ユナの席が空いている。*"
+    },
+    "lunch3_yuna_skin_check": {},
+    "lunch3_yuna_skin_1": {
+        "name": "{name}",
+        "text": "*メモを渡しながらユナが手を握る。離さない。*"
+    },
+    "lunch3_yuna_skin_2": {
+        "name": "ユナ",
+        "text": "…これはメモの内容じゃない。ただ。"
+    },
+    "lunch3_yuna_skin_3": {
+        "name": "{name}",
+        "text": "*文が終わってからやっと手を離す。*"
+    },
+    "lunch3_yuna_witness_1": {
+        "name": "ソヨン",
+        "text": "図書館でお弁当の匂いがしたらしいよ。…ユナと？"
+    },
+    "lunch3_yuna_witness_2": {
+        "name": "{name}",
+        "text": "*表情が無い。それが余計に怖い。*"
+    },
+    "lunch3_seo_chase_dain_2b": {
+        "name": "{name}",
+        "text": "*教室に戻った。*"
+    },
+    "lunch3_dain_witness_2b": {
+        "name": "{name}",
+        "text": "*教室に戻った。*"
+    },
+    "lunch3_start_2_ins": {
+        "name": "ダイン",
+        "text": "*遠慮なく卵焼きにかぶりつきながら* おっ！おいしい！！"
+    },
+    "lunch3_meal_7_ins": {
+        "name": "ユナ",
+        "text": "*もう噛みながら* ……おいしい"
+    },
+    "lunch3_meal_10_ins": {
+        "name": "{name}",
+        "text": "*みんなで食べようと言った。——でも、空気がおかしい。*"
+    },
+    "lunch3_meal_10_ins2": {
+        "name": "{name}",
+        "text": "*二人が席を立った後、選んだ子と二人きりになる。——選ぶということが、こんなに重いとは。*"
+    },
+    "lunch3_meal_10_ins3": {
+        "name": "{name}",
+        "text": "*ソヨンの箸が一瞬止まる。表情を整える。生徒会長の顔に戻る。——よくないことは分かっている。申し訳なくなった。*"
+    },
+    "lunch3_meal_10_ins4": {
+        "name": "{name}",
+        "text": "*みんなで？！いいじゃん！！ビックリマークは健在だ。——でも声が半トーン低い。いつもなら椅子を引っ張ってくるのに、今日は座ったまま動かない。*"
+    },
+    "lunch3_meal_10_ins5": {
+        "name": "{name}",
+        "text": "*ユナはただ頷く。メモを書きかけて折り畳んでポケットにしまう。渡さない。——何を書いたのかは、わからない。*"
+    },
+    "lunch3_expose_3_ins": {
+        "name": "{name}",
+        "text": "*残りの二人の手が止まる。*"
+    },
+    "lunch3_expose_7_ins": {
+        "name": "{name}",
+        "text": "*残りの一人が静かに下ろす。*"
+    },
+    "lunch3_expose_honest_4_ins": {
+        "name": "{name}",
+        "text": "*ソヨンの表情が変わる。——落ち着きはそのままだけど、どこか鋭さがある。*"
+    },
+    "lunch3_expose_excuse_2_ins": {
+        "name": "{name}",
+        "text": "*ダインが立ち上がる。*"
+    },
+    "lunch3_expose_run_2_ins": {
+        "name": "{name}",
+        "text": "*昼休みが終わり、午後の授業が続いた。黒板のチョークの音がやけに遠く聞こえる。誰かの視線が背中に触れるのを感じる。——まだ終わっていない話が残っている。*"
+    }
 }

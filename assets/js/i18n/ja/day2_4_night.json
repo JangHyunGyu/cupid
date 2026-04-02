@@ -1,321 +1,313 @@
 {
-  "night2_start": {
-    "name": "{name}",
-    "text": "*家に帰った。シャワーを浴びてベッドに横になったら——メッセンジャーの通知が溢れ出す。*"
-  },
-  "night2_msg_1": {
-    "name": "{name}",
-    "text": "*三人からメッセージが来ていた。*"
-  },
-  "night2_msg_dain_specific": {
-    "name": "ダイン",
-    "text": "ねえ！！今日のトッポッキ最高だった！！"
-  },
-  "night2_msg_dain_specific_2": {
-    "name": "ダイン",
-    "text": "明日も勝負しよ！！種目変えて！！"
-  },
-  "night2_msg_seo_specific": {
-    "name": "ソヨン",
-    "text": "今日はありがとう。おかげで早く終わったよ"
-  },
-  "night2_msg_seo_specific_2": {
-    "name": "ソヨン",
-    "text": "次もお願いするかもしれないから、覚悟しておいて"
-  },
-  "night2_msg_yuna_specific": {
-    "name": "ユナ",
-    "text": "……今日のあの曲。よかった"
-  },
-  "night2_msg_yuna_specific_2": {
-    "name": "ユナ",
-    "text": "……また聴かせて"
-  },
-  "night2_msg_seo_general": {
-    "name": "ソヨン",
-    "text": "明日の昼、屋上開けておくよ。来て"
-  },
-  "night2_msg_dain_general": {
-    "name": "ダイン",
-    "text": "ねえ！！明日なにする？！"
-  },
-  "night2_msg_dain_general_merge": {
-    "name": "ソヨン",
-    "text": "明日の昼休み、空けておいて"
-  },
-  "night2_msg_seo_general_alt": {
-    "name": "ソヨン",
-    "text": "明日の昼、屋上開けておくよ。来て"
-  },
-  "night2_msg_yuna_general": {
-    "name": "ユナ",
-    "text": "……明日、図書館に来る？"
-  },
-  "night2_msg_generic": {
-    "name": "ダイン",
-    "text": "ねえ！！明日なにする？！"
-  },
-  "night2_msg_generic_2": {
-    "name": "ソヨン",
-    "text": "明日の昼休み、空けておいて"
-  },
-  "night2_msg_generic_3": {
-    "name": "ユナ",
-    "text": "……明日、図書館に来る？"
-  },
-  "night2_msg_7": {
-    "name": "{name}",
-    "text": "*三人に同時に返信しなきゃいけない状況。——これが幸せなのか拷問なのかわからない。*"
-  },
-  "night2_choice": {
-    "name": "{name}",
-    "text": "*誰に先に返信しようか？*",
-    "choices": [
-      "ダインに先に返信する",
-      "ソヨンに先に返信する",
-      "ユナに先に返信する"
-    ]
-  },
-  "night2_reply_dain_1": {
-    "name": "{name}",
-    "text": "トッポッキ辛かったw"
-  },
-  "night2_reply_dain_2": {
-    "name": "ダイン",
-    "text": "www辛いの苦手なの？！"
-  },
-  "night2_reply_dain_3": {
-    "name": "ダイン",
-    "text": "明日は甘口にしよう！！"
-  },
-  "night2_reply_dain_4": {
-    "name": "ダイン",
-    "text": "あ、でも甘口はトッポッキじゃないかw"
-  },
-  "night2_reply_dain_5": {
-    "name": "{name}",
-    "text": "*また三行連続だ。この人は一文で終わることがない。*"
-  },
-  "night2_reply_seo_1": {
-    "name": "{name}",
-    "text": "呼んでくれたらまた行くよ"
-  },
-  "night2_reply_seo_2": {
-    "name": "ソヨン",
-    "text": "簡単に約束するのね"
-  },
-  "night2_reply_seo_3": {
-    "name": "{name}",
-    "text": "簡単な約束だから"
-  },
-  "night2_reply_seo_4": {
-    "name": "ソヨン",
-    "text": "明日の昼、屋上開けておくから。おいで"
-  },
-  "night2_reply_seo_5": {
-    "name": "{name}",
-    "text": "*『自由』と言ったけど、行かなかったら何か起きそうなトーンだ。*"
-  },
-  "night2_reply_yuna_1": {
-    "name": "{name}",
-    "text": "まだ半分くらい。面白いよ"
-  },
-  "night2_reply_yuna_2": {
-    "name": "ユナ",
-    "text": "……よかった"
-  },
-  "night2_reply_yuna_3": {
-    "name": "{name}",
-    "text": "*少しの沈黙。——そして。*"
-  },
-  "night2_reply_yuna_4": {
-    "name": "ユナ",
-    "text": "三番目の星を見て"
-  },
-  "night2_reply_yuna_5": {
-    "name": "{name}",
-    "text": "？"
-  },
-  "night2_reply_yuna_6": {
-    "name": "ユナ",
-    "text": "理由はまた今度"
-  },
-  "night2_reply_yuna_7": {
-    "name": "{name}",
-    "text": "*三つ目の星？——窓を開けて夜空を見上げる。三つ目がどれなのかはわからない。ユナらしい謎かけだ。——答えは教えないくせに、探したくなる人。*"
-  },
-  "night2_end_1": {
-    "name": "{name}",
-    "text": "*返信を送ってスマホを置いた。*"
-  },
-  "night2_flashback_1": {
-    "name": "{name}",
-    "text": "*ミンスの言葉がずっと頭を回っている。『前の学校でもこうだったの？』*"
-  },
-  "night2_flashback_2": {
-    "name": "{name}",
-    "text": "*ずいぶんスクロールした。3ヶ月前。——一枚の写真が目に入る。図書館の前で撮った集合写真。ソジョンが笑っている。僕の隣で。*"
-  },
-  "night2_flashback_3": {
-    "name": "{name}",
-    "text": "*あの頃、毎晩スマホを開いた。メモアプリに何かを書いては消してを繰り返した。——毎回、送信する直前で止まった。*"
-  },
-  "night2_flashback_4": {
-    "name": "{name}",
-    "text": "*そして3月のある日、朝礼の時間に隣の席のやつが言った。ソジョン、彼氏できたんだって*"
-  },
-  "night2_flashback_5": {
-    "name": "{name}",
-    "text": "*スマホのメモ帳のシミュレーションは38回目で止まっている。39回目はない。書く必要がなくなったから。*"
-  },
-  "night2_flashback_6": {
-    "name": "{name}",
-    "text": "*転校はソジョンのせいじゃない。父の仕事のせいだ。——でも転校が嫌じゃなかった。ソジョンが笑ってる廊下を毎日通らなくて済むから。*"
-  },
-  "night2_flashback_7": {
-    "name": "{name}",
-    "text": "*今度は後悔しないように言おう——この学校に来る時の誓いだった。*"
-  },
-  "night2_flashback_8": {
-    "name": "{name}",
-    "text": "*ギャラリーを閉じた。写真を消そうか迷って——残しておいた。消したらあの時の感情まで消えてしまいそうで。*"
-  },
-  "night2_end_2": {
-    "name": "{name}",
-    "text": "*二日目が終わった。初日は好奇心だった。この人たちがどんな人か気になった。*"
-  },
-  "night2_end_3": {
-    "name": "{name}",
-    "text": "*昨日は気になる程度だった。今日は——『会いたい』という言葉が喉まで上がってきて、引っ込んだ。*"
-  },
-  "night2_end_4": {
-    "name": "{name}",
-    "text": "*目を閉じる。——明日はもう少し正直にならないと。*"
-  },
-  "night2_seo_freetalk": {
-    "name": "ソヨン",
-    "text": "*ソヨンと夜のメッセージをやり取りしている。*",
-    "context": "2日目の夜、ソヨンとチャット中。昨日より会話が自然になった。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
-    "personality": "ソヨンはクールな生徒会長。夜は普段より素直な一面が出る。"
-  },
-  "night2_dain_freetalk": {
-    "name": "ダイン",
-    "text": "*ダインと夜のメッセージをやり取りしている。*",
-    "context": "2日目の夜、ダインとチャット中。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
-    "personality": "ダインは夜もテンションが高いが、たまに真面目になる。"
-  },
-  "night2_yuna_freetalk": {
-    "name": "ユナ",
-    "text": "*ユナと夜のメッセージをやり取りしている。*",
-    "context": "2日目の夜、ユナとチャット中。ユナがいつもより多く話している。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
-    "personality": "ユナは神秘的な文学少女。夜は壁が少し低くなる。メッセージが長くなれば心を開いた証拠。"
-  },
-  "night2_hidden_check": {
-    "name": "{name}",
-    "text": "*メッセンジャーの通知の間に——また別の通知が見える。*"
-  },
-  "night2_hidden_homeroom_1": {
-    "name": "{name}",
-    "text": "*担任先生から個人メッセージ。『{name}、今日は職員室に来てくれてありがとう。事務的なことは終わったからもう呼ばない。…でもつらかったらいつでもおいで』*"
-  },
-  "night2_hidden_homeroom_2": {
-    "name": "{name}",
-    "text": "*三行。感謝、距離、そしてまた近づく。——一人で綱引きしている。*"
-  },
-  "night2_hidden_homeroom_3": {
-    "name": "{name}",
-    "text": "*『もう呼ばない』と『いつでもおいで』が同じメッセージに。矛盾してるけど——この人らしい。*"
-  },
-  "night2_hidden_nurse_1": {
-    "name": "{name}",
-    "text": "*健康管理アプリの通知。『保健室記録: {name} — 肘擦り傷（軽度）。メモ: 絆創膏は明日の朝替えるね。絆創膏交換は医療行為だから拒否権なし ^^』*"
-  },
-  "night2_hidden_nurse_2": {
-    "name": "{name}",
-    "text": "*拒否権なし。——医療的強制なのか個人的関心なのか、絵文字が境界を曖昧にする。*"
-  },
-  "night2_reply_dain_react_high": {
-    "name": "ダイン",
-    "text": "うわあああ！！今マジで布団蹴ったwwww 明日絶対体育館来て！！"
-  },
-  "night2_reply_dain_react_default": {
-    "name": "ダイン",
-    "text": "ｗｗ了解〜おやすみ！"
-  },
-  "night2_reply_seo_react_high": {
-    "name": "ソヨン",
-    "text": "...思ったより面白い人だね。明日の昼、屋上で会わない？"
-  },
-  "night2_reply_seo_react_default": {
-    "name": "ソヨン",
-    "text": "ふ、了解。また明日。"
-  },
-  "night2_reply_yuna_react_high": {
-    "name": "ユナ",
-    "text": "...こんな時間に返信する人がいるんだ。明日、図書館に来る？"
-  },
-  "night2_reply_yuna_react_default": {
-    "name": "ユナ",
-    "text": "...うん。おやすみ。"
-  },
-  "night2_start_ins": {
-    "name": "{name}",
-    "text": "*三人。同時に。*"
-  },
-  "night2_reply_yuna_6_ins": {
-    "name": "{name}",
-    "text": "*三つ目の星？——窓を開けて夜空を見上げる。三つ目がどれなのかはわからない。*"
-  },
-  "night2_reply_yuna_6_ins2": {
-    "name": "{name}",
-    "text": "*ユナらしい謎かけだ。答えを教えてくれない人。——知りたくさせる人。*"
-  },
-  "night2_reply_yuna_6_ins3": {
-    "name": "{name}",
-    "text": "*メッセンジャーの通知の間に——担任先生から個人メッセージが来た。*"
-  },
-  "night2_reply_yuna_6_ins4": {
-    "name": "担任先生",
-    "text": "*{name}、今日は職員室に来てくれてありがとう*"
-  },
-  "night2_reply_yuna_6_ins5": {
-    "name": "担任先生",
-    "text": "*事務的なことは終わったから、もう呼び出さなくていいよ*"
-  },
-  "night2_reply_yuna_6_ins6": {
-    "name": "担任先生",
-    "text": "*…でも適応するのが辛かったら、いつでも来て*"
-  },
-  "night2_end_1_ins": {
-    "name": "{name}",
-    "text": "*二日目が終わった。*"
-  },
-  "night2_end_2_ins": {
-    "name": "{name}",
-    "text": "*今日は——ちょっと違う。好奇心じゃなくて、気になっている。何をしているのか、明日何を言うのか。*"
-  },
-  "night2_end_2_ins2": {
-    "name": "{name}",
-    "text": "*ミンスの言葉が何度も蘇る。前の学校でもこうだったのか？*"
-  },
-  "night2_flashback_6_ins": {
-    "name": "{name}",
-    "text": "*今度こそ後悔なく言おう。——この学校に来るとき決めたことだ。*"
-  },
-  "night2_flashback_6_ins2": {
-    "name": "{name}",
-    "text": "*今度こそ後悔なく言おう。——この学校に来るとき決めたことだ。*"
-  },
-  "night2_end_3_ins": {
-    "name": "{name}",
-    "text": "*問題は、その距離が思ったより速く縮まっていることだ。*"
-  },
-  "night2_end_4_ins": {
-    "name": "{name}",
-    "text": "*冷蔵庫を開けた。大したものはない。残りごはん、卵、のり。——明日何か作って持って行きたいと思った。誰に？ 分からない。ただ、持って行きたくなった。*"
-  },
-  "night2_end_4_ins2": {
-    "name": "{name}",
-    "text": "*適当に弁当を作った。うまくはない。丁寧とは言えないレベル。——でもやらないよりはマシだろう。*"
-  }
+    "night2_start": {
+        "name": "{name}",
+        "text": "*家に帰った。シャワーを浴びてベッドに横になったら——メッセンジャーの通知が溢れ出す。*"
+    },
+    "night2_msg_1": {
+        "name": "{name}",
+        "text": "*三人からメッセージが来ていた。*"
+    },
+    "night2_msg_dain_specific": {
+        "name": "ダイン",
+        "text": "ねえ！！今日のトッポッキ最高だった！！"
+    },
+    "night2_msg_dain_specific_2": {
+        "name": "ダイン",
+        "text": "明日も勝負しよ！！種目変えて！！"
+    },
+    "night2_msg_seo_specific": {
+        "name": "ソヨン",
+        "text": "今日はありがとう。おかげで早く終わったよ"
+    },
+    "night2_msg_seo_specific_2": {
+        "name": "ソヨン",
+        "text": "次もお願いするかもしれないから、覚悟しておいて"
+    },
+    "night2_msg_yuna_specific": {
+        "name": "ユナ",
+        "text": "……今日のあの曲。よかった"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "ユナ",
+        "text": "……また聴かせて"
+    },
+    "night2_msg_seo_general": {
+        "name": "ソヨン",
+        "text": "明日の昼、屋上開けておくよ。来て"
+    },
+    "night2_msg_dain_general": {
+        "name": "ダイン",
+        "text": "ねえ〜明日売店行こうよ！今日行けなかったの、まだ悔しい！"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "ソヨン",
+        "text": "お昼に屋上来る？風が気持ちいいよ"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "ソヨン",
+        "text": "明日屋上開けとくね。時間あったら来て"
+    },
+    "night2_msg_yuna_general": {
+        "name": "ユナ",
+        "text": "…明日、別館来る？"
+    },
+    "night2_msg_generic": {
+        "name": "ダイン",
+        "text": "ねえ！！明日なにする？！"
+    },
+    "night2_msg_generic_2": {
+        "name": "ソヨン",
+        "text": "明日の昼休み、空けておいて"
+    },
+    "night2_msg_generic_3": {
+        "name": "ユナ",
+        "text": "……明日、図書館に来る？"
+    },
+    "night2_msg_7": {
+        "name": "{name}",
+        "text": "*三人に同時に返信しなきゃいけない状況。——これが幸せなのか拷問なのかわからない。*"
+    },
+    "night2_choice": {
+        "name": "{name}",
+        "text": "*誰に先に返信しようか？*",
+        "choices": [
+            "ダインに先に返信する",
+            "ソヨンに先に返信する",
+            "ユナに先に返信する"
+        ]
+    },
+    "night2_reply_dain_1": {
+        "name": "{name}",
+        "text": "トッポッキ辛かったw"
+    },
+    "night2_reply_dain_2": {
+        "name": "ダイン",
+        "text": "www辛いの苦手なの？！"
+    },
+    "night2_reply_dain_3": {
+        "name": "ダイン",
+        "text": "明日は甘口にしよう！！"
+    },
+    "night2_reply_dain_4": {
+        "name": "ダイン",
+        "text": "あ、でも甘口はトッポッキじゃないかw"
+    },
+    "night2_reply_dain_5": {
+        "name": "{name}",
+        "text": "*また三行連続だ。この人は一文で終わることがない。*"
+    },
+    "night2_reply_seo_1": {
+        "name": "{name}",
+        "text": "呼んでくれたらまた行くよ"
+    },
+    "night2_reply_seo_2": {
+        "name": "ソヨン",
+        "text": "簡単に約束するのね"
+    },
+    "night2_reply_seo_3": {
+        "name": "{name}",
+        "text": "簡単な約束だから"
+    },
+    "night2_reply_seo_4": {
+        "name": "ソヨン",
+        "text": "お昼に屋上開けとくね。今度は本当に来て"
+    },
+    "night2_reply_seo_5": {
+        "name": "{name}",
+        "text": "*『自由』と言ったけど、行かなかったら何か起きそうなトーンだ。*"
+    },
+    "night2_reply_yuna_1": {
+        "name": "{name}",
+        "text": "まだ半分くらい。面白いよ"
+    },
+    "night2_reply_yuna_2": {
+        "name": "ユナ",
+        "text": "……よかった"
+    },
+    "night2_reply_yuna_3": {
+        "name": "{name}",
+        "text": "*少しの沈黙。——そして。*"
+    },
+    "night2_reply_yuna_4": {
+        "name": "ユナ",
+        "text": "三番目の星を見て"
+    },
+    "night2_reply_yuna_5": {
+        "name": "{name}",
+        "text": "？"
+    },
+    "night2_reply_yuna_6": {
+        "name": "ユナ",
+        "text": "理由はまた今度"
+    },
+    "night2_reply_yuna_7": {
+        "name": "{name}",
+        "text": "*三つ目の星？——窓を開けて夜空を見上げる。三つ目がどれなのかはわからない。ユナらしい謎かけだ。——答えは教えないくせに、探したくなる人。*"
+    },
+    "night2_end_1": {
+        "name": "{name}",
+        "text": "*返信を送ってスマホを置いた。*"
+    },
+    "night2_flashback_1": {
+        "name": "{name}",
+        "text": "*ミンスの言葉がずっと頭を回っている。『前の学校でもこうだったの？』*"
+    },
+    "night2_flashback_2": {
+        "name": "{name}",
+        "text": "*ずいぶんスクロールした。3ヶ月前。——一枚の写真が目に入る。図書館の前で撮った集合写真。ソジョンが笑っている。僕の隣で。*"
+    },
+    "night2_flashback_3": {
+        "name": "{name}",
+        "text": "*あの頃、毎晩スマホを開いた。メモアプリに何かを書いては消してを繰り返した。——毎回、送信する直前で止まった。*"
+    },
+    "night2_flashback_4": {
+        "name": "{name}",
+        "text": "*そして3月のある日、朝礼の時間に隣の席のやつが言った。ソジョン、彼氏できたんだって*"
+    },
+    "night2_flashback_5": {
+        "name": "{name}",
+        "text": "*スマホのメモ帳のシミュレーションは38回目で止まっている。39回目はない。書く必要がなくなったから。*"
+    },
+    "night2_flashback_6": {
+        "name": "{name}",
+        "text": "*転校はソジョンのせいじゃない。父の仕事のせいだ。——でも転校が嫌じゃなかった。ソジョンが笑ってる廊下を毎日通らなくて済むから。*"
+    },
+    "night2_flashback_7": {
+        "name": "{name}",
+        "text": "*今度は後悔しないように言おう——この学校に来る時の誓いだった。*"
+    },
+    "night2_flashback_8": {
+        "name": "{name}",
+        "text": "*ギャラリーを閉じた。写真を消そうか迷って——残しておいた。消したらあの時の感情まで消えてしまいそうで。*"
+    },
+    "night2_end_2": {
+        "name": "{name}",
+        "text": "*二日目が終わった。初日は好奇心だった。この人たちがどんな人か気になった。*"
+    },
+    "night2_end_3": {
+        "name": "{name}",
+        "text": "*昨日は気になる程度だった。今日は——『会いたい』という言葉が喉まで上がってきて、引っ込んだ。*"
+    },
+    "night2_end_4": {
+        "name": "{name}",
+        "text": "*目を閉じる。——明日はもう少し正直にならないと。*"
+    },
+    "night2_seo_freetalk": {
+        "name": "ソヨン",
+        "text": "*ソヨンと夜のメッセージをやり取りしている。*",
+        "context": "2日目の夜、ソヨンとチャット中。昨日より会話が自然になった。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
+        "personality": "ソヨンはクールな生徒会長。夜は普段より素直な一面が出る。"
+    },
+    "night2_dain_freetalk": {
+        "name": "ダイン",
+        "text": "*ダインと夜のメッセージをやり取りしている。*",
+        "context": "2日目の夜、ダインとチャット中。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
+        "personality": "ダインは夜もテンションが高いが、たまに真面目になる。"
+    },
+    "night2_yuna_freetalk": {
+        "name": "ユナ",
+        "text": "*ユナと夜のメッセージをやり取りしている。*",
+        "context": "2日目の夜、ユナとチャット中。ユナがいつもより多く話している。 トーン：昨日より距離が縮まった感覚。冗談が自然で心地よくなった。押し引きの楽しさ。まだ重い話はしない。",
+        "personality": "ユナは神秘的な文学少女。夜は壁が少し低くなる。メッセージが長くなれば心を開いた証拠。"
+    },
+    "night2_hidden_check": {
+        "name": "{name}",
+        "text": "*メッセンジャーの通知の間に——また別の通知が見える。*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*担任先生から個人メッセージ。『{name}、今日は職員室に来てくれてありがとう。事務的なことは終わったからもう呼ばない。…でもつらかったらいつでもおいで』*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*三行。感謝、距離、そしてまた近づく。——一人で綱引きしている。*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*『もう呼ばない』と『いつでもおいで』が同じメッセージに。矛盾してるけど——この人らしい。*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*健康管理アプリの通知。『保健室記録: {name} — 肘擦り傷（軽度）。メモ: 絆創膏は明日の朝替えるね。絆創膏交換は医療行為だから拒否権なし ^^』*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*拒否権なし。——医療的強制なのか個人的関心なのか、絵文字が境界を曖昧にする。*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "ダイン",
+        "text": "うわあああ！！今マジで布団蹴ったwwww 明日絶対体育館来て！！"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "ダイン",
+        "text": "ｗｗ了解〜おやすみ！"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "ソヨン",
+        "text": "...思ったより面白い人だね。明日の昼、屋上で会わない？"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "ソヨン",
+        "text": "ふ、了解。また明日。"
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "ユナ",
+        "text": "...こんな時間に返信する人がいるんだ。明日、図書館に来る？"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "ユナ",
+        "text": "...うん。おやすみ。"
+    },
+    "night2_start_ins": {
+        "name": "{name}",
+        "text": "*三人。同時に。*"
+    },
+    "night2_reply_yuna_6_ins": {
+        "name": "{name}",
+        "text": "*三つ目の星？——窓を開けて夜空を見上げる。三つ目がどれなのかはわからない。*"
+    },
+    "night2_reply_yuna_6_ins2": {
+        "name": "{name}",
+        "text": "*ユナらしい謎かけだ。答えを教えてくれない人。——知りたくさせる人。*"
+    },
+    "night2_reply_yuna_6_ins3": {
+        "name": "{name}",
+        "text": "*メッセンジャーの通知の間に——担任先生から個人メッセージが来た。*"
+    },
+    "night2_reply_yuna_6_ins4": {
+        "name": "担任先生",
+        "text": "*{name}、今日は職員室に来てくれてありがとう*"
+    },
+    "night2_reply_yuna_6_ins5": {
+        "name": "担任先生",
+        "text": "*事務的なことは終わったから、もう呼び出さなくていいよ*"
+    },
+    "night2_reply_yuna_6_ins6": {
+        "name": "担任先生",
+        "text": "*…でも適応するのが辛かったら、いつでも来て*"
+    },
+    "night2_end_1_ins": {
+        "name": "{name}",
+        "text": "*二日目が終わった。*"
+    },
+    "night2_end_2_ins": {
+        "name": "{name}",
+        "text": "*今日は——ちょっと違う。好奇心じゃなくて、気になっている。何をしているのか、明日何を言うのか。*"
+    },
+    "night2_end_2_ins2": {
+        "name": "{name}",
+        "text": "*ミンスの言葉が何度も蘇る。前の学校でもこうだったのか？*"
+    },
+    "night2_end_3_ins": {
+        "name": "{name}",
+        "text": "*問題は、その距離が思ったより速く縮まっていることだ。*"
+    },
+    "night2_end_4_ins": {
+        "name": "{name}",
+        "text": "*冷蔵庫を開けた。大したものはない。残りごはん、卵、のり。——明日何か作って持って行きたいと思った。誰に？ 分からない。ただ、持って行きたくなった。*"
+    },
+    "night2_end_4_ins2": {
+        "name": "{name}",
+        "text": "*適当に弁当を作った。うまくはない。丁寧とは言えないレベル。——でもやらないよりはマシだろう。*"
+    }
 }

@@ -37,19 +37,19 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hey!! You're coming to the school store tomorrow, right?!"
+        "text": "Hey~ let's go to the store tomorrow! Still bummed we couldn't go today!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "I'll leave the rooftop open at lunch tomorrow"
+        "text": "Want to come to the rooftop at lunch? The breeze will be nice"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
-        "text": "I'll leave the rooftop open at lunch tomorrow. Come"
+        "text": "I'll leave the rooftop open tomorrow. Come if you have time"
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...Are you coming to the library tomorrow?"
+        "text": "...are you coming to the annex tomorrow?"
     },
     "night2_msg_generic": {
         "name": "Dain",
@@ -110,7 +110,7 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "I'll leave the rooftop open at lunch tomorrow. Come."
+        "text": "I'll leave the rooftop open at lunch. Actually come this time"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -297,14 +297,6 @@
     "night2_end_2_ins2": {
         "name": "{name}",
         "text": "*Minsu's words keep coming back. 'Were you like this at your old school?'*"
-    },
-    "night2_flashback_6_ins": {
-        "name": "{name}",
-        "text": "*'This time, I'll say what I want without regrets.' — That was the promise I made coming to this school.*"
-    },
-    "night2_flashback_6_ins2": {
-        "name": "{name}",
-        "text": "*'This time, I'll say what I want without regrets.' — That was the promise I made coming to this school.*"
     },
     "night2_end_3_ins": {
         "name": "{name}",

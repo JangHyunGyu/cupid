@@ -212,7 +212,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "{name}",
-        "text": "*Keine Ausrufezeichen. — Aus Dains Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
+        "text": "*Dain dreht den Kopf weg. Sie hat ihr Soboro-Brot nicht angerührt.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
@@ -358,8 +358,8 @@
         "text": "*Die Letzte legt ihres still ab.*"
     },
     "lunch3_expose_honest_4_ins": {
-        "name": "Seoyeon",
-        "text": "Ich will nicht eine deiner Optionen sein. Entweder bin ich deine einzige Antwort, oder ich bin nichts. — Halbe Sachen kann ich nicht."
+        "name": "{name}",
+        "text": "*Seoyeons Ausdruck verändert sich. — Immer noch ruhig, aber jetzt liegt etwas Scharfes darin.*"
     },
     "lunch3_expose_excuse_2_ins": {
         "name": "{name}",

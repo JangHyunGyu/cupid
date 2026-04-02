@@ -668,23 +668,11 @@
         "name": "{name}",
         "text": "*El pasillo del anexo. Ni un alma. — La puerta de la sala de lectura secreta está entreabierta.*"
     },
-    "after2_yuna_1_ins2": {
-        "name": "{name}",
-        "text": "*El pasillo del anexo. Ni un alma. — La puerta de la sala de lectura secreta está entreabierta.*"
-    },
     "after2_yuna_2_ins": {
         "name": "{name}",
         "text": "*Yuna levanta la vista. No se sorprende.*"
     },
-    "after2_yuna_2_ins2": {
-        "name": "{name}",
-        "text": "*Yuna levanta la vista. No se sorprende.*"
-    },
     "after2_yuna_8b_ins": {
-        "name": "{name}",
-        "text": "*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
-    },
-    "after2_yuna_8b_ins2": {
         "name": "{name}",
         "text": "*Me siento a su lado. Yuna me ofrece uno de sus auriculares.*"
     },

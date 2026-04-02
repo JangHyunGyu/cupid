@@ -518,5 +518,9 @@
     "confess_dain_no_4_ins50": {
         "name": "Yuna",
         "text": "*C'était bien*"
+    },
+    "confess_dain_no_4_nurse_skip": {
+        "name": "{name}",
+        "text": "*J'ai eu ma dernière consultation à l'infirmerie ce matin. — Ses yeux brillants sont encore gravés dans ma tête.*"
     }
 }

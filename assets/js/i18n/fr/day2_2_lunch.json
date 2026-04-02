@@ -423,7 +423,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Bi— Bien sûr que non ! C'est pas ça ! *mord un grand coup dans le pain soboro* Je demandais, c'est tout !!"
+        "text": "Q-quoi, ris pas ! *casse le pain soboro en deux et en pousse un morceau* ...Tiens, mange ça."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -596,5 +596,17 @@
     "lunch2_dain_end_ins31": {
         "name": "{name}",
         "text": "*Ce changement de voix à l'instant. — Est-ce que j'ai rêvé ?*"
+    },
+    "lunch2_dain_end_nurse_short1": {
+        "name": "Infirmière",
+        "text": "Voilà, c'est fait. La prochaine fois, essaie de ne pas te blesser."
+    },
+    "lunch2_dain_end_nurse_short2": {
+        "name": "{name}",
+        "text": "*J'ai mis le pansement et quitté l'infirmerie. — C'était plus accueillant que ça en avait l'air de l'extérieur.*"
+    },
+    "lunch2_dain_end_nurse_short3": {
+        "name": "{name}",
+        "text": "*Je pourrais peut-être revenir après les cours.*"
     }
 }
