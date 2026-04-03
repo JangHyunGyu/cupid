@@ -566,7 +566,7 @@
 | `day5_confessed` | Day 5 `after5_last_chance_choice` | 루트가 있지만 정식 고백 미수락/미거절 시, 플레이어가 "이번에는 고백하겠다" 선택 시 설정 |
 | `day3_has_multiple_dates` | Day 3 | 여러 명과 데이트한 경우 |
 | `day3_caught_multiple_dates` | Day 3 | 양다리가 점심/방과후에 실제로 들킨 경우 |
-| `ending_harem` | Day 5 자동 | 여러 명과 데이트했으나 들키지 않은 경우 자동 설정 |
+| `ending_harem` | Day 3 점심 | `lunch3_harem_1`에서 나눠 먹기로 균열을 덮고 넘어간 경우 설정 |
 
 ### 엔딩 분기 우선순위 (코드 구현 기준, 호감도 반영)
 | 우선순위 | 조건 | 결과 |
@@ -588,7 +588,7 @@
 | 15 | `day4_waited` | **FRIEND END** (고백 보류) |
 | 16 | 기본값 (위 조건 모두 미충족, 또는 last chance에서 침묵 선택) | **ALONE END** |
 
-> **엔딩 총 수**: PERFECT(3) + TRUE LOVE(3) + GOOD(3) + BITTERSWEET(3) + 담임PERFECT/GOOD(2) + 보건PERFECT/GOOD(2) + HAREM + MAYHEM + GOOD양다리구제 + GOOD뒤늦은고백 + FRIEND고백실패 + FRIEND보류 + ALONE = **총 23종**
+> **엔딩 총 수**: PERFECT(3) + TRUE LOVE(3) + GOOD(3) + BITTERSWEET(3) + 담임 PERFECT/TRUE/GOOD(3) + 보건 PERFECT/TRUE/GOOD(3) + HAREM + MAYHEM + GOOD(뒤늦은 고백) + CONFESS FAIL + FRIEND + ALONE = **총 24종**
 
 ### 히든 루트 해금 조건 요약
 | 캐릭터 | 해금 조건 | 해금 플래그 |

@@ -525,11 +525,27 @@
     },
     "friend_3": {
         "name": "{name}",
+        "text": "*Hubo momentos en los que de verdad podría haber dicho que me gustaba. Y aun así, otra vez elegí la expresión más segura.*"
+    },
+    "friend_route_check": {
+        "name": "Sistema",
         "text": ""
     },
     "friend_4": {
         "name": "{name}",
         "text": "*Saliendo por la puerta del colegio, hay un mensaje en mi móvil. 'Gracias por hoy jaja' — El tono de un amigo. Un tono perfectamente amistoso.*"
+    },
+    "friend_4_seo": {
+        "name": "{name}",
+        "text": "*Cuando cruzo la puerta del colegio, llega un mensaje. 'Gracias a ti, hoy fue menos incómodo. Llega bien.' Es amable, pero sin grietas. El tono exacto de alguien que elige la línea y la mantiene.*"
+    },
+    "friend_4_yuna": {
+        "name": "{name}",
+        "text": "*Cuando cruzo la puerta del colegio, llega un mensaje. '...Gracias. Por hoy.' Es corto. Hay un punto al final. Antes me habría acelerado el corazón; ahora se siente como una línea que no debo cruzar.*"
+    },
+    "friend_4_dain": {
+        "name": "{name}",
+        "text": "*Cuando cruzo la puerta del colegio, llega un mensaje. '¡Oye, vuelve con cuidado! ¡Gracias por hoy!' Los signos de exclamación han vuelto. Es un alivio, y aun así se siente más frío. Son signos de exclamación para una amiga.*"
     },
     "friend_5": {
         "name": "{name}",

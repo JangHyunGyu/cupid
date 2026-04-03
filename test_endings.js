@@ -205,7 +205,9 @@ const tests = [
     expected: 'good_5_cg_dain',
     affinities: { Dain: 55 },
     flags: ['route_dain', 'day4_waited'],
-    choices: { after5_last_chance_choice: 0 }
+    choices: { after5_last_chance_choice: 0 },
+    required: ['after5_confess_react_dain'],
+    forbidden: ['after5_confess_react_dain_low']
   },
   {
     name: 'Confess Fail(Seoyeon)',
@@ -213,14 +215,17 @@ const tests = [
     expected: 'day5_ending_confess_fail',
     affinities: { Seoyeon: 30 },
     flags: ['route_seoyeon', 'day4_waited'],
-    choices: { after5_last_chance_choice: 0 }
+    choices: { after5_last_chance_choice: 0 },
+    required: ['after5_last_chance_seo_low_1', 'after5_confess_react_seo_low'],
+    forbidden: ['after5_confess_react_seo']
   },
   {
     name: 'Friend(Yuna Waited)',
     start: 'after5_ending_check',
     expected: 'day5_ending_friend',
     flags: ['route_yuna', 'day4_waited'],
-    choices: { after5_last_chance_choice: 1 }
+    choices: { after5_last_chance_choice: 1 },
+    required: ['after5_last_chance_yuna_low_1', 'friend_4_yuna']
   },
 
   {
@@ -255,14 +260,16 @@ for (const test of tests) {
   const state = buildState(test);
   const trail = follow(test.start || 'ending_start', state, { choiceSelections: test.choices || {} });
   const reached = trail.includes(test.expected);
+  const requiredMisses = (test.required || []).filter(sceneId => !trail.includes(sceneId));
   const forbiddenHits = (test.forbidden || []).filter(sceneId => trail.includes(sceneId));
 
-  if (reached && forbiddenHits.length === 0) {
+  if (reached && requiredMisses.length === 0 && forbiddenHits.length === 0) {
     console.log('PASS ' + test.name + ' -> ' + test.expected);
     passed++;
   } else {
     console.log('FAIL ' + test.name + ' -> ' + test.expected);
     console.log('  trail: ' + trail.join(' -> '));
+    if (requiredMisses.length > 0) console.log('  missing: ' + requiredMisses.join(', '));
     if (forbiddenHits.length > 0) console.log('  forbidden: ' + forbiddenHits.join(', '));
     console.log('  flags: ' + Object.keys(state.flags).filter(flag => state.flags[flag]).join(', '));
     console.log('  affinity: ' + JSON.stringify(state.stats));

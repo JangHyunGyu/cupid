@@ -64,7 +64,7 @@ Object.assign(SCENARIO[4], {
         "character": null,
         "branches": [
             { "condition": "homeroom_day3", "next": "morning4_manuscript_check" },
-            { "condition": "nurse_route_unlocked && nurse_day4", "next": "hidden_nurse_d4_morning_1" },
+            { "condition": "nurse_day4", "next": "hidden_nurse_d4_morning_1" },
             { "next": "hidden_nurse_d4_check" }
         ]
     },
@@ -416,7 +416,8 @@ Object.assign(SCENARIO[4], {
             { "condition": "route_seoyeon", "next": "date_seo_1" },
             { "condition": "accepted_dain_date", "next": "date_dain_1" },
             { "condition": "accepted_yuna_date", "next": "date_yuna_1" },
-            { "condition": "accepted_seoyeon_date", "next": "date_seo_1" }
+            { "condition": "accepted_seoyeon_date", "next": "date_seo_1" },
+            { "next": "date_seo_1" }
         ]
     },
     "minsu_cheer_4_ins": {

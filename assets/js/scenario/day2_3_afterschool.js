@@ -325,7 +325,8 @@ const _scenes = {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":50,"next":"after2_seo_neck_high"},{"minAffinity":-100,"next":"after2_seo_neck_low"}]
+        "affinityBranches": [{"minAffinity":50,"next":"after2_seo_neck_high"},{"minAffinity":-100,"next":"after2_seo_neck_low"}],
+        "next": "after2_seo_neck_low"
     },
     "after2_seo_neck_high": {
         "background": "assets/images/background/teacher_office.png",
@@ -751,6 +752,7 @@ const _scenes = {
     "hidden_nurse_d2_freetalk": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
+        "type": "free_talk",
         "next": "after2_choice"
     },
     "after2_dain_9_ins": {

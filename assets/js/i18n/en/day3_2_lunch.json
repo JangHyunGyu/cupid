@@ -99,7 +99,7 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*The three of us shared. Awkward, but — not bad. Nobody got mad. Strangely, it seems like a world where this is possible does exist.*"
+        "text": "*The three of us shared it. No one gets angry right away. Still, none of them looks comfortable. We only pushed it off for today.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*I suggested we all share. Awkward, but not bad. All three are smiling. Whether it's real or an act, I can't tell.*"
+        "text": "*I suggested we all share. There are smiles, but the air feels strangely heavy. All three of them are pretending this is fine.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {

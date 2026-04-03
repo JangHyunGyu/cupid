@@ -325,7 +325,7 @@ const _scenes = {
     },
     "wall_dain_pre_low_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_laugh.png","opacity":0.35}},
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "wall_dain_2"
     },
     "wall_dain_2": {

@@ -289,5 +289,76 @@
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_dain_check": {},
-    "after5_ending_check": {}
+    "after5_ending_check": {},
+    "after5_last_chance_route_check": {},
+    "after5_last_chance_seo_aff_check": {},
+    "after5_last_chance_dain_aff_check": {},
+    "after5_last_chance_yuna_aff_check": {},
+    "after5_last_chance_seo_low_1": {
+        "name": "{name}",
+        "text": "Seoyeon."
+    },
+    "after5_last_chance_seo_low_2": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon se retourne. Ses pieds sont à moitié tournés, prêts à partir à tout moment.* ...Quoi."
+    },
+    "after5_last_chance_dain_low_1": {
+        "name": "{name}",
+        "text": "Dain."
+    },
+    "after5_last_chance_dain_low_2": {
+        "name": "Dain",
+        "text": "*Dain s'arrête, mais elle n'arrive pas à sourire.* ...Quoi."
+    },
+    "after5_last_chance_yuna_1": {
+        "name": "{name}",
+        "text": "Yuna."
+    },
+    "after5_last_chance_yuna_2": {
+        "name": "{name}",
+        "text": "*Yuna s'arrête. Elle serre le livre contre sa poitrine. Il lui faut environ deux secondes pour se retourner.*"
+    },
+    "after5_last_chance_yuna_3": {
+        "name": "Yuna",
+        "text": "...Tu es revenu."
+    },
+    "after5_last_chance_yuna_4": {
+        "name": "{name}",
+        "text": "*Je n'ai rien préparé à dire, mais étrangement, cette fois je ne veux pas fuir. Yuna ne me presse pas.*"
+    },
+    "after5_last_chance_yuna_5": {
+        "name": "Yuna",
+        "text": "...Cette fois, je resterai pour écouter."
+    },
+    "after5_last_chance_yuna_6": {
+        "name": "{name}",
+        "text": "*Une courte phrase. Mais ces mots me poussent en avant. Yuna ne détourne pas le regard.*"
+    },
+    "after5_last_chance_yuna_7": {
+        "name": "{name}",
+        "text": "*Avec elle, une seule ligne compte plus qu'une longue explication. Le problème — c'est ma ligne à moi.*"
+    },
+    "after5_last_chance_yuna_low_1": {
+        "name": "{name}",
+        "text": "Yuna."
+    },
+    "after5_last_chance_yuna_low_2": {
+        "name": "Yuna",
+        "text": "*Yuna se retourne lentement. Ses bras se resserrent autour du livre qu'elle tient.* ...Quoi."
+    },
+    "after5_confess_aff_seo": {},
+    "after5_confess_aff_dain": {},
+    "after5_confess_aff_yuna": {},
+    "after5_confess_react_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Elle reste silencieuse un long moment.* ...Merci. Mais je ne crois pas pouvoir faire semblant qu'une phrase arrange tout."
+    },
+    "after5_confess_react_dain_low": {
+        "name": "Dain",
+        "text": "*Elle reprend son souffle.* ...J'ai entendu. Mais je ne peux pas encore sourire tout de suite."
+    },
+    "after5_confess_react_yuna_low": {
+        "name": "Yuna",
+        "text": "*Elle plie le mot dans sa main.* ...Je l'ai lu. Mais je ne peux pas encore décider de la fin."
+    }
 }

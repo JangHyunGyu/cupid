@@ -525,11 +525,27 @@
     },
     "friend_3": {
         "name": "{name}",
+        "text": "*There definitely were moments when I could have said I liked her. But once again, I chose the safest expression.*"
+    },
+    "friend_route_check": {
+        "name": "System",
         "text": ""
     },
     "friend_4": {
         "name": "{name}",
         "text": "*Walking out the school gate, there's a message on my phone. 'Thanks for today lol' — The tone of a friend. The perfectly friendly tone.*"
+    },
+    "friend_4_seo": {
+        "name": "{name}",
+        "text": "*As I leave the school gate, a message comes in. 'Thanks to you, today was less awkward. Get home safe.' Kind, but airtight. It's exactly the tone of someone choosing the line and keeping it.*"
+    },
+    "friend_4_yuna": {
+        "name": "{name}",
+        "text": "*As I leave the school gate, a message comes in. '...Thanks. For today.' It's short. There's a period at the end. A line that would've thrilled me before now feels like a boundary.*"
+    },
+    "friend_4_dain": {
+        "name": "{name}",
+        "text": "*As I leave the school gate, a message comes in. 'Hey, get home safe! Thanks for today!' The exclamation marks are back. That's a relief, and somehow colder. They're the exclamation marks she sends a friend.*"
     },
     "friend_5": {
         "name": "{name}",

@@ -29,7 +29,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             "branches": [
                 { "condition": "route_seoyeon", "next": "ending_aff_check_seo" },
                 { "condition": "route_yuna", "next": "ending_aff_check_yuna" },
-                { "condition": "route_dain", "next": "ending_aff_check_dain" }
+                { "condition": "route_dain", "next": "ending_aff_check_dain" },
+                { "next": "day5_ending_alone" }
             ]
         },
         "ending_aff_check_seo": {
@@ -790,7 +791,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             "branches": [
                 { "condition": "route_seoyeon", "next": "confess_fail_cg_seo" },
                 { "condition": "route_yuna", "next": "confess_fail_cg_yuna" },
-                { "condition": "route_dain", "next": "confess_fail_cg_dain" }
+                { "condition": "route_dain", "next": "confess_fail_cg_dain" },
+                { "next": "confess_fail_cg_seo" }
             ]
         },
         "confess_fail_cg_seo": {
@@ -852,9 +854,34 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "friend_3": {
             "background": "assets/images/background/park.png",
             "character": null,
-            "next": "friend_4"
+            "next": "friend_route_check"
+        },
+        "friend_route_check": {
+            "background": "assets/images/background/park.png",
+            "character": null,
+            "branches": [
+                { "condition": "route_seoyeon", "next": "friend_4_seo" },
+                { "condition": "route_yuna", "next": "friend_4_yuna" },
+                { "condition": "route_dain", "next": "friend_4_dain" },
+                { "next": "friend_4" }
+            ]
         },
         "friend_4": {
+            "background": "assets/images/background/school.png",
+            "character": null,
+            "next": "friend_5"
+        },
+        "friend_4_seo": {
+            "background": "assets/images/background/school.png",
+            "character": null,
+            "next": "friend_5"
+        },
+        "friend_4_yuna": {
+            "background": "assets/images/background/school.png",
+            "character": null,
+            "next": "friend_5"
+        },
+        "friend_4_dain": {
             "background": "assets/images/background/school.png",
             "character": null,
             "next": "friend_5"
