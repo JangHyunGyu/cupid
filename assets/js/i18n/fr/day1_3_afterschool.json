@@ -224,7 +224,7 @@
         "name": "Professeure principale",
         "text": "*En train de discuter avec la prof principale dans le couloir.*",
         "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
-        "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Début de trentaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
+        "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Fin de la vingtaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",

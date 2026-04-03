@@ -148,6 +148,7 @@ const _scenes = {
         "branches": [
             { "condition": "ate_lunch_seoyeon", "next": "after_end" },
             { "condition": "chose_seoyeon_lunch", "next": "after_end" },
+            { "condition": "chose_dain_lunch", "next": "after_end" },
             { "next": "after_miss_seoyeon_1" }
         ]
     },

@@ -84,8 +84,21 @@
         "text": "*Comment devrais-je réagir ?*",
         "choices": [
             "Ne me dis pas que tu es venue en avance parce que tu t'intéresses à moi ?",
-            "C'est combien, la visite guidée ?"
+            "C'est combien, la visite guidée ?",
+            "Ça ira. Je vais me débrouiller tout seul."
         ]
+    },
+    "choice_dismiss_1": {
+        "name": "Seoyeon",
+        "text": "*Elle s'arrête. Tourne légèrement la tête pour jeter un regard en arrière.*"
+    },
+    "choice_dismiss_2": {
+        "name": "Seoyeon",
+        "text": "Ah bon ? D'accord. Bonne chance alors."
+    },
+    "choice_dismiss_3": {
+        "name": "{name}",
+        "text": "*Seoyeon se retourne en premier. Pas de geste de la main cette fois.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -319,13 +332,17 @@
         "name": "{name}",
         "text": "*Cette hésitation. Une demi-seconde. Sûrement rien, mais ça reste en tête.*"
     },
+    "hallway_7": {
+        "name": "Seoyeon",
+        "text": "Ah, le déjeuner. Tu ne sais pas où est la cantine, non ? Viens avec moi."
+    },
     "hallway_13_ins": {
         "name": "{name}",
         "text": "*Son dos est droit. Parfaitement droit. — Comme si c'était répété. Ce qui se cache derrière cette décontraction m'a rendu un peu curieux.*"
     },
     "classroom_2_ins": {
         "name": "{name}",
-        "text": "*La professeure se tient devant l'estrade. Début de trentaine. Un bouton de son cardigan est défait. Son expression est détachée, mais — ses yeux passent chaque élève en revue.*"
+        "text": "*La professeure se tient devant l'estrade. Fin de la vingtaine. Son cardigan est ouvert depuis le début. Son expression est détachée, mais — ses yeux passent chaque élève en revue.*"
     },
     "classroom_3_ins": {
         "name": "{name}",

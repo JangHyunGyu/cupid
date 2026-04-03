@@ -84,8 +84,21 @@
         "text": "*What do I say to that?*",
         "choices": [
             "Don't tell me you came out early because you're interested in me?",
-            "How much is the guide fee?"
+            "How much is the guide fee?",
+            "I'm good. I'll just wander around on my own."
         ]
+    },
+    "choice_dismiss_1": {
+        "name": "Seoyeon",
+        "text": "*She stops. Turns her head slightly to glance back.*"
+    },
+    "choice_dismiss_2": {
+        "name": "Seoyeon",
+        "text": "Oh. Sure. Have fun then."
+    },
+    "choice_dismiss_3": {
+        "name": "{name}",
+        "text": "*Seoyeon turns away first. No wave this time.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -319,13 +332,17 @@
         "name": "{name}",
         "text": "*That hesitation. Half a second. Probably nothing, but somehow it sticks.*"
     },
+    "hallway_7": {
+        "name": "Seoyeon",
+        "text": "Oh, lunch. You don't know where the cafeteria is, right? Come with me."
+    },
     "hallway_13_ins": {
         "name": "{name}",
         "text": "*Her back is straight. Perfectly straight. — As if practiced. I got a little curious about what's behind that composure.*"
     },
     "classroom_2_ins": {
         "name": "{name}",
-        "text": "*The homeroom teacher stands at the podium. Early thirties. One button on her cardigan is undone. Her expression is indifferent, but — her eyes are scanning each student one by one.*"
+        "text": "*The homeroom teacher stands at the podium. Late twenties. Her cardigan hangs open from the start. Her expression is indifferent, but — her eyes are scanning each student one by one.*"
     },
     "classroom_3_ins": {
         "name": "{name}",

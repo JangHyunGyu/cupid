@@ -84,8 +84,21 @@
         "text": "*Wie soll ich reagieren?*",
         "choices": [
             "Sag bloß, du bist früher gekommen, weil du dich für mich interessierst?",
-            "Was kostet die Führung?"
+            "Was kostet die Führung?",
+            "Schon gut. Ich schau mich einfach alleine um."
         ]
+    },
+    "choice_dismiss_1": {
+        "name": "Seoyeon",
+        "text": "*Sie bleibt stehen. Dreht den Kopf leicht, um zurückzuschauen.*"
+    },
+    "choice_dismiss_2": {
+        "name": "Seoyeon",
+        "text": "Ach so? Na gut. Dann viel Spaß."
+    },
+    "choice_dismiss_3": {
+        "name": "{name}",
+        "text": "*Seoyeon dreht sich zuerst um. Diesmal kein Winken.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -319,13 +332,17 @@
         "name": "{name}",
         "text": "*Dieses Zögern. Eine halbe Sekunde. Wahrscheinlich nichts, aber irgendwie bleibt es hängen.*"
     },
+    "hallway_7": {
+        "name": "Seoyeon",
+        "text": "Ach, Mittagessen. Du weißt bestimmt nicht, wo die Mensa ist, oder? Komm mit."
+    },
     "hallway_13_ins": {
         "name": "{name}",
         "text": "*Ihre Haltung ist gerade. Perfekt gerade. — Wie einstudiert. Was hinter dieser Gelassenheit steckt, hat mich ein wenig neugierig gemacht.*"
     },
     "classroom_2_ins": {
         "name": "{name}",
-        "text": "*Die Klassenlehrerin steht am Pult. Anfang dreißig. Ein Knopf ihrer Strickjacke ist offen. Ihr Ausdruck ist gleichgültig, aber — ihre Augen mustern jeden einzelnen Schüler.*"
+        "text": "*Die Klassenlehrerin steht am Pult. Ende zwanzig. Ihre Strickjacke ist von Anfang an offen. Ihr Ausdruck ist gleichgültig, aber — ihre Augen mustern jeden einzelnen Schüler.*"
     },
     "classroom_3_ins": {
         "name": "{name}",

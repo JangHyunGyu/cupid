@@ -224,7 +224,7 @@
         "name": "Profesora",
         "text": "*Conversando con la profesora en el pasillo.*",
         "context": "Día 1 después de clases. La profesora detuvo al estudiante nuevo para ver cómo se adaptaba. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
-        "personality": "La profesora esconde calidez detrás de humor seco. Treinta y pocos, cabello largo castaño ondulado y cárdigan beige. Envuelve sus sentimientos en palabras como \"trabajo\" e \"interés profesional\". Fue aspirante a novelista."
+        "personality": "La profesora esconde calidez detrás de humor seco. Finales de los veinte, cabello largo castaño ondulado y cárdigan beige. Envuelve sus sentimientos en palabras como \"trabajo\" e \"interés profesional\". Fue aspirante a novelista."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",

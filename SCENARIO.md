@@ -180,7 +180,7 @@
 - 배경: `school.png`
 - 다음: `seoyeon_meet_9`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *피식 웃는다. 입꼬리만 올라가는 웃음. — 나도 모르게 따라 웃고 있었다.*
 
 ---
@@ -199,9 +199,37 @@
 - 선택지:
   1. "혹시 나한테 관심 있어서 먼저 나온 거 아니고?" → `choice_flirt_1` | Seoyeon +5
   2. "가이드비는 얼마야?" → `choice_joke_1` | Seoyeon +3
+  3. "괜찮아, 대충 둘러보면 되지 뭐." → `choice_dismiss_1` | Seoyeon -3
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *어떻게 반응할까?*
+
+---
+
+### `choice_dismiss_1`
+- 배경: `school.png`
+- 다음: `choice_dismiss_2`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: *걸음을 멈춘다. 살짝 고개를 돌려 이쪽을 본다.*
+
+---
+
+### `choice_dismiss_2`
+- 배경: `school.png`
+- 다음: `choice_dismiss_3`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 그래? 알겠어. 그럼 잘 다녀.
+
+---
+
+### `choice_dismiss_3`
+- 배경: `school.png`
+- 다음: `hallway_1`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: *서연이 먼저 돌아선다. 아까와는 달리 손짓은 없었다.*
 
 ---
 
@@ -209,7 +237,7 @@
 - 배경: `school.png`
 - 다음: `choice_flirt_2`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *서연이 걸음을 멈추고 돌아본다. 놀라는 게 아니라 — 재밌다는 표정.*
 
 ---
@@ -254,7 +282,7 @@
 - 배경: `school.png`
 - 다음: `choice_flirt_7`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_normal.png`
 **서연**: 아직 영광인지 재앙인지 모르는 거지.
 
 ---
@@ -360,10 +388,19 @@
 
 ### `hallway_6_ins2`
 - 배경: `school_hallway.png`
-- 다음: `hallway_8`
+- 다음: `hallway_7`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *멈칫한 거. 0.5초. 별거 아닌 거겠지만, 왠지 기억에 남는다.*
+
+---
+
+### `hallway_7`
+- 배경: `school_hallway.png`
+- 다음: `hallway_8`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 아, 점심. 학식 어디인지 모르지? 같이 가.
 
 ---
 
@@ -372,7 +409,7 @@
 - 다음: `hallway_9`
 
 - 캐릭터: `seyoun_shy.png`
-**{name}**: *갑자기 점심 약속이 생겼다. — 거절한 적 없는데.*
+**{name}**: *갑자기 점심 약속이 생겼다. — 대답한 적 없는데.*
 
 ---
 
@@ -455,7 +492,7 @@
 - 다음: `classroom_3`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *교탁 앞에 담임선생님이 서 있다. 30대 초반. 가디건 단추가 하나 풀려 있다. 표정은 무심한데 — 눈은 학생 하나하나를 훑고 있다.*
+**{name}**: *교탁 앞에 담임선생님이 서 있다. 20대 후반. 가디건 단추는 처음부터 열려 있다. 표정은 무심한데 — 눈은 학생 하나하나를 훑고 있다.*
 
 ---
 
@@ -598,7 +635,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_yuna_1`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `teacher_angry.png`
 **{name}**: *건조하게 말하지만 입꼬리가 미세하게 올라가 있다. 이 사람, 무표정이 기본값인데 가끔 버그가 난다.*
 
 ---
@@ -643,7 +680,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_seat_2`
 
-- 캐릭터: `yuna_bored.png`
+- 캐릭터: `teacher_normal.png`
 **{name}**: *담임이 빈자리를 가리킨다.*
 
 ---
@@ -742,7 +779,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_dain_talk_7`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: 나 볼 머신이야?
 
 ---
@@ -863,7 +900,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_4_ins`
 
-- 캐릭터: `없음`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *복도 끝에서 서연이 눈을 마주치고 손짓한다. 옥상 쪽을 가리키며.*
 
 ---
@@ -872,7 +909,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_5`
 
-- 캐릭터: `없음`
+- 캐릭터: `dain_normal.png`
 **{name}**: *옆에서 다인이 팔을 잡는다.*
 
 ---
@@ -882,7 +919,7 @@
 - 다음: `lunch_start_6`
 
 - 캐릭터: `dain_normal.png`
-**다인**: 야! 밥 먹었어?! 매점 가자! 내가 빵 사줄게... 진 사람이!
+**다인**: 야! 밥 먹었어?! 매점 가자! 빵 내기하자, 진 사람이 사는 거!
 
 ---
 
@@ -1322,7 +1359,7 @@
 - 다음: `lunch_dain_1_aff_default`
 
 - 캐릭터: `dain_laugh.png`
-**다인**: 오! 왔어 왔어! 아까 자기소개할 때 본 거 맞지? 같이 먹자!
+**다인**: 자, 도착! 여기가 매점이야. 뭐 먹을지 골라봐!
 
 ---
 
@@ -1331,7 +1368,7 @@
 - 다음: `lunch_dain_2`
 
 - 캐릭터: `dain_laugh.png`
-**다인**: 야!! 여기여기!! *자리를 탁 치며* 아까 자기소개 진짜 웃겼어ㅋㅋ 같이 먹자!
+**다인**: 야!! 여기여기!! *매점 진열대를 탁 치며* 아까 자기소개 진짜 웃겼어ㅋㅋ 자, 골라!
 
 ---
 
@@ -1340,7 +1377,7 @@
 - 다음: `lunch_dain_2`
 
 - 캐릭터: `dain_normal.png`
-**다인**: 어, 전학생이지? 밥 먹었어?
+**다인**: 자, 왔다. 뭐 먹을래?
 
 ---
 
@@ -2295,6 +2332,7 @@
 - 분기:
   - [`ate_lunch_seoyeon`] → `after_end`
   - [`chose_seoyeon_lunch`] → `after_end`
+  - [`chose_dain_lunch`] → `after_end`
   - [기본] → `after_miss_seoyeon_1`
 
 <!-- i18n -->
@@ -2770,7 +2808,7 @@
 - 타입: `free_talk`
 - 다음: `night_start`
 - 컨텍스트: "Day 1 방과후. 전학 첫날 방과후에 담임이 적응 확인을 위해 불러세웠다. 주인공이 솔직하게 정신없다고 대답한 뒤의 대화. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주."
-- 성격: "담임은 건조한 유머와 무뚝뚝함 뒤에 세심함을 숨기는 30대 초반 여자 교사. 갈색 웨이브 긴 머리에 베이지 가디건 차림. 자기 마음을 '업무'나 '교육적 관심'으로 포장하는 습관. 소설가 지망생이었던 과거가 있다."
+- 성격: "담임은 건조한 유머와 무뚝뚝함 뒤에 세심함을 숨기는 20대 후반 여자 교사. 갈색 웨이브 긴 머리에 베이지 가디건 차림. 자기 마음을 '업무'나 '교육적 관심'으로 포장하는 습관. 소설가 지망생이었던 과거가 있다."
 
 - 캐릭터: `teacher_normal.png`
 **담임**: *담임과 복도에서 대화 중.*
