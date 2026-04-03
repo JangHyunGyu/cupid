@@ -171,7 +171,7 @@
     },
     "hidden_nurse_d4_5": {
         "name": "School Nurse",
-        "text": "*Looking out the window* That's why I came here. A place where they call me 'Teacher' instead of just my title. — It's a small difference, but it's actually huge."
+        "text": "*Looking out the window* That's why I came here. A place where they call me 'teacher,' not 'school nurse.' — It's a small difference, but it meant a lot."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
@@ -191,7 +191,7 @@
     },
     "hidden_nurse_d4_6": {
         "name": "School Nurse",
-        "text": "Thanks. I finished a lot faster because of you. ...That matters."
+        "text": "Thanks. I finished much faster because of you. ...That's no small thing."
     },
     "hidden_nurse_d4_choice": {
         "name": "School Nurse",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d4_cafe_4_ins": {
         "name": "{name}",
-        "text": "*Déjà vu. She said something similar in the empty classroom yesterday. But today it's at a café, in casual clothes, more lightly. No — more seriously.*"
+        "text": "*Déjà vu. She said something similar in the empty classroom yesterday. But today, in a café and dressed casually, it sounds lighter. No — more serious.*"
     },
     "hidden_homeroom_d4_cafe_5_ins": {
         "name": "{name}",
@@ -567,7 +567,7 @@
     },
     "hidden_nurse_d4_4_ins9": {
         "name": "School Nurse",
-        "text": "Just teacher. No title attached. That felt nice."
+        "text": "You just call me 'teacher' — not 'school nurse.' I liked that."
     },
     "hidden_nurse_d4_4_ins10": {
         "name": "{name}",

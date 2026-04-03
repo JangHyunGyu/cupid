@@ -163,7 +163,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*There's an alert on the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back if symptoms persist tomorrow. Drink lots of water. — the ♥ is strictly medical concern ^^'*"
+        "text": "*There's an alert in the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back tomorrow if the symptoms continue. Drink plenty of water. — the ♥ is purely a medical concern ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
