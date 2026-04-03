@@ -3984,7 +3984,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_seo_5`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: 학생회장이 교실까지 인사하러 와?
 
 ---
@@ -3993,7 +3993,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_minsu_1`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_normal.png`
 **서연**: 지나가는 길이야. — 오늘도 재밌는 하루 되길.
 
 ---
@@ -4074,8 +4074,8 @@
 - 배경: `room_school.png`
 - 다음: `morning2_dain_claim_5`
 
-- 캐릭터: `dain_laugh.png`
-**다인**: 회장님도 전학생한테 관심 있어? 인기 많네!
+- 캐릭터: `dain_normal.png`
+**다인**: 회장님도 우리 전학생한테 관심 있어? 인기 많네!
 
 ---
 
@@ -4083,7 +4083,7 @@
 - 배경: `room_school.png`
 - 다음: `morning2_dain_claim_6`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: '우리' 전학생?
 
 ---
@@ -4524,7 +4524,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_dain_react_3`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_angry.png`
 **{name}**: *서연이 아무렇지 않게 걸어간다. 뒤에서 다인의 목소리.*
 
 ---
@@ -4533,7 +4533,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_dain_react_4`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_angry.png`
 **다인**: 야! 지금 뭐야?! 어깨 만진 거야?!
 
 ---
@@ -4542,7 +4542,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_dain_react_5`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_angry.png`
 **{name}**: 먼지 털어준 거야.
 
 ---
@@ -4551,7 +4551,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_dain_react_6`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_angry.png`
 **다인**: 먼지... 먼지가 진짜 있었어?!
 
 ---
@@ -4560,7 +4560,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_haeun_1`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_angry.png`
 **{name}**: *있었을 거다. 아마. — 중요한 건 그게 아닌 것 같지만.*
 
 ---
@@ -4632,7 +4632,7 @@
 - 배경: `school_hallway.png`
 - 다음: `morning2_haeun_6c`
 
-- 캐릭터: `haeun_worried.png`
+- 캐릭터: `haeun_normal.png`
 **하은**: 그래서 부탁인데요. — 회장님 흔들지 마세요. 그 분 지금 겨우 균형 잡고 있는 거거든요.
 
 ---
@@ -4711,10 +4711,23 @@
 ### `lunch2_seo_1b`
 - 배경: `top_school.png`
 - BGM: `sunset1.mp3`
-- 다음: `lunch2_seo_2b`
+- 다음: `lunch2_seo_2b_check`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *옥상. 처음 와보는 장소다. 바람이 시원하고, 시야가 탁 트여 있다. 서연이 도시락을 펼치고 있다.*
+
+---
+
+### `lunch2_seo_2b_check`
+- 배경: `top_school.png`
+- 분기:
+  - [`chose_dain_lunch`] → `lunch2_seo_2b_dain`
+  - [`chose_yuna_lunch`] → `lunch2_seo_2b_yuna`
+  - [기본] → `lunch2_seo_2b`
+
+- 캐릭터: `seyoun_normal.png`
+
+<!-- i18n -->
 
 ---
 
@@ -4725,6 +4738,96 @@
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 여기까지 올라왔네. 용기 있다.
+
+---
+
+### `lunch2_seo_2b_dain`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_3b_dain`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 어제는 매점 쪽이더니. 오늘은 여기까지 왔네.
+
+---
+
+### `lunch2_seo_3b_dain`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_4b_dain`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: 어제는 다인이 끌고 갔고, 오늘은 내가 올라오고 싶었어.
+
+---
+
+### `lunch2_seo_4b_dain`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_5b_dain`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: ...그건 좀 다르네.
+
+---
+
+### `lunch2_seo_5b_dain`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_6b_dain`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: 바람도 좋고. 네 도시락도 계속 생각났고.
+
+---
+
+### `lunch2_seo_6b_dain`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_7`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: ...생각보다 솔직하네.
+
+---
+
+### `lunch2_seo_2b_yuna`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_3b_yuna`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 쪽지까지 받고도 옥상으로 왔네.
+
+---
+
+### `lunch2_seo_3b_yuna`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_4b_yuna`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: 어제는 조용한 쪽이었으니까, 오늘은 네 쪽이 궁금했어.
+
+---
+
+### `lunch2_seo_4b_yuna`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_5b_yuna`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: ...내 쪽?
+
+---
+
+### `lunch2_seo_5b_yuna`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_6b_yuna`
+
+- 캐릭터: `seyoun_normal.png`
+**{name}**: 여기 바람이랑, 회장님 도시락이 어떤 조합인지 궁금했거든.
+
+---
+
+### `lunch2_seo_6b_yuna`
+- 배경: `top_school.png`
+- 다음: `lunch2_seo_7`
+
+- 캐릭터: `seyoun_laugh.png`
+**서연**: *피식* 그거, 묘하게 설득력 있네.
 
 ---
 
@@ -5054,7 +5157,9 @@
 ### `lunch2_dain_1_check`
 - 배경: `school_hallway.png`
 - 분기:
+  - [`chose_seoyeon_lunch`] → `lunch2_dain_1b_seo`
   - [`chose_dain_lunch`] → `lunch2_dain_1`
+  - [`chose_yuna_lunch`] → `lunch2_dain_1b_yuna`
   - [기본] → `lunch2_dain_1b`
 
 - 캐릭터: `없음`
@@ -5069,6 +5174,82 @@
 
 - 캐릭터: `dain_normal.png`
 **{name}**: *다인과 매점으로. 첫 가위바위보 대결.*
+
+---
+
+### `lunch2_dain_1b_seo`
+- 배경: `store.png`
+- BGM: `daily2.mp3`
+- 다음: `lunch2_dain_2b_seo`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *다인과 매점으로. 어제는 도시락이었고, 오늘은 빵 냄새가 먼저 난다.*
+
+---
+
+### `lunch2_dain_2b_seo`
+- 배경: `store.png`
+- 스탯: Dain +8
+- 다음: `lunch2_dain_3b_seo`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 오, 회장님 도시락 말고 오늘은 내 쪽이네?!
+
+---
+
+### `lunch2_dain_3b_seo`
+- 배경: `store.png`
+- 다음: `lunch2_dain_4b_seo`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: 어제는 회장님 페이스였고, 오늘은 네 페이스도 궁금했어.
+
+---
+
+### `lunch2_dain_4b_seo`
+- 배경: `store.png`
+- 다음: `lunch2_dain_5b`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 좋아!! 그 말 취소 못 해! 바로 소보로 걸고 한 판!!
+
+---
+
+### `lunch2_dain_1b_yuna`
+- 배경: `store.png`
+- BGM: `daily2.mp3`
+- 다음: `lunch2_dain_2b_yuna`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: *다인과 매점으로. 어제는 조용한 도서관이었는데, 오늘은 빵 굽는 냄새와 소음이 먼저 밀려온다.*
+
+---
+
+### `lunch2_dain_2b_yuna`
+- 배경: `store.png`
+- 스탯: Dain +8
+- 다음: `lunch2_dain_3b_yuna`
+
+- 캐릭터: `dain_normal.png`
+**다인**: 야! 어제는 그림자처럼 있더니 오늘은 제대로 놀아주는 거지?!
+
+---
+
+### `lunch2_dain_3b_yuna`
+- 배경: `store.png`
+- 다음: `lunch2_dain_4b_yuna`
+
+- 캐릭터: `dain_normal.png`
+**{name}**: 조용한 데 갔으면, 시끄러운 데도 가봐야지.
+
+---
+
+### `lunch2_dain_4b_yuna`
+- 배경: `store.png`
+- 다음: `lunch2_dain_5b`
+
+- 캐릭터: `dain_laugh.png`
+**다인**: 좋아!! 그 균형감각 인정! 그럼 한 판!!
 
 ---
 
@@ -5647,10 +5828,23 @@
 
 ### `lunch2_yuna_2`
 - 배경: `yuna_hideout.png`
-- 다음: `lunch2_yuna_3`
+- 다음: `lunch2_yuna_intro_check`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *계단을 올라가니 복도 끝에 유나가 서 있다. 벽에 기대어 책을 읽고 있다.*
+
+---
+
+### `lunch2_yuna_intro_check`
+- 배경: `yuna_hideout.png`
+- 분기:
+  - [`chose_seoyeon_lunch`] → `lunch2_yuna_3_seo`
+  - [`chose_yuna_lunch`] → `lunch2_yuna_3_yuna`
+  - [기본] → `lunch2_yuna_3`
+
+- 캐릭터: `yuna_normal.png`
+
+<!-- i18n -->
 
 ---
 
@@ -5706,6 +5900,116 @@
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: 피난처가 필요할 때도 있어.
+
+---
+
+### `lunch2_yuna_3_seo`
+- 배경: `yuna_hideout.png`
+- 스탯: Yuna +8
+- 다음: `lunch2_yuna_4_seo`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: ...왔네.
+
+---
+
+### `lunch2_yuna_4_seo`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_5_seo`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: 쪽지 받았거든.
+
+---
+
+### `lunch2_yuna_5_seo`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_6_seo`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 어제는 회장 옆이더니.
+
+---
+
+### `lunch2_yuna_6_seo`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_7_seo`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: 오늘은 네가 불러서 왔어.
+
+---
+
+### `lunch2_yuna_7_seo`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_8_seo`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: ...의외네.
+
+---
+
+### `lunch2_yuna_8_seo`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_9`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: 그래서 더 와보고 싶었어.
+
+---
+
+### `lunch2_yuna_3_yuna`
+- 배경: `yuna_hideout.png`
+- 스탯: Yuna +8
+- 다음: `lunch2_yuna_4_yuna`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: ...또 왔네.
+
+---
+
+### `lunch2_yuna_4_yuna`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_5_yuna`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: 이번엔 쪽지까지 줬잖아.
+
+---
+
+### `lunch2_yuna_5_yuna`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_6_yuna`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: 어제도 조용했는데. 오늘도?
+
+---
+
+### `lunch2_yuna_6_yuna`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_7_yuna`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: 어제 편했거든. 그래서 다시 왔어.
+
+---
+
+### `lunch2_yuna_7_yuna`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_8_yuna`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: ...그래서.
+
+---
+
+### `lunch2_yuna_8_yuna`
+- 배경: `yuna_hideout.png`
+- 다음: `lunch2_yuna_9`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: 응. 네 옆은 생각보다 안 불편했어.
 
 ---
 
@@ -6052,7 +6356,7 @@
 - 배경: `room_school.png`
 - 다음: `after2_msg_seo`
 
-- 캐릭터: `dain_active.png` @ 0.35
+- 캐릭터: `dain_normal.png` @ 0.35
 **다인**: 체육관 와!! 오늘 진짜 내기다!!
 
 ---
@@ -6267,7 +6571,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_3`
 
-- 캐릭터: `dain_active.png`
+- 캐릭터: `dain_sweat.png`
 **다인**: 왔어?! 늦었어!!
 
 ---
@@ -6276,7 +6580,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_4`
 
-- 캐릭터: `dain_active.png`
+- 캐릭터: `dain_sweat.png`
 **{name}**: 5분 전인데.
 
 ---
@@ -6285,7 +6589,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_5`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_sweat.png`
 **다인**: 나는 10분 전에 왔거든!!
 
 ---
@@ -6294,7 +6598,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_6`
 
-- 캐릭터: `dain_active.png`
+- 캐릭터: `dain_sweat.png`
 **{name}**: *그건 네가 일찍 온 거지, 내가 늦은 게 아닌데.*
 
 ---
@@ -6303,7 +6607,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_7`
 
-- 캐릭터: `dain_active.png`
+- 캐릭터: `dain_sweat.png`
 **다인**: 자, 내기다! 서브 다섯 번, 세 번 이상 넘기면 네 승! 못 하면 오늘 떡볶이 네가 사!
 
 ---
@@ -6312,7 +6616,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_8`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: 갑자기 떡볶이?
 
 ---
@@ -6330,7 +6634,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_9_ins`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_normal.png`
 **{name}**: *서브를 한다. — 의외로 두 번째 서브가 깔끔하게 넘어간다.*
 
 ---
@@ -6339,7 +6643,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_9_ins2`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_normal.png`
 **다인**: *눈이 커지며* 어? 봐주려고 했는데 안 되겠네.
 
 ---
@@ -6348,7 +6652,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_9_ins3`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_active.png`
 **{name}**: *다인이 자세를 낮춘다. 눈빛이 달라졌다.*
 
 ---
@@ -6357,7 +6661,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_9_ins4`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_active.png`
 **다인**: 진심으로 간다!
 
 ---
@@ -6366,7 +6670,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_9_ins5`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_active.png`
 **{name}**: *랠리가 오간다. 다인의 움직임은 — 확실히 보통이 아니다. 빠르고, 정확하고, 몸이 기억하고 있는 움직임.*
 
 ---
@@ -6375,35 +6679,17 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_9_ins6`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_active.png`
 **{name}**: *이 여자, 진짜 잘한다. — 운동을 좋아하는 수준이 아니라, 인생을 걸었던 사람의 몸놀림이다.*
 
 ---
 
 ### `after2_dain_9_ins6`
 - 배경: `gym.png`
-- 다음: `after2_dain_10`
-
-- 캐릭터: `dain_laugh.png`
-**{name}**: *결국 3:2. 아슬아슬하게 이겼다.*
-
----
-
-### `after2_dain_10`
-- 배경: `gym.png`
-- 다음: `after2_dain_11`
-
-- 캐릭터: `dain_laugh.png`
-**다인**: *눈이 커지며* 어? 봐주려고 했는데 안 되겠네.
-
----
-
-### `after2_dain_11`
-- 배경: `gym.png`
 - 다음: `after2_dain_11b`
 
-- 캐릭터: `dain_laugh.png`
-**{name}**: *랠리가 오간다. 다인의 움직임은 — 확실히 보통이 아니다. 빠르고, 정확하고, 몸이 기억하고 있는 움직임.*
+- 캐릭터: `dain_sweat.png`
+**{name}**: *결국 3:2. 아슬아슬하게 이겼다.*
 
 ---
 
@@ -6532,19 +6818,10 @@
 
 ### `after2_dain_end_ins2`
 - 배경: `store.png`
-- 다음: `after2_dain_end_ins3`
-
-- 캐릭터: `dain_laugh.png`
-**{name}**: *다인이 떡볶이를 후후 불며 말한다.*
-
----
-
-### `after2_dain_end_ins3`
-- 배경: `store.png`
 - 다음: `after2_dain_end_2`
 
 - 캐릭터: `dain_laugh.png`
-**{name}**: *학교 앞 떡볶이집.*
+**{name}**: *다인이 떡볶이를 후후 불며 말한다.*
 
 ---
 

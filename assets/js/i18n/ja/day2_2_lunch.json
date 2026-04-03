@@ -24,9 +24,50 @@
         "name": "{name}",
         "text": "*屋上。初めて来る場所だ。風が心地よく、見晴らしがいい。ソヨンがお弁当を広げている。*"
     },
+    "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {
         "name": "ソヨン",
         "text": "ここまで来たんだ。度胸あるね。"
+    },
+    "lunch2_seo_2b_dain": {
+        "name": "ソヨン",
+        "text": "昨日は購買の方にいたのに。今日はここまで来たんだ。"
+    },
+    "lunch2_seo_3b_dain": {
+        "name": "{name}",
+        "text": "昨日はダインに引っ張られたけど、今日は自分で来たかった。"
+    },
+    "lunch2_seo_4b_dain": {
+        "name": "ソヨン",
+        "text": "……それはちょっと違うね。"
+    },
+    "lunch2_seo_5b_dain": {
+        "name": "{name}",
+        "text": "風も気持ちいいし。先輩のお弁当もずっと気になってた。"
+    },
+    "lunch2_seo_6b_dain": {
+        "name": "ソヨン",
+        "text": "……思ったより素直だね。"
+    },
+    "lunch2_seo_2b_yuna": {
+        "name": "ソヨン",
+        "text": "メモまで受け取っておいて、屋上に来たんだ。"
+    },
+    "lunch2_seo_3b_yuna": {
+        "name": "{name}",
+        "text": "昨日は静かな方だったから、今日は先輩の方が気になった。"
+    },
+    "lunch2_seo_4b_yuna": {
+        "name": "ソヨン",
+        "text": "……私の方？"
+    },
+    "lunch2_seo_5b_yuna": {
+        "name": "{name}",
+        "text": "ここの風と、生徒会長のお弁当の組み合わせがどんな感じか気になって。"
+    },
+    "lunch2_seo_6b_yuna": {
+        "name": "ソヨン",
+        "text": "*くすっ* それ、妙に説得力あるね。"
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -36,6 +77,38 @@
         "name": "{name}",
         "text": "*ダインと購買部へ。初めてのじゃんけん勝負。*"
     },
+    "lunch2_dain_1b_seo": {
+        "name": "{name}",
+        "text": "*ダインと購買部へ。昨日はお弁当だったけど、今日はパンの匂いが先にくる。*"
+    },
+    "lunch2_dain_2b_seo": {
+        "name": "ダイン",
+        "text": "おっ、会長のお弁当じゃなくて今日はあたしの方なんだ？！"
+    },
+    "lunch2_dain_3b_seo": {
+        "name": "{name}",
+        "text": "昨日は会長のペースだったし、今日はダインのペースも気になった。"
+    },
+    "lunch2_dain_4b_seo": {
+        "name": "ダイン",
+        "text": "よし！！ その言葉取り消しなしね！ じゃあソボロ賭けて一勝負！！"
+    },
+    "lunch2_dain_1b_yuna": {
+        "name": "{name}",
+        "text": "*ダインと購買部へ。昨日は静かな図書館だったのに、今日はパンの匂いと騒がしさが先に押し寄せる。*"
+    },
+    "lunch2_dain_2b_yuna": {
+        "name": "ダイン",
+        "text": "ねえ！ 昨日は影みたいに静かだったのに、今日はちゃんと遊んでくれるんでしょ？！"
+    },
+    "lunch2_dain_3b_yuna": {
+        "name": "{name}",
+        "text": "静かな所に行ったなら、うるさい所にも行ってみないと。"
+    },
+    "lunch2_dain_4b_yuna": {
+        "name": "ダイン",
+        "text": "いいね！！ そのバランス感覚は認める！ じゃあ一勝負！！"
+    },
     "lunch2_yuna_1": {
         "name": "{name}",
         "text": "*図書館別館。本館より古い建物だ。生徒がほとんどいない。*"
@@ -44,9 +117,58 @@
         "name": "{name}",
         "text": "*階段を上がると廊下の奥にユナが立っている。壁にもたれて本を読んでいる。*"
     },
+    "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
         "name": "ユナ",
         "text": "……来たね"
+    },
+    "lunch2_yuna_3_seo": {
+        "name": "ユナ",
+        "text": "……来たね"
+    },
+    "lunch2_yuna_4_seo": {
+        "name": "{name}",
+        "text": "メモもらったから"
+    },
+    "lunch2_yuna_5_seo": {
+        "name": "ユナ",
+        "text": "昨日は会長の隣にいたのに"
+    },
+    "lunch2_yuna_6_seo": {
+        "name": "{name}",
+        "text": "今日はユナが呼んだから来た"
+    },
+    "lunch2_yuna_7_seo": {
+        "name": "ユナ",
+        "text": "……意外"
+    },
+    "lunch2_yuna_8_seo": {
+        "name": "{name}",
+        "text": "だから余計に来てみたくなった"
+    },
+    "lunch2_yuna_3_yuna": {
+        "name": "ユナ",
+        "text": "……また来たね"
+    },
+    "lunch2_yuna_4_yuna": {
+        "name": "{name}",
+        "text": "今回はメモまでくれたし"
+    },
+    "lunch2_yuna_5_yuna": {
+        "name": "ユナ",
+        "text": "昨日も静かだったのに。今日も？"
+    },
+    "lunch2_yuna_6_yuna": {
+        "name": "{name}",
+        "text": "昨日、居心地が悪くなかった。だからまた来た"
+    },
+    "lunch2_yuna_7_yuna": {
+        "name": "ユナ",
+        "text": "……それで"
+    },
+    "lunch2_yuna_8_yuna": {
+        "name": "{name}",
+        "text": "うん。ユナの隣、思ったほど居心地悪くなかった"
     },
     "lunch2_yuna_4": {
         "name": "{name}",

@@ -64,14 +64,6 @@
         "name": "{name}",
         "text": "*Saco. — Sorprendentemente, el segundo saque pasa limpiamente por encima de la red.*"
     },
-    "after2_dain_10": {
-        "name": "Dain",
-        "text": "*Con los ojos muy abiertos* Eh? Iba a ir suave, pero parece que no puedo."
-    },
-    "after2_dain_11": {
-        "name": "{name}",
-        "text": "*El intercambio va y viene. El movimiento de Dain es — claramente fuera de lo común. Rápido, preciso, memoria muscular en acción.*"
-    },
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*Salimos del gimnasio y caminamos por la calle.*"
@@ -607,10 +599,6 @@
     "after2_dain_end_ins2": {
         "name": "{name}",
         "text": "*Dain sopla el tteokbokki y habla.*"
-    },
-    "after2_dain_end_ins3": {
-        "name": "{name}",
-        "text": "*El puesto de tteokbokki cerca de la escuela.*"
     },
     "after2_seo_4_ins": {
         "name": "{name}",

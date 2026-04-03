@@ -64,14 +64,6 @@
         "name": "{name}",
         "text": "*I serve. — Surprisingly, the second serve goes cleanly over the net.*"
     },
-    "after2_dain_10": {
-        "name": "Dain",
-        "text": "*Eyes widening* Huh? I was going to go easy on you, but I guess I can't."
-    },
-    "after2_dain_11": {
-        "name": "{name}",
-        "text": "*The rally goes back and forth. Dain's movement is — clearly not ordinary. Fast, precise, muscle memory in motion.*"
-    },
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*We left the gym and walked down the street.*"
@@ -607,10 +599,6 @@
     "after2_dain_end_ins2": {
         "name": "{name}",
         "text": "*Dain blows on the tteokbokki and talks.*"
-    },
-    "after2_dain_end_ins3": {
-        "name": "{name}",
-        "text": "*The tteokbokki place near school.*"
     },
     "after2_seo_4_ins": {
         "name": "{name}",
