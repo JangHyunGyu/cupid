@@ -3,9 +3,17 @@
         "name": "{name}",
         "text": "*다섯째 날. 마지막 날. 교복이 편해졌다. — 이 사람들 때문이다. 알고 있다.*"
     },
+    "morning5_start_ins": {
+        "name": "{name}",
+        "text": "*오늘은 학교 행사가 있다. 마지막 이벤트.*"
+    },
     "morning5_start_2": {
         "name": "{name}",
         "text": "*오늘은 학교 행사가 있다. 마지막 이벤트. 교실에 들어서자마자 — 세 방향에서 신호가 온다.*"
+    },
+    "morning5_start_2_ins": {
+        "name": "{name}",
+        "text": "*책상 위에 쪽지가 놓여 있다. 서연의 글씨.*"
     },
     "morning5_mood_check": {
         "name": "시스템",
@@ -27,6 +35,22 @@
         "name": "{name}",
         "text": "*책상 위에 쪽지가 놓여 있다. 서연의 글씨. — '오후에 잠깐 시간 내. 옥상 열어 놓을게. — 서연'*"
     },
+    "morning5_seo_note_1_ins": {
+        "name": "{name}",
+        "text": "*복도 문예부 전시 코너를 지나가다 — 게시판에 단편소설이 붙어 있다. 제목:*"
+    },
+    "morning5_seo_note_1_ins2": {
+        "name": "{name}",
+        "text": "*'도서관에서 만난 사람에게'*"
+    },
+    "morning5_seo_note_1_ins3": {
+        "name": "{name}",
+        "text": "*유나다. — 주인공만 알아볼 수 있는 이야기.*"
+    },
+    "morning5_seo_note_1_ins4": {
+        "name": "{name}",
+        "text": "*교실로 돌아오니 다인이 기다리고 있다.*"
+    },
     "morning5_yuna_story_1": {
         "name": "{name}",
         "text": "*복도 문예부 전시 코너를 지나가다 — 게시판에 단편소설이 붙어 있다. 제목: '도서관에서 만난 사람에게'. 유나다. — 주인공만 알아볼 수 있는 이야기.*"
@@ -39,6 +63,10 @@
         "name": "다인",
         "text": "야! 오늘 체육 이벤트에 파트너로 너 써놨어!"
     },
+    "morning5_dain_1_ins": {
+        "name": "{name}",
+        "text": "...허락도 없이?"
+    },
     "morning5_dain_2": {
         "name": "다인",
         "text": "도망가면 진짜 화난다?"
@@ -50,6 +78,22 @@
     "hidden_homeroom_d5_1": {
         "name": "{name}",
         "text": "*담임이 교탁에 앉아 있다. — 원고가 아니라, 봉투를 들고 있다. 갈색 봉투.*"
+    },
+    "hidden_homeroom_d5_1_ins": {
+        "name": "담임선생님",
+        "text": "...아."
+    },
+    "hidden_homeroom_d5_1_ins2": {
+        "name": "{name}",
+        "text": "선생님."
+    },
+    "hidden_homeroom_d5_1_ins3": {
+        "name": "담임선생님",
+        "text": "*봉투를 살짝 들어 보이며* ...이거."
+    },
+    "hidden_homeroom_d5_1_ins4": {
+        "name": "{name}",
+        "text": "뭔데요?"
     },
     "hidden_homeroom_d5_2": {
         "name": "담임선생님",
@@ -98,126 +142,6 @@
     "hidden_homeroom_d5_6": {
         "name": "담임선생님",
         "text": "*머리카락을 넘기며* ...감상문은 안 받아. — *피식* ...맞아. 한 줄이라도 써 줘."
-    },
-    "hidden_homeroom_d5_7": {
-        "name": "담임선생님",
-        "text": "졸업하면 — 한 번 보자. 선생님이 아닌 이름으로."
-    },
-    "hidden_homeroom_d5_8": {
-        "name": "{name}",
-        "text": "*담임이 돌아선다. 긴 머리카락이 흔들린다. — 오늘은 가디건 단추가 반듯하다.*"
-    },
-    "hidden_homeroom_d5_freetalk": {
-        "name": "담임선생님",
-        "text": "*담임선생님과 빈 교실에서 마지막 대화.*",
-        "context": "Day 5. 마지막 날. 담임이 7년간 쓴 원고를 건네줬다. 졸업 후에 만나자는 약속. 톤: 둘 다 마지막이라는 걸 안다. 웃으면서도 쓸쓸하다. 평소보다 솔직하고, 모든 것이 소중하게 느껴진다.",
-        "personality": "담임선생님은 마지막이라 평소보다 솔직하다. 원고를 건네준 뒤의 마지막 대화."
-    },
-    "hidden_nurse_d5_check": {
-        "name": "{name}",
-        "text": "*행사 중간 쉬는 시간. 보건실 앞을 지나간다.*"
-    },
-    "hidden_nurse_d5_1": {
-        "name": "보건선생님",
-        "text": "어? {name}. — 마지막 날이네. 행사 마지막 날이잖아. 5일. — 금방이다."
-    },
-    "hidden_nurse_d5_2": {
-        "name": "보건선생님",
-        "text": "*가볍게 웃으며* 졸업하면 놀러 와. ...그전에도 아프면 와."
-    },
-    "hidden_nurse_d5_3": {
-        "name": "{name}",
-        "text": "안 아파도 가면 안 돼요?"
-    },
-    "hidden_nurse_d5_4": {
-        "name": "보건선생님",
-        "text": "*다시 웃으며* 그건 졸업하고 물어봐. — 그때는 대답해줄게."
-    },
-    "hidden_nurse_d5_5": {
-        "name": "보건선생님",
-        "text": "...{name}. 밴드 붙여줄까?"
-    },
-    "hidden_nurse_d5_choice": {
-        "name": "{name}",
-        "text": "*다친 데 없는데. 알면서 묻는 거다.*",
-        "choices": [
-            "네, 마지막이니까. 한 번만.",
-            "밴드 말고 전화번호요"
-        ]
-    },
-    "hidden_nurse_d5_choice_a": {
-        "name": "보건선생님",
-        "text": "*밴드를 천천히 붙인다. 밴드에 작은 글씨가 적혀 있다.*"
-    },
-    "hidden_nurse_d5_choice_a_ins": {
-        "name": "보건선생님",
-        "text": "...한 번만이라면서, 왜 그렇게 말해."
-    },
-    "hidden_nurse_d5_choice_b": {
-        "name": "보건선생님",
-        "text": "...전화번호. 의료 상담용? *안경을 고쳐 쓰며* ...알았어. 근데 졸업하고 써."
-    },
-    "hidden_nurse_d5_6": {
-        "name": "보건선생님",
-        "text": "알아. 그냥 핑계가 필요했어."
-    },
-    "hidden_nurse_d5_7": {
-        "name": "{name}",
-        "text": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*"
-    },
-    "hidden_nurse_d5_freetalk": {
-        "name": "보건선생님",
-        "text": "*보건선생님과 보건실 앞에서 마지막 대화.*",
-        "context": "Day 5. 마지막 날. 보건선생님이 밴드에 메시지를 적어줬다. 졸업 후에 만나자는 약속. 톤: 둘 다 마지막이라는 걸 안다. 웃으면서도 쓸쓸하다. 평소보다 솔직하고, 모든 것이 소중하게 느껴진다.",
-        "personality": "보건선생님은 평소보다 장난기가 줄었다. 핑계가 필요 없는 날을 기다리고 있다."
-    },
-    "morning5_end": {
-        "name": "{name}",
-        "text": "*세 방향에서 보낸 신호. — 답을 골라야 한다.*"
-    },
-    "morning5_start_ins": {
-        "name": "{name}",
-        "text": "*오늘은 학교 행사가 있다. 마지막 이벤트.*"
-    },
-    "morning5_start_2_ins": {
-        "name": "{name}",
-        "text": "*책상 위에 쪽지가 놓여 있다. 서연의 글씨.*"
-    },
-    "morning5_seo_note_1_ins": {
-        "name": "{name}",
-        "text": "*복도 문예부 전시 코너를 지나가다 — 게시판에 단편소설이 붙어 있다. 제목:*"
-    },
-    "morning5_seo_note_1_ins2": {
-        "name": "{name}",
-        "text": "*'도서관에서 만난 사람에게'*"
-    },
-    "morning5_seo_note_1_ins3": {
-        "name": "{name}",
-        "text": "*유나다. — 주인공만 알아볼 수 있는 이야기.*"
-    },
-    "morning5_seo_note_1_ins4": {
-        "name": "{name}",
-        "text": "*교실로 돌아오니 다인이 기다리고 있다.*"
-    },
-    "morning5_dain_1_ins": {
-        "name": "{name}",
-        "text": "...허락도 없이?"
-    },
-    "hidden_homeroom_d5_1_ins": {
-        "name": "담임선생님",
-        "text": "...아."
-    },
-    "hidden_homeroom_d5_1_ins2": {
-        "name": "{name}",
-        "text": "선생님."
-    },
-    "hidden_homeroom_d5_1_ins3": {
-        "name": "담임선생님",
-        "text": "*봉투를 살짝 들어 보이며* ...이거."
-    },
-    "hidden_homeroom_d5_1_ins4": {
-        "name": "{name}",
-        "text": "뭔데요?"
     },
     "hidden_homeroom_d5_6_ins": {
         "name": "{name}",
@@ -299,6 +223,10 @@
         "name": "{name}",
         "text": "*'졸업하면'이 두 번이다. — 한 번은 허락, 한 번은 기다림.*"
     },
+    "hidden_homeroom_d5_7": {
+        "name": "담임선생님",
+        "text": "졸업하면 — 한 번 보자. 선생님이 아닌 이름으로."
+    },
     "hidden_homeroom_d5_7_ins": {
         "name": "{name}",
         "text": "*'선생님이 아닌 이름으로'. — 졸업 후를 말하고 있다. 지금은 아니지만, 언젠가.*"
@@ -307,29 +235,21 @@
         "name": "담임선생님",
         "text": "...교육적 관심의 범위를 좀 넘긴 것 같다. 마지막이니까. 마지막 한 번만."
     },
-    "hidden_nurse_d5_2_ins": {
+    "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*행사 중간 쉬는 시간. 보건실 앞을 지나가는데 — 문이 열린다. 보건선생님이 나온다.*"
+        "text": "*담임이 돌아선다. 긴 머리카락이 흔들린다. — 오늘은 가디건 단추가 반듯하다.*"
     },
-    "hidden_nurse_d5_2_ins2": {
+    "hidden_homeroom_d5_freetalk": {
+        "name": "담임선생님",
+        "text": "*담임선생님과 빈 교실에서 마지막 대화.*"
+    },
+    "hidden_nurse_d5_check": {
         "name": "{name}",
-        "text": "*— 마주쳤다. 코앞에서.*"
+        "text": "*행사 중간 쉬는 시간. 보건실 앞을 지나간다.*"
     },
-    "hidden_nurse_d5_2_ins3": {
+    "hidden_nurse_d5_1": {
         "name": "보건선생님",
-        "text": "어? {name}."
-    },
-    "hidden_nurse_d5_4_ins": {
-        "name": "{name}",
-        "text": "선생님."
-    },
-    "hidden_nurse_d5_4_ins2": {
-        "name": "{name}",
-        "text": "*어색한 침묵. — 어제까지는 자연스러웠는데, 오늘은 뭔가 다르다.*"
-    },
-    "hidden_nurse_d5_4_ins3": {
-        "name": "보건선생님",
-        "text": "마지막 날이네."
+        "text": "어? {name}. — 마지막 날이네. 행사 마지막 날이잖아. 5일. — 금방이다."
     },
     "hidden_nurse_d5_1_ins": {
         "name": "{name}",
@@ -350,6 +270,26 @@
     "hidden_nurse_d5_1_ins5": {
         "name": "{name}",
         "text": "*'졸업하면 놀러 와'에서 '아프면 와'로 후퇴했다. — 선을 넘으려다 다시 들어온 거다.*"
+    },
+    "hidden_nurse_d5_2": {
+        "name": "보건선생님",
+        "text": "*가볍게 웃으며* 졸업하면 놀러 와. ...그전에도 아프면 와."
+    },
+    "hidden_nurse_d5_2_ins": {
+        "name": "{name}",
+        "text": "*행사 중간 쉬는 시간. 보건실 앞을 지나가는데 — 문이 열린다. 보건선생님이 나온다.*"
+    },
+    "hidden_nurse_d5_2_ins2": {
+        "name": "{name}",
+        "text": "*— 마주쳤다. 코앞에서.*"
+    },
+    "hidden_nurse_d5_2_ins3": {
+        "name": "보건선생님",
+        "text": "어? {name}."
+    },
+    "hidden_nurse_d5_3": {
+        "name": "{name}",
+        "text": "안 아파도 가면 안 돼요?"
     },
     "hidden_nurse_d5_3_ins": {
         "name": "{name}",
@@ -383,6 +323,46 @@
         "name": "보건선생님",
         "text": "...{name}."
     },
+    "hidden_nurse_d5_4": {
+        "name": "보건선생님",
+        "text": "*다시 웃으며* 그건 졸업하고 물어봐. — 그때는 대답해줄게."
+    },
+    "hidden_nurse_d5_4_ins": {
+        "name": "{name}",
+        "text": "선생님."
+    },
+    "hidden_nurse_d5_4_ins2": {
+        "name": "{name}",
+        "text": "*어색한 침묵. — 어제까지는 자연스러웠는데, 오늘은 뭔가 다르다.*"
+    },
+    "hidden_nurse_d5_4_ins3": {
+        "name": "보건선생님",
+        "text": "마지막 날이네."
+    },
+    "hidden_nurse_d5_5": {
+        "name": "보건선생님",
+        "text": "...{name}. 밴드 붙여줄까?"
+    },
+    "hidden_nurse_d5_choice": {
+        "name": "{name}",
+        "text": "*다친 데 없는데. 알면서 묻는 거다.*",
+        "choices": [
+            "네, 마지막이니까. 한 번만.",
+            "밴드 말고 전화번호요"
+        ]
+    },
+    "hidden_nurse_d5_choice_a": {
+        "name": "보건선생님",
+        "text": "*밴드를 천천히 붙인다. 밴드에 작은 글씨가 적혀 있다.*"
+    },
+    "hidden_nurse_d5_choice_a_ins": {
+        "name": "보건선생님",
+        "text": "...한 번만이라면서, 왜 그렇게 말해."
+    },
+    "hidden_nurse_d5_choice_b": {
+        "name": "보건선생님",
+        "text": "...전화번호. 의료 상담용? *안경을 고쳐 쓰며* ...알았어. 근데 졸업하고 써."
+    },
     "hidden_nurse_d5_choice_b_ins2": {
         "name": "{name}",
         "text": "*목소리가 한 톤 낮아졌다. 장난기가 완전히 사라진 얼굴. — 이 사람의 진심은 항상 이렇게 온다.*"
@@ -411,6 +391,10 @@
         "name": "{name}",
         "text": "...상처 없는데요."
     },
+    "hidden_nurse_d5_6": {
+        "name": "보건선생님",
+        "text": "알아. 그냥 핑계가 필요했어."
+    },
     "hidden_nurse_d5_6_ins": {
         "name": "{name}",
         "text": "*Day 1의 대표 대사. — 그때는 캐릭터 소개였다. 지금은 진심이다.*"
@@ -426,5 +410,17 @@
     "hidden_nurse_d5_6_ins4": {
         "name": "{name}",
         "text": "*하트가 이번에는 — 의료적 관심이 아닌 것 같다.*"
+    },
+    "hidden_nurse_d5_7": {
+        "name": "{name}",
+        "text": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*"
+    },
+    "hidden_nurse_d5_freetalk": {
+        "name": "보건선생님",
+        "text": "*보건선생님과 보건실 앞에서 마지막 대화.*"
+    },
+    "morning5_end": {
+        "name": "{name}",
+        "text": "*세 방향에서 보낸 신호. — 답을 골라야 한다.*"
     }
 }

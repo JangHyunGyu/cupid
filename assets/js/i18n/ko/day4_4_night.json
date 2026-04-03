@@ -59,6 +59,10 @@
         "name": "서연",
         "text": "오늘 엄마한테 전화 왔어."
     },
+    "wall_seo_7_ins": {
+        "name": "{name}",
+        "text": "......"
+    },
     "wall_seo_8": {
         "name": "서연",
         "text": "아빠랑 또 싸웠대."
@@ -67,6 +71,18 @@
         "name": "{name}",
         "text": "*서연이 웃는다. — 평소의 여유로운 웃음이 아니다. 자기 보호를 위한 웃음.*"
     },
+    "wall_seo_9_ins": {
+        "name": "서연",
+        "text": "우리 집 겉으로는 멀쩡해 보이지? 넓은 집, 좋은 차, 학생회장 딸."
+    },
+    "wall_seo_9_ins2": {
+        "name": "서연",
+        "text": "근데 엄마 아빠는 1년째 같은 지붕 아래서 남남이야. 이혼 서류만 안 냈을 뿐."
+    },
+    "wall_seo_9_ins3": {
+        "name": "{name}",
+        "text": "......"
+    },
     "wall_seo_10": {
         "name": "서연",
         "text": "우리 집 겉으로는 멀쩡해 보이지? 넓은 집, 좋은 차, 학생회장 딸."
@@ -74,6 +90,10 @@
     "wall_seo_11": {
         "name": "서연",
         "text": "엄마가 그랬어. '너라도 완벽해야 이 집이 유지된다'고."
+    },
+    "wall_seo_11_ins": {
+        "name": "{name}",
+        "text": "*서연이 입을 다문다. 삼키듯이.*"
     },
     "wall_seo_12": {
         "name": "서연",
@@ -86,6 +106,22 @@
     "wall_seo_14": {
         "name": "서연",
         "text": "칭찬받을 때마다 생각했어. '이 웃음도 연습한 건데, 진짜 나를 본 사람이 있긴 한 걸까.'"
+    },
+    "wall_seo_14_ins": {
+        "name": "서연",
+        "text": "...근데 너는."
+    },
+    "wall_seo_14_ins2": {
+        "name": "{name}",
+        "text": "*서연이 말을 멈췄다. 손이 무릎 위에서 꽉 쥐어져 있다.*"
+    },
+    "wall_seo_14_ins3": {
+        "name": "{name}",
+        "text": "*— 그리고 천천히, 아주 천천히, 완벽하게 유지하고 있던 표정이 무너졌다. 서연이 떨리는 손으로 안경을 벗어 쥐었다.*"
+    },
+    "wall_seo_14_ins4": {
+        "name": "{name}",
+        "text": "*눈에서 물이 흘러내린다. 소리 없이. — 안경 없는 서연의 얼굴을 처음 본다.*"
     },
     "wall_seo_15": {
         "name": "{name}",
@@ -106,6 +142,14 @@
     "wall_seo_hug_2": {
         "name": "{name}",
         "text": "*서연이 내 가슴에 얼굴을 묻었다. 교복 셔츠가 젖는다.*"
+    },
+    "wall_seo_hug_2_ins": {
+        "name": "서연",
+        "text": "...누구 앞에서 우는 거, 초등학교 이후로 처음이야."
+    },
+    "wall_seo_hug_2_ins2": {
+        "name": "서연",
+        "text": "8년. — 그동안 혼자 화장실에서만 울었거든."
     },
     "wall_seo_hug_3": {
         "name": "서연",
@@ -131,6 +175,10 @@
         "name": "서연",
         "text": "사람들이 다 그렇게 말하고 사라지는 건데."
     },
+    "wall_seo_pinky_5_ins": {
+        "name": "{name}",
+        "text": "*Day 1의 새끼손가락. Day 4의 새끼손가락. — 같은 손가락인데, 무게가 완전히 다르다.*"
+    },
     "wall_seo_line_choice": {
         "name": "{name}",
         "text": "*서연이 눈물을 닦으며 떨리는 눈으로 올려다보고 있다.*",
@@ -152,6 +200,10 @@
         "name": "서연",
         "text": "...고맙긴."
     },
+    "wall_seo_line_react_3_ins": {
+        "name": "{name}",
+        "text": "*서연이 눈물을 닦으며.*"
+    },
     "wall_seo_after_line": {
         "name": "서연",
         "text": "이래도 괜찮아?"
@@ -167,6 +219,10 @@
     "wall_seo_after_line_4": {
         "name": "{name}",
         "text": "*서연이 웃는다. 입꼬리가 제멋대로다. — 화장이 번지고, 눈이 부었는데. 근데 눈을 뗄 수가 없다.*"
+    },
+    "wall_seo_after_line_4_ins": {
+        "name": "서연",
+        "text": "...오늘 거울 안 봐도 되겠다."
     },
     "wall_seo_after_line_5": {
         "name": "서연",
@@ -209,6 +265,10 @@
         "name": "{name}",
         "text": "*서연을 집까지 바래다주고 돌아오는 길. — 학교 앞을 지나가는데.*"
     },
+    "wall_seo_glimpse_1_ins": {
+        "name": "{name}",
+        "text": "*체육관 창문에 불이 켜져 있다. 비상등.*"
+    },
     "wall_seo_glimpse_2": {
         "name": "{name}",
         "text": "*체육관 창문에 불이 켜져 있다. 비상등. 누군가 혼자 공을 튀기고 있다. — 등번호가 희미하게 보인다. 다인이다.*"
@@ -245,6 +305,10 @@
         "name": "다인",
         "text": "야 지금 시간 돼?ㅋㅋ"
     },
+    "wall_dain_2_ins": {
+        "name": "다인",
+        "text": "*학교 오면 안 되지??*"
+    },
     "wall_dain_3": {
         "name": "다인",
         "text": "아 그냥 와ㅋㅋ 체육관 뒷문 열어놨음!"
@@ -265,9 +329,21 @@
         "name": "다인",
         "text": "가끔 몰래 들어와! 연습하려고!!"
     },
+    "wall_dain_7_ins": {
+        "name": "{name}",
+        "text": "*다인이 배구공을 건넨다.*"
+    },
     "wall_dain_8": {
         "name": "다인",
         "text": "토스 올려줘!! 한 번만!!"
+    },
+    "wall_dain_8_ins": {
+        "name": "{name}",
+        "text": "*토스를 올려준다. 다인이 뛰어올라 — 스파이크.*"
+    },
+    "wall_dain_8_ins2": {
+        "name": "{name}",
+        "text": "*착지하는 순간 — 오른쪽 무릎을 움켜잡고 쪼그려 앉는다.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -285,13 +361,29 @@
         "name": "{name}",
         "text": "다인. 괜찮지 않잖아."
     },
+    "wall_dain_12_ins": {
+        "name": "다인",
+        "text": "괜찮다니까!! 진짜로!!"
+    },
+    "wall_dain_12_ins2": {
+        "name": "{name}",
+        "text": "......"
+    },
     "wall_dain_13": {
         "name": "{name}",
         "text": "*아무 말 없이 옆에 앉는다. 다인이 입을 다문다. 한참의 침묵.*"
     },
+    "wall_dain_13_ins": {
+        "name": "{name}",
+        "text": "*한참의 침묵.*"
+    },
     "wall_dain_14": {
         "name": "다인",
         "text": "...전방 십자인대."
+    },
+    "wall_dain_14_ins": {
+        "name": "{name}",
+        "text": "*느낌표가 없다.*"
     },
     "wall_dain_15": {
         "name": "다인",
@@ -301,6 +393,10 @@
         "name": "{name}",
         "text": "*다인이 한 번도 안 해본 표정을 짓고 있다. 웃지 않는 다인.*"
     },
+    "wall_dain_16_ins": {
+        "name": "다인",
+        "text": "수술했는데 담당 의료진이 — 되게 조심스럽게 말하더라."
+    },
     "wall_dain_17": {
         "name": "다인",
         "text": "수술했는데 담당 의료진이 — 되게 조심스럽게 말하더라. '일상은 괜찮은데, 이전처럼 뛰는 건...' — 뒤에 뭐라고 했는지 기억 안 나. 그 뒤로 소리가 안 들렸거든."
@@ -309,13 +405,33 @@
         "name": "다인",
         "text": "체대. 프로. 국가대표. — 다섯 살 때부터 그것밖에 없었어. 그런데 한 문장으로 끝나더라."
     },
+    "wall_dain_18_ins": {
+        "name": "다인",
+        "text": "그런데 한 문장으로 끝나더라."
+    },
+    "wall_dain_18_ins2": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "wall_dain_18_ins3": {
+        "name": "다인",
+        "text": "아무한테도 말 안 했어. 부모님한테도."
+    },
     "wall_dain_19": {
         "name": "다인",
         "text": "아무한테도 말 안 했어. 부모님한테도. '다인이가 안 뛰면 다인이가 아니지!' — 그 말 듣고 싶지 않아서."
     },
+    "wall_dain_19_ins": {
+        "name": "{name}",
+        "text": "*다인이 가슴을 짚는다.*"
+    },
     "wall_dain_20": {
         "name": "다인",
         "text": "학교에서 '에너지 넘치네!' 소리 들을 때마다 — 여기가. ...죽을 것 같았어."
+    },
+    "wall_dain_20_ins": {
+        "name": "다인",
+        "text": "...죽을 것 같았어."
     },
     "wall_dain_21": {
         "name": "다인",
@@ -324,6 +440,10 @@
     "wall_dain_22": {
         "name": "다인",
         "text": "— 근데 네 앞에서까지 아픈 모습 보이면, 나한테 남는 게 없잖아."
+    },
+    "wall_dain_22_ins": {
+        "name": "{name}",
+        "text": "*다인 옆에 앉았다. 코트 바닥이 차갑다. 아무 말도 안 했다.*"
     },
     "wall_dain_choice": {
         "name": "{name}",
@@ -341,6 +461,10 @@
     "wall_dain_newdream_2": {
         "name": "{name}",
         "text": "*다인도 아무 말이 없다. — 이상한 시간이다. 다인 옆에서 1분 이상 침묵이 흐른 건 처음이다.*"
+    },
+    "wall_dain_newdream_2_ins": {
+        "name": "{name}",
+        "text": "*다인이 먼저 입을 연다.*"
     },
     "wall_dain_newdream_3": {
         "name": "다인",
@@ -390,6 +514,10 @@
         "name": "{name}",
         "text": "*알람 메모에 느낌표를 두 개나 넣은 건 — 하나로는 자기 자신도 못 속이기 때문이겠지.*"
     },
+    "wall_dain_cry_6_ins": {
+        "name": "{name}",
+        "text": "*토스를 올려줬다.*"
+    },
     "wall_dain_lastspike_1": {
         "name": "{name}",
         "text": "*손을 내밀었다. 다인이 잡았다. 둘 다 일어섰다. — 토스를 올려줬다.*"
@@ -402,9 +530,21 @@
         "name": "{name}",
         "text": "*착지하며 무릎을 잡았지만 — 웃고 있다.*"
     },
+    "wall_dain_lastspike_3_ins": {
+        "name": "다인",
+        "text": "*힘없이 웃는다.* ...아프다."
+    },
+    "wall_dain_lastspike_3_ins2": {
+        "name": "다인",
+        "text": "근데 이상하게 시원해."
+    },
     "wall_dain_lastspike_4": {
         "name": "다인",
         "text": "...ㅋㅋ 아프다. 근데 이상하게 시원해. — 여기서 마지막 공을 친 게 {name}이 올려준 토스라서 다행이야."
+    },
+    "wall_dain_lastspike_4_ins": {
+        "name": "{name}",
+        "text": "*다인이 코트를 둘러본다. 어둡고 텅 빈 체육관.*"
     },
     "wall_dain_lastspike_5": {
         "name": "다인",
@@ -471,6 +611,14 @@
         "name": "{name}",
         "text": "*모른 척 지나갔다. — 근데 왜 마음이 이러지.*"
     },
+    "wall_dain_glimpse_4_ins": {
+        "name": "{name}",
+        "text": "*밤 10시. 유나에게서 메시지.*"
+    },
+    "wall_dain_glimpse_4_ins2": {
+        "name": "유나",
+        "text": "*학교 후문. 지금 와.*"
+    },
     "wall_yuna_1": {
         "name": "{name}",
         "text": "*밤 10시. 유나에게서 메시지. '학교 후문. 지금 와.'*"
@@ -523,6 +671,10 @@
         "name": "유나",
         "text": "여기 같이 오던 선배. — 유일하게 친했던 사람."
     },
+    "wall_yuna_9_ins": {
+        "name": "{name}",
+        "text": "*유나가 편지를 내려놓는다.*"
+    },
     "wall_yuna_10": {
         "name": "유나",
         "text": "중학교 때 나 투명인간이었어. 반에서 아무도 말 안 걸었어."
@@ -543,6 +695,34 @@
         "name": "유나",
         "text": "나를 증명해준 사람이 사라진 거야. 또 투명인간이 될 것 같았어."
     },
+    "wall_yuna_14_ins": {
+        "name": "유나",
+        "text": "1년 동안 혼자 여기 왔어. 혹시 뭔가 남겨놨을까 해서."
+    },
+    "wall_yuna_14_ins2": {
+        "name": "유나",
+        "text": "...없었어."
+    },
+    "wall_yuna_14_ins3": {
+        "name": "{name}",
+        "text": "*유나가 나를 본다.*"
+    },
+    "wall_yuna_14_ins4": {
+        "name": "유나",
+        "text": "처음에 네가 도서관에 왔을 때."
+    },
+    "wall_yuna_14_ins5": {
+        "name": "유나",
+        "text": "선배랑 분위기가 비슷했어. — 그래서 무서웠어."
+    },
+    "wall_yuna_14_ins6": {
+        "name": "유나",
+        "text": "또 친해지면 또 사라질까 봐."
+    },
+    "wall_yuna_14_ins7": {
+        "name": "{name}",
+        "text": "......"
+    },
     "wall_yuna_15": {
         "name": "유나",
         "text": "처음에 네가 도서관에 왔을 때. 선배랑 분위기가 비슷했어. — 그래서 무서웠어. 또 친해지면 또 사라질까 봐."
@@ -550,6 +730,14 @@
     "wall_yuna_16": {
         "name": "유나",
         "text": "근데 너는 매일 왔어. 조용히. — 사라지지 않고."
+    },
+    "wall_yuna_16_ins": {
+        "name": "{name}",
+        "text": "*유나가 옷소매를 꽉 쥐고 있다. — 문장이 점점 길어지고 있다.*"
+    },
+    "wall_yuna_16_ins2": {
+        "name": "{name}",
+        "text": "*유나가 잠깐 멈춘다.*"
     },
     "wall_yuna_choice": {
         "name": "{name}",
@@ -579,6 +767,10 @@
     "wall_yuna_moved_5": {
         "name": "{name}",
         "text": "*유나가 네 문장을 연속으로 말했다. — 이건 고백과 같다.*"
+    },
+    "wall_yuna_moved_5_ins": {
+        "name": "{name}",
+        "text": "*유나의 표정이 굳는다.*"
     },
     "wall_yuna_mention_1": {
         "name": "유나",
@@ -625,6 +817,10 @@
         "name": "유나",
         "text": "......그렇게 생각해?"
     },
+    "wall_yuna_reject_1_ins": {
+        "name": "{name}",
+        "text": "*유나가 편지를 다시 집어든다.*"
+    },
     "wall_yuna_reject_2": {
         "name": "유나",
         "text": "...그래. 그랬을 수도 있어."
@@ -648,278 +844,6 @@
     "wall_yuna_glimpse_3": {
         "name": "{name}",
         "text": "*누구한테 보내려는 건지는 모르겠다. — 아니, 알 것 같다.*"
-    },
-    "wall_yuna_glimpse_4": {
-        "name": "{name}",
-        "text": "*서연이 핸드폰을 주머니에 넣고 돌아선다. 등이 곧다. 완벽하게. — 떨리지 않는다. 이번에는 진짜로.*"
-    },
-    "day4_night_regret": {
-        "name": "{name}",
-        "text": "*...오늘 말할 수 있었는데. 그 석양 아래서, 완벽한 순간이었는데.*"
-    },
-    "day4_night_regret_2": {
-        "name": "{name}",
-        "text": "*괜찮아. 내일이 있으니까. 내일은 반드시.*"
-    },
-    "day4_night_regret_msg_branch": {
-        "name": "시스템",
-        "text": ""
-    },
-    "day4_night_regret_msg_seo": {
-        "name": "서연",
-        "text": "오늘 바람 좋았어."
-    },
-    "day4_night_regret_msg_dain": {
-        "name": "다인",
-        "text": "야 오늘 재밌었다ㅋㅋ"
-    },
-    "day4_night_regret_msg_yuna": {
-        "name": "유나",
-        "text": "...오늘"
-    },
-    "day4_night_regret_msg": {
-        "name": "{name}",
-        "text": "*핸드폰에 메시지가 왔다.*"
-    },
-    "day4_night_regret_reply": {
-        "name": "{name}",
-        "text": ""
-    },
-    "night_homeroom_msg_1": {
-        "name": "담임선생님",
-        "text": "*메시지* 원고 마감이 가까운데. ...첫 번째 독자한테 보여주고 싶은 부분이 있어."
-    },
-    "night_homeroom_msg_2": {
-        "name": "담임선생님",
-        "text": "*메시지* 내일 시간 되면 교무실로 와. — 수업 끝나고."
-    },
-    "night_homeroom_msg_3": {
-        "name": "{name}",
-        "text": "*밤 11시. 담임선생님에게서 문자가 왔다. 짧은 문장 세 줄. — '첫 번째 독자'. 그 단어가 자꾸 머릿속에 남는다.*"
-    },
-    "night_nurse_msg_1": {
-        "name": "보건선생님",
-        "text": "오늘 보건실에서 네가 한 말... 밤에 자꾸 떠올라"
-    },
-    "night_nurse_msg_2": {
-        "name": "{name}",
-        "text": "*읽음 표시가 뜬다. 10초. 20초. 추가 메시지 없음. — 1분 뒤.*"
-    },
-    "night_nurse_msg_3": {
-        "name": "보건선생님",
-        "text": "아 이상한 뜻 아니야. 그냥 인상 깊었다는 거지."
-    },
-    "night_nurse_msg_4": {
-        "name": "보건선생님",
-        "text": "...자."
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*토요일이 이렇게 지나갔다. 내일은 뭘 하게 될까.*"
-    },
-    "day4_night_sleep": {
-        "name": "{name}",
-        "text": "*눈을 감는다. 내일이 마지막이다. — 할 말이 남아 있다.*"
-    },
-    "day4_final": {
-        "name": "{name}",
-        "text": "*토요일 밤이 깊어간다. 내일은 일요일, 마지막 날이다.*"
-    },
-    "wall_seo_7_ins": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "wall_seo_9_ins": {
-        "name": "서연",
-        "text": "우리 집 겉으로는 멀쩡해 보이지? 넓은 집, 좋은 차, 학생회장 딸."
-    },
-    "wall_seo_9_ins2": {
-        "name": "서연",
-        "text": "근데 엄마 아빠는 1년째 같은 지붕 아래서 남남이야. 이혼 서류만 안 냈을 뿐."
-    },
-    "wall_seo_9_ins3": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "wall_seo_11_ins": {
-        "name": "{name}",
-        "text": "*서연이 입을 다문다. 삼키듯이.*"
-    },
-    "wall_seo_14_ins": {
-        "name": "서연",
-        "text": "...근데 너는."
-    },
-    "wall_seo_14_ins2": {
-        "name": "{name}",
-        "text": "*서연이 말을 멈췄다. 손이 무릎 위에서 꽉 쥐어져 있다.*"
-    },
-    "wall_seo_14_ins3": {
-        "name": "{name}",
-        "text": "*— 그리고 천천히, 아주 천천히, 완벽하게 유지하고 있던 표정이 무너졌다. 서연이 떨리는 손으로 안경을 벗어 쥐었다.*"
-    },
-    "wall_seo_14_ins4": {
-        "name": "{name}",
-        "text": "*눈에서 물이 흘러내린다. 소리 없이. — 안경 없는 서연의 얼굴을 처음 본다.*"
-    },
-    "wall_seo_hug_2_ins": {
-        "name": "서연",
-        "text": "...누구 앞에서 우는 거, 초등학교 이후로 처음이야."
-    },
-    "wall_seo_hug_2_ins2": {
-        "name": "서연",
-        "text": "8년. — 그동안 혼자 화장실에서만 울었거든."
-    },
-    "wall_seo_pinky_5_ins": {
-        "name": "{name}",
-        "text": "*Day 1의 새끼손가락. Day 4의 새끼손가락. — 같은 손가락인데, 무게가 완전히 다르다.*"
-    },
-    "wall_seo_line_react_3_ins": {
-        "name": "{name}",
-        "text": "*서연이 눈물을 닦으며.*"
-    },
-    "wall_seo_after_line_4_ins": {
-        "name": "서연",
-        "text": "...오늘 거울 안 봐도 되겠다."
-    },
-    "wall_seo_glimpse_1_ins": {
-        "name": "{name}",
-        "text": "*체육관 창문에 불이 켜져 있다. 비상등.*"
-    },
-    "wall_dain_2_ins": {
-        "name": "다인",
-        "text": "*학교 오면 안 되지??*"
-    },
-    "wall_dain_7_ins": {
-        "name": "{name}",
-        "text": "*다인이 배구공을 건넨다.*"
-    },
-    "wall_dain_8_ins": {
-        "name": "{name}",
-        "text": "*토스를 올려준다. 다인이 뛰어올라 — 스파이크.*"
-    },
-    "wall_dain_8_ins2": {
-        "name": "{name}",
-        "text": "*착지하는 순간 — 오른쪽 무릎을 움켜잡고 쪼그려 앉는다.*"
-    },
-    "wall_dain_12_ins": {
-        "name": "다인",
-        "text": "괜찮다니까!! 진짜로!!"
-    },
-    "wall_dain_12_ins2": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "wall_dain_13_ins": {
-        "name": "{name}",
-        "text": "*한참의 침묵.*"
-    },
-    "wall_dain_14_ins": {
-        "name": "{name}",
-        "text": "*느낌표가 없다.*"
-    },
-    "wall_dain_16_ins": {
-        "name": "다인",
-        "text": "수술했는데 담당 의료진이 — 되게 조심스럽게 말하더라."
-    },
-    "wall_dain_18_ins": {
-        "name": "다인",
-        "text": "그런데 한 문장으로 끝나더라."
-    },
-    "wall_dain_18_ins2": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "wall_dain_18_ins3": {
-        "name": "다인",
-        "text": "아무한테도 말 안 했어. 부모님한테도."
-    },
-    "wall_dain_19_ins": {
-        "name": "{name}",
-        "text": "*다인이 가슴을 짚는다.*"
-    },
-    "wall_dain_20_ins": {
-        "name": "다인",
-        "text": "...죽을 것 같았어."
-    },
-    "wall_dain_22_ins": {
-        "name": "{name}",
-        "text": "*다인 옆에 앉았다. 코트 바닥이 차갑다. 아무 말도 안 했다.*"
-    },
-    "wall_dain_newdream_2_ins": {
-        "name": "{name}",
-        "text": "*다인이 먼저 입을 연다.*"
-    },
-    "wall_dain_cry_6_ins": {
-        "name": "{name}",
-        "text": "*토스를 올려줬다.*"
-    },
-    "wall_dain_lastspike_3_ins": {
-        "name": "다인",
-        "text": "*힘없이 웃는다.* ...아프다."
-    },
-    "wall_dain_lastspike_3_ins2": {
-        "name": "다인",
-        "text": "근데 이상하게 시원해."
-    },
-    "wall_dain_lastspike_4_ins": {
-        "name": "{name}",
-        "text": "*다인이 코트를 둘러본다. 어둡고 텅 빈 체육관.*"
-    },
-    "wall_dain_glimpse_4_ins": {
-        "name": "{name}",
-        "text": "*밤 10시. 유나에게서 메시지.*"
-    },
-    "wall_dain_glimpse_4_ins2": {
-        "name": "유나",
-        "text": "*학교 후문. 지금 와.*"
-    },
-    "wall_yuna_9_ins": {
-        "name": "{name}",
-        "text": "*유나가 편지를 내려놓는다.*"
-    },
-    "wall_yuna_14_ins": {
-        "name": "유나",
-        "text": "1년 동안 혼자 여기 왔어. 혹시 뭔가 남겨놨을까 해서."
-    },
-    "wall_yuna_14_ins2": {
-        "name": "유나",
-        "text": "...없었어."
-    },
-    "wall_yuna_14_ins3": {
-        "name": "{name}",
-        "text": "*유나가 나를 본다.*"
-    },
-    "wall_yuna_14_ins4": {
-        "name": "유나",
-        "text": "처음에 네가 도서관에 왔을 때."
-    },
-    "wall_yuna_14_ins5": {
-        "name": "유나",
-        "text": "선배랑 분위기가 비슷했어. — 그래서 무서웠어."
-    },
-    "wall_yuna_14_ins6": {
-        "name": "유나",
-        "text": "또 친해지면 또 사라질까 봐."
-    },
-    "wall_yuna_14_ins7": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "wall_yuna_16_ins": {
-        "name": "{name}",
-        "text": "*유나가 옷소매를 꽉 쥐고 있다. — 문장이 점점 길어지고 있다.*"
-    },
-    "wall_yuna_16_ins2": {
-        "name": "{name}",
-        "text": "*유나가 잠깐 멈춘다.*"
-    },
-    "wall_yuna_moved_5_ins": {
-        "name": "{name}",
-        "text": "*유나의 표정이 굳는다.*"
-    },
-    "wall_yuna_reject_1_ins": {
-        "name": "{name}",
-        "text": "*유나가 편지를 다시 집어든다.*"
     },
     "wall_yuna_glimpse_3_ins": {
         "name": "{name}",
@@ -991,7 +915,7 @@
     },
     "wall_yuna_glimpse_3_ins18": {
         "name": "{name}",
-        "text": "*오늘은 학교 행사가 있다. 마지막 이벤트. 교실에 들어서자마자 — 세 방향에서 신호가 온다.*"
+        "text": "*핸드폰 화면이 꺼진 뒤에도 마지막 문장이 망막에 남는다. 밤공기가 생각보다 차갑다.*"
     },
     "wall_yuna_glimpse_3_ins19": {
         "name": "{name}",
@@ -1003,7 +927,7 @@
     },
     "wall_yuna_glimpse_3_ins21": {
         "name": "{name}",
-        "text": "*책상 위에 쪽지가 놓여 있다. 서연의 글씨. — '오후에 잠깐 시간 내. 옥상 열어 놓을게. — 서연'*"
+        "text": "*고개를 들자 교문 앞 가로등 자리가 비어 있다. 조금 전까지 누군가를 기다리던 자리만 남아 있다.*"
     },
     "wall_yuna_glimpse_3_ins22": {
         "name": "{name}",
@@ -1011,6 +935,82 @@
     },
     "wall_yuna_glimpse_3_ins23": {
         "name": "{name}",
-        "text": "*복도 문예부 전시 코너를 지나가다 — 게시판에 단편소설이 붙어 있다. 제목: '도서관에서 만난 사람에게'. 유나다. — 주인공만 알아볼 수 있는 이야기.*"
+        "text": "*학교 건물 몇 칸에만 불이 남아 있다. 저 안 어딘가에서 유나가 다시 책장을 넘기고 있을지도 모른다. 방금 전까지 마주 보고 있었는데도, 다시 보고 싶다.*"
+    },
+    "wall_yuna_glimpse_4": {
+        "name": "{name}",
+        "text": "*발끝이 쉽게 떨어지지 않는다. 오늘 들은 말들은 다 가볍지 않았다. 그래서 더 오래 남는다.*"
+    },
+    "day4_night_regret": {
+        "name": "{name}",
+        "text": "*...오늘 말했어야 했다. 그 사람이 먼저 마음을 내밀고 있었는데, 나는 또 가장 쉬운 말을 못 했다.*"
+    },
+    "day4_night_regret_2": {
+        "name": "{name}",
+        "text": "*내일이 있다고 해서 오늘이 지워지는 건 아니다. 그걸 알면서도, 나는 또 미뤘다.*"
+    },
+    "day4_night_regret_msg_branch": {
+        "name": "시스템",
+        "text": ""
+    },
+    "day4_night_regret_msg_seo": {
+        "name": "서연",
+        "text": "오늘 바람 좋았어. 그래서... 조금 기대했어."
+    },
+    "day4_night_regret_msg_dain": {
+        "name": "다인",
+        "text": "야 오늘 재밌었다ㅋㅋ ...나 혼자만 그런 건 아니지?"
+    },
+    "day4_night_regret_msg_yuna": {
+        "name": "유나",
+        "text": "...오늘. 조금 기대했어."
+    },
+    "day4_night_regret_msg": {
+        "name": "{name}",
+        "text": "*핸드폰 화면이 켜진다. 짧은 문장인데, 그래서 더 아프다.*"
+    },
+    "day4_night_regret_reply": {
+        "name": "{name}",
+        "text": "*답장을 쓰다 지운다. 뭐라고 해도 늦은 것 같다.*"
+    },
+    "night_homeroom_msg_1": {
+        "name": "담임선생님",
+        "text": "*메시지* 원고 마감이 가까운데. ...첫 번째 독자한테 보여주고 싶은 부분이 있어."
+    },
+    "night_homeroom_msg_2": {
+        "name": "담임선생님",
+        "text": "*메시지* 내일 시간 되면 교무실로 와. — 수업 끝나고."
+    },
+    "night_homeroom_msg_3": {
+        "name": "{name}",
+        "text": "*밤 11시. 담임선생님에게서 문자가 왔다. 짧은 문장 세 줄. — '첫 번째 독자'. 그 단어가 자꾸 머릿속에 남는다.*"
+    },
+    "night_nurse_msg_1": {
+        "name": "보건선생님",
+        "text": "오늘 보건실에서 네가 한 말... 밤에 자꾸 떠올라"
+    },
+    "night_nurse_msg_2": {
+        "name": "{name}",
+        "text": "*읽음 표시가 뜬다. 10초. 20초. 추가 메시지 없음. — 1분 뒤.*"
+    },
+    "night_nurse_msg_3": {
+        "name": "보건선생님",
+        "text": "아 이상한 뜻 아니야. 그냥 인상 깊었다는 거지."
+    },
+    "night_nurse_msg_4": {
+        "name": "보건선생님",
+        "text": "...자."
+    },
+    "day4_night_reflect": {
+        "name": "{name}",
+        "text": "*토요일이 이렇게 지나갔다. 내일은 뭘 하게 될까.*"
+    },
+    "day4_night_sleep": {
+        "name": "{name}",
+        "text": "*눈을 감는다. 내일이 마지막이다. — 할 말이 남아 있다.*"
+    },
+    "day4_final": {
+        "name": "{name}",
+        "text": "*토요일 밤이 깊어간다. 내일은 일요일, 마지막 날이다.*"
     }
 }

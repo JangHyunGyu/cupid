@@ -214,6 +214,21 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "hallway_6_ins"
     },
+    "hallway_6_ins": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "hallway_6_ins2"
+    },
+    "hallway_6_ins2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "hallway_7"
+    },
+    "hallway_7": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "hallway_8"
+    },
     "hallway_8": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_shy.png",
@@ -244,6 +259,12 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/seyoun_back.png",
         "next": "hallway_13_ins"
     },
+    "hallway_13_ins": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_back.png",
+        "setFlags": ["met_seoyeon"],
+        "next": "classroom_1"
+    },
     "classroom_1": {
         "background": "assets/images/background/room_school.png",
         "character": null,
@@ -255,10 +276,20 @@ Object.assign(SCENARIO[1], {
         "character": null,
         "next": "classroom_2_ins"
     },
+    "classroom_2_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "classroom_3"
+    },
     "classroom_3": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_3_ins"
+    },
+    "classroom_3_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "classroom_4"
     },
     "classroom_4": {
         "background": "assets/images/background/room_school.png",
@@ -269,6 +300,21 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_5_ins"
+    },
+    "classroom_5_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "classroom_5_ins2"
+    },
+    "classroom_5_ins2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "classroom_5_ins3"
+    },
+    "classroom_5_ins3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "classroom_6"
     },
     "classroom_6": {
         "background": "assets/images/background/room_school.png",
@@ -299,6 +345,21 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "classroom_dain_5_ins"
+    },
+    "classroom_dain_5_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "classroom_dain_5_ins2"
+    },
+    "classroom_dain_5_ins2": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_normal.png",
+        "next": "classroom_dain_5_ins3"
+    },
+    "classroom_dain_5_ins3": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/teacher_angry.png",
+        "next": "classroom_yuna_1"
     },
     "classroom_yuna_1": {
         "background": "assets/images/background/room_school.png",
@@ -344,6 +405,11 @@ Object.assign(SCENARIO[1], {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/minsu_smirk.png",
         "next": "classroom_minsu_2_ins"
+    },
+    "classroom_minsu_2_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/minsu_normal.png",
+        "next": "classroom_dain_talk_1"
     },
     "classroom_dain_talk_1": {
         "background": "assets/images/background/room_school.png",
@@ -410,81 +476,15 @@ Object.assign(SCENARIO[1], {
         "character": "assets/images/characters/yuna_bored.png",
         "next": "classroom_yuna_note_5_ins"
     },
+    "classroom_yuna_note_5_ins": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_bored.png",
+        "next": "classroom_yuna_note_6"
+    },
     "classroom_yuna_note_6": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
         "setFlags": ["met_dain","met_yuna"],
         "next": "lunch_start"
-    },
-    "hallway_6_ins": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "hallway_6_ins2"
-    },
-    "hallway_6_ins2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "hallway_7"
-    },
-    "hallway_7": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "hallway_8"
-    },
-    "hallway_13_ins": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_back.png",
-        "setFlags": ["met_seoyeon"],
-        "next": "classroom_1"
-    },
-    "classroom_2_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_3"
-    },
-    "classroom_3_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_4"
-    },
-    "classroom_5_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_5_ins2"
-    },
-    "classroom_5_ins2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_5_ins3"
-    },
-    "classroom_5_ins3": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_6"
-    },
-    "classroom_dain_5_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_dain_5_ins2"
-    },
-    "classroom_dain_5_ins2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_dain_5_ins3"
-    },
-    "classroom_dain_5_ins3": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_angry.png",
-        "next": "classroom_yuna_1"
-    },
-    "classroom_minsu_2_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/minsu_normal.png",
-        "next": "classroom_dain_talk_1"
-    },
-    "classroom_yuna_note_5_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "classroom_yuna_note_6"
     }
 });

@@ -43,10 +43,19 @@
         "name": "서연",
         "text": "다음엔 내가 먼저 데려갈 거야."
     },
+    "after5_farewell_seo_6_ins": {
+        "name": "{name}",
+        "text": "*서연이 돌아서며 손을 흔든다. — Day 1과 같은 동작이다. 뒤돌아보지 않는다.*"
+    },
+    "after5_farewell_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*등이 곧다. 완벽하게. — 근데 이번에는, 떨리지 않는다.*"
+    },
     "after5_farewell_seo_7": {
         "name": "{name}",
         "text": "*서연이 돌아서며 손을 흔든다. Day 1과 같은 동작이다. 뒤돌아보지 않는다. 등이 곧다. 완벽하게. 근데 이번에는, 떨리지 않는다.*"
     },
+    "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
         "name": "{name}",
         "text": "*도서관 앞에서 유나가 다가온다. 아무 말 없이 책 한 권을 건넨다.*"
@@ -71,6 +80,7 @@
         "name": "{name}",
         "text": "*복도로 돌아왔다.*"
     },
+    "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
         "text": "*체육관 앞에서 다인이 달려온다.*"
@@ -87,6 +97,18 @@
         "name": "다인",
         "text": "근데 뭐, 네가 고른 거니까. 다음엔 나한테도 기회 줘야 해!"
     },
+    "after5_farewell_dain_4_ins": {
+        "name": "{name}",
+        "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. — Day 1에서와 같은 힘이다.*"
+    },
+    "after5_farewell_dain_4_ins2": {
+        "name": "다인",
+        "text": "...잘 해. 진짜로."
+    },
+    "after5_farewell_dain_4_ins3": {
+        "name": "{name}",
+        "text": "*느낌표가 살아 있다. — 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
+    },
     "after5_farewell_dain_5": {
         "name": "{name}",
         "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. Day 1에서와 같은 힘이다. 느낌표가 살아 있다. 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
@@ -102,6 +124,19 @@
     "after5_end": {
         "name": "{name}",
         "text": "*석양이 교정을 물들인다. 5일이라는 시간이 이렇게 짧았나. — 마지막 선택의 순간이 다가온다.*"
+    },
+    "after5_ending_check": {},
+    "after5_hidden_route_choice_check": {
+        "name": "{name}",
+        "text": "*마지막 발걸음이 두 갈래로 갈라진다. 이미 약속한 사람과, 끝내 모른 척하지 못한 마음.*"
+    },
+    "after5_hidden_route_choice": {
+        "name": "{name}",
+        "text": "*어디로 가야 할까. 오늘은 — 내가 정해야 한다.*",
+        "choices": [
+            "약속했던 사람에게 간다",
+            "끝까지 마음에 남은 쪽으로 간다"
+        ]
     },
     "after5_set_harem": {
         "name": "{name}",
@@ -125,95 +160,6 @@
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
-    "after5_last_chance_dain_aff_check": {},
-    "after5_last_chance_yuna_aff_check": {},
-    "after5_last_chance_choice": {
-        "name": "{name}",
-        "text": "*지금 아니면 기회 없다.*",
-        "choices": [
-            "이번에는 고백하겠다",
-            "...아무 말도 하지 못했다"
-        ]
-    },
-    "after5_confess_yes": {
-        "name": "{name}",
-        "text": "*또 도망칠 뻔했다. 전 학교에서처럼. 핸드폰을 주머니에 넣고 아무 말 못 하는 그 순간이 다시 올 뻔했다. — 안 된다. 이번에는.*"
-    },
-    "after5_confess_yes_2": {
-        "name": "{name}",
-        "text": "있잖아 — 나, 너한테 할 말이 있어."
-    },
-    "after5_confess_aff_seo": {},
-    "after5_confess_aff_dain": {},
-    "after5_confess_aff_yuna": {},
-    "after5_confess_react_seo": {
-        "name": "서연",
-        "text": "*나란히 걸어가며.* ...늦었어. 근데 — 안 늦었어. 네가 도망치지 않고 돌아왔으니까."
-    },
-    "after5_confess_react_seo_low": {
-        "name": "서연",
-        "text": "*한참 말이 없다.* ...고마워. 근데 지금은, 그 말만으로 괜찮은 척하면 안 될 것 같아."
-    },
-    "after5_confess_react_dain": {
-        "name": "다인",
-        "text": "*학교를 나서며.* 야, 진짜?! ...진짜? 나 — 기다렸거든. 어제부터. 아니 그저께부터."
-    },
-    "after5_confess_react_dain_low": {
-        "name": "다인",
-        "text": "*숨을 고른다.* ...들었어. 근데 나 아직 바로 웃긴 좀 힘들어."
-    },
-    "after5_confess_react_yuna": {
-        "name": "유나",
-        "text": "*나란히 걸었다.* ...알고 있었어. ...읽었으면 됐어."
-    },
-    "after5_confess_react_yuna_low": {
-        "name": "유나",
-        "text": "*쪽지를 접어 쥔다.* ...읽었어. 근데 아직 결말은 못 정하겠어."
-    },
-    "after5_confess_fail_walk_1": {
-        "name": "{name}",
-        "text": "*더 할 말은 떠오르지 않았다. 해가 더 내려앉고, 우리는 잠시 같은 방향으로 걷기만 했다.*"
-    },
-    "after5_confess_fail_walk_2": {
-        "name": "{name}",
-        "text": "*결론이 나지 않은 마음을 안은 채, 발걸음은 공원으로 이어졌다.*"
-    },
-    "after5_confess_react_yuna_call": {
-        "name": "{name}",
-        "text": "유나."
-    },
-    "after5_confess_no": {
-        "name": "{name}",
-        "text": "*목구멍이 막힌 것처럼 아무 말도 나오지 않는다. 이번에도.*"
-    },
-    "after5_confess_no_2": {
-        "name": "{name}",
-        "text": "*저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 손에 아무것도 쥐지 못한 채 서 있다.*"
-    },
-    "after5_confess_no_2b": {
-        "name": "{name}",
-        "text": "*끝내 돌아서서 집으로 향했다.*"
-    },
-    "after5_farewell_seo_6_ins": {
-        "name": "{name}",
-        "text": "*서연이 돌아서며 손을 흔든다. — Day 1과 같은 동작이다. 뒤돌아보지 않는다.*"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*등이 곧다. 완벽하게. — 근데 이번에는, 떨리지 않는다.*"
-    },
-    "after5_farewell_dain_4_ins": {
-        "name": "{name}",
-        "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. — Day 1에서와 같은 힘이다.*"
-    },
-    "after5_farewell_dain_4_ins2": {
-        "name": "다인",
-        "text": "...잘 해. 진짜로."
-    },
-    "after5_farewell_dain_4_ins3": {
-        "name": "{name}",
-        "text": "*느낌표가 살아 있다. — 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
-    },
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*또 도망칠 뻔했다. 전 학교에서처럼. 핸드폰을 주머니에 넣고 아무 말 못 하는 그 순간이 다시 올 뻔했다. — 안 된다. 이번에는.*"
@@ -262,6 +208,7 @@
         "name": "서연",
         "text": "*서연이 돌아본다. 발끝이 반쯤 돌아가 있다. 금방이라도 갈 수 있게.* ...왜."
     },
+    "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_ins11": {
         "name": "{name}",
         "text": "다인아."
@@ -306,6 +253,7 @@
         "name": "다인",
         "text": "*다인이 멈추긴 한다. 근데 금방 웃지 못한다.* ...왜."
     },
+    "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
         "name": "{name}",
         "text": "유나."
@@ -342,6 +290,49 @@
         "name": "유나",
         "text": "*유나가 천천히 돌아본다. 책을 끌어안은 팔에 힘이 들어간다.* ...왜."
     },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*지금 아니면 기회 없다.*",
+        "choices": [
+            "이번에는 고백하겠다",
+            "...아무 말도 하지 못했다"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*또 도망칠 뻔했다. 전 학교에서처럼. 핸드폰을 주머니에 넣고 아무 말 못 하는 그 순간이 다시 올 뻔했다. — 안 된다. 이번에는.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "있잖아 — 나, 너한테 할 말이 있어."
+    },
+    "after5_confess_aff_seo": {},
+    "after5_confess_react_seo": {
+        "name": "서연",
+        "text": "*나란히 걸어가며.* ...늦었어. 근데 — 안 늦었어. 네가 도망치지 않고 돌아왔으니까."
+    },
+    "after5_confess_react_seo_low": {
+        "name": "서연",
+        "text": "*한참 말이 없다.* ...고마워. 근데 지금은, 그 말만으로 괜찮은 척하면 안 될 것 같아."
+    },
+    "after5_confess_aff_dain": {},
+    "after5_confess_react_dain": {
+        "name": "다인",
+        "text": "*학교를 나서며.* 야, 진짜?! ...진짜? 나 — 기다렸거든. 어제부터. 아니 그저께부터."
+    },
+    "after5_confess_react_dain_low": {
+        "name": "다인",
+        "text": "*숨을 고른다.* ...들었어. 근데 나 아직 바로 웃긴 좀 힘들어."
+    },
+    "after5_confess_aff_yuna": {},
+    "after5_confess_react_yuna": {
+        "name": "유나",
+        "text": "*나란히 걸었다.* ...알고 있었어. ...읽었으면 됐어."
+    },
+    "after5_confess_react_yuna_call": {
+        "name": "{name}",
+        "text": "유나."
+    },
     "after5_confess_react_yuna_ins": {
         "name": "{name}",
         "text": "*유나가 책을 내려놓는다. 표정이 변하지 않는다. — 근데 손이 떨리고 있다.*"
@@ -374,7 +365,28 @@
         "name": "{name}",
         "text": "*그렇게 — 학교를 벗어나 걸었다.*"
     },
-    "after5_farewell_yuna_check": {},
-    "after5_farewell_dain_check": {},
-    "after5_ending_check": {}
+    "after5_confess_react_yuna_low": {
+        "name": "유나",
+        "text": "*쪽지를 접어 쥔다.* ...읽었어. 근데 아직 결말은 못 정하겠어."
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*더 할 말은 떠오르지 않았다. 해가 더 내려앉고, 우리는 잠시 같은 방향으로 걷기만 했다.*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*결론이 나지 않은 마음을 안은 채, 발걸음은 공원으로 이어졌다.*"
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*목구멍이 막힌 것처럼 아무 말도 나오지 않는다. 이번에도.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 손에 아무것도 쥐지 못한 채 서 있다.*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*끝내 돌아서서 집으로 향했다.*"
+    }
 }

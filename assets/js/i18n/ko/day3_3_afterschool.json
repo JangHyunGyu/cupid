@@ -54,6 +54,116 @@
         "name": "{name}",
         "text": "*복도로 나왔다. 느낌표가 사라진 다인의 문장, 구겨진 세 글자의 쪽지. — 선택의 무게가 어깨에 내려앉는다.*"
     },
+    "after3_seo_1": {
+        "name": "{name}",
+        "text": "*학생회실 문을 열었다. — 서연이 책상에 엎드려 있다.*"
+    },
+    "after3_seo_2": {
+        "name": "{name}",
+        "text": "*처음 보는 모습이다. 완벽한 학생회장이 — 무방비 상태로 엎드려 있다.*"
+    },
+    "after3_seo_3": {
+        "name": "{name}",
+        "text": "*서연이 인기척에 고개를 든다. 눈이 피곤해 보인다. 화장이 살짝 번져 있다.*"
+    },
+    "after3_seo_4": {
+        "name": "서연",
+        "text": "......"
+    },
+    "after3_seo_5": {
+        "name": "{name}",
+        "text": "서연?"
+    },
+    "after3_seo_5_ins": {
+        "name": "서연",
+        "text": "*급하게 머리카락을 정리하며* ...봤어?"
+    },
+    "after3_seo_6": {
+        "name": "서연",
+        "text": "...봤어?"
+    },
+    "after3_seo_7": {
+        "name": "{name}",
+        "text": "뭘 봤다고."
+    },
+    "after3_seo_7_ins": {
+        "name": "서연",
+        "text": "완벽하지 않은 나."
+    },
+    "after3_seo_8": {
+        "name": "서연",
+        "text": "이런 모습. — 이건 비밀이야."
+    },
+    "after3_seo_9": {
+        "name": "{name}",
+        "text": "*서연이 자세를 바로잡는다. 하지만 — 평소의 완벽한 웃음이 돌아오지 않는다.*"
+    },
+    "after3_seo_choice": {
+        "name": "서연",
+        "text": "다음에 내가 부탁하면 무조건 들어줘야 해. — 대가야.",
+        "choices": [
+            "완벽하지 않아도 괜찮은데",
+            "비밀 지켜줄게"
+        ]
+    },
+    "after3_seo_choice1": {
+        "name": "{name}",
+        "text": "*서연이 잠깐 멈춘다. 펜을 내려놓는다. 천천히.*"
+    },
+    "after3_seo_choice1_react": {
+        "name": "서연",
+        "text": "...그런 말. 쉽게 하면 안 되는 건데."
+    },
+    "after3_seo_choice1_react_ins": {
+        "name": "{name}",
+        "text": "*서연이 창밖을 본다. 표정이 안 보인다. — 의도적으로 안 보여주는 거다.*"
+    },
+    "after3_seo_choice1_react_ins2": {
+        "name": "{name}",
+        "text": "*근데 — 새끼손가락이 책상 위에서 가볍게 움직인다. 뭔가를 잡으려는 것처럼. 무의식적으로.*"
+    },
+    "after3_seo_choice1_react_ins3": {
+        "name": "{name}",
+        "text": "*서연이 자세를 바로잡는다. 학생회장의 얼굴이 돌아온다. — 근데 완벽하지 않다. 웃음의 각도가 0.5도쯤 어긋나 있다.*"
+    },
+    "after3_seo_choice1_react_ins4": {
+        "name": "서연",
+        "text": "...고마워."
+    },
+    "after3_seo_choice1_react_ins5": {
+        "name": "{name}",
+        "text": "비밀은 잘 지켜."
+    },
+    "after3_seo_choice1_react_ins6": {
+        "name": "서연",
+        "text": "*서류를 정리하며* 나도 네 비밀 하나 알고 있어."
+    },
+    "after3_seo_choice1_react_ins7": {
+        "name": "서연",
+        "text": "점심때 너 계란말이 먹을 때 눈이 반짝였잖아. — 그건 연기 못 하는 거야."
+    },
+    "after3_seo_choice1_react_ins8": {
+        "name": "{name}",
+        "text": "*비밀을 지켜준다고 했더니, 동등한 비밀을 꺼냈다. — 이 사람은 '고마워'보다 '대등함'이 먼저다.*"
+    },
+    "after3_seo_freetalk": {
+        "name": "서연",
+        "text": "*서연이와 복도에서 마주 서 있다. 서연의 표정이 복잡하다.*",
+        "context": "3일차 방과후, 서연과의 대립/화해 직후. 양다리 의심으로 관계에 균열이 생긴 상태. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
+        "personality": "서연은 쿨뷰티 학생회장. 독점욕이 강하고 질투 시 직설적. 지금은 상처받았지만 티 내지 않으려 한다."
+    },
+    "after3_seo_end": {
+        "name": "{name}",
+        "text": "*그 한마디가 묵직하다. — 이 사람에게 '완벽하지 않은 모습을 보이는 것'이 얼마나 큰 일인지, 이제 조금 알 것 같다.*"
+    },
+    "after3_seo_choice2": {
+        "name": "{name}",
+        "text": "*눈가가 붉어졌다. — 울지는 않았다. 아직은.*"
+    },
+    "after3_seo_end_c2": {
+        "name": "{name}",
+        "text": "*비밀을 지켜주겠다는 말이 — 이 사람한테는 큰 의미인 것 같다.*"
+    },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
         "text": "*복도에서 서연이 클립보드를 정리하고 있다. 페이지를 넘기는 손이 평소보다 빠르다.*"
@@ -82,94 +192,6 @@
         "name": "{name}",
         "text": "*체육관을 나와 복도로 돌아왔다. 서연은 아무렇지 않은 척했고, 다인은 그러지도 못했다. — 둘 다 더 아프다.*"
     },
-    "after3_reject_for_dain_1": {
-        "name": "{name}",
-        "text": "*서연이 클립보드를 정리하고 있다. 웃고 있는데, 정리하는 손끝이 너무 반듯하다.*"
-    },
-    "after3_reject_for_dain_2": {
-        "name": "서연",
-        "text": "...오늘은 할 일이 좀 있어서. 먼저 갈게."
-    },
-    "after3_reject_for_dain_2b": {
-        "name": "{name}",
-        "text": "*유나의 아지트로 향했다.*"
-    },
-    "after3_reject_for_dain_3": {
-        "name": "{name}",
-        "text": "*도서관에 쪽지가 없다. 유나의 가방도 없다. 자리에 미지근한 물 자국만 남아 있다. 방금 전까지 있었던 것처럼.*"
-    },
-    "after3_reject_for_dain_3b": {
-        "name": "{name}",
-        "text": "*다시 복도로 돌아왔다.*"
-    },
-    "after3_reject_for_dain_4": {
-        "name": "{name}",
-        "text": "*다시 복도로 돌아왔다. 서연의 연습한 웃음, 유나가 두고 간 물 자국. — 아무 말 안 한 쪽이 더 오래 남는다.*"
-    },
-    "after3_seo_1": {
-        "name": "{name}",
-        "text": "*학생회실 문을 열었다. — 서연이 책상에 엎드려 있다.*"
-    },
-    "after3_seo_2": {
-        "name": "{name}",
-        "text": "*처음 보는 모습이다. 완벽한 학생회장이 — 무방비 상태로 엎드려 있다.*"
-    },
-    "after3_seo_3": {
-        "name": "{name}",
-        "text": "*서연이 인기척에 고개를 든다. 눈이 피곤해 보인다. 화장이 살짝 번져 있다.*"
-    },
-    "after3_seo_4": {
-        "name": "서연",
-        "text": "......"
-    },
-    "after3_seo_5": {
-        "name": "{name}",
-        "text": "서연?"
-    },
-    "after3_seo_6": {
-        "name": "서연",
-        "text": "...봤어?"
-    },
-    "after3_seo_7": {
-        "name": "{name}",
-        "text": "뭘 봤다고."
-    },
-    "after3_seo_8": {
-        "name": "서연",
-        "text": "이런 모습. — 이건 비밀이야."
-    },
-    "after3_seo_9": {
-        "name": "{name}",
-        "text": "*서연이 자세를 바로잡는다. 하지만 — 평소의 완벽한 웃음이 돌아오지 않는다.*"
-    },
-    "after3_seo_choice": {
-        "name": "서연",
-        "text": "다음에 내가 부탁하면 무조건 들어줘야 해. — 대가야.",
-        "choices": [
-            "완벽하지 않아도 괜찮은데",
-            "비밀 지켜줄게"
-        ]
-    },
-    "after3_seo_choice1": {
-        "name": "{name}",
-        "text": "*서연이 잠깐 멈춘다. 펜을 내려놓는다. 천천히.*"
-    },
-    "after3_seo_choice1_react": {
-        "name": "서연",
-        "text": "...그런 말. 쉽게 하면 안 되는 건데."
-    },
-    "after3_seo_choice2": {
-        "name": "{name}",
-        "text": "*눈가가 붉어졌다. — 울지는 않았다. 아직은.*"
-    },
-    "after3_seo_end": {
-        "name": "{name}",
-        "text": "*그 한마디가 묵직하다. — 이 사람에게 '완벽하지 않은 모습을 보이는 것'이 얼마나 큰 일인지, 이제 조금 알 것 같다.*"
-    },
-    "after3_seo_end_c2": {
-        "name": "{name}",
-        "text": "*비밀을 지켜주겠다는 말이 — 이 사람한테는 큰 의미인 것 같다.*"
-    },
     "after3_yuna_1": {
         "name": "{name}",
         "text": "*도서관 별관. 유나가 있던 비밀 독서 공간. — 문이 열려 있다.*"
@@ -189,6 +211,10 @@
     "after3_yuna_5": {
         "name": "{name}",
         "text": "*'어느 날 전학생이 왔다. 그는 도서관에 찾아와 아무 말 없이 옆에 앉았다. — 나는 그게 싫지 않았다.'*"
+    },
+    "after3_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*...이거 나 얘기 아닌가?*"
     },
     "after3_yuna_6": {
         "name": "유나",
@@ -226,6 +252,10 @@
         "name": "{name}",
         "text": "'전학생이 도서관에 왔다'는 우연의 일치?"
     },
+    "after3_yuna_choice1_2_ins": {
+        "name": "유나",
+        "text": "*노트를 가슴에 꼭 안으며* ...소설은. 허구야."
+    },
     "after3_yuna_choice1_3": {
         "name": "유나",
         "text": "...소설은. 허구야."
@@ -233,6 +263,12 @@
     "after3_yuna_choice1_react": {
         "name": "{name}",
         "text": "*'허구'라고 했지만, 귀가 거짓말을 하고 있다.*"
+    },
+    "after3_yuna_freetalk": {
+        "name": "유나",
+        "text": "*유나와 나란히 걷고 있다. 유나의 눈빛이 서늘하다.*",
+        "context": "3일차 방과후, 유나와의 대화 직후. 유나가 평소보다 감정을 드러내고 있다. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
+        "personality": "유나는 신비주의 문학소녀. 평소 차분하지만 지금은 감정이 흔들리고 있다. 질투보다는 확인하고 싶은 마음."
     },
     "after3_yuna_choice2": {
         "name": "{name}",
@@ -246,6 +282,10 @@
         "name": "유나",
         "text": "...결말을 쓰면 끝나니까."
     },
+    "after3_yuna_choice2_3_ins": {
+        "name": "{name}",
+        "text": "*유나가 두 문장 이상 연속으로 말했다. — 이 사람이 이만큼 말하는 건 처음 봤다.*"
+    },
     "after3_yuna_choice2_react": {
         "name": "{name}",
         "text": "*유나가 두 문장 이상 연속으로 말했다. — 이 사람에게 그건 감정의 증거다.*"
@@ -253,6 +293,30 @@
     "after3_yuna_end": {
         "name": "{name}",
         "text": "*유나가 노트를 가슴에 꼭 안고 있다.*"
+    },
+    "after3_reject_for_dain_1": {
+        "name": "{name}",
+        "text": "*서연이 클립보드를 정리하고 있다. 웃고 있는데, 정리하는 손끝이 너무 반듯하다.*"
+    },
+    "after3_reject_for_dain_2": {
+        "name": "서연",
+        "text": "...오늘은 할 일이 좀 있어서. 먼저 갈게."
+    },
+    "after3_reject_for_dain_2b": {
+        "name": "{name}",
+        "text": "*유나의 아지트로 향했다.*"
+    },
+    "after3_reject_for_dain_3": {
+        "name": "{name}",
+        "text": "*도서관에 쪽지가 없다. 유나의 가방도 없다. 자리에 미지근한 물 자국만 남아 있다. 방금 전까지 있었던 것처럼.*"
+    },
+    "after3_reject_for_dain_3b": {
+        "name": "{name}",
+        "text": "*다시 복도로 돌아왔다.*"
+    },
+    "after3_reject_for_dain_4": {
+        "name": "{name}",
+        "text": "*다시 복도로 돌아왔다. 서연의 연습한 웃음, 유나가 두고 간 물 자국. — 아무 말 안 한 쪽이 더 오래 남는다.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -273,6 +337,10 @@
     "after3_dain_5": {
         "name": "{name}",
         "text": "괜찮지 않은 것 같은데."
+    },
+    "after3_dain_5_ins": {
+        "name": "다인",
+        "text": "진짜 괜찮다니까!! 별거 아냐!!"
     },
     "after3_dain_6": {
         "name": "{name}",
@@ -310,288 +378,15 @@
         "name": "다인",
         "text": "고마워. 아무것도 안 물어봐 줘서."
     },
-    "after3_dain_choice2": {
-        "name": "다인",
-        "text": "아! 괜찮다니까! 파스 같은 거 필요 없어!!"
-    },
-    "after3_dain_end": {
-        "name": "{name}",
-        "text": "*다인이 주먹으로 어깨를 가볍게 친다. — 어제보다 약하다.*"
-    },
-    "after3_dain_end_check": {
-        "name": "{name}",
-        "text": "*다인이 주먹으로 어깨를 가볍게 친다.*"
-    },
-    "after3_dain_end_first": {
-        "name": "{name}",
-        "text": "*다인이 주먹으로 어깨를 가볍게 친다. — 쑥스러운가 보다.*"
-    },
-    "after3_confront_1": {
-        "name": "{name}",
-        "text": "*방과후 장소에서 나오는데 — 서연이 복도에서 기다리고 있다. 팔짱을 끼고. 평소의 여유가 없다.*"
-    },
-    "after3_confront_2": {
-        "name": "서연",
-        "text": "{name}. 잠깐."
-    },
-    "after3_confront_3": {
-        "name": "{name}",
-        "text": "*서연이 복도 끝으로 데려간다. 아무도 없는 곳.*"
-    },
-    "after3_confront_4": {
-        "name": "서연",
-        "text": "점심때 말이야."
-    },
-    "after3_confront_5": {
-        "name": "서연",
-        "text": "네가 다른 애들한테 웃어줄 때, 똑같이 웃어줄 때, 그게 좀 싫었어."
-    },
-    "after3_confront_6": {
-        "name": "서연",
-        "text": "점심때 그 난장판... 대체 무슨 생각으로 우리 셋 모두한테 약속을 잡은 거야?"
-    },
-    "after3_confront_choice": {
-        "name": "{name}",
-        "text": "*서연이 나를 똑바로 본다. 학생회장의 눈이 아니다. 한 사람의 눈이다.*",
-        "choices": [
-            "솔직하게 인정한다",
-            "시간대가 다르니까 괜찮을 줄 알았어",
-            "서연만 진심이야"
-        ]
-    },
-    "after3_confront_admit": {
-        "name": "서연",
-        "text": "...거절을 못 해서."
-    },
-    "after3_confront_admit_2": {
-        "name": "서연",
-        "text": "그 말이 제일 잔인한 거야, {name}. 거절 못 하는 다정함이 — 가짜 희망을 주거든."
-    },
-    "after3_confront_admit_3": {
-        "name": "{name}",
-        "text": "*서연이 도시락 가방을 집어든다. 손이 떨리고 있다.*"
-    },
-    "after3_confront_admit_4": {
-        "name": "서연",
-        "text": "나한테 완벽하지 않아도 된다고 해놓고 — 너는 모두에게 완벽한 사람이 되려 했잖아. 그게 더 나빠."
-    },
-    "after3_confront_admit_5": {
-        "name": "서연",
-        "text": "...오늘은 옥상 안 열어놓을게."
-    },
-    "after3_confront_admit_6": {
-        "name": "{name}",
-        "text": "*등이 곧다. 완벽하게. — 근데 주먹이 쥐어져 있다. 손등이 하얗다.*"
-    },
-    "after3_confront_excuse": {
-        "name": "서연",
-        "text": "...그게 문제라는 걸 모르겠어?"
-    },
-    "after3_confront_excuse_2": {
-        "name": "서연",
-        "text": "몇 명이랑 약속했냐가 문제가 아니야. 나한테 그 약속이 뭐였는지가 문제야."
-    },
-    "after3_confront_lie_ins": {
-        "name": "{name}",
-        "text": "*서연이 잠깐 멈춘다. 눈이 흔들린다.*"
-    },
-    "after3_confront_lie": {
-        "name": "서연",
-        "text": "...정말? 그 말... 믿어도 되는 거지?"
-    },
-    "after3_confront_lie_2": {
-        "name": "{name}",
-        "text": "*믿고 싶어하는 눈. — 거짓말이 이렇게 무거울 줄 몰랐다.*"
-    },
-    "after3_confront_end": {
-        "name": "{name}",
-        "text": "*서연이 사라진 복도에 혼자 서 있다. — 등이 곧았다. 완벽하게. 근데 주먹이 쥐어져 있었다.*"
-    },
-    "after3_final": {
-        "name": "{name}",
-        "text": "*방과후가 끝났다. — 오늘 본 것들이 머릿속에서 떠나지 않는다.*"
-    },
-    "haeun_check": {
-        "name": "{name}",
-        "text": ""
-    },
-    "haeun_warn_1": {
-        "name": "{name}",
-        "text": "*학생회실을 나왔다. 복도가 비어 있다. — 누군가 기다리고 있었다.*"
-    },
-    "haeun_warn_2": {
-        "name": "하은",
-        "text": "...{name} 씨."
-    },
-    "haeun_warn_2b": {
-        "name": "{name}",
-        "text": "응."
-    },
-    "haeun_warn_3": {
-        "name": "하은",
-        "text": "선배 — 서연 선배 방금 봤어요?"
-    },
-    "haeun_warn_4": {
-        "name": "하은",
-        "text": "...선배가 울었어요. 학생회실에서 나온 뒤에. 화장실에서. — 저만 봤어요. 1년 동안 선배가 우는 건 처음이에요."
-    },
-    "haeun_warn_4b": {
-        "name": "{name}",
-        "text": "울었다고?"
-    },
-    "haeun_warn_5": {
-        "name": "{name}",
-        "text": "*서연이 울었다. — 나한테는 '완벽하지 않은 모습을 봤다'고만 했는데. 그 뒤에 울었다.*"
-    },
-    "haeun_warn_5b": {
-        "name": "하은",
-        "text": "선배는 완벽해야 한다고 생각하는 사람이에요. 울면 지는 거라고 생각하는 사람이요."
-    },
-    "haeun_warn_5c": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "haeun_warn_6": {
-        "name": "하은",
-        "text": "그 선배가 울었다는 건 — 그만큼 {name} 씨한테 진심이라는 뜻이에요."
-    },
-    "haeun_warn_7": {
-        "name": "하은",
-        "text": "참견인 거 알아요. 근데 선배가 걱정돼서. — 선배 지금 집이 좀 복잡해요. 부모님이... ...아무튼. 선배한테 잘해주세요. 부탁이에요."
-    },
-    "haeun_warn_8": {
-        "name": "{name}",
-        "text": "*서연이 화장실에서 혼자 우는 모습이 머릿속에서 안 지워진다. 완벽하게 곧은 등, 하얀 주먹, 그리고 — 아무도 없는 화장실.*"
-    },
-    "haeun_warn_8b": {
-        "name": "{name}",
-        "text": "*학교 앞으로 나왔다.*"
-    },
-    "minsu_d3_check": {
-        "name": "{name}",
-        "text": ""
-    },
-    "minsu_d3_1": {
-        "name": "{name}",
-        "text": "*하교길. 교문에서 민수가 기다리고 있다.*"
-    },
-    "minsu_d3_2": {
-        "name": "민수",
-        "text": "봤다."
-    },
-    "minsu_d3_3": {
-        "name": "민수",
-        "text": "점심때. 그리고 방금 서연이 표정도."
-    },
-    "minsu_d3_4": {
-        "name": "민수",
-        "text": "어제 내가 뭐라고 했어? '나중에 셋 다 울면 네 탓이야'라고 했잖아. 아직 '나중에'가 아니야. 지금이야."
-    },
-    "minsu_d3_5": {
-        "name": "민수",
-        "text": "야, 나도 옆에서 보기 힘들어. 걔들 다 좋은 애들이야. — 네가 나쁜 놈이라서 이러는 건 아닌 거 알아. 거절을 못 해서 그런 거잖아."
-    },
-    "minsu_d3_5b": {
-        "name": "{name}",
-        "text": "*민수가 한숨을 쉰다. 한심하다는 게 아니라, 진짜 걱정하는 한숨이다.*"
-    },
-    "minsu_d3_6": {
-        "name": "{name}",
-        "text": "......맞아."
-    },
-    "minsu_d3_6b": {
-        "name": "민수",
-        "text": "전 학교에서 뭔 일 있었는지 안 물어볼게. 근데 하나만 말해줄게."
-    },
-    "minsu_d3_7": {
-        "name": "민수",
-        "text": "거절도 사랑이야. 안 되는 사람한테 거절해주는 게 — 거짓 희망보다 백 배 낫거든."
-    },
-    "minsu_d3_8": {
-        "name": "{name}",
-        "text": "*거절도 사랑. — 전 학교에서 소정이가 나한테 '거절'할 기회조차 주지 못했다. 내가 말하지 못했으니까.*"
-    },
-    "minsu_d3_9": {
-        "name": "{name}",
-        "text": "*그때 소정이가 거절해줬다면 — 이렇게 미련이 남지는 않았을 거다. 거절도 사랑이라면, 내가 지금 해야 할 건 — 한 사람에게만 '좋다'고 말하는 거다.*"
-    },
-    "minsu_d3_10": {
-        "name": "민수",
-        "text": "내일 학교에서 보자. — 좀 생각 좀 해라, 진지하게."
-    },
-    "after3_seo_freetalk": {
-        "name": "서연",
-        "text": "*서연이와 복도에서 마주 서 있다. 서연의 표정이 복잡하다.*",
-        "context": "3일차 방과후, 서연과의 대립/화해 직후. 양다리 의심으로 관계에 균열이 생긴 상태. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
-        "personality": "서연은 쿨뷰티 학생회장. 독점욕이 강하고 질투 시 직설적. 지금은 상처받았지만 티 내지 않으려 한다."
-    },
-    "after3_yuna_freetalk": {
-        "name": "유나",
-        "text": "*유나와 나란히 걷고 있다. 유나의 눈빛이 서늘하다.*",
-        "context": "3일차 방과후, 유나와의 대화 직후. 유나가 평소보다 감정을 드러내고 있다. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
-        "personality": "유나는 신비주의 문학소녀. 평소 차분하지만 지금은 감정이 흔들리고 있다. 질투보다는 확인하고 싶은 마음."
-    },
     "after3_dain_freetalk": {
         "name": "다인",
         "text": "*다인이와 운동장 벤치에 앉아 있다. 다인이 평소보다 조용하다.*",
         "context": "3일차 방과후, 다인과의 대화 직후. 다인이 상처받았지만 밝은 척하고 있다. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
         "personality": "다인은 에너지 넘치는 체육계. 지금은 밝은 척이 유일한 방어기제. 느낌표가 줄어들면 진심이 나온다."
     },
-    "after3_seo_5_ins": {
-        "name": "서연",
-        "text": "*급하게 머리카락을 정리하며* ...봤어?"
-    },
-    "after3_seo_choice1_react_ins": {
-        "name": "{name}",
-        "text": "*서연이 창밖을 본다. 표정이 안 보인다. — 의도적으로 안 보여주는 거다.*"
-    },
-    "after3_seo_choice1_react_ins2": {
-        "name": "{name}",
-        "text": "*근데 — 새끼손가락이 책상 위에서 가볍게 움직인다. 뭔가를 잡으려는 것처럼. 무의식적으로.*"
-    },
-    "after3_seo_choice1_react_ins3": {
-        "name": "{name}",
-        "text": "*서연이 자세를 바로잡는다. 학생회장의 얼굴이 돌아온다. — 근데 완벽하지 않다. 웃음의 각도가 0.5도쯤 어긋나 있다.*"
-    },
-    "after3_seo_choice1_react_ins4": {
-        "name": "서연",
-        "text": "...고마워."
-    },
-    "after3_seo_choice1_react_ins5": {
-        "name": "{name}",
-        "text": "비밀은 잘 지켜."
-    },
-    "after3_seo_choice1_react_ins6": {
-        "name": "서연",
-        "text": "*서류를 정리하며* 나도 네 비밀 하나 알고 있어."
-    },
-    "after3_seo_choice1_react_ins7": {
-        "name": "서연",
-        "text": "점심때 너 계란말이 먹을 때 눈이 반짝였잖아. — 그건 연기 못 하는 거야."
-    },
-    "after3_seo_choice1_react_ins8": {
-        "name": "{name}",
-        "text": "*비밀을 지켜준다고 했더니, 동등한 비밀을 꺼냈다. — 이 사람은 '고마워'보다 '대등함'이 먼저다.*"
-    },
-    "after3_yuna_5_ins": {
-        "name": "{name}",
-        "text": "*...이거 나 얘기 아닌가?*"
-    },
-    "after3_yuna_choice1_2_ins": {
-        "name": "유나",
-        "text": "*노트를 가슴에 꼭 안으며* ...소설은. 허구야."
-    },
-    "after3_yuna_choice2_3_ins": {
-        "name": "{name}",
-        "text": "*유나가 두 문장 이상 연속으로 말했다. — 이 사람이 이만큼 말하는 건 처음 봤다.*"
-    },
-    "after3_seo_7_ins": {
-        "name": "서연",
-        "text": "완벽하지 않은 나."
-    },
-    "after3_dain_5_ins": {
+    "after3_dain_choice2": {
         "name": "다인",
-        "text": "진짜 괜찮다니까!! 별거 아냐!!"
+        "text": "아! 괜찮다니까! 파스 같은 거 필요 없어!!"
     },
     "after3_dain_choice2_ins": {
         "name": "{name}",
@@ -617,6 +412,38 @@
         "name": "{name}",
         "text": "*받아들었다. — 다인이 누군가의 도움을 거절하지 않은 건 처음이다. 가슴이 먹먹하다.*"
     },
+    "after3_dain_end_check": {
+        "name": "{name}",
+        "text": "*다인이 주먹으로 어깨를 가볍게 친다.*"
+    },
+    "after3_dain_end": {
+        "name": "{name}",
+        "text": "*다인이 주먹으로 어깨를 가볍게 친다. — 어제보다 약하다.*"
+    },
+    "after3_dain_end_first": {
+        "name": "{name}",
+        "text": "*다인이 주먹으로 어깨를 가볍게 친다. — 쑥스러운가 보다.*"
+    },
+    "after3_confront_1": {
+        "name": "{name}",
+        "text": "*방과후 장소에서 나오는데 — 서연이 복도에서 기다리고 있다. 팔짱을 끼고. 평소의 여유가 없다.*"
+    },
+    "after3_confront_2": {
+        "name": "서연",
+        "text": "{name}. 잠깐."
+    },
+    "after3_confront_3": {
+        "name": "{name}",
+        "text": "*서연이 복도 끝으로 데려간다. 아무도 없는 곳.*"
+    },
+    "after3_confront_4": {
+        "name": "서연",
+        "text": "점심때 말이야."
+    },
+    "after3_confront_5": {
+        "name": "서연",
+        "text": "네가 다른 애들한테 웃어줄 때, 똑같이 웃어줄 때, 그게 좀 싫었어."
+    },
     "after3_confront_5_ins": {
         "name": "다인",
         "text": "*고개를 숙인 채.* ...나도. 좀 싫었어."
@@ -625,25 +452,78 @@
         "name": "{name}",
         "text": "*다인이 고개를 숙인다. 느낌표가 사라진 목소리. — 이 사람을 다치게 하고 있다.*"
     },
-    "haeun_warn_5c_ins": {
+    "after3_confront_6": {
         "name": "서연",
-        "text": "네가 다른 애들한테 웃어줄 때, 똑같이 웃어줄 때, 그게 좀 싫었어."
+        "text": "점심때 그 난장판... 대체 무슨 생각으로 우리 셋 모두한테 약속을 잡은 거야?"
+    },
+    "after3_confront_choice": {
+        "name": "{name}",
+        "text": "*서연이 나를 똑바로 본다. 학생회장의 눈이 아니다. 한 사람의 눈이다.*",
+        "choices": [
+            "솔직하게 인정한다",
+            "시간대가 다르니까 괜찮을 줄 알았어",
+            "서연만 진심이야"
+        ]
+    },
+    "after3_confront_admit": {
+        "name": "서연",
+        "text": "...거절을 못 해서."
     },
     "after3_confront_admit_ins": {
         "name": "{name}",
         "text": "*서연이 고개를 숙인다.*"
     },
+    "after3_confront_admit_2": {
+        "name": "서연",
+        "text": "그 말이 제일 잔인한 거야, {name}. 거절 못 하는 다정함이 — 가짜 희망을 주거든."
+    },
+    "after3_confront_admit_3": {
+        "name": "{name}",
+        "text": "*서연이 도시락 가방을 집어든다. 손이 떨리고 있다.*"
+    },
+    "after3_confront_admit_4": {
+        "name": "서연",
+        "text": "나한테 완벽하지 않아도 된다고 해놓고 — 너는 모두에게 완벽한 사람이 되려 했잖아. 그게 더 나빠."
+    },
     "after3_confront_admit_4_ins": {
         "name": "{name}",
         "text": "*서연이 돌아선다. — 멈춘다.*"
+    },
+    "after3_confront_admit_5": {
+        "name": "서연",
+        "text": "...오늘은 옥상 안 열어놓을게."
+    },
+    "after3_confront_admit_6": {
+        "name": "{name}",
+        "text": "*등이 곧다. 완벽하게. — 근데 주먹이 쥐어져 있다. 손등이 하얗다.*"
+    },
+    "after3_confront_excuse": {
+        "name": "서연",
+        "text": "...그게 문제라는 걸 모르겠어?"
     },
     "after3_confront_excuse_ins": {
         "name": "{name}",
         "text": "*서연의 눈이 차갑다. 처음 보는 온도다.*"
     },
+    "after3_confront_excuse_2": {
+        "name": "서연",
+        "text": "몇 명이랑 약속했냐가 문제가 아니야. 나한테 그 약속이 뭐였는지가 문제야."
+    },
     "after3_confront_excuse_2_ins": {
         "name": "{name}",
         "text": "*서연이 잠깐 멈춘다. 눈이 흔들린다.*"
+    },
+    "after3_confront_lie_ins": {
+        "name": "{name}",
+        "text": "*서연이 잠깐 멈춘다. 눈이 흔들린다.*"
+    },
+    "after3_confront_lie": {
+        "name": "서연",
+        "text": "...정말? 그 말... 믿어도 되는 거지?"
+    },
+    "after3_confront_lie_2": {
+        "name": "{name}",
+        "text": "*믿고 싶어하는 눈. — 거짓말이 이렇게 무거울 줄 몰랐다.*"
     },
     "after3_confront_lie_2_ins": {
         "name": "{name}",
@@ -653,13 +533,41 @@
         "name": "{name}",
         "text": "*등이 곧다. 완벽하게. — 근데 주먹이 쥐어져 있다. 손등이 하얗다.*"
     },
+    "after3_confront_end": {
+        "name": "{name}",
+        "text": "*서연이 사라진 복도에 혼자 서 있다. — 등이 곧았다. 완벽하게. 근데 주먹이 쥐어져 있었다.*"
+    },
+    "after3_final": {
+        "name": "{name}",
+        "text": "*방과후가 끝났다. — 오늘 본 것들이 머릿속에서 떠나지 않는다.*"
+    },
+    "haeun_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "haeun_warn_1": {
+        "name": "{name}",
+        "text": "*학생회실을 나왔다. 복도가 비어 있다. — 누군가 기다리고 있었다.*"
+    },
     "haeun_warn_1_ins": {
         "name": "{name}",
         "text": "*하은이 벽에 기대어 서 있다. 학생회 팔찌를 만지작거리고 있다.*"
     },
+    "haeun_warn_2": {
+        "name": "하은",
+        "text": "...{name} 씨."
+    },
     "haeun_warn_2_ins": {
         "name": "{name}",
         "text": "하은? 왜 여기서?"
+    },
+    "haeun_warn_2b": {
+        "name": "{name}",
+        "text": "응."
+    },
+    "haeun_warn_3": {
+        "name": "하은",
+        "text": "선배 — 서연 선배 방금 봤어요?"
     },
     "haeun_warn_3_ins": {
         "name": "하은",
@@ -669,9 +577,41 @@
         "name": "{name}",
         "text": "*— 뭐?*"
     },
+    "haeun_warn_4": {
+        "name": "하은",
+        "text": "...선배가 울었어요. 학생회실에서 나온 뒤에. 화장실에서. — 저만 봤어요. 1년 동안 선배가 우는 건 처음이에요."
+    },
+    "haeun_warn_4b": {
+        "name": "{name}",
+        "text": "울었다고?"
+    },
+    "haeun_warn_5": {
+        "name": "{name}",
+        "text": "*서연이 울었다. — 나한테는 '완벽하지 않은 모습을 봤다'고만 했는데. 그 뒤에 울었다.*"
+    },
+    "haeun_warn_5b": {
+        "name": "하은",
+        "text": "선배는 완벽해야 한다고 생각하는 사람이에요. 울면 지는 거라고 생각하는 사람이요."
+    },
+    "haeun_warn_5c": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "haeun_warn_5c_ins": {
+        "name": "서연",
+        "text": "네가 다른 애들한테 웃어줄 때, 똑같이 웃어줄 때, 그게 좀 싫었어."
+    },
+    "haeun_warn_6": {
+        "name": "하은",
+        "text": "그 선배가 울었다는 건 — 그만큼 {name} 씨한테 진심이라는 뜻이에요."
+    },
     "haeun_warn_6_ins": {
         "name": "{name}",
         "text": "*하은이 고개를 숙인다.*"
+    },
+    "haeun_warn_7": {
+        "name": "하은",
+        "text": "참견인 거 알아요. 근데 선배가 걱정돼서. — 선배 지금 집이 좀 복잡해요. 부모님이... ...아무튼. 선배한테 잘해주세요. 부탁이에요."
     },
     "haeun_warn_7_ins": {
         "name": "{name}",
@@ -689,13 +629,37 @@
         "name": "{name}",
         "text": "*서연의 집이 복잡하다. 부모님. — 서연이 '완벽해야만 했던 이유'가 거기 있는 건가.*"
     },
-    "minsu_d3_8_ins": {
+    "haeun_warn_8": {
         "name": "{name}",
-        "text": "...뭘?"
+        "text": "*서연이 화장실에서 혼자 우는 모습이 머릿속에서 안 지워진다. 완벽하게 곧은 등, 하얀 주먹, 그리고 — 아무도 없는 화장실.*"
+    },
+    "haeun_warn_8b": {
+        "name": "{name}",
+        "text": "*학교 앞으로 나왔다.*"
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*하교길. 교문에서 민수가 기다리고 있다.*"
+    },
+    "minsu_d3_2": {
+        "name": "민수",
+        "text": "봤다."
+    },
+    "minsu_d3_3": {
+        "name": "민수",
+        "text": "점심때. 그리고 방금 서연이 표정도."
     },
     "minsu_d3_3_ins": {
         "name": "{name}",
         "text": "*할 말이 없다.*"
+    },
+    "minsu_d3_4": {
+        "name": "민수",
+        "text": "어제 내가 뭐라고 했어? '나중에 셋 다 울면 네 탓이야'라고 했잖아. 아직 '나중에'가 아니야. 지금이야."
     },
     "minsu_d3_4_ins": {
         "name": "{name}",
@@ -705,13 +669,33 @@
         "name": "민수",
         "text": "아직 '나중에'가 아니야. 지금이야."
     },
+    "minsu_d3_5": {
+        "name": "민수",
+        "text": "야, 나도 옆에서 보기 힘들어. 걔들 다 좋은 애들이야. — 네가 나쁜 놈이라서 이러는 건 아닌 거 알아. 거절을 못 해서 그런 거잖아."
+    },
     "minsu_d3_5_ins": {
         "name": "{name}",
         "text": "......맞아."
     },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*민수가 한숨을 쉰다. 한심하다는 게 아니라, 진짜 걱정하는 한숨이다.*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......맞아."
+    },
+    "minsu_d3_6b": {
+        "name": "민수",
+        "text": "전 학교에서 뭔 일 있었는지 안 물어볼게. 근데 하나만 말해줄게."
+    },
     "minsu_d3_6b_ins": {
         "name": "{name}",
         "text": "*민수가 내 어깨를 잡는다.*"
+    },
+    "minsu_d3_7": {
+        "name": "민수",
+        "text": "거절도 사랑이야. 안 되는 사람한테 거절해주는 게 — 거짓 희망보다 백 배 낫거든."
     },
     "minsu_d3_7_ins": {
         "name": "{name}",
@@ -724,6 +708,22 @@
     "minsu_d3_7_ins3": {
         "name": "{name}",
         "text": "*거절도 사랑이라면, 내가 지금 해야 할 건 — 모두에게 '좋다'고 말하는 게 아니라, 한 사람에게만 '좋다'고 말하는 거다.*"
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*거절도 사랑. — 전 학교에서 소정이가 나한테 '거절'할 기회조차 주지 못했다. 내가 말하지 못했으니까.*"
+    },
+    "minsu_d3_8_ins": {
+        "name": "{name}",
+        "text": "...뭘?"
+    },
+    "minsu_d3_9": {
+        "name": "{name}",
+        "text": "*그때 소정이가 거절해줬다면 — 이렇게 미련이 남지는 않았을 거다. 거절도 사랑이라면, 내가 지금 해야 할 건 — 한 사람에게만 '좋다'고 말하는 거다.*"
+    },
+    "minsu_d3_10": {
+        "name": "민수",
+        "text": "내일 학교에서 보자. — 좀 생각 좀 해라, 진지하게."
     },
     "minsu_d3_10_ins": {
         "name": "{name}",

@@ -91,6 +91,18 @@
         "name": "{name}",
         "text": "*The sunset paints the schoolyard. Were five days really this short? — The moment of the final choice draws near.*"
     },
+    "after5_hidden_route_choice_check": {
+        "name": "{name}",
+        "text": "*My last steps split into two paths. The person I already made a promise to, and the feeling I couldn't keep pretending not to see.*"
+    },
+    "after5_hidden_route_choice": {
+        "name": "{name}",
+        "text": "*Where should I go? Today — I have to decide.*",
+        "choices": [
+            "Go to the person I made a promise to",
+            "Go to the one still left in my heart"
+        ]
+    },
     "after5_set_harem": {
         "name": "{name}",
         "text": "*I walked past the back of the school and headed toward the park. Tonight doesn't feel like it's going to end with just one person.*"
