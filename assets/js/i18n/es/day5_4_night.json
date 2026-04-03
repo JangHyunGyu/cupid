@@ -317,15 +317,15 @@
     },
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Su familia no ha mejorado. Las llamadas de su madre siguen siendo frías, y las sonrisas ensayadas no han parado. — Pero ahora tiene a alguien a quien mostrar su rostro sin ensayar. Ya no.*"
+        "text": "*Su familia no se ha vuelto más cálida. Las llamadas de su madre siguen siendo frías y los ensayos frente al espejo no han terminado. — Pero ahora tiene a alguien a quien mostrarle una expresión que no ha ensayado.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*La persona que se fue no ha vuelto. El número del senior sigue sin aparecer, y el asiento del rincón de la biblioteca sigue vacío. — Pero ahora tiene a alguien con quien hablar con su voz, no solo con notas. Ya no.*"
+        "text": "*La persona que desapareció no ha vuelto. El número del senior sigue sin aparecer y el asiento del rincón de la biblioteca continúa vacío. — Pero ahora tiene a alguien con quien hablar con su propia voz, no con notas.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*Su rodilla no se ha curado. Sigue vendándose cada mañana, y la nota de alarma aún tiene dos signos de exclamación. — Pero ahora tiene a alguien que escucha cuando sus frases terminan en punto. Ya no.*"
+        "text": "*Su rodilla no se ha curado. Cada mañana vuelve a vendársela, y en la alarma siguen apareciendo dos signos de exclamación. — Pero ahora tiene a alguien que escucha las frases que terminan con un punto.*"
     },
     "true_epilogue_7": {
         "name": "Sistema",
@@ -333,11 +333,11 @@
     },
     "day5_ending_good": {
         "name": "{name}",
-        "text": "*Quizás le di esperanzas a alguien para luego quitárselas. Lo siento.*"
+        "text": "*El hecho de decir 'me gustas' no resolvió todo por sí solo. Aun así, decidimos no terminar aquí.*"
     },
     "good_1": {
         "name": "{name}",
-        "text": "*Dio un paso hacia mí.*"
+        "text": "*Fuimos torpes, llegamos tarde y más de una vez nos cruzamos sin encontrarnos.*"
     },
     "good_1b": {
         "name": "{name}",
@@ -349,43 +349,43 @@
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Lo que miraste a otro lado, te lo voy a cobrar el resto de tu vida. — Con intereses."
+        "text": "No va a ser perfecto. Ni tú ni yo. ...Pero esta vez no lo sueltes a mitad de camino."
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...Qué despistado eres. Pero ya que volviste, puedo perdonarte."
+        "text": "...Has tardado. Pero esta vez leí tu frase hasta el final."
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Oye, estaba enfadada de verdad, ¿sabes? ...Pero al final viniste a mí. Con eso me basta."
+        "text": "Oye, es verdad que todavía no lo tengo del todo superado. ...Pero al menos ya estoy como para volver a lanzarte la pelota."
     },
     "good_2_seo": {
         "name": "{name}",
-        "text": "*El camino de los cerezos. Seoyeon está un paso delante de mí. Se da la vuelta.*"
+        "text": "*Al final del camino de los cerezos, Seoyeon se detiene medio paso delante de mí. Cuando se vuelve, su mirada tiene menos filo que antes.*"
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*\"...¿Por qué no vienes?\" Aunque lo murmuró en voz baja, caminaba al ritmo de alguien que me había esperado.*"
+        "text": "*\"...¿Por qué no vienes?\" Aunque lo masculla en voz baja, lleva el ritmo de alguien que sí me esperó.*"
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Fingía ser perfecta, pero yo tampoco era perfecto.*"
+        "text": "*Sonreí, y Seoyeon fingió no darse cuenta antes de alzar apenas la comisura de los labios.*"
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*Mientras seguíamos caminando más allá del final del sendero de cerezos, pensé en ello. Quiero volver a recorrer este camino con ella la próxima primavera. Esta vez sí pude decirlo.*"
+        "text": "*Mientras cruzábamos despacio el final del camino de los cerezos, pensé que quería volver a recorrerlo con ella la próxima primavera. Esta vez sí fui capaz de decirlo.*"
     },
     "good_2_yuna": {
         "name": "{name}",
-        "text": "*La azotea. Yuna está apoyada en la barandilla. El viento le revuelve el pelo.*"
+        "text": "*La azotea. Yuna se apoya en la barandilla. Aunque sople el viento, hoy no se aparta primero.*"
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Yuna me pasa una nota. \"No te pierdas la próxima vez.\" — Corta. Y cálida.*"
+        "text": "*Miramos el mismo cielo. Habla poco, pero el silencio ya no es tan frío como antes.*"
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Estaba persiguiendo la sombra de alguien que desapareció.*"
+        "text": "*Quiero que me recuerden no como un sustituto, sino como la persona que está aquí, ahora mismo. Yuna también. Yo también.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -393,15 +393,15 @@
     },
     "good_2_dain": {
         "name": "{name}",
-        "text": "*Frente a la puerta del colegio. Dain lanza el balón al aire, esperando.*"
+        "text": "*Frente a la puerta del colegio, Dain hace botar el balón una vez y, esta vez sin bromas, me lo lanza.*"
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Dain lanza el balón. Lo atrapé. — Así es como esta persona hace las paces.*"
+        "text": "*Lo atrapo. Solo entonces Dain sonríe. Con ella, la reconciliación siempre llega así.*"
     },
     "good_4_dain": {
         "name": "{name}",
-        "text": "*Corrió aunque le dolían las rodillas.*"
+        "text": "*La rodilla todavía le duele y el corazón tampoco está del todo en calma. Aun así, podemos intentar correr juntos.*"
     },
     "good_5_dain": {
         "name": "{name}",
@@ -787,15 +787,15 @@
     },
     "hidden_true_nurse_6": {
         "name": "Enfermera",
-        "text": "Así que, cuando termine la graduación — vuelve entonces. No a la enfermería, sino aquí. Esa vez, encuéntrame no como tu profesora, sino como yo."
+        "text": "Así que, cuando termine la ceremonia de graduación — vuelve a verme. No en la enfermería, sino aquí. La próxima vez, encuéntrame no como la enfermera del colegio, sino como yo."
     },
     "hidden_true_nurse_7": {
-        "name": "Enfermera",
-        "text": "...Eres la primera persona que me descubrió."
+        "name": "{name}",
+        "text": "*Incluso después de salir del café, nuestras manos tardaron en separarse. Cuando quise darme cuenta, estábamos frente a su casa, no frente a la enfermería.*"
     },
     "hidden_true_nurse_8": {
         "name": "Enfermera",
-        "text": "Ahora podemos vernos sin vendas. — Sin excusas."
+        "text": "Ahora ven incluso sin fingir que te duele algo. — Me gusta más así."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
@@ -883,7 +883,7 @@
     },
     "good_1_yuna_b": {
         "name": "{name}",
-        "text": "*Yuna me pasa una nota. «La próxima vez no te pierdas.» — Corta. Y cálida.*"
+        "text": "*Yuna me entrega una nota doblada. Al abrirla, solo hay una línea: 'La próxima vez, no desaparezcas.'*"
     },
     "good_epilogue_1": {
         "name": "{name}",
@@ -1059,7 +1059,7 @@
     },
     "hidden_true_nurse_2_ins": {
         "name": "{name}",
-        "text": "*No una profesora — solo una mujer.*"
+        "text": "*No la enfermera del colegio — solo una mujer.*"
     },
     "hidden_true_nurse_2_ins2": {
         "name": "Enfermera",
@@ -1075,7 +1075,7 @@
     },
     "hidden_true_nurse_8_ins2": {
         "name": "{name}",
-        "text": "*La graduación borra la línea. — En una cafetería en vez de la enfermería, con una persona en vez de una profesora.*"
+        "text": "*La fecha de la graduación borra la línea. — En un café en vez de la enfermería, con una persona en vez de un rol.*"
     },
     "hidden_true_nurse_8_ins3": {
         "name": "{name}",
@@ -1103,7 +1103,7 @@
     },
     "hidden_true_nurse_5_ins2": {
         "name": "Enfermera",
-        "text": "Una profesora no debería enamorarse de un alumno. Lo sabía. — Por eso lo envolvía todo en bromas. Una y otra vez."
+        "text": "Sabía que no debía sentir algo así por un alumno. — Por eso lo disfrazaba todo de broma. Una y otra vez."
     },
     "hidden_true_nurse_5_ins3": {
         "name": "Enfermera",
@@ -1118,16 +1118,16 @@
         "text": "*La enfermera se detiene un momento. — Y sonríe. No una sonrisa juguetona.*"
     },
     "hidden_true_nurse_7_ins": {
-        "name": "{name}",
-        "text": "*La enfermera extiende la mano y toca la tirita en el dorso de mi mano. La misma tirita que me puso esta mañana.*"
+        "name": "Enfermera",
+        "text": "...Eres la primera persona que se dio cuenta."
     },
     "hidden_true_nurse_7_ins2": {
-        "name": "Enfermera",
-        "text": "Ahora podemos vernos sin tiritas. — Sin excusas."
+        "name": "{name}",
+        "text": "*La enfermera extiende la mano y roza la tirita en el dorso de mi mano. La misma que me puso esta mañana.*"
     },
     "hidden_true_nurse_7_ins3": {
         "name": "{name}",
-        "text": "*La persona que necesitaba excusas. — El título de 'profesora' era su excusa y su muro. Ese muro desapareció hoy.*"
+        "text": "*Era alguien que necesitaba una excusa. — Su papel dentro del colegio era a la vez su excusa y su muro. Hoy, ese muro desapareció.*"
     },
     "hidden_good_nurse_2_ins": {
         "name": "{name}",
@@ -1147,19 +1147,19 @@
     },
     "good_1_seo_ins": {
         "name": "{name}",
-        "text": "*Un pétalo de cerezo cae en el pelo de Seoyeon. Dudo si quitarlo — cuando Seoyeon inclina la cabeza primero.*"
+        "text": "*Seoyeon me arregla una vez el borde de la manga, como si apartara un pétalo de cerezo. Es un gesto seco, pero no uno que me aparte.*"
     },
     "good_1_seo_ins2": {
         "name": "{name}",
-        "text": "*Ella finge ser perfecta, pero yo tampoco era perfecto.*"
+        "text": "*Dice poco. En cambio, nuestros pasos por fin coinciden. Por hoy, eso me basta.*"
     },
     "good_1_seo_ins3": {
         "name": "{name}",
-        "text": "*Los cerezos florecerán otra vez el año que viene. Caminamos juntos.*"
+        "text": "*Lo de Seoyeon y yo apenas empieza a tomar forma. Es inestable, pero no se ha roto.*"
     },
     "good_1_yuna_b_ins": {
         "name": "{name}",
-        "text": "*Estaba persiguiendo la sombra de alguien que desapareció.*"
+        "text": "*Es una frase corta, pero esta vez se leía como una petición.*"
     },
     "bitter_seo_2_ins": {
         "name": "{name}",

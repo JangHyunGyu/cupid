@@ -5,7 +5,7 @@
     },
     "morning5_start_2": {
         "name": "{name}",
-        "text": "*The final event. All the time we've spent together culminates today.*"
+        "text": "*The final event. Everything that's been building up leads to today.*"
     },
     "morning5_mood_check": {
         "name": "System",
@@ -41,7 +41,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "If you try to run, I'll seriously be mad?"
+        "text": "Try to ditch me and I'll be seriously mad."
     },
     "morning5_end": {
         "name": "{name}",
@@ -131,11 +131,11 @@
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "What if I'm not hurt?"
+        "text": "Can I come by even if I'm not hurt?"
     },
     "hidden_nurse_d5_4": {
         "name": "School Nurse",
-        "text": "...Press down hard so the band-aid doesn't fall off. — I won't put it on for you today."
+        "text": "...Press it down well so it doesn't peel off. — I'm not putting it on for you myself today."
     },
     "hidden_nurse_d5_5": {
         "name": "School Nurse",
@@ -145,7 +145,7 @@
         "name": "{name}",
         "text": "*I'm not hurt. She knows that. She's asking anyway.*",
         "choices": [
-            "Yes, since it's the last time. Just once.",
+            "Yes, since it's the last time. Just this once.",
             "Not a bandage — your phone number"
         ]
     },
@@ -277,7 +277,7 @@
     },
     "hidden_homeroom_d5_6_ins15": {
         "name": "{name}",
-        "text": "*One line. — Someone who failed the literary debut three times is waiting for a student's one-line review. If this isn't a confession, what is it?*"
+        "text": "*One line. — Someone who was rejected three times trying to debut as a writer is waiting for a student's one-line impression. If this isn't a confession, what is?*"
     },
     "hidden_homeroom_d5_6_ins16": {
         "name": "{name}",
