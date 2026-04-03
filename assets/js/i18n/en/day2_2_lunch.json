@@ -258,15 +258,15 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "We met yesterday! She's a bright one, Seoyeon sunbae!"
+        "text": "We met yesterday! Nice guy, Prez!"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Oh! Seoyeon? Nice to meet you!"
+        "text": "Oh! You're the president? Nice to meet you!"
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "...A bright one."
+        "text": "...Nice guy."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Looking at {name}* ...A bright one."
+        "text": "*Looking at {name}* ...Nice guy."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",
