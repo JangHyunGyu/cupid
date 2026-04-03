@@ -118,7 +118,7 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*La première heure se termine. Pause. — Les trois s’approchent tour à tour.*"
+        "text": "*La première heure se termine. Pause. Personne ne me tombe dessus d'un seul coup. Mais aujourd'hui, on dirait que quelqu'un trouve toujours le bon moment pour venir me parler.*"
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
@@ -154,7 +154,7 @@
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
-        "text": "*Dain vient à mon bureau pendant la pause et me demande.*",
+        "text": "*À la pause suivante, Dain vient jusqu'à ma place pour me demander.*",
         "choices": [
             "OK, c’est parti",
             "Ce week-end, c’est compliqué..."
@@ -170,7 +170,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*J’observe la réaction de Dain.*"
+        "text": "*J’observe la réaction de Dain. La sonnerie retentit, puis revient ce court moment juste avant le déjeuner.*"
     },
     "morning3_date_dain_decline_inner": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Un mot de Yuna est posé sur mon bureau.*"
+        "text": "*Juste avant le déjeuner, un mot de Yuna m'attend sur mon bureau.*"
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
@@ -454,15 +454,15 @@
     },
     "morning3_date_intro_b": {
         "name": "{name}",
-        "text": "*Pendant la pause, je suis sorti dans le couloir.*"
+        "text": "*Je sors dans le couloir pendant la pause. Seoyeon est la première à caler son pas sur le mien.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
-        "text": "*Je suis retourné en classe.*"
+        "text": "*Je retourne en classe. Un cours passe, puis une autre courte pause arrive.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
-        "text": "*Je suis retourné en classe.*"
+        "text": "*Je retourne en classe. Un cours passe, puis une autre courte pause arrive.*"
     },
     "morning3_seo_gate_6_ins": {
         "name": "{name}",
@@ -642,7 +642,7 @@
     },
     "hidden_nurse_d3_2_ins5": {
         "name": "{name}",
-        "text": "*Juste avant le déjeuner. — Quelque chose cloche depuis ce matin. C'est le stress de jongler avec tout le monde, ou la confusion de tout ce qui va trop vite ?*"
+        "text": "*Juste avant le déjeuner. Depuis ce matin, je n'arrive pas à retrouver mon calme. Trop de visages, trop de paroles. C'est peut-être ça. Je ne sais pas pourquoi tout ça me secoue aussi vite.*"
     },
     "hidden_nurse_d3_1_ins": {
         "name": "{name}",

@@ -40,7 +40,7 @@
     },
     "after3_reject_for_seo_1": {
         "name": "{name}",
-        "text": "*Je croise Dain dans le couloir. Son énergie habituelle a disparu.*"
+        "text": "*Je croise Dain dans le couloir. Son énergie habituelle a disparu. Aujourd'hui, le sourire ne vient pas en premier.*"
     },
     "after3_reject_for_seo_2": {
         "name": "Dain",
@@ -48,19 +48,19 @@
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
-        "text": "*Je passe devant la bibliothèque. La place de Yuna est vide. Un seul mot reste. '...Compris.' Trois mots.*"
+        "text": "*Je passe devant la bibliothèque. La place de Yuna est vide. Un seul mot reste. '...D'accord.' Trop court. Le bord du papier est légèrement froissé.*"
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Sorti dans le couloir. La phrase de Dain sans point d'exclamation, le mot de Yuna de seulement trois mots. — Le poids du choix s'installe sur mes épaules.*"
+        "text": "*Je reviens dans le couloir. La phrase de Dain sans point d'exclamation, le billet trop court de Yuna aux bords froissés. Le poids de mon choix retombe sur mes épaules.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
-        "text": "*Seoyeon range son bloc-notes dans le couloir.*"
+        "text": "*Seoyeon range son clipboard dans le couloir. Ses doigts tournent les pages un peu trop vite.*"
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Populaire, dis donc."
+        "text": "Le conseil des élèves me prend du temps. Je déjeunerai à part. ...Aujourd'hui."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -80,11 +80,11 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Sorti du gymnase, retour dans le couloir. La réplique de Seoyeon, les yeux rouges de Dain. — Le chemin du retour semble lourd.*"
+        "text": "*Je sors du gymnase et reviens dans le couloir. Seoyeon a fait semblant que tout allait bien. Dain n'a même pas pu faire ça. D'une certaine façon, ça fait encore plus mal.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",
-        "text": "*Seoyeon range son bloc-notes.*"
+        "text": "*Seoyeon range son clipboard. Elle sourit, mais ses gestes sont trop nets, trop contrôlés.*"
     },
     "after3_reject_for_dain_2": {
         "name": "Seoyeon",
@@ -96,7 +96,7 @@
     },
     "after3_reject_for_dain_3": {
         "name": "{name}",
-        "text": "*Pas de mots à la bibliothèque. Le sac de Yuna est parti. Elle est partie tôt.*"
+        "text": "*Il n'y a pas de mot à la bibliothèque. Le sac de Yuna a disparu aussi. Il ne reste qu'une trace d'eau tiède sur la table, comme si elle était là il y a un instant.*"
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
@@ -104,7 +104,7 @@
     },
     "after3_reject_for_dain_4": {
         "name": "{name}",
-        "text": "*Le sourire pratiqué de Seoyeon, le siège vide de Yuna. — Les deux places restantes semblent se vider.*"
+        "text": "*Je reviens dans le couloir. Le sourire travaillé de Seoyeon, la trace d'eau laissée par Yuna. Ceux qui ne disent rien me restent plus longtemps.*"
     },
     "after3_seo_1": {
         "name": "{name}",

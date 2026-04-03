@@ -40,7 +40,7 @@
     },
     "after3_reject_for_seo_1": {
         "name": "{name}",
-        "text": "*Ich treffe Dain im Flur. Ihre übliche Energie fehlt.*"
+        "text": "*Ich begegne Dain auf dem Flur. Von ihrer sonstigen Energie ist nichts übrig. Heute kommt ihr Lächeln nicht zuerst.*"
     },
     "after3_reject_for_seo_2": {
         "name": "Dain",
@@ -48,19 +48,19 @@
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
-        "text": "*Ich gehe an der Bibliothek vorbei. Yunas Platz ist leer. Ein einzelner Zettel liegt da. '...Verstanden.' Drei Wörter.*"
+        "text": "*Ich komme an der Bibliothek vorbei. Yunas Platz ist leer. Nur ein Zettel ist geblieben. '...Verstanden.' Viel zu kurz. Die Ecke des Papiers ist leicht zerknittert.*"
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Ging auf den Flur hinaus. Dains Satz ohne Ausrufezeichen, Yunas Zettel mit nur drei Wörtern. — Das Gewicht der Wahl lastet auf meinen Schultern.*"
+        "text": "*Ich trete zurück auf den Flur. Dains Satz ohne Ausrufezeichen, Yunas viel zu kurzer Zettel mit der zerknitterten Ecke. Das Gewicht meiner Wahl legt sich auf meine Schultern.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
-        "text": "*Seoyeon ordnet ihr Klemmbrett im Flur.*"
+        "text": "*Seoyeon ordnet auf dem Flur ihr Klemmbrett. Ihre Finger blättern schneller als sonst.*"
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Beliebt, was."
+        "text": "Im Schülerrat ist viel los. Ich esse heute getrennt. ...Heute."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -80,11 +80,11 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Verließ die Turnhalle und ging zurück auf den Flur. Seoyeons eine Zeile, Dains rote Augen. — Der Rückweg fühlt sich schwer an.*"
+        "text": "*Ich verlasse die Sporthalle und kehre auf den Flur zurück. Seoyeon tat so, als wäre alles in Ordnung. Dain schaffte nicht einmal das. Irgendwie tut beides mehr weh.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",
-        "text": "*Seoyeon ordnet ihr Klemmbrett.*"
+        "text": "*Seoyeon ordnet ihr Klemmbrett. Sie lächelt, aber die Finger, die alles ordnen, sind zu sauber, zu kontrolliert.*"
     },
     "after3_reject_for_dain_2": {
         "name": "Seoyeon",
@@ -96,7 +96,7 @@
     },
     "after3_reject_for_dain_3": {
         "name": "{name}",
-        "text": "*Keine Zettel in der Bibliothek. Yunas Tasche ist weg. Sie ist wohl früh gegangen.*"
+        "text": "*In der Bibliothek liegt kein Zettel. Yunas Tasche ist auch verschwunden. Nur ein lauwarmer Wasserring ist auf dem Tisch geblieben, als wäre sie eben erst hier gewesen.*"
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
@@ -104,7 +104,7 @@
     },
     "after3_reject_for_dain_4": {
         "name": "{name}",
-        "text": "*Seoyeons einstudiertes Lächeln, Yunas leerer Platz. — Die verbleibenden zwei Plätze werden leerer.*"
+        "text": "*Ich komme zurück auf den Flur. Seoyeons geübtes Lächeln, der Wasserring, den Yuna hinterlassen hat. Gerade die, die nichts sagen, bleiben länger bei mir.*"
     },
     "after3_seo_1": {
         "name": "{name}",

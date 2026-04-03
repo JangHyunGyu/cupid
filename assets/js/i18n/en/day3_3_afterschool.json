@@ -40,7 +40,7 @@
     },
     "after3_reject_for_seo_1": {
         "name": "{name}",
-        "text": "*I run into Dain in the hallway. Her usual energy is gone.*"
+        "text": "*I run into Dain in the hallway. Her usual energy is gone. The smile doesn't come first today.*"
     },
     "after3_reject_for_seo_2": {
         "name": "Dain",
@@ -48,19 +48,19 @@
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
-        "text": "*I pass by the library. Yuna's seat is empty. A single note remains. '...Got it.' Three words.*"
+        "text": "*I pass by the library. Yuna's seat is empty. One note remains. '...Okay.' Too short. The edge of the paper is slightly crumpled.*"
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Stepped out into the hallway. Dain's sentence without an exclamation mark, Yuna's note of only three words. — The weight of choice settles on my shoulders.*"
+        "text": "*I step back into the hallway. Dain's sentence without exclamation marks, Yuna's too-short note with a crumpled edge. — The weight of my choice settles on my shoulders.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
-        "text": "*Seoyeon is organizing her clipboard in the hallway.*"
+        "text": "*Seoyeon is organizing her clipboard in the hallway. Her hands turn the pages faster than usual.*"
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Popular, aren't you."
+        "text": "Student council work is busy. I'll eat separately. ...Today."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -80,11 +80,11 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Left the gym and returned to the hallway. Seoyeon's one liner, Dain's red eyes. — The walk back feels heavy.*"
+        "text": "*I leave the gym and return to the hallway. Seoyeon pretended she was fine. Dain couldn't even do that. — Somehow, both hurt more that way.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",
-        "text": "*Seoyeon is organizing her clipboard.*"
+        "text": "*Seoyeon is organizing her clipboard. She's smiling, but the fingers doing the organizing are too neat, too controlled.*"
     },
     "after3_reject_for_dain_2": {
         "name": "Seoyeon",
@@ -96,7 +96,7 @@
     },
     "after3_reject_for_dain_3": {
         "name": "{name}",
-        "text": "*No notes in the library. Yuna's bag is gone. She must have left early.*"
+        "text": "*There is no note in the library. Yuna's bag is gone too. Only a lukewarm water ring remains on the desk, like she was here just moments ago.*"
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
@@ -104,7 +104,7 @@
     },
     "after3_reject_for_dain_4": {
         "name": "{name}",
-        "text": "*Seoyeon's practiced smile, Yuna's empty seat. — The remaining two seats feel emptier.*"
+        "text": "*I return to the hallway. Seoyeon's practiced smile, the water ring Yuna left behind. — The people who say nothing stay with me longer.*"
     },
     "after3_seo_1": {
         "name": "{name}",

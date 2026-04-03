@@ -118,7 +118,7 @@
   },
   "morning3_date_intro": {
     "name": "{name}",
-    "text": "*First period ends. Break time. — All three approach me, one after another.*"
+    "text": "*First period ends. Break time. — It's not like they all rush me at once. But today, someone keeps finding the exact moment to talk to me.*"
   },
   "morning3_date_seo_1": {
     "name": "Seoyeon",
@@ -154,7 +154,7 @@
   },
   "morning3_date_dain_choice": {
     "name": "{name}",
-    "text": "*Dain comes to my desk during break and asks.*",
+    "text": "*Dain comes over during the next break and asks.*",
     "choices": [
       "Sure, let's do it",
       "This weekend's not great..."
@@ -170,7 +170,7 @@
   },
   "morning3_date_dain_decline_narr": {
     "name": "{name}",
-    "text": "*I watch Dain's reaction.*"
+    "text": "*I watch Dain's reaction. — The bell rings, and the short lull right before lunch comes around again.*"
   },
   "morning3_date_dain_decline_inner": {
     "name": "{name}",
@@ -182,7 +182,7 @@
   },
   "morning3_date_yuna_1": {
     "name": "{name}",
-    "text": "*A note from Yuna is sitting on my desk.*"
+    "text": "*Just before lunch, a note from Yuna is waiting on my desk.*"
   },
   "morning3_date_yuna_2": {
     "name": "{name}",
@@ -454,15 +454,15 @@
   },
   "morning3_date_intro_b": {
     "name": "{name}",
-    "text": "*During break, I stepped out into the hallway.*"
+    "text": "*I step into the hallway for break. Seoyeon is the first to fall into step beside me.*"
   },
   "morning3_date_seo_accept_b": {
     "name": "{name}",
-    "text": "*I headed back to the classroom.*"
+    "text": "*I head back to the classroom. One class passes, and another short break arrives.*"
   },
   "morning3_date_seo_decline_b": {
     "name": "{name}",
-    "text": "*I headed back to the classroom.*"
+    "text": "*I head back to the classroom. One class passes, and another short break arrives.*"
   },
   "morning3_seo_gate_6_ins": {
     "name": "{name}",
@@ -642,7 +642,7 @@
   },
   "hidden_nurse_d3_2_ins5": {
     "name": "{name}",
-    "text": "*Right before lunch. — Something's felt off since morning. Is it the stress of juggling everyone, or the chaos of everything moving too fast?*"
+    "text": "*Right before lunch. — My mind hasn't settled all morning. Too many faces, too many words. Is that it? I don't know why I'm this shaken this fast.*"
   },
   "hidden_nurse_d3_1_ins": {
     "name": "{name}",
