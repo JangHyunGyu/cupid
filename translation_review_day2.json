@@ -2,7 +2,7 @@
   "_meta": {
     "generated": "2026-04-01T15:02:22.317Z",
     "day": 2,
-    "total_nodes": 499,
+    "total_nodes": 501,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -11033,6 +11033,42 @@
         "_issues": null
       }
     },
+    "after2_seo_neck_high_2_ins": {
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*손끝이 목덜미를 눌렀다가 천천히 풀린다. 둘 다 잠깐 말이 없다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
+    },
     "after2_seo_neck_low": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low",
       "_ko_name": "{name}",
@@ -12217,6 +12253,42 @@
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_yuna_everyday_react",
         "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "after2_yuna_everyday_react_ins": {
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_yuna_everyday_react_ins",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*허락 같지 않은 말인데, 이상하게 오래 남는다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_yuna_everyday_react_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_yuna_everyday_react_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_yuna_everyday_react_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_yuna_everyday_react_ins",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_yuna_everyday_react_ins",
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }

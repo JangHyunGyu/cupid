@@ -2,7 +2,7 @@
   "_meta": {
     "generated": "2026-04-01T15:02:23.285Z",
     "day": 4,
-    "total_nodes": 616,
+    "total_nodes": 617,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -1233,6 +1233,42 @@
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_freetalk",
         "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_homeroom_d4_skip": {
+      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_skip",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*문득 발길이 멈췄다가, 그대로 지나친다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_skip",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_1_morning.json#hidden_homeroom_d4_skip",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_1_morning.json#hidden_homeroom_d4_skip",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_1_morning.json#hidden_homeroom_d4_skip",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_skip",
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }

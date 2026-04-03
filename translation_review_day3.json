@@ -2,7 +2,7 @@
   "_meta": {
     "generated": "2026-04-01T15:02:22.711Z",
     "day": 3,
-    "total_nodes": 542,
+    "total_nodes": 545,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -17503,6 +17503,114 @@
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_dream_3",
         "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "night3_dream_seo_bonus": {
+      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_dream_seo_bonus",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*눈을 감자, 서연과 나란히 걷던 감각이 아직 남아 있다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_dream_seo_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_dream_seo_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_dream_seo_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_dream_seo_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_dream_seo_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "night3_dream_yuna_bonus": {
+      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_dream_yuna_bonus",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*눈을 감자, 유나 옆의 조용한 공기가 아직 남아 있다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_dream_yuna_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_dream_yuna_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_dream_yuna_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_dream_yuna_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_dream_yuna_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "night3_dream_dain_bonus": {
+      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_dream_dain_bonus",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*눈을 감자, 다인의 웃음이 한 박자 늦게 떠오른다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_dream_dain_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_dream_dain_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_dream_dain_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_dream_dain_bonus",
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_dream_dain_bonus",
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
