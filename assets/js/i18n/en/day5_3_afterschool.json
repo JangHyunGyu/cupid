@@ -91,6 +91,10 @@
     "name": "{name}",
     "text": "*The sunset paints the schoolyard. Were five days really this short? — The moment of the final choice draws near.*"
   },
+  "after5_set_harem": {
+    "name": "{name}",
+    "text": "*I walked past the back of the school and headed toward the park. Tonight doesn't feel like it's going to end with just one person.*"
+  },
   "after5_last_chance_1": {
     "name": "{name}",
     "text": "*My feet stop. The setting sun casts a long shadow behind me.*"

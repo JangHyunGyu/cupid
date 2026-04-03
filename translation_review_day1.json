@@ -9272,7 +9272,7 @@
     "after_hidden_homeroom_1": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_hidden_homeroom_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*교무실 앞에서 노크한다. 담임이 문을 연다.*",
+      "_ko_text_preview": "*교무실 앞에서 노크하고 문을 열었다. 안으로 걸어 들어가자 담임이 먼저 눈을 마주친다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_hidden_homeroom_1",
@@ -9308,7 +9308,7 @@
     "after_hidden_homeroom_2": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_hidden_homeroom_2",
       "_ko_name": "담임",
-      "_ko_text_preview": "어, {name}? — 무슨 일?",
+      "_ko_text_preview": "*\uad50\ubb34\uc2e4 \uc55e\uc5d0\uc11c \ub178\ud06c\ud558\uace0 \ubb38\uc744 \uc5f4\uc5c8\ub2e4. \uc548\uc73c\ub85c \uac78\uc5b4 \ub4e4\uc5b4\uac00\uc790 \ub2f4\uc784\uc774 \uba3c\uc800 \ub208\uc744 \ub9c8\uc8fc\uce5c\ub2e4.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_hidden_homeroom_2",

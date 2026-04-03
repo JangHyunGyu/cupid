@@ -182,7 +182,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*교무실 앞에서 노크한다. 담임이 문을 연다.*"
+        "text": "*교무실 앞에서 노크하고 문을 열었다. 안으로 걸어 들어가자 담임이 먼저 눈을 마주친다.*"
     },
     "after_hidden_homeroom_2": {
         "name": "담임",

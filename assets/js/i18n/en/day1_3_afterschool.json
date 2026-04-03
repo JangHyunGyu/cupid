@@ -118,7 +118,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Knocks on the faculty office door. The homeroom teacher opens it.*"
+        "text": "*I knock on the faculty office door. When it opens, I step inside. The homeroom teacher meets my eyes first.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",

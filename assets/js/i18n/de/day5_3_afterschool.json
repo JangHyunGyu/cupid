@@ -91,6 +91,10 @@
         "name": "{name}",
         "text": "*Der Sonnenuntergang taucht den Schulhof in Farbe. Waren fünf Tage wirklich so kurz? — Der Moment der letzten Entscheidung rückt näher.*"
     },
+    "after5_set_harem": {
+        "name": "{name}",
+        "text": "*Ich ging an der Rückseite der Schule vorbei und Richtung Park. Heute Nacht fühlt es sich nicht so an, als würde alles bei nur einer Person enden.*"
+    },
     "after5_last_chance_1": {
         "name": "{name}",
         "text": "*Meine Schritte halten inne. Die untergehende Sonne wirft einen langen Schatten hinter mir.*"

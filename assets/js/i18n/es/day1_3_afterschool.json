@@ -118,7 +118,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Toca la puerta de la sala de profesores. La profesora abre.*"
+        "text": "*Toco la puerta de la sala de profesores. Cuando se abre, entro. La profesora es la primera en mirarme a los ojos.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Profesora",

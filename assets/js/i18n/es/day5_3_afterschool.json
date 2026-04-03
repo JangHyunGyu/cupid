@@ -91,6 +91,10 @@
         "name": "{name}",
         "text": "*El atardecer tiñe el patio del instituto. ¿Cinco días fueron realmente tan cortos? — El momento de la decisión final se acerca.*"
     },
+    "after5_set_harem": {
+        "name": "{name}",
+        "text": "*Pasé por la parte trasera de la escuela y caminé hacia el parque. Esta noche no parece que vaya a terminar con una sola persona.*"
+    },
     "after5_last_chance_1": {
         "name": "{name}",
         "text": "*Mis pasos se detienen. El sol poniente proyecta una larga sombra a mis espaldas.*"

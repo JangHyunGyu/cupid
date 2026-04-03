@@ -6533,6 +6533,42 @@
         "_issues": null
       }
     },
+    "after5_set_harem": {
+      "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_set_harem",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*학교 뒤편을 지나 공원 쪽으로 걸었다. 오늘은 누구 하나로 끝낼 수 없는 밤이 될 것 같다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_set_harem",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_3_afterschool.json#after5_set_harem",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_3_afterschool.json#after5_set_harem",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_3_afterschool.json#after5_set_harem",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_3_afterschool.json#after5_set_harem",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
     "after5_last_chance_1": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_last_chance_1",
       "_ko_name": "{name}",
@@ -13378,7 +13414,7 @@
     "confess_fail_1": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#confess_fail_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*\"...고마워. 진짜로. 근데 나는 아직 — 5일은 너무 짧았나 봐.\"...",
+      "_ko_text_preview": "*몇 걸음이나 걸어 나온 뒤에도, 그 말이 귓가에 남아 있다. \"...고마워. 진짜로. 근데 나는 아직 — 5일은 너무 짧았나 봐.\"*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#confess_fail_1",
