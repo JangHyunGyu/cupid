@@ -559,5 +559,7 @@
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
         "text": "*Je regarde le pansement sur ma main. — Une drôle d'infirmerie. Le bon genre de drôle.*"
-    }
+    },
+    "after_dain_skip": {},
+    "after_yuna_skip": {}
 }

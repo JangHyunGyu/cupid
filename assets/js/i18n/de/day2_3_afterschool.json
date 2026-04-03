@@ -723,5 +723,13 @@
     "minsu_warn_15_ins4": {
         "name": "{name}",
         "text": "*— Ich bleibe abrupt stehen.*"
+    },
+    "after2_seo_neck_high_2_ins": {
+        "name": "{name}",
+        "text": "*Ihre Fingerspitzen drücken kurz in meinen Nacken und lösen sich dann langsam. Einen Moment lang sagt keiner von uns etwas.*"
+    },
+    "after2_yuna_everyday_react_ins": {
+        "name": "{name}",
+        "text": "*Es klingt nicht einmal wie eine Erlaubnis, und trotzdem bleibt es seltsam lange hängen.*"
     }
 }

@@ -624,5 +624,10 @@
   "hidden_nurse_d4_meal_4_ins2": {
     "name": "{name}",
     "text": "*She snapped back, but her ears are red. Again.*"
+  },
+  "morning4_manuscript_check": {},
+  "hidden_homeroom_d4_skip": {
+    "name": "{name}",
+    "text": "*My steps stop for a moment, and then I keep walking past.*"
   }
 }

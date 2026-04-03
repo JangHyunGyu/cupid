@@ -624,5 +624,10 @@
   "hidden_nurse_d4_meal_4_ins2": {
     "name": "{name}",
     "text": "*Elle a rétorqué sèchement, mais ses oreilles sont rouges. Encore.*"
+  },
+  "morning4_manuscript_check": {},
+  "hidden_homeroom_d4_skip": {
+    "name": "{name}",
+    "text": "*Mes pas s'arrêtent un instant, puis je continue simplement mon chemin.*"
   }
 }

@@ -2205,6 +2205,8 @@
   - [`met_yuna`] → `after_yuna_skip`
   - [기본] → `after_miss_yuna_1`
 
+<!-- i18n -->
+
 ---
 
 ### `after_yuna_skip`
@@ -2213,6 +2215,8 @@
   - [`ate_lunch_seoyeon`] → `after_end`
   - [`chose_seoyeon_lunch`] → `after_end`
   - [기본] → `after_miss_seoyeon_1`
+
+<!-- i18n -->
 
 ---
 
@@ -6568,6 +6572,7 @@
 - 다음: `after2_seo_9`
 
 - 캐릭터: `seyoun_shy.png`
+**{name}**: *손끝이 목덜미를 눌렀다가 천천히 풀린다. 둘 다 잠깐 말이 없다.*
 
 ---
 
@@ -6884,6 +6889,7 @@
 - 다음: `after2_yuna_end`
 
 - 캐릭터: `yuna_shy.png`
+**{name}**: *허락 같지 않은 말인데, 이상하게 오래 남는다.*
 
 ---
 
@@ -12930,6 +12936,7 @@
 - 다음: `night3_end`
 
 - 캐릭터: `없음`
+**{name}**: *눈을 감자, 서연과 나란히 걷던 감각이 아직 남아 있다.*
 
 ---
 
@@ -12939,6 +12946,7 @@
 - 다음: `night3_end`
 
 - 캐릭터: `없음`
+**{name}**: *눈을 감자, 유나 옆의 조용한 공기가 아직 남아 있다.*
 
 ---
 
@@ -12948,6 +12956,7 @@
 - 다음: `night3_end`
 
 - 캐릭터: `없음`
+**{name}**: *눈을 감자, 다인의 웃음이 한 박자 늦게 떠오른다.*
 
 ---
 
@@ -13567,6 +13576,8 @@
   - [`discovered_manuscript`] → `hidden_homeroom_d4_1`
   - [기본] → `hidden_homeroom_d4_skip`
 
+<!-- i18n -->
+
 ---
 
 ### `hidden_homeroom_d4_skip`
@@ -13574,6 +13585,7 @@
 - 다음: `hidden_nurse_d4_check`
 
 - 캐릭터: `없음`
+**{name}**: *문득 발길이 멈췄다가, 그대로 지나친다.*
 
 ---
 
@@ -20748,6 +20760,8 @@
   - [`route_yuna`] → `after5_farewell_dain_check`
   - [기본] → `after5_farewell_yuna_1`
 
+<!-- i18n -->
+
 ---
 
 ### `after5_farewell_yuna_1`
@@ -20812,6 +20826,8 @@
 - 분기:
   - [`route_dain`] → `after5_sunset_1`
   - [기본] → `after5_farewell_dain_1`
+
+<!-- i18n -->
 
 ---
 
@@ -20902,6 +20918,8 @@
   - [`route_dain`] → `after5_last_chance_1`
   - [`route_yuna`] → `after5_last_chance_1`
   - [기본] → `ending_start`
+
+<!-- i18n -->
 
 ---
 
@@ -22183,6 +22201,8 @@
   - [`route_yuna`] → `true_epilogue_4_yuna`
   - [`route_seoyeon`] → `true_epilogue_4_seo`
   - [기본] → `true_epilogue_4_seo`
+
+<!-- i18n -->
 
 ---
 

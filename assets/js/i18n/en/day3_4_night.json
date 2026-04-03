@@ -299,5 +299,17 @@
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
         "text": "*...Back then and now, I'm nothing but a coward who can't let go of anything.*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*When I close my eyes, the feeling of walking beside Seoyeon still lingers.*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*When I close my eyes, the quiet air beside Yuna still lingers.*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*When I close my eyes, Dain's laughter comes back to me a beat later.*"
     }
 }

@@ -286,5 +286,8 @@
   "after5_confess_react_yuna_ins8": {
     "name": "{name}",
     "text": "*And so — we walked beyond the school.*"
-  }
+  },
+  "after5_farewell_yuna_check": {},
+  "after5_farewell_dain_check": {},
+  "after5_ending_check": {}
 }

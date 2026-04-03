@@ -286,5 +286,8 @@
   "after5_confess_react_yuna_ins8": {
     "name": "{name}",
     "text": "*そうして——学校を出て歩いた。*"
-  }
+  },
+  "after5_farewell_yuna_check": {},
+  "after5_farewell_dain_check": {},
+  "after5_ending_check": {}
 }

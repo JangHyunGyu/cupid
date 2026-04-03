@@ -299,5 +299,17 @@
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
         "text": "*...나는 과거에도 지금도, 아무것도 놓지 못하는 비겁한 놈일 뿐이다.*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*눈을 감자, 서연과 나란히 걷던 감각이 아직 남아 있다.*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*눈을 감자, 유나 옆의 조용한 공기가 아직 남아 있다.*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*눈을 감자, 다인의 웃음이 한 박자 늦게 떠오른다.*"
     }
 }

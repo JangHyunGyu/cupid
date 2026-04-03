@@ -559,5 +559,7 @@
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
         "text": "*Ich schaue auf das Pflaster an meiner Hand. — Ein seltsames Krankenzimmer. Die gute Art von seltsam.*"
-    }
+    },
+    "after_dain_skip": {},
+    "after_yuna_skip": {}
 }
