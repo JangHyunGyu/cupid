@@ -62,6 +62,100 @@ function loadI18n(baseName) {
 
 // ─── 포맷터 ───
 
+function collectSceneTargets(scene) {
+    const targets = [];
+    const addTarget = (target) => {
+        if (typeof target === 'string' && target.length > 0) targets.push(target);
+    };
+
+    addTarget(scene.next);
+
+    if (scene.branches) {
+        for (const branch of scene.branches) addTarget(branch.next);
+    }
+
+    if (scene.affinityBranches) {
+        for (const branch of scene.affinityBranches) addTarget(branch.next);
+    }
+
+    if (scene.choices) {
+        for (const choice of scene.choices) {
+            addTarget(choice.next);
+            if (choice.affinityBranches) {
+                for (const branch of choice.affinityBranches) addTarget(branch.next);
+            }
+        }
+    }
+
+    return targets;
+}
+
+function insertBySourceOrder(queue, sceneId, indexById) {
+    const sceneIndex = indexById.get(sceneId);
+    let insertAt = queue.length;
+
+    for (let i = 0; i < queue.length; i++) {
+        if (indexById.get(queue[i]) > sceneIndex) {
+            insertAt = i;
+            break;
+        }
+    }
+
+    queue.splice(insertAt, 0, sceneId);
+}
+
+function orderScenesForDocument(scenes) {
+    const sceneIds = Object.keys(scenes);
+    const indexById = new Map(sceneIds.map((sceneId, index) => [sceneId, index]));
+    const indegree = new Map(sceneIds.map(sceneId => [sceneId, 0]));
+    const adjacency = new Map(sceneIds.map(sceneId => [sceneId, []]));
+
+    for (const sceneId of sceneIds) {
+        const scene = scenes[sceneId];
+        const orderedTargets = [...new Set(
+            collectSceneTargets(scene).filter(target => Object.prototype.hasOwnProperty.call(scenes, target))
+        )].sort((a, b) => indexById.get(a) - indexById.get(b));
+
+        adjacency.set(sceneId, orderedTargets);
+
+        for (const target of orderedTargets) {
+            indegree.set(target, indegree.get(target) + 1);
+        }
+    }
+
+    const queue = sceneIds
+        .filter(sceneId => indegree.get(sceneId) === 0)
+        .sort((a, b) => indexById.get(a) - indexById.get(b));
+
+    const ordered = [];
+
+    while (queue.length > 0) {
+        const sceneId = queue.shift();
+        ordered.push(sceneId);
+
+        const newlyReady = [];
+
+        for (const target of adjacency.get(sceneId)) {
+            indegree.set(target, indegree.get(target) - 1);
+            if (indegree.get(target) === 0) {
+                newlyReady.push(target);
+            }
+        }
+
+        newlyReady.sort((a, b) => indexById.get(a) - indexById.get(b));
+        queue.unshift(...newlyReady);
+    }
+
+    if (ordered.length !== sceneIds.length) {
+        const seen = new Set(ordered);
+        for (const sceneId of sceneIds) {
+            if (!seen.has(sceneId)) ordered.push(sceneId);
+        }
+    }
+
+    return ordered;
+}
+
 function img(fullPath) {
     return fullPath ? path.basename(fullPath).replace(/\\/g, '/') : null;
 }
@@ -299,7 +393,7 @@ function generate() {
 
         const scenes = loadScenarioFile(base);
         const i18n = loadI18n(base);
-        const sceneIds = Object.keys(scenes);
+        const sceneIds = orderScenesForDocument(scenes);
 
         for (const sceneId of sceneIds) {
             output.push(formatScene(sceneId, scenes[sceneId], i18n));
