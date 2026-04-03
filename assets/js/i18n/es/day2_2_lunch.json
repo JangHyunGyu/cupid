@@ -258,15 +258,15 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "¡Nos conocimos ayer! Es una chica genial, ¡Seoyeon!"
+        "text": "¡Lo conocí ayer! Buen chico, presi."
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "¡Oh! ¿Seoyeon? ¡Mucho gusto!"
+        "text": "¡Ah! ¿Tú eres la presi? ¡Mucho gusto!"
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "...Una chica genial."
+        "text": "...Buen chico."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Mirando a {name}* ...Una chica alegre."
+        "text": "*Mirando a {name}* ...Buen chico."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",

@@ -258,15 +258,15 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "On s'est vues hier ! C'est une fille super, Seoyeon-senpai !"
+        "text": "Je l'ai rencontré hier ! C'est un gars bien, Seoyeon."
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Oh ! Seoyeon-senpai ? Enchantée !"
+        "text": "Oh ! C'est toi, Seoyeon ? Enchantée !"
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "...Une fille sympa."
+        "text": "...Un gars bien."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Regardant {name}* ...Une fille pleine d'entrain."
+        "text": "*Regardant {name}* ...Un gars bien."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",

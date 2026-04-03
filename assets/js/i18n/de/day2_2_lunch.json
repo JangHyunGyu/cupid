@@ -258,7 +258,7 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Wir haben uns gestern kennengelernt! Die ist voll fröhlich, Seoyeon!"
+        "text": "Wir haben uns gestern kennengelernt! Netter Typ, Seoyeon!"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
@@ -266,7 +266,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "...Nett."
+        "text": "...Netter Typ."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -443,7 +443,7 @@
     },
     "lunch2_seo_13b_ins": {
         "name": "Seoyeon",
-        "text": "*Schaut {name} an* ...Ein fröhliches Mädchen."
+        "text": "*Schaut {name} an* ...Netter Typ."
     },
     "lunch2_seo_c1_2_ins": {
         "name": "{name}",
