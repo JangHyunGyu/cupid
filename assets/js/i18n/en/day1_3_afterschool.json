@@ -146,7 +146,23 @@
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
-        "text": "*She's more caring than I expected. — Something warm passes through me.*"
+        "text": "*Apparently, this wasn't just a polite send-off. She rests a hand on the back of the chair and takes a second to choose her words.*"
+    },
+    "after_homeroom_ok_3": {
+        "name": "Homeroom Teacher",
+        "text": "So it feels like a decent school, huh. — Hearing that is weirdly reassuring."
+    },
+    "after_homeroom_ok_4": {
+        "name": "{name}",
+        "text": "*She says it like part of the job, but that sounded a little more personal than that.*"
+    },
+    "after_homeroom_ok_5": {
+        "name": "Homeroom Teacher",
+        "text": "Still, your first day is your first day. Don't act too okay if you're not. You should get going."
+    },
+    "after_homeroom_ok_6": {
+        "name": "{name}",
+        "text": "*She turns back toward her desk. I say a short goodbye and close the faculty office door, but the conversation lingers longer than I expected. — That wasn't just duty.*"
     },
     "after_homeroom_honest_1": {
         "name": "Homeroom Teacher",
@@ -382,19 +398,15 @@
     },
     "after_hidden_homeroom_3_ins": {
         "name": "{name}",
-        "text": "I was just... wandering around, it being the first day and all."
+        "text": "You asked how I was settling in earlier. I just... kept thinking about that."
     },
     "after_hidden_homeroom_3_ins2": {
         "name": "Homeroom Teacher",
-        "text": "Wandered all the way to the faculty office? That's unusual. — Come in for a sec."
+        "text": "Oh. So that's what this is about? — You did well to come. Sit for a minute."
     },
     "after_homeroom_ok_ins": {
         "name": "{name}",
-        "text": "*The teacher waves and heads toward the faculty office.*"
-    },
-    "after_homeroom_ok_2_ins": {
-        "name": "{name}",
-        "text": "*The teacher pauses for a moment. Leans against the hallway wall.*"
+        "text": "*She slides the papers on her desk aside and looks back at me. The mood says this won't end with just one line.*"
     },
     "after_homeroom_honest_3_ins": {
         "name": "{name}",
@@ -410,7 +422,7 @@
     },
     "after_homeroom_honest_choice2b_ins": {
         "name": "{name}",
-        "text": "*She laughed. — That's the first time I've seen this person laugh at a joke.*"
+        "text": "*She closes the attendance book and stands up. She reaches the doorway, then calls me back as if she remembered something a beat late.*"
     },
     "after_homeroom_honest_choice2b_ins2": {
         "name": "{name}",

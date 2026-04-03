@@ -146,7 +146,23 @@
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
-        "text": "*Unerwartet fürsorglich. — Etwas Warmes durchfährt mich.*"
+        "text": "*Offenbar war das nicht nur eine höfliche Verabschiedung. Die Lehrerin legt eine Hand auf die Stuhllehne und sucht einen Moment nach den richtigen Worten.*"
+    },
+    "after_homeroom_ok_3": {
+        "name": "Klassenlehrerin",
+        "text": "Also fühlt es sich für dich nach einer ganz guten Schule an. — Das zu hören beruhigt mich seltsam sehr."
+    },
+    "after_homeroom_ok_4": {
+        "name": "{name}",
+        "text": "*Sie sagt es wie etwas Dienstliches, aber das eben klang ein wenig persönlicher als das.*"
+    },
+    "after_homeroom_ok_5": {
+        "name": "Klassenlehrerin",
+        "text": "Trotzdem bleibt der erste Tag der erste Tag. Tu nicht zu sehr so, als wärst du völlig okay. Du solltest langsam gehen."
+    },
+    "after_homeroom_ok_6": {
+        "name": "{name}",
+        "text": "*Sie wendet sich wieder ihrem Schreibtisch zu. Ich verabschiede mich kurz und schließe die Tür zum Lehrerzimmer, aber das Gespräch bleibt länger bei mir als erwartet. — Das war nicht nur Pflichtgefühl.*"
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrerin",
@@ -382,19 +398,15 @@
     },
     "after_hidden_homeroom_3_ins": {
         "name": "{name}",
-        "text": "Ich hab nur... die Schule erkundet, ist ja der erste Tag."
+        "text": "Sie hatten mich vorhin gefragt, wie ich zurechtkomme. Irgendwie... ist mir das nicht aus dem Kopf gegangen."
     },
     "after_hidden_homeroom_3_ins2": {
         "name": "Klassenlehrerin",
-        "text": "Bis ins Lehrerzimmer gewandert? Das ist ungewöhnlich. — Komm kurz rein."
+        "text": "Ach so. Darum also? — Gut, dass du gekommen bist. Setz dich einen Moment."
     },
     "after_homeroom_ok_ins": {
         "name": "{name}",
-        "text": "*Die Lehrerin winkt und geht Richtung Lehrerzimmer.*"
-    },
-    "after_homeroom_ok_2_ins": {
-        "name": "{name}",
-        "text": "*Die Lehrerin hält kurz inne. Lehnt sich an die Flurwand.*"
+        "text": "*Sie schiebt die Unterlagen auf ihrem Schreibtisch zur Seite und sieht mich noch einmal an. Die Stimmung sagt, dass es nicht bei einem einzigen Satz bleibt.*"
     },
     "after_homeroom_honest_3_ins": {
         "name": "{name}",
@@ -410,7 +422,7 @@
     },
     "after_homeroom_honest_choice2b_ins": {
         "name": "{name}",
-        "text": "*Sie hat gelacht. — Das ist das erste Mal, dass ich diese Person über einen Witz lachen sehe.*"
+        "text": "*Sie klappt das Klassenbuch zu und steht auf. Am Türrahmen angekommen, ruft sie mich noch einmal, als wäre ihr erst jetzt etwas eingefallen.*"
     },
     "after_homeroom_honest_choice2b_ins2": {
         "name": "{name}",

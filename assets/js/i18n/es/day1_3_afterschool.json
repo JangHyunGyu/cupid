@@ -146,7 +146,23 @@
     },
     "after_homeroom_ok_2": {
         "name": "{name}",
-        "text": "*Más atenta de lo que esperaba. — Algo cálido me recorrió.*"
+        "text": "*Parece que no era solo una despedida de cortesía. La profesora apoya una mano en el respaldo de la silla y se toma un segundo para elegir las palabras.*"
+    },
+    "after_homeroom_ok_3": {
+        "name": "Profesora",
+        "text": "Así que te parece una buena escuela. — Oír eso me tranquiliza más de lo que debería."
+    },
+    "after_homeroom_ok_4": {
+        "name": "{name}",
+        "text": "*Lo dice como si fuera trabajo, pero aquello sonó un poco más personal que eso.*"
+    },
+    "after_homeroom_ok_5": {
+        "name": "Profesora",
+        "text": "Aun así, el primer día es el primer día. No finjas demasiado que estás bien. Ya puedes irte."
+    },
+    "after_homeroom_ok_6": {
+        "name": "{name}",
+        "text": "*La profesora vuelve a girarse hacia el escritorio. Me despido brevemente y cierro la puerta de la sala de profesores, pero la conversación me dura más de lo esperado. — No era solo deber.*"
     },
     "after_homeroom_honest_1": {
         "name": "Profesora",
@@ -382,19 +398,15 @@
     },
     "after_hidden_homeroom_3_ins": {
         "name": "{name}",
-        "text": "Solo estaba... recorriendo la escuela, ya que es el primer día."
+        "text": "Antes me preguntó cómo me estaba adaptando. Supongo que... esa frase se me quedó dando vueltas."
     },
     "after_hidden_homeroom_3_ins2": {
         "name": "Profesora",
-        "text": "¿Explorando hasta llegar a la sala de profesores? Qué curioso. — Pasa un momento."
+        "text": "Ah. ¿Así que venía por eso? — Hiciste bien en venir. Siéntate un momento."
     },
     "after_homeroom_ok_ins": {
         "name": "{name}",
-        "text": "*La profesora agita la mano y se dirige a la sala de profesores.*"
-    },
-    "after_homeroom_ok_2_ins": {
-        "name": "{name}",
-        "text": "*La profesora se detiene un momento. Se apoya contra la pared del pasillo.*"
+        "text": "*Aparta a un lado los papeles del escritorio y vuelve a mirarme. El ambiente dice que esto no termina con una sola frase.*"
     },
     "after_homeroom_honest_3_ins": {
         "name": "{name}",
@@ -410,7 +422,7 @@
     },
     "after_homeroom_honest_choice2b_ins": {
         "name": "{name}",
-        "text": "*Se rió. — Es la primera vez que veo a esta persona reírse de una broma.*"
+        "text": "*Cierra el registro y se pone de pie. Llega hasta el umbral y entonces vuelve a llamarme, como si se hubiera acordado tarde de algo.*"
     },
     "after_homeroom_honest_choice2b_ins2": {
         "name": "{name}",
