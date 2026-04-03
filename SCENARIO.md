@@ -881,7 +881,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch_start_7`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `yuna_normal.png`
 **{name}**: *그리고 유나가 가방만 들고 조용히 교실을 빠져나간다. 도서관 방향.*
 
 ---
@@ -2432,7 +2432,7 @@
 - 다음: `after_hidden_homeroom_2`
 
 - 캐릭터: `없음`
-**{name}**: *교무실 앞에서 노크하고 문을 열었다. 안으로 걸어 들어가자 담임이 먼저 눈을 마주친다.*
+**{name}**: *하교하려다 발이 한 번 멈춘다. 아까 마지막까지 반 분위기를 살피던 담임 얼굴이 떠올랐다. 교무실 앞에 서서 노크하고 문을 열었다.*
 
 ---
 
@@ -2451,6 +2451,24 @@
 
 - 캐릭터: `teacher_normal.png`
 **{name}**: *담임이다. 가디건이 아까보다 더 흐트러져 있다. 하루 동안 전투를 치른 것 같다.*
+
+---
+
+### `after_hidden_homeroom_3_ins`
+- 배경: `teacher_office.png`
+- 다음: `after_hidden_homeroom_3_ins2`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: 아까 적응은 어떠냐고 하셨잖아요. 그냥... 그 말이 계속 남아서요.
+
+---
+
+### `after_hidden_homeroom_3_ins2`
+- 배경: `teacher_office.png`
+- 다음: `after_hidden_homeroom_4`
+
+- 캐릭터: `teacher_normal.png`
+**담임**: 아. 그거였어? — 잘 왔네. 잠깐만 앉아.
 
 ---
 
@@ -2483,12 +2501,57 @@
 
 ---
 
-### `after_homeroom_ok_2`
+### `after_homeroom_ok_ins`
 - 배경: `teacher_office.png`
-- 다음: `after_homeroom_ok_2_ins`
+- 다음: `after_homeroom_ok_2`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *의외로 챙기는 사람이네. — 뭔가 따뜻한 게 스쳤다.*
+**{name}**: *담임이 책상 위 서류를 한쪽으로 밀어두고 다시 나를 본다. 금방 끝낼 줄 알았던 말이 조금 더 이어질 분위기다.*
+
+---
+
+### `after_homeroom_ok_2`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_ok_3`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *그냥 흘려보내는 인사치레는 아니었던 모양이다. 담임이 의자 등받이에 손을 얹은 채 잠깐 말을 고른다.*
+
+---
+
+### `after_homeroom_ok_3`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_ok_4`
+
+- 캐릭터: `teacher_normal.png`
+**담임**: 생각보다 좋은 학교라. — 그런 말 들으면 괜히 안심되네.
+
+---
+
+### `after_homeroom_ok_4`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_ok_5`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *업무처럼 말하지만, 방금 말은 그것보다 조금 개인적이었다.*
+
+---
+
+### `after_homeroom_ok_5`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_ok_6`
+
+- 캐릭터: `teacher_normal.png`
+**담임**: 그래도 첫날은 첫날이니까. 너무 멀쩡한 척은 하지 마. 이제 들어가 봐.
+
+---
+
+### `after_homeroom_ok_6`
+- 배경: `teacher_office.png`
+- 다음: `night_start`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *담임이 다시 책상 쪽으로 몸을 돌린다. 짧게 인사하고 교무실 문을 닫는데, 방금 대화가 예상보다 오래 남는다. — 그냥 의무감만은 아니었다.*
 
 ---
 
@@ -2519,6 +2582,15 @@
 
 ---
 
+### `after_homeroom_honest_3_ins`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_honest_4`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *비슷한 거? — 교사 말고 다른 일을 했었다는 뜻인가.*
+
+---
+
 ### `after_homeroom_honest_4`
 - 배경: `teacher_office.png`
 - 다음: `after_homeroom_honest_5`
@@ -2546,6 +2618,15 @@
 
 ---
 
+### `after_homeroom_honest_6_ins`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_honest_choice2`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *'교육적 관심'. — 자기 관심을 업무로 포장하는 사람이구나.*
+
+---
+
 ### `after_homeroom_honest_choice2`
 - 배경: `teacher_office.png`
 - 선택지:
@@ -2566,12 +2647,39 @@
 
 ---
 
+### `after_homeroom_honest_choice2a_ins`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_honest_7`
+
+- 캐릭터: `teacher_shy.png`
+**{name}**: *솔직하게 인정했다. — 이 사람의 포장이 벗겨지는 순간이 의외로 빠르다.*
+
+---
+
 ### `after_homeroom_honest_choice2b`
 - 배경: `teacher_office.png`
 - 다음: `after_homeroom_honest_choice2b_ins`
 
 - 캐릭터: `teacher_smile.png`
 **담임**: *피식 웃는다.* 기대는 마. 자판기 주스야.
+
+---
+
+### `after_homeroom_honest_choice2b_ins`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_honest_choice2b_ins2`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *웃었다. — 이 사람이 농담에 웃는 건 처음 봤다.*
+
+---
+
+### `after_homeroom_honest_choice2b_ins2`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_honest_7`
+
+- 캐릭터: `teacher_smile.png`
+**{name}**: *담임이 출석부를 덮고 자리에서 일어난다. 문턱까지 갔다가, 뒤늦게 떠오른 것처럼 다시 나를 부른다.*
 
 ---
 
@@ -2599,6 +2707,15 @@
 
 - 캐릭터: `teacher_normal.png`
 **담임**: 적응 못 하면 또 잡으러 올게.
+
+---
+
+### `after_homeroom_honest_9_ins`
+- 배경: `teacher_office.png`
+- 다음: `after_homeroom_honest_10`
+
+- 캐릭터: `teacher_normal.png`
+**{name}**: *아까 교실에서도 '이름은 한 번에 외우는 주의'라고 했었는데. — 두 번 말하는 건 뭔가.*
 
 ---
 
@@ -2845,96 +2962,6 @@
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *그리고 다시 걸어간다.*
-
----
-
-### `after_hidden_homeroom_3_ins`
-- 배경: `teacher_office.png`
-- 다음: `after_hidden_homeroom_3_ins2`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: 그냥... 첫날이라 학교 구경하다가요.
-
----
-
-### `after_hidden_homeroom_3_ins2`
-- 배경: `teacher_office.png`
-- 다음: `after_hidden_homeroom_4`
-
-- 캐릭터: `teacher_normal.png`
-**담임**: 구경하다 교무실까지 왔어? 특이하네. — 잠깐 들어와.
-
----
-
-### `after_homeroom_ok_ins`
-- 배경: `teacher_office.png`
-- 다음: `after_homeroom_ok_2`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: *담임이 손을 흔들고 교무실로 향한다.*
-
----
-
-### `after_homeroom_ok_2_ins`
-- 배경: `teacher_office.png`
-- 다음: `night_start`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: *담임이 잠깐 멈춘다. 복도 벽에 기대서며.*
-
----
-
-### `after_homeroom_honest_3_ins`
-- 배경: `teacher_office.png`
-- 다음: `after_homeroom_honest_4`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: *비슷한 거? — 교사 말고 다른 일을 했었다는 뜻인가.*
-
----
-
-### `after_homeroom_honest_6_ins`
-- 배경: `teacher_office.png`
-- 다음: `after_homeroom_honest_choice2`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: *'교육적 관심'. — 자기 관심을 업무로 포장하는 사람이구나.*
-
----
-
-### `after_homeroom_honest_choice2a_ins`
-- 배경: `teacher_office.png`
-- 다음: `after_homeroom_honest_7`
-
-- 캐릭터: `teacher_shy.png`
-**{name}**: *솔직하게 인정했다. — 이 사람의 포장이 벗겨지는 순간이 의외로 빠르다.*
-
----
-
-### `after_homeroom_honest_choice2b_ins`
-- 배경: `teacher_office.png`
-- 다음: `after_homeroom_honest_choice2b_ins2`
-
-- 캐릭터: `teacher_smile.png`
-**{name}**: *웃었다. — 이 사람이 농담에 웃는 건 처음 봤다.*
-
----
-
-### `after_homeroom_honest_choice2b_ins2`
-- 배경: `teacher_office.png`
-- 다음: `after_homeroom_honest_7`
-
-- 캐릭터: `teacher_smile.png`
-**{name}**: *담임이 교무실로 향하다 — 멈춘다. 주머니에서 뭔가를 만지작거린다. 볼펜인가?*
-
----
-
-### `after_homeroom_honest_9_ins`
-- 배경: `teacher_office.png`
-- 다음: `after_homeroom_honest_10`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: *아까 교실에서도 '이름은 한 번에 외우는 주의'라고 했었는데. — 두 번 말하는 건 뭔가.*
 
 ---
 
