@@ -1243,6 +1243,28 @@ html[lang="de"] #message {
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* PC 모드: 이름 입력창 확대 */
+@media (min-width: 769px) {
+    #name-input-wrapper {
+        gap: 12px;
+    }
+    #player-name-input {
+        max-width: 400px;
+        padding: 12px 18px;
+        font-size: 1.15rem;
+        border-radius: 12px;
+    }
+    #name-confirm-btn {
+        padding: 0 28px;
+        font-size: 1.05rem;
+        border-radius: 12px;
+    }
+    #name-input-guide {
+        font-size: 0.9rem;
+        margin-top: 4px;
+    }
+}
+
 @media (max-width: 768px) {
     #name-input-container {
         margin-top: 10px;
