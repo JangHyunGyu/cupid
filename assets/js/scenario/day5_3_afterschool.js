@@ -177,9 +177,7 @@ const _scenes = {
             { "condition": "nurse_day5", "next": "ending_start" },
             { "condition": "day3_caught_multiple_dates", "next": "ending_start" },
             { "condition": "ending_harem", "next": "after5_set_harem" },
-            { "condition": "route_seoyeon", "next": "after5_last_chance_1" },
-            { "condition": "route_dain", "next": "after5_last_chance_1" },
-            { "condition": "route_yuna", "next": "after5_last_chance_1" },
+            { "condition": "day4_waited", "next": "after5_last_chance_1" },
             { "next": "ending_start" }
         ]
     },

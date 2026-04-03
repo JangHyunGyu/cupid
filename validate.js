@@ -2160,10 +2160,7 @@ fs.writeFileSync(path.join(__dirname, 'PLAYTEST_REPORT.md'), md, 'utf8');
 console.log('[REPORT] 플레이테스트 리포트 생성 완료 — ' + reportExplored + '경로, ' + sortedEndings.length + '종 엔딩');
 console.log('[REPORT] → PLAYTEST_REPORT.md\n');
 
-// ===== TEST: 25종 엔딩 타겟 도달 검증 =====
-console.log('[ENDING_CHECK] 25종 엔딩 타겟 도달 검증 시작...');
-
-// 25종 엔딩 정의: { name, flags, stats, expectedScenes(도달해야 할 씬 목록) }
+// 엔딩 도달 케이스 정의: { name, flags, stats, expectedScenes(도달해야 할 씬 목록) }
 const endingTests = [
     // 메인 3인 PERFECT (80+)
     { name: '서연 PERFECT', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 85 }, expect: ['perfect_epilogue_4_seo'] },
@@ -2191,13 +2188,16 @@ const endingTests = [
     { name: '보건 GOOD', flags: { nurse_day5: true }, stats: { Nurse: 40 }, expect: ['hidden_good_nurse_4'] },
     // 특수 엔딩
     { name: 'HAREM END', flags: { ending_harem: true }, stats: {}, expect: ['harem_8'] },
-    { name: 'GOOD END (구제)', flags: { day4_confession_accepted: true, day3_has_multiple_dates: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 50 }, expect: ['good_5_cg_seo'] },
-    { name: 'MAYHEM END', flags: { day3_has_multiple_dates: true }, stats: {}, expect: ['mayhem_7'] },
+    { name: 'GOOD END (고백 수락)', flags: { day4_confession_accepted: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 50 }, expect: ['good_5_cg_seo'] },
+    { name: 'MAYHEM END', flags: { day3_has_multiple_dates: true, day3_caught_multiple_dates: true }, stats: {}, expect: ['mayhem_7'] },
     { name: 'GOOD END (뒤늦은 고백)', flags: { day5_confessed: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 55 }, expect: ['good_5_cg_seo'] },
     { name: 'CONFESS FAIL END', flags: { day5_confessed: true, route_seoyeon: true, met_seoyeon: true }, stats: { Seoyeon: 30 }, expect: ['confess_fail_5'] },
     { name: 'FRIEND END', flags: { day4_waited: true }, stats: {}, expect: ['friend_12'] },
     { name: 'ALONE END', flags: {}, stats: {}, expect: ['alone_5'] },
 ];
+
+// ===== TEST: 엔딩 도달 케이스 검증 =====
+console.log('[ENDING_CHECK] ' + endingTests.length + '개 엔딩 케이스 도달 검증 시작...');
 
 const endingResults = { pass: [], fail: [] };
 for (const test of endingTests) {
@@ -2241,7 +2241,7 @@ for (const test of endingTests) {
     }
 }
 
-console.log('[ENDING_CHECK] 결과: ' + endingResults.pass.length + '/25 도달, ' + endingResults.fail.length + '개 실패');
+console.log('[ENDING_CHECK] 결과: ' + endingResults.pass.length + '/' + endingTests.length + ' 도달, ' + endingResults.fail.length + '개 실패');
 if (endingResults.fail.length > 0) {
     for (const f of endingResults.fail) {
         console.log('  ❌ ' + f.name + ' → 마지막: ' + f.lastScene + ' (경로: ' + f.trail.join(' → ') + ')');

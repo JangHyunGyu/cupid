@@ -132,7 +132,6 @@ gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].
 gameEngine.stateManager.stats.Seoyeon.affinity = 50;
 gameEngine.stateManager.setFlag("route_seoyeon");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
-gameEngine.stateManager.setFlag("day3_has_multiple_dates");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("day5_ending_good");
 ```
@@ -143,7 +142,6 @@ gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].
 gameEngine.stateManager.stats.Yuna.affinity = 50;
 gameEngine.stateManager.setFlag("route_yuna");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
-gameEngine.stateManager.setFlag("day3_has_multiple_dates");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("day5_ending_good");
 ```
@@ -154,7 +152,6 @@ gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].
 gameEngine.stateManager.stats.Dain.affinity = 50;
 gameEngine.stateManager.setFlag("route_dain");
 gameEngine.stateManager.setFlag("day4_confession_accepted");
-gameEngine.stateManager.setFlag("day3_has_multiple_dates");
 gameEngine.stateManager.setDay(5);
 gameEngine.renderScene("day5_ending_good");
 ```
@@ -192,9 +189,9 @@ gameEngine.renderScene("day5_ending_confess_fail");
 ### MAYHEM END (셋 다 좋아했지만 선택 못함)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
-gameEngine.stateManager.setFlag("day3_has_multiple_dates");
+gameEngine.stateManager.setFlag("day3_caught_multiple_dates");
 gameEngine.stateManager.setDay(5);
-gameEngine.renderScene("day5_ending_mayhem");
+gameEngine.renderScene("ending_start");
 ```
 
 ### HAREM END (셋 다 고백 + 수락)
@@ -202,21 +199,22 @@ gameEngine.renderScene("day5_ending_mayhem");
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.setFlag("ending_harem");
 gameEngine.stateManager.setDay(5);
-gameEngine.renderScene("day5_ending_harem");
+gameEngine.renderScene("ending_start");
 ```
 
-### FRIEND END (고백 안 함, 루트 없음)
+### FRIEND END (고백 보류 후 끝내 고백하지 않음)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
+gameEngine.stateManager.setFlag("day4_waited");
 gameEngine.stateManager.setDay(5);
-gameEngine.renderScene("day5_ending_friend");
+gameEngine.renderScene("ending_start");
 ```
 
 ### ALONE END (아무 관계 없음)
 ```js
 gameEngine.stateManager.flags = {}; ["Seoyeon","Yuna","Dain","Teacher","Nurse"].forEach(c => gameEngine.stateManager.stats[c].affinity = 0);
 gameEngine.stateManager.setDay(5);
-gameEngine.renderScene("day5_ending_alone");
+gameEngine.renderScene("ending_start");
 ```
 
 ### TEACHER PERFECT END (호감도 80+)

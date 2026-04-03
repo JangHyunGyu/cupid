@@ -1,7 +1,11 @@
 /**
- * 25종 엔딩 라우팅 검증
- * - 실제 플레이 전수 시뮬레이션 대신 엔딩 라우팅 노드만 직접 검증
- * - DEBUG_COMMANDS.md의 프리셋과 현재 day5_4_night 분기 구조를 기준으로 함
+ * Ending route smoke test for Day 5.
+ *
+ * Covers:
+ * - accepted-route endings
+ * - late-confession branch from after5_ending_check
+ * - caught vs uncaught multiple-date endings
+ * - hidden teacher/nurse endings
  */
 const fs = require('fs');
 const path = require('path');
@@ -9,9 +13,9 @@ const path = require('path');
 const SCENARIO = {};
 for (let day = 0; day <= 5; day++) SCENARIO[day] = {};
 
-const dir = path.join(__dirname, 'assets/js/scenario');
-for (const file of fs.readdirSync(dir).filter(file => /^day\d/.test(file) && file.endsWith('.js'))) {
-  new Function('SCENARIO', 'Object', fs.readFileSync(path.join(dir, file), 'utf8'))(SCENARIO, Object);
+const scenarioDir = path.join(__dirname, 'assets/js/scenario');
+for (const file of fs.readdirSync(scenarioDir).filter(file => /^day\d/.test(file) && file.endsWith('.js'))) {
+  new Function('SCENARIO', 'Object', fs.readFileSync(path.join(scenarioDir, file), 'utf8'))(SCENARIO, Object);
 }
 
 const allScenes = {};
@@ -110,9 +114,11 @@ function resolveNext(scene, state) {
   return scene.next || scene.fallback || null;
 }
 
-function follow(startSceneId, state, maxSteps = 200) {
+function follow(startSceneId, state, options = {}) {
   const trail = [];
   let sceneId = startSceneId;
+  const maxSteps = options.maxSteps || 200;
+  const choiceSelections = options.choiceSelections || {};
 
   for (let step = 0; step < maxSteps && sceneId; step++) {
     if (sceneId.endsWith('.html')) break;
@@ -122,7 +128,19 @@ function follow(startSceneId, state, maxSteps = 200) {
     if (!scene) break;
     applyScene(scene, state);
 
-    if (scene.choices?.length > 0) break;
+    if (scene.choices?.length > 0) {
+      const choiceIndex = choiceSelections[sceneId];
+      if (choiceIndex === undefined) break;
+
+      const choice = scene.choices[choiceIndex];
+      if (!choice) break;
+
+      applyScene(choice, state);
+      const nextId = choice.next;
+      if (!nextId || nextId === sceneId) break;
+      sceneId = nextId;
+      continue;
+    }
 
     const nextId = resolveNext(scene, state);
     if (!nextId || nextId === sceneId) break;
@@ -144,38 +162,90 @@ function buildState(config) {
 }
 
 const tests = [
-  { name: 'Perfect(서연)', expected: 'perfect_seo_1', affinities: { Seoyeon: 90 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
-  { name: 'Perfect(유나)', expected: 'perfect_yuna_1', affinities: { Yuna: 90 }, flags: ['route_yuna', 'day4_confession_accepted'] },
-  { name: 'Perfect(다인)', expected: 'perfect_dain_1', affinities: { Dain: 90 }, flags: ['route_dain', 'day4_confession_accepted'] },
+  { name: 'Perfect(Seoyeon)', expected: 'perfect_seo_1', affinities: { Seoyeon: 90 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
+  { name: 'Perfect(Yuna)', expected: 'perfect_yuna_1', affinities: { Yuna: 90 }, flags: ['route_yuna', 'day4_confession_accepted'] },
+  { name: 'Perfect(Dain)', expected: 'perfect_dain_1', affinities: { Dain: 90 }, flags: ['route_dain', 'day4_confession_accepted'] },
 
-  { name: 'True(서연)', expected: 'true_seo_1', affinities: { Seoyeon: 70 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
-  { name: 'True(유나)', expected: 'true_yuna_1', affinities: { Yuna: 70 }, flags: ['route_yuna', 'day4_confession_accepted'] },
-  { name: 'True(다인)', expected: 'true_dain_1', affinities: { Dain: 70 }, flags: ['route_dain', 'day4_confession_accepted'] },
+  { name: 'True(Seoyeon)', expected: 'true_seo_1', affinities: { Seoyeon: 70 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
+  { name: 'True(Yuna)', expected: 'true_yuna_1', affinities: { Yuna: 70 }, flags: ['route_yuna', 'day4_confession_accepted'] },
+  { name: 'True(Dain)', expected: 'true_dain_1', affinities: { Dain: 70 }, flags: ['route_dain', 'day4_confession_accepted'] },
 
-  { name: 'Good(서연)', expected: 'good_5_cg_seo', affinities: { Seoyeon: 50 }, flags: ['route_seoyeon', 'day4_confession_accepted', 'day3_has_multiple_dates'] },
-  { name: 'Good(유나)', expected: 'good_5_cg_yuna', affinities: { Yuna: 50 }, flags: ['route_yuna', 'day4_confession_accepted', 'day3_has_multiple_dates'] },
-  { name: 'Good(다인)', expected: 'good_5_cg_dain', affinities: { Dain: 50 }, flags: ['route_dain', 'day4_confession_accepted', 'day3_has_multiple_dates'] },
+  {
+    name: 'Good Accepted(Seoyeon)',
+    start: 'after5_ending_check',
+    expected: 'good_5_cg_seo',
+    affinities: { Seoyeon: 50 },
+    flags: ['route_seoyeon', 'day4_confession_accepted'],
+    forbidden: ['after5_last_chance_1', 'after5_last_chance_choice']
+  },
+  {
+    name: 'Good Accepted(Yuna)',
+    start: 'after5_ending_check',
+    expected: 'good_5_cg_yuna',
+    affinities: { Yuna: 50 },
+    flags: ['route_yuna', 'day4_confession_accepted'],
+    forbidden: ['after5_last_chance_1', 'after5_last_chance_choice']
+  },
+  {
+    name: 'Good Accepted(Dain)',
+    start: 'after5_ending_check',
+    expected: 'good_5_cg_dain',
+    affinities: { Dain: 50 },
+    flags: ['route_dain', 'day4_confession_accepted'],
+    forbidden: ['after5_last_chance_1', 'after5_last_chance_choice']
+  },
 
-  { name: 'Bittersweet(서연)', expected: 'bitter_seo_1', affinities: { Seoyeon: 20 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
-  { name: 'Bittersweet(유나)', expected: 'bitter_yuna_1', affinities: { Yuna: 20 }, flags: ['route_yuna', 'day4_confession_accepted'] },
-  { name: 'Bittersweet(다인)', expected: 'bitter_dain_1', affinities: { Dain: 20 }, flags: ['route_dain', 'day4_confession_accepted'] },
+  { name: 'Bittersweet(Seoyeon)', expected: 'bitter_seo_1', affinities: { Seoyeon: 20 }, flags: ['route_seoyeon', 'day4_confession_accepted'] },
+  { name: 'Bittersweet(Yuna)', expected: 'bitter_yuna_1', affinities: { Yuna: 20 }, flags: ['route_yuna', 'day4_confession_accepted'] },
+  { name: 'Bittersweet(Dain)', expected: 'bitter_dain_1', affinities: { Dain: 20 }, flags: ['route_dain', 'day4_confession_accepted'] },
 
-  { name: 'Confess Fail(서연)', expected: 'day5_ending_confess_fail', affinities: { Seoyeon: 30 }, flags: ['route_seoyeon', 'day5_confessed'] },
-  { name: 'Confess Fail(유나)', expected: 'day5_ending_confess_fail', affinities: { Yuna: 30 }, flags: ['route_yuna', 'day5_confessed'] },
-  { name: 'Confess Fail(다인)', expected: 'day5_ending_confess_fail', affinities: { Dain: 30 }, flags: ['route_dain', 'day5_confessed'] },
+  {
+    name: 'Late Confess Good(Dain)',
+    start: 'after5_ending_check',
+    expected: 'good_5_cg_dain',
+    affinities: { Dain: 55 },
+    flags: ['route_dain', 'day4_waited'],
+    choices: { after5_last_chance_choice: 0 }
+  },
+  {
+    name: 'Confess Fail(Seoyeon)',
+    start: 'after5_ending_check',
+    expected: 'day5_ending_confess_fail',
+    affinities: { Seoyeon: 30 },
+    flags: ['route_seoyeon', 'day4_waited'],
+    choices: { after5_last_chance_choice: 0 }
+  },
+  {
+    name: 'Friend(Yuna Waited)',
+    start: 'after5_ending_check',
+    expected: 'day5_ending_friend',
+    flags: ['route_yuna', 'day4_waited'],
+    choices: { after5_last_chance_choice: 1 }
+  },
 
-  { name: 'Mayhem', expected: 'day5_ending_mayhem', flags: ['day3_has_multiple_dates'] },
-  { name: 'Harem', expected: 'day5_ending_harem', flags: ['ending_harem'] },
-  { name: 'Friend', expected: 'day5_ending_friend', flags: ['day4_waited'] },
+  {
+    name: 'Mayhem',
+    start: 'after5_ending_check',
+    expected: 'day5_ending_mayhem',
+    flags: ['day3_has_multiple_dates', 'day3_caught_multiple_dates'],
+    forbidden: ['day5_ending_harem']
+  },
+  {
+    name: 'Harem',
+    start: 'after5_ending_check',
+    expected: 'day5_ending_harem',
+    flags: ['day3_has_multiple_dates', 'ending_harem'],
+    forbidden: ['day5_ending_mayhem']
+  },
   { name: 'Alone', expected: 'day5_ending_alone' },
 
-  { name: 'Hidden Perfect(담임)', expected: 'hidden_perfect_homeroom_1', affinities: { Teacher: 90 }, flags: ['homeroom_day5'] },
-  { name: 'Hidden True(담임)', expected: 'hidden_true_homeroom_1', affinities: { Teacher: 60 }, flags: ['homeroom_day5'] },
-  { name: 'Hidden Good(담임)', expected: 'hidden_good_homeroom_1', affinities: { Teacher: 20 }, flags: ['homeroom_day5'] },
+  { name: 'Hidden Perfect(Teacher)', expected: 'hidden_perfect_homeroom_1', affinities: { Teacher: 90 }, flags: ['homeroom_day5'] },
+  { name: 'Hidden True(Teacher)', expected: 'hidden_true_homeroom_1', affinities: { Teacher: 60 }, flags: ['homeroom_day5'] },
+  { name: 'Hidden Good(Teacher)', expected: 'hidden_good_homeroom_1', affinities: { Teacher: 20 }, flags: ['homeroom_day5'] },
 
-  { name: 'Hidden Perfect(보건)', expected: 'hidden_perfect_nurse_1', affinities: { Nurse: 90 }, flags: ['nurse_day5'] },
-  { name: 'Hidden True(보건)', expected: 'hidden_true_nurse_1', affinities: { Nurse: 60 }, flags: ['nurse_day5'] },
-  { name: 'Hidden Good(보건)', expected: 'hidden_good_nurse_1', affinities: { Nurse: 20 }, flags: ['nurse_day5'] }
+  { name: 'Hidden Perfect(Nurse)', expected: 'hidden_perfect_nurse_1', affinities: { Nurse: 90 }, flags: ['nurse_day5'] },
+  { name: 'Hidden True(Nurse)', expected: 'hidden_true_nurse_1', affinities: { Nurse: 60 }, flags: ['nurse_day5'] },
+  { name: 'Hidden Good(Nurse)', expected: 'hidden_good_nurse_1', affinities: { Nurse: 20 }, flags: ['nurse_day5'] }
 ];
 
 let passed = 0;
@@ -183,20 +253,22 @@ let failed = 0;
 
 for (const test of tests) {
   const state = buildState(test);
-  const trail = follow('ending_start', state);
+  const trail = follow(test.start || 'ending_start', state, { choiceSelections: test.choices || {} });
   const reached = trail.includes(test.expected);
+  const forbiddenHits = (test.forbidden || []).filter(sceneId => trail.includes(sceneId));
 
-  if (reached) {
-    console.log('✅ ' + test.name + ' → ' + test.expected);
+  if (reached && forbiddenHits.length === 0) {
+    console.log('PASS ' + test.name + ' -> ' + test.expected);
     passed++;
   } else {
-    console.log('❌ ' + test.name + ' → ' + test.expected + ' 미도달');
-    console.log('   경로: ' + trail.join(' → '));
-    console.log('   플래그: ' + Object.keys(state.flags).filter(flag => state.flags[flag]).join(', '));
-    console.log('   호감도: ' + JSON.stringify(state.stats));
+    console.log('FAIL ' + test.name + ' -> ' + test.expected);
+    console.log('  trail: ' + trail.join(' -> '));
+    if (forbiddenHits.length > 0) console.log('  forbidden: ' + forbiddenHits.join(', '));
+    console.log('  flags: ' + Object.keys(state.flags).filter(flag => state.flags[flag]).join(', '));
+    console.log('  affinity: ' + JSON.stringify(state.stats));
     failed++;
   }
 }
 
-console.log('\n' + passed + '/' + tests.length + ' 통과');
+console.log('\n' + passed + '/' + tests.length + ' passed');
 if (failed > 0) process.exit(1);
