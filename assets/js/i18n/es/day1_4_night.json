@@ -163,7 +163,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Hay una alerta en la app de salud del colegio. 'Registro enfermería: {name} — Mareo (leve). Nota: Vuelve si continúan los síntomas. Bebe mucha agua. — el ♥ es interés médico ^^'*"
+        "text": "*Hay una alerta en la app de salud del colegio. 'Registro de enfermería: {name} — Mareo (leve). Nota: vuelve mañana si los síntomas continúan. Bebe mucha agua. — el ♥ es estrictamente por motivos médicos ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

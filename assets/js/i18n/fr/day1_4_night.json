@@ -163,7 +163,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Une alerte sur l'appli santé de l'école. 'Dossier infirmerie : {name} — Vertiges (légers). Note : Reviens si les symptômes persistent. Bois beaucoup d'eau. — le ♥ est un intérêt purement médical ^^'*"
+        "text": "*Une alerte s'affiche sur l'appli santé de l'école. 'Dossier de l'infirmerie : {name} — Vertiges (légers). Note : reviens demain si les symptômes persistent. Bois beaucoup d'eau. — le ♥ est d'un intérêt purement médical ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

@@ -171,7 +171,7 @@
     },
     "hidden_nurse_d4_5": {
         "name": "Enfermera",
-        "text": "*Mirando por la ventana* Por eso estoy aquí. Un lugar donde me llaman 'profesora' en vez de por mi cargo. — Es una pequeña diferencia, pero es enorme."
+        "text": "*Mirando por la ventana* Por eso estoy aquí. Un lugar donde me llaman 'profe' y no 'la enfermera'. — Es una diferencia pequeña, pero pesa mucho."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
@@ -191,7 +191,7 @@
     },
     "hidden_nurse_d4_6": {
         "name": "Enfermera",
-        "text": "Gracias. He terminado mucho antes por ti. ...Eso sí importa."
+        "text": "Gracias. Terminé mucho más rápido gracias a ti. ...No es poca cosa."
     },
     "hidden_nurse_d4_choice": {
         "name": "Enfermera",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d4_cafe_4_ins": {
         "name": "{name}",
-        "text": "*Déjà vu. Ayer dijo algo parecido en el aula vacía. Pero hoy es en una cafetería, en ropa de calle, más informal. No — más serio.*"
+        "text": "*Déjà vu. Ayer dijo algo parecido en el aula vacía. Pero hoy, en una cafetería y con ropa de calle, lo dice con más ligereza. No — más en serio.*"
     },
     "hidden_homeroom_d4_cafe_5_ins": {
         "name": "{name}",
@@ -567,7 +567,7 @@
     },
     "hidden_nurse_d4_4_ins9": {
         "name": "Enfermera",
-        "text": "Solo profe. Sin título. Eso me gustaba."
+        "text": "Tú solo me dices 'profe', sin el cargo de por medio. Me gustaba eso."
     },
     "hidden_nurse_d4_4_ins10": {
         "name": "{name}",
