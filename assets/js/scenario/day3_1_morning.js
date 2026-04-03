@@ -349,10 +349,7 @@ Object.assign(SCENARIO[3], {
     "morning3_date_dain_decline_narr": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "branches": [
-            { "next": "morning3_date_dain_decline_inner" },
-            { "next": "morning3_date_yuna_1" }
-        ]
+        "next": "morning3_date_dain_decline_inner"
     },
     "morning3_date_dain_decline_inner": {
         "background": "assets/images/background/room_school.png",

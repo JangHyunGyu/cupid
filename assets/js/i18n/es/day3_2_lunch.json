@@ -99,7 +99,7 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*Los tres compartimos. Incómodo, pero — no estuvo mal. Nadie se enfadó. Extrañamente, parece que un mundo donde esto es posible sí existe.*"
+        "text": "*Los tres lo compartimos. Nadie se enfadó al instante. Aun así, nadie parecía cómodo. Solo lo dejamos pasar por hoy.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*Sugerí que compartiéramos todo. Algo incómodo, pero no está mal. Las tres sonríen. No sé si es real o actuación.*"
+        "text": "*Dije que lo compartiéramos entre todos. Hay sonrisas, pero el aire se siente extrañamente pesado. Las tres fingen que no pasa nada.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {

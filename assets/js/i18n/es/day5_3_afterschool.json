@@ -93,7 +93,7 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*Pasé por la parte trasera de la escuela y caminé hacia el parque. Esta noche no parece que vaya a terminar con una sola persona.*"
+        "text": "*La grieta que tapamos con sonrisas forzadas a la hora del almuerzo sigue ahí. Siento que esta noche no va a terminar con una sola persona.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -289,5 +289,76 @@
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_dain_check": {},
-    "after5_ending_check": {}
+    "after5_ending_check": {},
+    "after5_last_chance_route_check": {},
+    "after5_last_chance_seo_aff_check": {},
+    "after5_last_chance_dain_aff_check": {},
+    "after5_last_chance_yuna_aff_check": {},
+    "after5_last_chance_seo_low_1": {
+        "name": "{name}",
+        "text": "Seoyeon."
+    },
+    "after5_last_chance_seo_low_2": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon se da vuelta. Sus pies están medio girados, listos para irse en cualquier momento.* ...Qué."
+    },
+    "after5_last_chance_dain_low_1": {
+        "name": "{name}",
+        "text": "Dain."
+    },
+    "after5_last_chance_dain_low_2": {
+        "name": "Dain",
+        "text": "*Dain se detiene, pero no logra sonreír.* ...Qué."
+    },
+    "after5_last_chance_yuna_1": {
+        "name": "{name}",
+        "text": "Yuna."
+    },
+    "after5_last_chance_yuna_2": {
+        "name": "{name}",
+        "text": "*Yuna se detiene. Abraza el libro contra su pecho. Tarda unos dos segundos en darse vuelta.*"
+    },
+    "after5_last_chance_yuna_3": {
+        "name": "Yuna",
+        "text": "...Volviste."
+    },
+    "after5_last_chance_yuna_4": {
+        "name": "{name}",
+        "text": "*No tengo nada preparado para decir, pero extrañamente, esta vez no quiero huir. Yuna no me apura.*"
+    },
+    "after5_last_chance_yuna_5": {
+        "name": "Yuna",
+        "text": "...Esta vez, me quedaré a escuchar."
+    },
+    "after5_last_chance_yuna_6": {
+        "name": "{name}",
+        "text": "*Una frase corta. Pero esas palabras me empujan hacia adelante. Yuna no aparta la mirada.*"
+    },
+    "after5_last_chance_yuna_7": {
+        "name": "{name}",
+        "text": "*Con ella, una línea importa más que una larga explicación. El problema es — es mi línea.*"
+    },
+    "after5_last_chance_yuna_low_1": {
+        "name": "{name}",
+        "text": "Yuna."
+    },
+    "after5_last_chance_yuna_low_2": {
+        "name": "Yuna",
+        "text": "*Yuna se da vuelta lentamente. Sus brazos aprietan el libro que sostiene.* ...Qué."
+    },
+    "after5_confess_aff_seo": {},
+    "after5_confess_aff_dain": {},
+    "after5_confess_aff_yuna": {},
+    "after5_confess_react_seo_low": {
+        "name": "Seoyeon",
+        "text": "*Se queda en silencio un largo rato.* ...Gracias. Pero no creo que pueda fingir que una frase arregla todo."
+    },
+    "after5_confess_react_dain_low": {
+        "name": "Dain",
+        "text": "*Toma un respiro.* ...Te escuché. Pero todavía no puedo sonreír así de rápido."
+    },
+    "after5_confess_react_yuna_low": {
+        "name": "Yuna",
+        "text": "*Dobla la nota en su mano.* ...La leí. Pero todavía no puedo decidir el final."
+    }
 }

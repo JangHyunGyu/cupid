@@ -308,16 +308,19 @@ const _scenes = {
     "night2_seo_freetalk": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "type": "free_talk",
         "next": "night2_hidden_check"
     },
     "night2_dain_freetalk": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "type": "free_talk",
         "next": "night2_hidden_check"
     },
     "night2_yuna_freetalk": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "type": "free_talk",
         "next": "night2_hidden_check"
     },
     "night2_hidden_check": {

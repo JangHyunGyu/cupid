@@ -200,11 +200,41 @@ const _scenes = {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "branches": [
-            { "condition": "route_seoyeon", "next": "after5_last_chance_2_ins" },
-            { "condition": "route_dain", "next": "after5_last_chance_2_ins11" },
-            { "condition": "route_yuna", "next": "after5_last_chance_yuna_1" },
+            { "condition": "route_seoyeon", "next": "after5_last_chance_seo_aff_check" },
+            { "condition": "route_dain", "next": "after5_last_chance_dain_aff_check" },
+            { "condition": "route_yuna", "next": "after5_last_chance_yuna_aff_check" },
             { "next": "after5_last_chance_choice" }
         ]
+    },
+    "after5_last_chance_seo_aff_check": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "after5_last_chance_2_ins" },
+            { "minAffinity": -100, "next": "after5_last_chance_seo_low_1" }
+        ],
+        "next": "after5_last_chance_seo_low_1"
+    },
+    "after5_last_chance_dain_aff_check": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "after5_last_chance_2_ins11" },
+            { "minAffinity": -100, "next": "after5_last_chance_dain_low_1" }
+        ],
+        "next": "after5_last_chance_dain_low_1"
+    },
+    "after5_last_chance_yuna_aff_check": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "after5_last_chance_yuna_1" },
+            { "minAffinity": -100, "next": "after5_last_chance_yuna_low_1" }
+        ],
+        "next": "after5_last_chance_yuna_low_1"
     },
     "after5_last_chance_choice": {
         "background": "assets/images/background/school_back.png",
@@ -223,15 +253,50 @@ const _scenes = {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "branches": [
-            { "condition": "route_seoyeon", "next": "after5_confess_react_seo" },
-            { "condition": "route_dain", "next": "after5_confess_react_dain" },
-            { "condition": "route_yuna", "next": "after5_confess_react_yuna" },
+            { "condition": "route_seoyeon", "next": "after5_confess_aff_seo" },
+            { "condition": "route_dain", "next": "after5_confess_aff_dain" },
+            { "condition": "route_yuna", "next": "after5_confess_aff_yuna" },
             { "next": "ending_start" }
         ]
+    },
+    "after5_confess_aff_seo": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "after5_confess_react_seo" },
+            { "minAffinity": -100, "next": "after5_confess_react_seo_low" }
+        ],
+        "next": "after5_confess_react_seo_low"
+    },
+    "after5_confess_aff_dain": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "affinityChar": "Dain",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "after5_confess_react_dain" },
+            { "minAffinity": -100, "next": "after5_confess_react_dain_low" }
+        ],
+        "next": "after5_confess_react_dain_low"
+    },
+    "after5_confess_aff_yuna": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "affinityChar": "Yuna",
+        "affinityBranches": [
+            { "minAffinity": 50, "next": "after5_confess_react_yuna" },
+            { "minAffinity": -100, "next": "after5_confess_react_yuna_low" }
+        ],
+        "next": "after5_confess_react_yuna_low"
     },
     "after5_confess_react_seo": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "ending_start"
+    },
+    "after5_confess_react_seo_low": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "ending_start"
     },
     "after5_confess_react_dain": {
@@ -239,10 +304,20 @@ const _scenes = {
         "character": "assets/images/characters/dain_laugh.png",
         "next": "ending_start"
     },
+    "after5_confess_react_dain_low": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "ending_start"
+    },
     "after5_confess_react_yuna": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "after5_confess_react_yuna_call"
+    },
+    "after5_confess_react_yuna_low": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "ending_start"
     },
     "after5_confess_react_yuna_call": {
         "background": "assets/images/background/school_back.png",
@@ -340,6 +415,16 @@ const _scenes = {
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after5_last_chance_choice"
     },
+    "after5_last_chance_seo_low_1": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_seo_low_2"
+    },
+    "after5_last_chance_seo_low_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/seyoun_sad.png",
+        "next": "after5_last_chance_choice"
+    },
     "after5_last_chance_2_ins11": {
         "background": "assets/images/background/school_back.png",
         "character": null,
@@ -385,6 +470,16 @@ const _scenes = {
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after5_last_chance_choice"
     },
+    "after5_last_chance_dain_low_1": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_dain_low_2"
+    },
+    "after5_last_chance_dain_low_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after5_last_chance_choice"
+    },
     "after5_last_chance_yuna_1": {
         "background": "assets/images/background/school_back.png",
         "character": null,
@@ -418,6 +513,16 @@ const _scenes = {
     "after5_last_chance_yuna_7": {
         "background": "assets/images/background/school_back.png",
         "character": null,
+        "next": "after5_last_chance_choice"
+    },
+    "after5_last_chance_yuna_low_1": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_yuna_low_2"
+    },
+    "after5_last_chance_yuna_low_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after5_last_chance_choice"
     },
     "after5_confess_react_yuna_ins": {
@@ -462,5 +567,5 @@ const _scenes = {
     }
 };
 Object.assign(SCENARIO[5], _scenes);
-Object.values(_scenes).forEach(s => { if (!(s.background||'').includes('ending_') && !(s.background||'').includes('_event')) s.sunset = true; });
+Object.values(_scenes).forEach(s => { if (!s.night && !(s.background||'').includes('ending_') && !(s.background||'').includes('_event')) s.sunset = true; });
 })();

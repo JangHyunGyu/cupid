@@ -105,7 +105,7 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*학교 뒤편을 지나 공원 쪽으로 걸었다. 오늘은 누구 하나로 끝낼 수 없는 밤이 될 것 같다.*"
+        "text": "*점심때 억지로 웃으며 넘긴 균열이 아직 그대로다. 누구 하나로 끝낼 수 없는 밤이 될 것 같다.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -116,6 +116,9 @@
         "text": "*전 학교에서도 이랬다. 말하지 못했다. 그리고 후회했다. — 이번에도 그럴 건가?*"
     },
     "after5_last_chance_route_check": {},
+    "after5_last_chance_seo_aff_check": {},
+    "after5_last_chance_dain_aff_check": {},
+    "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_choice": {
         "name": "{name}",
         "text": "*지금 아니면 기회 없다.*",
@@ -132,17 +135,32 @@
         "name": "{name}",
         "text": "있잖아 — 나, 너한테 할 말이 있어."
     },
+    "after5_confess_aff_seo": {},
+    "after5_confess_aff_dain": {},
+    "after5_confess_aff_yuna": {},
     "after5_confess_react_seo": {
         "name": "서연",
         "text": "*나란히 걸어가며.* ...늦었어. 근데 — 안 늦었어. 네가 도망치지 않고 돌아왔으니까."
+    },
+    "after5_confess_react_seo_low": {
+        "name": "서연",
+        "text": "*한참 말이 없다.* ...고마워. 근데 지금은, 그 말만으로 괜찮은 척하면 안 될 것 같아."
     },
     "after5_confess_react_dain": {
         "name": "다인",
         "text": "*학교를 나서며.* 야, 진짜?! ...진짜? 나 — 기다렸거든. 어제부터. 아니 그저께부터."
     },
+    "after5_confess_react_dain_low": {
+        "name": "다인",
+        "text": "*숨을 고른다.* ...들었어. 근데 나 아직 바로 웃긴 좀 힘들어."
+    },
     "after5_confess_react_yuna": {
         "name": "유나",
         "text": "*나란히 걸었다.* ...알고 있었어. ...읽었으면 됐어."
+    },
+    "after5_confess_react_yuna_low": {
+        "name": "유나",
+        "text": "*쪽지를 접어 쥔다.* ...읽었어. 근데 아직 결말은 못 정하겠어."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -220,6 +238,14 @@
         "name": "{name}",
         "text": "*서연이 내민 손끝이 눈앞에 머문다. 지금 말하지 않으면, 또 놓친다.*"
     },
+    "after5_last_chance_seo_low_1": {
+        "name": "{name}",
+        "text": "서연아."
+    },
+    "after5_last_chance_seo_low_2": {
+        "name": "서연",
+        "text": "*서연이 돌아본다. 발끝이 반쯤 돌아가 있다. 금방이라도 갈 수 있게.* ...왜."
+    },
     "after5_last_chance_2_ins11": {
         "name": "{name}",
         "text": "다인아."
@@ -256,6 +282,14 @@
         "name": "다인",
         "text": "그러니까... 말해. 이번엔 끝까지 들을게."
     },
+    "after5_last_chance_dain_low_1": {
+        "name": "{name}",
+        "text": "다인아."
+    },
+    "after5_last_chance_dain_low_2": {
+        "name": "다인",
+        "text": "*다인이 멈추긴 한다. 근데 금방 웃지 못한다.* ...왜."
+    },
     "after5_last_chance_yuna_1": {
         "name": "{name}",
         "text": "유나."
@@ -283,6 +317,14 @@
     "after5_last_chance_yuna_7": {
         "name": "{name}",
         "text": "*이 사람한테는 긴 설명보다 한 줄이면 된다. 문제는 — 내 한 줄이다.*"
+    },
+    "after5_last_chance_yuna_low_1": {
+        "name": "{name}",
+        "text": "유나."
+    },
+    "after5_last_chance_yuna_low_2": {
+        "name": "유나",
+        "text": "*유나가 천천히 돌아본다. 책을 끌어안은 팔에 힘이 들어간다.* ...왜."
     },
     "after5_confess_react_yuna_ins": {
         "name": "{name}",

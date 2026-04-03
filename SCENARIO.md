@@ -6228,6 +6228,7 @@
 
 ### `hidden_nurse_d2_freetalk`
 - 배경: `nurse_room.png`
+- 타입: `free_talk`
 - 다음: `after2_choice`
 
 - 캐릭터: `nurse_normal.png`
@@ -6907,6 +6908,7 @@
 - 호감분기: Seoyeon
   - [50+] → `after2_seo_neck_high`
   - [기본] → `after2_seo_neck_low`
+- 다음(폴백): `after2_seo_neck_low`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 많이 뭉쳤다. 잠깐 가만히 있어 봐.
@@ -7922,6 +7924,7 @@
 
 ### `night2_dain_freetalk`
 - 배경: `room_my.png`
+- 타입: `free_talk`
 - 다음: `night2_hidden_check`
 
 - 캐릭터: `dain_normal.png` @ 0.35
@@ -8001,6 +8004,7 @@
 
 ### `night2_seo_freetalk`
 - 배경: `room_my.png`
+- 타입: `free_talk`
 - 다음: `night2_hidden_check`
 
 - 캐릭터: `seyoun_normal.png` @ 0.35
@@ -8154,6 +8158,7 @@
 
 ### `night2_yuna_freetalk`
 - 배경: `room_my.png`
+- 타입: `free_talk`
 - 다음: `night2_hidden_check`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
@@ -10141,9 +10146,7 @@
 
 ### `morning3_date_dain_decline_narr`
 - 배경: `room_school.png`
-- 분기:
-  - [기본] → `morning3_date_dain_decline_inner`
-  - [기본] → `morning3_date_yuna_1`
+- 다음: `morning3_date_dain_decline_inner`
 
 - 캐릭터: `dain_laugh.png`
 **{name}**: *다인의 반응을 지켜본다. — 종이 치고, 점심 직전의 짧은 틈이 다시 온다.*
@@ -13785,7 +13788,7 @@
 - 배경: `room_my.png`
 - 분기:
   - [`homeroom_day3`] → `morning4_manuscript_check`
-  - [`nurse_route_unlocked && nurse_day4`] → `hidden_nurse_d4_morning_1`
+  - [`nurse_day4`] → `hidden_nurse_d4_morning_1`
   - [기본] → `hidden_nurse_d4_check`
 
 - 캐릭터: `없음`
@@ -14917,6 +14920,7 @@
   - [`accepted_dain_date`] → `date_dain_1`
   - [`accepted_yuna_date`] → `date_yuna_1`
   - [`accepted_seoyeon_date`] → `date_seo_1`
+  - [기본] → `date_seo_1`
 
 - 캐릭터: `없음`
 **{name}**: *거울을 한 번 더 본다. — 됐다. 나가자.*
@@ -17620,7 +17624,7 @@
 - 배경: `room_my.png`
 - 다음: `wall_dain_2`
 
-- 캐릭터: `dain_laugh.png` @ 0.35
+- 캐릭터: `dain_normal.png` @ 0.35
 **다인**: 하하, 오늘 재밌었지!
 
 ---
@@ -21477,6 +21481,7 @@
   - [`route_seoyeon`] → `ending_aff_check_seo`
   - [`route_yuna`] → `ending_aff_check_yuna`
   - [`route_dain`] → `ending_aff_check_dain`
+  - [기본] → `day5_ending_alone`
 
 - 캐릭터: `없음`
 **시스템**: ‹빈›
@@ -22773,6 +22778,7 @@
   - [`route_seoyeon`] → `confess_fail_cg_seo`
   - [`route_yuna`] → `confess_fail_cg_yuna`
   - [`route_dain`] → `confess_fail_cg_dain`
+  - [기본] → `confess_fail_cg_seo`
 
 - 캐릭터: `없음`
 **{name}**: *용기를 냈다. 말했다. — 근데 돌아온 건 고개 숙인 침묵이었다.*
