@@ -723,5 +723,13 @@
     "minsu_warn_15_ins4": {
         "name": "{name}",
         "text": "*— I stop in my tracks.*"
+    },
+    "after2_seo_neck_high_2_ins": {
+        "name": "{name}",
+        "text": "*Her fingertips press lightly at the back of my neck, then slowly let go. For a moment, neither of us says anything.*"
+    },
+    "after2_yuna_everyday_react_ins": {
+        "name": "{name}",
+        "text": "*It doesn't even sound like permission, but somehow it lingers for a long time.*"
     }
 }

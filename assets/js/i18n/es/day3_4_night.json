@@ -299,5 +299,17 @@
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
         "text": "*...Antes y ahora, no soy más que un cobarde que no puede soltar nada.*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*Cuando cierro los ojos, todavía queda la sensación de haber caminado al lado de Seoyeon.*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*Cuando cierro los ojos, todavía permanece el silencio apacible junto a Yuna.*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*Cuando cierro los ojos, la risa de Dain vuelve a mí con un instante de retraso.*"
     }
 }

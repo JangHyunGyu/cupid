@@ -624,5 +624,10 @@
   "hidden_nurse_d4_meal_4_ins2": {
     "name": "{name}",
     "text": "*何言ってんのと返したけど——耳が赤い。また。*"
+  },
+  "morning4_manuscript_check": {},
+  "hidden_homeroom_d4_skip": {
+    "name": "{name}",
+    "text": "*ふと足が止まる。でも、そのまま通り過ぎる。*"
   }
 }

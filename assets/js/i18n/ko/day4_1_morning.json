@@ -624,5 +624,10 @@
     "hidden_nurse_d4_meal_4_ins2": {
         "name": "{name}",
         "text": "*'뭐라는 거야'라고 쏘아붙였지만 — 귀가 빨갛다. 또.*"
+    },
+    "morning4_manuscript_check": {},
+    "hidden_homeroom_d4_skip": {
+        "name": "{name}",
+        "text": "*문득 발길이 멈췄다가, 그대로 지나친다.*"
     }
 }

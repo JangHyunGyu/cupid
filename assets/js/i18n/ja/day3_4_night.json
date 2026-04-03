@@ -299,5 +299,17 @@
   "night3_faithful_reflect_4_ins6": {
     "name": "{name}",
     "text": "*……昔も今も、何一つ手放せない臆病者でしかない。*"
+  },
+  "night3_dream_seo_bonus": {
+    "name": "{name}",
+    "text": "*目を閉じると、ソヨンと並んで歩いていた感覚がまだ残っている。*"
+  },
+  "night3_dream_yuna_bonus": {
+    "name": "{name}",
+    "text": "*目を閉じると、ユナの隣の静かな空気がまだ残っている。*"
+  },
+  "night3_dream_dain_bonus": {
+    "name": "{name}",
+    "text": "*目を閉じると、ダインの笑い声が一拍遅れて浮かんでくる。*"
   }
 }

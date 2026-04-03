@@ -559,5 +559,7 @@
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
         "text": "*Miro la venda en mi mano. — Qué enfermería tan rara. El tipo bueno de rareza.*"
-    }
+    },
+    "after_dain_skip": {},
+    "after_yuna_skip": {}
 }

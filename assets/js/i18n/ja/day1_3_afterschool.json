@@ -559,5 +559,7 @@
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
         "text": "*手の甲の絆創膏を見る。——変な保健室だった。悪くない種類の変さ。*"
-    }
+    },
+    "after_dain_skip": {},
+    "after_yuna_skip": {}
 }

@@ -559,5 +559,7 @@
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
         "text": "*I look at the bandage on my hand. — That was a strange nurse's office. The good kind of strange.*"
-    }
+    },
+    "after_dain_skip": {},
+    "after_yuna_skip": {}
 }

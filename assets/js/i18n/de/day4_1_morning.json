@@ -624,5 +624,10 @@
   "hidden_nurse_d4_meal_4_ins2": {
     "name": "{name}",
     "text": "*Sie hat genervt zurückgeschnappt, aber ihre Ohren sind rot. Schon wieder.*"
+  },
+  "morning4_manuscript_check": {},
+  "hidden_homeroom_d4_skip": {
+    "name": "{name}",
+    "text": "*Meine Schritte stocken kurz, dann gehe ich einfach weiter daran vorbei.*"
   }
 }

@@ -299,5 +299,17 @@
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
         "text": "*...Damals wie heute bin ich nichts weiter als ein Feigling, der nichts loslassen kann.*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*Wenn ich die Augen schließe, ist das Gefühl, neben Seoyeon gegangen zu sein, noch immer da.*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*Wenn ich die Augen schließe, ist die stille Luft an Yunas Seite noch immer da.*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*Wenn ich die Augen schließe, taucht Dains Lachen mit einem halben Takt Verzögerung wieder auf.*"
     }
 }

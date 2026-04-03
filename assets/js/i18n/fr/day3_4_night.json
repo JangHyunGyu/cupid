@@ -299,5 +299,17 @@
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
         "text": "*...Avant comme maintenant, je ne suis qu'un lâche incapable de lâcher quoi que ce soit.*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*Quand je ferme les yeux, la sensation d'avoir marché aux côtés de Seoyeon est encore là.*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*Quand je ferme les yeux, l'air tranquille aux côtés de Yuna est encore là.*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*Quand je ferme les yeux, le rire de Dain me revient avec un léger retard.*"
     }
 }
