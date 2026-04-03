@@ -450,7 +450,7 @@
     },
     "minsu_warn_8": {
         "name": "민수",
-        "text": "야, 나 1년 동안 이 반에 있었어. 서연이가 남한테 먼저 말 거는 거 한 번도 못 봤거든. 다인이가 다른 남자애한테 빵 사준 적도 없고. 유나는 — 쪽지? 아무한테도 안 써."
+        "text": "한 명이면 네 착각일 수도 있어. 근데 셋이 동시에 그러면, 그건 착각 아니야."
     },
     "minsu_warn_8b": {
         "name": "{name}",
@@ -634,15 +634,15 @@
     },
     "after2_seo_sunset_joke_ins": {
         "name": "서연",
-        "text": "...어이없는 말을 이렇게 자연스럽게 하는 사람은 처음이야."
+        "text": "*서류 끝으로 입가를 가리는데도 웃는 게 보인다.*"
     },
     "after2_seo_sunset_react_ins": {
-        "name": "서연",
-        "text": "많이 뭉쳤다. 잠깐 가만히 있어 봐."
+        "name": "{name}",
+        "text": "*그 말 뒤에도 서연의 입꼬리가 한동안 내려오지 않는다.*"
     },
     "after2_seo_neck_react_ins": {
         "name": "서연",
-        "text": "많이 뭉쳤다. 잠깐 가만히 있어 봐."
+        "text": "잠깐만. 움직이지 마."
     },
     "after2_seo_neck_react_ins2": {
         "name": "{name}",
@@ -661,8 +661,8 @@
         "text": "갑자기 뭐야."
     },
     "after2_seo_neck_low_ins2": {
-        "name": "서연",
-        "text": "*손을 거두며* ...아무것도 아냐."
+        "name": "{name}",
+        "text": "*서연의 손이 허공에서 잠깐 멈춘다.*"
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -678,7 +678,7 @@
     },
     "after2_yuna_choice_pre3_ins": {
         "name": "{name}",
-        "text": "*유나가 두 문장을 연속으로 말했다. — 원래 한 줄짜리 사람인데.*"
+        "text": "*유나가 시선을 피하지 않는다. 그 한 문장이 이상하게 오래 남는다.*"
     },
     "after2_yuna_everyday_ins": {
         "name": "유나",
@@ -686,11 +686,11 @@
     },
     "minsu_warn_4_ins": {
         "name": "{name}",
-        "text": "*유나가 아주 작게 웃는다. — 저 사람 때문에 여기 있다는 걸, 인정해야 할 것 같다.*"
+        "text": "*장난처럼 던진 말인데, 민수 눈은 별로 안 웃고 있다.*"
     },
     "minsu_warn_1_ins": {
-        "name": "민수",
-        "text": "*옆에 나란히 서며* 너 요즘 재밌냐?"
+        "name": "{name}",
+        "text": "*민수가 성큼 따라와 옆에 나란히 선다.*"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

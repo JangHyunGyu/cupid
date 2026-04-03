@@ -1353,22 +1353,10 @@
 ### `lunch_dain_1`
 - 배경: `store.png`
 - BGM: `daily2.mp3`
-- 호감분기: Dain
-  - [1+] → `lunch_dain_1_aff_high`
-  - [기본] → `lunch_dain_1_aff_default`
 - 다음: `lunch_dain_1_aff_default`
 
 - 캐릭터: `dain_laugh.png`
 **다인**: 자, 도착! 여기가 매점이야. 뭐 먹을지 골라봐!
-
----
-
-### `lunch_dain_1_aff_high`
-- 배경: `store.png`
-- 다음: `lunch_dain_2`
-
-- 캐릭터: `dain_laugh.png`
-**다인**: 야!! 여기여기!! *매점 진열대를 탁 치며* 아까 자기소개 진짜 웃겼어ㅋㅋ 자, 골라!
 
 ---
 
@@ -1687,22 +1675,10 @@
 ### `lunch_yuna_1`
 - 배경: `library_old.png`
 - BGM: `night1.mp3`
-- 호감분기: Yuna
-  - [1+] → `lunch_yuna_1_aff_high`
-  - [기본] → `lunch_yuna_1_aff_default`
 - 다음: `lunch_yuna_1_aff_default`
 
 - 캐릭터: `yuna_normal.png`
 **{name}**: *유나의 뒷모습을 따라 도서관으로 들어간다. 점심시간에 여기 오는 사람은 거의 없는 것 같다.*
-
----
-
-### `lunch_yuna_1_aff_high`
-- 배경: `library_old.png`
-- 다음: `lunch_yuna_2`
-
-- 캐릭터: `yuna_normal.png`
-**{name}**: *쪽지를 하나 건넨다* "...아까 네가 한 말. 기억나서."
 
 ---
 
@@ -6868,7 +6844,7 @@
 - 다음: `after2_seo_sunset_react`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: ...어이없는 말을 이렇게 자연스럽게 하는 사람은 처음이야.
+**서연**: *서류 끝으로 입가를 가리는데도 웃는 게 보인다.*
 
 ---
 
@@ -6886,7 +6862,7 @@
 - 다음: `after2_seo_9`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: 많이 뭉쳤다. 잠깐 가만히 있어 봐.
+**{name}**: *그 말 뒤에도 서연의 입꼬리가 한동안 내려오지 않는다.*
 
 ---
 
@@ -6913,7 +6889,7 @@
 - 다음: `after2_seo_neck_react_ins2`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: 많이 뭉쳤다. 잠깐 가만히 있어 봐.
+**서연**: 잠깐만. 움직이지 마.
 
 ---
 
@@ -7005,7 +6981,7 @@
 - 다음: `after2_seo_neck_low_2`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: *손을 거두며* ...아무것도 아냐.
+**{name}**: *서연의 손이 허공에서 잠깐 멈춘다.*
 
 ---
 
@@ -7311,7 +7287,7 @@
 - 다음: `after2_yuna_choice`
 
 - 캐릭터: `yuna_normal.png`
-**{name}**: *유나가 두 문장을 연속으로 말했다. — 원래 한 줄짜리 사람인데.*
+**{name}**: *유나가 시선을 피하지 않는다. 그 한 문장이 이상하게 오래 남는다.*
 
 ---
 
@@ -7444,7 +7420,7 @@
 - 다음: `minsu_warn_2`
 
 - 캐릭터: `minsu_normal.png`
-**민수**: *옆에 나란히 서며* 너 요즘 재밌냐?
+**{name}**: *민수가 성큼 따라와 옆에 나란히 선다.*
 
 ---
 
@@ -7480,7 +7456,7 @@
 - 다음: `minsu_warn_5`
 
 - 캐릭터: `minsu_normal.png`
-**{name}**: *유나가 아주 작게 웃는다. — 저 사람 때문에 여기 있다는 걸, 인정해야 할 것 같다.*
+**{name}**: *장난처럼 던진 말인데, 민수 눈은 별로 안 웃고 있다.*
 
 ---
 
@@ -7534,7 +7510,7 @@
 - 다음: `minsu_warn_8b`
 
 - 캐릭터: `minsu_smirk.png`
-**민수**: 야, 나 1년 동안 이 반에 있었어. 서연이가 남한테 먼저 말 거는 거 한 번도 못 봤거든. 다인이가 다른 남자애한테 빵 사준 적도 없고. 유나는 — 쪽지? 아무한테도 안 써.
+**민수**: 한 명이면 네 착각일 수도 있어. 근데 셋이 동시에 그러면, 그건 착각 아니야.
 
 ---
 
@@ -21024,7 +21000,6 @@
   - [`homeroom_day5`] → `ending_start`
   - [`nurse_day5`] → `ending_start`
   - [`day3_has_multiple_dates`] → `after5_set_harem`
-  - [`day3_has_multiple_dates`] → `ending_start`
   - [`route_seoyeon`] → `after5_last_chance_1`
   - [`route_dain`] → `after5_last_chance_1`
   - [`route_yuna`] → `after5_last_chance_1`
@@ -21055,10 +21030,24 @@
 
 ### `after5_last_chance_2`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_2_ins`
+- 다음: `after5_last_chance_route_check`
 
 - 캐릭터: `없음`
 **{name}**: *전 학교에서도 이랬다. 말하지 못했다. 그리고 후회했다. — 이번에도 그럴 건가?*
+
+---
+
+### `after5_last_chance_route_check`
+- 배경: `school_back.png`
+- 분기:
+  - [`route_seoyeon`] → `after5_last_chance_2_ins`
+  - [`route_dain`] → `after5_last_chance_2_ins11`
+  - [`route_yuna`] → `after5_last_chance_yuna_1`
+  - [기본] → `after5_last_chance_choice`
+
+- 캐릭터: `없음`
+
+<!-- i18n -->
 
 ---
 
@@ -21145,10 +21134,10 @@
 
 ### `after5_last_chance_2_ins10`
 - 배경: `school_back.png`
-- 다음: `after5_last_chance_2_ins11`
+- 다음: `after5_last_chance_choice`
 
 - 캐릭터: `seyoun_normal.png`
-**{name}**: *나란히 걸어가며 — 학교를 벗어난다.*
+**{name}**: *서연이 내민 손끝이 눈앞에 머문다. 지금 말하지 않으면, 또 놓친다.*
 
 ---
 
@@ -21220,7 +21209,7 @@
 - 다음: `after5_last_chance_2_ins19`
 
 - 캐릭터: `dain_sad.png`
-**{name}**: *주먹으로 눈을 비빈다. 웃으면서 운다.*
+**{name}**: *다인이 괜히 눈가를 문지른다. 웃고 있는데, 금방이라도 울 것 같다.*
 
 ---
 
@@ -21229,7 +21218,70 @@
 - 다음: `after5_last_chance_choice`
 
 - 캐릭터: `dain_laugh.png`
-**다인**: 아 진짜 왜 울어 — 기쁜 건데 —
+**다인**: 그러니까... 말해. 이번엔 끝까지 들을게.
+
+---
+
+### `after5_last_chance_yuna_1`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_2`
+
+- 캐릭터: `없음`
+**{name}**: 유나.
+
+---
+
+### `after5_last_chance_yuna_2`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_3`
+
+- 캐릭터: `없음`
+**{name}**: *유나가 멈춘다. 책을 가슴 쪽으로 끌어안는다. 돌아보는 데 2초쯤 걸린다.*
+
+---
+
+### `after5_last_chance_yuna_3`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_4`
+
+- 캐릭터: `yuna_normal.png`
+**유나**: ...돌아왔네.
+
+---
+
+### `after5_last_chance_yuna_4`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_5`
+
+- 캐릭터: `없음`
+**{name}**: *준비한 말은 없는데, 이상하게 이번엔 도망치고 싶지 않다. 유나는 재촉하지 않는다.*
+
+---
+
+### `after5_last_chance_yuna_5`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_6`
+
+- 캐릭터: `yuna_shy.png`
+**유나**: ...이번엔, 듣고 갈게.
+
+---
+
+### `after5_last_chance_yuna_6`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_yuna_7`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *짧은 한마디. 근데 그 말이 등을 민다. 유나가 시선을 피하지 않는다.*
+
+---
+
+### `after5_last_chance_yuna_7`
+- 배경: `school_back.png`
+- 다음: `after5_last_chance_choice`
+
+- 캐릭터: `없음`
+**{name}**: *이 사람한테는 긴 설명보다 한 줄이면 된다. 문제는 — 내 한 줄이다.*
 
 ---
 
@@ -21379,7 +21431,7 @@
 - 다음: `after5_confess_no_2`
 
 - 캐릭터: `없음`
-**{name}**: *입술이 움직이지 않는다. 또. — 또 말하지 못했다.*
+**{name}**: *목구멍이 막힌 것처럼 아무 말도 나오지 않는다. 이번에도.*
 
 ---
 
@@ -21388,16 +21440,16 @@
 - 다음: `after5_confess_no_2b`
 
 - 캐릭터: `없음`
-**{name}**: *저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 혼자다.*
+**{name}**: *저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다. — 손에 아무것도 쥐지 못한 채 서 있다.*
 
 ---
 
 ### `after5_confess_no_2b`
 - 배경: `room_my.png`
-- 다음: `day5_ending_alone`
+- 다음: `day5_ending_friend`
 
 - 캐릭터: `없음`
-**{name}**: *집으로 돌아왔다.*
+**{name}**: *끝내 돌아서서 집으로 향했다.*
 
 ---
 
@@ -23118,7 +23170,7 @@
 - 다음: `alone_3`
 
 - 캐릭터: `없음`
-**{name}**: *창밖으로 벚꽃이 진다. 5일 전에 코끝을 스쳤던 그 벚꽃이 지금은 바람에 날려 사라지고 있다.*
+**{name}**: *방 안이 이상할 만큼 조용하다. 아까까지 귓가에 남아 있던 목소리들도, 문 닫히는 소리와 함께 멀어진다.*
 
 ---
 
