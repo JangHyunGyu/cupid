@@ -176,7 +176,6 @@ const _scenes = {
             { "condition": "homeroom_day5", "next": "ending_start" },
             { "condition": "nurse_day5", "next": "ending_start" },
             { "condition": "day3_has_multiple_dates", "next": "after5_set_harem" },
-            { "condition": "day3_has_multiple_dates", "next": "ending_start" },
             { "condition": "route_seoyeon", "next": "after5_last_chance_1" },
             { "condition": "route_dain", "next": "after5_last_chance_1" },
             { "condition": "route_yuna", "next": "after5_last_chance_1" },
@@ -197,7 +196,17 @@ const _scenes = {
     "after5_last_chance_2": {
         "background": "assets/images/background/school_back.png",
         "character": null,
-        "next": "after5_last_chance_2_ins"
+        "next": "after5_last_chance_route_check"
+    },
+    "after5_last_chance_route_check": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "after5_last_chance_2_ins" },
+            { "condition": "route_dain", "next": "after5_last_chance_2_ins11" },
+            { "condition": "route_yuna", "next": "after5_last_chance_yuna_1" },
+            { "next": "after5_last_chance_choice" }
+        ]
     },
     "after5_last_chance_choice": {
         "background": "assets/images/background/school_back.png",
@@ -256,7 +265,7 @@ const _scenes = {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "night": true,
-        "next": "day5_ending_alone"
+        "next": "day5_ending_friend"
     },
     "after5_farewell_seo_6_ins": {
         "background": "assets/images/background/school_hallway.png",
@@ -331,7 +340,7 @@ const _scenes = {
     "after5_last_chance_2_ins10": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after5_last_chance_2_ins11"
+        "next": "after5_last_chance_choice"
     },
     "after5_last_chance_2_ins11": {
         "background": "assets/images/background/school_back.png",
@@ -376,6 +385,41 @@ const _scenes = {
     "after5_last_chance_2_ins19": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "next": "after5_last_chance_choice"
+    },
+    "after5_last_chance_yuna_1": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_yuna_2"
+    },
+    "after5_last_chance_yuna_2": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_yuna_3"
+    },
+    "after5_last_chance_yuna_3": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_last_chance_yuna_4"
+    },
+    "after5_last_chance_yuna_4": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_last_chance_yuna_5"
+    },
+    "after5_last_chance_yuna_5": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_shy.png",
+        "next": "after5_last_chance_yuna_6"
+    },
+    "after5_last_chance_yuna_6": {
+        "background": "assets/images/background/school_back.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "after5_last_chance_yuna_7"
+    },
+    "after5_last_chance_yuna_7": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
         "next": "after5_last_chance_choice"
     },
     "after5_confess_react_yuna_ins": {
