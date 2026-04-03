@@ -192,10 +192,6 @@
         "name": "Dain",
         "text": "¡Llegamos! Esta es la tienda. ¡Elige lo que quieras!"
     },
-    "lunch_dain_1_aff_high": {
-        "name": "Dain",
-        "text": "¡¡Ey!! ¡¡Aquí aquí!! *golpea la estantería* ¡Tu presentación fue buenísima jaja venga, elige!"
-    },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
         "text": "Bueno, ya llegamos. ¿Qué quieres?"
@@ -331,10 +327,6 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Sigo a Yuna hasta la biblioteca. Casi nadie viene aquí durante el almuerzo.*"
-    },
-    "lunch_yuna_1_aff_high": {
-        "name": "{name}",
-        "text": "*Le entrega una nota.* \"...Lo que dijiste antes. Lo recordaba.\""
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",

@@ -341,11 +341,11 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": ""
+        "text": "*Still, this time we're facing the same direction.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": ""
+        "text": "*It may not be a perfect happy ending, but from here, we can start again.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -365,7 +365,7 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*A cherry blossom petal lands on Seoyeon's hair. I'm debating whether to brush it off — and she tilts her head first.*"
+        "text": "*\"...Why aren't you coming?\" Even while grumbling under her breath, she moved at the pace of someone who had waited for me.*"
     },
     "good_4_seo": {
         "name": "{name}",
@@ -373,7 +373,7 @@
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*The cherry blossoms will bloom next year too. We walked side by side.*"
+        "text": "*As we slowly walked past the end of the cherry blossom path, I found myself thinking it. I want to walk this road with her next spring too. This time, I could say it.*"
     },
     "good_2_yuna": {
         "name": "{name}",
@@ -389,7 +389,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*On the rooftop. I want to be remembered as myself, not as a stand-in. Even if it takes time.*"
+        "text": "*Even as we left the rooftop and headed down the stairs, I felt the same. It's okay if it takes more time. This time, I want to read it through to the end and say everything through to the end.*"
     },
     "good_2_dain": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*In front of the school. The last serve hasn't come yet. The game isn't over.*"
+        "text": "*As we walked out past the school gate together, it felt like the last serve had already crossed over. Now it's my turn to receive it.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -445,7 +445,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": ""
+        "text": "*I learned far too late that saying I liked them wasn't enough to protect anything.*"
     },
     "mayhem_7": {
         "name": "System",
@@ -481,7 +481,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*I can pretend to be happy. But even I can't believe this future will end well.*"
     },
     "harem_8": {
         "name": "System",
@@ -501,11 +501,11 @@
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": ""
+        "text": "*My feelings weren't fake. We just still knew too little about each other for them to truly land.*"
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": ""
+        "text": "*One thing makes this failure different from before. At least this time I said it, and that means I can truly let it end.*"
     },
     "confess_fail_5": {
         "name": "System",

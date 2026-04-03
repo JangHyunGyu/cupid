@@ -622,11 +622,11 @@
     },
     "after2_seo_sunset_joke_ins": {
         "name": "Seoyeon",
-        "text": "...Tu es la première personne à sortir une phrase aussi cucul aussi naturellement."
+        "text": "*Même en cachant le coin de ses lèvres derrière les papiers, on voit qu'elle sourit.*"
     },
     "after2_seo_sunset_react_ins": {
-        "name": "Seoyeon",
-        "text": "Ton cou est assez raide. Ne bouge pas une seconde."
+        "name": "{name}",
+        "text": "*Même après ces mots, le léger sourire de Seoyeon reste encore un moment.*"
     },
     "after2_seo_neck_react_ins": {
         "name": "Seoyeon",
@@ -649,8 +649,8 @@
         "text": "C'était quoi, ça, d'un coup ?"
     },
     "after2_seo_neck_low_ins2": {
-        "name": "Seoyeon",
-        "text": "*Retirant sa main* ...C'était rien."
+        "name": "{name}",
+        "text": "*La main de Seoyeon s'arrête un instant dans le vide.*"
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -677,8 +677,8 @@
         "text": "*Les lèvres de Yuna se relèvent imperceptiblement.*"
     },
     "minsu_warn_1_ins": {
-        "name": "Minsu",
-        "text": "*Marchant à côté de moi* Tu t'amuses bien en ce moment ?"
+        "name": "{name}",
+        "text": "*Minsu me rattrape à grands pas et se met à marcher à côté de moi.*"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

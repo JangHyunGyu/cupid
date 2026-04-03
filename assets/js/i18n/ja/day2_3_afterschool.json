@@ -622,11 +622,11 @@
     },
     "after2_seo_sunset_joke_ins": {
         "name": "ソヨン",
-        "text": "…こんな軽い台詞をこんな自然に言える人、初めてだよ"
+        "text": "*書類の端で口元を隠しても、笑っているのがわかる。*"
     },
     "after2_seo_sunset_react_ins": {
-        "name": "ソヨン",
-        "text": "結構凝ってるね。ちょっとじっとしてて"
+        "name": "{name}",
+        "text": "*その言葉のあともしばらく、ソヨンの口元は下がらなかった。*"
     },
     "after2_seo_neck_react_ins": {
         "name": "ソヨン",
@@ -649,8 +649,8 @@
         "text": "急に何？"
     },
     "after2_seo_neck_low_ins2": {
-        "name": "ソヨン",
-        "text": "*手を引きながら* …何でもない"
+        "name": "{name}",
+        "text": "*ソヨンの手が宙で少し止まる。*"
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -677,8 +677,8 @@
         "text": "*ユナの口元がほんのわずかに上がる。*"
     },
     "minsu_warn_1_ins": {
-        "name": "ミンス",
-        "text": "*隣に並んで* 最近楽しそうだな"
+        "name": "{name}",
+        "text": "*ミンスが大股で追いついてきて、隣に並ぶ。*"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

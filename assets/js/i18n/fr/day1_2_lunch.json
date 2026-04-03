@@ -192,10 +192,6 @@
         "name": "Dain",
         "text": "Et voilà ! C’est la boutique. Choisis ce que tu veux !"
     },
-    "lunch_dain_1_aff_high": {
-        "name": "Dain",
-        "text": "Hé !! Par ici !! *tape sur l'étagère* Ton intro était trop drôle mdr allez, choisis !"
-    },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
         "text": "Bon, on y est. Tu veux quoi ?"
@@ -331,10 +327,6 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Je suis Yuna jusqu’à la bibliothèque. Presque personne ne vient ici pendant le déjeuner.*"
-    },
-    "lunch_yuna_1_aff_high": {
-        "name": "{name}",
-        "text": "*Elle tend un mot.* \"...Ce que tu as dit tout à l’heure. Je m’en souviens.\""
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",

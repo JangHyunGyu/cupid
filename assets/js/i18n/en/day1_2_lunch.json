@@ -192,10 +192,6 @@
         "name": "Dain",
         "text": "Here we are! This is the school store. Pick whatever you want!"
     },
-    "lunch_dain_1_aff_high": {
-        "name": "Dain",
-        "text": "Hey!! Over here!! *slaps the shelf* Your intro was hilarious lol go on, pick!"
-    },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
         "text": "Alright, we're here. What do you want?"
@@ -331,10 +327,6 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*I follow Yuna's back into the library. Almost no one comes here during lunch, it seems.*"
-    },
-    "lunch_yuna_1_aff_high": {
-        "name": "{name}",
-        "text": "*She hands over a note.* \"...What you said earlier. I remembered.\""
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",

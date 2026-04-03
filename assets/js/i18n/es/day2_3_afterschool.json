@@ -622,11 +622,11 @@
     },
     "after2_seo_sunset_joke_ins": {
         "name": "Seoyeon",
-        "text": "...Eres la primera persona que dice algo tan absurdo con tanta naturalidad."
+        "text": "*Aunque se cubre la boca con el borde de los papeles, se nota que está sonriendo.*"
     },
     "after2_seo_sunset_react_ins": {
-        "name": "Seoyeon",
-        "text": "Tienes el cuello bastante tenso. Quédate quieto un momento."
+        "name": "{name}",
+        "text": "*Incluso después de decir eso, la comisura de los labios de Seoyeon no baja por un buen rato.*"
     },
     "after2_seo_neck_react_ins": {
         "name": "Seoyeon",
@@ -649,8 +649,8 @@
         "text": "¿Qué fue eso de repente?"
     },
     "after2_seo_neck_low_ins2": {
-        "name": "Seoyeon",
-        "text": "*Retirando la mano* ...No fue nada."
+        "name": "{name}",
+        "text": "*La mano de Seoyeon se detiene un instante en el aire.*"
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -677,8 +677,8 @@
         "text": "*Los labios de Yuna se curvan hacia arriba casi imperceptiblemente.*"
     },
     "minsu_warn_1_ins": {
-        "name": "Minsu",
-        "text": "*Caminando a mi lado* ¿Te diviertes últimamente?"
+        "name": "{name}",
+        "text": "*Minsu se acerca con paso largo y se coloca a mi lado.*"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",
