@@ -5,12 +5,12 @@
     },
     "morning2_start_2": {},
     "morning2_dain_1": {
-        "name": "ダイン",
-        "text": "来た？！おはよう！！"
+        "name": "{name}",
+        "text": "*教室のドアを開けた瞬間——背中に衝撃。*"
     },
     "morning2_dain_2": {
-        "name": "{name}",
-        "text": "……背骨が折れるかと思った"
+        "name": "ダイン",
+        "text": "来た？！おはよう！！"
     },
     "morning2_dain_3": {
         "name": "ダイン",

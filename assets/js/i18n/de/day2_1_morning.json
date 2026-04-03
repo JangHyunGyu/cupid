@@ -5,12 +5,12 @@
     },
     "morning2_start_2": {},
     "morning2_dain_1": {
-        "name": "Dain",
-        "text": "Du bist da?! Guten Morgen!!"
+        "name": "{name}",
+        "text": "*In dem Moment, als ich die Klassentür öffne — ein Schlag in den Rücken.*"
     },
     "morning2_dain_2": {
-        "name": "{name}",
-        "text": "...Du hättest mir fast das Rückgrat gebrochen."
+        "name": "Dain",
+        "text": "Du bist da?! Guten Morgen!!"
     },
     "morning2_dain_3": {
         "name": "Dain",

@@ -102,7 +102,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "next": "morning2_dain_2"
     },
     "morning2_dain_2": {
