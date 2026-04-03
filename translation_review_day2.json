@@ -9020,7 +9020,7 @@
     "after2_nurse_transition": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_nurse_transition",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*그런데 — 체육 시간에 까진 팔꿈치가 욱신거린다. 보건실에 들러야겠다....",
+      "_ko_text_preview": "*팔꿈치가 따끔하다. 보건실에 들러야겠다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_nurse_transition",
@@ -13268,7 +13268,7 @@
     "hidden_nurse_d2_1": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*체육 시간에 팔꿈치가 까졌다. 별거 아닌데 피가 조금 난다.*",
+      "_ko_text_preview": "*소매를 걷어 보니 팔꿈치가 조금 까져 있다. 별거 아닌데 피가 조금 난다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_1",

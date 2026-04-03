@@ -17,7 +17,7 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Mais — l'écorchure au coude de la gym me tracasse depuis tout à l'heure. Je devrais passer à l'infirmerie.*"
+        "text": "*Mon coude me lance un peu. Je devrais passer à l'infirmerie.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Je me suis écorché le coude en sport. Rien de grave, mais ça saigne un peu.*"
+        "text": "*En remontant ma manche, je vois une petite écorchure au coude. Ce n'est rien de grave, mais ça saigne un peu.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Infirmière",

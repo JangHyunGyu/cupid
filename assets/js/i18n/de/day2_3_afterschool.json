@@ -17,7 +17,7 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Aber — die Schürfwunde am Ellbogen vom Sportunterricht stört mich die ganze Zeit. Ich sollte beim Krankenzimmer vorbeischauen.*"
+        "text": "*Mein Ellbogen brennt ein wenig. Ich sollte beim Krankenzimmer vorbeischauen.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Hab mir im Sportunterricht den Ellbogen aufgeschürft. Nichts Schlimmes, aber es blutet ein bisschen.*"
+        "text": "*Als ich den Ärmel hochschiebe, sehe ich eine kleine Schürfwunde am Ellbogen. Nichts Schlimmes, aber es blutet ein bisschen.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Schulkrankenschwester",
