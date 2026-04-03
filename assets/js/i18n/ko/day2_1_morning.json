@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*둘째 날. 어제보다 교복이 조금 편하다. — 발걸음도.*"
     },
-    "morning2_start_2": {
-        "name": "{name}",
-        "text": "*교실 문을 여는 순간 — 등짝에 충격.*"
-    },
+    "morning2_start_2": {},
     "morning2_greet_seo_1": {
         "name": "서연",
         "text": "어제 옥상에서 한 말, 아직 유효한 거지?"

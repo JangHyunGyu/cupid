@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*二日目。昨日より制服が少し楽だ。——足取りも。*"
     },
-    "morning2_start_2": {
-        "name": "{name}",
-        "text": "*教室のドアを開けた瞬間——背中に衝撃。*"
-    },
+    "morning2_start_2": {},
     "morning2_dain_1": {
         "name": "ダイン",
         "text": "来た？！おはよう！！"

@@ -232,11 +232,11 @@
     },
     "after_hidden_nurse_intro_2": {
         "name": "{name}",
-        "text": "*Un panneau Infirmerie sur le mur. — J'y vais ou pas ?*"
+        "text": "*Je repère le panneau de l'infirmerie sur le mur. Faire comme si de rien n'était et rentrer d'un coup ne me paraît plus si malin.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Depuis ce matin, j'ai pas arrêté de rencontrer des gens.*",
+        "text": "*Depuis ce matin, j'ai enchaîné les rencontres sans souffler. Prendre dix minutes pour me poser ne serait pas exagéré.*",
         "choices": [
             "Aller à l'infirmerie",
             "Rentrer directement"
@@ -292,7 +292,7 @@
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",
-        "text": "Pas besoin de me vouvoyer ici. À l'infirmerie, on se détend. — C'est fait pour ça."
+        "text": "Pas besoin de te soucier autant du vouvoiement ici. À l'infirmerie, tu peux relâcher un peu la pression. C'est fait pour ça."
     },
     "after_nurse_enter_9": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Infirmière",
-        "text": "Reviens quand tu veux~ La porte est toujours ouverte. Mais viens pas trop souvent. Tu vas me faire m'inquiéter."
+        "text": "Si le vertige revient, tu peux passer~ L'infirmerie est toujours ouverte. Essaie juste de ne pas attendre d'être à bout avant de venir. Ça, ça m'inquiète."
     },
     "after_nurse_enter_12": {
         "name": "Infirmière",
@@ -314,7 +314,7 @@
         "name": "Infirmière",
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
         "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
-        "personality": "L'infirmière est joueuse et charmeuse mais cache ses vrais sentiments derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout."
+        "personality": "L'infirmière est joueuse et maligne, mais cache sa sincérité derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout avant d'arriver à l'école. Elle commence souvent par détendre l'atmosphère pour que les élèves respirent un peu."
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -434,11 +434,11 @@
     },
     "after_hidden_nurse_intro_ins": {
         "name": "{name}",
-        "text": "*Le panneau de l'infirmerie est là. — Allons voir.*"
+        "text": "*Je m'arrête devant la porte et je prends une longue inspiration. Autant me reposer un peu avant de rentrer.*"
     },
     "after_hidden_nurse_intro_ins2": {
         "name": "{name}",
-        "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant. Rideaux blancs, lits blancs, un petit bureau.*"
+        "text": "*Ma main se pose sur la poignée. Le métal froid contre la paume me ramène un peu à moi.*"
     },
     "after_nurse_enter_2_ins": {
         "name": "{name}",
@@ -482,11 +482,11 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "Infirmière",
-        "text": "*Tendant un verre d'eau* C'est vrai, je suis enseignante. ...J'oublie parfois."
+        "text": "*Tendant un verre d'eau* Oui, je suis enseignante. Mais ici, le plus important, c'est que tu sois à l'aise."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
-        "text": "*Elle oublie parfois. — On dirait une blague, mais il y a une pointe de vérité.*"
+        "text": "*Elle le dit légèrement, mais elle essaie clairement de me détendre un peu.*"
     },
     "after_nurse_enter_9_ins": {
         "name": "{name}",
@@ -522,19 +522,19 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "Infirmière",
-        "text": "*Plissant les yeux* Quand un patient revient sans cesse, évidemment que je m'inquiète. — Parce que je suis enseignante."
+        "text": "*Plissant les yeux* Si tu te sens mal et que tu continues quand même, évidemment que je vais m'inquiéter. C'est précisément pour ça que je suis là."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",
-        "text": "*'Parce que je suis enseignante'. — Cette phrase est comme un bouclier. Elle cache quelque chose derrière le titre d'enseignante.*"
+        "text": "*Elle le dit sur un ton léger, mais la fin résonne avec une franchise inattendue.*"
     },
     "after_nurse_enter_11_ins4": {
         "name": "{name}",
-        "text": "*L'infirmière marque un bref temps d'arrêt. Son sourire revient avec 0,3 seconde de retard.*"
+        "text": "*L'infirmière hausse légèrement les épaules, puis retrouve son sourire facile.*"
     },
     "after_nurse_enter_11_ins5": {
         "name": "Infirmière",
-        "text": "...Tu es un patient perspicace. C'est censé être moi qui m'inquiète."
+        "text": "*Elle n'a pas l'air très habituée à ce qu'on s'inquiète pour elle. — On dirait plutôt quelqu'un qui a l'habitude de veiller sur les autres.*"
     },
     "after_nurse_enter_11_ins6": {
         "name": "{name}",
@@ -566,7 +566,7 @@
     },
     "after_nurse_enter_12_ins": {
         "name": "{name}",
-        "text": "*Un petit rire, mais ses yeux ne rient pas. — Avec cette personne, la frontière entre blague et sincérité est toujours floue.*"
+        "text": "*Elle rit doucement en me saluant de la main. — Elle est taquine, mais on voit qu'elle sait mettre les gens à l'aise.*"
     },
     "after_nurse_enter_12_ins2": {
         "name": "{name}",

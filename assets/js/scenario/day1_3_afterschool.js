@@ -462,7 +462,7 @@ const _scenes = {
     "after_hidden_nurse_intro": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after_hidden_nurse_intro_ins"
+        "next": "after_hidden_nurse_intro_2"
     },
     "after_hidden_nurse_intro_2": {
         "background": "assets/images/background/school_hallway.png",
@@ -473,9 +473,19 @@ const _scenes = {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "choices": [
-            { "next": "after_nurse_enter_1", "stats": {"Nurse":{"affinity":7}} },
+            { "next": "after_hidden_nurse_intro_ins", "stats": {"Nurse":{"affinity":7}} },
             { "next": "after_nurse_skip", "stats": {"Nurse":{"affinity":0}} }
         ]
+    },
+    "after_hidden_nurse_intro_ins": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_hidden_nurse_intro_ins2"
+    },
+    "after_hidden_nurse_intro_ins2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "after_nurse_enter_1"
     },
     "after_nurse_skip": {
         "background": "assets/images/background/school_hallway.png",
@@ -586,16 +596,6 @@ const _scenes = {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "after_miss_yuna_4"
-    },
-    "after_hidden_nurse_intro_ins": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
-        "next": "after_hidden_nurse_intro_ins2"
-    },
-    "after_hidden_nurse_intro_ins2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
-        "next": "after_hidden_nurse_intro_2"
     },
     "after_nurse_enter_2_ins": {
         "background": "assets/images/background/nurse_room.png",
