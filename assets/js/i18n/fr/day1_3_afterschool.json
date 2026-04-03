@@ -118,7 +118,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Frappe à la porte de la salle des professeurs. La professeure principale ouvre.*"
+        "text": "*Je frappe à la porte de la salle des professeurs. Quand elle s'ouvre, j'entre. La professeure principale est la première à croiser mon regard.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Professeure principale",

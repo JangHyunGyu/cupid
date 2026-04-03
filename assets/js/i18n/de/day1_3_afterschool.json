@@ -118,7 +118,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Klopft an die Tür des Lehrerzimmers. Die Klassenlehrerin öffnet.*"
+        "text": "*Ich klopfe an die Tür des Lehrerzimmers. Als sie aufgeht, trete ich ein. Zuerst trifft mein Blick die Klassenlehrerin.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Klassenlehrerin",
