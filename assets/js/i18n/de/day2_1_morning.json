@@ -3,10 +3,7 @@
         "name": "{name}",
         "text": "*Tag zwei. Die Uniform fühlt sich etwas bequemer an als gestern. — Meine Schritte auch.*"
     },
-    "morning2_start_2": {
-        "name": "{name}",
-        "text": "*In dem Moment, als ich die Klassentür öffne — ein Schlag in den Rücken.*"
-    },
+    "morning2_start_2": {},
     "morning2_dain_1": {
         "name": "Dain",
         "text": "Du bist da?! Guten Morgen!!"

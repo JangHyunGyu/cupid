@@ -232,11 +232,11 @@
     },
     "after_hidden_nurse_intro_2": {
         "name": "{name}",
-        "text": "*An der Wand ein Schild: Krankenzimmer. — Soll ich reingehen?*"
+        "text": "*An der Wand hängt das Schild zum Krankenzimmer. So zu tun, als könnte ich einfach durchziehen und heimgehen, wirkt plötzlich nicht mehr besonders klug.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Seit heute Morgen habe ich ohne Pause Leute getroffen.*",
+        "text": "*Seit heute Morgen habe ich ohne Pause Leute getroffen. Zehn Minuten zum Durchatmen wären jetzt wirklich kein Drama.*",
         "choices": [
             "Ins Krankenzimmer gehen",
             "Einfach nach Hause gehen"
@@ -292,7 +292,7 @@
     },
     "after_nurse_enter_8": {
         "name": "Schulkrankenschwester",
-        "text": "Du musst mich hier nicht siezen. Im Krankenzimmer darfst du dich entspannen. — Dafür ist es da."
+        "text": "Du musst hier nicht so sehr auf Förmlichkeit achten. Im Krankenzimmer kannst du ruhig etwas lockerer sein. Genau dafür ist es da."
     },
     "after_nurse_enter_9": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Schulkrankenschwester",
-        "text": "Komm jederzeit vorbei~ Die Tür ist immer offen. Aber komm nicht zu oft. Sonst mache ich mir Sorgen."
+        "text": "Wenn dir wieder schwindelig wird, kannst du vorbeikommen~ Das Krankenzimmer ist immer offen. Warte nur nicht, bis du dich schon komplett durchquälst. Das ist der Teil, der mir Sorgen macht."
     },
     "after_nurse_enter_12": {
         "name": "Schulkrankenschwester",
@@ -314,7 +314,7 @@
         "name": "Schulkrankenschwester",
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
         "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-        "personality": "Die Schulkrankenschwester ist verspielt und charmant, versteckt aber echte Gefühle hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung."
+        "personality": "Die Schulkrankenschwester ist verspielt und schlagfertig, versteckt Aufrichtigkeit aber hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung, die an die Schule gewechselt ist. Sie lockert zuerst die Stimmung, damit sich Schueler entspannen koennen."
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -434,11 +434,11 @@
     },
     "after_hidden_nurse_intro_ins": {
         "name": "{name}",
-        "text": "*Da ist das Schild vom Krankenzimmer. — Schauen wir mal rein.*"
+        "text": "*Vor der Tür bleibe ich kurz stehen und atme einmal tief durch. Bevor ich nach Hause gehe, sollte ich mich lieber kurz hinsetzen.*"
     },
     "after_hidden_nurse_intro_ins2": {
         "name": "{name}",
-        "text": "*Ich öffne die Tür zum Krankenzimmer. Ein leichter Desinfektionsgeruch. Weiße Vorhänge, weiße Betten, ein kleiner Schreibtisch.*"
+        "text": "*Meine Hand legt sich auf die Klinke. Das kalte Metall an der Handfläche holt mich etwas runter.*"
     },
     "after_nurse_enter_2_ins": {
         "name": "{name}",
@@ -482,11 +482,11 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Reicht ein Glas Wasser* Stimmt, bin ich. ...Vergess ich manchmal."
+        "text": "*Reicht mir ein Glas Wasser* Stimmt, ich bin Lehrerin. Aber hier ist wichtiger, dass du dich erst mal wohlfühlst."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
-        "text": "*Vergisst sie manchmal. — Klingt wie ein Scherz, aber da steckt ein Funken Wahrheit drin.*"
+        "text": "*Sie sagt es locker, aber sie versucht ziemlich offensichtlich, mir die Anspannung zu nehmen.*"
     },
     "after_nurse_enter_9_ins": {
         "name": "{name}",
@@ -522,15 +522,15 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Verengt die Augen* Wenn ein Patient immer wiederkommt, mache ich mir natürlich Sorgen. — Weil ich Lehrerin bin."
+        "text": "*Verengt die Augen* Wenn es dir schlecht geht und du trotzdem weiter durchziehst, mache ich mir natürlich Sorgen. Genau dafür bin ich hier."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",
-        "text": "*'Weil ich Lehrerin bin.' — Dieser Satz ist wie ein Schutzschild. Sie versteckt etwas hinter der Bezeichnung 'Lehrerin'.*"
+        "text": "*Sie sagt es beiläufig, aber der letzte Teil bleibt unerwartet direkt hängen.*"
     },
     "after_nurse_enter_11_ins4": {
         "name": "{name}",
-        "text": "*Die Krankenschwester hält kurz inne. Ihr Lächeln kehrt 0,3 Sekunden verspätet zurück.*"
+        "text": "*Die Krankenschwester zuckt leicht mit den Schultern, dann ist das lockere Lächeln wieder da.*"
     },
     "after_nurse_enter_11_ins5": {
         "name": "Schulkrankenschwester",
@@ -538,7 +538,7 @@
     },
     "after_nurse_enter_11_ins6": {
         "name": "{name}",
-        "text": "*Sie wirkt überrascht, dass sich ein Patient um sie sorgt. — Sie war immer die, die sich kümmert, nie die, um die man sich kümmert.*"
+        "text": "*Sie wirkt nicht besonders daran gewöhnt, dass sich jemand um sie sorgt. — Eher wie jemand, der sonst immer selbst auf andere achtet.*"
     },
     "after_nurse_enter_11_ins7": {
         "name": "Schulkrankenschwester",
@@ -566,7 +566,7 @@
     },
     "after_nurse_enter_12_ins": {
         "name": "{name}",
-        "text": "*Ein leichtes Lachen, aber ihre Augen lachen nicht mit. — Bei dieser Person ist die Grenze zwischen Scherz und Ernst immer verschwommen.*"
+        "text": "*Sie lacht leise und winkt mich hinaus. — Sie ist verspielt, aber eindeutig geübt darin, Menschen zu beruhigen.*"
     },
     "after_nurse_enter_12_ins2": {
         "name": "{name}",

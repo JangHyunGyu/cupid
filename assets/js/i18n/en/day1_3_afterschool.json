@@ -232,11 +232,11 @@
     },
     "after_hidden_nurse_intro_2": {
         "name": "{name}",
-        "text": "*There's a sign for the nurse's office on the wall. — Should I go in?*"
+        "text": "*There's a sign for the nurse's office on the wall. Trying to just tough it out suddenly seems like a bad idea.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*I've been meeting people nonstop since this morning.*",
+        "text": "*I've been meeting people nonstop since this morning. Taking ten minutes to sit down wouldn't be that dramatic.*",
         "choices": [
             "Go to the nurse's office",
             "Just go home"
@@ -292,7 +292,7 @@
     },
     "after_nurse_enter_8": {
         "name": "School Nurse",
-        "text": "You don't have to be formal here. The nurse's office is a chill zone. — That's kind of the whole point."
+        "text": "You don't have to worry so much about being formal here. In the nurse's office, you can relax a little. That's what it's for."
     },
     "after_nurse_enter_9": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "after_nurse_enter_11": {
         "name": "School Nurse",
-        "text": "Come by anytime~ The door's always open. But don't come too often. You'll make me worry."
+        "text": "Come by if you feel dizzy again~ The nurse's office is always open. Just don't wait until you're pushing through it. That part makes me worry."
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",
@@ -314,7 +314,7 @@
         "name": "School Nurse",
         "text": "*Chatting with the school nurse in the nurse's office.*",
         "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
-        "personality": "The school nurse is playful and flirtatious but hides genuine feelings behind jokes. Former hospital nurse who burned out. \"Because I'm a teacher\" is her shield — there's always a hidden emotion behind it."
+        "personality": "The school nurse is playful and teasing, but hides sincerity behind jokes. A former hospital nurse who burned out and moved to the school. She's quick to loosen the atmosphere so students can relax first."
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -434,11 +434,11 @@
     },
     "after_hidden_nurse_intro_ins": {
         "name": "{name}",
-        "text": "*There's a nurse's office sign. — Let's check it out.*"
+        "text": "*I stop in front of the door and take a slow breath. I should rest for a minute before heading home.*"
     },
     "after_hidden_nurse_intro_ins2": {
         "name": "{name}",
-        "text": "*I open the nurse's office door. A faint scent of antiseptic. White curtains, white beds, a small desk.*"
+        "text": "*My hand settles on the handle. The metal feels cool against my palm.*"
     },
     "after_nurse_enter_2_ins": {
         "name": "{name}",
@@ -482,11 +482,11 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "School Nurse",
-        "text": "*Handing over a cup of water* Right, I'm a teacher. ...I forget sometimes."
+        "text": "*Handing over a cup of water* Right, I'm a teacher. But in here, you being comfortable comes first."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
-        "text": "*Forgets sometimes. — Sounds like a joke, but there's a sliver of truth in it.*"
+        "text": "*She says it lightly, but she's clearly trying to help me unclench a little.*"
     },
     "after_nurse_enter_9_ins": {
         "name": "{name}",
@@ -522,15 +522,15 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "School Nurse",
-        "text": "*Narrowing her eyes* When a patient keeps coming back, of course I worry. — Because I'm a teacher."
+        "text": "*Narrowing her eyes* If you're feeling bad and keep pushing through it, of course I'm going to worry. That's literally why I'm here."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",
-        "text": "*'Because I'm a teacher.' — That phrase is like a shield. She hides something behind the title of 'teacher.'*"
+        "text": "*She says it casually, but the last part lands with unexpected weight.*"
     },
     "after_nurse_enter_11_ins4": {
         "name": "{name}",
-        "text": "*The nurse pauses briefly. Her smile returns 0.3 seconds late.*"
+        "text": "*The nurse gives a small shrug, and the easy smile slips back into place.*"
     },
     "after_nurse_enter_11_ins5": {
         "name": "School Nurse",
@@ -538,7 +538,7 @@
     },
     "after_nurse_enter_11_ins6": {
         "name": "{name}",
-        "text": "*She looks surprised that a patient worried about her. — That expression sticks with me.*"
+        "text": "*She looks a little unused to having concern directed back at her. — She seems more familiar with being the one who takes care of people.*"
     },
     "after_nurse_enter_11_ins7": {
         "name": "School Nurse",
@@ -566,7 +566,7 @@
     },
     "after_nurse_enter_12_ins": {
         "name": "{name}",
-        "text": "*A light laugh, but her eyes aren't laughing. — With this person, the line between joke and sincerity is always blurred.*"
+        "text": "*She laughs lightly and waves me off. — She's playful, but clearly practiced at making people feel at ease.*"
     },
     "after_nurse_enter_12_ins2": {
         "name": "{name}",

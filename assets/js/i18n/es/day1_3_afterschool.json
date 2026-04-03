@@ -232,11 +232,11 @@
     },
     "after_hidden_nurse_intro_2": {
         "name": "{name}",
-        "text": "*Veo un letrero de Enfermería en la pared. — ¿Entro o no?*"
+        "text": "*Veo el letrero de la enfermería en la pared. Aguantar e irme a casa de una vez ya no parece tan buena idea.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Llevo desde la mañana sin parar de conocer gente.*",
+        "text": "*Llevo desde la mañana sin parar de conocer gente. Tomarme diez minutos para respirar tampoco sería para tanto.*",
         "choices": [
             "Entrar a la enfermería",
             "Ir directamente a casa"
@@ -292,7 +292,7 @@
     },
     "after_nurse_enter_8": {
         "name": "Enfermera",
-        "text": "No hace falta que me hables de usted. En la enfermería, relájate. — Para eso existe este lugar."
+        "text": "Aquí no hace falta que te preocupes tanto por hablarme de usted. En la enfermería puedes relajarte un poco. Para eso está."
     },
     "after_nurse_enter_9": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Enfermera",
-        "text": "Vuelve cuando quieras~ La puerta siempre está abierta. Pero no vengas tanto. Me preocuparé."
+        "text": "Si te vuelve el mareo, puedes venir~ La enfermería siempre está abierta. Solo no esperes hasta estar aguantando a la fuerza. Eso sí me preocupa."
     },
     "after_nurse_enter_12": {
         "name": "Enfermera",
@@ -314,7 +314,7 @@
         "name": "Enfermera",
         "text": "*Conversando con la enfermera en la enfermería.*",
         "context": "Día 1 después de clases. El estudiante nuevo se mareó y visitó la enfermería. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
-        "personality": "La enfermera es juguetona y coqueta pero esconde sentimientos reales detrás de bromas. Ex enfermera de hospital que sufrió burnout."
+        "personality": "La enfermera es juguetona y algo traviesa, pero esconde su sinceridad detrás de bromas. Ex enfermera de hospital que sufrió burnout y terminó en la escuela. Suele aflojar primero el ambiente para que los estudiantes se sientan cómodos."
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -434,11 +434,11 @@
     },
     "after_hidden_nurse_intro_ins": {
         "name": "{name}",
-        "text": "*Ahí está el cartel de la enfermería. — Vamos a echar un vistazo.*"
+        "text": "*Me detengo frente a la puerta y respiro hondo una vez. Será mejor descansar un poco antes de irme.*"
     },
     "after_hidden_nurse_intro_ins2": {
         "name": "{name}",
-        "text": "*Abro la puerta de la enfermería. Un leve olor a desinfectante. Cortinas blancas, camas blancas, un pequeño escritorio.*"
+        "text": "*Apoyo la mano en el pomo. El metal frío se pega a la palma.*"
     },
     "after_nurse_enter_2_ins": {
         "name": "{name}",
@@ -482,11 +482,11 @@
     },
     "after_nurse_enter_8_ins2": {
         "name": "Enfermera",
-        "text": "*Entregando un vaso de agua* Sí, soy profesora. ...A veces se me olvida."
+        "text": "*Entregando un vaso de agua* Sí, soy profesora. Pero aquí lo primero es que tú estés cómodo."
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
-        "text": "*A veces se le olvida. — Parece una broma, pero tiene un matiz de verdad.*"
+        "text": "*Lo dice en tono ligero, pero está claro que intenta que me destense un poco.*"
     },
     "after_nurse_enter_9_ins": {
         "name": "{name}",
@@ -522,15 +522,15 @@
     },
     "after_nurse_enter_11_ins2": {
         "name": "Enfermera",
-        "text": "*Entornando los ojos* Si un paciente sigue viniendo, claro que me preocupo. — Porque soy profesora."
+        "text": "*Entornando los ojos* Si te sientes mal y aun así sigues aguantando, claro que voy a preocuparme. Para eso estoy aquí."
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",
-        "text": "*'Porque soy profesora'. — Esa frase es como un escudo. Esconde algo detrás del título de 'profesora'.*"
+        "text": "*Lo dice como si nada, pero la última parte pesa más de lo que esperaba.*"
     },
     "after_nurse_enter_11_ins4": {
         "name": "{name}",
-        "text": "*La enfermera se detiene un instante. Su sonrisa vuelve con 0,3 segundos de retraso.*"
+        "text": "*La enfermera se encoge de hombros y la sonrisa fácil regresa enseguida.*"
     },
     "after_nurse_enter_11_ins5": {
         "name": "Enfermera",
@@ -538,7 +538,7 @@
     },
     "after_nurse_enter_11_ins6": {
         "name": "{name}",
-        "text": "*Parece sorprendida de que un paciente se preocupe por ella. — Siempre ha sido la que cuida, nunca la que recibe cuidados.*"
+        "text": "*No parece muy acostumbrada a que la preocupación vaya en su dirección. — Parece más bien alguien acostumbrada a cuidar a otros.*"
     },
     "after_nurse_enter_11_ins7": {
         "name": "Enfermera",
@@ -566,7 +566,7 @@
     },
     "after_nurse_enter_12_ins": {
         "name": "{name}",
-        "text": "*Se ríe suavemente, pero sus ojos no ríen. — Con esta persona, la línea entre broma y sinceridad siempre es difusa.*"
+        "text": "*Se ríe suave y me despide con la mano. — Es juguetona, pero se nota que sabe cómo tranquilizar a la gente.*"
     },
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
