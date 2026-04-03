@@ -5,7 +5,7 @@
     },
     "morning5_start_2": {
         "name": "{name}",
-        "text": "*Le dernier événement. Tout le temps accumulé jusqu'à présent se rassemble aujourd'hui.*"
+        "text": "*Le dernier événement. Tout ce qui s'est accumulé jusqu'ici mène à aujourd'hui.*"
     },
     "morning5_mood_check": {
         "name": "Système",
@@ -41,7 +41,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Si tu essaies de fuir, je serai vraiment en colère ?"
+        "text": "Si tu essaies de filer, je vais vraiment me fâcher."
     },
     "morning5_end": {
         "name": "{name}",
@@ -131,11 +131,11 @@
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "Et si j'ai pas mal ?"
+        "text": "Et si je venais même sans être blessé ?"
     },
     "hidden_nurse_d5_4": {
-        "name": "L'infirmière",
-        "text": "...Appuie bien pour que le pansement tienne. — Aujourd'hui, je ne te le mettrai pas moi-même."
+        "name": "Infirmière scolaire",
+        "text": "...Appuie bien pour qu'il ne se décolle pas. — Aujourd'hui, je ne te le mettrai pas moi-même."
     },
     "hidden_nurse_d5_5": {
         "name": "Infirmière scolaire",
@@ -145,8 +145,8 @@
         "name": "{name}",
         "text": "*Je ne suis pas blessé. Elle le sait. Elle demande quand même.*",
         "choices": [
-            "Oui, puisque c'est la dernière fois. Juste une.",
-            "Pas un pansement — votre numéro"
+            "Oui, puisque c'est la dernière fois. Juste cette fois.",
+            "Pas un pansement — votre numéro de téléphone."
         ]
     },
     "hidden_nurse_d5_choice_a": {
@@ -228,7 +228,7 @@
         "text": "*Elle tend l'enveloppe. — Sa main tremble légèrement.*"
     },
     "hidden_homeroom_d5_6_ins3": {
-        "name": "Professeur principal",
+        "name": "Professeure principale",
         "text": "...Lis-le et dis-moi franchement ce que tu en penses. — Pas besoin d'être poli avec moi."
     },
     "hidden_homeroom_d5_6_ins4": {
@@ -277,7 +277,7 @@
     },
     "hidden_homeroom_d5_6_ins15": {
         "name": "{name}",
-        "text": "*Une ligne. — Quelqu'un qui a échoué trois fois à ses débuts littéraires attend l'avis d'un élève en une seule ligne. Si ce n'est pas une déclaration, qu'est-ce que c'est ?*"
+        "text": "*Une seule ligne. — Quelqu'un qui s'est fait recaler trois fois avant de pouvoir débuter attend l'impression en une ligne d'un élève. Si ce n'est pas une déclaration, qu'est-ce que c'est ?*"
     },
     "hidden_homeroom_d5_6_ins16": {
         "name": "{name}",

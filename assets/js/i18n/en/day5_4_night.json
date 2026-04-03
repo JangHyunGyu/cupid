@@ -317,15 +317,15 @@
     },
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Her family hasn't gotten better. Her mother's calls are still cold, and the rehearsed smiles haven't stopped. — But now there's someone she can show her unguarded face to. That's enough.*"
+        "text": "*Her family hasn't grown warmer. Her mother's calls are still cold, and the rehearsed smiles in front of the mirror haven't stopped. — But now she has someone she can show an expression she didn't rehearse to.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*The person who left hasn't come back. The senior's number is still gone, and the corner seat in the library is still empty. — But now there's someone she can speak to with her voice, not just notes. Not anymore.*"
+        "text": "*The person who disappeared hasn't come back. The senior's contact info is still gone, and the corner seat in the library is still empty. — But now she has someone she can speak to with her own voice instead of notes.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*The knee hasn't healed. She still wraps the bandage every morning, and the alarm memo still has two exclamation marks. — But now there's someone who'll listen when her sentences end with a period. Not anymore.*"
+        "text": "*Her knee still isn't better. She still wraps it every morning, and her alarm memo still has two exclamation marks. — But now she has someone who'll listen when her sentences end with a period.*"
     },
     "true_epilogue_7": {
         "name": "System",
@@ -333,11 +333,11 @@
     },
     "day5_ending_good": {
         "name": "{name}",
-        "text": "*I might have given someone hope and then taken it away. I'm sorry.*"
+        "text": "*Just saying 'I like you' didn't magically fix everything. Even so, we chose not to end it here.*"
     },
     "good_1": {
         "name": "{name}",
-        "text": "*I took one step closer.*"
+        "text": "*We were clumsy, late, and missed each other more than once.*"
     },
     "good_1b": {
         "name": "{name}",
@@ -349,43 +349,43 @@
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Looking at someone else — I’ll make you pay for that the rest of your life. — With interest."
+        "text": "It won't be perfect. Not for you, not for me. ...But this time, don't let go halfway through."
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...You really are clueless. But since you came back, I can let it go."
+        "text": "...You were late. Still, this time I read your sentence all the way to the end."
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Hey, I was seriously angry, you know? ...But you came to me in the end. That’s enough."
+        "text": "Hey, it's true I'm not completely over it yet. ...But I'm at least at the point where I can throw you the ball again."
     },
     "good_2_seo": {
         "name": "{name}",
-        "text": "*The cherry blossom path. Seoyeon stands a step ahead of me. She looks back.*"
+        "text": "*At the end of the cherry blossom path, Seoyeon stops half a step ahead of me. When she looks back, her gaze is softer than it used to be.*"
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*\"...Why aren't you coming?\" Even while grumbling under her breath, she moved at the pace of someone who had waited for me.*"
+        "text": "*\"...Why aren't you coming?\" She mutters it under her breath, but it's the pace of someone who waited for me.*"
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*She pretends to be perfect, but I wasn't perfect either.*"
+        "text": "*I smiled, and Seoyeon pretended not to notice before the corner of her mouth lifted just a little.*"
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*As we slowly walked past the end of the cherry blossom path, I found myself thinking it. I want to walk this road with her next spring too. This time, I could say it.*"
+        "text": "*As we walked slowly past the end of the cherry blossom path, I found myself thinking I wanted to walk this road with her next spring too. This time, I could say that out loud.*"
     },
     "good_2_yuna": {
         "name": "{name}",
-        "text": "*The rooftop. Yuna leans against the railing. The wind scatters her hair.*"
+        "text": "*The rooftop. Yuna leans against the railing. Even with the wind blowing, she doesn't turn away first today.*"
     },
     "good_3_yuna": {
         "name": "{name}",
-        "text": "*Yuna hands me a note. \"Don't get lost next time.\" — Short. And warm.*"
+        "text": "*We look at the same sky. She doesn't say much, but the silence isn't cold the way it used to be.*"
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*I was chasing the shadow of someone who disappeared.*"
+        "text": "*I want to be remembered not as a stand-in, but as the person standing here right now. Yuna does too. So do I.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -393,15 +393,15 @@
     },
     "good_2_dain": {
         "name": "{name}",
-        "text": "*In front of the school gate. Dain is tossing a volleyball, waiting.*"
+        "text": "*In front of the school gate, Dain bounces the volleyball once and, this time without joking around, tosses it my way.*"
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Dain throws the volleyball. I catch it. — This is her way of making up.*"
+        "text": "*I catch it. Only then does Dain smile. Making up always looks like this with her.*"
     },
     "good_4_dain": {
         "name": "{name}",
-        "text": "*She ran even when her knees hurt.*"
+        "text": "*Her knee still hurts, and neither of us has sorted everything out completely. Even so, we can still try running side by side.*"
     },
     "good_5_dain": {
         "name": "{name}",
@@ -787,15 +787,15 @@
     },
     "hidden_true_nurse_6": {
         "name": "School Nurse",
-        "text": "So, once graduation is over — come see me again. Not at the nurse's office, but here. Let's meet as *me*, not as your teacher."
+        "text": "So once the graduation ceremony is over — come see me again. Not at the nurse's office. Here. Next time, meet me not as the school nurse, but as me."
     },
     "hidden_true_nurse_7": {
-        "name": "School Nurse",
-        "text": "...You're the first person to see through me."
+        "name": "{name}",
+        "text": "*Even after we left the cafe, our hands didn't part easily. By the time I came to my senses, we were standing in front of her house, not the nurse's office.*"
     },
     "hidden_true_nurse_8": {
         "name": "School Nurse",
-        "text": "Now we can meet without bandages. — No excuses needed."
+        "text": "Come by even if you don't have to pretend you're hurt anymore. — I'd like that better."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
@@ -883,7 +883,7 @@
     },
     "good_1_yuna_b": {
         "name": "{name}",
-        "text": "*Yuna hands over a note. Don't get lost next time. — Short. And warm.*"
+        "text": "*Yuna hands me a folded note. When I open it, there's just one line: 'Next time, don't disappear.'*"
     },
     "good_epilogue_1": {
         "name": "{name}",
@@ -1059,7 +1059,7 @@
     },
     "hidden_true_nurse_2_ins": {
         "name": "{name}",
-        "text": "*Not a teacher — just a woman.*"
+        "text": "*Not the school nurse — just a woman.*"
     },
     "hidden_true_nurse_2_ins2": {
         "name": "School Nurse",
@@ -1075,7 +1075,7 @@
     },
     "hidden_true_nurse_8_ins2": {
         "name": "{name}",
-        "text": "*Graduation erases the line. — In a cafe instead of the nurse's office, with a person instead of a teacher.*"
+        "text": "*The date called graduation erases the line. — In a cafe instead of the nurse's office, with a person instead of a role.*"
     },
     "hidden_true_nurse_8_ins3": {
         "name": "{name}",
@@ -1103,7 +1103,7 @@
     },
     "hidden_true_nurse_5_ins2": {
         "name": "School Nurse",
-        "text": "A teacher shouldn't catch feelings for a student. I knew that. — So I kept wrapping everything in jokes. Over and over."
+        "text": "I knew I wasn't supposed to have feelings for a student. — So I kept dressing it up as a joke. Over and over."
     },
     "hidden_true_nurse_5_ins3": {
         "name": "School Nurse",
@@ -1118,16 +1118,16 @@
         "text": "*The school nurse pauses. — Then smiles. Not a playful smile.*"
     },
     "hidden_true_nurse_7_ins": {
-        "name": "{name}",
-        "text": "*The nurse reaches out and touches the band-aid on the back of my hand. The same band-aid she put on this morning.*"
+        "name": "School Nurse",
+        "text": "...You're the first one who's seen right through me."
     },
     "hidden_true_nurse_7_ins2": {
-        "name": "School Nurse",
-        "text": "Now we can meet without bandages. — No excuses needed."
+        "name": "{name}",
+        "text": "*The school nurse reaches out and touches the bandage on the back of my hand. The same one she put on this morning.*"
     },
     "hidden_true_nurse_7_ins3": {
         "name": "{name}",
-        "text": "*The person who needed excuses. — The title of 'teacher' was both her excuse and her wall. That wall disappeared today.*"
+        "text": "*She was someone who needed an excuse. — Her role at school had been both her excuse and her wall. Today, that wall disappeared.*"
     },
     "hidden_good_nurse_2_ins": {
         "name": "{name}",
@@ -1147,19 +1147,19 @@
     },
     "good_1_seo_ins": {
         "name": "{name}",
-        "text": "*A cherry blossom petal lands on Seoyeon's hair. I'm debating whether to brush it off — when Seoyeon tilts her head first.*"
+        "text": "*Seoyeon brushes at the end of my sleeve the way she'd flick off a cherry blossom petal. It's a brusque touch, but not one that pushes me away.*"
     },
     "good_1_seo_ins2": {
         "name": "{name}",
-        "text": "*She pretends to be perfect, but I wasn't perfect either.*"
+        "text": "*Her words are short, but our steps fall into sync. For today, that feels like enough.*"
     },
     "good_1_seo_ins3": {
         "name": "{name}",
-        "text": "*The cherry blossoms will bloom again next year. We walked side by side.*"
+        "text": "*What Seoyeon and I have is only just beginning to take shape. Unsteady, but not broken.*"
     },
     "good_1_yuna_b_ins": {
         "name": "{name}",
-        "text": "*She was chasing the shadow of someone who disappeared.*"
+        "text": "*It's a short sentence, but this time it reads like a request.*"
     },
     "bitter_seo_2_ins": {
         "name": "{name}",

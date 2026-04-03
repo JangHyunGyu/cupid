@@ -5,7 +5,7 @@
     },
     "morning5_start_2": {
         "name": "{name}",
-        "text": "*El último evento. Todo el tiempo acumulado hasta ahora converge hoy.*"
+        "text": "*El último evento. Todo lo que se ha ido acumulando hasta ahora desemboca hoy.*"
     },
     "morning5_mood_check": {
         "name": "Sistema",
@@ -41,7 +41,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "¡Si intentas huir, me voy a enfadar de verdad!"
+        "text": "¡Como intentes escaparte, me enfado de verdad!"
     },
     "morning5_end": {
         "name": "{name}",
@@ -131,11 +131,11 @@
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "¿Y si no me lastimo?"
+        "text": "¿Y si vengo aunque no me haya hecho daño?"
     },
     "hidden_nurse_d5_4": {
         "name": "Enfermera",
-        "text": "...asegúrate de presionar bien para que la tirita no se caiga. — Hoy no te la pondré yo."
+        "text": "...Asegúrate de apretarla bien para que no se despegue. — Hoy no te la voy a poner yo."
     },
     "hidden_nurse_d5_5": {
         "name": "Enfermera",
@@ -145,7 +145,7 @@
         "name": "{name}",
         "text": "*No estoy herido. Ella lo sabe. Pregunta de todas formas.*",
         "choices": [
-            "Sí, ya que es la última vez. Solo una.",
+            "Sí, ya que es la última vez. Solo esta vez.",
             "No una tirita — su número de teléfono"
         ]
     },
@@ -228,7 +228,7 @@
         "text": "*Extiende el sobre. — Le tiembla un poco la mano.*"
     },
     "hidden_homeroom_d5_6_ins3": {
-        "name": "Profesor/a",
+        "name": "Profesora",
         "text": "...léelo y luego dime con sinceridad. — No tienes que guardarme las formas."
     },
     "hidden_homeroom_d5_6_ins4": {
@@ -277,7 +277,7 @@
     },
     "hidden_homeroom_d5_6_ins15": {
         "name": "{name}",
-        "text": "*Una línea. — Alguien que fracasó tres veces en su debut literario espera la reseña de una línea de un alumno. Si esto no es una confesión, ¿qué es?*"
+        "text": "*Una sola línea. — Alguien a quien rechazaron tres veces antes de poder debutar está esperando la impresión de un alumno en una sola línea. Si esto no es una confesión, ¿qué es?*"
     },
     "hidden_homeroom_d5_6_ins16": {
         "name": "{name}",
