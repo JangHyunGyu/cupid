@@ -95,6 +95,14 @@
         "name": "{name}",
         "text": "*昼に無理やり笑ってやり過ごしたひびが、まだそのまま残っている。今夜は一人だけで終われそうにない。*"
     },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*誰も先に口を開けないまま、私たちは校舎裏を離れた。*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*無理に覆い隠した亀裂を抱えたまま、足は公園のほうへ向かった。*"
+    },
     "after5_last_chance_1": {
         "name": "{name}",
         "text": "*足が止まる。夕日が背中の後ろに長い影を作る。*"
@@ -142,6 +150,14 @@
     "after5_confess_react_yuna_low": {
         "name": "ユナ",
         "text": "*折りたたんだメモを握る。* ...読んだ。でも、まだ結末は決められない。"
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*これ以上の言葉は出てこなかった。日がさらに傾き、私たちはしばらく同じ方向に歩くだけだった。*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*結論の出ない気持ちを抱えたまま、足は公園へ続いていった。*"
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

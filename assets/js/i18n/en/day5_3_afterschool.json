@@ -95,6 +95,14 @@
         "name": "{name}",
         "text": "*I walked past the back of the school and headed toward the park. Tonight doesn't feel like it's going to end with just one person.*"
     },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*None of us could speak first as we left the back of the school.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*Carrying the crack we had forced shut, our steps turned toward the park.*"
+    },
     "after5_last_chance_1": {
         "name": "{name}",
         "text": "*My feet stop. The setting sun casts a long shadow behind me.*"
@@ -142,6 +150,14 @@
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
         "text": "*She folds the note in her hand.* ...I read it. But I still can't decide on the ending."
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*No more words came. As the sun sank lower, we just walked in the same direction for a while.*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*With no answer yet between us, our steps carried us to the park.*"
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

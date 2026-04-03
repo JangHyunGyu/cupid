@@ -107,6 +107,14 @@
         "name": "{name}",
         "text": "*점심때 억지로 웃으며 넘긴 균열이 아직 그대로다. 누구 하나로 끝낼 수 없는 밤이 될 것 같다.*"
     },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*아무도 먼저 말을 꺼내지 못한 채, 우리는 학교 뒤편을 벗어났다.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*억지로 덮어 둔 균열을 안은 채, 발걸음은 공원 쪽으로 향했다.*"
+    },
     "after5_last_chance_1": {
         "name": "{name}",
         "text": "*걸음이 멈춘다. 석양이 등 뒤로 길게 그림자를 만든다.*"
@@ -161,6 +169,14 @@
     "after5_confess_react_yuna_low": {
         "name": "유나",
         "text": "*쪽지를 접어 쥔다.* ...읽었어. 근데 아직 결말은 못 정하겠어."
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*더 할 말은 떠오르지 않았다. 해가 더 내려앉고, 우리는 잠시 같은 방향으로 걷기만 했다.*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*결론이 나지 않은 마음을 안은 채, 발걸음은 공원으로 이어졌다.*"
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
