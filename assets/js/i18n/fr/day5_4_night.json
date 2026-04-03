@@ -533,11 +533,27 @@
     },
     "friend_3": {
         "name": "{name}",
+        "text": "*Il y a bien eu des moments où j'aurais pu dire que je l'aimais. Et pourtant, encore une fois, j'ai choisi l'expression la plus sûre.*"
+    },
+    "friend_route_check": {
+        "name": "Système",
         "text": ""
     },
     "friend_4": {
         "name": "{name}",
         "text": "*En sortant du portail, il y a un message sur mon téléphone. 'Merci pour aujourd'hui lol' — Le ton d'un ami. Un ton parfaitement amical.*"
+    },
+    "friend_4_seo": {
+        "name": "{name}",
+        "text": "*En sortant du portail, un message arrive. 'Grâce à toi, aujourd'hui était moins gênant. Rentre bien.' C'est gentil, mais sans aucune faille. Le ton exact de quelqu'un qui choisit la ligne et s'y tient.*"
+    },
+    "friend_4_yuna": {
+        "name": "{name}",
+        "text": "*En sortant du portail, un message arrive. '...Merci. Pour aujourd'hui.' C'est court. Il y a un point à la fin. Une phrase qui m'aurait fait chavirer avant ressemble maintenant à une frontière.*"
+    },
+    "friend_4_dain": {
+        "name": "{name}",
+        "text": "*En sortant du portail, un message arrive. 'Hé, rentre bien ! Merci pour aujourd'hui !' Les points d'exclamation sont revenus. C'est rassurant, et pourtant plus froid. Ce sont des points d'exclamation envoyés à une amie.*"
     },
     "friend_5": {
         "name": "{name}",

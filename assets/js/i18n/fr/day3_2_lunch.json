@@ -99,7 +99,7 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*On a partagé à trois. Gênant, mais — pas mal. Personne ne s'est fâché. Étrangement, il semble qu'un monde où c'est possible existe vraiment.*"
+        "text": "*On a partagé à trois. Personne ne s'est fâché sur-le-champ. Pourtant, personne n'avait l'air à l'aise. On a seulement repoussé ça à plus tard.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*J'ai proposé de tout partager. Un peu gênant, mais pas désagréable. Toutes les trois sourient. Sincèrement ou non, impossible à dire.*"
+        "text": "*J'ai dit qu'on devrait partager entre nous. Il y a des sourires, mais l'air est étrangement lourd. Toutes les trois font semblant que tout va bien.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
