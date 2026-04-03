@@ -3,6 +3,18 @@
         "name": "System",
         "text": ""
     },
+    "hidden_dual_route_1": {
+        "name": "{name}",
+        "text": "*Am Ende bleibt nicht nur die Stimme eines einzigen Menschen. Der Umschlag aus dem Klassenraum und das Pflaster auf meinem Handrücken tauchen gemeinsam vor mir auf.*"
+    },
+    "hidden_dual_route_choice": {
+        "name": "{name}",
+        "text": "*Diesmal muss ich sogar das entscheiden.*",
+        "choices": [
+            "Zu der Person gehen, die mir das Manuskript gegeben hat",
+            "Zu der Person gehen, die eine Antwort auf meinem Handrücken hinterlassen hat"
+        ]
+    },
     "ending_affinity_check": {
         "name": "System",
         "text": ""
@@ -41,7 +53,7 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Zum ersten Mal nimmt sie die Brille ab — und weint.*"
+        "text": "*Ihre Augen sind ganz feucht. Trotzdem weicht ihr Blick nicht aus.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",

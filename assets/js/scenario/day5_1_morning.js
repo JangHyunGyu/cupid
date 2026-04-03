@@ -72,8 +72,8 @@ Object.assign(SCENARIO[5], {
         "next": "morning5_seo_note_1_ins4"
     },
     "morning5_seo_note_1_ins4": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
         "next": "morning5_yuna_story_1"
     },
     "morning5_yuna_story_1": {
@@ -528,12 +528,26 @@ Object.assign(SCENARIO[5], {
     "hidden_nurse_d5_6_ins4": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d5_7"
+        "next": "hidden_nurse_d5_flag_check"
+    },
+    "hidden_nurse_d5_flag_check": {
+        "background": "assets/images/background/school_hallway.png",
+        "branches": [
+            { "condition": "homeroom_day5", "next": "hidden_nurse_d5_7_both" },
+            { "next": "hidden_nurse_d5_7" }
+        ]
     },
     "hidden_nurse_d5_7": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
         "setFlags": ["nurse_day5"],
+        "stats": {"Nurse":{"affinity":7}},
+        "next": "hidden_nurse_d5_freetalk"
+    },
+    "hidden_nurse_d5_7_both": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/nurse_normal.png",
+        "setFlags": ["nurse_day5","both_hidden_day5"],
         "stats": {"Nurse":{"affinity":7}},
         "next": "hidden_nurse_d5_freetalk"
     },

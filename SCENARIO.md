@@ -3550,6 +3550,7 @@
 
 ### `night_seo_freetalk`
 - 배경: `room_my.png`
+- 야간: true
 - 타입: `free_talk`
 - 다음: `night_end_1`
 - 컨텍스트: "첫날 밤, 메신저로 서연과 연락 중. 서연이 먼저 연락을 해왔다. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주."
@@ -3598,6 +3599,7 @@
 
 ### `night_yuna_freetalk`
 - 배경: `room_my.png`
+- 야간: true
 - 타입: `free_talk`
 - 다음: `night_end_1`
 - 컨텍스트: "첫날 밤, 메신저로 유나와 연락 중. 유나가 먼저 연락을 해왔다. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주."
@@ -3655,6 +3657,7 @@
 
 ### `night_dain_freetalk`
 - 배경: `room_my.png`
+- 야간: true
 - 타입: `free_talk`
 - 다음: `night_end_1`
 - 컨텍스트: "첫날 밤, 메신저로 다인과 연락 중. 다인이 먼저 연락을 해왔다. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주."
@@ -8203,6 +8206,7 @@
 
 ### `night2_dain_freetalk`
 - 배경: `room_my.png`
+- 야간: true
 - 타입: `free_talk`
 - 다음: `night2_hidden_check`
 - 컨텍스트: "Day 2 밤, 다인과 메신저로 대화 중. 톤: 어제보다 가까워진 사이. 장난과 티키타카가 자연스럽다. 밀당 시작. 무거운 이야기는 아직 없다."
@@ -8285,6 +8289,7 @@
 
 ### `night2_seo_freetalk`
 - 배경: `room_my.png`
+- 야간: true
 - 타입: `free_talk`
 - 다음: `night2_hidden_check`
 - 컨텍스트: "Day 2 밤, 서연과 메신저로 대화 중. 어제보다 대화가 자연스러워졌다. 톤: 어제보다 가까워진 사이. 장난과 티키타카가 자연스럽다. 밀당 시작. 무거운 이야기는 아직 없다."
@@ -8441,6 +8446,7 @@
 
 ### `night2_yuna_freetalk`
 - 배경: `room_my.png`
+- 야간: true
 - 타입: `free_talk`
 - 다음: `night2_hidden_check`
 - 컨텍스트: "Day 2 밤, 유나와 메신저로 대화 중. 평소보다 말이 많다. 톤: 어제보다 가까워진 사이. 장난과 티키타카가 자연스럽다. 밀당 시작. 무거운 이야기는 아직 없다."
@@ -17504,7 +17510,7 @@
 - 다음: `wall_seo_hug_choice`
 
 - 캐릭터: `seyoun_cry.png`
-**{name}**: *서연이 말을 멈췄다. 손이 무릎 위에서 꽉 쥐어져 있다.*
+**{name}**: *서연이 올려다본다. 무너진 표정을 이제는 숨길 생각이 없는 얼굴이다.*
 
 ---
 
@@ -19640,11 +19646,11 @@
 ---
 
 ### `morning5_seo_note_1_ins4`
-- 배경: `room_school.png`
+- 배경: `school_hallway.png`
 - 다음: `morning5_yuna_story_1`
 
-- 캐릭터: `dain_normal.png`
-**{name}**: *교실로 돌아오니 다인이 기다리고 있다.*
+- 캐릭터: `없음`
+**{name}**: *붙임판 앞에 잠깐 더 서 있었다. 짧은 문장인데, 유나가 직접 얼굴을 들이민 것처럼 선명하다.*
 
 ---
 
@@ -20338,7 +20344,7 @@
 - 다음: `hidden_nurse_d5_choice_b_ins2`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: ...전화번호. 의료 상담용? *안경을 고쳐 쓰며* ...알았어. 근데 졸업하고 써.
+**보건선생님**: *웃음이 멎는다.* ...그건.
 
 ---
 
@@ -20443,16 +20449,37 @@
 
 ### `hidden_nurse_d5_6_ins4`
 - 배경: `school_hallway.png`
-- 다음: `hidden_nurse_d5_7`
+- 다음: `hidden_nurse_d5_flag_check`
 
 - 캐릭터: `nurse_normal.png`
 **{name}**: *하트가 이번에는 — 의료적 관심이 아닌 것 같다.*
 
 ---
 
+### `hidden_nurse_d5_flag_check`
+- 배경: `school_hallway.png`
+- 분기:
+  - [`homeroom_day5`] → `hidden_nurse_d5_7_both`
+  - [기본] → `hidden_nurse_d5_7`
+
+<!-- i18n -->
+
+---
+
 ### `hidden_nurse_d5_7`
 - 배경: `school_hallway.png`
 - 플래그: `nurse_day5`
+- 스탯: Nurse +7
+- 다음: `hidden_nurse_d5_freetalk`
+
+- 캐릭터: `nurse_normal.png`
+**{name}**: *밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*
+
+---
+
+### `hidden_nurse_d5_7_both`
+- 배경: `school_hallway.png`
+- 플래그: `nurse_day5`, `both_hidden_day5`
 - 스탯: Nurse +7
 - 다음: `hidden_nurse_d5_freetalk`
 
@@ -20984,7 +21011,7 @@
 - 다음: `after5_hidden_farewell_3`
 
 - 캐릭터: `없음`
-**{name}**: *아무도 이쪽을 보지 않는다. — 그게 맞다. 내가 고른 건 다른 사람이니까.*
+**{name}**: *아무도 이쪽을 보지 않는다. — 그게 오히려 다행이다. 지금은 누구하고도 눈을 마주칠 자신이 없다.*
 
 ---
 
@@ -20993,7 +21020,7 @@
 - 다음: `after5_hidden_farewell_3b`
 
 - 캐릭터: `없음`
-**{name}**: *미안하다는 말은 하지 않겠다. 그 말은 — 그 사람들한테 하면 오히려 잔인하니까. 그냥 마음속으로만. 고마웠어.*
+**{name}**: *미안하다는 말은 쉽게 못 하겠다. 그 말로 정리되는 마음들이 아니니까. 그냥 마음속으로만, 천천히. 고마웠어.*
 
 ---
 
@@ -21951,6 +21978,7 @@
 - 배경: `park.png`
 - 분기:
   - [`choose_main_over_hidden`] → `ending_affinity_check`
+  - [`both_hidden_day5`] → `hidden_dual_route_1`
   - [`homeroom_day5`] → `hidden_perfect_homeroom_check`
   - [`nurse_day5`] → `hidden_perfect_nurse_check`
   - [`day3_caught_multiple_dates`] → `day5_ending_mayhem`
@@ -21962,6 +21990,26 @@
 
 - 캐릭터: `없음`
 **시스템**: ‹빈›
+
+---
+
+### `hidden_dual_route_1`
+- 배경: `park.png`
+- 다음: `hidden_dual_route_choice`
+
+- 캐릭터: `없음`
+**{name}**: *마지막까지 남은 건 한 사람의 목소리가 아니다. 교실에서 받은 봉투와 손등에 붙은 밴드가 같이 떠오른다.*
+
+---
+
+### `hidden_dual_route_choice`
+- 배경: `park.png`
+- 선택지:
+  1. "원고를 건네준 사람에게 간다" → `hidden_perfect_homeroom_check`
+  2. "손등에 답을 남긴 사람에게 간다" → `hidden_perfect_nurse_check`
+
+- 캐릭터: `없음`
+**{name}**: *이번엔 그것까지 정해야 한다.*
 
 ---
 
@@ -22017,7 +22065,7 @@
 - 다음: `perfect_seo_3`
 
 - 캐릭터: `seyoun_cry.png`
-**{name}**: *처음으로 안경을 벗고 — 울고 있다.*
+**{name}**: *눈가가 다 젖어 있다. 그런데도 시선을 피하지 않는다.*
 
 ---
 

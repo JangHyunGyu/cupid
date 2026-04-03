@@ -2,7 +2,7 @@
   "_meta": {
     "generated": "2026-04-01T15:02:23.912Z",
     "day": 5,
-    "total_nodes": 517,
+    "total_nodes": 521,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -1312,7 +1312,7 @@
     "hidden_nurse_d5_choice_b": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_nurse_d5_choice_b",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "...전화번호. 의료 상담용? *안경을 고쳐 쓰며* ...알았어. 근데 ...",
+      "_ko_text_preview": "*웃음이 멎는다.* ...그건.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_nurse_d5_choice_b",
@@ -1412,6 +1412,42 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_1_morning.json#hidden_nurse_d5_7",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_nurse_d5_7_both": {
+      "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_nurse_d5_7_both",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_nurse_d5_7_both",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_1_morning.json#hidden_nurse_d5_7_both",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_1_morning.json#hidden_nurse_d5_7_both",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_1_morning.json#hidden_nurse_d5_7_both",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_1_morning.json#hidden_nurse_d5_7_both",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -1672,7 +1708,7 @@
     "morning5_seo_note_1_ins4": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#morning5_seo_note_1_ins4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*교실로 돌아오니 다인이 기다리고 있다.*",
+      "_ko_text_preview": "*붙임판 앞에 잠깐 더 서 있었다. 짧은 문장인데, 유나가 직접 얼굴을 들이민 것처럼 선명하다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#morning5_seo_note_1_ins4",
@@ -3756,6 +3792,42 @@
         "_score": 10,
         "_issues": null
       }
+    },
+    "hidden_nurse_d5_flag_check": {
+      "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_nurse_d5_flag_check",
+      "_ko_name": "",
+      "_ko_text_preview": "",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_nurse_d5_flag_check",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_1_morning.json#hidden_nurse_d5_flag_check",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_1_morning.json#hidden_nurse_d5_flag_check",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_1_morning.json#hidden_nurse_d5_flag_check",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_1_morning.json#hidden_nurse_d5_flag_check",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
     }
   },
   "day5_2_lunch": {
@@ -5672,7 +5744,7 @@
     "after5_hidden_farewell_2": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_hidden_farewell_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*아무도 이쪽을 보지 않는다. — 그게 맞다. 내가 고른 건 다른 사람이...",
+      "_ko_text_preview": "*아무도 이쪽을 보지 않는다. — 그게 오히려 다행이다. 지금은 누구하고도 눈을 마주칠 자신이 없다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_hidden_farewell_2",
@@ -5708,7 +5780,7 @@
     "after5_hidden_farewell_3": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_hidden_farewell_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*미안하다는 말은 하지 않겠다. 그 말은 — 그 사람들한테 하면 오히려 ...",
+      "_ko_text_preview": "*미안하다는 말은 쉽게 못 하겠다. 그 말로 정리되는 마음들이 아니니까. 그냥 마음속으로만, 천천히. 고마웠어.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_hidden_farewell_3",
@@ -8191,6 +8263,78 @@
         "_issues": null
       }
     },
+    "hidden_dual_route_1": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_dual_route_1",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*마지막까지 남은 건 한 사람의 목소리가 아니다. 교실에서 받은 봉투와 손등에 붙은 밴드가 같이 떠오른다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_dual_route_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#hidden_dual_route_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#hidden_dual_route_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#hidden_dual_route_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#hidden_dual_route_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_dual_route_choice": {
+      "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_dual_route_choice",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*이번엔 그것까지 정해야 한다.*",
+      "_has_choices": true,
+      "en": {
+        "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_dual_route_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day5_4_night.json#hidden_dual_route_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day5_4_night.json#hidden_dual_route_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day5_4_night.json#hidden_dual_route_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day5_4_night.json#hidden_dual_route_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
     "ending_affinity_check": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#ending_affinity_check",
       "_ko_name": "시스템",
@@ -8518,7 +8662,7 @@
     "perfect_seo_2": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#perfect_seo_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*처음으로 안경을 벗고 — 울고 있다.*",
+      "_ko_text_preview": "*눈가가 다 젖어 있다. 그런데도 시선을 피하지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#perfect_seo_2",

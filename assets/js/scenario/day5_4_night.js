@@ -13,6 +13,7 @@ Object.assign(SCENARIO[5], {
         "character": null,
         "branches": [
             { "condition": "choose_main_over_hidden", "next": "ending_affinity_check" },
+            { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
             { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
             { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
             { "condition": "day3_caught_multiple_dates", "next": "day5_ending_mayhem" },
@@ -21,6 +22,19 @@ Object.assign(SCENARIO[5], {
             { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
             { "condition": "day4_waited", "next": "day5_ending_friend" },
             { "next": "day5_ending_alone" }
+        ]
+    },
+    "hidden_dual_route_1": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "next": "hidden_dual_route_choice"
+    },
+    "hidden_dual_route_choice": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "choices": [
+            { "next": "hidden_perfect_homeroom_check" },
+            { "next": "hidden_perfect_nurse_check" }
         ]
     },
     "ending_affinity_check": {

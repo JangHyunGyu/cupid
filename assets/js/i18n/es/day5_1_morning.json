@@ -159,13 +159,17 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Enfermera",
-        "text": "¿...Número de teléfono? ¿Para consultas médicas? *Ajustándose las gafas* ...Está bien. Pero úsalo después de graduarte."
+        "text": "*La risa se le corta.* ...Eso."
     },
     "hidden_nurse_d5_6": {
         "name": "Enfermera",
         "text": "Lo sé. Solo necesitaba una excusa."
     },
     "hidden_nurse_d5_7": {
+        "name": "{name}",
+        "text": "*Hay letras pequeñas en la tirita. 'Después de graduarte, nos vemos en un café y no en la enfermería — ♥'*"
+    },
+    "hidden_nurse_d5_7_both": {
         "name": "{name}",
         "text": "*Hay letras pequeñas en la tirita. 'Después de graduarte, nos vemos en un café y no en la enfermería — ♥'*"
     },
@@ -197,7 +201,7 @@
     },
     "morning5_seo_note_1_ins4": {
         "name": "{name}",
-        "text": "*Al volver al aula, Dain está esperando.*"
+        "text": "*Me quedé un momento más frente al tablón. Es una frase corta, pero se siente tan nítida como si Yuna hubiera asomado la cara en persona.*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -426,5 +430,6 @@
     "hidden_nurse_d5_6_ins4": {
         "name": "{name}",
         "text": "*Este corazón — no parece interés médico.*"
-    }
+    },
+    "hidden_nurse_d5_flag_check": {}
 }

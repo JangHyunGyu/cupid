@@ -159,13 +159,17 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Infirmière scolaire",
-        "text": "...Un numéro de téléphone. Pour des consultations médicales ? *Ajustant ses lunettes* ...D'accord. Mais utilise-le après ton diplôme."
+        "text": "*Son rire s'arrête.* ...Ça."
     },
     "hidden_nurse_d5_6": {
         "name": "Infirmière scolaire",
         "text": "Je sais. J'avais juste besoin d'une excuse."
     },
     "hidden_nurse_d5_7": {
+        "name": "{name}",
+        "text": "*Il y a une petite inscription sur le pansement. 'Après le diplôme, on se retrouve au café et pas à l'infirmerie — ♥'*"
+    },
+    "hidden_nurse_d5_7_both": {
         "name": "{name}",
         "text": "*Il y a une petite inscription sur le pansement. 'Après le diplôme, on se retrouve au café et pas à l'infirmerie — ♥'*"
     },
@@ -197,7 +201,7 @@
     },
     "morning5_seo_note_1_ins4": {
         "name": "{name}",
-        "text": "*De retour en classe, Dain m'attend.*"
+        "text": "*Je suis resté un peu plus longtemps devant le panneau. Ce n'est qu'une courte phrase, mais elle est aussi nette que si Yuna avait passé la tête elle-même.*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -426,5 +430,6 @@
     "hidden_nurse_d5_6_ins4": {
         "name": "{name}",
         "text": "*Ce cœur-là — ne semble pas être de l'intérêt médical.*"
-    }
+    },
+    "hidden_nurse_d5_flag_check": {}
 }
