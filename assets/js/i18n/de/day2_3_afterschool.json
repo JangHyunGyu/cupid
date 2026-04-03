@@ -622,11 +622,11 @@
     },
     "after2_seo_sunset_joke_ins": {
         "name": "Seoyeon",
-        "text": "...Du bist der Erste, der so einen kitschigen Spruch so selbstverständlich bringt."
+        "text": "*Selbst wenn sie den Mund hinter den Papieren verbirgt, sieht man, dass sie lächelt.*"
     },
     "after2_seo_sunset_react_ins": {
-        "name": "Seoyeon",
-        "text": "Dein Nacken ist ziemlich verspannt. Halt kurz still."
+        "name": "{name}",
+        "text": "*Auch nach diesen Worten bleiben Seoyeons Mundwinkel noch eine Weile oben.*"
     },
     "after2_seo_neck_react_ins": {
         "name": "Seoyeon",
@@ -649,8 +649,8 @@
         "text": "Was soll das plötzlich?"
     },
     "after2_seo_neck_low_ins2": {
-        "name": "Seoyeon",
-        "text": "*Zieht ihre Hand zurück* ...War nichts."
+        "name": "{name}",
+        "text": "*Seoyeons Hand verharrt einen Moment in der Luft.*"
     },
     "after2_yuna_1_ins": {
         "name": "{name}",
@@ -677,8 +677,8 @@
         "text": "*Yunas Mundwinkel heben sich kaum merklich.*"
     },
     "minsu_warn_1_ins": {
-        "name": "Minsu",
-        "text": "*Geht neben mir* Hast du in letzter Zeit Spaß?"
+        "name": "{name}",
+        "text": "*Minsu holt mit großen Schritten auf und geht neben mir her.*"
     },
     "minsu_warn_7_ins": {
         "name": "{name}",

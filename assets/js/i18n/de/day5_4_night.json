@@ -341,11 +341,11 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": ""
+        "text": "*Trotzdem schauen wir dieses Mal in dieselbe Richtung.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": ""
+        "text": "*Vielleicht ist es kein perfektes Happy End, aber von hier aus können wir neu anfangen.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -365,7 +365,7 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*Eine Kirschblüte landet auf Seoyeons Haar. Ich überlege, ob ich sie wegwische — und sie neigt zuerst den Kopf.*"
+        "text": "*„...Warum kommst du nicht?“ Selbst dieses leise Murren hatte das Tempo von jemandem, der auf mich gewartet hatte.*"
     },
     "good_4_seo": {
         "name": "{name}",
@@ -373,7 +373,7 @@
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*Die Kirschblüten blühen auch nächstes Jahr. Wir gingen zusammen.*"
+        "text": "*Während wir langsam über das Ende des Kirschblütenwegs hinausgingen, dachte ich daran. Ich möchte diesen Weg auch im nächsten Frühling mit ihr gehen. Dieses Mal konnte ich es sagen.*"
     },
     "good_2_yuna": {
         "name": "{name}",
@@ -389,7 +389,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Ein einzelner Stern ist zu sehen. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
+        "text": "*Selbst als wir das Dach verließen und die Treppe hinuntergingen, blieb der Gedanke derselbe. Es ist in Ordnung, wenn es länger dauert. Dieses Mal will ich bis zum Ende lesen und bis zum Ende alles sagen.*"
     },
     "good_2_dain": {
         "name": "{name}",
@@ -405,7 +405,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Die Sonne geht hinter dem Schultor unter. Unvollkommen, und das ist in Ordnung. Die Geschichte ist noch nicht vorbei.*"
+        "text": "*Als wir gemeinsam durch das Schultor nach draußen gingen, hatte ich das Gefühl, der letzte Aufschlag sei längst herübergekommen. Jetzt bin ich dran, ihn anzunehmen.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -445,7 +445,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": ""
+        "text": "*Viel zu spät habe ich gelernt, dass ein bloßes 'Ich mag euch' nichts schützen kann.*"
     },
     "mayhem_7": {
         "name": "System",
@@ -481,7 +481,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*Ich kann so tun, als wäre ich glücklich. Aber selbst ich glaube nicht, dass diese Zukunft gut enden wird.*"
     },
     "harem_8": {
         "name": "System",
@@ -501,11 +501,11 @@
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": ""
+        "text": "*Es ist nicht so, als wären meine Gefühle falsch gewesen. Wir kannten uns nur noch viel zu wenig, damit sie wirklich ankommen konnten.*"
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": ""
+        "text": "*Dieses Scheitern ist in einem Punkt anders als früher: Wenigstens habe ich es diesmal gesagt, und genau deshalb kann ich nun wirklich abschließen.*"
     },
     "confess_fail_5": {
         "name": "System",

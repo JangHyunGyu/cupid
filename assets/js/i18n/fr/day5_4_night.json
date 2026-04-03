@@ -349,11 +349,11 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": ""
+        "text": "*Malgré tout, cette fois, on regarde dans la même direction.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": ""
+        "text": "*Ce n'est peut-être pas une fin parfaitement heureuse, mais à partir d'ici, on peut recommencer.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
@@ -373,7 +373,7 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*Un pétale de cerisier se pose sur les cheveux de Seoyeon. J'hésite à l'enlever — et elle penche la tête en premier.*"
+        "text": "*« ...Pourquoi tu ne viens pas ? » Même en grommelant tout bas, elle avançait au rythme de quelqu'un qui m'avait attendu.*"
     },
     "good_4_seo": {
         "name": "{name}",
@@ -381,7 +381,7 @@
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*Les cerisiers refleuriront l'année prochaine. On a marché ensemble.*"
+        "text": "*En dépassant lentement la fin de l'allée des cerisiers, je me suis surpris à le penser. J'ai envie de refaire ce chemin avec elle au printemps prochain. Cette fois, j'ai pu le dire.*"
     },
     "good_2_yuna": {
         "name": "{name}",
@@ -397,7 +397,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Sur le toit. Je veux qu'elle se souvienne de moi — pas comme un remplaçant. Même si ça prend du temps.*"
+        "text": "*Même en quittant le toit pour descendre les escaliers, je pensais toujours la même chose. Peu importe si ça prend plus de temps. Cette fois, je compte tout lire jusqu'au bout et tout dire jusqu'au bout.*"
     },
     "good_2_dain": {
         "name": "{name}",
@@ -413,7 +413,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Devant l'école. Le dernier service n'a pas encore été lancé. Le match n'est pas fini.*"
+        "text": "*En passant le portail de l'école à ses côtés, j'ai eu l'impression que le dernier service avait déjà traversé. À moi, maintenant, de le réceptionner.*"
     },
     "good_5_cg_seo": {
         "name": "Système",
@@ -453,7 +453,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": ""
+        "text": "*J'ai appris bien trop tard que dire que je les aimais ne suffisait à protéger quoi que ce soit.*"
     },
     "mayhem_7": {
         "name": "Système",
@@ -489,7 +489,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*Je peux faire semblant d'être heureux. Mais même moi, je n'arrive pas à croire que cet avenir finira bien.*"
     },
     "harem_8": {
         "name": "Système",
@@ -509,11 +509,11 @@
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": ""
+        "text": "*Ce n'est pas que mes sentiments étaient faux. C'est juste que nous nous connaissions encore trop peu pour qu'ils puissent vraiment atteindre l'autre.*"
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": ""
+        "text": "*Il y a une chose qui rend cet échec différent des précédents. Au moins cette fois, je l'ai dit, et c'est pour ça que je peux vraiment y mettre un terme.*"
     },
     "confess_fail_5": {
         "name": "Système",

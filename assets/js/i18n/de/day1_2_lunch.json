@@ -192,10 +192,6 @@
         "name": "Dain",
         "text": "So, da sind wir! Das ist der Schulkiosk. Such dir was aus!"
     },
-    "lunch_dain_1_aff_high": {
-        "name": "Dain",
-        "text": "Hey!! Hier hier!! *klopft aufs Regal* Deine Vorstellung war echt witzig lol los, such dir was aus!"
-    },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
         "text": "So, wir sind da. Was willst du?"
@@ -331,10 +327,6 @@
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Ich folge Yuna in die Bibliothek. Fast niemand kommt während der Mittagspause hierher.*"
-    },
-    "lunch_yuna_1_aff_high": {
-        "name": "{name}",
-        "text": "*Sie reicht einen Zettel.* \"...Was du vorhin gesagt hast. Ich hab's mir gemerkt.\""
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
