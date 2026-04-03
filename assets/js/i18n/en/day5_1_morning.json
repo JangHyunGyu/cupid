@@ -159,13 +159,17 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "School Nurse",
-        "text": "...Phone number. For medical consultations? *Adjusting her glasses* ...Fine. But use it after you graduate."
+        "text": "*Her laughter stops.* ...That."
     },
     "hidden_nurse_d5_6": {
         "name": "School Nurse",
         "text": "I know. I just needed an excuse."
     },
     "hidden_nurse_d5_7": {
+        "name": "{name}",
+        "text": "*There's small writing on the bandage. 'After graduation, let's meet at a cafe instead of the nurse's office — ♥'*"
+    },
+    "hidden_nurse_d5_7_both": {
         "name": "{name}",
         "text": "*There's small writing on the bandage. 'After graduation, let's meet at a cafe instead of the nurse's office — ♥'*"
     },
@@ -197,7 +201,7 @@
     },
     "morning5_seo_note_1_ins4": {
         "name": "{name}",
-        "text": "*Back in the classroom, Dain is waiting.*"
+        "text": "*I lingered a little longer in front of the bulletin board. It's only a short line, but it feels as vivid as if Yuna had leaned in herself.*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -426,5 +430,6 @@
     "hidden_nurse_d5_6_ins4": {
         "name": "{name}",
         "text": "*This time, that heart — doesn't seem like medical concern.*"
-    }
+    },
+    "hidden_nurse_d5_flag_check": {}
 }

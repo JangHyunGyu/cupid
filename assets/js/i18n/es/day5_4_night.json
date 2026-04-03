@@ -3,6 +3,18 @@
         "name": "Sistema",
         "text": ""
     },
+    "hidden_dual_route_1": {
+        "name": "{name}",
+        "text": "*Lo que queda hasta el final no es la voz de una sola persona. El sobre que recibí en el aula y la tirita pegada en el dorso de mi mano me vienen juntos a la mente.*"
+    },
+    "hidden_dual_route_choice": {
+        "name": "{name}",
+        "text": "*Esta vez tengo que decidir hasta eso.*",
+        "choices": [
+            "Ir con la persona que me entregó el manuscrito",
+            "Ir con la persona que dejó la respuesta en el dorso de mi mano"
+        ]
+    },
     "ending_affinity_check": {
         "name": "Sistema",
         "text": ""
@@ -41,7 +53,7 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*Por primera vez, se quita las gafas — y está llorando.*"
+        "text": "*Tiene los ojos completamente húmedos. Aun así, no aparta la mirada.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",

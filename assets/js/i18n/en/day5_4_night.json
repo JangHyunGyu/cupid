@@ -3,6 +3,18 @@
         "name": "System",
         "text": ""
     },
+    "hidden_dual_route_1": {
+        "name": "{name}",
+        "text": "*What remains at the very end isn't one person's voice alone. The envelope from the classroom and the bandage on the back of my hand come to mind together.*"
+    },
+    "hidden_dual_route_choice": {
+        "name": "{name}",
+        "text": "*This time, I have to decide even that.*",
+        "choices": [
+            "Go to the person who handed me the manuscript",
+            "Go to the person who left an answer on the back of my hand"
+        ]
+    },
     "ending_affinity_check": {
         "name": "System",
         "text": ""
@@ -41,7 +53,7 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*For the first time, she takes off her glasses — and she's crying.*"
+        "text": "*Her eyes are completely wet. Even so, she doesn't look away.*"
     },
     "perfect_seo_3": {
         "name": "Seoyeon",

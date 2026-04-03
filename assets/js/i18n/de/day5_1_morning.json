@@ -159,13 +159,17 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Schulkrankenschwester",
-        "text": "...Telefonnummer. Für medizinische Beratung? *Rückt ihre Brille zurecht* ...In Ordnung. Aber benutz sie erst nach dem Abschluss."
+        "text": "*Ihr Lachen verstummt.* ...Das."
     },
     "hidden_nurse_d5_6": {
         "name": "Schulkrankenschwester",
         "text": "Ich weiß. Ich brauchte nur eine Ausrede."
     },
     "hidden_nurse_d5_7": {
+        "name": "{name}",
+        "text": "*Auf dem Pflaster steht in kleiner Schrift: 'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♥'*"
+    },
+    "hidden_nurse_d5_7_both": {
         "name": "{name}",
         "text": "*Auf dem Pflaster steht in kleiner Schrift: 'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♥'*"
     },
@@ -197,7 +201,7 @@
     },
     "morning5_seo_note_1_ins4": {
         "name": "{name}",
-        "text": "*Zurück im Klassenzimmer wartet Dain.*"
+        "text": "*Ich blieb noch einen Moment vor dem Aushang stehen. Es ist nur ein kurzer Satz, aber so deutlich, als hätte Yuna selbst den Kopf hereingestreckt.*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -426,5 +430,6 @@
     "hidden_nurse_d5_6_ins4": {
         "name": "{name}",
         "text": "*Dieses Herz — sieht nicht nach medizinischem Interesse aus.*"
-    }
+    },
+    "hidden_nurse_d5_flag_check": {}
 }

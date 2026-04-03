@@ -49,7 +49,7 @@
     },
     "morning5_seo_note_1_ins4": {
         "name": "{name}",
-        "text": "*교실로 돌아오니 다인이 기다리고 있다.*"
+        "text": "*붙임판 앞에 잠깐 더 서 있었다. 짧은 문장인데, 유나가 직접 얼굴을 들이민 것처럼 선명하다.*"
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
@@ -361,7 +361,7 @@
     },
     "hidden_nurse_d5_choice_b": {
         "name": "보건선생님",
-        "text": "...전화번호. 의료 상담용? *안경을 고쳐 쓰며* ...알았어. 근데 졸업하고 써."
+        "text": "*웃음이 멎는다.* ...그건."
     },
     "hidden_nurse_d5_choice_b_ins2": {
         "name": "{name}",
@@ -411,7 +411,12 @@
         "name": "{name}",
         "text": "*하트가 이번에는 — 의료적 관심이 아닌 것 같다.*"
     },
+    "hidden_nurse_d5_flag_check": {},
     "hidden_nurse_d5_7": {
+        "name": "{name}",
+        "text": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*"
+    },
+    "hidden_nurse_d5_7_both": {
         "name": "{name}",
         "text": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*"
     },

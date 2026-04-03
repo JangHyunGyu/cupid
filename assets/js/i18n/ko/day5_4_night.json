@@ -3,6 +3,18 @@
         "name": "시스템",
         "text": ""
     },
+    "hidden_dual_route_1": {
+        "name": "{name}",
+        "text": "*마지막까지 남은 건 한 사람의 목소리가 아니다. 교실에서 받은 봉투와 손등에 붙은 밴드가 같이 떠오른다.*"
+    },
+    "hidden_dual_route_choice": {
+        "name": "{name}",
+        "text": "*이번엔 그것까지 정해야 한다.*",
+        "choices": [
+            "원고를 건네준 사람에게 간다",
+            "손등에 답을 남긴 사람에게 간다"
+        ]
+    },
     "ending_affinity_check": {
         "name": "시스템",
         "text": ""
@@ -21,7 +33,7 @@
     },
     "perfect_seo_2": {
         "name": "{name}",
-        "text": "*처음으로 안경을 벗고 — 울고 있다.*"
+        "text": "*눈가가 다 젖어 있다. 그런데도 시선을 피하지 않는다.*"
     },
     "perfect_seo_3": {
         "name": "서연",
