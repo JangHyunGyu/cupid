@@ -190,15 +190,15 @@
     },
     "lunch_dain_1": {
         "name": "Dain",
-        "text": "Oh! Du bist da! Hab dich bei der Vorstellung gesehen! Lass uns zusammen essen!"
+        "text": "So, da sind wir! Das ist der Schulkiosk. Such dir was aus!"
     },
     "lunch_dain_1_aff_high": {
         "name": "Dain",
-        "text": "Hey!! Hier hier!! *klopft auf den Platz* Deine Vorstellung war echt witzig lol setz dich zu mir!"
+        "text": "Hey!! Hier hier!! *klopft aufs Regal* Deine Vorstellung war echt witzig lol los, such dir was aus!"
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "Hey, du bist der Neue, oder? Schon gegessen?"
+        "text": "So, wir sind da. Was willst du?"
     },
     "lunch_dain_2": {
         "name": "Dain",

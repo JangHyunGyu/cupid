@@ -224,7 +224,7 @@
         "name": "Homeroom Teacher",
         "text": "*Chatting with the homeroom teacher in the hallway.*",
         "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
-        "personality": "The homeroom teacher hides warmth behind dry humor and deadpan delivery. Early 30s female teacher with brown wavy long hair and beige cardigan. She wraps her feelings in words like \"work\" and \"professional concern.\" Former aspiring novelist."
+        "personality": "The homeroom teacher hides warmth behind dry humor and deadpan delivery. Late 20s female teacher with brown wavy long hair and beige cardigan. She wraps her feelings in words like \"work\" and \"professional concern.\" Former aspiring novelist."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",

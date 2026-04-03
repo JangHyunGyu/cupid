@@ -190,15 +190,15 @@
     },
     "lunch_dain_1": {
         "name": "Dain",
-        "text": "Oh ! T’es là ! Je t’ai vu pendant les présentations ! On mange ensemble !"
+        "text": "Et voilà ! C’est la boutique. Choisis ce que tu veux !"
     },
     "lunch_dain_1_aff_high": {
         "name": "Dain",
-        "text": "Hé !! Par ici !! *tape sur la chaise* Ton intro était trop drôle mdr mange avec moi !"
+        "text": "Hé !! Par ici !! *tape sur l'étagère* Ton intro était trop drôle mdr allez, choisis !"
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "Hé, t’es le nouveau, non ? T’as mangé ?"
+        "text": "Bon, on y est. Tu veux quoi ?"
     },
     "lunch_dain_2": {
         "name": "Dain",

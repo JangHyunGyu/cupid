@@ -102,7 +102,7 @@ Object.assign(SCENARIO[1], {
     },
     "seoyeon_meet_8": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "seoyeon_meet_9"
     },
     "seoyeon_meet_9": {
@@ -112,15 +112,31 @@ Object.assign(SCENARIO[1], {
     },
     "seoyeon_choice": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "choices": [
             { "next": "choice_flirt_1", "stats": {"Seoyeon":{"affinity":5}} },
-            { "next": "choice_joke_1", "stats": {"Seoyeon":{"affinity":3}} }
+            { "next": "choice_joke_1", "stats": {"Seoyeon":{"affinity":3}} },
+            { "next": "choice_dismiss_1", "stats": {"Seoyeon":{"affinity":-3}} }
         ]
+    },
+    "choice_dismiss_1": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "choice_dismiss_2"
+    },
+    "choice_dismiss_2": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "choice_dismiss_3"
+    },
+    "choice_dismiss_3": {
+        "background": "assets/images/background/school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "hallway_1"
     },
     "choice_flirt_1": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "choice_flirt_2"
     },
     "choice_flirt_2": {
@@ -145,7 +161,7 @@ Object.assign(SCENARIO[1], {
     },
     "choice_flirt_6": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "choice_flirt_7"
     },
     "choice_flirt_7": {
@@ -306,7 +322,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_seat_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_seat_2"
     },
     "classroom_seat_2": {
@@ -356,7 +372,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_dain_talk_6": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "classroom_dain_talk_7"
     },
     "classroom_dain_talk_7": {
@@ -408,6 +424,11 @@ Object.assign(SCENARIO[1], {
     "hallway_6_ins2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "hallway_7"
+    },
+    "hallway_7": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "hallway_8"
     },
     "hallway_13_ins": {
@@ -453,7 +474,7 @@ Object.assign(SCENARIO[1], {
     },
     "classroom_dain_5_ins3": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/teacher_angry.png",
         "next": "classroom_yuna_1"
     },
     "classroom_minsu_2_ins": {

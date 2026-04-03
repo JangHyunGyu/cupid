@@ -190,15 +190,15 @@
     },
     "lunch_dain_1": {
         "name": "Dain",
-        "text": "¡Oh! ¡Viniste! ¡Te vi en la presentación! ¡Comamos juntos!"
+        "text": "¡Llegamos! Esta es la tienda. ¡Elige lo que quieras!"
     },
     "lunch_dain_1_aff_high": {
         "name": "Dain",
-        "text": "¡¡Ey!! ¡¡Aquí aquí!! *golpea el asiento* ¡Tu presentación fue buenísima jaja siéntate conmigo!"
+        "text": "¡¡Ey!! ¡¡Aquí aquí!! *golpea la estantería* ¡Tu presentación fue buenísima jaja venga, elige!"
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "Oye, eres el de la transferencia, ¿no? ¿Ya comiste?"
+        "text": "Bueno, ya llegamos. ¿Qué quieres?"
     },
     "lunch_dain_2": {
         "name": "Dain",
