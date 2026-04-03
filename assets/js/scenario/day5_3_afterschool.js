@@ -175,7 +175,8 @@ const _scenes = {
         "branches": [
             { "condition": "homeroom_day5", "next": "ending_start" },
             { "condition": "nurse_day5", "next": "ending_start" },
-            { "condition": "day3_has_multiple_dates", "next": "after5_set_harem" },
+            { "condition": "day3_caught_multiple_dates", "next": "ending_start" },
+            { "condition": "ending_harem", "next": "after5_set_harem" },
             { "condition": "route_seoyeon", "next": "after5_last_chance_1" },
             { "condition": "route_dain", "next": "after5_last_chance_1" },
             { "condition": "route_yuna", "next": "after5_last_chance_1" },
@@ -185,7 +186,6 @@ const _scenes = {
     "after5_set_harem": {
         "background": "assets/images/background/school_back.png",
         "character": null,
-        "setFlags": ["ending_harem"],
         "next": "ending_start"
     },
     "after5_last_chance_1": {

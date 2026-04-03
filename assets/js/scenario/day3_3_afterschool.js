@@ -447,6 +447,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             "background": "assets/images/background/school_hallway.png",
             "character": "assets/images/characters/seyoun_sad.png",
             "bgm": "mystery.mp3",
+            "setFlags": ["day3_caught_multiple_dates"],
             "next": "after3_confront_2"
         },
         "after3_confront_2": {

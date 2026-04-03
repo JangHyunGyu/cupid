@@ -14,13 +14,10 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             "character": null,
             "branches": [
                 { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
-                { "condition": "homeroom_day5", "next": "hidden_good_homeroom_1" },
                 { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
-                { "condition": "nurse_day5", "next": "hidden_good_nurse_1" },
-                { "condition": "day4_confession_accepted", "next": "ending_affinity_check" },
+                { "condition": "day3_caught_multiple_dates", "next": "day5_ending_mayhem" },
                 { "condition": "ending_harem", "next": "day5_ending_harem" },
-                { "condition": "day4_confession_accepted", "next": "day5_ending_good" },
-                { "condition": "day3_has_multiple_dates", "next": "day5_ending_mayhem" },
+                { "condition": "day4_confession_accepted", "next": "ending_affinity_check" },
                 { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
                 { "condition": "day4_waited", "next": "day5_ending_friend" },
                 { "next": "day5_ending_alone" }
