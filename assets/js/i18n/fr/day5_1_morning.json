@@ -1,11 +1,11 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Cinquième jour. Le dernier. L'uniforme est devenu confortable. Il y a cinq jours, il était raide, mais maintenant il me va bien. — Est-ce que je me suis habitué à cette école, ou à ces gens ?*"
+        "text": "*Cinquième jour. C'est dimanche, mais il y a un événement scolaire. L'uniforme est devenu confortable. — C'est à cause d'eux. Je le sais.*"
     },
     "morning5_start_2": {
         "name": "{name}",
-        "text": "*Aujourd'hui, il y a un événement scolaire. Le dernier. Dès que j'entre en classe — des signaux arrivent de trois directions.*"
+        "text": "*Le dernier événement. Tout le temps accumulé jusqu'à présent se rassemble aujourd'hui.*"
     },
     "morning5_mood_check": {
         "name": "Système",
@@ -29,7 +29,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*En passant devant le coin d'exposition du club littéraire dans le couloir — une nouvelle est affichée au tableau. Titre : 'À la personne rencontrée à la bibliothèque.' C'est celle de Yuna. — Une histoire que seul le protagoniste pourrait reconnaître.*"
+        "text": "*Le personnage du roman pose une couverture sur l'épaule de quelqu'un qui s'est endormi à la bibliothèque. — C'est une scène que je suis le seul à connaître. Yuna a écrit ça.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -122,23 +122,23 @@
         "text": "*Pause de l'événement. Je passe devant l'infirmerie.*"
     },
     "hidden_nurse_d5_1": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Oh ? {name}. — C'est le dernier jour. Le dernier jour de l'événement. Cinq jours. — Ça passe vite."
     },
     "hidden_nurse_d5_2": {
-        "name": "Infirmière",
-        "text": "*Avec un léger sourire* Passe me voir après le diplôme. ...Ou avant, si t'as mal."
+        "name": "{name}",
+        "text": "*Pendant la pause au milieu de l'événement. Je passe devant l'infirmerie — la porte s'ouvre.*"
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "Et si j'ai pas mal ?"
     },
     "hidden_nurse_d5_4": {
-        "name": "Infirmière",
-        "text": "*En souriant à nouveau* Demande-moi ça après le diplôme. — Là je répondrai."
+        "name": "L'infirmière",
+        "text": "...Appuie bien pour que le pansement tienne. — Aujourd'hui, je ne te le mettrai pas moi-même."
     },
     "hidden_nurse_d5_5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...{name}. Je te mets un pansement ?"
     },
     "hidden_nurse_d5_choice": {
@@ -150,19 +150,19 @@
         ]
     },
     "hidden_nurse_d5_choice_a": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Elle pose lentement le pansement. Il y a de petits mots écrits sur le pansement.*"
     },
     "hidden_nurse_d5_choice_a_ins": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Tu as dit « juste une fois », alors pourquoi tu dis ça ?"
     },
     "hidden_nurse_d5_choice_b": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Un numéro de téléphone. Pour des consultations médicales ? *Ajustant ses lunettes* ...D'accord. Mais utilise-le après ton diplôme."
     },
     "hidden_nurse_d5_6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Je sais. J'avais juste besoin d'une excuse."
     },
     "hidden_nurse_d5_7": {
@@ -170,14 +170,14 @@
         "text": "*Il y a une petite inscription sur le pansement. 'Après le diplôme, on se retrouve au café et pas à l'infirmerie — ♥'*"
     },
     "hidden_nurse_d5_freetalk": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Dernière conversation avec l'infirmière devant l'infirmerie.*",
         "context": "Jour 5. Dernier jour. L'infirmière a écrit un message sur un pansement. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "L'infirmière est moins joueuse. Elle attend le jour où les excuses ne seront plus nécessaires."
     },
     "morning5_start_ins": {
         "name": "{name}",
-        "text": "*Il y a un événement scolaire aujourd'hui. Le dernier.*"
+        "text": "*Dès que j'entre dans la salle de classe — des signaux me parviennent de trois directions.*"
     },
     "morning5_start_2_ins": {
         "name": "{name}",
@@ -228,8 +228,8 @@
         "text": "*Elle tend l'enveloppe. — Sa main tremble légèrement.*"
     },
     "hidden_homeroom_d5_6_ins3": {
-        "name": "Professeure principale",
-        "text": "Je ne l'ai montré à personne en sept ans. — Ce n'est pas vraiment dans mes attributions."
+        "name": "Professeur principal",
+        "text": "...Lis-le et dis-moi franchement ce que tu en penses. — Pas besoin d'être poli avec moi."
     },
     "hidden_homeroom_d5_6_ins4": {
         "name": "{name}",
@@ -309,14 +309,14 @@
     },
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
-        "text": "*Pause pendant l'événement. En passant devant l'infirmerie — la porte s'ouvre. L'infirmière sort.*"
+        "text": "*L'infirmière sort. Elle est juste devant moi.*"
     },
     "hidden_nurse_d5_2_ins2": {
         "name": "{name}",
         "text": "*— On s'est retrouvés nez à nez.*"
     },
     "hidden_nurse_d5_2_ins3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Oh ? {name}."
     },
     "hidden_nurse_d5_4_ins": {
@@ -328,7 +328,7 @@
         "text": "*Un silence gêné. — Jusqu'à hier c'était naturel, mais aujourd'hui quelque chose est différent.*"
     },
     "hidden_nurse_d5_4_ins3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Dernier jour, hein."
     },
     "hidden_nurse_d5_1_ins": {
@@ -336,7 +336,7 @@
         "text": "*Elle a dit « dernier jour de l'événement », mais un autre sens se cache derrière ces mots.*"
     },
     "hidden_nurse_d5_1_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Avec un léger sourire* Viens me voir après ton diplôme."
     },
     "hidden_nurse_d5_1_ins3": {
@@ -344,7 +344,7 @@
         "text": "Le diplôme, c'est encore loin."
     },
     "hidden_nurse_d5_1_ins4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...En attendant, viens si tu as mal quelque part."
     },
     "hidden_nurse_d5_1_ins5": {
@@ -356,7 +356,7 @@
         "text": "*L'infirmière marque une pause. Sa voix descend d'un ton.*"
     },
     "hidden_nurse_d5_3_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Ça."
     },
     "hidden_nurse_d5_3_ins3": {
@@ -364,7 +364,7 @@
         "text": "Madame ?"
     },
     "hidden_nurse_d5_3_ins4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En souriant à nouveau* Demande-moi ça après ton diplôme. — Je te répondrai à ce moment-là."
     },
     "hidden_nurse_d5_3_ins5": {
@@ -372,7 +372,7 @@
         "text": "*« Après ton diplôme. » — Les mêmes mots que la professeure principale. Pas maintenant, mais un jour. Le jour où le titre de « professeure » disparaîtra.*"
     },
     "hidden_nurse_d5_3_ins6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Allez, file. Tu ne vas pas sécher la cérémonie."
     },
     "hidden_nurse_d5_3_ins7": {
@@ -380,7 +380,7 @@
         "text": "*L'infirmière se retourne pour rentrer — et s'arrête.*"
     },
     "hidden_nurse_d5_3_ins8": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...{name}."
     },
     "hidden_nurse_d5_choice_b_ins2": {
@@ -392,11 +392,11 @@
         "text": "*L'infirmière riait — puis s'est arrêtée. A fermé la bouche.*"
     },
     "hidden_nurse_d5_choice_b_ins4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Un numéro de téléphone. Pour des consultations médicales ?"
     },
     "hidden_nurse_d5_choice_b_ins5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Ajustant ses lunettes* ...D'accord. Mais utilise-le après ton diplôme."
     },
     "hidden_nurse_d5_choice_b_ins6": {
@@ -404,7 +404,7 @@
         "text": "*« Après ton diplôme. » — Elle ne franchit pas la ligne. Mais elle a posé son numéro juste au bord.*"
     },
     "hidden_nurse_d5_choice_b_ins7": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Je te mets un pansement ?"
     },
     "hidden_nurse_d5_choice_b_ins8": {

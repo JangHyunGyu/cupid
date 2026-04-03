@@ -106,7 +106,7 @@
     },
     "choice_flirt_2": {
         "name": "서연",
-        "text": "와. 첫날부터 이런 사람은 처음이네. 흥미 +1."
+        "text": "와. 첫날부터 이런 사람은 처음이네. *살짝 웃는다.*"
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "classroom_yuna_note_4": {
         "name": "{name}",
-        "text": "*글씨가 깔끔하다. — 긴장이 조금 풀린다.*"
+        "text": "*연보라색 잉크. — 긴장이 조금 풀린다.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",

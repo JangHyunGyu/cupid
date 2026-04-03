@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Das Wort 'bitten' scheint im Vokabular dieser Person nicht zu existieren.*"
+        "text": "*Es ist ein befehlender Ton, aber irgendwie vertraut. — Ist das etwa die Art, wie diese Person um etwas bittet?*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -210,10 +210,10 @@
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Es direkt ein Kompliment zu nennen. — Das scheint selten für jemanden wie sie.*",
+        "text": "*Die Abendsonne fällt durchs Fenster. Ein orangefarbener Schein breitet sich auf Seoyeons Profil aus. — Ich wollte unbedingt etwas sagen.*",
         "choices": [
-            "Der Sonnenuntergang ist wunderschön. — Oh, ich meinte draußen, nicht dich.",
-            "Hast du Nackenschmerzen? Mach mal Pause."
+            "Der Sonnenuntergang ist wunderschön. Ich meine, draußen.",
+            "Tut dir der Hals weh? Mach mal eine Pause."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -382,7 +382,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Komm, wenn du willst. Ich halt dich nicht auf."
+        "text": "...Aber, jeden Tag geht nicht. Nur ab und zu."
     },
     "after2_yuna_quiet": {
         "name": "Yuna",

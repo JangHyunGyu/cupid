@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Profesora",
-        "text": "Empecé en la universidad. Escritura creativa. Al graduarme, apliqué a premios literarios — me rechazaron tres veces en dos años."
+        "text": "Después de entregar el cuarto manuscrito — el día que se anunciaron los resultados, no recibí ninguna llamada. Ese día, solicité plaza en la universidad de magisterio."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Profesora",
@@ -498,23 +498,23 @@
     },
     "hidden_homeroom_d3_4_ins": {
         "name": "{name}",
-        "text": "*Recreo entre la segunda y tercera hora. Volviendo del baño — veo una luz en el aula vacía al final del pasillo.*"
+        "text": "*La mano del profesor se detiene sobre el papel pautado. Entre los papeles boca abajo, se ven letras apretadas.*"
     },
     "hidden_homeroom_d3_4_ins2": {
         "name": "{name}",
-        "text": "*¿Un aula vacía a esta hora? — Hay alguien dentro.*"
+        "text": "*Dijo que eran documentos de trabajo, pero los documentos para profesores se imprimen en A4. No se escriben a mano en papel pautado.*"
     },
     "hidden_homeroom_d3_4_ins3": {
         "name": "{name}",
-        "text": "*Me acerco en silencio. La puerta está entreabierta. — La profesora está sentada en el escritorio, escribiendo algo.*"
+        "text": "*La expresión del profesor vuelve a la normalidad de inmediato. Su rostro indiferente de siempre. — El cambio es demasiado rápido.*"
     },
     "hidden_homeroom_d3_4_ins4": {
-        "name": "{name}",
-        "text": "*No son documentos oficiales. Es papel de manuscrito. — El mismo montón que vi ayer en el cajón de la sala de profesores.*"
+        "name": "Profesora",
+        "text": "...¿Qué miras? ¿Por qué vienes aquí en el recreo?"
     },
     "hidden_homeroom_d3_4_ins5": {
         "name": "{name}",
-        "text": "*La profesora deja de escribir y levanta la vista. — Nuestras miradas se cruzan.*"
+        "text": "*El papel pautado. Las letras apretadas. La expresión de querer ocultar algo. — ¿Debería preguntar, o fingir que no vi nada?*"
     },
     "hidden_homeroom_d3_3_ins": {
         "name": "{name}",

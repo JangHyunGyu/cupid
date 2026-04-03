@@ -194,11 +194,11 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "Alright, we're here. What do you want?"
+        "text": "*The school store is bustling for lunch. The scents of bread and milk mingle in the air.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Here we go! What do you want?! My pick is the soboro bread and strawberry milk!"
+        "text": "The combo of soboro bread and strawberry milk is seriously good. Trust me!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -460,9 +460,9 @@
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*I notice the book Yuna is reading.*",
+        "text": "*Yuna's forgotten book catches my eye. — She couldn't have gone far. I went after her.*",
         "choices": [
-            "Is that book any good? Maybe I should read it too.",
+            "Is that book good? Should I read it too?",
             "So you like reading."
         ]
     },

@@ -106,7 +106,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Tiens donc. Tu attaques comme ça dès le premier jour ? Je vais retenir ton nom."
+        "text": "Wow. Dès le premier jour, c'est la première fois que je tombe sur quelqu'un comme ça. *esquisse un léger sourire.*"
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -314,7 +314,7 @@
     },
     "classroom_yuna_note_4": {
         "name": "{name}",
-        "text": "*Une écriture soignée. Et — le message est étrangement réconfortant.*"
+        "text": "*Encre mauve. — La tension se relâche un peu.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",

@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*The word 'ask' seems to not exist in this person's vocabulary.*"
+        "text": "*It's a commanding tone, yet somehow familiar. — Is this their way of asking for things?*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -210,10 +210,10 @@
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Calling it a compliment outright. — That seems rare for someone like her.*",
+        "text": "*The sunset streams in through the window. An orange glow washes over Seoyeon's profile. — I felt like saying something.*",
         "choices": [
-            "The sunset is beautiful. — Oh, I meant outside, not you.",
-            "Is your neck sore? Take a break."
+            "The sunset's beautiful. I'm talking about the view outside.",
+            "Does your throat hurt? Take a break."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -382,7 +382,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Come if you want. I won't stop you."
+        "text": "...But, every day is a bit much. Just sometimes."
     },
     "after2_yuna_quiet": {
         "name": "Yuna",

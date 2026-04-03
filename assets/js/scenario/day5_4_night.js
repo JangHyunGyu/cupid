@@ -714,7 +714,7 @@ Object.assign(SCENARIO[5], {
         "next": "good_2_yuna"
     },
     "good_2_yuna": {
-        "background": "assets/images/background/top_school.png",
+        "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_smile.png",
         "next": "good_3_yuna"
     },

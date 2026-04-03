@@ -113,9 +113,9 @@ const CHAR_NAME_MAP = Object.freeze({
     "Profesora": "Teacher", "Enfermera": "Nurse",
     // Japanese
     "ソヨン": "Seoyeon", "ユナ": "Yuna", "ダイン": "Dain",
-    "担任先生": "Teacher", "保健先生": "Nurse",
+    "担任先生": "Teacher", "保健先生": "Nurse", "保健室の先生": "Nurse",
     // French
-    "Professeur Principal": "Teacher", "Professeure principale": "Teacher", "Infirmière Scolaire": "Nurse", "Infirmière": "Nurse",
+    "Professeur Principal": "Teacher", "Professeure principale": "Teacher", "Professeure": "Teacher", "Infirmière Scolaire": "Nurse", "Infirmière scolaire": "Nurse", "Infirmière": "Nurse",
     // German
     "Klassenlehrerin": "Teacher", "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse"
 });

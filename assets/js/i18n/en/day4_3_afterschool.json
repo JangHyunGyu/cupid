@@ -29,11 +29,11 @@
     },
     "confess_seo_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*Seoyeon turns around. The wind whips through her hair.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*My heart feels like it's going to burst out of my chest. — It's okay. This time.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain. You know your eyes turn into little crescent moons when you smile? You probably don't -- it's your own face."
+        "text": "Dain. I — I have something to tell you."
     },
     "confess_dain_yes_4": {
         "name": "{name}",

@@ -106,7 +106,7 @@
     },
     "choice_flirt_2": {
         "name": "ソヨン",
-        "text": "へえ。初日からそう来るんだ。名前、覚えとく。"
+        "text": "へぇ。初日からこんな人、初めてかも。*少し笑う。*"
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -314,7 +314,7 @@
     },
     "classroom_yuna_note_4": {
         "name": "{name}",
-        "text": "*字が綺麗だ。——少し緊張がほぐれる。*"
+        "text": "*薄紫色のインク。— 少し緊張が解ける。*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",

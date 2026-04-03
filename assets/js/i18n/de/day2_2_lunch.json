@@ -268,7 +268,7 @@
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "Diese Person, vielleicht hat er einfach seinen Abschluss gemacht? Ältere melden sich eh selten."
+        "text": "Ist die Person vielleicht plötzlich weg? Da verpasst man doch schnell mal, sich zu melden."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -388,7 +388,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "...Netter Typ."
+        "text": "*Blickt dorthin, wo Dain verschwunden ist.* ...Die hat aber ganz schön viel Energie."
     },
     "lunch2_seo_15": {
         "name": "{name}",

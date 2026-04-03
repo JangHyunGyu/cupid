@@ -73,7 +73,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*À côté de qui tu te tiendras. Je veux que tu réfléchisses sérieusement à ce que ce choix signifie*"
+        "text": "*...Moi, ça va. Fais ce que tu ne regretteras pas.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -238,7 +238,7 @@
     },
     "night3_cheat_reflect_3_ins6": {
         "name": "{name}",
-        "text": "*Seoyeon l'a dit. 'Ta seule réponse, ou rien du tout.'*"
+        "text": "*Seoyeon a dit. 'Je ne suis pas une option parmi d'autres.'*"
     },
     "night3_cheat_reflect_3_ins7": {
         "name": "{name}",
@@ -278,27 +278,19 @@
     },
     "night3_faithful_reflect_4_ins": {
         "name": "{name}",
-        "text": "*Une seconde. Mon doigt s'arrête. — Les mots de Minsu me reviennent. 'Refuser, c'est aussi de l'amour.'*"
+        "text": "*La galerie est vide. Là où était la photo de Sojeong. L'écran vide est d'autant plus net.*"
     },
     "night3_faithful_reflect_4_ins2": {
         "name": "{name}",
-        "text": "*...Refuser. Oui, je sais que je dois le faire. Je sais, mais.*"
+        "text": "*Effacer la photo, c'était facile. Un seul doigt suffisait. — Les sentiments, ça prend plus de temps.*"
     },
     "night3_faithful_reflect_4_ins3": {
         "name": "{name}",
-        "text": "*Mon doigt ne bouge pas. Posé sur le bouton supprimer.*"
-    },
-    "night3_faithful_reflect_4_ins4": {
-        "name": "{name}",
-        "text": "*C'était pareil dans mon ancien lycée. Je savais mais je ne pouvais pas. Et maintenant — je sais mais je ne peux toujours pas.*"
-    },
-    "night3_faithful_reflect_4_ins5": {
-        "name": "{name}",
-        "text": "*J'ai refermé mon téléphone. La photo est toujours là.*"
+        "text": "*Pourtant. Ce que j'ai effacé — me permet d'avancer.*"
     },
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
-        "text": "*...Avant comme maintenant, je ne suis qu'un lâche incapable de lâcher quoi que ce soit.*"
+        "text": "*J'ai refermé mon téléphone. La galerie est vide, et mon cœur est encore confus. — C'est déjà un pas.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",

@@ -29,11 +29,11 @@
     },
     "confess_seo_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*Seoyeon se retourne. Le vent fait voler ses cheveux.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*Mon cœur va sortir de ma poitrine. — Ça va aller. Cette fois-ci.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain. Tu sais que quand tu souris, tes yeux deviennent des petits croissants de lune ? Tu ne le sais sûrement pas — c'est ton propre visage."
+        "text": "Dain. J'ai — quelque chose à te dire."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
@@ -416,7 +416,7 @@
         "text": "*J'ouvre la porte. L'Infirmière est assise dans son fauteuil. Blouse blanche. Mais quelque chose est différent aujourd'hui. L'espièglerie a disparu.*"
     },
     "confess_dain_no_4_ins25": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Ah, tu es là."
     },
     "confess_dain_no_4_ins26": {
@@ -428,7 +428,7 @@
         "text": "Dernière consultation ?"
     },
     "confess_dain_no_4_ins28": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Consultation... *Tournant sa chaise* Oui. La dernière consultation."
     },
     "confess_dain_no_4_ins29": {
@@ -436,7 +436,7 @@
         "text": "*L'Infirmière fait semblant de ranger des papiers sur son bureau — mais elle a tourné la même page trois fois.*"
     },
     "confess_dain_no_4_ins30": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Je peux te poser une question ?"
     },
     "confess_dain_no_4_ins31": {
@@ -448,7 +448,7 @@
         "text": "*Elle touche ses lunettes. Derrière, ses yeux sont plus grands qu'on ne le pense. Des yeux qui se cachaient derrière l'espièglerie.*"
     },
     "confess_dain_no_4_ins33": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Tu viendras encore à l'infirmerie après avoir été diplômé ?"
     },
     "confess_dain_no_4_ins34": {
@@ -460,7 +460,7 @@
         "text": "*Je croise son regard. Son visage sérieux, sans aucune espièglerie. C'est la première fois qu'elle est aussi vulnérable.*"
     },
     "confess_dain_no_4_ins36": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Ah, non. C'est une question bizarre, hein ? Un prof ne devrait pas demander ça à un élève —"
     },
     "confess_dain_no_4_ins37": {
@@ -472,7 +472,7 @@
         "text": "*L'Infirmière se fige. La main qui tripotait ses lunettes s'arrête.*"
     },
     "confess_dain_no_4_ins39": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Pour de vrai ?"
     },
     "confess_dain_no_4_ins40": {
@@ -488,7 +488,7 @@
         "text": "*Un moment de silence. Derrière ses lunettes, ses yeux semblent humides. Les verres sont embués — de la buée ou des larmes, impossible de dire.*"
     },
     "confess_dain_no_4_ins43": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Retrouvant un ton enjoué malgré la voix qui tremble* Bon. Ta dernière consultation s'arrête là. Le prochain rendez-vous, je te le note pour après la remise des diplômes."
     },
     "confess_dain_no_4_ins44": {

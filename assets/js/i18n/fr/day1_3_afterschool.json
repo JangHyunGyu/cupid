@@ -251,7 +251,7 @@
         "text": "*J'ouvre la porte de l'infirmerie. Une légère odeur de désinfectant. Des rideaux blancs, un lit, un petit bureau. Une femme est assise au bureau. Blouse blanche, un stéthoscope autour du cou. Un carré lavande soigné, elle m'observe par-dessus ses lunettes, le menton posé sur une main. Elle était en train de lire — elle lève la tête.*"
     },
     "after_nurse_enter_2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Oh, un patient."
     },
     "after_nurse_enter_3": {
@@ -259,7 +259,7 @@
         "text": "J'ai un peu le vertige."
     },
     "after_nurse_enter_4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "C'est toi, le nouveau ? Premier jour, et te voilà déjà à l'infirmerie. Dur début, hein ?"
     },
     "after_nurse_enter_5": {
@@ -267,11 +267,11 @@
         "text": "*L'infirmière s'approche. Sa main se pose sur mon front.*"
     },
     "after_nurse_enter_6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Pas de fièvre... Tu fais peut-être juste un petit coup de tension."
     },
     "after_nurse_enter_7": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Pas de fièvre, mais... il faut te détendre un peu. Allez, allonge-toi. Dix minutes seulement."
     },
     "after_nurse_enter_choice": {
@@ -283,15 +283,15 @@
         ]
     },
     "after_nurse_enter_choice_a": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Observateur. C'est moi qui devrais m'inquiéter, pourtant."
     },
     "after_nurse_enter_choice_b": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "N'est-ce pas ? J'aime bien ici. — C'est calme, et si on oublie l'odeur de désinfectant, c'est parfait."
     },
     "after_nurse_enter_8": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Pas besoin de te soucier autant du vouvoiement ici. À l'infirmerie, tu peux relâcher un peu la pression. C'est fait pour ça."
     },
     "after_nurse_enter_9": {
@@ -299,19 +299,19 @@
         "text": "*Je bois de l'eau en regardant autour. Un petit pot de fleurs dans le coin.*"
     },
     "after_nurse_enter_10": {
-        "name": "Infirmière",
-        "text": "Du romarin. Je le fais pousser depuis l'époque où je bossais à l'hôpital. Ça remonte. J'aime bien être ici. Les élèves ne débarquent qu'avec de petites blessures."
+        "name": "Infirmière scolaire",
+        "text": "C'est une autre histoire... J'aime bien l'école. Ici, on n'a que des bobos."
     },
     "after_nurse_enter_11": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Si ça recommence à tourner, viens me voir. L'infirmerie est toujours ouverte. N'attends juste pas d'être à bout pour venir. Ça, ça m'inquiète."
     },
     "after_nurse_enter_12": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "La prochaine fois que tu te sens mal — ah, enfin, mieux vaut qu'il n'y ait pas de prochaine fois."
     },
     "after_nurse_freetalk": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
         "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
         "personality": "L'infirmière est joueuse et maligne, mais cache sa sincérité derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout avant d'arriver à l'école. Elle commence souvent par détendre l'atmosphère pour que les élèves respirent un peu."
@@ -449,7 +449,7 @@
         "text": "Comment vous avez deviné ?"
     },
     "after_nurse_enter_4_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Ton uniforme est raide comme du carton. Ça sent l'amidon. *Snif snif* Oh, il y a aussi une odeur de cerisier. Un élève transféré romantique."
     },
     "after_nurse_enter_4_ins3": {
@@ -469,7 +469,7 @@
         "text": "*Je m'allonge sur le lit. Le plafond est blanc.*"
     },
     "after_nurse_enter_7_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Tirant le rideau à moitié* Tu veux de l'eau ? Ou quelque chose de chaud ?"
     },
     "after_nurse_enter_7_ins3": {
@@ -481,7 +481,7 @@
         "text": "Mais vous êtes enseignante."
     },
     "after_nurse_enter_8_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Tendant un verre d'eau* Oui, je suis enseignante. Mais ici, le plus important, c'est que tu sois à l'aise."
     },
     "after_nurse_enter_8_ins3": {
@@ -493,7 +493,7 @@
         "text": "Cette plante — c'est la vôtre ?"
     },
     "after_nurse_enter_9_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Oui, du romarin. — Je l'ai depuis mes années à l'hôpital."
     },
     "after_nurse_enter_9_ins3": {
@@ -521,7 +521,7 @@
         "text": "Ça vous embête ?"
     },
     "after_nurse_enter_11_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Plissant les yeux* Si tu te sens mal et que tu continues quand même, évidemment que je vais m'inquiéter. C'est précisément pour ça que je suis là."
     },
     "after_nurse_enter_11_ins3": {
@@ -533,7 +533,7 @@
         "text": "*L'infirmière hausse légèrement les épaules, puis retrouve son sourire facile.*"
     },
     "after_nurse_enter_11_ins5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Elle n'a pas l'air très habituée à ce qu'on s'inquiète pour elle. — On dirait plutôt quelqu'un qui a l'habitude de veiller sur les autres.*"
     },
     "after_nurse_enter_11_ins6": {
@@ -541,7 +541,7 @@
         "text": "*Elle semble surprise qu'un patient s'inquiète pour elle. — Elle a toujours été celle qui prend soin des autres, jamais celle dont on prend soin.*"
     },
     "after_nurse_enter_11_ins7": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "N'est-ce pas ? C'est bien ici. — Calme, et si on oublie l'odeur de désinfectant, c'est parfait."
     },
     "after_nurse_enter_11_ins8": {
@@ -553,11 +553,11 @@
         "text": "*Je m'apprête à sortir de l'infirmerie quand — derrière moi.*"
     },
     "after_nurse_enter_11_ins10": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Oh, le nouveau."
     },
     "after_nurse_enter_11_ins11": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "C'est quoi ton prénom ?"
     },
     "after_nurse_enter_11_ins12": {

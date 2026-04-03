@@ -128,7 +128,7 @@
     },
     "after3_seo_6": {
         "name": "Seoyeon",
-        "text": "...Did you see?"
+        "text": "*Clears throat* ...It's nothing. Just forget it."
     },
     "after3_seo_7": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_yuna_choice1_3": {
         "name": "Yuna",
-        "text": "...Novels are. Fiction."
+        "text": "*Flips the notebook closed* ...But sometimes. Fiction can be more honest than reality."
     },
     "after3_yuna_choice1_react": {
         "name": "{name}",
@@ -509,7 +509,7 @@
     },
     "minsu_d3_8": {
         "name": "{name}",
-        "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to say 'no.' Because I never said anything.*"
+        "text": "*...The flashback ends. Minsu taps his forehead with a finger.*"
     },
     "minsu_d3_9": {
         "name": "{name}",
@@ -587,7 +587,7 @@
     },
     "after3_seo_7_ins": {
         "name": "Seoyeon",
-        "text": "The imperfect me."
+        "text": "*Looks down* ...I really didn't want you to see this."
     },
     "after3_dain_5_ins": {
         "name": "Dain",
@@ -703,7 +703,7 @@
     },
     "minsu_d3_4_ins2": {
         "name": "Minsu",
-        "text": "It's not 'later' anymore. It's now."
+        "text": "Trying to be 'the good guy' by accepting everyone — that's not kindness, it's cowardice."
     },
     "minsu_d3_5_ins": {
         "name": "{name}",

@@ -1,11 +1,11 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Day five. The last day. The uniform feels comfortable now. — Because of these people. I know that.*"
+        "text": "*Day five. It's Sunday, but there's a school event. My uniform feels comfortable now. — It's because of them. I know it.*"
     },
     "morning5_start_2": {
         "name": "{name}",
-        "text": "*There's a school event today. The final one. The moment I step into the classroom — signals come from three directions.*"
+        "text": "*The final event. All the time we've spent together culminates today.*"
     },
     "morning5_mood_check": {
         "name": "System",
@@ -29,7 +29,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Passing by the literature club's display corner in the hallway — a short story is pinned to the bulletin board. Title: 'To the Person I Met in the Library.' It's Yuna's. — A story only the protagonist would recognize.*"
+        "text": "*A character in the novel drapes a blanket over someone sleeping in the library. — That's a scene only I would know. Yuna wrote this.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -126,8 +126,8 @@
         "text": "Oh? {name}. — It's the last day. The last day of the event. Five days. — Went by fast."
     },
     "hidden_nurse_d5_2": {
-        "name": "School Nurse",
-        "text": "*With a light smile* Come visit after graduation. ...Or before that, if you're hurt."
+        "name": "{name}",
+        "text": "*It's a break during the event. I'm walking past the nurse's office when — the door opens.*"
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -135,7 +135,7 @@
     },
     "hidden_nurse_d5_4": {
         "name": "School Nurse",
-        "text": "*Smiling again* Ask me that after graduation. — I'll answer then."
+        "text": "...Press down hard so the band-aid doesn't fall off. — I won't put it on for you today."
     },
     "hidden_nurse_d5_5": {
         "name": "School Nurse",
@@ -177,7 +177,7 @@
     },
     "morning5_start_ins": {
         "name": "{name}",
-        "text": "*There's a school event today. The last one.*"
+        "text": "*The moment I step into the classroom — I get signals from three directions.*"
     },
     "morning5_start_2_ins": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "hidden_homeroom_d5_6_ins3": {
         "name": "Homeroom Teacher",
-        "text": "Haven't shown this to anyone in seven years. — It's not exactly part of my job description."
+        "text": "...Once you've read it, tell me what you really think. — No need to be polite with me."
     },
     "hidden_homeroom_d5_6_ins4": {
         "name": "{name}",
@@ -309,7 +309,7 @@
     },
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
-        "text": "*Break during the event. Passing by the nurse's office — the door opens. The school nurse steps out.*"
+        "text": "*The school nurse steps out. She's right in front of me.*"
     },
     "hidden_nurse_d5_2_ins2": {
         "name": "{name}",
