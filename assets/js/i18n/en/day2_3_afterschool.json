@@ -17,7 +17,7 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*But — the scrape on my elbow from PE has been bothering me. I should stop by the nurse's office.*"
+        "text": "*My elbow stings. I should stop by the nurse's office.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Scraped my elbow during PE. Nothing major, but it's bleeding a little.*"
+        "text": "*When I roll up my sleeve, there's a small scrape on my elbow. It's nothing serious, but it's bleeding a little.*"
     },
     "hidden_nurse_d2_2": {
         "name": "School Nurse",

@@ -17,7 +17,7 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Pero — el rasguño del codo de la clase de educación física me ha estado molestando. Debería pasar por la enfermería.*"
+        "text": "*Me escuece el codo. Debería pasar por la enfermería.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -496,7 +496,7 @@
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Me raspé el codo en educación física. No es nada grave, pero sangra un poco.*"
+        "text": "*Al subirme la manga, veo un pequeño raspón en el codo. No es nada grave, pero sangra un poco.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Enfermera",
