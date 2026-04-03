@@ -525,11 +525,27 @@
     },
     "friend_3": {
         "name": "{name}",
+        "text": "*Es gab eindeutig Momente, in denen ich hätte sagen können, dass ich sie mag. Und trotzdem habe ich wieder den sichersten Ausdruck gewählt.*"
+    },
+    "friend_route_check": {
+        "name": "System",
         "text": ""
     },
     "friend_4": {
         "name": "{name}",
         "text": "*Beim Verlassen des Schultors ist eine Nachricht auf meinem Handy. 'Danke für heute lol' — Der Ton eines Freundes. Ein perfekt freundschaftlicher Ton.*"
+    },
+    "friend_4_seo": {
+        "name": "{name}",
+        "text": "*Als ich das Schultor passiere, kommt eine Nachricht. 'Dank dir war es heute weniger unangenehm. Komm gut heim.' Freundlich, aber ohne jede Lücke. Genau der Ton von jemandem, der die Grenze auswählt und einhält.*"
+    },
+    "friend_4_yuna": {
+        "name": "{name}",
+        "text": "*Als ich das Schultor passiere, kommt eine Nachricht. '...Danke. Für heute.' Kurz. Mit Punkt am Ende. Ein Satz, der mich früher aufgeregt hätte, fühlt sich jetzt wie eine Grenze an.*"
+    },
+    "friend_4_dain": {
+        "name": "{name}",
+        "text": "*Als ich das Schultor passiere, kommt eine Nachricht. 'Hey, komm gut heim! Danke für heute!' Die Ausrufezeichen sind zurück. Das ist beruhigend und fühlt sich doch kälter an. Es sind Ausrufezeichen für eine Freundin.*"
     },
     "friend_5": {
         "name": "{name}",

@@ -99,7 +99,7 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*Wir drei haben geteilt. Awkward, aber — nicht schlecht. Niemand wurde sauer. Seltsam, anscheinend gibt es auch eine Welt, in der das möglich ist.*"
+        "text": "*Wir haben es zu dritt geteilt. Niemand wurde sofort wütend. Trotzdem wirkte keine von ihnen entspannt. Wir haben es nur auf heute vertagt.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*Ich schlug vor, alles zu teilen. Etwas unbeholfen, aber nicht schlecht. Alle drei lächeln. Ob echt oder gespielt, kann ich nicht sagen.*"
+        "text": "*Ich sagte, wir sollten es zusammen teilen. Da sind Lächeln, aber die Luft fühlt sich seltsam schwer an. Alle drei tun so, als wäre alles in Ordnung.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
