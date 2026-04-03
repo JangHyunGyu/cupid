@@ -2,14 +2,584 @@
   "stats": {
     "byLang": {
       "ko": 0,
-      "en": 0,
-      "ja": 0,
-      "es": 0,
-      "fr": 0,
-      "de": 0
+      "en": 14,
+      "ja": 14,
+      "es": 14,
+      "fr": 14,
+      "de": 14
     },
-    "bySeverity": {},
-    "byType": {}
+    "bySeverity": {
+      "WARNING": 40,
+      "ERROR": 30
+    },
+    "byType": {
+      "EXTRA_KEY": 10,
+      "ITALIC_MISSING": 10,
+      "EMPTY_TEXT": 30,
+      "NAME_MISMATCH": 15,
+      "QUOTE_MISSING": 5
+    }
   },
-  "issues": []
+  "issues": [
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "en",
+      "file": "day1_2_lunch",
+      "node": "lunch_dain_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "en",
+      "file": "day1_2_lunch",
+      "node": "lunch_yuna_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "ja",
+      "file": "day1_2_lunch",
+      "node": "lunch_dain_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "ja",
+      "file": "day1_2_lunch",
+      "node": "lunch_yuna_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "es",
+      "file": "day1_2_lunch",
+      "node": "lunch_dain_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "es",
+      "file": "day1_2_lunch",
+      "node": "lunch_yuna_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "fr",
+      "file": "day1_2_lunch",
+      "node": "lunch_dain_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "fr",
+      "file": "day1_2_lunch",
+      "node": "lunch_yuna_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "de",
+      "file": "day1_2_lunch",
+      "node": "lunch_dain_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "EXTRA_KEY",
+      "lang": "de",
+      "file": "day1_2_lunch",
+      "node": "lunch_yuna_1_aff_high",
+      "detail": "ko에 없는 키"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_joke_ins",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_joke_ins",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_joke_ins",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_joke_ins",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_joke_ins",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "good_1b",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "good_1b",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "good_1b",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "good_1b",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "good_1b",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "good_1c",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "good_1c",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "good_1c",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "good_1c",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "good_1c",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "mayhem_6",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "mayhem_6",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "mayhem_6",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "mayhem_6",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "mayhem_6",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "harem_7",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "harem_7",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "harem_7",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "harem_7",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "harem_7",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "confess_fail_3",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "confess_fail_3",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "confess_fail_3",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "confess_fail_3",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "confess_fail_3",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "confess_fail_4",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "confess_fail_4",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "confess_fail_4",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "confess_fail_4",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "ERROR",
+      "type": "EMPTY_TEXT",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "confess_fail_4",
+      "detail": "text 비어있음"
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "en",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"ソヨン\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "es",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "fr",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "de",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_react_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "en",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_neck_low_ins2",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_neck_low_ins2",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"ソヨン\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "es",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_neck_low_ins2",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "fr",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_neck_low_ins2",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "de",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_neck_low_ins2",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Seoyeon\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "en",
+      "file": "day2_3_afterschool",
+      "node": "minsu_warn_1_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Minsu\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "minsu_warn_1_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"ミンス\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "es",
+      "file": "day2_3_afterschool",
+      "node": "minsu_warn_1_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Minsu\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "fr",
+      "file": "day2_3_afterschool",
+      "node": "minsu_warn_1_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Minsu\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "NAME_MISMATCH",
+      "lang": "de",
+      "file": "day2_3_afterschool",
+      "node": "minsu_warn_1_ins",
+      "detail": "\"{name}\" -> 예상:\"{name}\" 실제:\"Minsu\""
+    },
+    {
+      "severity": "WARNING",
+      "type": "QUOTE_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "good_3_seo",
+      "detail": "ko에 따옴표 있으나 번역에 없음"
+    },
+    {
+      "severity": "WARNING",
+      "type": "QUOTE_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "good_3_seo",
+      "detail": "ko에 따옴표 있으나 번역에 없음"
+    },
+    {
+      "severity": "WARNING",
+      "type": "QUOTE_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "good_3_seo",
+      "detail": "ko에 따옴표 있으나 번역에 없음"
+    },
+    {
+      "severity": "WARNING",
+      "type": "QUOTE_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "good_3_seo",
+      "detail": "ko에 따옴표 있으나 번역에 없음"
+    },
+    {
+      "severity": "WARNING",
+      "type": "QUOTE_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "good_3_seo",
+      "detail": "ko에 따옴표 있으나 번역에 없음"
+    }
+  ]
 }

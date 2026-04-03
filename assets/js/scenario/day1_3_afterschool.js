@@ -269,7 +269,7 @@ const _scenes = {
     },
     "after_miss_seoyeon_8": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_pout.png",
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_end"
     },
@@ -474,7 +474,7 @@ const _scenes = {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "choices": [
-            { "next": "after_hidden_nurse_intro_ins", "stats": {"Nurse":{"affinity":7}} },
+            { "next": "after_hidden_nurse_intro_ins" },
             { "next": "after_nurse_skip", "stats": {"Nurse":{"affinity":0}} }
         ]
     },
@@ -501,6 +501,7 @@ const _scenes = {
     "after_nurse_enter_2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
+        "stats": {"Nurse":{"affinity":7}},
         "next": "after_nurse_enter_2_ins"
     },
     "after_nurse_enter_3": {
