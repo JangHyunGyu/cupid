@@ -21002,9 +21002,7 @@
   - [`nurse_day5`] → `ending_start`
   - [`day3_caught_multiple_dates`] → `ending_start`
   - [`ending_harem`] → `after5_set_harem`
-  - [`route_seoyeon`] → `after5_last_chance_1`
-  - [`route_dain`] → `after5_last_chance_1`
-  - [`route_yuna`] → `after5_last_chance_1`
+  - [`day4_waited`] → `after5_last_chance_1`
   - [기본] → `ending_start`
 
 <!-- i18n -->

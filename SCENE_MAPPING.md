@@ -727,18 +727,18 @@
 
 | 우선순위 | 조건 | 결과 |
 |---------|------|------|
-| 1 | `homeroom_day5` + 호감 80+ + !multiple_dates | **담임 PERFECT END** |
+| 1 | `homeroom_day5` + 호감 80+ | **담임 PERFECT END** |
 | 2 | `homeroom_day5` + 호감 60~79 | **담임 TRUE LOVE END** |
 | 3 | `homeroom_day5` (기타) | **담임 GOOD END** |
-| 4 | `nurse_day5` + 호감 80+ + !multiple_dates | **보건 PERFECT END** |
+| 4 | `nurse_day5` + 호감 80+ | **보건 PERFECT END** |
 | 5 | `nurse_day5` + 호감 60~79 | **보건 TRUE LOVE END** |
 | 6 | `nurse_day5` (기타) | **보건 GOOD END** |
 | 7 | `day3_caught_multiple_dates` | **MAYHEM END** |
 | 8 | `ending_harem` | **HAREM END** |
-| 9 | `confession_accepted` + 호감 80+ | **PERFECT END** |
-| 10 | `confession_accepted` + 호감 60~79 | **TRUE LOVE END** |
-| 11 | `confession_accepted` + 호감 40~59 | **GOOD END** |
-| 12 | `confession_accepted` + 호감 <40 | **BITTERSWEET END** |
+| 9 | `day4_confession_accepted` + 호감 80+ | **PERFECT END** |
+| 10 | `day4_confession_accepted` + 호감 60~79 | **TRUE LOVE END** |
+| 11 | `day4_confession_accepted` + 호감 40~59 | **GOOD END** |
+| 12 | `day4_confession_accepted` + 호감 <40 | **BITTERSWEET END** |
 | 13 | `day5_confessed` + 호감 50+ | **GOOD END** (뒤늦은 고백) |
 | 14 | `day5_confessed` + 호감 <50 | **CONFESS FAIL END** |
 | 15 | `day4_waited` | **FRIEND END** |
@@ -824,7 +824,7 @@
 
 ---
 
-### GOOD END — 호감 40~59 / 구제 / 뒤늦은 고백
+### GOOD END — 고백 수락 40~59 / 뒤늦은 고백 50+
 
 | 루트 | 배경 전환 | 캐릭터 | 엔딩 CG |
 |------|-----------|--------|---------|
