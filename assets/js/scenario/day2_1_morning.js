@@ -162,12 +162,12 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_seo_4": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_seo_5"
     },
     "morning2_seo_5": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_minsu_1"
     },
     "morning2_minsu_1": {
@@ -207,12 +207,12 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_claim_4": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_dain_claim_5"
     },
     "morning2_dain_claim_5": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning2_dain_claim_6"
     },
     "morning2_dain_claim_6": {
@@ -273,27 +273,27 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_dain_react_2": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_angry.png",
         "next": "morning2_dain_react_3"
     },
     "morning2_dain_react_3": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_angry.png",
         "next": "morning2_dain_react_4"
     },
     "morning2_dain_react_4": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_angry.png",
         "next": "morning2_dain_react_5"
     },
     "morning2_dain_react_5": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_angry.png",
         "next": "morning2_dain_react_6"
     },
     "morning2_dain_react_6": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_angry.png",
         "next": "morning2_haeun_1"
     },
     "morning2_haeun_1": {
@@ -328,7 +328,7 @@ Object.assign(SCENARIO[2], {
     },
     "morning2_haeun_6b": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_worried.png",
+        "character": "assets/images/characters/haeun_normal.png",
         "next": "morning2_haeun_6c"
     },
     "morning2_haeun_6c": {

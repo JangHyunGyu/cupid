@@ -24,9 +24,50 @@
         "name": "{name}",
         "text": "*옥상. 처음 와보는 장소다. 바람이 시원하고, 시야가 탁 트여 있다. 서연이 도시락을 펼치고 있다.*"
     },
+    "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {
         "name": "서연",
         "text": "여기까지 올라왔네. 용기 있다."
+    },
+    "lunch2_seo_2b_dain": {
+        "name": "서연",
+        "text": "어제는 매점 쪽이더니. 오늘은 여기까지 왔네."
+    },
+    "lunch2_seo_3b_dain": {
+        "name": "{name}",
+        "text": "어제는 다인이 끌고 갔고, 오늘은 내가 올라오고 싶었어."
+    },
+    "lunch2_seo_4b_dain": {
+        "name": "서연",
+        "text": "...그건 좀 다르네."
+    },
+    "lunch2_seo_5b_dain": {
+        "name": "{name}",
+        "text": "바람도 좋고. 네 도시락도 계속 생각났고."
+    },
+    "lunch2_seo_6b_dain": {
+        "name": "서연",
+        "text": "...생각보다 솔직하네."
+    },
+    "lunch2_seo_2b_yuna": {
+        "name": "서연",
+        "text": "쪽지까지 받고도 옥상으로 왔네."
+    },
+    "lunch2_seo_3b_yuna": {
+        "name": "{name}",
+        "text": "어제는 조용한 쪽이었으니까, 오늘은 네 쪽이 궁금했어."
+    },
+    "lunch2_seo_4b_yuna": {
+        "name": "서연",
+        "text": "...내 쪽?"
+    },
+    "lunch2_seo_5b_yuna": {
+        "name": "{name}",
+        "text": "여기 바람이랑, 회장님 도시락이 어떤 조합인지 궁금했거든."
+    },
+    "lunch2_seo_6b_yuna": {
+        "name": "서연",
+        "text": "*피식* 그거, 묘하게 설득력 있네."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -36,6 +77,38 @@
         "name": "{name}",
         "text": "*다인과 매점으로. 첫 가위바위보 대결.*"
     },
+    "lunch2_dain_1b_seo": {
+        "name": "{name}",
+        "text": "*다인과 매점으로. 어제는 도시락이었고, 오늘은 빵 냄새가 먼저 난다.*"
+    },
+    "lunch2_dain_2b_seo": {
+        "name": "다인",
+        "text": "오, 회장님 도시락 말고 오늘은 내 쪽이네?!"
+    },
+    "lunch2_dain_3b_seo": {
+        "name": "{name}",
+        "text": "어제는 회장님 페이스였고, 오늘은 네 페이스도 궁금했어."
+    },
+    "lunch2_dain_4b_seo": {
+        "name": "다인",
+        "text": "좋아!! 그 말 취소 못 해! 바로 소보로 걸고 한 판!!"
+    },
+    "lunch2_dain_1b_yuna": {
+        "name": "{name}",
+        "text": "*다인과 매점으로. 어제는 조용한 도서관이었는데, 오늘은 빵 굽는 냄새와 소음이 먼저 밀려온다.*"
+    },
+    "lunch2_dain_2b_yuna": {
+        "name": "다인",
+        "text": "야! 어제는 그림자처럼 있더니 오늘은 제대로 놀아주는 거지?!"
+    },
+    "lunch2_dain_3b_yuna": {
+        "name": "{name}",
+        "text": "조용한 데 갔으면, 시끄러운 데도 가봐야지."
+    },
+    "lunch2_dain_4b_yuna": {
+        "name": "다인",
+        "text": "좋아!! 그 균형감각 인정! 그럼 한 판!!"
+    },
     "lunch2_yuna_1": {
         "name": "{name}",
         "text": "*도서관 별관. 본관보다 오래된 건물이다. 학생이 거의 없다.*"
@@ -44,9 +117,58 @@
         "name": "{name}",
         "text": "*계단을 올라가니 복도 끝에 유나가 서 있다. 벽에 기대어 책을 읽고 있다.*"
     },
+    "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
         "name": "유나",
         "text": "...왔네."
+    },
+    "lunch2_yuna_3_seo": {
+        "name": "유나",
+        "text": "...왔네."
+    },
+    "lunch2_yuna_4_seo": {
+        "name": "{name}",
+        "text": "쪽지 받았거든."
+    },
+    "lunch2_yuna_5_seo": {
+        "name": "유나",
+        "text": "어제는 회장 옆이더니."
+    },
+    "lunch2_yuna_6_seo": {
+        "name": "{name}",
+        "text": "오늘은 네가 불러서 왔어."
+    },
+    "lunch2_yuna_7_seo": {
+        "name": "유나",
+        "text": "...의외네."
+    },
+    "lunch2_yuna_8_seo": {
+        "name": "{name}",
+        "text": "그래서 더 와보고 싶었어."
+    },
+    "lunch2_yuna_3_yuna": {
+        "name": "유나",
+        "text": "...또 왔네."
+    },
+    "lunch2_yuna_4_yuna": {
+        "name": "{name}",
+        "text": "이번엔 쪽지까지 줬잖아."
+    },
+    "lunch2_yuna_5_yuna": {
+        "name": "유나",
+        "text": "어제도 조용했는데. 오늘도?"
+    },
+    "lunch2_yuna_6_yuna": {
+        "name": "{name}",
+        "text": "어제 편했거든. 그래서 다시 왔어."
+    },
+    "lunch2_yuna_7_yuna": {
+        "name": "유나",
+        "text": "...그래서."
+    },
+    "lunch2_yuna_8_yuna": {
+        "name": "{name}",
+        "text": "응. 네 옆은 생각보다 안 불편했어."
     },
     "lunch2_yuna_4": {
         "name": "{name}",

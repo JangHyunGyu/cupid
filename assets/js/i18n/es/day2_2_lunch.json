@@ -24,9 +24,50 @@
         "name": "{name}",
         "text": "*La azotea. Primera vez aquí. La brisa es fresca y la vista es amplia. Seoyeon está sacando su almuerzo.*"
     },
+    "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {
         "name": "Seoyeon",
         "text": "Subiste hasta aquí. Valiente."
+    },
+    "lunch2_seo_2b_dain": {
+        "name": "Seoyeon",
+        "text": "Ayer ibas hacia la tienda. Hoy has subido hasta aquí."
+    },
+    "lunch2_seo_3b_dain": {
+        "name": "{name}",
+        "text": "Ayer Dain me arrastró. Hoy quería venir aquí por mi cuenta."
+    },
+    "lunch2_seo_4b_dain": {
+        "name": "Seoyeon",
+        "text": "...Eso sí es distinto."
+    },
+    "lunch2_seo_5b_dain": {
+        "name": "{name}",
+        "text": "La brisa está bien. Y no dejaba de pensar en tu almuerzo."
+    },
+    "lunch2_seo_6b_dain": {
+        "name": "Seoyeon",
+        "text": "...Eres más sincero de lo que esperaba."
+    },
+    "lunch2_seo_2b_yuna": {
+        "name": "Seoyeon",
+        "text": "Recibiste una nota y aun así viniste a la azotea."
+    },
+    "lunch2_seo_3b_yuna": {
+        "name": "{name}",
+        "text": "Ayer fue la opción tranquila. Hoy me dio curiosidad tu lado."
+    },
+    "lunch2_seo_4b_yuna": {
+        "name": "Seoyeon",
+        "text": "...¿Mi lado?"
+    },
+    "lunch2_seo_5b_yuna": {
+        "name": "{name}",
+        "text": "Quería saber cómo se sentían juntas esta brisa y la fiambrera de la presidenta."
+    },
+    "lunch2_seo_6b_yuna": {
+        "name": "Seoyeon",
+        "text": "*Se ríe por lo bajo* Eso es extrañamente convincente."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -36,6 +77,38 @@
         "name": "{name}",
         "text": "*A la tienda con Dain. Primer duelo de piedra-papel-tijera.*"
     },
+    "lunch2_dain_1b_seo": {
+        "name": "{name}",
+        "text": "*A la tienda con Dain. Ayer fue una fiambrera; hoy lo primero que llega es el olor a pan.*"
+    },
+    "lunch2_dain_2b_seo": {
+        "name": "Dain",
+        "text": "Oh, ¿o sea que hoy eliges mi lado y no la fiambrera de la presidenta?!"
+    },
+    "lunch2_dain_3b_seo": {
+        "name": "{name}",
+        "text": "Ayer fue el ritmo de la presidenta. Hoy también quería ver el tuyo."
+    },
+    "lunch2_dain_4b_seo": {
+        "name": "Dain",
+        "text": "¡¡Bien!! ¡Eso no lo puedes retirar! ¡Una ronda con soboro en juego!!"
+    },
+    "lunch2_dain_1b_yuna": {
+        "name": "{name}",
+        "text": "*A la tienda con Dain. Ayer fue la biblioteca silenciosa; hoy llegan primero el olor a pan y el ruido.*"
+    },
+    "lunch2_dain_2b_yuna": {
+        "name": "Dain",
+        "text": "¡Eh! Ayer estabas callado como una sombra, ¿y hoy sí vienes a divertirte de verdad?!"
+    },
+    "lunch2_dain_3b_yuna": {
+        "name": "{name}",
+        "text": "Si fui a un sitio tranquilo, también tengo que probar uno ruidoso."
+    },
+    "lunch2_dain_4b_yuna": {
+        "name": "Dain",
+        "text": "¡¡Bien!! ¡Respeto ese sentido del equilibrio! ¡Entonces, una ronda!!"
+    },
     "lunch2_yuna_1": {
         "name": "{name}",
         "text": "*El anexo de la biblioteca. Un edificio más antiguo que el principal. Casi no hay estudiantes.*"
@@ -44,9 +117,58 @@
         "name": "{name}",
         "text": "*Subo las escaleras y encuentro a Yuna al final del pasillo. Está apoyada contra la pared, leyendo un libro.*"
     },
+    "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
         "name": "Yuna",
         "text": "...Viniste."
+    },
+    "lunch2_yuna_3_seo": {
+        "name": "Yuna",
+        "text": "...Viniste."
+    },
+    "lunch2_yuna_4_seo": {
+        "name": "{name}",
+        "text": "Recibí tu nota."
+    },
+    "lunch2_yuna_5_seo": {
+        "name": "Yuna",
+        "text": "Ayer estabas con la presidenta."
+    },
+    "lunch2_yuna_6_seo": {
+        "name": "{name}",
+        "text": "Hoy tú me llamaste aquí."
+    },
+    "lunch2_yuna_7_seo": {
+        "name": "Yuna",
+        "text": "...Inesperado."
+    },
+    "lunch2_yuna_8_seo": {
+        "name": "{name}",
+        "text": "Por eso me dieron más ganas de venir."
+    },
+    "lunch2_yuna_3_yuna": {
+        "name": "Yuna",
+        "text": "...Has vuelto."
+    },
+    "lunch2_yuna_4_yuna": {
+        "name": "{name}",
+        "text": "Esta vez hasta me dejaste una nota."
+    },
+    "lunch2_yuna_5_yuna": {
+        "name": "Yuna",
+        "text": "Ayer también fue silencioso. ¿Hoy también?"
+    },
+    "lunch2_yuna_6_yuna": {
+        "name": "{name}",
+        "text": "Ayer estuve a gusto. Por eso volví."
+    },
+    "lunch2_yuna_7_yuna": {
+        "name": "Yuna",
+        "text": "...Con que por eso."
+    },
+    "lunch2_yuna_8_yuna": {
+        "name": "{name}",
+        "text": "Sí. A tu lado fue menos incómodo de lo que esperaba."
     },
     "lunch2_yuna_4": {
         "name": "{name}",

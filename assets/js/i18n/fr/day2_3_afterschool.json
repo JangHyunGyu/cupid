@@ -64,14 +64,6 @@
         "name": "{name}",
         "text": "*Je sers. — Étonnamment, le deuxième service passe proprement au-dessus du filet.*"
     },
-    "after2_dain_10": {
-        "name": "Dain",
-        "text": "*Les yeux écarquillés* Hein ? J'allais aller doucement, mais finalement non."
-    },
-    "after2_dain_11": {
-        "name": "{name}",
-        "text": "*Les échanges se prolongent. Le mouvement de Dain est — clairement au-dessus de la moyenne. Rapide, précis, de la mémoire musculaire en action.*"
-    },
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*On est sortis du gymnase et on a marché dans la rue.*"
@@ -607,10 +599,6 @@
     "after2_dain_end_ins2": {
         "name": "{name}",
         "text": "*Dain souffle sur le tteokbokki et parle.*"
-    },
-    "after2_dain_end_ins3": {
-        "name": "{name}",
-        "text": "*Le stand de tteokbokki près de l'école.*"
     },
     "after2_seo_4_ins": {
         "name": "{name}",

@@ -64,14 +64,6 @@
         "name": "{name}",
         "text": "*Ich schlage auf. — Überraschenderweise geht der zweite Aufschlag sauber übers Netz.*"
     },
-    "after2_dain_10": {
-        "name": "Dain",
-        "text": "*Mit großen Augen* Huh? Ich wollte eigentlich locker spielen, aber das geht wohl nicht."
-    },
-    "after2_dain_11": {
-        "name": "{name}",
-        "text": "*Der Ballwechsel geht hin und her. Dains Bewegung ist — eindeutig nicht gewöhnlich. Schnell, präzise, Muskelgedächtnis in Aktion.*"
-    },
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*Wir verließen die Sporthalle und gingen die Straße entlang.*"
@@ -607,10 +599,6 @@
     "after2_dain_end_ins2": {
         "name": "{name}",
         "text": "*Dain pustet auf den Tteokbokki und redet.*"
-    },
-    "after2_dain_end_ins3": {
-        "name": "{name}",
-        "text": "*Der Tteokbokki-Laden in der Nähe der Schule.*"
     },
     "after2_seo_4_ins": {
         "name": "{name}",

@@ -64,14 +64,6 @@
         "name": "{name}",
         "text": "*서브를 한다. — 의외로 두 번째 서브가 깔끔하게 넘어간다.*"
     },
-    "after2_dain_10": {
-        "name": "다인",
-        "text": "*눈이 커지며* 어? 봐주려고 했는데 안 되겠네."
-    },
-    "after2_dain_11": {
-        "name": "{name}",
-        "text": "*랠리가 오간다. 다인의 움직임은 — 확실히 보통이 아니다. 빠르고, 정확하고, 몸이 기억하고 있는 움직임.*"
-    },
     "after2_dain_11b": {
         "name": "{name}",
         "text": "*체육관을 나와 거리를 걸었다.*"
@@ -607,10 +599,6 @@
     "after2_dain_end_ins2": {
         "name": "{name}",
         "text": "*다인이 떡볶이를 후후 불며 말한다.*"
-    },
-    "after2_dain_end_ins3": {
-        "name": "{name}",
-        "text": "*학교 앞 떡볶이집.*"
     },
     "after2_seo_4_ins": {
         "name": "{name}",

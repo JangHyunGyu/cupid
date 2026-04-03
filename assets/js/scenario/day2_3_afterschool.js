@@ -17,7 +17,7 @@ const _scenes = {
     },
     "after2_msg_dain": {
         "background": "assets/images/background/room_school.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_active.png","opacity":0.35}},
+        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "after2_msg_seo"
     },
     "after2_msg_seo": {
@@ -58,32 +58,32 @@ const _scenes = {
     },
     "after2_dain_2": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "after2_dain_3"
     },
     "after2_dain_3": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "after2_dain_4"
     },
     "after2_dain_4": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "after2_dain_5"
     },
     "after2_dain_5": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "after2_dain_6"
     },
     "after2_dain_6": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_active.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "after2_dain_7"
     },
     "after2_dain_7": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_8"
     },
     "after2_dain_8": {
@@ -93,18 +93,8 @@ const _scenes = {
     },
     "after2_dain_9": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_9_ins"
-    },
-    "after2_dain_10": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "after2_dain_11"
-    },
-    "after2_dain_11": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "after2_dain_11b"
     },
     "after2_dain_11b": {
         "background": "assets/images/background/street.png",
@@ -757,33 +747,33 @@ const _scenes = {
     },
     "after2_dain_9_ins": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after2_dain_9_ins2"
     },
     "after2_dain_9_ins2": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_active.png",
         "next": "after2_dain_9_ins3"
     },
     "after2_dain_9_ins3": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_active.png",
         "next": "after2_dain_9_ins4"
     },
     "after2_dain_9_ins4": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_active.png",
         "next": "after2_dain_9_ins5"
     },
     "after2_dain_9_ins5": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_active.png",
         "next": "after2_dain_9_ins6"
     },
     "after2_dain_9_ins6": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "after2_dain_10"
+        "character": "assets/images/characters/dain_sweat.png",
+        "next": "after2_dain_11b"
     },
     "after2_dain_end_ins": {
         "background": "assets/images/background/store.png",
@@ -791,11 +781,6 @@ const _scenes = {
         "next": "after2_dain_end_ins2"
     },
     "after2_dain_end_ins2": {
-        "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "after2_dain_end_ins3"
-    },
-    "after2_dain_end_ins3": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_laugh.png",
         "next": "after2_dain_end_2"
