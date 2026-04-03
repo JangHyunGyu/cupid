@@ -260,7 +260,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Enfermera",
-        "text": "Eres el nuevo, ¿verdad? Ya en la enfermería el primer día. Debes estar estresado~"
+        "text": "Tú eres el transferido, ¿no? Primer día y ya en la enfermería. Vaya estreno, ¿eh?"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_6": {
         "name": "Enfermera",
-        "text": "No tienes fiebre~... Puede que tengas la presión baja."
+        "text": "No tienes fiebre... Puede que solo tengas un poco baja la tensión."
     },
     "after_nurse_enter_7": {
         "name": "Enfermera",
@@ -300,11 +300,11 @@
     },
     "after_nurse_enter_10": {
         "name": "Enfermera",
-        "text": "Romero. — Lo tengo desde que trabajaba en el hospital. Historia antigua~ Me gusta este lugar. Aquí solo vienen con rasguños."
+        "text": "Romero. Lo cultivo desde que trabajaba en el hospital. Ya hace bastante de eso. Me gusta estar aquí. La gente solo viene por raspones o heridas leves."
     },
     "after_nurse_enter_11": {
         "name": "Enfermera",
-        "text": "Si te vuelve el mareo, puedes venir~ La enfermería siempre está abierta. Solo no esperes hasta estar aguantando a la fuerza. Eso sí me preocupa."
+        "text": "Si te vuelve a dar un mareo, ven a verme. La enfermería siempre está abierta. Solo no esperes hasta estar al límite. Eso sí me preocupa."
     },
     "after_nurse_enter_12": {
         "name": "Enfermera",

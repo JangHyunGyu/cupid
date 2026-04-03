@@ -368,7 +368,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "Enfermera",
-        "text": "...¡Es broma~ anda, ve a clase!"
+        "text": "...Es broma. Anda, vete a clase."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Enfermera",
-        "text": "*De nuevo juguetona* ¡Ay, por favor~ Esto es cortesía de la casa. — Vuelve cuando quieras. Con heridas o sin ellas."
+        "text": "*Recuperando el tono juguetón* Anda ya, por esto no pasa nada. Corre por cuenta de la casa. Vuelve cuando quieras. Estés herido o no."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -814,7 +814,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "Enfermera",
-        "text": "*Apenas logrando sonreír* ¡Era broma~ Anda, vete!"
+        "text": "*Esbozando apenas una sonrisa* Es broma. Venga, anda."
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",

@@ -516,7 +516,7 @@
     },
     "hidden_nurse_d2_4": {
         "name": "School Nurse",
-        "text": "Hold still~..."
+        "text": "Hold still..."
     },
     "hidden_nurse_d2_5": {
         "name": "School Nurse",
@@ -544,7 +544,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
-        "text": "You didn't see that, right? Secret~ Even teachers have secrets."
+        "text": "You didn't see that, right? Secret. Teachers get to have secrets too."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -560,7 +560,7 @@
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "School Nurse",
-        "text": "*laughs lightly* Secret~ Teachers have secrets too."
+        "text": "*Laughs softly* Secret. Teachers get to have secrets too."
     },
     "hidden_nurse_d2_8": {
         "name": "School Nurse",
@@ -568,7 +568,7 @@
     },
     "hidden_nurse_d2_9": {
         "name": "School Nurse",
-        "text": "You can come even without a reason. — Well, not during class~! After school!"
+        "text": "You can come by even without a reason. Just not during class. After school."
     },
     "hidden_nurse_d2_freetalk": {
         "name": "School Nurse",

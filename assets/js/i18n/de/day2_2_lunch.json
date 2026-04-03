@@ -250,7 +250,7 @@
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Ach komm, wer braucht eine Genehmigung zum Essen! — Oh, eine Lunchbox! Sieht lecker aus!"
+        "text": "Ach was, zum Essen braucht man doch keine Erlaubnis! Oh, eine Bento-Box! Sieht mega lecker aus!"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -511,7 +511,7 @@
     },
     "lunch2_dain_end_ins10": {
         "name": "Schulkrankenschwester",
-        "text": "Stillhalten~..."
+        "text": "Stillhalten..."
     },
     "lunch2_dain_end_ins11": {
         "name": "{name}",
@@ -563,7 +563,7 @@
     },
     "lunch2_dain_end_ins23": {
         "name": "Schulkrankenschwester",
-        "text": "*Lacht leise* Geheim~ Lehrerinnen haben auch Geheimnisse."
+        "text": "*Lacht leise* Geheim. Lehrerinnen dürfen auch ihre Geheimnisse haben."
     },
     "lunch2_dain_end_ins24": {
         "name": "{name}",
@@ -591,7 +591,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder fröhlicher Ton* Ach, aber nicht während der Schulzeit~! Nach dem Unterricht!"
+        "text": "*Wieder heller* Aber nicht während des Unterrichts. Nach der Schule."
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",

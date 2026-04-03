@@ -368,7 +368,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "Schulkrankenschwester",
-        "text": "...Spaß~ geh zum Unterricht!"
+        "text": "...War nur ein Scherz. Los, ab in den Unterricht."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Schulkrankenschwester",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder verspielt* Ach was~ Das geht aufs Haus. — Komm wieder. Verletzt oder nicht."
+        "text": "*Wieder spielerisch* Ach, das ist doch nichts. Geht aufs Haus. Komm wieder, wann du willst. Verletzt oder nicht."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -814,7 +814,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "Schulkrankenschwester",
-        "text": "*Mit einem angestrengten Lächeln* War nur Spaß~ Los, geh!"
+        "text": "*Mit mühsamem Lächeln* War nur ein Scherz. Los, geh."
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",

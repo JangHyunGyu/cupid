@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "ダイン",
-        "text": "ねえ〜明日売店行こうよ！今日行けなかったの、まだ悔しい！"
+        "text": "ねえ、明日売店行こうよ！ 今日行けなかったの、まだ悔しいんだけど！"
     },
     "night2_msg_dain_general_merge": {
         "name": "ソヨン",
@@ -240,7 +240,7 @@
     },
     "night2_reply_dain_react_default": {
         "name": "ダイン",
-        "text": "ｗｗ了解〜おやすみ！"
+        "text": "りょーかい、おやすみ！"
     },
     "night2_reply_seo_react_high": {
         "name": "ソヨン",

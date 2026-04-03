@@ -250,7 +250,7 @@
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Ay, ¡quién necesita permiso para comer! — Oh, ¡una fiambrera! ¡Se ve deliciosa!"
+        "text": "Anda ya, ¿quién necesita permiso para comer? ¡Eh, una fiambrera! ¡Qué buena pinta!"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -511,7 +511,7 @@
     },
     "lunch2_dain_end_ins10": {
         "name": "Enfermera",
-        "text": "Quieto~..."
+        "text": "Quieto..."
     },
     "lunch2_dain_end_ins11": {
         "name": "{name}",
@@ -563,7 +563,7 @@
     },
     "lunch2_dain_end_ins23": {
         "name": "Enfermera",
-        "text": "*Riendo suavemente* Secreto~ Las profesoras también tienen secretos."
+        "text": "*Se ríe por lo bajo* Secreto. Las profes también tenemos secretos."
     },
     "lunch2_dain_end_ins24": {
         "name": "{name}",
@@ -591,7 +591,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "Enfermera",
-        "text": "*Con tono alegre de nuevo* ¡Ah, pero no en horario de clases~! ¡Después de clases!"
+        "text": "*Recuperando el tono ligero* Ah, pero en horario de clase no. Después de clase."
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",
