@@ -118,7 +118,7 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*Termina la primera clase. Recreo. — Las tres se me acercan una tras otra.*"
+        "text": "*Termina la primera clase. Recreo. No es que las tres vengan de golpe. Pero hoy alguien sigue encontrando el momento exacto para hablarme.*"
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
@@ -154,7 +154,7 @@
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
-        "text": "*Dain viene a mi pupitre en el recreo y me pregunta.*",
+        "text": "*En el siguiente descanso, Dain viene hasta mi sitio y me lo pregunta.*",
         "choices": [
             "Dale, hecho",
             "Este fin de semana no puedo..."
@@ -170,7 +170,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*Observo la reacción de Dain.*"
+        "text": "*Observo la reacción de Dain. Suena el timbre, y vuelve ese breve hueco justo antes del almuerzo.*"
     },
     "morning3_date_dain_decline_inner": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Hay una nota de Yuna sobre mi pupitre.*"
+        "text": "*Justo antes del almuerzo, hay una nota de Yuna esperándome sobre el pupitre.*"
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
@@ -454,15 +454,15 @@
     },
     "morning3_date_intro_b": {
         "name": "{name}",
-        "text": "*En el descanso, salí al pasillo.*"
+        "text": "*Salgo al pasillo en el descanso. Seoyeon es la primera en acompasar sus pasos con los míos.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
-        "text": "*Volví al salón de clases.*"
+        "text": "*Vuelvo al aula. Pasa otra clase y llega otro descanso corto.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
-        "text": "*Volví al salón de clases.*"
+        "text": "*Vuelvo al aula. Pasa otra clase y llega otro descanso corto.*"
     },
     "morning3_seo_gate_6_ins": {
         "name": "{name}",
@@ -642,7 +642,7 @@
     },
     "hidden_nurse_d3_2_ins5": {
         "name": "{name}",
-        "text": "*Justo antes del almuerzo. — Algo me inquieta desde la mañana. ¿Es el estrés de estar con todas, o la confusión de que todo va demasiado rápido?*"
+        "text": "*Justo antes del almuerzo. Desde esta mañana no logro calmarme. He visto demasiadas caras, he escuchado demasiadas palabras. Será por eso. No sé por qué todo esto me sacude tan rápido.*"
     },
     "hidden_nurse_d3_1_ins": {
         "name": "{name}",

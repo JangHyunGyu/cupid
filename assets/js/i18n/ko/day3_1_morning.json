@@ -190,11 +190,11 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*1교시가 끝나고 쉬는 시간. — 세 명이 차례로 접근한다.*"
+        "text": "*1교시가 끝나고 쉬는 시간. — 한 번에 몰아치듯 오진 않는다. 근데 오늘은, 누군가가 계속 타이밍을 맞춰 말을 건다.*"
     },
     "morning3_date_intro_b": {
         "name": "{name}",
-        "text": "*쉬는 시간, 복도로 나왔다.*"
+        "text": "*쉬는 시간, 복도로 나왔다. 서연이 먼저 걸음을 맞춘다.*"
     },
     "morning3_date_seo_1": {
         "name": "서연",
@@ -214,7 +214,7 @@
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
-        "text": "*교실로 돌아왔다.*"
+        "text": "*교실로 돌아왔다. 수업 하나가 지나고, 또 쉬는 시간이 온다.*"
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
-        "text": "*교실로 돌아왔다.*"
+        "text": "*교실로 돌아왔다. 수업 하나가 지나고, 또 쉬는 시간이 온다.*"
     },
     "morning3_date_dain_1": {
         "name": "다인",
@@ -238,7 +238,7 @@
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
-        "text": "*다인이 쉬는 시간에 자리로 와서 물어본다.*",
+        "text": "*다인이 다음 쉬는 시간에 자리로 와서 물어본다.*",
         "choices": [
             "좋아, 콜",
             "주말은 좀..."
@@ -254,7 +254,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*다인의 반응을 지켜본다.*"
+        "text": "*다인의 반응을 지켜본다. — 종이 치고, 점심 직전의 짧은 틈이 다시 온다.*"
     },
     "morning3_date_dain_decline_inner": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*유나의 쪽지가 책상 위에 놓여 있다.*"
+        "text": "*점심 직전, 유나의 쪽지가 책상 위에 놓여 있다.*"
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
@@ -642,7 +642,7 @@
     },
     "hidden_nurse_d3_2_ins5": {
         "name": "{name}",
-        "text": "*점심시간 직전. — 아침부터 뭔가 불안하다. 양다리 스트레스인지, 아니면 모든 게 너무 빨리 진행되는 것 같은 혼란인지.*"
+        "text": "*점심시간 직전. — 아침 내내 마음이 가라앉지 않는다. 너무 많은 얼굴을 보고, 너무 많은 말을 들은 탓일까. 뭐가 이렇게 빨리 흔들리는 건지 모르겠다.*"
     },
     "hidden_nurse_d3_1_ins": {
         "name": "{name}",

@@ -118,7 +118,7 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*Die erste Stunde ist vorbei. Pause. — Alle drei kommen nacheinander auf mich zu.*"
+        "text": "*Die erste Stunde ist vorbei. Pause. Es ist nicht so, als würden plötzlich alle gleichzeitig auf mich zukommen. Aber heute findet irgendwer immer genau den richtigen Moment, mich anzusprechen.*"
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
@@ -154,7 +154,7 @@
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
-        "text": "*Dain kommt in der Pause zu meinem Platz und fragt.*",
+        "text": "*In der nächsten Pause kommt Dain an meinen Platz und fragt mich.*",
         "choices": [
             "Klar, abgemacht",
             "Dieses Wochenende passt nicht so..."
@@ -170,7 +170,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*Ich beobachte Dains Reaktion.*"
+        "text": "*Ich beobachte Dains Reaktion. Die Glocke klingelt, und kurz vor der Mittagspause entsteht wieder diese kleine Lücke.*"
     },
     "morning3_date_dain_decline_inner": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Eine Notiz von Yuna liegt auf meinem Tisch.*"
+        "text": "*Kurz vor der Mittagspause liegt ein Zettel von Yuna auf meinem Tisch.*"
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
@@ -454,15 +454,15 @@
     },
     "morning3_date_intro_b": {
         "name": "{name}",
-        "text": "*In der Pause ging ich auf den Flur.*"
+        "text": "*In der Pause trete ich auf den Flur. Seoyeon ist die Erste, die sich meinem Schritt anpasst.*"
     },
     "morning3_date_seo_accept_b": {
         "name": "{name}",
-        "text": "*Ich ging zurück ins Klassenzimmer.*"
+        "text": "*Ich gehe zurück ins Klassenzimmer. Eine weitere Stunde vergeht, dann kommt die nächste kurze Pause.*"
     },
     "morning3_date_seo_decline_b": {
         "name": "{name}",
-        "text": "*Ich ging zurück ins Klassenzimmer.*"
+        "text": "*Ich gehe zurück ins Klassenzimmer. Eine weitere Stunde vergeht, dann kommt die nächste kurze Pause.*"
     },
     "morning3_seo_gate_6_ins": {
         "name": "{name}",
@@ -642,7 +642,7 @@
     },
     "hidden_nurse_d3_2_ins5": {
         "name": "{name}",
-        "text": "*Kurz vor der Mittagspause. — Seit dem Morgen fühlt sich etwas falsch an. Ist es der Stress, alle gleichzeitig zu jonglieren, oder das Chaos, dass alles zu schnell geht?*"
+        "text": "*Kurz vor der Mittagspause. Seit dem Morgen komme ich innerlich nicht zur Ruhe. Zu viele Gesichter, zu viele Worte. Vielleicht liegt es daran. Ich weiß nicht, warum mich das alles so schnell aus dem Gleichgewicht bringt.*"
     },
     "hidden_nurse_d3_1_ins": {
         "name": "{name}",
