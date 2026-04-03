@@ -80,6 +80,11 @@ Object.assign(SCENARIO[5], {
         "stats": {"Seoyeon":{"affinity":5}},
         "next": "tour_seo_freetalk"
     },
+    "tour_seo_freetalk": {
+        "background": "assets/images/background/top_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "tour_seo_end"
+    },
     "tour_seo_end": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_shy.png",
@@ -154,6 +159,11 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/yuna_shy.png",
         "stats": {"Yuna":{"affinity":7}},
         "next": "tour_yuna_freetalk"
+    },
+    "tour_yuna_freetalk": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "tour_yuna_end"
     },
     "tour_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -234,6 +244,11 @@ Object.assign(SCENARIO[5], {
         "character": "assets/images/characters/dain_sad.png",
         "next": "tour_dain_11_ins"
     },
+    "tour_dain_11_ins": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "tour_dain_12"
+    },
     "tour_dain_12": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
@@ -250,29 +265,14 @@ Object.assign(SCENARIO[5], {
         "stats": {"Dain":{"affinity":7}},
         "next": "tour_dain_freetalk"
     },
-    "tour_dain_end_2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
-        "next": "after5_start"
-    },
-    "tour_seo_freetalk": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "tour_seo_end"
-    },
-    "tour_yuna_freetalk": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "tour_yuna_end"
-    },
     "tour_dain_freetalk": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "tour_dain_end_2"
     },
-    "tour_dain_11_ins": {
+    "tour_dain_end_2": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "tour_dain_12"
+        "character": "assets/images/characters/dain_shy.png",
+        "next": "after5_start"
     }
 });

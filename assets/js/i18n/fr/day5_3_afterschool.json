@@ -91,6 +91,18 @@
         "name": "{name}",
         "text": "*Le coucher de soleil teinte la cour. Cinq jours, c'était vraiment si court que ça ? — Le moment du dernier choix approche.*"
     },
+    "after5_hidden_route_choice_check": {
+        "name": "{name}",
+        "text": "*Mes derniers pas se divisent en deux chemins. La personne à qui j'ai déjà fait une promesse, et ce sentiment que je n'ai pas réussi à faire semblant d'ignorer jusqu'au bout.*"
+    },
+    "after5_hidden_route_choice": {
+        "name": "{name}",
+        "text": "*Où devrais-je aller ? Aujourd'hui — c'est à moi de décider.*",
+        "choices": [
+            "Aller vers la personne à qui j'ai déjà fait une promesse",
+            "Aller vers celle qui est restée dans mon cœur"
+        ]
+    },
     "after5_set_harem": {
         "name": "{name}",
         "text": "*La fissure qu'on a recouverte de sourires forcés à midi est toujours là. J'ai l'impression que cette nuit ne se terminera pas avec une seule personne.*"

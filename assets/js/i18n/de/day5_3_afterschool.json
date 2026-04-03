@@ -91,6 +91,18 @@
         "name": "{name}",
         "text": "*Der Sonnenuntergang taucht den Schulhof in Farbe. Waren fünf Tage wirklich so kurz? — Der Moment der letzten Entscheidung rückt näher.*"
     },
+    "after5_hidden_route_choice_check": {
+        "name": "{name}",
+        "text": "*Meine letzten Schritte teilen sich in zwei Wege. Die Person, der ich bereits ein Versprechen gegeben habe, und das Gefühl, das ich bis zum Schluss nicht länger übersehen konnte.*"
+    },
+    "after5_hidden_route_choice": {
+        "name": "{name}",
+        "text": "*Wohin soll ich gehen? Heute — muss ich es selbst entscheiden.*",
+        "choices": [
+            "Zu der Person gehen, der ich es versprochen habe",
+            "Zu der gehen, die mir bis zuletzt im Herzen blieb"
+        ]
+    },
     "after5_set_harem": {
         "name": "{name}",
         "text": "*Der Riss, den wir mittags mit erzwungenem Lächeln überdeckt haben, ist immer noch da. Es fühlt sich an, als würde diese Nacht nicht mit nur einer Person enden.*"
