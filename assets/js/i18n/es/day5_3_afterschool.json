@@ -95,6 +95,14 @@
         "name": "{name}",
         "text": "*La grieta que tapamos con sonrisas forzadas a la hora del almuerzo sigue ahí. Siento que esta noche no va a terminar con una sola persona.*"
     },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*Sin que nadie se atreviera a hablar primero, dejamos atras la parte trasera de la escuela.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*Cargando la grieta que habiamos tapado a la fuerza, nuestros pasos se dirigieron al parque.*"
+    },
     "after5_last_chance_1": {
         "name": "{name}",
         "text": "*Mis pasos se detienen. El sol poniente proyecta una larga sombra a mis espaldas.*"
@@ -130,6 +138,14 @@
     "after5_confess_react_yuna": {
         "name": "Yuna",
         "text": "*Caminamos juntos.* ...Ya lo sabía. ...Si lo leíste, es suficiente."
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*No se me ocurrieron mas palabras. Mientras el sol seguia cayendo, solo caminamos un rato en la misma direccion.*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*Con un sentimiento aun sin resolver entre nosotros, nuestros pasos nos llevaron al parque.*"
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

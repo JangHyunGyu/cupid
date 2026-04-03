@@ -184,6 +184,16 @@ const _scenes = {
     "after5_set_harem": {
         "background": "assets/images/background/school_back.png",
         "character": null,
+        "next": "after5_harem_walk_1"
+    },
+    "after5_harem_walk_1": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_harem_walk_2"
+    },
+    "after5_harem_walk_2": {
+        "background": "assets/images/background/park.png",
+        "character": null,
         "next": "ending_start"
     },
     "after5_last_chance_1": {
@@ -297,7 +307,7 @@ const _scenes = {
     "after5_confess_react_seo_low": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/seyoun_sad.png",
-        "next": "ending_start"
+        "next": "after5_confess_fail_walk_1"
     },
     "after5_confess_react_dain": {
         "background": "assets/images/background/school_back.png",
@@ -307,7 +317,7 @@ const _scenes = {
     "after5_confess_react_dain_low": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_sad.png",
-        "next": "ending_start"
+        "next": "after5_confess_fail_walk_1"
     },
     "after5_confess_react_yuna": {
         "background": "assets/images/background/school_back.png",
@@ -317,6 +327,16 @@ const _scenes = {
     "after5_confess_react_yuna_low": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/yuna_sad.png",
+        "next": "after5_confess_fail_walk_1"
+    },
+    "after5_confess_fail_walk_1": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_confess_fail_walk_2"
+    },
+    "after5_confess_fail_walk_2": {
+        "background": "assets/images/background/park.png",
+        "character": null,
         "next": "ending_start"
     },
     "after5_confess_react_yuna_call": {

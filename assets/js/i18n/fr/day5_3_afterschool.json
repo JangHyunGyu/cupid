@@ -95,6 +95,14 @@
         "name": "{name}",
         "text": "*La fissure qu'on a recouverte de sourires forcés à midi est toujours là. J'ai l'impression que cette nuit ne se terminera pas avec une seule personne.*"
     },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*Sans que personne n'ose parler le premier, nous avons quitte l'arriere de l'ecole.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*En portant la fissure que nous avions forcee a se refermer, nos pas se sont diriges vers le parc.*"
+    },
     "after5_last_chance_1": {
         "name": "{name}",
         "text": "*Mes pas s'arrêtent. Le soleil couchant projette une longue ombre derrière moi.*"
@@ -130,6 +138,14 @@
     "after5_confess_react_yuna": {
         "name": "Yuna",
         "text": "*On a marché côte à côte.* ...Je le savais déjà. ...Si tu l'as lu, ça me suffit."
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*Aucun autre mot ne venait. Tandis que le soleil descendait encore, nous avons juste marche un moment dans la meme direction.*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*Avec des sentiments encore sans conclusion, nos pas nous ont menes jusqu'au parc.*"
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
