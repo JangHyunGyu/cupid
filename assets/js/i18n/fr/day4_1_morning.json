@@ -158,7 +158,7 @@
         "text": "*L'infirmière a posté 'cherche volontaires' sur la messagerie. Mes pieds se dirigent déjà vers l'école.*"
     },
     "hidden_nurse_d4_2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Hein ? T'es vraiment venu ? Je m'y attendais pas. — Un élève bénévole à l'infirmerie un weekend."
     },
     "hidden_nurse_d4_3": {
@@ -166,12 +166,12 @@
         "text": "J'avais dit que j'aiderais."
     },
     "hidden_nurse_d4_4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...À l'hôpital je faisais tout ça seule. Les gardes de nuit — parfois une infirmière fait le travail de trois."
     },
     "hidden_nurse_d4_5": {
-        "name": "Infirmière",
-        "text": "*la voix baissant d'un ton* Personne ne m'appelait par mon prénom. « Infirmière », « garde de nuit », « Service 3 ». — Que des titres, pas des noms."
+        "name": "L'infirmière",
+        "text": "*Regardant par la fenêtre* C'est pour ça que je suis là. Un endroit où on m'appelle « Madame », pas juste par mon titre. — C'est un petit détail, mais ça fait toute la différence."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
@@ -182,19 +182,19 @@
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Elle ferme la bouche un instant.* ...Juwon. Lee Juwon."
     },
     "hidden_nurse_d4_name_choice_b": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Oui. Ici, tout le monde ne vient qu'avec des blessures légères. J'aime ça."
     },
     "hidden_nurse_d4_6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Merci. J'ai fini plus vite grâce à toi. ...C'est pas rien."
     },
     "hidden_nurse_d4_choice": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Alors, qu'est-ce que je peux t'offrir pour te remercier ? Qu'un prof paie un repas à un élève, ça compte comme activité éducative.",
         "choices": [
             "Si c'est éducatif, ça va ?",
@@ -206,7 +206,7 @@
         "text": "*On s'est dirigés vers le snack devant l'école.*"
     },
     "hidden_nurse_d4_meal_1": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Ouh, ça pique. Je crois que je suis trop vieille pour ça, maintenant."
     },
     "hidden_nurse_d4_meal_2": {
@@ -214,15 +214,15 @@
         "text": "Vous n'êtes pas vieille du tout."
     },
     "hidden_nurse_d4_meal_3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Ce genre de chose. Ça sonne bizarre venant d'un élève."
     },
     "hidden_nurse_d4_meal_4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "{name}. Merci pour aujourd'hui. — Vraiment."
     },
     "hidden_nurse_d4_pass": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "D'accord. Rentre bien. Et repasse me voir un de ces jours."
     },
     "hidden_nurse_d4_morning_1": {
@@ -234,7 +234,7 @@
         "text": "*J'ouvre la porte de l'infirmerie. L'infirmière est assise dans sa chaise. En blouse blanche. — Mais quelque chose est différent d'habitude. Il n'y a pas sa malice habituelle.*"
     },
     "hidden_nurse_d4_morning_3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Oh, tu es venu."
     },
     "hidden_nurse_d4_morning_4": {
@@ -246,7 +246,7 @@
         "text": "C'est la dernière consultation ?"
     },
     "hidden_nurse_d4_morning_6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Consultation... *elle fait tourner sa chaise* Ouais. La dernière consultation."
     },
     "hidden_nurse_d4_morning_7": {
@@ -254,7 +254,7 @@
         "text": "*L'infirmière fait semblant de ranger les papiers sur son bureau — mais elle tourne la même feuille pour la troisième fois.*"
     },
     "hidden_nurse_d4_morning_8": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Je peux te poser une question ?"
     },
     "hidden_nurse_d4_morning_9": {
@@ -266,7 +266,7 @@
         "text": "*L'infirmière se touche les lunettes. Les yeux visibles à travers sont plus grands que prévu. Les yeux qui étaient cachés derrière la malice.*"
     },
     "hidden_nurse_d4_morning_11": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Reviendras-tu à l'infirmerie après tes études ?"
     },
     "hidden_nurse_d4_morning_choice": {
@@ -286,7 +286,7 @@
         "text": "*Silence.*"
     },
     "hidden_nurse_d4_morning_12": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Vraiment ?"
     },
     "hidden_nurse_d4_morning_13": {
@@ -294,13 +294,13 @@
         "text": "*« Vraiment ». — Aujourd'hui, je l'ai entendu en premier. À travers ses lunettes, les yeux de l'infirmière semblent humides. La malice revient. — Mais sous ses yeux souriants, il y a une trace de quelque chose qui a coulé. Ça fait mal.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En train de discuter avec l'infirmière à l'infirmerie.*",
         "context": "Jour 4. Le moment des adieux quand elle demande si tu reviendras après tes études. La scène où les deux montrent leurs vrais cœurs. Ton : Conversation plus profonde et émotionnelle. La vérité derrière la malice. Le sens d'être appelé par son nom.",
         "personality": "L'infirmière est prudente et honnête. Elle veut t'appeler par ton nom mais elle est dans une position prudente. Des larmes coulent à ta promesse."
     },
     "hidden_nurse_d4_freetalk": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En train de discuter avec l’infirmière à l’infirmerie.*",
         "context": "Jour 4. Week-end. A aidé à préparer le bilan de santé, mangé au snack, et de retour à l’infirmerie pour discuter. Discussion sur le burn-out à l’hôpital universitaire. Ton : La conversation est devenue sérieuse. Excitation et tension d’un rendez-vous. Plus de sincérité que de blagues. Moments où les émotions deviennent honnêtes.",
         "personality": "L’infirmière en tenue décontractée ressemble à une grande sœur. L’espièglerie et la sincérité alternent, et elle comprend le poids d’être appelée par son nom."
@@ -498,7 +498,7 @@
         "text": "*L'infirmerie. Des papiers et du matériel de contrôle empilés sur le bureau. L'Infirmière range en tenue décontractée. Un pull beige au lieu de la blouse blanche.*"
     },
     "hidden_nurse_d4_1_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En se retournant* Hein ? Tu es vraiment venu ?"
     },
     "hidden_nurse_d4_2_ins": {
@@ -506,7 +506,7 @@
         "text": "Donc le patient aide l'infirmière."
     },
     "hidden_nurse_d4_2_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En riant* C'est la première fois qu'un patient aide l'infirmière."
     },
     "hidden_nurse_d4_2_ins3": {
@@ -518,7 +518,7 @@
         "text": "*J'aide à trier les documents de contrôle. Classer les étiquettes, ranger les tableaux de vue, désinfecter les tensiomètres.*"
     },
     "hidden_nurse_d4_2_ins5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En tendant des documents* Tu peux trier ceux-là ? Par niveau."
     },
     "hidden_nurse_d4_2_ins6": {
@@ -526,7 +526,7 @@
         "text": "*On s'assoit côte à côte pour trier les papiers. Chaque fois que nos mains se frôlent, l'Infirmière retire discrètement la sienne. Est-ce qu'elle en est consciente ?*"
     },
     "hidden_nurse_d4_2_ins7": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...À l'hôpital universitaire, je faisais tout ça toute seule."
     },
     "hidden_nurse_d4_2_ins8": {
@@ -542,7 +542,7 @@
         "text": "*L'Infirmière s'arrête. Pose les papiers.*"
     },
     "hidden_nurse_d4_4_ins3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Le plus dur à l'époque, ce n'était pas la charge de travail."
     },
     "hidden_nurse_d4_4_ins4": {
@@ -550,7 +550,7 @@
         "text": "Alors c'était quoi ?"
     },
     "hidden_nurse_d4_4_ins5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*La voix baissant d'un demi-ton* Personne ne m'appelait par mon prénom. 'Infirmière', 'garde de nuit', 'service 3'. Que des titres, jamais mon prénom."
     },
     "hidden_nurse_d4_4_ins6": {
@@ -558,7 +558,7 @@
         "text": "*L'espièglerie a complètement disparu. C'est comme ça que ses vrais sentiments se montrent.*"
     },
     "hidden_nurse_d4_4_ins7": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "À l'école je suis l'Infirmière, non ? Encore un titre. *Avec un léger sourire* Mais toi, tu ne m'as jamais appelée par mon titre, pas vrai ?"
     },
     "hidden_nurse_d4_4_ins8": {
@@ -566,7 +566,7 @@
         "text": "...Vraiment ?"
     },
     "hidden_nurse_d4_4_ins9": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Juste professeure. Sans titre devant. Ça me plaisait."
     },
     "hidden_nurse_d4_4_ins10": {
@@ -582,7 +582,7 @@
         "text": "C'était rien."
     },
     "hidden_nurse_d4_6_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En me regardant* ...Si, c'était quelque chose."
     },
     "hidden_nurse_d4_6_ins3": {
@@ -594,7 +594,7 @@
         "text": "Vous en mangiez aussi quand vous étiez étudiante."
     },
     "hidden_nurse_d4_meal_1_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Ça remonte à une éternité. *rit* Je suis vieille, maintenant."
     },
     "hidden_nurse_d4_meal_2_ins": {
@@ -606,7 +606,7 @@
         "text": "*L'espièglerie a disparu. 0,5 seconde. Le compteur de sincérité de cette personne se déplace par intervalles de 0,5 seconde.*"
     },
     "hidden_nurse_d4_meal_3_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Elle sourit de nouveau* Bon, la pause déjeuner est finie. J'ai encore du travail."
     },
     "hidden_nurse_d4_meal_3_ins3": {
@@ -614,7 +614,7 @@
         "text": "*Sur le chemin du retour. L'Infirmière m'interpelle par derrière.*"
     },
     "hidden_nurse_d4_meal_3_ins4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "{name}."
     },
     "hidden_nurse_d4_meal_4_ins": {

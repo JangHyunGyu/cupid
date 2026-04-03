@@ -170,8 +170,8 @@
         "text": "...Im Krankenhaus hab ich das alles alleine gemacht. Nachtschichten — manchmal eine Schwester für drei."
     },
     "hidden_nurse_d4_5": {
-        "name": "Schulkrankenschwester",
-        "text": "*ihre Stimme wird einen Ton tiefer* Niemand hat mich beim Namen genannt. 'Krankenschwester', 'Nachtdienst', 'Station 3'. — Alles Titel, keine Namen."
+        "name": "Gesundheitslehrerin",
+        "text": "*Blickt aus dem Fenster* Deshalb bin ich hier. Ein Ort, wo man mich 'Lehrerin' nennt, statt nur meinen Titel zu benutzen. — Ein kleiner Unterschied, der aber viel ausmacht."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",

@@ -37,11 +37,11 @@
     },
     "confess_seo_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*서연이 돌아본다. 바람이 머리카락을 날린다.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*심장이 입 밖으로 나올 것 같다. — 괜찮다. 이번에는.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "다인아. 너 웃을 때 눈이 반달 모양 되는 거 알아? 모를 거야, 자기 얼굴이니까."
+        "text": "다인아. 나 — 너한테 할 말이 있어."
     },
     "confess_dain_yes_3_ins": {
         "name": "{name}",

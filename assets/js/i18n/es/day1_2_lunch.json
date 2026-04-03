@@ -194,11 +194,11 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "Bueno, ya llegamos. ¿Qué quieres?"
+        "text": "*La cafetería está a reventar por la hora del almuerzo. El olor a pan y a leche se mezcla en el ambiente.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "¡Aquí estamos! ¡¿Qué quieres?! ¡Te recomiendo el pan de soboro y la leche de fresa!"
+        "text": "La combinación de pan soboro y leche de fresa es una delicia. ¡Créeme!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -460,9 +460,9 @@
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*Me fijo en el libro que Yuna está leyendo.*",
+        "text": "*El libro que Yuna dejó olvidado llama mi atención. — No se ha ido muy lejos. La seguí.*",
         "choices": [
-            "¿Ese libro está bueno? Quizás debería leerlo yo también.",
+            "¿Es interesante ese libro? ¿Debería leerlo yo también?",
             "Así que te gusta leer."
         ]
     },

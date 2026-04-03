@@ -160,16 +160,6 @@ Object.assign(SCENARIO[3], {
     "night3_faithful_reflect_4_ins3": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_faithful_reflect_4_ins4"
-    },
-    "night3_faithful_reflect_4_ins4": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_faithful_reflect_4_ins5"
-    },
-    "night3_faithful_reflect_4_ins5": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_faithful_reflect_4_ins6"
     },
     "night3_faithful_reflect_4_ins6": {

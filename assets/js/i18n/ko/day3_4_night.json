@@ -105,27 +105,19 @@
     },
     "night3_faithful_reflect_4_ins": {
         "name": "{name}",
-        "text": "*1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑이야.'*"
+        "text": "*갤러리가 비어 있다. 소정이 사진이 있던 자리. 빈 화면이 오히려 선명하다.*"
     },
     "night3_faithful_reflect_4_ins2": {
         "name": "{name}",
-        "text": "*...거절. 그래, 해야 하는 건 알고 있다. 알고 있는데.*"
+        "text": "*사진을 지우는 건 쉬웠다. 손가락 하나면 끝이다. — 감정은 그보다 오래 걸린다.*"
     },
     "night3_faithful_reflect_4_ins3": {
         "name": "{name}",
-        "text": "*손가락이 움직이지 않는다. 삭제 버튼 위에 올려놓은 채로.*"
-    },
-    "night3_faithful_reflect_4_ins4": {
-        "name": "{name}",
-        "text": "*전 학교에서도 이랬다. 알면서 못 했다. 이번에도 — 알면서 못 하고 있다.*"
-    },
-    "night3_faithful_reflect_4_ins5": {
-        "name": "{name}",
-        "text": "*핸드폰을 덮었다. 사진은 그대로다.*"
+        "text": "*그래도. 지운 만큼은 — 다음으로 갈 수 있다.*"
     },
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
-        "text": "*...나는 과거에도 지금도, 아무것도 놓지 못하는 비겁한 놈일 뿐이다.*"
+        "text": "*핸드폰을 덮었다. 갤러리는 비었고, 마음은 아직 복잡하다. — 그래도 한 발짝.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -169,7 +161,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "유나",
-        "text": "*네가 누구 옆에 설 건지. 그 무게를 알았으면 해*"
+        "text": "*...나는 괜찮으니까. 네가 후회 안 할 쪽으로 가*"
     },
     "night3_cheat_msg_6": {
         "name": "유나",
@@ -286,7 +278,7 @@
     },
     "night3_cheat_reflect_3_ins6": {
         "name": "{name}",
-        "text": "*서연이 말했다. '유일한 답이거나, 아무것도 아니거나.'*"
+        "text": "*서연이 말했다. '여럿 중 하나는 안 해.'*"
     },
     "night3_cheat_reflect_3_ins7": {
         "name": "{name}",

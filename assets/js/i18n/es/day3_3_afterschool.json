@@ -128,7 +128,7 @@
     },
     "after3_seo_6": {
         "name": "Seoyeon",
-        "text": "...¿Viste?"
+        "text": "*Tosecilla* ...No es nada. Olvídalo."
     },
     "after3_seo_7": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_yuna_choice1_3": {
         "name": "Yuna",
-        "text": "...Las novelas son. Ficción."
+        "text": "*Volteando el cuaderno* ...Pero a veces. La ficción es más sincera que la realidad."
     },
     "after3_yuna_choice1_react": {
         "name": "{name}",
@@ -509,7 +509,7 @@
     },
     "minsu_d3_8": {
         "name": "{name}",
-        "text": "*Rechazar también es querer. — En mi anterior instituto, ni siquiera le di a Sojeong la oportunidad de rechazarme. Porque no fui capaz de decírselo.*"
+        "text": "*...El recuerdo se interrumpe. Minsu le da un toquecito en la frente con el dedo.*"
     },
     "minsu_d3_9": {
         "name": "{name}",
@@ -587,7 +587,7 @@
     },
     "after3_seo_7_ins": {
         "name": "Seoyeon",
-        "text": "A la yo imperfecta."
+        "text": "*Bajando la mirada* ...No quería que vieras esto."
     },
     "after3_dain_5_ins": {
         "name": "Dain",
@@ -703,7 +703,7 @@
     },
     "minsu_d3_4_ins2": {
         "name": "Minsu",
-        "text": "Ya no es 'más adelante'. Es ahora."
+        "text": "Abrazar a todos solo por ser 'bueno' — eso no es amabilidad, es cobardía."
     },
     "minsu_d3_5_ins": {
         "name": "{name}",

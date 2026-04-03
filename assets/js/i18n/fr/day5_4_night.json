@@ -153,7 +153,7 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*Je me suis confessé. C'était accepté. — Mais c'était tout. J'ai marché devant l'école.*"
+        "text": "*J'ai fait ma déclaration. Elle a été acceptée. C'était bien, un petit moment. — Mais un mois plus tard, à peu près, j'ai reçu un message pour qu'on se retrouve au café devant le lycée.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
@@ -165,7 +165,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*Je me suis confessé. C'était accepté. — Mais c'était tout. J'ai marché devant l'école.*"
+        "text": "*J'ai fait ma déclaration. Elle a été acceptée. C'était bien, un petit moment. — Mais un mois plus tard, à peu près, j'ai reçu un message pour qu'on se retrouve au café devant le lycée.*"
     },
     "bitter_yuna_2": {
         "name": "Yuna",
@@ -177,7 +177,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*Je me suis confessé. C'était accepté. — Mais c'était tout. J'ai marché devant l'école.*"
+        "text": "*J'ai fait ma déclaration. Elle a été acceptée. C'était bien, un petit moment. — Mais un mois plus tard, à peu près, j'ai reçu un message pour qu'on se retrouve au café devant le lycée.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -702,7 +702,7 @@
         "text": "*La cérémonie est finie. J'ai ouvert la porte de l'infirmerie. Vide. Un pansement sur le bureau. 'Viens chez moi. L'adresse est au dos.' — Sans cœur cette fois.*"
     },
     "hidden_perfect_nurse_2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Celle qui a ouvert la porte n'est pas en blouse blanche — cardigan et pieds nus.* ...Tu es venu. Je ne pensais pas que tu viendrais vraiment."
     },
     "hidden_perfect_nurse_3": {
@@ -710,11 +710,11 @@
         "text": "*Côte à côte sur le canapé du salon. Le soleil se couche derrière la vitre. Au lieu d'un pansement, ce sont les doigts qui se touchent.*"
     },
     "hidden_perfect_nurse_3b": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*S'appuie contre moi.* ...Plus besoin d'excuses. Ni patient, ni élève."
     },
     "hidden_perfect_nurse_4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Sa main remonte et attrape ma cravate. Pas espiègle. Ses yeux sont sérieux.* ...Ce soir, tu ne pars pas."
     },
     "hidden_perfect_nurse_4b": {
@@ -722,7 +722,7 @@
         "text": "*Matin. La lumière filtre à travers les rideaux. Une respiration à côté de moi. — Celle qui prenait trois minutes pour poser un pansement dort maintenant en tenant ma main.*"
     },
     "hidden_perfect_nurse_5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Ouvre les yeux. Sourit.* ...T'as mal quelque part ? Je peux regarder ? *— Pas une blague. Pas cette fois.*"
     },
     "hidden_perfect_nurse_5b": {
@@ -778,7 +778,7 @@
         "text": "*'Félicitations. Je t'attends au café.' — En décollant le pansement, un petit plan à l'intérieur. L'infirmière est assise au café. Plus de blouse blanche — une robe ivoire. Ses lunettes habituelles sont retirées, la vibe est différente. Pas l'infirmière — juste une femme au café.*"
     },
     "hidden_true_nurse_3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Félicitations. ...À partir d'aujourd'hui, tu peux me tutoyer."
     },
     "hidden_true_nurse_3_ins": {
@@ -786,23 +786,23 @@
         "text": "Pourquoi ?"
     },
     "hidden_true_nurse_4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Tu sais, le premier jour, quand t'es venu. J'ai touché ton front et j'ai dit 'j'avais envie de te toucher'. C'était une blague."
     },
     "hidden_true_nurse_5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Mais là, c'est plus une blague."
     },
     "hidden_true_nurse_6": {
-        "name": "Infirmière",
-        "text": "Une prof devrait pas avoir de sentiments pour un élève. Je le savais. — Alors j'emballais tout dans des blagues. Mais toi, tu voyais à travers à chaque fois."
+        "name": "Infirmière scolaire",
+        "text": "Alors, une fois la cérémonie de remise des diplômes terminée... reviens me voir. Pas à l'infirmerie, mais ici. Cette fois, on se rencontrera... non pas en tant que professeur, mais en tant que moi."
     },
     "hidden_true_nurse_7": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...T'es le premier à m'avoir percée à jour."
     },
     "hidden_true_nurse_8": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Maintenant on peut se voir sans pansements. — Sans excuses."
     },
     "hidden_true_nurse_ending_title": {
@@ -830,11 +830,11 @@
         "text": "─── Professeure principale GOOD END ───"
     },
     "hidden_good_nurse_1": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Oh, un diplômé."
     },
     "hidden_good_nurse_2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Des vitamines. — Prends soin de toi à la fac. ...Intérêt médical. Cette fois, pour de vrai."
     },
     "hidden_good_nurse_3": {
@@ -1062,7 +1062,7 @@
         "text": "*Pas une enseignante — juste une femme.*"
     },
     "hidden_true_nurse_2_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Félicitations pour ton diplôme."
     },
     "hidden_true_nurse_2_ins3": {
@@ -1070,7 +1070,7 @@
         "text": "Merci."
     },
     "hidden_true_nurse_8_ins": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Faisant tourner sa tasse de café* Le diplôme fait effet plus vite que prévu."
     },
     "hidden_true_nurse_8_ins2": {
@@ -1082,7 +1082,7 @@
         "text": "*L'infirmière me regarde. Sans malice.*"
     },
     "hidden_true_nurse_8_ins4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Tu sais, le Jour 1, quand tu es venu à l'infirmerie."
     },
     "hidden_true_nurse_8_ins5": {
@@ -1090,7 +1090,7 @@
         "text": "Parce que j'avais le vertige."
     },
     "hidden_true_nurse_8_ins6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Je t'ai touché le front et j'ai dit « je voulais juste te toucher ». C'était une blague."
     },
     "hidden_true_nurse_8_ins7": {
@@ -1102,11 +1102,11 @@
         "text": "*Sa voix a baissé d'un ton. Toute espièglerie a complètement disparu. — C'est sa sincérité.*"
     },
     "hidden_true_nurse_5_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Une enseignante ne devrait pas avoir de sentiments pour un élève. Je le savais. — Alors j'ai tout enveloppé de blagues. Encore et encore."
     },
     "hidden_true_nurse_5_ins3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Mais toi, tu as vu la sincérité derrière les blagues."
     },
     "hidden_true_nurse_5_ins4": {
@@ -1122,7 +1122,7 @@
         "text": "*L'infirmière tend la main et touche le pansement sur le dos de ma main. Le même pansement qu'elle a mis ce matin.*"
     },
     "hidden_true_nurse_7_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Maintenant on peut se voir sans pansements. — Sans prétextes."
     },
     "hidden_true_nurse_7_ins3": {
@@ -1134,7 +1134,7 @@
         "text": "Intérêt médical ?"
     },
     "hidden_good_nurse_2_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Marquant une pause* ...Oui. Intérêt médical. *Tout bas* Cette fois, pour de vrai."
     },
     "hidden_good_nurse_2_ins3": {

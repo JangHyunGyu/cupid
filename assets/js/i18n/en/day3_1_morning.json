@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Homeroom Teacher",
-        "text": "Started in college. Creative writing major. After graduating, I applied for literary awards — got rejected three times over two years."
+        "text": "After I submitted the fourth manuscript — when the results came out, I didn't get a call. That's the day I applied to teachers' college."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Homeroom Teacher",
@@ -498,23 +498,23 @@
     },
     "hidden_homeroom_d3_4_ins": {
         "name": "{name}",
-        "text": "*Break between second and third period. On the way back from the restroom — I see a light in the empty classroom at the end of the hallway.*"
+        "text": "*The homeroom teacher's hand is paused over some manuscript paper. Through the flipped-over sheets, I can make out dense writing.*"
     },
     "hidden_homeroom_d3_4_ins2": {
         "name": "{name}",
-        "text": "*An empty classroom at this hour? — Someone's in there.*"
+        "text": "*He said they were work documents — but teachers' official papers are always printed on A4. They wouldn't be handwritten on manuscript paper.*"
     },
     "hidden_homeroom_d3_4_ins3": {
         "name": "{name}",
-        "text": "*I approach quietly. The door is slightly ajar. — The homeroom teacher is sitting at the desk, writing something.*"
+        "text": "*The homeroom teacher's expression snaps back instantly. His usual indifferent face. — That was a quick switch.*"
     },
     "hidden_homeroom_d3_4_ins4": {
-        "name": "{name}",
-        "text": "*Those aren't official documents. It's manuscript paper. — The same stack I saw in the staff room drawer yesterday.*"
+        "name": "Homeroom Teacher",
+        "text": "...What are you staring at? Why are you even here during break?"
     },
     "hidden_homeroom_d3_4_ins5": {
         "name": "{name}",
-        "text": "*The teacher stops writing and looks up. — Our eyes meet.*"
+        "text": "*Manuscript paper. Dense writing. That hidden expression. — Should I ask, or just play dumb?*"
     },
     "hidden_homeroom_d3_3_ins": {
         "name": "{name}",

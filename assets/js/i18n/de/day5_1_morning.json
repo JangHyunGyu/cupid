@@ -1,11 +1,11 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Fünfter Tag. Der letzte Tag. Die Uniform fühlt sich vertraut an. — Wegen dieser Menschen. Das weiß ich.*"
+        "text": "*Fünfter Tag. Es ist Sonntag, aber es gibt eine Schulveranstaltung. Die Schuluniform ist bequemer geworden. — Das liegt an diesen Leuten. Ich weiß es.*"
     },
     "morning5_start_2": {
         "name": "{name}",
-        "text": "*Heute gibt es eine Schulveranstaltung. Die letzte. Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen.*"
+        "text": "*Das letzte Event. All die Zeit, die wir bisher verbracht haben, mündet heute.*"
     },
     "morning5_mood_check": {
         "name": "System",
@@ -29,7 +29,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Im Flur, am Ausstellungsbereich des Literaturclubs — eine Kurzgeschichte hängt am schwarzen Brett. Titel: 'An die Person, die ich in der Bibliothek traf.' Es ist von Yuna. — Eine Geschichte, die nur der Protagonist erkennen würde.*"
+        "text": "*Die Figur im Roman legt jemandem, der in der Bibliothek eingeschlafen ist, eine Decke über die Schultern. — Das ist eine Szene, die nur ich kenne. Yuna hat das geschrieben.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -126,8 +126,8 @@
         "text": "Oh? {name}. — Der letzte Tag. Der letzte Tag des Events. Fünf Tage. — Ging schnell."
     },
     "hidden_nurse_d5_2": {
-        "name": "Schulkrankenschwester",
-        "text": "*Mit einem leichten Lächeln* Komm nach dem Abschluss vorbei. ...Oder vorher, wenn du dich verletzt."
+        "name": "{name}",
+        "text": "*In der Pause während der Veranstaltung. Ich gehe am Krankenzimmer vorbei — da öffnet sich die Tür.*"
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -135,7 +135,7 @@
     },
     "hidden_nurse_d5_4": {
         "name": "Schulkrankenschwester",
-        "text": "*Lächelt wieder* Frag mich das nach dem Abschluss. — Dann antworte ich."
+        "text": "...Drück das Pflaster fest an, damit es nicht abfällt. — Heute klebe ich es dir nicht selbst auf."
     },
     "hidden_nurse_d5_5": {
         "name": "Schulkrankenschwester",
@@ -177,7 +177,7 @@
     },
     "morning5_start_ins": {
         "name": "{name}",
-        "text": "*Heute ist ein Schulevent. Das letzte.*"
+        "text": "*Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen.*"
     },
     "morning5_start_2_ins": {
         "name": "{name}",
@@ -228,8 +228,8 @@
         "text": "*Sie reicht den Umschlag herüber. — Ihre Hand zittert leicht.*"
     },
     "hidden_homeroom_d5_6_ins3": {
-        "name": "Klassenlehrerin",
-        "text": "Sieben Jahre lang habe ich das niemandem gezeigt. — Gehört eigentlich nicht zu meinen Aufgaben."
+        "name": "Klassenlehrer",
+        "text": "...Lies es und sag mir dann ehrlich deine Meinung. — Du musst nicht höflich zu mir sein."
     },
     "hidden_homeroom_d5_6_ins4": {
         "name": "{name}",
@@ -309,7 +309,7 @@
     },
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
-        "text": "*Pause während des Events. Vor dem Krankenzimmer — die Tür geht auf. Die Schulkrankenschwester tritt heraus.*"
+        "text": "*Die Krankenschwester kommt heraus. Sie ist direkt vor meiner Nase.*"
     },
     "hidden_nurse_d5_2_ins2": {
         "name": "{name}",

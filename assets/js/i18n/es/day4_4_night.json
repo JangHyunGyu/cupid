@@ -45,7 +45,7 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Nuestra casa parece normal desde fuera, ¿verdad? Casa grande, buen coche, hija presidenta del consejo estudiantil."
+        "text": "Así que yo también empecé a actuar. En casa, en el colegio. — Sonreír, al final, era la máscara más fácil."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
@@ -234,7 +234,7 @@
     },
     "wall_dain_18": {
         "name": "Dain",
-        "text": "Beca deportiva. Profesional. Selección nacional. — Desde los cinco años, era lo único que tenía. Y se acabó en una frase."
+        "text": "Al salir del hospital, mi mamá estaba llorando. — Yo no pude. Todavía no me lo creía."
     },
     "wall_dain_19": {
         "name": "Dain",
@@ -423,7 +423,7 @@
     },
     "wall_yuna_15": {
         "name": "Yuna",
-        "text": "Cuando viniste a la biblioteca por primera vez. Tenías un aura parecida a la de él. — Por eso me asusté. Si me acercaba de nuevo, podrías desaparecer también."
+        "text": "*Agachando la cabeza* ...Por eso fui fría a propósito. Creí que si los apartaba de antemano, me dolería menos."
     },
     "wall_yuna_16": {
         "name": "Yuna",
@@ -532,7 +532,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Así pasó el sábado. Qué traerá el mañana.*"
+        "text": "*Así pasó el sábado. Mañana hay un evento escolar. — Y eso que es domingo, toca ir al colegio.*"
     },
     "day4_night_sleep": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "day4_final": {
         "name": "{name}",
-        "text": "*La noche del sábado se hace profunda. Mañana es domingo — el último día.*"
+        "text": "*La noche del sábado se hace profunda. Mañana es domingo — el último día del evento escolar.*"
     },
     "wall_seo_pre_high_1": {
         "name": "Seoyeon",
@@ -589,11 +589,11 @@
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*En la rueda de la fortuna, Seoyeon se apoya en mi hombro.*"
+        "text": "*Nos sentamos juntos en el banco. Seoyeon se apoya ligeramente en mi hombro.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
-        "text": "...Las alturas me dan un poco de miedo."
+        "text": "...Quedémonos así un poco más."
     },
     "wall_dain_pre_high_1": {
         "name": "Dain",
@@ -638,7 +638,7 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*Después del centro deportivo, nos sentamos en un banco. Dain se acuesta en mi regazo sin avisar.*"
+        "text": "*Salimos de la sala de juegos y nos sentamos en un banco. Dain se tumba en mi regazo sin previo aviso.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -823,7 +823,7 @@
     },
     "wall_dain_18_ins": {
         "name": "Dain",
-        "text": "Pero todo acabó en una frase."
+        "text": "Lo asimilé de verdad — fue al organizar el casillero del gimnasio."
     },
     "wall_dain_18_ins2": {
         "name": "{name}",

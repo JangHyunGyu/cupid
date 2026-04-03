@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*La palabra 'pedir' parece no existir en el vocabulario de esta persona.*"
+        "text": "*Es un tono imperativo, pero ya me he acostumbrado. — ¿Así es como pide las cosas esta persona?*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -210,10 +210,10 @@
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Decirlo directamente que es un cumplido. — Eso parece raro viniendo de ella.*",
+        "text": "*El atardecer se cuela por la ventana. Una luz anaranjada se extiende por el perfil de Seoyeon. — Me dieron ganas de hablarle.*",
         "choices": [
-            "El atardecer es hermoso. -- Ah, me refiero al de afuera, no a ti.",
-            "¿Te duele el cuello? Descansa un poco."
+            "Qué bonito atardecer. Me refiero a lo de la ventana.",
+            "¿Te duele la garganta? Tómate un descanso."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -382,7 +382,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Si quieres venir, ven. No te lo impediré."
+        "text": "...Pero, todos los días no puedo. Solo de vez en cuando."
     },
     "after2_yuna_quiet": {
         "name": "Yuna",

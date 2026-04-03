@@ -73,7 +73,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*Neben wem du stehen wirst. Ich will, dass du ernsthaft darüber nachdenkst, was diese Wahl bedeutet*"
+        "text": "*...Mir geht's gut. Mach das, was du nicht bereuen wirst.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -238,7 +238,7 @@
     },
     "night3_cheat_reflect_3_ins6": {
         "name": "{name}",
-        "text": "*Seoyeon hat es gesagt. 'Deine einzige Antwort, oder gar nichts.'*"
+        "text": "*Seoyeon sagte: 'Ich bin nicht eine von vielen.'*"
     },
     "night3_cheat_reflect_3_ins7": {
         "name": "{name}",
@@ -278,27 +278,19 @@
     },
     "night3_faithful_reflect_4_ins": {
         "name": "{name}",
-        "text": "*Eine Sekunde. Mein Finger hält inne. — Minsus Worte kommen zurück. 'Nein zu sagen ist auch Liebe.'*"
+        "text": "*Die Galerie ist leer. Der Platz, wo Sojeongs Foto war. Der leere Bildschirm ist umso deutlicher.*"
     },
     "night3_faithful_reflect_4_ins2": {
         "name": "{name}",
-        "text": "*...Ablehnen. Ja, ich weiß, dass ich es tun muss. Ich weiß es, aber.*"
+        "text": "*Das Foto zu löschen war einfach. Ein Finger genügt. — Gefühle brauchen länger.*"
     },
     "night3_faithful_reflect_4_ins3": {
         "name": "{name}",
-        "text": "*Mein Finger bewegt sich nicht. Über dem Löschen-Button schwebend.*"
-    },
-    "night3_faithful_reflect_4_ins4": {
-        "name": "{name}",
-        "text": "*An meiner alten Schule war es genauso. Ich wusste es, konnte aber nicht handeln. Und jetzt — weiß ich es immer noch und kann trotzdem nicht.*"
-    },
-    "night3_faithful_reflect_4_ins5": {
-        "name": "{name}",
-        "text": "*Ich klappte mein Handy zu. Das Foto ist noch da.*"
+        "text": "*Trotzdem. Das, was weg ist — lässt mich weitermachen.*"
     },
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
-        "text": "*...Damals wie heute bin ich nichts weiter als ein Feigling, der nichts loslassen kann.*"
+        "text": "*Ich habe das Handy weggelegt. Die Galerie ist leer, und meine Gefühle sind noch durcheinander. — Trotzdem ein Schritt vorwärts.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",

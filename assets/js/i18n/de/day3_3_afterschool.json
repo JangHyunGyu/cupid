@@ -128,7 +128,7 @@
     },
     "after3_seo_6": {
         "name": "Seoyeon",
-        "text": "...Hast du das gesehen?"
+        "text": "*räuspert sich* ...Ist nichts. Vergiss es."
     },
     "after3_seo_7": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_yuna_choice1_3": {
         "name": "Yuna",
-        "text": "...Romane sind. Fiktion."
+        "text": "*dreht das Notizbuch um* ...Aber manchmal. Fiktion ist ehrlicher als die Wahrheit."
     },
     "after3_yuna_choice1_react": {
         "name": "{name}",
@@ -509,7 +509,7 @@
     },
     "minsu_d3_8": {
         "name": "{name}",
-        "text": "*Absagen ist auch Liebe. — An meiner alten Schule habe ich Sojeong nicht einmal die Gelegenheit gegeben, mich abzulehnen. Weil ich es nicht aussprechen konnte.*"
+        "text": "*...Die Erinnerung bricht ab. Minsu tippt sich mit dem Finger an die Stirn.*"
     },
     "minsu_d3_9": {
         "name": "{name}",
@@ -587,7 +587,7 @@
     },
     "after3_seo_7_ins": {
         "name": "Seoyeon",
-        "text": "Das unvollkommene Ich."
+        "text": "*senkt den Blick* ...Ich wollte dir so etwas nicht zeigen."
     },
     "after3_dain_5_ins": {
         "name": "Dain",
@@ -703,7 +703,7 @@
     },
     "minsu_d3_4_ins2": {
         "name": "Minsu",
-        "text": "Es ist nicht mehr 'später'. Es ist jetzt."
+        "text": "Alles zu schlucken, nur weil man ein 'guter Kerl' ist – das ist keine Freundlichkeit, sondern Feigheit."
     },
     "minsu_d3_5_ins": {
         "name": "{name}",

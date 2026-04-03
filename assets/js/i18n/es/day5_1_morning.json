@@ -1,11 +1,11 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Quinto día. El último. El uniforme ya se siente cómodo. — Es por estas personas. Lo sé.*"
+        "text": "*Quinto día. Aunque es domingo, hay un evento escolar. Me he acostumbrado al uniforme. — Es por estas personas. Lo sé.*"
     },
     "morning5_start_2": {
         "name": "{name}",
-        "text": "*Hoy hay un evento escolar. El último. En cuanto entro al aula — llegan señales desde tres direcciones.*"
+        "text": "*El último evento. Todo el tiempo acumulado hasta ahora converge hoy.*"
     },
     "morning5_mood_check": {
         "name": "Sistema",
@@ -29,7 +29,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Al pasar por el rincón de exposición del club de literatura en el pasillo — hay un cuento corto clavado en el tablón. Título: 'A la persona que conocí en la biblioteca'. Es de Yuna. — Una historia que solo el protagonista reconocería.*"
+        "text": "*El personaje de la novela le pone una manta a alguien que se ha quedado dormido en la biblioteca. — Esa es una escena que solo yo conozco. Yuna escribió esto.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -126,8 +126,8 @@
         "text": "¿Eh? {name}. — Es el último día. El último del evento. Cinco días. — Se pasaron volando."
     },
     "hidden_nurse_d5_2": {
-        "name": "Enfermera",
-        "text": "*Con una sonrisa ligera* Ven a visitarme después de graduarte. ...O antes, si te lastimas."
+        "name": "{name}",
+        "text": "*En el descanso del evento. Estoy pasando por la enfermería y — la puerta se abre.*"
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -135,7 +135,7 @@
     },
     "hidden_nurse_d5_4": {
         "name": "Enfermera",
-        "text": "*Volviendo a sonreír* Pregúntame eso después de graduarte. — Entonces te responderé."
+        "text": "...asegúrate de presionar bien para que la tirita no se caiga. — Hoy no te la pondré yo."
     },
     "hidden_nurse_d5_5": {
         "name": "Enfermera",
@@ -177,7 +177,7 @@
     },
     "morning5_start_ins": {
         "name": "{name}",
-        "text": "*Hoy hay un evento escolar. El último.*"
+        "text": "*Nada más entrar al aula — llegan señales de tres direcciones.*"
     },
     "morning5_start_2_ins": {
         "name": "{name}",
@@ -228,8 +228,8 @@
         "text": "*Extiende el sobre. — Le tiembla un poco la mano.*"
     },
     "hidden_homeroom_d5_6_ins3": {
-        "name": "Profesora",
-        "text": "No se lo he enseñado a nadie en siete años. — No es exactamente parte de mi trabajo."
+        "name": "Profesor/a",
+        "text": "...léelo y luego dime con sinceridad. — No tienes que guardarme las formas."
     },
     "hidden_homeroom_d5_6_ins4": {
         "name": "{name}",
@@ -309,7 +309,7 @@
     },
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
-        "text": "*Descanso durante el evento. Al pasar frente a la enfermería — la puerta se abre. La enfermera sale.*"
+        "text": "*La enfermera sale. Está justo delante.*"
     },
     "hidden_nurse_d5_2_ins2": {
         "name": "{name}",

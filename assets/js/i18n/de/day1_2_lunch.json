@@ -194,11 +194,11 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "So, wir sind da. Was willst du?"
+        "text": "*In der Cafeteria ist es zur Mittagszeit brechend voll. Der Duft von Brot und Milch liegt in der Luft.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Los geht’s! Was willst du?! Mein Tipp: Soboro-Brötchen und Erdbeermilch!"
+        "text": "Soboro-Brot und Erdbeermilch zusammen? Mega lecker! Glaub mir!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -460,10 +460,10 @@
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*Mir fällt das Buch auf, das Yuna gerade liest.*",
+        "text": "*Mir fällt das Buch auf, das Yuna vergessen hat. — Sie ist nur ein paar Schritte gegangen. Ich bin ihr hinterher.*",
         "choices": [
-            "Ist das Buch gut? Vielleicht sollte ich es auch lesen.",
-            "Du liest also gerne."
+            "Ist das Buch gut? Soll ich es auch mal lesen?",
+            "Du liest wohl gerne."
         ]
     },
     "lunch_yuna_c1_1": {

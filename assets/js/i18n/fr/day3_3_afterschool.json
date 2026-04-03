@@ -128,7 +128,7 @@
     },
     "after3_seo_6": {
         "name": "Seoyeon",
-        "text": "...Tu as vu ?"
+        "text": "*En s'éclaircissant la gorge* ...Ce n'est rien. Oublie."
     },
     "after3_seo_7": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after3_yuna_choice1_3": {
         "name": "Yuna",
-        "text": "...Les romans, c’est. De la fiction."
+        "text": "*En retournant son carnet* ...Mais parfois. La fiction est plus honnête que la réalité."
     },
     "after3_yuna_choice1_react": {
         "name": "{name}",
@@ -509,7 +509,7 @@
     },
     "minsu_d3_8": {
         "name": "{name}",
-        "text": "*Refuser, c'est aussi aimer. — Dans mon ancien lycée, je n'ai même pas donné à Sojeong l'occasion de me refuser. Parce que je n'ai pas su lui dire.*"
+        "text": "*...Le souvenir s'interrompt. Minsu lui tapote le front du doigt.*"
     },
     "minsu_d3_9": {
         "name": "{name}",
@@ -587,7 +587,7 @@
     },
     "after3_seo_7_ins": {
         "name": "Seoyeon",
-        "text": "La moi imparfaite."
+        "text": "*En baissant les yeux* ...Je ne voulais pas te montrer ça."
     },
     "after3_dain_5_ins": {
         "name": "Dain",
@@ -703,7 +703,7 @@
     },
     "minsu_d3_4_ins2": {
         "name": "Minsu",
-        "text": "C'est plus 'plus tard'. C'est maintenant."
+        "text": "Tout accepter sous prétexte d'être quelqu'un de bien — ce n'est pas de la gentillesse, c'est de la lâcheté."
     },
     "minsu_d3_5_ins": {
         "name": "{name}",

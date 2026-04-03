@@ -241,8 +241,8 @@
         "text": "...Trop gênant pour appeler ça un roman. Trop vieux pour de l'exercice. Sept ans."
     },
     "hidden_homeroom_d3_reveal_2": {
-        "name": "Professeure principale",
-        "text": "J'ai commencé à la fac. Écriture créative. Après le diplôme, j'ai postulé à des prix littéraires — refusé trois fois en deux ans."
+        "name": "Professeur principal",
+        "text": "Après avoir soumis le quatrième manuscrit — le jour des résultats, je n'ai pas reçu d'appel. Ce jour-là, j'ai postulé pour l'école normale."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Professeure principale",
@@ -299,7 +299,7 @@
         "text": "*Quelque chose me tracasse depuis ce matin. Mes pieds m'emmènent à l'infirmerie. Je n'ai même pas mal.*"
     },
     "hidden_nurse_d3_2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Hein ? Qu'est-ce que tu t'es fait aujourd'hui ? — T'es pas blessé mais tu viens à l'infirmerie ?"
     },
     "hidden_nurse_d3_3": {
@@ -307,11 +307,11 @@
         "text": "...Je voulais juste me reposer. Les relations se compliquent."
     },
     "hidden_nurse_d3_4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Assieds-toi. Sérieux, t'as une sale tête. Qu'est-ce qui se passe ?"
     },
     "hidden_nurse_d3_5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "C'est une consultation sentimentale ? — Prétendre que non, c'est le plus gros aveu."
     },
     "hidden_nurse_d3_choice1": {
@@ -323,23 +323,23 @@
         ]
     },
     "hidden_nurse_d3_choice1_a": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...C'est similaire ? Alors t'as bien fait de venir ici."
     },
     "hidden_nurse_d3_choice1_b": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Tire une chaise et s'assoit.* Les relations. — C'est une consultation sentimentale ? *Pfff.* Plus tu fais semblant, plus ça se voit."
     },
     "hidden_nurse_d3_6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Quand je bossais à l'hôpital. Trop de patients. Je voulais tous les sauver, mais j'ai que deux mains. Au final, j'avais l'impression de n'en soigner aucun correctement."
     },
     "hidden_nurse_d3_7": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "C'est pour ça que je suis venue ici. À l'école — je peux vraiment m'occuper de chacun."
     },
     "hidden_nurse_d3_8": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "C'est pareil pour toi. N'essaie pas de t'occuper de tout le monde. — Ce serait pas mieux de vraiment regarder la seule personne qui compte ?"
     },
     "hidden_nurse_d3_choice2": {
@@ -351,15 +351,15 @@
         ]
     },
     "hidden_nurse_d3_choice2_a": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Plutôt que d'avoir quitté — j'ai fui."
     },
     "hidden_nurse_d3_choice2_b": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Il y en avait un. Un patient que je n'ai pas pu sauver."
     },
     "hidden_nurse_d3_9": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...La personne qui compte. Et si c'était ta prof ?"
     },
     "hidden_nurse_d3_10": {
@@ -367,11 +367,11 @@
         "text": "*...Quoi ? — Je me suis retourné. L'infirmière regarde par la fenêtre. Elle ne sourit pas. C'est la première fois que je vois cette expression.*"
     },
     "hidden_nurse_d3_11": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Je plaisante. Allez, file en cours."
     },
     "hidden_nurse_d3_freetalk": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
         "context": "Jour 3. Venu à l'infirmerie par anxiété. Ton : Lumineux en surface mais des ombres en dessous. Parfois le sourire n'atteint pas les yeux. La sincérité transparaît dans la conversation décontractée.",
         "personality": "D'habitude joueuse, mais quand elle est sérieuse l'atmosphère change complètement."
@@ -498,23 +498,23 @@
     },
     "hidden_homeroom_d3_4_ins": {
         "name": "{name}",
-        "text": "*Pause entre le deuxième et troisième cours. En revenant des toilettes — je vois de la lumière dans la salle vide au bout du couloir.*"
+        "text": "*La main du professeur principal est posée sur la feuille de manuscrit. Entre les pages retournées, on aperçoit une écriture dense.*"
     },
     "hidden_homeroom_d3_4_ins2": {
         "name": "{name}",
-        "text": "*Une salle vide à cette heure ? — Quelqu'un est là.*"
+        "text": "*Il a dit que c'était des documents de travail — mais les documents pour les professeurs sont imprimés sur du A4. On n'écrit pas à la main sur une feuille de manuscrit.*"
     },
     "hidden_homeroom_d3_4_ins3": {
         "name": "{name}",
-        "text": "*Je m'approche silencieusement. La porte est entrouverte. — La professeure principale est assise au bureau, en train d'écrire quelque chose.*"
+        "text": "*L'expression du professeur principal redevient vite normale. Son visage indifférent habituel. — Le changement est trop rapide.*"
     },
     "hidden_homeroom_d3_4_ins4": {
-        "name": "{name}",
-        "text": "*Ce ne sont pas des documents officiels. C'est du papier à manuscrit. — La même liasse que j'ai vue hier dans le tiroir de la salle des profs.*"
+        "name": "Professeur principal",
+        "text": "...Qu'est-ce que tu regardes ? Pourquoi tu viens ici pendant la récréation ?"
     },
     "hidden_homeroom_d3_4_ins5": {
         "name": "{name}",
-        "text": "*La professeure arrête d'écrire et lève les yeux. — Nos regards se croisent.*"
+        "text": "*La feuille de manuscrit. L'écriture dense. L'expression qu'il tente de cacher. — Dois-je demander, ou faire semblant de ne rien voir ?*"
     },
     "hidden_homeroom_d3_3_ins": {
         "name": "{name}",
@@ -649,7 +649,7 @@
         "text": "*J'ouvre la porte de l'infirmerie.*"
     },
     "hidden_nurse_d3_1_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Levant les yeux* ...Hm ? Tu t'es blessé où aujourd'hui ?"
     },
     "hidden_nurse_d3_1_ins3": {
@@ -657,7 +657,7 @@
         "text": "Je ne suis pas blessé."
     },
     "hidden_nurse_d3_1_ins4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Pas blessé mais tu viens à l'infirmerie ?"
     },
     "hidden_nurse_d3_1_ins5": {
@@ -669,7 +669,7 @@
         "text": "*L'infirmière me regarde un instant. L'espièglerie disparaît.*"
     },
     "hidden_nurse_d3_3_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Assieds-toi."
     },
     "hidden_nurse_d3_3_ins3": {
@@ -685,7 +685,7 @@
         "text": "*L'infirmière s'arrête un instant. — Son regard s'adoucit.*"
     },
     "hidden_nurse_d3_5_ins2": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Quelque chose comme ça ? Alors tu as bien fait de venir."
     },
     "hidden_nurse_d3_5_ins3": {
@@ -697,7 +697,7 @@
         "text": "C'est juste... les relations qui se sont compliquées."
     },
     "hidden_nurse_d3_5_ins5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Tirant une chaise pour s'asseoir en face* Les relations."
     },
     "hidden_nurse_d3_5_ins6": {
@@ -709,7 +709,7 @@
         "text": "*L'infirmière se tait un instant. Puis.*"
     },
     "hidden_nurse_d3_5_ins8": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "C'est une consultation amoureuse ?"
     },
     "hidden_nurse_d3_5_ins9": {
@@ -717,7 +717,7 @@
         "text": "Ah, c'est pas ça..."
     },
     "hidden_nurse_d3_5_ins10": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Petit sourire* Faire semblant que non, c'est ce qui se voit le plus."
     },
     "hidden_nurse_d3_5_ins11": {
@@ -725,7 +725,7 @@
         "text": "*En plein dans le mille. — Son sens de l'observation n'est pas une blague.*"
     },
     "hidden_nurse_d3_5_ins12": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Est-ce qu'une infirmière est censée faire ce genre de consultation... *Le menton dans la main* Mais je t'écoute. C'est l'infirmerie après tout. Le cœur aussi doit être en bonne santé, non ?"
     },
     "hidden_nurse_d3_5_ins13": {
@@ -737,7 +737,7 @@
         "text": "*L'infirmière s'arrête. Son regard se tourne vers la fenêtre.*"
     },
     "hidden_nurse_d3_5_ins15": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Oui. Quand je travaillais à l'hôpital universitaire."
     },
     "hidden_nurse_d3_5_ins16": {
@@ -753,7 +753,7 @@
         "text": "*L'infirmière pose son verre d'eau. Lentement.*"
     },
     "hidden_nurse_d3_6_ins3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Plutôt que d'avoir démissionné, j'ai fui. *Avec un léger sourire* Il n'y a pas de raison noble."
     },
     "hidden_nurse_d3_6_ins4": {
@@ -765,7 +765,7 @@
         "text": "*L'infirmière s'arrête. Elle touche son stéthoscope.*"
     },
     "hidden_nurse_d3_6_ins6": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Il y en avait un. Un patient que je n'ai pas pu sauver. *Son regard se perd.* C'est à cause de cette personne que je suis ici."
     },
     "hidden_nurse_d3_6_ins7": {
@@ -785,7 +785,7 @@
         "text": "...Merci."
     },
     "hidden_nurse_d3_8_ins3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Retrouvant un ton léger* Oh, pour si peu. Considère ça comme offert. Reviens quand tu veux. Blessé ou pas."
     },
     "hidden_nurse_d3_8_ins4": {
@@ -813,7 +813,7 @@
         "text": "*0,7 seconde.*"
     },
     "hidden_nurse_d3_9_ins5": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Avec un sourire à peine tenu* Je plaisante. Allez, file."
     },
     "hidden_nurse_d3_9_ins6": {

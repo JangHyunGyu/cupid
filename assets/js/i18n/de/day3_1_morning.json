@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Klassenlehrerin",
-        "text": "Hab an der Uni angefangen. Kreatives Schreiben. Nach dem Abschluss hab ich mich bei Literaturpreisen beworben — dreimal abgelehnt in zwei Jahren."
+        "text": "Nachdem ich das vierte Manuskript eingereicht hatte — am Tag der Ergebnisbekanntgabe kam kein Anruf. An diesem Tag habe ich mich an der Pädagogischen Hochschule beworben."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Klassenlehrerin",
@@ -498,23 +498,23 @@
     },
     "hidden_homeroom_d3_4_ins": {
         "name": "{name}",
-        "text": "*Pause zwischen der zweiten und dritten Stunde. Auf dem Rückweg von der Toilette — sehe ich Licht im leeren Klassenzimmer am Ende des Flurs.*"
+        "text": "*Die Hand des Klassenlehrers ruht auf dem Manuskriptpapier. Zwischen den umgedrehten Blättern sind dicht beschriebene Zeilen zu erkennen.*"
     },
     "hidden_homeroom_d3_4_ins2": {
         "name": "{name}",
-        "text": "*Ein leeres Klassenzimmer um diese Zeit? — Da ist jemand.*"
+        "text": "*Er sagte, es seien Arbeitsdokumente — aber Lehrerunterlagen werden auf A4 gedruckt. Man schreibt sie nicht handschriftlich auf Manuskriptpapier.*"
     },
     "hidden_homeroom_d3_4_ins3": {
         "name": "{name}",
-        "text": "*Ich nähere mich leise. Die Tür steht einen Spalt offen. — Die Klassenlehrerin sitzt am Pult und schreibt etwas.*"
+        "text": "*Der Ausdruck des Klassenlehrers kehrt schnell zurück. Sein gewohnt gleichgültiges Gesicht. — Der Wechsel ist zu abrupt.*"
     },
     "hidden_homeroom_d3_4_ins4": {
-        "name": "{name}",
-        "text": "*Das sind keine Dienstunterlagen. Es ist Manuskriptpapier. — Derselbe Stapel, den ich gestern in der Schublade im Lehrerzimmer gesehen habe.*"
+        "name": "Klassenlehrerin",
+        "text": "...Was glotzt du so? Was machst du überhaupt hier in der Pause?"
     },
     "hidden_homeroom_d3_4_ins5": {
         "name": "{name}",
-        "text": "*Die Lehrerin hört auf zu schreiben und blickt auf. — Unsere Blicke treffen sich.*"
+        "text": "*Manuskriptpapier. Dicht beschriebene Zeilen. Ein Gesicht, das etwas verbergen will. — Soll ich fragen oder so tun, als wüsste ich nichts?*"
     },
     "hidden_homeroom_d3_3_ins": {
         "name": "{name}",

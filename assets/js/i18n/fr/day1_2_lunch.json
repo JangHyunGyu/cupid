@@ -194,11 +194,11 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "Bon, on y est. Tu veux quoi ?"
+        "text": "*La cafétéria est bondée, c'est l'heure du déjeuner. Les odeurs de pain et de lait se mêlent.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Voilà ! Tu veux quoi ?! Je te recommande le pain soboro et le lait fraise !"
+        "text": "Le pain soboro et le lait à la fraise, c'est une combinaison vraiment délicieuse. Crois-moi !"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -460,10 +460,10 @@
     },
     "lunch_yuna_choice": {
         "name": "{name}",
-        "text": "*Je remarque le livre que Yuna est en train de lire.*",
+        "text": "*Je remarque le livre que Yuna a oublié. — Elle n'est pas allée loin. Je l'ai suivie.*",
         "choices": [
-            "Il est bien, ce livre ? Je devrais peut-être le lire aussi.",
-            "Alors tu aimes lire."
+            "Il est bien ce livre ? Je devrais le lire aussi ?",
+            "Tu aimes lire, on dirait."
         ]
     },
     "lunch_yuna_c1_1": {

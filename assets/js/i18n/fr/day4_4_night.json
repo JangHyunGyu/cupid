@@ -45,7 +45,7 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Notre maison a l’air normale de l’extérieur, non ? Grande maison, belle voiture, fille présidente du conseil des élèves."
+        "text": "Alors, j'ai dû faire semblant aussi. À la maison, et à l'école. — Un sourire, c'est le masque le plus simple, en fait."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
@@ -234,7 +234,7 @@
     },
     "wall_dain_18": {
         "name": "Dain",
-        "text": "Bourse sportive. Pro. Équipe nationale. — Depuis mes cinq ans, c’était tout ce que j’avais. Et ça s’est terminé en une phrase."
+        "text": "En sortant de l'hôpital, maman pleurait. — Moi, je n'ai pas pu pleurer. Je ne réalisais pas encore."
     },
     "wall_dain_19": {
         "name": "Dain",
@@ -423,7 +423,7 @@
     },
     "wall_yuna_15": {
         "name": "Yuna",
-        "text": "Quand tu es venu à la bibliothèque pour la première fois. Tu avais une aura similaire à la sienne. — C’est pour ça que j’avais peur. Si je me rapprochais encore, tu pourrais disparaître aussi."
+        "text": "*En baissant la tête* ...Alors, j'ai fait exprès d'être froide. Je pensais que si je les repoussais avant, ça ferait moins mal."
     },
     "wall_yuna_16": {
         "name": "Yuna",
@@ -532,7 +532,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Le samedi est passé comme ça. Qu’est-ce que demain apportera.*"
+        "text": "*Le samedi s'est terminé ainsi. Demain, c'est la fête de l'école. — On doit y aller, même si c'est dimanche.*"
     },
     "day4_night_sleep": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "day4_final": {
         "name": "{name}",
-        "text": "*La nuit du samedi s’approfondit. Demain c’est dimanche — le dernier jour.*"
+        "text": "*La nuit de samedi est bien avancée. Demain, c'est dimanche — le dernier jour de la fête de l'école.*"
     },
     "wall_seo_pre_high_1": {
         "name": "Seoyeon",
@@ -589,11 +589,11 @@
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*Dans la grande roue, Seoyeon s'appuie sur mon épaule.*"
+        "text": "*Nous nous sommes assis côte à côte sur le banc. Seoyeon s'appuie légèrement sur mon épaule.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
-        "text": "...Les hauteurs me font un peu peur."
+        "text": "...Restons comme ça encore un peu."
     },
     "wall_dain_pre_high_1": {
         "name": "Dain",
@@ -638,7 +638,7 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*Après le centre sportif, on s'assoit sur un banc. Dain se couche sur mes genoux sans prévenir.*"
+        "text": "*Nous sommes sortis de la salle d'arcade et nous nous sommes assis sur un banc. Dain s'allonge sur mes genoux sans prévenir.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -706,7 +706,7 @@
         "text": "*23 heures. Un message de la Professeure principale. Trois courtes lignes. — 'Premier lecteur'. Ces mots continuent de résonner dans ma tête.*"
     },
     "night_nurse_msg_1": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Ce que tu as dit à mon infirmerie aujourd'hui... Je n'arrête pas d'y penser la nuit."
     },
     "night_nurse_msg_2": {
@@ -714,11 +714,11 @@
         "text": "*Un message de l'infirmière est arrivé. 23h. Une seule phrase.*"
     },
     "night_nurse_msg_3": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "Ah, je ne voulais pas dire ça dans ce sens. C'est juste que tu m'as marquée."
     },
     "night_nurse_msg_4": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "...Bonne nuit."
     },
     "wall_seo_to_park": {
@@ -823,7 +823,7 @@
     },
     "wall_dain_18_ins": {
         "name": "Dain",
-        "text": "Mais tout s'est terminé en une phrase."
+        "text": "J'ai réalisé ça — quand je rangeais le casier du gymnase."
     },
     "wall_dain_18_ins2": {
         "name": "{name}",
@@ -966,11 +966,11 @@
         "text": "*23h30. Notification du téléphone. L'Infirmière.*"
     },
     "wall_yuna_glimpse_3_ins12": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Message* Ce que tu as dit à l'infirmerie aujourd'hui."
     },
     "wall_yuna_glimpse_3_ins13": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Message* ...J'arrête pas d'y repenser ce soir."
     },
     "wall_yuna_glimpse_3_ins14": {
@@ -982,11 +982,11 @@
         "text": "*Une minute plus tard.*"
     },
     "wall_yuna_glimpse_3_ins16": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Message* Ah, pas dans un sens bizarre. C'est juste que c'était marquant."
     },
     "wall_yuna_glimpse_3_ins17": {
-        "name": "Infirmière",
+        "name": "Infirmière scolaire",
         "text": "*Message* ...Bonne nuit."
     },
     "wall_yuna_glimpse_3_ins18": {

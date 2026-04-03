@@ -73,7 +73,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*Who you’ll stand beside. I want you to seriously think about what that choice means*"
+        "text": "*...I'm okay. Just go with what you won't regret.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -238,7 +238,7 @@
     },
     "night3_cheat_reflect_3_ins6": {
         "name": "{name}",
-        "text": "*Seoyeon said it. 'Either your only answer, or nothing at all.'*"
+        "text": "*Seoyeon said, 'I'm not just one of many.'*"
     },
     "night3_cheat_reflect_3_ins7": {
         "name": "{name}",
@@ -278,27 +278,19 @@
     },
     "night3_faithful_reflect_4_ins": {
         "name": "{name}",
-        "text": "*One second. My finger stops. — Minsu's words come back to me. 'Saying no is also love.'*"
+        "text": "*The gallery is empty. The space where Sojeong's photo was. The blank screen feels even more distinct.*"
     },
     "night3_faithful_reflect_4_ins2": {
         "name": "{name}",
-        "text": "*...Rejection. Right, I know I have to. I know, but.*"
+        "text": "*Deleting the photo was easy. Just one finger, and it's done. — Feelings take much longer.*"
     },
     "night3_faithful_reflect_4_ins3": {
         "name": "{name}",
-        "text": "*My finger won't move. Just hovering over the delete button.*"
-    },
-    "night3_faithful_reflect_4_ins4": {
-        "name": "{name}",
-        "text": "*It was the same at my old school. I knew but couldn't act. And now — I know but still can't.*"
-    },
-    "night3_faithful_reflect_4_ins5": {
-        "name": "{name}",
-        "text": "*I closed my phone. The photo is still there.*"
+        "text": "*Still. At least for what I've deleted — I can move forward.*"
     },
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",
-        "text": "*...Back then and now, I'm nothing but a coward who can't let go of anything.*"
+        "text": "*I closed my phone. The gallery is empty, and my mind is still a mess. — Still, one step forward.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",

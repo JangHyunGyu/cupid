@@ -45,7 +45,7 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Our house looks fine from the outside, right? Big house, nice car, student council president daughter."
+        "text": "So I ended up putting on an act too. Both at home and at school. — A smile turned out to be the easiest mask."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
@@ -234,7 +234,7 @@
     },
     "wall_dain_18": {
         "name": "Dain",
-        "text": "Sports college. Pro league. National team. — Since I was five, that was all I had. And it ended in one sentence."
+        "text": "My mom was crying when we left the hospital. — I couldn't cry. It just hadn't sunk in yet."
     },
     "wall_dain_19": {
         "name": "Dain",
@@ -423,7 +423,7 @@
     },
     "wall_yuna_15": {
         "name": "Yuna",
-        "text": "When you first came to the library. You had a similar vibe to him. — That's why I was scared. If I got close again, you might vanish too."
+        "text": "*Lowering her head* ...That's why I deliberately acted cold. I thought if I pushed everyone away first, it would hurt less."
     },
     "wall_yuna_16": {
         "name": "Yuna",
@@ -532,7 +532,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Saturday passed just like that. What will tomorrow bring.*"
+        "text": "*Saturday just flew by. Tomorrow's a school event. — We even have to go to school on a Sunday.*"
     },
     "day4_night_sleep": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "day4_final": {
         "name": "{name}",
-        "text": "*Saturday night deepens. Tomorrow is Sunday — the last day.*"
+        "text": "*Saturday night is drawing to a close. Tomorrow's Sunday — the final day of the school event.*"
     },
     "wall_seo_pre_high_1": {
         "name": "Seoyeon",
@@ -589,11 +589,11 @@
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*On the Ferris wheel, Seoyeon leans on my shoulder.*"
+        "text": "*We sat side by side on the bench. Seoyeon subtly leaned her head on my shoulder.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
-        "text": "...I'm a little scared of heights."
+        "text": "...Let's just stay like this a little longer."
     },
     "wall_dain_pre_high_1": {
         "name": "Dain",
@@ -638,7 +638,7 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*After the sports center, we sit on a bench. Dain lays on my lap without warning.*"
+        "text": "*We left the arcade and sat on a bench. Dain lay down on my lap without any warning.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -823,7 +823,7 @@
     },
     "wall_dain_18_ins": {
         "name": "Dain",
-        "text": "But it all ended in one sentence."
+        "text": "It finally sank in — when I was cleaning out the gym lockers."
     },
     "wall_dain_18_ins2": {
         "name": "{name}",
