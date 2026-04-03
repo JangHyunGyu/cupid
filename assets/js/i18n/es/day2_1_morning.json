@@ -5,12 +5,12 @@
     },
     "morning2_start_2": {},
     "morning2_dain_1": {
-        "name": "Dain",
-        "text": "¡¿Llegaste?! ¡Buenos días!!"
+        "name": "{name}",
+        "text": "*En el momento en que abro la puerta del aula... un golpe en la espalda.*"
     },
     "morning2_dain_2": {
-        "name": "{name}",
-        "text": "...Casi me rompes la espalda."
+        "name": "Dain",
+        "text": "¡¿Llegaste?! ¡Buenos días!!"
     },
     "morning2_dain_3": {
         "name": "Dain",

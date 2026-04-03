@@ -5,12 +5,12 @@
     },
     "morning2_start_2": {},
     "morning2_dain_1": {
-        "name": "Dain",
-        "text": "T'es là ?! Bonjour !!"
+        "name": "{name}",
+        "text": "*Au moment où j'ouvre la porte de la classe — un choc dans le dos.*"
     },
     "morning2_dain_2": {
-        "name": "{name}",
-        "text": "...Tu as failli me casser le dos."
+        "name": "Dain",
+        "text": "T'es là ?! Bonjour !!"
     },
     "morning2_dain_3": {
         "name": "Dain",
