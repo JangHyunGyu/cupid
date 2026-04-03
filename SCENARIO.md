@@ -2460,7 +2460,7 @@
 - 제외조건: `ate_lunch_seoyeon`
 - 다음: `after_end`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `seyoun_pout.png`
 **서연**: 내일은 도망가지 마.
 
 ---
@@ -2812,7 +2812,7 @@
 ### `after_hidden_nurse_choice`
 - 배경: `school_hallway.png`
 - 선택지:
-  1. "보건실에 들어간다" → `after_hidden_nurse_intro_ins` | Nurse +7
+  1. "보건실에 들어간다" → `after_hidden_nurse_intro_ins`
   2. "그냥 집에 간다" → `after_nurse_skip` | Nurse +0
 
 - 캐릭터: `없음`
@@ -2849,6 +2849,7 @@
 
 ### `after_nurse_enter_2`
 - 배경: `nurse_room.png`
+- 스탯: Nurse +7
 - 다음: `after_nurse_enter_2_ins`
 
 - 캐릭터: `nurse_normal.png`
@@ -3244,7 +3245,7 @@
 - 다음: `after_nurse_enter_12`
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: {name}이요.
+**{name}**: {name}입니다.
 
 ---
 

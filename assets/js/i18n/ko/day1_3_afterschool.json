@@ -562,7 +562,7 @@
     },
     "after_nurse_enter_11_ins12": {
         "name": "{name}",
-        "text": "{name}이요."
+        "text": "{name}입니다."
     },
     "after_nurse_enter_12_ins": {
         "name": "{name}",

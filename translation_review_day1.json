@@ -12404,7 +12404,7 @@
     "after_nurse_enter_11_ins12": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_11_ins12",
       "_ko_name": "{name}",
-      "_ko_text_preview": "{name}이요.",
+      "_ko_text_preview": "{name}입니다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_11_ins12",
