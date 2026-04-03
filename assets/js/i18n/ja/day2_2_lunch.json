@@ -482,7 +482,7 @@
         "text": "*顔を上げて* あら、昨日の転校生くん"
     },
     "lunch2_dain_end_ins5_first": {
-        "name": "보건선생님",
+        "name": "保健先生",
         "text": "*保健室の中。机の上に書類が積まれ、保健室の先生が椅子に座っている。*"
     },
     "lunch2_dain_end_ins6": {
@@ -494,7 +494,7 @@
         "text": "また来たの？ 常連になりたいの？"
     },
     "lunch2_dain_end_ins7_first": {
-        "name": "보건선생님",
+        "name": "保健先生",
         "text": "…あれ？さっきの。昼休みになんの用？"
     },
     "lunch2_dain_end_ins8": {
@@ -503,7 +503,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "朝よりは顔色がいいみたいね。よかった。"
+        "text": "*朝よりは顔色がいいみたいね。よかった。*"
     },
     "lunch2_dain_end_ins9": {
         "name": "{name}",
@@ -598,7 +598,7 @@
         "text": "*さっき声が変わったの。——気のせいだったのか？*"
     },
     "lunch2_dain_end_nurse_short1": {
-        "name": "保健の先生",
+        "name": "保健先生",
         "text": "はい、できた。今度はケガしないで来てね。"
     },
     "lunch2_dain_end_nurse_short2": {

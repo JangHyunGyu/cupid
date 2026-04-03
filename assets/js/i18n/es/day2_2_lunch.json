@@ -482,7 +482,7 @@
         "text": "*Levantando la vista* Oh, el estudiante nuevo de ayer."
     },
     "lunch2_dain_end_ins5_first": {
-        "name": "보건선생님",
+        "name": "Enfermera",
         "text": "*Dentro de la enfermería. Hay documentos apilados en el escritorio y la enfermera está sentada en su silla.*"
     },
     "lunch2_dain_end_ins6": {
@@ -494,7 +494,7 @@
         "text": "¿Otra vez? ¿Quieres hacerte cliente habitual?"
     },
     "lunch2_dain_end_ins7_first": {
-        "name": "보건선생님",
+        "name": "Enfermera",
         "text": "...¿Oh? Eres el de antes. ¿Qué te trae por aquí durante el almuerzo?"
     },
     "lunch2_dain_end_ins8": {
@@ -503,7 +503,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "Te ves mejor que esta mañana. Es un alivio."
+        "text": "*Te ves mejor que esta mañana. Es un alivio.*"
     },
     "lunch2_dain_end_ins9": {
         "name": "{name}",
