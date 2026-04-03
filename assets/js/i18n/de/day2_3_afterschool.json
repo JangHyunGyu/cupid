@@ -516,7 +516,7 @@
     },
     "hidden_nurse_d2_4": {
         "name": "Schulkrankenschwester",
-        "text": "Halt still~..."
+        "text": "Halt still..."
     },
     "hidden_nurse_d2_5": {
         "name": "Schulkrankenschwester",
@@ -544,7 +544,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
-        "text": "Das hast du nicht gesehen, oder? Geheimnis~ Auch Lehrer haben Geheimnisse."
+        "text": "Das hast du nicht gesehen, klar? Geheim. Lehrerinnen dürfen auch ihre Geheimnisse haben."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -560,7 +560,7 @@
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Schulkrankenschwester",
-        "text": "*lacht leise* Geheimnis~ Lehrerinnen haben auch Geheimnisse."
+        "text": "*Lacht leise* Geheim. Lehrerinnen dürfen auch ihre Geheimnisse haben."
     },
     "hidden_nurse_d2_8": {
         "name": "Schulkrankenschwester",
@@ -568,7 +568,7 @@
     },
     "hidden_nurse_d2_9": {
         "name": "Schulkrankenschwester",
-        "text": "Du kannst auch ohne Grund kommen. — Na ja, nicht während des Unterrichts~! Nach der Schule!"
+        "text": "Du kannst auch ohne Grund kommen. Nur nicht während des Unterrichts. Nach der Schule."
     },
     "hidden_nurse_d2_freetalk": {
         "name": "Schulkrankenschwester",

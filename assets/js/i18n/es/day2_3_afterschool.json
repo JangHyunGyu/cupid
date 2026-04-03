@@ -516,7 +516,7 @@
     },
     "hidden_nurse_d2_4": {
         "name": "Enfermera",
-        "text": "Quédate quieto~..."
+        "text": "Quédate quieto..."
     },
     "hidden_nurse_d2_5": {
         "name": "Enfermera",
@@ -544,7 +544,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
-        "text": "No viste eso, ¿verdad? Secreto~ Los profesores también tienen secretos."
+        "text": "Eso no lo has visto, ¿vale? Secreto. Las profes también tenemos secretos."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -560,7 +560,7 @@
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Enfermera",
-        "text": "*riendo suavemente* Secreto~ Las profesoras también tienen secretos."
+        "text": "*Se ríe por lo bajo* Secreto. Las profes también tenemos secretos."
     },
     "hidden_nurse_d2_8": {
         "name": "Enfermera",
@@ -568,7 +568,7 @@
     },
     "hidden_nurse_d2_9": {
         "name": "Enfermera",
-        "text": "Puedes venir sin razón. — Bueno, no en horario de clase~! ¡Después de clases!"
+        "text": "Puedes venir incluso sin motivo. Solo que no en horario de clase. Después de clase."
     },
     "hidden_nurse_d2_freetalk": {
         "name": "Enfermera",

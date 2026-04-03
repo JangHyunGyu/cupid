@@ -260,7 +260,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Infirmière",
-        "text": "C'est le nouveau, non ? Déjà à l'infirmerie le premier jour. Tu dois être stressé~"
+        "text": "C'est toi, le nouveau ? Premier jour, et te voilà déjà à l'infirmerie. Dur début, hein ?"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_6": {
         "name": "Infirmière",
-        "text": "Pas de fièvre~... Peut-être une tension un peu basse."
+        "text": "Pas de fièvre... Tu fais peut-être juste un petit coup de tension."
     },
     "after_nurse_enter_7": {
         "name": "Infirmière",
@@ -300,11 +300,11 @@
     },
     "after_nurse_enter_10": {
         "name": "Infirmière",
-        "text": "Du romarin. — Je le cultive depuis mes années à l'hôpital. C'est du passé~ J'aime bien ici. On ne vient qu'avec des petits bobos."
+        "text": "Du romarin. Je le fais pousser depuis l'époque où je bossais à l'hôpital. Ça remonte. J'aime bien être ici. Les élèves ne débarquent qu'avec de petites blessures."
     },
     "after_nurse_enter_11": {
         "name": "Infirmière",
-        "text": "Si le vertige revient, tu peux passer~ L'infirmerie est toujours ouverte. Essaie juste de ne pas attendre d'être à bout avant de venir. Ça, ça m'inquiète."
+        "text": "Si ça recommence à tourner, viens me voir. L'infirmerie est toujours ouverte. N'attends juste pas d'être à bout pour venir. Ça, ça m'inquiète."
     },
     "after_nurse_enter_12": {
         "name": "Infirmière",

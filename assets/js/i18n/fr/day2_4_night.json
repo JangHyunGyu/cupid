@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hé~ on va à la boutique demain ! Je suis encore dégoûtée qu'on n'y soit pas allés aujourd'hui !"
+        "text": "Hé, demain on va à la cafét', ok ? Ça me saoule encore qu'on n'ait pas pu y aller aujourd'hui !"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -240,7 +240,7 @@
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
-        "text": "lol ok~ bonne nuit !"
+        "text": "Haha, d'accord. Bonne nuit !"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",

@@ -93,7 +93,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Vaya. Es la primera vez que alguien así aparece el primer día. Interés +1."
+        "text": "Vaya. ¿Así vienes de fuerte desde el primer día? Me acordaré de tu nombre."
     },
     "choice_flirt_3": {
         "name": "{name}",

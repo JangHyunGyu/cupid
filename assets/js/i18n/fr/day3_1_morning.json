@@ -368,7 +368,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "Infirmière",
-        "text": "...Je plaisante~ allez, file en cours !"
+        "text": "...Je plaisante. Allez, file en cours."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Infirmière",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Infirmière",
-        "text": "*Redevenue espiègle* Oh allez~ C'est offert par la maison. — Reviens quand tu veux. Blessé ou non."
+        "text": "*Retrouvant un ton léger* Oh, pour si peu. Considère ça comme offert. Reviens quand tu veux. Blessé ou pas."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -814,7 +814,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "Infirmière",
-        "text": "*Parvenant à peine à sourire* Je plaisante~ Allez, file !"
+        "text": "*Avec un sourire à peine tenu* Je plaisante. Allez, file."
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",

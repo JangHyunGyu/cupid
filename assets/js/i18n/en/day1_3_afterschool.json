@@ -260,7 +260,7 @@
     },
     "after_nurse_enter_4": {
         "name": "School Nurse",
-        "text": "You're the transfer student, right? Already in the nurse's office on day one. Must be stressed out~"
+        "text": "You're the transfer student, right? First day and you're already in the nurse's office. Rough start, huh?"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_6": {
         "name": "School Nurse",
-        "text": "No fever~... Might be low blood pressure though."
+        "text": "No fever... Could just be a bit of low blood pressure."
     },
     "after_nurse_enter_7": {
         "name": "School Nurse",
@@ -300,11 +300,11 @@
     },
     "after_nurse_enter_10": {
         "name": "School Nurse",
-        "text": "Rosemary. — Been growing it since my hospital days. Ancient history~ I like it here. Everyone only comes in with minor scrapes."
+        "text": "Rosemary. I've been growing it since my hospital days. That was a long time ago. I like it here. People usually only come in with little scrapes."
     },
     "after_nurse_enter_11": {
         "name": "School Nurse",
-        "text": "Come by if you feel dizzy again~ The nurse's office is always open. Just don't wait until you're pushing through it. That part makes me worry."
+        "text": "If you get dizzy again, come see me. The nurse's office is always open. Just don't wait until you're barely holding out. That's the part that worries me."
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",

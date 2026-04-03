@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hey~ let's go to the store tomorrow! Still bummed we couldn't go today!"
+        "text": "Hey, let's hit the snack shop tomorrow! I'm still bummed we missed it today!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -240,7 +240,7 @@
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
-        "text": "lol okay~ night!"
+        "text": "lol okay, night!"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",

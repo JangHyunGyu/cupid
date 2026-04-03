@@ -260,7 +260,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Schulkrankenschwester",
-        "text": "Du bist der Neue, oder? Am ersten Tag schon im Krankenzimmer. Stress gehabt, hm~"
+        "text": "Du bist der Neue, oder? Gleich am ersten Tag im Krankenzimmer. Zäher Start, hm?"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_6": {
         "name": "Schulkrankenschwester",
-        "text": "Kein Fieber~... Vielleicht ein bisschen niedriger Blutdruck."
+        "text": "Kein Fieber... Vielleicht ist dein Blutdruck einfach ein bisschen niedrig."
     },
     "after_nurse_enter_7": {
         "name": "Schulkrankenschwester",
@@ -300,11 +300,11 @@
     },
     "after_nurse_enter_10": {
         "name": "Schulkrankenschwester",
-        "text": "Rosmarin. — Den züchte ich seit meiner Zeit im Krankenhaus. Alte Geschichte~ Ich mag es hier. Alle kommen nur mit kleinen Kratzern."
+        "text": "Rosmarin. Den ziehe ich noch seit meiner Zeit im Krankenhaus. Ist lange her. Ich mag es hier. Die meisten kommen nur mit kleinen Schrammen rein."
     },
     "after_nurse_enter_11": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn dir wieder schwindelig wird, kannst du vorbeikommen~ Das Krankenzimmer ist immer offen. Warte nur nicht, bis du dich schon komplett durchquälst. Das ist der Teil, der mir Sorgen macht."
+        "text": "Wenn dir wieder schwindelig wird, komm einfach vorbei. Das Krankenzimmer ist immer offen. Warte nur nicht, bis es gar nicht mehr geht. Das macht mir eher Sorgen."
     },
     "after_nurse_enter_12": {
         "name": "Schulkrankenschwester",
