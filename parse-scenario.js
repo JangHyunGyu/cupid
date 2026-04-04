@@ -425,10 +425,24 @@ function parseStats(str) {
 function generateJS(baseName, scenes) {
     const dayNum = parseInt(baseName.match(/day(\d)/)[1]);
     const entries = [];
+    const fileMapEntries = [];
 
     for (const [id, scene] of scenes) {
         entries.push(`    ${JSON.stringify(id)}: ${formatSceneJS(scene)}`);
+        if (scene.type === 'free_talk' && /night/i.test(id)) {
+            fileMapEntries.push(`    ${JSON.stringify(id)}: ${JSON.stringify(baseName)}`);
+        }
     }
+
+    const fileMapBlock = fileMapEntries.length
+        ? `if (typeof SCENARIO_FILE_MAP === 'undefined') var SCENARIO_FILE_MAP = {};
+Object.assign(SCENARIO_FILE_MAP, {
+${fileMapEntries.join(',\n')}
+});
+`
+        : null;
+
+    const fileMapSection = fileMapBlock ? `${fileMapBlock}\n` : '';
 
     const code = `/**
  * ============================================================================
@@ -439,7 +453,7 @@ function generateJS(baseName, scenes) {
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[${dayNum}]) SCENARIO[${dayNum}] = {};
 
-Object.assign(SCENARIO[${dayNum}], {
+${fileMapSection}Object.assign(SCENARIO[${dayNum}], {
 ${entries.join(',\n')}
 });
 `;

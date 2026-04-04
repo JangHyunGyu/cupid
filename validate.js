@@ -17,14 +17,15 @@ const IMAGES_DIR = path.join(__dirname, 'assets/images');
 
 // ===== Load Scenarios =====
 var SCENARIO = {};
+var SCENARIO_FILE_MAP = {};
 for (let i = 0; i <= 5; i++) SCENARIO[i] = {};
 
 const scenarioFiles = fs.readdirSync(SCENARIO_DIR).filter(f => /^day\d/.test(f) && f.endsWith('.js'));
 for (const file of scenarioFiles) {
     const content = fs.readFileSync(path.join(SCENARIO_DIR, file), 'utf8');
     try {
-        const fn = new Function('SCENARIO', 'Object', content);
-        fn(SCENARIO, Object);
+        const fn = new Function('SCENARIO', 'SCENARIO_FILE_MAP', 'Object', content);
+        fn(SCENARIO, SCENARIO_FILE_MAP, Object);
     } catch (e) {
         console.error('Error loading ' + file + ': ' + e.message);
     }
@@ -202,7 +203,8 @@ for (const [ftId, { scene: ftScene, predecessors }] of Object.entries(freeTalkSc
 
 // ===== 5. Night Freetalk missing night flag =====
 for (const [sceneId, { scene }] of Object.entries(allScenes)) {
-    if (scene.type === 'free_talk' && /night/i.test(sceneId) && !scene.night) {
+    const nightFromFile = scene.type === 'free_talk' && /_night$/.test(SCENARIO_FILE_MAP[sceneId] || '');
+    if (scene.type === 'free_talk' && /night/i.test(sceneId) && !scene.night && !nightFromFile) {
         errors.push('[NIGHT_FLAG] ' + sceneId + ': night freetalk missing "night": true');
     }
 }

@@ -958,12 +958,16 @@ class GameEngine {
         // sunset: true → 주황색 노을 필터
         // 엔딩 CG 씬은 night 필터 비활성화 (CG 자체가 완성된 장면이므로)
         const isEndingCG = scene.background && scene.background.includes('ending_');
-        this.sceneRenderer.setTimeFilter(isEndingCG ? false : scene.night, scene.sunset);
+        const nightFromFile = typeof SCENARIO_FILE_MAP !== 'undefined'
+            && scene.type === 'free_talk'
+            && /_night$/.test(SCENARIO_FILE_MAP[sceneId] || '');
+        const isNightScene = !!scene.night || nightFromFile;
+        this.sceneRenderer.setTimeFilter(isEndingCG ? false : isNightScene, scene.sunset);
 
         // ─────────────────────────────────────────────────────────────
         // 📳 7.5단계: 메시지 씬 진동 효과
         // ─────────────────────────────────────────────────────────────
-        if (scene.night && /_(msg|reply)_/.test(sceneId)) {
+        if (isNightScene && /_(msg|reply)_/.test(sceneId)) {
             const box = this.uiManager.dialogueBox;
             box.classList.remove('msg-vibrate');
             void box.offsetWidth;
