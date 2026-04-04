@@ -11,9 +11,33 @@
         "name": "{name}",
         "text": "*夜10時。ソヨンから電話がかかってくる。声に笑いがない。*"
     },
+    "wall_seo_pre_high_1": {
+        "name": "ソヨン",
+        "text": "…今日は素直になってもいい？"
+    },
+    "wall_seo_pre_high_2": {
+        "name": "{name}",
+        "text": "*ソヨンが自分から口を開いた。自発的に。——初めてだ。*"
+    },
+    "wall_seo_pre_low_1": {
+        "name": "{name}",
+        "text": "*ソヨンが沈黙している。僕から連絡しないと。*"
+    },
+    "wall_seo_pre_low_1b": {
+        "name": "{name}",
+        "text": "*メッセージを送った。ソヨン、大丈夫？——1分。既読がついた。返信はない。そして——電話が鳴る。*"
+    },
+    "wall_seo_pre_low_2": {
+        "name": "ソヨン",
+        "text": "...メッセージ見た。今出てこられる？公園。——ごめん、急に。"
+    },
     "wall_seo_2": {
         "name": "ソヨン",
         "text": "今、出てこられる？公園。——ごめん、急に。"
+    },
+    "wall_seo_to_park": {
+        "name": "{name}",
+        "text": "*家を出て、公園へ向かった。*"
     },
     "wall_seo_3": {
         "name": "{name}",
@@ -35,6 +59,10 @@
         "name": "ソヨン",
         "text": "今日、お母さんから電話があったの。"
     },
+    "wall_seo_7_ins": {
+        "name": "{name}",
+        "text": "……"
+    },
     "wall_seo_8": {
         "name": "ソヨン",
         "text": "お父さんとまた喧嘩したんだって。"
@@ -43,6 +71,18 @@
         "name": "{name}",
         "text": "*ソヨンが笑う。——いつもの余裕のある笑いじゃない。自分を守るための笑い。*"
     },
+    "wall_seo_9_ins": {
+        "name": "ソヨン",
+        "text": "うちって外から見たら普通でしょ？ 広い家、いい車、生徒会長の娘。"
+    },
+    "wall_seo_9_ins2": {
+        "name": "ソヨン",
+        "text": "でもお母さんとお父さんは1年間同じ屋根の下で他人をやってる。離婚届を出してないだけ。"
+    },
+    "wall_seo_9_ins3": {
+        "name": "{name}",
+        "text": "……"
+    },
     "wall_seo_10": {
         "name": "ソヨン",
         "text": "だから私も演じるようになったの。家でも、学校でも。— 笑うのが一番簡単な仮面だったんだ。"
@@ -50,6 +90,10 @@
     "wall_seo_11": {
         "name": "ソヨン",
         "text": "お母さんが言ったの。『せめてあなただけでも完璧でいないと、この家は保てない』って。"
+    },
+    "wall_seo_11_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが口を閉じる。何かを飲み込むように。*"
     },
     "wall_seo_12": {
         "name": "ソヨン",
@@ -62,6 +106,22 @@
     "wall_seo_14": {
         "name": "ソヨン",
         "text": "褒められるたびに思ったの。『この笑顔も練習したものなのに——本当の私を見た人、いるのかな』って。"
+    },
+    "wall_seo_14_ins": {
+        "name": "ソヨン",
+        "text": "……でもあんたは。"
+    },
+    "wall_seo_14_ins2": {
+        "name": "{name}",
+        "text": "*ソヨンが黙った。膝の上の手がぎゅっと握られている。*"
+    },
+    "wall_seo_14_ins3": {
+        "name": "{name}",
+        "text": "*——そしてゆっくり、本当にゆっくり、完璧に保っていた表情が崩れた。ソヨンの指先が震えている。*"
+    },
+    "wall_seo_14_ins4": {
+        "name": "{name}",
+        "text": "*目から涙がこぼれる。音もなく。——ソヨンが泣いている。*"
     },
     "wall_seo_15": {
         "name": "{name}",
@@ -82,6 +142,14 @@
     "wall_seo_hug_2": {
         "name": "{name}",
         "text": "*ソヨンが僕の胸に顔を埋めた。制服のシャツが濡れていく。*"
+    },
+    "wall_seo_hug_2_ins": {
+        "name": "ソヨン",
+        "text": "……誰かの前で泣くの、小学校以来初めて。"
+    },
+    "wall_seo_hug_2_ins2": {
+        "name": "ソヨン",
+        "text": "8年。——ずっと一人でトイレでだけ泣いてた。"
     },
     "wall_seo_hug_3": {
         "name": "ソヨン",
@@ -107,6 +175,10 @@
         "name": "ソヨン",
         "text": "みんなそう言って、消えていくのに。"
     },
+    "wall_seo_pinky_5_ins": {
+        "name": "{name}",
+        "text": "*Day 1の小指。Day 4の小指。——同じ指なのに、重さが全然違う。*"
+    },
     "wall_seo_line_choice": {
         "name": "{name}",
         "text": "*ソヨンが涙を拭いながら、震える目で見上げている。*",
@@ -128,6 +200,10 @@
         "name": "ソヨン",
         "text": "…ありがと。"
     },
+    "wall_seo_line_react_3_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが涙を拭きながら。*"
+    },
     "wall_seo_after_line": {
         "name": "ソヨン",
         "text": "これでもいいの？"
@@ -144,13 +220,42 @@
         "name": "{name}",
         "text": "*ソヨンが笑う。口元が勝手に動いている。——化粧が崩れて、目が腫れている。でも目が離せない。*"
     },
+    "wall_seo_after_line_4_ins": {
+        "name": "ソヨン",
+        "text": "……今日は鏡見なくてよさそう。"
+    },
     "wall_seo_after_line_5": {
         "name": "ソヨン",
         "text": "8年ぶりに初めて、練習してない顔でも大丈夫かもって思えた。"
     },
+    "wall_seo_skin_check": {},
+    "wall_seo_skin70_1": {
+        "name": "{name}",
+        "text": "*ソヨンが小指を先に差し出す。そこで止まらない。手を握る。*"
+    },
+    "wall_seo_skin70_2": {
+        "name": "{name}",
+        "text": "*額に唇を押し当てる。*"
+    },
+    "wall_seo_skin70_3": {
+        "name": "ソヨン",
+        "text": "…練習してないの、これ。"
+    },
+    "wall_seo_skin60_1": {
+        "name": "{name}",
+        "text": "*ベンチに並んで座った。ソヨンがそっと肩に寄りかかってくる。*"
+    },
+    "wall_seo_skin60_2": {
+        "name": "ソヨン",
+        "text": "...もう少しだけ、こうしていようね。"
+    },
     "wall_seo_glimpse_1": {
         "name": "{name}",
         "text": "*ソヨンを家まで送って帰る途中。——学校の前を通りかかる。*"
+    },
+    "wall_seo_glimpse_1_ins": {
+        "name": "{name}",
+        "text": "*体育館の窓に明かりが灯っている。非常灯。*"
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
@@ -168,9 +273,29 @@
         "name": "{name}",
         "text": "*夜10時。ダインからメッセージ。*"
     },
+    "wall_dain_pre_high_1": {
+        "name": "ダイン",
+        "text": "…今日は運動の話じゃなくて、他の話してもいい？"
+    },
+    "wall_dain_pre_high_2": {
+        "name": "{name}",
+        "text": "*ダインがいつもと違って静かだ。——初めてのトーンだ。*"
+    },
+    "wall_dain_pre_low_1": {
+        "name": "{name}",
+        "text": "*ダインが無理に笑う。*"
+    },
+    "wall_dain_pre_low_2": {
+        "name": "ダイン",
+        "text": "はは、今日楽しかったでしょ！"
+    },
     "wall_dain_2": {
         "name": "ダイン",
         "text": "ねえ、今時間ある？笑"
+    },
+    "wall_dain_2_ins": {
+        "name": "ダイン",
+        "text": "*学校、来ちゃダメだよね？*"
     },
     "wall_dain_3": {
         "name": "ダイン",
@@ -192,9 +317,21 @@
         "name": "ダイン",
         "text": "たまにこっそり入るの！練習しに！！"
     },
+    "wall_dain_7_ins": {
+        "name": "{name}",
+        "text": "*ダインがバレーボールを渡す。*"
+    },
     "wall_dain_8": {
         "name": "ダイン",
         "text": "トス上げて！！一回だけ！！"
+    },
+    "wall_dain_8_ins": {
+        "name": "{name}",
+        "text": "*トスを上げる。ダインが飛び上がって——スパイク。*"
+    },
+    "wall_dain_8_ins2": {
+        "name": "{name}",
+        "text": "*着地した瞬間——右膝を掴んでしゃがみ込む。*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -212,13 +349,29 @@
         "name": "{name}",
         "text": "ダイン。大丈夫じゃないでしょ。"
     },
+    "wall_dain_12_ins": {
+        "name": "ダイン",
+        "text": "大丈夫だってば！！ マジで！！"
+    },
+    "wall_dain_12_ins2": {
+        "name": "{name}",
+        "text": "……"
+    },
     "wall_dain_13": {
         "name": "{name}",
         "text": "*何も言わずに隣に座る。ダインが口を閉じる。長い沈黙。*"
     },
+    "wall_dain_13_ins": {
+        "name": "{name}",
+        "text": "*長い沈黙。*"
+    },
     "wall_dain_14": {
         "name": "ダイン",
         "text": "...前十字靱帯。"
+    },
+    "wall_dain_14_ins": {
+        "name": "{name}",
+        "text": "*感嘆符がない。*"
     },
     "wall_dain_15": {
         "name": "ダイン",
@@ -228,6 +381,10 @@
         "name": "{name}",
         "text": "*ダインが見たことのない表情をしている。笑っていないダイン。*"
     },
+    "wall_dain_16_ins": {
+        "name": "ダイン",
+        "text": "手術して、担当の先生が——すごく慎重に言うんだ。"
+    },
     "wall_dain_17": {
         "name": "ダイン",
         "text": "手術したんだけど、お医者さんが——すごく慎重に言ったの。『日常生活は大丈夫だけど、以前のように跳ぶのは…』——その後何言ったか覚えてない。その後、音が聞こえなくなったから。"
@@ -236,13 +393,33 @@
         "name": "ダイン",
         "text": "病院から出たら、お母さんが泣いてた。— 私は泣けなかった。まだ実感が湧かなかったから。"
     },
+    "wall_dain_18_ins": {
+        "name": "ダイン",
+        "text": "実感が湧いたのは— 体育館のロッカーを整理する時だった。"
+    },
+    "wall_dain_18_ins2": {
+        "name": "{name}",
+        "text": "……"
+    },
+    "wall_dain_18_ins3": {
+        "name": "ダイン",
+        "text": "誰にも言わなかった。親にも。"
+    },
     "wall_dain_19": {
         "name": "ダイン",
         "text": "誰にも言ってない。両親にも。『ダインが跳ばなきゃダインじゃない！』——それを聞きたくなかったから。"
     },
+    "wall_dain_19_ins": {
+        "name": "{name}",
+        "text": "*ダインが胸を押さえる。*"
+    },
     "wall_dain_20": {
         "name": "ダイン",
         "text": "学校で『元気いっぱいだね！』って言われるたびに——ここが。...死ぬかと思った。"
+    },
+    "wall_dain_20_ins": {
+        "name": "ダイン",
+        "text": "……死にそうだった。"
     },
     "wall_dain_21": {
         "name": "ダイン",
@@ -251,6 +428,10 @@
     "wall_dain_22": {
         "name": "ダイン",
         "text": "——でも君の前でまで痛い姿見せたら、私には何も残らないじゃん。"
+    },
+    "wall_dain_22_ins": {
+        "name": "{name}",
+        "text": "*ダインの隣に座った。コートの床が冷たい。何も言わなかった。*"
     },
     "wall_dain_choice": {
         "name": "{name}",
@@ -268,6 +449,10 @@
     "wall_dain_newdream_2": {
         "name": "{name}",
         "text": "*ダインも何も言わない。——不思議な時間だ。ダインの隣で1分以上沈黙が流れたのは初めてだ。*"
+    },
+    "wall_dain_newdream_2_ins": {
+        "name": "{name}",
+        "text": "*ダインが先に口を開く。*"
     },
     "wall_dain_newdream_3": {
         "name": "ダイン",
@@ -317,6 +502,10 @@
         "name": "{name}",
         "text": "*アラームのメモにビックリマークを二つもつけたのは——一つじゃ自分自身すら騙せなかったからだろう。*"
     },
+    "wall_dain_cry_6_ins": {
+        "name": "{name}",
+        "text": "*?????????????????????*"
+    },
     "wall_dain_lastspike_1": {
         "name": "{name}",
         "text": "*手を差し出した。ダインが握った。二人とも立ち上がった。——トスを上げた。*"
@@ -329,9 +518,21 @@
         "name": "{name}",
         "text": "*着地して膝を押さえたが——笑っている。*"
     },
+    "wall_dain_lastspike_3_ins": {
+        "name": "ダイン",
+        "text": "*力なく笑って* ……痛い。"
+    },
+    "wall_dain_lastspike_3_ins2": {
+        "name": "ダイン",
+        "text": "でも不思議とすっきりする。"
+    },
     "wall_dain_lastspike_4": {
         "name": "ダイン",
         "text": "...笑　痛い。でも不思議とすっきりした。——このコートでの最後の一球が{name}のトスでよかった。"
+    },
+    "wall_dain_lastspike_4_ins": {
+        "name": "{name}",
+        "text": "*ダインがコートを見回す。暗くてがらんとした体育館。*"
     },
     "wall_dain_lastspike_5": {
         "name": "ダイン",
@@ -349,6 +550,39 @@
         "name": "{name}",
         "text": "*ダインと体育館を出る。学校の裏門を通りかかる。*"
     },
+    "wall_dain_mention_1": {
+        "name": "ダイン",
+        "text": "ソヨンが私に何て言ったか知ってる？…何も言わなかった。それが余計に怖かった。"
+    },
+    "wall_dain_mention_2": {
+        "name": "ダイン",
+        "text": "何か言ってくれれば戦えるのに。何も言わないと、自分が悪いみたいに感じるじゃん。"
+    },
+    "wall_dain_mention_3": {
+        "name": "{name}",
+        "text": "*ダインが一瞬止まる。——また歩き始める。軽い足取りで。*"
+    },
+    "wall_dain_skin_check": {},
+    "wall_dain_skin70_1": {
+        "name": "{name}",
+        "text": "*ダインが泣きながら飛び込んでくる。*"
+    },
+    "wall_dain_skin70_2": {
+        "name": "ダイン",
+        "text": "離さないで。"
+    },
+    "wall_dain_skin70_3": {
+        "name": "{name}",
+        "text": "*シャツが濡れる。ダインの手が背中をぎゅっと握っている。力が抜けない。*"
+    },
+    "wall_dain_skin60_1": {
+        "name": "{name}",
+        "text": "*???????????????????????????????????????*"
+    },
+    "wall_dain_skin60_2": {
+        "name": "ダイン",
+        "text": "5分だけ。体力充電。"
+    },
     "wall_dain_glimpse_1": {
         "name": "{name}",
         "text": "*図書館別館の窓に明かりが見える。小さなデスクライト。*"
@@ -365,9 +599,33 @@
         "name": "{name}",
         "text": "*気づかないふりをした。——でもなぜこんな気持ちになるんだろう。*"
     },
+    "wall_dain_glimpse_4_ins": {
+        "name": "{name}",
+        "text": "*夜10時。ユナからメッセージ。*"
+    },
+    "wall_dain_glimpse_4_ins2": {
+        "name": "ユナ",
+        "text": "*学校裏門。今すぐ来て。*"
+    },
     "wall_yuna_1": {
         "name": "{name}",
         "text": "*夜10時。ユナからメッセージ。『学校の裏門。今すぐ来て。』*"
+    },
+    "wall_yuna_pre_high_1": {
+        "name": "ユナ",
+        "text": "…今日はメモなしで話す。"
+    },
+    "wall_yuna_pre_high_2": {
+        "name": "{name}",
+        "text": "*ユナがメモの代わりに直接話す。文がもう長い。——壁が下がっている。*"
+    },
+    "wall_yuna_pre_low_1": {
+        "name": "{name}",
+        "text": "*ユナがメモを渡す。*"
+    },
+    "wall_yuna_pre_low_2": {
+        "name": "{name}",
+        "text": "*まだ言葉で言うには早いという意味。*"
     },
     "wall_yuna_2": {
         "name": "{name}",
@@ -401,6 +659,10 @@
         "name": "ユナ",
         "text": "ここに一緒に来てた先輩。——唯一親しかった人。"
     },
+    "wall_yuna_9_ins": {
+        "name": "{name}",
+        "text": "*ユナが手紙を置く。*"
+    },
     "wall_yuna_10": {
         "name": "ユナ",
         "text": "中学の時、私は透明人間だった。クラスの誰も話しかけなかった。"
@@ -421,6 +683,34 @@
         "name": "ユナ",
         "text": "私の存在を証明してくれた人が消えた。また透明人間になると思った。"
     },
+    "wall_yuna_14_ins": {
+        "name": "ユナ",
+        "text": "1年間、一人でここに来てた。何か残してないかなって。"
+    },
+    "wall_yuna_14_ins2": {
+        "name": "ユナ",
+        "text": "……なかった。"
+    },
+    "wall_yuna_14_ins3": {
+        "name": "{name}",
+        "text": "*ユナが僕を見る。*"
+    },
+    "wall_yuna_14_ins4": {
+        "name": "ユナ",
+        "text": "初めてあんたが図書館に来た時。"
+    },
+    "wall_yuna_14_ins5": {
+        "name": "ユナ",
+        "text": "先輩と雰囲気が似てた。——だから怖かった。"
+    },
+    "wall_yuna_14_ins6": {
+        "name": "ユナ",
+        "text": "また仲良くなったら、また消えるかもしれないから。"
+    },
+    "wall_yuna_14_ins7": {
+        "name": "{name}",
+        "text": "……"
+    },
     "wall_yuna_15": {
         "name": "ユナ",
         "text": "*首をうつむかせながら* ...だから、わざと冷たくしたの。先に突き放せば、傷つくのが少しはマシだと思ったから。"
@@ -428,6 +718,14 @@
     "wall_yuna_16": {
         "name": "ユナ",
         "text": "でも君は毎日来た。静かに。——消えずに。"
+    },
+    "wall_yuna_16_ins": {
+        "name": "{name}",
+        "text": "*ユナが袖をぎゅっと握っている。——文章がだんだん長くなっている。*"
+    },
+    "wall_yuna_16_ins2": {
+        "name": "{name}",
+        "text": "*ユナが少し止まる。*"
     },
     "wall_yuna_choice": {
         "name": "{name}",
@@ -458,6 +756,31 @@
         "name": "{name}",
         "text": "*ユナが四つの文を続けて言った。——それは告白と同じだ。*"
     },
+    "wall_yuna_moved_5_ins": {
+        "name": "{name}",
+        "text": "*?????????????????????????????*"
+    },
+    "wall_yuna_skin_check": {},
+    "wall_yuna_skin70_1": {
+        "name": "ユナ",
+        "text": "近くに行ってもいい？"
+    },
+    "wall_yuna_skin70_2": {
+        "name": "{name}",
+        "text": "*肩に寄りかかる。手をぎゅっと握る。*"
+    },
+    "wall_yuna_skin70_3": {
+        "name": "{name}",
+        "text": "*ユナの体温は低い。でも握った手だけが熱い。*"
+    },
+    "wall_yuna_skin60_1": {
+        "name": "{name}",
+        "text": "*?????????????????????????????*"
+    },
+    "wall_yuna_skin60_2": {
+        "name": "ユナ",
+        "text": "…温かいから。"
+    },
     "wall_yuna_sub_1": {
         "name": "ユナ",
         "text": "…そう。先輩は先輩。あんたはあんた。"
@@ -469,6 +792,10 @@
     "wall_yuna_reject_1": {
         "name": "ユナ",
         "text": "......そう思うの？"
+    },
+    "wall_yuna_reject_1_ins": {
+        "name": "{name}",
+        "text": "*ユナが手紙をまた手に取る。*"
     },
     "wall_yuna_reject_2": {
         "name": "ユナ",
@@ -493,6 +820,14 @@
     "wall_yuna_glimpse_3": {
         "name": "{name}",
         "text": "*誰に送ろうとしているのかわからない。——いや、わかる気がする。*"
+    },
+    "wall_yuna_glimpse_3_ins": {
+        "name": "{name}",
+        "text": "*ソヨンがスマホをポケットにしまって振り返る。背筋がまっすぐだ。完璧に。——震えていない。今度は本当に。*"
+    },
+    "wall_yuna_glimpse_3_ins2": {
+        "name": "{name}",
+        "text": "*選ばれなかった人にも夜は来る。その夜を一人で過ごしている。*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -528,170 +863,11 @@
     },
     "day4_night_regret_reply": {
         "name": "{name}",
+        "text": "*??????????????????????????*"
+    },
+    "day4_hidden_msg_branch": {
+        "name": "システム",
         "text": ""
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*土曜日はこうして過ぎていった。明日は学校行事。— 日曜日なのに登校か。*"
-    },
-    "day4_night_sleep": {
-        "name": "{name}",
-        "text": "*目を閉じる。明日が最後だ。——まだ言い残したことがある。*"
-    },
-    "day4_final": {
-        "name": "{name}",
-        "text": "*土曜の夜が更けていく。明日は日曜日— 学校行事の最終日だ。*"
-    },
-    "wall_seo_pre_high_1": {
-        "name": "ソヨン",
-        "text": "…今日は素直になってもいい？"
-    },
-    "wall_seo_pre_high_2": {
-        "name": "{name}",
-        "text": "*ソヨンが自分から口を開いた。自発的に。——初めてだ。*"
-    },
-    "wall_seo_pre_low_1": {
-        "name": "{name}",
-        "text": "*ソヨンが沈黙している。僕から連絡しないと。*"
-    },
-    "wall_seo_pre_low_1b": {
-        "name": "{name}",
-        "text": "*メッセージを送った。ソヨン、大丈夫？——1分。既読がついた。返信はない。そして——電話が鳴る。*"
-    },
-    "wall_seo_pre_low_2": {
-        "name": "ソヨン",
-        "text": "...メッセージ見た。今出てこられる？公園。——ごめん、急に。"
-    },
-    "wall_seo_mention_1": {
-        "name": "ソヨン",
-        "text": "…ダインが最近つらそうに見える。原因があんただってわかってる？"
-    },
-    "wall_seo_mention_2": {
-        "name": "ソヨン",
-        "text": "私は平気。先に選ばれたから。——でも少し気になる。"
-    },
-    "wall_seo_mention_3": {
-        "name": "{name}",
-        "text": "*ソヨンが一瞬遠くを見る。——そしてまた僕を見る。目がしっかりしている。*"
-    },
-    "wall_seo_skin_check": {},
-    "wall_seo_skin70_1": {
-        "name": "{name}",
-        "text": "*ソヨンが小指を先に差し出す。そこで止まらない。手を握る。*"
-    },
-    "wall_seo_skin70_2": {
-        "name": "{name}",
-        "text": "*額に唇を押し当てる。*"
-    },
-    "wall_seo_skin70_3": {
-        "name": "ソヨン",
-        "text": "…練習してないの、これ。"
-    },
-    "wall_seo_skin60_1": {
-        "name": "{name}",
-        "text": "*ベンチに並んで座った。ソヨンがそっと肩に寄りかかってくる。*"
-    },
-    "wall_seo_skin60_2": {
-        "name": "ソヨン",
-        "text": "...もう少しだけ、こうしていようね。"
-    },
-    "wall_dain_pre_high_1": {
-        "name": "ダイン",
-        "text": "…今日は運動の話じゃなくて、他の話してもいい？"
-    },
-    "wall_dain_pre_high_2": {
-        "name": "{name}",
-        "text": "*ダインがいつもと違って静かだ。——初めてのトーンだ。*"
-    },
-    "wall_dain_pre_low_1": {
-        "name": "{name}",
-        "text": "*ダインが無理に笑う。*"
-    },
-    "wall_dain_pre_low_2": {
-        "name": "ダイン",
-        "text": "はは、今日楽しかったでしょ！"
-    },
-    "wall_dain_mention_1": {
-        "name": "ダイン",
-        "text": "ソヨンが私に何て言ったか知ってる？…何も言わなかった。それが余計に怖かった。"
-    },
-    "wall_dain_mention_2": {
-        "name": "ダイン",
-        "text": "何か言ってくれれば戦えるのに。何も言わないと、自分が悪いみたいに感じるじゃん。"
-    },
-    "wall_dain_mention_3": {
-        "name": "{name}",
-        "text": "*ダインが一瞬止まる。——また歩き始める。軽い足取りで。*"
-    },
-    "wall_dain_skin_check": {},
-    "wall_dain_skin70_1": {
-        "name": "{name}",
-        "text": "*ダインが泣きながら飛び込んでくる。*"
-    },
-    "wall_dain_skin70_2": {
-        "name": "ダイン",
-        "text": "離さないで。"
-    },
-    "wall_dain_skin70_3": {
-        "name": "{name}",
-        "text": "*シャツが濡れる。ダインの手が背中をぎゅっと握っている。力が抜けない。*"
-    },
-    "wall_dain_skin60_1": {
-        "name": "{name}",
-        "text": "*ゲームセンターを出てベンチに座った。ダインが何の予告もなく、膝の上に横たわる。*"
-    },
-    "wall_dain_skin60_2": {
-        "name": "ダイン",
-        "text": "5分だけ。体力充電。"
-    },
-    "wall_yuna_pre_high_1": {
-        "name": "ユナ",
-        "text": "…今日はメモなしで話す。"
-    },
-    "wall_yuna_pre_high_2": {
-        "name": "{name}",
-        "text": "*ユナがメモの代わりに直接話す。文がもう長い。——壁が下がっている。*"
-    },
-    "wall_yuna_pre_low_1": {
-        "name": "{name}",
-        "text": "*ユナがメモを渡す。*"
-    },
-    "wall_yuna_pre_low_2": {
-        "name": "{name}",
-        "text": "*まだ言葉で言うには早いという意味。*"
-    },
-    "wall_yuna_mention_1": {
-        "name": "ユナ",
-        "text": "…ダインが泣いてた。保健室で。"
-    },
-    "wall_yuna_mention_2": {
-        "name": "ユナ",
-        "text": "あんたが選んだのが私だから。…謝るべきは私なのに。"
-    },
-    "wall_yuna_mention_3": {
-        "name": "{name}",
-        "text": "*短い沈黙。——ユナの素直さが余計に重い。*"
-    },
-    "wall_yuna_skin_check": {},
-    "wall_yuna_skin70_1": {
-        "name": "ユナ",
-        "text": "近くに行ってもいい？"
-    },
-    "wall_yuna_skin70_2": {
-        "name": "{name}",
-        "text": "*肩に寄りかかる。手をぎゅっと握る。*"
-    },
-    "wall_yuna_skin70_3": {
-        "name": "{name}",
-        "text": "*ユナの体温は低い。でも握った手だけが熱い。*"
-    },
-    "wall_yuna_skin60_1": {
-        "name": "{name}",
-        "text": "*古本屋の書棚の間。ユナが後ろから背中に額を押し当てる。*"
-    },
-    "wall_yuna_skin60_2": {
-        "name": "ユナ",
-        "text": "…温かいから。"
     },
     "night_homeroom_msg_1": {
         "name": "担任先生",
@@ -704,6 +880,10 @@
     "night_homeroom_msg_3": {
         "name": "{name}",
         "text": "*夜11時。担任先生からメッセージが来た。短い文章が三行。——最初の読者。その言葉がずっと頭に残っている。*"
+    },
+    "day4_hidden_msg_after_homeroom": {
+        "name": "システム",
+        "text": ""
     },
     "night_nurse_msg_1": {
         "name": "保健室の先生",
@@ -721,296 +901,16 @@
         "name": "保健室の先生",
         "text": "...おやすみ。"
     },
-    "wall_seo_to_park": {
+    "day4_night_reflect": {
         "name": "{name}",
-        "text": "*家を出て、公園へ向かった。*"
+        "text": "*土曜日はこうして過ぎていった。明日は学校行事。— 日曜日なのに登校か。*"
     },
-    "wall_seo_7_ins": {
+    "day4_night_sleep": {
         "name": "{name}",
-        "text": "……"
+        "text": "*目を閉じる。明日が最後だ。——まだ言い残したことがある。*"
     },
-    "wall_seo_9_ins": {
-        "name": "ソヨン",
-        "text": "うちって外から見たら普通でしょ？ 広い家、いい車、生徒会長の娘。"
-    },
-    "wall_seo_9_ins2": {
-        "name": "ソヨン",
-        "text": "でもお母さんとお父さんは1年間同じ屋根の下で他人をやってる。離婚届を出してないだけ。"
-    },
-    "wall_seo_9_ins3": {
+    "day4_final": {
         "name": "{name}",
-        "text": "……"
-    },
-    "wall_seo_11_ins": {
-        "name": "{name}",
-        "text": "*ソヨンが口を閉じる。何かを飲み込むように。*"
-    },
-    "wall_seo_14_ins": {
-        "name": "ソヨン",
-        "text": "……でもあんたは。"
-    },
-    "wall_seo_14_ins2": {
-        "name": "{name}",
-        "text": "*ソヨンが黙った。膝の上の手がぎゅっと握られている。*"
-    },
-    "wall_seo_14_ins3": {
-        "name": "{name}",
-        "text": "*——そしてゆっくり、本当にゆっくり、完璧に保っていた表情が崩れた。ソヨンの指先が震えている。*"
-    },
-    "wall_seo_14_ins4": {
-        "name": "{name}",
-        "text": "*目から涙がこぼれる。音もなく。——ソヨンが泣いている。*"
-    },
-    "wall_seo_hug_2_ins": {
-        "name": "ソヨン",
-        "text": "……誰かの前で泣くの、小学校以来初めて。"
-    },
-    "wall_seo_hug_2_ins2": {
-        "name": "ソヨン",
-        "text": "8年。——ずっと一人でトイレでだけ泣いてた。"
-    },
-    "wall_seo_pinky_5_ins": {
-        "name": "{name}",
-        "text": "*Day 1の小指。Day 4の小指。——同じ指なのに、重さが全然違う。*"
-    },
-    "wall_seo_line_react_3_ins": {
-        "name": "{name}",
-        "text": "*ソヨンが涙を拭きながら。*"
-    },
-    "wall_seo_after_line_4_ins": {
-        "name": "ソヨン",
-        "text": "……今日は鏡見なくてよさそう。"
-    },
-    "wall_seo_glimpse_1_ins": {
-        "name": "{name}",
-        "text": "*体育館の窓に明かりが灯っている。非常灯。*"
-    },
-    "wall_dain_2_ins": {
-        "name": "ダイン",
-        "text": "*学校、来ちゃダメだよね？*"
-    },
-    "wall_dain_7_ins": {
-        "name": "{name}",
-        "text": "*ダインがバレーボールを渡す。*"
-    },
-    "wall_dain_8_ins": {
-        "name": "{name}",
-        "text": "*トスを上げる。ダインが飛び上がって——スパイク。*"
-    },
-    "wall_dain_8_ins2": {
-        "name": "{name}",
-        "text": "*着地した瞬間——右膝を掴んでしゃがみ込む。*"
-    },
-    "wall_dain_12_ins": {
-        "name": "ダイン",
-        "text": "大丈夫だってば！！ マジで！！"
-    },
-    "wall_dain_12_ins2": {
-        "name": "{name}",
-        "text": "……"
-    },
-    "wall_dain_13_ins": {
-        "name": "{name}",
-        "text": "*長い沈黙。*"
-    },
-    "wall_dain_14_ins": {
-        "name": "{name}",
-        "text": "*感嘆符がない。*"
-    },
-    "wall_dain_16_ins": {
-        "name": "ダイン",
-        "text": "手術して、担当の先生が——すごく慎重に言うんだ。"
-    },
-    "wall_dain_18_ins": {
-        "name": "ダイン",
-        "text": "実感が湧いたのは— 体育館のロッカーを整理する時だった。"
-    },
-    "wall_dain_18_ins2": {
-        "name": "{name}",
-        "text": "……"
-    },
-    "wall_dain_18_ins3": {
-        "name": "ダイン",
-        "text": "誰にも言わなかった。親にも。"
-    },
-    "wall_dain_19_ins": {
-        "name": "{name}",
-        "text": "*ダインが胸を押さえる。*"
-    },
-    "wall_dain_20_ins": {
-        "name": "ダイン",
-        "text": "……死にそうだった。"
-    },
-    "wall_dain_22_ins": {
-        "name": "{name}",
-        "text": "*ダインの隣に座った。コートの床が冷たい。何も言わなかった。*"
-    },
-    "wall_dain_newdream_2_ins": {
-        "name": "{name}",
-        "text": "*ダインが先に口を開く。*"
-    },
-    "wall_dain_cry_6_ins": {
-        "name": "{name}",
-        "text": "*トスを上げた。*"
-    },
-    "wall_dain_lastspike_3_ins": {
-        "name": "ダイン",
-        "text": "*力なく笑って* ……痛い。"
-    },
-    "wall_dain_lastspike_3_ins2": {
-        "name": "ダイン",
-        "text": "でも不思議とすっきりする。"
-    },
-    "wall_dain_lastspike_4_ins": {
-        "name": "{name}",
-        "text": "*ダインがコートを見回す。暗くてがらんとした体育館。*"
-    },
-    "wall_dain_glimpse_4_ins": {
-        "name": "{name}",
-        "text": "*夜10時。ユナからメッセージ。*"
-    },
-    "wall_dain_glimpse_4_ins2": {
-        "name": "ユナ",
-        "text": "*学校裏門。今すぐ来て。*"
-    },
-    "wall_yuna_9_ins": {
-        "name": "{name}",
-        "text": "*ユナが手紙を置く。*"
-    },
-    "wall_yuna_14_ins": {
-        "name": "ユナ",
-        "text": "1年間、一人でここに来てた。何か残してないかなって。"
-    },
-    "wall_yuna_14_ins2": {
-        "name": "ユナ",
-        "text": "……なかった。"
-    },
-    "wall_yuna_14_ins3": {
-        "name": "{name}",
-        "text": "*ユナが僕を見る。*"
-    },
-    "wall_yuna_14_ins4": {
-        "name": "ユナ",
-        "text": "初めてあんたが図書館に来た時。"
-    },
-    "wall_yuna_14_ins5": {
-        "name": "ユナ",
-        "text": "先輩と雰囲気が似てた。——だから怖かった。"
-    },
-    "wall_yuna_14_ins6": {
-        "name": "ユナ",
-        "text": "また仲良くなったら、また消えるかもしれないから。"
-    },
-    "wall_yuna_14_ins7": {
-        "name": "{name}",
-        "text": "……"
-    },
-    "wall_yuna_16_ins": {
-        "name": "{name}",
-        "text": "*ユナが袖をぎゅっと握っている。——文章がだんだん長くなっている。*"
-    },
-    "wall_yuna_16_ins2": {
-        "name": "{name}",
-        "text": "*ユナが少し止まる。*"
-    },
-    "wall_yuna_moved_5_ins": {
-        "name": "{name}",
-        "text": "*ユナの表情が固まる。*"
-    },
-    "wall_yuna_reject_1_ins": {
-        "name": "{name}",
-        "text": "*ユナが手紙をまた手に取る。*"
-    },
-    "wall_yuna_glimpse_3_ins": {
-        "name": "{name}",
-        "text": "*ソヨンがスマホをポケットにしまって振り返る。背筋がまっすぐだ。完璧に。——震えていない。今度は本当に。*"
-    },
-    "wall_yuna_glimpse_3_ins2": {
-        "name": "{name}",
-        "text": "*選ばれなかった人にも夜は来る。その夜を一人で過ごしている。*"
-    },
-    "wall_yuna_glimpse_3_ins3": {
-        "name": "{name}",
-        "text": "*夜11時。スマホが鳴る。担任先生。*"
-    },
-    "wall_yuna_glimpse_3_ins4": {
-        "name": "担任先生",
-        "text": "*メッセージ* 原稿の締め切りが近いんだけど。"
-    },
-    "wall_yuna_glimpse_3_ins5": {
-        "name": "担任先生",
-        "text": "*メッセージ* ……最初の読者に見せたい部分があるの。"
-    },
-    "wall_yuna_glimpse_3_ins6": {
-        "name": "担任先生",
-        "text": "*メッセージ* 明日時間があったら教員室に来て。——放課後に。"
-    },
-    "wall_yuna_glimpse_3_ins7": {
-        "name": "{name}",
-        "text": "*メッセージが途切れる。追加メッセージは来ない。*"
-    },
-    "wall_yuna_glimpse_3_ins8": {
-        "name": "{name}",
-        "text": "*先生の文章はいつも短い。無駄がない。——でもこれは少し違った。見せたい部分がある。その一行に重みがある。*"
-    },
-    "wall_yuna_glimpse_3_ins9": {
-        "name": "{name}",
-        "text": "*最初の読者。——その言葉が頭に残り続ける。書く人が一番最初に見せたい相手。それが僕という意味なのか、ただ近くにいるから楽なだけなのか。*"
-    },
-    "wall_yuna_glimpse_3_ins10": {
-        "name": "{name}",
-        "text": "*……分からない。でも明日は行かなきゃいけない気がする。*"
-    },
-    "wall_yuna_glimpse_3_ins11": {
-        "name": "{name}",
-        "text": "*夜11時半。スマホの通知。保健先生。*"
-    },
-    "wall_yuna_glimpse_3_ins12": {
-        "name": "保健室の先生",
-        "text": "*メッセージ* 今日保健室であなたが言ったこと。"
-    },
-    "wall_yuna_glimpse_3_ins13": {
-        "name": "保健室の先生",
-        "text": "*メッセージ* ……夜になって何度も思い出すの。"
-    },
-    "wall_yuna_glimpse_3_ins14": {
-        "name": "{name}",
-        "text": "*既読がつく。10秒。20秒。追加メッセージなし。*"
-    },
-    "wall_yuna_glimpse_3_ins15": {
-        "name": "{name}",
-        "text": "*1分後。*"
-    },
-    "wall_yuna_glimpse_3_ins16": {
-        "name": "保健室の先生",
-        "text": "*メッセージ* あ、変な意味じゃないよ。印象的だったってだけ。"
-    },
-    "wall_yuna_glimpse_3_ins17": {
-        "name": "保健室の先生",
-        "text": "*メッセージ* ……おやすみ。"
-    },
-    "wall_yuna_glimpse_3_ins18": {
-        "name": "{name}",
-        "text": "*今日は学校行事がある。最後のイベント。教室に入った瞬間——三方向から信号が来る。*"
-    },
-    "wall_yuna_glimpse_3_ins19": {
-        "name": "{name}",
-        "text": "*夜になって何度も思い出す。——その文章を見て指が止まった。変な意味じゃないが来てからやっと息ができた。*"
-    },
-    "wall_yuna_glimpse_3_ins20": {
-        "name": "{name}",
-        "text": "*でもおかしいのは——弁解に1分かかったということだ。1分間何を悩んでたんだろう。送ってから後悔したのか、送る前にすでに後悔していたのか。*"
-    },
-    "wall_yuna_glimpse_3_ins21": {
-        "name": "{name}",
-        "text": "*机の上にメモが置いてある。ソヨンの字。——午後、少し時間を作って。屋上の鍵を開けておくから。——ソヨン*"
-    },
-    "wall_yuna_glimpse_3_ins22": {
-        "name": "{name}",
-        "text": "*……自分が何を言ったか思い返してみる。大したことない言葉だった。——でも先生にとってはそうじゃなかったのかもしれない。*"
-    },
-    "wall_yuna_glimpse_3_ins23": {
-        "name": "{name}",
-        "text": "*廊下の文芸部展示コーナーを通りかかって——掲示板に短編小説が貼られている。タイトル：図書館で出会った人へ。ユナだ。——主人公だけが気づける物語。*"
+        "text": "*土曜の夜が更けていく。明日は日曜日— 学校行事の最終日だ。*"
     }
 }

@@ -3,6 +3,10 @@
         "name": "시스템",
         "text": ""
     },
+    "ending_last_chance_resolve": {
+        "name": "시스템",
+        "text": ""
+    },
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*마지막까지 남은 건 한 사람의 목소리가 아니다. 교실에서 받은 봉투와 손등에 붙은 밴드가 같이 떠오른다.*"

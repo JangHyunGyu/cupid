@@ -3,6 +3,10 @@
         "name": "システム",
         "text": ""
     },
+    "ending_last_chance_resolve": {
+        "name": "システム",
+        "text": ""
+    },
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*最後まで残ったのは、一人の声だけじゃない。教室でもらった封筒と、手の甲に貼られたバンドが一緒に浮かぶ。*"
@@ -23,33 +27,13 @@
         "name": "システム",
         "text": ""
     },
-    "ending_aff_check_yuna": {
-        "name": "システム",
-        "text": ""
-    },
-    "ending_aff_check_dain": {
-        "name": "システム",
-        "text": ""
-    },
-    "ending_confessed_aff_check": {
-        "name": "システム",
-        "text": ""
-    },
-    "ending_confessed_aff_seo": {
-        "name": "システム",
-        "text": ""
-    },
-    "ending_confessed_aff_yuna": {
-        "name": "システム",
-        "text": ""
-    },
-    "ending_confessed_aff_dain": {
-        "name": "システム",
-        "text": ""
-    },
     "perfect_seo_1": {
         "name": "{name}",
         "text": "*こんなふうに崩れたソヨンを、初めて見る。——泣いている。*"
+    },
+    "perfect_seo_1_ins": {
+        "name": "{name}",
+        "text": "*初めて眼鏡を外して——泣いている。*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -67,93 +51,29 @@
         "name": "{name}",
         "text": "*ソヨンが手を伸ばす。小指じゃない。手全体を。*"
     },
-    "perfect_yuna_1": {
+    "perfect_seo_5_ins": {
         "name": "{name}",
-        "text": "*図書館別館、秘密の屋根裏部屋。ユナが小説を一編渡す。*"
-    },
-    "perfect_yuna_2": {
-        "name": "{name}",
-        "text": "*タイトルが主人公の名前だ。*"
-    },
-    "perfect_yuna_3": {
-        "name": "ユナ",
-        "text": "...読み終わったら教えて。それが私の答えだから。"
-    },
-    "perfect_yuna_4": {
-        "name": "{name}",
-        "text": "*小説の最後の一文：『消えない人がいた。その人のおかげで、私も消えないことにした。』*"
-    },
-    "perfect_yuna_5": {
-        "name": "{name}",
-        "text": "*ユナが立ち上がって抱きついてきた。無言で。割れた窓から月明かりが差し込み——タトゥーの入った腕が腰を包み、銀色の髪が肩に触れる。初めてユナの穏やかな息遣いがアジトを満たした。*"
-    },
-    "perfect_dain_1": {
-        "name": "{name}",
-        "text": "*体育館。ダインが最後のサーブを打つ。包帯を解きながら。*"
-    },
-    "perfect_dain_2": {
-        "name": "ダイン",
-        "text": "これが最後のトスだよ。——でも始まりでもある。"
-    },
-    "perfect_dain_3": {
-        "name": "ダイン",
-        "text": "コートの外でも私、大丈夫な人かな？"
-    },
-    "perfect_dain_4": {
-        "name": "{name}",
-        "text": "コートの中でも外でも。"
-    },
-    "perfect_dain_5": {
-        "name": "{name}",
-        "text": "*ダインが飛びついてきた。受け止める準備なんてなかった。バレーボールが床を転がり — 夕日の体育館に、二人の影だけが残った。*"
+        "text": "*屋上の風が吹く。*"
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
         "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
     },
-    "perfect_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
-    },
-    "perfect_epilogue_1_dain": {
-        "name": "{name}",
-        "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
+    "perfect_epilogue_bridge_seo": {
+        "name": "システム",
+        "text": "*エピローグ — 一年後*"
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
         "text": "*大学入学式の日。スマホにメッセージ。今日も植木に水やった。——でも早く帰ってきて。*"
     },
-    "perfect_epilogue_2_yuna": {
-        "name": "{name}",
-        "text": "*ユナの初めての長編小説が出版された。献辞には三番目の星へ。とあった。*"
-    },
-    "perfect_epilogue_2_dain": {
-        "name": "{name}",
-        "text": "*ダインはスポーツ解説者になった。カメラの前でも笑っている。でも今度は本物の笑顔だ。*"
-    },
     "perfect_epilogue_3_seo": {
         "name": "{name}",
         "text": "*ソヨンが変わった。完璧じゃなくていいって知っている。鏡を見ずに笑う日が増えた。*"
     },
-    "perfect_epilogue_3_yuna": {
-        "name": "{name}",
-        "text": "*ユナは相変わらず口数が少ない。でも文章の長さが変わった。僕にだけ。*"
-    },
-    "perfect_epilogue_3_dain": {
-        "name": "{name}",
-        "text": "*たまに膝が痛いと言う。そのたびに隣に座って何も言わない。それが僕たちのやり方だ。*"
-    },
     "perfect_epilogue_4_seo": {
         "name": "システム",
         "text": "─── PERFECT END (ソヨン) ───"
-    },
-    "perfect_epilogue_4_yuna": {
-        "name": "システム",
-        "text": "─── PERFECT END (ユナ) ───"
-    },
-    "perfect_epilogue_4_dain": {
-        "name": "システム",
-        "text": "─── PERFECT END (ダイン) ───"
     },
     "bitter_seo_1": {
         "name": "{name}",
@@ -163,45 +83,13 @@
         "name": "ソヨン",
         "text": "...うまくいくと思ったのに。お互い、何か一歩ずつ足りなかったみたい。"
     },
+    "bitter_seo_2_ins": {
+        "name": "{name}",
+        "text": "*カフェで会ったソヨン。眼鏡の奥の視線が乾いている。余裕も震えもない。ただ——整理しに来た人の目だ。*"
+    },
     "bitter_seo_3": {
         "name": "{name}",
         "text": "*カフェを出た。雨が降っている。ソヨンのメガネの奥の視線が乾いていた。かつての余裕も、震えもなかった。ただ——整理しに来た人の目だった。*"
-    },
-    "bitter_yuna_1": {
-        "name": "{name}",
-        "text": "*告白はした。受け入れてもらえた。しばらくは幸せだった。—だけど、一ヶ月くらい経った頃、学校前のカフェで会おうって連絡が来た。*"
-    },
-    "bitter_yuna_2": {
-        "name": "ユナ",
-        "text": "...たまに思い出す。図書館の匂いを嗅ぐと。あのとき、もっと話せばよかった。"
-    },
-    "bitter_yuna_3": {
-        "name": "{name}",
-        "text": "*校門を出た。雨が降っている。——郵便受けに挟まっていたユナの最後のメモ。短い。いつもの通り。でも今回は短いんじゃなくて、書くことがもうないんだ。*"
-    },
-    "bitter_dain_1": {
-        "name": "{name}",
-        "text": "*告白はした。受け入れてもらえた。しばらくは幸せだった。—だけど、一ヶ月くらい経った頃、学校前のカフェで会おうって連絡が来た。*"
-    },
-    "bitter_dain_2": {
-        "name": "ダイン",
-        "text": "楽しかったよ、マジで！...でも楽しいだけだったみたい。それがちょっと残念。"
-    },
-    "bitter_dain_3": {
-        "name": "{name}",
-        "text": "*体育館を出た。雨が降っている。——ビックリマークが戻ってきたけど、最後の文にはなかった。ダインがピリオドで終えるのは、もう一緒にいるエネルギーが残っていないという意味だ。*"
-    },
-    "bitter_epilogue_1": {
-        "name": "{name}",
-        "text": "*卒業後。連絡が減った。月に一回が二ヶ月に一回になり、既読スルーが日常になり、ある日メッセージを送ろうとして何て書けばいいんだろが浮かんだ時——終わったと分かった。*"
-    },
-    "bitter_epilogue_2": {
-        "name": "{name}",
-        "text": "*5日間の記録は残った。痛くない。ただ——十分じゃなかった。お互いに。*"
-    },
-    "bitter_epilogue_3": {
-        "name": "システム",
-        "text": "─── BITTERSWEET END ───"
     },
     "true_seo_1": {
         "name": "{name}",
@@ -227,13 +115,89 @@
         "name": "{name}",
         "text": "*ソヨンが笑う。口元が勝手に動いている。*"
     },
+    "true_seo_6b": {
+        "name": "ソヨン",
+        "text": "いつも笑っていなきゃいけなかった。でもあんたの前では、ただの私でいたい。"
+    },
     "true_seo_7": {
         "name": "ソヨン",
         "text": "…そばにいて。"
     },
+    "true_seo_7_ins": {
+        "name": "{name}",
+        "text": "*小指を絡めた。Day 1の癖、Day 4の約束、そして今。——同じ指、三つ目の意味。*"
+    },
+    "true_seo_7b": {
+        "name": "{name}",
+        "text": "*ソヨンが小指を差し出す。*"
+    },
     "true_seo_8": {
         "name": "{name}",
         "text": "*小指を絡めた。初日の習慣、四日目の約束、そして今。——同じ指、三度目の意味。*"
+    },
+    "true_seo_bridge": {
+        "name": "{name}",
+        "text": "*ソヨンの約束がまだ指先に残っている。*"
+    },
+    "true_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*5日間だった。*"
+    },
+    "ending_aff_check_yuna": {
+        "name": "システム",
+        "text": ""
+    },
+    "perfect_yuna_1": {
+        "name": "{name}",
+        "text": "*図書館別館、秘密の屋根裏部屋。ユナが小説を一編渡す。*"
+    },
+    "perfect_yuna_2": {
+        "name": "{name}",
+        "text": "*タイトルが主人公の名前だ。*"
+    },
+    "perfect_yuna_3": {
+        "name": "ユナ",
+        "text": "...読み終わったら教えて。それが私の答えだから。"
+    },
+    "perfect_yuna_4": {
+        "name": "{name}",
+        "text": "*小説の最後の一文：『消えない人がいた。その人のおかげで、私も消えないことにした。』*"
+    },
+    "perfect_yuna_5": {
+        "name": "{name}",
+        "text": "*ユナが立ち上がって抱きついてきた。無言で。割れた窓から月明かりが差し込み——タトゥーの入った腕が腰を包み、銀色の髪が肩に触れる。初めてユナの穏やかな息遣いがアジトを満たした。*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "システム",
+        "text": "*エピローグ — 一年後*"
+    },
+    "perfect_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*ユナの初めての長編小説が出版された。献辞には三番目の星へ。とあった。*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*ユナは相変わらず口数が少ない。でも文章の長さが変わった。僕にだけ。*"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "システム",
+        "text": "─── PERFECT END (ユナ) ───"
+    },
+    "bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*告白はした。受け入れてもらえた。しばらくは幸せだった。—だけど、一ヶ月くらい経った頃、学校前のカフェで会おうって連絡が来た。*"
+    },
+    "bitter_yuna_2": {
+        "name": "ユナ",
+        "text": "...たまに思い出す。図書館の匂いを嗅ぐと。あのとき、もっと話せばよかった。"
+    },
+    "bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*校門を出た。雨が降っている。——郵便受けに挟まっていたユナの最後のメモ。短い。いつもの通り。でも今回は短いんじゃなくて、書くことがもうないんだ。*"
     },
     "true_yuna_1": {
         "name": "{name}",
@@ -242,6 +206,18 @@
     "true_yuna_2": {
         "name": "ユナ",
         "text": "ここを知ってるのは私だけだった。"
+    },
+    "true_yuna_2_ins": {
+        "name": "{name}",
+        "text": "*ユナが屋根裏の小さなはしごを上る。上に向かうハッチがある。——開いた瞬間、風が吹き込む。*"
+    },
+    "true_yuna_2_ins2": {
+        "name": "{name}",
+        "text": "*屋根裏の上は屋上だった。図書館別館の屋上。——誰も知らない秘密の通路。*"
+    },
+    "true_yuna_2_ins3": {
+        "name": "{name}",
+        "text": "*ユナが手すりに寄りかかる。星が見える。*"
     },
     "true_yuna_3": {
         "name": "{name}",
@@ -255,13 +231,109 @@
         "name": "{name}",
         "text": "三番目の星？"
     },
+    "true_yuna_5_ins": {
+        "name": "{name}",
+        "text": "*ユナが一瞬止まる。——笑う。初めて見る、音のない笑み。*"
+    },
     "true_yuna_6": {
         "name": "ユナ",
         "text": "…覚えてたんだ。"
     },
+    "true_yuna_6b": {
+        "name": "ユナ",
+        "text": "行かないで。今夜はここにいて。"
+    },
     "true_yuna_7": {
         "name": "{name}",
         "text": "*二日目の謎かけ。三番目の星。——ユナが最初から僕を見ていた証拠。*"
+    },
+    "true_yuna_bridge": {
+        "name": "{name}",
+        "text": "*ユナの星がまだ目の前に残っている。*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*5日間だった。*"
+    },
+    "ending_aff_check_dain": {
+        "name": "システム",
+        "text": ""
+    },
+    "perfect_dain_1": {
+        "name": "{name}",
+        "text": "*体育館。ダインが最後のサーブを打つ。包帯を解きながら。*"
+    },
+    "perfect_dain_2": {
+        "name": "ダイン",
+        "text": "これが最後のトスだよ。——でも始まりでもある。"
+    },
+    "perfect_dain_2b": {
+        "name": "{name}",
+        "text": "*感嘆符がない。初めて。——ダインがバレーではない、別の始まりを語っている。*"
+    },
+    "perfect_dain_3": {
+        "name": "ダイン",
+        "text": "コートの外でも私、大丈夫な人かな？"
+    },
+    "perfect_dain_3b": {
+        "name": "{name}",
+        "text": "*ダインがバレーボールをコートに置く。振り返って笑う。感嘆符のない笑顔。*"
+    },
+    "perfect_dain_4": {
+        "name": "{name}",
+        "text": "コートの中でも外でも。"
+    },
+    "perfect_dain_5": {
+        "name": "{name}",
+        "text": "*ダインが飛びついてきた。受け止める準備なんてなかった。バレーボールが床を転がり — 夕日の体育館に、二人の影だけが残った。*"
+    },
+    "perfect_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*すべての選択が一人に向いていた。5日間じゃなくて、一日一日がすべてだった。*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "システム",
+        "text": "*エピローグ — 一年後*"
+    },
+    "perfect_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*ダインはスポーツ解説者になった。カメラの前でも笑っている。でも今度は本物の笑顔だ。*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*たまに膝が痛いと言う。そのたびに隣に座って何も言わない。それが僕たちのやり方だ。*"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "システム",
+        "text": "─── PERFECT END (ダイン) ───"
+    },
+    "bitter_dain_1": {
+        "name": "{name}",
+        "text": "*告白はした。受け入れてもらえた。しばらくは幸せだった。—だけど、一ヶ月くらい経った頃、学校前のカフェで会おうって連絡が来た。*"
+    },
+    "bitter_dain_2": {
+        "name": "ダイン",
+        "text": "楽しかったよ、マジで！...でも楽しいだけだったみたい。それがちょっと残念。"
+    },
+    "bitter_dain_3": {
+        "name": "{name}",
+        "text": "*体育館を出た。雨が降っている。——ビックリマークが戻ってきたけど、最後の文にはなかった。ダインがピリオドで終えるのは、もう一緒にいるエネルギーが残っていないという意味だ。*"
+    },
+    "bitter_dain_3_ins": {
+        "name": "{name}",
+        "text": "*校門の外に出た。雨が降っている。——傘はない。桜の花びらが雨に濡れて足元に貼りついている。*"
+    },
+    "bitter_epilogue_1": {
+        "name": "{name}",
+        "text": "*卒業後。連絡が減った。月に一回が二ヶ月に一回になり、既読スルーが日常になり、ある日メッセージを送ろうとして何て書けばいいんだろが浮かんだ時——終わったと分かった。*"
+    },
+    "bitter_epilogue_2": {
+        "name": "{name}",
+        "text": "*5日間の記録は残った。痛くない。ただ——十分じゃなかった。お互いに。*"
+    },
+    "bitter_epilogue_3": {
+        "name": "システム",
+        "text": "─── BITTERSWEET END ───"
     },
     "true_dain_1": {
         "name": "{name}",
@@ -270,6 +342,10 @@
     "true_dain_2": {
         "name": "{name}",
         "text": "*ダインが{name}の手を取って——引き寄せて、自分の左胸に当てる。何も言わずに。*"
+    },
+    "true_dain_2b": {
+        "name": "{name}",
+        "text": "*速い。言葉にしなくても伝わる速さだ。*"
     },
     "true_dain_3": {
         "name": "{name}",
@@ -295,25 +371,13 @@
         "name": "ダイン",
         "text": "見てたし！！…でもずっと見ててもいいよ。"
     },
-    "true_seo_bridge": {
+    "true_dain_8b": {
         "name": "{name}",
-        "text": "*ソヨンの約束がまだ指先に残っている。*"
-    },
-    "true_yuna_bridge": {
-        "name": "{name}",
-        "text": "*ユナの星がまだ目の前に残っている。*"
+        "text": "*感嘆符が戻ってきた。——でも今回は、本物の感情の感嘆符だ。*"
     },
     "true_dain_bridge": {
         "name": "{name}",
         "text": "*ダインの笑い声がまだ耳に残っている。*"
-    },
-    "true_epilogue_1_seo": {
-        "name": "{name}",
-        "text": "*5日間だった。*"
-    },
-    "true_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*5日間だった。*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
@@ -327,6 +391,7 @@
         "name": "{name}",
         "text": "*でも振り返ると——初めて目が合ったあの瞬間にはもう決まっていたんだと思う。ただ認めるまでに5日かかっただけ。*"
     },
+    "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
         "text": "*家庭が円満になったわけじゃない。母からの電話は相変わらず冷たいし、鏡の前の練習はまだ終わっていない。——ただ、練習していない表情を見せられる人ができた。もう。*"
@@ -342,6 +407,50 @@
     "true_epilogue_7": {
         "name": "システム",
         "text": "─── TRUE LOVE END ───"
+    },
+    "day5_ending_alone": {
+        "name": "{name}",
+        "text": "*校門を出る。スマホが鳴る。——誰でもない。バッテリー残量の通知。*"
+    },
+    "alone_1": {
+        "name": "{name}",
+        "text": "*5日間だった。誰かに近づいて、近づけなくて、結局誰も選べなかった。*"
+    },
+    "alone_2": {
+        "name": "{name}",
+        "text": "*前の学校では言えなかったことを後悔した。この学校では——言う相手が見つからなかったことを後悔しているのか？違う。見つけたのに選べなかったんだ。いや、選ぶ勇気がなかったんだ。*"
+    },
+    "alone_2_ins": {
+        "name": "{name}",
+        "text": "*窓の外で桜が散る。5日前に鼻先をかすめたあの桜が、今は風に吹かれて消えていく。*"
+    },
+    "alone_3": {
+        "name": "{name}",
+        "text": "*窓の外で桜が散っている。5日前に鼻先をかすめたあの桜が、今は風に吹かれて消えていく。*"
+    },
+    "alone_4": {
+        "name": "{name}",
+        "text": "*…一人でいるのは罰じゃない。ただ——静かだ。思っていたよりずっと。*"
+    },
+    "alone_5": {
+        "name": "システム",
+        "text": "─── ALONE END ───"
+    },
+    "ending_confessed_aff_check": {
+        "name": "システム",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "システム",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "システム",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "システム",
+        "text": ""
     },
     "day5_ending_good": {
         "name": "{name}",
@@ -363,13 +472,17 @@
         "name": "ソヨン",
         "text": "よそ見した分、一生かけて返してもらうから。——利子つきで。"
     },
-    "good_1_yuna": {
-        "name": "ユナ",
-        "text": "…鈍いにもほどがある。でも戻ってきた人は許してあげてもいいか。"
+    "good_1_seo_ins": {
+        "name": "{name}",
+        "text": "*桜の花びらがソヨンの髪に降りる。払おうか迷っていると——ソヨンが先に頭を傾ける。*"
     },
-    "good_1_dain": {
-        "name": "ダイン",
-        "text": "ねぇ、マジで怒ってるんだけど？…でも結局あたしのところに来たんじゃん。それでいいよ。"
+    "good_1_seo_ins2": {
+        "name": "{name}",
+        "text": "*完璧なふりをしているけど、僕も完璧じゃなかった。*"
+    },
+    "good_1_seo_ins3": {
+        "name": "{name}",
+        "text": "*桜は来年も咲く。並んで歩いた。*"
     },
     "good_2_seo": {
         "name": "{name}",
@@ -387,6 +500,34 @@
         "name": "{name}",
         "text": "*桜並木の終わりを抜けて、ゆっくり歩きながら思った。来年の春もこの道を一緒に歩きたい。今度は、そう言えた。*"
     },
+    "good_epilogue_1": {
+        "name": "{name}",
+        "text": "*揺れたから、わかった。本当の気持ちが何か。*"
+    },
+    "good_epilogue_2": {
+        "name": "{name}",
+        "text": "*遠回りしたと思ったけど、結局ここだった。*"
+    },
+    "good_epilogue_3": {
+        "name": "{name}",
+        "text": "*不器用でもいい。初めてだから。*"
+    },
+    "good_5_cg_seo": {
+        "name": "システム",
+        "text": "─── GOOD END ───"
+    },
+    "good_1_yuna": {
+        "name": "ユナ",
+        "text": "…鈍いにもほどがある。でも戻ってきた人は許してあげてもいいか。"
+    },
+    "good_1_yuna_b": {
+        "name": "{name}",
+        "text": "*ユナがメモを渡す。次は迷わないで。——短い。でも温かい。*"
+    },
+    "good_1_yuna_b_ins": {
+        "name": "{name}",
+        "text": "*消えた人の影を追いかけていた。*"
+    },
     "good_2_yuna": {
         "name": "{name}",
         "text": "*屋上。ユナが手すりにもたれて立っている。風が髪を揺らす。*"
@@ -402,6 +543,26 @@
     "good_5_yuna": {
         "name": "{name}",
         "text": "*屋上の扉を出て階段を下りながらも、気持ちは同じだった。時間がもっとかかってもいい。今度は最後まで読み切って、最後まで言い切るつもりだ。*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*揺れたから、わかった。本当の気持ちが何か。*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*遠回りしたと思ったけど、結局ここだった。*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*不器用でもいい。初めてだから。*"
+    },
+    "good_5_cg_yuna": {
+        "name": "システム",
+        "text": "─── GOOD END ───"
+    },
+    "good_1_dain": {
+        "name": "ダイン",
+        "text": "ねぇ、マジで怒ってるんだけど？…でも結局あたしのところに来たんじゃん。それでいいよ。"
     },
     "good_2_dain": {
         "name": "{name}",
@@ -419,89 +580,37 @@
         "name": "{name}",
         "text": "*校門を抜けて一緒に歩きながら、最後のサーブはもうこっちへ来ているんだと思った。今度は僕が受け止める番だ。*"
     },
-    "good_5_cg_seo": {
-        "name": "システム",
-        "text": "─── GOOD END ───"
+    "good_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*揺れたから、わかった。本当の気持ちが何か。*"
     },
-    "good_5_cg_yuna": {
-        "name": "システム",
-        "text": "─── GOOD END ───"
+    "good_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*遠回りしたと思ったけど、結局ここだった。*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*不器用でもいい。初めてだから。*"
     },
     "good_5_cg_dain": {
         "name": "システム",
         "text": "─── GOOD END ───"
     },
-    "day5_ending_mayhem": {
-        "name": "{name}",
-        "text": "*三人とも好きだった。本気だった。——だから誰も選べなかった。*"
-    },
-    "mayhem_1": {
-        "name": "{name}",
-        "text": "*ソヨンが廊下で僕とすれ違った。顧みなかった。——当たり前だ。*"
-    },
-    "mayhem_2": {
-        "name": "{name}",
-        "text": "*ユナの席が空いていた。机の上にメモが一枚。『楽しかった。』句点が最後だった。*"
-    },
-    "mayhem_3": {
-        "name": "{name}",
-        "text": "*ダインは笑っていた。いつものように明るく。——でも感嘆符がなかった。元気でね。句点で終わるダインの文章を初めて聞いたのが、よりによって別れの言葉だった。*"
-    },
-    "mayhem_4": {
-        "name": "{name}",
-        "text": "*三人の背中を見た。三人とも振り返らなかった。——それが答えだった。*"
-    },
-    "mayhem_5": {
-        "name": "{name}",
-        "text": "*春が終わろうとしている。桜が散っている。誰も僕のそばにいない。*"
-    },
-    "mayhem_6": {
-        "name": "{name}",
-        "text": "*好きだと言うだけじゃ何も守れないってことを、あまりにも遅く知った。*"
-    },
-    "mayhem_7": {
-        "name": "システム",
-        "text": "─── MAYHEM END ───"
-    },
-    "day5_ending_harem": {
-        "name": "{name}",
-        "text": "*全員好きだ。——その言葉が口から出た時、三人の表情が同時に凍りついた。*"
-    },
-    "harem_1": {
-        "name": "{name}",
-        "text": "*ソヨンが最初に笑った。…そう。正直ね。笑顔の裏で歯を食いしばる音が聞こえたのは気のせいじゃなかった。*"
-    },
-    "harem_2": {
-        "name": "ユナ",
-        "text": "…バカ。"
-    },
-    "harem_3": {
-        "name": "{name}",
-        "text": "*ダインが拳で僕の肩を殴った。痛かった。あんた頭おかしいんじゃない？…でもそういう人だって分かってて好きになったのは私だし。ふん。*"
-    },
-    "harem_4": {
-        "name": "{name}",
-        "text": "*月曜はソヨン。水曜はユナ。金曜はダイン。その間にバレないための嘘が積み重なる。甘いと思っていたのに——首を絞めてくる。*"
-    },
-    "harem_5": {
-        "name": "{name}",
-        "text": "*この均衡は必ず崩れる。誰かが先に泣くことになる。その時この物語はロマンスではなく——惨劇になる。*"
-    },
-    "harem_6": {
-        "name": "{name}",
-        "text": "*それでも今日は三人が笑っている。明日の破局を知りながらも——今日を手放せない。*"
-    },
-    "harem_7": {
-        "name": "{name}",
-        "text": "*幸せなふりはできる。でもこの先がうまく終わるなんて、僕自身も信じられない。*"
-    },
-    "harem_8": {
-        "name": "システム",
-        "text": "─── HAREM END ───"
-    },
     "day5_ending_confess_fail": {
         "name": "{name}",
         "text": "*気持ちは伝えた。言った。——でも返ってきたのは沈黙だった。*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_yuna": {
+        "name": "{name}",
+        "text": ""
+    },
+    "confess_fail_cg_dain": {
+        "name": "{name}",
+        "text": ""
     },
     "confess_fail_1": {
         "name": "{name}",
@@ -591,40 +700,77 @@
         "name": "システム",
         "text": "─── FRIEND END ───"
     },
-    "day5_ending_alone": {
+    "day5_ending_mayhem": {
         "name": "{name}",
-        "text": "*校門を出る。スマホが鳴る。——誰でもない。バッテリー残量の通知。*"
+        "text": "*三人とも好きだった。本気だった。——だから誰も選べなかった。*"
     },
-    "alone_1": {
+    "mayhem_1": {
         "name": "{name}",
-        "text": "*5日間だった。誰かに近づいて、近づけなくて、結局誰も選べなかった。*"
+        "text": "*ソヨンが廊下で僕とすれ違った。顧みなかった。——当たり前だ。*"
     },
-    "alone_2": {
+    "mayhem_2": {
         "name": "{name}",
-        "text": "*前の学校では言えなかったことを後悔した。この学校では——言う相手が見つからなかったことを後悔しているのか？違う。見つけたのに選べなかったんだ。いや、選ぶ勇気がなかったんだ。*"
+        "text": "*ユナの席が空いていた。机の上にメモが一枚。『楽しかった。』句点が最後だった。*"
     },
-    "alone_3": {
+    "mayhem_3": {
         "name": "{name}",
-        "text": "*窓の外で桜が散っている。5日前に鼻先をかすめたあの桜が、今は風に吹かれて消えていく。*"
+        "text": "*ダインは笑っていた。いつものように明るく。——でも感嘆符がなかった。元気でね。句点で終わるダインの文章を初めて聞いたのが、よりによって別れの言葉だった。*"
     },
-    "alone_4": {
+    "mayhem_4": {
         "name": "{name}",
-        "text": "*…一人でいるのは罰じゃない。ただ——静かだ。思っていたよりずっと。*"
+        "text": "*三人の背中を見た。三人とも振り返らなかった。——それが答えだった。*"
     },
-    "alone_5": {
+    "mayhem_5": {
+        "name": "{name}",
+        "text": "*春が終わろうとしている。桜が散っている。誰も僕のそばにいない。*"
+    },
+    "mayhem_6": {
+        "name": "{name}",
+        "text": "*好きだと言うだけじゃ何も守れないってことを、あまりにも遅く知った。*"
+    },
+    "mayhem_7": {
         "name": "システム",
-        "text": "─── ALONE END ───"
+        "text": "─── MAYHEM END ───"
     },
-    "day5_credits": {
-        "name": "",
-        "text": ""
+    "day5_ending_harem": {
+        "name": "{name}",
+        "text": "*全員好きだ。——その言葉が口から出た時、三人の表情が同時に凍りついた。*"
     },
-    "day5_ending_restart": {
+    "harem_1": {
+        "name": "{name}",
+        "text": "*ソヨンが最初に笑った。…そう。正直ね。笑顔の裏で歯を食いしばる音が聞こえたのは気のせいじゃなかった。*"
+    },
+    "harem_1_ins": {
+        "name": "{name}",
+        "text": "*ユナがうつむいた。しばらく。そして顔を上げた時、目は乾いたまま笑っていた。……馬鹿。その一言に二文分の感情が詰まっていた。*"
+    },
+    "harem_2": {
+        "name": "ユナ",
+        "text": "…バカ。"
+    },
+    "harem_3": {
+        "name": "{name}",
+        "text": "*ダインが拳で僕の肩を殴った。痛かった。あんた頭おかしいんじゃない？…でもそういう人だって分かってて好きになったのは私だし。ふん。*"
+    },
+    "harem_4": {
+        "name": "{name}",
+        "text": "*月曜はソヨン。水曜はユナ。金曜はダイン。その間にバレないための嘘が積み重なる。甘いと思っていたのに——首を絞めてくる。*"
+    },
+    "harem_5": {
+        "name": "{name}",
+        "text": "*この均衡は必ず崩れる。誰かが先に泣くことになる。その時この物語はロマンスではなく——惨劇になる。*"
+    },
+    "harem_6": {
+        "name": "{name}",
+        "text": "*それでも今日は三人が笑っている。明日の破局を知りながらも——今日を手放せない。*"
+    },
+    "harem_7": {
+        "name": "{name}",
+        "text": "*幸せなふりはできる。でもこの先がうまく終わるなんて、僕自身も信じられない。*"
+    },
+    "harem_8": {
         "name": "システム",
-        "text": "",
-        "choices": [
-            "最初からやり直す"
-        ]
+        "text": "─── HAREM END ───"
     },
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
@@ -700,6 +846,142 @@
         "text": "─── 担任先生 PERFECT END ───"
     },
     "hidden_perfect_homeroom_5": {},
+    "hidden_perfect_homeroom_ep1": {
+        "name": "{name}",
+        "text": "*あの日、カフェを出なかった。日が暮れるまで。——4年前の教室で言えなかった言葉を、全部出した。*"
+    },
+    "hidden_perfect_homeroom_ep2": {
+        "name": "{name}",
+        "text": "*木曜日のカフェは僕たちのカフェになった。店員はもうカップル席ですか？と聞かない。ただ席に案内する。*"
+    },
+    "hidden_perfect_homeroom_ep3": {
+        "name": "{name}",
+        "text": "*原稿が出版された。献辞に名前はない。代わりに一行。教卓の引き出しの感想文三枚——そこから始まった物語。*"
+    },
+    "hidden_perfect_homeroom_ep4": {
+        "name": "{name}",
+        "text": "*たまに先生だったのにと言えば生徒だったのにと返す。二人とも笑う。——今はただの二人だから。*"
+    },
+    "hidden_true_homeroom_1": {
+        "name": "{name}",
+        "text": "*卒業式の日。——時が流れた。制服はもう固くない。*"
+    },
+    "hidden_true_homeroom_2": {
+        "name": "{name}",
+        "text": "*空き教室。あの原稿を書いていた教室。——担任の先生が待っている。*"
+    },
+    "hidden_true_homeroom_2_ins": {
+        "name": "{name}",
+        "text": "*教室の奥の窓辺に寄りかかって立っている。授業も仕事もない顔だ。*"
+    },
+    "hidden_true_homeroom_3": {
+        "name": "担任先生",
+        "text": "卒業おめでとう。"
+    },
+    "hidden_true_homeroom_3_ins": {
+        "name": "{name}",
+        "text": "ありがとうございます。"
+    },
+    "hidden_true_homeroom_3_ins2": {
+        "name": "担任先生",
+        "text": "……その言い方。"
+    },
+    "hidden_true_homeroom_4": {
+        "name": "担任先生",
+        "text": "…それ。『先生』って言わなかったね。初めて。"
+    },
+    "hidden_true_homeroom_4_ins": {
+        "name": "{name}",
+        "text": "*無意識だった。——卒業した瞬間、肩書きが外れた。*"
+    },
+    "hidden_true_homeroom_4_ins2": {
+        "name": "{name}",
+        "text": "*担任が封筒を取り出す。今度は茶色い封筒じゃない——白い封筒だ。*"
+    },
+    "hidden_true_homeroom_4_ins3": {
+        "name": "担任先生",
+        "text": "原稿、完成した。——あなたが最初の読者だったから書けたの。"
+    },
+    "hidden_true_homeroom_4_ins4": {
+        "name": "{name}",
+        "text": "僕の感想文、役に立ちましたか？"
+    },
+    "hidden_true_homeroom_4_ins5": {
+        "name": "担任先生",
+        "text": "一行でもって言ったのに三枚も書いてきたじゃん。*ふっと笑って*文芸創作科出身の教師が生徒の感想文で泣きそうになったのは秘密ね。"
+    },
+    "hidden_true_homeroom_4_ins6": {
+        "name": "{name}",
+        "text": "*担任が窓の外を見る。桜が散っている。*"
+    },
+    "hidden_true_homeroom_4_ins7": {
+        "name": "担任先生",
+        "text": "*窓から振り返りながら*……一つだけ。"
+    },
+    "hidden_true_homeroom_5": {
+        "name": "担任先生",
+        "text": "原稿、完成した。——君が最初の読者だったから書けた。一行でいいと言ったのに三ページ書いてきたじゃないか。*ふっと笑って*文芸創作科出身の教師が生徒の感想文で泣きそうになったのは秘密ね。"
+    },
+    "hidden_true_homeroom_5_ins": {
+        "name": "{name}",
+        "text": "*卒業式の日。——時間が流れた。*"
+    },
+    "hidden_true_homeroom_5_ins2": {
+        "name": "{name}",
+        "text": "*制服はもう硬くない。いや、今日脱ぐ日だ。*"
+    },
+    "hidden_true_homeroom_6": {
+        "name": "担任先生",
+        "text": "…一つだけ。…コーヒー飲みに行こう。今度はジュースじゃなくてコーヒー。"
+    },
+    "hidden_true_homeroom_6_ins": {
+        "name": "{name}",
+        "text": "*ジュースからコーヒーへ。——学生から大人へ。線を越えるんじゃない、線が消えたんだ。*"
+    },
+    "hidden_true_homeroom_7": {
+        "name": "{name}",
+        "text": "いいですね。"
+    },
+    "hidden_true_homeroom_7_ins": {
+        "name": "{name}",
+        "text": "*担任が笑う。乾いた笑みじゃない、7年の未完成原稿を書き上げた人の笑み。*"
+    },
+    "hidden_true_homeroom_7_ins2": {
+        "name": "担任先生",
+        "text": "……先生がこんなことしちゃダメなのにね。*——語尾がかすれる。そして笑う。*"
+    },
+    "hidden_true_homeroom_7_ins3": {
+        "name": "{name}",
+        "text": "*最後の一回。そして直る癖。——7年間の先生が終わり、名前で呼ぶ日が来た。*"
+    },
+    "hidden_true_homeroom_8": {
+        "name": "担任先生",
+        "text": "…先生がこんなことしちゃいけないんだけど。"
+    },
+    "hidden_true_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 担任先生 TRUE LOVE END ───"
+    },
+    "hidden_good_homeroom_1": {
+        "name": "担任先生",
+        "text": "*学校の前で待っていた。* 卒業おめでとう。"
+    },
+    "hidden_good_homeroom_2": {
+        "name": "{name}",
+        "text": "*握手の最中——手のひらに何か滑り込む。折りたたまれたメモ。*"
+    },
+    "hidden_good_homeroom_3": {
+        "name": "{name}",
+        "text": "*学校を出ながら。原稿が完成したら連絡する。——最初の読者へ電話番号が書かれている。*"
+    },
+    "hidden_good_homeroom_4": {
+        "name": "{name}",
+        "text": "*先生の手が—3秒ほど長く握られていた。握手にしては長く、告白にしては短い。*"
+    },
+    "hidden_good_homeroom_ending_title": {
+        "name": "",
+        "text": "─── 担任先生 GOOD END ───"
+    },
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
@@ -737,41 +1019,21 @@
         "name": "",
         "text": "─── 保健先生 PERFECT END ───"
     },
-    "hidden_true_homeroom_1": {
+    "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*卒業式の日。——時が流れた。制服はもう固くない。*"
+        "text": "*朝。食卓に絆創膏が貼ってある。今日のメニューが書かれている。——この人の付箋だ。*"
     },
-    "hidden_true_homeroom_2": {
+    "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*空き教室。あの原稿を書いていた教室。——担任の先生が待っている。*"
+        "text": "*大学病院に復職した。今度は患者たちが名前を呼んでくれる。——イ・ジュウォン先生。*"
     },
-    "hidden_true_homeroom_3": {
-        "name": "担任先生",
-        "text": "卒業おめでとう。"
-    },
-    "hidden_true_homeroom_4": {
-        "name": "担任先生",
-        "text": "…それ。『先生』って言わなかったね。初めて。"
-    },
-    "hidden_true_homeroom_5": {
-        "name": "担任先生",
-        "text": "原稿、完成した。——君が最初の読者だったから書けた。一行でいいと言ったのに三ページ書いてきたじゃないか。*ふっと笑って*文芸創作科出身の教師が生徒の感想文で泣きそうになったのは秘密ね。"
-    },
-    "hidden_true_homeroom_6": {
-        "name": "担任先生",
-        "text": "…一つだけ。…コーヒー飲みに行こう。今度はジュースじゃなくてコーヒー。"
-    },
-    "hidden_true_homeroom_7": {
+    "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "いいですね。"
+        "text": "*ローズマリーの鉢が窓辺に移されていた。日当たりのいいほうへ。——あの人が水をやっている。*"
     },
-    "hidden_true_homeroom_8": {
-        "name": "担任先生",
-        "text": "…先生がこんなことしちゃいけないんだけど。"
-    },
-    "hidden_true_homeroom_ending_title": {
-        "name": "",
-        "text": "─── 担任先生 TRUE LOVE END ───"
+    "hidden_perfect_nurse_ep4": {
+        "name": "{name}",
+        "text": "*絆創膏はまだ引き出しにある。使うことがなくても。——口実がいらなくなった人は、それでも習慣を捨てられない。*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -780,6 +1042,18 @@
     "hidden_true_nurse_2": {
         "name": "{name}",
         "text": "*『卒業おめでとう。カフェで待ってる。』——絆創膏をはがすと、内側に小さな地図がある。カフェには保健の先生が座っている。保健室で会っていた時より、ずっと楽な顔だ。ただ——僕を待っていた人みたいに。*"
+    },
+    "hidden_true_nurse_2_ins": {
+        "name": "{name}",
+        "text": "*先生じゃなくて、ただの——女性だ。*"
+    },
+    "hidden_true_nurse_2_ins2": {
+        "name": "保健室の先生",
+        "text": "卒業おめでとう。"
+    },
+    "hidden_true_nurse_2_ins3": {
+        "name": "{name}",
+        "text": "ありがとうございます。"
     },
     "hidden_true_nurse_3": {
         "name": "保健室の先生",
@@ -797,6 +1071,26 @@
         "name": "保健室の先生",
         "text": "…でも今は冗談じゃない。"
     },
+    "hidden_true_nurse_5_ins": {
+        "name": "{name}",
+        "text": "*声が一段低くなった。ふざけた表情が完全に消えた。——これがこの人の本気だ。*"
+    },
+    "hidden_true_nurse_5_ins2": {
+        "name": "保健室の先生",
+        "text": "先生が生徒に感情を持っちゃダメでしょ。わかってた。——だからずっと冗談で包んでた。ずっと。"
+    },
+    "hidden_true_nurse_5_ins3": {
+        "name": "保健室の先生",
+        "text": "でもあなたは冗談の裏に本気があるって気づいたでしょ。"
+    },
+    "hidden_true_nurse_5_ins4": {
+        "name": "{name}",
+        "text": "バンドエイド貼るのに3分かかるのは丁寧さじゃないですよね。"
+    },
+    "hidden_true_nurse_5_ins5": {
+        "name": "{name}",
+        "text": "*保健先生が一瞬止まる。——そして笑う。ふざけた笑みじゃない。*"
+    },
     "hidden_true_nurse_6": {
         "name": "保健の先生",
         "text": "それじゃあ、卒業式が終わったら— その時、また来てね。保健室じゃなくて、ここへ。その時は、先生としてじゃなくて、私として会おうね。"
@@ -805,6 +1099,18 @@
         "name": "保健室の先生",
         "text": "…見破ったのは君が初めて。"
     },
+    "hidden_true_nurse_7_ins": {
+        "name": "{name}",
+        "text": "*保健室の先生が手を伸ばして、私の手の甲の絆創膏に触れる。今朝貼ってくれた絆創膏だ。*"
+    },
+    "hidden_true_nurse_7_ins2": {
+        "name": "保健室の先生",
+        "text": "これからはバンドエイドなしでも会えるよ。——言い訳なしで。"
+    },
+    "hidden_true_nurse_7_ins3": {
+        "name": "{name}",
+        "text": "*言い訳が必要だった人。——先生という肩書きが言い訳であり壁だった。その壁が今日消えた。*"
+    },
     "hidden_true_nurse_8": {
         "name": "保健室の先生",
         "text": "もう絆創膏なしで会える。——口実なしで。"
@@ -812,274 +1118,6 @@
     "hidden_true_nurse_ending_title": {
         "name": "",
         "text": "─── 保健先生 TRUE LOVE END ───"
-    },
-    "hidden_good_homeroom_1": {
-        "name": "担任先生",
-        "text": "*学校の前で待っていた。* 卒業おめでとう。"
-    },
-    "hidden_good_homeroom_2": {
-        "name": "{name}",
-        "text": "*握手の最中——手のひらに何か滑り込む。折りたたまれたメモ。*"
-    },
-    "hidden_good_homeroom_3": {
-        "name": "{name}",
-        "text": "*学校を出ながら。原稿が完成したら連絡する。——最初の読者へ電話番号が書かれている。*"
-    },
-    "hidden_good_homeroom_4": {
-        "name": "{name}",
-        "text": "*先生の手が—3秒ほど長く握られていた。握手にしては長く、告白にしては短い。*"
-    },
-    "hidden_good_homeroom_ending_title": {
-        "name": "",
-        "text": "─── 担任先生 GOOD END ───"
-    },
-    "hidden_good_nurse_1": {
-        "name": "保健室の先生",
-        "text": "あ、卒業生。"
-    },
-    "hidden_good_nurse_2": {
-        "name": "保健室の先生",
-        "text": "ビタミン。——大学では健康管理してね。…医療的関心。今回は本当に。"
-    },
-    "hidden_good_nurse_3": {
-        "name": "{name}",
-        "text": "*保健室を出ながら。蓋の裏側に小さな文字。痛かったら連絡して。痛くなくても連絡して。— ♥*"
-    },
-    "hidden_good_nurse_4": {
-        "name": "{name}",
-        "text": "*あのハート——今回は確実に医療的関心じゃない。*"
-    },
-    "hidden_good_nurse_ending_title": {
-        "name": "",
-        "text": "─── 保健先生 GOOD END ───"
-    },
-    "perfect_dain_2b": {
-        "name": "{name}",
-        "text": "*感嘆符がない。初めて。——ダインがバレーではない、別の始まりを語っている。*"
-    },
-    "perfect_dain_3b": {
-        "name": "{name}",
-        "text": "*ダインがバレーボールをコートに置く。振り返って笑う。感嘆符のない笑顔。*"
-    },
-    "perfect_epilogue_bridge_seo": {
-        "name": "システム",
-        "text": "*エピローグ — 一年後*"
-    },
-    "perfect_epilogue_bridge_yuna": {
-        "name": "システム",
-        "text": "*エピローグ — 一年後*"
-    },
-    "perfect_epilogue_bridge_dain": {
-        "name": "システム",
-        "text": "*エピローグ — 一年後*"
-    },
-    "true_seo_6b": {
-        "name": "ソヨン",
-        "text": "いつも笑っていなきゃいけなかった。でもあんたの前では、ただの私でいたい。"
-    },
-    "true_seo_7b": {
-        "name": "{name}",
-        "text": "*ソヨンが小指を差し出す。*"
-    },
-    "true_yuna_6b": {
-        "name": "ユナ",
-        "text": "行かないで。今夜はここにいて。"
-    },
-    "true_dain_2b": {
-        "name": "{name}",
-        "text": "*速い。言葉にしなくても伝わる速さだ。*"
-    },
-    "true_dain_8b": {
-        "name": "{name}",
-        "text": "*感嘆符が戻ってきた。——でも今回は、本物の感情の感嘆符だ。*"
-    },
-    "good_1_yuna_b": {
-        "name": "{name}",
-        "text": "*ユナがメモを渡す。次は迷わないで。——短い。でも温かい。*"
-    },
-    "good_epilogue_1": {
-        "name": "{name}",
-        "text": "*揺れたから、わかった。本当の気持ちが何か。*"
-    },
-    "good_epilogue_2": {
-        "name": "{name}",
-        "text": "*遠回りしたと思ったけど、結局ここだった。*"
-    },
-    "good_epilogue_3": {
-        "name": "{name}",
-        "text": "*不器用でもいい。初めてだから。*"
-    },
-    "good_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*揺れたから、わかった。本当の気持ちが何か。*"
-    },
-    "good_epilogue_2_yuna": {
-        "name": "{name}",
-        "text": "*遠回りしたと思ったけど、結局ここだった。*"
-    },
-    "good_epilogue_3_yuna": {
-        "name": "{name}",
-        "text": "*不器用でもいい。初めてだから。*"
-    },
-    "good_epilogue_1_dain": {
-        "name": "{name}",
-        "text": "*揺れたから、わかった。本当の気持ちが何か。*"
-    },
-    "good_epilogue_2_dain": {
-        "name": "{name}",
-        "text": "*遠回りしたと思ったけど、結局ここだった。*"
-    },
-    "good_epilogue_3_dain": {
-        "name": "{name}",
-        "text": "*不器用でもいい。初めてだから。*"
-    },
-    "confess_fail_cg_seo": {
-        "name": "{name}",
-        "text": ""
-    },
-    "confess_fail_cg_yuna": {
-        "name": "{name}",
-        "text": ""
-    },
-    "confess_fail_cg_dain": {
-        "name": "{name}",
-        "text": ""
-    },
-    "hidden_perfect_homeroom_ep1": {
-        "name": "{name}",
-        "text": "*あの日、カフェを出なかった。日が暮れるまで。——4年前の教室で言えなかった言葉を、全部出した。*"
-    },
-    "hidden_perfect_homeroom_ep2": {
-        "name": "{name}",
-        "text": "*木曜日のカフェは僕たちのカフェになった。店員はもうカップル席ですか？と聞かない。ただ席に案内する。*"
-    },
-    "hidden_perfect_homeroom_ep3": {
-        "name": "{name}",
-        "text": "*原稿が出版された。献辞に名前はない。代わりに一行。教卓の引き出しの感想文三枚——そこから始まった物語。*"
-    },
-    "hidden_perfect_homeroom_ep4": {
-        "name": "{name}",
-        "text": "*たまに先生だったのにと言えば生徒だったのにと返す。二人とも笑う。——今はただの二人だから。*"
-    },
-    "hidden_perfect_nurse_ep1": {
-        "name": "{name}",
-        "text": "*朝。食卓に絆創膏が貼ってある。今日のメニューが書かれている。——この人の付箋だ。*"
-    },
-    "hidden_perfect_nurse_ep2": {
-        "name": "{name}",
-        "text": "*大学病院に復職した。今度は患者たちが名前を呼んでくれる。——イ・ジュウォン先生。*"
-    },
-    "hidden_perfect_nurse_ep3": {
-        "name": "{name}",
-        "text": "*ローズマリーの鉢が窓辺に移されていた。日当たりのいいほうへ。——あの人が水をやっている。*"
-    },
-    "hidden_perfect_nurse_ep4": {
-        "name": "{name}",
-        "text": "*絆創膏はまだ引き出しにある。使うことがなくても。——口実がいらなくなった人は、それでも習慣を捨てられない。*"
-    },
-    "perfect_seo_1_ins": {
-        "name": "{name}",
-        "text": "*初めて眼鏡を外して——泣いている。*"
-    },
-    "perfect_seo_5_ins": {
-        "name": "{name}",
-        "text": "*屋上の風が吹く。*"
-    },
-    "true_seo_7_ins": {
-        "name": "{name}",
-        "text": "*小指を絡めた。Day 1の癖、Day 4の約束、そして今。——同じ指、三つ目の意味。*"
-    },
-    "true_yuna_2_ins": {
-        "name": "{name}",
-        "text": "*ユナが屋根裏の小さなはしごを上る。上に向かうハッチがある。——開いた瞬間、風が吹き込む。*"
-    },
-    "true_yuna_2_ins2": {
-        "name": "{name}",
-        "text": "*屋根裏の上は屋上だった。図書館別館の屋上。——誰も知らない秘密の通路。*"
-    },
-    "true_yuna_2_ins3": {
-        "name": "{name}",
-        "text": "*ユナが手すりに寄りかかる。星が見える。*"
-    },
-    "true_yuna_5_ins": {
-        "name": "{name}",
-        "text": "*ユナが一瞬止まる。——笑う。初めて見る、音のない笑み。*"
-    },
-    "hidden_true_homeroom_5_ins": {
-        "name": "{name}",
-        "text": "*卒業式の日。——時間が流れた。*"
-    },
-    "hidden_true_homeroom_5_ins2": {
-        "name": "{name}",
-        "text": "*制服はもう硬くない。いや、今日脱ぐ日だ。*"
-    },
-    "hidden_true_homeroom_2_ins": {
-        "name": "{name}",
-        "text": "*教室の奥の窓辺に寄りかかって立っている。授業も仕事もない顔だ。*"
-    },
-    "hidden_true_homeroom_3_ins": {
-        "name": "{name}",
-        "text": "ありがとうございます。"
-    },
-    "hidden_true_homeroom_3_ins2": {
-        "name": "担任先生",
-        "text": "……その言い方。"
-    },
-    "hidden_true_homeroom_4_ins": {
-        "name": "{name}",
-        "text": "*無意識だった。——卒業した瞬間、肩書きが外れた。*"
-    },
-    "hidden_true_homeroom_4_ins2": {
-        "name": "{name}",
-        "text": "*担任が封筒を取り出す。今度は茶色い封筒じゃない——白い封筒だ。*"
-    },
-    "hidden_true_homeroom_4_ins3": {
-        "name": "担任先生",
-        "text": "原稿、完成した。——あなたが最初の読者だったから書けたの。"
-    },
-    "hidden_true_homeroom_4_ins4": {
-        "name": "{name}",
-        "text": "僕の感想文、役に立ちましたか？"
-    },
-    "hidden_true_homeroom_4_ins5": {
-        "name": "担任先生",
-        "text": "一行でもって言ったのに三枚も書いてきたじゃん。*ふっと笑って*文芸創作科出身の教師が生徒の感想文で泣きそうになったのは秘密ね。"
-    },
-    "hidden_true_homeroom_4_ins6": {
-        "name": "{name}",
-        "text": "*担任が窓の外を見る。桜が散っている。*"
-    },
-    "hidden_true_homeroom_4_ins7": {
-        "name": "担任先生",
-        "text": "*窓から振り返りながら*……一つだけ。"
-    },
-    "hidden_true_homeroom_6_ins": {
-        "name": "{name}",
-        "text": "*ジュースからコーヒーへ。——学生から大人へ。線を越えるんじゃない、線が消えたんだ。*"
-    },
-    "hidden_true_homeroom_7_ins": {
-        "name": "{name}",
-        "text": "*担任が笑う。乾いた笑みじゃない、7年の未完成原稿を書き上げた人の笑み。*"
-    },
-    "hidden_true_homeroom_7_ins2": {
-        "name": "担任先生",
-        "text": "……先生がこんなことしちゃダメなのにね。*——語尾がかすれる。そして笑う。*"
-    },
-    "hidden_true_homeroom_7_ins3": {
-        "name": "{name}",
-        "text": "*最後の一回。そして直る癖。——7年間の先生が終わり、名前で呼ぶ日が来た。*"
-    },
-    "hidden_true_nurse_2_ins": {
-        "name": "{name}",
-        "text": "*先生じゃなくて、ただの——女性だ。*"
-    },
-    "hidden_true_nurse_2_ins2": {
-        "name": "保健室の先生",
-        "text": "卒業おめでとう。"
-    },
-    "hidden_true_nurse_2_ins3": {
-        "name": "{name}",
-        "text": "ありがとうございます。"
     },
     "hidden_true_nurse_8_ins": {
         "name": "保健室の先生",
@@ -1109,37 +1147,13 @@
         "name": "{name}",
         "text": "知ってます。"
     },
-    "hidden_true_nurse_5_ins": {
-        "name": "{name}",
-        "text": "*声が一段低くなった。ふざけた表情が完全に消えた。——これがこの人の本気だ。*"
-    },
-    "hidden_true_nurse_5_ins2": {
+    "hidden_good_nurse_1": {
         "name": "保健室の先生",
-        "text": "先生が生徒に感情を持っちゃダメでしょ。わかってた。——だからずっと冗談で包んでた。ずっと。"
+        "text": "あ、卒業生。"
     },
-    "hidden_true_nurse_5_ins3": {
+    "hidden_good_nurse_2": {
         "name": "保健室の先生",
-        "text": "でもあなたは冗談の裏に本気があるって気づいたでしょ。"
-    },
-    "hidden_true_nurse_5_ins4": {
-        "name": "{name}",
-        "text": "バンドエイド貼るのに3分かかるのは丁寧さじゃないですよね。"
-    },
-    "hidden_true_nurse_5_ins5": {
-        "name": "{name}",
-        "text": "*保健先生が一瞬止まる。——そして笑う。ふざけた笑みじゃない。*"
-    },
-    "hidden_true_nurse_7_ins": {
-        "name": "{name}",
-        "text": "*保健室の先生が手を伸ばして、私の手の甲の絆創膏に触れる。今朝貼ってくれた絆創膏だ。*"
-    },
-    "hidden_true_nurse_7_ins2": {
-        "name": "保健室の先生",
-        "text": "これからはバンドエイドなしでも会えるよ。——言い訳なしで。"
-    },
-    "hidden_true_nurse_7_ins3": {
-        "name": "{name}",
-        "text": "*言い訳が必要だった人。——先生という肩書きが言い訳であり壁だった。その壁が今日消えた。*"
+        "text": "ビタミン。——大学では健康管理してね。…医療的関心。今回は本当に。"
     },
     "hidden_good_nurse_2_ins": {
         "name": "{name}",
@@ -1153,41 +1167,31 @@
         "name": "{name}",
         "text": "*今度は本当に。——つまりこれまでは違ったということだ。*"
     },
+    "hidden_good_nurse_3": {
+        "name": "{name}",
+        "text": "*保健室を出ながら。蓋の裏側に小さな文字。痛かったら連絡して。痛くなくても連絡して。— ♥*"
+    },
     "hidden_good_nurse_3_ins": {
         "name": "{name}",
         "text": "*ふたを閉めても、口元がなかなか下がらない。*"
     },
-    "good_1_seo_ins": {
+    "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*桜の花びらがソヨンの髪に降りる。払おうか迷っていると——ソヨンが先に頭を傾ける。*"
+        "text": "*あのハート——今回は確実に医療的関心じゃない。*"
     },
-    "good_1_seo_ins2": {
-        "name": "{name}",
-        "text": "*完璧なふりをしているけど、僕も完璧じゃなかった。*"
+    "hidden_good_nurse_ending_title": {
+        "name": "",
+        "text": "─── 保健先生 GOOD END ───"
     },
-    "good_1_seo_ins3": {
-        "name": "{name}",
-        "text": "*桜は来年も咲く。並んで歩いた。*"
+    "day5_credits": {
+        "name": "",
+        "text": ""
     },
-    "good_1_yuna_b_ins": {
-        "name": "{name}",
-        "text": "*消えた人の影を追いかけていた。*"
-    },
-    "bitter_seo_2_ins": {
-        "name": "{name}",
-        "text": "*カフェで会ったソヨン。眼鏡の奥の視線が乾いている。余裕も震えもない。ただ——整理しに来た人の目だ。*"
-    },
-    "bitter_dain_3_ins": {
-        "name": "{name}",
-        "text": "*校門の外に出た。雨が降っている。——傘はない。桜の花びらが雨に濡れて足元に貼りついている。*"
-    },
-    "harem_1_ins": {
-        "name": "{name}",
-        "text": "*ユナがうつむいた。しばらく。そして顔を上げた時、目は乾いたまま笑っていた。……馬鹿。その一言に二文分の感情が詰まっていた。*"
-    },
-    "alone_2_ins": {
-        "name": "{name}",
-        "text": "*窓の外で桜が散る。5日前に鼻先をかすめたあの桜が、今は風に吹かれて消えていく。*"
-    },
-    "true_epilogue_4": {}
+    "day5_ending_restart": {
+        "name": "システム",
+        "text": "",
+        "choices": [
+            "最初からやり直す"
+        ]
+    }
 }

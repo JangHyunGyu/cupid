@@ -14,8 +14,17 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "bgm": "sunset1.mp3",
         "branches": [
+            { "condition": "day4_waited", "next": "after5_waited_start_branch" },
             { "condition": "homeroom_day5", "next": "after5_hidden_farewell_1" },
             { "condition": "nurse_day5", "next": "after5_hidden_farewell_1" },
+            { "condition": "route_seoyeon", "next": "after5_farewell_yuna_check" },
+            { "next": "after5_farewell_seo_1" }
+        ]
+    },
+    "after5_waited_start_branch": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "branches": [
             { "condition": "route_seoyeon", "next": "after5_farewell_yuna_check" },
             { "next": "after5_farewell_seo_1" }
         ]
@@ -198,11 +207,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_ending_check": {
         "branches": [
-            { "condition": "homeroom_day5", "next": "after5_hidden_route_choice_check" },
-            { "condition": "nurse_day5", "next": "after5_hidden_route_choice_check" },
             { "condition": "day3_caught_multiple_dates", "next": "ending_start" },
             { "condition": "ending_harem", "next": "after5_set_harem" },
             { "condition": "day4_waited", "next": "after5_last_chance_1" },
+            { "condition": "homeroom_day5", "next": "after5_hidden_route_choice_check" },
+            { "condition": "nurse_day5", "next": "after5_hidden_route_choice_check" },
             { "next": "ending_start" }
         ]
     },
@@ -240,6 +249,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_last_chance_1": {
         "background": "assets/images/background/school_back.png",
         "character": null,
+        "setFlags": ["day5_last_chance_path"],
         "next": "after5_last_chance_2"
     },
     "after5_last_chance_2": {

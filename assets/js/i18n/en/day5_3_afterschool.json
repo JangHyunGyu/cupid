@@ -3,6 +3,26 @@
         "name": "{name}",
         "text": "*The event is winding down. I naturally run into the two I didn't choose.*"
     },
+    "after5_waited_start_branch": {
+        "name": "System",
+        "text": ""
+    },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly.*"
+    },
+    "after5_hidden_farewell_2": {
+        "name": "{name}",
+        "text": "*None of them look this way. — If anything, that's a relief. Right now, I don't think I can meet anyone's eyes.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*I can't easily say I'm sorry. Those feelings aren't something that can be neatly wrapped up with that word. So just in my heart, slowly. Thank you.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*I walked to the back of the school.*"
+    },
     "after5_farewell_seo_1": {
         "name": "{name}",
         "text": "*I run into Seoyeon in the hallway.*"
@@ -27,10 +47,19 @@
         "name": "Seoyeon",
         "text": "Next time, I'll be the one to take you."
     },
+    "after5_farewell_seo_6_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon turns and waves. — The same gesture as Day 1. She doesn't look back.*"
+    },
+    "after5_farewell_seo_6_ins2": {
+        "name": "{name}",
+        "text": "*Her back is straight. Perfectly. — But this time, she isn't trembling.*"
+    },
     "after5_farewell_seo_7": {
         "name": "{name}",
         "text": "*I'm left alone in the hallway. Seoyeon's footsteps fade away. — Five days ago, her back felt like a wall. Now, it feels like a door.*"
     },
+    "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
         "name": "{name}",
         "text": "*Yuna approaches in front of the library. Without a word, she hands me a book.*"
@@ -51,6 +80,11 @@
         "name": "{name}",
         "text": "*'It was fun.' — That was probably the biggest thing Yuna could say.*"
     },
+    "after5_farewell_yuna_5b": {
+        "name": "{name}",
+        "text": "*I walked back to the hallway.*"
+    },
+    "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
         "text": "*Dain comes running from in front of the gym.*"
@@ -67,21 +101,25 @@
         "name": "Dain",
         "text": "But hey, it's your choice. Next time you better give me a chance too!"
     },
+    "after5_farewell_dain_4_ins": {
+        "name": "{name}",
+        "text": "*She grins and punches my shoulder with her fist. — Same force as Day 1.*"
+    },
+    "after5_farewell_dain_4_ins2": {
+        "name": "Dain",
+        "text": "...Do well. For real."
+    },
+    "after5_farewell_dain_4_ins3": {
+        "name": "{name}",
+        "text": "*The exclamation marks are alive and well. — Dain is Dain to the very end. That's her strength.*"
+    },
     "after5_farewell_dain_5": {
         "name": "{name}",
         "text": "*She grins and punches my shoulder with her fist. Same force as Day 1. The exclamation marks are alive and well. Dain is Dain to the very end. That's her strength.*"
     },
-    "after5_hidden_farewell_1": {
+    "after5_farewell_dain_5b": {
         "name": "{name}",
-        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly.*"
-    },
-    "after5_hidden_farewell_2": {
-        "name": "{name}",
-        "text": "*None of them look this way. — If anything, that's a relief. Right now, I don't think I can meet anyone's eyes.*"
-    },
-    "after5_hidden_farewell_3": {
-        "name": "{name}",
-        "text": "*I can't easily say I'm sorry. Those feelings aren't something that can be neatly wrapped up with that word. So just in my heart, slowly. Thank you.*"
+        "text": "*I left the gym and headed to the back of the school.*"
     },
     "after5_sunset_1": {
         "name": "{name}",
@@ -91,6 +129,7 @@
         "name": "{name}",
         "text": "*The sunset paints the schoolyard. Were five days really this short? — The moment of the final choice draws near.*"
     },
+    "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
         "text": "*My last steps split into two paths. The person I already made a promise to, and the feeling I couldn't keep pretending not to see.*"
@@ -123,102 +162,8 @@
         "name": "{name}",
         "text": "*At my old school, it was the same. I couldn't say it. And I regretted it. — Am I going to do this again?*"
     },
-    "after5_last_chance_choice": {
-        "name": "{name}",
-        "text": "*If not now, there's no chance.*",
-        "choices": [
-            "This time, I'll confess",
-            "...I couldn't say anything"
-        ]
-    },
-    "after5_confess_yes": {
-        "name": "{name}",
-        "text": "*I almost ran away again. Like at my old school. That moment of putting the phone in my pocket and not being able to say anything almost came back. — No. Not this time.*"
-    },
-    "after5_confess_yes_2": {
-        "name": "{name}",
-        "text": "Hey — I have something to tell you."
-    },
-    "after5_confess_react_seo": {
-        "name": "Seoyeon",
-        "text": "*Walking side by side.* ...You're late. But — not too late. Because you came back instead of running."
-    },
-    "after5_confess_react_seo_low": {
-        "name": "Seoyeon",
-        "text": "*She stays silent for a long moment.* ...Thanks. But I don't think I can pretend one sentence fixes everything."
-    },
-    "after5_confess_react_dain": {
-        "name": "Dain",
-        "text": "*Leaving the school.* Wait, for real?! ...For real? I — I've been waiting. Since yesterday. No, since the day before."
-    },
-    "after5_confess_react_dain_low": {
-        "name": "Dain",
-        "text": "*She takes a breath.* ...I heard you. But I can't smile right away yet."
-    },
-    "after5_confess_react_yuna": {
-        "name": "Yuna",
-        "text": "*We walked side by side.* ...I already knew. ...If you read it, that's enough."
-    },
-    "after5_confess_react_yuna_low": {
-        "name": "Yuna",
-        "text": "*She folds the note in her hand.* ...I read it. But I still can't decide on the ending."
-    },
-    "after5_confess_fail_walk_1": {
-        "name": "{name}",
-        "text": "*No more words came. As the sun sank lower, we just walked in the same direction for a while.*"
-    },
-    "after5_confess_fail_walk_2": {
-        "name": "{name}",
-        "text": "*With no answer yet between us, our steps carried us to the park.*"
-    },
-    "after5_confess_react_yuna_call": {
-        "name": "{name}",
-        "text": "Yuna."
-    },
-    "after5_confess_no": {
-        "name": "{name}",
-        "text": "*My lips won't move. Again. — Again, I couldn't say it.*"
-    },
-    "after5_confess_no_2": {
-        "name": "{name}",
-        "text": "*The evening breeze blows in. The shadow behind me grows longer. — I'm alone.*"
-    },
-    "after5_hidden_farewell_3b": {
-        "name": "{name}",
-        "text": "*I walked to the back of the school.*"
-    },
-    "after5_farewell_yuna_5b": {
-        "name": "{name}",
-        "text": "*I walked back to the hallway.*"
-    },
-    "after5_farewell_dain_5b": {
-        "name": "{name}",
-        "text": "*I left the gym and headed to the back of the school.*"
-    },
-    "after5_confess_no_2b": {
-        "name": "{name}",
-        "text": "*I went back home.*"
-    },
-    "after5_farewell_seo_6_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon turns and waves. — The same gesture as Day 1. She doesn't look back.*"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*Her back is straight. Perfectly. — But this time, she isn't trembling.*"
-    },
-    "after5_farewell_dain_4_ins": {
-        "name": "{name}",
-        "text": "*She grins and punches my shoulder with her fist. — Same force as Day 1.*"
-    },
-    "after5_farewell_dain_4_ins2": {
-        "name": "Dain",
-        "text": "...Do well. For real."
-    },
-    "after5_farewell_dain_4_ins3": {
-        "name": "{name}",
-        "text": "*The exclamation marks are alive and well. — Dain is Dain to the very end. That's her strength.*"
-    },
+    "after5_last_chance_route_check": {},
+    "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*I almost ran away again. Just like at my old school. Phone in my pocket, unable to say a word — that moment nearly came back. — No. Not this time.*"
@@ -259,6 +204,15 @@
         "name": "{name}",
         "text": "*Walking side by side — we leave the school behind.*"
     },
+    "after5_last_chance_seo_low_1": {
+        "name": "{name}",
+        "text": "Seoyeon."
+    },
+    "after5_last_chance_seo_low_2": {
+        "name": "Seoyeon",
+        "text": "*Seoyeon turns around. Her feet are half-turned away, ready to leave at any moment.* ...What."
+    },
+    "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_ins11": {
         "name": "{name}",
         "text": "Dain."
@@ -295,53 +249,6 @@
         "name": "Dain",
         "text": "Ugh why are you crying — this is supposed to be happy —"
     },
-    "after5_confess_react_yuna_ins": {
-        "name": "{name}",
-        "text": "*Yuna sets down her book. Her expression doesn't change. — But her hands are trembling.*"
-    },
-    "after5_confess_react_yuna_ins2": {
-        "name": "Yuna",
-        "text": "...I already knew."
-    },
-    "after5_confess_react_yuna_ins3": {
-        "name": "{name}",
-        "text": "*She hands me a note. Folded paper. One line when unfolded.*"
-    },
-    "after5_confess_react_yuna_ins4": {
-        "name": "{name}",
-        "text": "*'I waited. — A long time.'*"
-    },
-    "after5_confess_react_yuna_ins5": {
-        "name": "{name}",
-        "text": "*One line, but the ink is smeared. — She was crying as she wrote it.*"
-    },
-    "after5_confess_react_yuna_ins6": {
-        "name": "Yuna",
-        "text": "...If you read it, that's enough."
-    },
-    "after5_confess_react_yuna_ins7": {
-        "name": "{name}",
-        "text": "*We walked side by side. In silence.*"
-    },
-    "after5_confess_react_yuna_ins8": {
-        "name": "{name}",
-        "text": "*And so — we walked beyond the school.*"
-    },
-    "after5_farewell_yuna_check": {},
-    "after5_farewell_dain_check": {},
-    "after5_ending_check": {},
-    "after5_last_chance_route_check": {},
-    "after5_last_chance_seo_aff_check": {},
-    "after5_last_chance_dain_aff_check": {},
-    "after5_last_chance_yuna_aff_check": {},
-    "after5_last_chance_seo_low_1": {
-        "name": "{name}",
-        "text": "Seoyeon."
-    },
-    "after5_last_chance_seo_low_2": {
-        "name": "Seoyeon",
-        "text": "*Seoyeon turns around. Her feet are half-turned away, ready to leave at any moment.* ...What."
-    },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
         "text": "Dain."
@@ -350,6 +257,7 @@
         "name": "Dain",
         "text": "*Dain stops, but she can't bring herself to smile.* ...What."
     },
+    "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
         "name": "{name}",
         "text": "Yuna."
@@ -386,7 +294,103 @@
         "name": "Yuna",
         "text": "*Yuna slowly turns around. Her arms tighten around the book she's holding.* ...What."
     },
+    "after5_last_chance_choice": {
+        "name": "{name}",
+        "text": "*If not now, there's no chance.*",
+        "choices": [
+            "This time, I'll confess",
+            "...I couldn't say anything"
+        ]
+    },
+    "after5_confess_yes": {
+        "name": "{name}",
+        "text": "*I almost ran away again. Like at my old school. That moment of putting the phone in my pocket and not being able to say anything almost came back. — No. Not this time.*"
+    },
+    "after5_confess_yes_2": {
+        "name": "{name}",
+        "text": "Hey — I have something to tell you."
+    },
     "after5_confess_aff_seo": {},
+    "after5_confess_react_seo": {
+        "name": "Seoyeon",
+        "text": "*Walking side by side.* ...You're late. But — not too late. Because you came back instead of running."
+    },
+    "after5_confess_react_seo_low": {
+        "name": "Seoyeon",
+        "text": "*She stays silent for a long moment.* ...Thanks. But I don't think I can pretend one sentence fixes everything."
+    },
     "after5_confess_aff_dain": {},
-    "after5_confess_aff_yuna": {}
+    "after5_confess_react_dain": {
+        "name": "Dain",
+        "text": "*Leaving the school.* Wait, for real?! ...For real? I — I've been waiting. Since yesterday. No, since the day before."
+    },
+    "after5_confess_react_dain_low": {
+        "name": "Dain",
+        "text": "*She takes a breath.* ...I heard you. But I can't smile right away yet."
+    },
+    "after5_confess_aff_yuna": {},
+    "after5_confess_react_yuna": {
+        "name": "Yuna",
+        "text": "*We walked side by side.* ...I already knew. ...If you read it, that's enough."
+    },
+    "after5_confess_react_yuna_call": {
+        "name": "{name}",
+        "text": "Yuna."
+    },
+    "after5_confess_react_yuna_ins": {
+        "name": "{name}",
+        "text": "*Yuna sets down her book. Her expression doesn't change. — But her hands are trembling.*"
+    },
+    "after5_confess_react_yuna_ins2": {
+        "name": "Yuna",
+        "text": "...I already knew."
+    },
+    "after5_confess_react_yuna_ins3": {
+        "name": "{name}",
+        "text": "*She hands me a note. Folded paper. One line when unfolded.*"
+    },
+    "after5_confess_react_yuna_ins4": {
+        "name": "{name}",
+        "text": "*'I waited. — A long time.'*"
+    },
+    "after5_confess_react_yuna_ins5": {
+        "name": "{name}",
+        "text": "*One line, but the ink is smeared. — She was crying as she wrote it.*"
+    },
+    "after5_confess_react_yuna_ins6": {
+        "name": "Yuna",
+        "text": "...If you read it, that's enough."
+    },
+    "after5_confess_react_yuna_ins7": {
+        "name": "{name}",
+        "text": "*We walked side by side. In silence.*"
+    },
+    "after5_confess_react_yuna_ins8": {
+        "name": "{name}",
+        "text": "*And so — we walked beyond the school.*"
+    },
+    "after5_confess_react_yuna_low": {
+        "name": "Yuna",
+        "text": "*She folds the note in her hand.* ...I read it. But I still can't decide on the ending."
+    },
+    "after5_confess_fail_walk_1": {
+        "name": "{name}",
+        "text": "*No more words came. As the sun sank lower, we just walked in the same direction for a while.*"
+    },
+    "after5_confess_fail_walk_2": {
+        "name": "{name}",
+        "text": "*With no answer yet between us, our steps carried us to the park.*"
+    },
+    "after5_confess_no": {
+        "name": "{name}",
+        "text": "*My lips won't move. Again. — Again, I couldn't say it.*"
+    },
+    "after5_confess_no_2": {
+        "name": "{name}",
+        "text": "*The evening breeze blows in. The shadow behind me grows longer. — I'm alone.*"
+    },
+    "after5_confess_no_2b": {
+        "name": "{name}",
+        "text": "*I went back home.*"
+    }
 }
