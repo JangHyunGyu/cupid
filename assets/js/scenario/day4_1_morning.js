@@ -22,72 +22,72 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "minsu_cheer_1_ins": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_1_ins2"
     },
     "minsu_cheer_1_ins2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_1_ins3"
     },
     "minsu_cheer_1_ins3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_1_ins4"
     },
     "minsu_cheer_1_ins4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_1_ins5"
     },
     "minsu_cheer_1_ins5": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_1_ins6"
     },
     "minsu_cheer_1_ins6": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_1_ins7"
     },
     "minsu_cheer_1_ins7": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_2"
     },
     "minsu_cheer_2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_3"
     },
     "minsu_cheer_3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_4"
     },
     "minsu_cheer_4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_4_ins"
     },
     "minsu_cheer_4_ins": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_4_ins2"
     },
     "minsu_cheer_4_ins2": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_4_ins3"
     },
     "minsu_cheer_4_ins3": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_4_ins4"
     },
     "minsu_cheer_4_ins4": {
         "background": "assets/images/background/room_my.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "morning4_start_2"
     },
     "morning4_start_2": {
