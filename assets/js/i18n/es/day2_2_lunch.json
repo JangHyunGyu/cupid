@@ -576,8 +576,8 @@
         "text": "*Como si nada* Era un grano de arroz."
     },
     "lunch2_dain_13_ins": {
-        "name": "Dain",
-        "text": "¡No— no me importa! ¡Para nada! *Da un gran mordisco al soboro* ¡¡Solo preguntaba!!"
+        "name": "{name}",
+        "text": "*Dain da un mordisco exageradamente grande a su soboro. Como si la pregunta de hace un momento no hubiera sido gran cosa.*"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",

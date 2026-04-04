@@ -7721,8 +7721,8 @@
     },
     "lunch2_dain_13_ins": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_13_ins",
-      "_ko_name": "다인",
-      "_ko_text_preview": "신— 신경 쓰이긴! 뭘! *소보로를 크게 한 입 베어 물며* 그냥 물어본...",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 괜히 소보로를 크게 한 입 베어 문다. 방금 질문이 별거 아니...",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_13_ins",
