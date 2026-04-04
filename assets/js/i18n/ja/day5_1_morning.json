@@ -165,14 +165,8 @@
         "name": "保健室の先生",
         "text": "わかってる。ただ口実が必要だったの。"
     },
-    "hidden_nurse_d5_7": {
-        "name": "{name}",
-        "text": "*絆創膏に小さな文字が書いてある。『卒業したら保健室じゃなくてカフェで会おう — ♥』*"
-    },
-    "hidden_nurse_d5_7_both": {
-        "name": "{name}",
-        "text": "*絆創膏に小さな文字が書いてある。『卒業したら保健室じゃなくてカフェで会おう — ♥』*"
-    },
+    "hidden_nurse_d5_7": {},
+    "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "保健室の先生",
         "text": "*保健先生と保健室の前で最後の会話。*",

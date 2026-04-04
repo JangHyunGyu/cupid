@@ -165,14 +165,8 @@
         "name": "Schulkrankenschwester",
         "text": "Ich weiß. Ich brauchte nur eine Ausrede."
     },
-    "hidden_nurse_d5_7": {
-        "name": "{name}",
-        "text": "*Auf dem Pflaster steht in kleiner Schrift: 'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♥'*"
-    },
-    "hidden_nurse_d5_7_both": {
-        "name": "{name}",
-        "text": "*Auf dem Pflaster steht in kleiner Schrift: 'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♥'*"
-    },
+    "hidden_nurse_d5_7": {},
+    "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Schulkrankenschwester",
         "text": "*Letztes Gespräch mit der Schulkrankenschwester vor dem Krankenzimmer.*",

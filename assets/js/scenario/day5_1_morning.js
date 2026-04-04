@@ -539,14 +539,12 @@ Object.assign(SCENARIO[5], {
     },
     "hidden_nurse_d5_7": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
         "setFlags": ["nurse_day5"],
         "stats": {"Nurse":{"affinity":7}},
         "next": "hidden_nurse_d5_freetalk"
     },
     "hidden_nurse_d5_7_both": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
         "setFlags": ["nurse_day5","both_hidden_day5"],
         "stats": {"Nurse":{"affinity":7}},
         "next": "hidden_nurse_d5_freetalk"

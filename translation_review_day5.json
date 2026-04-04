@@ -1383,8 +1383,8 @@
     },
     "hidden_nurse_d5_7": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_nurse_d5_7",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자...",
+      "_ko_name": "",
+      "_ko_text_preview": "",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_nurse_d5_7",
@@ -1419,8 +1419,8 @@
     },
     "hidden_nurse_d5_7_both": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_nurse_d5_7_both",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*",
+      "_ko_name": "",
+      "_ko_text_preview": "",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_nurse_d5_7_both",

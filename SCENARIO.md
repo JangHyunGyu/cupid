@@ -20472,8 +20472,7 @@
 - 스탯: Nurse +7
 - 다음: `hidden_nurse_d5_freetalk`
 
-- 캐릭터: `nurse_normal.png`
-**{name}**: *밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*
+<!-- i18n -->
 
 ---
 
@@ -20483,8 +20482,7 @@
 - 스탯: Nurse +7
 - 다음: `hidden_nurse_d5_freetalk`
 
-- 캐릭터: `nurse_normal.png`
-**{name}**: *밴드에 작은 글씨가 적혀 있다. '졸업하면 보건실 말고 카페에서 만나자 — ♡'*
+<!-- i18n -->
 
 ---
 

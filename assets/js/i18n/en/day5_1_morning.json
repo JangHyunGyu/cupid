@@ -165,14 +165,8 @@
         "name": "School Nurse",
         "text": "I know. I just needed an excuse."
     },
-    "hidden_nurse_d5_7": {
-        "name": "{name}",
-        "text": "*There's small writing on the bandage. 'After graduation, let's meet at a cafe instead of the nurse's office — ♥'*"
-    },
-    "hidden_nurse_d5_7_both": {
-        "name": "{name}",
-        "text": "*There's small writing on the bandage. 'After graduation, let's meet at a cafe instead of the nurse's office — ♥'*"
-    },
+    "hidden_nurse_d5_7": {},
+    "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "School Nurse",
         "text": "*Last conversation with the school nurse outside her office.*",

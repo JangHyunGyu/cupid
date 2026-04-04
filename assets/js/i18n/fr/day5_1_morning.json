@@ -165,14 +165,8 @@
         "name": "Infirmière scolaire",
         "text": "Je sais. J'avais juste besoin d'une excuse."
     },
-    "hidden_nurse_d5_7": {
-        "name": "{name}",
-        "text": "*Il y a une petite inscription sur le pansement. 'Après le diplôme, on se retrouve au café et pas à l'infirmerie — ♥'*"
-    },
-    "hidden_nurse_d5_7_both": {
-        "name": "{name}",
-        "text": "*Il y a une petite inscription sur le pansement. 'Après le diplôme, on se retrouve au café et pas à l'infirmerie — ♥'*"
-    },
+    "hidden_nurse_d5_7": {},
+    "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Infirmière scolaire",
         "text": "*Dernière conversation avec l'infirmière devant l'infirmerie.*",
