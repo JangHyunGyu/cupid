@@ -460,12 +460,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "pre_confess_minsu": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_smirk.png","opacity":0.35}},
         "next": "pre_confess_minsu_2"
     },
     "pre_confess_minsu_2": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/minsu_smirk.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_smirk.png","opacity":0.35}},
         "next": "pre_confess_callback"
     },
     "pre_confess_callback": {

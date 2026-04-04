@@ -16003,7 +16003,7 @@
 - 배경: `street.png`
 - 다음: `pre_confess_minsu_2`
 
-- 캐릭터: `minsu_smirk.png`
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **민수**: 야, 데이트 중이지? 한마디만 할게
 
 ---
@@ -16012,7 +16012,7 @@
 - 배경: `street.png`
 - 다음: `pre_confess_callback`
 
-- 캐릭터: `minsu_smirk.png`
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **민수**: 이번엔 제대로 해. 도망치지 말고
 
 ---
