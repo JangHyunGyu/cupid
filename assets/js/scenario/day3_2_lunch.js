@@ -7,7 +7,8 @@
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[3]) SCENARIO[3] = {};
 
-Object.assign(SCENARIO[3], {
+(() => {
+    const scenes = {
     "lunch3_start": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
@@ -519,4 +520,14 @@ Object.assign(SCENARIO[3], {
         "character": null,
         "next": "after3_start"
     }
-});
+    };
+    for (const scene of Object.values(scenes)) {
+        if (scene && typeof scene === 'object') {
+            Object.defineProperty(scene, "__sourceFile", {
+                value: "day3_2_lunch",
+                enumerable: false
+            });
+        }
+    }
+    Object.assign(SCENARIO[3], scenes);
+})();

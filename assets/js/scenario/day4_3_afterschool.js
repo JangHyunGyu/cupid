@@ -7,144 +7,8 @@
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[4]) SCENARIO[4] = {};
 
-if (typeof SCENARIO_FILE_META === 'undefined') var SCENARIO_FILE_META = {};
-Object.assign(SCENARIO_FILE_META, {
-    "day4_3_afterschool": {"sunset":true}
-});
-
-if (typeof SCENARIO_FILE_MAP === 'undefined') var SCENARIO_FILE_MAP = {};
-Object.assign(SCENARIO_FILE_MAP, {
-    "confess_seo_1": "day4_3_afterschool",
-    "confess_seo_2": "day4_3_afterschool",
-    "confess_seo_3": "day4_3_afterschool",
-    "confess_seo_3b": "day4_3_afterschool",
-    "confess_seo_4": "day4_3_afterschool",
-    "confess_seo_4_ins": "day4_3_afterschool",
-    "confess_seo_5": "day4_3_afterschool",
-    "confess_seo_choice": "day4_3_afterschool",
-    "confess_seo_yes_1": "day4_3_afterschool",
-    "confess_seo_yes_2": "day4_3_afterschool",
-    "confess_seo_yes_3": "day4_3_afterschool",
-    "confess_seo_yes_4": "day4_3_afterschool",
-    "confess_seo_yes_5": "day4_3_afterschool",
-    "confess_seo_yes_6": "day4_3_afterschool",
-    "confess_seo_yes_7": "day4_3_afterschool",
-    "confess_seo_yes_8": "day4_3_afterschool",
-    "confess_seo_yes_9": "day4_3_afterschool",
-    "confess_seo_yes_10": "day4_3_afterschool",
-    "confess_seo_yes_11": "day4_3_afterschool",
-    "confess_seo_yes_11_ins": "day4_3_afterschool",
-    "confess_seo_yes_12": "day4_3_afterschool",
-    "confess_seo_no_1": "day4_3_afterschool",
-    "confess_seo_no_2": "day4_3_afterschool",
-    "confess_seo_no_3": "day4_3_afterschool",
-    "confess_seo_no_4": "day4_3_afterschool",
-    "confess_seo_no_4_ins": "day4_3_afterschool",
-    "confess_yuna_1": "day4_3_afterschool",
-    "confess_yuna_2": "day4_3_afterschool",
-    "confess_yuna_3": "day4_3_afterschool",
-    "confess_yuna_3b": "day4_3_afterschool",
-    "confess_yuna_4": "day4_3_afterschool",
-    "confess_yuna_5": "day4_3_afterschool",
-    "confess_yuna_choice": "day4_3_afterschool",
-    "confess_yuna_yes_1": "day4_3_afterschool",
-    "confess_yuna_yes_2": "day4_3_afterschool",
-    "confess_yuna_yes_3": "day4_3_afterschool",
-    "confess_yuna_yes_3_ins": "day4_3_afterschool",
-    "confess_yuna_yes_4": "day4_3_afterschool",
-    "confess_yuna_yes_5": "day4_3_afterschool",
-    "confess_yuna_yes_6": "day4_3_afterschool",
-    "confess_yuna_yes_6_ins": "day4_3_afterschool",
-    "confess_yuna_yes_7": "day4_3_afterschool",
-    "confess_yuna_yes_8": "day4_3_afterschool",
-    "confess_yuna_yes_8_ins": "day4_3_afterschool",
-    "confess_yuna_yes_8_ins2": "day4_3_afterschool",
-    "confess_yuna_yes_9": "day4_3_afterschool",
-    "confess_yuna_yes_9_ins": "day4_3_afterschool",
-    "confess_yuna_no_1": "day4_3_afterschool",
-    "confess_yuna_no_2": "day4_3_afterschool",
-    "confess_yuna_no_3": "day4_3_afterschool",
-    "confess_yuna_no_4": "day4_3_afterschool",
-    "confess_yuna_no_4_ins": "day4_3_afterschool",
-    "confess_dain_1": "day4_3_afterschool",
-    "confess_dain_2": "day4_3_afterschool",
-    "confess_dain_3": "day4_3_afterschool",
-    "confess_dain_3b": "day4_3_afterschool",
-    "confess_dain_4": "day4_3_afterschool",
-    "confess_dain_5": "day4_3_afterschool",
-    "confess_dain_choice": "day4_3_afterschool",
-    "confess_dain_yes_1": "day4_3_afterschool",
-    "confess_dain_yes_2": "day4_3_afterschool",
-    "confess_dain_yes_3": "day4_3_afterschool",
-    "confess_dain_yes_3_ins": "day4_3_afterschool",
-    "confess_dain_yes_4": "day4_3_afterschool",
-    "confess_dain_yes_5": "day4_3_afterschool",
-    "confess_dain_yes_6": "day4_3_afterschool",
-    "confess_dain_yes_7": "day4_3_afterschool",
-    "confess_dain_yes_8": "day4_3_afterschool",
-    "confess_dain_yes_8_ins": "day4_3_afterschool",
-    "confess_dain_yes_9": "day4_3_afterschool",
-    "confess_dain_yes_9_ins": "day4_3_afterschool",
-    "confess_dain_yes_10": "day4_3_afterschool",
-    "confess_dain_yes_10_ins": "day4_3_afterschool",
-    "confess_dain_no_1": "day4_3_afterschool",
-    "confess_dain_no_2": "day4_3_afterschool",
-    "confess_dain_no_3": "day4_3_afterschool",
-    "confess_dain_no_4": "day4_3_afterschool",
-    "confess_dain_no_4_ins": "day4_3_afterschool",
-    "confess_dain_no_4_ins2": "day4_3_afterschool",
-    "confess_dain_no_4_ins3": "day4_3_afterschool",
-    "confess_dain_no_4_ins4": "day4_3_afterschool",
-    "confess_dain_no_4_ins5": "day4_3_afterschool",
-    "confess_dain_no_4_ins6": "day4_3_afterschool",
-    "confess_dain_no_4_ins7": "day4_3_afterschool",
-    "confess_dain_no_4_ins8": "day4_3_afterschool",
-    "confess_dain_no_4_ins9": "day4_3_afterschool",
-    "confess_dain_no_4_ins10": "day4_3_afterschool",
-    "confess_dain_no_4_ins11": "day4_3_afterschool",
-    "confess_dain_no_4_ins12": "day4_3_afterschool",
-    "confess_dain_no_4_ins13": "day4_3_afterschool",
-    "confess_dain_no_4_ins14": "day4_3_afterschool",
-    "confess_dain_no_4_ins15": "day4_3_afterschool",
-    "confess_dain_no_4_ins16": "day4_3_afterschool",
-    "confess_dain_no_4_ins17": "day4_3_afterschool",
-    "confess_dain_no_4_ins18": "day4_3_afterschool",
-    "confess_dain_no_4_ins19": "day4_3_afterschool",
-    "confess_dain_no_4_ins20": "day4_3_afterschool",
-    "confess_dain_no_4_ins21": "day4_3_afterschool",
-    "confess_dain_no_4_ins22": "day4_3_afterschool",
-    "confess_dain_no_4_ins23": "day4_3_afterschool",
-    "confess_dain_no_4_ins24": "day4_3_afterschool",
-    "confess_dain_no_4_ins25": "day4_3_afterschool",
-    "confess_dain_no_4_ins26": "day4_3_afterschool",
-    "confess_dain_no_4_ins27": "day4_3_afterschool",
-    "confess_dain_no_4_ins28": "day4_3_afterschool",
-    "confess_dain_no_4_ins29": "day4_3_afterschool",
-    "confess_dain_no_4_ins30": "day4_3_afterschool",
-    "confess_dain_no_4_ins31": "day4_3_afterschool",
-    "confess_dain_no_4_ins32": "day4_3_afterschool",
-    "confess_dain_no_4_ins33": "day4_3_afterschool",
-    "confess_dain_no_4_ins34": "day4_3_afterschool",
-    "confess_dain_no_4_ins35": "day4_3_afterschool",
-    "confess_dain_no_4_ins36": "day4_3_afterschool",
-    "confess_dain_no_4_ins37": "day4_3_afterschool",
-    "confess_dain_no_4_ins38": "day4_3_afterschool",
-    "confess_dain_no_4_ins39": "day4_3_afterschool",
-    "confess_dain_no_4_ins40": "day4_3_afterschool",
-    "confess_dain_no_4_ins41": "day4_3_afterschool",
-    "confess_dain_no_4_ins42": "day4_3_afterschool",
-    "confess_dain_no_4_ins43": "day4_3_afterschool",
-    "confess_dain_no_4_ins44": "day4_3_afterschool",
-    "confess_dain_no_4_nurse_skip": "day4_3_afterschool",
-    "confess_dain_no_4_ins45": "day4_3_afterschool",
-    "confess_dain_no_4_ins46": "day4_3_afterschool",
-    "confess_dain_no_4_ins47": "day4_3_afterschool",
-    "confess_dain_no_4_ins48": "day4_3_afterschool",
-    "confess_dain_no_4_ins49": "day4_3_afterschool",
-    "confess_dain_no_4_ins50": "day4_3_afterschool"
-});
-
-Object.assign(SCENARIO[4], {
+(() => {
+    const scenes = {
     "confess_seo_1": {
         "background": "assets/images/background/top_school.png",
         "character": null,
@@ -820,4 +684,14 @@ Object.assign(SCENARIO[4], {
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "day4_night_start"
     }
-});
+    };
+    for (const scene of Object.values(scenes)) {
+        if (scene && typeof scene === 'object') {
+            Object.defineProperty(scene, "__sourceFile", {
+                value: "day4_3_afterschool",
+                enumerable: false
+            });
+        }
+    }
+    Object.assign(SCENARIO[4], scenes);
+})();

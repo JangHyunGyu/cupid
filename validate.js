@@ -17,16 +17,14 @@ const IMAGES_DIR = path.join(__dirname, 'assets/images');
 
 // ===== Load Scenarios =====
 var SCENARIO = {};
-var SCENARIO_FILE_MAP = {};
-var SCENARIO_FILE_META = {};
 for (let i = 0; i <= 5; i++) SCENARIO[i] = {};
 
 const scenarioFiles = fs.readdirSync(SCENARIO_DIR).filter(f => /^day\d/.test(f) && f.endsWith('.js'));
 for (const file of scenarioFiles) {
     const content = fs.readFileSync(path.join(SCENARIO_DIR, file), 'utf8');
     try {
-        const fn = new Function('SCENARIO', 'SCENARIO_FILE_MAP', 'SCENARIO_FILE_META', 'Object', content);
-        fn(SCENARIO, SCENARIO_FILE_MAP, SCENARIO_FILE_META, Object);
+        const fn = new Function('SCENARIO', 'Object', content);
+        fn(SCENARIO, Object);
     } catch (e) {
         console.error('Error loading ' + file + ': ' + e.message);
     }
@@ -204,9 +202,8 @@ for (const [ftId, { scene: ftScene, predecessors }] of Object.entries(freeTalkSc
 
 // ===== 5. Night Freetalk missing night flag =====
 for (const [sceneId, { scene }] of Object.entries(allScenes)) {
-    const sourceFile = SCENARIO_FILE_MAP[sceneId] || '';
-    const fileMeta = SCENARIO_FILE_META[sourceFile] || {};
-    const nightFromFile = scene.type === 'free_talk' && !!fileMeta.night;
+    const sourceFile = scene.__sourceFile || '';
+    const nightFromFile = scene.type === 'free_talk' && /_night$/.test(sourceFile);
     if (scene.type === 'free_talk' && /night/i.test(sceneId) && !scene.night && !nightFromFile) {
         errors.push('[NIGHT_FLAG] ' + sceneId + ': night freetalk missing night filter metadata');
     }
@@ -1862,7 +1859,8 @@ let renderIssues = 0;
 
 // RD-1: 밤 메신저 씬 opacity 검사 — room_my + night + NPC 화자 + opacity 없음
 for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
-    if (!scene.night || !scene.background) continue;
+    const nightFromFile = scene.type === 'free_talk' && /_night$/.test(scene.__sourceFile || '');
+    if ((!scene.night && !nightFromFile) || !scene.background) continue;
     if (!scene.background.includes('room_my')) continue;
     if (scene.type === 'free_talk') continue;
 
@@ -1929,16 +1927,15 @@ function extractRenderInfo(sceneId) {
     const charShort = character ? character.replace(/assets\/images\/characters\//g, '').replace(/\.png/g, '') : '없음';
     const bgShort = scene.background ? scene.background.replace('assets/images/background/', '').replace(/\.(png|jpg)/, '') : '없음';
 
-    const sourceFile = SCENARIO_FILE_MAP[sceneId] || '';
-    const fileMeta = SCENARIO_FILE_META[sourceFile] || {};
+    const sourceFile = scene.__sourceFile || '';
 
     return {
         sceneId, day: entry.day,
         speaker: i18n.name || null,
         text: i18n.text || null,
         background: bgShort, character: charShort, opacity,
-        night: !!scene.night || (!!fileMeta.night && scene.type === 'free_talk'),
-        sunset: !!scene.sunset || !!fileMeta.sunset,
+        night: !!scene.night || (scene.type === 'free_talk' && /_night$/.test(sourceFile)),
+        sunset: !!scene.sunset || /_3_afterschool$/.test(sourceFile),
         type: scene.type || 'dialogue',
     };
 }

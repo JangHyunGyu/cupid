@@ -425,41 +425,10 @@ function parseStats(str) {
 function generateJS(baseName, scenes) {
     const dayNum = parseInt(baseName.match(/day(\d)/)[1]);
     const entries = [];
-    const fileMapEntries = [];
-    const fileMeta = {};
-    const isNightFile = /_night$/.test(baseName);
-    const isSunsetFile = /_(afternoon|afterschool)$/.test(baseName);
-
-    if (isNightFile) fileMeta.night = true;
-    if (isSunsetFile) fileMeta.sunset = true;
 
     for (const [id, scene] of scenes) {
         entries.push(`    ${JSON.stringify(id)}: ${formatSceneJS(scene)}`);
-        const needsNightFileMap = isNightFile && scene.type === 'free_talk' && /night/i.test(id);
-        const needsSunsetFileMap = isSunsetFile;
-        if (needsNightFileMap || needsSunsetFileMap) {
-            fileMapEntries.push(`    ${JSON.stringify(id)}: ${JSON.stringify(baseName)}`);
-        }
     }
-
-    const fileMetaBlock = fileMapEntries.length && Object.keys(fileMeta).length
-        ? `if (typeof SCENARIO_FILE_META === 'undefined') var SCENARIO_FILE_META = {};
-Object.assign(SCENARIO_FILE_META, {
-    ${JSON.stringify(baseName)}: ${JSON.stringify(fileMeta)}
-});
-`
-        : null;
-
-    const fileMapBlock = fileMapEntries.length
-        ? `if (typeof SCENARIO_FILE_MAP === 'undefined') var SCENARIO_FILE_MAP = {};
-Object.assign(SCENARIO_FILE_MAP, {
-${fileMapEntries.join(',\n')}
-});
-`
-        : null;
-
-    const fileMetaSection = fileMetaBlock ? `${fileMetaBlock}\n` : '';
-    const fileMapSection = fileMapBlock ? `${fileMapBlock}\n` : '';
 
     const code = `/**
  * ============================================================================
@@ -470,9 +439,20 @@ ${fileMapEntries.join(',\n')}
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[${dayNum}]) SCENARIO[${dayNum}] = {};
 
-${fileMetaSection}${fileMapSection}Object.assign(SCENARIO[${dayNum}], {
+(() => {
+    const scenes = {
 ${entries.join(',\n')}
-});
+    };
+    for (const scene of Object.values(scenes)) {
+        if (scene && typeof scene === 'object') {
+            Object.defineProperty(scene, "__sourceFile", {
+                value: ${JSON.stringify(baseName)},
+                enumerable: false
+            });
+        }
+    }
+    Object.assign(SCENARIO[${dayNum}], scenes);
+})();
 `;
     return code;
 }

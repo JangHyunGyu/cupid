@@ -7,19 +7,8 @@
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[2]) SCENARIO[2] = {};
 
-if (typeof SCENARIO_FILE_META === 'undefined') var SCENARIO_FILE_META = {};
-Object.assign(SCENARIO_FILE_META, {
-    "day2_4_night": {"night":true}
-});
-
-if (typeof SCENARIO_FILE_MAP === 'undefined') var SCENARIO_FILE_MAP = {};
-Object.assign(SCENARIO_FILE_MAP, {
-    "night2_dain_freetalk": "day2_4_night",
-    "night2_seo_freetalk": "day2_4_night",
-    "night2_yuna_freetalk": "day2_4_night"
-});
-
-Object.assign(SCENARIO[2], {
+(() => {
+    const scenes = {
     "night2_start": {
         "background": "assets/images/background/room_my.png",
         "character": null,
@@ -439,4 +428,14 @@ Object.assign(SCENARIO[2], {
         "character": null,
         "next": "morning3_start"
     }
-});
+    };
+    for (const scene of Object.values(scenes)) {
+        if (scene && typeof scene === 'object') {
+            Object.defineProperty(scene, "__sourceFile", {
+                value: "day2_4_night",
+                enumerable: false
+            });
+        }
+    }
+    Object.assign(SCENARIO[2], scenes);
+})();
