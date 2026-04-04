@@ -5361,7 +5361,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_dain_10`
 
-- 캐릭터: `dain_pout.png`
+- 캐릭터: `seyoun_normal.png`
 **{name}**: *빵을 사서 복도 창가 쪽에 선다. — 그때 서연이 지나간다. 도시락 가방을 들고.*
 
 ---
@@ -5370,7 +5370,7 @@
 - 배경: `school_hallway.png`
 - 다음: `lunch2_dain_11`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `seyoun_pout.png`
 **{name}**: *서연이 이쪽을 본다. 다인 옆에 서서 빵을 먹고 있는 나를 — 한 번 보고 지나간다. 가슴이 찔렸다.*
 
 ---

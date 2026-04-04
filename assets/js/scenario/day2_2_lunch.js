@@ -415,12 +415,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "lunch2_dain_9": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_pout.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch2_dain_10"
     },
     "lunch2_dain_10": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/seyoun_pout.png",
         "next": "lunch2_dain_11"
     },
     "lunch2_dain_11": {
