@@ -7,6 +7,11 @@
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[1]) SCENARIO[1] = {};
 
+if (typeof SCENARIO_FILE_META === 'undefined') var SCENARIO_FILE_META = {};
+Object.assign(SCENARIO_FILE_META, {
+    "day1_4_night": {"night":true}
+});
+
 if (typeof SCENARIO_FILE_MAP === 'undefined') var SCENARIO_FILE_MAP = {};
 Object.assign(SCENARIO_FILE_MAP, {
     "night_seo_freetalk": "day1_4_night",

@@ -958,11 +958,18 @@ class GameEngine {
         // sunset: true → 주황색 노을 필터
         // 엔딩 CG 씬은 night 필터 비활성화 (CG 자체가 완성된 장면이므로)
         const isEndingCG = scene.background && scene.background.includes('ending_');
-        const nightFromFile = typeof SCENARIO_FILE_MAP !== 'undefined'
-            && scene.type === 'free_talk'
-            && /_night$/.test(SCENARIO_FILE_MAP[sceneId] || '');
+        const sourceFile = typeof SCENARIO_FILE_MAP !== 'undefined' ? SCENARIO_FILE_MAP[sceneId] : null;
+        const fileMeta = (typeof SCENARIO_FILE_META !== 'undefined' && sourceFile)
+            ? SCENARIO_FILE_META[sourceFile]
+            : null;
+        const nightFromFile = !!(fileMeta && fileMeta.night) && scene.type === 'free_talk';
+        const sunsetFromFile = !!(fileMeta && fileMeta.sunset);
         const isNightScene = !!scene.night || nightFromFile;
-        this.sceneRenderer.setTimeFilter(isEndingCG ? false : isNightScene, scene.sunset);
+        const isSunsetScene = !!scene.sunset || sunsetFromFile;
+        this.sceneRenderer.setTimeFilter(
+            isEndingCG ? false : isNightScene,
+            isEndingCG ? false : isSunsetScene
+        );
 
         // ─────────────────────────────────────────────────────────────
         // 📳 7.5단계: 메시지 씬 진동 효과

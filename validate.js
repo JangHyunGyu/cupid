@@ -18,14 +18,15 @@ const IMAGES_DIR = path.join(__dirname, 'assets/images');
 // ===== Load Scenarios =====
 var SCENARIO = {};
 var SCENARIO_FILE_MAP = {};
+var SCENARIO_FILE_META = {};
 for (let i = 0; i <= 5; i++) SCENARIO[i] = {};
 
 const scenarioFiles = fs.readdirSync(SCENARIO_DIR).filter(f => /^day\d/.test(f) && f.endsWith('.js'));
 for (const file of scenarioFiles) {
     const content = fs.readFileSync(path.join(SCENARIO_DIR, file), 'utf8');
     try {
-        const fn = new Function('SCENARIO', 'SCENARIO_FILE_MAP', 'Object', content);
-        fn(SCENARIO, SCENARIO_FILE_MAP, Object);
+        const fn = new Function('SCENARIO', 'SCENARIO_FILE_MAP', 'SCENARIO_FILE_META', 'Object', content);
+        fn(SCENARIO, SCENARIO_FILE_MAP, SCENARIO_FILE_META, Object);
     } catch (e) {
         console.error('Error loading ' + file + ': ' + e.message);
     }
@@ -203,9 +204,11 @@ for (const [ftId, { scene: ftScene, predecessors }] of Object.entries(freeTalkSc
 
 // ===== 5. Night Freetalk missing night flag =====
 for (const [sceneId, { scene }] of Object.entries(allScenes)) {
-    const nightFromFile = scene.type === 'free_talk' && /_night$/.test(SCENARIO_FILE_MAP[sceneId] || '');
+    const sourceFile = SCENARIO_FILE_MAP[sceneId] || '';
+    const fileMeta = SCENARIO_FILE_META[sourceFile] || {};
+    const nightFromFile = scene.type === 'free_talk' && !!fileMeta.night;
     if (scene.type === 'free_talk' && /night/i.test(sceneId) && !scene.night && !nightFromFile) {
-        errors.push('[NIGHT_FLAG] ' + sceneId + ': night freetalk missing "night": true');
+        errors.push('[NIGHT_FLAG] ' + sceneId + ': night freetalk missing night filter metadata');
     }
 }
 
@@ -1926,12 +1929,16 @@ function extractRenderInfo(sceneId) {
     const charShort = character ? character.replace(/assets\/images\/characters\//g, '').replace(/\.png/g, '') : '없음';
     const bgShort = scene.background ? scene.background.replace('assets/images/background/', '').replace(/\.(png|jpg)/, '') : '없음';
 
+    const sourceFile = SCENARIO_FILE_MAP[sceneId] || '';
+    const fileMeta = SCENARIO_FILE_META[sourceFile] || {};
+
     return {
         sceneId, day: entry.day,
         speaker: i18n.name || null,
         text: i18n.text || null,
         background: bgShort, character: charShort, opacity,
-        night: !!scene.night, sunset: !!scene.sunset,
+        night: !!scene.night || (!!fileMeta.night && scene.type === 'free_talk'),
+        sunset: !!scene.sunset || !!fileMeta.sunset,
         type: scene.type || 'dialogue',
     };
 }

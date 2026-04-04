@@ -426,13 +426,31 @@ function generateJS(baseName, scenes) {
     const dayNum = parseInt(baseName.match(/day(\d)/)[1]);
     const entries = [];
     const fileMapEntries = [];
+    const firstScene = scenes.values().next().value || null;
+    const fileMeta = {};
+    const isNightFile = /_night$/.test(baseName);
+    // Files that open with sunset BGM are treated as full-file sunset scenes.
+    const isSunsetFile = !!(firstScene && typeof firstScene.bgm === 'string' && /^sunset/i.test(firstScene.bgm));
+
+    if (isNightFile) fileMeta.night = true;
+    if (isSunsetFile) fileMeta.sunset = true;
 
     for (const [id, scene] of scenes) {
         entries.push(`    ${JSON.stringify(id)}: ${formatSceneJS(scene)}`);
-        if (scene.type === 'free_talk' && /night/i.test(id)) {
+        const needsNightFileMap = isNightFile && scene.type === 'free_talk' && /night/i.test(id);
+        const needsSunsetFileMap = isSunsetFile;
+        if (needsNightFileMap || needsSunsetFileMap) {
             fileMapEntries.push(`    ${JSON.stringify(id)}: ${JSON.stringify(baseName)}`);
         }
     }
+
+    const fileMetaBlock = fileMapEntries.length && Object.keys(fileMeta).length
+        ? `if (typeof SCENARIO_FILE_META === 'undefined') var SCENARIO_FILE_META = {};
+Object.assign(SCENARIO_FILE_META, {
+    ${JSON.stringify(baseName)}: ${JSON.stringify(fileMeta)}
+});
+`
+        : null;
 
     const fileMapBlock = fileMapEntries.length
         ? `if (typeof SCENARIO_FILE_MAP === 'undefined') var SCENARIO_FILE_MAP = {};
@@ -442,6 +460,7 @@ ${fileMapEntries.join(',\n')}
 `
         : null;
 
+    const fileMetaSection = fileMetaBlock ? `${fileMetaBlock}\n` : '';
     const fileMapSection = fileMapBlock ? `${fileMapBlock}\n` : '';
 
     const code = `/**
@@ -453,7 +472,7 @@ ${fileMapEntries.join(',\n')}
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[${dayNum}]) SCENARIO[${dayNum}] = {};
 
-${fileMapSection}Object.assign(SCENARIO[${dayNum}], {
+${fileMetaSection}${fileMapSection}Object.assign(SCENARIO[${dayNum}], {
 ${entries.join(',\n')}
 });
 `;
