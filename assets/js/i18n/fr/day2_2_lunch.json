@@ -576,8 +576,8 @@
         "text": "*L'air de rien* C'était un grain de riz."
     },
     "lunch2_dain_13_ins": {
-        "name": "Dain",
-        "text": "Ça— ça ne me dérange pas ! Pas du tout ! *Mord un grand coup dans le soboro* Je demandais, c'est tout !!"
+        "name": "{name}",
+        "text": "*Dain mord exagérément dans son soboro. Comme si la question qu'elle venait de poser n'avait rien d'important.*"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",

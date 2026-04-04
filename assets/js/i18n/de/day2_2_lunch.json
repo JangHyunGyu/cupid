@@ -576,8 +576,8 @@
         "text": "*Tut so, als wäre nichts* War ein Reiskorn."
     },
     "lunch2_dain_13_ins": {
-        "name": "Dain",
-        "text": "Das— das stört mich nicht! Überhaupt nicht! *Beißt kräftig ins Soboro-Brötchen* Ich hab nur gefragt!!"
+        "name": "{name}",
+        "text": "*Dain nimmt demonstrativ einen großen Bissen von ihrem Soboro. Als wäre ihre Frage eben nichts Besonderes gewesen.*"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",

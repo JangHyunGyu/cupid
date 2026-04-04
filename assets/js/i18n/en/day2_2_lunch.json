@@ -576,8 +576,8 @@
         "text": "*Acting like nothing happened* It was a grain of rice."
     },
     "lunch2_dain_13_ins": {
-        "name": "Dain",
-        "text": "I'm— I'm not bothered! At all! *Takes a big bite of soboro* I was just asking!!"
+        "name": "{name}",
+        "text": "*Dain takes an exaggeratedly big bite of her soboro. Like the question she just asked wasn't a big deal.*"
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
