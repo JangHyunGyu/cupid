@@ -11,9 +11,17 @@
         "name": "{name}",
         "text": "*The rooftop. The sunset is painting the school in gold. The very same place I first came on Day 1.*"
     },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*The rooftop. The sunset paints the school. A place that became familiar in just a few days.*"
+    },
     "confess_seo_4": {
         "name": "{name}",
         "text": "*Seoyeon is leaning against the railing. The wind catches her hair. — She tucks it back with her pinky. That habit.*"
+    },
+    "confess_seo_4_ins": {
+        "name": "{name}",
+        "text": "*The words I couldn't say at my old school surface. This time, I'll confess.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -71,6 +79,10 @@
         "name": "Seoyeon",
         "text": "-- You have no idea how long I've been holding that in."
     },
+    "confess_seo_yes_11_ins": {
+        "name": "{name}",
+        "text": "*Seoyeon extends her pinky finger.*"
+    },
     "confess_seo_yes_12": {
         "name": "{name}",
         "text": "*Seoyeon holds out her pinky. The same pinky I saw on Day 1. -- Back then I thought it was just a habit, but this is Seoyeon's way of making a promise.*"
@@ -91,6 +103,10 @@
         "name": "Seoyeon",
         "text": "...Next time you come here, have something else to say."
     },
+    "confess_seo_no_4_ins": {
+        "name": "{name}",
+        "text": "*Her back is straight. She's trembling.*"
+    },
     "confess_yuna_1": {
         "name": "{name}",
         "text": "*The date is winding down. Yuna stops walking.*"
@@ -102,6 +118,10 @@
     "confess_yuna_3": {
         "name": "{name}",
         "text": "*The library annex. A secret reading nook. Sunset seeps through the window. The very same place I first came on Day 2.*"
+    },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*The library annex. Sunset seeps through the windows. A place that became familiar in just a few days.*"
     },
     "confess_yuna_4": {
         "name": "{name}",
@@ -131,6 +151,10 @@
         "name": "{name}",
         "text": "Yuna. At first I thought your silence was a wall. But it wasn't."
     },
+    "confess_yuna_yes_3_ins": {
+        "name": "{name}",
+        "text": "You were the person who sat beside me instead of saying anything."
+    },
     "confess_yuna_yes_4": {
         "name": "{name}",
         "text": "*In front of Yuna, I don't need a long speech. She's the kind of person who reads between the lines.*"
@@ -143,6 +167,10 @@
         "name": "{name}",
         "text": "I like you."
     },
+    "confess_yuna_yes_6_ins": {
+        "name": "{name}",
+        "text": "*I just said the longest sentence in this room. In Yuna's domain.*"
+    },
     "confess_yuna_yes_7": {
         "name": "{name}",
         "text": ""
@@ -151,9 +179,21 @@
         "name": "{name}",
         "text": "*Yuna's blank expression cracks. Her languid voice disappears, replaced by the tiniest -- almost inaudible -- whisper. She grips her sleeve tight.*"
     },
+    "confess_yuna_yes_8_ins": {
+        "name": "{name}",
+        "text": "*She grips her sleeve tight.*"
+    },
+    "confess_yuna_yes_8_ins2": {
+        "name": "Yuna",
+        "text": "...Don't go."
+    },
     "confess_yuna_yes_9": {
         "name": "Yuna",
         "text": "...Don't go. This time, don't go."
+    },
+    "confess_yuna_yes_9_ins": {
+        "name": "{name}",
+        "text": "*This time. Someone left before. Yuna is reopening that wound, and still holding onto me.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -171,6 +211,10 @@
         "name": "Yuna",
         "text": "...The ending hasn't come yet."
     },
+    "confess_yuna_no_4_ins": {
+        "name": "{name}",
+        "text": "*Three steps away, I looked back. Yuna was watching me too, over the top of her book.*"
+    },
     "confess_dain_1": {
         "name": "{name}",
         "text": "*The date is winding down. Dain runs toward the school.*"
@@ -182,6 +226,10 @@
     "confess_dain_3": {
         "name": "{name}",
         "text": "*The gym. Empty. Sunset spills through the windows onto the court. The very same place we first came together on Day 1.*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*The gym. Empty. Sunset seeps through the windows onto the court. A place where countless memories piled up in just a few days.*"
     },
     "confess_dain_4": {
         "name": "{name}",
@@ -211,6 +259,10 @@
         "name": "{name}",
         "text": "Dain. I — I have something to tell you."
     },
+    "confess_dain_yes_3_ins": {
+        "name": "{name}",
+        "text": "When your eyes aren't on me — it gets hard to breathe."
+    },
     "confess_dain_yes_4": {
         "name": "{name}",
         "text": "*It's not rock-paper-scissors, it's not a game. But this is everything to me.*"
@@ -231,13 +283,25 @@
         "name": "{name}",
         "text": "*Dain is frozen. Her energy is gone. -- Then her eyes slowly fill up. She buries her face in both hands. The blush has spread all the way to the back of her neck.*"
     },
+    "confess_dain_yes_8_ins": {
+        "name": "{name}",
+        "text": "*She covers her face with both hands. Through the gaps between her fingers, red cheeks are visible.*"
+    },
     "confess_dain_yes_9": {
         "name": "Dain",
         "text": "...Wait. I can't breathe -- I think I'm going to cry -- why am I crying, I'm happy --"
     },
+    "confess_dain_yes_9_ins": {
+        "name": "{name}",
+        "text": "*She lowers her hands and smiles. Tears are running down her face.*"
+    },
     "confess_dain_yes_10": {
         "name": "Dain",
         "text": "I like you too. So much."
+    },
+    "confess_dain_yes_10_ins": {
+        "name": "{name}",
+        "text": "*'A lot.' — Dain is always like this. Short and honest. That's why it's convincing.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
@@ -255,272 +319,8 @@
         "name": "Dain",
         "text": "...Next time, don't run away."
     },
-    "confess_yuna_3b": {
-        "name": "{name}",
-        "text": "*The library annex. Sunset seeps through the windows. A place that became familiar in just a few days.*"
-    },
-    "confess_seo_3b": {
-        "name": "{name}",
-        "text": "*The rooftop. The sunset paints the school. A place that became familiar in just a few days.*"
-    },
-    "confess_dain_3b": {
-        "name": "{name}",
-        "text": "*The gym. Empty. Sunset seeps through the windows onto the court. A place where countless memories piled up in just a few days.*"
-    },
-    "confess_seo_4_ins": {
-        "name": "{name}",
-        "text": "*The words I couldn't say at my old school surface. This time, I'll confess.*"
-    },
-    "confess_seo_yes_11_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon extends her pinky finger.*"
-    },
-    "confess_seo_no_4_ins": {
-        "name": "{name}",
-        "text": "*Her back is straight. She's trembling.*"
-    },
-    "confess_yuna_yes_3_ins": {
-        "name": "{name}",
-        "text": "You were the person who sat beside me instead of saying anything."
-    },
-    "confess_yuna_yes_6_ins": {
-        "name": "{name}",
-        "text": "*I just said the longest sentence in this room. In Yuna's domain.*"
-    },
-    "confess_yuna_yes_8_ins": {
-        "name": "{name}",
-        "text": "*She grips her sleeve tight.*"
-    },
-    "confess_yuna_yes_8_ins2": {
-        "name": "Yuna",
-        "text": "...Don't go."
-    },
-    "confess_yuna_yes_9_ins": {
-        "name": "{name}",
-        "text": "*This time. Someone left before. Yuna is reopening that wound, and still holding onto me.*"
-    },
-    "confess_yuna_no_4_ins": {
-        "name": "{name}",
-        "text": "*Three steps away, I looked back. Yuna was watching me too, over the top of her book.*"
-    },
-    "confess_dain_yes_3_ins": {
-        "name": "{name}",
-        "text": "When your eyes aren't on me — it gets hard to breathe."
-    },
-    "confess_dain_yes_8_ins": {
-        "name": "{name}",
-        "text": "*She covers her face with both hands. Through the gaps between her fingers, red cheeks are visible.*"
-    },
-    "confess_dain_yes_9_ins": {
-        "name": "{name}",
-        "text": "*She lowers her hands and smiles. Tears are running down her face.*"
-    },
-    "confess_dain_yes_10_ins": {
-        "name": "{name}",
-        "text": "*'A lot.' — Dain is always like this. Short and honest. That's why it's convincing.*"
-    },
     "confess_dain_no_4_ins": {
         "name": "{name}",
         "text": "*No exclamation marks. She means it.*"
-    },
-    "confess_dain_no_4_ins2": {
-        "name": "{name}",
-        "text": "*--- Early Morning ---*"
-    },
-    "confess_dain_no_4_ins3": {
-        "name": "{name}",
-        "text": "*Weekend, early morning. On the way to a café, I pass by the school — there's a light on in an empty classroom.*"
-    },
-    "confess_dain_no_4_ins4": {
-        "name": "{name}",
-        "text": "*The Homeroom Teacher is standing by the window. Holding a stack of manuscript pages. Morning sunlight colors the paper.*"
-    },
-    "confess_dain_no_4_ins5": {
-        "name": "Homeroom Teacher",
-        "text": "...You came."
-    },
-    "confess_dain_no_4_ins6": {
-        "name": "{name}",
-        "text": "You called me."
-    },
-    "confess_dain_no_4_ins7": {
-        "name": "Homeroom Teacher",
-        "text": "I never called you. *Pausing* ...But I knew you'd come."
-    },
-    "confess_dain_no_4_ins8": {
-        "name": "{name}",
-        "text": "*She's the kind of person who waits without calling. That's also why the manuscript stayed in a drawer for seven years.*"
-    },
-    "confess_dain_no_4_ins9": {
-        "name": "{name}",
-        "text": "*She holds out the manuscript. A title is written on the cover. One I've never seen before.*"
-    },
-    "confess_dain_no_4_ins10": {
-        "name": "Homeroom Teacher",
-        "text": "I wanted to show the last chapter... to my first reader."
-    },
-    "confess_dain_no_4_ins11": {
-        "name": "{name}",
-        "text": "The last chapter?"
-    },
-    "confess_dain_no_4_ins12": {
-        "name": "Homeroom Teacher",
-        "text": "Seven years. Three to write it, four to finish it."
-    },
-    "confess_dain_no_4_ins13": {
-        "name": "{name}",
-        "text": "*Four years to finish. Starting is easier than ending for her. Writing and feelings alike.*"
-    },
-    "confess_dain_no_4_ins14": {
-        "name": "{name}",
-        "text": "*I take the manuscript. Start reading. The teacher looks out the window. Morning light. Her fingertips tremble faintly.*"
-    },
-    "confess_dain_no_4_ins15": {
-        "name": "{name}",
-        "text": "*While I read, she doesn't say a word. Just stares out the window. But in the glass reflection, her eyes are on me.*"
-    },
-    "confess_dain_no_4_ins16": {
-        "name": "{name}",
-        "text": "*The last chapter. It ends with a single sentence. Reading that sentence, I think I understand why this manuscript took seven years.*"
-    },
-    "confess_dain_no_4_ins17": {
-        "name": "{name}",
-        "text": "...I like it. This ending."
-    },
-    "confess_dain_no_4_ins18": {
-        "name": "{name}",
-        "text": "*The tension leaves her shoulders. Very slowly.*"
-    },
-    "confess_dain_no_4_ins19": {
-        "name": "Homeroom Teacher",
-        "text": "...Really?"
-    },
-    "confess_dain_no_4_ins20": {
-        "name": "Homeroom Teacher",
-        "text": "...Yeah."
-    },
-    "confess_dain_no_4_ins21": {
-        "name": "{name}",
-        "text": "*Her voice cracked on the second yeah. The first reader's first impression. The one word she waited seven years to hear.*"
-    },
-    "confess_dain_no_4_ins22": {
-        "name": "{name}",
-        "text": "*--- Morning ---*"
-    },
-    "confess_dain_no_4_ins23": {
-        "name": "{name}",
-        "text": "*Weekend morning. Heading to the nurse's office out of habit. When did this become a habit.*"
-    },
-    "confess_dain_no_4_ins24": {
-        "name": "{name}",
-        "text": "*I open the door. The School Nurse is sitting in her chair. White coat. But something's different today. The playfulness is gone.*"
-    },
-    "confess_dain_no_4_ins25": {
-        "name": "School Nurse",
-        "text": "Oh, you're here."
-    },
-    "confess_dain_no_4_ins26": {
-        "name": "{name}",
-        "text": "*Oh, you're here is half a tone lower than usual. You have to read this person's feelings through tone.*"
-    },
-    "confess_dain_no_4_ins27": {
-        "name": "{name}",
-        "text": "Last session?"
-    },
-    "confess_dain_no_4_ins28": {
-        "name": "School Nurse",
-        "text": "Session, huh... *Turning her chair* Right. Last session."
-    },
-    "confess_dain_no_4_ins29": {
-        "name": "{name}",
-        "text": "*The School Nurse pretends to organize papers on her desk — but she's turned the same page three times.*"
-    },
-    "confess_dain_no_4_ins30": {
-        "name": "School Nurse",
-        "text": "Can I ask you something?"
-    },
-    "confess_dain_no_4_ins31": {
-        "name": "{name}",
-        "text": "What is it?"
-    },
-    "confess_dain_no_4_ins32": {
-        "name": "{name}",
-        "text": "*She touches her glasses. Behind them, her eyes are bigger than expected. Eyes that were hidden behind playfulness.*"
-    },
-    "confess_dain_no_4_ins33": {
-        "name": "School Nurse",
-        "text": "...Will you still come to the nurse's office after you graduate?"
-    },
-    "confess_dain_no_4_ins34": {
-        "name": "{name}",
-        "text": "*It's not really a question. Her face already fears the answer.*"
-    },
-    "confess_dain_no_4_ins35": {
-        "name": "{name}",
-        "text": "*I meet her eyes. The serious face without any playfulness. This is the first time she's been this unguarded.*"
-    },
-    "confess_dain_no_4_ins36": {
-        "name": "School Nurse",
-        "text": "Oh, no. It's a weird question, right? A teacher shouldn't be asking a student something like —"
-    },
-    "confess_dain_no_4_ins37": {
-        "name": "{name}",
-        "text": "I'll come."
-    },
-    "confess_dain_no_4_ins38": {
-        "name": "{name}",
-        "text": "*The School Nurse freezes. The hand fidgeting with her glasses stops.*"
-    },
-    "confess_dain_no_4_ins39": {
-        "name": "School Nurse",
-        "text": "...For real?"
-    },
-    "confess_dain_no_4_ins40": {
-        "name": "{name}",
-        "text": "*For real. Her confirmation phrase. Today I heard it first.*"
-    },
-    "confess_dain_no_4_ins41": {
-        "name": "{name}",
-        "text": "For real."
-    },
-    "confess_dain_no_4_ins42": {
-        "name": "{name}",
-        "text": "*A moment of silence. Behind the glasses, her eyes look misty. The lenses are foggy — whether from steam or tears, I can't tell.*"
-    },
-    "confess_dain_no_4_ins43": {
-        "name": "School Nurse",
-        "text": "*Brightening her tone again, though her voice trembles* Alright then. That wraps up your last consultation. I'll pencil your next visit in for after graduation."
-    },
-    "confess_dain_no_4_ins44": {
-        "name": "{name}",
-        "text": "*The playfulness is back. But under those smiling eyes, there's a trace where something ran.*"
-    },
-    "confess_dain_no_4_ins45": {
-        "name": "Seoyeon",
-        "text": "*The wind was nice today*"
-    },
-    "confess_dain_no_4_ins46": {
-        "name": "Seoyeon",
-        "text": "*...Next time, I'll be expecting different words*"
-    },
-    "confess_dain_no_4_ins47": {
-        "name": "Dain",
-        "text": "*Hey today was fun lol*"
-    },
-    "confess_dain_no_4_ins48": {
-        "name": "Dain",
-        "text": "*...But wasn't something missing?*"
-    },
-    "confess_dain_no_4_ins49": {
-        "name": "Yuna",
-        "text": "*...Today*"
-    },
-    "confess_dain_no_4_ins50": {
-        "name": "Yuna",
-        "text": "*It was okay*"
-    },
-    "confess_dain_no_4_nurse_skip": {
-        "name": "{name}",
-        "text": "*I had my last consultation at the nurse's office this morning. — Her glistening eyes are still stuck in my head.*"
     }
 }

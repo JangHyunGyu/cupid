@@ -14,6 +14,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "branches": [
             { "condition": "choose_main_over_hidden", "next": "ending_affinity_check" },
+            { "condition": "day5_last_chance_path", "next": "ending_last_chance_resolve" },
             { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
             { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
             { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
@@ -23,6 +24,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
             { "condition": "day4_waited", "next": "day5_ending_friend" },
             { "next": "day5_ending_alone" }
+        ]
+    },
+    "ending_last_chance_resolve": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "branches": [
+            { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
+            { "next": "day5_ending_friend" }
         ]
     },
     "hidden_dual_route_1": {

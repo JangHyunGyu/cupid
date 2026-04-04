@@ -11,9 +11,17 @@
         "name": "{name}",
         "text": "*屋上。夕陽が学校を染めている。Day 1で初めて来たまさにあの場所。*"
     },
+    "confess_seo_3b": {
+        "name": "{name}",
+        "text": "*屋上。夕日が学校を染めている。数日で馴染んだ場所。*"
+    },
     "confess_seo_4": {
         "name": "{name}",
         "text": "*ソヨンが手すりにもたれている。風で髪がなびく。——小指で髪を押さえる、あの癖。*"
+    },
+    "confess_seo_4_ins": {
+        "name": "{name}",
+        "text": "*前の学校で言えなかった言葉が浮かぶ。——今度は告白する。*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -71,6 +79,10 @@
         "name": "ソヨン",
         "text": "――これを言うためにどれだけ我慢したか、知らないでしょ。"
     },
+    "confess_seo_yes_11_ins": {
+        "name": "{name}",
+        "text": "*ソヨンが小指を差し出す。*"
+    },
     "confess_seo_yes_12": {
         "name": "{name}",
         "text": "*ソヨンが小指を差し出す。Day 1で見た小指。――あの時は癒しだと思っていたけど、これがソヨンの約束の仕方だった。*"
@@ -91,6 +103,10 @@
         "name": "ソヨン",
         "text": "…次に来る時は、別の言葉を準備してきて。"
     },
+    "confess_seo_no_4_ins": {
+        "name": "{name}",
+        "text": "*背筋が伸びている。震えている。*"
+    },
     "confess_yuna_1": {
         "name": "{name}",
         "text": "*デートが終わりに近づいている。ユナが足を止める。*"
@@ -102,6 +118,10 @@
     "confess_yuna_3": {
         "name": "{name}",
         "text": "*図書館別館。秘密の読書スペース。窓から夕陽が漏れてくる。Day 2で初めて来たまさにあの場所。*"
+    },
+    "confess_yuna_3b": {
+        "name": "{name}",
+        "text": "*図書館別館。窓から夕日が差し込む。数日で馴染んだ場所。*"
     },
     "confess_yuna_4": {
         "name": "{name}",
@@ -131,6 +151,10 @@
         "name": "{name}",
         "text": "ユナ。最初は君が話さないのが壁だと思ってた。でも違った。"
     },
+    "confess_yuna_yes_3_ins": {
+        "name": "{name}",
+        "text": "君は——言葉の代わりに隣に座ってくれる人だった。"
+    },
     "confess_yuna_yes_4": {
         "name": "{name}",
         "text": "*ユナの前では長い言葉はいらない。この人は行間を読む人だから。*"
@@ -143,6 +167,10 @@
         "name": "{name}",
         "text": "好きだ。"
     },
+    "confess_yuna_yes_6_ins": {
+        "name": "{name}",
+        "text": "*この部屋で一番長い文章を僕が言った。——ユナの領域で。*"
+    },
     "confess_yuna_yes_7": {
         "name": "{name}",
         "text": ""
@@ -151,9 +179,21 @@
         "name": "{name}",
         "text": "*ユナの無表情が崩れている。気だるい声が消えて、とても小さな――ほとんど聞こえない声で。袖をぎゅっと握っている。*"
     },
+    "confess_yuna_yes_8_ins": {
+        "name": "{name}",
+        "text": "*袖をぎゅっと握りしめる。*"
+    },
+    "confess_yuna_yes_8_ins2": {
+        "name": "ユナ",
+        "text": "……行かないで。"
+    },
     "confess_yuna_yes_9": {
         "name": "ユナ",
         "text": "…行かないで。今度は行かないで。"
+    },
+    "confess_yuna_yes_9_ins": {
+        "name": "{name}",
+        "text": "*今度は。——前に去った人がいた。ユナはその傷をまた開きながら、それでも僕をつかんでいる。*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -171,6 +211,10 @@
         "name": "ユナ",
         "text": "…結末はまだだよ。"
     },
+    "confess_yuna_no_4_ins": {
+        "name": "{name}",
+        "text": "*三歩離れて振り返った。ユナも本越しにこちらを見ていた。*"
+    },
     "confess_dain_1": {
         "name": "{name}",
         "text": "*デートが終わりに近づいている。ダインが学校の方へ走っていく。*"
@@ -182,6 +226,10 @@
     "confess_dain_3": {
         "name": "{name}",
         "text": "*体育館。誰もいない。夕陽が窓からコートを染めている。Day 1で初めて一緒に来たまさにあの場所。*"
+    },
+    "confess_dain_3b": {
+        "name": "{name}",
+        "text": "*体育館。誰もいない。夕日が窓からコートを染めている。数日で数えきれない思い出が積もった場所。*"
     },
     "confess_dain_4": {
         "name": "{name}",
@@ -211,6 +259,10 @@
         "name": "{name}",
         "text": "ダイン。私、— あなたに伝えたいことがあるの。"
     },
+    "confess_dain_yes_3_ins": {
+        "name": "{name}",
+        "text": "その目が僕を見てない時——ちょっと息苦しい。"
+    },
     "confess_dain_yes_4": {
         "name": "{name}",
         "text": "*じゃんけんの告白でもないのに。でもこれが僕にとっては全部だ。*"
@@ -231,13 +283,25 @@
         "name": "{name}",
         "text": "*ダインが固まっている。エネルギーが消えた。――そして目がゆっくり潤んでいく。両手で顔をぐっと覆い隠す。首筋まで赤くなっている。*"
     },
+    "confess_dain_yes_8_ins": {
+        "name": "{name}",
+        "text": "*両手で顔を覆う。指の隙間から赤い頬が見える。*"
+    },
     "confess_dain_yes_9": {
         "name": "ダイン",
         "text": "…ちょっと。息が――今泣きそうなんだけど――なんで泣くの、嬉しいのに――"
     },
+    "confess_dain_yes_9_ins": {
+        "name": "{name}",
+        "text": "*手を下ろして笑う。涙が流れている。*"
+    },
     "confess_dain_yes_10": {
         "name": "ダイン",
         "text": "私も好き。めちゃくちゃ。"
+    },
+    "confess_dain_yes_10_ins": {
+        "name": "{name}",
+        "text": "*めっちゃ——ダインはいつもこうだ。短くて素直。だから信じられる。*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
@@ -255,272 +319,8 @@
         "name": "ダイン",
         "text": "…次は逃げないで。"
     },
-    "confess_yuna_3b": {
-        "name": "{name}",
-        "text": "*図書館別館。窓から夕日が差し込む。数日で馴染んだ場所。*"
-    },
-    "confess_seo_3b": {
-        "name": "{name}",
-        "text": "*屋上。夕日が学校を染めている。数日で馴染んだ場所。*"
-    },
-    "confess_dain_3b": {
-        "name": "{name}",
-        "text": "*体育館。誰もいない。夕日が窓からコートを染めている。数日で数えきれない思い出が積もった場所。*"
-    },
-    "confess_seo_4_ins": {
-        "name": "{name}",
-        "text": "*前の学校で言えなかった言葉が浮かぶ。——今度は告白する。*"
-    },
-    "confess_seo_yes_11_ins": {
-        "name": "{name}",
-        "text": "*ソヨンが小指を差し出す。*"
-    },
-    "confess_seo_no_4_ins": {
-        "name": "{name}",
-        "text": "*背筋が伸びている。震えている。*"
-    },
-    "confess_yuna_yes_3_ins": {
-        "name": "{name}",
-        "text": "君は——言葉の代わりに隣に座ってくれる人だった。"
-    },
-    "confess_yuna_yes_6_ins": {
-        "name": "{name}",
-        "text": "*この部屋で一番長い文章を僕が言った。——ユナの領域で。*"
-    },
-    "confess_yuna_yes_8_ins": {
-        "name": "{name}",
-        "text": "*袖をぎゅっと握りしめる。*"
-    },
-    "confess_yuna_yes_8_ins2": {
-        "name": "ユナ",
-        "text": "……行かないで。"
-    },
-    "confess_yuna_yes_9_ins": {
-        "name": "{name}",
-        "text": "*今度は。——前に去った人がいた。ユナはその傷をまた開きながら、それでも僕をつかんでいる。*"
-    },
-    "confess_yuna_no_4_ins": {
-        "name": "{name}",
-        "text": "*三歩離れて振り返った。ユナも本越しにこちらを見ていた。*"
-    },
-    "confess_dain_yes_3_ins": {
-        "name": "{name}",
-        "text": "その目が僕を見てない時——ちょっと息苦しい。"
-    },
-    "confess_dain_yes_8_ins": {
-        "name": "{name}",
-        "text": "*両手で顔を覆う。指の隙間から赤い頬が見える。*"
-    },
-    "confess_dain_yes_9_ins": {
-        "name": "{name}",
-        "text": "*手を下ろして笑う。涙が流れている。*"
-    },
-    "confess_dain_yes_10_ins": {
-        "name": "{name}",
-        "text": "*めっちゃ——ダインはいつもこうだ。短くて素直。だから信じられる。*"
-    },
     "confess_dain_no_4_ins": {
         "name": "{name}",
         "text": "*感嘆符がない。——本気だ。*"
-    },
-    "confess_dain_no_4_ins2": {
-        "name": "{name}",
-        "text": "*--- 早朝 ---*"
-    },
-    "confess_dain_no_4_ins3": {
-        "name": "{name}",
-        "text": "*週末の早朝。カフェに行こうとして——学校の前を通りかかると、空き教室に明かりが灯っている。*"
-    },
-    "confess_dain_no_4_ins4": {
-        "name": "{name}",
-        "text": "*担任が窓際に立っている。手に原稿の束を持っている。朝の光が紙の上を染めている。*"
-    },
-    "confess_dain_no_4_ins5": {
-        "name": "担任先生",
-        "text": "……来たんだ。"
-    },
-    "confess_dain_no_4_ins6": {
-        "name": "{name}",
-        "text": "呼んだじゃないですか。"
-    },
-    "confess_dain_no_4_ins7": {
-        "name": "担任先生",
-        "text": "呼んでないよ。 *少し間を置いて* ……でも来ると思ってた。"
-    },
-    "confess_dain_no_4_ins8": {
-        "name": "{name}",
-        "text": "*この人は呼ばずに待つ人だ。——それが7年間原稿を引き出しにしまっていた理由でもある。*"
-    },
-    "confess_dain_no_4_ins9": {
-        "name": "{name}",
-        "text": "*先生が原稿を差し出す。表紙にタイトルが書いてある。——見たことのないタイトルだ。*"
-    },
-    "confess_dain_no_4_ins10": {
-        "name": "担任先生",
-        "text": "最初の読者に……最後の章を見せたかったの。"
-    },
-    "confess_dain_no_4_ins11": {
-        "name": "{name}",
-        "text": "最後の章？"
-    },
-    "confess_dain_no_4_ins12": {
-        "name": "担任先生",
-        "text": "7年かかった。——書くのに3年、終わらせるのに4年。"
-    },
-    "confess_dain_no_4_ins13": {
-        "name": "{name}",
-        "text": "*終わらせるのに4年。——始めるより終わらせる方が難しい人だ。文章も、感情も。*"
-    },
-    "confess_dain_no_4_ins14": {
-        "name": "{name}",
-        "text": "*原稿を受け取る。読み始める。——先生は窓の外を見ている。朝の光。指先がかすかに震えている。*"
-    },
-    "confess_dain_no_4_ins15": {
-        "name": "{name}",
-        "text": "*読んでいる間、先生は一言も話さない。窓の外だけを見ている。——でもガラスに映る目は僕を向いている。*"
-    },
-    "confess_dain_no_4_ins16": {
-        "name": "{name}",
-        "text": "*最後の章。——一文で終わる。その一文を読んだ瞬間、この原稿が7年かかった理由が分かった気がした。*"
-    },
-    "confess_dain_no_4_ins17": {
-        "name": "{name}",
-        "text": "……いいです。この結末。"
-    },
-    "confess_dain_no_4_ins18": {
-        "name": "{name}",
-        "text": "*先生の肩から力が抜ける。ゆっくりと。*"
-    },
-    "confess_dain_no_4_ins19": {
-        "name": "担任先生",
-        "text": "……本当？"
-    },
-    "confess_dain_no_4_ins20": {
-        "name": "担任先生",
-        "text": "……そう。"
-    },
-    "confess_dain_no_4_ins21": {
-        "name": "{name}",
-        "text": "*二回目のそうで声が割れた。——最初の読者の最初の感想。7年待った一言。*"
-    },
-    "confess_dain_no_4_ins22": {
-        "name": "{name}",
-        "text": "*--- 朝 ---*"
-    },
-    "confess_dain_no_4_ins23": {
-        "name": "{name}",
-        "text": "*週末の朝。習慣のように保健室へ向かう。——いつから習慣になったんだろう。*"
-    },
-    "confess_dain_no_4_ins24": {
-        "name": "{name}",
-        "text": "*ドアを開けた。保健先生が椅子に座っている。白衣姿。——でも今日はいつもと違う。おどけた感じがない。*"
-    },
-    "confess_dain_no_4_ins25": {
-        "name": "保健室の先生",
-        "text": "あ、来たんだ。"
-    },
-    "confess_dain_no_4_ins26": {
-        "name": "{name}",
-        "text": "*来たんだがいつもより半トーン低い。——この人の感情はトーンで読まなきゃいけない。*"
-    },
-    "confess_dain_no_4_ins27": {
-        "name": "{name}",
-        "text": "最後のカウンセリングですか？"
-    },
-    "confess_dain_no_4_ins28": {
-        "name": "保健室の先生",
-        "text": "カウンセリングか…… *椅子を回しながら* うん。最後のカウンセリング。"
-    },
-    "confess_dain_no_4_ins29": {
-        "name": "{name}",
-        "text": "*保健先生が机の上の書類を整理するふりをしている——でも同じ紙を三回めくっている。*"
-    },
-    "confess_dain_no_4_ins30": {
-        "name": "保健室の先生",
-        "text": "こういうこと聞いてもいい？"
-    },
-    "confess_dain_no_4_ins31": {
-        "name": "{name}",
-        "text": "なんですか？"
-    },
-    "confess_dain_no_4_ins32": {
-        "name": "{name}",
-        "text": "*保健先生がメガネに触る。メガネの奥の目が思ったより大きい。おどけた表情の裏に隠れていた目。*"
-    },
-    "confess_dain_no_4_ins33": {
-        "name": "保健室の先生",
-        "text": "……卒業しても保健室に来てくれる？"
-    },
-    "confess_dain_no_4_ins34": {
-        "name": "{name}",
-        "text": "*質問じゃない。——答えをすでに怖がっている顔だ。*"
-    },
-    "confess_dain_no_4_ins35": {
-        "name": "{name}",
-        "text": "*目を合わせる。おどけた感じが消えた真剣な顔で。——この人がこんなに無防備なのは初めてだ。*"
-    },
-    "confess_dain_no_4_ins36": {
-        "name": "保健室の先生",
-        "text": "あ、ごめん。変な質問だよね？ 先生が生徒にこんなこと聞いたら——"
-    },
-    "confess_dain_no_4_ins37": {
-        "name": "{name}",
-        "text": "行きますよ。"
-    },
-    "confess_dain_no_4_ins38": {
-        "name": "{name}",
-        "text": "*保健先生が止まる。メガネをいじっていた手が止まる。*"
-    },
-    "confess_dain_no_4_ins39": {
-        "name": "保健室の先生",
-        "text": "……本当に？"
-    },
-    "confess_dain_no_4_ins40": {
-        "name": "{name}",
-        "text": "*本当に。この人の本気確認ワード。今日は僕が先に聞いた。*"
-    },
-    "confess_dain_no_4_ins41": {
-        "name": "{name}",
-        "text": "本当に。"
-    },
-    "confess_dain_no_4_ins42": {
-        "name": "{name}",
-        "text": "*少しの沈黙。保健先生のメガネの奥の目が潤んで見える。——レンズが曇っている。湯気なのか、涙なのか。*"
-    },
-    "confess_dain_no_4_ins43": {
-        "name": "保健室の先生",
-        "text": "*明るいトーンに戻るが声が震えて* じゃあ～最後のカウンセリング終了！ 次の来院日は——卒業後に入れておくね～"
-    },
-    "confess_dain_no_4_ins44": {
-        "name": "{name}",
-        "text": "*おどけた感じが戻った。——でも笑っている目の下に、何かが流れた跡がある。*"
-    },
-    "confess_dain_no_4_ins45": {
-        "name": "ソヨン",
-        "text": "*今日、風が気持ちよかった*"
-    },
-    "confess_dain_no_4_ins46": {
-        "name": "ソヨン",
-        "text": "*……次は違う言葉、期待してるから*"
-    },
-    "confess_dain_no_4_ins47": {
-        "name": "ダイン",
-        "text": "*ねえ今日楽しかったね笑*"
-    },
-    "confess_dain_no_4_ins48": {
-        "name": "ダイン",
-        "text": "*……でもなんか足りなくない？*"
-    },
-    "confess_dain_no_4_ins49": {
-        "name": "ユナ",
-        "text": "*……今日*"
-    },
-    "confess_dain_no_4_ins50": {
-        "name": "ユナ",
-        "text": "*よかった*"
-    },
-    "confess_dain_no_4_nurse_skip": {
-        "name": "{name}",
-        "text": "*今朝、保健室で最後の相談をした。——先生の潤んだ目がまだ頭から離れない。*"
     }
 }
