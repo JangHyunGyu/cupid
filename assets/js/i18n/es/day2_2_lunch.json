@@ -508,11 +508,11 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*Compramos pan y nos sentamos en un banco del pasillo. — Entonces Seoyeon pasa. Con una fiambrera.*"
+        "text": "*Compramos pan y nos quedamos junto a las ventanas del pasillo. — Entonces Seoyeon pasa, con una fiambrera.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon mira hacia acá. Me observa sentado junto a Dain comiendo pan durante medio segundo — y sigue de largo.*"
+        "text": "*Seoyeon mira hacia acá. Me observa de pie junto a Dain, comiendo pan, durante medio segundo — y sigue de largo.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",

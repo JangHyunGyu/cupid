@@ -508,11 +508,11 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*We buy bread and sit on a bench in the hallway. — Then Seoyeon walks by. Carrying a lunchbox.*"
+        "text": "*We buy bread and stand by the hallway windows. — Then Seoyeon walks by, carrying a lunchbox.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon looks this way. She stares at me sitting next to Dain eating bread for half a second — then walks past.*"
+        "text": "*Seoyeon looks this way. She stares at me standing next to Dain, eating bread, for half a second — then walks past.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",

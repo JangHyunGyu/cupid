@@ -508,11 +508,11 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*Wir kaufen Brot und setzen uns auf eine Bank im Flur. — Da kommt Seoyeon vorbei. Mit einer Lunchbox-Tasche.*"
+        "text": "*Wir kaufen Brot und bleiben an den Fenstern im Flur stehen. — Da kommt Seoyeon vorbei, mit einer Lunchbox-Tasche.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon schaut hierher. Sie starrt mich eine halbe Sekunde an, wie ich neben Dain sitze und Brot esse — und geht weiter.*"
+        "text": "*Seoyeon schaut hierher. Sie starrt mich eine halbe Sekunde an, wie ich neben Dain stehe und Brot esse — und geht weiter.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
