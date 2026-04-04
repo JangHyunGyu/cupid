@@ -88,7 +88,7 @@
     "minsu_cheer_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_2",
       "_ko_name": "민수",
-      "_ko_text_preview": "야 오늘 데이트라며? 다인이가 단톡방에 올림ㅋㅋ \"내일 약속 있음!!\" ...",
+      "_ko_text_preview": "잘하고 와.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_2",
@@ -196,7 +196,7 @@
     "morning4_start_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#morning4_start_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*거울을 세 번 봤다. 옷을 두 번 갈아입었다. — 뭘 하는 거지 나.*",
+      "_ko_text_preview": "*심호흡하고, 약속 메시지를 다시 확인한다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#morning4_start_2",
@@ -10568,7 +10568,7 @@
     "confess_dain_yes_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그 눈이 나를 안 볼 때 — 좀 답답해.",
+      "_ko_text_preview": "그래서 자꾸 너한테 가게 돼.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_5",
@@ -15573,7 +15573,7 @@
     "wall_dain_9": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_9",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*토스를 올려준다. 다인이 뛰어올라 — 스파이크. 착지하는 순간 — 오른...",
+      "_ko_text_preview": "*심장이 철렁 내려앉는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_9",

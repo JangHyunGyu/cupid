@@ -18487,7 +18487,7 @@
     "hidden_good_nurse_3_ins": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_good_nurse_3_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*보건실을 나왔다. 하트가 — 이번에는 확실히 의료적 관심이 아니다.*",
+      "_ko_text_preview": "*병 뚜껑을 닫고도 입가가 안 내려간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_good_nurse_3_ins",

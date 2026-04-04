@@ -3395,7 +3395,7 @@
     "hidden_nurse_d3_2": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_2",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "...어? 오늘은 어디 다쳤어? — 아프지 않은데 보건실에?",
+      "_ko_text_preview": "...그럼 왜 왔어? 표정이 안 좋은데.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_2",
@@ -14808,7 +14808,7 @@
     "minsu_d3_6": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#minsu_d3_6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "......맞아.",
+      "_ko_text_preview": "...근데 어떻게 해야 할지 모르겠어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#minsu_d3_6",
@@ -19202,7 +19202,7 @@
     "night3_faithful_reflect_2_ins2": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*— 삭제했다.*",
+      "_ko_text_preview": "*확인 버튼 위에서 손가락이 멈춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins2",
@@ -19238,7 +19238,7 @@
     "night3_faithful_reflect_2_ins3": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'삭제하시겠습니까?'*",
+      "_ko_text_preview": "*1초. 화면만 내려다본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins3",
@@ -19274,7 +19274,7 @@
     "night3_faithful_reflect_2_ins4": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑...",
+      "_ko_text_preview": "*민수가 했던 말이 떠오른다. '거절도 사랑이야.'*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins4",
