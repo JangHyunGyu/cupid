@@ -956,8 +956,13 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // night: true → 파란색 어두운 필터
         // sunset: true → 주황색 노을 필터
-        // 엔딩 CG 씬은 night 필터 비활성화 (CG 자체가 완성된 장면이므로)
-        const isEndingCG = scene.background && scene.background.includes('ending_');
+        // 등록된 CG 씬은 시간 필터 비활성화 (CG 자체가 완성된 장면이므로)
+        const backgroundId = scene.background
+            ? scene.background.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '')
+            : '';
+        const isRegisteredCG = !!backgroundId
+            && typeof REGISTERED_CG_IDS !== 'undefined'
+            && REGISTERED_CG_IDS.has(backgroundId);
         const sourceFile = typeof SCENARIO_FILE_MAP !== 'undefined' ? SCENARIO_FILE_MAP[sceneId] : null;
         const fileMeta = (typeof SCENARIO_FILE_META !== 'undefined' && sourceFile)
             ? SCENARIO_FILE_META[sourceFile]
@@ -967,8 +972,8 @@ class GameEngine {
         const isNightScene = !!scene.night || nightFromFile;
         const isSunsetScene = !!scene.sunset || sunsetFromFile;
         this.sceneRenderer.setTimeFilter(
-            isEndingCG ? false : isNightScene,
-            isEndingCG ? false : isSunsetScene
+            isRegisteredCG ? false : isNightScene,
+            isRegisteredCG ? false : isSunsetScene
         );
 
         // ─────────────────────────────────────────────────────────────
