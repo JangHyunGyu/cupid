@@ -13813,7 +13813,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins2`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **민수**: *야 오늘 데이트라며?*
 
 ---
@@ -13822,7 +13822,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins3`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: *어떻게 알았어*
 
 ---
@@ -13831,7 +13831,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins4`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **민수**: *다인이가 단톡방에 올림ㅋㅋ 내일 약속 있음!! 이라고*
 
 ---
@@ -13840,7 +13840,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins5`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **민수**: *근데 야*
 
 ---
@@ -13849,7 +13849,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins6`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **민수**: *한 명만 가라*
 
 ---
@@ -13858,7 +13858,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_1_ins7`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **민수**: *진짜 알아?*
 
 ---
@@ -13867,7 +13867,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_2`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: *...이번엔 진짜로*
 
 ---
@@ -13876,7 +13876,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_3`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **민수**: 야 오늘 데이트라며? 다인이가 단톡방에 올림ㅋㅋ "내일 약속 있음!!" 이라고
 
 ---
@@ -13885,7 +13885,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: 알아.
 
 ---
@@ -13894,7 +13894,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: *짧다. 그런데 '잘하고 와'가 묵직하다. Day 2에 '전 학교에서도 이랬어?'라고 물었던 놈이, Day 3에 '거절도 사랑이야'라고 말했던 놈이 — 오늘은 '잘하고 와'다.*
 
 ---
@@ -13903,7 +13903,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins2`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: *경고에서 직면으로, 직면에서 응원으로. — 민수가 나보다 먼저 나를 믿어주고 있다.*
 
 ---
@@ -13912,7 +13912,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins3`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: *핸드폰 캘린더를 본다. 오전 서연, 오후 유나, 저녁 다인. — 하루 안에 세 명을 쪼개 넣느라 어젯밤에 잠을 못 잤다. 한 명이라도 시간이 겹치면 끝이다.*
 
 ---
@@ -13921,7 +13921,7 @@
 - 배경: `room_my.png`
 - 다음: `minsu_cheer_4_ins4`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: *...뭘 하고 있는 거지, 나.*
 
 ---
@@ -13930,7 +13930,7 @@
 - 배경: `room_my.png`
 - 다음: `morning4_start_2`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_normal.png` @ 0.35
 **{name}**: *거울을 세 번 봤다. 옷을 두 번 갈아입었다. — 뭘 하는 거지 나.*
 
 ---
