@@ -963,12 +963,9 @@ class GameEngine {
         const isRegisteredCG = !!backgroundId
             && typeof REGISTERED_CG_IDS !== 'undefined'
             && REGISTERED_CG_IDS.has(backgroundId);
-        const sourceFile = typeof SCENARIO_FILE_MAP !== 'undefined' ? SCENARIO_FILE_MAP[sceneId] : null;
-        const fileMeta = (typeof SCENARIO_FILE_META !== 'undefined' && sourceFile)
-            ? SCENARIO_FILE_META[sourceFile]
-            : null;
-        const nightFromFile = !!(fileMeta && fileMeta.night) && scene.type === 'free_talk';
-        const sunsetFromFile = !!(fileMeta && fileMeta.sunset);
+        const sourceFile = scene.__sourceFile || '';
+        const nightFromFile = scene.type === 'free_talk' && /_night$/.test(sourceFile);
+        const sunsetFromFile = /_3_afterschool$/.test(sourceFile);
         const isNightScene = !!scene.night || nightFromFile;
         const isSunsetScene = !!scene.sunset || sunsetFromFile;
         this.sceneRenderer.setTimeFilter(
