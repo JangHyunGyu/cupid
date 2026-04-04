@@ -508,11 +508,11 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "*On achète du pain et on s'assoit sur un banc dans le couloir. — À ce moment, Seoyeon passe. Avec un sac à bento.*"
+        "text": "*On achète du pain et on s'arrête près des fenêtres du couloir. — À ce moment, Seoyeon passe, avec un sac à bento.*"
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon regarde par ici. Elle me fixe assis à côté de Dain en train de manger du pain pendant une demi-seconde — puis continue son chemin.*"
+        "text": "*Seoyeon regarde par ici. Elle me fixe, debout à côté de Dain en train de manger du pain, pendant une demi-seconde — puis continue son chemin.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",

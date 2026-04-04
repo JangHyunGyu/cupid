@@ -7146,7 +7146,7 @@
     "lunch2_dain_9": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_9",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*빵을 사서 복도 벤치에 앉는다. — 그때 서연이 지나간다. 도시락 가방...",
+      "_ko_text_preview": "*빵을 사서 복도 창가 쪽에 선다. — 그때 서연이 지나간다. 도시락 가방...",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_9",
@@ -7182,7 +7182,7 @@
     "lunch2_dain_10": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_10",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 이쪽을 본다. 다인 옆에 앉아 빵을 먹고 있는 나를 — 한 번 ...",
+      "_ko_text_preview": "*서연이 이쪽을 본다. 다인 옆에 서서 빵을 먹고 있는 나를 — 한 번 ...",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_10",
