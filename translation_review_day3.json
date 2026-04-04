@@ -7319,7 +7319,7 @@
     "morning3_date_yuna_1_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_date_yuna_1_ins",
       "_ko_name": "서연",
-      "_ko_text_preview": "계란말이 간이 좀 세네. 6점.",
+      "_ko_text_preview": "오늘 도시락은 계란말이네.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_date_yuna_1_ins",
@@ -10234,7 +10234,7 @@
     "lunch3_start_2_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_start_2_ins",
       "_ko_name": "다인",
-      "_ko_text_preview": "*거침없이 계란말이를 한 입 베어 물며* 오! 맛있다!!",
+      "_ko_text_preview": "*거침없이 계란말이를 한 입 베어 문다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_start_2_ins",
