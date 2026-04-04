@@ -73,15 +73,15 @@
     },
     "night3_faithful_reflect_2_ins2": {
         "name": "{name}",
-        "text": "*— 삭제했다.*"
+        "text": "*확인 버튼 위에서 손가락이 멈춘다.*"
     },
     "night3_faithful_reflect_2_ins3": {
         "name": "{name}",
-        "text": "*'삭제하시겠습니까?'*"
+        "text": "*1초. 화면만 내려다본다.*"
     },
     "night3_faithful_reflect_2_ins4": {
         "name": "{name}",
-        "text": "*1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑이야.'*"
+        "text": "*민수가 했던 말이 떠오른다. '거절도 사랑이야.'*"
     },
     "night3_faithful_reflect_2_ins5": {
         "name": "{name}",

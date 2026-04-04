@@ -1169,7 +1169,7 @@
     },
     "hidden_good_nurse_3_ins": {
         "name": "{name}",
-        "text": "*보건실을 나왔다. 하트가 — 이번에는 확실히 의료적 관심이 아니다.*"
+        "text": "*병 뚜껑을 닫고도 입가가 안 내려간다.*"
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
