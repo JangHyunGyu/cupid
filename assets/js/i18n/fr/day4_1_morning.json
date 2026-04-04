@@ -21,7 +21,7 @@
     },
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*Je prends une grande inspiration et je relis les messages du rendez-vous.*"
+        "text": "*Je prends une grande inspiration et je relis une fois encore le message du rendez-vous.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Le portail est entrouvert. Quelqu'un sort. C'est la prof principale. En civil.*"
+        "text": "*Le portail du lycée est entrouvert. Il y a un bruit à l'intérieur. - La personne qui en sort, c'est ma prof principale.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Professeure principale",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*La prof principale en civil ne ressemble pas à une prof. Juste — à quelqu'un qui écrit.*"
+        "text": "*Vue en dehors du portail, elle ne ressemble pas à une prof. Juste... à quelqu'un qui écrit.*"
     },
     "hidden_homeroom_d4_4_ins": {
         "name": "Professeure principale",
@@ -147,7 +147,7 @@
         "name": "Professeure principale",
         "text": "*En train de discuter avec la prof principale au café.*",
         "context": "Jour 4. Rencontre fortuite le weekend, café ensemble. Elle m'a demandé d'être son premier lecteur. Ton : La conversation est devenue sérieuse. Excitation et nervosité du rendez-vous. Plus de sincérité que de blagues. Moments d'honnêteté émotionnelle.",
-        "personality": "La prof est plus détendue en civil. Déchirée entre passion pour l'écriture et sentiments."
+        "personality": "La prof principale est plus à l’aise hors de l’école. Elle vacille entre sa passion pour le roman et ses sentiments envers son élève."
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",
@@ -303,7 +303,7 @@
         "name": "Infirmière scolaire",
         "text": "*En train de discuter avec l’infirmière à l’infirmerie.*",
         "context": "Jour 4. Week-end. A aidé à préparer le bilan de santé, mangé au snack, et de retour à l’infirmerie pour discuter. Discussion sur le burn-out à l’hôpital universitaire. Ton : La conversation est devenue sérieuse. Excitation et tension d’un rendez-vous. Plus de sincérité que de blagues. Moments où les émotions deviennent honnêtes.",
-        "personality": "L’infirmière en tenue décontractée ressemble à une grande sœur. L’espièglerie et la sincérité alternent, et elle comprend le poids d’être appelée par son nom."
+        "personality": "L’infirmière scolaire se montre plus accessible en dehors de la classe. L’espièglerie et la sincérité coexistent chez elle, et elle connaît le poids qu’il y a à être appelée par son nom."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d4_cafe_4_ins": {
         "name": "{name}",
-        "text": "*Déjà vu. Elle a dit à peu près la même chose hier, dans la salle vide. Mais aujourd'hui, dans un café et en tenue décontractée, elle le dit plus légèrement. Non — plus sérieusement.*"
+        "text": "*C'est un déjà-vu. Hier aussi, dans la salle vide, elle a dit quelque chose de ce genre. - Mais aujourd'hui, dans un café, hors de l'école, ça semble plus léger. Non... plus sérieux.*"
     },
     "hidden_homeroom_d4_cafe_5_ins": {
         "name": "{name}",
@@ -483,7 +483,7 @@
     },
     "hidden_homeroom_d4_cafe_5_ins7": {
         "name": "{name}",
-        "text": "*Elle sort ses mains de ses poches. Un geste comme pour ajuster son cardigan — ah, elle est en civil. Un geste dans le vide.*"
+        "text": "*Elle sort la main de sa poche. Le bout de ses doigts flotte un instant dans le vide. Un geste d’habitude.*"
     },
     "hidden_homeroom_d4_decline_ins": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_nurse_d4_1_ins": {
         "name": "{name}",
-        "text": "*L'infirmerie. Des papiers et du matériel de contrôle empilés sur le bureau. L'Infirmière range en tenue décontractée. Un pull beige au lieu de la blouse blanche.*"
+        "text": "*L'infirmerie. Des papiers et du matériel de visite s'entassent sur le bureau. L'infirmière les range calmement.*"
     },
     "hidden_nurse_d4_1_ins2": {
         "name": "Infirmière scolaire",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_2_ins3": {
         "name": "{name}",
-        "text": "*Son rire est naturel. Différent de ce qu'elle est à l'école. Sans la blouse blanche, l'Infirmière n'est pas une professeure — plutôt une grande sœur.*"
+        "text": "*Son sourire vient naturellement. - Elle est différente de celle que je vois à l'école. Aujourd'hui, elle ressemble moins à une prof qu'à... quelqu'un auprès de qui on se sent bien.*"
     },
     "hidden_nurse_d4_2_ins4": {
         "name": "{name}",

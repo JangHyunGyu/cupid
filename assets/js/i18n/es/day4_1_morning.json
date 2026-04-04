@@ -21,7 +21,7 @@
     },
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*Respiro hondo y vuelvo a revisar los mensajes de la cita.*"
+        "text": "*Respiro hondo y vuelvo a revisar el mensaje del plan.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*La puerta de la escuela está entreabierta. Alguien sale. Es la profesora. En ropa casual.*"
+        "text": "*La puerta principal del colegio está entreabierta. Hay ruido dentro. - La persona que sale frente a la entrada es mi tutora.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Profesora",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*La profesora en ropa casual no parece profesora. Solo — alguien que escribe.*"
+        "text": "*Vista fuera de la puerta del colegio, no parece una profesora. Solo... una persona que escribe.*"
     },
     "hidden_homeroom_d4_4_ins": {
         "name": "Profesora",
@@ -147,7 +147,7 @@
         "name": "Profesora",
         "text": "*Conversando con la profesora en un café.*",
         "context": "Día 4. Encuentro casual el fin de semana. Pidió ser su primer lector. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
-        "personality": "La profesora es más relajada en ropa casual. Dividida entre la pasión por escribir y sus sentimientos."
+        "personality": "La profesora titular se muestra más relajada fuera del colegio. Oscila entre su pasión por la novela y lo que siente por el estudiante."
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",
@@ -303,7 +303,7 @@
         "name": "Enfermera",
         "text": "*Conversando con la enfermera en la enfermería.*",
         "context": "Día 4. Fin de semana. Ayudó con la preparación del chequeo médico, comieron en un puesto de comida y regresaron a la enfermería para conversar. Hablando sobre el agotamiento del hospital universitario. Tono: La conversación se ha vuelto seria. Emoción y tensión de una cita. Más sinceridad que bromas. Momentos donde las emociones se vuelven honestas.",
-        "personality": "La enfermera en ropa casual parece una hermana mayor. La alegría y la sinceridad se alternan, y ella entiende el peso de ser llamada por su nombre."
+        "personality": "La enfermera escolar se acerca con más naturalidad fuera del aula. En ella conviven la picardía y la sinceridad, y sabe lo que pesa que te llamen por tu nombre."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d4_cafe_4_ins": {
         "name": "{name}",
-        "text": "*Déjà vu. Ayer dijo algo parecido en el aula vacía. Pero hoy, en una cafetería y con ropa de calle, lo dice con más ligereza. No — más en serio.*"
+        "text": "*Es un deja vu. Ayer dijo algo parecido en el aula vacía. - Pero hoy, en un café, fuera del colegio, suena más ligero. No... más serio.*"
     },
     "hidden_homeroom_d4_cafe_5_ins": {
         "name": "{name}",
@@ -483,7 +483,7 @@
     },
     "hidden_homeroom_d4_cafe_5_ins7": {
         "name": "{name}",
-        "text": "*Saca las manos de los bolsillos. Un gesto como de ajustarse la rebeca — ah, va de calle. Un ademán vacío.*"
+        "text": "*Saca la mano del bolsillo. Las yemas de sus dedos flotan un instante en el aire. Un gesto casi automático.*"
     },
     "hidden_homeroom_d4_decline_ins": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_nurse_d4_1_ins": {
         "name": "{name}",
-        "text": "*La enfermería. Documentos y equipos de revisión apilados en el escritorio. La Enfermera está ordenando en ropa de calle. Un suéter beige en lugar de la bata blanca.*"
+        "text": "*La enfermería. Sobre el escritorio hay papeles y herramientas para los chequeos. La enfermera los ordena con calma.*"
     },
     "hidden_nurse_d4_1_ins2": {
         "name": "Enfermera",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_2_ins3": {
         "name": "{name}",
-        "text": "*Su risa es natural. Distinta a como es en el colegio. Sin la bata blanca, la Enfermera no parece profesora — más bien una hermana mayor.*"
+        "text": "*Su sonrisa sale con naturalidad. - Es distinta a como la veo en el colegio. Hoy se siente menos como una profesora y más como... alguien con quien es fácil estar.*"
     },
     "hidden_nurse_d4_2_ins4": {
         "name": "{name}",

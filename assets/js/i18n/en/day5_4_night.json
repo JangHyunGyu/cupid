@@ -49,7 +49,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon's rooftop. She stands among the plants she grew herself.*"
+        "text": "*For the first time, I see Seoyeon this completely undone. - She's crying.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -653,7 +653,7 @@
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
-        "text": "*A cafe terrace. Cherry blossoms drifting. Walking in — I spot familiar brown wavy hair by the window. A linen jacket instead of a cardigan.*"
+        "text": "*Cafe terrace. Cherry blossoms drift through the air. As I step in - I see someone familiar at the window seat.*"
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Homeroom Teacher",
@@ -707,7 +707,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "School Nurse",
-        "text": "*The person who opened the door isn't in a white coat — cardigan, barefoot.* ...You came. I honestly didn't think you would."
+        "text": "*The person who opens the door looks far more at ease than she ever did in the infirmary.* ...You came. I didn't think you really would."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -743,7 +743,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*The empty classroom. The one where she wrote. — The homeroom teacher is waiting. In casual clothes.*"
+        "text": "*An empty classroom. The same classroom where she used to write. - My homeroom teacher is waiting.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Homeroom Teacher",
@@ -779,7 +779,7 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*'Congrats on graduating. I'll wait at the cafe.' — Peeling off the bandage, there's a little map inside. The school nurse is sitting at the cafe. Not in her white coat — pink sweater and jeans. Still wearing her glasses, but the vibe is different. Not the school nurse — just a woman at a café.*"
+        "text": "*'Congratulations on graduating. I'll wait at the cafe.' - When I peel off the bandage, there's a tiny map underneath. The school nurse is sitting in the cafe. She looks far more at ease than she ever did in the infirmary. Just - like someone who came to wait for me.*"
     },
     "hidden_true_nurse_3": {
         "name": "School Nurse",
@@ -971,7 +971,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*The rosemary pot moved to the window. The sunny side. — Someone in an apron instead of a white coat is watering it.*"
+        "text": "*The rosemary pot has been moved to the windowsill. To the sunny side. - She's watering it.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1015,7 +1015,7 @@
     },
     "hidden_true_homeroom_2_ins": {
         "name": "{name}",
-        "text": "*No cardigan, no clipboard. A comfortable sweater and long skirt. — Casual clothes.*"
+        "text": "*She's leaning by the window at the back of the classroom. A face with no class and no work left in it.*"
     },
     "hidden_true_homeroom_3_ins": {
         "name": "{name}",

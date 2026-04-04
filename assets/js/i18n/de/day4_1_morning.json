@@ -21,7 +21,7 @@
     },
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*Ich atme tief durch und pr?fe die Verabredungsnachrichten noch einmal.*"
+        "text": "*Ich atme tief durch und lese die Verabredungsnachricht noch einmal.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Das Schultor steht einen Spalt offen. Jemand kommt raus. Die Klassenlehrerin. In Freizeitkleidung.*"
+        "text": "*Das Schultor steht einen Spalt offen. Von drinnen ist ein Geräusch zu hören. - Die Person, die dort herauskommt, ist meine Klassenlehrerin.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Klassenlehrerin",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Die Klassenlehrerin in Freizeitkleidung sieht nicht wie eine Lehrerin aus. Einfach — wie jemand, der schreibt.*"
+        "text": "*Außerhalb des Schultors wirkt sie nicht wie eine Lehrerin. Einfach - wie jemand, der schreibt.*"
     },
     "hidden_homeroom_d4_4_ins": {
         "name": "Klassenlehrerin",
@@ -147,7 +147,7 @@
         "name": "Klassenlehrerin",
         "text": "*Im Gespräch mit der Klassenlehrerin im Café.*",
         "context": "Tag 4. Zufällige Begegnung am Wochenende. Sie bat mich, ihr erster Leser zu werden. Ton: Das Gespräch ist ernst geworden. Date-Aufregung und Nervosität. Mehr Aufrichtigkeit als Witze. Momente emotionaler Ehrlichkeit.",
-        "personality": "Die Lehrerin ist in Freizeitkleidung entspannter. Zerrissen zwischen Schreiblust und Gefühlen."
+        "personality": "Meine Klassenlehrerin wirkt außerhalb der Schule entspannter. Sie schwankt zwischen ihrer Leidenschaft für Romane und ihren Gefühlen gegenüber dem Schüler."
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",
@@ -303,7 +303,7 @@
         "name": "Schulkrankenschwester",
         "text": "*Unterhaltung mit der Krankenschwester im Krankenzimmer.*",
         "context": "Tag 4. Wochenende. Beim Gesundheitscheck geholfen, im Imbiss gegessen und zurück im Krankenzimmer zum Reden. Gespräch über Burnout im Universitätskrankenhaus. Ton: Das Gespräch ist ernst geworden. Aufregung und Anspannung eines Dates. Mehr Aufrichtigkeit als Scherze. Momente, in denen Emotionen ehrlich werden.",
-        "personality": "Die Krankenschwester in Freizeitkleidung wirkt wie eine ältere Schwester. Verspieltheit und Aufrichtigkeit wechseln sich ab, und sie versteht das Gewicht, beim Namen genannt zu werden."
+        "personality": "Die Schulkrankenschwester wirkt außerhalb des Klassenzimmers zugänglicher. In ihr liegen Verspieltheit und Ernst nebeneinander, und sie kennt das Gewicht, beim Namen genannt zu werden."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d4_cafe_4_ins": {
         "name": "{name}",
-        "text": "*Déjà vu. Im leeren Klassenzimmer gestern hat sie etwas Ähnliches gesagt. Aber heute ist es in einem Café, in Freizeitkleidung, leichter. Nein — ernsthafter.*"
+        "text": "*Ein Déjà-vu. Gestern im leeren Klassenraum hat sie etwas Ähnliches gesagt. - Aber heute, in einem Café, außerhalb der Schule, klingt es leichter. Nein - ernster.*"
     },
     "hidden_homeroom_d4_cafe_5_ins": {
         "name": "{name}",
@@ -483,7 +483,7 @@
     },
     "hidden_homeroom_d4_cafe_5_ins7": {
         "name": "{name}",
-        "text": "*Sie nimmt die Hände aus den Taschen. Eine Geste, als würde sie ihre Strickjacke richten — ach, sie trägt Freizeitkleidung. Eine leere Geste.*"
+        "text": "*Sie zieht die Hand aus der Tasche. Ihre Fingerspitzen verharren einen Moment in der Luft. Eine Geste aus Gewohnheit.*"
     },
     "hidden_homeroom_d4_decline_ins": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_nurse_d4_1_ins": {
         "name": "{name}",
-        "text": "*Das Krankenzimmer. Papiere und Untersuchungsgeräte auf dem Schreibtisch gestapelt. Die Schulkrankenschwester sortiert Sachen in Freizeitkleidung. Ein beigefarbener Strickpulli statt des weißen Kittels.*"
+        "text": "*Das Krankenzimmer. Auf dem Schreibtisch stapeln sich Unterlagen und Untersuchungsgeräte. Die Schulkrankenschwester sortiert sie ruhig.*"
     },
     "hidden_nurse_d4_1_ins2": {
         "name": "Schulkrankenschwester",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_2_ins3": {
         "name": "{name}",
-        "text": "*Ihr Lachen ist natürlich. Anders als in der Schule. Ohne den weißen Kittel ist die Schulkrankenschwester keine Lehrerin — eher wie eine große Schwester.*"
+        "text": "*Ihr Lächeln kommt ganz natürlich. - Sie wirkt anders als in der Schule. Heute fühlt sie sich weniger wie eine Lehrerin an und mehr wie... jemand, bei dem man sich wohlfühlt.*"
     },
     "hidden_nurse_d4_2_ins4": {
         "name": "{name}",

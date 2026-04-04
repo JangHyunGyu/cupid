@@ -1,7 +1,7 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Vor dem Brunnen. Seoyeon steht da. Nicht ihre übliche Schuluniform — Freizeitkleidung. Eine weiße Bluse und ein Rock.*"
+        "text": "*Vor dem Brunnen steht Seoyeon. Sie war vor mir da.*"
     },
     "date_seo_2": {
         "name": "{name}",
@@ -11,7 +11,7 @@
         "name": "{name}",
         "text": "*Was sage ich?*",
         "choices": [
-            "Ohne Brille heute.",
+            "Du siehst heute wirklich schön aus.",
             "Du hast dir heute echt Mühe gegeben."
         ]
     },

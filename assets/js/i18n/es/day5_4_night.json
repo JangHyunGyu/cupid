@@ -49,7 +49,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*La azotea de Seoyeon. Está de pie entre las macetas que ella misma cultivó.*"
+        "text": "*Es la primera vez que veo a Seoyeon tan derrumbada. - Está llorando.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -653,7 +653,7 @@
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
-        "text": "*La terraza de un café. Los cerezos revolotean. Al entrar — veo un cabello castaño ondulado familiar junto a la ventana. Una chaqueta de lino en lugar del cárdigan.*"
+        "text": "*Terraza del café. Los pétalos de cerezo vuelan por el aire. Cuando entro... veo a alguien familiar en la mesa junto a la ventana.*"
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Profesora",
@@ -707,7 +707,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "Enfermera",
-        "text": "*Quien abrió la puerta no lleva bata blanca — sino un cárdigan, descalza.* ...Viniste. No pensé que vendrías de verdad."
+        "text": "*La persona que abre la puerta tiene una expresión mucho más relajada que en la enfermería.* ...Viniste. No creí que de verdad lo harías."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -743,7 +743,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*El aula vacía. Donde escribía. — La profesora espera. En ropa casual.*"
+        "text": "*Un aula vacía. La misma aula donde escribía el manuscrito. - Mi tutora está esperando.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Profesora",
@@ -779,7 +779,7 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*'Felicidades. Te espero en el café.' — Al despegarla, hay un pequeño mapa dentro. La enfermera está sentada en el café. No lleva su bata blanca — suéter rosa y vaqueros. Los lentes siguen ahí, pero la vibra es diferente. No es la enfermera del colegio — es solo una mujer en un café.*"
+        "text": "*'Felicidades por graduarte. Te espero en el café.' - Al despegar la tirita, hay un pequeño mapa por dentro. La enfermera escolar está sentada en el café. Tiene una expresión mucho más relajada que en la enfermería. Solo... como alguien que había venido a esperarme.*"
     },
     "hidden_true_nurse_3": {
         "name": "Enfermera",
@@ -971,7 +971,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*La maceta de romero se mudó a la ventana. El lado soleado. — Alguien con delantal en vez de bata blanca la riega.*"
+        "text": "*La maceta de romero ha sido movida al alféizar. Al lado donde da mejor el sol. - Ella la riega.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1015,7 +1015,7 @@
     },
     "hidden_true_homeroom_2_ins": {
         "name": "{name}",
-        "text": "*Sin cárdigan, sin portapapeles. Un jersey cómodo y falda larga. — Ropa de calle.*"
+        "text": "*Está apoyada junto a la ventana del fondo del aula. Tiene un rostro al que ya no le quedan ni clases ni trabajo.*"
     },
     "hidden_true_homeroom_3_ins": {
         "name": "{name}",
