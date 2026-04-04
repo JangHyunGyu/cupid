@@ -426,11 +426,9 @@ function generateJS(baseName, scenes) {
     const dayNum = parseInt(baseName.match(/day(\d)/)[1]);
     const entries = [];
     const fileMapEntries = [];
-    const firstScene = scenes.values().next().value || null;
     const fileMeta = {};
     const isNightFile = /_night$/.test(baseName);
-    // Files that open with sunset BGM are treated as full-file sunset scenes.
-    const isSunsetFile = !!(firstScene && typeof firstScene.bgm === 'string' && /^sunset/i.test(firstScene.bgm));
+    const isSunsetFile = /_(afternoon|afterschool)$/.test(baseName);
 
     if (isNightFile) fileMeta.night = true;
     if (isSunsetFile) fileMeta.sunset = true;

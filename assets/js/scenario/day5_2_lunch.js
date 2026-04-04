@@ -7,66 +7,6 @@
 if (typeof SCENARIO === 'undefined') var SCENARIO = {};
 if (!SCENARIO[5]) SCENARIO[5] = {};
 
-if (typeof SCENARIO_FILE_META === 'undefined') var SCENARIO_FILE_META = {};
-Object.assign(SCENARIO_FILE_META, {
-    "day5_2_lunch": {"sunset":true}
-});
-
-if (typeof SCENARIO_FILE_MAP === 'undefined') var SCENARIO_FILE_MAP = {};
-Object.assign(SCENARIO_FILE_MAP, {
-    "tour_seo_1": "day5_2_lunch",
-    "tour_seo_2": "day5_2_lunch",
-    "tour_seo_3": "day5_2_lunch",
-    "tour_seo_4": "day5_2_lunch",
-    "tour_seo_5": "day5_2_lunch",
-    "tour_seo_6": "day5_2_lunch",
-    "tour_seo_7": "day5_2_lunch",
-    "tour_seo_8": "day5_2_lunch",
-    "tour_seo_9": "day5_2_lunch",
-    "tour_seo_10": "day5_2_lunch",
-    "tour_seo_11": "day5_2_lunch",
-    "tour_seo_12": "day5_2_lunch",
-    "tour_seo_13": "day5_2_lunch",
-    "tour_seo_14": "day5_2_lunch",
-    "tour_seo_freetalk": "day5_2_lunch",
-    "tour_seo_end": "day5_2_lunch",
-    "tour_yuna_1_check": "day5_2_lunch",
-    "tour_yuna_1": "day5_2_lunch",
-    "tour_yuna_1b": "day5_2_lunch",
-    "tour_yuna_2": "day5_2_lunch",
-    "tour_yuna_3": "day5_2_lunch",
-    "tour_yuna_4": "day5_2_lunch",
-    "tour_yuna_5": "day5_2_lunch",
-    "tour_yuna_6": "day5_2_lunch",
-    "tour_yuna_7": "day5_2_lunch",
-    "tour_yuna_8": "day5_2_lunch",
-    "tour_yuna_9": "day5_2_lunch",
-    "tour_yuna_10": "day5_2_lunch",
-    "tour_yuna_11": "day5_2_lunch",
-    "tour_yuna_freetalk": "day5_2_lunch",
-    "tour_yuna_end": "day5_2_lunch",
-    "tour_yuna_end_2": "day5_2_lunch",
-    "tour_dain_1_check": "day5_2_lunch",
-    "tour_dain_1": "day5_2_lunch",
-    "tour_dain_1b": "day5_2_lunch",
-    "tour_dain_2": "day5_2_lunch",
-    "tour_dain_3": "day5_2_lunch",
-    "tour_dain_4": "day5_2_lunch",
-    "tour_dain_5": "day5_2_lunch",
-    "tour_dain_6": "day5_2_lunch",
-    "tour_dain_7": "day5_2_lunch",
-    "tour_dain_8": "day5_2_lunch",
-    "tour_dain_9": "day5_2_lunch",
-    "tour_dain_10": "day5_2_lunch",
-    "tour_dain_11": "day5_2_lunch",
-    "tour_dain_11_ins": "day5_2_lunch",
-    "tour_dain_12": "day5_2_lunch",
-    "tour_dain_13": "day5_2_lunch",
-    "tour_dain_end": "day5_2_lunch",
-    "tour_dain_freetalk": "day5_2_lunch",
-    "tour_dain_end_2": "day5_2_lunch"
-});
-
 Object.assign(SCENARIO[5], {
     "tour_seo_1": {
         "background": "assets/images/background/school.png",
