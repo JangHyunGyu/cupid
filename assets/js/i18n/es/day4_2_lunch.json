@@ -1,7 +1,7 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Frente a la fuente. Seoyeon está de pie. No lleva el uniforme de siempre, sino ropa casual. Una blusa blanca y una falda.*"
+        "text": "*Frente a la fuente está Seoyeon. Ha llegado antes que yo.*"
     },
     "date_seo_2": {
         "name": "{name}",
@@ -11,7 +11,7 @@
         "name": "{name}",
         "text": "*¿Qué le digo?*",
         "choices": [
-            "Viniste sin gafas.",
+            "Hoy estás de verdad muy guapa.",
             "Te has arreglado mucho hoy."
         ]
     },

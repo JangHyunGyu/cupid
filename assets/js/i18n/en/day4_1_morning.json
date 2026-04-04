@@ -21,7 +21,7 @@
     },
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*I take a deep breath and check the messages again.*"
+        "text": "*I take a deep breath and check the message again.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*The school gate is slightly ajar. Signs of life inside. — Someone walks out. It's the homeroom teacher. In casual clothes.*"
+        "text": "*The school gate is slightly open. I hear movement inside. - Someone comes out by the gate. It's my homeroom teacher.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Homeroom Teacher",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*The homeroom teacher in casual clothes doesn't look like a teacher. Just — like someone who writes.*"
+        "text": "*Seeing her outside the school gate, she doesn't look like a teacher. Just - like a writer.*"
     },
     "hidden_homeroom_d4_4_ins": {
         "name": "Homeroom Teacher",
@@ -147,7 +147,7 @@
         "name": "Homeroom Teacher",
         "text": "*Talking with the homeroom teacher at a cafe.*",
         "context": "Day 4. Ran into the teacher on the weekend, went to a cafe. She asked you to be her first reader. Tone: Conversation has gotten serious. Date excitement and nervousness. More sincerity than jokes. Moments of emotional honesty.",
-        "personality": "The teacher is more relaxed in casual clothes. Torn between passion for writing and feelings for a student."
+        "personality": "My homeroom teacher is more at ease outside of school. She wavers between her passion for novels and her feelings toward the student."
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",
@@ -303,7 +303,7 @@
         "name": "School Nurse",
         "text": "*Chatting with the nurse in the nurse's office.*",
         "context": "Day 4. Weekend. Helped with health checkup prep, had a meal at a snack shop, and returned to the nurse's office to talk. Talking about university hospital burnout. Tone: Conversation has become serious. Excitement and tension of a date. More sincerity than jokes. Moments where emotions become honest.",
-        "personality": "The nurse in casual clothes feels like an older sister. Playfulness and sincerity alternate, and she understands the weight of being called by name."
+        "personality": "The school nurse feels more approachable outside the classroom. Playfulness and sincerity coexist in her, and she understands the weight of being called by name."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d4_cafe_4_ins": {
         "name": "{name}",
-        "text": "*Déjà vu. She said something similar in the empty classroom yesterday. But today, in a café and dressed casually, it sounds lighter. No — more serious.*"
+        "text": "*Deja vu. She said something similar in the empty classroom yesterday. - But today, in a cafe, outside of school, it sounds lighter. No - more serious.*"
     },
     "hidden_homeroom_d4_cafe_5_ins": {
         "name": "{name}",
@@ -483,7 +483,7 @@
     },
     "hidden_homeroom_d4_cafe_5_ins7": {
         "name": "{name}",
-        "text": "*She takes her hands out of her pockets. A motion like adjusting her cardigan — oh, she's in casual clothes. An empty gesture.*"
+        "text": "*She takes her hand out of her pocket. Her fingertips hover in the air for a moment. A habitual gesture.*"
     },
     "hidden_homeroom_d4_decline_ins": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_nurse_d4_1_ins": {
         "name": "{name}",
-        "text": "*The nurse's office. Papers and checkup equipment piled on the desk. The School Nurse is sorting things in casual clothes. A beige knit instead of the white coat.*"
+        "text": "*The infirmary. Papers and health-check tools are piled on the desk. The nurse is quietly sorting through them.*"
     },
     "hidden_nurse_d4_1_ins2": {
         "name": "School Nurse",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_2_ins3": {
         "name": "{name}",
-        "text": "*Her laugh is natural. Different from how she is at school. Out of the white coat, the School Nurse isn't a teacher — she's more like an older sister.*"
+        "text": "*Her smile comes naturally. - She's different from how she is at school. Today, she feels less like a teacher and more like just... someone easy to be around.*"
     },
     "hidden_nurse_d4_2_ins4": {
         "name": "{name}",

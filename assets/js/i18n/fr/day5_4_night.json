@@ -49,7 +49,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Le toit de Seoyeon. Elle se tient parmi les plantes qu'elle a cultivées elle-même.*"
+        "text": "*C’est la première fois que je vois Seoyeon aussi défaite. - Elle pleure.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -661,7 +661,7 @@
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
-        "text": "*La terrasse d'un café. Les cerisiers virevoltent. En entrant — j'aperçois des cheveux bruns ondulés familiers près de la fenêtre. Une veste en lin au lieu du cardigan.*"
+        "text": "*Terrasse du café. Les pétales de cerisier volent. En entrant... j'aperçois quelqu'un de familier à la place près de la fenêtre.*"
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Professeure principale",
@@ -715,7 +715,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "Infirmière scolaire",
-        "text": "*Celle qui a ouvert la porte n'est pas en blouse blanche — cardigan et pieds nus.* ...Tu es venu. Je ne pensais pas que tu viendrais vraiment."
+        "text": "*La personne qui ouvre la porte a l'air bien plus détendue qu'à l'infirmerie.* ...Tu es venu. Je ne pensais pas que tu viendrais vraiment."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -751,7 +751,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*La salle vide. Celle où elle écrivait. — La prof principale attend. En civil.*"
+        "text": "*Une salle de classe vide. Celle où elle écrivait son manuscrit. - Ma prof principale m'attend.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Professeure principale",
@@ -787,7 +787,7 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*« Félicitations. Je t'attends au café. » — En décollant le pansement, il y a un petit plan à l'intérieur. L'infirmière scolaire est assise au café. Plus de blouse blanche — un pull rose et un jean. Elle a gardé ses lunettes, mais l'atmosphère est différente. Ce n'est plus l'infirmière scolaire — juste une femme dans un café.*"
+        "text": "*« Félicitations pour ton diplôme. Je t'attends au café. » - En retirant le pansement, je découvre un petit plan à l'intérieur. L'infirmière scolaire est assise au café. Elle a l'air bien plus détendue qu'à l'infirmerie. Juste... comme quelqu'un qui était venu m'attendre.*"
     },
     "hidden_true_nurse_3": {
         "name": "Infirmière scolaire",
@@ -971,7 +971,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*Le pot de romarin a déménagé près de la fenêtre. Côté soleil. — Quelqu'un en tablier au lieu d'une blouse blanche l'arrose.*"
+        "text": "*Le pot de romarin a été déplacé près de la fenêtre. Du côté où le soleil entre bien. - C'est elle qui l'arrose.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1015,7 +1015,7 @@
     },
     "hidden_true_homeroom_2_ins": {
         "name": "{name}",
-        "text": "*Pas de cardigan, pas de porte-bloc. Un pull confortable et une jupe longue. — En civil.*"
+        "text": "*Elle est appuyée près de la fenêtre au fond de la salle. Un visage où il n’y a plus ni cours ni travail.*"
     },
     "hidden_true_homeroom_3_ins": {
         "name": "{name}",

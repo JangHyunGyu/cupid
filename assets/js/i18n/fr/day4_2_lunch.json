@@ -1,7 +1,7 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Devant la fontaine. Seoyeon est là, debout. Pas son uniforme habituel — des vêtements décontractés. Un chemisier blanc et une jupe.*"
+        "text": "*Devant la fontaine, Seoyeon est là. Elle était arrivée avant moi.*"
     },
     "date_seo_2": {
         "name": "{name}",
@@ -11,7 +11,7 @@
         "name": "{name}",
         "text": "*Qu’est-ce que je dis ?*",
         "choices": [
-            "T’es venue sans lunettes.",
+            "Tu es vraiment belle aujourd'hui.",
             "Tu t’es vraiment préparée aujourd’hui."
         ]
     },

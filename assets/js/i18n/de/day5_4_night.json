@@ -49,7 +49,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeons Dachterrasse. Sie steht zwischen den Pflanzen, die sie selbst gezogen hat.*"
+        "text": "*Zum ersten Mal sehe ich Seoyeon so völlig aufgelöst. - Sie weint.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -653,7 +653,7 @@
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
-        "text": "*Die Terrasse eines Cafés. Kirschblüten wehen. Beim Eintreten — sehe ich vertrautes braunes Wellenhaar am Fensterplatz. Eine Leinenjacke statt des Cardigans.*"
+        "text": "*Caféterrasse. Kirschblüten wehen durch die Luft. Als ich hereinkomme, sehe ich am Fensterplatz eine vertraute Person.*"
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Klassenlehrerin",
@@ -707,7 +707,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Person, die die Tür öffnete, trägt keinen weißen Kittel — Strickjacke, barfuß.* ...Du bist gekommen. Ich hätte nicht gedacht, dass du wirklich kommst."
+        "text": "*Die Person, die die Tür öffnet, wirkt viel entspannter als im Krankenzimmer.* ...Du bist gekommen. Ich hätte nicht gedacht, dass du wirklich kommst."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -743,7 +743,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*Das leere Klassenzimmer. Das, in dem sie geschrieben hat. — Die Klassenlehrerin wartet. In Freizeitkleidung.*"
+        "text": "*Ein leerer Klassenraum. Derselbe Raum, in dem sie am Manuskript schrieb. - Meine Klassenlehrerin wartet.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Klassenlehrerin",
@@ -779,7 +779,7 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*'Glückwunsch. Ich warte im Café.' — Unter dem Pflaster eine kleine Karte. Die Schulkrankenschwester sitzt im Café. Nicht im weißen Kittel — sondern in einem elfenbeinfarbenen Kleid. Ohne ihre übliche Brille, das braune Haar offen.*"
+        "text": "*'Glückwunsch zum Abschluss. Ich warte im Café auf dich.' - Als ich das Pflaster ablöse, finde ich innen eine kleine Wegskizze. Die Schulkrankenschwester sitzt im Café. Sie wirkt viel entspannter als im Krankenzimmer. Einfach - wie jemand, der auf mich gewartet hat.*"
     },
     "hidden_true_nurse_3": {
         "name": "Schulkrankenschwester",
@@ -971,7 +971,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*Der Rosmarintopf ist ans Fenster umgezogen. Die sonnige Seite. — Jemand mit Schürze statt weißem Kittel gießt ihn.*"
+        "text": "*Der Rosmarintopf wurde ans Fenster gestellt. Auf die Seite mit dem guten Licht. - Sie gießt ihn.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1015,7 +1015,7 @@
     },
     "hidden_true_homeroom_2_ins": {
         "name": "{name}",
-        "text": "*Keine Strickjacke, kein Klemmbrett. Ein gemütlicher Pullover und langer Rock. — Alltagskleidung.*"
+        "text": "*Sie lehnt am Fenster hinten im Klassenraum. Ein Gesicht, auf dem weder Unterricht noch Arbeit mehr liegen.*"
     },
     "hidden_true_homeroom_3_ins": {
         "name": "{name}",
