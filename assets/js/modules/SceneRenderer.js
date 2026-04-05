@@ -352,9 +352,33 @@ class SceneRenderer {
      */
     async updateCharacters(scene, sceneId) {
         // 캐릭터 정보가 없으면 리턴 (이전 캐릭터 유지)
-        if (!scene.hasOwnProperty('characters') && !scene.hasOwnProperty('character')) return;
+        if (
+            !scene.hasOwnProperty('characters')
+            && !scene.hasOwnProperty('character')
+            && !(
+                scene.background
+                && typeof REGISTERED_CG_IDS !== 'undefined'
+                && REGISTERED_CG_IDS.has(
+                    scene.background.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '')
+                )
+            )
+        ) return;
 
         // 호출 ID로 이전 비동기 작업 무효화
+        const backgroundId = scene.background
+            ? scene.background.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '')
+            : '';
+        const isRegisteredCG = !!backgroundId
+            && typeof REGISTERED_CG_IDS !== 'undefined'
+            && REGISTERED_CG_IDS.has(backgroundId);
+        const shouldHideCharactersForCG = isRegisteredCG && !scene.allowCharacterOnCG;
+
+        // Registered CG scenes should not render standing characters unless
+        // they explicitly opt in.
+        if (!shouldHideCharactersForCG
+            && !scene.hasOwnProperty('characters')
+            && !scene.hasOwnProperty('character')) return;
+
         this._charUpdateId = (this._charUpdateId || 0) + 1;
         const updateId = this._charUpdateId;
 
@@ -362,7 +386,7 @@ class SceneRenderer {
         const charOptions = {};    // 슬롯별 옵션 (투명도 등)
 
         // 씬 데이터 파싱
-        if (scene.characters) {
+        if (!shouldHideCharactersForCG && scene.characters) {
             // 다중 캐릭터: { left: "url", center: {src: "url", opacity: 0.5}, ... }
             Object.entries(scene.characters).forEach(([pos, value]) => {
                 const posKey = pos.toLowerCase();
@@ -376,7 +400,7 @@ class SceneRenderer {
                     charOptions[posKey] = { opacity: 1 };
                 }
             });
-        } else if (scene.character) {
+        } else if (!shouldHideCharactersForCG && scene.character) {
             // 단일 캐릭터: 중앙에 배치
             newCharMap['center'] = getAssetUrl(scene.character);
             charOptions['center'] = { opacity: 1 };
