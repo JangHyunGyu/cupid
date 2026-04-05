@@ -1,11 +1,11 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Después de clases. El eco del almuerzo aún pesa. — Aun así, tengo que ir a algún sitio.*"
+        "text": "*Después de clases. Las secuelas del almuerzo aún persisten. Más que ir a encontrarme con alguien, tengo que decidir a quién ir a arreglar el desastre primero.*"
     },
     "after3_route_check": {
         "name": "{name}",
-        "text": "*Después de clases. Reviso mi teléfono.*"
+        "text": "*Reviso mi teléfono. No hay respuesta, y la hora de la cita se acerca.*"
     },
     "after3_auto_dain": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Los planes se superponen. — Todas están esperando. ¿A quién voy primero?*",
+        "text": "*Las citas se han superpuesto. Para ser exactos, yo hice que se superpusieran. Si huyo, será aún peor. ¿A quién iré a arreglar las cosas primero?*",
         "choices": [
             "Ir con Seoyeon",
             "Ir con Yuna",

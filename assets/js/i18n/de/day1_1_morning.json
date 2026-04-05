@@ -94,11 +94,11 @@
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
-        "text": "Ach so? Na gut. Dann viel Spaß."
+        "text": "Ach so? Dann merk dir wenigstens die Klassenzimmernummer. Klasse 3-2, ganz rechts."
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*Seoyeon dreht sich zuerst um. Diesmal kein Winken.*"
+        "text": "*Seoyeon drehte sich wirklich um. Ohne eine Geste. Ich tastete mich nur an den Flur-Wegweisern entlang und kam gerade so vor dem Klassenzimmer an. — Ich habe meine Wahl getroffen, und die Verantwortung liegt bei mir.*"
     },
     "choice_flirt_1": {
         "name": "{name}",

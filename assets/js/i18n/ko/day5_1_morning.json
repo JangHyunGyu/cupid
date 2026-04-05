@@ -3,9 +3,23 @@
         "name": "{name}",
         "text": "*다섯째 날. 일요일이지만 학교 행사가 있다. 교복이 편해졌다. — 이 사람들 때문이다. 알고 있다.*"
     },
+    "morning5_start_branch": {},
     "morning5_start_ins": {
         "name": "{name}",
         "text": "*교실에 들어서자마자 — 세 방향에서 신호가 온다.*"
+    },
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
+        "name": "{name}",
+        "text": "*책상 위에 새 쪽지는 없다. 대신 어제 옥상에서 마주 본 서연의 눈빛이 아직 선명하다. 유나와 다인은 행사 준비 얘기만 짧게 건넨다.*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*새 메모는 없다. 대신 어제 유나가 드물게 오래 붙잡고 있던 시선이 아직 남아 있다. 서연과 다인은 행사 준비 얘기만 짧게 건넨다.*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*다인의 느낌표보다 어제 마지막에 멈췄던 숨이 먼저 떠오른다. 서연과 유나는 행사 준비 얘기만 짧게 건넨다.*"
     },
     "morning5_start_2": {
         "name": "{name}",
@@ -418,8 +432,13 @@
         "name": "보건선생님",
         "text": "*보건선생님과 보건실 앞에서 마지막 대화.*"
     },
+    "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
         "text": "*세 방향에서 보낸 신호. — 답을 골라야 한다.*"
+    },
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*세 방향에서 온 신호가 아니다. 이미 답을 고른 채, 마지막 행사 순서를 향한다.*"
     }
 }

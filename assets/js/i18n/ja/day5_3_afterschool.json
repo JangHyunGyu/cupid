@@ -190,7 +190,7 @@
     },
     "after5_last_chance_2_ins7": {
         "name": "ソヨン",
-        "text": "でも——遅くない。逃げずに戻ってきたから。"
+        "text": "でも—今度は、このまま見過ごしたくない。あなたが逃げずに戻ってきたから。"
     },
     "after5_last_chance_2_ins8": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_2_ins17": {
         "name": "ダイン",
-        "text": "あたし——待ってたんだよ。昨日から。ていうか一昨日から。"
+        "text": "私—待ってたんだ。昨日から。いや、一昨日から。でも、待ってたからってすぐに大丈夫になるわけじゃないんだ。"
     },
     "after5_last_chance_2_ins18": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "ユナ",
-        "text": "...今度は、聞いていくよ。"
+        "text": "…今度は、聞いていくよ。すぐに大丈夫だとは言えないけど。"
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "ソヨン",
-        "text": "*並んで歩きながら。* ...遅い。でも——遅くない。逃げずに戻ってきたから。"
+        "text": "*並んで歩きながら。*…遅いよ。でも、今度は逃げなかったね。その言葉、今日は軽く流さないから。"
     },
     "after5_confess_react_seo_low": {
         "name": "ソヨン",
@@ -322,7 +322,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "ダイン",
-        "text": "*学校を出ながら。* え、マジ？！…マジで？あたし——待ってたんだよ。昨日から。っていうか一昨日から。"
+        "text": "*学校を出ながら。*ねえ、マジで？！…本当に？私、待ってはいたんだ。でも、待ってたからってすぐに笑っちゃったら、ちょっと悔しいじゃない。だから、今度は最後まで言って。"
     },
     "after5_confess_react_dain_low": {
         "name": "ダイン",
@@ -331,7 +331,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "ユナ",
-        "text": "*並んで歩いた。* ...知ってた。...読んでくれたなら、それでいい。"
+        "text": "*並んで歩いた。*…知ってはいたよ。それでも今日は、最後まで読むよ。"
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

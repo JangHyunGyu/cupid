@@ -7,22 +7,6 @@
         "name": "시스템",
         "text": ""
     },
-    "after5_hidden_farewell_1": {
-        "name": "{name}",
-        "text": "*교문 앞. 멀리서 세 사람이 보인다. 서연이 하은과 걸어가고, 다인이 배구공을 던지며 뛰어가고, 유나가 책을 읽으며 천천히 걷는다.*"
-    },
-    "after5_hidden_farewell_2": {
-        "name": "{name}",
-        "text": "*아무도 이쪽을 보지 않는다. — 그게 오히려 다행이다. 지금은 누구하고도 눈을 마주칠 자신이 없다.*"
-    },
-    "after5_hidden_farewell_3": {
-        "name": "{name}",
-        "text": "*미안하다는 말은 쉽게 못 하겠다. 그 말로 정리되는 마음들이 아니니까. 그냥 마음속으로만, 천천히. 고마웠어.*"
-    },
-    "after5_hidden_farewell_3b": {
-        "name": "{name}",
-        "text": "*학교 뒤편으로 걸어갔다.*"
-    },
     "after5_farewell_seo_1": {
         "name": "{name}",
         "text": "*복도에서 서연과 마주친다.*"
@@ -121,6 +105,22 @@
         "name": "{name}",
         "text": "*체육관을 나서 학교 뒤편으로 향했다.*"
     },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*교문 앞. 멀리서 세 사람이 보인다. 서연이 하은과 걸어가고, 다인이 배구공을 던지며 뛰어가고, 유나가 책을 읽으며 천천히 걷는다.*"
+    },
+    "after5_hidden_farewell_2": {
+        "name": "{name}",
+        "text": "*아무도 이쪽을 보지 않는다. — 그게 오히려 다행이다. 지금은 누구하고도 눈을 마주칠 자신이 없다.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*미안하다는 말은 쉽게 못 하겠다. 그 말로 정리되는 마음들이 아니니까. 그냥 마음속으로만, 천천히. 고마웠어.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*학교 뒤편으로 걸어갔다.*"
+    },
     "after5_sunset_1": {
         "name": "{name}",
         "text": "*해가 지고 있다. 5일이 끝나간다.*"
@@ -145,6 +145,10 @@
     "after5_set_harem": {
         "name": "{name}",
         "text": "*점심때 억지로 웃으며 넘긴 균열이 아직 그대로다. 누구 하나로 끝낼 수 없는 밤이 될 것 같다.*"
+    },
+    "after5_harem_commit": {
+        "name": "{name}",
+        "text": "*모른 척하고 넘기려 했던 말이 결국 입 밖으로 나온다. 하나를 고르지 못하겠다고. 비겁한 말인 걸 알면서도, 오늘은 그 대가까지 같이 안기로 한다.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -190,7 +194,7 @@
     },
     "after5_last_chance_2_ins7": {
         "name": "서연",
-        "text": "근데 — 안 늦었어. 네가 도망치지 않고 돌아왔으니까."
+        "text": "근데 — 이번엔 그냥 보내고 싶진 않아. 네가 도망치지 않고 돌아왔으니까."
     },
     "after5_last_chance_2_ins8": {
         "name": "{name}",
@@ -239,7 +243,7 @@
     },
     "after5_last_chance_2_ins17": {
         "name": "다인",
-        "text": "나 — 기다렸거든. 어제부터. 아니 그저께부터."
+        "text": "나 — 기다렸거든. 어제부터. 아니 그저께부터. 근데 기다렸다고 바로 괜찮아지는 건 또 아니야."
     },
     "after5_last_chance_2_ins18": {
         "name": "{name}",
@@ -276,7 +280,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "유나",
-        "text": "...이번엔, 듣고 갈게."
+        "text": "...이번엔, 듣고 갈게. 바로 괜찮다고는 못 해도."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -313,7 +317,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "서연",
-        "text": "*나란히 걸어가며.* ...늦었어. 근데 — 안 늦었어. 네가 도망치지 않고 돌아왔으니까."
+        "text": "*나란히 걸어가며.* ...늦었어. 그래도 이번엔 도망치지 않았네. 그 말, 오늘은 가볍게 넘기지 않을게."
     },
     "after5_confess_react_seo_low": {
         "name": "서연",
@@ -322,7 +326,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "다인",
-        "text": "*학교를 나서며.* 야, 진짜?! ...진짜? 나 — 기다렸거든. 어제부터. 아니 그저께부터."
+        "text": "*학교를 나서며.* 야, 진짜?! ...진짜? 나, 기다리긴 했어. 근데 기다렸다고 바로 웃어버리면 좀 억울하잖아. 그러니까 이번엔 끝까지 말해."
     },
     "after5_confess_react_dain_low": {
         "name": "다인",
@@ -331,7 +335,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "유나",
-        "text": "*나란히 걸었다.* ...알고 있었어. ...읽었으면 됐어."
+        "text": "*나란히 걸었다.* ...알고는 있었어. 그래도 오늘은, 끝까지 읽을게."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

@@ -267,7 +267,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Ich blieb kurz stehen — und ging weiter. Heute Nacht gehört Seoyeon. Aber meine Füße sind schwer.*"
+        "text": "*Nachdem ich eine ganze Weile hinter der Schule gestanden hatte, bin ich schließlich nach Hause zurückgekehrt. Denn jetzt ist Seoyeons Nacht. Aber meine Füße sind schwer.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -831,7 +831,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt. — Kein Zittern. Diesmal wirklich.*"
+        "text": "*Nachdem ich mich eine Weile nicht von hinter der Schule lösen konnte, bin ich schließlich nach Hause zurückgekehrt. Die Worte, die ich heute gehört hatte, waren alle nicht leicht. Deshalb bleiben sie länger.*"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -847,15 +847,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Der Wind war schön heute."
+        "text": "Der Wind war heute schön. Deshalb... hatte ich ein wenig Hoffnung. Umsonst."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Hey, heute war voll lustig lol"
+        "text": "Hey, heute war es lustig, haha. ...Ich hätte gehofft, dass ich nicht die Einzige war, die so aufgeregt war."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",
-        "text": "...Heute."
+        "text": "...Heute. Ich hatte ein wenig Hoffnung. Deshalb wurde ich noch ruhiger."
     },
     "day4_night_regret_msg": {
         "name": "{name}",

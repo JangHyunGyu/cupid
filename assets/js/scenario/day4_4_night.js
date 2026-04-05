@@ -1125,6 +1125,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "next": "day4_hidden_msg_branch"
     },
+    "day4_night_reflect": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "day4_hidden_msg_branch"
+    },
     "day4_hidden_msg_branch": {
         "background": "assets/images/background/room_my.png",
         "character": null,
@@ -1176,11 +1181,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/nurse_normal.png","opacity":0.35}},
         "next": "day4_night_sleep"
-    },
-    "day4_night_reflect": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "day4_hidden_msg_branch"
     },
     "day4_night_sleep": {
         "background": "assets/images/background/room_my.png",

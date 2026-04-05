@@ -94,11 +94,11 @@
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
-        "text": "Ah bon ? D'accord. Bonne chance alors."
+        "text": "Vraiment ? Alors retiens au moins le numéro de la salle de classe. Troisième année, salle 2, tout au fond à droite."
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*Seoyeon se retourne en premier. Pas de geste de la main cette fois.*"
+        "text": "*Seoyeon a vraiment tourné les talons. Sans un geste. J'ai dû tâtonner pour trouver le panneau d'affichage du couloir et j'ai à peine réussi à arriver devant la salle de classe. — J'ai fait mon choix, et la responsabilité m'incombe.*"
     },
     "choice_flirt_1": {
         "name": "{name}",

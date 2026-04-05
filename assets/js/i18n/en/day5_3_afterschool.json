@@ -190,7 +190,7 @@
     },
     "after5_last_chance_2_ins7": {
         "name": "Seoyeon",
-        "text": "But — not too late. Because you came back instead of running."
+        "text": "But — this time, I don't want to just let you go. Because you came back without running away."
     },
     "after5_last_chance_2_ins8": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_2_ins17": {
         "name": "Dain",
-        "text": "I — I've been waiting. Since yesterday. No, since the day before."
+        "text": "I — I've been waiting. Since yesterday. No, since the day before yesterday. But just because I waited doesn't mean everything's immediately okay."
     },
     "after5_last_chance_2_ins18": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...This time, I'll stay and listen."
+        "text": "...This time, I'll listen. Even if I can't say it's okay right away."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Walking side by side.* ...You're late. But — not too late. Because you came back instead of running."
+        "text": "*Walking side-by-side.* ...It's late. But at least you didn't run away this time. I won't take those words lightly today."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -322,7 +322,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Leaving the school.* Wait, for real?! ...For real? I — I've been waiting. Since yesterday. No, since the day before."
+        "text": "*Leaving school.* Hey, really?! ...Really? I mean, I did wait. But if I just smile right away after waiting, that's a bit unfair, isn't it? So this time, say it all the way."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -331,7 +331,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*We walked side by side.* ...I already knew. ...If you read it, that's enough."
+        "text": "*We walked side-by-side.* ...I knew it. But today, I'll read it all the way through."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

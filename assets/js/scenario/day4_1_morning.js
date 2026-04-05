@@ -73,7 +73,20 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "minsu_cheer_4_ins": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_4_ins2"
+        "next": "minsu_cheer_4_branch"
+    },
+    "minsu_cheer_4_branch": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "branches": [
+            { "condition": "day3_has_multiple_dates", "next": "minsu_cheer_4_ins2" },
+            { "next": "minsu_cheer_4_ins_single" }
+        ]
+    },
+    "minsu_cheer_4_ins_single": {
+        "background": "assets/images/background/room_my.png",
+        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
+        "next": "morning4_start_2"
     },
     "minsu_cheer_4_ins2": {
         "background": "assets/images/background/room_my.png",
@@ -123,26 +136,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "morning4_yuna_msg_1_ins": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "morning4_yuna_msg_1_ins2"
+        "next": "morning4_yuna_msg_single"
     },
-    "morning4_yuna_msg_1_ins2": {
+    "morning4_yuna_msg_single": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "morning4_yuna_msg_1_ins3"
-    },
-    "morning4_yuna_msg_1_ins3": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "morning4_yuna_msg_1_ins4"
-    },
-    "morning4_yuna_msg_1_ins4": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "morning4_yuna_msg_1_ins5"
-    },
-    "morning4_yuna_msg_1_ins5": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "morning4_hidden_check"
     },
     "morning4_dain_msg_1": {

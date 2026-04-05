@@ -1,11 +1,11 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*After school. The weight of lunch still lingers. — But I need to go somewhere.*"
+        "text": "*After school. The aftermath of lunch still lingers. Rather than deciding who to meet, I need to decide who to go to first to fix what I messed up.*"
     },
     "after3_route_check": {
         "name": "{name}",
-        "text": "*After school. Checking my phone.*"
+        "text": "*I check my phone. No reply, and the meeting time is just getting closer.*"
     },
     "after3_auto_dain": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Plans overlap. — They're all waiting. Who do I go to first?*",
+        "text": "*My plans overlapped. To be precise, I made them overlap. Running away would be even worse. Who should I go to first to fix this?*",
         "choices": [
             "Go to Seoyeon",
             "Go to Yuna",

@@ -99,7 +99,7 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*The three of us shared it. No one gets angry right away. Still, none of them looks comfortable. We only pushed it off for today.*"
+        "text": "*In the end, the three of us shared a little bit. Seoyeon smiled politely, Dain was overly cheerful, and Yuna never took out the folded note. It wasn't over; it was just postponed.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -224,11 +224,11 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*Lunch is over.*"
+        "text": "*Lunchtime is over. But nothing is truly over.*"
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*I suggested we all share. There are smiles, but the air feels strangely heavy. All three of them are pretending this is fine.*"
+        "text": "*I suggested we all share. It was a peace offering brought up too late. All three of them smile, but no one reaches out first.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
@@ -335,7 +335,7 @@
     },
     "lunch3_meal_10_ins2": {
         "name": "{name}",
-        "text": "*After the other two leave, I'm alone with the one I chose. — I didn't know choosing could feel this heavy.*"
+        "text": "*No one leaves their seat. They're all smiling, but none of them can easily pick up their chopsticks. That last side dish just stands out.*"
     },
     "lunch3_meal_10_ins3": {
         "name": "{name}",

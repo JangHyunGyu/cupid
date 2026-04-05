@@ -99,7 +99,7 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*Wir haben es zu dritt geteilt. Niemand wurde sofort wütend. Trotzdem wirkte keine von ihnen entspannt. Wir haben es nur auf heute vertagt.*"
+        "text": "*Am Ende teilten sich die drei alles ein wenig. Seoyeon lächelt höflich, Dain ist übertrieben fröhlich, und Yuna holt den zusammengefalteten Zettel am Ende doch nicht hervor. Es ist nicht vorbei, es ist nur aufgeschoben.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -224,11 +224,11 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*Die Mittagspause ist vorbei.*"
+        "text": "*Die Mittagspause ist vorbei. Nichts ist wirklich vorbei.*"
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*Ich sagte, wir sollten es zusammen teilen. Da sind Lächeln, aber die Luft fühlt sich seltsam schwer an. Alle drei tun so, als wäre alles in Ordnung.*"
+        "text": "*Ich schlug vor, dass wir alles teilen. Ein Friedensangebot, das viel zu spät kam. Alle drei lächeln zwar, aber niemand streckt zuerst die Hand aus.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
@@ -335,7 +335,7 @@
     },
     "lunch3_meal_10_ins2": {
         "name": "{name}",
-        "text": "*Nachdem die anderen beiden gegangen sind, bleibe ich mit der allein, die ich gewählt habe. — Ich wusste nicht, dass Entscheidungen so schwer wiegen.*"
+        "text": "*Niemand verlässt seinen Platz. Sie lächeln zwar, aber keiner von den dreien nimmt die Stäbchen einfach in die Hand. Das letzte Beilagengericht sticht unnötigerweise ins Auge.*"
     },
     "lunch3_meal_10_ins3": {
         "name": "{name}",

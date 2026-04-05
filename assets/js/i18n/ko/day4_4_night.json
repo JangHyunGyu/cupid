@@ -267,7 +267,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*잠깐 멈췄다가 — 걸음을 옮겼다. 지금은 서연의 밤이니까. 근데 발이 무겁다.*"
+        "text": "*한참 학교 뒤편에 서 있다가, 결국 집으로 돌아왔다. 지금은 서연의 밤이니까. 근데 발이 무겁다.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -831,7 +831,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*발끝이 쉽게 떨어지지 않는다. 오늘 들은 말들은 다 가볍지 않았다. 그래서 더 오래 남는다.*"
+        "text": "*한동안 학교 뒤편을 떠나지 못하다가, 결국 집으로 돌아왔다. 오늘 들은 말들은 다 가볍지 않았다. 그래서 더 오래 남는다.*"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -847,15 +847,15 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "서연",
-        "text": "오늘 바람 좋았어. 그래서... 조금 기대했어."
+        "text": "오늘 바람 좋았어. 그래서... 조금 기대했어. 괜히."
     },
     "day4_night_regret_msg_dain": {
         "name": "다인",
-        "text": "야 오늘 재밌었다ㅋㅋ ...나 혼자만 그런 건 아니지?"
+        "text": "야 오늘 재밌었다ㅋㅋ ...나 혼자만 들뜬 건 아니었으면 했어."
     },
     "day4_night_regret_msg_yuna": {
         "name": "유나",
-        "text": "...오늘. 조금 기대했어."
+        "text": "...오늘. 조금 기대했어. 그래서 더 조용해졌어."
     },
     "day4_night_regret_msg": {
         "name": "{name}",
@@ -864,6 +864,10 @@
     "day4_night_regret_reply": {
         "name": "{name}",
         "text": "*답장을 쓰다 지운다. 뭐라고 해도 늦은 것 같다.*"
+    },
+    "day4_night_reflect": {
+        "name": "{name}",
+        "text": "*토요일이 이렇게 지나갔다. 내일은 학교 행사. — 일요일인데도 등교다.*"
     },
     "day4_hidden_msg_branch": {
         "name": "시스템",
@@ -900,10 +904,6 @@
     "night_nurse_msg_4": {
         "name": "보건선생님",
         "text": "...자."
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*토요일이 이렇게 지나갔다. 내일은 학교 행사. — 일요일인데도 등교다.*"
     },
     "day4_night_sleep": {
         "name": "{name}",

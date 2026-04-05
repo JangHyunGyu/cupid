@@ -512,7 +512,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "lunch3_harem_1": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "setFlags": ["ending_harem"],
+        "setFlags": ["harem_seed"],
         "next": "lunch3_end"
     },
     "lunch3_end": {
