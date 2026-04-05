@@ -3,6 +3,22 @@
         "name": "{name}",
         "text": "*넷째 날. 주말. — 오늘은 학교가 아니다. 데이트다.*"
     },
+    "morning4_nightmare_seo": {
+        "name": "{name}",
+        "text": "*...이상한 꿈을 꿨다. 서연의 웃는 얼굴이 — 아직 눈앞에 어른거린다.*"
+    },
+    "morning4_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*...이상한 꿈을 꿨다. 유나에게 다가가려는데 — 손끝이 아직 허전하다.*"
+    },
+    "morning4_nightmare_dain": {
+        "name": "{name}",
+        "text": "*...이상한 꿈을 꿨다. 다인을 잡았다고 생각했는데 — 아직 손에 아무것도 없다.*"
+    },
+    "morning4_nightmare_after": {
+        "name": "{name}",
+        "text": "*...그 순간, 무의식이 고른 건 결국 한 사람이었다.*"
+    },
     "minsu_cheer_1": {
         "name": "{name}",
         "text": "*핸드폰을 본다. 아침 메시지. — 맨 위에 민수.*"

@@ -3,6 +3,22 @@
         "name": "{name}",
         "text": "*四日目。週末。――今日は学校じゃない。デートだ。*"
     },
+    "morning4_nightmare_seo": {
+        "name": "{name}",
+        "text": "*…変な夢を見た。ソヨンの笑顔が――まだ目の前にちらついている。*"
+    },
+    "morning4_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*…変な夢を見た。ユナに手を伸ばしたのに――まだ指先が空っぽだ。*"
+    },
+    "morning4_nightmare_dain": {
+        "name": "{name}",
+        "text": "*…変な夢を見た。ダインを捕まえたと思ったのに――まだ手に何もない。*"
+    },
+    "morning4_nightmare_after": {
+        "name": "{name}",
+        "text": "*…あの瞬間、無意識が選んだのは結局一人だった。*"
+    },
     "minsu_cheer_1": {
         "name": "{name}",
         "text": "*スマホを見る。朝のメッセージ。——一番上にミンス。*"
