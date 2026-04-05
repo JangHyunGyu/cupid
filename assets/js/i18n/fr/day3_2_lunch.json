@@ -97,6 +97,10 @@
         "name": "Dain",
         "text": "Quoi ?! Et moi ?!"
     },
+    "lunch3_share_solo": {
+        "name": "{name}",
+        "text": "*On a partagé un peu tous les trois. Rien de spécial, mais — l'ambiance était bonne. Un déjeuner où personne n'était exclu.*"
+    },
     "lunch3_harem_1": {
         "name": "{name}",
         "text": "*Finalement, les trois ont partagé un peu de tout. Seoyeon sourit poliment, Dain est excessivement joyeuse, et Yuna ne sort finalement pas le mot qu'elle avait plié. Ce n'est pas passé, juste reporté.*"

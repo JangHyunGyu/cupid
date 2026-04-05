@@ -399,8 +399,8 @@
         "text": "Wieso, stört es dich?"
     },
     "lunch2_seo_17": {
-        "name": "Dain",
-        "text": "Ach komm, ich hab doch nur gefragt!"
+        "name": "{name}",
+        "text": "*...Das würde Dain wahrscheinlich sagen.*"
     },
     "lunch2_seo_18": {
         "name": "{name}",
@@ -436,7 +436,7 @@
     },
     "lunch2_seo_c1_4": {
         "name": "Seoyeon",
-        "text": "Es war ein Reiskorn."
+        "text": "...Das war's."
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
-        "text": "*Vierte Stunde, Sport. Beim Laufen auf dem Sportplatz — der Typ neben mir bremst abrupt und wir prallen zusammen. Mein Ellbogen ist aufgeschürft.*"
+        "text": "*Fünfte Stunde, Sport. Beim Laufen auf dem Sportplatz — der Typ neben mir bremst abrupt und wir prallen zusammen. Mein Ellbogen ist aufgeschürft.*"
     },
     "lunch2_dain_end_ins2": {
         "name": "{name}",

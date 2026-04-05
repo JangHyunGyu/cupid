@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Después de clases. Las secuelas del almuerzo aún persisten. Más que ir a encontrarme con alguien, tengo que decidir a quién ir a arreglar el desastre primero.*"
+        "text": "*Después de clases. No logro ordenar mis pensamientos. ¿A quién debería ir primero?*"
     },
     "after3_route_check": {
         "name": "{name}",
@@ -513,7 +513,7 @@
     },
     "minsu_d3_9": {
         "name": "{name}",
-        "text": "*Si entonces Sojeong me hubiera rechazado — no me habría quedado esta espina. Si rechazar es querer, entonces lo que tengo que hacer ahora es — decirle 'me gustas' a una sola persona.*"
+        "text": "*Al final, la respuesta es simple. Una persona. Con eso basta.*"
     },
     "minsu_d3_10": {
         "name": "Minsu",

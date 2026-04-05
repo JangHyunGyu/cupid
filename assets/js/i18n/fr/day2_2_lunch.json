@@ -399,8 +399,8 @@
         "text": "Pourquoi, ça te dérange ?"
     },
     "lunch2_seo_17": {
-        "name": "Dain",
-        "text": "Oh, c'était juste par curiosité !"
+        "name": "{name}",
+        "text": "*...C'est ce que Dain dirait, probablement.*"
     },
     "lunch2_seo_18": {
         "name": "{name}",
@@ -436,7 +436,7 @@
     },
     "lunch2_seo_c1_4": {
         "name": "Seoyeon",
-        "text": "C'était un grain de riz."
+        "text": "...C'est tout."
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
-        "text": "*Quatrième heure, sport. On courait sur le terrain quand — le gars à côté pile net et on se percute. Mon coude s'est éraflé.*"
+        "text": "*Cinquième heure, sport. On courait sur le terrain quand — le gars à côté pile net et on se percute. Mon coude s'est éraflé.*"
     },
     "lunch2_dain_end_ins2": {
         "name": "{name}",

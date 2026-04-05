@@ -394,7 +394,7 @@
     },
     "after_miss_yuna_3_ins": {
         "name": "{name}",
-        "text": "*Y vuelve a caminar.*"
+        "text": "*Lo único que muestra es su espalda.*"
     },
     "after_hidden_homeroom_3_ins": {
         "name": "{name}",

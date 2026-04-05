@@ -399,8 +399,8 @@
         "text": "¿Por qué, te molesta?"
     },
     "lunch2_seo_17": {
-        "name": "Dain",
-        "text": "¡Ay, solo preguntaba por curiosidad!"
+        "name": "{name}",
+        "text": "*...Eso diría Dain, seguramente.*"
     },
     "lunch2_seo_18": {
         "name": "{name}",
@@ -436,7 +436,7 @@
     },
     "lunch2_seo_c1_4": {
         "name": "Seoyeon",
-        "text": "Era un grano de arroz."
+        "text": "...Eso es todo."
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
-        "text": "*Cuarta hora, educación física. Corríamos por el campo cuando — el de al lado frena de golpe y chocamos. Me raspé el codo.*"
+        "text": "*Quinta hora, educación física. Corríamos por el campo cuando — el de al lado frena de golpe y chocamos. Me raspé el codo.*"
     },
     "lunch2_dain_end_ins2": {
         "name": "{name}",

@@ -232,7 +232,7 @@
     },
     "after2_dain_end_2d": {
         "name": "{name}",
-        "text": "{name}(이)가 훨씬 잘하던데."
+        "text": "다인이가 훨씬 잘하던데."
     },
     "after2_dain_end_3": {
         "name": "{name}",

@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Liegt bei dir', sagte sie. Aber es fühlt sich nicht freiwillig an.*"
+        "text": "*'Komm diesmal wirklich', sagte sie. Aber der Ton sagt, dass etwas passieren wird, wenn ich es nicht tue.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -296,7 +296,7 @@
     },
     "night2_end_2_ins2": {
         "name": "{name}",
-        "text": "*Minsus Worte kommen immer wieder zurück. 'Warst du an deiner alten Schule auch so?'*"
+        "text": "*Diese Worte kreisen weiter. Ich habe immer noch nicht geantwortet.*"
     },
     "night2_end_3_ins": {
         "name": "{name}",

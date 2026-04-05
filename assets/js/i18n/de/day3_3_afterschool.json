@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Die Nachwirkungen des Mittagessens sind noch immer spürbar. Es geht nicht darum, wen ich treffe, sondern darum, zu wem ich zuerst gehen muss, um das Chaos zu beseitigen.*"
+        "text": "*Nach der Schule. Meine Gedanken sind durcheinander. Zu wem soll ich zuerst gehen?*"
     },
     "after3_route_check": {
         "name": "{name}",
@@ -513,7 +513,7 @@
     },
     "minsu_d3_9": {
         "name": "{name}",
-        "text": "*Wenn Sojeong mich damals abgelehnt hätte — wäre das nicht so hängengeblieben. Wenn absagen auch Liebe ist, dann muss ich jetzt — einer einzigen Person sagen, dass sie mir gefällt.*"
+        "text": "*Am Ende ist die Antwort einfach. Eine Person. Das allein genügt.*"
     },
     "minsu_d3_10": {
         "name": "Minsu",

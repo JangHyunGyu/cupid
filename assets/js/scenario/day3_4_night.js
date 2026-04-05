@@ -296,9 +296,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/school.png",
         "character": null,
         "choices": [
-            { "next": "night3_nightmare_seo" },
-            { "next": "night3_nightmare_yuna" },
-            { "next": "night3_nightmare_dain" }
+            { "next": "night3_nightmare_seo", "setFlags": ["nightmare_chose_seoyeon"] },
+            { "next": "night3_nightmare_yuna", "setFlags": ["nightmare_chose_yuna"] },
+            { "next": "night3_nightmare_dain", "setFlags": ["nightmare_chose_dain"] }
         ]
     },
     "night3_nightmare_seo": {

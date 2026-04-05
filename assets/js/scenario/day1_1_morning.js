@@ -485,7 +485,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "classroom_yuna_note_6": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "setFlags": ["met_dain","met_yuna"],
         "next": "lunch_start"
     }
     };

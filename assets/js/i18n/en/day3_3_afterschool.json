@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*After school. The aftermath of lunch still lingers. Rather than deciding who to meet, I need to decide who to go to first to fix what I messed up.*"
+        "text": "*After school. My mind is a mess. Who should I go to first?*"
     },
     "after3_route_check": {
         "name": "{name}",
@@ -513,7 +513,7 @@
     },
     "minsu_d3_9": {
         "name": "{name}",
-        "text": "*If Sojeong had been able to reject me back then — maybe it wouldn't still haunt me. If saying no is love, then what I need to do now is — tell just one person 'yes.'*"
+        "text": "*In the end, the answer is simple. One person. That alone is enough.*"
     },
     "minsu_d3_10": {
         "name": "Minsu",

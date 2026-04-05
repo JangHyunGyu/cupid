@@ -14,9 +14,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "bgm": "sunset1.mp3",
         "branches": [
-            { "condition": "day4_waited", "next": "after5_waited_start_branch" },
             { "condition": "homeroom_day5", "next": "after5_hidden_farewell_1" },
             { "condition": "nurse_day5", "next": "after5_hidden_farewell_1" },
+            { "condition": "day4_waited", "next": "after5_waited_start_branch" },
             { "condition": "day4_confession_accepted", "next": "after5_waited_start_branch" },
             { "condition": "route_seoyeon", "next": "after5_farewell_yuna_check" },
             { "next": "after5_farewell_seo_1" }
@@ -222,6 +222,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "branches": [
             { "condition": "day4_confession_accepted", "next": "after5_hidden_route_choice" },
+            { "condition": "day4_waited", "next": "after5_last_chance_1" },
             { "next": "ending_start" }
         ]
     },
@@ -598,7 +599,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_confess_no_2b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "day5_ending_friend"
+        "next": "ending_start"
     }
     };
     for (const scene of Object.values(scenes)) {

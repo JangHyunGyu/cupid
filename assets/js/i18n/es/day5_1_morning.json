@@ -127,7 +127,7 @@
     },
     "hidden_nurse_d5_2": {
         "name": "{name}",
-        "text": "*En el descanso del evento. Estoy pasando por la enfermería y — la puerta se abre.*"
+        "text": "*La puerta se abre. La enfermera está ahí de pie. Con dos vasos de papel en la mano.*"
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
