@@ -89,9 +89,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
         "branches": [
-            { "condition": "route_seoyeon", "next": "lunch3_meal_10_ins3" },
-            { "condition": "route_dain", "next": "lunch3_meal_10_ins4" },
-            { "condition": "route_yuna", "next": "lunch3_meal_10_ins5" },
+            { "condition": "accepted_seoyeon_date", "next": "lunch3_meal_10_ins3" },
+            { "condition": "accepted_dain_date", "next": "lunch3_meal_10_ins4" },
+            { "condition": "accepted_yuna_date", "next": "lunch3_meal_10_ins5" },
             { "next": "lunch3_meal_11" }
         ]
     },

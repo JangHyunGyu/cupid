@@ -2349,7 +2349,7 @@
 - 다음: `after_miss_yuna_3`
 
 - 캐릭터: `yuna_normal.png`
-**{name}**: *— 책갈피가 떨어진다.* 저기, 이거...
+**{name}**: *유나가 책갈피를 한참 들여다본다. 구겨지지 않았는지 확인하는 것 같다.*
 
 ---
 
@@ -3182,7 +3182,7 @@
 - 다음: `after_nurse_enter_11_ins6`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: ...눈치 빠른 환자네. 걱정하는 건 내 쪽인데.
+**보건선생님**: 아까 그 말 — 걱정해줘서 고마워. 환자한테 그런 소리 듣는 거 처음이야.
 
 ---
 
@@ -3200,7 +3200,7 @@
 - 다음: `after_nurse_enter_11_ins8`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: 그렇지? 여기 좋아. — 조용하고, 소독약 냄새 빼면 완벽해.
+**보건선생님**: 아까 아늑하다고 했지? — 그 말 듣고 기분 좋았어, 사실.
 
 ---
 
@@ -4463,7 +4463,7 @@
 - 다음: `morning2_seo_dust_2`
 
 - 캐릭터: `seyoun_normal.png`
-**{name}**: *서연이 멈춘다. 내 어깨를 본다.*
+**{name}**: *손이 올라온다. 내 어깨를 향해.*
 
 ---
 
@@ -7185,7 +7185,7 @@
 ### `after2_seo_neck_touch`
 - 배경: `student_room.png`
 - 호감분기: Seoyeon
-  - [50+] → `after2_seo_neck_high`
+  - [30+] → `after2_seo_neck_high`
   - [기본] → `after2_seo_neck_low`
 - 다음: `after2_seo_neck_low`
 
@@ -8355,54 +8355,16 @@
 - 다음: `night2_reply_yuna_6_ins2`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
-**{name}**: *세 번째 별? — 창문을 열고 밤하늘을 올려다본다. 세 번째가 어떤 건지는 모르겠다.*
+**{name}**: *창문을 열었다. 찬 바람이 들어온다. — 별은 많은데, 어떤 게 세 번째인지는 모르겠다.*
 
 ---
 
 ### `night2_reply_yuna_6_ins2`
 - 배경: `room_my.png`
-- 분기:
-  - [`homeroom_day2`] → `night2_reply_yuna_6_ins3`
-  - [기본] → `night2_reply_yuna_7`
+- 다음: `night2_reply_yuna_7`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
 **{name}**: *유나다운 수수께끼다. — 답은 안 알려주면서, 찾아보게 만드는 사람.*
-
----
-
-### `night2_reply_yuna_6_ins3`
-- 배경: `room_my.png`
-- 다음: `night2_reply_yuna_6_ins4`
-
-- 캐릭터: `teacher_normal.png` @ 0.35
-**{name}**: *메신저 알림 사이에 — 담임선생님에게서 개인 메시지가 왔다.*
-
----
-
-### `night2_reply_yuna_6_ins4`
-- 배경: `room_my.png`
-- 다음: `night2_reply_yuna_6_ins5`
-
-- 캐릭터: `teacher_normal.png` @ 0.35
-**담임선생님**: *{name}, 오늘 교무실 와줘서 고마웠다*
-
----
-
-### `night2_reply_yuna_6_ins5`
-- 배경: `room_my.png`
-- 다음: `night2_reply_yuna_6_ins6`
-
-- 캐릭터: `teacher_normal.png` @ 0.35
-**담임선생님**: *행정적인 거 끝났으니까 더 안 불러도 된다*
-
----
-
-### `night2_reply_yuna_6_ins6`
-- 배경: `room_my.png`
-- 다음: `night2_reply_yuna_7`
-
-- 캐릭터: `teacher_normal.png` @ 0.35
-**담임선생님**: *...근데 적응 힘들면 언제든 와*
 
 ---
 
@@ -8414,7 +8376,7 @@
 - 다음: `night2_reply_yuna_react_default`
 
 - 캐릭터: `yuna_normal.png` @ 0.35
-**{name}**: *세 번째 별? — 창문을 열고 밤하늘을 올려다본다. 세 번째가 어떤 건지는 모르겠다. 유나다운 수수께끼다. — 답은 안 알려주면서, 찾아보게 만드는 사람.*
+**{name}**: *내일 밤하늘을 볼 때 세어 봐야겠다. — 이 사람 덕분에 자꾸 하늘을 올려다보게 된다.*
 
 ---
 
@@ -9432,7 +9394,7 @@
 - 다음: `hidden_homeroom_d3_reveal_2_ins5`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: ...눈치 빠른 건 장점인데, 가끔 단점이야.
+**담임선생님**: *한숨을 쉬며* ...보고 싶은 것만 볼 수 있으면 편할 텐데.
 
 ---
 
@@ -9569,7 +9531,7 @@
 - 다음: `hidden_homeroom_d3_reveal_6`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: *갑자기 정색하며* ...이거 아무한테도 말하면 안 돼. 학생이 선생님의 — 이런 모습 알면 권위가 — 뭐 원래 없지만.
+**담임선생님**: *시선을 돌리며* ...근데 진짜 비밀이다. 다른 선생님들도 모르거든.
 
 ---
 
@@ -9606,7 +9568,7 @@
 - 다음: `hidden_homeroom_d3_reveal_6_ins4`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: *멈칫한다. 원고지를 만지던 손이 멈춘다.* ...끈기라고 해줄 사람은 처음이야.
+**담임선생님**: *작게 웃으며* ...네가 있어서 다행이다. 진심으로.
 
 ---
 
@@ -9846,7 +9808,7 @@
 - 다음: `hidden_nurse_d3_5`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: ...앉아. 농담 아니고, 표정 안 좋아. 무슨 일 있어?
+**보건선생님**: *커튼을 치며* ...앉아. 여기선 좀 편하게 있어도 돼.
 
 ---
 
@@ -9855,7 +9817,7 @@
 - 다음: `hidden_nurse_d3_5_ins`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: 그거 연애 상담이야? — 아닌 척하는 게 제일 티 나는 거야.
+**보건선생님**: *물컵을 건네며* ...천천히 말해도 돼.
 
 ---
 
@@ -9891,7 +9853,7 @@
 - 다음: `hidden_nurse_d3_5_ins5`
 
 - 캐릭터: `nurse_normal.png`
-**{name}**: 그냥... 사람 관계가 복잡해져서.
+**{name}**: ...누구한테 말하기 애매한 것들이요.
 
 ---
 
@@ -10028,7 +9990,7 @@
 - 다음: `hidden_nurse_d3_6`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: *의자를 끌어와 앞에 앉으며* 사람 관계. — 그거 연애 상담이야? *피식* 아닌 척하는 게 제일 티 나는 거야.
+**보건선생님**: *고개를 살짝 기울이며* ...그래. 복잡하면 복잡한 대로, 여기서 좀 쉬어.
 
 ---
 
@@ -10690,7 +10652,7 @@
 - 다음: `lunch3_meal_9`
 
 - 캐릭터: `yuna_bored.png`
-**유나**: ...맛있네.
+**{name}**: *유나가 조용히 젓가락을 든다. 아까보다 속도가 빨라졌다.*
 
 ---
 
@@ -10724,9 +10686,9 @@
 ### `lunch3_meal_10_ins2`
 - 배경: `room_school.png`
 - 분기:
-  - [`route_seoyeon`] → `lunch3_meal_10_ins3`
-  - [`route_dain`] → `lunch3_meal_10_ins4`
-  - [`route_yuna`] → `lunch3_meal_10_ins5`
+  - [`accepted_seoyeon_date`] → `lunch3_meal_10_ins3`
+  - [`accepted_dain_date`] → `lunch3_meal_10_ins4`
+  - [`accepted_yuna_date`] → `lunch3_meal_10_ins5`
   - [기본] → `lunch3_meal_11`
 
 - 캐릭터: `yuna_bored.png`
@@ -14742,7 +14704,7 @@
 - 다음: `hidden_nurse_d4_2_ins`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: 어? 진짜 왔어? 올 줄 몰랐는데. — 학생이 주말에 보건실에 자원봉사를 오다니.
+**보건선생님**: 올 줄 몰랐는데. — 학생이 주말에 보건실에 자원봉사를 오다니.
 
 ---
 
@@ -15186,7 +15148,7 @@
   - [`accepted_dain_date`] → `date_dain_1`
   - [`accepted_yuna_date`] → `date_yuna_1`
   - [`accepted_seoyeon_date`] → `date_seo_1`
-  - [기본] → `date_seo_1`
+  - [기본] → `day4_night_start`
 
 - 캐릭터: `없음`
 **{name}**: *거울을 한 번 더 본다. — 됐다. 나가자.*
@@ -15370,7 +15332,7 @@
 - 다음: `date_seo_succulent`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: ...들어가 볼까?
+**{name}**: *서연이 꽃집 문을 밀었다. 종소리가 울린다.*
 
 ---
 
@@ -17100,7 +17062,7 @@
 - 다음: `wall_seo_line_choice`
 
 - 캐릭터: `seyoun_cry.png`
-**서연**: 엄마가 그랬어. '너라도 완벽해야 이 집이 유지된다'고.
+**서연**: *숨을 들이쉬며* ...그래서 완벽한 척하는 게 습관이 됐어.
 
 ---
 
@@ -17671,7 +17633,7 @@
 - 다음: `wall_dain_19`
 
 - 캐릭터: `dain_sad.png`
-**다인**: 아무한테도 말 안 했어. 부모님한테도.
+**다인**: *주먹을 쥐었다 폈다 한다.* ...그래서.
 
 ---
 
@@ -19219,7 +19181,7 @@
 - 다음: `hidden_homeroom_d5_6_ins`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: *머리카락을 넘기며* ...감상문은 안 받아. — *피식* ...맞아. 한 줄이라도 써 줘.
+**담임선생님**: *봉투를 꺼내며* ...이거. 마지막 날이니까.
 
 ---
 
@@ -19547,7 +19509,7 @@
 - 다음: `hidden_nurse_d5_3`
 
 - 캐릭터: `nurse_normal.png`
-**보건선생님**: 어? {name}.
+**보건선생님**: *멈칫하며* ...또 왔네.
 
 ---
 
@@ -20706,9 +20668,9 @@
 - 분기:
   - [`day3_caught_multiple_dates`] → `ending_start`
   - [`harem_seed`] → `after5_set_harem`
-  - [`day4_waited`] → `after5_last_chance_1`
   - [`homeroom_day5`] → `after5_hidden_route_choice_check`
   - [`nurse_day5`] → `after5_hidden_route_choice_check`
+  - [`day4_waited`] → `after5_last_chance_1`
   - [`day4_confession_accepted`] → `ending_start`
   - [기본] → `ending_start`
 
@@ -21397,12 +21359,12 @@
   - [`choose_hidden_over_main`] → `ending_hidden_commit_check`
   - [`choose_main_over_hidden`] → `ending_affinity_check`
   - [`day5_last_chance_path`] → `ending_last_chance_resolve`
-  - [`day4_confession_accepted`] → `ending_affinity_check`
-  - [`day5_confessed`] → `ending_confessed_aff_check`
-  - [`day4_waited`] → `day5_ending_friend`
   - [`both_hidden_day5`] → `hidden_dual_route_1`
   - [`homeroom_day5`] → `hidden_perfect_homeroom_check`
   - [`nurse_day5`] → `hidden_perfect_nurse_check`
+  - [`day4_confession_accepted`] → `ending_affinity_check`
+  - [`day5_confessed`] → `ending_confessed_aff_check`
+  - [`day4_waited`] → `day5_ending_friend`
   - [기본] → `day5_ending_alone`
 
 - 캐릭터: `없음`
@@ -21799,7 +21761,7 @@
 - 다음: `hidden_true_homeroom_5_ins`
 
 - 캐릭터: `teacher_normal.png`
-**담임선생님**: 원고 끝냈어. 네가 먼저 읽어준 뒤로 계속 밀고 갈 수 있었어. '한 줄이면 된다'고 했는데 세 장이나 써왔잖아. 그거 보고 더는 미룰 핑계가 없더라.
+**담임선생님**: *창밖을 보며* ...그래서. 끝낸 김에 출판사에 보내볼까 하는데. — 네 생각은?
 
 ---
 
@@ -22266,7 +22228,7 @@
 - 다음: `hidden_true_nurse_8_ins2`
 
 - 캐릭터: `없음`
-**보건선생님**: *커피잔을 돌리며* 졸업장 효력, 생각보다 빠르네.
+**보건선생님**: *커피잔을 돌리며* ...졸업하고 나서 보건실 냄새가 그리울 줄은 몰랐는데.
 
 ---
 
@@ -22293,7 +22255,7 @@
 - 다음: `hidden_true_nurse_8_ins5`
 
 - 캐릭터: `없음`
-**보건선생님**: 있잖아. Day 1에 네가 보건실에 왔을 때.
+**보건선생님**: 있잖아. 나 그때 퇴사할까 고민하고 있었거든.
 
 ---
 
@@ -22311,7 +22273,7 @@
 - 다음: `hidden_true_nurse_8_ins7`
 
 - 캐릭터: `없음`
-**보건선생님**: 그때 이마 만지면서 '만져보고 싶었다'고 했잖아. 농담이었거든.
+**보건선생님**: 근데 네가 와서 — 여기 있을 이유가 생겼어. *작게 웃으며* 고마워.
 
 ---
 
@@ -22550,7 +22512,7 @@
 - 다음: `bitter_seo_2`
 
 - 캐릭터: `없음`
-**{name}**: *고백은 했다. 받아들여졌다. 잠깐은 좋았다. — 근데 한 달쯤 지나서, 학교 앞 카페에서 만나자는 연락이 왔다.*
+**{name}**: *고백은 했다. 상대도 해보자고 했다. 확신이 아니라 호기심에 가까웠다. — 한 달쯤 지나서, 학교 앞 카페에서 만나자는 연락이 왔다.*
 
 ---
 
@@ -22813,7 +22775,7 @@
 - 다음: `bitter_yuna_2`
 
 - 캐릭터: `없음`
-**{name}**: *고백은 했다. 받아들여졌다. 잠깐은 좋았다. — 근데 한 달쯤 지나서, 학교 앞 카페에서 만나자는 연락이 왔다.*
+**{name}**: *고백은 했다. 상대도 해보자고 했다. 확신이 아니라 호기심에 가까웠다. — 한 달쯤 지나서, 학교 앞 카페에서 만나자는 연락이 왔다.*
 
 ---
 
@@ -23094,7 +23056,7 @@
 - 다음: `bitter_dain_2`
 
 - 캐릭터: `없음`
-**{name}**: *고백은 했다. 받아들여졌다. 잠깐은 좋았다. — 근데 한 달쯤 지나서, 학교 앞 카페에서 만나자는 연락이 왔다.*
+**{name}**: *고백은 했다. 상대도 해보자고 했다. 확신이 아니라 호기심에 가까웠다. — 한 달쯤 지나서, 학교 앞 카페에서 만나자는 연락이 왔다.*
 
 ---
 

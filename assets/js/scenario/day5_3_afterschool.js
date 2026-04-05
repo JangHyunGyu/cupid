@@ -210,9 +210,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "branches": [
             { "condition": "day3_caught_multiple_dates", "next": "ending_start" },
             { "condition": "harem_seed", "next": "after5_set_harem" },
-            { "condition": "day4_waited", "next": "after5_last_chance_1" },
             { "condition": "homeroom_day5", "next": "after5_hidden_route_choice_check" },
             { "condition": "nurse_day5", "next": "after5_hidden_route_choice_check" },
+            { "condition": "day4_waited", "next": "after5_last_chance_1" },
             { "condition": "day4_confession_accepted", "next": "ending_start" },
             { "next": "ending_start" }
         ]
