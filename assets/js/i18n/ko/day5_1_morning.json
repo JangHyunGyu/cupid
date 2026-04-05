@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_2": {
         "name": "담임선생님",
-        "text": "원고. — 미완성이지만. 첫 번째 독자한테 주려고."
+        "text": "원고. 미완성이긴 한데... 네가 먼저 봐줬으면 해서."
     },
     "hidden_homeroom_d5_3": {
         "name": "담임선생님",
@@ -123,7 +123,7 @@
     },
     "hidden_homeroom_d5_5": {
         "name": "담임선생님",
-        "text": "...첫 번째 독자한테 건네는 거, 생각보다 떨리네."
+        "text": "...이걸 남 먼저 보여주는 게 생각보다 떨리네."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "hidden_homeroom_d5_6_ins": {
         "name": "{name}",
-        "text": "*어제 카페에서 한 말. 첫 번째 독자. — 진짜 가져온 거다.*"
+        "text": "*어제 카페에서 했던 말. 먼저 보여주고 싶다는 그 말. 진짜로 들고 왔다.*"
     },
     "hidden_homeroom_d5_6_ins2": {
         "name": "{name}",
@@ -191,7 +191,7 @@
     },
     "hidden_homeroom_d5_6_ins9": {
         "name": "담임선생님",
-        "text": "...첫 번째 독자가 되어줄래?"
+        "text": "...제일 먼저 읽어줄래?"
     },
     "hidden_homeroom_d5_6_ins10": {
         "name": "{name}",
