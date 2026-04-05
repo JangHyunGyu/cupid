@@ -488,19 +488,19 @@
     },
     "lunch_seo_6_ins": {
         "name": "Seoyeon",
-        "text": "*Souriant* Méfiant, hein. J'aime juste le vent ici."
+        "text": "*Sourire* Tu es très méfiant. Je suis juste montée parce que c'était étouffant de rester en classe."
     },
     "lunch_seo_c1_2_ins": {
         "name": "{name}",
-        "text": "*Seoyeon détourne légèrement la tête. Ses oreilles sont rouges.*"
+        "text": "*Seoyeon détourne la tête et tripote sa bouteille d'eau sans raison.*"
     },
     "lunch_seo_c1_3_ins": {
         "name": "{name}",
-        "text": "*Ces oreilles rouges — c'était réel ? — Peut-être juste le vent.*"
+        "text": "*Si je la taquine davantage, elle va tout de suite mettre une limite. Je fais juste semblant de n'avoir rien vu.*"
     },
     "lunch_dain_12_ins": {
         "name": "Dain",
-        "text": "Raaah d'accord !! Deux pains soboro !! Madame !!"
+        "text": "Ah, d'accord ! Je les achète, je les achète ! Madame, deux pains soboro !"
     },
     "lunch_yuna_5_ins": {
         "name": "{name}",

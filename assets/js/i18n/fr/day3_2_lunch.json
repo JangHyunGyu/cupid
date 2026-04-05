@@ -188,7 +188,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
-        "text": "Moi, je ne suis pas une parmi tant d'autres. — Si c'est le cas, autant ne rien avoir."
+        "text": "Je ne prends pas de position ambiguë. Si c'est le cas, je préfère me retirer complètement."
     },
     "lunch3_expose_honest_6": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "lunch3_dain_skin_2": {
         "name": "{name}",
-        "text": "*Dain bondit en arrière. Ses oreilles sont rouges.*"
+        "text": "*Dain recule d'un pas, comme si elle avait rebondi. Elle prend sa bouteille d'eau sans raison.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",

@@ -742,11 +742,11 @@
     },
     "harem_1_ins": {
         "name": "{name}",
-        "text": "*Yuna lowered her head. For a long time. When she looked up, her eyes were dry but smiling. ...Idiot. That one word held two sentences' worth of emotion.*"
+        "text": "*Yuna lowered her head. When she looked up a long time later, she was smiling with a face that couldn't even cry. ...This is truly the worst. Even though it was short, it contained everything else she wanted to say.*"
     },
     "harem_2": {
         "name": "Yuna",
-        "text": "...Idiot."
+        "text": "...This is truly the worst."
     },
     "harem_3": {
         "name": "{name}",
@@ -908,7 +908,7 @@
     },
     "hidden_true_homeroom_4_ins5": {
         "name": "Homeroom Teacher",
-        "text": "I asked for one line and you came back with three pages. *A soft laugh* A creative writing teacher nearly crying over a student's review — that's our secret."
+        "text": "I asked for one line and you wrote three pages. After seeing that, I had no more excuses to postpone it."
     },
     "hidden_true_homeroom_4_ins6": {
         "name": "{name}",
@@ -920,7 +920,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Homeroom Teacher",
-        "text": "I finished the manuscript. — I could write it because you were my first reader. I asked for one line and you came back with three pages. *A soft laugh* A creative writing teacher nearly crying over a student's review — that's a secret."
+        "text": "I finished the manuscript. After you read it first, I was able to keep pushing forward. I asked for one line and you wrote three pages. After seeing that, I had no more excuses to postpone it."
     },
     "hidden_true_homeroom_5_ins": {
         "name": "{name}",
@@ -972,7 +972,7 @@
     },
     "hidden_good_homeroom_3": {
         "name": "{name}",
-        "text": "*Leaving the school. 'When I finish the manuscript, I'll reach out. — To my first reader.' There's a phone number.*"
+        "text": "*Leaving the school. 'When I finish the manuscript, I'll reach out. Because I want to show it to you first.' There's a phone number.*"
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
@@ -1045,7 +1045,7 @@
     },
     "hidden_true_nurse_2_ins": {
         "name": "{name}",
-        "text": "*Not the school nurse — just a woman.*"
+        "text": "*Today, she looks more like just a person than a teacher.*"
     },
     "hidden_true_nurse_2_ins2": {
         "name": "School Nurse",
@@ -1069,7 +1069,7 @@
     },
     "hidden_true_nurse_5": {
         "name": "School Nurse",
-        "text": "...But right now it's not a joke."
+        "text": "...But right now, I don't intend to gloss over it like that."
     },
     "hidden_true_nurse_5_ins": {
         "name": "{name}",
@@ -1077,11 +1077,11 @@
     },
     "hidden_true_nurse_5_ins2": {
         "name": "School Nurse",
-        "text": "I knew I wasn't supposed to have feelings for a student. — So I kept dressing it up as a joke. Over and over."
+        "text": "I knew it couldn't be, right? That's why I kept passing it off as a joke."
     },
     "hidden_true_nurse_5_ins3": {
         "name": "School Nurse",
-        "text": "But you saw through the sincerity behind the jokes."
+        "text": "But you recognized even when I was glossing things over."
     },
     "hidden_true_nurse_5_ins4": {
         "name": "{name}",
@@ -1113,7 +1113,7 @@
     },
     "hidden_true_nurse_8": {
         "name": "School Nurse",
-        "text": "Come by even if you don't have to pretend you're hurt anymore. — I'd like that better."
+        "text": "Now, don't pretend to be hurt and come. Just say you came because you wanted to see me."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
@@ -1149,7 +1149,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "School Nurse",
-        "text": "Oh, a graduate."
+        "text": "What brings you here, graduate?"
     },
     "hidden_good_nurse_2": {
         "name": "School Nurse",

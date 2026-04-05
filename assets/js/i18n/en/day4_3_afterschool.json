@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*My fingertips are cold. There's no wind. — I want to be the only one who knows what's behind her perfect mask.*",
+        "text": "*I'm nervous. Still, this time I want to say it properly.*",
         "choices": [
             "Seoyeon. Just a second.",
             "...Nice breeze."
@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*My heart feels like it's going to burst out of my chest. — It's okay. This time.*"
+        "text": "*My breath catches in my throat. Still, this time I won't avoid it.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. You smile perfectly. Always. But -- that 0.5 seconds when you stop smiling keeps nagging at me."
+        "text": "Seoyeon. Everyone sees you as a flawless person, don't they? But I keep remembering the moments when you briefly let your guard down."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "That was the real you, Seoyeon. That's the you I like."
+        "text": "There were moments when you seemed like just Seoyeon, not the student council president, right? I liked that."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -73,11 +73,11 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...Since you said 'I'm honored' at the school gate."
+        "text": "...When you said 'It's more than I deserve' at the school gate. From then on, I was a bit concerned."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "-- You have no idea how long I've been holding that in."
+        "text": "It really took a long time to bring up this topic."
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "confess_dain_yes_8": {
         "name": "{name}",
-        "text": "*Dain is frozen. Her energy is gone. -- Then her eyes slowly fill up. She buries her face in both hands. The blush has spread all the way to the back of her neck.*"
+        "text": "*Dain freezes. On her face, devoid of laughter, only her eyes slowly moisten. She covers her face with both hands.*"
     },
     "confess_dain_yes_8_ins": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Wait. I can't breathe -- I think I'm going to cry -- why am I crying, I'm happy --"
+        "text": "...Wait, I really feel like crying right now... I'm happy, so why am I like this..."
     },
     "confess_dain_yes_9_ins": {
         "name": "{name}",

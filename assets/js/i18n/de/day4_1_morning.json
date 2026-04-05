@@ -109,7 +109,7 @@
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Klassenlehrerin",
-        "text": "Den ersten Leser zu finden. Ohne jemanden, der liest — wird die Geschichte nie fertig."
+        "text": "Am Ende muss man es jemandem zeigen, damit es fertig wird. Wenn es niemanden gibt, der es liest, hört man immer wieder auf."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",
@@ -170,7 +170,7 @@
         "text": "...Im Krankenhaus hab ich das alles alleine gemacht. Nachtschichten — manchmal eine Schwester für drei."
     },
     "hidden_nurse_d4_5": {
-        "name": "Gesundheitslehrerin",
+        "name": "Schulkrankenschwester",
         "text": "*Blickt aus dem Fenster* Deshalb bin ich hier. Ein Ort, wo man mich 'Lehrerin' nennt, statt nur meinen Titel zu benutzen. — Ein kleiner Unterschied, der aber viel ausmacht."
     },
     "hidden_nurse_d4_name_choice": {
@@ -191,7 +191,7 @@
     },
     "hidden_nurse_d4_6": {
         "name": "Schulkrankenschwester",
-        "text": "Danke. Mit dir ging es deutlich schneller. ...Das ist nicht nichts."
+        "text": "Danke. Dank dir war es schnell erledigt. ...War nichts Besonderes."
     },
     "hidden_nurse_d4_choice": {
         "name": "Schulkrankenschwester",
@@ -207,7 +207,7 @@
     },
     "hidden_nurse_d4_meal_1": {
         "name": "Schulkrankenschwester",
-        "text": "Boah, ist das scharf. Für sowas bin ich inzwischen zu alt."
+        "text": "Ah, ist das scharf. So etwas kann ich nicht mehr so gut essen wie früher."
     },
     "hidden_nurse_d4_meal_2": {
         "name": "{name}",
@@ -380,22 +380,6 @@
     "morning4_yuna_msg_1_ins": {
         "name": "{name}",
         "text": "*Kurz. Typisch Yuna. Ich weiß jetzt, dass Wenn du zu spät kommst, gehe ich dasselbe bedeutet wie Bitte komm nicht zu spät.*"
-    },
-    "morning4_yuna_msg_1_ins2": {
-        "name": "Dain",
-        "text": "*Heute ist es soweit!!!! Vor der Turnhalle, 18 Uhr!!*"
-    },
-    "morning4_yuna_msg_1_ins3": {
-        "name": "Dain",
-        "text": "*Wenn du zu spät kommst, werde ich echt sauer!!*"
-    },
-    "morning4_yuna_msg_1_ins4": {
-        "name": "Dain",
-        "text": "*Ahh warum bin ich so nervös lol soll ich das überhaupt abschicken*"
-    },
-    "morning4_yuna_msg_1_ins5": {
-        "name": "{name}",
-        "text": "*Die letzte Zeile wollte sie wahrscheinlich nicht abschicken. Aber es ist Dain, also natürlich hat sie es getan.*"
     },
     "hidden_homeroom_d4_3_ins": {
         "name": "Klassenlehrerin",
@@ -595,7 +579,7 @@
     },
     "hidden_nurse_d4_meal_1_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "Das ist ewig her. *lacht* Ich bin inzwischen alt."
+        "text": "Das ist ewig her. *Lacht* Ich bin auch nicht mehr die Jüngste."
     },
     "hidden_nurse_d4_meal_2_ins": {
         "name": "{name}",
@@ -607,7 +591,7 @@
     },
     "hidden_nurse_d4_meal_3_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie lächelt wieder* So, Mittagspause vorbei. Ich hab noch was zu erledigen."
+        "text": "*Wieder lächelnd* So, wenn du fertig gegessen hast, bist du entlassen. Ich habe nämlich auch noch etwas zu erledigen."
     },
     "hidden_nurse_d4_meal_3_ins3": {
         "name": "{name}",
@@ -623,7 +607,7 @@
     },
     "hidden_nurse_d4_meal_4_ins2": {
         "name": "{name}",
-        "text": "*Sie hat genervt zurückgeschnappt, aber ihre Ohren sind rot. Schon wieder.*"
+        "text": "*Sie konterte mit 'Was redest du da?', konnte mir dann aber für einen Moment nicht in die Augen sehen. Auch dieses Mal ist sie schlecht darin, etwas zu verbergen.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {
@@ -640,3 +624,4 @@
         "text": "*Kurz. Aber heute wirkt diese Kürze besonders klar. Es gibt keine anderen Verabredungen. — Diesmal gehe ich wirklich nur an diesen einen Ort.*"
     }
 }
+

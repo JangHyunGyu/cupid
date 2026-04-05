@@ -742,11 +742,11 @@
     },
     "harem_1_ins": {
         "name": "{name}",
-        "text": "*Yuna agachó la cabeza. Un buen rato. Cuando la levantó, sus ojos estaban secos pero sonreía. ...Idiota. Esa sola palabra contenía la emoción de dos frases.*"
+        "text": "*Yuna agachó la cabeza. Mucho después, cuando la levantó, sonreía con un rostro que ni siquiera podía llorar. ...Esto es realmente lo peor. Aunque fue corto, contenía todo lo que había que decir.*"
     },
     "harem_2": {
         "name": "Yuna",
-        "text": "...Idiota."
+        "text": "...Esto es realmente lo peor."
     },
     "harem_3": {
         "name": "{name}",
@@ -908,7 +908,7 @@
     },
     "hidden_true_homeroom_4_ins5": {
         "name": "Profesora",
-        "text": "Pedí una línea y volviste con tres páginas. *Sonríe* Que una profesora de escritura creativa casi llore con la reseña de un alumno — es nuestro secreto."
+        "text": "Dije \"con una línea es suficiente\", pero escribiste tres páginas. Después de ver eso, no tuve más excusas para posponerlo."
     },
     "hidden_true_homeroom_4_ins6": {
         "name": "{name}",
@@ -920,7 +920,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Profesora",
-        "text": "Terminé el manuscrito. — Pude escribirlo porque tú fuiste mi primer lector. Pedí una línea y trajiste tres páginas. *Sonríe* Que una profesora de escritura creativa casi llore con la reseña de un alumno — es nuestro secreto."
+        "text": "Terminé el manuscrito. Pude seguir adelante después de que lo leyeras primero. Dije \"con una línea es suficiente\", pero escribiste tres páginas. Después de ver eso, no tuve más excusas para posponerlo."
     },
     "hidden_true_homeroom_5_ins": {
         "name": "{name}",
@@ -972,7 +972,7 @@
     },
     "hidden_good_homeroom_3": {
         "name": "{name}",
-        "text": "*Saliendo de la escuela. 'Cuando termine el manuscrito, te contactaré. — A mi primer lector.' Hay un número de teléfono.*"
+        "text": "*Saliendo de la escuela. \"Te contactaré cuando termine el manuscrito. Porque quiero mostrártelo a ti primero.\" Hay un número de teléfono escrito.*"
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
@@ -1045,7 +1045,7 @@
     },
     "hidden_true_nurse_2_ins": {
         "name": "{name}",
-        "text": "*No la enfermera del colegio — solo una mujer.*"
+        "text": "*Hoy, parece más una persona que una enfermera escolar.*"
     },
     "hidden_true_nurse_2_ins2": {
         "name": "Enfermera",
@@ -1069,7 +1069,7 @@
     },
     "hidden_true_nurse_5": {
         "name": "Enfermera",
-        "text": "...Pero ahora no es broma."
+        "text": "...Pero ahora no tengo intención de andarme con rodeos."
     },
     "hidden_true_nurse_5_ins": {
         "name": "{name}",
@@ -1077,11 +1077,11 @@
     },
     "hidden_true_nurse_5_ins2": {
         "name": "Enfermera",
-        "text": "Sabía que no debía sentir algo así por un alumno. — Por eso lo disfrazaba todo de broma. Una y otra vez."
+        "text": "Sabías que no podía ser, ¿verdad? Por eso lo pasaba por alto como si fuera una broma."
     },
     "hidden_true_nurse_5_ins3": {
         "name": "Enfermera",
-        "text": "Pero tú viste la sinceridad detrás de las bromas."
+        "text": "Pero tú te dabas cuenta incluso cuando me andaba con rodeos."
     },
     "hidden_true_nurse_5_ins4": {
         "name": "{name}",
@@ -1093,7 +1093,7 @@
     },
     "hidden_true_nurse_6": {
         "name": "Enfermera",
-        "text": "Así que, cuando termine la ceremonia de graduación — vuelve a verme. No en la enfermería, sino aquí. La próxima vez, encuéntrame no como la enfermera del colegio, sino como yo."
+        "text": "Así que, cuando termine la ceremonia de graduación, vuelve. No a la enfermería, sino aquí. Entonces te veré como Lee Juwon, no como la enfermera escolar."
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
@@ -1101,7 +1101,7 @@
     },
     "hidden_true_nurse_7_ins": {
         "name": "Enfermera",
-        "text": "...Eres la primera persona que se dio cuenta."
+        "text": "...Eres la primera persona que me ha leído tan a fondo."
     },
     "hidden_true_nurse_7_ins2": {
         "name": "{name}",
@@ -1113,7 +1113,7 @@
     },
     "hidden_true_nurse_8": {
         "name": "Enfermera",
-        "text": "Ahora ven incluso sin fingir que te duele algo. — Me gusta más así."
+        "text": "Ahora, no finjas que te duele algo cuando vengas. Solo di que viniste porque querías verme."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
@@ -1149,7 +1149,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Enfermera",
-        "text": "Oh, un graduado."
+        "text": "¿Qué te trae por aquí, graduado?"
     },
     "hidden_good_nurse_2": {
         "name": "Enfermera",

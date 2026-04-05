@@ -109,7 +109,7 @@
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Profesora",
-        "text": "Encontrar al primer lector. Sin alguien que lea — la historia nunca se completa."
+        "text": "Al final, tienes que mostrárselo a alguien para que llegue hasta el final. Si no hay nadie que lo lea, se detiene una y otra vez."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",
@@ -145,9 +145,9 @@
     },
     "hidden_homeroom_d4_freetalk": {
         "name": "Profesora",
-        "text": "*Conversando con la profesora en un café.*",
-        "context": "Día 4. Encuentro casual el fin de semana. Pidió ser su primer lector. Tono: La conversación se ha vuelto seria. Emoción y nerviosismo de la cita. Más sinceridad que bromas. Momentos de honestidad emocional.",
-        "personality": "La profesora titular se muestra más relajada fuera del colegio. Oscila entre su pasión por la novela y lo que siente por el estudiante."
+        "text": "*Conversando con la Profesora titular en un café.*",
+        "context": "Día 4. Se encuentran por casualidad frente a la escuela durante el fin de semana y hablan en una cafetería. Ella le pide que sea la primera persona en leer el manuscrito. Tono: una conversación más seria. La emoción y la tensión de una cita. Hay más sinceridad que bromas. Son momentos en los que los sentimientos se vuelven honestos.",
+        "personality": "La profesora titular se muestra más relajada fuera de la escuela. Vacila entre su pasión por la novela y lo que siente por el estudiante."
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",
@@ -191,11 +191,11 @@
     },
     "hidden_nurse_d4_6": {
         "name": "Enfermera",
-        "text": "Gracias. Terminé mucho más rápido gracias a ti. ...No es poca cosa."
+        "text": "Gracias. Gracias a ti, terminé rápido. ...No fue gran cosa."
     },
     "hidden_nurse_d4_choice": {
         "name": "Enfermera",
-        "text": "A ver, ¿qué te invito para agradecértelo? Que una profesora le pague la comida a un alumno cuenta como actividad educativa.",
+        "text": "A ver, ¿qué te invito como recompensa? Digamos que invitar a un estudiante a comer es una extensión de la educación.",
         "choices": [
             "¿Si es educativa, está bien?",
             "No hace falta, me voy yendo"
@@ -380,22 +380,6 @@
     "morning4_yuna_msg_1_ins": {
         "name": "{name}",
         "text": "*Corto. Muy de Yuna. Ahora sé que si llegas tarde me voy significa lo mismo que por favor no llegues tarde.*"
-    },
-    "morning4_yuna_msg_1_ins2": {
-        "name": "Dain",
-        "text": "*¡¡¡¡Hoy es el día!!!! ¡¡Entrada del gimnasio, 6 PM!!*"
-    },
-    "morning4_yuna_msg_1_ins3": {
-        "name": "Dain",
-        "text": "*¡¡Si llegas tarde me enfado de verdad!!*"
-    },
-    "morning4_yuna_msg_1_ins4": {
-        "name": "Dain",
-        "text": "*Ahh por qué estoy tan nerviosa jaja debería mandar esto siquiera*"
-    },
-    "morning4_yuna_msg_1_ins5": {
-        "name": "{name}",
-        "text": "*Seguramente no quería mandar esa última línea. Pero es Dain, así que por supuesto que la mandó.*"
     },
     "hidden_homeroom_d4_3_ins": {
         "name": "Profesora",
@@ -623,7 +607,7 @@
     },
     "hidden_nurse_d4_meal_4_ins2": {
         "name": "{name}",
-        "text": "*Replicó enfadada, pero tiene las orejas rojas. Otra vez.*"
+        "text": "*Respondió con un '¿Qué dices?', pero no pudo mantener la mirada por un momento. Esta vez también es torpe ocultando cosas.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {
@@ -640,3 +624,4 @@
         "text": "*Corto. Pero hoy esa brevedad se siente nítida. No hay ningún otro plan. — Esta vez voy de verdad a ese único lugar.*"
     }
 }
+

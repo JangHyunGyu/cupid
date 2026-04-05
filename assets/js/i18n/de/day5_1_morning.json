@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_2": {
         "name": "Klassenlehrerin",
-        "text": "Das Manuskript. — Unfertig. Aber ich wollte es meinem ersten Leser geben."
+        "text": "Das Manuskript. Es ist zwar unvollendet... aber ich wollte, dass du es zuerst siehst."
     },
     "hidden_homeroom_d5_3": {
         "name": "Klassenlehrerin",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d5_5": {
         "name": "Klassenlehrerin",
-        "text": "...Es meinem ersten Leser zu geben — ich bin nervöser als gedacht."
+        "text": "...Es jemand anderem zuerst zu zeigen, ist nervöser, als ich dachte."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
@@ -219,14 +219,14 @@
     },
     "hidden_homeroom_d5_6_ins": {
         "name": "{name}",
-        "text": "*Was sie gestern im Café gesagt hat. Erster Leser. — Sie hat es wirklich mitgebracht.*"
+        "text": "*Was sie gestern im Café gesagt hat. Die Worte, dass sie es zuerst zeigen wollte. Sie hat es wirklich mitgebracht.*"
     },
     "hidden_homeroom_d5_6_ins2": {
         "name": "{name}",
         "text": "*Sie reicht den Umschlag herüber. — Ihre Hand zittert leicht.*"
     },
     "hidden_homeroom_d5_6_ins3": {
-        "name": "Klassenlehrer",
+        "name": "Klassenlehrerin",
         "text": "...Lies es und sag mir dann ehrlich deine Meinung. — Du musst nicht höflich zu mir sein."
     },
     "hidden_homeroom_d5_6_ins4": {

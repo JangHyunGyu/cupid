@@ -260,7 +260,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Schulkrankenschwester",
-        "text": "Du bist der Neue, oder? Gleich am ersten Tag im Krankenzimmer. Zäher Start, hm?"
+        "text": "Du bist der Neuzugang, oder? Gleich am ersten Tag im Krankenzimmer, das war wohl ziemlich anstrengend. Mal sehen."
     },
     "after_nurse_enter_5": {
         "name": "{name}",

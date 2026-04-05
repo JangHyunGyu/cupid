@@ -29,10 +29,10 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Le bout de mes doigts est glacé. Il n'y a pas de vent. Si je ne le dis pas maintenant — je crois que je n'aurai plus jamais ce courage.*",
+        "text": "*Je suis nerveux. Mais cette fois, je veux le dire correctement.*",
         "choices": [
-            "Tu sais que si tu fuis, je te poursuivrai. Alors reste et écoute-moi.",
-            "...Il y a du bon vent."
+            "Seoyeon. Attends une seconde.",
+            "...Le vent est agreable."
         ]
     },
     "confess_seo_yes_1": {
@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*Mon cœur va sortir de ma poitrine. — Ça va aller. Cette fois-ci.*"
+        "text": "*Mon souffle me monte à la gorge. Mais cette fois, je ne l'éviterai pas.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Tu souris parfaitement. Toujours. Mais — ces 0,5 secondes où tu arrêtes de sourire n'arrêtent pas de me hanter."
+        "text": "Seoyeon. Tout le monde te voit comme une personne irréprochable, n'est-ce pas ? Mais moi, je me souviens toujours des moments où tu laisses échapper une expression, ne serait-ce qu'un instant."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "À ce moment-là, c'était la vraie toi, Seoyeon. C'est cette Seoyeon que j'aime."
+        "text": "Pas quand tu étais la présidente du conseil des élèves, mais il y a eu des moments où tu apparaissais juste comme Seoyeon. J'ai aimé ça."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -73,11 +73,11 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...Depuis que t'as dit 'c'est généreux' devant le portail."
+        "text": "...Quand tu as dit 'c'est trop pour moi' devant le portail de l'école. À partir de ce moment-là, tu m'as un peu préoccupée."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "— Tu n'imagines pas à quel point je me suis retenue pour ne pas le dire."
+        "text": "Il m'a fallu beaucoup de temps pour aborder ce sujet."
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "confess_dain_yes_8": {
         "name": "{name}",
-        "text": "*Dain est figée. Son énergie a disparu. — Puis ses yeux se remplissent lentement. Elle enfouit son visage dans ses deux mains. La rougeur s'est étendue jusqu'à sa nuque.*"
+        "text": "*Dain s'immobilise. Ses yeux s'humidifient lentement sur son visage, dépourvu de rire. Elle couvre son visage de ses deux mains.*"
     },
     "confess_dain_yes_8_ins": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Attends. Je suffoque — je vais pleurer — pourquoi je pleure, je suis contente —"
+        "text": "...Attends, j'ai vraiment l'impression de pleurer... Je suis heureuse, alors pourquoi ça me fait ça..."
     },
     "confess_dain_yes_9_ins": {
         "name": "{name}",

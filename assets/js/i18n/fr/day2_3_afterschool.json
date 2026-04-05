@@ -222,7 +222,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...Tu es la première personne à dire quelque chose d'aussi absurde avec autant de naturel."
+        "text": "...Tu es la première personne à lancer des mots comme ça, si naturellement."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -499,7 +499,7 @@
         "text": "*En remontant ma manche, je vois une petite écorchure au coude. Ce n'est rien de grave, mais ça saigne un peu.*"
     },
     "hidden_nurse_d2_2": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "Oh, le nouveau d'hier. Déjà de retour ? Tu veux devenir un habitué ?"
     },
     "hidden_nurse_d2_3": {
@@ -507,11 +507,11 @@
         "text": "Je me suis écorché le coude."
     },
     "hidden_nurse_d2_4": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "Bouge pas..."
     },
     "hidden_nurse_d2_5": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "Là... comme ça... voilà. Un pansement mal posé, ça tient pas."
     },
     "hidden_nurse_d2_choice1": {
@@ -523,11 +523,11 @@
         ]
     },
     "hidden_nurse_d2_choice1_a": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "...J'ai les mains plutôt froides d'habitude. On dirait qu'elles sont chaudes aujourd'hui."
     },
     "hidden_nurse_d2_choice1_b": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "*avec un sourire* C'est du soin, du soin. Si on le colle n'importe comment, ça tombe."
     },
     "hidden_nurse_d2_6": {
@@ -535,7 +535,7 @@
         "text": "*En vérifiant le pansement — un ordinateur portable est ouvert sur le bureau. Quelque chose est écrit sur l'écran. Ce n'est pas un dossier médical — on dirait un journal intime.*"
     },
     "hidden_nurse_d2_7": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "T'as rien vu, d'accord ? Secret. Les profs aussi ont droit à leurs petits secrets."
     },
     "hidden_nurse_d2_choice2": {
@@ -547,23 +547,23 @@
         ]
     },
     "hidden_nurse_d2_choice2_a": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "*plissant les yeux* Un seul ? ...Bon, d'accord. Je préfère le cacao au café. Voilà le secret."
     },
     "hidden_nurse_d2_choice2_b": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "*Rit doucement* Secret. Les profs aussi ont droit à leurs petits secrets."
     },
     "hidden_nurse_d2_8": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "C'est bon, retourne en cours. — La prochaine fois, viens sans blessure."
     },
     "hidden_nurse_d2_9": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "Tu peux venir même sans raison. Juste pas pendant les cours. Après la classe."
     },
     "hidden_nurse_d2_freetalk": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
         "context": "Jour 2. Coude écorché en sport. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
         "personality": "L'infirmière est joueuse mais méticuleuse. Prend son temps pour les pansements."

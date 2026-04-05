@@ -188,7 +188,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
-        "text": "No soy una más del montón. — Si es para eso, prefiero que no haya nada."
+        "text": "No me gustan las posiciones ambiguas. Si es así, prefiero no participar en absoluto."
     },
     "lunch3_expose_honest_6": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "lunch3_dain_skin_2": {
         "name": "{name}",
-        "text": "*Dain se separa de golpe. Sus orejas están rojas.*"
+        "text": "*Dain se aparta de golpe y da un paso atrás. Recoge su botella de agua sin motivo.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",

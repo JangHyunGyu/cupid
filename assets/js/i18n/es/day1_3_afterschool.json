@@ -260,7 +260,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Enfermera",
-        "text": "Tú eres el transferido, ¿no? Primer día y ya en la enfermería. Vaya estreno, ¿eh?"
+        "text": "Eres el estudiante transferido, ¿verdad? Primer día y ya en la enfermería, parece que fue bastante duro. A ver."
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_6": {
         "name": "Enfermera",
-        "text": "No tienes fiebre... Puede que solo tengas un poco baja la tensión."
+        "text": "No tienes fiebre... Puede que tengas la tensión un poco baja."
     },
     "after_nurse_enter_7": {
         "name": "Enfermera",
@@ -300,7 +300,7 @@
     },
     "after_nurse_enter_10": {
         "name": "Enfermera",
-        "text": "¡Qué va! Me gusta la escuela. Aquí todos vienen por heridas leves, nada más."
+        "text": "Eso es cosa del pasado. Me gusta la escuela. Aquí las heridas de todos suelen ser leves."
     },
     "after_nurse_enter_11": {
         "name": "Enfermera",

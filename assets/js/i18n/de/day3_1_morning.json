@@ -86,7 +86,7 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*Ihre Hand ist warm. Ob vom Schweiß oder von Dain — beim Rennen bleibt keine Zeit zum Nachdenken.*"
+        "text": "*Ihre Hand ist heiß. Ob vom Schweiß, oder ob es nur dort heiß ist, wo Dain sie gehalten hat. Beim Rennen bleibt keine Zeit zum Nachdenken.*"
     },
     "morning3_classroom_1": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "Schulkrankenschwester",
-        "text": "...War nur ein Scherz. Los, ab in den Unterricht."
+        "text": "...War nur ein Scherz. Los, geh."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Schulkrankenschwester",
@@ -598,7 +598,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins": {
         "name": "Klassenlehrerin",
-        "text": "...Mein erster freiwilliger Leser. Seit sieben Jahren."
+        "text": "...Dann bist du der erste Leser. Seit sieben Jahren."
     },
     "hidden_homeroom_d3_reveal_6_ins2": {
         "name": "{name}",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder spielerisch* Ach, das ist doch nichts. Geht aufs Haus. Komm wieder, wann du willst. Verletzt oder nicht."
+        "text": "*Wieder spielerisch* Ach, das ist doch nichts. Das ist Service. Komm das nächste Mal auch vorbei, wenn du nicht verletzt bist."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",

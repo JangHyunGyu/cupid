@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_2": {
         "name": "Profesora",
-        "text": "El manuscrito. — Está incompleto. Pero quería dárselo a mi primer lector."
+        "text": "El manuscrito. Está incompleto, pero... quería que lo vieras primero."
     },
     "hidden_homeroom_d5_3": {
         "name": "Profesora",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d5_5": {
         "name": "Profesora",
-        "text": "...Dárselo a mi primer lector — estoy más nerviosa de lo que pensaba."
+        "text": "...Mostrar esto a otra persona primero es más estresante de lo que pensaba."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_6_ins": {
         "name": "{name}",
-        "text": "*Lo que dijo ayer en la cafetería. Primera lectora. — De verdad lo trajo.*"
+        "text": "*Lo que dijo ayer en la cafetería. Esas palabras sobre querer mostrarlo primero. De verdad lo trajo.*"
     },
     "hidden_homeroom_d5_6_ins2": {
         "name": "{name}",

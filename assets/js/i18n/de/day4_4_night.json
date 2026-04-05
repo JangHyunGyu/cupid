@@ -335,7 +335,7 @@
     },
     "wall_dain_9": {
         "name": "{name}",
-        "text": "*Mir wird schlagartig schwer ums Herz.*"
+        "text": "*Vor meinen Augen wird es kalt.*"
     },
     "wall_dain_10": {
         "name": "Dain",
@@ -871,7 +871,7 @@
     },
     "night_homeroom_msg_1": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* Die Abgabefrist für das Manuskript rückt näher. ...Es gibt eine Stelle, die ich meinem ersten Leser zeigen möchte."
+        "text": "*Nachricht* Das Manuskript ist fast fertig. ...Es gibt eine Stelle, die ich dir zuerst zeigen möchte."
     },
     "night_homeroom_msg_2": {
         "name": "Klassenlehrerin",
@@ -879,7 +879,7 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*23 Uhr. Eine Nachricht von der Klassenlehrerin. Drei kurze Zeilen. — 'Erster Leser'. Diese Worte gehen mir nicht mehr aus dem Kopf.*"
+        "text": "*23 Uhr. Eine Nachricht von der Klassenlehrerin. Drei kurze Zeilen. — Die Worte 'Ich möchte, dass du es zuerst siehst' bleiben mir im Kopf hängen.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "System",
