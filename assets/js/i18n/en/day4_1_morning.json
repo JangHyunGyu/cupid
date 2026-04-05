@@ -629,5 +629,14 @@
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
         "text": "*My steps stop for a moment, and then I keep walking past.*"
+    },
+    "minsu_cheer_4_branch": {},
+    "minsu_cheer_4_ins_single": {
+        "name": "{name}",
+        "text": "*I check my phone calendar. There's only one date today. — This time, I'm not putting anything off.*"
+    },
+    "morning4_yuna_msg_single": {
+        "name": "{name}",
+        "text": "*Short. But today that brevity feels sharp. There aren't any other plans. — This time, I'm really going to that one place.*"
     }
 }

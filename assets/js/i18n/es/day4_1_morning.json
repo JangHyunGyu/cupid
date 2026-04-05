@@ -629,5 +629,14 @@
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
         "text": "*Por un momento mis pasos se detienen, pero sigo de largo.*"
+    },
+    "minsu_cheer_4_branch": {},
+    "minsu_cheer_4_ins_single": {
+        "name": "{name}",
+        "text": "*Reviso el calendario del móvil. Hoy solo hay una cita. — Esta vez decidí no aplazar nada.*"
+    },
+    "morning4_yuna_msg_single": {
+        "name": "{name}",
+        "text": "*Corto. Pero hoy esa brevedad se siente nítida. No hay ningún otro plan. — Esta vez voy de verdad a ese único lugar.*"
     }
 }

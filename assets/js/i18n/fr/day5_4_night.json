@@ -1193,5 +1193,6 @@
         "choices": [
             "Recommencer depuis le début"
         ]
-    }
+    },
+    "ending_hidden_commit_check": {}
 }

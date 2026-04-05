@@ -1193,5 +1193,6 @@
         "choices": [
             "最初からやり直す"
         ]
-    }
+    },
+    "ending_hidden_commit_check": {}
 }

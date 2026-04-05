@@ -629,5 +629,14 @@
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
         "text": "*Mes pas s'arrêtent un instant, puis je continue simplement mon chemin.*"
+    },
+    "minsu_cheer_4_branch": {},
+    "minsu_cheer_4_ins_single": {
+        "name": "{name}",
+        "text": "*Je regarde le calendrier de mon téléphone. Il n'y a qu'un seul rendez-vous aujourd'hui. — Cette fois, j'ai décidé de ne rien remettre à plus tard.*"
+    },
+    "morning4_yuna_msg_single": {
+        "name": "{name}",
+        "text": "*Court. Mais aujourd'hui, cette brièveté ressort avec netteté. Il n'y a pas d'autre rendez-vous. — Cette fois, je vais vraiment à ce seul endroit.*"
     }
 }

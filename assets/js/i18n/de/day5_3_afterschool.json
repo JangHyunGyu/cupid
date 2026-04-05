@@ -392,5 +392,9 @@
     "after5_confess_no_2b": {
         "name": "{name}",
         "text": "*Ich ging nach Hause.*"
+    },
+    "after5_harem_commit": {
+        "name": "{name}",
+        "text": "*Die Worte, die ich herunterschlucken und übergehen wollte, kommen am Ende doch heraus. Dass ich mich nicht für nur eine entscheiden kann. Ich weiß, dass das feige ist, und trotzdem werde ich heute auch diesen Preis mittragen.*"
     }
 }

@@ -1193,5 +1193,6 @@
         "choices": [
             "Empezar de nuevo desde el principio"
         ]
-    }
+    },
+    "ending_hidden_commit_check": {}
 }

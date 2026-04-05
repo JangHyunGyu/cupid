@@ -629,5 +629,14 @@
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
         "text": "*Meine Schritte stocken kurz, dann gehe ich einfach weiter daran vorbei.*"
+    },
+    "minsu_cheer_4_branch": {},
+    "minsu_cheer_4_ins_single": {
+        "name": "{name}",
+        "text": "*Ich schaue auf den Kalender meines Handys. Heute gibt es nur ein einziges Treffen. — Diesmal habe ich beschlossen, nichts mehr aufzuschieben.*"
+    },
+    "morning4_yuna_msg_single": {
+        "name": "{name}",
+        "text": "*Kurz. Aber heute wirkt diese Kürze besonders klar. Es gibt keine anderen Verabredungen. — Diesmal gehe ich wirklich nur an diesen einen Ort.*"
     }
 }

@@ -629,5 +629,14 @@
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
         "text": "*ふと足が止まる。でも、そのまま通り過ぎる。*"
+    },
+    "minsu_cheer_4_branch": {},
+    "minsu_cheer_4_ins_single": {
+        "name": "{name}",
+        "text": "*スマホのカレンダーを見る。今日の約束は一つだけだ。——今度は先延ばしにしないことにした。*"
+    },
+    "morning4_yuna_msg_single": {
+        "name": "{name}",
+        "text": "*短い。でも今日はその短さが妙にくっきりしている。ほかの約束はない。——今度こそ、本当にその一か所へ向かう。*"
     }
 }

@@ -392,5 +392,9 @@
     "after5_confess_no_2b": {
         "name": "{name}",
         "text": "*I went back home.*"
+    },
+    "after5_harem_commit": {
+        "name": "{name}",
+        "text": "*The words I tried to swallow and pretend away finally come out. That I can't choose just one. I know it's cowardly, and even so, tonight I'm going to carry that cost too.*"
     }
 }

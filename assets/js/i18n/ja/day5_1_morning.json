@@ -425,5 +425,24 @@
         "name": "{name}",
         "text": "*今回のハートは——医療的関心ではなさそうだ。*"
     },
-    "hidden_nurse_d5_flag_check": {}
+    "hidden_nurse_d5_flag_check": {},
+    "morning5_start_branch": {},
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
+        "name": "{name}",
+        "text": "*机の上に新しいメモはない。その代わり、昨日屋上で向き合ったソヨンの目がまだ鮮明に残っている。ユナとダインは行事の準備の話を少しするだけだ。*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*新しいメモはない。その代わり、昨日ユナが珍しく長く視線を止めていたことがまだ残っている。ソヨンとダインは行事の準備の話を少しするだけだ。*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*ダインの感嘆符より先に、昨日最後に止まった息が浮かぶ。ソヨンとユナは行事の準備の話を少しするだけだ。*"
+    },
+    "morning5_end_branch": {},
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*三方向からの合図じゃない。もう答えを選んだまま、最後の行事へ向かう。*"
+    }
 }

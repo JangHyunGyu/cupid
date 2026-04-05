@@ -425,5 +425,24 @@
         "name": "{name}",
         "text": "*Ce cœur-là — ne semble pas être de l'intérêt médical.*"
     },
-    "hidden_nurse_d5_flag_check": {}
+    "hidden_nurse_d5_flag_check": {},
+    "morning5_start_branch": {},
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
+        "name": "{name}",
+        "text": "*Il n'y a pas de nouveau mot sur le bureau. À la place, le regard que Seoyeon m'a lancé hier sur le toit reste encore vif. Yuna et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*Il n'y a pas de nouveau mot. À la place, il reste encore la façon dont Yuna a soutenu mon regard plus longtemps que d'habitude hier. Seoyeon et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*Avant même les points d'exclamation de Dain, c'est le souffle suspendu à la fin d'hier qui me revient d'abord. Seoyeon et Yuna ne me disent que quelques mots sur les préparatifs de l'événement.*"
+    },
+    "morning5_end_branch": {},
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*Ce ne sont plus des signaux venus de trois directions. J'ai déjà choisi ma réponse, et je me dirige vers le dernier événement.*"
+    }
 }
