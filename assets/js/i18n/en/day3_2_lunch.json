@@ -97,6 +97,10 @@
         "name": "Dain",
         "text": "What! What about me?!"
     },
+    "lunch3_share_solo": {
+        "name": "{name}",
+        "text": "*The three of us shared a little bit. Nothing special, but — the mood was nice. A lunch where no one was left out.*"
+    },
     "lunch3_harem_1": {
         "name": "{name}",
         "text": "*In the end, the three of us shared a little bit. Seoyeon smiled politely, Dain was overly cheerful, and Yuna never took out the folded note. It wasn't over; it was just postponed.*"

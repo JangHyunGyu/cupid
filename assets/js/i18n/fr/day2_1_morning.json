@@ -206,7 +206,7 @@
     },
     "hidden_homeroom_d2_walk": {
         "name": "{name}",
-        "text": "*J'ai suivi la professeure principale jusqu'à la salle des professeurs.*"
+        "text": "*Un bureau dans le coin de la salle des professeurs. Des piles de papier et — du papier à manuscrit.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professeure principale",

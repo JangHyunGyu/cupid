@@ -506,8 +506,13 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/yuna_bored.png",
         "branches": [
             { "condition": "day3_has_multiple_dates", "next": "lunch3_harem_1" },
-            { "next": "lunch3_end" }
+            { "next": "lunch3_share_solo" }
         ]
+    },
+    "lunch3_share_solo": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "lunch3_end"
     },
     "lunch3_harem_1": {
         "background": "assets/images/background/room_school.png",

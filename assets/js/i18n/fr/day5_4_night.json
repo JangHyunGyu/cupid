@@ -57,7 +57,7 @@
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Chaque choix pointait vers une seule personne. Ce n'était pas cinq jours — chaque jour était tout.*"
+        "text": "*J'ai pris le même chemin chaque matin. Ce n'était pas cinq jours — chaque instant aux côtés de Seoyeon était tout.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "Système",
@@ -77,7 +77,7 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*J'ai fait ma déclaration. Elle a été acceptée. C'était bien, un petit moment. — Mais un mois plus tard, à peu près, j'ai reçu un message pour qu'on se retrouve au café devant le lycée.*"
+        "text": "*Je me suis déclaré. Seoyeon a dit d'essayer. Mais son 'd'accord' avait un point d'interrogation. — Un mois plus tard environ, j'ai reçu un message pour se retrouver au café devant le lycée.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
@@ -89,7 +89,7 @@
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*J'ai quitté le café. Il pleut. Le regard de Seoyeon derrière ses lunettes était sec. Ni calme, ni tremblant. Juste — les yeux de quelqu'un venu tourner la page.*"
+        "text": "*J'ai quitté le café. Il pleut. J'avais un parapluie — maintenant il y en a deux.*"
     },
     "true_seo_1": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Cinq jours.*"
+        "text": "*Cinq jours. Cinq jours pour découvrir la vraie personne cachée derrière la perfection de Seoyeon.*"
     },
     "ending_aff_check_yuna": {
         "name": "Système",
@@ -169,7 +169,7 @@
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Chaque choix pointait vers une seule personne. Ce n'était pas cinq jours — chaque jour était tout.*"
+        "text": "*Je me suis assis à la même place chaque jour. Ce n'était pas cinq jours — chaque silence partagé avec Yuna était tout.*"
     },
     "perfect_epilogue_bridge_yuna": {
         "name": "Système",
@@ -189,7 +189,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*J'ai fait ma déclaration. Elle a été acceptée. C'était bien, un petit moment. — Mais un mois plus tard, à peu près, j'ai reçu un message pour qu'on se retrouve au café devant le lycée.*"
+        "text": "*Je me suis déclaré. Yuna a hoché la tête. Mais ce hochement tenait plus de la tentative que de la certitude. — Un mois plus tard environ, un mot est apparu dans mon casier. 'Faut qu'on parle.'*"
     },
     "bitter_yuna_2": {
         "name": "Yuna",
@@ -253,7 +253,7 @@
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Cinq jours.*"
+        "text": "*Cinq jours. Cinq jours pour apprendre à lire les mots cachés dans le silence de Yuna.*"
     },
     "ending_aff_check_dain": {
         "name": "Système",
@@ -289,7 +289,7 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Chaque choix pointait vers une seule personne. Ce n'était pas cinq jours — chaque jour était tout.*"
+        "text": "*J'ai vu le même sourire chaque jour. Ce n'était pas cinq jours — chaque vraie expression que Dain m'a montrée était tout.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "Système",
@@ -309,7 +309,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*J'ai fait ma déclaration. Elle a été acceptée. C'était bien, un petit moment. — Mais un mois plus tard, à peu près, j'ai reçu un message pour qu'on se retrouve au café devant le lycée.*"
+        "text": "*Je me suis déclaré. Dain a souri et dit que ça lui faisait plaisir. Mais ce sourire était du même genre que d'habitude. — Un mois plus tard environ, j'ai reçu un message pour se retrouver devant le gymnase.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -353,7 +353,7 @@
     },
     "true_dain_4": {
         "name": "{name}",
-        "text": ""
+        "text": "*Les mots ne sortent pas. Les battements de son coeur résonnent jusqu'au bout de mes doigts.*"
     },
     "true_dain_5": {
         "name": "{name}",
@@ -381,7 +381,7 @@
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Cinq jours.*"
+        "text": "*Cinq jours. Cinq jours pour entendre le coeur caché derrière les points d'exclamation de Dain.*"
     },
     "true_epilogue_2": {
         "name": "{name}",
@@ -502,7 +502,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
+        "text": "*J'ai hésité, alors j'ai compris. Que s'appuyer sur Seoyeon n'est pas une faiblesse.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
+        "text": "*J'avais l'impression d'avoir fait un détour, mais à côté de Yuna, c'est là que j'étais censé être.*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
+        "text": "*C'est pas grave d'être maladroit. Comme Dain l'a dit, c'est la première fois.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_1_ins": {
         "name": "{name}",
-        "text": "*Yuna a baissé la tête. Longtemps. Quand elle l'a relevée, elle souriait avec un visage qui ne pouvait même pas pleurer. ...C'est vraiment le pire. Même si c'était court, tout ce qui devait être dit y était contenu.*"
+        "text": "*Yuna a baissé la tête. Longtemps. Quand elle l'a relevée, elle souriait avec un visage qui ne pouvait même pas pleurer. Elle se mordait la lèvre.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -845,7 +845,10 @@
         "name": "",
         "text": "─── Professeure PERFECT END ───"
     },
-    "hidden_perfect_homeroom_5": {},
+    "hidden_perfect_homeroom_5": {
+        "name": "{name}",
+        "text": "*C'est un secret. Rien qu'à nous. — Ce bouquet pèse plus lourd que le diplôme.*"
+    },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
         "text": "*On n'a pas quitté le café ce jour-là. Jusqu'au coucher du soleil. — Tous les mots qu'on n'avait pas pu dire dans cette salle de classe il y a quatre ans sont enfin sortis.*"

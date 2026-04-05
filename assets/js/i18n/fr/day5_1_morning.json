@@ -127,7 +127,7 @@
     },
     "hidden_nurse_d5_2": {
         "name": "{name}",
-        "text": "*Pendant la pause au milieu de l'événement. Je passe devant l'infirmerie — la porte s'ouvre.*"
+        "text": "*La porte s'ouvre. L'infirmière est là, debout. Deux gobelets en papier dans les mains.*"
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",

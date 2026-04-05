@@ -146,7 +146,7 @@
     },
     "hallway_2": {
         "name": "{name}",
-        "text": "*Alle vorbeigehenden Schüler grüßen Seoyeon.*"
+        "text": "*Seoyeon hebt lässig die Hand zum Gruß. Ganz natürlich. Die soziale Rangordnung dieser Schule scheint schon festgelegt.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -322,7 +322,7 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Tut sie so, als wäre es ihr egal, oder ist es ihr wirklich egal? — Irgendwie glaube ich, es ist Ersteres.*"
+        "text": "*Der Unterricht beginnt. Yuna schaut wieder aus dem Fenster. Dain quatscht schon mit der Person neben ihr.*"
     },
     "hallway_6_ins": {
         "name": "Seoyeon",
@@ -378,6 +378,6 @@
     },
     "classroom_yuna_note_5_ins": {
         "name": "{name}",
-        "text": "*Tut sie nur desinteressiert, oder ist sie es wirklich? — Interessant. Aber das Seltsame ist, dass sie meinen Namen schon kannte. Bei der Vorstellung hat sie woanders hingeschaut. — Sie hat also doch zugehört.*"
+        "text": "*Die den Zettel geschickt hat, ist das Mädchen, das vorhin aus dem Fenster gestarrt hat. Ob sie nur so tut, als wäre es ihr egal, oder ob es das wirklich ist?*"
     }
 }

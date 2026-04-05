@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*She made it sound optional, but the tone says something will happen if I don't go.*"
+        "text": "*'Actually come this time,' she said, but the tone says something will happen if I don't.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -296,7 +296,7 @@
     },
     "night2_end_2_ins2": {
         "name": "{name}",
-        "text": "*Minsu's words keep coming back. 'Were you like this at your old school?'*"
+        "text": "*Those words keep echoing. I still haven't answered.*"
     },
     "night2_end_3_ins": {
         "name": "{name}",

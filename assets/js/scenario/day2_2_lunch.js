@@ -971,6 +971,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_end": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
+        "stats": {"Seoyeon":{"affinity":-3},"Dain":{"affinity":-3}},
         "next": "after2_start"
     }
     };

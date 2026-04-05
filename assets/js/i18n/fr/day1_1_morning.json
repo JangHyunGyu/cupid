@@ -146,7 +146,7 @@
     },
     "hallway_2": {
         "name": "{name}",
-        "text": "*Tous les élèves qui passent saluent Seoyeon.*"
+        "text": "*Seoyeon leur fait un petit signe de la main. Naturel. On dirait que la hiérarchie sociale de ce lycée est déjà bien établie.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -322,7 +322,7 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Elle fait semblant de s'en ficher ou elle s'en fiche vraiment ? — Je pencherais pour la première option.*"
+        "text": "*Le cours commence. Yuna regarde à nouveau par la fenêtre. Dain parle déjà à son voisin.*"
     },
     "hallway_6_ins": {
         "name": "Seoyeon",
@@ -378,6 +378,6 @@
     },
     "classroom_yuna_note_5_ins": {
         "name": "{name}",
-        "text": "*Elle feint l'indifférence, ou c'est sincère. — Intéressant. Mais le plus étrange, c'est qu'elle connaissait déjà mon prénom. Elle regardait ailleurs pendant la présentation. — Elle écoutait, en fait.*"
+        "text": "*Celle qui a envoyé le mot, c'est la fille qui regardait par la fenêtre tout à l'heure. Difficile de savoir si elle fait semblant de s'en ficher ou si c'est réel.*"
     }
 }

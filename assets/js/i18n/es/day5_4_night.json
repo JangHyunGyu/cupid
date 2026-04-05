@@ -57,7 +57,7 @@
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Cada elección apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
+        "text": "*Caminé por el mismo camino cada mañana. No fueron cinco días — cada momento junto a Seoyeon lo fue todo.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "Sistema",
@@ -77,7 +77,7 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*Me declaré. Me aceptó. Por un tiempo, todo fue genial. — Pero más o menos un mes después, me llegó un mensaje para vernos en el café de enfrente de la escuela.*"
+        "text": "*Me declaré. Seoyeon dijo que lo intentáramos. Pero su 'vale' tenía un signo de interrogación. — Más o menos un mes después, me llegó un mensaje para vernos en el café de enfrente de la escuela.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
@@ -89,7 +89,7 @@
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*Salí del café. Está lloviendo. La mirada de Seoyeon detrás de los lentes estaba seca. Sin calma, sin temblor. Solo — los ojos de alguien que vino a cerrar el capítulo.*"
+        "text": "*Salí del café. Está lloviendo. Tenía un paraguas — ahora hay dos.*"
     },
     "true_seo_1": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Fueron cinco días.*"
+        "text": "*Fueron cinco días. Cinco días para conocer a la persona real escondida tras la perfección de Seoyeon.*"
     },
     "ending_aff_check_yuna": {
         "name": "Sistema",
@@ -169,7 +169,7 @@
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Cada elección apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
+        "text": "*Me senté en el mismo sitio cada día. No fueron cinco días — cada silencio compartido con Yuna lo fue todo.*"
     },
     "perfect_epilogue_bridge_yuna": {
         "name": "Sistema",
@@ -189,7 +189,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*Me declaré. Me aceptó. Por un tiempo, todo fue genial. — Pero más o menos un mes después, me llegó un mensaje para vernos en el café de enfrente de la escuela.*"
+        "text": "*Me declaré. Yuna asintió. Pero ese gesto fue más un intento que una certeza. — Más o menos un mes después, apareció una nota en mi taquilla. 'Hablemos.'*"
     },
     "bitter_yuna_2": {
         "name": "Yuna",
@@ -253,7 +253,7 @@
     },
     "true_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Fueron cinco días.*"
+        "text": "*Fueron cinco días. Cinco días para aprender a leer las palabras escondidas en el silencio de Yuna.*"
     },
     "ending_aff_check_dain": {
         "name": "Sistema",
@@ -289,7 +289,7 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Cada elección apuntaba a una persona. No fueron cinco días — cada día lo fue todo.*"
+        "text": "*Vi la misma sonrisa cada día. No fueron cinco días — cada expresión real que Dain me mostró lo fue todo.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "Sistema",
@@ -309,7 +309,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*Me declaré. Me aceptó. Por un tiempo, todo fue genial. — Pero más o menos un mes después, me llegó un mensaje para vernos en el café de enfrente de la escuela.*"
+        "text": "*Me declaré. Dain sonrió y dijo que estaba contenta. Pero esa sonrisa era del mismo tipo de siempre. — Más o menos un mes después, me llegó un mensaje para quedar frente al gimnasio.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -353,7 +353,7 @@
     },
     "true_dain_4": {
         "name": "{name}",
-        "text": ""
+        "text": "*No me salen las palabras. Sus latidos resuenan hasta la punta de mis dedos.*"
     },
     "true_dain_5": {
         "name": "{name}",
@@ -381,7 +381,7 @@
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Fueron cinco días.*"
+        "text": "*Fueron cinco días. Cinco días para escuchar el corazón escondido tras los signos de exclamación de Dain.*"
     },
     "true_epilogue_2": {
         "name": "{name}",
@@ -502,7 +502,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
+        "text": "*Dudé, por eso entendí. Que apoyarme en Seoyeon no es debilidad.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
+        "text": "*Parecía un rodeo, pero al final, al lado de Yuna era donde pertenecía.*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
+        "text": "*Está bien ser torpe. Como dijo Dain, es nuestra primera vez.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_1_ins": {
         "name": "{name}",
-        "text": "*Yuna agachó la cabeza. Mucho después, cuando la levantó, sonreía con un rostro que ni siquiera podía llorar. ...Esto es realmente lo peor. Aunque fue corto, contenía todo lo que había que decir.*"
+        "text": "*Yuna agachó la cabeza. Mucho después, cuando la levantó, sonreía con un rostro que ni siquiera podía llorar. Se mordía el labio.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -845,7 +845,10 @@
         "name": "",
         "text": "─── Profesora PERFECT END ───"
     },
-    "hidden_perfect_homeroom_5": {},
+    "hidden_perfect_homeroom_5": {
+        "name": "{name}",
+        "text": "*Esto es un secreto. Solo nuestro. — Este ramo pesa más que el diploma.*"
+    },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
         "text": "*Ese día no salimos del café. Hasta el atardecer. — Todas las palabras que no pudimos decir en aquel aula hace cuatro años salieron de golpe.*"

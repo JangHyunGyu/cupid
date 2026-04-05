@@ -209,7 +209,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "{name}",
-        "text": "*Dijo que me pegaría, pero le temblaba la voz.*"
+        "text": "*Dijo 'si dices esas cosas', pero le temblaba la voz.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
@@ -221,7 +221,7 @@
     },
     "date_dain_arcade": {
         "name": "{name}",
-        "text": "*Vamos a un salón de juegos. Nos paramos frente a un juego de ritmo.*"
+        "text": "*Nos paramos frente a la máquina de ritmo. La pantalla parpadea.*"
     },
     "date_dain_arcade_2": {
         "name": "Dain",
@@ -249,7 +249,7 @@
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*Pasamos por una tienda de artículos deportivos. Dain se detiene frente al escaparate. Hay zapatillas de voleibol en exhibición.*"
+        "text": "*Salimos de la sala de juegos a la calle.*"
     },
     "date_dain_shop": {
         "name": "Dain",
@@ -307,7 +307,7 @@
     },
     "date_dain_knee_2b": {
         "name": "{name}",
-        "text": "*Salimos de la sala de juegos a la calle.*"
+        "text": "*Pasamos por una tienda de artículos deportivos. Dain se detiene frente al escaparate. Hay zapatillas de voleibol en exhibición.*"
     },
     "date_seo_pretty_high_ins": {
         "name": "Seoyeon",

@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*Dijo 'tu decisión', pero el tono sugiere que algo pasará si no aparezco.*"
+        "text": "*Dijo 'esta vez ven de verdad', pero el tono sugiere que algo pasará si no aparezco.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -296,7 +296,7 @@
     },
     "night2_end_2_ins2": {
         "name": "{name}",
-        "text": "*Las palabras de Minsu vuelven una y otra vez. '¿Eras así en tu antigua escuela?'*"
+        "text": "*Esas palabras siguen resonando. Todavía no he respondido.*"
     },
     "night2_end_3_ins": {
         "name": "{name}",

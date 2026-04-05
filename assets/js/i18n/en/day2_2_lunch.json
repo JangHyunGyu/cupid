@@ -399,8 +399,8 @@
         "text": "Why, does it bother you?"
     },
     "lunch2_seo_17": {
-        "name": "Dain",
-        "text": "Oh come on, I was just curious!"
+        "name": "{name}",
+        "text": "*...That's probably what Dain would say.*"
     },
     "lunch2_seo_18": {
         "name": "{name}",
@@ -436,7 +436,7 @@
     },
     "lunch2_seo_c1_4": {
         "name": "Seoyeon",
-        "text": "It was a grain of rice."
+        "text": "...That's all."
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
@@ -581,7 +581,7 @@
     },
     "lunch2_dain_end_ins": {
         "name": "{name}",
-        "text": "*Fourth period PE. Running on the field when — the guy next to me stops short and we collide. My elbow gets scraped.*"
+        "text": "*Fifth period PE. Running on the field when — the guy next to me stops short and we collide. My elbow gets scraped.*"
     },
     "lunch2_dain_end_ins2": {
         "name": "{name}",

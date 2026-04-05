@@ -616,7 +616,10 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "hidden_nurse_d3_2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d3_2_ins"
+        "branches": [
+            { "condition": "homeroom_day2", "next": "hidden_nurse_d3_2_ins" },
+            { "next": "hidden_nurse_d3_3" }
+        ]
     },
     "hidden_nurse_d3_2_ins": {
         "background": "assets/images/background/room_school.png",

@@ -146,7 +146,7 @@
     },
     "hallway_2": {
         "name": "{name}",
-        "text": "*Every passing student greets Seoyeon.*"
+        "text": "*Seoyeon waves back casually. So natural. Seems like this school's social hierarchy is already set.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -322,7 +322,7 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Pretending not to care, or genuinely not caring. — I suspect it's the former.*"
+        "text": "*Class starts. Yuna is looking out the window again. Dain is already chatting with the person next to her.*"
     },
     "hallway_6_ins": {
         "name": "Seoyeon",
@@ -378,6 +378,6 @@
     },
     "classroom_yuna_note_5_ins": {
         "name": "{name}",
-        "text": "*Pretending not to care, or genuinely not caring. — Interesting. But the strange thing is, she already knew my name. She was looking away during the introduction. — She was listening after all.*"
+        "text": "*The one who sent the note is the girl who was staring out the window earlier. Hard to tell if she's faking disinterest or genuinely doesn't care.*"
     }
 }

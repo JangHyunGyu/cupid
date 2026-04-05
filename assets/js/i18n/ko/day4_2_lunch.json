@@ -265,7 +265,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "{name}",
-        "text": "*때린다고 했지만 목소리가 떨리고 있다.*"
+        "text": "*그런 말 하면, 이라고 했지만 목소리가 떨리고 있다.*"
     },
     "date_dain_pretty_low": {
         "name": "다인",
@@ -281,7 +281,7 @@
     },
     "date_dain_arcade": {
         "name": "{name}",
-        "text": "*오락실로 간다. 리듬게임 앞에 선다.*"
+        "text": "*리듬게임 기계 앞에 선다. 화면이 깜빡인다.*"
     },
     "date_dain_arcade_2": {
         "name": "다인",
@@ -321,11 +321,11 @@
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*스포츠용품점을 지나간다. 다인이 쇼윈도 앞에서 멈춘다. 배구화가 진열돼 있다.*"
+        "text": "*오락실을 나와 거리로 나왔다.*"
     },
     "date_dain_knee_2b": {
         "name": "{name}",
-        "text": "*오락실을 나와 거리로 나왔다.*"
+        "text": "*스포츠용품점을 지나간다. 다인이 쇼윈도 앞에서 멈춘다. 배구화가 진열돼 있다.*"
     },
     "date_dain_shop": {
         "name": "다인",

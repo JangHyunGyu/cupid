@@ -163,7 +163,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": null,
         "branches": [
             { "condition": "homeroom_day3", "next": "morning4_manuscript_check" },
-            { "condition": "nurse_day4", "next": "hidden_nurse_d4_morning_1" },
+            { "condition": "nurse_day3", "next": "hidden_nurse_d4_morning_1" },
             { "next": "hidden_nurse_d4_check" }
         ]
     },
