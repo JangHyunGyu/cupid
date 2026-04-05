@@ -923,7 +923,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Homeroom Teacher",
-        "text": "I finished the manuscript. After you read it first, I was able to keep pushing forward. I asked for one line and you wrote three pages. After seeing that, I had no more excuses to postpone it."
+        "text": "*Looking out the window* I finished the manuscript. After you read it first, I was able to keep pushing forward. I asked for one line and you wrote three pages. After seeing that, I had no more excuses to postpone it."
     },
     "hidden_true_homeroom_5_ins": {
         "name": "{name}",
@@ -1144,7 +1144,7 @@
     },
     "hidden_true_nurse_8_ins6": {
         "name": "School Nurse",
-        "text": "I put my hand on your forehead and said 'I just wanted to touch you.' That was a joke."
+        "text": "I put my hand on your forehead and said 'I just wanted to touch you.' *Smiling softly* That was a joke."
     },
     "hidden_true_nurse_8_ins7": {
         "name": "{name}",

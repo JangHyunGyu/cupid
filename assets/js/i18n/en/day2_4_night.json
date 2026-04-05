@@ -270,22 +270,6 @@
         "name": "{name}",
         "text": "*A very Yuna riddle. A person who never gives you the answer. — A person who makes you want to find out.*"
     },
-    "night2_reply_yuna_6_ins3": {
-        "name": "{name}",
-        "text": "*Between the messenger alerts — a personal message from the homeroom teacher arrives.*"
-    },
-    "night2_reply_yuna_6_ins4": {
-        "name": "Homeroom Teacher",
-        "text": "*{name}, thanks for coming to the faculty office today*"
-    },
-    "night2_reply_yuna_6_ins5": {
-        "name": "Homeroom Teacher",
-        "text": "*The admin stuff is done so I won't need to call you in again*"
-    },
-    "night2_reply_yuna_6_ins6": {
-        "name": "Homeroom Teacher",
-        "text": "*...But if you're having a hard time adjusting, come anytime*"
-    },
     "night2_end_1_ins": {
         "name": "{name}",
         "text": "*The second day is over.*"

@@ -270,22 +270,6 @@
         "name": "{name}",
         "text": "*Ein typisches Yuna-Rätsel. Eine Person, die dir nie die Antwort gibt. — Eine Person, die dich neugierig macht.*"
     },
-    "night2_reply_yuna_6_ins3": {
-        "name": "{name}",
-        "text": "*Zwischen den Messenger-Benachrichtigungen — eine persönliche Nachricht von der Klassenlehrerin.*"
-    },
-    "night2_reply_yuna_6_ins4": {
-        "name": "Klassenlehrerin",
-        "text": "*{name}, danke, dass du heute ins Lehrerzimmer gekommen bist*"
-    },
-    "night2_reply_yuna_6_ins5": {
-        "name": "Klassenlehrerin",
-        "text": "*Die Verwaltungssachen sind erledigt, also muss ich dich nicht mehr herbestellen*"
-    },
-    "night2_reply_yuna_6_ins6": {
-        "name": "Klassenlehrerin",
-        "text": "*...Aber wenn dir die Eingewöhnung schwerfällt, komm jederzeit vorbei*"
-    },
     "night2_end_1_ins": {
         "name": "{name}",
         "text": "*Der zweite Tag ist vorbei.*"

@@ -64,8 +64,8 @@
         "text": "*On passe devant un fleuriste.*"
     },
     "date_seo_flower_2": {
-        "name": "Seoyeon",
-        "text": "...On entre ?"
+        "name": "{name}",
+        "text": "*Seoyeon pousse la porte du fleuriste. Une clochette tinte.*"
     },
     "date_seo_succulent": {
         "name": "{name}",

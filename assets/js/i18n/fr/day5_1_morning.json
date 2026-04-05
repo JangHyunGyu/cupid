@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "Infirmière",
-        "text": "Oh ? {name}."
+        "text": "*Marquant un temps d'arrêt* ...Tu es encore là."
     },
     "hidden_nurse_d5_4_ins": {
         "name": "{name}",

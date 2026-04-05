@@ -308,11 +308,11 @@
     },
     "hidden_nurse_d3_4": {
         "name": "School Nurse",
-        "text": "...Sit down. Seriously, you look rough. What's going on?"
+        "text": "*Drawing the curtain* ...Sit down. Seriously, you look rough. What's going on?"
     },
     "hidden_nurse_d3_5": {
         "name": "School Nurse",
-        "text": "Is this a relationship consultation? — Pretending it's not is the biggest giveaway."
+        "text": "*Handing over a cup of water* Is this a relationship consultation? — Pretending it's not is the biggest giveaway."
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
@@ -538,7 +538,7 @@
     },
     "hidden_homeroom_d3_reveal_2_ins4": {
         "name": "Homeroom Teacher",
-        "text": "...Being perceptive is usually a strength. Sometimes it's a flaw."
+        "text": "*Sighing* ...Being perceptive is usually a strength. Sometimes it's a flaw."
     },
     "hidden_homeroom_d3_reveal_2_ins5": {
         "name": "{name}",

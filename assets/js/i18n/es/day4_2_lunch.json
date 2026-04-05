@@ -64,8 +64,8 @@
         "text": "*Pasamos por una floristería.*"
     },
     "date_seo_flower_2": {
-        "name": "Seoyeon",
-        "text": "...¿Entramos?"
+        "name": "{name}",
+        "text": "*Seoyeon empuja la puerta de la floristería. Suena una campanilla.*"
     },
     "date_seo_succulent": {
         "name": "{name}",

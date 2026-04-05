@@ -923,7 +923,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Professeure principale",
-        "text": "J'ai terminé le manuscrit. J'ai pu continuer à avancer après que tu l'aies lu en premier. J'ai dit 'une seule ligne suffit', mais tu es revenu avec trois pages. En voyant ça, je n'avais plus d'excuses pour le repousser."
+        "text": "*Regardant par la fenêtre* J'ai terminé le manuscrit. J'ai pu continuer à avancer après que tu l'aies lu en premier. J'ai dit 'une seule ligne suffit', mais tu es revenu avec trois pages. En voyant ça, je n'avais plus d'excuses pour le repousser."
     },
     "hidden_true_homeroom_5_ins": {
         "name": "{name}",
@@ -1144,7 +1144,7 @@
     },
     "hidden_true_nurse_8_ins6": {
         "name": "Infirmière",
-        "text": "Je t'ai touché le front et j'ai dit « je voulais juste te toucher ». C'était une blague."
+        "text": "Je t'ai touché le front et j'ai dit « je voulais juste te toucher ». *Souriant doucement* C'était une blague."
     },
     "hidden_true_nurse_8_ins7": {
         "name": "{name}",

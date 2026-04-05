@@ -308,11 +308,11 @@
     },
     "hidden_nurse_d3_4": {
         "name": "Schulkrankenschwester",
-        "text": "...Setz dich. Im Ernst, du siehst nicht gut aus. Was ist los?"
+        "text": "*Den Vorhang zuziehend* ...Setz dich. Im Ernst, du siehst nicht gut aus. Was ist los?"
     },
     "hidden_nurse_d3_5": {
         "name": "Schulkrankenschwester",
-        "text": "Ist das eine Beziehungsberatung? — So tun als wäre es keine, verrät dich am meisten."
+        "text": "*Ein Glas Wasser reichend* Ist das eine Beziehungsberatung? — So tun als wäre es keine, verrät dich am meisten."
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
@@ -538,7 +538,7 @@
     },
     "hidden_homeroom_d3_reveal_2_ins4": {
         "name": "Klassenlehrerin",
-        "text": "...Aufmerksam zu sein ist normalerweise eine Stärke. Manchmal ein Fehler."
+        "text": "*Seufzend* ...Aufmerksam zu sein ist normalerweise eine Stärke. Manchmal ein Fehler."
     },
     "hidden_homeroom_d3_reveal_2_ins5": {
         "name": "{name}",

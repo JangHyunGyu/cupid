@@ -64,8 +64,8 @@
         "text": "*Wir kommen an einem Blumenladen vorbei.*"
     },
     "date_seo_flower_2": {
-        "name": "Seoyeon",
-        "text": "...Wollen wir reingehen?"
+        "name": "{name}",
+        "text": "*Seoyeon drückt die Tür des Blumenladens auf. Ein Glöckchen klingelt.*"
     },
     "date_seo_succulent": {
         "name": "{name}",

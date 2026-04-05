@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "Schulkrankenschwester",
-        "text": "Hm? {name}."
+        "text": "*Stutzt* ...Du bist wieder da."
     },
     "hidden_nurse_d5_4_ins": {
         "name": "{name}",

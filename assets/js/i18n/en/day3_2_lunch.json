@@ -36,8 +36,8 @@
         "text": "...Yuna, that was my favorite one."
     },
     "lunch3_meal_8": {
-        "name": "Yuna",
-        "text": "...It's good."
+        "name": "{name}",
+        "text": "*Yuna quietly picks up her chopsticks. Faster than before.*"
     },
     "lunch3_meal_9": {
         "name": "{name}",

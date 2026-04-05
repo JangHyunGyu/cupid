@@ -923,7 +923,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Klassenlehrerin",
-        "text": "Ich habe das Manuskript fertiggestellt. Nachdem du es zuerst gelesen hattest, konnte ich immer weitermachen. Ich sagte, 'eine Zeile genügt', aber du hast drei Seiten geschrieben. Als ich das sah, hatte ich keine Ausreden mehr, es aufzuschieben."
+        "text": "*Aus dem Fenster blickend* Ich habe das Manuskript fertiggestellt. Nachdem du es zuerst gelesen hattest, konnte ich immer weitermachen. Ich sagte, 'eine Zeile genügt', aber du hast drei Seiten geschrieben. Als ich das sah, hatte ich keine Ausreden mehr, es aufzuschieben."
     },
     "hidden_true_homeroom_5_ins": {
         "name": "{name}",
@@ -1144,7 +1144,7 @@
     },
     "hidden_true_nurse_8_ins6": {
         "name": "Schulkrankenschwester",
-        "text": "Ich habe deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen.' Das war ein Witz."
+        "text": "Ich habe deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen.' *Leise lächelnd* Das war ein Witz."
     },
     "hidden_true_nurse_8_ins7": {
         "name": "{name}",
