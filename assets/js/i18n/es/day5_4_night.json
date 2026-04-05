@@ -923,7 +923,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Profesora",
-        "text": "Terminé el manuscrito. Pude seguir adelante después de que lo leyeras primero. Dije \"con una línea es suficiente\", pero escribiste tres páginas. Después de ver eso, no tuve más excusas para posponerlo."
+        "text": "*Mirando por la ventana* Terminé el manuscrito. Pude seguir adelante después de que lo leyeras primero. Dije \"con una línea es suficiente\", pero escribiste tres páginas. Después de ver eso, no tuve más excusas para posponerlo."
     },
     "hidden_true_homeroom_5_ins": {
         "name": "{name}",
@@ -1144,7 +1144,7 @@
     },
     "hidden_true_nurse_8_ins6": {
         "name": "Enfermera",
-        "text": "Te toqué la frente y dije 'solo quería tocarte'. Fue una broma."
+        "text": "Te toqué la frente y dije 'solo quería tocarte'. *Sonriendo suavemente* Fue una broma."
     },
     "hidden_true_nurse_8_ins7": {
         "name": "{name}",

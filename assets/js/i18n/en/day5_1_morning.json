@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "School Nurse",
-        "text": "Oh? {name}."
+        "text": "*Pausing* ...You're back again."
     },
     "hidden_nurse_d5_4_ins": {
         "name": "{name}",

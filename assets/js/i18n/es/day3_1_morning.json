@@ -308,11 +308,11 @@
     },
     "hidden_nurse_d3_4": {
         "name": "Enfermera",
-        "text": "...Siéntate. En serio, tienes mala cara. ¿Qué pasa?"
+        "text": "*Corriendo la cortina* ...Siéntate. En serio, tienes mala cara. ¿Qué pasa?"
     },
     "hidden_nurse_d3_5": {
         "name": "Enfermera",
-        "text": "¿Esto es una consulta sentimental? — Fingir que no lo es es lo que más te delata."
+        "text": "*Ofreciendo un vaso de agua* ¿Esto es una consulta sentimental? — Fingir que no lo es es lo que más te delata."
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
@@ -538,7 +538,7 @@
     },
     "hidden_homeroom_d3_reveal_2_ins4": {
         "name": "Profesora",
-        "text": "...Ser perceptivo es una virtud. A veces es un defecto."
+        "text": "*Suspirando* ...Ser perceptivo es una virtud. A veces es un defecto."
     },
     "hidden_homeroom_d3_reveal_2_ins5": {
         "name": "{name}",

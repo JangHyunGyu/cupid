@@ -64,8 +64,8 @@
         "text": "*We pass by a flower shop.*"
     },
     "date_seo_flower_2": {
-        "name": "Seoyeon",
-        "text": "...Want to go in?"
+        "name": "{name}",
+        "text": "*Seoyeon pushes the flower shop door. A bell chimes.*"
     },
     "date_seo_succulent": {
         "name": "{name}",

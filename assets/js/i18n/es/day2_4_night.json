@@ -270,22 +270,6 @@
         "name": "{name}",
         "text": "*Un acertijo típico de Yuna. — No te da la respuesta, pero te hace querer buscarla.*"
     },
-    "night2_reply_yuna_6_ins3": {
-        "name": "{name}",
-        "text": "*Entre las alertas del mensajero — llega un mensaje personal de la profesora.*"
-    },
-    "night2_reply_yuna_6_ins4": {
-        "name": "Profesora",
-        "text": "*{name}, gracias por venir a la sala de profesores hoy*"
-    },
-    "night2_reply_yuna_6_ins5": {
-        "name": "Profesora",
-        "text": "*Lo administrativo ya está, así que no necesitaré llamarte más*"
-    },
-    "night2_reply_yuna_6_ins6": {
-        "name": "Profesora",
-        "text": "*...Pero si te cuesta adaptarte, ven cuando quieras*"
-    },
     "night2_end_1_ins": {
         "name": "{name}",
         "text": "*El segundo día ha terminado.*"

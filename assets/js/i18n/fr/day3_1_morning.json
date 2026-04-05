@@ -308,11 +308,11 @@
     },
     "hidden_nurse_d3_4": {
         "name": "Infirmière",
-        "text": "...Assieds-toi. Sérieux, t'as une sale tête. Qu'est-ce qui se passe ?"
+        "text": "*Tirant le rideau* ...Assieds-toi. Sérieux, t'as une sale tête. Qu'est-ce qui se passe ?"
     },
     "hidden_nurse_d3_5": {
         "name": "Infirmière",
-        "text": "C'est une consultation sentimentale ? — Prétendre que non, c'est le plus gros aveu."
+        "text": "*Tendant un verre d'eau* C'est une consultation sentimentale ? — Prétendre que non, c'est le plus gros aveu."
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
@@ -538,7 +538,7 @@
     },
     "hidden_homeroom_d3_reveal_2_ins4": {
         "name": "Professeure principale",
-        "text": "...Être observateur, c'est souvent une qualité. Parfois un défaut."
+        "text": "*En soupirant* ...Être observateur, c'est souvent une qualité. Parfois un défaut."
     },
     "hidden_homeroom_d3_reveal_2_ins5": {
         "name": "{name}",

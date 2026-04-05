@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "保健先生",
-        "text": "あれ？{name}。"
+        "text": "*一瞬止まって* …また来たね。"
     },
     "hidden_nurse_d5_4_ins": {
         "name": "{name}",

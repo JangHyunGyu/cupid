@@ -67,7 +67,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "lunch_seo_1": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "bgm": "sunset1.mp3",
+        "bgm": "daily.mp3",
         "affinityChar": "Seoyeon",
         "affinityBranches": [{"minAffinity":5,"next":"lunch_seo_1_aff_high"},{"minAffinity":-100,"next":"lunch_seo_1_aff_default"}],
         "next": "lunch_seo_1_aff_default"

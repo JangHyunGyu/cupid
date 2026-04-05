@@ -36,8 +36,8 @@
         "text": "...Yuna, das war mein Lieblingsstück."
     },
     "lunch3_meal_8": {
-        "name": "Yuna",
-        "text": "...Lecker."
+        "name": "{name}",
+        "text": "*Yuna nimmt still ihre Stäbchen auf. Schneller als vorhin.*"
     },
     "lunch3_meal_9": {
         "name": "{name}",

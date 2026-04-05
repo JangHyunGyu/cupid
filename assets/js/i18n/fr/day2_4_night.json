@@ -270,22 +270,6 @@
         "name": "{name}",
         "text": "*Une devinette très Yuna. Une personne qui ne donne jamais la réponse. — Une personne qui donne envie de chercher.*"
     },
-    "night2_reply_yuna_6_ins3": {
-        "name": "{name}",
-        "text": "*Entre les notifications du messageur — un message personnel de la professeure principale arrive.*"
-    },
-    "night2_reply_yuna_6_ins4": {
-        "name": "Professeure principale",
-        "text": "*{name}, merci d'être passé au bureau des profs aujourd'hui*"
-    },
-    "night2_reply_yuna_6_ins5": {
-        "name": "Professeure principale",
-        "text": "*L'administratif est bouclé, donc je n'aurai plus besoin de te convoquer*"
-    },
-    "night2_reply_yuna_6_ins6": {
-        "name": "Professeure principale",
-        "text": "*...Mais si l'adaptation est difficile, viens quand tu veux*"
-    },
     "night2_end_1_ins": {
         "name": "{name}",
         "text": "*Le deuxième jour est fini.*"
