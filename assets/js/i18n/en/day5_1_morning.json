@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_2": {
         "name": "Homeroom Teacher",
-        "text": "The manuscript. — It's unfinished. But I wanted to give it to my first reader."
+        "text": "The manuscript. It's unfinished... but I wanted you to see it first."
     },
     "hidden_homeroom_d5_3": {
         "name": "Homeroom Teacher",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d5_5": {
         "name": "Homeroom Teacher",
-        "text": "...Handing it to my first reader — I'm more nervous than I thought."
+        "text": "...Showing this to someone else first is more nerve-wracking than I thought."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_6_ins": {
         "name": "{name}",
-        "text": "*What she said at the cafe yesterday. First reader. — She actually brought it.*"
+        "text": "*What she said at the cafe yesterday. Those words, 'I want to show it to you first.' She actually brought it.*"
     },
     "hidden_homeroom_d5_6_ins2": {
         "name": "{name}",

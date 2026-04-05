@@ -488,19 +488,19 @@
     },
     "lunch_seo_6_ins": {
         "name": "Seoyeon",
-        "text": "*Sonriendo* Qué desconfiado. Solo me gusta la brisa de aquí arriba."
+        "text": "*Sonriendo* Qué desconfiado. Solo subí porque me agobiaba estar en el aula."
     },
     "lunch_seo_c1_2_ins": {
         "name": "{name}",
-        "text": "*Seoyeon gira ligeramente la cabeza. Tiene las orejas rojas.*"
+        "text": "*Seoyeon gira la cabeza y juguetea sin motivo con su botella de agua.*"
     },
     "lunch_seo_c1_3_ins": {
         "name": "{name}",
-        "text": "*Esas orejas rojas, ¿es real? — Quizá sea solo el viento.*"
+        "text": "*Si la sigo molestando, me pondrá límites. Mejor finjo no haber visto nada.*"
     },
     "lunch_dain_12_ins": {
         "name": "Dain",
-        "text": "¡¡Aaagh, ya!! ¡¡Dos panes de soboro!! ¡¡Señora!!"
+        "text": "¡Ah, vale! ¡Yo invito, yo invito! ¡Señora, dos panes de soboro!"
     },
     "lunch_yuna_5_ins": {
         "name": "{name}",

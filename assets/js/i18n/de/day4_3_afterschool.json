@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Meine Fingerspitzen sind kalt. Es weht kein Wind. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
+        "text": "*Ich bin nervös. Trotzdem möchte ich es dieses Mal richtig sagen.*",
         "choices": [
             "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
             "...Schöner Wind."
@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*Mein Herz rast, als würde es gleich herausspringen. — Es ist okay. Dieses Mal.*"
+        "text": "*Mir stockt der Atem. Trotzdem werde ich dieses Mal nicht ausweichen.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Du lächelst immer perfekt. Immer. Aber — diese 0,5 Sekunden, wenn du aufhörst zu lächeln, lassen mich nicht los."
+        "text": "Seoyeon. Alle sehen dich als eine makellose Person. Aber ich erinnere mich immer wieder an die Momente, in denen du kurz deine Fassung verloren hast."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "Das warst du wirklich, Seoyeon. Diese Seoyeon mag ich."
+        "text": "Es gab Momente, da warst du einfach nur Seoyeon, nicht die Schülersprecherin. Das mochte ich."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -73,11 +73,11 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...Seit du am Schultor 'das ist großzügig' gesagt hast."
+        "text": "...Als du am Schultor sagtest: 'Das ist zu viel.' Von da an hat es mich irgendwie beschäftigt."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "— Du hast keine Ahnung, wie lange ich mich zurückgehalten habe."
+        "text": "Es hat wirklich lange gedauert, bis ich das zur Sprache gebracht habe."
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "confess_dain_yes_8": {
         "name": "{name}",
-        "text": "*Dain ist erstarrt. Ihre Energie ist verschwunden. — Und dann füllen sich ihre Augen langsam. Sie vergräbt ihr Gesicht in beiden Händen. Die Röte hat sich bis zum Nacken ausgebreitet.*"
+        "text": "*Dain hält inne. Auf ihrem Gesicht, das kein Lächeln mehr zeigt, werden nur ihre Augen langsam feucht. Sie vergräbt ihr Gesicht in beiden Händen.*"
     },
     "confess_dain_yes_8_ins": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Moment. Ich krieg keine Luft — ich glaub ich weine gleich — warum weine ich, ich bin doch glücklich —"
+        "text": "...Moment, ich glaube, ich muss gleich wirklich weinen... Ich bin doch glücklich, warum ist das so..."
     },
     "confess_dain_yes_9_ins": {
         "name": "{name}",

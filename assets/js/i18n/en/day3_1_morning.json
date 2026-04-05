@@ -86,7 +86,7 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*Her hand is warm. Is it sweat, or is it because of Dain? — No time to think while running.*"
+        "text": "*My hand is hot. Is it because of sweat, or is it uniquely hot only where Dain held it? No time to think while running.*"
     },
     "morning3_classroom_1": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "School Nurse",
-        "text": "...I'm kidding. Go on, get to class."
+        "text": "...I'm kidding. Go on."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "School Nurse",
@@ -598,7 +598,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins": {
         "name": "Homeroom Teacher",
-        "text": "...My first volunteer reader. In seven years."
+        "text": "...Then you're the first person to read it. In seven years."
     },
     "hidden_homeroom_d3_reveal_6_ins2": {
         "name": "{name}",

@@ -871,7 +871,7 @@
     },
     "night_homeroom_msg_1": {
         "name": "Homeroom Teacher",
-        "text": "*Text message* The manuscript deadline is coming up. ...There's a part I want to show my first reader."
+        "text": "*Text message* The manuscript is almost at its final stage. ...There's a part I'd like you to see first."
     },
     "night_homeroom_msg_2": {
         "name": "Homeroom Teacher",
@@ -879,7 +879,7 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*11 PM. A text from Homeroom Teacher. Three short lines. — 'First reader.' Those words keep echoing in my head.*"
+        "text": "*11 PM. A text from Homeroom Teacher. Three short lines. — Those words, 'I'd like you to see it first,' keep lingering.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "System",

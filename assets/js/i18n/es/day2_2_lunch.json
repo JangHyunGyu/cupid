@@ -504,7 +504,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ugh... Dos panes de soboro, por favor..."
+        "text": "Ah, vale... Dos panes de soboro..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_ins10": {
         "name": "Enfermera",
-        "text": "Quieto..."
+        "text": "Espera un momento..."
     },
     "lunch2_dain_end_ins11": {
         "name": "{name}",
@@ -713,7 +713,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "Enfermera",
-        "text": "*Recuperando el tono ligero* Ah, pero en horario de clase no. Después de clase."
+        "text": "*Recuperando el tono alegre* Claro, no en horario de clase. Después de clase."
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",

@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Tengo las puntas de los dedos frías. No hay viento. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
+        "text": "*Estoy nerviosa. Aun así, esta vez quiero decirlo bien.*",
         "choices": [
             "Seoyeon. Espera un momento.",
             "...Hace buen viento."
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Siempre sonríes perfectamente. Siempre. Pero — esos 0.5 segundos en que dejas de sonreír no dejan de inquietarme."
+        "text": "Seoyeon. Todos te ven como una persona impecable. Pero a mí se me quedan grabados los momentos en que dejas de poner esa expresión por un instante."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "Esa eras tú de verdad, Seoyeon. Esa es la Seoyeon que me gusta."
+        "text": "Hubo momentos en que te veías como Seoyeon, no como la presidenta del consejo estudiantil. Eso me gustaba."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -73,11 +73,11 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...Desde que dijiste 'Qué honor' en la puerta de la escuela."
+        "text": "...Cuando dijiste \"soy indigna\" en la puerta de la escuela. Desde entonces, me quedé un poco pensativa."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "— No tienes idea de cuánto me contuve para no decirlo."
+        "text": "Me costó mucho tiempo sacar este tema."
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "confess_dain_yes_8": {
         "name": "{name}",
-        "text": "*Dain está congelada. Su energía ha desaparecido. — Y entonces sus ojos se llenan lentamente. Se cubre la cara con ambas manos. El rubor le ha subido hasta la nuca.*"
+        "text": "*Dain se queda inmóvil. Sus ojos se humedecen lentamente sobre su rostro, desprovisto de risa. Se cubre la cara con ambas manos.*"
     },
     "confess_dain_yes_8_ins": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Espera. No puedo respirar — creo que voy a llorar — ¿por qué estoy llorando?, estoy feliz —"
+        "text": "...Espera, de verdad que creo que voy a llorar ahora mismo... Estoy feliz, ¿por qué me pasa esto...?"
     },
     "confess_dain_yes_9_ins": {
         "name": "{name}",

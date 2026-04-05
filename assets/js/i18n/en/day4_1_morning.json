@@ -109,7 +109,7 @@
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Homeroom Teacher",
-        "text": "Finding the first reader. Without someone to read it — the story never gets finished."
+        "text": "In the end, you have to show it to someone for it to go all the way. If there's no one to read it, I keep stopping."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",
@@ -191,13 +191,13 @@
     },
     "hidden_nurse_d4_6": {
         "name": "School Nurse",
-        "text": "Thanks. I finished much faster because of you. ...That's no small thing."
+        "text": "Thanks. I finished much faster because of you. ...It's nothing special."
     },
     "hidden_nurse_d4_choice": {
         "name": "School Nurse",
-        "text": "So, what should I get you as thanks? A teacher buying a student a meal totally counts as an educational activity.",
+        "text": "So, what should I get you as thanks? Let's just say a teacher buying a student a meal is an extension of education.",
         "choices": [
-            "If it's educational, sure?",
+            "Is it okay if it's an educational activity?",
             "That's okay, I should get going"
         ]
     },
@@ -207,7 +207,7 @@
     },
     "hidden_nurse_d4_meal_1": {
         "name": "School Nurse",
-        "text": "Wow, that's spicy. Guess I'm too old for this stuff now."
+        "text": "Ah, it's spicy. I can't eat this as much as I used to."
     },
     "hidden_nurse_d4_meal_2": {
         "name": "{name}",
@@ -380,22 +380,6 @@
     "morning4_yuna_msg_1_ins": {
         "name": "{name}",
         "text": "*Short. So Yuna. I now know that I'll leave if you're late means the same as please don't be late.*"
-    },
-    "morning4_yuna_msg_1_ins2": {
-        "name": "Dain",
-        "text": "*Today's the day!!!! Gym entrance, 6 PM!!*"
-    },
-    "morning4_yuna_msg_1_ins3": {
-        "name": "Dain",
-        "text": "*If you're late I'll seriously be mad!!*"
-    },
-    "morning4_yuna_msg_1_ins4": {
-        "name": "Dain",
-        "text": "*Ahh why am I so nervous lol should I even send this*"
-    },
-    "morning4_yuna_msg_1_ins5": {
-        "name": "{name}",
-        "text": "*She probably didn't mean to send that last line. But it's Dain, so of course she did.*"
     },
     "hidden_homeroom_d4_3_ins": {
         "name": "Homeroom Teacher",
@@ -595,7 +579,7 @@
     },
     "hidden_nurse_d4_meal_1_ins2": {
         "name": "School Nurse",
-        "text": "That was ages ago. *laughs* I'm old now."
+        "text": "When was that? *laughs* I'm not like I used to be anymore."
     },
     "hidden_nurse_d4_meal_2_ins": {
         "name": "{name}",
@@ -607,7 +591,7 @@
     },
     "hidden_nurse_d4_meal_3_ins2": {
         "name": "School Nurse",
-        "text": "*Smiling again* Alright, lunch break's over. I've still got work to do."
+        "text": "*Smiling again* Alright, if you're done eating, you're dismissed. I've still got work to do."
     },
     "hidden_nurse_d4_meal_3_ins3": {
         "name": "{name}",
@@ -623,7 +607,7 @@
     },
     "hidden_nurse_d4_meal_4_ins2": {
         "name": "{name}",
-        "text": "*She snapped back, but her ears are red. Again.*"
+        "text": "*She retorted, 'What are you talking about?' then couldn't meet my gaze for a moment. She's clumsy at hiding things this time too.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

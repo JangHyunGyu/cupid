@@ -69,7 +69,7 @@
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "Cada vez que vengo aquí, siento que el tiempo pasa de otra manera."
+        "text": "Cuando vengo aquí, siento que el tiempo se relaja un poco."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -157,7 +157,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "No sé qué cambió. — Simplemente... me encontré a mí misma fuera de la cancha."
+        "text": "No sé qué cambió... pero ahora, incluso fuera de la cancha, me siento un poco más definida."
     },
     "tour_dain_13": {
         "name": "{name}",

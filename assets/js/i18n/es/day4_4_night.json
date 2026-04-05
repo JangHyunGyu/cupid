@@ -335,7 +335,7 @@
     },
     "wall_dain_9": {
         "name": "{name}",
-        "text": "*El coraz?n se me hunde de golpe.*"
+        "text": "*Siento un escalofrío ante mis ojos.*"
     },
     "wall_dain_10": {
         "name": "Dain",
@@ -871,7 +871,7 @@
     },
     "night_homeroom_msg_1": {
         "name": "Profesora",
-        "text": "*Mensaje* La fecha límite del manuscrito se acerca. ...Hay una parte que quiero mostrarle a mi primer lector."
+        "text": "*Mensaje* El manuscrito está casi en su fase final. ...Hay una parte que me gustaría que vieras primero."
     },
     "night_homeroom_msg_2": {
         "name": "Profesora",
@@ -879,7 +879,7 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*11 de la noche. Un mensaje de la Profesora. Tres líneas cortas. — 'Primer lector'. Esas palabras siguen resonando en mi cabeza.*"
+        "text": "*11 de la noche. Llegó un mensaje de la Profesora titular. Tres líneas cortas. — Las palabras \"me gustaría que lo vieras primero\" no dejan de resonar en mi cabeza.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Sistema",

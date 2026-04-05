@@ -335,7 +335,7 @@
     },
     "wall_dain_9": {
         "name": "{name}",
-        "text": "*Mon c?ur chute d'un coup.*"
+        "text": "*Ma vision se trouble.*"
     },
     "wall_dain_10": {
         "name": "Dain",
@@ -871,7 +871,7 @@
     },
     "night_homeroom_msg_1": {
         "name": "Professeure principale",
-        "text": "*Message* La date limite du manuscrit approche. ...Il y a un passage que je veux montrer à mon premier lecteur."
+        "text": "*Message* Le manuscrit est presque terminé. ...Il y a une partie que j'aimerais que tu lises en premier."
     },
     "night_homeroom_msg_2": {
         "name": "Professeure principale",
@@ -879,14 +879,14 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*23 heures. Un message de la Professeure principale. Trois courtes lignes. — 'Premier lecteur'. Ces mots continuent de résonner dans ma tête.*"
+        "text": "*23 heures. Un message de la Professeure principale. Trois courtes lignes. — Les mots 'j'aimerais que tu le lises en premier' ne cessent de résonner.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Système",
         "text": ""
     },
     "night_nurse_msg_1": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "Ce que tu as dit à mon infirmerie aujourd'hui... Je n'arrête pas d'y penser la nuit."
     },
     "night_nurse_msg_2": {
@@ -894,11 +894,11 @@
         "text": "*Un message de l'infirmière est arrivé. 23h. Une seule phrase.*"
     },
     "night_nurse_msg_3": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "Ah, je ne voulais pas dire ça dans ce sens. C'est juste que tu m'as marquée."
     },
     "night_nurse_msg_4": {
-        "name": "Infirmière scolaire",
+        "name": "Infirmière",
         "text": "...Bonne nuit."
     },
     "day4_night_reflect": {

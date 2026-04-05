@@ -742,11 +742,11 @@
     },
     "harem_1_ins": {
         "name": "{name}",
-        "text": "*Yuna senkte den Kopf. Lange. Als sie wieder aufblickte, waren ihre Augen trocken, aber sie lächelte. ...Idiot. In diesem einen Wort steckte die Emotion von zwei Sätzen.*"
+        "text": "*Yuna senkte den Kopf. Als sie lange danach wieder aufblickte, lächelte sie mit einem Gesicht, das nicht einmal weinen konnte. ...Das ist wirklich das Schlimmste. Obwohl es kurz war, steckte alles darin, was gesagt werden musste.*"
     },
     "harem_2": {
         "name": "Yuna",
-        "text": "...Idiot."
+        "text": "...Das ist wirklich das Schlimmste."
     },
     "harem_3": {
         "name": "{name}",
@@ -900,7 +900,7 @@
     },
     "hidden_true_homeroom_4_ins3": {
         "name": "Klassenlehrerin",
-        "text": "Ich habe das Manuskript fertiggestellt. — Ich konnte es schreiben, weil du mein erster Leser warst."
+        "text": "Ich habe das Manuskript fertiggestellt. Nachdem du es zuerst gelesen hattest, konnte ich immer weitermachen."
     },
     "hidden_true_homeroom_4_ins4": {
         "name": "{name}",
@@ -908,7 +908,7 @@
     },
     "hidden_true_homeroom_4_ins5": {
         "name": "Klassenlehrerin",
-        "text": "Ich habe um eine Zeile gebeten und du kamst mit drei Seiten zurück. *Schmunzelt* Eine Kreativschreib-Lehrerin, die wegen der Rezension eines Schülers fast weint — das bleibt unser Geheimnis."
+        "text": "Ich sagte, 'eine Zeile genügt', aber du hast drei Seiten geschrieben. Als ich das sah, hatte ich keine Ausreden mehr, es aufzuschieben."
     },
     "hidden_true_homeroom_4_ins6": {
         "name": "{name}",
@@ -920,7 +920,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Klassenlehrerin",
-        "text": "Ich hab das Manuskript fertig. — Weil du mein erster Leser warst. Ich sagte eine Zeile und du kamst mit drei Seiten. *Schmunzelt* Eine Kreativschreib-Lehrerin, die wegen der Rezension eines Schülers fast weint — das bleibt unser Geheimnis."
+        "text": "Ich habe das Manuskript fertiggestellt. Nachdem du es zuerst gelesen hattest, konnte ich immer weitermachen. Ich sagte, 'eine Zeile genügt', aber du hast drei Seiten geschrieben. Als ich das sah, hatte ich keine Ausreden mehr, es aufzuschieben."
     },
     "hidden_true_homeroom_5_ins": {
         "name": "{name}",
@@ -972,7 +972,7 @@
     },
     "hidden_good_homeroom_3": {
         "name": "{name}",
-        "text": "*Die Schule verlassend. 'Wenn das Manuskript fertig ist, melde ich mich. — An meinen ersten Leser.' Eine Telefonnummer.*"
+        "text": "*Die Schule verlassend. 'Wenn das Manuskript fertig ist, melde ich mich. Ich möchte es dir zuerst zeigen.' Eine Telefonnummer ist notiert.*"
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
@@ -1045,7 +1045,7 @@
     },
     "hidden_true_nurse_2_ins": {
         "name": "{name}",
-        "text": "*Keine Lehrerin — einfach eine Frau.*"
+        "text": "*Heute wirkt sie mehr wie ein Mensch als eine Lehrerin.*"
     },
     "hidden_true_nurse_2_ins2": {
         "name": "Schulkrankenschwester",
@@ -1069,7 +1069,7 @@
     },
     "hidden_true_nurse_5": {
         "name": "Schulkrankenschwester",
-        "text": "...Aber jetzt ist es kein Witz."
+        "text": "...Aber jetzt habe ich nicht vor, es so abzutun."
     },
     "hidden_true_nurse_5_ins": {
         "name": "{name}",
@@ -1077,11 +1077,11 @@
     },
     "hidden_true_nurse_5_ins2": {
         "name": "Schulkrankenschwester",
-        "text": "Eine Lehrerin sollte keine Gefühle für einen Schüler entwickeln. Das wusste ich. — Also habe ich alles immer wieder in Witze verpackt."
+        "text": "Du wusstest, dass es nicht geht, oder? Deshalb habe ich es immer wieder als Witz abgetan."
     },
     "hidden_true_nurse_5_ins3": {
         "name": "Schulkrankenschwester",
-        "text": "Aber du hast die Aufrichtigkeit hinter den Witzen erkannt."
+        "text": "Aber du hast erkannt, wenn ich etwas abgetan habe."
     },
     "hidden_true_nurse_5_ins4": {
         "name": "{name}",
@@ -1093,19 +1093,19 @@
     },
     "hidden_true_nurse_6": {
         "name": "Schulkrankenschwester",
-        "text": "Nach der Abschlussfeier — komm dann wieder. Nicht ins Krankenzimmer, sondern hierher. Dann treffen wir uns nicht als Krankenschwester, sondern einfach als ich."
+        "text": "Deshalb, nach der Abschlussfeier — komm dann wieder. Nicht ins Krankenzimmer, sondern hierher. Dann sehe ich dich nicht als Lehrerin, sondern einfach als Lee Juwon."
     },
     "hidden_true_nurse_7": {
-        "name": "Schulkrankenschwester",
-        "text": "...Du bist der Erste, der mich durchschaut hat."
+        "name": "{name}",
+        "text": "*Auch nachdem wir das Café verlassen hatten, löste sich ihre Hand nicht so leicht von meiner. Als ich wieder zu mir kam, standen wir nicht vor dem Krankenzimmer, sondern vor ihrem Haus.*"
     },
     "hidden_true_nurse_7_ins": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester streckt die Hand aus und berührt das Pflaster auf meinem Handrücken. Dasselbe Pflaster, das sie heute Morgen aufgeklebt hat.*"
+        "name": "Schulkrankenschwester",
+        "text": "...Du bist der Erste, der mich so durchschaut hat."
     },
     "hidden_true_nurse_7_ins2": {
-        "name": "Schulkrankenschwester",
-        "text": "Ab jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden."
+        "name": "{name}",
+        "text": "*Die Schulkrankenschwester streckt die Hand aus und berührt das Pflaster auf meinem Handrücken. Das Pflaster, das sie mir heute Morgen aufgeklebt hat.*"
     },
     "hidden_true_nurse_7_ins3": {
         "name": "{name}",
@@ -1113,7 +1113,7 @@
     },
     "hidden_true_nurse_8": {
         "name": "Schulkrankenschwester",
-        "text": "Jetzt können wir uns ohne Pflaster treffen. — Ohne Ausreden."
+        "text": "Tu jetzt nicht mehr so, als wärst du krank, und komm. Sag einfach, du bist gekommen, weil du mich sehen wolltest."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
@@ -1149,7 +1149,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Schulkrankenschwester",
-        "text": "Oh, ein Absolvent."
+        "text": "Was führt dich her, Absolvent?"
     },
     "hidden_good_nurse_2": {
         "name": "Schulkrankenschwester",

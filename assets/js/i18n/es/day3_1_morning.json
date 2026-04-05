@@ -86,7 +86,7 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*Su mano está caliente. ¿Es sudor, o es por Dain a través de nuestros dedos entrelazados? — No hay tiempo de pensar mientras corro.*"
+        "text": "*Mi mano está caliente. ¿Es por el sudor, o solo está caliente donde Dain me sujeta? No hay tiempo para pensar mientras corro.*"
     },
     "morning3_classroom_1": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "Enfermera",
-        "text": "...Es broma. Anda, vete a clase."
+        "text": "...Es broma. Anda, vete."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",
@@ -598,7 +598,7 @@
     },
     "hidden_homeroom_d3_reveal_6_ins": {
         "name": "Profesora",
-        "text": "...Mi primer lector voluntario. En siete años."
+        "text": "...Entonces eres la primera persona en leerlo. En siete años."
     },
     "hidden_homeroom_d3_reveal_6_ins2": {
         "name": "{name}",
@@ -786,7 +786,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "Enfermera",
-        "text": "*Recuperando el tono juguetón* Anda ya, por esto no pasa nada. Corre por cuenta de la casa. Vuelve cuando quieras. Estés herido o no."
+        "text": "*De nuevo, en tono juguetón* ¿Qué dices? Esto es un servicio. La próxima vez, pásate aunque no te duela nada."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",

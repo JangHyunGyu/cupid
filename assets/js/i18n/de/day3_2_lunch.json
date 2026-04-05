@@ -188,7 +188,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
-        "text": "Ich bin nicht eine von vielen. — Dann lieber überhaupt nichts."
+        "text": "Ich mag keine unklaren Positionen. Wenn es so ist, ziehe ich mich lieber ganz zurück."
     },
     "lunch3_expose_honest_6": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "lunch3_dain_skin_2": {
         "name": "{name}",
-        "text": "*Dain springt zurück. Ihre Ohren sind rot.*"
+        "text": "*Dain springt zurück und weicht einen Schritt zurück. Sie nimmt nur so ihre Wasserflasche in die Hand.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
