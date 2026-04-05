@@ -373,6 +373,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_homeroom_ok_6": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
+        "setFlags": ["homeroom_day1"],
         "next": "night_start"
     },
     "after_homeroom_honest_1": {

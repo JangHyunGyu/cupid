@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_ins": {
         "name": "{name}",
-        "text": "*Sie grinst und boxt mir auf die Schulter. — Dieselbe Kraft wie an Tag 1.*"
+        "text": "*Sie grinst und boxt mir auf die Schulter. — Dieselbe Kraft wie am ersten Tag.*"
     },
     "after5_farewell_dain_4_ins2": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Sie grinst und boxt mir gegen die Schulter. Die gleiche Kraft wie am ersten Tag. Die Ausrufezeichen leben weiter. Dain ist bis zum Schluss Dain. Das ist ihre Stärke.*"
+        "text": "*Ihr Rücken wird kleiner, als sie sich entfernt. — Aber ihre Schritte sind schnell. Wie bei unserer ersten Begegnung.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",

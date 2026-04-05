@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_ins": {
         "name": "{name}",
-        "text": "*Elle sourit et me donne un coup de poing à l'épaule. — La même force que le Jour 1.*"
+        "text": "*Elle sourit et me donne un coup de poing à l'épaule. — La même force que le premier jour.*"
     },
     "after5_farewell_dain_4_ins2": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Elle sourit et me donne un coup de poing à l'épaule. La même force qu'au premier jour. Les points d'exclamation sont bien vivants. Dain est Dain jusqu'au bout. C'est sa force.*"
+        "text": "*Sa silhouette rapetisse en s'éloignant. — Mais son pas est rapide. Comme le jour où on s'est rencontrés.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",

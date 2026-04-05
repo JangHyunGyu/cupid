@@ -353,13 +353,13 @@
         "name": "{name}",
         "text": "*……今度こそ、マジで*"
     },
-    "morning4_dain_msg_1_ins": {
+    "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*ダインのビックリマークが画面を埋め尽くしている。——スマホ越しでもエネルギーが溢れてくる。口角が上がる。今日だ。*"
+        "text": "*週末の朝。通知がいくつか来ている。——普通の一日になると思っていた。*"
     },
-    "morning4_dain_msg_1_ins2": {
+    "morning4_fallback_msg_2": {
         "name": "{name}",
-        "text": "*警告から直面へ、直面から応援へ。——ミンスは僕より先に僕を信じてくれている。*"
+        "text": "*スマホを置いて伸びをする。とにかく、今日も始まりだ。*"
     },
     "morning4_seo_msg_1_ins": {
         "name": "{name}",

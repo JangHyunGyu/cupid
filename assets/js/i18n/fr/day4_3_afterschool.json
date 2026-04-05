@@ -21,7 +21,7 @@
     },
     "confess_seo_4_ins": {
         "name": "{name}",
-        "text": "*Les mots que je n'ai pas pu dire dans mon ancien lycée remontent. Cette fois, je me déclare.*"
+        "text": "*Mon cœur bat fort. C'était pareil dans mon ancien lycée. — À l'époque, j'avais ravalé ces mots.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
-        "text": "*Seoyeon tend son petit doigt.*"
+        "text": "*La main de Seoyeon bouge.*"
     },
     "confess_seo_yes_12": {
         "name": "{name}",
-        "text": "*Seoyeon tend son petit doigt. Le même petit doigt que j'ai vu au Jour 1. — À l'époque je pensais que c'était juste une habitude, mais c'est la façon de Seoyeon de faire une promesse.*"
+        "text": "*Seoyeon tend son petit doigt. Le même petit doigt que j'ai vu le premier jour. — À l'époque je pensais que c'était juste une habitude, mais c'est la façon de Seoyeon de faire une promesse.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "confess_yuna_yes_3_ins": {
         "name": "{name}",
-        "text": "Tu étais la personne qui s'asseyait à côté de moi au lieu de parler."
+        "text": "Quand je suis à côté de toi, le silence ne m'a jamais gêné."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",

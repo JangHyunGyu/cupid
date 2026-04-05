@@ -353,13 +353,13 @@
         "name": "{name}",
         "text": "*...Cette fois, pour de vrai*"
     },
-    "morning4_dain_msg_1_ins": {
+    "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Les points d'exclamation de Dain remplissent l'écran. — Son énergie déborde même à travers le téléphone. Les coins de mes lèvres remontent. C'est aujourd'hui.*"
+        "text": "*Matin de week-end. Quelques notifications. — Je pensais que ce serait une journée ordinaire.*"
     },
-    "morning4_dain_msg_1_ins2": {
+    "morning4_fallback_msg_2": {
         "name": "{name}",
-        "text": "*Des avertissements aux confrontations, des confrontations aux encouragements. Minsu a cru en moi avant que je croie en moi-même.*"
+        "text": "*Je pose le téléphone et je m'étire. Quoi qu'il en soit, une nouvelle journée commence.*"
     },
     "morning4_seo_msg_1_ins": {
         "name": "{name}",

@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_ins": {
         "name": "{name}",
-        "text": "*Sonríe y me da un puñetazo en el hombro. — La misma fuerza que el Día 1.*"
+        "text": "*Sonríe y me da un puñetazo en el hombro. — La misma fuerza que el primer día.*"
     },
     "after5_farewell_dain_4_ins2": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Sonríe con picardía y me da un puñetazo en el hombro. La misma fuerza que el primer día. Los signos de exclamación siguen vivos. Dain es Dain hasta el final. Esa es su fortaleza.*"
+        "text": "*Su espalda se hace más pequeña al alejarse. — Pero su paso es rápido. Como cuando nos conocimos.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",

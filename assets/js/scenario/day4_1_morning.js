@@ -110,7 +110,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             { "condition": "route_seoyeon", "next": "morning4_seo_msg_1" },
             { "condition": "route_yuna", "next": "morning4_yuna_msg_1" },
             { "condition": "route_dain", "next": "morning4_dain_msg_1" },
-            { "next": "morning4_dain_msg_1_ins" }
+            { "next": "morning4_fallback_msg" }
         ]
     },
     "morning4_seo_msg_1": {
@@ -148,12 +148,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "morning4_hidden_check"
     },
-    "morning4_dain_msg_1_ins": {
+    "morning4_fallback_msg": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "morning4_dain_msg_1_ins2"
+        "next": "morning4_fallback_msg_2"
     },
-    "morning4_dain_msg_1_ins2": {
+    "morning4_fallback_msg_2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "morning4_hidden_check"

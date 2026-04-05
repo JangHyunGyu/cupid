@@ -87,7 +87,7 @@
     },
     "after5_farewell_dain_4_ins": {
         "name": "{name}",
-        "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. — Day 1에서와 같은 힘이다.*"
+        "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. — 첫날과 같은 힘이다.*"
     },
     "after5_farewell_dain_4_ins2": {
         "name": "다인",
@@ -99,7 +99,7 @@
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*씩 웃으며 주먹으로 어깨를 툭 친다. Day 1에서와 같은 힘이다. 느낌표가 살아 있다. 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
+        "text": "*돌아서는 등이 작아진다. — 그래도 걸음은 빠르다. 처음 만났을 때처럼.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
