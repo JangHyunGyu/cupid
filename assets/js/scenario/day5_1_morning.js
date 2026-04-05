@@ -28,31 +28,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "next": "morning5_start_2"
     },
-    "morning5_committed_start": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
-        "branches": [
-            { "condition": "route_seoyeon", "next": "morning5_committed_seo" },
-            { "condition": "route_yuna", "next": "morning5_committed_yuna" },
-            { "condition": "route_dain", "next": "morning5_committed_dain" },
-            { "next": "hidden_homeroom_d5_check" }
-        ]
-    },
-    "morning5_committed_seo": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "hidden_homeroom_d5_check"
-    },
-    "morning5_committed_yuna": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "hidden_homeroom_d5_check"
-    },
-    "morning5_committed_dain": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "hidden_homeroom_d5_check"
-    },
     "morning5_start_2": {
         "background": "assets/images/background/room_school.png",
         "character": null,
@@ -133,6 +108,31 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_dain_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
+        "next": "hidden_homeroom_d5_check"
+    },
+    "morning5_committed_start": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "morning5_committed_seo" },
+            { "condition": "route_yuna", "next": "morning5_committed_yuna" },
+            { "condition": "route_dain", "next": "morning5_committed_dain" },
+            { "next": "hidden_homeroom_d5_check" }
+        ]
+    },
+    "morning5_committed_seo": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "hidden_homeroom_d5_check"
+    },
+    "morning5_committed_yuna": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "hidden_homeroom_d5_check"
+    },
+    "morning5_committed_dain": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "hidden_homeroom_d5_check"
     },
     "hidden_homeroom_d5_check": {

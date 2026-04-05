@@ -250,29 +250,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_reply_yuna_6_ins2": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "branches": [
-            { "condition": "homeroom_day2", "next": "night2_reply_yuna_6_ins3" },
-            { "next": "night2_reply_yuna_7" }
-        ]
-    },
-    "night2_reply_yuna_6_ins3": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6_ins4"
-    },
-    "night2_reply_yuna_6_ins4": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6_ins5"
-    },
-    "night2_reply_yuna_6_ins5": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6_ins6"
-    },
-    "night2_reply_yuna_6_ins6": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
         "next": "night2_reply_yuna_7"
     },
     "night2_reply_yuna_7": {

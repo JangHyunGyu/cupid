@@ -18,12 +18,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             { "condition": "choose_hidden_over_main", "next": "ending_hidden_commit_check" },
             { "condition": "choose_main_over_hidden", "next": "ending_affinity_check" },
             { "condition": "day5_last_chance_path", "next": "ending_last_chance_resolve" },
-            { "condition": "day4_confession_accepted", "next": "ending_affinity_check" },
-            { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
-            { "condition": "day4_waited", "next": "day5_ending_friend" },
             { "condition": "both_hidden_day5", "next": "hidden_dual_route_1" },
             { "condition": "homeroom_day5", "next": "hidden_perfect_homeroom_check" },
             { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
+            { "condition": "day4_confession_accepted", "next": "ending_affinity_check" },
+            { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
+            { "condition": "day4_waited", "next": "day5_ending_friend" },
             { "next": "day5_ending_alone" }
         ]
     },
@@ -36,187 +36,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             { "condition": "nurse_day5", "next": "hidden_perfect_nurse_check" },
             { "next": "ending_affinity_check" }
         ]
-    },
-    "ending_last_chance_resolve": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "branches": [
-            { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
-            { "next": "day5_ending_friend" }
-        ]
-    },
-    "ending_confessed_aff_check": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "branches": [
-            { "condition": "route_seoyeon", "next": "ending_confessed_aff_seo" },
-            { "condition": "route_yuna", "next": "ending_confessed_aff_yuna" },
-            { "condition": "route_dain", "next": "ending_confessed_aff_dain" },
-            { "next": "day5_ending_friend" }
-        ]
-    },
-    "ending_confessed_aff_seo": {
-        "background": "assets/images/background/top_school.png",
-        "character": null,
-        "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
-        "next": "day5_ending_confess_fail"
-    },
-    "ending_confessed_aff_yuna": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
-        "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
-        "next": "day5_ending_confess_fail"
-    },
-    "ending_confessed_aff_dain": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
-        "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
-        "next": "day5_ending_confess_fail"
-    },
-    "day5_ending_confess_fail": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "bgm": "night2.mp3",
-        "branches": [
-            { "condition": "route_seoyeon", "next": "confess_fail_cg_seo" },
-            { "condition": "route_yuna", "next": "confess_fail_cg_yuna" },
-            { "condition": "route_dain", "next": "confess_fail_cg_dain" },
-            { "next": "confess_fail_cg_seo" }
-        ]
-    },
-    "confess_fail_cg_seo": {
-        "background": "assets/images/background/ending_confess_fail_seoyeon.png",
-        "character": null,
-        "next": "confess_fail_1"
-    },
-    "confess_fail_cg_yuna": {
-        "background": "assets/images/background/ending_confess_fail_yuna.png",
-        "character": null,
-        "next": "confess_fail_1"
-    },
-    "confess_fail_cg_dain": {
-        "background": "assets/images/background/ending_confess_fail_dain.png",
-        "character": null,
-        "next": "confess_fail_1"
-    },
-    "confess_fail_1": {
-        "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
-        "next": "confess_fail_2"
-    },
-    "confess_fail_2": {
-        "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
-        "next": "confess_fail_3"
-    },
-    "confess_fail_3": {
-        "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
-        "next": "confess_fail_4"
-    },
-    "confess_fail_4": {
-        "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
-        "next": "confess_fail_5"
-    },
-    "confess_fail_5": {
-        "background": "assets/images/background/ending_bittersweet.png",
-        "character": null,
-        "next": "day5_credits"
-    },
-    "day5_ending_friend": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "bgm": "night2.mp3",
-        "next": "friend_1"
-    },
-    "friend_1": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "next": "friend_2"
-    },
-    "friend_2": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "next": "friend_3"
-    },
-    "friend_3": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "next": "friend_route_check"
-    },
-    "friend_route_check": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "branches": [
-            { "condition": "route_seoyeon", "next": "friend_4_seo" },
-            { "condition": "route_yuna", "next": "friend_4_yuna" },
-            { "condition": "route_dain", "next": "friend_4_dain" },
-            { "next": "friend_4" }
-        ]
-    },
-    "friend_4": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "friend_5"
-    },
-    "friend_4_seo": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "friend_5"
-    },
-    "friend_4_yuna": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "friend_5"
-    },
-    "friend_4_dain": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "friend_5"
-    },
-    "friend_5": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "next": "friend_6"
-    },
-    "friend_6": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "next": "friend_7"
-    },
-    "friend_7": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "next": "friend_8"
-    },
-    "friend_8": {
-        "background": "assets/images/background/ending_friend.png",
-        "character": null,
-        "next": "friend_9"
-    },
-    "friend_9": {
-        "background": "assets/images/background/ending_friend.png",
-        "character": null,
-        "next": "friend_10"
-    },
-    "friend_10": {
-        "background": "assets/images/background/ending_friend.png",
-        "character": null,
-        "next": "friend_11"
-    },
-    "friend_11": {
-        "background": "assets/images/background/ending_friend.png",
-        "character": null,
-        "next": "friend_12"
-    },
-    "friend_12": {
-        "background": "assets/images/background/ending_friend.png",
-        "character": null,
-        "next": "day5_credits"
     },
     "hidden_dual_route_1": {
         "background": "assets/images/background/park.png",
@@ -1290,6 +1109,132 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "next": "day5_credits"
     },
+    "day5_ending_alone": {
+        "background": "assets/images/background/ending_alone.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "next": "alone_1"
+    },
+    "alone_1": {
+        "background": "assets/images/background/ending_alone.png",
+        "character": null,
+        "next": "alone_2"
+    },
+    "alone_2": {
+        "background": "assets/images/background/ending_alone.png",
+        "character": null,
+        "next": "alone_2_ins"
+    },
+    "alone_2_ins": {
+        "background": "assets/images/background/ending_alone.png",
+        "character": null,
+        "next": "alone_3"
+    },
+    "alone_3": {
+        "background": "assets/images/background/ending_alone.png",
+        "character": null,
+        "next": "alone_4"
+    },
+    "alone_4": {
+        "background": "assets/images/background/ending_alone.png",
+        "character": null,
+        "next": "alone_5"
+    },
+    "alone_5": {
+        "background": "assets/images/background/ending_alone.png",
+        "character": null,
+        "next": "day5_credits"
+    },
+    "ending_last_chance_resolve": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "branches": [
+            { "condition": "day5_confessed", "next": "ending_confessed_aff_check" },
+            { "next": "day5_ending_friend" }
+        ]
+    },
+    "ending_confessed_aff_check": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "ending_confessed_aff_seo" },
+            { "condition": "route_yuna", "next": "ending_confessed_aff_yuna" },
+            { "condition": "route_dain", "next": "ending_confessed_aff_dain" },
+            { "next": "day5_ending_friend" }
+        ]
+    },
+    "ending_confessed_aff_seo": {
+        "background": "assets/images/background/top_school.png",
+        "character": null,
+        "affinityChar": "Seoyeon",
+        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
+        "next": "day5_ending_confess_fail"
+    },
+    "ending_confessed_aff_yuna": {
+        "background": "assets/images/background/yuna_hideout.png",
+        "character": null,
+        "affinityChar": "Yuna",
+        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
+        "next": "day5_ending_confess_fail"
+    },
+    "ending_confessed_aff_dain": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "affinityChar": "Dain",
+        "affinityBranches": [{"minAffinity":50,"next":"day5_ending_good"}],
+        "next": "day5_ending_confess_fail"
+    },
+    "day5_ending_confess_fail": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "bgm": "night2.mp3",
+        "branches": [
+            { "condition": "route_seoyeon", "next": "confess_fail_cg_seo" },
+            { "condition": "route_yuna", "next": "confess_fail_cg_yuna" },
+            { "condition": "route_dain", "next": "confess_fail_cg_dain" },
+            { "next": "confess_fail_cg_seo" }
+        ]
+    },
+    "confess_fail_cg_seo": {
+        "background": "assets/images/background/ending_confess_fail_seoyeon.png",
+        "character": null,
+        "next": "confess_fail_1"
+    },
+    "confess_fail_cg_yuna": {
+        "background": "assets/images/background/ending_confess_fail_yuna.png",
+        "character": null,
+        "next": "confess_fail_1"
+    },
+    "confess_fail_cg_dain": {
+        "background": "assets/images/background/ending_confess_fail_dain.png",
+        "character": null,
+        "next": "confess_fail_1"
+    },
+    "confess_fail_1": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "confess_fail_2"
+    },
+    "confess_fail_2": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "confess_fail_3"
+    },
+    "confess_fail_3": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "confess_fail_4"
+    },
+    "confess_fail_4": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "confess_fail_5"
+    },
+    "confess_fail_5": {
+        "background": "assets/images/background/ending_bittersweet.png",
+        "character": null,
+        "next": "day5_credits"
+    },
     "day5_ending_good": {
         "background": "assets/images/background/park.png",
         "character": null,
@@ -1476,39 +1421,94 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "next": "day5_credits"
     },
-    "day5_ending_alone": {
-        "background": "assets/images/background/ending_alone.png",
+    "day5_ending_friend": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "bgm": "night2.mp3",
-        "next": "alone_1"
+        "next": "friend_1"
     },
-    "alone_1": {
-        "background": "assets/images/background/ending_alone.png",
+    "friend_1": {
+        "background": "assets/images/background/park.png",
         "character": null,
-        "next": "alone_2"
+        "next": "friend_2"
     },
-    "alone_2": {
-        "background": "assets/images/background/ending_alone.png",
+    "friend_2": {
+        "background": "assets/images/background/park.png",
         "character": null,
-        "next": "alone_2_ins"
+        "next": "friend_3"
     },
-    "alone_2_ins": {
-        "background": "assets/images/background/ending_alone.png",
+    "friend_3": {
+        "background": "assets/images/background/park.png",
         "character": null,
-        "next": "alone_3"
+        "next": "friend_route_check"
     },
-    "alone_3": {
-        "background": "assets/images/background/ending_alone.png",
+    "friend_route_check": {
+        "background": "assets/images/background/park.png",
         "character": null,
-        "next": "alone_4"
+        "branches": [
+            { "condition": "route_seoyeon", "next": "friend_4_seo" },
+            { "condition": "route_yuna", "next": "friend_4_yuna" },
+            { "condition": "route_dain", "next": "friend_4_dain" },
+            { "next": "friend_4" }
+        ]
     },
-    "alone_4": {
-        "background": "assets/images/background/ending_alone.png",
+    "friend_4": {
+        "background": "assets/images/background/school.png",
         "character": null,
-        "next": "alone_5"
+        "next": "friend_5"
     },
-    "alone_5": {
-        "background": "assets/images/background/ending_alone.png",
+    "friend_4_seo": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "friend_5"
+    },
+    "friend_4_yuna": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "friend_5"
+    },
+    "friend_4_dain": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "friend_5"
+    },
+    "friend_5": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "next": "friend_6"
+    },
+    "friend_6": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "next": "friend_7"
+    },
+    "friend_7": {
+        "background": "assets/images/background/park.png",
+        "character": null,
+        "next": "friend_8"
+    },
+    "friend_8": {
+        "background": "assets/images/background/ending_friend.png",
+        "character": null,
+        "next": "friend_9"
+    },
+    "friend_9": {
+        "background": "assets/images/background/ending_friend.png",
+        "character": null,
+        "next": "friend_10"
+    },
+    "friend_10": {
+        "background": "assets/images/background/ending_friend.png",
+        "character": null,
+        "next": "friend_11"
+    },
+    "friend_11": {
+        "background": "assets/images/background/ending_friend.png",
+        "character": null,
+        "next": "friend_12"
+    },
+    "friend_12": {
+        "background": "assets/images/background/ending_friend.png",
         "character": null,
         "next": "day5_credits"
     },

@@ -76,8 +76,8 @@
         "text": "*걸음을 멈추며* ...들어가 볼까?"
     },
     "date_seo_flower_2": {
-        "name": "서연",
-        "text": "...들어가 볼까?"
+        "name": "{name}",
+        "text": "*서연이 꽃집 문을 밀었다. 종소리가 울린다.*"
     },
     "date_seo_succulent": {
         "name": "{name}",

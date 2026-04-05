@@ -143,7 +143,7 @@
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*— 책갈피가 떨어진다.* 저기, 이거..."
+        "text": "*유나가 책갈피를 한참 들여다본다. 구겨지지 않았는지 확인하는 것 같다.*"
     },
     "after_miss_yuna_3": {
         "name": "유나",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_11_ins5": {
         "name": "보건선생님",
-        "text": "...눈치 빠른 환자네. 걱정하는 건 내 쪽인데."
+        "text": "아까 그 말 — 걱정해줘서 고마워. 환자한테 그런 소리 듣는 거 처음이야."
     },
     "after_nurse_enter_11_ins6": {
         "name": "{name}",
@@ -530,7 +530,7 @@
     },
     "after_nurse_enter_11_ins7": {
         "name": "보건선생님",
-        "text": "그렇지? 여기 좋아. — 조용하고, 소독약 냄새 빼면 완벽해."
+        "text": "아까 아늑하다고 했지? — 그 말 듣고 기분 좋았어, 사실."
     },
     "after_nurse_enter_11_ins8": {
         "name": "{name}",

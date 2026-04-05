@@ -811,7 +811,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             { "condition": "accepted_dain_date", "next": "date_dain_1" },
             { "condition": "accepted_yuna_date", "next": "date_yuna_1" },
             { "condition": "accepted_seoyeon_date", "next": "date_seo_1" },
-            { "next": "date_seo_1" }
+            { "next": "day4_night_start" }
         ]
     }
     };

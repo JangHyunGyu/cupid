@@ -496,7 +496,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":50,"next":"after2_seo_neck_high"},{"minAffinity":-100,"next":"after2_seo_neck_low"}],
+        "affinityBranches": [{"minAffinity":30,"next":"after2_seo_neck_high"},{"minAffinity":-100,"next":"after2_seo_neck_low"}],
         "next": "after2_seo_neck_low"
     },
     "after2_seo_neck_high": {
