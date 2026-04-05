@@ -295,7 +295,7 @@
     },
     "lunch2_dain_8": {
         "name": "다인",
-        "text": "으으으... 소보로 두 개요..."
+        "text": "아, 알겠어... 소보로 두 개요..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -404,7 +404,7 @@
     },
     "lunch2_dain_end_ins10": {
         "name": "보건선생님",
-        "text": "가만있어 봐~..."
+        "text": "가만있어 봐..."
     },
     "lunch2_dain_end_ins11": {
         "name": "{name}",
@@ -456,7 +456,7 @@
     },
     "lunch2_dain_end_ins23": {
         "name": "보건선생님",
-        "text": "*가볍게 웃으며* 비밀~ 선생님도 비밀이 있는 거야."
+        "text": "*가볍게 웃으며* 비밀. 선생님도 숨기는 거 하나쯤은 있어."
     },
     "lunch2_dain_end_ins24": {
         "name": "{name}",
@@ -484,7 +484,7 @@
     },
     "lunch2_dain_end_ins30": {
         "name": "보건선생님",
-        "text": "*다시 밝은 톤으로* 아 물론 수업 시간에는 안 되고~! 방과후에!"
+        "text": "*다시 밝은 톤으로* 물론 수업 시간 말고. 방과후에."
     },
     "lunch2_dain_end_ins31": {
         "name": "{name}",

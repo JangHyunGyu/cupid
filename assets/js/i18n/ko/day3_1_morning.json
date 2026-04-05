@@ -166,7 +166,7 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*손이 뜨겁다. 땀 때문인지, 다인 때문인지 — 달리면서 생각할 여유가 없다.*"
+        "text": "*손이 뜨겁다. 땀 때문인지, 다인이 잡은 데만 유독 뜨거운 건지. 달리느라 생각할 틈도 없다.*"
     },
     "morning3_dain_gate_5_ins": {
         "name": "{name}",
@@ -648,7 +648,7 @@
     },
     "hidden_nurse_d3_8_ins3": {
         "name": "보건선생님",
-        "text": "*다시 장난스럽게* 뭘~ 이 정도는 서비스야. — 다음에 또 와. 아프든 안 아프든."
+        "text": "*다시 장난스럽게* 뭘. 이 정도는 서비스지. 다음엔 안 아파도 들러."
     },
     "hidden_nurse_d3_8_ins4": {
         "name": "{name}",
@@ -696,7 +696,7 @@
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "보건선생님",
-        "text": "*겨우 웃으며* 농담이야~ 가 봐!"
+        "text": "*겨우 웃으며* 농담이야. 가 봐."
     },
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",
@@ -716,7 +716,7 @@
     },
     "hidden_nurse_d3_11": {
         "name": "보건선생님",
-        "text": "...농담이야~ 가 봐!"
+        "text": "...농담이야. 가 봐."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "보건선생님",
