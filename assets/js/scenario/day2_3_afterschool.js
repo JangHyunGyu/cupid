@@ -339,7 +339,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_dain_return": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "minsu_warn_1"
+        "next": "minsu_warn_gate"
     },
     "after2_seo_1": {
         "background": "assets/images/background/student_room.png",
@@ -613,7 +613,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_seo_return": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "minsu_warn_1"
+        "next": "minsu_warn_gate"
     },
     "after2_yuna_1": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -777,7 +777,17 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_yuna_return": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/yuna_smile.png",
-        "next": "minsu_warn_1"
+        "next": "minsu_warn_gate"
+    },
+    "minsu_warn_gate": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "branches": [
+            { "condition": "chose_seoyeon_lunch && chose_seo_after2", "next": "night2_start" },
+            { "condition": "chose_dain_lunch && chose_dain_after2", "next": "night2_start" },
+            { "condition": "chose_yuna_lunch && chose_yuna_after2", "next": "night2_start" },
+            { "next": "minsu_warn_1" }
+        ]
     },
     "minsu_warn_1": {
         "background": "assets/images/background/school.png",

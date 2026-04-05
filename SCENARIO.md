@@ -6909,7 +6909,7 @@
 
 ### `after2_dain_return`
 - 배경: `school.png`
-- 다음: `minsu_warn_1`
+- 다음: `minsu_warn_gate`
 
 - 캐릭터: `dain_shy.png`
 **{name}**: *학교로 돌아오는 길. 교문 앞에 다다랐다.*
@@ -7391,7 +7391,7 @@
 
 ### `after2_seo_return`
 - 배경: `school.png`
-- 다음: `minsu_warn_1`
+- 다음: `minsu_warn_gate`
 
 - 캐릭터: `seyoun_normal.png`
 **{name}**: *학생회실을 나섰다. 교문 쪽으로 걸어간다.*
@@ -7679,10 +7679,24 @@
 
 ### `after2_yuna_return`
 - 배경: `school.png`
-- 다음: `minsu_warn_1`
+- 다음: `minsu_warn_gate`
 
 - 캐릭터: `yuna_smile.png`
 **{name}**: *도서관 별관을 나왔다. 노을이 지고 있다.*
+
+---
+
+### `minsu_warn_gate`
+- 배경: `school.png`
+- 분기:
+  - [`chose_seoyeon_lunch && chose_seo_after2`] → `night2_start`
+  - [`chose_dain_lunch && chose_dain_after2`] → `night2_start`
+  - [`chose_yuna_lunch && chose_yuna_after2`] → `night2_start`
+  - [기본] → `minsu_warn_1`
+
+- 캐릭터: `없음`
+
+> Day1 점심과 Day2 방과후에 같은 캐릭터를 선택했으면 올인 루트 → 경고 스킵. 다른 캐릭터면 양다리 의심 → 민수 경고.
 
 ---
 
