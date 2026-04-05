@@ -94,11 +94,11 @@
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
-        "text": "¿Ah, sí? Vale. Pues suerte."
+        "text": "¿Ah, sí? Entonces, al menos memoriza el número de aula. Tercero B, al final a la derecha."
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*Seoyeon se da la vuelta primero. Esta vez no hace ningún gesto.*"
+        "text": "*Seoyeon realmente se dio la vuelta. Sin siquiera un gesto. Apenas logré llegar al aula, tanteando el tablón de anuncios del pasillo. — Hice mi elección, y la responsabilidad es mía.*"
     },
     "choice_flirt_1": {
         "name": "{name}",

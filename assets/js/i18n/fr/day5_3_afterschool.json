@@ -190,7 +190,7 @@
     },
     "after5_last_chance_2_ins7": {
         "name": "Seoyeon",
-        "text": "Mais — pas trop tard. Parce que tu es revenu au lieu de fuir."
+        "text": "Mais — cette fois, je ne veux pas te laisser partir comme ça. Parce que tu es revenu sans fuir."
     },
     "after5_last_chance_2_ins8": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_2_ins17": {
         "name": "Dain",
-        "text": "Moi — j'attendais. Depuis hier. Non, depuis avant-hier."
+        "text": "Moi — j'ai attendu. Depuis hier. Non, depuis avant-hier. Mais ce n'est pas parce que j'ai attendu que tout va bien tout de suite."
     },
     "after5_last_chance_2_ins18": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...Cette fois, je resterai pour écouter."
+        "text": "...Cette fois, je vais t'écouter. Même si je ne peux pas dire que tout va bien tout de suite."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Marchant côte à côte.* ...T'es en retard. Mais — pas trop tard. Parce que tu es revenu au lieu de fuir."
+        "text": "*En marchant côte à côte.* ...C'est tard. Mais cette fois, tu n'as pas fui. Ces mots, je ne les prendrai pas à la légère aujourd'hui."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -322,7 +322,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*En sortant de l'école.* Attends, sérieux ?! ...Sérieux ? Moi — j'attendais. Depuis hier. Non, depuis avant-hier."
+        "text": "*En quittant l'école.* Hé, vraiment ?! ...Vraiment ? Moi, j'ai attendu, c'est vrai. Mais si je me mets à sourire tout de suite juste parce que j'ai attendu, ce serait un peu injuste, non ? Alors cette fois, dis-le jusqu'au bout."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -331,7 +331,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*On a marché côte à côte.* ...Je le savais déjà. ...Si tu l'as lu, ça me suffit."
+        "text": "*Nous avons marché côte à côte.* ...Je le savais. Mais aujourd'hui, je vais le lire jusqu'au bout."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

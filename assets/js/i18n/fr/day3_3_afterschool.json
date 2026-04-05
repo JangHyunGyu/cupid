@@ -1,11 +1,11 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Après les cours. L'écho du déjeuner persiste encore. — Mais il faut bien aller quelque part.*"
+        "text": "*Après les cours. Les répercussions du déjeuner sont toujours là. Plutôt que d'aller rencontrer quelqu'un, je dois décider à qui j'irai d'abord pour arranger ce que j'ai gâché.*"
     },
     "after3_route_check": {
         "name": "{name}",
-        "text": "*Après les cours. Je vérifie mon téléphone.*"
+        "text": "*Je vérifie mon téléphone. Pas de réponse, et l'heure du rendez-vous approche.*"
     },
     "after3_auto_dain": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Les rendez-vous se chevauchent. — Elles attendent toutes. Vers qui aller en premier ?*",
+        "text": "*Les rendez-vous se sont chevauchés. Plus précisément, c'est moi qui les ai fait se chevaucher. Fuir ne ferait qu'empirer les choses. À qui irai-je d'abord pour arranger ça ?*",
         "choices": [
             "Aller voir Seoyeon",
             "Aller voir Yuna",

@@ -190,7 +190,7 @@
     },
     "after5_last_chance_2_ins7": {
         "name": "Seoyeon",
-        "text": "Aber — nicht zu spät. Weil du zurückgekommen bist, statt wegzulaufen."
+        "text": "Aber — dieses Mal will ich dich nicht einfach gehen lassen. Weil du nicht weggelaufen bist, sondern zurückgekommen bist."
     },
     "after5_last_chance_2_ins8": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_2_ins17": {
         "name": "Dain",
-        "text": "Ich — ich hab gewartet. Seit gestern. Nein, seit vorgestern."
+        "text": "Ich — habe gewartet. Seit gestern. Nein, seit vorgestern. Aber nur weil ich gewartet habe, heißt das nicht, dass alles sofort wieder gut ist."
     },
     "after5_last_chance_2_ins18": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...Diesmal bleibe ich und höre zu."
+        "text": "...Dieses Mal werde ich zuhören. Auch wenn ich nicht sofort sagen kann, dass alles gut ist."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Seite an Seite gehend.* ...Du bist spät. Aber — nicht zu spät. Weil du zurückgekommen bist, statt wegzulaufen."
+        "text": "*Während wir nebeneinander hergehen.* ...Du bist spät dran. Aber dieses Mal bist du nicht weggelaufen. Diese Worte werde ich heute nicht einfach so abtun."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -322,7 +322,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Beim Verlassen der Schule.* Ey, echt?! ...Echt jetzt? Ich — ich hab gewartet. Seit gestern. Nein, seit vorgestern."
+        "text": "*Als wir die Schule verlassen.* Hey, wirklich?! ...Wirklich? Ich habe ja gewartet. Aber wenn ich nur, weil ich gewartet habe, sofort lache, wäre das doch irgendwie unfair. Also, sag es dieses Mal bis zum Ende."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -331,7 +331,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Wir gingen nebeneinander.* ...Ich wusste es schon. ...Wenn du es gelesen hast, reicht das."
+        "text": "*Wir gingen nebeneinander her.* ...Ich wusste es ja. Trotzdem werde ich es heute bis zum Ende lesen."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

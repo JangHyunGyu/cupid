@@ -13,12 +13,45 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "bgm": "morning.mp3",
-        "next": "morning5_start_ins"
+        "next": "morning5_start_branch"
+    },
+    "morning5_start_branch": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "day4_confession_accepted", "next": "morning5_committed_start" },
+            { "next": "morning5_start_ins" }
+        ]
     },
     "morning5_start_ins": {
         "background": "assets/images/background/room_school.png",
         "character": null,
         "next": "morning5_start_2"
+    },
+    "morning5_committed_start": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_seoyeon", "next": "morning5_committed_seo" },
+            { "condition": "route_yuna", "next": "morning5_committed_yuna" },
+            { "condition": "route_dain", "next": "morning5_committed_dain" },
+            { "next": "hidden_homeroom_d5_check" }
+        ]
+    },
+    "morning5_committed_seo": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "hidden_homeroom_d5_check"
+    },
+    "morning5_committed_yuna": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "hidden_homeroom_d5_check"
+    },
+    "morning5_committed_dain": {
+        "background": "assets/images/background/room_school.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "hidden_homeroom_d5_check"
     },
     "morning5_start_2": {
         "background": "assets/images/background/room_school.png",
@@ -325,7 +358,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "character": null,
         "branches": [
             { "condition": "nurse_day4", "next": "hidden_nurse_d5_1" },
-            { "next": "morning5_end" }
+            { "next": "morning5_end_branch" }
         ]
     },
     "hidden_nurse_d5_1": {
@@ -553,9 +586,27 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_nurse_d5_freetalk": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "morning5_end"
+        "next": "morning5_end_branch"
+    },
+    "morning5_end_branch": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "day4_confession_accepted", "next": "morning5_committed_end" },
+            { "next": "morning5_end" }
+        ]
     },
     "morning5_end": {
+        "background": "assets/images/background/room_school.png",
+        "character": null,
+        "branches": [
+            { "condition": "route_dain", "next": "tour_dain_1_check" },
+            { "condition": "route_yuna", "next": "tour_yuna_1_check" },
+            { "condition": "route_seoyeon", "next": "tour_seo_1" },
+            { "next": "tour_seo_1" }
+        ]
+    },
+    "morning5_committed_end": {
         "background": "assets/images/background/room_school.png",
         "character": null,
         "branches": [

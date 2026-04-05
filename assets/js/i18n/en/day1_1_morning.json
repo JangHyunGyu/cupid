@@ -94,11 +94,11 @@
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
-        "text": "Oh. Sure. Have fun then."
+        "text": "Oh, really? Then at least memorize the classroom number. It's Class 3-2, at the very end on the right."
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*Seoyeon turns away first. No wave this time.*"
+        "text": "*Seoyeon really turned away. Without even a wave. I fumbled along the hallway map and barely made it to the classroom. — I made my choice, and the responsibility is mine.*"
     },
     "choice_flirt_1": {
         "name": "{name}",

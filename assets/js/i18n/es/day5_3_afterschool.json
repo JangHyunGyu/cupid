@@ -190,7 +190,7 @@
     },
     "after5_last_chance_2_ins7": {
         "name": "Seoyeon",
-        "text": "Pero — no demasiado tarde. Porque volviste en vez de huir."
+        "text": "Pero — esta vez no quiero dejarte ir así. Porque no huiste y regresaste."
     },
     "after5_last_chance_2_ins8": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_2_ins17": {
         "name": "Dain",
-        "text": "Yo — estuve esperando. Desde ayer. No, desde anteayer."
+        "text": "Yo — te estuve esperando. Desde ayer. No, desde anteayer. Pero que haya esperado no significa que todo esté bien de inmediato."
     },
     "after5_last_chance_2_ins18": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...Esta vez, me quedaré a escuchar."
+        "text": "...Esta vez, te escucharé. Aunque no pueda decir que todo está bien de inmediato."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Caminando juntos.* ...Llegas tarde. Pero — no demasiado tarde. Porque volviste en vez de huir."
+        "text": "*Mientras caminamos lado a lado.* ...Es tarde. Pero esta vez no huiste. Esas palabras, hoy no las tomaré a la ligera."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -322,7 +322,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Saliendo de la escuela.* Oye, ¿¡en serio!? ...¿En serio? Yo — estuve esperando. Desde ayer. No, desde anteayer."
+        "text": "*Saliendo de la escuela.* ¡Oye, ¿en serio?! ...¿De verdad? Yo, sí que esperé. Pero si me río de inmediato solo porque esperé, sería un poco injusto, ¿no? Así que esta vez, dilo hasta el final."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -331,7 +331,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Caminamos juntos.* ...Ya lo sabía. ...Si lo leíste, es suficiente."
+        "text": "*Caminamos lado a lado.* ...Lo sabía. Pero hoy, lo leeré hasta el final."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

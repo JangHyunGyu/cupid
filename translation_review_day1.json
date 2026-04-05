@@ -1,8 +1,8 @@
 {
     "_meta": {
-        "generated": "2026-04-01T15:02:22.030Z",
+        "generated": "2026-04-05T06:30:14.531Z",
         "day": 1,
-        "total_nodes": 389,
+        "total_nodes": 391,
         "lang_avg": {
             "en": 10,
             "ja": 10,
@@ -3248,6 +3248,78 @@
             },
             "de": {
                 "_ref": "assets/js/i18n/de/day1_1_morning.json#classroom_yuna_note_5_ins",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            }
+        },
+        "choice_dismiss_2": {
+            "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#choice_dismiss_2",
+            "_ko_name": "서연",
+            "_ko_text_preview": "그래? 그럼 최소한 교실 번호는 외워. 3학년 2반, 오른쪽 끝.",
+            "_has_choices": false,
+            "en": {
+                "_ref": "assets/js/i18n/en/day1_1_morning.json#choice_dismiss_2",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "ja": {
+                "_ref": "assets/js/i18n/ja/day1_1_morning.json#choice_dismiss_2",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "es": {
+                "_ref": "assets/js/i18n/es/day1_1_morning.json#choice_dismiss_2",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "fr": {
+                "_ref": "assets/js/i18n/fr/day1_1_morning.json#choice_dismiss_2",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "de": {
+                "_ref": "assets/js/i18n/de/day1_1_morning.json#choice_dismiss_2",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            }
+        },
+        "choice_dismiss_3": {
+            "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#choice_dismiss_3",
+            "_ko_name": "{name}",
+            "_ko_text_preview": "*서연은 정말로 돌아섰다. 손짓도 없이. 복도 안내판만 더듬어 겨우 교실 앞까지 왔다. — 선택은 했고, 책임도 내 몫이다.*",
+            "_has_choices": false,
+            "en": {
+                "_ref": "assets/js/i18n/en/day1_1_morning.json#choice_dismiss_3",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "ja": {
+                "_ref": "assets/js/i18n/ja/day1_1_morning.json#choice_dismiss_3",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "es": {
+                "_ref": "assets/js/i18n/es/day1_1_morning.json#choice_dismiss_3",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "fr": {
+                "_ref": "assets/js/i18n/fr/day1_1_morning.json#choice_dismiss_3",
+                "_reviewed": false,
+                "_score": 10,
+                "_issues": null
+            },
+            "de": {
+                "_ref": "assets/js/i18n/de/day1_1_morning.json#choice_dismiss_3",
                 "_reviewed": false,
                 "_score": 10,
                 "_issues": null

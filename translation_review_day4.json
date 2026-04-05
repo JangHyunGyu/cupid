@@ -1,6 +1,6 @@
 {
     "_meta": {
-        "generated": "2026-04-04T10:36:54.394Z",
+        "generated": "2026-04-05T06:34:02.448Z",
         "day": 4,
         "total_nodes": 543,
         "lang_avg": {
@@ -13773,7 +13773,7 @@
         "wall_seo_glimpse_4": {
             "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_glimpse_4",
             "_ko_name": "{name}",
-            "_ko_text_preview": "*잠깐 멈췄다가 — 걸음을 옮겼다. 지금은 서연의 밤이니까. 근데 발이 ...",
+            "_ko_text_preview": "*한참 학교 뒤편에 서 있다가, 결국 집으로 돌아왔다. 지금은 서연의 밤이니까. 근데 발이 무겁다.*",
             "_has_choices": false,
             "en": {
                 "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_glimpse_4",
@@ -18811,7 +18811,7 @@
         "wall_yuna_glimpse_4": {
             "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_glimpse_4",
             "_ko_name": "{name}",
-            "_ko_text_preview": "*서연이 핸드폰을 주머니에 넣고 돌아선다. 등이 곧다. 완벽하게. — 떨...",
+            "_ko_text_preview": "*한동안 학교 뒤편을 떠나지 못하다가, 결국 집으로 돌아왔다. 오늘 들은 말들은 다 가볍지 않았다. 그래서 더 오래 남는다.*",
             "_has_choices": false,
             "en": {
                 "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_glimpse_4",
@@ -18955,7 +18955,7 @@
         "day4_night_regret_msg_seo": {
             "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_regret_msg_seo",
             "_ko_name": "서연",
-            "_ko_text_preview": "오늘 바람 좋았어.",
+            "_ko_text_preview": "오늘 바람 좋았어. 그래서... 조금 기대했어. 괜히.",
             "_has_choices": false,
             "en": {
                 "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_regret_msg_seo",
@@ -18991,7 +18991,7 @@
         "day4_night_regret_msg_dain": {
             "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_regret_msg_dain",
             "_ko_name": "다인",
-            "_ko_text_preview": "야 오늘 재밌었다ㅋㅋ",
+            "_ko_text_preview": "야 오늘 재밌었다ㅋㅋ ...나 혼자만 들뜬 건 아니었으면 했어.",
             "_has_choices": false,
             "en": {
                 "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_regret_msg_dain",
@@ -19027,7 +19027,7 @@
         "day4_night_regret_msg_yuna": {
             "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_regret_msg_yuna",
             "_ko_name": "유나",
-            "_ko_text_preview": "...오늘",
+            "_ko_text_preview": "...오늘. 조금 기대했어. 그래서 더 조용해졌어.",
             "_has_choices": false,
             "en": {
                 "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_regret_msg_yuna",

@@ -99,7 +99,7 @@
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*On a partagé à trois. Personne ne s'est fâché sur-le-champ. Pourtant, personne n'avait l'air à l'aise. On a seulement repoussé ça à plus tard.*"
+        "text": "*Finalement, les trois ont partagé un peu de tout. Seoyeon sourit poliment, Dain est excessivement joyeuse, et Yuna ne sort finalement pas le mot qu'elle avait plié. Ce n'est pas passé, juste reporté.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -224,11 +224,11 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*La pause déjeuner est terminée.*"
+        "text": "*La pause déjeuner est terminée. Mais rien n'est vraiment fini.*"
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*J'ai dit qu'on devrait partager entre nous. Il y a des sourires, mais l'air est étrangement lourd. Toutes les trois font semblant que tout va bien.*"
+        "text": "*J'ai proposé de tout partager. Une proposition de paix faite bien trop tard. Les trois sourient, mais personne ne tend la main en premier.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
@@ -335,7 +335,7 @@
     },
     "lunch3_meal_10_ins2": {
         "name": "{name}",
-        "text": "*Les deux autres parties, je reste seul avec celle que j'ai choisie. — Je ne savais pas que choisir pesait autant.*"
+        "text": "*Personne ne quitte sa place. Elles ont le sourire, mais aucune des trois n'arrive à prendre facilement ses baguettes. Le dernier plat d'accompagnement attire l'attention sans raison.*"
     },
     "lunch3_meal_10_ins3": {
         "name": "{name}",

@@ -208,7 +208,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "branches": [
-            { "condition": "ending_harem", "next": "after3_final" },
+            { "condition": "harem_seed", "next": "after3_final" },
             { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
             { "next": "after3_final" }
         ]
@@ -223,7 +223,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "branches": [
-            { "condition": "ending_harem", "next": "after3_final" },
+            { "condition": "harem_seed", "next": "after3_final" },
             { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
             { "next": "after3_final" }
         ]
@@ -389,7 +389,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "branches": [
-            { "condition": "ending_harem", "next": "after3_final" },
+            { "condition": "harem_seed", "next": "after3_final" },
             { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
             { "next": "after3_final" }
         ]
@@ -553,7 +553,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "branches": [
-            { "condition": "ending_harem", "next": "after3_final" },
+            { "condition": "harem_seed", "next": "after3_final" },
             { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
             { "next": "after3_final" }
         ]
@@ -562,7 +562,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "branches": [
-            { "condition": "ending_harem", "next": "after3_final" },
+            { "condition": "harem_seed", "next": "after3_final" },
             { "condition": "day3_has_multiple_dates", "next": "after3_confront_1" },
             { "next": "after3_final" }
         ]

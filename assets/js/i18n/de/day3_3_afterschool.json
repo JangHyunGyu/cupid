@@ -1,11 +1,11 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Die Nachwirkungen der Mittagspause hallen noch nach. — Trotzdem muss ich irgendwohin.*"
+        "text": "*Nach der Schule. Die Nachwirkungen des Mittagessens sind noch immer spürbar. Es geht nicht darum, wen ich treffe, sondern darum, zu wem ich zuerst gehen muss, um das Chaos zu beseitigen.*"
     },
     "after3_route_check": {
         "name": "{name}",
-        "text": "*Nach der Schule. Ich checke mein Handy.*"
+        "text": "*Ich überprüfe mein Handy. Keine Antwort, und die Zeit für die Verabredung rückt näher.*"
     },
     "after3_auto_dain": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Die Verabredungen überschneiden sich. — Alle warten. Zu wem gehe ich zuerst?*",
+        "text": "*Die Verabredungen überschneiden sich. Genauer gesagt, ich habe sie sich überschneiden lassen. Weglaufen wäre noch schlimmer. Zu wem soll ich zuerst gehen, um die Sache zu klären?*",
         "choices": [
             "Zu Seoyeon gehen",
             "Zu Yuna gehen",
