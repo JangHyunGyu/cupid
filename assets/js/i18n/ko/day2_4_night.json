@@ -41,7 +41,7 @@
     },
     "night2_msg_dain_general": {
         "name": "다인",
-        "text": "야~ 내일 매점 가자! 오늘 못 간 거 아직 아쉽다구!"
+        "text": "야, 내일 매점 가자! 오늘 못 간 거 아직 아쉽거든!"
     },
     "night2_msg_dain_general_merge": {
         "name": "서연",
@@ -106,7 +106,7 @@
     },
     "night2_reply_dain_react_default": {
         "name": "다인",
-        "text": "ㅋㅋ 알겠어~ 굿나잇!"
+        "text": "ㅋㅋ 알겠어. 굿나잇!"
     },
     "night2_dain_freetalk": {
         "name": "다인",

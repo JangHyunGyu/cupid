@@ -157,7 +157,7 @@
     },
     "lunch3_dain_skin_2": {
         "name": "{name}",
-        "text": "*다인이 튕기듯 떨어진다. 귀가 빨갛다.*"
+        "text": "*다인이 튕기듯 떨어져 한 걸음 물러난다. 괜히 물병만 집어 든다.*"
     },
     "lunch3_dain_skin_3": {
         "name": "다인",
@@ -315,7 +315,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "서연",
-        "text": "나는 여럿 중 하나는 안 해. — 그런 거면 아예 없는 게 나아."
+        "text": "난 애매한 자리 안 해. 그럴 바엔 아예 빠질래."
     },
     "lunch3_expose_honest_6": {
         "name": "{name}",
