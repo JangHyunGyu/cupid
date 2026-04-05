@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_ins": {
         "name": "{name}",
-        "text": "*ニッと笑って拳で肩を叩く。——Day 1と同じ力だ。*"
+        "text": "*ニッと笑って拳で肩を叩く。——初日と同じ力だ。*"
     },
     "after5_farewell_dain_4_ins2": {
         "name": "ダイン",
@@ -115,7 +115,7 @@
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*ニッと笑って拳で肩を叩く。初日と同じ力。感嘆符が生きている。ダインは最後までダインだ。それがこの人の強さだ。*"
+        "text": "*振り返った背中が小さくなる。——でも歩みは速い。初めて会った時みたいに。*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",

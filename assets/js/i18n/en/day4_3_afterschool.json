@@ -21,7 +21,7 @@
     },
     "confess_seo_4_ins": {
         "name": "{name}",
-        "text": "*The words I couldn't say at my old school surface. This time, I'll confess.*"
+        "text": "*My heart is pounding. It was like this at my old school too. — Back then, I swallowed those words.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
-        "text": "*Seoyeon extends her pinky finger.*"
+        "text": "*Seoyeon's hand moves.*"
     },
     "confess_seo_yes_12": {
         "name": "{name}",
-        "text": "*Seoyeon holds out her pinky. The same pinky I saw on Day 1. -- Back then I thought it was just a habit, but this is Seoyeon's way of making a promise.*"
+        "text": "*Seoyeon holds out her pinky. The same pinky I saw on the first day. -- Back then I thought it was just a habit, but this is Seoyeon's way of making a promise.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "confess_yuna_yes_3_ins": {
         "name": "{name}",
-        "text": "You were the person who sat beside me instead of saying anything."
+        "text": "When I'm next to you, the silence never felt uncomfortable."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",

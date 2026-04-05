@@ -21,7 +21,7 @@
     },
     "confess_seo_4_ins": {
         "name": "{name}",
-        "text": "*Die Worte, die ich an meiner alten Schule nicht sagen konnte, tauchen auf. Diesmal werde ich mich bekennen.*"
+        "text": "*Mein Herz rast. An meiner alten Schule war es genauso. — Damals habe ich die Worte runtergeschluckt.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
-        "text": "*Seoyeon streckt ihren kleinen Finger aus.*"
+        "text": "*Seoyeons Hand bewegt sich.*"
     },
     "confess_seo_yes_12": {
         "name": "{name}",
-        "text": "*Seoyeon streckt ihren kleinen Finger aus. Derselbe kleine Finger, den ich am Tag 1 gesehen habe. — Damals dachte ich, es sei nur eine Angewohnheit, aber das ist Seoyeons Art, ein Versprechen zu machen.*"
+        "text": "*Seoyeon streckt ihren kleinen Finger aus. Derselbe kleine Finger, den ich am ersten Tag gesehen habe. — Damals dachte ich, es sei nur eine Angewohnheit, aber das ist Seoyeons Art, ein Versprechen zu machen.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "confess_yuna_yes_3_ins": {
         "name": "{name}",
-        "text": "Du warst die Person, die sich neben mich gesetzt hat, statt etwas zu sagen."
+        "text": "Wenn ich neben dir bin, hat sich die Stille nie unangenehm angefühlt."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",

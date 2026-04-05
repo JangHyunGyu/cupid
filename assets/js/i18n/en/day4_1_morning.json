@@ -353,13 +353,13 @@
         "name": "{name}",
         "text": "*...This time, for real*"
     },
-    "morning4_dain_msg_1_ins": {
+    "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Dain's exclamation marks fill the screen. — Her energy bleeds right through the phone. The corners of my mouth pull up. Today's the day.*"
+        "text": "*Weekend morning. A few notifications waiting. — I thought it would be an ordinary day.*"
     },
-    "morning4_dain_msg_1_ins2": {
+    "morning4_fallback_msg_2": {
         "name": "{name}",
-        "text": "*From warnings to confrontation, from confrontation to cheering me on. Minsu believed in me before I believed in myself.*"
+        "text": "*I put down my phone and stretch. Another day begins, regardless.*"
     },
     "morning4_seo_msg_1_ins": {
         "name": "{name}",

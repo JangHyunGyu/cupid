@@ -21,7 +21,7 @@
     },
     "confess_seo_4_ins": {
         "name": "{name}",
-        "text": "*Las palabras que no pude decir en mi antiguo colegio resurgen. Esta vez, me declararé.*"
+        "text": "*El corazón me late fuerte. En mi antigua escuela también era así. — Entonces, me tragué esas palabras.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "confess_seo_yes_11_ins": {
         "name": "{name}",
-        "text": "*Seoyeon extiende su meñique.*"
+        "text": "*La mano de Seoyeon se mueve.*"
     },
     "confess_seo_yes_12": {
         "name": "{name}",
-        "text": "*Seoyeon extiende su meñique. El mismo meñique que vi el Día 1. — Entonces pensé que era solo un hábito, pero esta es la forma de Seoyeon de hacer una promesa.*"
+        "text": "*Seoyeon extiende su meñique. El mismo meñique que vi el primer día. — Entonces pensé que era solo un hábito, pero esta es la forma de Seoyeon de hacer una promesa.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "confess_yuna_yes_3_ins": {
         "name": "{name}",
-        "text": "Tú eras la persona que se sentaba a mi lado en lugar de decir algo."
+        "text": "Cuando estoy a tu lado, el silencio nunca me incomodó."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
