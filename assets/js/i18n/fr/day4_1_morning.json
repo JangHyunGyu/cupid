@@ -3,6 +3,22 @@
         "name": "{name}",
         "text": "*Quatrième jour. Week-end. — Aujourd'hui, pas d'école. C'est un rendez-vous.*"
     },
+    "morning4_nightmare_seo": {
+        "name": "{name}",
+        "text": "*...J'ai fait un rêve étrange. Le sourire de Seoyeon — il flotte encore devant mes yeux.*"
+    },
+    "morning4_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*...J'ai fait un rêve étrange. J'ai voulu atteindre Yuna — mes doigts sont encore vides.*"
+    },
+    "morning4_nightmare_dain": {
+        "name": "{name}",
+        "text": "*...J'ai fait un rêve étrange. J'ai cru attraper Dain — mais mes mains sont encore vides.*"
+    },
+    "morning4_nightmare_after": {
+        "name": "{name}",
+        "text": "*...À cet instant, mon inconscient n'a choisi qu'une seule personne.*"
+    },
     "minsu_cheer_1": {
         "name": "{name}",
         "text": "*Je regarde mon téléphone. Message du matin. — Minsu est tout en haut.*"

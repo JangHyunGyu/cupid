@@ -13766,10 +13766,58 @@
 ### `morning4_start`
 - 배경: `room_my.png`
 - BGM: `morning.mp3`
-- 다음: `minsu_cheer_1`
+- 다음: `morning4_nightmare_check`
 
 - 캐릭터: `없음`
 **{name}**: *넷째 날. 주말. — 오늘은 학교가 아니다. 데이트다.*
+
+---
+
+### `morning4_nightmare_check`
+- 배경: `room_my.png`
+- 분기:
+  - [`nightmare_chose_seoyeon`] → `morning4_nightmare_seo`
+  - [`nightmare_chose_yuna`] → `morning4_nightmare_yuna`
+  - [`nightmare_chose_dain`] → `morning4_nightmare_dain`
+  - [기본] → `minsu_cheer_1`
+
+- 캐릭터: `없음`
+
+---
+
+### `morning4_nightmare_seo`
+- 배경: `room_my.png`
+- 다음: `morning4_nightmare_after`
+
+- 캐릭터: `없음`
+**{name}**: *...이상한 꿈을 꿨다. 서연의 웃는 얼굴이 — 아직 눈앞에 어른거린다.*
+
+---
+
+### `morning4_nightmare_yuna`
+- 배경: `room_my.png`
+- 다음: `morning4_nightmare_after`
+
+- 캐릭터: `없음`
+**{name}**: *...이상한 꿈을 꿨다. 유나에게 다가가려는데 — 손끝이 아직 허전하다.*
+
+---
+
+### `morning4_nightmare_dain`
+- 배경: `room_my.png`
+- 다음: `morning4_nightmare_after`
+
+- 캐릭터: `없음`
+**{name}**: *...이상한 꿈을 꿨다. 다인을 잡았다고 생각했는데 — 아직 손에 아무것도 없다.*
+
+---
+
+### `morning4_nightmare_after`
+- 배경: `room_my.png`
+- 다음: `minsu_cheer_1`
+
+- 캐릭터: `없음`
+**{name}**: *...그 순간, 무의식이 고른 건 결국 한 사람이었다.*
 
 ---
 

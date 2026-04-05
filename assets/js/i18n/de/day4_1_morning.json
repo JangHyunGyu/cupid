@@ -3,6 +3,22 @@
         "name": "{name}",
         "text": "*Vierter Tag. Wochenende. — Heute ist keine Schule. Es ist ein Date.*"
     },
+    "morning4_nightmare_seo": {
+        "name": "{name}",
+        "text": "*...Hatte einen seltsamen Traum. Seoyeons lächelndes Gesicht — schwebt mir noch vor Augen.*"
+    },
+    "morning4_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*...Hatte einen seltsamen Traum. Wollte Yuna erreichen — meine Fingerspitzen fühlen sich noch leer an.*"
+    },
+    "morning4_nightmare_dain": {
+        "name": "{name}",
+        "text": "*...Hatte einen seltsamen Traum. Dachte, ich hätte Dain gefangen — aber meine Hände sind noch leer.*"
+    },
+    "morning4_nightmare_after": {
+        "name": "{name}",
+        "text": "*...In diesem Moment hat mein Unterbewusstsein nur eine Person gewählt.*"
+    },
     "minsu_cheer_1": {
         "name": "{name}",
         "text": "*Aufs Handy schauen. Nachricht am Morgen. — Minsu steht ganz oben.*"

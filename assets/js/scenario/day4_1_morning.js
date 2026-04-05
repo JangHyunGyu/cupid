@@ -13,6 +13,36 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "bgm": "morning.mp3",
+        "next": "morning4_nightmare_check"
+    },
+    "morning4_nightmare_check": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "branches": [
+            { "condition": "nightmare_chose_seoyeon", "next": "morning4_nightmare_seo" },
+            { "condition": "nightmare_chose_yuna", "next": "morning4_nightmare_yuna" },
+            { "condition": "nightmare_chose_dain", "next": "morning4_nightmare_dain" },
+            { "next": "minsu_cheer_1" }
+        ]
+    },
+    "morning4_nightmare_seo": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "morning4_nightmare_after"
+    },
+    "morning4_nightmare_yuna": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "morning4_nightmare_after"
+    },
+    "morning4_nightmare_dain": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "morning4_nightmare_after"
+    },
+    "morning4_nightmare_after": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "minsu_cheer_1"
     },
     "minsu_cheer_1": {
