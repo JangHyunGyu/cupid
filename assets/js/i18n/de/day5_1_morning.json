@@ -425,5 +425,24 @@
         "name": "{name}",
         "text": "*Dieses Herz — sieht nicht nach medizinischem Interesse aus.*"
     },
-    "hidden_nurse_d5_flag_check": {}
+    "hidden_nurse_d5_flag_check": {},
+    "morning5_start_branch": {},
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
+        "name": "{name}",
+        "text": "*Auf meinem Tisch liegt kein neuer Zettel. Stattdessen ist Seoyeons Blick von gestern auf dem Dach noch immer deutlich vor mir. Yuna und Dain wechseln mit mir nur ein paar kurze Worte über die Vorbereitungen für die Veranstaltung.*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*Es gibt keinen neuen Zettel. Stattdessen ist mir noch immer im Kopf, wie Yuna gestern ungewöhnlich lange meinen Blick festgehalten hat. Seoyeon und Dain sagen nur ein paar kurze Dinge über die Vorbereitungen für die Veranstaltung.*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*Noch vor Dains Ausrufezeichen kommt mir zuerst der Atem in den Sinn, der ihr gestern am Ende stockte. Seoyeon und Yuna sagen nur ein paar kurze Dinge über die Vorbereitungen für die Veranstaltung.*"
+    },
+    "morning5_end_branch": {},
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*Es sind keine Signale mehr aus drei Richtungen. Ich habe meine Antwort schon gewählt und gehe zum letzten Programmpunkt.*"
+    }
 }

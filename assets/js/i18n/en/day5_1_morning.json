@@ -425,5 +425,24 @@
         "name": "{name}",
         "text": "*This time, that heart — doesn't seem like medical concern.*"
     },
-    "hidden_nurse_d5_flag_check": {}
+    "hidden_nurse_d5_flag_check": {},
+    "morning5_start_branch": {},
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
+        "name": "{name}",
+        "text": "*There's no new note on my desk. Instead, the look in Seoyeon's eyes from the rooftop yesterday is still vivid. Yuna and Dain only say a few short things about getting ready for the event.*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*There isn't any new note. Instead, the way Yuna held my gaze a little too long yesterday is still there. Seoyeon and Dain only say a few short things about getting ready for the event.*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*Before Dain's exclamation marks, what comes back to me first is the breath that caught at the very end yesterday. Seoyeon and Yuna only say a few short things about getting ready for the event.*"
+    },
+    "morning5_end_branch": {},
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*It's not signals coming from three directions anymore. I've already made my choice, and I head toward the final event.*"
+    }
 }

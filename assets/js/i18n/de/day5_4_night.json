@@ -1193,5 +1193,6 @@
         "choices": [
             "Von vorne beginnen"
         ]
-    }
+    },
+    "ending_hidden_commit_check": {}
 }
