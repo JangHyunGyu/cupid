@@ -145,6 +145,16 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_end_b": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_end_c"
+    },
+    "date_seo_end_c": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_normal.png",
+        "next": "date_seo_end_d"
+    },
+    "date_seo_end_d": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "pre_confess_minsu"
     },
     "date_yuna_1": {
@@ -293,6 +303,16 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_end": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_smile.png",
+        "next": "date_yuna_end_b"
+    },
+    "date_yuna_end_b": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
+        "next": "date_yuna_end_c"
+    },
+    "date_yuna_end_c": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "pre_confess_minsu"
     },
     "date_dain_1": {
@@ -454,6 +474,16 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "date_dain_end"
     },
     "date_dain_end": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_end_b"
+    },
+    "date_dain_end_b": {
+        "background": "assets/images/background/street.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "date_dain_end_c"
+    },
+    "date_dain_end_c": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "pre_confess_minsu"

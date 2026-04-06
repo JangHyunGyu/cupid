@@ -368,5 +368,29 @@
     "date_dain_shop_2_ins": {
         "name": "Dain",
         "text": "*Dreht sich weg* Ist nichts! Komm, lass gehen!"
+    },
+    "date_seo_end_c": {
+        "name": "Seoyeon",
+        "text": "*Sie bleibt stehen.* ...Heute."
+    },
+    "date_seo_end_d": {
+        "name": "Seoyeon",
+        "text": "Es war schön. — Merk dir das einfach."
+    },
+    "date_yuna_end_b": {
+        "name": "Yuna",
+        "text": "*Kurz vor dem Abschied reicht sie einen Zettel. Wortlos.*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'Heute hatte ich viele Sätze. Nur vor dir.' — Yunas Schrift zittert.*"
+    },
+    "date_dain_end_b": {
+        "name": "Dain",
+        "text": "Hey."
+    },
+    "date_dain_end_c": {
+        "name": "Dain",
+        "text": "Heute hat echt Spaß gemacht. ...Ohne Ausrufezeichen."
     }
 }

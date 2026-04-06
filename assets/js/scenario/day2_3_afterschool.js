@@ -212,6 +212,11 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "after2_dain_9_ins6": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sweat.png",
+        "next": "after2_dain_9_ins7"
+    },
+    "after2_dain_9_ins7": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "after2_dain_11b"
     },
     "after2_dain_11b": {

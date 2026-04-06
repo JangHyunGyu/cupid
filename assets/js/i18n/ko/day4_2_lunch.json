@@ -109,6 +109,14 @@
         "name": "{name}",
         "text": "*공원을 나서 거리를 걸었다.*"
     },
+    "date_seo_end_c": {
+        "name": "서연",
+        "text": "*걸음을 멈추며* ...오늘."
+    },
+    "date_seo_end_d": {
+        "name": "서연",
+        "text": "좋았어. — 그것만 알아줘."
+    },
     "date_yuna_1": {
         "name": "{name}",
         "text": "*카페 앞. 유나가 벽에 기대어 서 있다. 검은 원피스에 작은 크로스백.*"
@@ -226,6 +234,14 @@
     "date_yuna_end": {
         "name": "{name}",
         "text": "*유나가 나를 보며 말한다. — 그 눈에 '너 때문에'가 적혀 있다.*"
+    },
+    "date_yuna_end_b": {
+        "name": "유나",
+        "text": "*헤어지기 직전, 쪽지를 건넨다. 말없이.*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'오늘 문장이 많았어. 네 앞에서만.' — 유나의 글씨가 떨리고 있다.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -356,6 +372,14 @@
     "date_dain_end": {
         "name": "{name}",
         "text": "*웃고 있다. — 근데 눈이 웃지 않는다.*"
+    },
+    "date_dain_end_b": {
+        "name": "다인",
+        "text": "야."
+    },
+    "date_dain_end_c": {
+        "name": "다인",
+        "text": "오늘 진짜 재밌었어. ...느낌표 없이."
     },
     "pre_confess_minsu": {
         "name": "민수",

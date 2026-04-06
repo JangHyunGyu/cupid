@@ -26,7 +26,7 @@
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
-        "text": "*다인이 뒤에서 어깨를 탁 친다. 이 사람의 스킨십에는 주저함이 없다.*"
+        "text": "*다인이 뒤에서 어깨를 탁 친다.*"
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "morning2_minsu_1_ins": {
         "name": "{name}",
-        "text": "*서연이 복도를 돌아가는 순간 — 뒤통수가 보이기 직전, 미소가 0.3초 내려간 것 같았다. 원래 표정으로 돌아가는 스위치. — 착각인가?*"
+        "text": "*서연이 복도를 돌아가는 순간 — 미소가 내려간 것 같았다. 착각인가?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
-        "text": "*행정적인 거라고 한다. 이 사람은 자기 관심을 항상 업무로 포장한다.*"
+        "text": "*행정적인 거라고 한다.*"
     },
     "hidden_homeroom_d2_2_ins": {
         "name": "{name}",
@@ -322,7 +322,7 @@
     },
     "hidden_homeroom_d2_11_ins": {
         "name": "{name}",
-        "text": "*아무도 안 듣고 있는데 혼잣말처럼. — 이 사람은 자기 관심을 '업무'라고 포장하는 게 습관인 것 같다.*"
+        "text": "*아무도 안 듣고 있는데 혼잣말처럼.*"
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",

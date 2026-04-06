@@ -719,5 +719,9 @@
     "after2_yuna_everyday_react_ins": {
         "name": "{name}",
         "text": "*It doesn't even sound like permission, but somehow it lingers for a long time.*"
+    },
+    "after2_dain_9_ins7": {
+        "name": "{name}",
+        "text": "*Dain gets up — she briefly rubs her right knee. She did the same thing at the gym yesterday. An unconscious gesture.*"
     }
 }

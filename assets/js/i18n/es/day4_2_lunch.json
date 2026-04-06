@@ -368,5 +368,29 @@
     "date_dain_shop_2_ins": {
         "name": "Dain",
         "text": "*Girándose* ¡No es nada! ¡Vamos!"
+    },
+    "date_seo_end_c": {
+        "name": "Seoyeon",
+        "text": "*Se detiene.* ...Hoy."
+    },
+    "date_seo_end_d": {
+        "name": "Seoyeon",
+        "text": "Me gustó. — Solo recuerda eso."
+    },
+    "date_yuna_end_b": {
+        "name": "Yuna",
+        "text": "*Justo antes de despedirse, entrega una nota. Sin decir nada.*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'Hoy tuve muchas frases. Solo frente a ti.' — La letra de Yuna tiembla.*"
+    },
+    "date_dain_end_b": {
+        "name": "Dain",
+        "text": "Oye."
+    },
+    "date_dain_end_c": {
+        "name": "Dain",
+        "text": "Hoy fue muy divertido. ...Sin signo de exclamación."
     }
 }

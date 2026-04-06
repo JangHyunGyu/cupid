@@ -368,5 +368,29 @@
     "date_dain_shop_2_ins": {
         "name": "Dain",
         "text": "*En détournant la tête* C'est rien ! On y va !"
+    },
+    "date_seo_end_c": {
+        "name": "Seoyeon",
+        "text": "*Elle s'arrête de marcher.* ...Aujourd'hui."
+    },
+    "date_seo_end_d": {
+        "name": "Seoyeon",
+        "text": "C'était bien. — Retiens juste ça."
+    },
+    "date_yuna_end_b": {
+        "name": "Yuna",
+        "text": "*Juste avant de se séparer, elle tend un mot. Sans rien dire.*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'Aujourd'hui j'ai eu beaucoup de phrases. Seulement devant toi.' — L'écriture de Yuna tremble.*"
+    },
+    "date_dain_end_b": {
+        "name": "Dain",
+        "text": "Hé."
+    },
+    "date_dain_end_c": {
+        "name": "Dain",
+        "text": "Aujourd'hui c'était vraiment bien. ...Sans point d'exclamation."
     }
 }

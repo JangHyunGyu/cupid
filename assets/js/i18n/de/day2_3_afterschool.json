@@ -719,5 +719,9 @@
     "after2_yuna_everyday_react_ins": {
         "name": "{name}",
         "text": "*Es klingt nicht einmal wie eine Erlaubnis, und trotzdem bleibt es seltsam lange hängen.*"
+    },
+    "after2_dain_9_ins7": {
+        "name": "{name}",
+        "text": "*Dain steht auf — sie reibt sich kurz das rechte Knie. Gestern in der Turnhalle war es genauso. Eine unbewusste Geste.*"
     }
 }

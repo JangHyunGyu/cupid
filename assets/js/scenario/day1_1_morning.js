@@ -23,26 +23,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "start_3": {
         "background": "assets/images/background/school.png",
         "character": null,
-        "next": "start_3b"
-    },
-    "start_3b": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "start_4"
-    },
-    "start_4": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "start_5"
-    },
-    "start_5": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "start_6"
-    },
-    "start_6": {
-        "background": "assets/images/background/school.png",
-        "character": null,
         "next": "name_input_scene"
     },
     "name_input_scene": {
@@ -52,11 +32,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "gate_1"
     },
     "gate_1": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "gate_2"
-    },
-    "gate_2": {
         "background": "assets/images/background/school.png",
         "character": null,
         "next": "gate_3"

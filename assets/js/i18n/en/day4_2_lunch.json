@@ -368,5 +368,29 @@
     "date_dain_shop_2_ins": {
         "name": "Dain",
         "text": "*Turning away* It's nothing! Let's go!"
+    },
+    "date_seo_end_c": {
+        "name": "Seoyeon",
+        "text": "*She stops walking.* ...Today."
+    },
+    "date_seo_end_d": {
+        "name": "Seoyeon",
+        "text": "It was nice. — Just know that."
+    },
+    "date_yuna_end_b": {
+        "name": "Yuna",
+        "text": "*Just before parting, she hands over a note. Without a word.*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'I had a lot of sentences today. Only in front of you.' — Yuna's handwriting is trembling.*"
+    },
+    "date_dain_end_b": {
+        "name": "Dain",
+        "text": "Hey."
+    },
+    "date_dain_end_c": {
+        "name": "Dain",
+        "text": "Today was really fun. ...Without the exclamation mark."
     }
 }
