@@ -172,6 +172,18 @@
     "name": "{name}",
     "text": "*'This time, no more regrets.' — That's the promise I made when I came to this school.*"
   },
+  "night2_flashback_8": {
+    "name": "{name}",
+    "text": "*But — I stare at the ceiling. Today won't switch off. Seoyeon. Dain. Yuna. All three are stuck in my head. I could call it curiosity. Honestly though, it scares me. The thought of leaning toward any one of them.*"
+  },
+  "night2_flashback_9": {
+    "name": "{name}",
+    "text": "*Back with Sojeong, I only looked at one person. I only liked one person, only watched one person — and even as she fell apart right beside me, I stopped at the notepad. Thirty-eight times. Looking at only one meant being able to lose that one. I didn't know that then.*"
+  },
+  "night2_flashback_10": {
+    "name": "{name}",
+    "text": "*— That's why I'm leaving the door open with all three of them right now. I don't want to admit it. If I pick one too fast, I'll only see her, the rest will fade out, and one day someone might fall apart again and I won't notice. It's insurance. I know it's cowardly. Anyone looking would just call me indecisive. But — I know what it feels like to lose someone because she was the only one I was looking at. That's what scares me most.*"
+  },
   "night2_hidden_check": {
     "name": "{name}",
     "text": "*Between the messenger alerts — I spot more notifications.*"

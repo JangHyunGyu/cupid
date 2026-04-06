@@ -1,759 +1,783 @@
 {
-    "morning3_start": {
-        "name": "{name}",
-        "text": "*셋째 날. 늦잠을 잤다. 알람을 세 번이나 꺼버렸다. 어젯밤 늦게까지 메시지 보느라 늦게 잔 탓이다.*"
-    },
-    "morning3_start_2": {
-        "name": "{name}",
-        "text": "*전력 질주로 등굣길을 달린다. — 교문이 보인다. 그리고.*"
-    },
-    "morning3_gate_branch": {},
-    "morning3_seo_gate_1": {
-        "name": "{name}",
-        "text": "*교문 앞에 서연이 서 있다. 서두르는 기색 없이.*"
-    },
-    "morning3_seo_gate_warm_1": {
-        "name": "{name}",
-        "text": "*서연이 평소와 다르게 교문 앞에서 기다리고 있다.*"
-    },
-    "morning3_seo_gate_warm_2": {
-        "name": "서연",
-        "text": "...일찍 온 거 아니야. 학생회 일이 있어서."
-    },
-    "morning3_seo_gate_warm_3": {
-        "name": "{name}",
-        "text": "*손에 아무것도 없다. 서류도, 클립보드도.*"
-    },
-    "morning3_seo_gate_warm_4": {
-        "name": "{name}",
-        "text": "*서연이 아무 말 없이 나란히 걷기 시작한다. — 교문에서 교실까지, 이 거리가 이렇게 짧았나.*"
-    },
-    "morning3_seo_gate_2": {
-        "name": "서연",
-        "text": "늦었네."
-    },
-    "morning3_seo_gate_3": {
-        "name": "{name}",
-        "text": "...서연? 왜 여기서?"
-    },
-    "morning3_seo_gate_4": {
-        "name": "서연",
-        "text": "지각이면 어때. 같이 걸리면 덜 혼나지 않을까?"
-    },
-    "morning3_seo_gate_5": {
-        "name": "{name}",
-        "text": "그건 아닌 것 같은데."
-    },
-    "morning3_seo_gate_6": {
-        "name": "서연",
-        "text": "...농담이야. 내가 어떻게든 해줄게."
-    },
-    "morning3_seo_gate_6_b": {
-        "name": "{name}",
-        "text": "*서연이 걸어간다. 당당하게. 늦었는데도 서두르지 않는다.*"
-    },
-    "morning3_seo_gate_7": {
-        "name": "{name}",
-        "text": "*서연이 걸어간다. 당당하게. 늦었는데도 서두르지 않는다.*"
-    },
-    "morning3_seo_gate_cold_1": {
-        "name": "{name}",
-        "text": "*서연이 지나가다 잠깐 멈춘다.*"
-    },
-    "morning3_seo_gate_cold_2": {
-        "name": "서연",
-        "text": "...전학생. 아직 다니고 있었구나."
-    },
-    "morning3_seo_gate_cold_3": {
-        "name": "{name}",
-        "text": "*톤이 사무적이다. 교문을 지나가는 서연의 뒷모습이 멀어진다.*"
-    },
-    "morning3_yuna_gate_1": {
-        "name": "{name}",
-        "text": "*교문 앞에서 멍하니 서 있는 유나를 발견한다. 눈이 반쯤 감겨 있다.*"
-    },
-    "morning3_yuna_gate_warm_1": {
-        "name": "{name}",
-        "text": "*교문 벽에 기대어 서 있던 유나가 쪽지를 건넨다.*"
-    },
-    "morning3_yuna_gate_warm_2": {
-        "name": "유나",
-        "text": "...같이 가도 돼?"
-    },
-    "morning3_yuna_gate_warm_3": {
-        "name": "{name}",
-        "text": "*쪽지를 꺼냈다. '기다렸어.'*"
-    },
-    "morning3_yuna_gate_warm_4": {
-        "name": "{name}",
-        "text": "*유나와 나란히 걷는다. 아무 말이 없다. — 이 침묵이 편하다.*"
-    },
-    "morning3_yuna_gate_2": {
-        "name": "{name}",
-        "text": "유나? 너도 지각이야?"
-    },
-    "morning3_yuna_gate_3": {
-        "name": "유나",
-        "text": "...어제 밤새 책 읽느라."
-    },
-    "morning3_yuna_gate_4": {
-        "name": "{name}",
-        "text": "밤새?"
-    },
-    "morning3_yuna_gate_5": {
-        "name": "유나",
-        "text": "...결말이 궁금했어. 멈출 수가 없었어."
-    },
-    "morning3_yuna_gate_6": {
-        "name": "{name}",
-        "text": "*밤새 책 읽고 지각하는 사람. — 유나답다. 그게 좋다. 유나가 말 없이 가방을 뒤적이더니, 작은 빵을 꺼내 반으로 갈라 내밀었다. 가방 안쪽에서 쪽지가 살짝 보인다.*"
-    },
-    "morning3_yuna_gate_6_b": {
-        "name": "{name}",
-        "text": "*쪽지: 아침 안 먹었을 것 같아서. 말로 하면 될 걸 굳이 쪽지로 쓰는 사람. — 그게 유나다.*"
-    },
-    "morning3_yuna_gate_7": {
-        "name": "{name}",
-        "text": "*유나가 가방에서 작은 빵을 꺼낸다. 둘이 나눠 먹으며 천천히 교문을 통과한다.*"
-    },
-    "morning3_yuna_gate_cold_1": {
-        "name": "{name}",
-        "text": "*유나가 먼저 지나간다. 눈이 마주쳤지만, 고개를 돌린다.*"
-    },
-    "morning3_yuna_gate_cold_2": {
-        "name": "{name}",
-        "text": "*유나의 발걸음이 빨라진다. — 벽이 다시 올라간 느낌이다.*"
-    },
-    "morning3_dain_gate_1": {
-        "name": "{name}",
-        "text": "*교문 근처에서 다인이 전력 질주로 달려온다.*"
-    },
-    "morning3_dain_gate_warm_1": {
-        "name": "{name}",
-        "text": "*다인이 달려오며 팔짱을 낀다.*"
-    },
-    "morning3_dain_gate_warm_2": {
-        "name": "다인",
-        "text": "야! 늦을 뻔했잖아! 같이 가자!"
-    },
-    "morning3_dain_gate_warm_3": {
-        "name": "{name}",
-        "text": "*다인의 팔이 내 팔에 감겨 있다. 힘이 세다. — 뿌리칠 수도 없고, 뿌리치고 싶지도 않다.*"
-    },
-    "morning3_dain_gate_2": {
-        "name": "다인",
-        "text": "야야야!! 늦었다!! 뛰어!!"
-    },
-    "morning3_dain_gate_3": {
-        "name": "{name}",
-        "text": "*다인이 다짜고짜 손을 잡고 달리기 시작한다.*"
-    },
-    "morning3_dain_gate_4": {
-        "name": "{name}",
-        "text": "잠깐 — 왜 손을 잡아?!"
-    },
-    "morning3_dain_gate_4_b": {
-        "name": "다인",
-        "text": "이렇게 해야 빨라!! 의문 품지 마!!"
-    },
-    "morning3_dain_gate_5": {
-        "name": "{name}",
-        "text": "*손이 뜨겁다. 땀 때문인지, 다인이 잡은 데만 유독 뜨거운 건지. 달리느라 생각할 틈도 없다.*"
-    },
-    "morning3_dain_gate_5_b": {
-        "name": "{name}",
-        "text": "*교문을 넘어가는 순간 다인이 착지하면서 읏 하고 작게 소리를 냈다. 근데 돌아보면 아무렇지 않게 웃고 있다. — 잘못 들은 건가.*"
-    },
-    "morning3_dain_gate_cold_1": {
-        "name": "{name}",
-        "text": "*다인이 다른 친구들과 뛰어간다.*"
-    },
-    "morning3_dain_gate_cold_2": {
-        "name": "다인",
-        "text": "어, 안녕!"
-    },
-    "morning3_classroom_1": {
-        "name": "{name}",
-        "text": "*교실에 들어서자, 동행을 목격한 나머지 두 사람의 시선이 느껴진다.*"
-    },
-    "morning3_react_seo_1": {
-        "name": "다인",
-        "text": "야! 회장님이랑 같이 왔어?! 아침부터?!"
-    },
-    "morning3_react_seo_2": {
-        "name": "{name}",
-        "text": "*유나가 창밖에서 시선을 돌려 잠깐 이쪽을 본다. — 다시 창밖으로.*"
-    },
-    "morning3_react_yuna_1": {
-        "name": "서연",
-        "text": "같이 등교? 사이 좋네."
-    },
-    "morning3_react_yuna_1_b": {
-        "name": "{name}",
-        "text": "*다인이 대놓고. 교실로 돌아왔다.*"
-    },
-    "morning3_react_yuna_2": {
-        "name": "다인",
-        "text": "부러워!! 나도 아침에 같이 올 사람 없는데!!"
-    },
-    "morning3_react_yuna_2_b": {
-        "name": "{name}",
-        "text": "*서연이 교실 문 앞에서 자연스럽게.*"
-    },
-    "morning3_react_dain_1": {
-        "name": "서연",
-        "text": "아침부터 체력 소모가 심하네. 점심에 도시락 줄까?"
-    },
-    "morning3_react_dain_2": {
-        "name": "{name}",
-        "text": "*유나가 조용히 관찰하고 있다. 쪽지를 쓰는 것 같다.*"
-    },
-    "morning3_date_intro": {
-        "name": "{name}",
-        "text": "*1교시가 끝나고 쉬는 시간. — 한 번에 몰아치듯 오진 않는다. 근데 오늘은, 누군가가 계속 타이밍을 맞춰 말을 건다.*"
-    },
-    "morning3_date_intro_b": {
-        "name": "{name}",
-        "text": "*쉬는 시간, 복도로 나왔다. 서연이 먼저 걸음을 맞춘다.*"
-    },
-    "hidden_homeroom_d3_1": {
-        "name": "{name}",
-        "text": "*쉬는 시간. 빈 교실 앞을 지나가는데 — 안에서 인기척이 난다. 조용히 다가간다. 담임선생님이 교탁에 앉아 뭔가를 쓰고 있다. 펜을 멈추고 고개를 든다. — 나와 눈이 마주친다.*"
-    },
-    "hidden_homeroom_d3_3": {
-        "name": "담임선생님",
-        "text": "......"
-    },
-    "hidden_homeroom_d3_3_b": {
-        "name": "{name}",
-        "text": "*얼어붙는다. — 담임의 표정이 처음 보는 거다. 들킨 사람의 얼굴. 담임이 재빨리 원고지를 뒤집어 놓는다.*"
-    },
-    "hidden_homeroom_d3_4": {
-        "name": "담임선생님",
-        "text": "...아무것도 아니야. 업무 서류야. — ...눈치 빠른 건 장점인데, 가끔 단점이야."
-    },
-    "hidden_homeroom_d3_4_b": {
-        "name": "{name}",
-        "text": "*담임의 손이 원고지 위에 멈춰 있다. 뒤집어 놓은 종이 사이로 글씨가 빼곡한 게 보인다. 업무 서류라고 했지만 — 교사용 서류는 A4에 인쇄한다. 원고지에 손글씨로 쓰지 않는다.*"
-    },
-    "hidden_homeroom_d3_4_c": {
-        "name": "{name}",
-        "text": "*담임의 표정이 금방 돌아온다. 평소의 무심한 얼굴. — 스위치 전환이 너무 빠르다.*"
-    },
-    "hidden_homeroom_d3_4_d": {
-        "name": "담임선생님",
-        "text": "...뭘 봐. 쉬는 시간에 여길 왜 와."
-    },
-    "hidden_homeroom_d3_4_e": {
-        "name": "{name}",
-        "text": "*원고지. 빼곡한 글씨. 숨기려는 표정. — 물어볼까, 모른 척할까.*"
-    },
-    "hidden_homeroom_d3_choice": {
-        "name": "{name}",
-        "text": "*원고지다. 들킨 사람의 얼굴을 하고 있다.*",
-        "choices": [
-            "원고지인 거 봤어요. — 소설 쓰시는 거예요?",
-            "죄송합니다, 안 봤어요."
-        ]
-    },
-    "hidden_homeroom_d3_reveal_1": {
-        "name": "담임선생님",
-        "text": "...소설이라고 하기엔 부끄럽고. 습작이라고 하기엔 너무 오래 됐고. 7년."
-    },
-    "hidden_homeroom_d3_reveal_1_b": {
-        "name": "{name}",
-        "text": "얼마나요?"
-    },
-    "hidden_homeroom_d3_reveal_1_c": {
-        "name": "담임선생님",
-        "text": "7년. *창밖을 보며* 대학 때 시작했어. 문예창작과."
-    },
-    "hidden_homeroom_d3_reveal_1_d": {
-        "name": "{name}",
-        "text": "선생님이 문예창작과요?"
-    },
-    "hidden_homeroom_d3_reveal_1_e": {
-        "name": "담임선생님",
-        "text": "졸업하고 등단 준비했는데 — 2년 동안 떨어졌어. 세 번. 생활비는 바닥나고, 부모님은 '이제 현실적으로 생각해'라고 하시고."
-    },
-    "hidden_homeroom_d3_reveal_1_f": {
-        "name": "{name}",
-        "text": "*담임이 원고지를 한 장 들어올린다. 글씨가 빼곡하다.*"
-    },
-    "hidden_homeroom_d3_reveal_2": {
-        "name": "담임선생님",
-        "text": "네 번째 원고를 넣고 나서 — 결과 발표 날, 전화가 안 와서. 그날 교대 원서를 썼어."
-    },
-    "hidden_homeroom_d3_reveal_2_b": {
-        "name": "담임선생님",
-        "text": "...아무것도 아니야. 업무 서류야."
-    },
-    "hidden_homeroom_d3_reveal_2_c": {
-        "name": "{name}",
-        "text": "업무 서류를 빈 교실에서요?"
-    },
-    "hidden_homeroom_d3_reveal_2_d": {
-        "name": "{name}",
-        "text": "*담임이 잠깐 입을 다문다. 그리고 — 한숨을 쉰다. 짧게.*"
-    },
-    "hidden_homeroom_d3_reveal_2_e": {
-        "name": "담임선생님",
-        "text": "*한숨을 쉬며* ...보고 싶은 것만 볼 수 있으면 편할 텐데."
-    },
-    "hidden_homeroom_d3_reveal_2_f": {
-        "name": "{name}",
-        "text": "*담임이 잠깐 멈춘다. 원고지를 만지작거린다. — 그리고 의자에 기대앉는다.*"
-    },
-    "hidden_homeroom_d3_reveal_3": {
-        "name": "담임선생님",
-        "text": "임용시험 봤어. 국어 교사. — 소설 쓰던 사람이 국어를 가르치고 있으니, 아이러니하지?"
-    },
-    "hidden_homeroom_d3_reveal_3_b": {
-        "name": "{name}",
-        "text": "포기한 거예요?"
-    },
-    "hidden_homeroom_d3_reveal_3_c": {
-        "name": "{name}",
-        "text": "*담임이 원고지를 내려놓는다. 천천히.*"
-    },
-    "hidden_homeroom_d3_reveal_4": {
-        "name": "담임선생님",
-        "text": "포기라고 하면 편하겠지. 근데 가끔 이렇게 빈 교실에서 꺼내 보는 걸 보면 — 포기를 못 한 거겠지."
-    },
-    "hidden_homeroom_d3_reveal_4_b": {
-        "name": "{name}",
-        "text": "*이 사람의 건조함 뒤에 이런 이야기가 있었구나. — 교탁 서랍의 미완성 원고. 7년 동안.*"
-    },
-    "hidden_homeroom_d3_reveal_4_c": {
-        "name": "담임선생님",
-        "text": "*갑자기 정색하며* ...이거 아무한테도 말하면 안 돼. 학생이 선생님의 — 이런 모습 알면 권위가 — 뭐 원래 없지만."
-    },
-    "hidden_homeroom_d3_reveal_4_d": {
-        "name": "{name}",
-        "text": "비밀이요?"
-    },
-    "hidden_homeroom_d3_reveal_4_e": {
-        "name": "담임선생님",
-        "text": "*머리카락을 넘기며* 비밀이야. — 교육적으로 좋은 본보기는 아니니까. 학생한테 이런 얘기까지 하면."
-    },
-    "hidden_homeroom_d3_reveal_4_f": {
-        "name": "{name}",
-        "text": "*'교육적으로'. — 또 업무로 포장하고 있다. 근데 이번에는 진심으로 후회하는 톤이다.*"
-    },
-    "hidden_homeroom_d3_reveal_4_g": {
-        "name": "{name}",
-        "text": "저는 읽어보고 싶은데요. 그 소설."
-    },
-    "hidden_homeroom_d3_reveal_choice": {
-        "name": "{name}",
-        "text": "*7년. 교탁 위의 원고지가 닳아 있다.*",
-        "choices": [
-            "7년이면 포기가 아니라 끈기 아니에요?",
-            "왜 꼭 여기서 쓰세요?"
-        ]
-    },
-    "hidden_homeroom_d3_reveal_choice_a": {
-        "name": "담임선생님",
-        "text": "*멈칫한다. 원고지를 만지던 손이 멈춘다.* ...끈기라고 해줄 사람은 처음이야."
-    },
-    "hidden_homeroom_d3_reveal_choice_b": {
-        "name": "담임선생님",
-        "text": "...교실이 제일 조용하거든. 아이러니하게."
-    },
-    "hidden_homeroom_d3_reveal_5": {
-        "name": "담임선생님",
-        "text": "*시선을 돌리며* ...근데 진짜 비밀이다. 다른 선생님들도 모르거든."
-    },
-    "hidden_homeroom_d3_reveal_6": {
-        "name": "{name}",
-        "text": "*담임이 웃는다. 건조하지 않은, 살짝 어색한 웃음. 웃는 법을 까먹은 사람처럼.*"
-    },
-    "hidden_homeroom_d3_reveal_6_b": {
-        "name": "담임선생님",
-        "text": "...그럼 네가 처음 읽는 사람이네. 7년 만에."
-    },
-    "hidden_homeroom_d3_reveal_6_c": {
-        "name": "{name}",
-        "text": "*웃음이 어색하다. — 그 어색함이 마음을 찔렀다.*"
-    },
-    "hidden_homeroom_d3_reveal_6_d": {
-        "name": "담임선생님",
-        "text": "*작게 웃으며* ...네가 있어서 다행이다. 진심으로."
-    },
-    "hidden_homeroom_d3_reveal_6_e": {
-        "name": "{name}",
-        "text": "*이 사람은 7년을 '포기 못 한 거'라고 했다. 근데 관점을 바꿔주는 한마디에 — 눈이 흔들렸다.*"
-    },
-    "hidden_homeroom_d3_reveal_6_f": {
-        "name": "담임선생님",
-        "text": "조용하니까. — 교무실은 커피 냄새도 많고, 다른 선생들 눈치도 보이고."
-    },
-    "hidden_homeroom_d3_reveal_6_g": {
-        "name": "{name}",
-        "text": "*빈 교실을 고른 이유가 실용적이면서도 — 혼자만의 공간이 필요한 사람이라는 뜻이기도 하다. 선생님이라는 직함 뒤에 숨겨진 서랍을 열어버린 기분이다. 닫아야 하는데 — 손이 떨어지지 않는다.*"
-    },
-    "hidden_homeroom_d3_hide_1": {
-        "name": "담임선생님",
-        "text": "...그래, 안 본 걸로 해줘. 부탁이야. — ...고마워."
-    },
-    "hidden_homeroom_d3_end": {
-        "name": "{name}",
-        "text": "*담임이 머리카락을 넘기며 교실을 나선다. — 이 사람한테 '부탁'은 드문 단어다.*"
-    },
-    "hidden_homeroom_d3_freetalk": {
-        "name": "담임선생님",
-        "text": "*담임선생님과 빈 교실에서 대화 중.*",
-        "context": "Day 3 아침. 빈 교실에서 담임선생님이 소설 원고를 쓰고 있는 걸 발견했다. 7년간 숨겨온 비밀. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
-        "personality": "담임선생님은 소설가 지망생이었다. 교사가 되었지만 포기하지 못한 꿈. 들킨 것에 대한 부끄러움과 안도가 공존."
-    },
-    "hidden_nurse_d3_check": {
-        "name": "{name}",
-        "text": "*쉬는 시간이 끝나간다.*"
-    },
-    "hidden_nurse_d3_1": {
-        "name": "{name}",
-        "text": "*아침부터 뭔가 불안하다. 발이 보건실로 향한다. 아프지 않은데. 보건실 문을 연다.*"
-    },
-    "hidden_nurse_d3_1_b": {
-        "name": "보건선생님",
-        "text": "*고개를 들며* ...어? 오늘은 어디 다쳤어?"
-    },
-    "hidden_nurse_d3_1_c": {
-        "name": "{name}",
-        "text": "아프진 않은데요."
-    },
-    "hidden_nurse_d3_1_d": {
-        "name": "보건선생님",
-        "text": "아프지 않은데 보건실에?"
-    },
-    "hidden_nurse_d3_1_e": {
-        "name": "{name}",
-        "text": "...좀 쉬고 싶어서요."
-    },
-    "hidden_nurse_d3_2": {
-        "name": "보건선생님",
-        "text": "...그럼 왜 왔어? 표정이 안 좋은데."
-    },
-    "hidden_nurse_d3_2_b": {
-        "name": "{name}",
-        "text": "*담임이 '부탁'이라는 말을 쓴다. — 이 사람한테 그건 드문 단어다.*"
-    },
-    "hidden_nurse_d3_2_c": {
-        "name": "{name}",
-        "text": "*교실을 나서는데 — 뒤에서 작게.*"
-    },
-    "hidden_nurse_d3_2_d": {
-        "name": "담임선생님",
-        "text": "...고마워."
-    },
-    "hidden_nurse_d3_2_e": {
-        "name": "{name}",
-        "text": "*뭐가 고마운 건지는 모르겠다. 안 봐줘서? 아니면 — 여기까지 와줘서? 점심시간 직전. — 아침 내내 마음이 가라앉지 않는다. 너무 많은 얼굴을 보고, 너무 많은 말을 들은 탓일까. 뭐가 이렇게 빨리 흔들리는 건지 모르겠다.*"
-    },
-    "hidden_nurse_d3_3": {
-        "name": "{name}",
-        "text": "...좀 쉬고 싶어서요. 그냥... 사람 관계가 복잡해져서."
-    },
-    "hidden_nurse_d3_3_b": {
-        "name": "{name}",
-        "text": "*보건선생님이 잠깐 나를 본다. 장난기가 사라진다.*"
-    },
-    "hidden_nurse_d3_3_c": {
-        "name": "보건선생님",
-        "text": "...앉아."
-    },
-    "hidden_nurse_d3_3_d": {
-        "name": "{name}",
-        "text": "*목소리가 달라졌다. 장난이 아닌 톤. — 이 사람이 진지해지면 분위기가 확 바뀐다. 침대에 앉는다. 보건선생님이 물을 건넨다.*"
-    },
-    "hidden_nurse_d3_4": {
-        "name": "보건선생님",
-        "text": "*커튼을 치며* ...앉아. 여기선 좀 편하게 있어도 돼 물컵을 건네며* ...천천히 말해도 돼*"
-    },
-    "hidden_nurse_d3_5_b": {
-        "name": "{name}",
-        "text": "*보건선생님이 잠깐 멈춘다. — 눈이 부드러워진다.*"
-    },
-    "hidden_nurse_d3_5_c": {
-        "name": "보건선생님",
-        "text": "...비슷해? 그럼 여기 온 거 잘한 거다."
-    },
-    "hidden_nurse_d3_5_d": {
-        "name": "{name}",
-        "text": "*'비슷하다'는 한마디에 태도가 달라졌다. — 공감을 받으면 열리는 사람이구나.*"
-    },
-    "hidden_nurse_d3_5_e": {
-        "name": "{name}",
-        "text": "...누구한테 말하기 애매한 것들이요."
-    },
-    "hidden_nurse_d3_5_f": {
-        "name": "보건선생님",
-        "text": "*의자를 끌어와 앞에 앉으며* 사람 관계."
-    },
-    "hidden_nurse_d3_5_g": {
-        "name": "{name}",
-        "text": "여러 명이 동시에 신경 쓰이는데, 한 명만 선택해야 할 것 같은..."
-    },
-    "hidden_nurse_d3_5_h": {
-        "name": "{name}",
-        "text": "*보건선생님이 잠깐 침묵한다. 그리고.*"
-    },
-    "hidden_nurse_d3_5_i": {
-        "name": "보건선생님",
-        "text": "그거 연애 상담이야?"
-    },
-    "hidden_nurse_d3_5_j": {
-        "name": "{name}",
-        "text": "아, 그런 건 아니..."
-    },
-    "hidden_nurse_d3_5_k": {
-        "name": "보건선생님",
-        "text": "*피식* 아닌 척하는 게 제일 티 나는 거야."
-    },
-    "hidden_nurse_d3_5_l": {
-        "name": "{name}",
-        "text": "*정곡이다.*"
-    },
-    "hidden_nurse_d3_5_m": {
-        "name": "보건선생님",
-        "text": "선생님이 이런 상담까지 해줘야 하나... *턱을 괴며* 근데 들어줄게. 보건실이니까. 몸뿐만 아니라 마음도 건강해야 하잖아?"
-    },
-    "hidden_nurse_d3_5_n": {
-        "name": "{name}",
-        "text": "선생님도 그런 적 있어요? 여러 사람 사이에서 혼란스러운."
-    },
-    "hidden_nurse_d3_5_o": {
-        "name": "{name}",
-        "text": "*보건선생님이 잠깐 멈춘다. 시선이 창밖으로 간다.*"
-    },
-    "hidden_nurse_d3_5_p": {
-        "name": "보건선생님",
-        "text": "...있었지. 대학병원에서 일할 때."
-    },
-    "hidden_nurse_d3_5_q": {
-        "name": "{name}",
-        "text": "대학병원이요?"
-    },
-    "hidden_nurse_d3_choice1": {
-        "name": "{name}",
-        "text": "*...맞는 말이긴 하다.*",
-        "choices": [
-            "비슷한 것 같기도...",
-            "아뇨, 그냥 좀 복잡해서요"
-        ]
-    },
-    "hidden_nurse_d3_choice1_a": {
-        "name": "보건선생님",
-        "text": "...비슷해? 그럼 여기 온 거 잘한 거다."
-    },
-    "hidden_nurse_d3_choice1_b": {
-        "name": "보건선생님",
-        "text": "*고개를 살짝 기울이며* ...그래. 복잡하면 복잡한 대로, 여기서 좀 쉬어."
-    },
-    "hidden_nurse_d3_6": {
-        "name": "보건선생님",
-        "text": "대학병원에서 일할 때. 환자가 너무 많았어. 다 살리고 싶은데, 손이 두 개밖에 없잖아. 결국 한 명도 제대로 못 챙기는 기분이 들더라."
-    },
-    "hidden_nurse_d3_6_b": {
-        "name": "{name}",
-        "text": "*환자 이야기를 하는데, 왠지 지금 내 상황이랑 겹친다. 보건선생님이 물컵을 내려놓는다. 천천히.*"
-    },
-    "hidden_nurse_d3_6_c": {
-        "name": "보건선생님",
-        "text": "...그만뒀다기보다. 도망쳤지. *살짝 웃으며* 멋있는 이유 같은 건 없어."
-    },
-    "hidden_nurse_d3_6_d": {
-        "name": "{name}",
-        "text": "*'도망'이라는 단어를 스스로 쓴다. — 연두색 노트가 떠오른다. 그 편지들이 전부 유진에게 쓴 거였구나. 보건선생님이 잠깐 멈춘다. 청진기를 만진다.*"
-    },
-    "hidden_nurse_d3_6_e": {
-        "name": "보건선생님",
-        "text": "...있었지. 못 살린 환자 한 명. *시선이 멀어진다.* 유진이라는 아이. 열일곱 살이었어. 그 애 때문에 여기 온 거야."
-    },
-    "hidden_nurse_d3_6_f": {
-        "name": "{name}",
-        "text": "*유진. — 어제 노트에서 본 이름이다. 그 편지의 수신인.*"
-    },
-    "hidden_nurse_d3_7": {
-        "name": "보건선생님",
-        "text": "그래서 여기 왔어. 학교에서는 — 한 명 한 명 제대로 볼 수 있으니까."
-    },
-    "hidden_nurse_d3_7_b": {
-        "name": "{name}",
-        "text": "*보건선생님이 나를 본다. 진지하게.*"
-    },
-    "hidden_nurse_d3_8": {
-        "name": "보건선생님",
-        "text": "너도 마찬가지야. 다 챙기려고 하지 마. — 진짜 중요한 사람 한 명을 제대로 보는 게 낫지 않겠어?"
-    },
-    "hidden_nurse_d3_8_b": {
-        "name": "{name}",
-        "text": "*장난기가 완전히 사라졌다.*"
-    },
-    "hidden_nurse_d3_8_c": {
-        "name": "{name}",
-        "text": "...감사합니다."
-    },
-    "hidden_nurse_d3_8_d": {
-        "name": "보건선생님",
-        "text": "*다시 장난스럽게* 뭘. 이 정도는 서비스지. 다음엔 안 아파도 들러."
-    },
-    "hidden_nurse_d3_8_e": {
-        "name": "{name}",
-        "text": "*'아프든 안 아프든'. — 이 사람이 나를 환자가 아닌 다른 뭔가로 보기 시작한 건 아닐까. 보건실을 나서는데 — 뒤에서 작게.*"
-    },
-    "hidden_nurse_d3_choice2": {
-        "name": "{name}",
-        "text": "*한 명을 제대로 — 대학병원 얘기만은 아닌 것 같다.*",
-        "choices": [
-            "그래서 병원 그만두신 거예요?",
-            "선생님도 그 한 명이 있어요?"
-        ]
-    },
-    "hidden_nurse_d3_choice2_a": {
-        "name": "보건선생님",
-        "text": "...그만뒀다기보다. 도망쳤지."
-    },
-    "hidden_nurse_d3_choice2_b": {
-        "name": "보건선생님",
-        "text": "...있었지. 못 살린 환자 한 명."
-    },
-    "hidden_nurse_d3_9": {
-        "name": "보건선생님",
-        "text": "...진짜 중요한 사람. 혹시 그게 선생님이면 어쩌지?"
-    },
-    "hidden_nurse_d3_9_b": {
-        "name": "{name}",
-        "text": "*...뭐? — 발이 멈췄다. 소독약 냄새만 공기 중에 무겁게 가라앉았다. 천천히 돌아봤다.*"
-    },
-    "hidden_nurse_d3_9_c": {
-        "name": "{name}",
-        "text": "*보건선생님이 — 웃고 있지 않다. 청진기를 만지작거리며 창밖을 보고 있다. 방금 자기가 한 말을 자기도 몰랐던 사람처럼. 0.7초.*"
-    },
-    "hidden_nurse_d3_9_d": {
-        "name": "보건선생님",
-        "text": "*겨우 웃으며* 농담이야. 가 봐."
-    },
-    "hidden_nurse_d3_9_e": {
-        "name": "{name}",
-        "text": "*농담. — 맞겠지? 맞겠지, 라고 생각하면서도 발이 안 떼진다. 방금 그 0.7초짜리 표정이 — 장난기가 없었다.*"
-    },
-    "hidden_nurse_d3_9_f": {
-        "name": "{name}",
-        "text": "*소독약 냄새가 갑자기 짙어졌다. 여기서 한 발짝 더 가면 — 이 사람을 더 이상 '선생님'으로 부를 수 없을 것 같다. ...뭐? — 돌아봤다. 보건선생님이 창밖을 보고 있다. 웃고 있지 않다. 처음 보는 표정이다.*"
-    },
-    "hidden_nurse_d3_11": {
-        "name": "보건선생님",
-        "text": "...농담이야. 가 봐."
-    },
-    "hidden_nurse_d3_freetalk": {
-        "name": "보건선생님",
-        "text": "*보건선생님과 보건실에서 대화 중.*",
-        "context": "Day 3. 불안한 마음에 보건실을 찾았다. 보건선생님이 진지하게 상담해줬다. 대학병원 번아웃 이야기. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
-        "personality": "보건선생님은 평소 장난스럽지만 진지해지면 분위기가 완전히 달라진다. 번아웃 경험을 가진 전문가. 감정과 직함 사이에서 흔들린다."
-    },
-    "morning3_date_seo_1": {
-        "name": "서연",
-        "text": "이번 주말에 시간 있어? 갈 데가 있는데."
-    },
-    "morning3_date_seo_choice": {
-        "name": "{name}",
-        "text": "*서연이 복도에서 스치며 물어본다.*",
-        "choices": [
-            "있어. 어디?",
-            "좀 바쁠 것 같은데"
-        ]
-    },
-    "morning3_date_seo_accept": {
-        "name": "{name}",
-        "text": "*서연 주말 약속을 수락했다.*"
-    },
-    "morning3_date_seo_accept_b": {
-        "name": "{name}",
-        "text": "*교실로 돌아왔다. 수업 하나가 지나고, 또 쉬는 시간이 온다.*"
-    },
-    "morning3_date_seo_decline": {
-        "name": "{name}",
-        "text": "*서연의 제안을 거절했다.*"
-    },
-    "morning3_date_seo_decline_b": {
-        "name": "{name}",
-        "text": "*교실로 돌아왔다. 수업 하나가 지나고, 또 쉬는 시간이 온다.*"
-    },
-    "morning3_date_dain_1": {
-        "name": "다인",
-        "text": "야! 주말에 뭐 해?! 같이 오락실 갈래?!"
-    },
-    "morning3_date_dain_2": {
-        "name": "{name}",
-        "text": "*다인의 손가락이 책상 모서리를 두드리고 있다. 긴장하는 건가? — 아니다. 다인이 긴장할 리 없다. 이 정도는 일상이겠지. ...맞겠지?*"
-    },
-    "morning3_date_dain_choice": {
-        "name": "{name}",
-        "text": "*다인이 다음 쉬는 시간에 자리로 와서 물어본다.*",
-        "choices": [
-            "좋아, 콜",
-            "주말은 좀..."
-        ]
-    },
-    "morning3_date_dain_accept": {
-        "name": "{name}",
-        "text": "*다인 주말 약속을 수락했다.*"
-    },
-    "morning3_date_dain_decline": {
-        "name": "다인",
-        "text": "아 그래? 뭐 바쁘면 어쩔 수 없지!"
-    },
-    "morning3_date_dain_decline_narr": {
-        "name": "{name}",
-        "text": "*다인의 반응을 지켜본다. — 종이 치고, 점심 직전의 짧은 틈이 다시 온다. 밝게 웃으며 돌아갔다. — 그때는 몰랐다. 다인이 그 손가락 두드리는 걸 멈추고, 주머니에 손을 넣은 걸. 용기 내서 물어본 거였다는 걸.*"
-    },
-    "morning3_date_dain_decline_inner_2": {
-        "name": "{name}",
-        "text": "*눈치 빠르다고 자부하면서. — 정작 중요한 순간에 틀린다.*"
-    },
-    "morning3_date_yuna_1": {
-        "name": "{name}",
-        "text": "*점심 직전, 유나의 쪽지가 책상 위에 놓여 있다.*"
-    },
-    "morning3_date_yuna_1_b": {
-        "name": "서연",
-        "text": "오늘 도시락은 계란말이네."
-    },
-    "morning3_date_yuna_2": {
-        "name": "{name}",
-        "text": "*'주말. 헌책방 가는데. 올 거면 와. — 유나'*"
-    },
-    "morning3_date_yuna_choice": {
-        "name": "{name}",
-        "text": "*유나의 쪽지를 읽고...*",
-        "choices": [
-            "고개를 끄덕여 보인다",
-            "작게 고개를 젓는다"
-        ]
-    },
-    "morning3_date_yuna_accept": {
-        "name": "{name}",
-        "text": "*유나 주말 약속을 수락했다.*"
-    },
-    "morning3_date_yuna_decline": {
-        "name": "{name}",
-        "text": "*쪽지를 조용히 접어 주머니에 넣었다. 답장은 쓰지 않았다. — 유나가 고개를 살짝 숙인다. 알겠다는 뜻인 것 같다.*"
-    },
-    "morning3_check_multiple": {},
-    "morning3_multi_from_seo": {},
-    "morning3_multi_from_dain": {},
-    "morning3_set_multiple": {
-        "name": "{name}",
-        "text": "*...잠깐. 주말 약속이 겹치는데. 이거 어떡하지.*"
-    },
-    "morning3_multi_from_yuna": {},
-    "morning3_end": {
-        "name": "{name}",
-        "text": "*어느덧 수업이 이어지고 점심시간이 다가온다.*"
-    },
-    "morning3_end_b": {
-        "name": "유나",
-        "text": "...맛있네."
-    }
+  "morning3_start": {
+    "name": "{name}",
+    "text": "*셋째 날. 늦잠을 잤다. 알람을 세 번이나 꺼버렸다. 어젯밤 늦게까지 메시지 보느라 늦게 잔 탓이다.*"
+  },
+  "morning3_start_2": {
+    "name": "{name}",
+    "text": "*전력 질주로 등굣길을 달린다. — 교문이 보인다. 그리고.*"
+  },
+  "morning3_gate_branch": {},
+  "morning3_seo_gate_1": {
+    "name": "{name}",
+    "text": "*교문 앞에 서연이 서 있다. 서두르는 기색 없이.*"
+  },
+  "morning3_seo_gate_warm_1": {
+    "name": "{name}",
+    "text": "*서연이 평소와 다르게 교문 앞에서 기다리고 있다.*"
+  },
+  "morning3_seo_gate_warm_2": {
+    "name": "서연",
+    "text": "...일찍 온 거 아니야. 학생회 일이 있어서."
+  },
+  "morning3_seo_gate_warm_3": {
+    "name": "{name}",
+    "text": "*손에 아무것도 없다. 서류도, 클립보드도.*"
+  },
+  "morning3_seo_gate_warm_4": {
+    "name": "{name}",
+    "text": "*서연이 아무 말 없이 나란히 걷기 시작한다. — 교문에서 교실까지, 이 거리가 이렇게 짧았나.*"
+  },
+  "morning3_seo_gate_2": {
+    "name": "서연",
+    "text": "늦었네."
+  },
+  "morning3_seo_gate_3": {
+    "name": "{name}",
+    "text": "...서연? 왜 여기서?"
+  },
+  "morning3_seo_gate_4": {
+    "name": "서연",
+    "text": "지각이면 어때. 같이 걸리면 덜 혼나지 않을까?"
+  },
+  "morning3_seo_gate_5": {
+    "name": "{name}",
+    "text": "그건 아닌 것 같은데."
+  },
+  "morning3_seo_gate_6": {
+    "name": "서연",
+    "text": "...농담이야. 내가 어떻게든 해줄게."
+  },
+  "morning3_seo_gate_6_b": {
+    "name": "{name}",
+    "text": "*서연이 걸어간다. 당당하게. 늦었는데도 서두르지 않는다.*"
+  },
+  "morning3_seo_gate_7": {
+    "name": "{name}",
+    "text": "*서연이 걸어간다. 당당하게. 늦었는데도 서두르지 않는다.*"
+  },
+  "morning3_seo_gate_cold_1": {
+    "name": "{name}",
+    "text": "*서연이 지나가다 잠깐 멈춘다.*"
+  },
+  "morning3_seo_gate_cold_2": {
+    "name": "서연",
+    "text": "...전학생. 아직 다니고 있었구나."
+  },
+  "morning3_seo_gate_cold_3": {
+    "name": "{name}",
+    "text": "*톤이 사무적이다. 교문을 지나가는 서연의 뒷모습이 멀어진다.*"
+  },
+  "morning3_yuna_gate_1": {
+    "name": "{name}",
+    "text": "*교문 앞에서 멍하니 서 있는 유나를 발견한다. 눈이 반쯤 감겨 있다.*"
+  },
+  "morning3_yuna_gate_warm_1": {
+    "name": "{name}",
+    "text": "*교문 벽에 기대어 서 있던 유나가 쪽지를 건넨다.*"
+  },
+  "morning3_yuna_gate_warm_2": {
+    "name": "유나",
+    "text": "...같이 가도 돼?"
+  },
+  "morning3_yuna_gate_warm_3": {
+    "name": "{name}",
+    "text": "*쪽지를 꺼냈다. '기다렸어.'*"
+  },
+  "morning3_yuna_gate_warm_4": {
+    "name": "{name}",
+    "text": "*유나와 나란히 걷는다. 아무 말이 없다. — 이 침묵이 편하다.*"
+  },
+  "morning3_yuna_gate_2": {
+    "name": "{name}",
+    "text": "유나? 너도 지각이야?"
+  },
+  "morning3_yuna_gate_3": {
+    "name": "유나",
+    "text": "...어제 밤새 책 읽느라."
+  },
+  "morning3_yuna_gate_4": {
+    "name": "{name}",
+    "text": "밤새?"
+  },
+  "morning3_yuna_gate_5": {
+    "name": "유나",
+    "text": "...결말이 궁금했어. 멈출 수가 없었어."
+  },
+  "morning3_yuna_gate_6": {
+    "name": "{name}",
+    "text": "*밤새 책 읽고 지각하는 사람. — 유나답다. 그게 좋다. 유나가 말 없이 가방을 뒤적이더니, 작은 빵을 꺼내 반으로 갈라 내밀었다. 가방 안쪽에서 쪽지가 살짝 보인다.*"
+  },
+  "morning3_yuna_gate_6_b": {
+    "name": "{name}",
+    "text": "*쪽지: 아침 안 먹었을 것 같아서. 말로 하면 될 걸 굳이 쪽지로 쓰는 사람. — 그게 유나다.*"
+  },
+  "morning3_yuna_gate_7": {
+    "name": "{name}",
+    "text": "*유나가 가방에서 작은 빵을 꺼낸다. 둘이 나눠 먹으며 천천히 교문을 통과한다.*"
+  },
+  "morning3_yuna_gate_cold_1": {
+    "name": "{name}",
+    "text": "*유나가 먼저 지나간다. 눈이 마주쳤지만, 고개를 돌린다.*"
+  },
+  "morning3_yuna_gate_cold_2": {
+    "name": "{name}",
+    "text": "*유나의 발걸음이 빨라진다. — 벽이 다시 올라간 느낌이다.*"
+  },
+  "morning3_dain_gate_1": {
+    "name": "{name}",
+    "text": "*교문 근처에서 다인이 전력 질주로 달려온다.*"
+  },
+  "morning3_dain_gate_warm_1": {
+    "name": "{name}",
+    "text": "*다인이 달려오며 팔짱을 낀다.*"
+  },
+  "morning3_dain_gate_warm_2": {
+    "name": "다인",
+    "text": "야! 늦을 뻔했잖아! 같이 가자!"
+  },
+  "morning3_dain_gate_warm_3": {
+    "name": "{name}",
+    "text": "*다인의 팔이 내 팔에 감겨 있다. 힘이 세다. — 뿌리칠 수도 없고, 뿌리치고 싶지도 않다.*"
+  },
+  "morning3_dain_gate_2": {
+    "name": "다인",
+    "text": "야야야!! 늦었다!! 뛰어!!"
+  },
+  "morning3_dain_gate_3": {
+    "name": "{name}",
+    "text": "*다인이 다짜고짜 손을 잡고 달리기 시작한다.*"
+  },
+  "morning3_dain_gate_4": {
+    "name": "{name}",
+    "text": "잠깐 — 왜 손을 잡아?!"
+  },
+  "morning3_dain_gate_4_b": {
+    "name": "다인",
+    "text": "이렇게 해야 빨라!! 의문 품지 마!!"
+  },
+  "morning3_dain_gate_5": {
+    "name": "{name}",
+    "text": "*손이 뜨겁다. 땀 때문인지, 다인이 잡은 데만 유독 뜨거운 건지. 달리느라 생각할 틈도 없다.*"
+  },
+  "morning3_dain_gate_5_b": {
+    "name": "{name}",
+    "text": "*교문을 넘어가는 순간 다인이 착지하면서 읏 하고 작게 소리를 냈다. 근데 돌아보면 아무렇지 않게 웃고 있다. — 잘못 들은 건가.*"
+  },
+  "morning3_dain_gate_cold_1": {
+    "name": "{name}",
+    "text": "*다인이 다른 친구들과 뛰어간다.*"
+  },
+  "morning3_dain_gate_cold_2": {
+    "name": "다인",
+    "text": "어, 안녕!"
+  },
+  "morning3_classroom_1": {
+    "name": "{name}",
+    "text": "*교실에 들어서자, 동행을 목격한 나머지 두 사람의 시선이 느껴진다.*"
+  },
+  "morning3_react_seo_1": {
+    "name": "다인",
+    "text": "야! 회장님이랑 같이 왔어?! 아침부터?!"
+  },
+  "morning3_react_seo_2": {
+    "name": "{name}",
+    "text": "*유나가 창밖에서 시선을 돌려 잠깐 이쪽을 본다. — 다시 창밖으로.*"
+  },
+  "morning3_react_yuna_1": {
+    "name": "서연",
+    "text": "같이 등교? 사이 좋네."
+  },
+  "morning3_react_yuna_1_b": {
+    "name": "{name}",
+    "text": "*다인이 대놓고. 교실로 돌아왔다.*"
+  },
+  "morning3_react_yuna_2": {
+    "name": "다인",
+    "text": "부러워!! 나도 아침에 같이 올 사람 없는데!!"
+  },
+  "morning3_react_yuna_2_b": {
+    "name": "{name}",
+    "text": "*서연이 교실 문 앞에서 자연스럽게.*"
+  },
+  "morning3_react_dain_1": {
+    "name": "서연",
+    "text": "아침부터 체력 소모가 심하네. 점심에 도시락 줄까?"
+  },
+  "morning3_react_dain_2": {
+    "name": "{name}",
+    "text": "*유나가 조용히 관찰하고 있다. 쪽지를 쓰는 것 같다.*"
+  },
+  "morning3_date_intro": {
+    "name": "{name}",
+    "text": "*1교시가 끝나고 쉬는 시간. — 한 번에 몰아치듯 오진 않는다. 근데 오늘은, 누군가가 계속 타이밍을 맞춰 말을 건다.*"
+  },
+  "morning3_date_intro_b": {
+    "name": "{name}",
+    "text": "*쉬는 시간, 복도로 나왔다. 서연이 먼저 걸음을 맞춘다.*"
+  },
+  "hidden_homeroom_d3_1": {
+    "name": "{name}",
+    "text": "*쉬는 시간. 빈 교실 앞을 지나가는데 — 안에서 인기척이 난다. 조용히 다가간다. 담임선생님이 교탁에 앉아 뭔가를 쓰고 있다. 펜을 멈추고 고개를 든다. — 나와 눈이 마주친다.*"
+  },
+  "hidden_homeroom_d3_3": {
+    "name": "담임선생님",
+    "text": "......"
+  },
+  "hidden_homeroom_d3_3_b": {
+    "name": "{name}",
+    "text": "*얼어붙는다. — 담임의 표정이 처음 보는 거다. 들킨 사람의 얼굴. 담임이 재빨리 원고지를 뒤집어 놓는다.*"
+  },
+  "hidden_homeroom_d3_4": {
+    "name": "담임선생님",
+    "text": "...아무것도 아니야. 업무 서류야. — ...눈치 빠른 건 장점인데, 가끔 단점이야."
+  },
+  "hidden_homeroom_d3_4_b": {
+    "name": "{name}",
+    "text": "*담임의 손이 원고지 위에 멈춰 있다. 뒤집어 놓은 종이 사이로 글씨가 빼곡한 게 보인다. 업무 서류라고 했지만 — 교사용 서류는 A4에 인쇄한다. 원고지에 손글씨로 쓰지 않는다.*"
+  },
+  "hidden_homeroom_d3_4_c": {
+    "name": "{name}",
+    "text": "*담임의 표정이 금방 돌아온다. 평소의 무심한 얼굴. — 스위치 전환이 너무 빠르다.*"
+  },
+  "hidden_homeroom_d3_4_d": {
+    "name": "담임선생님",
+    "text": "...뭘 봐. 쉬는 시간에 여길 왜 와."
+  },
+  "hidden_homeroom_d3_4_e": {
+    "name": "{name}",
+    "text": "*원고지. 빼곡한 글씨. 숨기려는 표정. — 물어볼까, 모른 척할까.*"
+  },
+  "hidden_homeroom_d3_4_f": {
+    "name": "{name}",
+    "text": "*그런데 — 한 발을 못 떼겠다. 이 사람은 담임이다. 내 출결을 찍고, 내 성적을 매기고, 학기말에 내 생활기록부에 한 줄을 적는 사람. 그 줄이 내 대학 원서로 간다. 권력은 한 방향으로만 흐른다. 내 쪽이 아니다.*"
+  },
+  "hidden_homeroom_d3_4_g": {
+    "name": "{name}",
+    "text": "*그래서 지금 내가 이 사람의 비밀을 들여다보는 게 — 호의일까, 월권일까. 학생이 교사의 약한 면을 알아버리면, 그 다음부터 두 사람 사이의 거리는 더 이상 직선이 아니다. 어른 한 명의 7년이 내 손바닥 위에 올라오는 거다. 내가 그걸 받을 자격이 있나.*"
+  },
+  "hidden_homeroom_d3_4_h": {
+    "name": "{name}",
+    "text": "*— 근데 동시에 알겠다. 모른 척하는 것도 선택이다. 이 사람은 지금 누군가에게 들키고 싶었던 표정이었다. 7년 동안 한 번도 들키지 못한 사람의 얼굴. 어느 쪽이든, 나는 선을 하나 넘는다.*"
+  },
+  "hidden_homeroom_d3_choice": {
+    "name": "{name}",
+    "text": "*원고지다. 들킨 사람의 얼굴을 하고 있다.*",
+    "choices": [
+      "원고지인 거 봤어요. — 소설 쓰시는 거예요?",
+      "죄송합니다, 안 봤어요."
+    ]
+  },
+  "hidden_homeroom_d3_reveal_1": {
+    "name": "담임선생님",
+    "text": "...소설이라고 하기엔 부끄럽고. 습작이라고 하기엔 너무 오래 됐고. 7년."
+  },
+  "hidden_homeroom_d3_reveal_1_b": {
+    "name": "{name}",
+    "text": "얼마나요?"
+  },
+  "hidden_homeroom_d3_reveal_1_c": {
+    "name": "담임선생님",
+    "text": "7년. *창밖을 보며* 대학 때 시작했어. 문예창작과."
+  },
+  "hidden_homeroom_d3_reveal_1_d": {
+    "name": "{name}",
+    "text": "선생님이 문예창작과요?"
+  },
+  "hidden_homeroom_d3_reveal_1_e": {
+    "name": "담임선생님",
+    "text": "졸업하고 등단 준비했는데 — 2년 동안 떨어졌어. 세 번. 생활비는 바닥나고, 부모님은 '이제 현실적으로 생각해'라고 하시고."
+  },
+  "hidden_homeroom_d3_reveal_1_f": {
+    "name": "{name}",
+    "text": "*담임이 원고지를 한 장 들어올린다. 글씨가 빼곡하다.*"
+  },
+  "hidden_homeroom_d3_reveal_2": {
+    "name": "담임선생님",
+    "text": "네 번째 원고를 넣고 나서 — 결과 발표 날, 전화가 안 와서. 그날 교대 원서를 썼어."
+  },
+  "hidden_homeroom_d3_reveal_2_b": {
+    "name": "담임선생님",
+    "text": "...아무것도 아니야. 업무 서류야."
+  },
+  "hidden_homeroom_d3_reveal_2_c": {
+    "name": "{name}",
+    "text": "업무 서류를 빈 교실에서요?"
+  },
+  "hidden_homeroom_d3_reveal_2_d": {
+    "name": "{name}",
+    "text": "*담임이 잠깐 입을 다문다. 그리고 — 한숨을 쉰다. 짧게.*"
+  },
+  "hidden_homeroom_d3_reveal_2_e": {
+    "name": "담임선생님",
+    "text": "*한숨을 쉬며* ...보고 싶은 것만 볼 수 있으면 편할 텐데."
+  },
+  "hidden_homeroom_d3_reveal_2_f": {
+    "name": "{name}",
+    "text": "*담임이 잠깐 멈춘다. 원고지를 만지작거린다. — 그리고 의자에 기대앉는다.*"
+  },
+  "hidden_homeroom_d3_reveal_3": {
+    "name": "담임선생님",
+    "text": "임용시험 봤어. 국어 교사. — 소설 쓰던 사람이 국어를 가르치고 있으니, 아이러니하지?"
+  },
+  "hidden_homeroom_d3_reveal_3_b": {
+    "name": "{name}",
+    "text": "포기한 거예요?"
+  },
+  "hidden_homeroom_d3_reveal_3_c": {
+    "name": "{name}",
+    "text": "*담임이 원고지를 내려놓는다. 천천히.*"
+  },
+  "hidden_homeroom_d3_reveal_4": {
+    "name": "담임선생님",
+    "text": "포기라고 하면 편하겠지. 근데 가끔 이렇게 빈 교실에서 꺼내 보는 걸 보면 — 포기를 못 한 거겠지."
+  },
+  "hidden_homeroom_d3_reveal_4_b": {
+    "name": "{name}",
+    "text": "*이 사람의 건조함 뒤에 이런 이야기가 있었구나. — 교탁 서랍의 미완성 원고. 7년 동안.*"
+  },
+  "hidden_homeroom_d3_reveal_4_c": {
+    "name": "담임선생님",
+    "text": "*갑자기 정색하며* ...이거 아무한테도 말하면 안 돼. 학생이 선생님의 — 이런 모습 알면 권위가 — 뭐 원래 없지만."
+  },
+  "hidden_homeroom_d3_reveal_4_d": {
+    "name": "{name}",
+    "text": "비밀이요?"
+  },
+  "hidden_homeroom_d3_reveal_4_e": {
+    "name": "담임선생님",
+    "text": "*머리카락을 넘기며* 비밀이야. — 교육적으로 좋은 본보기는 아니니까. 학생한테 이런 얘기까지 하면."
+  },
+  "hidden_homeroom_d3_reveal_4_f": {
+    "name": "{name}",
+    "text": "*'교육적으로'. — 또 업무로 포장하고 있다. 근데 이번에는 진심으로 후회하는 톤이다.*"
+  },
+  "hidden_homeroom_d3_reveal_4_g": {
+    "name": "{name}",
+    "text": "저는 읽어보고 싶은데요. 그 소설."
+  },
+  "hidden_homeroom_d3_reveal_choice": {
+    "name": "{name}",
+    "text": "*7년. 교탁 위의 원고지가 닳아 있다.*",
+    "choices": [
+      "7년이면 포기가 아니라 끈기 아니에요?",
+      "왜 꼭 여기서 쓰세요?"
+    ]
+  },
+  "hidden_homeroom_d3_reveal_choice_a": {
+    "name": "담임선생님",
+    "text": "*멈칫한다. 원고지를 만지던 손이 멈춘다.* ...끈기라고 해줄 사람은 처음이야."
+  },
+  "hidden_homeroom_d3_reveal_choice_b": {
+    "name": "담임선생님",
+    "text": "...교실이 제일 조용하거든. 아이러니하게."
+  },
+  "hidden_homeroom_d3_reveal_5": {
+    "name": "담임선생님",
+    "text": "*시선을 돌리며* ...근데 진짜 비밀이다. 다른 선생님들도 모르거든."
+  },
+  "hidden_homeroom_d3_reveal_6": {
+    "name": "{name}",
+    "text": "*담임이 웃는다. 건조하지 않은, 살짝 어색한 웃음. 웃는 법을 까먹은 사람처럼.*"
+  },
+  "hidden_homeroom_d3_reveal_6_b": {
+    "name": "담임선생님",
+    "text": "...그럼 네가 처음 읽는 사람이네. 7년 만에."
+  },
+  "hidden_homeroom_d3_reveal_6_c": {
+    "name": "{name}",
+    "text": "*웃음이 어색하다. — 그 어색함이 마음을 찔렀다.*"
+  },
+  "hidden_homeroom_d3_reveal_6_d": {
+    "name": "담임선생님",
+    "text": "*작게 웃으며* ...네가 있어서 다행이다. 진심으로."
+  },
+  "hidden_homeroom_d3_reveal_6_e": {
+    "name": "{name}",
+    "text": "*이 사람은 7년을 '포기 못 한 거'라고 했다. 근데 관점을 바꿔주는 한마디에 — 눈이 흔들렸다.*"
+  },
+  "hidden_homeroom_d3_reveal_6_f": {
+    "name": "담임선생님",
+    "text": "조용하니까. — 교무실은 커피 냄새도 많고, 다른 선생들 눈치도 보이고."
+  },
+  "hidden_homeroom_d3_reveal_6_g": {
+    "name": "{name}",
+    "text": "*빈 교실을 고른 이유가 실용적이면서도 — 혼자만의 공간이 필요한 사람이라는 뜻이기도 하다. 선생님이라는 직함 뒤에 숨겨진 서랍을 열어버린 기분이다. 닫아야 하는데 — 손이 떨어지지 않는다.*"
+  },
+  "hidden_homeroom_d3_hide_1": {
+    "name": "담임선생님",
+    "text": "...그래, 안 본 걸로 해줘. 부탁이야. — ...고마워."
+  },
+  "hidden_homeroom_d3_end": {
+    "name": "{name}",
+    "text": "*담임이 머리카락을 넘기며 교실을 나선다. — 이 사람한테 '부탁'은 드문 단어다.*"
+  },
+  "hidden_homeroom_d3_freetalk": {
+    "name": "담임선생님",
+    "text": "*담임선생님과 빈 교실에서 대화 중.*",
+    "context": "Day 3 아침. 빈 교실에서 담임선생님이 소설 원고를 쓰고 있는 걸 발견했다. 7년간 숨겨온 비밀. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
+    "personality": "담임선생님은 소설가 지망생이었다. 교사가 되었지만 포기하지 못한 꿈. 들킨 것에 대한 부끄러움과 안도가 공존."
+  },
+  "hidden_nurse_d3_check": {
+    "name": "{name}",
+    "text": "*쉬는 시간이 끝나간다.*"
+  },
+  "hidden_nurse_d3_1": {
+    "name": "{name}",
+    "text": "*아침부터 뭔가 불안하다. 발이 보건실로 향한다. 아프지 않은데. 보건실 문을 연다.*"
+  },
+  "hidden_nurse_d3_1_b": {
+    "name": "보건선생님",
+    "text": "*고개를 들며* ...어? 오늘은 어디 다쳤어?"
+  },
+  "hidden_nurse_d3_1_c": {
+    "name": "{name}",
+    "text": "아프진 않은데요."
+  },
+  "hidden_nurse_d3_1_d": {
+    "name": "보건선생님",
+    "text": "아프지 않은데 보건실에?"
+  },
+  "hidden_nurse_d3_1_e": {
+    "name": "{name}",
+    "text": "...좀 쉬고 싶어서요."
+  },
+  "hidden_nurse_d3_2": {
+    "name": "보건선생님",
+    "text": "...그럼 왜 왔어? 표정이 안 좋은데."
+  },
+  "hidden_nurse_d3_2_b": {
+    "name": "{name}",
+    "text": "*담임이 '부탁'이라는 말을 쓴다. — 이 사람한테 그건 드문 단어다.*"
+  },
+  "hidden_nurse_d3_2_c": {
+    "name": "{name}",
+    "text": "*교실을 나서는데 — 뒤에서 작게.*"
+  },
+  "hidden_nurse_d3_2_d": {
+    "name": "담임선생님",
+    "text": "...고마워."
+  },
+  "hidden_nurse_d3_2_e": {
+    "name": "{name}",
+    "text": "*뭐가 고마운 건지는 모르겠다. 안 봐줘서? 아니면 — 여기까지 와줘서? 점심시간 직전. — 아침 내내 마음이 가라앉지 않는다. 너무 많은 얼굴을 보고, 너무 많은 말을 들은 탓일까. 뭐가 이렇게 빨리 흔들리는 건지 모르겠다.*"
+  },
+  "hidden_nurse_d3_3": {
+    "name": "{name}",
+    "text": "...좀 쉬고 싶어서요. 그냥... 사람 관계가 복잡해져서."
+  },
+  "hidden_nurse_d3_3_b": {
+    "name": "{name}",
+    "text": "*보건선생님이 잠깐 나를 본다. 장난기가 사라진다.*"
+  },
+  "hidden_nurse_d3_3_c": {
+    "name": "보건선생님",
+    "text": "...앉아."
+  },
+  "hidden_nurse_d3_3_d": {
+    "name": "{name}",
+    "text": "*목소리가 달라졌다. 장난이 아닌 톤. — 이 사람이 진지해지면 분위기가 확 바뀐다. 침대에 앉는다. 보건선생님이 물을 건넨다.*"
+  },
+  "hidden_nurse_d3_4": {
+    "name": "보건선생님",
+    "text": "*커튼을 치며* ...앉아. 여기선 좀 편하게 있어도 돼 물컵을 건네며* ...천천히 말해도 돼*"
+  },
+  "hidden_nurse_d3_5_b": {
+    "name": "{name}",
+    "text": "*보건선생님이 잠깐 멈춘다. — 눈이 부드러워진다.*"
+  },
+  "hidden_nurse_d3_5_c": {
+    "name": "보건선생님",
+    "text": "...비슷해? 그럼 여기 온 거 잘한 거다."
+  },
+  "hidden_nurse_d3_5_d": {
+    "name": "{name}",
+    "text": "*'비슷하다'는 한마디에 태도가 달라졌다. — 공감을 받으면 열리는 사람이구나.*"
+  },
+  "hidden_nurse_d3_5_e": {
+    "name": "{name}",
+    "text": "...누구한테 말하기 애매한 것들이요."
+  },
+  "hidden_nurse_d3_5_f": {
+    "name": "보건선생님",
+    "text": "*의자를 끌어와 앞에 앉으며* 사람 관계."
+  },
+  "hidden_nurse_d3_5_g": {
+    "name": "{name}",
+    "text": "여러 명이 동시에 신경 쓰이는데, 한 명만 선택해야 할 것 같은..."
+  },
+  "hidden_nurse_d3_5_h": {
+    "name": "{name}",
+    "text": "*보건선생님이 잠깐 침묵한다. 그리고.*"
+  },
+  "hidden_nurse_d3_5_i": {
+    "name": "보건선생님",
+    "text": "그거 연애 상담이야?"
+  },
+  "hidden_nurse_d3_5_j": {
+    "name": "{name}",
+    "text": "아, 그런 건 아니..."
+  },
+  "hidden_nurse_d3_5_k": {
+    "name": "보건선생님",
+    "text": "*피식* 아닌 척하는 게 제일 티 나는 거야."
+  },
+  "hidden_nurse_d3_5_l": {
+    "name": "{name}",
+    "text": "*정곡이다.*"
+  },
+  "hidden_nurse_d3_5_m": {
+    "name": "보건선생님",
+    "text": "선생님이 이런 상담까지 해줘야 하나... *턱을 괴며* 근데 들어줄게. 보건실이니까. 몸뿐만 아니라 마음도 건강해야 하잖아?"
+  },
+  "hidden_nurse_d3_5_n": {
+    "name": "{name}",
+    "text": "선생님도 그런 적 있어요? 여러 사람 사이에서 혼란스러운."
+  },
+  "hidden_nurse_d3_5_o": {
+    "name": "{name}",
+    "text": "*보건선생님이 잠깐 멈춘다. 시선이 창밖으로 간다.*"
+  },
+  "hidden_nurse_d3_5_p": {
+    "name": "보건선생님",
+    "text": "...있었지. 대학병원에서 일할 때."
+  },
+  "hidden_nurse_d3_5_q": {
+    "name": "{name}",
+    "text": "대학병원이요?"
+  },
+  "hidden_nurse_d3_choice1": {
+    "name": "{name}",
+    "text": "*...맞는 말이긴 하다.*",
+    "choices": [
+      "비슷한 것 같기도...",
+      "아뇨, 그냥 좀 복잡해서요"
+    ]
+  },
+  "hidden_nurse_d3_choice1_a": {
+    "name": "보건선생님",
+    "text": "...비슷해? 그럼 여기 온 거 잘한 거다."
+  },
+  "hidden_nurse_d3_choice1_b": {
+    "name": "보건선생님",
+    "text": "*고개를 살짝 기울이며* ...그래. 복잡하면 복잡한 대로, 여기서 좀 쉬어."
+  },
+  "hidden_nurse_d3_6": {
+    "name": "보건선생님",
+    "text": "대학병원에서 일할 때. 환자가 너무 많았어. 다 살리고 싶은데, 손이 두 개밖에 없잖아. 결국 한 명도 제대로 못 챙기는 기분이 들더라."
+  },
+  "hidden_nurse_d3_6_b": {
+    "name": "{name}",
+    "text": "*환자 이야기를 하는데, 왠지 지금 내 상황이랑 겹친다. 보건선생님이 물컵을 내려놓는다. 천천히.*"
+  },
+  "hidden_nurse_d3_6_c": {
+    "name": "보건선생님",
+    "text": "...그만뒀다기보다. 도망쳤지. *살짝 웃으며* 멋있는 이유 같은 건 없어."
+  },
+  "hidden_nurse_d3_6_d": {
+    "name": "{name}",
+    "text": "*'도망'이라는 단어를 스스로 쓴다. — 연두색 노트가 떠오른다. 그 편지들이 전부 유진에게 쓴 거였구나. 보건선생님이 잠깐 멈춘다. 청진기를 만진다.*"
+  },
+  "hidden_nurse_d3_6_e": {
+    "name": "보건선생님",
+    "text": "...있었지. 못 살린 환자 한 명. *시선이 멀어진다.* 유진이라는 아이. 열일곱 살이었어. 그 애 때문에 여기 온 거야."
+  },
+  "hidden_nurse_d3_6_f": {
+    "name": "{name}",
+    "text": "*유진. — 어제 노트에서 본 이름이다. 그 편지의 수신인.*"
+  },
+  "hidden_nurse_d3_7": {
+    "name": "보건선생님",
+    "text": "그래서 여기 왔어. 학교에서는 — 한 명 한 명 제대로 볼 수 있으니까."
+  },
+  "hidden_nurse_d3_7_b": {
+    "name": "{name}",
+    "text": "*보건선생님이 나를 본다. 진지하게.*"
+  },
+  "hidden_nurse_d3_8": {
+    "name": "보건선생님",
+    "text": "너도 마찬가지야. 다 챙기려고 하지 마. — 진짜 중요한 사람 한 명을 제대로 보는 게 낫지 않겠어?"
+  },
+  "hidden_nurse_d3_8_b": {
+    "name": "{name}",
+    "text": "*장난기가 완전히 사라졌다.*"
+  },
+  "hidden_nurse_d3_8_c": {
+    "name": "{name}",
+    "text": "...감사합니다."
+  },
+  "hidden_nurse_d3_8_d": {
+    "name": "보건선생님",
+    "text": "*다시 장난스럽게* 뭘. 이 정도는 서비스지. 다음엔 안 아파도 들러."
+  },
+  "hidden_nurse_d3_8_e": {
+    "name": "{name}",
+    "text": "*'아프든 안 아프든'. — 이 사람이 나를 환자가 아닌 다른 뭔가로 보기 시작한 건 아닐까. 보건실을 나서는데 — 뒤에서 작게.*"
+  },
+  "hidden_nurse_d3_8_f": {
+    "name": "{name}",
+    "text": "*복도로 나왔다. 한 발 떼고 멈춘다. — 방금 그건 뭐였지. 이 사람은 환자를 한 명 잃었다. 그 죄책감을 안고 학교로 도망쳐 왔다. 지금 그 사람한테 내가 어떤 자리인지 — 처음으로 정확히 묻게 된다.*"
+  },
+  "hidden_nurse_d3_8_g": {
+    "name": "{name}",
+    "text": "*나는 학생이고, 저 사람은 보건교사다. 내가 다치면 가는 곳, 내가 아프다고 하면 침대를 내주는 사람. 그 관계 자체가 비대칭이다. 내가 두근거리는 건 — 진짜로 이 사람이 좋아진 건가, 아니면 어른 여자가 나한테 처음으로 '괜찮니' 하고 오래 봐줘서인가. 둘은 비슷해 보여도 같은 게 아니다.*"
+  },
+  "hidden_nurse_d3_8_h": {
+    "name": "{name}",
+    "text": "*그리고 더 무서운 건 저쪽 방향이다. 이 사람한테 나는 — 못 살린 유진이의 자리에 비슷한 나이로 앉은 학생이다. 지금 나한테 마음 한 조각이 옮겨가는 게 있다면, 그건 나를 보는 게 아닐 수도 있다. 그걸 알면서 손 내미는 건, 이 사람의 죄책감을 이용하는 거다. — 어느 쪽이든 깨끗한 답은 없다.*"
+  },
+  "hidden_nurse_d3_choice2": {
+    "name": "{name}",
+    "text": "*한 명을 제대로 — 대학병원 얘기만은 아닌 것 같다.*",
+    "choices": [
+      "그래서 병원 그만두신 거예요?",
+      "선생님도 그 한 명이 있어요?"
+    ]
+  },
+  "hidden_nurse_d3_choice2_a": {
+    "name": "보건선생님",
+    "text": "...그만뒀다기보다. 도망쳤지."
+  },
+  "hidden_nurse_d3_choice2_b": {
+    "name": "보건선생님",
+    "text": "...있었지. 못 살린 환자 한 명."
+  },
+  "hidden_nurse_d3_9": {
+    "name": "보건선생님",
+    "text": "...진짜 중요한 사람. 혹시 그게 선생님이면 어쩌지?"
+  },
+  "hidden_nurse_d3_9_b": {
+    "name": "{name}",
+    "text": "*...뭐? — 발이 멈췄다. 소독약 냄새만 공기 중에 무겁게 가라앉았다. 천천히 돌아봤다.*"
+  },
+  "hidden_nurse_d3_9_c": {
+    "name": "{name}",
+    "text": "*보건선생님이 — 웃고 있지 않다. 청진기를 만지작거리며 창밖을 보고 있다. 방금 자기가 한 말을 자기도 몰랐던 사람처럼. 0.7초.*"
+  },
+  "hidden_nurse_d3_9_d": {
+    "name": "보건선생님",
+    "text": "*겨우 웃으며* 농담이야. 가 봐."
+  },
+  "hidden_nurse_d3_9_e": {
+    "name": "{name}",
+    "text": "*농담. — 맞겠지? 맞겠지, 라고 생각하면서도 발이 안 떼진다. 방금 그 0.7초짜리 표정이 — 장난기가 없었다.*"
+  },
+  "hidden_nurse_d3_9_f": {
+    "name": "{name}",
+    "text": "*소독약 냄새가 갑자기 짙어졌다. 여기서 한 발짝 더 가면 — 이 사람을 더 이상 '선생님'으로 부를 수 없을 것 같다. ...뭐? — 돌아봤다. 보건선생님이 창밖을 보고 있다. 웃고 있지 않다. 처음 보는 표정이다.*"
+  },
+  "hidden_nurse_d3_11": {
+    "name": "보건선생님",
+    "text": "...농담이야. 가 봐."
+  },
+  "hidden_nurse_d3_freetalk": {
+    "name": "보건선생님",
+    "text": "*보건선생님과 보건실에서 대화 중.*",
+    "context": "Day 3. 불안한 마음에 보건실을 찾았다. 보건선생님이 진지하게 상담해줬다. 대학병원 번아웃 이야기. 톤: 밝지만 어딘가 그림자가 있다. 웃으면서도 눈이 안 웃는 순간이 있다. 가벼운 대화 사이에 진심이 살짝 비친다.",
+    "personality": "보건선생님은 평소 장난스럽지만 진지해지면 분위기가 완전히 달라진다. 번아웃 경험을 가진 전문가. 감정과 직함 사이에서 흔들린다."
+  },
+  "morning3_date_seo_1": {
+    "name": "서연",
+    "text": "이번 주말에 시간 있어? 갈 데가 있는데."
+  },
+  "morning3_date_seo_choice": {
+    "name": "{name}",
+    "text": "*서연이 복도에서 스치며 물어본다.*",
+    "choices": [
+      "있어. 어디?",
+      "좀 바쁠 것 같은데"
+    ]
+  },
+  "morning3_date_seo_accept": {
+    "name": "{name}",
+    "text": "*서연 주말 약속을 수락했다.*"
+  },
+  "morning3_date_seo_accept_b": {
+    "name": "{name}",
+    "text": "*교실로 돌아왔다. 수업 하나가 지나고, 또 쉬는 시간이 온다.*"
+  },
+  "morning3_date_seo_decline": {
+    "name": "{name}",
+    "text": "*서연의 제안을 거절했다.*"
+  },
+  "morning3_date_seo_decline_b": {
+    "name": "{name}",
+    "text": "*교실로 돌아왔다. 수업 하나가 지나고, 또 쉬는 시간이 온다.*"
+  },
+  "morning3_date_dain_1": {
+    "name": "다인",
+    "text": "야! 주말에 뭐 해?! 같이 오락실 갈래?!"
+  },
+  "morning3_date_dain_2": {
+    "name": "{name}",
+    "text": "*다인의 손가락이 책상 모서리를 두드리고 있다. 긴장하는 건가? — 아니다. 다인이 긴장할 리 없다. 이 정도는 일상이겠지. ...맞겠지?*"
+  },
+  "morning3_date_dain_choice": {
+    "name": "{name}",
+    "text": "*다인이 다음 쉬는 시간에 자리로 와서 물어본다.*",
+    "choices": [
+      "좋아, 콜",
+      "주말은 좀..."
+    ]
+  },
+  "morning3_date_dain_accept": {
+    "name": "{name}",
+    "text": "*다인 주말 약속을 수락했다.*"
+  },
+  "morning3_date_dain_decline": {
+    "name": "다인",
+    "text": "아 그래? 뭐 바쁘면 어쩔 수 없지!"
+  },
+  "morning3_date_dain_decline_narr": {
+    "name": "{name}",
+    "text": "*다인의 반응을 지켜본다. — 종이 치고, 점심 직전의 짧은 틈이 다시 온다. 밝게 웃으며 돌아갔다. — 그때는 몰랐다. 다인이 그 손가락 두드리는 걸 멈추고, 주머니에 손을 넣은 걸. 용기 내서 물어본 거였다는 걸.*"
+  },
+  "morning3_date_dain_decline_inner_2": {
+    "name": "{name}",
+    "text": "*눈치 빠르다고 자부하면서. — 정작 중요한 순간에 틀린다.*"
+  },
+  "morning3_date_yuna_1": {
+    "name": "{name}",
+    "text": "*점심 직전, 유나의 쪽지가 책상 위에 놓여 있다.*"
+  },
+  "morning3_date_yuna_1_b": {
+    "name": "서연",
+    "text": "오늘 도시락은 계란말이네."
+  },
+  "morning3_date_yuna_2": {
+    "name": "{name}",
+    "text": "*'주말. 헌책방 가는데. 올 거면 와. — 유나'*"
+  },
+  "morning3_date_yuna_choice": {
+    "name": "{name}",
+    "text": "*유나의 쪽지를 읽고...*",
+    "choices": [
+      "고개를 끄덕여 보인다",
+      "작게 고개를 젓는다"
+    ]
+  },
+  "morning3_date_yuna_accept": {
+    "name": "{name}",
+    "text": "*유나 주말 약속을 수락했다.*"
+  },
+  "morning3_date_yuna_decline": {
+    "name": "{name}",
+    "text": "*쪽지를 조용히 접어 주머니에 넣었다. 답장은 쓰지 않았다. — 유나가 고개를 살짝 숙인다. 알겠다는 뜻인 것 같다.*"
+  },
+  "morning3_check_multiple": {},
+  "morning3_multi_from_seo": {},
+  "morning3_multi_from_dain": {},
+  "morning3_set_multiple": {
+    "name": "{name}",
+    "text": "*...잠깐. 주말 약속이 겹치는데. 이거 어떡하지.*"
+  },
+  "morning3_multi_from_yuna": {},
+  "morning3_end": {
+    "name": "{name}",
+    "text": "*어느덧 수업이 이어지고 점심시간이 다가온다.*"
+  },
+  "morning3_end_b": {
+    "name": "유나",
+    "text": "...맛있네."
+  }
 }

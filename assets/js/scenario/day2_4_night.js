@@ -320,6 +320,21 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_flashback_7": {
         "background": "assets/images/background/room_my.png",
         "character": null,
+        "next": "night2_flashback_8"
+    },
+    "night2_flashback_8": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "night2_flashback_9"
+    },
+    "night2_flashback_9": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "night2_flashback_10"
+    },
+    "night2_flashback_10": {
+        "background": "assets/images/background/room_my.png",
+        "character": null,
         "next": "night2_end_2"
     },
     "night2_end_2": {
