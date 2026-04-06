@@ -444,5 +444,21 @@
     "morning5_committed_end": {
         "name": "{name}",
         "text": "*Ce ne sont plus des signaux venus de trois directions. J'ai déjà choisi ma réponse, et je me dirige vers le dernier événement.*"
+    },
+    "morning5_gate": {
+        "name": "{name}",
+        "text": "*Le portail. J'étais là il y a cinq jours aussi. Mon uniforme était raide alors — maintenant il me va. Ce n'est pas que l'uniforme qui a changé.*"
+    },
+    "morning5_yuna_story_2": {
+        "name": "{name}",
+        "text": "*La dernière phrase. 'Quand il a ouvert les yeux, j'étais déjà partie. J'ai laissé juste un mot. — Je serai encore là la prochaine fois.'*"
+    },
+    "morning5_yuna_story_3": {
+        "name": "{name}",
+        "text": "*De l'encre lavande. La même encre que le mot du premier jour.*"
+    },
+    "morning5_yuna_story_4": {
+        "name": "{name}",
+        "text": "*Dans un petit coin sous le panneau — 'C'est de la fiction. Ce n'est pas réel.' Des traces de gomme. Effacé mais les marques restent. Yuna l'a écrit, effacé, et finalement laissé.*"
     }
 }

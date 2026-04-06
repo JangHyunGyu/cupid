@@ -1197,5 +1197,13 @@
             "Recommencer depuis le début"
         ]
     },
-    "ending_hidden_commit_check": {}
+    "ending_hidden_commit_check": {},
+    "perfect_epilogue_1b_dain": {
+        "name": "{name}",
+        "text": "*Chaque matin elle enroulait des bandages, se frottait le genou en secret. Cette personne vient de sauter.*"
+    },
+    "perfect_epilogue_1c_dain": {
+        "name": "{name}",
+        "text": "*Si la raison pour laquelle elle peut sauter malgré la douleur c'est moi — ça suffit.*"
+    }
 }

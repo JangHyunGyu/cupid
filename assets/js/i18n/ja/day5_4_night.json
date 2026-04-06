@@ -1197,5 +1197,13 @@
             "最初からやり直す"
         ]
     },
-    "ending_hidden_commit_check": {}
+    "ending_hidden_commit_check": {},
+    "perfect_epilogue_1b_dain": {
+        "name": "{name}",
+        "text": "*毎朝包帯を巻いて、誰にも見られないように膝をさすっていた人が。今、飛び上がった。*"
+    },
+    "perfect_epilogue_1c_dain": {
+        "name": "{name}",
+        "text": "*膝が痛くても飛べる理由が僕になったなら — それで十分だ。*"
+    }
 }

@@ -444,5 +444,21 @@
     "morning5_committed_end": {
         "name": "{name}",
         "text": "*Es sind keine Signale mehr aus drei Richtungen. Ich habe meine Antwort schon gewählt und gehe zum letzten Programmpunkt.*"
+    },
+    "morning5_gate": {
+        "name": "{name}",
+        "text": "*Das Schultor. Vor fünf Tagen stand ich auch hier. Meine Uniform war damals steif — jetzt passt sie. Es hat sich nicht nur die Uniform verändert.*"
+    },
+    "morning5_yuna_story_2": {
+        "name": "{name}",
+        "text": "*Der letzte Satz. 'Als er die Augen öffnete, war ich schon weg. Nur ein Zettel blieb. — Nächstes Mal bin ich auch hier.'*"
+    },
+    "morning5_yuna_story_3": {
+        "name": "{name}",
+        "text": "*Lavendelfarbene Tinte. Dieselbe Tinte wie beim Zettel am ersten Tag.*"
+    },
+    "morning5_yuna_story_4": {
+        "name": "{name}",
+        "text": "*In einer kleinen Ecke unter dem Brett — 'Das ist Fiktion. Nicht echt.' Spuren des Radierens. Gelöscht, aber die Spuren bleiben. Yuna hat es geschrieben, radiert und schließlich stehen lassen.*"
     }
 }

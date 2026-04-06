@@ -13,16 +13,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "bgm": "daily.mp3",
-        "next": "lunch_start_2"
-    },
-    "lunch_start_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
-        "next": "lunch_start_3"
-    },
-    "lunch_start_3": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "lunch_start_4"
     },
     "lunch_start_4": {

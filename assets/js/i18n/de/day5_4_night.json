@@ -1197,5 +1197,13 @@
             "Von vorne beginnen"
         ]
     },
-    "ending_hidden_commit_check": {}
+    "ending_hidden_commit_check": {},
+    "perfect_epilogue_1b_dain": {
+        "name": "{name}",
+        "text": "*Jeden Morgen Bandagen wickelnd, heimlich das Knie reibend. Diese Person ist gerade gesprungen.*"
+    },
+    "perfect_epilogue_1c_dain": {
+        "name": "{name}",
+        "text": "*Wenn der Grund, warum sie trotz der Schmerzen springen kann, ich bin — das reicht.*"
+    }
 }

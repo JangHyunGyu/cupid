@@ -444,5 +444,21 @@
     "morning5_committed_end": {
         "name": "{name}",
         "text": "*Ya no son señales que vienen de tres direcciones. Con la respuesta ya elegida, avanzo hacia el último evento.*"
+    },
+    "morning5_gate": {
+        "name": "{name}",
+        "text": "*La entrada. Hace cinco días también estuve aquí. El uniforme estaba rígido entonces — ahora me queda bien. No es solo el uniforme lo que cambió.*"
+    },
+    "morning5_yuna_story_2": {
+        "name": "{name}",
+        "text": "*La última línea. 'Cuando abrió los ojos, yo ya no estaba. Solo dejé una nota. — La próxima vez también estaré aquí.'*"
+    },
+    "morning5_yuna_story_3": {
+        "name": "{name}",
+        "text": "*Tinta lavanda. La misma tinta que la nota del primer día.*"
+    },
+    "morning5_yuna_story_4": {
+        "name": "{name}",
+        "text": "*En una esquina pequeña debajo del tablero — 'Esto es ficción. No es real.' Rastros de borrado. Borrado pero las marcas quedan. Yuna lo escribió, lo borró y al final lo dejó.*"
     }
 }

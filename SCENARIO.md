@@ -462,37 +462,10 @@
 
 ### `classroom_3_ins`
 - 배경: `room_school.png`
-- 다음: `classroom_4`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: *목소리가 건조하다. 감정 과잉이 아니라, 딱 필요한 만큼만 담긴 톤. — 의외로 싫지 않다.*
-
----
-
-### `classroom_4`
-- 배경: `room_school.png`
-- 다음: `classroom_5`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: {name}입니다. 잘 부탁드립니다.
-
----
-
-### `classroom_5`
-- 배경: `room_school.png`
-- 다음: `classroom_5_ins`
-
-- 캐릭터: `teacher_normal.png`
-**{name}**: *짧고 깔끔하게. 길게 말해봐야 좋을 거 없다.*
-
----
-
-### `classroom_5_ins`
-- 배경: `room_school.png`
 - 다음: `classroom_5_ins2`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *담임이 고개를 끄덕인다. 뭔가 더 말하려다 — 멈추고, 교탁 위 출석부를 한 번 더 본다. 오른손이 주머니 속 볼펜을 만지작거리고 있다. 습관인 것 같다.*
+**{name}**: {name}입니다. 잘 부탁드립니다. *짧고 깔끔하게. 담임이 고개를 끄덕인다.*
 
 ---
 
@@ -510,7 +483,7 @@
 - 다음: `classroom_6`
 
 - 캐릭터: `teacher_normal.png`
-**{name}**: *아무도 안 들었을 말이다. 나만 들었다. — 세심한 건가, 그냥 습관인 건가.*
+**{name}**: *아무도 안 들었을 말이다. 나만 들었다.*
 
 ---
 
@@ -825,28 +798,10 @@
 ### `lunch_start`
 - 배경: `school_hallway.png`
 - BGM: `daily.mp3`
-- 다음: `lunch_start_2`
-
-- 캐릭터: `없음`
-**{name}**: *점심시간. 종이 울렸다.*
-
----
-
-### `lunch_start_2`
-- 배경: `school_hallway.png`
-- 다음: `lunch_start_3`
-
-- 캐릭터: `없음`
-**{name}**: *교실을 나서니 복도가 학생들로 가득하다. 어디 가야 할지 모르겠다. 학식? 매점? 아니면 —*
-
----
-
-### `lunch_start_3`
-- 배경: `school_hallway.png`
 - 다음: `lunch_start_4`
 
 - 캐릭터: `없음`
-**{name}**: *세 방향에서 동시에 신호가 온다.*
+**{name}**: *점심시간. 복도가 학생들로 가득하다. 세 방향에서 동시에 신호가 온다.*
 
 ---
 
@@ -3621,37 +3576,19 @@
 
 ### `night_end_1`
 - 배경: `room_my.png`
-- 다음: `night_end_2`
-
-- 캐릭터: `없음`
-**{name}**: *핸드폰을 내려놓았다.*
-
----
-
-### `night_end_2`
-- 배경: `room_my.png`
 - 다음: `night_end_3`
 
 - 캐릭터: `없음`
-**{name}**: *천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*
+**{name}**: *핸드폰을 내려놓았다. 천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*
 
 ---
 
 ### `night_end_3`
 - 배경: `room_my.png`
-- 다음: `night_end_4`
-
-- 캐릭터: `없음`
-**{name}**: *나쁘지 않은 첫날이었다.*
-
----
-
-### `night_end_4`
-- 배경: `room_my.png`
 - 다음: `morning2_start`
 
 - 캐릭터: `없음`
-**{name}**: *내일은 — 좀 더 재밌을 것 같다.*
+**{name}**: *나쁘지 않은 첫날이었다. 내일은 — 좀 더 재밌을 것 같다.*
 
 ---
 
@@ -3910,28 +3847,10 @@
 
 ### `morning2_seo_1`
 - 배경: `room_school.png`
-- 다음: `morning2_seo_2`
-
-- 캐릭터: `없음`
-**{name}**: *쪽지를 주머니에 넣으려는데 — 복도에서 익숙한 목소리.*
-
----
-
-### `morning2_seo_2`
-- 배경: `room_school.png`
-- 다음: `morning2_seo_3`
-
-- 캐릭터: `seyoun_normal.png`
-**서연**: 어제 잘 잤어?
-
----
-
-### `morning2_seo_3`
-- 배경: `room_school.png`
 - 다음: `morning2_seo_4`
 
 - 캐릭터: `seyoun_normal.png`
-**{name}**: *서연이 복도를 지나가며 교실 안을 힐끗 본다. 시선이 정확히 나를 겨냥한다.*
+**서연**: *복도를 지나가며 교실 안을 힐끗 보며* 어제 잘 잤어?
 
 ---
 
@@ -3949,7 +3868,7 @@
 - 다음: `morning2_minsu_1`
 
 - 캐릭터: `seyoun_normal.png`
-**서연**: 지나가는 길이야. — 오늘도 재밌는 하루 되길.
+**서연**: 순찰이야. — 출석률 확인 겸.
 
 ---
 
@@ -3973,19 +3892,10 @@
 
 ### `morning2_minsu_1b`
 - 배경: `room_school.png`
-- 다음: `morning2_minsu_2`
-
-- 캐릭터: `minsu_normal.png`
-**{name}**: *서연이 사라진 복도를 바라보는데 — 뒤에서 의자 끄는 소리.*
-
----
-
-### `morning2_minsu_2`
-- 배경: `room_school.png`
 - 다음: `morning2_minsu_3`
 
 - 캐릭터: `minsu_normal.png`
-**{name}**: *앞자리에서 민수가 돌아본다.*
+**{name}**: *서연이 사라진 복도를 바라보는데 — 뒤에서 민수가 돌아본다.*
 
 ---
 
@@ -4050,7 +3960,7 @@
   - [기본] → `morning2_break_transition`
 
 - 캐릭터: `dain_laugh.png`
-**다인**: 아 내가 먼저 발견했으니까 우리 전학생이지! 선점이야 선점!
+**다인**: 아 내가 먼저 발견했으니까 우리 전학생이지! 선취점이야 선취점!
 
 ---
 
@@ -18963,7 +18873,7 @@
 
 ### `morning5_mood_high`
 - 배경: `room_school.png`
-- 다음: `morning5_seo_note_1`
+- 다음: `morning5_gate`
 
 - 캐릭터: `없음`
 **{name}**: 마지막 날이다. 이상하게 발걸음이 가볍다. 오늘은 — 말할 수 있을 것 같다.
@@ -18972,7 +18882,7 @@
 
 ### `morning5_mood_mid`
 - 배경: `room_school.png`
-- 다음: `morning5_seo_note_1`
+- 다음: `morning5_gate`
 
 - 캐릭터: `없음`
 **{name}**: 마지막 날. 아직 확신이 없다. 하지만 가야 한다.
@@ -18981,10 +18891,19 @@
 
 ### `morning5_mood_low`
 - 배경: `room_school.png`
-- 다음: `morning5_seo_note_1`
+- 다음: `morning5_gate`
 
 - 캐릭터: `없음`
 **{name}**: 마지막 날. 5일이 이렇게 빨리 지나갈 줄 몰랐다. ...뭘 한 건지 모르겠다.
+
+---
+
+### `morning5_gate`
+- 배경: `school.png`
+- 다음: `morning5_seo_note_1`
+
+- 캐릭터: `없음`
+**{name}**: *교문. 5일 전에도 여기 섰었다. 그때는 교복이 뻣뻣했는데 — 지금은 몸에 맞는다. 교복만 바뀐 건 아니다.*
 
 ---
 
@@ -19035,10 +18954,37 @@
 
 ### `morning5_yuna_story_1`
 - 배경: `school_hallway.png`
+- 다음: `morning5_yuna_story_2`
+
+- 캐릭터: `yuna_normal.png`
+**{name}**: *소설 속 인물은 도서관에서 잠든 누군가의 어깨에 담요를 덮어준다. — 그건 나밖에 모르는 장면이다.*
+
+---
+
+### `morning5_yuna_story_2`
+- 배경: `school_hallway.png`
+- 다음: `morning5_yuna_story_3`
+
+- 캐릭터: `없음`
+**{name}**: *마지막 문장. '그 사람이 눈을 떴을 때, 나는 이미 없었다. 쪽지만 남겼다. — 다음에도 여기 있을게.'*
+
+---
+
+### `morning5_yuna_story_3`
+- 배경: `school_hallway.png`
+- 다음: `morning5_yuna_story_4`
+
+- 캐릭터: `없음`
+**{name}**: *연보라색 잉크. Day 1 쪽지랑 같은 잉크다.*
+
+---
+
+### `morning5_yuna_story_4`
+- 배경: `school_hallway.png`
 - 다음: `morning5_return_class`
 
 - 캐릭터: `yuna_normal.png`
-**{name}**: *소설 속 인물은 도서관에서 잠든 누군가의 어깨에 담요를 덮어준다. — 그건 나밖에 모르는 장면이다. 유나가 이걸 쓴 거다.*
+**{name}**: *게시판 아래 구석에 작게 — '이건 소설이야. 진짜가 아니야.' 지우개로 지운 흔적. 지워졌는데 자국이 남아 있다. 유나는 이걸 쓰고, 지우고, 결국 남겨뒀다.*
 
 ---
 
@@ -23097,10 +23043,28 @@
 
 ### `perfect_epilogue_1_dain`
 - 배경: `ending_perfect_dain.png`
+- 다음: `perfect_epilogue_1b_dain`
+
+- 캐릭터: `없음`
+**{name}**: *뛰어오른 다인의 무릎이 착지하면서 꺾인다. 아프다는 걸 안다. 근데 — 웃고 있다.*
+
+---
+
+### `perfect_epilogue_1b_dain`
+- 배경: `ending_perfect_dain.png`
+- 다음: `perfect_epilogue_1c_dain`
+
+- 캐릭터: `없음`
+**{name}**: *매일 아침 붕대를 감고, 아무도 모르게 무릎을 문지르던 사람이. 지금 뛰어올랐다.*
+
+---
+
+### `perfect_epilogue_1c_dain`
+- 배경: `ending_perfect_dain.png`
 - 다음: `perfect_epilogue_bridge_dain`
 
 - 캐릭터: `없음`
-**{name}**: *매일 웃는 얼굴을 봤다. 5일이 아니었다 — 다인이 보여준 진짜 표정 하나하나가 전부였다.*
+**{name}**: *무릎이 아파도 뛰어오를 수 있는 이유가 내가 됐다면 — 그거면 됐다.*
 
 ---
 
@@ -24121,6 +24085,15 @@
 ---
 
 ### `mayhem_7`
+- 배경: `ending_mayhem.png`
+- 다음: `mayhem_8`
+
+- 캐릭터: `없음`
+**{name}**: *소정이 때는 선택을 안 해서 후회했다. 이번에는 전부 선택해서 전부 잃었다. — 결국 같다. 한 사람을 고르지 못한 건.*
+
+---
+
+### `mayhem_8`
 - 배경: `ending_mayhem.png`
 - 다음: `day5_credits`
 
