@@ -964,7 +964,7 @@ class GameEngine {
             && typeof REGISTERED_CG_IDS !== 'undefined'
             && REGISTERED_CG_IDS.has(backgroundId);
         const sourceFile = scene.__sourceFile || '';
-        const nightFromFile = scene.type === 'free_talk' && /_night$/.test(sourceFile);
+        const nightFromFile = /_night$/.test(sourceFile);
         const sunsetFromFile = /_3_afterschool$/.test(sourceFile);
         const isNightScene = !!scene.night || nightFromFile;
         const isSunsetScene = !!scene.sunset || sunsetFromFile;
