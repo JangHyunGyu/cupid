@@ -968,10 +968,22 @@ class GameEngine {
         const sunsetFromFile = /_3_afterschool$/.test(sourceFile);
         const isNightScene = !!scene.night || nightFromFile;
         const isSunsetScene = !!scene.sunset || sunsetFromFile;
+        console.log('[TimeFilter]', {
+            sceneId,
+            sourceFile,
+            backgroundId,
+            isRegisteredCG,
+            sceneNight: scene.night,
+            nightFromFile,
+            isNightScene,
+            isSunsetScene,
+            applied: { night: isRegisteredCG ? false : isNightScene, sunset: isRegisteredCG ? false : isSunsetScene }
+        });
         this.sceneRenderer.setTimeFilter(
             isRegisteredCG ? false : isNightScene,
             isRegisteredCG ? false : isSunsetScene
         );
+        console.log('[TimeFilter] bgLayer.classList after setTimeFilter:', this.sceneRenderer.uiManager.bgLayer.className);
 
         // ─────────────────────────────────────────────────────────────
         // 📳 7.5단계: 메시지 씬 진동 효과
