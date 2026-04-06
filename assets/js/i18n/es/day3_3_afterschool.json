@@ -319,7 +319,7 @@
     "name": "Seoyeon",
     "text": "No es cuántas personas tenían planes contigo. Es lo que esa promesa significaba para mí."
   },
-  "after3_confront_lie_ins": {
+  "after3_confront_lie_b": {
     "name": "{name}",
     "text": "*Seoyeon se detiene un momento. Sus ojos tiemblan.*"
   },
@@ -465,119 +465,119 @@
     "context": "Día 3, después de hablar con Dain. Está herida pero fingiendo alegría. Tono: Brillante en la superficie pero con sombras por debajo. A veces sonriendo pero los ojos no. La sinceridad se asoma entre la conversación casual.",
     "personality": "Dain usa la alegría como defensa. Menos exclamaciones significan que es sincera."
   },
-  "after3_seo_5_ins": {
+  "after3_seo_5_b": {
     "name": "Seoyeon",
     "text": "*Arreglándose el pelo apresuradamente* ...¿Viste?"
   },
-  "after3_yuna_5_ins": {
+  "after3_yuna_5_b": {
     "name": "{name}",
     "text": "*...¿No es esto sobre mí?*"
   },
-  "after3_seo_7_ins": {
+  "after3_seo_7_b": {
     "name": "Seoyeon",
     "text": "*Bajando la mirada* ...No quería que vieras esto."
   },
-  "after3_dain_5_ins": {
+  "after3_dain_5_b": {
     "name": "Dain",
     "text": "¡¡Te digo que estoy bien!! ¡¡No es nada!!"
   },
-  "after3_confront_5_ins": {
+  "after3_confront_5_b": {
     "name": "Dain",
     "text": "*Con la cabeza gacha.* ...A mí tampoco me gustó."
   },
-  "after3_confront_5_ins2": {
+  "after3_confront_5_c": {
     "name": "{name}",
     "text": "*Lo aceptó. — Es la primera vez que Dain no rechaza la ayuda de alguien. Una sonrisa sin signos de exclamación pesa extrañamente.*"
   },
-  "haeun_warn_5c_ins": {
+  "haeun_warn_5c_b": {
     "name": "Seoyeon",
     "text": "Cuando les sonreías igual a las demás, eso me molestaba un poco."
   },
-  "after3_confront_admit_ins": {
+  "after3_confront_admit_b": {
     "name": "{name}",
     "text": "*Seoyeon baja la cabeza.*"
   },
-  "after3_confront_admit_4_ins": {
+  "after3_confront_admit_4_b": {
     "name": "{name}",
     "text": "*Seoyeon se da la vuelta. — Se detiene.*"
   },
-  "after3_confront_excuse_ins": {
+  "after3_confront_excuse_b": {
     "name": "{name}",
     "text": "*Los ojos de Seoyeon están fríos. Una temperatura que nunca había visto.*"
   },
-  "after3_confront_excuse_2_ins": {
+  "after3_confront_excuse_2_b": {
     "name": "{name}",
     "text": "*Seoyeon se detiene un momento. Sus ojos vacilan.*"
   },
-  "after3_confront_lie_2_ins2": {
+  "after3_confront_lie_2_b": {
     "name": "{name}",
     "text": "*Su espalda está recta. Perfectamente. — Pero tiene los puños apretados. Los nudillos blancos.*"
   },
-  "haeun_warn_1_ins": {
+  "haeun_warn_1_b": {
     "name": "{name}",
     "text": "*Haeun está apoyada contra la pared. Juguetea con su pulsera del consejo estudiantil.*"
   },
-  "haeun_warn_2_ins": {
+  "haeun_warn_2_b": {
     "name": "{name}",
     "text": "¿Haeun? ¿Qué haces aquí?"
   },
-  "haeun_warn_3_ins": {
+  "haeun_warn_3_b": {
     "name": "Haeun",
     "text": "...Ella lloró."
   },
-  "haeun_warn_3_ins2": {
+  "haeun_warn_3_c": {
     "name": "{name}",
     "text": "*— ¿Qué?*"
   },
-  "haeun_warn_6_ins": {
+  "haeun_warn_6_b": {
     "name": "{name}",
     "text": "*Haeun baja la cabeza.*"
   },
-  "haeun_warn_7_ins": {
+  "haeun_warn_7_b": {
     "name": "{name}",
     "text": "*Haeun se detiene. Su cara dice que sabe que no debería pasarse de la raya.*"
   },
-  "haeun_warn_7_ins2": {
+  "haeun_warn_7_c": {
     "name": "Haeun",
     "text": "...De todos modos. Por favor, trátenla bien. Se lo pido."
   },
-  "haeun_warn_7_ins3": {
+  "haeun_warn_7_d": {
     "name": "{name}",
     "text": "*Haeun se da la vuelta y se va.*"
   },
-  "minsu_d3_8_ins": {
+  "minsu_d3_8_b": {
     "name": "{name}",
     "text": "...¿Qué?"
   },
-  "minsu_d3_3_ins": {
+  "minsu_d3_3_b": {
     "name": "{name}",
     "text": "*No tengo nada que decir.*"
   },
-  "minsu_d3_4_ins": {
+  "minsu_d3_4_b": {
     "name": "{name}",
     "text": "......"
   },
-  "minsu_d3_4_ins2": {
+  "minsu_d3_4_c": {
     "name": "Minsu",
     "text": "Abrazar a todos solo por ser 'bueno' — eso no es amabilidad, es cobardía."
   },
-  "minsu_d3_5_ins": {
+  "minsu_d3_5_b": {
     "name": "{name}",
     "text": "...Sí."
   },
-  "minsu_d3_6b_ins": {
+  "minsu_d3_6b_b": {
     "name": "{name}",
     "text": "*Minsu me agarra el hombro.*"
   },
-  "minsu_d3_7_ins": {
+  "minsu_d3_7_b": {
     "name": "{name}",
     "text": "*Rechazar también es amor. — En mi antigua escuela, ni siquiera le di a Sojeong la oportunidad de decir 'no.' Porque no pude decir nada. Ella empezó a salir con alguien sin saber lo que sentía, y yo me cambié de escuela con 38 confesiones sin enviar guardadas en las notas de mi teléfono.*"
   },
-  "minsu_d3_7_ins2": {
+  "minsu_d3_7_c": {
     "name": "{name}",
     "text": "*Si Sojeong hubiera podido rechazarme entonces — quizás no me seguiría atormentando.*"
   },
-  "minsu_d3_10_ins": {
+  "minsu_d3_10_b": {
     "name": "{name}",
     "text": "*Minsu se adelanta caminando.*"
   },

@@ -316,75 +316,75 @@
         "name": "{name}",
         "text": "*J'ai replié le mot et je l'ai gardé dans la main. — Sans raison, il me semblait précieux.*"
     },
-    "morning2_break_transition_ins": {
+    "morning2_break_transition_b": {
         "name": "{name}",
         "text": "*La professeure se tient devant la porte de la classe. Feuille de présence en main, elle jette un coup d'œil vers la porte — nos regards se croisent.*"
     },
-    "hidden_homeroom_d2_1_ins": {
+    "hidden_homeroom_d2_1_b": {
         "name": "{name}",
         "text": "Il y a un problème... ?"
     },
-    "hidden_homeroom_d2_1_ins2": {
+    "hidden_homeroom_d2_1_c": {
         "name": "Professeure principale",
         "text": "Non, juste la vérification de tes papiers de transfert. — De l'administratif."
     },
-    "hidden_homeroom_d2_2_ins": {
+    "hidden_homeroom_d2_2_b": {
         "name": "{name}",
         "text": "*J'ai suivi la professeure jusqu'à la salle des profs.* *Son bureau est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert.*"
     },
-    "hidden_homeroom_d2_3_ins": {
+    "hidden_homeroom_d2_3_b": {
         "name": "Professeure principale",
         "text": "*Une brève hésitation* ...Diverses choses. Surtout — des romans."
     },
-    "hidden_homeroom_d2_3_ins2": {
+    "hidden_homeroom_d2_3_c": {
         "name": "{name}",
         "text": "*Des romans. Une professeure de lettres qui lit des romans, c'est normal, mais pourquoi a-t-elle l'air réticente à le dire ?*"
     },
-    "hidden_homeroom_d2_3_ins3": {
+    "hidden_homeroom_d2_3_d": {
         "name": "Professeure principale",
         "text": "Lire ? — Et écrire ?"
     },
-    "hidden_homeroom_d2_3_ins4": {
+    "hidden_homeroom_d2_3_e": {
         "name": "{name}",
         "text": "*Drôle de question. On parlait de notes, pourquoi ce virage soudain vers 'écrire' ?*"
     },
-    "hidden_homeroom_d2_3_ins5": {
+    "hidden_homeroom_d2_3_f": {
         "name": "{name}",
         "text": "Écrire, je ne sais pas trop."
     },
-    "hidden_homeroom_d2_3_ins6": {
+    "hidden_homeroom_d2_3_g": {
         "name": "{name}",
         "text": "*La professeure hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
     },
-    "hidden_homeroom_d2_7_ins": {
+    "hidden_homeroom_d2_7_b": {
         "name": "{name}",
         "text": "Beaucoup mieux. J'aime bien les gens de la classe."
     },
-    "hidden_homeroom_d2_8_ins": {
+    "hidden_homeroom_d2_8_b": {
         "name": "{name}",
         "text": "Si vous la connaissez, c'est que Dain est assez connue."
     },
-    "hidden_homeroom_d2_8_ins2": {
+    "hidden_homeroom_d2_8_c": {
         "name": "Professeure principale",
         "text": "Célèbre, ce n'est pas le mot... *Boit une gorgée de café* Plutôt quelqu'un dont je m'inquiète."
     },
-    "hidden_homeroom_d2_8_ins3": {
+    "hidden_homeroom_d2_8_d": {
         "name": "{name}",
         "text": "*'Quelqu'un dont je m'inquiète'. — La professeure s'inquiète pour Dain. Elle sait quelque chose ?*"
     },
-    "hidden_homeroom_d2_8_ins4": {
+    "hidden_homeroom_d2_8_e": {
         "name": "Professeure principale",
         "text": "*Posant son café* ...Bref, rien d'inquiétant. Tu t'en sors bien."
     },
-    "hidden_homeroom_d2_8_ins5": {
+    "hidden_homeroom_d2_8_f": {
         "name": "{name}",
         "text": "*Elle a couvert sa bouche, mais elle tripote sa tasse sans raison. Cette personne aussi le montre quand elle est troublée.*"
     },
-    "hidden_homeroom_d2_11_ins": {
+    "hidden_homeroom_d2_11_b": {
         "name": "{name}",
         "text": "*Elle murmure alors que personne n'écoute. — Cette personne a l'habitude d'emballer sa bienveillance dans le mot 'travail'.*"
     },
-    "morning2_haeun_6_ins": {
+    "morning2_haeun_6_b": {
         "name": "{name}",
         "text": "*Haeun fait un pas en avant. Sa voix baisse d'un ton.*"
     }

@@ -319,7 +319,7 @@
     "name": "ソヨン",
     "text": "何人と約束したかが問題じゃないの。私にとってその約束が何だったかが問題なの。"
   },
-  "after3_confront_lie_ins": {
+  "after3_confront_lie_b": {
     "name": "{name}",
     "text": "*ソヨンが一瞬止まる。目が揺れている。*"
   },
@@ -465,119 +465,119 @@
     "context": "3日目の放課後、ダインとの会話の直後。傷ついているが明るいふりをしている。 トーン：明るいけれどどこかに影がある。笑っていても目が笑っていない瞬間がある。軽い会話の間に本音がちらりと見える。",
     "personality": "ダインはエネルギッシュな体育系。明るいふりが唯一の防衛機制。感嘆符が減れば本音が出ている。"
   },
-  "after3_seo_5_ins": {
+  "after3_seo_5_b": {
     "name": "ソヨン",
     "text": "*慌てて髪を整えながら* ……見た？"
   },
-  "after3_yuna_5_ins": {
+  "after3_yuna_5_b": {
     "name": "{name}",
     "text": "*……これ、僕のことじゃないか？*"
   },
-  "after3_seo_7_ins": {
+  "after3_seo_7_b": {
     "name": "ソヨン",
     "text": "*視線を伏せて* ...こんなの見せたくなかったのに。"
   },
-  "after3_dain_5_ins": {
+  "after3_dain_5_b": {
     "name": "ダイン",
     "text": "だから大丈夫だって！！大したことないから！！"
   },
-  "after3_confront_5_ins": {
+  "after3_confront_5_b": {
     "name": "ダイン",
     "text": "*うつむいたまま。* ...あたしも。ちょっと嫌だった。"
   },
-  "after3_confront_5_ins2": {
+  "after3_confront_5_c": {
     "name": "{name}",
     "text": "*受け入れた。——ダインが誰かの助けを断らなかったのは初めてだ。ビックリマークのない笑顔が、不思議なほど重い。*"
   },
-  "haeun_warn_5c_ins": {
+  "haeun_warn_5c_b": {
     "name": "ソヨン",
     "text": "あなたが他の子にも同じように笑いかけるの、ちょっと嫌だった。"
   },
-  "after3_confront_admit_ins": {
+  "after3_confront_admit_b": {
     "name": "{name}",
     "text": "*ソヨンがうつむく。*"
   },
-  "after3_confront_admit_4_ins": {
+  "after3_confront_admit_4_b": {
     "name": "{name}",
     "text": "*ソヨンが背を向ける。——立ち止まる。*"
   },
-  "after3_confront_excuse_ins": {
+  "after3_confront_excuse_b": {
     "name": "{name}",
     "text": "*ソヨンの目が冷たい。初めて見る温度だ。*"
   },
-  "after3_confront_excuse_2_ins": {
+  "after3_confront_excuse_2_b": {
     "name": "{name}",
     "text": "*ソヨンが一瞬止まる。目が揺れる。*"
   },
-  "after3_confront_lie_2_ins2": {
+  "after3_confront_lie_2_b": {
     "name": "{name}",
     "text": "*背筋が真っ直ぐだ。完璧に。——でも拳が握られている。手の甲が白い。*"
   },
-  "haeun_warn_1_ins": {
+  "haeun_warn_1_b": {
     "name": "{name}",
     "text": "*ハウンが壁にもたれて立っている。生徒会のブレスレットをいじっている。*"
   },
-  "haeun_warn_2_ins": {
+  "haeun_warn_2_b": {
     "name": "{name}",
     "text": "ハウン？なんでここに？"
   },
-  "haeun_warn_3_ins": {
+  "haeun_warn_3_b": {
     "name": "ハウン",
     "text": "……先輩が、泣いてました。"
   },
-  "haeun_warn_3_ins2": {
+  "haeun_warn_3_c": {
     "name": "{name}",
     "text": "*——え？*"
   },
-  "haeun_warn_6_ins": {
+  "haeun_warn_6_b": {
     "name": "{name}",
     "text": "*ハウンがうつむく。*"
   },
-  "haeun_warn_7_ins": {
+  "haeun_warn_7_b": {
     "name": "{name}",
     "text": "*ハウンが言葉を止める。踏み込みすぎてはいけないという顔。*"
   },
-  "haeun_warn_7_ins2": {
+  "haeun_warn_7_c": {
     "name": "ハウン",
     "text": "……とにかく。先輩に優しくしてあげてください。お願いです。"
   },
-  "haeun_warn_7_ins3": {
+  "haeun_warn_7_d": {
     "name": "{name}",
     "text": "*ハウンが振り返って歩いていく。*"
   },
-  "minsu_d3_8_ins": {
+  "minsu_d3_8_b": {
     "name": "{name}",
     "text": "……何を？"
   },
-  "minsu_d3_3_ins": {
+  "minsu_d3_3_b": {
     "name": "{name}",
     "text": "*何も言えない。*"
   },
-  "minsu_d3_4_ins": {
+  "minsu_d3_4_b": {
     "name": "{name}",
     "text": "……"
   },
-  "minsu_d3_4_ins2": {
+  "minsu_d3_4_c": {
     "name": "ミンス",
     "text": "いい奴だからって全部受け入れるのは — それは優しさじゃなくて、卑怯なだけだ。"
   },
-  "minsu_d3_5_ins": {
+  "minsu_d3_5_b": {
     "name": "{name}",
     "text": "……そうだよな。"
   },
-  "minsu_d3_6b_ins": {
+  "minsu_d3_6b_b": {
     "name": "{name}",
     "text": "*ミンスが僕の肩を掴む。*"
   },
-  "minsu_d3_7_ins": {
+  "minsu_d3_7_b": {
     "name": "{name}",
     "text": "*断るのも愛。——前の学校で、ソジョンに断る機会すら与えられなかった。僕が何も言えなかったから。ソジョンは何も知らないまま彼氏ができて、僕はスマホのメモ帳に38回目のシミュレーションを残したまま転校した。*"
   },
-  "minsu_d3_7_ins2": {
+  "minsu_d3_7_c": {
     "name": "{name}",
     "text": "*あの時ソジョンに断ってもらえていたら——こんなに未練は残らなかったはずだ。*"
   },
-  "minsu_d3_10_ins": {
+  "minsu_d3_10_b": {
     "name": "{name}",
     "text": "*ミンスが先に歩いていく。*"
   },

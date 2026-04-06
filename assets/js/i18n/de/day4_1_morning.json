@@ -75,19 +75,19 @@
     "name": "{name}",
     "text": "*Außerhalb des Schultors wirkt sie nicht wie eine Lehrerin. Einfach - wie jemand, der schreibt.*"
   },
-  "hidden_homeroom_d4_4_ins": {
+  "hidden_homeroom_d4_4_b": {
     "name": "Klassenlehrerin",
     "text": "Was machst du denn hier?"
   },
-  "hidden_homeroom_d4_4_ins2": {
+  "hidden_homeroom_d4_4_c": {
     "name": "{name}",
     "text": "Ich kam gerade vorbei."
   },
-  "hidden_homeroom_d4_4_ins3": {
+  "hidden_homeroom_d4_4_d": {
     "name": "Klassenlehrerin",
     "text": "Du bist der erste Schüler, der beim 'Vorbeikommen' durchs Schultor schaut."
   },
-  "hidden_homeroom_d4_4_ins4": {
+  "hidden_homeroom_d4_4_e": {
     "name": "{name}",
     "text": "*Unangenehme Stille. — Die Lehrerin spricht zuerst.*"
   },
@@ -95,15 +95,15 @@
     "name": "Klassenlehrerin",
     "text": "...Schon gegessen?"
   },
-  "hidden_homeroom_d4_5_ins": {
+  "hidden_homeroom_d4_5_b": {
     "name": "{name}",
     "text": "Noch nicht."
   },
-  "hidden_homeroom_d4_5_ins2": {
+  "hidden_homeroom_d4_5_c": {
     "name": "Klassenlehrerin",
     "text": "Nennen wir es eine Erweiterung des pädagogischen Interesses. *leise murmelnd* Ein Kaffee geht doch, oder? — Naja, du bist Schüler, also Saft."
   },
-  "hidden_homeroom_d4_5_ins3": {
+  "hidden_homeroom_d4_5_d": {
     "name": "{name}",
     "text": "*Schon wieder. Das Muster, 'pädagogisches Interesse' zu sagen und sofort die Grenze zu überschreiten.*"
   },
@@ -309,47 +309,47 @@
     "name": "{name}",
     "text": "*Wir gingen zurück ins Krankenzimmer.*"
   },
-  "minsu_cheer_4_ins": {
+  "minsu_cheer_4_b": {
     "name": "{name}",
     "text": "*Von Warnungen zu Konfrontationen, von Konfrontationen zu Aufmunterung. Minsu hat an mich geglaubt, bevor ich es selbst getan habe.*"
   },
-  "minsu_cheer_4_ins2": {
+  "minsu_cheer_4_c": {
     "name": "{name}",
     "text": "*Ich schaue auf den Kalender meines Handys. Morgens Seoyeon, nachmittags Yuna, abends Dain. Ich habe letzte Nacht nicht geschlafen, weil ich versucht habe, alle drei an einem Tag unterzubringen. Wenn sich auch nur ein Termin überschneidet, ist es vorbei.*"
   },
-  "minsu_cheer_4_ins3": {
+  "minsu_cheer_4_d": {
     "name": "{name}",
     "text": "*...Was mache ich hier eigentlich.*"
   },
-  "minsu_cheer_4_ins4": {
+  "minsu_cheer_4_e": {
     "name": "{name}",
     "text": "*Drei Mal in den Spiegel geschaut. Zweimal umgezogen. Was mache ich hier.*"
   },
-  "minsu_cheer_1_ins": {
+  "minsu_cheer_1_b": {
     "name": "Minsu",
     "text": "*Hey, du hast heute ein Date?*"
   },
-  "minsu_cheer_1_ins2": {
+  "minsu_cheer_1_c": {
     "name": "{name}",
     "text": "*Woher weißt du das*"
   },
-  "minsu_cheer_1_ins3": {
+  "minsu_cheer_1_d": {
     "name": "Minsu",
     "text": "*Dain hat es in den Gruppenchat geschrieben lol Hab morgen was vor!! hat sie geschrieben*"
   },
-  "minsu_cheer_1_ins4": {
+  "minsu_cheer_1_e": {
     "name": "Minsu",
     "text": "*Aber hey*"
   },
-  "minsu_cheer_1_ins5": {
+  "minsu_cheer_1_f": {
     "name": "Minsu",
     "text": "*Entscheid dich für eine*"
   },
-  "minsu_cheer_1_ins6": {
+  "minsu_cheer_1_g": {
     "name": "Minsu",
     "text": "*Das weißt du, oder?*"
   },
-  "minsu_cheer_1_ins7": {
+  "minsu_cheer_1_h": {
     "name": "{name}",
     "text": "*...Diesmal wirklich*"
   },
@@ -357,227 +357,227 @@
     "name": "{name}",
     "text": "*Wochenendmorgen. Ein paar Benachrichtigungen. — Ich dachte, es würde ein gewöhnlicher Tag werden.*"
   },
-  "morning4_seo_msg_1_ins": {
+  "morning4_seo_msg_1_b": {
     "name": "{name}",
     "text": "*Das ist ein Befehl. Sie macht selbst Verabredungen wie Anweisungen. Aber irgendwie ist es lustig.*"
   },
-  "morning4_seo_msg_1_ins2": {
+  "morning4_seo_msg_1_c": {
     "name": "{name}",
     "text": "*Ich stehe am Treffpunkt. Wird sie kommen? Nach dem Streit am Freitag.*"
   },
-  "hidden_homeroom_d4_1_ins2": {
+  "hidden_homeroom_d4_1_b": {
     "name": "{name}",
     "text": "*Sie muss wütend gewesen sein, aber trotzdem wollte sie meine Erklärung hören. Oder vielleicht konnte sie selbst im Zorn nicht aufgeben. So oder so — ich sollte den Grund, warum sie gekommen ist, nicht leichtfertig abtun.*"
   },
-  "morning4_yuna_msg_1_ins": {
+  "morning4_yuna_msg_1_b": {
     "name": "{name}",
     "text": "*Kurz. Typisch Yuna. Ich weiß jetzt, dass Wenn du zu spät kommst, gehe ich dasselbe bedeutet wie Bitte komm nicht zu spät.*"
   },
-  "hidden_homeroom_d4_3_ins": {
+  "hidden_homeroom_d4_3_b": {
     "name": "Klassenlehrerin",
     "text": "*Verlegen* Ach, das ist nur — ich hatte noch Papierkram zu erledigen."
   },
-  "hidden_homeroom_d4_3_ins2": {
+  "hidden_homeroom_d4_3_c": {
     "name": "{name}",
     "text": "*Papierkram. Sie hat wahrscheinlich in einem leeren Klassenzimmer an ihrem Manuskript geschrieben. Das weiß ich jetzt.*"
   },
-  "hidden_homeroom_d4_3_ins3": {
+  "hidden_homeroom_d4_3_d": {
     "name": "{name}",
     "text": "Ganz alleine?"
   },
-  "hidden_homeroom_d4_3_ins4": {
+  "hidden_homeroom_d4_3_e": {
     "name": "Klassenlehrerin",
     "text": "*Hände in den Taschen* ...Eine Lehrerin ist auch am Wochenende Lehrerin. So ist das."
   },
-  "hidden_homeroom_d4_cafe_1_ins": {
+  "hidden_homeroom_d4_cafe_1_b": {
     "name": "{name}",
     "text": "Unangenehm?"
   },
-  "hidden_homeroom_d4_cafe_1_ins2": {
+  "hidden_homeroom_d4_cafe_1_c": {
     "name": "Klassenlehrerin",
     "text": "*Einen Schluck Kaffee trinkend* Ehrlich gesagt? Ein bisschen."
   },
-  "hidden_homeroom_d4_cafe_1_ins3": {
+  "hidden_homeroom_d4_cafe_1_d": {
     "name": "{name}",
     "text": "*Ehrlich. Diese Person versteckt sich hinter trockenem Humor, aber manchmal rutscht ein aufrichtiger Moment durch.*"
   },
-  "hidden_homeroom_d4_cafe_1_ins4": {
+  "hidden_homeroom_d4_cafe_1_e": {
     "name": "{name}",
     "text": "Haben Sie gestern weiter am Manuskript geschrieben?"
   },
-  "hidden_homeroom_d4_cafe_1_ins5": {
+  "hidden_homeroom_d4_cafe_1_f": {
     "name": "{name}",
     "text": "*Sie stellt ihre Kaffeetasse ab. Hält kurz inne, als ob sie nachdenkt.*"
   },
-  "hidden_homeroom_d4_cafe_2_ins": {
+  "hidden_homeroom_d4_cafe_2_b": {
     "name": "{name}",
     "text": "Hat es wirklich geholfen, dass ich es gesehen habe?"
   },
-  "hidden_homeroom_d4_cafe_2_ins2": {
+  "hidden_homeroom_d4_cafe_2_c": {
     "name": "Klassenlehrerin",
     "text": "Eher als geholfen... *Aus dem Fenster schauend* Dass jemand es herausgefunden hat — das war eine Erleichterung. Etwas allein zu tragen ist kein Geheimnis, sondern eine Last."
   },
-  "hidden_homeroom_d4_cafe_2_ins3": {
+  "hidden_homeroom_d4_cafe_2_d": {
     "name": "{name}",
     "text": "*Eine Last. Also hat das unvollendete Manuskript, das sie sieben Jahre allein getragen hat, auf ihr gelastet.*"
   },
-  "hidden_homeroom_d4_cafe_2_ins4": {
+  "hidden_homeroom_d4_cafe_2_e": {
     "name": "Klassenlehrerin",
     "text": "Weißt du, was das Schwierigste beim Schreiben eines Romans ist?"
   },
-  "hidden_homeroom_d4_cafe_6_ins": {
+  "hidden_homeroom_d4_cafe_6_b": {
     "name": "{name}",
     "text": "*Sie sieht mich an. Augen, die nicht trocken sind.* *Ich verließ das Café.*"
   },
-  "hidden_homeroom_d4_cafe_4_ins": {
+  "hidden_homeroom_d4_cafe_4_b": {
     "name": "{name}",
     "text": "*Ein Déjà-vu. Gestern im leeren Klassenraum hat sie etwas Ähnliches gesagt. - Aber heute, in einem Café, außerhalb der Schule, klingt es leichter. Nein - ernster.*"
   },
-  "hidden_homeroom_d4_cafe_5_ins": {
+  "hidden_homeroom_d4_cafe_5_b": {
     "name": "{name}",
     "text": "*Sie lächelt kurz. Kein verlegenes Lächeln — ein Lächeln der Erleichterung.*"
   },
-  "hidden_homeroom_d4_cafe_5_ins2": {
+  "hidden_homeroom_d4_cafe_5_c": {
     "name": "Klassenlehrerin",
     "text": "...Danke. Aber das bleibt unter uns, okay? ...Das ist unser Geheimnis. Auch wenn eine Lehrerin keine Geheimnisse mit einem Schüler haben sollte."
   },
-  "hidden_homeroom_d4_cafe_5_ins3": {
+  "hidden_homeroom_d4_cafe_5_d": {
     "name": "{name}",
     "text": "Pädagogisches Interesse, oder?"
   },
-  "hidden_homeroom_d4_cafe_5_ins4": {
+  "hidden_homeroom_d4_cafe_5_e": {
     "name": "Klassenlehrerin",
     "text": "*Stockt* ...Nimm mir nicht die Worte vorweg."
   },
-  "hidden_homeroom_d4_cafe_5_ins5": {
+  "hidden_homeroom_d4_cafe_5_f": {
     "name": "{name}",
     "text": "*Ich musste schmunzeln. Sie auch. Gleichzeitig.*"
   },
-  "hidden_homeroom_d4_cafe_5_ins6": {
+  "hidden_homeroom_d4_cafe_5_g": {
     "name": "Klassenlehrerin",
     "text": "...Stimmt. Das darf nicht sein."
   },
-  "hidden_homeroom_d4_cafe_5_ins7": {
+  "hidden_homeroom_d4_cafe_5_h": {
     "name": "{name}",
     "text": "*Sie zieht die Hand aus der Tasche. Ihre Fingerspitzen verharren einen Moment in der Luft. Eine Geste aus Gewohnheit.*"
   },
-  "hidden_homeroom_d4_decline_ins": {
+  "hidden_homeroom_d4_decline_b": {
     "name": "{name}",
     "text": "*Sie dreht sich um. Ihre Schultern sacken leicht herab.*"
   },
-  "hidden_nurse_d4_1_ins2": {
+  "hidden_nurse_d4_1_b": {
     "name": "Schulkrankenschwester",
     "text": "*Dreht sich um* Hm? Du bist wirklich gekommen?"
   },
-  "hidden_nurse_d4_2_ins": {
+  "hidden_nurse_d4_2_b": {
     "name": "{name}",
     "text": "Der Patient hilft also der Krankenschwester."
   },
-  "hidden_nurse_d4_2_ins2": {
+  "hidden_nurse_d4_2_c": {
     "name": "Schulkrankenschwester",
     "text": "*Lachend* Zum ersten Mal hilft ein Patient der Krankenschwester."
   },
-  "hidden_nurse_d4_2_ins3": {
+  "hidden_nurse_d4_2_d": {
     "name": "{name}",
     "text": "*Ihr Lächeln kommt ganz natürlich. - Sie wirkt anders als in der Schule. Heute fühlt sie sich weniger wie eine Lehrerin an und mehr wie... jemand, bei dem man sich wohlfühlt.*"
   },
-  "hidden_nurse_d4_2_ins5": {
+  "hidden_nurse_d4_2_e": {
     "name": "Schulkrankenschwester",
     "text": "*Reicht Dokumente rüber* Kannst du die hier sortieren? Nach Jahrgang."
   },
-  "hidden_nurse_d4_2_ins6": {
+  "hidden_nurse_d4_2_f": {
     "name": "{name}",
     "text": "*Wir sitzen nebeneinander und sortieren Papiere. Jedes Mal, wenn sich unsere Hände berühren, zieht die Schulkrankenschwester ihre leicht zurück. Ist ihr das bewusst?*"
   },
-  "hidden_nurse_d4_2_ins7": {
+  "hidden_nurse_d4_2_g": {
     "name": "Schulkrankenschwester",
     "text": "...Im Universitätskrankenhaus habe ich das alles alleine gemacht."
   },
-  "hidden_nurse_d4_2_ins8": {
+  "hidden_nurse_d4_2_h": {
     "name": "{name}",
     "text": "Alleine?"
   },
-  "hidden_nurse_d4_4_ins": {
+  "hidden_nurse_d4_4_b": {
     "name": "{name}",
     "text": "Also das Burnout..."
   },
-  "hidden_nurse_d4_4_ins2": {
+  "hidden_nurse_d4_4_c": {
     "name": "{name}",
     "text": "*Die Schulkrankenschwester hält inne. Legt die Papiere hin.*"
   },
-  "hidden_nurse_d4_4_ins3": {
+  "hidden_nurse_d4_4_d": {
     "name": "Schulkrankenschwester",
     "text": "...Das Schlimmste damals war nicht die Arbeitsmenge."
   },
-  "hidden_nurse_d4_4_ins4": {
+  "hidden_nurse_d4_4_e": {
     "name": "{name}",
     "text": "Was war es dann?"
   },
-  "hidden_nurse_d4_4_ins5": {
+  "hidden_nurse_d4_4_f": {
     "name": "Schulkrankenschwester",
     "text": "*Stimme wird einen halben Ton leiser* Niemand hat mich beim Namen gerufen. 'Schwester', 'Nachtdienst', 'Station 3.' Alles Titel, nie mein Name."
   },
-  "hidden_nurse_d4_4_ins6": {
+  "hidden_nurse_d4_4_g": {
     "name": "{name}",
     "text": "*Der Scherz ist völlig verschwunden. So zeigt diese Person ihre wahren Gefühle.*"
   },
-  "hidden_nurse_d4_4_ins7": {
+  "hidden_nurse_d4_4_h": {
     "name": "Schulkrankenschwester",
     "text": "In der Schule bin ich die Schulkrankenschwester, richtig? Wieder ein Titel. *Leicht lächelnd* Aber du — du hast mich nie beim Titel genannt, oder?"
   },
-  "hidden_nurse_d4_4_ins8": {
+  "hidden_nurse_d4_4_i": {
     "name": "{name}",
     "text": "...Wirklich?"
   },
-  "hidden_nurse_d4_4_ins9": {
+  "hidden_nurse_d4_4_j": {
     "name": "Schulkrankenschwester",
     "text": "Einfach nur Frau Lehrerin. Ohne Titel davor. Das hat sich gut angefühlt."
   },
-  "hidden_nurse_d4_4_ins10": {
+  "hidden_nurse_d4_4_k": {
     "name": "{name}",
     "text": "*Sie weiß, was es bedeutet, beim Namen gerufen zu werden. Weil sie im Krankenhaus nur mit Nummern angesprochen wurde.*"
   },
-  "hidden_nurse_d4_6_ins": {
+  "hidden_nurse_d4_6_b": {
     "name": "{name}",
     "text": "Das war doch nichts."
   },
-  "hidden_nurse_d4_6_ins2": {
+  "hidden_nurse_d4_6_c": {
     "name": "Schulkrankenschwester",
     "text": "*Mich anschauend* ...Doch, das war was."
   },
-  "hidden_nurse_d4_6_ins3": {
+  "hidden_nurse_d4_6_d": {
     "name": "{name}",
     "text": "*Zwei kurze Worte, aber sie haben Gewicht.*"
   },
-  "hidden_nurse_d4_meal_1_ins": {
+  "hidden_nurse_d4_meal_1_b": {
     "name": "{name}",
     "text": "Das haben Sie als Schülerin doch auch gegessen."
   },
-  "hidden_nurse_d4_meal_1_ins2": {
+  "hidden_nurse_d4_meal_1_c": {
     "name": "Schulkrankenschwester",
     "text": "Das ist ewig her. *Lacht* Ich bin auch nicht mehr die Jüngste."
   },
-  "hidden_nurse_d4_meal_2_ins": {
+  "hidden_nurse_d4_meal_2_b": {
     "name": "{name}",
     "text": "*Die Schulkrankenschwester hält kurz inne. Legt ihre Stäbchen ab.*"
   },
-  "hidden_nurse_d4_meal_3_ins": {
+  "hidden_nurse_d4_meal_3_b": {
     "name": "{name}",
     "text": "*Der Scherz verschwand. 0,5 Sekunden. Das Aufrichtigkeitsbarometer dieser Person bewegt sich in 0,5-Sekunden-Schritten.*"
   },
-  "hidden_nurse_d4_meal_3_ins2": {
+  "hidden_nurse_d4_meal_3_c": {
     "name": "Schulkrankenschwester",
     "text": "*Wieder lächelnd* So, wenn du fertig gegessen hast, bist du entlassen. Ich habe nämlich auch noch etwas zu erledigen."
   },
-  "hidden_nurse_d4_meal_3_ins3": {
+  "hidden_nurse_d4_meal_3_d": {
     "name": "{name}",
     "text": "*Auf dem Rückweg. Die Schulkrankenschwester ruft von hinten.*"
   },
-  "hidden_nurse_d4_meal_3_ins4": {
+  "hidden_nurse_d4_meal_3_e": {
     "name": "Schulkrankenschwester",
     "text": "{name}."
   },
-  "hidden_nurse_d4_meal_4_ins": {
+  "hidden_nurse_d4_meal_4_b": {
     "name": "{name}",
     "text": "*Sie hat wirklich hinzugefügt. Wenn diese Person wirklich anfügt, bedeutet das, dass alles davor aufrichtig gemeint war.*"
   },

@@ -256,11 +256,11 @@
         "name": "{name}",
         "text": "*Le cours commence. Yuna regarde à nouveau par la fenêtre. Dain parle déjà à son voisin.*"
     },
-    "hallway_6_ins": {
+    "hallway_6_b": {
         "name": "Seoyeon",
         "text": "*Une brève hésitation* ...Tu es perspicace."
     },
-    "hallway_6_ins2": {
+    "hallway_6_c": {
         "name": "{name}",
         "text": "*Cette hésitation. Une demi-seconde. Sûrement rien, mais ça reste en tête.*"
     },
@@ -268,39 +268,39 @@
         "name": "Seoyeon",
         "text": "Ah, le déjeuner. Tu ne sais pas où est la cantine, non ? Viens avec moi."
     },
-    "hallway_13_ins": {
+    "hallway_13_b": {
         "name": "{name}",
         "text": "*Son dos est droit. Parfaitement droit. — Comme si c'était répété. Ce qui se cache derrière cette décontraction m'a rendu un peu curieux.*"
     },
-    "classroom_2_ins": {
+    "classroom_2_b": {
         "name": "{name}",
         "text": "*La professeure se tient devant l'estrade. Fin de la vingtaine. Son cardigan est ouvert depuis le début. Son expression est détachée, mais — ses yeux passent chaque élève en revue.*"
     },
-    "classroom_3_ins": {
+    "classroom_3_b": {
         "name": "{name}",
         "text": "*Sa voix est sèche. Pas dénuée d'émotion, juste — dosée au strict nécessaire. Étonnamment, ça ne me déplaît pas.*"
     },
-    "classroom_5_ins2": {
+    "classroom_5_b": {
         "name": "Professeure principale",
         "text": "...D'accord. {name}. Je m'en souviendrai. *Tout bas, presque pour elle-même* Je retiens toujours les noms du premier coup."
     },
-    "classroom_5_ins3": {
+    "classroom_5_c": {
         "name": "{name}",
         "text": "*Personne d'autre n'a entendu. Juste moi. — Est-ce de l'attention, ou simplement une habitude ?*"
     },
-    "classroom_dain_5_ins": {
+    "classroom_dain_5_b": {
         "name": "{name}",
         "text": "*La professeure laisse échapper un petit soupir. Pas d'exaspération — le soupir de quelqu'un qui a l'habitude.*"
     },
-    "classroom_dain_5_ins2": {
+    "classroom_dain_5_c": {
         "name": "Professeure principale",
         "text": "...Économise ton énergie. Le premier cours n'a même pas commencé."
     },
-    "classroom_dain_5_ins3": {
+    "classroom_dain_5_d": {
         "name": "{name}",
         "text": "*Elle le dit sèchement, mais le coin de ses lèvres se relève imperceptiblement. Son expression par défaut est neutre, mais il y a parfois un bug.*"
     },
-    "classroom_minsu_2_ins": {
+    "classroom_minsu_2_b": {
         "name": "Minsu",
         "text": "*Désignant Dain du menton* Ton endurance."
     }

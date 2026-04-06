@@ -2821,7 +2821,7 @@
         "_issues": null
       }
     },
-    "morning2_break_transition_ins": {
+    "morning2_break_transition_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#morning2_break_transition_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*교실 문 앞에 담임이 서 있다. 출석부를 들고, 문 쪽을 힐끗 보다가 ...",
@@ -2857,7 +2857,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_1_ins": {
+    "hidden_homeroom_d2_1_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_1_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "뭔가 문제라도...?",
@@ -2893,7 +2893,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_1_ins2": {
+    "hidden_homeroom_d2_1_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_1_ins2",
       "_ko_name": "담임선생님",
       "_ko_text_preview": "아니, 전학 서류 확인이야. — 행정적인 거.",
@@ -2929,7 +2929,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_2_ins": {
+    "hidden_homeroom_d2_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_2_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*담임을 따라 교무실로 향했다.* *담임의 자리는 구석이다. 책상 위에 ...",
@@ -2965,7 +2965,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_3_ins": {
+    "hidden_homeroom_d2_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins",
       "_ko_name": "담임선생님",
       "_ko_text_preview": "*잠깐 멈칫하며* ...여러 가지. 주로 — 소설.",
@@ -3001,7 +3001,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_3_ins2": {
+    "hidden_homeroom_d2_3_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins2",
       "_ko_name": "{name}",
       "_ko_text_preview": "*소설. 국어 교사가 소설을 읽는 건 당연한데, 왜 말을 아끼는 느낌이지...",
@@ -3037,7 +3037,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_3_ins3": {
+    "hidden_homeroom_d2_3_d": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins3",
       "_ko_name": "담임선생님",
       "_ko_text_preview": "읽는 거? — 쓰는 건?",
@@ -3073,7 +3073,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_3_ins4": {
+    "hidden_homeroom_d2_3_e": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins4",
       "_ko_name": "{name}",
       "_ko_text_preview": "*이상한 질문이다. 국어 성적 얘기에서 왜 갑자기 '쓰는 거'를 물어보지...",
@@ -3109,7 +3109,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_3_ins5": {
+    "hidden_homeroom_d2_3_f": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins5",
       "_ko_name": "{name}",
       "_ko_text_preview": "쓰는 건 잘 모르겠어요.",
@@ -3145,7 +3145,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_3_ins6": {
+    "hidden_homeroom_d2_3_g": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins6",
       "_ko_name": "{name}",
       "_ko_text_preview": "*담임의 시선이 서랍 쪽으로 갔다가 — 바로 돌아온다.*",
@@ -3181,7 +3181,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_7_ins": {
+    "hidden_homeroom_d2_7_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_7_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "많이요. 반 애들이 좋아서.",
@@ -3217,7 +3217,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_8_ins": {
+    "hidden_homeroom_d2_8_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_8_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "아시는 거 보니 다인이가 좀 유명한가 봐요.",
@@ -3253,7 +3253,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_8_ins2": {
+    "hidden_homeroom_d2_8_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_8_ins2",
       "_ko_name": "담임선생님",
       "_ko_text_preview": "유명하다기보다... *커피를 한 모금 마시며* 걱정이 되는 쪽이지.",
@@ -3289,7 +3289,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_8_ins3": {
+    "hidden_homeroom_d2_8_d": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_8_ins3",
       "_ko_name": "{name}",
       "_ko_text_preview": "*'걱정이 되는 쪽'. — 담임이 다인을 걱정하고 있다. 다인의 무릎 이...",
@@ -3325,7 +3325,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_8_ins4": {
+    "hidden_homeroom_d2_8_e": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_8_ins4",
       "_ko_name": "담임선생님",
       "_ko_text_preview": "*커피를 내려놓으며* ...아무튼, 신경 쓸 건 없어. 잘 지내고 있잖아...",
@@ -3361,7 +3361,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_8_ins5": {
+    "hidden_homeroom_d2_8_f": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_8_ins5",
       "_ko_name": "{name}",
       "_ko_text_preview": "*입은 가렸는데 귀가 빨갛다. — 이 사람, 의외로 쉽게 당황하는구나.*",
@@ -3397,7 +3397,7 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d2_11_ins": {
+    "hidden_homeroom_d2_11_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_11_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*아무도 안 듣고 있는데 혼잣말처럼. — 이 사람은 자기 관심을 '업무'...",
@@ -3433,7 +3433,7 @@
         "_issues": null
       }
     },
-    "morning2_haeun_6_ins": {
+    "morning2_haeun_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#morning2_haeun_6_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*하은이 한 발짝 다가온다. 목소리가 낮아진다.*",
@@ -6891,7 +6891,7 @@
         "_issues": null
       }
     },
-    "lunch2_yuna_17_ins": {
+    "lunch2_yuna_17_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_yuna_17_ins",
       "_ko_name": "유나",
       "_ko_text_preview": "......",
@@ -6927,7 +6927,7 @@
         "_issues": null
       }
     },
-    "lunch2_yuna_c1_9_ins": {
+    "lunch2_yuna_c1_9_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_yuna_c1_9_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*유나의 눈빛이 순간 차가워진다.*",
@@ -6963,7 +6963,7 @@
         "_issues": null
       }
     },
-    "lunch2_seo_13b_ins": {
+    "lunch2_seo_13b_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_13b_ins",
       "_ko_name": "서연",
       "_ko_text_preview": "*{name}을 보며* ...밝은 애.",
@@ -6999,7 +6999,7 @@
         "_issues": null
       }
     },
-    "lunch2_seo_c1_2_ins": {
+    "lunch2_seo_c1_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_c1_2_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*다인이 눈이 커진 채 둘을 번갈아 본다.*",
@@ -7035,7 +7035,7 @@
         "_issues": null
       }
     },
-    "lunch2_seo_c1_3_ins": {
+    "lunch2_seo_c1_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_c1_3_ins",
       "_ko_name": "서연",
       "_ko_text_preview": "*아무렇지 않은 척* 밥풀이었어.",
@@ -7071,7 +7071,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_13_ins": {
+    "lunch2_dain_13_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_13_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*다인이 괜히 소보로를 크게 한 입 베어 문다. 방금 질문이 별거 아니...",
@@ -7107,7 +7107,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins": {
+    "lunch2_dain_end_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*4교시 체육. 운동장에서 달리기를 하는데 — 옆 녀석이 급정거하면서 부...",
@@ -7143,7 +7143,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins3": {
+    "lunch2_dain_end_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins3",
       "_ko_name": "체육교사",
       "_ko_text_preview": "보건실 가서 소독 받고 와.",
@@ -7179,7 +7179,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins4": {
+    "lunch2_dain_end_d": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins4",
       "_ko_name": "{name}",
       "_ko_text_preview": "*보건실 문을 연다. 어제와 같은 소독약 냄새.*",
@@ -7215,7 +7215,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins5": {
+    "lunch2_dain_end_e": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins5",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "*고개를 들며* 어라, 어제의 전학생.",
@@ -7251,7 +7251,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins6": {
+    "lunch2_dain_end_f": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins6",
       "_ko_name": "{name}",
       "_ko_text_preview": "팔꿈치 좀 까졌는데요.",
@@ -7287,7 +7287,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins7": {
+    "lunch2_dain_end_g": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins7",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "또 왔네? 단골 되려고?",
@@ -7323,7 +7323,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins8": {
+    "lunch2_dain_end_h": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins8",
       "_ko_name": "{name}",
       "_ko_text_preview": "*장난스러운 말투는 어제와 같다. 근데 눈은 이미 상처를 살피고 있다.*",
@@ -7359,7 +7359,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins9": {
+    "lunch2_dain_end_i": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins9",
       "_ko_name": "{name}",
       "_ko_text_preview": "*보건선생님이 다가와 팔꿈치를 잡는다. 손이 차갑다.*",
@@ -7395,7 +7395,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins10": {
+    "lunch2_dain_end_j": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins10",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "가만있어 봐~...",
@@ -7431,7 +7431,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins11": {
+    "lunch2_dain_end_k": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins11",
       "_ko_name": "{name}",
       "_ko_text_preview": "*소독약을 묻힌 솜을 꺼내 — 천천히 닦는다. 밴드를 꺼낸다.*",
@@ -7467,7 +7467,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins13": {
+    "lunch2_dain_end_l": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins13",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "*밴드를 붙이며* 여기... 이렇게... 자, 됐다.",
@@ -7503,7 +7503,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins14": {
+    "lunch2_dain_end_m": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins14",
       "_ko_name": "{name}",
       "_ko_text_preview": "*보건선생님의 손이 멈춘다. 그리고 — 아무 일 없다는 듯 다시 움직인다...",
@@ -7539,7 +7539,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins15": {
+    "lunch2_dain_end_n": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins15",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "...차가운 편인데. 오늘 좀 따뜻한가 봐.",
@@ -7575,7 +7575,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins16": {
+    "lunch2_dain_end_o": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins16",
       "_ko_name": "{name}",
       "_ko_text_preview": "*거짓말이다. 아까 잡았을 때 차가웠다. — 손이 따뜻해진 건 지금이다....",
@@ -7611,7 +7611,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins17": {
+    "lunch2_dain_end_p": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins17",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "*빙긋* 정성이야, 정성. 대충 붙이면 떨어지거든.",
@@ -7647,7 +7647,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins18": {
+    "lunch2_dain_end_q": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins18",
       "_ko_name": "{name}",
       "_ko_text_preview": "*정성... 이건가. 아님 다른 이유가 있는 건가.*",
@@ -7683,7 +7683,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins19": {
+    "lunch2_dain_end_r": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins19",
       "_ko_name": "{name}",
       "_ko_text_preview": "*밴드를 확인하는데 — 책상 위에 노트북이 열려 있다. 화면에 뭔가 적혀...",
@@ -7719,7 +7719,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins21": {
+    "lunch2_dain_end_s": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins21",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "*눈을 가늘게 뜨며* 하나만? ...음, 그럼. 나 커피보다 코코아 좋아...",
@@ -7755,7 +7755,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins22": {
+    "lunch2_dain_end_t": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins22",
       "_ko_name": "{name}",
       "_ko_text_preview": "*비밀이라기엔 가벼운데, 알려주는 행위 자체가 — 가까워졌다는 의미다.*",
@@ -7791,7 +7791,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins23": {
+    "lunch2_dain_end_u": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins23",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "*가볍게 웃으며* 비밀~ 선생님도 비밀이 있는 거야.",
@@ -7827,7 +7827,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins24": {
+    "lunch2_dain_end_v": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins24",
       "_ko_name": "{name}",
       "_ko_text_preview": "*장난스럽게 넘기지만, 닫는 속도가 빨랐다. — 보여주고 싶지 않은 게 ...",
@@ -7863,7 +7863,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins25": {
+    "lunch2_dain_end_w": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins25",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "자, 다 됐으니까 수업 가. — 다음에는 안 다치고 와.",
@@ -7899,7 +7899,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins26": {
+    "lunch2_dain_end_x": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins26",
       "_ko_name": "{name}",
       "_ko_text_preview": "안 다치면 올 이유가 없잖아요.",
@@ -7935,7 +7935,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins27": {
+    "lunch2_dain_end_y": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins27",
       "_ko_name": "{name}",
       "_ko_text_preview": "*보건선생님이 잠깐 멈춘다. 그리고 — 목소리가 한 톤 낮아진다.*",
@@ -7971,7 +7971,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins28": {
+    "lunch2_dain_end_z": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins28",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "이유 없어도 와도 돼.",
@@ -8007,7 +8007,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins29": {
+    "lunch2_dain_end_b2": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins29",
       "_ko_name": "{name}",
       "_ko_text_preview": "*장난기가 사라졌다. 그리고 다시 돌아온다. — 지금 거, 봐버렸다.*",
@@ -8043,7 +8043,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins30": {
+    "lunch2_dain_end_c2": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins30",
       "_ko_name": "보건선생님",
       "_ko_text_preview": "*다시 밝은 톤으로* 아 물론 수업 시간에는 안 되고~! 방과후에!",
@@ -8079,7 +8079,7 @@
         "_issues": null
       }
     },
-    "lunch2_dain_end_ins31": {
+    "lunch2_dain_end_d2": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins31",
       "_ko_name": "{name}",
       "_ko_text_preview": "*방금 목소리가 달라진 거. — 착각인가?*",
@@ -10205,7 +10205,7 @@
         "_issues": null
       }
     },
-    "after2_seo_neck_high_2_ins": {
+    "after2_seo_neck_high_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*손끝이 목덜미를 눌렀다가 천천히 풀린다. 둘 다 잠깐 말이 없다.*",
@@ -11393,7 +11393,7 @@
         "_issues": null
       }
     },
-    "after2_yuna_everyday_react_ins": {
+    "after2_yuna_everyday_react_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_yuna_everyday_react_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*허락 같지 않은 말인데, 이상하게 오래 남는다.*",
@@ -12941,7 +12941,7 @@
         "_issues": null
       }
     },
-    "after2_dain_9_ins": {
+    "after2_dain_9_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_9_ins",
       "_ko_name": "다인",
       "_ko_text_preview": "*눈이 커지며* 어? 봐주려고 했는데 안 되겠네.",
@@ -12977,7 +12977,7 @@
         "_issues": null
       }
     },
-    "after2_dain_9_ins2": {
+    "after2_dain_9_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_9_ins2",
       "_ko_name": "{name}",
       "_ko_text_preview": "*다인이 자세를 낮춘다. 눈빛이 달라졌다.*",
@@ -13013,7 +13013,7 @@
         "_issues": null
       }
     },
-    "after2_dain_9_ins3": {
+    "after2_dain_9_d": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_9_ins3",
       "_ko_name": "다인",
       "_ko_text_preview": "진심으로 간다!",
@@ -13049,7 +13049,7 @@
         "_issues": null
       }
     },
-    "after2_dain_9_ins4": {
+    "after2_dain_9_e": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_9_ins4",
       "_ko_name": "{name}",
       "_ko_text_preview": "*랠리가 오간다. 다인의 움직임은 — 확실히 보통이 아니다. 빠르고, 정...",
@@ -13085,7 +13085,7 @@
         "_issues": null
       }
     },
-    "after2_dain_9_ins6": {
+    "after2_dain_9_f": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_9_ins6",
       "_ko_name": "{name}",
       "_ko_text_preview": "*결국 3:2. 아슬아슬하게 이겼다.*",
@@ -13121,7 +13121,7 @@
         "_issues": null
       }
     },
-    "after2_dain_end_ins": {
+    "after2_dain_end_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_end_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*학교 앞 떡볶이집.*",
@@ -13157,7 +13157,7 @@
         "_issues": null
       }
     },
-    "after2_seo_4_ins": {
+    "after2_seo_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_4_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*이 사람의 어휘에서 '부탁'이라는 단어는 존재하지 않는 것 같다.*",
@@ -13193,7 +13193,7 @@
         "_issues": null
       }
     },
-    "after2_seo_6_ins": {
+    "after2_seo_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_6_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*이 사람의 어휘에서 '부탁'이라는 단어는 존재하지 않는 것 같다.*",
@@ -13229,7 +13229,7 @@
         "_issues": null
       }
     },
-    "after2_seo_8b4_ins": {
+    "after2_seo_8b4_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_8b4_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*직접 칭찬이라고 말해주는 거. — 이 사람치고는 드문 일인 것 같다.*",
@@ -13265,7 +13265,7 @@
         "_issues": null
       }
     },
-    "after2_seo_sunset_joke_ins": {
+    "after2_seo_sunset_joke_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_sunset_joke_ins",
       "_ko_name": "서연",
       "_ko_text_preview": "...어이없는 말을 이렇게 자연스럽게 하는 사람은 처음이야.",
@@ -13301,7 +13301,7 @@
         "_issues": null
       }
     },
-    "after2_seo_sunset_react_ins": {
+    "after2_seo_sunset_react_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_sunset_react_ins",
       "_ko_name": "서연",
       "_ko_text_preview": "많이 뭉쳤다. 잠깐 가만히 있어 봐.",
@@ -13337,7 +13337,7 @@
         "_issues": null
       }
     },
-    "after2_seo_neck_react_ins": {
+    "after2_seo_neck_react_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_react_ins",
       "_ko_name": "서연",
       "_ko_text_preview": "많이 뭉쳤다. 잠깐 가만히 있어 봐.",
@@ -13373,7 +13373,7 @@
         "_issues": null
       }
     },
-    "after2_seo_neck_react_ins2": {
+    "after2_seo_neck_react_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_react_ins2",
       "_ko_name": "{name}",
       "_ko_text_preview": "*서연이 일어나 내 뒤로 온다. 어깨에 손을 올린다.*",
@@ -13409,7 +13409,7 @@
         "_issues": null
       }
     },
-    "after2_seo_neck_high_ins": {
+    "after2_seo_neck_high_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_ins",
       "_ko_name": "서연",
       "_ko_text_preview": "*조용히* ...가만히 있어. 좀만.",
@@ -13445,7 +13445,7 @@
         "_issues": null
       }
     },
-    "after2_seo_neck_high_ins2": {
+    "after2_seo_neck_high_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_ins2",
       "_ko_name": "{name}",
       "_ko_text_preview": "*누구 손이? — 서연 손이 내 어깨 위에 있는 건데. 말이 뒤집혔다. ...",
@@ -13481,7 +13481,7 @@
         "_issues": null
       }
     },
-    "after2_seo_neck_low_ins": {
+    "after2_seo_neck_low_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "갑자기 뭐야.",
@@ -13517,7 +13517,7 @@
         "_issues": null
       }
     },
-    "after2_seo_neck_low_ins2": {
+    "after2_seo_neck_low_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low_ins2",
       "_ko_name": "서연",
       "_ko_text_preview": "*손을 거두며* ...아무것도 아냐.",
@@ -13553,7 +13553,7 @@
         "_issues": null
       }
     },
-    "after2_yuna_1_ins": {
+    "after2_yuna_1_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_yuna_1_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*별관 복도. 인기척이 없다. — 비밀 독서 공간 문이 살짝 열려 있다....",
@@ -13589,7 +13589,7 @@
         "_issues": null
       }
     },
-    "after2_yuna_2_ins": {
+    "after2_yuna_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_yuna_2_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*유나가 고개를 든다. 놀라지 않는다.*",
@@ -13625,7 +13625,7 @@
         "_issues": null
       }
     },
-    "after2_yuna_choice_pre3_ins": {
+    "after2_yuna_choice_pre3_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_yuna_choice_pre3_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*유나가 두 문장을 연속으로 말했다. — 원래 한 줄짜리 사람인데.*",
@@ -13661,7 +13661,7 @@
         "_issues": null
       }
     },
-    "after2_yuna_everyday_ins": {
+    "after2_yuna_everyday_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_yuna_everyday_ins",
       "_ko_name": "유나",
       "_ko_text_preview": "...올 거면 와. 말리지는 않을게.",
@@ -13697,7 +13697,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_4_ins": {
+    "minsu_warn_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_4_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*유나가 아주 작게 웃는다. — 저 사람 때문에 여기 있다는 걸, 인정해...",
@@ -13733,7 +13733,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_1_ins": {
+    "minsu_warn_1_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_1_ins",
       "_ko_name": "민수",
       "_ko_text_preview": "*옆에 나란히 서며* 너 요즘 재밌냐?",
@@ -13769,7 +13769,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_7_ins": {
+    "minsu_warn_7_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_7_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*민수가 걸음을 멈춘다. 돌아본다. 평소의 장난기가 없다.*",
@@ -13805,7 +13805,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_7_ins2": {
+    "minsu_warn_7_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_7_ins2",
       "_ko_name": "민수",
       "_ko_text_preview": "야, 나 1년 동안 이 반에 있었어. 서연이가 남한테 먼저 말 거는 거 ...",
@@ -13841,7 +13841,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_13_ins": {
+    "minsu_warn_13_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_13_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*— 숨이 멈칫한다.*",
@@ -13877,7 +13877,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_15_ins": {
+    "minsu_warn_15_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_15_ins",
       "_ko_name": "다인",
       "_ko_text_preview": "내일도 내기하자!! 종목 바꿔서!!",
@@ -13913,7 +13913,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_15_ins2": {
+    "minsu_warn_15_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_15_ins2",
       "_ko_name": "서연",
       "_ko_text_preview": "내일 점심에 옥상 열어놓을게. 와",
@@ -13949,7 +13949,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_15_ins3": {
+    "minsu_warn_15_d": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_15_ins3",
       "_ko_name": "{name}",
       "_ko_text_preview": "*전 학교. — 그 단어가 가슴에 박혔다.*",
@@ -13985,7 +13985,7 @@
         "_issues": null
       }
     },
-    "minsu_warn_15_ins4": {
+    "minsu_warn_15_e": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_15_ins4",
       "_ko_name": "{name}",
       "_ko_text_preview": "*— 걷던 발걸음이 우뚝 멈췄다.*",
@@ -15967,7 +15967,7 @@
         "_issues": null
       }
     },
-    "night2_reply_yuna_6_ins": {
+    "night2_reply_yuna_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*세 번째 별? — 창문을 열고 밤하늘을 올려다본다. 세 번째가 어떤 건지는 모르겠다.*",
@@ -16003,7 +16003,7 @@
         "_issues": "text_updated_cringe_fix"
       }
     },
-    "night2_reply_yuna_6_ins2": {
+    "night2_reply_yuna_6_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6_ins2",
       "_ko_name": "{name}",
       "_ko_text_preview": "*유나다운 수수께끼다. 답을 말해주지 않는 사람. — 알고 싶게 만드는 ...",
@@ -16039,7 +16039,7 @@
         "_issues": null
       }
     },
-    "night2_end_2_ins2": {
+    "night2_end_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_2_ins2",
       "_ko_name": "{name}",
       "_ko_text_preview": "*민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*",
@@ -16075,7 +16075,7 @@
         "_issues": null
       }
     },
-    "night2_end_3_ins": {
+    "night2_end_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_3_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*문제는 그 거리가 생각보다 빠르게 좁아지고 있다는 거다.*",
@@ -16111,7 +16111,7 @@
         "_issues": null
       }
     },
-    "night2_end_4_ins": {
+    "night2_end_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_4_ins",
       "_ko_name": "{name}",
       "_ko_text_preview": "*냉장고를 열었다. 별거 없다. 남은 밥, 계란, 김. — 내일은 뭔가 ...",
@@ -16147,7 +16147,7 @@
         "_issues": null
       }
     },
-    "night2_end_4_ins2": {
+    "night2_end_4_c": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_4_ins2",
       "_ko_name": "{name}",
       "_ko_text_preview": "*대충 도시락을 쌌다. 잘 만든 건 아니다. 정성이라고 하기엔 좀 부끄러...",

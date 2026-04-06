@@ -171,9 +171,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_seo_13b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "lunch2_seo_13b_ins"
+        "next": "lunch2_seo_13b_b"
     },
-    "lunch2_seo_13b_ins": {
+    "lunch2_seo_13b_b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch2_seo_14"
@@ -224,9 +224,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_seo_c1_2": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch2_seo_c1_2_ins"
+        "next": "lunch2_seo_c1_2_b"
     },
-    "lunch2_seo_c1_2_ins": {
+    "lunch2_seo_c1_2_b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_c1_3"
@@ -234,9 +234,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_seo_c1_3": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "lunch2_seo_c1_3_ins"
+        "next": "lunch2_seo_c1_3_b"
     },
-    "lunch2_seo_c1_3_ins": {
+    "lunch2_seo_c1_3_b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch2_seo_c1_4"
@@ -421,9 +421,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_13": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "lunch2_dain_13_ins"
+        "next": "lunch2_dain_13_b"
     },
-    "lunch2_dain_13_ins": {
+    "lunch2_dain_13_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_dain_choice"
@@ -461,30 +461,30 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_pout.png",
         "stats": {"Seoyeon":{"affinity":-3},"Yuna":{"affinity":-3}},
-        "next": "lunch2_dain_end_ins"
+        "next": "lunch2_dain_end_b"
     },
-    "lunch2_dain_end_ins": {
+    "lunch2_dain_end_b": {
         "background": "assets/images/background/playground.png",
         "character": null,
-        "next": "lunch2_dain_end_ins3"
+        "next": "lunch2_dain_end_c"
     },
-    "lunch2_dain_end_ins3": {
+    "lunch2_dain_end_c": {
         "background": "assets/images/background/playground.png",
         "character": null,
         "branches": [
-            { "condition": "nurse_day1", "next": "lunch2_dain_end_ins4" },
+            { "condition": "nurse_day1", "next": "lunch2_dain_end_d" },
             { "next": "lunch2_dain_end_ins4_first" }
         ]
     },
-    "lunch2_dain_end_ins4": {
+    "lunch2_dain_end_d": {
         "background": "assets/images/background/nurse_room.png",
         "character": null,
-        "next": "lunch2_dain_end_ins5"
+        "next": "lunch2_dain_end_e"
     },
-    "lunch2_dain_end_ins5": {
+    "lunch2_dain_end_e": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins6"
+        "next": "lunch2_dain_end_f"
     },
     "lunch2_dain_end_ins4_first": {
         "background": "assets/images/background/nurse_room.png",
@@ -494,25 +494,25 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_end_ins5_first": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins6"
+        "next": "lunch2_dain_end_f"
     },
-    "lunch2_dain_end_ins6": {
+    "lunch2_dain_end_f": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "branches": [
-            { "condition": "nurse_day1", "next": "lunch2_dain_end_ins7" },
+            { "condition": "nurse_day1", "next": "lunch2_dain_end_g" },
             { "next": "lunch2_dain_end_ins7_first" }
         ]
     },
-    "lunch2_dain_end_ins7": {
+    "lunch2_dain_end_g": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins8"
+        "next": "lunch2_dain_end_h"
     },
-    "lunch2_dain_end_ins8": {
+    "lunch2_dain_end_h": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins9"
+        "next": "lunch2_dain_end_i"
     },
     "lunch2_dain_end_ins7_first": {
         "background": "assets/images/background/nurse_room.png",
@@ -522,112 +522,112 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_end_ins8_first": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins9"
+        "next": "lunch2_dain_end_i"
     },
-    "lunch2_dain_end_ins9": {
+    "lunch2_dain_end_i": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins10"
+        "next": "lunch2_dain_end_j"
     },
-    "lunch2_dain_end_ins10": {
+    "lunch2_dain_end_j": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins11"
+        "next": "lunch2_dain_end_k"
     },
-    "lunch2_dain_end_ins11": {
+    "lunch2_dain_end_k": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins13"
+        "next": "lunch2_dain_end_l"
     },
-    "lunch2_dain_end_ins13": {
+    "lunch2_dain_end_l": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "branches": [
             { "condition": "nurse_day1", "next": "lunch2_dain_end_nurse_short1" },
-            { "next": "lunch2_dain_end_ins14" }
+            { "next": "lunch2_dain_end_m" }
         ]
     },
-    "lunch2_dain_end_ins14": {
+    "lunch2_dain_end_m": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins15"
+        "next": "lunch2_dain_end_n"
     },
-    "lunch2_dain_end_ins15": {
+    "lunch2_dain_end_n": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins16"
+        "next": "lunch2_dain_end_o"
     },
-    "lunch2_dain_end_ins16": {
+    "lunch2_dain_end_o": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins17"
+        "next": "lunch2_dain_end_p"
     },
-    "lunch2_dain_end_ins17": {
+    "lunch2_dain_end_p": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins18"
+        "next": "lunch2_dain_end_q"
     },
-    "lunch2_dain_end_ins18": {
+    "lunch2_dain_end_q": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins19"
+        "next": "lunch2_dain_end_r"
     },
-    "lunch2_dain_end_ins19": {
+    "lunch2_dain_end_r": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins21"
+        "next": "lunch2_dain_end_s"
     },
-    "lunch2_dain_end_ins21": {
+    "lunch2_dain_end_s": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins22"
+        "next": "lunch2_dain_end_t"
     },
-    "lunch2_dain_end_ins22": {
+    "lunch2_dain_end_t": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins23"
+        "next": "lunch2_dain_end_u"
     },
-    "lunch2_dain_end_ins23": {
+    "lunch2_dain_end_u": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins24"
+        "next": "lunch2_dain_end_v"
     },
-    "lunch2_dain_end_ins24": {
+    "lunch2_dain_end_v": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins25"
+        "next": "lunch2_dain_end_w"
     },
-    "lunch2_dain_end_ins25": {
+    "lunch2_dain_end_w": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins26"
+        "next": "lunch2_dain_end_x"
     },
-    "lunch2_dain_end_ins26": {
+    "lunch2_dain_end_x": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins27"
+        "next": "lunch2_dain_end_y"
     },
-    "lunch2_dain_end_ins27": {
+    "lunch2_dain_end_y": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins28"
+        "next": "lunch2_dain_end_z"
     },
-    "lunch2_dain_end_ins28": {
+    "lunch2_dain_end_z": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins29"
+        "next": "lunch2_dain_end_b2"
     },
-    "lunch2_dain_end_ins29": {
+    "lunch2_dain_end_b2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins30"
+        "next": "lunch2_dain_end_c2"
     },
-    "lunch2_dain_end_ins30": {
+    "lunch2_dain_end_c2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins31"
+        "next": "lunch2_dain_end_d2"
     },
-    "lunch2_dain_end_ins31": {
+    "lunch2_dain_end_d2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after2_start"
@@ -793,9 +793,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_17": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch2_yuna_17_ins"
+        "next": "lunch2_yuna_17_b"
     },
-    "lunch2_yuna_17_ins": {
+    "lunch2_yuna_17_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch2_yuna_choice"
@@ -846,9 +846,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_c1_9": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch2_yuna_c1_9_ins"
+        "next": "lunch2_yuna_c1_9_b"
     },
-    "lunch2_yuna_c1_9_ins": {
+    "lunch2_yuna_c1_9_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_angry.png",
         "next": "lunch2_yuna_c1_10"

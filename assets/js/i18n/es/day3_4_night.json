@@ -160,71 +160,71 @@
         "name": "{name}",
         "text": "*La noche se hace más profunda...*"
     },
-    "night3_faithful_msg_yuna_2_ins": {
+    "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
         "text": "*Porque si escribe el final, se acabó. — Yuna tiene miedo de que esta historia termine.*"
     },
-    "night3_cheat_msg_3_ins": {
+    "night3_cheat_msg_3_b": {
         "name": "{name}",
         "text": "*Seoyeon usa la palabra 'por favor.' — Esa palabra no existía en su vocabulario. Así de rota está.*"
     },
-    "night3_cheat_msg_4_ins": {
+    "night3_cheat_msg_4_b": {
         "name": "Yuna",
         "text": "*Solo espero que no te tomes a la ligera la decisión de al lado de quién vas a estar.*"
     },
-    "night3_nightmare_2_ins": {
+    "night3_nightmare_2_b": {
         "name": "{name}",
         "text": "*Escucho la voz de Seoyeon.*"
     },
-    "night3_nightmare_3_ins": {
+    "night3_nightmare_3_b": {
         "name": "{name}",
         "text": "*La voz de Yuna.*"
     },
-    "night3_nightmare_4_ins": {
+    "night3_nightmare_4_b": {
         "name": "{name}",
         "text": "*La voz de Dain.*"
     },
-    "night3_dream_2_ins": {
+    "night3_dream_2_b": {
         "name": "{name}",
         "text": "*Esta vez quería decirlo sin arrepentirme. Me prometí que en esta escuela viviría con honestidad.*"
     },
-    "night3_cheat_reflect_3_ins": {
+    "night3_cheat_reflect_3_b": {
         "name": "{name}",
         "text": "*Lo contrario de lo que pasó con Sojeong, pero el resultado es el mismo. Alguien sale herido.*"
     },
-    "night3_cheat_reflect_3_ins3": {
+    "night3_cheat_reflect_3_c": {
         "name": "{name}",
         "text": "*Esta escuela: arrepentimiento por decirlo a todas.*"
     },
-    "night3_cheat_reflect_3_ins5": {
+    "night3_cheat_reflect_3_d": {
         "name": "{name}",
         "text": "*Minsu lo dijo. 'Rechazar también es amor.'*"
     },
-    "night3_cheat_reflect_3_ins7": {
+    "night3_cheat_reflect_3_e": {
         "name": "{name}",
         "text": "*Yuna lo dijo. 'No huyas.'*"
     },
-    "night3_faithful_reflect_2_ins": {
+    "night3_faithful_reflect_2_b": {
         "name": "{name}",
         "text": "*'¿Eliminar esta foto?'*"
     },
-    "night3_faithful_reflect_2_ins3": {
+    "night3_faithful_reflect_2_c": {
         "name": "{name}",
         "text": "*Un segundo. Solo me quedo mirando la pantalla.*"
     },
-    "night3_faithful_reflect_2_ins5": {
+    "night3_faithful_reflect_2_d": {
         "name": "{name}",
         "text": "*...Sí. Primero tengo que rechazar mi propio pasado.*"
     },
-    "night3_faithful_reflect_3_ins": {
+    "night3_faithful_reflect_3_b": {
         "name": "{name}",
         "text": "*Minsu lo dijo. 'Rechazar también es amor.' Tiene razón. En mi antigua escuela, Sojeong ni siquiera tuvo la oportunidad de rechazarme. Porque yo mantuve la boca cerrada. — Ese fue el final más cruel para los dos.*"
     },
-    "night3_faithful_reflect_4_ins2": {
+    "night3_faithful_reflect_4_b": {
         "name": "{name}",
         "text": "*Borrar la foto fue fácil. Un solo dedo bastó. — Los sentimientos tardan más que eso.*"
     },
-    "night3_faithful_reflect_4_ins6": {
+    "night3_faithful_reflect_4_c": {
         "name": "{name}",
         "text": "*Cerré el teléfono. La galería está vacía, y mi mente aún está confusa. — Aun así, un paso.*"
     },

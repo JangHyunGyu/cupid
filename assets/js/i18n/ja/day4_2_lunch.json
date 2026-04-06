@@ -271,63 +271,63 @@
     "name": "{name}",
     "text": "*ゲームセンターへ向かった。*"
   },
-  "date_seo_pretty_high_ins": {
+  "date_seo_pretty_high_b": {
     "name": "ソヨン",
     "text": "……その台詞。用意してきたの？"
   },
-  "date_seo_pretty_high_3_ins": {
+  "date_seo_pretty_high_3_b": {
     "name": "ソヨン",
     "text": "*髪をかき上げながら* ……勘違いしないで。"
   },
-  "date_seo_flower_ins": {
+  "date_seo_flower_b": {
     "name": "ソヨン",
     "text": "*足を止めて* ……入ってみる？"
   },
-  "date_seo_succulent_2_ins": {
+  "date_seo_succulent_2_b": {
     "name": "{name}",
     "text": "僕にくれるの？"
   },
-  "date_yuna_pretty_high_5_ins": {
+  "date_yuna_pretty_high_5_b": {
     "name": "{name}",
     "text": "きれいだよ。"
   },
-  "date_yuna_pretty_high_5_ins2": {
+  "date_yuna_pretty_high_5_c": {
     "name": "ユナ",
     "text": "*耳が赤くなりながら* ……もういい。"
   },
-  "date_yuna_bookstore_2_ins": {
+  "date_yuna_bookstore_2_b": {
     "name": "{name}",
     "text": "初めて。"
   },
-  "date_yuna_earphone_2_ins": {
+  "date_yuna_earphone_2_b": {
     "name": "{name}",
     "text": "*静かなピアノ曲が流れる。書店の雑音が遠くなる。*"
   },
-  "date_yuna_oldbook_ins": {
+  "date_yuna_oldbook_b": {
     "name": "ユナ",
     "text": "……ここ。"
   },
-  "date_yuna_oldbook_ins2": {
+  "date_yuna_oldbook_c": {
     "name": "{name}",
     "text": "*古い本を一冊取り出す。ページをめくりながら。*"
   },
-  "date_dain_shop_3_ins": {
+  "date_dain_shop_3_b": {
     "name": "ダイン",
     "text": "*キャップの下から* ……もう一回言ったらマジで殴る。"
   },
-  "date_dain_arcade_2_ins": {
+  "date_dain_arcade_2_b": {
     "name": "{name}",
     "text": "また勝負？"
   },
-  "date_dain_arcade_3_ins": {
+  "date_dain_arcade_3_b": {
     "name": "{name}",
     "text": "*リズムゲーム。——ダインが圧倒的にうまい。*"
   },
-  "date_dain_arcade_3_ins2": {
+  "date_dain_arcade_3_c": {
     "name": "ダイン",
     "text": "*キャーと叫びながら* フルコンボ！！ 見た？！"
   },
-  "date_dain_shop_2_ins": {
+  "date_dain_shop_2_b": {
     "name": "ダイン",
     "text": "*顔をそらして* なんでもない！ 行こ！"
   },

@@ -220,27 +220,27 @@
     "name": "Yuna",
     "text": "...Oui. Bonne nuit."
   },
-  "night2_reply_yuna_6_ins": {
+  "night2_reply_yuna_6_b": {
     "name": "{name}",
     "text": "*La troisième étoile ? — J'ouvre la fenêtre et lève les yeux vers le ciel. Impossible de savoir laquelle est la troisième.*"
   },
-  "night2_reply_yuna_6_ins2": {
+  "night2_reply_yuna_6_c": {
     "name": "{name}",
     "text": "*Une devinette très Yuna. Une personne qui ne donne jamais la réponse. — Une personne qui donne envie de chercher.*"
   },
-  "night2_end_2_ins2": {
+  "night2_end_2_b": {
     "name": "{name}",
     "text": "*Ces mots tournent en boucle. Je n'ai toujours pas répondu.*"
   },
-  "night2_end_3_ins": {
+  "night2_end_3_b": {
     "name": "{name}",
     "text": "*Le problème, c'est que cette distance se réduit plus vite que prévu.*"
   },
-  "night2_end_4_ins": {
+  "night2_end_4_b": {
     "name": "{name}",
     "text": "*J'ouvre le frigo. Pas grand-chose. Du riz restant, des œufs, des algues. — J'ai envie de préparer quelque chose à apporter demain. Pour qui ? Aucune idée. J'en ai juste envie.*"
   },
-  "night2_end_4_ins2": {
+  "night2_end_4_c": {
     "name": "{name}",
     "text": "*J'ai bricolé un bentō à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
   }

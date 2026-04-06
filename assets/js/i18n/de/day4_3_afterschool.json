@@ -19,7 +19,7 @@
         "name": "{name}",
         "text": "*Seoyeon lehnt am Geländer. Der Wind weht ihr Haar. — Sie streicht es mit dem kleinen Finger zurück. Diese Angewohnheit.*"
     },
-    "confess_seo_4_ins": {
+    "confess_seo_4_b": {
         "name": "{name}",
         "text": "*Mein Herz rast. An meiner alten Schule war es genauso. — Damals habe ich die Worte runtergeschluckt.*"
     },
@@ -79,7 +79,7 @@
         "name": "Seoyeon",
         "text": "Es hat wirklich lange gedauert, bis ich das zur Sprache gebracht habe."
     },
-    "confess_seo_yes_11_ins": {
+    "confess_seo_yes_11_b": {
         "name": "{name}",
         "text": "*Seoyeons Hand bewegt sich.*"
     },
@@ -103,7 +103,7 @@
         "name": "Seoyeon",
         "text": "...Wenn du das nächste Mal herkommst, bereite etwas anderes vor."
     },
-    "confess_seo_no_4_ins": {
+    "confess_seo_no_4_b": {
         "name": "{name}",
         "text": "*Ihr Rücken ist gerade. Sie zittert.*"
     },
@@ -151,7 +151,7 @@
         "name": "{name}",
         "text": "Yuna. Am Anfang dachte ich, dein Schweigen sei eine Mauer. Aber das war es nicht."
     },
-    "confess_yuna_yes_3_ins": {
+    "confess_yuna_yes_3_b": {
         "name": "{name}",
         "text": "Wenn ich neben dir bin, hat sich die Stille nie unangenehm angefühlt."
     },
@@ -167,7 +167,7 @@
         "name": "{name}",
         "text": "Ich mag dich."
     },
-    "confess_yuna_yes_6_ins": {
+    "confess_yuna_yes_6_b": {
         "name": "{name}",
         "text": "*Ich habe gerade den längsten Satz in diesem Raum gesagt. In Yunas Revier.*"
     },
@@ -179,11 +179,11 @@
         "name": "{name}",
         "text": "*Yunas ausdruckslose Miene bricht auf. Ihre träge Stimme verschwindet, ersetzt durch die kleinste — kaum hörbare — Stimme. Sie umklammert ihren Ärmel.*"
     },
-    "confess_yuna_yes_8_ins": {
+    "confess_yuna_yes_8_b": {
         "name": "{name}",
         "text": "*Sie umklammert ihren Ärmel fest.*"
     },
-    "confess_yuna_yes_8_ins2": {
+    "confess_yuna_yes_8_c": {
         "name": "Yuna",
         "text": "...Geh nicht."
     },
@@ -191,7 +191,7 @@
         "name": "Yuna",
         "text": "...Geh nicht. Diesmal geh nicht."
     },
-    "confess_yuna_yes_9_ins": {
+    "confess_yuna_yes_9_b": {
         "name": "{name}",
         "text": "*Diesmal. Jemand ist vorher gegangen. Yuna öffnet diese Wunde erneut und hält mich trotzdem fest.*"
     },
@@ -211,7 +211,7 @@
         "name": "Yuna",
         "text": "...Das Ende ist noch nicht da."
     },
-    "confess_yuna_no_4_ins": {
+    "confess_yuna_no_4_b": {
         "name": "{name}",
         "text": "*Drei Schritte entfernt drehte ich mich um. Yuna schaute mich ebenfalls an, über ihr Buch hinweg.*"
     },
@@ -259,7 +259,7 @@
         "name": "{name}",
         "text": "Dain. Ich — ich muss dir etwas sagen."
     },
-    "confess_dain_yes_3_ins": {
+    "confess_dain_yes_3_b": {
         "name": "{name}",
         "text": "Wenn deine Augen nicht auf mir ruhen — wird das Atmen schwer."
     },
@@ -283,7 +283,7 @@
         "name": "{name}",
         "text": "*Dain hält inne. Auf ihrem Gesicht, das kein Lächeln mehr zeigt, werden nur ihre Augen langsam feucht. Sie vergräbt ihr Gesicht in beiden Händen.*"
     },
-    "confess_dain_yes_8_ins": {
+    "confess_dain_yes_8_b": {
         "name": "{name}",
         "text": "*Sie bedeckt ihr Gesicht mit beiden Händen. Durch die Lücken zwischen den Fingern sind rote Wangen zu sehen.*"
     },
@@ -291,7 +291,7 @@
         "name": "Dain",
         "text": "...Moment, ich glaube, ich muss gleich wirklich weinen... Ich bin doch glücklich, warum ist das so..."
     },
-    "confess_dain_yes_9_ins": {
+    "confess_dain_yes_9_b": {
         "name": "{name}",
         "text": "*Sie nimmt die Hände herunter und lächelt. Tränen laufen über ihr Gesicht.*"
     },
@@ -299,7 +299,7 @@
         "name": "Dain",
         "text": "Ich mag dich auch. Total."
     },
-    "confess_dain_yes_10_ins": {
+    "confess_dain_yes_10_b": {
         "name": "{name}",
         "text": "*‚Total.' — Dain ist immer so. Kurz und ehrlich. Deshalb glaubt man ihr.*"
     },
@@ -319,7 +319,7 @@
         "name": "Dain",
         "text": "...Nächstes Mal lauf nicht weg."
     },
-    "confess_dain_no_4_ins": {
+    "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*Keine Ausrufezeichen. Sie meint es ernst.*"
     }

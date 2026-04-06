@@ -434,31 +434,31 @@
         "name": "Yuna",
         "text": "...But this library isn't bad. It's quiet."
     },
-    "lunch_start_4_ins": {
+    "lunch_start_4_b": {
         "name": "{name}",
         "text": "*Dain grabs my arm from beside me.*"
     },
-    "lunch_seo_6_ins": {
+    "lunch_seo_6_b": {
         "name": "Seoyeon",
         "text": "*Smiling* Suspicious, aren't you. I just came up here because it was stuffy in the classroom."
     },
-    "lunch_seo_c1_2_ins": {
+    "lunch_seo_c1_2_b": {
         "name": "{name}",
         "text": "*Seoyeon turns her head and fiddles with her water bottle for no reason.*"
     },
-    "lunch_seo_c1_3_ins": {
+    "lunch_seo_c1_3_b": {
         "name": "{name}",
         "text": "*If I tease her more here, she'll immediately draw a line. I'll just pretend not to see it.*"
     },
-    "lunch_dain_12_ins": {
+    "lunch_dain_12_b": {
         "name": "Dain",
         "text": "Ah, alright! I'll buy it, I'll buy it! Ma'am, two soboro breads!"
     },
-    "lunch_yuna_5_ins": {
+    "lunch_yuna_5_b": {
         "name": "{name}",
         "text": "...Can I sit here?"
     },
-    "lunch_yuna_10_ins": {
+    "lunch_yuna_10_b": {
         "name": "{name}",
         "text": "*Something is tucked into Yuna's desk. An old bookmark. There's writing on it — but I can't quite make it out. Yuna unconsciously rests her hand on top of it. Something precious, maybe.*"
     }

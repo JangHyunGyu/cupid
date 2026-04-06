@@ -168,14 +168,14 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "hallway_6": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "hallway_6_ins"
+        "next": "hallway_6_b"
     },
-    "hallway_6_ins": {
+    "hallway_6_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "hallway_6_ins2"
+        "next": "hallway_6_c"
     },
-    "hallway_6_ins2": {
+    "hallway_6_c": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "hallway_7"
@@ -208,9 +208,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "hallway_13": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_back.png",
-        "next": "hallway_13_ins"
+        "next": "hallway_13_b"
     },
-    "hallway_13_ins": {
+    "hallway_13_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_back.png",
         "setFlags": ["met_seoyeon"],
@@ -220,9 +220,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "bgm": "daily.mp3",
-        "next": "classroom_2_ins"
+        "next": "classroom_2_b"
     },
-    "classroom_2_ins": {
+    "classroom_2_b": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_3"
@@ -230,19 +230,19 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "classroom_3": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_3_ins"
+        "next": "classroom_3_b"
     },
-    "classroom_3_ins": {
+    "classroom_3_b": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_5_ins2"
+        "next": "classroom_5_b"
     },
-    "classroom_5_ins2": {
+    "classroom_5_b": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_5_ins3"
+        "next": "classroom_5_c"
     },
-    "classroom_5_ins3": {
+    "classroom_5_c": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_dain_1"
@@ -270,19 +270,19 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "classroom_dain_5": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "classroom_dain_5_ins"
+        "next": "classroom_dain_5_b"
     },
-    "classroom_dain_5_ins": {
+    "classroom_dain_5_b": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_dain_5_ins2"
+        "next": "classroom_dain_5_c"
     },
-    "classroom_dain_5_ins2": {
+    "classroom_dain_5_c": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_dain_5_ins3"
+        "next": "classroom_dain_5_d"
     },
-    "classroom_dain_5_ins3": {
+    "classroom_dain_5_d": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_angry.png",
         "next": "classroom_yuna_1"
@@ -325,9 +325,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "classroom_minsu_3": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/minsu_smirk.png",
-        "next": "classroom_minsu_2_ins"
+        "next": "classroom_minsu_2_b"
     },
-    "classroom_minsu_2_ins": {
+    "classroom_minsu_2_b": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/minsu_normal.png",
         "next": "classroom_dain_talk_1"

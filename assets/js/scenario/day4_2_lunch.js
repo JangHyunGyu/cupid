@@ -28,9 +28,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "stats": {"Seoyeon":{"affinity":3}},
-        "next": "date_seo_pretty_high_ins"
+        "next": "date_seo_pretty_high_b"
     },
-    "date_seo_pretty_high_ins": {
+    "date_seo_pretty_high_b": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy.png",
         "next": "date_seo_pretty_high_2"
@@ -43,9 +43,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_pretty_high_3": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "next": "date_seo_pretty_high_3_ins"
+        "next": "date_seo_pretty_high_3_b"
     },
-    "date_seo_pretty_high_3_ins": {
+    "date_seo_pretty_high_3_b": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy2.png",
         "next": "date_seo_pretty_high_4"
@@ -89,9 +89,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_duck_4": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_flower_ins"
+        "next": "date_seo_flower_b"
     },
-    "date_seo_flower_ins": {
+    "date_seo_flower_b": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_flower_2"
@@ -104,9 +104,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_succulent_2": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_succulent_2_ins"
+        "next": "date_seo_succulent_2_b"
     },
-    "date_seo_succulent_2_ins": {
+    "date_seo_succulent_2_b": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_succulent_3"
@@ -175,14 +175,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_pretty_high_5": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "date_yuna_pretty_high_5_ins"
+        "next": "date_yuna_pretty_high_5_b"
     },
-    "date_yuna_pretty_high_5_ins": {
+    "date_yuna_pretty_high_5_b": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "date_yuna_pretty_high_5_ins2"
+        "next": "date_yuna_pretty_high_5_c"
     },
-    "date_yuna_pretty_high_5_ins2": {
+    "date_yuna_pretty_high_5_c": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_bookstore"
@@ -206,9 +206,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_bookstore_2": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_bookstore_2_ins"
+        "next": "date_yuna_bookstore_2_b"
     },
-    "date_yuna_bookstore_2_ins": {
+    "date_yuna_bookstore_2_b": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_bookstore_3"
@@ -226,9 +226,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_earphone_2": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_earphone_2_ins"
+        "next": "date_yuna_earphone_2_b"
     },
-    "date_yuna_earphone_2_ins": {
+    "date_yuna_earphone_2_b": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_earphone_3"
@@ -241,14 +241,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_oldbook": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_oldbook_ins"
+        "next": "date_yuna_oldbook_b"
     },
-    "date_yuna_oldbook_ins": {
+    "date_yuna_oldbook_b": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "date_yuna_oldbook_ins2"
+        "next": "date_yuna_oldbook_c"
     },
-    "date_yuna_oldbook_ins2": {
+    "date_yuna_oldbook_c": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_oldbook_2"
@@ -358,9 +358,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_dain_arcade_2": {
         "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_arcade_2_ins"
+        "next": "date_dain_arcade_2_b"
     },
-    "date_dain_arcade_2_ins": {
+    "date_dain_arcade_2_b": {
         "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_arcade_3"
@@ -368,14 +368,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_dain_arcade_3": {
         "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_arcade_3_ins"
+        "next": "date_dain_arcade_3_b"
     },
-    "date_dain_arcade_3_ins": {
+    "date_dain_arcade_3_b": {
         "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_arcade_3_ins2"
+        "next": "date_dain_arcade_3_c"
     },
-    "date_dain_arcade_3_ins2": {
+    "date_dain_arcade_3_c": {
         "background": "assets/images/background/arcade.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_rhythm"
@@ -413,9 +413,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_dain_shop_2": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_shop_2_ins"
+        "next": "date_dain_shop_2_b"
     },
-    "date_dain_shop_2_ins": {
+    "date_dain_shop_2_b": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_shop_3"
@@ -423,9 +423,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_dain_shop_3": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "date_dain_shop_3_ins"
+        "next": "date_dain_shop_3_b"
     },
-    "date_dain_shop_3_ins": {
+    "date_dain_shop_3_b": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_end"

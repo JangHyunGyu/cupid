@@ -301,39 +301,39 @@
         "name": "{name}",
         "text": "*I headed back to the classroom.*"
     },
-    "lunch3_start_2_ins": {
+    "lunch3_start_2_b": {
         "name": "Dain",
         "text": "*She takes a big bite of the rolled omelette without hesitation.*"
     },
-    "lunch3_meal_7_ins": {
+    "lunch3_meal_7_b": {
         "name": "Yuna",
         "text": "*Already chewing* ...It's good."
     },
-    "lunch3_meal_10_ins2": {
+    "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*No one leaves their seat. They're all smiling, but none of them can easily pick up their chopsticks. That last side dish just stands out.*"
     },
-    "lunch3_meal_10_ins3": {
+    "lunch3_meal_10_c": {
         "name": "{name}",
         "text": "*Seoyeon's chopsticks pause. She composes herself. The student council president's face returns. — I know it's not fine. I feel bad.*"
     },
-    "lunch3_meal_10_ins4": {
+    "lunch3_meal_10_d": {
         "name": "{name}",
         "text": "*All together?! Great!! The exclamation marks are alive. — But her voice is half a tone lower. Normally she'd be dragging chairs over, but today she doesn't move from her seat.*"
     },
-    "lunch3_meal_10_ins5": {
+    "lunch3_meal_10_e": {
         "name": "{name}",
         "text": "*Yuna just nods. She writes on a note, folds it, and puts it in her pocket. Doesn't hand it over. — No idea what it said.*"
     },
-    "lunch3_expose_7_ins": {
+    "lunch3_expose_7_b": {
         "name": "{name}",
         "text": "*The last one quietly sets hers down.*"
     },
-    "lunch3_expose_honest_4_ins": {
+    "lunch3_expose_honest_4_b": {
         "name": "{name}",
         "text": "*Seoyeon's expression changes. — Still calm, but there's an edge to it now.*"
     },
-    "lunch3_expose_excuse_2_ins": {
+    "lunch3_expose_excuse_2_b": {
         "name": "{name}",
         "text": "*Dain stands up.*"
     }

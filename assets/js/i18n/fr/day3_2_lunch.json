@@ -301,39 +301,39 @@
         "name": "{name}",
         "text": "*Je suis retourné en classe.*"
     },
-    "lunch3_start_2_ins": {
+    "lunch3_start_2_b": {
         "name": "Dain",
         "text": "*Croque dans l'omelette sans hésiter.*"
     },
-    "lunch3_meal_7_ins": {
+    "lunch3_meal_7_b": {
         "name": "Yuna",
         "text": "*Déjà en train de mâcher* ...C'est bon."
     },
-    "lunch3_meal_10_ins2": {
+    "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*Personne ne quitte sa place. Elles ont le sourire, mais aucune des trois n'arrive à prendre facilement ses baguettes. Le dernier plat d'accompagnement attire l'attention sans raison.*"
     },
-    "lunch3_meal_10_ins3": {
+    "lunch3_meal_10_c": {
         "name": "{name}",
         "text": "*Les baguettes de Seoyeon s'arrêtent. Elle reprend contenance. Le visage de la présidente du conseil revient. — Je sais que ce n'est pas rien. Je m'en veux.*"
     },
-    "lunch3_meal_10_ins4": {
+    "lunch3_meal_10_d": {
         "name": "{name}",
         "text": "*Tous ensemble ?! Super !! Les points d'exclamation sont bien là. — Mais sa voix est un demi-ton plus basse. D'habitude elle aurait tiré des chaises, mais aujourd'hui elle ne bouge pas de sa place.*"
     },
-    "lunch3_meal_10_ins5": {
+    "lunch3_meal_10_e": {
         "name": "{name}",
         "text": "*Yuna hoche juste la tête. Elle écrit sur un papier, le plie et le met dans sa poche. Elle ne le donne pas. — Aucune idée de ce qui était écrit.*"
     },
-    "lunch3_expose_7_ins": {
+    "lunch3_expose_7_b": {
         "name": "{name}",
         "text": "*La dernière pose les siens en silence.*"
     },
-    "lunch3_expose_honest_4_ins": {
+    "lunch3_expose_honest_4_b": {
         "name": "{name}",
         "text": "*L'expression de Seoyeon change. — Toujours calme, mais avec quelque chose de tranchant maintenant.*"
     },
-    "lunch3_expose_excuse_2_ins": {
+    "lunch3_expose_excuse_2_b": {
         "name": "{name}",
         "text": "*Dain se lève.*"
     }

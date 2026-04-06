@@ -19,7 +19,7 @@
         "name": "{name}",
         "text": "*Seoyeon is leaning against the railing. The wind catches her hair. — She tucks it back with her pinky. That habit.*"
     },
-    "confess_seo_4_ins": {
+    "confess_seo_4_b": {
         "name": "{name}",
         "text": "*My heart is pounding. It was like this at my old school too. — Back then, I swallowed those words.*"
     },
@@ -79,7 +79,7 @@
         "name": "Seoyeon",
         "text": "It really took a long time to bring up this topic."
     },
-    "confess_seo_yes_11_ins": {
+    "confess_seo_yes_11_b": {
         "name": "{name}",
         "text": "*Seoyeon's hand moves.*"
     },
@@ -103,7 +103,7 @@
         "name": "Seoyeon",
         "text": "...Next time you come here, have something else to say."
     },
-    "confess_seo_no_4_ins": {
+    "confess_seo_no_4_b": {
         "name": "{name}",
         "text": "*Her back is straight. She's trembling.*"
     },
@@ -151,7 +151,7 @@
         "name": "{name}",
         "text": "Yuna. At first I thought your silence was a wall. But it wasn't."
     },
-    "confess_yuna_yes_3_ins": {
+    "confess_yuna_yes_3_b": {
         "name": "{name}",
         "text": "When I'm next to you, the silence never felt uncomfortable."
     },
@@ -167,7 +167,7 @@
         "name": "{name}",
         "text": "I like you."
     },
-    "confess_yuna_yes_6_ins": {
+    "confess_yuna_yes_6_b": {
         "name": "{name}",
         "text": "*I just said the longest sentence in this room. In Yuna's domain.*"
     },
@@ -179,11 +179,11 @@
         "name": "{name}",
         "text": "*Yuna's blank expression cracks. Her languid voice disappears, replaced by the tiniest -- almost inaudible -- whisper. She grips her sleeve tight.*"
     },
-    "confess_yuna_yes_8_ins": {
+    "confess_yuna_yes_8_b": {
         "name": "{name}",
         "text": "*She grips her sleeve tight.*"
     },
-    "confess_yuna_yes_8_ins2": {
+    "confess_yuna_yes_8_c": {
         "name": "Yuna",
         "text": "...Don't go."
     },
@@ -191,7 +191,7 @@
         "name": "Yuna",
         "text": "...Don't go. This time, don't go."
     },
-    "confess_yuna_yes_9_ins": {
+    "confess_yuna_yes_9_b": {
         "name": "{name}",
         "text": "*This time. Someone left before. Yuna is reopening that wound, and still holding onto me.*"
     },
@@ -211,7 +211,7 @@
         "name": "Yuna",
         "text": "...The ending hasn't come yet."
     },
-    "confess_yuna_no_4_ins": {
+    "confess_yuna_no_4_b": {
         "name": "{name}",
         "text": "*Three steps away, I looked back. Yuna was watching me too, over the top of her book.*"
     },
@@ -259,7 +259,7 @@
         "name": "{name}",
         "text": "Dain. I — I have something to tell you."
     },
-    "confess_dain_yes_3_ins": {
+    "confess_dain_yes_3_b": {
         "name": "{name}",
         "text": "When your eyes aren't on me — it gets hard to breathe."
     },
@@ -283,7 +283,7 @@
         "name": "{name}",
         "text": "*Dain freezes. On her face, devoid of laughter, only her eyes slowly moisten. She covers her face with both hands.*"
     },
-    "confess_dain_yes_8_ins": {
+    "confess_dain_yes_8_b": {
         "name": "{name}",
         "text": "*She covers her face with both hands. Through the gaps between her fingers, red cheeks are visible.*"
     },
@@ -291,7 +291,7 @@
         "name": "Dain",
         "text": "...Wait, I really feel like crying right now... I'm happy, so why am I like this..."
     },
-    "confess_dain_yes_9_ins": {
+    "confess_dain_yes_9_b": {
         "name": "{name}",
         "text": "*She lowers her hands and smiles. Tears are running down her face.*"
     },
@@ -299,7 +299,7 @@
         "name": "Dain",
         "text": "I like you too. So much."
     },
-    "confess_dain_yes_10_ins": {
+    "confess_dain_yes_10_b": {
         "name": "{name}",
         "text": "*'A lot.' — Dain is always like this. Short and honest. That's why it's convincing.*"
     },
@@ -319,7 +319,7 @@
         "name": "Dain",
         "text": "...Next time, don't run away."
     },
-    "confess_dain_no_4_ins": {
+    "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*No exclamation marks. She means it.*"
     }

@@ -519,39 +519,39 @@
         "name": "{name}",
         "text": "*ダインのソボロパンのクランチ音がやたら大きい。ソヨンの視線も、ダインの耳たぶも——昼休みがだんだん複雑になっていく。*"
     },
-    "lunch2_yuna_17_ins": {
+    "lunch2_yuna_17_b": {
         "name": "ユナ",
         "text": "……"
     },
-    "lunch2_yuna_c1_9_ins": {
+    "lunch2_yuna_c1_9_b": {
         "name": "{name}",
         "text": "*ユナの目が一瞬、冷たくなる。*"
     },
-    "lunch2_seo_13b_ins": {
+    "lunch2_seo_13b_b": {
         "name": "ソヨン",
         "text": "*{name}を見て* …明るい子だね"
     },
-    "lunch2_seo_c1_2_ins": {
+    "lunch2_seo_c1_2_b": {
         "name": "{name}",
         "text": "*ダインが目を丸くして、二人を交互に見ている。*"
     },
-    "lunch2_seo_c1_3_ins": {
+    "lunch2_seo_c1_3_b": {
         "name": "ソヨン",
         "text": "*何でもない顔で* ご飯粒だったの"
     },
-    "lunch2_dain_13_ins": {
+    "lunch2_dain_13_b": {
         "name": "{name}",
         "text": "*ダインがわざとらしくソボロパンを大きくかじる。さっきの質問なんて大したことないみたいに。*"
     },
-    "lunch2_dain_end_ins": {
+    "lunch2_dain_end_b": {
         "name": "{name}",
         "text": "*5時限目、体育。グラウンドで走っていたら——隣の奴が急停止してぶつかった。肘を擦りむいた。*"
     },
-    "lunch2_dain_end_ins3": {
+    "lunch2_dain_end_c": {
         "name": "体育教師",
         "text": "保健室に行って消毒してもらいなさい。"
     },
-    "lunch2_dain_end_ins4": {
+    "lunch2_dain_end_d": {
         "name": "{name}",
         "text": "*保健室のドアを開ける。昨日と同じ消毒液の匂い。*"
     },
@@ -559,7 +559,7 @@
         "name": "{name}",
         "text": "*保健室のドアを開ける。見慣れない消毒薬の匂いが鼻をかすめる。*"
     },
-    "lunch2_dain_end_ins5": {
+    "lunch2_dain_end_e": {
         "name": "保健先生",
         "text": "*顔を上げて* あら、昨日の転校生くん"
     },
@@ -567,11 +567,11 @@
         "name": "保健先生",
         "text": "*保健室の中。机の上に書類が積まれ、保健室の先生が椅子に座っている。*"
     },
-    "lunch2_dain_end_ins6": {
+    "lunch2_dain_end_f": {
         "name": "{name}",
         "text": "肘をちょっと擦りむいたんですけど。"
     },
-    "lunch2_dain_end_ins7": {
+    "lunch2_dain_end_g": {
         "name": "保健先生",
         "text": "また来たの？ 常連になりたいの？"
     },
@@ -579,7 +579,7 @@
         "name": "保健先生",
         "text": "…あれ？さっきの。昼休みになんの用？"
     },
-    "lunch2_dain_end_ins8": {
+    "lunch2_dain_end_h": {
         "name": "{name}",
         "text": "*昨日と同じふざけた口調。でも目はもう傷を診ている。*"
     },
@@ -587,87 +587,87 @@
         "name": "{name}",
         "text": "*朝よりは顔色がいいみたいね。よかった。*"
     },
-    "lunch2_dain_end_ins9": {
+    "lunch2_dain_end_i": {
         "name": "{name}",
         "text": "*保健先生が近づいて肘をつかむ。手が冷たい。*"
     },
-    "lunch2_dain_end_ins10": {
+    "lunch2_dain_end_j": {
         "name": "保健先生",
         "text": "じっとしてて〜…"
     },
-    "lunch2_dain_end_ins11": {
+    "lunch2_dain_end_k": {
         "name": "{name}",
         "text": "*消毒液を含ませた綿を取り出して——丁寧に拭く。絆創膏を取り出す。*"
     },
-    "lunch2_dain_end_ins13": {
+    "lunch2_dain_end_l": {
         "name": "保健先生",
         "text": "*絆創膏を貼りながら* ここに…こうして…はい、できた"
     },
-    "lunch2_dain_end_ins14": {
+    "lunch2_dain_end_m": {
         "name": "{name}",
         "text": "*保健先生の手が止まる。——0.5秒。そしてまた動き出す。*"
     },
-    "lunch2_dain_end_ins15": {
+    "lunch2_dain_end_n": {
         "name": "保健先生",
         "text": "…手が冷たい方なんだけど。今日はちょっと温かいみたい"
     },
-    "lunch2_dain_end_ins16": {
+    "lunch2_dain_end_o": {
         "name": "{name}",
         "text": "*嘘だ。さっき触ったとき冷たかった。——温かくなったのは今だ。*"
     },
-    "lunch2_dain_end_ins17": {
+    "lunch2_dain_end_p": {
         "name": "保健先生",
         "text": "*にっこり* 丁寧にやってるの。雑に貼ったらすぐ剥がれちゃうでしょ"
     },
-    "lunch2_dain_end_ins18": {
+    "lunch2_dain_end_q": {
         "name": "{name}",
         "text": "*丁寧…なのか。それとも別の理由があるのか。*"
     },
-    "lunch2_dain_end_ins19": {
+    "lunch2_dain_end_r": {
         "name": "{name}",
         "text": "*絆創膏を確認していると——机の上にノートパソコンが開いている。画面に何か書いてある。医療記録じゃなくて——個人的な日記みたいなもの。*"
     },
-    "lunch2_dain_end_ins21": {
+    "lunch2_dain_end_s": {
         "name": "保健先生",
         "text": "*目を細めて* 一つだけ？ …うーん、じゃあね。私、コーヒーよりココアの方が好き。それが秘密"
     },
-    "lunch2_dain_end_ins22": {
+    "lunch2_dain_end_t": {
         "name": "{name}",
         "text": "*秘密としては軽いけど、教えてくれること自体が——距離が近くなったという意味だ。*"
     },
-    "lunch2_dain_end_ins23": {
+    "lunch2_dain_end_u": {
         "name": "保健先生",
         "text": "*軽く笑いながら* 秘密〜 先生にも秘密はあるのよ"
     },
-    "lunch2_dain_end_ins24": {
+    "lunch2_dain_end_v": {
         "name": "{name}",
         "text": "*冗談っぽく流すけど、ノートパソコンを閉じる速度は速かった。——見られたくないものがある。*"
     },
-    "lunch2_dain_end_ins25": {
+    "lunch2_dain_end_w": {
         "name": "保健先生",
         "text": "はい、終わりだから授業に戻って。——次はケガしないで来てね"
     },
-    "lunch2_dain_end_ins26": {
+    "lunch2_dain_end_x": {
         "name": "{name}",
         "text": "ケガしなかったら来る理由がないじゃないですか。"
     },
-    "lunch2_dain_end_ins27": {
+    "lunch2_dain_end_y": {
         "name": "{name}",
         "text": "*保健先生が一瞬止まる。そして——声がワントーン下がる。*"
     },
-    "lunch2_dain_end_ins28": {
+    "lunch2_dain_end_z": {
         "name": "保健先生",
         "text": "理由がなくても来ていいよ。"
     },
-    "lunch2_dain_end_ins29": {
+    "lunch2_dain_end_b2": {
         "name": "{name}",
         "text": "*ふざけた感じが消えた。——0.5秒。そしてまた戻る。*"
     },
-    "lunch2_dain_end_ins30": {
+    "lunch2_dain_end_c2": {
         "name": "保健先生",
         "text": "*また明るいトーンで* あ、でも授業中はダメよ〜！ 放課後ね！"
     },
-    "lunch2_dain_end_ins31": {
+    "lunch2_dain_end_d2": {
         "name": "{name}",
         "text": "*さっき声が変わったの。——気のせいだったのか？*"
     },

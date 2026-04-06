@@ -256,11 +256,11 @@
         "name": "{name}",
         "text": "*授業が始まる。ユナはまた窓の外を見ている。ダインはもう隣の子に話しかけている。*"
     },
-    "hallway_6_ins": {
+    "hallway_6_b": {
         "name": "ソヨン",
         "text": "*一瞬、言葉が止まる* …鋭いね"
     },
-    "hallway_6_ins2": {
+    "hallway_6_c": {
         "name": "{name}",
         "text": "*あの間。0.5秒。大したことじゃないはずなのに、なぜか記憶に残る。*"
     },
@@ -268,39 +268,39 @@
         "name": "ソヨン",
         "text": "あ、お昼。食堂の場所分からないでしょ。一緒に行こう。"
     },
-    "hallway_13_ins": {
+    "hallway_13_b": {
         "name": "{name}",
         "text": "*背筋が真っ直ぐだ。完璧に真っ直ぐ。——練習したかのように。あの余裕の裏に何があるのか、少し気になった。*"
     },
-    "classroom_2_ins": {
+    "classroom_2_b": {
         "name": "{name}",
         "text": "*教壇の前に担任先生が立っている。二十代後半。カーディガンのボタンは最初から開いている。表情は無関心なのに——目は生徒一人ひとりをしっかり見ている。*"
     },
-    "classroom_3_ins": {
+    "classroom_3_b": {
         "name": "{name}",
         "text": "*声が乾いている。感情過多じゃなくて、ちょうど必要な分だけのトーン。——意外と嫌いじゃない。*"
     },
-    "classroom_5_ins2": {
+    "classroom_5_b": {
         "name": "担任先生",
         "text": "…そう。{name}ね。覚えたわ *小さく、ほぼ独り言のように* 名前は一回で覚える主義だから"
     },
-    "classroom_5_ins3": {
+    "classroom_5_c": {
         "name": "{name}",
         "text": "*誰にも聞こえなかったはずの言葉。僕だけが聞いた。——細やかなのか、ただの癖なのか。*"
     },
-    "classroom_dain_5_ins": {
+    "classroom_dain_5_b": {
         "name": "{name}",
         "text": "*担任が小さくため息をつく。呆れてるんじゃなくて、慣れきったため息だ。*"
     },
-    "classroom_dain_5_ins2": {
+    "classroom_dain_5_c": {
         "name": "担任先生",
         "text": "…少しは力をセーブしなさい。まだ1時限目も始まってないのよ。"
     },
-    "classroom_dain_5_ins3": {
+    "classroom_dain_5_d": {
         "name": "{name}",
         "text": "*淡々と言うのに、口元がわずかに上がっている。この人、無表情がデフォルトなのに、たまにバグが出る。*"
     },
-    "classroom_minsu_2_ins": {
+    "classroom_minsu_2_b": {
         "name": "ミンス",
         "text": "*ダインの方に顎をしゃくって* 体力管理だよ"
     }
