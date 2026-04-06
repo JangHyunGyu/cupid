@@ -142,8 +142,8 @@ html {
     opacity: 1;
 }
 
-/* CG 씬: 가로 화면에서는 잘리지 않게 contain (정사각 CG 보호)
-   세로(모바일 포트레이트)에서는 cover 유지 — 거의 안 잘림 */
+/* CG 씬: 가로 화면은 contain (잘림 방지, 위아래 검은 띠)
+   세로 화면은 cover 유지 (위아래 꽉 채우고 좌우 약간 잘림 감수) */
 @media (orientation: landscape) {
     #background-layer.cg-fit,
     #background-layer.cg-fit::after {
