@@ -985,6 +985,8 @@ class GameEngine {
             isRegisteredCG ? false : isNightScene,
             isRegisteredCG ? false : isSunsetScene
         );
+        // CG 씬은 contain (가로 화면에서 잘림 방지)
+        this.sceneRenderer.uiManager.bgLayer.classList.toggle('cg-fit', isRegisteredCG);
         console.log('[TimeFilter] bgLayer.classList after setTimeFilter:', this.sceneRenderer.uiManager.bgLayer.className);
 
         // ─────────────────────────────────────────────────────────────
