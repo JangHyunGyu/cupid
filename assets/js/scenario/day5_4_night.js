@@ -1475,11 +1475,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "friend_5": {
         "background": "assets/images/background/park.png",
         "character": null,
-        "next": "friend_6"
-    },
-    "friend_6": {
-        "background": "assets/images/background/park.png",
-        "character": null,
         "next": "friend_7"
     },
     "friend_7": {
@@ -1498,11 +1493,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "friend_10"
     },
     "friend_10": {
-        "background": "assets/images/background/ending_friend.png",
-        "character": null,
-        "next": "friend_11"
-    },
-    "friend_11": {
         "background": "assets/images/background/ending_friend.png",
         "character": null,
         "next": "friend_12"

@@ -98,7 +98,7 @@
     },
     "night2_reply_dain_5": {
         "name": "{name}",
-        "text": "*또 세 줄 연속이다. 이 사람은 한 문장으로 끝내는 법이 없다.*"
+        "text": "*또 세 줄 연속이다.*"
     },
     "night2_reply_dain_react_high": {
         "name": "다인",

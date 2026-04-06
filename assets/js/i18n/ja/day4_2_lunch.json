@@ -368,5 +368,29 @@
     "date_dain_shop_2_ins": {
         "name": "ダイン",
         "text": "*顔をそらして* なんでもない！ 行こ！"
+    },
+    "date_seo_end_c": {
+        "name": "ソヨン",
+        "text": "*足を止めて* ...今日。"
+    },
+    "date_seo_end_d": {
+        "name": "ソヨン",
+        "text": "楽しかった。— それだけ覚えてて。"
+    },
+    "date_yuna_end_b": {
+        "name": "ユナ",
+        "text": "*別れ際に、メモを渡す。何も言わずに。*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'今日は言葉が多かった。あなたの前だけ。' — ユナの文字が震えている。*"
+    },
+    "date_dain_end_b": {
+        "name": "ダイン",
+        "text": "ねえ。"
+    },
+    "date_dain_end_c": {
+        "name": "ダイン",
+        "text": "今日ほんとに楽しかった。...ビックリマークなしで。"
     }
 }

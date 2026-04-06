@@ -719,5 +719,9 @@
     "after2_yuna_everyday_react_ins": {
         "name": "{name}",
         "text": "*No suena exactamente a un permiso, pero por alguna razón se queda conmigo mucho tiempo.*"
+    },
+    "after2_dain_9_ins7": {
+        "name": "{name}",
+        "text": "*Dain se levanta — se frota brevemente la rodilla derecha. Ayer en el gimnasio hizo lo mismo. Un gesto inconsciente.*"
     }
 }

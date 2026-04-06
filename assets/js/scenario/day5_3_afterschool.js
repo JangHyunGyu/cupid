@@ -234,27 +234,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
             { "next": "ending_start", "setFlags": ["choose_hidden_over_main"] }
         ]
     },
-    "after5_set_harem": {
-        "background": "assets/images/background/school_back.png",
-        "character": null,
-        "next": "after5_harem_commit"
-    },
-    "after5_harem_commit": {
-        "background": "assets/images/background/school_back.png",
-        "character": null,
-        "setFlags": ["ending_harem"],
-        "next": "after5_harem_walk_1"
-    },
-    "after5_harem_walk_1": {
-        "background": "assets/images/background/school_back.png",
-        "character": null,
-        "next": "after5_harem_walk_2"
-    },
-    "after5_harem_walk_2": {
-        "background": "assets/images/background/park.png",
-        "character": null,
-        "next": "ending_start"
-    },
     "after5_last_chance_1": {
         "background": "assets/images/background/school_back.png",
         "character": null,
@@ -598,6 +577,27 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_confess_no_2b": {
         "background": "assets/images/background/room_my.png",
+        "character": null,
+        "next": "ending_start"
+    },
+    "after5_set_harem": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_harem_commit"
+    },
+    "after5_harem_commit": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "setFlags": ["ending_harem"],
+        "next": "after5_harem_walk_1"
+    },
+    "after5_harem_walk_1": {
+        "background": "assets/images/background/school_back.png",
+        "character": null,
+        "next": "after5_harem_walk_2"
+    },
+    "after5_harem_walk_2": {
+        "background": "assets/images/background/park.png",
         "character": null,
         "next": "ending_start"
     }

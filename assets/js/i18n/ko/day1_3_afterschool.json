@@ -21,7 +21,7 @@
     },
     "after_kakao_4": {
         "name": "{name}",
-        "text": "*괜찮다. 진짜로. 이미 지난 일이다. 고백도 못 하고 끝난 거잖아. 미련이 아니라 후회다. — 그때 말했으면 어땠을까. 차였어도 이렇게 찜찜하지는 않았을 텐데.*"
+        "text": "*괜찮다. 이미 지난 일이다. 고백도 못 하고 끝난 거잖아. — 차였어도 이렇게 찜찜하지는 않았을 텐데.*"
     },
     "after_kakao_5": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after_miss_dain_6_ins": {
         "name": "{name}",
-        "text": "*손을 흔들며 뛰어간다. — 급정거할 때 오른쪽 다리를 살짝 끌었다. 아닌가? 너무 빨라서 잘 안 보였다.*"
+        "text": "*손을 흔들며 뛰어간다. — 급정거할 때 오른쪽 무릎을 살짝 잡았다. 0.5초. 바로 손을 뗐지만, 봤다.*"
     },
     "after_miss_dain_7": {
         "name": "{name}",
@@ -288,11 +288,11 @@
     },
     "after_homeroom_honest_6_ins": {
         "name": "{name}",
-        "text": "*'교육적 관심'. — 자기 관심을 업무로 포장하는 사람이구나.*"
+        "text": "*'교육적 관심'. — 이 사람도 포장을 하는구나.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*교육적 관심. 이 사람은 자기 마음을 꼭 직함 뒤에 숨긴다.*",
+        "text": "*교육적 관심.*",
         "choices": [
             "걱정이면 걱정이라고 하시면 되잖아요",
             "주스 기대할게요, 선생님"
@@ -304,7 +304,7 @@
     },
     "after_homeroom_honest_choice2a_ins": {
         "name": "{name}",
-        "text": "*솔직하게 인정했다. — 이 사람의 포장이 벗겨지는 순간이 의외로 빠르다.*"
+        "text": "*솔직하게 인정했다.*"
     },
     "after_homeroom_honest_choice2b": {
         "name": "담임",
@@ -378,7 +378,7 @@
     },
     "after_nurse_enter_2_ins": {
         "name": "{name}",
-        "text": "*말투가 가볍다. 병원이 아니라 카페에 온 것 같은 톤.*"
+        "text": "*말투가 가볍다.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
@@ -398,7 +398,7 @@
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
-        "text": "*몇 마디 안 했는데도 이미 이 사람 템포다.*"
+        "text": "*몇 마디 안 했는데 이미 이 사람 페이스다.*"
     },
     "after_nurse_enter_4_ins4": {
         "name": "{name}",
@@ -462,7 +462,7 @@
     },
     "after_nurse_enter_8_ins3": {
         "name": "{name}",
-        "text": "*장난스럽게 말하지만, 긴장 풀어주려는 의도는 분명하다.*"
+        "text": "*장난스럽게 말하지만, 긴장이 좀 풀린다.*"
     },
     "after_nurse_enter_9": {
         "name": "{name}",
@@ -514,7 +514,7 @@
     },
     "after_nurse_enter_11_ins3": {
         "name": "{name}",
-        "text": "*가볍게 넘기는 말투였는데, 끝에는 의외로 단단한 진심이 남는다.*"
+        "text": "*가볍게 넘기는 말투인데 — 끝이 단단하다.*"
     },
     "after_nurse_enter_11_ins4": {
         "name": "{name}",
@@ -534,7 +534,7 @@
     },
     "after_nurse_enter_11_ins8": {
         "name": "{name}",
-        "text": "*아늑하다는 말에 기분 좋은 듯 눈이 웃는다. — 이 공간이 이 사람한테는 안식처인 모양이다.*"
+        "text": "*아늑하다는 말에 눈이 웃는다.*"
     },
     "after_nurse_enter_11_ins9": {
         "name": "{name}",
@@ -558,7 +558,7 @@
     },
     "after_nurse_enter_12_ins": {
         "name": "{name}",
-        "text": "*가볍게 웃으며 손을 흔든다. — 장난은 많지만, 사람을 안심시키는 데 익숙한 사람이다.*"
+        "text": "*가볍게 웃으며 손을 흔든다.*"
     },
     "after_nurse_enter_12_ins2": {
         "name": "{name}",
