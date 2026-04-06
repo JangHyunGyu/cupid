@@ -13,11 +13,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "bgm": "night1.mp3",
-        "next": "night_start_2"
-    },
-    "night_start_2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night_start_3"
     },
     "night_start_3": {
@@ -123,11 +118,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "night_late_transition"
     },
     "night_late_transition": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night_late_transition_2"
-    },
-    "night_late_transition_2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night_late_branch"

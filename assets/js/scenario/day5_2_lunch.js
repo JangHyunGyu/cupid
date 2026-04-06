@@ -228,11 +228,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "tour_dain_8": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "tour_dain_9"
-    },
-    "tour_dain_9": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
         "next": "tour_dain_10"
     },
     "tour_dain_10": {

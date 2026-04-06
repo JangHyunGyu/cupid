@@ -67,11 +67,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_farewell_seo_6_ins": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after5_farewell_seo_6_ins2"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "next": "after5_farewell_seo_7"
     },
     "after5_farewell_seo_7": {
@@ -178,11 +173,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_hidden_farewell_1": {
         "background": "assets/images/background/school.png",
         "character": null,
-        "next": "after5_hidden_farewell_2"
-    },
-    "after5_hidden_farewell_2": {
-        "background": "assets/images/background/school.png",
-        "character": null,
         "next": "after5_hidden_farewell_3"
     },
     "after5_hidden_farewell_3": {
@@ -199,11 +189,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/school_back.png",
         "character": null,
         "bgm": "confession.mp3",
-        "next": "after5_end"
-    },
-    "after5_end": {
-        "background": "assets/images/background/school_back.png",
-        "character": null,
         "next": "after5_ending_check"
     },
     "after5_ending_check": {
@@ -263,11 +248,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_last_chance_seo_low_1"
     },
     "after5_last_chance_2_ins": {
-        "background": "assets/images/background/school_back.png",
-        "character": null,
-        "next": "after5_last_chance_2_ins2"
-    },
-    "after5_last_chance_2_ins2": {
         "background": "assets/images/background/school_back.png",
         "character": null,
         "next": "after5_last_chance_2_ins3"

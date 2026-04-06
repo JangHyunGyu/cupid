@@ -13,11 +13,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "bgm": "daily.mp3",
-        "next": "lunch2_start_2"
-    },
-    "lunch2_start_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "lunch2_choice"
     },
     "lunch2_choice": {
@@ -143,11 +138,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_seo_7": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch2_seo_8"
-    },
-    "lunch2_seo_8": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch2_seo_9"
     },
     "lunch2_seo_9": {
@@ -204,11 +194,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "lunch2_seo_17"
     },
     "lunch2_seo_17": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "lunch2_seo_18"
-    },
-    "lunch2_seo_18": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "lunch2_seo_19"
@@ -481,11 +466,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_end_ins": {
         "background": "assets/images/background/playground.png",
         "character": null,
-        "next": "lunch2_dain_end_ins2"
-    },
-    "lunch2_dain_end_ins2": {
-        "background": "assets/images/background/playground.png",
-        "character": null,
         "next": "lunch2_dain_end_ins3"
     },
     "lunch2_dain_end_ins3": {
@@ -557,11 +537,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_end_ins11": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins12"
-    },
-    "lunch2_dain_end_ins12": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins13"
     },
     "lunch2_dain_end_ins13": {
@@ -598,11 +573,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "lunch2_dain_end_ins19"
     },
     "lunch2_dain_end_ins19": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "lunch2_dain_end_ins20"
-    },
-    "lunch2_dain_end_ins20": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "lunch2_dain_end_ins21"
@@ -681,11 +651,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
-        "next": "lunch2_yuna_2"
-    },
-    "lunch2_yuna_2": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch2_yuna_intro_check"
     },
     "lunch2_yuna_intro_check": {
@@ -803,11 +768,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_11": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch2_yuna_12"
-    },
-    "lunch2_yuna_12": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch2_yuna_13"
     },
     "lunch2_yuna_13": {
@@ -881,11 +841,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_c1_7": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch2_yuna_c1_8"
-    },
-    "lunch2_yuna_c1_8": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch2_yuna_c1_9"
     },
     "lunch2_yuna_c1_9": {
@@ -911,11 +866,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_c1_12": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch2_yuna_c1_13"
-    },
-    "lunch2_yuna_c1_13": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch2_yuna_c1_14"
     },
     "lunch2_yuna_c1_14": {
@@ -926,11 +876,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_yuna_c2_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch2_yuna_c2_2"
-    },
-    "lunch2_yuna_c2_2": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch2_yuna_c2_3"
     },
     "lunch2_yuna_c2_3": {
@@ -939,11 +884,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "lunch2_yuna_c2_4"
     },
     "lunch2_yuna_c2_4": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch2_yuna_c2_5"
-    },
-    "lunch2_yuna_c2_5": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch2_yuna_c2_6"

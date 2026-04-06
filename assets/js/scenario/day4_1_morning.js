@@ -181,11 +181,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "morning4_fallback_msg": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "morning4_fallback_msg_2"
-    },
-    "morning4_fallback_msg_2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "morning4_hidden_check"
     },
     "morning4_hidden_check": {
@@ -213,11 +208,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
         "bgm": "morning.mp3",
-        "next": "hidden_homeroom_d4_1_ins"
-    },
-    "hidden_homeroom_d4_1_ins": {
-        "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_1_ins2"
     },
     "hidden_homeroom_d4_1_ins2": {
@@ -462,22 +452,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "hidden_homeroom_d4_decline_ins": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_homeroom_d4_decline_ins2"
-    },
-    "hidden_homeroom_d4_decline_ins2": {
-        "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_nurse_d4_check"
     },
     "hidden_nurse_d4_morning_1": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "bgm": "morning.mp3",
-        "next": "hidden_nurse_d4_morning_2"
-    },
-    "hidden_nurse_d4_morning_2": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_morning_3"
     },
     "hidden_nurse_d4_morning_3": {
@@ -571,11 +551,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "bgm": "morning.mp3",
-        "next": "hidden_nurse_d4_1_ins"
-    },
-    "hidden_nurse_d4_1_ins": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_1_ins2"
     },
     "hidden_nurse_d4_1_ins2": {
@@ -599,11 +574,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "hidden_nurse_d4_2_ins3"
     },
     "hidden_nurse_d4_2_ins3": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d4_2_ins4"
-    },
-    "hidden_nurse_d4_2_ins4": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_2_ins5"
@@ -684,11 +654,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "hidden_nurse_d4_4_ins10"
     },
     "hidden_nurse_d4_4_ins10": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d4_4_ins11"
-    },
-    "hidden_nurse_d4_4_ins11": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_5"
@@ -811,11 +776,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "hidden_nurse_d4_meal_4_ins"
     },
     "hidden_nurse_d4_meal_4_ins": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d4_meal_4_ins2"
-    },
-    "hidden_nurse_d4_meal_4_ins2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_freetalk"

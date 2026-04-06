@@ -13,11 +13,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "bgm": "night1.mp3",
-        "next": "night2_start_ins"
-    },
-    "night2_start_ins": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night2_msg_1"
     },
     "night2_msg_1": {
@@ -318,11 +313,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_end_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_1_ins"
-    },
-    "night2_end_1_ins": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night2_flashback_1"
     },
     "night2_flashback_1": {
@@ -338,19 +328,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_flashback_3": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_4"
-    },
-    "night2_flashback_4": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night2_flashback_5"
     },
     "night2_flashback_5": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night2_flashback_6"
-    },
-    "night2_flashback_6": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_7"
@@ -358,19 +338,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_flashback_7": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_8"
-    },
-    "night2_flashback_8": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night2_end_2"
     },
     "night2_end_2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night2_end_2_ins"
-    },
-    "night2_end_2_ins": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_end_2_ins2"
@@ -378,19 +348,9 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_end_2_ins2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_3"
-    },
-    "night2_end_3": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night2_end_3_ins"
     },
     "night2_end_3_ins": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night2_end_4"
-    },
-    "night2_end_4": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_end_4_ins"

@@ -13,11 +13,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "daily.mp3",
-        "next": "lunch3_start_2"
-    },
-    "lunch3_start_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch3_start_2_ins"
     },
     "lunch3_start_2_ins": {
@@ -68,19 +63,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "lunch3_meal_8": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "lunch3_meal_9"
-    },
-    "lunch3_meal_9": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
         "next": "lunch3_meal_10"
     },
     "lunch3_meal_10": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "lunch3_meal_10_ins"
-    },
-    "lunch3_meal_10_ins": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
         "next": "lunch3_meal_10_ins2"
@@ -226,11 +211,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "lunch3_dain_skin_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "lunch3_dain_skin_2"
-    },
-    "lunch3_dain_skin_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_shy.png",
         "next": "lunch3_dain_skin_3"
     },
     "lunch3_dain_skin_3": {
@@ -246,11 +226,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_dain_witness_1"
     },
     "lunch3_dain_witness_1": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/yuna_sad.png",
-        "next": "lunch3_dain_witness_2"
-    },
-    "lunch3_dain_witness_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch3_dain_witness_2b"
@@ -337,11 +312,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "lunch3_expose_3": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "lunch3_expose_3_ins"
-    },
-    "lunch3_expose_3_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
         "next": "lunch3_expose_4"
     },
     "lunch3_expose_4": {
@@ -367,11 +337,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "lunch3_expose_7_ins": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_pout.png",
-        "next": "lunch3_expose_8"
-    },
-    "lunch3_expose_8": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_pout.png",
         "next": "lunch3_expose_9"
     },
     "lunch3_expose_9": {
@@ -390,11 +355,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_expose_12"
     },
     "lunch3_expose_12": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_sad.png",
-        "next": "lunch3_expose_13"
-    },
-    "lunch3_expose_13": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch3_expose_14"
@@ -492,11 +452,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_expose_run_2"
     },
     "lunch3_expose_run_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_angry.png",
-        "next": "lunch3_expose_run_2_ins"
-    },
-    "lunch3_expose_run_2_ins": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_angry.png",
         "next": "lunch3_end"

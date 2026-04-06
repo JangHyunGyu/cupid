@@ -29,11 +29,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_greet_seo_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_seo_others"
-    },
-    "morning2_greet_seo_others": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_greet_seo_others_2"
     },
     "morning2_greet_seo_others_2": {
@@ -99,7 +94,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_greet_yuna_others_2": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "morning2_seo_2"
+        "next": "morning2_seo_4"
     },
     "morning2_dain_1": {
         "background": "assets/images/background/room_school.png",
@@ -162,11 +157,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_minsu_1"
     },
     "morning2_minsu_1": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
-        "next": "morning2_minsu_1_ins"
-    },
-    "morning2_minsu_1_ins": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_laugh.png",
         "next": "morning2_minsu_1b"
@@ -255,11 +245,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "hidden_homeroom_d2_2_ins": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_homeroom_d2_walk"
-    },
-    "hidden_homeroom_d2_walk": {
-        "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_3"
     },
     "hidden_homeroom_d2_3": {
@@ -321,11 +306,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "hidden_homeroom_d2_6"
     },
     "hidden_homeroom_d2_6": {
-        "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "hidden_homeroom_d2_6_ins"
-    },
-    "hidden_homeroom_d2_6_ins": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d2_7"
@@ -415,11 +395,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_seo_dust_1"
     },
     "morning2_seo_dust_1": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_seo_dust_1_ins"
-    },
-    "morning2_seo_dust_1_ins": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning2_seo_dust_2"
@@ -520,11 +495,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_haeun_6c"
     },
     "morning2_haeun_6c": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_7"
-    },
-    "morning2_haeun_7": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_normal.png",
         "next": "morning2_end"

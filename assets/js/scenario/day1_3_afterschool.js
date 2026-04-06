@@ -13,29 +13,14 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "bgm": "daily.mp3",
-        "next": "after_start_2"
-    },
-    "after_start_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after_kakao_1"
     },
     "after_kakao_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after_kakao_2"
-    },
-    "after_kakao_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after_kakao_3"
     },
     "after_kakao_3": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
-        "next": "after_kakao_4"
-    },
-    "after_kakao_4": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "after_kakao_5"
@@ -99,11 +84,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after1_jealousy_seo_yuna"
     },
     "after1_jealousy_seo_yuna": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "after1_jealousy_seo_yuna_2"
-    },
-    "after1_jealousy_seo_yuna_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "after1_pre_miss"
@@ -347,11 +327,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_homeroom_ok_ins": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "after_homeroom_ok_2"
-    },
-    "after_homeroom_ok_2": {
-        "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_normal.png",
         "next": "after_homeroom_ok_3"
     },
     "after_homeroom_ok_3": {
@@ -441,11 +416,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_homeroom_honest_choice2b_ins": {
         "background": "assets/images/background/teacher_office.png",
         "character": "assets/images/characters/teacher_smile.png",
-        "next": "after_homeroom_honest_choice2b_ins2"
-    },
-    "after_homeroom_honest_choice2b_ins2": {
-        "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_smile.png",
         "next": "after_homeroom_honest_7"
     },
     "after_homeroom_honest_7": {
@@ -483,11 +453,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_hidden_nurse_intro": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after_hidden_nurse_intro_2"
-    },
-    "after_hidden_nurse_intro_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after_hidden_nurse_choice"
     },
     "after_hidden_nurse_choice": {
@@ -499,11 +464,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         ]
     },
     "after_hidden_nurse_intro_ins": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
-        "next": "after_hidden_nurse_intro_ins2"
-    },
-    "after_hidden_nurse_intro_ins2": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
         "next": "after_nurse_enter_1"
@@ -545,11 +505,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after_nurse_enter_4_ins3"
     },
     "after_nurse_enter_4_ins3": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "after_nurse_enter_4_ins4"
-    },
-    "after_nurse_enter_4_ins4": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_5"
@@ -625,11 +580,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "after_nurse_enter_8_ins3": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "after_nurse_enter_9"
-    },
-    "after_nurse_enter_9": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_9_ins"
     },
     "after_nurse_enter_9_ins": {
@@ -658,11 +608,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after_nurse_enter_10_ins"
     },
     "after_nurse_enter_10_ins": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "after_nurse_enter_10_ins2"
-    },
-    "after_nurse_enter_10_ins2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_10_ins3"
@@ -748,11 +693,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "after_nurse_enter_12_ins"
     },
     "after_nurse_enter_12_ins": {
-        "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
-        "next": "after_nurse_enter_12_ins2"
-    },
-    "after_nurse_enter_12_ins2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_freetalk"
