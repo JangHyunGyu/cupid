@@ -502,7 +502,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Ich habe geschwankt, deshalb habe ich verstanden. Dass es keine Schwäche ist, sich auf Seoyeon zu stützen.*"
+        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Es fühlte sich an wie ein Umweg, aber neben Yuna war am Ende mein Platz.*"
+        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Unbeholfen ist okay. Wie Dain gesagt hat — es ist das erste Mal.*"
+        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -654,7 +654,7 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*Beim Verlassen des Schultors ist eine Nachricht auf meinem Handy. 'Danke für heute lol' — Der Ton eines Freundes. Ein perfekt freundschaftlicher Ton.*"
+        "text": "*Als ich das Schultor verlasse, kommt eine Nachricht. 'Danke für heute haha.' — Der Ton ist locker, vertraut. Genau deshalb fühlt es sich noch mehr nach Freundschaft an.*"
     },
     "friend_4_seo": {
         "name": "{name}",
@@ -666,15 +666,15 @@
     },
     "friend_4_dain": {
         "name": "{name}",
-        "text": "*Als ich das Schultor passiere, kommt eine Nachricht. 'Hey, komm gut heim! Danke für heute!' Die Ausrufezeichen sind zurück. Das ist beruhigend und fühlt sich doch kälter an. Es sind Ausrufezeichen für eine Freundin.*"
+        "text": "*Als ich das Schultor verlasse, kommt eine Nachricht. 'Hey, komm gut heim! Danke für heute!' Die Ausrufezeichen sind zurück. Eigentlich beruhigend — und trotzdem sinkt meine Stimmung noch mehr. So schreibt man eben einem Freund.*"
     },
     "friend_5": {
         "name": "{name}",
-        "text": "*Ich tippte eine Antwort. 'Dir auch danke.' — Nach dem Senden starrte ich auf den Bildschirm. Zwei Zeilen Gespräch. Ich lächle, doch innerlich ist es seltsam kalt.*"
+        "text": "*Ich antworte: 'Ich auch, danke.' — Danach starre ich auf den Bildschirm. Zwei Zeilen Gespräch. Ich lächle, aber gut fühlt es sich kein bisschen an.*"
     },
     "friend_6": {
         "name": "{name}",
-        "text": "*Wir werden weiter so Nachrichten schreiben. Mit Emojis, ab und zu essen gehen, fragen ob was los ist und sagen, dass nichts los ist. — Direkt nebeneinander, aber eine Linie, die man nicht überschreiten kann. Das ist Freundschaft.*"
+        "text": "*Wahrscheinlich schreiben wir uns weiter so. Mit Emojis, ab und zu zusammen essen, auf 'Was gibt's Neues?' mit 'nichts' antworten. — Direkt neben uns verläuft eine Linie, die ich am Ende doch nie überschreite. So bleibt Freundschaft eben.*"
     },
     "friend_7": {
         "name": "{name}",
@@ -686,7 +686,7 @@
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*Wieder stehe ich neben ihr, trage die perfekte Maske des 'Freundes', und lächle.*"
+        "text": "*Wieder stehe ich neben dieser Person, mit meinem bequemsten Gesicht, und lächle so, als wäre ich nur ein Freund.*"
     },
     "friend_10": {
         "name": "{name}",
@@ -694,7 +694,7 @@
     },
     "friend_11": {
         "name": "{name}",
-        "text": "*Die Schule wechseln, davonlaufen — am Ende hat sich nichts an mir verändert.*"
+        "text": "*Auch nach dem Schulwechsel, auch wenn ich fast davongelaufen bin, war ich in den entscheidenden Momenten wieder derselbe.*"
     },
     "friend_12": {
         "name": "System",
@@ -726,7 +726,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Viel zu spät habe ich gelernt, dass ein bloßes 'Ich mag euch' nichts schützen kann.*"
+        "text": "*Ich habe viel zu spät begriffen, dass ein 'Ich mag euch' nicht reicht, um irgendetwas zu bewahren.*"
     },
     "mayhem_7": {
         "name": "System",
@@ -754,15 +754,15 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Montag ist Seoyeon. Mittwoch ist Yuna. Freitag ist Dain. Dazwischen häufen sich die Lügen, um nicht aufzufliegen. Ich dachte, es wäre süß — aber es schnürt mir die Kehle zu.*"
+        "text": "*Montag Seoyeon. Mittwoch Yuna. Freitag Dain. Dazwischen stapeln sich die Lügen, damit niemand etwas merkt. Ich dachte, es wäre süß, aber mir bleibt schnell die Luft weg.*"
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*Dieses Gleichgewicht wird brechen. Jemand wird zuerst weinen. Wenn das passiert, ist diese Geschichte keine Romanze mehr — sondern eine Katastrophe.*"
+        "text": "*Dieses Gleichgewicht hält nicht lange. Jemand wird zuerst verletzt. Dann ist das keine Romanze mehr, sondern einfach nur ein Scherbenhaufen.*"
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Und trotzdem lächeln heute alle drei. Selbst im Wissen um den Untergang von morgen — kann ich das Heute nicht loslassen.*"
+        "text": "*Und trotzdem lachen heute alle drei. Obwohl ich weiß, wie morgen aussehen wird, klammere ich mich wieder an das Heute.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Ich ging nach Hause und las es. Die ganze Nacht. — Die Art, wie die Hauptfigur sprach, kam mir bekannt vor. Zu bekannt.*"
+        "text": "*Zuhause las ich das Manuskript. Die ganze Nacht. — Die Art, wie der Protagonist seine Sätze hinwarf, kam mir seltsam bekannt vor.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Klassenlehrerin",

@@ -502,7 +502,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Dudé, por eso entendí. Que apoyarme en Seoyeon no es debilidad.*"
+        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Parecía un rodeo, pero al final, al lado de Yuna era donde pertenecía.*"
+        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Está bien ser torpe. Como dijo Dain, es nuestra primera vez.*"
+        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -654,7 +654,7 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*Saliendo por la puerta del colegio, hay un mensaje en mi móvil. 'Gracias por hoy jaja' — El tono de un amigo. Un tono perfectamente amistoso.*"
+        "text": "*Al salir por la puerta de la escuela, llega un mensaje. 'Gracias por hoy jaja'. — Es un tono cómodo, familiar. Por eso se siente aún más como amistad.*"
     },
     "friend_4_seo": {
         "name": "{name}",
@@ -666,15 +666,15 @@
     },
     "friend_4_dain": {
         "name": "{name}",
-        "text": "*Cuando cruzo la puerta del colegio, llega un mensaje. '¡Oye, vuelve con cuidado! ¡Gracias por hoy!' Los signos de exclamación han vuelto. Es un alivio, y aun así se siente más frío. Son signos de exclamación para una amiga.*"
+        "text": "*Al salir por la puerta, llega un mensaje. 'Oye, vuelve con cuidado. ¡Gracias por hoy!' Volvieron los signos de exclamación. Es un alivio, pero el ánimo se me hunde más. Son los que le mandas a un amigo.*"
     },
     "friend_5": {
         "name": "{name}",
-        "text": "*Escribí la respuesta. ‘Yo también, gracias.’ — Después de enviarlo, me quedé mirando la pantalla. Dos líneas de conversación. Sonriendo, pero con un frío extraño por dentro.*"
+        "text": "*Respondí. 'Yo también, gracias.' — Y después me quedé mirando la pantalla. Dos líneas de conversación. Estoy sonriendo, pero no me deja buen sabor.*"
     },
     "friend_6": {
         "name": "{name}",
-        "text": "*Seguiremos mandándonos mensajes así. Con emojis, comiendo juntos a veces, preguntando si hay algo nuevo y respondiendo que no. — Justo al lado pero sin cruzar la línea. Eso es ser amigos.*"
+        "text": "*Seguramente seguiremos escribiéndonos así. Con emojis, comiendo juntos a veces, diciendo que no pasa nada cuando pregunten cómo estoy. — Hay una línea justo a nuestro lado que nunca termino de cruzar. Así es como se queda una amistad.*"
     },
     "friend_7": {
         "name": "{name}",
@@ -686,7 +686,7 @@
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*Otra vez a su lado, con la máscara perfecta de ‘amigo’, sonriendo.*"
+        "text": "*Otra vez estoy al lado de esa persona, con la expresión más cómoda que tengo, sonriendo como si solo fuera un amigo.*"
     },
     "friend_10": {
         "name": "{name}",
@@ -694,7 +694,7 @@
     },
     "friend_11": {
         "name": "{name}",
-        "text": "*Aunque me cambiara de colegio, aunque huyera — al final, nada de mí ha cambiado.*"
+        "text": "*Aunque me cambiara de escuela, aunque saliera corriendo de todo, en los momentos importantes seguía siendo el mismo.*"
     },
     "friend_12": {
         "name": "Sistema",
@@ -726,7 +726,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Aprendí demasiado tarde que decir que me gustaban no bastaba para proteger nada.*"
+        "text": "*Entendí demasiado tarde que decir 'me gustas' no bastaba para proteger nada.*"
     },
     "mayhem_7": {
         "name": "Sistema",
@@ -754,15 +754,15 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Los lunes es Seoyeon. Los miércoles es Yuna. Los viernes es Dain. Entre medias, las mentiras se acumulan para no ser descubierto. Pensé que sería dulce — pero me está estrangulando.*"
+        "text": "*Los lunes Seoyeon. Los miércoles Yuna. Los viernes Dain. Entre medio se acumulan las mentiras para que no me descubran. Creí que sería dulce, pero enseguida empieza a faltarme el aire.*"
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*Este equilibrio se romperá. Alguien llorará primero. Cuando eso pase, esta historia dejará de ser un romance — y se convertirá en una catástrofe.*"
+        "text": "*Este equilibrio no dura mucho. Alguien sale herido primero. Para entonces esto ya no es romance, es solo un desastre.*"
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Y aun así, hoy las tres sonríen. Aún sabiendo la ruina de mañana — no puedo soltar el hoy.*"
+        "text": "*Y aun así hoy las tres están sonriendo. Aunque sé perfectamente cómo pinta mañana, vuelvo a aferrarme a hoy.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Volví a casa y lo leí. Toda la noche. — La forma en que hablaba el protagonista me resultaba familiar. Demasiado.*"
+        "text": "*Volví a casa y leí el manuscrito. Toda la noche. — La forma en que el protagonista soltaba ciertas frases me sonaba demasiado familiar.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Profesora",

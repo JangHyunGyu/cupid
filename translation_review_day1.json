@@ -11504,7 +11504,7 @@
         "after_nurse_enter_4_ins3": {
             "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_4_ins3",
             "_ko_name": "{name}",
-            "_ko_text_preview": "*페이스에 자꾸 말려든다. — 이 사람 페이스에.*",
+            "_ko_text_preview": "*몇 마디 안 했는데도 이미 이 사람 템포다.*",
             "_has_choices": false,
             "en": {
                 "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_4_ins3",
