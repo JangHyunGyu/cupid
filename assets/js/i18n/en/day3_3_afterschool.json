@@ -142,25 +142,9 @@
       "I’ll keep your secret"
     ]
   },
-  "after3_seo_choice1": {
-    "name": "{name}",
-    "text": "*Seoyeon pauses. Sets down her pen. Slowly.*"
-  },
-  "after3_seo_choice1_react": {
-    "name": "Seoyeon",
-    "text": "...Words like that. You shouldn’t say them so easily."
-  },
-  "after3_seo_choice2": {
-    "name": "{name}",
-    "text": "*Her eyes are glistening. — She didn’t cry. Not yet.*"
-  },
   "after3_seo_end": {
     "name": "{name}",
     "text": "*Those words carry weight. — I think I’m starting to understand how monumental it is for this person to show an imperfect side of herself.*"
-  },
-  "after3_seo_end_c2": {
-    "name": "{name}",
-    "text": "*Promising to keep her secret — seems to mean a great deal to this person.*"
   },
   "after3_yuna_1": {
     "name": "{name}",
@@ -201,38 +185,6 @@
       "You might want to change the protagonist’s name though",
       "How does it end?"
     ]
-  },
-  "after3_yuna_choice1": {
-    "name": "Yuna",
-    "text": "...There’s no protagonist name."
-  },
-  "after3_yuna_choice1_2": {
-    "name": "{name}",
-    "text": "’A transfer student came to the library’ is just a coincidence?"
-  },
-  "after3_yuna_choice1_3": {
-    "name": "Yuna",
-    "text": "*Flips the notebook closed* ...But sometimes. Fiction can be more honest than reality."
-  },
-  "after3_yuna_choice1_react": {
-    "name": "{name}",
-    "text": "*She said fiction, but her ears are lying.*"
-  },
-  "after3_yuna_choice2": {
-    "name": "{name}",
-    "text": "*Yuna pauses. She looks down at the notebook.*"
-  },
-  "after3_yuna_choice2_2": {
-    "name": "Yuna",
-    "text": "...I haven’t decided on the ending yet."
-  },
-  "after3_yuna_choice2_3": {
-    "name": "Yuna",
-    "text": "...Because once I write the ending, it’s over."
-  },
-  "after3_yuna_choice2_react": {
-    "name": "{name}",
-    "text": "*Yuna spoke more than two sentences in a row. — For her, that’s proof of emotion.*"
   },
   "after3_yuna_end": {
     "name": "{name}",
@@ -289,10 +241,6 @@
   "after3_dain_choice1_react3": {
     "name": "Dain",
     "text": "Thanks. For not asking anything."
-  },
-  "after3_dain_choice2": {
-    "name": "Dain",
-    "text": "Hey! I’m fine! I don’t need a bandage or anything!!"
   },
   "after3_dain_end": {
     "name": "{name}",
@@ -521,45 +469,9 @@
     "name": "Seoyeon",
     "text": "*Hurriedly fixing her hair* ...Did you see?"
   },
-  "after3_seo_choice1_react_ins": {
-    "name": "{name}",
-    "text": "*Seoyeon looks out the window. I can't see her expression. — She's deliberately hiding it.*"
-  },
-  "after3_seo_choice1_react_ins3": {
-    "name": "{name}",
-    "text": "*Seoyeon straightens up. The student council president's face returns. — But it's not perfect. The angle of her smile is off by half a degree.*"
-  },
-  "after3_seo_choice1_react_ins4": {
-    "name": "Seoyeon",
-    "text": "...Thank you."
-  },
-  "after3_seo_choice1_react_ins5": {
-    "name": "{name}",
-    "text": "I'm good at keeping secrets."
-  },
-  "after3_seo_choice1_react_ins6": {
-    "name": "Seoyeon",
-    "text": "*Sorting through papers* I know one of your secrets too."
-  },
-  "after3_seo_choice1_react_ins7": {
-    "name": "Seoyeon",
-    "text": "Your eyes lit up when you ate the rolled omelette at lunch. — You can't fake that."
-  },
-  "after3_seo_choice1_react_ins8": {
-    "name": "{name}",
-    "text": "*I offered to keep her secret, and she pulled out a secret of equal weight. — For this person, equality comes before gratitude.*"
-  },
   "after3_yuna_5_ins": {
     "name": "{name}",
     "text": "*...Isn't this about me?*"
-  },
-  "after3_yuna_choice1_2_ins": {
-    "name": "Yuna",
-    "text": "*Clutching the notebook to her chest* ...Novels are. Fiction."
-  },
-  "after3_yuna_choice2_3_ins": {
-    "name": "{name}",
-    "text": "*Yuna spoke more than two sentences in a row. — I've never seen her say this much before.*"
   },
   "after3_seo_7_ins": {
     "name": "Seoyeon",
@@ -568,30 +480,6 @@
   "after3_dain_5_ins": {
     "name": "Dain",
     "text": "I told you I'm fine!! It's nothing!!"
-  },
-  "after3_dain_choice2_ins": {
-    "name": "{name}",
-    "text": "*Brought a bandage from the nurse’s office. Held it out to Dain.*"
-  },
-  "after3_dain_choice2_ins2": {
-    "name": "Dain",
-    "text": "...Oh, you actually brought one."
-  },
-  "after3_dain_choice2_ins3": {
-    "name": "{name}",
-    "text": "You said you were fine."
-  },
-  "after3_dain_choice2_ins4": {
-    "name": "{name}",
-    "text": "*Dain takes the bandage and stares at it for a long time. Bites her lip.*"
-  },
-  "after3_dain_choice2_ins5": {
-    "name": "Dain",
-    "text": "*Smiles weakly.* ...What. I shouldn’t be moved by something like this."
-  },
-  "after3_dain_choice2_ins6": {
-    "name": "{name}",
-    "text": "*She accepted it. — This is the first time Dain hasn’t refused someone’s help. The smile without exclamation marks feels strangely heavy.*"
   },
   "after3_confront_5_ins": {
     "name": "Dain",
