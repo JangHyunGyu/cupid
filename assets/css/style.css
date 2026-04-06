@@ -142,6 +142,17 @@ html {
     opacity: 1;
 }
 
+/* CG 씬: 가로 화면에서는 잘리지 않게 contain (정사각 CG 보호)
+   세로(모바일 포트레이트)에서는 cover 유지 — 거의 안 잘림 */
+@media (orientation: landscape) {
+    #background-layer.cg-fit,
+    #background-layer.cg-fit::after {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #000;
+    }
+}
+
 /* 배경 시간대별 필터 효과 */
 #background-layer.night {
     filter: brightness(0.3) sepia(0.3) hue-rotate(210deg) saturate(0.8);
