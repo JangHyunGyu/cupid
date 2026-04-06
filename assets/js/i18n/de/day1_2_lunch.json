@@ -3,14 +3,6 @@
         "name": "{name}",
         "text": "*Mittagspause. Die Glocke läutet.*"
     },
-    "lunch_start_2": {
-        "name": "{name}",
-        "text": "*Ich verlasse das Klassenzimmer und der Flur ist voller Schüler. Keine Ahnung, wohin. Mensa? Schulkiosk? Oder—*"
-    },
-    "lunch_start_3": {
-        "name": "{name}",
-        "text": "*Signale kommen aus drei Richtungen gleichzeitig.*"
-    },
     "lunch_start_4": {
         "name": "{name}",
         "text": "*Am Ende des Flurs fängt Seoyeon meinen Blick auf und winkt. Sie deutet Richtung Dach.*"
@@ -26,10 +18,6 @@
     "lunch_start_7": {
         "name": "{name}",
         "text": "*Drei Wege. So eine Wahl am ersten Tag treffen müssen.*"
-    },
-    "lunch_start_7b": {
-        "name": "{name}",
-        "text": "*An der alten Schule habe ich nicht gewählt. Genauer gesagt, ich habe die Entscheidung aufgeschoben, bis der Moment vorbei war. — Ach, schon wieder dieser Gedanke. Mein Mund bewegt sich lässig, aber im entscheidenden Augenblick erstarrt er. Dieses Muster. Ich bin echt der Erbärmlichste.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -80,10 +68,6 @@
         "name": "{name}",
         "text": "*Sie hatte von Anfang an vor, zusammen zu essen.*"
     },
-    "lunch_seo_12": {
-        "name": "{name}",
-        "text": "*Sie öffnet die Lunchbox. Sorgfältig zubereitete Beilagen. Eierolle, Würstchen, Mini-Reisbällchen.*"
-    },
     "lunch_seo_13": {
         "name": "{name}",
         "text": "Hast du das selbst gemacht?"
@@ -103,10 +87,6 @@
     "lunch_seo_17": {
         "name": "{name}",
         "text": "*Sie weicht Fragen geschickt aus. — Warum beschäftigt mich jemand mit so dicken Mauern so sehr?*"
-    },
-    "lunch_seo_18": {
-        "name": "{name}",
-        "text": "*Wir essen eine Weile. Die Brise ist angenehm. Das Schulgelände vom Dach aus — weiter als erwartet.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -179,10 +159,6 @@
     "lunch_seo_after_5": {
         "name": "{name}",
         "text": "*Typisch Seoyeon. Keine Einladung, eine Genehmigung. — Aber warum lächelt sie?*"
-    },
-    "lunch_seo_after_6": {
-        "name": "{name}",
-        "text": "*Seoyeon räumt die Lunchbox weg und streicht sich mit dem kleinen Finger die Haare zurück. Eine unbewusste Angewohnheit, wie es scheint.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
@@ -320,10 +296,6 @@
         "name": "{name}",
         "text": "*Sie grinst und boxt mich leicht auf die Schulter.*"
     },
-    "lunch_dain_after_6": {
-        "name": "{name}",
-        "text": "*Ich weiß nicht, warum ich mir das merken soll, aber sie hat es so ernst gesagt, dass ich genickt habe.*"
-    },
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Ich folge Yuna in die Bibliothek. Fast niemand kommt während der Mittagspause hierher.*"
@@ -335,10 +307,6 @@
     "lunch_yuna_2": {
         "name": "{name}",
         "text": "*Yuna setzt sich in eine Ecke des Lesesaals. Öffnet ein Buch. Ich bin mir nicht sicher, ob sie weiß, dass ich ihr gefolgt bin.*"
-    },
-    "lunch_yuna_3": {
-        "name": "{name}",
-        "text": "*Ich setze mich vorsichtig ihr gegenüber.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -356,17 +324,9 @@
         "name": "{name}",
         "text": "*Ist das eine Erlaubnis? Scheint eine Erlaubnis zu sein. — Bedingte Erlaubnis.*"
     },
-    "lunch_yuna_9": {
-        "name": "{name}",
-        "text": "*Stille breitet sich aus. Yuna liest ihr Buch. Ich habe nichts zu tun, also schaue ich mich in den Regalen um.*"
-    },
     "lunch_yuna_10": {
         "name": "{name}",
         "text": "*In der Mittagspause in der Bibliothek sitzen, ohne ein Wort zu sagen — und es ist nicht unangenehm. Eher sogar angenehm.*"
-    },
-    "lunch_yuna_11": {
-        "name": "{name}",
-        "text": "*Ich greife ein beliebiges Buch aus dem Regal und schlage es auf.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -396,10 +356,6 @@
         "name": "{name}",
         "text": "*Ihre Sätze sind kurz. Aber nicht kalt — eher sparsam. Maximale Bedeutung in minimalen Worten.*"
     },
-    "lunch_yuna_19": {
-        "name": "{name}",
-        "text": "*Ich lese eine Weile. Ziemlich gut.*"
-    },
     "lunch_yuna_20": {
         "name": "{name}",
         "text": "*Die Glocke läutet.*"
@@ -423,10 +379,6 @@
     "lunch_yuna_25": {
         "name": "{name}",
         "text": "*Yuna steht als Erste auf und geht. Sie dreht sich nicht um.*"
-    },
-    "lunch_yuna_26": {
-        "name": "{name}",
-        "text": "*‚Das war schön.' — Allein dieses Wort hebt meine Stimmung. Ein einziges Wort von ihr wiegt mehr als zehn von jedem anderen.*"
     },
     "lunch_end": {
         "name": "{name}",

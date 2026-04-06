@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*Quinto día. Aunque es domingo, hay un evento escolar. Me he acostumbrado al uniforme. — Es por estas personas. Lo sé.*"
     },
-    "morning5_start_2": {
-        "name": "{name}",
-        "text": "*El último evento. Todo lo que se ha ido acumulando hasta ahora desemboca hoy.*"
-    },
     "morning5_mood_check": {
         "name": "Sistema",
         "text": ""
@@ -125,10 +121,6 @@
         "name": "Enfermera",
         "text": "¿Eh? {name}. — Es el último día. El último del evento. Cinco días. — Se pasaron volando."
     },
-    "hidden_nurse_d5_2": {
-        "name": "{name}",
-        "text": "*La puerta se abre. La enfermera está ahí de pie. Con dos vasos de papel en la mano.*"
-    },
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "¿Y si vengo aunque no me haya hecho daño?"
@@ -185,17 +177,9 @@
         "name": "{name}",
         "text": "*Al pasar por la exposición del club de literatura en el pasillo — hay un relato corto en el tablón de anuncios. Título:*"
     },
-    "morning5_seo_note_1_ins2": {
-        "name": "{name}",
-        "text": "*'Para la persona que conocí en la biblioteca'*"
-    },
     "morning5_seo_note_1_ins3": {
         "name": "{name}",
         "text": "*Es de Yuna. — Una historia que solo el protagonista reconocería.*"
-    },
-    "morning5_seo_note_1_ins4": {
-        "name": "{name}",
-        "text": "*Me quedé un momento más frente al tablón. Es una frase corta, pero se siente tan nítida como si Yuna hubiera asomado la cara en persona.*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -277,10 +261,6 @@
         "name": "{name}",
         "text": "*Una sola línea. — Alguien a quien rechazaron tres veces antes de poder debutar está esperando la impresión de un alumno en una sola línea. Si esto no es una confesión, ¿qué es?*"
     },
-    "hidden_homeroom_d5_6_ins16": {
-        "name": "{name}",
-        "text": "*Sale del aula — y se detiene en la puerta.*"
-    },
     "hidden_homeroom_d5_6_ins17": {
         "name": "Profesora",
         "text": "{name}."
@@ -308,10 +288,6 @@
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
         "text": "*La enfermera sale. Está justo delante.*"
-    },
-    "hidden_nurse_d5_2_ins2": {
-        "name": "{name}",
-        "text": "*— Nos encontramos de frente. Cara a cara.*"
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "Enfermera",
@@ -385,10 +361,6 @@
         "name": "{name}",
         "text": "*Su voz bajó un tono. Toda la picardía desapareció. — La sinceridad de esta persona siempre llega así.*"
     },
-    "hidden_nurse_d5_choice_b_ins3": {
-        "name": "{name}",
-        "text": "*La enfermera estaba riéndose — y se detuvo. Cerró la boca.*"
-    },
     "hidden_nurse_d5_choice_b_ins4": {
         "name": "Enfermera",
         "text": "...¿Número de teléfono? ¿Para consultas médicas?"
@@ -413,17 +385,9 @@
         "name": "{name}",
         "text": "*Su frase emblemática del Día 1. — Entonces era presentación del personaje. Ahora es de verdad.*"
     },
-    "hidden_nurse_d5_6_ins2": {
-        "name": "{name}",
-        "text": "*La enfermera saca una tirita y me la pone en el dorso de la mano. Despacio. — Hay algo escrito en la tirita.*"
-    },
     "hidden_nurse_d5_6_ins3": {
         "name": "{name}",
         "text": "*'Cuando te gradúes, quedemos en una cafetería en vez de la enfermería — ♡'*"
-    },
-    "hidden_nurse_d5_6_ins4": {
-        "name": "{name}",
-        "text": "*Este corazón — no parece interés médico.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -452,10 +416,6 @@
     "morning5_yuna_story_2": {
         "name": "{name}",
         "text": "*La última línea. 'Cuando abrió los ojos, yo ya no estaba. Solo dejé una nota. — La próxima vez también estaré aquí.'*"
-    },
-    "morning5_yuna_story_3": {
-        "name": "{name}",
-        "text": "*Tinta lavanda. La misma tinta que la nota del primer día.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",

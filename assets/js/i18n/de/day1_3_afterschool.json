@@ -3,25 +3,13 @@
         "name": "{name}",
         "text": "*Nach der Schule. Ich beschließe, mich auf dem Campus umzusehen. Ich kenne mich noch nicht aus.*"
     },
-    "after_start_2": {
-        "name": "{name}",
-        "text": "*Ich gehe den Flur entlang. Mein Handy vibriert. — Der Gruppenchat von meiner alten Schule.*"
-    },
     "after_kakao_1": {
         "name": "{name}",
         "text": "*‘Sojeong hat Kirschblütenfotos mit ihrem Freund gepostet lol’*"
     },
-    "after_kakao_2": {
-        "name": "{name}",
-        "text": "*Ich stecke das Handy in die Tasche.*"
-    },
     "after_kakao_3": {
         "name": "{name}",
         "text": "*...Ach.*"
-    },
-    "after_kakao_4": {
-        "name": "{name}",
-        "text": "*Mir geht es gut. Wirklich. Das ist Vergangenheit. Ich habe mich nicht mal gestanden und es war vorbei. Es ist keine Sehnsucht — es ist Reue. — Was wäre gewesen, wenn ich damals etwas gesagt hätte? Selbst wenn ich abgewiesen worden wäre, hätte ich zumindest nicht dieses nagende Gefühl.*"
     },
     "after_kakao_5": {
         "name": "{name}",
@@ -144,10 +132,6 @@
         "name": "Klassenlehrerin",
         "text": "Gut zu hören. — Wenn was ist, komm ins Lehrerzimmer. Dafür bin ich da."
     },
-    "after_homeroom_ok_2": {
-        "name": "{name}",
-        "text": "*Offenbar war das nicht nur eine höfliche Verabschiedung. Die Lehrerin legt eine Hand auf die Stuhllehne und sucht einen Moment nach den richtigen Worten.*"
-    },
     "after_homeroom_ok_3": {
         "name": "Klassenlehrerin",
         "text": "Also fühlt es sich für dich nach einer ganz guten Schule an. — Das zu hören beruhigt mich seltsam sehr."
@@ -230,10 +214,6 @@
         "name": "{name}",
         "text": "*Im Flur wird mir kurz schwindelig. Wohl die Anspannung vom ersten Tag.*"
     },
-    "after_hidden_nurse_intro_2": {
-        "name": "{name}",
-        "text": "*An der Wand hängt das Schild zum Krankenzimmer. So zu tun, als könnte ich einfach durchziehen und heimgehen, wirkt plötzlich nicht mehr besonders klug.*"
-    },
     "after_hidden_nurse_choice": {
         "name": "{name}",
         "text": "*Seit heute Morgen habe ich ohne Pause Leute getroffen. Zehn Minuten zum Durchatmen wären jetzt wirklich kein Drama.*",
@@ -294,10 +274,6 @@
         "name": "Schulkrankenschwester",
         "text": "Du musst hier nicht so sehr auf Förmlichkeit achten. Im Krankenzimmer kannst du ruhig etwas lockerer sein. Genau dafür ist es da."
     },
-    "after_nurse_enter_9": {
-        "name": "{name}",
-        "text": "*Ich trinke Wasser und schaue mich um. Ein kleiner Blumentopf in der Ecke.*"
-    },
     "after_nurse_enter_10": {
         "name": "Schulkrankenschwester",
         "text": "Ach, das ist lange her~ Die Schule ist super. Hier kommen ja alle nur mit leichten Verletzungen her."
@@ -355,10 +331,6 @@
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
         "text": "*Als ich die Seitentasche meiner Tasche berühre, bleiben meine Fingerspitzen an einer Papierecke hängen. Ein gefalteter Zettel. Keine Ahnung, wann er dort hineingesteckt wurde. Yunas Handschrift.*"
-    },
-    "after1_jealousy_seo_yuna_2": {
-        "name": "{name}",
-        "text": "*Ich hab dich in der Mittagspause auf dem Dach gesehen. ...Du sahst vertraut aus mit der Sprecherin. — Drei Punkte am Ende. Verschluckte Worte.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -424,10 +396,6 @@
         "name": "{name}",
         "text": "*Sie klappt das Klassenbuch zu und steht auf. Am Türrahmen angekommen, ruft sie mich noch einmal, als wäre ihr erst jetzt etwas eingefallen.*"
     },
-    "after_homeroom_honest_choice2b_ins2": {
-        "name": "{name}",
-        "text": "*Die Lehrerin geht Richtung Lehrerzimmer — bleibt dann stehen. Nestelt an etwas in ihrer Tasche. Ein Kugelschreiber vielleicht?*"
-    },
     "after_homeroom_honest_9_ins": {
         "name": "{name}",
         "text": "*Vorhin im Unterricht sagte sie 'Ich merk mir Namen beim ersten Mal'. — Es zweimal zu sagen, bedeutet etwas.*"
@@ -435,10 +403,6 @@
     "after_hidden_nurse_intro_ins": {
         "name": "{name}",
         "text": "*Vor der Tür bleibe ich kurz stehen und atme einmal tief durch. Bevor ich nach Hause gehe, sollte ich mich lieber kurz hinsetzen.*"
-    },
-    "after_hidden_nurse_intro_ins2": {
-        "name": "{name}",
-        "text": "*Meine Hand legt sich auf die Klinke. Das kalte Metall an der Handfläche holt mich etwas runter.*"
     },
     "after_nurse_enter_2_ins": {
         "name": "{name}",
@@ -455,10 +419,6 @@
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
         "text": "*Wir haben kaum ein paar Worte gewechselt, und schon bin ich in ihrem Tempo.*"
-    },
-    "after_nurse_enter_4_ins4": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester steht auf und kommt herüber. Ihre Bewegungen sind geschmeidig. — Als ihre Hand mich berührt, werde ich unerwartet nervös.*"
     },
     "after_nurse_enter_6_ins": {
         "name": "{name}",
@@ -507,10 +467,6 @@
     "after_nurse_enter_10_ins": {
         "name": "{name}",
         "text": "*'Nur leichte Verletzungen'. — In diesen Worten liegt Erleichterung. Es heißt auch, dass sie viele gesehen hat, die nicht leicht waren.*"
-    },
-    "after_nurse_enter_10_ins2": {
-        "name": "{name}",
-        "text": "*Zehn Minuten vergehen. Ich stehe auf.*"
     },
     "after_nurse_enter_10_ins3": {
         "name": "{name}",
@@ -567,10 +523,6 @@
     "after_nurse_enter_12_ins": {
         "name": "{name}",
         "text": "*Sie lacht leise und winkt mich hinaus. — Sie ist verspielt, aber eindeutig geübt darin, Menschen zu beruhigen.*"
-    },
-    "after_nurse_enter_12_ins2": {
-        "name": "{name}",
-        "text": "*Ich schaue auf das Pflaster an meiner Hand. — Ein seltsames Krankenzimmer. Die gute Art von seltsam.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

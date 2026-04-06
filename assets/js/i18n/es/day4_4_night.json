@@ -115,17 +115,9 @@
         "name": "{name}",
         "text": "*Seoyeon deja de hablar. Sus manos están apretadas sobre las rodillas.*"
     },
-    "wall_seo_14_ins3": {
-        "name": "{name}",
-        "text": "*Y entonces, poco a poco, muy poco a poco, la expresión que había mantenido intacta se derrumba. Las yemas de los dedos de Seoyeon tiemblan.*"
-    },
     "wall_seo_14_ins4": {
         "name": "{name}",
         "text": "*Las lágrimas le caen de los ojos. En silencio. - Seoyeon está llorando.*"
-    },
-    "wall_seo_15": {
-        "name": "{name}",
-        "text": "*Seoyeon alza la vista. Es un rostro que ya no intenta ocultar lo derrumbada que está.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -138,10 +130,6 @@
     "wall_seo_hug_1": {
         "name": "{name}",
         "text": "*Abracé a Seoyeon.*"
-    },
-    "wall_seo_hug_2": {
-        "name": "{name}",
-        "text": "*Seoyeon enterró su cara en mi pecho. Mi camisa del uniforme se moja.*"
     },
     "wall_seo_hug_2_ins": {
         "name": "Seoyeon",
@@ -233,10 +221,6 @@
         "name": "{name}",
         "text": "*Seoyeon extiende su meñique primero. No se detiene ahí. Toma mi mano.*"
     },
-    "wall_seo_skin70_2": {
-        "name": "{name}",
-        "text": "*Pone sus labios en mi frente.*"
-    },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
         "text": "...No ensayé esto."
@@ -253,17 +237,9 @@
         "name": "{name}",
         "text": "*Volviendo a casa después de acompañar a Seoyeon. — Paso por delante del colegio.*"
     },
-    "wall_seo_glimpse_1_ins": {
-        "name": "{name}",
-        "text": "*Hay luz en la ventana del gimnasio. Luz de emergencia.*"
-    },
     "wall_seo_glimpse_2": {
         "name": "{name}",
         "text": "*Hay una luz en la ventana del gimnasio. Luces de emergencia. Alguien está botando un balón solo. — Puedo distinguir vagamente el número de la camiseta. Es Dain.*"
-    },
-    "wall_seo_glimpse_3": {
-        "name": "{name}",
-        "text": "*...¿Sola en el gimnasio a las 11 de la noche? Hoy no me contactó.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
@@ -329,10 +305,6 @@
         "name": "{name}",
         "text": "*Le hago el pase. Dain salta y — remata.*"
     },
-    "wall_dain_8_ins2": {
-        "name": "{name}",
-        "text": "*En el momento de aterrizar — se agarra la rodilla derecha y se agacha.*"
-    },
     "wall_dain_9": {
         "name": "{name}",
         "text": "*Siento un escalofrío ante mis ojos.*"
@@ -360,10 +332,6 @@
     "wall_dain_13": {
         "name": "{name}",
         "text": "*Me siento a su lado sin decir nada. Dain cierra la boca. Un largo silencio.*"
-    },
-    "wall_dain_13_ins": {
-        "name": "{name}",
-        "text": "*Un largo silencio.*"
     },
     "wall_dain_14": {
         "name": "Dain",
@@ -446,10 +414,6 @@
         "name": "{name}",
         "text": "*Me senté junto a Dain. El suelo de la cancha está frío. No dije nada.*"
     },
-    "wall_dain_newdream_2": {
-        "name": "{name}",
-        "text": "*Dain tampoco dice nada. — Qué momento tan extraño. Es la primera vez que hay más de un minuto de silencio al lado de Dain.*"
-    },
     "wall_dain_newdream_2_ins": {
         "name": "{name}",
         "text": "*Dain habla primero.*"
@@ -501,10 +465,6 @@
     "wall_dain_cry_6": {
         "name": "{name}",
         "text": "*Puso dos signos de exclamación en esa nota de alarma — porque con uno solo ni siquiera podía engañarse a sí misma.*"
-    },
-    "wall_dain_cry_6_ins": {
-        "name": "{name}",
-        "text": "*Me qued? a su lado hasta que el llanto de Dain se fue calmando.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
@@ -591,10 +551,6 @@
         "name": "{name}",
         "text": "*Es Yuna. Sentada sola. Si está leyendo o simplemente sentada — no puedo saber desde aquí.*"
     },
-    "wall_dain_glimpse_3": {
-        "name": "{name}",
-        "text": "*Yuna no me mandó mensaje hoy. — Lo siento.*"
-    },
     "wall_dain_glimpse_4": {
         "name": "{name}",
         "text": "*Fingí no ver. — Pero por qué siento esto en el pecho.*"
@@ -638,10 +594,6 @@
     "wall_yuna_4": {
         "name": "{name}",
         "text": "*Yuna se dirige al anexo de la biblioteca. Pasando su rincón secreto de lectura — más adentro. El archivo del sótano.*"
-    },
-    "wall_yuna_5": {
-        "name": "{name}",
-        "text": "*Entre estanterías polvorientas. Yuna saca un sobre antiguo.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -723,10 +675,6 @@
         "name": "{name}",
         "text": "*Yuna se agarra la manga con fuerza. Sus frases se van alargando.*"
     },
-    "wall_yuna_16_ins2": {
-        "name": "{name}",
-        "text": "*Yuna se detiene un momento.*"
-    },
     "wall_yuna_choice": {
         "name": "{name}",
         "text": "*Los ojos de Yuna brillan húmedos. — Es la primera vez que la oigo hablar tanto.*",
@@ -805,10 +753,6 @@
         "name": "{name}",
         "text": "*Yuna se da la vuelta. Sus pasos son rápidos. — No corre exactamente, pero camina como alguien que quiere correr.*"
     },
-    "wall_yuna_reject_4": {
-        "name": "{name}",
-        "text": "*Fue la peor elección. — Puedo escuchar el muro de Yuna cerrándose de nuevo.*"
-    },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
         "text": "*Salgo del colegio dejando a Yuna atrás. Paso por la puerta principal.*"
@@ -817,17 +761,9 @@
         "name": "{name}",
         "text": "*Bajo la farola frente a la puerta del colegio. Seoyeon está de pie. — No, estaba de pie. Con el móvil en la mano, escribiendo algo y borrándolo. Escribiendo y borrándolo.*"
     },
-    "wall_yuna_glimpse_3": {
-        "name": "{name}",
-        "text": "*No sé a quién intenta escribirle. — Bueno, creo que sí lo sé.*"
-    },
     "wall_yuna_glimpse_3_ins": {
         "name": "{name}",
         "text": "*Seoyeon guarda el móvil en el bolsillo y se da la vuelta. Su espalda está recta. Perfectamente. No tiembla. Esta vez de verdad.*"
-    },
-    "wall_yuna_glimpse_3_ins2": {
-        "name": "{name}",
-        "text": "*La noche llega incluso para los no elegidos. Y pasan esa noche solos.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -836,10 +772,6 @@
     "day4_night_regret": {
         "name": "{name}",
         "text": "*...Podría haberlo dicho hoy. Bajo ese atardecer, era el momento perfecto.*"
-    },
-    "day4_night_regret_2": {
-        "name": "{name}",
-        "text": "*Está bien. Hay un mañana. Mañana, sin falta.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "Sistema",

@@ -3,29 +3,9 @@
         "name": "{name}",
         "text": "*April. Cherry blossoms scatter in the breeze.*"
     },
-    "start_2": {
-        "name": "{name}",
-        "text": "*My uniform is still stiff. There's a faint smell of starch. Even though I ironed it yesterday, the creases have a mind of their own. Already off to a bad start with this uniform.*"
-    },
     "start_3": {
         "name": "{name}",
         "text": "*Starting today, I'm a student at this school. A transfer. First time.*"
-    },
-    "start_3b": {
-        "name": "{name}",
-        "text": "*My hand fidgets with the edge of my phone inside my pocket. I hate to admit it, but it's a habit that only comes out when I'm nervous.*"
-    },
-    "start_4": {
-        "name": "{name}",
-        "text": "*My phone buzzes in my pocket. The old school group chat. I see a name flash on the screen — and shove the phone back in. Not yet.*"
-    },
-    "start_5": {
-        "name": "{name}",
-        "text": "*A cherry blossom petal brushes my nose. — I almost sneezed. If this were a drama, this is the part where some pretty girl bumps into me.*"
-    },
-    "start_6": {
-        "name": "{name}",
-        "text": "*Reality is just a sneeze.*"
     },
     "name_input_scene": {
         "name": "System",
@@ -34,14 +14,6 @@
     "gate_1": {
         "name": "{name}",
         "text": "*I'm standing in front of an unfamiliar school gate. It's a pretty big school. Clean buildings, spacious grounds.*"
-    },
-    "gate_2": {
-        "name": "{name}",
-        "text": "*Students pass through the gate in small groups. My uniform is the only one blindingly crisp. Like a billboard — 'I'm new here.'*"
-    },
-    "gate_3": {
-        "name": "{name}",
-        "text": "*A girl is standing by the gate. She casually flips her long black hair — behind her glasses, her steps are relaxed. Not a hint of hurry.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -74,10 +46,6 @@
     "seoyeon_meet_8": {
         "name": "{name}",
         "text": "*She smirks. Just the corners of her lips lifting. — Before I knew it, I was smiling back.*"
-    },
-    "seoyeon_meet_9": {
-        "name": "{name}",
-        "text": "*Seoyeon walks toward the gate, beckoning with a wave.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
@@ -144,10 +112,6 @@
         "name": "{name}",
         "text": "*Seoyeon guides me through the hallway. Passing students greet her. She acknowledges each one with a nod.*"
     },
-    "hallway_2": {
-        "name": "{name}",
-        "text": "*Seoyeon waves back casually. So natural. Seems like this school's social hierarchy is already set.*"
-    },
     "hallway_3": {
         "name": "Seoyeon",
         "text": "Third-year building is here, library's over there. School store is in the basement."
@@ -167,10 +131,6 @@
     "hallway_8": {
         "name": "{name}",
         "text": "*Suddenly I have lunch plans. — I never even said yes.*"
-    },
-    "hallway_9": {
-        "name": "{name}",
-        "text": "*We arrive in front of the classroom.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
@@ -192,25 +152,9 @@
         "name": "{name}",
         "text": "*I open the classroom door. All eyes land on me.*"
     },
-    "classroom_2": {
-        "name": "{name}",
-        "text": "*I expected it, but the weight of 30 stares is still heavy.*"
-    },
     "classroom_3": {
         "name": "Homeroom Teacher",
         "text": "Everyone, we have a transfer student joining our class today. Go ahead and introduce yourself."
-    },
-    "classroom_4": {
-        "name": "{name}",
-        "text": "I'm {name}. Nice to meet you all."
-    },
-    "classroom_5": {
-        "name": "{name}",
-        "text": "*Short and clean. No point in dragging it out.*"
-    },
-    "classroom_6": {
-        "name": "{name}",
-        "text": "*A whistle from one side of the room.*"
     },
     "classroom_dain_1": {
         "name": "Dain",
@@ -239,10 +183,6 @@
     "classroom_yuna_2": {
         "name": "{name}",
         "text": "*Silver-white hair. Red eyes, half-closed and drowsy. Tattoos cover her arms. — She doesn't even glance this way. As if a transfer student is nothing special.*"
-    },
-    "classroom_yuna_3": {
-        "name": "{name}",
-        "text": "*The students around her don't look in Yuna's direction. Deliberately. As if no one's sitting there at all.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -304,17 +244,9 @@
         "name": "{name}",
         "text": "*A folded note lands on my desk. — I look back and the girl with the silver-white hair by the window is staring outside again. Despite her tattoo-covered arms — the handwriting on the note is neat.*"
     },
-    "classroom_yuna_note_2": {
-        "name": "{name}",
-        "text": "*I unfold the note.*"
-    },
     "classroom_yuna_note_3": {
         "name": "{name}",
         "text": "*'Got stuck with the noisy seat. — Yuna'*"
-    },
-    "classroom_yuna_note_4": {
-        "name": "{name}",
-        "text": "*Lavender ink. — My tension eases a little.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
@@ -348,10 +280,6 @@
         "name": "{name}",
         "text": "*Her voice is dry. Not emotionless, just — carrying exactly as much feeling as needed. Surprisingly, I don't mind it.*"
     },
-    "classroom_5_ins": {
-        "name": "{name}",
-        "text": "*The teacher nods. She was about to say something more — stops, and glances at the attendance sheet on the podium again. Her right hand is fidgeting with a pen in her pocket. Must be a habit.*"
-    },
     "classroom_5_ins2": {
         "name": "Homeroom Teacher",
         "text": "...Right. {name}. I'll remember that. *Quietly, almost to herself* I make it a point to memorize names on the first try."
@@ -375,9 +303,5 @@
     "classroom_minsu_2_ins": {
         "name": "Minsu",
         "text": "*Nodding toward Dain* Your stamina."
-    },
-    "classroom_yuna_note_5_ins": {
-        "name": "{name}",
-        "text": "*The one who sent the note is the girl who was staring out the window earlier. Hard to tell if she's faking disinterest or genuinely doesn't care.*"
     }
 }

@@ -102,17 +102,9 @@
         "name": "{name}",
         "text": "*I walked back to the hallway.*"
     },
-    "after3_reject_for_dain_4": {
-        "name": "{name}",
-        "text": "*I return to the hallway. Seoyeon's practiced smile, the water ring Yuna left behind. — The people who say nothing stay with me longer.*"
-    },
     "after3_seo_1": {
         "name": "{name}",
         "text": "*I opened the student council room door. — Seoyeon is slumped over the desk.*"
-    },
-    "after3_seo_2": {
-        "name": "{name}",
-        "text": "*I’ve never seen this before. The perfect student council president — collapsed defenseless over her desk.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -178,17 +170,9 @@
         "name": "{name}",
         "text": "*I go in, but Yuna isn’t here. Instead — a notebook lies open on the sofa. Filled with handwriting.*"
     },
-    "after3_yuna_3": {
-        "name": "{name}",
-        "text": "*It’s a novel. A novel Yuna wrote. — Is it okay to read?*"
-    },
     "after3_yuna_4": {
         "name": "{name}",
         "text": "*First page.*"
-    },
-    "after3_yuna_5": {
-        "name": "{name}",
-        "text": "*’One day, a transfer student arrived. He came to the library and sat down next to me without a word. — I didn’t mind it.’*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -257,10 +241,6 @@
     "after3_dain_1": {
         "name": "{name}",
         "text": "*The gym. Dain is stretching alone. She tries a light jog and —*"
-    },
-    "after3_dain_2": {
-        "name": "{name}",
-        "text": "*— slightly tweaks her right leg. She winces.*"
     },
     "after3_dain_3": {
         "name": "{name}",
@@ -545,10 +525,6 @@
         "name": "{name}",
         "text": "*Seoyeon looks out the window. I can't see her expression. — She's deliberately hiding it.*"
     },
-    "after3_seo_choice1_react_ins2": {
-        "name": "{name}",
-        "text": "*But — her pinky finger twitches on the desk. As if reaching for something. Unconsciously.*"
-    },
     "after3_seo_choice1_react_ins3": {
         "name": "{name}",
         "text": "*Seoyeon straightens up. The student council president's face returns. — But it's not perfect. The angle of her smile is off by half a degree.*"
@@ -645,10 +621,6 @@
         "name": "{name}",
         "text": "*Seoyeon pauses. Her eyes waver.*"
     },
-    "after3_confront_lie_2_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon turns away. — She doesn't stop.*"
-    },
     "after3_confront_lie_2_ins2": {
         "name": "{name}",
         "text": "*Her back is straight. Perfectly. — But her fists are clenched. Her knuckles are white.*"
@@ -685,10 +657,6 @@
         "name": "{name}",
         "text": "*Haeun turns and walks away.*"
     },
-    "haeun_warn_7_ins4": {
-        "name": "{name}",
-        "text": "*Things are complicated at Seoyeon's home. Her parents. — Is that why Seoyeon 'had to be perfect'?*"
-    },
     "minsu_d3_8_ins": {
         "name": "{name}",
         "text": "...What?"
@@ -720,10 +688,6 @@
     "minsu_d3_7_ins2": {
         "name": "{name}",
         "text": "*If Sojeong had been able to reject me back then — maybe it wouldn't still haunt me.*"
-    },
-    "minsu_d3_7_ins3": {
-        "name": "{name}",
-        "text": "*If saying no is love, then what I need to do now isn't tell everyone 'yes' — it's telling just one person 'yes.'*"
     },
     "minsu_d3_10_ins": {
         "name": "{name}",

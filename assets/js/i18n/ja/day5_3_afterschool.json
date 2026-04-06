@@ -11,10 +11,6 @@
         "name": "{name}",
         "text": "*校門の前。遠くに三人の姿が見える。ソヨンがハウンと歩いている。ダインがバレーボールを投げながら走っている。ユナが本を読みながらゆっくり歩いている。*"
     },
-    "after5_hidden_farewell_2": {
-        "name": "{name}",
-        "text": "*誰もこちらを見ない。——むしろそのほうが助かる。今は、誰とも目を合わせられる気がしない。*"
-    },
     "after5_hidden_farewell_3": {
         "name": "{name}",
         "text": "*ごめんとは、簡単には言えない。その言葉だけで片づく気持ちじゃないから。だから、心の中でだけ、ゆっくり。ありがとう。*"
@@ -50,10 +46,6 @@
     "after5_farewell_seo_6_ins": {
         "name": "{name}",
         "text": "*ソヨンが振り返って手を振る。——Day 1と同じ動作だ。振り向かない。*"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*背筋が伸びている。完璧に。——でも今回は、震えていない。*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -125,10 +117,6 @@
         "name": "{name}",
         "text": "*日が沈んでいく。五日間が終わろうとしている。*"
     },
-    "after5_end": {
-        "name": "{name}",
-        "text": "*夕日が校庭を染めている。5日間がこんなに短かったとは。——最後の選択の瞬間が近づいてくる。*"
-    },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
@@ -167,10 +155,6 @@
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*また逃げるところだった。前の学校と同じように。ポケットの中のスマホを握りしめて何も言えないあの瞬間が繰り返されるところだった。——ダメだ。今回は。*"
-    },
-    "after5_last_chance_2_ins2": {
-        "name": "{name}",
-        "text": "*足が動く。口が先に開く。用意した言葉なんてない。——ただ体が先に動く。*"
     },
     "after5_last_chance_2_ins3": {
         "name": "{name}",

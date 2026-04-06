@@ -44,14 +44,6 @@
         "name": "{name}",
         "text": "*Je suis sur le point de mettre le mot dans ma poche quand — une voix familière depuis le couloir.*"
     },
-    "morning2_seo_2": {
-        "name": "Seoyeon",
-        "text": "Tu as bien dormi ?"
-    },
-    "morning2_seo_3": {
-        "name": "{name}",
-        "text": "*Seoyeon passe dans le couloir en jetant un coup d'œil dans la classe. Son regard se pose précisément sur moi.*"
-    },
     "morning2_seo_4": {
         "name": "{name}",
         "text": "La présidente du conseil des élèves vient jusqu'en classe pour dire bonjour ?"
@@ -67,10 +59,6 @@
     "morning2_minsu_1b": {
         "name": "{name}",
         "text": "*Je fixe le couloir où Seoyeon a disparu — quand j'entends une chaise racler derrière moi.*"
-    },
-    "morning2_minsu_2": {
-        "name": "{name}",
-        "text": "*Minsu se retourne depuis le siège devant moi.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
@@ -188,10 +176,6 @@
         "name": "{name}",
         "text": "*Elle a dit « demander », mais son regard, c'était un avertissement. — Cette fille s'inquiète sincèrement pour Seoyeon.*"
     },
-    "morning2_haeun_7": {
-        "name": "{name}",
-        "text": "*Haeun fait une légère révérence et s'en va.*"
-    },
     "morning2_end": {
         "name": "{name}",
         "text": "*Quelqu'un qui n'a jamais approché personne en premier pendant toute une année — est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
@@ -203,10 +187,6 @@
     "hidden_homeroom_d2_2": {
         "name": "{name}",
         "text": "*Elle dit que c'est administratif. Elle emballe toujours son intérêt dans du professionnel.*"
-    },
-    "hidden_homeroom_d2_walk": {
-        "name": "{name}",
-        "text": "*Un bureau dans le coin de la salle des professeurs. Des piles de papier et — du papier à manuscrit.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professeure principale",
@@ -284,10 +264,6 @@
         "name": "{name}",
         "text": "*Seoyeon est venue vers moi en premier. Son ton habituel, mais avec un besoin de confirmation.*"
     },
-    "morning2_greet_seo_others": {
-        "name": "{name}",
-        "text": "*Dain jette un coup d'œil depuis le fond de la classe. Détourne la tête. Yuna s'enfonce dans son livre. Les pages tournent plus vite.*"
-    },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
         "text": "*Deux réactions subtiles. — Est-ce que je dois remarquer, ou faire semblant de rien ?*"
@@ -340,10 +316,6 @@
         "name": "{name}",
         "text": "*J'ai replié le mot et je l'ai gardé dans la main. — Sans raison, il me semblait précieux.*"
     },
-    "morning2_minsu_1_ins": {
-        "name": "{name}",
-        "text": "*Au moment où Seoyeon tourne au coin du couloir — juste avant que sa nuque ne disparaisse, son sourire semble retomber pendant 0,3 seconde. Un retour à son expression par défaut. — Est-ce que j'ai rêvé ?*"
-    },
     "morning2_break_transition_ins": {
         "name": "{name}",
         "text": "*La professeure se tient devant la porte de la classe. Feuille de présence en main, elle jette un coup d'œil vers la porte — nos regards se croisent.*"
@@ -384,10 +356,6 @@
         "name": "{name}",
         "text": "*La professeure hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
     },
-    "hidden_homeroom_d2_6_ins": {
-        "name": "{name}",
-        "text": "*La professeure ferme le tiroir avec désinvolture. Comme si de rien n'était.*"
-    },
     "hidden_homeroom_d2_7_ins": {
         "name": "{name}",
         "text": "Beaucoup mieux. J'aime bien les gens de la classe."
@@ -415,10 +383,6 @@
     "hidden_homeroom_d2_11_ins": {
         "name": "{name}",
         "text": "*Elle murmure alors que personne n'écoute. — Cette personne a l'habitude d'emballer sa bienveillance dans le mot 'travail'.*"
-    },
-    "morning2_seo_dust_1_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon s'arrête. Elle regarde mon épaule.*"
     },
     "morning2_haeun_6_ins": {
         "name": "{name}",

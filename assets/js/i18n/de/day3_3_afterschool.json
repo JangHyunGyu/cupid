@@ -102,17 +102,9 @@
         "name": "{name}",
         "text": "*Ich ging zurück in den Flur.*"
     },
-    "after3_reject_for_dain_4": {
-        "name": "{name}",
-        "text": "*Ich komme zurück auf den Flur. Seoyeons geübtes Lächeln, der Wasserring, den Yuna hinterlassen hat. Gerade die, die nichts sagen, bleiben länger bei mir.*"
-    },
     "after3_seo_1": {
         "name": "{name}",
         "text": "*Ich öffnete die Tür zum Schülerratszimmer. — Seoyeon liegt über dem Schreibtisch zusammengesunken.*"
-    },
-    "after3_seo_2": {
-        "name": "{name}",
-        "text": "*Das habe ich noch nie gesehen. Die perfekte Schülersprecherin — wehrlos über dem Tisch zusammengesunken.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -178,17 +170,9 @@
         "name": "{name}",
         "text": "*Ich gehe rein, aber Yuna ist nicht da. Stattdessen — liegt ein Notizbuch aufgeschlagen auf dem Sofa. Voller Handschrift.*"
     },
-    "after3_yuna_3": {
-        "name": "{name}",
-        "text": "*Es ist ein Roman. Ein Roman, den Yuna geschrieben hat. — Darf ich ihn lesen?*"
-    },
     "after3_yuna_4": {
         "name": "{name}",
         "text": "*Erste Seite.*"
-    },
-    "after3_yuna_5": {
-        "name": "{name}",
-        "text": "*‚Eines Tages kam ein Transferschüler. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.‘*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -257,10 +241,6 @@
     "after3_dain_1": {
         "name": "{name}",
         "text": "*Die Turnhalle. Dain dehnt sich alleine. Sie versucht leicht zu joggen und —*"
-    },
-    "after3_dain_2": {
-        "name": "{name}",
-        "text": "*— knickt leicht mit dem rechten Bein um. Sie verzieht das Gesicht.*"
     },
     "after3_dain_3": {
         "name": "{name}",
@@ -545,10 +525,6 @@
         "name": "{name}",
         "text": "*Seoyeon schaut aus dem Fenster. Ich kann ihren Gesichtsausdruck nicht sehen. — Sie verbirgt ihn absichtlich.*"
     },
-    "after3_seo_choice1_react_ins2": {
-        "name": "{name}",
-        "text": "*Aber — ihr kleiner Finger bewegt sich leicht auf dem Schreibtisch. Als würde sie nach etwas greifen. Unbewusst.*"
-    },
     "after3_seo_choice1_react_ins3": {
         "name": "{name}",
         "text": "*Seoyeon richtet sich auf. Das Gesicht der Schülersprecherin kehrt zurück. — Aber es ist nicht perfekt. Der Winkel ihres Lächelns ist um einen halben Grad verschoben.*"
@@ -645,10 +621,6 @@
         "name": "{name}",
         "text": "*Seoyeon hält inne. Ihre Augen schwanken.*"
     },
-    "after3_confront_lie_2_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon dreht sich um. — Sie bleibt nicht stehen.*"
-    },
     "after3_confront_lie_2_ins2": {
         "name": "{name}",
         "text": "*Ihr Rücken ist gerade. Perfekt. — Aber ihre Fäuste sind geballt. Die Knöchel weiß.*"
@@ -685,10 +657,6 @@
         "name": "{name}",
         "text": "*Haeun dreht sich um und geht.*"
     },
-    "haeun_warn_7_ins4": {
-        "name": "{name}",
-        "text": "*Bei Seoyeon zu Hause ist es kompliziert. Ihre Eltern. — Ist das der Grund, warum Seoyeon 'perfekt sein musste'?*"
-    },
     "minsu_d3_8_ins": {
         "name": "{name}",
         "text": "...Was?"
@@ -720,10 +688,6 @@
     "minsu_d3_7_ins2": {
         "name": "{name}",
         "text": "*Wenn Sojeong mich damals hätte ablehnen können — würde es mich vielleicht nicht mehr verfolgen.*"
-    },
-    "minsu_d3_7_ins3": {
-        "name": "{name}",
-        "text": "*Wenn Nein zu sagen auch Liebe ist, dann muss ich jetzt nicht allen 'Ja' sagen — sondern nur einer einzigen Person.*"
     },
     "minsu_d3_10_ins": {
         "name": "{name}",

@@ -44,14 +44,6 @@
         "name": "{name}",
         "text": "*I'm about to pocket the note when — a familiar voice from the hallway.*"
     },
-    "morning2_seo_2": {
-        "name": "Seoyeon",
-        "text": "Did you sleep well?"
-    },
-    "morning2_seo_3": {
-        "name": "{name}",
-        "text": "*Seoyeon passes through the hallway, glancing into the classroom. Her gaze locks precisely onto me.*"
-    },
     "morning2_seo_4": {
         "name": "{name}",
         "text": "The student council president comes all the way to the classroom to say hi?"
@@ -67,10 +59,6 @@
     "morning2_minsu_1b": {
         "name": "{name}",
         "text": "*I'm staring at the hallway where Seoyeon disappeared — when I hear a chair scraping behind me.*"
-    },
-    "morning2_minsu_2": {
-        "name": "{name}",
-        "text": "*Minsu turns around from the seat in front of me.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
@@ -188,10 +176,6 @@
         "name": "{name}",
         "text": "*She said it was a favor, but those eyes were a warning. — This girl genuinely cares about Seoyeon.*"
     },
-    "morning2_haeun_7": {
-        "name": "{name}",
-        "text": "*Haeun gives a slight bow and leaves.*"
-    },
     "morning2_end": {
         "name": "{name}",
         "text": "*Someone who never once approached anyone first in a whole year — came to me first? What does that mean?*"
@@ -203,10 +187,6 @@
     "hidden_homeroom_d2_2": {
         "name": "{name}",
         "text": "*She says it's administrative. She always wraps her interest in official business.*"
-    },
-    "hidden_homeroom_d2_walk": {
-        "name": "{name}",
-        "text": "*A corner desk in the faculty office. Stacks of paper and — manuscript paper.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Homeroom Teacher",
@@ -284,10 +264,6 @@
         "name": "{name}",
         "text": "*Seoyeon came to me first. Her usual composed tone, but with a hint of wanting confirmation.*"
     },
-    "morning2_greet_seo_others": {
-        "name": "{name}",
-        "text": "*Dain glances from the back of the classroom. Turns away. Yuna buries deeper into her book. Pages turning faster.*"
-    },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
         "text": "*Two subtle reactions. — Should I notice, or pretend I didn't?*"
@@ -340,10 +316,6 @@
         "name": "{name}",
         "text": "*I fold the note and hold it in my hand. — For some reason, it feels precious.*"
     },
-    "morning2_minsu_1_ins": {
-        "name": "{name}",
-        "text": "*The moment Seoyeon rounds the corner of the hallway — just before the back of her head disappears, her smile seems to drop for 0.3 seconds. A switch back to her default expression. — Was that my imagination?*"
-    },
     "morning2_break_transition_ins": {
         "name": "{name}",
         "text": "*The homeroom teacher is standing by the classroom door. Holding the attendance sheet, she glances toward the door — and our eyes meet.*"
@@ -384,10 +356,6 @@
         "name": "{name}",
         "text": "*The teacher hesitates briefly. Her gaze drifts toward the drawer — then snaps right back.*"
     },
-    "hidden_homeroom_d2_6_ins": {
-        "name": "{name}",
-        "text": "*The teacher casually pushes the drawer shut. Like it's nothing.*"
-    },
     "hidden_homeroom_d2_7_ins": {
         "name": "{name}",
         "text": "A lot better. I like the people in class."
@@ -415,10 +383,6 @@
     "hidden_homeroom_d2_11_ins": {
         "name": "{name}",
         "text": "*Muttering when no one's listening. — This person makes a habit of packaging her concern as 'work.'*"
-    },
-    "morning2_seo_dust_1_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon stops. She looks at my shoulder.*"
     },
     "morning2_haeun_6_ins": {
         "name": "{name}",

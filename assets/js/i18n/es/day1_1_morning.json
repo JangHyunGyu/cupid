@@ -3,29 +3,9 @@
         "name": "{name}",
         "text": "*Abril. Los pétalos de cerezo revolotean en el aire.*"
     },
-    "start_2": {
-        "name": "{name}",
-        "text": "*El uniforme todavía está tieso. Huele levemente a almidón. Aunque lo planché ayer, las arrugas hacen lo que les da la gana. Ya vamos mal con el uniforme.*"
-    },
     "start_3": {
         "name": "{name}",
         "text": "*A partir de hoy, soy estudiante de este instituto. Transferido. Primera vez.*"
-    },
-    "start_3b": {
-        "name": "{name}",
-        "text": "*Mis dedos juguetean con el borde del móvil dentro del bolsillo. No quiero admitirlo, pero es un tic que solo aparece cuando estoy nervioso.*"
-    },
-    "start_4": {
-        "name": "{name}",
-        "text": "*El teléfono vibra en mi bolsillo. El chat grupal del antiguo instituto. Veo un nombre en la pantalla — y lo guardo de nuevo. Todavía no.*"
-    },
-    "start_5": {
-        "name": "{name}",
-        "text": "*Un pétalo de cerezo me roza la nariz. — Casi estornudo. Si esto fuera un drama, aquí es donde una chica guapa chocaría conmigo.*"
-    },
-    "start_6": {
-        "name": "{name}",
-        "text": "*La realidad es solo un estornudo.*"
     },
     "name_input_scene": {
         "name": "Sistema",
@@ -34,14 +14,6 @@
     "gate_1": {
         "name": "{name}",
         "text": "*Estoy frente a una puerta desconocida. Es un instituto bastante grande. Edificios limpios y un patio amplio.*"
-    },
-    "gate_2": {
-        "name": "{name}",
-        "text": "*Los estudiantes pasan por la puerta en pequeños grupos. Mi uniforme es el único que brilla de lo nuevo. Como un cartel andante — 'Soy nuevo aquí.'*"
-    },
-    "gate_3": {
-        "name": "{name}",
-        "text": "*Una chica está de pie junto a la puerta. Se aparta el largo pelo negro con un gesto natural — detrás de sus gafas, camina con calma. Sin ninguna prisa.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -74,10 +46,6 @@
     "seoyeon_meet_8": {
         "name": "{name}",
         "text": "*Esboza una sonrisa. Solo la comisura de los labios. — Sin darme cuenta, yo también estaba sonriendo.*"
-    },
-    "seoyeon_meet_9": {
-        "name": "{name}",
-        "text": "*Seoyeon camina hacia la puerta haciéndome señas para que la siga.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
@@ -144,10 +112,6 @@
         "name": "{name}",
         "text": "*Seoyeon me guía por el pasillo. Los estudiantes que pasan la saludan. Ella responde a cada uno con un gesto.*"
     },
-    "hallway_2": {
-        "name": "{name}",
-        "text": "*Seoyeon les devuelve el saludo con naturalidad. Parece que la jerarquía social de este instituto ya está decidida.*"
-    },
     "hallway_3": {
         "name": "Seoyeon",
         "text": "El edificio de tercer año es este, la biblioteca está allí. La cafetería está en el sótano."
@@ -167,10 +131,6 @@
     "hallway_8": {
         "name": "{name}",
         "text": "*De repente tengo planes para comer. — Ni siquiera dije que sí.*"
-    },
-    "hallway_9": {
-        "name": "{name}",
-        "text": "*Llegamos frente al aula.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
@@ -192,25 +152,9 @@
         "name": "{name}",
         "text": "*Abro la puerta del aula. Las miradas caen sobre mí.*"
     },
-    "classroom_2": {
-        "name": "{name}",
-        "text": "*Lo esperaba, pero el peso de 30 miradas sigue siendo mucho.*"
-    },
     "classroom_3": {
         "name": "Profesora",
         "text": "Bien, a partir de hoy tenemos un estudiante nuevo en clase. ¿Te presentas?"
-    },
-    "classroom_4": {
-        "name": "{name}",
-        "text": "Soy {name}. Encantado de conocerlos."
-    },
-    "classroom_5": {
-        "name": "{name}",
-        "text": "*Breve y limpio. Hablar más no tiene sentido.*"
-    },
-    "classroom_6": {
-        "name": "{name}",
-        "text": "*Un silbido desde un lado del aula.*"
     },
     "classroom_dain_1": {
         "name": "Dain",
@@ -239,10 +183,6 @@
     "classroom_yuna_2": {
         "name": "{name}",
         "text": "*Pelo blanco plateado. Ojos rojos, medio cerrados y soñolientos. Tatuajes cubren sus brazos. — Ni siquiera mira en esta dirección. Como si un estudiante nuevo no fuera nada del otro mundo.*"
-    },
-    "classroom_yuna_3": {
-        "name": "{name}",
-        "text": "*Los estudiantes a su alrededor no miran hacia Yuna. A propósito. Como si no hubiera nadie sentado allí.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -304,17 +244,9 @@
         "name": "{name}",
         "text": "*Una nota doblada aterriza en mi mesa. — Miro atrás y la chica de pelo blanco plateado junto a la ventana está mirando afuera de nuevo. A pesar de sus brazos cubiertos de tatuajes — la letra de la nota es pulcra.*"
     },
-    "classroom_yuna_note_2": {
-        "name": "{name}",
-        "text": "*Desdoblo la nota.*"
-    },
     "classroom_yuna_note_3": {
         "name": "{name}",
         "text": "*'Te tocó el asiento ruidoso. — Yuna'*"
-    },
-    "classroom_yuna_note_4": {
-        "name": "{name}",
-        "text": "*Tinta lila. — La tensión se relaja un poco.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
@@ -348,10 +280,6 @@
         "name": "{name}",
         "text": "*Su voz es seca. No es que no tenga emoción, solo contiene la justa. — Sorprendentemente, no me desagrada.*"
     },
-    "classroom_5_ins": {
-        "name": "{name}",
-        "text": "*La profesora asiente. Iba a decir algo más — se detiene y vuelve a mirar la lista de asistencia sobre el estrado. Su mano derecha juguetea con un bolígrafo en el bolsillo. Debe ser un hábito.*"
-    },
     "classroom_5_ins2": {
         "name": "Profesora",
         "text": "...Bien. {name}. Lo recordaré. *En voz baja, casi para sí misma* Tengo por norma memorizar los nombres a la primera."
@@ -375,9 +303,5 @@
     "classroom_minsu_2_ins": {
         "name": "Minsu",
         "text": "*Señalando a Dain con la barbilla* Tu resistencia."
-    },
-    "classroom_yuna_note_5_ins": {
-        "name": "{name}",
-        "text": "*La que envió la nota es la chica que miraba por la ventana. No sé si finge desinterés o si realmente le da igual.*"
     }
 }

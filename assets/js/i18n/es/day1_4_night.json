@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*De vuelta en mi cuarto. Acostado en la cama.*"
     },
-    "night_start_2": {
-        "name": "{name}",
-        "text": "*Para ser el primer día — estoy agotado. Pero no está mal.*"
-    },
     "night_start_3": {
         "name": "{name}",
         "text": "*El teléfono suena. El mensajero de la escuela.*"
@@ -63,10 +59,6 @@
         "name": "{name}",
         "text": "*Estaba a punto de dormirme cuando — el teléfono suena una vez más.*"
     },
-    "night_late_transition_2": {
-        "name": "{name}",
-        "text": "*11 de la noche. ¿Quién será?*"
-    },
     "night_late_branch": {
         "name": "{name}",
         "text": "*La pantalla se ilumina.*"
@@ -119,17 +111,9 @@
         "name": "{name}",
         "text": "*Dejé el teléfono.*"
     },
-    "night_end_2": {
-        "name": "{name}",
-        "text": "*Miro el techo. El aroma de los cerezos aún permanece en mi uniforme.*"
-    },
     "night_end_3": {
         "name": "{name}",
         "text": "*No fue un mal primer día.*"
-    },
-    "night_end_4": {
-        "name": "{name}",
-        "text": "*Mañana — puede que sea aún más interesante.*"
     },
     "night_seo_freetalk": {
         "name": "Seoyeon",

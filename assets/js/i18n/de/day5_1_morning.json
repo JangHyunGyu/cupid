@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*Fünfter Tag. Es ist Sonntag, aber es gibt eine Schulveranstaltung. Die Schuluniform ist bequemer geworden. — Das liegt an diesen Leuten. Ich weiß es.*"
     },
-    "morning5_start_2": {
-        "name": "{name}",
-        "text": "*Das letzte Event. All die Zeit, die wir bisher verbracht haben, mündet heute.*"
-    },
     "morning5_mood_check": {
         "name": "System",
         "text": ""
@@ -125,10 +121,6 @@
         "name": "Schulkrankenschwester",
         "text": "Oh? {name}. — Der letzte Tag. Der letzte Tag des Events. Fünf Tage. — Ging schnell."
     },
-    "hidden_nurse_d5_2": {
-        "name": "{name}",
-        "text": "*Die Tür geht auf. Die Krankenschwester steht da. Zwei Pappbecher in der Hand.*"
-    },
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "Und wenn ich mich nicht verletze?"
@@ -185,17 +177,9 @@
         "name": "{name}",
         "text": "*Im Flur am Literaturclub-Aushang vorbei — eine Kurzgeschichte hängt am schwarzen Brett. Titel:*"
     },
-    "morning5_seo_note_1_ins2": {
-        "name": "{name}",
-        "text": "*'An die Person, die ich in der Bibliothek traf'*"
-    },
     "morning5_seo_note_1_ins3": {
         "name": "{name}",
         "text": "*Sie ist von Yuna. — Eine Geschichte, die nur der Protagonist erkennen würde.*"
-    },
-    "morning5_seo_note_1_ins4": {
-        "name": "{name}",
-        "text": "*Ich blieb noch einen Moment vor dem Aushang stehen. Es ist nur ein kurzer Satz, aber so deutlich, als hätte Yuna selbst den Kopf hereingestreckt.*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -277,10 +261,6 @@
         "name": "{name}",
         "text": "*Eine Zeile. — Jemand, der dreimal beim Literaturdebüt gescheitert ist, wartet auf die einzeilige Rezension eines Schülers. Wenn das kein Geständnis ist, was dann?*"
     },
-    "hidden_homeroom_d5_6_ins16": {
-        "name": "{name}",
-        "text": "*Sie verlässt das Klassenzimmer — und bleibt an der Tür stehen.*"
-    },
     "hidden_homeroom_d5_6_ins17": {
         "name": "Klassenlehrerin",
         "text": "{name}."
@@ -308,10 +288,6 @@
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
         "text": "*Die Krankenschwester kommt heraus. Sie ist direkt vor meiner Nase.*"
-    },
-    "hidden_nurse_d5_2_ins2": {
-        "name": "{name}",
-        "text": "*— Direkt voreinander. Auge in Auge.*"
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "Schulkrankenschwester",
@@ -385,10 +361,6 @@
         "name": "{name}",
         "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit verschwunden. — So kommt die Aufrichtigkeit dieser Person immer.*"
     },
-    "hidden_nurse_d5_choice_b_ins3": {
-        "name": "{name}",
-        "text": "*Die Schulkrankenschwester lachte — und hielt inne. Schloss den Mund.*"
-    },
     "hidden_nurse_d5_choice_b_ins4": {
         "name": "Schulkrankenschwester",
         "text": "...Telefonnummer. Für medizinische Beratung?"
@@ -413,17 +385,9 @@
         "name": "{name}",
         "text": "*Ihr Markenspruch von Tag 1. — Damals war es Vorstellung. Jetzt ist es ernst.*"
     },
-    "hidden_nurse_d5_6_ins2": {
-        "name": "{name}",
-        "text": "*Die Schulkrankenschwester nimmt ein Pflaster heraus und klebt es auf meinen Handrücken. Langsam. — Auf dem Pflaster steht etwas in kleiner Schrift.*"
-    },
     "hidden_nurse_d5_6_ins3": {
         "name": "{name}",
         "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡'*"
-    },
-    "hidden_nurse_d5_6_ins4": {
-        "name": "{name}",
-        "text": "*Dieses Herz — sieht nicht nach medizinischem Interesse aus.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -452,10 +416,6 @@
     "morning5_yuna_story_2": {
         "name": "{name}",
         "text": "*Der letzte Satz. 'Als er die Augen öffnete, war ich schon weg. Nur ein Zettel blieb. — Nächstes Mal bin ich auch hier.'*"
-    },
-    "morning5_yuna_story_3": {
-        "name": "{name}",
-        "text": "*Lavendelfarbene Tinte. Dieselbe Tinte wie beim Zettel am ersten Tag.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",

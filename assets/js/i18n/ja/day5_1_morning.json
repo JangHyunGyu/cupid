@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*五日目。日曜日なのに学校行事だ。制服が馴染んできた。— こいつらのせいだ。分かってる。*"
     },
-    "morning5_start_2": {
-        "name": "{name}",
-        "text": "*最後のイベント。これまで積み重ねてきた時間が、今日に集約される。*"
-    },
     "morning5_mood_check": {
         "name": "システム",
         "text": ""
@@ -125,10 +121,6 @@
         "name": "保健先生",
         "text": "え？{name}。——最後の日だね。イベント最終日じゃん。5日間。——あっという間だ。"
     },
-    "hidden_nurse_d5_2": {
-        "name": "{name}",
-        "text": "*ドアが開く。保健先生が立っている。手に紙コップが二つ。*"
-    },
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "痛くなくても行っちゃダメですか？"
@@ -185,17 +177,9 @@
         "name": "{name}",
         "text": "*廊下の文芸部展示コーナーを通りかかる——掲示板に短編小説が貼ってある。タイトルは:*"
     },
-    "morning5_seo_note_1_ins2": {
-        "name": "{name}",
-        "text": "*『図書館で出会った人へ』*"
-    },
     "morning5_seo_note_1_ins3": {
         "name": "{name}",
         "text": "*ユナだ。——主人公だけが気づく物語。*"
-    },
-    "morning5_seo_note_1_ins4": {
-        "name": "{name}",
-        "text": "*掲示板の前に、少しだけ長く立ち尽くしていた。短い一文なのに、ユナが自分で顔をのぞかせてきたみたいに鮮明だ。*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -277,10 +261,6 @@
         "name": "{name}",
         "text": "*一行。——デビューに三度落ちた人が、生徒の一行感想を待っている。これが告白じゃなかったら何なんだ。*"
     },
-    "hidden_homeroom_d5_6_ins16": {
-        "name": "{name}",
-        "text": "*担任が教室を出ようとして——ドアの前で止まる。*"
-    },
     "hidden_homeroom_d5_6_ins17": {
         "name": "担任先生",
         "text": "{name}。"
@@ -308,10 +288,6 @@
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
         "text": "*保健室の先生が出てくる。目の前だ。*"
-    },
-    "hidden_nurse_d5_2_ins2": {
-        "name": "{name}",
-        "text": "*——目の前で鉢合わせした。*"
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "保健先生",
@@ -385,10 +361,6 @@
         "name": "{name}",
         "text": "*声が一段低くなった。ふざけた表情が完全に消えている。——この人の本気はいつもこうやって来る。*"
     },
-    "hidden_nurse_d5_choice_b_ins3": {
-        "name": "{name}",
-        "text": "*保健先生が笑いかけて——止まる。口を閉じる。*"
-    },
     "hidden_nurse_d5_choice_b_ins4": {
         "name": "保健先生",
         "text": "……電話番号。医療相談用？"
@@ -413,17 +385,9 @@
         "name": "{name}",
         "text": "*Day 1の決め台詞。——あの時はキャラ紹介だった。今は本気だ。*"
     },
-    "hidden_nurse_d5_6_ins2": {
-        "name": "{name}",
-        "text": "*保健先生がバンドエイドを取り出して僕の手の甲に貼る。ゆっくりと。——バンドエイドに小さな文字が書いてある。*"
-    },
     "hidden_nurse_d5_6_ins3": {
         "name": "{name}",
         "text": "*卒業したら保健室じゃなくてカフェで会おう——♡*"
-    },
-    "hidden_nurse_d5_6_ins4": {
-        "name": "{name}",
-        "text": "*今回のハートは——医療的関心ではなさそうだ。*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -452,10 +416,6 @@
     "morning5_yuna_story_2": {
         "name": "{name}",
         "text": "*最後の一文。「あの人が目を開けた時、私はもういなかった。メモだけ残した。— 次もここにいるから。」*"
-    },
-    "morning5_yuna_story_3": {
-        "name": "{name}",
-        "text": "*薄紫のインク。初日のメモと同じインクだ。*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",

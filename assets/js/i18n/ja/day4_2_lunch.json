@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*噴水の前にソヨンが立っている。先に来ていた。*"
     },
-    "date_seo_2": {
-        "name": "{name}",
-        "text": "*別人みたいだ。いや――同じ人なのに、違う一面だ。*"
-    },
     "date_seo_compliment_choice": {
         "name": "{name}",
         "text": "*なんて言おう？*",
@@ -59,17 +55,9 @@
         "name": "{name}",
         "text": "*何気ない言葉のようだけど――そこにソヨンの経験がにじんでいる。*"
     },
-    "date_seo_flower": {
-        "name": "{name}",
-        "text": "*花屋の前を通りかかる。*"
-    },
     "date_seo_flower_2": {
         "name": "{name}",
         "text": "*ソヨンが花屋のドアを押した。鈴の音が鳴る。*"
-    },
-    "date_seo_succulent": {
-        "name": "{name}",
-        "text": "*ソヨンが小さな鉢植えを一つ選ぶ。多肉植物だ。*"
     },
     "date_seo_succulent_2": {
         "name": "ソヨン",
@@ -86,10 +74,6 @@
     "date_yuna_1": {
         "name": "{name}",
         "text": "*カフェの前。ユナが壁にもたれて立っている。黒いワンピースに小さなショルダーバッグ。*"
-    },
-    "date_yuna_2": {
-        "name": "{name}",
-        "text": "*ユナってこんな顔だったっけ。――制服の外のユナを初めて見る。*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -304,10 +288,6 @@
     "date_dain_to_arcade": {
         "name": "{name}",
         "text": "*ゲームセンターへ向かった。*"
-    },
-    "date_dain_knee_2b": {
-        "name": "{name}",
-        "text": "*スポーツ用品店を通りかかる。ダインがショーウィンドウの前で止まる。バレーシューズが並んでいる。*"
     },
     "date_seo_pretty_high_ins": {
         "name": "ソヨン",

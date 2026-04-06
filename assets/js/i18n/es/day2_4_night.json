@@ -160,37 +160,17 @@
         "name": "{name}",
         "text": "*En esa época, abría el teléfono todas las noches. Escribía algo en las notas y lo borraba una y otra vez. — Cada vez, me detenía justo antes de enviarlo.*"
     },
-    "night2_flashback_4": {
-        "name": "{name}",
-        "text": "*Y un día de marzo, en la hora de tutoría, el de al lado me dijo: 'Sojeong tiene novio.'*"
-    },
     "night2_flashback_5": {
         "name": "{name}",
         "text": "*Las simulaciones en las notas se quedaron en la número 38. La 39 no existe. Ya no hacía falta escribirla.*"
-    },
-    "night2_flashback_6": {
-        "name": "{name}",
-        "text": "*El traslado no fue por Sojeong. Fue por el trabajo de mi padre. — Pero no me importó irme. Así no tendría que pasar cada día por el pasillo donde ella sonreía.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
         "text": "*'Esta vez lo diré sin arrepentirme.' — Eso me prometí al venir a esta escuela.*"
     },
-    "night2_flashback_8": {
-        "name": "{name}",
-        "text": "*Cerré la galería. Dudé si borrar la foto o no — la dejé. Borrarla sería como borrar también el arrepentimiento.*"
-    },
     "night2_end_2": {
         "name": "{name}",
         "text": "*El segundo día terminó. El primer día fue curiosidad. Me preguntaba qué tipo de personas eran.*"
-    },
-    "night2_end_3": {
-        "name": "{name}",
-        "text": "*Ayer solo me preocupaban. Hoy — las palabras 'te extraño' subieron hasta la garganta y volvieron a bajar.*"
-    },
-    "night2_end_4": {
-        "name": "{name}",
-        "text": "*Cierro los ojos. — Tal vez mañana debería ser un poco más honesto.*"
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",
@@ -258,10 +238,6 @@
         "name": "Yuna",
         "text": "...Sí. Buenas noches."
     },
-    "night2_start_ins": {
-        "name": "{name}",
-        "text": "*Tres personas. Todas a la vez.*"
-    },
     "night2_reply_yuna_6_ins": {
         "name": "{name}",
         "text": "*¿La tercera estrella? — Abro la ventana y miro al cielo nocturno. No sé cuál es la tercera.*"
@@ -269,14 +245,6 @@
     "night2_reply_yuna_6_ins2": {
         "name": "{name}",
         "text": "*Un acertijo típico de Yuna. — No te da la respuesta, pero te hace querer buscarla.*"
-    },
-    "night2_end_1_ins": {
-        "name": "{name}",
-        "text": "*El segundo día ha terminado.*"
-    },
-    "night2_end_2_ins": {
-        "name": "{name}",
-        "text": "*Hoy es — diferente. Ya no es curiosidad. Pienso en ellas. Qué estarán haciendo, qué dirán mañana.*"
     },
     "night2_end_2_ins2": {
         "name": "{name}",

@@ -11,10 +11,6 @@
         "name": "{name}",
         "text": "*Vor dem Schultor. In der Ferne drei Gestalten.*"
     },
-    "after5_hidden_farewell_2": {
-        "name": "{name}",
-        "text": "*Niemand schaut in diese Richtung. — Eher ist das eine Erleichterung. Im Moment traue ich mich nicht, irgendjemandem in die Augen zu sehen.*"
-    },
     "after5_hidden_farewell_3": {
         "name": "{name}",
         "text": "*Ich kann nicht so leicht sagen, dass es mir leid tut. Das sind keine Gefühle, die sich mit diesem einen Wort ordnen lassen. Also nur in meinem Herzen, ganz langsam. Danke.*"
@@ -50,10 +46,6 @@
     "after5_farewell_seo_6_ins": {
         "name": "{name}",
         "text": "*Seoyeon dreht sich um und winkt. — Dieselbe Geste wie an Tag 1. Sie schaut nicht zurück.*"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*Ihr Rücken ist gerade. Makellos. — Aber diesmal zittert sie nicht.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -125,10 +117,6 @@
         "name": "{name}",
         "text": "*Die Sonne geht unter. Fünf Tage gehen zu Ende.*"
     },
-    "after5_end": {
-        "name": "{name}",
-        "text": "*Der Sonnenuntergang taucht den Schulhof in Farbe. Waren fünf Tage wirklich so kurz? — Der Moment der letzten Entscheidung rückt näher.*"
-    },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
@@ -167,10 +155,6 @@
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*Fast wäre ich wieder weggelaufen. Wie an meiner alten Schule. Handy in der Tasche, kein Wort herausbekommen — dieser Moment wäre fast zurückgekehrt. — Nein. Nicht diesmal.*"
-    },
-    "after5_last_chance_2_ins2": {
-        "name": "{name}",
-        "text": "*Meine Beine bewegen sich. Mein Mund öffnet sich zuerst. Keine vorbereiteten Worte. — Mein Körper bewegt sich einfach von selbst.*"
     },
     "after5_last_chance_2_ins3": {
         "name": "{name}",

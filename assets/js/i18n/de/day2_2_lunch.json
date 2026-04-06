@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*Mittagspause. Anders als gestern habe ich Yunas Zettel in der Tasche. Am Ende des Flurs geht Seoyeon mit einer Lunchbox Richtung Dach, und Dain winkt mich wieder zum Schulkiosk.*"
     },
-    "lunch2_start_2": {
-        "name": "{name}",
-        "text": "*Die Mittagspause an dieser Schule ist ein Kriegsgebiet.*"
-    },
     "lunch2_choice": {
         "name": "{name}",
         "text": "*Mit wem soll ich gehen?*",
@@ -113,10 +109,6 @@
         "name": "{name}",
         "text": "*Der Bibliotheksanbau. Ein älteres Gebäude als das Hauptgebäude. Kaum Schüler hier.*"
     },
-    "lunch2_yuna_2": {
-        "name": "{name}",
-        "text": "*Ich steige die Treppe hoch und finde Yuna am Ende des Flurs. Sie lehnt an der Wand und liest ein Buch.*"
-    },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
         "name": "Yuna",
@@ -202,10 +194,6 @@
         "name": "{name}",
         "text": "*Yuna geht voraus. Tief in den Anbau hinein. Ein Ort, an den wohl niemand kommen würde.*"
     },
-    "lunch2_yuna_12": {
-        "name": "{name}",
-        "text": "*Ein kleiner Raum taucht auf. Sonnenlicht fällt durch das Fenster, mit einem alten Sofa und einem Bücherregal.*"
-    },
     "lunch2_yuna_13": {
         "name": "{name}",
         "text": "Was ist das hier? Ein geheimer Leseraum?"
@@ -262,10 +250,6 @@
         "name": "{name}",
         "text": "*Yuna öffnet ihr Buch. Ein Signal, dass das Gespräch vorbei ist.*"
     },
-    "lunch2_yuna_c1_8": {
-        "name": "{name}",
-        "text": "*Ich sollte die Stimmung ändern. — Versuchen wir es locker.*"
-    },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
         "text": "Ist die Person vielleicht plötzlich weg? Da verpasst man doch schnell mal, sich zu melden."
@@ -282,10 +266,6 @@
         "name": "{name}",
         "text": "*Mist. Es leichtfertig abtun zu wollen hat es nur so aussehen lassen, als würde ich ihre Wunde herunterspielen.*"
     },
-    "lunch2_yuna_c1_13": {
-        "name": "{name}",
-        "text": "*Eine peinliche Stille folgt. Nur das Geräusch umschlagender Seiten füllt den Raum.*"
-    },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
         "text": "*Ich war immer stolz auf mein Feingefühl. — Ich lag falsch. Nicht bei dieser Person.*"
@@ -294,10 +274,6 @@
         "name": "{name}",
         "text": "*Ich setze mich wortlos neben sie. Yuna schaut kurz herüber.*"
     },
-    "lunch2_yuna_c2_2": {
-        "name": "{name}",
-        "text": "*Sie zieht ein Buch aus ihrem Stapel und legt es neben mich.*"
-    },
     "lunch2_yuna_c2_3": {
         "name": "Yuna",
         "text": "...Lies."
@@ -305,10 +281,6 @@
     "lunch2_yuna_c2_4": {
         "name": "{name}",
         "text": "*Ein Buch statt Worte anbieten. — Die Sprache dieser Person sind Taten. Anders als Seoyeon, aber auf ihre eigene Art.*"
-    },
-    "lunch2_yuna_c2_5": {
-        "name": "{name}",
-        "text": "*Wir lesen nebeneinander in Stille. Das Sonnenlicht durch das Fenster ist warm.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
@@ -358,10 +330,6 @@
         "name": "{name}",
         "text": "*Sie schien mehr hören zu wollen — aber ich habe absichtlich zurückgehalten.*"
     },
-    "lunch2_seo_8": {
-        "name": "{name}",
-        "text": "*Beim Essen — die Dachtür öffnet sich. Dain ist hochgekommen.*"
-    },
     "lunch2_seo_9": {
         "name": "Dain",
         "text": "Oh! Da seid ihr?! Gefunden!"
@@ -401,10 +369,6 @@
     "lunch2_seo_17": {
         "name": "{name}",
         "text": "*...Das würde Dain wahrscheinlich sagen.*"
-    },
-    "lunch2_seo_18": {
-        "name": "{name}",
-        "text": "*Die Winkel dieses Dreiecks werden schärfer. — Und ich fühle mich weniger wie ein Eckpunkt und mehr wie ein Opfer.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -583,10 +547,6 @@
         "name": "{name}",
         "text": "*Fünfte Stunde, Sport. Beim Laufen auf dem Sportplatz — der Typ neben mir bremst abrupt und wir prallen zusammen. Mein Ellbogen ist aufgeschürft.*"
     },
-    "lunch2_dain_end_ins2": {
-        "name": "{name}",
-        "text": "*Nichts Schlimmes, aber es blutet etwas.*"
-    },
     "lunch2_dain_end_ins3": {
         "name": "Sportlehrer",
         "text": "Geh zum Krankenzimmer und lass das desinfizieren."
@@ -639,10 +599,6 @@
         "name": "{name}",
         "text": "*Sie holt einen in Desinfektionsmittel getränkten Wattebausch heraus — tupft vorsichtig ab. Dann holt sie ein Pflaster.*"
     },
-    "lunch2_dain_end_ins12": {
-        "name": "{name}",
-        "text": "*Ein Pflaster aufkleben — sollte höchstens 30 Sekunden dauern. Warum ist sie so akribisch?*"
-    },
     "lunch2_dain_end_ins13": {
         "name": "Schulkrankenschwester",
         "text": "*Klebt das Pflaster auf* Hier... so... fertig."
@@ -670,10 +626,6 @@
     "lunch2_dain_end_ins19": {
         "name": "{name}",
         "text": "*Beim Prüfen des Pflasters — fällt mir ein offener Laptop auf dem Schreibtisch auf. Auf dem Bildschirm steht etwas. Keine Krankenakten — eher ein persönliches Tagebuch.*"
-    },
-    "lunch2_dain_end_ins20": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester klappt schnell den Laptop zu.*"
     },
     "lunch2_dain_end_ins21": {
         "name": "Schulkrankenschwester",

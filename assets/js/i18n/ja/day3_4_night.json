@@ -47,10 +47,6 @@
         "name": "{name}",
         "text": "*夢を見た。— 誰かと並んで歩いていた。*"
     },
-    "night3_dream_2": {
-        "name": "{name}",
-        "text": "*顔は見えないのに、不思議と不安じゃなかった。*"
-    },
     "night3_dream_3": {
         "name": "{name}",
         "text": "*いい夢だった。*"
@@ -90,10 +86,6 @@
     "night3_nightmare_1": {
         "name": "{name}",
         "text": "*眠りに落ちた。— 夢。*"
-    },
-    "night3_nightmare_2": {
-        "name": "{name}",
-        "text": "*闇の中に立っている。何も見えない。*"
     },
     "night3_nightmare_3": {
         "name": "ソヨン",
@@ -136,10 +128,6 @@
         "name": "{name}",
         "text": "*手を伸ばした。— 届かない。*"
     },
-    "night3_nightmare_end_2": {
-        "name": "{name}",
-        "text": "*全員消えて、残ったのは闇だけ。*"
-    },
     "night3_nightmare_end_3": {
         "name": "{name}",
         "text": "*— 汗だくになって目を覚ました。午前3時。天井が見える。*"
@@ -148,21 +136,9 @@
         "name": "{name}",
         "text": "*僕は何をしたんだ。*"
     },
-    "night3_cheat_reflect_1": {
-        "name": "{name}",
-        "text": "*スマホを取り出した。ギャラリー。またスクロールする。——ソジョンの写真。*"
-    },
     "night3_cheat_reflect_2": {
         "name": "{name}",
         "text": "*笑っている。集合写真の中で僕を見て笑っている。何も知らないまま。*"
-    },
-    "night3_cheat_reflect_3": {
-        "name": "{name}",
-        "text": "*今回は後悔しないように言おうとした。この学校では正直に生きようと。*"
-    },
-    "night3_cheat_reflect_4": {
-        "name": "{name}",
-        "text": "*だから今回は違わなければならない。選ばないことは——全員を失うのと同じだ。*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
@@ -171,10 +147,6 @@
     "night3_faithful_reflect_1": {
         "name": "{name}",
         "text": "*目を開けた。朝の光がカーテンの隙間から差し込んでいる。——今日の夢は良かった。*"
-    },
-    "night3_faithful_reflect_2": {
-        "name": "{name}",
-        "text": "*スマホを取り出した。ギャラリーを開いた。ソジョンの写真。——スクロールを止めて、長押しした。*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -220,73 +192,37 @@
         "name": "{name}",
         "text": "*ソジョンの時と正反対なのに、結果は同じだ。誰かが傷つく。*"
     },
-    "night3_cheat_reflect_3_ins2": {
-        "name": "{name}",
-        "text": "*前の学校：何も言えなくて後悔。*"
-    },
     "night3_cheat_reflect_3_ins3": {
         "name": "{name}",
         "text": "*この学校：みんなに言って後悔。*"
-    },
-    "night3_cheat_reflect_3_ins4": {
-        "name": "{name}",
-        "text": "*結局、問題は言うか言わないかじゃなくて——誰になんだ。*"
     },
     "night3_cheat_reflect_3_ins5": {
         "name": "{name}",
         "text": "*ミンスが言った。断るのも愛だよ*"
     },
-    "night3_cheat_reflect_3_ins6": {
-        "name": "{name}",
-        "text": "*ソヨンが言った。「大勢の中の一人にはならない。」*"
-    },
     "night3_cheat_reflect_3_ins7": {
         "name": "{name}",
         "text": "*ユナが言った。逃げないで*"
-    },
-    "night3_cheat_reflect_5_ins": {
-        "name": "{name}",
-        "text": "*夢を見た。——誰かと並んで歩いていた。顔は見えないのに、不思議と不安じゃなかった。*"
     },
     "night3_faithful_reflect_2_ins": {
         "name": "{name}",
         "text": "*削除しますか？*"
     },
-    "night3_faithful_reflect_2_ins2": {
-        "name": "{name}",
-        "text": "*確認ボタンの上で指が止まる。*"
-    },
     "night3_faithful_reflect_2_ins3": {
         "name": "{name}",
         "text": "*1秒。画面を見下ろすことしかできない。*"
-    },
-    "night3_faithful_reflect_2_ins4": {
-        "name": "{name}",
-        "text": "*ミンスが言っていたことを思い出す。『断るのも愛だ』*"
     },
     "night3_faithful_reflect_2_ins5": {
         "name": "{name}",
         "text": "*……そうだ。まず自分が過去を断らないと。*"
     },
-    "night3_faithful_reflect_2_ins6": {
-        "name": "{name}",
-        "text": "*——削除した。*"
-    },
     "night3_faithful_reflect_3_ins": {
         "name": "{name}",
         "text": "*ミンスが言った。断るのも愛だよその通りだ。前の学校で、ソジョンは僕を断る機会すらなかった。僕が口を閉ざしたから。——それがソジョンにとっても、僕にとっても、一番不親切な結末だった。*"
     },
-    "night3_faithful_reflect_4_ins": {
-        "name": "{name}",
-        "text": "*ギャラリーは空っぽだ。ソジョンが写っていた場所。空の画面が、かえって鮮明に見える。*"
-    },
     "night3_faithful_reflect_4_ins2": {
         "name": "{name}",
         "text": "*写真を消すのは簡単だった。指一本で済む。— 感情は、それよりも時間がかかる。*"
-    },
-    "night3_faithful_reflect_4_ins3": {
-        "name": "{name}",
-        "text": "*それでも。消した分だけは— 次に進める。*"
     },
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",

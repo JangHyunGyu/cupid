@@ -143,10 +143,6 @@
         "name": "{name}",
         "text": "*Elle râle tout en riant. — C'est ça, Dain.*"
     },
-    "tour_dain_9": {
-        "name": "{name}",
-        "text": "*Dain pose le ballon sur le terrain. Doucement.*"
-    },
     "tour_dain_10": {
         "name": "Dain",
         "text": "Devenir pro... je ne sais pas."
