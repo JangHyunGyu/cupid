@@ -142,25 +142,9 @@
       "Guardaré tu secreto"
     ]
   },
-  "after3_seo_choice1": {
-    "name": "{name}",
-    "text": "*Seoyeon se detiene un momento. Deja el bolígrafo. Despacio.*"
-  },
-  "after3_seo_choice1_react": {
-    "name": "Seoyeon",
-    "text": "...Esas palabras. No deberías decirlas tan a la ligera."
-  },
-  "after3_seo_choice2": {
-    "name": "{name}",
-    "text": "*Sus ojos están brillantes. — No lloró. Aún no.*"
-  },
   "after3_seo_end": {
     "name": "{name}",
     "text": "*Esas palabras pesan. — Creo que empiezo a entender lo enorme que es para esta persona mostrar un lado imperfecto de sí misma.*"
-  },
-  "after3_seo_end_c2": {
-    "name": "{name}",
-    "text": "*Prometer guardar su secreto — parece significar mucho para ella.*"
   },
   "after3_yuna_1": {
     "name": "{name}",
@@ -201,38 +185,6 @@
       "Quizás deberías cambiar el nombre del protagonista",
       "¿Cómo termina?"
     ]
-  },
-  "after3_yuna_choice1": {
-    "name": "Yuna",
-    "text": "...No hay nombre de protagonista."
-  },
-  "after3_yuna_choice1_2": {
-    "name": "{name}",
-    "text": "‘Un estudiante transferido vino a la biblioteca’ ¿es solo una coincidencia?"
-  },
-  "after3_yuna_choice1_3": {
-    "name": "Yuna",
-    "text": "*Volteando el cuaderno* ...Pero a veces. La ficción es más sincera que la realidad."
-  },
-  "after3_yuna_choice1_react": {
-    "name": "{name}",
-    "text": "*Dijo ficción, pero sus orejas la delatan.*"
-  },
-  "after3_yuna_choice2": {
-    "name": "{name}",
-    "text": "*Yuna se detiene. Mira el cuaderno hacia abajo.*"
-  },
-  "after3_yuna_choice2_2": {
-    "name": "Yuna",
-    "text": "...Aún no he decidido el final."
-  },
-  "after3_yuna_choice2_3": {
-    "name": "Yuna",
-    "text": "...Porque si escribo el final, se acaba."
-  },
-  "after3_yuna_choice2_react": {
-    "name": "{name}",
-    "text": "*Yuna dijo más de dos frases seguidas. — Para ella, eso es prueba de emoción.*"
   },
   "after3_yuna_end": {
     "name": "{name}",
@@ -289,10 +241,6 @@
   "after3_dain_choice1_react3": {
     "name": "Dain",
     "text": "Gracias. Por no preguntar nada."
-  },
-  "after3_dain_choice2": {
-    "name": "Dain",
-    "text": "Oye, estoy bien! No necesito ninguna venda!!"
   },
   "after3_dain_end": {
     "name": "{name}",
@@ -521,45 +469,9 @@
     "name": "Seoyeon",
     "text": "*Arreglándose el pelo apresuradamente* ...¿Viste?"
   },
-  "after3_seo_choice1_react_ins": {
-    "name": "{name}",
-    "text": "*Seoyeon mira por la ventana. No puedo ver su expresión. — Lo está ocultando a propósito.*"
-  },
-  "after3_seo_choice1_react_ins3": {
-    "name": "{name}",
-    "text": "*Seoyeon se recompone. Vuelve la cara de la presidenta del consejo. — Pero no es perfecta. El ángulo de su sonrisa está medio grado desviado.*"
-  },
-  "after3_seo_choice1_react_ins4": {
-    "name": "Seoyeon",
-    "text": "...Gracias."
-  },
-  "after3_seo_choice1_react_ins5": {
-    "name": "{name}",
-    "text": "Sé guardar secretos."
-  },
-  "after3_seo_choice1_react_ins6": {
-    "name": "Seoyeon",
-    "text": "*Ordenando papeles* Yo también sé uno de tus secretos."
-  },
-  "after3_seo_choice1_react_ins7": {
-    "name": "Seoyeon",
-    "text": "A la hora de comer, tus ojos brillaron cuando comiste el rollito de huevo. — Eso no se puede fingir."
-  },
-  "after3_seo_choice1_react_ins8": {
-    "name": "{name}",
-    "text": "*Le ofrecí guardar su secreto, y ella sacó un secreto de igual peso. — Para esta persona, la igualdad va antes que la gratitud.*"
-  },
   "after3_yuna_5_ins": {
     "name": "{name}",
     "text": "*...¿No es esto sobre mí?*"
-  },
-  "after3_yuna_choice1_2_ins": {
-    "name": "Yuna",
-    "text": "*Abrazando el cuaderno contra su pecho* ...Las novelas son. Ficción."
-  },
-  "after3_yuna_choice2_3_ins": {
-    "name": "{name}",
-    "text": "*Yuna dijo más de dos frases seguidas. — Nunca la había visto hablar tanto.*"
   },
   "after3_seo_7_ins": {
     "name": "Seoyeon",
@@ -568,30 +480,6 @@
   "after3_dain_5_ins": {
     "name": "Dain",
     "text": "¡¡Te digo que estoy bien!! ¡¡No es nada!!"
-  },
-  "after3_dain_choice2_ins": {
-    "name": "{name}",
-    "text": "*Traje una venda de la enfermería. Se la ofrecí a Dain.*"
-  },
-  "after3_dain_choice2_ins2": {
-    "name": "Dain",
-    "text": "...Ah, de verdad la trajiste."
-  },
-  "after3_dain_choice2_ins3": {
-    "name": "{name}",
-    "text": "Decías que estabas bien."
-  },
-  "after3_dain_choice2_ins4": {
-    "name": "{name}",
-    "text": "*Dain toma la venda y la mira durante un rato. Se muerde el labio.*"
-  },
-  "after3_dain_choice2_ins5": {
-    "name": "Dain",
-    "text": "*Sonríe débilmente.* ...Qué. No debería conmoverme por algo así."
-  },
-  "after3_dain_choice2_ins6": {
-    "name": "{name}",
-    "text": "*La aceptó. — Es la primera vez que Dain no rechaza la ayuda de alguien. La sonrisa sin signos de exclamación se siente extrañamente pesada.*"
   },
   "after3_confront_5_ins": {
     "name": "Dain",

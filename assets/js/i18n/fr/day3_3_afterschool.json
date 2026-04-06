@@ -142,25 +142,9 @@
       "Je garderai ton secret"
     ]
   },
-  "after3_seo_choice1": {
-    "name": "{name}",
-    "text": "*Seoyeon s'arrête un instant. Pose son stylo. Lentement.*"
-  },
-  "after3_seo_choice1_react": {
-    "name": "Seoyeon",
-    "text": "...Ce genre de mots. Tu ne devrais pas les dire si facilement."
-  },
-  "after3_seo_choice2": {
-    "name": "{name}",
-    "text": "*Ses yeux brillent. — Elle n’a pas pleuré. Pas encore.*"
-  },
   "after3_seo_end": {
     "name": "{name}",
     "text": "*Ces mots pèsent lourd. — Je crois que je commence à comprendre à quel point c’est immense pour elle de montrer un côté imparfait.*"
-  },
-  "after3_seo_end_c2": {
-    "name": "{name}",
-    "text": "*Promettre de garder son secret — ça semble avoir une importance immense pour elle.*"
   },
   "after3_yuna_1": {
     "name": "{name}",
@@ -201,38 +185,6 @@
       "Tu devrais peut-être changer le nom du protagoniste",
       "Comment ça finit ?"
     ]
-  },
-  "after3_yuna_choice1": {
-    "name": "Yuna",
-    "text": "...Il n’y a pas de nom de protagoniste."
-  },
-  "after3_yuna_choice1_2": {
-    "name": "{name}",
-    "text": "‘Un élève transféré est venu à la bibliothèque’ c’est juste une coïncidence ?"
-  },
-  "after3_yuna_choice1_3": {
-    "name": "Yuna",
-    "text": "*En retournant son carnet* ...Mais parfois. La fiction est plus honnête que la réalité."
-  },
-  "after3_yuna_choice1_react": {
-    "name": "{name}",
-    "text": "*Elle a dit fiction, mais ses oreilles la trahissent.*"
-  },
-  "after3_yuna_choice2": {
-    "name": "{name}",
-    "text": "*Yuna s’arrête. Elle baisse les yeux vers le carnet.*"
-  },
-  "after3_yuna_choice2_2": {
-    "name": "Yuna",
-    "text": "...Je n’ai pas encore décidé de la fin."
-  },
-  "after3_yuna_choice2_3": {
-    "name": "Yuna",
-    "text": "...Parce qu’une fois que j’écris la fin, c’est terminé."
-  },
-  "after3_yuna_choice2_react": {
-    "name": "{name}",
-    "text": "*Yuna a parlé plus de deux phrases d’affilée. — Pour elle, c’est la preuve d’une émotion.*"
   },
   "after3_yuna_end": {
     "name": "{name}",
@@ -289,10 +241,6 @@
   "after3_dain_choice1_react3": {
     "name": "Dain",
     "text": "Merci. De ne rien avoir demandé."
-  },
-  "after3_dain_choice2": {
-    "name": "Dain",
-    "text": "Hé ! Je vais bien ! Pas besoin de pansement !!"
   },
   "after3_dain_end": {
     "name": "{name}",
@@ -521,45 +469,9 @@
     "name": "Seoyeon",
     "text": "*Replaçant ses cheveux à la hâte* ...Tu as vu ?"
   },
-  "after3_seo_choice1_react_ins": {
-    "name": "{name}",
-    "text": "*Seoyeon regarde par la fenêtre. Je ne vois pas son expression. — Elle la cache volontairement.*"
-  },
-  "after3_seo_choice1_react_ins3": {
-    "name": "{name}",
-    "text": "*Seoyeon se redresse. Le visage de la présidente du conseil revient. — Mais ce n'est pas parfait. L'angle de son sourire est décalé d'un demi-degré.*"
-  },
-  "after3_seo_choice1_react_ins4": {
-    "name": "Seoyeon",
-    "text": "...Merci."
-  },
-  "after3_seo_choice1_react_ins5": {
-    "name": "{name}",
-    "text": "Je sais garder un secret."
-  },
-  "after3_seo_choice1_react_ins6": {
-    "name": "Seoyeon",
-    "text": "*En rangeant des papiers* Moi aussi je connais un de tes secrets."
-  },
-  "after3_seo_choice1_react_ins7": {
-    "name": "Seoyeon",
-    "text": "Tes yeux brillaient quand tu as mangé l'omelette ce midi. — Ça, tu ne peux pas le simuler."
-  },
-  "after3_seo_choice1_react_ins8": {
-    "name": "{name}",
-    "text": "*J'ai proposé de garder son secret, et elle en a sorti un de poids égal. — Pour elle, l'égalité passe avant la gratitude.*"
-  },
   "after3_yuna_5_ins": {
     "name": "{name}",
     "text": "*...Ça ne parle pas de moi, ça ?*"
-  },
-  "after3_yuna_choice1_2_ins": {
-    "name": "Yuna",
-    "text": "*Serrant le cahier contre sa poitrine* ...Les romans, c'est. De la fiction."
-  },
-  "after3_yuna_choice2_3_ins": {
-    "name": "{name}",
-    "text": "*Yuna a dit plus de deux phrases d'affilée. — Je ne l'avais jamais vue parler autant.*"
   },
   "after3_seo_7_ins": {
     "name": "Seoyeon",
@@ -568,30 +480,6 @@
   "after3_dain_5_ins": {
     "name": "Dain",
     "text": "Je te dis que ça va !! C'est rien du tout !!"
-  },
-  "after3_dain_choice2_ins": {
-    "name": "{name}",
-    "text": "*J'ai rapporté un pansement de l'infirmerie. Je l'ai tendu à Dain.*"
-  },
-  "after3_dain_choice2_ins2": {
-    "name": "Dain",
-    "text": "...Oh, t'en as vraiment rapporté un."
-  },
-  "after3_dain_choice2_ins3": {
-    "name": "{name}",
-    "text": "Tu disais que ça allait."
-  },
-  "after3_dain_choice2_ins4": {
-    "name": "{name}",
-    "text": "*Dain prend le pansement et le fixe longuement. Elle se mord la lèvre.*"
-  },
-  "after3_dain_choice2_ins5": {
-    "name": "Dain",
-    "text": "*Sourire faible.* ...Quoi. Je devrais pas être touchée par un truc pareil."
-  },
-  "after3_dain_choice2_ins6": {
-    "name": "{name}",
-    "text": "*Elle l'a accepté. — C'est la première fois que Dain ne refuse pas l'aide de quelqu'un. Le sourire sans points d'exclamation est étrangement lourd.*"
   },
   "after3_confront_5_ins": {
     "name": "Dain",

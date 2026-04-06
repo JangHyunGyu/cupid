@@ -142,25 +142,9 @@
       "Ich werde dein Geheimnis hüten"
     ]
   },
-  "after3_seo_choice1": {
-    "name": "{name}",
-    "text": "*Seoyeon hält inne. Legt den Stift ab. Langsam.*"
-  },
-  "after3_seo_choice1_react": {
-    "name": "Seoyeon",
-    "text": "...Solche Worte. Die sollte man nicht so leichtfertig sagen."
-  },
-  "after3_seo_choice2": {
-    "name": "{name}",
-    "text": "*Ihre Augen glänzen feucht. — Sie hat nicht geweint. Noch nicht.*"
-  },
   "after3_seo_end": {
     "name": "{name}",
     "text": "*Diese Worte wiegen schwer. — Ich glaube, ich beginne zu verstehen, wie gewaltig es für diese Person ist, eine unvollkommene Seite von sich zu zeigen.*"
-  },
-  "after3_seo_end_c2": {
-    "name": "{name}",
-    "text": "*Ihr Geheimnis zu hüten — scheint für sie von großer Bedeutung zu sein.*"
   },
   "after3_yuna_1": {
     "name": "{name}",
@@ -201,38 +185,6 @@
       "Vielleicht solltest du den Namen des Protagonisten ändern",
       "Wie endet es?"
     ]
-  },
-  "after3_yuna_choice1": {
-    "name": "Yuna",
-    "text": "...Es gibt keinen Protagonistennamen."
-  },
-  "after3_yuna_choice1_2": {
-    "name": "{name}",
-    "text": "‚Ein Transferschüler kam in die Bibliothek‘ ist nur ein Zufall?"
-  },
-  "after3_yuna_choice1_3": {
-    "name": "Yuna",
-    "text": "*dreht das Notizbuch um* ...Aber manchmal. Fiktion ist ehrlicher als die Wahrheit."
-  },
-  "after3_yuna_choice1_react": {
-    "name": "{name}",
-    "text": "*Sie sagte Fiktion, aber ihre Ohren lügen.*"
-  },
-  "after3_yuna_choice2": {
-    "name": "{name}",
-    "text": "*Yuna hält inne. Sie schaut auf das Notizbuch hinunter.*"
-  },
-  "after3_yuna_choice2_2": {
-    "name": "Yuna",
-    "text": "...Das Ende habe ich noch nicht entschieden."
-  },
-  "after3_yuna_choice2_3": {
-    "name": "Yuna",
-    "text": "...Weil es vorbei ist, wenn ich das Ende schreibe."
-  },
-  "after3_yuna_choice2_react": {
-    "name": "{name}",
-    "text": "*Yuna hat mehr als zwei Sätze hintereinander gesprochen. — Bei ihr ist das ein Beweis für Gefühle.*"
   },
   "after3_yuna_end": {
     "name": "{name}",
@@ -289,10 +241,6 @@
   "after3_dain_choice1_react3": {
     "name": "Dain",
     "text": "Danke. Dass du nichts gefragt hast."
-  },
-  "after3_dain_choice2": {
-    "name": "Dain",
-    "text": "Hey! Mir geht's gut! Ich brauch kein Pflaster!!"
   },
   "after3_dain_end": {
     "name": "{name}",
@@ -521,45 +469,9 @@
     "name": "Seoyeon",
     "text": "*Sich hastig die Haare richtend* ...Hast du gesehen?"
   },
-  "after3_seo_choice1_react_ins": {
-    "name": "{name}",
-    "text": "*Seoyeon schaut aus dem Fenster. Ich kann ihren Gesichtsausdruck nicht sehen. — Sie verbirgt ihn absichtlich.*"
-  },
-  "after3_seo_choice1_react_ins3": {
-    "name": "{name}",
-    "text": "*Seoyeon richtet sich auf. Das Gesicht der Schülersprecherin kehrt zurück. — Aber es ist nicht perfekt. Der Winkel ihres Lächelns ist um einen halben Grad verschoben.*"
-  },
-  "after3_seo_choice1_react_ins4": {
-    "name": "Seoyeon",
-    "text": "...Danke."
-  },
-  "after3_seo_choice1_react_ins5": {
-    "name": "{name}",
-    "text": "Ich kann gut Geheimnisse bewahren."
-  },
-  "after3_seo_choice1_react_ins6": {
-    "name": "Seoyeon",
-    "text": "*Unterlagen sortierend* Ich kenne auch eins deiner Geheimnisse."
-  },
-  "after3_seo_choice1_react_ins7": {
-    "name": "Seoyeon",
-    "text": "Beim Mittagessen haben deine Augen geleuchtet, als du das Eieromelette gegessen hast. — Das kann man nicht vortäuschen."
-  },
-  "after3_seo_choice1_react_ins8": {
-    "name": "{name}",
-    "text": "*Ich bot an, ihr Geheimnis zu bewahren, und sie zog ein gleichwertiges Geheimnis hervor. — Für sie kommt Gleichheit vor Dankbarkeit.*"
-  },
   "after3_yuna_5_ins": {
     "name": "{name}",
     "text": "*...Geht es hier nicht um mich?*"
-  },
-  "after3_yuna_choice1_2_ins": {
-    "name": "Yuna",
-    "text": "*Das Notizbuch fest an die Brust drückend* ...Romane sind. Fiktion."
-  },
-  "after3_yuna_choice2_3_ins": {
-    "name": "{name}",
-    "text": "*Yuna hat mehr als zwei Sätze am Stück gesagt. — Ich habe sie noch nie so viel reden sehen.*"
   },
   "after3_seo_7_ins": {
     "name": "Seoyeon",
@@ -568,30 +480,6 @@
   "after3_dain_5_ins": {
     "name": "Dain",
     "text": "Ich sag doch, mir geht's gut!! Ist nichts Schlimmes!!"
-  },
-  "after3_dain_choice2_ins": {
-    "name": "{name}",
-    "text": "*Ich habe ein Pflaster aus dem Krankenzimmer geholt. Hielt es Dain hin.*"
-  },
-  "after3_dain_choice2_ins2": {
-    "name": "Dain",
-    "text": "...Oh, du hast wirklich eins gebracht."
-  },
-  "after3_dain_choice2_ins3": {
-    "name": "{name}",
-    "text": "Du sagtest doch, alles gut."
-  },
-  "after3_dain_choice2_ins4": {
-    "name": "{name}",
-    "text": "*Dain nimmt das Pflaster und starrt es lange an. Beißt sich auf die Lippe.*"
-  },
-  "after3_dain_choice2_ins5": {
-    "name": "Dain",
-    "text": "*Lächelt schwach.* ...Was. Ich sollte mich von so was nicht berühren lassen."
-  },
-  "after3_dain_choice2_ins6": {
-    "name": "{name}",
-    "text": "*Sie hat es angenommen. — Zum ersten Mal hat Dain Hilfe nicht abgelehnt. Das Lächeln ohne Ausrufezeichen fühlt sich seltsam schwer an.*"
   },
   "after3_confront_5_ins": {
     "name": "Dain",

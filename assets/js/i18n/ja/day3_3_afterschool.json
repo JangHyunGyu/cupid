@@ -142,25 +142,9 @@
       "秘密は守るよ"
     ]
   },
-  "after3_seo_choice1": {
-    "name": "{name}",
-    "text": "*ソヨンが少し止まる。ペンを置く。ゆっくりと。*"
-  },
-  "after3_seo_choice1_react": {
-    "name": "ソヨン",
-    "text": "...そんなこと。簡単に言っちゃダメなのに。"
-  },
-  "after3_seo_choice2": {
-    "name": "{name}",
-    "text": "*目が潤んでいる。— 泣かなかった。まだ。*"
-  },
   "after3_seo_end": {
     "name": "{name}",
     "text": "*その一言が重い。— この人にとって完璧でない姿を見せることがどれほど大きなことか、少し分かった気がする。*"
-  },
-  "after3_seo_end_c2": {
-    "name": "{name}",
-    "text": "*秘密を守るという言葉が——この人にとっては大きな意味を持つようだ。*"
   },
   "after3_yuna_1": {
     "name": "{name}",
@@ -201,38 +185,6 @@
       "主人公の名前、変えた方がいいんじゃない",
       "結末はどうなるの？"
     ]
-  },
-  "after3_yuna_choice1": {
-    "name": "ユナ",
-    "text": "...主人公の名前なんてない。"
-  },
-  "after3_yuna_choice1_2": {
-    "name": "{name}",
-    "text": "『転校生が図書館に来た』は偶然の一致？"
-  },
-  "after3_yuna_choice1_3": {
-    "name": "ユナ",
-    "text": "*ノートを裏返しながら* ...でも、たまには。虚構の方が現実より正直なんだ。"
-  },
-  "after3_yuna_choice1_react": {
-    "name": "{name}",
-    "text": "*『フィクション』と言ったけど、耳が嘘をついている。*"
-  },
-  "after3_yuna_choice2": {
-    "name": "{name}",
-    "text": "*ユナが一瞬止まる。ノートを見下ろす。*"
-  },
-  "after3_yuna_choice2_2": {
-    "name": "ユナ",
-    "text": "...結末はまだ決めてない。"
-  },
-  "after3_yuna_choice2_3": {
-    "name": "ユナ",
-    "text": "...結末を書いたら終わっちゃうから。"
-  },
-  "after3_yuna_choice2_react": {
-    "name": "{name}",
-    "text": "*ユナが二文以上続けて話した。— この人にとってそれは感情の証拠だ。*"
   },
   "after3_yuna_end": {
     "name": "{name}",
@@ -289,10 +241,6 @@
   "after3_dain_choice1_react3": {
     "name": "ダイン",
     "text": "ありがとう。何も聞かないでくれて。"
-  },
-  "after3_dain_choice2": {
-    "name": "ダイン",
-    "text": "あ！大丈夫だってば！湿布とか要らないから！！"
   },
   "after3_dain_end": {
     "name": "{name}",
@@ -521,45 +469,9 @@
     "name": "ソヨン",
     "text": "*慌てて髪を整えながら* ……見た？"
   },
-  "after3_seo_choice1_react_ins": {
-    "name": "{name}",
-    "text": "*ソヨンが窓の外を見る。表情が見えない。——わざと見せないようにしている。*"
-  },
-  "after3_seo_choice1_react_ins3": {
-    "name": "{name}",
-    "text": "*ソヨンが姿勢を正す。生徒会長の顔が戻る。——でも完璧じゃない。笑顔の角度が0.5度ずれている。*"
-  },
-  "after3_seo_choice1_react_ins4": {
-    "name": "ソヨン",
-    "text": "……ありがとう。"
-  },
-  "after3_seo_choice1_react_ins5": {
-    "name": "{name}",
-    "text": "秘密は守るよ。"
-  },
-  "after3_seo_choice1_react_ins6": {
-    "name": "ソヨン",
-    "text": "*書類を整理しながら* 私もあんたの秘密、一つ知ってるよ"
-  },
-  "after3_seo_choice1_react_ins7": {
-    "name": "ソヨン",
-    "text": "お昼に卵焼き食べたとき、目がキラキラしてたよ。——あれは演技できないから。"
-  },
-  "after3_seo_choice1_react_ins8": {
-    "name": "{name}",
-    "text": "*秘密を守ると言ったら、同等の秘密を出してきた。——この人はありがとうより対等が先なんだ。*"
-  },
   "after3_yuna_5_ins": {
     "name": "{name}",
     "text": "*……これ、僕のことじゃないか？*"
-  },
-  "after3_yuna_choice1_2_ins": {
-    "name": "ユナ",
-    "text": "*ノートを胸に抱きしめながら* ……小説は。フィクションだから"
-  },
-  "after3_yuna_choice2_3_ins": {
-    "name": "{name}",
-    "text": "*ユナが二文以上続けて話した。——この人がこれだけ話すのは初めて見た。*"
   },
   "after3_seo_7_ins": {
     "name": "ソヨン",
@@ -568,30 +480,6 @@
   "after3_dain_5_ins": {
     "name": "ダイン",
     "text": "だから大丈夫だって！！大したことないから！！"
-  },
-  "after3_dain_choice2_ins": {
-    "name": "{name}",
-    "text": "*保健室から湿布を持ってきた。ダインに差し出した。*"
-  },
-  "after3_dain_choice2_ins2": {
-    "name": "ダイン",
-    "text": "...あ、本当に持ってきたんだ。"
-  },
-  "after3_dain_choice2_ins3": {
-    "name": "{name}",
-    "text": "大丈夫なんでしょ。"
-  },
-  "after3_dain_choice2_ins4": {
-    "name": "{name}",
-    "text": "*ダインが湿布を受け取って — じっと見つめる。唇を噛む。*"
-  },
-  "after3_dain_choice2_ins5": {
-    "name": "ダイン",
-    "text": "*力なく笑う。* ...何。こんなので感動したらダメなのに。"
-  },
-  "after3_dain_choice2_ins6": {
-    "name": "{name}",
-    "text": "*受け取った。— ダインが誰かの助けを拒まなかったのは初めてだ。感嘆符のない笑顔が不思議と重い。*"
   },
   "after3_confront_5_ins": {
     "name": "ダイン",

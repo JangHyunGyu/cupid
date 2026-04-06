@@ -1596,42 +1596,6 @@
         "_issues": null
       }
     },
-    "morning3_react_yuna_1b": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_react_yuna_1b",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*교실로 돌아왔다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_react_yuna_1b",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_react_yuna_1b",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#morning3_react_yuna_1b",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#morning3_react_yuna_1b",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_react_yuna_1b",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "morning3_react_yuna_2": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_react_yuna_2",
       "_ko_name": "다인",
@@ -2100,42 +2064,6 @@
         "_issues": null
       }
     },
-    "morning3_date_dain_3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_date_dain_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*...맞겠지?*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_date_dain_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_date_dain_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#morning3_date_dain_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#morning3_date_dain_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_date_dain_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "morning3_date_dain_choice": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_date_dain_choice",
       "_ko_name": "{name}",
@@ -2275,42 +2203,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_date_dain_decline_narr",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "morning3_date_dain_decline_inner": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_date_dain_decline_inner",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*밝게 웃으며 돌아갔다. — 그때는 몰랐다. 다인이 그 손가락 두드리는 ...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_date_dain_decline_inner",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_date_dain_decline_inner",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#morning3_date_dain_decline_inner",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#morning3_date_dain_decline_inner",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_date_dain_decline_inner",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -2739,42 +2631,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_homeroom_d3_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*담임선생님이 교탁에 앉아 뭔가를 쓰고 있다. 펜을 멈추고 고개를 든다....",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -3500,42 +3356,6 @@
         "_issues": null
       }
     },
-    "hidden_nurse_d3_5": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_5",
-      "_ko_name": "보건선생님",
-      "_ko_text_preview": "그거 연애 상담이야? — 아닌 척하는 게 제일 티 나는 거야.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "hidden_nurse_d3_choice1": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_choice1",
       "_ko_name": "{name}",
@@ -3896,42 +3716,6 @@
         "_issues": null
       }
     },
-    "hidden_nurse_d3_10": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_10",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*...뭐? — 돌아봤다. 보건선생님이 창밖을 보고 있다. 웃고 있지 않...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_10",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_10",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_10",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_10",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_10",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "hidden_nurse_d3_11": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_11",
       "_ko_name": "보건선생님",
@@ -4076,42 +3860,6 @@
         "_issues": null
       }
     },
-    "morning3_yuna_gate_6_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_yuna_gate_6_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 말 없이 가방을 뒤적이더니, 작은 빵을 꺼내 반으로 갈라 내밀었...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_yuna_gate_6_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_yuna_gate_6_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#morning3_yuna_gate_6_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#morning3_yuna_gate_6_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_yuna_gate_6_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "morning3_yuna_gate_6_ins2": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_yuna_gate_6_ins2",
       "_ko_name": "{name}",
@@ -4143,42 +3891,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_yuna_gate_6_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "morning3_yuna_gate_6_ins3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_yuna_gate_6_ins3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*말로 하면 될 걸 굳이 쪽지로 쓰는 사람. — 그게 유나다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_yuna_gate_6_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_yuna_gate_6_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#morning3_yuna_gate_6_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#morning3_yuna_gate_6_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_yuna_gate_6_ins3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4364,42 +4076,6 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d3_4_ins2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_4_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*이 시간에 빈 교실을? — 누군가 있다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_4_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_4_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_4_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_4_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "hidden_homeroom_d3_4_ins3": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_4_ins3",
       "_ko_name": "{name}",
@@ -4539,42 +4215,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_homeroom_d3_3_ins2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_3_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*담임이 재빨리 원고지를 뒤집어 놓는다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_3_ins2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5444,42 +5084,6 @@
         "_issues": null
       }
     },
-    "hidden_homeroom_d3_reveal_6_ins7": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins7",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*선생님이라는 직함 뒤에 숨겨진 서랍을 열어버린 기분이다. 닫아야 하는데...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "hidden_nurse_d3_2_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_2_ins",
       "_ko_name": "{name}",
@@ -5619,78 +5223,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_2_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_nurse_d3_2_ins5": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_2_ins5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*점심시간 직전. — 아침부터 뭔가 불안하다. 양다리 스트레스인지, 아니...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_2_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_2_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_2_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_2_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_2_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_nurse_d3_1_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_1_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*보건실 문을 연다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_1_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_1_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_1_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_1_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_1_ins",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5943,42 +5475,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_3_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_nurse_d3_3_ins4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_3_ins4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*침대에 앉는다. 보건선생님이 물을 건넨다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_3_ins4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6596,42 +6092,6 @@
         "_issues": null
       }
     },
-    "hidden_nurse_d3_6_ins2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_6_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*보건선생님이 물컵을 내려놓는다. 천천히.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_6_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_6_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_6_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_6_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_6_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "hidden_nurse_d3_6_ins3": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_6_ins3",
       "_ko_name": "보건선생님",
@@ -6699,42 +6159,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_6_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_nurse_d3_6_ins5": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_6_ins5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*보건선생님이 잠깐 멈춘다. 청진기를 만진다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_6_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_6_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_6_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_6_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_6_ins5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6992,42 +6416,6 @@
         "_issues": null
       }
     },
-    "hidden_nurse_d3_8_ins5": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_8_ins5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*보건실을 나서는데 — 뒤에서 작게.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "hidden_nurse_d3_9_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_9_ins",
       "_ko_name": "{name}",
@@ -7064,42 +6452,6 @@
         "_issues": null
       }
     },
-    "hidden_nurse_d3_9_ins2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_9_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*천천히 돌아봤다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_9_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_9_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_9_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_9_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_9_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "hidden_nurse_d3_9_ins3": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_9_ins3",
       "_ko_name": "{name}",
@@ -7131,42 +6483,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_9_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_nurse_d3_9_ins4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_9_ins4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*0.7초.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_9_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_9_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_9_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_9_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_9_ins4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7239,42 +6555,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_9_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "hidden_nurse_d3_9_ins7": {
-      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_9_ins7",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*맞겠지, 라고 생각하면서도 발이 안 떼진다. 방금 그 0.7초짜리 표정...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_9_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_9_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_9_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_9_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_9_ins7",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7421,42 +6701,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_start",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "lunch3_start_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_start_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*{name}이 도시락을 펼친다. 서연이 자연스럽게 옆에 앉고, 다인이 ...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_start_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_start_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_start_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_start_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_start_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7745,42 +6989,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_meal_8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "lunch3_meal_9": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_meal_9",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*약탈당했다. 세 명에게 동시에.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_meal_9",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_meal_9",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_meal_9",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_meal_9",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_meal_9",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8504,42 +7712,6 @@
         "_issues": null
       }
     },
-    "lunch3_dain_skin_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_dain_skin_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 튕기듯 떨어진다. 귀가 빨갛다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_dain_skin_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_dain_skin_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_dain_skin_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_dain_skin_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_dain_skin_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "lunch3_dain_skin_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_dain_skin_3",
       "_ko_name": "다인",
@@ -8643,42 +7815,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_dain_witness_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "lunch3_dain_witness_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_dain_witness_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다음 쉬는 시간, 유나의 자리가 비어 있다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_dain_witness_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_dain_witness_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_dain_witness_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_dain_witness_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_dain_witness_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9403,42 +8539,6 @@
         "_issues": null
       }
     },
-    "lunch3_expose_8": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_8",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 빵을 내려놓는다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_expose_8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_expose_8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_expose_8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_expose_8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_expose_8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "lunch3_expose_9": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_9",
       "_ko_name": "유나",
@@ -9578,42 +8678,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_expose_12",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "lunch3_expose_13": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_13",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*옆 테이블에서 민수가 이쪽을 보고 있다. 고개를 절레절레 흔든다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_expose_13",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_expose_13",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_expose_13",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_expose_13",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_expose_13",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10303,42 +9367,6 @@
         "_issues": null
       }
     },
-    "lunch3_meal_10_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_meal_10_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다 같이 먹자라고 말했다. — 공기가 무거워졌다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_meal_10_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_meal_10_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_meal_10_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_meal_10_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_meal_10_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "lunch3_meal_10_ins2": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_meal_10_ins2",
       "_ko_name": "{name}",
@@ -10483,42 +9511,6 @@
         "_issues": "text_updated_cringe_fix"
       }
     },
-    "lunch3_expose_3_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_3_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*나머지 두 명의 손이 멈춘다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_expose_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_expose_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_expose_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_expose_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_expose_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "lunch3_expose_7_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_7_ins",
       "_ko_name": "{name}",
@@ -10622,42 +9614,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_expose_excuse_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "lunch3_expose_run_2_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_run_2_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*점심시간이 끝나고, 오후 수업이 이어졌다. 칠판 위의 분필 소리가 유독...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_expose_run_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_expose_run_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_2_lunch.json#lunch3_expose_run_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_2_lunch.json#lunch3_expose_run_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_expose_run_2_ins",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11493,42 +10449,6 @@
         "_issues": null
       }
     },
-    "after3_reject_for_dain_4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_reject_for_dain_4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연의 연습한 웃음, 유나의 빈 자리. — 남은 두 사람의 자리가 비어...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_reject_for_dain_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_reject_for_dain_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_reject_for_dain_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_reject_for_dain_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_reject_for_dain_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "after3_seo_1": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_1",
       "_ko_name": "{name}",
@@ -11560,42 +10480,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*처음 보는 모습이다. 완벽한 학생회장이 — 무방비 상태로 엎드려 있다....",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11997,42 +10881,6 @@
         "_issues": null
       }
     },
-    "after3_yuna_3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*소설이다. 유나가 쓴 소설. — 읽어봐도 될까?*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "after3_yuna_4": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_4",
       "_ko_name": "{name}",
@@ -12064,42 +10912,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_5": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*'어느 날 전학생이 왔다. 그는 도서관에 찾아와 아무 말 없이 옆에 앉...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12388,42 +11200,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_dain_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*— 오른쪽 다리를 살짝 삐끗한다. 인상을 쓴다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -14697,42 +13473,6 @@
         "_issues": null
       }
     },
-    "after3_seo_choice1_react_ins2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*근데 — 새끼손가락이 책상 위에서 가볍게 움직인다. 뭔가를 잡으려는 것...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "after3_yuna_5_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_5_ins",
       "_ko_name": "{name}",
@@ -15093,42 +13833,6 @@
         "_issues": null
       }
     },
-    "after3_confront_lie_2_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_confront_lie_2_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 돌아선다. — 멈추지 않는다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_confront_lie_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_confront_lie_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_confront_lie_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_confront_lie_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_confront_lie_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "after3_confront_lie_2_ins2": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_confront_lie_2_ins2",
       "_ko_name": "{name}",
@@ -15453,42 +14157,6 @@
         "_issues": null
       }
     },
-    "haeun_warn_7_ins4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#haeun_warn_7_ins4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연의 집이 복잡하다. 부모님. — 서연이 '완벽해야만 했던 이유'가 ...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#haeun_warn_7_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#haeun_warn_7_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#haeun_warn_7_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#haeun_warn_7_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#haeun_warn_7_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "minsu_d3_8_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#minsu_d3_8_ins",
       "_ko_name": "{name}",
@@ -15775,42 +14443,6 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": "한국어 본문 수정 — 재번역 필요"
-      }
-    },
-    "minsu_d3_7_ins3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#minsu_d3_7_ins3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*거절도 사랑이라면, 내가 지금 해야 할 건 — 모두에게 '좋다'고 말하...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#minsu_d3_7_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#minsu_d3_7_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#minsu_d3_7_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#minsu_d3_7_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#minsu_d3_7_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
       }
     },
     "minsu_d3_10_ins": {
@@ -19235,42 +17867,6 @@
         "_issues": null
       }
     },
-    "night3_dream_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_dream_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*얼굴은 안 보이는데, 이상하게 불안하지 않았다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_dream_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_dream_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_dream_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_dream_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_dream_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      }
-    },
     "night3_faithful_reflect_1": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_1",
       "_ko_name": "{name}",
@@ -19302,42 +17898,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_faithful_reflect_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰을 꺼냈다. 갤러리를 열었다. 소정이 사진. — 스크롤을 멈추고,...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -19883,42 +18443,6 @@
         "_issues": null
       }
     },
-    "night3_nightmare_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_nightmare_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*어둠 속에 서 있다. 아무것도 보이지 않는다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_nightmare_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_nightmare_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_nightmare_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_nightmare_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_nightmare_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night3_nightmare_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_nightmare_3",
       "_ko_name": "서연",
@@ -20243,42 +18767,6 @@
         "_issues": null
       }
     },
-    "night3_nightmare_end_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_nightmare_end_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*모두 사라지고, 남은 건 어둠뿐.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_nightmare_end_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_nightmare_end_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_nightmare_end_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_nightmare_end_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_nightmare_end_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night3_nightmare_end_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_nightmare_end_3",
       "_ko_name": "{name}",
@@ -20310,42 +18798,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_nightmare_end_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_cheat_reflect_1": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_1",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰을 꺼냈다. 갤러리. 또 스크롤한다. — 소정이 사진.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -20385,78 +18837,6 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": "한국어 본문 수정 — 재번역 필요"
-      }
-    },
-    "night3_cheat_reflect_3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*이번에는 후회 없이 말하려고 했다. 이 학교에서는 솔직하게 살겠다고.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_cheat_reflect_4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*전 학교: 아무 말도 못 해서 후회.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
       }
     },
     "night3_cheat_reflect_5": {
@@ -20855,42 +19235,6 @@
         "_issues": "한국어 본문 수정 — 재번역 필요"
       }
     },
-    "night3_cheat_reflect_3_ins2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_3_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*전 학교: 아무 말도 못 해서 후회.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_3_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night3_cheat_reflect_3_ins3": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_3_ins3",
       "_ko_name": "{name}",
@@ -20922,42 +19266,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_3_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_cheat_reflect_3_ins4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_3_ins4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*결국 문제는 '말하느냐 마느냐'가 아니라 — '누구에게'인 거다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_3_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_3_ins4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -20999,42 +19307,6 @@
         "_issues": null
       }
     },
-    "night3_cheat_reflect_3_ins6": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_3_ins6",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 말했다. '유일한 답이거나, 아무것도 아니거나.'*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_3_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_3_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_3_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_3_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_3_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night3_cheat_reflect_3_ins7": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_3_ins7",
       "_ko_name": "{name}",
@@ -21069,42 +19341,6 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
-      }
-    },
-    "night3_cheat_reflect_5_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_reflect_5_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*꿈을 꿨다. — 누군가와 나란히 걷고 있었다. 얼굴은 안 보이는데, 이상하게 불안하지 않았다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_reflect_5_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_cheat_reflect_5_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_cheat_reflect_5_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_cheat_reflect_5_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_reflect_5_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
       }
     },
     "night3_faithful_reflect_2_ins": {
@@ -21143,42 +19379,6 @@
         "_issues": "한국어 본문 수정 — 재번역 필요"
       }
     },
-    "night3_faithful_reflect_2_ins2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*확인 버튼 위에서 손가락이 멈춘다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_2_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_2_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_2_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_2_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night3_faithful_reflect_2_ins3": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins3",
       "_ko_name": "{name}",
@@ -21210,42 +19410,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_2_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_faithful_reflect_2_ins4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*민수가 했던 말이 떠오른다. '거절도 사랑이야.'*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_2_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_2_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_2_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_2_ins4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -21287,42 +19451,6 @@
         "_issues": null
       }
     },
-    "night3_faithful_reflect_2_ins6": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins6",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*— 삭제했다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_2_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_2_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_2_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_2_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night3_faithful_reflect_3_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_3_ins",
       "_ko_name": "{name}",
@@ -21359,42 +19487,6 @@
         "_issues": "한국어 본문 수정 — 재번역 필요"
       }
     },
-    "night3_faithful_reflect_4_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_4_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*1초. 손가락이 멈춘다. — 민수가 했던 말이 떠오른다. '거절도 사랑...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night3_faithful_reflect_4_ins2": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_4_ins2",
       "_ko_name": "{name}",
@@ -21426,114 +19518,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_4_ins2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_faithful_reflect_4_ins3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_4_ins3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*손가락이 움직이지 않는다. 삭제 버튼 위에 올려놓은 채로.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_4_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_4_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_4_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_4_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_4_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_faithful_reflect_4_ins4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_4_ins4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*전 학교에서도 이랬다. 알면서 못 했다. 이번에도 — 알면서 못 하고 ...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_4_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_4_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_4_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_4_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_4_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night3_faithful_reflect_4_ins5": {
-      "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_4_ins5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰을 덮었다. 사진은 그대로다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_4_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_4_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_4_night.json#night3_faithful_reflect_4_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_4_night.json#night3_faithful_reflect_4_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_4_ins5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
