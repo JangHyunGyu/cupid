@@ -11862,139 +11862,31 @@
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice1": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 잠깐 멈춘다. 펜을 내려놓는다. 천천히.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice1_react": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react",
-      "_ko_name": "서연",
-      "_ko_text_preview": "...그런 말. 쉽게 하면 안 되는 건데.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*눈가가 붉어졌다. — 울지는 않았다. 아직은.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       }
     },
     "after3_seo_end": {
@@ -12028,42 +11920,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_end",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_end_c2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_end_c2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*비밀을 지켜주겠다는 말이 — 이 사람한테는 큰 의미인 것 같다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_end_c2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_end_c2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_end_c2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_end_c2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_end_c2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12438,319 +12294,31 @@
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice1": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice1",
-      "_ko_name": "유나",
-      "_ko_text_preview": "...주인공 이름 같은 건 없어.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice1",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice1_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice1_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "'전학생이 도서관에 왔다'는 우연의 일치?",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice1_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice1_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice1_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice1_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice1_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice1_3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice1_3",
-      "_ko_name": "유나",
-      "_ko_text_preview": "...소설은. 허구야.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice1_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice1_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice1_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice1_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice1_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice1_react": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice1_react",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*'허구'라고 했지만, 귀가 거짓말을 하고 있다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice1_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 잠깐 멈춘다. 노트를 내려다본다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice2_2": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice2_2",
-      "_ko_name": "유나",
-      "_ko_text_preview": "...결말은 아직 안 정했어.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice2_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice2_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice2_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice2_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice2_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice2_3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice2_3",
-      "_ko_name": "유나",
-      "_ko_text_preview": "...결말을 쓰면 끝나니까.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice2_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice2_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice2_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice2_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice2_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice2_react": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice2_react",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 두 문장 이상 연속으로 말했다. — 이 사람에게 그건 감정의 증...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice2_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice2_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice2_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice2_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice2_react",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       }
     },
     "after3_yuna_end": {
@@ -13014,31 +12582,31 @@
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "한국어 본문 수정 — 재번역 필요"
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "한국어 본문 수정 — 재번역 필요"
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "한국어 본문 수정 — 재번역 필요"
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "한국어 본문 수정 — 재번역 필요"
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "한국어 본문 수정 — 재번역 필요"
+        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
       }
     },
     "after3_dain_choice1": {
@@ -15129,42 +14697,6 @@
         "_issues": null
       }
     },
-    "after3_seo_choice1_react_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 창밖을 본다. 표정이 안 보인다. — 의도적으로 안 보여주는 거...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "after3_seo_choice1_react_ins2": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins2",
       "_ko_name": "{name}",
@@ -15201,222 +14733,6 @@
         "_issues": null
       }
     },
-    "after3_seo_choice1_react_ins3": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 자세를 바로잡는다. 학생회장의 얼굴이 돌아온다. — 근데 완벽하...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice1_react_ins4": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins4",
-      "_ko_name": "서연",
-      "_ko_text_preview": "...고마워.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice1_react_ins5": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "비밀은 잘 지켜.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice1_react_ins6": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins6",
-      "_ko_name": "서연",
-      "_ko_text_preview": "*서류를 정리하며* 나도 네 비밀 하나 알고 있어.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice1_react_ins7": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins7",
-      "_ko_name": "서연",
-      "_ko_text_preview": "점심때 너 계란말이 먹을 때 눈이 반짝였잖아. — 그건 연기 못 하는 거...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_seo_choice1_react_ins8": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_choice1_react_ins8",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*비밀을 지켜준다고 했더니, 동등한 비밀을 꺼냈다. — 이 사람은 '고마...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice1_react_ins8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice1_react_ins8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice1_react_ins8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice1_react_ins8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice1_react_ins8",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "after3_yuna_5_ins": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_5_ins",
       "_ko_name": "{name}",
@@ -15448,78 +14764,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_5_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice1_2_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice1_2_ins",
-      "_ko_name": "유나",
-      "_ko_text_preview": "*노트를 가슴에 꼭 안으며* ...소설은. 허구야.",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice1_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice1_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice1_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice1_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice1_2_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "after3_yuna_choice2_3_ins": {
-      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_choice2_3_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 두 문장 이상 연속으로 말했다. — 이 사람이 이만큼 말하는 건...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_choice2_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_choice2_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_choice2_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_choice2_3_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_choice2_3_ins",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17143,6 +16387,2418 @@
         "_reviewed": false,
         "_score": null,
         "_issues": "신규/수정 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_1": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_1",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*서연이 천천히 고개를 든다. 표정이 — 정확히 0이다. 차갑지도 슬프지도 않다. 그게 더 무섭다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_2": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_2",
+      "_ko_name": "서연",
+      "_ko_text_preview": "...누구나.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_3": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_3",
+      "_ko_name": "서연",
+      "_ko_text_preview": "그 말, 위로라고 했어?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_4": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_4",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*서연이 화장이 번진 자국을 손등으로 닦는다. 천천히. 동작 하나하나가 정돈되어 있다. 수습하는 거다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_5": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_5",
+      "_ko_name": "서연",
+      "_ko_text_preview": "나는 '누구나'가 되려고 학생회장 한 거 아니야.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_6": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_6",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*학생회장의 얼굴이 돌아왔다. 평소보다 한 단계 더 단단하게. — 방금 전의 무방비한 서연을 *영원히* 묻기 위한 얼굴이다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_7": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_7",
+      "_ko_name": "서연",
+      "_ko_text_preview": "나가 줄래? 일해야 해.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_8": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_8",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "서연—",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_9": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_9",
+      "_ko_name": "서연",
+      "_ko_text_preview": "**회장**이라고 불러.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_pity_trap_10": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_pity_trap_10",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*학생회실 문을 닫고 나왔다. 복도가 텅 비어 있다. — 위로하려고 했다. 진심으로. 근데 서연한테 '누구나'는 위로가 아니라 강등이었다. 그 사람의 7년치 노력을 한 단어로 평준화시켰다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_1": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_1",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*서연이 멈춘다. 잠깐 — 정말 잠깐 — 말이 끊긴다. 내가 정말 못 본 건지 아닌지 확인하려는 눈빛.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_2": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_2",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*허리를 굽혀 펜을 줍는 척한다. 책상 밑을 더듬는다. 일부러 천천히. — 시선을 안 준다. 시선을 주는 순간 거짓말이 들통난다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_3": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_3",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "어, 여기 있네. — 회장님 학생회실은 펜이 잘 없어지는 동네인가 봐?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_4": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_4",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*고개를 든다. 서연이 — 화장 번진 자국을 손등으로 슥 닦고 있다. 자연스럽게. 마치 처음부터 그게 필요했던 것처럼.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_5": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_5",
+      "_ko_name": "서연",
+      "_ko_text_preview": "...학생회실 펜 없어지는 거 진짜 미스터리야. 1년에 30개씩 사라져.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_6": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_6",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "학생회장이 그것도 못 잡아?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_7": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_7",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*피식.* 잡으면 — 학생들이 학생회를 무서워하지.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_8": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_8",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*대화가 자연스럽게 이어진다. 방금 전에 엎드려 있던 사람도, 화장이 번진 사람도 — 이 학생회실에는 *없었다*. 우리 둘 다 그렇게 합의한 거다. 말없이.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_9": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_9",
+      "_ko_name": "서연",
+      "_ko_text_preview": "...{name}.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_10": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_10",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "응.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_11": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_11",
+      "_ko_name": "서연",
+      "_ko_text_preview": "펜 줍는 거. — 다음에도 가끔 줍게.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_seo_correct_12": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_12",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*비밀을 지켜준다는 말은 끝내 안 했다. 안 한 게 답이었다. — 서연한테 약점은 *있던 적도 없어야* 한다. 그걸 이해한 사람한테만, 서연은 새끼손가락이 아니라 다음 약속을 건넨다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_1": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_1",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*유나가 노트를 더 세게 끌어안는다. 손가락 마디가 하얗게 변한다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_2": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_2",
+      "_ko_name": "유나",
+      "_ko_text_preview": "...아니야.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_3": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_3",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "아니라고? 근데 이 부분 봐, '교실 창가에서 책을 읽던—'",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_4": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_4",
+      "_ko_name": "유나",
+      "_ko_text_preview": "**아니라고 했잖아.**",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_5": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_5",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*유나가 노트를 가방에 쑤셔 넣는다. 평소의 천천한 동작이 아니다. 도망치는 손이다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_6": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_6",
+      "_ko_name": "유나",
+      "_ko_text_preview": "...너 같은 사람들 때문에 — 못 쓰겠어.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_7": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_7",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "어?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_8": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_8",
+      "_ko_name": "유나",
+      "_ko_text_preview": "소설 안에서까지 들키면 — 도망갈 데가 없어.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_9": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_9",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*유나가 가방을 메고 일어선다. 사다리 쪽으로 간다. 평소처럼 뒤돌아보지 않는다 — 가 아니다. 이번에는 *못* 돌아보는 거다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_10": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_10",
+      "_ko_name": "유나",
+      "_ko_text_preview": "...여기. 이제 잠가둘 거야.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_decode_trap_11": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_11",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*사다리 내려가는 발소리. 다락방에 혼자 남는다. 노트가 있던 자리에 손가락 자국만 남아 있다. — 알아채는 게 사랑이라고 배웠다. 근데 어떤 사람한테는, *알아채지 못한 척*이 사랑이다. 유나한테 소설은 *현실에서 도망친 곳*이었다. 거기까지 따라간 건, 마지막 도피처를 부순 거다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_decode_trap_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_decode_trap_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_decode_trap_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_decode_trap_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_1": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_1",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*유나가 노트를 끌어안은 손가락이 — 아주 조금 풀린다. 1초쯤.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_2": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_2",
+      "_ko_name": "유나",
+      "_ko_text_preview": "...작가.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_3": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_3",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "응. 이거 누구 거야? 출판된 거야?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_4": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_4",
+      "_ko_name": "유나",
+      "_ko_text_preview": "...몰라. 아마 출판은 안 됐을걸.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_5": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_5",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "아까워. 이런 거 묻혀 있으면 안 되는데.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_6": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_6",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*유나가 노트를 책상에 다시 놓는다. 가슴에 안고 있던 손이 — 천천히 풀린다. 노트를 *방어*하던 손이 *전시*하는 손으로 바뀐다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_7": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_7",
+      "_ko_name": "유나",
+      "_ko_text_preview": "...빌려줄까?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_8": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_8",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "진짜? 작가한테 허락도 없이?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_9": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_9",
+      "_ko_name": "유나",
+      "_ko_text_preview": "...작가가 허락한다고 칠게.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_10": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_10",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*유나가 노트를 내민다. 두 손으로. 책 빌려주는 자세가 아니라 — 뭔가를 *의식적으로 건네는* 자세.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_11": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_11",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*받는 손에 무게가 실린다. 종이의 무게가 아니다. — 유나가 *작가*라는 사실을 들켰다는 걸 알면서도, 그걸 *드러내지 않은* 사람한테만 건넬 수 있는 무게다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_yuna_correct_12": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_correct_12",
+      "_ko_name": "유나",
+      "_ko_text_preview": "다 읽고 — 작가한테 한 줄만 써줘. 익명으로.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_yuna_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_yuna_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_yuna_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_yuna_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_1": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_1",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 무릎을 문지르던 손이 멈춘다. 천천히 고개를 든다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_2": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_2",
+      "_ko_name": "다인",
+      "_ko_text_preview": "...무리.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_3": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_3",
+      "_ko_name": "다인",
+      "_ko_text_preview": "야. 무리한 거 아니야. 이거 그냥 — 자세 잘못 잡아서 그래.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_4": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_4",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 일어선다. 무릎이 살짝 떨리는 걸 못 본 척한다. 가방을 든다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_5": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_5",
+      "_ko_name": "다인",
+      "_ko_text_preview": "...너까지 그렇게 보지 마.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_6": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_6",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "그렇게라니?",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_7": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_7",
+      "_ko_name": "다인",
+      "_ko_text_preview": "부서지기 직전인 거 보듯이.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_8": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_8",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 체육관 문 쪽으로 걸어간다. 평소처럼 뛰지 않는다. 그게 더 아프다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_9": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_9",
+      "_ko_name": "다인",
+      "_ko_text_preview": "코치도 그래. 부모도 그래. 다 그래. — 너만은 안 그럴 줄 알았는데.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_pity_trap_10": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_pity_trap_10",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*체육관 문이 닫힌다. 평소처럼 쾅, 이 아니다. 살그머니. — 그게 더 무겁다. 다인이 가장 싫어하는 표정을 내가 지었다. 알면서도. 좋은 의도로. 그래서 더 최악이다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_pity_trap_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_1": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_1",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 멈춘다. — 무릎 얘기를 꺼낼 줄 알았는데. 환자 취급할 줄 알았는데. 표정에 미세한 균열.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_2": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_2",
+      "_ko_name": "다인",
+      "_ko_text_preview": "...야.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_3": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_3",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "왜.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_4": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_4",
+      "_ko_name": "다인",
+      "_ko_text_preview": "너 좀 이상해.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_5": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_5",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "이상한 게 좋은 거야 나쁜 거야.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_6": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_6",
+      "_ko_name": "다인",
+      "_ko_text_preview": "...몰라. 근데 일단 공 들어. 너 진짜로 못 받을 테니까.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_7": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_7",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 일어선다. 무릎을 한 번 살짝 굴려본다. 무의식적으로. 그리고 — 토스 자세를 잡는다. 평소와 똑같이.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_8": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_8",
+      "_ko_name": "다인",
+      "_ko_text_preview": "갑니다, 전학생!",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_9": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_9",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*서브가 날아온다. 못 받는다. 공이 손목에 맞고 천장으로 튄다. 다인이 박수를 치며 웃는다. 진짜 웃음. 오늘 처음 본다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_10": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_10",
+      "_ko_name": "다인",
+      "_ko_text_preview": "봤지? 내가 이겼어! ...아.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_10",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_11": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_11",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 착지하면서 — 오른쪽 무릎이 살짝 꺾인다. 1초. 표정은 웃고 있는데 손이 무릎으로 간다. 이번에는 숨기지 않는다. 숨길 필요가 없어진 거다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_11",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      }
+    },
+    "after3_dain_correct_12": {
+      "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_12",
+      "_ko_name": "다인",
+      "_ko_text_preview": "...있잖아. 사실 이거. 좀 오래됐어.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_12",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "함정 선택지 신규 — 검토 필요"
       }
     }
   },

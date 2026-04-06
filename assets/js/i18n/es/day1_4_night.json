@@ -1,160 +1,142 @@
 {
-    "night_start": {
-        "name": "{name}",
-        "text": "*De vuelta en mi cuarto. Acostado en la cama.*"
-    },
-    "night_start_3": {
-        "name": "{name}",
-        "text": "*El teléfono suena. El mensajero de la escuela.*"
-    },
-    "night_msg_seo_1": {
-        "name": "Seoyeon",
-        "text": "*¿Qué tal la azotea hoy?*"
-    },
-    "night_msg_seo_2": {
-        "name": "{name}",
-        "text": "*La brisa estuvo agradable*"
-    },
-    "night_msg_seo_3": {
-        "name": "Seoyeon",
-        "text": "*La próxima vez tendré al menos bebidas listas*"
-    },
-    "night_msg_seo_4": {
-        "name": "Seoyeon",
-        "text": "*...Cortesía de la casa*"
-    },
-    "night_msg_seo_5": {
-        "name": "{name}",
-        "text": "*Envió 'Cortesía de la casa' como mensaje aparte a propósito. — Me hizo sonreír.*"
-    },
-    "night_msg_yuna_1": {
-        "name": "Yuna",
-        "text": "*...Gracias por estar en silencio hoy*"
-    },
-    "night_msg_yuna_2": {
-        "name": "Yuna",
-        "text": "*Mañana te guardaré el asiento*"
-    },
-    "night_msg_yuna_3": {
-        "name": "{name}",
-        "text": "*'Te guardaré el asiento.' — Para Yuna, esa es la mayor invitación que puede dar. Mi mano deja el móvil despacio.*"
-    },
-    "night_msg_dain_1": {
-        "name": "Dain",
-        "text": "*¡¡La revancha de piedra-papel-tijeras es MAÑANA!!*"
-    },
-    "night_msg_dain_2": {
-        "name": "Dain",
-        "text": "*¡No te atrevas a huir jaja!*"
-    },
-    "night_msg_dain_3": {
-        "name": "Dain",
-        "text": "*Aún me duele lo del pan la verdad jajaja*"
-    },
-    "night_msg_dain_4": {
-        "name": "{name}",
-        "text": "*Tres mensajes seguidos. ¿No puede respirar entre textos?*"
-    },
-    "night_late_transition": {
-        "name": "{name}",
-        "text": "*Estaba a punto de dormirme cuando — el teléfono suena una vez más.*"
-    },
-    "night_late_branch": {
-        "name": "{name}",
-        "text": "*La pantalla se ilumina.*"
-    },
-    "night_seo_late_1": {
-        "name": "Seoyeon",
-        "text": "*Nos vemos mañana en la escuela.*"
-    },
-    "night_seo_late_2": {
-        "name": "Seoyeon",
-        "text": "*— Si no vienes, iré a buscarte*"
-    },
-    "night_seo_late_3": {
-        "name": "{name}",
-        "text": "*'Iré a buscarlo.' — Mi mano se queda quieta después de soltar el teléfono.*"
-    },
-    "night_yuna_late_1": {
-        "name": "Yuna",
-        "text": "*...*"
-    },
-    "night_yuna_late_2": {
-        "name": "{name}",
-        "text": "*Solo '...' y nada más. Como si hubiera escrito algo y lo hubiera borrado. — Me pregunto qué decía ese mensaje borrado, y no puedo dormir.*"
-    },
-    "night_yuna_late_3": {
-        "name": "{name}",
-        "text": "*— Dudo si responder, y la pantalla se apaga.*"
-    },
-    "night_yuna_late_4": {
-        "name": "{name}",
-        "text": "*Incluso después de que la pantalla se apagó, sostuve el teléfono por un largo rato.*"
-    },
-    "night_dain_late_1": {
-        "name": "Dain",
-        "text": "*¡Oye, aún no te has dormido, verdad?!*"
-    },
-    "night_dain_late_2": {
-        "name": "Dain",
-        "text": "*¡Busco compañero para ejercicio matutino!*"
-    },
-    "night_dain_late_3": {
-        "name": "Dain",
-        "text": "*No se aceptan negativas jaja*"
-    },
-    "night_dain_late_4": {
-        "name": "{name}",
-        "text": "*¿Esta persona no entiende el concepto de 'no'?*"
-    },
-    "night_end_1": {
-        "name": "{name}",
-        "text": "*Dejé el teléfono.*"
-    },
-    "night_end_3": {
-        "name": "{name}",
-        "text": "*No fue un mal primer día.*"
-    },
-    "night_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Llegó un mensaje de Seoyeon.*",
-        "context": "Primera noche, chateando con Seoyeon por mensajero. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
-        "personality": "Seoyeon es la presidenta del consejo. Sus mensajes son tranquilos y provocativos."
-    },
-    "night_dain_freetalk": {
-        "name": "Dain",
-        "text": "*El bombardeo de mensajes de Dain ha comenzado.*",
-        "context": "Primera noche, chateando con Dain por mensajero. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
-        "personality": "Dain es una atleta enérgica. Sus mensajes son bombas de exclamaciones."
-    },
-    "night_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Llegó un mensaje corto de Yuna.*",
-        "context": "Primera noche, chateando con Yuna por mensajero. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
-        "personality": "Yuna es una chica literaria. Sus mensajes son cortos y crípticos."
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*Entre las notificaciones — veo algo más.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*Hay un aviso de la profesora en la app del colegio. 'Aviso clase 3-2: Traigan materiales de matemáticas para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso basta.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*¿Un mensaje personal en un aviso? — Se me escapa una sonrisa. Intento ocultarla, pero no puedo.*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Hay una alerta en la app de salud del colegio. 'Registro de enfermería: {name} — Mareo (leve). Nota: vuelve mañana si los síntomas continúan. Bebe mucha agua. — el ♥ es estrictamente por motivos médicos ^^'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*Una enfermera que pone corazones en los registros médicos. Nunca había visto a alguien usar emojis en fichas de salud.*"
-    },
-    "night_dain_late_4_ins": {
-        "name": "{name}",
-        "text": "*Una fila de emojis cuelga bajo el mensaje de Dain. Todos son diferentes.*"
-    }
+  "night_start": {
+    "name": "{name}",
+    "text": "*De vuelta en mi cuarto. Acostado en la cama.*"
+  },
+  "night_start_3": {
+    "name": "{name}",
+    "text": "*El teléfono suena. El mensajero de la escuela.*"
+  },
+  "night_msg_seo_1": {
+    "name": "Seoyeon",
+    "text": "*¿Qué tal la azotea hoy?*"
+  },
+  "night_msg_seo_2": {
+    "name": "{name}",
+    "text": "*La brisa estuvo agradable*"
+  },
+  "night_msg_seo_3": {
+    "name": "Seoyeon",
+    "text": "*La próxima vez tendré al menos bebidas listas*"
+  },
+  "night_msg_seo_4": {
+    "name": "Seoyeon",
+    "text": "*...Cortesía de la casa*"
+  },
+  "night_msg_seo_5": {
+    "name": "{name}",
+    "text": "*Envió 'Cortesía de la casa' como mensaje aparte a propósito. — Me hizo sonreír.*"
+  },
+  "night_msg_yuna_1": {
+    "name": "Yuna",
+    "text": "*...Gracias por estar en silencio hoy*"
+  },
+  "night_msg_yuna_2": {
+    "name": "Yuna",
+    "text": "*Mañana te guardaré el asiento*"
+  },
+  "night_msg_yuna_3": {
+    "name": "{name}",
+    "text": "*'Te guardaré el asiento.' — Para Yuna, esa es la mayor invitación que puede dar. Mi mano deja el móvil despacio.*"
+  },
+  "night_msg_dain_1": {
+    "name": "Dain",
+    "text": "*¡¡La revancha de piedra-papel-tijeras es MAÑANA!!*"
+  },
+  "night_msg_dain_2": {
+    "name": "Dain",
+    "text": "*¡No te atrevas a huir jaja!*"
+  },
+  "night_msg_dain_3": {
+    "name": "Dain",
+    "text": "*Aún me duele lo del pan la verdad jajaja*"
+  },
+  "night_msg_dain_4": {
+    "name": "{name}",
+    "text": "*Tres mensajes seguidos. ¿No puede respirar entre textos?*"
+  },
+  "night_late_transition": {
+    "name": "{name}",
+    "text": "*Estaba a punto de dormirme cuando — el teléfono suena una vez más.*"
+  },
+  "night_late_branch": {
+    "name": "{name}",
+    "text": "*La pantalla se ilumina.*"
+  },
+  "night_seo_late_1": {
+    "name": "Seoyeon",
+    "text": "*Nos vemos mañana en la escuela.*"
+  },
+  "night_seo_late_2": {
+    "name": "Seoyeon",
+    "text": "*— Si no vienes, iré a buscarte*"
+  },
+  "night_seo_late_3": {
+    "name": "{name}",
+    "text": "*'Iré a buscarlo.' — Mi mano se queda quieta después de soltar el teléfono.*"
+  },
+  "night_yuna_late_1": {
+    "name": "Yuna",
+    "text": "*...*"
+  },
+  "night_yuna_late_2": {
+    "name": "{name}",
+    "text": "*Solo '...' y nada más. Como si hubiera escrito algo y lo hubiera borrado. — Me pregunto qué decía ese mensaje borrado, y no puedo dormir.*"
+  },
+  "night_yuna_late_3": {
+    "name": "{name}",
+    "text": "*— Dudo si responder, y la pantalla se apaga.*"
+  },
+  "night_yuna_late_4": {
+    "name": "{name}",
+    "text": "*Incluso después de que la pantalla se apagó, sostuve el teléfono por un largo rato.*"
+  },
+  "night_dain_late_1": {
+    "name": "Dain",
+    "text": "*¡Oye, aún no te has dormido, verdad?!*"
+  },
+  "night_dain_late_2": {
+    "name": "Dain",
+    "text": "*¡Busco compañero para ejercicio matutino!*"
+  },
+  "night_dain_late_3": {
+    "name": "Dain",
+    "text": "*No se aceptan negativas jaja*"
+  },
+  "night_dain_late_4": {
+    "name": "{name}",
+    "text": "*¿Esta persona no entiende el concepto de 'no'?*"
+  },
+  "night_end_1": {
+    "name": "{name}",
+    "text": "*Dejé el teléfono.*"
+  },
+  "night_end_3": {
+    "name": "{name}",
+    "text": "*No fue un mal primer día.*"
+  },
+  "night_hidden_check": {
+    "name": "{name}",
+    "text": "*Entre las notificaciones — veo algo más.*"
+  },
+  "night_hidden_homeroom_1": {
+    "name": "{name}",
+    "text": "*Hay un aviso de la profesora en la app del colegio. 'Aviso clase 3-2: Traigan materiales de matemáticas para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso basta.'*"
+  },
+  "night_hidden_homeroom_2": {
+    "name": "{name}",
+    "text": "*¿Un mensaje personal en un aviso? — Se me escapa una sonrisa. Intento ocultarla, pero no puedo.*"
+  },
+  "night_hidden_nurse_1": {
+    "name": "{name}",
+    "text": "*Hay una alerta en la app de salud del colegio. 'Registro de enfermería: {name} — Mareo (leve). Nota: vuelve mañana si los síntomas continúan. Bebe mucha agua. — el ♥ es estrictamente por motivos médicos ^^'*"
+  },
+  "night_hidden_nurse_2": {
+    "name": "{name}",
+    "text": "*Una enfermera que pone corazones en los registros médicos. Nunca había visto a alguien usar emojis en fichas de salud.*"
+  },
+  "night_dain_late_4_ins": {
+    "name": "{name}",
+    "text": "*Una fila de emojis cuelga bajo el mensaje de Dain. Todos son diferentes.*"
+  }
 }

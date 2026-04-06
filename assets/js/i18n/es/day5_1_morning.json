@@ -428,5 +428,109 @@
   "morning5_yuna_story_gone_2": {
     "name": "{name}",
     "text": "*El asiento vacío en la biblioteca, el marcapáginas perdido, y ahora un relato que nunca llegó al tablón. — Yuna está borrando cada huella. El silencio que dejé el Día 3 ha llegado hasta aquí.*"
+  },
+  "hidden_homeroom_d5_praise_trap_1": {
+    "name": "{name}",
+    "text": "*La profesora se detiene. — Y luego vuelve a su habitual expresión seca. Demasiado rápido.*"
+  },
+  "hidden_homeroom_d5_praise_trap_2": {
+    "name": "Profesora",
+    "text": "...¿Sin haberlo leído siquiera?"
+  },
+  "hidden_homeroom_d5_praise_trap_3": {
+    "name": "{name}",
+    "text": "Ah, es que — seguro que es bueno. Lleva siete años escribiéndolo."
+  },
+  "hidden_homeroom_d5_praise_trap_4": {
+    "name": "Profesora",
+    "text": "...Ya."
+  },
+  "hidden_homeroom_d5_praise_trap_5": {
+    "name": "{name}",
+    "text": "*La profesora extiende la mano. Recoge el manuscrito. Despacio. Lo vuelve a meter en el sobre.*"
+  },
+  "hidden_homeroom_d5_praise_trap_6": {
+    "name": "Profesora",
+    "text": "Déjalo. Perdón por hacerte perder el tiempo."
+  },
+  "hidden_homeroom_d5_praise_trap_7": {
+    "name": "{name}",
+    "text": "Profesora—"
+  },
+  "hidden_homeroom_d5_praise_trap_8": {
+    "name": "Profesora",
+    "text": "Lo envié a editoriales tres veces en siete años. Todas rechazadas. Dos de esas tres cartas de rechazo empezaban con — 'Siete años es admirable. Seguro que es estupendo.'"
+  },
+  "hidden_homeroom_d5_praise_trap_9": {
+    "name": "{name}",
+    "text": "*...No lo sabía. Sabía lo del debut fallido, pero no que esa frase de rechazo fuera *exactamente lo que yo acabo de decir*.*"
+  },
+  "hidden_homeroom_d5_praise_trap_10": {
+    "name": "Profesora",
+    "text": "...Pensé que lo leerías y me dirías. — Te lo enseñé porque pensaba que una estudiante sentiría menos presión."
+  },
+  "hidden_homeroom_d5_praise_trap_11": {
+    "name": "Profesora",
+    "text": "Vete. Llegarás tarde al evento."
+  },
+  "hidden_homeroom_d5_praise_trap_12": {
+    "name": "{name}",
+    "text": "*Cerré la puerta del aula al salir. El sobre seguía en su mesa. — Lo que en siete años no había recibido no era *un elogio sincero* sino *alguien que lo leyera en serio*. El elogio también estaba en las cartas de rechazo. Dije exactamente lo mismo que una carta de rechazo. Con buena intención.*"
+  },
+  "hidden_homeroom_d5_correct_1": {
+    "name": "{name}",
+    "text": "*La profesora se detiene. De verdad se detiene. No medio segundo — unos tres. Aprieta más el portapapeles.*"
+  },
+  "hidden_homeroom_d5_correct_2": {
+    "name": "Profesora",
+    "text": "...¿Cómo lo sabías?"
+  },
+  "hidden_homeroom_d5_correct_3": {
+    "name": "{name}",
+    "text": "Ni siquiera he abierto el manuscrito todavía."
+  },
+  "hidden_homeroom_d5_correct_4": {
+    "name": "Profesora",
+    "text": "Cierto. — ¿Cómo sabías que el último capítulo está vacío?"
+  },
+  "hidden_homeroom_d5_correct_5": {
+    "name": "{name}",
+    "text": "*No lo sabía. Fue una suposición. — Que alguien que ha tardado siete años se lo enseñe por primera vez a una estudiante *justo hoy* era extraño. Si estuviera terminado, lo habría enviado primero a editoriales. No está terminado — así que necesita *permiso* para acabarlo.*"
+  },
+  "hidden_homeroom_d5_correct_6": {
+    "name": "Profesora",
+    "text": "...De verdad no puedo escribirla. Esa última línea."
+  },
+  "hidden_homeroom_d5_correct_7": {
+    "name": "Profesora",
+    "text": "Llevo siete años atascada en esa línea. Porque si la termino — confirma que no soy escritora."
+  },
+  "hidden_homeroom_d5_correct_8": {
+    "name": "{name}",
+    "text": "*Por primera vez, la profesora pronunció la palabra *escritora* refiriéndose a ella misma. Una palabra que no había dicho en siete años.*"
+  },
+  "hidden_homeroom_d5_correct_9": {
+    "name": "{name}",
+    "text": "¿Quiere que miremos esa línea juntas?"
+  },
+  "hidden_homeroom_d5_correct_10": {
+    "name": "Profesora",
+    "text": "...¿Una estudiante?"
+  },
+  "hidden_homeroom_d5_correct_11": {
+    "name": "{name}",
+    "text": "Es solo una línea. Las estudiantes también escribimos una línea."
+  },
+  "hidden_homeroom_d5_correct_12": {
+    "name": "Profesora",
+    "text": "*La profesora se ríe. De verdad. No solo con las comisuras — también con los ojos. La cara de siete años de autocensura desatándose por un segundo.*"
+  },
+  "hidden_homeroom_d5_correct_13": {
+    "name": "Profesora",
+    "text": "...Acepto esa propuesta."
+  },
+  "hidden_homeroom_d5_correct_14": {
+    "name": "{name}",
+    "text": "*Vuelvo a abrazar el manuscrito. Ya no pesa como antes. — Cerrar siete años de inconcluso con un elogio no era lo que necesitaba. Lo que necesitaba era *alguien que aceptara lo inconcluso como inconcluso*. Eso es apoyo de verdad.*"
   }
 }

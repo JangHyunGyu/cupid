@@ -1,160 +1,142 @@
 {
-    "night_start": {
-        "name": "{name}",
-        "text": "*방에 돌아왔다. 침대에 누웠다. 첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*"
-    },
-    "night_start_3": {
-        "name": "{name}",
-        "text": "*핸드폰이 울린다. 학교 메신저.*"
-    },
-    "night_msg_seo_1": {
-        "name": "서연",
-        "text": "*오늘 옥상 어땠어?*"
-    },
-    "night_msg_seo_2": {
-        "name": "{name}",
-        "text": "*바람이 좋더라*"
-    },
-    "night_msg_seo_3": {
-        "name": "서연",
-        "text": "*다음엔 음료 정도는 준비해 놓을게*"
-    },
-    "night_msg_seo_4": {
-        "name": "서연",
-        "text": "*...서비스야*"
-    },
-    "night_msg_seo_5": {
-        "name": "{name}",
-        "text": "*'서비스야'를 일부러 한 줄 띄어서 보냈다.*"
-    },
-    "night_msg_yuna_1": {
-        "name": "유나",
-        "text": "*...오늘 조용히 있어줘서 좋았어*"
-    },
-    "night_msg_yuna_2": {
-        "name": "유나",
-        "text": "*내일도 자리 비워 놓을게*"
-    },
-    "night_msg_yuna_3": {
-        "name": "{name}",
-        "text": "*'자리 비워 놓을게'. — 핸드폰을 내려놓는 손이 천천히 움직인다.*"
-    },
-    "night_msg_dain_1": {
-        "name": "다인",
-        "text": "*가위바위보 리벤지 내일이다!!*"
-    },
-    "night_msg_dain_2": {
-        "name": "다인",
-        "text": "*도망가지 마ㅋㅋ*"
-    },
-    "night_msg_dain_3": {
-        "name": "다인",
-        "text": "*오늘 빵값 아직도 아깝다 아 진짜ㅋㅋㅋ*"
-    },
-    "night_msg_dain_4": {
-        "name": "{name}",
-        "text": "*세 줄 연속. 숨 좀 쉬고 보내면 안 되나.*"
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*메신저 알림 사이에 — 다른 알림이 보인다.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*학교 공지 앱에 담임선생님이 올린 글이 보인다. '3학년 2반 공지: 내일 1교시 수학 준비물 챙기기. — 그리고 {name}, 적응 잘하고 있으면 됐다.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*공지사항에 개인 메시지를? — 입꼬리가 올라간다. 숨기려는데 안 된다.*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*학교 건강 관리 앱에 알림이 와 있다. '보건실 기록: {name} — 어지러움 (경미). 메모: 내일도 증상 있으면 다시 와. 물 많이 마시고. — ♥은 의료적 관심입니다 ^^'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*의료적 관심에 하트를 붙이는 보건선생님이라니. 건강 기록에 이모티콘 쓰는 사람은 처음 본다.*"
-    },
-    "night_late_transition": {
-        "name": "{name}",
-        "text": "*잠들려는데 — 핸드폰이 한 번 더 울린다. 밤 11시. 누구지?*"
-    },
-    "night_late_branch": {
-        "name": "{name}",
-        "text": "*화면이 밝아진다.*"
-    },
-    "night_seo_late_1": {
-        "name": "서연",
-        "text": "*내일 학교에서 봐.*"
-    },
-    "night_seo_late_2": {
-        "name": "서연",
-        "text": "*— 안 오면 찾으러 갈 거야*"
-    },
-    "night_seo_late_3": {
-        "name": "{name}",
-        "text": "*핸드폰을 내려놓은 손이 멈춘다.*"
-    },
-    "night_seo_freetalk": {
-        "name": "서연",
-        "text": "*서연에게서 메시지가 왔다.*",
-        "context": "첫날 밤, 메신저로 서연과 연락 중. 서연이 먼저 연락을 해왔다. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주.",
-        "personality": "서연은 쿨뷰티 학생회장. 메시지도 여유롭고 능글맞다. 관심을 티 내지 않으려 하지만 먼저 연락한 게 이미 티."
-    },
-    "night_yuna_late_1": {
-        "name": "유나",
-        "text": "*...*"
-    },
-    "night_yuna_late_2": {
-        "name": "{name}",
-        "text": "*'...'만 보내고 끝이다. 뭔가 치다가 지운 흔적.*"
-    },
-    "night_yuna_late_3": {
-        "name": "{name}",
-        "text": "*— 답장을 할까 말까 고민하다가, 화면이 꺼졌다.*"
-    },
-    "night_yuna_late_4": {
-        "name": "{name}",
-        "text": "*화면이 꺼진 뒤에도 한참을 들고 있었다.*"
-    },
-    "night_yuna_freetalk": {
-        "name": "유나",
-        "text": "*유나에게서 짧은 메시지가 왔다.*",
-        "context": "첫날 밤, 메신저로 유나와 연락 중. 유나가 먼저 연락을 해왔다. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주.",
-        "personality": "유나는 신비주의 문학소녀. 메시지도 짧고 암호 같다. 밤에 먼저 연락한 것 자체가 큰 의미."
-    },
-    "night_dain_late_1": {
-        "name": "다인",
-        "text": "*야 아직 안 잤지?!*"
-    },
-    "night_dain_late_2": {
-        "name": "다인",
-        "text": "*내일 아침 운동 같이 할 사람 구한다!*"
-    },
-    "night_dain_late_3": {
-        "name": "다인",
-        "text": "*거절은 안 받음ㅋㅋ*"
-    },
-    "night_dain_late_4": {
-        "name": "{name}",
-        "text": "*이 사람은 거절이라는 개념이 없는 건가.*"
-    },
-    "night_dain_late_4_ins": {
-        "name": "{name}",
-        "text": "*다인의 메시지 아래에 이모티콘이 줄줄이 붙어 있다. 하나하나 다 다르다.*"
-    },
-    "night_dain_freetalk": {
-        "name": "다인",
-        "text": "*다인에게서 메시지 폭격이 시작됐다.*",
-        "context": "첫날 밤, 메신저로 다인과 연락 중. 다인이 먼저 연락을 해왔다. 톤: 밝고 가벼운 대화. 첫날의 설렘과 호기심. 무거운 이야기는 절대 하지 않는다. 장난과 티키타카 위주.",
-        "personality": "다인은 에너지 넘치는 체육계. 메시지도 느낌표 폭탄. 밤에도 텐션이 떨어지지 않는다."
-    },
-    "night_end_1": {
-        "name": "{name}",
-        "text": "*핸드폰을 내려놓았다. 천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*"
-    },
-    "night_end_3": {
-        "name": "{name}",
-        "text": "*나쁘지 않은 첫날이었다. 내일은 — 좀 더 재밌을 것 같다.*"
-    }
+  "night_start": {
+    "name": "{name}",
+    "text": "*방에 돌아왔다. 침대에 누웠다. 첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*"
+  },
+  "night_start_3": {
+    "name": "{name}",
+    "text": "*핸드폰이 울린다. 학교 메신저.*"
+  },
+  "night_msg_seo_1": {
+    "name": "서연",
+    "text": "*오늘 옥상 어땠어?*"
+  },
+  "night_msg_seo_2": {
+    "name": "{name}",
+    "text": "*바람이 좋더라*"
+  },
+  "night_msg_seo_3": {
+    "name": "서연",
+    "text": "*다음엔 음료 정도는 준비해 놓을게*"
+  },
+  "night_msg_seo_4": {
+    "name": "서연",
+    "text": "*...서비스야*"
+  },
+  "night_msg_seo_5": {
+    "name": "{name}",
+    "text": "*'서비스야'를 일부러 한 줄 띄어서 보냈다.*"
+  },
+  "night_msg_yuna_1": {
+    "name": "유나",
+    "text": "*...오늘 조용히 있어줘서 좋았어*"
+  },
+  "night_msg_yuna_2": {
+    "name": "유나",
+    "text": "*내일도 자리 비워 놓을게*"
+  },
+  "night_msg_yuna_3": {
+    "name": "{name}",
+    "text": "*'자리 비워 놓을게'. — 핸드폰을 내려놓는 손이 천천히 움직인다.*"
+  },
+  "night_msg_dain_1": {
+    "name": "다인",
+    "text": "*가위바위보 리벤지 내일이다!!*"
+  },
+  "night_msg_dain_2": {
+    "name": "다인",
+    "text": "*도망가지 마ㅋㅋ*"
+  },
+  "night_msg_dain_3": {
+    "name": "다인",
+    "text": "*오늘 빵값 아직도 아깝다 아 진짜ㅋㅋㅋ*"
+  },
+  "night_msg_dain_4": {
+    "name": "{name}",
+    "text": "*세 줄 연속. 숨 좀 쉬고 보내면 안 되나.*"
+  },
+  "night_hidden_check": {
+    "name": "{name}",
+    "text": "*메신저 알림 사이에 — 다른 알림이 보인다.*"
+  },
+  "night_hidden_homeroom_1": {
+    "name": "{name}",
+    "text": "*학교 공지 앱에 담임선생님이 올린 글이 보인다. '3학년 2반 공지: 내일 1교시 수학 준비물 챙기기. — 그리고 {name}, 적응 잘하고 있으면 됐다.'*"
+  },
+  "night_hidden_homeroom_2": {
+    "name": "{name}",
+    "text": "*공지사항에 개인 메시지를? — 입꼬리가 올라간다. 숨기려는데 안 된다.*"
+  },
+  "night_hidden_nurse_1": {
+    "name": "{name}",
+    "text": "*학교 건강 관리 앱에 알림이 와 있다. '보건실 기록: {name} — 어지러움 (경미). 메모: 내일도 증상 있으면 다시 와. 물 많이 마시고. — ♥은 의료적 관심입니다 ^^'*"
+  },
+  "night_hidden_nurse_2": {
+    "name": "{name}",
+    "text": "*의료적 관심에 하트를 붙이는 보건선생님이라니. 건강 기록에 이모티콘 쓰는 사람은 처음 본다.*"
+  },
+  "night_late_transition": {
+    "name": "{name}",
+    "text": "*잠들려는데 — 핸드폰이 한 번 더 울린다. 밤 11시. 누구지?*"
+  },
+  "night_late_branch": {
+    "name": "{name}",
+    "text": "*화면이 밝아진다.*"
+  },
+  "night_seo_late_1": {
+    "name": "서연",
+    "text": "*내일 학교에서 봐.*"
+  },
+  "night_seo_late_2": {
+    "name": "서연",
+    "text": "*— 안 오면 찾으러 갈 거야*"
+  },
+  "night_seo_late_3": {
+    "name": "{name}",
+    "text": "*핸드폰을 내려놓은 손이 멈춘다.*"
+  },
+  "night_yuna_late_1": {
+    "name": "유나",
+    "text": "*...*"
+  },
+  "night_yuna_late_2": {
+    "name": "{name}",
+    "text": "*'...'만 보내고 끝이다. 뭔가 치다가 지운 흔적.*"
+  },
+  "night_yuna_late_3": {
+    "name": "{name}",
+    "text": "*— 답장을 할까 말까 고민하다가, 화면이 꺼졌다.*"
+  },
+  "night_yuna_late_4": {
+    "name": "{name}",
+    "text": "*화면이 꺼진 뒤에도 한참을 들고 있었다.*"
+  },
+  "night_dain_late_1": {
+    "name": "다인",
+    "text": "*야 아직 안 잤지?!*"
+  },
+  "night_dain_late_2": {
+    "name": "다인",
+    "text": "*내일 아침 운동 같이 할 사람 구한다!*"
+  },
+  "night_dain_late_3": {
+    "name": "다인",
+    "text": "*거절은 안 받음ㅋㅋ*"
+  },
+  "night_dain_late_4": {
+    "name": "{name}",
+    "text": "*이 사람은 거절이라는 개념이 없는 건가.*"
+  },
+  "night_dain_late_4_ins": {
+    "name": "{name}",
+    "text": "*다인의 메시지 아래에 이모티콘이 줄줄이 붙어 있다. 하나하나 다 다르다.*"
+  },
+  "night_end_1": {
+    "name": "{name}",
+    "text": "*핸드폰을 내려놓았다. 천장을 본다. 벚꽃 냄새가 아직 교복에 남아 있다.*"
+  },
+  "night_end_3": {
+    "name": "{name}",
+    "text": "*나쁘지 않은 첫날이었다. 내일은 — 좀 더 재밌을 것 같다.*"
+  }
 }

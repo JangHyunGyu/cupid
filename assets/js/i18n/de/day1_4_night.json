@@ -1,160 +1,142 @@
 {
-    "night_start": {
-        "name": "{name}",
-        "text": "*Zurück in meinem Zimmer. Ich liege auf dem Bett.*"
-    },
-    "night_start_3": {
-        "name": "{name}",
-        "text": "*Mein Handy klingelt. Der Schul-Messenger.*"
-    },
-    "night_msg_seo_1": {
-        "name": "Seoyeon",
-        "text": "*Wie war das Dach heute?*"
-    },
-    "night_msg_seo_2": {
-        "name": "{name}",
-        "text": "*Die Brise war schön*"
-    },
-    "night_msg_seo_3": {
-        "name": "Seoyeon",
-        "text": "*Nächstes Mal hab ich wenigstens Getränke bereit*"
-    },
-    "night_msg_seo_4": {
-        "name": "Seoyeon",
-        "text": "*...Geht aufs Haus*"
-    },
-    "night_msg_seo_5": {
-        "name": "{name}",
-        "text": "*Sie hat ‘Geht aufs Haus’ absichtlich als separate Nachricht geschickt. — Ich muss schmunzeln.*"
-    },
-    "night_msg_yuna_1": {
-        "name": "Yuna",
-        "text": "*...Danke, dass du heute still warst*"
-    },
-    "night_msg_yuna_2": {
-        "name": "Yuna",
-        "text": "*Morgen halte ich dir den Platz frei*"
-    },
-    "night_msg_yuna_3": {
-        "name": "{name}",
-        "text": "*’Ich halte dir den Platz frei.’ — Für Yuna ist das die grö��te Einladung, die sie geben kann. Meine Hand legt das Handy langsam ab.*"
-    },
-    "night_msg_dain_1": {
-        "name": "Dain",
-        "text": "*Schere-Stein-Papier-Revanche ist MORGEN!!*"
-    },
-    "night_msg_dain_2": {
-        "name": "Dain",
-        "text": "*Bloß nicht abhauen lol*"
-    },
-    "night_msg_dain_3": {
-        "name": "Dain",
-        "text": "*Das Geld für das Brot tut mir immer noch weh ehrlich gesagt lolol*"
-    },
-    "night_msg_dain_4": {
-        "name": "{name}",
-        "text": "*Drei Nachrichten am Stück. Kann sie nicht mal Luft holen zwischen den Texten?*"
-    },
-    "night_late_transition": {
-        "name": "{name}",
-        "text": "*Kurz vor dem Einschlafen — mein Handy klingelt noch einmal.*"
-    },
-    "night_late_branch": {
-        "name": "{name}",
-        "text": "*Der Bildschirm leuchtet auf.*"
-    },
-    "night_seo_late_1": {
-        "name": "Seoyeon",
-        "text": "*Bis morgen in der Schule.*"
-    },
-    "night_seo_late_2": {
-        "name": "Seoyeon",
-        "text": "*— Wenn du nicht kommst, hole ich dich*"
-    },
-    "night_seo_late_3": {
-        "name": "{name}",
-        "text": "*‚Ich werde danach suchen.' — Meine Hand erstarrt, nachdem ich das Handy hingelegt habe.*"
-    },
-    "night_yuna_late_1": {
-        "name": "Yuna",
-        "text": "*...*"
-    },
-    "night_yuna_late_2": {
-        "name": "{name}",
-        "text": "*Nur '...' und sonst nichts. Als hätte sie etwas getippt und wieder gelöscht. — Was sie gelöscht hat, lässt mich nicht einschlafen.*"
-    },
-    "night_yuna_late_3": {
-        "name": "{name}",
-        "text": "*— Ich überlege, ob ich antworten soll, und der Bildschirm wird dunkel.*"
-    },
-    "night_yuna_late_4": {
-        "name": "{name}",
-        "text": "*Auch nachdem der Bildschirm dunkel wurde, hielt ich das Handy noch lange fest.*"
-    },
-    "night_dain_late_1": {
-        "name": "Dain",
-        "text": "*Hey du bist doch noch wach?!*"
-    },
-    "night_dain_late_2": {
-        "name": "Dain",
-        "text": "*Suche jemanden fürs Frühsport morgen!*"
-    },
-    "night_dain_late_3": {
-        "name": "Dain",
-        "text": "*Nein wird nicht akzeptiert lol*"
-    },
-    "night_dain_late_4": {
-        "name": "{name}",
-        "text": "*Kennt diese Person das Konzept von ‘Nein’ nicht?*"
-    },
-    "night_end_1": {
-        "name": "{name}",
-        "text": "*Ich lege das Handy hin.*"
-    },
-    "night_end_3": {
-        "name": "{name}",
-        "text": "*Kein schlechter erster Tag.*"
-    },
-    "night_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Eine Nachricht von Seoyeon.*",
-        "context": "Erste Nacht, Chat mit Seoyeon über Messenger. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-        "personality": "Seoyeon ist die coole Schülersprecherin. Ihre Nachrichten sind gelassen und neckisch."
-    },
-    "night_dain_freetalk": {
-        "name": "Dain",
-        "text": "*Dains Nachrichtenbombardement hat begonnen.*",
-        "context": "Erste Nacht, Chat mit Dain über Messenger. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-        "personality": "Dain ist ein energiegeladener Sporttyp. Ihre Nachrichten sind Ausrufezeichen-Bomben."
-    },
-    "night_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Eine kurze Nachricht von Yuna.*",
-        "context": "Erste Nacht, Chat mit Yuna über Messenger. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
-        "personality": "Yuna ist ein mysteriöses Literaturgirl. Ihre Nachrichten sind kurz und kryptisch."
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*Zwischen den Messenger-Benachrichtigungen — fällt mir noch etwas auf.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und {name}, solange du dich gut einlebst, reicht das.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*Eine persönliche Nachricht in einer Klassenankündigung? — Kann sie nicht zwischen Beruf und Privat unterscheiden, oder macht sie das absichtlich?*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Eine Benachrichtigung in der Schul-Gesundheits-App. 'Krankenakte: {name} — Schwindel (leicht). Notiz: Komm morgen wieder, falls die Symptome anhalten. Trink viel Wasser. — das ♥ ist rein medizinisches Interesse ^^'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*Eine Schulkrankenschwester, die Herzchen in Krankenakten setzt. Noch nie jemanden gesehen, der Emojis in Gesundheitsakten benutzt.*"
-    },
-    "night_dain_late_4_ins": {
-        "name": "{name}",
-        "text": "*Unter Dains Nachricht reihen sich Emojis aneinander. Jedes einzelne ist anders.*"
-    }
+  "night_start": {
+    "name": "{name}",
+    "text": "*Zurück in meinem Zimmer. Ich liege auf dem Bett.*"
+  },
+  "night_start_3": {
+    "name": "{name}",
+    "text": "*Mein Handy klingelt. Der Schul-Messenger.*"
+  },
+  "night_msg_seo_1": {
+    "name": "Seoyeon",
+    "text": "*Wie war das Dach heute?*"
+  },
+  "night_msg_seo_2": {
+    "name": "{name}",
+    "text": "*Die Brise war schön*"
+  },
+  "night_msg_seo_3": {
+    "name": "Seoyeon",
+    "text": "*Nächstes Mal hab ich wenigstens Getränke bereit*"
+  },
+  "night_msg_seo_4": {
+    "name": "Seoyeon",
+    "text": "*...Geht aufs Haus*"
+  },
+  "night_msg_seo_5": {
+    "name": "{name}",
+    "text": "*Sie hat ‘Geht aufs Haus’ absichtlich als separate Nachricht geschickt. — Ich muss schmunzeln.*"
+  },
+  "night_msg_yuna_1": {
+    "name": "Yuna",
+    "text": "*...Danke, dass du heute still warst*"
+  },
+  "night_msg_yuna_2": {
+    "name": "Yuna",
+    "text": "*Morgen halte ich dir den Platz frei*"
+  },
+  "night_msg_yuna_3": {
+    "name": "{name}",
+    "text": "*’Ich halte dir den Platz frei.’ — Für Yuna ist das die grö��te Einladung, die sie geben kann. Meine Hand legt das Handy langsam ab.*"
+  },
+  "night_msg_dain_1": {
+    "name": "Dain",
+    "text": "*Schere-Stein-Papier-Revanche ist MORGEN!!*"
+  },
+  "night_msg_dain_2": {
+    "name": "Dain",
+    "text": "*Bloß nicht abhauen lol*"
+  },
+  "night_msg_dain_3": {
+    "name": "Dain",
+    "text": "*Das Geld für das Brot tut mir immer noch weh ehrlich gesagt lolol*"
+  },
+  "night_msg_dain_4": {
+    "name": "{name}",
+    "text": "*Drei Nachrichten am Stück. Kann sie nicht mal Luft holen zwischen den Texten?*"
+  },
+  "night_late_transition": {
+    "name": "{name}",
+    "text": "*Kurz vor dem Einschlafen — mein Handy klingelt noch einmal.*"
+  },
+  "night_late_branch": {
+    "name": "{name}",
+    "text": "*Der Bildschirm leuchtet auf.*"
+  },
+  "night_seo_late_1": {
+    "name": "Seoyeon",
+    "text": "*Bis morgen in der Schule.*"
+  },
+  "night_seo_late_2": {
+    "name": "Seoyeon",
+    "text": "*— Wenn du nicht kommst, hole ich dich*"
+  },
+  "night_seo_late_3": {
+    "name": "{name}",
+    "text": "*‚Ich werde danach suchen.' — Meine Hand erstarrt, nachdem ich das Handy hingelegt habe.*"
+  },
+  "night_yuna_late_1": {
+    "name": "Yuna",
+    "text": "*...*"
+  },
+  "night_yuna_late_2": {
+    "name": "{name}",
+    "text": "*Nur '...' und sonst nichts. Als hätte sie etwas getippt und wieder gelöscht. — Was sie gelöscht hat, lässt mich nicht einschlafen.*"
+  },
+  "night_yuna_late_3": {
+    "name": "{name}",
+    "text": "*— Ich überlege, ob ich antworten soll, und der Bildschirm wird dunkel.*"
+  },
+  "night_yuna_late_4": {
+    "name": "{name}",
+    "text": "*Auch nachdem der Bildschirm dunkel wurde, hielt ich das Handy noch lange fest.*"
+  },
+  "night_dain_late_1": {
+    "name": "Dain",
+    "text": "*Hey du bist doch noch wach?!*"
+  },
+  "night_dain_late_2": {
+    "name": "Dain",
+    "text": "*Suche jemanden fürs Frühsport morgen!*"
+  },
+  "night_dain_late_3": {
+    "name": "Dain",
+    "text": "*Nein wird nicht akzeptiert lol*"
+  },
+  "night_dain_late_4": {
+    "name": "{name}",
+    "text": "*Kennt diese Person das Konzept von ‘Nein’ nicht?*"
+  },
+  "night_end_1": {
+    "name": "{name}",
+    "text": "*Ich lege das Handy hin.*"
+  },
+  "night_end_3": {
+    "name": "{name}",
+    "text": "*Kein schlechter erster Tag.*"
+  },
+  "night_hidden_check": {
+    "name": "{name}",
+    "text": "*Zwischen den Messenger-Benachrichtigungen — fällt mir noch etwas auf.*"
+  },
+  "night_hidden_homeroom_1": {
+    "name": "{name}",
+    "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und {name}, solange du dich gut einlebst, reicht das.'*"
+  },
+  "night_hidden_homeroom_2": {
+    "name": "{name}",
+    "text": "*Eine persönliche Nachricht in einer Klassenankündigung? — Kann sie nicht zwischen Beruf und Privat unterscheiden, oder macht sie das absichtlich?*"
+  },
+  "night_hidden_nurse_1": {
+    "name": "{name}",
+    "text": "*Eine Benachrichtigung in der Schul-Gesundheits-App. 'Krankenakte: {name} — Schwindel (leicht). Notiz: Komm morgen wieder, falls die Symptome anhalten. Trink viel Wasser. — das ♥ ist rein medizinisches Interesse ^^'*"
+  },
+  "night_hidden_nurse_2": {
+    "name": "{name}",
+    "text": "*Eine Schulkrankenschwester, die Herzchen in Krankenakten setzt. Noch nie jemanden gesehen, der Emojis in Gesundheitsakten benutzt.*"
+  },
+  "night_dain_late_4_ins": {
+    "name": "{name}",
+    "text": "*Unter Dains Nachricht reihen sich Emojis aneinander. Jedes einzelne ist anders.*"
+  }
 }

@@ -146,19 +146,19 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_dream_seo_bonus": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "stats": {"Seoyeon":{"affinity":9}},
+        "stats": {"Seoyeon":{"affinity":2}},
         "next": "night3_end"
     },
     "night3_dream_yuna_bonus": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "stats": {"Yuna":{"affinity":9}},
+        "stats": {"Yuna":{"affinity":6}},
         "next": "night3_end"
     },
     "night3_dream_dain_bonus": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "stats": {"Dain":{"affinity":9}},
+        "stats": {"Dain":{"affinity":3}},
         "next": "night3_end"
     },
     "night3_cheat_msg_1": {

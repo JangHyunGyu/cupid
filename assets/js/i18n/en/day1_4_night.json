@@ -1,160 +1,142 @@
 {
-    "night_start": {
-        "name": "{name}",
-        "text": "*Back in my room. Lying on the bed.*"
-    },
-    "night_start_3": {
-        "name": "{name}",
-        "text": "*My phone buzzes. The school messenger.*"
-    },
-    "night_msg_seo_1": {
-        "name": "Seoyeon",
-        "text": "*How was the rooftop today?*"
-    },
-    "night_msg_seo_2": {
-        "name": "{name}",
-        "text": "*The breeze was nice*"
-    },
-    "night_msg_seo_3": {
-        "name": "Seoyeon",
-        "text": "*Next time I'll at least have drinks ready*"
-    },
-    "night_msg_seo_4": {
-        "name": "Seoyeon",
-        "text": "*...It's on the house*"
-    },
-    "night_msg_seo_5": {
-        "name": "{name}",
-        "text": "*She sent 'On the house' as a separate message on purpose. — I can't help but smile.*"
-    },
-    "night_msg_yuna_1": {
-        "name": "Yuna",
-        "text": "*...Thanks for being quiet today*"
-    },
-    "night_msg_yuna_2": {
-        "name": "Yuna",
-        "text": "*I'll save your seat tomorrow*"
-    },
-    "night_msg_yuna_3": {
-        "name": "{name}",
-        "text": "*'I'll save you a seat.' — For Yuna, that's the biggest invitation she can give. My hand lowers the phone slowly.*"
-    },
-    "night_msg_dain_1": {
-        "name": "Dain",
-        "text": "*Rock-paper-scissors rematch is TOMORROW!!*"
-    },
-    "night_msg_dain_2": {
-        "name": "Dain",
-        "text": "*Don't you dare run lol*"
-    },
-    "night_msg_dain_3": {
-        "name": "Dain",
-        "text": "*Still bummed about the bread money honestly lolol*"
-    },
-    "night_msg_dain_4": {
-        "name": "{name}",
-        "text": "*Three messages in a row. Can she not breathe between texts?*"
-    },
-    "night_late_transition": {
-        "name": "{name}",
-        "text": "*About to fall asleep when — my phone buzzes one more time.*"
-    },
-    "night_late_branch": {
-        "name": "{name}",
-        "text": "*The screen lights up.*"
-    },
-    "night_seo_late_1": {
-        "name": "Seoyeon",
-        "text": "*See you at school tomorrow.*"
-    },
-    "night_seo_late_2": {
-        "name": "Seoyeon",
-        "text": "*— If you don't show up, I'm coming to find you*"
-    },
-    "night_seo_late_3": {
-        "name": "{name}",
-        "text": "*'I'll go find it.' — My hand freezes after setting down the phone.*"
-    },
-    "night_yuna_late_1": {
-        "name": "Yuna",
-        "text": "*...*"
-    },
-    "night_yuna_late_2": {
-        "name": "{name}",
-        "text": "*Just '...' and nothing else. Like she typed something and erased it.*"
-    },
-    "night_yuna_late_3": {
-        "name": "{name}",
-        "text": "*— I debate replying, and the screen goes dark.*"
-    },
-    "night_yuna_late_4": {
-        "name": "{name}",
-        "text": "*Even after the screen went dark, I held the phone for a long time.*"
-    },
-    "night_dain_late_1": {
-        "name": "Dain",
-        "text": "*Hey you're still up right?!*"
-    },
-    "night_dain_late_2": {
-        "name": "Dain",
-        "text": "*Looking for a morning workout buddy!*"
-    },
-    "night_dain_late_3": {
-        "name": "Dain",
-        "text": "*No isn't an option lol*"
-    },
-    "night_dain_late_4": {
-        "name": "{name}",
-        "text": "*Does this person not understand the word 'no'?*"
-    },
-    "night_end_1": {
-        "name": "{name}",
-        "text": "*I put down my phone.*"
-    },
-    "night_end_3": {
-        "name": "{name}",
-        "text": "*Not a bad first day.*"
-    },
-    "night_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Got a message from Seoyeon.*",
-        "context": "First night, chatting with Seoyeon via messenger. She messaged first. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
-        "personality": "Seoyeon is the cool student council president. Even her texts are composed and teasing. Tries not to show interest but messaging first already gives it away."
-    },
-    "night_dain_freetalk": {
-        "name": "Dain",
-        "text": "*Dain's message bombardment has begun.*",
-        "context": "First night, chatting with Dain via messenger. She messaged first. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
-        "personality": "Dain is an energetic athlete. Her messages are exclamation mark bombs. Her energy doesn't drop even at night."
-    },
-    "night_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*A short message from Yuna arrived.*",
-        "context": "First night, chatting with Yuna via messenger. She messaged first. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
-        "personality": "Yuna is a mysterious literary girl. Her messages are short and cryptic. Reaching out first at night is a big deal for her."
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*Between the messenger notifications — I notice something else.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*There's a post from the homeroom teacher on the school app. 'Class 3-2 Notice: Bring math supplies for 1st period tomorrow. — And {name}, as long as you're settling in okay, that's enough.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*A personal message in a class announcement? — I can't stop my lips from curving up. I try to hide it but can't.*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*There's an alert in the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back tomorrow if the symptoms continue. Drink plenty of water. — the ♥ is purely a medical concern ^^'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*A school nurse who puts hearts in medical records. Never seen anyone use emojis in health files before.*"
-    },
-    "night_dain_late_4_ins": {
-        "name": "{name}",
-        "text": "*A string of emojis trails below Dain's message. Every single one is different.*"
-    }
+  "night_start": {
+    "name": "{name}",
+    "text": "*Back in my room. Lying on the bed.*"
+  },
+  "night_start_3": {
+    "name": "{name}",
+    "text": "*My phone buzzes. The school messenger.*"
+  },
+  "night_msg_seo_1": {
+    "name": "Seoyeon",
+    "text": "*How was the rooftop today?*"
+  },
+  "night_msg_seo_2": {
+    "name": "{name}",
+    "text": "*The breeze was nice*"
+  },
+  "night_msg_seo_3": {
+    "name": "Seoyeon",
+    "text": "*Next time I'll at least have drinks ready*"
+  },
+  "night_msg_seo_4": {
+    "name": "Seoyeon",
+    "text": "*...It's on the house*"
+  },
+  "night_msg_seo_5": {
+    "name": "{name}",
+    "text": "*She sent 'On the house' as a separate message on purpose. — I can't help but smile.*"
+  },
+  "night_msg_yuna_1": {
+    "name": "Yuna",
+    "text": "*...Thanks for being quiet today*"
+  },
+  "night_msg_yuna_2": {
+    "name": "Yuna",
+    "text": "*I'll save your seat tomorrow*"
+  },
+  "night_msg_yuna_3": {
+    "name": "{name}",
+    "text": "*'I'll save you a seat.' — For Yuna, that's the biggest invitation she can give. My hand lowers the phone slowly.*"
+  },
+  "night_msg_dain_1": {
+    "name": "Dain",
+    "text": "*Rock-paper-scissors rematch is TOMORROW!!*"
+  },
+  "night_msg_dain_2": {
+    "name": "Dain",
+    "text": "*Don't you dare run lol*"
+  },
+  "night_msg_dain_3": {
+    "name": "Dain",
+    "text": "*Still bummed about the bread money honestly lolol*"
+  },
+  "night_msg_dain_4": {
+    "name": "{name}",
+    "text": "*Three messages in a row. Can she not breathe between texts?*"
+  },
+  "night_late_transition": {
+    "name": "{name}",
+    "text": "*About to fall asleep when — my phone buzzes one more time.*"
+  },
+  "night_late_branch": {
+    "name": "{name}",
+    "text": "*The screen lights up.*"
+  },
+  "night_seo_late_1": {
+    "name": "Seoyeon",
+    "text": "*See you at school tomorrow.*"
+  },
+  "night_seo_late_2": {
+    "name": "Seoyeon",
+    "text": "*— If you don't show up, I'm coming to find you*"
+  },
+  "night_seo_late_3": {
+    "name": "{name}",
+    "text": "*'I'll go find it.' — My hand freezes after setting down the phone.*"
+  },
+  "night_yuna_late_1": {
+    "name": "Yuna",
+    "text": "*...*"
+  },
+  "night_yuna_late_2": {
+    "name": "{name}",
+    "text": "*Just '...' and nothing else. Like she typed something and erased it.*"
+  },
+  "night_yuna_late_3": {
+    "name": "{name}",
+    "text": "*— I debate replying, and the screen goes dark.*"
+  },
+  "night_yuna_late_4": {
+    "name": "{name}",
+    "text": "*Even after the screen went dark, I held the phone for a long time.*"
+  },
+  "night_dain_late_1": {
+    "name": "Dain",
+    "text": "*Hey you're still up right?!*"
+  },
+  "night_dain_late_2": {
+    "name": "Dain",
+    "text": "*Looking for a morning workout buddy!*"
+  },
+  "night_dain_late_3": {
+    "name": "Dain",
+    "text": "*No isn't an option lol*"
+  },
+  "night_dain_late_4": {
+    "name": "{name}",
+    "text": "*Does this person not understand the word 'no'?*"
+  },
+  "night_end_1": {
+    "name": "{name}",
+    "text": "*I put down my phone.*"
+  },
+  "night_end_3": {
+    "name": "{name}",
+    "text": "*Not a bad first day.*"
+  },
+  "night_hidden_check": {
+    "name": "{name}",
+    "text": "*Between the messenger notifications — I notice something else.*"
+  },
+  "night_hidden_homeroom_1": {
+    "name": "{name}",
+    "text": "*There's a post from the homeroom teacher on the school app. 'Class 3-2 Notice: Bring math supplies for 1st period tomorrow. — And {name}, as long as you're settling in okay, that's enough.'*"
+  },
+  "night_hidden_homeroom_2": {
+    "name": "{name}",
+    "text": "*A personal message in a class announcement? — I can't stop my lips from curving up. I try to hide it but can't.*"
+  },
+  "night_hidden_nurse_1": {
+    "name": "{name}",
+    "text": "*There's an alert in the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back tomorrow if the symptoms continue. Drink plenty of water. — the ♥ is purely a medical concern ^^'*"
+  },
+  "night_hidden_nurse_2": {
+    "name": "{name}",
+    "text": "*A school nurse who puts hearts in medical records. Never seen anyone use emojis in health files before.*"
+  },
+  "night_dain_late_4_ins": {
+    "name": "{name}",
+    "text": "*A string of emojis trails below Dain's message. Every single one is different.*"
+  }
 }

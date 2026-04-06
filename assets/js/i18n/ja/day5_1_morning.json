@@ -428,5 +428,109 @@
   "morning5_yuna_story_gone_2": {
     "name": "{name}",
     "text": "*図書館の空席、消えたしおり、そして貼られなかった小説。 — ユナは痕跡を全部消している。Day 3に俺が残した空白がここまで届いた。*"
+  },
+  "hidden_homeroom_d5_praise_trap_1": {
+    "name": "{name}",
+    "text": "*担任が一瞬止まる。 — そしていつもの乾いた表情に戻る。あまりにも速く。*"
+  },
+  "hidden_homeroom_d5_praise_trap_2": {
+    "name": "担任先生",
+    "text": "...読みもしないで?"
+  },
+  "hidden_homeroom_d5_praise_trap_3": {
+    "name": "{name}",
+    "text": "あ、それは — きっといいに決まってますよ。7年も書いたんでしょう。"
+  },
+  "hidden_homeroom_d5_praise_trap_4": {
+    "name": "担任先生",
+    "text": "...そう。"
+  },
+  "hidden_homeroom_d5_praise_trap_5": {
+    "name": "{name}",
+    "text": "*担任が手を伸ばす。原稿を持っていく。ゆっくりと。封筒に戻す。*"
+  },
+  "hidden_homeroom_d5_praise_trap_6": {
+    "name": "担任先生",
+    "text": "もういい。時間取らせてごめん。"
+  },
+  "hidden_homeroom_d5_praise_trap_7": {
+    "name": "{name}",
+    "text": "先生—"
+  },
+  "hidden_homeroom_d5_praise_trap_8": {
+    "name": "担任先生",
+    "text": "7年で出版社に三回送ったの。全部落ちた。その三回のうち二回が — 『7年も書かれたんですね。きっと素晴らしいでしょう』で始まる断りメールだった。"
+  },
+  "hidden_homeroom_d5_praise_trap_9": {
+    "name": "{name}",
+    "text": "*...知らなかった。デビューに落ちたのは知ってたけど、その断りの文句が *私が今言ったのと全く同じ* だったなんて。*"
+  },
+  "hidden_homeroom_d5_praise_trap_10": {
+    "name": "担任先生",
+    "text": "...読んで言ってくれると思ってた。 — 学生だから負担が少ないと思って見せたのに。"
+  },
+  "hidden_homeroom_d5_praise_trap_11": {
+    "name": "担任先生",
+    "text": "行きなさい。行事の時間に遅れるよ。"
+  },
+  "hidden_homeroom_d5_praise_trap_12": {
+    "name": "{name}",
+    "text": "*教室のドアを閉めて出てきた。封筒は担任の机の上にある。 — 7年で一度ももらえなかったのは *心からの賞賛* じゃなくて *真剣に読んでくれる人* だったと、今気づいた。賞賛なら断りメールにもあった。私は断りメールと全く同じことを言った。善意で。*"
+  },
+  "hidden_homeroom_d5_correct_1": {
+    "name": "{name}",
+    "text": "*担任が止まる。本当に止まる。0.5秒じゃなくて — 3秒くらい。クリップボードを握る手に力が入る。*"
+  },
+  "hidden_homeroom_d5_correct_2": {
+    "name": "担任先生",
+    "text": "...どうして分かったの。"
+  },
+  "hidden_homeroom_d5_correct_3": {
+    "name": "{name}",
+    "text": "まだ原稿開いてもいないんですけど。"
+  },
+  "hidden_homeroom_d5_correct_4": {
+    "name": "担任先生",
+    "text": "そうね。 — どうして分かったの、最後の章が空白だって。"
+  },
+  "hidden_homeroom_d5_correct_5": {
+    "name": "{name}",
+    "text": "*分からなかった。推測だった。 — 7年かかったという人が、よりによって *今日* 学生に初めて見せるのが変だった。完成してたら出版社に先に送ってたはず。完成してないから — 終わらせる *許可* が必要なんだ。*"
+  },
+  "hidden_homeroom_d5_correct_6": {
+    "name": "担任先生",
+    "text": "...本当に書けないの。最後の一行が。"
+  },
+  "hidden_homeroom_d5_correct_7": {
+    "name": "担任先生",
+    "text": "7年間その一行のせいで原稿が止まってた。終わらせたら — 私が作家じゃないって確定するから。"
+  },
+  "hidden_homeroom_d5_correct_8": {
+    "name": "{name}",
+    "text": "*初めて担任が *作家* という言葉を自分の口から出した。7年間一度も口にしなかった言葉だ。*"
+  },
+  "hidden_homeroom_d5_correct_9": {
+    "name": "{name}",
+    "text": "一行書くの、一緒に見てあげましょうか。"
+  },
+  "hidden_homeroom_d5_correct_10": {
+    "name": "担任先生",
+    "text": "...学生が?"
+  },
+  "hidden_homeroom_d5_correct_11": {
+    "name": "{name}",
+    "text": "一行ならいいじゃないですか。学生だって一行は書きます。"
+  },
+  "hidden_homeroom_d5_correct_12": {
+    "name": "担任先生",
+    "text": "*担任が笑う。本当に。口角だけじゃなくて、目も一緒に。7年分の自己検閲が1秒だけ解ける顔だ。*"
+  },
+  "hidden_homeroom_d5_correct_13": {
+    "name": "担任先生",
+    "text": "...受けるわ。その提案。"
+  },
+  "hidden_homeroom_d5_correct_14": {
+    "name": "{name}",
+    "text": "*原稿をまた抱える。さっきほど重くない。 — 7年分の未完成を称賛で *完結させる* ことより、未完成を *未完成として認めてくれる* ことがこの人には必要だった。それが本物の応援だ。*"
   }
 }

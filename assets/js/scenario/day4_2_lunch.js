@@ -27,7 +27,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_pretty_high": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy.png",
-        "stats": {"Seoyeon":{"affinity":10}},
+        "stats": {"Seoyeon":{"affinity":3}},
         "next": "date_seo_pretty_high_ins"
     },
     "date_seo_pretty_high_ins": {
@@ -114,12 +114,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_succulent_3": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_laugh.png",
-        "next": "date_seo_freetalk"
-    },
-    "date_seo_freetalk": {
-        "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "type": "free_talk",
         "next": "date_seo_end"
     },
     "date_seo_end": {
@@ -160,7 +154,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_pretty_high": {
         "background": "assets/images/background/cafe.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "stats": {"Yuna":{"affinity":10}},
+        "stats": {"Yuna":{"affinity":4}},
         "next": "date_yuna_pretty_high_2"
     },
     "date_yuna_pretty_high_2": {
@@ -272,12 +266,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_oldbook_4": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_smile.png",
-        "next": "date_yuna_freetalk"
-    },
-    "date_yuna_freetalk": {
-        "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "type": "free_talk",
         "next": "date_yuna_end"
     },
     "date_yuna_end": {
@@ -328,7 +316,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_dain_pretty_high": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "stats": {"Dain":{"affinity":10}},
+        "stats": {"Dain":{"affinity":3}},
         "next": "date_dain_pretty_high_2"
     },
     "date_dain_pretty_high_2": {
@@ -440,12 +428,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_dain_shop_3_ins": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_freetalk"
-    },
-    "date_dain_freetalk": {
-        "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "type": "free_talk",
         "next": "date_dain_end"
     },
     "date_dain_end": {
