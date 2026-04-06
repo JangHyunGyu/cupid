@@ -59,7 +59,7 @@
         "name": "Seoyeon",
         "text": "My mom called today."
     },
-    "wall_seo_7_ins": {
+    "wall_seo_7_b": {
         "name": "{name}",
         "text": "......"
     },
@@ -71,15 +71,15 @@
         "name": "{name}",
         "text": "*Seoyeon smiles. — It's not her usual composed smile. It's a smile for self-defense.*"
     },
-    "wall_seo_9_ins": {
+    "wall_seo_9_b": {
         "name": "Seoyeon",
         "text": "My family looks fine on the outside, right? Big house, nice car, student council president's daughter."
     },
-    "wall_seo_9_ins2": {
+    "wall_seo_9_c": {
         "name": "Seoyeon",
         "text": "But Mom and Dad have been strangers under the same roof for a year. They just haven't filed the papers."
     },
-    "wall_seo_9_ins3": {
+    "wall_seo_9_d": {
         "name": "{name}",
         "text": "......"
     },
@@ -91,7 +91,7 @@
         "name": "Seoyeon",
         "text": "Mom told me, 'At least you have to be perfect to hold this family together.'"
     },
-    "wall_seo_11_ins": {
+    "wall_seo_11_b": {
         "name": "{name}",
         "text": "*Seoyeon presses her lips shut. As if swallowing.*"
     },
@@ -107,15 +107,15 @@
         "name": "Seoyeon",
         "text": "Every time I got praised, I thought, 'This smile was practiced too — has anyone ever seen the real me?'"
     },
-    "wall_seo_14_ins": {
+    "wall_seo_14_b": {
         "name": "Seoyeon",
         "text": "...But you."
     },
-    "wall_seo_14_ins2": {
+    "wall_seo_14_c": {
         "name": "{name}",
         "text": "*Seoyeon stops talking. Her hands are clenched on her knees.*"
     },
-    "wall_seo_14_ins4": {
+    "wall_seo_14_d": {
         "name": "{name}",
         "text": "*Tears run down her face. Silently. - Seoyeon is crying.*"
     },
@@ -131,11 +131,11 @@
         "name": "{name}",
         "text": "*I held Seoyeon.*"
     },
-    "wall_seo_hug_2_ins": {
+    "wall_seo_hug_2_b": {
         "name": "Seoyeon",
         "text": "...Crying in front of someone, it's the first time since I was ten."
     },
-    "wall_seo_hug_2_ins2": {
+    "wall_seo_hug_2_c": {
         "name": "Seoyeon",
         "text": "Eight years. All that time, I only ever cried alone in the bathroom."
     },
@@ -163,7 +163,7 @@
         "name": "Seoyeon",
         "text": "Everyone says that and then disappears."
     },
-    "wall_seo_pinky_5_ins": {
+    "wall_seo_pinky_5_b": {
         "name": "{name}",
         "text": "*The pinky from Day 1. The pinky from Day 4. Same finger, completely different weight.*"
     },
@@ -188,7 +188,7 @@
         "name": "Seoyeon",
         "text": "...Thanks, I guess."
     },
-    "wall_seo_line_react_3_ins": {
+    "wall_seo_line_react_3_b": {
         "name": "{name}",
         "text": "*Seoyeon wipes her tears.*"
     },
@@ -208,7 +208,7 @@
         "name": "{name}",
         "text": "*Seoyeon smiles. Her lips curve on their own. — Her makeup is smeared, her eyes are swollen. But I can't look away.*"
     },
-    "wall_seo_after_line_4_ins": {
+    "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
         "text": "...I don't think I need a mirror today."
     },
@@ -269,7 +269,7 @@
         "name": "Dain",
         "text": "Hey, you free right now? lol"
     },
-    "wall_dain_2_ins": {
+    "wall_dain_2_b": {
         "name": "Dain",
         "text": "*We're not supposed to be at school, right?*"
     },
@@ -293,7 +293,7 @@
         "name": "Dain",
         "text": "I sneak in sometimes! To practice!!"
     },
-    "wall_dain_7_ins": {
+    "wall_dain_7_b": {
         "name": "{name}",
         "text": "*Dain hands me a volleyball.*"
     },
@@ -301,7 +301,7 @@
         "name": "Dain",
         "text": "Set for me!! Just once!!"
     },
-    "wall_dain_8_ins": {
+    "wall_dain_8_b": {
         "name": "{name}",
         "text": "*I toss the ball up. Dain jumps and — spikes it.*"
     },
@@ -321,11 +321,11 @@
         "name": "{name}",
         "text": "Dain. You're not fine."
     },
-    "wall_dain_12_ins": {
+    "wall_dain_12_b": {
         "name": "Dain",
         "text": "I said I'm fine!! Really!!"
     },
-    "wall_dain_12_ins2": {
+    "wall_dain_12_c": {
         "name": "{name}",
         "text": "......"
     },
@@ -337,7 +337,7 @@
         "name": "Dain",
         "text": "...ACL."
     },
-    "wall_dain_14_ins": {
+    "wall_dain_14_b": {
         "name": "{name}",
         "text": "*No exclamation marks.*"
     },
@@ -349,7 +349,7 @@
         "name": "{name}",
         "text": "*Dain is making a face I've never seen before. Dain, not smiling.*"
     },
-    "wall_dain_16_ins": {
+    "wall_dain_16_b": {
         "name": "Dain",
         "text": "I had surgery and the medical team — they chose their words really carefully."
     },
@@ -361,15 +361,15 @@
         "name": "Dain",
         "text": "My mom was crying when we left the hospital. — I couldn't cry. It just hadn't sunk in yet."
     },
-    "wall_dain_18_ins": {
+    "wall_dain_18_b": {
         "name": "Dain",
         "text": "It finally sank in — when I was cleaning out the gym lockers."
     },
-    "wall_dain_18_ins2": {
+    "wall_dain_18_c": {
         "name": "{name}",
         "text": "......"
     },
-    "wall_dain_18_ins3": {
+    "wall_dain_18_d": {
         "name": "Dain",
         "text": "*Clenches and unclenches her fists.* I didn't tell anyone. Not even my parents."
     },
@@ -377,7 +377,7 @@
         "name": "Dain",
         "text": "I didn't tell anyone. Not even my parents. 'Dain wouldn't be Dain if she couldn't play!' — I didn't want to hear that."
     },
-    "wall_dain_19_ins": {
+    "wall_dain_19_b": {
         "name": "{name}",
         "text": "*Dain clutches her chest.*"
     },
@@ -385,7 +385,7 @@
         "name": "Dain",
         "text": "Every time someone at school said 'You're so full of energy!' — right here. ...I felt like dying."
     },
-    "wall_dain_20_ins": {
+    "wall_dain_20_b": {
         "name": "Dain",
         "text": "...I felt like dying."
     },
@@ -397,7 +397,7 @@
         "name": "Dain",
         "text": "— But if I show you I'm hurting too, then I have nothing left."
     },
-    "wall_dain_22_ins": {
+    "wall_dain_22_b": {
         "name": "{name}",
         "text": "*I sat down next to Dain. The court floor is cold. I said nothing.*"
     },
@@ -414,7 +414,7 @@
         "name": "{name}",
         "text": "*I sat down next to Dain. The court floor is cold. I didn't say anything.*"
     },
-    "wall_dain_newdream_2_ins": {
+    "wall_dain_newdream_2_b": {
         "name": "{name}",
         "text": "*Dain speaks first.*"
     },
@@ -478,11 +478,11 @@
         "name": "{name}",
         "text": "*She grabbed her knee on landing — but she's smiling.*"
     },
-    "wall_dain_lastspike_3_ins": {
+    "wall_dain_lastspike_3_b": {
         "name": "Dain",
         "text": "*Smiling weakly* ...That hurts."
     },
-    "wall_dain_lastspike_3_ins2": {
+    "wall_dain_lastspike_3_c": {
         "name": "Dain",
         "text": "But it feels strangely refreshing."
     },
@@ -490,7 +490,7 @@
         "name": "Dain",
         "text": "...Heh. It hurts. But it feels oddly refreshing. — I'm glad my last hit on this court was a set from {name}."
     },
-    "wall_dain_lastspike_4_ins": {
+    "wall_dain_lastspike_4_b": {
         "name": "{name}",
         "text": "*Dain looks around the court. The dark, empty gym.*"
     },
@@ -555,11 +555,11 @@
         "name": "{name}",
         "text": "*I pretended not to see. — But why does my heart feel like this.*"
     },
-    "wall_dain_glimpse_4_ins": {
+    "wall_dain_glimpse_4_b": {
         "name": "{name}",
         "text": "*10 PM. A message from Yuna.*"
     },
-    "wall_dain_glimpse_4_ins2": {
+    "wall_dain_glimpse_4_c": {
         "name": "Yuna",
         "text": "*School back gate. Come now.*"
     },
@@ -611,7 +611,7 @@
         "name": "Yuna",
         "text": "A senior who used to come here with me. — The only person I was ever close to."
     },
-    "wall_yuna_9_ins": {
+    "wall_yuna_9_b": {
         "name": "{name}",
         "text": "*Yuna sets the letter down.*"
     },
@@ -635,31 +635,31 @@
         "name": "Yuna",
         "text": "The person who proved I existed — disappeared. I felt like I'd become invisible again."
     },
-    "wall_yuna_14_ins": {
+    "wall_yuna_14_b": {
         "name": "Yuna",
         "text": "For a year I came here alone. Hoping he'd left something behind."
     },
-    "wall_yuna_14_ins2": {
+    "wall_yuna_14_c": {
         "name": "Yuna",
         "text": "...There was nothing."
     },
-    "wall_yuna_14_ins3": {
+    "wall_yuna_14_d": {
         "name": "{name}",
         "text": "*Yuna looks at me.*"
     },
-    "wall_yuna_14_ins4": {
+    "wall_yuna_14_e": {
         "name": "Yuna",
         "text": "When you first came to the library."
     },
-    "wall_yuna_14_ins5": {
+    "wall_yuna_14_f": {
         "name": "Yuna",
         "text": "You felt too much like him. That's why I was scared."
     },
-    "wall_yuna_14_ins6": {
+    "wall_yuna_14_g": {
         "name": "Yuna",
         "text": "If I got close again, you might disappear too."
     },
-    "wall_yuna_14_ins7": {
+    "wall_yuna_14_h": {
         "name": "{name}",
         "text": "......"
     },
@@ -671,7 +671,7 @@
         "name": "Yuna",
         "text": "But you came every day. Quietly. — Without disappearing."
     },
-    "wall_yuna_16_ins": {
+    "wall_yuna_16_b": {
         "name": "{name}",
         "text": "*Yuna grips her sleeve tightly. Her sentences are getting longer.*"
     },
@@ -704,7 +704,7 @@
         "name": "{name}",
         "text": "*Yuna said four sentences in a row. — That's as good as a confession.*"
     },
-    "wall_yuna_moved_5_ins": {
+    "wall_yuna_moved_5_b": {
         "name": "{name}",
         "text": "*Yuna lets out a slow breath. The fingertips clutching her sleeve tremble a little.*"
     },
@@ -741,7 +741,7 @@
         "name": "Yuna",
         "text": "......You think so?"
     },
-    "wall_yuna_reject_1_ins": {
+    "wall_yuna_reject_1_b": {
         "name": "{name}",
         "text": "*Yuna picks up the letter again.*"
     },
@@ -761,7 +761,7 @@
         "name": "{name}",
         "text": "*Under the streetlight by the school gate. Seoyeon is standing there. — No, she was standing there. Holding her phone, typing something, then deleting it. Typing, then deleting.*"
     },
-    "wall_yuna_glimpse_3_ins": {
+    "wall_yuna_glimpse_3_b": {
         "name": "{name}",
         "text": "*Seoyeon puts her phone in her pocket and turns around. Her back is straight. Perfectly. She's not trembling. Not this time.*"
     },

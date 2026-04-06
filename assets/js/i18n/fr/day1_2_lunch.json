@@ -434,31 +434,31 @@
         "name": "Yuna",
         "text": "...Mais cette bibliothèque, elle est pas mal. C'est calme."
     },
-    "lunch_start_4_ins": {
+    "lunch_start_4_b": {
         "name": "{name}",
         "text": "*À côté de moi, Dain m'attrape le bras.*"
     },
-    "lunch_seo_6_ins": {
+    "lunch_seo_6_b": {
         "name": "Seoyeon",
         "text": "*Sourire* Tu es très méfiant. Je suis juste montée parce que c'était étouffant de rester en classe."
     },
-    "lunch_seo_c1_2_ins": {
+    "lunch_seo_c1_2_b": {
         "name": "{name}",
         "text": "*Seoyeon détourne la tête et tripote sa bouteille d'eau sans raison.*"
     },
-    "lunch_seo_c1_3_ins": {
+    "lunch_seo_c1_3_b": {
         "name": "{name}",
         "text": "*Si je la taquine davantage, elle va tout de suite mettre une limite. Je fais juste semblant de n'avoir rien vu.*"
     },
-    "lunch_dain_12_ins": {
+    "lunch_dain_12_b": {
         "name": "Dain",
         "text": "Ah, d'accord ! Je les achète, je les achète ! Madame, deux pains soboro !"
     },
-    "lunch_yuna_5_ins": {
+    "lunch_yuna_5_b": {
         "name": "{name}",
         "text": "...Je peux m'asseoir ?"
     },
-    "lunch_yuna_10_ins": {
+    "lunch_yuna_10_b": {
         "name": "{name}",
         "text": "*Quelque chose est glissé dans le bureau de Yuna. Un vieux marque-page. Il y a de l'écriture dessus — mais je n'arrive pas à lire. Yuna pose inconsciemment sa main dessus. Quelque chose de précieux, peut-être.*"
     }

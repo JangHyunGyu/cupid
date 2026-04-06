@@ -256,11 +256,11 @@
         "name": "{name}",
         "text": "*Der Unterricht beginnt. Yuna schaut wieder aus dem Fenster. Dain quatscht schon mit der Person neben ihr.*"
     },
-    "hallway_6_ins": {
+    "hallway_6_b": {
         "name": "Seoyeon",
         "text": "*Kurzes Zögern* ...Du bist aufmerksam."
     },
-    "hallway_6_ins2": {
+    "hallway_6_c": {
         "name": "{name}",
         "text": "*Dieses Zögern. Eine halbe Sekunde. Wahrscheinlich nichts, aber irgendwie bleibt es hängen.*"
     },
@@ -268,39 +268,39 @@
         "name": "Seoyeon",
         "text": "Ach, Mittagessen. Du weißt bestimmt nicht, wo die Mensa ist, oder? Komm mit."
     },
-    "hallway_13_ins": {
+    "hallway_13_b": {
         "name": "{name}",
         "text": "*Ihre Haltung ist gerade. Perfekt gerade. — Wie einstudiert. Was hinter dieser Gelassenheit steckt, hat mich ein wenig neugierig gemacht.*"
     },
-    "classroom_2_ins": {
+    "classroom_2_b": {
         "name": "{name}",
         "text": "*Die Klassenlehrerin steht am Pult. Ende zwanzig. Ihre Strickjacke ist von Anfang an offen. Ihr Ausdruck ist gleichgültig, aber — ihre Augen mustern jeden einzelnen Schüler.*"
     },
-    "classroom_3_ins": {
+    "classroom_3_b": {
         "name": "{name}",
         "text": "*Ihre Stimme ist trocken. Nicht gefühllos, nur — genau so viel Emotion wie nötig. Überraschenderweise stört es mich nicht.*"
     },
-    "classroom_5_ins2": {
+    "classroom_5_b": {
         "name": "Klassenlehrerin",
         "text": "...Gut. {name}. Merk ich mir. *Leise, fast wie ein Selbstgespräch* Ich mache es mir zur Regel, Namen beim ersten Mal zu merken."
     },
-    "classroom_5_ins3": {
+    "classroom_5_c": {
         "name": "{name}",
         "text": "*Niemand sonst hat das gehört. Nur ich. — Ist sie aufmerksam, oder ist das einfach Gewohnheit?*"
     },
-    "classroom_dain_5_ins": {
+    "classroom_dain_5_b": {
         "name": "{name}",
         "text": "*Die Lehrerin seufzt leise. Nicht genervt — eher das Seufzen von jemandem, der daran gewöhnt ist.*"
     },
-    "classroom_dain_5_ins2": {
+    "classroom_dain_5_c": {
         "name": "Klassenlehrerin",
         "text": "...Spar dir etwas Energie. Die erste Stunde hat noch nicht mal angefangen."
     },
-    "classroom_dain_5_ins3": {
+    "classroom_dain_5_d": {
         "name": "{name}",
         "text": "*Sie sagt es trocken, aber ihr Mundwinkel ist minimal angehoben. Ihr Standardausdruck ist ausdruckslos, aber ab und zu gibt es einen Fehler im System.*"
     },
-    "classroom_minsu_2_ins": {
+    "classroom_minsu_2_b": {
         "name": "Minsu",
         "text": "*Nickt in Dains Richtung* Deine Ausdauer."
     }

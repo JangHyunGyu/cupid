@@ -301,39 +301,39 @@
         "name": "{name}",
         "text": "*Volví al salón de clases.*"
     },
-    "lunch3_start_2_ins": {
+    "lunch3_start_2_b": {
         "name": "Dain",
         "text": "*Le da un gran mordisco al rollito de huevo sin dudar.*"
     },
-    "lunch3_meal_7_ins": {
+    "lunch3_meal_7_b": {
         "name": "Yuna",
         "text": "*Ya masticando* ...Está bueno."
     },
-    "lunch3_meal_10_ins2": {
+    "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*Nadie se mueve de su sitio. Hay sonrisas, pero ninguno de los tres puede levantar los palillos fácilmente. El último acompañamiento llama la atención sin motivo.*"
     },
-    "lunch3_meal_10_ins3": {
+    "lunch3_meal_10_c": {
         "name": "{name}",
         "text": "*Los palillos de Seoyeon se detienen. Recompone su expresión. Vuelve la cara de presidenta del consejo. — Sé que no le da igual. Me siento mal.*"
     },
-    "lunch3_meal_10_ins4": {
+    "lunch3_meal_10_d": {
         "name": "{name}",
         "text": "*¿¡Todos juntos?! ¡¡Genial!! Los signos de exclamación siguen vivos. — Pero su voz es medio tono más baja. Normalmente habría arrastrado sillas, pero hoy no se mueve de su sitio.*"
     },
-    "lunch3_meal_10_ins5": {
+    "lunch3_meal_10_e": {
         "name": "{name}",
         "text": "*Yuna solo asiente. Escribe en un papel, lo dobla y se lo guarda en el bolsillo. No lo entrega. — No sé qué decía.*"
     },
-    "lunch3_expose_7_ins": {
+    "lunch3_expose_7_b": {
         "name": "{name}",
         "text": "*La última baja lo suyo en silencio.*"
     },
-    "lunch3_expose_honest_4_ins": {
+    "lunch3_expose_honest_4_b": {
         "name": "{name}",
         "text": "*La expresión de Seoyeon cambia. — Sigue tranquila, pero ahora hay algo afilado en ella.*"
     },
-    "lunch3_expose_excuse_2_ins": {
+    "lunch3_expose_excuse_2_b": {
         "name": "{name}",
         "text": "*Dain se levanta.*"
     }

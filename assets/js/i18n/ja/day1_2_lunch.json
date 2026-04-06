@@ -434,31 +434,31 @@
         "name": "ユナ",
         "text": "……でもこの図書館、悪くない。静かだから。"
     },
-    "lunch_start_4_ins": {
+    "lunch_start_4_b": {
         "name": "{name}",
         "text": "*隣でダインが僕の腕をつかむ。*"
     },
-    "lunch_seo_6_ins": {
+    "lunch_seo_6_b": {
         "name": "ソヨン",
         "text": "*微笑んで* 疑り深いね。ただ、教室にいるのが息苦しくて上がってきただけだよ。"
     },
-    "lunch_seo_c1_2_ins": {
+    "lunch_seo_c1_2_b": {
         "name": "{name}",
         "text": "*ソヨンが顔をそらし、手持ち無沙汰に水筒をいじっている。*"
     },
-    "lunch_seo_c1_3_ins": {
+    "lunch_seo_c1_3_b": {
         "name": "{name}",
         "text": "*ここでこれ以上からかったら、すぐに線を引かれるだろう。見て見ぬふりをする。*"
     },
-    "lunch_dain_12_ins": {
+    "lunch_dain_12_b": {
         "name": "ダイン",
         "text": "あ、分かった！ 私が買う、買う！ おばさん、ソボロパン二つください！"
     },
-    "lunch_yuna_5_ins": {
+    "lunch_yuna_5_b": {
         "name": "{name}",
         "text": "…座ってもいい？"
     },
-    "lunch_yuna_10_ins": {
+    "lunch_yuna_10_b": {
         "name": "{name}",
         "text": "*ユナの机に何か挟まっている。古いしおり。何か書いてあるけど——よく見えない。ユナが無意識にそのしおりの上に手を置く。大切なものなのかもしれない。*"
     }

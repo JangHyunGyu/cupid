@@ -319,7 +319,7 @@
     "name": "Seoyeon",
     "text": "It's not about how many people you made plans with. It's about what that promise meant to me."
   },
-  "after3_confront_lie_ins": {
+  "after3_confront_lie_b": {
     "name": "{name}",
     "text": "*Seoyeon pauses. Her eyes waver.*"
   },
@@ -465,119 +465,119 @@
     "context": "Day 3 afterschool, just talked with Dain. She's hurt but pretending to be cheerful. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
     "personality": "Dain is an energetic athlete. Being cheerful is her only defense. Fewer exclamation marks mean she's being real."
   },
-  "after3_seo_5_ins": {
+  "after3_seo_5_b": {
     "name": "Seoyeon",
     "text": "*Hurriedly fixing her hair* ...Did you see?"
   },
-  "after3_yuna_5_ins": {
+  "after3_yuna_5_b": {
     "name": "{name}",
     "text": "*...Isn't this about me?*"
   },
-  "after3_seo_7_ins": {
+  "after3_seo_7_b": {
     "name": "Seoyeon",
     "text": "*Looks down* ...I really didn't want you to see this."
   },
-  "after3_dain_5_ins": {
+  "after3_dain_5_b": {
     "name": "Dain",
     "text": "I told you I'm fine!! It's nothing!!"
   },
-  "after3_confront_5_ins": {
+  "after3_confront_5_b": {
     "name": "Dain",
     "text": "*With her head lowered.* ...I didn't like it either."
   },
-  "after3_confront_5_ins2": {
+  "after3_confront_5_c": {
     "name": "{name}",
     "text": "*She accepted it. — This is the first time Dain hasn't refused someone's help. A smile without exclamation marks feels strangely heavy.*"
   },
-  "haeun_warn_5c_ins": {
+  "haeun_warn_5c_b": {
     "name": "Seoyeon",
     "text": "When you smiled the same way at other people, I kind of hated it."
   },
-  "after3_confront_admit_ins": {
+  "after3_confront_admit_b": {
     "name": "{name}",
     "text": "*Seoyeon lowers her head.*"
   },
-  "after3_confront_admit_4_ins": {
+  "after3_confront_admit_4_b": {
     "name": "{name}",
     "text": "*Seoyeon turns away. — Then stops.*"
   },
-  "after3_confront_excuse_ins": {
+  "after3_confront_excuse_b": {
     "name": "{name}",
     "text": "*Seoyeon's eyes are cold. A temperature I've never seen before.*"
   },
-  "after3_confront_excuse_2_ins": {
+  "after3_confront_excuse_2_b": {
     "name": "{name}",
     "text": "*Seoyeon pauses. Her eyes waver.*"
   },
-  "after3_confront_lie_2_ins2": {
+  "after3_confront_lie_2_b": {
     "name": "{name}",
     "text": "*Her back is straight. Perfectly. — But her fists are clenched. Her knuckles are white.*"
   },
-  "haeun_warn_1_ins": {
+  "haeun_warn_1_b": {
     "name": "{name}",
     "text": "*Haeun is leaning against the wall. She's fiddling with her student council bracelet.*"
   },
-  "haeun_warn_2_ins": {
+  "haeun_warn_2_b": {
     "name": "{name}",
     "text": "Haeun? What are you doing here?"
   },
-  "haeun_warn_3_ins": {
+  "haeun_warn_3_b": {
     "name": "Haeun",
     "text": "...She cried."
   },
-  "haeun_warn_3_ins2": {
+  "haeun_warn_3_c": {
     "name": "{name}",
     "text": "*— What?*"
   },
-  "haeun_warn_6_ins": {
+  "haeun_warn_6_b": {
     "name": "{name}",
     "text": "*Haeun lowers her head.*"
   },
-  "haeun_warn_7_ins": {
+  "haeun_warn_7_b": {
     "name": "{name}",
     "text": "*Haeun stops herself. Her face says she knows she shouldn't cross the line.*"
   },
-  "haeun_warn_7_ins2": {
+  "haeun_warn_7_c": {
     "name": "Haeun",
     "text": "...Anyway. Please be good to her. I'm asking you."
   },
-  "haeun_warn_7_ins3": {
+  "haeun_warn_7_d": {
     "name": "{name}",
     "text": "*Haeun turns and walks away.*"
   },
-  "minsu_d3_8_ins": {
+  "minsu_d3_8_b": {
     "name": "{name}",
     "text": "...What?"
   },
-  "minsu_d3_3_ins": {
+  "minsu_d3_3_b": {
     "name": "{name}",
     "text": "*I have nothing to say.*"
   },
-  "minsu_d3_4_ins": {
+  "minsu_d3_4_b": {
     "name": "{name}",
     "text": "......"
   },
-  "minsu_d3_4_ins2": {
+  "minsu_d3_4_c": {
     "name": "Minsu",
     "text": "Trying to be 'the good guy' by accepting everyone — that's not kindness, it's cowardice."
   },
-  "minsu_d3_5_ins": {
+  "minsu_d3_5_b": {
     "name": "{name}",
     "text": "...Yeah."
   },
-  "minsu_d3_6b_ins": {
+  "minsu_d3_6b_b": {
     "name": "{name}",
     "text": "*Minsu grabs my shoulder.*"
   },
-  "minsu_d3_7_ins": {
+  "minsu_d3_7_b": {
     "name": "{name}",
     "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to say 'no.' Because I couldn't say anything. She got a boyfriend without knowing how I felt, and I transferred with 38 unsent confessions saved in my phone's notes.*"
   },
-  "minsu_d3_7_ins2": {
+  "minsu_d3_7_c": {
     "name": "{name}",
     "text": "*If Sojeong had been able to reject me back then — maybe it wouldn't still haunt me.*"
   },
-  "minsu_d3_10_ins": {
+  "minsu_d3_10_b": {
     "name": "{name}",
     "text": "*Minsu walks ahead.*"
   },

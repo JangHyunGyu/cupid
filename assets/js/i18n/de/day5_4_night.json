@@ -31,7 +31,7 @@
         "name": "{name}",
         "text": "*Zum ersten Mal sehe ich Seoyeon so völlig aufgelöst. - Sie weint.*"
     },
-    "perfect_seo_1_ins": {
+    "perfect_seo_1_b": {
         "name": "{name}",
         "text": "*Zum ersten Mal nimmt sie die Brille ab — und weint.*"
     },
@@ -51,7 +51,7 @@
         "name": "{name}",
         "text": "*Seoyeon streckt die Hand aus. Nicht den kleinen Finger. Die ganze Hand.*"
     },
-    "perfect_seo_5_ins": {
+    "perfect_seo_5_b": {
         "name": "{name}",
         "text": "*Der Wind auf dem Dach weht.*"
     },
@@ -83,7 +83,7 @@
         "name": "Seoyeon",
         "text": "...Ich dachte, es würde klappen. Wir waren wohl beide einen Schritt zu kurz."
     },
-    "bitter_seo_2_ins": {
+    "bitter_seo_2_b": {
         "name": "{name}",
         "text": "*Seoyeon im Café. Ihr Blick hinter der Brille ist nüchtern. Keine Gelassenheit, kein Zittern. Nur — die Augen von jemandem, der zum Abschließen gekommen ist.*"
     },
@@ -123,7 +123,7 @@
         "name": "Seoyeon",
         "text": "...Bleib bei mir."
     },
-    "true_seo_7_ins": {
+    "true_seo_7_b": {
         "name": "{name}",
         "text": "*Wir hakten die kleinen Finger ein. Die Gewohnheit von Tag 1, das Versprechen von Tag 4, und jetzt. — Derselbe Finger, dritte Bedeutung.*"
     },
@@ -207,15 +207,15 @@
         "name": "Yuna",
         "text": "Nur ich wusste von diesem Ort."
     },
-    "true_yuna_2_ins": {
+    "true_yuna_2_b": {
         "name": "{name}",
         "text": "*Yuna klettert die kleine Dachbodenleiter hoch. Es gibt eine Luke nach oben. — Als sie sich öffnet, weht eine Brise herein.*"
     },
-    "true_yuna_2_ins2": {
+    "true_yuna_2_c": {
         "name": "{name}",
         "text": "*Über dem Dachboden war ein Dach. Das Dach des Bibliotheksanbaus. — Ein geheimer Durchgang, den niemand kennt.*"
     },
-    "true_yuna_2_ins3": {
+    "true_yuna_2_d": {
         "name": "{name}",
         "text": "*Yuna lehnt sich ans Geländer. Sterne sind zu sehen.*"
     },
@@ -231,7 +231,7 @@
         "name": "{name}",
         "text": "Der dritte Stern?"
     },
-    "true_yuna_5_ins": {
+    "true_yuna_5_b": {
         "name": "{name}",
         "text": "*Yuna hält inne. — Lächelt. Ein lautloses Lächeln, das ich noch nie gesehen habe.*"
     },
@@ -319,7 +319,7 @@
         "name": "{name}",
         "text": "*Ich verließ die Turnhalle. Es regnet. — Die Ausrufezeichen waren zurück, aber der letzte Satz hatte keines. Wenn Dain mit einem Punkt endet, bedeutet das, dass keine Energie mehr übrig ist, um sie zu teilen.*"
     },
-    "bitter_dain_3_ins": {
+    "bitter_dain_3_b": {
         "name": "{name}",
         "text": "*Ich ging durchs Schultor hinaus. Es regnet. — Kein Regenschirm. Kirschblütenblätter kleben am nassen Boden unter meinen Füßen.*"
     },
@@ -420,7 +420,7 @@
         "name": "{name}",
         "text": "*An der alten Schule bereute ich, nicht gesprochen zu haben. An dieser Schule — bereue ich, niemanden zum Reden gefunden zu haben? Nein. Gefunden, aber nicht wählen können. Nein, nicht den Mut gehabt zu wählen.*"
     },
-    "alone_2_ins": {
+    "alone_2_b": {
         "name": "{name}",
         "text": "*Kirschblüten fallen vor dem Fenster. Dieselben, die vor fünf Tagen meine Nasenspitze streiften, werden jetzt vom Wind davongetragen.*"
     },
@@ -468,15 +468,15 @@
         "name": "Seoyeon",
         "text": "Dass du woanders hingeschaut hast, wirst du mir ein Leben lang zurückzahlen. — Mit Zinsen."
     },
-    "good_1_seo_ins": {
+    "good_1_seo_b": {
         "name": "{name}",
         "text": "*Ein Kirschblütenblatt landet auf Seoyeons Haar. Ich überlege, ob ich es wegstreichen soll — als Seoyeon zuerst den Kopf neigt.*"
     },
-    "good_1_seo_ins2": {
+    "good_1_seo_c": {
         "name": "{name}",
         "text": "*Sie tut so, als wäre sie perfekt, aber ich war auch nicht perfekt.*"
     },
-    "good_1_seo_ins3": {
+    "good_1_seo_d": {
         "name": "{name}",
         "text": "*Die Kirschblüten werden nächstes Jahr wieder blühen. Wir gingen nebeneinander.*"
     },
@@ -520,7 +520,7 @@
         "name": "{name}",
         "text": "*Yuna reicht mir einen Zettel. „Verirr dich nächstes Mal nicht.“ — Kurz. Und warm.*"
     },
-    "good_1_yuna_b_ins": {
+    "good_1_yuna_b_b": {
         "name": "{name}",
         "text": "*Sie jagte dem Schatten einer verschwundenen Person nach.*"
     },
@@ -728,7 +728,7 @@
         "name": "{name}",
         "text": "*Seoyeon lächelte zuerst. ...Gut. Wenigstens bist du ehrlich. Es war keine Einbildung, dass ich Zähneknirschen hinter diesem Lächeln hörte.*"
     },
-    "harem_1_ins": {
+    "harem_1_b": {
         "name": "{name}",
         "text": "*Yuna senkte den Kopf. Als sie lange danach wieder aufblickte, lächelte sie mit einem Gesicht, das nicht einmal weinen konnte. Sie biss sich auf die Lippe.*"
     },
@@ -861,7 +861,7 @@
         "name": "{name}",
         "text": "*Ein leerer Klassenraum. Derselbe Raum, in dem sie am Manuskript schrieb. - Meine Klassenlehrerin wartet.*"
     },
-    "hidden_true_homeroom_2_ins": {
+    "hidden_true_homeroom_2_b": {
         "name": "{name}",
         "text": "*Sie lehnt am Fenster hinten im Klassenraum. Ein Gesicht, auf dem weder Unterricht noch Arbeit mehr liegen.*"
     },
@@ -869,11 +869,11 @@
         "name": "Klassenlehrerin",
         "text": "Glückwunsch zum Abschluss."
     },
-    "hidden_true_homeroom_3_ins": {
+    "hidden_true_homeroom_3_b": {
         "name": "{name}",
         "text": "Danke."
     },
-    "hidden_true_homeroom_3_ins2": {
+    "hidden_true_homeroom_3_c": {
         "name": "Klassenlehrerin",
         "text": "...Das."
     },
@@ -881,31 +881,31 @@
         "name": "Klassenlehrerin",
         "text": "...Das. Du hast nicht 'Frau Lehrerin' gesagt. Zum ersten Mal."
     },
-    "hidden_true_homeroom_4_ins": {
+    "hidden_true_homeroom_4_b": {
         "name": "{name}",
         "text": "*Es war unbewusst. — In dem Moment, als ich den Abschluss hatte, fiel der Titel ab.*"
     },
-    "hidden_true_homeroom_4_ins2": {
+    "hidden_true_homeroom_4_c": {
         "name": "{name}",
         "text": "*Sie zieht einen Umschlag hervor. Diesmal nicht braun — weiß.*"
     },
-    "hidden_true_homeroom_4_ins3": {
+    "hidden_true_homeroom_4_d": {
         "name": "Klassenlehrerin",
         "text": "Ich habe das Manuskript fertiggestellt. Nachdem du es zuerst gelesen hattest, konnte ich immer weitermachen."
     },
-    "hidden_true_homeroom_4_ins4": {
+    "hidden_true_homeroom_4_e": {
         "name": "{name}",
         "text": "Hat meine Rezension geholfen?"
     },
-    "hidden_true_homeroom_4_ins5": {
+    "hidden_true_homeroom_4_f": {
         "name": "Klassenlehrerin",
         "text": "Ich sagte, 'eine Zeile genügt', aber du hast drei Seiten geschrieben. Als ich das sah, hatte ich keine Ausreden mehr, es aufzuschieben."
     },
-    "hidden_true_homeroom_4_ins6": {
+    "hidden_true_homeroom_4_g": {
         "name": "{name}",
         "text": "*Sie blickt aus dem Fenster. Kirschblüten fallen.*"
     },
-    "hidden_true_homeroom_4_ins7": {
+    "hidden_true_homeroom_4_h": {
         "name": "Klassenlehrerin",
         "text": "*Dreht sich vom Fenster weg* ...Nur eines."
     },
@@ -913,11 +913,11 @@
         "name": "Klassenlehrerin",
         "text": "*Aus dem Fenster blickend* Ich habe das Manuskript fertiggestellt. Nachdem du es zuerst gelesen hattest, konnte ich immer weitermachen. Ich sagte, 'eine Zeile genügt', aber du hast drei Seiten geschrieben. Als ich das sah, hatte ich keine Ausreden mehr, es aufzuschieben."
     },
-    "hidden_true_homeroom_5_ins": {
+    "hidden_true_homeroom_5_b": {
         "name": "{name}",
         "text": "*Tag der Abschlussfeier. — Die Zeit ist vergangen.*"
     },
-    "hidden_true_homeroom_5_ins2": {
+    "hidden_true_homeroom_5_c": {
         "name": "{name}",
         "text": "*Die Uniform ist nicht mehr steif. Nein — heute ist der Tag, an dem ich sie ablege.*"
     },
@@ -925,7 +925,7 @@
         "name": "Klassenlehrerin",
         "text": "...Nur eins. ...Lass uns Kaffee trinken gehen. Diesmal echten, keinen Saft."
     },
-    "hidden_true_homeroom_6_ins": {
+    "hidden_true_homeroom_6_b": {
         "name": "{name}",
         "text": "*Von Saft zu Kaffee. — Von Schüler zu Erwachsenem. Die Grenze wurde nicht überschritten — sie ist verschwunden.*"
     },
@@ -933,15 +933,15 @@
         "name": "{name}",
         "text": "Gerne."
     },
-    "hidden_true_homeroom_7_ins": {
+    "hidden_true_homeroom_7_b": {
         "name": "{name}",
         "text": "*Sie lächelt. Kein trockenes Lächeln — das Lächeln von jemandem, der ein sieben Jahre altes Manuskript vollendet hat.*"
     },
-    "hidden_true_homeroom_7_ins2": {
+    "hidden_true_homeroom_7_c": {
         "name": "Klassenlehrerin",
         "text": "...Eigentlich sollte ich das nicht tun. *— Ihre Stimme verklingt. Dann lächelt sie.*"
     },
-    "hidden_true_homeroom_7_ins3": {
+    "hidden_true_homeroom_7_d": {
         "name": "{name}",
         "text": "*Ein letztes Mal. Dann bricht die Gewohnheit. — Sieben Jahre 'Lehrerin' sind vorbei, und der Tag, sie beim Namen zu nennen, ist gekommen.*"
     },
@@ -1034,15 +1034,15 @@
         "name": "{name}",
         "text": "*'Glückwunsch zum Abschluss. Ich warte im Café auf dich.' - Als ich das Pflaster ablöse, finde ich innen eine kleine Wegskizze. Die Schulkrankenschwester sitzt im Café. Sie wirkt viel entspannter als im Krankenzimmer. Einfach - wie jemand, der auf mich gewartet hat.*"
     },
-    "hidden_true_nurse_2_ins": {
+    "hidden_true_nurse_2_b": {
         "name": "{name}",
         "text": "*Heute wirkt sie mehr wie ein Mensch als eine Lehrerin.*"
     },
-    "hidden_true_nurse_2_ins2": {
+    "hidden_true_nurse_2_c": {
         "name": "Schulkrankenschwester",
         "text": "Herzlichen Glückwunsch zum Abschluss."
     },
-    "hidden_true_nurse_2_ins3": {
+    "hidden_true_nurse_2_d": {
         "name": "{name}",
         "text": "Danke."
     },
@@ -1050,7 +1050,7 @@
         "name": "Schulkrankenschwester",
         "text": "Glückwunsch zum Abschluss. ...Ab heute kannst du mich duzen."
     },
-    "hidden_true_nurse_3_ins": {
+    "hidden_true_nurse_3_b": {
         "name": "{name}",
         "text": "Warum?"
     },
@@ -1062,23 +1062,23 @@
         "name": "Schulkrankenschwester",
         "text": "...Aber jetzt habe ich nicht vor, es so abzutun."
     },
-    "hidden_true_nurse_5_ins": {
+    "hidden_true_nurse_5_b": {
         "name": "{name}",
         "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit vollständig verschwunden. — Das ist ihre Aufrichtigkeit.*"
     },
-    "hidden_true_nurse_5_ins2": {
+    "hidden_true_nurse_5_c": {
         "name": "Schulkrankenschwester",
         "text": "Du wusstest, dass es nicht geht, oder? Deshalb habe ich es immer wieder als Witz abgetan."
     },
-    "hidden_true_nurse_5_ins3": {
+    "hidden_true_nurse_5_d": {
         "name": "Schulkrankenschwester",
         "text": "Aber du hast erkannt, wenn ich etwas abgetan habe."
     },
-    "hidden_true_nurse_5_ins4": {
+    "hidden_true_nurse_5_e": {
         "name": "{name}",
         "text": "Drei Minuten für ein Pflaster — das ist nicht nur Sorgfalt."
     },
-    "hidden_true_nurse_5_ins5": {
+    "hidden_true_nurse_5_f": {
         "name": "{name}",
         "text": "*Die Schulkrankenschwester hält inne. — Dann lächelt sie. Kein verspieltes Lächeln.*"
     },
@@ -1090,15 +1090,15 @@
         "name": "{name}",
         "text": "*Auch nachdem wir das Café verlassen hatten, löste sich ihre Hand nicht so leicht von meiner. Als ich wieder zu mir kam, standen wir nicht vor dem Krankenzimmer, sondern vor ihrem Haus.*"
     },
-    "hidden_true_nurse_7_ins": {
+    "hidden_true_nurse_7_b": {
         "name": "Schulkrankenschwester",
         "text": "...Du bist der Erste, der mich so durchschaut hat."
     },
-    "hidden_true_nurse_7_ins2": {
+    "hidden_true_nurse_7_c": {
         "name": "{name}",
         "text": "*Die Schulkrankenschwester streckt die Hand aus und berührt das Pflaster auf meinem Handrücken. Das Pflaster, das sie mir heute Morgen aufgeklebt hat.*"
     },
-    "hidden_true_nurse_7_ins3": {
+    "hidden_true_nurse_7_d": {
         "name": "{name}",
         "text": "*Die Person, die Ausreden brauchte. — Der Titel 'Lehrerin' war ihre Ausrede und ihre Mauer zugleich. Diese Mauer ist heute verschwunden.*"
     },
@@ -1110,31 +1110,31 @@
         "name": "",
         "text": "─── Schulkrankenschwester TRUE LOVE END ───"
     },
-    "hidden_true_nurse_8_ins": {
+    "hidden_true_nurse_8_b": {
         "name": "Schulkrankenschwester",
         "text": "*Dreht die Kaffeetasse* Das Zeugnis wirkt schneller als gedacht."
     },
-    "hidden_true_nurse_8_ins2": {
+    "hidden_true_nurse_8_c": {
         "name": "{name}",
         "text": "*Der Abschluss löscht die Grenze. — Im Café statt im Krankenzimmer, mit einer Person statt einer Lehrerin.*"
     },
-    "hidden_true_nurse_8_ins3": {
+    "hidden_true_nurse_8_d": {
         "name": "{name}",
         "text": "*Die Schulkrankenschwester sieht mich an. Ohne Schalk.*"
     },
-    "hidden_true_nurse_8_ins4": {
+    "hidden_true_nurse_8_e": {
         "name": "Schulkrankenschwester",
         "text": "Weißt du, an Tag 1, als du ins Krankenzimmer kamst."
     },
-    "hidden_true_nurse_8_ins5": {
+    "hidden_true_nurse_8_f": {
         "name": "{name}",
         "text": "Weil mir schwindelig war."
     },
-    "hidden_true_nurse_8_ins6": {
+    "hidden_true_nurse_8_g": {
         "name": "Schulkrankenschwester",
         "text": "Ich habe deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen.' *Leise lächelnd* Das war ein Witz."
     },
-    "hidden_true_nurse_8_ins7": {
+    "hidden_true_nurse_8_h": {
         "name": "{name}",
         "text": "Ich weiß."
     },
@@ -1146,15 +1146,15 @@
         "name": "Schulkrankenschwester",
         "text": "Vitamine. — Pass an der Uni auf dich auf. ...Medizinisches Interesse. Diesmal wirklich."
     },
-    "hidden_good_nurse_2_ins": {
+    "hidden_good_nurse_2_b": {
         "name": "{name}",
         "text": "Medizinisches Interesse?"
     },
-    "hidden_good_nurse_2_ins2": {
+    "hidden_good_nurse_2_c": {
         "name": "Schulkrankenschwester",
         "text": "*Kurz innehaltend* ...Ja. Medizinisches Interesse. *Leise* Diesmal wirklich."
     },
-    "hidden_good_nurse_2_ins3": {
+    "hidden_good_nurse_2_d": {
         "name": "{name}",
         "text": "*'Diesmal wirklich.' — Was bedeutet, dass es die anderen Male nicht war.*"
     },
@@ -1162,7 +1162,7 @@
         "name": "{name}",
         "text": "*Das Krankenzimmer verlassend. Im Deckel, winzige Schrift. 'Ruf an, wenn du krank bist. Ruf auch an, wenn nicht. — ♥'*"
     },
-    "hidden_good_nurse_3_ins": {
+    "hidden_good_nurse_3_b": {
         "name": "{name}",
         "text": "*Selbst nachdem ich den Deckel schlie?e, wollen sich meine Mundwinkel nicht senken.*"
     },

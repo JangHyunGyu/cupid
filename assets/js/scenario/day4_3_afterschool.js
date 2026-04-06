@@ -41,9 +41,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_seo_4": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_4_ins"
+        "next": "confess_seo_4_b"
     },
-    "confess_seo_4_ins": {
+    "confess_seo_4_b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "confess_seo_5"
@@ -114,9 +114,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_seo_yes_11": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "next": "confess_seo_yes_11_ins"
+        "next": "confess_seo_yes_11_b"
     },
-    "confess_seo_yes_11_ins": {
+    "confess_seo_yes_11_b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_shy2.png",
         "next": "confess_seo_yes_12"
@@ -146,9 +146,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "setFlags": ["day4_waited"],
-        "next": "confess_seo_no_4_ins"
+        "next": "confess_seo_no_4_b"
     },
-    "confess_seo_no_4_ins": {
+    "confess_seo_no_4_b": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "day4_night_start"
@@ -208,9 +208,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_yuna_yes_3": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "confess_yuna_yes_3_ins"
+        "next": "confess_yuna_yes_3_b"
     },
-    "confess_yuna_yes_3_ins": {
+    "confess_yuna_yes_3_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "confess_yuna_yes_4"
@@ -228,9 +228,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_yuna_yes_6": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "confess_yuna_yes_6_ins"
+        "next": "confess_yuna_yes_6_b"
     },
-    "confess_yuna_yes_6_ins": {
+    "confess_yuna_yes_6_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "confess_yuna_yes_7"
@@ -243,14 +243,14 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_yuna_yes_8": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "confess_yuna_yes_8_ins"
+        "next": "confess_yuna_yes_8_b"
     },
-    "confess_yuna_yes_8_ins": {
+    "confess_yuna_yes_8_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "confess_yuna_yes_8_ins2"
+        "next": "confess_yuna_yes_8_c"
     },
-    "confess_yuna_yes_8_ins2": {
+    "confess_yuna_yes_8_c": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "confess_yuna_yes_9"
@@ -259,9 +259,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "setFlags": ["day4_confession_accepted","isDating_Yuna"],
-        "next": "confess_yuna_yes_9_ins"
+        "next": "confess_yuna_yes_9_b"
     },
-    "confess_yuna_yes_9_ins": {
+    "confess_yuna_yes_9_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_shy.png",
         "next": "day4_night_start"
@@ -285,9 +285,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_sad.png",
         "setFlags": ["day4_waited"],
-        "next": "confess_yuna_no_4_ins"
+        "next": "confess_yuna_no_4_b"
     },
-    "confess_yuna_no_4_ins": {
+    "confess_yuna_no_4_b": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "day4_night_start"
@@ -347,9 +347,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_dain_yes_3": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "confess_dain_yes_3_ins"
+        "next": "confess_dain_yes_3_b"
     },
-    "confess_dain_yes_3_ins": {
+    "confess_dain_yes_3_b": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "confess_dain_yes_4"
@@ -377,9 +377,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_dain_yes_8": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "confess_dain_yes_8_ins"
+        "next": "confess_dain_yes_8_b"
     },
-    "confess_dain_yes_8_ins": {
+    "confess_dain_yes_8_b": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "next": "confess_dain_yes_9"
@@ -387,9 +387,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_dain_yes_9": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "confess_dain_yes_9_ins"
+        "next": "confess_dain_yes_9_b"
     },
-    "confess_dain_yes_9_ins": {
+    "confess_dain_yes_9_b": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "next": "confess_dain_yes_10"
@@ -398,9 +398,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_shy.png",
         "setFlags": ["day4_confession_accepted","isDating_Dain"],
-        "next": "confess_dain_yes_10_ins"
+        "next": "confess_dain_yes_10_b"
     },
-    "confess_dain_yes_10_ins": {
+    "confess_dain_yes_10_b": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
         "next": "day4_night_start"
@@ -424,9 +424,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
         "setFlags": ["day4_waited"],
-        "next": "confess_dain_no_4_ins"
+        "next": "confess_dain_no_4_b"
     },
-    "confess_dain_no_4_ins": {
+    "confess_dain_no_4_b": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "day4_night_start"

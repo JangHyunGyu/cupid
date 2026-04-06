@@ -558,131 +558,131 @@
     "name": "Enfermera",
     "text": "Puedes venir incluso sin motivo. Claro, no en horario de clase. Después de clase. *Salí de la enfermería.*"
   },
-  "after2_dain_9_ins": {
+  "after2_dain_9_b": {
     "name": "Dain",
     "text": "*Con los ojos muy abiertos* ¿Eh? Iba a ir suave, pero mejor no."
   },
-  "after2_dain_9_ins2": {
+  "after2_dain_9_c": {
     "name": "{name}",
     "text": "*Dain baja su postura. Su mirada cambia.*"
   },
-  "after2_dain_9_ins3": {
+  "after2_dain_9_d": {
     "name": "Dain",
     "text": "¡Ahora va en serio!"
   },
-  "after2_dain_9_ins4": {
+  "after2_dain_9_e": {
     "name": "{name}",
     "text": "*El rally va y viene. Los movimientos de Dain son — claramente fuera de lo normal. Rápidos, precisos, su cuerpo recuerda cada movimiento.*"
   },
-  "after2_dain_9_ins6": {
+  "after2_dain_9_f": {
     "name": "{name}",
     "text": "*Resultado final: 3-2. Gané por los pelos.*"
   },
-  "after2_dain_end_ins": {
+  "after2_dain_end_b": {
     "name": "{name}",
     "text": "*El puesto de tteokbokki cerca de la escuela.*"
   },
-  "after2_seo_4_ins": {
+  "after2_seo_4_b": {
     "name": "{name}",
     "text": "*La palabra 'favor' no parece existir en el vocabulario de esta persona.*"
   },
-  "after2_seo_6_ins": {
+  "after2_seo_6_b": {
     "name": "{name}",
     "text": "*La palabra 'favor' no parece existir en el vocabulario de esta persona.*"
   },
-  "after2_seo_8b4_ins": {
+  "after2_seo_8b4_b": {
     "name": "{name}",
     "text": "*Lo dijo directamente: 'cumplido'. — Eso parece raro viniendo de ella.*"
   },
-  "after2_seo_sunset_joke_ins": {
+  "after2_seo_sunset_joke_b": {
     "name": "Seoyeon",
     "text": "*Aunque se cubre la boca con el borde de los papeles, se nota que está sonriendo.*"
   },
-  "after2_seo_sunset_react_ins": {
+  "after2_seo_sunset_react_b": {
     "name": "{name}",
     "text": "*Incluso después de decir eso, la comisura de los labios de Seoyeon no baja por un buen rato.*"
   },
-  "after2_seo_neck_react_ins": {
+  "after2_seo_neck_react_b": {
     "name": "Seoyeon",
     "text": "Tienes el cuello bastante tenso. Quédate quieto un momento."
   },
-  "after2_seo_neck_react_ins2": {
+  "after2_seo_neck_react_c": {
     "name": "{name}",
     "text": "*Seoyeon se levanta y se mueve detrás de mí. Su mano se posa en mi hombro.*"
   },
-  "after2_seo_neck_high_ins": {
+  "after2_seo_neck_high_b": {
     "name": "Seoyeon",
     "text": "*En voz baja* ...No te muevas. Solo un momento."
   },
-  "after2_seo_neck_high_ins2": {
+  "after2_seo_neck_high_c": {
     "name": "{name}",
     "text": "*¿De quién es esa mano? — Es la mano de Seoyeon en mi hombro. Mis pensamientos se revuelven. Así de tenso estoy.*"
   },
-  "after2_seo_neck_low_ins": {
+  "after2_seo_neck_low_b": {
     "name": "{name}",
     "text": "¿Qué fue eso de repente?"
   },
-  "after2_seo_neck_low_ins2": {
+  "after2_seo_neck_low_c": {
     "name": "{name}",
     "text": "*La mano de Seoyeon se detiene un instante en el aire.*"
   },
-  "after2_yuna_1_ins": {
+  "after2_yuna_1_b": {
     "name": "{name}",
     "text": "*El pasillo del anexo. Ni un alma. — La puerta de la sala de lectura secreta está entreabierta.*"
   },
-  "after2_yuna_2_ins": {
+  "after2_yuna_2_b": {
     "name": "{name}",
     "text": "*Yuna levanta la vista. No se sorprende.*"
   },
-  "after2_yuna_choice_pre3_ins": {
+  "after2_yuna_choice_pre3_b": {
     "name": "{name}",
     "text": "*Yuna dijo dos frases seguidas. — Para alguien que normalmente habla en una sola línea, eso es mucho.*"
   },
-  "after2_yuna_everyday_ins": {
+  "after2_yuna_everyday_b": {
     "name": "Yuna",
     "text": "...Ven si quieres. No te voy a detener."
   },
-  "minsu_warn_4_ins": {
+  "minsu_warn_4_b": {
     "name": "{name}",
     "text": "*Los labios de Yuna se curvan hacia arriba casi imperceptiblemente.*"
   },
-  "minsu_warn_1_ins": {
+  "minsu_warn_1_b": {
     "name": "{name}",
     "text": "*Minsu se acerca con paso largo y se coloca a mi lado.*"
   },
-  "minsu_warn_7_ins": {
+  "minsu_warn_7_b": {
     "name": "{name}",
     "text": "*Minsu deja de caminar. Se da la vuelta. Su tono juguetón habitual ha desaparecido.*"
   },
-  "minsu_warn_7_ins2": {
+  "minsu_warn_7_c": {
     "name": "Minsu",
     "text": "Oye, llevo un año en esta clase. Seoyeon nunca habla primero con un chico. Dain nunca le ha comprado pan a otro chico. Yuna — ¿notas? No se las escribe a nadie."
   },
-  "minsu_warn_13_ins": {
+  "minsu_warn_13_b": {
     "name": "{name}",
     "text": "*— Se me corta la respiración.*"
   },
-  "minsu_warn_15_ins": {
+  "minsu_warn_15_b": {
     "name": "Dain",
     "text": "¡¡Apostemos de nuevo mañana!! ¡¡Otro juego!!"
   },
-  "minsu_warn_15_ins2": {
+  "minsu_warn_15_c": {
     "name": "Seoyeon",
     "text": "Mañana a la hora de comer dejaré la azotea abierta. Ven."
   },
-  "minsu_warn_15_ins3": {
+  "minsu_warn_15_d": {
     "name": "{name}",
     "text": "*La antigua escuela. — Esas palabras me golpean fuerte.*"
   },
-  "minsu_warn_15_ins4": {
+  "minsu_warn_15_e": {
     "name": "{name}",
     "text": "*— Me detengo en seco.*"
   },
-  "after2_seo_neck_high_2_ins": {
+  "after2_seo_neck_high_2_b": {
     "name": "{name}",
     "text": "*Las yemas de sus dedos presionan mi nuca y luego se apartan despacio. Por un momento, ninguno de los dos dice nada.*"
   },
-  "after2_yuna_everyday_react_ins": {
+  "after2_yuna_everyday_react_b": {
     "name": "{name}",
     "text": "*No suena exactamente a un permiso, pero por alguna razón se queda conmigo mucho tiempo.*"
   }

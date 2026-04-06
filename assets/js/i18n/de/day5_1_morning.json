@@ -83,15 +83,15 @@
     "name": "Klassenlehrerin",
     "text": "*Schmunzelt* Wenn es eine ganze Seite ist — das ist keine Rezension mehr, das ist eine Kritik."
   },
-  "hidden_homeroom_d5_choice_b_ins": {
+  "hidden_homeroom_d5_choice_b_b": {
     "name": "{name}",
     "text": "Darf ich eine Rezension schreiben?"
   },
-  "hidden_homeroom_d5_choice_b_ins2": {
+  "hidden_homeroom_d5_choice_b_c": {
     "name": "Klassenlehrerin",
     "text": "*Sie lacht kurz, dann wird ihr Ausdruck ernst.* ...Wenn es eine gute Rezension ist. Ich glaube, ich könnte noch eins schreiben."
   },
-  "hidden_homeroom_d5_choice_b_ins3": {
+  "hidden_homeroom_d5_choice_b_d": {
     "name": "{name}",
     "text": "*Noch eins. — Die Person, die nach sieben Jahren fertig wurde, sagt 'noch eins'.*"
   },
@@ -145,7 +145,7 @@
     "name": "Schulkrankenschwester",
     "text": "*Sie klebt das Pflaster langsam auf. Auf dem Pflaster steht etwas in kleiner Schrift.*"
   },
-  "hidden_nurse_d5_choice_a_ins": {
+  "hidden_nurse_d5_choice_a_b": {
     "name": "Schulkrankenschwester",
     "text": "...Du hast 'nur einmal' gesagt. Warum sagst du dann so etwas?"
   },
@@ -165,227 +165,227 @@
     "context": "Tag 5. Letzter Tag. Die Krankenschwester schrieb eine Nachricht auf ein Pflaster. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
     "personality": "Die Krankenschwester ist weniger verspielt. Wartet auf den Tag ohne Ausreden."
   },
-  "morning5_start_ins": {
+  "morning5_start_b": {
     "name": "{name}",
     "text": "*Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen.*"
   },
-  "morning5_start_2_ins": {
+  "morning5_start_2_b": {
     "name": "{name}",
     "text": "*Auf meinem Tisch liegt ein Zettel. Seoyeons Handschrift.*"
   },
-  "morning5_seo_note_1_ins": {
+  "morning5_seo_note_1_b": {
     "name": "{name}",
     "text": "*Im Flur am Literaturclub-Aushang vorbei — eine Kurzgeschichte hängt am schwarzen Brett. Titel:*"
   },
-  "morning5_seo_note_1_ins3": {
+  "morning5_seo_note_1_c": {
     "name": "{name}",
     "text": "*Sie ist von Yuna. — Eine Geschichte, die nur der Protagonist erkennen würde.*"
   },
-  "morning5_dain_1_ins": {
+  "morning5_dain_1_b": {
     "name": "{name}",
     "text": "...Ohne zu fragen?"
   },
-  "hidden_homeroom_d5_1_ins": {
+  "hidden_homeroom_d5_1_b": {
     "name": "Klassenlehrerin",
     "text": "...Oh."
   },
-  "hidden_homeroom_d5_1_ins2": {
+  "hidden_homeroom_d5_1_c": {
     "name": "{name}",
     "text": "Frau Lehrerin."
   },
-  "hidden_homeroom_d5_1_ins3": {
+  "hidden_homeroom_d5_1_d": {
     "name": "Klassenlehrerin",
     "text": "*Hebt den Umschlag leicht hoch* ...Das hier."
   },
-  "hidden_homeroom_d5_1_ins4": {
+  "hidden_homeroom_d5_1_e": {
     "name": "{name}",
     "text": "Was ist das?"
   },
-  "hidden_homeroom_d5_6_ins": {
+  "hidden_homeroom_d5_6_b": {
     "name": "{name}",
     "text": "*Was sie gestern im Café gesagt hat. Die Worte, dass sie es zuerst zeigen wollte. Sie hat es wirklich mitgebracht.*"
   },
-  "hidden_homeroom_d5_6_ins2": {
+  "hidden_homeroom_d5_6_c": {
     "name": "{name}",
     "text": "*Sie reicht den Umschlag herüber. — Ihre Hand zittert leicht.*"
   },
-  "hidden_homeroom_d5_6_ins3": {
+  "hidden_homeroom_d5_6_d": {
     "name": "Klassenlehrerin",
     "text": "...Lies es und sag mir dann ehrlich deine Meinung. — Du musst nicht höflich zu mir sein."
   },
-  "hidden_homeroom_d5_6_ins4": {
+  "hidden_homeroom_d5_6_e": {
     "name": "{name}",
     "text": "Frau Lehrerin."
   },
-  "hidden_homeroom_d5_6_ins5": {
+  "hidden_homeroom_d5_6_f": {
     "name": "{name}",
     "text": "Das müssen Sie nicht mehr sagen."
   },
-  "hidden_homeroom_d5_6_ins6": {
+  "hidden_homeroom_d5_6_g": {
     "name": "{name}",
     "text": "*Sie hält inne. — Dann lächelt sie. Kein trockenes Lächeln. Ein warmes.*"
   },
-  "hidden_homeroom_d5_6_ins7": {
+  "hidden_homeroom_d5_6_h": {
     "name": "Klassenlehrerin",
     "text": "...Dass ich das mal von einem Schüler hören würde."
   },
-  "hidden_homeroom_d5_6_ins8": {
+  "hidden_homeroom_d5_6_i": {
     "name": "{name}",
     "text": "*Sie legt den Umschlag in meine Hände.*"
   },
-  "hidden_homeroom_d5_6_ins9": {
+  "hidden_homeroom_d5_6_j": {
     "name": "Klassenlehrerin",
     "text": "...Wärst du mein erster Leser?"
   },
-  "hidden_homeroom_d5_6_ins10": {
+  "hidden_homeroom_d5_6_k": {
     "name": "{name}",
     "text": "*Dieselben Worte wie gestern. — Aber heute folgten Taten. Sieben Jahre Manuskript liegen in meinen Händen.*"
   },
-  "hidden_homeroom_d5_6_ins11": {
+  "hidden_homeroom_d5_6_l": {
     "name": "{name}",
     "text": "Ich werde es lesen. Versprochen."
   },
-  "hidden_homeroom_d5_6_ins12": {
+  "hidden_homeroom_d5_6_m": {
     "name": "Klassenlehrerin",
     "text": "*Streicht sich die Haare zurück* ...Buchbesprechungen nehme ich nicht an."
   },
-  "hidden_homeroom_d5_6_ins13": {
+  "hidden_homeroom_d5_6_n": {
     "name": "{name}",
     "text": "Das stimmt doch nicht."
   },
-  "hidden_homeroom_d5_6_ins14": {
+  "hidden_homeroom_d5_6_o": {
     "name": "Klassenlehrerin",
     "text": "*Schmunzelt* ...Stimmt. Schreib mir wenigstens eine Zeile."
   },
-  "hidden_homeroom_d5_6_ins15": {
+  "hidden_homeroom_d5_6_p": {
     "name": "{name}",
     "text": "*Eine Zeile. — Jemand, der dreimal beim Literaturdebüt gescheitert ist, wartet auf die einzeilige Rezension eines Schülers. Wenn das kein Geständnis ist, was dann?*"
   },
-  "hidden_homeroom_d5_6_ins17": {
+  "hidden_homeroom_d5_6_q": {
     "name": "Klassenlehrerin",
     "text": "{name}."
   },
-  "hidden_homeroom_d5_6_ins18": {
+  "hidden_homeroom_d5_6_r": {
     "name": "{name}",
     "text": "*Sie bleibt stehen. Umklammert ihr Klemmbrett. — Und dreht langsam den Kopf.*"
   },
-  "hidden_homeroom_d5_6_ins19": {
+  "hidden_homeroom_d5_6_s": {
     "name": "Klassenlehrerin",
     "text": "...Nach dem Abschluss. *Ihre Stimme bricht.* Ja. Nach dem Abschluss."
   },
-  "hidden_homeroom_d5_6_ins20": {
+  "hidden_homeroom_d5_6_t": {
     "name": "{name}",
     "text": "*'Nach dem Abschluss' — zweimal. Einmal als Erlaubnis, einmal als Sehnsucht.*"
   },
-  "hidden_homeroom_d5_7_ins": {
+  "hidden_homeroom_d5_7_b": {
     "name": "{name}",
     "text": "*'Nicht als Lehrerin und Schüler.' — Sie spricht von der Zeit nach dem Abschluss. Nicht jetzt, aber irgendwann.*"
   },
-  "hidden_homeroom_d5_7_ins2": {
+  "hidden_homeroom_d5_7_c": {
     "name": "Klassenlehrerin",
     "text": "...Ich glaube, ich habe die Grenzen des pädagogischen Interesses etwas überschritten. Weil es das letzte Mal ist. Nur dieses eine Mal."
   },
-  "hidden_nurse_d5_2_ins": {
+  "hidden_nurse_d5_2_b": {
     "name": "{name}",
     "text": "*Die Krankenschwester kommt heraus. Sie ist direkt vor meiner Nase.*"
   },
-  "hidden_nurse_d5_2_ins3": {
+  "hidden_nurse_d5_2_c": {
     "name": "Schulkrankenschwester",
     "text": "*Stutzt* ...Du bist wieder da."
   },
-  "hidden_nurse_d5_4_ins": {
+  "hidden_nurse_d5_4_b": {
     "name": "{name}",
     "text": "Frau..."
   },
-  "hidden_nurse_d5_4_ins2": {
+  "hidden_nurse_d5_4_c": {
     "name": "{name}",
     "text": "*Verlegene Stille. — Bis gestern war es selbstverständlich, aber heute fühlt sich etwas anders an.*"
   },
-  "hidden_nurse_d5_4_ins3": {
+  "hidden_nurse_d5_4_d": {
     "name": "Schulkrankenschwester",
     "text": "Letzter Tag, hm."
   },
-  "hidden_nurse_d5_1_ins": {
+  "hidden_nurse_d5_1_b": {
     "name": "{name}",
     "text": "*Sie sagte 'letzter Tag des Events', aber da schwingt noch eine andere Bedeutung mit.*"
   },
-  "hidden_nurse_d5_1_ins2": {
+  "hidden_nurse_d5_1_c": {
     "name": "Schulkrankenschwester",
     "text": "*Mit einem leichten Lächeln* Komm nach dem Abschluss mal vorbei."
   },
-  "hidden_nurse_d5_1_ins3": {
+  "hidden_nurse_d5_1_d": {
     "name": "{name}",
     "text": "Der Abschluss ist noch weit weg."
   },
-  "hidden_nurse_d5_1_ins4": {
+  "hidden_nurse_d5_1_e": {
     "name": "Schulkrankenschwester",
     "text": "...Bis dahin — komm, wenn dir was wehtut."
   },
-  "hidden_nurse_d5_1_ins5": {
+  "hidden_nurse_d5_1_f": {
     "name": "{name}",
     "text": "*Von 'komm nach dem Abschluss' zu 'komm, wenn dir was wehtut' — ein Rückzug. Sie wollte die Grenze überschreiten und ist zurückgewichen.*"
   },
-  "hidden_nurse_d5_3_ins": {
+  "hidden_nurse_d5_3_b": {
     "name": "{name}",
     "text": "*Die Schulkrankenschwester hält inne. Ihre Stimme wird einen Ton tiefer.*"
   },
-  "hidden_nurse_d5_3_ins2": {
+  "hidden_nurse_d5_3_c": {
     "name": "Schulkrankenschwester",
     "text": "...Das."
   },
-  "hidden_nurse_d5_3_ins3": {
+  "hidden_nurse_d5_3_d": {
     "name": "{name}",
     "text": "Frau...?"
   },
-  "hidden_nurse_d5_3_ins4": {
+  "hidden_nurse_d5_3_e": {
     "name": "Schulkrankenschwester",
     "text": "*Lächelt wieder* Frag mich das nach dem Abschluss. — Dann antworte ich."
   },
-  "hidden_nurse_d5_3_ins5": {
+  "hidden_nurse_d5_3_f": {
     "name": "{name}",
     "text": "*'Nach dem Abschluss.' — Dieselben Worte wie bei der Klassenlehrerin. Jetzt nicht, aber irgendwann. Der Tag, an dem der Titel 'Lehrerin' abgelegt wird.*"
   },
-  "hidden_nurse_d5_3_ins6": {
+  "hidden_nurse_d5_3_g": {
     "name": "Schulkrankenschwester",
     "text": "Los, geh. Du kannst bei der Veranstaltung nicht einfach fehlen."
   },
-  "hidden_nurse_d5_3_ins7": {
+  "hidden_nurse_d5_3_h": {
     "name": "{name}",
     "text": "*Die Schulkrankenschwester dreht sich um, um reinzugehen — und bleibt stehen.*"
   },
-  "hidden_nurse_d5_3_ins8": {
+  "hidden_nurse_d5_3_i": {
     "name": "Schulkrankenschwester",
     "text": "...{name}."
   },
-  "hidden_nurse_d5_choice_b_ins2": {
+  "hidden_nurse_d5_choice_b_b": {
     "name": "{name}",
     "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit verschwunden. — So kommt die Aufrichtigkeit dieser Person immer.*"
   },
-  "hidden_nurse_d5_choice_b_ins4": {
+  "hidden_nurse_d5_choice_b_c": {
     "name": "Schulkrankenschwester",
     "text": "...Telefonnummer. Für medizinische Beratung?"
   },
-  "hidden_nurse_d5_choice_b_ins5": {
+  "hidden_nurse_d5_choice_b_d": {
     "name": "Schulkrankenschwester",
     "text": "*Rückt ihre Brille zurecht* ...In Ordnung. Aber benutz sie erst nach dem Abschluss."
   },
-  "hidden_nurse_d5_choice_b_ins6": {
+  "hidden_nurse_d5_choice_b_e": {
     "name": "{name}",
     "text": "*'Nach dem Abschluss.' — Sie überschreitet die Grenze nicht. Aber sie hat ihre Nummer direkt davor abgelegt.*"
   },
-  "hidden_nurse_d5_choice_b_ins7": {
+  "hidden_nurse_d5_choice_b_f": {
     "name": "Schulkrankenschwester",
     "text": "Soll ich dir ein Pflaster aufkleben?"
   },
-  "hidden_nurse_d5_choice_b_ins8": {
+  "hidden_nurse_d5_choice_b_g": {
     "name": "{name}",
     "text": "...Ich bin nicht verletzt."
   },
-  "hidden_nurse_d5_6_ins": {
+  "hidden_nurse_d5_6_b": {
     "name": "{name}",
     "text": "*Ihr Markenspruch von Tag 1. — Damals war es Vorstellung. Jetzt ist es ernst.*"
   },
-  "hidden_nurse_d5_6_ins3": {
+  "hidden_nurse_d5_6_c": {
     "name": "{name}",
     "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡'*"
   },

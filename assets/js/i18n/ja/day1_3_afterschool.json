@@ -352,175 +352,175 @@
         "name": "{name}",
         "text": "*廊下を歩き続ける。*"
     },
-    "after_miss_dain_6_ins": {
+    "after_miss_dain_6_b": {
         "name": "{name}",
         "text": "*手を振って走っていく。——急停止したとき、右脚をわずかに引きずった気がした。違うか？ 速すぎてよく見えなかった。*"
     },
-    "after_miss_yuna_1_ins": {
+    "after_miss_yuna_1_b": {
         "name": "{name}",
         "text": "あの、これ…"
     },
-    "after_miss_yuna_1_ins2": {
+    "after_miss_yuna_1_c": {
         "name": "{name}",
         "text": "*拾って差し出す。ユナが立ち止まり、しおりを受け取る。*"
     },
-    "after_miss_yuna_3_ins": {
+    "after_miss_yuna_3_b": {
         "name": "{name}",
         "text": "*背中を見せるだけ。それだけだ。*"
     },
-    "after_hidden_homeroom_3_ins": {
+    "after_hidden_homeroom_3_b": {
         "name": "{name}",
         "text": "さっき、慣れたかって聞いてくれたじゃないですか。なんとなく……その言葉がずっと残ってて。"
     },
-    "after_hidden_homeroom_3_ins2": {
+    "after_hidden_homeroom_3_c": {
         "name": "担任先生",
         "text": "ああ、それで来たんだ。——よく来たね。少し座って。"
     },
-    "after_homeroom_ok_ins": {
+    "after_homeroom_ok_b": {
         "name": "{name}",
         "text": "*担任が机の書類を脇に寄せて、もう一度こちらを見る。これで終わりではなさそうな空気だ。*"
     },
-    "after_homeroom_honest_3_ins": {
+    "after_homeroom_honest_3_b": {
         "name": "{name}",
         "text": "*似たようなこと？——教師じゃない仕事をしていたってことだろうか。*"
     },
-    "after_homeroom_honest_6_ins": {
+    "after_homeroom_honest_6_b": {
         "name": "{name}",
         "text": "*教育的関心。——自分の関心を肩書きで包む人なんだ。*"
     },
-    "after_homeroom_honest_choice2a_ins": {
+    "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
         "text": "*素直に認めた。——この人の取り繕いが剥がれるの、意外と早い。*"
     },
-    "after_homeroom_honest_choice2b_ins": {
+    "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
         "text": "*担任が出席簿を閉じて立ち上がる。戸口まで行ってから、少し遅れて思い出したみたいにもう一度私を呼んだ。*"
     },
-    "after_homeroom_honest_9_ins": {
+    "after_homeroom_honest_9_b": {
         "name": "{name}",
         "text": "*さっき教室でも名前は一回で覚える主義って言ってたのに。——二回言うのは、何か意味がある。*"
     },
-    "after_hidden_nurse_intro_ins": {
+    "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*ドアの前で一度だけ深呼吸する。少しだけ休んでいこう。*"
     },
-    "after_nurse_enter_2_ins": {
+    "after_nurse_enter_2_b": {
         "name": "{name}",
         "text": "*口調が軽い。病院じゃなくてカフェに来たみたいなトーンだ。*"
     },
-    "after_nurse_enter_4_ins": {
+    "after_nurse_enter_4_b": {
         "name": "{name}",
         "text": "なんで分かるんですか？"
     },
-    "after_nurse_enter_4_ins2": {
+    "after_nurse_enter_4_c": {
         "name": "保健先生",
         "text": "制服がパリパリだもん。のりの匂いもするし *クンクン* あ、桜の匂いも混ざってる。ロマンチックな転校生だね"
     },
-    "after_nurse_enter_4_ins3": {
+    "after_nurse_enter_4_d": {
         "name": "{name}",
         "text": "*まだ何言も交わしてないのに、もう完全にこの人のペースだ。*"
     },
-    "after_nurse_enter_6_ins": {
+    "after_nurse_enter_6_b": {
         "name": "{name}",
         "text": "額を触って血圧が分かるんですか？"
     },
-    "after_nurse_enter_7_ins": {
+    "after_nurse_enter_7_b": {
         "name": "{name}",
         "text": "*ベッドに横になった。天井が白い。*"
     },
-    "after_nurse_enter_7_ins2": {
+    "after_nurse_enter_7_c": {
         "name": "保健先生",
         "text": "*カーテンを半分閉めながら* 水にする？ それとも温かいの？"
     },
-    "after_nurse_enter_7_ins3": {
+    "after_nurse_enter_7_d": {
         "name": "{name}",
         "text": "水で大丈夫です。"
     },
-    "after_nurse_enter_8_ins": {
+    "after_nurse_enter_8_b": {
         "name": "{name}",
         "text": "先生じゃないですか。"
     },
-    "after_nurse_enter_8_ins2": {
+    "after_nurse_enter_8_c": {
         "name": "保健先生",
         "text": "*コップを渡しながら* うん、先生だよ。でもここでは、君が楽なほうが先。"
     },
-    "after_nurse_enter_8_ins3": {
+    "after_nurse_enter_8_d": {
         "name": "{name}",
         "text": "*冗談っぽい口調だけど、緊張をほどこうとしてくれているのは分かる。*"
     },
-    "after_nurse_enter_9_ins": {
+    "after_nurse_enter_9_b": {
         "name": "{name}",
         "text": "あの鉢植え、先生が育ててるんですか？"
     },
-    "after_nurse_enter_9_ins2": {
+    "after_nurse_enter_9_c": {
         "name": "保健先生",
         "text": "うん、ローズマリー。——病院で働いてた頃から育ててるの"
     },
-    "after_nurse_enter_9_ins3": {
+    "after_nurse_enter_9_d": {
         "name": "{name}",
         "text": "病院ですか？"
     },
-    "after_nurse_enter_9_ins4": {
+    "after_nurse_enter_9_e": {
         "name": "{name}",
         "text": "*保健先生が一瞬止まる。そして微笑む。*"
     },
-    "after_nurse_enter_10_ins": {
+    "after_nurse_enter_10_b": {
         "name": "{name}",
         "text": "*軽い怪我だけ。——その言葉に安堵がにじんでいる。軽くない怪我をたくさん見てきたという意味でもある。*"
     },
-    "after_nurse_enter_10_ins3": {
+    "after_nurse_enter_10_c": {
         "name": "{name}",
         "text": "ありがとうございます。少し良くなりました。"
     },
-    "after_nurse_enter_11_ins": {
+    "after_nurse_enter_11_b": {
         "name": "{name}",
         "text": "気になるって？"
     },
-    "after_nurse_enter_11_ins2": {
+    "after_nurse_enter_11_c": {
         "name": "保健先生",
         "text": "*目を細めて* しんどいのに我慢してから来られたら、そりゃ心配するよ。私がここにいる理由でもあるし。"
     },
-    "after_nurse_enter_11_ins3": {
+    "after_nurse_enter_11_d": {
         "name": "{name}",
         "text": "*軽く言ったのに、最後の一言だけ妙にまっすぐ残った。*"
     },
-    "after_nurse_enter_11_ins4": {
+    "after_nurse_enter_11_e": {
         "name": "{name}",
         "text": "*保健先生が肩をすくめて、また軽く笑う。*"
     },
-    "after_nurse_enter_11_ins5": {
+    "after_nurse_enter_11_f": {
         "name": "保健先生",
         "text": "…鋭い患者さんだね。心配するのはこっちの役目なのに。"
     },
-    "after_nurse_enter_11_ins6": {
+    "after_nurse_enter_11_g": {
         "name": "{name}",
         "text": "*患者に気を遣われるのは少し慣れていない顔だ。——いつも世話をする側の人なんだろう。*"
     },
-    "after_nurse_enter_11_ins7": {
+    "after_nurse_enter_11_h": {
         "name": "保健先生",
         "text": "でしょ？ ここいいよ。——静かだし、消毒液の匂いさえなければ完璧"
     },
-    "after_nurse_enter_11_ins8": {
+    "after_nurse_enter_11_i": {
         "name": "{name}",
         "text": "*居心地がいいと言われて嬉しそうに目が笑う。——この空間はこの人にとって安らぎの場所なんだろう。*"
     },
-    "after_nurse_enter_11_ins9": {
+    "after_nurse_enter_11_j": {
         "name": "{name}",
         "text": "*保健室を出ようとしたとき——後ろから。*"
     },
-    "after_nurse_enter_11_ins10": {
+    "after_nurse_enter_11_k": {
         "name": "保健先生",
         "text": "あ、転校生くん。"
     },
-    "after_nurse_enter_11_ins11": {
+    "after_nurse_enter_11_l": {
         "name": "保健先生",
         "text": "名前、何ていうの？"
     },
-    "after_nurse_enter_11_ins12": {
+    "after_nurse_enter_11_m": {
         "name": "{name}",
         "text": "{name}です。"
     },
-    "after_nurse_enter_12_ins": {
+    "after_nurse_enter_12_b": {
         "name": "{name}",
         "text": "*軽く笑って手を振る。——おどけているけど、人を安心させるのが上手い人だ。*"
     },

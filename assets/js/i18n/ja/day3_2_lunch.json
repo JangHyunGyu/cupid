@@ -301,39 +301,39 @@
         "name": "{name}",
         "text": "*教室に戻った。*"
     },
-    "lunch3_start_2_ins": {
+    "lunch3_start_2_b": {
         "name": "ダイン",
         "text": "*遠慮なく卵焼きにかぶりつく。*"
     },
-    "lunch3_meal_7_ins": {
+    "lunch3_meal_7_b": {
         "name": "ユナ",
         "text": "*もう噛みながら* ……おいしい"
     },
-    "lunch3_meal_10_ins2": {
+    "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*誰も席を立たない。笑顔はあるけれど、三人ともなかなか箸を手に取れない。最後のおかずが一つ、やけに目に付く。*"
     },
-    "lunch3_meal_10_ins3": {
+    "lunch3_meal_10_c": {
         "name": "{name}",
         "text": "*ソヨンの箸が一瞬止まる。表情を整える。生徒会長の顔に戻る。——よくないことは分かっている。申し訳なくなった。*"
     },
-    "lunch3_meal_10_ins4": {
+    "lunch3_meal_10_d": {
         "name": "{name}",
         "text": "*みんなで？！いいじゃん！！ビックリマークは健在だ。——でも声が半トーン低い。いつもなら椅子を引っ張ってくるのに、今日は座ったまま動かない。*"
     },
-    "lunch3_meal_10_ins5": {
+    "lunch3_meal_10_e": {
         "name": "{name}",
         "text": "*ユナはただ頷く。メモを書きかけて折り畳んでポケットにしまう。渡さない。——何を書いたのかは、わからない。*"
     },
-    "lunch3_expose_7_ins": {
+    "lunch3_expose_7_b": {
         "name": "{name}",
         "text": "*残りの一人が静かに下ろす。*"
     },
-    "lunch3_expose_honest_4_ins": {
+    "lunch3_expose_honest_4_b": {
         "name": "{name}",
         "text": "*ソヨンの表情が変わる。——落ち着きはそのままだけど、どこか鋭さがある。*"
     },
-    "lunch3_expose_excuse_2_ins": {
+    "lunch3_expose_excuse_2_b": {
         "name": "{name}",
         "text": "*ダインが立ち上がる。*"
     }

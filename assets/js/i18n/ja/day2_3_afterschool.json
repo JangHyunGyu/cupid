@@ -558,131 +558,131 @@
     "name": "保健先生",
     "text": "理由がなくても来ていいよ。——あ、もちろん授業中はダメ～！放課後にね！ *保健室を出た。*"
   },
-  "after2_dain_9_ins": {
+  "after2_dain_9_b": {
     "name": "ダイン",
     "text": "*目を丸くして* え？ 手加減するつもりだったのに、やめた"
   },
-  "after2_dain_9_ins2": {
+  "after2_dain_9_c": {
     "name": "{name}",
     "text": "*ダインが姿勢を低くする。目つきが変わった。*"
   },
-  "after2_dain_9_ins3": {
+  "after2_dain_9_d": {
     "name": "ダイン",
     "text": "本気で行くよ！"
   },
-  "after2_dain_9_ins4": {
+  "after2_dain_9_e": {
     "name": "{name}",
     "text": "*ラリーが続く。ダインの動きは——明らかに普通じゃない。速くて、正確で、体が覚えている動き。*"
   },
-  "after2_dain_9_ins6": {
+  "after2_dain_9_f": {
     "name": "{name}",
     "text": "*結局3対2。ギリギリ勝った。*"
   },
-  "after2_dain_end_ins": {
+  "after2_dain_end_b": {
     "name": "{name}",
     "text": "*学校の前のトッポッキ屋。*"
   },
-  "after2_seo_4_ins": {
+  "after2_seo_4_b": {
     "name": "{name}",
     "text": "*この人の語彙にお願いという言葉は存在しないらしい。*"
   },
-  "after2_seo_6_ins": {
+  "after2_seo_6_b": {
     "name": "{name}",
     "text": "*この人の語彙にお願いという言葉は存在しないらしい。*"
   },
-  "after2_seo_8b4_ins": {
+  "after2_seo_8b4_b": {
     "name": "{name}",
     "text": "*褒めってはっきり言うの。——この人にしては珍しいことみたいだ。*"
   },
-  "after2_seo_sunset_joke_ins": {
+  "after2_seo_sunset_joke_b": {
     "name": "ソヨン",
     "text": "*書類の端で口元を隠しても、笑っているのがわかる。*"
   },
-  "after2_seo_sunset_react_ins": {
+  "after2_seo_sunset_react_b": {
     "name": "{name}",
     "text": "*その言葉のあともしばらく、ソヨンの口元は下がらなかった。*"
   },
-  "after2_seo_neck_react_ins": {
+  "after2_seo_neck_react_b": {
     "name": "ソヨン",
     "text": "結構凝ってるね。ちょっとじっとしてて"
   },
-  "after2_seo_neck_react_ins2": {
+  "after2_seo_neck_react_c": {
     "name": "{name}",
     "text": "*ソヨンが立ち上がって僕の後ろに回る。肩に手を置く。*"
   },
-  "after2_seo_neck_high_ins": {
+  "after2_seo_neck_high_b": {
     "name": "ソヨン",
     "text": "*静かに* …動かないで。ちょっとだけ"
   },
-  "after2_seo_neck_high_ins2": {
+  "after2_seo_neck_high_c": {
     "name": "{name}",
     "text": "*誰の手だっけ？——ソヨンの手が僕の肩の上にあるんだけど。思考がめちゃくちゃだ。それくらい緊張している。*"
   },
-  "after2_seo_neck_low_ins": {
+  "after2_seo_neck_low_b": {
     "name": "{name}",
     "text": "急に何？"
   },
-  "after2_seo_neck_low_ins2": {
+  "after2_seo_neck_low_c": {
     "name": "{name}",
     "text": "*ソヨンの手が宙で少し止まる。*"
   },
-  "after2_yuna_1_ins": {
+  "after2_yuna_1_b": {
     "name": "{name}",
     "text": "*別館の廊下。人の気配がない。——秘密の読書スペースのドアが少し開いている。*"
   },
-  "after2_yuna_2_ins": {
+  "after2_yuna_2_b": {
     "name": "{name}",
     "text": "*ユナが顔を上げる。驚いていない。*"
   },
-  "after2_yuna_choice_pre3_ins": {
+  "after2_yuna_choice_pre3_b": {
     "name": "{name}",
     "text": "*ユナが二文続けて言った。——普段一行で済ませる人なのに。*"
   },
-  "after2_yuna_everyday_ins": {
+  "after2_yuna_everyday_b": {
     "name": "ユナ",
     "text": "…来たいなら来て。止めないから"
   },
-  "minsu_warn_4_ins": {
+  "minsu_warn_4_b": {
     "name": "{name}",
     "text": "*ユナの口元がほんのわずかに上がる。*"
   },
-  "minsu_warn_1_ins": {
+  "minsu_warn_1_b": {
     "name": "{name}",
     "text": "*ミンスが大股で追いついてきて、隣に並ぶ。*"
   },
-  "minsu_warn_7_ins": {
+  "minsu_warn_7_b": {
     "name": "{name}",
     "text": "*ミンスが立ち止まる。振り返る。いつものふざけた感じがない。*"
   },
-  "minsu_warn_7_ins2": {
+  "minsu_warn_7_c": {
     "name": "ミンス",
     "text": "なあ、俺このクラスに1年いるんだよ。ソヨンが男に自分から話しかけるの見たことない。ダインが他の男にパン買ってあげたこともない。ユナは——手紙？ 誰にも書かないよ"
   },
-  "minsu_warn_13_ins": {
+  "minsu_warn_13_b": {
     "name": "{name}",
     "text": "*——息が詰まる。*"
   },
-  "minsu_warn_15_ins": {
+  "minsu_warn_15_b": {
     "name": "ダイン",
     "text": "明日も勝負しよう!! 種目変えて!!"
   },
-  "minsu_warn_15_ins2": {
+  "minsu_warn_15_c": {
     "name": "ソヨン",
     "text": "明日の昼、屋上開けておくから。来て"
   },
-  "minsu_warn_15_ins3": {
+  "minsu_warn_15_d": {
     "name": "{name}",
     "text": "*前の学校。——その言葉が胸に刺さった。*"
   },
-  "minsu_warn_15_ins4": {
+  "minsu_warn_15_e": {
     "name": "{name}",
     "text": "*——歩いていた足が止まった。*"
   },
-  "after2_seo_neck_high_2_ins": {
+  "after2_seo_neck_high_2_b": {
     "name": "{name}",
     "text": "*指先がうなじを押して、ゆっくり離れていく。少しのあいだ、二人とも何も言わない。*"
   },
-  "after2_yuna_everyday_react_ins": {
+  "after2_yuna_everyday_react_b": {
     "name": "{name}",
     "text": "*許しみたいな言葉ではないのに、不思議と長く残る。*"
   }

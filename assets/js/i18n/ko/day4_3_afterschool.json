@@ -19,7 +19,7 @@
         "name": "{name}",
         "text": "*서연이 난간에 기대서 있다. 바람에 머리카락이 날린다. — 새끼손가락으로 넘기는 그 습관.*"
     },
-    "confess_seo_4_ins": {
+    "confess_seo_4_b": {
         "name": "{name}",
         "text": "*가슴이 뛴다. 전 학교에서도 이랬다. — 그때는 삼켰던 말.*"
     },
@@ -79,7 +79,7 @@
         "name": "서연",
         "text": "이 얘기 꺼내기까지 진짜 오래 걸렸어."
     },
-    "confess_seo_yes_11_ins": {
+    "confess_seo_yes_11_b": {
         "name": "{name}",
         "text": "*서연의 손이 움직인다.*"
     },
@@ -103,7 +103,7 @@
         "name": "서연",
         "text": "...다음에 올 때는, 다른 말 준비해 와."
     },
-    "confess_seo_no_4_ins": {
+    "confess_seo_no_4_b": {
         "name": "{name}",
         "text": "*등이 곧다. 떨리고 있다.*"
     },
@@ -151,7 +151,7 @@
         "name": "{name}",
         "text": "유나. 처음에 네가 말 안 하는 게 벽인 줄 알았어. 근데 아니더라."
     },
-    "confess_yuna_yes_3_ins": {
+    "confess_yuna_yes_3_b": {
         "name": "{name}",
         "text": "네 옆에 있으면 조용한 게 불편하지 않았어."
     },
@@ -167,7 +167,7 @@
         "name": "{name}",
         "text": "좋아해."
     },
-    "confess_yuna_yes_6_ins": {
+    "confess_yuna_yes_6_b": {
         "name": "{name}",
         "text": "*이 방에서 제일 긴 문장을 내가 했다. — 유나의 영역에서.*"
     },
@@ -179,11 +179,11 @@
         "name": "{name}",
         "text": "*유나의 무표정이 갈라져 있다. 나른한 목소리가 사라지고, 아주 작은 — 거의 안 들리는 목소리로. 옷소매를 꽉 쥔다.*"
     },
-    "confess_yuna_yes_8_ins": {
+    "confess_yuna_yes_8_b": {
         "name": "{name}",
         "text": "*옷소매를 꽉 쥔다.*"
     },
-    "confess_yuna_yes_8_ins2": {
+    "confess_yuna_yes_8_c": {
         "name": "유나",
         "text": "...가지 마. 갑자기 사라지면 싫어."
     },
@@ -191,7 +191,7 @@
         "name": "유나",
         "text": "...가지 마. 이번엔 가지 마."
     },
-    "confess_yuna_yes_9_ins": {
+    "confess_yuna_yes_9_b": {
         "name": "{name}",
         "text": "*'이번엔'. — 전에 떠난 사람이 있었다. 유나는 다시 그 상처를 꺼내면서도, 나를 잡고 있다.*"
     },
@@ -211,7 +211,7 @@
         "name": "유나",
         "text": "...결말은 아직이야."
     },
-    "confess_yuna_no_4_ins": {
+    "confess_yuna_no_4_b": {
         "name": "{name}",
         "text": "*세 걸음 뒤에서 돌아봤다. 유나도 책 너머로 이쪽을 보고 있었다.*"
     },
@@ -259,7 +259,7 @@
         "name": "{name}",
         "text": "다인아. 나 — 너한테 할 말이 있어."
     },
-    "confess_dain_yes_3_ins": {
+    "confess_dain_yes_3_b": {
         "name": "{name}",
         "text": "그 눈이 나를 안 볼 때 — 좀 답답해."
     },
@@ -283,7 +283,7 @@
         "name": "{name}",
         "text": "*다인이 그대로 멈춘다. 웃음이 빠진 얼굴 위로 눈빛만 천천히 젖는다. 두 손으로 얼굴을 덮어버린다.*"
     },
-    "confess_dain_yes_8_ins": {
+    "confess_dain_yes_8_b": {
         "name": "{name}",
         "text": "*두 손으로 얼굴을 가린다. 손가락 사이로 빨간 볼이 보인다.*"
     },
@@ -291,7 +291,7 @@
         "name": "다인",
         "text": "...잠깐, 나 지금 진짜 울 것 같은데... 기쁜데 왜 이래..."
     },
-    "confess_dain_yes_9_ins": {
+    "confess_dain_yes_9_b": {
         "name": "{name}",
         "text": "*손을 내리고 웃는다. 눈물이 흐르고 있다.*"
     },
@@ -299,7 +299,7 @@
         "name": "다인",
         "text": "나도 좋아해. 엄청."
     },
-    "confess_dain_yes_10_ins": {
+    "confess_dain_yes_10_b": {
         "name": "{name}",
         "text": "*'엄청'. — 다인은 늘 이렇다. 짧고 솔직하다. 그래서 믿긴다.*"
     },
@@ -319,7 +319,7 @@
         "name": "다인",
         "text": "...다음에는 도망치지 마."
     },
-    "confess_dain_no_4_ins": {
+    "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*느낌표가 없다. — 진심이다.*"
     }

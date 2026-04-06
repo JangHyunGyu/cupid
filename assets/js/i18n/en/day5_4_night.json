@@ -31,7 +31,7 @@
         "name": "{name}",
         "text": "*For the first time, I see Seoyeon this completely undone. - She's crying.*"
     },
-    "perfect_seo_1_ins": {
+    "perfect_seo_1_b": {
         "name": "{name}",
         "text": "*For the first time, she takes off her glasses — and she's crying.*"
     },
@@ -51,7 +51,7 @@
         "name": "{name}",
         "text": "*Seoyeon reaches out. Not a pinky finger. Her whole hand.*"
     },
-    "perfect_seo_5_ins": {
+    "perfect_seo_5_b": {
         "name": "{name}",
         "text": "*The rooftop breeze blows.*"
     },
@@ -83,7 +83,7 @@
         "name": "Seoyeon",
         "text": "...I thought we'd work out. I guess we were both a step short."
     },
-    "bitter_seo_2_ins": {
+    "bitter_seo_2_b": {
         "name": "{name}",
         "text": "*Seoyeon at the cafe. Her gaze behind the glasses is dry. No composure, no trembling. Just — the eyes of someone who came to wrap things up.*"
     },
@@ -123,7 +123,7 @@
         "name": "Seoyeon",
         "text": "...Stay with me."
     },
-    "true_seo_7_ins": {
+    "true_seo_7_b": {
         "name": "{name}",
         "text": "*We linked pinkies. Day 1's habit, Day 4's promise, and now. — Same finger, third meaning.*"
     },
@@ -207,15 +207,15 @@
         "name": "Yuna",
         "text": "I was the only one who knew about this place."
     },
-    "true_yuna_2_ins": {
+    "true_yuna_2_b": {
         "name": "{name}",
         "text": "*Yuna climbs the small attic ladder. There's a hatch leading up. — When it opens, a breeze rushes in.*"
     },
-    "true_yuna_2_ins2": {
+    "true_yuna_2_c": {
         "name": "{name}",
         "text": "*Above the attic was a rooftop. The library annex rooftop. — A secret passage no one knows about.*"
     },
-    "true_yuna_2_ins3": {
+    "true_yuna_2_d": {
         "name": "{name}",
         "text": "*Yuna leans against the railing. Stars are visible.*"
     },
@@ -231,7 +231,7 @@
         "name": "{name}",
         "text": "The third star?"
     },
-    "true_yuna_5_ins": {
+    "true_yuna_5_b": {
         "name": "{name}",
         "text": "*Yuna pauses. — Smiles. A soundless smile I've never seen before.*"
     },
@@ -319,7 +319,7 @@
         "name": "{name}",
         "text": "*I left the gym. It's raining. — The exclamation marks came back, but the last sentence had none. When Dain ends with a period, it means there's no energy left to share.*"
     },
-    "bitter_dain_3_ins": {
+    "bitter_dain_3_b": {
         "name": "{name}",
         "text": "*I walked out past the school gate. It's raining. — No umbrella. Cherry blossoms stick to the wet ground at my feet.*"
     },
@@ -420,7 +420,7 @@
         "name": "{name}",
         "text": "*At my old school, I regretted not speaking up. At this school — do I regret not finding anyone? No. I found them but couldn’t pick. No — I didn’t have the courage to pick.*"
     },
-    "alone_2_ins": {
+    "alone_2_b": {
         "name": "{name}",
         "text": "*Cherry blossoms fall outside the window. The same ones that brushed my nose five days ago are now scattering in the wind.*"
     },
@@ -468,15 +468,15 @@
         "name": "Seoyeon",
         "text": "It won't be perfect. Not for you, not for me. ...But this time, don't let go halfway through."
     },
-    "good_1_seo_ins": {
+    "good_1_seo_b": {
         "name": "{name}",
         "text": "*Seoyeon brushes at the end of my sleeve the way she'd flick off a cherry blossom petal. It's a brusque touch, but not one that pushes me away.*"
     },
-    "good_1_seo_ins2": {
+    "good_1_seo_c": {
         "name": "{name}",
         "text": "*Her words are short, but our steps fall into sync. For today, that feels like enough.*"
     },
-    "good_1_seo_ins3": {
+    "good_1_seo_d": {
         "name": "{name}",
         "text": "*What Seoyeon and I have is only just beginning to take shape. Unsteady, but not broken.*"
     },
@@ -520,7 +520,7 @@
         "name": "{name}",
         "text": "*Yuna hands me a folded note. When I open it, there's just one line: 'Next time, don't disappear.'*"
     },
-    "good_1_yuna_b_ins": {
+    "good_1_yuna_b_b": {
         "name": "{name}",
         "text": "*It's a short sentence, but this time it reads like a request.*"
     },
@@ -728,7 +728,7 @@
         "name": "{name}",
         "text": "*Seoyeon smiled first. ...Fine. At least you’re honest. It wasn’t my imagination that I heard teeth grinding behind that smile.*"
     },
-    "harem_1_ins": {
+    "harem_1_b": {
         "name": "{name}",
         "text": "*Yuna lowered her head. When she looked up a long time later, she was smiling with a face that couldn't even cry. Biting her lip.*"
     },
@@ -861,7 +861,7 @@
         "name": "{name}",
         "text": "*An empty classroom. The same classroom where she used to write. - My homeroom teacher is waiting.*"
     },
-    "hidden_true_homeroom_2_ins": {
+    "hidden_true_homeroom_2_b": {
         "name": "{name}",
         "text": "*She's leaning by the window at the back of the classroom. A face with no class and no work left in it.*"
     },
@@ -869,11 +869,11 @@
         "name": "Homeroom Teacher",
         "text": "Congratulations on graduating."
     },
-    "hidden_true_homeroom_3_ins": {
+    "hidden_true_homeroom_3_b": {
         "name": "{name}",
         "text": "Thank you."
     },
-    "hidden_true_homeroom_3_ins2": {
+    "hidden_true_homeroom_3_c": {
         "name": "Homeroom Teacher",
         "text": "...That."
     },
@@ -881,31 +881,31 @@
         "name": "Homeroom Teacher",
         "text": "...That. You didn't say 'teacher.' First time."
     },
-    "hidden_true_homeroom_4_ins": {
+    "hidden_true_homeroom_4_b": {
         "name": "{name}",
         "text": "*It was unconscious. — The moment I graduated, the title fell away.*"
     },
-    "hidden_true_homeroom_4_ins2": {
+    "hidden_true_homeroom_4_c": {
         "name": "{name}",
         "text": "*She pulls out an envelope. This time it's not brown — it's white.*"
     },
-    "hidden_true_homeroom_4_ins3": {
+    "hidden_true_homeroom_4_d": {
         "name": "Homeroom Teacher",
         "text": "I finished the manuscript. — I could write it because you were my first reader."
     },
-    "hidden_true_homeroom_4_ins4": {
+    "hidden_true_homeroom_4_e": {
         "name": "{name}",
         "text": "Did my review help?"
     },
-    "hidden_true_homeroom_4_ins5": {
+    "hidden_true_homeroom_4_f": {
         "name": "Homeroom Teacher",
         "text": "I asked for one line and you wrote three pages. After seeing that, I had no more excuses to postpone it."
     },
-    "hidden_true_homeroom_4_ins6": {
+    "hidden_true_homeroom_4_g": {
         "name": "{name}",
         "text": "*She looks out the window. Cherry blossoms are falling.*"
     },
-    "hidden_true_homeroom_4_ins7": {
+    "hidden_true_homeroom_4_h": {
         "name": "Homeroom Teacher",
         "text": "*Turning from the window* ...Just one thing."
     },
@@ -913,11 +913,11 @@
         "name": "Homeroom Teacher",
         "text": "*Looking out the window* I finished the manuscript. After you read it first, I was able to keep pushing forward. I asked for one line and you wrote three pages. After seeing that, I had no more excuses to postpone it."
     },
-    "hidden_true_homeroom_5_ins": {
+    "hidden_true_homeroom_5_b": {
         "name": "{name}",
         "text": "*Graduation day. — Time has passed.*"
     },
-    "hidden_true_homeroom_5_ins2": {
+    "hidden_true_homeroom_5_c": {
         "name": "{name}",
         "text": "*The uniform isn't stiff anymore. No — today is the day I take it off.*"
     },
@@ -925,7 +925,7 @@
         "name": "Homeroom Teacher",
         "text": "...Just one thing. ...Let's go get coffee. Real coffee this time, not juice."
     },
-    "hidden_true_homeroom_6_ins": {
+    "hidden_true_homeroom_6_b": {
         "name": "{name}",
         "text": "*From juice to coffee. — From student to adult. Not crossing the line — the line itself disappeared.*"
     },
@@ -933,15 +933,15 @@
         "name": "{name}",
         "text": "I'd like that."
     },
-    "hidden_true_homeroom_7_ins": {
+    "hidden_true_homeroom_7_b": {
         "name": "{name}",
         "text": "*She smiles. Not a dry one — the smile of someone who finished a seven-year unfinished manuscript.*"
     },
-    "hidden_true_homeroom_7_ins2": {
+    "hidden_true_homeroom_7_c": {
         "name": "Homeroom Teacher",
         "text": "...I really shouldn't be doing this. *— Her voice trails off. Then she smiles.*"
     },
-    "hidden_true_homeroom_7_ins3": {
+    "hidden_true_homeroom_7_d": {
         "name": "{name}",
         "text": "*One last time. Then the habit breaks. — Seven years of 'teacher' are over, and the day to call her by name has come.*"
     },
@@ -1034,15 +1034,15 @@
         "name": "{name}",
         "text": "*'Congratulations on graduating. I'll wait at the cafe.' - When I peel off the bandage, there's a tiny map underneath. The school nurse is sitting in the cafe. She looks far more at ease than she ever did in the infirmary. Just - like someone who came to wait for me.*"
     },
-    "hidden_true_nurse_2_ins": {
+    "hidden_true_nurse_2_b": {
         "name": "{name}",
         "text": "*Today, she looks more like just a person than a teacher.*"
     },
-    "hidden_true_nurse_2_ins2": {
+    "hidden_true_nurse_2_c": {
         "name": "School Nurse",
         "text": "Congrats on graduating."
     },
-    "hidden_true_nurse_2_ins3": {
+    "hidden_true_nurse_2_d": {
         "name": "{name}",
         "text": "Thank you."
     },
@@ -1050,7 +1050,7 @@
         "name": "School Nurse",
         "text": "Congrats on graduating. ...Starting today, you can drop the formalities."
     },
-    "hidden_true_nurse_3_ins": {
+    "hidden_true_nurse_3_b": {
         "name": "{name}",
         "text": "Why?"
     },
@@ -1062,23 +1062,23 @@
         "name": "School Nurse",
         "text": "...But right now, I don't intend to gloss over it like that."
     },
-    "hidden_true_nurse_5_ins": {
+    "hidden_true_nurse_5_b": {
         "name": "{name}",
         "text": "*Her voice dropped a register. All playfulness completely gone. — This is her sincerity.*"
     },
-    "hidden_true_nurse_5_ins2": {
+    "hidden_true_nurse_5_c": {
         "name": "School Nurse",
         "text": "I knew it couldn't be, right? That's why I kept passing it off as a joke."
     },
-    "hidden_true_nurse_5_ins3": {
+    "hidden_true_nurse_5_d": {
         "name": "School Nurse",
         "text": "But you recognized even when I was glossing things over."
     },
-    "hidden_true_nurse_5_ins4": {
+    "hidden_true_nurse_5_e": {
         "name": "{name}",
         "text": "Taking three minutes to put on a bandage isn't just being careful."
     },
-    "hidden_true_nurse_5_ins5": {
+    "hidden_true_nurse_5_f": {
         "name": "{name}",
         "text": "*The school nurse pauses. — Then smiles. Not a playful smile.*"
     },
@@ -1090,15 +1090,15 @@
         "name": "{name}",
         "text": "*Even after we left the cafe, our hands didn't part easily. By the time I came to my senses, we were standing in front of her house, not the nurse's office.*"
     },
-    "hidden_true_nurse_7_ins": {
+    "hidden_true_nurse_7_b": {
         "name": "School Nurse",
         "text": "...You're the first one who's seen right through me."
     },
-    "hidden_true_nurse_7_ins2": {
+    "hidden_true_nurse_7_c": {
         "name": "{name}",
         "text": "*The school nurse reaches out and touches the bandage on the back of my hand. The same one she put on this morning.*"
     },
-    "hidden_true_nurse_7_ins3": {
+    "hidden_true_nurse_7_d": {
         "name": "{name}",
         "text": "*She was someone who needed an excuse. — Her role at school had been both her excuse and her wall. Today, that wall disappeared.*"
     },
@@ -1110,31 +1110,31 @@
         "name": "",
         "text": "─── School Nurse TRUE LOVE END ───"
     },
-    "hidden_true_nurse_8_ins": {
+    "hidden_true_nurse_8_b": {
         "name": "School Nurse",
         "text": "*Turning her coffee cup* The diploma takes effect faster than I thought."
     },
-    "hidden_true_nurse_8_ins2": {
+    "hidden_true_nurse_8_c": {
         "name": "{name}",
         "text": "*The date called graduation erases the line. — In a cafe instead of the nurse's office, with a person instead of a role.*"
     },
-    "hidden_true_nurse_8_ins3": {
+    "hidden_true_nurse_8_d": {
         "name": "{name}",
         "text": "*The school nurse looks at me. No playfulness.*"
     },
-    "hidden_true_nurse_8_ins4": {
+    "hidden_true_nurse_8_e": {
         "name": "School Nurse",
         "text": "You know, on Day 1, when you came to the nurse's office."
     },
-    "hidden_true_nurse_8_ins5": {
+    "hidden_true_nurse_8_f": {
         "name": "{name}",
         "text": "Because I was dizzy."
     },
-    "hidden_true_nurse_8_ins6": {
+    "hidden_true_nurse_8_g": {
         "name": "School Nurse",
         "text": "I put my hand on your forehead and said 'I just wanted to touch you.' *Smiling softly* That was a joke."
     },
-    "hidden_true_nurse_8_ins7": {
+    "hidden_true_nurse_8_h": {
         "name": "{name}",
         "text": "I know."
     },
@@ -1146,15 +1146,15 @@
         "name": "School Nurse",
         "text": "Vitamins. — Take care of yourself in college. ...Medical concern. This time, for real."
     },
-    "hidden_good_nurse_2_ins": {
+    "hidden_good_nurse_2_b": {
         "name": "{name}",
         "text": "Medical concern?"
     },
-    "hidden_good_nurse_2_ins2": {
+    "hidden_good_nurse_2_c": {
         "name": "School Nurse",
         "text": "*Pausing briefly* ...Yes. Medical concern. *Quietly* This time, for real."
     },
-    "hidden_good_nurse_2_ins3": {
+    "hidden_good_nurse_2_d": {
         "name": "{name}",
         "text": "*'This time, for real.' — Meaning all the other times, it wasn't.*"
     },
@@ -1162,7 +1162,7 @@
         "name": "{name}",
         "text": "*Leaving the nurse's office. Inside the cap, tiny writing. 'Call me if you're sick. Call me even if you're not. — ♥'*"
     },
-    "hidden_good_nurse_3_ins": {
+    "hidden_good_nurse_3_b": {
         "name": "{name}",
         "text": "*Even after I close the cap, the corners of my mouth won't go down.*"
     },

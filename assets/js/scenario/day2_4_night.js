@@ -223,14 +223,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_reply_yuna_6": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6_ins"
+        "next": "night2_reply_yuna_6_b"
     },
-    "night2_reply_yuna_6_ins": {
+    "night2_reply_yuna_6_b": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6_ins2"
+        "next": "night2_reply_yuna_6_c"
     },
-    "night2_reply_yuna_6_ins2": {
+    "night2_reply_yuna_6_c": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "night2_reply_yuna_7"
@@ -325,24 +325,24 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_end_2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_2_ins2"
+        "next": "night2_end_2_b"
     },
-    "night2_end_2_ins2": {
+    "night2_end_2_b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_3_ins"
+        "next": "night2_end_3_b"
     },
-    "night2_end_3_ins": {
+    "night2_end_3_b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_4_ins"
+        "next": "night2_end_4_b"
     },
-    "night2_end_4_ins": {
+    "night2_end_4_b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_4_ins2"
+        "next": "night2_end_4_c"
     },
-    "night2_end_4_ins2": {
+    "night2_end_4_c": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "morning3_start"

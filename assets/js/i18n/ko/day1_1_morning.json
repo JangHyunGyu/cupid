@@ -128,11 +128,11 @@
         "name": "{name}",
         "text": "비밀 아지트라도 있어?"
     },
-    "hallway_6_ins": {
+    "hallway_6_b": {
         "name": "서연",
         "text": "*잠깐 멈칫* ...눈치 빠르네."
     },
-    "hallway_6_ins2": {
+    "hallway_6_c": {
         "name": "{name}",
         "text": "*멈칫한 거. 0.5초. 별거 아닌 거겠지만, 왠지 기억에 남는다.*"
     },
@@ -160,7 +160,7 @@
         "name": "{name}",
         "text": "*서연이 돌아서며 가볍게 손을 흔든다. 뒤돌아보지 않는다.*"
     },
-    "hallway_13_ins": {
+    "hallway_13_b": {
         "name": "{name}",
         "text": "*등이 완벽하게 곧다. — 저 여유로움 뒤에 뭐가 있는 건지.*"
     },
@@ -168,7 +168,7 @@
         "name": "{name}",
         "text": "*교실 문을 연다. 시선이 쏟아진다. 예상은 했지만, 30명분의 시선은 역시 무겁다.*"
     },
-    "classroom_2_ins": {
+    "classroom_2_b": {
         "name": "{name}",
         "text": "*교탁 앞에 담임선생님이 서 있다. 20대 후반. 가디건 단추는 처음부터 열려 있다. 표정은 무심한데 — 눈은 학생 하나하나를 훑고 있다.*"
     },
@@ -176,15 +176,15 @@
         "name": "담임",
         "text": "자, 오늘부터 우리 반에 합류하는 전학생이야. 자기소개 해 볼까?"
     },
-    "classroom_3_ins": {
+    "classroom_3_b": {
         "name": "{name}",
         "text": "{name}입니다. 잘 부탁드립니다. *짧고 깔끔하게. 담임이 고개를 끄덕인다.*"
     },
-    "classroom_5_ins2": {
+    "classroom_5_b": {
         "name": "담임",
         "text": "...그래. {name}. 외울게. *작게, 거의 혼잣말처럼* 이름은 한 번에 외우는 주의거든."
     },
-    "classroom_5_ins3": {
+    "classroom_5_c": {
         "name": "{name}",
         "text": "*아무도 안 들었을 말이다. 나만 들었다. 교실 한쪽에서 휘파람 소리.*"
     },
@@ -208,15 +208,15 @@
         "name": "{name}",
         "text": "*볼륨 조절이 안 되는 타입이다.*"
     },
-    "classroom_dain_5_ins": {
+    "classroom_dain_5_b": {
         "name": "{name}",
         "text": "*담임이 한숨을 살짝 쉰다. 한심하다는 게 아니라, 익숙하다는 한숨이다.*"
     },
-    "classroom_dain_5_ins2": {
+    "classroom_dain_5_c": {
         "name": "담임",
         "text": "...에너지 좀 아껴. 아직 1교시도 안 시작했어."
     },
-    "classroom_dain_5_ins3": {
+    "classroom_dain_5_d": {
         "name": "{name}",
         "text": "*건조하게 말하지만 입꼬리가 올라가 있다.*"
     },
@@ -252,7 +252,7 @@
         "name": "{name}",
         "text": "뭘?"
     },
-    "classroom_minsu_2_ins": {
+    "classroom_minsu_2_b": {
         "name": "민수",
         "text": "*다인 쪽을 턱짓하며* 체력 관리."
     },

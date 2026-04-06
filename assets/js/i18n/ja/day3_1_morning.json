@@ -440,319 +440,319 @@
         "name": "{name}",
         "text": "*教室に戻った。授業がひとつ過ぎて、また短い休み時間が来る。*"
     },
-    "morning3_seo_gate_6_ins": {
+    "morning3_seo_gate_6_b": {
         "name": "{name}",
         "text": "*ソヨンが歩いていく。堂々と。遅刻しているのに急がない。*"
     },
-    "morning3_yuna_gate_6_ins2": {
+    "morning3_yuna_gate_6_b": {
         "name": "{name}",
         "text": "*メモ：朝ごはん食べてないと思って*"
     },
-    "morning3_dain_gate_4_ins": {
+    "morning3_dain_gate_4_b": {
         "name": "ダイン",
         "text": "こうした方が速いの！！疑問持たないで！！"
     },
-    "morning3_dain_gate_5_ins": {
+    "morning3_dain_gate_5_b": {
         "name": "{name}",
         "text": "*校門を越えた瞬間、ダインが着地して小さくっと声を漏らした。でも振り返ると何でもない顔で笑っている。——聞き間違い？*"
     },
-    "morning3_react_yuna_1_ins": {
+    "morning3_react_yuna_1_b": {
         "name": "{name}",
         "text": "*ダインがあからさまに。*"
     },
-    "morning3_react_yuna_2_ins": {
+    "morning3_react_yuna_2_b": {
         "name": "{name}",
         "text": "*ソヨンが教室の入り口でさりげなく。*"
     },
-    "hidden_homeroom_d3_4_ins": {
+    "hidden_homeroom_d3_4_b": {
         "name": "{name}",
         "text": "*担任の手が原稿用紙の上で止まっている。裏返された紙の隙間から、びっしりと書かれた文字が見える。*"
     },
-    "hidden_homeroom_d3_4_ins3": {
+    "hidden_homeroom_d3_4_c": {
         "name": "{name}",
         "text": "*担任の表情がすぐに元に戻る。いつもの無関心な顔。— スイッチの切り替えが早すぎる。*"
     },
-    "hidden_homeroom_d3_4_ins4": {
+    "hidden_homeroom_d3_4_d": {
         "name": "担任先生",
         "text": "...何見てる。休み時間に何しに来たんだ。"
     },
-    "hidden_homeroom_d3_4_ins5": {
+    "hidden_homeroom_d3_4_e": {
         "name": "{name}",
         "text": "*原稿用紙。びっしりの文字。隠そうとする表情。— 聞いてみるか、知らないふりをするか。*"
     },
-    "hidden_homeroom_d3_3_ins": {
+    "hidden_homeroom_d3_3_b": {
         "name": "{name}",
         "text": "*0.5秒。凍りつく。——担任のこんな表情は初めて見る。無関心でも、素っ気なくもない。バレた人の顔だ。*"
     },
-    "hidden_homeroom_d3_reveal_2_ins": {
+    "hidden_homeroom_d3_reveal_2_b": {
         "name": "担任先生",
         "text": "……何でもないよ。業務書類。"
     },
-    "hidden_homeroom_d3_reveal_2_ins2": {
+    "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
         "text": "業務書類を空き教室で？"
     },
-    "hidden_homeroom_d3_reveal_2_ins3": {
+    "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
         "text": "*担任が一瞬口を閉じる。そして——ため息をつく。短く。*"
     },
-    "hidden_homeroom_d3_reveal_2_ins4": {
+    "hidden_homeroom_d3_reveal_2_e": {
         "name": "担任先生",
         "text": "*ため息をつきながら* ……察しがいいのは長所だけど、たまに短所ね。"
     },
-    "hidden_homeroom_d3_reveal_2_ins5": {
+    "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
         "text": "*担任が少し止まる。原稿用紙をいじる。——そして椅子にもたれかかる。*"
     },
-    "hidden_homeroom_d3_reveal_1_ins": {
+    "hidden_homeroom_d3_reveal_1_b": {
         "name": "{name}",
         "text": "どのくらいですか？"
     },
-    "hidden_homeroom_d3_reveal_1_ins2": {
+    "hidden_homeroom_d3_reveal_1_c": {
         "name": "担任先生",
         "text": "7年 *窓の外を見ながら* 大学の時に始めたの。文芸創作科"
     },
-    "hidden_homeroom_d3_reveal_1_ins3": {
+    "hidden_homeroom_d3_reveal_1_d": {
         "name": "{name}",
         "text": "先生が文芸創作科？"
     },
-    "hidden_homeroom_d3_reveal_1_ins4": {
+    "hidden_homeroom_d3_reveal_1_e": {
         "name": "担任先生",
         "text": "卒業してデビューを目指したんだけど——2年間で3回落ちた。生活費は底をつき、親にはもう現実を見なさいって。"
     },
-    "hidden_homeroom_d3_reveal_1_ins5": {
+    "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
         "text": "*担任が原稿用紙を一枚持ち上げる。びっしりと文字が詰まっている。*"
     },
-    "hidden_homeroom_d3_reveal_3_ins": {
+    "hidden_homeroom_d3_reveal_3_b": {
         "name": "{name}",
         "text": "諦めたんですか？"
     },
-    "hidden_homeroom_d3_reveal_3_ins2": {
+    "hidden_homeroom_d3_reveal_3_c": {
         "name": "{name}",
         "text": "*担任が原稿用紙を下ろす。ゆっくりと。*"
     },
-    "hidden_homeroom_d3_reveal_4_ins": {
+    "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
         "text": "*この人の素っ気なさの裏に、こんな話があったのか。——教卓の引き出しの未完成の原稿。7年間。*"
     },
-    "hidden_homeroom_d3_reveal_4_ins2": {
+    "hidden_homeroom_d3_reveal_4_c": {
         "name": "担任先生",
         "text": "*急に真面目な顔で* ……これ誰にも言っちゃダメだよ。生徒が先生の——こんな姿知ったら権威が——まぁ元からないけど"
     },
-    "hidden_homeroom_d3_reveal_4_ins3": {
+    "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
         "text": "秘密ですか？"
     },
-    "hidden_homeroom_d3_reveal_4_ins4": {
+    "hidden_homeroom_d3_reveal_4_e": {
         "name": "担任先生",
         "text": "*髪をかきあげながら* 秘密だよ。——教育的にいい手本じゃないからね。生徒にこんな話をするのは"
     },
-    "hidden_homeroom_d3_reveal_4_ins5": {
+    "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
         "text": "*教育的に。——また仕事で包んでいる。でも今回は、本気で後悔している声色だ。*"
     },
-    "hidden_homeroom_d3_reveal_4_ins6": {
+    "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
         "text": "僕は読んでみたいですけど。その小説。"
     },
-    "hidden_homeroom_d3_reveal_6_ins": {
+    "hidden_homeroom_d3_reveal_6_b": {
         "name": "担任先生",
         "text": "……じゃあ、君が初めて読む人だね。7年ぶりに。"
     },
-    "hidden_homeroom_d3_reveal_6_ins2": {
+    "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
         "text": "*笑い方がぎこちない。——この人が笑うのが下手なのか、笑い方を忘れたのか。*"
     },
-    "hidden_homeroom_d3_reveal_6_ins3": {
+    "hidden_homeroom_d3_reveal_6_d": {
         "name": "担任先生",
         "text": "*一瞬止まる。原稿用紙に触れていた手が止まる。* ……根気って言ってくれる人は初めてだよ"
     },
-    "hidden_homeroom_d3_reveal_6_ins4": {
+    "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
         "text": "*この人は7年を諦められなかっただけと言った。でも視点を変える一言で——目が揺れた。*"
     },
-    "hidden_homeroom_d3_reveal_6_ins5": {
+    "hidden_homeroom_d3_reveal_6_f": {
         "name": "担任先生",
         "text": "静かだから。——職員室はコーヒーの匂いもするし、他の先生の目もあるし。"
     },
-    "hidden_homeroom_d3_reveal_6_ins6": {
+    "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
         "text": "*空き教室を選んだ理由は実用的でもあるけど——一人の空間が必要な人だということでもある。*"
     },
-    "hidden_nurse_d3_2_ins": {
+    "hidden_nurse_d3_2_b": {
         "name": "{name}",
         "text": "*担任がお願いという言葉を使う。——この人にとって、それは珍しい言葉だ。*"
     },
-    "hidden_nurse_d3_2_ins2": {
+    "hidden_nurse_d3_2_c": {
         "name": "{name}",
         "text": "*教室を出ようとすると——後ろから小さく。*"
     },
-    "hidden_nurse_d3_2_ins3": {
+    "hidden_nurse_d3_2_d": {
         "name": "担任先生",
         "text": "……ありがとう。"
     },
-    "hidden_nurse_d3_2_ins4": {
+    "hidden_nurse_d3_2_e": {
         "name": "{name}",
         "text": "*何に感謝しているのか分からない。見なかったことにしてくれたから？それとも——ここまで来てくれたから？*"
     },
-    "hidden_nurse_d3_1_ins2": {
+    "hidden_nurse_d3_1_b": {
         "name": "保健先生",
         "text": "*顔を上げながら* ……ん？今日はどこ怪我したの？"
     },
-    "hidden_nurse_d3_1_ins3": {
+    "hidden_nurse_d3_1_c": {
         "name": "{name}",
         "text": "怪我はしてないんですけど。"
     },
-    "hidden_nurse_d3_1_ins4": {
+    "hidden_nurse_d3_1_d": {
         "name": "保健先生",
         "text": "怪我してないのに保健室？"
     },
-    "hidden_nurse_d3_1_ins5": {
+    "hidden_nurse_d3_1_e": {
         "name": "{name}",
         "text": "……ちょっと休みたくて。"
     },
-    "hidden_nurse_d3_3_ins": {
+    "hidden_nurse_d3_3_b": {
         "name": "{name}",
         "text": "*保健先生が一瞬僕を見る。ふざけた雰囲気が消える。*"
     },
-    "hidden_nurse_d3_3_ins2": {
+    "hidden_nurse_d3_3_c": {
         "name": "保健先生",
         "text": "……座って。"
     },
-    "hidden_nurse_d3_3_ins3": {
+    "hidden_nurse_d3_3_d": {
         "name": "{name}",
         "text": "*声が変わった。冗談じゃないトーン。——この人が真面目になると、空気がガラッと変わる。*"
     },
-    "hidden_nurse_d3_5_ins": {
+    "hidden_nurse_d3_5_b": {
         "name": "{name}",
         "text": "*保健先生が一瞬止まる。——目が柔らかくなる。*"
     },
-    "hidden_nurse_d3_5_ins2": {
+    "hidden_nurse_d3_5_c": {
         "name": "保健先生",
         "text": "……そんな感じ？じゃあ来て正解だよ。"
     },
-    "hidden_nurse_d3_5_ins3": {
+    "hidden_nurse_d3_5_d": {
         "name": "{name}",
         "text": "*そんな感じの一言で態度が変わった。——共感を得ると開く人なんだ。*"
     },
-    "hidden_nurse_d3_5_ins4": {
+    "hidden_nurse_d3_5_e": {
         "name": "{name}",
         "text": "ただ……人間関係が複雑になって。"
     },
-    "hidden_nurse_d3_5_ins5": {
+    "hidden_nurse_d3_5_f": {
         "name": "保健先生",
         "text": "*椅子を引いて正面に座りながら* 人間関係ね"
     },
-    "hidden_nurse_d3_5_ins6": {
+    "hidden_nurse_d3_5_g": {
         "name": "{name}",
         "text": "何人も同時に気になるのに、一人だけ選ばないといけないような……"
     },
-    "hidden_nurse_d3_5_ins7": {
+    "hidden_nurse_d3_5_h": {
         "name": "{name}",
         "text": "*保健先生が少し黙る。そして。*"
     },
-    "hidden_nurse_d3_5_ins8": {
+    "hidden_nurse_d3_5_i": {
         "name": "保健先生",
         "text": "それ恋愛相談？"
     },
-    "hidden_nurse_d3_5_ins9": {
+    "hidden_nurse_d3_5_j": {
         "name": "{name}",
         "text": "あ、そういうのじゃ……"
     },
-    "hidden_nurse_d3_5_ins10": {
+    "hidden_nurse_d3_5_k": {
         "name": "保健先生",
         "text": "*ふふっ* 違うふりが一番バレやすいんだよ"
     },
-    "hidden_nurse_d3_5_ins11": {
+    "hidden_nurse_d3_5_l": {
         "name": "{name}",
         "text": "*図星だ。——この人の観察力は冗談じゃない。*"
     },
-    "hidden_nurse_d3_5_ins12": {
+    "hidden_nurse_d3_5_m": {
         "name": "保健先生",
         "text": "保健の先生がこんな相談まで受けるのかな…… *頬杖をつきながら* でも聞いてあげる。保健室だからね。体だけじゃなくて心も健康じゃないと"
     },
-    "hidden_nurse_d3_5_ins13": {
+    "hidden_nurse_d3_5_n": {
         "name": "{name}",
         "text": "先生もそういうことありましたか？何人もの間で混乱するような。"
     },
-    "hidden_nurse_d3_5_ins14": {
+    "hidden_nurse_d3_5_o": {
         "name": "{name}",
         "text": "*保健先生が少し止まる。視線が窓の外に向く。*"
     },
-    "hidden_nurse_d3_5_ins15": {
+    "hidden_nurse_d3_5_p": {
         "name": "保健先生",
         "text": "……あったよ。大学病院で働いてた時。"
     },
-    "hidden_nurse_d3_5_ins16": {
+    "hidden_nurse_d3_5_q": {
         "name": "{name}",
         "text": "大学病院？"
     },
-    "hidden_nurse_d3_6_ins": {
+    "hidden_nurse_d3_6_b": {
         "name": "{name}",
         "text": "*患者の話をしているのに、なぜか今の自分の状況と重なる。*"
     },
-    "hidden_nurse_d3_6_ins3": {
+    "hidden_nurse_d3_6_c": {
         "name": "保健先生",
         "text": "……やめたっていうより。逃げたんだよね *少し笑いながら* かっこいい理由なんてないよ"
     },
-    "hidden_nurse_d3_6_ins4": {
+    "hidden_nurse_d3_6_d": {
         "name": "{name}",
         "text": "*逃げたという言葉を自分で使う。——この人は自分の弱さを認めることに慣れている。*"
     },
-    "hidden_nurse_d3_6_ins6": {
+    "hidden_nurse_d3_6_e": {
         "name": "保健先生",
         "text": "……いたよ。救えなかった患者が一人 *視線が遠くなる* その人のせいで、ここに来たの"
     },
-    "hidden_nurse_d3_6_ins7": {
+    "hidden_nurse_d3_6_f": {
         "name": "{name}",
         "text": "*一人。——その一人が、この人の人生を変えたんだ。*"
     },
-    "hidden_nurse_d3_7_ins": {
+    "hidden_nurse_d3_7_b": {
         "name": "{name}",
         "text": "*保健先生が僕を見る。真剣に。*"
     },
-    "hidden_nurse_d3_8_ins": {
+    "hidden_nurse_d3_8_b": {
         "name": "{name}",
         "text": "*本気だ。ふざけた雰囲気が完全に消えた。——この人の声が一トーン低くなったら、それは本気のサインだ。*"
     },
-    "hidden_nurse_d3_8_ins2": {
+    "hidden_nurse_d3_8_c": {
         "name": "{name}",
         "text": "……ありがとうございます。"
     },
-    "hidden_nurse_d3_8_ins3": {
+    "hidden_nurse_d3_8_d": {
         "name": "保健先生",
         "text": "*また冗談っぽく* 何を。これくらいサービスよ。次は、具合が悪くなくても寄ってね。"
     },
-    "hidden_nurse_d3_8_ins4": {
+    "hidden_nurse_d3_8_e": {
         "name": "{name}",
         "text": "*怪我してもしてなくても。——この人が僕を患者以外の何かとして見始めたんじゃないか。*"
     },
-    "hidden_nurse_d3_9_ins": {
+    "hidden_nurse_d3_9_b": {
         "name": "{name}",
         "text": "*……え？——足が止まった。消毒液の匂いだけが空気の中に重く沈んでいる。*"
     },
-    "hidden_nurse_d3_9_ins3": {
+    "hidden_nurse_d3_9_c": {
         "name": "{name}",
         "text": "*保健先生が——笑っていない。聴診器をいじりながら窓の外を見ている。自分が言ったことに自分でも気づいていない人のように。*"
     },
-    "hidden_nurse_d3_9_ins5": {
+    "hidden_nurse_d3_9_d": {
         "name": "保健先生",
         "text": "*なんとか笑いながら* 冗談だよ～ほら行った行った！"
     },
-    "hidden_nurse_d3_9_ins6": {
+    "hidden_nurse_d3_9_e": {
         "name": "{name}",
         "text": "*冗談。——だよね？*"
     },
-    "hidden_nurse_d3_9_ins8": {
+    "hidden_nurse_d3_9_f": {
         "name": "{name}",
         "text": "*消毒液の匂いが急に濃くなった。ここからもう一歩踏み込んだら——この人を先生とは呼べなくなる気がする。*"
     },
-    "morning3_date_yuna_1_ins": {
+    "morning3_date_yuna_1_b": {
         "name": "ソヨン",
         "text": "今日は卵焼きなんだ。"
     },
-    "morning3_end_ins": {
+    "morning3_end_b": {
         "name": "ユナ",
         "text": "……おいしい。"
     }

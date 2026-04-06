@@ -31,7 +31,7 @@
         "name": "{name}",
         "text": "*こんなふうに崩れたソヨンを、初めて見る。——泣いている。*"
     },
-    "perfect_seo_1_ins": {
+    "perfect_seo_1_b": {
         "name": "{name}",
         "text": "*初めて眼鏡を外して——泣いている。*"
     },
@@ -51,7 +51,7 @@
         "name": "{name}",
         "text": "*ソヨンが手を伸ばす。小指じゃない。手全体を。*"
     },
-    "perfect_seo_5_ins": {
+    "perfect_seo_5_b": {
         "name": "{name}",
         "text": "*屋上の風が吹く。*"
     },
@@ -83,7 +83,7 @@
         "name": "ソヨン",
         "text": "...うまくいくと思ったのに。お互い、何か一歩ずつ足りなかったみたい。"
     },
-    "bitter_seo_2_ins": {
+    "bitter_seo_2_b": {
         "name": "{name}",
         "text": "*カフェで会ったソヨン。眼鏡の奥の視線が乾いている。余裕も震えもない。ただ——整理しに来た人の目だ。*"
     },
@@ -123,7 +123,7 @@
         "name": "ソヨン",
         "text": "…そばにいて。"
     },
-    "true_seo_7_ins": {
+    "true_seo_7_b": {
         "name": "{name}",
         "text": "*小指を絡めた。Day 1の癖、Day 4の約束、そして今。——同じ指、三つ目の意味。*"
     },
@@ -207,15 +207,15 @@
         "name": "ユナ",
         "text": "ここを知ってるのは私だけだった。"
     },
-    "true_yuna_2_ins": {
+    "true_yuna_2_b": {
         "name": "{name}",
         "text": "*ユナが屋根裏の小さなはしごを上る。上に向かうハッチがある。——開いた瞬間、風が吹き込む。*"
     },
-    "true_yuna_2_ins2": {
+    "true_yuna_2_c": {
         "name": "{name}",
         "text": "*屋根裏の上は屋上だった。図書館別館の屋上。——誰も知らない秘密の通路。*"
     },
-    "true_yuna_2_ins3": {
+    "true_yuna_2_d": {
         "name": "{name}",
         "text": "*ユナが手すりに寄りかかる。星が見える。*"
     },
@@ -231,7 +231,7 @@
         "name": "{name}",
         "text": "三番目の星？"
     },
-    "true_yuna_5_ins": {
+    "true_yuna_5_b": {
         "name": "{name}",
         "text": "*ユナが一瞬止まる。——笑う。初めて見る、音のない笑み。*"
     },
@@ -319,7 +319,7 @@
         "name": "{name}",
         "text": "*体育館を出た。雨が降っている。——ビックリマークが戻ってきたけど、最後の文にはなかった。ダインがピリオドで終えるのは、もう一緒にいるエネルギーが残っていないという意味だ。*"
     },
-    "bitter_dain_3_ins": {
+    "bitter_dain_3_b": {
         "name": "{name}",
         "text": "*校門の外に出た。雨が降っている。——傘はない。桜の花びらが雨に濡れて足元に貼りついている。*"
     },
@@ -420,7 +420,7 @@
         "name": "{name}",
         "text": "*前の学校では言えなかったことを後悔した。この学校では——言う相手が見つからなかったことを後悔しているのか？違う。見つけたのに選べなかったんだ。いや、選ぶ勇気がなかったんだ。*"
     },
-    "alone_2_ins": {
+    "alone_2_b": {
         "name": "{name}",
         "text": "*窓の外で桜が散る。5日前に鼻先をかすめたあの桜が、今は風に吹かれて消えていく。*"
     },
@@ -468,15 +468,15 @@
         "name": "ソヨン",
         "text": "よそ見した分、一生かけて返してもらうから。——利子つきで。"
     },
-    "good_1_seo_ins": {
+    "good_1_seo_b": {
         "name": "{name}",
         "text": "*桜の花びらがソヨンの髪に降りる。払おうか迷っていると——ソヨンが先に頭を傾ける。*"
     },
-    "good_1_seo_ins2": {
+    "good_1_seo_c": {
         "name": "{name}",
         "text": "*完璧なふりをしているけど、僕も完璧じゃなかった。*"
     },
-    "good_1_seo_ins3": {
+    "good_1_seo_d": {
         "name": "{name}",
         "text": "*桜は来年も咲く。並んで歩いた。*"
     },
@@ -520,7 +520,7 @@
         "name": "{name}",
         "text": "*ユナがメモを渡す。次は迷わないで。——短い。でも温かい。*"
     },
-    "good_1_yuna_b_ins": {
+    "good_1_yuna_b_b": {
         "name": "{name}",
         "text": "*消えた人の影を追いかけていた。*"
     },
@@ -728,7 +728,7 @@
         "name": "{name}",
         "text": "*ソヨンが最初に笑った。…そう。正直ね。笑顔の裏で歯を食いしばる音が聞こえたのは気のせいじゃなかった。*"
     },
-    "harem_1_ins": {
+    "harem_1_b": {
         "name": "{name}",
         "text": "*ユナがうつむいた。しばらくして顔を上げた時、泣くこともできない顔で笑っていた。唇を噛んでいる。*"
     },
@@ -861,7 +861,7 @@
         "name": "{name}",
         "text": "*空き教室。あの原稿を書いていた教室。——担任の先生が待っている。*"
     },
-    "hidden_true_homeroom_2_ins": {
+    "hidden_true_homeroom_2_b": {
         "name": "{name}",
         "text": "*教室の奥の窓辺に寄りかかって立っている。授業も仕事もない顔だ。*"
     },
@@ -869,11 +869,11 @@
         "name": "担任先生",
         "text": "卒業おめでとう。"
     },
-    "hidden_true_homeroom_3_ins": {
+    "hidden_true_homeroom_3_b": {
         "name": "{name}",
         "text": "ありがとうございます。"
     },
-    "hidden_true_homeroom_3_ins2": {
+    "hidden_true_homeroom_3_c": {
         "name": "担任先生",
         "text": "……その言い方。"
     },
@@ -881,31 +881,31 @@
         "name": "担任先生",
         "text": "…それ。『先生』って言わなかったね。初めて。"
     },
-    "hidden_true_homeroom_4_ins": {
+    "hidden_true_homeroom_4_b": {
         "name": "{name}",
         "text": "*無意識だった。——卒業した瞬間、肩書きが外れた。*"
     },
-    "hidden_true_homeroom_4_ins2": {
+    "hidden_true_homeroom_4_c": {
         "name": "{name}",
         "text": "*担任が封筒を取り出す。今度は茶色い封筒じゃない——白い封筒だ。*"
     },
-    "hidden_true_homeroom_4_ins3": {
+    "hidden_true_homeroom_4_d": {
         "name": "担任先生",
         "text": "原稿、完成したよ。君が一番最初に読んでくれたおかげで、ずっと書き進めることができたんだ。"
     },
-    "hidden_true_homeroom_4_ins4": {
+    "hidden_true_homeroom_4_e": {
         "name": "{name}",
         "text": "僕の感想文、役に立ちましたか？"
     },
-    "hidden_true_homeroom_4_ins5": {
+    "hidden_true_homeroom_4_f": {
         "name": "担任先生",
         "text": "「一行でいい」って言ったのに、三枚も書いてきてくれただろ。あれを見て、もうこれ以上先延ばしにする言い訳がなくなったよ。"
     },
-    "hidden_true_homeroom_4_ins6": {
+    "hidden_true_homeroom_4_g": {
         "name": "{name}",
         "text": "*担任が窓の外を見る。桜が散っている。*"
     },
-    "hidden_true_homeroom_4_ins7": {
+    "hidden_true_homeroom_4_h": {
         "name": "担任先生",
         "text": "*窓から振り返りながら*……一つだけ。"
     },
@@ -913,11 +913,11 @@
         "name": "担任先生",
         "text": "*窓の外を見ながら* 原稿、完成したよ。君が一番最初に読んでくれたおかげで、ずっと書き進めることができたんだ。「一行でいい」って言ったのに、三枚も書いてきてくれただろ。あれを見て、もうこれ以上先延ばしにする言い訳がなくなったよ。"
     },
-    "hidden_true_homeroom_5_ins": {
+    "hidden_true_homeroom_5_b": {
         "name": "{name}",
         "text": "*卒業式の日。——時間が流れた。*"
     },
-    "hidden_true_homeroom_5_ins2": {
+    "hidden_true_homeroom_5_c": {
         "name": "{name}",
         "text": "*制服はもう硬くない。いや、今日脱ぐ日だ。*"
     },
@@ -925,7 +925,7 @@
         "name": "担任先生",
         "text": "…一つだけ。…コーヒー飲みに行こう。今度はジュースじゃなくてコーヒー。"
     },
-    "hidden_true_homeroom_6_ins": {
+    "hidden_true_homeroom_6_b": {
         "name": "{name}",
         "text": "*ジュースからコーヒーへ。——学生から大人へ。線を越えるんじゃない、線が消えたんだ。*"
     },
@@ -933,15 +933,15 @@
         "name": "{name}",
         "text": "いいですね。"
     },
-    "hidden_true_homeroom_7_ins": {
+    "hidden_true_homeroom_7_b": {
         "name": "{name}",
         "text": "*担任が笑う。乾いた笑みじゃない、7年の未完成原稿を書き上げた人の笑み。*"
     },
-    "hidden_true_homeroom_7_ins2": {
+    "hidden_true_homeroom_7_c": {
         "name": "担任先生",
         "text": "……先生がこんなことしちゃダメなのにね。*——語尾がかすれる。そして笑う。*"
     },
-    "hidden_true_homeroom_7_ins3": {
+    "hidden_true_homeroom_7_d": {
         "name": "{name}",
         "text": "*最後の一回。そして直る癖。——7年間の先生が終わり、名前で呼ぶ日が来た。*"
     },
@@ -1034,15 +1034,15 @@
         "name": "{name}",
         "text": "*『卒業おめでとう。カフェで待ってる。』——絆創膏をはがすと、内側に小さな地図がある。カフェには保健の先生が座っている。保健室で会っていた時より、ずっと楽な顔だ。ただ——僕を待っていた人みたいに。*"
     },
-    "hidden_true_nurse_2_ins": {
+    "hidden_true_nurse_2_b": {
         "name": "{name}",
         "text": "*今日は先生というより、ただの一人の人間のように見える。*"
     },
-    "hidden_true_nurse_2_ins2": {
+    "hidden_true_nurse_2_c": {
         "name": "保健先生",
         "text": "卒業おめでとう。"
     },
-    "hidden_true_nurse_2_ins3": {
+    "hidden_true_nurse_2_d": {
         "name": "{name}",
         "text": "ありがとうございます。"
     },
@@ -1050,7 +1050,7 @@
         "name": "保健先生",
         "text": "卒業おめでとう。…今日から敬語はいらないよ。"
     },
-    "hidden_true_nurse_3_ins": {
+    "hidden_true_nurse_3_b": {
         "name": "{name}",
         "text": "なんで？"
     },
@@ -1062,23 +1062,23 @@
         "name": "保健先生",
         "text": "…でも今は、そうやってごまかすつもりはないわ。"
     },
-    "hidden_true_nurse_5_ins": {
+    "hidden_true_nurse_5_b": {
         "name": "{name}",
         "text": "*声が一段低くなった。ふざけた表情が完全に消えた。——これがこの人の本気だ。*"
     },
-    "hidden_true_nurse_5_ins2": {
+    "hidden_true_nurse_5_c": {
         "name": "保健先生",
         "text": "ダメだって分かってたでしょ。だからずっと冗談みたいに流してたのよ。"
     },
-    "hidden_true_nurse_5_ins3": {
+    "hidden_true_nurse_5_d": {
         "name": "保健先生",
         "text": "でもあなたは、私がごまかしていることまで全部見抜いていたわね。"
     },
-    "hidden_true_nurse_5_ins4": {
+    "hidden_true_nurse_5_e": {
         "name": "{name}",
         "text": "バンドエイド貼るのに3分かかるのは丁寧さじゃないですよね。"
     },
-    "hidden_true_nurse_5_ins5": {
+    "hidden_true_nurse_5_f": {
         "name": "{name}",
         "text": "*保健先生が一瞬止まる。——そして笑う。ふざけた笑みじゃない。*"
     },
@@ -1090,15 +1090,15 @@
         "name": "{name}",
         "text": "*カフェを出たあとも、なかなか手は離れなかった。気がつけば、そこは保健室じゃなくて先生の家の前だった。*"
     },
-    "hidden_true_nurse_7_ins": {
+    "hidden_true_nurse_7_b": {
         "name": "保健先生",
         "text": "……ここまで見透かされたのは、あなたが初めてよ。"
     },
-    "hidden_true_nurse_7_ins2": {
+    "hidden_true_nurse_7_c": {
         "name": "{name}",
         "text": "*保健先生が手を伸ばし、手の甲の絆創膏に触れる。今朝貼ってくれた、あの絆創膏。*"
     },
-    "hidden_true_nurse_7_ins3": {
+    "hidden_true_nurse_7_d": {
         "name": "{name}",
         "text": "*言い訳が必要だった人。——先生という肩書きが言い訳であり壁だった。その壁が今日消えた。*"
     },
@@ -1110,31 +1110,31 @@
         "name": "",
         "text": "─── 保健先生 TRUE LOVE END ───"
     },
-    "hidden_true_nurse_8_ins": {
+    "hidden_true_nurse_8_b": {
         "name": "保健先生",
         "text": "*コーヒーカップを回しながら*卒業証書の効力、思ったより早いね。"
     },
-    "hidden_true_nurse_8_ins2": {
+    "hidden_true_nurse_8_c": {
         "name": "{name}",
         "text": "*卒業という日が線を消す。——保健室じゃなくカフェで、先生じゃない人と。*"
     },
-    "hidden_true_nurse_8_ins3": {
+    "hidden_true_nurse_8_d": {
         "name": "{name}",
         "text": "*保健先生がこちらを見る。おふざけがない。*"
     },
-    "hidden_true_nurse_8_ins4": {
+    "hidden_true_nurse_8_e": {
         "name": "保健先生",
         "text": "ねえ。Day 1にあなたが保健室に来た時。"
     },
-    "hidden_true_nurse_8_ins5": {
+    "hidden_true_nurse_8_f": {
         "name": "{name}",
         "text": "めまいがして。"
     },
-    "hidden_true_nurse_8_ins6": {
+    "hidden_true_nurse_8_g": {
         "name": "保健先生",
         "text": "あの時おでこ触って触ってみたかったって言ったでしょ。*小さく笑いながら* あれ冗談だったんだよ。"
     },
-    "hidden_true_nurse_8_ins7": {
+    "hidden_true_nurse_8_h": {
         "name": "{name}",
         "text": "知ってます。"
     },
@@ -1146,15 +1146,15 @@
         "name": "保健先生",
         "text": "ビタミン。——大学では健康管理してね。…医療的関心。今回は本当に。"
     },
-    "hidden_good_nurse_2_ins": {
+    "hidden_good_nurse_2_b": {
         "name": "{name}",
         "text": "医療的関心ですか？"
     },
-    "hidden_good_nurse_2_ins2": {
+    "hidden_good_nurse_2_c": {
         "name": "保健先生",
         "text": "*少し間を置いて*……うん。医療的関心。*小さく*今度は本当に。"
     },
-    "hidden_good_nurse_2_ins3": {
+    "hidden_good_nurse_2_d": {
         "name": "{name}",
         "text": "*今度は本当に。——つまりこれまでは違ったということだ。*"
     },
@@ -1162,7 +1162,7 @@
         "name": "{name}",
         "text": "*保健室を出ながら。蓋の裏側に小さな文字。痛かったら連絡して。痛くなくても連絡して。— ♥*"
     },
-    "hidden_good_nurse_3_ins": {
+    "hidden_good_nurse_3_b": {
         "name": "{name}",
         "text": "*ふたを閉めても、口元がなかなか下がらない。*"
     },

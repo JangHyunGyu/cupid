@@ -519,39 +519,39 @@
         "name": "{name}",
         "text": "*The crunching of Dain's soboro bread is unusually loud. Seoyeon's gaze, Dain's red ears — lunch period is getting more complicated by the day.*"
     },
-    "lunch2_yuna_17_ins": {
+    "lunch2_yuna_17_b": {
         "name": "Yuna",
         "text": "......"
     },
-    "lunch2_yuna_c1_9_ins": {
+    "lunch2_yuna_c1_9_b": {
         "name": "{name}",
         "text": "*Yuna's gaze turns cold for an instant.*"
     },
-    "lunch2_seo_13b_ins": {
+    "lunch2_seo_13b_b": {
         "name": "Seoyeon",
         "text": "*Looking at {name}* ...Nice guy."
     },
-    "lunch2_seo_c1_2_ins": {
+    "lunch2_seo_c1_2_b": {
         "name": "{name}",
         "text": "*Dain's eyes widen as she looks back and forth between the two of us.*"
     },
-    "lunch2_seo_c1_3_ins": {
+    "lunch2_seo_c1_3_b": {
         "name": "Seoyeon",
         "text": "*Acting like nothing happened* It was a grain of rice."
     },
-    "lunch2_dain_13_ins": {
+    "lunch2_dain_13_b": {
         "name": "{name}",
         "text": "*Dain takes an exaggeratedly big bite of her soboro. Like the question she just asked wasn't a big deal.*"
     },
-    "lunch2_dain_end_ins": {
+    "lunch2_dain_end_b": {
         "name": "{name}",
         "text": "*Fifth period PE. Running on the field when — the guy next to me stops short and we collide. My elbow gets scraped.*"
     },
-    "lunch2_dain_end_ins3": {
+    "lunch2_dain_end_c": {
         "name": "PE Teacher",
         "text": "Go to the nurse's office and get it disinfected."
     },
-    "lunch2_dain_end_ins4": {
+    "lunch2_dain_end_d": {
         "name": "{name}",
         "text": "*I open the nurse's office door. Same antiseptic smell as yesterday.*"
     },
@@ -559,7 +559,7 @@
         "name": "{name}",
         "text": "*I open the door to the nurse's office. An unfamiliar scent of antiseptic tickles my nose.*"
     },
-    "lunch2_dain_end_ins5": {
+    "lunch2_dain_end_e": {
         "name": "School Nurse",
         "text": "*Looks up* Oh, yesterday's transfer student."
     },
@@ -567,11 +567,11 @@
         "name": "School Nurse",
         "text": "*Inside the nurse's office. Documents are piled on the desk, and the nurse is sitting in her chair.*"
     },
-    "lunch2_dain_end_ins6": {
+    "lunch2_dain_end_f": {
         "name": "{name}",
         "text": "Scraped my elbow a bit."
     },
-    "lunch2_dain_end_ins7": {
+    "lunch2_dain_end_g": {
         "name": "School Nurse",
         "text": "Back again? Trying to become a regular?"
     },
@@ -579,7 +579,7 @@
         "name": "School Nurse",
         "text": "...Oh? You're the one from earlier. What brings you here during lunch?"
     },
-    "lunch2_dain_end_ins8": {
+    "lunch2_dain_end_h": {
         "name": "{name}",
         "text": "*Same playful tone as yesterday. But her eyes are already examining the wound.*"
     },
@@ -587,87 +587,87 @@
         "name": "{name}",
         "text": "*You look better than you did this morning. That's a relief.*"
     },
-    "lunch2_dain_end_ins9": {
+    "lunch2_dain_end_i": {
         "name": "{name}",
         "text": "*The nurse comes over and takes my elbow. Her hands are cold.*"
     },
-    "lunch2_dain_end_ins10": {
+    "lunch2_dain_end_j": {
         "name": "School Nurse",
         "text": "Hold still..."
     },
-    "lunch2_dain_end_ins11": {
+    "lunch2_dain_end_k": {
         "name": "{name}",
         "text": "*She takes out a cotton ball soaked in antiseptic — dabs it carefully. Then pulls out a bandage.*"
     },
-    "lunch2_dain_end_ins13": {
+    "lunch2_dain_end_l": {
         "name": "School Nurse",
         "text": "*Applying the bandage* Here... like this... there, done."
     },
-    "lunch2_dain_end_ins14": {
+    "lunch2_dain_end_m": {
         "name": "{name}",
         "text": "*The nurse's hand pauses. — 0.5 seconds. Then it moves again.*"
     },
-    "lunch2_dain_end_ins15": {
+    "lunch2_dain_end_n": {
         "name": "School Nurse",
         "text": "...My hands tend to be cold. Guess they're warm today."
     },
-    "lunch2_dain_end_ins16": {
+    "lunch2_dain_end_o": {
         "name": "{name}",
         "text": "*That's not true. When she first touched me, they were cold. — They only got warm just now.*"
     },
-    "lunch2_dain_end_ins17": {
+    "lunch2_dain_end_p": {
         "name": "School Nurse",
         "text": "*Grinning* It's care. Real care. If you slap it on half-heartedly, it'll fall right off."
     },
-    "lunch2_dain_end_ins18": {
+    "lunch2_dain_end_q": {
         "name": "{name}",
         "text": "*Care... is that what it is? Or is there another reason?*"
     },
-    "lunch2_dain_end_ins19": {
+    "lunch2_dain_end_r": {
         "name": "{name}",
         "text": "*Checking the bandage — I notice a laptop open on the desk. The screen shows something. Not medical records — more like a personal journal.*"
     },
-    "lunch2_dain_end_ins21": {
+    "lunch2_dain_end_s": {
         "name": "School Nurse",
         "text": "*Narrowing her eyes* Just one? ...Hmm, fine then. I prefer cocoa over coffee. That's the secret."
     },
-    "lunch2_dain_end_ins22": {
+    "lunch2_dain_end_t": {
         "name": "{name}",
         "text": "*As secrets go, it's harmless enough. But the act of sharing it — that means something.*"
     },
-    "lunch2_dain_end_ins23": {
+    "lunch2_dain_end_u": {
         "name": "School Nurse",
         "text": "*Laughs softly* Secret. Teachers get to have secrets too, you know."
     },
-    "lunch2_dain_end_ins24": {
+    "lunch2_dain_end_v": {
         "name": "{name}",
         "text": "*She plays it off with a joke, but she closed that laptop fast. — There's something she doesn't want seen.*"
     },
-    "lunch2_dain_end_ins25": {
+    "lunch2_dain_end_w": {
         "name": "School Nurse",
         "text": "All done, so get back to class. — And next time, come without being hurt."
     },
-    "lunch2_dain_end_ins26": {
+    "lunch2_dain_end_x": {
         "name": "{name}",
         "text": "If I'm not hurt, I'd have no reason to come."
     },
-    "lunch2_dain_end_ins27": {
+    "lunch2_dain_end_y": {
         "name": "{name}",
         "text": "*The nurse pauses. And then — her voice drops a tone.*"
     },
-    "lunch2_dain_end_ins28": {
+    "lunch2_dain_end_z": {
         "name": "School Nurse",
         "text": "You can come even without a reason."
     },
-    "lunch2_dain_end_ins29": {
+    "lunch2_dain_end_b2": {
         "name": "{name}",
         "text": "*The playfulness is gone. — 0.5 seconds. Then it returns.*"
     },
-    "lunch2_dain_end_ins30": {
+    "lunch2_dain_end_c2": {
         "name": "School Nurse",
         "text": "*Brightening up again* Oh, but not during class. After school."
     },
-    "lunch2_dain_end_ins31": {
+    "lunch2_dain_end_d2": {
         "name": "{name}",
         "text": "*That shift in her voice just now. — Was I imagining things?*"
     },

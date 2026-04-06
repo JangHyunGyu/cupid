@@ -220,27 +220,27 @@
     "name": "Yuna",
     "text": "...Yeah. Good night."
   },
-  "night2_reply_yuna_6_ins": {
+  "night2_reply_yuna_6_b": {
     "name": "{name}",
     "text": "*The third star? — I open the window and look up at the night sky. Not sure which one is the third.*"
   },
-  "night2_reply_yuna_6_ins2": {
+  "night2_reply_yuna_6_c": {
     "name": "{name}",
     "text": "*A very Yuna riddle. A person who never gives you the answer. — A person who makes you want to find out.*"
   },
-  "night2_end_2_ins2": {
+  "night2_end_2_b": {
     "name": "{name}",
     "text": "*Those words keep echoing. I still haven't answered.*"
   },
-  "night2_end_3_ins": {
+  "night2_end_3_b": {
     "name": "{name}",
     "text": "*The problem is, that distance is closing faster than expected.*"
   },
-  "night2_end_4_ins": {
+  "night2_end_4_b": {
     "name": "{name}",
     "text": "*I open the fridge. Not much there. Leftover rice, eggs, seaweed. — I find myself wanting to pack something to bring tomorrow. For who? I'm not sure. I just want to.*"
   },
-  "night2_end_4_ins2": {
+  "night2_end_4_c": {
     "name": "{name}",
     "text": "*I threw together a lunch box. It's not great. Too rough to call it made with care. — But it's better than nothing.*"
   }

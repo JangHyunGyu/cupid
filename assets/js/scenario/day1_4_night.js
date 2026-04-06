@@ -181,9 +181,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "night_dain_late_4": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "night_dain_late_4_ins"
+        "next": "night_dain_late_4_b"
     },
-    "night_dain_late_4_ins": {
+    "night_dain_late_4_b": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
         "next": "night_end_1"

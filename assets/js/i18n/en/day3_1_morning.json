@@ -440,319 +440,319 @@
         "name": "{name}",
         "text": "*I head back to the classroom. One class passes, and another short break arrives.*"
     },
-    "morning3_seo_gate_6_ins": {
+    "morning3_seo_gate_6_b": {
         "name": "{name}",
         "text": "*Seoyeon walks on. Confidently. She doesn't rush, even though she's late.*"
     },
-    "morning3_yuna_gate_6_ins2": {
+    "morning3_yuna_gate_6_b": {
         "name": "{name}",
         "text": "*The note: I figured you hadn't eaten breakfast.*"
     },
-    "morning3_dain_gate_4_ins": {
+    "morning3_dain_gate_4_b": {
         "name": "Dain",
         "text": "This is faster!! Don't question it!!"
     },
-    "morning3_dain_gate_5_ins": {
+    "morning3_dain_gate_5_b": {
         "name": "{name}",
         "text": "*The moment we crossed the gate, Dain landed and let out a small ngh. But when I looked back, she was smiling like nothing happened. — Did I mishear?*"
     },
-    "morning3_react_yuna_1_ins": {
+    "morning3_react_yuna_1_b": {
         "name": "{name}",
         "text": "*Dain, bluntly.*"
     },
-    "morning3_react_yuna_2_ins": {
+    "morning3_react_yuna_2_b": {
         "name": "{name}",
         "text": "*Seoyeon, casually at the classroom door.*"
     },
-    "hidden_homeroom_d3_4_ins": {
+    "hidden_homeroom_d3_4_b": {
         "name": "{name}",
         "text": "*The homeroom teacher's hand is paused over some manuscript paper. Through the flipped-over sheets, I can make out dense writing.*"
     },
-    "hidden_homeroom_d3_4_ins3": {
+    "hidden_homeroom_d3_4_c": {
         "name": "{name}",
         "text": "*The homeroom teacher's expression snaps back instantly. His usual indifferent face. — That was a quick switch.*"
     },
-    "hidden_homeroom_d3_4_ins4": {
+    "hidden_homeroom_d3_4_d": {
         "name": "Homeroom Teacher",
         "text": "...What are you staring at? Why are you even here during break?"
     },
-    "hidden_homeroom_d3_4_ins5": {
+    "hidden_homeroom_d3_4_e": {
         "name": "{name}",
         "text": "*Manuscript paper. Dense writing. That hidden expression. — Should I ask, or just play dumb?*"
     },
-    "hidden_homeroom_d3_3_ins": {
+    "hidden_homeroom_d3_3_b": {
         "name": "{name}",
         "text": "*Half a second. Frozen. — It's an expression I've never seen on the teacher before. Not indifferent, not dry. The face of someone who's been caught.*"
     },
-    "hidden_homeroom_d3_reveal_2_ins": {
+    "hidden_homeroom_d3_reveal_2_b": {
         "name": "Homeroom Teacher",
         "text": "...It's nothing. Just work documents."
     },
-    "hidden_homeroom_d3_reveal_2_ins2": {
+    "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
         "text": "Work documents in an empty classroom?"
     },
-    "hidden_homeroom_d3_reveal_2_ins3": {
+    "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
         "text": "*The teacher closes her mouth for a moment. Then — sighs. Briefly.*"
     },
-    "hidden_homeroom_d3_reveal_2_ins4": {
+    "hidden_homeroom_d3_reveal_2_e": {
         "name": "Homeroom Teacher",
         "text": "*Sighing* ...Being perceptive is usually a strength. Sometimes it's a flaw."
     },
-    "hidden_homeroom_d3_reveal_2_ins5": {
+    "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
         "text": "*The teacher pauses. She fingers the manuscript paper. — Then leans back in her chair.*"
     },
-    "hidden_homeroom_d3_reveal_1_ins": {
+    "hidden_homeroom_d3_reveal_1_b": {
         "name": "{name}",
         "text": "How long?"
     },
-    "hidden_homeroom_d3_reveal_1_ins2": {
+    "hidden_homeroom_d3_reveal_1_c": {
         "name": "Homeroom Teacher",
         "text": "Seven years. *Looking out the window* Started in college. Creative writing major."
     },
-    "hidden_homeroom_d3_reveal_1_ins3": {
+    "hidden_homeroom_d3_reveal_1_d": {
         "name": "{name}",
         "text": "You studied creative writing?"
     },
-    "hidden_homeroom_d3_reveal_1_ins4": {
+    "hidden_homeroom_d3_reveal_1_e": {
         "name": "Homeroom Teacher",
         "text": "After graduating, I tried to debut as a writer — failed three times over two years. Money ran out, parents said 'time to be realistic.'"
     },
-    "hidden_homeroom_d3_reveal_1_ins5": {
+    "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
         "text": "*The teacher lifts a sheet of manuscript paper. It's covered in dense handwriting.*"
     },
-    "hidden_homeroom_d3_reveal_3_ins": {
+    "hidden_homeroom_d3_reveal_3_b": {
         "name": "{name}",
         "text": "Did you give up?"
     },
-    "hidden_homeroom_d3_reveal_3_ins2": {
+    "hidden_homeroom_d3_reveal_3_c": {
         "name": "{name}",
         "text": "*The teacher sets the manuscript paper down. Slowly.*"
     },
-    "hidden_homeroom_d3_reveal_4_ins": {
+    "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
         "text": "*So this is the story behind her dry demeanor. — An unfinished manuscript in the teacher's desk drawer. Seven years.*"
     },
-    "hidden_homeroom_d3_reveal_4_ins2": {
+    "hidden_homeroom_d3_reveal_4_c": {
         "name": "Homeroom Teacher",
         "text": "*Suddenly serious* ...You can't tell anyone about this. If a student knew their teacher's — this side, my authority — well, I never had much to begin with."
     },
-    "hidden_homeroom_d3_reveal_4_ins3": {
+    "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
         "text": "A secret?"
     },
-    "hidden_homeroom_d3_reveal_4_ins4": {
+    "hidden_homeroom_d3_reveal_4_e": {
         "name": "Homeroom Teacher",
         "text": "*Tucking her hair back* It's a secret. — Not exactly a good educational example. Telling a student something like this."
     },
-    "hidden_homeroom_d3_reveal_4_ins5": {
+    "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
         "text": "*'Educational.' — She's wrapping it in work talk again. But this time, the tone carries genuine regret.*"
     },
-    "hidden_homeroom_d3_reveal_4_ins6": {
+    "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
         "text": "I'd like to read it, though. Your novel."
     },
-    "hidden_homeroom_d3_reveal_6_ins": {
+    "hidden_homeroom_d3_reveal_6_b": {
         "name": "Homeroom Teacher",
         "text": "...Then you're the first person to read it. In seven years."
     },
-    "hidden_homeroom_d3_reveal_6_ins2": {
+    "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
         "text": "*The smile is awkward. — Is she awkward at smiling, or has she forgotten how?*"
     },
-    "hidden_homeroom_d3_reveal_6_ins3": {
+    "hidden_homeroom_d3_reveal_6_d": {
         "name": "Homeroom Teacher",
         "text": "*She hesitates. The hand touching the manuscript paper stops.* ...You're the first person to call it perseverance."
     },
-    "hidden_homeroom_d3_reveal_6_ins4": {
+    "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
         "text": "*She called seven years 'not being able to give up.' But one sentence that shifted her perspective — and her eyes wavered.*"
     },
-    "hidden_homeroom_d3_reveal_6_ins5": {
+    "hidden_homeroom_d3_reveal_6_f": {
         "name": "Homeroom Teacher",
         "text": "It's quiet here. — The staff room smells like coffee and everyone's watching."
     },
-    "hidden_homeroom_d3_reveal_6_ins6": {
+    "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
         "text": "*The reason she chose an empty classroom is practical, but it also means — she's someone who needs a space of her own.*"
     },
-    "hidden_nurse_d3_2_ins": {
+    "hidden_nurse_d3_2_b": {
         "name": "{name}",
         "text": "*The teacher uses the word 'please.' — For her, that's a rare word.*"
     },
-    "hidden_nurse_d3_2_ins2": {
+    "hidden_nurse_d3_2_c": {
         "name": "{name}",
         "text": "*I leave the classroom — and from behind, quietly.*"
     },
-    "hidden_nurse_d3_2_ins3": {
+    "hidden_nurse_d3_2_d": {
         "name": "Homeroom Teacher",
         "text": "...Thank you."
     },
-    "hidden_nurse_d3_2_ins4": {
+    "hidden_nurse_d3_2_e": {
         "name": "{name}",
         "text": "*I'm not sure what she's thanking me for. For not looking away? Or — for coming this far?*"
     },
-    "hidden_nurse_d3_1_ins2": {
+    "hidden_nurse_d3_1_b": {
         "name": "School Nurse",
         "text": "*Looking up* ...Hm? Where are you hurt today?"
     },
-    "hidden_nurse_d3_1_ins3": {
+    "hidden_nurse_d3_1_c": {
         "name": "{name}",
         "text": "I'm not hurt."
     },
-    "hidden_nurse_d3_1_ins4": {
+    "hidden_nurse_d3_1_d": {
         "name": "School Nurse",
         "text": "Not hurt but coming to the nurse's office?"
     },
-    "hidden_nurse_d3_1_ins5": {
+    "hidden_nurse_d3_1_e": {
         "name": "{name}",
         "text": "...I just wanted to rest a bit."
     },
-    "hidden_nurse_d3_3_ins": {
+    "hidden_nurse_d3_3_b": {
         "name": "{name}",
         "text": "*The nurse looks at me for a moment. The playfulness vanishes.*"
     },
-    "hidden_nurse_d3_3_ins2": {
+    "hidden_nurse_d3_3_c": {
         "name": "School Nurse",
         "text": "...Sit down."
     },
-    "hidden_nurse_d3_3_ins3": {
+    "hidden_nurse_d3_3_d": {
         "name": "{name}",
         "text": "*Her voice changed. Not joking anymore. — When this person gets serious, the whole atmosphere shifts.*"
     },
-    "hidden_nurse_d3_5_ins": {
+    "hidden_nurse_d3_5_b": {
         "name": "{name}",
         "text": "*The nurse pauses. — Her eyes soften.*"
     },
-    "hidden_nurse_d3_5_ins2": {
+    "hidden_nurse_d3_5_c": {
         "name": "School Nurse",
         "text": "...Something like that? Then it's good you came here."
     },
-    "hidden_nurse_d3_5_ins3": {
+    "hidden_nurse_d3_5_d": {
         "name": "{name}",
         "text": "*One 'something like that' and her whole attitude changed. — She's someone who opens up when she feels understood.*"
     },
-    "hidden_nurse_d3_5_ins4": {
+    "hidden_nurse_d3_5_e": {
         "name": "{name}",
         "text": "Just... relationships got complicated."
     },
-    "hidden_nurse_d3_5_ins5": {
+    "hidden_nurse_d3_5_f": {
         "name": "School Nurse",
         "text": "*Pulling up a chair and sitting across from me* Relationships."
     },
-    "hidden_nurse_d3_5_ins6": {
+    "hidden_nurse_d3_5_g": {
         "name": "{name}",
         "text": "I'm worried about multiple people at once, but I feel like I have to choose just one..."
     },
-    "hidden_nurse_d3_5_ins7": {
+    "hidden_nurse_d3_5_h": {
         "name": "{name}",
         "text": "*The nurse is silent for a moment. Then.*"
     },
-    "hidden_nurse_d3_5_ins8": {
+    "hidden_nurse_d3_5_i": {
         "name": "School Nurse",
         "text": "Is this a love consultation?"
     },
-    "hidden_nurse_d3_5_ins9": {
+    "hidden_nurse_d3_5_j": {
         "name": "{name}",
         "text": "Oh, it's not like that..."
     },
-    "hidden_nurse_d3_5_ins10": {
+    "hidden_nurse_d3_5_k": {
         "name": "School Nurse",
         "text": "*Smirks* Pretending it's not is the most obvious giveaway."
     },
-    "hidden_nurse_d3_5_ins11": {
+    "hidden_nurse_d3_5_l": {
         "name": "{name}",
         "text": "*Bull's-eye. — Her observation skills are no joke.*"
     },
-    "hidden_nurse_d3_5_ins12": {
+    "hidden_nurse_d3_5_m": {
         "name": "School Nurse",
         "text": "Should a school nurse even be doing this kind of counseling... *Resting her chin on her hand* But I'll listen. This is the nurse's office, after all. Your heart needs to be healthy too, right?"
     },
-    "hidden_nurse_d3_5_ins13": {
+    "hidden_nurse_d3_5_n": {
         "name": "{name}",
         "text": "Have you ever felt that way? Torn between multiple people?"
     },
-    "hidden_nurse_d3_5_ins14": {
+    "hidden_nurse_d3_5_o": {
         "name": "{name}",
         "text": "*The nurse pauses. Her gaze drifts to the window.*"
     },
-    "hidden_nurse_d3_5_ins15": {
+    "hidden_nurse_d3_5_p": {
         "name": "School Nurse",
         "text": "...Yeah. Back when I worked at the university hospital."
     },
-    "hidden_nurse_d3_5_ins16": {
+    "hidden_nurse_d3_5_q": {
         "name": "{name}",
         "text": "University hospital?"
     },
-    "hidden_nurse_d3_6_ins": {
+    "hidden_nurse_d3_6_b": {
         "name": "{name}",
         "text": "*She's talking about patients, but somehow it overlaps with my situation.*"
     },
-    "hidden_nurse_d3_6_ins3": {
+    "hidden_nurse_d3_6_c": {
         "name": "School Nurse",
         "text": "...It wasn't so much quitting. I ran away. *With a faint smile* There's no glamorous reason."
     },
-    "hidden_nurse_d3_6_ins4": {
+    "hidden_nurse_d3_6_d": {
         "name": "{name}",
         "text": "*She uses the word 'ran away' herself. — This person is used to acknowledging her own weakness.*"
     },
-    "hidden_nurse_d3_6_ins6": {
+    "hidden_nurse_d3_6_e": {
         "name": "School Nurse",
         "text": "...There was one. A patient I couldn't save. *Her gaze drifts.* That person is why I'm here."
     },
-    "hidden_nurse_d3_6_ins7": {
+    "hidden_nurse_d3_6_f": {
         "name": "{name}",
         "text": "*One person. — That one person changed her whole life.*"
     },
-    "hidden_nurse_d3_7_ins": {
+    "hidden_nurse_d3_7_b": {
         "name": "{name}",
         "text": "*The nurse looks at me. Seriously.*"
     },
-    "hidden_nurse_d3_8_ins": {
+    "hidden_nurse_d3_8_b": {
         "name": "{name}",
         "text": "*She means it. The playfulness is completely gone. — When her voice drops a tone, that's her signal of sincerity.*"
     },
-    "hidden_nurse_d3_8_ins2": {
+    "hidden_nurse_d3_8_c": {
         "name": "{name}",
         "text": "...Thank you."
     },
-    "hidden_nurse_d3_8_ins3": {
+    "hidden_nurse_d3_8_d": {
         "name": "School Nurse",
         "text": "*Playful again* Oh, it's nothing. Consider it a freebie. Come by again sometime. Hurt or not."
     },
-    "hidden_nurse_d3_8_ins4": {
+    "hidden_nurse_d3_8_e": {
         "name": "{name}",
         "text": "*'Hurt or not.' — Is she starting to see me as something other than a patient?*"
     },
-    "hidden_nurse_d3_9_ins": {
+    "hidden_nurse_d3_9_b": {
         "name": "{name}",
         "text": "*...What? — My feet stopped. Only the smell of disinfectant hangs heavy in the air.*"
     },
-    "hidden_nurse_d3_9_ins3": {
+    "hidden_nurse_d3_9_c": {
         "name": "{name}",
         "text": "*The nurse — isn't smiling. She's fidgeting with her stethoscope, looking out the window. Like someone who didn't even realize what she just said.*"
     },
-    "hidden_nurse_d3_9_ins5": {
+    "hidden_nurse_d3_9_d": {
         "name": "School Nurse",
         "text": "*Barely managing a smile* I'm kidding. Off you go."
     },
-    "hidden_nurse_d3_9_ins6": {
+    "hidden_nurse_d3_9_e": {
         "name": "{name}",
         "text": "*A joke. — Right?*"
     },
-    "hidden_nurse_d3_9_ins8": {
+    "hidden_nurse_d3_9_f": {
         "name": "{name}",
         "text": "*The smell of disinfectant suddenly grew stronger. One more step from here — and I might not be able to call her 'teacher' anymore.*"
     },
-    "morning3_date_yuna_1_ins": {
+    "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
         "text": "Rolled omelette today, huh."
     },
-    "morning3_end_ins": {
+    "morning3_end_b": {
         "name": "Yuna",
         "text": "...It's good."
     }

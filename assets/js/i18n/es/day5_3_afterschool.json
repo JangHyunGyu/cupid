@@ -43,7 +43,7 @@
         "name": "Seoyeon",
         "text": "La próxima vez, seré yo quien te lleve."
     },
-    "after5_farewell_seo_6_ins": {
+    "after5_farewell_seo_6_b": {
         "name": "{name}",
         "text": "*Seoyeon se gira y saluda con la mano. — El mismo gesto que el Día 1. No mira atrás.*"
     },
@@ -93,15 +93,15 @@
         "name": "Dain",
         "text": "Pero bueno, tú elegiste. ¡La próxima vez más te vale darme una oportunidad!"
     },
-    "after5_farewell_dain_4_ins": {
+    "after5_farewell_dain_4_b": {
         "name": "{name}",
         "text": "*Sonríe y me da un puñetazo en el hombro. — La misma fuerza que el primer día.*"
     },
-    "after5_farewell_dain_4_ins2": {
+    "after5_farewell_dain_4_c": {
         "name": "Dain",
         "text": "...Hazlo bien. De verdad."
     },
-    "after5_farewell_dain_4_ins3": {
+    "after5_farewell_dain_4_d": {
         "name": "{name}",
         "text": "*Los signos de exclamación siguen vivos. — Dain es Dain hasta el final. Esa es su fortaleza.*"
     },
@@ -152,39 +152,39 @@
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
-    "after5_last_chance_2_ins": {
+    "after5_last_chance_2_b": {
         "name": "{name}",
         "text": "*Casi huyo otra vez. Como en mi antigua escuela. El móvil en el bolsillo, sin poder decir nada — ese momento casi volvió. — No. Esta vez no.*"
     },
-    "after5_last_chance_2_ins3": {
+    "after5_last_chance_2_c": {
         "name": "{name}",
         "text": "Seoyeon."
     },
-    "after5_last_chance_2_ins4": {
+    "after5_last_chance_2_d": {
         "name": "{name}",
         "text": "*Seoyeon se da la vuelta. El atardecer a su espalda.*"
     },
-    "after5_last_chance_2_ins5": {
+    "after5_last_chance_2_e": {
         "name": "Seoyeon",
         "text": "...Llegas tarde."
     },
-    "after5_last_chance_2_ins6": {
+    "after5_last_chance_2_f": {
         "name": "{name}",
         "text": "*Un momento de silencio. El viento le agita el pelo. No se lo aparta.*"
     },
-    "after5_last_chance_2_ins7": {
+    "after5_last_chance_2_g": {
         "name": "Seoyeon",
         "text": "Pero — esta vez no quiero dejarte ir así. Porque no huiste y regresaste."
     },
-    "after5_last_chance_2_ins8": {
+    "after5_last_chance_2_h": {
         "name": "{name}",
         "text": "*Extiende el meñique. El mismo dedo que no pude tomar en el Día 4.*"
     },
-    "after5_last_chance_2_ins9": {
+    "after5_last_chance_2_i": {
         "name": "Seoyeon",
         "text": "Esta vez, agárralo."
     },
-    "after5_last_chance_2_ins10": {
+    "after5_last_chance_2_j": {
         "name": "{name}",
         "text": "*Caminando uno al lado del otro — dejamos la escuela atrás.*"
     },
@@ -197,39 +197,39 @@
         "text": "*Seoyeon se da vuelta. Sus pies están medio girados, listos para irse en cualquier momento.* ...Qué."
     },
     "after5_last_chance_dain_aff_check": {},
-    "after5_last_chance_2_ins11": {
+    "after5_last_chance_2_k": {
         "name": "{name}",
         "text": "Dain."
     },
-    "after5_last_chance_2_ins12": {
+    "after5_last_chance_2_l": {
         "name": "{name}",
         "text": "*Dain venía corriendo y se detiene.*"
     },
-    "after5_last_chance_2_ins13": {
+    "after5_last_chance_2_m": {
         "name": "Dain",
         "text": "Espera, ¿¡en serio!?"
     },
-    "after5_last_chance_2_ins14": {
+    "after5_last_chance_2_n": {
         "name": "{name}",
         "text": "*Los ojos se le abren. Un segundo. Dos segundos.*"
     },
-    "after5_last_chance_2_ins15": {
+    "after5_last_chance_2_o": {
         "name": "Dain",
         "text": "...¿En serio?"
     },
-    "after5_last_chance_2_ins16": {
+    "after5_last_chance_2_p": {
         "name": "{name}",
         "text": "*Los signos de exclamación desaparecen. Su voz se apaga. — Se le llenan los ojos.*"
     },
-    "after5_last_chance_2_ins17": {
+    "after5_last_chance_2_q": {
         "name": "Dain",
         "text": "Yo — te estuve esperando. Desde ayer. No, desde anteayer. Pero que haya esperado no significa que todo esté bien de inmediato."
     },
-    "after5_last_chance_2_ins18": {
+    "after5_last_chance_2_r": {
         "name": "{name}",
         "text": "*Se frota los ojos con el puño. Riendo y llorando a la vez.*"
     },
-    "after5_last_chance_2_ins19": {
+    "after5_last_chance_2_s": {
         "name": "Dain",
         "text": "Ay, ¿por qué lloras? — si es algo bueno —"
     },
@@ -321,35 +321,35 @@
         "name": "{name}",
         "text": "Yuna."
     },
-    "after5_confess_react_yuna_ins": {
+    "after5_confess_react_yuna_b": {
         "name": "{name}",
         "text": "*Yuna deja el libro. Su expresión no cambia. — Pero le tiemblan las manos.*"
     },
-    "after5_confess_react_yuna_ins2": {
+    "after5_confess_react_yuna_c": {
         "name": "Yuna",
         "text": "...Ya lo sabía."
     },
-    "after5_confess_react_yuna_ins3": {
+    "after5_confess_react_yuna_d": {
         "name": "{name}",
         "text": "*Me entrega una nota. Papel doblado. Una línea al abrirlo.*"
     },
-    "after5_confess_react_yuna_ins4": {
+    "after5_confess_react_yuna_e": {
         "name": "{name}",
         "text": "*'Esperé. — Mucho tiempo.'*"
     },
-    "after5_confess_react_yuna_ins5": {
+    "after5_confess_react_yuna_f": {
         "name": "{name}",
         "text": "*Una sola línea, pero la tinta está corrida. — Estaba llorando mientras la escribía.*"
     },
-    "after5_confess_react_yuna_ins6": {
+    "after5_confess_react_yuna_g": {
         "name": "Yuna",
         "text": "...Si lo leíste, es suficiente."
     },
-    "after5_confess_react_yuna_ins7": {
+    "after5_confess_react_yuna_h": {
         "name": "{name}",
         "text": "*Caminamos uno al lado del otro. En silencio.*"
     },
-    "after5_confess_react_yuna_ins8": {
+    "after5_confess_react_yuna_i": {
         "name": "{name}",
         "text": "*Y así — caminamos más allá de la escuela.*"
     },

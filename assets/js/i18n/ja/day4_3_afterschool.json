@@ -19,7 +19,7 @@
         "name": "{name}",
         "text": "*ソヨンが手すりにもたれている。風で髪がなびく。——小指で髪を押さえる、あの癖。*"
     },
-    "confess_seo_4_ins": {
+    "confess_seo_4_b": {
         "name": "{name}",
         "text": "*胸が鳴る。前の学校でもこうだった。——あの時は、飲み込んだ言葉。*"
     },
@@ -79,7 +79,7 @@
         "name": "ソヨン",
         "text": "この話を切り出すまで、本当に時間がかかったんだ。"
     },
-    "confess_seo_yes_11_ins": {
+    "confess_seo_yes_11_b": {
         "name": "{name}",
         "text": "*ソヨンの手が動く。*"
     },
@@ -103,7 +103,7 @@
         "name": "ソヨン",
         "text": "…次に来る時は、別の言葉を準備してきて。"
     },
-    "confess_seo_no_4_ins": {
+    "confess_seo_no_4_b": {
         "name": "{name}",
         "text": "*背筋が伸びている。震えている。*"
     },
@@ -151,7 +151,7 @@
         "name": "{name}",
         "text": "ユナ。最初は君が話さないのが壁だと思ってた。でも違った。"
     },
-    "confess_yuna_yes_3_ins": {
+    "confess_yuna_yes_3_b": {
         "name": "{name}",
         "text": "君の隣にいると、静かなのが苦じゃなかった。"
     },
@@ -167,7 +167,7 @@
         "name": "{name}",
         "text": "好きだ。"
     },
-    "confess_yuna_yes_6_ins": {
+    "confess_yuna_yes_6_b": {
         "name": "{name}",
         "text": "*この部屋で一番長い文章を僕が言った。——ユナの領域で。*"
     },
@@ -179,11 +179,11 @@
         "name": "{name}",
         "text": "*ユナの無表情が崩れている。気だるい声が消えて、とても小さな――ほとんど聞こえない声で。袖をぎゅっと握っている。*"
     },
-    "confess_yuna_yes_8_ins": {
+    "confess_yuna_yes_8_b": {
         "name": "{name}",
         "text": "*袖をぎゅっと握りしめる。*"
     },
-    "confess_yuna_yes_8_ins2": {
+    "confess_yuna_yes_8_c": {
         "name": "ユナ",
         "text": "……行かないで。"
     },
@@ -191,7 +191,7 @@
         "name": "ユナ",
         "text": "…行かないで。今度は行かないで。"
     },
-    "confess_yuna_yes_9_ins": {
+    "confess_yuna_yes_9_b": {
         "name": "{name}",
         "text": "*今度は。——前に去った人がいた。ユナはその傷をまた開きながら、それでも僕をつかんでいる。*"
     },
@@ -211,7 +211,7 @@
         "name": "ユナ",
         "text": "…結末はまだだよ。"
     },
-    "confess_yuna_no_4_ins": {
+    "confess_yuna_no_4_b": {
         "name": "{name}",
         "text": "*三歩離れて振り返った。ユナも本越しにこちらを見ていた。*"
     },
@@ -259,7 +259,7 @@
         "name": "{name}",
         "text": "ダイン。私、— あなたに伝えたいことがあるの。"
     },
-    "confess_dain_yes_3_ins": {
+    "confess_dain_yes_3_b": {
         "name": "{name}",
         "text": "その目が僕を見てない時——ちょっと息苦しい。"
     },
@@ -283,7 +283,7 @@
         "name": "{name}",
         "text": "*ダインがそのまま固まる。笑顔の消えた顔に、ゆっくりと瞳だけが潤んでいく。両手で顔を覆い隠してしまう。*"
     },
-    "confess_dain_yes_8_ins": {
+    "confess_dain_yes_8_b": {
         "name": "{name}",
         "text": "*両手で顔を覆う。指の隙間から赤い頬が見える。*"
     },
@@ -291,7 +291,7 @@
         "name": "ダイン",
         "text": "…ちょっと、私今本当に泣きそうなんだけど……嬉しいのに、どうしてこうなるの……"
     },
-    "confess_dain_yes_9_ins": {
+    "confess_dain_yes_9_b": {
         "name": "{name}",
         "text": "*手を下ろして笑う。涙が流れている。*"
     },
@@ -299,7 +299,7 @@
         "name": "ダイン",
         "text": "私も好き。めちゃくちゃ。"
     },
-    "confess_dain_yes_10_ins": {
+    "confess_dain_yes_10_b": {
         "name": "{name}",
         "text": "*「めっちゃ」——ダインはいつもこうだ。短くて素直。だから信じられる。*"
     },
@@ -319,7 +319,7 @@
         "name": "ダイン",
         "text": "…次は逃げないで。"
     },
-    "confess_dain_no_4_ins": {
+    "confess_dain_no_4_b": {
         "name": "{name}",
         "text": "*感嘆符がない。——本気だ。*"
     }

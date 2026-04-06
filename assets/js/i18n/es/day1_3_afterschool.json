@@ -352,175 +352,175 @@
         "name": "{name}",
         "text": "*Sigo caminando por el pasillo.*"
     },
-    "after_miss_dain_6_ins": {
+    "after_miss_dain_6_b": {
         "name": "{name}",
         "text": "*Se despide con la mano y sale corriendo. — Al frenar, arrastró ligeramente la pierna derecha. ¿O me lo pareció? Fue demasiado rápido para estar seguro.*"
     },
-    "after_miss_yuna_1_ins": {
+    "after_miss_yuna_1_b": {
         "name": "{name}",
         "text": "Oye, se te cayó esto..."
     },
-    "after_miss_yuna_1_ins2": {
+    "after_miss_yuna_1_c": {
         "name": "{name}",
         "text": "*Lo recojo y se lo ofrezco. Yuna se detiene y toma el marcapáginas.*"
     },
-    "after_miss_yuna_3_ins": {
+    "after_miss_yuna_3_b": {
         "name": "{name}",
         "text": "*Lo único que muestra es su espalda.*"
     },
-    "after_hidden_homeroom_3_ins": {
+    "after_hidden_homeroom_3_b": {
         "name": "{name}",
         "text": "Antes me preguntó cómo me estaba adaptando. Supongo que... esa frase se me quedó dando vueltas."
     },
-    "after_hidden_homeroom_3_ins2": {
+    "after_hidden_homeroom_3_c": {
         "name": "Profesora",
         "text": "Ah. ¿Así que venía por eso? — Hiciste bien en venir. Siéntate un momento."
     },
-    "after_homeroom_ok_ins": {
+    "after_homeroom_ok_b": {
         "name": "{name}",
         "text": "*Aparta a un lado los papeles del escritorio y vuelve a mirarme. El ambiente dice que esto no termina con una sola frase.*"
     },
-    "after_homeroom_honest_3_ins": {
+    "after_homeroom_honest_3_b": {
         "name": "{name}",
         "text": "*¿Algo similar? — ¿Eso significa que hizo algo distinto a la enseñanza antes?*"
     },
-    "after_homeroom_honest_6_ins": {
+    "after_homeroom_honest_6_b": {
         "name": "{name}",
         "text": "*'Interés profesional'. — Es de esas personas que disfrazan su preocupación con títulos laborales.*"
     },
-    "after_homeroom_honest_choice2a_ins": {
+    "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
         "text": "*Lo admitió con honestidad. — La fachada de esta persona cae sorprendentemente rápido.*"
     },
-    "after_homeroom_honest_choice2b_ins": {
+    "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
         "text": "*Cierra el registro y se pone de pie. Llega hasta el umbral y entonces vuelve a llamarme, como si se hubiera acordado tarde de algo.*"
     },
-    "after_homeroom_honest_9_ins": {
+    "after_homeroom_honest_9_b": {
         "name": "{name}",
         "text": "*Antes en clase dijo que 'memorizo los nombres a la primera'. — Decirlo dos veces tiene que significar algo.*"
     },
-    "after_hidden_nurse_intro_ins": {
+    "after_hidden_nurse_intro_b": {
         "name": "{name}",
         "text": "*Me detengo frente a la puerta y respiro hondo una vez. Será mejor descansar un poco antes de irme.*"
     },
-    "after_nurse_enter_2_ins": {
+    "after_nurse_enter_2_b": {
         "name": "{name}",
         "text": "*Su tono es ligero. Más como si entrara a una cafetería que a una clínica.*"
     },
-    "after_nurse_enter_4_ins": {
+    "after_nurse_enter_4_b": {
         "name": "{name}",
         "text": "¿Cómo lo supo?"
     },
-    "after_nurse_enter_4_ins2": {
+    "after_nurse_enter_4_c": {
         "name": "Enfermera",
         "text": "Tu uniforme está tieso como una tabla. Huele a almidón. *Olfatea* Ah, también huele a flores de cerezo. Un estudiante transferido romántico."
     },
-    "after_nurse_enter_4_ins3": {
+    "after_nurse_enter_4_d": {
         "name": "{name}",
         "text": "*Apenas hemos cruzado un par de frases y ya estoy siguiendo su ritmo.*"
     },
-    "after_nurse_enter_6_ins": {
+    "after_nurse_enter_6_b": {
         "name": "{name}",
         "text": "¿Se puede saber la presión arterial tocando la frente?"
     },
-    "after_nurse_enter_7_ins": {
+    "after_nurse_enter_7_b": {
         "name": "{name}",
         "text": "*Me acuesto en la cama. El techo es blanco.*"
     },
-    "after_nurse_enter_7_ins2": {
+    "after_nurse_enter_7_c": {
         "name": "Enfermera",
         "text": "*Corriendo la cortina a medias* ¿Quieres agua? ¿O algo caliente?"
     },
-    "after_nurse_enter_7_ins3": {
+    "after_nurse_enter_7_d": {
         "name": "{name}",
         "text": "Agua está bien."
     },
-    "after_nurse_enter_8_ins": {
+    "after_nurse_enter_8_b": {
         "name": "{name}",
         "text": "Pero usted es profesora."
     },
-    "after_nurse_enter_8_ins2": {
+    "after_nurse_enter_8_c": {
         "name": "Enfermera",
         "text": "*Entregando un vaso de agua* Sí, soy profesora. Pero aquí lo primero es que tú estés cómodo."
     },
-    "after_nurse_enter_8_ins3": {
+    "after_nurse_enter_8_d": {
         "name": "{name}",
         "text": "*Lo dice en tono ligero, pero está claro que intenta que me destense un poco.*"
     },
-    "after_nurse_enter_9_ins": {
+    "after_nurse_enter_9_b": {
         "name": "{name}",
         "text": "Esa planta, ¿es suya?"
     },
-    "after_nurse_enter_9_ins2": {
+    "after_nurse_enter_9_c": {
         "name": "Enfermera",
         "text": "Sí, romero. — Lo tengo desde mis días en el hospital."
     },
-    "after_nurse_enter_9_ins3": {
+    "after_nurse_enter_9_d": {
         "name": "{name}",
         "text": "¿Hospital?"
     },
-    "after_nurse_enter_9_ins4": {
+    "after_nurse_enter_9_e": {
         "name": "{name}",
         "text": "*La enfermera se detiene un momento. Y luego sonríe.*"
     },
-    "after_nurse_enter_10_ins": {
+    "after_nurse_enter_10_b": {
         "name": "{name}",
         "text": "*'Solo heridas leves'. — Hay alivio en esas palabras. También significa que ha visto muchas heridas que no eran leves.*"
     },
-    "after_nurse_enter_10_ins3": {
+    "after_nurse_enter_10_c": {
         "name": "{name}",
         "text": "Gracias. Me siento un poco mejor."
     },
-    "after_nurse_enter_11_ins": {
+    "after_nurse_enter_11_b": {
         "name": "{name}",
         "text": "¿Le preocupa?"
     },
-    "after_nurse_enter_11_ins2": {
+    "after_nurse_enter_11_c": {
         "name": "Enfermera",
         "text": "*Entornando los ojos* Si te sientes mal y aun así sigues aguantando, claro que voy a preocuparme. Para eso estoy aquí."
     },
-    "after_nurse_enter_11_ins3": {
+    "after_nurse_enter_11_d": {
         "name": "{name}",
         "text": "*Lo dice como si nada, pero la última parte pesa más de lo que esperaba.*"
     },
-    "after_nurse_enter_11_ins4": {
+    "after_nurse_enter_11_e": {
         "name": "{name}",
         "text": "*La enfermera se encoge de hombros y la sonrisa fácil regresa enseguida.*"
     },
-    "after_nurse_enter_11_ins5": {
+    "after_nurse_enter_11_f": {
         "name": "Enfermera",
         "text": "...Qué paciente tan observador. Se supone que la que se preocupa soy yo."
     },
-    "after_nurse_enter_11_ins6": {
+    "after_nurse_enter_11_g": {
         "name": "{name}",
         "text": "*No parece muy acostumbrada a que la preocupación vaya en su dirección. — Parece más bien alguien acostumbrada a cuidar a otros.*"
     },
-    "after_nurse_enter_11_ins7": {
+    "after_nurse_enter_11_h": {
         "name": "Enfermera",
         "text": "¿Verdad? Aquí se está bien. — Tranquilo, y si ignoras el olor a desinfectante, es perfecto."
     },
-    "after_nurse_enter_11_ins8": {
+    "after_nurse_enter_11_i": {
         "name": "{name}",
         "text": "*Al oír que es acogedor, sus ojos se iluminan. — Este espacio debe ser su refugio.*"
     },
-    "after_nurse_enter_11_ins9": {
+    "after_nurse_enter_11_j": {
         "name": "{name}",
         "text": "*Estoy saliendo de la enfermería cuando — desde atrás.*"
     },
-    "after_nurse_enter_11_ins10": {
+    "after_nurse_enter_11_k": {
         "name": "Enfermera",
         "text": "Ah, estudiante nuevo."
     },
-    "after_nurse_enter_11_ins11": {
+    "after_nurse_enter_11_l": {
         "name": "Enfermera",
         "text": "¿Cómo te llamas?"
     },
-    "after_nurse_enter_11_ins12": {
+    "after_nurse_enter_11_m": {
         "name": "{name}",
         "text": "{name}."
     },
-    "after_nurse_enter_12_ins": {
+    "after_nurse_enter_12_b": {
         "name": "{name}",
         "text": "*Se ríe suave y me despide con la mano. — Es juguetona, pero se nota que sabe cómo tranquilizar a la gente.*"
     },

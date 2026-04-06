@@ -434,31 +434,31 @@
         "name": "Yuna",
         "text": "...Aber diese Bibliothek ist nicht schlecht. Sie ist ruhig."
     },
-    "lunch_start_4_ins": {
+    "lunch_start_4_b": {
         "name": "{name}",
         "text": "*Neben mir greift Dain nach meinem Arm.*"
     },
-    "lunch_seo_6_ins": {
+    "lunch_seo_6_b": {
         "name": "Seoyeon",
         "text": "*Lächelt* Ganz schön misstrauisch, hm. Ich bin nur hochgekommen, weil es im Klassenzimmer so stickig war."
     },
-    "lunch_seo_c1_2_ins": {
+    "lunch_seo_c1_2_b": {
         "name": "{name}",
         "text": "*Seoyeon dreht den Kopf weg und spielt nur so mit ihrer Wasserflasche herum.*"
     },
-    "lunch_seo_c1_3_ins": {
+    "lunch_seo_c1_3_b": {
         "name": "{name}",
         "text": "*Wenn ich sie hier noch mehr necke, wird sie sofort eine Grenze ziehen. Ich tue einfach so, als hätte ich nichts gesehen.*"
     },
-    "lunch_dain_12_ins": {
+    "lunch_dain_12_b": {
         "name": "Dain",
         "text": "Aaagh, okay!! Zwei Soboro-Brötchen!! Frau Verkäuferin!!"
     },
-    "lunch_yuna_5_ins": {
+    "lunch_yuna_5_b": {
         "name": "{name}",
         "text": "...Darf ich mich setzen?"
     },
-    "lunch_yuna_10_ins": {
+    "lunch_yuna_10_b": {
         "name": "{name}",
         "text": "*In Yunas Schreibtisch steckt etwas. Ein altes Lesezeichen. Etwas ist darauf geschrieben — aber ich kann es nicht entziffern. Yuna legt unbewusst ihre Hand darauf. Etwas Wertvolles, vielleicht.*"
     }

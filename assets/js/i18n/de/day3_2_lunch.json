@@ -301,39 +301,39 @@
         "name": "{name}",
         "text": "*Ich ging zurück ins Klassenzimmer.*"
     },
-    "lunch3_start_2_ins": {
+    "lunch3_start_2_b": {
         "name": "Dain",
         "text": "*Beißt ohne zu zögern ins Eieromelette.*"
     },
-    "lunch3_meal_7_ins": {
+    "lunch3_meal_7_b": {
         "name": "Yuna",
         "text": "*Schon kauend* ...Ist gut."
     },
-    "lunch3_meal_10_ins2": {
+    "lunch3_meal_10_b": {
         "name": "{name}",
         "text": "*Niemand verlässt seinen Platz. Sie lächeln zwar, aber keiner von den dreien nimmt die Stäbchen einfach in die Hand. Das letzte Beilagengericht sticht unnötigerweise ins Auge.*"
     },
-    "lunch3_meal_10_ins3": {
+    "lunch3_meal_10_c": {
         "name": "{name}",
         "text": "*Seoyeons Stäbchen halten inne. Sie fängt sich. Das Gesicht der Schülersprecherin kehrt zurück. — Ich weiß, dass es nicht okay ist. Es tut mir leid.*"
     },
-    "lunch3_meal_10_ins4": {
+    "lunch3_meal_10_d": {
         "name": "{name}",
         "text": "*Alle zusammen?! Super!! Die Ausrufezeichen sind noch da. — Aber ihre Stimme ist einen halben Ton tiefer. Normalerweise hätte sie Stühle herangeschleppt, aber heute rührt sie sich nicht vom Fleck.*"
     },
-    "lunch3_meal_10_ins5": {
+    "lunch3_meal_10_e": {
         "name": "{name}",
         "text": "*Yuna nickt nur. Sie schreibt auf einen Zettel, faltet ihn und steckt ihn in die Tasche. Gibt ihn nicht her. — Keine Ahnung, was draufstand.*"
     },
-    "lunch3_expose_7_ins": {
+    "lunch3_expose_7_b": {
         "name": "{name}",
         "text": "*Die Letzte legt ihres still ab.*"
     },
-    "lunch3_expose_honest_4_ins": {
+    "lunch3_expose_honest_4_b": {
         "name": "{name}",
         "text": "*Seoyeons Ausdruck verändert sich. — Immer noch ruhig, aber jetzt liegt etwas Scharfes darin.*"
     },
-    "lunch3_expose_excuse_2_ins": {
+    "lunch3_expose_excuse_2_b": {
         "name": "{name}",
         "text": "*Dain steht auf.*"
     }

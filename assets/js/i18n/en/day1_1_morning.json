@@ -256,11 +256,11 @@
         "name": "{name}",
         "text": "*Class starts. Yuna is looking out the window again. Dain is already chatting with the person next to her.*"
     },
-    "hallway_6_ins": {
+    "hallway_6_b": {
         "name": "Seoyeon",
         "text": "*A brief pause* ...You're perceptive."
     },
-    "hallway_6_ins2": {
+    "hallway_6_c": {
         "name": "{name}",
         "text": "*That hesitation. Half a second. Probably nothing, but somehow it sticks.*"
     },
@@ -268,39 +268,39 @@
         "name": "Seoyeon",
         "text": "Oh, lunch. You don't know where the cafeteria is, right? Come with me."
     },
-    "hallway_13_ins": {
+    "hallway_13_b": {
         "name": "{name}",
         "text": "*Her back is straight. Perfectly straight. — As if practiced. I got a little curious about what's behind that composure.*"
     },
-    "classroom_2_ins": {
+    "classroom_2_b": {
         "name": "{name}",
         "text": "*The homeroom teacher stands at the podium. Late twenties. Her cardigan hangs open from the start. Her expression is indifferent, but — her eyes are scanning each student one by one.*"
     },
-    "classroom_3_ins": {
+    "classroom_3_b": {
         "name": "{name}",
         "text": "*Her voice is dry. Not emotionless, just — carrying exactly as much feeling as needed. Surprisingly, I don't mind it.*"
     },
-    "classroom_5_ins2": {
+    "classroom_5_b": {
         "name": "Homeroom Teacher",
         "text": "...Right. {name}. I'll remember that. *Quietly, almost to herself* I make it a point to memorize names on the first try."
     },
-    "classroom_5_ins3": {
+    "classroom_5_c": {
         "name": "{name}",
         "text": "*Nobody else heard that. Only me. — Is she attentive, or is it just a habit?*"
     },
-    "classroom_dain_5_ins": {
+    "classroom_dain_5_b": {
         "name": "{name}",
         "text": "*The teacher lets out a small sigh. Not exasperation — the kind of sigh that comes from familiarity.*"
     },
-    "classroom_dain_5_ins2": {
+    "classroom_dain_5_c": {
         "name": "Homeroom Teacher",
         "text": "...Save some energy. First period hasn't even started yet."
     },
-    "classroom_dain_5_ins3": {
+    "classroom_dain_5_d": {
         "name": "{name}",
         "text": "*She says it dryly, but the corner of her mouth is slightly upturned. Her default is expressionless, but every now and then there's a glitch.*"
     },
-    "classroom_minsu_2_ins": {
+    "classroom_minsu_2_b": {
         "name": "Minsu",
         "text": "*Nodding toward Dain* Your stamina."
     }

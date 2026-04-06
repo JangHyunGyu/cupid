@@ -117,7 +117,7 @@
         "name": "다인",
         "text": "오! 회장님? 반가워요!"
     },
-    "lunch2_seo_13b_ins": {
+    "lunch2_seo_13b_b": {
         "name": "서연",
         "text": "*{name}을 보며* ...밝은 애."
     },
@@ -161,7 +161,7 @@
         "name": "서연",
         "text": "...됐어."
     },
-    "lunch2_seo_c1_2_ins": {
+    "lunch2_seo_c1_2_b": {
         "name": "{name}",
         "text": "*다인이 눈이 커진 채 둘을 번갈아 본다.*"
     },
@@ -169,7 +169,7 @@
         "name": "다인",
         "text": "저 지금 뭘 본 거예요?!"
     },
-    "lunch2_seo_c1_3_ins": {
+    "lunch2_seo_c1_3_b": {
         "name": "서연",
         "text": "*아무렇지 않은 척* 밥풀이었어."
     },
@@ -305,7 +305,7 @@
         "name": "다인",
         "text": "흠... 너 혹시 회장님이랑도 친해?"
     },
-    "lunch2_dain_13_ins": {
+    "lunch2_dain_13_b": {
         "name": "{name}",
         "text": "*다인이 괜히 소보로를 크게 한 입 베어 문다. 방금 질문이 별거 아니라는 듯.*"
     },
@@ -338,19 +338,19 @@
         "name": "{name}",
         "text": "*다인의 소보로 빵 크런치 소리가 유난히 크다. — 점심시간이 점점 복잡해진다.*"
     },
-    "lunch2_dain_end_ins": {
+    "lunch2_dain_end_b": {
         "name": "{name}",
         "text": "*5교시 체육. 운동장에서 달리기를 하는데 — 옆 녀석이 급정거하면서 부딪혔다. 팔꿈치가 까졌다. 별거 아닌데 피가 조금 난다.*"
     },
-    "lunch2_dain_end_ins3": {
+    "lunch2_dain_end_c": {
         "name": "체육교사",
         "text": "보건실 가서 소독 받고 와."
     },
-    "lunch2_dain_end_ins4": {
+    "lunch2_dain_end_d": {
         "name": "{name}",
         "text": "*보건실 문을 연다. 어제와 같은 소독약 냄새.*"
     },
-    "lunch2_dain_end_ins5": {
+    "lunch2_dain_end_e": {
         "name": "보건선생님",
         "text": "*고개를 들며* 어라, 어제의 전학생."
     },
@@ -362,15 +362,15 @@
         "name": "보건선생님",
         "text": "*고개를 들며* 처음 오셨죠? 전학생 맞나요.*"
     },
-    "lunch2_dain_end_ins6": {
+    "lunch2_dain_end_f": {
         "name": "{name}",
         "text": "팔꿈치 좀 까졌는데요."
     },
-    "lunch2_dain_end_ins7": {
+    "lunch2_dain_end_g": {
         "name": "보건선생님",
         "text": "또 왔네? 단골 되려고?"
     },
-    "lunch2_dain_end_ins8": {
+    "lunch2_dain_end_h": {
         "name": "{name}",
         "text": "*장난스러운 말투는 어제와 같다. 근데 눈은 이미 상처를 살피고 있다.*"
     },
@@ -382,87 +382,87 @@
         "name": "{name}",
         "text": "*장난스러운 말투는 여전한데. 근데 눈은 이미 상처를 살피고 있다.*"
     },
-    "lunch2_dain_end_ins9": {
+    "lunch2_dain_end_i": {
         "name": "{name}",
         "text": "*보건선생님이 다가와 팔꿈치를 잡는다. 손이 차갑다.*"
     },
-    "lunch2_dain_end_ins10": {
+    "lunch2_dain_end_j": {
         "name": "보건선생님",
         "text": "가만있어 봐..."
     },
-    "lunch2_dain_end_ins11": {
+    "lunch2_dain_end_k": {
         "name": "{name}",
         "text": "*소독약을 묻힌 솜을 꺼내 — 천천히 닦는다. 밴드를 꺼낸다. 밴드 하나 붙이는 데 — 30초면 될 걸, 왜 이렇게 꼼꼼하지?*"
     },
-    "lunch2_dain_end_ins13": {
+    "lunch2_dain_end_l": {
         "name": "보건선생님",
         "text": "*밴드를 붙이며* 여기... 이렇게... 자, 됐다."
     },
-    "lunch2_dain_end_ins14": {
+    "lunch2_dain_end_m": {
         "name": "{name}",
         "text": "*보건선생님의 손이 멈춘다. 그리고 — 아무 일 없다는 듯 다시 움직인다.*"
     },
-    "lunch2_dain_end_ins15": {
+    "lunch2_dain_end_n": {
         "name": "보건선생님",
         "text": "...차가운 편인데. 오늘 좀 따뜻한가 봐."
     },
-    "lunch2_dain_end_ins16": {
+    "lunch2_dain_end_o": {
         "name": "{name}",
         "text": "*거짓말이다. 아까 잡았을 때 차가웠다. — 손이 따뜻해진 건 지금이다.*"
     },
-    "lunch2_dain_end_ins17": {
+    "lunch2_dain_end_p": {
         "name": "보건선생님",
         "text": "*빙긋* 정성이야, 정성. 경험에서 나온 노하우지."
     },
-    "lunch2_dain_end_ins18": {
+    "lunch2_dain_end_q": {
         "name": "{name}",
         "text": "*정성... 이건가. 아님 다른 이유가 있는 건가.*"
     },
-    "lunch2_dain_end_ins19": {
+    "lunch2_dain_end_r": {
         "name": "{name}",
         "text": "*밴드를 확인하는데 — 책상 서랍에서 삐져나온 노트가 보인다. 연두색 표지. 열린 페이지에 편지 형식의 글이 적혀 있다. '유진아, 오늘은—' 거기까지 읽었을 때 보건선생님이 서랍을 닫는다. 보건선생님이 재빨리 노트북을 닫는다.*"
     },
-    "lunch2_dain_end_ins21": {
+    "lunch2_dain_end_s": {
         "name": "보건선생님",
         "text": "*눈을 가늘게 뜨며* 하나만? ...음, 그럼. 나 커피보다 코코아 좋아해. 이게 비밀이야."
     },
-    "lunch2_dain_end_ins22": {
+    "lunch2_dain_end_t": {
         "name": "{name}",
         "text": "*비밀이라기엔 가벼운데, 알려주는 행위 자체가 — 가까워졌다는 의미다.*"
     },
-    "lunch2_dain_end_ins23": {
+    "lunch2_dain_end_u": {
         "name": "보건선생님",
         "text": "*가볍게 웃으며* 비밀. 선생님도 숨기는 거 하나쯤은 있어."
     },
-    "lunch2_dain_end_ins24": {
+    "lunch2_dain_end_v": {
         "name": "{name}",
         "text": "*장난스럽게 넘기지만, 닫는 속도가 빨랐다. — 보여주고 싶지 않은 게 있다.*"
     },
-    "lunch2_dain_end_ins25": {
+    "lunch2_dain_end_w": {
         "name": "보건선생님",
         "text": "자, 끝. 수업 가. — 다음에 오면 진찰 항목 늘린다."
     },
-    "lunch2_dain_end_ins26": {
+    "lunch2_dain_end_x": {
         "name": "{name}",
         "text": "안 다치면 올 이유가 없잖아요."
     },
-    "lunch2_dain_end_ins27": {
+    "lunch2_dain_end_y": {
         "name": "{name}",
         "text": "*보건선생님이 잠깐 멈춘다. 그리고 — 목소리가 한 톤 낮아진다.*"
     },
-    "lunch2_dain_end_ins28": {
+    "lunch2_dain_end_z": {
         "name": "보건선생님",
         "text": "이유 없어도 와도 돼."
     },
-    "lunch2_dain_end_ins29": {
+    "lunch2_dain_end_b2": {
         "name": "{name}",
         "text": "*장난기가 사라졌다. 그리고 다시 돌아온다. — 지금 거, 봐버렸다.*"
     },
-    "lunch2_dain_end_ins30": {
+    "lunch2_dain_end_c2": {
         "name": "보건선생님",
         "text": "*다시 밝은 톤으로* 물론 수업 시간 말고. 방과후에."
     },
-    "lunch2_dain_end_ins31": {
+    "lunch2_dain_end_d2": {
         "name": "{name}",
         "text": "*방금 목소리가 달라진 거. — 착각인가?*"
     },
@@ -587,7 +587,7 @@
         "name": "{name}",
         "text": "있었는데?"
     },
-    "lunch2_yuna_17_ins": {
+    "lunch2_yuna_17_b": {
         "name": "유나",
         "text": "......"
     },
@@ -631,7 +631,7 @@
         "name": "{name}",
         "text": "그 사람, 혹시 갑자기 가게 된 거야? 원래 그러면 연락도 놓치고 그러잖아."
     },
-    "lunch2_yuna_c1_9_ins": {
+    "lunch2_yuna_c1_9_b": {
         "name": "{name}",
         "text": "*유나의 눈빛이 순간 차가워진다.*"
     },

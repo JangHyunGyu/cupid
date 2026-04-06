@@ -220,27 +220,27 @@
     "name": "Yuna",
     "text": "...Sí. Buenas noches."
   },
-  "night2_reply_yuna_6_ins": {
+  "night2_reply_yuna_6_b": {
     "name": "{name}",
     "text": "*¿La tercera estrella? — Abro la ventana y miro al cielo nocturno. No sé cuál es la tercera.*"
   },
-  "night2_reply_yuna_6_ins2": {
+  "night2_reply_yuna_6_c": {
     "name": "{name}",
     "text": "*Un acertijo típico de Yuna. — No te da la respuesta, pero te hace querer buscarla.*"
   },
-  "night2_end_2_ins2": {
+  "night2_end_2_b": {
     "name": "{name}",
     "text": "*Esas palabras siguen resonando. Todavía no he respondido.*"
   },
-  "night2_end_3_ins": {
+  "night2_end_3_b": {
     "name": "{name}",
     "text": "*El problema es que esa distancia se acorta más rápido de lo esperado.*"
   },
-  "night2_end_4_ins": {
+  "night2_end_4_b": {
     "name": "{name}",
     "text": "*Abro el refrigerador. No hay mucho. Arroz sobrante, huevos, alga. — Me dan ganas de preparar algo para llevar mañana. ¿Para quién? No lo sé. Simplemente quiero hacerlo.*"
   },
-  "night2_end_4_ins2": {
+  "night2_end_4_c": {
     "name": "{name}",
     "text": "*Preparé un almuerzo a toda prisa. No está genial. Demasiado tosco para decir que fue hecho con cariño. — Pero es mejor que nada.*"
   }
