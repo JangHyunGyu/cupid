@@ -6675,32 +6675,32 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_4_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_4_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_4_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_4_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       }
     },
@@ -6711,32 +6711,32 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_4_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_4_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_4_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_4_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       }
     },
@@ -6747,32 +6747,32 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_4_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_4_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_4_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_4_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       }
     },
@@ -6783,32 +6783,32 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_f",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       }
     },
@@ -6819,32 +6819,32 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_g",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       }
     },
@@ -6855,32 +6855,32 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_h",
-        "_reviewed": false,
-        "_score": 10,
+        "_reviewed": true,
+        "_score": 9,
         "_issues": null
       }
     }
