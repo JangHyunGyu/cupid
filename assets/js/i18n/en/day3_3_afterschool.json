@@ -1,696 +1,760 @@
 {
-    "after3_start": {
-        "name": "{name}",
-        "text": "*After school. My mind is a mess. Who should I go to first?*"
-    },
-    "after3_route_check": {
-        "name": "{name}",
-        "text": "*I check my phone. No reply, and the meeting time is just getting closer.*"
-    },
-    "after3_auto_dain": {
-        "name": "{name}",
-        "text": "*I have plans with Dain. Heading to the gym.*"
-    },
-    "after3_auto_yuna": {
-        "name": "{name}",
-        "text": "*I have plans with Yuna. Heading to the library annex.*"
-    },
-    "after3_auto_seo": {
-        "name": "{name}",
-        "text": "*I have plans with Seoyeon. Heading to the student council room.*"
-    },
-    "after3_multi_choice": {
-        "name": "{name}",
-        "text": "*My plans overlapped. To be precise, I made them overlap. Running away would be even worse. Who should I go to first to fix this?*",
-        "choices": [
-            "Go to Seoyeon",
-            "Go to Yuna",
-            "Go to Dain",
-            "Think a little more"
-        ]
-    },
-    "after3_choice": {
-        "name": "{name}",
-        "text": "*Where should I go.*",
-        "choices": [
-            "To the student council room",
-            "To the library",
-            "To the gym"
-        ]
-    },
-    "after3_reject_for_seo_1": {
-        "name": "{name}",
-        "text": "*I run into Dain in the hallway. Her usual energy is gone. The smile doesn't come first today.*"
-    },
-    "after3_reject_for_seo_2": {
-        "name": "Dain",
-        "text": "...You're not coming to the gym today, are you?"
-    },
-    "after3_reject_for_seo_3": {
-        "name": "{name}",
-        "text": "*I pass by the library. Yuna's seat is empty. One note remains. '...Okay.' Too short. The edge of the paper is slightly crumpled.*"
-    },
-    "after3_reject_for_seo_4": {
-        "name": "{name}",
-        "text": "*I step back into the hallway. Dain's sentence without exclamation marks, Yuna's too-short note with a crumpled edge. — The weight of my choice settles on my shoulders.*"
-    },
-    "after3_reject_for_yuna_1": {
-        "name": "{name}",
-        "text": "*Seoyeon is organizing her clipboard in the hallway. Her hands turn the pages faster than usual.*"
-    },
-    "after3_reject_for_yuna_2": {
-        "name": "Seoyeon",
-        "text": "Student council work is busy. I'll eat separately. ...Today."
-    },
-    "after3_reject_for_yuna_walk_gym": {
-        "name": "{name}",
-        "text": "*My feet carry me toward the gym.*"
-    },
-    "after3_reject_for_yuna_3": {
-        "name": "{name}",
-        "text": "*Dain is hitting balls alone in the gym.*"
-    },
-    "after3_reject_for_yuna_3_dain": {
-        "name": "Dain",
-        "text": "Ah, hey!"
-    },
-    "after3_reject_for_yuna_3_react": {
-        "name": "{name}",
-        "text": "*But she turns her face away. Her eyes are red.*"
-    },
-    "after3_reject_for_yuna_4": {
-        "name": "{name}",
-        "text": "*I leave the gym and return to the hallway. Seoyeon pretended she was fine. Dain couldn't even do that. — Somehow, both hurt more that way.*"
-    },
-    "after3_reject_for_dain_1": {
-        "name": "{name}",
-        "text": "*Seoyeon is organizing her clipboard. She's smiling, but the fingers doing the organizing are too neat, too controlled.*"
-    },
-    "after3_reject_for_dain_2": {
-        "name": "Seoyeon",
-        "text": "...I have some things to do today. I'll head out first."
-    },
-    "after3_reject_for_dain_2b": {
-        "name": "{name}",
-        "text": "*I headed to Yuna's hideout.*"
-    },
-    "after3_reject_for_dain_3": {
-        "name": "{name}",
-        "text": "*There is no note in the library. Yuna's bag is gone too. Only a lukewarm water ring remains on the desk, like she was here just moments ago.*"
-    },
-    "after3_reject_for_dain_3b": {
-        "name": "{name}",
-        "text": "*I walked back to the hallway.*"
-    },
-    "after3_seo_1": {
-        "name": "{name}",
-        "text": "*I opened the student council room door. — Seoyeon is slumped over the desk.*"
-    },
-    "after3_seo_3": {
-        "name": "{name}",
-        "text": "*Seoyeon lifts her head at the sound of someone entering. Her eyes look tired. Her makeup is slightly smudged.*"
-    },
-    "after3_seo_4": {
-        "name": "Seoyeon",
-        "text": "......"
-    },
-    "after3_seo_5": {
-        "name": "{name}",
-        "text": "Seoyeon?"
-    },
-    "after3_seo_6": {
-        "name": "Seoyeon",
-        "text": "*Clears throat* ...It's nothing. Just forget it."
-    },
-    "after3_seo_7": {
-        "name": "{name}",
-        "text": "See what? I didn't see anything."
-    },
-    "after3_seo_8": {
-        "name": "Seoyeon",
-        "text": "This side of me. — This is a secret."
-    },
-    "after3_seo_9": {
-        "name": "{name}",
-        "text": "*Seoyeon straightens her posture. But — her usual perfect smile doesn’t return.*"
-    },
-    "after3_seo_choice": {
-        "name": "Seoyeon",
-        "text": "Next time I ask you for a favor, you have to say yes. No questions asked. — Consider it payment.",
-        "choices": [
-            "You don’t have to be perfect, you know",
-            "I’ll keep your secret"
-        ]
-    },
-    "after3_seo_choice1": {
-        "name": "{name}",
-        "text": "*Seoyeon pauses. Sets down her pen. Slowly.*"
-    },
-    "after3_seo_choice1_react": {
-        "name": "Seoyeon",
-        "text": "...Words like that. You shouldn’t say them so easily."
-    },
-    "after3_seo_choice2": {
-        "name": "{name}",
-        "text": "*Her eyes are glistening. — She didn’t cry. Not yet.*"
-    },
-    "after3_seo_end": {
-        "name": "{name}",
-        "text": "*Those words carry weight. — I think I’m starting to understand how monumental it is for this person to show an imperfect side of herself.*"
-    },
-    "after3_seo_end_c2": {
-        "name": "{name}",
-        "text": "*Promising to keep her secret — seems to mean a great deal to this person.*"
-    },
-    "after3_yuna_1": {
-        "name": "{name}",
-        "text": "*The library annex. Yuna’s secret reading nook. — The door is open.*"
-    },
-    "after3_yuna_2": {
-        "name": "{name}",
-        "text": "*I go in, but Yuna isn’t here. Instead — a notebook lies open on the sofa. Filled with handwriting.*"
-    },
-    "after3_yuna_4": {
-        "name": "{name}",
-        "text": "*First page.*"
-    },
-    "after3_yuna_6": {
-        "name": "Yuna",
-        "text": "What are you doing."
-    },
-    "after3_yuna_7": {
-        "name": "{name}",
-        "text": "*Yuna’s voice from behind. I turn around and she’s standing there holding two drinks. — She freezes when she sees me looking at the notebook.*"
-    },
-    "after3_yuna_8": {
-        "name": "Yuna",
-        "text": "...That."
-    },
-    "after3_yuna_8b": {
-        "name": "Yuna",
-        "text": "*Quickly approaches and snatches the notebook* ...I didn't say you could."
-    },
-    "after3_yuna_9": {
-        "name": "{name}",
-        "text": "*Her ears. Red. — It’s the first time I’ve seen Yuna blush.*"
-    },
-    "after3_yuna_choice": {
-        "name": "{name}",
-        "text": "I was enjoying the read.",
-        "choices": [
-            "You might want to change the protagonist’s name though",
-            "How does it end?"
-        ]
-    },
-    "after3_yuna_choice1": {
-        "name": "Yuna",
-        "text": "...There’s no protagonist name."
-    },
-    "after3_yuna_choice1_2": {
-        "name": "{name}",
-        "text": "’A transfer student came to the library’ is just a coincidence?"
-    },
-    "after3_yuna_choice1_3": {
-        "name": "Yuna",
-        "text": "*Flips the notebook closed* ...But sometimes. Fiction can be more honest than reality."
-    },
-    "after3_yuna_choice1_react": {
-        "name": "{name}",
-        "text": "*She said fiction, but her ears are lying.*"
-    },
-    "after3_yuna_choice2": {
-        "name": "{name}",
-        "text": "*Yuna pauses. She looks down at the notebook.*"
-    },
-    "after3_yuna_choice2_2": {
-        "name": "Yuna",
-        "text": "...I haven’t decided on the ending yet."
-    },
-    "after3_yuna_choice2_3": {
-        "name": "Yuna",
-        "text": "...Because once I write the ending, it’s over."
-    },
-    "after3_yuna_choice2_react": {
-        "name": "{name}",
-        "text": "*Yuna spoke more than two sentences in a row. — For her, that’s proof of emotion.*"
-    },
-    "after3_yuna_end": {
-        "name": "{name}",
-        "text": "*Yuna clutches the notebook tightly to her chest.*"
-    },
-    "after3_dain_1": {
-        "name": "{name}",
-        "text": "*The gym. Dain is stretching alone. She tries a light jog and —*"
-    },
-    "after3_dain_3": {
-        "name": "{name}",
-        "text": "Dain!"
-    },
-    "after3_dain_4": {
-        "name": "Dain",
-        "text": "Ah! I’m fine!! It’s just a little twist!!"
-    },
-    "after3_dain_5": {
-        "name": "{name}",
-        "text": "You don’t look fine."
-    },
-    "after3_dain_6": {
-        "name": "{name}",
-        "text": "*Too many exclamation marks. — Way too many. Does this girl use more exclamation marks when she’s not okay?*"
-    },
-    "after3_dain_choice": {
-        "name": "{name}",
-        "text": "*Dain sits on the bench. She rubs her knee.*",
-        "choices": [
-            "Sit next to her and wait quietly",
-            "Got any patches? I’ll go get them"
-        ]
-    },
-    "after3_dain_choice1": {
-        "name": "{name}",
-        "text": "*I sit beside her without a word. Dain glances my way.*"
-    },
-    "after3_dain_choice1_2": {
-        "name": "Dain",
-        "text": "...Why aren’t you asking?"
-    },
-    "after3_dain_choice1_3": {
-        "name": "{name}",
-        "text": "Because you’d just say you’re fine."
-    },
-    "after3_dain_choice1_react": {
-        "name": "{name}",
-        "text": "*Dain hesitates. — Then smiles, small. A smile I've never seen before.*"
-    },
-    "after3_dain_choice1_react2": {
-        "name": "Dain",
-        "text": "...Yeah. I would’ve said I’m fine."
-    },
-    "after3_dain_choice1_react3": {
-        "name": "Dain",
-        "text": "Thanks. For not asking anything."
-    },
-    "after3_dain_choice2": {
-        "name": "Dain",
-        "text": "Hey! I’m fine! I don’t need a bandage or anything!!"
-    },
-    "after3_dain_end": {
-        "name": "{name}",
-        "text": "*Dain lightly punches my shoulder with her fist. — Weaker than yesterday.*"
-    },
-    "after3_dain_end_check": {
-        "name": "{name}",
-        "text": "*Dain lightly punches my shoulder.*"
-    },
-    "after3_dain_end_first": {
-        "name": "{name}",
-        "text": "*Dain lightly punches my shoulder. — She seems embarrassed.*"
-    },
-    "after3_confront_1": {
-        "name": "{name}",
-        "text": "*Coming out of the after-school spot — Seoyeon is waiting in the hallway. Arms crossed. Her usual composure is gone.*"
-    },
-    "after3_confront_2": {
-        "name": "Seoyeon",
-        "text": "{name}. Hold on."
-    },
-    "after3_confront_3": {
-        "name": "{name}",
-        "text": "*Seoyeon leads me to the end of the hallway. Where no one else is.*"
-    },
-    "after3_confront_4": {
-        "name": "Seoyeon",
-        "text": "About lunchtime."
-    },
-    "after3_confront_5": {
-        "name": "Seoyeon",
-        "text": "When you smiled the same way at other people, I kind of hated it."
-    },
-    "after3_confront_6": {
-        "name": "Seoyeon",
-        "text": "Be honest. Did you promise all of us the weekend?"
-    },
-    "after3_confront_choice": {
-        "name": "{name}",
-        "text": "*Seoyeon looks straight at me. Not with the eyes of a student council president. With the eyes of just a person.*",
-        "choices": [
-            "Admit it honestly",
-            "The time slots are different, so I thought it would be fine",
-            "You’re the only one I’m serious about"
-        ]
-    },
-    "after3_confront_admit": {
-        "name": "Seoyeon",
-        "text": "...Because you couldn’t say no."
-    },
-    "after3_confront_admit_2": {
-        "name": "Seoyeon",
-        "text": "That’s the cruelest thing you can say, {name}. Kindness that can’t refuse — gives people false hope."
-    },
-    "after3_confront_admit_3": {
-        "name": "{name}",
-        "text": "*Seoyeon picks up her lunch bag. Her hands are trembling.*"
-    },
-    "after3_confront_admit_4": {
-        "name": "Seoyeon",
-        "text": "You told me I didn’t have to be perfect — and then you tried to be the perfect person for everyone. That’s worse."
-    },
-    "after3_confront_admit_5": {
-        "name": "Seoyeon",
-        "text": "...I won’t be leaving the rooftop open today."
-    },
-    "after3_confront_admit_6": {
-        "name": "{name}",
-        "text": "*Her back is straight. Perfectly. — But her fists are clenched. Her knuckles are white.*"
-    },
-    "after3_confront_excuse": {
-        "name": "Seoyeon",
-        "text": "...You don’t see how that’s the problem?"
-    },
-    "after3_confront_excuse_2": {
-        "name": "Seoyeon",
-        "text": "It's not about how many people you made plans with. It's about what that promise meant to me."
-    },
-    "after3_confront_lie_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon pauses. Her eyes waver.*"
-    },
-    "after3_confront_lie": {
-        "name": "Seoyeon",
-        "text": "...Really? Can I... believe that?"
-    },
-    "after3_confront_lie_2": {
-        "name": "{name}",
-        "text": "*Eyes that want to believe. — I didn’t know a lie could weigh this much.*"
-    },
-    "after3_confront_end": {
-        "name": "{name}",
-        "text": "*I’m standing alone in the hallway where Seoyeon disappeared. — Her posture was straight. Perfectly straight. But her fists were clenched.*"
-    },
-    "after3_final": {
-        "name": "{name}",
-        "text": "*After school is over. — What I saw today won’t leave my mind.*"
-    },
-    "haeun_check": {
-        "name": "{name}",
-        "text": ""
-    },
-    "haeun_warn_1": {
-        "name": "{name}",
-        "text": "*I stepped out of the student council room. The hallway is empty. — Someone was waiting.*"
-    },
-    "haeun_warn_2": {
-        "name": "Haeun",
-        "text": "...{name}."
-    },
-    "haeun_warn_2b": {
-        "name": "{name}",
-        "text": "Yeah."
-    },
-    "haeun_warn_3": {
-        "name": "Haeun",
-        "text": "Did you just see Seoyeon? My senior?"
-    },
-    "haeun_warn_4": {
-        "name": "Haeun",
-        "text": "...She cried. After she left the student council room. In the bathroom. — I was the only one who saw. In a whole year, I've never seen her cry."
-    },
-    "haeun_warn_4b": {
-        "name": "{name}",
-        "text": "She cried?"
-    },
-    "haeun_warn_5": {
-        "name": "{name}",
-        "text": "*Seoyeon cried. — All she said to me was that I'd 'seen her imperfect side.' But after that, she cried.*"
-    },
-    "haeun_warn_5b": {
-        "name": "Haeun",
-        "text": "Sunbae is someone who thinks she has to be perfect. Someone who thinks crying means losing."
-    },
-    "haeun_warn_5c": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "haeun_warn_6": {
-        "name": "Haeun",
-        "text": "The fact that she cried — that means she really cares about you, {name}."
-    },
-    "haeun_warn_7": {
-        "name": "Haeun",
-        "text": "I know I'm butting in. But I'm worried about her. — Things at home are complicated for her right now. Her parents are... ...anyway. Please be good to her. I'm asking you."
-    },
-    "haeun_warn_8": {
-        "name": "{name}",
-        "text": "*I can't get the image out of my head — Seoyeon crying alone in the bathroom. That perfectly straight back, those white-knuckled fists, and — an empty bathroom.*"
-    },
-    "haeun_warn_8b": {
-        "name": "{name}",
-        "text": "*I walked out to the school entrance.*"
-    },
-    "minsu_d3_check": {
-        "name": "{name}",
-        "text": ""
-    },
-    "minsu_d3_1": {
-        "name": "{name}",
-        "text": "*Walking home. Minsu is waiting at the school gate.*"
-    },
-    "minsu_d3_2": {
-        "name": "Minsu",
-        "text": "I saw."
-    },
-    "minsu_d3_3": {
-        "name": "Minsu",
-        "text": "At lunch. And just now, Seoyeon's face."
-    },
-    "minsu_d3_4": {
-        "name": "Minsu",
-        "text": "What did I tell you yesterday? 'If all three of them end up crying, that's on you.' That wasn't supposed to be 'later.' It's now."
-    },
-    "minsu_d3_5": {
-        "name": "Minsu",
-        "text": "Man, it's hard to watch from the sidelines too. They're all good people. — I know you're not doing this because you're a bad guy. You just can't say no."
-    },
-    "minsu_d3_5b": {
-        "name": "{name}",
-        "text": "*Minsu sighs. Not out of contempt — out of genuine concern.*"
-    },
-    "minsu_d3_6": {
-        "name": "{name}",
-        "text": "...But I don't know what I'm supposed to do."
-    },
-    "minsu_d3_6b": {
-        "name": "Minsu",
-        "text": "I won't ask what happened at your old school. But let me tell you one thing."
-    },
-    "minsu_d3_7": {
-        "name": "Minsu",
-        "text": "Saying no is also a form of love. Turning someone down when it's not going to work — that's a hundred times better than giving them false hope."
-    },
-    "minsu_d3_8": {
-        "name": "{name}",
-        "text": "*...The flashback ends. Minsu taps his forehead with a finger.*"
-    },
-    "minsu_d3_9": {
-        "name": "{name}",
-        "text": "*In the end, the answer is simple. One person. That alone is enough.*"
-    },
-    "minsu_d3_10": {
-        "name": "Minsu",
-        "text": "See you at school tomorrow. — Seriously, think about it. For real."
-    },
-    "after3_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Standing face to face with Seoyeon in the hallway. Her expression is complicated.*",
-        "context": "Day 3 afterschool, right after confrontation/reconciliation with Seoyeon. Trust is shaken. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
-        "personality": "Seoyeon is the cool student council president. Strong possessiveness, direct when jealous. Hurt but trying not to show it."
-    },
-    "after3_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Walking alongside Yuna. Her gaze is cool.*",
-        "context": "Day 3 afterschool, just talked with Yuna. She's showing more emotion than usual. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
-        "personality": "Yuna is a mysterious literary girl. Usually calm but emotionally shaken now. More about wanting confirmation than jealousy."
-    },
-    "after3_dain_freetalk": {
-        "name": "Dain",
-        "text": "*Sitting on a bench with Dain at the playground. She's quieter than usual.*",
-        "context": "Day 3 afterschool, just talked with Dain. She's hurt but pretending to be cheerful. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
-        "personality": "Dain is an energetic athlete. Being cheerful is her only defense. Fewer exclamation marks mean she's being real."
-    },
-    "after3_seo_5_ins": {
-        "name": "Seoyeon",
-        "text": "*Hurriedly fixing her hair* ...Did you see?"
-    },
-    "after3_seo_choice1_react_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon looks out the window. I can't see her expression. — She's deliberately hiding it.*"
-    },
-    "after3_seo_choice1_react_ins3": {
-        "name": "{name}",
-        "text": "*Seoyeon straightens up. The student council president's face returns. — But it's not perfect. The angle of her smile is off by half a degree.*"
-    },
-    "after3_seo_choice1_react_ins4": {
-        "name": "Seoyeon",
-        "text": "...Thank you."
-    },
-    "after3_seo_choice1_react_ins5": {
-        "name": "{name}",
-        "text": "I'm good at keeping secrets."
-    },
-    "after3_seo_choice1_react_ins6": {
-        "name": "Seoyeon",
-        "text": "*Sorting through papers* I know one of your secrets too."
-    },
-    "after3_seo_choice1_react_ins7": {
-        "name": "Seoyeon",
-        "text": "Your eyes lit up when you ate the rolled omelette at lunch. — You can't fake that."
-    },
-    "after3_seo_choice1_react_ins8": {
-        "name": "{name}",
-        "text": "*I offered to keep her secret, and she pulled out a secret of equal weight. — For this person, equality comes before gratitude.*"
-    },
-    "after3_yuna_5_ins": {
-        "name": "{name}",
-        "text": "*...Isn't this about me?*"
-    },
-    "after3_yuna_choice1_2_ins": {
-        "name": "Yuna",
-        "text": "*Clutching the notebook to her chest* ...Novels are. Fiction."
-    },
-    "after3_yuna_choice2_3_ins": {
-        "name": "{name}",
-        "text": "*Yuna spoke more than two sentences in a row. — I've never seen her say this much before.*"
-    },
-    "after3_seo_7_ins": {
-        "name": "Seoyeon",
-        "text": "*Looks down* ...I really didn't want you to see this."
-    },
-    "after3_dain_5_ins": {
-        "name": "Dain",
-        "text": "I told you I'm fine!! It's nothing!!"
-    },
-    "after3_dain_choice2_ins": {
-        "name": "{name}",
-        "text": "*Brought a bandage from the nurse’s office. Held it out to Dain.*"
-    },
-    "after3_dain_choice2_ins2": {
-        "name": "Dain",
-        "text": "...Oh, you actually brought one."
-    },
-    "after3_dain_choice2_ins3": {
-        "name": "{name}",
-        "text": "You said you were fine."
-    },
-    "after3_dain_choice2_ins4": {
-        "name": "{name}",
-        "text": "*Dain takes the bandage and stares at it for a long time. Bites her lip.*"
-    },
-    "after3_dain_choice2_ins5": {
-        "name": "Dain",
-        "text": "*Smiles weakly.* ...What. I shouldn’t be moved by something like this."
-    },
-    "after3_dain_choice2_ins6": {
-        "name": "{name}",
-        "text": "*She accepted it. — This is the first time Dain hasn’t refused someone’s help. The smile without exclamation marks feels strangely heavy.*"
-    },
-    "after3_confront_5_ins": {
-        "name": "Dain",
-        "text": "*With her head lowered.* ...I didn't like it either."
-    },
-    "after3_confront_5_ins2": {
-        "name": "{name}",
-        "text": "*She accepted it. — This is the first time Dain hasn't refused someone's help. A smile without exclamation marks feels strangely heavy.*"
-    },
-    "haeun_warn_5c_ins": {
-        "name": "Seoyeon",
-        "text": "When you smiled the same way at other people, I kind of hated it."
-    },
-    "after3_confront_admit_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon lowers her head.*"
-    },
-    "after3_confront_admit_4_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon turns away. — Then stops.*"
-    },
-    "after3_confront_excuse_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon's eyes are cold. A temperature I've never seen before.*"
-    },
-    "after3_confront_excuse_2_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon pauses. Her eyes waver.*"
-    },
-    "after3_confront_lie_2_ins2": {
-        "name": "{name}",
-        "text": "*Her back is straight. Perfectly. — But her fists are clenched. Her knuckles are white.*"
-    },
-    "haeun_warn_1_ins": {
-        "name": "{name}",
-        "text": "*Haeun is leaning against the wall. She's fiddling with her student council bracelet.*"
-    },
-    "haeun_warn_2_ins": {
-        "name": "{name}",
-        "text": "Haeun? What are you doing here?"
-    },
-    "haeun_warn_3_ins": {
-        "name": "Haeun",
-        "text": "...She cried."
-    },
-    "haeun_warn_3_ins2": {
-        "name": "{name}",
-        "text": "*— What?*"
-    },
-    "haeun_warn_6_ins": {
-        "name": "{name}",
-        "text": "*Haeun lowers her head.*"
-    },
-    "haeun_warn_7_ins": {
-        "name": "{name}",
-        "text": "*Haeun stops herself. Her face says she knows she shouldn't cross the line.*"
-    },
-    "haeun_warn_7_ins2": {
-        "name": "Haeun",
-        "text": "...Anyway. Please be good to her. I'm asking you."
-    },
-    "haeun_warn_7_ins3": {
-        "name": "{name}",
-        "text": "*Haeun turns and walks away.*"
-    },
-    "minsu_d3_8_ins": {
-        "name": "{name}",
-        "text": "...What?"
-    },
-    "minsu_d3_3_ins": {
-        "name": "{name}",
-        "text": "*I have nothing to say.*"
-    },
-    "minsu_d3_4_ins": {
-        "name": "{name}",
-        "text": "......"
-    },
-    "minsu_d3_4_ins2": {
-        "name": "Minsu",
-        "text": "Trying to be 'the good guy' by accepting everyone — that's not kindness, it's cowardice."
-    },
-    "minsu_d3_5_ins": {
-        "name": "{name}",
-        "text": "...Yeah."
-    },
-    "minsu_d3_6b_ins": {
-        "name": "{name}",
-        "text": "*Minsu grabs my shoulder.*"
-    },
-    "minsu_d3_7_ins": {
-        "name": "{name}",
-        "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to say 'no.' Because I couldn't say anything. She got a boyfriend without knowing how I felt, and I transferred with 38 unsent confessions saved in my phone's notes.*"
-    },
-    "minsu_d3_7_ins2": {
-        "name": "{name}",
-        "text": "*If Sojeong had been able to reject me back then — maybe it wouldn't still haunt me.*"
-    },
-    "minsu_d3_10_ins": {
-        "name": "{name}",
-        "text": "*Minsu walks ahead.*"
-    }
+  "after3_start": {
+    "name": "{name}",
+    "text": "*After school. My mind is a mess. Who should I go to first?*"
+  },
+  "after3_route_check": {
+    "name": "{name}",
+    "text": "*I check my phone. No reply, and the meeting time is just getting closer.*"
+  },
+  "after3_auto_dain": {
+    "name": "{name}",
+    "text": "*I have plans with Dain. Heading to the gym.*"
+  },
+  "after3_auto_yuna": {
+    "name": "{name}",
+    "text": "*I have plans with Yuna. Heading to the library annex.*"
+  },
+  "after3_auto_seo": {
+    "name": "{name}",
+    "text": "*I have plans with Seoyeon. Heading to the student council room.*"
+  },
+  "after3_multi_choice": {
+    "name": "{name}",
+    "text": "*My plans overlapped. To be precise, I made them overlap. Running away would be even worse. Who should I go to first to fix this?*",
+    "choices": [
+      "Go to Seoyeon",
+      "Go to Yuna",
+      "Go to Dain",
+      "Think a little more"
+    ]
+  },
+  "after3_choice": {
+    "name": "{name}",
+    "text": "*Where should I go.*",
+    "choices": [
+      "To the student council room",
+      "To the library",
+      "To the gym"
+    ]
+  },
+  "after3_reject_for_seo_1": {
+    "name": "{name}",
+    "text": "*I run into Dain in the hallway. Her usual energy is gone. The smile doesn't come first today.*"
+  },
+  "after3_reject_for_seo_2": {
+    "name": "Dain",
+    "text": "...You're not coming to the gym today, are you?"
+  },
+  "after3_reject_for_seo_3": {
+    "name": "{name}",
+    "text": "*I pass by the library. Yuna's seat is empty. One note remains. '...Okay.' Too short. The edge of the paper is slightly crumpled.*"
+  },
+  "after3_reject_for_seo_4": {
+    "name": "{name}",
+    "text": "*I step back into the hallway. Dain's sentence without exclamation marks, Yuna's too-short note with a crumpled edge. — The weight of my choice settles on my shoulders.*"
+  },
+  "after3_reject_for_yuna_1": {
+    "name": "{name}",
+    "text": "*Seoyeon is organizing her clipboard in the hallway. Her hands turn the pages faster than usual.*"
+  },
+  "after3_reject_for_yuna_2": {
+    "name": "Seoyeon",
+    "text": "Student council work is busy. I'll eat separately. ...Today."
+  },
+  "after3_reject_for_yuna_walk_gym": {
+    "name": "{name}",
+    "text": "*My feet carry me toward the gym.*"
+  },
+  "after3_reject_for_yuna_3": {
+    "name": "{name}",
+    "text": "*Dain is hitting balls alone in the gym.*"
+  },
+  "after3_reject_for_yuna_3_dain": {
+    "name": "Dain",
+    "text": "Ah, hey!"
+  },
+  "after3_reject_for_yuna_3_react": {
+    "name": "{name}",
+    "text": "*But she turns her face away. Her eyes are red.*"
+  },
+  "after3_reject_for_yuna_4": {
+    "name": "{name}",
+    "text": "*I leave the gym and return to the hallway. Seoyeon pretended she was fine. Dain couldn't even do that. — Somehow, both hurt more that way.*"
+  },
+  "after3_reject_for_dain_1": {
+    "name": "{name}",
+    "text": "*Seoyeon is organizing her clipboard. She's smiling, but the fingers doing the organizing are too neat, too controlled.*"
+  },
+  "after3_reject_for_dain_2": {
+    "name": "Seoyeon",
+    "text": "...I have some things to do today. I'll head out first."
+  },
+  "after3_reject_for_dain_2b": {
+    "name": "{name}",
+    "text": "*I headed to Yuna's hideout.*"
+  },
+  "after3_reject_for_dain_3": {
+    "name": "{name}",
+    "text": "*There is no note in the library. Yuna's bag is gone too. Only a lukewarm water ring remains on the desk, like she was here just moments ago.*"
+  },
+  "after3_reject_for_dain_3b": {
+    "name": "{name}",
+    "text": "*I walked back to the hallway.*"
+  },
+  "after3_seo_1": {
+    "name": "{name}",
+    "text": "*I opened the student council room door. — Seoyeon is slumped over the desk.*"
+  },
+  "after3_seo_3": {
+    "name": "{name}",
+    "text": "*Seoyeon lifts her head at the sound of someone entering. Her eyes look tired. Her makeup is slightly smudged.*"
+  },
+  "after3_seo_4": {
+    "name": "Seoyeon",
+    "text": "......"
+  },
+  "after3_seo_5": {
+    "name": "{name}",
+    "text": "Seoyeon?"
+  },
+  "after3_seo_6": {
+    "name": "Seoyeon",
+    "text": "*Clears throat* ...It's nothing. Just forget it."
+  },
+  "after3_seo_7": {
+    "name": "{name}",
+    "text": "See what? I didn't see anything."
+  },
+  "after3_seo_8": {
+    "name": "Seoyeon",
+    "text": "This side of me. — This is a secret."
+  },
+  "after3_seo_9": {
+    "name": "{name}",
+    "text": "*Seoyeon straightens her posture. But — her usual perfect smile doesn’t return.*"
+  },
+  "after3_seo_choice": {
+    "name": "Seoyeon",
+    "text": "Next time I ask you for a favor, you have to say yes. No questions asked. — Consider it payment.",
+    "choices": [
+      "You don’t have to be perfect, you know",
+      "I’ll keep your secret"
+    ]
+  },
+  "after3_seo_choice1": {
+    "name": "{name}",
+    "text": "*Seoyeon pauses. Sets down her pen. Slowly.*"
+  },
+  "after3_seo_choice1_react": {
+    "name": "Seoyeon",
+    "text": "...Words like that. You shouldn’t say them so easily."
+  },
+  "after3_seo_choice2": {
+    "name": "{name}",
+    "text": "*Her eyes are glistening. — She didn’t cry. Not yet.*"
+  },
+  "after3_seo_end": {
+    "name": "{name}",
+    "text": "*Those words carry weight. — I think I’m starting to understand how monumental it is for this person to show an imperfect side of herself.*"
+  },
+  "after3_seo_end_c2": {
+    "name": "{name}",
+    "text": "*Promising to keep her secret — seems to mean a great deal to this person.*"
+  },
+  "after3_yuna_1": {
+    "name": "{name}",
+    "text": "*The library annex. Yuna’s secret reading nook. — The door is open.*"
+  },
+  "after3_yuna_2": {
+    "name": "{name}",
+    "text": "*I go in, but Yuna isn’t here. Instead — a notebook lies open on the sofa. Filled with handwriting.*"
+  },
+  "after3_yuna_4": {
+    "name": "{name}",
+    "text": "*First page.*"
+  },
+  "after3_yuna_6": {
+    "name": "Yuna",
+    "text": "What are you doing."
+  },
+  "after3_yuna_7": {
+    "name": "{name}",
+    "text": "*Yuna’s voice from behind. I turn around and she’s standing there holding two drinks. — She freezes when she sees me looking at the notebook.*"
+  },
+  "after3_yuna_8": {
+    "name": "Yuna",
+    "text": "...That."
+  },
+  "after3_yuna_8b": {
+    "name": "Yuna",
+    "text": "*Quickly approaches and snatches the notebook* ...I didn't say you could."
+  },
+  "after3_yuna_9": {
+    "name": "{name}",
+    "text": "*Her ears. Red. — It’s the first time I’ve seen Yuna blush.*"
+  },
+  "after3_yuna_choice": {
+    "name": "{name}",
+    "text": "I was enjoying the read.",
+    "choices": [
+      "You might want to change the protagonist’s name though",
+      "How does it end?"
+    ]
+  },
+  "after3_yuna_choice1": {
+    "name": "Yuna",
+    "text": "...There’s no protagonist name."
+  },
+  "after3_yuna_choice1_2": {
+    "name": "{name}",
+    "text": "’A transfer student came to the library’ is just a coincidence?"
+  },
+  "after3_yuna_choice1_3": {
+    "name": "Yuna",
+    "text": "*Flips the notebook closed* ...But sometimes. Fiction can be more honest than reality."
+  },
+  "after3_yuna_choice1_react": {
+    "name": "{name}",
+    "text": "*She said fiction, but her ears are lying.*"
+  },
+  "after3_yuna_choice2": {
+    "name": "{name}",
+    "text": "*Yuna pauses. She looks down at the notebook.*"
+  },
+  "after3_yuna_choice2_2": {
+    "name": "Yuna",
+    "text": "...I haven’t decided on the ending yet."
+  },
+  "after3_yuna_choice2_3": {
+    "name": "Yuna",
+    "text": "...Because once I write the ending, it’s over."
+  },
+  "after3_yuna_choice2_react": {
+    "name": "{name}",
+    "text": "*Yuna spoke more than two sentences in a row. — For her, that’s proof of emotion.*"
+  },
+  "after3_yuna_end": {
+    "name": "{name}",
+    "text": "*Yuna clutches the notebook tightly to her chest.*"
+  },
+  "after3_dain_1": {
+    "name": "{name}",
+    "text": "*The gym. Dain is stretching alone. She tries a light jog and —*"
+  },
+  "after3_dain_3": {
+    "name": "{name}",
+    "text": "Dain!"
+  },
+  "after3_dain_4": {
+    "name": "Dain",
+    "text": "Ah! I’m fine!! It’s just a little twist!!"
+  },
+  "after3_dain_5": {
+    "name": "{name}",
+    "text": "You don’t look fine."
+  },
+  "after3_dain_6": {
+    "name": "{name}",
+    "text": "*Too many exclamation marks. — Way too many. Does this girl use more exclamation marks when she’s not okay?*"
+  },
+  "after3_dain_choice": {
+    "name": "{name}",
+    "text": "*Dain sits on the bench. She rubs her knee.*",
+    "choices": [
+      "Sit next to her and wait quietly",
+      "Got any patches? I’ll go get them"
+    ]
+  },
+  "after3_dain_choice1": {
+    "name": "{name}",
+    "text": "*I sit beside her without a word. Dain glances my way.*"
+  },
+  "after3_dain_choice1_2": {
+    "name": "Dain",
+    "text": "...Why aren’t you asking?"
+  },
+  "after3_dain_choice1_3": {
+    "name": "{name}",
+    "text": "Because you’d just say you’re fine."
+  },
+  "after3_dain_choice1_react": {
+    "name": "{name}",
+    "text": "*Dain hesitates. — Then smiles, small. A smile I've never seen before.*"
+  },
+  "after3_dain_choice1_react2": {
+    "name": "Dain",
+    "text": "...Yeah. I would’ve said I’m fine."
+  },
+  "after3_dain_choice1_react3": {
+    "name": "Dain",
+    "text": "Thanks. For not asking anything."
+  },
+  "after3_dain_choice2": {
+    "name": "Dain",
+    "text": "Hey! I’m fine! I don’t need a bandage or anything!!"
+  },
+  "after3_dain_end": {
+    "name": "{name}",
+    "text": "*Dain lightly punches my shoulder with her fist. — Weaker than yesterday.*"
+  },
+  "after3_dain_end_check": {
+    "name": "{name}",
+    "text": "*Dain lightly punches my shoulder.*"
+  },
+  "after3_dain_end_first": {
+    "name": "{name}",
+    "text": "*Dain lightly punches my shoulder. — She seems embarrassed.*"
+  },
+  "after3_confront_1": {
+    "name": "{name}",
+    "text": "*Coming out of the after-school spot — Seoyeon is waiting in the hallway. Arms crossed. Her usual composure is gone.*"
+  },
+  "after3_confront_2": {
+    "name": "Seoyeon",
+    "text": "{name}. Hold on."
+  },
+  "after3_confront_3": {
+    "name": "{name}",
+    "text": "*Seoyeon leads me to the end of the hallway. Where no one else is.*"
+  },
+  "after3_confront_4": {
+    "name": "Seoyeon",
+    "text": "About lunchtime."
+  },
+  "after3_confront_5": {
+    "name": "Seoyeon",
+    "text": "When you smiled the same way at other people, I kind of hated it."
+  },
+  "after3_confront_6": {
+    "name": "Seoyeon",
+    "text": "Be honest. Did you promise all of us the weekend?"
+  },
+  "after3_confront_choice": {
+    "name": "{name}",
+    "text": "*Seoyeon looks straight at me. Not with the eyes of a student council president. With the eyes of just a person.*",
+    "choices": [
+      "Admit it honestly",
+      "The time slots are different, so I thought it would be fine",
+      "You’re the only one I’m serious about"
+    ]
+  },
+  "after3_confront_admit": {
+    "name": "Seoyeon",
+    "text": "...Because you couldn’t say no."
+  },
+  "after3_confront_admit_2": {
+    "name": "Seoyeon",
+    "text": "That’s the cruelest thing you can say, {name}. Kindness that can’t refuse — gives people false hope."
+  },
+  "after3_confront_admit_3": {
+    "name": "{name}",
+    "text": "*Seoyeon picks up her lunch bag. Her hands are trembling.*"
+  },
+  "after3_confront_admit_4": {
+    "name": "Seoyeon",
+    "text": "You told me I didn’t have to be perfect — and then you tried to be the perfect person for everyone. That’s worse."
+  },
+  "after3_confront_admit_5": {
+    "name": "Seoyeon",
+    "text": "...I won’t be leaving the rooftop open today."
+  },
+  "after3_confront_admit_6": {
+    "name": "{name}",
+    "text": "*Her back is straight. Perfectly. — But her fists are clenched. Her knuckles are white.*"
+  },
+  "after3_confront_excuse": {
+    "name": "Seoyeon",
+    "text": "...You don’t see how that’s the problem?"
+  },
+  "after3_confront_excuse_2": {
+    "name": "Seoyeon",
+    "text": "It's not about how many people you made plans with. It's about what that promise meant to me."
+  },
+  "after3_confront_lie_ins": {
+    "name": "{name}",
+    "text": "*Seoyeon pauses. Her eyes waver.*"
+  },
+  "after3_confront_lie": {
+    "name": "Seoyeon",
+    "text": "...Really? Can I... believe that?"
+  },
+  "after3_confront_lie_2": {
+    "name": "{name}",
+    "text": "*Eyes that want to believe. — I didn’t know a lie could weigh this much.*"
+  },
+  "after3_confront_end": {
+    "name": "{name}",
+    "text": "*I’m standing alone in the hallway where Seoyeon disappeared. — Her posture was straight. Perfectly straight. But her fists were clenched.*"
+  },
+  "after3_final": {
+    "name": "{name}",
+    "text": "*After school is over. — What I saw today won’t leave my mind.*"
+  },
+  "haeun_check": {
+    "name": "{name}",
+    "text": ""
+  },
+  "haeun_warn_1": {
+    "name": "{name}",
+    "text": "*I stepped out of the student council room. The hallway is empty. — Someone was waiting.*"
+  },
+  "haeun_warn_2": {
+    "name": "Haeun",
+    "text": "...{name}."
+  },
+  "haeun_warn_2b": {
+    "name": "{name}",
+    "text": "Yeah."
+  },
+  "haeun_warn_3": {
+    "name": "Haeun",
+    "text": "Did you just see Seoyeon? My senior?"
+  },
+  "haeun_warn_4": {
+    "name": "Haeun",
+    "text": "...She cried. After she left the student council room. In the bathroom. — I was the only one who saw. In a whole year, I've never seen her cry."
+  },
+  "haeun_warn_4b": {
+    "name": "{name}",
+    "text": "She cried?"
+  },
+  "haeun_warn_5": {
+    "name": "{name}",
+    "text": "*Seoyeon cried. — All she said to me was that I'd 'seen her imperfect side.' But after that, she cried.*"
+  },
+  "haeun_warn_5b": {
+    "name": "Haeun",
+    "text": "Sunbae is someone who thinks she has to be perfect. Someone who thinks crying means losing."
+  },
+  "haeun_warn_5c": {
+    "name": "{name}",
+    "text": "......"
+  },
+  "haeun_warn_6": {
+    "name": "Haeun",
+    "text": "The fact that she cried — that means she really cares about you, {name}."
+  },
+  "haeun_warn_7": {
+    "name": "Haeun",
+    "text": "I know I'm butting in. But I'm worried about her. — Things at home are complicated for her right now. Her parents are... ...anyway. Please be good to her. I'm asking you."
+  },
+  "haeun_warn_8": {
+    "name": "{name}",
+    "text": "*I can't get the image out of my head — Seoyeon crying alone in the bathroom. That perfectly straight back, those white-knuckled fists, and — an empty bathroom.*"
+  },
+  "haeun_warn_8b": {
+    "name": "{name}",
+    "text": "*I walked out to the school entrance.*"
+  },
+  "minsu_d3_check": {
+    "name": "{name}",
+    "text": ""
+  },
+  "minsu_d3_1": {
+    "name": "{name}",
+    "text": "*Walking home. Minsu is waiting at the school gate.*"
+  },
+  "minsu_d3_2": {
+    "name": "Minsu",
+    "text": "I saw."
+  },
+  "minsu_d3_3": {
+    "name": "Minsu",
+    "text": "At lunch. And just now, Seoyeon's face."
+  },
+  "minsu_d3_4": {
+    "name": "Minsu",
+    "text": "What did I tell you yesterday? 'If all three of them end up crying, that's on you.' That wasn't supposed to be 'later.' It's now."
+  },
+  "minsu_d3_5": {
+    "name": "Minsu",
+    "text": "Man, it's hard to watch from the sidelines too. They're all good people. — I know you're not doing this because you're a bad guy. You just can't say no."
+  },
+  "minsu_d3_5b": {
+    "name": "{name}",
+    "text": "*Minsu sighs. Not out of contempt — out of genuine concern.*"
+  },
+  "minsu_d3_6": {
+    "name": "{name}",
+    "text": "...But I don't know what I'm supposed to do."
+  },
+  "minsu_d3_6b": {
+    "name": "Minsu",
+    "text": "I won't ask what happened at your old school. But let me tell you one thing."
+  },
+  "minsu_d3_7": {
+    "name": "Minsu",
+    "text": "Saying no is also a form of love. Turning someone down when it's not going to work — that's a hundred times better than giving them false hope."
+  },
+  "minsu_d3_8": {
+    "name": "{name}",
+    "text": "*...The flashback ends. Minsu taps his forehead with a finger.*"
+  },
+  "minsu_d3_9": {
+    "name": "{name}",
+    "text": "*In the end, the answer is simple. One person. That alone is enough.*"
+  },
+  "minsu_d3_10": {
+    "name": "Minsu",
+    "text": "See you at school tomorrow. — Seriously, think about it. For real."
+  },
+  "after3_seo_freetalk": {
+    "name": "Seoyeon",
+    "text": "*Standing face to face with Seoyeon in the hallway. Her expression is complicated.*",
+    "context": "Day 3 afterschool, right after confrontation/reconciliation with Seoyeon. Trust is shaken. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
+    "personality": "Seoyeon is the cool student council president. Strong possessiveness, direct when jealous. Hurt but trying not to show it."
+  },
+  "after3_yuna_freetalk": {
+    "name": "Yuna",
+    "text": "*Walking alongside Yuna. Her gaze is cool.*",
+    "context": "Day 3 afterschool, just talked with Yuna. She's showing more emotion than usual. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
+    "personality": "Yuna is a mysterious literary girl. Usually calm but emotionally shaken now. More about wanting confirmation than jealousy."
+  },
+  "after3_dain_freetalk": {
+    "name": "Dain",
+    "text": "*Sitting on a bench with Dain at the playground. She's quieter than usual.*",
+    "context": "Day 3 afterschool, just talked with Dain. She's hurt but pretending to be cheerful. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
+    "personality": "Dain is an energetic athlete. Being cheerful is her only defense. Fewer exclamation marks mean she's being real."
+  },
+  "after3_seo_5_ins": {
+    "name": "Seoyeon",
+    "text": "*Hurriedly fixing her hair* ...Did you see?"
+  },
+  "after3_seo_choice1_react_ins": {
+    "name": "{name}",
+    "text": "*Seoyeon looks out the window. I can't see her expression. — She's deliberately hiding it.*"
+  },
+  "after3_seo_choice1_react_ins3": {
+    "name": "{name}",
+    "text": "*Seoyeon straightens up. The student council president's face returns. — But it's not perfect. The angle of her smile is off by half a degree.*"
+  },
+  "after3_seo_choice1_react_ins4": {
+    "name": "Seoyeon",
+    "text": "...Thank you."
+  },
+  "after3_seo_choice1_react_ins5": {
+    "name": "{name}",
+    "text": "I'm good at keeping secrets."
+  },
+  "after3_seo_choice1_react_ins6": {
+    "name": "Seoyeon",
+    "text": "*Sorting through papers* I know one of your secrets too."
+  },
+  "after3_seo_choice1_react_ins7": {
+    "name": "Seoyeon",
+    "text": "Your eyes lit up when you ate the rolled omelette at lunch. — You can't fake that."
+  },
+  "after3_seo_choice1_react_ins8": {
+    "name": "{name}",
+    "text": "*I offered to keep her secret, and she pulled out a secret of equal weight. — For this person, equality comes before gratitude.*"
+  },
+  "after3_yuna_5_ins": {
+    "name": "{name}",
+    "text": "*...Isn't this about me?*"
+  },
+  "after3_yuna_choice1_2_ins": {
+    "name": "Yuna",
+    "text": "*Clutching the notebook to her chest* ...Novels are. Fiction."
+  },
+  "after3_yuna_choice2_3_ins": {
+    "name": "{name}",
+    "text": "*Yuna spoke more than two sentences in a row. — I've never seen her say this much before.*"
+  },
+  "after3_seo_7_ins": {
+    "name": "Seoyeon",
+    "text": "*Looks down* ...I really didn't want you to see this."
+  },
+  "after3_dain_5_ins": {
+    "name": "Dain",
+    "text": "I told you I'm fine!! It's nothing!!"
+  },
+  "after3_dain_choice2_ins": {
+    "name": "{name}",
+    "text": "*Brought a bandage from the nurse’s office. Held it out to Dain.*"
+  },
+  "after3_dain_choice2_ins2": {
+    "name": "Dain",
+    "text": "...Oh, you actually brought one."
+  },
+  "after3_dain_choice2_ins3": {
+    "name": "{name}",
+    "text": "You said you were fine."
+  },
+  "after3_dain_choice2_ins4": {
+    "name": "{name}",
+    "text": "*Dain takes the bandage and stares at it for a long time. Bites her lip.*"
+  },
+  "after3_dain_choice2_ins5": {
+    "name": "Dain",
+    "text": "*Smiles weakly.* ...What. I shouldn’t be moved by something like this."
+  },
+  "after3_dain_choice2_ins6": {
+    "name": "{name}",
+    "text": "*She accepted it. — This is the first time Dain hasn’t refused someone’s help. The smile without exclamation marks feels strangely heavy.*"
+  },
+  "after3_confront_5_ins": {
+    "name": "Dain",
+    "text": "*With her head lowered.* ...I didn't like it either."
+  },
+  "after3_confront_5_ins2": {
+    "name": "{name}",
+    "text": "*She accepted it. — This is the first time Dain hasn't refused someone's help. A smile without exclamation marks feels strangely heavy.*"
+  },
+  "haeun_warn_5c_ins": {
+    "name": "Seoyeon",
+    "text": "When you smiled the same way at other people, I kind of hated it."
+  },
+  "after3_confront_admit_ins": {
+    "name": "{name}",
+    "text": "*Seoyeon lowers her head.*"
+  },
+  "after3_confront_admit_4_ins": {
+    "name": "{name}",
+    "text": "*Seoyeon turns away. — Then stops.*"
+  },
+  "after3_confront_excuse_ins": {
+    "name": "{name}",
+    "text": "*Seoyeon's eyes are cold. A temperature I've never seen before.*"
+  },
+  "after3_confront_excuse_2_ins": {
+    "name": "{name}",
+    "text": "*Seoyeon pauses. Her eyes waver.*"
+  },
+  "after3_confront_lie_2_ins2": {
+    "name": "{name}",
+    "text": "*Her back is straight. Perfectly. — But her fists are clenched. Her knuckles are white.*"
+  },
+  "haeun_warn_1_ins": {
+    "name": "{name}",
+    "text": "*Haeun is leaning against the wall. She's fiddling with her student council bracelet.*"
+  },
+  "haeun_warn_2_ins": {
+    "name": "{name}",
+    "text": "Haeun? What are you doing here?"
+  },
+  "haeun_warn_3_ins": {
+    "name": "Haeun",
+    "text": "...She cried."
+  },
+  "haeun_warn_3_ins2": {
+    "name": "{name}",
+    "text": "*— What?*"
+  },
+  "haeun_warn_6_ins": {
+    "name": "{name}",
+    "text": "*Haeun lowers her head.*"
+  },
+  "haeun_warn_7_ins": {
+    "name": "{name}",
+    "text": "*Haeun stops herself. Her face says she knows she shouldn't cross the line.*"
+  },
+  "haeun_warn_7_ins2": {
+    "name": "Haeun",
+    "text": "...Anyway. Please be good to her. I'm asking you."
+  },
+  "haeun_warn_7_ins3": {
+    "name": "{name}",
+    "text": "*Haeun turns and walks away.*"
+  },
+  "minsu_d3_8_ins": {
+    "name": "{name}",
+    "text": "...What?"
+  },
+  "minsu_d3_3_ins": {
+    "name": "{name}",
+    "text": "*I have nothing to say.*"
+  },
+  "minsu_d3_4_ins": {
+    "name": "{name}",
+    "text": "......"
+  },
+  "minsu_d3_4_ins2": {
+    "name": "Minsu",
+    "text": "Trying to be 'the good guy' by accepting everyone — that's not kindness, it's cowardice."
+  },
+  "minsu_d3_5_ins": {
+    "name": "{name}",
+    "text": "...Yeah."
+  },
+  "minsu_d3_6b_ins": {
+    "name": "{name}",
+    "text": "*Minsu grabs my shoulder.*"
+  },
+  "minsu_d3_7_ins": {
+    "name": "{name}",
+    "text": "*Saying no is love. — At my old school, I never even gave Sojeong the chance to say 'no.' Because I couldn't say anything. She got a boyfriend without knowing how I felt, and I transferred with 38 unsent confessions saved in my phone's notes.*"
+  },
+  "minsu_d3_7_ins2": {
+    "name": "{name}",
+    "text": "*If Sojeong had been able to reject me back then — maybe it wouldn't still haunt me.*"
+  },
+  "minsu_d3_10_ins": {
+    "name": "{name}",
+    "text": "*Minsu walks ahead.*"
+  },
+  "after3_reject_for_seo_3b": {
+    "name": "{name}",
+    "text": "*Yuna's book is gone. Volume 1 that always sat there. Volume 2 she promised to lend me. And — the bookmark too. The old bookmark she kept so carefully.*"
+  },
+  "after3_reject_for_seo_3c": {
+    "name": "{name}",
+    "text": "*She erased every trace. This wasn't a note left behind — it was a line drawn. For Yuna to write this many words, she must have waited a long time.*"
+  },
+  "after3_dain_dilemma_tell": {
+    "name": "Dain",
+    "text": "...What?"
+  },
+  "after3_dain_dilemma_tell_2": {
+    "name": "{name}",
+    "text": "Your knee. You've been rubbing it this whole time. This isn't from twisting it today, is it?"
+  },
+  "after3_dain_dilemma_tell_3": {
+    "name": "{name}",
+    "text": "*Dain's expression hardens. The exclamation marks vanish.*"
+  },
+  "after3_dain_dilemma_tell_4": {
+    "name": "Dain",
+    "text": "...Why bring it up if you knew. You know the tournament is next week."
+  },
+  "after3_dain_dilemma_tell_5": {
+    "name": "{name}",
+    "text": "Your knee matters more than the tournament."
+  },
+  "after3_dain_dilemma_tell_6": {
+    "name": "Dain",
+    "text": "That's not your call to make!!"
+  },
+  "after3_dain_dilemma_tell_7": {
+    "name": "{name}",
+    "text": "*Dain stands up. Her knee creaks. Her hand stops halfway to her shoelaces.*"
+  },
+  "after3_dain_dilemma_tell_8": {
+    "name": "Dain",
+    "text": "...Please. Just this. Don't tell anyone."
+  },
+  "after3_dain_dilemma_final": {
+    "name": "{name}",
+    "text": "*Dain's eyes are wet. A Dain without exclamation marks — I've never seen it before.*",
+    "choices": [
+      "Sorry. But I'm telling.",
+      "...Okay. I won't say anything."
+    ]
+  },
+  "after3_dain_tell_confirm": {
+    "name": "Dain",
+    "text": "...You're the worst."
+  },
+  "after3_dain_tell_confirm_2": {
+    "name": "{name}",
+    "text": "*Dain grabs her bag and walks out. She doesn't look back. The gym door slams shut.*"
+  },
+  "after3_dain_tell_confirm_3": {
+    "name": "{name}",
+    "text": "*I stand alone in the empty gym. With Sojeong, I regretted keeping silent. This time, I spoke up. — But I don't know if it was right.*"
+  },
+  "after3_dain_tell_retreat": {
+    "name": "{name}",
+    "text": "*Dain breathes a sigh of relief. — I picked silence again. The easy way out.*"
+  }
 }

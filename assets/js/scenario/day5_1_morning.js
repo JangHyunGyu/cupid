@@ -68,7 +68,20 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_seo_note_1_ins": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "morning5_seo_note_1_ins3"
+        "branches": [
+            { "condition": "yuna_trust_broken", "next": "morning5_yuna_story_gone" },
+            { "next": "morning5_seo_note_1_ins3" }
+        ]
+    },
+    "morning5_yuna_story_gone": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "morning5_yuna_story_gone_2"
+    },
+    "morning5_yuna_story_gone_2": {
+        "background": "assets/images/background/school_hallway.png",
+        "character": null,
+        "next": "morning5_return_class"
     },
     "morning5_seo_note_1_ins3": {
         "background": "assets/images/background/school_hallway.png",
