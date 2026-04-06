@@ -756,5 +756,273 @@
   "after3_dain_tell_retreat": {
     "name": "{name}",
     "text": "*Dain suelta un suspiro de alivio. — He elegido el silencio otra vez. El camino fácil.*"
+  },
+  "after3_seo_pity_trap_1": {
+    "name": "{name}",
+    "text": "*Seoyeon levanta la cabeza despacio. Su rostro es — exactamente cero. Ni frío ni triste. Eso es peor.*"
+  },
+  "after3_seo_pity_trap_2": {
+    "name": "Seoyeon",
+    "text": "...Cualquiera."
+  },
+  "after3_seo_pity_trap_3": {
+    "name": "Seoyeon",
+    "text": "¿Eso lo dijiste como consuelo?"
+  },
+  "after3_seo_pity_trap_4": {
+    "name": "{name}",
+    "text": "*Seoyeon se limpia el maquillaje corrido con el dorso de la mano. Despacio. Cada movimiento medido. Se está recomponiendo.*"
+  },
+  "after3_seo_pity_trap_5": {
+    "name": "Seoyeon",
+    "text": "No me hice presidenta del consejo para ser 'cualquiera.'"
+  },
+  "after3_seo_pity_trap_6": {
+    "name": "{name}",
+    "text": "*Vuelve la cara de la presidenta. Un grado más dura que de costumbre. — Una cara hecha para enterrar *para siempre* a la Seoyeon vulnerable que acabo de ver.*"
+  },
+  "after3_seo_pity_trap_7": {
+    "name": "Seoyeon",
+    "text": "¿Podrías salir? Tengo trabajo."
+  },
+  "after3_seo_pity_trap_8": {
+    "name": "{name}",
+    "text": "Seoyeon—"
+  },
+  "after3_seo_pity_trap_9": {
+    "name": "Seoyeon",
+    "text": "Llámame **Presidenta**."
+  },
+  "after3_seo_pity_trap_10": {
+    "name": "{name}",
+    "text": "*Cerré la puerta del consejo al salir. El pasillo estaba vacío. — Intenté consolarla. De verdad. Pero para Seoyeon, 'cualquiera' no era consuelo, era una degradación. Aplané siete años de su esfuerzo en una sola palabra.*"
+  },
+  "after3_seo_correct_1": {
+    "name": "{name}",
+    "text": "*Seoyeon se detiene. Por un instante — solo un instante — sus palabras se cortan. Sus ojos buscando confirmar si de verdad no vi nada.*"
+  },
+  "after3_seo_correct_2": {
+    "name": "{name}",
+    "text": "*Me agacho fingiendo recoger un bolígrafo. Tanteando bajo el escritorio. A propósito despacio. — Sin mirarla. En el momento en que la mire, la mentira se rompe.*"
+  },
+  "after3_seo_correct_3": {
+    "name": "{name}",
+    "text": "Ah, aquí está. — Presidenta, ¿este consejo es un sitio donde los bolis desaparecen mucho?"
+  },
+  "after3_seo_correct_4": {
+    "name": "{name}",
+    "text": "*Levanto la vista. Seoyeon está — limpiándose el maquillaje corrido con el dorso de la mano. Con naturalidad. Como si lo hubiera necesitado desde el principio.*"
+  },
+  "after3_seo_correct_5": {
+    "name": "Seoyeon",
+    "text": "...Lo de los bolis desaparecidos es un misterio real. Treinta al año."
+  },
+  "after3_seo_correct_6": {
+    "name": "{name}",
+    "text": "¿La presidenta no puede ni atrapar al culpable?"
+  },
+  "after3_seo_correct_7": {
+    "name": "Seoyeon",
+    "text": "*Una pequeña risa.* Si los atrapara — los estudiantes empezarían a temer al consejo."
+  },
+  "after3_seo_correct_8": {
+    "name": "{name}",
+    "text": "*La conversación fluye con naturalidad. La persona que estaba derrumbada sobre el escritorio, la del maquillaje corrido — *ninguna de las dos existió* en este consejo. Las dos lo acordamos. Sin decirlo.*"
+  },
+  "after3_seo_correct_9": {
+    "name": "Seoyeon",
+    "text": "...{name}."
+  },
+  "after3_seo_correct_10": {
+    "name": "{name}",
+    "text": "Sí."
+  },
+  "after3_seo_correct_11": {
+    "name": "Seoyeon",
+    "text": "Lo de recoger el boli. — Vuelve a recogerlo de vez en cuando."
+  },
+  "after3_seo_correct_12": {
+    "name": "{name}",
+    "text": "*Nunca dije que guardaría su secreto. No decirlo fue la respuesta. — Para Seoyeon, la debilidad tiene que *no haber existido nunca*. Solo a quien lo entiende, Seoyeon ofrece no un meñique sino una próxima cita.*"
+  },
+  "after3_yuna_decode_trap_1": {
+    "name": "{name}",
+    "text": "*Yuna aprieta más el cuaderno contra el pecho. Los nudillos se le ponen blancos.*"
+  },
+  "after3_yuna_decode_trap_2": {
+    "name": "Yuna",
+    "text": "...No."
+  },
+  "after3_yuna_decode_trap_3": {
+    "name": "{name}",
+    "text": "¿No? Pero mira esta parte: 'leyendo junto a la ventana del aula—'"
+  },
+  "after3_yuna_decode_trap_4": {
+    "name": "Yuna",
+    "text": "**Te dije que no.**"
+  },
+  "after3_yuna_decode_trap_5": {
+    "name": "{name}",
+    "text": "*Yuna mete el cuaderno en la mochila a empujones. No es su movimiento lento de siempre. Es una mano huyendo.*"
+  },
+  "after3_yuna_decode_trap_6": {
+    "name": "Yuna",
+    "text": "...Por gente como tú — no puedo escribir."
+  },
+  "after3_yuna_decode_trap_7": {
+    "name": "{name}",
+    "text": "¿Qué?"
+  },
+  "after3_yuna_decode_trap_8": {
+    "name": "Yuna",
+    "text": "Si me descubren incluso dentro de la ficción — no me queda dónde huir."
+  },
+  "after3_yuna_decode_trap_9": {
+    "name": "{name}",
+    "text": "*Yuna se echa la mochila al hombro y se levanta. Va hacia la escalera. No mira atrás como siempre — no. Esta vez *no puede* mirar atrás.*"
+  },
+  "after3_yuna_decode_trap_10": {
+    "name": "Yuna",
+    "text": "...Este sitio. A partir de ahora lo cerraré con llave."
+  },
+  "after3_yuna_decode_trap_11": {
+    "name": "{name}",
+    "text": "*Pasos bajando por la escalera. Me quedo solo en el desván. Donde estaba el cuaderno, solo quedan huellas de dedos. — Me enseñaron que darse cuenta es amar. Pero para algunas personas, *fingir no darse cuenta* es amor. Para Yuna, la ficción era *el lugar al que huía de la realidad*. Seguirla hasta allí fue romper su último refugio.*"
+  },
+  "after3_yuna_correct_1": {
+    "name": "{name}",
+    "text": "*Los dedos de Yuna que abrazan el cuaderno — se aflojan, solo un poco. Como un segundo.*"
+  },
+  "after3_yuna_correct_2": {
+    "name": "Yuna",
+    "text": "...El autor."
+  },
+  "after3_yuna_correct_3": {
+    "name": "{name}",
+    "text": "Sí. ¿De quién es esto? ¿Está publicado?"
+  },
+  "after3_yuna_correct_4": {
+    "name": "Yuna",
+    "text": "...No sé. Probablemente no esté publicado."
+  },
+  "after3_yuna_correct_5": {
+    "name": "{name}",
+    "text": "Qué pena. Algo así no debería quedar enterrado."
+  },
+  "after3_yuna_correct_6": {
+    "name": "{name}",
+    "text": "*Yuna vuelve a poner el cuaderno en el escritorio. La mano que lo abrazaba — se relaja despacio. La mano que *defendía* el cuaderno se convierte en una mano que lo *muestra*.*"
+  },
+  "after3_yuna_correct_7": {
+    "name": "Yuna",
+    "text": "...¿Te lo presto?"
+  },
+  "after3_yuna_correct_8": {
+    "name": "{name}",
+    "text": "¿En serio? ¿Sin permiso del autor?"
+  },
+  "after3_yuna_correct_9": {
+    "name": "Yuna",
+    "text": "...Digamos que el autor lo permite."
+  },
+  "after3_yuna_correct_10": {
+    "name": "{name}",
+    "text": "*Yuna me tiende el cuaderno. Con las dos manos. No la postura de prestar un libro — la postura de *entregar conscientemente* algo.*"
+  },
+  "after3_yuna_correct_11": {
+    "name": "{name}",
+    "text": "*Llega pesado a mis manos. No el peso del papel. — Un peso que solo se le entrega a alguien que sabe que Yuna es *la autora* y aun así *no lo dice*.*"
+  },
+  "after3_yuna_correct_12": {
+    "name": "Yuna",
+    "text": "Cuando lo termines — escríbele una línea al autor. De forma anónima."
+  },
+  "after3_dain_pity_trap_1": {
+    "name": "{name}",
+    "text": "*La mano de Dain que se frotaba la rodilla se detiene. Despacio, levanta la cabeza.*"
+  },
+  "after3_dain_pity_trap_2": {
+    "name": "Dain",
+    "text": "...Forzar."
+  },
+  "after3_dain_pity_trap_3": {
+    "name": "Dain",
+    "text": "Eh. No estoy forzando. Esto es solo — mala postura."
+  },
+  "after3_dain_pity_trap_4": {
+    "name": "{name}",
+    "text": "*Dain se levanta. Finge no notar que la rodilla le tiembla un poco. Coge la mochila.*"
+  },
+  "after3_dain_pity_trap_5": {
+    "name": "Dain",
+    "text": "...Tú no me mires así."
+  },
+  "after3_dain_pity_trap_6": {
+    "name": "{name}",
+    "text": "¿Así cómo?"
+  },
+  "after3_dain_pity_trap_7": {
+    "name": "Dain",
+    "text": "Como si estuviera a punto de romperme."
+  },
+  "after3_dain_pity_trap_8": {
+    "name": "{name}",
+    "text": "*Dain camina hacia la puerta del gimnasio. No corre como siempre. Eso duele más.*"
+  },
+  "after3_dain_pity_trap_9": {
+    "name": "Dain",
+    "text": "El entrenador lo hace. Mis padres lo hacen. Todos lo hacen. — Pensé que tú no."
+  },
+  "after3_dain_pity_trap_10": {
+    "name": "{name}",
+    "text": "*La puerta del gimnasio se cierra. No con el portazo de siempre. Despacio. — Eso pesa más. Puse la cara que Dain más odia. Sabiéndolo. Con buena intención. Por eso es aún peor.*"
+  },
+  "after3_dain_correct_1": {
+    "name": "{name}",
+    "text": "*Dain se detiene. — Esperaba la pregunta sobre la rodilla. Esperaba que la tratara como a una paciente. Una pequeña grieta en su expresión.*"
+  },
+  "after3_dain_correct_2": {
+    "name": "Dain",
+    "text": "...Oye."
+  },
+  "after3_dain_correct_3": {
+    "name": "{name}",
+    "text": "Qué."
+  },
+  "after3_dain_correct_4": {
+    "name": "Dain",
+    "text": "Estás raro."
+  },
+  "after3_dain_correct_5": {
+    "name": "{name}",
+    "text": "¿Raro bueno o raro malo?"
+  },
+  "after3_dain_correct_6": {
+    "name": "Dain",
+    "text": "...No sé. Pero primero coge el balón. De verdad no vas a poder atraparlo."
+  },
+  "after3_dain_correct_7": {
+    "name": "{name}",
+    "text": "*Dain se levanta. Gira la rodilla una vez, suavemente. Inconscientemente. Y entonces — adopta su postura de saque. Igual que siempre.*"
+  },
+  "after3_dain_correct_8": {
+    "name": "Dain",
+    "text": "¡Allá va, transferido!"
+  },
+  "after3_dain_correct_9": {
+    "name": "{name}",
+    "text": "*El saque vuela. No lo atrapo. La pelota me da en la muñeca y rebota en el techo. Dain aplaude y se ríe. Una risa de verdad. La primera de hoy.*"
+  },
+  "after3_dain_correct_10": {
+    "name": "Dain",
+    "text": "¿Viste? ¡Gané! ...Ah."
+  },
+  "after3_dain_correct_11": {
+    "name": "{name}",
+    "text": "*Al caer, la rodilla derecha de Dain se dobla un poco. Un segundo. Su cara sigue sonriendo pero la mano va a la rodilla. Esta vez no lo esconde. Ya no hace falta esconderlo.*"
+  },
+  "after3_dain_correct_12": {
+    "name": "Dain",
+    "text": "...Sabes qué. Esto. Hace tiempo que viene."
   }
 }

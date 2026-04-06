@@ -13771,78 +13771,6 @@
         "_issues": null
       }
     },
-    "night_seo_freetalk": {
-      "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_seo_freetalk",
-      "_ko_name": "서연",
-      "_ko_text_preview": "*서연에게서 메시지가 왔다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day1_4_night.json#night_seo_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day1_4_night.json#night_seo_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day1_4_night.json#night_seo_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day1_4_night.json#night_seo_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day1_4_night.json#night_seo_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night_dain_freetalk": {
-      "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_dain_freetalk",
-      "_ko_name": "다인",
-      "_ko_text_preview": "*다인에게서 메시지 폭격이 시작됐다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day1_4_night.json#night_dain_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day1_4_night.json#night_dain_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day1_4_night.json#night_dain_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day1_4_night.json#night_dain_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day1_4_night.json#night_dain_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "night_hidden_check": {
       "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_hidden_check",
       "_ko_name": "{name}",
@@ -14018,42 +13946,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_4_night.json#night_hidden_nurse_2",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "night_yuna_freetalk": {
-      "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_yuna_freetalk",
-      "_ko_name": "유나",
-      "_ko_text_preview": "*유나에게서 짧은 메시지가 왔다.*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day1_4_night.json#night_yuna_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day1_4_night.json#night_yuna_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day1_4_night.json#night_yuna_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day1_4_night.json#night_yuna_freetalk",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day1_4_night.json#night_yuna_freetalk",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

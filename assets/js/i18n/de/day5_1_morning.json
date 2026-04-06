@@ -428,5 +428,109 @@
   "morning5_yuna_story_gone_2": {
     "name": "{name}",
     "text": "*Der leere Platz in der Bibliothek, das verschwundene Lesezeichen, und nun eine nie aufgehängte Geschichte. — Yuna löscht jede Spur. Die Stille, die ich an Tag 3 hinterlassen habe, ist bis hierher gekommen.*"
+  },
+  "hidden_homeroom_d5_praise_trap_1": {
+    "name": "{name}",
+    "text": "*Die Lehrerin hält inne. — Und dann kehrt ihr gewohnt trockener Ausdruck zurück. Zu schnell.*"
+  },
+  "hidden_homeroom_d5_praise_trap_2": {
+    "name": "Klassenlehrerin",
+    "text": "...Ohne es überhaupt gelesen zu haben?"
+  },
+  "hidden_homeroom_d5_praise_trap_3": {
+    "name": "{name}",
+    "text": "Ah, das ist — es ist sicher gut. Sie haben sieben Jahre daran gesessen."
+  },
+  "hidden_homeroom_d5_praise_trap_4": {
+    "name": "Klassenlehrerin",
+    "text": "...Schon."
+  },
+  "hidden_homeroom_d5_praise_trap_5": {
+    "name": "{name}",
+    "text": "*Die Lehrerin streckt die Hand aus. Nimmt das Manuskript zurück. Langsam. Steckt es zurück in den Umschlag.*"
+  },
+  "hidden_homeroom_d5_praise_trap_6": {
+    "name": "Klassenlehrerin",
+    "text": "Vergiss es. Tut mir leid, dass ich deine Zeit gestohlen habe."
+  },
+  "hidden_homeroom_d5_praise_trap_7": {
+    "name": "{name}",
+    "text": "Frau Lehrerin—"
+  },
+  "hidden_homeroom_d5_praise_trap_8": {
+    "name": "Klassenlehrerin",
+    "text": "Ich habe es in sieben Jahren dreimal an Verlage geschickt. Alles abgelehnt. Zwei dieser drei Absagen begannen mit — 'Sieben Jahre sind beeindruckend. Es wird sicher großartig sein.'"
+  },
+  "hidden_homeroom_d5_praise_trap_9": {
+    "name": "{name}",
+    "text": "*...Ich wusste es nicht. Von den gescheiterten Debüts wusste ich, aber nicht, dass die Absage *genau das war, was ich gerade gesagt habe*.*"
+  },
+  "hidden_homeroom_d5_praise_trap_10": {
+    "name": "Klassenlehrerin",
+    "text": "...Ich dachte, du würdest es lesen und mir sagen. — Ich habe es dir gezeigt, weil ich dachte, dass eine Schülerin weniger Druck spüren würde."
+  },
+  "hidden_homeroom_d5_praise_trap_11": {
+    "name": "Klassenlehrerin",
+    "text": "Geh. Du kommst zu spät zur Veranstaltung."
+  },
+  "hidden_homeroom_d5_praise_trap_12": {
+    "name": "{name}",
+    "text": "*Ich schloss die Klassentür hinter mir. Der Umschlag lag noch auf ihrem Tisch. — Was sie in sieben Jahren nie bekommen hatte, war nicht *aufrichtiges Lob*, sondern *jemand, der es ernsthaft liest*. Lob stand auch in den Absagen. Ich habe genau das Gleiche gesagt wie eine Absage. Mit guten Absichten.*"
+  },
+  "hidden_homeroom_d5_correct_1": {
+    "name": "{name}",
+    "text": "*Die Lehrerin hält inne. Wirklich. Nicht eine halbe Sekunde — eher drei. Ihre Hand am Klemmbrett spannt sich an.*"
+  },
+  "hidden_homeroom_d5_correct_2": {
+    "name": "Klassenlehrerin",
+    "text": "...Woher wusstest du das."
+  },
+  "hidden_homeroom_d5_correct_3": {
+    "name": "{name}",
+    "text": "Ich habe das Manuskript noch nicht mal aufgeschlagen."
+  },
+  "hidden_homeroom_d5_correct_4": {
+    "name": "Klassenlehrerin",
+    "text": "Stimmt. — Woher wusstest du, dass das letzte Kapitel leer ist."
+  },
+  "hidden_homeroom_d5_correct_5": {
+    "name": "{name}",
+    "text": "*Ich wusste es nicht. Es war eine Vermutung. — Dass jemand, der sieben Jahre daran saß, es ausgerechnet *heute* einer Schülerin zum ersten Mal zeigt, war seltsam. Wäre es fertig, hätte sie es zuerst an Verlage geschickt. Es ist nicht fertig — also braucht sie *Erlaubnis*, es zu beenden.*"
+  },
+  "hidden_homeroom_d5_correct_6": {
+    "name": "Klassenlehrerin",
+    "text": "...Ich kriege sie wirklich nicht hin. Die letzte Zeile."
+  },
+  "hidden_homeroom_d5_correct_7": {
+    "name": "Klassenlehrerin",
+    "text": "Seit sieben Jahren steckt das Manuskript wegen dieser einen Zeile fest. Weil wenn ich es beende — wäre bestätigt, dass ich keine Autorin bin."
+  },
+  "hidden_homeroom_d5_correct_8": {
+    "name": "{name}",
+    "text": "*Zum ersten Mal sprach die Lehrerin das Wort *Autorin* über sich selbst aus. Ein Wort, das sie sieben Jahre lang kein einziges Mal gesagt hatte.*"
+  },
+  "hidden_homeroom_d5_correct_9": {
+    "name": "{name}",
+    "text": "Wollen Sie, dass wir die eine Zeile zusammen anschauen?"
+  },
+  "hidden_homeroom_d5_correct_10": {
+    "name": "Klassenlehrerin",
+    "text": "...Eine Schülerin?"
+  },
+  "hidden_homeroom_d5_correct_11": {
+    "name": "{name}",
+    "text": "Es ist nur eine Zeile. Schüler können auch eine Zeile schreiben."
+  },
+  "hidden_homeroom_d5_correct_12": {
+    "name": "Klassenlehrerin",
+    "text": "*Die Lehrerin lacht. Wirklich. Nicht nur die Mundwinkel — auch die Augen. Das Gesicht von sieben Jahren Selbstzensur, die sich für eine Sekunde lockern.*"
+  },
+  "hidden_homeroom_d5_correct_13": {
+    "name": "Klassenlehrerin",
+    "text": "...Ich nehme an. Dieses Angebot."
+  },
+  "hidden_homeroom_d5_correct_14": {
+    "name": "{name}",
+    "text": "*Ich nehme das Manuskript wieder in den Arm. Es ist nicht mehr so schwer wie vorher. — Sieben Jahre Unfertiges mit Lob *abzuschließen* war nicht, was sie brauchte. Was sie brauchte, war *jemand, der das Unfertige als unfertig anerkennt*. Das ist echte Unterstützung.*"
   }
 }

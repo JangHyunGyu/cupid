@@ -172,8 +172,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "choices": [
-            { "next": "wall_seo_hug_1", "stats": {"Seoyeon":{"affinity":14}} },
-            { "next": "wall_seo_pinky_1", "stats": {"Seoyeon":{"affinity":14}} }
+            { "next": "wall_seo_hug_1", "stats": {"Seoyeon":{"affinity":4}} },
+            { "next": "wall_seo_pinky_1", "stats": {"Seoyeon":{"affinity":4}} }
         ]
     },
     "wall_seo_hug_1": {
@@ -230,9 +230,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "choices": [
-            { "next": "wall_seo_line_react_1", "stats": {"Seoyeon":{"affinity":10}} },
-            { "next": "wall_seo_line_react_2", "stats": {"Seoyeon":{"affinity":10}} },
-            { "next": "wall_seo_line_react_3", "stats": {"Seoyeon":{"affinity":6}} }
+            { "next": "wall_seo_line_react_1", "stats": {"Seoyeon":{"affinity":7}} },
+            { "next": "wall_seo_line_react_2", "stats": {"Seoyeon":{"affinity":7}} },
+            { "next": "wall_seo_line_react_3", "stats": {"Seoyeon":{"affinity":4}} }
         ]
     },
     "wall_seo_line_react_1": {
@@ -530,9 +530,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
-            { "next": "wall_dain_newdream_1", "stats": {"Dain":{"affinity":10}} },
-            { "next": "wall_dain_cry_1", "stats": {"Dain":{"affinity":17}} },
-            { "next": "wall_dain_lastspike_1", "stats": {"Dain":{"affinity":12}} }
+            { "next": "wall_dain_newdream_1", "stats": {"Dain":{"affinity":3}} },
+            { "next": "wall_dain_cry_1", "stats": {"Dain":{"affinity":5}} },
+            { "next": "wall_dain_lastspike_1", "stats": {"Dain":{"affinity":4}} }
         ]
     },
     "wall_dain_newdream_1": {
@@ -880,8 +880,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
-            { "next": "wall_yuna_moved_1", "stats": {"Yuna":{"affinity":14}} },
-            { "next": "wall_yuna_sub_1", "stats": {"Yuna":{"affinity":10}} },
+            { "next": "wall_yuna_moved_1", "stats": {"Yuna":{"affinity":4}} },
+            { "next": "wall_yuna_sub_1", "stats": {"Yuna":{"affinity":3}} },
             { "next": "wall_yuna_reject_1", "stats": {"Yuna":{"affinity":-10}} }
         ]
     },

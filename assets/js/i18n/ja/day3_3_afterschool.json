@@ -756,5 +756,273 @@
   "after3_dain_tell_retreat": {
     "name": "{name}",
     "text": "*ダインが安堵のため息をつく。 — また沈黙を選んだ。楽な方を。*"
+  },
+  "after3_seo_pity_trap_1": {
+    "name": "{name}",
+    "text": "*ソヨンがゆっくりと顔を上げる。表情は — きっかり0だ。冷たくも悲しくもない。それがもっと怖い。*"
+  },
+  "after3_seo_pity_trap_2": {
+    "name": "ソヨン",
+    "text": "...誰でも。"
+  },
+  "after3_seo_pity_trap_3": {
+    "name": "ソヨン",
+    "text": "それ、慰めのつもりで言ったの?"
+  },
+  "after3_seo_pity_trap_4": {
+    "name": "{name}",
+    "text": "*ソヨンが滲んだ化粧を手の甲で拭う。ゆっくりと。動作の一つ一つが整っている。立て直しているんだ。*"
+  },
+  "after3_seo_pity_trap_5": {
+    "name": "ソヨン",
+    "text": "私は『誰でも』になるために生徒会長やってるんじゃない。"
+  },
+  "after3_seo_pity_trap_6": {
+    "name": "{name}",
+    "text": "*生徒会長の顔が戻ってきた。普段より一段固く。 — さっきの無防備なソヨンを *永遠に* 葬るための顔だ。*"
+  },
+  "after3_seo_pity_trap_7": {
+    "name": "ソヨン",
+    "text": "出ていってくれる? 仕事があるの。"
+  },
+  "after3_seo_pity_trap_8": {
+    "name": "{name}",
+    "text": "ソヨン—"
+  },
+  "after3_seo_pity_trap_9": {
+    "name": "ソヨン",
+    "text": "**会長**って呼んで。"
+  },
+  "after3_seo_pity_trap_10": {
+    "name": "{name}",
+    "text": "*生徒会室のドアを閉めて出てきた。廊下はがらんとしている。 — 慰めようとした。本気で。でもソヨンにとって『誰でも』は慰めじゃなく降格だった。あの人の7年分の努力を、一言で平準化してしまった。*"
+  },
+  "after3_seo_correct_1": {
+    "name": "{name}",
+    "text": "*ソヨンが止まる。ほんの一瞬 — 本当に一瞬 — 言葉が途切れる。私が本当に見ていないか確かめようとする目。*"
+  },
+  "after3_seo_correct_2": {
+    "name": "{name}",
+    "text": "*腰をかがめてペンを拾うふりをする。机の下を探る。わざとゆっくり。 — 視線は送らない。視線を送った瞬間、嘘がバレる。*"
+  },
+  "after3_seo_correct_3": {
+    "name": "{name}",
+    "text": "あ、ここにあった。 — 会長、この生徒会室ってペンがよく消える場所なんですね?"
+  },
+  "after3_seo_correct_4": {
+    "name": "{name}",
+    "text": "*顔を上げる。ソヨンが — 滲んだ化粧の跡を手の甲ですっと拭っている。自然に。最初からそれが必要だったかのように。*"
+  },
+  "after3_seo_correct_5": {
+    "name": "ソヨン",
+    "text": "...生徒会室のペン消失、本当にミステリーなの。年に30本消える。"
+  },
+  "after3_seo_correct_6": {
+    "name": "{name}",
+    "text": "生徒会長がそれも捕まえられないんですか?"
+  },
+  "after3_seo_correct_7": {
+    "name": "ソヨン",
+    "text": "*ふっ.* 捕まえたら — 生徒たちが生徒会を怖がるでしょ。"
+  },
+  "after3_seo_correct_8": {
+    "name": "{name}",
+    "text": "*会話が自然に続いていく。さっき机に突っ伏していた人も、化粧が滲んでいた人も — この生徒会室には *いなかった*。二人ともそう合意したのだ。何も言わずに。*"
+  },
+  "after3_seo_correct_9": {
+    "name": "ソヨン",
+    "text": "...{name}。"
+  },
+  "after3_seo_correct_10": {
+    "name": "{name}",
+    "text": "うん。"
+  },
+  "after3_seo_correct_11": {
+    "name": "ソヨン",
+    "text": "ペンを拾うこと。 — 次もたまに拾いに来て。"
+  },
+  "after3_seo_correct_12": {
+    "name": "{name}",
+    "text": "*秘密を守るとは最後まで言わなかった。言わなかったのが正解だった。 — ソヨンにとって弱さは *初めから存在してはいけない* ものだ。それを理解した相手にだけ、ソヨンは小指ではなく次の約束を差し出す。*"
+  },
+  "after3_yuna_decode_trap_1": {
+    "name": "{name}",
+    "text": "*ユナがノートをさらに強く抱きしめる。指の節が白くなる。*"
+  },
+  "after3_yuna_decode_trap_2": {
+    "name": "ユナ",
+    "text": "...違う。"
+  },
+  "after3_yuna_decode_trap_3": {
+    "name": "{name}",
+    "text": "違うって? でもこの部分見てよ、『教室の窓際で本を読んでいた——』"
+  },
+  "after3_yuna_decode_trap_4": {
+    "name": "ユナ",
+    "text": "**違うって言ったでしょ。**"
+  },
+  "after3_yuna_decode_trap_5": {
+    "name": "{name}",
+    "text": "*ユナがノートをカバンに押し込む。いつものゆっくりした動作じゃない。逃げる手だ。*"
+  },
+  "after3_yuna_decode_trap_6": {
+    "name": "ユナ",
+    "text": "...あんたみたいな人がいるから — 書けなくなる。"
+  },
+  "after3_yuna_decode_trap_7": {
+    "name": "{name}",
+    "text": "え?"
+  },
+  "after3_yuna_decode_trap_8": {
+    "name": "ユナ",
+    "text": "小説の中までバレたら — 逃げ場がなくなる。"
+  },
+  "after3_yuna_decode_trap_9": {
+    "name": "{name}",
+    "text": "*ユナがカバンを背負って立ち上がる。はしごの方へ向かう。いつもみたいに振り返らない — いや。今回は *振り返れない* んだ。*"
+  },
+  "after3_yuna_decode_trap_10": {
+    "name": "ユナ",
+    "text": "...ここ。これから鍵かけとく。"
+  },
+  "after3_yuna_decode_trap_11": {
+    "name": "{name}",
+    "text": "*はしごを下りていく足音。屋根裏に一人残される。ノートがあった場所に指の跡だけが残っている。 — 気づくことが愛だと教わった。でもある人にとっては *気づかないふり* が愛だ。ユナにとって小説は *現実から逃げた場所* だった。そこまで追いかけたのは、最後の逃げ場を壊したことだった。*"
+  },
+  "after3_yuna_correct_1": {
+    "name": "{name}",
+    "text": "*ユナがノートを抱きしめる指が — ほんの少しだけ緩む。1秒ほど。*"
+  },
+  "after3_yuna_correct_2": {
+    "name": "ユナ",
+    "text": "...作家。"
+  },
+  "after3_yuna_correct_3": {
+    "name": "{name}",
+    "text": "うん。これ誰の? 出版されてるの?"
+  },
+  "after3_yuna_correct_4": {
+    "name": "ユナ",
+    "text": "...知らない。たぶん出版はされてないと思う。"
+  },
+  "after3_yuna_correct_5": {
+    "name": "{name}",
+    "text": "もったいない。こんなのが埋もれてるのはダメだよ。"
+  },
+  "after3_yuna_correct_6": {
+    "name": "{name}",
+    "text": "*ユナがノートを机に戻す。胸に抱いていた手が — ゆっくりと解ける。ノートを *守っていた* 手が *見せる* 手に変わる。*"
+  },
+  "after3_yuna_correct_7": {
+    "name": "ユナ",
+    "text": "...貸そうか?"
+  },
+  "after3_yuna_correct_8": {
+    "name": "{name}",
+    "text": "本当に? 作家の許可もなしに?"
+  },
+  "after3_yuna_correct_9": {
+    "name": "ユナ",
+    "text": "...作家が許可したことにする。"
+  },
+  "after3_yuna_correct_10": {
+    "name": "{name}",
+    "text": "*ユナがノートを差し出す。両手で。本を貸す姿勢じゃなくて — 何かを *意識的に手渡す* 姿勢だ。*"
+  },
+  "after3_yuna_correct_11": {
+    "name": "{name}",
+    "text": "*受け取る手に重みが乗る。紙の重さじゃない。 — ユナが *作家* だと知られたことを分かっていながら、それを *口に出さなかった* 相手にだけ手渡せる重さだ。*"
+  },
+  "after3_yuna_correct_12": {
+    "name": "ユナ",
+    "text": "読み終わったら — 作家に一行だけ書いて。匿名で。"
+  },
+  "after3_dain_pity_trap_1": {
+    "name": "{name}",
+    "text": "*ダインの膝をさすっていた手が止まる。ゆっくりと顔を上げる。*"
+  },
+  "after3_dain_pity_trap_2": {
+    "name": "ダイン",
+    "text": "...無理。"
+  },
+  "after3_dain_pity_trap_3": {
+    "name": "ダイン",
+    "text": "ねえ。無理してないって。これただ — 姿勢が悪かっただけ。"
+  },
+  "after3_dain_pity_trap_4": {
+    "name": "{name}",
+    "text": "*ダインが立ち上がる。膝が少し震えるのを見ないふりする。カバンを取る。*"
+  },
+  "after3_dain_pity_trap_5": {
+    "name": "ダイン",
+    "text": "...あんたまでそんな目で見ないで。"
+  },
+  "after3_dain_pity_trap_6": {
+    "name": "{name}",
+    "text": "そんなって?"
+  },
+  "after3_dain_pity_trap_7": {
+    "name": "ダイン",
+    "text": "今にも壊れそうって目で。"
+  },
+  "after3_dain_pity_trap_8": {
+    "name": "{name}",
+    "text": "*ダインが体育館のドアの方へ歩いていく。いつもみたいに走らない。それがもっと痛い。*"
+  },
+  "after3_dain_pity_trap_9": {
+    "name": "ダイン",
+    "text": "コーチもそう。親もそう。みんなそう。 — あんたはそうじゃないと思ってたのに。"
+  },
+  "after3_dain_pity_trap_10": {
+    "name": "{name}",
+    "text": "*体育館のドアが閉まる。いつものバタン、じゃない。そっと。 — それがもっと重い。ダインが一番嫌う表情を私が浮かべた。分かっていて。善意で。だからもっと最悪だ。*"
+  },
+  "after3_dain_correct_1": {
+    "name": "{name}",
+    "text": "*ダインが止まる。 — 膝の話を切り出すと思ってた。患者扱いされると思ってた。表情に微かなひび。*"
+  },
+  "after3_dain_correct_2": {
+    "name": "ダイン",
+    "text": "...ねえ。"
+  },
+  "after3_dain_correct_3": {
+    "name": "{name}",
+    "text": "なに。"
+  },
+  "after3_dain_correct_4": {
+    "name": "ダイン",
+    "text": "あんた、ちょっと変。"
+  },
+  "after3_dain_correct_5": {
+    "name": "{name}",
+    "text": "変なのって、いい変?悪い変?"
+  },
+  "after3_dain_correct_6": {
+    "name": "ダイン",
+    "text": "...知らない。とりあえずボール取って。あんた本当に取れないから。"
+  },
+  "after3_dain_correct_7": {
+    "name": "{name}",
+    "text": "*ダインが立ち上がる。膝を一度、軽く回す。無意識に。そして — トスの構えを取る。いつもと同じように。*"
+  },
+  "after3_dain_correct_8": {
+    "name": "ダイン",
+    "text": "いきます、転校生!"
+  },
+  "after3_dain_correct_9": {
+    "name": "{name}",
+    "text": "*サーブが飛んでくる。取れない。ボールが手首に当たって天井に跳ねる。ダインが拍手しながら笑う。本物の笑い。今日初めて見る。*"
+  },
+  "after3_dain_correct_10": {
+    "name": "ダイン",
+    "text": "ほら! 私の勝ち! ...あ。"
+  },
+  "after3_dain_correct_11": {
+    "name": "{name}",
+    "text": "*ダインが着地しながら — 右膝が少し曲がる。1秒。表情は笑っているのに手が膝にいく。今度は隠さない。隠す必要がなくなったんだ。*"
+  },
+  "after3_dain_correct_12": {
+    "name": "ダイン",
+    "text": "...あのさ。実はこれ。ちょっと前から。"
   }
 }

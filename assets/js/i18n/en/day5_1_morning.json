@@ -428,5 +428,109 @@
   "morning5_yuna_story_gone_2": {
     "name": "{name}",
     "text": "*The empty seat in the library, the missing bookmark, and now a story that was never posted. — Yuna is erasing every trace. The silence I left on Day 3 has reached this far.*"
+  },
+  "hidden_homeroom_d5_praise_trap_1": {
+    "name": "{name}",
+    "text": "*The teacher pauses. — And then her usual dry expression returns. Too quickly.*"
+  },
+  "hidden_homeroom_d5_praise_trap_2": {
+    "name": "Homeroom Teacher",
+    "text": "...Without even reading it?"
+  },
+  "hidden_homeroom_d5_praise_trap_3": {
+    "name": "{name}",
+    "text": "Ah, that's — it's bound to be good. You spent seven years on it."
+  },
+  "hidden_homeroom_d5_praise_trap_4": {
+    "name": "Homeroom Teacher",
+    "text": "...Right."
+  },
+  "hidden_homeroom_d5_praise_trap_5": {
+    "name": "{name}",
+    "text": "*The teacher reaches out. Takes the manuscript back. Slowly. Slides it back into the envelope.*"
+  },
+  "hidden_homeroom_d5_praise_trap_6": {
+    "name": "Homeroom Teacher",
+    "text": "Forget it. Sorry for taking your time."
+  },
+  "hidden_homeroom_d5_praise_trap_7": {
+    "name": "{name}",
+    "text": "Teacher—"
+  },
+  "hidden_homeroom_d5_praise_trap_8": {
+    "name": "Homeroom Teacher",
+    "text": "I sent it to publishers three times in seven years. All rejected. Two of those three rejection letters started with — 'Seven years is impressive. I'm sure it's wonderful.'"
+  },
+  "hidden_homeroom_d5_praise_trap_9": {
+    "name": "{name}",
+    "text": "*...I didn't know. I knew about the failed debuts, but not that the rejection wording was *exactly the same as what I just said*.*"
+  },
+  "hidden_homeroom_d5_praise_trap_10": {
+    "name": "Homeroom Teacher",
+    "text": "...I thought you'd actually read it and tell me. — I showed it to you because I figured a student would feel less pressured."
+  },
+  "hidden_homeroom_d5_praise_trap_11": {
+    "name": "Homeroom Teacher",
+    "text": "Go on. You'll be late for the event."
+  },
+  "hidden_homeroom_d5_praise_trap_12": {
+    "name": "{name}",
+    "text": "*I closed the classroom door. The envelope was still on her desk. — What she hadn't gotten in seven years wasn't *sincere praise* but *someone who'd read it seriously*. Praise was in the rejection letters too. I said the exact same thing as a rejection letter. With good intentions.*"
+  },
+  "hidden_homeroom_d5_correct_1": {
+    "name": "{name}",
+    "text": "*The teacher stops. Really stops. Not for half a second — for about three. Her grip on the clipboard tightens.*"
+  },
+  "hidden_homeroom_d5_correct_2": {
+    "name": "Homeroom Teacher",
+    "text": "...How did you know."
+  },
+  "hidden_homeroom_d5_correct_3": {
+    "name": "{name}",
+    "text": "I haven't even opened it yet."
+  },
+  "hidden_homeroom_d5_correct_4": {
+    "name": "Homeroom Teacher",
+    "text": "Right. — How did you know the last chapter is empty."
+  },
+  "hidden_homeroom_d5_correct_5": {
+    "name": "{name}",
+    "text": "*I didn't. It was a guess. — Someone who'd taken seven years showing it to a student *today* of all days felt off. If it were finished, she'd have sent it to publishers first. It wasn't finished — so she needed *permission* to end it.*"
+  },
+  "hidden_homeroom_d5_correct_6": {
+    "name": "Homeroom Teacher",
+    "text": "...I really can't write it. The last line."
+  },
+  "hidden_homeroom_d5_correct_7": {
+    "name": "Homeroom Teacher",
+    "text": "It's been stuck on that one line for seven years. Because if I finish — it'd confirm I'm not a writer."
+  },
+  "hidden_homeroom_d5_correct_8": {
+    "name": "{name}",
+    "text": "*For the first time, the teacher said the word *writer* about herself. She hadn't said it once in seven years.*"
+  },
+  "hidden_homeroom_d5_correct_9": {
+    "name": "{name}",
+    "text": "Want me to look at that one line with you?"
+  },
+  "hidden_homeroom_d5_correct_10": {
+    "name": "Homeroom Teacher",
+    "text": "...A student?"
+  },
+  "hidden_homeroom_d5_correct_11": {
+    "name": "{name}",
+    "text": "It's just one line. Students can write one line."
+  },
+  "hidden_homeroom_d5_correct_12": {
+    "name": "Homeroom Teacher",
+    "text": "*The teacher laughs. Really laughs. Not just the corners of her mouth — her eyes too. The face of seven years of self-censorship coming undone for one second.*"
+  },
+  "hidden_homeroom_d5_correct_13": {
+    "name": "Homeroom Teacher",
+    "text": "...I'll take that offer."
+  },
+  "hidden_homeroom_d5_correct_14": {
+    "name": "{name}",
+    "text": "*I hold the manuscript again. It's not as heavy as before. — Closing seven years of incomplete work with praise wasn't what she needed. What she needed was *someone who'd accept the incomplete as incomplete*. That's real support.*"
   }
 }

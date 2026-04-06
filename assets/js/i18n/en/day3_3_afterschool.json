@@ -756,5 +756,273 @@
   "after3_dain_tell_retreat": {
     "name": "{name}",
     "text": "*Dain breathes a sigh of relief. — I picked silence again. The easy way out.*"
+  },
+  "after3_seo_pity_trap_1": {
+    "name": "{name}",
+    "text": "*Seoyeon slowly raises her head. Her face is — exactly zero. Not cold, not sad. Which is worse.*"
+  },
+  "after3_seo_pity_trap_2": {
+    "name": "Seoyeon",
+    "text": "...Anyone."
+  },
+  "after3_seo_pity_trap_3": {
+    "name": "Seoyeon",
+    "text": "Was that meant as comfort?"
+  },
+  "after3_seo_pity_trap_4": {
+    "name": "{name}",
+    "text": "*Seoyeon wipes the smudged makeup with the back of her hand. Slowly. Every motion measured. She's recovering.*"
+  },
+  "after3_seo_pity_trap_5": {
+    "name": "Seoyeon",
+    "text": "I didn't become student council president to be 'anyone.'"
+  },
+  "after3_seo_pity_trap_6": {
+    "name": "{name}",
+    "text": "*The president's face is back. One degree harder than usual. — A face built to bury the unguarded Seoyeon I just saw, *forever*.*"
+  },
+  "after3_seo_pity_trap_7": {
+    "name": "Seoyeon",
+    "text": "Could you leave? I have work."
+  },
+  "after3_seo_pity_trap_8": {
+    "name": "{name}",
+    "text": "Seoyeon—"
+  },
+  "after3_seo_pity_trap_9": {
+    "name": "Seoyeon",
+    "text": "Call me **President**."
+  },
+  "after3_seo_pity_trap_10": {
+    "name": "{name}",
+    "text": "*I closed the council room door behind me. The hallway was empty. — I tried to comfort her. Sincerely. But for Seoyeon, 'anyone' wasn't comfort, it was demotion. I flattened seven years of her work into a single word.*"
+  },
+  "after3_seo_correct_1": {
+    "name": "{name}",
+    "text": "*Seoyeon stops. For a moment — just a moment — her words break off. Her eyes searching to confirm whether I really didn't see anything.*"
+  },
+  "after3_seo_correct_2": {
+    "name": "{name}",
+    "text": "*I bend down, pretending to pick up a pen. Fumbling under the desk. Slowly, on purpose. — Not looking at her. The moment I look, the lie cracks.*"
+  },
+  "after3_seo_correct_3": {
+    "name": "{name}",
+    "text": "Oh, here it is. — Madam President, is this council room a place where pens go missing?"
+  },
+  "after3_seo_correct_4": {
+    "name": "{name}",
+    "text": "*I look up. Seoyeon is — wiping the smudged makeup off with the back of her hand. Naturally. As if she'd needed to do it from the start.*"
+  },
+  "after3_seo_correct_5": {
+    "name": "Seoyeon",
+    "text": "...The disappearing pens are an actual mystery. Thirty a year."
+  },
+  "after3_seo_correct_6": {
+    "name": "{name}",
+    "text": "The president can't even catch the culprit?"
+  },
+  "after3_seo_correct_7": {
+    "name": "Seoyeon",
+    "text": "*A small laugh.* If I caught them — students would start fearing the council."
+  },
+  "after3_seo_correct_8": {
+    "name": "{name}",
+    "text": "*The conversation flows naturally. The person who'd been slumped over the desk, the one with smudged makeup — *neither of them existed* in this council room. We agreed on that. Without saying so.*"
+  },
+  "after3_seo_correct_9": {
+    "name": "Seoyeon",
+    "text": "...{name}."
+  },
+  "after3_seo_correct_10": {
+    "name": "{name}",
+    "text": "Yeah."
+  },
+  "after3_seo_correct_11": {
+    "name": "Seoyeon",
+    "text": "About picking up the pen. — Come pick it up again sometime."
+  },
+  "after3_seo_correct_12": {
+    "name": "{name}",
+    "text": "*I never said I'd keep her secret. Not saying it was the answer. — For Seoyeon, weakness has to *never have existed*. Only to someone who understood that does Seoyeon offer not a pinky promise but a next appointment.*"
+  },
+  "after3_yuna_decode_trap_1": {
+    "name": "{name}",
+    "text": "*Yuna clutches the notebook tighter. Her knuckles go white.*"
+  },
+  "after3_yuna_decode_trap_2": {
+    "name": "Yuna",
+    "text": "...It's not."
+  },
+  "after3_yuna_decode_trap_3": {
+    "name": "{name}",
+    "text": "Not? But look at this part — 'reading by the classroom window—'"
+  },
+  "after3_yuna_decode_trap_4": {
+    "name": "Yuna",
+    "text": "**I said it isn't.**"
+  },
+  "after3_yuna_decode_trap_5": {
+    "name": "{name}",
+    "text": "*Yuna shoves the notebook into her bag. Not her usual slow movements. A hand running away.*"
+  },
+  "after3_yuna_decode_trap_6": {
+    "name": "Yuna",
+    "text": "...People like you — that's why I can't write."
+  },
+  "after3_yuna_decode_trap_7": {
+    "name": "{name}",
+    "text": "What?"
+  },
+  "after3_yuna_decode_trap_8": {
+    "name": "Yuna",
+    "text": "If I get caught even inside fiction — there's nowhere left to escape."
+  },
+  "after3_yuna_decode_trap_9": {
+    "name": "{name}",
+    "text": "*Yuna shoulders her bag and stands up. Heads for the ladder. Doesn't look back as usual — no, this time she *can't* look back.*"
+  },
+  "after3_yuna_decode_trap_10": {
+    "name": "Yuna",
+    "text": "...This place. I'm locking it from now on."
+  },
+  "after3_yuna_decode_trap_11": {
+    "name": "{name}",
+    "text": "*Footsteps going down the ladder. I'm alone in the attic. Where the notebook had been, only fingerprints remain. — I learned that noticing is love. But for some people, *pretending not to notice* is love. For Yuna, fiction was *the place she escaped reality to*. Following her even there meant breaking her last refuge.*"
+  },
+  "after3_yuna_correct_1": {
+    "name": "{name}",
+    "text": "*Yuna's grip on the notebook loosens — just slightly. For maybe one second.*"
+  },
+  "after3_yuna_correct_2": {
+    "name": "Yuna",
+    "text": "...The author."
+  },
+  "after3_yuna_correct_3": {
+    "name": "{name}",
+    "text": "Yeah. Whose is this? Was it published?"
+  },
+  "after3_yuna_correct_4": {
+    "name": "Yuna",
+    "text": "...I don't know. Probably not published."
+  },
+  "after3_yuna_correct_5": {
+    "name": "{name}",
+    "text": "Shame. Something this good shouldn't stay buried."
+  },
+  "after3_yuna_correct_6": {
+    "name": "{name}",
+    "text": "*Yuna sets the notebook back down on the desk. The hand that had been clutching it — slowly relaxes. The hand that had been *defending* the notebook becomes a hand *displaying* it.*"
+  },
+  "after3_yuna_correct_7": {
+    "name": "Yuna",
+    "text": "...Want to borrow it?"
+  },
+  "after3_yuna_correct_8": {
+    "name": "{name}",
+    "text": "Really? Without the author's permission?"
+  },
+  "after3_yuna_correct_9": {
+    "name": "Yuna",
+    "text": "...Let's just say the author allows it."
+  },
+  "after3_yuna_correct_10": {
+    "name": "{name}",
+    "text": "*Yuna holds the notebook out. With both hands. Not the way you lend a book — the way you *deliberately* hand something over.*"
+  },
+  "after3_yuna_correct_11": {
+    "name": "{name}",
+    "text": "*The notebook lands heavy in my hands. Not the weight of paper. — A weight only someone who knows Yuna is *the author* and yet *doesn't say so* can ever be handed.*"
+  },
+  "after3_yuna_correct_12": {
+    "name": "Yuna",
+    "text": "When you're done — write one line for the author. Anonymously."
+  },
+  "after3_dain_pity_trap_1": {
+    "name": "{name}",
+    "text": "*Dain's hand stops rubbing her knee. Slowly, she lifts her head.*"
+  },
+  "after3_dain_pity_trap_2": {
+    "name": "Dain",
+    "text": "...Pushing it."
+  },
+  "after3_dain_pity_trap_3": {
+    "name": "Dain",
+    "text": "Hey. I'm not pushing it. This is just — bad form."
+  },
+  "after3_dain_pity_trap_4": {
+    "name": "{name}",
+    "text": "*Dain stands up. Pretends not to notice her knee trembling slightly. Grabs her bag.*"
+  },
+  "after3_dain_pity_trap_5": {
+    "name": "Dain",
+    "text": "...Don't look at me like that. Not you too."
+  },
+  "after3_dain_pity_trap_6": {
+    "name": "{name}",
+    "text": "Like what?"
+  },
+  "after3_dain_pity_trap_7": {
+    "name": "Dain",
+    "text": "Like I'm about to break."
+  },
+  "after3_dain_pity_trap_8": {
+    "name": "{name}",
+    "text": "*Dain walks toward the gym door. She doesn't run like usual. That hurts more.*"
+  },
+  "after3_dain_pity_trap_9": {
+    "name": "Dain",
+    "text": "Coach does it. My parents do it. Everyone does it. — I thought you wouldn't."
+  },
+  "after3_dain_pity_trap_10": {
+    "name": "{name}",
+    "text": "*The gym door closes. Not with the usual slam. Quietly. — That's heavier. I made the face Dain hates most. Knowing it. With good intentions. That makes it worse.*"
+  },
+  "after3_dain_correct_1": {
+    "name": "{name}",
+    "text": "*Dain stops. — She expected the knee question. She expected to be treated like a patient. A faint crack in her expression.*"
+  },
+  "after3_dain_correct_2": {
+    "name": "Dain",
+    "text": "...Hey."
+  },
+  "after3_dain_correct_3": {
+    "name": "{name}",
+    "text": "Why."
+  },
+  "after3_dain_correct_4": {
+    "name": "Dain",
+    "text": "You're being weird."
+  },
+  "after3_dain_correct_5": {
+    "name": "{name}",
+    "text": "Is that good weird or bad weird."
+  },
+  "after3_dain_correct_6": {
+    "name": "Dain",
+    "text": "...I don't know. But pick up the ball first. You really won't catch this one."
+  },
+  "after3_dain_correct_7": {
+    "name": "{name}",
+    "text": "*Dain stands up. Rolls her knee once, lightly. Unconsciously. And then — sets up her toss. Same as always.*"
+  },
+  "after3_dain_correct_8": {
+    "name": "Dain",
+    "text": "Here it comes, transfer student!"
+  },
+  "after3_dain_correct_9": {
+    "name": "{name}",
+    "text": "*The serve flies. I miss it. The ball hits my wrist and ricochets off the ceiling. Dain claps and laughs. A real laugh. First one today.*"
+  },
+  "after3_dain_correct_10": {
+    "name": "Dain",
+    "text": "See? I won! ...Ah."
+  },
+  "after3_dain_correct_11": {
+    "name": "{name}",
+    "text": "*As Dain lands — her right knee buckles slightly. One second. Her face is still smiling but her hand goes to the knee. This time she doesn't hide it. There's no need to hide it anymore.*"
+  },
+  "after3_dain_correct_12": {
+    "name": "Dain",
+    "text": "...You know what. This thing. It's been going on a while."
   }
 }
