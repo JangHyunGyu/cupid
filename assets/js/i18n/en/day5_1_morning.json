@@ -444,5 +444,21 @@
     "morning5_committed_end": {
         "name": "{name}",
         "text": "*It's not signals coming from three directions anymore. I've already made my choice, and I head toward the final event.*"
+    },
+    "morning5_gate": {
+        "name": "{name}",
+        "text": "*The school gate. I stood here five days ago too. My uniform was stiff then — now it fits. It's not just the uniform that changed.*"
+    },
+    "morning5_yuna_story_2": {
+        "name": "{name}",
+        "text": "*The last line. 'When he opened his eyes, I was already gone. I left only a note. — I'll be here next time too.'*"
+    },
+    "morning5_yuna_story_3": {
+        "name": "{name}",
+        "text": "*Lavender ink. The same ink as the Day 1 note.*"
+    },
+    "morning5_yuna_story_4": {
+        "name": "{name}",
+        "text": "*In a small corner below the board — 'This is fiction. It's not real.' Traces of erasing. Erased but the marks remain. Yuna wrote this, erased it, and ultimately left it.*"
     }
 }

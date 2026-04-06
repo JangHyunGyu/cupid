@@ -1197,5 +1197,13 @@
             "Start over from the beginning"
         ]
     },
-    "ending_hidden_commit_check": {}
+    "ending_hidden_commit_check": {},
+    "perfect_epilogue_1b_dain": {
+        "name": "{name}",
+        "text": "*Every morning wrapping bandages, secretly rubbing her knee when no one was looking. That person just jumped.*"
+    },
+    "perfect_epilogue_1c_dain": {
+        "name": "{name}",
+        "text": "*If the reason she can jump despite the pain is me — that's enough.*"
+    }
 }

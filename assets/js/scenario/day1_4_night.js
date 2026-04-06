@@ -219,19 +219,9 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "night_end_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night_end_2"
-    },
-    "night_end_2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night_end_3"
     },
     "night_end_3": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night_end_4"
-    },
-    "night_end_4": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "morning2_start"

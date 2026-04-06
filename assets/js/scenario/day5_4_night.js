@@ -950,6 +950,16 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "perfect_epilogue_1_dain": {
         "background": "assets/images/background/ending_perfect_dain.png",
         "character": null,
+        "next": "perfect_epilogue_1b_dain"
+    },
+    "perfect_epilogue_1b_dain": {
+        "background": "assets/images/background/ending_perfect_dain.png",
+        "character": null,
+        "next": "perfect_epilogue_1c_dain"
+    },
+    "perfect_epilogue_1c_dain": {
+        "background": "assets/images/background/ending_perfect_dain.png",
+        "character": null,
         "next": "perfect_epilogue_bridge_dain"
     },
     "perfect_epilogue_bridge_dain": {
@@ -1539,6 +1549,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "mayhem_7"
     },
     "mayhem_7": {
+        "background": "assets/images/background/ending_mayhem.png",
+        "character": null,
+        "next": "mayhem_8"
+    },
+    "mayhem_8": {
         "background": "assets/images/background/ending_mayhem.png",
         "character": null,
         "next": "day5_credits"

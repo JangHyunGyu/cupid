@@ -265,21 +265,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "classroom_3_ins": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_4"
-    },
-    "classroom_4": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_5"
-    },
-    "classroom_5": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_5_ins"
-    },
-    "classroom_5_ins": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_5_ins2"
     },
     "classroom_5_ins2": {

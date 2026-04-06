@@ -1197,5 +1197,13 @@
             "Empezar de nuevo desde el principio"
         ]
     },
-    "ending_hidden_commit_check": {}
+    "ending_hidden_commit_check": {},
+    "perfect_epilogue_1b_dain": {
+        "name": "{name}",
+        "text": "*Cada mañana vendándose, frotándose la rodilla a escondidas. Esa persona acaba de saltar.*"
+    },
+    "perfect_epilogue_1c_dain": {
+        "name": "{name}",
+        "text": "*Si la razón por la que puede saltar a pesar del dolor soy yo — con eso basta.*"
+    }
 }
