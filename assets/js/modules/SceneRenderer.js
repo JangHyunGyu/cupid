@@ -156,6 +156,9 @@ class SceneRenderer {
         }
 
         const result = { ...scene };
+        if (scene.__sourceFile) {
+            Object.defineProperty(result, '__sourceFile', { value: scene.__sourceFile, enumerable: false });
+        }
 
         for (const key of ['name', 'text', 'context', 'personality', 'affinityText']) {
             if (i18n[key] !== undefined) result[key] = i18n[key];
