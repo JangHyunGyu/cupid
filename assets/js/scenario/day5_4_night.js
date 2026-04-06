@@ -1138,11 +1138,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "alone_2_ins": {
         "background": "assets/images/background/ending_alone.png",
         "character": null,
-        "next": "alone_3"
-    },
-    "alone_3": {
-        "background": "assets/images/background/ending_alone.png",
-        "character": null,
         "next": "alone_4"
     },
     "alone_4": {

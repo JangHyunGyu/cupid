@@ -87,11 +87,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "bgm": "sunset1.mp3",
-        "next": "after3_seo_2"
-    },
-    "after3_seo_2": {
-        "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_3"
     },
     "after3_seo_3": {
@@ -159,11 +154,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "after3_seo_choice1_react_ins"
     },
     "after3_seo_choice1_react_ins": {
-        "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_cry.png",
-        "next": "after3_seo_choice1_react_ins2"
-    },
-    "after3_seo_choice1_react_ins2": {
         "background": "assets/images/background/student_room.png",
         "character": "assets/images/characters/seyoun_cry.png",
         "next": "after3_seo_choice1_react_ins3"
@@ -272,19 +262,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "after3_yuna_2": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
-        "next": "after3_yuna_3"
-    },
-    "after3_yuna_3": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
         "next": "after3_yuna_4"
     },
     "after3_yuna_4": {
-        "background": "assets/images/background/yuna_hideout.png",
-        "character": null,
-        "next": "after3_yuna_5"
-    },
-    "after3_yuna_5": {
         "background": "assets/images/background/yuna_hideout.png",
         "character": null,
         "next": "after3_yuna_5_ins"
@@ -417,22 +397,12 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "after3_reject_for_dain_3b": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "after3_reject_for_dain_4"
-    },
-    "after3_reject_for_dain_4": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after3_dain_1"
     },
     "after3_dain_1": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "bgm": "daily2.mp3",
-        "next": "after3_dain_2"
-    },
-    "after3_dain_2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
         "next": "after3_dain_3"
     },
     "after3_dain_3": {
@@ -691,11 +661,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "after3_confront_lie_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_sad.png",
-        "next": "after3_confront_lie_2_ins"
-    },
-    "after3_confront_lie_2_ins": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_confront_lie_2_ins2"
     },
     "after3_confront_lie_2_ins2": {
@@ -819,11 +784,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "haeun_warn_7_ins3": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_worried.png",
-        "next": "haeun_warn_7_ins4"
-    },
-    "haeun_warn_7_ins4": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_worried.png",
         "next": "haeun_warn_8"
     },
     "haeun_warn_8": {
@@ -920,11 +880,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "minsu_d3_7_ins2"
     },
     "minsu_d3_7_ins2": {
-        "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/minsu_normal.png",
-        "next": "minsu_d3_7_ins3"
-    },
-    "minsu_d3_7_ins3": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/minsu_normal.png",
         "next": "minsu_d3_8"

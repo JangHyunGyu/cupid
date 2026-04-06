@@ -1,11 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*방에 돌아왔다. 침대에 누웠다.*"
-    },
-    "night_start_2": {
-        "name": "{name}",
-        "text": "*첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*"
+        "text": "*방에 돌아왔다. 침대에 누웠다. 첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -81,11 +77,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*잠들려는데 — 핸드폰이 한 번 더 울린다.*"
-    },
-    "night_late_transition_2": {
-        "name": "{name}",
-        "text": "*밤 11시. 누구지?*"
+        "text": "*잠들려는데 — 핸드폰이 한 번 더 울린다. 밤 11시. 누구지?*"
     },
     "night_late_branch": {
         "name": "{name}",

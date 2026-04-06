@@ -81,11 +81,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_dream_1": {
         "background": "assets/images/background/school.png",
         "character": null,
-        "next": "night3_dream_2"
-    },
-    "night3_dream_2": {
-        "background": "assets/images/background/school.png",
-        "character": null,
         "next": "night3_dream_2_ins"
     },
     "night3_dream_2_ins": {
@@ -96,19 +91,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_faithful_reflect_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_faithful_reflect_2"
-    },
-    "night3_faithful_reflect_2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_faithful_reflect_2_ins"
     },
     "night3_faithful_reflect_2_ins": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_faithful_reflect_2_ins2"
-    },
-    "night3_faithful_reflect_2_ins2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_2_ins3"
@@ -116,19 +101,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_faithful_reflect_2_ins3": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_faithful_reflect_2_ins4"
-    },
-    "night3_faithful_reflect_2_ins4": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_faithful_reflect_2_ins5"
     },
     "night3_faithful_reflect_2_ins5": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_faithful_reflect_2_ins6"
-    },
-    "night3_faithful_reflect_2_ins6": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_3"
@@ -146,19 +121,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_faithful_reflect_4": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_faithful_reflect_4_ins"
-    },
-    "night3_faithful_reflect_4_ins": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_faithful_reflect_4_ins2"
     },
     "night3_faithful_reflect_4_ins2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_faithful_reflect_4_ins3"
-    },
-    "night3_faithful_reflect_4_ins3": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_4_ins6"
@@ -250,11 +215,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/school_back.png",
         "character": null,
         "bgm": "mystery.mp3",
-        "next": "night3_nightmare_2"
-    },
-    "night3_nightmare_2": {
-        "background": "assets/images/background/school_back.png",
-        "character": null,
         "next": "night3_nightmare_2_ins"
     },
     "night3_nightmare_2_ins": {
@@ -319,19 +279,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_nightmare_end": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_nightmare_end_2"
-    },
-    "night3_nightmare_end_2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_nightmare_end_3"
     },
     "night3_nightmare_end_3": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_cheat_reflect_1"
-    },
-    "night3_cheat_reflect_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_2"
@@ -339,19 +289,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_cheat_reflect_2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_cheat_reflect_3"
-    },
-    "night3_cheat_reflect_3": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_cheat_reflect_3_ins"
     },
     "night3_cheat_reflect_3_ins": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_cheat_reflect_3_ins2"
-    },
-    "night3_cheat_reflect_3_ins2": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_3_ins3"
@@ -359,19 +299,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_cheat_reflect_3_ins3": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_cheat_reflect_3_ins4"
-    },
-    "night3_cheat_reflect_3_ins4": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_cheat_reflect_3_ins5"
     },
     "night3_cheat_reflect_3_ins5": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_cheat_reflect_3_ins6"
-    },
-    "night3_cheat_reflect_3_ins6": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_3_ins7"
@@ -379,19 +309,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "night3_cheat_reflect_3_ins7": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night3_cheat_reflect_4"
-    },
-    "night3_cheat_reflect_4": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
         "next": "night3_cheat_reflect_5"
     },
     "night3_cheat_reflect_5": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_cheat_reflect_5_ins"
-    },
-    "night3_cheat_reflect_5_ins": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_nightmare_end_4"

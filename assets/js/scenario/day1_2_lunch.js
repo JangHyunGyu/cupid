@@ -38,11 +38,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "lunch_start_7": {
         "background": "assets/images/background/school_hallway.png",
         "character": null,
-        "next": "lunch_start_7b"
-    },
-    "lunch_start_7b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "lunch_choice"
     },
     "lunch_choice": {
@@ -121,11 +116,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "lunch_seo_11": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch_seo_12"
-    },
-    "lunch_seo_12": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch_seo_13"
     },
     "lunch_seo_13": {
@@ -149,11 +139,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_seo_17"
     },
     "lunch_seo_17": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch_seo_18"
-    },
-    "lunch_seo_18": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch_seo_19"
@@ -252,11 +237,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_seo_after_5"
     },
     "lunch_seo_after_5": {
-        "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch_seo_after_6"
-    },
-    "lunch_seo_after_6": {
         "background": "assets/images/background/top_school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch_seo_after_7"
@@ -440,11 +420,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "lunch_dain_after_5": {
         "background": "assets/images/background/store.png",
         "character": "assets/images/characters/dain_normal.png",
-        "next": "lunch_dain_after_6"
-    },
-    "lunch_dain_after_6": {
-        "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_freetalk"
     },
     "lunch_dain_freetalk": {
@@ -465,11 +440,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_yuna_2"
     },
     "lunch_yuna_2": {
-        "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch_yuna_3"
-    },
-    "lunch_yuna_3": {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch_yuna_4"
@@ -498,11 +468,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "lunch_yuna_8": {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch_yuna_9"
-    },
-    "lunch_yuna_9": {
-        "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch_yuna_10"
     },
     "lunch_yuna_10": {
@@ -511,11 +476,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_yuna_10_ins"
     },
     "lunch_yuna_10_ins": {
-        "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch_yuna_11"
-    },
-    "lunch_yuna_11": {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch_yuna_12"
@@ -553,11 +513,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "lunch_yuna_18": {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch_yuna_19"
-    },
-    "lunch_yuna_19": {
-        "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch_yuna_20"
     },
     "lunch_yuna_20": {
@@ -586,11 +541,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_yuna_25"
     },
     "lunch_yuna_25": {
-        "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch_yuna_26"
-    },
-    "lunch_yuna_26": {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch_yuna_choice"

@@ -13,11 +13,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/school.png",
         "character": null,
         "bgm": "intro.mp3",
-        "next": "start_2"
-    },
-    "start_2": {
-        "background": "assets/images/background/school.png",
-        "character": null,
         "next": "start_3"
     },
     "start_3": {
@@ -32,11 +27,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "gate_1"
     },
     "gate_1": {
-        "background": "assets/images/background/school.png",
-        "character": null,
-        "next": "gate_3"
-    },
-    "gate_3": {
         "background": "assets/images/background/school.png",
         "character": null,
         "next": "seoyeon_meet_1"
@@ -77,11 +67,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "seoyeon_meet_8"
     },
     "seoyeon_meet_8": {
-        "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "seoyeon_meet_9"
-    },
-    "seoyeon_meet_9": {
         "background": "assets/images/background/school.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "seoyeon_choice"
@@ -163,11 +148,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "hallway_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_back.png",
-        "next": "hallway_2"
-    },
-    "hallway_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_back.png",
         "next": "hallway_3"
     },
     "hallway_3": {
@@ -208,11 +188,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "hallway_8": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_shy.png",
-        "next": "hallway_9"
-    },
-    "hallway_9": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_shy.png",
         "next": "hallway_10"
     },
     "hallway_10": {
@@ -245,11 +220,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "bgm": "daily.mp3",
-        "next": "classroom_2"
-    },
-    "classroom_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "next": "classroom_2_ins"
     },
     "classroom_2_ins": {
@@ -273,11 +243,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "classroom_5_ins3"
     },
     "classroom_5_ins3": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
-        "next": "classroom_6"
-    },
-    "classroom_6": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "classroom_dain_1"
@@ -328,11 +293,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "classroom_yuna_2"
     },
     "classroom_yuna_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "classroom_yuna_3"
-    },
-    "classroom_yuna_3": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
         "next": "classroom_yuna_4"
@@ -415,29 +375,14 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "classroom_yuna_note_1": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "classroom_yuna_note_2"
-    },
-    "classroom_yuna_note_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
         "next": "classroom_yuna_note_3"
     },
     "classroom_yuna_note_3": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "classroom_yuna_note_4"
-    },
-    "classroom_yuna_note_4": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
         "next": "classroom_yuna_note_5"
     },
     "classroom_yuna_note_5": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "classroom_yuna_note_5_ins"
-    },
-    "classroom_yuna_note_5_ins": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
         "next": "classroom_yuna_note_6"

@@ -14,11 +14,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "date.mp3",
         "condition": "route_seoyeon",
-        "next": "date_seo_2"
-    },
-    "date_seo_2": {
-        "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_compliment_choice"
     },
     "date_seo_compliment_choice": {
@@ -94,11 +89,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_duck_4": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_flower"
-    },
-    "date_seo_flower": {
-        "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_flower_ins"
     },
     "date_seo_flower_ins": {
@@ -107,11 +97,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "date_seo_flower_2"
     },
     "date_seo_flower_2": {
-        "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_succulent"
-    },
-    "date_seo_succulent": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "date_seo_succulent_2"
@@ -162,11 +147,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
         "condition": "route_yuna",
-        "next": "date_yuna_2"
-    },
-    "date_yuna_2": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "next": "date_yuna_compliment_choice"
     },
     "date_yuna_compliment_choice": {
@@ -433,11 +413,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "date_dain_knee_2"
     },
     "date_dain_knee_2": {
-        "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "date_dain_knee_2b"
-    },
-    "date_dain_knee_2b": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/dain_normal.png",
         "next": "date_dain_shop"
