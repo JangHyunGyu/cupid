@@ -893,7 +893,9 @@ class GameEngine {
             const affinity = this.stateManager.getAffinity(scene.affinityTextChar);
             for (const v of scene.affinityText) {
                 if (affinity >= v.min) {
+                    const __sf = scene.__sourceFile;
                     scene = { ...scene, text: v.text };
+                    if (__sf) Object.defineProperty(scene, '__sourceFile', { value: __sf, enumerable: false });
                     if (v.character) scene.character = v.character;
                     break;
                 }
