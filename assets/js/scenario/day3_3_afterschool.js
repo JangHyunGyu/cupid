@@ -76,6 +76,17 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "after3_reject_for_seo_3": {
         "background": "assets/images/background/library_old.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "next": "after3_reject_for_seo_3b"
+    },
+    "after3_reject_for_seo_3b": {
+        "background": "assets/images/background/library_old.png",
+        "character": null,
+        "next": "after3_reject_for_seo_3c"
+    },
+    "after3_reject_for_seo_3c": {
+        "background": "assets/images/background/library_old.png",
+        "character": null,
+        "setFlags": ["yuna_trust_broken"],
         "next": "after3_reject_for_seo_4"
     },
     "after3_reject_for_seo_4": {
@@ -434,9 +445,78 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
-            { "next": "after3_dain_choice1", "stats": {"Dain":{"affinity":12}} },
-            { "next": "after3_dain_choice2", "stats": {"Dain":{"affinity":5}} }
+            { "next": "after3_dain_dilemma_tell", "stats": {"Dain":{"affinity":-15}} },
+            { "next": "after3_dain_choice1", "stats": {"Dain":{"affinity":12}}, "setFlags": ["ignored_dain_knee"] }
         ]
+    },
+    "after3_dain_dilemma_tell": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after3_dain_dilemma_tell_2"
+    },
+    "after3_dain_dilemma_tell_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_normal.png",
+        "next": "after3_dain_dilemma_tell_3"
+    },
+    "after3_dain_dilemma_tell_3": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_dain_dilemma_tell_4"
+    },
+    "after3_dain_dilemma_tell_4": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_dain_dilemma_tell_5"
+    },
+    "after3_dain_dilemma_tell_5": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_dain_dilemma_tell_6"
+    },
+    "after3_dain_dilemma_tell_6": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_angry.png",
+        "next": "after3_dain_dilemma_tell_7"
+    },
+    "after3_dain_dilemma_tell_7": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_angry.png",
+        "next": "after3_dain_dilemma_tell_8"
+    },
+    "after3_dain_dilemma_tell_8": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_dain_dilemma_final"
+    },
+    "after3_dain_dilemma_final": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "choices": [
+            { "next": "after3_dain_tell_confirm", "stats": {"Dain":{"affinity":-20}}, "setFlags": ["told_about_dain_knee"] },
+            { "next": "after3_dain_tell_retreat", "stats": {"Dain":{"affinity":5}}, "setFlags": ["ignored_dain_knee"] }
+        ]
+    },
+    "after3_dain_tell_confirm": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_angry.png",
+        "next": "after3_dain_tell_confirm_2"
+    },
+    "after3_dain_tell_confirm_2": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_angry.png",
+        "next": "after3_dain_tell_confirm_3"
+    },
+    "after3_dain_tell_confirm_3": {
+        "background": "assets/images/background/gym.png",
+        "character": null,
+        "setFlags": ["dain_day3_event"],
+        "next": "after3_dain_end_check"
+    },
+    "after3_dain_tell_retreat": {
+        "background": "assets/images/background/gym.png",
+        "character": "assets/images/characters/dain_sad.png",
+        "next": "after3_dain_choice1"
     },
     "after3_dain_choice1": {
         "background": "assets/images/background/gym.png",
@@ -473,42 +553,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_normal.png",
         "type": "free_talk",
-        "next": "after3_dain_end_check"
-    },
-    "after3_dain_choice2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_sweat.png",
-        "next": "after3_dain_choice2_ins"
-    },
-    "after3_dain_choice2_ins": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "after3_dain_choice2_ins2"
-    },
-    "after3_dain_choice2_ins2": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "after3_dain_choice2_ins3"
-    },
-    "after3_dain_choice2_ins3": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "after3_dain_choice2_ins4"
-    },
-    "after3_dain_choice2_ins4": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
-        "next": "after3_dain_choice2_ins5"
-    },
-    "after3_dain_choice2_ins5": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
-        "next": "after3_dain_choice2_ins6"
-    },
-    "after3_dain_choice2_ins6": {
-        "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
-        "setFlags": ["dain_day3_event"],
         "next": "after3_dain_end_check"
     },
     "after3_dain_end_check": {

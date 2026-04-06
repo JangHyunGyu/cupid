@@ -16834,73 +16834,73 @@
     "night2_flashback_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*스크롤을 한참 내렸다. 3개월 전. — 사진 한 장이 보인다. 도서관 ...",
+      "_ko_text_preview": "*스크롤을 한참 내렸다. 3개월 전. — 사진 한 장이 보인다. 소풍 날 찍은 단체 사진. 소정이가 웃고 있다. 내 옆에서. — 이 사진 찍은 다음 주부터였다. 소정이 책상에 낙서가 생기기 시작한 게. 좋아했다. 분명히. 근데 좋아한다는 말보다 더 급한 말이 있었다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_2",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       }
     },
     "night2_flashback_3": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*그때 나는 매일 밤 핸드폰을 열었다. 메모장에 뭔가를 쓰다 지우기를 반복했다. — 매번 보내기 직전에 멈췄...",
+      "_ko_text_preview": "*그때 나는 매일 밤 핸드폰을 열었다. 메모장에 뭔가를 쓰다 지우기를 반복했다. 고백 문장도, '선생님 소정이가 —' 같은 신고 문장도. 매번 보내기 직전에 멈췄다. 나서면 나까지 표적이 될 것 같았다. 그리고 3월 어느 날, 소정이 자리가 비어 있었다. 다음 날도. 그다음 날도.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       }
     },
     "night2_flashback_4": {
@@ -16942,37 +16942,37 @@
     "night2_flashback_5": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰 메모장의 시뮬레이션은 38번째에서 멈춰 있다. 39번째는 없다....",
+      "_ko_text_preview": "*핸드폰 메모장의 시뮬레이션은 38번째에서 멈춰 있다. 39번째는 없다. 보낼 상대가 사라졌으니까. 고백도 못 했고, 지켜주지도 못했다. 전학은 소정이 때문이 아니다. 아버지 직장 때문이다. — 근데 전학이 싫지 않았다. 소정이의 빈 책상을 매일 지나가지 않아도 되니까.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       }
     },
     "night2_flashback_6": {
@@ -17014,37 +17014,37 @@
     "night2_flashback_7": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'이번에는 후회 없이 말하자.' — 이 학교에 오면서 한 다짐이었다.*",
+      "_ko_text_preview": "*'이번에는 눈 돌리지 말자.' — 이 학교에 오면서 한 다짐이었다. 갤러리를 닫았다. 사진을 지울까 말까 고민하다가 — 남겨뒀다. 지우면 그때의 죄책감까지 잊을 것 같아서.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_7",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": "소정이 백스토리 수정 — 재번역 필요"
       }
     },
     "night2_flashback_8": {
