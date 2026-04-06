@@ -2,7 +2,7 @@
   "_meta": {
     "generated": "2026-04-05T06:30:14.547Z",
     "day": 3,
-    "total_nodes": 545,
+    "total_nodes": 551,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -6663,6 +6663,222 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_end_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_homeroom_d3_4_f": {
+      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_4_f",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*그런데 — 한 발을 못 떼겠다. 이 사람은 담임이다. 내 출결을 찍고, 내 성적을 매기고...*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_4_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_4_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_4_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_4_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_homeroom_d3_4_g": {
+      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_4_g",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*그래서 지금 내가 이 사람의 비밀을 들여다보는 게 — 호의일까, 월권일까. 학생이 교사의 약한 면을 알아버리면...*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_4_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_4_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_4_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_4_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_homeroom_d3_4_h": {
+      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_4_h",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*— 근데 동시에 알겠다. 모른 척하는 것도 선택이다. 이 사람은 지금 누군가에게 들키고 싶었던 표정이었다...*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_4_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_4_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_4_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_4_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_4_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_nurse_d3_8_f": {
+      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_8_f",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*복도로 나왔다. 한 발 떼고 멈춘다. — 방금 그건 뭐였지. 이 사람은 환자를 한 명 잃었다...*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_f",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_nurse_d3_8_g": {
+      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_8_g",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*나는 학생이고, 저 사람은 보건교사다... 내가 두근거리는 건 — 진짜로 이 사람이 좋아진 건가, 아니면 어른 여자가 나한테 처음으로 '괜찮니' 하고 오래 봐줘서인가...*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_g",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "hidden_nurse_d3_8_h": {
+      "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_8_h",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*그리고 더 무서운 건 저쪽 방향이다. 이 사람한테 나는 — 못 살린 유진이의 자리에 비슷한 나이로 앉은 학생이다...*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_h",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

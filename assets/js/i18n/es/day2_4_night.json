@@ -168,6 +168,18 @@
     "name": "{name}",
     "text": "*'Esta vez lo diré sin arrepentirme.' — Eso me prometí al venir a esta escuela.*"
   },
+  "night2_flashback_8": {
+    "name": "{name}",
+    "text": "*Pero — miro al techo. El día no se apaga. Seoyeon. Dain. Yuna. Las tres siguen en mi cabeza. Podría llamarlo curiosidad. Pero, siendo honesto, me asusta. La idea de inclinarme por una sola.*"
+  },
+  "night2_flashback_9": {
+    "name": "{name}",
+    "text": "*Con Sojeong, solo miraba a una persona. Solo quería a una, solo veía a una — y aunque se derrumbó justo a mi lado, me detuve en el bloc de notas. Treinta y ocho veces. Mirar solo a una significaba poder perder a esa una. Yo entonces no lo sabía.*"
+  },
+  "night2_flashback_10": {
+    "name": "{name}",
+    "text": "*— Por eso ahora dejo la puerta abierta con las tres. No quiero admitirlo. Si elijo a una demasiado rápido, solo la veré a ella, las demás se desvanecerán, y un día alguien podría volver a derrumbarse y no me daré cuenta. Es como un seguro. Sé que es cobarde. Cualquiera diría que soy un indeciso. Pero — sé lo que se siente perder a alguien porque era la única a la que miraba. Eso es lo que más miedo me da.*"
+  },
   "night2_end_2": {
     "name": "{name}",
     "text": "*El segundo día terminó. El primer día fue curiosidad. Me preguntaba qué tipo de personas eran.*"
