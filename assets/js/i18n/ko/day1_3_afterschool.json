@@ -398,7 +398,7 @@
     },
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
-        "text": "*페이스에 자꾸 말려든다. — 이 사람 페이스에.*"
+        "text": "*몇 마디 안 했는데도 이미 이 사람 템포다.*"
     },
     "after_nurse_enter_4_ins4": {
         "name": "{name}",

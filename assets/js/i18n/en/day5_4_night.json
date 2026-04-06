@@ -502,7 +502,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*I wavered, so I understood. Leaning on Seoyeon isn't weakness.*"
+        "text": "*I wavered, so I found out. What my real feelings are.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Felt like I took a detour, but beside Yuna turned out to be where I belonged all along.*"
+        "text": "*I wavered, so I found out. What my real feelings are.*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*It's okay to be clumsy. Just like Dain said — it's our first time.*"
+        "text": "*I wavered, so I found out. What my real feelings are.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -654,7 +654,7 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*Walking out the school gate, there's a message on my phone. 'Thanks for today lol' — The tone of a friend. The perfectly friendly tone.*"
+        "text": "*As I leave the school gate, a message comes in. 'Thanks for today lol.' — It's easy, familiar. That makes it feel even more like friendship.*"
     },
     "friend_4_seo": {
         "name": "{name}",
@@ -666,15 +666,15 @@
     },
     "friend_4_dain": {
         "name": "{name}",
-        "text": "*As I leave the school gate, a message comes in. 'Hey, get home safe! Thanks for today!' The exclamation marks are back. That's a relief, and somehow colder. They're the exclamation marks she sends a friend.*"
+        "text": "*As I leave the school gate, a message comes in. 'Hey, get home safe! Thanks for today!' The exclamation marks are back. That's a relief — but my mood sinks even more. They're the kind you send a friend.*"
     },
     "friend_5": {
         "name": "{name}",
-        "text": "*I typed back. ‘Thanks too.’ — After hitting send, I stare at the screen. Two lines of conversation. I’m smiling, but my chest feels strangely cold.*"
+        "text": "*I text back. 'Me too, thanks.' — Then stare at the screen. Two short lines. I'm smiling, but it doesn't feel good at all.*"
     },
     "friend_6": {
         "name": "{name}",
-        "text": "*We'll keep texting like this. Attach emoji, grab food sometimes, ask if anything's new and say nothing is. — Right next to each other but a line we can't cross. That's what friends are.*"
+        "text": "*We'll probably keep texting like this. Throw in emojis, grab food sometimes, answer 'nothing much' when asked how I've been. — There's a line right beside us that I never cross. That's how friendship stays.*"
     },
     "friend_7": {
         "name": "{name}",
@@ -686,7 +686,7 @@
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*I’m standing next to her again, wearing the perfect mask called ‘friend,’ smiling.*"
+        "text": "*Once again, I'm standing next to that person, wearing my easiest expression and smiling like just a friend.*"
     },
     "friend_10": {
         "name": "{name}",
@@ -694,7 +694,7 @@
     },
     "friend_11": {
         "name": "{name}",
-        "text": "*Even after transferring, even after running away — in the end, nothing about me changed.*"
+        "text": "*Even after transferring, even after running away, I was still the same whenever it mattered.*"
     },
     "friend_12": {
         "name": "System",
@@ -726,7 +726,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*I learned far too late that saying I liked them wasn't enough to protect anything.*"
+        "text": "*I learned too late that saying I liked them wasn't enough to protect anything.*"
     },
     "mayhem_7": {
         "name": "System",
@@ -754,15 +754,15 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. In between, the lies pile up to avoid getting caught. I thought it would be sweet — but it’s strangling me.*"
+        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. Lies pile up in between so no one finds out. I thought it would feel sweet, but it starts choking me fast.*"
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*This balance will break. Someone will cry first. When that happens, this story stops being a romance — and becomes a catastrophe.*"
+        "text": "*This balance won't last long. Someone gets hurt first. By then, this isn't romance anymore. It's just a mess.*"
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*And yet, today all three are smiling. Even knowing tomorrow’s ruin — I can’t let go of today.*"
+        "text": "*And still, all three of them are smiling today. Even knowing what tomorrow looks like, I reach for today again.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*I went back home and read it. All night. — The way the main character spoke felt familiar. Too familiar.*"
+        "text": "*I went home and read the manuscript. All night. — The way the protagonist tossed out lines kept sounding strangely familiar.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Homeroom Teacher",

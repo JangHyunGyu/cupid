@@ -355,6 +355,174 @@ const fix_friend_6 = {
     de: "*Wir werden weiter so Nachrichten schreiben. Mit Emojis, ab und zu essen gehen, fragen ob was los ist und sagen, dass nichts los ist. — Direkt nebeneinander, aber eine Linie, die man nicht überschreiten kann. Das ist Freundschaft.*"
 };
 
+// ============================================================
+// 28. after_nurse_enter_4_ins3 (day1_3_afterschool)
+// KO: "몇 마디 안 했는데도 이미 이 사람 템포다."
+// ============================================================
+const fix_after_nurse_enter_4_ins3 = {
+    en: "*We've barely exchanged a few words, and I'm already moving to her rhythm.*",
+    ja: "*まだ何言も交わしてないのに、もう完全にこの人のペースだ。*",
+    es: "*Apenas hemos cruzado un par de frases y ya estoy siguiendo su ritmo.*",
+    fr: "*On a échangé à peine quelques mots, et je suis déjà calé sur son rythme.*",
+    de: "*Wir haben kaum ein paar Worte gewechselt, und schon bin ich in ihrem Tempo.*"
+};
+
+// ============================================================
+// 29. morning2_seo_dust_3 (day2_1_morning)
+// KO: "서연의 손이 내 어깨에 닿는다. 묻은 먼지를 털어내는 손길에 망설임이 없다."
+// ============================================================
+const fix_morning2_seo_dust_3 = {
+    en: "*Seoyeon's hand brushes my shoulder. There's no hesitation in the way she dusts it off.*",
+    ja: "*ソヨンの手が俺の肩に触れる。付いたほこりを払う手つきに、迷いがない。*",
+    es: "*La mano de Seoyeon roza mi hombro. No hay vacilación en la forma en que sacude el polvo.*",
+    fr: "*La main de Seoyeon effleure mon épaule. Il n'y a aucune hésitation dans sa façon d'enlever la poussière.*",
+    de: "*Seoyeons Hand streift meine Schulter. In der Bewegung, mit der sie den Staub abklopft, gibt es kein Zögern.*"
+};
+
+// ============================================================
+// 30. night3_cheat_msg_4_ins (day3_4_night)
+// KO: "네가 누구 옆에 설지, 그 선택을 가볍게 넘기진 않았으면 해"
+// ============================================================
+const fix_night3_cheat_msg_4_ins = {
+    en: "*I just hope you don't treat the choice of whose side to stand on lightly.*",
+    ja: "*誰の隣に立つのか、その選択を軽くは扱わないでほしい。*",
+    es: "*Solo espero que no te tomes a la ligera la decisión de al lado de quién vas a estar.*",
+    fr: "*J'espère juste que tu ne prendras pas à la légère le choix de la personne à côté de qui tu vas te tenir.*",
+    de: "*Ich hoffe nur, dass du die Entscheidung, an wessen Seite du stehen willst, nicht auf die leichte Schulter nimmst.*"
+};
+
+// ============================================================
+// 31. hidden_perfect_homeroom_4c (day5_4_night)
+// KO: "집으로 돌아와 원고를 읽었다. 밤새. — 주인공이 툭 던지는 말들이 자꾸 낯익게 들렸다."
+// ============================================================
+const fix_hidden_perfect_homeroom_4c = {
+    en: "*I went home and read the manuscript. All night. — The way the protagonist tossed out lines kept sounding strangely familiar.*",
+    ja: "*家に帰って原稿を読んだ。徹夜で。——主人公が何気なく投げる台詞が、妙に聞き覚えがあった。*",
+    es: "*Volví a casa y leí el manuscrito. Toda la noche. — La forma en que el protagonista soltaba ciertas frases me sonaba demasiado familiar.*",
+    fr: "*Je suis rentré et j'ai lu le manuscrit. Toute la nuit. — La façon dont le protagoniste lâchait ses répliques me semblait étrangement familière.*",
+    de: "*Zuhause las ich das Manuskript. Die ganze Nacht. — Die Art, wie der Protagonist seine Sätze hinwarf, kam mir seltsam bekannt vor.*"
+};
+
+// ============================================================
+// 32. friend_4 (day5_4_night)
+// KO: "교문을 나서는데 핸드폰에 메시지가 와 있다. '오늘 고마웠어 ㅋㅋ' — 편한 말투다. 그래서 더 친구 같다."
+// ============================================================
+const fix_friend_4 = {
+    en: "*As I leave the school gate, a message comes in. 'Thanks for today lol.' — It's easy, familiar. That makes it feel even more like friendship.*",
+    ja: "*校門を出るとスマホにメッセージが届いている。「今日はありがと笑」——気楽で、馴染んだ言い方だ。だからこそ、余計に友達らしい。*",
+    es: "*Al salir por la puerta de la escuela, llega un mensaje. 'Gracias por hoy jaja'. — Es un tono cómodo, familiar. Por eso se siente aún más como amistad.*",
+    fr: "*En franchissant le portail, un message arrive sur mon téléphone. « Merci pour aujourd'hui haha. » — Le ton est simple, familier. C'est justement pour ça que ça ressemble encore plus à de l'amitié.*",
+    de: "*Als ich das Schultor verlasse, kommt eine Nachricht. 'Danke für heute haha.' — Der Ton ist locker, vertraut. Genau deshalb fühlt es sich noch mehr nach Freundschaft an.*"
+};
+
+// ============================================================
+// 33. friend_4_dain (day5_4_night)
+// KO: "교문을 나서는데 핸드폰에 메시지가 와 있다. '야 조심히 가! 오늘 고마웠다!' 느낌표가 돌아왔다. 다행인데 — 마음은 더 가라앉는다. 친구한테 보내는 느낌표라서."
+// ============================================================
+const fix_friend_4_dain = {
+    en: "*As I leave the school gate, a message comes in. 'Hey, get home safe! Thanks for today!' The exclamation marks are back. That's a relief — but my mood sinks even more. They're the kind you send a friend.*",
+    ja: "*校門を出るとメッセージが届いている。「おい、気をつけて帰れよ！今日はありがとな！」感嘆符が戻ってきた。ほっとするのに、気持ちはむしろ沈む。友達に送る種類のやつだから。*",
+    es: "*Al salir por la puerta, llega un mensaje. 'Oye, vuelve con cuidado. ¡Gracias por hoy!' Volvieron los signos de exclamación. Es un alivio, pero el ánimo se me hunde más. Son los que le mandas a un amigo.*",
+    fr: "*En quittant le portail, un message arrive. « Hé, rentre bien ! Merci pour aujourd'hui ! » Les points d'exclamation sont revenus. C'est rassurant, mais je me sens encore plus retomber. Ce sont ceux qu'on envoie à un ami.*",
+    de: "*Als ich das Schultor verlasse, kommt eine Nachricht. 'Hey, komm gut heim! Danke für heute!' Die Ausrufezeichen sind zurück. Eigentlich beruhigend — und trotzdem sinkt meine Stimmung noch mehr. So schreibt man eben einem Freund.*"
+};
+
+// ============================================================
+// 34. friend_5 (day5_4_night)
+// KO: "답장을 쳤다. '나도 고마워.' — 보내고 나서 화면을 본다. 두 줄의 대화. 웃고는 있는데 마음은 영 개운하지 않다."
+// ============================================================
+const fix_friend_5 = {
+    en: "*I text back. 'Me too, thanks.' — Then stare at the screen. Two short lines. I'm smiling, but it doesn't feel good at all.*",
+    ja: "*返信した。「こっちこそ、ありがと」——送ってから画面を見る。二行の会話。笑ってはいるのに、気持ちは全然晴れない。*",
+    es: "*Respondí. 'Yo también, gracias.' — Y después me quedé mirando la pantalla. Dos líneas de conversación. Estoy sonriendo, pero no me deja buen sabor.*",
+    fr: "*J'ai répondu. « Moi aussi, merci. » — Puis j'ai regardé l'écran. Deux lignes de conversation. Je souris, mais je ne me sens pas bien pour autant.*",
+    de: "*Ich antworte: 'Ich auch, danke.' — Danach starre ich auf den Bildschirm. Zwei Zeilen Gespräch. Ich lächle, aber gut fühlt es sich kein bisschen an.*"
+};
+
+// ============================================================
+// 35. friend_6 (day5_4_night)
+// KO: "앞으로도 이렇게 메시지를 주고받겠지. 이모티콘 붙이고, 가끔 밥 먹고, 별일 없냐고 물으면 없다고 답하겠지. — 바로 옆인데 끝내 못 넘는 선이 있다. 친구는 그렇게 남는다."
+// ============================================================
+const fix_friend_6_v2 = {
+    en: "*We'll probably keep texting like this. Throw in emojis, grab food sometimes, answer 'nothing much' when asked how I've been. — There's a line right beside us that I never cross. That's how friendship stays.*",
+    ja: "*これからもこんなふうにメッセージをやり取りするんだろう。絵文字をつけて、たまにご飯を食べて、元気かと聞かれたら別にって答える。——すぐ隣にあるのに、最後まで越えられない線がある。友達ってそうやって残る。*",
+    es: "*Seguramente seguiremos escribiéndonos así. Con emojis, comiendo juntos a veces, diciendo que no pasa nada cuando pregunten cómo estoy. — Hay una línea justo a nuestro lado que nunca termino de cruzar. Así es como se queda una amistad.*",
+    fr: "*On continuera sans doute à s'écrire comme ça. Des emojis, un repas de temps en temps, des 'rien de spécial' quand on demande comment ça va. — Il y a une ligne juste à côté qu'au final je ne franchis jamais. C'est comme ça que l'amitié reste.*",
+    de: "*Wahrscheinlich schreiben wir uns weiter so. Mit Emojis, ab und zu zusammen essen, auf 'Was gibt's Neues?' mit 'nichts' antworten. — Direkt neben uns verläuft eine Linie, die ich am Ende doch nie überschreite. So bleibt Freundschaft eben.*"
+};
+
+// ============================================================
+// 36. friend_9 (day5_4_night)
+// KO: "나는 또 그 사람 옆에 서서, 제일 편한 표정으로 친구인 척 웃고 있다."
+// ============================================================
+const fix_friend_9 = {
+    en: "*Once again, I'm standing next to that person, wearing my easiest expression and smiling like just a friend.*",
+    ja: "*またその人の隣に立って、一番楽な顔で、ただの友達みたいに笑っている。*",
+    es: "*Otra vez estoy al lado de esa persona, con la expresión más cómoda que tengo, sonriendo como si solo fuera un amigo.*",
+    fr: "*Une fois de plus, je me tiens à côté de cette personne, avec l'expression la plus facile à tenir, à sourire comme un simple ami.*",
+    de: "*Wieder stehe ich neben dieser Person, mit meinem bequemsten Gesicht, und lächle so, als wäre ich nur ein Freund.*"
+};
+
+// ============================================================
+// 37. friend_11 (day5_4_night)
+// KO: "전학을 와도, 도망치듯 옮겨와도 — 중요한 순간마다 나는 또 똑같았다."
+// ============================================================
+const fix_friend_11 = {
+    en: "*Even after transferring, even after running away, I was still the same whenever it mattered.*",
+    ja: "*転校しても、逃げるみたいに場所を変えても、肝心な場面では結局また同じだった。*",
+    es: "*Aunque me cambiara de escuela, aunque saliera corriendo de todo, en los momentos importantes seguía siendo el mismo.*",
+    fr: "*Même en changeant d'école, même en fuyant presque, dans les moments qui comptaient je redevenais toujours le même.*",
+    de: "*Auch nach dem Schulwechsel, auch wenn ich fast davongelaufen bin, war ich in den entscheidenden Momenten wieder derselbe.*"
+};
+
+// ============================================================
+// 38. mayhem_6 (day5_4_night)
+// KO: "좋다는 말만으로는 아무것도 지킬 수 없다는 걸, 한참 지나서야 알았다."
+// ============================================================
+const fix_mayhem_6 = {
+    en: "*I learned too late that saying I liked them wasn't enough to protect anything.*",
+    ja: "*好きだって言うだけじゃ何も守れないって、ずいぶん経ってからわかった。*",
+    es: "*Entendí demasiado tarde que decir 'me gustas' no bastaba para proteger nada.*",
+    fr: "*J'ai compris bien trop tard que dire qu'on aime quelqu'un ne suffit à protéger quoi que ce soit.*",
+    de: "*Ich habe viel zu spät begriffen, dass ein 'Ich mag euch' nicht reicht, um irgendetwas zu bewahren.*"
+};
+
+// ============================================================
+// 39. harem_4 (day5_4_night)
+// KO: "월요일은 서연. 수요일은 유나. 금요일은 다인. 사이사이에 들키지 않기 위한 거짓말이 쌓인다. 달콤할 줄 알았는데 금방 숨이 막혀온다."
+// ============================================================
+const fix_harem_4 = {
+    en: "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. Lies pile up in between so no one finds out. I thought it would feel sweet, but it starts choking me fast.*",
+    ja: "*月曜はソヨン。水曜はユナ。金曜はダイン。その合間に、ばれないための嘘が積み重なっていく。甘いと思っていたのに、すぐ息が詰まってくる。*",
+    es: "*Los lunes Seoyeon. Los miércoles Yuna. Los viernes Dain. Entre medio se acumulan las mentiras para que no me descubran. Creí que sería dulce, pero enseguida empieza a faltarme el aire.*",
+    fr: "*Lundi, Seoyeon. Mercredi, Yuna. Vendredi, Dain. Entre les deux, les mensonges s'accumulent pour que personne ne le découvre. Je croyais que ce serait grisant, mais j'étouffe vite.*",
+    de: "*Montag Seoyeon. Mittwoch Yuna. Freitag Dain. Dazwischen stapeln sich die Lügen, damit niemand etwas merkt. Ich dachte, es wäre süß, aber mir bleibt schnell die Luft weg.*"
+};
+
+// ============================================================
+// 40. harem_5 (day5_4_night)
+// KO: "이 균형은 오래 못 간다. 누군가는 먼저 다친다. 그때쯤이면 이건 로맨스가 아니라 그냥 사고다."
+// ============================================================
+const fix_harem_5 = {
+    en: "*This balance won't last long. Someone gets hurt first. By then, this isn't romance anymore. It's just a mess.*",
+    ja: "*この均衡は長くもたない。誰かが先に傷つく。その頃には、これはもうロマンスじゃない。ただの事故だ。*",
+    es: "*Este equilibrio no dura mucho. Alguien sale herido primero. Para entonces esto ya no es romance, es solo un desastre.*",
+    fr: "*Cet équilibre ne tiendra pas longtemps. Quelqu'un sera blessé avant les autres. À ce stade, ce n'est plus de la romance, juste une catastrophe.*",
+    de: "*Dieses Gleichgewicht hält nicht lange. Jemand wird zuerst verletzt. Dann ist das keine Romanze mehr, sondern einfach nur ein Scherbenhaufen.*"
+};
+
+// ============================================================
+// 41. harem_6 (day5_4_night)
+// KO: "그래도 오늘은 세 사람이 웃고 있다. 내일이 뻔한데도, 나는 또 오늘을 붙잡고 있다."
+// ============================================================
+const fix_harem_6 = {
+    en: "*And still, all three of them are smiling today. Even knowing what tomorrow looks like, I reach for today again.*",
+    ja: "*それでも今日は三人とも笑っている。明日がどうなるか見えているのに、また今日にしがみついている。*",
+    es: "*Y aun así hoy las tres están sonriendo. Aunque sé perfectamente cómo pinta mañana, vuelvo a aferrarme a hoy.*",
+    fr: "*Et malgré ça, aujourd'hui, elles sourient toutes les trois. Je vois bien ce que sera demain, et pourtant je m'accroche encore à aujourd'hui.*",
+    de: "*Und trotzdem lachen heute alle drei. Obwohl ich weiß, wie morgen aussehen wird, klammere ich mich wieder an das Heute.*"
+};
+
 
 // ============================================================
 // APPLY ALL FIXES
@@ -364,6 +532,8 @@ const allFixes = [
     { file: 'day1_2_lunch', nodeId: 'lunch_yuna_26', translations: fix_lunch_yuna_26 },
     { file: 'day1_2_lunch', nodeId: 'lunch_seo_after_7', translations: fix_lunch_seo_after_7 },
     { file: 'day1_4_night', nodeId: 'night_seo_late_3', translations: fix_night_seo_late_3 },
+    { file: 'day1_3_afterschool', nodeId: 'after_nurse_enter_4_ins3', translations: fix_after_nurse_enter_4_ins3 },
+    { file: 'day2_1_morning', nodeId: 'morning2_seo_dust_3', translations: fix_morning2_seo_dust_3 },
     { file: 'day2_3_afterschool', nodeId: 'after2_seo_skinship_2', translations: fix_after2_seo_skinship_2 },
     { file: 'day2_4_night', nodeId: 'night2_flashback_3', translations: fix_night2_flashback_3 },
     { file: 'day2_4_night', nodeId: 'night2_reply_yuna_7', translations: fix_night2_reply_yuna_7 },
@@ -372,6 +542,7 @@ const allFixes = [
     { file: 'day3_3_afterschool', nodeId: 'after3_confront_5', translations: fix_after3_confront_5 },
     { file: 'day3_3_afterschool', nodeId: 'haeun_warn_5c_ins', translations: fix_haeun_warn_5c_ins },
     { file: 'day3_3_afterschool', nodeId: 'after3_confront_excuse_2', translations: fix_after3_confront_excuse_2 },
+    { file: 'day3_4_night', nodeId: 'night3_cheat_msg_4_ins', translations: fix_night3_cheat_msg_4_ins },
     { file: 'day3_4_night', nodeId: 'night3_nightmare_3', translations: fix_night3_nightmare_3 },
     { file: 'day3_4_night', nodeId: 'night3_dream_2', translations: fix_night3_dream_2 },
     { file: 'day3_4_night', nodeId: 'night3_cheat_reflect_5_ins', translations: fix_night3_cheat_reflect_5_ins },
@@ -383,6 +554,17 @@ const allFixes = [
     { file: 'day5_2_lunch', nodeId: 'tour_yuna_end_2', translations: fix_tour_yuna_end_2 },
     { file: 'day5_3_afterschool', nodeId: 'after5_last_chance_choice', translations: fix_after5_last_chance_choice },
     { file: 'day5_4_night', nodeId: 'true_seo_7', translations: fix_true_seo_7 },
+    { file: 'day5_4_night', nodeId: 'hidden_perfect_homeroom_4c', translations: fix_hidden_perfect_homeroom_4c },
+    { file: 'day5_4_night', nodeId: 'friend_4', translations: fix_friend_4 },
+    { file: 'day5_4_night', nodeId: 'friend_4_dain', translations: fix_friend_4_dain },
+    { file: 'day5_4_night', nodeId: 'friend_5', translations: fix_friend_5 },
+    { file: 'day5_4_night', nodeId: 'friend_6', translations: fix_friend_6_v2 },
+    { file: 'day5_4_night', nodeId: 'friend_9', translations: fix_friend_9 },
+    { file: 'day5_4_night', nodeId: 'friend_11', translations: fix_friend_11 },
+    { file: 'day5_4_night', nodeId: 'mayhem_6', translations: fix_mayhem_6 },
+    { file: 'day5_4_night', nodeId: 'harem_4', translations: fix_harem_4 },
+    { file: 'day5_4_night', nodeId: 'harem_5', translations: fix_harem_5 },
+    { file: 'day5_4_night', nodeId: 'harem_6', translations: fix_harem_6 },
     { file: 'day5_4_night', nodeId: 'good_epilogue_1', translations: fix_good_epilogue_1 },
     { file: 'day5_4_night', nodeId: 'good_epilogue_1_yuna', translations: fix_good_epilogue_1 },
     { file: 'day5_4_night', nodeId: 'good_epilogue_1_dain', translations: fix_good_epilogue_1 },
@@ -392,7 +574,6 @@ const allFixes = [
     { file: 'day5_4_night', nodeId: 'good_epilogue_3', translations: fix_good_epilogue_3 },
     { file: 'day5_4_night', nodeId: 'good_epilogue_3_yuna', translations: fix_good_epilogue_3 },
     { file: 'day5_4_night', nodeId: 'good_epilogue_3_dain', translations: fix_good_epilogue_3 },
-    { file: 'day5_4_night', nodeId: 'friend_6', translations: fix_friend_6 },
 ];
 
 // choices 수정 (별도 처리)

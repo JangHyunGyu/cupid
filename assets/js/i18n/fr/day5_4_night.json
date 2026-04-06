@@ -502,7 +502,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*J'ai hésité, alors j'ai compris. Que s'appuyer sur Seoyeon n'est pas une faiblesse.*"
+        "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*J'avais l'impression d'avoir fait un détour, mais à côté de Yuna, c'est là que j'étais censé être.*"
+        "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*C'est pas grave d'être maladroit. Comme Dain l'a dit, c'est la première fois.*"
+        "text": "*J'ai hésité, alors j'ai compris. Ce que je ressentais vraiment.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -654,7 +654,7 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*En sortant du portail, il y a un message sur mon téléphone. 'Merci pour aujourd'hui lol' — Le ton d'un ami. Un ton parfaitement amical.*"
+        "text": "*En franchissant le portail, un message arrive sur mon téléphone. « Merci pour aujourd'hui haha. » — Le ton est simple, familier. C'est justement pour ça que ça ressemble encore plus à de l'amitié.*"
     },
     "friend_4_seo": {
         "name": "{name}",
@@ -666,15 +666,15 @@
     },
     "friend_4_dain": {
         "name": "{name}",
-        "text": "*En sortant du portail, un message arrive. 'Hé, rentre bien ! Merci pour aujourd'hui !' Les points d'exclamation sont revenus. C'est rassurant, et pourtant plus froid. Ce sont des points d'exclamation envoyés à une amie.*"
+        "text": "*En quittant le portail, un message arrive. « Hé, rentre bien ! Merci pour aujourd'hui ! » Les points d'exclamation sont revenus. C'est rassurant, mais je me sens encore plus retomber. Ce sont ceux qu'on envoie à un ami.*"
     },
     "friend_5": {
         "name": "{name}",
-        "text": "*J'ai tapé ma réponse. 'Moi aussi, merci.' — Après l'envoi, j'ai fixé l'écran. Deux lignes de conversation. Je souris, mais un froid étrange me traverse.*"
+        "text": "*J'ai répondu. « Moi aussi, merci. » — Puis j'ai regardé l'écran. Deux lignes de conversation. Je souris, mais je ne me sens pas bien pour autant.*"
     },
     "friend_6": {
         "name": "{name}",
-        "text": "*On continuera à s'envoyer des messages comme ça. Avec des emojis, manger ensemble de temps en temps, demander si tout va bien et répondre que oui. — Juste à côté mais une ligne qu'on ne peut pas franchir. C'est ça, l'amitié.*"
+        "text": "*On continuera sans doute à s'écrire comme ça. Des emojis, un repas de temps en temps, des 'rien de spécial' quand on demande comment ça va. — Il y a une ligne juste à côté qu'au final je ne franchis jamais. C'est comme ça que l'amitié reste.*"
     },
     "friend_7": {
         "name": "{name}",
@@ -686,7 +686,7 @@
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*Encore une fois à côté d'elle, portant le masque parfait de l'« ami », souriant.*"
+        "text": "*Une fois de plus, je me tiens à côté de cette personne, avec l'expression la plus facile à tenir, à sourire comme un simple ami.*"
     },
     "friend_10": {
         "name": "{name}",
@@ -694,7 +694,7 @@
     },
     "friend_11": {
         "name": "{name}",
-        "text": "*Changer de lycée, fuir — au final, rien n'a changé en moi.*"
+        "text": "*Même en changeant d'école, même en fuyant presque, dans les moments qui comptaient je redevenais toujours le même.*"
     },
     "friend_12": {
         "name": "Système",
@@ -726,7 +726,7 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*J'ai appris bien trop tard que dire que je les aimais ne suffisait à protéger quoi que ce soit.*"
+        "text": "*J'ai compris bien trop tard que dire qu'on aime quelqu'un ne suffit à protéger quoi que ce soit.*"
     },
     "mayhem_7": {
         "name": "Système",
@@ -754,15 +754,15 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Le lundi, c'est Seoyeon. Le mercredi, Yuna. Le vendredi, Dain. Entre les deux, les mensonges s'accumulent pour ne pas se faire prendre. Je pensais que ce serait doux — mais ça m'étrangle.*"
+        "text": "*Lundi, Seoyeon. Mercredi, Yuna. Vendredi, Dain. Entre les deux, les mensonges s'accumulent pour que personne ne le découvre. Je croyais que ce serait grisant, mais j'étouffe vite.*"
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*Cet équilibre se brisera. Quelqu'un pleurera en premier. Quand cela arrivera, cette histoire cessera d'être une romance — et deviendra une catastrophe.*"
+        "text": "*Cet équilibre ne tiendra pas longtemps. Quelqu'un sera blessé avant les autres. À ce stade, ce n'est plus de la romance, juste une catastrophe.*"
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Et pourtant, aujourd'hui les trois sourient. Même en sachant la ruine de demain — je ne peux pas lâcher aujourd'hui.*"
+        "text": "*Et malgré ça, aujourd'hui, elles sourient toutes les trois. Je vois bien ce que sera demain, et pourtant je m'accroche encore à aujourd'hui.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Je suis rentré chez moi et je l'ai lu. Toute la nuit. — La façon dont parlait le personnage principal m'était familière. Trop familière.*"
+        "text": "*Je suis rentré et j'ai lu le manuscrit. Toute la nuit. — La façon dont le protagoniste lâchait ses répliques me semblait étrangement familière.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Professeure principale",
