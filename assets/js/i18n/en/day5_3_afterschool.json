@@ -11,10 +11,6 @@
         "name": "{name}",
         "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly.*"
     },
-    "after5_hidden_farewell_2": {
-        "name": "{name}",
-        "text": "*None of them look this way. — If anything, that's a relief. Right now, I don't think I can meet anyone's eyes.*"
-    },
     "after5_hidden_farewell_3": {
         "name": "{name}",
         "text": "*I can't easily say I'm sorry. Those feelings aren't something that can be neatly wrapped up with that word. So just in my heart, slowly. Thank you.*"
@@ -50,10 +46,6 @@
     "after5_farewell_seo_6_ins": {
         "name": "{name}",
         "text": "*Seoyeon turns and waves. — The same gesture as Day 1. She doesn't look back.*"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*Her back is straight. Perfectly. — But this time, she isn't trembling.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -125,10 +117,6 @@
         "name": "{name}",
         "text": "*The sun is setting. Five days are coming to an end.*"
     },
-    "after5_end": {
-        "name": "{name}",
-        "text": "*The sunset paints the schoolyard. Were five days really this short? — The moment of the final choice draws near.*"
-    },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
@@ -167,10 +155,6 @@
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*I almost ran away again. Just like at my old school. Phone in my pocket, unable to say a word — that moment nearly came back. — No. Not this time.*"
-    },
-    "after5_last_chance_2_ins2": {
-        "name": "{name}",
-        "text": "*My legs move. My mouth opens first. No prepared words. — My body just moves on its own.*"
     },
     "after5_last_chance_2_ins3": {
         "name": "{name}",

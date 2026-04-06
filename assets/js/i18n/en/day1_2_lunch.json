@@ -3,14 +3,6 @@
         "name": "{name}",
         "text": "*Lunchtime. The bell rings.*"
     },
-    "lunch_start_2": {
-        "name": "{name}",
-        "text": "*I step out of the classroom and the hallway is packed with students. No idea where to go. Cafeteria? School store? Or —*"
-    },
-    "lunch_start_3": {
-        "name": "{name}",
-        "text": "*Signals come from three directions at once.*"
-    },
     "lunch_start_4": {
         "name": "{name}",
         "text": "*At the end of the hallway, Seoyeon catches my eye and gestures. Pointing toward the rooftop.*"
@@ -26,10 +18,6 @@
     "lunch_start_7": {
         "name": "{name}",
         "text": "*Three paths. A choice like this on day one.*"
-    },
-    "lunch_start_7b": {
-        "name": "{name}",
-        "text": "*At my old school, I never chose. To be precise, I kept putting it off until the moment passed. — There it is again. My mouth moves smooth enough, but when it actually matters, it locks up. This pattern. I'm my own worst disappointment.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -80,10 +68,6 @@
         "name": "{name}",
         "text": "*She planned to eat together from the start. — But she'd never say it that way.*"
     },
-    "lunch_seo_12": {
-        "name": "{name}",
-        "text": "*She opens the lunchbox. Carefully prepared side dishes. Rolled omelettes, sausages, mini rice balls.*"
-    },
     "lunch_seo_13": {
         "name": "{name}",
         "text": "Did you make this yourself?"
@@ -103,10 +87,6 @@
     "lunch_seo_17": {
         "name": "{name}",
         "text": "*She's skilled at dodging questions. — Why am I so drawn to someone with walls this thick?*"
-    },
-    "lunch_seo_18": {
-        "name": "{name}",
-        "text": "*We eat for a while. The breeze is nice. The school grounds from the rooftop — wider than I expected.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -179,10 +159,6 @@
     "lunch_seo_after_5": {
         "name": "{name}",
         "text": "*That's so Seoyeon. Not an invitation, a permission. — But why is she smiling?*"
-    },
-    "lunch_seo_after_6": {
-        "name": "{name}",
-        "text": "*Seoyeon packs up the lunchbox and brushes her hair back with her pinky. An unconscious habit, it seems.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
@@ -320,10 +296,6 @@
         "name": "{name}",
         "text": "*She grins and punches my shoulder lightly.*"
     },
-    "lunch_dain_after_6": {
-        "name": "{name}",
-        "text": "*I don't know why I should remember that, but she said it so seriously that I nodded.*"
-    },
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*I follow Yuna's back into the library. Almost no one comes here during lunch, it seems.*"
@@ -335,10 +307,6 @@
     "lunch_yuna_2": {
         "name": "{name}",
         "text": "*Yuna takes a seat in the corner of the reading room. Opens a book. I'm not sure if she knows I followed her.*"
-    },
-    "lunch_yuna_3": {
-        "name": "{name}",
-        "text": "*I carefully sit across from her.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -356,17 +324,9 @@
         "name": "{name}",
         "text": "*Is that permission? It seems like permission. — Conditional permission.*"
     },
-    "lunch_yuna_9": {
-        "name": "{name}",
-        "text": "*Silence flows. Yuna reads her book. I have nothing to do, so I browse the shelves.*"
-    },
     "lunch_yuna_10": {
         "name": "{name}",
         "text": "*Sitting in the library during lunch without saying a word — and it's not uncomfortable. If anything, it's comfortable.*"
-    },
-    "lunch_yuna_11": {
-        "name": "{name}",
-        "text": "*I pick a random book from the shelf and open it.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -396,10 +356,6 @@
         "name": "{name}",
         "text": "*Her sentences are short. But not cold — more like she's careful with her words.*"
     },
-    "lunch_yuna_19": {
-        "name": "{name}",
-        "text": "*I read for a while. It's actually pretty good.*"
-    },
     "lunch_yuna_20": {
         "name": "{name}",
         "text": "*The bell rings.*"
@@ -423,10 +379,6 @@
     "lunch_yuna_25": {
         "name": "{name}",
         "text": "*Yuna stands up first and walks away. She doesn't look back.*"
-    },
-    "lunch_yuna_26": {
-        "name": "{name}",
-        "text": "*'That was nice.' — Just those words lift my mood. This person's single word carries more weight than ten from anyone else.*"
     },
     "lunch_end": {
         "name": "{name}",

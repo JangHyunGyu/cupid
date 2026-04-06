@@ -424,10 +424,6 @@
         "name": "{name}",
         "text": "*Les cerisiers tombent derrière la fenêtre. Les mêmes qui frôlaient mon nez il y a cinq jours se dispersent maintenant dans le vent.*"
     },
-    "alone_3": {
-        "name": "{name}",
-        "text": "*Les fleurs de cerisier s'éparpillent maintenant, emportées par le vent.*"
-    },
     "alone_4": {
         "name": "{name}",
         "text": "*...Être seul n'est pas une punition. C'est juste — silencieux. Plus que prévu.*"
@@ -672,10 +668,6 @@
         "name": "{name}",
         "text": "*J'ai répondu. « Moi aussi, merci. » — Puis j'ai regardé l'écran. Deux lignes de conversation. Je souris, mais je ne me sens pas bien pour autant.*"
     },
-    "friend_6": {
-        "name": "{name}",
-        "text": "*On continuera sans doute à s'écrire comme ça. Des emojis, un repas de temps en temps, des 'rien de spécial' quand on demande comment ça va. — Il y a une ligne juste à côté qu'au final je ne franchis jamais. C'est comme ça que l'amitié reste.*"
-    },
     "friend_7": {
         "name": "{name}",
         "text": "*...Je n'ai pas pu le dire dans ce lycée non plus.*"
@@ -691,10 +683,6 @@
     "friend_10": {
         "name": "{name}",
         "text": "*J'ouvre le bloc-notes. 'J'ai quelque chose à te dire.' — Le curseur clignote. Comme il y a trois ans. Je maintiens la touche effacer. Tout s'efface.*"
-    },
-    "friend_11": {
-        "name": "{name}",
-        "text": "*Même en changeant d'école, même en fuyant presque, dans les moments qui comptaient je redevenais toujours le même.*"
     },
     "friend_12": {
         "name": "Système",
@@ -729,8 +717,8 @@
         "text": "*J'ai compris bien trop tard que dire qu'on aime quelqu'un ne suffit à protéger quoi que ce soit.*"
     },
     "mayhem_7": {
-        "name": "Système",
-        "text": "─── MAYHEM END ───"
+        "name": "{name}",
+        "text": "*Avec Sojeong, j'avais regretté de ne pas avoir choisi. Cette fois j'ai tout choisi et tout perdu. — Au fond c'est pareil. Je n'ai pas pu en choisir une seule.*"
     },
     "day5_ending_harem": {
         "name": "{name}",
@@ -1205,5 +1193,9 @@
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
         "text": "*Si la raison pour laquelle elle peut sauter malgré la douleur c'est moi — ça suffit.*"
+    },
+    "mayhem_8": {
+        "name": "시스템",
+        "text": "─── MAYHEM END ───"
     }
 }

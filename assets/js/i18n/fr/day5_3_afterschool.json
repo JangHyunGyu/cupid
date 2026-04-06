@@ -11,10 +11,6 @@
         "name": "{name}",
         "text": "*Devant le portail. Au loin, trois silhouettes.*"
     },
-    "after5_hidden_farewell_2": {
-        "name": "{name}",
-        "text": "*Personne ne regarde par ici. — Au contraire, c'est presque un soulagement. Là, je n'ai pas la force de croiser le regard de qui que ce soit.*"
-    },
     "after5_hidden_farewell_3": {
         "name": "{name}",
         "text": "*Je n'arrive pas à dire « pardon » si facilement. Ce ne sont pas des sentiments qu'un seul mot peut ranger. Alors seulement dans mon cœur, doucement. Merci.*"
@@ -50,10 +46,6 @@
     "after5_farewell_seo_6_ins": {
         "name": "{name}",
         "text": "*Seoyeon se retourne et fait un signe de la main. — Le même geste que le Jour 1. Elle ne se retourne pas.*"
-    },
-    "after5_farewell_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*Son dos est droit. Parfaitement. — Mais cette fois, elle ne tremble pas.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -125,10 +117,6 @@
         "name": "{name}",
         "text": "*Le soleil se couche. Les cinq jours touchent à leur fin.*"
     },
-    "after5_end": {
-        "name": "{name}",
-        "text": "*Le coucher de soleil teinte la cour. Cinq jours, c'était vraiment si court que ça ? — Le moment du dernier choix approche.*"
-    },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
@@ -167,10 +155,6 @@
     "after5_last_chance_2_ins": {
         "name": "{name}",
         "text": "*J'ai failli fuir encore. Comme à mon ancien lycée. Le téléphone dans la poche, incapable de dire un mot — ce moment a failli revenir. — Non. Pas cette fois.*"
-    },
-    "after5_last_chance_2_ins2": {
-        "name": "{name}",
-        "text": "*Mes jambes bougent. Ma bouche s'ouvre en premier. Pas de mots préparés. — Mon corps bouge tout seul.*"
     },
     "after5_last_chance_2_ins3": {
         "name": "{name}",

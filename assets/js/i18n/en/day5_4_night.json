@@ -424,10 +424,6 @@
         "name": "{name}",
         "text": "*Cherry blossoms fall outside the window. The same ones that brushed my nose five days ago are now scattering in the wind.*"
     },
-    "alone_3": {
-        "name": "{name}",
-        "text": "*The cherry blossoms are now scattering, carried off by the wind.*"
-    },
     "alone_4": {
         "name": "{name}",
         "text": "*...Being alone isn’t a punishment. It’s just — quiet. Much more than I expected.*"
@@ -672,10 +668,6 @@
         "name": "{name}",
         "text": "*I text back. 'Me too, thanks.' — Then stare at the screen. Two short lines. I'm smiling, but it doesn't feel good at all.*"
     },
-    "friend_6": {
-        "name": "{name}",
-        "text": "*We'll probably keep texting like this. Throw in emojis, grab food sometimes, answer 'nothing much' when asked how I've been. — There's a line right beside us that I never cross. That's how friendship stays.*"
-    },
     "friend_7": {
         "name": "{name}",
         "text": "*...I couldn’t say it at this school either.*"
@@ -691,10 +683,6 @@
     "friend_10": {
         "name": "{name}",
         "text": "*I open the notes app. ‘I need to tell you something.’ — The cursor blinks. Just like three years ago. I hold down backspace and erase the words.*"
-    },
-    "friend_11": {
-        "name": "{name}",
-        "text": "*Even after transferring, even after running away, I was still the same whenever it mattered.*"
     },
     "friend_12": {
         "name": "System",
@@ -729,8 +717,8 @@
         "text": "*I learned too late that saying I liked them wasn't enough to protect anything.*"
     },
     "mayhem_7": {
-        "name": "System",
-        "text": "─── MAYHEM END ───"
+        "name": "{name}",
+        "text": "*Back then with Sojeong, I regretted not choosing. This time I chose everyone and lost everyone. — In the end it's the same. I couldn't pick one person.*"
     },
     "day5_ending_harem": {
         "name": "{name}",
@@ -1205,5 +1193,9 @@
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
         "text": "*If the reason she can jump despite the pain is me — that's enough.*"
+    },
+    "mayhem_8": {
+        "name": "시스템",
+        "text": "─── MAYHEM END ───"
     }
 }

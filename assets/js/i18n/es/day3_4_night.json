@@ -47,10 +47,6 @@
         "name": "{name}",
         "text": "*Tuve un sueño. — Caminaba al lado de alguien.*"
     },
-    "night3_dream_2": {
-        "name": "{name}",
-        "text": "*No podía ver su cara, pero extrañamente, no sentía ansiedad.*"
-    },
     "night3_dream_3": {
         "name": "{name}",
         "text": "*Fue un buen sueño.*"
@@ -90,10 +86,6 @@
     "night3_nightmare_1": {
         "name": "{name}",
         "text": "*Me quedé dormido. — Un sueño.*"
-    },
-    "night3_nightmare_2": {
-        "name": "{name}",
-        "text": "*Estoy de pie en la oscuridad. No puedo ver nada.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -136,10 +128,6 @@
         "name": "{name}",
         "text": "*Extendí la mano. — No puedo alcanzarla.*"
     },
-    "night3_nightmare_end_2": {
-        "name": "{name}",
-        "text": "*Todas desaparecen, y solo queda la oscuridad.*"
-    },
     "night3_nightmare_end_3": {
         "name": "{name}",
         "text": "*— Me desperté empapado en sudor. Las 3 de la mañana. Veo el techo.*"
@@ -148,21 +136,9 @@
         "name": "{name}",
         "text": "*¿Qué he hecho?*"
     },
-    "night3_cheat_reflect_1": {
-        "name": "{name}",
-        "text": "*Saqué el móvil. Galería. Otra vez haciendo scroll. — La foto de Sojeong.*"
-    },
     "night3_cheat_reflect_2": {
         "name": "{name}",
         "text": "*Está sonriendo. En la foto de grupo, mirándome y sonriendo. Sin saber nada.*"
-    },
-    "night3_cheat_reflect_3": {
-        "name": "{name}",
-        "text": "*Esta vez quería decirlo sin arrepentimientos. Que en este instituto viviría con honestidad.*"
-    },
-    "night3_cheat_reflect_4": {
-        "name": "{name}",
-        "text": "*Por eso esta vez tiene que ser diferente. No elegir es lo mismo que perderlas a todas.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
@@ -171,10 +147,6 @@
     "night3_faithful_reflect_1": {
         "name": "{name}",
         "text": "*Abrí los ojos. La luz de la mañana se cuela entre las cortinas. — El sueño de hoy fue bonito.*"
-    },
-    "night3_faithful_reflect_2": {
-        "name": "{name}",
-        "text": "*Saqué el móvil. Abrí la galería. La foto de Sojeong. — Dejé el dedo pulsado.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -220,73 +192,37 @@
         "name": "{name}",
         "text": "*Lo contrario de lo que pasó con Sojeong, pero el resultado es el mismo. Alguien sale herido.*"
     },
-    "night3_cheat_reflect_3_ins2": {
-        "name": "{name}",
-        "text": "*Escuela anterior: arrepentimiento por no decir nada.*"
-    },
     "night3_cheat_reflect_3_ins3": {
         "name": "{name}",
         "text": "*Esta escuela: arrepentimiento por decirlo a todas.*"
-    },
-    "night3_cheat_reflect_3_ins4": {
-        "name": "{name}",
-        "text": "*Al final, el problema nunca fue 'decirlo o no' — sino 'a quién.'*"
     },
     "night3_cheat_reflect_3_ins5": {
         "name": "{name}",
         "text": "*Minsu lo dijo. 'Rechazar también es amor.'*"
     },
-    "night3_cheat_reflect_3_ins6": {
-        "name": "{name}",
-        "text": "*Seoyeon dijo. 'No soy una más del montón.'*"
-    },
     "night3_cheat_reflect_3_ins7": {
         "name": "{name}",
         "text": "*Yuna lo dijo. 'No huyas.'*"
-    },
-    "night3_cheat_reflect_5_ins": {
-        "name": "{name}",
-        "text": "*Tuve un sueño. — Caminaba al lado de alguien. No podía ver su cara, pero extrañamente, no sentía ansiedad.*"
     },
     "night3_faithful_reflect_2_ins": {
         "name": "{name}",
         "text": "*'¿Eliminar esta foto?'*"
     },
-    "night3_faithful_reflect_2_ins2": {
-        "name": "{name}",
-        "text": "*Mi dedo se detiene sobre el bot?n de confirmar.*"
-    },
     "night3_faithful_reflect_2_ins3": {
         "name": "{name}",
         "text": "*Un segundo. Solo me quedo mirando la pantalla.*"
-    },
-    "night3_faithful_reflect_2_ins4": {
-        "name": "{name}",
-        "text": "*Recuerdo lo que dijo Minsu. 'Rechazar tambi?n es amar.'*"
     },
     "night3_faithful_reflect_2_ins5": {
         "name": "{name}",
         "text": "*...Sí. Primero tengo que rechazar mi propio pasado.*"
     },
-    "night3_faithful_reflect_2_ins6": {
-        "name": "{name}",
-        "text": "*— Eliminada.*"
-    },
     "night3_faithful_reflect_3_ins": {
         "name": "{name}",
         "text": "*Minsu lo dijo. 'Rechazar también es amor.' Tiene razón. En mi antigua escuela, Sojeong ni siquiera tuvo la oportunidad de rechazarme. Porque yo mantuve la boca cerrada. — Ese fue el final más cruel para los dos.*"
     },
-    "night3_faithful_reflect_4_ins": {
-        "name": "{name}",
-        "text": "*La galería está vacía. El lugar donde estaba la foto de Sojeong. La pantalla vacía es, de hecho, más nítida.*"
-    },
     "night3_faithful_reflect_4_ins2": {
         "name": "{name}",
         "text": "*Borrar la foto fue fácil. Un solo dedo bastó. — Los sentimientos tardan más que eso.*"
-    },
-    "night3_faithful_reflect_4_ins3": {
-        "name": "{name}",
-        "text": "*Aun así. Al menos lo borrado — me permite avanzar.*"
     },
     "night3_faithful_reflect_4_ins6": {
         "name": "{name}",

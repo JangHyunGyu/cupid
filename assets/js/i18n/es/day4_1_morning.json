@@ -245,10 +245,6 @@
         "name": "{name}",
         "text": "*Domingo por la mañana. Me dirijo a la enfermería por costumbre. — ¿Cuándo se convirtió esto en una costumbre?*"
     },
-    "hidden_nurse_d4_morning_2": {
-        "name": "{name}",
-        "text": "*Abro la puerta de la enfermería. La enfermera está sentada en su silla. Con su uniforme blanco. — Pero algo es diferente de lo habitual. No hay su travesura de siempre.*"
-    },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermera",
         "text": "Ah, viniste."
@@ -373,10 +369,6 @@
         "name": "{name}",
         "text": "*Mañana de fin de semana. Algunas notificaciones. — Pensé que sería un día normal.*"
     },
-    "morning4_fallback_msg_2": {
-        "name": "{name}",
-        "text": "*Dejo el teléfono y me estiro. De todos modos, otro día comienza.*"
-    },
     "morning4_seo_msg_1_ins": {
         "name": "{name}",
         "text": "*Es una orden. Hasta las citas las plantea como instrucciones. Pero por alguna razón me hace gracia.*"
@@ -384,10 +376,6 @@
     "morning4_seo_msg_1_ins2": {
         "name": "{name}",
         "text": "*Estoy en el punto de encuentro. ¿Vendrá? Después de lo enfadada que estaba el viernes.*"
-    },
-    "hidden_homeroom_d4_1_ins": {
-        "name": "{name}",
-        "text": "*Viene. La veo a lo lejos. Cuesta creer que sea la misma persona que estaba tan enfadada — caminando tan tranquilamente.*"
     },
     "hidden_homeroom_d4_1_ins2": {
         "name": "{name}",
@@ -489,14 +477,6 @@
         "name": "{name}",
         "text": "*Se da la vuelta. Los hombros ligeramente caídos.*"
     },
-    "hidden_homeroom_d4_decline_ins2": {
-        "name": "{name}",
-        "text": "*La rechacé, así que por qué me siento así. Volví a casa.*"
-    },
-    "hidden_nurse_d4_1_ins": {
-        "name": "{name}",
-        "text": "*La enfermería. Sobre el escritorio hay papeles y herramientas para los chequeos. La enfermera los ordena con calma.*"
-    },
     "hidden_nurse_d4_1_ins2": {
         "name": "Enfermera",
         "text": "*Girándose* ¿Eh? ¿De verdad viniste?"
@@ -512,10 +492,6 @@
     "hidden_nurse_d4_2_ins3": {
         "name": "{name}",
         "text": "*Su sonrisa sale con naturalidad. - Es distinta a como la veo en el colegio. Hoy se siente menos como una profesora y más como... alguien con quien es fácil estar.*"
-    },
-    "hidden_nurse_d4_2_ins4": {
-        "name": "{name}",
-        "text": "*Le ayudo a ordenar los documentos de las revisiones. Clasificar etiquetas, organizar tablas de agudeza visual, desinfectar tensiómetros.*"
     },
     "hidden_nurse_d4_2_ins5": {
         "name": "Enfermera",
@@ -573,10 +549,6 @@
         "name": "{name}",
         "text": "*Ella sabe lo que pesa que te llamen por tu nombre. Porque en el hospital la llamaban por números.*"
     },
-    "hidden_nurse_d4_4_ins11": {
-        "name": "{name}",
-        "text": "*Hemos terminado de ordenar. La Enfermera se estira.*"
-    },
     "hidden_nurse_d4_6_ins": {
         "name": "{name}",
         "text": "No fue nada."
@@ -621,10 +593,6 @@
         "name": "{name}",
         "text": "*Ha añadido de verdad. Cuando esta persona añade de verdad, significa que todo lo anterior era sincero.*"
     },
-    "hidden_nurse_d4_meal_4_ins2": {
-        "name": "{name}",
-        "text": "*Respondió con un '¿Qué dices?', pero no pudo mantener la mirada por un momento. Esta vez también es torpe ocultando cosas.*"
-    },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {
         "name": "{name}",
@@ -640,4 +608,3 @@
         "text": "*Corto. Pero hoy esa brevedad se siente nítida. No hay ningún otro plan. — Esta vez voy de verdad a ese único lugar.*"
     }
 }
-

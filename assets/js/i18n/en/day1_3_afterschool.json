@@ -3,25 +3,13 @@
         "name": "{name}",
         "text": "*After school. I decide to look around the campus. I still don't know the layout.*"
     },
-    "after_start_2": {
-        "name": "{name}",
-        "text": "*I walk down the hallway. My phone buzzes. — The group chat from my old school.*"
-    },
     "after_kakao_1": {
         "name": "{name}",
         "text": "*'Sojeong posted cherry blossom photos with her boyfriend lol'*"
     },
-    "after_kakao_2": {
-        "name": "{name}",
-        "text": "*I put my phone back in my pocket.*"
-    },
     "after_kakao_3": {
         "name": "{name}",
         "text": "*...Ah.*"
-    },
-    "after_kakao_4": {
-        "name": "{name}",
-        "text": "*I'm fine. Really. It's already in the past. I never even confessed and it just ended. It's not lingering feelings — it's regret. — What if I had said something back then? Even if I'd been rejected, at least I wouldn't feel this unsettled.*"
     },
     "after_kakao_5": {
         "name": "{name}",
@@ -144,10 +132,6 @@
         "name": "Homeroom Teacher",
         "text": "Good to hear. — If anything comes up, stop by the faculty office. That's what I'm here for."
     },
-    "after_homeroom_ok_2": {
-        "name": "{name}",
-        "text": "*Apparently, this wasn't just a polite send-off. She rests a hand on the back of the chair and takes a second to choose her words.*"
-    },
     "after_homeroom_ok_3": {
         "name": "Homeroom Teacher",
         "text": "So it feels like a decent school, huh. — Hearing that is weirdly reassuring."
@@ -230,10 +214,6 @@
         "name": "{name}",
         "text": "*Walking down the hallway when — my head gets a little dizzy. First-day nerves, probably.*"
     },
-    "after_hidden_nurse_intro_2": {
-        "name": "{name}",
-        "text": "*There's a sign for the nurse's office on the wall. Trying to just tough it out suddenly seems like a bad idea.*"
-    },
     "after_hidden_nurse_choice": {
         "name": "{name}",
         "text": "*I've been meeting people nonstop since this morning. Taking ten minutes to sit down wouldn't be that dramatic.*",
@@ -294,10 +274,6 @@
         "name": "School Nurse",
         "text": "You don't have to worry so much about being formal here. In the nurse's office, you can relax a little. That's what it's for."
     },
-    "after_nurse_enter_9": {
-        "name": "{name}",
-        "text": "*I sip some water and look around. A small potted plant in the corner.*"
-    },
     "after_nurse_enter_10": {
         "name": "School Nurse",
         "text": "Oh, that's ancient history. I like this school. Everyone just comes in with minor scrapes here."
@@ -355,10 +331,6 @@
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
         "text": "*My fingertips catch on the corner of a paper in the side pocket of my bag. A folded note. I have no idea when it was slipped in there. Yuna's handwriting.*"
-    },
-    "after1_jealousy_seo_yuna_2": {
-        "name": "{name}",
-        "text": "*'I saw you on the rooftop at lunch. ...You looked close with the student council president.' — Three dots at the end. Words swallowed.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -424,10 +396,6 @@
         "name": "{name}",
         "text": "*She closes the attendance book and stands up. She reaches the doorway, then calls me back as if she remembered something a beat late.*"
     },
-    "after_homeroom_honest_choice2b_ins2": {
-        "name": "{name}",
-        "text": "*The teacher heads toward the faculty office — then stops. Fidgets with something in her pocket. A pen, maybe?*"
-    },
     "after_homeroom_honest_9_ins": {
         "name": "{name}",
         "text": "*Earlier in class she said 'I memorize names on the first try.' — Saying it twice means something.*"
@@ -435,10 +403,6 @@
     "after_hidden_nurse_intro_ins": {
         "name": "{name}",
         "text": "*I stop in front of the door and take a slow breath. I should rest for a minute before heading home.*"
-    },
-    "after_hidden_nurse_intro_ins2": {
-        "name": "{name}",
-        "text": "*My hand settles on the handle. The metal feels cool against my palm.*"
     },
     "after_nurse_enter_2_ins": {
         "name": "{name}",
@@ -455,10 +419,6 @@
     "after_nurse_enter_4_ins3": {
         "name": "{name}",
         "text": "*We've barely exchanged a few words, and I'm already moving to her rhythm.*"
-    },
-    "after_nurse_enter_4_ins4": {
-        "name": "{name}",
-        "text": "*The nurse stands and walks over. Her movements are smooth. — When her hand touches me, I tense up for some reason.*"
     },
     "after_nurse_enter_6_ins": {
         "name": "{name}",
@@ -507,10 +467,6 @@
     "after_nurse_enter_10_ins": {
         "name": "{name}",
         "text": "*'Just minor injuries.' — There's relief in those words. It also means she's seen plenty of injuries that weren't minor.*"
-    },
-    "after_nurse_enter_10_ins2": {
-        "name": "{name}",
-        "text": "*Ten minutes pass. I get up.*"
     },
     "after_nurse_enter_10_ins3": {
         "name": "{name}",
@@ -567,10 +523,6 @@
     "after_nurse_enter_12_ins": {
         "name": "{name}",
         "text": "*She laughs lightly and waves me off. — She's playful, but clearly practiced at making people feel at ease.*"
-    },
-    "after_nurse_enter_12_ins2": {
-        "name": "{name}",
-        "text": "*I look at the bandage on my hand. — That was a strange nurse's office. The good kind of strange.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

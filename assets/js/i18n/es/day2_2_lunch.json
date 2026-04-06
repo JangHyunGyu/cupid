@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*Hora del almuerzo. A diferencia de ayer, tengo la nota de Yuna en el bolsillo. Al final del pasillo, Seoyeon se dirige hacia la azotea con una fiambrera, y Dain me hace señas hacia la tienda de la escuela otra vez.*"
     },
-    "lunch2_start_2": {
-        "name": "{name}",
-        "text": "*La hora del almuerzo en esta escuela es una zona de guerra.*"
-    },
     "lunch2_choice": {
         "name": "{name}",
         "text": "*¿Con quién debería ir?*",
@@ -113,10 +109,6 @@
         "name": "{name}",
         "text": "*El anexo de la biblioteca. Un edificio más antiguo que el principal. Casi no hay estudiantes.*"
     },
-    "lunch2_yuna_2": {
-        "name": "{name}",
-        "text": "*Subo las escaleras y encuentro a Yuna al final del pasillo. Está apoyada contra la pared, leyendo un libro.*"
-    },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
         "name": "Yuna",
@@ -202,10 +194,6 @@
         "name": "{name}",
         "text": "*Yuna camina adelante. Hacia lo profundo del anexo. Un lugar donde parece que nadie vendría.*"
     },
-    "lunch2_yuna_12": {
-        "name": "{name}",
-        "text": "*Aparece una pequeña habitación. La luz del sol entra por la ventana, con un sofá viejo y una estantería.*"
-    },
     "lunch2_yuna_13": {
         "name": "{name}",
         "text": "¿Qué es este lugar? ¿Una sala de lectura secreta?"
@@ -262,10 +250,6 @@
         "name": "{name}",
         "text": "*Yuna abre su libro. Una señal de que la conversación terminó.*"
     },
-    "lunch2_yuna_c1_8": {
-        "name": "{name}",
-        "text": "*Debería cambiar el ambiente. — Intentaré dejarlo pasar con ligereza.*"
-    },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
         "text": "¿Será que se fue de repente? Es que así es fácil perder el contacto, ¿no?"
@@ -282,10 +266,6 @@
         "name": "{name}",
         "text": "*Metí la pata. Intentar restarle importancia solo hizo que pareciera que trivializaba su herida.*"
     },
-    "lunch2_yuna_c1_13": {
-        "name": "{name}",
-        "text": "*Un silencio incómodo sigue. Solo el sonido de las páginas al pasar llena la habitación.*"
-    },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
         "text": "*Siempre me enorgullecí de ser perceptivo. — Estaba equivocado. No con esta persona.*"
@@ -294,10 +274,6 @@
         "name": "{name}",
         "text": "*Me siento a su lado sin decir nada. Yuna echa un vistazo brevemente.*"
     },
-    "lunch2_yuna_c2_2": {
-        "name": "{name}",
-        "text": "*Saca un libro de su pila y lo pone a mi lado.*"
-    },
     "lunch2_yuna_c2_3": {
         "name": "Yuna",
         "text": "...Lee."
@@ -305,10 +281,6 @@
     "lunch2_yuna_c2_4": {
         "name": "{name}",
         "text": "*Ofrecer un libro en lugar de palabras. — El lenguaje de esta persona son las acciones. Diferente a Seoyeon, pero a su manera.*"
-    },
-    "lunch2_yuna_c2_5": {
-        "name": "{name}",
-        "text": "*Leemos lado a lado en silencio. La luz del sol a través de la ventana es cálida.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
@@ -358,10 +330,6 @@
         "name": "{name}",
         "text": "*Parecía querer escuchar más — pero me contuve a propósito.*"
     },
-    "lunch2_seo_8": {
-        "name": "{name}",
-        "text": "*Mientras comemos — la puerta de la azotea se abre. Dain ha subido.*"
-    },
     "lunch2_seo_9": {
         "name": "Dain",
         "text": "¡Oh! ¡¿Aquí estaban?! ¡Los encontré!"
@@ -401,10 +369,6 @@
     "lunch2_seo_17": {
         "name": "{name}",
         "text": "*...Eso diría Dain, seguramente.*"
-    },
-    "lunch2_seo_18": {
-        "name": "{name}",
-        "text": "*Los ángulos de este triángulo se están afilando. — Y me siento menos como un vértice y más como un sacrificio.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -583,10 +547,6 @@
         "name": "{name}",
         "text": "*Quinta hora, educación física. Corríamos por el campo cuando — el de al lado frena de golpe y chocamos. Me raspé el codo.*"
     },
-    "lunch2_dain_end_ins2": {
-        "name": "{name}",
-        "text": "*No es nada grave, pero sangra un poco.*"
-    },
     "lunch2_dain_end_ins3": {
         "name": "Profesor de educación física",
         "text": "Ve a la enfermería y que te desinfecten."
@@ -639,10 +599,6 @@
         "name": "{name}",
         "text": "*Saca un algodón empapado en desinfectante — lo aplica con cuidado. Luego saca una tirita.*"
     },
-    "lunch2_dain_end_ins12": {
-        "name": "{name}",
-        "text": "*Poner una tirita — debería llevar 30 segundos como mucho. ¿Por qué es tan meticulosa?*"
-    },
     "lunch2_dain_end_ins13": {
         "name": "Enfermera",
         "text": "*Poniendo la tirita* Aquí... así... listo."
@@ -670,10 +626,6 @@
     "lunch2_dain_end_ins19": {
         "name": "{name}",
         "text": "*Reviso la tirita — y noto que hay un portátil abierto en el escritorio. En la pantalla aparece algo. No son registros médicos — parece más un diario personal.*"
-    },
-    "lunch2_dain_end_ins20": {
-        "name": "{name}",
-        "text": "*La enfermera cierra rápidamente el portátil.*"
     },
     "lunch2_dain_end_ins21": {
         "name": "Enfermera",

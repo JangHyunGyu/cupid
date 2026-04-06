@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*In front of the fountain, Seoyeon is standing there. She got here first.*"
     },
-    "date_seo_2": {
-        "name": "{name}",
-        "text": "*She looks like a different person. No -- the same person, just a different side.*"
-    },
     "date_seo_compliment_choice": {
         "name": "{name}",
         "text": "*What do I say?*",
@@ -59,17 +55,9 @@
         "name": "{name}",
         "text": "*It sounds offhand -- but Seoyeon's own experience bleeds through it.*"
     },
-    "date_seo_flower": {
-        "name": "{name}",
-        "text": "*We pass by a flower shop.*"
-    },
     "date_seo_flower_2": {
         "name": "{name}",
         "text": "*Seoyeon pushes the flower shop door. A bell chimes.*"
-    },
-    "date_seo_succulent": {
-        "name": "{name}",
-        "text": "*Seoyeon picks out a small pot. A succulent.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -86,10 +74,6 @@
     "date_yuna_1": {
         "name": "{name}",
         "text": "*In front of the cafe. Yuna is leaning against the wall. A black dress and a small crossbody bag.*"
-    },
-    "date_yuna_2": {
-        "name": "{name}",
-        "text": "*Did Yuna always look like this? -- It's my first time seeing her outside of her uniform.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -304,10 +288,6 @@
     "date_dain_to_arcade": {
         "name": "{name}",
         "text": "*We headed to the arcade.*"
-    },
-    "date_dain_knee_2b": {
-        "name": "{name}",
-        "text": "*We pass a sporting goods store. Dain stops in front of the display window. Volleyball shoes are on display.*"
     },
     "date_seo_pretty_high_ins": {
         "name": "Seoyeon",

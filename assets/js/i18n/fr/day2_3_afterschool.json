@@ -352,10 +352,6 @@
         "name": "{name}",
         "text": "*Un morceau de piano tranquille commence. Le couchant peint la pièce.*"
     },
-    "after2_yuna_9": {
-        "name": "{name}",
-        "text": "*Yuna lit son livre, et j'écoute la musique. Aucun mot. — Pas du tout inconfortable.*"
-    },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
         "text": "*Après un long moment* ...Quelqu'un qui vient ici après les cours."
@@ -584,10 +580,6 @@
         "name": "{name}",
         "text": "*L'échange se prolonge. Les mouvements de Dain sont — clairement pas ordinaires. Rapides, précis, son corps se souvient de chaque geste.*"
     },
-    "after2_dain_9_ins5": {
-        "name": "{name}",
-        "text": "*Cette fille est vraiment douée. — Pas juste quelqu'un qui aime le sport, mais quelqu'un qui y a mis toute sa vie.*"
-    },
     "after2_dain_9_ins6": {
         "name": "{name}",
         "text": "*Score final : 3-2. Gagné de justesse.*"
@@ -595,10 +587,6 @@
     "after2_dain_end_ins": {
         "name": "{name}",
         "text": "*Le stand de tteokbokki près de l'école.*"
-    },
-    "after2_dain_end_ins2": {
-        "name": "{name}",
-        "text": "*Dain souffle sur le tteokbokki et parle.*"
     },
     "after2_seo_4_ins": {
         "name": "{name}",
@@ -608,17 +596,9 @@
         "name": "{name}",
         "text": "*Le mot 'faveur' ne semble pas exister dans le vocabulaire de cette personne.*"
     },
-    "after2_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*Je commence à trier les papiers. Budgets d'événements, demandes de clubs. Il y en a pas mal.*"
-    },
     "after2_seo_8b4_ins": {
         "name": "{name}",
         "text": "*Elle a dit 'compliment' directement. — Ça semble rare venant d'elle.*"
-    },
-    "after2_seo_8b4_ins2": {
-        "name": "{name}",
-        "text": "*Pendant le tri, Seoyeon fait rouler son cou. Il semble raide.*"
     },
     "after2_seo_sunset_joke_ins": {
         "name": "Seoyeon",
@@ -660,10 +640,6 @@
         "name": "{name}",
         "text": "*Yuna lève les yeux. Pas surprise.*"
     },
-    "after2_yuna_8b_ins": {
-        "name": "{name}",
-        "text": "*Je m'assieds à côté d'elle. Yuna me tend un de ses écouteurs.*"
-    },
     "after2_yuna_choice_pre3_ins": {
         "name": "{name}",
         "text": "*Yuna a dit deux phrases d'affilée. — Pour quelqu'un qui s'exprime habituellement en une seule ligne, c'est notable.*"
@@ -687,10 +663,6 @@
     "minsu_warn_7_ins2": {
         "name": "Minsu",
         "text": "Mec, ça fait un an que je suis dans cette classe. Seoyeon n'adresse jamais la parole aux mecs en premier. Dain n'a jamais acheté de pain à un autre gars. Yuna — des mots ? Elle n'en écrit à personne."
-    },
-    "minsu_warn_12_ins": {
-        "name": "{name}",
-        "text": "*Minsu ajuste la sangle de son sac.*"
     },
     "minsu_warn_13_ins": {
         "name": "{name}",
@@ -719,9 +691,5 @@
     "after2_yuna_everyday_react_ins": {
         "name": "{name}",
         "text": "*On ne dirait même pas une permission, et pourtant ça me reste bizarrement en tête.*"
-    },
-    "after2_dain_9_ins7": {
-        "name": "{name}",
-        "text": "*Dain se relève — elle se frotte brièvement le genou droit. Elle faisait pareil au gymnase hier. Un geste inconscient.*"
     }
 }

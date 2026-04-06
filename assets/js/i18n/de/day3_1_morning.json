@@ -148,10 +148,6 @@
         "name": "{name}",
         "text": "*Dains Finger trommeln auf der Tischkante. Ist sie nervös? — Nein. Dain wird doch nicht nervös. Das ist für sie Alltag.*"
     },
-    "morning3_date_dain_3": {
-        "name": "{name}",
-        "text": "*...Oder?*"
-    },
     "morning3_date_dain_choice": {
         "name": "{name}",
         "text": "*In der nächsten Pause kommt Dain an meinen Platz und fragt mich.*",
@@ -171,10 +167,6 @@
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
         "text": "*Ich beobachte Dains Reaktion. Die Glocke klingelt, und kurz vor der Mittagspause entsteht wieder diese kleine Lücke.*"
-    },
-    "morning3_date_dain_decline_inner": {
-        "name": "{name}",
-        "text": "*Sie ging mit einem strahlenden Lächeln. — Damals habe ich es nicht bemerkt. Dass Dain aufgehört hatte zu trommeln und ihre Hände in die Taschen gesteckt hatte. Dass es Mut gekostet hatte zu fragen.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
@@ -215,10 +207,6 @@
     "hidden_homeroom_d3_1": {
         "name": "{name}",
         "text": "*Pause. Beim Vorbeigehen an einem leeren Klassenzimmer — höre ich jemanden drin. Ich nähere mich leise.*"
-    },
-    "hidden_homeroom_d3_2": {
-        "name": "{name}",
-        "text": "*Die Klassenlehrerin sitzt am Pult und schreibt etwas. Sie hält inne und blickt auf. — Unsere Blicke treffen sich.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Klassenlehrerin",
@@ -310,10 +298,6 @@
         "name": "Schulkrankenschwester",
         "text": "*Den Vorhang zuziehend* ...Setz dich. Im Ernst, du siehst nicht gut aus. Was ist los?"
     },
-    "hidden_nurse_d3_5": {
-        "name": "Schulkrankenschwester",
-        "text": "*Ein Glas Wasser reichend* Ist das eine Beziehungsberatung? — So tun als wäre es keine, verrät dich am meisten."
-    },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
         "text": "*...Da hat sie recht.*",
@@ -361,10 +345,6 @@
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",
         "text": "...Die Person, die zählt. Was, wenn das deine Lehrerin ist?"
-    },
-    "hidden_nurse_d3_10": {
-        "name": "{name}",
-        "text": "*...Was? — Ich drehte mich um. Die Krankenschwester starrt aus dem Fenster. Sie lächelt nicht. Diesen Ausdruck habe ich noch nie gesehen.*"
     },
     "hidden_nurse_d3_11": {
         "name": "Schulkrankenschwester",
@@ -448,10 +428,6 @@
         "name": "Dain",
         "text": "Oh, hi!"
     },
-    "morning3_react_yuna_1b": {
-        "name": "{name}",
-        "text": "*Ich ging zurück ins Klassenzimmer.*"
-    },
     "morning3_date_intro_b": {
         "name": "{name}",
         "text": "*In der Pause trete ich auf den Flur. Seoyeon ist die Erste, die sich meinem Schritt anpasst.*"
@@ -468,17 +444,9 @@
         "name": "{name}",
         "text": "*Seoyeon geht weiter. Selbstbewusst. Sie beeilt sich nicht, obwohl sie zu spät kommt.*"
     },
-    "morning3_yuna_gate_6_ins": {
-        "name": "{name}",
-        "text": "*Yuna wühlt wortlos in ihrer Tasche, holt ein kleines Brötchen heraus, bricht es in zwei Hälften und hält es mir hin. Ein Zettel lugt aus dem Inneren der Tasche.*"
-    },
     "morning3_yuna_gate_6_ins2": {
         "name": "{name}",
         "text": "*Der Zettel: Ich dachte, du hättest kein Frühstück gehabt.*"
-    },
-    "morning3_yuna_gate_6_ins3": {
-        "name": "{name}",
-        "text": "*Jemand, der Zettel schreibt, obwohl sie es einfach sagen könnte. — Das ist Yuna.*"
     },
     "morning3_dain_gate_4_ins": {
         "name": "Dain",
@@ -500,10 +468,6 @@
         "name": "{name}",
         "text": "*Die Hand des Klassenlehrers ruht auf dem Manuskriptpapier. Zwischen den umgedrehten Blättern sind dicht beschriebene Zeilen zu erkennen.*"
     },
-    "hidden_homeroom_d3_4_ins2": {
-        "name": "{name}",
-        "text": "*Er sagte, es seien Arbeitsdokumente — aber Lehrerunterlagen werden auf A4 gedruckt. Man schreibt sie nicht handschriftlich auf Manuskriptpapier.*"
-    },
     "hidden_homeroom_d3_4_ins3": {
         "name": "{name}",
         "text": "*Der Ausdruck des Klassenlehrers kehrt schnell zurück. Sein gewohnt gleichgültiges Gesicht. — Der Wechsel ist zu abrupt.*"
@@ -519,10 +483,6 @@
     "hidden_homeroom_d3_3_ins": {
         "name": "{name}",
         "text": "*Eine halbe Sekunde. Erstarrt. — Es ist ein Ausdruck, den ich bei der Lehrerin noch nie gesehen habe. Nicht gleichgültig, nicht trocken. Das Gesicht von jemandem, der ertappt wurde.*"
-    },
-    "hidden_homeroom_d3_3_ins2": {
-        "name": "{name}",
-        "text": "*Die Lehrerin dreht das Manuskriptpapier schnell um.*"
     },
     "hidden_homeroom_d3_reveal_2_ins": {
         "name": "Klassenlehrerin",
@@ -620,10 +580,6 @@
         "name": "{name}",
         "text": "*Der Grund, warum sie ein leeres Klassenzimmer gewählt hat, ist praktisch, aber es bedeutet auch — dass sie jemand ist, der einen eigenen Raum braucht.*"
     },
-    "hidden_homeroom_d3_reveal_6_ins7": {
-        "name": "{name}",
-        "text": "*Es fühlt sich an, als hätte ich eine verborgene Schublade hinter dem Titel 'Lehrerin' geöffnet. Ich sollte sie schließen — aber ich kann nicht loslassen.*"
-    },
     "hidden_nurse_d3_2_ins": {
         "name": "{name}",
         "text": "*Die Lehrerin benutzt das Wort 'bitte.' — Für sie ist das ein seltenes Wort.*"
@@ -639,14 +595,6 @@
     "hidden_nurse_d3_2_ins4": {
         "name": "{name}",
         "text": "*Ich weiß nicht, wofür sie sich bedankt. Dafür, dass ich nicht hingesehen habe? Oder — dafür, dass ich bis hierher gekommen bin?*"
-    },
-    "hidden_nurse_d3_2_ins5": {
-        "name": "{name}",
-        "text": "*Kurz vor der Mittagspause. Seit dem Morgen komme ich innerlich nicht zur Ruhe. Zu viele Gesichter, zu viele Worte. Vielleicht liegt es daran. Ich weiß nicht, warum mich das alles so schnell aus dem Gleichgewicht bringt.*"
-    },
-    "hidden_nurse_d3_1_ins": {
-        "name": "{name}",
-        "text": "*Ich öffne die Tür zum Krankenzimmer.*"
     },
     "hidden_nurse_d3_1_ins2": {
         "name": "Schulkrankenschwester",
@@ -675,10 +623,6 @@
     "hidden_nurse_d3_3_ins3": {
         "name": "{name}",
         "text": "*Ihre Stimme hat sich verändert. Kein Scherz mehr. — Wenn diese Person ernst wird, ändert sich die ganze Atmosphäre.*"
-    },
-    "hidden_nurse_d3_3_ins4": {
-        "name": "{name}",
-        "text": "*Ich setze mich aufs Bett. Die Krankenschwester reicht mir ein Glas Wasser.*"
     },
     "hidden_nurse_d3_5_ins": {
         "name": "{name}",
@@ -748,10 +692,6 @@
         "name": "{name}",
         "text": "*Sie redet über Patienten, aber irgendwie überschneidet es sich mit meiner Situation.*"
     },
-    "hidden_nurse_d3_6_ins2": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester stellt ihr Wasserglas ab. Langsam.*"
-    },
     "hidden_nurse_d3_6_ins3": {
         "name": "Schulkrankenschwester",
         "text": "...Eher als aufgehört zu haben, bin ich weggelaufen. *Mit einem schwachen Lächeln* Es gibt keinen noblen Grund."
@@ -759,10 +699,6 @@
     "hidden_nurse_d3_6_ins4": {
         "name": "{name}",
         "text": "*Sie benutzt das Wort 'weggelaufen' selbst. — Diese Person ist es gewohnt, ihre eigene Schwäche einzugestehen.*"
-    },
-    "hidden_nurse_d3_6_ins5": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester hält inne. Sie berührt ihr Stethoskop.*"
     },
     "hidden_nurse_d3_6_ins6": {
         "name": "Schulkrankenschwester",
@@ -792,25 +728,13 @@
         "name": "{name}",
         "text": "*'Verletzt oder nicht.' — Fängt sie an, mich als etwas anderes als einen Patienten zu sehen?*"
     },
-    "hidden_nurse_d3_8_ins5": {
-        "name": "{name}",
-        "text": "*Ich verlasse das Krankenzimmer — und von hinten, leise.*"
-    },
     "hidden_nurse_d3_9_ins": {
         "name": "{name}",
         "text": "*...Was? — Meine Füße blieben stehen. Nur der Geruch von Desinfektionsmittel hängt schwer in der Luft.*"
     },
-    "hidden_nurse_d3_9_ins2": {
-        "name": "{name}",
-        "text": "*Ich drehte mich langsam um.*"
-    },
     "hidden_nurse_d3_9_ins3": {
         "name": "{name}",
         "text": "*Die Krankenschwester — lächelt nicht. Sie spielt mit ihrem Stethoskop und schaut aus dem Fenster. Wie jemand, der nicht einmal gemerkt hat, was sie gerade gesagt hat.*"
-    },
-    "hidden_nurse_d3_9_ins4": {
-        "name": "{name}",
-        "text": "*0,7 Sekunden.*"
     },
     "hidden_nurse_d3_9_ins5": {
         "name": "Schulkrankenschwester",
@@ -819,10 +743,6 @@
     "hidden_nurse_d3_9_ins6": {
         "name": "{name}",
         "text": "*Ein Scherz. — Oder?*"
-    },
-    "hidden_nurse_d3_9_ins7": {
-        "name": "{name}",
-        "text": "*Ich sage mir ja, aber meine Füße bewegen sich nicht. Dieser 0,7-Sekunden-Ausdruck gerade — darin war keine Verspieltheit.*"
     },
     "hidden_nurse_d3_9_ins8": {
         "name": "{name}",

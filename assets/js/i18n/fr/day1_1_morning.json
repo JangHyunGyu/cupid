@@ -3,29 +3,9 @@
         "name": "{name}",
         "text": "*Avril. Les pétales de cerisier virevoltent dans l'air.*"
     },
-    "start_2": {
-        "name": "{name}",
-        "text": "*Mon uniforme est encore raide. Une légère odeur d'amidon s'en dégage. Malgré le repassage d'hier, les plis font ce qu'ils veulent. Déjà en mauvais termes avec cet uniforme.*"
-    },
     "start_3": {
         "name": "{name}",
         "text": "*À partir d'aujourd'hui, je suis élève dans ce lycée. Transféré. C'est la première fois.*"
-    },
-    "start_3b": {
-        "name": "{name}",
-        "text": "*Mes doigts tripotent le bord du téléphone au fond de la poche. Je ne veux pas l'admettre, mais c'est un tic qui ne sort que quand je suis nerveux.*"
-    },
-    "start_4": {
-        "name": "{name}",
-        "text": "*Mon téléphone vibre dans ma poche. Le groupe du lycée précédent. Je vois un nom s'afficher — et je le range aussitôt. Pas encore.*"
-    },
-    "start_5": {
-        "name": "{name}",
-        "text": "*Un pétale de cerisier effleure le bout de mon nez. — J'ai failli éternuer. Dans un drama, c'est le moment où une jolie fille me rentrerait dedans.*"
-    },
-    "start_6": {
-        "name": "{name}",
-        "text": "*La réalité, c'est juste un éternuement.*"
     },
     "name_input_scene": {
         "name": "Système",
@@ -34,14 +14,6 @@
     "gate_1": {
         "name": "{name}",
         "text": "*Je me tiens devant un portail inconnu. C'est un assez grand lycée. Des bâtiments propres et une vaste cour.*"
-    },
-    "gate_2": {
-        "name": "{name}",
-        "text": "*Les élèves passent le portail par petits groupes. Mon uniforme est le seul qui brille de neuf. Comme un panneau publicitaire — 'Je suis nouveau ici.'*"
-    },
-    "gate_3": {
-        "name": "{name}",
-        "text": "*Une fille se tient près du portail. Elle repousse ses longs cheveux noirs d'un geste léger — derrière ses lunettes, sa démarche est décontractée. Pas la moindre trace de précipitation.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -74,10 +46,6 @@
     "seoyeon_meet_8": {
         "name": "{name}",
         "text": "*Elle esquisse un sourire. Juste le coin des lèvres qui se relève. — Sans m'en rendre compte, je souriais aussi.*"
-    },
-    "seoyeon_meet_9": {
-        "name": "{name}",
-        "text": "*Seoyeon marche vers le portail en me faisant signe de la suivre.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
@@ -144,10 +112,6 @@
         "name": "{name}",
         "text": "*Seoyeon me guide dans le couloir. Les élèves qui passent la saluent. Elle répond à chacun d'un signe de tête.*"
     },
-    "hallway_2": {
-        "name": "{name}",
-        "text": "*Seoyeon leur fait un petit signe de la main. Naturel. On dirait que la hiérarchie sociale de ce lycée est déjà bien établie.*"
-    },
     "hallway_3": {
         "name": "Seoyeon",
         "text": "Le bâtiment des troisièmes années est ici, la bibliothèque est là-bas. Le kiosque est au sous-sol."
@@ -167,10 +131,6 @@
     "hallway_8": {
         "name": "{name}",
         "text": "*Et voilà que j'ai un rendez-vous pour le déjeuner. — Je n'ai même pas dit oui.*"
-    },
-    "hallway_9": {
-        "name": "{name}",
-        "text": "*On arrive devant la salle de classe.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
@@ -192,25 +152,9 @@
         "name": "{name}",
         "text": "*J'ouvre la porte de la classe. Les regards se déversent sur moi.*"
     },
-    "classroom_2": {
-        "name": "{name}",
-        "text": "*Je m'y attendais, mais le poids de 30 paires d'yeux reste lourd.*"
-    },
     "classroom_3": {
         "name": "Professeure principale",
         "text": "Bien, voici l'élève transféré qui rejoint notre classe aujourd'hui. Tu veux bien te présenter ?"
-    },
-    "classroom_4": {
-        "name": "{name}",
-        "text": "Je suis {name}. Enchanté."
-    },
-    "classroom_5": {
-        "name": "{name}",
-        "text": "*Court et net. Pas la peine d'en faire plus.*"
-    },
-    "classroom_6": {
-        "name": "{name}",
-        "text": "*Un sifflement depuis un coin de la classe.*"
     },
     "classroom_dain_1": {
         "name": "Dain",
@@ -239,10 +183,6 @@
     "classroom_yuna_2": {
         "name": "{name}",
         "text": "*Cheveux blanc argenté. Des yeux rouges, mi-clos et nonchalants. Des tatouages couvrent ses bras. — Elle ne regarde même pas dans ma direction. Comme si un élève transféré n'avait rien d'extraordinaire.*"
-    },
-    "classroom_yuna_3": {
-        "name": "{name}",
-        "text": "*Les élèves autour d'elle ne regardent pas dans la direction de Yuna. Délibérément. Comme si personne n'était assise là.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -304,17 +244,9 @@
         "name": "{name}",
         "text": "*Un mot plié atterrit sur mon bureau. — Je me retourne et la fille aux cheveux blanc argenté près de la fenêtre regarde à nouveau dehors. Malgré ses bras couverts de tatouages — l'écriture sur le mot est soignée.*"
     },
-    "classroom_yuna_note_2": {
-        "name": "{name}",
-        "text": "*Je déplie le mot.*"
-    },
     "classroom_yuna_note_3": {
         "name": "{name}",
         "text": "*'T'es tombé sur la place bruyante. — Yuna'*"
-    },
-    "classroom_yuna_note_4": {
-        "name": "{name}",
-        "text": "*Encre mauve. — La tension se relâche un peu.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
@@ -348,10 +280,6 @@
         "name": "{name}",
         "text": "*Sa voix est sèche. Pas dénuée d'émotion, juste — dosée au strict nécessaire. Étonnamment, ça ne me déplaît pas.*"
     },
-    "classroom_5_ins": {
-        "name": "{name}",
-        "text": "*La professeure hoche la tête. Elle allait ajouter quelque chose — s'arrête, et jette un nouveau coup d'œil à la feuille de présence. Sa main droite triture un stylo dans sa poche. Une habitude, sans doute.*"
-    },
     "classroom_5_ins2": {
         "name": "Professeure principale",
         "text": "...D'accord. {name}. Je m'en souviendrai. *Tout bas, presque pour elle-même* Je retiens toujours les noms du premier coup."
@@ -375,9 +303,5 @@
     "classroom_minsu_2_ins": {
         "name": "Minsu",
         "text": "*Désignant Dain du menton* Ton endurance."
-    },
-    "classroom_yuna_note_5_ins": {
-        "name": "{name}",
-        "text": "*Celle qui a envoyé le mot, c'est la fille qui regardait par la fenêtre tout à l'heure. Difficile de savoir si elle fait semblant de s'en ficher ou si c'est réel.*"
     }
 }

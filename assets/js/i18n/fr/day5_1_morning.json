@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*Cinquième jour. C'est dimanche, mais il y a un événement scolaire. L'uniforme est devenu confortable. — C'est à cause d'eux. Je le sais.*"
     },
-    "morning5_start_2": {
-        "name": "{name}",
-        "text": "*Le dernier événement. Tout ce qui s'est accumulé jusqu'ici mène à aujourd'hui.*"
-    },
     "morning5_mood_check": {
         "name": "Système",
         "text": ""
@@ -125,10 +121,6 @@
         "name": "Infirmière",
         "text": "Oh ? {name}. — C'est le dernier jour. Le dernier jour de l'événement. Cinq jours. — Ça passe vite."
     },
-    "hidden_nurse_d5_2": {
-        "name": "{name}",
-        "text": "*La porte s'ouvre. L'infirmière est là, debout. Deux gobelets en papier dans les mains.*"
-    },
     "hidden_nurse_d5_3": {
         "name": "{name}",
         "text": "Et si je venais même sans être blessé ?"
@@ -185,17 +177,9 @@
         "name": "{name}",
         "text": "*En passant devant le coin exposition du club littéraire dans le couloir — une nouvelle est affichée au tableau. Titre :*"
     },
-    "morning5_seo_note_1_ins2": {
-        "name": "{name}",
-        "text": "*« À la personne que j'ai rencontrée à la bibliothèque »*"
-    },
     "morning5_seo_note_1_ins3": {
         "name": "{name}",
         "text": "*C'est celle de Yuna. — Une histoire que seul le protagoniste pourrait reconnaître.*"
-    },
-    "morning5_seo_note_1_ins4": {
-        "name": "{name}",
-        "text": "*Je suis resté un peu plus longtemps devant le panneau. Ce n'est qu'une courte phrase, mais elle est aussi nette que si Yuna avait passé la tête elle-même.*"
     },
     "morning5_dain_1_ins": {
         "name": "{name}",
@@ -277,10 +261,6 @@
         "name": "{name}",
         "text": "*Une seule ligne. — Quelqu'un qui s'est fait recaler trois fois avant de pouvoir débuter attend l'impression en une ligne d'un élève. Si ce n'est pas une déclaration, qu'est-ce que c'est ?*"
     },
-    "hidden_homeroom_d5_6_ins16": {
-        "name": "{name}",
-        "text": "*Elle quitte la salle — et s'arrête à la porte.*"
-    },
     "hidden_homeroom_d5_6_ins17": {
         "name": "Professeure principale",
         "text": "{name}."
@@ -308,10 +288,6 @@
     "hidden_nurse_d5_2_ins": {
         "name": "{name}",
         "text": "*L'infirmière sort. Elle est juste devant moi.*"
-    },
-    "hidden_nurse_d5_2_ins2": {
-        "name": "{name}",
-        "text": "*— On s'est retrouvés nez à nez.*"
     },
     "hidden_nurse_d5_2_ins3": {
         "name": "Infirmière",
@@ -385,10 +361,6 @@
         "name": "{name}",
         "text": "*Sa voix a baissé d'un ton. Toute espièglerie a disparu. — C'est toujours comme ça que la sincérité de cette personne arrive.*"
     },
-    "hidden_nurse_d5_choice_b_ins3": {
-        "name": "{name}",
-        "text": "*L'infirmière riait — puis s'est arrêtée. A fermé la bouche.*"
-    },
     "hidden_nurse_d5_choice_b_ins4": {
         "name": "Infirmière",
         "text": "...Un numéro de téléphone. Pour des consultations médicales ?"
@@ -413,17 +385,9 @@
         "name": "{name}",
         "text": "*Sa réplique emblématique du Jour 1. — À l'époque, c'était une présentation. Maintenant, c'est sincère.*"
     },
-    "hidden_nurse_d5_6_ins2": {
-        "name": "{name}",
-        "text": "*L'infirmière sort un pansement et le colle sur le dos de ma main. Lentement. — Il y a de petits mots écrits sur le pansement.*"
-    },
     "hidden_nurse_d5_6_ins3": {
         "name": "{name}",
         "text": "*« Après ton diplôme, retrouvons-nous dans un café plutôt qu'à l'infirmerie — ♡ »*"
-    },
-    "hidden_nurse_d5_6_ins4": {
-        "name": "{name}",
-        "text": "*Ce cœur-là — ne semble pas être de l'intérêt médical.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -452,10 +416,6 @@
     "morning5_yuna_story_2": {
         "name": "{name}",
         "text": "*La dernière phrase. 'Quand il a ouvert les yeux, j'étais déjà partie. J'ai laissé juste un mot. — Je serai encore là la prochaine fois.'*"
-    },
-    "morning5_yuna_story_3": {
-        "name": "{name}",
-        "text": "*De l'encre lavande. La même encre que le mot du premier jour.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",

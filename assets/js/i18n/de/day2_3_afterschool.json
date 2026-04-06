@@ -352,10 +352,6 @@
         "name": "{name}",
         "text": "*Ein ruhiges Klavierstück ertönt. Der Sonnenuntergang färbt den Raum.*"
     },
-    "after2_yuna_9": {
-        "name": "{name}",
-        "text": "*Yuna liest ihr Buch, und ich höre die Musik. Keine Worte. — Überhaupt nicht unangenehm.*"
-    },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
         "text": "*Nach einer langen Weile* ...Jemand, der nach der Schule hierher kommt."
@@ -584,10 +580,6 @@
         "name": "{name}",
         "text": "*Der Ballwechsel geht hin und her. Dains Bewegungen sind — eindeutig nicht gewöhnlich. Schnell, präzise, ihr Körper erinnert sich an jede Bewegung.*"
     },
-    "after2_dain_9_ins5": {
-        "name": "{name}",
-        "text": "*Dieses Mädchen ist wirklich gut. — Nicht nur jemand, der Sport mag, sondern jemand, der sein Leben darauf gesetzt hat.*"
-    },
     "after2_dain_9_ins6": {
         "name": "{name}",
         "text": "*Endergebnis: 3 zu 2. Knapp gewonnen.*"
@@ -595,10 +587,6 @@
     "after2_dain_end_ins": {
         "name": "{name}",
         "text": "*Der Tteokbokki-Laden in der Nähe der Schule.*"
-    },
-    "after2_dain_end_ins2": {
-        "name": "{name}",
-        "text": "*Dain pustet auf den Tteokbokki und redet.*"
     },
     "after2_seo_4_ins": {
         "name": "{name}",
@@ -608,17 +596,9 @@
         "name": "{name}",
         "text": "*Das Wort 'Gefallen' scheint im Wortschatz dieser Person nicht zu existieren.*"
     },
-    "after2_seo_6_ins2": {
-        "name": "{name}",
-        "text": "*Ich fange an, Papiere zu sortieren. Veranstaltungsbudgets, Clubanträge. Es ist ziemlich viel.*"
-    },
     "after2_seo_8b4_ins": {
         "name": "{name}",
         "text": "*Sie hat tatsächlich 'Kompliment' gesagt. — Das scheint bei ihr selten zu sein.*"
-    },
-    "after2_seo_8b4_ins2": {
-        "name": "{name}",
-        "text": "*Beim Sortieren dreht Seoyeon ihren Nacken. Er scheint verspannt zu sein.*"
     },
     "after2_seo_sunset_joke_ins": {
         "name": "Seoyeon",
@@ -660,10 +640,6 @@
         "name": "{name}",
         "text": "*Yuna schaut auf. Nicht überrascht.*"
     },
-    "after2_yuna_8b_ins": {
-        "name": "{name}",
-        "text": "*Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrstöpsel.*"
-    },
     "after2_yuna_choice_pre3_ins": {
         "name": "{name}",
         "text": "*Yuna hat zwei Sätze hintereinander gesagt. — Für jemanden, der normalerweise in Einzeilern spricht, ist das bemerkenswert.*"
@@ -687,10 +663,6 @@
     "minsu_warn_7_ins2": {
         "name": "Minsu",
         "text": "Alter, ich bin seit einem Jahr in dieser Klasse. Seoyeon redet nie zuerst mit Jungs. Dain hat noch nie einem anderen Typen Brot gekauft. Yuna — Zettel? Die schreibt sie niemandem."
-    },
-    "minsu_warn_12_ins": {
-        "name": "{name}",
-        "text": "*Minsu richtet seinen Taschenriemen.*"
     },
     "minsu_warn_13_ins": {
         "name": "{name}",
@@ -719,9 +691,5 @@
     "after2_yuna_everyday_react_ins": {
         "name": "{name}",
         "text": "*Es klingt nicht einmal wie eine Erlaubnis, und trotzdem bleibt es seltsam lange hängen.*"
-    },
-    "after2_dain_9_ins7": {
-        "name": "{name}",
-        "text": "*Dain steht auf — sie reibt sich kurz das rechte Knie. Gestern in der Turnhalle war es genauso. Eine unbewusste Geste.*"
     }
 }

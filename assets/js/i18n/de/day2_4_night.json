@@ -160,37 +160,17 @@
         "name": "{name}",
         "text": "*Damals öffnete ich jeden Abend mein Handy. Schrieb etwas in die Notizen und löschte es wieder und wieder. — Jedes Mal hielt ich kurz vor dem Absenden inne.*"
     },
-    "night2_flashback_4": {
-        "name": "{name}",
-        "text": "*Und eines Tages im März, bei der Morgenrunde, sagte der Typ neben mir: 'Sojeong hat einen Freund.'*"
-    },
     "night2_flashback_5": {
         "name": "{name}",
         "text": "*Die Simulationen in der Notizen-App hörten bei Nummer 38 auf. Nummer 39 gibt es nicht. Es war nicht mehr nötig.*"
-    },
-    "night2_flashback_6": {
-        "name": "{name}",
-        "text": "*Der Schulwechsel war nicht wegen Sojeong. Es war wegen Papas Job. — Aber es hat mich nicht gestört, wegzugehen. So musste ich nicht mehr jeden Tag den Flur entlanggehen, in dem sie lächelte.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
         "text": "*'Diesmal sage ich es ohne Reue.' — Das hatte ich mir vorgenommen, als ich an diese Schule kam.*"
     },
-    "night2_flashback_8": {
-        "name": "{name}",
-        "text": "*Ich habe die Galerie geschlossen. Überlegte, ob ich das Foto löschen soll — habe es gelassen. Es zu löschen wäre, als würde ich auch das Bereuen löschen.*"
-    },
     "night2_end_2": {
         "name": "{name}",
         "text": "*Der zweite Tag ist vorbei. Am ersten Tag war es Neugier. Ich fragte mich, was für Menschen sie sind.*"
-    },
-    "night2_end_3": {
-        "name": "{name}",
-        "text": "*Zwischen 'an jemanden denken' und 'jemanden mögen' ist noch Abstand. — Aber dieser Abstand fühlt sich kürzer an als gestern.*"
-    },
-    "night2_end_4": {
-        "name": "{name}",
-        "text": "*Ich schließe die Augen. — Morgen sollte ich vielleicht etwas ehrlicher sein.*"
     },
     "night2_seo_freetalk": {
         "name": "Seoyeon",
@@ -258,10 +238,6 @@
         "name": "Yuna",
         "text": "...Ja. Gute Nacht."
     },
-    "night2_start_ins": {
-        "name": "{name}",
-        "text": "*Drei Leute. Alle gleichzeitig.*"
-    },
     "night2_reply_yuna_6_ins": {
         "name": "{name}",
         "text": "*Der dritte Stern? — Ich öffne das Fenster und schaue zum Nachthimmel hoch. Keine Ahnung, welcher der dritte ist.*"
@@ -269,14 +245,6 @@
     "night2_reply_yuna_6_ins2": {
         "name": "{name}",
         "text": "*Ein typisches Yuna-Rätsel. Eine Person, die dir nie die Antwort gibt. — Eine Person, die dich neugierig macht.*"
-    },
-    "night2_end_1_ins": {
-        "name": "{name}",
-        "text": "*Der zweite Tag ist vorbei.*"
-    },
-    "night2_end_2_ins": {
-        "name": "{name}",
-        "text": "*Heute ist — anders. Es ist keine Neugier mehr. Ich denke an sie. Was sie gerade machen, was sie morgen sagen werden.*"
     },
     "night2_end_2_ins2": {
         "name": "{name}",

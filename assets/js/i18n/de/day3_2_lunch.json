@@ -3,10 +3,6 @@
         "name": "{name}",
         "text": "*Mittagspause. Heute sind ungewöhnlicherweise — alle drei an einem Tisch versammelt.*"
     },
-    "lunch3_start_2": {
-        "name": "{name}",
-        "text": "*{name} öffnet seine Lunchbox. Seoyeon setzt sich selbstverständlich daneben, Dain lässt sich gegenüber fallen, und Yuna schleicht sich aus der Ecke heran, während sie ihr Brot isst.*"
-    },
     "lunch3_meal_1": {
         "name": "Dain",
         "text": "Oh! Lecker!!"
@@ -38,10 +34,6 @@
     "lunch3_meal_8": {
         "name": "{name}",
         "text": "*Yuna nimmt still ihre Stäbchen auf. Schneller als vorhin.*"
-    },
-    "lunch3_meal_9": {
-        "name": "{name}",
-        "text": "*Ausgeraubt. Von allen dreien gleichzeitig.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
@@ -133,10 +125,6 @@
         "name": "Dain",
         "text": "...Moment. Mir hast du auch vorgeschlagen, am Wochenende was zusammen zu machen?"
     },
-    "lunch3_expose_8": {
-        "name": "{name}",
-        "text": "*Yuna legt das Brot auf den Tisch.*"
-    },
     "lunch3_expose_9": {
         "name": "Yuna",
         "text": "Ich wusste es."
@@ -152,10 +140,6 @@
     "lunch3_expose_12": {
         "name": "{name}",
         "text": "*Drei Paar Stäbchen erstarren. Der Lärm der Mensa klingt plötzlich weit weg.*"
-    },
-    "lunch3_expose_13": {
-        "name": "{name}",
-        "text": "*Am Nebentisch beobachtet Minsu mich. Er schüttelt den Kopf.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -280,10 +264,6 @@
         "name": "{name}",
         "text": "*Dain gewinnt die Mittagswette und breitet aufgeregt die Arme aus. Sie umarmt mich. Eine Sekunde.*"
     },
-    "lunch3_dain_skin_2": {
-        "name": "{name}",
-        "text": "*Dain springt zurück und weicht einen Schritt zurück. Sie nimmt nur so ihre Wasserflasche in die Hand.*"
-    },
     "lunch3_dain_skin_3": {
         "name": "Dain",
         "text": "Das zählt nicht!!"
@@ -291,10 +271,6 @@
     "lunch3_dain_witness_1": {
         "name": "{name}",
         "text": "*Yuna geht den Flur entlang und blickt in die Turnhalle. Dain lacht. Yuna beschleunigt ihre Schritte.*"
-    },
-    "lunch3_dain_witness_2": {
-        "name": "{name}",
-        "text": "*In der nächsten Pause ist Yunas Platz leer.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -333,10 +309,6 @@
         "name": "Yuna",
         "text": "*Schon kauend* ...Ist gut."
     },
-    "lunch3_meal_10_ins": {
-        "name": "{name}",
-        "text": "*Lasst uns alle zusammen essen, sagte ich. — Aber die Stimmung ist seltsam.*"
-    },
     "lunch3_meal_10_ins2": {
         "name": "{name}",
         "text": "*Niemand verlässt seinen Platz. Sie lächeln zwar, aber keiner von den dreien nimmt die Stäbchen einfach in die Hand. Das letzte Beilagengericht sticht unnötigerweise ins Auge.*"
@@ -353,10 +325,6 @@
         "name": "{name}",
         "text": "*Yuna nickt nur. Sie schreibt auf einen Zettel, faltet ihn und steckt ihn in die Tasche. Gibt ihn nicht her. — Keine Ahnung, was draufstand.*"
     },
-    "lunch3_expose_3_ins": {
-        "name": "{name}",
-        "text": "*Die Hände der anderen beiden erstarren.*"
-    },
     "lunch3_expose_7_ins": {
         "name": "{name}",
         "text": "*Die Letzte legt ihres still ab.*"
@@ -368,9 +336,5 @@
     "lunch3_expose_excuse_2_ins": {
         "name": "{name}",
         "text": "*Dain steht auf.*"
-    },
-    "lunch3_expose_run_2_ins": {
-        "name": "{name}",
-        "text": "*Die Mittagspause endete, der Nachmittagsunterricht ging weiter. Das Kratzen der Kreide an der Tafel klingt seltsam fern. Ich spüre jemandes Blick auf meinem Rücken. — Es gibt noch eine unerzählte Geschichte.*"
     }
 }

@@ -102,17 +102,9 @@
         "name": "{name}",
         "text": "*Je suis retourné dans le couloir.*"
     },
-    "after3_reject_for_dain_4": {
-        "name": "{name}",
-        "text": "*Je reviens dans le couloir. Le sourire travaillé de Seoyeon, la trace d'eau laissée par Yuna. Ceux qui ne disent rien me restent plus longtemps.*"
-    },
     "after3_seo_1": {
         "name": "{name}",
         "text": "*J’ai ouvert la porte de la salle du conseil. — Seoyeon est affalée sur le bureau.*"
-    },
-    "after3_seo_2": {
-        "name": "{name}",
-        "text": "*C’est la première fois que je la vois comme ça. La présidente parfaite — effondrée sans défense sur son bureau.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -178,17 +170,9 @@
         "name": "{name}",
         "text": "*J’entre, mais Yuna n’est pas là. À la place — un carnet est ouvert sur le canapé. Couvert d’écriture manuscrite.*"
     },
-    "after3_yuna_3": {
-        "name": "{name}",
-        "text": "*C’est un roman. Un roman écrit par Yuna. — Est-ce que je peux le lire ?*"
-    },
     "after3_yuna_4": {
         "name": "{name}",
         "text": "*Première page.*"
-    },
-    "after3_yuna_5": {
-        "name": "{name}",
-        "text": "*‘Un jour, un élève transféré est arrivé. Il est venu à la bibliothèque et s’est assis à côté de moi sans un mot. — Ça ne me dérangeait pas.’*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -257,10 +241,6 @@
     "after3_dain_1": {
         "name": "{name}",
         "text": "*Le gymnase. Dain s’étire seule. Elle essaie de trottiner et —*"
-    },
-    "after3_dain_2": {
-        "name": "{name}",
-        "text": "*— se tord légèrement la jambe droite. Elle grimace.*"
     },
     "after3_dain_3": {
         "name": "{name}",
@@ -545,10 +525,6 @@
         "name": "{name}",
         "text": "*Seoyeon regarde par la fenêtre. Je ne vois pas son expression. — Elle la cache volontairement.*"
     },
-    "after3_seo_choice1_react_ins2": {
-        "name": "{name}",
-        "text": "*Mais — son petit doigt bouge légèrement sur le bureau. Comme pour attraper quelque chose. Inconsciemment.*"
-    },
     "after3_seo_choice1_react_ins3": {
         "name": "{name}",
         "text": "*Seoyeon se redresse. Le visage de la présidente du conseil revient. — Mais ce n'est pas parfait. L'angle de son sourire est décalé d'un demi-degré.*"
@@ -645,10 +621,6 @@
         "name": "{name}",
         "text": "*Seoyeon s'arrête un instant. Ses yeux vacillent.*"
     },
-    "after3_confront_lie_2_ins": {
-        "name": "{name}",
-        "text": "*Seoyeon se retourne. — Elle ne s'arrête pas.*"
-    },
     "after3_confront_lie_2_ins2": {
         "name": "{name}",
         "text": "*Son dos est droit. Parfaitement. — Mais ses poings sont serrés. Les jointures sont blanches.*"
@@ -685,10 +657,6 @@
         "name": "{name}",
         "text": "*Haeun tourne les talons et s'en va.*"
     },
-    "haeun_warn_7_ins4": {
-        "name": "{name}",
-        "text": "*C'est compliqué chez Seoyeon. Ses parents. — Est-ce pour ça que Seoyeon 'devait être parfaite' ?*"
-    },
     "minsu_d3_8_ins": {
         "name": "{name}",
         "text": "...Quoi ?"
@@ -720,10 +688,6 @@
     "minsu_d3_7_ins2": {
         "name": "{name}",
         "text": "*Si Sojeong avait pu me rejeter à l'époque — peut-être que ça ne me hanterait plus.*"
-    },
-    "minsu_d3_7_ins3": {
-        "name": "{name}",
-        "text": "*Si refuser c'est de l'amour, alors ce que je dois faire maintenant, ce n'est pas dire 'oui' à tout le monde — c'est dire 'oui' à une seule personne.*"
     },
     "minsu_d3_10_ins": {
         "name": "{name}",
