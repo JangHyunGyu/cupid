@@ -1,11 +1,11 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Abril. Los pétalos de cerezo revolotean en el aire.*"
+        "text": "*Abril. Los pétalos de cerezo revolotean en el aire. El uniforme aún se siente rígido. El olor tenue a hierba fresca. A partir de hoy, soy estudiante de este instituto. Transferido. Primera vez.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*A partir de hoy, soy estudiante de este instituto. Transferido. Primera vez.*"
+        "text": "*El móvil vibra en mi bolsillo. El grupo del instituto anterior. Veo el nombre en la pantalla — y lo guardo otra vez. Aún no.*"
     },
     "name_input_scene": {
         "name": "Sistema",
@@ -13,11 +13,11 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Estoy frente a una puerta desconocida. Es un instituto bastante grande. Edificios limpios y un patio amplio.*"
+        "text": "*Estoy frente a un portón desconocido. Un instituto bastante grande. Los estudiantes pasan en pequeños grupos. Soy el único cuyo uniforme aún está blanco y tieso. Hay una chica junto al portón. Echa hacia atrás su largo pelo negro con un gesto leve — detrás de las gafas, camina con calma. Sin el menor rastro de prisa.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
-        "text": "¿Estudiante nuevo? ¿Eres {name}, verdad?"
+        "text": "¿El estudiante nuevo? Eres {name}, ¿verdad?"
     },
     "seoyeon_meet_2": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Sígueme. Te enseñaré el instituto."
+        "text": "Sígueme. Te lo despacho en quince minutos."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon me guía por el pasillo. Los estudiantes que pasan la saludan. Ella responde a cada uno con un gesto.*"
+        "text": "*Seoyeon me guía por el pasillo. Los estudiantes que pasan la saludan. Ella responde a cada uno con la mirada. Levanta la mano y los saluda con naturalidad. Parece que los populares de este instituto ya están decididos.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -150,7 +150,7 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*Abro la puerta del aula. Las miradas caen sobre mí.*"
+        "text": "*Abro la puerta del aula. Las miradas caen sobre mí. Me lo esperaba, pero treinta pares de ojos pesan más de lo que pensaba.*"
     },
     "classroom_3": {
         "name": "Profesora",
@@ -158,7 +158,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "¡Oh! ¡Un chico nuevo! ¡Por fin nos mandan uno!"
+        "text": "¡Oh! ¡Un chico transferido! ¡Por fin un fichaje nuevo!"
     },
     "classroom_dain_2": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "classroom_dain_5": {
         "name": "{name}",
-        "text": "*No tiene control de volumen. Pero — tiene una cara que es imposible odiar.*"
+        "text": "*Es del tipo que no controla el volumen.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Pelo blanco plateado. Ojos rojos, medio cerrados y soñolientos. Tatuajes cubren sus brazos. — Ni siquiera mira en esta dirección. Como si un estudiante nuevo no fuera nada del otro mundo.*"
+        "text": "*Pelo blanco plateado. Ojos rojos, medio cerrados y soñolientos. Tatuajes cubren sus brazos. — Ni siquiera mira en esta dirección. Como si un estudiante transferido no fuera nada del otro mundo. Los estudiantes a su alrededor tampoco miran hacia ella. Deliberadamente. Como si en ese asiento no hubiera nadie.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "¡Es que no tengo a nadie para ir al gimnasio después de clase! ¡Necesito a alguien que me lance pelotas!"
+        "text": "¡Sin más! ¡Necesito a alguien para entrenar recepciones después de clase! ¡No tengo a nadie que me saque saques!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "classroom_dain_talk_7": {
         "name": "Dain",
-        "text": "¡Jajaja, seguro eres mejor que una máquina! ¡Seguramente!"
+        "text": "¡Jajaja, tu tiempo de reacción seguro es mejor que el de una máquina! ¡Seguramente!"
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
@@ -242,15 +242,15 @@
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Una nota doblada aterriza en mi mesa. — Miro atrás y la chica de pelo blanco plateado junto a la ventana está mirando afuera de nuevo. A pesar de sus brazos cubiertos de tatuajes — la letra de la nota es pulcra.*"
+        "text": "*Una nota doblada aterriza en mi mesa. — Miro atrás y la chica de pelo blanco plateado junto a la ventana está mirando afuera de nuevo. A pesar de sus brazos cubiertos de tatuajes — la letra de la nota es pulcra. La desdoblo.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'Te tocó el asiento ruidoso. — Yuna'*"
+        "text": "*'Te tocó el asiento ruidoso. — Yuna' Tinta violeta pálido. — Se me afloja un poco la tensión.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Miro hacia Yuna. Sigue mirando por la ventana. Pero me pareció que la punta de su oreja se movió ligeramente.*"
+        "text": "*Miro hacia Yuna. Sigue mirando por la ventana. Pero me pareció que la punta de su oreja se movió ligeramente. La nota la mandó la chica que estaba mirando afuera hace un momento. Fingiendo desinterés, o desinteresada de verdad.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Su espalda está recta. Perfectamente recta. — Como si lo hubiera practicado. Me dio un poco de curiosidad saber qué hay detrás de esa calma.*"
+        "text": "*Su espalda está perfectamente recta. — Lo que hay detrás de esa calma, eso quiero saberlo.*"
     },
     "classroom_2_b": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "*Su voz es seca. No es que no tenga emoción, solo contiene la justa. — Sorprendentemente, no me desagrada.*"
+        "text": "Soy {name}. Encantado. *Corto y limpio. La profesora asiente.*"
     },
     "classroom_5_b": {
         "name": "Profesora",
@@ -286,7 +286,7 @@
     },
     "classroom_5_c": {
         "name": "{name}",
-        "text": "*Nadie más escuchó eso. Solo yo. — ¿Es atenta, o simplemente una costumbre?*"
+        "text": "*Nadie más escuchó eso. Solo yo. Desde una esquina del aula — un silbido.*"
     },
     "classroom_dain_5_b": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "classroom_dain_5_d": {
         "name": "{name}",
-        "text": "*Lo dice con sequedad, pero la comisura de sus labios se eleva ligeramente. Su expresión por defecto es neutra, pero de vez en cuando tiene un fallo.*"
+        "text": "*Lo dice con sequedad, pero la comisura de sus labios se eleva ligeramente.*"
     },
     "classroom_minsu_2_b": {
         "name": "Minsu",

@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Die Glocke läutet.*"
+        "text": "*Mittagspause. Der Flur ist voller Schüler. Aus drei Richtungen kommen gleichzeitig Signale.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Drei Wege. So eine Wahl am ersten Tag treffen müssen.*"
+        "text": "*Drei Wege. So eine Wahl am ersten Tag. An meiner alten Schule hab ich nicht gewählt. Hab's aufgeschoben und das Timing verpasst. — Diesmal nicht.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Sie hatte von Anfang an vor, zusammen zu essen.*"
+        "text": "*Sie hatte von Anfang an vor, zusammen zu essen. Ich öffne die Lunchbox und die Beilagen wirken liebevoll zubereitet. Eierolle, Würstchen, Mini-Reisbällchen.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Sie weicht Fragen geschickt aus. — Warum beschäftigt mich jemand mit so dicken Mauern so sehr?*"
+        "text": "*Sie weicht Fragen geschickt aus. Wir essen eine Weile schweigend. Die Brise tut gut. Der Blick von hier oben auf die Schule ist — weiter als gedacht.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -158,11 +158,11 @@
     },
     "lunch_seo_after_5": {
         "name": "{name}",
-        "text": "*Typisch Seoyeon. Keine Einladung, eine Genehmigung. — Aber warum lächelt sie?*"
+        "text": "*Keine Einladung, eine Genehmigung. Während Seoyeon die Lunchbox einpackt — streicht sie sich mit dem kleinen Finger eine Haarsträhne hinters Ohr.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*Ihr kleiner Finger. — Nichts Besonderes, aber mein Blick bleibt hängen.*"
+        "text": "*Nichts Besonderes, aber mein Blick bleibt hängen.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -234,7 +234,7 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "Nein, aber um mit mir mitzuhalten, brauchst du schon etwas Ausdauer! Haha"
+        "text": "Nein, aber wer mit mir mithalten will, muss den Mindest-Ausdauer-Test bestehen! lol"
     },
     "lunch_dain_19": {
         "name": "{name}",
@@ -290,11 +290,11 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "Ich bin die Erste, mit der du an deiner neuen Schule gegessen hast! Merk dir das!"
+        "text": "Erster Essenspartner an deiner neuen Schule bin ich? Das ist Rekord. REKORD!"
     },
     "lunch_dain_after_5": {
         "name": "{name}",
-        "text": "*Sie grinst und boxt mich leicht auf die Schulter.*"
+        "text": "*Sie grinst und boxt mich leicht auf die Schulter. Sie hat es so ernst gesagt, dass ich einfach genickt habe.*"
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*Ist das eine Erlaubnis? Scheint eine Erlaubnis zu sein. — Bedingte Erlaubnis.*"
+        "text": "*Eine Erlaubnis? Wirkt wie eine Erlaubnis. — Bedingte Erlaubnis. Stille legt sich über uns. Yuna liest ihr Buch. Ich hab nichts zu tun und schlendere die Regale entlang.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -354,7 +354,7 @@
     },
     "lunch_yuna_18": {
         "name": "{name}",
-        "text": "*Ihre Sätze sind kurz. Aber nicht kalt — eher sparsam. Maximale Bedeutung in minimalen Worten.*"
+        "text": "*Ihre Sätze sind kurz. Nicht kalt — eher sparsam. Ich lese eine Weile. Ist ziemlich gut.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna steht als Erste auf und geht. Sie dreht sich nicht um.*"
+        "text": "*Yuna steht als Erste auf und geht. Sie dreht sich nicht um. 'War schön.' — Ohne Grund hebt sich meine Stimmung.*"
     },
     "lunch_end": {
         "name": "{name}",

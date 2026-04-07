@@ -1,19 +1,19 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Ich beschließe, mich auf dem Campus umzusehen. Ich kenne mich noch nicht aus.*"
+        "text": "*Nach der Schule. Ich beschließe, mich auf dem Campus umzusehen. Ich kenne mich noch nicht aus. Ich gehe den Flur entlang. Mein Handy vibriert. — Der Gruppenchat meiner alten Schule.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*‘Sojeong hat Kirschblütenfotos mit ihrem Freund gepostet lol’*"
+        "text": "*'Hey, Sojeong macht's an ihrer neuen Schule gut~' 'Zum Glück lol' — Ich stecke das Handy zurück in die Tasche.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Ach.*"
+        "text": "*...Zum Glück, sagen sie. Wirklich? Wenn ich damals nur ein Wort gesagt hätte — Sojeong hätte die Schule nicht verlassen müssen.*"
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*An dieser Schule — werde ich sagen, was ich sagen will. Diesmal.*"
+        "text": "*An dieser Schule — wenn ich was sehe, sag ich's. Nicht mehr so tun, als wüsste ich nichts, obwohl ich's weiß. Diesmal.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*Sie winkt und rennt davon. Wie ein Wirbelsturm. Wir haben uns nicht mal richtig vorgestellt und sie duzt mich schon.*"
+        "text": "*Sie winkt und rennt davon. Ein Wirbelsturm von Mädchen. Der Name, den die Lehrerin vorhin aufgerufen hat — Dain. Und schon duzt sie mich.*"
     },
     "after_miss_yuna_1": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*— Ein Lesezeichen fällt.* „Hey, das...“"
+        "text": "*Yuna betrachtet das Lesezeichen lange. Als prüfe sie, ob es zerknittert ist.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -106,7 +106,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Ich klopfe an die Tür des Lehrerzimmers. Als sie aufgeht, trete ich ein. Zuerst trifft mein Blick die Klassenlehrerin.*"
+        "text": "*Ich will gerade nach Hause gehen, da bleiben meine Füße kurz stehen. Mir fällt das Gesicht der Klassenlehrerin ein, die bis zuletzt die Stimmung der Klasse beobachtet hat. Ich stelle mich vor das Lehrerzimmer, klopfe und öffne die Tür.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Klassenlehrerin",
@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Klassenlehrerin",
-        "text": "Trotzdem bleibt der erste Tag der erste Tag. Tu nicht zu sehr so, als wärst du völlig okay. Du solltest langsam gehen."
+        "text": "Wer am ersten Tag perfekt ist, brennt später aus. Stell dich ruhig ein bisschen ungeschickt an. — Geh jetzt."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Pädagogisches Interesse. Dieser Mensch versteckt ihre Gefühle immer hinter ihrer Berufsbezeichnung.*",
+        "text": "*Pädagogisches Interesse.*",
         "choices": [
             "Wenn Sie sich Sorgen machen, können Sie es auch einfach sagen",
             "Ich freue mich auf den Saft, Frau Lehrerin"
@@ -390,7 +390,7 @@
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*Sie hat es ehrlich zugegeben. — Die Fassade dieser Person bröckelt überraschend schnell.*"
+        "text": "*Sie hat es ehrlich zugegeben.*"
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*Ihr Ton ist locker. Eher wie in einem Café als in einer Krankenstation.*"
+        "text": "*Ihr Ton ist locker.*"
     },
     "after_nurse_enter_4_b": {
         "name": "{name}",
@@ -414,11 +414,11 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "Deine Uniform ist steif wie ein Brett. Riecht auch nach Stärke. *Schnüffel* Oh, da ist auch Kirschblütenduft dabei. Ein romantischer Transferschüler."
+        "text": "Deine Uniform ist ja ganz steif. Riecht auch nach Gras. *Schnüffel* Oh, da mischt sich Kirschblütenduft rein. Ein romantischer Transferschüler."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Wir haben kaum ein paar Worte gewechselt, und schon bin ich in ihrem Tempo.*"
+        "text": "*Wir haben kaum ein paar Worte gewechselt, und schon bin ich in ihrem Tempo. Die Krankenschwester steht auf und kommt näher. Geschmeidige Bewegungen. — Als ihre Hand mich berührt, werde ich grundlos angespannt.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Sie sagt es locker, aber sie versucht ziemlich offensichtlich, mir die Anspannung zu nehmen.*"
+        "text": "*Sie sagt es im Spaß, aber etwas Anspannung fällt ab. Ich trinke das Wasser und sehe mich im Krankenzimmer um. In einer Ecke steht ein kleiner Blumentopf.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -466,7 +466,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Nur leichte Verletzungen'. — In diesen Worten liegt Erleichterung. Es heißt auch, dass sie viele gesehen hat, die nicht leicht waren.*"
+        "text": "*'Nur leichte Verletzungen.' — In diesen Worten liegt Erleichterung. Zehn Minuten sind vorbei. Ich stehe auf.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -490,7 +490,7 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Schulkrankenschwester",
-        "text": "...Du bist ein aufmerksamer Patient. Dabei sollte ich diejenige sein, die sich Sorgen macht."
+        "text": "Das, was du vorhin gesagt hast — danke, dass du dir Sorgen um mich gemacht hast. Sowas hab ich von einem Patienten noch nie gehört."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
@@ -498,11 +498,11 @@
     },
     "after_nurse_enter_11_h": {
         "name": "Schulkrankenschwester",
-        "text": "Nicht wahr? Es ist schön hier. — Ruhig, und wenn man vom Desinfektionsgeruch absieht, perfekt."
+        "text": "Du hast vorhin gesagt, es sei gemütlich, oder? — Das hat mich tatsächlich gefreut."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*Als sie hört, dass es gemütlich ist, leuchten ihre Augen auf. — Dieser Raum muss ihr Zufluchtsort sein.*"
+        "text": "*Beim Wort 'gemütlich' lachen ihre Augen.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Sie lacht leise und winkt mich hinaus. — Sie ist verspielt, aber eindeutig geübt darin, Menschen zu beruhigen.*"
+        "text": "*Sie winkt mir mit einem leisen Lachen nach. Ich sehe das Pflaster auf ihrem Handrücken. — Ein seltsames Krankenzimmer. Die nicht schlechte Sorte von seltsam.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

@@ -1,11 +1,11 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*April. Cherry blossoms scatter in the breeze.*"
+        "text": "*April. Cherry blossoms drift through the air. My uniform still feels stiff. The faint smell of fresh grass. Starting today, I'm a student at this school. A transfer. First time.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*Starting today, I'm a student at this school. A transfer. First time.*"
+        "text": "*My phone buzzes in my pocket. The group chat from my old school. I see the name on the screen — and slip it back into my pocket. Not yet.*"
     },
     "name_input_scene": {
         "name": "System",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*I'm standing in front of an unfamiliar school gate. It's a pretty big school. Clean buildings, spacious grounds.*"
+        "text": "*I'm standing in front of an unfamiliar school gate. A pretty big school. Students drift past in twos and threes. I'm the only one whose uniform is still bone-white and stiff. There's a girl standing at the gate. Long black hair flicked lightly back — behind her glasses, her stride is unhurried. Not a trace of rushing.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -33,7 +33,7 @@
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Follow me. I'll show you around."
+        "text": "Follow me. I'll have you done in fifteen minutes."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon guides me through the hallway. Passing students greet her. She acknowledges each one with a nod.*"
+        "text": "*Seoyeon walks the hallway, showing me around. Students passing by greet her. She returns each one with a glance. She raises a hand and waves them off, easy and natural. Looks like the cool kids of this school are already decided.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -150,7 +150,7 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*I open the classroom door. All eyes land on me.*"
+        "text": "*I open the classroom door. The stares come pouring in. I expected it, but thirty pairs of eyes still weigh more than I thought.*"
     },
     "classroom_3": {
         "name": "Homeroom Teacher",
@@ -158,7 +158,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh! A boy transfer student! Finally."
+        "text": "Oh! A boy transfer student! Finally a new player on the roster!"
     },
     "classroom_dain_2": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "classroom_dain_5": {
         "name": "{name}",
-        "text": "*She has no volume control. But her face is so genuinely happy that you can't dislike her.*"
+        "text": "*She's the type with no volume control.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Silver-white hair. Red eyes, half-closed and drowsy. Tattoos cover her arms. — She doesn't even glance this way. As if a transfer student is nothing special.*"
+        "text": "*Silver-white hair. Red eyes, half-closed and drowsy. Tattoos cover her arms. — She doesn't even glance this way. As if a transfer student is nothing special. The students around her don't look in her direction either. Deliberately. Like she's not even sitting there.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "Just asking! I need someone to hit the gym with after school! Someone to toss balls for me!"
+        "text": "Just! I need someone to practice receives with after school! Nobody to put serves over the net for me!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "classroom_dain_talk_7": {
         "name": "Dain",
-        "text": "Hahaha, you're probably better than a ball machine! Probably!"
+        "text": "Hahaha, your reaction time's gotta be better than a ball machine's! Probably!"
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
@@ -242,15 +242,15 @@
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*A folded note lands on my desk. — I look back and the girl with the silver-white hair by the window is staring outside again. Despite her tattoo-covered arms — the handwriting on the note is neat.*"
+        "text": "*A folded note flies onto my desk. — I look back and the silver-haired girl by the window is staring outside again. Her arms are covered in tattoos, but the handwriting on the note is neat. I unfold it.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'Got stuck with the noisy seat. — Yuna'*"
+        "text": "*'Got stuck with the noisy seat. — Yuna' Pale violet ink. — A bit of the tension lifts.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*I glance toward Yuna. She's still looking out the window. But I think the tip of her ear just moved.*"
+        "text": "*I glance toward Yuna. She's still looking out the window. But I think the tip of her ear just moved. The note came from the girl who'd been staring outside the whole time. Pretending not to care, or actually not caring.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Her back is straight. Perfectly straight. — As if practiced. I got a little curious about what's behind that composure.*"
+        "text": "*Her back is perfectly straight. — Whatever's behind that ease, I want to know.*"
     },
     "classroom_2_b": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "*Her voice is dry. Not emotionless, just — carrying exactly as much feeling as needed. Surprisingly, I don't mind it.*"
+        "text": "{name}. Nice to meet you all. *Short and clean. The teacher nods.*"
     },
     "classroom_5_b": {
         "name": "Homeroom Teacher",
@@ -286,7 +286,7 @@
     },
     "classroom_5_c": {
         "name": "{name}",
-        "text": "*Nobody else heard that. Only me. — Is she attentive, or is it just a habit?*"
+        "text": "*Nobody else heard that. Only me. From one corner of the classroom — a whistle.*"
     },
     "classroom_dain_5_b": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "classroom_dain_5_d": {
         "name": "{name}",
-        "text": "*She says it dryly, but the corner of her mouth is slightly upturned. Her default is expressionless, but every now and then there's a glitch.*"
+        "text": "*She says it dryly, but the corner of her mouth is slightly upturned.*"
     },
     "classroom_minsu_2_b": {
         "name": "Minsu",
