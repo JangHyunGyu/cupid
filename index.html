@@ -1113,10 +1113,14 @@
                 await window.initGameFromSave(saveData);
             }
 
-            // 4. 홈 버튼 표시
+            // 4. 홈 버튼 + 갤러리 버튼 표시
             const homeBtn = document.getElementById('home-btn');
             if (homeBtn) {
                 homeBtn.style.display = 'flex';
+            }
+            const galleryBtnContinue = document.getElementById('gallery-btn');
+            if (galleryBtnContinue) {
+                galleryBtnContinue.style.display = 'flex';
             }
         }
 
