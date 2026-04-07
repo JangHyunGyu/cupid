@@ -161,7 +161,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*L'infirmière a posté 'cherche volontaires' sur la messagerie. Mes pieds se dirigent déjà vers l'école.*"
+        "text": "*L'infirmière a posté 'cherche quelqu'un pour aider' sur la messagerie de l'école. Mes pieds vont déjà vers le lycée. L'infirmerie. Sur le bureau, des papiers et du matériel de visite médicale empilés. L'infirmière range tranquillement.*"
     },
     "hidden_nurse_d4_2": {
         "name": "Infirmière",
@@ -173,7 +173,7 @@
     },
     "hidden_nurse_d4_4": {
         "name": "Infirmière",
-        "text": "...À l'hôpital je faisais tout ça seule. Les gardes de nuit — parfois une infirmière fait le travail de trois."
+        "text": "...À l'hôpital, je faisais tout ça toute seule. Pendant les gardes de nuit — il y avait des jours où je faisais le travail de trois infirmières."
     },
     "hidden_nurse_d4_5": {
         "name": "Infirmière",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Dimanche matin. Je me dirige vers l'infirmerie par habitude. — Depuis quand est-ce devenu une habitude ?*"
+        "text": "*Matin de dimanche. Par habitude, je vais à l'infirmerie. — Depuis quand c'est une habitude ? J'ouvre la porte. L'infirmière est sur sa chaise. Blouse blanche. — Mais elle n'est pas comme d'habitude. Pas de malice.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Infirmière",
@@ -315,7 +315,7 @@
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*Je me suis regardé dans le miroir trois fois. J'ai changé de vêtements deux fois. Qu'est-ce que je fais.*"
+        "text": "*Je prends une grande inspiration et je revérifie les messages des rendez-vous.*"
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
@@ -331,7 +331,7 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Matin de week-end. Quelques notifications. — Je pensais que ce serait une journée ordinaire.*"
+        "text": "*Matin de week-end. Quelques notifications attendent. — Je pensais que ce serait une journée ordinaire. Je pose le téléphone et je m'étire. De toute façon, aujourd'hui commence aussi.*"
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*Elle se retourne. Ses épaules s'affaissent légèrement.*"
+        "text": "*Elle se détourne. — Ses épaules s'affaissent un peu. J'ai refusé, alors pourquoi ça me fait ça. Je suis rentré chez moi.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Infirmière",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Elle connaît le poids d'être appelée par son prénom. Parce qu'à l'hôpital, on l'appelait par des numéros.*"
+        "text": "*Elle connaît le poids d'être appelée par son nom. — Parce qu'à l'hôpital on l'appelait par des numéros. Le tri des papiers est fini. L'infirmière s'étire.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*Elle a ajouté vraiment. Quand cette personne ajoute vraiment, ça veut dire que tout ce qui précède était sincère.*"
+        "text": "*Elle a ajouté 'vraiment'. — Quand cette personne ajoute 'vraiment', ça veut dire que tout ce qu'elle a dit avant était sincère. Elle a renvoyé un 'tu dis n'importe quoi', mais elle n'a pas réussi à croiser mon regard un instant. Cette fois encore, elle cache mal.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Today, unusually — all three are gathered in one place.*"
+        "text": "*Lunchtime. Today, unusually — all three are gathered in one place. {name} opens the lunchbox. Seoyeon naturally sits beside, Dain plops down across, and Yuna slips in from the corner munching her own bread.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -33,11 +33,11 @@
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna quietly picks up her chopsticks. Faster than before.*"
+        "text": "*Yuna quietly picks up her chopsticks. Faster than before. I've been raided. By all three at once.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*One side dish remains. The last rolled omelette.*"
+        "text": "*One side dish remains. The last rolled omelette. I said let's all share. — The air got heavier.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -103,11 +103,11 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "Oh right! {name}, we're going to the arcade this weekend!! What should we eat before?!"
+        "text": "Oh right! {name}, you said you'd go to the arcade with me this weekend!! What should we eat first?!"
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*— I froze.*"
+        "text": "*— I froze. The other two stop their hands.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "lunch3_expose_12": {
         "name": "{name}",
-        "text": "*Three pairs of chopsticks freeze mid-air. The cafeteria noise suddenly sounds far away.*"
+        "text": "*Three pairs of chopsticks freeze. The cafeteria noise suddenly sounds far away. At the next table Minsu is looking over at us. He shakes his head.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -208,7 +208,7 @@
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Behind me, the silence of three people pierces my back.*"
+        "text": "*Behind me, the silence of three people pierces my back. Lunchtime ended, and afternoon classes went on. The sound of chalk on the board sounded oddly distant. I felt someone's eyes on my back. — There's still an unfinished story left.*"
     },
     "lunch3_end": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna passes by the hallway and glances into the gym. Dain is laughing. Yuna quickens her pace.*"
+        "text": "*Yuna passes by the hallway and glances into the gym. Dain is laughing. Yuna quickens her pace. Next break, Yuna's seat is empty.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {

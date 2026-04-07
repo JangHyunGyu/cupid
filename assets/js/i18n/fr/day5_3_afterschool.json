@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*Devant le portail. Au loin, trois silhouettes.*"
+        "text": "*Devant le portail. J'aperçois trois silhouettes au loin. Seoyeon qui marche avec Haeun, Dain qui court en lançant un ballon, Yuna qui lit en marchant lentement. Aucune ne regarde dans ma direction. — Tant mieux, en fait. Là, je n'ai le courage de croiser le regard de personne.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Bon, je le savais. Tu étais une variable imprévue dans mes plans, depuis le début."
+        "text": "Bon, je m'y attendais. T'as jamais bougé selon mes calculs depuis le début."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon se retourne et fait un signe de la main. — Le même geste que le Jour 1. Elle ne se retourne pas.*"
+        "text": "*Seoyeon se retourne et fait un signe de la main. — Le même geste qu'au Jour 1. Elle ne regarde pas en arrière. Le dos droit. Parfaitement. — Mais cette fois, elle ne tremble pas.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*Le soleil se couche. Les cinq jours touchent à leur fin.*"
+        "text": "*Le soleil se couche. Cinq jours touchent à leur fin. Le coucher de soleil teint la cour. Cinq jours, c'était si court que ça ? — Le moment du dernier choix approche.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -186,7 +186,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "{name}",
-        "text": "*Marchant côte à côte — on quitte l'école.*"
+        "text": "*Le bout des doigts que Seoyeon tend reste suspendu devant moi. Si je ne le dis pas maintenant, je vais encore le rater.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",

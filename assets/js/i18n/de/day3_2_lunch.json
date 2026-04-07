@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Heute sind ungewöhnlicherweise — alle drei an einem Tisch versammelt.*"
+        "text": "*Mittagspause. Heute, ungewöhnlich — alle drei sind an einem Tisch. {name} packt die Lunchbox aus. Seoyeon setzt sich ganz selbstverständlich daneben, Dain plumpst gegenüber hin, und Yuna schiebt sich aus der Ecke dazu, während sie an ihrem eigenen Brot knabbert.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -33,15 +33,15 @@
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna nimmt still ihre Stäbchen auf. Schneller als vorhin.*"
+        "text": "*Yuna greift wortlos zu den Stäbchen. Schneller als vorher. Ich wurde geplündert. Von allen drei gleichzeitig.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Eine Beilage ist noch übrig. Das letzte Omelett.*"
+        "text": "*Eine Beilage ist übrig. Die letzte Eierolle. Ich hab gesagt, lass uns alle was abkriegen. — Die Luft wurde schwer.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
-        "text": "*Wem gebe ich es?*"
+        "text": "*Wem soll ich es geben?*"
     },
     "lunch3_choice": {
         "name": "{name}",
@@ -103,11 +103,11 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "Ach stimmt! {name}, wir wollten doch am Wochenende in die Spielhalle!! Was essen wir vorher?!"
+        "text": "Ach ja! {name}, du wolltest doch am Wochenende mit mir in die Spielhalle!! Was essen wir vorher?!"
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*— Ich erstarrte.*"
+        "text": "*— Ich erstarrte. Die Hände der anderen zwei halten inne.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "lunch3_expose_12": {
         "name": "{name}",
-        "text": "*Drei Paar Stäbchen erstarren. Der Lärm der Mensa klingt plötzlich weit weg.*"
+        "text": "*Drei Stäbchenpaare halten inne. Der Lärm aus der Mensa klingt plötzlich weit weg. Am Nachbartisch schaut Minsu zu uns rüber. Er schüttelt den Kopf.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -208,7 +208,7 @@
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Hinter mir bohrt sich die Stille der drei in meinen Rücken.*"
+        "text": "*Hinter mir bohrt sich das Schweigen der drei in meinen Rücken. Die Mittagspause war vorbei, und der Nachmittagsunterricht ging weiter. Das Kratzen der Kreide an der Tafel klang seltsam fern. Ich spüre einen Blick im Rücken. — Da ist noch eine ungelöste Geschichte übrig.*"
     },
     "lunch3_end": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna geht den Flur entlang und blickt in die Turnhalle. Dain lacht. Yuna beschleunigt ihre Schritte.*"
+        "text": "*Yuna kommt am Flur vorbei und schaut in die Turnhalle. Dain lacht. Yuna beschleunigt ihre Schritte. In der nächsten Pause ist Yunas Platz leer.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {

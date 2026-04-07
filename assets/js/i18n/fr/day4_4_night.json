@@ -113,11 +113,11 @@
     },
     "wall_seo_14_c": {
         "name": "{name}",
-        "text": "*Seoyeon s'arrête de parler. Ses mains sont serrées sur ses genoux.*"
+        "text": "*Seoyeon arrête de parler. Ses mains sont serrées sur ses genoux. — Et puis lentement, très lentement, l'expression qu'elle tenait à la perfection s'effondre. Le bout des doigts de Seoyeon tremble.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Des larmes coulent de ses yeux. En silence. - Seoyeon pleure.*"
+        "text": "*Les larmes coulent. Sans un bruit. — Seoyeon pleure. Seoyeon lève les yeux. C'est le visage de quelqu'un qui n'a plus l'intention de cacher cette expression effondrée.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*J’ai pris Seoyeon dans mes bras.*"
+        "text": "*J'ai serré Seoyeon. Seoyeon a enfoui son visage contre ma poitrine. Ma chemise d'uniforme se mouille.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Prenant une grande inspiration* Maman a dit : ‘Au moins toi, tu dois être parfaite pour que cette famille tienne.’"
+        "text": "*Inspirant* ...C'est pour ça que faire semblant d'être parfaite est devenu une habitude."
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*Il y a de la lumière à la fenêtre du gymnase. Éclairage de secours. Quelqu’un fait rebondir un ballon seul. — J’aperçois vaguement le numéro du maillot. C’est Dain.*"
+        "text": "*Il y a de la lumière à la fenêtre du gymnase. Lumière de secours. Quelqu'un fait rebondir un ballon, seul. — Je distingue à peine le numéro de maillot. C'est Dain. ...À 23h, seule dans le gymnase ? Elle ne m'a pas écrit aujourd'hui.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
@@ -549,7 +549,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*C’est Yuna. Assise seule. Si elle lit ou si elle est juste assise là — impossible à dire d’ici.*"
+        "text": "*C'est Yuna. Assise seule. — Mon cœur tombe. Yuna ne m'a pas écrit aujourd'hui. — Je suis désolé.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -593,7 +593,7 @@
     },
     "wall_yuna_4": {
         "name": "{name}",
-        "text": "*Yuna se dirige vers l’annexe de la bibliothèque. Au-delà de son coin lecture secret — plus profond. La salle d’archives au sous-sol.*"
+        "text": "*Yuna va vers l'annexe de la bibliothèque. Elle dépasse son repaire de lecture secret — encore plus loin. Les archives du sous-sol. Entre des étagères poussiéreuses. Yuna sort une vieille enveloppe.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -763,7 +763,7 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon range son téléphone dans sa poche et se retourne. Son dos est droit. Parfaitement. Elle ne tremble pas. Pas cette fois.*"
+        "text": "*Seoyeon met son téléphone dans sa poche et se retourne. Le dos droit. Parfaitement. — Elle ne tremble pas. Pas cette fois, vraiment. La nuit vient aussi pour celle qui n'a pas été choisie. Et elle passe cette nuit seule.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -771,7 +771,7 @@
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...J’aurais pu le dire aujourd’hui. Sous ce coucher de soleil, c’était le moment parfait.*"
+        "text": "*...J'aurais dû le dire aujourd'hui. Cette personne tendait la main la première, et j'ai encore raté les mots les plus simples. Ce n'est pas parce qu'il y a un demain qu'aujourd'hui s'efface. Je le savais, et j'ai encore reporté.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "Système",
@@ -823,7 +823,7 @@
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Un message de l'infirmière est arrivé. 23h. Une seule phrase.*"
+        "text": "*L'accusé de lecture s'affiche. Dix secondes. Vingt secondes. Pas de message supplémentaire. — Une minute plus tard.*"
     },
     "night_nurse_msg_3": {
         "name": "Infirmière",

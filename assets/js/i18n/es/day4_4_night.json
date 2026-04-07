@@ -113,11 +113,11 @@
     },
     "wall_seo_14_c": {
         "name": "{name}",
-        "text": "*Seoyeon deja de hablar. Sus manos están apretadas sobre las rodillas.*"
+        "text": "*Seoyeon deja de hablar. Sus manos están apretadas sobre las rodillas. — Y entonces, despacio, muy despacio, la expresión que mantenía a la perfección se desmorona. La punta de los dedos de Seoyeon tiembla.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Las lágrimas le caen de los ojos. En silencio. - Seoyeon está llorando.*"
+        "text": "*Las lágrimas le caen por la cara. Sin hacer ruido. — Seoyeon está llorando. Seoyeon alza la mirada. Es la cara de alguien que ya no piensa esconder esa expresión rota.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*Abracé a Seoyeon.*"
+        "text": "*Abracé a Seoyeon. Seoyeon enterró la cara en mi pecho. La camisa del uniforme se moja.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Respirando hondo* Mamá dijo: 'Al menos tú tienes que ser perfecta para que esta familia se mantenga.'"
+        "text": "*Tomando aire* ...Por eso fingir ser perfecta se me volvió un hábito."
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*Hay una luz en la ventana del gimnasio. Luces de emergencia. Alguien está botando un balón solo. — Puedo distinguir vagamente el número de la camiseta. Es Dain.*"
+        "text": "*Hay una luz en la ventana del gimnasio. Luces de emergencia. Alguien está botando una pelota sola. — Apenas distingo el número de la camiseta. Es Dain. ...¿A las 11 de la noche, sola en el gimnasio? Hoy no me escribió nada.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
@@ -549,7 +549,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*Es Yuna. Sentada sola. Si está leyendo o simplemente sentada — no puedo saber desde aquí.*"
+        "text": "*Es Yuna. Sentada sola. — Se me cae el corazón. Yuna no me escribió hoy. — Lo siento.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -593,7 +593,7 @@
     },
     "wall_yuna_4": {
         "name": "{name}",
-        "text": "*Yuna se dirige al anexo de la biblioteca. Pasando su rincón secreto de lectura — más adentro. El archivo del sótano.*"
+        "text": "*Yuna se dirige al anexo de la biblioteca. Pasa de largo su rincón secreto de lectura — más adentro. Los archivos del sótano. Entre estanterías polvorientas. Yuna saca un sobre viejo.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -763,7 +763,7 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon guarda el móvil en el bolsillo y se da la vuelta. Su espalda está recta. Perfectamente. No tiembla. Esta vez de verdad.*"
+        "text": "*Seoyeon se guarda el móvil en el bolsillo y se da la vuelta. La espalda recta. Perfectamente. — No tiembla. Esta vez de verdad. La noche también llega para la que no fue elegida. Y está pasando esa noche sola.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -771,7 +771,7 @@
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...Podría haberlo dicho hoy. Bajo ese atardecer, era el momento perfecto.*"
+        "text": "*...Hoy debería haberlo dicho. Esa persona me tendía el corazón primero, y yo otra vez no fui capaz de decir las palabras más fáciles. Que haya un mañana no borra el hoy. Lo sabía, y aun así lo volví a posponer.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "Sistema",
@@ -823,7 +823,7 @@
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Un mensaje de la enfermera llegó. 11 PM. Solo una oración.*"
+        "text": "*Aparece el visto. Diez segundos. Veinte segundos. Ningún mensaje más. — Un minuto después.*"
     },
     "night_nurse_msg_3": {
         "name": "Enfermera",

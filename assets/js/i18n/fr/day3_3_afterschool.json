@@ -48,11 +48,11 @@
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
-        "text": "*Je passe devant la bibliothèque. La place de Yuna est vide. Un seul mot reste. '...D'accord.' Trop court. Le bord du papier est légèrement froissé.*"
+        "text": "*Je passe devant la bibliothèque. La place de Yuna est vide. Un seul mot reste. Encre violet pâle. — 'J'ai attendu. Deux heures. Je n'attendrai plus.'*"
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Je reviens dans le couloir. La phrase de Dain sans point d'exclamation, le billet trop court de Yuna aux bords froissés. Le poids de mon choix retombe sur mes épaules.*"
+        "text": "*Je sors dans le couloir. La phrase de Dain sans points d'exclamation, la bibliothèque de Yuna effacée jusqu'à la moindre trace. — Des choses irrécupérables commencent à apparaître.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -100,11 +100,11 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*Je suis retourné dans le couloir.*"
+        "text": "*Je suis revenu dans le couloir. Le sourire répété de Seoyeon, la trace d'eau que Yuna a laissée. — Celui qui n'a rien dit laisse la marque la plus longue.*"
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*J’ai ouvert la porte de la salle du conseil. — Seoyeon est affalée sur le bureau.*"
+        "text": "*J'ai ouvert la porte de la salle du conseil. — Seoyeon est affalée sur le bureau. Première fois que je la vois comme ça. La présidente parfaite du conseil — sans défense, écroulée sur le bureau.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -136,10 +136,10 @@
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
-        "text": "La prochaine fois que je te demande un service, tu devras accepter. Sans discuter. — Considère que c’est le prix.",
+        "text": "La prochaine fois que je te demande un service, tu dis oui sans poser de questions. — C'est le prix.",
         "choices": [
-            "Tu n’as pas besoin d’être parfaite, tu sais",
-            "Je garderai ton secret"
+            "Pas besoin d'être parfaite. Ça arrive à tout le monde.",
+            "...Tout à l'heure ? J'ai rien vu. J'ai fait tomber mon stylo, je suis venu le ramasser."
         ]
     },
     "after3_seo_end": {
@@ -152,11 +152,11 @@
     },
     "after3_yuna_2": {
         "name": "{name}",
-        "text": "*J’entre, mais Yuna n’est pas là. À la place — un carnet est ouvert sur le canapé. Couvert d’écriture manuscrite.*"
+        "text": "*J'entre, mais Yuna n'est pas là. À la place — un cahier est ouvert sur le canapé. Une écriture serrée. C'est un roman. Un roman écrit par Yuna. — Est-ce que je peux le lire ?*"
     },
     "after3_yuna_4": {
         "name": "{name}",
-        "text": "*Première page.*"
+        "text": "*Première page. 'Un jour, un nouvel élève est arrivé. Il est venu à la bibliothèque et s'est assis à côté de moi sans dire un mot. — Ça ne m'a pas dérangée.'*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -180,10 +180,10 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "Je lisais avec plaisir.",
+        "text": "J'étais en train de lire avec plaisir.",
         "choices": [
-            "Tu devrais peut-être changer le nom du protagoniste",
-            "Comment ça finit ?"
+            "C'est mon histoire, non ? 'Le nouvel élève qui s'est assis sans rien dire' — c'est moi.",
+            "Cet auteur est vraiment doué. Y a une suite ? J'aimerais bien l'emprunter."
         ]
     },
     "after3_yuna_end": {
@@ -192,7 +192,7 @@
     },
     "after3_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Dain s’étire seule. Elle essaie de trottiner et —*"
+        "text": "*Le gymnase. Dain s'étire seule. Elle saute légèrement, mais — — sa jambe droite se tord un peu. Elle grimace.*"
     },
     "after3_dain_3": {
         "name": "{name}",

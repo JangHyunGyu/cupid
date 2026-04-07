@@ -161,7 +161,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*La enfermera publicó 'busco ayudante' en el chat escolar. Mis pies ya se dirigen a la escuela.*"
+        "text": "*La enfermera publicó 'busco ayuda' en el mensajero de la escuela. Mis pies ya van hacia el instituto. La enfermería. Sobre el escritorio hay papeleo y material médico apilado. La enfermera está ordenando con calma.*"
     },
     "hidden_nurse_d4_2": {
         "name": "Enfermera",
@@ -173,7 +173,7 @@
     },
     "hidden_nurse_d4_4": {
         "name": "Enfermera",
-        "text": "...En el hospital hacía todo esto sola. Turnos de noche — a veces una enfermera haciendo el trabajo de tres."
+        "text": "...En el hospital hacía todo esto sola. En los turnos de noche — había días en los que una sola enfermera hacía el trabajo de tres."
     },
     "hidden_nurse_d4_5": {
         "name": "Enfermera",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Domingo por la mañana. Me dirijo a la enfermería por costumbre. — ¿Cuándo se convirtió esto en una costumbre?*"
+        "text": "*Mañana de domingo. Por costumbre, voy hacia la enfermería. — ¿Cuándo se convirtió esto en costumbre? Abrí la puerta. La enfermera está en su silla. Bata blanca. — Pero está distinta a lo habitual. Sin picardía.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermera",
@@ -315,7 +315,7 @@
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*Me miré al espejo tres veces. Me cambié de ropa dos veces. Qué estoy haciendo.*"
+        "text": "*Respiro hondo y vuelvo a revisar los mensajes de las citas.*"
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
@@ -331,7 +331,7 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Mañana de fin de semana. Algunas notificaciones. — Pensé que sería un día normal.*"
+        "text": "*Mañana de fin de semana. Hay algunas notificaciones. — Pensaba que sería un día normal. Dejo el móvil y me estiro. En cualquier caso, hoy también empieza.*"
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*Se da la vuelta. Los hombros ligeramente caídos.*"
+        "text": "*La profesora se da la vuelta. — Tiene los hombros un poco caídos. Yo dije que no, ¿por qué me siento así? Volví a casa.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Enfermera",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Ella sabe lo que pesa que te llamen por tu nombre. Porque en el hospital la llamaban por números.*"
+        "text": "*Es alguien que conoce el peso de ser llamada por su nombre. — Porque en el hospital la llamaban por números. Terminamos de ordenar. La enfermera se estira.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*Ha añadido de verdad. Cuando esta persona añade de verdad, significa que todo lo anterior era sincero.*"
+        "text": "*Añadió 'de verdad'. — Cuando esta persona añade 'de verdad', significa que todo lo dicho antes era sincero. Lo soltó con un 'qué dices', pero no pudo mantener la mirada por un instante. Esta vez tampoco se le da bien disimular.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*Vor dem Schultor. In der Ferne drei Gestalten.*"
+        "text": "*Vor dem Schultor. In der Ferne sehe ich drei Gestalten. Seoyeon geht mit Haeun, Dain wirft einen Volleyball und rennt, Yuna liest beim Gehen ein Buch. Keine schaut hierher. — Das ist sogar ein Glück. Im Moment trau ich mich niemandem in die Augen zu sehen.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Naja, ich habe es erwartet. Du hast dich von Anfang an nicht nach meinen Berechnungen gerichtet."
+        "text": "Naja, hab ich erwartet. Du hast dich von Anfang an nie nach meinem Plan bewegt."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon dreht sich um und winkt. — Dieselbe Geste wie an Tag 1. Sie schaut nicht zurück.*"
+        "text": "*Seoyeon dreht sich um und winkt. — Dieselbe Geste wie an Tag 1. Sie schaut nicht zurück. Der Rücken gerade. Perfekt. — Aber diesmal zittert sie nicht.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*Die Sonne geht unter. Fünf Tage gehen zu Ende.*"
+        "text": "*Die Sonne geht unter. Fünf Tage neigen sich dem Ende zu. Der Sonnenuntergang färbt den Schulhof. Waren fünf Tage wirklich so kurz? — Der Moment der letzten Entscheidung naht.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -186,7 +186,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "{name}",
-        "text": "*Seite an Seite gehend — lassen wir die Schule hinter uns.*"
+        "text": "*Die Fingerspitze, die Seoyeon ausstreckt, schwebt vor mir. Wenn ich es jetzt nicht sage, verpasse ich es wieder.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",

@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "That was the real you, Seoyeon. That's the you I like."
+        "text": "It wasn't 'as the student council president,' there were moments when you just looked like Seoyeon. Those were the ones I liked."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*My breathing has shortened. The room feels smaller. If I don't say it now — I don't think I'll ever have this courage again.*",
+        "text": "*My breathing has shortened. The reason this silence felt comfortable — was because it was Yuna. I have to say it.*",
         "choices": [
             "Yuna. Let me ask you one thing.",
             "...This place is really nice."
@@ -241,9 +241,9 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*The gym floor seems to sway. If I don't say it now — I don't think I'll ever have this courage again.*",
+        "text": "*The gym floor seems to sway. — I know the tremor hidden behind this person's exclamation marks.*",
         "choices": [
-            "You know if you run, I'll chase you. So just stay and hear me out.",
+            "Dain. Put the ball down.",
             "...Wanna play one more round?"
         ]
     },

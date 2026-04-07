@@ -48,11 +48,11 @@
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
-        "text": "*Ich komme an der Bibliothek vorbei. Yunas Platz ist leer. Nur ein Zettel ist geblieben. '...Verstanden.' Viel zu kurz. Die Ecke des Papiers ist leicht zerknittert.*"
+        "text": "*Ich gehe an der Bibliothek vorbei. Yunas Platz ist leer. Ein Zettel liegt da. Hellviolette Tinte. — 'Hab gewartet. Zwei Stunden. Ich warte nicht mehr.'*"
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Ich trete zurück auf den Flur. Dains Satz ohne Ausrufezeichen, Yunas viel zu kurzer Zettel mit der zerknitterten Ecke. Das Gewicht meiner Wahl legt sich auf meine Schultern.*"
+        "text": "*Ich gehe zurück in den Flur. Dains Satz ohne Ausrufezeichen, Yunas Bibliothek, in der jede Spur weggewischt ist. — Dinge, die sich nicht mehr rückgängig machen lassen, fangen an, sich zu sammeln.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -100,11 +100,11 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*Ich ging zurück in den Flur.*"
+        "text": "*Ich bin wieder zurück in den Flur. Seoyeons einstudiertes Lächeln, die Wasserspur, die Yuna hinterlassen hat. — Wer nichts sagt, hinterlässt die längste Spur.*"
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*Ich öffnete die Tür zum Schülerratszimmer. — Seoyeon liegt über dem Schreibtisch zusammengesunken.*"
+        "text": "*Ich öffnete die Tür zum Schülerratsraum. — Seoyeon liegt zusammengesackt auf dem Schreibtisch. Sehe ich zum ersten Mal. Die perfekte Schülersprecherin — ungeschützt auf dem Tisch.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -136,10 +136,10 @@
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
-        "text": "Wenn ich dich das nächste Mal um einen Gefallen bitte, musst du ja sagen. Ohne Fragen. — Betrachte es als Preis.",
+        "text": "Wenn ich dich das nächste Mal um was bitte, sagst du ohne Fragen ja. — Als Gegenleistung.",
         "choices": [
-            "Du musst nicht perfekt sein, weißt du",
-            "Ich werde dein Geheimnis hüten"
+            "Du musst nicht perfekt sein. Jeder ist mal so.",
+            "...Eben? Ich hab nichts gesehen. Hab meinen Stift fallen lassen, bin ihn nur holen gekommen."
         ]
     },
     "after3_seo_end": {
@@ -152,11 +152,11 @@
     },
     "after3_yuna_2": {
         "name": "{name}",
-        "text": "*Ich gehe rein, aber Yuna ist nicht da. Stattdessen — liegt ein Notizbuch aufgeschlagen auf dem Sofa. Voller Handschrift.*"
+        "text": "*Ich gehe rein, aber Yuna ist nicht da. Stattdessen — ein Notizbuch liegt aufgeschlagen auf dem Sofa. Vollgeschrieben. Ein Roman. Ein Roman, den Yuna geschrieben hat. — Darf ich ihn lesen?*"
     },
     "after3_yuna_4": {
         "name": "{name}",
-        "text": "*Erste Seite.*"
+        "text": "*Erste Seite. 'Eines Tages kam ein Transferschüler. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.'*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -180,10 +180,10 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "Ich habe es gerne gelesen.",
+        "text": "Ich hab es mit Vergnügen gelesen.",
         "choices": [
-            "Vielleicht solltest du den Namen des Protagonisten ändern",
-            "Wie endet es?"
+            "Das geht doch über mich, oder? 'Der Transferschüler, der sich wortlos neben sie setzte' — das bin ich.",
+            "Diese Autorin schreibt wirklich gut. Gibt's eine Fortsetzung? Würd ich gern ausleihen."
         ]
     },
     "after3_yuna_end": {
@@ -192,7 +192,7 @@
     },
     "after3_dain_1": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Dain dehnt sich alleine. Sie versucht leicht zu joggen und —*"
+        "text": "*Die Turnhalle. Dain dehnt sich allein. Sie hüpft kurz an, aber — — ihr rechtes Bein knickt leicht ein. Sie verzieht das Gesicht.*"
     },
     "after3_dain_3": {
         "name": "{name}",

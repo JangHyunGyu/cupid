@@ -45,7 +45,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*I had a dream. — I was walking side by side with someone.*"
+        "text": "*I had a dream. — I was walking side by side with someone. I couldn't see their face, but strangely I wasn't anxious.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*...I'm okay. Just go with what you won't regret.*"
+        "text": "*I just hope you don't take the choice of whose side to stand on lightly.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -85,7 +85,7 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*I fell asleep. — A dream.*"
+        "text": "*I fell asleep. — A dream. I'm standing in the dark. I can't see anything.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -126,11 +126,11 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*I reached out. — I can’t grasp it.*"
+        "text": "*I reached out. — I can't grasp it. They all vanished, and only the dark is left.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*— I woke up drenched in sweat. 3 AM. I see the ceiling.*"
+        "text": "*— I woke up drenched in sweat. 3 AM. I see the ceiling. I pulled out my phone. The gallery. Scrolling again. — Sojeong's photo.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
@@ -138,23 +138,23 @@
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*She's smiling. Smiling at me in the group photo. Without knowing a thing.*"
+        "text": "*She's smiling. Smiling at me in the group photo. As if asking for help. I told myself I wouldn't look away this time. That at this school, I wouldn't stay silent.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— I won't run. This time, just one person.*"
+        "text": "*— I won't run. This time, just one person. I had a dream. — I was walking beside someone. I couldn't see their face, but strangely I wasn't anxious.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*I opened my eyes. Morning light seeps through the curtains. — Today's dream was a good one.*"
+        "text": "*I opened my eyes. Morning light seeps through the curtains. — Today's dream was a good one. I picked up my phone. Opened the gallery. Sojeong's photo. — I stopped scrolling and held it down.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*I kept it because deleting it felt like erasing those feelings too. But now it's not lingering attachment — it's just a record. — Its purpose is done.*"
+        "text": "*I kept it because deleting it felt like erasing those feelings too. But now it's not lingering attachment — it's a record. — Its purpose is done.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*This time is different. I'll speak to only one person. The rest — I'll be clear with them.*"
+        "text": "*This time is different. If I see it, I'll say it. If I know, I'll step up. To one person, clearly — The gallery is empty. The space where Sojeong's photo was. The empty screen is sharper than the photo ever was.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -190,19 +190,19 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*The exact opposite of what happened with Sojeong, but the result is the same. Someone gets hurt.*"
+        "text": "*Same as with Sojeong. I knew, and I stayed silent. At my old school I watched Sojeong fall apart and kept my mouth shut. At this school — again.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*This school: regret from saying too much.*"
+        "text": "*This school: regret from telling everyone. The problem isn't 'speak or stay silent' — it's 'to whom.'*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu said it. 'Saying no is also love.'*"
+        "text": "*Minsu said it. 'Saying no is also love.' Seoyeon said it. 'I won't be one of many.'*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna said it. 'Don't run.'*"
+        "text": "*Yuna said it. 'Don't run.' So this time has to be different. Not choosing — that's the same as losing everything.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*One second. I just stare at the screen.*"
+        "text": "*One second. I just stare at the screen. The graffiti on Sojeong's desk comes back to me. And — the 38 mornings I turned my head away.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu said it. 'Saying no is also love.' He's right. At my old school, Sojeong never even got the chance to reject me. Because I kept my mouth shut. — That was the cruelest ending for both of us.*"
+        "text": "*Minsu said it. 'Saying no is also love.' At my old school, Sojeong vanished without anyone helping her. Because I kept my mouth shut. — That was the unkindest ending for both of us. If even one of those 38 memos had been sent — Sojeong might not have left the school.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
