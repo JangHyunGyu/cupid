@@ -50,15 +50,15 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Ich bin nur vorbeigekommen. — Hab auch heute einen schönen Tag."
+        "text": "Eine Runde. — Und gleichzeitig Anwesenheitskontrolle."
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Sie blieb nicht stehen. Aber ihr Blick lag eindeutig auf mir.*"
+        "text": "*Sie blieb nicht stehen. Aber ihr Blick war eindeutig auf mir. In dem Moment, als Seoyeon um die Ecke bog — glaube ich, ihr Lächeln ging verloren. Bilde ich mir das ein?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*Ich starre den Flur an, in dem Seoyeon verschwunden ist — als ich hinter mir ein Stuhlscharren höre.*"
+        "text": "*Ich starre auf den Flur, in dem Seoyeon verschwunden ist — als Minsu sich hinter mir umdreht.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
@@ -154,7 +154,7 @@
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
-        "text": "*Sie sagt, es sei Verwaltungskram. Sie verpackt ihr Interesse immer als dienstlich.*"
+        "text": "*Sie sagt, es sei verwaltungstechnisch.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Klassenlehrerin",
@@ -190,7 +190,7 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Klassenlehrerin",
-        "text": "Dain ist laut, oder? — Die ist immer so. Aber kein schlechtes Mädchen. Eher der Typ, um den man sich Sorgen macht."
+        "text": "Dain ist laut, oder? — So ist sie eben. Aber ein Kind, das Krawall macht, und ein Kind, das einfach überschüssige Energie hat, sind nicht dasselbe."
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
-        "text": "*Dain klopft mir von hinten auf die Schulter. Kein Zögern.*"
+        "text": "*Dain klatscht mir von hinten auf die Schulter.*"
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*Sie lächelt. Aber ihr Blick verweilt eine halbe Sekunde auf dem Zettel.*"
+        "text": "*Sie lächelt. Aber ihr Blick bleibt am Zettel hängen.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
@@ -350,6 +350,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Vor sich hin murmelnd, obwohl niemand zuhört. — Diese Person hat die Angewohnheit, ihre Fürsorge als 'Arbeit' zu verpacken.*"
+        "text": "*Wie ein Selbstgespräch, obwohl niemand zuhört.*"
     }
 }

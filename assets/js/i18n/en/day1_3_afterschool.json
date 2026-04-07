@@ -1,19 +1,19 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*After school. I decide to look around the campus. I still don't know the layout.*"
+        "text": "*After school. I figure I'll look around campus a bit. I still don't know the layout. Walking down the hallway. My phone buzzes. — The group chat from my old school.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'Sojeong posted cherry blossom photos with her boyfriend lol'*"
+        "text": "*'Hey, Sojeong's doing fine at her new school~' 'That's a relief lol' — I slip the phone back into my pocket.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Ah.*"
+        "text": "*...A relief, they say. Is it really? If I'd just said one word back then — Sojeong wouldn't have had to leave the school.*"
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*At this school — I'll say what I want to say. This time.*"
+        "text": "*At this school — if I see it, I'll say it. No more pretending I don't know when I do. This time.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*She waves and runs off. Like a storm. I don't even know her name and she's already talking to me like we're old friends.*"
+        "text": "*She waves and runs off. The girl is a storm. The name the teacher called earlier — Dain. Already on first-name terms.*"
     },
     "after_miss_yuna_1": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*— A bookmark falls.* Hey, this..."
+        "text": "*Yuna stares at the bookmark for a long moment. Like she's checking it for any creases.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -106,7 +106,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*I knock on the faculty office door. When it opens, I step inside. The homeroom teacher meets my eyes first.*"
+        "text": "*On my way out, my feet stop once. The face of the homeroom teacher — the one who'd been reading the room until the very end — comes back to me. I stand in front of the faculty office, knock, and open the door.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",
@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Homeroom Teacher",
-        "text": "Still, your first day is your first day. Don't act too okay if you're not. You should get going."
+        "text": "Being perfect on day one wears you out. Pretend to be a little useless. — You can go now."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Professional concern. This person always hides what she feels behind her title.*",
+        "text": "*Professional concern.*",
         "choices": [
             "If you're worried, you can just say you're worried",
             "I'll look forward to that juice, ma'am"
@@ -390,7 +390,7 @@
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*She admitted it honestly. — This person's facade comes off surprisingly fast.*"
+        "text": "*She admitted it honestly.*"
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*Her tone is light. More like walking into a café than a clinic.*"
+        "text": "*Her tone is light.*"
     },
     "after_nurse_enter_4_b": {
         "name": "{name}",
@@ -414,11 +414,11 @@
     },
     "after_nurse_enter_4_c": {
         "name": "School Nurse",
-        "text": "Your uniform is stiff as a board. Smells like starch too. *Sniff sniff* Oh, there's cherry blossom scent mixed in. A romantic transfer student."
+        "text": "Your uniform's stiff. Smells like grass too. *Sniff sniff* Oh, cherry blossoms mixed in. A romantic transfer student."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*We've barely exchanged a few words, and I'm already moving to her rhythm.*"
+        "text": "*A few words in and she's already setting the pace. The nurse stands and walks over. Smooth movements. — When her hand touches me, I tense up for no reason.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*She says it lightly, but she's clearly trying to help me unclench a little.*"
+        "text": "*She says it playfully, but a bit of the tension lifts. I drink the water and look around the nurse's office. A small potted plant sits in one corner.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -466,7 +466,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Just minor injuries.' — There's relief in those words. It also means she's seen plenty of injuries that weren't minor.*"
+        "text": "*'Just minor injuries.' — There's relief in those words. Ten minutes pass. I get up.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -490,7 +490,7 @@
     },
     "after_nurse_enter_11_f": {
         "name": "School Nurse",
-        "text": "...You're a perceptive patient. And here I'm supposed to be the one worrying."
+        "text": "That thing you said earlier — thanks for worrying about me. First time I've heard that from a patient."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
@@ -498,11 +498,11 @@
     },
     "after_nurse_enter_11_h": {
         "name": "School Nurse",
-        "text": "Right? It's nice here. — Quiet, and if you ignore the antiseptic smell, it's perfect."
+        "text": "You said it was cozy earlier? — Hearing that actually made me happy."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*Hearing it called cozy makes her eyes light up. — This space must be her sanctuary.*"
+        "text": "*Her eyes smile at the word 'cozy'.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*She laughs lightly and waves me off. — She's playful, but clearly practiced at making people feel at ease.*"
+        "text": "*She waves me off with a light laugh. I notice the band-aid on the back of her hand. — A strange nurse's office. The not-bad kind of strange.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

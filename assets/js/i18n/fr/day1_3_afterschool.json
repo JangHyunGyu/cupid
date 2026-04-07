@@ -1,19 +1,19 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Après les cours. Je décide de faire le tour du campus. Je ne connais pas encore bien les lieux.*"
+        "text": "*Après les cours. Je décide de faire le tour du campus. Je ne connais pas encore bien les lieux. Je marche dans le couloir. Mon téléphone vibre. — Le groupe de discussion de mon ancien lycée.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*‘Sojeong a posté des photos de cerisiers avec son copain mdr’*"
+        "text": "*'Hé, Sojeong va bien dans sa nouvelle école~' 'Ouf, cool lol' — Je remets le téléphone dans ma poche.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Ah.*"
+        "text": "*...Ouf, cool, hein. Vraiment ? Si j'avais dit un mot à ce moment-là — Sojeong n'aurait pas eu à quitter l'école.*"
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Dans ce lycée — je dirai ce que j’ai à dire. Cette fois.*"
+        "text": "*Dans ce lycée — si je vois quelque chose, je le dirai. Plus jamais faire semblant de ne pas savoir. Cette fois.*"
     },
     "after_kakao_end": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*Elle fait un signe de la main et file en courant. Une vraie tornade. On ne s’est même pas présentés et elle me tutoie déjà.*"
+        "text": "*Elle fait un signe de la main et file en courant. Une vraie tornade. Le nom que la prof a appelé tout à l'heure — Dain. Et déjà au tutoiement.*"
     },
     "after_miss_yuna_1": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*— Un marque-page tombe.* «Hé, c’est...»"
+        "text": "*Yuna fixe le marque-page un long moment. On dirait qu'elle vérifie qu'il n'est pas froissé.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -106,7 +106,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Je frappe à la porte de la salle des professeurs. Quand elle s'ouvre, j'entre. La professeure principale est la première à croiser mon regard.*"
+        "text": "*Je m'apprête à partir, et un instant mes pieds s'arrêtent. Le visage de la prof principale, qui sondait l'ambiance jusqu'au bout, me revient. Je me poste devant la salle des profs, je frappe et j'ouvre la porte.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Professeure principale",
@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Professeure principale",
-        "text": "Cela dit, un premier jour reste un premier jour. Ne fais pas trop semblant d'aller bien. Tu peux y aller."
+        "text": "Être parfait le premier jour, ça t'épuise plus tard. Fais semblant d'être un peu nul. — Allez, file."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Intérêt pédagogique. Cette personne cache toujours ce qu'elle ressent derrière son titre.*",
+        "text": "*Intérêt pédagogique.*",
         "choices": [
             "Si vous êtes inquiète, dites juste que vous êtes inquiète",
             "J'attendrai ce jus avec impatience, madame"
@@ -390,7 +390,7 @@
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*Elle l'a admis franchement. — La façade de cette personne tombe étonnamment vite.*"
+        "text": "*Elle l'a admis franchement.*"
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*Son ton est léger. On se croirait plus dans un café que dans une infirmerie.*"
+        "text": "*Son ton est léger.*"
     },
     "after_nurse_enter_4_b": {
         "name": "{name}",
@@ -414,11 +414,11 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Infirmière",
-        "text": "Ton uniforme est raide comme du carton. Ça sent l'amidon. *Snif snif* Oh, il y a aussi une odeur de cerisier. Un élève transféré romantique."
+        "text": "Ton uniforme est tout raide. Et ça sent l'herbe. *Snif snif* Ah, et il y a une odeur de cerisier mélangée. Un élève transféré romantique."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*On a échangé à peine quelques mots, et je suis déjà calé sur son rythme.*"
+        "text": "*On a échangé à peine quelques mots, et je suis déjà calé sur son rythme. L'infirmière se lève et s'approche. Ses gestes sont fluides. — Quand sa main me touche, je me crispe sans raison.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Elle le dit légèrement, mais elle essaie clairement de me détendre un peu.*"
+        "text": "*Elle le dit sur un ton joueur, mais un peu de tension retombe. Je bois l'eau et je regarde autour de l'infirmerie. Dans un coin, une petite plante en pot.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -466,7 +466,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Que des blessures légères'. — Il y a du soulagement dans ces mots. Ça veut aussi dire qu'elle en a vu beaucoup qui ne l'étaient pas.*"
+        "text": "*'Que des blessures légères'. — Il y a du soulagement dans ces mots. Dix minutes ont passé. Je me lève.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -490,7 +490,7 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Infirmière",
-        "text": "*Elle n'a pas l'air très habituée à ce qu'on s'inquiète pour elle. — On dirait plutôt quelqu'un qui a l'habitude de veiller sur les autres.*"
+        "text": "Ce que tu as dit tout à l'heure — merci de t'inquiéter pour moi. C'est la première fois qu'un patient me dit ça."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
@@ -498,11 +498,11 @@
     },
     "after_nurse_enter_11_h": {
         "name": "Infirmière",
-        "text": "N'est-ce pas ? C'est bien ici. — Calme, et si on oublie l'odeur de désinfectant, c'est parfait."
+        "text": "Tu as dit que c'était douillet, tout à l'heure ? — Ça m'a fait plaisir, en vrai."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*En entendant que c'est confortable, ses yeux s'illuminent. — Cet endroit doit être son havre de paix.*"
+        "text": "*Au mot 'douillet', ses yeux sourient.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Elle rit doucement en me saluant de la main. — Elle est taquine, mais on voit qu'elle sait mettre les gens à l'aise.*"
+        "text": "*Elle me salue de la main avec un petit rire. Je remarque le pansement sur le dos de sa main. — Une drôle d'infirmerie. Du bon genre de drôle.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

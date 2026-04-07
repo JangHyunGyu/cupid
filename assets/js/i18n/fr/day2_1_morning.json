@@ -50,15 +50,15 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Je ne faisais que passer. — Passe une bonne journée aussi."
+        "text": "C'est une ronde. — Et un contrôle de présence en même temps."
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Elle ne s'est pas arrêtée de marcher. Mais son regard était clairement tourné vers moi.*"
+        "text": "*Elle ne s'est pas arrêtée de marcher. Mais son regard était clairement tourné vers moi. Au moment où Seoyeon a tourné dans le couloir — j'ai cru voir son sourire s'effacer. Une impression ?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*Je fixe le couloir où Seoyeon a disparu — quand j'entends une chaise racler derrière moi.*"
+        "text": "*Je fixe le couloir où Seoyeon a disparu — quand Minsu se retourne derrière moi.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
@@ -154,7 +154,7 @@
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
-        "text": "*Elle dit que c'est administratif. Elle emballe toujours son intérêt dans du professionnel.*"
+        "text": "*Elle dit que c'est administratif.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professeure principale",
@@ -190,7 +190,7 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Professeure principale",
-        "text": "Dain est bruyante, non ? — Elle est toujours comme ça. Mais c'est pas une mauvaise gamine. Plutôt le genre qu'on s'inquiète."
+        "text": "Dain est bruyante, hein ? — Elle est toujours comme ça. Mais une gamine qui fait du raffut et une gamine qui a juste trop d'énergie, c'est pas pareil."
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
-        "text": "*Dain me tape l'épaule par derrière. Zéro hésitation.*"
+        "text": "*Dain me tape l'épaule par derrière.*"
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*Elle sourit. Mais son regard s'attarde sur le mot une demi-seconde.*"
+        "text": "*Elle sourit. Mais son regard s'arrête sur le mot.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
@@ -350,6 +350,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Elle murmure alors que personne n'écoute. — Cette personne a l'habitude d'emballer sa bienveillance dans le mot 'travail'.*"
+        "text": "*Comme un murmure, alors que personne n'écoute.*"
     }
 }

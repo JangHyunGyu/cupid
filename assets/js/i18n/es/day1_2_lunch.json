@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Hora del almuerzo. Suena la campana.*"
+        "text": "*Hora del almuerzo. El pasillo está atestado de estudiantes. Me llegan señales desde tres direcciones a la vez.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Tres caminos. Una elección así desde el primer día.*"
+        "text": "*Tres caminos. Una elección así el primer día. En mi anterior instituto no elegía. Lo posponía y se me iba el momento. — Esta vez no.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Desde el principio pensaba comer juntos. — Pero jamás lo diría así.*"
+        "text": "*Desde el principio pensaba comer juntos. Abro la lonchera y los acompañamientos están cuidadosamente hechos. Rollito de huevo, salchicha, mini bolas de arroz.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Esquiva las preguntas con habilidad. — ¿Por qué me preocupa tanto alguien con muros tan gruesos?*"
+        "text": "*Esquiva las preguntas con habilidad. Comemos un rato en silencio. La brisa es agradable. La vista del instituto desde la azotea es — más amplia de lo que pensaba.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -158,11 +158,11 @@
     },
     "lunch_seo_after_5": {
         "name": "{name}",
-        "text": "*Típico de Seoyeon. No una invitación, un permiso. — Pero ¿por qué está sonriendo?*"
+        "text": "*No una invitación, un permiso. Mientras Seoyeon recoge la lonchera — se aparta el pelo con el meñique.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*Su meñique. — No es nada especial, pero mis ojos se van solos.*"
+        "text": "*No es nada especial, pero mis ojos se van solos.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -234,7 +234,7 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "¡No, es que para aguantarme necesitas algo de resistencia! Jaja"
+        "text": "¡No, es que para andar conmigo hay que pasar un test mínimo de resistencia! jaja"
     },
     "lunch_dain_19": {
         "name": "{name}",
@@ -290,11 +290,11 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "¡Soy la primera persona con la que comiste en tu nueva escuela! ¡Recuérdalo!"
+        "text": "¿Primer compañero de comida en tu nueva escuela soy yo? ¡Eso es un récord, un RÉCORD!"
     },
     "lunch_dain_after_5": {
         "name": "{name}",
-        "text": "*Sonríe y me da un puñetazo suave en el hombro.*"
+        "text": "*Sonríe y me da un puñetazo suave en el hombro. Lo dijo tan en serio que asentí sin más.*"
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*¿Eso es permiso? Parece permiso. — Permiso condicional.*"
+        "text": "*¿Permiso? Parece permiso. — Permiso condicional. El silencio se instala. Yuna lee su libro. Como no tengo nada que hacer, recorro las estanterías.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -354,7 +354,7 @@
     },
     "lunch_yuna_18": {
         "name": "{name}",
-        "text": "*Sus frases son cortas. Pero no frías — más bien ahorra palabras. Empaqueta el máximo significado en el mínimo de palabras.*"
+        "text": "*Sus frases son cortas. No frías — más bien las cuida. Leo un rato. Está bastante bien.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna se levanta primero y se va caminando. No mira atrás.*"
+        "text": "*Yuna se levanta primero y se va. No mira atrás. 'Fue agradable.' — Sin motivo, me pongo de buen humor.*"
     },
     "lunch_end": {
         "name": "{name}",

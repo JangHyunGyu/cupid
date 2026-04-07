@@ -50,15 +50,15 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Solo iba de paso. — Que tengas otro día divertido."
+        "text": "Es una ronda. — Y de paso compruebo asistencia."
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*No dejo de caminar. Pero su mirada estaba claramente puesta en mi.*"
+        "text": "*No detuvo el paso. Pero su mirada estaba claramente sobre mí. En el momento en que Seoyeon dobló el pasillo — me pareció ver que se le caía la sonrisa. ¿Imaginación mía?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*Miro el pasillo por donde desapareció Seoyeon — cuando oigo una silla arrastrarse detrás de mí.*"
+        "text": "*Estoy mirando el pasillo por el que desapareció Seoyeon — cuando Minsu se gira detrás de mí.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
@@ -154,7 +154,7 @@
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
-        "text": "*Dice que es un trámite. Esta persona siempre disfraza su interés de asuntos oficiales.*"
+        "text": "*Dice que es algo administrativo.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Profesora",
@@ -190,7 +190,7 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Profesora",
-        "text": "Dain es ruidosa, ¿no? — Siempre es así. Pero no es mala chica. Más bien del tipo que preocupa."
+        "text": "Dain es ruidosa, ¿verdad? — Siempre es así. Pero una cría que arma alboroto y una a la que le sobra energía no son lo mismo."
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
-        "text": "*Dain me da una palmada en el hombro por detrás. Sin dudarlo.*"
+        "text": "*Dain me da una palmada en el hombro desde atrás.*"
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*Sonríe. Pero su mirada se detiene en la nota medio segundo.*"
+        "text": "*Está sonriendo. Pero su mirada se detiene sobre la nota.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
@@ -350,6 +350,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Murmurando cuando nadie escucha. — Esta persona tiene la costumbre de empaquetar su preocupación como 'trabajo'.*"
+        "text": "*Como un murmullo, cuando nadie escucha.*"
     }
 }

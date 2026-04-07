@@ -50,15 +50,15 @@
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "I was just passing by. — Have a fun day today too."
+        "text": "It's a patrol. — And an attendance check."
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*She didn't stop walking. But her eyes were definitely on me.*"
+        "text": "*She didn't stop walking. But her eyes were definitely on me. The moment Seoyeon turned the corner — I thought I saw her smile drop. Imagining it?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*I'm staring at the hallway where Seoyeon disappeared — when I hear a chair scraping behind me.*"
+        "text": "*I'm staring at the hallway where Seoyeon disappeared — when Minsu turns around behind me.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
@@ -154,7 +154,7 @@
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
-        "text": "*She says it's administrative. She always wraps her interest in official business.*"
+        "text": "*She says it's administrative.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Homeroom Teacher",
@@ -190,7 +190,7 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Homeroom Teacher",
-        "text": "Dain's loud, right? — She's always like that. Not a bad kid though. More the type you worry about."
+        "text": "Dain's loud, right? — She's always like that. But there's a difference between a kid who makes a fuss and one who just has too much energy."
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
-        "text": "*Dain slaps my shoulder from behind. No hesitation in her touch.*"
+        "text": "*Dain slaps my shoulder from behind.*"
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*She's smiling. But her eyes linger on the note for half a second.*"
+        "text": "*She's smiling. But her eyes stop on the note.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
@@ -350,6 +350,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Muttering when no one's listening. — This person makes a habit of packaging her concern as 'work.'*"
+        "text": "*Like a mutter, when no one's listening.*"
     }
 }

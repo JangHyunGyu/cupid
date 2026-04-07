@@ -1,11 +1,11 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Avril. Les pétales de cerisier virevoltent dans l'air.*"
+        "text": "*Avril. Les pétales de cerisier virevoltent dans l'air. Mon uniforme est encore raide. L'odeur discrète de l'herbe fraîche. À partir d'aujourd'hui, je suis élève dans ce lycée. Transféré. C'est la première fois.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*À partir d'aujourd'hui, je suis élève dans ce lycée. Transféré. C'est la première fois.*"
+        "text": "*Mon téléphone vibre dans ma poche. Le groupe de discussion de mon ancien lycée. Je vois le nom à l'écran — et je le remets dans ma poche. Pas encore.*"
     },
     "name_input_scene": {
         "name": "Système",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Je me tiens devant un portail inconnu. C'est un assez grand lycée. Des bâtiments propres et une vaste cour.*"
+        "text": "*Je me tiens devant un portail inconnu. Un lycée plutôt grand. Les élèves passent par petits groupes. Je suis le seul dont l'uniforme est encore d'un blanc rigide. Une fille se tient devant le portail. Elle rejette ses longs cheveux noirs d'un geste léger — derrière ses lunettes, sa démarche est tranquille. Aucune trace de précipitation.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -33,7 +33,7 @@
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Suis-moi. Je vais te faire visiter."
+        "text": "Suis-moi. Je t'expédie ça en quinze minutes."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon me guide dans le couloir. Les élèves qui passent la saluent. Elle répond à chacun d'un signe de tête.*"
+        "text": "*Seoyeon me guide dans le couloir. Les élèves qui passent la saluent. Elle leur répond d'un regard à chacun. Elle lève la main pour saluer en retour, l'air naturel. On dirait que les populaires de ce lycée sont déjà désignés.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -150,7 +150,7 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*J'ouvre la porte de la classe. Les regards se déversent sur moi.*"
+        "text": "*J'ouvre la porte de la classe. Les regards se déversent sur moi. Je m'y attendais, mais trente paires d'yeux, ça pèse quand même.*"
     },
     "classroom_3": {
         "name": "Professeure principale",
@@ -158,7 +158,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh ! Un garçon transféré ! Enfin !"
+        "text": "Oh ! Un garçon transféré ! Enfin une nouvelle recrue !"
     },
     "classroom_dain_2": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "classroom_dain_5": {
         "name": "{name}",
-        "text": "*Elle n'a aucun contrôle de volume. Mais son expression est si sincèrement joyeuse qu'on ne peut pas lui en vouloir.*"
+        "text": "*C'est le genre qui n'a aucun contrôle du volume.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Cheveux blanc argenté. Des yeux rouges, mi-clos et nonchalants. Des tatouages couvrent ses bras. — Elle ne regarde même pas dans ma direction. Comme si un élève transféré n'avait rien d'extraordinaire.*"
+        "text": "*Cheveux blanc argenté. Des yeux rouges, mi-clos et nonchalants. Des tatouages couvrent ses bras. — Elle ne regarde même pas dans ma direction. Comme si un élève transféré n'avait rien d'extraordinaire. Les élèves autour d'elle ne tournent pas non plus le regard vers elle. Délibérément. Comme s'il n'y avait personne à cette place.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "C'est juste que j'ai personne pour aller au gymnase après les cours ! J'ai besoin de quelqu'un pour me lancer des balles !"
+        "text": "Comme ça ! J'ai besoin de quelqu'un pour m'entraîner aux réceptions après les cours ! Personne pour me servir des balles !"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "classroom_dain_talk_7": {
         "name": "Dain",
-        "text": "Hahaha, t'es sûrement mieux qu'une machine ! Probablement !"
+        "text": "Hahaha, ton temps de réaction sera forcément meilleur qu'une machine ! Sûrement !"
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
@@ -242,15 +242,15 @@
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Un mot plié atterrit sur mon bureau. — Je me retourne et la fille aux cheveux blanc argenté près de la fenêtre regarde à nouveau dehors. Malgré ses bras couverts de tatouages — l'écriture sur le mot est soignée.*"
+        "text": "*Un mot plié atterrit sur mon bureau. — Je me retourne et la fille aux cheveux blanc argenté près de la fenêtre regarde à nouveau dehors. Malgré ses bras couverts de tatouages — l'écriture sur le mot est soignée. Je le déplie.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'T'es tombé sur la place bruyante. — Yuna'*"
+        "text": "*'T'es tombé sur la place bruyante. — Yuna' Encre violet pâle. — Un peu de la tension retombe.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Je regarde vers Yuna. Elle fixe toujours la fenêtre. Mais j'ai l'impression que le bout de son oreille a bougé.*"
+        "text": "*Je regarde vers Yuna. Elle fixe toujours la fenêtre. Mais j'ai l'impression que le bout de son oreille a bougé. Le mot vient de la fille qui regardait dehors tout à l'heure. Faire semblant de s'en moquer, ou s'en moquer vraiment.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Son dos est droit. Parfaitement droit. — Comme si c'était répété. Ce qui se cache derrière cette décontraction m'a rendu un peu curieux.*"
+        "text": "*Son dos est parfaitement droit. — Ce qui se cache derrière cette aisance, j'aimerais bien le savoir.*"
     },
     "classroom_2_b": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "*Sa voix est sèche. Pas dénuée d'émotion, juste — dosée au strict nécessaire. Étonnamment, ça ne me déplaît pas.*"
+        "text": "Je m'appelle {name}. Enchanté. *Court et net. La professeure hoche la tête.*"
     },
     "classroom_5_b": {
         "name": "Professeure principale",
@@ -286,7 +286,7 @@
     },
     "classroom_5_c": {
         "name": "{name}",
-        "text": "*Personne d'autre n'a entendu. Juste moi. — Est-ce de l'attention, ou simplement une habitude ?*"
+        "text": "*Personne d'autre n'a entendu. Juste moi. D'un coin de la classe — un sifflement.*"
     },
     "classroom_dain_5_b": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "classroom_dain_5_d": {
         "name": "{name}",
-        "text": "*Elle le dit sèchement, mais le coin de ses lèvres se relève imperceptiblement. Son expression par défaut est neutre, mais il y a parfois un bug.*"
+        "text": "*Elle le dit sèchement, mais le coin de ses lèvres se relève imperceptiblement.*"
     },
     "classroom_minsu_2_b": {
         "name": "Minsu",

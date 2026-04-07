@@ -1,142 +1,142 @@
 {
-  "night_start": {
-    "name": "{name}",
-    "text": "*De retour dans ma chambre. Allongé sur le lit.*"
-  },
-  "night_start_3": {
-    "name": "{name}",
-    "text": "*Mon téléphone sonne. La messagerie du lycée.*"
-  },
-  "night_msg_seo_1": {
-    "name": "Seoyeon",
-    "text": "*C’était comment le toit aujourd’hui ?*"
-  },
-  "night_msg_seo_2": {
-    "name": "{name}",
-    "text": "*La brise était agréable*"
-  },
-  "night_msg_seo_3": {
-    "name": "Seoyeon",
-    "text": "*La prochaine fois je préparerai au moins des boissons*"
-  },
-  "night_msg_seo_4": {
-    "name": "Seoyeon",
-    "text": "*...C’est offert*"
-  },
-  "night_msg_seo_5": {
-    "name": "{name}",
-    "text": "*Elle a envoyé « C’est offert » dans un message séparé exprès. — Ça me fait sourire.*"
-  },
-  "night_msg_yuna_1": {
-    "name": "Yuna",
-    "text": "*...Merci d’être resté silencieux aujourd’hui*"
-  },
-  "night_msg_yuna_2": {
-    "name": "Yuna",
-    "text": "*Demain aussi je te garderai ta place*"
-  },
-  "night_msg_yuna_3": {
-    "name": "{name}",
-    "text": "*’Je te garderai ta place.’ — Pour Yuna, c’est la plus grande invitation qu’elle puisse offrir. Ma main repose le téléphone lentement.*"
-  },
-  "night_msg_dain_1": {
-    "name": "Dain",
-    "text": "*La revanche de pierre-feuille-ciseaux c’est DEMAIN !!*"
-  },
-  "night_msg_dain_2": {
-    "name": "Dain",
-    "text": "*Te sauve pas hein mdr*"
-  },
-  "night_msg_dain_3": {
-    "name": "Dain",
-    "text": "*J’ai toujours pas digéré pour le pain sérieux mdrrr*"
-  },
-  "night_msg_dain_4": {
-    "name": "{name}",
-    "text": "*Trois messages d’affilée. Elle peut pas respirer entre les textos ?*"
-  },
-  "night_late_transition": {
-    "name": "{name}",
-    "text": "*J’allais m’endormir quand — mon téléphone sonne encore une fois.*"
-  },
-  "night_late_branch": {
-    "name": "{name}",
-    "text": "*L’écran s’allume.*"
-  },
-  "night_seo_late_1": {
-    "name": "Seoyeon",
-    "text": "*À demain à l’école.*"
-  },
-  "night_seo_late_2": {
-    "name": "Seoyeon",
-    "text": "*— Si tu ne viens pas, je viendrai te chercher*"
-  },
-  "night_seo_late_3": {
-    "name": "{name}",
-    "text": "*« J'irai le chercher. » — Ma main se fige après avoir posé le téléphone.*"
-  },
-  "night_yuna_late_1": {
-    "name": "Yuna",
-    "text": "*...*"
-  },
-  "night_yuna_late_2": {
-    "name": "{name}",
-    "text": "*Juste « ... » et rien d'autre. Comme si elle avait tapé quelque chose et tout effacé.*"
-  },
-  "night_yuna_late_3": {
-    "name": "{name}",
-    "text": "*— J’hésite à répondre, et l’écran s’éteint.*"
-  },
-  "night_yuna_late_4": {
-    "name": "{name}",
-    "text": "*Même après que l’écran s’est éteint, j’ai gardé le téléphone en main un long moment.*"
-  },
-  "night_dain_late_1": {
-    "name": "Dain",
-    "text": "*Hé t’es encore debout hein ?!*"
-  },
-  "night_dain_late_2": {
-    "name": "Dain",
-    "text": "*Je cherche quelqu’un pour le sport matinal !*"
-  },
-  "night_dain_late_3": {
-    "name": "Dain",
-    "text": "*Refuser n’est pas une option mdr*"
-  },
-  "night_dain_late_4": {
-    "name": "{name}",
-    "text": "*Cette personne ne comprend pas le concept de ‘non’ ?*"
-  },
-  "night_end_1": {
-    "name": "{name}",
-    "text": "*J’ai posé mon téléphone.*"
-  },
-  "night_end_3": {
-    "name": "{name}",
-    "text": "*Pas un mauvais premier jour.*"
-  },
-  "night_hidden_check": {
-    "name": "{name}",
-    "text": "*Entre les notifications — j'en remarque d'autres.*"
-  },
-  "night_hidden_homeroom_1": {
-    "name": "{name}",
-    "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Classe 3-2 : Apportez vos affaires de maths pour la 1re heure demain. — Et {name}, si tu t'adaptes bien, c'est l'essentiel.'*"
-  },
-  "night_hidden_homeroom_2": {
-    "name": "{name}",
-    "text": "*Un message personnel dans une annonce de classe ? — Mes lèvres se relèvent malgré moi. J'essaie de le cacher mais je n'y arrive pas.*"
-  },
-  "night_hidden_nurse_1": {
-    "name": "{name}",
-    "text": "*Une alerte s'affiche sur l'appli santé de l'école. 'Dossier de l'infirmerie : {name} — Vertiges (légers). Note : reviens demain si les symptômes persistent. Bois beaucoup d'eau. — le ♥ est d'un intérêt purement médical ^^'*"
-  },
-  "night_hidden_nurse_2": {
-    "name": "{name}",
-    "text": "*Une infirmière qui met des cœurs dans les dossiers médicaux. C'est la première fois que je vois des émojis dans un dossier de santé.*"
-  },
-  "night_dain_late_4_b": {
-    "name": "{name}",
-    "text": "*Une ribambelle d'emojis traîne sous le message de Dain. Chacun est différent.*"
-  }
+    "night_start": {
+        "name": "{name}",
+        "text": "*De retour dans ma chambre. Allongé sur le lit. Pour un premier jour — je suis lessivé. Mais c'est pas mal.*"
+    },
+    "night_start_3": {
+        "name": "{name}",
+        "text": "*Mon téléphone sonne. La messagerie du lycée.*"
+    },
+    "night_msg_seo_1": {
+        "name": "Seoyeon",
+        "text": "*C’était comment le toit aujourd’hui ?*"
+    },
+    "night_msg_seo_2": {
+        "name": "{name}",
+        "text": "*La brise était agréable*"
+    },
+    "night_msg_seo_3": {
+        "name": "Seoyeon",
+        "text": "*La prochaine fois je préparerai au moins des boissons*"
+    },
+    "night_msg_seo_4": {
+        "name": "Seoyeon",
+        "text": "*...C’est offert*"
+    },
+    "night_msg_seo_5": {
+        "name": "{name}",
+        "text": "*Elle a envoyé « C'est offert » sur une ligne séparée exprès.*"
+    },
+    "night_msg_yuna_1": {
+        "name": "Yuna",
+        "text": "*...Merci d’être resté silencieux aujourd’hui*"
+    },
+    "night_msg_yuna_2": {
+        "name": "Yuna",
+        "text": "*Demain aussi je te garderai ta place*"
+    },
+    "night_msg_yuna_3": {
+        "name": "{name}",
+        "text": "*'Je te garderai ta place.' — La main qui repose le téléphone bouge lentement.*"
+    },
+    "night_msg_dain_1": {
+        "name": "Dain",
+        "text": "*La revanche de pierre-feuille-ciseaux c’est DEMAIN !!*"
+    },
+    "night_msg_dain_2": {
+        "name": "Dain",
+        "text": "*Te sauve pas hein mdr*"
+    },
+    "night_msg_dain_3": {
+        "name": "Dain",
+        "text": "*J’ai toujours pas digéré pour le pain sérieux mdrrr*"
+    },
+    "night_msg_dain_4": {
+        "name": "{name}",
+        "text": "*Trois messages d’affilée. Elle peut pas respirer entre les textos ?*"
+    },
+    "night_late_transition": {
+        "name": "{name}",
+        "text": "*J’allais m’endormir quand — mon téléphone sonne encore une fois.*"
+    },
+    "night_late_branch": {
+        "name": "{name}",
+        "text": "*L’écran s’allume.*"
+    },
+    "night_seo_late_1": {
+        "name": "Seoyeon",
+        "text": "*À demain à l’école.*"
+    },
+    "night_seo_late_2": {
+        "name": "Seoyeon",
+        "text": "*— Si tu ne viens pas, je viendrai te chercher*"
+    },
+    "night_seo_late_3": {
+        "name": "{name}",
+        "text": "*La main qui a posé le téléphone s'immobilise.*"
+    },
+    "night_yuna_late_1": {
+        "name": "Yuna",
+        "text": "*...*"
+    },
+    "night_yuna_late_2": {
+        "name": "{name}",
+        "text": "*Juste « ... » et rien d'autre. Comme si elle avait tapé quelque chose et tout effacé.*"
+    },
+    "night_yuna_late_3": {
+        "name": "{name}",
+        "text": "*— J’hésite à répondre, et l’écran s’éteint.*"
+    },
+    "night_yuna_late_4": {
+        "name": "{name}",
+        "text": "*Même après que l’écran s’est éteint, j’ai gardé le téléphone en main un long moment.*"
+    },
+    "night_dain_late_1": {
+        "name": "Dain",
+        "text": "*Hé t’es encore debout hein ?!*"
+    },
+    "night_dain_late_2": {
+        "name": "Dain",
+        "text": "*Je cherche quelqu’un pour le sport matinal !*"
+    },
+    "night_dain_late_3": {
+        "name": "Dain",
+        "text": "*Refuser n’est pas une option mdr*"
+    },
+    "night_dain_late_4": {
+        "name": "{name}",
+        "text": "*Cette personne ne connaît pas le concept de refus ?*"
+    },
+    "night_end_1": {
+        "name": "{name}",
+        "text": "*J'ai posé mon téléphone. Je regarde le plafond. L'odeur des cerisiers reste encore sur mon uniforme.*"
+    },
+    "night_end_3": {
+        "name": "{name}",
+        "text": "*Pas un mauvais premier jour. Demain — ça va sûrement être encore un peu plus marrant.*"
+    },
+    "night_hidden_check": {
+        "name": "{name}",
+        "text": "*Entre les notifications — j'en remarque d'autres.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Classe 3-2 : Apportez vos affaires de maths pour la 1re heure demain. — Et {name}, si tu t'adaptes bien, c'est l'essentiel.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*Un message personnel dans une annonce de classe ? — Les coins de ma bouche se relèvent. J'essaie de cacher mais je n'y arrive pas.*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Une alerte s'affiche sur l'appli santé de l'école. 'Dossier de l'infirmerie : {name} — Vertiges (légers). Note : reviens demain si les symptômes persistent. Bois beaucoup d'eau. — le ♥ est d'un intérêt purement médical ^^'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*Une infirmière qui met des cœurs dans les dossiers médicaux. C'est la première fois que je vois des émojis dans un dossier de santé.*"
+    },
+    "night_dain_late_4_b": {
+        "name": "{name}",
+        "text": "*Une ribambelle d'emojis traîne sous le message de Dain. Chacun est différent.*"
+    }
 }

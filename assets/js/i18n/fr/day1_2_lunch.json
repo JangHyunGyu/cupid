@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. La cloche sonne.*"
+        "text": "*Pause déjeuner. Le couloir est bondé d'élèves. Trois signaux me parviennent de trois directions en même temps.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Trois chemins. Un choix pareil dès le premier jour.*"
+        "text": "*Trois chemins. Un choix pareil dès le premier jour. Dans mon ancienne école, je ne choisissais pas. Je remettais à plus tard et je ratais le moment. — Cette fois, non.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Elle avait prévu de manger ensemble depuis le début. — Mais elle ne le dirait jamais comme ça.*"
+        "text": "*Elle avait prévu de manger ensemble depuis le début. J'ouvre le bento et les accompagnements ont l'air soignés. Omelette roulée, saucisse, mini onigiris.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Elle esquive les questions avec habileté. — Pourquoi est-ce que quelqu'un avec des murs aussi épais m'intrigue autant ?*"
+        "text": "*Elle esquive les questions avec habileté. On mange un moment en silence. La brise est agréable. La vue de l'école depuis le toit est — plus large que je ne pensais.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -158,11 +158,11 @@
     },
     "lunch_seo_after_5": {
         "name": "{name}",
-        "text": "*Du pur Seoyeon. Pas une invitation, une autorisation. — Mais pourquoi elle sourit ?*"
+        "text": "*Pas une invitation, une autorisation. Pendant qu'elle range le bento — elle remet ses cheveux derrière l'oreille avec l'auriculaire.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*Son auriculaire. — Ce n'est rien, mais mes yeux y reviennent sans cesse.*"
+        "text": "*Ce n'est rien, mais mes yeux y reviennent sans cesse.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -234,7 +234,7 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "Non, c’est juste que pour me suivre, faut un minimum d’endurance ! Haha"
+        "text": "Non, c'est juste que pour traîner avec moi faut passer un test d'endurance minimum ! mdr"
     },
     "lunch_dain_19": {
         "name": "{name}",
@@ -290,11 +290,11 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "Je suis la première personne avec qui t’as mangé dans ta nouvelle école ! Retiens-le !"
+        "text": "Premier partenaire de repas dans ta nouvelle école, c'est moi ? C'est un record, un RECORD !"
     },
     "lunch_dain_after_5": {
         "name": "{name}",
-        "text": "*Elle sourit et me donne un petit coup de poing sur l’épaule.*"
+        "text": "*Elle sourit et me donne un petit coup de poing sur l'épaule. Elle l'a dit si sérieusement que j'ai juste hoché la tête.*"
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*C’est une permission ? On dirait une permission. — Permission conditionnelle.*"
+        "text": "*Une permission ? On dirait une permission. — Permission conditionnelle. Le silence s'installe. Yuna lit son livre. N'ayant rien à faire, je parcours les rayonnages.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -354,7 +354,7 @@
     },
     "lunch_yuna_18": {
         "name": "{name}",
-        "text": "*Ses phrases sont courtes. Mais pas froides — plutôt économes. Le maximum de sens dans le minimum de mots.*"
+        "text": "*Ses phrases sont courtes. Pas froides — plutôt économes. Je lis un moment. C'est plutôt bien.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna se lève la première et s’en va. Elle ne se retourne pas.*"
+        "text": "*Yuna se lève la première et s'en va. Elle ne se retourne pas. 'C'était bien.' — Sans raison, ça me met de bonne humeur.*"
     },
     "lunch_end": {
         "name": "{name}",
