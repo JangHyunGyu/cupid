@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*Frente a la puerta del colegio. A lo lejos, tres siluetas.*"
+        "text": "*Frente a la puerta del instituto. A lo lejos veo tres figuras. Seoyeon caminando con Haeun, Dain corriendo mientras lanza una pelota, Yuna leyendo un libro mientras camina despacio. Ninguna mira hacia aquí. — En realidad es un alivio. Ahora mismo no tengo el valor de mirar a nadie a los ojos.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Bueno, ya lo sabía. Fuiste una variable que nunca estuvo en mis planes."
+        "text": "Bueno, me lo esperaba. Desde el principio nunca te moviste según mis cálculos."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon se gira y saluda con la mano. — El mismo gesto que el Día 1. No mira atrás.*"
+        "text": "*Seoyeon se da la vuelta y hace un gesto con la mano. — El mismo gesto del Día 1. No mira atrás. La espalda recta. Perfectamente. — Pero esta vez, no tiembla.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*El sol se está poniendo. Los cinco días llegan a su fin.*"
+        "text": "*El sol se está poniendo. Cinco días llegan a su fin. El atardecer tiñe el patio del instituto. ¿De verdad fueron tan cortos cinco días? — Se acerca el momento de la última elección.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -186,7 +186,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "{name}",
-        "text": "*Caminando uno al lado del otro — dejamos la escuela atrás.*"
+        "text": "*La punta de los dedos que Seoyeon me tiende queda flotando delante de mí. Si no lo digo ahora, lo vuelvo a perder.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",

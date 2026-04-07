@@ -113,11 +113,11 @@
     },
     "wall_seo_14_c": {
         "name": "{name}",
-        "text": "*Seoyeon hört auf zu sprechen. Ihre Hände sind auf den Knien zusammengepresst.*"
+        "text": "*Seoyeon hört auf zu reden. Ihre Hände sind auf den Knien geballt. — Und dann, langsam, ganz langsam, bricht der perfekt gehaltene Ausdruck zusammen. Seoyeons Fingerspitzen zittern.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Tränen laufen ihr aus den Augen. Lautlos. - Seoyeon weint.*"
+        "text": "*Tränen laufen ihr übers Gesicht. Lautlos. — Seoyeon weint. Seoyeon schaut hoch. Sie hat nicht mehr vor, das zerbrochene Gesicht zu verstecken.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*Ich nahm Seoyeon in den Arm.*"
+        "text": "*Ich umarmte Seoyeon. Seoyeon vergrub ihr Gesicht an meiner Brust. Mein Uniformhemd wird nass.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Tief einatmend* Mama hat gesagt: 'Wenigstens du musst perfekt sein, damit diese Familie zusammenhält.'"
+        "text": "*Sie holt Luft* ...Deshalb ist das Tun-als-ob zur Gewohnheit geworden."
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*Im Fenster der Turnhalle brennt Licht. Notbeleuchtung. Jemand dribbelt allein einen Ball. — Ich kann schwach die Trikotnummer erkennen. Es ist Dain.*"
+        "text": "*Im Turnhallenfenster brennt Licht. Notbeleuchtung. Jemand schlägt allein einen Ball. — Ich kann die Rückennummer schwach erkennen. Es ist Dain. ...Um 23 Uhr allein in der Turnhalle? Sie hat mir heute nicht geschrieben.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
@@ -549,7 +549,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*Es ist Yuna. Allein sitzend. Ob sie liest oder einfach nur dasitzt — von hier kann ich es nicht sagen.*"
+        "text": "*Es ist Yuna. Sie sitzt allein. — Mir sackt das Herz. Yuna hat mir heute nicht geschrieben. — Es tut mir leid.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -593,7 +593,7 @@
     },
     "wall_yuna_4": {
         "name": "{name}",
-        "text": "*Yuna geht zum Bibliotheksanbau. An ihrem geheimen Leseplätzchen vorbei — tiefer hinein. Der Archivraum im Keller.*"
+        "text": "*Yuna geht in Richtung Bibliotheks-Anbau. Vorbei an ihrem geheimen Lesezimmer — noch tiefer. Das Kellerarchiv. Zwischen verstaubten Regalen. Yuna holt einen alten Umschlag heraus.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -763,7 +763,7 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon steckt ihr Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Perfekt. Sie zittert nicht. Nicht diesmal.*"
+        "text": "*Seoyeon steckt das Handy in die Tasche und dreht sich um. Der Rücken gerade. Perfekt. — Sie zittert nicht. Diesmal wirklich nicht. Die Nacht kommt auch zu derjenigen, die nicht gewählt wurde. Und sie verbringt diese Nacht allein.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -771,7 +771,7 @@
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...Ich hätte es heute sagen können. Unter diesem Sonnenuntergang war es der perfekte Moment.*"
+        "text": "*...Ich hätte es heute sagen sollen. Diese Person hat zuerst ihr Herz hingehalten, und ich hab wieder die einfachsten Worte nicht rausgebracht. Nur weil es ein Morgen gibt, wird das Heute nicht ausgelöscht. Ich wusste das, und hab es trotzdem aufgeschoben.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "System",
@@ -823,7 +823,7 @@
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Eine Nachricht von der Schulkrankenschwester kam an. 23 Uhr. Nur ein Satz.*"
+        "text": "*Eine Lesebestätigung erscheint. Zehn Sekunden. Zwanzig Sekunden. Keine weitere Nachricht. — Eine Minute später.*"
     },
     "night_nurse_msg_3": {
         "name": "Schulkrankenschwester",

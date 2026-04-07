@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Heure du déjeuner. Aujourd’hui, chose inhabituelle — les trois se sont retrouvées au même endroit.*"
+        "text": "*Pause déjeuner. Aujourd'hui, fait inhabituel — les trois sont réunies à une seule table. {name} sort son bento. Seoyeon s'assoit naturellement à côté, Dain se laisse tomber en face, et Yuna se glisse depuis le coin en grignotant son propre pain.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -33,15 +33,15 @@
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna reprend ses baguettes en silence. Plus vite qu’avant.*"
+        "text": "*Yuna prend ses baguettes en silence. Plus vite qu'avant. Je me suis fait piller. Par les trois en même temps.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Il ne reste qu’un accompagnement. La dernière omelette.*"
+        "text": "*Il reste un seul accompagnement. Le dernier morceau d'omelette roulée. J'ai proposé qu'on partage. — L'air est devenu lourd.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
-        "text": "*À qui la donner ?*"
+        "text": "*À qui le donner ?*"
     },
     "lunch3_choice": {
         "name": "{name}",
@@ -103,11 +103,11 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "Ah oui ! {name}, on devait aller à la salle d’arcade ce week-end !! On mange quoi avant ?!"
+        "text": "Ah, c'est vrai ! {name}, t'as dit qu'on irait à la salle d'arcade ce week-end !! On mange quoi avant d'y aller ?!"
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*— Je me suis figé.*"
+        "text": "*— Je me suis figé. Les mains des deux autres s'arrêtent.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "lunch3_expose_12": {
         "name": "{name}",
-        "text": "*Trois paires de baguettes se figent. Le bruit de la cantine semble soudain très loin.*"
+        "text": "*Trois paires de baguettes se figent. Le bruit de la cafétéria semble soudain lointain. À la table d'à côté, Minsu nous regarde. Il secoue la tête.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -208,7 +208,7 @@
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Derrière moi, le silence des trois me transperce le dos.*"
+        "text": "*Derrière moi, le silence des trois me transperce le dos. La pause déjeuner s'est terminée, et les cours de l'après-midi ont repris. Le crissement de la craie au tableau résonnait étrangement loin. Je sens un regard se poser sur mon dos. — Il reste une histoire pas encore finie.*"
     },
     "lunch3_end": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna passe dans le couloir et jette un œil dans le gymnase. Dain rit. Yuna accélère le pas.*"
+        "text": "*Yuna passe dans le couloir et jette un œil au gymnase. Dain rit. Yuna accélère le pas. À la pause suivante, la place de Yuna est vide.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {

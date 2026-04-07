@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "Das warst du wirklich, Seoyeon. Diese Seoyeon mag ich."
+        "text": "Nicht als Schülersprecherin, sondern Momente, in denen du einfach Seoyeon warst. Die hab ich gemocht."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -133,10 +133,10 @@
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*Mein Atem wird flacher. Der Raum fühlt sich kleiner an. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
+        "text": "*Mein Atem ist kürzer geworden. Dass diese Stille angenehm war — lag daran, dass es Yuna war. Das muss ich sagen.*",
         "choices": [
-            "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
-            "...Dieser Ort ist wirklich schön."
+            "Yuna. Lass mich dich eine Sache fragen.",
+            "...Hier ist es wirklich schön."
         ]
     },
     "confess_yuna_yes_1": {
@@ -241,10 +241,10 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*Der Boden der Turnhalle scheint zu schwanken. Wenn ich es jetzt nicht sage — werde ich diesen Mut nie wieder haben.*",
+        "text": "*Der Hallenboden scheint zu wanken. — Ich kenne das Zittern hinter den Ausrufezeichen dieser Person.*",
         "choices": [
-            "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
-            "...Noch eine Runde?"
+            "Dain. Leg den Ball weg.",
+            "...Spielen wir noch eine Runde?"
         ]
     },
     "confess_dain_yes_1": {

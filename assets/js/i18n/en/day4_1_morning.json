@@ -161,7 +161,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*The school nurse posted 'looking for helpers' on the school messenger. My feet are already heading to school.*"
+        "text": "*The school nurse posted 'looking for helpers' on the school messenger. My feet are already heading to school. The nurse's office. The desk is piled with paperwork and check-up tools. The nurse is calmly sorting things.*"
     },
     "hidden_nurse_d4_2": {
         "name": "School Nurse",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Sunday morning. I head to the nurse's office out of habit. — When did this become a habit?*"
+        "text": "*Sunday morning. I head to the nurse's office out of habit. — When did this become a habit? I opened the door. The school nurse is in her chair. White coat. — But she's different from usual. No playfulness.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
@@ -315,7 +315,7 @@
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*I checked the mirror three times. Changed clothes twice. What am I doing.*"
+        "text": "*I take a deep breath and check the date messages again.*"
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
@@ -331,7 +331,7 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Weekend morning. A few notifications waiting. — I thought it would be an ordinary day.*"
+        "text": "*Weekend morning. A few notifications waiting. — I thought it would be an ordinary day. I put down the phone and stretch. Either way, today's starting too.*"
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*She turns away. Her shoulders droop slightly.*"
+        "text": "*The teacher turns away. — Her shoulders are slightly slumped. I declined, so why does it feel like this. I went home.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*She knows the weight of being called by name. Because she was called by numbers at the hospital.*"
+        "text": "*She knows the weight of being called by name. Because she was called by numbers at the hospital. We finished sorting the papers. The nurse stretches.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*She added really. When this person adds really, it means everything before it was sincere.*"
+        "text": "*She added 'really.' — When this person adds 'really,' it means everything before it was sincere. She brushed it off with 'whatever,' but couldn't quite meet my eyes for a moment. She's bad at hiding it this time too.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

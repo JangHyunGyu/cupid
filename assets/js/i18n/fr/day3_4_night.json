@@ -45,7 +45,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*J’ai rêvé. — Je marchais côte à côte avec quelqu’un.*"
+        "text": "*J'ai fait un rêve. — Je marchais à côté de quelqu'un. Je ne voyais pas son visage, mais étrangement je n'étais pas anxieux.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*...Moi, ça va. Fais ce que tu ne regretteras pas.*"
+        "text": "*J'aimerais juste que tu ne prennes pas à la légère le choix de qui tu vas soutenir.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -85,7 +85,7 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*Je me suis endormi. — Un rêve.*"
+        "text": "*Je me suis endormi. — Un rêve. Je suis debout dans le noir. Je ne vois rien.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -126,11 +126,11 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*J’ai tendu la main. — Je ne peux pas l’attraper.*"
+        "text": "*J'ai tendu la main. — Je n'attrape rien. Toutes ont disparu, il ne reste que l'obscurité.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*— Je me suis réveillé trempé de sueur. 3 heures du matin. Je vois le plafond.*"
+        "text": "*— Je me suis réveillé trempé de sueur. 3h du matin. Je vois le plafond. J'ai sorti mon téléphone. La galerie. Je scrolle encore. — La photo de Sojeong.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
@@ -138,23 +138,23 @@
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Elle sourit. Dans la photo de groupe, elle me regarde en souriant. Sans rien savoir.*"
+        "text": "*Elle sourit. Elle me sourit dans la photo de groupe. Comme pour demander de l'aide. Je m'étais dit que cette fois je ne détournerais pas les yeux. Que dans ce lycée je ne resterais pas silencieux.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— Je ne fuirai pas. Cette fois, à une seule personne.*"
+        "text": "*— Je ne fuirai pas. Cette fois, une seule personne. J'ai fait un rêve. — Je marchais à côté de quelqu'un. Je ne voyais pas son visage, mais étrangement je n'étais pas anxieux.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*J’ai ouvert les yeux. La lumière du matin passe entre les rideaux. — Le rêve de cette nuit était beau.*"
+        "text": "*J'ai ouvert les yeux. La lumière du matin filtre à travers les rideaux. — Le rêve d'aujourd'hui était bon. J'ai sorti mon téléphone. Ouvert la galerie. La photo de Sojeong. — J'ai arrêté de scroller, et appuyé longuement.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*Je l'avais gardée parce que la supprimer, c'était comme effacer ces sentiments aussi. Mais maintenant ce n'est plus de l'attachement — c'est juste un souvenir. — Son rôle est terminé.*"
+        "text": "*Je l'avais gardée parce que j'avais l'impression que la supprimer effacerait aussi les sentiments. Mais maintenant ce n'est plus de l'attachement — c'est une trace. — Son rôle est fini.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Cette fois c'est différent. Je ne parlerai qu'à une seule personne. Aux autres — je serai clair.*"
+        "text": "*Cette fois, c'est différent. Si je vois, je parle. Si je sais, je m'avance. À une seule personne, clairement — La galerie est vide. La place où était la photo de Sojeong. L'écran vide est encore plus net que la photo.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -190,19 +190,19 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*L'exact opposé de ce qui s'est passé avec Sojeong, mais le résultat est le même. Quelqu'un souffre.*"
+        "text": "*Pareil qu'avec Sojeong. Je savais et je suis resté silencieux. Dans mon ancienne école j'ai regardé Sojeong s'effondrer la bouche fermée. Dans ce lycée — encore.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Ce lycée : le regret d'avoir trop dit.*"
+        "text": "*Ce lycée : regret d'avoir trop dit. Au final, le problème n'est pas 'parler ou se taire' — c'est 'à qui'.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.'*"
+        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.' Seoyeon l'a dit. 'Je ne serai pas une parmi plusieurs.'*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna l'a dit. 'Ne fuis pas.'*"
+        "text": "*Yuna l'a dit. 'Ne fuis pas.' Alors cette fois, ça doit être différent. Ne pas choisir — c'est comme tout perdre.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Une seconde. Je ne fais que fixer l'?cran.*"
+        "text": "*Une seconde. Je fixe juste l'écran. Les graffitis sur le bureau de Sojeong me reviennent. Et — les 38 matins où j'ai détourné le regard.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.' Il a raison. Dans mon ancien lycée, Sojeong n'a même jamais eu la chance de me rejeter. Parce que je n'ai rien dit. — C'était la fin la plus cruelle pour nous deux.*"
+        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.' Dans mon ancienne école, Sojeong a disparu sans avoir reçu la moindre aide. Parce que j'avais fermé ma bouche. — C'était la fin la plus cruelle pour Sojeong comme pour moi. Si une seule de ces 38 notes avait été envoyée — Sojeong n'aurait peut-être pas quitté l'école.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",

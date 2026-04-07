@@ -48,11 +48,11 @@
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
-        "text": "*I pass by the library. Yuna's seat is empty. One note remains. '...Okay.' Too short. The edge of the paper is slightly crumpled.*"
+        "text": "*I pass by the library. Yuna's seat is empty. One note remains. Pale violet ink. — 'I waited. Two hours. I won't wait any longer.'*"
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*I step back into the hallway. Dain's sentence without exclamation marks, Yuna's too-short note with a crumpled edge. — The weight of my choice settles on my shoulders.*"
+        "text": "*I step out to the hallway. Dain's sentence with no exclamation marks, Yuna's library with every trace erased. — Things that can't be undone are starting to pile up.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -100,11 +100,11 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*I walked back to the hallway.*"
+        "text": "*I walked back to the hallway. Seoyeon's practiced smile, the water ring Yuna left behind. — The one who said nothing leaves a longer mark.*"
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*I opened the student council room door. — Seoyeon is slumped over the desk.*"
+        "text": "*I opened the student council room door. — Seoyeon is slumped over the desk. First time I've ever seen her like this. The perfect student council president — defenseless on the desk.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -138,8 +138,8 @@
         "name": "Seoyeon",
         "text": "Next time I ask you for a favor, you have to say yes. No questions asked. — Consider it payment.",
         "choices": [
-            "You don’t have to be perfect, you know",
-            "I’ll keep your secret"
+            "You don't have to be perfect. Anyone gets like this.",
+            "...Just now? I didn't see anything. I dropped my pen and came in to pick it up."
         ]
     },
     "after3_seo_end": {
@@ -152,11 +152,11 @@
     },
     "after3_yuna_2": {
         "name": "{name}",
-        "text": "*I go in, but Yuna isn’t here. Instead — a notebook lies open on the sofa. Filled with handwriting.*"
+        "text": "*I go in, but Yuna isn't here. Instead — a notebook lies open on the sofa. Filled with handwriting. It's a novel. A novel Yuna wrote. — Should I read it?*"
     },
     "after3_yuna_4": {
         "name": "{name}",
-        "text": "*First page.*"
+        "text": "*First page. 'One day a transfer student came. He found the library and sat next to me without saying a word. — I didn't mind it.'*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -182,8 +182,8 @@
         "name": "{name}",
         "text": "I was enjoying the read.",
         "choices": [
-            "You might want to change the protagonist’s name though",
-            "How does it end?"
+            "This is about me, isn't it? 'A transfer student who sat without a word' — that's me.",
+            "This author is really good. Is there a sequel? I'd love to borrow it."
         ]
     },
     "after3_yuna_end": {
@@ -192,7 +192,7 @@
     },
     "after3_dain_1": {
         "name": "{name}",
-        "text": "*The gym. Dain is stretching alone. She tries a light jog and —*"
+        "text": "*The gym. Dain is stretching alone. She tries a light jog and — — her right leg twists slightly. She winces.*"
     },
     "after3_dain_3": {
         "name": "{name}",

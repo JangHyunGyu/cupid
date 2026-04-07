@@ -113,11 +113,11 @@
     },
     "wall_seo_14_c": {
         "name": "{name}",
-        "text": "*Seoyeon stops talking. Her hands are clenched on her knees.*"
+        "text": "*Seoyeon stops talking. Her hands are clenched on her knees. — And then slowly, very slowly, the perfectly held expression breaks down. Seoyeon's fingertips tremble.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Tears run down her face. Silently. - Seoyeon is crying.*"
+        "text": "*Tears run down her face. Silently. — Seoyeon is crying. Seoyeon looks up. The collapsed expression isn't something she's planning to hide anymore.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*I held Seoyeon.*"
+        "text": "*I held Seoyeon. Seoyeon buried her face in my chest. My uniform shirt gets wet.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Taking a deep breath* Mom said, 'At least you have to be perfect for this family to hold together.'"
+        "text": "*Taking a deep breath* ...That's why pretending to be perfect became a habit."
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*There's a light on in the gym window. Emergency lights. Someone is bouncing a ball alone. — I can faintly make out the jersey number. It's Dain.*"
+        "text": "*There's a light on in the gym window. Emergency lights. Someone is bouncing a ball alone. — I can faintly make out the jersey number. It's Dain. ...At 11 PM, alone in the gym? She didn't message me today.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
@@ -549,7 +549,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*It's Yuna. Sitting alone. — My heart sinks.*"
+        "text": "*It's Yuna. Sitting alone. — My heart sinks. Yuna didn't message me today. — I'm sorry.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -593,7 +593,7 @@
     },
     "wall_yuna_4": {
         "name": "{name}",
-        "text": "*Yuna heads toward the library annex. Past her secret reading spot — deeper in. The basement archives.*"
+        "text": "*Yuna heads toward the library annex. Past her secret reading spot — deeper in. The basement archives. Between dusty shelves. Yuna pulls out an old envelope.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -763,7 +763,7 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon puts her phone in her pocket and turns around. Her back is straight. Perfectly. She's not trembling. Not this time.*"
+        "text": "*Seoyeon puts her phone in her pocket and turns around. Her back is straight. Perfectly. — She's not trembling. Not this time, for real. The night still comes for the one who wasn't chosen. And she's spending that night alone.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -771,7 +771,7 @@
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...I could have said it today. Under that sunset, it was the perfect moment.*"
+        "text": "*...I should have said it today. That person was reaching out first, and I failed to say the easiest words again. Just because tomorrow exists doesn't erase today. I knew that, and I still put it off.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "System",
@@ -823,7 +823,7 @@
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*A message from the school nurse came through. 11 PM. Just one sentence.*"
+        "text": "*Read receipt appears. Ten seconds. Twenty seconds. No follow-up message. — One minute later.*"
     },
     "night_nurse_msg_3": {
         "name": "School Nurse",

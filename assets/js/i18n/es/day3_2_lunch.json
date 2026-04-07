@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Hora del almuerzo. Hoy, curiosamente — las tres se reunieron en un mismo lugar.*"
+        "text": "*Hora del almuerzo. Hoy, raro — los tres están reunidos en una misma mesa. {name} abre la lonchera. Seoyeon se sienta a su lado con naturalidad, Dain se deja caer enfrente, y Yuna se acopla desde un rincón mientras mordisquea su propio pan.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -33,15 +33,15 @@
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna recoge los palillos en silencio. Más rápido que antes.*"
+        "text": "*Yuna toma los palillos en silencio. Más rápido que antes. Me han saqueado. Los tres a la vez.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Solo queda un acompañamiento. El último rollito de huevo.*"
+        "text": "*Queda un solo acompañamiento. El último trozo de rollito de huevo. Dije compartámoslo entre todos. — El aire se puso pesado.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
-        "text": "*¿A quién se la doy?*"
+        "text": "*¿A quién se lo doy?*"
     },
     "lunch3_choice": {
         "name": "{name}",
@@ -103,11 +103,11 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "¡Ah, cierto! ¡{name}, quedamos en ir a los recreativos este fin de semana!! ¿Qué comemos antes?!"
+        "text": "¡Ah, es verdad! ¡{name}, dijiste que ibas a ir conmigo a los recreativos este finde! ¡¿Qué comemos antes de ir?!"
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*— Me quedé helado.*"
+        "text": "*— Me quedé congelado. Las manos de los otros dos se detienen.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "lunch3_expose_12": {
         "name": "{name}",
-        "text": "*Tres pares de palillos se detienen en el aire. El ruido de la cafetería de repente suena lejano.*"
+        "text": "*Tres pares de palillos se quedan quietos. El ruido del comedor de pronto suena lejos. En la mesa de al lado, Minsu nos está mirando. Niega con la cabeza.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -208,7 +208,7 @@
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*A mis espaldas, el silencio de las tres se clava como cuchillos.*"
+        "text": "*A mis espaldas, el silencio de las tres se me clava en la espalda. Acabó el almuerzo y siguieron las clases de la tarde. El sonido de la tiza en la pizarra sonaba extrañamente lejano. Siento la mirada de alguien clavada en mi espalda. — Queda una historia que aún no ha terminado.*"
     },
     "lunch3_end": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna pasa por el pasillo y mira dentro del gimnasio. Dain está riendo. Yuna apura el paso.*"
+        "text": "*Yuna pasa por el pasillo y echa un vistazo al gimnasio. Dain está riendo. Yuna acelera el paso. En el siguiente recreo, el sitio de Yuna está vacío.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {

@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "Esa eras tú de verdad, Seoyeon. Esa es la Seoyeon que me gusta."
+        "text": "No como presidenta del consejo, había momentos en los que solo parecías Seoyeon. Esos eran los que me gustaban."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -133,10 +133,10 @@
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*Mi respiración se acorta. La habitación parece más pequeña. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
+        "text": "*Se me ha cortado la respiración. Si este silencio era cómodo — era porque era Yuna. Tengo que decirlo.*",
         "choices": [
-            "Yuna. Quiero preguntarte algo.",
-            "...Este lugar es realmente bonito."
+            "Yuna. Déjame preguntarte una cosa.",
+            "...Este sitio está muy bien."
         ]
     },
     "confess_yuna_yes_1": {
@@ -241,10 +241,10 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*El suelo del gimnasio parece temblar. Si no lo digo ahora — creo que nunca volveré a tener este valor.*",
+        "text": "*El suelo del gimnasio parece temblar. — Conozco el temblor que se esconde detrás de los signos de exclamación de esta persona.*",
         "choices": [
             "Dain. Suelta la pelota.",
-            "...¿Jugamos otra ronda?"
+            "...¿Echamos otra?"
         ]
     },
     "confess_dain_yes_1": {

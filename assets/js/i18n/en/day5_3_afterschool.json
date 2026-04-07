@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly.*"
+        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly. None of them is looking my way. — That's actually a relief. Right now I don't have the guts to meet anyone's eyes.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Well, I knew. You were a variable not in my plan."
+        "text": "Well, I expected it. You never moved according to my calculations from the start."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon turns and waves. — The same gesture as Day 1. She doesn't look back.*"
+        "text": "*Seoyeon turns and waves. — Same gesture as Day 1. She doesn't look back. Her back is straight. Perfectly. — But this time, she's not trembling.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*The sun is setting. Five days are coming to an end.*"
+        "text": "*The sun is setting. Five days are coming to an end. Sunset paints the schoolyard. Were five days really this short? — The moment of the last choice is approaching.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -186,7 +186,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "{name}",
-        "text": "*Walking side by side — we leave the school behind.*"
+        "text": "*Seoyeon's outstretched fingertip hovers in front of me. If I don't say it now, I'll lose it again.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",

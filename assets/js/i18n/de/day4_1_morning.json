@@ -161,7 +161,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*Die Schulkrankenschwester hat im Schul-Chat 'Suche Helfer' gepostet. Meine Füße tragen mich zur Schule.*"
+        "text": "*Die Krankenschwester hat im Schul-Messenger 'Suche Helfer' gepostet. Meine Füße bewegen sich schon Richtung Schule. Krankenzimmer. Auf dem Schreibtisch liegen Papiere und Untersuchungsgeräte. Die Krankenschwester sortiert ruhig.*"
     },
     "hidden_nurse_d4_2": {
         "name": "Schulkrankenschwester",
@@ -173,7 +173,7 @@
     },
     "hidden_nurse_d4_4": {
         "name": "Schulkrankenschwester",
-        "text": "...Im Krankenhaus hab ich das alles alleine gemacht. Nachtschichten — manchmal eine Schwester für drei."
+        "text": "...Im Krankenhaus hab ich das alles allein gemacht. In Nachtschichten — manchmal Tage, an denen eine Schwester die Arbeit von dreien gemacht hat."
     },
     "hidden_nurse_d4_5": {
         "name": "Schulkrankenschwester",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Sonntagmorgen. Ich gehe aus Gewohnheit zum Krankenzimmer. — Seit wann ist das zur Gewohnheit geworden?*"
+        "text": "*Sonntagmorgen. Aus Gewohnheit gehe ich zum Krankenzimmer. — Seit wann ist das eine Gewohnheit? Ich öffnete die Tür. Die Krankenschwester sitzt auf ihrem Stuhl. Weißer Kittel. — Aber sie ist anders als sonst. Keine Verspieltheit.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Schulkrankenschwester",
@@ -315,7 +315,7 @@
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
-        "text": "*Drei Mal in den Spiegel geschaut. Zweimal umgezogen. Was mache ich hier.*"
+        "text": "*Ich atme tief durch und schaue mir die Date-Nachrichten noch mal an.*"
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
@@ -331,7 +331,7 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Wochenendmorgen. Ein paar Benachrichtigungen. — Ich dachte, es würde ein gewöhnlicher Tag werden.*"
+        "text": "*Wochenendmorgen. Ein paar Benachrichtigungen warten. — Ich dachte, es wird ein gewöhnlicher Tag. Ich lege das Handy weg und strecke mich. Wie auch immer, heute fängt ja auch an.*"
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*Sie dreht sich um. Ihre Schultern sacken leicht herab.*"
+        "text": "*Die Lehrerin dreht sich weg. — Ihre Schultern hängen leicht. Ich hab abgelehnt, warum fühlt es sich dann so an. Ich bin nach Hause gegangen.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Schulkrankenschwester",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Sie weiß, was es bedeutet, beim Namen gerufen zu werden. Weil sie im Krankenhaus nur mit Nummern angesprochen wurde.*"
+        "text": "*Sie weiß, was es bedeutet, beim Namen genannt zu werden. — Weil sie im Krankenhaus mit Nummern angesprochen wurde. Wir sind mit dem Sortieren fertig. Die Krankenschwester streckt sich.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*Sie hat wirklich hinzugefügt. Wenn diese Person wirklich anfügt, bedeutet das, dass alles davor aufrichtig gemeint war.*"
+        "text": "*Sie hat 'wirklich' hinzugefügt. — Wenn diese Person 'wirklich' hinzufügt, heißt das, alles davor war ernst gemeint. Sie hat es mit 'was redest du da' abgetan, aber für einen Moment konnte sie mir nicht in die Augen schauen. Sie kann es auch diesmal nicht gut verbergen.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

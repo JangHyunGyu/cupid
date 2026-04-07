@@ -45,7 +45,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Ich hatte einen Traum. — Ich ging Seite an Seite mit jemandem.*"
+        "text": "*Ich hatte einen Traum. — Ich ging neben jemandem her. Ich konnte das Gesicht nicht sehen, aber seltsamerweise war ich nicht ängstlich.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*...Mir geht's gut. Mach das, was du nicht bereuen wirst.*"
+        "text": "*Ich hoffe nur, dass du die Entscheidung, an wessen Seite du stehst, nicht leichtnimmst.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -85,7 +85,7 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*Ich schlief ein. — Ein Traum.*"
+        "text": "*Ich bin eingeschlafen. — Ein Traum. Ich stehe im Dunkeln. Ich sehe nichts.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -126,11 +126,11 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*Ich streckte die Hand aus. — Ich kann sie nicht greifen.*"
+        "text": "*Ich streckte die Hand aus. — Ich kann nichts greifen. Alle sind verschwunden, übrig ist nur die Dunkelheit.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*— Schweißgebadet wachte ich auf. 3 Uhr morgens. Ich sehe die Decke.*"
+        "text": "*— Ich wachte schweißgebadet auf. 3 Uhr morgens. Ich sehe die Decke. Ich holte das Handy raus. Die Galerie. Scrolle wieder. — Sojeongs Foto.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
@@ -138,23 +138,23 @@
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Sie lächelt. Im Gruppenfoto schaut sie mich an und lächelt. Ohne irgendetwas zu ahnen.*"
+        "text": "*Sie lächelt. Sie lächelt mich auf dem Gruppenfoto an. Als würde sie um Hilfe bitten. Ich hatte mir gesagt, dass ich diesmal nicht wegschauen würde. Dass ich an dieser Schule nicht schweigen würde.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— Ich werde nicht weglaufen. Diesmal nur einer einzigen Person.*"
+        "text": "*— Ich werde nicht weglaufen. Diesmal nur einer Person. Ich hatte einen Traum. — Ich ging neben jemandem her. Ich konnte das Gesicht nicht sehen, aber seltsamerweise war ich nicht ängstlich.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Die Augen geöffnet. Morgenlicht fällt durch die Vorhänge. — Der Traum heute Nacht war schön.*"
+        "text": "*Ich öffnete die Augen. Morgenlicht sickert durch die Vorhänge. — Der Traum heute war ein guter. Ich holte das Handy raus. Öffnete die Galerie. Sojeongs Foto. — Ich hörte auf zu scrollen und drückte lange.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*Ich hatte es behalten, weil es sich anfühlte, als würden die Gefühle von damals mit verschwinden. Aber jetzt ist es kein Festhalten mehr — nur noch eine Erinnerung. — Seine Aufgabe ist erfüllt.*"
+        "text": "*Ich hab es behalten, weil sich Löschen so anfühlte, als würde ich auch die Gefühle löschen. Aber jetzt ist es kein Anhaften mehr — es ist nur noch eine Aufzeichnung. — Seine Rolle ist vorbei.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Diesmal ist es anders. Ich werde nur einer Person etwas sagen. Den anderen — werde ich klar Bescheid geben.*"
+        "text": "*Diesmal ist es anders. Wenn ich es sehe, sage ich es. Wenn ich es weiß, trete ich vor. Für eine Person ganz klar — Die Galerie ist leer. Der Platz, wo Sojeongs Foto war. Der leere Bildschirm ist schärfer als das Foto je war.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -190,19 +190,19 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Das genaue Gegenteil von dem, was mit Sojeong passiert ist, aber das Ergebnis ist dasselbe. Jemand wird verletzt.*"
+        "text": "*Wie damals bei Sojeong. Ich wusste es und schwieg. An der alten Schule habe ich zugesehen, wie Sojeong zerbricht, und den Mund gehalten. An dieser Schule — wieder.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Diese Schule: Reue, weil ich zu viel gesagt habe.*"
+        "text": "*Diese Schule: Bedauern davon, allen zu sagen. Am Ende ist die Frage nicht 'reden oder schweigen' — sondern 'wem'.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu hat es gesagt. 'Nein zu sagen ist auch Liebe.'*"
+        "text": "*Minsu hat es gesagt. 'Ablehnen ist auch Liebe.' Seoyeon hat es gesagt. 'Ich werde keine von vielen sein.'*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna hat es gesagt. 'Lauf nicht weg.'*"
+        "text": "*Yuna hat es gesagt. 'Lauf nicht weg.' Diesmal muss es also anders sein. Nicht zu wählen — ist dasselbe wie alles zu verlieren.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Eine Sekunde. Ich starre nur auf den Bildschirm.*"
+        "text": "*Eine Sekunde. Ich starre nur auf den Bildschirm. Die Schmierereien auf Sojeongs Tisch kommen mir wieder in den Sinn. Und — die 38 Morgen, an denen ich weggesehen habe.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu hat es gesagt. 'Nein zu sagen ist auch Liebe.' Er hat recht. An meiner alten Schule hatte Sojeong nie die Chance, mich abzulehnen. Weil ich den Mund gehalten habe. — Das war das grausamste Ende für uns beide.*"
+        "text": "*Minsu hat es gesagt. 'Ablehnen ist auch Liebe.' An meiner alten Schule ist Sojeong verschwunden, ohne dass jemand ihr geholfen hätte. Weil ich den Mund gehalten habe. — Das war für Sojeong und für mich das unfreundlichste Ende. Wenn auch nur eine dieser 38 Notizen abgeschickt worden wäre — wäre Sojeong vielleicht nicht gegangen.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
