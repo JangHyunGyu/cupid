@@ -452,56 +452,11 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_dain_react_6": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_angry.png",
-        "next": "morning2_haeun_1"
-    },
-    "morning2_haeun_1": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_2"
-    },
-    "morning2_haeun_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_3"
-    },
-    "morning2_haeun_3": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_4"
-    },
-    "morning2_haeun_4": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_5"
-    },
-    "morning2_haeun_5": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_6"
-    },
-    "morning2_haeun_6": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_6_b"
-    },
-    "morning2_haeun_6_b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_6b"
-    },
-    "morning2_haeun_6b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
-        "next": "morning2_haeun_6c"
-    },
-    "morning2_haeun_6c": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
         "next": "morning2_end"
     },
     "morning2_end": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch2_start"
     }
     };

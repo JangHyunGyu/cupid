@@ -88,7 +88,7 @@
     "minsu_cheer_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_2",
       "_ko_name": "민수",
-      "_ko_text_preview": "잘하고 와.",
+      "_ko_text_preview": "잘하고 와ㅋㅋ",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_2",
@@ -152,42 +152,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "minsu_cheer_4": {
-      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*짧다. 그런데 '잘하고 와'가 묵직하다. Day 2에 '전 학교에서도 ...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day4_1_morning.json#minsu_cheer_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day4_1_morning.json#minsu_cheer_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day4_1_morning.json#minsu_cheer_4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -2497,42 +2461,6 @@
         "_issues": null
       }
     },
-    "minsu_cheer_4_b": {
-      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_4_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*경고에서 직면으로, 직면에서 응원으로. — 민수가 나보다 먼저 나를 믿...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day4_1_morning.json#minsu_cheer_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day4_1_morning.json#minsu_cheer_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day4_1_morning.json#minsu_cheer_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_4_ins",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "minsu_cheer_4_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_4_ins2",
       "_ko_name": "{name}",
@@ -2744,150 +2672,6 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_1_ins3",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "minsu_cheer_1_e": {
-      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_1_ins4",
-      "_ko_name": "민수",
-      "_ko_text_preview": "*근데 야*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_1_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day4_1_morning.json#minsu_cheer_1_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day4_1_morning.json#minsu_cheer_1_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day4_1_morning.json#minsu_cheer_1_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_1_ins4",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "minsu_cheer_1_f": {
-      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_1_ins5",
-      "_ko_name": "민수",
-      "_ko_text_preview": "*한 명만 가라*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_1_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day4_1_morning.json#minsu_cheer_1_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day4_1_morning.json#minsu_cheer_1_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day4_1_morning.json#minsu_cheer_1_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_1_ins5",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "minsu_cheer_1_g": {
-      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_1_ins6",
-      "_ko_name": "민수",
-      "_ko_text_preview": "*진짜 알아?*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_1_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day4_1_morning.json#minsu_cheer_1_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day4_1_morning.json#minsu_cheer_1_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day4_1_morning.json#minsu_cheer_1_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_1_ins6",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
-    "minsu_cheer_1_h": {
-      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_1_ins7",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*...이번엔 진짜로*",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_1_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day4_1_morning.json#minsu_cheer_1_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day4_1_morning.json#minsu_cheer_1_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day4_1_morning.json#minsu_cheer_1_ins7",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_1_ins7",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

@@ -144,41 +144,9 @@
         "name": "{name}",
         "text": "*War wahrscheinlich welcher da. Vielleicht. — Aber darum geht's wohl nicht.*"
     },
-    "morning2_haeun_1": {
-        "name": "{name}",
-        "text": "*Im Flur, wo Seoyeon verschwunden ist — ein Mädchen mit einem Schülerrats-Armband kommt näher.*"
-    },
-    "morning2_haeun_2": {
-        "name": "Haeun",
-        "text": "Entschuldigung, du bist der neue Schüler, oder? Ich bin Haeun, die Vizepräsidentin des Schülerrats."
-    },
-    "morning2_haeun_3": {
-        "name": "{name}",
-        "text": "Ah, ja."
-    },
-    "morning2_haeun_4": {
-        "name": "Haeun",
-        "text": "Die Schülersprecherin... also Seoyeon scheint sich in letzter Zeit etwas verändert zu haben."
-    },
-    "morning2_haeun_5": {
-        "name": "{name}",
-        "text": "Verändert wie?"
-    },
-    "morning2_haeun_6": {
-        "name": "Haeun",
-        "text": "Normalerweise ist sie nicht so. Auf einen anderen Schüler zuerst zugehen... ich beobachte sie seit einem Jahr und das ist das erste Mal."
-    },
-    "morning2_haeun_6b": {
-        "name": "Haeun",
-        "text": "Deshalb bitte ich dich. — Bring die Schülersprecherin nicht aus dem Gleichgewicht. Sie hält sich gerade so."
-    },
-    "morning2_haeun_6c": {
-        "name": "{name}",
-        "text": "*Sie sagte Bitte, aber ihr Blick war eine Warnung. — Dieses Mädchen macht sich wirklich Sorgen um Seoyeon.*"
-    },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Jemand, der ein ganzes Jahr lang nie als Erste auf jemanden zugegangen ist — ist auf mich zuerst zugekommen? Was bedeutet das?*"
+        "text": "*Diese Person, die in einem Jahr noch nie von sich aus auf jemanden zugegangen ist — kam zuerst zu mir.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Klassenlehrerin",
@@ -383,9 +351,5 @@
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
         "text": "*Vor sich hin murmelnd, obwohl niemand zuhört. — Diese Person hat die Angewohnheit, ihre Fürsorge als 'Arbeit' zu verpacken.*"
-    },
-    "morning2_haeun_6_b": {
-        "name": "{name}",
-        "text": "*Haeun tritt einen Schritt näher. Ihre Stimme wird leiser.*"
     }
 }
