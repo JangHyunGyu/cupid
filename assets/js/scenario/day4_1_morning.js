@@ -63,26 +63,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "minsu_cheer_1_d": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_1_e"
-    },
-    "minsu_cheer_1_e": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_1_f"
-    },
-    "minsu_cheer_1_f": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_1_g"
-    },
-    "minsu_cheer_1_g": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_1_h"
-    },
-    "minsu_cheer_1_h": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_2"
     },
     "minsu_cheer_2": {
@@ -91,16 +71,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "minsu_cheer_3"
     },
     "minsu_cheer_3": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_4"
-    },
-    "minsu_cheer_4": {
-        "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
-        "next": "minsu_cheer_4_b"
-    },
-    "minsu_cheer_4_b": {
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/minsu_normal.png","opacity":0.35}},
         "next": "minsu_cheer_4_branch"

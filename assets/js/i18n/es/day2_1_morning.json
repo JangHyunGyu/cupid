@@ -144,41 +144,9 @@
         "name": "{name}",
         "text": "*Probablemente sí había. Quizá. — Pero no creo que ese sea el punto.*"
     },
-    "morning2_haeun_1": {
-        "name": "{name}",
-        "text": "*En el pasillo donde desapareció Seoyeon... una chica con una pulsera del consejo estudiantil se acerca.*"
-    },
-    "morning2_haeun_2": {
-        "name": "Haeun",
-        "text": "¿Disculpa, tú eres el alumno nuevo, verdad? Soy Haeun, la vicepresidenta del consejo estudiantil."
-    },
-    "morning2_haeun_3": {
-        "name": "{name}",
-        "text": "Ah, sí."
-    },
-    "morning2_haeun_4": {
-        "name": "Haeun",
-        "text": "La presidenta... o sea, Seoyeon parece un poco diferente últimamente."
-    },
-    "morning2_haeun_5": {
-        "name": "{name}",
-        "text": "¿Diferente cómo?"
-    },
-    "morning2_haeun_6": {
-        "name": "Haeun",
-        "text": "Ella no suele ser así. Acercarse a otro estudiante primero... llevo un año observándola y es la primera vez."
-    },
-    "morning2_haeun_6b": {
-        "name": "Haeun",
-        "text": "Por eso te pido algo. — No desestabilices a la presidenta. Ahora mismo apenas mantiene el equilibrio."
-    },
-    "morning2_haeun_6c": {
-        "name": "{name}",
-        "text": "*Dijo que era un favor, pero su mirada era una advertencia. — Esta chica se preocupa de verdad por Seoyeon.*"
-    },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Alguien que nunca se acercó a nadie primero en todo un año... ¿vino a mí primero? ¿Qué significa eso?*"
+        "text": "*Esa persona que en un año nunca se había acercado primero a nadie — vino a mí primero.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Profesora",
@@ -383,9 +351,5 @@
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
         "text": "*Murmurando cuando nadie escucha. — Esta persona tiene la costumbre de empaquetar su preocupación como 'trabajo'.*"
-    },
-    "morning2_haeun_6_b": {
-        "name": "{name}",
-        "text": "*Haeun da un paso adelante. Su voz baja de tono.*"
     }
 }

@@ -144,41 +144,9 @@
         "name": "{name}",
         "text": "*Y en avait sûrement. Peut-être. — Mais c'est pas vraiment la question.*"
     },
-    "morning2_haeun_1": {
-        "name": "{name}",
-        "text": "*Dans le couloir où Seoyeon a disparu — une fille portant un bracelet du conseil des élèves s'approche.*"
-    },
-    "morning2_haeun_2": {
-        "name": "Haeun",
-        "text": "Excusez-moi, vous êtes le nouvel élève, n'est-ce pas ? Je suis Haeun, la vice-présidente du conseil."
-    },
-    "morning2_haeun_3": {
-        "name": "{name}",
-        "text": "Ah, oui."
-    },
-    "morning2_haeun_4": {
-        "name": "Haeun",
-        "text": "La présidente... enfin, Seoyeon semble un peu différente ces derniers temps."
-    },
-    "morning2_haeun_5": {
-        "name": "{name}",
-        "text": "Différente comment ?"
-    },
-    "morning2_haeun_6": {
-        "name": "Haeun",
-        "text": "D'habitude elle n'est pas comme ça. S'approcher d'un autre élève en premier... ça fait un an que je l'observe et c'est la première fois."
-    },
-    "morning2_haeun_6b": {
-        "name": "Haeun",
-        "text": "C'est pour ça que je vous demande. — Ne déstabilisez pas la présidente. En ce moment, elle tient à peine en équilibre."
-    },
-    "morning2_haeun_6c": {
-        "name": "{name}",
-        "text": "*Elle a dit « demander », mais son regard, c'était un avertissement. — Cette fille s'inquiète sincèrement pour Seoyeon.*"
-    },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Quelqu'un qui n'a jamais approché personne en premier pendant toute une année — est venu vers moi en premier ? Qu'est-ce que ça veut dire ?*"
+        "text": "*Cette personne qui en un an ne s'était jamais approchée de personne en premier — est venue vers moi en premier.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professeure principale",
@@ -383,9 +351,5 @@
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
         "text": "*Elle murmure alors que personne n'écoute. — Cette personne a l'habitude d'emballer sa bienveillance dans le mot 'travail'.*"
-    },
-    "morning2_haeun_6_b": {
-        "name": "{name}",
-        "text": "*Haeun fait un pas en avant. Sa voix baisse d'un ton.*"
     }
 }

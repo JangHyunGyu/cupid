@@ -144,41 +144,9 @@
         "name": "{name}",
         "text": "*There probably was. Maybe. — But I don't think that's the point.*"
     },
-    "morning2_haeun_1": {
-        "name": "{name}",
-        "text": "*In the hallway where Seoyeon disappeared — a girl wearing a student council bracelet approaches.*"
-    },
-    "morning2_haeun_2": {
-        "name": "Haeun",
-        "text": "Um, you're the transfer student, right? I'm Haeun, the student council vice president."
-    },
-    "morning2_haeun_3": {
-        "name": "{name}",
-        "text": "Oh, yeah."
-    },
-    "morning2_haeun_4": {
-        "name": "Haeun",
-        "text": "The student council president... I mean, Seoyeon sunbae seems a bit different lately."
-    },
-    "morning2_haeun_5": {
-        "name": "{name}",
-        "text": "Different how?"
-    },
-    "morning2_haeun_6": {
-        "name": "Haeun",
-        "text": "She doesn't usually do that. Approaching someone first... I've known her for a year, and this is the first time."
-    },
-    "morning2_haeun_6b": {
-        "name": "Haeun",
-        "text": "So I have a favor to ask. — Please don't throw her off balance. She's only just barely holding it together right now."
-    },
-    "morning2_haeun_6c": {
-        "name": "{name}",
-        "text": "*She said it was a favor, but those eyes were a warning. — This girl genuinely cares about Seoyeon.*"
-    },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Someone who never once approached anyone first in a whole year — came to me first? What does that mean?*"
+        "text": "*That person who never approached anyone first in a year — came to me first.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Homeroom Teacher",
@@ -383,9 +351,5 @@
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
         "text": "*Muttering when no one's listening. — This person makes a habit of packaging her concern as 'work.'*"
-    },
-    "morning2_haeun_6_b": {
-        "name": "{name}",
-        "text": "*Haeun steps closer. Her voice drops lower.*"
     }
 }
