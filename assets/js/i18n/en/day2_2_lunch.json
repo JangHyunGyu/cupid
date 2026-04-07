@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Unlike yesterday, I have Yuna's note in my pocket. At the end of the hallway, Seoyeon is heading toward the rooftop with a lunchbox, and Dain is waving me toward the school store again.*"
+        "text": "*Lunchtime. Unlike yesterday, I have Yuna's note in my pocket. At the end of the hallway, Seoyeon is heading toward the rooftop with a lunchbox, and Dain is waving me toward the school store again. Lunch period at this school is a war.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*The library annex. An older building than the main one. Almost no students around.*"
+        "text": "*The library annex. An older building than the main one. Almost no students around. I climb the stairs and at the end of the hallway, Yuna is standing there. Leaning against the wall, reading a book.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
@@ -192,7 +192,7 @@
     },
     "lunch2_yuna_11": {
         "name": "{name}",
-        "text": "*Yuna walks ahead. Deep into the annex. A place where no one seems likely to come.*"
+        "text": "*Yuna walks ahead. Deep into the annex. A place where no one seems likely to come. A small room appears. Sunlight streams in through the window, and there's a worn sofa and bookshelves.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna opens her book. A signal that the conversation is over.*"
+        "text": "*Yuna opens her book. A signal that the conversation is over. I need to change the mood. — Let me brush it off with something light.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*I messed up. Trying to brush it off only made it seem like I was trivializing her wound.*"
+        "text": "*I messed up. Trying to brush it off only made it seem like I was trivializing her wound. An awkward silence falls. The sound of pages turning is the only thing in the room.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -272,7 +272,7 @@
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
-        "text": "*I sit down next to her without a word. Yuna glances over briefly.*"
+        "text": "*I sit down next to her without a word. Yuna glances over briefly. Then she takes one book from her own pile and sets it down on my side.*"
     },
     "lunch2_yuna_c2_3": {
         "name": "Yuna",
@@ -280,7 +280,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Offering a book instead of words. — This person's language is actions. Different from Seoyeon, but in its own way.*"
+        "text": "*Offering a book instead of words. We read side by side in silence. The sunlight coming through the window is warm.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
@@ -328,7 +328,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*She seemed like she wanted to hear more — but I deliberately held back.*"
+        "text": "*She seemed like she wanted to hear more — but I deliberately held back. We're eating when — the rooftop door opens. Dain came up.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -356,7 +356,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Looking in the direction Dain disappeared* ...She's got a lot of energy."
+        "text": "*Looking in the direction Dain disappeared* ...She's got a lot of energy. *Closing the lunchbox lid, quietly* I usually come up here alone."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*...That's probably what Dain would say.*"
+        "text": "*...That's probably what Dain would say. The angles of the triangle are sharpening. — I'm starting to feel less like a vertex and more like the sacrifice.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -404,7 +404,7 @@
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
-        "text": "*Three seconds for a grain of rice? — The tips of Seoyeon's ears are red.*"
+        "text": "*Three seconds to wipe off a grain of rice? — Nobody else would notice, but the tips of Seoyeon's ears are red.*"
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
@@ -545,7 +545,7 @@
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
-        "text": "*Fifth period PE. Running on the field when — the guy next to me stops short and we collide. My elbow gets scraped.*"
+        "text": "*Fifth period PE. Running on the field when — the guy next to me stops short and we collide. My elbow gets scraped. Nothing serious, but it's bleeding a little.*"
     },
     "lunch2_dain_end_c": {
         "name": "PE Teacher",
@@ -597,7 +597,7 @@
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*She takes out a cotton ball soaked in antiseptic — dabs it carefully. Then pulls out a bandage.*"
+        "text": "*She takes out a cotton ball soaked in antiseptic — and dabs slowly. Pulls out a bandage. Putting on one bandage — should take 30 seconds, why is she being so meticulous?*"
     },
     "lunch2_dain_end_l": {
         "name": "School Nurse",
@@ -617,7 +617,7 @@
     },
     "lunch2_dain_end_p": {
         "name": "School Nurse",
-        "text": "*Grinning* It's care. Real care. If you slap it on half-heartedly, it'll fall right off."
+        "text": "*Grinning* It's care. Real care. Know-how from experience."
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Checking the bandage — I notice a laptop open on the desk. The screen shows something. Not medical records — more like a personal journal.*"
+        "text": "*Checking the bandage — I notice a notebook poking out of her desk drawer. Pale green cover. The open page has something written in letter form. 'Yujin, today—' That's as far as I read before the nurse closes the drawer.*"
     },
     "lunch2_dain_end_s": {
         "name": "School Nurse",
@@ -661,7 +661,7 @@
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*The playfulness is gone. — 0.5 seconds. Then it returns.*"
+        "text": "*The playfulness is gone. Then it comes back. — That just now, I caught it.*"
     },
     "lunch2_dain_end_c2": {
         "name": "School Nurse",

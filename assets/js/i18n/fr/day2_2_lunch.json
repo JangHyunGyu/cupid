@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait signe vers la boutique de l'école.*"
+        "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait à nouveau signe d'aller à la boutique. La pause déjeuner dans ce lycée, c'est une guerre.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Un bâtiment plus ancien que le principal. Presque aucun élève.*"
+        "text": "*L'annexe de la bibliothèque. Un bâtiment plus ancien que le principal. Presque aucun élève. Je monte les escaliers et au bout du couloir, Yuna est là. Adossée au mur, un livre à la main.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
@@ -192,7 +192,7 @@
     },
     "lunch2_yuna_11": {
         "name": "{name}",
-        "text": "*Yuna marche devant. Au fond de l'annexe. Un endroit où personne ne semble venir.*"
+        "text": "*Yuna marche devant. Au fond de l'annexe. Un endroit où personne ne semble venir. Une petite pièce apparaît. La lumière entre par la fenêtre, et il y a un vieux canapé et des étagères.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna ouvre son livre. Le signal que la conversation est terminée.*"
+        "text": "*Yuna ouvre son livre. Signal de fin de conversation. Il faut que je change l'ambiance. — Évacuons ça avec quelque chose de léger.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*J'ai gaffé. Essayer de dédramatiser a juste donné l'impression que je minimisais sa blessure.*"
+        "text": "*J'ai gaffé. Vouloir évacuer ça à la légère a juste donné l'impression que je minimisais sa blessure. Un silence gênant s'installe. On n'entend que le bruit des pages qu'on tourne.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -272,7 +272,7 @@
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
-        "text": "*Je m'assois à côté d'elle sans rien dire. Yuna jette un bref coup d'œil.*"
+        "text": "*Je m'assois à côté d'elle sans un mot. Yuna jette un bref coup d'œil vers moi. Puis elle sort un livre de sa pile et le pose de mon côté.*"
     },
     "lunch2_yuna_c2_3": {
         "name": "Yuna",
@@ -280,7 +280,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Offrir un livre au lieu de mots. — Le langage de cette personne, ce sont les actes. Différent de Seoyeon, mais à sa manière.*"
+        "text": "*Tendre un livre à la place des mots. On lit côte à côte dans le silence. La lumière qui entre par la fenêtre est chaude.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
@@ -328,7 +328,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Elle semblait vouloir en entendre plus — mais je me suis retenu exprès.*"
+        "text": "*On aurait dit qu'elle voulait en entendre plus — mais je me suis retenu exprès. On mange quand — la porte du toit s'ouvre. Dain est montée.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -356,7 +356,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*En regardant dans la direction où Dain a disparu* ...Elle a une sacrée énergie."
+        "text": "*Regardant dans la direction où Dain est partie* ...Elle a beaucoup d'énergie. *Refermant le couvercle du bento, à voix basse* D'habitude, je viens ici toute seule."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*...C'est ce que Dain dirait, probablement.*"
+        "text": "*...C'est ce que Dain dirait, sûrement. Les angles du triangle s'aiguisent. — J'ai l'impression d'être le sacrifice plutôt qu'un sommet.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -404,7 +404,7 @@
     },
     "lunch2_seo_c1_5": {
         "name": "{name}",
-        "text": "*Il faut trois secondes pour enlever un grain de riz ? — Personne n'a remarqué, mais les pointes des oreilles de Seoyeon sont rouges.*"
+        "text": "*Trois secondes pour enlever un grain de riz ? — Personne ne s'en rendrait compte, mais le bout des oreilles de Seoyeon est rouge.*"
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
@@ -545,7 +545,7 @@
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
-        "text": "*Cinquième heure, sport. On courait sur le terrain quand — le gars à côté pile net et on se percute. Mon coude s'est éraflé.*"
+        "text": "*5e heure, sport. Je cours sur le terrain quand — le mec à côté freine d'un coup et on se percute. Coude éraflé. Rien de grave, mais ça saigne un peu.*"
     },
     "lunch2_dain_end_c": {
         "name": "Prof de sport",
@@ -597,7 +597,7 @@
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*Elle sort un coton imbibé de désinfectant — tamponne doucement. Puis sort un pansement.*"
+        "text": "*Elle sort un coton imbibé de désinfectant — et tamponne lentement. Sort un pansement. Mettre un pansement — ça devrait prendre trente secondes, pourquoi est-elle aussi méticuleuse ?*"
     },
     "lunch2_dain_end_l": {
         "name": "Infirmière",
@@ -617,7 +617,7 @@
     },
     "lunch2_dain_end_p": {
         "name": "Infirmière",
-        "text": "*Avec un sourire* C'est du soin. Du vrai soin. Si on colle ça à moitié, ça tombe tout de suite."
+        "text": "*Souriant* C'est du soin, du vrai. Du savoir-faire qui vient de l'expérience."
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement — je remarque un ordinateur portable ouvert sur le bureau. Quelque chose est affiché à l'écran. Pas des dossiers médicaux — plutôt un journal personnel.*"
+        "text": "*En vérifiant le pansement — je remarque un cahier qui dépasse du tiroir de son bureau. Couverture vert tendre. La page ouverte contient un texte en forme de lettre. 'Yujin, aujourd'hui—' Je n'en lis pas plus que l'infirmière referme le tiroir.*"
     },
     "lunch2_dain_end_s": {
         "name": "Infirmière",
@@ -661,7 +661,7 @@
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*Le côté taquin a disparu. — 0,5 seconde. Puis il revient.*"
+        "text": "*La malice a disparu. Puis elle revient. — Ce truc, je l'ai vu.*"
     },
     "lunch2_dain_end_c2": {
         "name": "Infirmière",
