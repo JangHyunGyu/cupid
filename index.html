@@ -838,6 +838,13 @@
                 </svg>
             </button>
 
+            <!-- 갤러리 버튼 (게임 중 좌상단, 새 탭으로 진행 보존) -->
+            <button id="gallery-btn" onclick="window.open('gallery.html', '_blank')" title="갤러리" style="display: none;">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"/>
+                </svg>
+            </button>
+
             <!-- 홈 버튼 (게임 중 상단 중앙) -->
             <button id="home-btn" onclick="showHomeConfirm()" title="시작 화면으로" style="display: none;">
                 <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1045,10 +1052,14 @@
                 await window.initGame();
             }
 
-            // 게임 시작 시 홈 버튼 표시
+            // 게임 시작 시 홈 버튼 + 갤러리 버튼 표시
             const homeBtn = document.getElementById('home-btn');
             if (homeBtn) {
                 homeBtn.style.display = 'flex';
+            }
+            const galleryBtn = document.getElementById('gallery-btn');
+            if (galleryBtn) {
+                galleryBtn.style.display = 'flex';
             }
         }
 
