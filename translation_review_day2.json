@@ -11573,42 +11573,6 @@
         "_issues": null
       }
     },
-    "minsu_warn_15": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#minsu_warn_15",
-      "_ko_name": "민수",
-      "_ko_text_preview": "몰라, 내가 오지랖이 많은 건지. — 근데 나중에 셋 다 울면 그건 네 ...",
-      "_has_choices": false,
-      "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#minsu_warn_15",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#minsu_warn_15",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#minsu_warn_15",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#minsu_warn_15",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      },
-      "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#minsu_warn_15",
-        "_reviewed": false,
-        "_score": 10,
-        "_issues": null
-      }
-    },
     "after2_dain_freetalk": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_freetalk",
       "_ko_name": "다인",
