@@ -14,7 +14,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "Haha, davon?! Du musst mehr Sport machen!"
+        "text": "Hahaha, was, davon schon?! Du musst echt mehr trainieren!"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -22,7 +22,7 @@
     },
     "morning2_dain_5": {
         "name": "Dain",
-        "text": "Das ist normal! Du bist der, dem was fehlt!"
+        "text": "Das ist ganz normal! Bei dir stimmt was nicht!"
     },
     "morning2_dain_6": {
         "name": "{name}",
@@ -46,11 +46,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "Die Schülersprecherin kommt bis ins Klassenzimmer zum Grüßen?"
+        "text": "Die Schülersprecherin höchstpersönlich vor meinem Klassenzimmer?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Eine Runde. — Und gleichzeitig Anwesenheitskontrolle."
+        "text": "Mein üblicher Rundgang. — Und Anwesenheit checken nebenbei."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -62,11 +62,11 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Alter, zwei Tage als Neuer und die Schülersprecherin kommt dich grüßen? Ich bin seit einem Jahr hier und sie guckt mich nicht mal an."
+        "text": "Alter, du bist zwei Tage hier und die Schülersprecherin kommt extra zu dir? Ich bin seit 'nem Jahr in dieser Klasse und sie schaut mich nicht mal an."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "Vielleicht bist du einfach unbeliebt."
+        "text": "Vielleicht magst du einfach niemand."
     },
     "morning2_dain_claim_2": {
         "name": "Minsu",
@@ -86,7 +86,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Ich hab dich zuerst gefunden, also bist du unser Neuer! Reserviert! Meins!"
+        "text": "Ich hab dich zuerst entdeckt, also bist du unser Neuer! Reserviert! Gehört mir!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
-        "text": "Da war was auf deiner Kleidung."
+        "text": "Hattest was auf der Schulter."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",
-        "text": "Was denn? War nur Staub."
+        "text": "Was denn? Nur Staub."
     },
     "morning2_dain_react_1": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "Sie hat Staub weggewischt."
+        "text": "Sie hat nur Staub weggewischt."
     },
     "morning2_dain_react_5": {
         "name": "Dain",
@@ -198,7 +198,7 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Klassenlehrerin",
-        "text": "Naja, dass eine Lehrerin sich um Schüler sorgt, ist selbstverständlich. Dienstlich."
+        "text": "Naja, eine Lehrerin sorgt sich nun mal um ihre Schüler. Berufsbedingt."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",

@@ -44,7 +44,7 @@
     },
     "after3_reject_for_seo_2": {
         "name": "Dain",
-        "text": "...You're not coming to the gym today, are you?"
+        "text": "...You're not coming today, are you."
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
@@ -60,7 +60,7 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Student council work is busy. I'll eat separately. ...Today."
+        "text": "Council stuff's busy. I'll eat on my own. ...Just for today."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -72,7 +72,7 @@
     },
     "after3_reject_for_yuna_3_dain": {
         "name": "Dain",
-        "text": "Ah, hey!"
+        "text": "Oh, hey!"
     },
     "after3_reject_for_yuna_3_react": {
         "name": "{name}",
@@ -88,7 +88,7 @@
     },
     "after3_reject_for_dain_2": {
         "name": "Seoyeon",
-        "text": "...I have some things to do today. I'll head out first."
+        "text": "...Got things to do today. I'll head out first."
     },
     "after3_reject_for_dain_2b": {
         "name": "{name}",
@@ -120,15 +120,15 @@
     },
     "after3_seo_6": {
         "name": "Seoyeon",
-        "text": "*Clears throat* ...It's nothing. Just forget it."
+        "text": "*Clears her throat* ...It's nothing. Forget it."
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "See what? I didn't see anything."
+        "text": "Forget what? I didn't see anything."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
-        "text": "This side of me. — This is a secret."
+        "text": "This side of me. — Keep it a secret."
     },
     "after3_seo_9": {
         "name": "{name}",
@@ -136,9 +136,9 @@
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
-        "text": "Next time I ask you for a favor, you have to say yes. No questions asked. — Consider it payment.",
+        "text": "Next time I ask you for a favor, you say yes. No questions. — Consider that the price.",
         "choices": [
-            "You don't have to be perfect. Anyone gets like this.",
+            "You don't have to be perfect. Everyone has days like this.",
             "...Just now? I didn't see anything. I dropped my pen and came in to pick it up."
         ]
     },
@@ -172,7 +172,7 @@
     },
     "after3_yuna_8b": {
         "name": "Yuna",
-        "text": "*Quickly approaches and snatches the notebook* ...I didn't say you could."
+        "text": "*Hurries over and snatches the notebook back* ...I didn't say you could read it."
     },
     "after3_yuna_9": {
         "name": "{name}",
@@ -182,8 +182,8 @@
         "name": "{name}",
         "text": "I was enjoying the read.",
         "choices": [
-            "This is about me, isn't it? 'A transfer student who sat without a word' — that's me.",
-            "This author is really good. Is there a sequel? I'd love to borrow it."
+            "This is about me, isn't it? 'A transfer student who sat down without a word' — that's me.",
+            "This author's really good. Got a sequel? I'd love to borrow it."
         ]
     },
     "after3_yuna_end": {
@@ -200,11 +200,11 @@
     },
     "after3_dain_4": {
         "name": "Dain",
-        "text": "Ah! I’m fine!! It’s just a little twist!!"
+        "text": "Ow! I'm fine!! Just a little twist!!"
     },
     "after3_dain_5": {
         "name": "{name}",
-        "text": "You don’t look fine."
+        "text": "You don't look fine."
     },
     "after3_dain_6": {
         "name": "{name}",
@@ -215,7 +215,7 @@
         "text": "*Dain sits on the bench. She rubs her knee.*",
         "choices": [
             "Sit next to her and wait quietly",
-            "Got any patches? I’ll go get them"
+            "You got pain patches? I'll go grab some."
         ]
     },
     "after3_dain_choice1": {
@@ -224,11 +224,11 @@
     },
     "after3_dain_choice1_2": {
         "name": "Dain",
-        "text": "...Why aren’t you asking?"
+        "text": "...Why aren't you asking?"
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Because you’d just say you’re fine."
+        "text": "Because you'd just say you're fine."
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
-        "text": "...Yeah. I would’ve said I’m fine."
+        "text": "...Yeah. I would've."
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
@@ -272,7 +272,7 @@
     },
     "after3_confront_5": {
         "name": "Seoyeon",
-        "text": "When you smiled the same way at other people, I kind of hated it."
+        "text": "Watching you smile the same way at other people — I kind of hated it."
     },
     "after3_confront_6": {
         "name": "Seoyeon",
@@ -439,7 +439,7 @@
     },
     "haeun_warn_5c_b": {
         "name": "Seoyeon",
-        "text": "When you smiled the same way at other people, I kind of hated it."
+        "text": "Watching you smile the same way at other people — I kind of hated it."
     },
     "after3_confront_admit_b": {
         "name": "{name}",

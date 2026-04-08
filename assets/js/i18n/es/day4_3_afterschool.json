@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Todos te ven como una persona impecable. Pero a mí se me quedan grabados los momentos en que dejas de poner esa expresión por un instante."
+        "text": "Seoyeon. Todo el mundo te ve como si no tuvieras una sola grieta. Pero yo no dejo de acordarme de esos momentos en los que se te cae la expresión por un segundo."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "No como presidenta del consejo, había momentos en los que solo parecías Seoyeon. Esos eran los que me gustaban."
+        "text": "No cuando eras la presidenta del consejo. Hablo de los momentos en los que eras solo Seoyeon. Eso era lo que me gustaba."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*Se me ha cortado la respiración. Si este silencio era cómodo — era porque era Yuna. Tengo que decirlo.*",
+        "text": "*Se me ha acortado la respiración. Si este silencio me resultaba cómodo, era porque era con Yuna. Tengo que decirlo.*",
         "choices": [
             "Yuna. Déjame preguntarte una cosa.",
             "...Este sitio está muy bien."
@@ -149,7 +149,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna. Al principio pensé que tu silencio era un muro. Pero no lo era."
+        "text": "Yuna. Al principio pensé que tu silencio era una muralla. Pero no era eso."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "confess_yuna_no_2": {
         "name": "{name}",
-        "text": "*Yuna lee entre líneas. Sabrá que estas palabras son solo huir.*"
+        "text": "*Yuna es de las que leen entre líneas. Seguro que sabe que esto no es más que una huida.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*El suelo del gimnasio parece temblar. — Conozco el temblor que se esconde detrás de los signos de exclamación de esta persona.*",
+        "text": "*Parece que el suelo del gimnasio se tambalea. Yo sé reconocer el temblor que se esconde detrás de sus signos de exclamación.*",
         "choices": [
             "Dain. Suelta la pelota.",
             "...¿Echamos otra?"
@@ -265,7 +265,7 @@
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*No es piedra-papel-tijera, no es un juego. Pero esto es todo para mí.*"
+        "text": "*Esto no es una confesión de piedra, papel o tijera. Pero para mí lo es todo.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
@@ -309,7 +309,7 @@
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Puedo colocarle el balón, pero no puedo decir tres palabras. Patético.*"
+        "text": "*Puedo levantarle la pelota para el saque, pero tres palabras no me salen. Patético.*"
     },
     "confess_dain_no_3": {
         "name": "{name}",

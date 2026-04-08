@@ -10,23 +10,23 @@
     },
     "morning2_dain_2": {
         "name": "Dain",
-        "text": "You're here?! Good morning!!"
+        "text": "You made it?! Morning!!"
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "Haha, from that?! You need to work out more!"
+        "text": "LOL that knocked you over?! Hit the gym, dude!"
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "Isn't it a bit early for this much energy?"
+        "text": "Bit early for this much energy, no?"
     },
     "morning2_dain_5": {
         "name": "Dain",
-        "text": "This is normal! You're the one running low!"
+        "text": "This IS normal! You're the one running on empty!"
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*If there's a world where this volume at 8 AM is normal, Dain would be its president.*"
+        "text": "*If there's a planet where this volume at 8 a.m. counts as normal, Dain runs it.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -46,11 +46,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "The student council president comes all the way to the classroom to say hi?"
+        "text": "The council president walks all the way to the classroom just to say hi?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "It's a patrol. — And an attendance check."
+        "text": "It's patrol. — And an attendance check."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Dude, two days as a transfer student and the student council president comes to greet you? I've been here a year and she won't even make eye contact."
+        "text": "Dude. Two days here and the council president comes to YOU to say hi? I've been here a year and she won't even make eye contact."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "The student council president is interested in the transfer student too? Popular guy!"
+        "text": "Even the council president's into our transfer kid? Mister Popular over here!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "I found you first, so you're our transfer student! Dibs! I called dibs!"
+        "text": "I found you first, so you're OUR transfer kid! Dibs! Called it!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Can you call dibs on a person? — But I don't mind it. That's a little scary.*"
+        "text": "*Can you actually call dibs on a person? — And the scary part is, I don't really mind.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
-        "text": "You had something on your clothes."
+        "text": "You had something on you."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
@@ -130,15 +130,15 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "Hey! What was that?! Did she just touch your shoulder?!"
+        "text": "WAIT! What was that?! Did she just touch your shoulder?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "She was brushing off dust."
+        "text": "There was dust on me."
     },
     "morning2_dain_react_5": {
         "name": "Dain",
-        "text": "Dust... was there actually dust?!"
+        "text": "Dust... was there actually dust though?!"
     },
     "morning2_dain_react_6": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*That person who never approached anyone first in a year — came to me first.*"
+        "text": "*The girl who never approached anyone first in an entire year — came up to me first.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Homeroom Teacher",
@@ -158,14 +158,14 @@
     },
     "hidden_homeroom_d2_3": {
         "name": "Homeroom Teacher",
-        "text": "Looked at your old transcript. Your Korean grades were solid. You like reading?"
+        "text": "Looked at your old transcript. Your literature grades were solid. You into reading?"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
         "text": "*Reading. So she even checks report cards.*",
         "choices": [
-            "What about you? What do you read?",
-            "Yeah, I like reading"
+            "What about you, miss? What do you read?",
+            "Yeah, I read a lot."
         ]
     },
     "hidden_homeroom_d2_choice1_a": {
@@ -178,7 +178,7 @@
     },
     "hidden_homeroom_d2_5": {
         "name": "Homeroom Teacher",
-        "text": "...Right. Just asking."
+        "text": "...Right. Just curious."
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
@@ -190,27 +190,27 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Homeroom Teacher",
-        "text": "Dain's loud, right? — She's always like that. But there's a difference between a kid who makes a fuss and one who just has too much energy."
+        "text": "Dain's loud, isn't she? — She's always like that. But there's a difference between a kid making trouble and a kid with too much energy."
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
-        "text": "Thank you, ma'am."
+        "text": "Thanks, miss."
     },
     "hidden_homeroom_d2_10": {
         "name": "Homeroom Teacher",
-        "text": "Well, teachers worrying about students is just part of the job. Strictly professional."
+        "text": "Well, teachers worrying about students — comes with the job. Strictly professional."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
         "text": "*She says it's work, but there's still a smile in her eyes.*",
         "choices": [
-            "For work, you look awfully happy about it",
-            "Thanks for looking out for me"
+            "For 'just work,' you look pretty happy about it.",
+            "Thanks for looking out for me."
         ]
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Homeroom Teacher",
-        "text": "*Covers her mouth with her coffee cup* ...Expression management failure. Fine, go ahead."
+        "text": "*Covers her mouth with her coffee cup* ...Failed to keep a straight face. Fine. Out with it."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Homeroom Teacher",
@@ -218,7 +218,7 @@
     },
     "hidden_homeroom_d2_11": {
         "name": "Homeroom Teacher",
-        "text": "...Giving the transfer student special treatment — the others would talk."
+        "text": "...If I treat the transfer kid too well, the others'll talk."
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "morning2_greet_seo_1": {
         "name": "Seoyeon",
-        "text": "What you said on the rooftop yesterday — still valid?"
+        "text": "What you said on the roof yesterday — still stands?"
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "morning2_greet_dain_1": {
         "name": "Dain",
-        "text": "Hey! Yesterday was fun, let's do something again today!"
+        "text": "Hey! Yesterday was fun, let's hang again today!"
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",
-        "text": "Such energy."
+        "text": "Quite the energy."
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
-        "text": "A letter this early?"
+        "text": "A love letter this early?"
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
-        "text": "What's that! Let me see!"
+        "text": "What is that?! Lemme see!"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
@@ -298,15 +298,15 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*I headed to the faculty office with the teacher.* *Her desk is in the corner. Papers and a coffee mug on the desk, and — a drawer slightly ajar.*"
+        "text": "*I follow the teacher to the faculty office. Her desk is in the corner. Papers, a coffee mug — and a drawer slightly ajar.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Homeroom Teacher",
-        "text": "*A brief hesitation* ...Various things. Mostly — novels."
+        "text": "*A brief pause* ...A bit of everything. Mostly — novels."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Novels. A Korean teacher reading novels is natural, but why does she seem reluctant to say it?*"
+        "text": "*Novels. A literature teacher who reads novels — that's not strange. So why did she sound reluctant to say it?*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Homeroom Teacher",
@@ -318,7 +318,7 @@
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
-        "text": "I'm not sure about writing."
+        "text": "Writing's... not really my thing."
     },
     "hidden_homeroom_d2_3_g": {
         "name": "{name}",
@@ -326,15 +326,15 @@
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
-        "text": "A lot better. I like the people in class."
+        "text": "A lot better. I like the people in my class."
     },
     "hidden_homeroom_d2_8_b": {
         "name": "{name}",
-        "text": "Sounds like Dain is pretty famous if you know about her."
+        "text": "Dain must be pretty well-known if even you've noticed her."
     },
     "hidden_homeroom_d2_8_c": {
         "name": "Homeroom Teacher",
-        "text": "Famous isn't the word... *Takes a sip of coffee* More like someone I worry about."
+        "text": "'Well-known' isn't quite the word... *takes a sip of coffee* More like — someone I keep an eye on."
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*She hid her mouth but fiddles with her cup for no reason. This person also shows it when they're flustered.*"
+        "text": "*She hid her mouth, but her fingers fiddle with the cup. So she has a tell when she's flustered too.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",

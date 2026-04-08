@@ -33,11 +33,11 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "Hey! I signed you up as my partner for today's sports event!"
+        "text": "YO! I signed you up as my partner for today's sports event!"
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Try to ditch me and I'll be seriously mad."
+        "text": "Bail on me and I will be SO mad."
     },
     "morning5_end": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Homeroom Teacher",
-        "text": "Haven't shown this to anyone in seven years. — It is technically outside my duties."
+        "text": "Haven't shown this to anyone in seven years. — Technically way outside my job description."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -71,7 +71,7 @@
         "name": "{name}",
         "text": "*I'm holding the manuscript. Her seven years are in my hands.*",
         "choices": [
-            "I'm sure you wrote it really well, Ma'am. Send it to publishers.",
+            "I'm sure you wrote it well, miss. Send it to publishers.",
             "...You said it took seven years to finish. But — shouldn't there be one more line in the last chapter?"
         ]
     },
@@ -119,7 +119,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "School Nurse",
-        "text": "Oh? {name}. — It's the last day. The last day of the event. Five days. — Went by fast."
+        "text": "Oh? {name}. — Last day, huh. Last day of the event. Five days. — Went by fast."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -147,7 +147,7 @@
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "School Nurse",
-        "text": "...You said 'just once,' so why say something like that."
+        "text": "...You said 'just this once.' So why say something like that."
     },
     "hidden_nurse_d5_choice_b": {
         "name": "School Nurse",

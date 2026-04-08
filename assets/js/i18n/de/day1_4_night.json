@@ -5,7 +5,7 @@
     },
     "night_start_3": {
         "name": "{name}",
-        "text": "*Mein Handy klingelt. Der Schul-Messenger.*"
+        "text": "*Mein Handy vibriert. Der Schul-Messenger.*"
     },
     "night_msg_seo_1": {
         "name": "Seoyeon",
@@ -17,7 +17,7 @@
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
-        "text": "*Nächstes Mal hab ich wenigstens Getränke bereit*"
+        "text": "*Nächstes Mal sorg ich wenigstens für Getränke*"
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Sie hat ‚Geht aufs Haus' absichtlich als eigene Zeile geschickt.*"
+        "text": "*Sie hat 'Geht aufs Haus' absichtlich als eigene Zeile geschickt.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -37,7 +37,7 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*‚Ich halte dir den Platz frei.' — Die Hand, die das Handy ablegt, bewegt sich langsam.*"
+        "text": "*'Halt dir den Platz frei.' — Die Hand, mit der ich das Handy weglege, bewegt sich ganz langsam.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
@@ -53,11 +53,11 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Drei Nachrichten am Stück. Kann sie nicht mal Luft holen zwischen den Texten?*"
+        "text": "*Drei Nachrichten am Stück. Kann sie zwischendurch nicht mal kurz Luft holen?*"
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Kurz vor dem Einschlafen — mein Handy klingelt noch einmal.*"
+        "text": "*Ich will gerade einschlafen — da vibriert mein Handy noch mal. 23 Uhr. Wer ist das?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*— Wenn du nicht kommst, hole ich dich*"
+        "text": "*— Wenn du nicht kommst, hol ich dich ab*"
     },
     "night_seo_late_3": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Nur ‚...' und sonst nichts. Als hätte sie etwas getippt und wieder gelöscht.*"
+        "text": "*Nur '...' und sonst nichts. Als hätte sie was getippt und wieder gelöscht.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -97,15 +97,15 @@
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "*Suche jemanden fürs Frühsport morgen!*"
+        "text": "*Such jemanden zum gemeinsamen Frühsport morgen!*"
     },
     "night_dain_late_3": {
         "name": "Dain",
-        "text": "*Nein wird nicht akzeptiert lol*"
+        "text": "*Ein Nein zähl ich nicht lol*"
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*Kennt diese Person das Konzept von ‚Nein' nicht?*"
+        "text": "*Weiß die überhaupt, was 'Nein' bedeutet?*"
     },
     "night_end_1": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Kein schlechter erster Tag. Morgen — wird es wohl noch ein bisschen interessanter.*"
+        "text": "*Kein schlechter erster Tag. Morgen — wird's wohl noch ein bisschen interessanter.*"
     },
     "night_hidden_check": {
         "name": "{name}",

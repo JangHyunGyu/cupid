@@ -13,7 +13,7 @@
     },
     "wall_seo_pre_high_1": {
         "name": "Seoyeon",
-        "text": "...Can I be honest today?"
+        "text": "...Can I be honest with you tonight?"
     },
     "wall_seo_pre_high_2": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "wall_seo_9_c": {
         "name": "Seoyeon",
-        "text": "But Mom and Dad have been strangers under the same roof for a year. They just haven't filed the papers."
+        "text": "But Mom and Dad have been strangers under the same roof for a year now. They just haven't filed the papers yet."
     },
     "wall_seo_9_d": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "wall_seo_11": {
         "name": "Seoyeon",
-        "text": "Mom told me, 'At least you have to be perfect to hold this family together.'"
+        "text": "Mom told me, 'You at least have to be perfect to keep this family together.'"
     },
     "wall_seo_11_b": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Every time I got praised, I thought, 'This smile was practiced too — has anyone ever seen the real me?'"
+        "text": "Every time someone complimented me, I'd think — 'this smile is practiced too. Has anyone ever actually seen the real me?'"
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -133,7 +133,7 @@
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
-        "text": "...Crying in front of someone, it's the first time since I was ten."
+        "text": "...Crying in front of someone — first time since I was ten."
     },
     "wall_seo_hug_2_c": {
         "name": "Seoyeon",
@@ -157,7 +157,7 @@
     },
     "wall_seo_pinky_4": {
         "name": "Seoyeon",
-        "text": "...Why are you like this. Why do you — make promises so easily."
+        "text": "...Why are you like this. Why do you make promises so easily."
     },
     "wall_seo_pinky_5": {
         "name": "Seoyeon",
@@ -171,9 +171,9 @@
         "name": "{name}",
         "text": "*Seoyeon is wiping her tears, looking up at me with trembling eyes.*",
         "choices": [
-            "You don't have to be perfect. I like this Seoyeon more.",
-            "Not student council president Seoyeon — just Seoyeon is my girlfriend.",
-            "Honestly, I thought you were good at everything. Thanks for showing me this side too."
+            "You don't have to be perfect. I like this Seoyeon better.",
+            "Not council-president Seoyeon — just Seoyeon. That's my girlfriend.",
+            "Honestly, I thought you were good at everything. Thanks for showing me this side of you too."
         ]
     },
     "wall_seo_line_react_1": {
@@ -267,7 +267,7 @@
     },
     "wall_dain_2": {
         "name": "Dain",
-        "text": "Hey, you free right now? lol"
+        "text": "yo you free rn? lol"
     },
     "wall_dain_2_b": {
         "name": "Dain",
@@ -275,7 +275,7 @@
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "Just come lol! I left the gym back door open!"
+        "text": "just come lol! left the gym back door open!"
     },
     "wall_dain_4": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "wall_dain_7": {
         "name": "Dain",
-        "text": "I sneak in sometimes! To practice!!"
+        "text": "I sneak in sometimes! For practice!!"
     },
     "wall_dain_7_b": {
         "name": "{name}",
@@ -311,7 +311,7 @@
     },
     "wall_dain_10": {
         "name": "Dain",
-        "text": "No, it's fine!! I just twisted it a bit lol, it's noth—"
+        "text": "No, I'm fine!! Just twisted it a little, it's noth—"
     },
     "wall_dain_11": {
         "name": "{name}",
@@ -351,7 +351,7 @@
     },
     "wall_dain_16_b": {
         "name": "Dain",
-        "text": "I had surgery and the medical team — they chose their words really carefully."
+        "text": "I had surgery, and the doctors — they were really careful with their words."
     },
     "wall_dain_17": {
         "name": "Dain",
@@ -391,11 +391,11 @@
     },
     "wall_dain_21": {
         "name": "Dain",
-        "text": "Today too. Running around on our date. Pretending to be cheerful next to you. My knee was screaming."
+        "text": "Today too. Running around on our date. Acting cheerful next to you. My knee was screaming the whole time."
     },
     "wall_dain_22": {
         "name": "Dain",
-        "text": "— But if I show you I'm hurting too, then I have nothing left."
+        "text": "— But if I show you I'm hurting too, then I've got nothing left."
     },
     "wall_dain_22_b": {
         "name": "{name}",
@@ -456,7 +456,7 @@
     },
     "wall_dain_cry_4": {
         "name": "Dain",
-        "text": "I put it in my phone alarm. 'Smile today!!' it says..."
+        "text": "I set it as my phone alarm. 'Smile today!!' it says..."
     },
     "wall_dain_cry_5": {
         "name": "Dain",
@@ -488,7 +488,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Heh. It hurts. But it feels oddly refreshing. — I'm glad my last hit on this court was a set from {name}."
+        "text": "...Heh. It hurts. But it feels weirdly good. — Glad my last hit on this court was off your set, {name}."
     },
     "wall_dain_lastspike_4_b": {
         "name": "{name}",
@@ -516,7 +516,7 @@
     },
     "wall_dain_mention_2": {
         "name": "Dain",
-        "text": "If she'd said something, at least I could've fought back. When someone says nothing, it makes you feel like the bad guy."
+        "text": "If she'd said something, I could've fought back. When someone says nothing, it makes YOU feel like the bad guy."
     },
     "wall_dain_mention_3": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "wall_yuna_11": {
         "name": "Yuna",
-        "text": "He was the first. 'I liked your writing' — those words. To me, that was proof I existed."
+        "text": "He was the first. 'I liked your writing.' — Those words. They were proof I existed."
     },
     "wall_yuna_12": {
         "name": "{name}",
@@ -633,7 +633,7 @@
     },
     "wall_yuna_14": {
         "name": "Yuna",
-        "text": "The person who proved I existed — disappeared. I felt like I'd become invisible again."
+        "text": "The person who'd proved I existed — was gone. And I felt invisible all over again."
     },
     "wall_yuna_14_b": {
         "name": "Yuna",
@@ -680,13 +680,13 @@
         "text": "*Yuna's eyes are glistening. — This is the first time I've heard her talk this much.*",
         "choices": [
             "I'm not that senior. I'm me. But I'll still stay by your side.",
-            "Forget about that senior. The one standing in front of you right now is me.",
-            "...So you approached me because of him? As a replacement?"
+            "Forget about him. The one in front of you right now is me.",
+            "...So you came to me because of him? As some kind of replacement?"
         ]
     },
     "wall_yuna_moved_1": {
         "name": "Yuna",
-        "text": "...At first, maybe I was chasing his shadow."
+        "text": "...At first, maybe. Maybe I was chasing his shadow."
     },
     "wall_yuna_moved_2": {
         "name": "Yuna",
@@ -698,7 +698,7 @@
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
-        "text": "Now I see you. Only you."
+        "text": "Now I see you. Just you."
     },
     "wall_yuna_moved_5": {
         "name": "{name}",
@@ -803,11 +803,11 @@
     },
     "night_homeroom_msg_1": {
         "name": "Homeroom Teacher",
-        "text": "*Text message* The manuscript is almost at its final stage. ...There's a part I'd like you to see first."
+        "text": "*Text message* Manuscript's almost done. ...There's a part I'd like you to read first."
     },
     "night_homeroom_msg_2": {
         "name": "Homeroom Teacher",
-        "text": "*Text message* Come to the faculty office tomorrow if you have time. — After class."
+        "text": "*Text message* If you have time tomorrow, come by the office. — After class."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
@@ -819,7 +819,7 @@
     },
     "night_nurse_msg_1": {
         "name": "School Nurse",
-        "text": "What you said in my office today... I keep thinking about it at night."
+        "text": "What you said in my office today... I keep thinking about it tonight."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
@@ -827,7 +827,7 @@
     },
     "night_nurse_msg_3": {
         "name": "School Nurse",
-        "text": "Oh, I don't mean it like that. I just mean you left an impression."
+        "text": "Oh — I don't mean it like that. Just that you stuck with me."
     },
     "night_nurse_msg_4": {
         "name": "School Nurse",
@@ -835,7 +835,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Saturday just flew by. Tomorrow's a school event. — We even have to go to school on a Sunday.*"
+        "text": "*Saturday just flew by. Tomorrow's the school event. — Yeah, on a Sunday.*"
     },
     "day4_night_sleep": {
         "name": "{name}",

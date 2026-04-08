@@ -5,7 +5,7 @@
     },
     "confess_seo_2": {
         "name": "Seoyeon",
-        "text": "Es gibt noch einen letzten Ort, den ich dir zeigen will."
+        "text": "Einen Ort will ich dir noch zeigen."
     },
     "confess_seo_3": {
         "name": "{name}",
@@ -31,7 +31,7 @@
         "name": "{name}",
         "text": "*Ich bin nervös. Trotzdem möchte ich es dieses Mal richtig sagen.*",
         "choices": [
-            "Du weißt, wenn du wegrännst, renne ich dir nach. Also bleib und hör mir zu.",
+            "Wenn du wegläufst, lauf ich dir hinterher, weißt du? Also bleib und hör mir zu.",
             "...Schöner Wind."
         ]
     },
@@ -77,7 +77,7 @@
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "Es hat wirklich lange gedauert, bis ich das zur Sprache gebracht habe."
+        "text": "Hat ewig gedauert, bis ich das mal aussprechen konnte."
     },
     "confess_seo_yes_11_b": {
         "name": "{name}",

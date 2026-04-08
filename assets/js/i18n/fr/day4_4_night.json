@@ -811,7 +811,7 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*23 heures. Un message de la Professeure principale. Trois courtes lignes. — Les mots 'j'aimerais que tu le lises en premier' ne cessent de résonner.*"
+        "text": "*23 heures. Un message de la Prof principale. Trois courtes lignes. — Les mots 'j'aimerais que tu le lises en premier' ne cessent de résonner.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Système",

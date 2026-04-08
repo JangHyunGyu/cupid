@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Professeure principale",
-        "text": "...La salle de classe est l'endroit le plus calme. Ironique, non ?"
+        "text": "...La salle est l'endroit le plus calme. Ironique, non ?"
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Professeure principale",
@@ -418,7 +418,7 @@
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
-        "text": "*Le bras de Dain est enroulé autour du mien. Elle est forte. — Je ne peux pas me dégager, et je ne veux pas.*"
+        "text": "*Le bras de Dain est enroulé autour du mien. Elle est forte. — Je peux pas me dégager, et je ne veux pas.*"
     },
     "morning3_dain_gate_cold_1": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Une demi-seconde. Figée. — C'est une expression que je n'ai jamais vue chez la professeure. Ni indifférente, ni sèche. Le visage de quelqu'un pris sur le fait.*"
+        "text": "*Une demi-seconde. Figée. — C'est une expression que je n'ai jamais vue chez la prof. Ni indifférente, ni sèche. Le visage de quelqu'un pris sur le fait.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professeure principale",
@@ -506,7 +506,7 @@
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
-        "text": "*La professeure se tait un instant. Puis — soupire. Brièvement.*"
+        "text": "*La prof se tait un instant. Puis — soupire. Brièvement.*"
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Professeure principale",
@@ -514,7 +514,7 @@
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
-        "text": "*La professeure s'arrête. Elle effleure le manuscrit. — Puis s'adosse à sa chaise.*"
+        "text": "*La prof s'arrête. Elle effleure le manuscrit. — Puis s'adosse à sa chaise.*"
     },
     "hidden_homeroom_d3_reveal_1_b": {
         "name": "{name}",
@@ -534,7 +534,7 @@
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
-        "text": "*La professeure soulève une feuille de manuscrit. L'écriture est serrée.*"
+        "text": "*La prof soulève une feuille de manuscrit. L'écriture est serrée.*"
     },
     "hidden_homeroom_d3_reveal_3_b": {
         "name": "{name}",
@@ -542,7 +542,7 @@
     },
     "hidden_homeroom_d3_reveal_3_c": {
         "name": "{name}",
-        "text": "*La professeure repose le manuscrit. Lentement.*"
+        "text": "*La prof repose le manuscrit. Lentement.*"
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
@@ -594,7 +594,7 @@
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
-        "text": "*La professeure utilise le mot 's'il te plaît.' — Pour elle, c'est un mot rare.*"
+        "text": "*La prof utilise le mot 's'il te plaît.' — Pour elle, c'est un mot rare.*"
     },
     "hidden_nurse_d3_2_c": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d3_2_e": {
         "name": "{name}",
-        "text": "*Je ne sais pas ce qu'elle remercie. De ne pas avoir regardé ? Ou — d'être venu jusqu'ici ?*"
+        "text": "*Je sais pas ce qu'elle remercie. De ne pas avoir regardé ? Ou — d'être venu jusqu'ici ?*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Infirmière",
@@ -706,7 +706,7 @@
     },
     "hidden_nurse_d3_6_c": {
         "name": "Infirmière",
-        "text": "...Plutôt que d'avoir démissionné, j'ai fui. *Avec un léger sourire* Il n'y a pas de raison noble."
+        "text": "...Plutôt que d'avoir démissionné, j'ai fui. *Avec un léger sourire* Y a pas de raison noble."
     },
     "hidden_nurse_d3_6_d": {
         "name": "{name}",

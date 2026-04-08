@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Der Flur ist voller Schüler. Aus drei Richtungen kommen gleichzeitig Signale.*"
+        "text": "*Mittagspause. Der Flur ist voller Schüler. Aus drei Richtungen kommt gleichzeitig ein Signal.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -9,23 +9,23 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "Hey! Schon gegessen?! Lass zum Schulkiosk gehen! Ich kauf dir Brot... der Verlierer zahlt!"
+        "text": "Hey! Schon gegessen?! Komm, wir gehen zum Kiosk! Wetten um ein Brötchen — wer verliert, zahlt!"
     },
     "lunch_start_6": {
         "name": "{name}",
-        "text": "*Und Yuna schlüpft mit nur ihrer Tasche leise aus dem Klassenzimmer. Richtung Bibliothek.*"
+        "text": "*Und Yuna schnappt sich nur ihre Tasche und schlüpft leise aus dem Klassenzimmer. Richtung Bibliothek.*"
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Drei Wege. So eine Wahl am ersten Tag. An meiner alten Schule hab ich nicht gewählt. Hab's aufgeschoben und das Timing verpasst. — Diesmal nicht.*"
+        "text": "*Drei Wege. Dass ich gleich am ersten Tag so eine Wahl habe. An meiner alten Schule hab ich mich nie entschieden. Hab's vor mir hergeschoben und den richtigen Moment verpasst. — Diesmal nicht.*"
     },
     "lunch_choice": {
         "name": "{name}",
         "text": "*Wem folge ich?*",
         "choices": [
-            "Seoyeon aufs Dach folgen",
+            "Mit Seoyeon aufs Dach",
             "Mit Dain zum Schulkiosk",
-            "Yuna in die Bibliothek folgen"
+            "Mit Yuna in die Bibliothek"
         ]
     },
     "lunch_seo_1": {
@@ -42,7 +42,7 @@
     },
     "lunch_seo_4": {
         "name": "{name}",
-        "text": "Ein Dach nur für die Schülersprecherin?"
+        "text": "Gibt's hier ein Dach exklusiv für die Schülersprecherin?"
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
@@ -62,7 +62,7 @@
     },
     "lunch_seo_10": {
         "name": "Seoyeon",
-        "text": "Ich packe immer mehr ein. Bei der Schülervertretung vergesse ich ständig zu essen."
+        "text": "Bei der Schülervertretung verpass ich oft die Mittagspause. Da pack ich lieber gleich extra viel ein."
     },
     "lunch_seo_11": {
         "name": "{name}",
@@ -74,15 +74,15 @@
     },
     "lunch_seo_14": {
         "name": "Seoyeon",
-        "text": "Eine Schülersprecherin muss in allem gut sein."
+        "text": "Wenn die Schülersprecherin nicht mal kochen kann, wäre das schon peinlich, oder?"
     },
     "lunch_seo_15": {
         "name": "{name}",
-        "text": "Das ist keine richtige Antwort."
+        "text": "Das ist keine Antwort."
     },
     "lunch_seo_16": {
         "name": "Seoyeon",
-        "text": "*reicht Stäbchen* Iss. Kalt schmeckt es nicht."
+        "text": "*reicht ihm Stäbchen* Iss. Kalt schmeckt's nicht mehr."
     },
     "lunch_seo_17": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
-        "text": "Willst du nächstes Mal wiederkommen?"
+        "text": "Halt dir die Mittagspause auch beim nächsten Mal frei."
     },
     "lunch_seo_after_3": {
         "name": "{name}",
@@ -234,11 +234,11 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "Nein, aber wer mit mir mithalten will, muss den Mindest-Ausdauer-Test bestehen! lol"
+        "text": "Nö, aber wer mit mir abhängen will, muss erstmal den Fitness-Mindesttest bestehen! lol"
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Klang wie ein PR."
+        "text": "Klingt nach 'nem PR."
     },
     "lunch_dain_20": {
         "name": "Dain",
@@ -266,7 +266,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "Haha super!! Ich bring dir alles bei! Turnhalle nach der Schule, Deal?!"
+        "text": "Hahaha geil!! Ab heute Spezialtraining! Aufwärmen in der Halle nach der Schule, abgemacht?!"
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "Erster Essenspartner an deiner neuen Schule bin ich? Das ist Rekord. REKORD!"
+        "text": "Dass ich dein erster Essenspartner an der neuen Schule bin? Das geht in die Geschichte ein, ehrlich!"
     },
     "lunch_dain_after_5": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "lunch_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna setzt sich in eine Ecke des Lesesaals. Öffnet ein Buch. Ich bin mir nicht sicher, ob sie weiß, dass ich ihr gefolgt bin.*"
+        "text": "*Yuna setzt sich in eine Ecke des Lesesaals und schlägt ein Buch auf. Keine Ahnung, ob sie überhaupt mitbekommt, dass ich ihr gefolgt bin. Vorsichtig setze ich mich ihr gegenüber.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*Eine Erlaubnis? Wirkt wie eine Erlaubnis. — Bedingte Erlaubnis. Stille legt sich über uns. Yuna liest ihr Buch. Ich hab nichts zu tun und schlendere die Regale entlang.*"
+        "text": "*Ist das jetzt ein Ja? Klingt nach Ja. — Aber unter Vorbehalt. Stille senkt sich über uns. Yuna liest. Ich hab nichts zu tun und lasse den Blick über die Regale wandern.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "lunch_yuna_22": {
         "name": "Yuna",
-        "text": "*schiebt ein Lesezeichen ein* ...Danke, dass du still warst."
+        "text": "*legt ein Lesezeichen ein* ...Danke, dass du still warst."
     },
     "lunch_yuna_23": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna steht als Erste auf und geht. Sie dreht sich nicht um. 'War schön.' — Ohne Grund hebt sich meine Stimmung.*"
+        "text": "*Yuna steht als Erste auf und geht. Ohne sich umzudrehen. 'War schön.' — Und plötzlich bin ich gut gelaunt.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -436,11 +436,11 @@
     },
     "lunch_start_4_b": {
         "name": "{name}",
-        "text": "*Neben mir greift Dain nach meinem Arm.*"
+        "text": "*Neben mir packt Dain mich am Arm.*"
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Lächelt* Ganz schön misstrauisch, hm. Ich bin nur hochgekommen, weil es im Klassenzimmer so stickig war."
+        "text": "*lächelt* Du bist aber misstrauisch. Wenn man unten ständig mit Leuten zu tun hat, will man manchmal einfach allein sein."
     },
     "lunch_seo_c1_2_b": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*In Yunas Schreibtisch steckt etwas. Ein altes Lesezeichen. Etwas ist darauf geschrieben — aber ich kann es nicht entziffern. Yuna legt unbewusst ihre Hand darauf. Etwas Wertvolles, vielleicht.*"
+        "text": "*In Yunas Buch steckt etwas. Ein altes Lesezeichen mit einer Aufschrift — die ich nicht entziffern kann. Yuna legt ganz unbewusst die Hand darauf. Wahrscheinlich etwas, das ihr wichtig ist. Ich ziehe wahllos ein Buch aus dem Regal und schlage es auf.*"
     }
 }

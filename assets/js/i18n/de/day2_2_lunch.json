@@ -1,15 +1,15 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Anders als gestern habe ich Yunas Zettel in der Tasche. Am Ende des Flurs geht Seoyeon mit einer Lunchbox in Richtung Dach, und Dain winkt mich wieder zum Schulkiosk. Die Mittagspause an dieser Schule ist Krieg.*"
+        "text": "*Mittagspause. Anders als gestern habe ich Yunas Zettel in der Tasche. Am Ende des Flurs geht Seoyeon mit ihrer Bento-Tasche Richtung Dach, und Dain winkt mich schon wieder zum Kiosk. Die Mittagspause an dieser Schule ist die reinste Schlacht.*"
     },
     "lunch2_choice": {
         "name": "{name}",
         "text": "*Mit wem soll ich gehen?*",
         "choices": [
-            "Yunas Zettel zum Bibliotheksanbau folgen",
-            "Seoyeon aufs Dach folgen",
-            "Mit Dain zum Schulkiosk gehen"
+            "Yunas Zettel folgen — zum Bibliotheksanbau",
+            "Mit Seoyeon aufs Dach",
+            "Mit Dain zum Kiosk"
         ]
     },
     "lunch2_seo_1_check": {
@@ -308,7 +308,7 @@
     },
     "lunch2_seo_2": {
         "name": "Seoyeon",
-        "text": "Wieder da. Auf den Geschmack gekommen?"
+        "text": "Schon wieder hier. Auf den Geschmack gekommen?"
     },
     "lunch2_seo_3": {
         "name": "{name}",
@@ -316,7 +316,7 @@
     },
     "lunch2_seo_4": {
         "name": "Seoyeon",
-        "text": "Wegen dem Essen?"
+        "text": "Wegen des Essens?"
     },
     "lunch2_seo_5": {
         "name": "{name}",
@@ -336,7 +336,7 @@
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "...Das Dach ist genehmigungspflichtig."
+        "text": "...Hier oben braucht man eigentlich 'ne Erlaubnis."
     },
     "lunch2_seo_11": {
         "name": "Dain",
@@ -432,7 +432,7 @@
     },
     "lunch2_dain_2": {
         "name": "Dain",
-        "text": "Heute verlierst du!! Mach dich bereit!!"
+        "text": "Heute geht der Sieg an mich!! Mach dich gefasst!!"
     },
     "lunch2_dain_3": {
         "name": "{name}",
@@ -444,7 +444,7 @@
     },
     "lunch2_dain_4": {
         "name": "Dain",
-        "text": "Gestern war nur Aufwärmung!!"
+        "text": "Gestern war nur Aufwärmen!!"
     },
     "lunch2_dain_4b": {
         "name": "Dain",
@@ -464,7 +464,7 @@
     },
     "lunch2_dain_7": {
         "name": "{name}",
-        "text": "Wie manipuliert man Schere-Stein-Papier?"
+        "text": "Wie soll man bitte Schere-Stein-Papier manipulieren?"
     },
     "lunch2_dain_8": {
         "name": "Dain",
@@ -573,7 +573,7 @@
     },
     "lunch2_dain_end_g": {
         "name": "Schulkrankenschwester",
-        "text": "Schon wieder? Willst du Stammkunde werden?"
+        "text": "Schon wieder du? Willst du etwa Stammkunde werden?"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Schulkrankenschwester",
@@ -657,7 +657,7 @@
     },
     "lunch2_dain_end_z": {
         "name": "Schulkrankenschwester",
-        "text": "Du kannst auch ohne Grund kommen."
+        "text": "Du darfst auch ohne Grund vorbeikommen."
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",

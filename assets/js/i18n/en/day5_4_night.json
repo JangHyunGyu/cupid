@@ -41,7 +41,7 @@
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
-        "text": "...This face — I'll only show it to you."
+        "text": "...This face — only you get to see it."
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
@@ -81,7 +81,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...I thought we'd work out. I guess we were both a step short."
+        "text": "...I thought we'd make it work. We were both just one step short, I guess."
     },
     "bitter_seo_2_b": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "true_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon’s room. Her parents are out. The room is tidy — too tidy. A room without emotion.*"
+        "text": "*Seoyeon's room. Her parents are out. The room is tidy — too tidy. The kind of tidy that has no feelings in it.*"
     },
     "true_seo_2": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "I feel like I don’t have to be perfect in front of you."
+        "text": "With you, I feel like I don't have to be perfect."
     },
     "true_seo_4": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "true_seo_6b": {
         "name": "Seoyeon",
-        "text": "I always had to smile. But in front of you, I just want to be myself."
+        "text": "I always had to smile. With you, I just want to be myself."
     },
     "true_seo_7": {
         "name": "Seoyeon",
@@ -157,7 +157,7 @@
     },
     "perfect_yuna_3": {
         "name": "Yuna",
-        "text": "...Tell me what you think after you finish reading. That's my answer."
+        "text": "...Tell me what you think after you finish it. That's my answer."
     },
     "perfect_yuna_4": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "bitter_yuna_2": {
         "name": "Yuna",
-        "text": "...Sometimes I think of you. When I smell the library. I should have said more back then."
+        "text": "...Sometimes I think of you. When I catch the smell of the library. I should've said more back then."
     },
     "bitter_yuna_3": {
         "name": "{name}",
@@ -265,7 +265,7 @@
     },
     "perfect_dain_2": {
         "name": "Dain",
-        "text": "This is the last toss. — But it's also a beginning."
+        "text": "This is the last toss. — But it's also the start of something."
     },
     "perfect_dain_2b": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "perfect_dain_3": {
         "name": "Dain",
-        "text": "Am I a decent person off the court too?"
+        "text": "Am I worth anything off the court too?"
     },
     "perfect_dain_3b": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "It was fun, really! ...But I think fun was all it was. That's kind of sad."
+        "text": "It really was fun! ...But I think fun was all it was. Kind of sad, huh."
     },
     "bitter_dain_3": {
         "name": "{name}",
@@ -365,11 +365,11 @@
     },
     "true_dain_7": {
         "name": "{name}",
-        "text": "I wasn’t looking."
+        "text": "Wasn't looking."
     },
     "true_dain_8": {
         "name": "Dain",
-        "text": "You totally were!! ...But you can keep looking."
+        "text": "You SO were!! ...But you can keep looking."
     },
     "true_dain_8b": {
         "name": "{name}",
@@ -410,7 +410,7 @@
     },
     "day5_ending_alone": {
         "name": "{name}",
-        "text": "*I walk out the school gate. My phone buzzes. — It’s nobody. Low battery warning.*"
+        "text": "*I walk out the school gate. My phone buzzes. — Nobody. Low battery warning.*"
     },
     "alone_1": {
         "name": "{name}",
@@ -426,7 +426,7 @@
     },
     "alone_4": {
         "name": "{name}",
-        "text": "*...Being alone isn’t a punishment. It’s just — quiet. Much more than I expected.*"
+        "text": "*...Being alone isn't a punishment. It's just quiet. Quieter than I expected.*"
     },
     "alone_5": {
         "name": "System",
@@ -466,7 +466,7 @@
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "It won't be perfect. Not for you, not for me. ...But this time, don't let go halfway through."
+        "text": "It won't be perfect. Not for you, not for me. ...But this time, don't let go halfway."
     },
     "good_1_seo_b": {
         "name": "{name}",
@@ -514,7 +514,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...You were late. Still, this time I read your sentence all the way to the end."
+        "text": "...You were late. Still — this time I read your sentence all the way to the end."
     },
     "good_1_yuna_b": {
         "name": "{name}",
@@ -746,7 +746,7 @@
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*This balance won't last long. Someone gets hurt first. By then, this isn't romance anymore. It's just a mess.*"
+        "text": "*When Seoyeon asked, \"What are you doing on Wednesday?\" my heart nearly stopped. Wednesday is Yuna's day.*"
     },
     "harem_6": {
         "name": "{name}",
@@ -1195,7 +1195,7 @@
         "text": "*If the reason she can jump despite the pain is me — that's enough.*"
     },
     "mayhem_8": {
-        "name": "시스템",
+        "name": "System",
         "text": "─── MAYHEM END ───"
     }
 }

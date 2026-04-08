@@ -5,7 +5,7 @@
     },
     "night_start_3": {
         "name": "{name}",
-        "text": "*El teléfono suena. El mensajero de la escuela.*"
+        "text": "*Suena el móvil. El chat del instituto.*"
     },
     "night_msg_seo_1": {
         "name": "Seoyeon",
@@ -17,7 +17,7 @@
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
-        "text": "*La próxima vez tendré al menos bebidas listas*"
+        "text": "*La próxima vez al menos prepararé algo de beber*"
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
@@ -49,7 +49,7 @@
     },
     "night_msg_dain_3": {
         "name": "Dain",
-        "text": "*Aún me duele lo del pan la verdad jajaja*"
+        "text": "*La verdad es que lo del pan me dolió jajaja*"
     },
     "night_msg_dain_4": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "*¡Oye, aún no te has dormido, verdad?!*"
+        "text": "*¡Oye, no estás dormido todavía, ¿verdad?!*"
     },
     "night_dain_late_2": {
         "name": "Dain",

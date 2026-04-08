@@ -25,7 +25,7 @@
     },
     "minsu_cheer_2": {
         "name": "Minsu",
-        "text": "Viel Spaß dabei haha"
+        "text": "Viel Spaß dabei, haha"
     },
     "minsu_cheer_3": {
         "name": "{name}",
@@ -37,15 +37,15 @@
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
-        "text": "Komm nicht zu spät. Parkbrunnen, 10 Uhr."
+        "text": "Sei pünktlich. 10 Uhr, am Brunnen im Park."
     },
     "morning4_yuna_msg_1": {
         "name": "Yuna",
-        "text": "10 Uhr. Café vor dem Bahnhof. Wenn du zu spät kommst, gehe ich."
+        "text": "10 Uhr. Café vorm Bahnhof. Wenn du zu spät kommst, bin ich weg."
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "Heute ist es soweit!!!! Vor der Turnhalle um 18 Uhr!! Ich bin irgendwie nervös lol, warte, sollte ich das überhaupt senden"
+        "text": "Heute ist DER Tag!!!! 18 Uhr vor der Halle!! Bin irgendwie nervös lol, warte, sollte ich das überhaupt abschicken"
     },
     "morning4_end": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_homeroom_d4_4_d": {
         "name": "Klassenlehrerin",
-        "text": "Du bist der erste Schüler, der beim 'Vorbeikommen' durchs Schultor schaut."
+        "text": "Du bist der erste Schüler, der beim 'Vorbeikommen' am Wochenende ins Schultor schaut."
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",

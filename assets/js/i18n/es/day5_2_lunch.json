@@ -13,7 +13,7 @@
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "No te regañé, ¿verdad? — Me gustaste desde ese momento."
+        "text": "No llegué a regañarte, ¿verdad? Y aun así, me empezaste a gustar desde entonces."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "Cuando vengo aquí, siento que el tiempo se relaja un poco."
+        "text": "Cuando vengo aquí, siento que el tiempo se afloja un poco."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -141,7 +141,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Se enfada pero se ríe al mismo tiempo. — Esa es Dain.*"
+        "text": "*Se enfada, pero se ríe al mismo tiempo. Esa es Dain. Alguien capaz de divertirse incluso perdiendo. Dain deja el balón en la cancha. Despacio.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -153,7 +153,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "No sé qué cambió... pero ahora, incluso fuera de la cancha, me siento un poco más definida."
+        "text": "No sé qué es lo que ha cambiado... pero ahora, incluso fuera de la cancha, siento que estoy más definida."
     },
     "tour_dain_13": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Lo dice sin signos de exclamación. Pero esta vez no es una despedida — es un comienzo.*"
+        "text": "*Lo dice sin signos de exclamación. Pero esta vez no suena a despedida, sino a principio. Es como aquella frase sin exclamaciones del Día 4, solo que con otra temperatura.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
