@@ -26,11 +26,11 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "So what if we're late? If we get caught together, maybe the punishment won't be so bad?"
+        "text": "So what if we are? If we get caught together, the punishment splits, right?"
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
-        "text": "I don't think that's how it works."
+        "text": "Pretty sure that's not how it works."
     },
     "morning3_seo_gate_6": {
         "name": "Seoyeon",
@@ -74,7 +74,7 @@
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
-        "text": "Hey hey hey!! We're late!! Run!!"
+        "text": "GO GO GO!! We're late!! RUN!!"
     },
     "morning3_dain_gate_3": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
-        "text": "*My hand is hot. Is it because of sweat, or is it uniquely hot only where Dain held it? No time to think while running.*"
+        "text": "*My hand is burning. Is that sweat, or is it just hot where she's holding it? No time to figure it out while sprinting.*"
     },
     "morning3_classroom_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning3_react_seo_1": {
         "name": "Dain",
-        "text": "Hey! You came with the class president?! This early in the morning?!"
+        "text": "WAIT! You walked in with the council president?! THIS early?!"
     },
     "morning3_react_seo_2": {
         "name": "{name}",
@@ -102,15 +102,15 @@
     },
     "morning3_react_yuna_1": {
         "name": "Seoyeon",
-        "text": "Walking to school together? You two seem close."
+        "text": "Walking to school together now? Cozy."
     },
     "morning3_react_yuna_2": {
         "name": "Dain",
-        "text": "So jealous!! I wish I had someone to walk to school with too!!"
+        "text": "Jealous!! I want someone to walk to school with too!!"
     },
     "morning3_react_dain_1": {
         "name": "Seoyeon",
-        "text": "Quite the cardio workout this morning. Want me to share my lunch box later?"
+        "text": "Quite the cardio for the morning. Want to split my lunchbox later?"
     },
     "morning3_react_dain_2": {
         "name": "{name}",
@@ -122,14 +122,14 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Are you free this weekend? There's somewhere I want to go."
+        "text": "Free this weekend? There's somewhere I want to go."
     },
     "morning3_date_seo_choice": {
         "name": "{name}",
         "text": "*Seoyeon asks casually as she passes me in the hallway.*",
         "choices": [
             "Sure. Where?",
-            "I think I'll be kind of busy"
+            "I might be kind of busy."
         ]
     },
     "morning3_date_seo_accept": {
@@ -142,7 +142,7 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Hey! What are you doing this weekend?! Wanna hit the arcade together?!"
+        "text": "Hey! What're you doing this weekend?! Wanna hit the arcade?!"
     },
     "morning3_date_dain_2": {
         "name": "{name}",
@@ -153,7 +153,7 @@
         "text": "*Dain comes over during the next break and asks.*",
         "choices": [
             "Sure, let's do it",
-            "This weekend's not great..."
+            "This weekend's kind of bad..."
         ]
     },
     "morning3_date_dain_accept": {
@@ -162,7 +162,7 @@
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Oh, okay? Well, if you're busy, can't be helped!"
+        "text": "Oh? Yeah, no, if you're busy, no biggie!"
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*I pride myself on being perceptive. — Yet I get it wrong at the moments that matter most.*"
+        "text": "*I always thought I read people well. — And I keep getting it wrong when it actually matters.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
@@ -414,7 +414,7 @@
     },
     "morning3_dain_gate_warm_2": {
         "name": "Dain",
-        "text": "Hey! You almost made us late! Let's go together!"
+        "text": "Yo! You almost made us late! Come on, let's go!"
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
@@ -682,7 +682,7 @@
     },
     "hidden_nurse_d3_5_m": {
         "name": "School Nurse",
-        "text": "Should a school nurse even be doing this kind of counseling... *Resting her chin on her hand* But I'll listen. This is the nurse's office, after all. Your heart needs to be healthy too, right?"
+        "text": "Probably not in the school nurse job description... *resting her chin on her hand* But I'll listen. This is the nurse's office, after all. Your heart's a vital organ too, right?"
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",

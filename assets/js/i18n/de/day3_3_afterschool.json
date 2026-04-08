@@ -44,7 +44,7 @@
     },
     "after3_reject_for_seo_2": {
         "name": "Dain",
-        "text": "...Du kommst heute nicht in die Turnhalle, oder?"
+        "text": "...Heute kommst du nicht in die Halle, oder?"
     },
     "after3_reject_for_seo_3": {
         "name": "{name}",
@@ -60,7 +60,7 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Im Schülerrat ist viel los. Ich esse heute getrennt. ...Heute."
+        "text": "Im Schülerrat ist viel los. Ich ess heute lieber für mich. ...Nur heute."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -88,7 +88,7 @@
     },
     "after3_reject_for_dain_2": {
         "name": "Seoyeon",
-        "text": "...Ich hab heute noch was zu erledigen. Ich geh schon mal vor."
+        "text": "...Hab heute noch was zu erledigen. Ich geh schon mal."
     },
     "after3_reject_for_dain_2b": {
         "name": "{name}",

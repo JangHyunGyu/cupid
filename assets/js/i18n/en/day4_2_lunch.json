@@ -7,8 +7,8 @@
     "name": "{name}",
     "text": "*What do I say?*",
     "choices": [
-      "You really look beautiful today.",
-      "You really put in effort today."
+      "You look beautiful today.",
+      "You went all out today, huh."
     ]
   },
   "date_seo_pretty_high": {
@@ -21,7 +21,7 @@
   },
   "date_seo_pretty_high_3": {
     "name": "{name}",
-    "text": "It just came out."
+    "text": "It just slipped out."
   },
   "date_seo_pretty_high_4": {
     "name": "{name}",
@@ -29,11 +29,11 @@
   },
   "date_seo_pretty_low": {
     "name": "Seoyeon",
-    "text": "...What, all of a sudden. Give a warning before you say things like that."
+    "text": "...Where'd that come from. Warn me before you say things like that."
   },
   "date_seo_bright": {
     "name": "Seoyeon",
-    "text": "Of course. I put in some effort today."
+    "text": "Of course. I put in a little effort today."
   },
   "date_seo_walk": {
     "name": "{name}",
@@ -41,15 +41,15 @@
   },
   "date_seo_duck": {
     "name": "Seoyeon",
-    "text": "These guys are so simple. Give them bread and they follow. Don't, and they won't."
+    "text": "They're simple, these guys. Bread, they follow. No bread, they don't."
   },
   "date_seo_duck_2": {
     "name": "{name}",
-    "text": "Aren't people the same way?"
+    "text": "People aren't that different, are they?"
   },
   "date_seo_duck_3": {
     "name": "Seoyeon",
-    "text": "People sometimes won't come even when you give them bread."
+    "text": "People sometimes don't come, even when you give them bread."
   },
   "date_seo_duck_4": {
     "name": "{name}",
@@ -61,11 +61,11 @@
   },
   "date_seo_succulent_2": {
     "name": "Seoyeon",
-    "text": "This one's easy to care for. It survives fine without water."
+    "text": "This one's easy. Survives even if you forget to water it."
   },
   "date_seo_succulent_3": {
     "name": "Seoyeon",
-    "text": "If you can keep it alive. -- If you can't, I'm taking it back."
+    "text": "If you can keep it alive. — If not, I'm taking it back."
   },
   "date_seo_end": {
     "name": "{name}",
@@ -79,7 +79,7 @@
     "name": "{name}",
     "text": "*What do I say?*",
     "choices": [
-      "First time seeing you out of uniform.",
+      "First time I'm seeing you out of uniform.",
       "Your eyes look different today."
     ]
   },
@@ -97,7 +97,7 @@
   },
   "date_yuna_pretty_high_4": {
     "name": "Yuna",
-    "text": "Say it again."
+    "text": "Say that again."
   },
   "date_yuna_pretty_high_5": {
     "name": "{name}",
@@ -109,7 +109,7 @@
   },
   "date_yuna_bright": {
     "name": "Yuna",
-    "text": "...What's so different."
+    "text": "...What's different about them."
   },
   "date_yuna_bookstore": {
     "name": "{name}",
@@ -121,7 +121,7 @@
   },
   "date_yuna_bookstore_3": {
     "name": "Yuna",
-    "text": "...Good. That means I showed you first."
+    "text": "...Good. So I get to be the one who showed you first."
   },
   "date_yuna_earphone": {
     "name": "{name}",
@@ -141,7 +141,7 @@
   },
   "date_yuna_oldbook_2": {
     "name": "Yuna",
-    "text": "I read this book a year ago. Back then, the ending felt sad."
+    "text": "I read this a year ago. Back then, the ending felt sad."
   },
   "date_yuna_oldbook_3": {
     "name": "{name}",
@@ -149,7 +149,7 @@
   },
   "date_yuna_oldbook_4": {
     "name": "Yuna",
-    "text": "...Now it reads differently."
+    "text": "...Now it reads different."
   },
   "date_yuna_end": {
     "name": "{name}",
@@ -161,7 +161,7 @@
   },
   "date_dain_2": {
     "name": "Dain",
-    "text": "You're here!! Almost late, weren't you?!"
+    "text": "You made it!! Cutting it close, weren't you?!"
   },
   "date_dain_3": {
     "name": "{name}",
@@ -175,7 +175,7 @@
     "name": "{name}",
     "text": "*This is becoming a pattern now.*",
     "choices": [
-      "That cap looks good.",
+      "That cap looks good on you.",
       "Sportswear shouldn't look this good."
     ]
   },
@@ -185,11 +185,11 @@
   },
   "date_dain_pretty_high_2": {
     "name": "Dain",
-    "text": "Hey!! You can't just — say that out of nowhere!!"
+    "text": "WHAT — you can't just SAY stuff like that!!"
   },
   "date_dain_pretty_high_3": {
     "name": "{name}",
-    "text": "It's the truth."
+    "text": "It's true."
   },
   "date_dain_pretty_high_4": {
     "name": "{name}",
@@ -197,11 +197,11 @@
   },
   "date_dain_pretty_low": {
     "name": "Dain",
-    "text": "What the — !! ...Haha, thanks, but stop, it's embarrassing."
+    "text": "WHAT — !! ...Haha, thanks, but stop, it's embarrassing."
   },
   "date_dain_bright": {
     "name": "Dain",
-    "text": "Obviously!! I'm in peak condition today!!"
+    "text": "OBVIOUSLY!! I'm in peak form today!!"
   },
   "date_dain_arcade": {
     "name": "{name}",
@@ -209,7 +209,7 @@
   },
   "date_dain_arcade_2": {
     "name": "Dain",
-    "text": "Alright, let's make a bet!! Loser buys drinks!!"
+    "text": "Okay, bet time!! Loser buys drinks!!"
   },
   "date_dain_arcade_3": {
     "name": "Dain",
@@ -225,7 +225,7 @@
   },
   "date_dain_rhythm_3": {
     "name": "Dain",
-    "text": "Haha, of course!! This one doesn't need knees!!"
+    "text": "LOL OBVIOUSLY!! This one doesn't need knees!!"
   },
   "date_dain_knee": {
     "name": "{name}",
@@ -253,11 +253,11 @@
   },
   "pre_confess_minsu": {
     "name": "Minsu",
-    "text": "Hey, you're on your date right? Just one thing"
+    "text": "yo you on your date right? one thing"
   },
   "pre_confess_minsu_2": {
     "name": "Minsu",
-    "text": "Do it right this time. Don't run away"
+    "text": "do it right this time. don't run"
   },
   "pre_confess_callback": {
     "name": "{name}",
@@ -273,7 +273,7 @@
   },
   "date_seo_pretty_high_b": {
     "name": "Seoyeon",
-    "text": "...Did you rehearse that?"
+    "text": "...Did you rehearse that line?"
   },
   "date_seo_pretty_high_3_b": {
     "name": "Seoyeon",

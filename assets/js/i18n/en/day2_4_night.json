@@ -9,27 +9,27 @@
     },
     "night2_msg_dain_specific": {
         "name": "Dain",
-        "text": "Hey!! The tteokbokki today was amazing!!"
+        "text": "yo!! tteokbokki today SLAPPED!!"
     },
     "night2_msg_dain_specific_2": {
         "name": "Dain",
-        "text": "Let's bet again tomorrow!! Different event!!"
+        "text": "Rematch tomorrow!! Different game!!"
     },
     "night2_msg_seo_specific": {
         "name": "Seoyeon",
-        "text": "Thanks for today. We finished early thanks to you"
+        "text": "Thanks for today. Got done early because of you"
     },
     "night2_msg_seo_specific_2": {
         "name": "Seoyeon",
-        "text": "I might call on you again next time, so brace yourself"
+        "text": "I might draft you again next time. Brace yourself."
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "...That song today. It was nice"
+        "text": "...That song today. It was good."
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "...Play it for me again sometime"
+        "text": "...Play it again for me sometime."
     },
     "night2_msg_seo_general": {
         "name": "Seoyeon",
@@ -37,11 +37,11 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hey, let's hit the snack shop tomorrow! I'm still bummed we missed it today!"
+        "text": "Yo, snack bar tomorrow! Still salty we skipped it today!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Want to come to the rooftop at lunch? The breeze will be nice"
+        "text": "Roof at lunch tomorrow? Should be a nice breeze."
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hey!! You're coming to the school store tomorrow, right?!"
+        "text": "YO!! Snack bar tomorrow, right?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*I need to reply to all three at the same time. — I'm not sure if this is bliss or torture.*"
+        "text": "*Three replies due at once. — Can't tell if this is heaven or hell.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -78,19 +78,19 @@
     },
     "night2_reply_dain_1": {
         "name": "{name}",
-        "text": "The tteokbokki was spicy lol"
+        "text": "tteokbokki was spicy lol"
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Lol can't handle spicy food?!"
+        "text": "lmao can't handle spice?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "Let's go mild tomorrow!!"
+        "text": "we'll go mild tomorrow!!"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
-        "text": "Oh wait mild tteokbokki isn't real tteokbokki lol"
+        "text": "wait nvm mild tteokbokki isn't real tteokbokki lol"
     },
     "night2_reply_dain_5": {
         "name": "{name}",
@@ -98,19 +98,19 @@
     },
     "night2_reply_seo_1": {
         "name": "{name}",
-        "text": "Call me and I'll come again"
+        "text": "Call me and I'll be there"
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "You make promises easily"
+        "text": "You make promises pretty easily."
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "It's an easy promise"
+        "text": "It's an easy one to keep."
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "I'll leave the rooftop open at lunch. Actually come this time"
+        "text": "I'll leave the roof open at lunch. Actually show up this time."
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -118,11 +118,11 @@
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
-        "text": "About halfway through. It's good"
+        "text": "About halfway through. It's good."
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "...Good to hear"
+        "text": "...Glad."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Look at the third star"
+        "text": "Look at the third star."
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
@@ -138,11 +138,11 @@
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "I'll tell you why later"
+        "text": "I'll tell you why later."
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*I should count tomorrow night. — Because of this person, I keep looking up at the sky.*"
+        "text": "*I'll have to count them tomorrow night. — Because of her, I keep looking up at the sky.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Day two is over. On day one, it was curiosity. I wondered what kind of people they were. Today — it's a little different. Not curious. They're stuck in my head. What they're doing right now, what they'll say tomorrow.*"
+        "text": "*Day two, done. Yesterday it was curiosity — I wondered who they were. Tonight, it's different. Not curious. They're just stuck in my head. What they're doing right now. What they'll say tomorrow.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "DUDEEE!!!!! I'm literally rolling around in bed laughing rn LOL!! You HAVE to come to the gym tomorrow!!"
+        "text": "DUDEEE!!!!! I'm literally rolling on my bed laughing rn LOL!! You HAVE to come to the gym tomorrow!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -218,15 +218,15 @@
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
-        "text": "...You're more interesting than I expected. Want to come to the rooftop for lunch tomorrow?"
+        "text": "...You're more interesting than I expected. Roof for lunch tomorrow?"
     },
     "night2_reply_seo_react_default": {
         "name": "Seoyeon",
-        "text": "Heh. Got it. See you tomorrow."
+        "text": "Hm. Got it. See you tomorrow."
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...So there's someone who texts back at this hour. Want to come to the library tomorrow?"
+        "text": "...So someone actually texts back this late. Library tomorrow?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",

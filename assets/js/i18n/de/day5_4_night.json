@@ -45,7 +45,7 @@
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "*Der Wind auf dem Dach weht.* Auch nach dem Abschluss werde ich herkommen. Diese Pflanzen wachsen nur, wenn du da bist."
+        "text": "*Auf dem Dach geht der Wind.* Auch nach dem Abschluss komm ich her. Diese Pflanzen wachsen nur, wenn du da bist."
     },
     "perfect_seo_5": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "perfect_epilogue_2_seo": {
         "name": "{name}",
-        "text": "*Tag der Universitätseinschreibung. Eine Nachricht auf meinem Handy. 'Hab heute die Pflanze gegossen. — Aber komm bald nach Hause.'*"
+        "text": "*Erster Uni-Tag. Eine Nachricht auf meinem Handy. 'Hab heute die Pflanze gegossen. — Aber komm trotzdem bald heim.'*"
     },
     "perfect_epilogue_3_seo": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...Ich dachte, es würde klappen. Wir waren wohl beide einen Schritt zu kurz."
+        "text": "...Ich dachte echt, es würde klappen. Aber wir waren wohl beide einen Schritt zu zaghaft."
     },
     "bitter_seo_2_b": {
         "name": "{name}",
@@ -746,7 +746,7 @@
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*Dieses Gleichgewicht hält nicht lange. Jemand wird zuerst verletzt. Dann ist das keine Romanze mehr, sondern einfach nur ein Scherbenhaufen.*"
+        "text": "*Als Seoyeon fragte: „Was machst du am Mittwoch?“, blieb mir fast das Herz stehen. Mittwoch ist Yunas Tag.*"
     },
     "harem_6": {
         "name": "{name}",
@@ -1195,7 +1195,7 @@
         "text": "*Wenn der Grund, warum sie trotz der Schmerzen springen kann, ich bin — das reicht.*"
     },
     "mayhem_8": {
-        "name": "시스템",
+        "name": "System",
         "text": "─── MAYHEM END ───"
     }
 }

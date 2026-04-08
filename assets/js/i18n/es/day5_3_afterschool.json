@@ -13,7 +13,7 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*No me sale decir 'lo siento' tan fácilmente. No son sentimientos que puedan ordenarse con una sola palabra. Así que solo dentro de mí, despacio. Gracias.*"
+        "text": "*No me sale pedir perdón así como así. No son sentimientos que se ordenen con una sola frase. Así que solo, por dentro y despacio: gracias.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Bueno, me lo esperaba. Desde el principio nunca te moviste según mis cálculos."
+        "text": "Bueno, me lo esperaba. Desde el principio nunca te moviste como yo había calculado."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "Pero bueno, tú elegiste. ¡La próxima vez más te vale darme una oportunidad!"
+        "text": "Pero bueno, es a quien has elegido. La próxima vez tendrás que darme a mí una oportunidad."
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Ay, ¿por qué lloras? — si es algo bueno —"
+        "text": "Así que... dilo. Esta vez voy a escucharte hasta el final."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "Dain",
-        "text": "*Dain se detiene, pero no logra sonreír.* ...Qué."
+        "text": "*Dain se detiene, sí. Pero no consigue sonreír enseguida.* ...¿Por qué?"
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -297,7 +297,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Mientras caminamos lado a lado.* ...Es tarde. Pero esta vez no huiste. Esas palabras, hoy no las tomaré a la ligera."
+        "text": "*Caminando uno al lado del otro.* ...Es tarde. Pero esta vez no huiste. Hoy no voy a tomarme esas palabras a la ligera."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Saliendo de la escuela.* ¡Oye, ¿en serio?! ...¿De verdad? Yo, sí que esperé. Pero si me río de inmediato solo porque esperé, sería un poco injusto, ¿no? Así que esta vez, dilo hasta el final."
+        "text": "*Saliendo de la escuela.* ¿Oye, en serio? ...¿En serio? Sí, te estuve esperando. Pero no sería justo ponerme a sonreír sin más solo porque me hiciste esperar. Así que esta vez dilo hasta el final."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -315,7 +315,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Caminamos lado a lado.* ...Lo sabía. Pero hoy, lo leeré hasta el final."
+        "text": "*Caminamos uno al lado del otro.* ...Ya lo sabía. Pero hoy voy a leerte hasta el final."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",

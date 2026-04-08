@@ -33,11 +33,11 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "Hey! Ich hab dich als meinen Partner für das heutige Sportevent eingetragen!"
+        "text": "Hey! Ich hab dich als meinen Partner fürs Sportevent heute eingetragen!"
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Wenn du wegläufst, werde ich echt sauer?"
+        "text": "Lauf bloß nicht weg, sonst werd ich echt sauer!"
     },
     "morning5_end": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Klassenlehrerin",
-        "text": "Hab es sieben Jahre niemandem gezeigt. — Gehört eigentlich nicht zu meinen Aufgaben."
+        "text": "Hab es sieben Jahre lang niemandem gezeigt. — Eigentlich nicht mein Job."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",

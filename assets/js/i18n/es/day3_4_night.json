@@ -17,7 +17,7 @@
     },
     "night3_faithful_msg_seo_2": {
         "name": "Seoyeon",
-        "text": "...Pero puedes volver"
+        "text": "...Pero puedes volver si quieres"
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "night3_faithful_msg_dain_2": {
         "name": "Dain",
-        "text": "Pero oye, gracias"
+        "text": "Pero bueno, gracias"
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Tuve un sueño. — Caminaba junto a alguien. No le veía la cara, pero raro: no estaba ansioso.*"
+        "text": "*Soñé. Caminaba al lado de alguien. No le veía la cara, pero, por alguna razón, no estaba inquieto.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
-        "text": "Solo sé así conmigo"
+        "text": "Quiero que solo seas así conmigo"
     },
     "night3_cheat_msg_3": {
         "name": "Seoyeon",
@@ -69,11 +69,11 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*Solo espero que no te tomes a la ligera la elección de a cuál vas a apoyar.*"
+        "text": "*Solo quiero que no te tomes a la ligera esa elección: al lado de quién vas a ponerte.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
-        "text": "...No huyas. Solo eso"
+        "text": "...No huyas. Solo te pido eso"
     },
     "night3_cheat_msg_dain_1": {
         "name": "Dain",
@@ -126,7 +126,7 @@
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*Tendí la mano. — No agarro nada. Todas desaparecieron, solo queda la oscuridad.*"
+        "text": "*Tendí la mano. No llego a agarrar nada. Todas desaparecen y solo queda la oscuridad.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— No voy a huir. Esta vez, solo una persona. Tuve un sueño. — Caminaba junto a alguien. No le veía la cara, pero raro: no estaba ansioso.*"
+        "text": "*No voy a huir. Esta vez voy a elegir a una sola persona. Soñé. Caminaba al lado de alguien. No le veía la cara, pero, por alguna razón, no estaba inquieto.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -150,11 +150,11 @@
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*La había guardado porque sentía que borrarla era borrar también aquellos sentimientos. Pero ahora ya no es apego — es un registro. — Su papel terminó.*"
+        "text": "*La había guardado porque sentía que, si la borraba, también desaparecerían los sentimientos de entonces. Pero ahora ya no es apego: es un registro. Su papel ha terminado.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Esta vez es diferente. Si lo veo, lo digo. Si lo sé, doy un paso adelante. A una sola persona, con claridad — La galería está vacía. El sitio donde estaba la foto de Sojeong. La pantalla vacía es más nítida que la propia foto.*"
+        "text": "*Esta vez es distinto. Si lo veo, lo diré. Si lo sé, daré un paso al frente. Por una sola persona, y de verdad. La galería está vacía. El hueco donde estaba la foto de Sojeong. La pantalla en blanco se ve casi más nítida.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Porque si escribe el final, se acabó. — Yuna tiene miedo de que esta historia termine.*"
+        "text": "*Si no escribe el final, la historia no se acaba. Yo me siento igual.*"
     },
     "night3_cheat_msg_3_b": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*Solo espero que no te tomes a la ligera la decisión de al lado de quién vas a estar.*"
+        "text": "*Quiero que entiendas el peso de decidir al lado de quién vas a quedarte.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Borrar la foto fue fácil. Un solo dedo bastó. — Los sentimientos tardan más que eso.*"
+        "text": "*Borrar la foto fue fácil. Bastó un dedo. Los sentimientos tardan bastante más. Aun así, al menos eso sí me deja avanzar al siguiente paso.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",

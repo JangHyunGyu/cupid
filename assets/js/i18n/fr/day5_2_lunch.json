@@ -25,7 +25,7 @@
     },
     "tour_seo_7": {
         "name": "{name}",
-        "text": "*Il n'y a pas de vent.*"
+        "text": "*Y a pas de vent.*"
     },
     "tour_seo_8": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "Je ne sais pas ce qui a changé. — C'est juste que... je me suis retrouvée aussi en dehors du terrain."
+        "text": "Je sais pas ce qui a changé. — C'est juste que... je me suis retrouvée aussi en dehors du terrain."
     },
     "tour_dain_13": {
         "name": "{name}",

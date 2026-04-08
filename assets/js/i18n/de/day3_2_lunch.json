@@ -17,11 +17,11 @@
     },
     "lunch3_meal_4": {
         "name": "{name}",
-        "text": "Hör auf, Noten zu vergeben."
+        "text": "Hör auf, mein Essen zu benoten."
     },
     "lunch3_meal_5": {
         "name": "Seoyeon",
-        "text": "Von 10. Das ist doch nicht schlecht, oder?"
+        "text": "Von 10. Ist doch gar nicht schlecht, oder?"
     },
     "lunch3_meal_6": {
         "name": "{name}",
@@ -55,7 +55,7 @@
     },
     "lunch3_give_seo_1": {
         "name": "Seoyeon",
-        "text": "...Danke. Du hast eben Geschmack."
+        "text": "...Danke. Du hast eben einen guten Geschmack."
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
@@ -71,7 +71,7 @@
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
-        "text": "...Unglaublich. Und ich habe sogar Punkte vergeben."
+        "text": "...Echt jetzt. Und ich hab extra Punkte vergeben."
     },
     "lunch3_give_dain_3": {
         "name": "Yuna",
@@ -135,7 +135,7 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "...Gelögen. Ich wusste es auch nicht."
+        "text": "...Gelogen. Wusste es auch nicht."
     },
     "lunch3_expose_12": {
         "name": "{name}",
@@ -143,7 +143,7 @@
     },
     "lunch3_expose_14": {
         "name": "Minsu",
-        "text": "...Alter. Spinnst du?"
+        "text": "...Alter. Geht's noch?"
     },
     "lunch3_expose_15": {
         "name": "{name}",

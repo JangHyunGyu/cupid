@@ -746,7 +746,7 @@
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*Este equilibrio no dura mucho. Alguien sale herido primero. Para entonces esto ya no es romance, es solo un desastre.*"
+        "text": "*Cuando Seoyeon me preguntó: «¿Qué haces el miércoles?», casi se me paró el corazón. El miércoles es el día de Yuna.*"
     },
     "harem_6": {
         "name": "{name}",
@@ -1164,7 +1164,7 @@
     },
     "hidden_good_nurse_3_b": {
         "name": "{name}",
-        "text": "*Incluso despu?s de cerrar el tap?n, no logro bajar la comisura de los labios.*"
+        "text": "*Incluso después de cerrar el tapón, no logro bajar la comisura de los labios.*"
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
@@ -1195,7 +1195,7 @@
         "text": "*Si la razón por la que puede saltar a pesar del dolor soy yo — con eso basta.*"
     },
     "mayhem_8": {
-        "name": "시스템",
+        "name": "Sistema",
         "text": "─── MAYHEM END ───"
     }
 }

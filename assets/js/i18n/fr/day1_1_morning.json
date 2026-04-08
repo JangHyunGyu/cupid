@@ -33,15 +33,15 @@
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Suis-moi. Je t'expédie ça en quinze minutes."
+        "text": "Suis-moi. Je te boucle ça en quinze minutes."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "La présidente en personne ? Quel honneur."
+        "text": "La présidente en personne ? Rien que ça."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "Si c'est un honneur ou non, c'est moi qui en décide."
+        "text": "C'est moi qui décide si c'en est un ou pas."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
@@ -51,9 +51,9 @@
         "name": "{name}",
         "text": "*Comment devrais-je réagir ?*",
         "choices": [
-            "Ne me dis pas que tu es venue en avance parce que tu t'intéresses à moi ?",
-            "C'est combien, la visite guidée ?",
-            "Ça ira. Je vais me débrouiller tout seul."
+            "Avoue, t'es venue en avance parce que je t'intéresse ?",
+            "Elle coûte combien, la visite guidée ?",
+            "C'est bon, je vais me débrouiller."
         ]
     },
     "choice_dismiss_1": {
@@ -62,11 +62,11 @@
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
-        "text": "Vraiment ? Alors retiens au moins le numéro de la salle de classe. Troisième année, salle 2, tout au fond à droite."
+        "text": "Ah ouais ? Alors retiens au moins le numéro de salle. Terminale 2, tout au fond à droite."
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*Seoyeon a vraiment tourné les talons. Sans un geste. J'ai dû tâtonner pour trouver le panneau d'affichage du couloir et j'ai à peine réussi à arriver devant la salle de classe. — J'ai fait mon choix, et la responsabilité m'incombe.*"
+        "text": "*Seoyeon est vraiment partie. Sans même un signe. J'ai galéré à déchiffrer le plan du couloir pour arriver devant la salle. — J'ai fait mon choix, j'assume.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Wow. Dès le premier jour, tu ne te retiens pas. Je vais vite retenir ton nom."
+        "text": "Waouh. Premier jour et tu te lâches déjà. Ton nom, je vais le retenir vite."
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -82,15 +82,15 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "C'est parce que tu es nouveau ? Tu ne sais pas lire l'ambiance. C'est amusant."
+        "text": "C'est parce que t'es nouveau ? T'as aucun filtre. J'aime bien."
     },
     "choice_flirt_5": {
         "name": "{name}",
-        "text": "Je suis flatté."
+        "text": "Je suis flatté ?"
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Tu ne sais pas encore si c'est flatteur ou catastrophique."
+        "text": "Tu sais pas encore si c'est flatteur ou catastrophique."
     },
     "choice_flirt_7": {
         "name": "{name}",
@@ -98,11 +98,11 @@
     },
     "choice_joke_1": {
         "name": "Seoyeon",
-        "text": "C'est gratuit. — Mais les intérêts s'accumulent après."
+        "text": "C'est gratuit. — Mais ça compte des intérêts plus tard."
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "Quelle présidente redoutable."
+        "text": "Une présidente redoutable, dis donc."
     },
     "choice_joke_3": {
         "name": "Seoyeon",
@@ -110,11 +110,11 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon me guide dans le couloir. Les élèves qui passent la saluent. Elle leur répond d'un regard à chacun. Elle lève la main pour saluer en retour, l'air naturel. On dirait que les populaires de ce lycée sont déjà désignés.*"
+        "text": "*Seoyeon me fait visiter en marchant. Les élèves qu'on croise la saluent. Elle leur rend leur salut d'un regard, un par un. Elle lève la main, naturellement. Apparemment, les populaires de ce lycée sont déjà désignés.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Le bâtiment des troisièmes années est ici, la bibliothèque est là-bas. Le kiosque est au sous-sol."
+        "text": "Le bâtiment des terminales c'est ici, la bibliothèque par là. Le kiosque est au sous-sol."
     },
     "hallway_4": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "hallway_5": {
         "name": "Seoyeon",
-        "text": "Le toit est normalement fermé à clé. Privilège de présidente du conseil."
+        "text": "Le toit est censé être fermé à clé. Privilège de présidente."
     },
     "hallway_6": {
         "name": "{name}",
@@ -130,19 +130,19 @@
     },
     "hallway_8": {
         "name": "{name}",
-        "text": "*Et voilà que j'ai un rendez-vous pour le déjeuner. — Je n'ai même pas dit oui.*"
+        "text": "*Voilà que j'ai un plan déjeuner. — Sans même avoir dit oui. On arrive devant la salle.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
-        "text": "C'est ici. Vas-y, entre."
+        "text": "C'est ici. Entre."
     },
     "hallway_11": {
         "name": "{name}",
-        "text": "Tu me guideras aussi à midi ?"
+        "text": "Tu me guides aussi pour le midi ?"
     },
     "hallway_12": {
         "name": "Seoyeon",
-        "text": "Ça dépendra de toi."
+        "text": "Ça dépend de toi."
     },
     "hallway_13": {
         "name": "{name}",
@@ -150,59 +150,59 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*J'ouvre la porte de la classe. Les regards se déversent sur moi. Je m'y attendais, mais trente paires d'yeux, ça pèse quand même.*"
+        "text": "*J'ouvre la porte de la salle. Les regards me tombent dessus. Je m'y attendais, mais trente paires d'yeux, ça pèse quand même.*"
     },
     "classroom_3": {
         "name": "Professeure principale",
-        "text": "Bien, voici l'élève transféré qui rejoint notre classe aujourd'hui. Tu veux bien te présenter ?"
+        "text": "Bon, voici le nouveau qui rejoint la classe aujourd'hui. Tu veux te présenter ?"
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh ! Un garçon transféré ! Enfin une nouvelle recrue !"
+        "text": "Oh ! Un nouveau ! Enfin une nouvelle recrue !"
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Carré court brun. En uniforme de volley-ball. Une voix débordante d'énergie. Elle est à moitié levée de son siège. Même sa voisine qui la tire par la manche n'y peut rien.*"
+        "text": "*Carré court châtain. En tenue de volley. Voix débordante d'énergie. Elle est à moitié debout. Sa voisine a beau la tirer par la manche, rien à faire.*"
     },
     "classroom_dain_3": {
         "name": "Professeure principale",
-        "text": "Dain, un peu de calme... Et arrête de porter ton maillot de sport en classe."
+        "text": "Dain, un peu de calme... Et arrête de venir en tenue de sport en cours."
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Mais madame, c'est juste ce dans quoi je suis le plus à l'aise. Bref, enchantée, le nouveau !"
+        "text": "Mais m'dame, c'est ce que j'ai de plus confortable. Bref, salut le nouveau !"
     },
     "classroom_dain_5": {
         "name": "{name}",
-        "text": "*C'est le genre qui n'a aucun contrôle du volume.*"
+        "text": "*Le genre qui ne sait pas régler son volume.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Je détourne le regard et aperçois une fille tout au fond près de la fenêtre, le menton posé sur la main, qui regarde dehors. Ma présentation ne semble pas l'intéresser.*"
+        "text": "*Je détourne les yeux et j'aperçois une fille au fond, près de la fenêtre, le menton dans la main, qui regarde dehors. Ma présentation a l'air de la laisser totalement indifférente.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Cheveux blanc argenté. Des yeux rouges, mi-clos et nonchalants. Des tatouages couvrent ses bras. — Elle ne regarde même pas dans ma direction. Comme si un élève transféré n'avait rien d'extraordinaire. Les élèves autour d'elle ne tournent pas non plus le regard vers elle. Délibérément. Comme s'il n'y avait personne à cette place.*"
+        "text": "*Cheveux argentés. Des yeux rouges, mi-clos, nonchalants. Des tatouages plein les bras. — Elle ne jette même pas un œil par ici. Comme si un nouveau, c'était rien d'extraordinaire. Les élèves autour d'elle ne la regardent pas non plus. Volontairement. Comme s'il n'y avait personne à cette place.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Quelqu'un au premier rang chuchote. '...Ne lui parle pas, elle fait peur.' — Assez près pour que Yuna entende. Mais son expression ne change pas. Elle y est habituée.*"
+        "text": "*Quelqu'un au premier rang chuchote. '...Lui parle pas, elle fout les jetons.' — Assez près pour que Yuna l'entende forcément. Mais son visage ne bouge pas. Elle a l'habitude.*"
     },
     "classroom_seat_1": {
         "name": "{name}",
-        "text": "*La professeure principale désigne une place vide.*"
+        "text": "*La prof principale me désigne une place vide.*"
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*C'est à côté de Dain. Sauvé ou condamné — je ne sais pas, mais au moins ce ne sera pas calme.*"
+        "text": "*Juste à côté de Dain. Sauvé ou foutu, je sais pas, mais au moins ce sera pas calme.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
-        "text": "*Au moment de m'asseoir, le garçon devant moi se retourne.*"
+        "text": "*Au moment où je m'assieds, le mec devant moi se retourne.*"
     },
     "classroom_minsu_2": {
         "name": "Minsu",
-        "text": "Eh, le nouveau. Bienvenue. — Et fais gaffe."
+        "text": "Hé, le nouveau. Bienvenue. — Et fais gaffe."
     },
     "classroom_minsu_3": {
         "name": "{name}",
@@ -210,19 +210,19 @@
     },
     "classroom_dain_talk_1": {
         "name": "{name}",
-        "text": "*Au moins il y a quelqu'un de sensé ici. — Son badge indique 'Minsu'.*"
+        "text": "*Au moins il y a quelqu'un de normal ici. — Sur son étiquette c'est marqué 'Minsu'.*"
     },
     "classroom_dain_talk_2": {
         "name": "{name}",
-        "text": "*À peine assis, Dain se penche vers moi. Aucune notion d'espace personnel.*"
+        "text": "*À peine assis, Dain se penche vers moi. Zéro notion d'espace personnel.*"
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
-        "text": "Hé, {name} ! T'aimes le sport ?!"
+        "text": "Hé, {name} ! Tu fais du sport ?!"
     },
     "classroom_dain_talk_4": {
         "name": "{name}",
-        "text": "Comme ça, sans prévenir ?"
+        "text": "Euh, comme ça, sans prévenir ?"
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
@@ -274,11 +274,11 @@
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*La professeure se tient devant l'estrade. Fin de la vingtaine. Son cardigan est ouvert depuis le début. Son expression est détachée, mais — ses yeux passent chaque élève en revue.*"
+        "text": "*La prof se tient devant l'estrade. Fin de la vingtaine. Son cardigan est ouvert depuis le début. Son expression est détachée, mais — ses yeux passent chaque élève en revue.*"
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "Je m'appelle {name}. Enchanté. *Court et net. La professeure hoche la tête.*"
+        "text": "Je m'appelle {name}. Enchanté. *Court et net. La prof hoche la tête.*"
     },
     "classroom_5_b": {
         "name": "Professeure principale",
@@ -290,7 +290,7 @@
     },
     "classroom_dain_5_b": {
         "name": "{name}",
-        "text": "*La professeure laisse échapper un petit soupir. Pas d'exaspération — le soupir de quelqu'un qui a l'habitude.*"
+        "text": "*La prof laisse échapper un petit soupir. Pas d'exaspération — le soupir de quelqu'un qui a l'habitude.*"
     },
     "classroom_dain_5_c": {
         "name": "Professeure principale",

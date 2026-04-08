@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Eh, mañana vamos al kiosco. ¡Todavía me fastidia que hoy no pudiéramos ir!"
+        "text": "Eh, mañana vamos a la cafetería. ¡Todavía me fastidia que hoy no pudiéramos ir!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "¡¡¡AAAA!!!!! Acabo de patear la cobija de la risa jajaja ¡¡Mañana ven al gimnasio sin falta!!"
+        "text": "¡¡¡AAAA!!!!! ¡Le he dado patadas al edredón de la risa jajaja! ¡¡Mañana ven al gimnasio sin falta!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",

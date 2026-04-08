@@ -21,11 +21,11 @@
     },
     "minsu_cheer_1": {
         "name": "{name}",
-        "text": "*Miro el móvil. Mensaje de la mañana. — Minsu está arriba del todo.*"
+        "text": "*Miro el móvil. Mensaje de primera hora. Arriba del todo está Minsu.*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
-        "text": "Diviértete jaja"
+        "text": "Que te salga bien jajaja"
     },
     "minsu_cheer_3": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*Respiro hondo y vuelvo a revisar el mensaje del plan.*"
+        "text": "*Respiro hondo y vuelvo a leer el mensaje con el plan.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Vista fuera de la puerta del colegio, no parece una profesora. Solo... una persona que escribe.*"
+        "text": "*Vista desde fuera del portón, la tutora no parece una profesora. Solo una persona que escribe.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Profesora",
@@ -81,7 +81,7 @@
     },
     "hidden_homeroom_d4_4_d": {
         "name": "Profesora",
-        "text": "Eres el primer alumno que se asoma al portón de la escuela mientras 'solo pasa por aquí'."
+        "text": "Nunca había visto a un alumno que, “pasando por aquí”, se quedara mirando la puerta del instituto."
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Profesora",
-        "text": "Digamos que es una extensión del interés pedagógico. *murmurando en voz baja* Un café estaría bien, ¿no? — Bueno, eres estudiante, así que un jugo."
+        "text": "Digamos que es una prolongación del interés pedagógico. *murmura* Un café no pasa nada, ¿no? Bueno, en tu caso, un zumo."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Profesora",
-        "text": "*sonríe* Si te parece pesado, no hace falta que lo leas. — Pero léelo con el corazón ligero. Así me gusta más."
+        "text": "*Se le escapa una risa* Si te resulta demasiado intenso, no hace falta que lo leas. Pero léelo sin tomártelo demasiado en serio. Prefiero eso."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Profesora",
@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'De verdad'. — Hoy lo escuché primero. A través de sus gafas, los ojos de la enfermera se ven húmedos. La travesura vuelve. — Pero debajo de sus ojos sonrientes, hay un rastro de algo que fluyó. Duele.*"
+        "text": "*“De verdad”. Hoy lo oí yo primero. Tras las gafas, los ojos de la enfermera están húmedos. Le vuelve el tono juguetón, pero bajo esa sonrisa queda el rastro de algo que ha corrido. Me duele el pecho.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermera",
@@ -335,7 +335,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*Es una orden. Hasta las citas las plantea como instrucciones. Pero por alguna razón me hace gracia.*"
+        "text": "*Es una orden. Hasta las citas las convierte en instrucciones. Y, aun así, me hace gracia.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",

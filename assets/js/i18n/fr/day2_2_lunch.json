@@ -236,7 +236,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "{name}",
-        "text": "*Une ombre passe sur le visage de Yuna. Je ne sais pas qui est ce « quelqu'un », mais—*"
+        "text": "*Une ombre passe sur le visage de Yuna. Je sais pas qui est ce « quelqu'un », mais—*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -244,7 +244,7 @@
     },
     "lunch2_yuna_c1_6": {
         "name": "Yuna",
-        "text": "...Je ne sais pas. S'il ne l'a pas fait, ou s'il ne pouvait pas."
+        "text": "...Je sais pas. S'il ne l'a pas fait, ou s'il ne pouvait pas."
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",

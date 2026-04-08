@@ -26,7 +26,7 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "Was soll's, wenn wir zu spät kommen? Wenn wir zusammen erwischt werden, ist die Strafe vielleicht milder, oder?"
+        "text": "Wenn wir schon zu spät sind — vielleicht ist die Strafe ja milder, wenn wir zu zweit erwischt werden, hm?"
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "morning3_seo_gate_6": {
         "name": "Seoyeon",
-        "text": "...War ein Witz. Ich regle das schon."
+        "text": "...War nur ein Witz. Ich krieg das schon hin."
     },
     "morning3_seo_gate_7": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
-        "text": "Hey hey hey!! Wir sind spät dran!! Lauf!!"
+        "text": "Hey hey hey!! Wir kommen zu spät!! Renn!!"
     },
     "morning3_dain_gate_3": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning3_react_seo_1": {
         "name": "Dain",
-        "text": "Hey! Du bist mit der Schülersprecherin gekommen?! So früh am Morgen?!"
+        "text": "Hey! Bist du etwa mit der Schülersprecherin gekommen?! Schon am frühen Morgen?!"
     },
     "morning3_react_seo_2": {
         "name": "{name}",
@@ -102,15 +102,15 @@
     },
     "morning3_react_yuna_1": {
         "name": "Seoyeon",
-        "text": "Zusammen zur Schule? Ihr scheint euch gut zu verstehen."
+        "text": "Zusammen in die Schule? Ihr versteht euch wohl ziemlich gut."
     },
     "morning3_react_yuna_2": {
         "name": "Dain",
-        "text": "So neidisch!! Ich hätte auch gerne jemanden, mit dem ich morgens kommen kann!!"
+        "text": "Voll neidisch!! Ich hätt auch gern jemanden, mit dem ich morgens herkomme!!"
     },
     "morning3_react_dain_1": {
         "name": "Seoyeon",
-        "text": "Ganz schön viel Sport am Morgen. Soll ich dir was von meinem Mittagessen abgeben?"
+        "text": "Ganz schön sportlich gleich am Morgen. Soll ich dir was von meinem Mittagessen abgeben?"
     },
     "morning3_react_dain_2": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Hey! Was machst du am Wochenende?! Wollen wir zusammen in die Spielhalle?!"
+        "text": "Hey! Was machst du am Wochenende?! Lass uns zusammen in die Spielhalle gehen!!"
     },
     "morning3_date_dain_2": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Ach so? Na, wenn du beschäftigt bist, kann man nichts machen!"
+        "text": "Ach so? Na, wenn du keine Zeit hast, kann man nix machen!"
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",

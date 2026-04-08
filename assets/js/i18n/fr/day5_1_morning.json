@@ -167,7 +167,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Dès que j'entre dans la salle de classe — des signaux me parviennent de trois directions.*"
+        "text": "*Dès que j'entre dans la salle — des signaux me parviennent de trois directions.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -343,7 +343,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*« Après ton diplôme. » — Les mêmes mots que la professeure principale. Pas maintenant, mais un jour. Le jour où le titre de « professeure » disparaîtra.*"
+        "text": "*« Après ton diplôme. » — Les mêmes mots que la prof principale. Pas maintenant, mais un jour. Le jour où le titre de « professeure » disparaîtra.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Infirmière",
@@ -394,11 +394,11 @@
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*Il n'y a pas de nouveau mot sur le bureau. À la place, le regard que Seoyeon m'a lancé hier sur le toit reste encore vif. Yuna et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
+        "text": "*Y a pas de nouveau mot sur le bureau. À la place, le regard que Seoyeon m'a lancé hier sur le toit reste encore vif. Yuna et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*Il n'y a pas de nouveau mot. À la place, il reste encore la façon dont Yuna a soutenu mon regard plus longtemps que d'habitude hier. Seoyeon et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
+        "text": "*Y a pas de nouveau mot. À la place, il reste encore la façon dont Yuna a soutenu mon regard plus longtemps que d'habitude hier. Seoyeon et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
@@ -431,7 +431,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
-        "text": "*La professeure s'arrête. — Puis son expression sèche habituelle revient. Trop vite.*"
+        "text": "*La prof s'arrête. — Puis son expression sèche habituelle revient. Trop vite.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professeure principale",
@@ -447,7 +447,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "{name}",
-        "text": "*La professeure tend la main. Reprend le manuscrit. Lentement. Le remet dans l'enveloppe.*"
+        "text": "*La prof tend la main. Reprend le manuscrit. Lentement. Le remet dans l'enveloppe.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Professeure principale",
@@ -479,7 +479,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "*La professeure s'arrête. Vraiment. Pas une demi-seconde — trois secondes environ. Sa main serre plus fort le porte-bloc.*"
+        "text": "*La prof s'arrête. Vraiment. Pas une demi-seconde — trois secondes environ. Sa main serre plus fort le porte-bloc.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professeure principale",
@@ -507,7 +507,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*Pour la première fois, la professeure a prononcé le mot *écrivaine* en parlant d'elle-même. Un mot qu'elle n'avait pas dit en sept ans.*"
+        "text": "*Pour la première fois, la prof a prononcé le mot *écrivaine* en parlant d'elle-même. Un mot qu'elle n'avait pas dit en sept ans.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -523,7 +523,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professeure principale",
-        "text": "*La professeure rit. Vraiment. Pas seulement les coins de la bouche — les yeux aussi. Le visage de sept ans d'autocensure qui se relâche pendant une seconde.*"
+        "text": "*La prof rit. Vraiment. Pas seulement les coins de la bouche — les yeux aussi. Le visage de sept ans d'autocensure qui se relâche pendant une seconde.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professeure principale",

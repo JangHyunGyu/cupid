@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
-        "text": "T'as rien vu, d'accord ? Secret. Les profs aussi ont droit à leurs petits secrets."
+        "text": "*En refermant le tiroir* T'as rien vu, d'accord ? ...Les profs aussi ont bien le droit à un ou deux secrets."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",

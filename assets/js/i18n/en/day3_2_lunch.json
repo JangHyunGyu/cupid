@@ -5,7 +5,7 @@
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Oh! This is good!!"
+        "text": "Oh! This is SO good!!"
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -13,15 +13,15 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "The rolled omelette is a bit too salty. 6 points."
+        "text": "The rolled omelette's a touch salty. Six out of ten."
     },
     "lunch3_meal_4": {
         "name": "{name}",
-        "text": "Don't rate my food."
+        "text": "Stop grading my food."
     },
     "lunch3_meal_5": {
         "name": "Seoyeon",
-        "text": "Out of 10. That's not bad, you know?"
+        "text": "Out of ten. That's not bad, you know."
     },
     "lunch3_meal_6": {
         "name": "{name}",
@@ -67,11 +67,11 @@
     },
     "lunch3_give_dain_1": {
         "name": "Dain",
-        "text": "Really?! Thanks!! {name} is the best!!"
+        "text": "REALLY?! Thanks!! {name}, you're the BEST!!"
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
-        "text": "...Unbelievable. And here I even rated it for you."
+        "text": "...Unbelievable. And I even graded it for you."
     },
     "lunch3_give_dain_3": {
         "name": "Yuna",
@@ -83,11 +83,11 @@
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
-        "text": "...I thought you'd give it to me."
+        "text": "...I figured it'd come to me."
     },
     "lunch3_give_yuna_3": {
         "name": "Dain",
-        "text": "What! What about me?!"
+        "text": "WAIT! What about me?!"
     },
     "lunch3_share_solo": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "lunch3_expose_2": {
         "name": "Dain",
-        "text": "Oh right! {name}, you said you'd go to the arcade with me this weekend!! What should we eat first?!"
+        "text": "Oh right! {name}, you said you'd hit the arcade with me this weekend!! What should we eat first?!"
     },
     "lunch3_expose_3": {
         "name": "{name}",
@@ -119,15 +119,15 @@
     },
     "lunch3_expose_6": {
         "name": "Seoyeon",
-        "text": "You told me you had somewhere to go together."
+        "text": "You told me we had somewhere to go this weekend."
     },
     "lunch3_expose_7": {
         "name": "Dain",
-        "text": "...Wait. You told me you'd hang out this weekend too?"
+        "text": "...Wait. You said you'd hang out with me this weekend?"
     },
     "lunch3_expose_9": {
         "name": "Yuna",
-        "text": "I knew."
+        "text": "I knew already."
     },
     "lunch3_expose_10": {
         "name": "{name}",
@@ -135,7 +135,7 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "...That was a lie. I didn't know either."
+        "text": "...Lie. I didn't either."
     },
     "lunch3_expose_12": {
         "name": "{name}",
@@ -143,7 +143,7 @@
     },
     "lunch3_expose_14": {
         "name": "Minsu",
-        "text": "...Dude. Have you lost your mind?"
+        "text": "...Dude. Have you completely lost it?"
     },
     "lunch3_expose_15": {
         "name": "{name}",
@@ -153,22 +153,22 @@
         "name": "{name}",
         "text": "*What should I say...*",
         "choices": [
-            "I'm sorry. You're all such great people, I couldn't say no.",
-            "The times are different, so I thought it'd be fine...",
+            "I'm sorry. You're all amazing — I just couldn't say no to any of you.",
+            "The times didn't overlap, so I figured it'd be fine...",
             "Run away"
         ]
     },
     "lunch3_expose_honest_1": {
         "name": "{name}",
-        "text": "I'm sorry. You're all such great people, I couldn't say no."
+        "text": "I'm sorry. You're all amazing — I just couldn't say no to any of you."
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...Couldn't say no. That's the cruelest thing you could say, {name}."
+        "text": "...'Couldn't say no.' That's the cruelest thing you could've said, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
-        "text": "Kindness that can't refuse — gives false hope."
+        "text": "Kindness that can't say no just gives people false hope."
     },
     "lunch3_expose_honest_4": {
         "name": "{name}",
@@ -176,7 +176,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
-        "text": "I don't take ambiguous positions. If that's the case, I'd rather just be out of it entirely."
+        "text": "I don't do gray areas. If that's how it is, I'd rather be out of it completely."
     },
     "lunch3_expose_honest_6": {
         "name": "{name}",
@@ -188,15 +188,15 @@
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
-        "text": "The times are different, so I thought it'd be fine..."
+        "text": "The times didn't overlap, so I figured it'd be fine..."
     },
     "lunch3_expose_excuse_2": {
         "name": "Seoyeon",
-        "text": "...You don't see how that's the problem?"
+        "text": "...You really don't see how that's the problem?"
     },
     "lunch3_expose_excuse_3": {
         "name": "Dain",
-        "text": "Give me some time to think too."
+        "text": "I need some time to think too."
     },
     "lunch3_expose_excuse_4": {
         "name": "{name}",
@@ -212,7 +212,7 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*Lunchtime is over. But nothing is truly over.*"
+        "text": "*Lunchtime's over. But nothing is actually over.*"
     },
     "lunch3_share_1": {
         "name": "{name}",
@@ -287,11 +287,11 @@
     },
     "lunch3_yuna_witness_1": {
         "name": "Seoyeon",
-        "text": "I heard lunchbox smell coming from the library. ...With Yuna?"
+        "text": "I caught the smell of a lunchbox coming from the library. ...With Yuna?"
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Her expression is blank. That makes it scarier.*"
+        "text": "*Her face is blank. Which somehow makes it scarier.*"
     },
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",

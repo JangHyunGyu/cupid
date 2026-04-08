@@ -33,7 +33,7 @@
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Sígueme. Te lo despacho en quince minutos."
+        "text": "Sígueme. En quince minutos te enseño todo."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Será porque eres nuevo — no sabes leer el ambiente. Qué divertido."
+        "text": "Será porque eres nuevo, pero no te cortas nada. Qué divertido."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Aún no sabes si es un halago o un desastre."
+        "text": "Aún no sabes si es un halago o una condena."
     },
     "choice_flirt_7": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "¡Sin más! ¡Necesito a alguien para entrenar recepciones después de clase! ¡No tengo a nadie que me saque saques!"
+        "text": "¡Porque sí! ¡Necesito a alguien para entrenar recepciones después de clase! ¡No tengo a nadie que me lance saques!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",

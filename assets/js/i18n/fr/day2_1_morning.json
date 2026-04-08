@@ -286,7 +286,7 @@
     },
     "morning2_break_transition_b": {
         "name": "{name}",
-        "text": "*La professeure se tient devant la porte de la classe. Feuille de présence en main, elle jette un coup d'œil vers la porte — nos regards se croisent.*"
+        "text": "*La prof se tient devant la porte de la classe. Feuille de présence en main, elle jette un coup d'œil vers la porte — nos regards se croisent.*"
     },
     "hidden_homeroom_d2_1_b": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*J'ai suivi la professeure jusqu'à la salle des profs.* *Son bureau est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert.*"
+        "text": "*J'ai suivi la prof jusqu'à la salle des profs.* *Son bureau est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Professeure principale",
@@ -322,7 +322,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "{name}",
-        "text": "*La professeure hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
+        "text": "*La prof hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Quelqu'un dont je m'inquiète'. — La professeure s'inquiète pour Dain. Elle sait quelque chose ?*"
+        "text": "*'Quelqu'un dont je m'inquiète'. — La prof s'inquiète pour Dain. Elle sait quelque chose ?*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professeure principale",

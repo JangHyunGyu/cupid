@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Everyone sees you as a flawless person, don't they? But I keep remembering the moments when you briefly let your guard down."
+        "text": "Seoyeon. Everyone sees you as someone who has it all together, right? But I keep remembering the moments when you let your guard down for a second."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "It wasn't 'as the student council president,' there were moments when you just looked like Seoyeon. Those were the ones I liked."
+        "text": "Not the council president — moments when you were just Seoyeon. Those are the ones I keep coming back to."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -73,11 +73,11 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...When you said 'It's more than I deserve' at the school gate. From then on, I was a bit concerned."
+        "text": "...That 'I'm honored' you said at the gate. I've been thinking about you ever since."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "It really took a long time to bring up this topic."
+        "text": "Took you long enough to say it."
     },
     "confess_seo_yes_11_b": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
-        "text": "...Next time you come here, have something else to say."
+        "text": "...Next time you come here, have something else to say to me."
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
@@ -149,7 +149,7 @@
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna. At first I thought your silence was a wall. But it wasn't."
+        "text": "Yuna. At first I thought your silence was a wall. It wasn't."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "You were the kind of person who sits beside someone instead of speaking. That silence was warmer than anyone's words."
+        "text": "You're the kind of person who sits next to someone instead of speaking. That silence was warmer than anything anyone's said to me."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "confess_dain_2": {
         "name": "Dain",
-        "text": "One last place!! Let's go!!"
+        "text": "One last place!! Come on!!"
     },
     "confess_dain_3": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain. I — I have something to tell you."
+        "text": "Dain. There's — something I need to tell you."
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
@@ -269,7 +269,7 @@
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "That's why I keep finding myself going to you."
+        "text": "That's why I keep finding myself coming to you."
     },
     "confess_dain_yes_6": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Wait, I really feel like crying right now... I'm happy, so why am I like this..."
+        "text": "...Wait, I'm gonna cry... I'm happy, so why am I crying..."
     },
     "confess_dain_yes_9_b": {
         "name": "{name}",

@@ -79,7 +79,7 @@
     },
     "lunch2_dain_2b_seo": {
         "name": "Dain",
-        "text": "Oh, ¿o sea que hoy eliges mi lado y no la fiambrera de la presidenta?!"
+        "text": "¡Oh! ¿O sea que hoy me eliges a mí en vez de a la fiambrera de la presi?"
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
@@ -617,7 +617,7 @@
     },
     "lunch2_dain_end_p": {
         "name": "Enfermera",
-        "text": "*Sonriendo* Es esmero, esmero. Es know-how que viene de la experiencia."
+        "text": "*Sonriendo* Es esmero, puro esmero. Son tablas que dan los años."
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
@@ -641,7 +641,7 @@
     },
     "lunch2_dain_end_v": {
         "name": "{name}",
-        "text": "*Lo disimula con una broma, pero cerró ese portátil muy rápido. — Hay algo que no quiere que vean.*"
+        "text": "*Lo disimula con una broma, pero cerró ese cuaderno demasiado rápido. — Hay algo que no quiere que vean.*"
     },
     "lunch2_dain_end_w": {
         "name": "Enfermera",

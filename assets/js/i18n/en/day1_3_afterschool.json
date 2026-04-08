@@ -5,19 +5,19 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'Hey, Sojeong's doing fine at her new school~' 'That's a relief lol' — I slip the phone back into my pocket.*"
+        "text": "*'yo sojeong's doing fine at her new school~' 'oh thank god lol' — I slip the phone back into my pocket.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...A relief, they say. Is it really? If I'd just said one word back then — Sojeong wouldn't have had to leave the school.*"
+        "text": "*...Thank god, huh. Really? If I'd just spoken up back then — Sojeong wouldn't have had to leave at all.*"
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*At this school — if I see it, I'll say it. No more pretending I don't know when I do. This time.*"
+        "text": "*At this school — if I see something, I say it. No more looking the other way. Not this time.*"
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*I take out my phone again and leave the group chat. Done. — I belong to this school now.*"
+        "text": "*I pull my phone back out and leave the group chat. Done. — I'm part of this school now.*"
     },
     "after_miss_dain_1": {
         "name": "{name}",
@@ -41,11 +41,11 @@
     },
     "after_miss_dain_6": {
         "name": "Dain",
-        "text": "I'm late! Gotta get to the gym! — Oh, see you tomorrow! Transfer kid!"
+        "text": "Late! Gotta hit the gym! — Catch you tomorrow, transfer kid!"
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*She waves and runs off. The girl is a storm. The name the teacher called earlier — Dain. Already on first-name terms.*"
+        "text": "*She waves and tears off. The girl's a hurricane. The name the teacher used earlier — Dain. And we're already past formalities.*"
     },
     "after_miss_yuna_1": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Lunch. I left the rooftop open. Making me wait — bold move for a transfer student."
+        "text": "Lunch. I left the roof unlocked. Making me wait — bold move for a transfer student."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -85,11 +85,11 @@
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "...I went up for some air and the door happened to be open."
+        "text": "...I just went up for air. The door happened to be open."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*She definitely waited. — I feel a little sorry, and oddly, a little amused.*"
+        "text": "*She totally waited. — I feel kind of bad. And kind of amused, weirdly enough.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",
-        "text": "Oh, {name}? What brings you here?"
+        "text": "Oh, {name}? — Something up?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
@@ -118,31 +118,31 @@
     },
     "after_hidden_homeroom_4": {
         "name": "Homeroom Teacher",
-        "text": "You're not in trouble. — You're the transfer student, so. How are you settling in?"
+        "text": "You're not in trouble. — Just checking in on the new kid. How's it going so far?"
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
         "text": "*Sounds like a routine check-in, but her eyes are genuinely watching me.*",
         "choices": [
-            "I'm fine. It's a nice school, actually.",
-            "Honestly? It's been a lot."
+            "I'm okay. It's a better school than I expected.",
+            "Honestly? It's a lot."
         ]
     },
     "after_homeroom_ok": {
         "name": "Homeroom Teacher",
-        "text": "Good to hear. — If anything comes up, stop by the faculty office. That's what I'm here for."
+        "text": "Yeah? — If anything comes up, swing by the office. Paperwork's a good excuse."
     },
     "after_homeroom_ok_3": {
         "name": "Homeroom Teacher",
-        "text": "So it feels like a decent school, huh. — Hearing that is weirdly reassuring."
+        "text": "Better than expected, huh. — Weirdly reassuring to hear."
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
-        "text": "*She says it like part of the job, but that sounded a little more personal than that.*"
+        "text": "*She says it like it's just work talk, but that one came out a little more personal.*"
     },
     "after_homeroom_ok_5": {
         "name": "Homeroom Teacher",
-        "text": "Being perfect on day one wears you out. Pretend to be a little useless. — You can go now."
+        "text": "Being perfect on day one will burn you out. Slack a little. — Off you go."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -150,39 +150,39 @@
     },
     "after_homeroom_honest_1": {
         "name": "Homeroom Teacher",
-        "text": "Feeling overwhelmed is normal. It'd be weirder if you were chill on your first day at a new school."
+        "text": "Feeling overwhelmed is normal. If you were calm and collected on day one at a new school, that'd be the weird part."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "Have you ever transferred schools, ma'am?"
+        "text": "Have you ever been the new kid somewhere, miss?"
     },
     "after_homeroom_honest_3": {
         "name": "Homeroom Teacher",
-        "text": "...Something like that. I've been thrown into a new place out of nowhere before."
+        "text": "...Something like it. I've been dropped into a new place with zero warning before."
     },
     "after_homeroom_honest_4": {
         "name": "Homeroom Teacher",
-        "text": "If it gets too rough, come to the faculty office. I can get you a coffee — wait, you're a student. Juice, then."
+        "text": "If you can't hack it, come to the office. I'll spring for a coffee — wait, you're a student. Juice, then."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "A teacher buying a student drinks?"
+        "text": "A teacher buying her student drinks?"
     },
     "after_homeroom_honest_6": {
         "name": "Homeroom Teacher",
-        "text": "Professional concern, I guess."
+        "text": "Call it professional concern."
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
         "text": "*Professional concern.*",
         "choices": [
-            "If you're worried, you can just say you're worried",
-            "I'll look forward to that juice, ma'am"
+            "If you're worried, you can just say so.",
+            "I'll hold you to that juice, miss."
         ]
     },
     "after_homeroom_honest_choice2a": {
         "name": "Homeroom Teacher",
-        "text": "...Fine, I'm worried. — Was it that obvious?"
+        "text": "...Fine, I'm worried. — That obvious, huh?"
     },
     "after_homeroom_honest_choice2b": {
         "name": "Homeroom Teacher",
@@ -198,11 +198,11 @@
     },
     "after_homeroom_honest_9": {
         "name": "Homeroom Teacher",
-        "text": "If you can't settle in, I'll come drag you back."
+        "text": "If you can't settle in, I'll come drag you back myself."
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*The homeroom teacher disappears down the hallway. Her long hair sways. — I watched her for too long without meaning to.*"
+        "text": "*She vanishes down the hall. Long hair swaying behind her. — I watched her go a little too long.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
@@ -236,11 +236,11 @@
     },
     "after_nurse_enter_3": {
         "name": "{name}",
-        "text": "I'm feeling a bit dizzy."
+        "text": "I'm a little dizzy."
     },
     "after_nurse_enter_4": {
         "name": "School Nurse",
-        "text": "You're the transfer student, right? First day and you're already in the nurse's office. Rough start, huh?"
+        "text": "You're the transfer kid, right? First day and already in the nurse's office. Rough one, huh? Let me see."
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -248,17 +248,17 @@
     },
     "after_nurse_enter_6": {
         "name": "School Nurse",
-        "text": "No fever... Could just be a bit of low blood pressure."
+        "text": "No fever... could just be low blood pressure."
     },
     "after_nurse_enter_7": {
         "name": "School Nurse",
-        "text": "No fever, but... you need to relax a bit. Here, lie down. Just ten minutes."
+        "text": "No fever, but... you need to unclench a bit. Here, lie down. Ten minutes."
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
         "text": "*I lie down on the bed. Through the curtain, I can see the nurse's back.*",
         "choices": [
-            "You look more tired than I do, actually",
+            "You look more tired than I do, miss.",
             "This place is cozier than I expected"
         ]
     },
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Professional concern.' — She's the kind of person who wraps her care in job titles.*"
+        "text": "*'Professional concern.' — So she's the type who wraps her feelings in job titles.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -414,15 +414,15 @@
     },
     "after_nurse_enter_4_c": {
         "name": "School Nurse",
-        "text": "Your uniform's stiff. Smells like grass too. *Sniff sniff* Oh, cherry blossoms mixed in. A romantic transfer student."
+        "text": "Your uniform's brand-new stiff. And you smell like fresh grass. *Sniff sniff* Oh — cherry blossoms in there too. A romantic transfer student."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*A few words in and she's already setting the pace. The nurse stands and walks over. Smooth movements. — When her hand touches me, I tense up for no reason.*"
+        "text": "*Couple of sentences in and she's already running the conversation. She stands and walks over. Smooth, easy movements. — Her hand touches me and I tense up for no good reason.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "You can tell blood pressure from touching someone's forehead?"
+        "text": "You can tell blood pressure from a forehead?"
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",

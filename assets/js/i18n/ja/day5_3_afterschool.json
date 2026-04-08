@@ -136,7 +136,7 @@
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*誰も先に口を開けないまま、私たちは校舎裏を離れた。*"
+        "text": "*誰も先に口を開けないまま、俺たちは校舎裏を離れた。*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_g": {
         "name": "ソヨン",
-        "text": "でも—今度は、このまま見過ごしたくない。あなたが逃げずに戻ってきたから。"
+        "text": "でも——今回は、このまま行かせたくない。あんたが逃げずに戻ってきたから。"
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "{name}",
-        "text": "*この人には長い説明より一行で十分。問題は――僕の一行だ。*"
+        "text": "*この人には長い説明より一行で十分。問題は――俺の一行だ。*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -292,7 +292,7 @@
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "あのさ——僕、君に言いたいことがあるんだ。"
+        "text": "あのさ——俺、お前に言いたいことがあるんだ。"
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
@@ -359,7 +359,7 @@
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*これ以上の言葉は出てこなかった。日がさらに傾き、私たちはしばらく同じ方向に歩くだけだった。*"
+        "text": "*これ以上言葉は出てこなかった。日がさらに傾いて、俺たちはしばらく同じ方向に歩くだけだった。*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
@@ -367,11 +367,11 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*唇が動かない。また。——また言えなかった。*"
+        "text": "*喉が詰まって、何も言葉が出てこない。今回も。*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*夕風が吹いてくる。背中の後ろの影が伸びていく。——一人だ。*"
+        "text": "*夕風が吹きつけてくる。背中の後ろの影が長くなっていく。——結局、何も掴めないまま立ち尽くしている。*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",

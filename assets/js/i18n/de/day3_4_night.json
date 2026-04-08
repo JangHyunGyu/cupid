@@ -13,7 +13,7 @@
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
-        "text": "Was du heute gesehen hast, ist ein Geheimnis"
+        "text": "Was du heute gesehen hast, bleibt unter uns"
     },
     "night3_faithful_msg_seo_2": {
         "name": "Seoyeon",
@@ -29,11 +29,11 @@
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
-        "text": "Der Roman, das Ende habe ich noch nicht entschieden"
+        "text": "Wie der Roman endet, hab ich noch nicht entschieden"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
-        "text": "Wenn du nach meinem Knöchel fragen willst, komm persönlich fragen haha"
+        "text": "Wenn du nach meinem Knöchel fragen willst, komm vorbei und frag selbst haha"
     },
     "night3_faithful_msg_dain_2": {
         "name": "Dain",
@@ -57,7 +57,7 @@
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
-        "text": "Sei nur so zu mir"
+        "text": "So sollst du nur zu mir sein"
     },
     "night3_cheat_msg_3": {
         "name": "Seoyeon",
@@ -77,7 +77,7 @@
     },
     "night3_cheat_msg_dain_1": {
         "name": "Dain",
-        "text": "...haha wäre das mal ein Witz gewesen"
+        "text": "...haha wenn das nur ein Witz gewesen wäre"
     },
     "night3_cheat_msg_7": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
-        "text": "Du hast das nur mit mir gemacht..."
+        "text": "Ich dachte, das wäre nur zwischen uns gewesen..."
     },
     "night3_nightmare_4": {
         "name": "Yuna",
@@ -97,7 +97,7 @@
     },
     "night3_nightmare_5": {
         "name": "Dain",
-        "text": "Du hast gesagt, du kommst. Ich habe gewartet."
+        "text": "Du hast gesagt, du kommst. Ich hab gewartet."
     },
     "night3_nightmare_6": {
         "name": "{name}",

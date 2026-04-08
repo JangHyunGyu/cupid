@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Unlike yesterday, I have Yuna's note in my pocket. At the end of the hallway, Seoyeon is heading toward the rooftop with a lunchbox, and Dain is waving me toward the school store again. Lunch period at this school is a war.*"
+        "text": "*Lunchtime. Unlike yesterday, Yuna's note is in my pocket. Down the hall, Seoyeon's heading for the roof with a lunchbox. Dain's waving me toward the snack bar again. Lunch at this school is a war zone.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -23,7 +23,7 @@
     "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {
         "name": "Seoyeon",
-        "text": "You came all the way up here. Bold."
+        "text": "You actually came up here. Bold."
     },
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
@@ -35,7 +35,7 @@
     },
     "lunch2_seo_4b_dain": {
         "name": "Seoyeon",
-        "text": "...That is different."
+        "text": "...That's different, then."
     },
     "lunch2_seo_5b_dain": {
         "name": "{name}",
@@ -43,7 +43,7 @@
     },
     "lunch2_seo_6b_dain": {
         "name": "Seoyeon",
-        "text": "...You're more honest than I expected."
+        "text": "...You're more honest than I gave you credit for."
     },
     "lunch2_seo_2b_yuna": {
         "name": "Seoyeon",
@@ -59,11 +59,11 @@
     },
     "lunch2_seo_5b_yuna": {
         "name": "{name}",
-        "text": "I wanted to know what this breeze and the president's lunchbox feel like together."
+        "text": "I wanted to see what this breeze tastes like with your lunchbox."
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
-        "text": "*Snorts softly* That's oddly convincing."
+        "text": "*Soft snort* Weirdly convincing."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -79,7 +79,7 @@
     },
     "lunch2_dain_2b_seo": {
         "name": "Dain",
-        "text": "Oh, so today it's my side instead of the president's lunchbox?!"
+        "text": "Oh, my side today instead of the prez's lunchbox?!"
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
@@ -87,7 +87,7 @@
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
-        "text": "Nice!! You can't take that back! One round with soboro on the line!!"
+        "text": "YES!! No takebacks! One round, streusel bun on the line!!"
     },
     "lunch2_dain_1b_yuna": {
         "name": "{name}",
@@ -95,7 +95,7 @@
     },
     "lunch2_dain_2b_yuna": {
         "name": "Dain",
-        "text": "Hey! Yesterday you were all shadow-quiet, and today you're actually here to play, right?!"
+        "text": "Wait! Yesterday you went total ghost-mode and today you're here to actually have fun?!"
     },
     "lunch2_dain_3b_yuna": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "lunch2_dain_4b_yuna": {
         "name": "Dain",
-        "text": "Nice!! I respect that sense of balance! Then let's go one round!!"
+        "text": "YES!! Respect the balance! One round, let's go!!"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -176,15 +176,15 @@
     },
     "lunch2_yuna_7": {
         "name": "Yuna",
-        "text": "You seem to be getting close with that loud one. That's more fun, isn't it?"
+        "text": "Looks like you're getting close with the loud one. That's more fun, isn't it?"
     },
     "lunch2_yuna_8": {
         "name": "{name}",
-        "text": "Sometimes I need a refuge."
+        "text": "Sometimes I need somewhere to escape to."
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*Yuna smiles ever so slightly. Barely visible. — But I saw it. Did I come here just to see this smile?*"
+        "text": "*Yuna smiles. Just barely. — But I caught it. Maybe that's what I came here for.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -196,11 +196,11 @@
     },
     "lunch2_yuna_13": {
         "name": "{name}",
-        "text": "What is this place? A secret reading room?"
+        "text": "What is this place? Some kind of secret reading room?"
     },
     "lunch2_yuna_14": {
         "name": "Yuna",
-        "text": "...Almost no one knows about this place."
+        "text": "...Almost no one knows it exists."
     },
     "lunch2_yuna_15": {
         "name": "{name}",
@@ -208,7 +208,7 @@
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
-        "text": "There used to be one more person here."
+        "text": "There used to be one other person who came here."
     },
     "lunch2_yuna_17": {
         "name": "{name}",
@@ -218,13 +218,13 @@
         "name": "{name}",
         "text": "*Nothing follows 'used to be.' Past tense. — Should I ask?*",
         "choices": [
-            "That person, where are they now?",
-            "Don't ask and sit down next to her"
+            "What happened to them?",
+            "Don't ask. Just sit down next to her."
         ]
     },
     "lunch2_yuna_c1_1": {
         "name": "Yuna",
-        "text": "...Transferred. A year ago."
+        "text": "...Transferred out. A year ago."
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
@@ -240,11 +240,11 @@
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
-        "text": "They didn't reach out?"
+        "text": "They never reached out?"
     },
     "lunch2_yuna_c1_6": {
         "name": "Yuna",
-        "text": "...I don't know. Whether they didn't, or couldn't."
+        "text": "...I don't know. Whether they didn't — or couldn't."
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
@@ -252,11 +252,11 @@
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
-        "text": "Did they have to leave suddenly? You know how it is, sometimes you miss calls or messages then."
+        "text": "Maybe they had to leave in a rush? Sometimes things just slip through the cracks like that."
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
-        "text": "...It was a transfer."
+        "text": "...It was a transfer. Not a slip."
     },
     "lunch2_yuna_c1_11": {
         "name": "{name}",
@@ -264,11 +264,11 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*I messed up. Trying to brush it off only made it seem like I was trivializing her wound. An awkward silence falls. The sound of pages turning is the only thing in the room.*"
+        "text": "*I screwed up. Trying to lighten the mood made it sound like I was brushing off her hurt. An awkward silence settles in. Just the sound of pages turning.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*I always prided myself on being perceptive. — I was wrong. Not around this person.*"
+        "text": "*I always thought I read people well. — Apparently not this one.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -280,11 +280,11 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Offering a book instead of words. We read side by side in silence. The sunlight coming through the window is warm.*"
+        "text": "*A book instead of words. We read side by side in silence. The sunlight coming through the window is warm.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",
-        "text": "...The reason I like it here."
+        "text": "...This is why I like it here."
     },
     "lunch2_yuna_c2_7": {
         "name": "{name}",
@@ -296,11 +296,11 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "{name}",
-        "text": "*Two sentences. That's a long speech for Yuna. — And everything is packed into those two sentences.*"
+        "text": "*Two whole sentences. From Yuna, that's basically a speech. — And everything she means is packed into them.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Yuna's 'used to be' lingers in my head. The meaning of this place she showed me... is slowly sinking in.*"
+        "text": "*Yuna's 'used to be' is still echoing in my head. What it means that she brought me here — it's slowly starting to land.*"
     },
     "lunch2_seo_1": {
         "name": "{name}",
@@ -308,7 +308,7 @@
     },
     "lunch2_seo_2": {
         "name": "Seoyeon",
-        "text": "You came again. Got a taste for it?"
+        "text": "Back again. Hooked already?"
     },
     "lunch2_seo_3": {
         "name": "{name}",
@@ -316,7 +316,7 @@
     },
     "lunch2_seo_4": {
         "name": "Seoyeon",
-        "text": "Is it because of the food?"
+        "text": "So it's the food?"
     },
     "lunch2_seo_5": {
         "name": "{name}",
@@ -328,19 +328,19 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*She seemed like she wanted to hear more — but I deliberately held back. We're eating when — the rooftop door opens. Dain came up.*"
+        "text": "*She looked like she wanted me to keep going — but I held back on purpose. We're eating when the rooftop door opens. Dain just walked in.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Oh! There you are?! Found you!"
+        "text": "AH HA! Found you!"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "...The rooftop is by permit only."
+        "text": "...The roof is permit-only."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Come on, you don't need permission to eat. Oh, wait, a lunchbox! That looks amazing!"
+        "text": "C'mon, you don't need a permit to eat lunch. Oh wait — IS that a homemade lunchbox?! That looks amazing!"
     },
     "lunch2_seo_12": {
         "name": "{name}",
@@ -348,11 +348,11 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "We met yesterday! Nice guy, Prez!"
+        "text": "We met yesterday! Cool guy, right Prez?!"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Oh! You're the president? Nice to meet you!"
+        "text": "Oh! You're the council president? Nice to meet you!"
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -360,11 +360,11 @@
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "We just know each other."
+        "text": "We just know each other from class."
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Why, does it bother you?"
+        "text": "Why — does that bother you?"
     },
     "lunch2_seo_17": {
         "name": "{name}",

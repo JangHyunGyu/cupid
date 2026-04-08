@@ -96,7 +96,7 @@
     },
     "after3_reject_for_dain_3": {
         "name": "{name}",
-        "text": "*Il n'y a pas de mot à la bibliothèque. Le sac de Yuna a disparu aussi. Il ne reste qu'une trace d'eau tiède sur la table, comme si elle était là il y a un instant.*"
+        "text": "*Y a pas de mot à la bibliothèque. Le sac de Yuna a disparu aussi. Il ne reste qu'une trace d'eau tiède sur la table, comme si elle était là il y a un instant.*"
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
@@ -703,7 +703,7 @@
     },
     "after3_yuna_correct_4": {
         "name": "Yuna",
-        "text": "...Je ne sais pas. Sûrement pas publié."
+        "text": "...Je sais pas. Sûrement pas publié."
     },
     "after3_yuna_correct_5": {
         "name": "{name}",

@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Well, I expected it. You never moved according to my calculations from the start."
+        "text": "Well, I figured. You were never going to move on my schedule anyway."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
-        "text": "Next time, I'll be the one to take you."
+        "text": "Next time, I'll be the one who takes you."
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
-        "text": "Tch, what a shame!"
+        "text": "Aw, man, what a bummer!"
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "But hey, it's your choice. Next time you better give me a chance too!"
+        "text": "But hey, your call. Next time give me a real shot too!"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -99,7 +99,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "...Do well. For real."
+        "text": "...Take care of her. Seriously."
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "But — this time, I don't want to just let you go. Because you came back without running away."
+        "text": "But — I don't want to just let you go this time. Because you came back instead of running."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
-        "text": "This time, hold on."
+        "text": "This time, take it."
     },
     "after5_last_chance_2_j": {
         "name": "{name}",
@@ -207,7 +207,7 @@
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Wait, for real?!"
+        "text": "Wait, are you serious?!"
     },
     "after5_last_chance_2_n": {
         "name": "{name}",
@@ -215,7 +215,7 @@
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...For real?"
+        "text": "...Seriously?"
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "I — I've been waiting. Since yesterday. No, since the day before yesterday. But just because I waited doesn't mean everything's immediately okay."
+        "text": "I — I've been waiting. Since yesterday. No, since the day before. But just because I waited doesn't mean it's all magically fine."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Ugh why are you crying — this is supposed to be happy —"
+        "text": "Ugh, why am I crying — this is supposed to be a happy moment —"
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...This time, I'll listen. Even if I can't say it's okay right away."
+        "text": "...This time, I'll hear you out. Even if I can't say it's okay right away."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -292,7 +292,7 @@
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "Hey — I have something to tell you."
+        "text": "Hey — there's something I need to say."
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {

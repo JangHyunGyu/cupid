@@ -9,7 +9,7 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "¡Oye! ¡¿Ya comiste?! ¡Vamos a la tienda! Yo te invito el pan... ¡el que pierda paga!"
+        "text": "¡Eh! ¡¿Has comido ya?! ¡Vamos a la cafetería! ¡Apuesta de pan, paga el que pierda!"
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
-        "text": "¿Quieres venir otra vez?"
+        "text": "La próxima vez, déjame también la hora del almuerzo libre."
     },
     "lunch_seo_after_3": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "La combinación de pan soboro y leche de fresa es una delicia. ¡Créeme!"
+        "text": "¡La combinación de pan soboro con leche de fresa es felicidad pura por caloría! ¡Créeme!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -238,15 +238,15 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Sonó como tu PR personal."
+        "text": "Eso ha sonado a autobombo."
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "¡¿Qué?! ¡¿Qué es un PR?!"
+        "text": "¡¿Qué?! ¡¿Autobombo?!"
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "Personal Record. Es un término deportivo."
+        "text": "Promocionarse a uno mismo. Tú llevabas el rato vendiéndote."
     },
     "lunch_dain_22": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "¡Oh, ¿sabes eso?! ¡¿Entonces sí sabes de deportes?!"
+        "text": "¡Oh, te las sabes! ¡¿Entonces sí controlas de deporte?!"
     },
     "lunch_dain_choice": {
         "name": "{name}",
@@ -350,7 +350,7 @@
     },
     "lunch_yuna_17": {
         "name": "Yuna",
-        "text": "...Léelo y devuelve."
+        "text": "...Léelo y me lo devuelves."
     },
     "lunch_yuna_18": {
         "name": "{name}",

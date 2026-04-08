@@ -5,11 +5,11 @@
     },
     "after2_msg_dain": {
         "name": "Dain",
-        "text": "Come to the gym!! Today it's for real!!"
+        "text": "Get to the gym!! Today's the real deal!!"
     },
     "after2_msg_seo": {
         "name": "Seoyeon",
-        "text": "Can you come to the student council room? We're short-handed."
+        "text": "Can you swing by the council room? I'm short-handed."
     },
     "after2_msg_yuna": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "You came?! You're late!!"
+        "text": "You made it?! You're late!!"
     },
     "after2_dain_3": {
         "name": "{name}",
@@ -46,19 +46,19 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*That means you were early, not that I'm late.*"
+        "text": "*Which means you were early. Not that I'm late.*"
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "Okay, here's the deal! Five serves — get three or more over the net and you win! If not, you're buying tteokbokki today!"
+        "text": "Okay, deal! Five serves — clear the net at least three times and you win! Lose, and you're buying tteokbokki!"
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "Tteokbokki out of nowhere?"
+        "text": "Tteokbokki, where'd that come from?"
     },
     "after2_dain_8": {
         "name": "Dain",
-        "text": "I'm hungry!!"
+        "text": "I'm STARVING!!"
     },
     "after2_dain_9": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "after2_dain_12": {
         "name": "Dain",
-        "text": "Aaaargh!! I lost!! — But you're pretty good?! I thought you said you don't play sports?!"
+        "text": "AGHHH I lost!! — Wait, you're actually good?! Didn't you say you don't do sports?!"
     },
     "after2_dain_13": {
         "name": "{name}",
@@ -78,15 +78,15 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Genuinely shocked* What?! Was I tricked?!"
+        "text": "*Genuinely shocked* WHAT?! Did I just get played?!"
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "I didn't trick you — you just never asked."
+        "text": "Didn't play you. You just never asked."
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Punching my shoulder* You fraud!! Hahaha — but that was fun!"
+        "text": "*Punches my shoulder* You sneak!! HAHA — okay that was actually fun!"
     },
     "after2_dain_skinship_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...Oh sorry! Force of habit!"
+        "text": "...Oh, sorry! Force of habit!"
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "after2_dain_end_2": {
         "name": "Dain",
-        "text": "Hey, you actually know sports, don't you?"
+        "text": "Hey — you actually know your sports, don't you?"
     },
     "after2_dain_end_2b": {
         "name": "{name}",
@@ -118,11 +118,11 @@
     },
     "after2_dain_end_2c": {
         "name": "Dain",
-        "text": "A 'little' doesn't play like that! — Just admit it, you're good."
+        "text": "'A little' doesn't move like that! — Just own it, you're good."
     },
     "after2_dain_end_2d": {
         "name": "{name}",
-        "text": "Dain was way better at it."
+        "text": "You were way better than me."
     },
     "after2_dain_end_3": {
         "name": "{name}",
@@ -130,19 +130,19 @@
     },
     "after2_dain_end_3b": {
         "name": "Dain",
-        "text": "...Obviously! I was a sports scholarship student, you know!"
+        "text": "...Obviously! I used to be a sports recruit, you know!"
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*'Was.' Past tense. — Something tells me it's better not to ask.*"
+        "text": "*'Used to be.' Past tense. — Something tells me not to push it.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
-        "text": "Ahh it's so spicy!! Water, water!!"
+        "text": "AHH so spicy!! Water, water!!"
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*The topic changed. — Dain's care is clumsy, but warm.*"
+        "text": "*She changed the subject. — Dain's way of caring is clumsy, but it's warm.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -154,15 +154,15 @@
     },
     "after2_seo_2": {
         "name": "Seoyeon",
-        "text": "You actually came. — Honestly, I didn't think you would."
+        "text": "You actually came. — Honestly, I figured you wouldn't."
     },
     "after2_seo_3": {
         "name": "{name}",
-        "text": "I show up when I'm called."
+        "text": "I show up when someone calls."
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "*With a slight smile* How obedient."
+        "text": "*Slight smile* Obedient."
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "I didn't ask — I gave you an opportunity."
+        "text": "I didn't ask. I offered you a chance."
     },
     "after2_seo_7": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "after2_seo_8a4": {
         "name": "{name}",
-        "text": "Kind of like your compliments. You're vague about those too."
+        "text": "Kind of like the way you compliment people. Vague."
     },
     "after2_seo_8b": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...You're surprisingly useful."
+        "text": "...You're more useful than I expected."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -206,13 +206,13 @@
     },
     "after2_seo_8b4": {
         "name": "Seoyeon",
-        "text": "It's a compliment. Take it."
+        "text": "It's a compliment. Take the win."
     },
     "after2_seo_choice1": {
         "name": "{name}",
         "text": "*The sunset streams in through the window. An orange glow washes over Seoyeon's profile. — I felt like saying something.*",
         "choices": [
-            "The sunset's beautiful. I'm talking about the view outside.",
+            "The sunset's nice. — I mean the view, of course.",
             "Does your throat hurt? Take a break."
         ]
     },
@@ -222,11 +222,11 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...You're the first person to just casually throw out words like that."
+        "text": "...You're the first person to throw a line like that out so casually."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
-        "text": "I'm fine. This is an everyday thing."
+        "text": "I'm fine. Happens every day."
     },
     "after2_seo_neck_react": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "It's really stiff. Hold still for a sec."
+        "text": "Really stiff. Hold still."
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -270,11 +270,11 @@
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
-        "text": "...I like this time. When I'm alone in the student council room, I don't have to play any role."
+        "text": "...I like this hour. Alone in the council room, I don't have to play any role."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Even the student council president gets to rest?"
+        "text": "Even the council president gets time off?"
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
@@ -282,7 +282,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Except here.' — Whether it's the rooftop or the student council room, Seoyeon is someone who needs a place where she can take off the mask.*"
+        "text": "*'Except here.' — The roof or the council room — Seoyeon needs places where she can take the mask off.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -326,11 +326,11 @@
     },
     "after2_yuna_5": {
         "name": "Yuna",
-        "text": "Do I have to call you for you to come?"
+        "text": "Do I have to call for you to show up?"
     },
     "after2_yuna_6": {
         "name": "{name}",
-        "text": "*She was waiting. — That fact quietly makes me happy.*"
+        "text": "*She was waiting. — Quietly, that makes me happy.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*A door open by coincidence. — Yuna's 'by coincidence' is synonymous with 'on purpose.'*"
+        "text": "*A door left open by coincidence. — Yuna's 'coincidence' usually means 'on purpose.'*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -354,7 +354,7 @@
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*After a long while* ...Someone who comes here after school."
+        "text": "*After a long pause* ...People who come here after school."
     },
     "after2_yuna_choice_pre2": {
         "name": "{name}",
@@ -362,14 +362,14 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "There hasn't been one since that sunbae."
+        "text": "There hasn't been one since that senior."
     },
     "after2_yuna_choice": {
         "name": "{name}",
         "text": "*Yuna said two sentences in a row. — For someone who normally speaks one line at a time.*",
         "choices": [
             "Should I come every day?",
-            "It's nice because it's quiet"
+            "It's nice because it's quiet."
         ]
     },
     "after2_yuna_everyday": {
@@ -378,7 +378,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...But, every day is a bit much. Just sometimes."
+        "text": "...Every day's a bit much, though. Sometimes is fine."
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
-        "text": "You didn't see that, right? Secret. Teachers get to have secrets too."
+        "text": "*Closing the drawer* You didn't see that, okay? ...Teachers get to keep a secret or two, too."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",

@@ -25,7 +25,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Un personaje de la novela cubre con una manta el hombro de alguien que duerme en la biblioteca. — Esa es una escena que solo yo conozco.*"
+        "text": "*En la novela, un personaje le echa una manta sobre los hombros a alguien dormido en la biblioteca. Esa escena solo la conozco yo.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "hidden_homeroom_d5_2": {
         "name": "Profesora",
-        "text": "El manuscrito. Está incompleto, pero... quería que lo vieras primero."
+        "text": "El manuscrito. Está sin terminar, pero... quería que fueras el primero en leerlo."
     },
     "hidden_homeroom_d5_3": {
         "name": "Profesora",
@@ -101,11 +101,11 @@
     },
     "hidden_homeroom_d5_7": {
         "name": "Profesora",
-        "text": "Cuando te gradúes — vamos a vernos. No como profesora y alumno."
+        "text": "Cuando te gradúes... nos vemos. No como profesora y alumno, sino por nuestros nombres."
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*Se da la vuelta. Su cabello largo se balancea. - Parece alguien que intenta no desmoronarse hasta el final.*"
+        "text": "*La tutora se da la vuelta. Su pelo largo se balancea. Parece alguien empeñada en no descomponerse hasta el final.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Profesora",
@@ -123,7 +123,7 @@
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "¿Y si vengo aunque no me haya hecho daño?"
+        "text": "¿No puedo venir aunque no me duela nada?"
     },
     "hidden_nurse_d5_4": {
         "name": "Enfermera",

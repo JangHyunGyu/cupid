@@ -34,19 +34,19 @@
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "Du bist da?! Du bist spät!!"
+        "text": "Endlich da?! Spät dran!!"
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Ich bin fünf Minuten früh dran."
+        "text": "Ich bin fünf Minuten zu früh."
     },
     "after2_dain_4": {
         "name": "Dain",
-        "text": "Ich war zehn Minuten früh dran!!"
+        "text": "Ich war zehn Minuten zu früh!!"
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Das heißt, du warst früh dran, nicht dass ich spät bin.*"
+        "text": "*Das heißt, du warst zu früh — und nicht, dass ich zu spät bin.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -54,7 +54,7 @@
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "Tteokbokki aus dem Nichts?"
+        "text": "Wie kommst du jetzt auf Tteokbokki?"
     },
     "after2_dain_8": {
         "name": "Dain",
@@ -82,7 +82,7 @@
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "Ich hab dich nicht reingelegt — du hast einfach nie gefragt."
+        "text": "Reingelegt hab ich dich nicht — du hast einfach nie gefragt."
     },
     "after2_dain_16": {
         "name": "Dain",
@@ -158,7 +158,7 @@
     },
     "after2_seo_3": {
         "name": "{name}",
-        "text": "Wenn man mich ruft, komme ich."
+        "text": "Wenn man mich ruft, komm ich halt."
     },
     "after2_seo_4": {
         "name": "Seoyeon",
@@ -170,7 +170,7 @@
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "Ich hab nicht gebeten — ich hab dir eine Gelegenheit gegeben."
+        "text": "Ich hab dich nicht gebeten — ich hab dir eine Chance gegeben."
     },
     "after2_seo_7": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "after2_seo_8b4": {
         "name": "Seoyeon",
-        "text": "Ist ein Kompliment. Nimm's an."
+        "text": "Ist eins. Nimm's einfach an."
     },
     "after2_seo_choice1": {
         "name": "{name}",
@@ -422,7 +422,7 @@
     },
     "minsu_warn_4": {
         "name": "Minsu",
-        "text": "Hast du gerade Spaß in letzter Zeit?"
+        "text": "Du hast in letzter Zeit ganz schön Spaß, hm?"
     },
     "minsu_warn_5": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "minsu_warn_6": {
         "name": "Minsu",
-        "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an. — Sag ich nur. *Er zuckt mit den Schultern und geht voran.*"
+        "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an. — Sag's nur so. *Er zuckt mit den Schultern und geht weiter.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
-        "text": "Das hast du nicht gesehen, klar? Geheim. Lehrerinnen dürfen auch ihre Geheimnisse haben."
+        "text": "*Sie schließt die Schublade* Das hast du nicht gesehen, klar? ...Lehrerinnen dürfen auch das eine oder andere Geheimnis haben."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",

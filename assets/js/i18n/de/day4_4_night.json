@@ -29,11 +29,11 @@
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
-        "text": "...Ich hab deine Nachricht gesehen. Kannst du jetzt rauskommen? Der Park. — Entschuldigung, so plötzlich."
+        "text": "...Ich hab deine Nachricht gesehen. Kannst du jetzt rauskommen? In den Park. — Tut mir leid, so plötzlich."
     },
     "wall_seo_2": {
         "name": "Seoyeon",
-        "text": "Kannst du jetzt rauskommen? Zum Park. — Tut mir leid, so plötzlich."
+        "text": "Kannst du jetzt rauskommen? In den Park. — Tut mir leid, dass es so spontan ist."
     },
     "wall_seo_to_park": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "wall_seo_9_c": {
         "name": "Seoyeon",
-        "text": "Aber Mama und Papa sind seit einem Jahr Fremde unter einem Dach. Sie haben nur die Papiere nicht eingereicht."
+        "text": "Aber Mama und Papa leben seit einem Jahr aneinander vorbei. Geschieden sind sie nur auf dem Papier nicht."
     },
     "wall_seo_9_d": {
         "name": "{name}",

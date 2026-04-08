@@ -1,11 +1,11 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Ich beschließe, mich auf dem Campus umzusehen. Ich kenne mich noch nicht aus. Ich gehe den Flur entlang. Mein Handy vibriert. — Der Gruppenchat meiner alten Schule.*"
+        "text": "*Nach dem Unterricht. Ich beschließe, mich noch ein bisschen umzuschauen — ich kenn mich hier ja noch nicht aus. Ich gehe den Flur entlang. Mein Handy vibriert. — Der Gruppenchat von meiner alten Schule.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'Hey, Sojeong macht's an ihrer neuen Schule gut~' 'Zum Glück lol' — Ich stecke das Handy zurück in die Tasche.*"
+        "text": "*'Hey, Sojeong soll sich an der neuen Schule gut eingelebt haben~' 'Zum Glück lol' — Ich stecke das Handy wieder in die Tasche.*"
     },
     "after_kakao_3": {
         "name": "{name}",
@@ -13,11 +13,11 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*An dieser Schule — wenn ich was sehe, sag ich's. Nicht mehr so tun, als wüsste ich nichts, obwohl ich's weiß. Diesmal.*"
+        "text": "*An dieser Schule — wenn ich was sehe, sag ich's. Nicht mehr wegschauen, obwohl ich's weiß. Diesmal nicht.*"
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Ich hole das Handy wieder raus und verlasse den Gruppenchat. Erledigt. — Jetzt gehöre ich zu dieser Schule.*"
+        "text": "*Ich hole das Handy nochmal raus und verlasse den Gruppenchat. Abgehakt. — Jetzt bin ich hier.*"
     },
     "after_miss_dain_1": {
         "name": "{name}",
@@ -37,15 +37,15 @@
     },
     "after_miss_dain_5": {
         "name": "{name}",
-        "text": "Warum sprintest du durch den Flur?"
+        "text": "Warum rennst du wie blöd durch den Flur?"
     },
     "after_miss_dain_6": {
         "name": "Dain",
-        "text": "Ich bin spät dran! Muss zur Turnhalle! — Ach, bis morgen! Neuer!"
+        "text": "Bin spät dran! Muss in die Halle! — Ach, bis morgen, Neuer!"
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*Sie winkt und rennt davon. Ein Wirbelsturm von Mädchen. Der Name, den die Lehrerin vorhin aufgerufen hat — Dain. Und schon duzt sie mich.*"
+        "text": "*Sie winkt und rennt davon. Ein Wirbelsturm auf zwei Beinen. Der Name, den die Lehrerin vorhin aufgerufen hat — Dain. Und schon ist sie per du mit mir.*"
     },
     "after_miss_yuna_1": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Mittag. Ich hatte das Dach aufgelassen. Mich warten lassen — ganz schön mutig für einen neuen Schüler."
+        "text": "Mittagspause. Ich hatte extra das Dach aufgelassen. Mich warten lassen — ziemlich mutig für 'nen Neuen."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -85,15 +85,15 @@
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "...Ich wollte frische Luft schnappen und die Tür war zufällig offen."
+        "text": "...Ich wollte nur kurz frische Luft schnappen, und die Tür war eh offen."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Sie hat definitiv gewartet. — Es tut mir ein bisschen leid, und seltsamerweise finde ich es auch ein bisschen lustig.*"
+        "text": "*Sie hat eindeutig gewartet. — Tut mir irgendwie leid, und gleichzeitig muss ich grinsen.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
-        "text": "Morgen lauf nicht weg."
+        "text": "Morgen verschwindest du mir nicht."
     },
     "after_end": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "after_hidden_homeroom_4": {
         "name": "Klassenlehrerin",
-        "text": "Du hast nichts angestellt. — Du bist der Neue, deshalb frage ich. Wie läuft's?"
+        "text": "Du hast nichts ausgefressen. — Frag nur, weil du neu bist. Wie kommst du klar?"
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
@@ -130,11 +130,11 @@
     },
     "after_homeroom_ok": {
         "name": "Klassenlehrerin",
-        "text": "Gut zu hören. — Wenn was ist, komm ins Lehrerzimmer. Dafür bin ich da."
+        "text": "Soso? — Wenn was ist, komm ins Lehrerzimmer. Dann erledigen wir gleich den Papierkram mit."
     },
     "after_homeroom_ok_3": {
         "name": "Klassenlehrerin",
-        "text": "Also fühlt es sich für dich nach einer ganz guten Schule an. — Das zu hören beruhigt mich seltsam sehr."
+        "text": "Eine bessere Schule, als du dachtest. — Wenn ich sowas höre, bin ich seltsam erleichtert."
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Klassenlehrerin",
-        "text": "Wer am ersten Tag perfekt ist, brennt später aus. Stell dich ruhig ein bisschen ungeschickt an. — Geh jetzt."
+        "text": "Wer am ersten Tag schon alles perfekt macht, brennt später aus. Sei ruhig mal ein bisschen ungeschickt. — So, ab nach Hause."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrerin",
-        "text": "Sich überfordert zu fühlen ist normal. Es wäre seltsam, wenn du am ersten Tag in einer neuen Schule tiefenentspannt wärst."
+        "text": "Überfordert sein ist normal. Wenn du am ersten Tag an einer neuen Schule total entspannt wärst, wär das eher komisch."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
@@ -158,11 +158,11 @@
     },
     "after_homeroom_honest_3": {
         "name": "Klassenlehrerin",
-        "text": "...So ähnlich. Ich wurde schon mal von heute auf morgen woanders hingeworfen."
+        "text": "...So was Ähnliches. Ich wurde schon mal von heute auf morgen irgendwo hin verfrachtet."
     },
     "after_homeroom_honest_4": {
         "name": "Klassenlehrerin",
-        "text": "Wenn's hart wird, komm ins Lehrerzimmer. Ich kann dir einen Kaffee — ach, du bist Schüler. Saft, dann."
+        "text": "Wenn's nicht klappt mit dem Einleben, komm ins Lehrerzimmer. Ich spendier dir 'nen Kaffee — ach nee, du bist ja Schüler. Dann eben Saft."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
@@ -170,19 +170,19 @@
     },
     "after_homeroom_honest_6": {
         "name": "Klassenlehrerin",
-        "text": "Pädagogisches Interesse, nehme ich an."
+        "text": "Pädagogisches Interesse, sozusagen."
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
         "text": "*Pädagogisches Interesse.*",
         "choices": [
-            "Wenn Sie sich Sorgen machen, können Sie es auch einfach sagen",
+            "Wenn Sie sich Sorgen machen, können Sie das ruhig auch so sagen",
             "Ich freue mich auf den Saft, Frau Lehrerin"
         ]
     },
     "after_homeroom_honest_choice2a": {
         "name": "Klassenlehrerin",
-        "text": "...Gut, ich mache mir Sorgen. — War das so offensichtlich?"
+        "text": "...Na schön, ich mach mir Sorgen. — War's so offensichtlich?"
     },
     "after_homeroom_honest_choice2b": {
         "name": "Klassenlehrerin",
@@ -198,11 +198,11 @@
     },
     "after_homeroom_honest_9": {
         "name": "Klassenlehrerin",
-        "text": "Wenn du dich nicht einlebst, komm ich dich wieder einfangen."
+        "text": "Wenn du dich nicht einlebst, hol ich dich höchstpersönlich wieder ab."
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen. — Ohne Grund habe ich ihr zu lange hinterhergeschaut.*"
+        "text": "*Sie verschwindet am Ende des Flurs. Ihre langen Haare schwingen mit. — Ich hab ihr ohne Grund viel zu lange hinterhergeschaut.*"
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",

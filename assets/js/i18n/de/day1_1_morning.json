@@ -1,11 +1,11 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*April. Kirschblüten wehen durch die Luft. Meine Uniform fühlt sich noch steif an. Der zarte Geruch von frischem Gras. Ab heute bin ich Schüler an dieser Schule. Schulwechsel. Zum ersten Mal.*"
+        "text": "*April. Kirschblüten tanzen durch die Luft. Meine Uniform sitzt noch steif. Es riecht leicht nach frischem Gras. Ab heute gehe ich auf diese Schule. Schulwechsel. Zum ersten Mal.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*Mein Handy summt in der Tasche. Der Gruppenchat meiner alten Schule. Ich sehe den Namen auf dem Display — und stecke es wieder ein. Noch nicht.*"
+        "text": "*Mein Handy vibriert in der Tasche. Der Gruppenchat von meiner alten Schule. Ich sehe den Namen auf dem Display — und stecke es wieder weg. Noch nicht.*"
     },
     "name_input_scene": {
         "name": "System",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Ich stehe vor einem fremden Schultor. Eine ziemlich große Schule. Schüler ziehen in kleinen Grüppchen vorbei. Ich bin der Einzige, dessen Uniform noch knochenweiß und steif ist. Ein Mädchen steht vor dem Tor. Sie wirft ihr langes schwarzes Haar leicht zurück — hinter der Brille schreitet sie gelassen. Keine Spur von Eile.*"
+        "text": "*Ich stehe vor einem fremden Schultor. Eine ziemlich große Schule. Schüler ziehen in kleinen Gruppen an mir vorbei. Nur meine Uniform ist noch kreideweiß und steif. Vor dem Tor steht ein Mädchen. Sie streicht sich ihr langes schwarzes Haar lässig zurück — hinter der Brille bewegt sie sich völlig entspannt. Keine Spur von Eile.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -29,31 +29,31 @@
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Ich bin die Schülersprecherin. Neue Schüler einzuführen ist meine Aufgabe."
+        "text": "Bin die Schülersprecherin. Neue Schüler einzuführen gehört zu meinem Job."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Komm mit. In fünfzehn Minuten bist du durch."
+        "text": "Komm mit. In fünfzehn Minuten haben wir's hinter uns."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "Die Schülersprecherin persönlich? Welche Ehre."
+        "text": "Die Schülersprecherin persönlich? Wie ehrenvoll."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "Ob es eine Ehre ist oder nicht — das entscheide ich."
+        "text": "Ob's eine Ehre ist oder nicht — das entscheide immer noch ich."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Sie schmunzelt. Nur die Mundwinkel heben sich. — Ohne es zu merken, lächelte ich zurück.*"
+        "text": "*Sie schmunzelt. Nur die Mundwinkel zucken nach oben. — Und ohne es zu merken, lächle ich zurück. Seoyeon geht aufs Tor zu und winkt mich heran.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
         "text": "*Wie soll ich reagieren?*",
         "choices": [
-            "Sag bloß, du bist früher gekommen, weil du dich für mich interessierst?",
-            "Was kostet die Führung?",
-            "Schon gut. Ich schau mich einfach alleine um."
+            "Bist du etwa nur früher gekommen, weil du dich für mich interessierst?",
+            "Was kostet die Führung denn so?",
+            "Passt schon. Ich schau mich einfach selbst um."
         ]
     },
     "choice_dismiss_1": {
@@ -62,11 +62,11 @@
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
-        "text": "Ach so? Dann merk dir wenigstens die Klassenzimmernummer. Klasse 3-2, ganz rechts."
+        "text": "Ach ja? Dann merk dir wenigstens deine Klassennummer. Klasse 3-2, ganz rechts."
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*Seoyeon drehte sich wirklich um. Ohne eine Geste. Ich tastete mich nur an den Flur-Wegweisern entlang und kam gerade so vor dem Klassenzimmer an. — Ich habe meine Wahl getroffen, und die Verantwortung liegt bei mir.*"
+        "text": "*Seoyeon dreht sich tatsächlich um. Ohne eine einzige Geste. Ich hangle mich an den Wegweisern im Flur entlang und schaffe es gerade so bis vor das Klassenzimmer. — Meine Wahl, meine Verantwortung.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
-        "text": "Wow. Du hältst dich ja am ersten Tag gar nicht zurück. Deinen Namen werde ich mir schnell merken."
+        "text": "Wow. Hältst dich am ersten Tag ja gar nicht zurück. Deinen Namen werd ich mir wohl schnell merken."
     },
     "choice_flirt_3": {
         "name": "{name}",
@@ -82,19 +82,19 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Liegt das daran, dass du neu bist? Du kannst die Stimmung gar nicht lesen. Witzig."
+        "text": "Liegt's daran, dass du neu bist? Hast echt kein Gespür für die Stimmung. Witzig."
     },
     "choice_flirt_5": {
         "name": "{name}",
-        "text": "Ich fühle mich geschmeichelt."
+        "text": "Fühl mich geehrt."
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Du weißt noch nicht, ob es Schmeichelei oder Katastrophe ist."
+        "text": "Noch weißt du ja nicht, ob's eine Ehre oder eine Katastrophe wird."
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*Eine Schülersprecherin mit dieser Energie am ersten Tag. — Gar nicht schlecht.*"
+        "text": "*So eine Schülersprecherin gleich am ersten Tag. — Gar nicht mal schlecht.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -102,19 +102,19 @@
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "Eine furchteinflößende Schülersprecherin."
+        "text": "Eine ganz schön gefährliche Schülersprecherin."
     },
     "choice_joke_3": {
         "name": "Seoyeon",
-        "text": "Langweilig wird es zumindest nicht."
+        "text": "Langweilig wird's jedenfalls nicht."
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon führt mich durch den Flur. Vorbeigehende Schüler grüßen sie. Sie erwidert jeden Gruß mit einem Nicken. Sie hebt die Hand und winkt sie ab, ganz selbstverständlich. Sieht aus, als wären die Beliebten dieser Schule schon längst bestimmt.*"
+        "text": "*Seoyeon führt mich durch den Flur und zeigt mir die Schule. Schüler, die vorbeikommen, grüßen sie. Sie erwidert jeden Gruß mit einem kurzen Blick. Hebt die Hand und winkt zurück, ganz selbstverständlich. Sieht aus, als stünde fest, wer an dieser Schule beliebt ist.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Das Gebäude der Drittjährigen ist hier, die Bibliothek ist drüben. Der Schulkiosk ist im Untergeschoss."
+        "text": "Das Gebäude der Zwölftklässler ist hier, die Bibliothek da drüben. Der Schulkiosk ist im Untergeschoss."
     },
     "hallway_4": {
         "name": "{name}",
@@ -122,63 +122,63 @@
     },
     "hallway_5": {
         "name": "Seoyeon",
-        "text": "Das Dach ist normalerweise abgeschlossen. Privileg der Schülersprecherin."
+        "text": "Das Dach ist eigentlich abgeschlossen. Privileg der Schülersprecherin."
     },
     "hallway_6": {
         "name": "{name}",
-        "text": "Hast du da oben ein Geheimversteck?"
+        "text": "Hast du da oben etwa ein Geheimversteck?"
     },
     "hallway_8": {
         "name": "{name}",
-        "text": "*Plötzlich habe ich Mittagspläne. — Dabei hab ich nie zugesagt.*"
+        "text": "*Plötzlich hab ich Mittagspläne. — Dabei hab ich nie Ja gesagt. Wir kommen vor dem Klassenzimmer an.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
-        "text": "Hier ist es. Geh rein."
+        "text": "Hier ist es. Geh ruhig rein."
     },
     "hallway_11": {
         "name": "{name}",
-        "text": "Führst du mich auch in der Mittagspause?"
+        "text": "Führst du mich in der Mittagspause auch noch rum?"
     },
     "hallway_12": {
         "name": "Seoyeon",
-        "text": "Das hängt davon ab, wie gut du dich anstellst."
+        "text": "Kommt drauf an, wie brav du bist."
     },
     "hallway_13": {
         "name": "{name}",
-        "text": "*Seoyeon dreht sich um und winkt leicht. Sie schaut nicht zurück.*"
+        "text": "*Seoyeon dreht sich um und winkt kurz. Ohne sich noch einmal umzusehen.*"
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Klassentür. Blicke prasseln auf mich ein. Ich hatte damit gerechnet, aber dreißig Augenpaare wiegen doch schwerer als gedacht.*"
+        "text": "*Ich öffne die Klassentür. Blicke prasseln auf mich ein. Ich hab damit gerechnet, aber dreißig Augenpaare wiegen doch schwerer als gedacht.*"
     },
     "classroom_3": {
         "name": "Klassenlehrerin",
-        "text": "So, ab heute haben wir einen neuen Schüler in unserer Klasse. Möchtest du dich vorstellen?"
+        "text": "So, ab heute haben wir einen Neuen in der Klasse. Magst du dich kurz vorstellen?"
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh! Ein männlicher Transferschüler! Endlich ein neuer Spieler im Kader!"
+        "text": "Oh! Ein neuer Junge in der Klasse! Endlich ein Neuzugang im Kader!"
     },
     "classroom_dain_2": {
         "name": "{name}",
-        "text": "*Brauner Bob-Schnitt. Im Volleyball-Trikot. Eine Stimme voller Energie. Sie ist halb von ihrem Platz aufgestanden. Das Mädchen neben ihr zieht sie am Ärmel, aber es nützt nichts.*"
+        "text": "*Brauner Kurzhaarschnitt. Im Volleyball-Trikot. Eine Stimme voller Energie. Sie ist halb von ihrem Platz aufgesprungen. Ihre Sitznachbarin zieht sie am Ärmel, aber das hilft auch nichts.*"
     },
     "classroom_dain_3": {
         "name": "Klassenlehrerin",
-        "text": "Dain, bitte etwas leiser... Und hör auf, dein Trikot im Unterricht zu tragen."
+        "text": "Dain, jetzt mal etwas leiser... Und hör endlich auf, dein Trikot im Unterricht anzuhaben."
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Ach, Frau Lehrerin, so ist es einfach am bequemsten. Jedenfalls: Freut mich, dich kennenzulernen, Neuer!"
+        "text": "Ach, Frau Lehrerin, so ist's halt am bequemsten. Egal — schön, dich zu sehen, Neuer!"
     },
     "classroom_dain_5": {
         "name": "{name}",
-        "text": "*Sie ist der Typ ohne Lautstärkeregler.*"
+        "text": "*Eindeutig der Typ ohne Lautstärkeregler.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Ich schaue mich um und entdecke ein Mädchen ganz hinten am Fenster. Sie stützt ihr Kinn auf die Hand und starrt nach draußen. Meine Vorstellung scheint sie nicht zu interessieren.*"
+        "text": "*Ich schaue mich um und entdecke ganz hinten am Fenster ein Mädchen. Sie stützt das Kinn in die Hand und starrt nach draußen. Meine Vorstellung scheint sie kein bisschen zu interessieren.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",

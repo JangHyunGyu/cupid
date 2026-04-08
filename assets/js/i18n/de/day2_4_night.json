@@ -82,11 +82,11 @@
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Lol kannst kein Scharfes ab?!"
+        "text": "Lol verträgst du kein Scharfes oder was?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "Morgen nehmen wir mildes!!"
+        "text": "Morgen bestellen wir mildes!!"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
@@ -102,11 +102,11 @@
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "Du machst leichtfertig Versprechen"
+        "text": "Du gibst aber schnell Versprechen"
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "Ist ein leichtes Versprechen"
+        "text": "Ist auch nur ein leichtes"
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
-        "text": "Etwa zur Hälfte. Ist gut"
+        "text": "Bin etwa bei der Hälfte. Echt gut"
     },
     "night2_reply_yuna_2": {
         "name": "Yuna",
@@ -130,7 +130,7 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Schau dir den dritten Stern an"
+        "text": "Schau aus dem Fenster — den dritten Stern"
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Den Grund sag ich dir später"
+        "text": "Den Grund verrat ich dir später"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",

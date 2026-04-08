@@ -77,7 +77,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "El almuerzo. Dejé la azotea abierta. Hacerme esperar — atrevido para ser un estudiante nuevo."
+        "text": "En el almuerzo. Dejé la azotea abierta. Hacerme esperar — qué descaro para un recién llegado."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "...Subí a tomar aire y la puerta estaba abierta."
+        "text": "...Subí a tomar el aire y me la encontré abierta."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Profesora",
-        "text": "Ser perfecto el primer día te agota después. Finge ser un poco torpe. — Anda, vete."
+        "text": "Ser perfecto el primer día acaba pasando factura. Permítete meter la pata un poco. — Anda, vete."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "after_homeroom_honest_3": {
         "name": "Profesora",
-        "text": "...Algo parecido. Me han lanzado a un lugar nuevo de la nada."
+        "text": "...Algo parecido. A mí también me soltaron en un sitio nuevo de un día para otro."
     },
     "after_homeroom_honest_4": {
         "name": "Profesora",
@@ -166,7 +166,7 @@
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "¿Una profesora invitándole algo a un estudiante?"
+        "text": "¿Una profesora invitando a un estudiante?"
     },
     "after_homeroom_honest_6": {
         "name": "Profesora",
