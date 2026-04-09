@@ -657,10 +657,14 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
         try {
             // [Explicit Caching] 캐시 키 헤더 추가
             const _gftCacheKey = this.currentCharId ? `cupid-gft:${this.lang}:${this.currentCharId}` : '';
+            // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
+            const _optimized = (typeof window.optimizeImageHistory === 'function')
+                ? window.optimizeImageHistory(this.chatHistory, 5)
+                : this.chatHistory;
             const response = await fetch(window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'x-app-type': 'cupid', ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey }) },
-                body: JSON.stringify({ messages: this.chatHistory })
+                body: JSON.stringify({ messages: _optimized })
             });
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -976,6 +980,18 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
                 const previewImg = document.getElementById('image-preview');
                 if (previewImg) previewImg.src = base64;
                 if (previewContainer) previewContainer.style.display = 'inline-flex';
+
+                // 백그라운드로 R2 업로드 후 stagedImage를 URL로 교체 (토큰 절감)
+                if (typeof window.uploadImageToR2 === 'function') {
+                    window.uploadImageToR2(base64, 'chat').then(url => {
+                        if (url) {
+                            this.stagedImage = url;
+                            console.debug('[GalleryFreeTalk] R2 업로드 완료:', url);
+                        }
+                    }).catch(err => {
+                        console.warn('[GalleryFreeTalk] R2 업로드 실패, base64 폴백:', err.message);
+                    });
+                }
             };
             img.src = e.target.result;
         };
