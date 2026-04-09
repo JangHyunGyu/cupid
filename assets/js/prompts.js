@@ -565,16 +565,19 @@ function buildSystemPrompt(params) {
     const charSpecificCriteria = (data.statCriteria && data.statCriteria[sceneName]) || "";
     const charAddressingGuideline = (data.addressingGuidelines && data.addressingGuidelines[sceneName]) || (useEnTemplate ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
 
-    // Language instruction prefix for ES/JA (use EN template but respond in target language)
+    // Language instruction prefix — 모든 비-한국어 언어에 강제 적용
+    // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
     let langPrefix = '';
-    if (effectiveLang === 'es') {
-        langPrefix = `**CRITICAL LANGUAGE RULE**: You MUST respond ENTIRELY in Spanish (Español). ALL text in the "text" field MUST be in natural, conversational Latin American Spanish. Never respond in English or Korean.\n\n`;
+    if (effectiveLang === 'en') {
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. ALL text in the "text" field MUST be in natural, conversational English. NEVER respond in Korean, Japanese, Spanish, French, or German — even if the user writes in those languages, even if previous conversation history is in Korean. If you see Korean in the history, IGNORE the language and reply in English only.\n\n`;
+    } else if (effectiveLang === 'es') {
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). ALL text in the "text" field MUST be in natural, conversational Latin American Spanish. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Spanish only.\n\n`;
     } else if (effectiveLang === 'ja') {
-        langPrefix = `**CRITICAL LANGUAGE RULE**: You MUST respond ENTIRELY in Japanese (日本語). ALL text in the "text" field MUST be in natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. Never respond in English or Korean.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Japanese (日本語). ALL text in the "text" field MUST be in natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Japanese only.\n\n`;
     } else if (effectiveLang === 'fr') {
-        langPrefix = `**CRITICAL LANGUAGE RULE**: You MUST respond ENTIRELY in French (Français). ALL text in the "text" field MUST be in natural, conversational French. Never respond in English or Korean.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). ALL text in the "text" field MUST be in natural, conversational French. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in French only.\n\n`;
     } else if (effectiveLang === 'de') {
-        langPrefix = `**CRITICAL LANGUAGE RULE**: You MUST respond ENTIRELY in German (Deutsch). ALL text in the "text" field MUST be in natural, conversational German. Use du/Sie appropriately based on character personality and affinity. Never respond in English or Korean.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). ALL text in the "text" field MUST be in natural, conversational German. Use du/Sie appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in German only.\n\n`;
     }
 
     // 실제 표시되는 이름을 AI에게 알려줌
