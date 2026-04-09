@@ -13054,7 +13054,7 @@
     "true_dain_4": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#true_dain_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "",
+      "_ko_text_preview": "*말이 나오지 않는다. 입술이 살짝 벌어진 채 멈춰 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#true_dain_4",
@@ -16618,7 +16618,7 @@
     "harem_5": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#harem_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*이 균형은 오래 못 간다. 누군가는 먼저 다친다. 그때쯤이면 이건 로맨...",
+      "_ko_text_preview": "*서연이 \"수요일 뭐 해?\"라고 물었을 때 한 박자 늦게 숨을 쉬었다. 수요일은 유나 날이다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#harem_5",

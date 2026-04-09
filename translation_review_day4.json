@@ -16400,7 +16400,7 @@
     "wall_yuna_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*유나의 속눈썹이 젖어 있다. — 유나가 이렇게 많이 말하는 건 처음이다...",
+      "_ko_text_preview": "*유나 눈가가 살짝 젖어 있다. — 유나가 이렇게 많이 말하는 건 처음이다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_choice",
