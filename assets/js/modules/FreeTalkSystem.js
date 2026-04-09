@@ -727,8 +727,19 @@ class FreeTalkSystem {
                 await this.dialogueSystem.typeText(reply, scene.name);
                 this.freeTalkHistory.push({ role: "assistant", content: reply });
 
-                // 대화 기록 저장
+                // 대화 기록 저장 (로컬)
                 this.stateManager.setChatMemory(scene.name, this.freeTalkHistory);
+
+                // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
+                if (typeof window.saveCupidChatLog === 'function') {
+                    window.saveCupidChatLog({
+                        charId: charKey,
+                        userContent: finalContent,
+                        assistantContent: reply,
+                        sessionId: this.currentSceneId || '',
+                        context: '1:1'
+                    });
+                }
             } else {
                 this.uiManager.updateNameTag(scene.name);
                 await this.dialogueSystem.typeText("...", scene.name);
