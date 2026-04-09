@@ -1047,6 +1047,21 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
     _buildSystemPrompt(charId) {
         const isEn = this.lang !== 'ko';
 
+        // 강제 언어 룰 — 모든 비-한국어 페이지에 적용
+        // 사용자가 어떤 언어로 입력하든, 이전 대화가 어떤 언어든, 무조건 페이지 언어로 답해야 함
+        let langPrefix = '';
+        if (this.lang === 'en') {
+            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. NEVER reply in Korean, Japanese, Spanish, French, or German — even if the user writes in those languages, even if previous conversation history contains them. Always reply in English only.\n\n`;
+        } else if (this.lang === 'es') {
+            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). NEVER reply in Korean, English, or any other language — always reply in Spanish only, even if the user or history is in another language.\n\n`;
+        } else if (this.lang === 'ja') {
+            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Japanese (日本語). NEVER reply in Korean, English, or any other language — always reply in Japanese only, even if the user or history is in another language.\n\n`;
+        } else if (this.lang === 'fr') {
+            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). NEVER reply in Korean, English, or any other language — always reply in French only, even if the user or history is in another language.\n\n`;
+        } else if (this.lang === 'de') {
+            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). NEVER reply in Korean, English, or any other language — always reply in German only, even if the user or history is in another language.\n\n`;
+        }
+
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
         const location = this.CHAR_LOCATIONS[charId]?.[this.lang] || '';
         const personality = this.CHAR_PERSONALITIES[charId]?.[this.lang] || '';
@@ -1070,7 +1085,7 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-            return `You are the character '${charName}' from the visual novel game 'Cupid'.
+            return `${langPrefix}You are the character '${charName}' from the visual novel game 'Cupid'.
 
 PERSONALITY: ${personality}
 
@@ -1099,7 +1114,6 @@ You MUST respond in valid JSON format:
 Available expressions: ${validExprs.join(', ')}
 Use "normal" if unsure which expression to use.
 
-IMPORTANT: Respond in the SAME LANGUAGE as the user's message. If the user writes in ${this._L('', 'English', 'Spanish', 'Japanese', 'French', 'Deutsch')}, respond in ${this._L('', 'English', 'Spanish', 'Japanese', 'French', 'Deutsch')}.
 ===CACHE_BOUNDARY===
 CURRENT SITUATION:
 - Location: ${location}
@@ -1140,7 +1154,7 @@ ${speechStyle}
 사용 가능한 표정: ${validExprs.join(', ')}
 어떤 표정을 써야 할지 모르겠으면 "normal"을 사용하세요.
 
-중요: 사용자가 보낸 메시지와 같은 언어로 응답하세요.
+중요: 모든 응답은 한국어로 하세요.
 ===CACHE_BOUNDARY===
 현재 상황:
 - 장소: ${location}
