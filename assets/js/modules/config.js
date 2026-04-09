@@ -44,7 +44,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.4.2";
+const ASSET_VERSION = "2.4.3";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -192,6 +192,98 @@ async function uploadImageToR2(base64Image, subPath = 'upload_image', retries = 
 }
 
 // ============================================================================
+// 기존 localStorage 대화 → D1 일괄 마이그레이션 (소급 적용)
+// ============================================================================
+// 디바이스 ID 첫 생성 시 1회 실행. 기존 base64 이미지는 R2로 변환 후 URL로 교체.
+// 본편: cupid_save → gameState.chatMemories[charName] = [...]
+// Gallery: cupid_freetalk_memory = { [charId]: [...] }
+async function migrateCupidChatHistoryToD1() {
+    const FLAG = 'cupid_chat_migrated_v1';
+    if (localStorage.getItem(FLAG)) return;
+
+    const userId = getCupidDeviceId();
+    const headers = { 'Content-Type': 'application/json', 'x-app-id': 'cupid' };
+    let totalSaved = 0;
+
+    async function postOne(charId, role, content, sessionId, context) {
+        try {
+            await fetch(API_ENDPOINT + 'chat-logs', {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({ userId, charId, sessionId, role, content, context })
+            });
+            totalSaved++;
+        } catch (e) {
+            console.warn('[Migrate] post 실패:', e.message);
+        }
+    }
+
+    // base64 이미지가 포함된 content를 R2로 변환
+    async function convertBase64ToR2(content) {
+        if (!content || typeof content !== 'string') return content;
+        const dataImageRegex = /(data:image\/[a-z]+;base64,[A-Za-z0-9+/=]+)/g;
+        const matches = content.match(dataImageRegex);
+        if (!matches) return content;
+
+        let result = content;
+        for (const b64 of matches) {
+            try {
+                const url = await uploadImageToR2(b64, 'migrated');
+                if (url) result = result.replace(b64, url);
+            } catch (e) {
+                console.warn('[Migrate] base64 → R2 변환 실패:', e.message);
+            }
+        }
+        return result;
+    }
+
+    async function migrateChatArray(charId, history, sessionId, context) {
+        if (!Array.isArray(history)) return;
+        for (const msg of history) {
+            if (!msg || msg.role === 'system' || !msg.content) continue;
+            const content = await convertBase64ToR2(msg.content);
+            await postOne(charId, msg.role, content, sessionId, context);
+        }
+    }
+
+    try {
+        // 1. 본편 cupid_save
+        const saveRaw = localStorage.getItem('cupid_save');
+        if (saveRaw) {
+            try {
+                const save = JSON.parse(saveRaw);
+                const memories = save?.gameState?.chatMemories || {};
+                for (const charName of Object.keys(memories)) {
+                    await migrateChatArray(charName, memories[charName], 'migrated-main', '1:1');
+                }
+            } catch (e) {
+                console.warn('[Migrate] cupid_save 파싱 실패:', e.message);
+            }
+        }
+
+        // 2. Gallery cupid_freetalk_memory
+        const gftRaw = localStorage.getItem('cupid_freetalk_memory');
+        if (gftRaw) {
+            try {
+                const gft = JSON.parse(gftRaw);
+                for (const charId of Object.keys(gft)) {
+                    await migrateChatArray(charId, gft[charId], 'migrated-gallery', '1:1');
+                }
+            } catch (e) {
+                console.warn('[Migrate] cupid_freetalk_memory 파싱 실패:', e.message);
+            }
+        }
+
+        localStorage.setItem(FLAG, new Date().toISOString());
+        if (totalSaved > 0) {
+            console.info(`[Migrate] cupid 기존 대화 ${totalSaved}건 D1 마이그레이션 완료`);
+        }
+    } catch (e) {
+        console.warn('[Migrate] 마이그레이션 오류:', e.message);
+    }
+}
+
+// ============================================================================
 // 대화 로그 D1 저장 (harem chat-logs API와 동일)
 // ============================================================================
 // user/assistant 메시지 한 페어를 D1에 저장. 실패해도 게임 흐름 영향 없음.
@@ -265,3 +357,19 @@ window.getCupidDeviceId = getCupidDeviceId;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;
+window.migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;
+
+// 페이지 로드 후 백그라운드로 마이그레이션 1회 실행 (idle 시간에)
+function _cupidMigrateOnLoad() {
+    window.removeEventListener('load', _cupidMigrateOnLoad);
+    setTimeout(() => {
+        try { migrateCupidChatHistoryToD1(); } catch (_) {}
+    }, 3000);
+}
+if (typeof window !== 'undefined') {
+    if (document.readyState === 'complete') {
+        _cupidMigrateOnLoad();
+    } else {
+        window.addEventListener('load', _cupidMigrateOnLoad);
+    }
+}
