@@ -568,10 +568,14 @@ class FreeTalkSystem {
             // [Explicit Caching] 캐시 키 헤더 추가
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const _cacheKey = charKey ? `cupid:${_lang}:${charKey}` : '';
+            // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
+            const _optimized = (typeof window.optimizeImageHistory === 'function')
+                ? window.optimizeImageHistory(this.freeTalkHistory, 5)
+                : this.freeTalkHistory;
             const response = await fetch(API_ENDPOINT, {
                 method: "POST",
                 headers: { "Content-Type": "application/json", "x-app-type": "cupid", ...(_cacheKey && { "x-cache-key": _cacheKey }) },
-                body: JSON.stringify({ messages: this.freeTalkHistory })
+                body: JSON.stringify({ messages: _optimized })
             });
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)

@@ -286,7 +286,18 @@ class UIManager {
                 // JPEG 품질 0.8로 압축
                 const base64 = canvas.toDataURL('image/jpeg', 0.8);
                 console.debug('[UIManager] handleImageUpload: prepared base64, size=', base64.length);
+                // 즉시 미리보기는 base64로 (UX), 백그라운드로 R2 업로드 후 stagedImage를 URL로 교체
                 this.updateImagePreview(base64);
+                if (typeof window.uploadImageToR2 === 'function') {
+                    window.uploadImageToR2(base64, 'chat').then(url => {
+                        if (url) {
+                            this.stagedImage = url;
+                            console.debug('[UIManager] R2 업로드 완료:', url);
+                        }
+                    }).catch(err => {
+                        console.warn('[UIManager] R2 업로드 실패, base64 폴백:', err.message);
+                    });
+                }
             };
             img.src = e.target.result;
         };

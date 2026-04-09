@@ -44,7 +44,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.4.0";
+const ASSET_VERSION = "2.4.1";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -149,6 +149,82 @@ function getAssetUrl(url) {
 
 
 // ============================================================================
+// 디바이스 ID (chat-logs / R2 업로드 / error-logs 공용)
+// ============================================================================
+// 유저 식별을 위한 영구 디바이스 ID. localStorage에 저장.
+// harem/chatbot의 user_id와 동일한 역할.
+function getCupidDeviceId() {
+    try {
+        let id = localStorage.getItem('cupid_device_id');
+        if (!id) {
+            id = 'cupid_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 10);
+            localStorage.setItem('cupid_device_id', id);
+        }
+        return id;
+    } catch (_) {
+        return 'cupid_anon';
+    }
+}
+
+// ============================================================================
+// R2 이미지 업로드 (harem 패턴과 동일)
+// ============================================================================
+async function uploadImageToR2(base64Image, subPath = 'upload_image', retries = 2) {
+    const endpoint = API_ENDPOINT;
+    let lastError;
+    for (let attempt = 0; attempt <= retries; attempt++) {
+        try {
+            if (attempt > 0) await new Promise(r => setTimeout(r, 1000 * attempt));
+            const res = await fetch(endpoint + 'upload-image', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ image: base64Image, path: 'cupid_image/' + subPath })
+            });
+            const data = await res.json();
+            if (!data.ok) throw new Error(data.error || 'Image upload failed');
+            return data.url;
+        } catch (e) {
+            lastError = e;
+            console.warn(`[R2] cupid 이미지 업로드 시도 ${attempt + 1}/${retries + 1} 실패:`, e.message);
+        }
+    }
+    throw lastError;
+}
+
+// ============================================================================
+// 대화 히스토리 이미지 최적화 (윈도우 가드)
+// ============================================================================
+// 최근 N개 메시지 안의 이미지(base64 / R2 URL)는 그대로 두고,
+// 그보다 옛 메시지의 이미지는 [이전 사진] 텍스트로 치환하여 토큰 절감.
+// harem ChatManager._optimizeImages 와 동일 로직.
+function optimizeImageHistory(messages, recentCount = 5) {
+    const r2ImageRegex = /https?:\/\/[^\s]+\.(?:jpg|jpeg|png|gif|webp)(?:\?[^\s]*)?/i;
+    const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+    const placeholder = ({ en: '[Previous photo]', ja: '[前の写真]', es: '[Foto anterior]', fr: '[Photo précédente]', de: '[Vorheriges Foto]' })[lang] || '[이전 사진]';
+
+    return messages.map((msg, idx) => {
+        const isRecent = idx >= messages.length - recentCount;
+        const content = msg && msg.content;
+        if (!content || typeof content !== 'string') return msg;
+
+        const hasBase64 = content.startsWith('data:image/') || content.includes('\n\ndata:image/');
+        const hasR2 = r2ImageRegex.test(content);
+        if (!hasBase64 && !hasR2) return msg;
+        if (isRecent) return msg;
+
+        let textOnly = content;
+        if (content.includes('\n\ndata:image/')) {
+            textOnly = content.split('\n\ndata:image/')[0];
+        } else if (content.startsWith('data:image/')) {
+            textOnly = '';
+        } else {
+            textOnly = content.replace(r2ImageRegex, '').replace(/\n{3,}/g, '\n\n').trim();
+        }
+        return { ...msg, content: textOnly ? `${textOnly}\n\n${placeholder}` : placeholder };
+    });
+}
+
+// ============================================================================
 // window 전역 노출
 // ============================================================================
 // const로 선언된 변수는 window의 속성이 되지 않으므로,
@@ -161,3 +237,6 @@ window.SEND_ICON = SEND_ICON;
 window.REGISTERED_CG_IDS = REGISTERED_CG_IDS;
 window.CHAR_NAME_MAP = CHAR_NAME_MAP;
 window.getAssetUrl = getAssetUrl;
+window.getCupidDeviceId = getCupidDeviceId;
+window.uploadImageToR2 = uploadImageToR2;
+window.optimizeImageHistory = optimizeImageHistory;
