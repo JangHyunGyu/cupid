@@ -696,6 +696,17 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             // 프리토킹 횟수 증가
             this._incrementFreeTalkCount();
 
+            // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
+            if (typeof window.saveCupidChatLog === 'function') {
+                window.saveCupidChatLog({
+                    charId: this.currentCharId,
+                    userContent: finalContent,
+                    assistantContent: reply,
+                    sessionId: 'gallery-freetalk',
+                    context: '1:1'
+                });
+            }
+
         } catch (err) {
             console.error('[GalleryFreeTalk] API 오류:', err);
             const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
