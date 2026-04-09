@@ -192,6 +192,30 @@ async function uploadImageToR2(base64Image, subPath = 'upload_image', retries = 
 }
 
 // ============================================================================
+// 대화 로그 D1 저장 (harem chat-logs API와 동일)
+// ============================================================================
+// user/assistant 메시지 한 페어를 D1에 저장. 실패해도 게임 흐름 영향 없음.
+async function saveCupidChatLog({ charId, userContent, assistantContent, sessionId = '', context = '1:1' }) {
+    if (!charId) return;
+    const userId = getCupidDeviceId();
+    const headers = { 'Content-Type': 'application/json', 'x-app-id': 'cupid' };
+    const post = (role, content) => fetch(API_ENDPOINT + 'chat-logs', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ userId, charId, sessionId, role, content, context })
+    }).catch(err => console.warn('[ChatLog] cupid 저장 실패:', err.message));
+
+    try {
+        const tasks = [];
+        if (userContent) tasks.push(post('user', userContent));
+        if (assistantContent) tasks.push(post('assistant', assistantContent));
+        await Promise.all(tasks);
+    } catch (e) {
+        console.warn('[ChatLog] cupid saveCupidChatLog 오류:', e.message);
+    }
+}
+
+// ============================================================================
 // 대화 히스토리 이미지 최적화 (윈도우 가드)
 // ============================================================================
 // 최근 N개 메시지 안의 이미지(base64 / R2 URL)는 그대로 두고,
@@ -240,3 +264,4 @@ window.getAssetUrl = getAssetUrl;
 window.getCupidDeviceId = getCupidDeviceId;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
+window.saveCupidChatLog = saveCupidChatLog;
