@@ -12,7 +12,7 @@
             var s = localStorage.getItem(K);
             if (!s) {
                 s = (navigator.language || '').split('-')[0].toLowerCase();
-                if (!M[s]) s = 'ko';
+                if (!M[s]) s = 'en';
                 localStorage.setItem(K, s);
             }
             if (s !== P && M[s]) location.replace(M[s]);
