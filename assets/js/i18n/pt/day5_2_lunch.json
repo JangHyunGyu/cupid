@@ -1,0 +1,202 @@
+{
+    "tour_seo_1": {
+        "name": "{name}",
+        "text": "*Ficamos lado a lado diante do portão da escola. O mesmo lugar onde Seoyeon esperava no Dia 1.*"
+    },
+    "tour_seo_2": {
+        "name": "Seoyeon",
+        "text": "A gente se conheceu aqui."
+    },
+    "tour_seo_3": {
+        "name": "{name}",
+        "text": "Quase levei bronca por dizer 'é muita honra' naquela vez."
+    },
+    "tour_seo_4": {
+        "name": "Seoyeon",
+        "text": "Eu não briguei com você. — Gostei de você desde aquele momento."
+    },
+    "tour_seo_5": {
+        "name": "{name}",
+        "text": "Desde o primeiro dia?"
+    },
+    "tour_seo_6": {
+        "name": "Seoyeon",
+        "text": "...Pode ter sido impressão do vento."
+    },
+    "tour_seo_7": {
+        "name": "{name}",
+        "text": "*Não tem vento nenhum.*"
+    },
+    "tour_seo_8": {
+        "name": "{name}",
+        "text": "*Seoyeon tira algo da bolsa. — Uma chave. A chave do terraço.*"
+    },
+    "tour_seo_9": {
+        "name": "Seoyeon",
+        "text": "Toma."
+    },
+    "tour_seo_10": {
+        "name": "{name}",
+        "text": "Uma chave?"
+    },
+    "tour_seo_11": {
+        "name": "Seoyeon",
+        "text": "Era privilégio da presidente do grêmio. — Agora é sua."
+    },
+    "tour_seo_12": {
+        "name": "{name}",
+        "text": "*A mão que passa a chave. Nossos mindinhos se tocam de leve. — Ela nunca diz 'estou te dando'. Só entrega. Ação no lugar de palavras. Sempre foi assim.*"
+    },
+    "tour_seo_13": {
+        "name": "{name}",
+        "text": "A presidente do grêmio pode fazer isso?"
+    },
+    "tour_seo_14": {
+        "name": "Seoyeon",
+        "text": "Posso, por isso estou dando. — Sobe lá quando quiser tomar um ar."
+    },
+    "tour_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*No terraço com Seoyeon. O último horário de almoço.*"
+    },
+    "tour_seo_end": {
+        "name": "{name}",
+        "text": "*Ela não diz 'mesmo sem mim.' Mas está escondido logo atrás dessas palavras.*"
+    },
+    "tour_yuna_1_check": {
+        "name": "{name}",
+        "text": "*Indo para o anexo da biblioteca.*"
+    },
+    "tour_yuna_1": {
+        "name": "{name}",
+        "text": "*O anexo da biblioteca. O espaço secreto de leitura onde entrei pela primeira vez no Dia 2. Um sofá gasto, luz da tarde entrando pela janela.*"
+    },
+    "tour_yuna_1b": {
+        "name": "{name}",
+        "text": "*O anexo da biblioteca. O espaço secreto de leitura com Yuna. Um sofá gasto, luz da tarde entrando pela janela.*"
+    },
+    "tour_yuna_2": {
+        "name": "{name}",
+        "text": "*Yuna senta no sofá. Deixa o lugar ao lado vazio. — A mesma disposição do Dia 2.*"
+    },
+    "tour_yuna_3": {
+        "name": "{name}",
+        "text": "Toda vez que venho aqui, parece que o tempo passa diferente."
+    },
+    "tour_yuna_4": {
+        "name": "Yuna",
+        "text": "...No bom sentido?"
+    },
+    "tour_yuna_5": {
+        "name": "{name}",
+        "text": "No bom sentido."
+    },
+    "tour_yuna_6": {
+        "name": "{name}",
+        "text": "*Yuna tira um caderno da bolsa. O mesmo caderno que eu descobri no Dia 3.*"
+    },
+    "tour_yuna_7": {
+        "name": "Yuna",
+        "text": "...Escrevi o final."
+    },
+    "tour_yuna_8": {
+        "name": "{name}",
+        "text": "Naquela vez você disse que não ia escrever — porque 'se escrever o final, acaba.'"
+    },
+    "tour_yuna_9": {
+        "name": "Yuna",
+        "text": "Se não for um final — mas o começo de uma nova história — achei que tudo bem."
+    },
+    "tour_yuna_10": {
+        "name": "{name}",
+        "text": "*Ela estende o caderno. A mão treme levemente. — É a primeira vez que Yuna entrega algo que escreveu diretamente pra alguém.*"
+    },
+    "tour_yuna_11": {
+        "name": "{name}",
+        "text": "Primeiro leitor?"
+    },
+    "tour_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Na biblioteca com Yuna. O último horário de almoço.*"
+    },
+    "tour_yuna_end": {
+        "name": "Yuna",
+        "text": "...Único leitor. Por enquanto."
+    },
+    "tour_yuna_end_2": {
+        "name": "{name}",
+        "text": "*'Por enquanto.' — É o máximo que Yuna consegue prometer.*"
+    },
+    "tour_dain_1_check": {
+        "name": "{name}",
+        "text": "*Indo para o ginásio.*"
+    },
+    "tour_dain_1": {
+        "name": "{name}",
+        "text": "*O ginásio. Onde fizemos a primeira aposta no Dia 1 e ela deu a última cortada no Dia 4. — Hoje as luzes estão acesas.*"
+    },
+    "tour_dain_1b": {
+        "name": "{name}",
+        "text": "*O ginásio. Lugar de inúmeras apostas e cortadas nos últimos dias. — Hoje as luzes estão acesas.*"
+    },
+    "tour_dain_2": {
+        "name": "{name}",
+        "text": "*Dain está no meio da quadra. Segurando uma bola de vôlei.*"
+    },
+    "tour_dain_3": {
+        "name": "Dain",
+        "text": "Ei, quer jogar pedra-papel-tesoura uma última vez?"
+    },
+    "tour_dain_4": {
+        "name": "{name}",
+        "text": "Vai perder de novo."
+    },
+    "tour_dain_5": {
+        "name": "Dain",
+        "text": "Dessa vez eu ganho!!"
+    },
+    "tour_dain_6": {
+        "name": "{name}",
+        "text": "*Pedra-papel-tesoura. — Dain perdeu.*"
+    },
+    "tour_dain_7": {
+        "name": "Dain",
+        "text": "...AAARGH!! POR QUÊ!! Perdi DE NOVO!!"
+    },
+    "tour_dain_8": {
+        "name": "{name}",
+        "text": "*Brava mas rindo. — Essa é a Dain. Alguém que se diverte mesmo perdendo. Dain coloca a bola de vôlei no chão da quadra. Devagar.*"
+    },
+    "tour_dain_10": {
+        "name": "Dain",
+        "text": "Ser profissional... não sei mais."
+    },
+    "tour_dain_11": {
+        "name": "{name}",
+        "text": "......"
+    },
+    "tour_dain_11_b": {
+        "name": "Dain",
+        "text": "Antes eu achava que se tirasse o vôlei, eu ficava vazia também. Mas ultimamente não é mais assim."
+    },
+    "tour_dain_12": {
+        "name": "Dain",
+        "text": "Não sei o que mudou... mas agora, mesmo fora da quadra, eu me sinto mais eu."
+    },
+    "tour_dain_13": {
+        "name": "{name}",
+        "text": "O que mudou?"
+    },
+    "tour_dain_end": {
+        "name": "Dain",
+        "text": "...Apareceu alguém do meu lado."
+    },
+    "tour_dain_freetalk": {
+        "name": "Dain",
+        "text": "*No ginásio com Dain. O último horário de almoço.*"
+    },
+    "tour_dain_end_2": {
+        "name": "{name}",
+        "text": "*Ela diz sem exclamações. Mas desta vez não é uma despedida — é um começo. A mesma frase quieta do Dia 4, mas com uma temperatura diferente.*"
+    }
+}

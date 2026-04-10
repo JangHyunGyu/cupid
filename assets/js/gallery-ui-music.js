@@ -99,9 +99,9 @@ class MusicRenderer {
                     
                     <div class="music-info">
                         <h4>${unlocked ? bgm.name : '???'}</h4>
-                        <p>${unlocked ? bgm.artist : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt' }[this.ui.lang] || 'Locked')}</p>
+                        <p>${unlocked ? bgm.artist : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt', pt: 'Bloqueado' }[this.ui.lang] || 'Locked')}</p>
                     </div>
-                    
+
                     <div class="music-duration">
                         ${unlocked ? bgm.duration : '--:--'}
                     </div>

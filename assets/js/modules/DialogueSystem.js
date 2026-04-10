@@ -146,7 +146,7 @@ class DialogueSystem {
 
         // 이 캐릭터가 플레이어 이름을 알고 있는지 확인
         const nameKnown = charKey && this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
-        const defaultTitle = { es: "Estudiante Transferido", ja: "転校生", en: "Transfer Student", fr: "Élève transféré", de: "Austauschschüler" }[lang] || "전학생";
+        const defaultTitle = { es: "Estudiante Transferido", ja: "転校生", en: "Transfer Student", fr: "Élève transféré", de: "Austauschschüler", pt: "Aluno Transferido" }[lang] || "전학생";
 
         let processedText = text;
 
@@ -191,7 +191,7 @@ class DialogueSystem {
         };
         const charNames = charNamesByLang[lang] || charNamesByLang.ko;
 
-        let listStr = { es: "\n\n[Estado de Afinidad]\n", ja: "\n\n[好感度状況]\n", en: "\n\n[Affinity Status]\n", fr: "\n\n[État d'Affinité]\n", de: "\n\n[Zuneigungsstatus]\n" }[lang] || "\n\n[호감도 현황]\n";
+        let listStr = { es: "\n\n[Estado de Afinidad]\n", ja: "\n\n[好感度状況]\n", en: "\n\n[Affinity Status]\n", fr: "\n\n[État d'Affinité]\n", de: "\n\n[Zuneigungsstatus]\n", pt: "\n\n[Status de Afinidade]\n" }[lang] || "\n\n[호감도 현황]\n";
 
         for (const [key, name] of Object.entries(charNames)) {
             // 만난 적 없는 캐릭터는 건너뛰기

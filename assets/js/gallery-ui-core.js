@@ -178,7 +178,7 @@ class GalleryUI {
             if (e.target === popup) this.closeUnlockPopup();
         });
 
-        const okText = { ko: '확인', en: 'OK', es: 'Aceptar', ja: 'OK', fr: 'OK', de: 'OK' }[this.lang] || 'OK';
+        const okText = { ko: '확인', en: 'OK', es: 'Aceptar', ja: 'OK', fr: 'OK', de: 'OK', pt: 'OK' }[this.lang] || 'OK';
 
         popup.innerHTML = `
             <div class="unlock-popup-content">

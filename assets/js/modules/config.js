@@ -316,7 +316,7 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
 function optimizeImageHistory(messages, recentCount = 5) {
     const r2ImageRegex = /https?:\/\/[^\s]+\.(?:jpg|jpeg|png|gif|webp)(?:\?[^\s]*)?/i;
     const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-    const placeholder = ({ en: '[Previous photo]', ja: '[前の写真]', es: '[Foto anterior]', fr: '[Photo précédente]', de: '[Vorheriges Foto]' })[lang] || '[이전 사진]';
+    const placeholder = ({ en: '[Previous photo]', ja: '[前の写真]', es: '[Foto anterior]', fr: '[Photo précédente]', de: '[Vorheriges Foto]', pt: '[Foto anterior]' })[lang] || '[이전 사진]';
 
     return messages.map((msg, idx) => {
         const isRecent = idx >= messages.length - recentCount;

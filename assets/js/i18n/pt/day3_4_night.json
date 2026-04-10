@@ -1,0 +1,243 @@
+{
+    "night3_start": {
+        "name": "{name}",
+        "text": "*Voltei pro quarto. Foi um dia pesado.*"
+    },
+    "night3_start_2": {
+        "name": "{name}",
+        "text": "*Olho o celular.*"
+    },
+    "night3_faithful_check": {
+        "name": "{name}",
+        "text": "*Tem mensagens.*"
+    },
+    "night3_faithful_msg_seo_1": {
+        "name": "Seoyeon",
+        "text": "O que viu hoje é segredo"
+    },
+    "night3_faithful_msg_seo_2": {
+        "name": "Seoyeon",
+        "text": "...Mas pode voltar"
+    },
+    "night3_faithful_msg_seo_3": {
+        "name": "{name}",
+        "text": "*'Pode voltar.' — Pra ela, isso é o mesmo que 'por favor volte.'*"
+    },
+    "night3_faithful_msg_yuna_1": {
+        "name": "{name}",
+        "text": "*Yuna mandou uma foto de um bilhete. Uma linha escrita no caderno.*"
+    },
+    "night3_faithful_msg_yuna_2": {
+        "name": "Yuna",
+        "text": "Aquele romance, ainda não decidi o final"
+    },
+    "night3_faithful_msg_yuna_2_b": {
+        "name": "{name}",
+        "text": "*Se não escrever o final, a história não acaba. — Penso o mesmo.*"
+    },
+    "night3_faithful_msg_dain_1": {
+        "name": "Dain",
+        "text": "se quer perguntar do meu tornozelo, vem perguntar pessoalmente kk"
+    },
+    "night3_faithful_msg_dain_2": {
+        "name": "Dain",
+        "text": "ah mas valeu"
+    },
+    "night3_faithful_msg_dain_3": {
+        "name": "{name}",
+        "text": "*Disfarçou com 'kk' — mas a sinceridade transparece.*"
+    },
+    "night3_dream_1": {
+        "name": "{name}",
+        "text": "*Tive um sonho. — Estava andando lado a lado com alguém. Não via o rosto, mas estranhamente não sentia ansiedade.*"
+    },
+    "night3_dream_2_b": {
+        "name": "{name}",
+        "text": "*Dessa vez, queria falar sem arrependimento. Decidi que nessa escola seria honesto.*"
+    },
+    "night3_faithful_reflect_1": {
+        "name": "{name}",
+        "text": "*Abri os olhos. A luz da manhã entra pelas cortinas. — O sonho de hoje foi bom. Peguei o celular. Abri a galeria. Foto da Sojeong. — Parei de rolar e segurei.*"
+    },
+    "night3_faithful_reflect_2_b": {
+        "name": "{name}",
+        "text": "*'Apagar esta foto?' O dedo parado sobre o botão de confirmar.*"
+    },
+    "night3_faithful_reflect_2_c": {
+        "name": "{name}",
+        "text": "*Um segundo. Só olho pra tela. Os rabiscos na carteira da Sojeong vêm à mente. E — as 38 manhãs em que virei o rosto.*"
+    },
+    "night3_faithful_reflect_2_d": {
+        "name": "{name}",
+        "text": "*...É. Eu preciso começar rejeitando meu próprio passado. — Apaguei.*"
+    },
+    "night3_faithful_reflect_3": {
+        "name": "{name}",
+        "text": "*Guardei porque apagar parecia apagar aqueles sentimentos também. Mas agora não é mais apego — é registro. — Cumpriu seu papel.*"
+    },
+    "night3_faithful_reflect_3_b": {
+        "name": "{name}",
+        "text": "*Minsu disse. 'Recusar também é amor.' Na escola anterior, Sojeong desapareceu sem ninguém ajudar. Porque eu fiquei calado. — Esse foi o final mais cruel pros dois. Se ao menos um daqueles 38 recados tivesse sido enviado — Sojeong talvez não tivesse ido embora.*"
+    },
+    "night3_faithful_reflect_4": {
+        "name": "{name}",
+        "text": "*Dessa vez é diferente. Se eu vir, vou falar. Se eu souber, vou agir. Pra uma pessoa, com certeza — A galeria está vazia. O espaço onde a foto de Sojeong ficava. A tela vazia é mais nítida do que a foto jamais foi.*"
+    },
+    "night3_faithful_reflect_4_b": {
+        "name": "{name}",
+        "text": "*Apagar a foto foi fácil. Um dedo e pronto. — Sentimentos levam mais tempo.*"
+    },
+    "night3_faithful_reflect_4_c": {
+        "name": "{name}",
+        "text": "*Guardei o celular. A galeria está vazia, e minha cabeça ainda é uma bagunça. — Mesmo assim, um passo pra frente.*"
+    },
+    "night3_dream_3": {
+        "name": "{name}",
+        "text": "*Foi um bom sonho.*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*Quando fecho os olhos, a sensação de andar ao lado de Seoyeon ainda permanece.*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*Quando fecho os olhos, o ar silencioso ao lado de Yuna ainda permanece.*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*Quando fecho os olhos, a risada de Dain volta com um segundo de atraso.*"
+    },
+    "night3_cheat_msg_1": {
+        "name": "{name}",
+        "text": "*Voltei pro quarto. Foi um dia pesado. Olho o celular.*"
+    },
+    "night3_cheat_msg_2": {
+        "name": "Seoyeon",
+        "text": "Só comigo"
+    },
+    "night3_cheat_msg_3": {
+        "name": "Seoyeon",
+        "text": "...Por favor"
+    },
+    "night3_cheat_msg_3_b": {
+        "name": "{name}",
+        "text": "*Seoyeon usa a palavra 'por favor'. — Não existia no vocabulário dela. É o quanto ela desmoronou.*"
+    },
+    "night3_cheat_msg_4": {
+        "name": "Yuna",
+        "text": "...Eu sabia de tudo"
+    },
+    "night3_cheat_msg_4_b": {
+        "name": "Yuna",
+        "text": "*Espero que você entenda o peso de escolher ao lado de quem ficar*"
+    },
+    "night3_cheat_msg_5": {
+        "name": "Yuna",
+        "text": "*Espero que não trate de leve a escolha de ao lado de quem ficar*"
+    },
+    "night3_cheat_msg_6": {
+        "name": "Yuna",
+        "text": "...Não fuja. Só isso"
+    },
+    "night3_cheat_msg_dain_1": {
+        "name": "Dain",
+        "text": "...kk queria que fosse piada"
+    },
+    "night3_cheat_msg_7": {
+        "name": "{name}",
+        "text": "*Yuna mandou três mensagens. De alguém que normalmente nem manda uma. — É o quanto ela está com raiva.*"
+    },
+    "night3_nightmare_1": {
+        "name": "{name}",
+        "text": "*Adormeci. — Sonho. Estou no escuro. Não vejo nada.*"
+    },
+    "night3_nightmare_2_b": {
+        "name": "{name}",
+        "text": "*Ouço a voz de Seoyeon.*"
+    },
+    "night3_nightmare_3": {
+        "name": "Seoyeon",
+        "text": "Disse que era só comigo..."
+    },
+    "night3_nightmare_3_b": {
+        "name": "{name}",
+        "text": "*A voz de Yuna.*"
+    },
+    "night3_nightmare_4": {
+        "name": "Yuna",
+        "text": "Eu disse pra não mentir."
+    },
+    "night3_nightmare_4_b": {
+        "name": "{name}",
+        "text": "*A voz de Dain.*"
+    },
+    "night3_nightmare_5": {
+        "name": "Dain",
+        "text": "Disse que vinha. Esperei."
+    },
+    "night3_nightmare_6": {
+        "name": "{name}",
+        "text": "*Vejo mãos de três direções. Vagamente, na escuridão.*"
+    },
+    "night3_nightmare_choice": {
+        "name": "{name}",
+        "text": "*A mão de quem eu pego.*",
+        "choices": [
+            "Pegar a mão de Seoyeon",
+            "Pegar a mão de Yuna",
+            "Pegar a mão de Dain"
+        ]
+    },
+    "night3_nightmare_seo": {
+        "name": "{name}",
+        "text": "*Estendi a mão pra Seoyeon. No instante em que vi aquele sorriso — ela desapareceu.*"
+    },
+    "night3_nightmare_yuna": {
+        "name": "{name}",
+        "text": "*Dei um passo na direção de Yuna. No momento em que meus dedos quase tocaram — ela desapareceu.*"
+    },
+    "night3_nightmare_dain": {
+        "name": "{name}",
+        "text": "*Corri na direção de Dain. No instante em que pensei ter segurado — ela desapareceu.*"
+    },
+    "night3_nightmare_end": {
+        "name": "{name}",
+        "text": "*Estendi a mão. — Não consigo alcançar. Todas desapareceram, e só resta a escuridão.*"
+    },
+    "night3_nightmare_end_3": {
+        "name": "{name}",
+        "text": "*— Acordei encharcado de suor. 3 da manhã. Vejo o teto. Peguei o celular. Galeria. Rolando de novo. — Foto da Sojeong.*"
+    },
+    "night3_cheat_reflect_2": {
+        "name": "{name}",
+        "text": "*Ela está sorrindo. Sorrindo pra mim na foto em grupo. Como se pedisse ajuda. Disse a mim mesmo que dessa vez não ia desviar o olhar. Que nessa escola não ia ficar calado.*"
+    },
+    "night3_cheat_reflect_3_b": {
+        "name": "{name}",
+        "text": "*Igual à Sojeong. Sabia e fiquei calado. Na escola anterior, vi Sojeong desmoronar e fiquei de boca fechada. Nessa escola — de novo.*"
+    },
+    "night3_cheat_reflect_3_c": {
+        "name": "{name}",
+        "text": "*Nessa escola: arrependimento por ter falado pra todo mundo. No fim, o problema não é 'falar ou calar' — é 'pra quem.'*"
+    },
+    "night3_cheat_reflect_3_d": {
+        "name": "{name}",
+        "text": "*Minsu disse. 'Recusar também é amor.' Seoyeon disse. 'Não vou ser mais uma.'*"
+    },
+    "night3_cheat_reflect_3_e": {
+        "name": "{name}",
+        "text": "*Yuna disse. 'Não fuja.' Então dessa vez tem que ser diferente. Não escolher — é o mesmo que perder tudo.*"
+    },
+    "night3_cheat_reflect_5": {
+        "name": "{name}",
+        "text": "*— Não vou fugir. Dessa vez, só pra uma pessoa. Tive um sonho. — Estava andando ao lado de alguém. Não via o rosto, mas estranhamente não sentia ansiedade.*"
+    },
+    "night3_nightmare_end_4": {
+        "name": "{name}",
+        "text": "*O que eu fiz.*"
+    },
+    "night3_end": {
+        "name": "{name}",
+        "text": "*A noite vai ficando mais funda...*"
+    }
+}

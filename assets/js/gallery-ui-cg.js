@@ -82,7 +82,9 @@ class CGRenderer {
                 en: { title: 'No Event CG yet', desc: 'Collect special moments as you play!' },
                 es: { title: 'Aún no hay CG registrados', desc: '¡Colecciona momentos especiales mientras juegas!' },
                 ja: { title: 'まだ登録されたCGはありません', desc: 'ゲームを進めて特別な瞬間を集めましょう！' },
-                fr: { title: "Pas encore de CG d'événement", desc: 'Collectionnez des moments spéciaux en jouant !' }
+                fr: { title: "Pas encore de CG d'événement", desc: 'Collectionnez des moments spéciaux en jouant !' },
+                de: { title: 'Noch keine Event-CGs', desc: 'Sammle besondere Momente beim Spielen!' },
+                pt: { title: 'Nenhum CG de Evento ainda', desc: 'Colete momentos especiais enquanto joga!' }
             }[this.ui.lang] || { title: 'No Event CG yet', desc: 'Collect special moments as you play!' };
 
             this.gridEl.innerHTML = `
@@ -110,7 +112,7 @@ class CGRenderer {
                     </div>
                     <div class="card-info">
                         <h4>${cg.name}</h4>
-                        <p>${unlocked ? cg.character : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt' }[this.ui.lang] || 'Locked')}</p>
+                        <p>${unlocked ? cg.character : ({ ko: '미해금', en: 'Locked', es: 'Bloqueado', ja: '未解放', fr: 'Verrouillé', de: 'Gesperrt', pt: 'Bloqueado' }[this.ui.lang] || 'Locked')}</p>
                     </div>
                 </div>
             `;
