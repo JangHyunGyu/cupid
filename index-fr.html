@@ -8,7 +8,7 @@
         try {
             if (/bot|crawl|spider|slurp|facebookexternalhit|mediapartners/i.test(navigator.userAgent)) return;
             var K = 'cupid:language', P = 'fr';
-            var M = { ko: '/', en: 'index-en', es: 'index-es', ja: 'index-ja', fr: 'index-fr', de: 'index-de' };
+            var M = { ko: '/', en: 'index-en', es: 'index-es', ja: 'index-ja', fr: 'index-fr', de: 'index-de', pt: 'index-pt' };
             var s = localStorage.getItem(K);
             if (!s) {
                 s = (navigator.language || '').split('-')[0].toLowerCase();
@@ -722,6 +722,9 @@
                 </div>
                 <a href="index-de" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','de')">
                     <span class="lang-flag">🇩🇪</span> Deutsch
+                </a>
+                <a href="index-pt" class="lang-combo-option" onclick="localStorage.setItem('cupid:language','pt')">
+                    <span class="lang-flag">🇧🇷</span> Português
                 </a>
             </div>
         </div>

@@ -537,6 +537,85 @@ class GalleryData {
                 personality: 'Verspielt, Reif',
                 expressions: ['normal', 'shy', 'angry', 'bikini']
             }
+        },
+
+        // ===== 포르투갈어 데이터 (Brazilian Portuguese Data) =====
+        pt: {
+            seyoun: {
+                id: 'seyoun',
+                name: 'Seoyeon',
+                title: 'A Presidenta Perfeita',
+                shortDescription: 'Uma presidenta do gremio estudantil perfeita e gentil com todos.',
+                description: 'Uma presidenta do gremio estudantil perfeita e gentil com todos. Na verdade, sente-se solitaria facilmente e fica muito timida quando esta a sos com voce. Valoriza as regras, mas as vezes quer quebra-las por voce.',
+                age: '18 anos',
+                birthday: '14 de marco',
+                height: '165cm',
+                weight: '52kg',
+                bust: '36-23-35 70E',
+                hobby: 'Musica, Leitura',
+                personality: 'Megadere, Timida',
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+            },
+            yuna: {
+                id: 'yuna',
+                name: 'Yuna',
+                title: 'Kuudere Misteriosa',
+                shortDescription: 'A essencia de uma kuudere fria e inexpressiva.',
+                description: 'A essencia de uma kuudere fria e inexpressiva. Mostra um interesse profundo e obsessivo na sua "luz especial". Conhecida por seus comentarios misteriosos e encantadores. Emana uma aura de querer protege-lo.',
+                age: '18 anos',
+                birthday: '22 de julho',
+                height: '162cm',
+                weight: '49kg',
+                bust: '34-21-34 65E',
+                hobby: 'Observar estrelas, Poesia',
+                personality: 'Kuudere, Misteriosa',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+            },
+            dain: {
+                id: 'dain',
+                name: 'Dain',
+                title: 'Amiga de Infancia Radiante',
+                shortDescription: 'Uma tsundere alegre e animada com um lado maternal.',
+                description: 'Uma tsundere alegre e animada com um lado maternal. Te trata como um amigo proximo, mas fica vermelha rapidamente em momentos romanticos. Honesta com seus sentimentos mas desajeitada ao expressa-los.',
+                age: '18 anos',
+                birthday: '25 de dezembro',
+                height: '158cm',
+                weight: '54kg',
+                bust: '37-22-35 65H',
+                hobby: 'Culinaria, Esportes',
+                personality: 'Tsundere, Alegre',
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+            },
+            teacher: {
+                id: 'teacher',
+                name: 'Professora',
+                title: 'A Professora Desastrada',
+                shortDescription: 'Uma professora profissional que separa trabalho e vida pessoal.',
+                description: 'Uma professora profissional que separa trabalho e vida pessoal, mas na verdade tem um lado desastrado. Seu coracao dispara com seus momentos inesperadamente maduros. Um contraste encantador de querer secretamente se apoiar em voce.',
+                age: '28 anos',
+                birthday: '5 de maio',
+                height: '170cm',
+                weight: '58kg',
+                bust: '38-24-38 70G',
+                hobby: 'Leitura, Filmes',
+                personality: 'Profissional, Desastrada',
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+            },
+            nurse: {
+                id: 'nurse',
+                name: 'Enfermeira',
+                title: 'Enfermeira Brincalhona',
+                shortDescription: 'Uma enfermeira escolar madura e brincalhona.',
+                description: 'Uma enfermeira escolar madura e brincalhona. Gosta de te provocar com palavras ousadas, mas na verdade cuida e protege os alunos mais do que ninguem. Acha suas reacoes envergonhadas adoraveis.',
+                age: '26 anos',
+                birthday: '12 de setembro',
+                height: '168cm',
+                weight: '60kg',
+                bust: '38-24-38 70H',
+                hobby: 'Jardinagem, Meditacao',
+                personality: 'Brincalhona, Madura',
+                expressions: ['normal', 'shy', 'angry', 'bikini']
+            }
         }
     };
 
@@ -659,6 +738,25 @@ class GalleryData {
             active: 'Aktiv',
             sweat: 'Nervös',
             bikini: 'Bikini'
+        },
+
+        // 포르투갈어 표정 이름
+        pt: {
+            normal: 'Normal',
+            shy: 'Timida',
+            shy2: 'Timida 2',
+            angry: 'Brava',
+            sad: 'Triste',
+            laugh: 'Riso',
+            cry: 'Choro',
+            pout: 'Emburrada',
+            worried: 'Preocupada',
+            back: 'De costas',
+            smile: 'Sorriso',
+            bored: 'Entediada',
+            active: 'Ativa',
+            sweat: 'Nervosa',
+            bikini: 'Biquini'
         }
     };
 
@@ -1218,6 +1316,101 @@ class GalleryData {
             { id: 'ending_perfect_nurse', name: 'Morgen zusammen', character: 'Schulkrankenschwester', description: 'Nach dem Abschluss, ein warmer Morgen zu zweit', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
                 unlockHint: "Erreiche das perfekte Ende"
             }
+        ],
+        pt: [
+            {
+                id: 'nurse_home_event1',
+                name: 'Momento especial com a Enfermeira',
+                character: 'Enfermeira',
+                description: 'Um evento especial na casa da enfermeira',
+                file: 'assets/images/background/nurse_home_event1.png',
+                thumbnail: 'assets/images/background/nurse_home_event1.png'
+            },
+            {
+                id: 'dain_hurt_event1',
+                name: 'Lesao da Dain',
+                character: 'Dain',
+                description: 'Dain sofre uma lesao no joelho no ginasio',
+                file: 'assets/images/background/dain_hurt_event1.png',
+                thumbnail: 'assets/images/background/dain_hurt_event1.png'
+            },
+            {
+                id: 'dain_depression_event1',
+                name: 'As lagrimas da Dain',
+                character: 'Dain',
+                description: 'Dain chorando sozinha no ginasio escuro',
+                file: 'assets/images/background/dain_depression_event1.png',
+                thumbnail: 'assets/images/background/dain_depression_event1.png'
+            },
+            { id: 'ending_perfect_seoyeon', name: 'Promessa com Seoyeon', character: 'Seoyeon', description: 'No terraço ao por do sol, Seoyeon se aconchega em voce e olha pra cima', file: 'assets/images/background/ending_perfect_seoyeon.png', thumbnail: 'assets/images/background/ending_perfect_seoyeon.png',
+                unlockHint: "Alcancar o Final Perfeito da Seoyeon"
+            },
+            { id: 'ending_perfect_yuna', name: 'O calor da Yuna', character: 'Yuna', description: 'No esconderijo ao luar, Yuna se aconchega em voce pela primeira vez', file: 'assets/images/background/ending_perfect_yuna.png', thumbnail: 'assets/images/background/ending_perfect_yuna.png',
+                unlockHint: "Alcancar o Final Perfeito da Yuna"
+            },
+            { id: 'ending_perfect_dain', name: 'A vitoria da Dain', character: 'Dain', description: 'No ginasio ao por do sol, Dain pula nos seus bracos', file: 'assets/images/background/ending_perfect_dain.png', thumbnail: 'assets/images/background/ending_perfect_dain.png',
+                unlockHint: "Alcancar o Final Perfeito da Dain"
+            },
+            { id: 'ending_bittersweet', name: 'Despedida na chuva', character: null, description: 'Sozinho debaixo de um guarda-chuva, vendo uma silhueta desaparecer', file: 'assets/images/background/ending_bittersweet.png', thumbnail: 'assets/images/background/ending_bittersweet.png',
+                unlockHint: "Alcancar o Final Agridoce"
+            },
+            { id: 'ending_true_teacher', name: 'Toque proibido', character: 'Professora', description: 'Dar as maos em segredo no cafe, as bochechas dela ficando vermelhas', file: 'assets/images/background/ending_true_teacher.png', thumbnail: 'assets/images/background/ending_true_teacher.png',
+                unlockHint: "Alcancar Final Amor Verdadeiro"
+            },
+            { id: 'ending_true_nurse', name: 'Lugar seguro', character: 'Enfermeira', description: 'Ela adormece no seu ombro no sofa, uma noite tranquila', file: 'assets/images/background/ending_true_nurse.png', thumbnail: 'assets/images/background/ending_true_nurse.png',
+                unlockHint: "Alcancar Final Amor Verdadeiro"
+            },
+            { id: 'ending_harem', name: 'Triangulo...ou quadrado?', character: null, description: 'Cercado por tres garotas ao mesmo tempo', file: 'assets/images/background/ending_harem.png', thumbnail: 'assets/images/background/ending_harem.png',
+                unlockHint: "Alcancar o Final Harem"
+            },
+            { id: 'ending_alone', name: 'Quarto vazio', character: null, description: 'Um quarto escuro, um celular desligado, luzes da cidade pela cortina', file: 'assets/images/background/ending_alone.png', thumbnail: 'assets/images/background/ending_alone.png',
+                unlockHint: "Alcancar o Final Sozinho"
+            },
+            { id: 'ending_friend', name: 'Nossa foto de formatura', character: null, description: 'Uma selfie em grupo na sala de aula no dia da formatura', file: 'assets/images/background/ending_friend.png', thumbnail: 'assets/images/background/ending_friend.png',
+                unlockHint: "Alcancar o Final de Amizade"
+            },
+            { id: 'ending_confess_fail_seoyeon', name: 'O silencio da Seoyeon', character: 'Seoyeon', description: 'No parque ao por do sol, Seoyeon ajusta os oculos e desvia o olhar', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
+                unlockHint: "Ser rejeitado pela Seoyeon"
+            },
+            { id: 'ending_confess_fail_yuna', name: 'As costas da Yuna', character: 'Yuna', description: 'No parque escuro, Yuna se vira e vai embora sem dizer nada', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png',
+                unlockHint: "Ser rejeitado pela Yuna"
+            },
+            { id: 'ending_confess_fail_dain', name: 'O sorriso falso da Dain', character: 'Dain', description: 'Dain enxuga as lagrimas e acena com um sorriso forcado', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png',
+                unlockHint: "Ser rejeitado pela Dain"
+            },
+            { id: 'ending_mayhem', name: 'Pego em flagrante', character: null, description: 'O olhar gelado da Seoyeon e os punhos tremendo da Dain no corredor', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
+                unlockHint: "Ser pego traindo"
+            },
+            { id: 'ending_good_teacher', name: 'A professora na janela', character: 'Professora', description: 'A professora observa os alunos indo embora pela janela do corredor', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
+                unlockHint: "Alcancar o Bom Final"
+            },
+            { id: 'ending_good_nurse', name: 'O descanso da enfermeira', character: 'Enfermeira', description: 'A enfermeira se reclina com cafe e um sorriso sabido', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png',
+                unlockHint: "Alcancar o Bom Final"
+            },
+            { id: 'ending_perfect_teacher', name: 'Buque sob as cerejeiras', character: 'Professora', description: 'Apos a formatura, entregando flores em um terraco ao por do sol', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
+                unlockHint: "Alcancar o Final Perfeito"
+            },
+            { id: 'ending_perfect_nurse', name: 'Manha juntos', character: 'Enfermeira', description: 'Apos a formatura, uma manha quentinha juntos debaixo das cobertas', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
+                unlockHint: "Alcancar o Final Perfeito"
+            },
+            { id: 'ending_true_seoyeon', name: 'Quarto da Seoyeon', character: 'Seoyeon', description: 'No quarto da Seoyeon, sentados lado a lado, maos quase se tocando na noite', file: 'assets/images/background/ending_true_seoyeon.png', thumbnail: 'assets/images/background/ending_true_seoyeon.png',
+                unlockHint: "Alcancar o Final Verdadeiro da Seoyeon"
+            },
+            { id: 'ending_true_yuna', name: 'Estrela no terraco', character: 'Yuna', description: 'Sentados lado a lado no parapeito do terraco, olhando a paisagem noturna e a lua crescente', file: 'assets/images/background/ending_true_yuna.png', thumbnail: 'assets/images/background/ending_true_yuna.png',
+                unlockHint: "Alcancar o Final Verdadeiro da Yuna"
+            },
+            { id: 'ending_true_dain', name: 'A soneca da Dain', character: 'Dain', description: 'Encostada na parede do ginasio, Dain adormeceu no seu ombro, ficando bem quieto para nao acorda-la', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png',
+                unlockHint: "Alcancar o Final Verdadeiro da Dain"
+            },
+            { id: 'ending_good_seoyeon', name: 'Duas pessoas no parque', character: 'Seoyeon', description: 'Duas pessoas caminhando lado a lado no parque ao entardecer, maos quase se tocando', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png',
+                unlockHint: "Alcancar o Bom Final da Seoyeon"
+            },
+            { id: 'ending_good_yuna', name: 'Silencio no terraco', character: 'Yuna', description: 'Duas pessoas sentadas lado a lado no terraco escuro olhando o ceu', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png',
+                unlockHint: "Alcancar o Bom Final da Yuna"
+            },
+            { id: 'ending_good_dain', name: 'Cumprimento no portao', character: 'Dain', description: 'Dain dando um tapinha brincalhao no ombro e sorrindo no portao ao entardecer', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
+                unlockHint: "Alcancar o Bom Final da Dain"
+            }
         ]
     };
 
@@ -1318,6 +1511,20 @@ class GalleryData {
             { id: 'mystery', name: 'Verdächtige Aura', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
             { id: 'confession', name: 'Liebesgeständnis', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
             { id: 'ending', name: 'Abschlussthema', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
+        ],
+        pt: [
+            { id: 'intro', name: 'Tema Principal', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
+            { id: 'morning', name: 'Manha Fresca', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
+            { id: 'daily', name: 'Dias de Escola', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
+            { id: 'daily2', name: 'Tarde Tranquila', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
+            { id: 'sunset1', name: 'Caminho do Por do Sol', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+            { id: 'sunset2', name: 'Momento Romantico', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
+            { id: 'date', name: 'Encontro Emocionante', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
+            { id: 'night1', name: 'Noite Tranquila', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
+            { id: 'night2', name: 'Noite Secreta', artist: 'Cupid OST', duration: '3:10', file: 'assets/audio/bgm/night2.mp3' },
+            { id: 'mystery', name: 'Aura Suspeita', artist: 'Cupid OST', duration: '5:16', file: 'assets/audio/bgm/mystery.mp3' },
+            { id: 'confession', name: 'Confissao', artist: 'Cupid OST', duration: '6:43', file: 'assets/audio/bgm/confession.mp3' },
+            { id: 'ending', name: 'Tema Final', artist: 'Cupid OST', duration: '4:56', file: 'assets/audio/bgm/ending.mp3' }
         ]
     };
 
@@ -1403,7 +1610,8 @@ class GalleryData {
             ...(this.cg.es || []).map(cg => cg.id),
             ...(this.cg.ja || []).map(cg => cg.id),
             ...(this.cg.fr || []).map(cg => cg.id),
-            ...(this.cg.de || []).map(cg => cg.id)
+            ...(this.cg.de || []).map(cg => cg.id),
+            ...(this.cg.pt || []).map(cg => cg.id)
         ]);
     }
 

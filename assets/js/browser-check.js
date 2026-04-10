@@ -64,6 +64,10 @@
                     de: {
                         btn: "Teilen",
                         msg: "Dieses Spiel funktioniert am besten in Safari.<br><br>Tippe auf die Schaltfläche <b>[ {btn} ]</b> unten rechts<br>und wähle <b>[In Safari öffnen]</b>."
+                    },
+                    pt: {
+                        btn: "Compartilhar",
+                        msg: "Este jogo funciona melhor no Safari.<br><br>Toque no botão <b>[ {btn} ]</b> no canto inferior direito<br>e selecione <b>[Abrir no Safari]</b>."
                     }
                 };
 

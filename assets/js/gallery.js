@@ -59,6 +59,7 @@ class Gallery {
                   : pathname.includes('-ja') ? 'ja'
                   : pathname.includes('-en') ? 'en'
                   : pathname.includes('-de') ? 'de'
+                  : pathname.includes('-pt') ? 'pt'
                   : 'ko';
 
         // 2. 진행도 관리 인스턴스 생성 및 로드

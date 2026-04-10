@@ -75,6 +75,7 @@
                : pathname.includes('-ja') ? 'ja'
                : pathname.includes('-fr') ? 'fr'
                : pathname.includes('-de') ? 'de'
+               : pathname.includes('-pt') ? 'pt'
                : pathname.includes('-en') ? 'en'
                : 'ko';
 
@@ -260,7 +261,7 @@
     var p = window.location.pathname;
     var lang = p.includes('-es') ? 'es' : p.includes('-ja') ? 'ja'
              : p.includes('-fr') ? 'fr' : p.includes('-de') ? 'de'
-             : p.includes('-en') ? 'en' : 'ko';
+             : p.includes('-pt') ? 'pt' : p.includes('-en') ? 'en' : 'ko';
     var APP_ID = lang === 'ko' ? 'cupid' : 'cupid-' + lang;
     var _lastError = '';
     var _errorCount = 0;

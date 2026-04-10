@@ -1,0 +1,532 @@
+{
+    "morning5_start": {
+        "name": "{name}",
+        "text": "*Quinto dia. É domingo, mas tem evento na escola. O uniforme já ficou confortável. — É por causa deles. Eu sei.*"
+    },
+    "morning5_start_branch": {},
+    "morning5_start_b": {
+        "name": "{name}",
+        "text": "*No instante em que entro na sala — sinais vindos de três direções. O último evento. Todo o tempo acumulado até agora converge neste dia.*"
+    },
+    "morning5_start_2_b": {
+        "name": "{name}",
+        "text": "*Tem um bilhete na minha carteira. A letra da Seoyeon.*"
+    },
+    "morning5_mood_check": {
+        "name": "Sistema",
+        "text": ""
+    },
+    "morning5_mood_high": {
+        "name": "{name}",
+        "text": "Último dia. Estranhamente, meus passos estão leves. Hoje — acho que consigo dizer."
+    },
+    "morning5_mood_mid": {
+        "name": "{name}",
+        "text": "Último dia. Ainda sem certeza. Mas preciso ir."
+    },
+    "morning5_mood_low": {
+        "name": "{name}",
+        "text": "Último dia. Nem imaginei que cinco dias passariam tão rápido. ...Nem sei o que fiz."
+    },
+    "morning5_gate": {
+        "name": "{name}",
+        "text": "*O portão da escola. Cinco dias atrás eu também estava aqui. Naquela época o uniforme estava duro — agora cabe perfeitamente. Não foi só o uniforme que mudou.*"
+    },
+    "morning5_seo_note_1": {
+        "name": "{name}",
+        "text": "*Tem um bilhete na minha carteira. A letra da Seoyeon. — 'Arranja um tempinho de tarde. Vou deixar o terraço aberto. — Seoyeon'*"
+    },
+    "morning5_seo_note_1_b": {
+        "name": "{name}",
+        "text": "*Passo pelo canto de exposição do clube de literatura no corredor. Meus pés param diante do mural.*"
+    },
+    "morning5_yuna_story_gone": {
+        "name": "{name}",
+        "text": "*Só restam os furos dos alfinetes no mural. O lugar onde o conto deveria estar. — Ela tirou. Ou talvez nunca tenha colocado.*"
+    },
+    "morning5_yuna_story_gone_2": {
+        "name": "{name}",
+        "text": "*O lugar vazio na biblioteca, o marcador desaparecido, e agora um conto que nunca foi afixado. — Yuna está apagando todos os rastros. O silêncio que deixei no Dia 3 chegou até aqui.*"
+    },
+    "morning5_seo_note_1_c": {
+        "name": "{name}",
+        "text": "*Um conto está fixado no mural. Título: 'Para quem encontrei na biblioteca'. É da Yuna. — Uma história que só o protagonista reconheceria. Fiquei mais um tempo parado diante do mural. Frases curtas, mas tão vívidas como se a Yuna tivesse colado o rosto no meu.*"
+    },
+    "morning5_yuna_story_1": {
+        "name": "{name}",
+        "text": "*Uma personagem do conto cobre com um cobertor alguém adormecido na biblioteca. — Essa é uma cena que só eu saberia.*"
+    },
+    "morning5_yuna_story_2": {
+        "name": "{name}",
+        "text": "*A última frase. 'Quando ele abriu os olhos, eu já não estava. Deixei apenas um bilhete. — Da próxima vez também estarei aqui.' Tinta lilás. A mesma tinta do bilhete do Dia 1.*"
+    },
+    "morning5_yuna_story_4": {
+        "name": "{name}",
+        "text": "*Num cantinho abaixo do mural — 'Isso é ficção. Não é real.' Marcas de borracha. Apagado, mas o rastro ficou. Yuna escreveu isso, apagou, e no fim deixou.*"
+    },
+    "morning5_return_class": {
+        "name": "{name}",
+        "text": "*De volta à sala, Dain está esperando.*"
+    },
+    "morning5_dain_1": {
+        "name": "Dain",
+        "text": "Ei! Te inscrevi como minha dupla no evento esportivo de hoje!"
+    },
+    "morning5_dain_1_b": {
+        "name": "{name}",
+        "text": "...Sem nem pedir?"
+    },
+    "morning5_dain_2": {
+        "name": "Dain",
+        "text": "Se fugir, eu vou ficar brava de verdade!"
+    },
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
+        "name": "{name}",
+        "text": "*Não tem bilhete novo na minha carteira. Em vez disso, o olhar da Seoyeon no terraço ontem ainda está vívido. Yuna e Dain só comentam brevemente sobre os preparativos do evento.*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*Nenhum bilhete novo. Em vez disso, o jeito como a Yuna sustentou meu olhar por mais tempo ontem ainda permanece. Seoyeon e Dain só comentam brevemente sobre os preparativos do evento.*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*Antes das exclamações da Dain, o que volta primeiro é a respiração que parou no final ontem. Seoyeon e Yuna só comentam brevemente sobre os preparativos do evento.*"
+    },
+    "hidden_homeroom_d5_check": {
+        "name": "{name}",
+        "text": "*Horário de preparação do evento. Caminhando pelo corredor — passo diante da sala vazia. A porta está aberta.*"
+    },
+    "hidden_homeroom_d5_1": {
+        "name": "{name}",
+        "text": "*A professora está sentada na mesa. — Não é um manuscrito desta vez. Está segurando um envelope. Um envelope pardo.*"
+    },
+    "hidden_homeroom_d5_1_b": {
+        "name": "Professora",
+        "text": "...Ah."
+    },
+    "hidden_homeroom_d5_1_c": {
+        "name": "{name}",
+        "text": "Professora."
+    },
+    "hidden_homeroom_d5_1_d": {
+        "name": "Professora",
+        "text": "*Erguendo levemente o envelope* ...Isso."
+    },
+    "hidden_homeroom_d5_1_e": {
+        "name": "{name}",
+        "text": "O que é?"
+    },
+    "hidden_homeroom_d5_2": {
+        "name": "Professora",
+        "text": "O manuscrito. Ainda está inacabado... mas queria que você visse primeiro."
+    },
+    "hidden_homeroom_d5_3": {
+        "name": "Professora",
+        "text": "Não mostrei pra ninguém em sete anos. — Tecnicamente foge das minhas atribuições."
+    },
+    "hidden_homeroom_d5_4": {
+        "name": "{name}",
+        "text": "...Recebo o manuscrito. É mais pesado do que eu esperava."
+    },
+    "hidden_homeroom_d5_5": {
+        "name": "Professora",
+        "text": "...Mostrar isso pra outra pessoa primeiro é mais tenso do que eu imaginava."
+    },
+    "hidden_homeroom_d5_choice": {
+        "name": "{name}",
+        "text": "*Estou segurando o manuscrito. Sete anos dela estão nas minhas mãos.*",
+        "choices": [
+            "Professora, tenho certeza de que ficou ótimo. Manda pra uma editora.",
+            "...A senhora disse que levou sete anos. Mas — não deveria ter mais uma linha no último capítulo?"
+        ]
+    },
+    "hidden_homeroom_d5_praise_trap_1": {
+        "name": "{name}",
+        "text": "*A professora para. — E volta à expressão seca de sempre. Rápido demais.*"
+    },
+    "hidden_homeroom_d5_praise_trap_2": {
+        "name": "Professora",
+        "text": "...Sem nem ler?"
+    },
+    "hidden_homeroom_d5_praise_trap_3": {
+        "name": "{name}",
+        "text": "Ah, é que — com certeza ficou bom. A senhora passou sete anos nisso."
+    },
+    "hidden_homeroom_d5_praise_trap_4": {
+        "name": "Professora",
+        "text": "...Tá."
+    },
+    "hidden_homeroom_d5_praise_trap_5": {
+        "name": "{name}",
+        "text": "*A professora estende a mão. Pega o manuscrito de volta. Devagar. Guarda no envelope de novo.*"
+    },
+    "hidden_homeroom_d5_praise_trap_6": {
+        "name": "Professora",
+        "text": "Esquece. Desculpa tomar seu tempo."
+    },
+    "hidden_homeroom_d5_praise_trap_7": {
+        "name": "{name}",
+        "text": "Professora—"
+    },
+    "hidden_homeroom_d5_praise_trap_8": {
+        "name": "Professora",
+        "text": "Mandei pra editoras três vezes em sete anos. Todas rejeitaram. Duas dessas três rejeições começavam com — 'Sete anos é impressionante. Com certeza deve estar ótimo.'"
+    },
+    "hidden_homeroom_d5_praise_trap_9": {
+        "name": "{name}",
+        "text": "*...Eu não sabia. Sabia que ela tinha sido rejeitada, mas não que a frase da rejeição era *exatamente a mesma coisa que eu acabei de dizer*.*"
+    },
+    "hidden_homeroom_d5_praise_trap_10": {
+        "name": "Professora",
+        "text": "...Achei que você ia ler e me dar uma opinião. — Mostrei pra você porque pensei que um aluno teria menos pressão."
+    },
+    "hidden_homeroom_d5_praise_trap_11": {
+        "name": "Professora",
+        "text": "Vai lá. Vai se atrasar pro evento."
+    },
+    "hidden_homeroom_d5_praise_trap_12": {
+        "name": "{name}",
+        "text": "*Fechei a porta da sala e saí. O envelope ainda estava na mesa dela. — O que ela não recebeu em sete anos não foi *elogio sincero*, mas *alguém que lesse de verdade*. Elogios já vinham nos e-mails de rejeição. Eu disse exatamente a mesma coisa que um e-mail de rejeição. Com boas intenções.*"
+    },
+    "hidden_homeroom_d5_correct_1": {
+        "name": "{name}",
+        "text": "*A professora para. De verdade. Não por meio segundo — por uns três. A mão no clipboard aperta com força.*"
+    },
+    "hidden_homeroom_d5_correct_2": {
+        "name": "Professora",
+        "text": "...Como você sabia."
+    },
+    "hidden_homeroom_d5_correct_3": {
+        "name": "{name}",
+        "text": "Eu nem abri ainda."
+    },
+    "hidden_homeroom_d5_correct_4": {
+        "name": "Professora",
+        "text": "Pois é. — Como você sabia que o último capítulo está vazio."
+    },
+    "hidden_homeroom_d5_correct_5": {
+        "name": "{name}",
+        "text": "*Eu não sabia. Foi um chute. — Alguém que levou sete anos e escolheu *justamente hoje* pra mostrar a um aluno pela primeira vez parecia estranho. Se estivesse pronto, teria mandado pra editora antes. Não estava pronto — então precisava de *permissão* pra terminar.*"
+    },
+    "hidden_homeroom_d5_correct_6": {
+        "name": "Professora",
+        "text": "...Eu realmente não consigo escrever. A última linha."
+    },
+    "hidden_homeroom_d5_correct_7": {
+        "name": "Professora",
+        "text": "O manuscrito está parado nessa linha há sete anos. Porque se eu terminar — confirmo que não sou escritora."
+    },
+    "hidden_homeroom_d5_correct_8": {
+        "name": "{name}",
+        "text": "*Pela primeira vez, a professora disse a palavra *escritora* sobre si mesma. Em sete anos nunca tinha dito.*"
+    },
+    "hidden_homeroom_d5_correct_9": {
+        "name": "{name}",
+        "text": "Quer que eu olhe essa linha junto com a senhora?"
+    },
+    "hidden_homeroom_d5_correct_10": {
+        "name": "Professora",
+        "text": "...Um aluno?"
+    },
+    "hidden_homeroom_d5_correct_11": {
+        "name": "{name}",
+        "text": "É só uma linha. Aluno também escreve uma linha."
+    },
+    "hidden_homeroom_d5_correct_12": {
+        "name": "Professora",
+        "text": "*A professora ri. De verdade. Não só os cantos da boca — os olhos também. O rosto de sete anos de autocensura se desfazendo por um segundo.*"
+    },
+    "hidden_homeroom_d5_correct_13": {
+        "name": "Professora",
+        "text": "...Aceito. Essa proposta."
+    },
+    "hidden_homeroom_d5_correct_14": {
+        "name": "{name}",
+        "text": "*Seguro o manuscrito de novo. Não está tão pesado como antes. — Fechar sete anos de trabalho inacabado com elogio não era o que ela precisava. O que ela precisava era de *alguém que aceitasse o inacabado como inacabado*. Isso é apoio de verdade.*"
+    },
+    "hidden_homeroom_d5_choice_a": {
+        "name": "Professora",
+        "text": "*A voz falha.* É. Depois da formatura."
+    },
+    "hidden_homeroom_d5_choice_b": {
+        "name": "Professora",
+        "text": "*Riso fraco* Se for uma página inteira — não é resenha, é crítica literária."
+    },
+    "hidden_homeroom_d5_choice_b_b": {
+        "name": "{name}",
+        "text": "Posso escrever uma resenha?"
+    },
+    "hidden_homeroom_d5_choice_b_c": {
+        "name": "Professora",
+        "text": "*Ri brevemente, depois fica séria.* ...Se for uma boa resenha. Acho que consigo escrever mais uma."
+    },
+    "hidden_homeroom_d5_choice_b_d": {
+        "name": "{name}",
+        "text": "*Mais uma. — A pessoa que terminou depois de sete anos está dizendo 'mais uma'.*"
+    },
+    "hidden_homeroom_d5_6": {
+        "name": "Professora",
+        "text": "*Tirando o envelope* ...Isso. Já que é o último dia."
+    },
+    "hidden_homeroom_d5_6_b": {
+        "name": "{name}",
+        "text": "*O que ela disse no café ontem. Aquelas palavras, 'quero te mostrar primeiro'. Ela realmente trouxe.*"
+    },
+    "hidden_homeroom_d5_6_c": {
+        "name": "{name}",
+        "text": "*Ela entrega o envelope. — A mão está tremendo levemente.*"
+    },
+    "hidden_homeroom_d5_6_d": {
+        "name": "Professora",
+        "text": "...Depois de ler, me diz o que realmente achou. — Não precisa ser educado comigo."
+    },
+    "hidden_homeroom_d5_6_e": {
+        "name": "{name}",
+        "text": "Professora."
+    },
+    "hidden_homeroom_d5_6_f": {
+        "name": "{name}",
+        "text": "A senhora não precisa mais dizer isso."
+    },
+    "hidden_homeroom_d5_6_g": {
+        "name": "{name}",
+        "text": "*Ela para. — E então sorri. Não um sorriso seco. Um sorriso caloroso.*"
+    },
+    "hidden_homeroom_d5_6_h": {
+        "name": "Professora",
+        "text": "...Nunca pensei que ouviria isso de um aluno."
+    },
+    "hidden_homeroom_d5_6_i": {
+        "name": "{name}",
+        "text": "*Ela coloca o envelope nas minhas mãos.*"
+    },
+    "hidden_homeroom_d5_6_j": {
+        "name": "Professora",
+        "text": "...Você seria meu primeiro leitor?"
+    },
+    "hidden_homeroom_d5_6_k": {
+        "name": "{name}",
+        "text": "*As mesmas palavras de ontem. — Mas hoje, a ação veio junto. Sete anos de manuscrito estão nas minhas mãos.*"
+    },
+    "hidden_homeroom_d5_6_l": {
+        "name": "{name}",
+        "text": "Eu vou ler. Prometo."
+    },
+    "hidden_homeroom_d5_6_m": {
+        "name": "Professora",
+        "text": "*Puxando o cabelo pra trás* ...Não aceito resenha."
+    },
+    "hidden_homeroom_d5_6_n": {
+        "name": "{name}",
+        "text": "Mentira."
+    },
+    "hidden_homeroom_d5_6_o": {
+        "name": "Professora",
+        "text": "*Riso fraco* ...É. Escreve pelo menos uma linha."
+    },
+    "hidden_homeroom_d5_6_p": {
+        "name": "{name}",
+        "text": "*Uma linha. — Alguém que foi rejeitada três vezes tentando publicar está esperando a impressão de uma linha de um aluno. Se isso não é uma declaração, o que é? A professora vai saindo da sala — para na porta.*"
+    },
+    "hidden_homeroom_d5_6_q": {
+        "name": "Professora",
+        "text": "{name}."
+    },
+    "hidden_homeroom_d5_6_r": {
+        "name": "{name}",
+        "text": "*Ela para. Segura o clipboard com força. — E lentamente vira a cabeça.*"
+    },
+    "hidden_homeroom_d5_6_s": {
+        "name": "Professora",
+        "text": "...Depois da formatura. *A voz falha.* É. Depois da formatura."
+    },
+    "hidden_homeroom_d5_6_t": {
+        "name": "{name}",
+        "text": "*'Depois da formatura' — duas vezes. Uma como permissão, outra como espera.*"
+    },
+    "hidden_homeroom_d5_7": {
+        "name": "Professora",
+        "text": "Depois da formatura — vamos nos ver. Não como professora e aluno."
+    },
+    "hidden_homeroom_d5_7_b": {
+        "name": "{name}",
+        "text": "*'Não como professora e aluno.' — Ela está falando sobre depois da formatura. Não agora, mas um dia.*"
+    },
+    "hidden_homeroom_d5_7_c": {
+        "name": "Professora",
+        "text": "...Acho que ultrapassei um pouco os limites do interesse profissional. Já que é a última vez. Só desta vez."
+    },
+    "hidden_homeroom_d5_8": {
+        "name": "{name}",
+        "text": "*Ela se vira. O cabelo longo balança. — Parece alguém tentando não se desfazer até o final.*"
+    },
+    "hidden_homeroom_d5_freetalk": {
+        "name": "Professora",
+        "text": "*Última conversa com a professora na sala vazia.*"
+    },
+    "hidden_nurse_d5_check": {
+        "name": "{name}",
+        "text": "*Intervalo durante o evento. Passando em frente à enfermaria.*"
+    },
+    "hidden_nurse_d5_1": {
+        "name": "Enfermeira",
+        "text": "Oi? {name}. — Último dia, né. Último dia do evento. Cinco dias. — Passou rápido."
+    },
+    "hidden_nurse_d5_1_b": {
+        "name": "{name}",
+        "text": "*Ela disse 'último dia do evento', mas tem outro significado por trás dessas palavras.*"
+    },
+    "hidden_nurse_d5_1_c": {
+        "name": "Enfermeira",
+        "text": "*Com um sorriso leve* Vem me visitar depois da formatura."
+    },
+    "hidden_nurse_d5_1_d": {
+        "name": "{name}",
+        "text": "A formatura ainda tá longe."
+    },
+    "hidden_nurse_d5_1_e": {
+        "name": "Enfermeira",
+        "text": "...Antes disso, vem se estiver machucado."
+    },
+    "hidden_nurse_d5_1_f": {
+        "name": "{name}",
+        "text": "*De 'vem me visitar depois da formatura' pra 'vem se estiver machucado' — ela recuou. Quase cruzou a linha e voltou atrás.*"
+    },
+    "hidden_nurse_d5_2_b": {
+        "name": "{name}",
+        "text": "*A enfermeira sai. Está bem na minha frente.*"
+    },
+    "hidden_nurse_d5_2_c": {
+        "name": "Enfermeira",
+        "text": "*Hesitando* ...Veio de novo."
+    },
+    "hidden_nurse_d5_3": {
+        "name": "{name}",
+        "text": "Posso vir mesmo sem estar machucado?"
+    },
+    "hidden_nurse_d5_3_b": {
+        "name": "{name}",
+        "text": "*A enfermeira para por um instante. A voz abaixa um tom.*"
+    },
+    "hidden_nurse_d5_3_c": {
+        "name": "Enfermeira",
+        "text": "...Isso."
+    },
+    "hidden_nurse_d5_3_d": {
+        "name": "{name}",
+        "text": "Senhora?"
+    },
+    "hidden_nurse_d5_3_e": {
+        "name": "Enfermeira",
+        "text": "*Sorrindo de novo* Me pergunta isso depois da formatura. — Aí eu respondo."
+    },
+    "hidden_nurse_d5_3_f": {
+        "name": "{name}",
+        "text": "*'Depois da formatura.' — As mesmas palavras da professora. Não agora, mas um dia. O dia em que o título de 'professora' é retirado.*"
+    },
+    "hidden_nurse_d5_3_g": {
+        "name": "Enfermeira",
+        "text": "Vai lá. Não pode faltar no evento."
+    },
+    "hidden_nurse_d5_3_h": {
+        "name": "{name}",
+        "text": "*A enfermeira vai entrar na sala — e para.*"
+    },
+    "hidden_nurse_d5_3_i": {
+        "name": "Enfermeira",
+        "text": "...{name}."
+    },
+    "hidden_nurse_d5_4": {
+        "name": "Enfermeira",
+        "text": "...Pressiona bem o curativo pra não soltar. — Hoje não vou colocar pra você."
+    },
+    "hidden_nurse_d5_4_b": {
+        "name": "{name}",
+        "text": "Senhora."
+    },
+    "hidden_nurse_d5_4_c": {
+        "name": "{name}",
+        "text": "*Um silêncio estranho. — Até ontem era natural, mas hoje algo parece diferente.*"
+    },
+    "hidden_nurse_d5_4_d": {
+        "name": "Enfermeira",
+        "text": "Último dia, né."
+    },
+    "hidden_nurse_d5_5": {
+        "name": "Enfermeira",
+        "text": "...{name}. Quer que eu coloque um curativo?"
+    },
+    "hidden_nurse_d5_choice": {
+        "name": "{name}",
+        "text": "*Não estou machucado. Ela sabe disso. Está perguntando mesmo assim.*",
+        "choices": [
+            "Sim, já que é a última vez. Só uma vez.",
+            "Não um curativo — seu número de telefone"
+        ]
+    },
+    "hidden_nurse_d5_choice_a": {
+        "name": "Enfermeira",
+        "text": "*Coloca o curativo devagar. Tem uma letra miúda escrita no curativo.*"
+    },
+    "hidden_nurse_d5_choice_a_b": {
+        "name": "Enfermeira",
+        "text": "...Você disse 'só uma vez.' Então por que fala desse jeito."
+    },
+    "hidden_nurse_d5_choice_b": {
+        "name": "Enfermeira",
+        "text": "*O riso para.* ...Isso."
+    },
+    "hidden_nurse_d5_choice_b_b": {
+        "name": "{name}",
+        "text": "*A voz abaixou um tom. Toda a brincadeira sumiu. — É assim que a sinceridade dessa pessoa sempre chega.*"
+    },
+    "hidden_nurse_d5_choice_b_c": {
+        "name": "Enfermeira",
+        "text": "...Número de telefone. Pra consulta médica?"
+    },
+    "hidden_nurse_d5_choice_b_d": {
+        "name": "Enfermeira",
+        "text": "*Ajeitando os óculos* ...Tá bom. Mas usa depois da formatura."
+    },
+    "hidden_nurse_d5_choice_b_e": {
+        "name": "{name}",
+        "text": "*'Depois da formatura.' — Ela não cruza a linha. Mas deixou o número de telefone bem na beira.*"
+    },
+    "hidden_nurse_d5_choice_b_f": {
+        "name": "Enfermeira",
+        "text": "Quer que eu coloque um curativo?"
+    },
+    "hidden_nurse_d5_choice_b_g": {
+        "name": "{name}",
+        "text": "...Não estou machucado."
+    },
+    "hidden_nurse_d5_6": {
+        "name": "Enfermeira",
+        "text": "Eu sei. Só precisava de uma desculpa."
+    },
+    "hidden_nurse_d5_6_b": {
+        "name": "{name}",
+        "text": "*A fala marca registrada dela do Dia 1. — Naquela época era apresentação de personagem. Agora é verdade.*"
+    },
+    "hidden_nurse_d5_6_c": {
+        "name": "{name}",
+        "text": "*'Depois da formatura, vamos nos encontrar num café em vez da enfermaria — ♡' O coração desta vez — definitivamente não é interesse médico.*"
+    },
+    "hidden_nurse_d5_flag_check": {},
+    "hidden_nurse_d5_7": {},
+    "hidden_nurse_d5_7_both": {},
+    "hidden_nurse_d5_freetalk": {
+        "name": "Enfermeira",
+        "text": "*Última conversa com a enfermeira em frente à enfermaria.*"
+    },
+    "morning5_end_branch": {},
+    "morning5_end": {
+        "name": "{name}",
+        "text": "*Sinais de três direções. — Hora de escolher uma resposta.*"
+    },
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*Não são sinais vindos de três direções. Já fiz minha escolha, e sigo para o último evento.*"
+    }
+}

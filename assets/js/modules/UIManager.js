@@ -167,7 +167,7 @@ class UIManager {
                             const btn = document.createElement('button');
                             btn.type = 'button';
                             btn.id = 'upload-image-btn';
-                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Télécharger une image', de: 'Bild hochladen' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 업로드';
+                            btn.title = { es: 'Subir imagen', ja: '画像をアップロード', en: 'Upload image', fr: 'Télécharger une image', de: 'Bild hochladen', pt: 'Enviar imagem' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 업로드';
                             btn.innerHTML = '<span aria-hidden="true">📸</span>';
                             container.appendChild(btn);
                             this.imageUploadBtn = btn;
@@ -191,7 +191,7 @@ class UIManager {
                             const remBtn = document.createElement('button');
                             remBtn.id = 'remove-image-btn';
                             remBtn.type = 'button';
-                            remBtn.title = { es: 'Eliminar imagen', ja: '画像を削除', en: 'Remove image', fr: 'Supprimer l\'image', de: 'Bild entfernen' }[(window.GAME_LANG || document.documentElement.lang)] || '미리보기 제거';
+                            remBtn.title = { es: 'Eliminar imagen', ja: '画像を削除', en: 'Remove image', fr: 'Supprimer l\'image', de: 'Bild entfernen', pt: 'Remover imagem' }[(window.GAME_LANG || document.documentElement.lang)] || '미리보기 제거';
                             remBtn.textContent = '×';
                             previewDiv.appendChild(remBtn);
 
@@ -252,7 +252,7 @@ class UIManager {
      */
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
-            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
+            alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
 
@@ -503,7 +503,8 @@ class UIManager {
             en: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Teacher', Nurse: 'Nurse' },
             es: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Profesora', Nurse: 'Enfermera' },
             fr: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professeure', Nurse: 'Infirmière' },
-            de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Lehrerin', Nurse: 'Krankenschwester' }
+            de: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Lehrerin', Nurse: 'Krankenschwester' },
+            pt: { Seoyeon: 'Seoyeon', Yuna: 'Yuna', Dain: 'Dain', Teacher: 'Professora', Nurse: 'Enfermeira' }
         };
         const nameMap = nameMapByLang[lang] || nameMapByLang['ko'];
 
@@ -701,7 +702,7 @@ class UIManager {
     goToHome() {
         if (window.soundManager) soundManager.stopBgm();
         const lang = (window.GAME_LANG || document.documentElement.lang) || 'ko';
-        window.location.href = { es: '/index-es', ja: '/index-ja', en: '/index-en', fr: '/index-fr', de: '/index-de' }[lang] || '/';
+        window.location.href = { es: '/index-es', ja: '/index-ja', en: '/index-en', fr: '/index-fr', de: '/index-de', pt: '/index-pt' }[lang] || '/';
     }
 
     /**

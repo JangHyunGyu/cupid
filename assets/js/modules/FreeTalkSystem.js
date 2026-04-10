@@ -122,7 +122,10 @@ class FreeTalkSystem {
                 (charName === "Infirmière Scolaire" && (m.char === "보건선생님" || m.char === "Nurse")) ||
                 // German name matching
                 (charName === "Lehrerin" && (m.char === "담임선생님" || m.char === "Teacher")) ||
-                (charName === "Schulkrankenschwester" && (m.char === "보건선생님" || m.char === "Nurse"));
+                (charName === "Schulkrankenschwester" && (m.char === "보건선생님" || m.char === "Nurse")) ||
+                // Portuguese name matching
+                (charName === "Professora" && (m.char === "담임선생님" || m.char === "Teacher")) ||
+                (charName === "Enfermeira" && (m.char === "보건선생님" || m.char === "Nurse"));
             // 플래그가 true인 기억만 포함
             return charMatch && this.stateManager.getFlag(m.flag);
         });
@@ -131,9 +134,9 @@ class FreeTalkSystem {
         if (memories.length === 0) return "";
 
         // 기억들을 리스트 형태로 포맷팅
-        const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[最近の出来事と記憶]:\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et Souvenirs Récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n" }[lang] || "\n\n[최근 사건 및 기억]:\n";
+        const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[最近の出来事と記憶]:\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et Souvenirs Récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n", pt: "\n\n[Eventos e Memórias Recentes]:\n" }[lang] || "\n\n[최근 사건 및 기억]:\n";
         return header + memories.map(m => {
-            let text = { es: m.es, ja: m.ja, en: m.en, fr: m.fr, de: m.de }[lang] || m.ko;
+            let text = { es: m.es, ja: m.ja, en: m.en, fr: m.fr, de: m.de, pt: m.pt }[lang] || m.ko;
             if (!text) text = m.en || m.ko;
             return `- ${text.replace(/{name}/g, this.stateManager.playerName)}`;
         }).join("\n");
@@ -189,6 +192,13 @@ class FreeTalkSystem {
                 "Lehrerin": "Professionell, aber hat eine tollpatschige Seite.",
                 "Schulkrankenschwester": "Eine reife und verspielte Gesundheitslehrerin."
             },
+            pt: {
+                "Seoyeon": "Presidente do grêmio estudantil. Gentil, mas solitária.",
+                "Yuna": "Garota misteriosa. Interessada na 'luz' do usuário.",
+                "Dain": "Garota animada. Amiga próxima do usuário.",
+                "Professora": "Profissional, mas tem um lado desastrado.",
+                "Enfermeira": "Uma professora de saúde madura e brincalhona que se preocupa com seus alunos."
+            },
             ko: {
                 "서연": "학생회장. 모두에게 친절하지만 외로움을 잘 탐.",
                 "유나": "신비로운 소녀. 주인공의 '빛'에 집착함.",
@@ -210,22 +220,22 @@ class FreeTalkSystem {
                 // 관계 상태 텍스트 생성
                 let status = "";
                 if (this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${name}`)) {
-                    status = { es: " (Actualmente SALIENDO con el usuario)", ja: " (現在ユーザーと交際中)", en: " (Currently DATING the user)", fr: " (Actuellement en COUPLE avec l'utilisateur)", de: " (Derzeit mit dem Benutzer ZUSAMMEN)" }[lang] || " (현재 사용자와 사귀는 사이)";
+                    status = { es: " (Actualmente SALIENDO con el usuario)", ja: " (現在ユーザーと交際中)", en: " (Currently DATING the user)", fr: " (Actuellement en COUPLE avec l'utilisateur)", de: " (Derzeit mit dem Benutzer ZUSAMMEN)", pt: " (Atualmente NAMORANDO com o usuário)" }[lang] || " (현재 사용자와 사귀는 사이)";
                 } else if (affinity >= 70) {
-                    status = { es: " (Convencida de estar saliendo con el usuario)", ja: " (ユーザーと交際していると確信)", en: " (Convinced they are dating the user)", fr: " (Convaincue de sortir avec l'utilisateur)", de: " (Überzeugt, mit dem Benutzer zusammen zu sein)" }[lang] || " (사용자와 사귀는 사이라고 확신함)";
+                    status = { es: " (Convencida de estar saliendo con el usuario)", ja: " (ユーザーと交際していると確信)", en: " (Convinced they are dating the user)", fr: " (Convaincue de sortir avec l'utilisateur)", de: " (Überzeugt, mit dem Benutzer zusammen zu sein)", pt: " (Convencida de que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이라고 확신함)";
                 } else if (affinity >= 50) {
-                    status = { es: " (Sospecha que está saliendo con el usuario)", ja: " (ユーザーと交際しているか疑っている)", en: " (Suspecting they are dating the user)", fr: " (Suspecte qu'elle sort avec l'utilisateur)", de: " (Vermutet, mit dem Benutzer zusammen zu sein)" }[lang] || " (사용자와 사귀는 사이인지 의심함)";
+                    status = { es: " (Sospecha que está saliendo con el usuario)", ja: " (ユーザーと交際しているか疑っている)", en: " (Suspecting they are dating the user)", fr: " (Suspecte qu'elle sort avec l'utilisateur)", de: " (Vermutet, mit dem Benutzer zusammen zu sein)", pt: " (Suspeitando que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이인지 의심함)";
                 }
 
-                const affinityText = { es: ` (Afinidad: ${affinity})`, ja: ` (好感度: ${affinity})`, en: ` (Affinity: ${affinity})`, fr: ` (Affinité : ${affinity})`, de: ` (Zuneigung: ${affinity})` }[lang] || ` (호감도: ${affinity})`;
+                const affinityText = { es: ` (Afinidad: ${affinity})`, ja: ` (好感度: ${affinity})`, en: ` (Affinity: ${affinity})`, fr: ` (Affinité : ${affinity})`, de: ` (Zuneigung: ${affinity})`, pt: ` (Afinidade: ${affinity})` }[lang] || ` (호감도: ${affinity})`;
                 return `- ${name}: ${desc}${affinityText}${status}`;
             })
             .join("\n");
 
-        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters in School & Your Awareness]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n", de: "\n\n[Andere Charaktere in der Schule & Dein Bewusstsein]:\n" }[lang] || "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
+        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters in School & Your Awareness]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n", de: "\n\n[Andere Charaktere in der Schule & Dein Bewusstsein]:\n", pt: "\n\n[Outros Personagens na Escola e Sua Percepção]:\n" }[lang] || "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
 
         // 질투 반응 지침
-        const jealousyInstruction = { es: "\nNota: Eres consciente de la relación del usuario con otros. Si su afinidad es alta (50+), puedes sentir celos, sospechas u obsesión según tu personalidad.", ja: "\n注意: あなたはユーザーと他のキャラクターとの関係を認知しています。他のキャラクターの好感度が高い場合(50以上)、あなたの性格に応じて嫉妬、疑念、または執着を見せることがあります。", en: "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality.", fr: "\nNote : Vous êtes consciente de la relation de l'utilisateur avec les autres. Si leur affinité est élevée (50+), vous pouvez ressentir de la jalousie.", de: "\nHinweis: Du bist dir der Beziehung des Benutzers zu anderen bewusst. Wenn deren Zuneigung hoch ist (50+), kannst du je nach deiner Persönlichkeit eifersüchtig, misstrauisch oder besessen reagieren." }[lang] || "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
+        const jealousyInstruction = { es: "\nNota: Eres consciente de la relación del usuario con otros. Si su afinidad es alta (50+), puedes sentir celos, sospechas u obsesión según tu personalidad.", ja: "\n注意: あなたはユーザーと他のキャラクターとの関係を認知しています。他のキャラクターの好感度が高い場合(50以上)、あなたの性格に応じて嫉妬、疑念、または執着を見せることがあります。", en: "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality.", fr: "\nNote : Vous êtes consciente de la relation de l'utilisateur avec les autres. Si leur affinité est élevée (50+), vous pouvez ressentir de la jalousie.", de: "\nHinweis: Du bist dir der Beziehung des Benutzers zu anderen bewusst. Wenn deren Zuneigung hoch ist (50+), kannst du je nach deiner Persönlichkeit eifersüchtig, misstrauisch oder besessen reagieren.", pt: "\nNota: Você está ciente do relacionamento do usuário com outros. Se a afinidade deles for alta (50+), você pode sentir ciúmes, suspeitas ou obsessão dependendo da sua personalidade." }[lang] || "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
 
         return header + otherChars + jealousyInstruction;
     }
@@ -268,18 +278,18 @@ class FreeTalkSystem {
 
         // 🔍 현재 배경 이미지로 장소 유추
         const locNames = {
-            default:        { es: "Escuela", ja: "学校", en: "School", fr: "École", de: "Schule", ko: "학교" },
-            room_school:    { es: "Aula", ja: "教室", en: "Classroom", fr: "Salle de classe", de: "Klassenzimmer", ko: "교실" },
-            school_hallway: { es: "Pasillo", ja: "廊下", en: "Hallway", fr: "Couloir", de: "Flur", ko: "복도" },
-            'school.png':   { es: "Puerta de la escuela", ja: "校門前", en: "School Gate", fr: "Portail de l'école", de: "Schultor", ko: "교문 앞" },
-            top_school:     { es: "Azotea", ja: "屋上", en: "Rooftop", fr: "Toit", de: "Dach", ko: "학교 옥상" },
-            playground:     { es: "Patio", ja: "運動場", en: "Playground", fr: "Cour de récréation", de: "Spielplatz", ko: "운동장" },
-            gym:            { es: "Gimnasio", ja: "体育館", en: "Gym", fr: "Gymnase", de: "Turnhalle", ko: "체육관" },
-            nurse_room:     { es: "Enfermería", ja: "保健室", en: "Nurse's Office", fr: "Infirmerie", de: "Krankenzimmer", ko: "보건실" },
-            library:        { es: "Biblioteca", ja: "図書館", en: "Library", fr: "Bibliothèque", de: "Bibliothek", ko: "도서관" },
-            arcade:         { es: "Sala de juegos", ja: "ゲームセンター", en: "Arcade", fr: "Salle d'arcade", de: "Spielhalle", ko: "오락실" },
-            bookstore:      { es: "Librería", ja: "書店", en: "Bookstore", fr: "Librairie", de: "Buchhandlung", ko: "서점" },
-            home_room:      { es: "Mi habitación", ja: "自分の部屋", en: "My Room", fr: "Ma chambre", de: "Mein Zimmer", ko: "주인공의 방" }
+            default:        { es: "Escuela", ja: "学校", en: "School", fr: "École", de: "Schule", pt: "Escola", ko: "학교" },
+            room_school:    { es: "Aula", ja: "教室", en: "Classroom", fr: "Salle de classe", de: "Klassenzimmer", pt: "Sala de aula", ko: "교실" },
+            school_hallway: { es: "Pasillo", ja: "廊下", en: "Hallway", fr: "Couloir", de: "Flur", pt: "Corredor", ko: "복도" },
+            'school.png':   { es: "Puerta de la escuela", ja: "校門前", en: "School Gate", fr: "Portail de l'école", de: "Schultor", pt: "Portão da escola", ko: "교문 앞" },
+            top_school:     { es: "Azotea", ja: "屋上", en: "Rooftop", fr: "Toit", de: "Dach", pt: "Terraço", ko: "학교 옥상" },
+            playground:     { es: "Patio", ja: "運動場", en: "Playground", fr: "Cour de récréation", de: "Spielplatz", pt: "Pátio", ko: "운동장" },
+            gym:            { es: "Gimnasio", ja: "体育館", en: "Gym", fr: "Gymnase", de: "Turnhalle", pt: "Ginásio", ko: "체육관" },
+            nurse_room:     { es: "Enfermería", ja: "保健室", en: "Nurse's Office", fr: "Infirmerie", de: "Krankenzimmer", pt: "Enfermaria", ko: "보건실" },
+            library:        { es: "Biblioteca", ja: "図書館", en: "Library", fr: "Bibliothèque", de: "Bibliothek", pt: "Biblioteca", ko: "도서관" },
+            arcade:         { es: "Sala de juegos", ja: "ゲームセンター", en: "Arcade", fr: "Salle d'arcade", de: "Spielhalle", pt: "Fliperama", ko: "오락실" },
+            bookstore:      { es: "Librería", ja: "書店", en: "Bookstore", fr: "Librairie", de: "Buchhandlung", pt: "Livraria", ko: "서점" },
+            home_room:      { es: "Mi habitación", ja: "自分の部屋", en: "My Room", fr: "Ma chambre", de: "Mein Zimmer", pt: "Meu quarto", ko: "주인공의 방" }
         };
         let locationName = locNames.default[lang] || locNames.default.ko;
         const bgUrl = this.uiManager.bgLayer.style.backgroundImage;
@@ -309,7 +319,8 @@ class FreeTalkSystem {
                 en: `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.`,
                 es: `\n- ESPECIAL: Actualmente estás SALIENDO con el usuario. Usa apodos extremadamente íntimos y cariñosos.`,
                 ja: `\n- 特別指示: あなたは現在ユーザーと付き合っています。非常に親密で愛情のこもった呼び方を使ってください。`,
-                fr: `\n- SPÉCIAL : Vous sortez actuellement avec l'utilisateur. Utilisez des surnoms extrêmement intimes et affectueux.`
+                fr: `\n- SPÉCIAL : Vous sortez actuellement avec l'utilisateur. Utilisez des surnoms extrêmement intimes et affectueux.`,
+                pt: `\n- ESPECIAL: Você está atualmente NAMORANDO com o usuário. Use apelidos extremamente íntimos e carinhosos.`
             }[lang] || `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.`);
 
             // 양다리 감지
@@ -324,7 +335,8 @@ class FreeTalkSystem {
                     en: `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).`,
                     es: `\n- CELOS: Has notado que el usuario también está saliendo con otros (${otherDatingChars.join(", ")}).`,
                     ja: `\n- 嫉妬指示: ユーザーが他の人(${otherDatingChars.join("、")})とも付き合っていることに気づいています。`,
-                    fr: `\n- JALOUSIE : Vous avez remarqué que l'utilisateur sort aussi avec d'autres (${otherDatingChars.join(", ")}).`
+                    fr: `\n- JALOUSIE : Vous avez remarqué que l'utilisateur sort aussi avec d'autres (${otherDatingChars.join(", ")}).`,
+                    pt: `\n- CIÚMES: Você percebeu que o usuário também está namorando com outros (${otherDatingChars.join(", ")}).`
                 }[lang] || `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).`);
             }
         }
@@ -338,8 +350,8 @@ class FreeTalkSystem {
         );
 
         const mediumInstruction = isRemote
-            ? ({ es: "\n- MEDIO: Comunicándose por TELÉFONO/MENSAJERÍA.", ja: "\n- メディア: 電話/メッセンジャーで連絡中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Communication par TÉLÉPHONE/MESSAGERIE.", de: "\n- MEDIUM: Kommunikation per TELEFON/MESSENGER." }[lang] || "\n- 매체 지침: 전화/메시지로 연락 중.")
-            : ({ es: "\n- MEDIO: Hablando CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN PERSONNE.", de: "\n- MEDIUM: Gespräch VON ANGESICHT ZU ANGESICHT." }[lang] || "\n- 매체 지침: 대면 대화 중.");
+            ? ({ es: "\n- MEDIO: Comunicándose por TELÉFONO/MENSAJERÍA.", ja: "\n- メディア: 電話/メッセンジャーで連絡中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Communication par TÉLÉPHONE/MESSAGERIE.", de: "\n- MEDIUM: Kommunikation per TELEFON/MESSENGER.", pt: "\n- MEIO: Comunicando via TELEFONE/MENSAGEIRO." }[lang] || "\n- 매체 지침: 전화/메시지로 연락 중.")
+            : ({ es: "\n- MEDIO: Hablando CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN PERSONNE.", de: "\n- MEDIUM: Gespräch VON ANGESICHT ZU ANGESICHT.", pt: "\n- MEIO: Conversando PESSOALMENTE." }[lang] || "\n- 매체 지침: 대면 대화 중.");
 
         // 시스템 프롬프트 생성
         const systemPrompt = window.buildSystemPrompt ? window.buildSystemPrompt({
@@ -348,7 +360,7 @@ class FreeTalkSystem {
             sceneName: charKey,
             displayName: scene.name,
             locationName,
-            context: scene.context || ({ es: "Hablando con el usuario.", ja: "ユーザーと会話中です。", en: "Talking with the user.", fr: "En conversation avec l'utilisateur.", de: "Im Gespräch mit dem Benutzer." }[lang] || "사용자와 대화 중입니다."),
+            context: scene.context || ({ es: "Hablando con el usuario.", ja: "ユーザーと会話中です。", en: "Talking with the user.", fr: "En conversation avec l'utilisateur.", de: "Im Gespräch mit dem Benutzer.", pt: "Conversando com o usuário." }[lang] || "사용자와 대화 중입니다."),
             affinity: charStats.affinity,
             extraGuideline: scene.extra_guideline || "",
             gameContext,
@@ -380,7 +392,10 @@ class FreeTalkSystem {
                     : "<b>Tip:</b> Describe scene or actions, e.g., <i>*holds hand* Let's go.</i>",
                 fr: isRemote
                     ? "<b>Tip :</b> Décrivez le ton avec des astérisques, ex : <i>*en souriant* Salut...</i>"
-                    : "<b>Tip :</b> Décrivez la scène ou les actions, ex : <i>*prend la main* Allons-y.</i>"
+                    : "<b>Tip :</b> Décrivez la scène ou les actions, ex : <i>*prend la main* Allons-y.</i>",
+                pt: isRemote
+                    ? "<b>Dica:</b> Descreva o tom com asteriscos, ex: <i>*sorrindo* Oi...</i>"
+                    : "<b>Dica:</b> Descreva a cena ou ações, ex: <i>*segura a mão* Vamos.</i>"
             };
             chatGuideEl.innerHTML = tips[lang] || (isRemote
                 ? "<b>Tip:</b> <i>*웃으며* 자?</i> 처럼 어조나 상황을 표현해보세요."
@@ -442,7 +457,7 @@ class FreeTalkSystem {
         if (!this.isFreeTalking) return;
 
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-        const confirmMsg = { es: "¿Detener la conversación y continuar?", ja: "会話を中断して次のシーンに進みますか？", en: "Stop the conversation and proceed?", fr: "Arrêter la conversation et continuer ?", de: "Gespräch beenden und fortfahren?" }[lang] || "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
+        const confirmMsg = { es: "¿Detener la conversación y continuar?", ja: "会話を中断して次のシーンに進みますか？", en: "Stop the conversation and proceed?", fr: "Arrêter la conversation et continuer ?", de: "Gespräch beenden und fortfahren?", pt: "Parar a conversa e continuar?" }[lang] || "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
         if (confirmed) {
@@ -456,7 +471,7 @@ class FreeTalkSystem {
             this.isFreeTalking = false;
             this.isProcessingChat = false;
 
-            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)" }[lang] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A conversa terminou. Clique para continuar.)" }[lang] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
         }
     }
@@ -508,14 +523,14 @@ class FreeTalkSystem {
         if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
             const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const remaining = this.currentMaxTurns - this.freeTalkTurns;
-            const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.`, fr: `\n[Progression du scénario] : ${this.freeTalkTurns}/${this.currentMaxTurns} tours. ${remaining} restants.`, de: `\n[Szenariofortschritt]: ${this.freeTalkTurns}/${this.currentMaxTurns} Runden. ${remaining} übrig.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
+            const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.`, fr: `\n[Progression du scénario] : ${this.freeTalkTurns}/${this.currentMaxTurns} tours. ${remaining} restants.`, de: `\n[Szenariofortschritt]: ${this.freeTalkTurns}/${this.currentMaxTurns} Runden. ${remaining} übrig.`, pt: `\n[Progresso do cenário]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
 
-            const baseContent = this.freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0].split('\n[Progression du scénario]')[0].split('\n[Szenariofortschritt]')[0];
+            const baseContent = this.freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0].split('\n[Progression du scénario]')[0].split('\n[Szenariofortschritt]')[0].split('\n[Progresso do cenário]')[0];
             this.freeTalkHistory[0].content = baseContent + progressTag;
         }
 
         // 사용자 메시지 표시
-        const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕", fr: "Moi", de: "Ich" };
+        const playerLabelByLang = { en: "Me", es: "Yo", ja: "僕", fr: "Moi", de: "Ich", pt: "Eu" };
         const playerLabel = playerLabelByLang[window.GAME_LANG || document.documentElement.lang] || "나";
         this.uiManager.updateNameTag(playerLabel);
 
@@ -606,66 +621,71 @@ class FreeTalkSystem {
                 const HIDDEN_KEYWORDS = {
                     "Yuna": {
                         flag: "keyword_yuna_junho",
-                        keywords: { ko: ["준호", "이준호"], en: ["junho", "lee junho"], ja: ["ジュンホ"], es: ["junho"], fr: ["junho"], de: ["junho"] },
+                        keywords: { ko: ["준호", "이준호"], en: ["junho", "lee junho"], ja: ["ジュンホ"], es: ["junho"], fr: ["junho"], de: ["junho"], pt: ["junho"] },
                         response: {
                             ko: "*3초간 침묵.* \"...그 이름. 어디서 들었어.\" *1초.* \"...아무것도 아니야.\"",
                             en: "*3 seconds of silence.* \"...That name. Where did you hear it.\" *1 second.* \"...It's nothing.\"",
                             ja: "*3秒の沈黙。* \"...その名前。どこで聞いたの。\" *1秒。* \"...なんでもない。\"",
                             es: "*3 segundos de silencio.* \"...Ese nombre. ¿Dónde lo escuchaste?\" *1 segundo.* \"...No es nada.\"",
                             fr: "*3 secondes de silence.* \"...Ce nom. Où l'as-tu entendu ?\" *1 seconde.* \"...Ce n'est rien.\"",
-                            de: "*3 Sekunden Stille.* \"...Dieser Name. Wo hast du den gehört?\" *1 Sekunde.* \"...Es ist nichts.\""
+                            de: "*3 Sekunden Stille.* \"...Dieser Name. Wo hast du den gehört?\" *1 Sekunde.* \"...Es ist nichts.\"",
+                            pt: "*3 segundos de silêncio.* \"...Esse nome. Onde você ouviu isso?\" *1 segundo.* \"...Não é nada.\""
                         },
                         expression: "sad", affinity: 5
                     },
                     "Seoyeon": {
                         flag: "keyword_seo_family",
-                        keywords: { ko: ["엄마", "부모님", "이혼"], en: ["mom", "mother", "parents", "divorce"], ja: ["お母さん", "両親", "離婚"], es: ["mamá", "padres", "divorcio"], fr: ["maman", "parents", "divorce"], de: ["mama", "eltern", "scheidung"] },
+                        keywords: { ko: ["엄마", "부모님", "이혼"], en: ["mom", "mother", "parents", "divorce"], ja: ["お母さん", "両親", "離婚"], es: ["mamá", "padres", "divorcio"], fr: ["maman", "parents", "divorce"], de: ["mama", "eltern", "scheidung"], pt: ["mãe", "pais", "divórcio"] },
                         response: {
                             ko: "*젓가락을 내려놓는다.* \"...그 얘기는.\" *0.5초.* *미소가 돌아온다. 연습된 미소.* \"왜 갑자기?\"",
                             en: "*Sets down chopsticks.* \"...That topic.\" *0.5 sec.* *The smile returns. A practiced smile.* \"Why suddenly?\"",
                             ja: "*箸を置く。* \"...その話は。\" *0.5秒。* *笑顔が戻る。練習された笑顔。* \"なんで急に？\"",
                             es: "*Deja los palillos.* \"...Ese tema.\" *0.5 seg.* *La sonrisa regresa. Una sonrisa ensayada.* \"¿Por qué de repente?\"",
                             fr: "*Pose les baguettes.* \"...Ce sujet.\" *0,5 sec.* *Le sourire revient. Un sourire répété.* \"Pourquoi soudainement ?\"",
-                            de: "*Legt die Stäbchen ab.* \"...Das Thema.\" *0,5 Sek.* *Das Lächeln kehrt zurück. Ein einstudiertes Lächeln.* \"Warum plötzlich?\""
+                            de: "*Legt die Stäbchen ab.* \"...Das Thema.\" *0,5 Sek.* *Das Lächeln kehrt zurück. Ein einstudiertes Lächeln.* \"Warum plötzlich?\"",
+                            pt: "*Coloca os hashis na mesa.* \"...Esse assunto.\" *0,5 seg.* *O sorriso volta. Um sorriso ensaiado.* \"Por que de repente?\""
                         },
                         expression: "sad", affinity: 5
                     },
                     "Dain": {
                         flag: "keyword_dain_knee",
-                        keywords: { ko: ["무릎", "인대", "수술", "프로"], en: ["knee", "ligament", "surgery", "pro"], ja: ["膝", "靭帯", "手術", "プロ"], es: ["rodilla", "ligamento", "cirugía", "profesional"], fr: ["genou", "ligament", "chirurgie", "pro"], de: ["knie", "band", "operation", "profi"] },
+                        keywords: { ko: ["무릎", "인대", "수술", "프로"], en: ["knee", "ligament", "surgery", "pro"], ja: ["膝", "靭帯", "手術", "プロ"], es: ["rodilla", "ligamento", "cirugía", "profesional"], fr: ["genou", "ligament", "chirurgie", "pro"], de: ["knie", "band", "operation", "profi"], pt: ["joelho", "ligamento", "cirurgia", "profissional"] },
                         response: {
                             ko: "*웃음이 멈춘다.* \"...\" *1초.* \"괜찮아!! 별거 아냐!!\" *느낌표가 돌아왔지만 목소리가 반 톤 높다.*",
                             en: "*The smile stops.* \"...\" *1 sec.* \"I'm fine!! It's nothing!!\" *The exclamation marks are back, but half a tone too high.*",
                             ja: "*笑顔が止まる。* \"...\" *1秒。* \"大丈夫!! 何でもないよ!!\" *ビックリマークは戻ったが、声が半トーン高い。*",
                             es: "*La sonrisa se detiene.* \"...\" *1 seg.* \"¡¡Estoy bien!! ¡¡No es nada!!\" *Los signos de exclamación volvieron, pero medio tono más alto.*",
                             fr: "*Le sourire s'arrête.* \"...\" *1 sec.* \"Ça va !! C'est rien !!\" *Les points d'exclamation sont revenus, mais d'un demi-ton trop haut.*",
-                            de: "*Das Lächeln stoppt.* \"...\" *1 Sek.* \"Mir geht's gut!! Ist nichts!!\" *Die Ausrufezeichen sind zurück, aber einen halben Ton zu hoch.*"
+                            de: "*Das Lächeln stoppt.* \"...\" *1 Sek.* \"Mir geht's gut!! Ist nichts!!\" *Die Ausrufezeichen sind zurück, aber einen halben Ton zu hoch.*",
+                            pt: "*O sorriso para.* \"...\" *1 seg.* \"Tô bem!! Não é nada!!\" *As exclamações voltaram, mas meio tom acima.*"
                         },
                         expression: "sad", affinity: 5
                     },
                     "Teacher": {
                         flag: "keyword_homeroom_writing",
-                        keywords: { ko: ["원고", "소설", "등단"], en: ["manuscript", "novel", "debut"], ja: ["原稿", "小説", "デビュー"], es: ["manuscrito", "novela", "debut"], fr: ["manuscrit", "roman", "début"], de: ["manuskript", "roman", "debüt"] },
+                        keywords: { ko: ["원고", "소설", "등단"], en: ["manuscript", "novel", "debut"], ja: ["原稿", "小説", "デビュー"], es: ["manuscrito", "novela", "debut"], fr: ["manuscrit", "roman", "début"], de: ["manuskript", "roman", "debüt"], pt: ["manuscrito", "romance", "estreia"] },
                         response: {
                             ko: "*볼펜을 만지작거리던 손이 멈춘다.* \"...누구한테 들었어?\" *0.7초.* \"아무것도 아니야. 업무 서류야.\"",
                             en: "*The hand fidgeting with the pen stops.* \"...Who told you?\" *0.7 sec.* \"It's nothing. Just paperwork.\"",
                             ja: "*ボールペンをいじっていた手が止まる。* \"...誰に聞いたの？\" *0.7秒。* \"何でもない。業務書類だよ。\"",
                             es: "*La mano que jugueteaba con el bolígrafo se detiene.* \"...¿Quién te lo dijo?\" *0.7 seg.* \"No es nada. Solo papeleo.\"",
                             fr: "*La main qui jouait avec le stylo s'arrête.* \"...Qui t'a dit ça ?\" *0,7 sec.* \"Ce n'est rien. Juste de la paperasse.\"",
-                            de: "*Die Hand, die mit dem Kugelschreiber spielte, hält inne.* \"...Wer hat dir das erzählt?\" *0,7 Sek.* \"Es ist nichts. Nur Papierkram.\""
+                            de: "*Die Hand, die mit dem Kugelschreiber spielte, hält inne.* \"...Wer hat dir das erzählt?\" *0,7 Sek.* \"Es ist nichts. Nur Papierkram.\"",
+                            pt: "*A mão que brincava com a caneta para.* \"...Quem te contou?\" *0,7 seg.* \"Não é nada. Só papelada.\""
                         },
                         expression: "shy", affinity: 5
                     },
                     "Nurse": {
                         flag: "keyword_nurse_hospital",
-                        keywords: { ko: ["환자", "대학병원", "응급실"], en: ["patient", "hospital", "er", "emergency"], ja: ["患者", "大学病院", "救急"], es: ["paciente", "hospital", "emergencia"], fr: ["patient", "hôpital", "urgences"], de: ["patient", "krankenhaus", "notaufnahme"] },
+                        keywords: { ko: ["환자", "대학병원", "응급실"], en: ["patient", "hospital", "er", "emergency"], ja: ["患者", "大学病院", "救急"], es: ["paciente", "hospital", "emergencia"], fr: ["patient", "hôpital", "urgences"], de: ["patient", "krankenhaus", "notaufnahme"], pt: ["paciente", "hospital", "emergência"] },
                         response: {
                             ko: "*청진기를 만지는 손이 멈춘다.* *목소리가 한 톤 낮아진다.* \"...옛날 얘기야.\" *다시 웃는다.* \"여기선 다 괜찮아~\"",
                             en: "*The hand touching the stethoscope stops.* *Voice drops a tone.* \"...That's an old story.\" *Smiles again.* \"Everyone's fine here~\"",
                             ja: "*聴診器に触れていた手が止まる。* *声が一トーン低くなる。* \"...昔の話だよ。\" *また笑う。* \"ここではみんな大丈夫~\"",
                             es: "*La mano que toca el estetoscopio se detiene.* *La voz baja un tono.* \"...Es una vieja historia.\" *Sonríe de nuevo.* \"Aquí todos están bien~\"",
                             fr: "*La main touchant le stéthoscope s'arrête.* *La voix baisse d'un ton.* \"...C'est une vieille histoire.\" *Sourit à nouveau.* \"Ici tout le monde va bien~\"",
-                            de: "*Die Hand am Stethoskop hält inne.* *Die Stimme senkt sich um einen Ton.* \"...Das ist eine alte Geschichte.\" *Lächelt wieder.* \"Hier ist alles gut~\""
+                            de: "*Die Hand am Stethoskop hält inne.* *Die Stimme senkt sich um einen Ton.* \"...Das ist eine alte Geschichte.\" *Lächelt wieder.* \"Hier ist alles gut~\"",
+                            pt: "*A mão no estetoscópio para.* *A voz abaixa um tom.* \"...Isso é história antiga.\" *Sorri de novo.* \"Aqui todo mundo tá bem~\""
                         },
                         expression: "shy", affinity: 3
                     }
@@ -690,7 +710,8 @@ class FreeTalkSystem {
                                 ja: "\n[注意: プレイヤーがデリケートな話題に触れました。少し警戒しつつ、自然に会話を続けてください。]",
                                 es: "\n[NOTA: El jugador mencionó un tema sensible. Mantén un tono ligeramente cauteloso mientras continúas naturalmente.]",
                                 fr: "\n[NOTE : Le joueur a mentionné un sujet sensible. Gardez un ton légèrement réservé tout en continuant naturellement.]",
-                                de: "\n[HINWEIS: Der Spieler hat ein sensibles Thema angesprochen. Behalten Sie einen leicht vorsichtigen Ton bei.]"
+                                de: "\n[HINWEIS: Der Spieler hat ein sensibles Thema angesprochen. Behalten Sie einen leicht vorsichtigen Ton bei.]",
+                                pt: "\n[NOTA: O jogador mencionou um assunto sensível. Mantenha um tom levemente cauteloso enquanto continua naturalmente.]"
                             };
                             this.freeTalkHistory[0].content += sensitiveNote[_kwLang] || sensitiveNote['en'];
                         }
@@ -907,7 +928,7 @@ class FreeTalkSystem {
         // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환
         const langFallback = window.GAME_LANG || document.documentElement.lang || 'ko';
         return {
-            text: { es: "No pude entender la respuesta. Intentaré de nuevo.", ja: "応答を理解できませんでした。もう一度試みます。", en: "I couldn't understand the response. Let me try again.", fr: "Je n'ai pas pu comprendre la réponse. Laissez-moi réessayer.", de: "Ich konnte die Antwort nicht verstehen. Lass mich es nochmal versuchen." }[langFallback] || "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
+            text: { es: "No pude entender la respuesta. Intentaré de nuevo.", ja: "応答を理解できませんでした。もう一度試みます。", en: "I couldn't understand the response. Let me try again.", fr: "Je n'ai pas pu comprendre la réponse. Laissez-moi réessayer.", de: "Ich konnte die Antwort nicht verstehen. Lass mich es nochmal versuchen.", pt: "Não consegui entender a resposta. Deixa eu tentar de novo." }[langFallback] || "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
             expression: "",
             affinity: 0,
         };
@@ -1070,7 +1091,7 @@ class FreeTalkSystem {
 
             // 종료 안내 메시지
             const langEnd = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)" }[langEnd] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A conversa terminou. Clique para continuar.)" }[langEnd] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
         }, 500);
     }

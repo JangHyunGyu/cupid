@@ -1,0 +1,615 @@
+{
+  "after2_start": {
+    "name": "{name}",
+    "text": "*Depois da aula. Duas notificações no celular.*"
+  },
+  "after2_msg_dain": {
+    "name": "Dain",
+    "text": "Vem pro ginásio!! Hoje é pra valer!!"
+  },
+  "after2_msg_seo": {
+    "name": "Seoyeon",
+    "text": "Pode passar na sala do grêmio? Tô precisando de ajuda."
+  },
+  "after2_msg_yuna": {
+    "name": "{name}",
+    "text": "*Nada da Yuna. — Isso é a Yuna. Mas arrumando a mochila, o bilhete da manhã cai do bolso. As palavras 'anexo da biblioteca' ficam na cabeça.*"
+  },
+  "after2_nurse_transition": {
+    "name": "{name}",
+    "text": "*O cotovelo tá ardendo. Melhor passar na enfermaria.*"
+  },
+  "hidden_nurse_d2_1": {
+    "name": "{name}",
+    "text": "*Arregaço a manga e o cotovelo tá um pouco ralado. Nada sério, mas tá sangrando um pouco.*"
+  },
+  "hidden_nurse_d2_2": {
+    "name": "Enfermeira",
+    "text": "Dois dias seguidos, vou ter que emitir cartão de membro da enfermaria."
+  },
+  "hidden_nurse_d2_3": {
+    "name": "{name}",
+    "text": "Ralei o cotovelo."
+  },
+  "hidden_nurse_d2_4": {
+    "name": "Enfermeira",
+    "text": "Fica quietinho..."
+  },
+  "hidden_nurse_d2_5": {
+    "name": "Enfermeira",
+    "text": "Aqui... assim. Pronto. Esse ângulo é o que dura mais."
+  },
+  "hidden_nurse_d2_choice1": {
+    "name": "{name}",
+    "text": "*A mão que cola o band-aid está perto.*",
+    "choices": [
+      "Sua mão é quente",
+      "Tanta dedicação pra um band-aid"
+    ]
+  },
+  "hidden_nurse_d2_choice1_a": {
+    "name": "Enfermeira",
+    "text": "...Normalmente são frias. Hoje devem estar quentes."
+  },
+  "hidden_nurse_d2_choice1_b": {
+    "name": "Enfermeira",
+    "text": "*Sorrindo* É cuidado, cuidado. Se colar de qualquer jeito, descola."
+  },
+  "hidden_nurse_d2_6": {
+    "name": "{name}",
+    "text": "*Verificando o band-aid — noto um caderno saindo da gaveta da mesa. Capa verde-claro. A página aberta tem algo escrito em forma de carta. 'Yujin, hoje—' Só li até aí antes da enfermeira fechar a gaveta.*"
+  },
+  "hidden_nurse_d2_7": {
+    "name": "Enfermeira",
+    "text": "*Fechando a gaveta* Você não viu isso, tá? ...Professoras também podem ter um segredinho."
+  },
+  "hidden_nurse_d2_choice2": {
+    "name": "{name}",
+    "text": "*Diz que é segredo, rindo — mas os olhos não estão rindo.*",
+    "choices": [
+      "A senhora tem muitos segredos. Não pode me contar só um?",
+      "Claro, não vi nada."
+    ]
+  },
+  "hidden_nurse_d2_choice2_a": {
+    "name": "Enfermeira",
+    "text": "*Apertando os olhos* Só um? ...Tá bom. Eu prefiro chocolate quente a café. Esse é o segredo."
+  },
+  "hidden_nurse_d2_choice2_b": {
+    "name": "Enfermeira",
+    "text": "*Rindo suavemente* Segredo. Professoras também podem ter segredos."
+  },
+  "hidden_nurse_d2_8": {
+    "name": "Enfermeira",
+    "text": "Pronto, volta pra aula. — Da próxima vez, vem sem estar machucado."
+  },
+  "hidden_nurse_d2_9": {
+    "name": "Enfermeira",
+    "text": "Pode vir mesmo sem motivo. Mas não durante a aula. Depois da escola. *Saí da enfermaria.*"
+  },
+  "after2_choice": {
+    "name": "{name}",
+    "text": "*Pra onde eu vou?*",
+    "choices": [
+      "Pro ginásio (Dain)",
+      "Pra sala do grêmio (Seoyeon)",
+      "Passar pelo anexo da biblioteca (Yuna)"
+    ]
+  },
+  "after2_dain_1": {
+    "name": "{name}",
+    "text": "*O ginásio. Dain está se aquecendo na frente da rede de vôlei.*"
+  },
+  "after2_dain_2": {
+    "name": "Dain",
+    "text": "Chegou?! Tá atrasado!!"
+  },
+  "after2_dain_3": {
+    "name": "{name}",
+    "text": "Faltam cinco minutos ainda."
+  },
+  "after2_dain_4": {
+    "name": "Dain",
+    "text": "Eu cheguei dez minutos antes!!"
+  },
+  "after2_dain_5": {
+    "name": "{name}",
+    "text": "*Isso quer dizer que você chegou cedo. Não que eu atrasei.*"
+  },
+  "after2_dain_6": {
+    "name": "Dain",
+    "text": "Beleza, é aposta! Cinco saques, acerta três ou mais e você vence! Se perder, o tteokbokki é por sua conta!"
+  },
+  "after2_dain_7": {
+    "name": "{name}",
+    "text": "Tteokbokki do nada?"
+  },
+  "after2_dain_8": {
+    "name": "Dain",
+    "text": "Tô com FOME!!"
+  },
+  "after2_dain_9": {
+    "name": "{name}",
+    "text": "*Saco. — Surpreendentemente, o segundo saque passa limpo pela rede.*"
+  },
+  "after2_dain_9_b": {
+    "name": "Dain",
+    "text": "*Arregalando os olhos* Ué? Ia pegar leve, mas assim não dá."
+  },
+  "after2_dain_9_c": {
+    "name": "{name}",
+    "text": "*Dain abaixa a postura. O olhar mudou.*"
+  },
+  "after2_dain_9_d": {
+    "name": "Dain",
+    "text": "Agora é sério!"
+  },
+  "after2_dain_9_e": {
+    "name": "{name}",
+    "text": "*A troca de bolas vai e volta. Os movimentos da Dain são — claramente fora do comum. Rápidos, precisos, o corpo memorizou cada gesto. Essa garota é boa de verdade. Mas — toda vez que aterrissa, coloca mais peso no pé esquerdo. Como se evitasse o direito.*"
+  },
+  "after2_dain_9_f": {
+    "name": "{name}",
+    "text": "*Placar final: 3 a 2. Ganhei por pouco. Dain levanta — e esfrega o joelho direito de leve. Acho que fez a mesma coisa no ginásio ontem. Um gesto inconsciente.*"
+  },
+  "after2_dain_11b": {
+    "name": "{name}",
+    "text": "*Saímos do ginásio e andamos pela rua.*"
+  },
+  "after2_dain_12": {
+    "name": "Dain",
+    "text": "AHHH perdi!! — Peraí, você sabe jogar?! Não falou que não fazia esporte?!"
+  },
+  "after2_dain_13": {
+    "name": "{name}",
+    "text": "Nunca disse que não faço."
+  },
+  "after2_dain_14": {
+    "name": "Dain",
+    "text": "*Chocada de verdade* QUÊ?! Eu fui enganada?!"
+  },
+  "after2_dain_15": {
+    "name": "{name}",
+    "text": "Não enganei ninguém. Você que nunca perguntou."
+  },
+  "after2_dain_16": {
+    "name": "Dain",
+    "text": "*Dando um soco no ombro* Seu trapaceiro!! kkk — Ai, mas foi divertido!"
+  },
+  "after2_dain_skinship_1": {
+    "name": "{name}",
+    "text": "*Dain levanta a mão de repente. High-five.*"
+  },
+  "after2_dain_skinship_2": {
+    "name": "Dain",
+    "text": "...Ah, desculpa! Força do hábito!"
+  },
+  "after2_dain_skinship_3": {
+    "name": "{name}",
+    "text": "*Tirou a mão. Não parece nem um pouco arrependida. — A palma ainda tá quente.*"
+  },
+  "after2_dain_freetalk": {
+    "name": "Dain",
+    "text": "*Entramos na loja de tteokbokki perto da escola.* *Comendo tteokbokki com a Dain e conversando.*"
+  },
+  "after2_dain_end": {
+    "name": "{name}",
+    "text": "*Os olhos em formato de meia-lua. Os mesmos olhos de ontem.*"
+  },
+  "after2_dain_end_first": {
+    "name": "{name}",
+    "text": "*Os olhos em formato de meia-lua.*"
+  },
+  "after2_dain_end_b": {
+    "name": "{name}",
+    "text": "*Loja de tteokbokki perto da escola. Dain assopra o tteokbokki e fala.*"
+  },
+  "after2_dain_end_2": {
+    "name": "Dain",
+    "text": "Ei, você manja de esporte de verdade, né?"
+  },
+  "after2_dain_end_2b": {
+    "name": "{name}",
+    "text": "Um pouco."
+  },
+  "after2_dain_end_2c": {
+    "name": "Dain",
+    "text": "'Um pouco' não joga daquele jeito! — Admite logo, você é bom."
+  },
+  "after2_dain_end_2d": {
+    "name": "{name}",
+    "text": "Você era bem melhor que eu."
+  },
+  "after2_dain_end_3": {
+    "name": "{name}",
+    "text": "*Dain para os hashis. Por um instante.*"
+  },
+  "after2_dain_end_3b": {
+    "name": "Dain",
+    "text": "...Lógico! Eu era atleta da equipe escolar!"
+  },
+  "after2_dain_end_3c": {
+    "name": "{name}",
+    "text": "*'Era'. Passado. — Algo me diz que é melhor não insistir.*"
+  },
+  "after2_dain_end_3d": {
+    "name": "Dain",
+    "text": "Ai que pimenta!! Água, água!!"
+  },
+  "after2_dain_end_3e": {
+    "name": "{name}",
+    "text": "*Mudou de assunto. — O jeito da Dain de cuidar é desajeitado, mas é caloroso.*"
+  },
+  "after2_dain_return": {
+    "name": "{name}",
+    "text": "*Voltando pra escola. Cheguei no portão.*"
+  },
+  "after2_seo_1": {
+    "name": "{name}",
+    "text": "*Sala do grêmio. Seoyeon está sentada atrás de uma pilha de documentos. Sozinha.*"
+  },
+  "after2_seo_2": {
+    "name": "Seoyeon",
+    "text": "Veio mesmo. — Sinceramente, achei que não viria."
+  },
+  "after2_seo_3": {
+    "name": "{name}",
+    "text": "Quando chamam, eu vou."
+  },
+  "after2_seo_4": {
+    "name": "Seoyeon",
+    "text": "*Sorrindo de leve* Obediente."
+  },
+  "after2_seo_4_b": {
+    "name": "{name}",
+    "text": "*A palavra 'favor' parece não existir no vocabulário dessa pessoa.*"
+  },
+  "after2_seo_5": {
+    "name": "{name}",
+    "text": "Quem pediu ajuda foi você."
+  },
+  "after2_seo_6": {
+    "name": "Seoyeon",
+    "text": "Não pedi. Dei uma oportunidade."
+  },
+  "after2_seo_6_b": {
+    "name": "{name}",
+    "text": "*Ela tem o dom de fazer até pedidos parecerem ordens. Começamos a organizar os documentos. Orçamentos de eventos, fichas de clubes. É bastante coisa.*"
+  },
+  "after2_seo_7": {
+    "name": "{name}",
+    "text": "*Tom de ordem, mas de alguma forma já familiar. — Esse é o jeito dela de pedir?*"
+  },
+  "after2_seo_8": {
+    "name": "Seoyeon",
+    "text": "Estes por data, aqueles por clube. — Você é bom em organizar?"
+  },
+  "after2_seo_8a2": {
+    "name": "{name}",
+    "text": "Não sou ótimo, mas também não sou ruim."
+  },
+  "after2_seo_8a3": {
+    "name": "Seoyeon",
+    "text": "Vago."
+  },
+  "after2_seo_8a4": {
+    "name": "{name}",
+    "text": "Parecido com o jeito que você faz elogios. Vago."
+  },
+  "after2_seo_8b": {
+    "name": "{name}",
+    "text": "*Seoyeon tira os olhos dos documentos e me olha.*"
+  },
+  "after2_seo_8b2": {
+    "name": "Seoyeon",
+    "text": "...Você é mais útil do que eu esperava."
+  },
+  "after2_seo_8b3": {
+    "name": "{name}",
+    "text": "Isso é um elogio?"
+  },
+  "after2_seo_8b4": {
+    "name": "Seoyeon",
+    "text": "É um elogio. Aceita."
+  },
+  "after2_seo_8b4_b": {
+    "name": "{name}",
+    "text": "*Ela disse 'elogio' em voz alta. — Parece raro vindo dela.*"
+  },
+  "after2_seo_choice1": {
+    "name": "{name}",
+    "text": "*O pôr do sol entra pela janela. Uma luz alaranjada se espalha no perfil da Seoyeon. — Deu vontade de falar alguma coisa.*",
+    "choices": [
+      "O pôr do sol tá bonito. — A vista, digo.",
+      "Tá com o pescoço doendo? Descansa um pouco."
+    ]
+  },
+  "after2_seo_sunset_joke": {
+    "name": "{name}",
+    "text": "*Seoyeon para por um instante. E aí — sorri. Não só os lábios, os olhos sorriem. Um sorriso que nunca vi.*"
+  },
+  "after2_seo_sunset_joke_b": {
+    "name": "Seoyeon",
+    "text": "*Mesmo escondendo o canto da boca atrás dos papéis, dá pra ver que está sorrindo.*"
+  },
+  "after2_seo_sunset_react": {
+    "name": "Seoyeon",
+    "text": "...Você é a primeira pessoa que solta uma coisa dessas tão naturalmente."
+  },
+  "after2_seo_sunset_react_b": {
+    "name": "{name}",
+    "text": "*Mesmo depois disso, o canto dos lábios da Seoyeon fica levantado por um bom tempo.*"
+  },
+  "after2_seo_neck_worry": {
+    "name": "Seoyeon",
+    "text": "Tô bem. Isso é todo dia."
+  },
+  "after2_seo_neck_react": {
+    "name": "{name}",
+    "text": "*Seoyeon roda os ombros. Dá pra ouvir estalar.*"
+  },
+  "after2_seo_neck_react_b": {
+    "name": "Seoyeon",
+    "text": "Espera. Não se mexe."
+  },
+  "after2_seo_neck_react_c": {
+    "name": "{name}",
+    "text": "*Seoyeon levanta e vai atrás de mim. Coloca a mão no meu ombro.*"
+  },
+  "after2_seo_neck_touch": {
+    "name": "Seoyeon",
+    "text": "Tá bem travado. Fica parado um instante."
+  },
+  "after2_seo_neck_high": {
+    "name": "{name}",
+    "text": "*Fecho os olhos e me entrego.*"
+  },
+  "after2_seo_neck_high_b": {
+    "name": "Seoyeon",
+    "text": "*Baixinho* ...Fica quieto. Só mais um pouco."
+  },
+  "after2_seo_neck_high_c": {
+    "name": "{name}",
+    "text": "*Mão de quem? — É a mão da Seoyeon no meu ombro. Os pensamentos se embaralharam. É o quanto estou tenso.*"
+  },
+  "after2_seo_neck_high_2": {
+    "name": "Seoyeon",
+    "text": "*Mais baixo* ...Só mais um pouco."
+  },
+  "after2_seo_neck_high_2_b": {
+    "name": "{name}",
+    "text": "*As pontas dos dedos pressionam a nuca e soltam devagar. Os dois ficam em silêncio por um momento.*"
+  },
+  "after2_seo_neck_low": {
+    "name": "{name}",
+    "text": "*Me afasto um pouco.*"
+  },
+  "after2_seo_neck_low_b": {
+    "name": "{name}",
+    "text": "O que foi isso de repente?"
+  },
+  "after2_seo_neck_low_c": {
+    "name": "{name}",
+    "text": "*A mão da Seoyeon para no ar por um instante.*"
+  },
+  "after2_seo_neck_low_2": {
+    "name": "Seoyeon",
+    "text": "*Recolhendo as mãos* ...Nada."
+  },
+  "after2_seo_9": {
+    "name": "{name}",
+    "text": "*O pôr do sol tinge a sala do grêmio. A papelada está quase pronta.*"
+  },
+  "after2_seo_choice2": {
+    "name": "{name}",
+    "text": "*A papelada está quase pronta.*",
+    "choices": [
+      "Fico mais um pouco? Parece que ainda tem coisa",
+      "Se acabou, eu vou indo"
+    ]
+  },
+  "after2_seo_stay": {
+    "name": "{name}",
+    "text": "*Seoyeon coloca os documentos na mesa e olha pela janela. A luz do pôr do sol toca seu rosto.*"
+  },
+  "after2_seo_stay_2": {
+    "name": "Seoyeon",
+    "text": "...Gosto desse horário. Sozinha na sala do grêmio, não preciso fazer nenhum papel."
+  },
+  "after2_seo_stay_3": {
+    "name": "{name}",
+    "text": "Até a presidente do grêmio descansa?"
+  },
+  "after2_seo_stay_3b": {
+    "name": "Seoyeon",
+    "text": "Nunca. — Exceto aqui."
+  },
+  "after2_seo_stay_3c": {
+    "name": "{name}",
+    "text": "*'Exceto aqui'. — Seja no terraço ou na sala do grêmio, Seoyeon precisa de lugares onde possa tirar a máscara.*"
+  },
+  "after2_seo_leave": {
+    "name": "{name}",
+    "text": "*Seoyeon faz um aceno com a cabeça.*"
+  },
+  "after2_seo_end": {
+    "name": "{name}",
+    "text": "*Saí da sala do grêmio. O pôr do sol tinge o corredor.*"
+  },
+  "after2_seo_skinship_1": {
+    "name": "{name}",
+    "text": "*Seoyeon estende a mão. Tira um fiapo da minha gola. A mão roça no meu pescoço.*"
+  },
+  "after2_seo_skinship_2": {
+    "name": "{name}",
+    "text": "*Os dedos da Seoyeon param. Ela vira o rosto sem dizer nada. — Prendi a respiração por um segundo.*"
+  },
+  "after2_seo_skinship_3": {
+    "name": "Seoyeon",
+    "text": "...Tinha poeira."
+  },
+  "after2_seo_return": {
+    "name": "{name}",
+    "text": "*Saí da sala do grêmio. Ando em direção ao portão.*"
+  },
+  "after2_yuna_1": {
+    "name": "{name}",
+    "text": "*Não recebi nenhuma mensagem da Yuna. Mas meus pés estão indo em direção à biblioteca. Por quê? — Não sei. Talvez por causa do bilhete da manhã.*"
+  },
+  "after2_yuna_1_b": {
+    "name": "{name}",
+    "text": "*O corredor do anexo. Nenhuma alma. — A porta da sala secreta de leitura está entreaberta.*"
+  },
+  "after2_yuna_2": {
+    "name": "{name}",
+    "text": "*Entro em silêncio. Yuna está no sofá, lendo. O pôr do sol entra pela janela.*"
+  },
+  "after2_yuna_2_b": {
+    "name": "{name}",
+    "text": "*Yuna levanta a cabeça. Não se surpreende.*"
+  },
+  "after2_yuna_3": {
+    "name": "Yuna",
+    "text": "...Veio."
+  },
+  "after2_yuna_4": {
+    "name": "{name}",
+    "text": "Você não me chamou."
+  },
+  "after2_yuna_5": {
+    "name": "Yuna",
+    "text": "Preciso chamar pra você vir?"
+  },
+  "after2_yuna_6": {
+    "name": "{name}",
+    "text": "*Ela estava esperando. — Discretamente, isso me alegra.*"
+  },
+  "after2_yuna_7": {
+    "name": "{name}",
+    "text": "A porta estava aberta."
+  },
+  "after2_yuna_8": {
+    "name": "Yuna",
+    "text": "...Por acaso."
+  },
+  "after2_yuna_8b": {
+    "name": "{name}",
+    "text": "*Uma porta aberta por acaso. — O 'por acaso' da Yuna é sinônimo de 'de propósito'. Sento ao lado. Yuna me oferece um fone de ouvido.*"
+  },
+  "after2_yuna_8c": {
+    "name": "Yuna",
+    "text": "Escuta."
+  },
+  "after2_yuna_8d": {
+    "name": "{name}",
+    "text": "*Uma peça de piano suave começa a tocar. O pôr do sol pinta a sala. Yuna lê, eu escuto música. Nenhuma palavra. — Não é desconfortável.*"
+  },
+  "after2_yuna_choice_pre1": {
+    "name": "Yuna",
+    "text": "*Depois de um bom tempo* ...Gente que vem aqui depois da aula."
+  },
+  "after2_yuna_choice_pre2": {
+    "name": "{name}",
+    "text": "Hm?"
+  },
+  "after2_yuna_choice_pre3": {
+    "name": "Yuna",
+    "text": "Não teve ninguém desde aquele veterano."
+  },
+  "after2_yuna_choice_pre3_b": {
+    "name": "{name}",
+    "text": "*Yuna não desvia o olhar. Essa frase fica ecoando de um jeito estranho.*"
+  },
+  "after2_yuna_choice": {
+    "name": "{name}",
+    "text": "*Yuna disse duas frases seguidas. — Uma pessoa que normalmente fala uma linha por vez.*",
+    "choices": [
+      "Quer que eu venha todo dia?",
+      "É bom porque é quieto."
+    ]
+  },
+  "after2_yuna_everyday": {
+    "name": "{name}",
+    "text": "*Yuna mexe no fio do fone de ouvido.*"
+  },
+  "after2_yuna_everyday_b": {
+    "name": "Yuna",
+    "text": "...Se quiser vir, vem. Não vou impedir."
+  },
+  "after2_yuna_everyday_react": {
+    "name": "Yuna",
+    "text": "...Mas todo dia é demais. De vez em quando."
+  },
+  "after2_yuna_everyday_react_b": {
+    "name": "{name}",
+    "text": "*Nem parece permissão, mas de alguma forma fica na cabeça por muito tempo.*"
+  },
+  "after2_yuna_quiet": {
+    "name": "Yuna",
+    "text": "...É por isso que gosto daqui."
+  },
+  "after2_yuna_quiet_react": {
+    "name": "{name}",
+    "text": "*Yuna sorri bem de leve. — Esse sorriso faz o dia inteiro ficar bem.*"
+  },
+  "after2_yuna_end": {
+    "name": "{name}",
+    "text": "*Notificações atrasadas no celular — 'Eu tava esperando?' da Dain e 'Se a agenda mudar, me avisa' da Seoyeon. Sentado ao lado da Yuna ouvindo música, o pôr do sol já se foi. — Perto dessa pessoa, eu fico querendo voltar.*"
+  },
+  "after2_yuna_skinship_1": {
+    "name": "{name}",
+    "text": "*Fomos pegar o mesmo livro — nossas mãos se encostam.*"
+  },
+  "after2_yuna_skinship_2": {
+    "name": "{name}",
+    "text": "*Yuna não tira a mão primeiro. Três segundos. Yuna abaixa o olhar.*"
+  },
+  "after2_yuna_skinship_3": {
+    "name": "{name}",
+    "text": "*As mãos se separam. Yuna pega o livro e me entrega. Sem dizer nada.*"
+  },
+  "after2_yuna_return": {
+    "name": "{name}",
+    "text": "*Saí do anexo da biblioteca. O sol está se pondo.*"
+  },
+  "minsu_warn_1": {
+    "name": "{name}",
+    "text": "*Voltando pra casa. Passando pelo portão quando — Minsu aparece atrás de mim.*"
+  },
+  "minsu_warn_1_b": {
+    "name": "{name}",
+    "text": "*Minsu se aproxima a passos largos e fica do meu lado.*"
+  },
+  "minsu_warn_2": {
+    "name": "Minsu",
+    "text": "Ei."
+  },
+  "minsu_warn_3": {
+    "name": "{name}",
+    "text": "Que foi?"
+  },
+  "minsu_warn_4": {
+    "name": "Minsu",
+    "text": "Tá se divertindo ultimamente?"
+  },
+  "minsu_warn_4_b": {
+    "name": "{name}",
+    "text": "*Jogou como brincadeira, mas os olhos do Minsu não estão rindo.*"
+  },
+  "minsu_warn_5": {
+    "name": "{name}",
+    "text": "Do nada?"
+  },
+  "minsu_warn_6": {
+    "name": "Minsu",
+    "text": "Seoyeon, Dain, Yuna — as três sorriem pra você. ...Só comentando. *Dá de ombros e sai na frente.*"
+  },
+  "minsu_warn_15_b": {
+    "name": "Dain",
+    "text": "Amanhã tem aposta de novo!! Modalidade diferente!!"
+  },
+  "minsu_warn_15_c": {
+    "name": "Seoyeon",
+    "text": "Amanhã vou deixar o terraço aberto no almoço. Vem."
+  }
+}

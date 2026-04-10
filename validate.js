@@ -539,7 +539,7 @@ try {
     let exprMatch;
     while ((exprMatch = exprBlockRegex.exec(gdContent)) !== null) {
         const charId = exprMatch[1];
-        if (['ko', 'en', 'es', 'ja', 'fr', 'de'].includes(charId)) continue;
+        if (['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt'].includes(charId)) continue;
         const exprs = exprMatch[2].match(/'([^']+)'/g);
         if (!exprs) continue;
         for (const expr of exprs) {

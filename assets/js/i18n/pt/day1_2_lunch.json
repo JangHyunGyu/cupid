@@ -1,0 +1,465 @@
+{
+    "lunch_start": {
+        "name": "{name}",
+        "text": "*Hora do almoço. O corredor está lotado de alunos. Três sinais chegam ao mesmo tempo, de três direções.*"
+    },
+    "lunch_start_4": {
+        "name": "{name}",
+        "text": "*No final do corredor, Seoyeon cruza meu olhar e acena. Apontando pro terraço.*"
+    },
+    "lunch_start_4_b": {
+        "name": "{name}",
+        "text": "*Do meu lado, Dain agarra meu braço.*"
+    },
+    "lunch_start_5": {
+        "name": "Dain",
+        "text": "Ei! Já comeu?! Vamos na cantina! Vamos apostar um pão, quem perder paga!"
+    },
+    "lunch_start_6": {
+        "name": "{name}",
+        "text": "*E Yuna sai da sala discretamente, só com a bolsa. Na direção da biblioteca.*"
+    },
+    "lunch_start_7": {
+        "name": "{name}",
+        "text": "*Três caminhos. Uma escolha dessas logo no primeiro dia. Na escola antiga, eu nunca escolhi. Fui adiando até perder o momento. — Dessa vez não.*"
+    },
+    "lunch_choice": {
+        "name": "{name}",
+        "text": "*Quem eu sigo?*",
+        "choices": [
+            "Seguir Seoyeon até o terraço",
+            "Ir à cantina com Dain",
+            "Seguir Yuna até a biblioteca"
+        ]
+    },
+    "lunch_seo_1": {
+        "name": "{name}",
+        "text": "*Seoyeon abre a porta do terraço com a chave. Uma rajada de vento entra.*"
+    },
+    "lunch_seo_1_aff_high": {
+        "name": "Seoyeon",
+        "text": "Senta aqui. Aquilo que você falou no corredor — foi engraçado."
+    },
+    "lunch_seo_1_aff_default": {
+        "name": "Seoyeon",
+        "text": "...Vai sentar ou não?"
+    },
+    "lunch_seo_2": {
+        "name": "{name}",
+        "text": "*O terraço está limpo. Alguns vasos de planta e uma cadeira dobrável num canto. Alguém claramente cuida disso.*"
+    },
+    "lunch_seo_3": {
+        "name": "Seoyeon",
+        "text": "Aqui é meu território."
+    },
+    "lunch_seo_4": {
+        "name": "{name}",
+        "text": "A presidente tem terraço próprio?"
+    },
+    "lunch_seo_5": {
+        "name": "Seoyeon",
+        "text": "Eu não trago qualquer um aqui. *desdobra uma cadeira* Hoje é especial."
+    },
+    "lunch_seo_6": {
+        "name": "{name}",
+        "text": "Tratamento VIP no primeiro dia? Tô desconfiando."
+    },
+    "lunch_seo_6_b": {
+        "name": "Seoyeon",
+        "text": "*Sorri* Desconfiado, hein. Quando você lida com gente o dia inteiro lá embaixo, às vezes só quer ficar sozinha."
+    },
+    "lunch_seo_8": {
+        "name": "{name}",
+        "text": "*Seoyeon tira uma marmita da bolsa. Arrumada com cuidado, porção pra dois.*"
+    },
+    "lunch_seo_9": {
+        "name": "{name}",
+        "text": "...Isso é porção pra duas pessoas."
+    },
+    "lunch_seo_10": {
+        "name": "Seoyeon",
+        "text": "Eu sempre trago a mais. Com o trabalho do grêmio, acabo perdendo a hora de comer."
+    },
+    "lunch_seo_11": {
+        "name": "{name}",
+        "text": "*Ela já planejava comer junto desde o início. Abro a marmita e os acompanhamentos parecem caprichados. Omelete enrolada, salsicha, bolinhos de arroz.*"
+    },
+    "lunch_seo_13": {
+        "name": "{name}",
+        "text": "Foi você que fez?"
+    },
+    "lunch_seo_14": {
+        "name": "Seoyeon",
+        "text": "Uma presidente do grêmio que não sabe nem preparar uma marmita? Não faz sentido."
+    },
+    "lunch_seo_15": {
+        "name": "{name}",
+        "text": "Isso não é bem uma resposta."
+    },
+    "lunch_seo_16": {
+        "name": "Seoyeon",
+        "text": "*Entrega os hashis* Come. Esfria e perde o sabor."
+    },
+    "lunch_seo_17": {
+        "name": "{name}",
+        "text": "*Ela desvia de perguntas como uma profissional. Comemos em silêncio por um tempo. O vento está bom. A vista da escola lá do terraço é — mais ampla do que eu esperava.*"
+    },
+    "lunch_seo_19": {
+        "name": "Seoyeon",
+        "text": "E aí, o que achou da escola?"
+    },
+    "lunch_seo_20": {
+        "name": "{name}",
+        "text": "A comida tá boa."
+    },
+    "lunch_seo_21": {
+        "name": "Seoyeon",
+        "text": "*Ri de canto* Perguntei da escola e você responde sobre a comida."
+    },
+    "lunch_seo_22": {
+        "name": "{name}",
+        "text": "*Seoyeon pega um pedaço de omelete enrolada e estende.*"
+    },
+    "lunch_seo_23": {
+        "name": "Seoyeon",
+        "text": "Só uma mordida."
+    },
+    "lunch_seo_choice": {
+        "name": "{name}",
+        "text": "*Seoyeon está segurando a omelete enrolada.*",
+        "choices": [
+            "Aceitar",
+            "Ia ficar mais gostosa se você mesma comesse"
+        ]
+    },
+    "lunch_seo_c1_1": {
+        "name": "{name}",
+        "text": "*Aceito a omelete direto dos hashis da Seoyeon.*"
+    },
+    "lunch_seo_c1_2": {
+        "name": "{name}",
+        "text": "...Tá bom."
+    },
+    "lunch_seo_c1_2_b": {
+        "name": "{name}",
+        "text": "*Seoyeon vira o rosto e fica mexendo na garrafa de água sem motivo.*"
+    },
+    "lunch_seo_c1_3": {
+        "name": "Seoyeon",
+        "text": "...Óbvio."
+    },
+    "lunch_seo_c1_3_b": {
+        "name": "{name}",
+        "text": "*Se eu provocar mais, ela vai criar uma barreira na hora. Melhor fingir que não vi.*"
+    },
+    "lunch_seo_c2_1": {
+        "name": "{name}",
+        "text": "*Seoyeon coloca a omelete na própria boca. Mastiga devagar.*"
+    },
+    "lunch_seo_c2_2": {
+        "name": "Seoyeon",
+        "text": "Tem razão. Tá bom mesmo."
+    },
+    "lunch_seo_c2_3": {
+        "name": "{name}",
+        "text": "*Ela finge estar tranquila, mas parece levemente irritada.*"
+    },
+    "lunch_seo_after": {
+        "name": "{name}",
+        "text": "*O almoço está quase acabando.*"
+    },
+    "lunch_seo_after_2": {
+        "name": "Seoyeon",
+        "text": "Deixa o horário do almoço livre de agora em diante."
+    },
+    "lunch_seo_after_3": {
+        "name": "{name}",
+        "text": "É um convite?"
+    },
+    "lunch_seo_after_4": {
+        "name": "Seoyeon",
+        "text": "Não. É uma permissão."
+    },
+    "lunch_seo_after_5": {
+        "name": "{name}",
+        "text": "*Não é convite. É permissão. Enquanto Seoyeon arruma a marmita, ela ajeita o cabelo com o mindinho.*"
+    },
+    "lunch_seo_after_7": {
+        "name": "{name}",
+        "text": "*Não é nada demais. Mas meus olhos ficam presos ali.*"
+    },
+    "lunch_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Sentados lado a lado com Seoyeon no terraço. O vento está agradável.*",
+        "context": "Primeiro dia, almoço, acabamos de comer a marmita da Seoyeon no terraço. Ainda nos conhecendo. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "personality": "Seoyeon é a presidente do grêmio, bonita e tranquila. Serena, espirituosa e direta. Mostra interesse através de ações, não palavras."
+    },
+    "lunch_dain_1": {
+        "name": "Dain",
+        "text": "Chegamos! Aqui é a cantina. Escolhe o que quer!"
+    },
+    "lunch_dain_1_aff_default": {
+        "name": "Dain",
+        "text": "*A cantina está lotada na hora do almoço. Cheiro de pão e leite misturados no ar.*"
+    },
+    "lunch_dain_2": {
+        "name": "Dain",
+        "text": "Pão de coco com leite de morango — melhor combinação de felicidade por caloria! Confia!"
+    },
+    "lunch_dain_3": {
+        "name": "{name}",
+        "text": "Peraí, você falou que quem perder paga. Perder no quê?"
+    },
+    "lunch_dain_4": {
+        "name": "Dain",
+        "text": "Pedra-papel-tesoura! Óbvio!"
+    },
+    "lunch_dain_5": {
+        "name": "{name}",
+        "text": "Não é óbvio."
+    },
+    "lunch_dain_6": {
+        "name": "Dain",
+        "text": "Vai fugir?! Então VOCÊ que paga!"
+    },
+    "lunch_dain_7": {
+        "name": "{name}",
+        "text": "...Bora."
+    },
+    "lunch_dain_8": {
+        "name": "{name}",
+        "text": "*Pedra-papel-tesoura.*"
+    },
+    "lunch_dain_9": {
+        "name": "Dain",
+        "text": "Pedra— papel— tesoura!"
+    },
+    "lunch_dain_10": {
+        "name": "{name}",
+        "text": "*Pedra. Papel. Tesoura. — Dain perdeu.*"
+    },
+    "lunch_dain_11": {
+        "name": "Dain",
+        "text": "...Hã?! Perdi?! Melhor de três!!"
+    },
+    "lunch_dain_12": {
+        "name": "{name}",
+        "text": "Promessa é promessa."
+    },
+    "lunch_dain_12_b": {
+        "name": "Dain",
+        "text": "Ah, tá bom! Eu pago, eu pago! Moça, dois pães de coco!"
+    },
+    "lunch_dain_14": {
+        "name": "{name}",
+        "text": "*Dain reclama enquanto compra o pão. Mas os cantos da boca estão levantados.*"
+    },
+    "lunch_dain_15": {
+        "name": "{name}",
+        "text": "*Sentamos num banco perto da cantina e comemos o pão.*"
+    },
+    "lunch_dain_16": {
+        "name": "Dain",
+        "text": "*Rasgando o pão* Ei, você sério não faz nenhum esporte?"
+    },
+    "lunch_dain_17": {
+        "name": "{name}",
+        "text": "Por quê, preocupada com meu condicionamento?"
+    },
+    "lunch_dain_18": {
+        "name": "Dain",
+        "text": "Não — é que pra andar comigo, você tem que passar num teste mínimo de aptidão! kk"
+    },
+    "lunch_dain_19": {
+        "name": "{name}",
+        "text": "Achei que você tava se gabando do seu PR."
+    },
+    "lunch_dain_20": {
+        "name": "Dain",
+        "text": "Quê?! O que é PR?!"
+    },
+    "lunch_dain_21": {
+        "name": "{name}",
+        "text": "Personal Record. Termo de esporte."
+    },
+    "lunch_dain_22": {
+        "name": "{name}",
+        "text": "*Os olhos da Dain brilham.*"
+    },
+    "lunch_dain_23": {
+        "name": "Dain",
+        "text": "Opa, você sabe disso?! Então você manja de esporte, né?!"
+    },
+    "lunch_dain_choice": {
+        "name": "{name}",
+        "text": "*Dain está me olhando com os olhos cheios de expectativa.*",
+        "choices": [
+            "Um pouco. Você me ensina?",
+            "Tava fingindo que sabia."
+        ]
+    },
+    "lunch_dain_c1_1": {
+        "name": "Dain",
+        "text": "kkk Fechou!! Treino especial começa hoje! Aquecimento no ginásio depois da aula, combinado?!"
+    },
+    "lunch_dain_c1_2": {
+        "name": "{name}",
+        "text": "*Os olhos dela ficam em formato de meia-lua. — Esse sorriso é quase injusto.*"
+    },
+    "lunch_dain_c2_1": {
+        "name": "Dain",
+        "text": "Vai, mas pelo menos tá curioso, né?! Passa no ginásio depois da aula! Não vai se arrepender!"
+    },
+    "lunch_dain_after": {
+        "name": "{name}",
+        "text": "*Terminamos o pão e levantamos.*"
+    },
+    "lunch_dain_after_2": {
+        "name": "Dain",
+        "text": "Ei, {name}!"
+    },
+    "lunch_dain_after_3": {
+        "name": "{name}",
+        "text": "Oi?"
+    },
+    "lunch_dain_after_4": {
+        "name": "Dain",
+        "text": "Sua primeira refeição na escola nova e foi comigo? Isso é histórico. HISTÓRICO!"
+    },
+    "lunch_dain_after_5": {
+        "name": "{name}",
+        "text": "*Ela sorri e dá um soco de leve no meu ombro. Falou com tanta seriedade que eu só assenti.*"
+    },
+    "lunch_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Sentados no banco da cantina com Dain, comendo pão.*",
+        "context": "Primeiro dia, almoço, acabamos de apostar no pedra-papel-tesoura na cantina. Dain perdeu e comprou o pão. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "personality": "Dain é uma atleta cheia de energia. Adora contato físico, usa muitas exclamações. Durona por fora, sensível por dentro."
+    },
+    "lunch_yuna_1": {
+        "name": "{name}",
+        "text": "*Sigo Yuna até a biblioteca. Parece que quase ninguém vem aqui na hora do almoço.*"
+    },
+    "lunch_yuna_1_aff_default": {
+        "name": "Yuna",
+        "text": "*\"...\" Ela simplesmente senta. Sem bilhete dessa vez.*"
+    },
+    "lunch_yuna_2": {
+        "name": "{name}",
+        "text": "*Yuna senta num canto da sala de leitura e abre um livro. Não sei se ela percebeu que eu vim atrás. Sento na frente dela, com cuidado.*"
+    },
+    "lunch_yuna_4": {
+        "name": "Yuna",
+        "text": "......"
+    },
+    "lunch_yuna_5": {
+        "name": "{name}",
+        "text": "*Cinco segundos. Dez segundos. — Nada.*"
+    },
+    "lunch_yuna_5_b": {
+        "name": "{name}",
+        "text": "...Posso sentar aqui?"
+    },
+    "lunch_yuna_7": {
+        "name": "Yuna",
+        "text": "*sem tirar os olhos do livro* ...Se ficar quieto."
+    },
+    "lunch_yuna_8": {
+        "name": "{name}",
+        "text": "*Isso é um sim? Acho que é um sim. — Condicional. O silêncio se instala. Yuna continua lendo. Sem nada pra fazer, vou olhar as estantes.*"
+    },
+    "lunch_yuna_10": {
+        "name": "{name}",
+        "text": "*Ficar sentado na biblioteca na hora do almoço sem dizer uma palavra — e de algum jeito não é estranho. Na verdade, é até confortável.*"
+    },
+    "lunch_yuna_10_b": {
+        "name": "{name}",
+        "text": "*Algo está preso na mesa da Yuna. Um marcador de livro antigo. Tem algo escrito — mas não consigo ler direito. Yuna coloca a mão em cima dele sem perceber. Algo precioso, talvez.*"
+    },
+    "lunch_yuna_12": {
+        "name": "Yuna",
+        "text": "*olha de relance* ...Esse é o volume 3."
+    },
+    "lunch_yuna_13": {
+        "name": "{name}",
+        "text": "Hã?"
+    },
+    "lunch_yuna_14": {
+        "name": "Yuna",
+        "text": "Tem que começar do volume 1."
+    },
+    "lunch_yuna_15": {
+        "name": "{name}",
+        "text": "*Ela empurra um livro do lado dela na minha direção.*"
+    },
+    "lunch_yuna_16": {
+        "name": "{name}",
+        "text": "Obrigado."
+    },
+    "lunch_yuna_17": {
+        "name": "Yuna",
+        "text": "...Lê e devolve."
+    },
+    "lunch_yuna_18": {
+        "name": "{name}",
+        "text": "*As frases dela são curtas. Não é frieza — é mais como se cada palavra fosse preciosa. Começo a ler. É bem bom.*"
+    },
+    "lunch_yuna_20": {
+        "name": "{name}",
+        "text": "*O sinal toca.*"
+    },
+    "lunch_yuna_21": {
+        "name": "{name}",
+        "text": "Já tocou?"
+    },
+    "lunch_yuna_22": {
+        "name": "Yuna",
+        "text": "*colocando o marcador* ...Obrigada por ficar em silêncio."
+    },
+    "lunch_yuna_23": {
+        "name": "{name}",
+        "text": "Hm?"
+    },
+    "lunch_yuna_24": {
+        "name": "Yuna",
+        "text": "Foi bom."
+    },
+    "lunch_yuna_25": {
+        "name": "{name}",
+        "text": "*Yuna se levanta primeiro e vai embora. Não olha pra trás. 'Foi bom.' — Que bobeira ficar feliz com tão pouco.*"
+    },
+    "lunch_yuna_choice": {
+        "name": "{name}",
+        "text": "*O livro que Yuna deixou me chama a atenção. — Ela não foi longe. Vou atrás dela.*",
+        "choices": [
+            "Esse livro é bom? Será que eu devia ler também?",
+            "Então você gosta de ler."
+        ]
+    },
+    "lunch_yuna_c1_1": {
+        "name": "Yuna",
+        "text": "...Esse? É bem bom. Quer pegar emprestado?"
+    },
+    "lunch_yuna_c1_2": {
+        "name": "Yuna",
+        "text": "...Quando terminar, me conta o que achou. Tô curiosa."
+    },
+    "lunch_yuna_c2_1": {
+        "name": "Yuna",
+        "text": "...Não tinha mais nada pra fazer."
+    },
+    "lunch_yuna_c2_2": {
+        "name": "Yuna",
+        "text": "...Mas essa biblioteca não é ruim. É silenciosa."
+    },
+    "lunch_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Lendo livros lado a lado com Yuna na biblioteca. Silêncio, mas confortável.*",
+        "context": "Primeiro dia, almoço, acabamos de passar um tempo juntos na biblioteca. O silêncio foi bom. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "personality": "Yuna é uma garota literária e misteriosa. Frases curtas e secas, mas quando se abre, as frases ficam mais longas. Se comunica por bilhetes."
+    },
+    "lunch_end": {
+        "name": "{name}",
+        "text": "*O sinal toca. O almoço acabou.*"
+    }
+}
