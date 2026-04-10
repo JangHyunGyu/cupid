@@ -1094,7 +1094,7 @@ class GameEngine {
                             const gallery = JSON.parse(localStorage.getItem('cupid_gallery') || '{}');
                             if (!gallery.characters) gallery.characters = {};
                             if (!gallery.characters[id]) gallery.characters[id] = {};
-                            gallery.characters[id].trueEndingCleared = true;
+                            gallery.characters[id].perfectEndingCleared = true;
                             gallery.playerName = this.stateManager.playerName;
                             localStorage.setItem('cupid_gallery', JSON.stringify(gallery));
                             console.log(`[GameEngine] 갤러리 프리토킹 해금: ${key}`);
