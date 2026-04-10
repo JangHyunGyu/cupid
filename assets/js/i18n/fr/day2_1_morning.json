@@ -41,8 +41,8 @@
         "text": "*La même écriture soignée qu'hier. Court. Et le lieu est précis. — L'annexe de la bibliothèque ? C'est un endroit différent d'hier.*"
     },
     "morning2_seo_1": {
-        "name": "{name}",
-        "text": "*Je suis sur le point de mettre le mot dans ma poche quand — une voix familière depuis le couloir.*"
+        "name": "Seoyeon",
+        "text": "*En passant dans le couloir, jetant un coup d'œil dans la classe* Tu as bien dormi hier ?"
     },
     "morning2_seo_4": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Professeure principale",
-        "text": "Bon, un prof qui s'inquiète pour ses élèves, c'est normal. C'est le boulot."
+        "text": "C'est dans les tâches de gestion de classe. C'est du boulot."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",
-        "text": "*Cache sa bouche derrière sa tasse de café* ...Échec de la gestion des expressions. D'accord, vas-y."
+        "text": "*Cache sa bouche derrière sa tasse de café* ...Raté, la gestion des expressions. Bon, file."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professeure principale",
@@ -230,7 +230,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon est venue vers moi en premier. Son ton habituel, mais avec un besoin de confirmation.*"
+        "text": "*Seoyeon est venue vers moi en premier. Son ton habituel, mais avec un besoin de confirmation. Dain jette un coup d'œil depuis le fond de la classe. Elle détourne la tête. Yuna s'enfonce davantage dans son livre. Elle tourne les pages plus vite.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*J'ai suivi la prof jusqu'à la salle des profs.* *Son bureau est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert.*"
+        "text": "*J'ai suivi la prof jusqu'à la salle des profs.* *Son bureau est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert. Sur le bureau, une pile de papiers et — du papier à manuscrit.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Professeure principale",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professeure principale",
-        "text": "*Posant son café* ...Bref, rien d'inquiétant. Tu t'en sors bien."
+        "text": "*Posant son café* ...Bref. De ton côté, rien de particulier."
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",

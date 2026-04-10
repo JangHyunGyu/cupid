@@ -5,7 +5,7 @@
     },
     "after2_msg_dain": {
         "name": "Dain",
-        "text": "Viens au gymnase !! Aujourd'hui c'est sérieux !!"
+        "text": "Viens au gymnase !! Aujourd'hui c'est le vrai pari !!"
     },
     "after2_msg_seo": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*Le sujet a changé. — La tendresse de Dain est maladroite, mais chaleureuse.*"
+        "text": "*Le sujet a changé. — L'attention de Dain est maladroite, mais chaleureuse.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -213,7 +213,7 @@
         "text": "*Le soleil couchant inonde la pièce. Une lueur orangée se répand sur le profil de Seoyeon. — J'ai eu envie de lui parler.*",
         "choices": [
             "C'est un beau coucher de soleil. Je parle de la vue.",
-            "Tu as mal à la gorge ? Repose-toi un peu."
+            "Tu as mal au cou ? Fais des pauses."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -390,7 +390,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Sur mon téléphone, le message de Dain 'Je t'attendais ?' et celui de Seoyeon 'Préviens si ton planning change' arrivent en retard. Pendant qu'on écoute de la musique côte à côte, le coucher de soleil est tombé. — À côté de cette personne, j'ai envie de revenir.*"
+        "text": "*Sur mon téléphone, le message de Dain 'Je t'attendais ?' et celui de Seoyeon 'Préviens si ton planning change' arrivent en retard. Pendant qu'on écoute de la musique côte à côte, le coucher de soleil est tombé. — À côté de cette personne, j'ai sans cesse envie de revenir.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d2_2": {
         "name": "Infirmière",
-        "text": "Oh, le nouveau d'hier. Déjà de retour ? Tu veux devenir un habitué ?"
+        "text": "Deux jours d'affilée, faudrait te faire une carte de membre de l'infirmerie."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
@@ -552,7 +552,7 @@
     },
     "after2_seo_neck_react_b": {
         "name": "Seoyeon",
-        "text": "Ton cou est assez raide. Ne bouge pas une seconde."
+        "text": "Attends. Ne bouge pas."
     },
     "after2_seo_neck_react_c": {
         "name": "{name}",

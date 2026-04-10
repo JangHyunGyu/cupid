@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Abril. Pétalas de cerejeira voam pelo ar. O uniforme ainda está duro. Um cheiro suave de grama fresca. A partir de hoje, sou aluno desta escola. Transferência. Primeira vez.*"
+        "text": "*Abril. Pétalas de cerejeira voam pelo ar. O uniforme ainda está duro. Um cheiro suave de roupa engomada. A partir de hoje, sou aluno desta escola. Transferência. Primeira vez.*"
     },
     "start_3": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "{name}",
-        "text": "*A voz dela é calma. Não é fria — tem algo de sereno. Como se tivesse todo o tempo do mundo.*"
+        "text": "*A voz dela é calma. Não é fria — tem algo de sereno.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Sou a presidente do grêmio. Receber alunos novos é função minha."
+        "text": "Sou a presidente do grêmio. Receber alunos novos é da minha alçada."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
@@ -170,7 +170,7 @@
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*A professora está de pé na frente da sala. Uns vinte e poucos anos. O cardigã aberto desde o início. A expressão é indiferente, mas — os olhos observam cada aluno um por um.*"
+        "text": "*A professora está de pé na frente da sala. Final dos vinte. O cardigã aberto desde o início. A expressão é indiferente, mas — os olhos observam cada aluno um por um.*"
     },
     "classroom_3": {
         "name": "Professora",
@@ -282,7 +282,7 @@
     },
     "classroom_dain_talk_7": {
         "name": "Dain",
-        "text": "kkk Seus reflexos devem ser melhores que os de uma máquina! Acho!"
+        "text": "kkk Seus reflexos devem ser melhores que os de uma máquina de bolas! Acho!"
     },
     "classroom_dain_talk_8": {
         "name": "{name}",

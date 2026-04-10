@@ -99,7 +99,7 @@
     },
     "lunch3_expose_1": {
         "name": "{name}",
-        "text": "*Au moment où j’ai dit partageons tous ensemble — Dain a parlé la première.*"
+        "text": "*C'est à ce moment-là — Dain a parlé la première.*"
     },
     "lunch3_expose_2": {
         "name": "Dain",
@@ -262,7 +262,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Dain gagne le pari du déjeuner et ouvre grand les bras. Elle me serre. Une seconde.*"
+        "text": "*Dain gagne le pari du déjeuner et ouvre grand les bras. Elle me serre. Une seconde. Dain recule d'un bond comme si elle avait été repoussée. Elle attrape sa bouteille d'eau pour se donner une contenance.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -327,7 +327,7 @@
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
-        "text": "*La dernière pose les siens en silence.*"
+        "text": "*La dernière pose les siens en silence. Yuna pose son pain.*"
     },
     "lunch3_expose_honest_4_b": {
         "name": "{name}",

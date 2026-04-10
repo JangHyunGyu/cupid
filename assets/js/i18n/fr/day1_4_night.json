@@ -57,7 +57,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*J’allais m’endormir quand — mon téléphone sonne encore une fois.*"
+        "text": "*J'allais m'endormir quand — mon téléphone sonne encore une fois. 23 heures. Qui ça peut être ?*"
     },
     "night_late_branch": {
         "name": "{name}",

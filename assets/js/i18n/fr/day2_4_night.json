@@ -53,15 +53,15 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hé !! Tu fais quoi demain ?!"
+        "text": "Hé !! T'iras à la cafét' demain, hein ?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
-        "text": "Garde ta pause déjeuner libre demain"
+        "text": "Je laisserai le toit ouvert à midi demain"
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
-        "text": "...Tu viens à la bibliothèque demain ?"
+        "text": "...Tu as fini ce livre ?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Le deuxième jour est terminé. Le premier jour, c'était de la curiosité. Je me demandais quel genre de personnes ils étaient. Aujourd'hui — c'est un peu différent. Pas curieux. Ils me restent en tête. Ce qu'ils font, ce qu'ils diront demain.*"
+        "text": "*Le deuxième jour est terminé. Le premier jour, c'était de la curiosité. Je me demandais quel genre de personnes elles étaient. Aujourd'hui — c'est un peu différent. Pas curieux. Elles me restent en tête. Ce qu'elles font, ce qu'elles diront demain.*"
     },
     "night2_hidden_check": {
         "name": "{name}",

@@ -216,7 +216,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Rien après 'il y avait'. Passé composé. — Est-ce que je devrais demander ?*",
+        "text": "*Rien après 'il y avait'. L'imparfait. — Le silence de Yuna raconte toujours une histoire. Je deviens prudent.*",
         "choices": [
             "Cette personne, où est-elle maintenant ?",
             "Ne pas demander et s'asseoir à côté d'elle"
@@ -476,7 +476,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon regarde par ici. Elle me fixe, debout à côté de Dain en train de manger du pain, pendant une demi-seconde — puis continue son chemin.*"
+        "text": "*Seoyeon regarde par ici. Elle me fixe, debout à côté de Dain en train de manger du pain, pendant une demi-seconde — puis continue son chemin. J'ai senti une pointe au cœur.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -501,7 +501,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*L'expression de Dain se fige subtilement. Elle croque son soboro et détourne la tête.*"
+        "text": "*L'expression de Dain se fige subtilement. Elle croque son soboro et détourne la tête. — Est-ce que je l'ai blessée ?*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Infirmière",
-        "text": "*À l'intérieur de l'infirmerie. Des documents sont empilés sur le bureau, et l'infirmière est assise sur sa chaise.*"
+        "text": "*Levant les yeux* C'est la première fois que tu viens, non ? Le nouvel élève, c'est ça ?"
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -577,7 +577,7 @@
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Infirmière",
-        "text": "...Oh ? Tu es celui de tout à l'heure. Qu'est-ce qui t'amène ici pendant le déjeuner ?"
+        "text": "C'est normal pour une première fois. Allez, on désinfecte."
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
@@ -585,7 +585,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Tu as meilleure mine que ce matin. C'est un soulagement.*"
+        "text": "*Son ton taquin n'a pas changé. Mais ses yeux examinent déjà la blessure.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -641,11 +641,11 @@
     },
     "lunch2_dain_end_v": {
         "name": "{name}",
-        "text": "*Elle noie le poisson avec une blague, mais elle a fermé cet ordinateur vite. — Il y a quelque chose qu'elle ne veut pas qu'on voie.*"
+        "text": "*Elle noie le poisson avec une blague, mais elle a refermé ça vite. — Il y a quelque chose qu'elle ne veut pas qu'on voie.*"
     },
     "lunch2_dain_end_w": {
         "name": "Infirmière",
-        "text": "C'est fini, alors retourne en cours. — Et la prochaine fois, viens sans être blessé."
+        "text": "C'est fini, retourne en cours. — Si tu reviens, j'ajoute des examens au dossier."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",

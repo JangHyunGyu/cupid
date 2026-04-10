@@ -166,7 +166,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*J’observe la réaction de Dain. La sonnerie retentit, puis revient ce court moment juste avant le déjeuner.*"
+        "text": "*J'observe la réaction de Dain. La sonnerie retentit, puis revient ce court moment juste avant le déjeuner. Elle est repartie avec un grand sourire. — Je ne le savais pas encore. Que Dain avait arrêté de tapoter, qu'elle avait mis les mains dans ses poches. Que ça lui avait demandé du courage.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
@@ -185,7 +185,7 @@
         "text": "*Après avoir lu le mot de Yuna...*",
         "choices": [
             "Je hoche la tête",
-            "Je plie le mot et le range dans ma poche"
+            "Je secoue doucement la tête"
         ]
     },
     "morning3_date_yuna_accept": {
@@ -312,7 +312,7 @@
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Infirmière",
-        "text": "*Tire une chaise et s'assoit.* Les relations. — C'est une consultation sentimentale ? *Pfff.* Plus tu fais semblant, plus ça se voit."
+        "text": "*En penchant légèrement la tête* ...D'accord. Si c'est compliqué, repose-toi un peu ici."
     },
     "hidden_nurse_d3_6": {
         "name": "Infirmière",
@@ -394,7 +394,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*Un seul mot sur le papier. Attendu.*"
+        "text": "*J'ai sorti le mot. 'Je t'attendais.'*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*Le mot : Je me suis dit que tu n'avais pas pris de petit-déjeuner.*"
+        "text": "*Le mot : Je me suis dit que tu n'avais pas pris de petit-déjeuner. Quelqu'un qui écrit un mot alors qu'il suffirait de le dire. — C'est tout Yuna.*"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -458,7 +458,7 @@
     },
     "morning3_react_yuna_1_b": {
         "name": "{name}",
-        "text": "*Dain, sans détour.*"
+        "text": "*Dain, sans détour. Revenue en classe.*"
     },
     "morning3_react_yuna_2_b": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Professeure principale",
-        "text": "*En soupirant* ...Être observateur, c'est souvent une qualité. Parfois un défaut."
+        "text": "*En soupirant* ...Ce serait plus simple si on pouvait ne voir que ce qu'on veut voir."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
@@ -530,7 +530,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Professeure principale",
-        "text": "Après la fac, j'ai essayé de publier — j'ai échoué trois fois en deux ans. Plus d'argent, mes parents disaient 'il faut être réaliste maintenant.'"
+        "text": "Après la fac, j'ai préparé les sélections — j'ai échoué trois fois en deux ans."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",

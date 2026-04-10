@@ -37,7 +37,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Si tu essaies de filer, je vais vraiment me fâcher."
+        "text": "Si tu essaies de filer, je vais vraiment me fâcher, hein ?"
     },
     "morning5_end": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Préparation de l'événement. En passant devant la salle vide — la porte est ouverte.*"
+        "text": "*Préparation de l'événement. En marchant dans le couloir — je passe devant la salle vide. La porte est ouverte.*"
     },
     "hidden_homeroom_d5_1": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Dès que j'entre dans la salle — des signaux me parviennent de trois directions.*"
+        "text": "*Dès que j'entre dans la salle — des signaux me parviennent de trois directions. Dernier événement. Tout le temps passé jusqu'ici converge vers aujourd'hui.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Une seule ligne. — Quelqu'un qui s'est fait recaler trois fois avant de pouvoir débuter attend l'impression en une ligne d'un élève. Si ce n'est pas une déclaration, qu'est-ce que c'est ?*"
+        "text": "*Une seule ligne. — Quelqu'un qui s'est fait recaler trois fois attend l'impression en une ligne d'un élève. Si ce n'est pas une déclaration, qu'est-ce que c'est ? La prof sort de la classe et — s'arrête devant la porte.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Professeure principale",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*De « viens après ton diplôme » à « viens si tu as mal » — elle a reculé. Elle a failli franchir la ligne et s'est ravisée.*"
+        "text": "*De « viens après ton diplôme » à « viens si tu as mal » — elle a reculé. Elle a failli franchir la ligne et s'est ravisée. La porte s'ouvre. L'infirmière est debout. Deux gobelets en papier dans les mains.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -343,7 +343,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*« Après ton diplôme. » — Les mêmes mots que la prof principale. Pas maintenant, mais un jour. Le jour où le titre de « professeure » disparaîtra.*"
+        "text": "*« Après ton diplôme. » — Les mêmes mots que la prof principale. Pas maintenant, mais un jour. Le jour où le titre disparaîtra.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Infirmière",
@@ -359,7 +359,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*Sa voix a baissé d'un ton. Toute espièglerie a disparu. — C'est toujours comme ça que la sincérité de cette personne arrive.*"
+        "text": "*Sa voix a baissé d'un ton. Toute espièglerie a disparu. — C'est toujours comme ça que la sincérité de cette personne arrive. L'infirmière rit, puis — s'arrête. Elle ferme la bouche.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Infirmière",
@@ -383,22 +383,22 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Sa réplique emblématique du Jour 1. — À l'époque, c'était une présentation. Maintenant, c'est sincère.*"
+        "text": "*Sa réplique emblématique du Jour 1. — À l'époque, c'était une présentation. Maintenant, c'est sincère. L'infirmière sort un pansement et le colle sur le dos de ma main. Lentement. — De petits mots sont écrits sur le pansement.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*« Après ton diplôme, retrouvons-nous dans un café plutôt qu'à l'infirmerie — ♡ »*"
+        "text": "*« Après ton diplôme, retrouvons-nous dans un café plutôt qu'à l'infirmerie — ♡ » Ce cœur, cette fois — ça ne ressemble pas à de l'intérêt médical.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*Y a pas de nouveau mot sur le bureau. À la place, le regard que Seoyeon m'a lancé hier sur le toit reste encore vif. Yuna et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
+        "text": "*Il n'y a pas de nouveau mot sur le bureau. À la place, le regard que Seoyeon m'a lancé hier sur le toit reste encore vif.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*Y a pas de nouveau mot. À la place, il reste encore la façon dont Yuna a soutenu mon regard plus longtemps que d'habitude hier. Seoyeon et Dain ne me disent que quelques mots sur les préparatifs de l'événement.*"
+        "text": "*Il n'y a pas de nouveau mot. À la place, il reste encore la façon dont Yuna a soutenu mon regard plus longtemps que d'habitude hier.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
@@ -427,7 +427,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*La place vide à la bibliothèque, le marque-page disparu, et maintenant une nouvelle jamais affichée. — Yuna efface chaque trace. Le silence que j’ai laissé au Jour 3 est arrivé jusqu’ici.*"
+        "text": "*La place vide à la bibliothèque, le marque-page disparu, et maintenant une nouvelle jamais affichée. — Yuna efface chaque trace. Le vide que j'ai laissé au Jour 3 est arrivé jusqu'ici.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
@@ -515,7 +515,7 @@
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Professeure principale",
-        "text": "...Une élève ?"
+        "text": "...Un élève ?"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",

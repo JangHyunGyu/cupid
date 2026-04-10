@@ -212,7 +212,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*En marchant dans le couloir — un léger vertige. Le stress du premier jour, sûrement.*"
+        "text": "*En marchant dans le couloir — un léger vertige. Le stress du premier jour, sûrement. Je remarque le panneau « Infirmerie » de l'autre côté du couloir. Un peu trop étourdi pour faire comme si de rien n'était.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
-        "text": "...Le toit ? Juste vous deux ?"
+        "text": "...Je t'ai vu descendre du toit. Juste vous deux ?"
     },
     "after1_jealousy_seo_choice": {
         "name": "{name}",
@@ -330,7 +330,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
-        "text": "*Mes doigts effleurent la poche latérale de mon sac et accrochent l'angle d'un papier. Un billet plié. Aucune idée de quand il a été glissé là. L'écriture de Yuna.*"
+        "text": "*Mes doigts effleurent la poche latérale de mon sac et accrochent l'angle d'un papier. Un billet plié. Aucune idée de quand il a été glissé là. L'écriture de Yuna. 'Je t'ai vu sur le toit à midi. ...Tu avais l'air de bien t'entendre avec la présidente.' — Trois points de suspension à la fin. Comme si elle avait ravalé ce qu'elle voulait vraiment dire.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Elle fait un signe de la main et repart en courant. — En freinant, elle a légèrement traîné sa jambe droite. Ou pas ? C'était trop rapide pour en être sûr.*"
+        "text": "*Elle fait un signe de la main et repart en courant. — En freinant, elle a brièvement saisi son genou droit. Un demi-seconde. Elle a aussitôt retiré sa main, mais je l'ai vu.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -394,7 +394,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*Elle referme le registre et se lève. Arrivée au seuil, elle me rappelle comme si quelque chose lui revenait seulement à cet instant.*"
+        "text": "*Elle a ri. — C'est la première fois que je la vois rire à une blague. Elle referme le registre et se lève. Arrivée au seuil, elle me rappelle comme si quelque chose lui revenait seulement à cet instant.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
@@ -402,7 +402,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Je m'arrête devant la porte et je prends une longue inspiration. Autant me reposer un peu avant de rentrer.*"
+        "text": "*Je m'arrête devant la porte et je prends une longue inspiration. Autant me reposer un peu. Ma main se pose sur la poignée. Le contact froid du métal contre ma paume.*"
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
