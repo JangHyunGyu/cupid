@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "{name}",
-        "text": "*La main qui tend la clé. Nos auriculaires se frôlent.*"
+        "text": "*La main qui tend la clé. Nos auriculaires se frôlent. — Elle ne dit jamais « je te le donne » en tendant les choses. Des actes plutôt que des mots. Depuis le début.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -61,15 +61,15 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Le coin lecture secret. Un vieux canapé, la lumière de l'après-midi.*"
+        "text": "*L'annexe de la bibliothèque. Le coin lecture secret où je suis entré pour la première fois au Jour 2. Un vieux canapé, la lumière de l'après-midi filtrant par la fenêtre.*"
     },
     "tour_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna s'assoit sur le canapé. Elle laisse la place à côté d'elle libre.*"
+        "text": "*Yuna s'assoit sur le canapé. Elle laisse la place à côté d'elle libre. — La même disposition qu'au Jour 2.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "À chaque fois que je viens ici, j'ai l'impression que le temps passe différemment."
+        "text": "À chaque fois que je viens ici, j'ai l'impression que le temps ralentit un peu."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -81,7 +81,7 @@
     },
     "tour_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna sort un cahier de son sac.*"
+        "text": "*Yuna sort un cahier de son sac. Le même cahier qu'elle s'était fait surprendre avec au Jour 3.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -97,7 +97,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Elle me tend le cahier. Ses mains tremblent.*"
+        "text": "*Elle me tend le cahier. Ses mains tremblent. — C'est la première fois que Yuna donne directement son écriture à quelqu'un.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Là où on a fait notre premier pari au Jour 1. Aujourd'hui, les lumières sont allumées.*"
+        "text": "*Le gymnase. Là où on a fait notre premier pari au Jour 1, et où elle a frappé son dernier smash au Jour 4. — Aujourd'hui, les lumières sont allumées.*"
     },
     "tour_dain_2": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Elle râle tout en riant. — C'est ça, Dain.*"
+        "text": "*Elle râle tout en riant. — C'est ça, Dain. Quelqu'un qui s'amuse même en perdant. Dain pose le ballon sur le terrain. Lentement.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -165,7 +165,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Elle le dit sans point d'exclamation. Mais cette fois, ce n'est pas un adieu — c'est un début.*"
+        "text": "*Elle le dit sans point d'exclamation. Mais cette fois, ce n'est pas un adieu — c'est un début. La même phrase sans exclamation qu'au Jour 4, mais la température est différente.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",

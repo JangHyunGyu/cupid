@@ -32,7 +32,7 @@
         "text": "*Je suis nerveux. Mais cette fois, je veux le dire correctement.*",
         "choices": [
             "Seoyeon. Attends une seconde.",
-            "...Le vent est agreable."
+            "...Le vent est agréable."
         ]
     },
     "confess_seo_yes_1": {
@@ -89,7 +89,7 @@
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "...Il y a du bon vent."
+        "text": "...Le vent est agréable."
     },
     "confess_seo_no_2": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "Tu étais — le genre de personne qui s'assoit à côté de toi au lieu de parler. Ce silence était plus chaleureux que les mots de quiconque."
+        "text": "Tu étais — le genre de personne qui s'assoit à côté de quelqu'un au lieu de parler. Ce silence était plus chaleureux que n'importe quels mots."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
@@ -265,11 +265,11 @@
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*Ce n'est pas pierre-feuille-ciseaux, ce n'est pas un jeu. Mais c'est tout pour moi.*"
+        "text": "*Ce n'est pas une déclaration à pierre-feuille-ciseaux. Mais pour moi, c'est tout.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "C'est pour ?a que je finis toujours par aller vers toi."
+        "text": "C'est pour ça que je finis toujours par aller vers toi."
     },
     "confess_dain_yes_6": {
         "name": "{name}",

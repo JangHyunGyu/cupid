@@ -110,7 +110,7 @@
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*Ela acena e sai correndo. Um furacão de pessoa. O nome que a professora chamou — Dain. E já estamos na intimidade.*"
+        "text": "*Ela acena e sai correndo. Um furacão de pessoa. O nome que a professora chamou — Dain. E e já estamos nos tratando sem cerimônia.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
@@ -268,7 +268,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Interesse pedagógico'. — Então ela também é do tipo que disfarça os sentimentos com cargo.*"
+        "text": "*'Interesse pedagógico'. — Então ela também é do tipo que disfarça o que sente.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -362,7 +362,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermeira",
-        "text": "Seu uniforme tá duro de tão novo. E cheira a grama fresca. *Snif snif* Ah, tem cheiro de flor de cerejeira também. Transferido romântico."
+        "text": "Seu uniforme tá duro de tão novo. E cheira a roupa engomada. *Snif snif* Ah, tem cheiro de flor de cerejeira também. Transferido romântico."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",

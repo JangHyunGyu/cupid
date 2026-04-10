@@ -219,11 +219,11 @@
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "{name}",
-        "text": "*Seoyeon tend son petit doigt d'abord. Elle ne s'arrête pas là. Elle prend ma main.*"
+        "text": "*Seoyeon tend son petit doigt d'abord. Elle ne s'arrête pas là. Elle prend ma main. Et pose ses lèvres sur mon front.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
-        "text": "...Je n'ai pas répété celui-là."
+        "text": "...C'est la première fois. Vraiment."
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*Je fais la passe. Dain saute et — smash.*"
+        "text": "*Je fais la passe. Dain saute et — smash. À l'atterrissage — elle agrippe son genou droit et s'effondre sur place.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -371,7 +371,7 @@
     },
     "wall_dain_18_d": {
         "name": "Dain",
-        "text": "*Serre et desserre les poings.* Je l'ai dit à personne. Même pas à mes parents."
+        "text": "*Serre et desserre les poings.* ...Alors."
     },
     "wall_dain_19": {
         "name": "Dain",
@@ -405,14 +405,13 @@
         "name": "{name}",
         "text": "*Dain serre le ballon, tête baissée. Ses épaules tremblent.*",
         "choices": [
-            "...Je peux m’asseoir à côté de toi ?",
-            "Quand tu veux pleurer, écris-moi. Je ne poserai pas de questions.",
-            "...On se relève ensemble ? Juste une dernière fois."
+            "...Je ne dirai rien. Je reste juste là.",
+            "Tu peux pleurer. Tu n'as pas besoin de faire semblant d'être joyeuse. Pas devant moi."
         ]
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Je me suis assis à côté de Dain. Le sol du terrain est froid. Je n’ai rien dit.*"
+        "text": "*Je suis resté assis à côté d'elle. Sans un mot. Dain non plus ne dit rien. — Un moment étrange. C'est la première fois qu'un silence de plus d'une minute s'installe à côté de Dain.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -537,7 +536,7 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*Nous nous sommes assis sur le banc pr?s de la porte arri?re du lyc?e. Dain s'allonge sur mes genoux sans pr?venir.*"
+        "text": "*Nous nous sommes assis sur le banc près de la porte arrière du lycée. Dain s'allonge sur mes genoux sans prévenir.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -719,11 +718,11 @@
     },
     "wall_yuna_skin70_3": {
         "name": "{name}",
-        "text": "*La température de Yuna est basse. Mais la main qu'elle tient brûle.*"
+        "text": "*La main de Yuna est plus chaude que je ne le pensais. — C'est tout.*"
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
-        "text": "*Entre les rayonnages de la salle d'archives souterraine. Yuna appuie son front contre mon dos par derri?re.*"
+        "text": "*Entre les rayonnages de la salle d'archives souterraine. Yuna appuie son front contre mon dos par derrière.*"
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
@@ -751,7 +750,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "{name}",
-        "text": "*Yuna se retourne. Ses pas sont rapides. — Elle ne court pas vraiment, mais c'est la démarche de quelqu'un qui veut courir.*"
+        "text": "*Yuna se retourne. Ses pas sont rapides. — Elle ne court pas vraiment, mais c'est la démarche de quelqu'un qui veut courir. C'était le pire choix. — J'entends le mur de Yuna se refermer.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -767,7 +766,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Incapable de quitter l'arrière de l'école pendant un moment, je suis finalement rentrée chez moi. Les mots que j'ai entendus aujourd'hui n'étaient pas légers. C'est pourquoi ils restent plus longtemps.*"
+        "text": "*Incapable de quitter l'arrière du lycée pendant un moment, je suis finalement rentré chez moi. Les mots que j'ai entendus aujourd'hui n'étaient pas légers. C'est pour ça qu'ils restent plus longtemps.*"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -791,11 +790,11 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*Un message sur mon téléphone.*"
+        "text": "*L'écran de mon téléphone s'allume. Une phrase courte — et c'est pour ça que ça fait encore plus mal.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*J'?cris une r?ponse, puis je l'efface. J'ai l'impression que quoi que je dise, c'est d?j? trop tard.*"
+        "text": "*J'écris une réponse, puis je l'efface. J'ai l'impression que quoi que je dise, c'est déjà trop tard.*"
     },
     "day4_hidden_msg_branch": {
         "name": "Système",

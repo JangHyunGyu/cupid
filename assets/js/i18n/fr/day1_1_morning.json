@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "{name}",
-        "text": "*Sa voix est posée. Pas froide, mais avec ce ton de quelqu'un qui a tout anticipé.*"
+        "text": "*Sa voix est posée. Pas froide, mais avec une certaine décontraction.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Elle esquisse un sourire. Juste le coin des lèvres qui se relève. — Sans m'en rendre compte, je souriais aussi.*"
+        "text": "*Elle esquisse un sourire. Sans m'en rendre compte, je souriais aussi. Seoyeon se dirige vers le portail en me faisant signe de la suivre.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "C'est parce que t'es nouveau ? T'as aucun filtre. J'aime bien."
+        "text": "C'est parce que t'es nouveau ? T'as aucun filtre. C'est marrant."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Oh ! Un nouveau ! Enfin une nouvelle recrue !"
+        "text": "Oh ! Un nouveau mec ! Enfin une nouvelle recrue !"
     },
     "classroom_dain_2": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Son dos est parfaitement droit. — Ce qui se cache derrière cette aisance, j'aimerais bien le savoir.*"
+        "text": "*Son dos est parfaitement droit. — Derrière cette aisance, qu'est-ce qui se cache.*"
     },
     "classroom_2_b": {
         "name": "{name}",

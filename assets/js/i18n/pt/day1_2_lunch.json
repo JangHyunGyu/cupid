@@ -128,7 +128,7 @@
         "name": "{name}",
         "text": "*Seoyeon está segurando a omelete enrolada.*",
         "choices": [
-            "Aceitar",
+            "Aceitar e comer",
             "Ia ficar mais gostosa se você mesma comesse"
         ]
     },
@@ -204,7 +204,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Pão de coco com leite de morango — melhor combinação de felicidade por caloria! Confia!"
+        "text": "Pão doce com leite de morango — melhor combinação de felicidade por caloria! Confia!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "lunch_dain_12_b": {
         "name": "Dain",
-        "text": "Ah, tá bom! Eu pago, eu pago! Moça, dois pães de coco!"
+        "text": "Ah, tá bom! Eu pago, eu pago! Moça, dois pães doces!"
     },
     "lunch_dain_14": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Algo está preso na mesa da Yuna. Um marcador de livro antigo. Tem algo escrito — mas não consigo ler direito. Yuna coloca a mão em cima dele sem perceber. Algo precioso, talvez.*"
+        "text": "*Algo está preso no livro da Yuna. Um marcador de livro antigo. Tem algo escrito — mas não consigo ler direito. Yuna coloca a mão em cima dele sem perceber. Algo precioso, talvez.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",

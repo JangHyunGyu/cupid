@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Le portail du lycée est entrouvert. Il y a un bruit à l'intérieur. - La personne qui en sort, c'est ma prof principale.*"
+        "text": "*Le portail du lycée est entrouvert. Il y a un bruit à l'intérieur. — La personne qui en sort. C'est ma prof principale. Elle s'approche. — Vue de loin, elle marche si normalement qu'on ne dirait pas la même personne qui s'était mise en colère.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Professeure principale",
@@ -117,7 +117,7 @@
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Professeure principale",
-        "text": "...Un peu. Après que tu l'aies vu hier — j'ai pu écrire davantage."
+        "text": "...Un peu. Après que tu l'aies vu hier — bizarrement, j'ai pu écrire un peu plus."
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Professeure principale",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Matin de dimanche. Par habitude, je vais à l'infirmerie. — Depuis quand c'est une habitude ? J'ouvre la porte. L'infirmière est sur sa chaise. Blouse blanche. — Mais elle n'est pas comme d'habitude. Pas de malice.*"
+        "text": "*Matin de week-end. Par habitude, je vais à l'infirmerie. — Depuis quand c'est une habitude ? J'ouvre la porte. L'infirmière est sur sa chaise. Blouse blanche. — Mais elle n'est pas comme d'habitude. Pas de malice.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Infirmière",
@@ -343,7 +343,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Elle devait être en colère, mais elle voulait quand même entendre mes excuses. Ou peut-être qu'elle ne pouvait pas abandonner même en étant furieuse. Dans tous les cas, je ne devrais pas prendre à la légère la raison de sa venue.*"
+        "text": "*Elle devait être en colère — mais elle est quand même venue. Je ne dois pas fuir devant cette personne.*"
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*L'espièglerie a disparu. 0,5 seconde. Le compteur de sincérité de cette personne se déplace par intervalles de 0,5 seconde.*"
+        "text": "*L'espièglerie a disparu. — Quand je vois cette expression, mon cœur se serre.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Infirmière",

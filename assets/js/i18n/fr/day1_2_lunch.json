@@ -9,7 +9,7 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "Hé ! T’as mangé ?! On va à la boutique ! Je t’offre du pain... le perdant paie !"
+        "text": "Hé ! T'as mangé ?! On va à la boutique ! On parie pour du pain, le perdant paie !"
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "lunch_seo_14": {
         "name": "Seoyeon",
-        "text": "Une présidente du conseil doit être bonne en tout."
+        "text": "Si la présidente du conseil ne sait même pas préparer un bento, ça le fait pas."
     },
     "lunch_seo_15": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
-        "text": "Tu veux revenir la prochaine fois ?"
+        "text": "Garde ta pause déjeuner libre la prochaine fois."
     },
     "lunch_seo_after_3": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Le pain soboro et le lait à la fraise, c'est une combinaison vraiment délicieuse. Crois-moi !"
+        "text": "Le pain soboro et le lait à la fraise, c'est le meilleur ratio calories-bonheur ! Crois-moi !"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "Haha génial !! Je t’apprends tout ! Gymnase après les cours, deal ?!"
+        "text": "Haha génial !! Entraînement spécial à partir d'aujourd'hui ! Gymnase après les cours, on commence par l'échauffement, deal ?!"
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
@@ -440,7 +440,7 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Sourire* Tu es très méfiant. Je suis juste montée parce que c'était étouffant de rester en classe."
+        "text": "*Sourire* Tu es très méfiant. Quand on passe son temps à gérer les gens en bas, parfois on a juste envie d'être seul."
     },
     "lunch_seo_c1_2_b": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Quelque chose est glissé dans le bureau de Yuna. Un vieux marque-page. Il y a de l'écriture dessus — mais je n'arrive pas à lire. Yuna pose inconsciemment sa main dessus. Quelque chose de précieux, peut-être.*"
+        "text": "*Quelque chose est glissé dans le bureau de Yuna. Un vieux marque-page. Il y a de l'écriture dessus — mais je n'arrive pas à lire. Yuna pose inconsciemment sa main dessus. Quelque chose de précieux, peut-être. Je prends un livre au hasard dans les rayonnages et je l'ouvre.*"
     }
 }

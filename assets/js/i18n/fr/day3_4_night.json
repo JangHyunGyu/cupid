@@ -170,7 +170,7 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*J'espère juste que tu ne prendras pas à la légère le choix de la personne à côté de qui tu vas te tenir.*"
+        "text": "*J'aimerais juste que tu comprennes le poids du choix de la personne à côté de qui tu vas te tenir.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
-        "text": "*'Supprimer cette photo ?'*"
+        "text": "*'Supprimer cette photo ?' Mon doigt s'arrête au-dessus du bouton de confirmation.*"
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
@@ -214,7 +214,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...Oui. C'est à moi d'abord de dire non à mon passé.*"
+        "text": "*...Oui. C'est à moi d'abord de dire non à mon passé. — Supprimé.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Effacer la photo, c'était facile. Un seul doigt suffisait. — Les sentiments, ça prend plus de temps.*"
+        "text": "*Effacer la photo, c'était facile. Un seul doigt suffisait. — Les sentiments, ça prend plus de temps. Mais quand même. Ce qui est effacé — ouvre la voie pour la suite.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",

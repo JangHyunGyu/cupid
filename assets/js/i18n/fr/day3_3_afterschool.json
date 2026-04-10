@@ -214,8 +214,8 @@
         "name": "{name}",
         "text": "*Dain s’assoit sur le banc. Elle se frotte le genou.*",
         "choices": [
-            "S’asseoir à côté d’elle et attendre en silence",
-            "T’as des patchs ? Je vais en chercher"
+            "...Ça va ? Ne force pas. Tu devrais te reposer aujourd'hui.",
+            "Hé, un service de plus. Si je le rate, t'as gagné."
         ]
     },
     "after3_dain_choice1": {
@@ -276,7 +276,7 @@
     },
     "after3_confront_6": {
         "name": "Seoyeon",
-        "text": "Sois honnête. Tu as promis le week-end à toutes ?"
+        "text": "Ce bazar au déjeuner... Tu pensais à quoi en prenant rendez-vous avec nous trois ?"
     },
     "after3_confront_choice": {
         "name": "{name}",
