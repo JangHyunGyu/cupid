@@ -1,7 +1,7 @@
 {
     "morning4_start": {
         "name": "{name}",
-        "text": "*Quarto dia. Fim de semana. — Hoje nao e escola. E um encontro.*"
+        "text": "*Quarto dia. Fim de semana. — Hoje não é escola. É um encontro.*"
     },
     "morning4_nightmare_seo": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Manhã de domingo. Por hábito, vou até a enfermaria. — Quando isso virou hábito? Abri a porta. A Enfermeira está sentada na cadeira. De jaleco branco. — Mas está diferente do normal. Sem brincadeira.*"
+        "text": "*Manhã de fim de semana. Por hábito, vou até a enfermaria. — Quando isso virou hábito? Abri a porta. A Enfermeira está sentada na cadeira. De jaleco branco. — Mas está diferente do normal. Sem brincadeira.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermeira",

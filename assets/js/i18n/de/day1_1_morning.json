@@ -9,7 +9,7 @@
     },
     "name_input_scene": {
         "name": "System",
-        "text": "Transferschüler, wie heißt du?"
+        "text": "Hey, Neuer — wie heißt du?"
     },
     "gate_1": {
         "name": "{name}",
@@ -17,11 +17,11 @@
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
-        "text": "Transferschüler? Du bist {name}, oder?"
+        "text": "Der Neue? Du bist {name}, oder?"
     },
     "seoyeon_meet_2": {
         "name": "{name}",
-        "text": "*Ihre Stimme ist ruhig. Nicht kalt, aber mit diesem Ton von jemandem, der alles vorhergesehen hat.*"
+        "text": "*Ihre Stimme ist ruhig. Nicht kalt, aber irgendwie gelassen.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Bin die Schülersprecherin. Neue Schüler einzuführen gehört zu meinem Job."
+        "text": "Bin die Schülersprecherin. Neue einzuweisen ist mein Ressort."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
@@ -37,7 +37,7 @@
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "Die Schülersprecherin persönlich? Wie ehrenvoll."
+        "text": "Die Schülersprecherin persönlich? Ich fühl mich geehrt."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Sie schmunzelt. Nur die Mundwinkel zucken nach oben. — Und ohne es zu merken, lächle ich zurück. Seoyeon geht aufs Tor zu und winkt mich heran.*"
+        "text": "*Sie schmunzelt. Und ohne es zu merken, lächle ich zurück. Seoyeon geht aufs Tor zu und winkt mich heran.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "hallway_12": {
         "name": "Seoyeon",
-        "text": "Kommt drauf an, wie brav du bist."
+        "text": "Kommt drauf an, ob du dich gut anstellst."
     },
     "hallway_13": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Ach, Frau Lehrerin, so ist's halt am bequemsten. Egal — schön, dich zu sehen, Neuer!"
+        "text": "Ach, Frau Lehrerin, so ist's halt am bequemsten. Egal — willkommen, Neuer!"
     },
     "classroom_dain_5": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Silberweißes Haar. Rote Augen, halb geschlossen und verschlafen. Tattoos bedecken ihre Arme. — Sie schaut nicht mal in meine Richtung. Als wäre ein Transferschüler nichts Besonderes. Die Schüler um sie herum schauen ebenfalls nicht zu ihr. Bewusst. Als säße dort niemand.*"
+        "text": "*Silberweißes Haar. Rote Augen, halb geschlossen und verschlafen. Tattoos bedecken ihre Arme. — Sie schaut nicht mal in meine Richtung. Als wäre der Neue nichts Besonderes. Die Schüler um sie herum schauen ebenfalls nicht zu ihr. Bewusst. Als säße dort niemand.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Sie sagte 'wahrscheinlich'. Das heißt, ich bin vielleicht besser als eine Ballmaschine. Meine Position ist prekär.*"
+        "text": "*Sie sagte 'wahrscheinlich'. Das heißt, ich bin vielleicht besser als eine Ballmaschine. Meine Position ist wackelig.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Ich schaue zu Yuna. Sie blickt immer noch aus dem Fenster. Aber ich glaube, ihr Ohrläppchen hat sich leicht bewegt. Den Zettel hat das Mädchen geschickt, das eben aus dem Fenster gestarrt hat. Tut sie nur so, als wäre es ihr egal, oder ist es ihr wirklich egal.*"
+        "text": "*Ich schaue zu Yuna. Sie blickt immer noch aus dem Fenster. Aber ich glaube, ihr Ohrspitze hat sich leicht bewegt. Den Zettel hat das Mädchen geschickt, das eben aus dem Fenster gestarrt hat. Tut sie nur so, als wäre es ihr egal, oder ist es ihr wirklich egal.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
@@ -302,6 +302,6 @@
     },
     "classroom_minsu_2_b": {
         "name": "Minsu",
-        "text": "*Nickt in Dains Richtung* Deine Ausdauer."
+        "text": "*Deutet mit dem Kinn in Dains Richtung* Deine Ausdauer."
     }
 }

@@ -57,7 +57,7 @@
     },
     "lunch3_meal_10_d": {
         "name": "{name}",
-        "text": "*Todas juntas?! Ótimo!! As exclamações estão vivas. — Mas a voz está meio tom abaixo. Normalmente ela já teria arrastado cadeiras, mas hoje não sai do lugar.*"
+        "text": "*Todas juntas?! Ótimo!! As exclamações da Dain estão vivas. — Mas a voz está meio tom abaixo. Normalmente ela já teria arrastado cadeiras, mas hoje não sai do lugar.*"
     },
     "lunch3_meal_10_e": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
-        "text": "*A última coloca a dela na mesa, em silêncio.*"
+        "text": "*A última coloca a dela na mesa, em silêncio. Yuna pousa o pão.*"
     },
     "lunch3_expose_9": {
         "name": "Yuna",
@@ -311,7 +311,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "{name}",
-        "text": "*Dain vira o rosto. Não deu uma mordida no pão de creme.*"
+        "text": "*Dain vira o rosto. Não deu uma mordida no pão doce.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",

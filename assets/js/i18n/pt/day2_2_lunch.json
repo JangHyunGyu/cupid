@@ -488,7 +488,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ai, tá bom... Dois pães, por favor..."
+        "text": "Ai, tá bom... Dois pães doces, por favor..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -512,7 +512,7 @@
     },
     "lunch2_dain_13_b": {
         "name": "{name}",
-        "text": "*Dain dá uma mordida exageradamente grande no pão. Como se a pergunta não fosse nada demais.*"
+        "text": "*Dain dá uma mordida exageradamente grande no pão doce. Como se a pergunta não fosse nada demais.*"
     },
     "lunch2_dain_choice": {
         "name": "{name}",
@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Enfermeira",
-        "text": "*Dentro da enfermaria. Documentos empilhados na mesa, e a enfermeira está sentada na cadeira.*"
+        "text": "*Levantando a cabeça* Primeira vez aqui, né? Você é o aluno transferido."
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -577,7 +577,7 @@
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Enfermeira",
-        "text": "...Opa? Você é o de mais cedo. O que te traz na hora do almoço?"
+        "text": "Primeira vez, né? Vem, vou limpar e passar antisséptico."
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
@@ -585,7 +585,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Parece melhor do que de manhã. Que bom.*"
+        "text": "*O tom brincalhão continua o mesmo. Mas os olhos já estão examinando o ferimento.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -645,7 +645,7 @@
     },
     "lunch2_dain_end_w": {
         "name": "Enfermeira",
-        "text": "Pronto, volta pra aula. — E da próxima vez, vem sem estar machucado."
+        "text": "Pronto, volta pra aula. — Se voltar, vou aumentar os itens do exame."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",

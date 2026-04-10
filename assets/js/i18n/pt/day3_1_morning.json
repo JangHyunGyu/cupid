@@ -190,7 +190,7 @@
   },
   "morning3_react_yuna_1_b": {
     "name": "{name}",
-    "text": "*Dain, sem cerimônia.*"
+    "text": "*Dain, sem cerimônia. Voltou pra sala.*"
   },
   "morning3_react_yuna_2": {
     "name": "Dain",
@@ -202,7 +202,7 @@
   },
   "morning3_react_dain_1": {
     "name": "Seoyeon",
-    "text": "Cardio pesado logo de manhã. Quer dividir minha marmita no almoço?"
+    "text": "Cardio pesado logo de manhã. Quer minha marmita no almoço?"
   },
   "morning3_react_dain_2": {
     "name": "{name}",
@@ -512,7 +512,7 @@
   },
   "hidden_nurse_d3_5_i": {
     "name": "Enfermeira",
-    "text": "Isso é consultoria amorosa?"
+    "text": "Isso é conselho amoroso?"
   },
   "hidden_nurse_d3_5_j": {
     "name": "{name}",
@@ -753,7 +753,7 @@
     "text": "*Depois de ler o bilhete de Yuna...*",
     "choices": [
       "Faço que sim com a cabeça",
-      "Balanço a cabeça sutilmente que não"
+      "Nego sutilmente com a cabeça"
     ]
   },
   "morning3_date_yuna_accept": {
