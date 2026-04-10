@@ -23,7 +23,8 @@ class StateManager {
          * - 게임 시작 시 이름 입력 씬에서 설정됨
          * - 시나리오의 {name} 패턴이 이 값으로 치환됨
          */
-        this.playerName = "주인공";
+        const lang = window.GAME_LANG || 'ko';
+        this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista" }[lang] || "주인공";
 
         /**
          * 현재 게임 내 날짜
