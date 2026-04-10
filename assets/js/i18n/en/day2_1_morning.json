@@ -14,11 +14,11 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "LOL that knocked you over?! Hit the gym, dude!"
+        "text": "Haha, that knocked you over?! You need to work out!"
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "Bit early for this much energy, no?"
+        "text": "Isn't it a little early for this much energy?"
     },
     "morning2_dain_5": {
         "name": "Dain",
@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*If there's a planet where this volume at 8 a.m. counts as normal, Dain runs it.*"
+        "text": "*If there's a planet where this kind of volume at 8 a.m. is normal, Dain's the president.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*She didn't stop walking. But her eyes were definitely on me. The moment Seoyeon turned the corner — I thought I saw her smile drop. Imagining it?*"
+        "text": "*She didn't slow down. But her eyes were definitely on me. The second Seoyeon turned the corner — I could've sworn her smile faded. Or did I imagine it?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Dude. Two days here and the council president comes to YOU to say hi? I've been here a year and she won't even make eye contact."
+        "text": "Dude. Two days in and the council president comes to say hi to YOU? I've been here a year and she won't even look my way."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "Even the council president's into our transfer kid? Mister Popular over here!"
+        "text": "Even the council prez is into our transfer kid? Someone's popular!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "I found you first, so you're OUR transfer kid! Dibs! Called it!"
+        "text": "I found you first, so you're OUR transfer kid! I called dibs!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Can you actually call dibs on a person? — And the scary part is, I don't really mind.*"
+        "text": "*Can you even call dibs on a person? — The scary part is, I don't mind.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Homeroom Teacher",
-        "text": "Well, teachers worrying about students — comes with the job. Strictly professional."
+        "text": "Teachers worrying about students — it's part of the job description. Strictly professional."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -210,11 +210,11 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Homeroom Teacher",
-        "text": "*Covers her mouth with her coffee cup* ...Failed to keep a straight face. Fine. Out with it."
+        "text": "*Hides behind her coffee cup* ...Poker face failed. Fine. Get out of here."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Homeroom Teacher",
-        "text": "*waving hand dismissively* Come on, stop that. It's embarrassing. ...Go on, get going."
+        "text": "*waving hand* Oh, stop. That's embarrassing. ...Go on, get out of here."
     },
     "hidden_homeroom_d2_11": {
         "name": "Homeroom Teacher",
@@ -346,7 +346,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*She hid her mouth, but her fingers fiddle with the cup. So she has a tell when she's flustered too.*"
+        "text": "*She hid behind the cup, but her fingers are fiddling with it. Even she has a tell when she's flustered.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",

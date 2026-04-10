@@ -46,7 +46,7 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Which means you were early. Not that I'm late.*"
+        "text": "*That means you were early. Not that I was late.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -54,7 +54,7 @@
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "Tteokbokki, where'd that come from?"
+        "text": "Where did tteokbokki come from?"
     },
     "after2_dain_8": {
         "name": "Dain",
@@ -78,11 +78,11 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Genuinely shocked* WHAT?! Did I just get played?!"
+        "text": "*Jaw drops* WHAT?! Did you just hustle me?!"
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "Didn't play you. You just never asked."
+        "text": "Didn't hustle you. You just never asked."
     },
     "after2_dain_16": {
         "name": "Dain",
@@ -98,7 +98,7 @@
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*She pulled her hand away. Doesn't look sorry at all. — My palm is still warm.*"
+        "text": "*She pulls her hand back. Doesn't look sorry at all. — My palm is still warm.*"
     },
     "after2_dain_end": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*It's a commanding tone, yet somehow familiar. — Is this their way of asking for things?*"
+        "text": "*Commanding tone, but somehow it's starting to feel familiar. — Is this her version of asking nicely?*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -222,7 +222,7 @@
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...You're the first person to throw a line like that out so casually."
+        "text": "...You're the first person to just toss out a line like that."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -330,7 +330,7 @@
     },
     "after2_yuna_6": {
         "name": "{name}",
-        "text": "*She was waiting. — Quietly, that makes me happy.*"
+        "text": "*She was waiting. — The thought quietly makes me happy.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -532,11 +532,11 @@
     },
     "after2_seo_4_b": {
         "name": "{name}",
-        "text": "*The word 'favor' doesn't seem to exist in this person's vocabulary.*"
+        "text": "*The word 'please' doesn't seem to exist in her vocabulary.*"
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "*She has a knack for making even requests sound like commands. We start sorting documents. Event budgets, club applications. Quite a stack.*"
+        "text": "*She has a gift for making requests sound like orders. We start sorting documents. Event budgets, club applications. Quite the pile.*"
     },
     "after2_seo_8b4_b": {
         "name": "{name}",
@@ -592,7 +592,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Said like a joke, but Minsu's eyes aren't really laughing.*"
+        "text": "*Sounds like a joke, but Minsu's eyes aren't in on it.*"
     },
     "minsu_warn_1_b": {
         "name": "{name}",

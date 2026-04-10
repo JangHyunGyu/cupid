@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Back in my room. Sprawled on the bed. For a first day — I'm completely wiped. But it's not a bad kind of tired.*"
+        "text": "*Back in my room. Collapsed on the bed. For a first day — I'm drained. But it's not a bad kind of tired.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -25,7 +25,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*She sent 'On the house' as its own message. On purpose.*"
+        "text": "*She sent 'On the house' as a separate message. Deliberately.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -37,7 +37,7 @@
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*'I'll save your seat.' — I set the phone down. Slower than I meant to.*"
+        "text": "*'I'll save your seat.' — My hand lingers as I set the phone down.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
@@ -53,11 +53,11 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Three texts back to back. Does she even breathe between messages?*"
+        "text": "*Three texts in a row. Does she ever pause between messages?*"
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Just about to drift off when — my phone buzzes one more time.*"
+        "text": "*Almost asleep when — my phone buzzes one more time. 11 PM. Who's up?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*Does the word 'no' just not exist in her vocabulary?*"
+        "text": "*Does the concept of 'no' even exist in her world?*"
     },
     "night_end_1": {
         "name": "{name}",
@@ -125,15 +125,15 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*A personal note tucked inside a class announcement? — I can't quite stop myself from smiling.*"
+        "text": "*A personal message buried in a class announcement? — I can't keep the smile off my face.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*There's an alert in the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back tomorrow if the symptoms continue. Drink plenty of water. — the ♥ is purely a medical concern ^^'*"
+        "text": "*An alert in the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back tomorrow if symptoms continue. Drink lots of water. — the ♥ is strictly a medical concern ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*A school nurse who puts hearts in chart notes. I've never seen anyone use emojis in a medical file before.*"
+        "text": "*A school nurse who puts hearts in medical records. Who uses emojis in a health chart?*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

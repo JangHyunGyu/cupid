@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Today, unusually — all three are gathered in one place. {name} opens the lunchbox. Seoyeon naturally sits beside, Dain plops down across, and Yuna slips in from the corner munching her own bread.*"
+        "text": "*Lunchtime. Today, unusually — all three are gathered in one place. {name} opens the lunchbox. Seoyeon naturally sits beside, Dain flops down across from us, and Yuna drifts in from the corner eating her own bread.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -164,11 +164,11 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...'Couldn't say no.' That's the cruelest thing you could've said, {name}."
+        "text": "...'Couldn't say no.' Do you have any idea how cruel that sounds, {name}?"
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
-        "text": "Kindness that can't say no just gives people false hope."
+        "text": "The kind of kindness that can't say no — it just builds false hope."
     },
     "lunch3_expose_honest_4": {
         "name": "{name}",
@@ -200,7 +200,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "{name}",
-        "text": "*Dain turns her head away. She hasn't touched her soboro bread.*"
+        "text": "*Dain turns her head away. She hasn't touched her crumble bun.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",

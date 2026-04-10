@@ -99,7 +99,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "...Take care of her. Seriously."
+        "text": "...Be good to her. Seriously."
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Leaving school.* Hey, really?! ...Really? I mean, I did wait. But if I just smile right away after waiting, that's a bit unfair, isn't it? So this time, say it all the way."
+        "text": "*Leaving school.* Wait, seriously?! ...For real? I mean, yeah, I waited. But if I just smile now like everything's fine, that's kind of unfair, right? So this time — say the whole thing."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

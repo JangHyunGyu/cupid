@@ -13,7 +13,7 @@
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
-        "text": "What you saw today, that’s a secret"
+        "text": "What you saw today — keep it between us"
     },
     "night3_faithful_msg_seo_2": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Masked with ‘haha’ — but the sincerity bleeds through.*"
+        "text": "*Hidden behind a ‘lol’ — but the sincerity shows through anyway.*"
     },
     "night3_dream_1": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
-        "text": "Be like that with me only."
+        "text": "Be that way only with me."
     },
     "night3_cheat_msg_3": {
         "name": "Seoyeon",
@@ -150,7 +150,7 @@
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*I kept it because deleting it felt like erasing those feelings too. But now it's not lingering attachment — it's a record. — Its purpose is done.*"
+        "text": "*I kept it because deleting it felt like erasing the guilt too. But now it's not attachment — it's just a record. And that record has served its purpose.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
@@ -190,11 +190,11 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Same as with Sojeong. I knew, and I stayed silent. At my old school I watched Sojeong fall apart and kept my mouth shut. At this school — again.*"
+        "text": "*Just like with Sojeong. I knew, and I said nothing. At my old school I watched Sojeong fall apart and kept my mouth shut. And at this school — I did it again.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*This school: regret from telling everyone. The problem isn't 'speak or stay silent' — it's 'to whom.'*"
+        "text": "*This school: regretting saying it to everyone. The problem was never 'speak up or stay silent' — it was 'to whom.'*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",

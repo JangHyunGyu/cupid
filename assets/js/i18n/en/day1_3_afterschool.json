@@ -106,7 +106,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*On my way out, my feet stop once. The face of the homeroom teacher — the one who'd been reading the room until the very end — comes back to me. I stand in front of the faculty office, knock, and open the door.*"
+        "text": "*I'm about to leave when my feet stop on their own. I keep thinking about the homeroom teacher — the way she watched everyone until the very end. I find myself standing in front of the faculty office. I knock and push the door open.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",
@@ -114,7 +114,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*It's the homeroom teacher. Her cardigan is even more disheveled than before. Looks like the day took a toll on her.*"
+        "text": "*The homeroom teacher. Her cardigan is even more rumpled than this morning. Looks like the day put her through the wringer.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Homeroom Teacher",
@@ -150,27 +150,27 @@
     },
     "after_homeroom_honest_1": {
         "name": "Homeroom Teacher",
-        "text": "Feeling overwhelmed is normal. If you were calm and collected on day one at a new school, that'd be the weird part."
+        "text": "Overwhelmed is normal. If you were cool and collected on your first day at a new school, that'd be the weird part."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "Have you ever been the new kid somewhere, miss?"
+        "text": "Have you ever transferred schools yourself, miss?"
     },
     "after_homeroom_honest_3": {
         "name": "Homeroom Teacher",
-        "text": "...Something like it. I've been dropped into a new place with zero warning before."
+        "text": "...Something like that. I've been thrown into a new place without any warning."
     },
     "after_homeroom_honest_4": {
         "name": "Homeroom Teacher",
-        "text": "If you can't hack it, come to the office. I'll spring for a coffee — wait, you're a student. Juice, then."
+        "text": "If it gets rough, swing by the office. I'll treat you to a coffee — wait, you're a student. Juice, then."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "A teacher buying her student drinks?"
+        "text": "A teacher buying drinks for a student?"
     },
     "after_homeroom_honest_6": {
         "name": "Homeroom Teacher",
-        "text": "Call it professional concern."
+        "text": "Let's call it professional concern."
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*She vanishes down the hall. Long hair swaying behind her. — I watched her go a little too long.*"
+        "text": "*She disappears down the hallway. Long hair swaying behind her. — I watched her leave a little longer than I should have.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
@@ -272,19 +272,19 @@
     },
     "after_nurse_enter_8": {
         "name": "School Nurse",
-        "text": "You don't have to worry so much about being formal here. In the nurse's office, you can relax a little. That's what it's for."
+        "text": "Don't worry about being so polite in here. The nurse's office is a chill zone. That's kind of the whole point."
     },
     "after_nurse_enter_10": {
         "name": "School Nurse",
-        "text": "Oh, that's ancient history. I like this school. Everyone just comes in with minor scrapes here."
+        "text": "That's ancient history. I like it here. At this school, the injuries are all small."
     },
     "after_nurse_enter_11": {
         "name": "School Nurse",
-        "text": "If you get dizzy again, come see me. The nurse's office is always open. Just don't wait until you're barely holding out. That's the part that worries me."
+        "text": "If you get dizzy again, come back. My door's always open. Just don't tough it out and come too late. That's what worries me."
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",
-        "text": "Next time you feel sick — ah, well, better if there's no next time."
+        "text": "Next time you feel sick — actually, better if there isn't a next time."
     },
     "after_nurse_freetalk": {
         "name": "School Nurse",
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Professional concern.' — So she's the type who wraps her feelings in job titles.*"
+        "text": "*'Professional concern.' — She's the type to hide what she feels behind job titles.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -394,7 +394,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*She closes the attendance book and stands up. She reaches the doorway, then calls me back as if she remembered something a beat late.*"
+        "text": "*She closes the attendance book and stands. She's halfway to the door when she turns back, like she just remembered something.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
@@ -414,11 +414,11 @@
     },
     "after_nurse_enter_4_c": {
         "name": "School Nurse",
-        "text": "Your uniform's brand-new stiff. And you smell like fresh grass. *Sniff sniff* Oh — cherry blossoms in there too. A romantic transfer student."
+        "text": "Your uniform's brand-new stiff. And you've got that fresh-grass smell going. *Sniff sniff* Oh — cherry blossoms too. What a romantic transfer student."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Couple of sentences in and she's already running the conversation. She stands and walks over. Smooth, easy movements. — Her hand touches me and I tense up for no good reason.*"
+        "text": "*Two sentences in and she's already steering the conversation. She stands and comes over — smooth, unhurried. Her hand lands on me and I tense up for no reason.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*She waves me off with a light laugh. I notice the band-aid on the back of her hand. — A strange nurse's office. The not-bad kind of strange.*"
+        "text": "*She waves me off with a light laugh. I catch a glimpse of a band-aid on the back of her hand. — A strange nurse's office. The good kind of strange.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}
