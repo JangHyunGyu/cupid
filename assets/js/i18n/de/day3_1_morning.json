@@ -146,7 +146,7 @@
     },
     "morning3_date_dain_2": {
         "name": "{name}",
-        "text": "*Dains Finger trommeln auf der Tischkante. Ist sie nervös? — Nein. Dain wird doch nicht nervös. Das ist für sie Alltag.*"
+        "text": "*Dains Finger trommeln auf der Tischkante. Ist sie nervös? — Nein. Dain wird doch nicht nervös. Das ist für sie Alltag. ...Oder?*"
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
@@ -166,7 +166,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*Ich beobachte Dains Reaktion. Die Glocke klingelt, und kurz vor der Mittagspause entsteht wieder diese kleine Lücke.*"
+        "text": "*Ich beobachte Dains Reaktion. Die Glocke klingelt, und kurz vor der Mittagspause entsteht wieder diese kleine Lücke. Dain ging mit einem Lächeln zurück. — Damals wusste ich es nicht. Dass Dain aufgehört hatte, mit den Fingern zu trommeln und die Hände in die Taschen gesteckt hatte. Dass es Mut gebraucht hatte, mich zu fragen.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
@@ -185,7 +185,7 @@
         "text": "*Nachdem ich Yunas Notiz gelesen habe...*",
         "choices": [
             "Ich nicke ihr zu",
-            "Ich falte die Notiz und stecke sie in die Tasche"
+            "Ich schüttle leicht den Kopf"
         ]
     },
     "morning3_date_yuna_accept": {
@@ -446,7 +446,7 @@
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*Der Zettel: Ich dachte, du hättest kein Frühstück gehabt.*"
+        "text": "*Der Zettel: Ich dachte, du hast nicht gefrühstückt. — Jemand, der einen Zettel schreibt, obwohl sie es einfach sagen könnte. — Das ist Yuna.*"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Klassenlehrerin",
-        "text": "*Seufzend* ...Aufmerksam zu sein ist normalerweise eine Stärke. Manchmal ein Fehler."
+        "text": "*Seufzend* ...Wenn man nur sehen könnte, was man sehen will, wäre es einfacher."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Klassenlehrerin",
-        "text": "*Sie stockt. Die Hand, die das Manuskriptpapier berührt, hält inne.* ...Du bist der Erste, der das Ausdauer nennt."
+        "text": "*Leise lächelnd* ...Gut, dass du da bist. Ehrlich."
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",

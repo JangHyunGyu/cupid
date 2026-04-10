@@ -31,7 +31,7 @@
         "name": "{name}",
         "text": "*Ich bin nervös. Trotzdem möchte ich es dieses Mal richtig sagen.*",
         "choices": [
-            "Wenn du wegläufst, lauf ich dir hinterher, weißt du? Also bleib und hör mir zu.",
+            "Seoyeon. Warte kurz.",
             "...Schöner Wind."
         ]
     },
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Alle sehen dich als eine makellose Person. Aber ich erinnere mich immer wieder an die Momente, in denen du kurz deine Fassung verloren hast."
+        "text": "Seoyeon. Alle sehen dich als eine makellose Person. Aber ich erinnere mich immer wieder an die Momente, in denen du kurz kurz den Ausdruck nicht halten konntest."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -135,7 +135,7 @@
         "name": "{name}",
         "text": "*Mein Atem ist kürzer geworden. Dass diese Stille angenehm war — lag daran, dass es Yuna war. Das muss ich sagen.*",
         "choices": [
-            "Yuna. Lass mich dich eine Sache fragen.",
+            "Yuna. Ich muss dich was fragen.",
             "...Hier ist es wirklich schön."
         ]
     },
@@ -261,7 +261,7 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "Wenn deine Augen nicht auf mir ruhen — wird das Atmen schwer."
+        "text": "Wenn du mich nicht anschaust — wird's mir eng ums Herz."
     },
     "confess_dain_yes_4": {
         "name": "{name}",

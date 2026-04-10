@@ -143,7 +143,7 @@
     },
     "lunch3_expose_14": {
         "name": "Minsu",
-        "text": "...Alter. Geht's noch?"
+        "text": "...Alter. Bist du echt bescheuert?"
     },
     "lunch3_expose_15": {
         "name": "{name}",
@@ -155,7 +155,7 @@
         "choices": [
             "Es tut mir leid. Ihr seid alle so toll, dass ich nicht ablehnen konnte.",
             "Die Uhrzeiten sind unterschiedlich, also dachte ich, es wäre okay...",
-            "Fliehen"
+            "Abhauen"
         ]
     },
     "lunch3_expose_honest_1": {
@@ -176,7 +176,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
-        "text": "Ich mag keine unklaren Positionen. Wenn es so ist, ziehe ich mich lieber ganz zurück."
+        "text": "Ich mache nicht auf zweite Wahl. Dann bin ich lieber ganz raus."
     },
     "lunch3_expose_honest_6": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "lunch3_yuna_witness_1": {
         "name": "Seoyeon",
-        "text": "In der Bibliothek hat es nach Bento gerochen. ...Mit Yuna?"
+        "text": "In der Bibliothek hat es nach Lunchbox gerochen. ...Mit Yuna?"
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",

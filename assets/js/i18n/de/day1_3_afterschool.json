@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Klassenlehrerin",
-        "text": "Wer am ersten Tag schon alles perfekt macht, brennt später aus. Sei ruhig mal ein bisschen ungeschickt. — So, ab nach Hause."
+        "text": "Wer am ersten Tag schon alles perfekt macht, brennt später aus. Stell dich ruhig ein bisschen doof an. — Ab mit dir."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "after_homeroom_honest_9": {
         "name": "Klassenlehrerin",
-        "text": "Wenn du dich nicht einlebst, hol ich dich höchstpersönlich wieder ab."
+        "text": "Wenn du dich nicht einlebst, komm ich dich holen."
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Sie winkt und rennt los. — Beim Abstoppen hat sie ihr rechtes Bein leicht nachgezogen. Oder? Es ging zu schnell, um es genau zu sehen.*"
+        "text": "*Sie winkt und rennt los. — Beim Abstoppen hat sie kurz ihr rechtes Knie gehalten. Nur eine halbe Sekunde. Sofort wieder losgelassen, aber ich hab's gesehen.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -414,7 +414,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "Deine Uniform ist ja ganz steif. Riecht auch nach Gras. *Schnüffel* Oh, da mischt sich Kirschblütenduft rein. Ein romantischer Transferschüler."
+        "text": "Deine Uniform ist ja ganz steif. Riecht auch nach Stärke. *Schnüffel* Oh, da mischt sich Kirschblütenduft rein. Ein romantischer Neuer."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_11_k": {
         "name": "Schulkrankenschwester",
-        "text": "Oh, Transferschüler."
+        "text": "Oh, Neuer."
     },
     "after_nurse_enter_11_l": {
         "name": "Schulkrankenschwester",

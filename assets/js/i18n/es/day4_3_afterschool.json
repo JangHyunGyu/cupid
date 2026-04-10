@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Estoy nerviosa. Aun así, esta vez quiero decirlo bien.*",
+        "text": "*Estoy nervioso. Aun así, esta vez quiero decirlo bien.*",
         "choices": [
             "Seoyeon. Espera un momento.",
             "...Hace buen viento."
@@ -73,7 +73,7 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...Cuando dijiste \"soy indigna\" en la puerta de la escuela. Desde entonces, me quedé un poco pensativa."
+        "text": "...Cuando dijiste \"qué honor\" en la puerta de la escuela. Desde entonces, me quedé un poco pensativa."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
@@ -265,7 +265,7 @@
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*Esto no es una confesión de piedra, papel o tijera. Pero para mí lo es todo.*"
+        "text": "*No es una confesión de broma. Pero para mí lo es todo.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",

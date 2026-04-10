@@ -82,7 +82,7 @@
     },
     "lunch_seo_16": {
         "name": "Seoyeon",
-        "text": "*reicht ihm Stäbchen* Iss. Kalt schmeckt's nicht mehr."
+        "text": "*Reicht mir die Stäbchen* Iss. Kalt schmeckt's nicht mehr."
     },
     "lunch_seo_17": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Soboro-Brot und Erdbeermilch zusammen? Mega lecker! Glaub mir!"
+        "text": "Soboro-Brot und Erdbeermilch zusammen? bestes Preis-Glücks-Verhältnis! Glaub mir!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "lunch_yuna_22": {
         "name": "Yuna",
-        "text": "*legt ein Lesezeichen ein* ...Danke, dass du still warst."
+        "text": "*legt ein Lesezeichen ein* ...Dass du still warst."
     },
     "lunch_yuna_23": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "lunch_yuna_24": {
         "name": "Yuna",
-        "text": "War schön."
+        "text": "...War gut."
     },
     "lunch_yuna_25": {
         "name": "{name}",
@@ -452,7 +452,7 @@
     },
     "lunch_dain_12_b": {
         "name": "Dain",
-        "text": "Aaagh, okay!! Zwei Soboro-Brötchen!! Frau Verkäuferin!!"
+        "text": "Aaagh, okay!! Zwei Soboro-Brötchen!! Hey, zweimal Soboro bitte!!"
     },
     "lunch_yuna_5_b": {
         "name": "{name}",

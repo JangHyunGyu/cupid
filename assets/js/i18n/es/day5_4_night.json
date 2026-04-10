@@ -29,11 +29,11 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Es la primera vez que veo a Seoyeon tan derrumbada. - Está llorando.*"
+        "text": "*La azotea de Seoyeon. De pie entre las macetas que ella misma cultivó.*"
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*Por primera vez, se quita las gafas — y está llorando.*"
+        "text": "*Está llorando otra vez. No en el baño — sino delante de mí esta vez.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Vi la misma sonrisa cada día. No fueron cinco días — cada expresión real que Dain me mostró lo fue todo.*"
+        "text": "*La rodilla de Dain se dobla al aterrizar del salto. Sé que le duele. Pero — está sonriendo.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "Sistema",
@@ -422,7 +422,7 @@
     },
     "alone_2_b": {
         "name": "{name}",
-        "text": "*Los cerezos caen fuera de la ventana. Los mismos que me rozaron la nariz hace cinco días ahora se dispersan con el viento.*"
+        "text": "*La habitación está extrañamente silenciosa. Las voces que hasta hace poco resonaban en mis oídos también se alejan con el sonido de la puerta al cerrarse. Los cerezos caen tras la ventana. Los mismos que me rozaron la nariz hace cinco días ahora se dispersan con el viento.*"
     },
     "alone_4": {
         "name": "{name}",
@@ -498,15 +498,15 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
+        "text": "*Llega un mensaje de Seoyeon. 'He copiado la llave de la azotea para mañana. — Es un permiso, un permiso.' Podría simplemente haberlo llamado una invitación.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
-        "text": "*Parecía un rodeo, pero al final era aquí.*"
+        "text": "*Esta persona finge estar relajada hasta el final — y entrega sus sentimientos dándote una llave.*"
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Está bien ser torpe. Es nuestra primera vez, después de todo.*"
+        "text": "*Guardé la llave en el bolsillo. Mañana en la azotea — esta vez me toca a mí preparar el almuerzo.*"
     },
     "good_5_cg_seo": {
         "name": "Sistema",
@@ -542,15 +542,15 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
+        "text": "*Encuentro una nota doblada en la mochila. No sé cuándo la metió. 'Si terminaste el primer tomo, te presto el segundo. — Yuna'*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*Parecía un rodeo, pero al final era aquí.*"
+        "text": "*Yuna, en vez de hablar, prepara lo que sigue. Después del primer tomo viene el segundo. Después de hoy viene mañana. Esta es su manera de decir 'sigamos viéndonos'.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
-        "text": "*Está bien ser torpe. Es nuestra primera vez, después de todo.*"
+        "text": "*En el dorso de la nota, en letra pequeña: '...Leamos el final juntos.' La tinta lila pálido está corrida.*"
     },
     "good_5_cg_yuna": {
         "name": "Sistema",
@@ -578,15 +578,15 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Dudé, por eso lo supe. Cuáles eran mis verdaderos sentimientos.*"
+        "text": "*Un mensaje de Dain. '¿Alguien para hacer ejercicio mañana por la mañana?' Con signo de interrogación al final. Normalmente habría sido un signo de exclamación.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*Parecía un rodeo, pero al final era aquí.*"
+        "text": "*Es la primera vez que le importa que puedan rechazarla. Que Dain use un signo de interrogación — eso es valentía.*"
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Está bien ser torpe. Es nuestra primera vez, después de todo.*"
+        "text": "*Respondí. 'Hecho.' Sin signo de exclamación. Porque mañana iré corriendo en persona.*"
     },
     "good_5_cg_dain": {
         "name": "Sistema",
@@ -594,7 +594,7 @@
     },
     "day5_ending_confess_fail": {
         "name": "{name}",
-        "text": "*Se lo dije. Hablé. — Pero lo que volvió fue silencio.*"
+        "text": "*Reuní valor. Lo dije. — Pero lo que volvió fue un silencio con la cabeza gacha.*"
     },
     "confess_fail_cg_seo": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "confess_fail_5": {
         "name": "Sistema",
-        "text": "—- CONFESS FAIL END —-"
+        "text": "─── FRIEND END ───"
     },
     "day5_ending_friend": {
         "name": "{name}",
@@ -718,7 +718,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Con Sojeong me arrepentí de no elegir. Esta vez elegí a todas y las perdí a todas. — Al final es lo mismo. No pude elegir a una sola persona.*"
+        "text": "*Con Sojeong, guardé silencio y perdí a una persona. Esta vez le dije a todas y las perdí a todas. — Al final es lo mismo. No supe decirlo como debía.*"
     },
     "day5_ending_harem": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Los lunes Seoyeon. Los miércoles Yuna. Los viernes Dain. Entre medio se acumulan las mentiras para que no me descubran. Creí que sería dulce, pero enseguida empieza a faltarme el aire.*"
+        "text": "*Los lunes Seoyeon. Los miércoles Yuna. Los viernes Dain. El calendario del móvil es un campo de minas. Si digo el nombre del miércoles en lunes, se acabó.*"
     },
     "harem_5": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*Puedo fingir que soy feliz. Pero ni yo mismo puedo creer que este futuro vaya a acabar bien.*"
+        "text": "*Tres alarmas, tres personas, tres mentiras. — Para llamar a esto felicidad, los retortijones son demasiado frecuentes.*"
     },
     "harem_8": {
         "name": "Sistema",
@@ -911,7 +911,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Profesora",
-        "text": "*Mirando por la ventana* Terminé el manuscrito. Pude seguir adelante después de que lo leyeras primero. Dije \"con una línea es suficiente\", pero escribiste tres páginas. Después de ver eso, no tuve más excusas para posponerlo."
+        "text": "*Mirando por la ventana* ...Así que. Ya que lo terminé, estaba pensando en enviarlo a una editorial. — ¿Qué opinas?"
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
@@ -1024,7 +1024,7 @@
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*Las tiritas siguen en el cajón. Aunque ya no hacen falta. — Quien ya no necesita excusas, aún así no puede dejar el hábito.*"
+        "text": "*El cuaderno verde lima se guardó en lo más profundo del cajón. Lo que estaba escrito en la última página no era una carta, sino una sola línea. 'Yujin, ya estoy bien.' — Un punto final después de tres años.*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -1112,7 +1112,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "Enfermera",
-        "text": "*Girando la taza de café* El diploma surte efecto más rápido de lo que pensaba."
+        "text": "*Girando la taza de café* ...No pensé que extrañaría el olor de la enfermería después de graduarme."
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -1124,15 +1124,15 @@
     },
     "hidden_true_nurse_8_e": {
         "name": "Enfermera",
-        "text": "Oye. El Día 1, cuando viniste a la enfermería."
+        "text": "Oye. Estaba pensando en dimitir en ese entonces."
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
-        "text": "Porque estaba mareado."
+        "text": "¿Porque se sentía perdida?"
     },
     "hidden_true_nurse_8_g": {
         "name": "Enfermera",
-        "text": "Te toqué la frente y dije 'solo quería tocarte'. *Sonriendo suavemente* Fue una broma."
+        "text": "Pero cuando viniste — tuve un motivo para quedarme. *Sonriendo suavemente* Gracias."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",

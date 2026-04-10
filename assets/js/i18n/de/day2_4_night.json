@@ -78,11 +78,11 @@
     },
     "night2_reply_dain_1": {
         "name": "{name}",
-        "text": "Das Tteokbokki war scharf lol"
+        "text": "Das Tteokbokki war scharf haha"
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Lol verträgst du kein Scharfes oder was?!"
+        "text": "Haha verträgst du kein Scharfes oder was?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
@@ -90,7 +90,7 @@
     },
     "night2_reply_dain_4": {
         "name": "Dain",
-        "text": "Ah warte mildes Tteokbokki ist kein richtiges Tteokbokki lol"
+        "text": "Ah warte mildes Tteokbokki ist kein richtiges Tteokbokki hahaha"
     },
     "night2_reply_dain_5": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Schau aus dem Fenster — den dritten Stern"
+        "text": "Schau den dritten Stern an"
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Die Simulationen in meiner Notiz-App stehen bei Nummer 38. Es gibt keine 39. Weil es niemanden mehr gab, dem ich es schicken konnte. Ich habe mich nie geoutet, und ich habe sie nicht beschützt. Der Schulwechsel war nicht wegen Sojeong. Es war der Job meines Vaters. — Aber der Wechsel war mir nicht unangenehm. So musste ich nicht jeden Tag an Sojeongs leerem Platz vorbei.*"
+        "text": "*Die Entwürfe in meiner Notiz-App stehen bei Nummer 38. Es gibt keine 39. Weil es niemanden mehr gab, dem ich es schicken konnte. Gestanden hab ich ihr nichts, und ich habe sie nicht beschützt. Der Schulwechsel war nicht wegen Sojeong. Es war der Job meines Vaters. — Aber der Wechsel war mir nicht unangenehm. So musste ich nicht jeden Tag an Sojeongs leerem Platz vorbei.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Deshalb lasse ich gerade bei allen dreien die Tür offen. Ich gebe es ungern zu. Wenn ich mich zu schnell festlege, sehe ich nur noch sie, der Rest verschwimmt, und eines Tages bricht vielleicht wieder jemand zusammen, und ich merke es nicht. Es ist eine Versicherung. Ich weiß, dass es feige ist. Jeder würde mich einfach unentschlossen nennen. Aber — ich weiß, wie es ist, jemanden zu verlieren, weil sie die einzige war, die ich angesehen habe. Das macht mir am meisten Angst.*"
+        "text": "*— Deshalb lasse ich gerade bei allen dreien die Tür offen. Ich gebe es ungern zu. Wenn ich mich zu schnell festlege, sehe ich nur noch sie, der Rest verschwimmt, und eines Tages bricht vielleicht wieder jemand zusammen, und ich merke es nicht. Es ist eine Versicherung. Ich weiß, dass es feige ist. Für jeden bin ich einfach ein unentschlossener Feigling. Aber — ich weiß, wie es ist, jemanden zu verlieren, weil sie die einzige war, die ich angesehen habe. Das macht mir am meisten Angst.*"
     },
     "night2_end_2": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "AAAHH!!!!! Ich hab gerade vor Lachen meine Decke getreten lol!! Du MUSST morgen in die Turnhalle kommen!!"
+        "text": "AAAHH!!!!! Ich hab gerade vor Lachen meine Decke getreten hahaha!! Du MUSST morgen in die Turnhalle kommen!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",

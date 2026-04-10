@@ -79,7 +79,7 @@
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Entreguei o buquê.* Isso não é interesse profissional. Da minha parte."
+        "text": "*Entreguei o buquê.* Isso não é interesse pedagógico. Da minha parte."
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Professora",
@@ -179,7 +179,7 @@
     },
     "hidden_true_homeroom_6": {
         "name": "Professora",
-        "text": "...Só uma coisa. ...Vamos tomar um café. Café de verdade dessa vez, não suco."
+        "text": "...Só uma coisa. ...Vamos tomar um café. Dessa vez, café em vez de suco."
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
@@ -195,7 +195,7 @@
     },
     "hidden_true_homeroom_7_c": {
         "name": "Professora",
-        "text": "...Eu não deveria fazer isso. *— A voz se perde. E então ela sorri.*"
+        "text": "...Uma professora não deveria fazer isso. *— A voz se perde. E então ela sorri.*"
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
@@ -272,7 +272,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Ela voltou pro hospital universitário. Dessa vez, os pacientes chamam pelo nome. — Dra. Lee.*"
+        "text": "*Ela voltou pro hospital universitário. Dessa vez, os pacientes chamam pelo nome. — Enfermeira Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "Enfermeira",
-        "text": "*Girando a xícara de café* ...O diploma faz efeito mais rápido do que eu pensava."
+        "text": "*Girando a xícara de café* ...Não imaginei que sentiria falta do cheiro da enfermaria depois de me formar."
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -380,7 +380,7 @@
     },
     "hidden_true_nurse_8_e": {
         "name": "Enfermeira",
-        "text": "Sabe, no Dia 1, quando você veio pra enfermaria."
+        "text": "Sabe... naquela época, eu tava pensando em pedir demissão."
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
@@ -1097,7 +1097,7 @@
     },
     "friend_8": {
         "name": "{name}",
-        "text": "*Dia da formatura. Rolando a galeria do celular. Onde ficava a foto da Sojeong, agora tem uma foto de grupo com o pessoal desta escola — com ela ali.*"
+        "text": "*Dia da formatura. Rolando a galeria do celular. Onde ficava a foto da Sojeong, agora tem uma foto de grupo com o pessoal desta escola. Virando o rosto, igual àquela vez.*"
     },
     "friend_9": {
         "name": "{name}",
@@ -1169,7 +1169,7 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Segunda é Seoyeon. Quarta é Yuna. Sexta é Dain. Mentiras se acumulam entre os dias pra ninguém descobrir. Achei que seria doce, mas começa a sufocar rápido.*"
+        "text": "*Segunda é Seoyeon. Quarta é Yuna. Sexta é Dain. O calendário do celular é um campo minado. Se chamar pelo nome de quarta na segunda — acabou.*"
     },
     "harem_5": {
         "name": "{name}",

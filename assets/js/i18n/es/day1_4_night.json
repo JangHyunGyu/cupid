@@ -49,7 +49,7 @@
     },
     "night_msg_dain_3": {
         "name": "Dain",
-        "text": "*La verdad es que lo del pan me dolió jajaja*"
+        "text": "*Todavía me duele lo del pan de hoy, ay en serio jajaja*"
     },
     "night_msg_dain_4": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Estaba a punto de dormirme cuando — el teléfono suena una vez más.*"
+        "text": "*Estaba a punto de dormirme cuando — el teléfono suena una vez más. Las 11 de la noche. ¿Quién será?*"
     },
     "night_late_branch": {
         "name": "{name}",

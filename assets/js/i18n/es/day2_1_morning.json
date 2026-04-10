@@ -41,8 +41,8 @@
         "text": "*La misma letra prolija de ayer. Corta. Y el lugar es específico. — El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
     },
     "morning2_seo_1": {
-        "name": "{name}",
-        "text": "*Estoy a punto de guardar la nota en el bolsillo cuando... una voz familiar desde el pasillo.*"
+        "name": "Seoyeon",
+        "text": "*Pasando por el pasillo, echa un vistazo al aula.* ¿Dormiste bien ayer?"
     },
     "morning2_seo_4": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Profesora",
-        "text": "*haciendo una breve pausa* ...Novelas de misterio. No las de quién lo hizo, sino las que rastrean el motivo."
+        "text": "...Novelas de misterio. No las de quién lo hizo, sino las que rastrean el motivo."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Profesora",
@@ -190,7 +190,7 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Profesora",
-        "text": "Dain es ruidosa, ¿verdad? — Siempre es así. Pero una cría que arma alboroto y una a la que le sobra energía no son lo mismo."
+        "text": "Dain es ruidosa, ¿verdad? — Siempre es así. Pero una que arma alboroto y una a la que le sobra energía no son lo mismo."
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Profesora",
-        "text": "Bueno, que una profesora se preocupe por sus alumnos es normal. Es trabajo, trabajo."
+        "text": "Entra dentro de las tareas de gestión del aula asignada. Es trabajo."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon vino a mí primero. Su tono habitual, pero con un matiz de querer confirmación.*"
+        "text": "*Seoyeon vino a mí primero. Su tono relajado de siempre, pero con un matiz de querer confirmación. Dain echa un vistazo desde el fondo del aula. Desvía la mirada. Yuna se hunde más en su libro. Pasa las páginas más rápido.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Seguí a la profesora hasta la sala de profesores.* *Su escritorio está en la esquina. Papeles y una taza de café sobre la mesa, y — un cajón ligeramente entreabierto.*"
+        "text": "*Seguí a la profesora hasta la sala de profesores.* *Su escritorio está en la esquina. Papeles y una taza de café sobre la mesa, y — un cajón ligeramente entreabierto. En la esquina de la sala. Sobre el escritorio, una pila de papeles y — lo que parecen hojas de manuscrito.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Profesora",

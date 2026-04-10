@@ -49,7 +49,7 @@
     },
     "night_msg_dain_3": {
         "name": "Dain",
-        "text": "*Das Geld für das Brot tut mir immer noch weh ehrlich gesagt lolol*"
+        "text": "*Das Brötchengeld tut mir immer noch weh ey echt lolol*"
     },
     "night_msg_dain_4": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "night_dain_late_3": {
         "name": "Dain",
-        "text": "*Ein Nein zähl ich nicht lol*"
+        "text": "*Nein gilt nicht lol*"
     },
     "night_dain_late_4": {
         "name": "{name}",

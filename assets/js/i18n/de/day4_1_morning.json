@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Das Schultor steht einen Spalt offen. Von drinnen ist ein Geräusch zu hören. - Die Person, die dort herauskommt, ist meine Klassenlehrerin.*"
+        "text": "*Das Schultor steht einen Spalt offen. Drinnen rührt sich etwas. — Die Person, die herauskommt. Meine Klassenlehrerin. Sie kommt näher. — Aus der Ferne betrachtet geht sie so gewöhnlich, dass man kaum glaubt, sie sei dieselbe, die neulich wütend war.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Klassenlehrerin",
@@ -97,7 +97,7 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Klassenlehrerin",
-        "text": "Nennen wir es eine Erweiterung des pädagogischen Interesses. *leise murmelnd* Ein Kaffee geht doch, oder? — Naja, du bist Schüler, also Saft."
+        "text": "Sagen wir, es fällt unter pädagogisches Interesse. *leise murmelnd* Ein Kaffee wäre doch okay, oder? — Naja, du bist Schüler, also Saft."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Sonntagmorgen. Aus Gewohnheit gehe ich zum Krankenzimmer. — Seit wann ist das eine Gewohnheit? Ich öffnete die Tür. Die Krankenschwester sitzt auf ihrem Stuhl. Weißer Kittel. — Aber sie ist anders als sonst. Keine Verspieltheit.*"
+        "text": "*Wochenendmorgen. Aus Gewohnheit gehe ich zum Krankenzimmer. — Seit wann ist das eine Gewohnheit? Ich öffnete die Tür. Die Krankenschwester sitzt auf ihrem Stuhl. Weißer Kittel. — Aber sie ist anders als sonst. Keine Verspieltheit.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Schulkrankenschwester",
@@ -335,7 +335,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*Das ist ein Befehl. Sie macht selbst Verabredungen wie Anweisungen. Aber irgendwie ist es lustig.*"
+        "text": "*Ein Befehlston. Sie macht selbst Verabredungen wie Anweisungen. Aber wieso muss ich schmunzeln.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",
@@ -343,7 +343,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Sie muss wütend gewesen sein, aber trotzdem wollte sie meine Erklärung hören. Oder vielleicht konnte sie selbst im Zorn nicht aufgeben. So oder so — ich sollte den Grund, warum sie gekommen ist, nicht leichtfertig abtun.*"
+        "text": "*Sie muss wütend gewesen sein — aber trotzdem ist sie gekommen. Vor dieser Person darf ich nicht weglaufen.*"
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",

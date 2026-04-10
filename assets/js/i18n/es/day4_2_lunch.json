@@ -1,7 +1,7 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Frente a la fuente está Seoyeon. Ha llegado antes que yo.*"
+        "text": "*Frente a la fuente. Seoyeon está ahí. Ha llegado antes que yo. Parece otra persona. No — es la misma persona, pero otra faceta.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
@@ -25,7 +25,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "{name}",
-        "text": "*Ha dicho “no te confundas”, pero la mano con la que se aparta el pelo va demasiado deprisa.*"
+        "text": "*Ha dicho \"no te hagas ilusiones\", pero la mano con la que se aparta el pelo va demasiado deprisa.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -53,11 +53,11 @@
     },
     "date_seo_duck_4": {
         "name": "{name}",
-        "text": "*Suena casual — pero la experiencia de Seoyeon se filtra en esas palabras.*"
+        "text": "*Suena casual — pero la experiencia de Seoyeon se filtra en esas palabras. Pasamos por delante de una floristería.*"
     },
     "date_seo_flower_2": {
         "name": "{name}",
-        "text": "*Seoyeon empuja la puerta de la floristería. Suena una campanilla.*"
+        "text": "*Seoyeon empuja la puerta de la floristería. Suena una campanilla. Seoyeon elige una maceta pequeña. Una suculenta.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -73,7 +73,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Frente al café. Yuna está apoyada contra la pared. Un vestido negro y un bolso pequeño cruzado.*"
+        "text": "*Frente al café. Yuna está apoyada contra la pared. Vestido negro y un bolso pequeño cruzado. ¿Yuna siempre se veía así? — Es la primera vez que veo a Yuna fuera del uniforme.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "{name}",
-        "text": "*¿Otra vez? — Yuna está pidiendo un otra vez.*"
+        "text": "*¿Otra vez? — Yuna me pide un 'otra vez'.*"
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
@@ -233,7 +233,7 @@
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*Salimos de la sala de juegos a la calle.*"
+        "text": "*Salimos de la sala de juegos a la calle. Pasamos por una tienda de deporte. Dain se detiene frente al escaparate. Hay zapatillas de voleibol expuestas.*"
     },
     "date_dain_shop": {
         "name": "Dain",

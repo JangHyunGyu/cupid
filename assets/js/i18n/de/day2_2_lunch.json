@@ -216,7 +216,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Nach 'war' kommt nichts mehr. Vergangenheit. — Soll ich fragen?*",
+        "text": "*Nach 'war' kommt nichts mehr. Vergangenheit. — In Yunas Schweigen steckt immer eine Geschichte. Ich werde vorsichtig.*",
         "choices": [
             "Diese Person, wo ist sie jetzt?",
             "Nicht fragen und sich neben sie setzen"
@@ -561,7 +561,7 @@
     },
     "lunch2_dain_end_e": {
         "name": "Schulkrankenschwester",
-        "text": "*Schaut auf* Oh, der Transferschüler von gestern."
+        "text": "*Schaut auf* Oh, der Neue von gestern."
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Schulkrankenschwester",
@@ -585,7 +585,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Du siehst besser aus als heute Morgen. Das ist beruhigend.*"
+        "text": "*Ihr scherzhafter Ton ist wie immer. Aber ihre Augen untersuchen bereits die Wunde.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -641,11 +641,11 @@
     },
     "lunch2_dain_end_v": {
         "name": "{name}",
-        "text": "*Sie spielt es mit einem Witz herunter, aber den Laptop hat sie schnell zugeklappt. — Es gibt etwas, das sie nicht zeigen will.*"
+        "text": "*Sie spielt es mit einem Witz herunter, aber die Schublade hat sie schnell zugemacht. — Es gibt etwas, das sie nicht zeigen will.*"
     },
     "lunch2_dain_end_w": {
         "name": "Schulkrankenschwester",
-        "text": "Fertig, also ab zurück in den Unterricht. — Und nächstes Mal komm unverletzt."
+        "text": "Fertig, also ab zurück in den Unterricht. — Beim nächsten Mal erweitere ich die Untersuchungsliste."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",
