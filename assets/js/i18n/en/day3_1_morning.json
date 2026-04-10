@@ -110,7 +110,7 @@
     },
     "morning3_react_dain_1": {
         "name": "Seoyeon",
-        "text": "Quite the cardio for the morning. Want to split my lunchbox later?"
+        "text": "That's one way to start the morning. Want to share my lunchbox later?"
     },
     "morning3_react_dain_2": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "hidden_homeroom_d3_reveal_1": {
         "name": "Homeroom Teacher",
-        "text": "...Too embarrassing to call it a novel. Too old to call it practice. Seven years."
+        "text": "...Too rough to call it a novel. Too late to call it practice. Seven years now."
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Homeroom Teacher",
@@ -234,11 +234,11 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Homeroom Teacher",
-        "text": "I took the teaching certification exam. I teach Korean. — Someone who used to write novels now teaches literature. Ironic, isn't it?"
+        "text": "I got my teaching license. Now I teach Korean lit. — A failed novelist teaching literature. Ironic, right?"
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Homeroom Teacher",
-        "text": "It'd be easier to say I gave up. But I keep pulling it out in empty classrooms like this — so I guess I never really did."
+        "text": "It'd be easier to say I moved on. But I keep pulling this out in empty classrooms — so I guess I never really did."
     },
     "hidden_homeroom_d3_reveal_choice": {
         "name": "{name}",
@@ -316,7 +316,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "School Nurse",
-        "text": "When I worked at the hospital. Too many patients. I wanted to save everyone, but I only have two hands. Eventually it felt like I couldn't properly care for even one."
+        "text": "Back when I worked at the hospital. Too many patients. I wanted to help them all, but I only have two hands. At some point it felt like I couldn't even take proper care of one."
     },
     "hidden_nurse_d3_7": {
         "name": "School Nurse",
@@ -324,7 +324,7 @@
     },
     "hidden_nurse_d3_8": {
         "name": "School Nurse",
-        "text": "Same goes for you. Don't try to take care of everyone. — Wouldn't it be better to really see the one person who matters most?"
+        "text": "Same goes for you. Don't try to take care of everyone at once. — Wouldn't it be better to truly see the one person who matters most?"
     },
     "hidden_nurse_d3_choice2": {
         "name": "{name}",

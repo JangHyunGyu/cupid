@@ -37,7 +37,7 @@
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "The president herself? I'm honored."
+        "text": "The council president, in person? I'm flattered."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
@@ -78,19 +78,19 @@
     },
     "choice_flirt_3": {
         "name": "{name}",
-        "text": "A point system?"
+        "text": "Are you keeping score?"
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Transfer student thing, I guess — you don't know how to read the room at all. I like it."
+        "text": "Must be a transfer kid thing — zero sense of the room. I kinda like it."
     },
     "choice_flirt_5": {
         "name": "{name}",
-        "text": "I'm flattered."
+        "text": "Should I be honored?"
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
-        "text": "Honor or disaster — too early to say."
+        "text": "Whether that's an honor or a disaster — too soon to tell."
     },
     "choice_flirt_7": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "Scary council president."
+        "text": "Terrifying council president."
     },
     "choice_joke_3": {
         "name": "Seoyeon",
@@ -170,7 +170,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Come on, miss, it's just the comfiest thing I own. Anyway — welcome, transfer kid!"
+        "text": "Aw c'mon, miss, it's the comfiest thing I own! Anyway — welcome, new kid!"
     },
     "classroom_dain_5": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*Right next to Dain. Saved — or doomed — jury's still out, but quiet is off the table.*"
+        "text": "*Right next to Dain. Whether that's lucky or doomed, no clue — but peace and quiet just left the building.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -230,15 +230,15 @@
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
-        "text": "Am I a ball machine?"
+        "text": "So I'm a ball machine now?"
     },
     "classroom_dain_talk_7": {
         "name": "Dain",
-        "text": "LOL, your reflexes have gotta be better than a ball machine's! Probably!"
+        "text": "Haha, you've gotta have better reflexes than a machine at least! ...Probably!"
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*She tacked on a 'probably.' So a ball machine might still beat me. My standing here is shaky.*"
+        "text": "*She tacked on a 'probably.' So a machine might still have me beat. Not exactly a confidence boost.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
@@ -258,7 +258,7 @@
     },
     "hallway_6_b": {
         "name": "Seoyeon",
-        "text": "*A brief pause* ...You're perceptive."
+        "text": "*A brief pause* ...Sharp."
     },
     "hallway_6_c": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Her back is perfectly straight. — Whatever's behind that ease, I want to know.*"
+        "text": "*Her posture is flawless. — I can't help wondering what's behind all that composure.*"
     },
     "classroom_2_b": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "classroom_dain_5_d": {
         "name": "{name}",
-        "text": "*She says it dryly, but the corner of her mouth is slightly upturned.*"
+        "text": "*Deadpan delivery, but the corner of her mouth is fighting a smile.*"
     },
     "classroom_minsu_2_b": {
         "name": "Minsu",

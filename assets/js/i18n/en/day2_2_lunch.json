@@ -59,7 +59,7 @@
     },
     "lunch2_seo_5b_yuna": {
         "name": "{name}",
-        "text": "I wanted to see what this breeze tastes like with your lunchbox."
+        "text": "Wanted to find out what this breeze feels like with your cooking."
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
@@ -87,7 +87,7 @@
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
-        "text": "YES!! No takebacks! One round, streusel bun on the line!!"
+        "text": "YES!! No takebacks! One round, crumble bun on the line!!"
     },
     "lunch2_dain_1b_yuna": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*...That's probably what Dain would say. The angles of the triangle are sharpening. — I'm starting to feel less like a vertex and more like the sacrifice.*"
+        "text": "*...That's probably what Dain would say. The tension between these two is getting sharper. — I'm starting to feel less like a participant and more like the prize.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -420,7 +420,7 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*She seems slightly miffed. — But her composure is flawless. That's so like her.*"
+        "text": "*She looks a little put out. — But her composure holds perfectly. Classic Seoyeon.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
@@ -468,7 +468,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ah, alright... Two soboro bread, please..."
+        "text": "Ah, alright... Two crumble bun, please..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -501,23 +501,23 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*Dain's expression subtly stiffens. She takes a bite of soboro and turns her head away.*"
+        "text": "*Dain's expression subtly stiffens. She takes a bite of crumble bun and turns her head away.*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
-        "text": "*Dain nods and takes a bite of soboro bread. Acting like she doesn't care.*"
+        "text": "*Dain nods and takes a bite of crumble bun. Acting like she doesn't care.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "W-what, don't laugh! *breaks soboro bread in half and shoves one piece over* ...Here, just eat this."
+        "text": "W-what, don't laugh! *breaks crumble bun in half and shoves one piece over* ...Here, just eat this."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Her earlobes. Red. — The girls at this school have very honest ears.*"
+        "text": "*Her earlobes. Red. — The girls at this school really can't hide a thing.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*The crunching of Dain's soboro bread is unusually loud. Seoyeon's gaze, Dain's red ears — lunch period is getting more complicated by the day.*"
+        "text": "*The crunching of Dain's crumble bun is unusually loud. Seoyeon's gaze, Dain's red ears — lunch period is getting more complicated by the day.*"
     },
     "lunch2_yuna_17_b": {
         "name": "Yuna",
@@ -541,7 +541,7 @@
     },
     "lunch2_dain_13_b": {
         "name": "{name}",
-        "text": "*Dain takes an exaggeratedly big bite of her soboro. Like the question she just asked wasn't a big deal.*"
+        "text": "*Dain takes an exaggeratedly big bite of her crumble bun. Like the question she just asked wasn't a big deal.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -617,11 +617,11 @@
     },
     "lunch2_dain_end_p": {
         "name": "School Nurse",
-        "text": "*Grinning* It's care. Real care. Know-how from experience."
+        "text": "*Grinning* It's called bedside manner. Years of practice."
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Care... is that what it is? Or is there another reason?*"
+        "text": "*Bedside manner... is that really all it is?*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",

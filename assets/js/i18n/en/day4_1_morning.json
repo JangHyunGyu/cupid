@@ -97,11 +97,11 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Homeroom Teacher",
-        "text": "Let's call it an extension of educational concern. *muttering quietly* A cup of coffee should be fine, right? — Well, you're a student, so juice."
+        "text": "Call it an extension of educational concern. *quietly* One cup of coffee should be fine, right? — Wait, you're a student. Juice it is."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Here we go again. The pattern of saying 'educational concern' and immediately crossing the line.*"
+        "text": "*There it is again. The pattern of saying 'educational concern' and immediately stepping over the line.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Homeroom Teacher",
-        "text": "In the end, you have to show it to someone for it to go all the way. If there's no one to read it, I keep stopping."
+        "text": "In the end, you need someone to read it for it to feel real. Without a reader, I keep stalling."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",

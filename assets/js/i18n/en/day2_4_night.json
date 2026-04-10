@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Three replies due at once. — Can't tell if this is heaven or hell.*"
+        "text": "*Three people waiting for a reply. — Is this a blessing or a curse?*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -90,7 +90,7 @@
     },
     "night2_reply_dain_4": {
         "name": "Dain",
-        "text": "wait nvm mild tteokbokki isn't real tteokbokki lol"
+        "text": "nah wait mild tteokbokki doesn't count lol"
     },
     "night2_reply_dain_5": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Actually come this time,' she said, but the tone says something will happen if I don't.*"
+        "text": "*'Actually show up this time.' The words say invitation — the tone says consequence.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*The third star? — I turn toward the window. The sky is full of them. No idea which one's the third.*"
+        "text": "*The third star? — I glance toward the window. The sky's full of them. No idea which one she means.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*I'll have to count them tomorrow night. — Because of her, I keep looking up at the sky.*"
+        "text": "*I'll count them tomorrow night. — Because of her, I keep catching myself looking up.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -158,15 +158,15 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*I scrolled far back. Three months ago. — A photo. A group shot from the school picnic. Sojeong is smiling. Next to me. — It was the week after this photo. That graffiti started showing up on Sojeong's desk. I liked her. Definitely. But there was something more urgent than saying 'I like you.'*"
+        "text": "*I scrolled way back. Three months ago. — A photo. A group shot from the school trip. Sojeong is smiling. Right next to me. — The week after this photo was when the graffiti started appearing on Sojeong's desk. I liked her. No question. But there was something more urgent than saying 'I like you.'*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Back then I opened my phone every night. Typed something in the notes app, then deleted it. Confession lines, but also lines like 'Teacher, Sojeong is —'. Every time, I stopped right before hitting send. I felt like if I stepped up, I'd become a target too. And one day in March, Sojeong's seat was empty. The next day too. The day after that.*"
+        "text": "*Every night back then, I'd open my phone. Type something in the notes app, then delete it. Love confessions, but also things like 'Teacher, Sojeong is being —'. Every single time, I stopped just before sending. If I spoke up, I'd become a target too. Then one day in March, Sojeong's seat was empty. The next day too. And the day after that.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*The simulations in my notes app are frozen at number 38. There's no 39. Because there was no one left to send it to. I never confessed, and I never protected her. The transfer wasn't because of Sojeong. It was my dad's job. — But I didn't mind transferring. I wouldn't have to walk past Sojeong's empty seat every day anymore.*"
+        "text": "*The drafts in my notes app stop at number 38. There's no 39. Because there was nobody left to send it to. I never confessed, and I never stood up for her. The transfer wasn't because of Sojeong — it was my dad's job. But I didn't mind leaving. At least I wouldn't have to pass by Sojeong's empty desk every day.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— That's why I'm leaving the door open with all three of them right now. I don't want to admit it. If I pick one too fast, I'll only see her, the rest will fade out, and one day someone might fall apart again and I won't notice. It's insurance. I know it's cowardly. Anyone looking would just call me indecisive. But — I know what it feels like to lose someone because she was the only one I was looking at. That's what scares me most.*"
+        "text": "*— That's why I'm keeping the door open with all three of them. I don't want to admit it. If I choose too fast, I'll only see her — the rest will blur out, and the next time someone falls apart, I won't notice until it's too late. It's a safety net. I know it's cowardly. Anyone watching would just call me indecisive. But I know what it's like to lose someone because they were the only one you were looking at. That terrifies me more than anything.*"
     },
     "night2_hidden_check": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Three lines. Gratitude, distance, then reaching out again. — She's playing tug of war with herself.*"
+        "text": "*Three lines. Gratitude, distance, then reaching back out. — She's having a tug of war with herself.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
@@ -206,11 +206,11 @@
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Can't refuse. — Is the fact that I'm being drawn to her something I have to admit now?*"
+        "text": "*Can't refuse. — Am I going to have to admit that I'm being pulled in?*"
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "DUDEEE!!!!! I'm literally rolling on my bed laughing rn LOL!! You HAVE to come to the gym tomorrow!!"
+        "text": "HAHAHA!!!!! I'm literally kicking my blanket laughing rn LOL!! You HAVE to come to the gym tomorrow!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Those words keep echoing. I still haven't answered. Yesterday it was just on my mind. Today — the words 'I want to see them' rose to my throat and went back down.*"
+        "text": "*Those words keep echoing. I still haven't answered. Yesterday they were just on my mind. Today — 'I want to see them' climbed to my throat and sank back down.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
@@ -254,6 +254,6 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*I threw together a lunch box. It's not great. Too rough to call it made with care. — But it's better than nothing.*"
+        "text": "*I threw together a lunch box. It's nothing special. Too sloppy to call it homemade with pride. — But it beats showing up empty-handed.*"
     }
 }

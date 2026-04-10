@@ -325,7 +325,7 @@
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*After graduation. Contact grew sparse. Once a month became once every two months, leaving messages on read became the norm, and one day — when I tried to send something and drew a blank on what to say — I knew it was over.*"
+        "text": "*After graduation. We talked less and less. Monthly turned to bimonthly, leaving messages on read became normal, and one day — when I opened the chat and had nothing to say — I knew it was over.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -394,15 +394,15 @@
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Her family hasn't grown warmer. Her mother's calls are still cold, and the rehearsed smiles in front of the mirror haven't stopped. — But now she has someone she can show an expression she didn't rehearse to.*"
+        "text": "*Her family hasn't gotten warmer. Her mother's calls are still cold, and the rehearsed smiles in front of the mirror haven't stopped. — But now she has someone she can show the face she never practiced.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*The person who disappeared hasn't come back. The senior's contact info is still gone, and the corner seat in the library is still empty. — But now she has someone she can speak to with her own voice instead of notes.*"
+        "text": "*The person who disappeared hasn't come back. The senior's number is still gone, and the corner seat in the library is still empty. — But now she has someone she can talk to with her own voice, not just notes.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*Her knee still isn't better. She still wraps it every morning, and her alarm memo still has two exclamation marks. — But now she has someone who'll listen when her sentences end with a period.*"
+        "text": "*Her knee still isn't better. She still wraps it every morning, and her alarm note still has two exclamation marks. — But now she has someone who stays when her sentences end with a period.*"
     },
     "true_epilogue_7": {
         "name": "System",

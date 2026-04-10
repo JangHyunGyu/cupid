@@ -9,7 +9,7 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "Hey! Have you eaten?! Let's hit the school store! I'll buy you bread... loser pays!"
+        "text": "Hey! Eaten yet?! Let's hit the store! Loser buys bread!"
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*She'd planned to eat together from the start. I open the lunchbox and the side dishes look carefully made. Rolled omelette, sausage, mini rice balls.*"
+        "text": "*She'd planned to share from the start. I open the lunchbox — rolled omelette, sausage, mini rice balls. Everything looks homemade.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*She dodges questions like a pro. We eat in silence for a while. The breeze is nice. The view of the school from the rooftop is — wider than I expected.*"
+        "text": "*Expert deflection. We eat in quiet for a while. The breeze feels nice up here. The view of the school from the rooftop — wider than I expected.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "{name}",
-        "text": "*She's playing it cool, but she seems slightly miffed.*"
+        "text": "*She's playing it cool, but she looks a little annoyed.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -174,11 +174,11 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Streusel bun and strawberry milk — best happiness-per-calorie combo. Trust me!"
+        "text": "Crumble bun and strawberry milk — best happiness-to-calorie ratio out there. Trust me!"
     },
     "lunch_dain_3": {
         "name": "{name}",
-        "text": "Wait, you said loser pays. Doing what, though?"
+        "text": "Hold on, you said loser buys. What's the game?"
     },
     "lunch_dain_4": {
         "name": "Dain",
@@ -186,11 +186,11 @@
     },
     "lunch_dain_5": {
         "name": "{name}",
-        "text": "Not obvious."
+        "text": "Not really."
     },
     "lunch_dain_6": {
         "name": "Dain",
-        "text": "Backing out?! Then YOU'RE buying!"
+        "text": "Chickening out?! Then YOU'RE buying!"
     },
     "lunch_dain_7": {
         "name": "{name}",
@@ -234,11 +234,11 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "Nope — to hang with me, you've gotta pass a minimum fitness test! lol"
+        "text": "Nah — if you wanna keep up with me, you gotta pass a basic fitness check! Haha"
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Thought you were bragging about your PR."
+        "text": "Thought this was about your PR."
     },
     "lunch_dain_20": {
         "name": "Dain",
@@ -294,7 +294,7 @@
     },
     "lunch_dain_after_5": {
         "name": "{name}",
-        "text": "*She grins and bumps my shoulder with her fist. She sounded so serious I just nodded.*"
+        "text": "*She grins and bumps my shoulder with her fist. She said it with such conviction, I just nodded.*"
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna stands up first and walks off. Doesn't look back. 'It was nice.' — Stupid how much that lands.*"
+        "text": "*Yuna stands up first and walks off. Doesn't look back. 'It was nice.' — Such a small thing, but it sticks with me.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -440,7 +440,7 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Smiles* Suspicious, aren't you. When you deal with people downstairs all day, sometimes you just want to be alone."
+        "text": "*Smiles* Suspicious, huh. Spend all day managing people down there, and sometimes you just want to be alone."
     },
     "lunch_seo_c1_2_b": {
         "name": "{name}",
@@ -448,11 +448,11 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*If I tease her more here, she'll immediately draw a line. I'll just pretend not to see it.*"
+        "text": "*Push any harder and she'll shut this down. Better to let it go.*"
     },
     "lunch_dain_12_b": {
         "name": "Dain",
-        "text": "Ah, alright! I'll buy it, I'll buy it! Ma'am, two soboro breads!"
+        "text": "Ugh, fine! I'll buy, I'll buy! Two crumble buns, please!"
     },
     "lunch_yuna_5_b": {
         "name": "{name}",
