@@ -45,7 +45,7 @@
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Preparativos del evento. Paso por el aula vacía. La puerta está abierta.*"
+        "text": "*Hora de preparar el evento. Camino por el pasillo — y paso frente a un aula vacía. La puerta está abierta.*"
     },
     "hidden_homeroom_d5_1": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Nada más entrar al aula — llegan señales de tres direcciones.*"
+        "text": "*Nada más entrar al aula — llegan señales de tres direcciones. El último evento. Todo el tiempo acumulado hasta ahora converge en hoy.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*De 'ven después de graduarte' a 'ven si te duele algo' — retrocedió. Estuvo a punto de cruzar la línea y volvió atrás.*"
+        "text": "*De 'ven después de graduarte' a 'ven si te duele algo' — retrocedió. Estuvo a punto de cruzar la línea y volvió atrás. La puerta se abre. La enfermera está ahí. Con dos vasos de papel en las manos.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -387,7 +387,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Cuando te gradúes, quedemos en una cafetería en vez de la enfermería — ♡'*"
+        "text": "*'Cuando te gradúes, quedemos en una cafetería en vez de la enfermería — ♡' El corazón esta vez — no parece interés médico.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -467,7 +467,7 @@
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Profesora",
-        "text": "...Pensé que lo leerías y me dirías. — Te lo enseñé porque pensaba que una estudiante sentiría menos presión."
+        "text": "...Pensé que lo leerías y me dirías. — Te lo enseñé porque pensaba que, como eres estudiante, sentirías menos presión."
     },
     "hidden_homeroom_d5_praise_trap_11": {
         "name": "Profesora",
@@ -511,7 +511,7 @@
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "¿Quiere que miremos esa línea juntas?"
+        "text": "¿Quiere que miremos esa línea juntos?"
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Profesora",
@@ -519,7 +519,7 @@
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "Es solo una línea. Las estudiantes también escribimos una línea."
+        "text": "Es solo una línea. Los estudiantes también escribimos una línea."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Profesora",

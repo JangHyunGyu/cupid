@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*La puerta principal del colegio está entreabierta. Hay ruido dentro. - La persona que sale frente a la entrada es mi tutora.*"
+        "text": "*La puerta principal del colegio está entreabierta. Hay alguien dentro. — Sale alguien por la entrada. Es la profesora titular. Se acerca. — Se la ve de lejos. Anda tan normal que no parece la misma persona que se enfadó.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Profesora",
@@ -108,7 +108,7 @@
         "text": "*Un café. — Interés pedagógico.*",
         "choices": [
             "Dale. ¿Hay algún café cerca?",
-            "Profe, ¿no debería hacer eso?"
+            "Profe, ¿eso no es algo que no debería hacer?"
         ]
     },
     "hidden_homeroom_d4_cafe_1": {
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Mañana de domingo. Por costumbre, voy hacia la enfermería. — ¿Cuándo se convirtió esto en costumbre? Abrí la puerta. La enfermera está en su silla. Bata blanca. — Pero está distinta a lo habitual. Sin picardía.*"
+        "text": "*Mañana de fin de semana. Por costumbre, voy hacia la enfermería. — ¿Cuándo se convirtió esto en costumbre? Abrí la puerta. La enfermera está en su silla. Bata blanca. — Pero está distinta a lo habitual. Sin picardía.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermera",
@@ -265,7 +265,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "{name}",
-        "text": "*La enfermera se toca las gafas. Los ojos visibles a través de ellas son más grandes de lo que esperaba. Los ojos que estaban escondidos detrás de su travesura.*"
+        "text": "*La enfermera se toca las gafas. Los ojos que se ven tras ellas son más grandes de lo que esperaba. Los ojos que se escondían detrás de su picardía.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Enfermera",
@@ -343,7 +343,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Debía estar enfadada, pero aun así quiso escuchar mis excusas. O quizá no pudo renunciar ni siquiera estando furiosa. En cualquier caso, no debería tomar a la ligera el motivo por el que vino.*"
+        "text": "*Debía estar enfadada — pero aun así ha venido. No puedo salir huyendo delante de esta persona.*"
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*La broma desapareció. 0,5 segundos. El medidor de sinceridad de esta persona se mueve en intervalos de 0,5 segundos.*"
+        "text": "*La picardía ha desaparecido. — Cuando veo esta expresión, se me encoge el pecho.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Enfermera",

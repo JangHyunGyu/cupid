@@ -59,7 +59,7 @@
     },
     "lunch2_seo_5b_yuna": {
         "name": "{name}",
-        "text": "Quería saber cómo se sentían juntas esta brisa y la fiambrera de la presidenta."
+        "text": "Tenía curiosidad por la combinación de esta brisa con la fiambrera de la presidenta."
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
@@ -216,7 +216,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Nada sigue después de 'había'. Pasado. — ¿Debería preguntar?*",
+        "text": "*Nada sigue después de 'había'. Pasado. — En los silencios de Yuna siempre hay una historia. Me vuelvo cauteloso.*",
         "choices": [
             "Esa persona, ¿dónde está ahora?",
             "No preguntar y sentarse a su lado"
@@ -348,7 +348,7 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "¡Lo conocí ayer! Buen chico, presi."
+        "text": "¡Lo conocí ayer! Es un chico muy alegre, ¡presi!"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
@@ -476,7 +476,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon mira hacia acá. Me observa de pie junto a Dain, comiendo pan, durante medio segundo — y sigue de largo.*"
+        "text": "*Seoyeon mira hacia acá. Me observa de pie junto a Dain, comiendo pan — y sigue de largo. Sentí una punzada.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -501,7 +501,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*La expresión de Dain se tensa sutilmente. Muerde su soboro y gira la cabeza.*"
+        "text": "*La expresión de Dain se endurece. Muerde su soboro y gira la cabeza. — ¿Le he hecho daño?*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
@@ -517,7 +517,7 @@
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*El crujido del pan de soboro de Dain es inusualmente fuerte. La mirada de Seoyeon, las orejas rojas de Dain — la hora del almuerzo se complica más cada día.*"
+        "text": "*El crujido del pan de soboro de Dain es inusualmente fuerte. — La hora del almuerzo se complica cada vez más.*"
     },
     "lunch2_yuna_17_b": {
         "name": "Yuna",
@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Enfermera",
-        "text": "*Dentro de la enfermería. Hay documentos apilados en el escritorio y la enfermera está sentada en su silla.*"
+        "text": "*Levantando la vista.* Es tu primera vez aquí, ¿verdad? Eres el alumno nuevo."
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -577,7 +577,7 @@
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Enfermera",
-        "text": "...¿Oh? Eres el de antes. ¿Qué te trae por aquí durante el almuerzo?"
+        "text": "¿Es tu primera vez? Vamos a desinfectar eso."
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
@@ -585,7 +585,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Te ves mejor que esta mañana. Es un alivio.*"
+        "text": "*Su tono juguetón de siempre. Pero sus ojos ya están examinando la herida.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",

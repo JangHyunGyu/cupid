@@ -206,7 +206,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "{name}",
-        "text": "*Seoyeon sonríe. Una sonrisa sin ensayar. — El maquillaje está corrido, los ojos hinchados. Pero no puedo apartar la mirada.*"
+        "text": "*Seoyeon sonríe. Las comisuras de sus labios van a su aire. — El maquillaje está corrido, los ojos hinchados. Pero no puedo apartar la mirada.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
@@ -219,11 +219,11 @@
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "{name}",
-        "text": "*Seoyeon extiende su meñique primero. No se detiene ahí. Toma mi mano.*"
+        "text": "*Seoyeon extiende su meñique primero. No se detiene ahí. Me toma la mano. Me besa en la frente.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
-        "text": "...No ensayé esto."
+        "text": "...Esto es la primera vez. De verdad."
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
@@ -405,14 +405,14 @@
         "name": "{name}",
         "text": "*Dain abraza el balón con la cabeza agachada. Sus hombros tiemblan.*",
         "choices": [
-            "...¿Puedo sentarme a tu lado?",
+            "...No voy a decir nada. Simplemente estaré aquí.",
             "Puedes llorar. No tienes que fingir estar alegre. No conmigo.",
             "...¿Nos levantamos juntos? Solo una vez más."
         ]
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Me senté junto a Dain. El suelo de la cancha está frío. No dije nada.*"
+        "text": "*Me quedé sentado a su lado. Sin decir nada. Dain tampoco habla. — Un tiempo extraño. Es la primera vez que hay más de un minuto de silencio junto a Dain.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -719,7 +719,7 @@
     },
     "wall_yuna_skin70_3": {
         "name": "{name}",
-        "text": "*La temperatura de Yuna es baja. Pero la mano que sostiene quema.*"
+        "text": "*La mano de Yuna es más cálida de lo que esperaba. — Solo eso.*"
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
@@ -751,7 +751,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "{name}",
-        "text": "*Yuna se da la vuelta. Sus pasos son rápidos. — No corre exactamente, pero camina como alguien que quiere correr.*"
+        "text": "*Yuna se da la vuelta. Sus pasos son rápidos. — No corre exactamente, pero camina como alguien que quiere correr. Fue la peor elección. — Se oye cómo el muro de Yuna vuelve a cerrarse.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -791,7 +791,7 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*Un mensaje en el móvil.*"
+        "text": "*Se enciende la pantalla del móvil. Es una frase corta, y por eso duele más.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
@@ -831,7 +831,7 @@
     },
     "night_nurse_msg_4": {
         "name": "Enfermera",
-        "text": "...Buenas noches."
+        "text": "...Duerme."
     },
     "day4_night_reflect": {
         "name": "{name}",

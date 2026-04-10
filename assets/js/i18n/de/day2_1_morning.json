@@ -41,8 +41,8 @@
         "text": "*Dieselbe ordentliche Handschrift wie gestern. Kurz. Und der Ort ist konkret. — Der 'Anbau' der Bibliothek? Das ist ein anderer Ort als gestern.*"
     },
     "morning2_seo_1": {
-        "name": "{name}",
-        "text": "*Ich will den Zettel gerade einstecken, als — eine vertraute Stimme vom Flur kommt.*"
+        "name": "Seoyeon",
+        "text": "*Im Vorbeigehen auf dem Flur, mit einem kurzen Blick ins Klassenzimmer* Gut geschlafen gestern?"
     },
     "morning2_seo_4": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "Ist die Schülersprecherin auch am Neuen interessiert? Ganz schön beliebt!"
+        "text": "Hat die Schülersprecherin auch ein Auge auf unseren Neuen geworfen? Ganz schön beliebt!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Ich hab dich zuerst entdeckt, also bist du unser Neuer! Reserviert! Gehört mir!"
+        "text": "Ich hab dich zuerst entdeckt, also bist du unser Neuer! Erster Punkt für mich! Erster Punkt!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "hidden_homeroom_d2_3": {
         "name": "Klassenlehrerin",
-        "text": "Hab dein altes Zeugnis gesehen. Deine Koreanischnoten waren gut. Liest du gerne?"
+        "text": "Hab dein altes Zeugnis gesehen. Deine Deutschnoten waren gut. Liest du gerne?"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Klassenlehrerin",
-        "text": "*Verdeckt den Mund mit der Kaffeetasse* ...Gesichtsausdruck-Management versagt. Schon gut, geh."
+        "text": "*Verdeckt den Mund mit der Kaffeetasse* ...Poker-Face gescheitert. Schon gut, geh."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Klassenlehrerin",
@@ -230,7 +230,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon kam als Erste auf mich zu. Ihr üblicher Ton, aber mit einem Hauch von Bestätigungsbedarf.*"
+        "text": "*Seoyeon kam als Erste auf mich zu. Ihr üblicher lässiger Ton, aber mit einem Hauch von Bestätigungsbedarf. Dain wirft von hinten im Klassenzimmer einen verstohlenen Blick herüber. Dreht den Kopf weg. Yuna vergräbt sich tiefer in ihr Buch. Das Umblättern wird schneller.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Romane. Dass eine Koreanischlehrerin Romane liest, ist normal, aber warum scheint sie es ungern zuzugeben?*"
+        "text": "*Romane. Dass eine Deutschlehrerin Romane liest, ist normal, aber warum scheint sie es ungern zuzugeben?*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Klassenlehrerin",

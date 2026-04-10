@@ -468,7 +468,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ah, alright... Two crumble bun, please..."
+        "text": "Ah, alright... Two crumble buns, please..."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "lunch2_dain_10": {
         "name": "{name}",
-        "text": "*Seoyeon looks this way. She stares at me standing next to Dain, eating bread, for half a second — then walks past.*"
+        "text": "*Seoyeon looks this way. She stares at me standing next to Dain, eating bread, for half a second — then walks past. Something stings in my chest.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -501,7 +501,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*Dain's expression subtly stiffens. She takes a bite of crumble bun and turns her head away.*"
+        "text": "*Dain's expression subtly stiffens. She takes a bite of crumble bun and turns her head away. — Did I just hurt her?*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
@@ -509,7 +509,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "W-what, don't laugh! *breaks crumble bun in half and shoves one piece over* ...Here, just eat this."
+        "text": "What, don't laugh! *breaks crumble bun in half and shoves one piece over* ...Here, just eat this."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",

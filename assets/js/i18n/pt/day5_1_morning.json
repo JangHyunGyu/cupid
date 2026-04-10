@@ -78,7 +78,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Se fugir, eu vou ficar brava de verdade!"
+        "text": "Se fugir, eu vou ficar brava de verdade?"
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
@@ -347,15 +347,15 @@
     },
     "hidden_homeroom_d5_7": {
         "name": "Professora",
-        "text": "Depois da formatura — vamos nos ver. Não como professora e aluno."
+        "text": "Depois da formatura — vamos nos ver. Pelo nome, não pelo cargo."
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*'Não como professora e aluno.' — Ela está falando sobre depois da formatura. Não agora, mas um dia.*"
+        "text": "*'Pelo nome, não pelo cargo.' — Ela está falando sobre depois da formatura. Não agora, mas um dia.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professora",
-        "text": "...Acho que ultrapassei um pouco os limites do interesse profissional. Já que é a última vez. Só desta vez."
+        "text": "...Acho que ultrapassei um pouco os limites do interesse pedagógico. Já que é a última vez. Só desta vez."
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
@@ -391,11 +391,11 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*De 'vem me visitar depois da formatura' pra 'vem se estiver machucado' — ela recuou. Quase cruzou a linha e voltou atrás.*"
+        "text": "*De 'vem me visitar depois da formatura' pra 'vem se estiver machucado' — ela recuou. Quase cruzou a linha e voltou atrás. A porta se abre. A enfermeira está parada ali. Com dois copinhos de papel nas mãos.*"
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
-        "text": "*A enfermeira sai. Está bem na minha frente.*"
+        "text": "*A enfermeira sai. Está bem na minha frente. — Nossos olhos se encontram. De pertinho.*"
     },
     "hidden_nurse_d5_2_c": {
         "name": "Enfermeira",
@@ -479,7 +479,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*A voz abaixou um tom. Toda a brincadeira sumiu. — É assim que a sinceridade dessa pessoa sempre chega.*"
+        "text": "*A voz abaixou um tom. Toda a brincadeira sumiu. — É assim que a sinceridade dessa pessoa sempre chega. A enfermeira estava sorrindo — e para. Fecha a boca.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Enfermeira",
@@ -507,7 +507,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*A fala marca registrada dela do Dia 1. — Naquela época era apresentação de personagem. Agora é verdade.*"
+        "text": "*A fala marca registrada dela do Dia 1. — Naquela época era apresentação de personagem. Agora é verdade. A enfermeira pega um curativo e cola nas costas da minha mão. Devagar. — Tem uma letra miúda escrita no curativo.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",

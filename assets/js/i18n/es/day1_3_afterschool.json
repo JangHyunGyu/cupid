@@ -130,7 +130,7 @@
     },
     "after_homeroom_ok": {
         "name": "Profesora",
-        "text": "Me alegro. — Si necesitas algo, pasa por la sala de profesores. Para eso estoy."
+        "text": "¿Sí? — Si tienes algún problema, pásate por la sala de profesores. Aunque sea con la excusa del papeleo."
     },
     "after_homeroom_ok_3": {
         "name": "Profesora",
@@ -212,7 +212,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Caminando por el pasillo cuando — me mareo un poco. Serán los nervios del primer día.*"
+        "text": "*Caminando por el pasillo cuando — me mareo un poco. Serán los nervios del primer día. A un lado del pasillo veo el cartel de 'Enfermería'. Estoy un poco demasiado mareado para ignorarlo.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -280,7 +280,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Enfermera",
-        "text": "Si te vuelve a dar un mareo, ven a verme. La enfermería siempre está abierta. Solo no esperes hasta estar al límite. Eso sí me preocupa."
+        "text": "Si te vuelve a dar un mareo, ven a verme. La enfermería siempre está abierta. Pero no aguantes hasta que sea demasiado tarde. Me preocupa."
     },
     "after_nurse_enter_12": {
         "name": "Enfermera",
@@ -330,7 +330,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
-        "text": "*Al rozar el bolsillo lateral de mi mochila, la punta de mis dedos engancha la esquina de un papel. Es una nota doblada. No sé cuándo la metieron ahí. La letra es de Yuna.*"
+        "text": "*Al rozar el bolsillo lateral de mi mochila, la punta de mis dedos engancha la esquina de un papel. Es una nota doblada. No sé cuándo la metieron ahí. La letra es de Yuna. 'Te vi en la azotea a la hora del almuerzo. ...Parecías llevarte bien con la presidenta.' — Tres puntos al final. Señal de que se tragó lo que quería decir.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Se despide con la mano y sale corriendo. — Al frenar, arrastró ligeramente la pierna derecha. ¿O me lo pareció? Fue demasiado rápido para estar seguro.*"
+        "text": "*Se despide con la mano y sale corriendo. — Al frenar, se sujetó brevemente la rodilla derecha. 0,5 segundos. Enseguida apartó la mano, pero lo vi.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*Aparta a un lado los papeles del escritorio y vuelve a mirarme. El ambiente dice que esto no termina con una sola frase.*"
+        "text": "*La profesora aparta los papeles del escritorio y vuelve a mirarme. Lo que pensaba que sería una frase breve parece que va para más. Al parecer no era solo un saludo de cortesía. Apoya la mano en el respaldo de la silla y busca las palabras un momento.*"
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
@@ -394,7 +394,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*Cierra el registro y se pone de pie. Llega hasta el umbral y entonces vuelve a llamarme, como si se hubiera acordado tarde de algo.*"
+        "text": "*Se rio. — Primera vez que la veo reírse con una broma. Cierra el registro y se pone de pie. Llega hasta el umbral y entonces vuelve a llamarme, como si se hubiera acordado tarde de algo.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",

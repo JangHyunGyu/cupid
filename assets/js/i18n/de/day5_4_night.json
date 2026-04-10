@@ -29,11 +29,11 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Zum ersten Mal sehe ich Seoyeon so völlig aufgelöst. - Sie weint.*"
+        "text": "*Seoyeons Dach. Sie steht zwischen den Topfpflanzen, die sie selbst gezogen hat.*"
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*Zum ersten Mal nimmt sie die Brille ab — und weint.*"
+        "text": "*Sie weint schon wieder. Nicht in der Toilette — diesmal vor mir.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "true_seo_7_b": {
         "name": "{name}",
-        "text": "*Wir hakten die kleinen Finger ein. Die Gewohnheit von Tag 1, das Versprechen von Tag 4, und jetzt. — Derselbe Finger, dritte Bedeutung.*"
+        "text": "*Seoyeon zögert, dann streckt sie ihren kleinen Finger aus.*"
     },
     "true_seo_7b": {
         "name": "{name}",
@@ -394,15 +394,15 @@
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Ihre Familie ist nicht besser geworden. Die Anrufe ihrer Mutter sind immer noch kalt, und das einstudierte Lächeln hat nicht aufgehört. — Aber jetzt gibt es jemanden, dem sie ihr ungeübtes Gesicht zeigen kann. Nicht mehr.*"
+        "text": "*Ihre Familie ist nicht besser geworden. Die Anrufe ihrer Mutter sind immer noch kalt, und das einstudierte Lächeln hat nicht aufgehört. — Aber jetzt gibt es jemanden, dem sie ihr ungeübtes Gesicht zeigen kann. Ab jetzt.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*Die Person, die gegangen ist, ist nicht zurückgekommen. Die Nummer des Seniors fehlt immer noch, und der Platz in der Bibliotheksecke ist immer noch leer. — Aber jetzt gibt es jemanden, mit dem sie mit ihrer Stimme sprechen kann, nicht nur mit Notizen. Nicht mehr.*"
+        "text": "*Die Person, die gegangen ist, ist nicht zurückgekommen. Die Nummer des Seniors fehlt immer noch, und der Platz in der Bibliotheksecke ist immer noch leer. — Aber jetzt gibt es jemanden, mit dem sie mit ihrer Stimme sprechen kann, nicht nur mit Zetteln. Ab jetzt.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*Ihr Knie ist nicht geheilt. Sie wickelt immer noch jeden Morgen den Verband, und die Alarm-Notiz hat immer noch zwei Ausrufezeichen. — Aber jetzt gibt es jemanden, der zuhört, wenn ihre Sätze mit einem Punkt enden. Nicht mehr.*"
+        "text": "*Ihr Knie ist nicht geheilt. Sie wickelt immer noch jeden Morgen den Verband, und die Alarm-Notiz hat immer noch zwei Ausrufezeichen. — Aber jetzt gibt es jemanden, der zuhört, wenn ihre Sätze mit einem Punkt enden. Ab jetzt.*"
     },
     "true_epilogue_7": {
         "name": "System",
@@ -466,19 +466,19 @@
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Dass du woanders hingeschaut hast, wirst du mir ein Leben lang zurückzahlen. — Mit Zinsen."
+        "text": "Wir sind nicht perfekt. Du nicht und ich nicht. ...Aber lass diesmal mittendrin nicht los."
     },
     "good_1_seo_b": {
         "name": "{name}",
-        "text": "*Ein Kirschblütenblatt landet auf Seoyeons Haar. Ich überlege, ob ich es wegstreichen soll — als Seoyeon zuerst den Kopf neigt.*"
+        "text": "*Seoyeon streift meine Manschette zurecht, als würde sie ein Kirschblütenblatt abstreifen. Eine schroffe Geste, aber keine, die wegstößt.*"
     },
     "good_1_seo_c": {
         "name": "{name}",
-        "text": "*Sie tut so, als wäre sie perfekt, aber ich war auch nicht perfekt.*"
+        "text": "*Wenig Worte. Dafür stimmt der Schritt. Das reicht für heute, dachte ich.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
-        "text": "*Die Kirschblüten werden nächstes Jahr wieder blühen. Wir gingen nebeneinander.*"
+        "text": "*Was zwischen Seoyeon und mir ist, beginnt gerade erst, Form anzunehmen. Wackelig, aber nicht abgerissen.*"
     },
     "good_2_seo": {
         "name": "{name}",
@@ -490,7 +490,7 @@
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Sie tut so, als wäre sie perfekt, aber ich war es auch nicht.*"
+        "text": "*Ich lächelte, und Seoyeon tat so, als sähe sie es nicht — hob aber ganz leicht die Mundwinkel.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -498,15 +498,15 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
+        "text": "*Eine Nachricht von Seoyeon: 'Hab dir morgen den Dachschlüssel kopiert. — Genehmigung, Genehmigung.' Könnte doch einfach Einladung sagen.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
-        "text": "*Fühlte sich wie ein Umweg an, aber am Ende war es hier.*"
+        "text": "*Diese Person tut bis zum Schluss lässig — und gibt ihr Herz in Form eines Schlüssels.*"
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Unbeholfen ist okay. Es ist schließlich unser erstes Mal.*"
+        "text": "*Ich steckte den Schlüssel in die Tasche. Morgen auf dem Dach — diesmal bin ich dran, das Mittagessen mitzubringen.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -542,15 +542,15 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
+        "text": "*In meiner Tasche finde ich einen gefalteten Zettel. Keine Ahnung, wann sie ihn reingesteckt hat. 'Wenn du Band 1 durch hast, leih ich dir Band 2. — Yuna'*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*Fühlte sich wie ein Umweg an, aber am Ende war es hier.*"
+        "text": "*Yuna bereitet das Nächste vor, statt es auszusprechen. Nach Band 1 kommt Band 2. Nach heute kommt morgen. Das ist ihre Art zu sagen 'Lass uns weitermachen.'*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
-        "text": "*Unbeholfen ist okay. Es ist schließlich unser erstes Mal.*"
+        "text": "*Auf der Rückseite des Zettels, ganz klein: '...Das Ende lesen wir zusammen.' Die hellviolette Tinte ist verwischt.*"
     },
     "good_5_cg_yuna": {
         "name": "System",
@@ -578,15 +578,15 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Ich habe geschwankt, deshalb weiß ich es jetzt. Was meine wahren Gefühle sind.*"
+        "text": "*Eine Nachricht von Dain: 'Morgen früh jemand zum Trainieren?' Am Ende ein Fragezeichen. Normalerweise wäre es ein Ausrufezeichen gewesen.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*Fühlte sich wie ein Umweg an, aber am Ende war es hier.*"
+        "text": "*Zum ersten Mal sorgt sie sich darum, abgelehnt zu werden. Dass Dain ein Fragezeichen benutzt — das ist Mut.*"
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Unbeholfen ist okay. Es ist schließlich unser erstes Mal.*"
+        "text": "*Ich antwortete: 'Deal.' Ohne Ausrufezeichen. Dafür werde ich morgen persönlich hinrennen.*"
     },
     "good_5_cg_dain": {
         "name": "System",

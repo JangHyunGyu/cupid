@@ -156,7 +156,7 @@
     },
     "after3_yuna_4": {
         "name": "{name}",
-        "text": "*Erste Seite. 'Eines Tages kam ein Transferschüler. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.'*"
+        "text": "*Erste Seite. 'Eines Tages kam der Neue. Er kam in die Bibliothek und setzte sich wortlos neben mich. — Es störte mich nicht.'*"
     },
     "after3_yuna_6": {
         "name": "Yuna",
@@ -182,8 +182,8 @@
         "name": "{name}",
         "text": "Ich hab es mit Vergnügen gelesen.",
         "choices": [
-            "Das geht doch über mich, oder? 'Der Transferschüler, der sich wortlos neben sie setzte' — das bin ich.",
-            "Diese Autorin schreibt wirklich gut. Gibt's eine Fortsetzung? Würd ich gern ausleihen."
+            "Das geht doch über mich, oder? 'Der Neue, der sich wortlos neben sie setzte' — das bin ich.",
+            "Dieser Autor schreibt wirklich gut. Gibt's eine Fortsetzung? Würd ich gern ausleihen."
         ]
     },
     "after3_yuna_end": {
@@ -276,7 +276,7 @@
     },
     "after3_confront_6": {
         "name": "Seoyeon",
-        "text": "Sei ehrlich. Hast du allen das Wochenende versprochen?"
+        "text": "Das Chaos beim Mittagessen... Was hast du dir dabei gedacht, allen dreien etwas zu versprechen?"
     },
     "after3_confront_choice": {
         "name": "{name}",
@@ -591,7 +591,7 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "Seoyeon",
-        "text": "Nenn mich **Vorsitzende**."
+        "text": "Nenn mich **Schulsprecherin**."
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
@@ -747,7 +747,7 @@
     },
     "after3_dain_pity_trap_3": {
         "name": "Dain",
-        "text": "Hey. Ich übertreibe nicht. Das ist nur — falsche Haltung."
+        "text": "Hey. Ich hab mich nicht überanstrengt. Das ist nur — falsche Haltung."
     },
     "after3_dain_pity_trap_4": {
         "name": "{name}",
@@ -771,7 +771,7 @@
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
-        "text": "Der Trainer macht es. Meine Eltern machen es. Alle machen es. — Ich dachte, du nicht."
+        "text": "Der Trainer schaut so. Meine Eltern schauen so. Alle schauen so. — Ich dachte, du nicht."
     },
     "after3_dain_pity_trap_10": {
         "name": "{name}",
@@ -807,7 +807,7 @@
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "Es geht los, Neue!"
+        "text": "Es geht los, Neuer!"
     },
     "after3_dain_correct_9": {
         "name": "{name}",

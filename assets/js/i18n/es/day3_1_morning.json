@@ -166,7 +166,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*Observo la reacción de Dain. Suena el timbre y vuelve ese breve paréntesis justo antes de la comida.*"
+        "text": "*Observo la reacción de Dain. Suena el timbre y vuelve ese breve paréntesis justo antes de la comida. Se fue con una sonrisa. — En ese momento no lo sabía. Que Dain había dejado de tamborillear con los dedos y había metido las manos en los bolsillos. Que le había costado valor preguntármelo.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
@@ -185,7 +185,7 @@
         "text": "*Después de leer la nota de Yuna...*",
         "choices": [
             "Le hago un gesto afirmativo con la cabeza",
-            "Doblo la nota y me la guardo en el bolsillo"
+            "Niego ligeramente con la cabeza"
         ]
     },
     "morning3_date_yuna_accept": {
@@ -394,7 +394,7 @@
     },
     "morning3_yuna_gate_warm_3": {
         "name": "{name}",
-        "text": "*Una sola palabra en la nota. Esperé.*"
+        "text": "*Sacó una nota. 'Te esperaba.'*"
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*La nota: Supuse que no habías desayunado.*"
+        "text": "*La nota: Supuse que no habrías desayunado. Una persona que escribe en notas lo que podría decir con la boca. — Eso es Yuna.*"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -466,11 +466,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*La mano del profesor se detiene sobre el papel pautado. Entre los papeles boca abajo, se ven letras apretadas.*"
+        "text": "*La mano de la profesora se detiene sobre el papel pautado. Entre los papeles boca abajo se ven letras apretadas. Ha dicho que era papeleo del trabajo — pero los documentos de la profesoraado se imprimen en A4. No se escriben a mano en papel pautado.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
-        "text": "*La expresión del profesor vuelve a la normalidad de inmediato. Su rostro indiferente de siempre. — El cambio es demasiado rápido.*"
+        "text": "*La expresión de la profesora vuelve a la normalidad de inmediato. Su rostro indiferente de siempre. — El cambio es demasiado rápido.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Profesora",
@@ -494,7 +494,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Medio segundo. Paralizada. — Es una expresión que nunca había visto en la profesora. Ni indiferente, ni seca. La cara de alguien que ha sido descubierto.*"
+        "text": "*Me quedo helado. — Es una expresión que nunca había visto en la profesora. La cara de alguien que ha sido descubierto. La profesora le da la vuelta al manuscrito a toda prisa.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Profesora",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Profesora",
-        "text": "*Suspirando* ...Ser perceptivo es una virtud. A veces es un defecto."
+        "text": "*Suspirando* ...Ojalá pudiera ver solo lo que quiero ver."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Profesora",
-        "text": "*Duda. La mano que tocaba el manuscrito se detiene.* ...Es la primera persona que lo llama perseverancia."
+        "text": "*Sonriendo ligeramente* ...Me alegro de que estés aquí. De verdad."
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
@@ -590,7 +590,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*La razón por la que eligió un aula vacía es práctica, pero también significa — que es alguien que necesita un espacio propio.*"
+        "text": "*La razón por la que eligió un aula vacía es práctica, pero también significa — que es alguien que necesita un espacio propio. Siento que he abierto un cajón oculto detrás del título de 'profesora'. Debería cerrarlo — pero no puedo soltar la mano.*"
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d3_2_e": {
         "name": "{name}",
-        "text": "*No sé por qué me da las gracias. ¿Por no haber mirado? ¿O — por haber llegado hasta aquí?*"
+        "text": "*No sé por qué me da las gracias. ¿Por no haber mirado? ¿O — por haber llegado hasta aquí? Justo antes de la hora del almuerzo. — El corazón no se me ha calmado en toda la mañana. Supongo que he visto demasiadas caras, escuchado demasiadas palabras. No sé por qué todo me afecta tan deprisa.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Enfermera",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
-        "text": "Solo... las relaciones se complicaron."
+        "text": "...Son cosas que no sé bien a quién contarle."
     },
     "hidden_nurse_d3_5_f": {
         "name": "Enfermera",
@@ -678,7 +678,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*Dio en el blanco. — Su capacidad de observación no es ninguna broma.*"
+        "text": "*Dio en el blanco.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "Enfermera",
@@ -738,7 +738,7 @@
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",
-        "text": "*'Con heridas o sin ellas.' — ¿Empezará a verme como algo más que un paciente?*"
+        "text": "*'Con heridas o sin ellas.' — ¿Empezará a verme como algo más que un paciente? Salgo de la enfermería — y desde atrás, en voz baja.*"
     },
     "hidden_nurse_d3_8_f": {
         "name": "{name}",

@@ -167,7 +167,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen.*"
+        "text": "*Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen. Das letzte Event. Alles, was sich in den letzten Tagen aufgestaut hat, fließt in den heutigen Tag zusammen.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -179,7 +179,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*Am Schwarzen Brett ist eine Kurzgeschichte angeheftet. Titel: 'An den, den ich in der Bibliothek getroffen habe.' Das ist von Yuna. — Eine Geschichte, die nur der Protagonist erkennen kann. Ich blieb noch einen Moment davor stehen. Kurze Sätze, aber so deutlich, als hätte Yuna mir ihr Gesicht direkt vor meines gehalten.*"
+        "text": "*Am Schwarzen Brett ist eine Kurzgeschichte angeheftet. Titel: 'An den, den ich in der Bibliothek getroffen habe.' Das ist von Yuna. — Eine Geschichte, die nur ich erkennen kann. Ich blieb noch einen Moment davor stehen. Kurze Sätze, aber so deutlich, als hätte Yuna mir ihr Gesicht direkt vor meines gehalten.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -383,11 +383,11 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Ihr Markenspruch von Tag 1. — Damals war es Vorstellung. Jetzt ist es ernst.*"
+        "text": "*Ihr Markenspruch von Tag 1. — Damals war es Vorstellung. Jetzt ist es ernst. Die Schulkrankenschwester holt ein Pflaster heraus und klebt es auf meinen Handrücken. Langsam. — Auf dem Pflaster steht etwas in kleiner Schrift.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡'*"
+        "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡' Das Herz diesmal — scheint kein medizinisches Interesse zu sein.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -467,7 +467,7 @@
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Klassenlehrerin",
-        "text": "...Ich dachte, du würdest es lesen und mir sagen. — Ich habe es dir gezeigt, weil ich dachte, dass eine Schülerin weniger Druck spüren würde."
+        "text": "...Ich dachte, du würdest es lesen und mir sagen. — Ich habe es dir gezeigt, weil ich dachte, dass ein Schüler weniger Druck spüren würde."
     },
     "hidden_homeroom_d5_praise_trap_11": {
         "name": "Klassenlehrerin",
@@ -495,7 +495,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Ich wusste es nicht. Es war eine Vermutung. — Dass jemand, der sieben Jahre daran saß, es ausgerechnet *heute* einer Schülerin zum ersten Mal zeigt, war seltsam. Wäre es fertig, hätte sie es zuerst an Verlage geschickt. Es ist nicht fertig — also braucht sie *Erlaubnis*, es zu beenden.*"
+        "text": "*Ich wusste es nicht. Es war eine Vermutung. — Dass jemand, der sieben Jahre daran saß, es ausgerechnet *heute* einem Schüler zum ersten Mal zeigt, war seltsam. Wäre es fertig, hätte sie es zuerst an Verlage geschickt. Es ist nicht fertig — also braucht sie *Erlaubnis*, es zu beenden.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
@@ -515,7 +515,7 @@
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Klassenlehrerin",
-        "text": "...Eine Schülerin?"
+        "text": "...Ein Schüler?"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",

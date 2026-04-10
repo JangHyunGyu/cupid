@@ -157,7 +157,7 @@
     },
     "wall_seo_pinky_4": {
         "name": "Seoyeon",
-        "text": "...Warum bist du so. Warum machst du — so leicht Versprechen."
+        "text": "Warum machst du das. Warum — gibst du so leicht Versprechen."
     },
     "wall_seo_pinky_5": {
         "name": "Seoyeon",
@@ -219,7 +219,7 @@
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "{name}",
-        "text": "*Seoyeon streckt zuerst ihren kleinen Finger aus. Sie hört dort nicht auf. Sie nimmt meine Hand.*"
+        "text": "*Seoyeon streckt zuerst ihren kleinen Finger aus. Sie hört dort nicht auf. Sie nimmt meine Hand. Und drückt ihre Lippen auf meine Stirn.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
@@ -307,7 +307,7 @@
     },
     "wall_dain_9": {
         "name": "{name}",
-        "text": "*Vor meinen Augen wird es kalt.*"
+        "text": "*Mir wird eiskalt.*"
     },
     "wall_dain_10": {
         "name": "Dain",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Ich setzte mich neben Dain. Der Hallenboden ist kalt. Ich sagte nichts.*"
+        "text": "*Ich blieb einfach neben ihr sitzen. Sagte nichts. Dain auch nicht. — Eine seltsame Zeit. Dass neben Dain länger als eine Minute Stille herrscht, ist das erste Mal.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -464,7 +464,7 @@
     },
     "wall_dain_cry_6": {
         "name": "{name}",
-        "text": "*Sie hat zwei Ausrufezeichen in diese Weckernachricht geschrieben — weil eines nicht einmal gereicht hätte, sich selbst zu täuschen.*"
+        "text": "*Sie hat zwei Ausrufezeichen in diese Weckernachricht geschrieben — weil eines nicht einmal gereicht hätte, sich selbst zu täuschen. Ich blieb neben ihr, bis ihr Weinen verebbt war.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*Wir setzten uns auf die Bank neben dem hinteren Schultor. Dain legt sich ohne Vorwarnung auf meinen Scho?.*"
+        "text": "*Wir setzten uns auf die Bank neben dem hinteren Schultor. Dain legt sich ohne Vorwarnung auf meinen Schoß.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -706,7 +706,7 @@
     },
     "wall_yuna_moved_5_b": {
         "name": "{name}",
-        "text": "*Yuna atmet langsam aus. Die Fingerspitzen, mit denen sie ihren ?rmel festh?lt, zittern leicht.*"
+        "text": "*Yuna atmet langsam aus. Die Fingerspitzen, mit denen sie ihren Ärmel festhält, zittern leicht.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {
@@ -719,11 +719,11 @@
     },
     "wall_yuna_skin70_3": {
         "name": "{name}",
-        "text": "*Yunas Körpertemperatur ist niedrig. Aber die Hand, die sie hält, brennt.*"
+        "text": "*Yunas Hand ist wärmer als erwartet. — Nur das.*"
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
-        "text": "*Zwischen den Regalen des unterirdischen Archivs. Yuna dr?ckt von hinten ihre Stirn an meinen R?cken.*"
+        "text": "*Zwischen den Regalen des unterirdischen Archivs. Yuna drückt von hinten ihre Stirn an meinen Rücken.*"
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
@@ -795,7 +795,7 @@
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*Ich tippe eine Antwort und l?sche sie wieder. Egal was ich sage, es f?hlt sich schon zu sp?t an.*"
+        "text": "*Ich tippe eine Antwort und lösche sie wieder. Egal was ich sage, es fühlt sich schon zu spät an.*"
     },
     "day4_hidden_msg_branch": {
         "name": "System",

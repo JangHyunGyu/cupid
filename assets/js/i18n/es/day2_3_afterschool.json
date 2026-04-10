@@ -378,7 +378,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Pero, todos los días no puedo. Solo de vez en cuando."
+        "text": "...Pero todos los días no puede ser. Solo de vez en cuando."
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d2_2": {
         "name": "Enfermera",
-        "text": "Vaya, el nuevo de ayer. ¿Otra vez aquí? ¿Quieres ser cliente fijo?"
+        "text": "Dos días seguidos — ¿tendré que darte una tarjeta de socio de la enfermería?"
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
@@ -584,7 +584,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "{name}",
-        "text": "*Yuna dijo dos frases seguidas. — Para alguien que normalmente habla en una sola línea, eso es mucho.*"
+        "text": "*Yuna no aparta la mirada. Esa sola frase se queda conmigo mucho tiempo.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",

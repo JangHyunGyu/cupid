@@ -45,15 +45,15 @@
     },
     "seoyeon_meet_8": {
         "name": "{name}",
-        "text": "*Esboza una sonrisa. Solo la comisura de los labios. — Sin darme cuenta, yo también estaba sonriendo.*"
+        "text": "*Esboza una sonrisa. Sin darme cuenta, yo también estaba sonriendo. Seoyeon camina hacia el portón haciéndome señas.*"
     },
     "seoyeon_choice": {
         "name": "{name}",
         "text": "*¿Cómo debería responder?*",
         "choices": [
-            "No me digas que viniste antes porque te intereso.",
+            "¿No será que viniste antes porque te intereso?",
             "¿Cuánto cobra la guía?",
-            "Estoy bien. Ya me las arreglo solo."
+            "Tranquila, ya me apañaré echando un vistazo por ahí."
         ]
     },
     "choice_dismiss_1": {
@@ -62,7 +62,7 @@
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
-        "text": "¿Ah, sí? Entonces, al menos memoriza el número de aula. Tercero B, al final a la derecha."
+        "text": "¿Ah, sí? Entonces al menos apréndete el número de aula. 3.° 2.ª, al final a la derecha."
     },
     "choice_dismiss_3": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Será porque eres nuevo, pero no te cortas nada. Qué divertido."
+        "text": "Será porque eres nuevo, pero no sabes leer el ambiente. Qué divertido."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "hallway_8": {
         "name": "{name}",
-        "text": "*De repente tengo planes para comer. — Ni siquiera dije que sí.*"
+        "text": "*De repente tengo planes para comer. — Ni siquiera dije que sí. Llegamos frente al aula.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
@@ -154,7 +154,7 @@
     },
     "classroom_3": {
         "name": "Profesora",
-        "text": "Bien, a partir de hoy tenemos un estudiante nuevo en clase. ¿Te presentas?"
+        "text": "Bien, a partir de hoy tenemos un estudiante transferido en clase. ¿Te presentas?"
     },
     "classroom_dain_1": {
         "name": "Dain",
@@ -170,7 +170,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Ay, profe, es que esto es lo más cómodo. En fin, ¡encantada, estudiante transferido!"
+        "text": "Ay, profe, es que esto es lo más cómodo. ¡En fin, bienvenido, chico nuevo!"
     },
     "classroom_dain_5": {
         "name": "{name}",
@@ -234,11 +234,11 @@
     },
     "classroom_dain_talk_7": {
         "name": "Dain",
-        "text": "¡Jajaja, tu tiempo de reacción seguro es mejor que el de una máquina! ¡Seguramente!"
+        "text": "¡Jajaja, tu tiempo de reacción seguro que es mejor que el de una máquina! ¡Probablemente!"
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Dijo 'seguramente'. O sea que puede que sea mejor que una máquina. Mi posición es precaria.*"
+        "text": "*Dijo 'probablemente'. O sea que puede que sea mejor que una máquina. Mi posición es precaria.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
@@ -258,7 +258,7 @@
     },
     "hallway_6_b": {
         "name": "Seoyeon",
-        "text": "*Una breve pausa* ...Eres observador."
+        "text": "*Se detiene un instante* ...Eres observador."
     },
     "hallway_6_c": {
         "name": "{name}",

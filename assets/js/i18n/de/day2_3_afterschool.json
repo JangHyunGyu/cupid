@@ -13,7 +13,7 @@
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*Nichts von Yuna. — Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' fallen mir ins Auge.*"
+        "text": "*Nichts von Yuna. — Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' springt mir ins Auge.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "*Mit einem leichten Lächeln* Folgsam."
+        "text": "*Mit einem leichten Lächeln* Brav."
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Eine zufällig offene Tür. — Yunas 'zufällig' ist gleichbedeutend mit 'absichtlich'.*"
+        "text": "*Eine zufällig offene Tür. — Yunas 'zufällig' ist gleichbedeutend mit 'absichtlich'. Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhörer.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d2_2": {
         "name": "Schulkrankenschwester",
-        "text": "Oh, der Neue von gestern. Schon wieder hier? Willst du Stammgast werden?"
+        "text": "Zwei Tage in Folge — muss ich dir eine Mitgliedskarte fürs Krankenzimmer ausstellen?"
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",

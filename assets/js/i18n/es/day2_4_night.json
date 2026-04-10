@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "¡¡Oye!! ¿¡¡Qué haces mañana?!"
+        "text": "¡¡Oye!! ¡¿Mañana vamos a la tienda?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
-        "text": "...¿Mañana vendrás a la biblioteca?"
+        "text": "...¿Ya terminaste ese libro?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Por eso ahora dejo la puerta abierta con las tres. No quiero admitirlo. Si elijo a una demasiado rápido, solo la veré a ella, las demás se desvanecerán, y un día alguien podría volver a derrumbarse y no me daré cuenta. Es como un seguro. Sé que es cobarde. Cualquiera diría que soy un indeciso. Pero — sé lo que se siente perder a alguien porque era la única a la que miraba. Eso es lo que más miedo me da.*"
+        "text": "Cualquiera diría que soy un indeciso de mierda."
     },
     "night2_end_2": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notificación de la app de salud. 'Registro enfermería: {name} — Rasguño en el codo (leve). Nota: Te cambio la tirita mañana. Cambiar tiritas es un acto médico así que no puedes negarte ^^'*"
+        "text": "'Registro enfermería: {name} — Rasguño en el codo (leve). Nota: Te cambio la tirita mañana por la mañana. Cambiar tiritas es un acto médico así que no puedes negarte ^^'"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",

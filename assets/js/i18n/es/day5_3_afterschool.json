@@ -136,11 +136,11 @@
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*Sin que nadie se atreviera a hablar primero, dejamos atras la parte trasera de la escuela.*"
+        "text": "*Sin que nadie se atreviera a hablar primero, dejamos atrás la parte trasera de la escuela.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Cargando la grieta que habiamos tapado a la fuerza, nuestros pasos se dirigieron al parque.*"
+        "text": "*Cargando la grieta que habíamos tapado a la fuerza, nuestros pasos se dirigieron al parque.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -359,11 +359,11 @@
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*No se me ocurrieron mas palabras. Mientras el sol seguia cayendo, solo caminamos un rato en la misma direccion.*"
+        "text": "*No se me ocurrieron más palabras. Mientras el sol seguía cayendo, solo caminamos un rato en la misma dirección.*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Con un sentimiento aun sin resolver entre nosotros, nuestros pasos nos llevaron al parque.*"
+        "text": "*Con un sentimiento aún sin resolver entre nosotros, nuestros pasos nos llevaron al parque.*"
     },
     "after5_confess_no": {
         "name": "{name}",

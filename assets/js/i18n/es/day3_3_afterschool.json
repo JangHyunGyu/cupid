@@ -212,10 +212,10 @@
     },
     "after3_dain_choice": {
         "name": "{name}",
-        "text": "*Dain se sienta en el banco. Se frota la rodilla.*",
+        "text": "*Dain se sienta en el banco. Se frota la rodilla. — Esto no es de habérsela torcido hoy. Es algo antiguo.*",
         "choices": [
-            "Sentarme a su lado y esperar en silencio",
-            "¿Tienes parches? Voy a buscarlos"
+            "...¿Estás bien? No te fuerces. ¿Por qué no descansas hoy?",
+            "Oye, déjame recibir un saque más. Si no lo paro, ganas tú."
         ]
     },
     "after3_dain_choice1": {
@@ -232,7 +232,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
-        "text": "*Dain duda. — Y luego sonríe, apenas. Una sonrisa que nunca le había visto.*"
+        "text": "*Dain se detiene. — Y luego sonríe, apenas. Quiero proteger esa sonrisa.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -276,7 +276,7 @@
     },
     "after3_confront_6": {
         "name": "Seoyeon",
-        "text": "Sé honesto. ¿Les prometiste el fin de semana a todas?"
+        "text": "El desastre de la comida... ¿En qué estabas pensando cuando quedaste con las tres?"
     },
     "after3_confront_choice": {
         "name": "{name}",
@@ -435,7 +435,7 @@
     },
     "after3_confront_5_c": {
         "name": "{name}",
-        "text": "*Lo aceptó. — Es la primera vez que Dain no rechaza la ayuda de alguien. Una sonrisa sin signos de exclamación pesa extrañamente.*"
+        "text": "*Dain baja la cabeza. La voz sin signos de exclamación. — Le estoy haciendo daño.*"
     },
     "haeun_warn_5c_b": {
         "name": "Seoyeon",
@@ -491,7 +491,7 @@
     },
     "haeun_warn_7_d": {
         "name": "{name}",
-        "text": "*Haeun se da la vuelta y se va.*"
+        "text": "*Haeun se da la vuelta y se va. La situación en casa de Seoyeon es complicada. Sus padres. — ¿Será por eso que Seoyeon sentía que 'tenía que ser perfecta'?*"
     },
     "after3_reject_for_seo_3b": {
         "name": "{name}",

@@ -136,11 +136,11 @@
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*Ohne dass jemand als Erstes sprach, verliessen wir die Rueckseite der Schule.*"
+        "text": "*Ohne dass jemand als Erstes sprach, verließen wir die Rückseite der Schule.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Mit dem Riss, den wir nur notduerftig zugedeckt hatten, lenkten uns unsere Schritte zum Park.*"
+        "text": "*Mit dem Riss, den wir nur notdürftig zugedeckt hatten, lenkten uns unsere Schritte zum Park.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Ach Mensch, warum weinst du — das ist doch was Schönes —"
+        "text": "Also... sag's mir. Diesmal hör ich bis zum Ende zu."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -359,11 +359,11 @@
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*Mir fielen keine weiteren Worte ein. Waehrend die Sonne weiter sank, gingen wir eine Weile einfach in dieselbe Richtung.*"
+        "text": "*Mir fielen keine weiteren Worte ein. Während die Sonne weiter sank, gingen wir eine Weile einfach in dieselbe Richtung.*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Mit Gefuehlen ohne klare Antwort fuehrten uns unsere Schritte in den Park.*"
+        "text": "*Mit Gefühlen ohne klare Antwort führten uns unsere Schritte in den Park.*"
     },
     "after5_confess_no": {
         "name": "{name}",
