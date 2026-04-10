@@ -413,13 +413,13 @@ class CharacterRenderer {
     _showFreeTalkLockPopup(charId, charName) {
         const L = (ko, en, es, ja, fr, de) => ({ ko, en, es, ja, fr, de })[this.ui.lang] || en;
 
-        const trueEnding = this.ui.progress.data.characters?.[charId]?.trueEndingCleared || false;
+        const perfectEnding = this.ui.progress.data.characters?.[charId]?.perfectEndingCleared || false;
         const currentAffinity = this.ui.progress.getAffinity(charId);
         const freeTalkCount = this.ui.progress.getFreeTalkCount(charId);
 
         const hiddenChars = ['teacher', 'nurse'];
         const affinityMax = hiddenChars.includes(charId) ? 80 : 100;
-        const endingStatus = trueEnding ? '✅' : '❌';
+        const endingStatus = perfectEnding ? '✅' : '❌';
         const affinityStatus = currentAffinity >= affinityMax ? '✅' : '❌';
         const talkStatus = freeTalkCount >= 30 ? '✅' : '❌';
 

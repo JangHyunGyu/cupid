@@ -93,6 +93,8 @@ class GalleryProgress {
                     console.log('[GalleryProgress] 데이터 버전 업데이트로 인해 초기화됩니다.');
                 } else {
                     this.data = parsed;
+                    // trueEndingCleared → perfectEndingCleared 마이그레이션
+                    this._migratePerfectEndingKey();
                     return this.data;
                 }
             } catch (e) {
@@ -110,6 +112,27 @@ class GalleryProgress {
         }
 
         return this.data;
+    }
+
+    /**
+     * trueEndingCleared → perfectEndingCleared 키 마이그레이션
+     * 기존 유저 데이터 호환성 유지
+     * @private
+     */
+    _migratePerfectEndingKey() {
+        if (!this.data?.characters) return;
+        let migrated = false;
+        for (const charData of Object.values(this.data.characters)) {
+            if (charData.trueEndingCleared !== undefined) {
+                charData.perfectEndingCleared = charData.trueEndingCleared;
+                delete charData.trueEndingCleared;
+                migrated = true;
+            }
+        }
+        if (migrated) {
+            this.save();
+            console.log('[GalleryProgress] trueEndingCleared → perfectEndingCleared 마이그레이션 완료');
+        }
     }
 
     /**
@@ -293,7 +316,7 @@ class GalleryProgress {
 
     /**
      * 캐릭터의 갤러리 프리토킹이 해금되었는지 확인
-     * TRUE LOVE 엔딩 클리어 시 GameEngine에서 설정됨
+     * PERFECT 엔딩 클리어 시 GameEngine에서 설정됨
      *
      * @param {string} charId - 캐릭터 ID (예: 'seyoun')
      * @returns {boolean} 해금 여부
@@ -301,16 +324,16 @@ class GalleryProgress {
     isFreeTalkUnlocked(charId) {
         if (this.isAdmin) return true;
         this.refresh();
-        const trueEnding = this.data.characters?.[charId]?.trueEndingCleared || false;
+        const perfectEnding = this.data.characters?.[charId]?.perfectEndingCleared || false;
         const hiddenChars = ['teacher', 'nurse'];
         const affinityThreshold = hiddenChars.includes(charId) ? 80 : 100;
         const bikiniUnlocked = this.getAffinity(charId) >= affinityThreshold && this.getFreeTalkCount(charId) >= 30;
-        return trueEnding && bikiniUnlocked;
+        return perfectEnding && bikiniUnlocked;
     }
 
     /**
      * 저장된 플레이어 이름 가져오기
-     * 1순위: 갤러리 데이터 (TRUE LOVE 엔딩 시 저장)
+     * 1순위: 갤러리 데이터 (PERFECT 엔딩 시 저장)
      * 2순위: 게임 세이브 데이터 (cupid_save)
      *
      * @returns {string|null} 플레이어 이름 또는 null
