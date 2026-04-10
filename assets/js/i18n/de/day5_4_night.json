@@ -422,7 +422,7 @@
     },
     "alone_2_b": {
         "name": "{name}",
-        "text": "*Kirschblüten fallen vor dem Fenster. Dieselben, die vor fünf Tagen meine Nasenspitze streiften, werden jetzt vom Wind davongetragen.*"
+        "text": "*Das Zimmer ist seltsam still. Die Stimmen, die eben noch in meinen Ohren nachhallten, verklingen mit dem Klang der sich schließenden Tür. Vor dem Fenster fallen Kirschblüten. Dieselben, die vor fünf Tagen meine Nasenspitze streiften, werden jetzt vom Wind davongetragen.*"
     },
     "alone_4": {
         "name": "{name}",
@@ -514,7 +514,7 @@
     },
     "good_1_yuna": {
         "name": "Yuna",
-        "text": "...Du bist wirklich begriffsstutzig. Aber weil du zurückgekommen bist, kann ich es verzeihen."
+        "text": "...Spät war's schon. Aber diesmal hab ich deinen Satz bis zum Ende gelesen."
     },
     "good_1_yuna_b": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
-        "text": "*Sie jagte dem Schatten einer verschwundenen Person nach.*"
+        "text": "*Ein kurzer Satz, aber diesmal las er sich wie eine Bitte.*"
     },
     "good_2_yuna": {
         "name": "{name}",
@@ -558,7 +558,7 @@
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Hey, ich war echt sauer, weißt du? ...Aber am Ende bist du zu mir gekommen. Das reicht mir."
+        "text": "Hey, ganz verziehen hab ich dir noch nicht. ...Aber immerhin genug, um dir wieder den Ball zuzuwerfen."
     },
     "good_2_dain": {
         "name": "{name}",
@@ -570,7 +570,7 @@
     },
     "good_4_dain": {
         "name": "{name}",
-        "text": "*Sie lief weiter, auch wenn ihre Knie schmerzten.*"
+        "text": "*Das Knie tut noch weh, und auch das Herz ist nicht ganz geordnet. Aber zusammen laufen können wir.*"
     },
     "good_5_dain": {
         "name": "{name}",
@@ -634,7 +634,7 @@
     },
     "friend_1": {
         "name": "{name}",
-        "text": "*Am Ende konnte ich es nicht sagen.*"
+        "text": "*Die Kirschblüten werden gerade vom Wind davongetragen und verschwinden.*"
     },
     "friend_2": {
         "name": "{name}",
@@ -674,7 +674,7 @@
     },
     "friend_8": {
         "name": "{name}",
-        "text": "*Abschlusstag. Ich scrolle durch die Handygalerie. Wo einmal Sojeongs Foto war, ist jetzt ein Gruppenfoto mit ihr.*"
+        "text": "*Abschlusstag. Ich scrolle durch die Handygalerie. Wo einmal Sojeongs Foto war, ist jetzt ein Gruppenfoto mit den Freunden von dieser Schule. Genau wie damals drehe ich den Kopf weg.*"
     },
     "friend_9": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Montag Seoyeon. Mittwoch Yuna. Freitag Dain. Dazwischen stapeln sich die Lügen, damit niemand etwas merkt. Ich dachte, es wäre süß, aber mir bleibt schnell die Luft weg.*"
+        "text": "*Montag Seoyeon. Mittwoch Yuna. Freitag Dain. Der Handykalender ist ein Minenfeld. Montags den Namen von Mittwoch sagen — dann ist es vorbei.*"
     },
     "harem_5": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*Ich kann so tun, als wäre ich glücklich. Aber selbst ich glaube nicht, dass diese Zukunft gut enden wird.*"
+        "text": "*Drei Alarme, drei Personas, drei Lügen. — Das Glück zu nennen — dafür kommen die Magenkrämpfe zu oft.*"
     },
     "harem_8": {
         "name": "System",
@@ -1024,7 +1024,7 @@
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*Die Pflaster sind noch in der Schublade. Auch wenn es keinen Grund mehr gibt. — Wer keine Ausreden mehr braucht, kann die Gewohnheit trotzdem nicht ablegen.*"
+        "text": "*Das hellgrüne Notizbuch verschwand tief in der Schublade. Auf der letzten Seite steht kein Brief, nur eine Zeile. 'Yujin, mir geht es jetzt gut.' — Ein Punkt nach drei Jahren.*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -1112,7 +1112,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Dreht die Kaffeetasse* Das Zeugnis wirkt schneller als gedacht."
+        "text": "*Dreht die Kaffeetasse* ...Hätte nicht gedacht, dass mir der Geruch des Krankenzimmers nach dem Abschluss fehlen würde."
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -1124,7 +1124,7 @@
     },
     "hidden_true_nurse_8_e": {
         "name": "Schulkrankenschwester",
-        "text": "Weißt du, an Tag 1, als du ins Krankenzimmer kamst."
+        "text": "Weißt du... ich hatte damals überlegt zu kündigen."
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
@@ -1132,7 +1132,7 @@
     },
     "hidden_true_nurse_8_g": {
         "name": "Schulkrankenschwester",
-        "text": "Ich habe deine Stirn berührt und gesagt 'Ich wollte dich einfach anfassen.' *Leise lächelnd* Das war ein Witz."
+        "text": "Aber dann kamst du — und ich hatte einen Grund zu bleiben. *Leise lächelnd* Danke."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
@@ -1164,7 +1164,7 @@
     },
     "hidden_good_nurse_3_b": {
         "name": "{name}",
-        "text": "*Selbst nachdem ich den Deckel schlie?e, wollen sich meine Mundwinkel nicht senken.*"
+        "text": "*Selbst nachdem ich den Deckel schließe, wollen sich meine Mundwinkel nicht senken.*"
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
