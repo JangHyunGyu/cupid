@@ -106,7 +106,7 @@
         "name": "Seoyeon",
         "text": "Da próxima vez que eu pedir um favor, você aceita sem reclamar. — É o preço.",
         "choices": [
-            "Não precisa ser perfeita. Todo mundo tem dias assim.",
+            "Não precisa ser perfeita. Todo mundo é assim.",
             "...Agora? Não vi nada. Minha caneta caiu, vim pegar."
         ]
     },
@@ -412,7 +412,7 @@
     },
     "after3_dain_4": {
         "name": "Dain",
-        "text": "Ai! Tô bem!! Foi só uma torcida de nada!!"
+        "text": "Ai! Tô bem!! Foi só uma torção de nada!!"
     },
     "after3_dain_5": {
         "name": "{name}",

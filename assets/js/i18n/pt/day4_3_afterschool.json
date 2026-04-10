@@ -185,7 +185,7 @@
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
-        "text": "...Não vai embora."
+        "text": "...Não vai embora. Se sumir de repente, eu não aguento."
     },
     "confess_yuna_yes_9": {
         "name": "Yuna",
@@ -265,7 +265,7 @@
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*Não é pedra-papel-tesoura, não é um jogo. Mas pra mim, é tudo.*"
+        "text": "*Não é uma declaração de pedra-papel-tesoura. Mas pra mim, é tudo.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",

@@ -219,7 +219,7 @@
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "{name}",
-        "text": "*Seoyeon estende o mindinho primeiro. Não para ali. Segura minha mão.*"
+        "text": "*Seoyeon estende o mindinho primeiro. Não para ali. Segura minha mão. Encosta os lábios na minha testa.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
@@ -311,7 +311,7 @@
     },
     "wall_dain_10": {
         "name": "Dain",
-        "text": "Não, tô bem!! Só torci um pouquinho, não é na..."
+        "text": "Não, tô bem!! Só torci um pouquinho, não é nada de..."
     },
     "wall_dain_11": {
         "name": "{name}",
@@ -355,7 +355,7 @@
     },
     "wall_dain_17": {
         "name": "Dain",
-        "text": "Fiz cirurgia, e o médico — falou com muito cuidado. 'O dia a dia vai ser normal, mas jogar como antes...' — Não lembro o que veio depois. O som sumiu."
+        "text": "Fiz cirurgia, e os médicos — falou com muito cuidado. 'O dia a dia vai ser normal, mas jogar como antes...' — Não lembro o que veio depois. O som sumiu."
     },
     "wall_dain_18": {
         "name": "Dain",
@@ -464,7 +464,7 @@
     },
     "wall_dain_cry_6": {
         "name": "{name}",
-        "text": "*Ela colocou dois pontos de exclamação naquele alarme — porque um só não era o bastante pra enganar nem a si mesma.*"
+        "text": "*Ela colocou dois pontos de exclamação naquele alarme — porque um só não era o bastante pra enganar nem a si mesma. Fiquei do lado até o choro da Dain se acalmar.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
@@ -835,7 +835,7 @@
     },
     "night_nurse_msg_4": {
         "name": "Enfermeira",
-        "text": "...Boa noite."
+        "text": "...Dorme."
     },
     "day4_night_sleep": {
         "name": "{name}",

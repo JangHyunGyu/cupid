@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Abri os olhos. A luz da manhã entra pelas cortinas. — O sonho de hoje foi bom. Peguei o celular. Abri a galeria. Foto da Sojeong. — Parei de rolar e segurei.*"
+        "text": "*Abri os olhos. A luz da manhã entra pelas cortinas. — O sonho de hoje foi bom. Peguei o celular. Abri a galeria. Foto da Sojeong. — Parei de rolar e segurei pressionado.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu disse. 'Recusar também é amor.' Na escola anterior, Sojeong desapareceu sem ninguém ajudar. Porque eu fiquei calado. — Esse foi o final mais cruel pros dois. Se ao menos um daqueles 38 recados tivesse sido enviado — Sojeong talvez não tivesse ido embora.*"
+        "text": "*Minsu disse. 'Recusar também é amor.' Na escola anterior, Sojeong desapareceu sem ninguém ajudar. Porque eu fiquei calado. — Esse foi o final mais indelicado pros dois. Se ao menos um daqueles 38 recados tivesse sido enviado — Sojeong talvez não tivesse ido embora.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*Espero que não trate de leve a escolha de ao lado de quem ficar*"
+        "text": "*Espero que não leve de leve a escolha de com quem ficar*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
