@@ -316,7 +316,7 @@ if (unreachable.length > 0) {
 }
 
 // ===== 11. Cross-language i18n key consistency =====
-const i18nLangs = ['en', 'ja', 'fr', 'es', 'de'];
+const i18nLangs = ['en', 'ja', 'fr', 'es', 'de', 'pt'];
 for (const lang of i18nLangs) {
     const langDir = path.join(BASE, 'i18n', lang);
     if (!fs.existsSync(langDir)) continue;
@@ -414,7 +414,7 @@ for (const file of jsFiles) {
 // index.html(KO)을 기준으로 다른 언어 index 파일의 인라인 JS 패턴 비교
 const koIndex = htmlFiles.find(f => f.name === 'index.html');
 if (koIndex) {
-    const langIndexFiles = htmlFiles.filter(f => /^index-(en|es|ja|fr|de)\.html$/.test(f.name));
+    const langIndexFiles = htmlFiles.filter(f => /^index-(en|es|ja|fr|de|pt)\.html$/.test(f.name));
 
     // 체크할 패턴: KO에 있는 수정된 패턴이 다른 언어에도 적용되었는지
     const syncPatterns = [
@@ -448,7 +448,7 @@ const htmlStructureChecks = [
 for (const check of htmlStructureChecks) {
     const koFile = htmlFiles.find(f => f.name === check.context + '.html');
     if (!koFile || !koFile.content.includes(check.selector)) continue;
-    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de)\\.html$').test(f.name));
+    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de|pt)\\.html$').test(f.name));
     for (const langFile of langFiles) {
         if (!langFile.content.includes(check.selector)) {
             errors.push('[HTML_STRUCTURE] ' + langFile.name + ': "' + check.name + '" (' + check.selector + ') 가 index.html(KO)에는 있지만 이 파일에는 누락');
@@ -464,7 +464,7 @@ const gameStructureChecks = [
 for (const check of gameStructureChecks) {
     const koFile = htmlFiles.find(f => f.name === check.context + '.html');
     if (!koFile || !koFile.content.includes(check.selector)) continue;
-    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de)\\.html$').test(f.name));
+    const langFiles = htmlFiles.filter(f => new RegExp('^' + check.context + '-(en|es|ja|fr|de|pt)\\.html$').test(f.name));
     for (const langFile of langFiles) {
         if (!langFile.content.includes(check.selector)) {
             errors.push('[HTML_STRUCTURE] ' + langFile.name + ': "' + check.name + '" (' + check.selector + ') 누락');
@@ -1230,7 +1230,7 @@ for (const file of htmlFiles) {
 const settingsIds = ['settingsModal', 'affinityToggle', 'bgmVolume', 'sfxVolume', 'bgmVolumeVal', 'sfxVolumeVal'];
 const koIndexFile = htmlFiles.find(f => f.name === 'index.html');
 if (koIndexFile) {
-    const langIndexes = htmlFiles.filter(f => /^index-(en|es|ja|fr|de)\.html$/.test(f.name));
+    const langIndexes = htmlFiles.filter(f => /^index-(en|es|ja|fr|de|pt)\.html$/.test(f.name));
     for (const langFile of langIndexes) {
         for (const sid of settingsIds) {
             const koHas = koIndexFile.content.includes('id="' + sid + '"');
@@ -1418,7 +1418,7 @@ try {
     }
     // SW가 모든 메인 HTML에서 등록되는지
     for (const file of htmlFiles) {
-        if (/^(index|game)\.html$/.test(file.name) || /^(index|game)-(en|es|ja|fr|de)\.html$/.test(file.name)) {
+        if (/^(index|game)\.html$/.test(file.name) || /^(index|game)-(en|es|ja|fr|de|pt)\.html$/.test(file.name)) {
             if (!file.content.includes('service-worker.js') && !file.content.includes('serviceWorker')) {
                 warnings.push('[SW_REG] ' + file.name + ': Service Worker 등록 코드 없음');
             }
