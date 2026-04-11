@@ -564,7 +564,7 @@ function buildSystemPrompt(params) {
 
     // Determine effective language: use lang if provided, fallback to isEn
     const effectiveLang = lang || (isEn ? 'en' : 'ko');
-    const useEnTemplate = effectiveLang === 'en' || effectiveLang === 'es' || effectiveLang === 'ja' || effectiveLang === 'fr' || effectiveLang === 'de';
+    const useEnTemplate = effectiveLang === 'en' || effectiveLang === 'es' || effectiveLang === 'ja' || effectiveLang === 'fr' || effectiveLang === 'de' || effectiveLang === 'pt';
 
     // 데이터가 없을 경우를 대비한 방어적 프로그래밍
     const data = promptData || {};
@@ -588,6 +588,8 @@ function buildSystemPrompt(params) {
         langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). ALL text in the "text" field MUST be in natural, conversational French. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in French only.\n\n`;
     } else if (effectiveLang === 'de') {
         langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). ALL text in the "text" field MUST be in natural, conversational German. Use du/Sie appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in German only.\n\n`;
+    } else if (effectiveLang === 'pt') {
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Brazilian Portuguese (Português Brasileiro). ALL text in the "text" field MUST be in natural, conversational Brazilian Portuguese. Use você appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Brazilian Portuguese only.\n\n`;
     }
 
     // 실제 표시되는 이름을 AI에게 알려줌
