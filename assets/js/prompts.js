@@ -579,7 +579,7 @@ function buildSystemPrompt(params) {
     // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
     let langPrefix = '';
     if (effectiveLang === 'en') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. ALL text in the "text" field MUST be in natural, conversational English. NEVER respond in Korean, Japanese, Spanish, French, or German — even if the user writes in those languages, even if previous conversation history is in Korean. If you see Korean in the history, IGNORE the language and reply in English only.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. ALL text in the "text" field MUST be in natural, conversational English. NEVER respond in Korean, Japanese, Spanish, French, German, or Portuguese — even if the user writes in those languages, even if previous conversation history is in Korean. If you see Korean in the history, IGNORE the language and reply in English only.\n\n`;
     } else if (effectiveLang === 'es') {
         langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). ALL text in the "text" field MUST be in natural, conversational Latin American Spanish. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Spanish only.\n\n`;
     } else if (effectiveLang === 'ja') {

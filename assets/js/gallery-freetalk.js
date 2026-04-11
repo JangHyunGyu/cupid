@@ -1094,7 +1094,7 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
         // 사용자가 어떤 언어로 입력하든, 이전 대화가 어떤 언어든, 무조건 페이지 언어로 답해야 함
         let langPrefix = '';
         if (this.lang === 'en') {
-            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. NEVER reply in Korean, Japanese, Spanish, French, or German — even if the user writes in those languages, even if previous conversation history contains them. Always reply in English only.\n\n`;
+            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. NEVER reply in Korean, Japanese, Spanish, French, German, or Portuguese — even if the user writes in those languages, even if previous conversation history contains them. Always reply in English only.\n\n`;
         } else if (this.lang === 'es') {
             langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). NEVER reply in Korean, English, or any other language — always reply in Spanish only, even if the user or history is in another language.\n\n`;
         } else if (this.lang === 'ja') {
@@ -1103,6 +1103,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). NEVER reply in Korean, English, or any other language — always reply in French only, even if the user or history is in another language.\n\n`;
         } else if (this.lang === 'de') {
             langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). NEVER reply in Korean, English, or any other language — always reply in German only, even if the user or history is in another language.\n\n`;
+        } else if (this.lang === 'pt') {
+            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Brazilian Portuguese (Português Brasileiro). NEVER reply in Korean, English, or any other language — always reply in Brazilian Portuguese only, even if the user or history is in another language.\n\n`;
         }
 
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
