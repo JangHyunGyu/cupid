@@ -254,6 +254,30 @@ class UIManager {
     }
 
     /**
+     * 행동 묘사(*) 토글 버튼 바인딩 — game.html 및 gallery-freetalk 모두 지원
+     */
+    _bindActionToggle() {
+        const btn = this.actionToggleBtn || document.getElementById('action-toggle-btn');
+        const input = this.chatInput;
+        if (!btn || !input || btn.dataset.bound) return;
+        btn.dataset.bound = '1';
+
+        btn.addEventListener('click', () => {
+            const start = input.selectionStart || 0;
+            const end = input.selectionEnd || 0;
+            const val = input.value;
+            const before = val.substring(0, start);
+            const after = val.substring(end);
+            input.value = before + '*' + after;
+            const newPos = start + 1;
+            input.setSelectionRange(newPos, newPos);
+            this._actionMode = !this._actionMode;
+            btn.classList.toggle('active', this._actionMode);
+            input.focus();
+        });
+    }
+
+    /**
      * 이미지 파일을 읽어서 Base64로 변환 및 리사이징
      * @param {File} file - 선택된 파일 객체
      */
