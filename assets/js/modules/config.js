@@ -290,29 +290,18 @@ async function migrateCupidChatHistoryToD1() {
 async function saveCupidChatLog({ charId, userContent, assistantContent, sessionId = '', context = '1:1' }) {
     if (!charId) return;
     const userId = getCupidDeviceId();
+    const playerName = window.gameEngine?.stateManager?.playerName || '';
     const headers = { 'Content-Type': 'application/json', 'x-app-id': 'cupid' };
     const post = (role, content) => fetch(API_ENDPOINT + 'chat-logs', {
         method: 'POST',
         headers,
-        body: JSON.stringify({ userId, charId, sessionId, role, content, context })
+        body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName })
     }).catch(err => console.warn('[ChatLog] cupid 저장 실패:', err.message));
 
     try {
         // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
         if (userContent) await post('user', userContent);
         if (assistantContent) await post('assistant', assistantContent);
-
-        // 유저 프로필 저장 (백업 뷰어에서 이름 표시용, fire-and-forget)
-        const playerName = window.haremApp?.stateManager?.playerName
-            || window.gameEngine?.stateManager?.playerName
-            || '';
-        if (playerName && playerName !== '주인공' && playerName !== 'Protagonist') {
-            fetch(API_ENDPOINT + 'user-profiles', {
-                method: 'POST',
-                headers,
-                body: JSON.stringify({ userId, playerName, playerGender: '', playerAge: '', playerDesc: '' })
-            }).catch(() => {});
-        }
     } catch (e) {
         console.warn('[ChatLog] cupid saveCupidChatLog 오류:', e.message);
     }
