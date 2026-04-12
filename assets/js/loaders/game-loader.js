@@ -304,6 +304,7 @@
         if (msg === 'Script error.' && !stack) return 'noise';
         if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return 'noise';
         if (/ResizeObserver loop/.test(msg)) return 'noise';
+        if (/window\.ethereum|window\.__firefox__/.test(msg)) return 'noise';
         // External scripts
         if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return 'external';
         if (src && /^undefined:/.test(src) && !(stack || '').match(/\/(assets|js|modules)\//)) return 'external';
