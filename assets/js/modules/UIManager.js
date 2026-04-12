@@ -58,6 +58,10 @@ class UIManager {
         this.chatSkipBtn = document.getElementById('chat-skip-btn');     // 스킵 버튼
         this.turnCountEl = document.getElementById('turn-count');        // 남은 턴 수 표시
 
+        // ✱ 행동 묘사(*) 토글 버튼
+        this.actionToggleBtn = document.getElementById('action-toggle-btn');
+        this._actionMode = false;
+
         // 🖼️ 이미지 업로드 관련
         this.imageUploadBtn = document.getElementById('upload-image-btn');
         this.imageUploadInput = document.getElementById('upload-image-input');
