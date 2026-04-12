@@ -583,7 +583,8 @@ class FreeTalkSystem {
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             // [Explicit Caching] 캐시 키 헤더 추가
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const _cacheKey = charKey ? `cupid:${_lang}:${charKey}` : '';
+            const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
+            const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}` : '';
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             const _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(this.freeTalkHistory, 5)
