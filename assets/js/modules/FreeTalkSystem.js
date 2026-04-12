@@ -366,6 +366,7 @@ class FreeTalkSystem {
             gameContext,
             socialContext,
             mediumInstruction,
+            isRemote,
             promptData,
             currentMaxTurns: this.currentMaxTurns,
             playerName: this.stateManager.playerName,
