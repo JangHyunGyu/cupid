@@ -540,6 +540,37 @@ html[lang="pt"] #message {
 }
 
 /* 이미지 업로드 버튼 */
+/* 행동 묘사(*) 토글 버튼 */
+#action-toggle-btn {
+    background: transparent;
+    border: 1.5px solid rgba(255, 105, 180, 0.3);
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 105, 180, 0.5);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+#action-toggle-btn:hover {
+    border-color: #ff69b4;
+    color: #ff69b4;
+}
+
+#action-toggle-btn.active {
+    background: rgba(255, 105, 180, 0.2);
+    border-color: #ff69b4;
+    color: #ff69b4;
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
+}
+
 #upload-image-btn {
     background: #ff69b4 !important;
     border: none;
