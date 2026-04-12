@@ -235,6 +235,9 @@ class UIManager {
             chatInputWrapper.appendChild(this.imageUploadInput);
         }
 
+        // 행동 묘사(*) 토글 버튼
+        this._bindActionToggle();
+
         // 파일 선택 시 처리
         this.imageUploadInput.addEventListener('change', (e) => {
             const file = e.target.files[0];
