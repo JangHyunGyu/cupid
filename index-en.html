@@ -1006,7 +1006,27 @@
     <script src="assets/js/loaders/game-loader.js?v=2.4.0"></script>
 
     <script>
-        window.addEventListener('DOMContentLoaded', () => { if (window.soundManager) soundManager.init(); });
+        // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
+        function _onGameReady() {
+            if (window.soundManager) soundManager.init();
+
+            const startBtn = document.getElementById('start-btn');
+            if (startBtn) {
+                startBtn.disabled = false;
+                startBtn.style.opacity = '1';
+            }
+
+            setTimeout(() => {
+                const continueBtn = document.getElementById('continue-btn');
+                if (continueBtn && window.hasSavedGame && window.hasSavedGame()) {
+                    continueBtn.disabled = false;
+                    continueBtn.style.opacity = '1';
+                    continueBtn.style.cursor = 'pointer';
+                }
+            }, 100);
+        }
+        if (window.gameScriptsLoaded) _onGameReady();
+        else window.addEventListener('gameScriptsLoaded', _onGameReady);
 
         async function startGame() {
             // Show custom confirmation if saved game exists (continue button is enabled)
@@ -1106,25 +1126,7 @@
             }
         }
 
-        // 페이지 로드 시 버튼 활성화 (모든 스크립트 로드 완료 후)
-        window.addEventListener('DOMContentLoaded', () => {
-            // 새게임 버튼 활성화
-            const startBtn = document.getElementById('start-btn');
-            if (startBtn) {
-                startBtn.disabled = false;
-                startBtn.style.opacity = '1';
-            }
-
-            // 계속하기 버튼: 저장 데이터가 있을 때만 활성화
-            setTimeout(() => {
-                const continueBtn = document.getElementById('continue-btn');
-                if (continueBtn && window.hasSavedGame && window.hasSavedGame()) {
-                    continueBtn.disabled = false;
-                    continueBtn.style.opacity = '1';
-                    continueBtn.style.cursor = 'pointer';
-                }
-            }, 100);
-        });
+        // 버튼 활성화는 _onGameReady()에서 처리 (gameScriptsLoaded 이벤트)
 
         function openSettingsModal() {
             document.getElementById('settingsModal').classList.add('is-open');

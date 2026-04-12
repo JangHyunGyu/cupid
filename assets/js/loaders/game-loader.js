@@ -216,20 +216,17 @@
     // =========================================================================
 
     /**
-     * 스크립트를 동적으로 로드하는 함수
-     * 
-     * document.write()를 사용하여 페이지 파싱 중에 동기적으로 스크립트를 삽입.
-     * 이 방식은 스크립트가 순서대로 실행되는 것을 보장합니다.
-     * 
-     * 주의: document.write()는 페이지 로드 완료 후에는 사용하면 안 됩니다.
-     *       이 스크립트는 반드시 페이지 로드 중에 실행되어야 합니다.
-     * 
-     * @param {string} src - 로드할 스크립트 파일 경로 (basePath 기준 상대 경로)
+     * 동적 스크립트 로딩 (Dynamic Script Loading)
+     *
+     * document.write() 대신 createElement('script') + async=false 사용.
+     *   - async=false: 브라우저가 스크립트를 병렬 다운로드하되, 삽입 순서대로 실행
+     *   - document.write()와 달리 느린 모바일 연결에서 Chrome 차단(Intervention) 없음
+     *   - 모든 스크립트 로드 완료 시 'gameScriptsLoaded' 이벤트 발생
+     *
+     * 주의: 스크립트가 비동기 로드되므로 DOMContentLoaded 이전에 실행되지 않을 수 있음.
+     *       게임 스크립트에 의존하는 코드는 window.gameScriptsLoaded 플래그 또는
+     *       'gameScriptsLoaded' 이벤트를 사용해야 합니다.
      */
-    function loadScript(src) {
-        // basePath + 파일경로 + ?v=버전 형태로 스크립트 태그 생성
-        document.write('<script src="' + basePath + src + '?v=' + version + '"><\/script>');
-    }
 
     // =========================================================================
     // 스크립트 로드 실행 (Execute Script Loading)
@@ -237,20 +234,35 @@
 
     /**
      * 모든 스크립트를 순서대로 로드
-     * 
+     *
      * 실행 순서:
      *   1. commonScripts   - 공통 스크립트 (ga.js, sound.js)
      *   2. scenarioScripts - 현재 언어의 시나리오 파일들
      *   3. engineScripts   - 게임 엔진 스크립트들
-     * 
-     * forEach()는 배열의 각 요소에 대해 loadScript() 함수를 호출합니다.
+     *
+     * async=false로 병렬 다운로드 + 순서 실행을 보장합니다.
      */
-    commonScripts.forEach(loadScript);    // 1. 공통 스크립트 로드
-    scenarioScripts.forEach(loadScript);  // 2. 시나리오 스크립트 로드
-    engineScripts.forEach(loadScript);    // 3. 게임 엔진 스크립트 로드
+    var allScripts = [].concat(commonScripts, scenarioScripts, engineScripts);
+    var loadedCount = 0;
+    var totalCount = allScripts.length;
+
+    allScripts.forEach(function(src) {
+        var script = document.createElement('script');
+        script.src = basePath + src + '?v=' + version;
+        script.async = false;
+        script.onload = script.onerror = function() {
+            loadedCount++;
+            if (loadedCount === totalCount) {
+                window.gameScriptsLoaded = true;
+                window.dispatchEvent(new Event('gameScriptsLoaded'));
+            }
+        };
+        document.head.appendChild(script);
+    });
 
 })();
 // 즉시 실행 함수(IIFE)로 감싸서 전역 변수 오염 방지
+// async=false 동적 스크립트는 삽입 순서대로 실행되며, Chrome Intervention 대상 아님
 
 // ============================================================================
 // 【글로벌 에러 핸들러】 프론트엔드 에러를 D1에 기록

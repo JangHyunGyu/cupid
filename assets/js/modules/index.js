@@ -190,7 +190,9 @@ window.loadGameState = () => {
  * DOM 로드 완료 후 게임 엔진 생성하고 "start" 씬부터 시작
  */
 if (!window.preventAutoStart) {
-    window.addEventListener('DOMContentLoaded', async () => {
+    // 동적 스크립트 로딩 시 DOMContentLoaded가 이미 fired 되었을 수 있으므로
+    // readyState를 확인하여 즉시 실행 또는 이벤트 대기를 결정
+    async function _cupidAutoStart() {
         try {
             // i18n 데이터 로딩 완료 대기 (비한국어 페이지에서 번역 누락 방지)
             if (window._i18nReady) await window._i18nReady;
@@ -201,7 +203,13 @@ if (!window.preventAutoStart) {
         } catch (e) {
             console.error('[Cupid Engine] 초기화 오류:', e);
         }
-    });
+    }
+
+    if (document.readyState === 'loading') {
+        window.addEventListener('DOMContentLoaded', _cupidAutoStart);
+    } else {
+        _cupidAutoStart();
+    }
 }
 
 // 🎉 로드 완료 메시지 (개발자 도구 콘솔에서 확인 가능)
