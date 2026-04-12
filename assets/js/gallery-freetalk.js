@@ -714,7 +714,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
 
         try {
             // [Explicit Caching] 캐시 키 헤더 추가
-            const _gftCacheKey = this.currentCharId ? `cupid-gft:${this.lang}:${this.currentCharId}` : '';
+            const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
+            const _gftCacheKey = this.currentCharId ? `cupid-gft:${_pv}:${this.lang}:${this.currentCharId}` : '';
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             const _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(this.chatHistory, 5)
