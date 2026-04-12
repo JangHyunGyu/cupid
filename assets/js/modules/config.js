@@ -298,10 +298,9 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
     }).catch(err => console.warn('[ChatLog] cupid 저장 실패:', err.message));
 
     try {
-        const tasks = [];
-        if (userContent) tasks.push(post('user', userContent));
-        if (assistantContent) tasks.push(post('assistant', assistantContent));
-        await Promise.all(tasks);
+        // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
+        if (userContent) await post('user', userContent);
+        if (assistantContent) await post('assistant', assistantContent);
     } catch (e) {
         console.warn('[ChatLog] cupid saveCupidChatLog 오류:', e.message);
     }
