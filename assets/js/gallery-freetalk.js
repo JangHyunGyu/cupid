@@ -589,6 +589,23 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             if (this.isTyping) this.skipTyping = true;
         });
 
+        // 행동 묘사(*) 토글 버튼
+        const actionBtn = document.getElementById('action-toggle-btn');
+        let actionMode = false;
+        if (actionBtn && input) {
+            actionBtn.addEventListener('click', () => {
+                const start = input.selectionStart || 0;
+                const end = input.selectionEnd || 0;
+                const val = input.value;
+                input.value = val.substring(0, start) + '*' + val.substring(end);
+                const newPos = start + 1;
+                input.setSelectionRange(newPos, newPos);
+                actionMode = !actionMode;
+                actionBtn.classList.toggle('active', actionMode);
+                input.focus();
+            });
+        }
+
         // 이미지 업로드
         uploadBtn.addEventListener('click', () => {
             if (input.disabled) return;
