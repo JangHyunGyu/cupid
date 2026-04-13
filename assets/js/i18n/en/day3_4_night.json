@@ -69,7 +69,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*I just hope you don't take the choice of whose side to stand on lightly.*"
+        "text": "*I just hope you don't take choosing sides lightly.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -130,7 +130,7 @@
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*— I woke up drenched in sweat. 3 AM. I see the ceiling. I pulled out my phone. The gallery. Scrolling again. — Sojeong's photo.*"
+        "text": "*— I wake up drenched in sweat. 3 AM. I see the ceiling. I pull out my phone. The gallery. Scrolling again. — Sojeong's photo.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*This time is different. If I see it, I'll say it. If I know, I'll step up. To one person, clearly — The gallery is empty. The space where Sojeong's photo was. The empty screen is sharper than the photo ever was.*"
+        "text": "*This time is different. If I see something wrong, I'll speak up. If I know, I'll act. To one person, clearly — The gallery is empty. The space where Sojeong's photo was. The empty screen is sharper than the photo ever was.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -166,11 +166,11 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon uses the word 'please.' — That word doesn't exist in her vocabulary. That's how far she's crumbled.*"
+        "text": "*Seoyeon uses the word 'please.' — That word doesn't exist in her vocabulary. That's how far she's shaken.*"
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*I just hope you don't treat the choice of whose side to stand on lightly.*"
+        "text": "*I just hope you don't take choosing sides lightly.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*This school: regretting saying it to everyone. The problem was never 'speak up or stay silent' — it was 'to whom.'*"
+        "text": "*At this school, I regret saying it to everyone. The problem was never 'speak up or stay silent' — it was 'to whom.'*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*One second. I just stare at the screen. The graffiti on Sojeong's desk comes back to me. And — the 38 mornings I turned my head away.*"
+        "text": "*One second. I just stare at the screen. The scribbles on Sojeong's desk come back to me. And — the 38 mornings I turned my head away.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu said it. 'Saying no is also love.' At my old school, Sojeong vanished without anyone helping her. Because I kept my mouth shut. — That was the unkindest ending for both of us. If even one of those 38 memos had been sent — Sojeong might not have left the school.*"
+        "text": "*Minsu said it. 'Saying no is also love.' At my old school, Sojeong vanished without anyone helping her. Because I kept my mouth shut. — That was the cruelest ending for both of us. If even one of those 38 messages had been sent — Sojeong might not have left the school.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",

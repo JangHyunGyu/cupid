@@ -9,7 +9,7 @@
         "choices": [
             "Follow Yuna's note to the library annex",
             "Follow Seoyeon to the rooftop",
-            "Go to the school store with Dain"
+            "Go to the snack bar with Dain"
         ]
     },
     "lunch2_seo_1_check": {
@@ -59,7 +59,7 @@
     },
     "lunch2_seo_5b_yuna": {
         "name": "{name}",
-        "text": "I was curious what the breeze up here and the president's lunchbox would be like together."
+        "text": "I was curious what lunch on the rooftop with the student council president would be like."
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
@@ -67,11 +67,11 @@
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
-        "text": "*Heading toward the school store.*"
+        "text": "*Heading toward the snack bar.*"
     },
     "lunch2_dain_1b": {
         "name": "{name}",
-        "text": "*To the store with Dain. First rock-paper-scissors match.*"
+        "text": "*To the store with Dain. First order of business: rock-paper-scissors match.*"
     },
     "lunch2_dain_1b_seo": {
         "name": "{name}",
@@ -192,7 +192,7 @@
     },
     "lunch2_yuna_11": {
         "name": "{name}",
-        "text": "*Yuna walks ahead. Deep into the annex. A place where no one seems likely to come. A small room appears. Sunlight streams in through the window, and there's a worn sofa and bookshelves.*"
+        "text": "*Yuna walks ahead. Deep into the annex. Somewhere no one would think to go. A small room appears. Sunlight streams in through the window, and there's a worn sofa and bookshelves.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Nothing follows 'used to be.' Past tense. — Should I ask?*",
+        "text": "*She doesn't finish the sentence. Past tense. — Should I ask?*",
         "choices": [
             "What happened to them?",
             "Don't ask. Just sit down next to her."
@@ -356,7 +356,7 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Looking in the direction Dain disappeared* ...She's got a lot of energy. *Closing the lunchbox lid, quietly* I usually come up here alone."
+        "text": "*Watching Dain leave* ...She's got a lot of energy. *Closing the lunchbox lid, quietly* I usually come up here alone."
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -372,7 +372,7 @@
     },
     "lunch2_seo_19": {
         "name": "{name}",
-        "text": "*Seoyeon casually glances at {name}'s lips.*"
+        "text": "*Seoyeon casually glances at my lips.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -428,7 +428,7 @@
     },
     "lunch2_dain_1": {
         "name": "{name}",
-        "text": "*To the school store with Dain. A rematch of yesterday's rock-paper-scissors.*"
+        "text": "*To the snack bar with Dain. A rematch of yesterday's rock-paper-scissors.*"
     },
     "lunch2_dain_2": {
         "name": "Dain",
@@ -509,7 +509,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "What, don't laugh! *breaks crumble bun in half and shoves one piece over* ...Here, just eat this."
+        "text": "Hey, don't laugh! *breaks crumble bun in half and shoves one piece over* ...Here, just eat this."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -629,7 +629,7 @@
     },
     "lunch2_dain_end_s": {
         "name": "School Nurse",
-        "text": "*Narrowing her eyes* Just one? ...Hmm, fine then. I prefer cocoa over coffee. That's the secret."
+        "text": "*Narrowing her eyes* Just one? ...Hmm, fine then. I prefer cocoa to coffee. That's the secret."
     },
     "lunch2_dain_end_t": {
         "name": "{name}",

@@ -1,7 +1,7 @@
 {
-    "name": "Cupid: Free Web Visual Novel",
+    "name": "Cupid — A Free Visual Novel",
     "short_name": "Cupid",
-    "description": "Play a free web visual novel game without installation. Become the protagonist of a school romance.",
+    "description": "A free visual novel you can play in your browser. Step into a school romance as the main character.",
     "start_url": "/index-en.html",
     "display": "standalone",
     "background_color": "#1a1a2e",

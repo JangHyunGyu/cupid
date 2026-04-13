@@ -102,7 +102,7 @@
     },
     "after2_dain_end": {
         "name": "{name}",
-        "text": "*Her eyes are half-moon shaped. The same eyes I saw yesterday.*"
+        "text": "*Her eyes curve into half-moons. The same eyes I saw yesterday.*"
     },
     "after2_dain_end_first": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "*Slight smile* Obedient."
+        "text": "*Slight smile* Good boy."
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Every day's a bit much, though. Sometimes is fine."
+        "text": "...Every day's a bit much, though. Sometimes... is okay."
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
@@ -390,7 +390,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Late notifications on my phone — Dain's 'I was waiting?' and Seoyeon's 'Tell me if your schedule changes.' Sitting next to Yuna listening to music, the sunset already faded. — When I'm next to this person, I keep wanting to come back.*"
+        "text": "*Late notifications on my phone — Dain's 'I was waiting, you know?' and Seoyeon's 'Tell me if your schedule changes.' Sitting next to Yuna listening to music, the sunset already faded. — When I'm next to this person, I keep wanting to come back.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -472,7 +472,7 @@
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "School Nurse",
-        "text": "*smiles* It's care, care. If you put it on carelessly, it falls off."
+        "text": "*smiles* It's called being thorough. If you put it on carelessly, it falls off."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
-        "text": "*Closing the drawer* You didn't see that, okay? ...Teachers get to keep a secret or two, too."
+        "text": "*Closing the drawer* You didn't see that, okay? ...Teachers get to keep Teachers are allowed their secrets."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -612,6 +612,6 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*It doesn't even sound like permission, but somehow it lingers for a long time.*"
+        "text": "*It doesn't even sound like permission, but somehow it stays with me.*"
     }
 }

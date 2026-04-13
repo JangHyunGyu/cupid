@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Day two. The uniform feels a bit more comfortable than yesterday. — So do my steps.*"
+        "text": "*Day two. The uniform feels a bit more comfortable than yesterday. — My steps feel lighter, too.*"
     },
     "morning2_start_2": {},
     "morning2_dain_1": {
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*She didn't slow down. But her eyes were definitely on me. The second Seoyeon turned the corner — I could've sworn her smile faded. Or did I imagine it?*"
+        "text": "*She didn't slow down. But her eyes were definitely on me. The moment Seoyeon turned the corner — I could've sworn her smile faded. Or did I imagine it?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*The girl who never approached anyone first in an entire year — came up to me first.*"
+        "text": "*The girl who never approached anyone first in a whole year — came up to me first.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Homeroom Teacher",
@@ -198,7 +198,7 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Homeroom Teacher",
-        "text": "It's part of homeroom management duties. Just work."
+        "text": "It's part of the job. Homeroom duties."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon came to me first. Her usual composed tone, but with a hint of wanting confirmation.*"
+        "text": "*Seoyeon came to me first. Her usual composed tone, but with underneath it, she wanted an answer.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "morning2_break_transition_b": {
         "name": "{name}",
-        "text": "*The homeroom teacher is standing by the classroom door. Holding the attendance sheet, she glances toward the door — and our eyes meet.*"
+        "text": "*The homeroom teacher is standing by the classroom door. Holding the attendance sheet, she glances over — and our eyes meet.*"
     },
     "hidden_homeroom_d2_1_b": {
         "name": "{name}",
@@ -314,7 +314,7 @@
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Strange question. We were talking about grades, so why the sudden pivot to 'writing'?*"
+        "text": "*Strange question. We were talking about grades, so why the sudden shift to 'writing'?*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -350,6 +350,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Like a mutter, when no one's listening.*"
+        "text": "*Muttered, like she thought no one was listening.*"
     }
 }

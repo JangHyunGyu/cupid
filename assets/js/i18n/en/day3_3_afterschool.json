@@ -60,7 +60,7 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Council stuff's busy. I'll eat on my own. ...Just for today."
+        "text": "Busy with council work. I'll eat on my own. ...Just for today."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -96,7 +96,7 @@
     },
     "after3_reject_for_dain_3": {
         "name": "{name}",
-        "text": "*There is no note in the library. Yuna's bag is gone too. Only a lukewarm water ring remains on the desk, like she was here just moments ago.*"
+        "text": "*There is no note in the library. Yuna's bag is gone too. Only a faint ring of condensation remains on the desk, like she was here just moments ago.*"
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
@@ -104,7 +104,7 @@
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*I opened the student council room door. — Seoyeon is slumped over the desk. First time I've ever seen her like this. The perfect student council president — defenseless on the desk.*"
+        "text": "*I open the student council room door. — Seoyeon is slumped over the desk. First time I've ever seen her like this. The perfect student council president — defenseless on the desk.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -144,7 +144,7 @@
     },
     "after3_seo_end": {
         "name": "{name}",
-        "text": "*Those words carry weight. — I think I’m starting to understand how monumental it is for this person to show an imperfect side of herself.*"
+        "text": "*Those words carry weight. — I think I’m starting to understand what it costs her to show an imperfect side of herself.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -152,7 +152,7 @@
     },
     "after3_yuna_2": {
         "name": "{name}",
-        "text": "*I go in, but Yuna isn't here. Instead — a notebook lies open on the sofa. Filled with handwriting. It's a novel. A novel Yuna wrote. — Should I read it?*"
+        "text": "*I go in, but Yuna isn't here. Instead — a notebook lies open on the sofa. Filled with handwriting. It's a novel. Yuna's handwriting. — Should I read it?*"
     },
     "after3_yuna_4": {
         "name": "{name}",
@@ -192,7 +192,7 @@
     },
     "after3_dain_1": {
         "name": "{name}",
-        "text": "*The gym. Dain is stretching alone. She tries a light jog and — — her right leg twists slightly. She winces.*"
+        "text": "*The gym. Dain is stretching alone. She tries a light jog and — her right leg twists slightly. She winces.*"
     },
     "after3_dain_3": {
         "name": "{name}",
@@ -373,7 +373,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae is someone who thinks she has to be perfect. Someone who thinks crying means losing."
+        "text": "Seoyeon is someone who thinks she has to be perfect. Someone who thinks crying means losing."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -575,7 +575,7 @@
     },
     "after3_seo_pity_trap_5": {
         "name": "Seoyeon",
-        "text": "I didn't become student council president to be 'anyone.'"
+        "text": "I didn't become student council president to be 'just anyone.'"
     },
     "after3_seo_pity_trap_6": {
         "name": "{name}",
@@ -607,7 +607,7 @@
     },
     "after3_seo_correct_3": {
         "name": "{name}",
-        "text": "Oh, here it is. — Pens really go missing a lot in the council room, huh, President?"
+        "text": "Oh, here it is. — Pens really go missing a lot in the council room, huh?"
     },
     "after3_seo_correct_4": {
         "name": "{name}",
@@ -643,7 +643,7 @@
     },
     "after3_seo_correct_12": {
         "name": "{name}",
-        "text": "*I never said I'd keep her secret. Not saying it was the answer. — For Seoyeon, weakness has to *never have existed*. Only to someone who understood that does Seoyeon offer not a pinky promise but a next appointment.*"
+        "text": "*I never said I'd keep her secret. Not saying it was the answer. — For Seoyeon, weakness has to *never have existed*. Only to someone who understood that does Seoyeon offer not a pinky promise, but an open invitation.*"
     },
     "after3_yuna_decode_trap_1": {
         "name": "{name}",
@@ -687,7 +687,7 @@
     },
     "after3_yuna_decode_trap_11": {
         "name": "{name}",
-        "text": "*Footsteps going down the ladder. I'm alone in the attic. Where the notebook had been, only fingerprints remain. — I learned that noticing is love. But for some people, *pretending not to notice* is love. For Yuna, fiction was *the place she escaped reality to*. Following her even there meant breaking her last refuge.*"
+        "text": "*Footsteps going down the ladder. I'm alone in the attic. Where the notebook had been, only fingerprints remain. — I learned that noticing is love. But for some people, *pretending not to notice* is love. For Yuna, fiction was *her escape from reality*. Following her even there meant breaking her last refuge.*"
     },
     "after3_yuna_correct_1": {
         "name": "{name}",
@@ -731,7 +731,7 @@
     },
     "after3_yuna_correct_11": {
         "name": "{name}",
-        "text": "*The notebook lands heavy in my hands. Not the weight of paper. — A weight only someone who knows Yuna is *the author* and yet *doesn't say so* can ever be handed.*"
+        "text": "*The notebook lands heavy in my hands. Not the weight of paper. — This is a weight that only someone who knows Yuna is *the author* — and *doesn't say so* — gets to carry.*"
     },
     "after3_yuna_correct_12": {
         "name": "Yuna",
@@ -747,7 +747,7 @@
     },
     "after3_dain_pity_trap_3": {
         "name": "Dain",
-        "text": "Hey. I'm not pushing it. This is just — bad form."
+        "text": "Hey. I'm not pushing it. This is just — a bad day."
     },
     "after3_dain_pity_trap_4": {
         "name": "{name}",
@@ -799,7 +799,7 @@
     },
     "after3_dain_correct_6": {
         "name": "Dain",
-        "text": "...I don't know. But pick up the ball first. You really won't catch this one."
+        "text": "...I don't know. But pick up the ball first. You're not gonna return this one."
     },
     "after3_dain_correct_7": {
         "name": "{name}",

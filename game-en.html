@@ -78,11 +78,11 @@
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
                     <div id="name-input-wrapper">
-                        <input type="text" id="player-name-input" placeholder="Enter your name (1-4 chars)"
+                        <input type="text" id="player-name-input" placeholder="Enter your name"
                             maxlength="12">
                         <button id="name-confirm-btn">Confirm</button>
                     </div>
-                    <div id="name-input-guide">1-4 characters (Letters only)</div>
+                    <div id="name-input-guide">1-12 characters, letters only (no numbers or symbols)</div>
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
                             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
                         </svg>
                     </button>
-                    <button id="chat-skip-btn" title="Stop Conversation">
+                    <button id="chat-skip-btn" title="End Conversation">
                         <svg viewBox="0 0 24 24">
                             <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"></path>
@@ -192,7 +192,7 @@
                 <div class="credits-section">
                     <div class="credits-role">Special Thanks</div>
                     <div class="credits-name">Thank you for playing</div>
-                    <div class="credits-name">We truly appreciate it</div>
+                    <div class="credits-name">We sincerely appreciate it.</div>
                 </div>
                 <div class="credits-spacer"></div>
                 <div class="credits-final">Cupid © 2026 ArcherLab</div>
@@ -266,7 +266,7 @@
 
         <!-- Image Zoom Modal -->
         <div id="image-modal" class="modal-overlay" style="display: none;" onclick="this.style.display='none'">
-            <img id="image-modal-img" src="" alt="Zoomed Image"
+            <img id="image-modal-img" src="" alt="Full-size image"
                 style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
         </div>
     </div>

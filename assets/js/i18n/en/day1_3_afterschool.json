@@ -106,7 +106,7 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*I'm about to leave when my feet stop on their own. I keep thinking about the homeroom teacher — the way she watched everyone until the very end. I find myself standing in front of the faculty office. I knock and push the door open.*"
+        "text": "*I'm about to leave when I stop in my tracks. I keep thinking about the homeroom teacher — the way she watched everyone until the very end. I find myself standing in front of the faculty office. I knock and push the door open.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Homeroom Teacher",
@@ -142,7 +142,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Homeroom Teacher",
-        "text": "Being perfect on day one will burn you out. Slack a little. — Off you go."
+        "text": "Being perfect on day one will burn you out. Take it easy. — Now get going."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "Homeroom Teacher",
-        "text": "Overwhelmed is normal. If you were cool and collected on your first day at a new school, that'd be the weird part."
+        "text": "Feeling overwhelmed is normal. If you were cool and collected on your first day at a new school, that'd be the weird part."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*She disappears down the hallway. Long hair swaying behind her. — I watched her leave a little longer than I should have.*"
+        "text": "*She disappears down the hallway. Long hair swaying behind her. — I watched her walk away a little longer than I should have.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
@@ -212,7 +212,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Walking down the hallway when — my head gets a little dizzy. First-day nerves, probably. There's a 'Nurse's Office' sign on one side of the hallway. A bit too dizzy to just push through.*"
+        "text": "*Walking down the hallway when — I start feeling a little dizzy. First-day nerves, probably. There's a 'Nurse's Office' sign on one side of the hallway. A bit too dizzy to just push through.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*I open the nurse's office door. A faint smell of antiseptic. White curtains, a white bed, a small desk. A woman is sitting at the desk. White coat, a stethoscope around her neck. Ash-purple bob cut neatly styled, watching me over her glasses with her chin propped on one hand. She was reading something — and looks up.*"
+        "text": "*I open the nurse's office door. A faint smell of antiseptic. White curtains, a white bed, a small desk. A woman is sitting at the desk. White coat, a stethoscope around her neck. Her ash-purple bob is neatly styled, and she watches me over her glasses with her chin propped on one hand. She was reading something — and looks up.*"
     },
     "after_nurse_enter_2": {
         "name": "School Nurse",
@@ -280,7 +280,7 @@
     },
     "after_nurse_enter_11": {
         "name": "School Nurse",
-        "text": "If you get dizzy again, come back. My door's always open. Just don't tough it out and come too late. That's what worries me."
+        "text": "If you get dizzy again, come back. My door's always open. Just don't try to tough it out until it's too late. That's what worries me."
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",
@@ -318,7 +318,7 @@
     },
     "after1_jealousy_seo_honest_2": {
         "name": "Dain",
-        "text": "...I see? Could've told me, at least."
+        "text": "...Oh. Could've told me, at least."
     },
     "after1_jealousy_seo_lie": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*She's smiling. Her fingers tap the clipboard. — The back of my neck goes hot. I look away.*"
+        "text": "*She's smiling. Her fingers tap the clipboard. — Heat creeps up the back of my neck. I look away.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",

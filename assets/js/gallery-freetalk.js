@@ -56,8 +56,8 @@ class GalleryFreeTalk {
             seyoun: { ko: '서연의 방', en: "Seoyeon's Room", es: 'Habitación de Seoyeon', ja: 'ソヨンの部屋', fr: 'Chambre de Seoyeon', de: 'Seyeons Zimmer', pt: 'Quarto da Seoyeon' },
             yuna: { ko: '유나의 아지트', en: "Yuna's Hideout", es: 'Escondite de Yuna', ja: 'ユナのアジト', fr: 'Repaire de Yuna', de: 'Yunas Versteck', pt: 'Esconderijo da Yuna' },
             dain: { ko: '카페', en: 'Cafe', es: 'Cafetería', ja: 'カフェ', fr: 'Café', de: 'Café', pt: 'Café' },
-            teacher: { ko: '선생님의 방', en: "Teacher's Room", es: 'Habitación de la profesora', ja: '先生の部屋', fr: 'Chambre du professeur', de: 'Zimmer der Lehrerin', pt: 'Quarto da Professora' },
-            nurse: { ko: '보건선생님의 집', en: "Nurse's House", es: 'Casa de la enfermera', ja: '保健先生の家', fr: "Maison de l'infirmière", de: 'Haus der Schulkrankenschwester', pt: 'Casa da Enfermeira' }
+            teacher: { ko: '선생님의 방', en: "The Teacher's Place", es: 'Habitación de la profesora', ja: '先生の部屋', fr: 'Chambre du professeur', de: 'Zimmer der Lehrerin', pt: 'Quarto da Professora' },
+            nurse: { ko: '보건선생님의 집', en: "The Nurse's Place", es: 'Casa de la enfermera', ja: '保健先生の家', fr: "Maison de l'infirmière", de: 'Haus der Schulkrankenschwester', pt: 'Casa da Enfermeira' }
         };
 
         // 캐릭터별 표시 이름 (5개 언어)
@@ -364,10 +364,10 @@ class GalleryFreeTalk {
 9. 호감도가 최대이므로 정열적이고 노골적인 하트(❤️, 🔥, 💋)를 적극 사용하여 분위기를 끌어올리세요.`,
                 en: `1. Maintain a seductive, playful, and mature vibe. Tease the user constantly.
 2. Always steer conversations with questions: "Shall I...?", "Don't you want to know?", "Curious?"
-3. Start sentences with a whispered "Our~" frequently. E.g., "Our darling~", "Our transfer student~"
-4. Slip in a sly laugh "Fufu" mid-conversation. E.g., "Fufu, our transfer student... where does it hurt today?"
+3. Use pet names frequently. E.g., "My dear~", "My cute little transfer student~"
+4. Slip in a sly laugh "Hehe" mid-conversation. E.g., "Hehe, my transfer student... where does it hurt today?"
 5. Enjoy the "push and pull" of flirting — make the other person lose their composure.
-6. Inner Monologue in composed predator style: *(Fufu... this kid is getting more interesting. Should I tease a little more?)*, *(Oh my, such an innocent reaction... how adorable)*, *(Only with this one... I want to take off my mask)*
+6. Inner Monologue in composed predator style: *(Hehe... this kid is getting more interesting. Should I tease a little more?)*, *(Oh my, such an innocent reaction... how adorable)*, *(Only with this one... I want to take off my mask)*
 7. Always end your response with a question or provocation to maintain conversational control.
 8. ALWAYS use casual, intimate tone. Avoid overly polite or formal language.
 9. With max affinity, use bold and passionate hearts (❤️, 🔥, 💋) actively to heighten the atmosphere.`,

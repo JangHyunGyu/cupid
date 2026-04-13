@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "{name}",
-        "text": "*The hand passing me the key. Our pinkies brush. — She never says 'I'm giving this to you.' She just hands it over. Actions instead of words. She's always been like that.*"
+        "text": "*The hand passing me the key. Our pinkies brush. — She never says 'I'm giving this to you.' She just hands it over. She shows — never tells. She's always been like that.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -57,11 +57,11 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*She doesn't say 'even without me.' But it's hiding right behind those words.*"
+        "text": "*She doesn't say 'even without me.' But it's right there, tucked behind her words.*"
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*The library annex. The secret reading space I first entered on Day 2. A worn sofa, afternoon sunlight streaming through the window.*"
+        "text": "*The library annex. The secret reading space I stumbled into a few days ago. A worn sofa, afternoon sunlight streaming through the window.*"
     },
     "tour_yuna_2": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "tour_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna pulls a notebook out of her bag. The same notebook I stumbled upon on Day 3.*"
+        "text": "*Yuna pulls a notebook out of her bag. The same notebook I stumbled upon the other day.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*The gym. Where we first made a bet on Day 1, and where she hit her last spike on Day 4. — Today, the lights are on.*"
+        "text": "*The gym. Where we first made a bet that first day, and where she hit her last spike yesterday. — Today, the lights are on.*"
     },
     "tour_dain_2": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*She says it without exclamation marks. But this time it's not a farewell — it's a beginning. The same quiet sentence as Day 4, but the warmth is different.*"
+        "text": "*She says it without exclamation marks. But this time it's not a farewell — it's a beginning. The same quiet sentence as yesterday, but the warmth is different.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
@@ -199,7 +199,7 @@
     },
     "tour_dain_1b": {
         "name": "{name}",
-        "text": "*The gym. A place where countless bets and spikes were exchanged over the past few days. — The lights are on today.*"
+        "text": "*The gym. A place where countless filled with bets and spikes over the past few days. — The lights are on today.*"
     },
     "tour_dain_11_b": {
         "name": "Dain",

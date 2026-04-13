@@ -335,13 +335,13 @@ class CharacterRenderer {
 
         const labels = {
             ko: { age: '나이', birthday: '생일', height: '키', weight: '몸무게', bust: '신체사이즈', hobby: '취미' },
-            en: { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' },
+            en: { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Measurements', hobby: 'Hobbies' },
             es: { age: 'Edad', birthday: 'Cumpleaños', height: 'Altura', weight: 'Peso', bust: 'Talla', hobby: 'Pasatiempo' },
             ja: { age: '年齢', birthday: '誕生日', height: '身長', weight: '体重', bust: '身体サイズ', hobby: '趣味' },
             fr: { age: 'Âge', birthday: 'Anniversaire', height: 'Taille', weight: 'Poids', bust: 'Mensurations', hobby: 'Loisir' },
             de: { age: 'Alter', birthday: 'Geburtstag', height: 'Größe', weight: 'Gewicht', bust: 'Körpermaße', hobby: 'Hobby' },
             pt: { age: 'Idade', birthday: 'Aniversário', height: 'Altura', weight: 'Peso', bust: 'Medidas', hobby: 'Hobby' }
-        }[this.ui.lang] || { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Body Size', hobby: 'Hobby' };
+        }[this.ui.lang] || { age: 'Age', birthday: 'Birthday', height: 'Height', weight: 'Weight', bust: 'Measurements', hobby: 'Hobbies' };
 
         const lockText = '🔒';
 
