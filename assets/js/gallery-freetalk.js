@@ -556,9 +556,9 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
                                 <span>📸</span>
                             </button>
                             <input type="file" id="gft-file-input" accept="image/*" style="display:none;">
-                            <button type="button" id="action-toggle-btn" title="${this._L('행동 묘사 (*)', 'Action (*)', 'Acción (*)', 'アクション (*)', 'Action (*)', 'Aktion (*)', 'Ação (*)')}">✱</button>
                             <input type="text" id="chat-input" maxlength="200"
                                    placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...', 'Nachricht eingeben...', 'Digite uma mensagem...')}">
+                            <button type="button" id="action-toggle-btn" title="${this._L('행동 묘사 (*)', 'Action (*)', 'Acción (*)', 'アクション (*)', 'Action (*)', 'Aktion (*)', 'Ação (*)')}">✱</button>
                             <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer', 'Senden', 'Enviar')}">
                                 <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
                             </button>

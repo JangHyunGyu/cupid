@@ -549,6 +549,8 @@ class FreeTalkSystem {
             img.className = 'chat-image';
             this.uiManager.messageEl.appendChild(img);
         }
+        // 유저 메시지 표시 후 대화창 최하단으로 스크롤
+        if (this.uiManager.dialogueBox) this.uiManager.dialogueBox.scrollTop = this.uiManager.dialogueBox.scrollHeight;
 
         this.freeTalkHistory.push({ role: "user", content: finalContent });
 
