@@ -567,6 +567,15 @@ class FreeTalkSystem {
         document.querySelectorAll('.char-slot img').forEach(img => img.classList.add('thinking'));
         this.uiManager.dialogueBox.classList.add('thinking-box');
 
+        // 캐릭터 위 생각중 인디케이터 표시
+        const charSlot = document.getElementById('char-center') || document.querySelector('.char-slot');
+        if (charSlot && !charSlot.querySelector('.thinking-indicator')) {
+            const indicator = document.createElement('div');
+            indicator.className = 'thinking-indicator';
+            indicator.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+            charSlot.appendChild(indicator);
+        }
+
         // ─────────────────────────────────────────────────────────────
         // 🌐 AI API 호출 (try-catch로 오류 처리)
         // ─────────────────────────────────────────────────────────────
@@ -748,6 +757,7 @@ class FreeTalkSystem {
                 // 생각중 상태 해제
                 document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
                 this.uiManager.dialogueBox.classList.remove('thinking-box');
+                document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
                 await this.dialogueSystem.typeText(reply, scene.name);
                 this.freeTalkHistory.push({ role: "assistant", content: reply });
@@ -809,6 +819,7 @@ class FreeTalkSystem {
 
             document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
             this.uiManager.dialogueBox.classList.remove('thinking-box');
+            document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
             this.uiManager.chatInput.focus();
         }

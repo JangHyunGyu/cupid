@@ -1322,6 +1322,53 @@ html[lang="pt"] #message {
     }
 }
 
+/* ── 프리토킹 응답 대기 인디케이터 (캐릭터 위 생각중 도트) ── */
+.thinking-indicator {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+    animation: indicator-appear 0.3s ease-out;
+}
+
+.thinking-indicator .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff69b4;
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.6);
+    animation: dot-pulse 1.4s infinite ease-in-out;
+}
+
+.thinking-indicator .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.thinking-indicator .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes dot-pulse {
+    0%, 100% {
+        opacity: 0.25;
+        transform: translateY(0) scale(0.7);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1);
+    }
+}
+
+@keyframes indicator-appear {
+    from { opacity: 0; transform: translateX(-50%) scale(0.5); }
+    to { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+
 /* ==========================================================================
    Player Interface (사용자 입력 UI)
    ========================================================================== */
