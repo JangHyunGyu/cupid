@@ -25,7 +25,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*A character in the novel drapes a blanket over someone sleeping in the library. — That's a scene only I would know.*"
+        "text": "*A character in the novel drapes a blanket over someone sleeping in the library. — A scene only I would recognize.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Homeroom Teacher",
-        "text": "Haven't shown this to anyone in seven years. — This is way outside my job description."
+        "text": "Haven't shown this to anyone in seven years. — This is so far beyond what a teacher should be doing."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "hidden_nurse_d5_4": {
         "name": "School Nurse",
-        "text": "...Press it down well so it doesn't peel off. — I'm not putting it on for you myself today."
+        "text": "...Press it flat so it stays on. — I'm not doing it for you today."
     },
     "hidden_nurse_d5_5": {
         "name": "School Nurse",
@@ -143,7 +143,7 @@
     },
     "hidden_nurse_d5_choice_a": {
         "name": "School Nurse",
-        "text": "*She slowly puts on the bandage. There's small writing on the bandage.*"
+        "text": "*She slowly puts the bandage on. There's small writing on it.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "School Nurse",
@@ -179,7 +179,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*A short story is pinned to the bulletin board. Title: 'To the One I Met in the Library.' It's Yuna. — A story only the protagonist would recognize. I stood in front of the board a little longer. Short sentences, but so vivid it feels like Yuna is staring right at me.*"
+        "text": "*A short story is pinned to the bulletin board. Title: 'To the One I Met in the Library.' It's Yuna. — A story only I would recognize. I stand in front of the board a little longer. Short sentences, but so vivid it feels like Yuna is staring right at me.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -283,7 +283,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Homeroom Teacher",
-        "text": "...I think I've gone a bit beyond the bounds of professional interest. Since it's the last time. Just this once."
+        "text": "...I think I've gone a bit crossed the line past professional interest. Since it's the last time. Just this once."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
@@ -359,7 +359,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*Her voice dropped a register. All playfulness gone from her face. — This is how this person's sincerity always arrives. The school nurse was laughing — and stops. Presses her lips shut.*"
+        "text": "*Her voice dropped a register. All playfulness gone from her face. — This is how her sincerity always arrives. The school nurse was laughing — and stops. Presses her lips shut.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "School Nurse",
@@ -383,7 +383,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Her signature line from Day 1. — Back then it was character introduction. Now it's real. The school nurse takes out a bandage and sticks it on the back of my hand. Slowly. — There's small writing on the bandage.*"
+        "text": "*Her signature line from Day 1. — Back then it was just a habit. Now it's real. The school nurse takes out a bandage and sticks it on the back of my hand. Slowly. — There's small writing on the bandage.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, that's — it's bound to be good. You spent seven years on it."
+        "text": "I mean — it's bound to be good. You spent seven years on it."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Homeroom Teacher",
@@ -467,7 +467,7 @@
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Homeroom Teacher",
-        "text": "...I thought you'd actually read it and tell me. — I showed it to you because I figured a student would feel less pressured."
+        "text": "...I thought you'd actually read it and tell me. — I showed it to you because I figured a student would wouldn't feel obligated to be kind."
     },
     "hidden_homeroom_d5_praise_trap_11": {
         "name": "Homeroom Teacher",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Homeroom Teacher",
-        "text": "The manuscript's been stuck on that one line for seven years. If I finish — I'm afraid it'd prove I'm not a real writer."
+        "text": "The manuscript's been stuck on that one line for seven years. If I finish — I'm terrified it'll prove I was never a real writer."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
@@ -531,6 +531,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*I hold the manuscript again. It's not as heavy as before. — Rather than completing seven years of unfinished work with praise, what she needed was someone to acknowledge the incomplete as incomplete. That's what real support looks like.*"
+        "text": "*I hold the manuscript again. It's not as heavy as before. — Rather than completing seven years of unfinished work with praise, what she needed was someone to look at what was missing and call it what it was. That's what real support looks like.*"
     }
 }

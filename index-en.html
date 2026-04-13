@@ -61,7 +61,7 @@
     <link rel="apple-touch-icon" href="favicon-192.png">
     <link rel="manifest" href="manifest-en.json">
     <title>Cupid: 5 Days of Love</title>
-    <meta name="description" content="Free visual novel you can play online in your browser — no download needed. A 5-day school romance starting from your first day as a transfer student. 5 heroines, multiple endings, 6 languages.">
+    <meta name="description" content="Free visual novel you can play online in your browser — no download needed. A 5-day school romance starting from your first day as a transfer student. 5 love interests, multiple endings, 6 languages.">
     <meta name="keywords" content="free dating sim play online no download, school romance visual novel browser free, anime dating game free no install, otome game free online browser 2026, interactive love story game play now, free romance game multiple endings browser, transfer student anime game free, choose your romance visual novel online, dating simulation game browser free, anime school love story play free, free visual novel dating sim browser, romance game no download no signup">
     <meta name="author" content="Archerlab">
     <meta name="naver-site-verification" content="d1b1d31619e3752f70e28ef54cb08b49698ccf66" />
@@ -745,7 +745,7 @@
                 <span class="vp-badge">✓ Free</span>
                 <span class="vp-badge">✓ No signup</span>
                 <span class="vp-badge">✓ No install</span>
-                <span class="vp-badge">✓ AI multi-ending</span>
+                <span class="vp-badge">✓ AI-powered multiple endings</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
                 <button id="start-btn" onclick="startGame()" class="start-btn" style="border:none; cursor:pointer; opacity: 0.5;" disabled>New Game</button>
@@ -801,10 +801,10 @@
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
                     <div id="name-input-wrapper">
-                        <input type="text" id="player-name-input" placeholder="Enter name (1-12 chars)" maxlength="12">
+                        <input type="text" id="player-name-input" placeholder="Enter your name" maxlength="12">
                         <button id="name-confirm-btn">Confirm</button>
                     </div>
-                    <div id="name-input-guide">1-12 characters, letters only (No numbers/special)</div>
+                    <div id="name-input-guide">1-12 characters, letters only (no numbers or symbols)</div>
                 </div>
             </div>
 
@@ -832,14 +832,14 @@
                             <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
                         </svg>
                     </button>
-                    <button id="chat-skip-btn" title="End Talk">
+                    <button id="chat-skip-btn" title="End Conversation">
                         <svg viewBox="0 0 24 24">
                             <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round"></path>
                         </svg>
                     </button>
                 </div>
-                <div id="chat-turn-indicator">Remaining <span id="turn-count">3</span></div>
+                <div id="chat-turn-indicator">Turns left: <span id="turn-count">3</span></div>
             </div>
 
             <!-- Settings Gear -->
@@ -958,8 +958,7 @@
                     <span> Show Affinity Gauge</span>
                     <input type="checkbox" id="affinityToggle" checked style="transform: scale(1.5);">
                 </label>
-                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">Displays affection
-                    levels next to character names.</p>
+                <p style="font-size: 0.8rem; color: #aaa; margin-top: 10px; margin-bottom: 20px;">Shows character affinity as a gauge next to their names.</p>
 
                 <div style="margin-top: 20px;">
                     <div style="display: flex; justify-content: space-between; color: white; margin-bottom: 5px;">
@@ -1199,9 +1198,9 @@
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert('On iOS, tap [Share] and [Add to Home Screen].');
+                alert('On iOS, tap the Share button, then select \'Add to Home Screen\'.');
             } else {
-                alert('Already installed or browser not supported.');
+                alert('The app is already installed, or your browser doesn\'t support installation.');
             }
         }
 

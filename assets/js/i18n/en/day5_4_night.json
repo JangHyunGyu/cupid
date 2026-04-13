@@ -77,7 +77,7 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*I confessed. Seoyeon said let's try. But there was a question mark hanging over her 'okay.' — About a month later, I got a message to meet at the cafe in front of school.*"
+        "text": "*I confessed. Seoyeon said 'let's try.' But there was a question mark hanging over her 'okay.' — About a month later, I got a message to meet at the cafe in front of school.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
@@ -89,11 +89,11 @@
     },
     "bitter_seo_3": {
         "name": "{name}",
-        "text": "*I left the cafe. It's raining. I had one umbrella — now there are two.*"
+        "text": "*I left the cafe. It's raining. We used to share one umbrella — now we each have our own.*"
     },
     "true_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon's room. Her parents are out. The room is tidy — too tidy. The kind of tidy that has no feelings in it.*"
+        "text": "*Seoyeon's room. Her parents are out. The room is tidy — too tidy. The kind of tidy that feels hollow.*"
     },
     "true_seo_2": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "perfect_yuna_5": {
         "name": "{name}",
-        "text": "*Yuna stood up and held me. Without a word. Moonlight poured through the broken windows — tattooed arms wrapped around my waist, silver hair resting on my shoulder. For the first time, Yuna's quiet breathing filled the hideout.*"
+        "text": "*Yuna stood up and wrapped her arms around me. Without a word. Moonlight poured through the broken windows — tattooed arms wrapped around my waist, silver hair resting on my shoulder. For the first time, Yuna's quiet breathing filled the hideout.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "bitter_yuna_2": {
         "name": "Yuna",
-        "text": "...Sometimes I think of you. When I catch the smell of the library. I should've said more back then."
+        "text": "...Sometimes I think of you. When I catch the scent of old books. I should've said more back then."
     },
     "bitter_yuna_3": {
         "name": "{name}",
@@ -285,7 +285,7 @@
     },
     "perfect_dain_5": {
         "name": "{name}",
-        "text": "*Dain leaped. I wasn't ready. The volleyball rolled away across the floor — and in the sunset gym, only two shadows remained.*"
+        "text": "*Dain leapt at me. I wasn't ready. The volleyball rolled away across the floor — and in the sunset gym, only two shadows remained.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*After graduation. We talked less and less. Monthly turned to bimonthly, leaving messages on read became normal, and one day — when I opened the chat and had nothing to say — I knew it was over.*"
+        "text": "*After graduation. We talked less and less. Once a month became once every two months, leaving messages on read became normal, and one day — when I opened the chat and had nothing to say — I knew it was over.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -418,7 +418,7 @@
     },
     "alone_2": {
         "name": "{name}",
-        "text": "*At my old school, I regretted not speaking up. At this school — do I regret not finding anyone? No. I found them but couldn’t pick. No — I didn’t have the courage to pick.*"
+        "text": "*At my old school, I regretted not speaking up. At this school — do I regret not finding anyone? No. I found them but couldn’t choose. No — I didn’t have the courage to choose.*"
     },
     "alone_2_b": {
         "name": "{name}",
@@ -486,7 +486,7 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*\"...Why aren't you coming?\" She mutters it under her breath, but it's the pace of someone who waited for me.*"
+        "text": "*\"...Why aren't you coming?\" She mutters it under her breath, but her slowed steps give her away — she was waiting.*"
     },
     "good_4_seo": {
         "name": "{name}",
@@ -498,7 +498,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*A text from Seoyeon. 'I copied the rooftop key for you. — It's authorized, authorized.' She could just call it an invitation.*"
+        "text": "*A text from Seoyeon. 'I copied the rooftop key for you. — It's official, so don't worry.' She could just call it an invitation.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -534,7 +534,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*I want to be remembered not as a stand-in, but as the person standing here right now. Yuna does too. So do I.*"
+        "text": "*I want to be remembered not as a stand-in, but as the person standing here right now. And I think Yuna wants the same.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -642,7 +642,7 @@
     },
     "friend_3": {
         "name": "{name}",
-        "text": "*There definitely were moments when I could have said I liked her. But once again, I chose the safest expression.*"
+        "text": "*There definitely were moments when I could have said I liked her. But once again, I chose the safe way out.*"
     },
     "friend_route_check": {
         "name": "System",
@@ -654,7 +654,7 @@
     },
     "friend_4_seo": {
         "name": "{name}",
-        "text": "*As I leave the school gate, a message comes in. 'Thanks to you, today was less awkward. Get home safe.' Kind, but airtight. It's exactly the tone of someone choosing the line and keeping it.*"
+        "text": "*As I leave the school gate, a message comes in. 'Thanks to you, today was less awkward. Get home safe.' Kind, but airtight. It's exactly the tone of someone drawing a line and staying behind it.*"
     },
     "friend_4_yuna": {
         "name": "{name}",
@@ -702,7 +702,7 @@
     },
     "mayhem_3": {
         "name": "{name}",
-        "text": "*Dain was smiling. Bright as always. — But the exclamation marks were gone. Take care. The first time I ever heard Dain end a sentence with a period was, of all things, a farewell.*"
+        "text": "*Dain was smiling. Bright as always. — But the exclamation marks were gone. Take care. The first time I ever heard Dain end a sentence with a period was, and of all things, it was a farewell.*"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -730,7 +730,7 @@
     },
     "harem_1_b": {
         "name": "{name}",
-        "text": "*Yuna lowered her head. When she looked up a long time later, she was smiling with a face that couldn't even cry. Biting her lip.*"
+        "text": "*Yuna lowered her head. When she looked up a long time later, she was smiling — the kind of smile that's too broken to cry. Biting her lip.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -754,7 +754,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*Three alarms, three personas, three lies. — To call this happiness, the stomach cramps come way too often.*"
+        "text": "*Three alarms, three personas, three lies. — To call this happiness, the knots in my stomach come far too often.*"
     },
     "harem_8": {
         "name": "System",
@@ -803,7 +803,7 @@
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*That 'next time' became the time after, and the time after that. Same seat every Thursday. When the barista asked 'Couple's table?', neither of us could answer. One Thursday. We walked the streets instead of the cafe. Side by side. Both pretending not to notice our shadows overlapping.*"
+        "text": "*That 'next time' became the time after, and the time after that. Same seat every Thursday. When the barista asked 'Couple's table?', neither of us could answer. Then one Thursday, We walked the streets instead of the cafe. Side by side. Both pretending not to notice our shadows overlapping.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Homeroom Teacher",
@@ -859,7 +859,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*An empty classroom. The same classroom where she used to write. - My homeroom teacher is waiting.*"
+        "text": "*An empty classroom. The same classroom where she used to write. — My homeroom teacher is waiting.*"
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
@@ -1020,7 +1020,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*The rosemary pot has been moved to the windowsill. To the sunny side. - She's watering it.*"
+        "text": "*The rosemary pot has been moved to the windowsill. To the sunny side. — She's watering it.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1032,7 +1032,7 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*'Congratulations on graduating. I'll wait at the cafe.' - When I peel off the bandage, there's a tiny map underneath. The school nurse is sitting in the cafe. She looks far more at ease than she ever did in the infirmary. Just - like someone who came to wait for me.*"
+        "text": "*'Congratulations on graduating. I'll wait at the cafe.' — When I peel off the bandage, there's a tiny map underneath. The school nurse is sitting in the cafe. She looks far more at ease than she ever did in the infirmary. Just — like someone who came to wait for me.*"
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
@@ -1048,7 +1048,7 @@
     },
     "hidden_true_nurse_3": {
         "name": "School Nurse",
-        "text": "Congrats on graduating. ...Starting today, you can drop the formalities."
+        "text": "Congrats on graduating. ...Starting today, you can don't have to call me 'ma'am' anymore."
     },
     "hidden_true_nurse_3_b": {
         "name": "{name}",
@@ -1072,7 +1072,7 @@
     },
     "hidden_true_nurse_5_d": {
         "name": "School Nurse",
-        "text": "But you recognized even when I was glossing things over."
+        "text": "But you saw right through me, even when I was glossing things over."
     },
     "hidden_true_nurse_5_e": {
         "name": "{name}",
@@ -1104,7 +1104,7 @@
     },
     "hidden_true_nurse_8": {
         "name": "School Nurse",
-        "text": "Now, don't pretend to be hurt and come. Just say you came because you wanted to see me."
+        "text": "Now, don't pretend to be hurt just to come see me. Just say you wanted to see me."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
@@ -1160,7 +1160,7 @@
     },
     "hidden_good_nurse_3": {
         "name": "{name}",
-        "text": "*Leaving the nurse's office. Inside the cap, tiny writing. 'Call me if you're sick. Call me even if you're not. — ♥'*"
+        "text": "*Leaving the nurse's office. Inside the bottle cap, tiny writing. 'Call me if you're sick. Call me even if you're not. — ♥'*"
     },
     "hidden_good_nurse_3_b": {
         "name": "{name}",

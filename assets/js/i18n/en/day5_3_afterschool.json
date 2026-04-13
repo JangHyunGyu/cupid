@@ -9,11 +9,11 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly. None of them is looking my way. — That's actually a relief. Right now I don't have the guts to meet anyone's eyes.*"
+        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly. None of them are looking my way. — That's actually a relief. Right now I can't bring myself to meet anyone's eyes.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*I can't easily say I'm sorry. Those feelings aren't something that can be neatly wrapped up with that word. So just in my heart, slowly. Thank you.*"
+        "text": "*I can't easily say I'm sorry. That word can't hold everything I feel. So quietly, just to myself — Thank you.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*I'm left alone in the hallway. Seoyeon's footsteps fade away. — Five days ago, her back felt like a wall. Now, it feels like a door.*"
+        "text": "*I'm left alone in the hallway. Seoyeon's footsteps fade away. — Five days ago, her retreating figure felt like a wall. Now, it feels like an invitation.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'It was fun.' — That was probably the biggest thing Yuna could say.*"
+        "text": "*'It was fun.' — That was probably the most Yuna could bring herself to say.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -79,7 +79,7 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain comes running from in front of the gym.*"
+        "text": "*Dain comes running over from the gym.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*The sun is setting. Five days are coming to an end. Sunset paints the schoolyard. Were five days really this short? — The moment of the last choice is approaching.*"
+        "text": "*The sun is setting. Five days are coming to an end. Sunset paints the schoolyard. Were five days really this short? — The moment of the last choice is closing in.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -140,7 +140,7 @@
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Still carrying the fracture we'd papered over, we walked toward the park.*"
+        "text": "*Still carrying the cracks we'd been pretending weren't there, we walked toward the park.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -379,6 +379,6 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*The words I tried to swallow and pretend away finally come out. That I can't choose just one. I know it's cowardly, and even so, tonight I'm going to carry that cost too.*"
+        "text": "*The words I tried to swallow finally come out — that I can't choose just one. I know it's cowardly, and even so, tonight I'm going to carry that cost too.*"
     }
 }

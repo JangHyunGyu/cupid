@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Back in my room. Collapsed on the bed. For a first day — I'm drained. But it's not a bad kind of tired.*"
+        "text": "*Back in my room. Collapsed on the bed. For my first day — I'm drained. But it's not a bad kind of tired.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Even after the screen went dark, I held the phone for a long time.*"
+        "text": "*Even after the screen went dark, I couldn't put the phone down.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
@@ -105,11 +105,11 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*Does the concept of 'no' even exist in her world?*"
+        "text": "*Does the word 'no' even exist in her vocabulary?*"
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*I set the phone down and stare at the ceiling. The cherry blossom smell is still on my uniform.*"
+        "text": "*I set the phone down and stare at the ceiling. The cherry blossom scent is still on my uniform.*"
     },
     "night_end_3": {
         "name": "{name}",

@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Back home. I showered and lay in bed when — messenger notifications start pouring in. Three people. At the same time.*"
+        "text": "*Back home. Showered, lying in bed — when — messenger notifications start pouring in. Three people. At the same time.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Actually show up this time.' The words say invitation — the tone says consequence.*"
+        "text": "*'Actually show up this time.' The words say invitation — sounds like a warning.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -170,15 +170,15 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'This time, don't look away.' — That was the promise I made coming to this school. I closed the gallery. Thought about deleting the photo, but — left it. If I deleted it, I felt like I'd forget the guilt too.*"
+        "text": "*'This time, don't look away.' — That was the promise I made coming to this school. I closed the gallery. Thought about deleting the photo, but — left it. If I deleted it, I was afraid I'd forget the guilt along with it.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*But — I stare at the ceiling. Today won't switch off. Seoyeon. Dain. Yuna. All three are stuck in my head. I could call it curiosity. Honestly though, it scares me. The thought of leaning toward any one of them.*"
+        "text": "*But — I stare at the ceiling. Today won't quiet down. Seoyeon. Dain. Yuna. All three are stuck in my head. I could call it curiosity. Honestly though, it scares me. The thought of leaning toward any one of them.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Back with Sojeong, I only looked at one person. I only liked one person, only watched one person — and even as she fell apart right beside me, I stopped at the notepad. Thirty-eight times. Looking at only one meant being able to lose that one. I didn't know that then.*"
+        "text": "*Back with Sojeong, I only looked at one person. I only liked one person, only watched one person — and even as she fell apart right beside me, I stopped at the notes app. Thirty-eight times. When you only look at one person, losing them means losing everything. I didn't know that then.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*A private message from the homeroom teacher. '{name}, thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if adjusting gets tough, come by anytime.'*"
+        "text": "*A private message from the homeroom teacher. '{name}, thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if settling in gets tough, come by anytime.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "HAHAHA!!!!! I'm literally kicking my blanket laughing rn LOL!! You HAVE to come to the gym tomorrow!!"
+        "text": "HAHAHA!!!!! I'm literally DYING rn LOL!! You HAVE to come to the gym tomorrow!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -234,7 +234,7 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*I opened the window. Cold air comes in. — There are plenty of stars, but I have no idea which one is the third.*"
+        "text": "*I open the window. Cold air rushes in. — There are plenty of stars, but I have no idea which one is the third.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Those words keep echoing. I still haven't answered. Yesterday they were just on my mind. Today — 'I want to see them' climbed to my throat and sank back down.*"
+        "text": "*Those words keep echoing. I still haven't answered. Yesterday they were just on my mind. Today — 'I want to see them' rose to my lips and fell back down.*"
     },
     "night2_end_3_b": {
         "name": "{name}",

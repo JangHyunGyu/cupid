@@ -146,7 +146,7 @@
     },
     "morning3_date_dain_2": {
         "name": "{name}",
-        "text": "*Dain's fingers are tapping the edge of the desk. Is she nervous? — No way. Dain doesn't get nervous. This is just everyday stuff for her.*"
+        "text": "*Dain's fingers are tapping the edge of the desk. Is she nervous? — No way. Dain doesn't get nervous. This is just her being her.*"
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Homeroom Teacher",
-        "text": "After I submitted the fourth manuscript — when the results came out, I didn't get a call. That's the day I applied to teachers' college."
+        "text": "After I submitted the fourth manuscript — the results came out. No call. That's the day I applied to teachers' college."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Homeroom Teacher",
@@ -296,7 +296,7 @@
     },
     "hidden_nurse_d3_4": {
         "name": "School Nurse",
-        "text": "*Drawing the curtain* ...Sit down. You can be at ease here. *Hands me a cup of water* ...Take your time."
+        "text": "*Drawing the curtain* ...Sit down. You're safe here. *Hands me a cup of water* ...Take your time."
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
@@ -344,7 +344,7 @@
     },
     "hidden_nurse_d3_9": {
         "name": "School Nurse",
-        "text": "...The one who matters most. What if that's your teacher?"
+        "text": "...The one who matters most. What if it's... me?"
     },
     "hidden_nurse_d3_11": {
         "name": "School Nurse",
@@ -486,7 +486,7 @@
     },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
-        "text": "*So me peeking into her secret right now — is it kindness, or is it overstepping? Once a student knows a teacher's weak spot, the line between them isn't a straight one anymore. Seven years of an adult's life lands in the palm of my hand. Am I qualified to hold that?*"
+        "text": "*So me peeking into her secret right now — is it kindness, or is it overstepping? Once a student knows a teacher's weak spot, the line between them isn't a straight one anymore. Seven years of an adult's life land in the palm of my hand. Am I qualified to hold that?*"
     },
     "hidden_homeroom_d3_4_h": {
         "name": "{name}",
@@ -750,7 +750,7 @@
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*And the scarier part runs the other way. To her, I'm — a student sitting in the seat of the Yujin she couldn't save, at about the same age. If a piece of her heart is starting to move toward me, it might not be me she's looking at. Reaching out knowing that means using her guilt. — Either direction, there's no clean answer.*"
+        "text": "*And the scarier part runs the other way. To her, I'm — a student sitting in the seat of the Yujin she couldn't save, at about the same age. If a piece of her heart is starting to move toward me, it might not be me she's looking at. If I reach out knowing that, I'd be exploiting her guilt. — Either direction, there's no clean answer.*"
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_9_e": {
         "name": "{name}",
-        "text": "*A joke. — Right? Right, I think to myself, but my feet won't move. That 0.7-second look just now — there was no playfulness in it.*"
+        "text": "*A joke. — Right? Right, I think to myself, but my feet won't move. That split-second look just now — there was no playfulness in it.*"
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",

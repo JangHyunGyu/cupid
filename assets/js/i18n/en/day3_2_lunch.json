@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Today, unusually — all three are gathered in one place. {name} opens the lunchbox. Seoyeon naturally sits beside, Dain flops down across from us, and Yuna drifts in from the corner eating her own bread.*"
+        "text": "*Lunchtime. Today, unusually — all three are gathered in one place. I open my lunchbox. Seoyeon sits down beside me, Dain flops down across from us, and Yuna drifts in from the corner eating her own bread.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -83,7 +83,7 @@
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
-        "text": "...I figured it'd come to me."
+        "text": "...I was sure it'd be me."
     },
     "lunch3_give_yuna_3": {
         "name": "Dain",
@@ -91,7 +91,7 @@
     },
     "lunch3_share_solo": {
         "name": "{name}",
-        "text": "*The three of us shared a little bit. Nothing special, but — the mood was nice. A lunch where no one was left out.*"
+        "text": "*We all shared a little bit. Nothing special, but — the mood was nice. A lunch where no one was left out.*"
     },
     "lunch3_harem_1": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "*— I froze. The other two stop their hands.*"
+        "text": "*— I freeze. The other two stop their hands.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -135,11 +135,11 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "...Lie. I didn't either."
+        "text": "......That was a lie. I didn't know either."
     },
     "lunch3_expose_12": {
         "name": "{name}",
-        "text": "*Three pairs of chopsticks freeze. The cafeteria noise suddenly sounds far away. At the next table Minsu is looking over at us. He shakes his head.*"
+        "text": "*Three pairs of chopsticks freeze. The cafeteria noise suddenly sounds far away. At the next table, Minsu is looking over at us. He shakes his head.*"
     },
     "lunch3_expose_14": {
         "name": "Minsu",
@@ -184,7 +184,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*No exclamation marks. — The exclamation marks have vanished from Dain's sentences. For the first time.*"
+        "text": "*No exclamation marks. — For the first time, they've vanished from Dain's sentences.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",

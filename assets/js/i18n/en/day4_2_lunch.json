@@ -13,7 +13,7 @@
     },
     "date_seo_pretty_high": {
         "name": "{name}",
-        "text": "*Seoyeon pauses for a moment. -- Then she smiles. Not with her lips, but with her eyes.*"
+        "text": "*Seoyeon pauses for a moment. — Then she smiles. Not with her lips, but with her eyes.*"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "{name}",
-        "text": "*She said 'Don't get the wrong idea,' but her hand, pushing back her hair, is unnecessarily busy.*"
+        "text": "*She said 'Don't get the wrong idea,' but her hand, pushing back her hair, won't stop fidgeting.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "date_seo_duck": {
         "name": "Seoyeon",
-        "text": "They're simple, these guys. Bread, they follow. No bread, they don't."
+        "text": "They're simple, these guys. Give them bread, they follow. No bread, they couldn't care less."
     },
     "date_seo_duck_2": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*In front of the cafe. Yuna is leaning against the wall. A black dress and a small crossbody bag. Did Yuna always look like this? — It's the first time I'm seeing Yuna outside of her uniform.*"
+        "text": "*In front of the cafe. Yuna is leaning against the wall. A black dress and a small crossbody bag. Did Yuna always look like this? — It's the first time I've seen Yuna outside of her uniform.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "{name}",
-        "text": "*Again? -- Yuna is asking for a once more.*"
+        "text": "*Again? — Yuna is asking me to say it once more.*"
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
@@ -121,7 +121,7 @@
     },
     "date_yuna_bookstore_3": {
         "name": "Yuna",
-        "text": "...Good. So I get to be the one who showed you first."
+        "text": "...Good. So I get to be the one who brought you here first."
     },
     "date_yuna_earphone": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "date_yuna_end": {
         "name": "{name}",
-        "text": "*Yuna looks at me as she says it. -- In her eyes, because of you is written plainly.*"
+        "text": "*Yuna looks at me as she says it. — In her eyes, 'because of you' is written plain as day.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "You made it!! Cutting it close, weren't you?!"
+        "text": "You made it!! Cutting it pretty close, huh?!"
     },
     "date_dain_3": {
         "name": "{name}",
@@ -181,7 +181,7 @@
     },
     "date_dain_pretty_high": {
         "name": "{name}",
-        "text": "*Dain freezes. Her eyes go wide. -- Then she pulls her cap down over her face.*"
+        "text": "*Dain freezes. Her eyes go wide. — Then she pulls her cap down over her face.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -229,7 +229,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*Doesn't need knees. -- She said it lightly, but there's weight behind it.*"
+        "text": "*Doesn't need knees. — She said it lightly, but there's weight behind it.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*She's smiling. -- But her eyes aren't.*"
+        "text": "*She's smiling. — But her eyes aren't.*"
     },
     "pre_confess_minsu": {
         "name": "Minsu",

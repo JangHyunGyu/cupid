@@ -69,7 +69,7 @@
     },
     "wall_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon smiles. — It's not her usual composed smile. It's a smile for self-defense.*"
+        "text": "*Seoyeon smiles. — It's not her usual composed smile. This one's armor.*"
     },
     "wall_seo_9_b": {
         "name": "Seoyeon",
@@ -101,7 +101,7 @@
     },
     "wall_seo_13": {
         "name": "Seoyeon",
-        "text": "That's when I started practicing smiling in the mirror. The angle to lift my lips, the timing to crinkle my eyes."
+        "text": "That's when I started practicing smiling in the mirror. How far to lift my lips, the timing to crinkle my eyes."
     },
     "wall_seo_14": {
         "name": "Seoyeon",
@@ -113,11 +113,11 @@
     },
     "wall_seo_14_c": {
         "name": "{name}",
-        "text": "*Seoyeon stops talking. Her hands are clenched on her knees. — And then slowly, very slowly, the perfectly held expression breaks down. Seoyeon's fingertips tremble.*"
+        "text": "*Seoyeon stops talking. Her hands are clenched on her knees. — And then slowly, very slowly, the perfectly held expression crumbles. Seoyeon's fingertips tremble.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Tears run down her face. Silently. — Seoyeon is crying. Seoyeon looks up. The collapsed expression isn't something she's planning to hide anymore.*"
+        "text": "*Tears run down her face. Silently. — Seoyeon is crying. Seoyeon looks up. She's not trying to hide it anymore.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "*I held Seoyeon. Seoyeon buried her face in my chest. My uniform shirt gets wet.*"
+        "text": "*I hold Seoyeon. She buries her face in my chest. My uniform shirt gets wet.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -172,7 +172,7 @@
         "text": "*Seoyeon is wiping her tears, looking up at me with trembling eyes.*",
         "choices": [
             "You don't have to be perfect. I like this Seoyeon better.",
-            "Not council-president Seoyeon — just Seoyeon. That's my girlfriend.",
+            "Not the council president — just Seoyeon. That's my girlfriend.",
             "Honestly, I thought you were good at everything. Thanks for showing me this side of you too."
         ]
     },
@@ -243,7 +243,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*After standing behind the school for a long time, I finally came home. Because it's Seoyeon's night now. But my feet feel heavy.*"
+        "text": "*After standing behind the school for a long time, I finally head home. Tonight belongs to Seoyeon. But my feet feel heavy.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*I sat down next to Dain. The court floor is cold. I didn't say anything. Dain doesn't say anything either. — Strange. It's the first time silence has lasted more than a minute next to Dain.*"
+        "text": "*I sit down next to Dain. The court floor is cold. I don't say anything. Dain doesn't say anything either. — Strange. It's the first time silence has lasted more than a minute next to Dain.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -468,11 +468,11 @@
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*I held out my hand. Dain took it. We both stood up. — I set the ball for her.*"
+        "text": "*I hold out my hand. Dain takes it. We both stand up. — I set the ball for her.*"
     },
     "wall_dain_lastspike_2": {
         "name": "{name}",
-        "text": "*Dain clenched her jaw and leapt — the perfect spike. The ball slams into the court.*"
+        "text": "*Dain clenches her jaw and leaps — the perfect spike. The ball slams into the court.*"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
@@ -488,7 +488,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Heh. It hurts. But it feels weirdly good. — Glad my last hit on this court was off your set, {name}."
+        "text": "...Heh. It hurts. But it feels weirdly good. — Glad my last hit on this court came off your toss, {name}."
     },
     "wall_dain_lastspike_4_b": {
         "name": "{name}",
@@ -504,7 +504,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "{name}",
-        "text": "*A sentence from Dain with no exclamation marks at all. — That itself is the weight of farewell.*"
+        "text": "*A sentence from Dain with no exclamation marks at all. — That alone says everything.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*We sat on the bench by the school's back gate. Dain lay down on my lap without any warning.*"
+        "text": "*We sit on the bench by the school's back gate. Dain lies down on my lap without any warning.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -553,7 +553,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*I pretended not to see. — But why does my heart feel like this.*"
+        "text": "*I pretend not to see. — But why does my heart feel like this.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -751,7 +751,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "{name}",
-        "text": "*Yuna turns away. Her steps are quick. — Not quite running, but the stride of someone who wants to. It was the worst choice. — I can hear Yuna's wall closing again.*"
+        "text": "*Yuna turns away. Her steps are quick. — Not quite running, but the stride of someone who wants to. That was the worst choice. — I can feel Yuna's wall closing again.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -763,15 +763,15 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon puts her phone in her pocket and turns around. Her back is straight. Perfectly. — She's not trembling. Not this time, for real. The night still comes for the one who wasn't chosen. And she's spending that night alone.*"
+        "text": "*Seoyeon puts her phone in her pocket and turns around. Her back is straight. Perfectly. — She's not trembling. Not this time, for real. Night still falls on the one who wasn't chosen. And she's spending that night alone.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Unable to leave the back of the school for a while, I eventually came home. The words I heard today were not light. That's why they linger longer.*"
+        "text": "*I can't bring myself to leave right away. Eventually, I head home. The words I heard today were not light. That's why they linger longer.*"
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...I should have said it today. That person was reaching out first, and I failed to say the easiest words again. Just because tomorrow exists doesn't erase today. I knew that, and I still put it off.*"
+        "text": "*...I should have said it today. That person was reaching out first, and I failed to say the easiest words again. Tomorrow doesn't undo today. I knew that, and I still put it off.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "System",
@@ -811,7 +811,7 @@
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*11 PM. A text from Homeroom Teacher. Three short lines. — Those words, 'I'd like you to see it first,' keep lingering.*"
+        "text": "*11 PM. A text from my homeroom teacher. Three short lines. — Those words, 'I'd like you to see it first,' keep lingering.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "System",

@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Lunchtime. The hallway is packed with students. Three signals come at me from three directions at once.*"
+        "text": "*Lunchtime. The hallway is packed with students. Three people pull me in three different directions at once.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Three paths. A choice like this on day one. At my old school, I never made the choice. I kept putting it off and missed the timing. — Not this time.*"
+        "text": "*Three paths. A choice like this on day one. At my old school, I never made the choice. I kept putting it off and stalling until the moment passed. — Not this time.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -46,7 +46,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "I don't just bring anyone up here. *unfolds a chair* Today's special."
+        "text": "I don't just bring anyone up here. *unfolds a chair* Consider today an exception."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "lunch_seo_10": {
         "name": "Seoyeon",
-        "text": "I always pack extra. Student council work means I end up skipping meals all the time."
+        "text": "I always pack extra. Council work keeps me busy, so I never know when I'll actually get to eat."
     },
     "lunch_seo_11": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "lunch_seo_c2_1": {
         "name": "{name}",
-        "text": "*Seoyeon puts the rolled omelette in her own mouth. Chewing slowly.*"
+        "text": "*Seoyeon pops the rolled omelette into her mouth. Chewing slowly.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
@@ -170,7 +170,7 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "*The snack bar's packed at lunch. Bread and milk smells all jumbled together.*"
+        "text": "*The snack bar's packed at lunch. The smell of bread and milk all mixed together.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
@@ -266,7 +266,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "LOL YES!! Special training starts today! Warm-ups in the gym after school, deal?!"
+        "text": "YES!! Special training starts today! Warm-ups in the gym after school, deal?!"
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*Is that a yes? I think that's a yes. — Conditional. Silence settles in. Yuna keeps reading. With nothing to do, I drift over to the shelves.*"
+        "text": "*Is that a yes? I think that's a yes. — On her terms. Silence settles in. Yuna keeps reading. With nothing to do, I drift over to the shelves.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",

@@ -1,7 +1,7 @@
 {
     "morning4_start": {
         "name": "{name}",
-        "text": "*Day four. Weekend. — Today isn't school. It's a date.*"
+        "text": "*Day four. Weekend. — No school today. It's a date.*"
     },
     "morning4_nightmare_seo": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*...In that moment, my subconscious chose just one person.*"
+        "text": "*...In that moment, something deep down chose just one person.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*The school gate is slightly open. I hear movement inside. - Someone comes out by the gate. It's my homeroom teacher.*"
+        "text": "*The school gate is slightly open. I hear movement inside. — Someone steps out from the gate. It's my homeroom teacher.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Homeroom Teacher",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Seeing her outside the school gate, she doesn't look like a teacher. Just - like a writer.*"
+        "text": "*Seeing her outside the school gate, she doesn't look like a teacher. Just — like a writer.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Homeroom Teacher",
@@ -97,15 +97,15 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Homeroom Teacher",
-        "text": "Call it an extension of educational concern. *quietly* One cup of coffee should be fine, right? — Wait, you're a student. Juice it is."
+        "text": "Call it a teacher's duty. *quietly* One cup of coffee should be fine, right? — Wait, you're a student. Juice it is."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*There it is again. The pattern of saying 'educational concern' and immediately stepping over the line.*"
+        "text": "*There it is again. The pattern of saying 'teacher's duty' and immediately stepping over the line.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*A cup of coffee. — Educational concern.*",
+        "text": "*A cup of coffee. — Teacher's duty.*",
         "choices": [
             "Sure. Is there a cafe nearby?",
             "Probably shouldn't, right, miss?"
@@ -161,7 +161,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*The school nurse posted 'looking for helpers' on the school messenger. My feet are already heading to school. The nurse's office. The desk is piled with paperwork and check-up tools. The nurse is calmly sorting things.*"
+        "text": "*The school nurse posted 'looking for helpers' on the school messenger. Before I know it, I'm heading to school. The nurse's office. The desk is piled with paperwork and check-up tools. The nurse is calmly sorting things.*"
     },
     "hidden_nurse_d4_2": {
         "name": "School Nurse",
@@ -173,7 +173,7 @@
     },
     "hidden_nurse_d4_4": {
         "name": "School Nurse",
-        "text": "...At the hospital I used to do all this alone. Night shifts — sometimes one nurse doing three nurses' work."
+        "text": "...At the hospital I used to do all this alone. Night shifts — sometimes one nurse doing the work of three."
     },
     "hidden_nurse_d4_5": {
         "name": "School Nurse",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Sunday morning. I head to the nurse's office out of habit. — When did this become a habit? I opened the door. The school nurse is in her chair. White coat. — But she's different from usual. No playfulness.*"
+        "text": "*Sunday morning. I head to the nurse's office out of habit. — When did this become a habit? I open the door. The school nurse is in her chair. White coat. — But she's different from usual. No playfulness.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'Really.' — Today I heard it first. Through her glasses, the nurse's eyes look wet. The playfulness returns. — But below her smiling eyes, there's a trace of something that flowed. It hurts.*"
+        "text": "*'Really.' — Today I heard it first. Through her glasses, the nurse's eyes look wet. The playfulness returns. — But below her smiling eyes, there's a faint trail of tears. It hurts.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "School Nurse",
@@ -347,7 +347,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Short. So Yuna. I now know that I'll leave if you're late means the same as please don't be late.*"
+        "text": "*Short. So Yuna. I now know that 'I'll leave if you're late' means the same as 'please don't be late.'*"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Homeroom Teacher",
@@ -407,7 +407,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*Deja vu. She said something similar in the empty classroom yesterday. - But today, in a cafe, outside of school, it sounds lighter. No - more serious.*"
+        "text": "*Deja vu. She said something similar in the empty classroom yesterday. — But today, in a cafe, outside of school, it sounds lighter. No — more serious.*"
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "Educational interest, right?"
+        "text": "Teacher's duty, right?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Homeroom Teacher",
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Her smile comes naturally. - She's different from how she is at school. Today, she feels less like a teacher and more like just... someone easy to be around.*"
+        "text": "*Her smile comes naturally. — She's different from how she is at school. Today, she feels less like a teacher and more like just... someone easy to be around.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "School Nurse",
