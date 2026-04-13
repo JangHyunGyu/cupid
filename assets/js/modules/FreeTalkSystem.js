@@ -67,6 +67,9 @@ class FreeTalkSystem {
         /** 현재 프리토킹 씬의 ID */
         this.currentSceneId = null;
 
+        /** 현재 씬의 통신 매체 (대면 vs 원격) — 캐시 키 분기용 */
+        this._isRemote = false;
+
         /** 캐릭터 이름 매핑 (공통 상수 참조) */
         this.charNameMap = CHAR_NAME_MAP;
     }
@@ -348,6 +351,7 @@ class FreeTalkSystem {
             (scene.buttonText && scene.buttonText.includes(k)) ||
             (scene.text && scene.text.includes(k))
         );
+        this._isRemote = isRemote;
 
         const mediumInstruction = isRemote
             ? ({ es: "\n- MEDIO: Comunicándose por TELÉFONO/MENSAJERÍA.", ja: "\n- メディア: 電話/メッセンジャーで連絡中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Communication par TÉLÉPHONE/MESSAGERIE.", de: "\n- MEDIUM: Kommunikation per TELEFON/MESSENGER.", pt: "\n- MEIO: Comunicando via TELEFONE/MENSAGEIRO." }[lang] || "\n- 매체 지침: 전화/메시지로 연락 중.")
@@ -595,7 +599,7 @@ class FreeTalkSystem {
             // [Explicit Caching] 캐시 키 헤더 추가
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
-            const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}` : '';
+            const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}` : '';
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             const _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(this.freeTalkHistory, 5)
