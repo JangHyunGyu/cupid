@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Estoy frente a un portón desconocido. Un instituto bastante grande. Los estudiantes pasan en pequeños grupos. Soy el único cuyo uniforme aún está blanco y tieso. Hay una chica junto al portón. Echa hacia atrás su largo pelo negro con un gesto leve — detrás de las gafas, camina con calma. Sin el menor rastro de prisa.*"
+        "text": "*Estoy frente a un portón desconocido. Un instituto bastante grande. Los estudiantes pasan en pequeños grupos. Soy el único cuyo uniforme aún está blanco y tieso. Hay una chica junto al portón. Echa hacia atrás su largo pelo negro con un gesto leve — tras las gafas, avanza con calma. Sin el menor rastro de prisa.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -182,7 +182,7 @@
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Pelo blanco plateado. Ojos rojos, medio cerrados y soñolientos. Tatuajes cubren sus brazos. — Ni siquiera mira en esta dirección. Como si un estudiante transferido no fuera nada del otro mundo. Los estudiantes a su alrededor tampoco miran hacia ella. Deliberadamente. Como si en ese asiento no hubiera nadie.*"
+        "text": "*Pelo blanco plateado. Ojos rojos, medio cerrados y soñolientos. Los tatuajes le cubren los brazos. — Ni siquiera mira en esta dirección. Como si un estudiante transferido no fuera nada del otro mundo. Los estudiantes a su alrededor tampoco miran hacia ella. Deliberadamente. Como si en ese asiento no hubiera nadie.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
