@@ -79,11 +79,11 @@
     },
     "lunch2_dain_2b_seo": {
         "name": "Dain",
-        "text": "Opa, hoje é meu lado em vez da marmita da presidenta?!"
+        "text": "Opa, hoje é meu lado em vez da marmita da presidente?!"
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Ontem foi no ritmo da presidenta. Hoje eu queria ver o seu ritmo também."
+        "text": "Ontem foi no ritmo da presidente. Hoje eu queria ver o seu ritmo também."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -124,7 +124,7 @@
     },
     "lunch2_yuna_5_seo": {
         "name": "Yuna",
-        "text": "Ontem você tava com a presidenta."
+        "text": "Ontem você tava com a presidente."
     },
     "lunch2_yuna_6_seo": {
         "name": "{name}",
@@ -356,7 +356,7 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "A gente se conheceu ontem! Gente boa, né presidenta?!"
+        "text": "A gente se conheceu ontem! Gente boa, né presidente?!"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
@@ -500,7 +500,7 @@
     },
     "lunch2_dain_11": {
         "name": "Dain",
-        "text": "Ei, que que houve com a presidenta? Por que ficou encarando?"
+        "text": "Ei, que que houve com a presidente? Por que ficou encarando?"
     },
     "lunch2_dain_12": {
         "name": "{name}",
@@ -508,7 +508,7 @@
     },
     "lunch2_dain_13": {
         "name": "Dain",
-        "text": "Hmm... você é próximo da presidenta também?"
+        "text": "Hmm... você é próximo da presidente também?"
     },
     "lunch2_dain_13_b": {
         "name": "{name}",
