@@ -296,8 +296,8 @@ class DialogueSystem {
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
                     this.skipTyping = false;
                     this.updateTalkingAnimation(charName, false);
-                    const box = this.uiManager.dialogueBox;
-                    if (box) box.scrollTop = box.scrollHeight;
+                    const msgEl = this.uiManager.messageEl;
+                    if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
                     resolve();
                     return;
                 }
@@ -311,8 +311,8 @@ class DialogueSystem {
                     this.uiManager.messageEl.innerHTML = this.parseNarration(currentText);
                     charIndex = targetIndex;
                     // 대사가 길어지면 대화창을 최신 텍스트로 자동 스크롤
-                    const box = this.uiManager.dialogueBox;
-                    if (box) box.scrollTop = box.scrollHeight;
+                    const msgEl = this.uiManager.messageEl;
+                    if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
                 }
 
                 if (charIndex < textPart.length) {
@@ -334,8 +334,8 @@ class DialogueSystem {
                     }
 
                     // 타이핑 완료 후 최신 내용으로 스크롤
-                    const box = this.uiManager.dialogueBox;
-                    if (box) box.scrollTop = box.scrollHeight;
+                    const msgEl = this.uiManager.messageEl;
+                    if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
 
                     resolve();
                 }
