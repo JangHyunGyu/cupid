@@ -435,7 +435,7 @@
     },
     "after3_confront_5_c": {
         "name": "{name}",
-        "text": "*Elle a accepté. — C'est la première fois que Dain ne refuse pas l'aide de quelqu'un. Un sourire sans points d'exclamation pèse étrangement lourd.*"
+        "text": "*Dain baisse la tête. Les points d'exclamation ont disparu de sa voix. — Je suis en train de la blesser.*"
     },
     "haeun_warn_5c_b": {
         "name": "Seoyeon",
@@ -807,7 +807,7 @@
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "J'arrive, transfert !"
+        "text": "J'arrive, le nouveau !"
     },
     "after3_dain_correct_9": {
         "name": "{name}",

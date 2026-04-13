@@ -99,7 +99,7 @@
     },
     "lunch3_expose_1": {
         "name": "{name}",
-        "text": "*The moment I said let's all share — Dain spoke first.*"
+        "text": "*Just then — Dain spoke first.*"
     },
     "lunch3_expose_2": {
         "name": "Dain",
@@ -327,7 +327,7 @@
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
-        "text": "*The last one quietly sets hers down.*"
+        "text": "*The last one quietly puts hers down. Yuna sets her bread on the table.*"
     },
     "lunch3_expose_honest_4_b": {
         "name": "{name}",

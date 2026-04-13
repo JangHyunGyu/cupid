@@ -162,7 +162,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Denn wenn sie das Ende schreibt, ist es vorbei. — Yuna hat Angst, dass diese Geschichte endet.*"
+        "text": "*Wenn man das Ende nicht schreibt, endet die Geschichte nie. — Mir geht es genauso.*"
     },
     "night3_cheat_msg_3_b": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Diese Schule: Bedauern davon, allen zu sagen. Am Ende ist die Frage nicht 'reden oder schweigen' — sondern 'wem'.*"
+        "text": "*Diese Schule: Allen davon erzählt und es bereut. Am Ende war das Problem nicht ob man redet oder schweigt — sondern an wen.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
-        "text": "*'Dieses Foto löschen?'*"
+        "text": "*„Dieses Foto löschen?“ Mein Finger verharrt über dem Bestätigungsbutton.*"
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
@@ -214,7 +214,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...Richtig. Ich muss zuerst meiner eigenen Vergangenheit absagen.*"
+        "text": "*...Richtig. Ich muss zuerst meiner eigenen Vergangenheit absagen. — Gelöscht.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",

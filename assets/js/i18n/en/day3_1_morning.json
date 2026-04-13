@@ -185,7 +185,7 @@
         "text": "*After reading Yuna's note...*",
         "choices": [
             "I give her a nod",
-            "I fold the note and put it in my pocket"
+            "Shake my head slightly"
         ]
     },
     "morning3_date_yuna_accept": {
@@ -312,7 +312,7 @@
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "School Nurse",
-        "text": "*Pulls up a chair and sits down.* Relationships. — Is this a love consultation? *Pfft.* The more you try to hide it, the more obvious it is."
+        "text": "*Tilting her head slightly.* ...Right. Complicated or not, just rest here for a bit."
     },
     "hidden_nurse_d3_6": {
         "name": "School Nurse",
@@ -454,7 +454,7 @@
     },
     "morning3_dain_gate_5_b": {
         "name": "{name}",
-        "text": "*The moment we crossed the gate, Dain landed and let out a small ngh. But when I looked back, she was smiling like nothing happened. — Did I mishear?*"
+        "text": "*The moment we cross the gate, Dain lands with a soft \"oof.\" But when I look, she's grinning like nothing happened. — Did I mishear?*"
     },
     "morning3_react_yuna_1_b": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Homeroom Teacher",
-        "text": "*Sighing* ...Being perceptive is usually a strength. Sometimes it's a flaw."
+        "text": "*Sighing.* ...I wish I could only see what I want to see."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Homeroom Teacher",
-        "text": "*She hesitates. The hand touching the manuscript paper stops.* ...You're the first person to call it perseverance."
+        "text": "*She smiles softly.* ...I'm glad you're here. Truly."
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
-        "text": "Just... relationships got complicated."
+        "text": "...Things that are hard to bring up with anyone."
     },
     "hidden_nurse_d3_5_f": {
         "name": "School Nurse",
@@ -678,7 +678,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*Bull's-eye. — Her observation skills are no joke.*"
+        "text": "*Bull's-eye.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "School Nurse",

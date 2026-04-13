@@ -100,7 +100,7 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*I walked back to the hallway. Seoyeon's practiced smile, the water ring Yuna left behind. — The one who said nothing leaves a longer mark.*"
+        "text": "*Back in the hallway. Back in the hallway. Seoyeon's rehearsed smile, the water ring Yuna left behind. — The ones who said nothing linger the longest.*"
     },
     "after3_seo_1": {
         "name": "{name}",
@@ -200,7 +200,7 @@
     },
     "after3_dain_4": {
         "name": "Dain",
-        "text": "Ow! I'm fine!! Just a little twist!!"
+        "text": "Ah! I'm fine!! Just twisted it a little!!"
     },
     "after3_dain_5": {
         "name": "{name}",
@@ -212,10 +212,10 @@
     },
     "after3_dain_choice": {
         "name": "{name}",
-        "text": "*Dain sits on the bench. She rubs her knee.*",
+        "text": "*Dain sits on the bench. She rubs her knee. — This isn't from today's twist. It's old.*",
         "choices": [
-            "Sit next to her and wait quietly",
-            "You got pain patches? I'll go grab some."
+            "...Are you okay? Don't push yourself. Maybe rest for today.",
+            "Hey, one more serve. If I can't return it, you win."
         ]
     },
     "after3_dain_choice1": {
@@ -276,7 +276,7 @@
     },
     "after3_confront_6": {
         "name": "Seoyeon",
-        "text": "Be honest. Did you promise all of us the weekend?"
+        "text": "That mess at lunch... What were you even thinking, making plans with all three of us?"
     },
     "after3_confront_choice": {
         "name": "{name}",
@@ -435,7 +435,7 @@
     },
     "after3_confront_5_c": {
         "name": "{name}",
-        "text": "*She accepted it. — This is the first time Dain hasn't refused someone's help. A smile without exclamation marks feels strangely heavy.*"
+        "text": "*Dain lowers her head. The exclamation marks have vanished from her voice. — I'm hurting her.*"
     },
     "haeun_warn_5c_b": {
         "name": "Seoyeon",
@@ -607,7 +607,7 @@
     },
     "after3_seo_correct_3": {
         "name": "{name}",
-        "text": "Oh, here it is. — Madam President, is this council room a place where pens go missing?"
+        "text": "Oh, here it is. — Pens really go missing a lot in the council room, huh, President?"
     },
     "after3_seo_correct_4": {
         "name": "{name}",
