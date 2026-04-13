@@ -115,12 +115,10 @@
 
 /* ── style.css 오버라이드 (오버레이 컨텍스트에서 필요한 조정) ── */
 
-/* 대사창: 오버레이 안에서 pointer-events 활성화 + 스크롤 */
+/* 대사창: 오버레이 안에서 pointer-events 활성화 */
 .gallery-freetalk-overlay #dialogue-box {
     pointer-events: auto;
     margin-bottom: 0;
-    max-height: 45vh;
-    overflow-y: auto;
 }
 
 /* 입력 컨테이너: 오버레이 안에서 pointer-events 활성화 + 여백 제거 */
