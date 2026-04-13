@@ -13,7 +13,7 @@
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*Nichts von Yuna. — Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' springt mir ins Auge.*"
+        "text": "*Nichts von Yuna. — Das ist Yuna. Aber beim Packen meiner Tasche fällt der Morgenzettel aus meiner Tasche. Die Worte 'Bibliotheksanbau' springen mir ins Auge.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
@@ -212,8 +212,8 @@
         "name": "{name}",
         "text": "*Die Abendsonne fällt durchs Fenster. Ein orangefarbener Schein breitet sich auf Seoyeons Profil aus. — Ich wollte unbedingt etwas sagen.*",
         "choices": [
-            "Der Sonnenuntergang ist wunderschön. Ich meine, draußen.",
-            "Tut dir der Hals weh? Mach mal eine Pause."
+            "Der Sonnenuntergang ist hübsch. Ich rede vom Fenster.",
+            "Tut dir der Nacken weh? Mach mal eine Pause."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -386,7 +386,7 @@
     },
     "after2_yuna_quiet_react": {
         "name": "{name}",
-        "text": "*Yuna lächelt ganz leicht. — Dieses eine Lächeln macht den ganzen Tag erträglich.*"
+        "text": "*Yuna lächelt ganz leicht. — Dieses eine Lächeln macht den ganzen Tag gut.*"
     },
     "after2_yuna_end": {
         "name": "{name}",

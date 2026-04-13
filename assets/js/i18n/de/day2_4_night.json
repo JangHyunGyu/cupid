@@ -53,15 +53,15 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hey!! Was machst du morgen?!"
+        "text": "Hey!! Morgen Kiosk, ja?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
-        "text": "Halt dir morgen die Mittagspause frei"
+        "text": "Morgen Mittag lass ich das Dach offen"
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
-        "text": "...Kommst du morgen in die Bibliothek?"
+        "text": "...Das Buch, hast du es fertig gelesen?"
     },
     "night2_msg_7": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Aber — ich starre an die Decke. Der Tag lässt sich nicht abschalten. Seoyeon. Dain. Yuna. Alle drei stecken in meinem Kopf. Ich könnte es Neugier nennen. Ehrlich gesagt macht es mir aber Angst. Dieser Gedanke, mich für eine zu entscheiden.*"
+        "text": "*Aber — ich starre an die Decke. Der Tag lässt sich nicht abschalten. Seoyeon. Dain. Yuna. Alle drei stecken in meinem Kopf. Ich könnte es Neugier nennen. Ehrlich gesagt macht es mir aber Angst. Der Gedanke, dass mein Herz sich zu einer von ihnen neigt.*"
     },
     "night2_flashback_9": {
         "name": "{name}",

@@ -228,7 +228,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
-        "text": "*La voz de Yuna bajo un tono.*"
+        "text": "*La voz de Yuna bajó un tono.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -593,7 +593,7 @@
     },
     "lunch2_dain_end_j": {
         "name": "Enfermera",
-        "text": "Espera un momento..."
+        "text": "Quieto..."
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
@@ -605,7 +605,7 @@
     },
     "lunch2_dain_end_m": {
         "name": "{name}",
-        "text": "*La mano de la enfermera se detiene. — 0,5 segundos. Y vuelve a moverse.*"
+        "text": "*La mano de la enfermera se detiene. Y entonces — como si nada — vuelve a moverse.*"
     },
     "lunch2_dain_end_n": {
         "name": "Enfermera",
@@ -645,7 +645,7 @@
     },
     "lunch2_dain_end_w": {
         "name": "Enfermera",
-        "text": "Listo, así que vuelve a clase. — Y la próxima vez, ven sin estar herido."
+        "text": "Listo, así que vuelve a clase. — La próxima vez que vengas, te añado más pruebas al chequeo."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",
