@@ -174,7 +174,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "Soboro-Brot und Erdbeermilch zusammen? bestes Preis-Glücks-Verhältnis! Glaub mir!"
+        "text": "Soboro-Brot und Erdbeermilch zusammen? bestes Kalorien-Glücks-Verhältnis! Glaub mir!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna steht als Erste auf und geht. Ohne sich umzudrehen. 'War schön.' — Und plötzlich bin ich gut gelaunt.*"
+        "text": "*Yuna steht als Erste auf und geht. Ohne sich umzudrehen. 'War gut.' — Und plötzlich bin ich gut gelaunt.*"
     },
     "lunch_end": {
         "name": "{name}",
