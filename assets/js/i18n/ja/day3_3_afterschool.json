@@ -503,11 +503,11 @@
     },
     "after3_dain_dilemma_tell": {
         "name": "ダイン",
-        "text": "...え?"
+        "text": "...え？"
     },
     "after3_dain_dilemma_tell_2": {
         "name": "{name}",
-        "text": "膝。さっきからずっとさすってるじゃん。これ、今日ひねったんじゃないよね?"
+        "text": "膝。さっきからずっとさすってるじゃん。これ、今日ひねったんじゃないよね？"
     },
     "after3_dain_dilemma_tell_3": {
         "name": "{name}",
@@ -567,7 +567,7 @@
     },
     "after3_seo_pity_trap_3": {
         "name": "ソヨン",
-        "text": "それ、慰めのつもりで言ったの?"
+        "text": "それ、慰めのつもりで言ったの？"
     },
     "after3_seo_pity_trap_4": {
         "name": "{name}",
@@ -583,7 +583,7 @@
     },
     "after3_seo_pity_trap_7": {
         "name": "ソヨン",
-        "text": "出ていってくれる? 仕事があるの。"
+        "text": "出ていってくれる？ 仕事があるの。"
     },
     "after3_seo_pity_trap_8": {
         "name": "{name}",
@@ -607,7 +607,7 @@
     },
     "after3_seo_correct_3": {
         "name": "{name}",
-        "text": "あ、ここにあった。 — 会長、この生徒会室ってペンがよく消える場所なんですね?"
+        "text": "あ、ここにあった。 — 会長、この生徒会室ってペンがよく消える場所なんですね？"
     },
     "after3_seo_correct_4": {
         "name": "{name}",
@@ -619,7 +619,7 @@
     },
     "after3_seo_correct_6": {
         "name": "{name}",
-        "text": "生徒会長がそれも捕まえられないんですか?"
+        "text": "生徒会長がそれも捕まえられないんですか？"
     },
     "after3_seo_correct_7": {
         "name": "ソヨン",
@@ -655,7 +655,7 @@
     },
     "after3_yuna_decode_trap_3": {
         "name": "{name}",
-        "text": "違うって? でもこの部分見てよ、『教室の窓際で本を読んでいた——』"
+        "text": "違うって？ でもこの部分見てよ、『教室の窓際で本を読んでいた——』"
     },
     "after3_yuna_decode_trap_4": {
         "name": "ユナ",
@@ -671,7 +671,7 @@
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",
-        "text": "え?"
+        "text": "え？"
     },
     "after3_yuna_decode_trap_8": {
         "name": "ユナ",
@@ -699,7 +699,7 @@
     },
     "after3_yuna_correct_3": {
         "name": "{name}",
-        "text": "うん。これ誰の? 出版されてるの?"
+        "text": "うん。これ誰の？ 出版されてるの？"
     },
     "after3_yuna_correct_4": {
         "name": "ユナ",
@@ -715,11 +715,11 @@
     },
     "after3_yuna_correct_7": {
         "name": "ユナ",
-        "text": "...貸そうか?"
+        "text": "...貸そうか？"
     },
     "after3_yuna_correct_8": {
         "name": "{name}",
-        "text": "本当に? 作家の許可もなしに?"
+        "text": "本当に？ 作家の許可もなしに？"
     },
     "after3_yuna_correct_9": {
         "name": "ユナ",
@@ -759,7 +759,7 @@
     },
     "after3_dain_pity_trap_6": {
         "name": "{name}",
-        "text": "そんなって?"
+        "text": "そんなって？"
     },
     "after3_dain_pity_trap_7": {
         "name": "ダイン",
@@ -795,7 +795,7 @@
     },
     "after3_dain_correct_5": {
         "name": "{name}",
-        "text": "変なのって、いい変?悪い変?"
+        "text": "変なのって、いい変？悪い変？"
     },
     "after3_dain_correct_6": {
         "name": "ダイン",
