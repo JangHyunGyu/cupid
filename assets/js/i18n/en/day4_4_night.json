@@ -219,11 +219,11 @@
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "{name}",
-        "text": "*Seoyeon extends her pinky first. She doesn't stop there. She takes my hand.*"
+        "text": "*Seoyeon extends her pinky first. She doesn't stop there. She takes my hand. Presses her lips to my forehead.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
-        "text": "...I didn't practice this."
+        "text": "...This is a first. Really."
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*I toss the ball up. Dain jumps and — spikes it.*"
+        "text": "*I toss the ball up. Dain jumps and — spikes it. The moment she lands — she grabs her right knee and crouches down.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -371,7 +371,7 @@
     },
     "wall_dain_18_d": {
         "name": "Dain",
-        "text": "*Clenches and unclenches her fists.* I didn't tell anyone. Not even my parents."
+        "text": "*Clenches and unclenches her fists.* ...So."
     },
     "wall_dain_19": {
         "name": "Dain",
@@ -405,14 +405,14 @@
         "name": "{name}",
         "text": "*Dain is clutching the volleyball, head down. Her shoulders are trembling.*",
         "choices": [
-            "...Can I sit next to you?",
+            "...I won't say anything. I'll just be here.",
             "You can cry. You don't have to pretend to be cheerful. Not with me.",
             "...Shall we get up together? Just one more time."
         ]
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*I sat down next to Dain. The court floor is cold. I didn't say anything.*"
+        "text": "*I sat down next to Dain. The court floor is cold. I didn't say anything. Dain doesn't say anything either. — Strange. It's the first time silence has lasted more than a minute next to Dain.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -719,7 +719,7 @@
     },
     "wall_yuna_skin70_3": {
         "name": "{name}",
-        "text": "*Yuna's body temperature is low. But the hand she's holding is burning.*"
+        "text": "*Yuna's hand is warmer than I expected. — That's all.*"
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
@@ -751,7 +751,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "{name}",
-        "text": "*Yuna turns away. Her steps are quick. — Not quite running, but the stride of someone who wants to.*"
+        "text": "*Yuna turns away. Her steps are quick. — Not quite running, but the stride of someone who wants to. It was the worst choice. — I can hear Yuna's wall closing again.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -759,7 +759,7 @@
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Under the streetlight by the school gate. Seoyeon is standing there. — No, she was standing there. Holding her phone, typing something, then deleting it. Typing, then deleting.*"
+        "text": "*Under the streetlight by the school gate. Seoyeon is standing there. — No, she was standing there. Holding her phone, typing something, then deleting it. Typing, then deleting. I don't know who she's trying to send it to. — No, I think I do.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
@@ -791,7 +791,7 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*A message came on my phone.*"
+        "text": "*My phone screen lights up. It's a short message — and that's exactly why it hurts more.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",

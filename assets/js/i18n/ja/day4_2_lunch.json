@@ -1,358 +1,358 @@
 {
-  "date_seo_1": {
-    "name": "{name}",
-    "text": "*噴水の前。ソヨンが先に来て立っている。別人みたいだ。いや——同じ人なのに、見たことのない一面だ。*"
-  },
-  "date_seo_compliment_choice": {
-    "name": "{name}",
-    "text": "*なんて言おう？*",
-    "choices": [
-      "今日、ほんとに綺麗だ。",
-      "今日、気合い入ってるね。"
-    ]
-  },
-  "date_seo_pretty_high": {
-    "name": "{name}",
-    "text": "*ソヨンが一瞬止まる。――そして笑う。口元じゃなくて、目が笑っている。*"
-  },
-  "date_seo_pretty_high_2": {
-    "name": "ソヨン",
-    "text": "*視線を逸らし、髪を耳にかける。* ...ちょっと、風に当たろう。"
-  },
-  "date_seo_pretty_high_3": {
-    "name": "{name}",
-    "text": "今、出てきたばっかりだよ。"
-  },
-  "date_seo_pretty_high_4": {
-    "name": "{name}",
-    "text": "*「勘違いしないで」とは言ったものの、髪をかき上げる手がやけに忙しない。*"
-  },
-  "date_seo_pretty_low": {
-    "name": "ソヨン",
-    "text": "…何よ急に。そういうのは予告してから言ってよ。"
-  },
-  "date_seo_bright": {
-    "name": "ソヨン",
-    "text": "当たり前でしょ。今日はちょっと気合い入れたんだから。"
-  },
-  "date_seo_walk": {
-    "name": "{name}",
-    "text": "*公園を散歩する。鴨たちにパンをちぎって投げてやる。*"
-  },
-  "date_seo_duck": {
-    "name": "ソヨン",
-    "text": "この子たち、単純でいいよね。パンあげればついてくるし、あげなきゃ来ないし。"
-  },
-  "date_seo_duck_2": {
-    "name": "{name}",
-    "text": "人間もそんなもんじゃない？"
-  },
-  "date_seo_duck_3": {
-    "name": "ソヨン",
-    "text": "人間は、パンあげても来ない時あるでしょ。"
-  },
-  "date_seo_duck_4": {
-    "name": "{name}",
-    "text": "*何気ない言葉みたいだけど——そこにソヨンの経験がにじんでいる。花屋の前を通りかかる。*"
-  },
-  "date_seo_flower_2": {
-    "name": "{name}",
-    "text": "*ソヨンが花屋のドアを押す。ベルの音が鳴る。ソヨンが小さな鉢植えを一つ選ぶ。多肉植物。*"
-  },
-  "date_seo_succulent_2": {
-    "name": "ソヨン",
-    "text": "これ、育てやすいよ。水あげなくてもちゃんと生きるから。"
-  },
-  "date_seo_succulent_3": {
-    "name": "ソヨン",
-    "text": "育てられるなら、ね。——ダメだったら、私が引き取るから。"
-  },
-  "date_seo_end": {
-    "name": "{name}",
-    "text": "*ソヨンが差し出したもの。——受け取る手が、少し震えている。*"
-  },
-  "date_yuna_1": {
-    "name": "{name}",
-    "text": "*カフェの前。ユナが壁にもたれて立っている。黒いワンピースに小さなショルダーバッグ。ユナってこんな感じだったっけ。——制服以外のユナを見るのは、これが初めてだ。*"
-  },
-  "date_yuna_compliment_choice": {
-    "name": "{name}",
-    "text": "*なんて言おう？*",
-    "choices": [
-      "制服じゃないユナ、初めて見る。",
-      "今日、目が違う。"
-    ]
-  },
-  "date_yuna_pretty_high": {
-    "name": "{name}",
-    "text": "*ユナが一瞬止まる。少しだけうつむく。*"
-  },
-  "date_yuna_pretty_high_2": {
-    "name": "ユナ",
-    "text": "…それ。"
-  },
-  "date_yuna_pretty_high_3": {
-    "name": "{name}",
-    "text": "ん？"
-  },
-  "date_yuna_pretty_high_4": {
-    "name": "ユナ",
-    "text": "もう一回言って。"
-  },
-  "date_yuna_pretty_high_5": {
-    "name": "{name}",
-    "text": "*もう一回？――ユナがもう一回を求めてくる。*"
-  },
-  "date_yuna_pretty_low": {
-    "name": "ユナ",
-    "text": "……そんなこと、初めて言われた。"
-  },
-  "date_yuna_bright": {
-    "name": "ユナ",
-    "text": "……何が違うの。"
-  },
-  "date_yuna_bookstore": {
-    "name": "{name}",
-    "text": "*本屋に向かう。ユナが書棚の間をゆっくり歩く。*"
-  },
-  "date_yuna_bookstore_2": {
-    "name": "ユナ",
-    "text": "ここ、来たことある？"
-  },
-  "date_yuna_bookstore_3": {
-    "name": "ユナ",
-    "text": "……よかった。私が先に見せたってことになるね。"
-  },
-  "date_yuna_earphone": {
-    "name": "{name}",
-    "text": "*ユナがイヤホンを片方差し出す。*"
-  },
-  "date_yuna_earphone_2": {
-    "name": "ユナ",
-    "text": "…聴いて。"
-  },
-  "date_yuna_earphone_3": {
-    "name": "{name}",
-    "text": "*イヤホンのコードの長さだけが距離だ。30センチ。——これより近ければ触れて、これより遠ければ外れる。*"
-  },
-  "date_yuna_oldbook": {
-    "name": "{name}",
-    "text": "*古本屋を通りかかる。ユナが足を止める。*"
-  },
-  "date_yuna_oldbook_2": {
-    "name": "ユナ",
-    "text": "この本、一年前に読んだんだ。あの時は、結末が悲しかった。"
-  },
-  "date_yuna_oldbook_3": {
-    "name": "{name}",
-    "text": "今は？"
-  },
-  "date_yuna_oldbook_4": {
-    "name": "ユナ",
-    "text": "……今は、違うふうに読める。"
-  },
-  "date_yuna_end": {
-    "name": "{name}",
-    "text": "*ユナが俺を見てそう言う。——その目に『あなたのおかげで』と書いてある。*"
-  },
-  "date_dain_1": {
-    "name": "{name}",
-    "text": "*体育館の前。ダインが走ってくる。キャップにジャージ。*"
-  },
-  "date_dain_2": {
-    "name": "ダイン",
-    "text": "来た!! ギリギリだったでしょ？！"
-  },
-  "date_dain_3": {
-    "name": "{name}",
-    "text": "10分前には着いてたんだけど。"
-  },
-  "date_dain_4": {
-    "name": "ダイン",
-    "text": "あたしは20分前から来てたし!!"
-  },
-  "date_dain_compliment_choice": {
-    "name": "{name}",
-    "text": "*これはもうパターンだ。*",
-    "choices": [
-      "そのキャップ、似合ってる。",
-      "ジャージなのになんで可愛いんだろ。"
-    ]
-  },
-  "date_dain_pretty_high": {
-    "name": "{name}",
-    "text": "*ダインが止まる。目が大きくなる。――そしてキャップを深くかぶり直す。*"
-  },
-  "date_dain_pretty_high_2": {
-    "name": "ダイン",
-    "text": "ちょっ！！予告なしに！！そういうこと言うなって！！"
-  },
-  "date_dain_pretty_high_3": {
-    "name": "{name}",
-    "text": "本当のことだよ。"
-  },
-  "date_dain_pretty_high_4": {
-    "name": "{name}",
-    "text": "*「そんなこと言ったら」とは言ったけど、声が震えていた。*"
-  },
-  "date_dain_pretty_low": {
-    "name": "ダイン",
-    "text": "え、急に！！ ……笑 ありがとうだけど、恥ずかしいからもうやめて。"
-  },
-  "date_dain_bright": {
-    "name": "ダイン",
-    "text": "当然でしょ!! 今日はコンディション最高なんだから!!"
-  },
-  "date_dain_arcade": {
-    "name": "{name}",
-    "text": "*リズムゲームの筐体の前に立つ。画面がチカチカしている。*"
-  },
-  "date_dain_arcade_2": {
-    "name": "ダイン",
-    "text": "さあ、勝負だ!! 負けた方がジュース!!"
-  },
-  "date_dain_arcade_3": {
-    "name": "ダイン",
-    "text": "賭けがないとつまんないじゃん!!"
-  },
-  "date_dain_rhythm": {
-    "name": "ダイン",
-    "text": "*画面を指差しながら* このスコア、歴代2位だよ！！"
-  },
-  "date_dain_rhythm_2": {
-    "name": "{name}",
-    "text": "…すごいな。"
-  },
-  "date_dain_rhythm_3": {
-    "name": "ダイン",
-    "text": "ｗｗｗ当然でしょ!! これは膝使わなくていいからね!!"
-  },
-  "date_dain_knee": {
-    "name": "{name}",
-    "text": "*膝使わなくていいからね。――軽く言ったけど、そこに重みがある。*"
-  },
-  "date_dain_knee_2": {
-    "name": "{name}",
-    "text": "*ゲームセンターを出て、通りに出た。*"
-  },
-  "date_dain_shop": {
-    "name": "ダイン",
-    "text": "......"
-  },
-  "date_dain_shop_2": {
-    "name": "{name}",
-    "text": "ダイン？"
-  },
-  "date_dain_shop_3": {
-    "name": "ダイン",
-    "text": "*キャップを深く被りながら* ...見ないで。"
-  },
-  "date_dain_end": {
-    "name": "{name}",
-    "text": "*笑っている。――でも、目が笑っていない。*"
-  },
-  "pre_confess_minsu": {
-    "name": "ミンス",
-    "text": "おい、デート中だろ？一言だけ"
-  },
-  "pre_confess_minsu_2": {
-    "name": "ミンス",
-    "text": "今度はちゃんとやれ。逃げるなよ"
-  },
-  "pre_confess_callback": {
-    "name": "{name}",
-    "text": "*ポケットの中のスマホが重い。通知はないのに。— 初日、画面に浮かんだ名前を見てポケットに戻したあの時のように逃げてはいけない。今度は。*"
-  },
-  "date_seo_end_b": {
-    "name": "{name}",
-    "text": "*公園を出て、通りを歩いた。*"
-  },
-  "date_dain_to_arcade": {
-    "name": "{name}",
-    "text": "*ゲームセンターへ向かった。*"
-  },
-  "date_seo_pretty_high_b": {
-    "name": "ソヨン",
-    "text": "……その台詞。用意してきたの？"
-  },
-  "date_seo_pretty_high_3_b": {
-    "name": "ソヨン",
-    "text": "*髪をかき上げながら* ……勘違いしないで。"
-  },
-  "date_seo_flower_b": {
-    "name": "ソヨン",
-    "text": "*足を止めて* ……入ってみる？"
-  },
-  "date_seo_succulent_2_b": {
-    "name": "{name}",
-    "text": "俺にくれるの？"
-  },
-  "date_yuna_pretty_high_5_b": {
-    "name": "{name}",
-    "text": "きれいだよ。"
-  },
-  "date_yuna_pretty_high_5_c": {
-    "name": "ユナ",
-    "text": "*耳が赤くなりながら* ……もういい。"
-  },
-  "date_yuna_bookstore_2_b": {
-    "name": "{name}",
-    "text": "初めて。"
-  },
-  "date_yuna_earphone_2_b": {
-    "name": "{name}",
-    "text": "*静かなピアノ曲が流れる。書店の雑音が遠くなる。*"
-  },
-  "date_yuna_oldbook_b": {
-    "name": "ユナ",
-    "text": "……ここ。"
-  },
-  "date_yuna_oldbook_c": {
-    "name": "{name}",
-    "text": "*古い本を一冊取り出す。ページをめくりながら。*"
-  },
-  "date_dain_shop_3_b": {
-    "name": "ダイン",
-    "text": "*キャップの下から* ……もう一回言ったらマジで殴る。"
-  },
-  "date_dain_arcade_2_b": {
-    "name": "{name}",
-    "text": "また勝負？"
-  },
-  "date_dain_arcade_3_b": {
-    "name": "{name}",
-    "text": "*リズムゲーム。——ダインが圧倒的にうまい。*"
-  },
-  "date_dain_arcade_3_c": {
-    "name": "ダイン",
-    "text": "*キャーと叫びながら* フルコンボ！！ 見た？！"
-  },
-  "date_dain_shop_2_b": {
-    "name": "ダイン",
-    "text": "*顔をそらして* なんでもない！ 行こ！"
-  },
-  "date_seo_end_c": {
-    "name": "ソヨン",
-    "text": "*足を止めて* ...今日。"
-  },
-  "date_seo_end_d": {
-    "name": "ソヨン",
-    "text": "楽しかった。— それだけ覚えてて。"
-  },
-  "date_yuna_end_b": {
-    "name": "ユナ",
-    "text": "*別れ際に、メモを渡す。何も言わずに。*"
-  },
-  "date_yuna_end_c": {
-    "name": "{name}",
-    "text": "*'今日は言葉が多かった。あなたの前だけ。' — ユナの文字が震えている。*"
-  },
-  "date_dain_end_b": {
-    "name": "ダイン",
-    "text": "ねえ。"
-  },
-  "date_dain_end_c": {
-    "name": "ダイン",
-    "text": "今日ほんとに楽しかった。...ビックリマークなしで。"
-  }
+    "date_seo_1": {
+        "name": "{name}",
+        "text": "*噴水の前。ソヨンが先に来て立っている。別人みたいだ。いや——同じ人なのに、見たことのない一面だ。*"
+    },
+    "date_seo_compliment_choice": {
+        "name": "{name}",
+        "text": "*なんて言おう？*",
+        "choices": [
+            "今日、ほんとに綺麗だ。",
+            "今日、気合い入ってるね。"
+        ]
+    },
+    "date_seo_pretty_high": {
+        "name": "{name}",
+        "text": "*ソヨンが一瞬止まる。――そして笑う。口元じゃなくて、目が笑っている。*"
+    },
+    "date_seo_pretty_high_2": {
+        "name": "ソヨン",
+        "text": "*視線を逸らし、髪を耳にかける。* ...ちょっと、風に当たろう。"
+    },
+    "date_seo_pretty_high_3": {
+        "name": "{name}",
+        "text": "今、出てきたばっかりだよ。"
+    },
+    "date_seo_pretty_high_4": {
+        "name": "{name}",
+        "text": "*「勘違いしないで」とは言ったものの、髪をかき上げる手がやけに忙しない。*"
+    },
+    "date_seo_pretty_low": {
+        "name": "ソヨン",
+        "text": "…何よ急に。そういうのは予告してから言ってよ。"
+    },
+    "date_seo_bright": {
+        "name": "ソヨン",
+        "text": "当たり前でしょ。今日はちょっと気合い入れたんだから。"
+    },
+    "date_seo_walk": {
+        "name": "{name}",
+        "text": "*公園を散歩する。鴨たちにパンをちぎって投げてやる。*"
+    },
+    "date_seo_duck": {
+        "name": "ソヨン",
+        "text": "この子たち、単純でいいよね。パンあげればついてくるし、あげなきゃ来ないし。"
+    },
+    "date_seo_duck_2": {
+        "name": "{name}",
+        "text": "人間もそんなもんじゃない？"
+    },
+    "date_seo_duck_3": {
+        "name": "ソヨン",
+        "text": "人間は、パンあげても来ない時あるでしょ。"
+    },
+    "date_seo_duck_4": {
+        "name": "{name}",
+        "text": "*何気ない言葉みたいだけど——そこにソヨンの経験がにじんでいる。花屋の前を通りかかる。*"
+    },
+    "date_seo_flower_2": {
+        "name": "{name}",
+        "text": "*ソヨンが花屋のドアを押す。ベルの音が鳴る。ソヨンが小さな鉢植えを一つ選ぶ。多肉植物。*"
+    },
+    "date_seo_succulent_2": {
+        "name": "ソヨン",
+        "text": "これ、育てやすいよ。水あげなくてもちゃんと生きるから。"
+    },
+    "date_seo_succulent_3": {
+        "name": "ソヨン",
+        "text": "育てられるなら、ね。——ダメだったら、私が引き取るから。"
+    },
+    "date_seo_end": {
+        "name": "{name}",
+        "text": "*ソヨンが差し出したもの。——受け取る手が、少し震えている。*"
+    },
+    "date_yuna_1": {
+        "name": "{name}",
+        "text": "*カフェの前。ユナが壁にもたれて立っている。黒いワンピースに小さなショルダーバッグ。ユナってこんな感じだったっけ。——制服以外のユナを見るのは、これが初めてだ。*"
+    },
+    "date_yuna_compliment_choice": {
+        "name": "{name}",
+        "text": "*なんて言おう？*",
+        "choices": [
+            "制服じゃないユナ、初めて見る。",
+            "今日、目が違う。"
+        ]
+    },
+    "date_yuna_pretty_high": {
+        "name": "{name}",
+        "text": "*ユナが一瞬止まる。少しだけうつむく。*"
+    },
+    "date_yuna_pretty_high_2": {
+        "name": "ユナ",
+        "text": "…それ。"
+    },
+    "date_yuna_pretty_high_3": {
+        "name": "{name}",
+        "text": "ん？"
+    },
+    "date_yuna_pretty_high_4": {
+        "name": "ユナ",
+        "text": "もう一回言って。"
+    },
+    "date_yuna_pretty_high_5": {
+        "name": "{name}",
+        "text": "*もう一回？――ユナがもう一回を求めてくる。*"
+    },
+    "date_yuna_pretty_low": {
+        "name": "ユナ",
+        "text": "……そんなこと、初めて言われた。"
+    },
+    "date_yuna_bright": {
+        "name": "ユナ",
+        "text": "……何が違うの。"
+    },
+    "date_yuna_bookstore": {
+        "name": "{name}",
+        "text": "*本屋に向かう。ユナが書棚の間をゆっくり歩く。*"
+    },
+    "date_yuna_bookstore_2": {
+        "name": "ユナ",
+        "text": "ここ、来たことある？"
+    },
+    "date_yuna_bookstore_3": {
+        "name": "ユナ",
+        "text": "……よかった。私が先に見せたってことになるね。"
+    },
+    "date_yuna_earphone": {
+        "name": "{name}",
+        "text": "*ユナがイヤホンを片方差し出す。*"
+    },
+    "date_yuna_earphone_2": {
+        "name": "ユナ",
+        "text": "…聴いて。"
+    },
+    "date_yuna_earphone_3": {
+        "name": "{name}",
+        "text": "*イヤホンのコードの長さだけが距離だ。30センチ。——これより近ければ触れて、これより遠ければ外れる。*"
+    },
+    "date_yuna_oldbook": {
+        "name": "{name}",
+        "text": "*古本屋を通りかかる。ユナが足を止める。*"
+    },
+    "date_yuna_oldbook_2": {
+        "name": "ユナ",
+        "text": "この本、一年前に読んだんだ。あの時は、結末が悲しかった。"
+    },
+    "date_yuna_oldbook_3": {
+        "name": "{name}",
+        "text": "今は？"
+    },
+    "date_yuna_oldbook_4": {
+        "name": "ユナ",
+        "text": "……今は、違うふうに読める。"
+    },
+    "date_yuna_end": {
+        "name": "{name}",
+        "text": "*ユナが俺を見てそう言う。——その目に『あなたのおかげで』と書いてある。*"
+    },
+    "date_dain_1": {
+        "name": "{name}",
+        "text": "*体育館の前。ダインが走ってくる。キャップにジャージ。*"
+    },
+    "date_dain_2": {
+        "name": "ダイン",
+        "text": "来た!! ギリギリだったでしょ？！"
+    },
+    "date_dain_3": {
+        "name": "{name}",
+        "text": "10分前には着いてたんだけど。"
+    },
+    "date_dain_4": {
+        "name": "ダイン",
+        "text": "あたしは20分前から来てたし!!"
+    },
+    "date_dain_compliment_choice": {
+        "name": "{name}",
+        "text": "*これはもうパターンだ。*",
+        "choices": [
+            "そのキャップ、似合ってる。",
+            "ジャージなのになんで可愛いんだろ。"
+        ]
+    },
+    "date_dain_pretty_high": {
+        "name": "{name}",
+        "text": "*ダインが止まる。目が大きくなる。――そしてキャップを深くかぶり直す。*"
+    },
+    "date_dain_pretty_high_2": {
+        "name": "ダイン",
+        "text": "ちょっ！！予告なしに！！そういうこと言うなって！！"
+    },
+    "date_dain_pretty_high_3": {
+        "name": "{name}",
+        "text": "本当のことだよ。"
+    },
+    "date_dain_pretty_high_4": {
+        "name": "{name}",
+        "text": "*「そんなこと言ったら」とは言ったけど、声が震えていた。*"
+    },
+    "date_dain_pretty_low": {
+        "name": "ダイン",
+        "text": "え、急に！！ ……笑 ありがとうだけど、恥ずかしいからもうやめて。"
+    },
+    "date_dain_bright": {
+        "name": "ダイン",
+        "text": "当然でしょ!! 今日はコンディション最高なんだから!!"
+    },
+    "date_dain_arcade": {
+        "name": "{name}",
+        "text": "*リズムゲームの筐体の前に立つ。画面がチカチカしている。*"
+    },
+    "date_dain_arcade_2": {
+        "name": "ダイン",
+        "text": "さあ、勝負だ!! 負けた方がジュース!!"
+    },
+    "date_dain_arcade_3": {
+        "name": "ダイン",
+        "text": "賭けがないとつまんないじゃん!!"
+    },
+    "date_dain_rhythm": {
+        "name": "ダイン",
+        "text": "*画面を指差しながら* このスコア、歴代2位だよ！！"
+    },
+    "date_dain_rhythm_2": {
+        "name": "{name}",
+        "text": "…すごいな。"
+    },
+    "date_dain_rhythm_3": {
+        "name": "ダイン",
+        "text": "ｗｗｗ当然でしょ!! これは膝使わなくていいからね!!"
+    },
+    "date_dain_knee": {
+        "name": "{name}",
+        "text": "*膝使わなくていいからね。――軽く言ったけど、そこに重みがある。*"
+    },
+    "date_dain_knee_2": {
+        "name": "{name}",
+        "text": "*ゲームセンターを出て、通りに出た。スポーツ用品店を通りかかる。ダインがショーウィンドウの前で足を止める。バレーシューズが並んでいる。*"
+    },
+    "date_dain_shop": {
+        "name": "ダイン",
+        "text": "......"
+    },
+    "date_dain_shop_2": {
+        "name": "{name}",
+        "text": "ダイン？"
+    },
+    "date_dain_shop_3": {
+        "name": "ダイン",
+        "text": "*キャップを深く被りながら* ...見ないで。"
+    },
+    "date_dain_end": {
+        "name": "{name}",
+        "text": "*笑っている。――でも、目が笑っていない。*"
+    },
+    "pre_confess_minsu": {
+        "name": "ミンス",
+        "text": "おい、デート中だろ？一言だけ"
+    },
+    "pre_confess_minsu_2": {
+        "name": "ミンス",
+        "text": "今度はちゃんとやれ。逃げるなよ"
+    },
+    "pre_confess_callback": {
+        "name": "{name}",
+        "text": "*ポケットの中のスマホが重い。通知はないのに。— 初日、画面に浮かんだ名前を見てポケットに戻したあの時のように逃げてはいけない。今度は。*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*公園を出て、通りを歩いた。*"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*ゲームセンターへ向かった。*"
+    },
+    "date_seo_pretty_high_b": {
+        "name": "ソヨン",
+        "text": "……その台詞。用意してきたの？"
+    },
+    "date_seo_pretty_high_3_b": {
+        "name": "ソヨン",
+        "text": "*髪をかき上げながら* ……勘違いしないで。"
+    },
+    "date_seo_flower_b": {
+        "name": "ソヨン",
+        "text": "*足を止めて* ……入ってみる？"
+    },
+    "date_seo_succulent_2_b": {
+        "name": "{name}",
+        "text": "俺にくれるの？"
+    },
+    "date_yuna_pretty_high_5_b": {
+        "name": "{name}",
+        "text": "きれいだよ。"
+    },
+    "date_yuna_pretty_high_5_c": {
+        "name": "ユナ",
+        "text": "*耳が赤くなりながら* ……もういい。"
+    },
+    "date_yuna_bookstore_2_b": {
+        "name": "{name}",
+        "text": "初めて。"
+    },
+    "date_yuna_earphone_2_b": {
+        "name": "{name}",
+        "text": "*静かなピアノ曲が流れる。書店の雑音が遠くなる。*"
+    },
+    "date_yuna_oldbook_b": {
+        "name": "ユナ",
+        "text": "……ここ。"
+    },
+    "date_yuna_oldbook_c": {
+        "name": "{name}",
+        "text": "*古い本を一冊取り出す。ページをめくりながら。*"
+    },
+    "date_dain_shop_3_b": {
+        "name": "ダイン",
+        "text": "*キャップの下から* ……もう一回言ったらマジで殴る。"
+    },
+    "date_dain_arcade_2_b": {
+        "name": "{name}",
+        "text": "また勝負？"
+    },
+    "date_dain_arcade_3_b": {
+        "name": "{name}",
+        "text": "*リズムゲーム。——ダインが圧倒的にうまい。*"
+    },
+    "date_dain_arcade_3_c": {
+        "name": "ダイン",
+        "text": "*キャーと叫びながら* フルコンボ！！ 見た？！"
+    },
+    "date_dain_shop_2_b": {
+        "name": "ダイン",
+        "text": "*顔をそらして* なんでもない！ 行こ！"
+    },
+    "date_seo_end_c": {
+        "name": "ソヨン",
+        "text": "*足を止めて* ...今日。"
+    },
+    "date_seo_end_d": {
+        "name": "ソヨン",
+        "text": "楽しかった。— それだけ覚えてて。"
+    },
+    "date_yuna_end_b": {
+        "name": "ユナ",
+        "text": "*別れ際に、メモを渡す。何も言わずに。*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'今日は言葉が多かった。あなたの前だけ。' — ユナの文字が震えている。*"
+    },
+    "date_dain_end_b": {
+        "name": "ダイン",
+        "text": "ねえ。"
+    },
+    "date_dain_end_c": {
+        "name": "ダイン",
+        "text": "今日ほんとに楽しかった。...ビックリマークなしで。"
+    }
 }

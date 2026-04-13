@@ -93,7 +93,7 @@
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*初日にも同じことを言った。あの時は本気だった。今は逃げだ。*"
+        "text": "*Day 1でも同じことを言った。あの時は本気だった。今は逃げだ。*"
     },
     "confess_seo_no_3": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "confess_yuna_no_1": {
         "name": "{name}",
-        "text": "…ここ、本当にいいな。"
+        "text": "…ここ、本当にいいね。"
     },
     "confess_yuna_no_2": {
         "name": "{name}",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*「めっちゃ」。——ダインはいつもこうだ。短くて、素直。だから信じられる。*"
+        "text": "*「めちゃくちゃ」。——ダインはいつもこうだ。短くて、素直。だから信じられる。*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

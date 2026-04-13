@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*Siento que el corazón se me va a salir por la boca. — Está bien. Esta vez sí.*"
+        "text": "*La respiración se me sube hasta la garganta. Aun así, esta vez no voy a huir.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "Tú eras — el tipo de persona que se sienta a tu lado en vez de hablar. Ese silencio era más cálido que las palabras de cualquiera."
+        "text": "Tú eras — la persona que se sentaba a mi lado en vez de hablar. Ese silencio era más cálido que las palabras de cualquiera."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'Mucho.' — Dain siempre es así. Corta y sincera. Por eso le creo.*"
+        "text": "*'Muchísimo.' — Dain siempre es así. Corta y sincera. Por eso le creo.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
