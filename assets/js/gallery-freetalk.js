@@ -772,7 +772,8 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
                     userContent: finalContent,
                     assistantContent: reply,
                     sessionId: 'gallery-freetalk',
-                    context: '1:1'
+                    context: '1:1',
+                    playerName: this.progress.getPlayerName() || ''
                 });
             }
 
