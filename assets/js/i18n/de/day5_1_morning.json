@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Eine Zeile. — Jemand, der dreimal beim Literaturdebüt gescheitert ist, wartet auf die einzeilige Rezension eines Schülers. Wenn das kein Geständnis ist, was dann?*"
+        "text": "*Eine Zeile. — Jemand, der dreimal beim Literaturdebüt gescheitert ist, wartet auf die einzeilige Rezension eines Schülers. Wenn das kein Geständnis ist, was dann? Die Klassenlehrerin geht zum Ausgang — und bleibt vor der Tür stehen.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Klassenlehrerin",
@@ -359,7 +359,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit verschwunden. — So kommt die Aufrichtigkeit dieser Person immer.*"
+        "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit aus dem Gesicht verschwunden. — So kommt die Aufrichtigkeit dieser Person immer. Die Schulkrankenschwester lacht — und hält inne. Schließt den Mund.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Schulkrankenschwester",
@@ -387,7 +387,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡' Das Herz diesmal — scheint kein medizinisches Interesse zu sein.*"
+        "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡' Das Herz diesmal — kein medizinisches Interesse.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -463,7 +463,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...Ich wusste es nicht. Von den gescheiterten Debüts wusste ich, aber nicht, dass die Absage *genau das war, was ich gerade gesagt habe*.*"
+        "text": "*...Ich wusste es nicht. Von den gescheiterten Debüts wusste ich, aber nicht, dass die Absage genau das war, was ich gerade gesagt habe.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Klassenlehrerin",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Ich schloss die Klassentür hinter mir. Der Umschlag lag noch auf ihrem Tisch. — Was sie in sieben Jahren nie bekommen hatte, war nicht *aufrichtiges Lob*, sondern *jemand, der es ernsthaft liest*. Lob stand auch in den Absagen. Ich habe genau das Gleiche gesagt wie eine Absage. Mit guten Absichten.*"
+        "text": "*Ich habe die Tür hinter mir geschlossen. Der Umschlag liegt noch auf ihrem Schreibtisch. — Was sie in sieben Jahren nie bekommen hatte, war kein aufrichtiges Lob, sondern jemand, der es ernsthaft liest. Lob gab es auch in den Absagebriefen. Ich habe genau dasselbe gesagt wie ein Absagebrief. In guter Absicht.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Ich wusste es nicht. Es war eine Vermutung. — Dass jemand, der sieben Jahre daran saß, es ausgerechnet *heute* einem Schüler zum ersten Mal zeigt, war seltsam. Wäre es fertig, hätte sie es zuerst an Verlage geschickt. Es ist nicht fertig — also braucht sie *Erlaubnis*, es zu beenden.*"
+        "text": "*Ich wusste es nicht. Es war eine Vermutung. — Dass jemand, der sieben Jahre daran saß, es ausgerechnet heute einem Schüler zum ersten Mal zeigt, war seltsam. Wäre es fertig, hätte sie es zuerst an Verlage geschickt. Es ist nicht fertig — also braucht sie Erlaubnis, es zu beenden.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
@@ -507,7 +507,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*Zum ersten Mal sprach die Lehrerin das Wort *Autorin* über sich selbst aus. Ein Wort, das sie sieben Jahre lang kein einziges Mal gesagt hatte.*"
+        "text": "*Zum ersten Mal hat die Klassenlehrerin das Wort 'Schriftstellerin' über sich selbst ausgesprochen. In sieben Jahren hat sie es nie gesagt.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -531,6 +531,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Ich nehme das Manuskript wieder in den Arm. Es ist nicht mehr so schwer wie vorher. — Sieben Jahre Unfertiges mit Lob *abzuschließen* war nicht, was sie brauchte. Was sie brauchte, war *jemand, der das Unfertige als unfertig anerkennt*. Das ist echte Unterstützung.*"
+        "text": "*Ich nehme das Manuskript wieder in den Arm. Es ist nicht mehr so schwer wie vorher. — Sieben Jahre Unfertiges mit Lob abzuschließen war nicht, was sie brauchte. Was sie brauchte, war jemand, der das Unfertige als unfertig anerkennt. Das ist echte Unterstützung.*"
     }
 }

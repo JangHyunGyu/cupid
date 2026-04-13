@@ -125,7 +125,7 @@
     },
     "true_seo_7_b": {
         "name": "{name}",
-        "text": "*On a lié nos petits doigts. L'habitude du Jour 1, la promesse du Jour 4, et maintenant. — Même doigt, troisième signification.*"
+        "text": "*Je tends la main aussi. Juste avant de se toucher, Seoyeon sourit la première.*"
     },
     "true_seo_7b": {
         "name": "{name}",
@@ -486,7 +486,7 @@
     },
     "good_3_seo": {
         "name": "{name}",
-        "text": "*« ...Pourquoi tu viens pas ? » Même en grommelant tout bas, elle avançait au rythme de quelqu'un qui avait attendu.*"
+        "text": "*'...Pourquoi tu viens pas ?' Même en grommelant tout bas, c'était le pas de quelqu'un qui avait attendu.*"
     },
     "good_4_seo": {
         "name": "{name}",
@@ -498,7 +498,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Un message de Seoyeon. 'J'ai fait un double de la clé du toit. — C'est une autorisation, une autorisation.' Il suffisait de dire que c'était une invitation.*"
+        "text": "*Un message de Seoyeon. 'J'ai fait un double de la clé du toit pour demain. — C'est un laissez-passer, un laissez-passer.' Elle pouvait juste dire que c'était une invitation.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -746,7 +746,7 @@
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*Quand Seoyeon m'a demandé : « Tu fais quoi mercredi ? », j'ai failli faire un arrêt cardiaque. Le mercredi, c'est le jour de Yuna.*"
+        "text": "*Quand Seoyeon m'a demandé : 'Tu fais quoi mercredi ?', j'ai marqué un temps d'arrêt. Le mercredi, c'est le jour de Yuna.*"
     },
     "harem_6": {
         "name": "{name}",
@@ -803,7 +803,7 @@
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*Ce « la prochaine fois » est devenu la fois d'après, puis encore la suivante. Même place chaque jeudi. Quand le barista a demandé « Table pour couple ? », aucun de nous n'a pu répondre. Un jeudi. On a marché dans les rues au lieu d'aller au café. Côte à côte. Tous les deux faisant semblant de ne pas remarquer nos ombres qui se chevauchaient.*"
+        "text": "*Ce 'prochaine fois' est devenu la suivante, puis encore la suivante. Le même siège chaque jeudi. Quand le serveur a demandé 'vous êtes ensemble ?', ni l'un ni l'autre n'a pu répondre. Un jeudi, on a marché dans la rue au lieu du café. Côte à côte. Faisant tous les deux semblant de ne pas voir nos ombres se superposer.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Professeure principale",
@@ -843,7 +843,7 @@
     },
     "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*Le café du jeudi est devenu notre café. Le personnel ne demande plus 'table couple ?' Ils nous guident directement à notre place.*"
+        "text": "*Le café du jeudi est devenu notre café. Le serveur ne demande plus 'vous êtes ensemble ?' Il nous guide directement à notre place.*"
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
@@ -859,7 +859,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*Une salle vide. Celle où elle écrivait son manuscrit. - Ma prof principale m'attend.*"
+        "text": "*Une salle vide. Celle où elle écrivait son manuscrit. — Ma prof principale m'attend.*"
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
@@ -1016,11 +1016,11 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Elle est retournée à l'hôpital universitaire. Cette fois, les patients l'appellent par son nom. — Docteur Lee.*"
+        "text": "*Elle est retournée à l'hôpital universitaire. Cette fois, les patients l'appellent par son nom. — Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*Le pot de romarin a été déplacé près de la fenêtre. Du côté où le soleil entre bien. - C'est elle qui l'arrose.*"
+        "text": "*Le pot de romarin a été déplacé près de la fenêtre. Du côté où le soleil entre bien. — C'est elle qui l'arrose.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1084,7 +1084,7 @@
     },
     "hidden_true_nurse_6": {
         "name": "Infirmière",
-        "text": "Alors, quand la remise des diplômes sera finie — reviens me voir. Pas à l'infirmerie, ici. Cette fois, retrouve-moi non pas comme l'infirmière scolaire, mais comme moi."
+        "text": "Alors, quand la remise des diplômes sera finie — reviens me voir. Pas à l'infirmerie, ici. Cette fois, vois-moi non pas comme l'infirmière scolaire, mais comme Juwon."
     },
     "hidden_true_nurse_7": {
         "name": "{name}",

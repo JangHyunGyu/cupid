@@ -85,7 +85,7 @@
     },
     "bitter_seo_2_b": {
         "name": "{name}",
-        "text": "*Seoyeon en la cafetería. Su mirada detrás de las gafas es seca. Sin compostura, sin temblor. Solo — los ojos de alguien que vino a cerrar cuentas.*"
+        "text": "*Seoyeon en la cafetería. Su mirada tras las gafas es seca. Sin la compostura de antes, sin temblor. Solo — los ojos de alguien que ha venido a poner punto final.*"
     },
     "bitter_seo_3": {
         "name": "{name}",
@@ -125,11 +125,11 @@
     },
     "true_seo_7_b": {
         "name": "{name}",
-        "text": "*Entrelazamos los meñiques. La costumbre del Día 1, la promesa del Día 4, y ahora. — El mismo dedo, tercer significado.*"
+        "text": "*Seoyeon duda un momento y extiende su meñique.*"
     },
     "true_seo_7b": {
         "name": "{name}",
-        "text": "*Seoyeon extiende su meñique.*"
+        "text": "*Yo también extiendo la mano. Justo antes de tocarnos, Seoyeon sonríe primero.*"
     },
     "true_seo_8": {
         "name": "{name}",
@@ -625,8 +625,8 @@
         "text": "*Hay una cosa que hace diferente este fracaso a los anteriores. Al menos esta vez lo dije, y por eso de verdad puedo dejarlo terminar.*"
     },
     "confess_fail_5": {
-        "name": "Sistema",
-        "text": "─── FRIEND END ───"
+        "name": "",
+        "text": "─── FRIEND END (confesión fallida) ───"
     },
     "day5_ending_friend": {
         "name": "{name}",
@@ -674,7 +674,7 @@
     },
     "friend_8": {
         "name": "{name}",
-        "text": "*Día de graduación. Paso las fotos del móvil. Donde antes estaba la foto de Sojeong, ahora hay una foto de grupo con ella.*"
+        "text": "*Día de graduación. Paso las fotos del móvil. Donde hace tres años estaba la foto de Sojeong, ahora hay una foto de grupo con los amigos de esta escuela. Con la cabeza vuelta, igual que entonces.*"
     },
     "friend_9": {
         "name": "{name}",
@@ -746,7 +746,7 @@
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*Cuando Seoyeon me preguntó: «¿Qué haces el miércoles?», casi se me paró el corazón. El miércoles es el día de Yuna.*"
+        "text": "*Cuando Seoyeon me preguntó «¿Qué haces el miércoles?», respiré un segundo tarde. El miércoles es el día de Yuna.*"
     },
     "harem_6": {
         "name": "{name}",
@@ -859,7 +859,7 @@
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*Un aula vacía. La misma aula donde escribía el manuscrito. - Mi tutora está esperando.*"
+        "text": "*Un aula vacía. La misma aula donde escribía el manuscrito. — La profesora está esperando.*"
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
@@ -927,7 +927,7 @@
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*De zumo a café. — De estudiante a adulto. No cruzar la línea — la línea misma desapareció.*"
+        "text": "*De zumo a café. — De estudiante a adulto. No es cruzar la línea — es que la línea desapareció.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
@@ -1020,7 +1020,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*La maceta de romero ha sido movida al alféizar. Al lado donde da mejor el sol. - Ella la riega.*"
+        "text": "*La maceta de romero se movió al alféizar. Al lado donde da mejor el sol. — Ella la riega.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1032,7 +1032,7 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*'Felicidades por graduarte. Te espero en el café.' - Al despegar la tirita, hay un pequeño mapa por dentro. La enfermera escolar está sentada en el café. Tiene una expresión mucho más relajada que en la enfermería. Solo... como alguien que había venido a esperarme.*"
+        "text": "*'Felicidades por graduarte. Te espero en el café.' — Al despegar la tirita, hay un pequeño mapa por dentro. La enfermera está sentada en el café. Tiene una expresión mucho más relajada que en la enfermería. Solo... como alguien que me estaba esperando.*"
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
@@ -1124,7 +1124,7 @@
     },
     "hidden_true_nurse_8_e": {
         "name": "Enfermera",
-        "text": "Oye. Estaba pensando en dimitir en ese entonces."
+        "text": "Oye. En aquel entonces estaba pensando en dejarlo todo."
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
@@ -1168,7 +1168,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Ese corazón — esta vez definitivamente no es interés médico.*"
+        "text": "*Mi mano se detiene sosteniendo el bote. Me viene a la mente el cuaderno verde lima del cajón de la enfermería. Ojalá algún día ella pueda cerrar la última página de esa carta.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",

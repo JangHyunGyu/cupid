@@ -79,7 +79,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "Mas né, foi escolha sua. Da próxima me dá uma chance de verdade!"
+        "text": "Mas né, foi escolha sua. Da próxima vez me dá uma chance de verdade!"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -285,7 +285,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Caminhando lado a lado.* ...Demorou. Mas pelo menos dessa vez não fugiu. Essas palavras, hoje eu não vou deixar passar."
+        "text": "*Caminhando lado a lado.* ...Demorou. Mas pelo menos dessa vez não fugiu. O que você disse, hoje eu não vou deixar passar."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -371,7 +371,7 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*As palavras que tentei engolir e ignorar finalmente saem. Que não consigo escolher só uma. Sei que é covarde, e mesmo assim, hoje vou carregar esse custo também.*"
+        "text": "*As palavras que tentei ignorar e deixar passar terminam saindo. Que não consigo escolher só uma. Sei que é covarde, e mesmo assim, hoje vou arcar com esse peso também.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",

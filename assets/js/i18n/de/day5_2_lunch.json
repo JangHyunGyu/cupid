@@ -13,7 +13,7 @@
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Hab ich dich überhaupt geschimpft? — Du hast mir schon in dem Moment gefallen."
+        "text": "Hab ich doch gar nicht geschimpft. — Du hast mir schon da gefallen."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*Der Bibliotheksanbau. Der geheime Leseraum. Ein altes Sofa, Nachmittagslicht.*"
+        "text": "*Der Bibliotheksanbau. Der geheime Leseraum, den ich an Tag 2 zum ersten Mal betreten habe. Ein altes Sofa, Nachmittagslicht durch das Fenster.*"
     },
     "tour_yuna_2": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Wo wir am Tag 1 zum ersten Mal gewettet haben. Heute ist das Licht an.*"
+        "text": "*Die Turnhalle. Wo wir an Tag 1 zum ersten Mal gewettet und an Tag 4 den letzten Schmetterschlag gemacht haben. — Heute ist das Licht an.*"
     },
     "tour_dain_2": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Sie ärgert sich und lacht gleichzeitig. — Das ist Dain.*"
+        "text": "*Sie ärgert sich und lacht gleichzeitig. — Das ist Dain. Jemand, der selbst beim Verlieren Spaß hat. Dain legt den Volleyball langsam auf dem Spielfeld ab.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -165,7 +165,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Sie sagt es ohne Ausrufezeichen. Aber diesmal ist es kein Abschied — es ist ein Anfang.*"
+        "text": "*Ohne Ausrufezeichen. Aber diesmal ist es kein Abschied — es ist ein Anfang. Derselbe Satz ohne Ausrufezeichen wie an Tag 4, aber die Temperatur ist eine andere.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",

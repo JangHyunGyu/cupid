@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'Es hat Spaß gemacht.' — Das war wahrscheinlich das Größte, was Yuna sagen konnte.*"
+        "text": "*'War schön.' — Das war wahrscheinlich das Größte, was Yuna sagen konnte.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Fast wäre ich wieder weggelaufen. Wie an meiner alten Schule. Handy in der Tasche, kein Wort herausbekommen — dieser Moment wäre fast zurückgekehrt. — Nein. Nicht diesmal.*"
+        "text": "*Ich wäre fast wieder weggerannt. Wie an meiner alten Schule. Das Handy in der Tasche, unfähig ein Wort zu sagen — dieser Moment kam fast zurück. — Nein. Diesmal nicht. Meine Beine bewegen sich. Mein Mund öffnet sich zuerst. Keine vorbereiteten Worte — mein Körper bewegt sich einfach von selbst.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -371,7 +371,7 @@
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*Der Abendwind weht. Der Schatten hinter mir wird länger. — Ich bin allein.*"
+        "text": "*Der Abendwind weht. Der Schatten hinter mir wird länger. — Ich stehe da, mit leeren Händen.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",

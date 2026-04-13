@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'C'était bien.' — C'était probablement la plus grande chose que Yuna pouvait dire.*"
+        "text": "*'C'était bien.' — Pour Yuna, c'était sans doute le plus qu'elle pouvait dire.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*En portant la fissure que nous avions forcée a se refermer, nos pas se sont dirigés vers le parc.*"
+        "text": "*Portant la fissure qu'on avait voulu refermer de force, nos pas nous ont menés au parc.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*En quittant l'école.* Hé, vraiment ?! ...Vraiment ? Moi, j'ai attendu, c'est vrai. Mais si je me mets à sourire tout de suite juste parce que j'ai attendu, ce serait un peu injuste, non ? Alors cette fois, dis-le jusqu'au bout."
+        "text": "*En quittant l'école.* Hé, vraiment ?! ...Vraiment ? J'ai attendu, c'est vrai. Mais sourire tout de suite après avoir attendu, ça serait pas un peu rageant ? Alors cette fois, dis-le jusqu'au bout."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -379,6 +379,6 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*Les mots que j'avais essayé d'avaler et de faire passer sous silence finissent quand même par sortir. Que je n'arrive pas à n'en choisir qu'une. Je sais que c'est lâche, et malgré ça, ce soir j'assumerai aussi le prix que ça coûte.*"
+        "text": "*Les mots que j'avais voulu taire finissent par sortir. Que je n'arrive pas à n'en choisir qu'une. Je sais que c'est lâche, et malgré tout, ce soir j'accepte d'en payer le prix.*"
     }
 }

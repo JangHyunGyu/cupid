@@ -65,7 +65,7 @@
     },
     "hidden_homeroom_d5_5": {
         "name": "Profesora",
-        "text": "...Mostrar esto a otra persona primero es más estresante de lo que pensaba."
+        "text": "...Enseñarle esto a alguien por primera vez da más nervios de lo que pensaba."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
@@ -387,7 +387,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Cuando te gradúes, quedemos en una cafetería en vez de la enfermería — ♡' El corazón esta vez — no parece interés médico.*"
+        "text": "*'Cuando te gradúes, quedamos en una cafetería en vez de la enfermería — ♡' El corazón esta vez — no parece interés médico.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -463,7 +463,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...No lo sabía. Sabía lo del debut fallido, pero no que esa frase de rechazo fuera *exactamente lo que yo acabo de decir*.*"
+        "text": "*...No lo sabía. Sabía que le habían rechazado el debut, pero no que la frase de rechazo fuera exactamente lo que acabo de decir.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Profesora",
@@ -495,7 +495,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*No lo sabía. Fue una suposición. — Que alguien que ha tardado siete años se lo enseñe por primera vez a una estudiante *justo hoy* era extraño. Si estuviera terminado, lo habría enviado primero a editoriales. No está terminado — así que necesita *permiso* para acabarlo.*"
+        "text": "*No lo sabía. Fue una suposición. — Que alguien que ha tardado siete años se lo enseñe por primera vez a un estudiante justo hoy era extraño. Si estuviera terminado, lo habría enviado primero a editoriales. No está terminado — así que necesita permiso para acabarlo.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Profesora",
@@ -515,11 +515,11 @@
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Profesora",
-        "text": "...¿Una estudiante?"
+        "text": "...¿Un estudiante?"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "Es solo una línea. Los estudiantes también escribimos una línea."
+        "text": "Solo es una línea. Hasta un estudiante puede escribir una línea."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Profesora",

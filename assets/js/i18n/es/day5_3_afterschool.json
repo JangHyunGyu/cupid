@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon se da la vuelta y hace un gesto con la mano. — El mismo gesto del Día 1. No mira atrás. La espalda recta. Perfectamente. — Pero esta vez, no tiembla.*"
+        "text": "*Seoyeon se da la vuelta y agita la mano. — El mismo gesto del Día 1. No mira atrás. La espalda recta. Perfectamente. — Pero esta vez, no tiembla.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Casi huyo otra vez. Como en mi antigua escuela. El móvil en el bolsillo, sin poder decir nada — ese momento casi volvió. — No. Esta vez no.*"
+        "text": "*Casi huyo otra vez. Como en mi antigua escuela. El móvil en el bolsillo, sin poder decir nada — ese momento casi volvió. — No. Esta vez no. Las piernas se mueven. La boca se abre primero. No tengo nada preparado. — Mi cuerpo se mueve antes que yo.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se da vuelta. Sus pies están medio girados, listos para irse en cualquier momento.* ...Qué."
+        "text": "*Seoyeon se da la vuelta. Tiene los pies medio girados, lista para irse en cualquier momento.* ...Qué."
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna se detiene. Abraza el libro contra su pecho. Tarda unos dos segundos en darse vuelta.*"
+        "text": "*Yuna se detiene. Abraza el libro contra su pecho. Tarda unos dos segundos en darse la vuelta.*"
     },
     "after5_last_chance_yuna_3": {
         "name": "Yuna",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "Yuna",
-        "text": "*Yuna se da vuelta lentamente. Sus brazos aprietan el libro que sostiene.* ...Qué."
+        "text": "*Yuna se da la vuelta lentamente. Aprieta el libro contra su pecho.* ...Qué."
     },
     "after5_last_chance_choice": {
         "name": "{name}",
@@ -371,7 +371,7 @@
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*La brisa de la tarde sopla. La sombra a mis espaldas se alarga. — Estoy solo.*"
+        "text": "*El viento de la tarde sopla. La sombra a mi espalda se alarga. — Estoy aquí de pie, con las manos vacías.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",

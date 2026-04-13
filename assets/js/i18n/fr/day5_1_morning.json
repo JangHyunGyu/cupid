@@ -25,7 +25,7 @@
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Un personnage du roman pose une couverture sur l'épaule de quelqu'un endormi à la bibliothèque. — C'est une scène que je suis le seul à connaître.*"
+        "text": "*Un personnage du roman pose une couverture sur l'épaule de quelqu'un endormi à la bibliothèque. — Cette scène, il n'y a que moi qui la connais.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d5_7": {
         "name": "Professeure principale",
-        "text": "Après ton diplôme — on se voit. Plus comme prof et élève."
+        "text": "Après ton diplôme — on se voit. Par nos prénoms, cette fois."
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
@@ -279,7 +279,7 @@
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*« Pas en tant que professeure et élève. » — Elle parle de l'après-diplôme. Pas maintenant, mais un jour.*"
+        "text": "*'Par nos prénoms, cette fois.' — Elle parle de l'après-diplôme. Pas maintenant, mais un jour.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professeure principale",
@@ -347,7 +347,7 @@
     },
     "hidden_nurse_d5_3_g": {
         "name": "Infirmière",
-        "text": "Allez, file. Tu ne vas pas sécher la cérémonie."
+        "text": "Allez, file. Tu ne vas pas sécher l'événement."
     },
     "hidden_nurse_d5_3_h": {
         "name": "{name}",
@@ -387,7 +387,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*« Après ton diplôme, retrouvons-nous dans un café plutôt qu'à l'infirmerie — ♡ » Ce cœur, cette fois — ça ne ressemble pas à de l'intérêt médical.*"
+        "text": "*'Après ton diplôme, retrouvons-nous dans un café plutôt qu'à l'infirmerie — ♡' Ce cœur, cette fois — n'a rien de médical.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -463,7 +463,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...Je ne savais pas. Je savais pour les refus, mais pas que la formulation était *exactement la même que celle que je viens de dire*.*"
+        "text": "*...Je ne savais pas. Je savais pour les refus, mais pas que la formulation était exactement la même que celle que je viens de dire.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Professeure principale",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*J'ai fermé la porte de la classe. L'enveloppe est restée sur son bureau. — Ce qu'elle n'avait jamais reçu en sept ans, ce n'était pas *un éloge sincère*, mais *quelqu'un qui le lirait sérieusement*. L'éloge était aussi dans les lettres de refus. J'ai dit exactement la même chose qu'une lettre de refus. Avec de bonnes intentions.*"
+        "text": "*J'ai fermé la porte de la classe. L'enveloppe est restée sur son bureau. — Ce qu'elle n'avait jamais reçu en sept ans, ce n'était pas un éloge sincère, mais quelqu'un qui le lirait sérieusement. L'éloge, il y en avait déjà dans les e-mails de refus. J'ai dit exactement la même chose qu'un e-mail de refus. Avec de bonnes intentions.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Je ne savais pas. C'était une supposition. — Que quelqu'un qui a mis sept ans le montre pour la première fois à un élève *aujourd'hui*, ça sonnait faux. Si c'était fini, elle l'aurait envoyé d'abord aux éditeurs. Ce n'est pas fini — donc elle a besoin de *permission* pour le terminer.*"
+        "text": "*Je ne le savais pas. C'était une intuition. — Que quelqu'un qui a mis sept ans montre ça pour la première fois à un élève aujourd'hui, c'était étrange. Si c'était fini, elle l'aurait envoyé aux éditeurs d'abord. Ce n'est pas fini — elle avait besoin d'une permission pour terminer.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professeure principale",

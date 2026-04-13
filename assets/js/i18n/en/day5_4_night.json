@@ -29,11 +29,11 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*For the first time, I see Seoyeon this completely undone. - She's crying.*"
+        "text": "*Seoyeon's rooftop. Standing among the plants she grew herself.*"
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*For the first time, she takes off her glasses — and she's crying.*"
+        "text": "*She's crying again. Not in the bathroom — this time, right in front of me.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -125,11 +125,11 @@
     },
     "true_seo_7_b": {
         "name": "{name}",
-        "text": "*We linked pinkies. Day 1's habit, Day 4's promise, and now. — Same finger, third meaning.*"
+        "text": "*Seoyeon hesitates, then holds out her pinky.*"
     },
     "true_seo_7b": {
         "name": "{name}",
-        "text": "*Seoyeon holds out her pinky finger.*"
+        "text": "*I reach out too. Just before our fingers touch, Seoyeon smiles first.*"
     },
     "true_seo_8": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*I saw the same smile every day. It wasn't five days — every real expression Dain showed me was everything.*"
+        "text": "*Dain's knee buckles as she lands from her jump. I know it hurts. But — she's smiling.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "System",
@@ -422,7 +422,7 @@
     },
     "alone_2_b": {
         "name": "{name}",
-        "text": "*Cherry blossoms fall outside the window. The same ones that brushed my nose five days ago are now scattering in the wind.*"
+        "text": "*The room is eerily quiet. The voices that were still ringing in my ears fade with the click of the door. Cherry blossoms fall outside the window. The same ones that brushed my nose five days ago are now scattering in the wind.*"
     },
     "alone_4": {
         "name": "{name}",
@@ -498,15 +498,15 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*I wavered, so I found out. What my real feelings are.*"
+        "text": "*A text from Seoyeon. 'I copied the rooftop key for you. — It's authorized, authorized.' She could just call it an invitation.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
-        "text": "*Felt like I took a detour, but this is where I was headed all along.*"
+        "text": "*Even at the very end, she acts nonchalant — and gives her heart by handing over a key.*"
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*It's okay to be clumsy. It's our first time, after all.*"
+        "text": "*I slip the key into my pocket. Tomorrow on the rooftop — this time it's my turn to pack the lunch.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -542,15 +542,15 @@
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*I wavered, so I found out. What my real feelings are.*"
+        "text": "*A folded note falls out of my bag. No idea when she slipped it in. 'If you finished volume 1, I'll lend you volume 2. — Yuna'*"
     },
     "good_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*Felt like I took a detour, but this is where I was headed all along.*"
+        "text": "*Instead of words, Yuna prepares what comes next. Volume 2 after volume 1. Tomorrow after today. This is her version of 'let's keep meeting.'*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
-        "text": "*It's okay to be clumsy. It's our first time, after all.*"
+        "text": "*On the back of the note, in small writing: '...Let's read the ending together.' The pale violet ink is smeared.*"
     },
     "good_5_cg_yuna": {
         "name": "System",
@@ -578,15 +578,15 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*I wavered, so I found out. What my real feelings are.*"
+        "text": "*A message from Dain. 'Anyone wanna work out tomorrow morning?' There's a question mark at the end. Normally it'd be an exclamation mark.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*Felt like I took a detour, but this is where I was headed all along.*"
+        "text": "*For the first time, she cared about being turned down. When Dain uses a question mark — that's courage.*"
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*It's okay to be clumsy. It's our first time, after all.*"
+        "text": "*I texted back. 'Deal.' No exclamation mark. I'll show up in person tomorrow instead.*"
     },
     "good_5_cg_dain": {
         "name": "System",
@@ -674,7 +674,7 @@
     },
     "friend_8": {
         "name": "{name}",
-        "text": "*Graduation day. Scrolling through my phone gallery. Where Sojeong’s photo used to be, there’s now a group photo of all of us — with her in it.*"
+        "text": "*Graduation day. Scrolling through my phone gallery. Where Sojeong's photo used to be three years ago, there's now a group photo with friends from this school. I'm turning my head away — just like I did back then.*"
     },
     "friend_9": {
         "name": "{name}",
@@ -718,7 +718,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Back then with Sojeong, I regretted not choosing. This time I chose everyone and lost everyone. — In the end it's the same. I couldn't pick one person.*"
+        "text": "*With Sojeong, I stayed silent and lost one person. This time I spoke to everyone and lost everyone. — Same result in the end. I couldn't say it right.*"
     },
     "day5_ending_harem": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. Lies pile up in between so no one finds out. I thought it would feel sweet, but it starts choking me fast.*"
+        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. My phone calendar is a minefield. Call Wednesday's name on Monday and it's all over.*"
     },
     "harem_5": {
         "name": "{name}",
@@ -754,7 +754,7 @@
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*I can pretend to be happy. But even I can't believe this future will end well.*"
+        "text": "*Three alarms, three personas, three lies. — To call this happiness, the stomach cramps come way too often.*"
     },
     "harem_8": {
         "name": "System",
@@ -863,7 +863,7 @@
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
-        "text": "*She's leaning by the window at the back of the classroom. A face with no class and no work left in it.*"
+        "text": "*She's leaning by the window at the back of the classroom. No lessons, no duties — just her face.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Homeroom Teacher",
@@ -911,7 +911,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Homeroom Teacher",
-        "text": "*Looking out the window* I finished the manuscript. After you read it first, I was able to keep pushing forward. I asked for one line and you wrote three pages. After seeing that, I had no more excuses to postpone it."
+        "text": "*Looking out the window* ...So. Since I finished it, I'm thinking about sending it to a publisher. — What do you think?"
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
@@ -1016,7 +1016,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*She went back to the university hospital. This time, the patients call her by name. — Dr. Lee.*"
+        "text": "*She went back to the university hospital. This time, the patients call her by name. — Nurse Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -1024,7 +1024,7 @@
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*The bandages are still in the drawer. Even though there's no need. — A person who no longer needs excuses still can't let go of the habit.*"
+        "text": "*The light-green notebook has been tucked deep in the drawer. What's written on the last page isn't a letter — just one line: 'Yujin, I'm okay now.' — A period, three years in the making.*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -1084,7 +1084,7 @@
     },
     "hidden_true_nurse_6": {
         "name": "School Nurse",
-        "text": "So once the graduation ceremony is over — come see me again. Not at the nurse's office. Here. Next time, meet me not as the school nurse, but as me."
+        "text": "So after the ceremony — come see me again. Not at the nurse's office. Here. And next time, I'll be just Juwon, not the school nurse."
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
@@ -1112,7 +1112,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "School Nurse",
-        "text": "*Turning her coffee cup* The diploma takes effect faster than I thought."
+        "text": "*Turning her coffee cup* ...Didn't think I'd miss the smell of the nurse's office after graduation."
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -1124,7 +1124,7 @@
     },
     "hidden_true_nurse_8_e": {
         "name": "School Nurse",
-        "text": "You know, on Day 1, when you came to the nurse's office."
+        "text": "You know... back then, I was thinking about quitting."
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
@@ -1132,7 +1132,7 @@
     },
     "hidden_true_nurse_8_g": {
         "name": "School Nurse",
-        "text": "I put my hand on your forehead and said 'I just wanted to touch you.' *Smiling softly* That was a joke."
+        "text": "But when you came — I had a reason to stay here. *Smiling softly* Thank you."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
@@ -1168,7 +1168,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*That heart — this time it's definitely not medical concern.*"
+        "text": "*My hand holding the bottle stops. I think of the light-green notebook in the nurse's office drawer. Someday, I hope she can close the final page of that letter.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",
