@@ -43,6 +43,28 @@
         max-height: 25vh;
     }
 
+    /* 프리토킹 입력 래퍼: 2줄 배치 */
+    #chat-input-wrapper {
+        flex-wrap: wrap;
+    }
+
+    /* 입력창이 1줄째를 📸과 함께 꽉 채움 */
+    #chat-input-wrapper #chat-input {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    /* ✱, 전송, 닫기 버튼을 2줄째 오른쪽 정렬 */
+    #chat-input-wrapper #action-toggle-btn,
+    #chat-input-wrapper #chat-send,
+    #chat-input-wrapper #chat-skip-btn {
+        order: 10;
+    }
+
+    #chat-input-wrapper #action-toggle-btn {
+        margin-left: auto;
+    }
+
     /* 캐릭터 이미지가 좌우로 꽉 차도록 */
     .char-slot img {
         width: 100vw !important;
