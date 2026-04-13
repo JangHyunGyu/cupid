@@ -13,7 +13,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "Das Omelett ist etwas zu salzig. 6 Punkte."
+        "text": "Das Eierrolle ist etwas zu salzig. 6 Punkte."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -99,7 +99,7 @@
     },
     "lunch3_expose_1": {
         "name": "{name}",
-        "text": "*In dem Moment, als ich Teilen wir es alle zusammen sagte — sprach Dain zuerst.*"
+        "text": "*In dem Moment — sprach Dain zuerst.*"
     },
     "lunch3_expose_2": {
         "name": "Dain",
@@ -262,7 +262,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Dain gewinnt die Mittagswette und breitet aufgeregt die Arme aus. Sie umarmt mich. Eine Sekunde.*"
+        "text": "*Dain gewinnt die Mittagswette und breitet aufgeregt die Arme aus. Sie umarmt mich. Eine Sekunde. Dain springt zurück und tritt einen Schritt weg. Greift grundlos nach der Wasserflasche.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -303,7 +303,7 @@
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Beißt ohne zu zögern ins Eieromelette.*"
+        "text": "*Beißt ohne zu zögern ins Eierrolle.*"
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
@@ -327,7 +327,7 @@
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
-        "text": "*Die Letzte legt ihres still ab.*"
+        "text": "*Die Letzte legt ihres still ab. Yuna legt ihr Brot hin.*"
     },
     "lunch3_expose_honest_4_b": {
         "name": "{name}",

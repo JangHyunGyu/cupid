@@ -234,7 +234,7 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Klassenlehrerin",
-        "text": "Hab das Lehrerexamen gemacht. Koreanischlehrerin. — Eine Möchtegern-Romanautorin, die Literatur unterrichtet. Ironisch, oder?"
+        "text": "Dann habe ich die Lehramtsprüfung gemacht. Koreanischlehrerin. — Jemand, die mal Romane geschrieben hat, unterrichtet jetzt Literatur. Ziemlich ironisch, oder?"
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Klassenlehrerin",
@@ -258,11 +258,11 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Klassenlehrerin",
-        "text": "*Plötzlich ernst.* ...Erzähl das niemandem. Eine Lehrerin, die das mit einem Schüler teilt — das ist ein Geheimnis."
+        "text": "*Den Blick abwendend.* ...Aber das ist wirklich ein Geheimnis. Die anderen Lehrer wissen es nicht mal."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*Sie lächelt. Nicht ihr übliches trockenes — etwas unbeholfen. — ...Erster Leser-Bewerber seit sieben Jahren.*"
+        "text": "*Sie lächelt. Nicht ihr übliches trockenes Lächeln — etwas Unbeholfenes. Wie jemand, der vergessen hat, wie man lächelt.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",
@@ -312,7 +312,7 @@
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Zieht einen Stuhl heran und setzt sich.* Beziehungen. — Ist das eine Liebesberatung? *Heh.* Wer so tut als wäre nichts, fällt am meisten auf."
+        "text": "*Neigt leicht den Kopf.* ...Okay. Ob kompliziert oder nicht, ruh dich hier erstmal aus."
     },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
@@ -466,11 +466,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*Die Hand des Klassenlehrers ruht auf dem Manuskriptpapier. Zwischen den umgedrehten Blättern sind dicht beschriebene Zeilen zu erkennen.*"
+        "text": "*Die Hand der Klassenlehrerin ruht auf dem Manuskriptpapier. Zwischen den umgedrehten Blättern sind dicht beschriebene Zeilen zu erkennen.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
-        "text": "*Der Ausdruck des Klassenlehrers kehrt schnell zurück. Sein gewohnt gleichgültiges Gesicht. — Der Wechsel ist zu abrupt.*"
+        "text": "*Der Ausdruck der Klassenlehrerin kehrt schnell zurück. Ihr gewohnt gleichgültiges Gesicht. — Der Wechsel ist zu abrupt.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Klassenlehrerin",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
-        "text": "Nur... Beziehungen sind kompliziert geworden."
+        "text": "...Sachen, die man niemandem so richtig erzählen kann."
     },
     "hidden_nurse_d3_5_f": {
         "name": "Schulkrankenschwester",

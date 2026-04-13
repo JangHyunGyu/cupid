@@ -41,7 +41,7 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Camouflé derrière un « haha » — mais la sincérité transparaît.*"
+        "text": "*Le « mdr » est un camouflage — la sincérité transparaît.*"
     },
     "night3_dream_1": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Parce qu'écrire la fin, c'est finir. — Yuna a peur que cette histoire se termine.*"
+        "text": "*Si on n'écrit pas la fin, l'histoire ne se termine jamais. — Je ressens la même chose.*"
     },
     "night3_cheat_msg_3_b": {
         "name": "{name}",

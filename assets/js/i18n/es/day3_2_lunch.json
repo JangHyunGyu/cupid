@@ -99,7 +99,7 @@
     },
     "lunch3_expose_1": {
         "name": "{name}",
-        "text": "*En el momento en que dije compartamos entre todos — Dain habló primero.*"
+        "text": "*En ese momento — Dain habló primero.*"
     },
     "lunch3_expose_2": {
         "name": "Dain",
@@ -262,7 +262,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Dain gana la apuesta del almuerzo y abre los brazos emocionada. Me abraza. Un segundo.*"
+        "text": "*Dain gana la apuesta del almuerzo y abre los brazos emocionada. Me abraza. Un segundo. Dain se aparta de un salto y retrocede un paso. Agarra la botella de agua sin motivo.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",

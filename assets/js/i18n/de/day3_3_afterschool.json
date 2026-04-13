@@ -435,7 +435,7 @@
     },
     "after3_confront_5_c": {
         "name": "{name}",
-        "text": "*Sie hat es angenommen. — Das ist das erste Mal, dass Dain jemandes Hilfe nicht abgelehnt hat. Ein Lächeln ohne Ausrufezeichen fühlt sich seltsam schwer an.*"
+        "text": "*Dain senkt den Kopf. Die Ausrufezeichen sind aus ihrer Stimme verschwunden. — Ich verletze sie.*"
     },
     "haeun_warn_5c_b": {
         "name": "Seoyeon",
@@ -491,7 +491,7 @@
     },
     "haeun_warn_7_d": {
         "name": "{name}",
-        "text": "*Haeun dreht sich um und geht.*"
+        "text": "*Haeun dreht sich um und geht. Seoyeons Familiensituation ist kompliziert. Die Eltern. — Liegt dort der Grund, warum Seoyeon „perfekt sein musste“?*"
     },
     "after3_reject_for_seo_3b": {
         "name": "{name}",
@@ -591,7 +591,7 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "Seoyeon",
-        "text": "Nenn mich **Schulsprecherin**."
+        "text": "Nenn mich **Schülersprecherin**."
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",

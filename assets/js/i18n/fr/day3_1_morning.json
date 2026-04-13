@@ -258,11 +258,11 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Professeure principale",
-        "text": "*Soudain sérieuse.* ...N'en parle à personne. Un prof qui partage ça avec un élève — c'est un secret."
+        "text": "*Détournant le regard.* ...Mais c'est vraiment un secret. Même les autres profs ne sont pas au courant."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*Elle sourit. Pas son sourire sec habituel — un peu maladroit. — ...Premier candidat lecteur en sept ans.*"
+        "text": "*Elle sourit. Pas son sourire sec habituel — quelque chose de légèrement maladroit. Comme quelqu'un qui a oublié comment sourire.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Professeure principale",
@@ -466,11 +466,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*La main du professeur principal est posée sur la feuille de manuscrit. Entre les pages retournées, on aperçoit une écriture dense.*"
+        "text": "*La main du professeure principale est posée sur la feuille de manuscrit. Entre les pages retournées, on aperçoit une écriture dense.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
-        "text": "*L'expression du professeur principal redevient vite normale. Son visage indifférent habituel. — Le changement est trop rapide.*"
+        "text": "*L'expression du professeure principale redevient vite normale. Son visage indifférent habituel. — Le changement est trop rapide.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Professeure principale",
@@ -478,7 +478,7 @@
     },
     "hidden_homeroom_d3_4_e": {
         "name": "{name}",
-        "text": "*La feuille de manuscrit. L'écriture dense. L'expression qu'il tente de cacher. — Dois-je demander, ou faire semblant de ne rien voir ?*"
+        "text": "*La feuille de manuscrit. L'écriture dense. L'expression qu'elle tente de cacher. — Dois-je demander, ou faire semblant de ne rien voir ?*"
     },
     "hidden_homeroom_d3_4_f": {
         "name": "{name}",
@@ -530,7 +530,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Professeure principale",
-        "text": "Après la fac, j'ai préparé les sélections — j'ai échoué trois fois en deux ans."
+        "text": "Après la fac, j'ai préparé mes candidatures pour être publiée — refusée pendant deux ans. Trois fois. L'argent s'est épuisé, et mes parents me disaient « Il faut être réaliste maintenant »."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Professeure principale",
-        "text": "*Elle hésite. La main qui touchait le manuscrit s'arrête.* ...Tu es le premier à appeler ça de la persévérance."
+        "text": "*Avec un petit sourire.* ...Je suis contente que tu sois là. Sincèrement."
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
@@ -650,7 +650,7 @@
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
-        "text": "C'est juste... les relations qui se sont compliquées."
+        "text": "...Des trucs dont c'est compliqué de parler à qui que ce soit."
     },
     "hidden_nurse_d3_5_f": {
         "name": "Infirmière",
@@ -678,7 +678,7 @@
     },
     "hidden_nurse_d3_5_l": {
         "name": "{name}",
-        "text": "*En plein dans le mille. — Son sens de l'observation n'est pas une blague.*"
+        "text": "*En plein dans le mille.*"
     },
     "hidden_nurse_d3_5_m": {
         "name": "Infirmière",
