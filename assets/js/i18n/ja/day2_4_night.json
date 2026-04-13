@@ -9,7 +9,7 @@
     },
     "night2_msg_dain_specific": {
         "name": "ダイン",
-        "text": "ねえ！！今日のトッポッキ最高だった！！"
+        "text": "ねえ！！今日のトッポギ最高だった！！"
     },
     "night2_msg_dain_specific_2": {
         "name": "ダイン",
@@ -78,7 +78,7 @@
     },
     "night2_reply_dain_1": {
         "name": "{name}",
-        "text": "トッポッキ辛かったw"
+        "text": "トッポギ辛かったw"
     },
     "night2_reply_dain_2": {
         "name": "ダイン",
@@ -90,7 +90,7 @@
     },
     "night2_reply_dain_4": {
         "name": "ダイン",
-        "text": "あ、でも甘口はトッポッキじゃないかw"
+        "text": "あ、でも甘口はトッポギじゃないかw"
     },
     "night2_reply_dain_5": {
         "name": "{name}",

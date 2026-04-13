@@ -435,7 +435,7 @@
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "担任先生",
-        "text": "...読みもしないで?"
+        "text": "...読みもしないで？"
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
@@ -515,7 +515,7 @@
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "担任先生",
-        "text": "...学生が?"
+        "text": "...学生が？"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
