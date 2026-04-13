@@ -77,7 +77,7 @@
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "Took you long enough to say it."
+        "text": "It took me forever to bring this up."
     },
     "confess_seo_yes_11_b": {
         "name": "{name}",
@@ -265,7 +265,7 @@
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*It's not rock-paper-scissors, it's not a game. But this is everything to me.*"
+        "text": "*It's not a rock-paper-scissors confession or anything. But this is everything to me.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'A lot.' — Dain is always like this. Short and honest. That's why it's convincing.*"
+        "text": "*'So much.' — Dain is always like this. Short and honest. That's why it's convincing.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

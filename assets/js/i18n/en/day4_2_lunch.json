@@ -1,358 +1,358 @@
 {
-  "date_seo_1": {
-    "name": "{name}",
-    "text": "*In front of the fountain, Seoyeon is standing there. She got here first.*"
-  },
-  "date_seo_compliment_choice": {
-    "name": "{name}",
-    "text": "*What do I say?*",
-    "choices": [
-      "You look beautiful today.",
-      "You went all out today, huh."
-    ]
-  },
-  "date_seo_pretty_high": {
-    "name": "{name}",
-    "text": "*Seoyeon pauses for a moment. -- Then she smiles. Not with her lips, but with her eyes.*"
-  },
-  "date_seo_pretty_high_2": {
-    "name": "Seoyeon",
-    "text": "*She turns her gaze away, tucking a strand of hair behind her ear.* ...Let's get some fresh air."
-  },
-  "date_seo_pretty_high_3": {
-    "name": "{name}",
-    "text": "It just slipped out."
-  },
-  "date_seo_pretty_high_4": {
-    "name": "{name}",
-    "text": "*She said 'Don't get the wrong idea,' but her hand, pushing back her hair, is unnecessarily busy.*"
-  },
-  "date_seo_pretty_low": {
-    "name": "Seoyeon",
-    "text": "...Where'd that come from. Warn me before you say things like that."
-  },
-  "date_seo_bright": {
-    "name": "Seoyeon",
-    "text": "Of course. I put in a little effort today."
-  },
-  "date_seo_walk": {
-    "name": "{name}",
-    "text": "*We walk through the park. We toss bread to the ducks.*"
-  },
-  "date_seo_duck": {
-    "name": "Seoyeon",
-    "text": "They're simple, these guys. Bread, they follow. No bread, they don't."
-  },
-  "date_seo_duck_2": {
-    "name": "{name}",
-    "text": "People aren't that different, are they?"
-  },
-  "date_seo_duck_3": {
-    "name": "Seoyeon",
-    "text": "People sometimes don't come, even when you give them bread."
-  },
-  "date_seo_duck_4": {
-    "name": "{name}",
-    "text": "*It sounds offhand -- but Seoyeon's own experience bleeds through it.*"
-  },
-  "date_seo_flower_2": {
-    "name": "{name}",
-    "text": "*Seoyeon pushes the flower shop door. A bell chimes.*"
-  },
-  "date_seo_succulent_2": {
-    "name": "Seoyeon",
-    "text": "This one's easy. Survives even if you forget to water it."
-  },
-  "date_seo_succulent_3": {
-    "name": "Seoyeon",
-    "text": "If you can keep it alive. — If not, I'm taking it back."
-  },
-  "date_seo_end": {
-    "name": "{name}",
-    "text": "*What Seoyeon handed me. — My hands tremble as I take it.*"
-  },
-  "date_yuna_1": {
-    "name": "{name}",
-    "text": "*In front of the cafe. Yuna is leaning against the wall. A black dress and a small crossbody bag.*"
-  },
-  "date_yuna_compliment_choice": {
-    "name": "{name}",
-    "text": "*What do I say?*",
-    "choices": [
-      "First time I'm seeing you out of uniform.",
-      "Your eyes look different today."
-    ]
-  },
-  "date_yuna_pretty_high": {
-    "name": "{name}",
-    "text": "*Yuna pauses for a moment. She lowers her head slightly.*"
-  },
-  "date_yuna_pretty_high_2": {
-    "name": "Yuna",
-    "text": "...That."
-  },
-  "date_yuna_pretty_high_3": {
-    "name": "{name}",
-    "text": "Hm?"
-  },
-  "date_yuna_pretty_high_4": {
-    "name": "Yuna",
-    "text": "Say that again."
-  },
-  "date_yuna_pretty_high_5": {
-    "name": "{name}",
-    "text": "*Again? -- Yuna is asking for a once more.*"
-  },
-  "date_yuna_pretty_low": {
-    "name": "Yuna",
-    "text": "...No one's ever said that to me before."
-  },
-  "date_yuna_bright": {
-    "name": "Yuna",
-    "text": "...What's different about them."
-  },
-  "date_yuna_bookstore": {
-    "name": "{name}",
-    "text": "*We head to a bookstore. Yuna walks slowly between the shelves.*"
-  },
-  "date_yuna_bookstore_2": {
-    "name": "Yuna",
-    "text": "Have you been here before?"
-  },
-  "date_yuna_bookstore_3": {
-    "name": "Yuna",
-    "text": "...Good. So I get to be the one who showed you first."
-  },
-  "date_yuna_earphone": {
-    "name": "{name}",
-    "text": "*Yuna hands me one of her earbuds.*"
-  },
-  "date_yuna_earphone_2": {
-    "name": "Yuna",
-    "text": "...Listen."
-  },
-  "date_yuna_earphone_3": {
-    "name": "{name}",
-    "text": "*The distance between us is the length of the earphone cord. Thirty centimeters. — Any closer and we touch, any farther and it falls out.*"
-  },
-  "date_yuna_oldbook": {
-    "name": "{name}",
-    "text": "*We pass a secondhand bookshop. Yuna stops walking.*"
-  },
-  "date_yuna_oldbook_2": {
-    "name": "Yuna",
-    "text": "I read this a year ago. Back then, the ending felt sad."
-  },
-  "date_yuna_oldbook_3": {
-    "name": "{name}",
-    "text": "And now?"
-  },
-  "date_yuna_oldbook_4": {
-    "name": "Yuna",
-    "text": "...Now it reads different."
-  },
-  "date_yuna_end": {
-    "name": "{name}",
-    "text": "*Yuna looks at me as she says it. -- In her eyes, because of you is written plainly.*"
-  },
-  "date_dain_1": {
-    "name": "{name}",
-    "text": "*In front of the gym. Dain comes running over. Cap and sportswear.*"
-  },
-  "date_dain_2": {
-    "name": "Dain",
-    "text": "You made it!! Cutting it close, weren't you?!"
-  },
-  "date_dain_3": {
-    "name": "{name}",
-    "text": "I got here ten minutes early."
-  },
-  "date_dain_4": {
-    "name": "Dain",
-    "text": "I was here twenty minutes ago!!"
-  },
-  "date_dain_compliment_choice": {
-    "name": "{name}",
-    "text": "*This is becoming a pattern now.*",
-    "choices": [
-      "That cap looks good on you.",
-      "Sportswear shouldn't look this good."
-    ]
-  },
-  "date_dain_pretty_high": {
-    "name": "{name}",
-    "text": "*Dain freezes. Her eyes go wide. -- Then she pulls her cap down over her face.*"
-  },
-  "date_dain_pretty_high_2": {
-    "name": "Dain",
-    "text": "WHAT — you can't just SAY stuff like that!!"
-  },
-  "date_dain_pretty_high_3": {
-    "name": "{name}",
-    "text": "It's true."
-  },
-  "date_dain_pretty_high_4": {
-    "name": "{name}",
-    "text": "*She said 'if you say things like that,' but her voice was trembling.*"
-  },
-  "date_dain_pretty_low": {
-    "name": "Dain",
-    "text": "WHAT — !! ...Haha, thanks, but stop, it's embarrassing."
-  },
-  "date_dain_bright": {
-    "name": "Dain",
-    "text": "OBVIOUSLY!! I'm in peak form today!!"
-  },
-  "date_dain_arcade": {
-    "name": "{name}",
-    "text": "*We stand in front of a rhythm game machine. The screen flickers.*"
-  },
-  "date_dain_arcade_2": {
-    "name": "Dain",
-    "text": "Okay, bet time!! Loser buys drinks!!"
-  },
-  "date_dain_arcade_3": {
-    "name": "Dain",
-    "text": "It's no fun without stakes!!"
-  },
-  "date_dain_rhythm": {
-    "name": "Dain",
-    "text": "*Pointing at the screen* This score — it's the second highest ever!!"
-  },
-  "date_dain_rhythm_2": {
-    "name": "{name}",
-    "text": "...That was amazing."
-  },
-  "date_dain_rhythm_3": {
-    "name": "Dain",
-    "text": "LOL OBVIOUSLY!! This one doesn't need knees!!"
-  },
-  "date_dain_knee": {
-    "name": "{name}",
-    "text": "*Doesn't need knees. -- She said it lightly, but there's weight behind it.*"
-  },
-  "date_dain_knee_2": {
-    "name": "{name}",
-    "text": "*We stepped out of the arcade onto the street.*"
-  },
-  "date_dain_shop": {
-    "name": "Dain",
-    "text": "......"
-  },
-  "date_dain_shop_2": {
-    "name": "{name}",
-    "text": "Dain?"
-  },
-  "date_dain_shop_3": {
-    "name": "Dain",
-    "text": "*Pulling her cap lower* ...Don't stare."
-  },
-  "date_dain_end": {
-    "name": "{name}",
-    "text": "*She's smiling. -- But her eyes aren't.*"
-  },
-  "pre_confess_minsu": {
-    "name": "Minsu",
-    "text": "yo you on your date right? one thing"
-  },
-  "pre_confess_minsu_2": {
-    "name": "Minsu",
-    "text": "do it right this time. don't run"
-  },
-  "pre_confess_callback": {
-    "name": "{name}",
-    "text": "*The phone in my pocket feels heavy. No notifications. — Like that first day, when I saw a name flash on the screen and shoved it back in. I can't run like that again. Not this time.*"
-  },
-  "date_seo_end_b": {
-    "name": "{name}",
-    "text": "*We left the park and walked down the street.*"
-  },
-  "date_dain_to_arcade": {
-    "name": "{name}",
-    "text": "*We headed to the arcade.*"
-  },
-  "date_seo_pretty_high_b": {
-    "name": "Seoyeon",
-    "text": "...Did you rehearse that line?"
-  },
-  "date_seo_pretty_high_3_b": {
-    "name": "Seoyeon",
-    "text": "*Tucking her hair back* ...Don't get the wrong idea."
-  },
-  "date_seo_flower_b": {
-    "name": "Seoyeon",
-    "text": "*Stopping in her tracks* ...Want to go in?"
-  },
-  "date_seo_succulent_2_b": {
-    "name": "{name}",
-    "text": "You're giving this to me?"
-  },
-  "date_yuna_pretty_high_5_b": {
-    "name": "{name}",
-    "text": "You're beautiful."
-  },
-  "date_yuna_pretty_high_5_c": {
-    "name": "Yuna",
-    "text": "*Ears turning red* ...Enough."
-  },
-  "date_yuna_bookstore_2_b": {
-    "name": "{name}",
-    "text": "First time."
-  },
-  "date_yuna_earphone_2_b": {
-    "name": "{name}",
-    "text": "*A quiet piano piece flows in. The noise of the bookstore fades away.*"
-  },
-  "date_yuna_oldbook_b": {
-    "name": "Yuna",
-    "text": "...Here."
-  },
-  "date_yuna_oldbook_c": {
-    "name": "{name}",
-    "text": "*She pulls out an old book. Flipping through the pages.*"
-  },
-  "date_dain_shop_3_b": {
-    "name": "Dain",
-    "text": "*From under her cap* ...Say that one more time and I'll seriously hit you."
-  },
-  "date_dain_arcade_2_b": {
-    "name": "{name}",
-    "text": "Another bet?"
-  },
-  "date_dain_arcade_3_b": {
-    "name": "{name}",
-    "text": "*Rhythm game. Dain is overwhelmingly good.*"
-  },
-  "date_dain_arcade_3_c": {
-    "name": "Dain",
-    "text": "Full combo!! Did you see that?!"
-  },
-  "date_dain_shop_2_b": {
-    "name": "Dain",
-    "text": "*Turning away* It's nothing! Let's go!"
-  },
-  "date_seo_end_c": {
-    "name": "Seoyeon",
-    "text": "*She stops walking.* ...Today."
-  },
-  "date_seo_end_d": {
-    "name": "Seoyeon",
-    "text": "It was nice. — Just know that."
-  },
-  "date_yuna_end_b": {
-    "name": "Yuna",
-    "text": "*Just before parting, she hands over a note. Without a word.*"
-  },
-  "date_yuna_end_c": {
-    "name": "{name}",
-    "text": "*'I had a lot of sentences today. Only in front of you.' — Yuna's handwriting is trembling.*"
-  },
-  "date_dain_end_b": {
-    "name": "Dain",
-    "text": "Hey."
-  },
-  "date_dain_end_c": {
-    "name": "Dain",
-    "text": "Today was really fun. ...Without the exclamation mark."
-  }
+    "date_seo_1": {
+        "name": "{name}",
+        "text": "*In front of the fountain. Seoyeon is standing there. She got here first. She looks like a different person. No — same person, but a different side.*"
+    },
+    "date_seo_compliment_choice": {
+        "name": "{name}",
+        "text": "*What do I say?*",
+        "choices": [
+            "You look beautiful today.",
+            "You went all out today, huh."
+        ]
+    },
+    "date_seo_pretty_high": {
+        "name": "{name}",
+        "text": "*Seoyeon pauses for a moment. -- Then she smiles. Not with her lips, but with her eyes.*"
+    },
+    "date_seo_pretty_high_2": {
+        "name": "Seoyeon",
+        "text": "*She turns her gaze away, tucking a strand of hair behind her ear.* ...Let's get some fresh air."
+    },
+    "date_seo_pretty_high_3": {
+        "name": "{name}",
+        "text": "It just slipped out."
+    },
+    "date_seo_pretty_high_4": {
+        "name": "{name}",
+        "text": "*She said 'Don't get the wrong idea,' but her hand, pushing back her hair, is unnecessarily busy.*"
+    },
+    "date_seo_pretty_low": {
+        "name": "Seoyeon",
+        "text": "...Where'd that come from. Warn me before you say things like that."
+    },
+    "date_seo_bright": {
+        "name": "Seoyeon",
+        "text": "Of course. I put in a little effort today."
+    },
+    "date_seo_walk": {
+        "name": "{name}",
+        "text": "*We walk through the park. We toss bread to the ducks.*"
+    },
+    "date_seo_duck": {
+        "name": "Seoyeon",
+        "text": "They're simple, these guys. Bread, they follow. No bread, they don't."
+    },
+    "date_seo_duck_2": {
+        "name": "{name}",
+        "text": "People aren't that different, are they?"
+    },
+    "date_seo_duck_3": {
+        "name": "Seoyeon",
+        "text": "People sometimes don't come, even when you give them bread."
+    },
+    "date_seo_duck_4": {
+        "name": "{name}",
+        "text": "*It sounds offhand, but — Seoyeon's own experience bleeds through it. We pass by a flower shop.*"
+    },
+    "date_seo_flower_2": {
+        "name": "{name}",
+        "text": "*Seoyeon pushes the flower shop door open. A bell chimes. Seoyeon picks out a small pot. A succulent.*"
+    },
+    "date_seo_succulent_2": {
+        "name": "Seoyeon",
+        "text": "This one's easy. Survives even if you forget to water it."
+    },
+    "date_seo_succulent_3": {
+        "name": "Seoyeon",
+        "text": "If you can keep it alive. — If not, I'm taking it back."
+    },
+    "date_seo_end": {
+        "name": "{name}",
+        "text": "*What Seoyeon handed me. — My hands tremble as I take it.*"
+    },
+    "date_yuna_1": {
+        "name": "{name}",
+        "text": "*In front of the cafe. Yuna is leaning against the wall. A black dress and a small crossbody bag. Did Yuna always look like this? — It's the first time I'm seeing Yuna outside of her uniform.*"
+    },
+    "date_yuna_compliment_choice": {
+        "name": "{name}",
+        "text": "*What do I say?*",
+        "choices": [
+            "First time I'm seeing you out of uniform.",
+            "Your eyes look different today."
+        ]
+    },
+    "date_yuna_pretty_high": {
+        "name": "{name}",
+        "text": "*Yuna pauses for a moment. She lowers her head slightly.*"
+    },
+    "date_yuna_pretty_high_2": {
+        "name": "Yuna",
+        "text": "...That."
+    },
+    "date_yuna_pretty_high_3": {
+        "name": "{name}",
+        "text": "Hm?"
+    },
+    "date_yuna_pretty_high_4": {
+        "name": "Yuna",
+        "text": "Say that again."
+    },
+    "date_yuna_pretty_high_5": {
+        "name": "{name}",
+        "text": "*Again? -- Yuna is asking for a once more.*"
+    },
+    "date_yuna_pretty_low": {
+        "name": "Yuna",
+        "text": "...No one's ever said that to me before."
+    },
+    "date_yuna_bright": {
+        "name": "Yuna",
+        "text": "...What's different about them."
+    },
+    "date_yuna_bookstore": {
+        "name": "{name}",
+        "text": "*We head to a bookstore. Yuna walks slowly between the shelves.*"
+    },
+    "date_yuna_bookstore_2": {
+        "name": "Yuna",
+        "text": "Have you been here before?"
+    },
+    "date_yuna_bookstore_3": {
+        "name": "Yuna",
+        "text": "...Good. So I get to be the one who showed you first."
+    },
+    "date_yuna_earphone": {
+        "name": "{name}",
+        "text": "*Yuna hands me one of her earbuds.*"
+    },
+    "date_yuna_earphone_2": {
+        "name": "Yuna",
+        "text": "...Listen."
+    },
+    "date_yuna_earphone_3": {
+        "name": "{name}",
+        "text": "*The distance between us is the length of the earphone cord. Thirty centimeters. — Any closer and we touch, any farther and it falls out.*"
+    },
+    "date_yuna_oldbook": {
+        "name": "{name}",
+        "text": "*We pass a secondhand bookshop. Yuna stops walking.*"
+    },
+    "date_yuna_oldbook_2": {
+        "name": "Yuna",
+        "text": "I read this a year ago. Back then, the ending felt sad."
+    },
+    "date_yuna_oldbook_3": {
+        "name": "{name}",
+        "text": "And now?"
+    },
+    "date_yuna_oldbook_4": {
+        "name": "Yuna",
+        "text": "...Now it reads different."
+    },
+    "date_yuna_end": {
+        "name": "{name}",
+        "text": "*Yuna looks at me as she says it. -- In her eyes, because of you is written plainly.*"
+    },
+    "date_dain_1": {
+        "name": "{name}",
+        "text": "*In front of the gym. Dain comes running over. Cap and sportswear.*"
+    },
+    "date_dain_2": {
+        "name": "Dain",
+        "text": "You made it!! Cutting it close, weren't you?!"
+    },
+    "date_dain_3": {
+        "name": "{name}",
+        "text": "I got here ten minutes early."
+    },
+    "date_dain_4": {
+        "name": "Dain",
+        "text": "I was here twenty minutes ago!!"
+    },
+    "date_dain_compliment_choice": {
+        "name": "{name}",
+        "text": "*This is becoming a pattern now.*",
+        "choices": [
+            "That cap looks good on you.",
+            "Sportswear shouldn't look this good."
+        ]
+    },
+    "date_dain_pretty_high": {
+        "name": "{name}",
+        "text": "*Dain freezes. Her eyes go wide. -- Then she pulls her cap down over her face.*"
+    },
+    "date_dain_pretty_high_2": {
+        "name": "Dain",
+        "text": "WHAT — you can't just SAY stuff like that!!"
+    },
+    "date_dain_pretty_high_3": {
+        "name": "{name}",
+        "text": "It's true."
+    },
+    "date_dain_pretty_high_4": {
+        "name": "{name}",
+        "text": "*She said 'if you say things like that,' but her voice was trembling.*"
+    },
+    "date_dain_pretty_low": {
+        "name": "Dain",
+        "text": "WHAT — !! ...Haha, thanks, but stop, it's embarrassing."
+    },
+    "date_dain_bright": {
+        "name": "Dain",
+        "text": "OBVIOUSLY!! I'm in peak form today!!"
+    },
+    "date_dain_arcade": {
+        "name": "{name}",
+        "text": "*We stand in front of a rhythm game machine. The screen flickers.*"
+    },
+    "date_dain_arcade_2": {
+        "name": "Dain",
+        "text": "Okay, bet time!! Loser buys drinks!!"
+    },
+    "date_dain_arcade_3": {
+        "name": "Dain",
+        "text": "It's no fun without stakes!!"
+    },
+    "date_dain_rhythm": {
+        "name": "Dain",
+        "text": "*Pointing at the screen* This score — it's the second highest ever!!"
+    },
+    "date_dain_rhythm_2": {
+        "name": "{name}",
+        "text": "...That was amazing."
+    },
+    "date_dain_rhythm_3": {
+        "name": "Dain",
+        "text": "LOL OBVIOUSLY!! This one doesn't need knees!!"
+    },
+    "date_dain_knee": {
+        "name": "{name}",
+        "text": "*Doesn't need knees. -- She said it lightly, but there's weight behind it.*"
+    },
+    "date_dain_knee_2": {
+        "name": "{name}",
+        "text": "*We step out of the arcade onto the street. We pass a sporting goods store. Dain stops in front of the display window. Volleyball shoes.*"
+    },
+    "date_dain_shop": {
+        "name": "Dain",
+        "text": "......"
+    },
+    "date_dain_shop_2": {
+        "name": "{name}",
+        "text": "Dain?"
+    },
+    "date_dain_shop_3": {
+        "name": "Dain",
+        "text": "*Pulling her cap lower* ...Don't stare."
+    },
+    "date_dain_end": {
+        "name": "{name}",
+        "text": "*She's smiling. -- But her eyes aren't.*"
+    },
+    "pre_confess_minsu": {
+        "name": "Minsu",
+        "text": "yo you on your date right? one thing"
+    },
+    "pre_confess_minsu_2": {
+        "name": "Minsu",
+        "text": "do it right this time. don't run"
+    },
+    "pre_confess_callback": {
+        "name": "{name}",
+        "text": "*The phone in my pocket feels heavy. No notifications. — Like that first day, when I saw a name flash on the screen and shoved it back in. I can't run like that again. Not this time.*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*We left the park and walked down the street.*"
+    },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*We headed to the arcade.*"
+    },
+    "date_seo_pretty_high_b": {
+        "name": "Seoyeon",
+        "text": "...Did you rehearse that line?"
+    },
+    "date_seo_pretty_high_3_b": {
+        "name": "Seoyeon",
+        "text": "*Tucking her hair back* ...Don't get the wrong idea."
+    },
+    "date_seo_flower_b": {
+        "name": "Seoyeon",
+        "text": "*Stopping in her tracks* ...Want to go in?"
+    },
+    "date_seo_succulent_2_b": {
+        "name": "{name}",
+        "text": "You're giving this to me?"
+    },
+    "date_yuna_pretty_high_5_b": {
+        "name": "{name}",
+        "text": "You're beautiful."
+    },
+    "date_yuna_pretty_high_5_c": {
+        "name": "Yuna",
+        "text": "*Ears turning red* ...Enough."
+    },
+    "date_yuna_bookstore_2_b": {
+        "name": "{name}",
+        "text": "First time."
+    },
+    "date_yuna_earphone_2_b": {
+        "name": "{name}",
+        "text": "*A quiet piano piece flows in. The noise of the bookstore fades away.*"
+    },
+    "date_yuna_oldbook_b": {
+        "name": "Yuna",
+        "text": "...Here."
+    },
+    "date_yuna_oldbook_c": {
+        "name": "{name}",
+        "text": "*She pulls out an old book. Flipping through the pages.*"
+    },
+    "date_dain_shop_3_b": {
+        "name": "Dain",
+        "text": "*From under her cap* ...Say that one more time and I'll seriously hit you."
+    },
+    "date_dain_arcade_2_b": {
+        "name": "{name}",
+        "text": "Another bet?"
+    },
+    "date_dain_arcade_3_b": {
+        "name": "{name}",
+        "text": "*Rhythm game. Dain is overwhelmingly good.*"
+    },
+    "date_dain_arcade_3_c": {
+        "name": "Dain",
+        "text": "Full combo!! Did you see that?!"
+    },
+    "date_dain_shop_2_b": {
+        "name": "Dain",
+        "text": "*Turning away* It's nothing! Let's go!"
+    },
+    "date_seo_end_c": {
+        "name": "Seoyeon",
+        "text": "*She stops walking.* ...Today."
+    },
+    "date_seo_end_d": {
+        "name": "Seoyeon",
+        "text": "It was nice. — Just know that."
+    },
+    "date_yuna_end_b": {
+        "name": "Yuna",
+        "text": "*Just before parting, she hands over a note. Without a word.*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*'I had a lot of sentences today. Only in front of you.' — Yuna's handwriting is trembling.*"
+    },
+    "date_dain_end_b": {
+        "name": "Dain",
+        "text": "Hey."
+    },
+    "date_dain_end_c": {
+        "name": "Dain",
+        "text": "Today was really fun. ...Without the exclamation mark."
+    }
 }

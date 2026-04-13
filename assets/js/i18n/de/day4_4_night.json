@@ -223,7 +223,7 @@
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
-        "text": "...Das habe ich nicht geübt."
+        "text": "...Das ist das erste Mal. Wirklich."
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
@@ -371,7 +371,7 @@
     },
     "wall_dain_18_d": {
         "name": "Dain",
-        "text": "*Ballt und öffnet die Fäuste.* Ich hab es niemandem gesagt. Nicht mal meinen Eltern."
+        "text": "*Ballt und öffnet die Fäuste.* ...Also."
     },
     "wall_dain_19": {
         "name": "Dain",
@@ -405,7 +405,7 @@
         "name": "{name}",
         "text": "*Dain umklammert den Volleyball, den Kopf gesenkt. Ihre Schultern zittern.*",
         "choices": [
-            "...Darf ich mich neben dich setzen?",
+            "...Ich sage nichts. Ich bleib einfach hier.",
             "Du darfst weinen. Du musst nicht fröhlich tun. Nicht vor mir.",
             "...Sollen wir zusammen aufstehen? Nur noch einmal."
         ]
@@ -751,7 +751,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "{name}",
-        "text": "*Yuna dreht sich um. Ihre Schritte sind schnell. — Nicht ganz rennen, aber der Gang von jemandem, der rennen will.*"
+        "text": "*Yuna dreht sich um. Ihre Schritte sind schnell. — Nicht ganz rennen, aber der Gang von jemandem, der rennen will. Es war die schlimmste Wahl. — Ich höre, wie sich Yunas Mauer wieder schließt.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -791,7 +791,7 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*Eine Nachricht auf dem Handy.*"
+        "text": "*Das Handy leuchtet auf. Ein kurzer Satz — und gerade deshalb tut er mehr weh.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
