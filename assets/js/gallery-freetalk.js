@@ -712,6 +712,15 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
         if (charImg) charImg.classList.add('thinking');
         if (dialogueBox) dialogueBox.classList.add('thinking-box');
 
+        // 캐릭터 위 생각중 인디케이터
+        const gftChar = this.overlayEl.querySelector('.gft-character');
+        if (gftChar && !gftChar.querySelector('.thinking-indicator')) {
+            const indicator = document.createElement('div');
+            indicator.className = 'thinking-indicator';
+            indicator.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+            gftChar.appendChild(indicator);
+        }
+
         try {
             // [Explicit Caching] 캐시 키 헤더 추가
             const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
@@ -747,6 +756,7 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             if (nameTag) nameTag.textContent = charName;
             if (charImg) charImg.classList.remove('thinking');
             if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+            document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
             // 대사창에 타이핑 효과로 표시
             await this._typeText(displayText);
@@ -772,6 +782,7 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             if (nameTag) nameTag.textContent = charName;
             if (charImg) charImg.classList.remove('thinking');
             if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+            document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
             const fallback = this._getFallbackReply();
             await this._typeText(fallback);
             this.chatHistory.push({ role: 'assistant', content: fallback });
