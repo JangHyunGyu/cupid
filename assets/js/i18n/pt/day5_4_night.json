@@ -59,7 +59,7 @@
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*Aquele 'próxima vez' virou a vez seguinte, e a seguinte depois dela. Mesmo assento toda quinta. Quando o garçom perguntou 'mesa de casal?', nenhum dos dois conseguiu responder. Numa quinta. Andamos pelas ruas em vez do café. Lado a lado. Os dois fingindo não notar que as sombras se sobrepunham.*"
+        "text": "*Aquele 'próxima vez' virou outra, e depois mais outra. Mesmo lugar toda quinta. Quando o garçom perguntou 'mesa de casal?', nenhum dos dois conseguiu responder. Numa quinta, andamos pelas ruas em vez do café. Lado a lado. Os dois fingindo não notar que as sombras se sobrepunham.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Professora",
@@ -103,7 +103,7 @@
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
-        "text": "*O manuscrito foi publicado. Sem nome na dedicatória. Só uma linha: 'Três páginas de impressões da gaveta da professora — foi daí que essa história nasceu.'*"
+        "text": "*O manuscrito foi publicado. Sem nome na dedicatória. Só uma linha: 'Três páginas de resenha da gaveta da mesa da professora — foi daí que essa história nasceu.'*"
     },
     "hidden_perfect_homeroom_ep4": {
         "name": "{name}",
@@ -324,11 +324,11 @@
     },
     "hidden_true_nurse_5_c": {
         "name": "Enfermeira",
-        "text": "Eu sabia que não podia, né? Por isso ficava passando como piada."
+        "text": "Eu sabia que não podia, né? Por isso ficava disfarçando de piada."
     },
     "hidden_true_nurse_5_d": {
         "name": "Enfermeira",
-        "text": "Mas você percebia até quando eu desconversava."
+        "text": "Mas você percebia até quando eu desconversava. Até o caderno verde-claro."
     },
     "hidden_true_nurse_5_e": {
         "name": "{name}",
@@ -424,7 +424,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Seguro o frasco e paro. O caderno verde-claro na gaveta da enfermaria vem à mente. Que um dia ela consiga fechar a última página daquela carta.*"
+        "text": "*Minha mão segurando o frasco para. Me vem à mente o caderno verde-claro na gaveta da enfermaria. Tomara que um dia ela consiga fechar a última página daquela carta.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",
@@ -488,7 +488,7 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*Me declarei. Seoyeon disse pra tentar. Mas tinha um ponto de interrogação no 'tá bom' dela. — Uns um mês depois, recebi uma mensagem pra encontrar no café na frente da escola.*"
+        "text": "*Me declarei. Seoyeon disse pra tentar. Mas tinha um ponto de interrogação no 'tá bom' dela. — Cerca de um mês depois, recebi uma mensagem pra encontrar no café na frente da escola.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
@@ -504,7 +504,7 @@
     },
     "true_seo_1": {
         "name": "{name}",
-        "text": "*O quarto da Seoyeon. Os pais saíram. O quarto é arrumado — arrumado demais. O tipo de arrumação que não tem sentimento.*"
+        "text": "*O quarto da Seoyeon. Os pais saíram. Arrumado — arrumado demais. Um quarto sem sentimento.*"
     },
     "true_seo_2": {
         "name": "{name}",
@@ -536,11 +536,11 @@
     },
     "true_seo_7_b": {
         "name": "{name}",
-        "text": "*Seoyeon hesita e estende o mindinho.*"
+        "text": "*Seoyeon hesita, depois estende o mindinho.*"
     },
     "true_seo_7b": {
         "name": "{name}",
-        "text": "*Eu também estendo a mão. Um instante antes de tocar, Seoyeon sorri primeiro.*"
+        "text": "*Eu também estendo a mão. Logo antes de se tocarem, Seoyeon sorri primeiro.*"
     },
     "true_seo_8": {
         "name": "{name}",
@@ -600,7 +600,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*Me declarei. Yuna assentiu. Mas aquele aceno era mais tentativa do que certeza. — Uns um mês depois, apareceu um bilhete no meu armário. 'Vamos conversar.'*"
+        "text": "*Me declarei. Yuna assentiu. Mas aquele aceno era mais tentativa do que certeza. — Cerca de um mês depois, apareceu um bilhete no meu armário.*"
     },
     "bitter_yuna_2": {
         "name": "Yuna",
@@ -672,7 +672,7 @@
     },
     "perfect_dain_1": {
         "name": "{name}",
-        "text": "*O ginásio. Dain lança seu último saque. Desenrolando as faixas.*"
+        "text": "*O ginásio. Dain lança seu último saque. Desenrolando as bandagens.*"
     },
     "perfect_dain_2": {
         "name": "Dain",
@@ -684,7 +684,7 @@
     },
     "perfect_dain_3": {
         "name": "Dain",
-        "text": "Fora da quadra, eu também valho alguma coisa?"
+        "text": "Fora da quadra, eu sou alguém legal também?"
     },
     "perfect_dain_3b": {
         "name": "{name}",
@@ -728,7 +728,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*Me declarei. Dain sorriu e disse que ficou feliz. Mas aquele sorriso era do mesmo tipo de sempre. — Uns um mês depois, recebi uma mensagem pra encontrar na frente do ginásio.*"
+        "text": "*Me declarei. Dain sorriu e disse que ficou feliz. Mas aquele sorriso era do mesmo tipo de sempre. — Cerca de um mês depois, recebi uma mensagem pra encontrar na frente do ginásio.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -957,7 +957,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Mensagem da Seoyeon. 'Fiz uma cópia da chave do terraço pra amanhã. — É autorizado, autorizado.' Podia só dizer que era um convite.*"
+        "text": "*Mensagem da Seoyeon. 'Fiz uma cópia da chave do terraço pra amanhã. — Tá liberado, tá liberado.' Podia só dizer que era um convite.*"
     },
     "good_epilogue_2": {
         "name": "{name}",

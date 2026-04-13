@@ -105,7 +105,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*She turns away. Her long hair sways. - She looks like someone trying not to come undone until the very end.*"
+        "text": "*She turns away. Her long hair sways. — She looks like someone trying not to come undone until the very end.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Homeroom Teacher",
@@ -167,7 +167,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*The moment I step into the classroom — I get signals from three directions.*"
+        "text": "*The moment I step into the classroom — signals come from three directions. The final event. Everything we've built over these days converges on today.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -179,7 +179,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*A short story is pinned to the bulletin board. Title: 'To the One I Met in the Library.' It's Yuna's. — A story only the protagonist would recognize. I stood in front of the board a little longer. Short sentences, but it's as vivid as if Yuna pushed her own face into mine.*"
+        "text": "*A short story is pinned to the bulletin board. Title: 'To the One I Met in the Library.' It's Yuna. — A story only the protagonist would recognize. I stood in front of the board a little longer. Short sentences, but so vivid it feels like Yuna is staring right at me.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*One line. — Someone who was rejected three times trying to debut as a writer is waiting for a student's one-line impression. If this isn't a confession, what is?*"
+        "text": "*One line. — Someone who was rejected three times trying to debut as a writer is waiting for a student's one-line impression. If this isn't a confession, what is? The teacher heads for the door — and stops.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Homeroom Teacher",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*From 'come visit after graduation' to 'come if you're hurt' — she pulled back. She almost crossed the line and stepped back inside.*"
+        "text": "*From 'come visit after graduation' to 'come if you're hurt' — she pulled back. Almost crossed the line and stepped back inside. The door opens. The school nurse is standing there. Two paper cups in her hands.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -359,7 +359,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*Her voice dropped a register. All playfulness gone. — This is how this person's sincerity always arrives.*"
+        "text": "*Her voice dropped a register. All playfulness gone from her face. — This is how this person's sincerity always arrives. The school nurse was laughing — and stops. Presses her lips shut.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "School Nurse",
@@ -383,11 +383,11 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Her signature line from Day 1. — Back then it was character introduction. Now it's real.*"
+        "text": "*Her signature line from Day 1. — Back then it was character introduction. Now it's real. The school nurse takes out a bandage and sticks it on the back of my hand. Slowly. — There's small writing on the bandage.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'After graduation, let's meet at a cafe instead of the nurse's office — ♡'*"
+        "text": "*'After graduation, let's meet at a cafe instead of the nurse's office — ♡' This time, the heart doesn't seem like medical concern.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -463,7 +463,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...I didn't know. I knew about the failed debuts, but not that the rejection wording was *exactly the same as what I just said*.*"
+        "text": "*...I didn't know. I knew about the failed debuts, but not that the rejection wording was exactly the same as what I just said.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Homeroom Teacher",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*I closed the classroom door. The envelope was still on her desk. — What she hadn't gotten in seven years wasn't *sincere praise* but *someone who'd read it seriously*. Praise was in the rejection letters too. I said the exact same thing as a rejection letter. With good intentions.*"
+        "text": "*I closed the classroom door behind me. The envelope sits on her desk. — What she hadn't received in seven years wasn't sincere praise — it was someone who'd actually read it. Praise was already in the rejection emails. I said exactly what a rejection email would say. With good intentions.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*I didn't. It was a guess. — Someone who'd taken seven years showing it to a student *today* of all days felt off. If it were finished, she'd have sent it to publishers first. It wasn't finished — so she needed *permission* to end it.*"
+        "text": "*I didn't know. It was a guess. — Someone who took seven years showing it to a student for the first time today seemed off. If it were finished, she'd have sent it to publishers first. It's not finished — so she needed permission to end it.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
@@ -503,11 +503,11 @@
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Homeroom Teacher",
-        "text": "It's been stuck on that one line for seven years. Because if I finish — it'd confirm I'm not a writer."
+        "text": "The manuscript's been stuck on that one line for seven years. If I finish — I'm afraid it'd prove I'm not a real writer."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*For the first time, the teacher said the word *writer* about herself. She hadn't said it once in seven years.*"
+        "text": "*For the first time, the teacher said the word 'writer' about herself. A word she'd never spoken in seven years.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -531,6 +531,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*I hold the manuscript again. It's not as heavy as before. — Closing seven years of incomplete work with praise wasn't what she needed. What she needed was *someone who'd accept the incomplete as incomplete*. That's real support.*"
+        "text": "*I hold the manuscript again. It's not as heavy as before. — Rather than completing seven years of unfinished work with praise, what she needed was someone to acknowledge the incomplete as incomplete. That's what real support looks like.*"
     }
 }

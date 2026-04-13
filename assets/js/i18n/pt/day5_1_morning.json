@@ -78,7 +78,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Se fugir, eu vou ficar brava de verdade?"
+        "text": "Se fugir, eu vou ficar brava de verdade!"
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
@@ -175,7 +175,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...Eu não sabia. Sabia que ela tinha sido rejeitada, mas não que a frase da rejeição era *exatamente a mesma coisa que eu acabei de dizer*.*"
+        "text": "*...Eu não sabia. Sabia que ela tinha sido rejeitada na tentativa de publicar, mas não que a frase da rejeição era exatamente a mesma coisa que eu acabei de dizer.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Professora",
@@ -187,7 +187,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Fechei a porta da sala e saí. O envelope ainda estava na mesa dela. — O que ela não recebeu em sete anos não foi *elogio sincero*, mas *alguém que lesse de verdade*. Elogios já vinham nos e-mails de rejeição. Eu disse exatamente a mesma coisa que um e-mail de rejeição. Com boas intenções.*"
+        "text": "*Fechei a porta da sala e saí. O envelope ainda estava na mesa dela. — O que ela não recebeu em sete anos não foi 'elogio sincero', mas 'alguém que lesse de verdade'. Elogios já vinham nos e-mails de rejeição. Eu disse exatamente a mesma coisa que um e-mail de rejeição. Com boas intenções.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -207,7 +207,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Eu não sabia. Foi um chute. — Alguém que levou sete anos e escolheu *justamente hoje* pra mostrar a um aluno pela primeira vez parecia estranho. Se estivesse pronto, teria mandado pra editora antes. Não estava pronto — então precisava de *permissão* pra terminar.*"
+        "text": "*Não sabia. Foi um chute. — Alguém que levou sete anos e escolheu justamente hoje pra mostrar a um aluno pela primeira vez parecia estranho. Se estivesse pronto, teria mandado pra editora antes. Não estava pronto — então precisava de 'permissão' pra terminar.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professora",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*Pela primeira vez, a professora disse a palavra *escritora* sobre si mesma. Em sete anos nunca tinha dito.*"
+        "text": "*Pela primeira vez, a professora disse a palavra 'escritora' sobre si mesma.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Seguro o manuscrito de novo. Não está tão pesado como antes. — Fechar sete anos de trabalho inacabado com elogio não era o que ela precisava. O que ela precisava era de *alguém que aceitasse o inacabado como inacabado*. Isso é apoio de verdade.*"
+        "text": "*Pego o manuscrito de novo. Mais leve do que antes. — Em vez de 'completar' sete anos de coisa inacabada com elogios, o que essa pessoa precisava era de alguém que aceitasse o inacabado como inacabado. Isso é apoio de verdade.*"
     },
     "hidden_homeroom_d5_choice_a": {
         "name": "Professora",
@@ -507,7 +507,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*A fala marca registrada dela do Dia 1. — Naquela época era apresentação de personagem. Agora é verdade. A enfermeira pega um curativo e cola nas costas da minha mão. Devagar. — Tem uma letra miúda escrita no curativo.*"
+        "text": "*A frase de sempre do Dia 1. — Naquela época era apresentação de personagem. Agora é de verdade. A enfermeira tira um band-aid e cola nas costas da minha mão. Devagar. — Tem algo escrito pequeno no band-aid.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",

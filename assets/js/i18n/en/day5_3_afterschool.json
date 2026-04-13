@@ -132,7 +132,7 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*I walked past the back of the school and headed toward the park. Tonight doesn't feel like it's going to end with just one person.*"
+        "text": "*The crack I papered over with a forced smile at lunch is still there. Tonight doesn't feel like it's going to end with just one person.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Carrying the crack we had forced shut, our steps turned toward the park.*"
+        "text": "*Still carrying the fracture we'd papered over, we walked toward the park.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*I almost ran away again. Just like at my old school. Phone in my pocket, unable to say a word — that moment nearly came back. — No. Not this time.*"
+        "text": "*I almost ran away again. Just like at my old school. Phone in my pocket, unable to say a word — that moment nearly came back. — No. Not this time. My legs move. My mouth opens first. No prepared words — my body just moves on its own.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Ugh, why am I crying — this is supposed to be a happy moment —"
+        "text": "So... say it. I'll hear it through to the end this time."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Leaving school.* Wait, seriously?! ...For real? I mean, yeah, I waited. But if I just smile now like everything's fine, that's kind of unfair, right? So this time — say the whole thing."
+        "text": "*Leaving school.* Wait, seriously?! ...For real? I mean, yeah, I waited. But if I just grin now and act like everything's fine, that's not fair to me, right? So this time — say the whole thing."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -371,7 +371,7 @@
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*The evening breeze blows in. The shadow behind me grows longer. — I'm alone.*"
+        "text": "*The evening breeze blows in. The shadow behind me grows longer. — Standing here with nothing in my hands.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",
