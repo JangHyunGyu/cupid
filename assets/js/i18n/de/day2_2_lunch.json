@@ -59,7 +59,7 @@
     },
     "lunch2_seo_5b_yuna": {
         "name": "{name}",
-        "text": "Ich wollte wissen, wie sich diese Brise und die Lunchbox der Präsidentin zusammen anfühlen."
+        "text": "Ich wollte wissen, wie sich diese Brise und die Lunchbox der Schülersprecherin zusammen anfühlen."
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
@@ -79,11 +79,11 @@
     },
     "lunch2_dain_2b_seo": {
         "name": "Dain",
-        "text": "Oh, also heute meine Seite statt der Lunchbox der Präsidentin?!"
+        "text": "Oh, also heute meine Seite statt der Lunchbox der Schülersprecherin?!"
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Gestern war es der Rhythmus der Präsidentin. Heute wollte ich auch deinen sehen."
+        "text": "Gestern war es der Rhythmus der Schülersprecherin. Heute wollte ich auch deinen sehen."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -124,7 +124,7 @@
     },
     "lunch2_yuna_5_seo": {
         "name": "Yuna",
-        "text": "Gestern warst du bei der Präsidentin."
+        "text": "Gestern warst du bei der Schülersprecherin."
     },
     "lunch2_yuna_6_seo": {
         "name": "{name}",
