@@ -283,14 +283,11 @@ async function migrateCupidChatHistoryToD1() {
     }
 }
 
-// ============================================================================
-// 대화 로그 D1 저장 (harem chat-logs API와 동일)
-// ============================================================================
 // user/assistant 메시지 한 페어를 D1에 저장. 실패해도 게임 흐름 영향 없음.
-async function saveCupidChatLog({ charId, userContent, assistantContent, sessionId = '', context = '1:1' }) {
+async function saveCupidChatLog({ charId, userContent, assistantContent, sessionId = '', context = '1:1', playerName: _pn }) {
     if (!charId) return;
     const userId = getCupidDeviceId();
-    const playerName = window.gameEngine?.stateManager?.playerName || '';
+    const playerName = _pn || window.gameEngine?.stateManager?.playerName || '';
     const headers = { 'Content-Type': 'application/json', 'x-app-id': 'cupid' };
     const post = (role, content) => fetch(API_ENDPOINT + 'chat-logs', {
         method: 'POST',
