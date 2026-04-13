@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "AAAH !!!!! Je viens de me rouler dans mon lit tellement c'était drôle mdr !! Viens au gymnase demain, PROMIS !!"
+        "text": "AAAH !!!!! Je viens de shooter dans ma couette tellement c'était drôle mdr !! Tu DOIS venir au gymnase demain !!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -254,6 +254,6 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*J'ai bricolé un bentō à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
+        "text": "*J'ai préparé un déjeuner à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
     }
 }

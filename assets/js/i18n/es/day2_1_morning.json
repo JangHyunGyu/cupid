@@ -38,7 +38,7 @@
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La misma letra prolija de ayer. Corta. Y el lugar es específico. — El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
+        "text": "*La misma letra prolija de ayer. Corta. Y el lugar es específico. — ¿El 'anexo' de la biblioteca? Es un lugar diferente al de ayer.*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
@@ -62,7 +62,7 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "¿Oye, dos días como alumno nuevo y la presidenta del consejo viene a saludarte? Yo llevo un año aquí y ni me mira."
+        "text": "Oye, ¿dos días como alumno nuevo y la presidenta del consejo viene a saludarte? Yo llevo un año aquí y ni me mira."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Yo te encontré primero, ¡así que eres nuestro alumno nuevo! ¡Lo reclamo! ¡Es mío!"
+        "text": "¡Yo te encontré primero, así que eres nuestro alumno nuevo! ¡Primer gol! ¡Primer gol!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Profesora",
-        "text": "*Se tapa la boca con la taza de café* ...Fracaso en gestión de expresiones. Está bien, ve."
+        "text": "*Se tapa la boca con la taza de café* ...Se me notó. Bueno, ya vete."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Profesora",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Profesora",
-        "text": "*Dejando el café* ...En fin, no hay de qué preocuparse. Lo estás haciendo bien."
+        "text": "*Dejando el café* ...En fin. De tu parte, todo normal."
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",

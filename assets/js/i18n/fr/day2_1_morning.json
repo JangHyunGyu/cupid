@@ -78,7 +78,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "La présidente aussi s'intéresse au nouvel élève ? Populaire !"
+        "text": "La présidente aussi s'intéresse à notre nouvel élève ? Populaire !"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",
-        "text": "*Cache sa bouche derrière sa tasse de café* ...Raté, la gestion des expressions. Bon, file."
+        "text": "*Cachant sa bouche derrière sa tasse de café* ...Raté pour le poker face. Bon, file."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professeure principale",
@@ -262,7 +262,7 @@
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
-        "text": "*Sur le point de m'asseoir — un mot plié sur mon bureau. ...Merci pour hier.*"
+        "text": "*Sur le point de m'asseoir — un mot plié sur mon bureau. '...Merci pour hier.'*"
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",

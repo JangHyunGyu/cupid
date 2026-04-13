@@ -59,7 +59,7 @@
     },
     "lunch2_seo_5b_yuna": {
         "name": "{name}",
-        "text": "Wanted to find out what this breeze feels like with your cooking."
+        "text": "I was curious what the breeze up here and the president's lunchbox would be like together."
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
@@ -348,7 +348,7 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "We met yesterday! Cool guy, right Prez?!"
+        "text": "We met yesterday! He's really cheerful, right Prez?!"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
@@ -517,7 +517,7 @@
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*The crunching of Dain's crumble bun is unusually loud. Seoyeon's gaze, Dain's red ears — lunch period is getting more complicated by the day.*"
+        "text": "*The crunching of Dain's crumble bun is unusually loud. — Lunch period is getting more complicated by the day.*"
     },
     "lunch2_yuna_17_b": {
         "name": "Yuna",
@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "School Nurse",
-        "text": "*Inside the nurse's office. Documents are piled on the desk, and the nurse is sitting in her chair.*"
+        "text": "*Looks up* First time here, right? You're the transfer student."
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -577,7 +577,7 @@
     },
     "lunch2_dain_end_ins7_first": {
         "name": "School Nurse",
-        "text": "...Oh? You're the one from earlier. What brings you here during lunch?"
+        "text": "First time, huh? That happens. Come on, let's disinfect it."
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
@@ -585,7 +585,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*You look better than you did this morning. That's a relief.*"
+        "text": "*Same playful tone as always. But her eyes are already examining the wound.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -605,7 +605,7 @@
     },
     "lunch2_dain_end_m": {
         "name": "{name}",
-        "text": "*The nurse's hand pauses. — 0.5 seconds. Then it moves again.*"
+        "text": "*The nurse's hand pauses. Then — as if nothing happened — it moves again.*"
     },
     "lunch2_dain_end_n": {
         "name": "School Nurse",
@@ -645,7 +645,7 @@
     },
     "lunch2_dain_end_w": {
         "name": "School Nurse",
-        "text": "All done, so get back to class. — And next time, come without being hurt."
+        "text": "All done, so get back to class. — Next time you show up, I'm adding items to the checkup list."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",

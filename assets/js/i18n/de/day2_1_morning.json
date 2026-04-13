@@ -66,7 +66,7 @@
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "Vielleicht magst du einfach niemand."
+        "text": "Vielleicht bist du einfach nicht beliebt."
     },
     "morning2_dain_claim_2": {
         "name": "Minsu",
@@ -110,7 +110,7 @@
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
-        "text": "Hattest was auf der Schulter."
+        "text": "Hattest was auf der Kleidung."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Klassenlehrerin",
-        "text": "Naja, eine Lehrerin sorgt sich nun mal um ihre Schüler. Berufsbedingt."
+        "text": "Das gehört zur Klassenverwaltung. Dienstpflicht."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Ich ging der Lehrerin ins Lehrerzimmer nach.* *Ihr Schreibtisch steht in der Ecke. Papiere und eine Kaffeetasse auf dem Tisch, und — eine Schublade, leicht geöffnet.*"
+        "text": "*Ich ging der Lehrerin ins Lehrerzimmer nach.* *Ihr Schreibtisch steht in der Ecke. Papiere und eine Kaffeetasse auf dem Tisch, und — eine Schublade, leicht geöffnet. Auf dem Tisch ein Stapel Papier — und was wie Manuskriptseiten aussieht.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Klassenlehrerin",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Klassenlehrerin",
-        "text": "*Stellt den Kaffee ab* ...Jedenfalls, keine Sorge. Du machst das gut."
+        "text": "*Stellt den Kaffee ab* ...Jedenfalls. Bei dir ist alles unauffällig."
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",

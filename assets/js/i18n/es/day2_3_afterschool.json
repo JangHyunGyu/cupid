@@ -213,7 +213,7 @@
         "text": "*El atardecer se cuela por la ventana. Una luz anaranjada se extiende por el perfil de Seoyeon. — Me dieron ganas de hablarle.*",
         "choices": [
             "Qué bonito atardecer. Me refiero a lo de la ventana.",
-            "¿Te duele la garganta? Tómate un descanso."
+            "¿Te duele el cuello? Tómate un descanso."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -294,7 +294,7 @@
     },
     "after2_seo_skinship_1": {
         "name": "{name}",
-        "text": "*Seoyeon extiende la mano. Quita una mota de polvo de mi cuello. Su mano roza mi cuello.*"
+        "text": "*Seoyeon extiende la mano. Quita una mota de polvo del cuello de mi camisa. Su mano roza mi cuello.*"
     },
     "after2_seo_skinship_2": {
         "name": "{name}",
@@ -552,7 +552,7 @@
     },
     "after2_seo_neck_react_b": {
         "name": "Seoyeon",
-        "text": "Tienes el cuello bastante tenso. Quédate quieto un momento."
+        "text": "Espera. No te muevas."
     },
     "after2_seo_neck_react_c": {
         "name": "{name}",

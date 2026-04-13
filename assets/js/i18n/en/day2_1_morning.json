@@ -41,8 +41,8 @@
         "text": "*Same neat handwriting as yesterday. Short. And the location is specific. — The library 'annex'? That's a different place from yesterday.*"
     },
     "morning2_seo_1": {
-        "name": "{name}",
-        "text": "*I'm about to pocket the note when — a familiar voice from the hallway.*"
+        "name": "Seoyeon",
+        "text": "*Passing through the hallway, glancing into the classroom* Sleep well last night?"
     },
     "morning2_seo_4": {
         "name": "{name}",
@@ -164,8 +164,8 @@
         "name": "{name}",
         "text": "*Reading. So she even checks report cards.*",
         "choices": [
-            "What about you, miss? What do you read?",
-            "Yeah, I read a lot."
+            "What about you? What do you read?",
+            "I do like reading."
         ]
     },
     "hidden_homeroom_d2_choice1_a": {
@@ -194,11 +194,11 @@
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
-        "text": "Thanks, miss."
+        "text": "Thank you, ma'am."
     },
     "hidden_homeroom_d2_10": {
         "name": "Homeroom Teacher",
-        "text": "Teachers worrying about students — it's part of the job description. Strictly professional."
+        "text": "It's part of homeroom management duties. Just work."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
-        "text": "A love letter this early?"
+        "text": "A letter this early in the morning?"
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*I follow the teacher to the faculty office. Her desk is in the corner. Papers, a coffee mug — and a drawer slightly ajar.*"
+        "text": "*I follow the teacher to the faculty office. Her desk is in the corner. Papers, a coffee mug — and a drawer slightly ajar. Stacks of paper on the desk, and — what looks like manuscript pages.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Homeroom Teacher",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Homeroom Teacher",
-        "text": "*Setting down her coffee* ...Anyway, nothing to worry about. You're doing fine."
+        "text": "*Setting down her coffee* ...Anyway. Nothing out of the ordinary on your end."
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",

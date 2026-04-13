@@ -213,7 +213,7 @@
         "text": "*The sunset streams in through the window. An orange glow washes over Seoyeon's profile. — I felt like saying something.*",
         "choices": [
             "The sunset's nice. — I mean the view, of course.",
-            "Does your throat hurt? Take a break."
+            "Does your neck hurt? Take a break."
         ]
     },
     "after2_seo_sunset_joke": {
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d2_2": {
         "name": "School Nurse",
-        "text": "Oh, yesterday's transfer student. Back already? Trying to become a regular?"
+        "text": "Two days in a row — should I start issuing you a nurse's office membership?"
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
@@ -552,7 +552,7 @@
     },
     "after2_seo_neck_react_b": {
         "name": "Seoyeon",
-        "text": "Your neck's pretty tense. Hold still for a sec."
+        "text": "Wait. Don't move."
     },
     "after2_seo_neck_react_c": {
         "name": "{name}",
