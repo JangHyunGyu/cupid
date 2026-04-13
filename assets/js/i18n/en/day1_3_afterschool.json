@@ -100,7 +100,7 @@
         "text": "*She leaves with a smile.*",
         "choices": [
             "Office",
-            "Infirmary",
+            "Nurse's Office",
             "Go home"
         ]
     },
@@ -170,11 +170,11 @@
     },
     "after_homeroom_honest_6": {
         "name": "Homeroom Teacher",
-        "text": "Let's call it professional concern."
+        "text": "Call it educational concern."
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Professional concern.*",
+        "text": "*Educational concern.*",
         "choices": [
             "If you're worried, you can just say so.",
             "I'll hold you to that juice, miss."
@@ -212,7 +212,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Walking down the hallway when — my head gets a little dizzy. First-day nerves, probably.*"
+        "text": "*Walking down the hallway when — my head gets a little dizzy. First-day nerves, probably. There's a 'Nurse's Office' sign on one side of the hallway. A bit too dizzy to just push through.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -330,7 +330,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
-        "text": "*My fingertips catch on the corner of a paper in the side pocket of my bag. A folded note. I have no idea when it was slipped in there. Yuna's handwriting.*"
+        "text": "*My fingertips catch on the corner of a paper in the side pocket of my bag. A folded note. I have no idea when it was slipped in there. Yuna's handwriting. 'I saw you on the rooftop at lunch. ...You and the council president looked close.' — Three dots at the end. She swallowed what she really wanted to say.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*She waves and runs off. — When she stopped short, she dragged her right leg slightly. Or did she? It was too fast to tell.*"
+        "text": "*She waves and runs off. — When she stopped short, her hand went to her right knee for half a second. She pulled it away immediately, but I saw it.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*She slides the papers on her desk aside and looks back at me. The mood says this won't end with just one line.*"
+        "text": "*She slides the papers on her desk aside and looks back at me. The mood says this won't end with just one line. Apparently it wasn't just a passing pleasantry. She rests her hand on the back of the chair, pausing to choose her words.*"
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Professional concern.' — She's the type to hide what she feels behind job titles.*"
+        "text": "*'Educational concern.' — This person wraps things up too.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -394,7 +394,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*She closes the attendance book and stands. She's halfway to the door when she turns back, like she just remembered something.*"
+        "text": "*She laughed. — First time I've seen her laugh at a joke. She closes the attendance book and stands. She's halfway to the door when she turns back, like she just remembered something.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
@@ -402,7 +402,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*I stop in front of the door and take a slow breath. I should rest for a minute before heading home.*"
+        "text": "*I stop in front of the door and take a breath. Just a short rest. I put my hand on the handle. Cold metal against my palm.*"
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*She waves me off with a light laugh. I catch a glimpse of a band-aid on the back of her hand. — A strange nurse's office. The good kind of strange.*"
+        "text": "*I wave goodbye with a light laugh. I notice a band-aid on the back of her hand. — A strange nurse's office. The good kind of strange.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

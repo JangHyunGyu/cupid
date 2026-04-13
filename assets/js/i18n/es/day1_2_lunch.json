@@ -9,7 +9,7 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "¡Eh! ¡¿Has comido ya?! ¡Vamos a la cafetería! ¡Apuesta de pan, paga el que pierda!"
+        "text": "¡Eh! ¡¿Has comido ya?! ¡Vamos a la tienda! ¡Apuesta de pan, paga el que pierda!"
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
-        "text": "La próxima vez, déjame también la hora del almuerzo libre."
+        "text": "La próxima vez, deja libre tu hora del almuerzo."
     },
     "lunch_seo_after_3": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "*La cafetería está a reventar por la hora del almuerzo. El olor a pan y a leche se mezcla en el ambiente.*"
+        "text": "*La tienda está a reventar por la hora del almuerzo. El olor a pan y a leche se mezcla en el ambiente.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
@@ -238,7 +238,7 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Eso ha sonado a PR."
+        "text": "Pensé que estabas haciéndote publicidad."
     },
     "lunch_dain_20": {
         "name": "Dain",

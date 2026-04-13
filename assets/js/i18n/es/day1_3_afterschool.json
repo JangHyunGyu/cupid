@@ -73,7 +73,7 @@
     },
     "after_miss_seoyeon_3": {
         "name": "{name}",
-        "text": "¿Antes?"
+        "text": "¿Cómo que dónde?"
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
@@ -302,7 +302,7 @@
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
-        "text": "...¿La azotea? ¿Solos los dos?"
+        "text": "...Te vi bajar de la azotea. ¿Los dos solos?"
     },
     "after1_jealousy_seo_choice": {
         "name": "{name}",
@@ -402,7 +402,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Me detengo frente a la puerta y respiro hondo una vez. Será mejor descansar un poco antes de irme.*"
+        "text": "*Me detengo frente a la puerta y respiro hondo. Solo un momento de descanso. Pongo la mano en la manilla. El metal frío roza mi palma.*"
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",

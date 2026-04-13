@@ -99,7 +99,7 @@
         "name": "{name}",
         "text": "*Elle s’éloigne avec un sourire.*",
         "choices": [
-            "Bureau",
+            "Salle des profs",
             "Infirmerie",
             "Rentrer à la maison"
         ]
@@ -158,7 +158,7 @@
     },
     "after_homeroom_honest_3": {
         "name": "Professeure principale",
-        "text": "...Quelque chose comme ça. J'ai été parachuté dans un nouveau lieu du jour au lendemain."
+        "text": "...Quelque chose comme ça. J'ai été parachutée dans un nouveau lieu du jour au lendemain."
     },
     "after_homeroom_honest_4": {
         "name": "Professeure principale",
@@ -166,7 +166,7 @@
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "Un prof qui offre à boire à un élève ?"
+        "text": "Une prof qui offre à boire à un élève ?"
     },
     "after_homeroom_honest_6": {
         "name": "Professeure principale",
@@ -378,7 +378,7 @@
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*Elle pousse les papiers sur son bureau sur le côté et me regarde de nouveau. L'ambiance dit que ça ne va pas se finir en une seule phrase.*"
+        "text": "*Elle pousse les papiers sur son bureau et me regarde de nouveau. Ce n'est manifestement pas qu'une simple politesse. La prof pose la main sur le dossier de sa chaise et prend un instant pour choisir ses mots.*"
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Intérêt éducatif'. — Le genre de personne qui emballe sa bienveillance dans des termes professionnels.*"
+        "text": "*'Intérêt pédagogique'. — Le genre de personne qui emballe sa bienveillance dans des termes professionnels.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Elle me salue de la main avec un petit rire. Je remarque le pansement sur le dos de sa main. — Une drôle d'infirmerie. Du bon genre de drôle.*"
+        "text": "*Je la salue de la main avec un petit rire. Je remarque un pansement sur le dos de sa main. — Une drôle d'infirmerie. Le bon genre de drôle.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

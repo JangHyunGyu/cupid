@@ -86,7 +86,7 @@
     },
     "choice_flirt_5": {
         "name": "{name}",
-        "text": "Me siento halagado."
+        "text": "Vaya, qué honor."
     },
     "choice_flirt_6": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "El edificio de tercer año es este, la biblioteca está allí. La cafetería está en el sótano."
+        "text": "El edificio de tercer año es este, la biblioteca está allí. La tienda está en el sótano."
     },
     "hallway_4": {
         "name": "{name}",
@@ -202,11 +202,11 @@
     },
     "classroom_minsu_2": {
         "name": "Minsu",
-        "text": "Eh, nuevo. Bienvenido. — Y un consejo."
+        "text": "Eh, nuevo. Bienvenido. — Y ten cuidado."
     },
     "classroom_minsu_3": {
         "name": "{name}",
-        "text": "¿Sobre qué?"
+        "text": "¿De qué?"
     },
     "classroom_dain_talk_1": {
         "name": "{name}",

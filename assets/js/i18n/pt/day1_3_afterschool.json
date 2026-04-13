@@ -110,7 +110,7 @@
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*Ela acena e sai correndo. Um furacão de pessoa. O nome que a professora chamou — Dain. E e já estamos nos tratando sem cerimônia.*"
+        "text": "*Ela acena e sai correndo. Um furacão de pessoa. O nome que a professora chamou — Dain. E já estamos nos tratando sem cerimônia.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
@@ -326,7 +326,7 @@
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Desde de manhã não parei de conhecer gente. Descansar um pouco não seria nada demais.*",
+        "text": "*Desde cedo não parei de conhecer gente. Descansar um pouco não seria nada demais.*",
         "choices": [
             "Entrar na enfermaria",
             "Ir pra casa"
@@ -362,7 +362,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermeira",
-        "text": "Seu uniforme tá duro de tão novo. E cheira a roupa engomada. *Snif snif* Ah, tem cheiro de flor de cerejeira também. Transferido romântico."
+        "text": "Seu uniforme tá duro de tão novo. E cheira a roupa engomada. *Fungando* Ah, tem cheiro de flor de cerejeira também. Transferido romântico."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
@@ -506,7 +506,7 @@
     },
     "after_nurse_enter_11_m": {
         "name": "{name}",
-        "text": "{name}."
+        "text": "Sou o {name}."
     },
     "after_nurse_enter_12": {
         "name": "Enfermeira",
@@ -514,7 +514,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Ela ri de leve e acena. Olho pro curativo na mão dela. — Uma enfermaria estranha. Do tipo bom de estranho.*"
+        "text": "*Dou um sorriso e aceno. Reparo no curativo no dorso da mão dela. — Uma enfermaria estranha. Do tipo bom de estranho.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",

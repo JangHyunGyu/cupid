@@ -166,11 +166,11 @@
     },
     "lunch_dain_1": {
         "name": "Dain",
-        "text": "Et voilà ! C’est la boutique. Choisis ce que tu veux !"
+        "text": "Voilà, on est arrivés ! C’est le kiosque. Choisis ce que tu veux !"
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "*La cafétéria est bondée, c'est l'heure du déjeuner. Les odeurs de pain et de lait se mêlent.*"
+        "text": "*Le kiosque est bondé à l'heure du déjeuner. Ça sent le pain et le lait mélangés.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
@@ -326,7 +326,7 @@
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*Assise à la bibliothèque pendant le déjeuner sans dire un mot — et pourtant ce n’est pas gênant. C’est même agréable.*"
+        "text": "*Assis à la bibliothèque pendant le déjeuner sans dire un mot — et pourtant ce n’est pas gênant. C’est même agréable.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -404,7 +404,7 @@
     },
     "lunch_seo_1_aff_high": {
         "name": "Seoyeon",
-        "text": "Assieds-toi là. Ce que tu as dit dans le couloir tout à l'heure — c'était pas mal."
+        "text": "Assieds-toi là. Ce que tu as dit dans le couloir tout à l'heure, ça m'a fait sourire."
     },
     "lunch_seo_1_aff_default": {
         "name": "Seoyeon",
