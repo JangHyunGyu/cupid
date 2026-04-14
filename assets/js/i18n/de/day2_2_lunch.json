@@ -87,7 +87,7 @@
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
-        "text": "Nice!! Das kannst du nicht zurücknehmen! Eine Runde, soboro steht auf dem Spiel!!"
+        "text": "Nice!! Das nimmst du nicht mehr zurück! Eine Runde — Einsatz: Soboro!!"
     },
     "lunch2_dain_1b_yuna": {
         "name": "{name}",
@@ -103,11 +103,11 @@
     },
     "lunch2_dain_4b_yuna": {
         "name": "Dain",
-        "text": "Nice!! Diesen Gleichgewichtssinn respektiere ich! Dann eine Runde!!"
+        "text": "Nice!! Den Balance-Move muss ich anerkennen! Dann eine Runde!!"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*Die Bibliotheks-Annex. Ein älteres Gebäude als das Hauptgebäude. Kaum Schüler hier. Ich gehe die Treppe hoch, und am Ende des Flurs steht Yuna. An die Wand gelehnt, ein Buch in der Hand.*"
+        "text": "*Der Bibliotheksanbau. Ein älteres Gebäude als das Hauptgebäude. Kaum Schüler hier. Ich gehe die Treppe hoch, und am Ende des Flurs steht Yuna. An die Wand gelehnt, ein Buch in der Hand.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {
@@ -236,7 +236,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "{name}",
-        "text": "*Ein Schatten huscht über Yunas Gesicht. Ich weiß nicht, wer dieses ‚jemand' war, aber—*"
+        "text": "*Ein Schatten huscht über Yunas Gesicht. Ich weiß nicht, wer diese Person war, aber —*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",

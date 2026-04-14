@@ -234,7 +234,7 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Klassenlehrerin",
-        "text": "Dann habe ich die Lehramtsprüfung gemacht. Koreanischlehrerin. — Jemand, die mal Romane geschrieben hat, unterrichtet jetzt Literatur. Ziemlich ironisch, oder?"
+        "text": "Dann habe ich die Lehramtsprüfung gemacht. Deutschlehrerin. — Eine, die früher Romane geschrieben hat, unterrichtet jetzt Literatur. Ziemlich ironisch, oder?"
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Klassenlehrerin",
@@ -344,7 +344,7 @@
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",
-        "text": "...Die Person, die zählt. Was, wenn das deine Lehrerin ist?"
+        "text": "...Die Person, die zählt. Was, wenn das ich bin?"
     },
     "hidden_nurse_d3_11": {
         "name": "Schulkrankenschwester",
@@ -362,7 +362,7 @@
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
-        "text": "...Ich bin nicht früh gekommen. Schülervertreter-Angelegenheiten."
+        "text": "...Ich bin nicht früh gekommen. Hatte was für den Schülerrat zu erledigen."
     },
     "morning3_seo_gate_warm_3": {
         "name": "{name}",
@@ -382,7 +382,7 @@
     },
     "morning3_seo_gate_cold_3": {
         "name": "{name}",
-        "text": "*Ihr Ton ist sachlich. Seoyeons Rücken wird kleiner, als sie das Tor passiert.*"
+        "text": "*Ihr Ton ist sachlich. Seoyeon entfernt sich durchs Tor, wird immer kleiner.*"
     },
     "morning3_yuna_gate_warm_1": {
         "name": "{name}",
@@ -454,7 +454,7 @@
     },
     "morning3_dain_gate_5_b": {
         "name": "{name}",
-        "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines ngh hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
+        "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines 'uff' hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
     },
     "morning3_react_yuna_1_b": {
         "name": "{name}",
@@ -770,11 +770,11 @@
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
-        "text": "*Der Desinfektionsgeruch wurde plötzlich stärker. Ein Schritt mehr von hier — und ich glaube, ich könnte sie nicht mehr 'Frau Lehrerin' nennen. ...Was? — Ich drehte mich um. Die Krankenschwester schaut aus dem Fenster. Sie lächelt nicht. Ein Ausdruck, den ich noch nie gesehen habe.*"
+        "text": "*Der Desinfektionsgeruch wurde plötzlich stärker. Ein Schritt mehr von hier — und ich glaube, ich könnte sie nicht mehr nur als Schulkrankenschwester sehen. ...Was? — Ich drehte mich um. Sie schaut aus dem Fenster. Sie lächelt nicht. Ein Ausdruck, den ich noch nie gesehen habe.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Heute gibt's also Eieromelett."
+        "text": "Heute gibt's also gerolltes Omelett."
     },
     "morning3_end_b": {
         "name": "Yuna",

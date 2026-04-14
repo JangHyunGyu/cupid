@@ -17,11 +17,11 @@
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*Blickt weg und streicht sich die Haare hinter die Ohren.* ...Lass uns ein bisschen frische Luft schnappen."
+        "text": "*Blickt weg und streicht sich eine Strähne hinter das Ohr.* ...Lass uns kurz ein Stück gehen."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "Ist mir gerade eingefallen."
+        "text": "Kam gerade so raus."
     },
     "date_seo_pretty_high_4": {
         "name": "{name}",
@@ -29,11 +29,11 @@
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
-        "text": "...Was soll das jetzt? Kündig sowas wenigstens vorher an."
+        "text": "...Was soll das jetzt? Warn mich wenigstens vor, bevor du so was sagst."
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "Klar. Hab mich heute extra rangehalten."
+        "text": "Klar. Hab mir heute extra Mühe gegeben."
     },
     "date_seo_walk": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "date_seo_duck": {
         "name": "Seoyeon",
-        "text": "Schön, wie unkompliziert die sind. Brot rüberwerfen, schon kommen sie. Wirfst du nichts, kommen sie nicht."
+        "text": "Die sind so schön unkompliziert. Gibst du ihnen Brot, kommen sie. Gibst du nichts, kommen sie nicht."
     },
     "date_seo_duck_2": {
         "name": "{name}",
@@ -79,7 +79,7 @@
         "name": "{name}",
         "text": "*Was sage ich?*",
         "choices": [
-            "Zum ersten Mal seh ich dich ohne Uniform.",
+            "Ich seh dich zum ersten Mal ohne Uniform.",
             "Deine Augen sehen heute anders aus."
         ]
     },
@@ -161,7 +161,7 @@
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "Du bist da!! Fast zu spät, oder?!"
+        "text": "Du bist da!! Hätt nicht viel gefehlt und du wärst zu spät gewesen!!"
     },
     "date_dain_3": {
         "name": "{name}",
@@ -175,7 +175,7 @@
         "name": "{name}",
         "text": "*Das wird langsam zum Muster.*",
         "choices": [
-            "Die Kappe steht dir.",
+            "Die Kappe ist cool.",
             "Warum sieht Sportkleidung an dir so gut aus?"
         ]
     },
@@ -253,7 +253,7 @@
     },
     "pre_confess_minsu": {
         "name": "Minsu",
-        "text": "Hey, du bist auf deinem Date, oder? Nur eine Sache"
+        "text": "Hey, du bist grad auf Date, oder? Ich sag nur eins"
     },
     "pre_confess_minsu_2": {
         "name": "Minsu",
@@ -293,11 +293,11 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "Yuna",
-        "text": "*Ohren werden rot* ...Reicht."
+        "text": "*Ihre Ohren werden rot.* ...Reicht."
     },
     "date_yuna_bookstore_2_b": {
         "name": "{name}",
-        "text": "Das erste Mal."
+        "text": "Zum ersten Mal."
     },
     "date_yuna_earphone_2_b": {
         "name": "{name}",
@@ -325,11 +325,11 @@
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
-        "text": "*Quietschend* Full Combo!! Hast du das gesehen?!"
+        "text": "*Kreischt* Full Combo!! Hast du das gesehen?!"
     },
     "date_dain_shop_2_b": {
         "name": "Dain",
-        "text": "*Dreht sich weg* Ist nichts! Komm, lass gehen!"
+        "text": "*Dreht sich weg* Nichts! Komm, gehen wir!"
     },
     "date_seo_end_c": {
         "name": "Seoyeon",

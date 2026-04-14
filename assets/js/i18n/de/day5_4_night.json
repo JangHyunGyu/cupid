@@ -29,7 +29,7 @@
     },
     "perfect_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeons Dach. Sie steht zwischen den Topfpflanzen, die sie selbst gezogen hat.*"
+        "text": "*Das Dach — Seoyeons Platz. Sie steht zwischen den Topfpflanzen, die sie selbst gezogen hat.*"
     },
     "perfect_seo_1_b": {
         "name": "{name}",
@@ -394,7 +394,7 @@
     "true_epilogue_4": {},
     "true_epilogue_4_seo": {
         "name": "{name}",
-        "text": "*Ihre Familie ist nicht besser geworden. Die Anrufe ihrer Mutter sind immer noch kalt, und das einstudierte Lächeln hat nicht aufgehört. — Aber jetzt gibt es jemanden, dem sie ihr ungeübtes Gesicht zeigen kann. Ab jetzt.*"
+        "text": "*Ihre Familie ist nicht besser geworden. Die Anrufe ihrer Mutter sind immer noch kalt, und das einstudierte Lächeln hat nicht aufgehört. — Aber jetzt gibt es jemanden, dem sie ihr echtes, nicht einstudiertes Gesicht zeigen kann. Ab jetzt.*"
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
@@ -498,7 +498,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Eine Nachricht von Seoyeon: 'Hab dir morgen den Dachschlüssel kopiert. — Genehmigung, Genehmigung.' Könnte doch einfach Einladung sagen.*"
+        "text": "*Eine Nachricht von Seoyeon: 'Hab den Dachschlüssel für morgen nachmachen lassen. — Ist 'ne Erlaubnis, klar?' Könnte ja auch einfach 'Einladung' sagen.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -803,7 +803,7 @@
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*Aus dem 'nächsten Mal' wurde das übernächste und wieder das nächste. Jeden Donnerstag derselbe Platz. Als der Barista fragte 'Paartisch?', konnte keiner von uns antworten. An einem Donnerstag. Statt ins Café gingen wir durch die Straßen. Nebeneinander. Beide taten so, als bemerkten wir nicht, dass sich unsere Schatten überlappten.*"
+        "text": "*Aus dem 'nächsten Mal' wurde das übernächste und wieder das nächste. Jeden Donnerstag derselbe Platz. Als die Bedienung fragte 'Seid ihr ein Paar?', konnte keiner von uns antworten. An einem Donnerstag. Statt ins Café gingen wir durch die Straßen. Nebeneinander. Beide taten so, als bemerkten wir nicht, dass sich unsere Schatten überlappten.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Klassenlehrerin",
@@ -843,7 +843,7 @@
     },
     "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*Das Donnerstags-Café wurde unser Café. Das Personal fragt nicht mehr 'Pärchentisch?' Sie führen uns einfach zu unserem Platz.*"
+        "text": "*Das Donnerstags-Café wurde unser Café. Das Personal fragt nicht mehr 'Seid ihr ein Paar?' — Sie führen uns einfach zu unserem Platz.*"
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
@@ -1012,11 +1012,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Morgen. Ein Pflaster klebt am Küchentisch. Das heutige Menü steht drauf. — Ihre Version eines Notizzettels.*"
+        "text": "*Morgen. Am Küchentisch klebt ein Pflaster. Darauf steht das heutige Menü. — Ihre Art von Post-it.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Sie kehrte ans Universitätskrankenhaus zurück. Diesmal nennen die Patienten ihren Namen. — Frau Lee Juwon.*"
+        "text": "*Sie kehrte ans Universitätskrankenhaus zurück. Diesmal rufen die Patienten sie beim Namen. — Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -1036,7 +1036,7 @@
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Heute wirkt sie mehr wie ein Mensch als eine Lehrerin.*"
+        "text": "*Heute wirkt sie mehr wie ein Mensch als wie eine Schulkrankenschwester.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "Schulkrankenschwester",
@@ -1067,11 +1067,11 @@
         "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit vollständig verschwunden. — Das ist ihre Aufrichtigkeit.*"
     },
     "hidden_true_nurse_5_c": {
-        "name": "School Nurse",
+        "name": "Schulkrankenschwester",
         "text": "Ich wusste, dass es nicht geht. Deshalb hab ich es immer als Witz abgetan."
     },
     "hidden_true_nurse_5_d": {
-        "name": "School Nurse",
+        "name": "Schulkrankenschwester",
         "text": "Aber du hast jedes Mal gemerkt, wenn ich was abgetan hab. Sogar das hellgrüne Notizbuch."
     },
     "hidden_true_nurse_5_e": {
@@ -1084,7 +1084,7 @@
     },
     "hidden_true_nurse_6": {
         "name": "Schulkrankenschwester",
-        "text": "Deshalb, nach der Abschlussfeier — komm dann wieder. Nicht ins Krankenzimmer, sondern hierher. Dann sehe ich dich nicht als Lehrerin, sondern einfach als Lee Juwon."
+        "text": "Deshalb — komm nach der Abschlussfeier wieder. Nicht ins Krankenzimmer, sondern hierher. Dann bin ich nicht mehr die Krankenschwester, sondern einfach Lee Juwon."
     },
     "hidden_true_nurse_7": {
         "name": "{name}",

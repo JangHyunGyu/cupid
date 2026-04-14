@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Klassenlehrerin",
-        "text": "Hab es sieben Jahre lang niemandem gezeigt. — Eigentlich nicht mein Job."
+        "text": "Hab es sieben Jahre lang niemandem gezeigt. — Gehört eigentlich nicht zu meinen Aufgaben."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_homeroom_d5_choice_b": {
         "name": "Klassenlehrerin",
-        "text": "*Schmunzelt* Wenn es eine ganze Seite ist — das ist keine Rezension mehr, das ist eine Kritik."
+        "text": "*Schmunzelt* Eine ganze Seite — das sind keine Eindrücke mehr, das ist eine Rezension."
     },
     "hidden_homeroom_d5_choice_b_b": {
         "name": "{name}",
@@ -89,11 +89,11 @@
     },
     "hidden_homeroom_d5_choice_b_c": {
         "name": "Klassenlehrerin",
-        "text": "*Sie lacht kurz, dann wird ihr Ausdruck ernst.* ...Wenn es eine gute Rezension ist. Ich glaube, ich könnte noch eins schreiben."
+        "text": "*Sie lacht kurz, dann wird ihr Ausdruck ernst.* ...Wenn es eine gute Rezension ist. Ich glaube, ich könnte noch eines schreiben."
     },
     "hidden_homeroom_d5_choice_b_d": {
         "name": "{name}",
-        "text": "*Noch eins. — Die Person, die nach sieben Jahren fertig wurde, sagt 'noch eins'.*"
+        "text": "*Noch eines. — Die Person, die nach sieben Jahren fertig geworden ist, sagt 'noch eines'.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d5_7": {
         "name": "Klassenlehrerin",
-        "text": "Nach dem Abschluss — treffen wir uns. Nicht als Lehrerin und Schüler."
+        "text": "Nach dem Abschluss — sehen wir uns einmal. Nicht als Lehrerin, sondern unter meinem richtigen Namen."
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
@@ -123,7 +123,7 @@
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "Und wenn ich mich nicht verletze?"
+        "text": "Darf ich auch kommen, wenn nichts wehtut?"
     },
     "hidden_nurse_d5_4": {
         "name": "Schulkrankenschwester",
@@ -138,7 +138,7 @@
         "text": "*Ich bin nicht verletzt. Sie weiß das. Sie fragt trotzdem.*",
         "choices": [
             "Ja, weil es das letzte Mal ist. Nur einmal.",
-            "Kein Pflaster — Ihre Telefonnummer"
+            "Statt Pflaster — Ihre Nummer."
         ]
     },
     "hidden_nurse_d5_choice_a": {
@@ -247,11 +247,11 @@
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Klassenlehrerin",
-        "text": "*Streicht sich die Haare zurück* ...Buchbesprechungen nehme ich nicht an."
+        "text": "*Streicht sich die Haare zurück* ...Bloße Leseeindrücke nehme ich nicht an."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
-        "text": "Das stimmt doch nicht."
+        "text": "Das ist geflunkert."
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Klassenlehrerin",
@@ -295,7 +295,7 @@
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
-        "text": "Frau..."
+        "text": "Frau Krankenschwester..."
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
@@ -335,7 +335,7 @@
     },
     "hidden_nurse_d5_3_d": {
         "name": "{name}",
-        "text": "Frau...?"
+        "text": "Frau Krankenschwester...?"
     },
     "hidden_nurse_d5_3_e": {
         "name": "Schulkrankenschwester",
@@ -387,7 +387,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡' Das Herz diesmal — kein medizinisches Interesse.*"
+        "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡' Dieses Herz hat diesmal nichts mit medizinischem Interesse zu tun.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
