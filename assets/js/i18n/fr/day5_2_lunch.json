@@ -53,7 +53,7 @@
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "J'ai le droit, c'est pour ça que je te la donne. — Monte prendre l'air quand tu en as besoin."
+        "text": "J'ai le droit, c'est pour ça que je te la donne. — Monte prendre l'air de temps en temps."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Elle me tend le cahier. Ses mains tremblent. — C'est la première fois que Yuna donne directement son écriture à quelqu'un.*"
+        "text": "*Elle me tend le cahier. Sa main tremble légèrement. — C'est la première fois que Yuna donne directement son écriture à quelqu'un.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "Hé, un dernier pierre-feuille-ciseaux ?"
+        "text": "Hé, on fait un dernier pierre-feuille-ciseaux ?"
     },
     "tour_dain_4": {
         "name": "{name}",

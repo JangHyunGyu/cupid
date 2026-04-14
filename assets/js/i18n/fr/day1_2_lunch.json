@@ -9,7 +9,7 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "Hé ! T'as mangé ?! On va à la boutique ! On parie pour du pain, le perdant paie !"
+        "text": "Hé ! T'as mangé ?! On va au kiosque ! Un pari sur le pain, le perdant paie !"
     },
     "lunch_start_6": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "lunch_seo_21": {
         "name": "Seoyeon",
-        "text": "*petit sourire* J’ai demandé pour l’école, et tu réponds sur la cuisine."
+        "text": "*petit sourire* Je t’interroge sur l’école, et toi tu me parles cuisine."
     },
     "lunch_seo_22": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
-        "text": "*\"...\" Elle est assise sans mot.*"
+        "text": "*\"...\" Elle est assise, sans un mot.*"
     },
     "lunch_yuna_2": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Quelque chose est glissé dans le bureau de Yuna. Un vieux marque-page. Il y a de l'écriture dessus — mais je n'arrive pas à lire. Yuna pose inconsciemment sa main dessus. Quelque chose de précieux, peut-être. Je prends un livre au hasard dans les rayonnages et je l'ouvre.*"
+        "text": "*Quelque chose est glissé sur le bureau de Yuna. Un vieux marque-page. Il y a de l'écriture dessus — mais je n'arrive pas à lire. Yuna pose inconsciemment sa main dessus. Quelque chose de précieux, peut-être. Je prends un livre au hasard dans les rayonnages et je l'ouvre.*"
     }
 }

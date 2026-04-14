@@ -13,7 +13,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "L’omelette est un peu salée. 6 points."
+        "text": "L’omelette roulée est un peu salée. 6 points."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna prend ses baguettes en silence. Plus vite qu'avant. Je me suis fait piller. Par les trois en même temps.*"
+        "text": "*Yuna reprend ses baguettes en silence. Plus vite qu'avant. Je me suis fait piller. Par les trois en même temps.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
@@ -55,7 +55,7 @@
     },
     "lunch3_give_seo_1": {
         "name": "Seoyeon",
-        "text": "...Merci. Tu as du goût."
+        "text": "...Merci. T’as le coup d’œil."
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
@@ -176,7 +176,7 @@
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
-        "text": "Je ne prends pas de position ambiguë. Si c'est le cas, je préfère me retirer complètement."
+        "text": "Je ne fais pas dans les demi-mesures. Si c'est comme ça, je préfère me retirer complètement."
     },
     "lunch3_expose_honest_6": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Croque dans l'omelette sans hésiter.*"
+        "text": "*Croque dans l'omelette roulée sans hésiter.*"
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",

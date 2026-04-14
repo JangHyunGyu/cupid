@@ -21,7 +21,7 @@
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "C’est sorti tout seul."
+        "text": "Ça vient de me sortir, comme ça."
     },
     "date_seo_pretty_high_4": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Devant le café. Yuna est adossée au mur. Une robe noire et un petit sac bandoulière. Yuna ressemblait à ça ? — C'est la première fois que je la vois sans uniforme.*"
+        "text": "*Devant le café. Yuna est adossée au mur. Une robe noire et un petit sac bandoulière. Yuna avait cette allure ? — C'est la première fois que je la vois sans uniforme.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -253,7 +253,7 @@
     },
     "pre_confess_minsu": {
         "name": "Minsu",
-        "text": "Hé, t'es en rendez-vous là ? Juste un truc"
+        "text": "Hé, t'es en rendez-vous là ? Juste un mot"
     },
     "pre_confess_minsu_2": {
         "name": "Minsu",

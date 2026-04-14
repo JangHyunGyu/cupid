@@ -134,7 +134,7 @@
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*'J'étais'. Passe. — Quelque chose me dit qu'il vaut mieux ne pas demander.*"
+        "text": "*'J'étais'. Au passé. — Quelque chose me dit qu'il vaut mieux ne pas demander.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
@@ -362,7 +362,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Y en a pas eu depuis cet aîné."
+        "text": "Personne depuis ce senior."
     },
     "after2_yuna_choice": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement — je remarque un cahier qui dépasse du tiroir de son bureau. Couverture vert tendre. La page ouverte contient un texte en forme de lettre. 'Yujin, aujourd'hui—' Je n'en lis pas plus que l'infirmière referme le tiroir.*"
+        "text": "*En vérifiant le pansement — je remarque un cahier qui dépasse du tiroir de son bureau. Couverture vert tendre. La page ouverte contient un texte en forme de lettre. 'Yujin, aujourd'hui—' Je n'ai pas le temps d'en lire plus, l'infirmière referme le tiroir.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",

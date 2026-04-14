@@ -122,7 +122,7 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Tu es libre ce week-end ? Il y a un endroit où j’aimerais aller."
+        "text": "Tu es libre ce week-end ? J'ai un endroit où j'aimerais aller."
     },
     "morning3_date_seo_choice": {
         "name": "{name}",
@@ -466,11 +466,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*La main du professeure principale est posée sur la feuille de manuscrit. Entre les pages retournées, on aperçoit une écriture dense.*"
+        "text": "*La main de la professeure principale est posée sur la feuille de manuscrit. Entre les pages retournées, on aperçoit une écriture dense.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
-        "text": "*L'expression du professeure principale redevient vite normale. Son visage indifférent habituel. — Le changement est trop rapide.*"
+        "text": "*L'expression de la professeure principale redevient vite normale. Son visage indifférent habituel. — Le changement est trop rapide.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Professeure principale",
@@ -494,7 +494,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Une demi-seconde. Figée. — C'est une expression que je n'ai jamais vue chez la prof. Ni indifférente, ni sèche. Le visage de quelqu'un pris sur le fait.*"
+        "text": "*Une demi-seconde. Figée. — C'est une expression que je n'ai jamais vue chez la prof. Ni indifférente, ni sèche. Le visage de quelqu'un pris sur le fait. La prof retourne rapidement la feuille de manuscrit.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professeure principale",
@@ -586,7 +586,7 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Professeure principale",
-        "text": "C'est calme ici. — La salle des profs sent le café et tout le monde vous observe."
+        "text": "C'est calme ici. — La salle des profs sent le café, et on se surveille entre collègues."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",

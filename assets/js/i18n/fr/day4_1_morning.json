@@ -53,7 +53,7 @@
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*Weekend. Je passe devant l'école.*"
+        "text": "*Week-end. Je passe devant l'école.*"
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "hidden_homeroom_d4_3": {
         "name": "{name}",
-        "text": "Madame ? C'est le weekend, qu'est-ce que vous faites là ?"
+        "text": "Madame ? C'est le week-end, qu'est-ce que vous faites là ?"
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Professeure principale",
-        "text": "Disons que c'est un prolongement de l'intérêt pédagogique. *marmonnant doucement* Un café, ça va, non ? — Enfin, t'es élève, donc un jus."
+        "text": "Disons que c'est dans la continuité de l'intérêt pédagogique. *marmonnant doucement* Un café, ça va, non ? — Enfin, t'es élève, donc un jus."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
@@ -113,11 +113,11 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Professeure principale",
-        "text": "Première fois que je prends un verre avec un élève en dehors de l'école. Franchement ? Un peu gênant."
+        "text": "Première fois que je prends un café avec un élève en dehors de l'école. Franchement ? Un peu gênant."
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Professeure principale",
-        "text": "...Un peu. Après que tu l'aies vu hier — bizarrement, j'ai pu écrire un peu plus."
+        "text": "...Un peu. Après que tu l'as vu hier — bizarrement, j'ai pu écrire un peu plus."
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Professeure principale",
@@ -241,7 +241,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*Son « tu es venu » est d'une demi-octave plus basse que d'habitude. — J'ai appris à lire les émotions de cette personne par la tonalité.*"
+        "text": "*Son « tu es venu » est d'un demi-ton plus bas que d'habitude. — J'ai appris à lire les émotions de cette personne par la tonalité.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -269,7 +269,7 @@
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Infirmière",
-        "text": "...Reviendras-tu à l'infirmerie après tes études ?"
+        "text": "...Tu reviendras à l'infirmerie une fois diplômé ?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",

@@ -80,7 +80,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Je sors du gymnase et reviens dans le couloir. Seoyeon a fait semblant que tout allait bien. Dain n'a même pas pu faire ça. D'une certaine façon, ça fait encore plus mal.*"
+        "text": "*Je sors du gymnase et reviens dans le couloir. Seoyeon a fait semblant que tout allait bien. Dain n'a même pas pu faire ça. — Ça fait d'autant plus mal, des deux côtés.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",
@@ -679,7 +679,7 @@
     },
     "after3_yuna_decode_trap_9": {
         "name": "{name}",
-        "text": "*Yuna met son sac sur l'épaule et se lève. Elle se dirige vers l'échelle. Elle ne se retourne pas comme d'habitude — non. Cette fois, elle *ne peut pas* se retourner.*"
+        "text": "*Yuna met son sac sur l'épaule et se lève. Elle se dirige vers l'échelle. Ce n'est pas qu'elle ne se retourne pas comme d'habitude — cette fois, elle *ne peut pas*.*"
     },
     "after3_yuna_decode_trap_10": {
         "name": "Yuna",

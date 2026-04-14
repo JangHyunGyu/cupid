@@ -98,7 +98,7 @@
     },
     "choice_joke_1": {
         "name": "Seoyeon",
-        "text": "C'est gratuit. — Mais ça compte des intérêts plus tard."
+        "text": "C'est gratuit. — Mais avec des intérêts plus tard."
     },
     "choice_joke_2": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon me fait visiter en marchant. Les élèves qu'on croise la saluent. Elle leur rend leur salut d'un regard, un par un. Elle lève la main, naturellement. Apparemment, les populaires de ce lycée sont déjà désignés.*"
+        "text": "*Seoyeon me fait visiter en marchant. Les élèves qu'on croise la saluent. Elle leur rend leur salut d'un regard, un par un. Elle lève la main, naturellement. Visiblement, on sait déjà qui sont les populaires de ce lycée.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "hallway_12": {
         "name": "Seoyeon",
-        "text": "Ça dépend de toi."
+        "text": "Si tu te débrouilles bien."
     },
     "hallway_13": {
         "name": "{name}",
@@ -246,11 +246,11 @@
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'T'es tombé sur la place bruyante. — Yuna' Encre violet pâle. — Un peu de la tension retombe.*"
+        "text": "*'T'es tombé sur la place bruyante. — Yuna' Encre violet pâle. — La tension retombe un peu.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Je regarde vers Yuna. Elle fixe toujours la fenêtre. Mais j'ai l'impression que le bout de son oreille a bougé. Le mot vient de la fille qui regardait dehors tout à l'heure. Faire semblant de s'en moquer, ou s'en moquer vraiment.*"
+        "text": "*Je regarde vers Yuna. Elle fixe toujours la fenêtre. Mais j'ai l'impression que le bout de son oreille a bougé. Le mot vient de la fille qui regardait dehors tout à l'heure. Elle fait semblant de s'en moquer, ou elle s'en moque vraiment ?*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

@@ -248,7 +248,7 @@
     },
     "after_nurse_enter_6": {
         "name": "Infirmière",
-        "text": "Pas de fièvre... C'est peut-être juste un coup de fatigue."
+        "text": "Pas de fièvre... Tu dois avoir la tension un peu basse."
     },
     "after_nurse_enter_7": {
         "name": "Infirmière",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Elle fait un signe de la main et repart en courant. — En freinant, elle a brièvement saisi son genou droit. Un demi-seconde. Elle a aussitôt retiré sa main, mais je l'ai vu.*"
+        "text": "*Elle fait un signe de la main et repart en courant. — En freinant, elle a brièvement saisi son genou droit. Une demi-seconde. Elle a aussitôt retiré sa main, mais je l'ai vu.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -474,7 +474,7 @@
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
-        "text": "Ça vous embête ?"
+        "text": "'Ça vous inquiète' ?"
     },
     "after_nurse_enter_11_c": {
         "name": "Infirmière",
