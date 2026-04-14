@@ -5,23 +5,23 @@
     },
     "confess_seo_2": {
         "name": "Seoyeon",
-        "text": "Hay un último lugar que quiero mostrarte."
+        "text": "Me queda un sitio por enseñarte."
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*La azotea. El atardecer tiñe la escuela de dorado. El mismo lugar donde vine por primera vez en el Día 1.*"
+        "text": "*La azotea. El atardecer tiñe el instituto. El mismo sitio al que vine el Día 1.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
-        "text": "*La azotea. El atardecer tiñe la escuela. Un lugar que se volvió familiar en pocos días.*"
+        "text": "*La azotea. El atardecer tiñe el instituto. En unos días se ha vuelto un sitio familiar.*"
     },
     "confess_seo_4": {
         "name": "{name}",
-        "text": "*Seoyeon está apoyada en la barandilla. El viento le agita el pelo. — Se lo aparta con el meñique. Esa costumbre.*"
+        "text": "*Seoyeon está apoyada en la barandilla. El viento le mueve el pelo. — Se lo aparta con el meñique. Esa manía suya.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*El corazón me late fuerte. En mi antigua escuela también era así. — Entonces, me tragué esas palabras.*"
+        "text": "*El corazón me va a mil. En mi antiguo instituto también me pasaba. — Aquella vez me tragué las palabras.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Estoy nervioso. Aun así, esta vez quiero decirlo bien.*",
+        "text": "*Los nervios me pueden. Aun así, esta vez quiero decirlo bien.*",
         "choices": [
             "Seoyeon. Espera un momento.",
             "...Hace buen viento."
@@ -37,27 +37,27 @@
     },
     "confess_seo_yes_1": {
         "name": "{name}",
-        "text": "*Seoyeon se da la vuelta. El viento le revuelve el pelo.*"
+        "text": "*Seoyeon se gira. El viento le revuelve el pelo.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*La respiración se me sube hasta la garganta. Aun así, esta vez no voy a huir.*"
+        "text": "*Se me atraganta la respiración. Aun así, esta vez no voy a huir.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "*Recuerdo las palabras que no pude decir en mi antigua escuela. Las repetí cientos de veces — 'qué habría pasado si lo hubiera dicho entonces.' — Esta vez me confesaré.*"
+        "text": "*Me acuerdo de lo que no fui capaz de decir en mi antiguo instituto. Cientos de veces me repetí 'y si lo hubiera dicho entonces...' — Esta vez lo digo.*"
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Todo el mundo te ve como si no tuvieras una sola grieta. Pero yo no dejo de acordarme de esos momentos en los que se te cae la expresión por un segundo."
+        "text": "Seoyeon. Todos te ven como si fueras impecable. Pero yo no me puedo quitar de la cabeza esos segundos en los que se te cae la máscara."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
-        "text": "*Las palabras son un desastre. No preparé nada de esto, pero no puedo parar.*"
+        "text": "*Me está saliendo fatal. No lo tenía preparado, pero no puedo parar.*"
     },
     "confess_seo_yes_6": {
         "name": "{name}",
-        "text": "No cuando eras la presidenta del consejo. Hablo de los momentos en los que eras solo Seoyeon. Eso era lo que me gustaba."
+        "text": "No la presidenta del consejo. Hablo de esos momentos en los que eras solo Seoyeon. Eso era lo que me gustaba."
     },
     "confess_seo_yes_7": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "confess_seo_yes_8": {
         "name": "{name}",
-        "text": "*Seoyeon no dice nada. Sus labios tiemblan. No es la presidenta del consejo estudiantil — solo una chica, de pie ahí.*"
+        "text": "*Seoyeon no dice nada. Le tiemblan los labios. No es la presidenta del consejo — es solo una chica, ahí de pie.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -73,11 +73,11 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...Cuando dijiste \"qué honor\" en la puerta de la escuela. Desde entonces, me quedé un poco pensativa."
+        "text": "...Cuando en la puerta del instituto me dijiste \"es demasiado para mí\". Desde entonces no podía dejar de darle vueltas."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "Me costó mucho tiempo sacar este tema."
+        "text": "Me ha costado muchísimo sacar el tema."
     },
     "confess_seo_yes_11_b": {
         "name": "{name}",
@@ -85,47 +85,47 @@
     },
     "confess_seo_yes_12": {
         "name": "{name}",
-        "text": "*Seoyeon extiende su meñique. El mismo meñique que vi el primer día. — Entonces pensé que era solo un hábito, pero esta es la forma de Seoyeon de hacer una promesa.*"
+        "text": "*Seoyeon me tiende el meñique. El mismo meñique del primer día. — Entonces pensé que era una manía, pero esta es su forma de prometer algo.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "...Hace buen viento."
+        "text": "...Qué bien sopla el viento."
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Dije lo mismo el Día 1. Entonces lo decía en serio. Ahora es huir.*"
+        "text": "*Dije lo mismo el Día 1. Entonces iba en serio. Ahora es escaparme.*"
     },
     "confess_seo_no_3": {
         "name": "{name}",
-        "text": "*Seoyeon sonríe. Una sonrisa ensayada. — Se da la vuelta y camina. Al tercer paso, se detiene.*"
+        "text": "*Seoyeon sonríe. Una sonrisa ensayada. — Se gira y empieza a andar. Al tercer paso, se para.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
-        "text": "...La próxima vez que vengas aquí, trae algo diferente que decir."
+        "text": "...La próxima vez que vengas, trae algo distinto que decir."
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
-        "text": "*Su espalda está recta. Está temblando.*"
+        "text": "*Tiene la espalda recta. Le tiembla.*"
     },
     "confess_yuna_1": {
         "name": "{name}",
-        "text": "*La cita está llegando a su fin. Yuna se detiene.*"
+        "text": "*La cita está llegando a su fin. Yuna se para.*"
     },
     "confess_yuna_2": {
         "name": "Yuna",
-        "text": "...Hay un último lugar al que ir."
+        "text": "...Me queda un sitio por enseñarte."
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. Un rincón secreto de lectura. El atardecer se filtra por la ventana. El mismo lugar donde vine por primera vez en el Día 2.*"
+        "text": "*El anexo de la biblioteca. El rincón secreto de lectura. El atardecer se cuela por la ventana. El mismo sitio al que vine el Día 2.*"
     },
     "confess_yuna_3b": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. El atardecer se filtra por las ventanas. Un lugar que se volvió familiar en pocos días.*"
+        "text": "*El anexo de la biblioteca. El atardecer se cuela por la ventana. En unos días se ha vuelto un sitio familiar.*"
     },
     "confess_yuna_4": {
         "name": "{name}",
-        "text": "*Yuna está sentada en el sofá, mirándome. Como si hubiera estado esperando.*"
+        "text": "*Yuna está sentada en el sofá, mirándome. Como si me estuviera esperando.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
@@ -133,10 +133,10 @@
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*Se me ha acortado la respiración. Si este silencio me resultaba cómodo, era porque era con Yuna. Tengo que decirlo.*",
+        "text": "*Se me ha cortado la respiración. Si este silencio era cómodo era porque era con Yuna. Tengo que decírselo.*",
         "choices": [
             "Yuna. Déjame preguntarte una cosa.",
-            "...Este sitio está muy bien."
+            "...Este sitio mola mucho."
         ]
     },
     "confess_yuna_yes_1": {
@@ -149,19 +149,19 @@
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna. Al principio pensé que tu silencio era una muralla. Pero no era eso."
+        "text": "Yuna. Al principio pensé que tu silencio era un muro. Pero no lo era."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
-        "text": "Cuando estoy a tu lado, el silencio nunca me incomodó."
+        "text": "A tu lado, el silencio nunca me ha incomodado."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*Frente a Yuna, no necesito un discurso largo. Ella lee entre líneas.*"
+        "text": "*Con Yuna no hacen falta discursos largos. Ella lee entre líneas.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "Tú eras — la persona que se sentaba a mi lado en vez de hablar. Ese silencio era más cálido que las palabras de cualquiera."
+        "text": "Tú eras — la persona que, en vez de hablar, se sentaba a mi lado. Ese silencio me calentaba más que cualquier palabra."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*Acabo de decir la frase más larga de esta habitación. En el territorio de Yuna.*"
+        "text": "*Acabo de soltar la frase más larga de esta sala. — En el territorio de Yuna.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
@@ -177,11 +177,11 @@
     },
     "confess_yuna_yes_8": {
         "name": "{name}",
-        "text": "*La expresión indiferente de Yuna se quiebra. Su voz somnoliente desaparece, reemplazada por la más pequeña — casi inaudible — voz. Aprieta su manga con fuerza.*"
+        "text": "*La cara inexpresiva de Yuna se agrieta. Su voz soñolienta desaparece y queda una vocecita mínima — casi inaudible. Aprieta el puño de la manga.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*Se agarra la manga con fuerza.*"
+        "text": "*Aprieta el puño de la manga.*"
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
@@ -193,47 +193,47 @@
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*Esta vez. Alguien se fue antes. Yuna está reabriendo esa herida, y aun así me agarra.*"
+        "text": "*'Esta vez'. — Alguien se fue antes. Yuna vuelve a abrir esa herida y, aun así, me sujeta.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
-        "text": "...Este lugar es realmente bonito."
+        "text": "...Este sitio mola mucho."
     },
     "confess_yuna_no_2": {
         "name": "{name}",
-        "text": "*Yuna es de las que leen entre líneas. Seguro que sabe que esto no es más que una huida.*"
+        "text": "*Yuna lee entre líneas. Sabrá perfectamente que esto es una huida.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
-        "text": "*Yuna toma un libro. Mira la portada, pero no está leyendo.*"
+        "text": "*Yuna coge un libro. Mira la portada, pero no está leyendo.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
-        "text": "...El final aún no ha llegado."
+        "text": "...Aún no es el final."
     },
     "confess_yuna_no_4_b": {
         "name": "{name}",
-        "text": "*A tres pasos, miré atrás. Yuna también me estaba mirando por encima de su libro.*"
+        "text": "*A los tres pasos, me giré. Yuna me miraba por encima del libro.*"
     },
     "confess_dain_1": {
         "name": "{name}",
-        "text": "*La cita está llegando a su fin. Dain corre hacia la escuela.*"
+        "text": "*La cita está llegando a su fin. Dain sale corriendo hacia el instituto.*"
     },
     "confess_dain_2": {
         "name": "Dain",
-        "text": "¡Último lugar! ¡¡Vamos!!"
+        "text": "¡El último! ¡¡Una parada más!!"
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*El gimnasio. Vacío. El atardecer se cuela por las ventanas sobre la cancha. El mismo lugar donde vinimos juntos por primera vez el Día 1.*"
+        "text": "*El gimnasio. Vacío. El atardecer se cuela por las ventanas y tiñe la pista. El mismo sitio al que vinimos juntos el Día 1.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
-        "text": "*El gimnasio. Vacío. El atardecer se filtra por las ventanas sobre la cancha. Un lugar donde se acumularon incontables recuerdos en pocos días.*"
+        "text": "*El gimnasio. Vacío. El atardecer se cuela por las ventanas y tiñe la pista. Un sitio donde en unos días se han amontonado un montón de recuerdos.*"
     },
     "confess_dain_4": {
         "name": "{name}",
-        "text": "*Dain tiene un balón en la mano. Como si nada. — Pero sus dedos están blancos. Lo aprieta con fuerza.*"
+        "text": "*Dain sostiene un balón. Como si nada. — Pero tiene los dedos blancos. Lo está apretando con fuerza.*"
     },
     "confess_dain_5": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*Parece que el suelo del gimnasio se tambalea. Yo sé reconocer el temblor que se esconde detrás de sus signos de exclamación.*",
+        "text": "*Parece que el suelo del gimnasio se tambalea. — El temblor que se esconde detrás de sus exclamaciones, lo conozco bien.*",
         "choices": [
             "Dain. Suelta la pelota.",
             "...¿Echamos otra?"
@@ -257,19 +257,19 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain. Yo... tengo algo que decirte."
+        "text": "Dain. Yo — tengo que decirte una cosa."
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "Cuando tus ojos no me miran — me cuesta respirar."
+        "text": "Cuando esos ojos no me miran — me agobio un poco."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*No es una confesión de broma. Pero para mí lo es todo.*"
+        "text": "*No es una confesión de piedra-papel-tijera. Pero para mí lo es todo.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "Por eso termino yendo hacia ti una y otra vez."
+        "text": "Por eso acabo yendo a buscarte una y otra vez."
     },
     "confess_dain_yes_6": {
         "name": "{name}",
@@ -281,39 +281,39 @@
     },
     "confess_dain_yes_8": {
         "name": "{name}",
-        "text": "*Dain se queda inmóvil. Sus ojos se humedecen lentamente sobre su rostro, desprovisto de risa. Se cubre la cara con ambas manos.*"
+        "text": "*Dain se queda inmóvil. Se le va la risa de la cara y solo la mirada se le humedece, poco a poco. Se tapa la cara con las dos manos.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
-        "text": "*Se cubre la cara con ambas manos. Entre los dedos se ven las mejillas rojas.*"
+        "text": "*Se tapa la cara con las dos manos. Entre los dedos se le ven las mejillas rojas.*"
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Espera, de verdad que creo que voy a llorar ahora mismo... Estoy feliz, ¿por qué me pasa esto...?"
+        "text": "...Espera, en serio que creo que me voy a poner a llorar... Estoy contenta, ¿por qué me pasa esto...?"
     },
     "confess_dain_yes_9_b": {
         "name": "{name}",
-        "text": "*Baja las manos y sonríe. Las lágrimas le corren por la cara.*"
+        "text": "*Baja las manos y sonríe. Le caen las lágrimas.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "Yo también te quiero. Muchísimo."
+        "text": "Tú también me gustas. Muchísimo."
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'Muchísimo.' — Dain siempre es así. Corta y sincera. Por eso le creo.*"
+        "text": "*'Muchísimo'. — Dain siempre es así. Corta y sincera. Por eso me la creo.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "¿...Jugamos otra ronda?"
+        "text": "...¿Echamos otra?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Puedo levantarle la pelota para el saque, pero tres palabras no me salen. Patético.*"
+        "text": "*Puedo colocarle un pase, pero tres palabras no me salen. Qué patético.*"
     },
     "confess_dain_no_3": {
         "name": "{name}",
-        "text": "*Dain bota un balón de voleibol. Una vez. Dos veces. — A la tercera, se detiene.*"
+        "text": "*Dain bota el balón de voleibol. Una vez. Dos veces. — A la tercera, para.*"
     },
     "confess_dain_no_4": {
         "name": "Dain",
@@ -321,6 +321,6 @@
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*Sin signos de exclamación. Va en serio.*"
+        "text": "*Sin exclamación. — Va en serio.*"
     }
 }

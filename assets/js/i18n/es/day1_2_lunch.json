@@ -54,19 +54,19 @@
     },
     "lunch_seo_8": {
         "name": "{name}",
-        "text": "*Seoyeon saca una lonchera de su bolso. Preparada pulcramente para dos.*"
+        "text": "*Seoyeon saca una fiambrera del bolso. Preparada con esmero, para dos.*"
     },
     "lunch_seo_9": {
         "name": "{name}",
-        "text": "...Eso es para dos personas."
+        "text": "...¿Esto es para dos?"
     },
     "lunch_seo_10": {
         "name": "Seoyeon",
-        "text": "Siempre preparo de más. Con el trabajo del consejo estudiantil, acabo saltándome comidas."
+        "text": "Entre el consejo estudiantil, a veces se me pasa la hora de comer. Siempre traigo de sobra."
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Desde el principio pensaba comer juntos. Abro la lonchera y los acompañamientos están cuidadosamente hechos. Rollito de huevo, salchicha, mini bolas de arroz.*"
+        "text": "*Desde el principio iba a comer conmigo. Abro la fiambrera y aparecen los acompañamientos, hechos con mimo. Rollito de huevo, salchicha, mini bolas de arroz.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -74,11 +74,11 @@
     },
     "lunch_seo_14": {
         "name": "Seoyeon",
-        "text": "Si la presidenta del consejo ni siquiera sabe preparar una fiambrera, eso no tiene sentido."
+        "text": "Una presidenta que no sabe hacerse la comida no tendría mucho sentido."
     },
     "lunch_seo_15": {
         "name": "{name}",
-        "text": "Eso no es realmente una respuesta."
+        "text": "Eso no es una respuesta."
     },
     "lunch_seo_16": {
         "name": "Seoyeon",
@@ -112,8 +112,8 @@
         "name": "{name}",
         "text": "*Seoyeon me ofrece el rollito de huevo.*",
         "choices": [
-            "Aceptarla",
-            "Sabría mejor si te la comieras tú"
+            "Aceptarlo",
+            "Sabría mejor si te lo comes tú"
         ]
     },
     "lunch_seo_c1_1": {
@@ -122,7 +122,7 @@
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
-        "text": "...Está buena."
+        "text": "...Está bueno."
     },
     "lunch_seo_c1_3": {
         "name": "Seoyeon",
@@ -134,7 +134,7 @@
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "Tienes razón. Está buena."
+        "text": "Tienes razón. Está bueno."
     },
     "lunch_seo_c2_3": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
-        "text": "La próxima vez, deja libre tu hora del almuerzo."
+        "text": "La próxima vez, déjate libre la hora del almuerzo."
     },
     "lunch_seo_after_3": {
         "name": "{name}",
@@ -234,15 +234,15 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "¡No, es que para andar conmigo hay que pasar un test mínimo de resistencia! jaja"
+        "text": "¡No, es que para ir conmigo hay que pasar un test mínimo de resistencia! jaja"
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Pensé que estabas haciéndote publicidad."
+        "text": "Pensé que era autopromoción."
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "¡¿Qué?! ¡¿PR?!"
+        "text": "¡¿Qué?! ¡¿Qué es PR?!"
     },
     "lunch_dain_21": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "¡Oh, ¿sabes eso?! ¡¿Entonces sí entiendes de deporte?!"
+        "text": "¡Oh, ¿lo conoces?! ¡¿O sea que sí sabes de deporte?!"
     },
     "lunch_dain_choice": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "¡Jaja, genial!! ¡Desde hoy, entrenamiento especial! ¡Calentamiento en el gimnasio después de clases, ¿hecho?!"
+        "text": "¡Jajaja, genial! ¡Desde hoy, entrenamiento especial! Calentamiento en el gimnasio después de clase, ¿hecho?"
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "¡Venga ya, pero te interesa! ¡Ven al gimnasio después de clases! ¡No te arrepentirás!"
+        "text": "¡Va, algo de interés tienes! ¡Pásate por el gimnasio después de clase! ¡No te vas a arrepentir!"
     },
     "lunch_dain_after": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "¿Primer compañero de comida en tu nueva escuela soy yo? ¡Eso es un récord, un RÉCORD!"
+        "text": "¿Tu primera comida de recién trasladado y te toca conmigo? ¡Eso es un récord, un RÉCORD!"
     },
     "lunch_dain_after_5": {
         "name": "{name}",
@@ -322,11 +322,11 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*¿Permiso? Parece permiso. — Permiso condicional. El silencio se instala. Yuna lee su libro. Como no tengo nada que hacer, recorro las estanterías.*"
+        "text": "*¿Eso es un permiso? Parece que sí. — Condicional. Se instala el silencio. Yuna lee. Como no tengo nada que hacer, recorro las estanterías.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
-        "text": "*En la biblioteca durante el almuerzo sin decir una palabra — y no es incómodo. Es más, es cómodo.*"
+        "text": "*En la biblioteca, a la hora del almuerzo, sin cruzar una palabra — y no resulta incómodo. Al contrario, se está bien.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -354,7 +354,7 @@
     },
     "lunch_yuna_18": {
         "name": "{name}",
-        "text": "*Sus frases son cortas. No frías — más bien las cuida. Leo un rato. Está bastante bien.*"
+        "text": "*Sus frases son cortas. No es frialdad — las cuida. Leo un rato. No está nada mal.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
@@ -362,7 +362,7 @@
     },
     "lunch_yuna_21": {
         "name": "{name}",
-        "text": "Ya suena la campana."
+        "text": "Ya es la hora."
     },
     "lunch_yuna_22": {
         "name": "Yuna",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna se levanta primero y se va. No mira atrás. 'Fue agradable.' — Sin motivo, me pongo de buen humor.*"
+        "text": "*Yuna se levanta antes que yo y se marcha. No mira atrás. 'Fue agradable.' — Y yo me quedo de buen humor, sin saber muy bien por qué.*"
     },
     "lunch_end": {
         "name": "{name}",
