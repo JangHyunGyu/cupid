@@ -25,7 +25,7 @@
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
-        "text": "*Ich habe eine Nachricht geschickt. Seoyeon, alles okay? — Eine Minute. Gelesen. Keine Antwort. Dann — mein Handy klingelt.*"
+        "text": "*Ich habe eine Nachricht geschickt. 'Seoyeon, alles okay?' — Eine Minute. Gelesen. Keine Antwort. Dann — mein Handy klingelt.*"
     },
     "wall_seo_pre_low_2": {
         "name": "Seoyeon",
@@ -77,7 +77,7 @@
     },
     "wall_seo_9_c": {
         "name": "Seoyeon",
-        "text": "Aber Mama und Papa leben seit einem Jahr aneinander vorbei. Geschieden sind sie nur auf dem Papier nicht."
+        "text": "Aber Mama und Papa leben seit einem Jahr aneinander vorbei. Nur die Scheidungspapiere haben sie noch nicht unterschrieben."
     },
     "wall_seo_9_d": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Sie holt Luft* ...Deshalb ist das Tun-als-ob zur Gewohnheit geworden."
+        "text": "*Sie holt Luft.* ...Deshalb ist das Schauspielern zur Gewohnheit geworden."
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -172,7 +172,7 @@
         "text": "*Seoyeon wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
         "choices": [
             "Du musst nicht perfekt sein. Diese Seoyeon mag ich lieber.",
-            "Nicht die Schülerratsvorsitzende — einfach Seoyeon ist meine Freundin.",
+            "Nicht die Schülersprecherin — einfach Seoyeon ist meine Freundin.",
             "Ehrlich gesagt dachte ich, du könntest alles. Danke, dass du mir auch diese Seite zeigst."
         ]
     },
@@ -214,7 +214,7 @@
     },
     "wall_seo_after_line_5": {
         "name": "Seoyeon",
-        "text": "Zum ersten Mal seit acht Jahren glaube ich, dass mein ungeübtes Gesicht vielleicht in Ordnung ist."
+        "text": "Zum ersten Mal seit acht Jahren glaube ich, dass mein echtes Gesicht vielleicht in Ordnung ist."
     },
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
@@ -311,7 +311,7 @@
     },
     "wall_dain_10": {
         "name": "Dain",
-        "text": "Nein, alles gut!! Nur kurz umgeknickt lol, ist nich..."
+        "text": "Nein, alles gut!! Nur kurz umgeknickt haha, ist nich..."
     },
     "wall_dain_11": {
         "name": "{name}",
@@ -319,7 +319,7 @@
     },
     "wall_dain_12": {
         "name": "{name}",
-        "text": "Dain. Dir geht es nicht gut."
+        "text": "Dain. Es geht dir nicht gut, das sehe ich."
     },
     "wall_dain_12_b": {
         "name": "Dain",
@@ -359,7 +359,7 @@
     },
     "wall_dain_18": {
         "name": "Dain",
-        "text": "Als wir aus dem Krankenhaus kamen, weinte Mama. — Ich konnte nicht weinen. Weil ich es noch nicht realisiert hatte."
+        "text": "Als wir aus dem Krankenhaus kamen, weinte Mama. — Ich konnte nicht weinen. Weil es noch nicht bei mir angekommen war."
     },
     "wall_dain_18_b": {
         "name": "Dain",
@@ -432,7 +432,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Echt witzig, oder? Seit ich fünf bin, stand ich jeden Tag auf diesem Feld... und jetzt soll es vorbei sein."
+        "text": "Echt witzig, oder? Seit ich fünf bin, stehe ich jeden Tag auf diesem Feld... und jetzt soll Schluss sein."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -496,7 +496,7 @@
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Tschüss, Spielfeld."
+        "text": "Leb wohl, Spielfeld."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
@@ -549,11 +549,11 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*Es ist Yuna. Sie sitzt allein. — Mir sackt das Herz. Yuna hat mir heute nicht geschrieben. — Es tut mir leid.*"
+        "text": "*Es ist Yuna. Sie sitzt allein. — Mein Herz rutscht in die Hose. Yuna hat mir heute nicht geschrieben. — Es tut mir leid.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Ich tat, als hätte ich nichts gesehen. — Aber warum fühlt sich mein Herz so an.*"
+        "text": "*Ich tat, als hätte ich nichts gesehen. — Aber warum fühlt sich mein Herz so komisch an?*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -657,7 +657,7 @@
     },
     "wall_yuna_14_g": {
         "name": "Yuna",
-        "text": "Wenn ich mich wieder annähern würde, könntest du auch verschwinden."
+        "text": "Wenn ich dich wieder nah ranlasse, könntest du auch wieder verschwinden."
     },
     "wall_yuna_14_h": {
         "name": "{name}",

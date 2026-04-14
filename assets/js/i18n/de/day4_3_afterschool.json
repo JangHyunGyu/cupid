@@ -32,7 +32,7 @@
         "text": "*Ich bin nervös. Trotzdem möchte ich es dieses Mal richtig sagen.*",
         "choices": [
             "Seoyeon. Warte kurz.",
-            "...Schöner Wind."
+            "...Schön hier oben."
         ]
     },
     "confess_seo_yes_1": {
@@ -49,7 +49,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "Seoyeon. Alle sehen dich als eine makellose Person. Aber ich erinnere mich immer wieder an die Momente, in denen du kurz den Ausdruck nicht halten konntest."
+        "text": "Seoyeon. Für alle bist du die Perfekte. Aber ich muss ständig an die Momente denken, wo deine Maske kurz gefallen ist."
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
-        "text": "...Als du am Schultor sagtest: 'Das ist zu viel.' Von da an hat es mich irgendwie beschäftigt."
+        "text": "...Als du am Schultor gesagt hast: 'Du bist viel zu gut für mich.' Seitdem ging mir das nicht mehr aus dem Kopf."
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
@@ -89,7 +89,7 @@
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "...Schöner Wind."
+        "text": "...Schön hier oben."
     },
     "confess_seo_no_2": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
-        "text": "*Ihr Rücken ist gerade. Sie zittert.*"
+        "text": "*Ihr Rücken kerzengerade. Und er zittert.*"
     },
     "confess_yuna_1": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
-        "text": "...Das Ende ist noch nicht da."
+        "text": "...Das Ende kommt noch."
     },
     "confess_yuna_no_4_b": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "confess_dain_2": {
         "name": "Dain",
-        "text": "Letzter Halt!! Los geht's!!"
+        "text": "Letzter Ort!! Nur noch einer!!"
     },
     "confess_dain_3": {
         "name": "{name}",
@@ -261,11 +261,11 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "Wenn du mich nicht anschaust — wird's mir eng ums Herz."
+        "text": "Wenn deine Augen mich nicht anschauen — macht mich das verrückt."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*Das ist kein Schere-Stein-Papier, kein Spiel. Aber das ist alles für mich.*"
+        "text": "*Das ist keine Schere-Stein-Papier-Liebeserklärung. Aber für mich ist das alles.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Moment, ich glaube, ich muss gleich wirklich weinen... Ich bin doch glücklich, warum ist das so..."
+        "text": "...Moment, ich glaub ich heul gleich wirklich... Ich bin doch glücklich, warum heul ich dann..."
     },
     "confess_dain_yes_9_b": {
         "name": "{name}",

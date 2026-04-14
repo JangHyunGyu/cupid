@@ -13,7 +13,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "Die Eierolle ist etwas zu salzig. 6 Punkte."
+        "text": "Die Eierrolle ist etwas zu salzig. 6 Punkte."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Eine Beilage ist übrig. Die letzte Eierolle. Ich hab gesagt, lass uns alle was abkriegen. — Die Luft wurde schwer.*"
+        "text": "*Eine Beilage ist übrig. Die letzte Eierrolle. Ich hab gesagt, lass uns alle was abkriegen. — Die Luft wurde schwer.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -55,7 +55,7 @@
     },
     "lunch3_give_seo_1": {
         "name": "Seoyeon",
-        "text": "...Danke. Du hast eben einen guten Geschmack."
+        "text": "...Danke. Du hast echt Geschmack."
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
@@ -135,7 +135,7 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "...Gelogen. Wusste es auch nicht."
+        "text": "...War gelogen. Ich wusste es auch nicht."
     },
     "lunch3_expose_12": {
         "name": "{name}",
@@ -233,7 +233,7 @@
     },
     "lunch3_seo_witness_1": {
         "name": "{name}",
-        "text": "*Dain bleibt an der Klassentür stehen. Sie sieht Seoyeon die Lunchbox annehmen. ...Oh. Sie dreht um.*"
+        "text": "*Dain bleibt an der Klassentür stehen. Sie sieht, wie Seoyeon die Lunchbox entgegennimmt. ...Oh. Sie geht wieder weg.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "lunch3_yuna_witness_1": {
         "name": "Seoyeon",
-        "text": "In der Bibliothek hat es nach Lunchbox gerochen. ...Mit Yuna?"
+        "text": "In der Bibliothek hat's nach Essen gerochen. ...Mit Yuna?"
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "*Beißt ohne zu zögern ins Eierrolle.*"
+        "text": "*Beißt ohne zu zögern in die Eierrolle.*"
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
@@ -311,7 +311,7 @@
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Niemand verlässt seinen Platz. Sie lächeln zwar, aber keiner von den dreien nimmt die Stäbchen einfach in die Hand. Das letzte Beilagengericht sticht unnötigerweise ins Auge.*"
+        "text": "*Niemand verlässt seinen Platz. Sie lächeln zwar, aber keiner von den dreien greift richtig zu. Die letzte Beilage fällt einem unwillkürlich ins Auge.*"
     },
     "lunch3_meal_10_c": {
         "name": "{name}",

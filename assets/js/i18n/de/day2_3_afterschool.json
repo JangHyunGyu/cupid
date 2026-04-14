@@ -306,7 +306,7 @@
     },
     "after2_seo_return": {
         "name": "{name}",
-        "text": "*Verließ den Schülerrat. Ging Richtung Schultor.*"
+        "text": "*Ich verließ den Schülerratsraum. Ging Richtung Schultor.*"
     },
     "after2_yuna_1": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after2_yuna_return": {
         "name": "{name}",
-        "text": "*Verließ den Bibliotheksanbau. Die Sonne geht unter.*"
+        "text": "*Ich verließ den Bibliotheksanbau. Die Sonne ging unter.*"
     },
     "minsu_warn_1": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "minsu_warn_6": {
         "name": "Minsu",
-        "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an. — Sag's nur so. *Er zuckt mit den Schultern und geht weiter.*"
+        "text": "Seoyeon, Dain, Yuna. Alle drei lächeln dich an. — Sag ich ja nur. *Er zuckt mit den Schultern und geht weiter.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",

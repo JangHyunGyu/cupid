@@ -25,11 +25,11 @@
     },
     "minsu_cheer_2": {
         "name": "Minsu",
-        "text": "Viel Spaß dabei, haha"
+        "text": "Viel Erfolg, haha"
     },
     "minsu_cheer_3": {
         "name": "{name}",
-        "text": "Ich weiß."
+        "text": "Klar."
     },
     "morning4_start_2": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Außerhalb des Schultors wirkt sie nicht wie eine Lehrerin. Einfach - wie jemand, der schreibt.*"
+        "text": "*Außerhalb des Schultors wirkt sie nicht wie eine Lehrerin. Einfach — wie jemand, der schreibt.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Klassenlehrerin",
@@ -331,7 +331,7 @@
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Wochenendmorgen. Ein paar Benachrichtigungen warten. — Ich dachte, es wird ein gewöhnlicher Tag. Ich lege das Handy weg und strecke mich. Wie auch immer, heute fängt ja auch an.*"
+        "text": "*Wochenendmorgen. Ein paar Benachrichtigungen warten. — Ich dachte, es wird ein gewöhnlicher Tag. Ich lege das Handy weg und strecke mich. Wie auch immer — der Tag fängt an.*"
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
@@ -347,7 +347,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Kurz. Typisch Yuna. Ich weiß jetzt, dass Wenn du zu spät kommst, gehe ich dasselbe bedeutet wie Bitte komm nicht zu spät.*"
+        "text": "*Kurz. Typisch Yuna. Ich weiß jetzt, dass 'Wenn du zu spät kommst, bin ich weg' dasselbe heißt wie 'Bitte komm nicht zu spät'.*"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Klassenlehrerin",
@@ -407,7 +407,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*Ein Déjà-vu. Gestern im leeren Klassenraum hat sie etwas Ähnliches gesagt. - Aber heute, in einem Café, außerhalb der Schule, klingt es leichter. Nein - ernster.*"
+        "text": "*Ein Déjà-vu. Gestern im leeren Klassenraum hat sie etwas Ähnliches gesagt. — Aber heute, in einem Café, außerhalb der Schule, klingt es leichter. Nein — ernster.*"
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Ihr Lächeln kommt ganz natürlich. - Sie wirkt anders als in der Schule. Heute fühlt sie sich weniger wie eine Lehrerin an und mehr wie... jemand, bei dem man sich wohlfühlt.*"
+        "text": "*Ihr Lächeln kommt ganz natürlich. — Sie wirkt anders als in der Schule. Heute fühlt sie sich weniger wie eine Lehrerin an und mehr wie... jemand, bei dem man sich wohlfühlt.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Schulkrankenschwester",
@@ -491,7 +491,7 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "Schulkrankenschwester",
-        "text": "*Stimme wird einen halben Ton leiser* Niemand hat mich beim Namen gerufen. 'Schwester', 'Nachtdienst', 'Station 3.' Alles Titel, nie mein Name."
+        "text": "*Stimme wird einen halben Ton leiser* Niemand hat meinen Namen gesagt. 'Schwester', 'die vom Nachtdienst', 'Station 3.' Alles Titel, nie mein Name."
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
@@ -507,7 +507,7 @@
     },
     "hidden_nurse_d4_4_j": {
         "name": "Schulkrankenschwester",
-        "text": "Einfach nur Frau Lehrerin. Ohne Titel davor. Das hat sich gut angefühlt."
+        "text": "Einfach nur beim Namen. Ohne Titel davor. Das hat sich gut angefühlt."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*Der Scherz verschwand. 0,5 Sekunden. Das Aufrichtigkeitsbarometer dieser Person bewegt sich in 0,5-Sekunden-Schritten.*"
+        "text": "*Der Scherz verschwand. — Wenn ich diesen Ausdruck sehe, zieht sich mein Herz zusammen.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Schulkrankenschwester",

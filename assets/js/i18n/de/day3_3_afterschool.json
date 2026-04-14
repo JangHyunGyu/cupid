@@ -60,7 +60,7 @@
     },
     "after3_reject_for_yuna_2": {
         "name": "Seoyeon",
-        "text": "Im Schülerrat ist viel los. Ich ess heute lieber für mich. ...Nur heute."
+        "text": "Im Schülerrat ist viel los. Ich esse heute lieber allein. ...Nur heute."
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
@@ -180,9 +180,9 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "Ich hab es mit Vergnügen gelesen.",
+        "text": "War spannend zu lesen.",
         "choices": [
-            "Das geht doch über mich, oder? 'Der Neue, der sich wortlos neben sie setzte' — das bin ich.",
+            "Das handelt doch von mir, oder? 'Der Transferschüler, der sich wortlos neben sie setzte' — das bin ich.",
             "Dieser Autor schreibt wirklich gut. Gibt's eine Fortsetzung? Würd ich gern ausleihen."
         ]
     },
@@ -409,7 +409,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Mit Dain auf einer Bank am Spielplatz sitzend. Sie ist ruhiger als sonst.*",
+        "text": "*Mit Dain auf einer Bank auf dem Schulhof sitzend. Sie ist ruhiger als sonst.*",
         "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
         "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
     },
@@ -543,7 +543,7 @@
     },
     "after3_dain_tell_confirm": {
         "name": "Dain",
-        "text": "...Du bist das Schlimmste."
+        "text": "...Das ist echt das Letzte."
     },
     "after3_dain_tell_confirm_2": {
         "name": "{name}",
@@ -607,7 +607,7 @@
     },
     "after3_seo_correct_3": {
         "name": "{name}",
-        "text": "Ah, hier ist er. — Frau Vorsitzende, ist das Schülerratsbüro ein Ort, an dem viele Stifte verschwinden?"
+        "text": "Ah, hier ist er. — Frau Schülersprecherin, verschwinden im Schülerrat eigentlich oft Stifte?"
     },
     "after3_seo_correct_4": {
         "name": "{name}",
@@ -619,7 +619,7 @@
     },
     "after3_seo_correct_6": {
         "name": "{name}",
-        "text": "Kann die Vorsitzende den Täter nicht mal fassen?"
+        "text": "Kriegt die Schülersprecherin den Täter nicht?"
     },
     "after3_seo_correct_7": {
         "name": "Seoyeon",
