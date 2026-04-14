@@ -9168,9 +9168,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_yes_8_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: \"갑자기 사라지면 싫어\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_3_afterschool.json#confess_yuna_yes_8_ins2",
@@ -10176,9 +10177,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_10_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_issues": null,
+        "_fix_note": "hits so hard→I believe her (KO \"믿긴다\")"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_3_afterschool.json#confess_dain_yes_10_ins",
@@ -14461,9 +14463,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_cry_6",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: \"다인의 울음이 잦아들 때까지 옆에 있었다\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_dain_cry_6",

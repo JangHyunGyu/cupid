@@ -230,7 +230,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon came to me first. Her usual composed tone, but with underneath it, she wanted an answer.*"
+        "text": "*Seoyeon came to me first. Her usual composed tone — but underneath it, she was looking for an answer. Dain glances over from the back of the classroom. Turns her head away. Yuna buries herself deeper in her book. Pages turning faster than before.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -334,7 +334,7 @@
     },
     "hidden_homeroom_d2_8_c": {
         "name": "Homeroom Teacher",
-        "text": "'Well-known' isn't quite the word... *takes a sip of coffee* More like — someone I keep an eye on."
+        "text": "'Well-known' isn't quite the word... *takes a sip of coffee* More like — someone I worry about."
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",

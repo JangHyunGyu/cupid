@@ -1639,9 +1639,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_react_dain_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "\"That's one way to start the morning\"(체력 소모 뉘앙스 상실) → Morning workout wore you out"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_react_dain_1",
@@ -2179,9 +2180,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_date_dain_decline_narr",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**치명적 누락**: 다인이 용기 내서 물어본 반전 3문장"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_date_dain_decline_narr",
@@ -3867,9 +3869,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_yuna_gate_6_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: \"말로 하면 될 걸 굳이 쪽지로 쓰는 사람 — 그게 유나다\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#morning3_yuna_gate_6_ins2",
@@ -5055,9 +5058,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins6",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: 서랍 비유 + \"닫아야 하는데 손이 안 떨어진다\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins6",
@@ -5199,9 +5203,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_2_ins4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: \"아침 내내 마음이 가라앉지 않는다\" 3문장"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_2_ins4",
@@ -7073,9 +7078,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_meal_5",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "\"Out of ten. That's not bad\" (6점 문맥 모호) → \"Six isn't bad\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_meal_5",
@@ -7899,9 +7905,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_dain_skin_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: \"다인이 튕기듯 떨어져 한 걸음 물러난다. 물병만 집어 든다\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_2_lunch.json#lunch3_dain_skin_1",
@@ -11716,9 +11723,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "감정 변경: 관찰만→\"I want to protect this smile\" (KO \"지키고 싶다\")"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_choice1_react",
@@ -13876,9 +13884,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#haeun_warn_7_ins3",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: 서연 부모님/가정 배경 (캐릭터 핵심)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#haeun_warn_7_ins3",
@@ -18774,9 +18783,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": "한국어 본문 수정 — 재번역 필요"
+        "_issues": null,
+        "_fix_note": "누락: \"확인 버튼 위에서 손가락이 멈춘다\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_2_ins",
@@ -18846,9 +18856,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins5",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: \"— 삭제했다\" (결정 실행 행동)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_2_ins5",
@@ -18918,9 +18929,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_4_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "누락: \"그래도. 지운 만큼은 — 다음으로 갈 수 있다\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_4_night.json#night3_faithful_reflect_4_ins2",

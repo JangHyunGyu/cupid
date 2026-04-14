@@ -2504,9 +2504,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_7_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**문법**: \"I've gone a bit crossed the line past\" 혼합 구문 수정"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_1_morning.json#hidden_homeroom_d5_7_ins2",
@@ -3908,9 +3909,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_praise_trap_10",
-        "_reviewed": false,
-        "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_reviewed": true,
+        "_score": 10,
+        "_issues": null,
+        "_fix_note": "**문법**: \"a student would wouldn't feel\" 중복 would 제거"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_1_morning.json#hidden_homeroom_d5_praise_trap_10",
@@ -4882,9 +4884,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_2_lunch.json#tour_seo_11",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "Day1과 일관성 Council president perk → President's perk"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_2_lunch.json#tour_seo_11",
@@ -5674,9 +5677,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_2_lunch.json#tour_dain_1b",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**문법 오류**: \"where countless filled with\" 깨진 문장"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_2_lunch.json#tour_dain_1b",
@@ -16226,9 +16230,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#mayhem_3",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "구조 어색: \"was, and of all things, it was\" → em dash"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#mayhem_3",
@@ -17161,9 +17166,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_perfect_homeroom_3g",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "대소문자: \", We\" → \", we\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#hidden_perfect_homeroom_3g",

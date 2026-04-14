@@ -185,7 +185,7 @@
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
-        "text": "...Don't go."
+        "text": "...Don't go. I don't want you to just disappear."
     },
     "confess_yuna_yes_9": {
         "name": "Yuna",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'So much.' — Dain is always like this. Short and honest. That's why it hits so hard.*"
+        "text": "*'So much.' — Dain is always like this. Short and honest. That's why I believe her.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

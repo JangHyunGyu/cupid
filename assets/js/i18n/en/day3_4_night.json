@@ -206,7 +206,7 @@
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
-        "text": "*'Delete this photo?'*"
+        "text": "*'Delete this photo?' My finger hovers over the confirm button.*"
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
@@ -214,7 +214,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...Right. I need to start by saying no to my own past.*"
+        "text": "*...Right. I need to start by saying no to my own past. — Deleted.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Deleting the photo was easy. Just one finger, and it's done. — Feelings take much longer.*"
+        "text": "*Deleting the photo was easy. Just one finger, and it's done. — Feelings take much longer. Still — as much as I deleted, I can move that much forward.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",

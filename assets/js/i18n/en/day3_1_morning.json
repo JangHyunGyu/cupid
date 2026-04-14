@@ -110,7 +110,7 @@
     },
     "morning3_react_dain_1": {
         "name": "Seoyeon",
-        "text": "That's one way to start the morning. Want to share my lunchbox later?"
+        "text": "Morning workout wore you out. Want my lunchbox at lunch?"
     },
     "morning3_react_dain_2": {
         "name": "{name}",
@@ -166,7 +166,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*I watch Dain's reaction. — The bell rings, and the short lull right before lunch comes around again.*"
+        "text": "*I watch Dain's reaction. — The bell rings, and the short lull right before lunch comes around again. She smiled bright and walked away. — I didn't catch it at the time. That Dain had stopped tapping her fingers, slipped her hand in her pocket. That asking had taken real guts.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*The note: I figured you hadn't eaten breakfast.*"
+        "text": "*The note: 'I figured you hadn't eaten breakfast.' Someone who writes it down when she could've just said it out loud. — That's Yuna.*"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -590,7 +590,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*The reason she chose an empty classroom is practical, but it also means — she's someone who needs a space of her own.*"
+        "text": "*The reason she chose an empty classroom is practical, but it also means — she's someone who needs a space of her own. Feels like I opened a drawer hidden behind her title. I should close it — but my hand won't let go.*"
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d3_2_e": {
         "name": "{name}",
-        "text": "*I'm not sure what she's thanking me for. For not looking away? Or — for coming this far?*"
+        "text": "*I'm not sure what she's thanking me for. For not looking away? Or — for coming this far? Just before lunch. — All morning, something in me won't settle. Too many faces, too many words? I don't know why everything's shaking loose this fast.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "School Nurse",

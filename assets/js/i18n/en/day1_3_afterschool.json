@@ -186,7 +186,7 @@
     },
     "after_homeroom_honest_choice2b": {
         "name": "Homeroom Teacher",
-        "text": "*Stifles a laugh.* Don't get your hopes up. It's from the vending machine."
+        "text": "*A small laugh.* Don't get your hopes up. It's from the vending machine."
     },
     "after_homeroom_honest_7": {
         "name": "Homeroom Teacher",
@@ -374,11 +374,11 @@
     },
     "after_hidden_homeroom_3_c": {
         "name": "Homeroom Teacher",
-        "text": "Oh. So that's what this is about? — You did well to come. Sit for a minute."
+        "text": "Oh. So that's what this is about? — Glad you came. Sit for a minute."
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*She slides the papers on her desk aside and looks back at me. The mood says this won't end with just one line. Apparently it wasn't just a passing pleasantry. She rests her hand on the back of the chair, pausing to choose her words.*"
+        "text": "*She slides the papers on her desk aside and looks back at me. Feels like this won't wrap up in a sentence. Apparently it wasn't just a passing pleasantry. She rests her hand on the back of the chair, pausing to choose her words.*"
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Educational concern.' — This person wraps things up too.*"
+        "text": "*'Educational concern.' — Another one who dresses up her feelings.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -414,7 +414,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "School Nurse",
-        "text": "Your uniform's brand-new stiff. And you've got that fresh-grass smell going. *Sniff sniff* Oh — cherry blossoms too. What a romantic transfer student."
+        "text": "Your uniform's brand-new and stiff. And you've got that fresh-grass smell going. *Sniff sniff* Oh — cherry blossoms too. What a romantic transfer student."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
