@@ -766,11 +766,13 @@ ${this.progress.getPlayerName() || '상대방'}은(는) ${clearedNames}과(와)�
             this._incrementFreeTalkCount();
 
             // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
+            // charId: 대문자 키(this.currentCharKey)로 저장해 게임 내 프리토킹 기록과 버킷 통일
+            // assistantContent: 파싱된 displayText(raw JSON 저장 금지 — 뷰어에서 원본 JSON이 그대로 노출됨)
             if (typeof window.saveCupidChatLog === 'function') {
                 window.saveCupidChatLog({
-                    charId: this.currentCharId,
+                    charId: this.currentCharKey,
                     userContent: finalContent,
-                    assistantContent: reply,
+                    assistantContent: displayText,
                     sessionId: 'gallery-freetalk',
                     context: '1:1',
                     playerName: this.progress.getPlayerName() || ''
