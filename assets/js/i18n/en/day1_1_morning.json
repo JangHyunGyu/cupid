@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*I'm standing in front of an unfamiliar school gate. A pretty big school. Students drift past in twos and threes. I'm the only one whose uniform is still bone-white and stiff. There's a girl standing at the gate. Long black hair flicked lightly back — behind her glasses, her stride is unhurried. Not a trace of rushing.*"
+        "text": "*I'm standing in front of an unfamiliar school gate. A pretty big school. Students drift past in twos and threes. I'm the only one whose uniform is still bone-white and stiff. There's a girl standing at the gate. Long black hair tossed lightly back — behind her glasses, an unhurried air. Not a trace of rushing.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",
-        "text": "We'll see about that."
+        "text": "I'll be the judge of that."
     },
     "seoyeon_meet_8": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "Must be a transfer kid thing — zero sense of the room. I kinda like it."
+        "text": "Must be a transfer kid thing — can't read a room at all. I kinda like it."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon walks me through the halls. Students passing by say hi to her, and she answers each one with a quick nod. A small lift of her hand, easy and natural. Looks like this school already knows who runs this place.*"
+        "text": "*Seoyeon walks me through the halls. Students passing by say hi to her, and she answers each one with a quick nod. A small lift of her hand, easy and natural. Looks like this place already has its star.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -122,7 +122,7 @@
     },
     "hallway_5": {
         "name": "Seoyeon",
-        "text": "Roof's usually locked. Council president perks."
+        "text": "Roof's usually locked. President's perks."
     },
     "hallway_6": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "hallway_12": {
         "name": "Seoyeon",
-        "text": "Depends. Behave yourself."
+        "text": "If you behave."
     },
     "hallway_13": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "classroom_dain_1": {
         "name": "Dain",
-        "text": "Ohhh! A new guy! Fresh meat, let's go!"
+        "text": "Ohhh! A new guy! Finally, a fresh recruit!"
     },
     "classroom_dain_2": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "No reason! I need a practice partner after school! Nobody wants to toss for me!"
+        "text": "No reason! I need a practice partner after school! Nobody'll serve to me for receive drills!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*I glance toward Yuna. She's still looking out the window. But I think the tips of her ears just turned pink. The note came from the girl who'd been staring outside the whole time. Pretending not to care, or actually not caring.*"
+        "text": "*I glance toward Yuna. She's still looking out the window. But I think the tip of her ear just twitched. The note came from the girl who'd been staring outside the whole time. Pretending not to care, or actually not caring.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
@@ -302,6 +302,6 @@
     },
     "classroom_minsu_2_b": {
         "name": "Minsu",
-        "text": "*Nodding toward Dain* Your stamina."
+        "text": "*Nodding toward Dain* Pace yourself."
     }
 }

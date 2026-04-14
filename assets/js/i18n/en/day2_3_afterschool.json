@@ -342,7 +342,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*A door left open by coincidence. — Yuna's 'coincidence' usually means 'on purpose.'*"
+        "text": "*A door left open by coincidence. — Yuna's 'coincidence' usually means 'on purpose.' I sit down next to her. Yuna holds out one earbud.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -480,7 +480,7 @@
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
-        "text": "*Closing the drawer* You didn't see that, okay? ...Teachers get to keep Teachers are allowed their secrets."
+        "text": "*Closing the drawer* You didn't see that, okay? ...Teachers are allowed their secrets too."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -584,7 +584,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "{name}",
-        "text": "*Yuna said two sentences in a row. — For someone who usually speaks in single lines, that's something.*"
+        "text": "*Yuna doesn't look away. That one sentence stays with me longer than it should.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",

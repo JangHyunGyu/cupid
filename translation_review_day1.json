@@ -128,9 +128,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#gate_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "stride→unhurried air (standing인데 stride 어색)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#gate_1",
@@ -380,9 +381,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#seoyeon_meet_7",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "generic→직접 판단 뉘앙스 (\"I'll be the judge\")"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#seoyeon_meet_7",
@@ -596,9 +598,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#choice_flirt_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "zero sense→can't read a room (네이티브 관용구)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#choice_flirt_4",
@@ -848,9 +851,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#hallway_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "순환 구조→\"place already has its star\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#hallway_1",
@@ -956,9 +960,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#hallway_5",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "fragment 어색→\"President's perks\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#hallway_5",
@@ -1136,9 +1141,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#hallway_12",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "원문 \"네가 잘하면\" 살림→\"If you behave\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#hallway_12",
@@ -1280,9 +1286,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#classroom_dain_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "Fresh meat(헤이징 암시)→\"fresh recruit\" (배구팀 영입 뉘앙스)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#classroom_dain_1",
@@ -1892,9 +1899,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#classroom_dain_talk_5",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "배구 용어 오역 toss→serve (receive drills 맥락)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#classroom_dain_talk_5",
@@ -2108,9 +2116,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#classroom_yuna_note_5",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**오역 수정**: 귀끝 turned pink→twitched (홍조가 아닌 움찔)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#classroom_yuna_note_5",
@@ -2540,9 +2549,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#classroom_minsu_2_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "미완 문장 \"Your stamina\"→\"Pace yourself\""
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#classroom_minsu_2_ins",
@@ -3946,9 +3956,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_seo_after_2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "from now on → next time too (KO \"다음에도\")"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_seo_after_2",
@@ -5206,9 +5217,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_dain_after_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "의미 오류 수정: history(=끝난 일) → record (KO \"기록\" 맞음)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_dain_after_4",
@@ -5998,9 +6010,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_yuna_25",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "sticks with me → lifts my mood (KO \"기분이 좋아진다\" 기분 up 포착)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_yuna_25",
@@ -6430,9 +6443,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_seo_c1_2_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "for no reason → absently (KO \"괜히\" 뉘앙스)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_seo_c1_2_ins",
@@ -6466,9 +6480,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_seo_c1_3_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "Push → Tease (KO \"놀리면\"=tease), let go → let slide"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_seo_c1_3_ins",
@@ -8520,9 +8535,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_choice2b",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "Stifles a laugh → A small laugh (KO \"피식\"은 억누름이 아닌 작은 웃음)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_homeroom_honest_choice2b",
@@ -9564,9 +9580,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_hidden_homeroom_3_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "\"You did well to come\" 어색한 직역 → Glad you came"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_hidden_homeroom_3_ins2",
@@ -9600,9 +9617,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_ok_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "\"The mood says...\" 한국식 번역 → Feels like this won't wrap up in a sentence"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_homeroom_ok_ins",
@@ -9672,9 +9690,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_6_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**오역**: wraps things up(=finishes) → dresses up her feelings (KO \"포장\"=dressing up words)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_homeroom_honest_6_ins",
@@ -9924,9 +9943,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_4_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "brand-new stiff → brand-new and stiff (형용사 병치)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_nurse_enter_4_ins2",
@@ -11942,9 +11962,10 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_4_night.json#night_end_3",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "even better → even more interesting (KO \"재밌을\" fun/interesting 뉘앙스 복원)"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_4_night.json#night_end_3",

@@ -146,7 +146,7 @@
     },
     "lunch_seo_after_2": {
         "name": "Seoyeon",
-        "text": "Keep your lunch hour open from now on."
+        "text": "Keep your lunch hour open next time, too."
     },
     "lunch_seo_after_3": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "Your first meal at the new school, and it's with me? That's history. HISTORY!"
+        "text": "Your first meal at the new school, and it's with me? That's a record. RECORD!"
     },
     "lunch_dain_after_5": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna stands up first and walks off. Doesn't look back. 'It was nice.' — Such a small thing, but it sticks with me.*"
+        "text": "*Yuna stands up first and walks off. Doesn't look back. 'It was nice.' — Such a small thing, but somehow it lifts my mood.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -444,11 +444,11 @@
     },
     "lunch_seo_c1_2_b": {
         "name": "{name}",
-        "text": "*Seoyeon turns her head and fiddles with her water bottle for no reason.*"
+        "text": "*Seoyeon turns her head and absently fiddles with her water bottle.*"
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*Push any harder and she'll shut this down. Better to let it go.*"
+        "text": "*Tease any more and she'll shut this down. Better to let it slide.*"
     },
     "lunch_dain_12_b": {
         "name": "Dain",
