@@ -1,7 +1,7 @@
 {
     "tour_seo_1": {
         "name": "{name}",
-        "text": "*Nos plantamos, uno al lado del otro, frente a la entrada del instituto. El mismo sitio donde Seoyeon esperaba el primer día.*"
+        "text": "*Nos paramos, uno al lado del otro, frente a la entrada de la escuela. El mismo lugar donde Seoyeon esperaba el primer día.*"
     },
     "tour_seo_2": {
         "name": "Seoyeon",
@@ -9,11 +9,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Aquel día casi me caes encima por decir 'es demasiado para mí'."
+        "text": "Aquel día casi me regañas por decir 'es demasiado para mí'."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Pero no lo hice, ¿no? — Desde entonces ya me gustabas."
+        "text": "Pero no te regañé, ¿no? — Desde entonces ya me gustabas."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "tour_seo_6": {
         "name": "Seoyeon",
-        "text": "...Igual ha sido el viento y lo has oído mal."
+        "text": "...Tal vez fue el viento y lo oíste mal."
     },
     "tour_seo_7": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*Seoyeon saca algo de la mochila. — Una llave. La de la azotea.*"
+        "text": "*Seoyeon saca algo de la mochila. — Una llave. La llave de la azotea.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "{name}",
-        "text": "*La mano que me tiende la llave. Los meñiques se rozan un instante. — Ella no dice 'toma, para ti'. Pasa directamente a la acción. Desde el principio ha sido así.*"
+        "text": "*La mano que me tiende la llave. Los meñiques se rozan un instante. — Ella no dice 'toma, para ti'. Pasa directamente a la acción. Desde el principio fue así.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "Puedo, por eso te la doy. — Cuando te apetezca que te dé el aire, sube."
+        "text": "Puedo, por eso te la doy. — Cuando tengas ganas de tomar aire, sube."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -61,11 +61,11 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. El rincón de lectura secreto donde entré por primera vez el Día 2. Un sofá viejo y la luz de la tarde colándose por la ventana.*"
+        "text": "*El anexo de la biblioteca. El rincón de lectura secreto donde entré por primera vez el Día 2. Un sofá viejo y la luz de la tarde entrando por la ventana.*"
     },
     "tour_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna se sienta en el sofá. Deja libre el hueco de al lado. — La misma disposición que el Día 2.*"
+        "text": "*Yuna se sienta en el sofá. Deja libre el espacio de al lado. — La misma disposición que el Día 2.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "tour_yuna_7": {
         "name": "Yuna",
-        "text": "...He escrito el final."
+        "text": "...Escribí el final."
     },
     "tour_yuna_8": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "No es un final — si es el principio de la siguiente historia, entonces vale."
+        "text": "No es un final — si es el principio de la siguiente historia, entonces está bien."
     },
     "tour_yuna_10": {
         "name": "{name}",
@@ -113,15 +113,15 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*El gimnasio. Donde hicimos la primera apuesta el Día 1 y donde clavó su último remate el Día 4. — Hoy las luces están encendidas.*"
+        "text": "*El gimnasio. Donde hicimos la primera apuesta el Día 1 y donde clavó su último remate el Día 4. — Hoy las luces están prendidas.*"
     },
     "tour_dain_2": {
         "name": "{name}",
-        "text": "*Dain está plantada en el centro de la pista. Con un balón de voleibol en las manos.*"
+        "text": "*Dain está parada en el centro de la cancha. Con un balón de voleibol en las manos.*"
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "¡Eh! ¿Una última a piedra, papel o tijera?"
+        "text": "¡Oye! ¿Una última de piedra, papel o tijera?"
     },
     "tour_dain_4": {
         "name": "{name}",
@@ -133,15 +133,15 @@
     },
     "tour_dain_6": {
         "name": "{name}",
-        "text": "*Piedra, papel o tijera. — Dain ha perdido.*"
+        "text": "*Piedra, papel o tijera. — Dain perdió.*"
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "...¡¡Aaaah!! ¡¡¿Por qué?!! ¡¡Otra vez he perdido!!"
+        "text": "...¡¡Aaaah!! ¡¡¿Por qué?!! ¡¡Otra vez perdí!!"
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Se cabrea y se ríe a la vez. — Así es Dain. Alguien que se lo pasa bien incluso perdiendo. Deja el balón en la pista. Despacio.*"
+        "text": "*Se enoja y se ríe a la vez. — Así es Dain. Alguien que se divierte incluso perdiendo. Deja el balón en la cancha. Despacio.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -153,11 +153,11 @@
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "No sé qué ha cambiado... pero ahora, incluso fuera de la pista, me veo un poco más nítida."
+        "text": "No sé qué cambió... pero ahora, incluso fuera de la cancha, me veo un poco más nítida."
     },
     "tour_dain_13": {
         "name": "{name}",
-        "text": "¿Qué ha cambiado?"
+        "text": "¿Qué cambió?"
     },
     "tour_dain_end": {
         "name": "Dain",
@@ -191,7 +191,7 @@
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. El rincón de lectura secreto con Yuna. Un sofá viejo y la luz de la tarde colándose por la ventana.*"
+        "text": "*El anexo de la biblioteca. El rincón de lectura secreto con Yuna. Un sofá viejo y la luz de la tarde entrando por la ventana.*"
     },
     "tour_dain_1_check": {
         "name": "{name}",
@@ -199,10 +199,10 @@
     },
     "tour_dain_1b": {
         "name": "{name}",
-        "text": "*El gimnasio. El sitio por donde han pasado incontables apuestas y remates estos días. — Hoy las luces están encendidas.*"
+        "text": "*El gimnasio. El lugar por donde pasaron incontables apuestas y remates estos días. — Hoy las luces están prendidas.*"
     },
     "tour_dain_11_b": {
         "name": "Dain",
-        "text": "Antes pensaba que sin voleibol yo me quedaba vacía. Pero últimamente ya no."
+        "text": "Antes pensaba que sin voleibol yo quedaba vacía. Pero últimamente ya no."
     }
 }

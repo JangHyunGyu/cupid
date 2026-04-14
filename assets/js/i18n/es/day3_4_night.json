@@ -29,7 +29,7 @@
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
-        "text": "Esa novela, todavía no he decidido cómo acaba"
+        "text": "Esa novela, todavía no decidí cómo acaba"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -81,7 +81,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "{name}",
-        "text": "*Yuna me ha mandado tres mensajes seguidos. Ella, que normalmente no manda ni uno. — Así de cabreada está.*"
+        "text": "*Yuna me mandó tres mensajes seguidos. Ella, que normalmente no manda ni uno. — Así de enojada está.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -130,15 +130,15 @@
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*— Me desperté empapado en sudor. Las 3 de la mañana. El techo. Saqué el móvil. La galería. Scroll, otra vez. — La foto de Sojeong.*"
+        "text": "*— Me desperté empapado en sudor. Las 3 de la mañana. El techo. Saqué el celular. La galería. Scroll, otra vez. — La foto de Sojeong.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
-        "text": "*¿Qué he hecho?*"
+        "text": "*¿Qué hice?*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Está sonriendo. Me sonríe desde la foto de grupo. Como pidiendo ayuda. Esta vez no voy a apartar la mirada. En este instituto no me voy a callar.*"
+        "text": "*Está sonriendo. Me sonríe desde la foto de grupo. Como pidiendo ayuda. Esta vez no voy a apartar la mirada. En este colegio no me voy a callar.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
@@ -146,15 +146,15 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Abrí los ojos. La luz de la mañana se cuela entre las cortinas. — Hoy he tenido un buen sueño. Saqué el móvil. Abrí la galería. La foto de Sojeong. — Paré el scroll y dejé el dedo pulsado.*"
+        "text": "*Abrí los ojos. La luz de la mañana se cuela entre las cortinas. — Hoy tuve un buen sueño. Saqué el celular. Abrí la galería. La foto de Sojeong. — Paré el scroll y dejé el dedo pulsado.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*La tenía guardada porque sentía que, si la borraba, también se iría lo que sentí entonces. Pero ya no es apego: es un recuerdo. — Su papel ha terminado.*"
+        "text": "*La tenía guardada porque sentía que, si la borraba, también se iría lo que sentí entonces. Pero ya no es apego: es un recuerdo. — Su papel terminó.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Esta vez es distinto. Si lo veo, lo digo. Si lo sé, me mojo. Por una persona, en serio. — La galería está vacía. El hueco donde estaba la foto de Sojeong. La pantalla en blanco se ve casi más nítida.*"
+        "text": "*Esta vez es distinto. Si lo veo, lo digo. Si lo sé, doy la cara. Por una persona, en serio. — La galería está vacía. El hueco donde estaba la foto de Sojeong. La pantalla en blanco se ve casi más nítida.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -186,15 +186,15 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Esta vez quería decirlo sin arrepentirme. Que en este instituto iba a vivir con honestidad.*"
+        "text": "*Esta vez quería decirlo sin arrepentirme. Que en este colegio iba a vivir con honestidad.*"
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Igual que con Sojeong. Lo sabía y me callé. En el instituto de antes vi a Sojeong derrumbarse y cerré la boca. En este instituto — otra vez.*"
+        "text": "*Igual que con Sojeong. Lo sabía y me callé. En el colegio de antes vi a Sojeong derrumbarse y cerré la boca. En este colegio — otra vez.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Este instituto: me arrepiento de haberlo dicho a todas. Al final el problema no es 'hablar o callar' — es 'a quién'.*"
+        "text": "*Este colegio: me arrepiento de haberlo dicho a todas. Al final el problema no es 'hablar o callar' — es 'a quién'.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu lo dijo: 'Rechazar también es amor.' En mi instituto anterior, Sojeong desapareció sin que nadie la ayudara. Porque yo cerré la boca. — Ese fue el final más cruel, para Sojeong y para mí. Si una sola de aquellas 38 notas se hubiera llegado a enviar — a lo mejor Sojeong no habría tenido que dejar el instituto.*"
+        "text": "*Minsu lo dijo: 'Rechazar también es amor.' En mi colegio anterior, Sojeong desapareció sin que nadie la ayudara. Porque yo cerré la boca. — Ese fue el final más cruel, para Sojeong y para mí. Si una sola de aquellas 38 notas se hubiera llegado a enviar — a lo mejor Sojeong no habría tenido que dejar el colegio.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*Bloqueé el móvil. La galería está vacía, pero mi cabeza sigue hecha un lío. — Aun así, un paso.*"
+        "text": "*Bloqueé el celular. La galería está vacía, pero mi cabeza sigue hecha un lío. — Aun así, un paso.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",

@@ -9,15 +9,15 @@
     },
     "lunch_start_5": {
         "name": "Dain",
-        "text": "¡Eh! ¡¿Has comido ya?! ¡Vamos a la tienda! ¡Apuesta de pan, paga el que pierda!"
+        "text": "¡Oye! ¡¿Ya comiste?! ¡Vamos a la tienda! ¡Apuesta de pan, paga el que pierda!"
     },
     "lunch_start_6": {
         "name": "{name}",
-        "text": "*Y Yuna sale del aula en silencio con solo su bolso. Dirección: la biblioteca.*"
+        "text": "*Y Yuna sale del salón en silencio con solo su mochila. Dirección: la biblioteca.*"
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Tres caminos. Una elección así el primer día. En mi anterior instituto no elegía. Lo posponía y se me iba el momento. — Esta vez no.*"
+        "text": "*Tres caminos. Una elección así el primer día. En mi escuela anterior no elegía. Lo posponía y se me iba el momento. — Esta vez no.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "lunch_seo_8": {
         "name": "{name}",
-        "text": "*Seoyeon saca una fiambrera del bolso. Preparada con esmero, para dos.*"
+        "text": "*Seoyeon saca una lonchera de la mochila. Preparada con esmero, para dos.*"
     },
     "lunch_seo_9": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Desde el principio iba a comer conmigo. Abro la fiambrera y aparecen los acompañamientos, hechos con mimo. Rollito de huevo, salchicha, mini bolas de arroz.*"
+        "text": "*Desde el principio iba a comer conmigo. Abro la lonchera y aparecen los acompañamientos, hechos con cariño. Rollito de huevo, salchicha, mini bolas de arroz.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Esquiva las preguntas con habilidad. Comemos un rato en silencio. La brisa es agradable. La vista del instituto desde la azotea es — más amplia de lo que pensaba.*"
+        "text": "*Esquiva las preguntas con habilidad. Comemos un rato en silencio. La brisa es agradable. La vista de la escuela desde la azotea es — más amplia de lo que pensaba.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "lunch_seo_21": {
         "name": "Seoyeon",
-        "text": "*sonríe* Pregunté por la escuela y me contestas sobre la comida."
+        "text": "*sonríe* Pregunté por la escuela y me respondes sobre la comida."
     },
     "lunch_seo_22": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "lunch_seo_after_5": {
         "name": "{name}",
-        "text": "*No una invitación, un permiso. Mientras Seoyeon recoge la lonchera — se aparta el pelo con el meñique.*"
+        "text": "*No una invitación, un permiso. Mientras Seoyeon recoge la lonchera — se aparta el cabello con el meñique.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "¡La combinación de pan soboro con leche de fresa es felicidad pura por caloría! ¡Créeme!"
+        "text": "¡La combinación de pan soboro con leche de fresa es felicidad pura por caloría! ¡Confía en mí!"
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "lunch_dain_4": {
         "name": "Dain",
-        "text": "¡Piedra-papel-tijeras! ¡Obvio!"
+        "text": "¡Piedra, papel o tijera! ¡Obvio!"
     },
     "lunch_dain_5": {
         "name": "{name}",
@@ -194,23 +194,23 @@
     },
     "lunch_dain_7": {
         "name": "{name}",
-        "text": "...Está bien, vamos."
+        "text": "...Bueno, vamos."
     },
     "lunch_dain_8": {
         "name": "{name}",
-        "text": "*Piedra-papel-tijeras.*"
+        "text": "*Piedra, papel o tijera.*"
     },
     "lunch_dain_9": {
         "name": "Dain",
-        "text": "¡Piedra— papel— tijeras!"
+        "text": "¡Piedra— papel— tijera!"
     },
     "lunch_dain_10": {
         "name": "{name}",
-        "text": "*Piedra, papel, tijeras. — Dain perdió.*"
+        "text": "*Piedra, papel, tijera. — Dain perdió.*"
     },
     "lunch_dain_11": {
         "name": "Dain",
-        "text": "¡¿...Eh?! ¡¿Perdí?! ¡¡La revancha!!"
+        "text": "¡¿...Eh?! ¡¿Perdí?! ¡¡Otra vez!!"
     },
     "lunch_dain_12": {
         "name": "{name}",
@@ -222,11 +222,11 @@
     },
     "lunch_dain_15": {
         "name": "{name}",
-        "text": "*Nos sentamos en un banco junto a la tienda a comer el pan.*"
+        "text": "*Nos sentamos en una banca junto a la tienda a comer el pan.*"
     },
     "lunch_dain_16": {
         "name": "Dain",
-        "text": "*mordiendo el pan* Oye, ¿de verdad no haces deporte?"
+        "text": "*mordiendo el pan* Oye, ¿en serio no haces deporte?"
     },
     "lunch_dain_17": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "¡No, es que para ir conmigo hay que pasar un test mínimo de resistencia! jaja"
+        "text": "¡No, es que para andar conmigo hay que pasar una prueba mínima de resistencia! jaja"
     },
     "lunch_dain_19": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "¡Oh, ¿lo conoces?! ¡¿O sea que sí sabes de deporte?!"
+        "text": "¡Oh, ¿lo conoces?! ¡¿Entonces sí sabes de deporte?!"
     },
     "lunch_dain_choice": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "¡Jajaja, genial! ¡Desde hoy, entrenamiento especial! Calentamiento en el gimnasio después de clase, ¿hecho?"
+        "text": "¡Jajaja, qué bueno! ¡Desde hoy, entrenamiento especial! Calentamiento en el gimnasio después de clase, ¿va?"
     },
     "lunch_dain_c1_2": {
         "name": "{name}",
@@ -274,7 +274,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "¡Va, algo de interés tienes! ¡Pásate por el gimnasio después de clase! ¡No te vas a arrepentir!"
+        "text": "¡Bueno, algo de interés tienes! ¡Date una vuelta por el gimnasio después de clase! ¡No te vas a arrepentir!"
     },
     "lunch_dain_after": {
         "name": "{name}",
@@ -290,11 +290,11 @@
     },
     "lunch_dain_after_4": {
         "name": "Dain",
-        "text": "¿Tu primera comida de recién trasladado y te toca conmigo? ¡Eso es un récord, un RÉCORD!"
+        "text": "¿Tu primera comida de recién llegado y te toca conmigo? ¡Eso es un récord, un RÉCORD!"
     },
     "lunch_dain_after_5": {
         "name": "{name}",
-        "text": "*Sonríe y me da un puñetazo suave en el hombro. Lo dijo tan en serio que asentí sin más.*"
+        "text": "*Sonríe y me da un golpecito suave en el hombro. Lo dijo tan en serio que asentí sin más.*"
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "lunch_yuna_22": {
         "name": "Yuna",
-        "text": "*colocando un marcapáginas* ...Gracias por estar en silencio."
+        "text": "*colocando un separador* ...Gracias por estar en silencio."
     },
     "lunch_yuna_23": {
         "name": "{name}",
@@ -392,8 +392,8 @@
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sentados en un banco con Dain en la tienda escolar, comiendo pan.*",
-        "context": "Almuerzo del primer día, acaban de jugar piedra-papel-tijera con Dain. Ella perdió y compró pan. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
+        "text": "*Sentados en una banca con Dain en la tienda escolar, comiendo pan.*",
+        "context": "Almuerzo del primer día, acaban de jugar piedra, papel o tijera con Dain. Ella perdió y compró pan. Tono: Conversación brillante y ligera. Emoción y curiosidad del primer día. Nunca tocar temas pesados. Enfocarse en bromas e intercambios juguetones.",
         "personality": "Dain es una atleta enérgica. Le encanta el contacto físico, usa muchas exclamaciones. Dura por fuera, suave por dentro."
     },
     "lunch_yuna_freetalk": {
@@ -452,7 +452,7 @@
     },
     "lunch_dain_12_b": {
         "name": "Dain",
-        "text": "¡Ah, vale! ¡Yo invito, yo invito! ¡Señora, dos panes de soboro!"
+        "text": "¡Ah, bueno! ¡Yo invito, yo invito! ¡Señora, dos panes de soboro!"
     },
     "lunch_yuna_5_b": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Hay algo metido en el escritorio de Yuna. Un marcapáginas viejo. Tiene algo escrito, pero no alcanzo a leerlo. Yuna pone inconscientemente la mano encima. Quizá sea algo valioso para ella. Saco un libro cualquiera de la estantería y lo abro.*"
+        "text": "*Hay algo metido en el escritorio de Yuna. Un separador viejo. Tiene algo escrito, pero no alcanzo a leerlo. Yuna pone inconscientemente la mano encima. Quizá sea algo valioso para ella. Saco un libro cualquiera del estante y lo abro.*"
     }
 }

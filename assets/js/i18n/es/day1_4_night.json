@@ -1,11 +1,11 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*De vuelta en mi cuarto. Tumbado en la cama. Para ser el primer día — estoy hecho polvo. Pero no ha estado mal.*"
+        "text": "*De vuelta en mi cuarto. Acostado en la cama. Para ser el primer día — estoy agotado. Pero no estuvo mal.*"
     },
     "night_start_3": {
         "name": "{name}",
-        "text": "*Suena el móvil. El chat del instituto.*"
+        "text": "*Suena el celular. El chat de la escuela.*"
     },
     "night_msg_seo_1": {
         "name": "Seoyeon",
@@ -17,7 +17,7 @@
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
-        "text": "*la próxima vez te tendré algo de beber, al menos*"
+        "text": "*la próxima vez te voy a tener algo de beber, al menos*"
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
@@ -29,15 +29,15 @@
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*...me ha gustado que hoy estuvieras calladito*"
+        "text": "*...me gustó que hoy estuvieras calladito*"
     },
     "night_msg_yuna_2": {
         "name": "Yuna",
-        "text": "*mañana también te guardo el sitio*"
+        "text": "*mañana también te guardo el lugar*"
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*'Te guardo el sitio'. — La mano que deja el móvil se mueve despacio.*"
+        "text": "*'Te guardo el lugar'. — La mano que deja el celular se mueve despacio.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
@@ -45,7 +45,7 @@
     },
     "night_msg_dain_2": {
         "name": "Dain",
-        "text": "*¡ni se te ocurra escaquearte jaja!*"
+        "text": "*¡ni se te ocurra zafarte jaja!*"
     },
     "night_msg_dain_3": {
         "name": "Dain",
@@ -57,7 +57,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Estaba a punto de dormirme cuando — el móvil vibra otra vez. Las once de la noche. ¿Quién será?*"
+        "text": "*Estaba a punto de dormirme cuando — el celular vibra otra vez. Las once de la noche. ¿Quién será?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*La mano que había dejado el móvil se queda quieta.*"
+        "text": "*La mano que había dejado el celular se queda quieta.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -89,15 +89,15 @@
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Incluso con la pantalla apagada, me quedé con el móvil en la mano un buen rato.*"
+        "text": "*Incluso con la pantalla apagada, me quedé con el celular en la mano un buen rato.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "*¡eh! aún no estás dormido, ¿no?*"
+        "text": "*¡hey! aún no estás dormido, ¿no?*"
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "*¡busco compi para hacer deporte mañana por la mañana!*"
+        "text": "*¡busco compañero para hacer deporte mañana por la mañana!*"
     },
     "night_dain_late_3": {
         "name": "Dain",
@@ -105,15 +105,15 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*¿Esta tía no sabe lo que es un 'no'?*"
+        "text": "*¿Esta chica no sabe lo que es un 'no'?*"
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Dejo el móvil. Miro al techo. El olor a cerezos aún sigue en mi uniforme.*"
+        "text": "*Dejo el celular. Miro al techo. El olor a cerezos aún sigue en mi uniforme.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*No ha sido un mal primer día. Mañana — pinta que va a ser un poco más divertido.*"
+        "text": "*No fue un mal primer día. Mañana — parece que va a ser un poco más divertido.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Hay un aviso de la tutora en la app del instituto. 'Aviso clase 3-2: mañana traed el material de mates para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso me basta.'*"
+        "text": "*Hay un aviso de la tutora en la app de la escuela. 'Aviso clase 3-2: mañana traigan el material de matemáticas para la primera hora. — Y {name}, mientras te estés adaptando bien, con eso me basta.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Hay una alerta en la app de salud del instituto. 'Registro de enfermería: {name} — mareo (leve). Nota: si mañana sigues igual, vuelve. Bebe mucha agua. — el ♥ es interés puramente médico ^^'*"
+        "text": "*Hay una alerta en la app de salud de la escuela. 'Registro de enfermería: {name} — mareo (leve). Nota: si mañana sigues igual, vuelve. Toma mucha agua. — el ♥ es interés puramente médico ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

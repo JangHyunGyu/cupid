@@ -1,11 +1,11 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Después de clases. Decido recorrer la escuela un poco. Aún no conozco bien la distribución. Camino por el pasillo. El móvil vibra. — El grupo del instituto anterior.*"
+        "text": "*Después de clases. Decido recorrer la escuela un poco. Aún no conozco bien la distribución. Camino por el pasillo. El celular vibra. — El grupo de la escuela anterior.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'Oye, Sojeong está bien en su nueva escuela~' 'Menos mal jaja' — Me guardo el móvil en el bolsillo.*"
+        "text": "*'Oye, Sojeong está bien en su nueva escuela~' 'Menos mal jaja' — Guardo el celular en el bolsillo.*"
     },
     "after_kakao_3": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "after_miss_dain_6": {
         "name": "Dain",
-        "text": "¡Llego tarde! ¡Tengo que ir al gimnasio! — ¡Ah, nos vemos mañana! ¡Chico nuevo!"
+        "text": "¡Voy tarde! ¡Tengo que ir al gimnasio! — ¡Ah, nos vemos mañana! ¡Chico nuevo!"
     },
     "after_miss_dain_7": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna se queda mirando el marcapáginas un largo rato. Como si comprobara que no se haya arrugado.*"
+        "text": "*Yuna se queda mirando el marcador de libros un largo rato. Como si comprobara que no se haya arrugado.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -85,11 +85,11 @@
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "...Subí a tomar el aire y me la encontré abierta."
+        "text": "...Subí a tomar aire y la encontré abierta."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seguro que esperó. — Me sabe mal, y a la vez me hace gracia, aunque no sepa por qué.*"
+        "text": "*Seguro que esperó. — Me da pena, y a la vez me causa gracia, aunque no sepa por qué.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Es la profesora. El cárdigan más revuelto que antes. Parece que ha librado una batalla todo el día.*"
+        "text": "*Es la profesora. El cárdigan más revuelto que antes. Parece que libró una batalla todo el día.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Profesora",
@@ -125,7 +125,7 @@
         "text": "*Parece una pregunta de rutina, pero sus ojos me observan con genuina atención.*",
         "choices": [
             "Estoy bien. Es una buena escuela.",
-            "Sinceramente, ha sido un día intenso."
+            "Sinceramente, fue un día intenso."
         ]
     },
     "after_homeroom_ok": {
@@ -138,11 +138,11 @@
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
-        "text": "*Lo dice como quien hace su trabajo, pero eso ha sonado un poco más personal.*"
+        "text": "*Lo dice como quien hace su trabajo, pero eso sonó un poco más personal.*"
     },
     "after_homeroom_ok_5": {
         "name": "Profesora",
-        "text": "Ser perfecto el primer día acaba pasando factura. Permítete meter la pata un poco. — Anda, vete."
+        "text": "Ser perfecto el primer día termina pasando factura. Permítete equivocarte un poco. — Anda, vete."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
@@ -150,19 +150,19 @@
     },
     "after_homeroom_honest_1": {
         "name": "Profesora",
-        "text": "Sentirse abrumado es lo normal. Sería raro que estuvieras tan pancho en tu primer día en un instituto nuevo."
+        "text": "Sentirse abrumado es lo normal. Sería raro que estuvieras tan tranquilo en tu primer día en una escuela nueva."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "¿Usted también se ha cambiado de instituto, profe?"
+        "text": "¿Usted también se cambió de escuela, profe?"
     },
     "after_homeroom_honest_3": {
         "name": "Profesora",
-        "text": "...Algo parecido. A mí también me soltaron de golpe en un sitio nuevo."
+        "text": "...Algo parecido. A mí también me soltaron de golpe en un lugar nuevo."
     },
     "after_homeroom_honest_4": {
         "name": "Profesora",
-        "text": "Si se pone difícil, ven a la sala de profesores. Te puedo ofrecer un café — ah, eres estudiante. Un zumo, entonces."
+        "text": "Si se pone difícil, ven a la sala de profesores. Te puedo ofrecer un café — ah, eres estudiante. Un jugo, entonces."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*Desaparece al fondo del pasillo. El pelo largo le oscila. — La he mirado más de la cuenta.*"
+        "text": "*Desaparece al fondo del pasillo. El pelo largo le oscila. — La miré más de la cuenta.*"
     },
     "after_homeroom_freetalk": {
         "name": "Profesora",
@@ -224,11 +224,11 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Por hoy ya he caminado bastante. A casa a descansar.*"
+        "text": "*Por hoy ya caminé bastante. A casa a descansar.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Abro la puerta de la enfermería. Un suave olor a desinfectante. Cortinas blancas, una cama, un escritorio pequeño. Hay una mujer sentada al escritorio. Bata blanca, estetoscopio al cuello. Melena corta color lavanda peinada con cuidado, me observa por encima de las gafas con el mentón apoyado en una mano. Estaba leyendo algo — y levanta la mirada.*"
+        "text": "*Abro la puerta de la enfermería. Un suave olor a desinfectante. Cortinas blancas, una cama, un escritorio pequeño. Hay una mujer sentada al escritorio. Bata blanca, estetoscopio al cuello. Melena corta color lavanda peinada con cuidado, me observa por encima de los lentes con el mentón apoyado en una mano. Estaba leyendo algo — y levanta la mirada.*"
     },
     "after_nurse_enter_2": {
         "name": "Enfermera",
@@ -240,7 +240,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Enfermera",
-        "text": "Eres el nuevo, ¿verdad? Primer día y ya en la enfermería, parece que ha sido duro. A ver."
+        "text": "Eres el nuevo, ¿verdad? Primer día y ya en la enfermería, parece que fue duro. A ver."
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "after_nurse_enter_6": {
         "name": "Enfermera",
-        "text": "No tienes fiebre... Puede que tengas la tensión un poco baja."
+        "text": "No tienes fiebre... Puede que tengas la presión un poco baja."
     },
     "after_nurse_enter_7": {
         "name": "Enfermera",
@@ -272,7 +272,7 @@
     },
     "after_nurse_enter_8": {
         "name": "Enfermera",
-        "text": "Oye, no te agobies con lo de hablarme de usted. En la enfermería puedes relajarte. Para eso está."
+        "text": "Oye, no te estreses con eso de hablarme de usted. En la enfermería puedes relajarte. Para eso está."
     },
     "after_nurse_enter_10": {
         "name": "Enfermera",
@@ -294,7 +294,7 @@
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Oye, ¿dónde te metiste en el almuerzo? Pasé por la cantina y no estabas."
+        "text": "Oye, ¿dónde te metiste en el almuerzo? Pasé por la cafetería y no estabas."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
@@ -314,7 +314,7 @@
     },
     "after1_jealousy_seo_honest": {
         "name": "{name}",
-        "text": "Sí, ella me llevó. Hasta se trajo comida para dos."
+        "text": "Sí, ella me llevó. Hasta trajo comida para dos."
     },
     "after1_jealousy_seo_honest_2": {
         "name": "Dain",
@@ -334,7 +334,7 @@
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "Te vi en la cantina con Dain en el almuerzo. Te adaptas rápido."
+        "text": "Te vi en la cafetería con Dain en el almuerzo. Te adaptas rápido."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
@@ -362,7 +362,7 @@
     },
     "after_miss_yuna_1_c": {
         "name": "{name}",
-        "text": "*Lo recojo y se lo ofrezco. Yuna se detiene y toma el marcapáginas.*"
+        "text": "*Lo recojo y se lo ofrezco. Yuna se detiene y toma el marcador de libros.*"
     },
     "after_miss_yuna_3_b": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "after_hidden_homeroom_3_c": {
         "name": "Profesora",
-        "text": "Ah. ¿Así que venía por eso? — Hiciste bien en venir. Siéntate un momento."
+        "text": "Ah. ¿Así que venías por eso? — Hiciste bien en venir. Siéntate un momento."
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
@@ -402,7 +402,7 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Me detengo frente a la puerta y respiro hondo. Solo un momento de descanso. Pongo la mano en la manilla. El metal frío roza mi palma.*"
+        "text": "*Me detengo frente a la puerta y respiro hondo. Solo un momento de descanso. Pongo la mano en la manija. El metal frío roza mi palma.*"
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
@@ -418,11 +418,11 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Apenas hemos cruzado un par de frases y ya me lleva a su ritmo. La enfermera se levanta y se acerca. Movimientos fluidos. — Cuando su mano me toca, me tenso sin querer.*"
+        "text": "*Apenas cruzamos un par de frases y ya me lleva a su ritmo. La enfermera se levanta y se acerca. Movimientos fluidos. — Cuando su mano me toca, me tenso sin querer.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "¿Tocando la frente se sabe la tensión?"
+        "text": "¿Tocando la frente se sabe la presión?"
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
@@ -434,7 +434,7 @@
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
-        "text": "Con agua vale."
+        "text": "Con agua está bien."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
@@ -466,7 +466,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Solo heridas leves.' — Hay alivio en esas palabras. Han pasado diez minutos. Me levanto.*"
+        "text": "*'Solo heridas leves.' — Hay alivio en esas palabras. Pasaron diez minutos. Me levanto.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -478,7 +478,7 @@
     },
     "after_nurse_enter_11_c": {
         "name": "Enfermera",
-        "text": "*Entorna los ojos.* Si te encuentras mal y te aguantas, claro que me preocupo. Para eso estoy aquí."
+        "text": "*Entorna los ojos.* Si te sientes mal y te aguantas, claro que me preocupo. Para eso estoy aquí."
     },
     "after_nurse_enter_11_d": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
-        "text": "*No parece muy acostumbrada a recibir preocupación. — Más bien de los que siempre cuidan a los demás.*"
+        "text": "*No parece muy acostumbrada a recibir preocupación. — Más bien de las que siempre cuidan a los demás.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Enfermera",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Se ríe bajito y me despide con la mano. Reparo en la tirita del dorso de su mano. — Una enfermería rara. Del tipo de raro que no está mal.*"
+        "text": "*Se ríe bajito y me despide con la mano. Reparo en la curita del dorso de su mano. — Una enfermería rara. Del tipo de raro que no está mal.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

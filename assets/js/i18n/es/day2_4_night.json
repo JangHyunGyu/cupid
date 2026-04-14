@@ -1,19 +1,19 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Ya en casa. Me duché y me tumbé en la cama — y entonces empiezan a caer notificaciones en el móvil. Tres. A la vez.*"
+        "text": "*Ya en casa. Me duché y me acosté en la cama — y entonces empiezan a caer notificaciones en el celular. Tres. A la vez.*"
     },
     "night2_msg_1": {
         "name": "{name}",
-        "text": "*Me han escrito tres.*"
+        "text": "*Me escribieron tres.*"
     },
     "night2_msg_dain_specific": {
         "name": "Dain",
-        "text": "¡¡eh!! ¡¡qué bueno estaba el tteokbokki hoy!!"
+        "text": "¡¡oye!! ¡¡qué rico estaba el tteokbokki hoy!!"
     },
     "night2_msg_dain_specific_2": {
         "name": "Dain",
-        "text": "¡¡mañana otra apuesta!! ¡¡cambiamos de prueba!!"
+        "text": "¡¡mañana otra apuesta!! ¡¡cambiemos de reto!!"
     },
     "night2_msg_seo_specific": {
         "name": "Seoyeon",
@@ -33,47 +33,47 @@
     },
     "night2_msg_seo_general": {
         "name": "Seoyeon",
-        "text": "Mañana a la hora de comer dejo la azotea abierta. Vente"
+        "text": "Mañana a la hora del almuerzo dejo la azotea abierta. Ven"
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "eh, mañana nos pasamos por el kiosko. ¡Todavía me fastidia no haber podido ir hoy!"
+        "text": "oye, mañana pasemos por el kiosko. ¡Todavía me molesta no haber podido ir hoy!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "¿Te subes a la azotea a la hora de comer? Correrá buen aire"
+        "text": "¿Subes a la azotea a la hora del almuerzo? Correrá buen aire"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
-        "text": "Mañana dejo la azotea abierta. Pásate si puedes"
+        "text": "Mañana dejo la azotea abierta. Pasa si puedes"
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...¿te pasas por el anexo mañana?"
+        "text": "...¿pasas por el anexo mañana?"
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "eh ¡¿mañana vamos al kiosko?!"
+        "text": "oye ¡¿mañana vamos al kiosko?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
-        "text": "Mañana a la hora de comer dejo la azotea abierta"
+        "text": "Mañana a la hora del almuerzo dejo la azotea abierta"
     },
     "night2_msg_generic_3": {
         "name": "Yuna",
-        "text": "...¿te has acabado ese libro?"
+        "text": "...¿terminaste ese libro?"
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Tengo que contestar a las tres a la vez. — No sé si esto es la gloria o una tortura.*"
+        "text": "*Tengo que contestarle a las tres a la vez. — No sé si esto es la gloria o una tortura.*"
     },
     "night2_choice": {
         "name": "{name}",
-        "text": "*¿A quién contesto primero?*",
+        "text": "*¿A quién le contesto primero?*",
         "choices": [
-            "Contestar a Dain primero",
-            "Contestar a Seoyeon primero",
-            "Contestar a Yuna primero"
+            "Contestarle a Dain primero",
+            "Contestarle a Seoyeon primero",
+            "Contestarle a Yuna primero"
         ]
     },
     "night2_reply_dain_1": {
@@ -82,11 +82,11 @@
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "jajaja ¡¿no aguantas el picante?!"
+        "text": "jajaja ¡¿no aguantas lo picante?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "¡¡mañana pedimos el suave!!"
+        "text": "¡¡mañana pidamos el suave!!"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
@@ -110,7 +110,7 @@
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "A la hora de comer dejo la azotea abierta. Esta vez ven de verdad"
+        "text": "A la hora del almuerzo dejo la azotea abierta. Esta vez ven de verdad"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Te digo por qué luego"
+        "text": "Luego te digo por qué"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -146,43 +146,43 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*Envié las respuestas y solté el móvil. Fin del segundo día.*"
+        "text": "*Envié las respuestas y solté el celular. Fin del segundo día.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Lo que me dijo Minsu se me repite en la cabeza. '¿Hacías lo mismo en el otro instituto?'*"
+        "text": "*Lo que me dijo Minsu se me repite en la cabeza. '¿Hacías lo mismo en la otra escuela?'*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Bajé un buen rato por la galería. Hace tres meses. — Aparece una foto. Una foto de grupo del día de la excursión. Sojeong sonríe. Justo a mi lado. — La semana siguiente a esta foto empezaron los garabatos en el pupitre de Sojeong. Me gustaba. Eso lo tengo clarísimo. Pero había algo más urgente que decir 'me gustas'.*"
+        "text": "*Bajé un buen rato por la galería. Hace tres meses. — Aparece una foto. Una foto grupal del día del paseo. Sojeong sonríe. Justo a mi lado. — La semana siguiente a esta foto empezaron los rayones en el pupitre de Sojeong. Me gustaba. Eso lo tengo clarísimo. Pero había algo más urgente que decir 'me gustas'.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Por aquel entonces abría el móvil cada noche. Escribía algo en las notas y lo borraba. Una y otra vez. Frases para declararme, pero también frases tipo 'Profe, a Sojeong la están —'. Paraba siempre justo antes de enviar. Tenía la sensación de que, si me metía, acabaría también en el punto de mira. Y un día de marzo, el pupitre de Sojeong apareció vacío. Al día siguiente, también. Y al otro.*"
+        "text": "*Por aquel entonces abría el celular cada noche. Escribía algo en las notas y lo borraba. Una y otra vez. Frases para declararme, pero también frases tipo 'Profe, a Sojeong la están —'. Paraba siempre justo antes de enviar. Sentía que, si me metía, terminaría también en la mira. Y un día de marzo, el pupitre de Sojeong apareció vacío. Al día siguiente, también. Y al otro.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Las simulaciones de las notas del móvil se pararon en la número 38. No hay una 39. Porque ya no había a quién mandárselo. Ni me declaré, ni la protegí. El traslado no fue por Sojeong. Fue por el trabajo de mi padre. — Pero la verdad es que no me importó cambiarme. Así ya no tenía que pasar cada día por delante de su pupitre vacío.*"
+        "text": "*Las simulaciones de las notas del celular se detuvieron en la número 38. No hay una 39. Porque ya no había a quién mandárselo. Ni me declaré, ni la protegí. El traslado no fue por Sojeong. Fue por el trabajo de mi padre. — Pero la verdad es que no me importó cambiarme. Así ya no tenía que pasar cada día frente a su pupitre vacío.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Esta vez, no apartes la mirada.' — Esa fue la promesa que me hice al llegar a este instituto. Cerré la galería. Dudé si borrar la foto, y — al final la dejé. Si la borraba, sentía que se me iría también la culpa de entonces.*"
+        "text": "*'Esta vez, no apartes la mirada.' — Esa fue la promesa que me hice al llegar a esta escuela. Cerré la galería. Dudé si borrar la foto, y — al final la dejé. Si la borraba, sentía que se me iría también la culpa de entonces.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Y aun así — miro al techo. Lo de hoy no se me va. Seoyeon. Dain. Yuna. Las tres. Podría decir que es curiosidad. Pero, si soy sincero, me da miedo. Empezar a decantarme por una sola.*"
+        "text": "*Y aun así — miro al techo. Lo de hoy no se me va. Seoyeon. Dain. Yuna. Las tres. Podría decir que es curiosidad. Pero, si soy sincero, me da miedo. Empezar a inclinarme por una sola.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Con Sojeong solo miraba a una. Solo quería a una, solo la veía a ella — y aunque la vi hundirse al lado, me quedé atascado en el bloc de notas. Treinta y ocho veces. Mirar solo a una significaba poder perder a esa una. Yo entonces no lo sabía.*"
+        "text": "*Con Sojeong solo miraba a una. Solo quería a una, solo la veía a ella — y aunque la vi hundirse a mi lado, me quedé atascado en el bloc de notas. Treinta y ocho veces. Mirar solo a una significaba poder perder a esa una. Yo entonces no lo sabía.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Por eso ahora les estoy dejando la puerta abierta a las tres. No me gusta admitirlo. Si me decido por una demasiado pronto, solo la voy a ver a ella, las demás se me van a borrar, y al final otra vez no me voy a enterar cuando alguien se hunda a mi lado. Es como un seguro. Sé que es cobarde. Cualquiera diría que soy un indeciso de mierda. Pero — sé lo que es perder a alguien por mirar solo a una. Y eso es lo que más miedo me da.*"
+        "text": "*— Por eso ahora les estoy dejando la puerta abierta a las tres. No me gusta admitirlo. Si me decido por una demasiado pronto, solo la voy a ver a ella, las demás se me van a borrar, y al final otra vez no me voy a dar cuenta cuando alguien se hunda a mi lado. Es como un seguro. Sé que es cobarde. Cualquiera diría que soy un indeciso de mierda. Pero — sé lo que es perder a alguien por mirar solo a una. Y eso es lo que más miedo me da.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Fin del segundo día. El primer día fue curiosidad. Quería saber qué clase de personas eran. Hoy — es un poco distinto. Ya no es curiosidad. Se me han metido en la cabeza. Qué estarán haciendo, qué me dirán mañana.*"
+        "text": "*Fin del segundo día. El primer día fue curiosidad. Quería saber qué clase de personas eran. Hoy — es un poco distinto. Ya no es curiosidad. Se me metieron en la cabeza. Qué estarán haciendo, qué me dirán mañana.*"
     },
     "night2_hidden_check": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Mensaje privado de la tutora. '{name}, gracias por pasarte por la sala de profes hoy. Lo administrativo ya está, así que no hace falta que te llame más. ...Pero si se te hace cuesta arriba adaptarte, vente cuando quieras.'*"
+        "text": "*Mensaje privado de la tutora. '{name}, gracias por pasar por la sala de profes hoy. Lo administrativo ya está, así que no hace falta que te llame más. ...Pero si se te hace difícil adaptarte, ven cuando quieras.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
@@ -198,39 +198,39 @@
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*'No hace falta que te llame más' y 'vente cuando quieras' en el mismo mensaje. Es contradictorio — pero muy suyo.*"
+        "text": "*'No hace falta que te llame más' y 'ven cuando quieras' en el mismo mensaje. Es contradictorio — pero muy suyo.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notificación de la app de salud. 'Registro enfermería: {name} — rasguño en el codo (leve). Nota: mañana por la mañana te cambio la tirita. Cambiar tiritas es un acto médico, así que no tienes derecho a negarte ^^'*"
+        "text": "*Notificación de la app de salud. 'Registro enfermería: {name} — raspón en el codo (leve). Nota: mañana en la mañana te cambio la curita. Cambiar curitas es un acto médico, así que no tienes derecho a negarte ^^'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Sin derecho a negarse. — Que esta mujer me está arrastrando, ¿tengo que admitirlo ya?*"
+        "text": "*Sin derecho a negarse. — Que esta mujer me está arrastrando, ¿ya tengo que admitirlo?*"
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "¡¡¡Tíoooo!!!!! ¡Me estoy meando de la risa aquí sola jajajaja! ¡¡Mañana te quiero ver en el gimnasio sí o sí!!"
+        "text": "¡¡¡Oyeeee!!!!! ¡Me estoy muriendo de la risa aquí sola jajajaja! ¡¡Mañana te quiero ver en el gimnasio sí o sí!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
-        "text": "jaja vale. ¡buenas noches!"
+        "text": "jaja bueno. ¡buenas noches!"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
-        "text": "...Resulta que eres más interesante de lo que creía. ¿Comemos mañana en la azotea?"
+        "text": "...Resulta que eres más interesante de lo que creía. ¿Almorzamos mañana en la azotea?"
     },
     "night2_reply_seo_react_default": {
         "name": "Seoyeon",
-        "text": "ja. Vale. Hasta mañana."
+        "text": "ja. Bueno. Hasta mañana."
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...así que hay alguien que contesta a estas horas. ¿Te pasas mañana por la biblioteca?"
+        "text": "...así que hay alguien que contesta a estas horas. ¿Pasas mañana por la biblioteca?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
-        "text": "...vale. Buenas noches."
+        "text": "...bueno. Buenas noches."
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Esas palabras no dejan de dar vueltas. Aún no he contestado. Ayer era solo que me rondaban la cabeza. Hoy — el 'quiero verte' me subió hasta la garganta y se volvió a bajar.*"
+        "text": "*Esas palabras no dejan de dar vueltas. Todavía no contesté. Ayer era solo que me rondaban la cabeza. Hoy — el 'quiero verte' me subió hasta la garganta y volvió a bajar.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
@@ -250,10 +250,10 @@
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Abro la nevera. No hay gran cosa. Arroz del día anterior, huevos, alga. — Me entran ganas de prepararle algo a alguien mañana. ¿A quién? No lo sé. Solo me apetece.*"
+        "text": "*Abro el refrigerador. No hay gran cosa. Arroz del día anterior, huevos, alga. — Me dan ganas de prepararle algo a alguien mañana. ¿A quién? No lo sé. Solo tengo ganas.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Preparé una fiambrera a toda prisa. No me ha quedado nada del otro mundo. Demasiado cutre para decir que lo hice con cariño. — Pero es mejor que no hacer nada.*"
+        "text": "*Preparé una lonchera a toda prisa. No me quedó nada del otro mundo. Demasiado simple para decir que lo hice con cariño. — Pero es mejor que no hacer nada.*"
     }
 }
