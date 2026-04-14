@@ -44,7 +44,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.5.2";
+const ASSET_VERSION = "2.5.3";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -237,12 +237,39 @@ async function migrateCupidChatHistoryToD1() {
         return result;
     }
 
+    // 마이그레이션 시 charId 정규화: 다국어 표시 이름 / lowercase 키 → 표준 대문자 영문 키
+    // 예: '보건선생님' / 'Infirmière' / 'nurse' → 'Nurse'
+    const GALLERY_LOWERCASE_MAP = { seyoun: 'Seoyeon', yuna: 'Yuna', dain: 'Dain', teacher: 'Teacher', nurse: 'Nurse' };
+    function _normalizeCharId(raw) {
+        if (!raw) return raw;
+        if (CHAR_NAME_MAP[raw]) return CHAR_NAME_MAP[raw];
+        if (GALLERY_LOWERCASE_MAP[raw]) return GALLERY_LOWERCASE_MAP[raw];
+        return raw;
+    }
+
+    // gallery-freetalk 레거시: assistant content가 원본 JSON 문자열인 경우 .text만 추출
+    function _unwrapAssistantJson(content, role) {
+        if (role !== 'assistant' || typeof content !== 'string') return content;
+        const trimmed = content.trim();
+        if (!trimmed.startsWith('{') && !trimmed.startsWith('```')) return content;
+        try {
+            let s = trimmed;
+            const m = s.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+            if (m) s = m[1].trim();
+            const obj = JSON.parse(s);
+            if (obj && typeof obj.text === 'string') return obj.text;
+        } catch {}
+        return content;
+    }
+
     async function migrateChatArray(charId, history, sessionId, context) {
         if (!Array.isArray(history)) return;
+        const normalizedCharId = _normalizeCharId(charId);
         for (const msg of history) {
             if (!msg || msg.role === 'system' || !msg.content) continue;
-            const content = await convertBase64ToR2(msg.content);
-            await postOne(charId, msg.role, content, sessionId, context);
+            let content = _unwrapAssistantJson(msg.content, msg.role);
+            content = await convertBase64ToR2(content);
+            await postOne(normalizedCharId, msg.role, content, sessionId, context);
         }
     }
 
