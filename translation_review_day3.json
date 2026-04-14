@@ -5077,15 +5077,17 @@
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins6",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 서랍 비유 + \"닫아야 하는데 손이\" 추가"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_6_ins6",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 서랍 비유 + \"닫아야 하는데 손이\" 추가"
       }
     },
     "hidden_nurse_d3_2_b": {
@@ -5222,15 +5224,17 @@
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_2_ins4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"아침 내내 마음이 가라앉지 않는다\" 3문장 추가"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_2_ins4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"아침 내내 마음이 가라앉지 않는다\" 3문장 추가"
       }
     },
     "hidden_nurse_d3_1_b": {
@@ -11730,9 +11734,10 @@
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**감정 오역 수정**: \"처음 본다\" → \"지키고 싶다\""
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_choice1_react",
@@ -11742,15 +11747,17 @@
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**감정 오역 수정**: \"처음 본다\" → \"지키고 싶다\""
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "**감정 오역 수정**: \"처음 본다\" → \"지키고 싶다\""
       }
     },
     "after3_dain_choice1_react2": {
@@ -13903,9 +13910,10 @@
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#haeun_warn_7_ins3",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 서연 부모님/가정 배경 추가"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#haeun_warn_7_ins3",
@@ -18954,9 +18962,10 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_4_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"다음으로 갈 수 있다\" 추가"
       }
     },
     "night3_faithful_reflect_4_c": {

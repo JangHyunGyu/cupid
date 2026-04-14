@@ -232,7 +232,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
-        "text": "*Dain hésite. — Puis sourit, à peine. Un sourire que je n’avais jamais vu.*"
+        "text": "*Dain hésite. — Puis sourit, à peine. Je veux protéger ce sourire.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -491,7 +491,7 @@
     },
     "haeun_warn_7_d": {
         "name": "{name}",
-        "text": "*Haeun tourne les talons et s'en va.*"
+        "text": "*Haeun tourne les talons et s'en va. La situation chez Seoyeon est compliquée. Ses parents. — Est-ce pour ça qu'elle 'devait être parfaite' ?*"
     },
     "after3_reject_for_seo_3b": {
         "name": "{name}",
