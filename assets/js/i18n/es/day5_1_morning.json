@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Quinto día. Domingo, pero hay evento en el instituto. Ya me siento cómodo con el uniforme. — Es por esta gente. Lo sé.*"
+        "text": "*Quinto día. Domingo, pero hay evento en el colegio. Ya me siento cómodo con el uniforme. — Es por esta gente. Lo sé.*"
     },
     "morning5_mood_check": {
         "name": "Sistema",
@@ -17,7 +17,7 @@
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Último día. No pensaba que cinco días se pasaran tan rápido. ...Ni sé qué he hecho."
+        "text": "Último día. No pensaba que cinco días se pasaran tan rápido. ...Ni sé qué hice."
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -33,11 +33,11 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "¡Eh! ¡Te he apuntado como pareja para el evento de deporte de hoy!"
+        "text": "¡Eh! ¡Te apunté como pareja para el evento de deporte de hoy!"
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Como te escaquees, me enfado de verdad, ¿eh?"
+        "text": "Si te zafas, me enojo de verdad, ¿eh?"
     },
     "morning5_end": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
-        "text": "...Cojo el manuscrito. Pesa más de lo que pensaba."
+        "text": "...Tomo el manuscrito. Pesa más de lo que pensaba."
     },
     "hidden_homeroom_d5_5": {
         "name": "Profesora",
@@ -93,7 +93,7 @@
     },
     "hidden_homeroom_d5_choice_b_d": {
         "name": "{name}",
-        "text": "*Otra más. — Quien ha tardado siete años en terminar una está diciendo 'otra más'.*"
+        "text": "*Otra más. — Quien tardó siete años en terminar una está diciendo 'otra más'.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Profesora",
@@ -105,7 +105,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*La profe se da la vuelta. Su melena larga se balancea. — Parece empeñada en no descomponerse hasta el último momento.*"
+        "text": "*La profe se da la vuelta. Su melena larga se balancea. — Parece decidida a no descomponerse hasta el último momento.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Profesora",
@@ -119,7 +119,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "Enfermera",
-        "text": "¿Eh? {name}. — Último día, ¿no? Último día del evento. Cinco días. — Se han pasado volando."
+        "text": "¿Eh? {name}. — Último día, ¿no? Último día del evento. Cinco días. — Se pasaron volando."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -131,19 +131,19 @@
     },
     "hidden_nurse_d5_5": {
         "name": "Enfermera",
-        "text": "...{name}. ¿Te pongo una tirita?"
+        "text": "...{name}. ¿Te pongo una curita?"
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
         "text": "*No tengo ninguna herida. Ella lo sabe y aun así lo pregunta.*",
         "choices": [
             "Sí, como es la última vez. Solo una.",
-            "Una tirita no — su número de teléfono."
+            "Una curita no — su número de teléfono."
         ]
     },
     "hidden_nurse_d5_choice_a": {
         "name": "Enfermera",
-        "text": "*Me pone la tirita despacio. Lleva algo escrito.*"
+        "text": "*Me pone la curita despacio. Lleva algo escrito.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "Enfermera",
@@ -162,12 +162,12 @@
     "hidden_nurse_d5_freetalk": {
         "name": "Enfermera",
         "text": "*Última conversación con la enfermera delante de la enfermería.*",
-        "context": "Día 5. Último día. La enfermera escribió un mensaje en una tirita. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
+        "context": "Día 5. Último día. La enfermera escribió un mensaje en una curita. Tono: Ambos saben que es la última vez. Riendo pero con un toque agridulce. Más honestos que de costumbre, todo se siente precioso.",
         "personality": "La enfermera está menos juguetona. Esperando el día sin excusas."
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Nada más entrar en el aula — me llegan señales desde tres lados. El último evento. Todo el tiempo acumulado confluye hoy.*"
+        "text": "*Apenas entro al aula — me llegan señales desde tres lados. El último evento. Todo el tiempo acumulado confluye hoy.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -179,7 +179,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*Hay un relato corto clavado en el tablón. Título: 'A la persona que conocí en la biblioteca'. Es de Yuna. — Una historia que solo el protagonista puede reconocer. Me quedo un rato más delante del tablón. Frases cortas, pero tan nítidas como si Yuna me hubiera puesto la cara a un palmo.*"
+        "text": "*Hay un relato corto clavado en el tablón. Título: 'A la persona que conocí en la biblioteca'. Es de Yuna. — Una historia que solo el protagonista puede reconocer. Me quedo un rato más frente al tablón. Frases cortas, pero tan nítidas como si Yuna me hubiera puesto la cara a un palmo.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Lo que dijo ayer en la cafetería. Que quería enseñármelo a mí primero. Lo ha traído de verdad.*"
+        "text": "*Lo que dijo ayer en la cafetería. Que quería enseñármelo a mí primero. Lo trajo de verdad.*"
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Las mismas palabras que ayer. — Pero hoy los hechos han acompañado a las palabras. Siete años de manuscrito en mis manos.*"
+        "text": "*Las mismas palabras que ayer. — Pero hoy los hechos acompañaron a las palabras. Siete años de manuscrito en mis manos.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -255,11 +255,11 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Profesora",
-        "text": "*Suelta una risita.* ...Vale. Escríbeme aunque sea una línea."
+        "text": "*Suelta una risita.* ...Está bien. Escríbeme aunque sea una línea."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Una línea. — Alguien a quien rechazaron tres veces antes de debutar espera la impresión de un alumno en una línea. Si esto no es una confesión, ¿qué es? La profe sale del aula — y se detiene delante de la puerta.*"
+        "text": "*Una línea. — Alguien a quien rechazaron tres veces antes de debutar espera la impresión de un alumno en una línea. Si esto no es una confesión, ¿qué es? La profe sale del aula — y se detiene frente a la puerta.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Profesora",
@@ -283,7 +283,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Profesora",
-        "text": "...Creo que me he salido un poco del interés pedagógico. Porque es la última vez. Solo esta."
+        "text": "...Creo que me salí un poco del interés pedagógico. Porque es la última vez. Solo esta."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
@@ -299,7 +299,7 @@
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
-        "text": "*Silencio incómodo. — Hasta ayer era natural, pero hoy algo ha cambiado.*"
+        "text": "*Silencio incómodo. — Hasta ayer era natural, pero hoy algo cambió.*"
     },
     "hidden_nurse_d5_4_d": {
         "name": "Enfermera",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*De 'ven cuando te gradúes' a 'ven si te duele algo' — ha dado marcha atrás. Iba a cruzar la línea y se ha retirado. La puerta se abre. La enfermera está ahí. Con dos vasos de papel en las manos.*"
+        "text": "*De 'ven cuando te gradúes' a 'ven si te duele algo' — dio marcha atrás. Iba a cruzar la línea y se retiró. La puerta se abre. La enfermera está ahí. Con dos vasos de papel en las manos.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -347,7 +347,7 @@
     },
     "hidden_nurse_d5_3_g": {
         "name": "Enfermera",
-        "text": "Venga, tira. No te puedes saltar el evento."
+        "text": "Ya, ve. No te puedes saltar el evento."
     },
     "hidden_nurse_d5_3_h": {
         "name": "{name}",
@@ -359,7 +359,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*La voz le ha bajado un tono. La picardía ha desaparecido del todo. — La sinceridad de esta persona llega siempre así. La enfermera se ríe — y se para. Cierra la boca.*"
+        "text": "*La voz le bajó un tono. La picardía desapareció del todo. — La sinceridad de esta persona llega siempre así. La enfermera se ríe — y se para. Cierra la boca.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Enfermera",
@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Enfermera",
-        "text": "*Se recoloca las gafas.* ...Vale. Pero úsalo cuando te gradúes."
+        "text": "*Se acomoda los lentes.* ...Está bien. Pero úsalo cuando te gradúes."
     },
     "hidden_nurse_d5_choice_b_e": {
         "name": "{name}",
@@ -375,7 +375,7 @@
     },
     "hidden_nurse_d5_choice_b_f": {
         "name": "Enfermera",
-        "text": "¿Te pongo una tirita?"
+        "text": "¿Te pongo una curita?"
     },
     "hidden_nurse_d5_choice_b_g": {
         "name": "{name}",
@@ -383,7 +383,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Su frase emblemática del Día 1. — Entonces era presentación del personaje. Ahora va en serio. La enfermera saca una tirita y me la pone en el dorso de la mano. Despacio. — Lleva algo escrito.*"
+        "text": "*Su frase emblemática del Día 1. — Entonces era presentación del personaje. Ahora va en serio. La enfermera saca una curita y me la pone en el dorso de la mano. Despacio. — Lleva algo escrito.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -411,7 +411,7 @@
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*La puerta del instituto. Hace cinco días estuve aquí también. Entonces el uniforme estaba tieso — ahora me sienta bien. No es solo el uniforme lo que ha cambiado.*"
+        "text": "*La puerta del colegio. Hace cinco días estuve aquí también. Entonces el uniforme estaba tieso — ahora me sienta bien. No es solo el uniforme lo que cambió.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -423,11 +423,11 @@
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
-        "text": "*En el tablón solo quedan las marcas de las chinchetas. El hueco donde debería estar el relato. — Lo ha quitado. O a lo mejor nunca lo colgó.*"
+        "text": "*En el tablón solo quedan las marcas de las chinchetas. El hueco donde debería estar el relato. — Lo quitó. O quizá nunca lo colgó.*"
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*El sitio vacío en la biblioteca, el marcapáginas desaparecido, y ahora un relato que no llegó al tablón. — Yuna está borrando cada huella. El vacío que dejé el Día 3 ha llegado hasta aquí.*"
+        "text": "*El sitio vacío en la biblioteca, el marcapáginas desaparecido, y ahora un relato que no llegó al tablón. — Yuna está borrando cada huella. El vacío que dejé el Día 3 llegó hasta aquí.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, es que — seguro que es bueno. Lleva siete años con ello."
+        "text": "Ah, es que — seguro es bueno. Lleva siete años con eso."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Profesora",
@@ -459,7 +459,7 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Profesora",
-        "text": "En siete años lo mandé tres veces a editoriales. Me lo rechazaron las tres. Y dos de esos tres rechazos empezaban con — 'Siete años es mucho tiempo. Seguro que es muy bueno.'"
+        "text": "En siete años lo mandé tres veces a editoriales. Me lo rechazaron las tres. Y dos de esos tres rechazos empezaban con — 'Siete años es mucho tiempo. Seguro es muy bueno.'"
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Cerré la puerta del aula al salir. El sobre se quedó en la mesa de la profe. — Lo que en siete años no había recibido no era *un elogio sincero* sino *alguien que lo leyera en serio*. El elogio también estaba en las cartas de rechazo. He dicho exactamente lo mismo que una carta de rechazo. Con buena intención.*"
+        "text": "*Cerré la puerta del aula al salir. El sobre se quedó en la mesa de la profe. — Lo que en siete años no había recibido no era *un elogio sincero* sino *alguien que lo leyera en serio*. El elogio también estaba en las cartas de rechazo. Dije exactamente lo mismo que una carta de rechazo. Con buena intención.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*No lo sabía. Fue una corazonada. — Que alguien que lleva siete años se lo enseñe por primera vez a un alumno *justo hoy* era raro. Si estuviera acabado, lo habría mandado primero a una editorial. No está acabado — por eso necesita *permiso* para terminarlo.*"
+        "text": "*No lo sabía. Fue una corazonada. — Que alguien que lleva siete años se lo muestre por primera vez a un alumno *justo hoy* era raro. Si estuviera acabado, lo habría mandado primero a una editorial. No está acabado — por eso necesita *permiso* para terminarlo.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Profesora",
@@ -531,6 +531,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Vuelvo a abrazar el manuscrito. Ya no pesa como antes. — Cerrar siete años de inconcluso *con un elogio* no era lo que esta persona necesitaba. Lo que necesitaba era *alguien que aceptara lo inconcluso como inconcluso*. Eso es apoyo de verdad.*"
+        "text": "*Vuelvo a abrazar el manuscrito. Ya no pesa como antes. — Cerrar siete años de inconcluso *con un elogio* no era lo que esta persona necesitaba. Lo que necesitaba era *alguien que aceptara lo inconcluso como inconcluso*. Ese es el apoyo de verdad.*"
     }
 }

@@ -6,15 +6,15 @@
     "morning3_multi_from_yuna": {},
     "morning3_start": {
         "name": "{name}",
-        "text": "*Tercer día. Se me han pegado las sábanas. He apagado el despertador tres veces. Anoche me quedé hasta tarde mandando mensajes.*"
+        "text": "*Tercer día. Se me pegaron las sábanas. Apagué el despertador tres veces. Anoche me quedé hasta tarde mandando mensajes.*"
     },
     "morning3_start_2": {
         "name": "{name}",
-        "text": "*Voy a toda pastilla camino del instituto. — Ya se ve la verja. Y entonces.*"
+        "text": "*Voy a toda velocidad camino de la escuela. — Ya se ve la entrada. Y entonces.*"
     },
     "morning3_seo_gate_1": {
         "name": "{name}",
-        "text": "*Seoyeon está plantada frente a la verja. Sin la menor prisa.*"
+        "text": "*Seoyeon está parada frente a la entrada. Sin la menor prisa.*"
     },
     "morning3_seo_gate_2": {
         "name": "Seoyeon",
@@ -26,7 +26,7 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "Bah, ¿qué más da llegar tarde? Si nos pillan juntos, igual nos echan menos bronca, ¿no?"
+        "text": "Bah, ¿qué más da llegar tarde? Si nos agarran juntos, tal vez nos regañen menos, ¿no?"
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
@@ -38,11 +38,11 @@
     },
     "morning3_seo_gate_7": {
         "name": "{name}",
-        "text": "*Seoyeon echa a andar. Con aplomo. No aprieta el paso, aunque vaya tarde.*"
+        "text": "*Seoyeon echa a andar. Con aplomo. No apura el paso, aunque vaya tarde.*"
     },
     "morning3_yuna_gate_1": {
         "name": "{name}",
-        "text": "*Me encuentro a Yuna plantada frente a la verja, ida. Con los ojos medio cerrados.*"
+        "text": "*Me encuentro a Yuna parada frente a la entrada, ida. Con los ojos medio cerrados.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -62,15 +62,15 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Capaz de pasarse la noche leyendo y llegar tarde. — Muy Yuna. Me gusta. Rebusca en la mochila sin decir nada, saca un bollo pequeño, lo parte por la mitad y me tiende la otra mitad. Del fondo de la mochila asoma una nota.*"
+        "text": "*Capaz de pasarse la noche leyendo y llegar tarde. — Muy Yuna. Me gusta. Rebusca en la mochila sin decir nada, saca un panecito, lo parte por la mitad y me tiende la otra mitad. Del fondo de la mochila asoma una nota.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
-        "text": "*Yuna saca un bollo de la mochila. Lo compartimos mientras cruzamos la verja sin prisa.*"
+        "text": "*Yuna saca un panecito de la mochila. Lo compartimos mientras cruzamos la entrada sin prisa.*"
     },
     "morning3_dain_gate_1": {
         "name": "{name}",
-        "text": "*Cerca de la verja, Dain viene corriendo a toda pastilla.*"
+        "text": "*Cerca de la entrada, Dain viene corriendo a toda velocidad.*"
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
@@ -78,7 +78,7 @@
     },
     "morning3_dain_gate_3": {
         "name": "{name}",
-        "text": "*Dain me coge de la mano sin avisar y echa a correr.*"
+        "text": "*Dain me agarra de la mano sin avisar y echa a correr.*"
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
@@ -90,11 +90,11 @@
     },
     "morning3_classroom_1": {
         "name": "{name}",
-        "text": "*Al entrar en el aula, noto las miradas de las otras dos, que han visto con quién he llegado.*"
+        "text": "*Al entrar en el aula, noto las miradas de las otras dos, que vieron con quién llegué.*"
     },
     "morning3_react_seo_1": {
         "name": "Dain",
-        "text": "¡¡Oye!! ¿¡Has venido con la presidenta?! ¿¡A primera hora?!"
+        "text": "¡¡Oye!! ¿¡Viniste con la presidenta?! ¿¡A primera hora?!"
     },
     "morning3_react_seo_2": {
         "name": "{name}",
@@ -102,15 +102,15 @@
     },
     "morning3_react_yuna_1": {
         "name": "Seoyeon",
-        "text": "¿Habéis venido juntos? Vaya complicidad."
+        "text": "¿Vinieron juntos? Vaya complicidad."
     },
     "morning3_react_yuna_2": {
         "name": "Dain",
-        "text": "¡¡Qué envidia!! ¡¡Yo también quiero a alguien con quien venir por las mañanas!!"
+        "text": "¡¡Qué envidia!! ¡¡Yo también quiero a alguien con quien venir en las mañanas!!"
     },
     "morning3_react_dain_1": {
         "name": "Seoyeon",
-        "text": "Menuda paliza de mañanita. ¿Te paso algo de mi fiambrera a mediodía?"
+        "text": "Qué paliza de mañana. ¿Te paso algo de mi lonchera al mediodía?"
     },
     "morning3_react_dain_2": {
         "name": "{name}",
@@ -118,67 +118,67 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*Acaba la primera clase. Recreo. No es que me caigan las tres encima de golpe. Pero hoy alguien siempre pilla el momento justo para hablarme.*"
+        "text": "*Acaba la primera clase. Recreo. No es que me caigan las tres encima de golpe. Pero hoy alguien siempre atrapa el momento justo para hablarme.*"
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "¿Tienes plan este finde? Hay un sitio al que quiero ir."
+        "text": "¿Tienes plan este fin de semana? Hay un lugar al que quiero ir."
     },
     "morning3_date_seo_choice": {
         "name": "{name}",
         "text": "*Seoyeon me lo pregunta al cruzarse conmigo en el pasillo.*",
         "choices": [
             "Claro. ¿Dónde?",
-            "Creo que voy a estar liado"
+            "Creo que voy a estar ocupado"
         ]
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "*He aceptado los planes del fin de semana con Seoyeon.*"
+        "text": "*Acepté los planes del fin de semana con Seoyeon.*"
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*He rechazado la propuesta de Seoyeon.*"
+        "text": "*Rechacé la propuesta de Seoyeon.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "¡¡Oye!! ¿¡Qué haces el finde?! ¿¡Nos vamos a los recreativos?!"
+        "text": "¡¡Oye!! ¿¡Qué haces el fin de semana?! ¿¡Vamos a los videojuegos?!"
     },
     "morning3_date_dain_2": {
         "name": "{name}",
-        "text": "*Los dedos de Dain tamborilean en el borde del pupitre. ¿Estará nerviosa? — Qué va. Dain no se pone nerviosa. Esto para ella es pan comido. ...¿O no?*"
+        "text": "*Los dedos de Dain tamborilean en el borde del pupitre. ¿Estará nerviosa? — Qué va. Dain no se pone nerviosa. Esto para ella es cosa fácil. ...¿O no?*"
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
         "text": "*En el siguiente recreo, Dain se acerca a mi pupitre y me lo suelta.*",
         "choices": [
-            "Vale, hecho",
-            "El finde no puedo..."
+            "Bueno, hecho",
+            "El fin de semana no puedo..."
         ]
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "*He aceptado los planes del fin de semana con Dain.*"
+        "text": "*Acepté los planes del fin de semana con Dain.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "¿Ah, sí? ¡Bueno, si estás liado, qué le vamos a hacer!"
+        "text": "¿Ah, sí? ¡Bueno, si estás ocupado, qué le vamos a hacer!"
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*Observo la reacción de Dain. Suena el timbre y llega ese breve hueco justo antes de la comida. Se fue sonriendo. — En ese momento no me di cuenta. De que Dain había dejado de tamborilear con los dedos y había metido las manos en los bolsillos. De que le había costado reunir el valor para preguntármelo.*"
+        "text": "*Observo la reacción de Dain. Suena el timbre y llega ese breve hueco justo antes del almuerzo. Se fue sonriendo. — En ese momento no me di cuenta. De que Dain dejó de tamborilear con los dedos y metió las manos en los bolsillos. De que le costó reunir el valor para preguntármelo.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
-        "text": "*Voy de observador. — Y justo cuando importa, la cago.*"
+        "text": "*Voy de observador. — Y justo cuando importa, la arruino.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Justo antes de la comida, encuentro una nota de Yuna sobre el pupitre.*"
+        "text": "*Justo antes del almuerzo, encuentro una nota de Yuna sobre el pupitre.*"
     },
     "morning3_date_yuna_2": {
         "name": "{name}",
-        "text": "*'El finde voy a la librería de viejo. Si te apetece, vente. — Yuna'*"
+        "text": "*'El fin de semana voy a la librería de usados. Si tienes ganas, vente. — Yuna'*"
     },
     "morning3_date_yuna_choice": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*He aceptado los planes del fin de semana con Yuna.*"
+        "text": "*Acepté los planes del fin de semana con Yuna.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",
@@ -198,15 +198,15 @@
     },
     "morning3_set_multiple": {
         "name": "{name}",
-        "text": "*...Un momento. Los planes del finde se me solapan. ¿Y ahora qué hago?*"
+        "text": "*...Un momento. Los planes del fin de semana se me solapan. ¿Y ahora qué hago?*"
     },
     "morning3_end": {
         "name": "{name}",
-        "text": "*Los planes del finde se solapan... Sin darme cuenta, las clases siguen y se acerca la hora de comer.*"
+        "text": "*Los planes del fin de semana se solapan... Sin darme cuenta, las clases siguen y se acerca la hora del almuerzo.*"
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "*Recreo. Paso por delante de un aula vacía — y dentro se oye a alguien. Me acerco con sigilo. La tutora está sentada a la mesa, escribiendo algo. Para el bolígrafo y levanta la cabeza. — Nuestras miradas se cruzan.*"
+        "text": "*Recreo. Paso por delante de un aula vacía — y dentro se oye a alguien. Me acerco con sigilo. La profe está sentada a la mesa, escribiendo algo. Detiene el bolígrafo y levanta la cabeza. — Nuestras miradas se cruzan.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Profesora",
@@ -218,10 +218,10 @@
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
-        "text": "*Es un manuscrito. Tiene cara de haber sido pillada.*",
+        "text": "*Es un manuscrito. Tiene cara de haber sido atrapada.*",
         "choices": [
-            "He visto el manuscrito. — ¿Está escribiendo una novela?",
-            "Perdón, no he visto nada."
+            "Vi el manuscrito. — ¿Está escribiendo una novela?",
+            "Perdón, no vi nada."
         ]
     },
     "hidden_homeroom_d3_reveal_1": {
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Profesora",
-        "text": "Después de mandar el cuarto manuscrito — el día que salían los resultados, el teléfono no sonó. Ese mismo día me apunté a magisterio."
+        "text": "Después de mandar el cuarto manuscrito — el día que salían los resultados, el teléfono no sonó. Ese mismo día me inscribí a magisterio."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Profesora",
@@ -238,7 +238,7 @@
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Profesora",
-        "text": "Sería más fácil decir que lo dejé. Pero si aún lo saco en aulas vacías — es que no he podido dejarlo del todo."
+        "text": "Sería más fácil decir que lo dejé. Pero si aún lo saco en aulas vacías — es que no pude dejarlo del todo."
     },
     "hidden_homeroom_d3_reveal_choice": {
         "name": "{name}",
@@ -254,11 +254,11 @@
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Profesora",
-        "text": "...Es que el aula es el sitio más tranquilo. Irónico, ¿verdad?"
+        "text": "...Es que el aula es el lugar más tranquilo. Irónico, ¿verdad?"
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Profesora",
-        "text": "*Aparta la mirada.* ...Pero esto es un secreto, ¿eh? En serio. Ni los demás profes lo saben."
+        "text": "*Aparta la mirada.* ...Pero esto es un secreto, ¿sí? En serio. Ni los demás profes lo saben."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
@@ -266,17 +266,17 @@
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Profesora",
-        "text": "...Venga, haz como si no hubieras visto nada. Te lo pido. — ...Gracias."
+        "text": "...Vamos, haz como si no hubieras visto nada. Te lo pido. — ...Gracias."
     },
     "hidden_homeroom_d3_end": {
         "name": "{name}",
-        "text": "*Se aparta el pelo y sale del aula. — 'Te lo pido' no es algo que ella diga a menudo.*"
+        "text": "*Se aparta el cabello y sale del aula. — 'Te lo pido' no es algo que ella diga a menudo.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Profesora",
-        "text": "*Hablando con la tutora en el aula vacía.*",
-        "context": "Día 3 mañana. Ha pillado a la tutora escribiendo un manuscrito en un aula vacía. Un secreto que lleva siete años escondiendo. Tono: alegre en la superficie pero con sombras por debajo. A veces sonríe sin que los ojos sonrían. Entre frases ligeras se cuela la sinceridad.",
-        "personality": "La tutora fue aspirante a novelista. Se hizo profesora, pero nunca abandonó del todo ese sueño. Coexisten la vergüenza y el alivio de haber sido descubierta."
+        "text": "*Hablando con la profe en el aula vacía.*",
+        "context": "Día 3 mañana. Atrapó a la profe escribiendo un manuscrito en un aula vacía. Un secreto que lleva siete años escondiendo. Tono: alegre en la superficie pero con sombras por debajo. A veces sonríe sin que los ojos sonrían. Entre frases ligeras se cuela la sinceridad.",
+        "personality": "La profe fue aspirante a novelista. Se hizo profesora, pero nunca abandonó del todo ese sueño. Coexisten la vergüenza y el alivio de haber sido descubierta."
     },
     "hidden_nurse_d3_check": {
         "name": "{name}",
@@ -288,11 +288,11 @@
     },
     "hidden_nurse_d3_2": {
         "name": "Enfermera",
-        "text": "...Entonces, ¿a qué has venido? Tienes mala cara."
+        "text": "...Entonces, ¿a qué viniste? Tienes mala cara."
     },
     "hidden_nurse_d3_3": {
         "name": "{name}",
-        "text": "...Solo quería descansar un rato. Es que... últimamente el tema social se me ha complicado un poco."
+        "text": "...Solo quería descansar un rato. Es que... últimamente el tema social se me complicó un poco."
     },
     "hidden_nurse_d3_4": {
         "name": "Enfermera",
@@ -303,7 +303,7 @@
         "text": "*...En el fondo tiene razón.*",
         "choices": [
             "Puede que se parezca, sí...",
-            "No, es solo que estoy hecho un lío"
+            "No, es solo que estoy confundido"
         ]
     },
     "hidden_nurse_d3_choice1_a": {
@@ -312,7 +312,7 @@
     },
     "hidden_nurse_d3_choice1_b": {
         "name": "Enfermera",
-        "text": "*Ladea un poco la cabeza.* ...Vale. Si es un lío, pues un lío: descansa aquí un rato."
+        "text": "*Ladea un poco la cabeza.* ...Bueno. Si estás confundido, pues confundido: descansa aquí un rato."
     },
     "hidden_nurse_d3_6": {
         "name": "Enfermera",
@@ -320,7 +320,7 @@
     },
     "hidden_nurse_d3_7": {
         "name": "Enfermera",
-        "text": "Por eso me vine aquí. En el instituto — puedo dedicarle a cada uno lo que se merece."
+        "text": "Por eso me vine aquí. En la escuela — puedo dedicarle a cada uno lo que se merece."
     },
     "hidden_nurse_d3_8": {
         "name": "Enfermera",
@@ -348,21 +348,21 @@
     },
     "hidden_nurse_d3_11": {
         "name": "Enfermera",
-        "text": "...Es broma. Anda, a clase."
+        "text": "...Es broma. Vamos, a clase."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",
         "text": "*Hablando con la enfermera en la enfermería.*",
-        "context": "Día 3. Vino a la enfermería porque estaba inquieto. La enfermera ha tenido una conversación seria con él. Tono: alegre en la superficie pero con sombras por debajo. A veces sonríe sin que los ojos sonrían. Entre frases ligeras se cuela la sinceridad.",
+        "context": "Día 3. Vino a la enfermería porque estaba inquieto. La enfermera tuvo una conversación seria con él. Tono: alegre en la superficie pero con sombras por debajo. A veces sonríe sin que los ojos sonrían. Entre frases ligeras se cuela la sinceridad.",
         "personality": "Suele ser bromista, pero cuando se pone seria el ambiente cambia por completo. Profesional con experiencia previa de quemarse en el hospital."
     },
     "morning3_seo_gate_warm_1": {
         "name": "{name}",
-        "text": "*Seoyeon está esperando junto a la verja. Algo nada habitual en ella.*"
+        "text": "*Seoyeon está esperando junto a la entrada. Algo nada habitual en ella.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
-        "text": "...No he llegado pronto. Cosas del consejo estudiantil."
+        "text": "...No llegué temprano. Cosas del consejo estudiantil."
     },
     "morning3_seo_gate_warm_3": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "morning3_seo_gate_warm_4": {
         "name": "{name}",
-        "text": "*Seoyeon echa a andar a mi lado sin decir nada. — ¿Siempre fue tan corto el camino de la verja al aula?*"
+        "text": "*Seoyeon echa a andar a mi lado sin decir nada. — ¿Siempre fue tan corto el camino de la entrada al aula?*"
     },
     "morning3_seo_gate_cold_1": {
         "name": "{name}",
@@ -382,11 +382,11 @@
     },
     "morning3_seo_gate_cold_3": {
         "name": "{name}",
-        "text": "*Tono formal. La espalda de Seoyeon se aleja mientras cruza la verja.*"
+        "text": "*Tono formal. La espalda de Seoyeon se aleja mientras cruza la entrada.*"
     },
     "morning3_yuna_gate_warm_1": {
         "name": "{name}",
-        "text": "*Yuna, apoyada en el muro junto a la verja, me tiende una nota.*"
+        "text": "*Yuna, apoyada en el muro junto a la entrada, me tiende una nota.*"
     },
     "morning3_yuna_gate_warm_2": {
         "name": "Yuna",
@@ -414,7 +414,7 @@
     },
     "morning3_dain_gate_warm_2": {
         "name": "Dain",
-        "text": "¡Oye! ¡Casi llegamos tarde! ¡Vamos juntos, va!"
+        "text": "¡Oye! ¡Casi llegamos tarde! ¡Vamos juntos, dale!"
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
@@ -442,7 +442,7 @@
     },
     "morning3_seo_gate_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon echa a andar. Con aplomo. No aprieta el paso, aunque vaya tarde.*"
+        "text": "*Seoyeon echa a andar. Con aplomo. No apura el paso, aunque vaya tarde.*"
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
@@ -454,7 +454,7 @@
     },
     "morning3_dain_gate_5_b": {
         "name": "{name}",
-        "text": "*Al cruzar la verja, Dain aterrizó y se le escapó un pequeño ay. Pero al mirarla, sonreía como si nada. — ¿Habré oído mal?*"
+        "text": "*Al cruzar la entrada, Dain aterrizó y se le escapó un pequeño ay. Pero al mirarla, sonreía como si nada. — ¿Habré oído mal?*"
     },
     "morning3_react_yuna_1_b": {
         "name": "{name}",
@@ -466,7 +466,7 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*La mano de la profe se queda quieta sobre el manuscrito. Entre las hojas boca abajo se adivinan letras apretadas. Ha dicho que era papeleo — pero el papeleo del profesorado va impreso en A4. No se escribe a mano en papel pautado.*"
+        "text": "*La mano de la profe se queda quieta sobre el manuscrito. Entre las hojas boca abajo se adivinan letras apretadas. Dijo que era papeleo — pero el papeleo del profesorado va impreso en A4. No se escribe a mano en papel pautado.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
@@ -478,11 +478,11 @@
     },
     "hidden_homeroom_d3_4_e": {
         "name": "{name}",
-        "text": "*El manuscrito. Las letras apretadas. La cara de querer ocultarlo. — ¿Pregunto o hago como que no he visto nada?*"
+        "text": "*El manuscrito. Las letras apretadas. La cara de querer ocultarlo. — ¿Pregunto o hago como que no vi nada?*"
     },
     "hidden_homeroom_d3_4_f": {
         "name": "{name}",
-        "text": "*Pero — no consigo moverme. Esta persona es mi tutora. La que pasa lista, pone mis notas y escribe una línea en mi expediente al final del trimestre. Esa línea acaba en mi solicitud de universidad. Aquí el poder va en una sola dirección. Y no hacia mí.*"
+        "text": "*Pero — no logro moverme. Esta persona es mi profe. La que pasa lista, pone mis notas y escribe una línea en mi expediente al final del trimestre. Esa línea acaba en mi solicitud de universidad. Aquí el poder va en una sola dirección. Y no hacia mí.*"
     },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
@@ -490,15 +490,15 @@
     },
     "hidden_homeroom_d3_4_h": {
         "name": "{name}",
-        "text": "*— Y al mismo tiempo, lo veo claro. Hacerse el tonto también es una elección. La cara que ha puesto hace un momento — era la de alguien que quería ser descubierta. La cara de alguien a quien nadie ha pillado en siete años. Elija lo que elija, cruzo una línea.*"
+        "text": "*— Y al mismo tiempo, lo veo claro. Hacerse el tonto también es una elección. La cara que puso hace un momento — era la de alguien que quería ser descubierta. La cara de alguien a quien nadie atrapó en siete años. Elija lo que elija, cruzo una línea.*"
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Me quedo helado. — Es una expresión que nunca le había visto a la profe. La cara de alguien al que acaban de pillar. Le da la vuelta al manuscrito a toda prisa.*"
+        "text": "*Me quedo helado. — Es una expresión que nunca le había visto a la profe. La cara de alguien al que acaban de atrapar. Le da la vuelta al manuscrito a toda prisa.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Profesora",
-        "text": "...No es nada. Papeleo del curro."
+        "text": "...No es nada. Papeleo del trabajo."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Profesora",
-        "text": "*Suelta un suspiro.* ...Ojalá pudiera ver solo lo que me apetece ver."
+        "text": "*Suelta un suspiro.* ...Ojalá pudiera ver solo lo que quiero ver."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Profesora",
-        "text": "*De pronto se pone seria.* ...Esto no se lo cuentas a nadie. Si un alumno supiera que su profe tiene este lado, mi autoridad — bueno, nunca he tenido mucha."
+        "text": "*De pronto se pone seria.* ...Esto no se lo cuentas a nadie. Si un alumno supiera que su profe tiene este lado, mi autoridad — bueno, nunca tuve mucha."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -558,7 +558,7 @@
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Profesora",
-        "text": "*Se echa el pelo hacia atrás.* Es un secreto. — Precisamente ejemplar no es. Contarle esto a un alumno."
+        "text": "*Se echa el cabello hacia atrás.* Es un secreto. — Precisamente ejemplar no es. Contarle esto a un alumno."
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
-        "text": "*Ella misma llamó a esos siete años 'no haber podido rendirse'. Pero con una sola frase que le cambia la perspectiva — los ojos le han temblado.*"
+        "text": "*Ella misma llamó a esos siete años 'no haber podido rendirse'. Pero con una sola frase que le cambia la perspectiva — los ojos le temblaron.*"
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Profesora",
@@ -590,7 +590,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*El motivo de elegir un aula vacía es práctico, sí — pero también significa que necesita un espacio solo suyo. Es como si hubiera abierto un cajón escondido detrás del título de 'profe'. Tendría que cerrarlo — pero no consigo apartar la mano.*"
+        "text": "*El motivo de elegir un aula vacía es práctico, sí — pero también significa que necesita un espacio solo suyo. Es como si hubiera abierto un cajón escondido detrás del título de 'profe'. Tendría que cerrarlo — pero no logro apartar la mano.*"
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
@@ -606,15 +606,15 @@
     },
     "hidden_nurse_d3_2_e": {
         "name": "{name}",
-        "text": "*No sé bien por qué me las da. ¿Por no haber mirado? ¿O — por haberme acercado? Justo antes de comer. — No se me ha calmado el pecho en toda la mañana. Será que he visto demasiadas caras, oído demasiadas palabras. No sé por qué todo me sacude tan deprisa.*"
+        "text": "*No sé bien por qué me las da. ¿Por no haber mirado? ¿O — por haberme acercado? Justo antes del almuerzo. — No se me calmó el pecho en toda la mañana. Será que vi demasiadas caras, oí demasiadas palabras. No sé por qué todo me sacude tan deprisa.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Enfermera",
-        "text": "*Levanta la vista.* ...¿Eh? ¿Qué te has hecho hoy?"
+        "text": "*Levanta la vista.* ...¿Eh? ¿Qué te hiciste hoy?"
     },
     "hidden_nurse_d3_1_c": {
         "name": "{name}",
-        "text": "Nada, no me he hecho nada."
+        "text": "Nada, no me hice nada."
     },
     "hidden_nurse_d3_1_d": {
         "name": "Enfermera",
@@ -626,7 +626,7 @@
     },
     "hidden_nurse_d3_3_b": {
         "name": "{name}",
-        "text": "*La enfermera me mira un momento. Se le apaga la guasa.*"
+        "text": "*La enfermera me mira un momento. Se le apaga la broma.*"
     },
     "hidden_nurse_d3_3_c": {
         "name": "Enfermera",
@@ -634,7 +634,7 @@
     },
     "hidden_nurse_d3_3_d": {
         "name": "{name}",
-        "text": "*Le ha cambiado la voz. Ya no bromea. — Cuando se pone seria, cambia todo el ambiente.*"
+        "text": "*Le cambió la voz. Ya no bromea. — Cuando se pone seria, cambia todo el ambiente.*"
     },
     "hidden_nurse_d3_5_b": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
-        "text": "*Un 'algo así' y se le ha cambiado la actitud entera. — Es de las que se abren cuando las sienten comprendidas.*"
+        "text": "*Un 'algo así' y se le cambió la actitud entera. — Es de las que se abren cuando las sienten comprendidas.*"
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
@@ -686,7 +686,7 @@
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
-        "text": "¿Usted se ha sentido así alguna vez, profe? Hecha un lío entre varias personas."
+        "text": "¿Usted se ha sentido así alguna vez, profe? Confundida entre varias personas."
     },
     "hidden_nurse_d3_5_o": {
         "name": "{name}",
@@ -710,7 +710,7 @@
     },
     "hidden_nurse_d3_6_d": {
         "name": "{name}",
-        "text": "*Usa ella misma la palabra 'hui'. — Me viene a la cabeza el cuaderno verde claro. Aquellas cartas iban todas para Yujin. La enfermera se queda quieta un momento. Toquetea el estetoscopio.*"
+        "text": "*Usa ella misma la palabra 'hui'. — Me viene a la cabeza el cuaderno verde claro. Aquellas cartas iban todas para Yujin. La enfermera se queda quieta un momento. Juega con el estetoscopio.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Enfermera",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
-        "text": "*La guasa se le ha esfumado del todo.*"
+        "text": "*La broma se le esfumó del todo.*"
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
@@ -734,7 +734,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Enfermera",
-        "text": "*Vuelve al tono juguetón.* Anda, no es nada. Va por cuenta de la casa. La próxima vez, pásate aunque no te duela nada."
+        "text": "*Vuelve al tono juguetón.* Vamos, no es nada. Va por cuenta de la casa. La próxima vez, pásate aunque no te duela nada."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",
@@ -742,11 +742,11 @@
     },
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
-        "text": "*Salí al pasillo. Un paso y me detuve. — ¿Qué ha sido eso? Esta persona perdió a una paciente. Huyó a un instituto cargando con esa culpa. Qué lugar ocupo yo en ella ahora mismo — por primera vez, me lo pregunto en serio.*"
+        "text": "*Salí al pasillo. Un paso y me detuve. — ¿Qué fue eso? Esta persona perdió a una paciente. Huyó a una escuela cargando con esa culpa. Qué lugar ocupo yo en ella ahora mismo — por primera vez, me lo pregunto en serio.*"
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*Yo soy alumno, ella es la enfermera del instituto. El sitio al que voy cuando me hago daño, la persona que me cede una cama cuando digo que me encuentro mal. La relación en sí es asimétrica. Este vuelco — ¿es de verdad que me ha empezado a gustar, o es porque por primera vez una mujer adulta me ha preguntado '¿estás bien?' y me ha dedicado su tiempo? Se parecen, pero no son lo mismo.*"
+        "text": "*Yo soy alumno, ella es la enfermera de la escuela. El lugar al que voy cuando me hago daño, la persona que me cede una cama cuando digo que me encuentro mal. La relación en sí es asimétrica. Este vuelco — ¿es de verdad que me empezó a gustar, o es porque por primera vez una mujer adulta me preguntó '¿estás bien?' y me dedicó su tiempo? Se parecen, pero no son lo mismo.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
@@ -758,15 +758,15 @@
     },
     "hidden_nurse_d3_9_c": {
         "name": "{name}",
-        "text": "*La enfermera — no sonríe. Toquetea el estetoscopio mirando por la ventana. Como si ella misma no se hubiera dado cuenta de lo que acababa de decir. 0,7 segundos.*"
+        "text": "*La enfermera — no sonríe. Juega con el estetoscopio mirando por la ventana. Como si ella misma no se hubiera dado cuenta de lo que acababa de decir. 0,7 segundos.*"
     },
     "hidden_nurse_d3_9_d": {
         "name": "Enfermera",
-        "text": "*Fuerza una sonrisa.* Es broma. Anda, a clase."
+        "text": "*Fuerza una sonrisa.* Es broma. Vamos, a clase."
     },
     "hidden_nurse_d3_9_e": {
         "name": "{name}",
-        "text": "*Una broma. — ¿Verdad que sí? Me lo repito, pero los pies no se mueven. Esa cara de 0,7 segundos de antes — no tenía ni una gota de guasa.*"
+        "text": "*Una broma. — ¿Verdad que sí? Me lo repito, pero los pies no se mueven. Esa cara de 0,7 segundos de antes — no tenía ni una gota de broma.*"
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
@@ -774,7 +774,7 @@
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Así que hoy toca tortilla enrollada en la fiambrera."
+        "text": "Así que hoy toca tortilla enrollada en la lonchera."
     },
     "morning3_end_b": {
         "name": "Yuna",

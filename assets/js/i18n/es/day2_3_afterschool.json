@@ -1,7 +1,7 @@
 {
     "after2_start": {
         "name": "{name}",
-        "text": "*Después de clase. Dos notificaciones en el móvil.*"
+        "text": "*Después de clase. Dos notificaciones en el celular.*"
     },
     "after2_msg_dain": {
         "name": "Dain",
@@ -13,7 +13,7 @@
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*De Yuna, ni una palabra. — Muy suyo. Pero al coger la mochila, la nota de esta mañana se asoma en el bolsillo. 'Anexo de la biblioteca'. Esas palabras se me clavan.*"
+        "text": "*De Yuna, ni una palabra. — Muy suyo. Pero al agarrar la mochila, la nota de esta mañana se asoma en el bolsillo. 'Anexo de la biblioteca'. Esas palabras se me clavan.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
@@ -38,7 +38,7 @@
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Si he llegado cinco minutos antes."
+        "text": "Si llegué cinco minutos antes."
     },
     "after2_dain_4": {
         "name": "Dain",
@@ -50,7 +50,7 @@
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "¡Venga, la apuesta! Cinco saques. Si metes tres o más al otro lado, ¡ganas! Si no, ¡el tteokbokki de hoy lo pagas tú!"
+        "text": "¡Dale, la apuesta! Cinco saques. Si metes tres o más al otro lado, ¡ganas! Si no, ¡el tteokbokki de hoy lo pagas tú!"
     },
     "after2_dain_7": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*Saco. — Contra todo pronóstico, el segundo pasa limpio al otro lado.*"
+        "text": "*Saqué. — Contra todo pronóstico, el segundo pasa limpio al otro lado.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "after2_dain_12": {
         "name": "Dain",
-        "text": "¡¡Aahhh!! ¡He perdido! — ¡¿Pero tú no dijiste que no hacías deporte?! ¡Se te da bien!"
+        "text": "¡¡Aahhh!! ¡Perdí! — ¡¿Pero tú no dijiste que no hacías deporte?! ¡Eres bueno!"
     },
     "after2_dain_13": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Da un bote.* ¡¿Qué?! ¡¿Me has engañado?!"
+        "text": "*Da un salto.* ¡¿Qué?! ¡¿Me engañaste?!"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Me da un puñetazo en el hombro.* ¡¡Tramposo!! Jajaja — ¡pero qué divertido ha sido!"
+        "text": "*Me da un puñetazo en el hombro.* ¡¡Tramposo!! Jajaja — ¡pero qué divertido estuvo!"
     },
     "after2_dain_skinship_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...¡Ay, perdona! ¡Es la costumbre!"
+        "text": "...¡Ay, perdón! ¡Es la costumbre!"
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "after2_dain_end_2": {
         "name": "Dain",
-        "text": "Oye, tú de deporte sabes, ¿a que sí?"
+        "text": "Oye, tú de deporte sabes, ¿verdad?"
     },
     "after2_dain_end_2b": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "after2_dain_end_2c": {
         "name": "Dain",
-        "text": "¡Con 'un poco' no se juega así! — Admítelo, se te da bien."
+        "text": "¡Con 'un poco' no se juega así! — Admítelo, eres bueno."
     },
     "after2_dain_end_2d": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "after2_dain_return": {
         "name": "{name}",
-        "text": "*De vuelta al instituto. Llegamos a la puerta.*"
+        "text": "*De vuelta a la escuela. Llegamos a la puerta.*"
     },
     "after2_seo_1": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "after2_seo_2": {
         "name": "Seoyeon",
-        "text": "Has venido. — La verdad, no creía que vinieras."
+        "text": "Viniste. — La verdad, no creía que vinieras."
     },
     "after2_seo_3": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Estos por fecha, esos por club. — ¿Se te da bien ordenar?"
+        "text": "Estos por fecha, esos por club. — ¿Eres bueno ordenando?"
     },
     "after2_seo_8a2": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Lo tienes muy cargado. Quieto un momento."
+        "text": "Lo tienes muy tenso. Quieto un momento."
     },
     "after2_seo_neck_high": {
         "name": "{name}",
@@ -261,7 +261,7 @@
         "text": "*El papeleo está casi listo.*",
         "choices": [
             "¿Me quedo un rato más? Aún queda algo",
-            "Si hemos acabado, me voy"
+            "Si ya terminamos, me voy"
         ]
     },
     "after2_seo_stay": {
@@ -306,11 +306,11 @@
     },
     "after2_seo_return": {
         "name": "{name}",
-        "text": "*Salí de la sala del consejo. Camino hacia la puerta del instituto.*"
+        "text": "*Salí de la sala del consejo. Camino hacia la puerta de la escuela.*"
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna no ha escrito. Y aun así, los pies me llevan a la biblioteca. ¿Por qué? — No lo sé. Quizá sea por la nota de esta mañana.*"
+        "text": "*Yuna no escribió. Y aun así, los pies me llevan a la biblioteca. ¿Por qué? — No lo sé. Quizá sea por la nota de esta mañana.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -318,11 +318,11 @@
     },
     "after2_yuna_3": {
         "name": "Yuna",
-        "text": "...Has venido."
+        "text": "...Viniste."
     },
     "after2_yuna_4": {
         "name": "{name}",
-        "text": "No me has llamado."
+        "text": "No me llamaste."
     },
     "after2_yuna_5": {
         "name": "Yuna",
@@ -366,7 +366,7 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna ha dicho dos frases seguidas. — Ella, que suele hablar en una línea.*",
+        "text": "*Yuna dijo dos frases seguidas. — Ella, que suele hablar en una línea.*",
         "choices": [
             "¿Vengo todos los días?",
             "Se está bien, aquí tranquilos"
@@ -390,11 +390,11 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Al móvil llegan, con retraso, un '¿te estaba esperando?' de Dain y un 'avísame si cambia el plan' de Seoyeon. Escuchando música al lado de Yuna, el sol se ha puesto del todo. — Al lado de ella, no paran de darme ganas de volver.*"
+        "text": "*Al celular llegan, con retraso, un '¿te estaba esperando?' de Dain y un 'avísame si cambia el plan' de Seoyeon. Escuchando música al lado de Yuna, el sol se puso del todo. — Al lado de ella, no paran de darme ganas de volver.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
-        "text": "*Íbamos a coger el mismo libro — y las manos se juntan.*"
+        "text": "*Íbamos a agarrar el mismo libro — y las manos se juntan.*"
     },
     "after2_yuna_skinship_2": {
         "name": "{name}",
@@ -402,7 +402,7 @@
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
-        "text": "*Aparto la mano. Yuna coge el libro y me lo pasa. Sin decir nada.*"
+        "text": "*Aparto la mano. Yuna agarra el libro y me lo pasa. Sin decir nada.*"
     },
     "after2_yuna_return": {
         "name": "{name}",
@@ -410,7 +410,7 @@
     },
     "minsu_warn_1": {
         "name": "{name}",
-        "text": "*Camino de casa. Al salir por la puerta del instituto — Minsu viene detrás.*"
+        "text": "*Camino de casa. Al salir por la puerta de la escuela — Minsu viene detrás.*"
     },
     "minsu_warn_2": {
         "name": "Minsu",
@@ -422,7 +422,7 @@
     },
     "minsu_warn_4": {
         "name": "Minsu",
-        "text": "Te lo estás pasando bien últimamente, ¿eh?"
+        "text": "La estás pasando bien últimamente, ¿eh?"
     },
     "minsu_warn_5": {
         "name": "{name}",
@@ -434,7 +434,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*Entramos en el puesto de tteokbokki al lado del instituto.* *Charlamos mientras comemos tteokbokki con Dain.*",
+        "text": "*Entramos al puesto de tteokbokki al lado de la escuela.* *Charlamos mientras comemos tteokbokki con Dain.*",
         "context": "Día 2 después de clase, han ido al puesto de tteokbokki tras la apuesta de voleibol. Tono: Un poco más cerca que ayer. Las bromas fluyen naturales. Tira y afloja con chispa. Aún sin temas serios.",
         "personality": "Dain es una atleta enérgica y competitiva."
     },
@@ -444,11 +444,11 @@
     },
     "hidden_nurse_d2_2": {
         "name": "Enfermera",
-        "text": "Dos días seguidos — ¿te saco carné de socio de la enfermería?"
+        "text": "Dos días seguidos — ¿te saco carnet de socio de la enfermería?"
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "Me he raspado el codo."
+        "text": "Me raspé el codo."
     },
     "hidden_nurse_d2_4": {
         "name": "Enfermera",
@@ -460,10 +460,10 @@
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-        "text": "*Las manos que me ponen la tirita están muy cerca.*",
+        "text": "*Las manos que me ponen la curita están muy cerca.*",
         "choices": [
             "Tiene las manos calientes",
-            "Cuánta ceremonia por una tirita"
+            "Cuánta ceremonia por una curita"
         ]
     },
     "hidden_nurse_d2_choice1_a": {
@@ -476,23 +476,23 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Mientras reviso la tirita — veo un cuaderno asomando del cajón. Tapa verde claro. En la página abierta, algo escrito como una carta. 'Yujin, hoy—' Hasta ahí llego cuando la enfermera cierra el cajón.*"
+        "text": "*Mientras reviso la curita — veo un cuaderno asomando del cajón. Tapa verde claro. En la página abierta, algo escrito como una carta. 'Yujin, hoy—' Hasta ahí llego cuando la enfermera cierra el cajón.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
-        "text": "*Cierra el cajón.* Eso no lo has visto, ¿vale? ...Las profes también tenemos nuestros secretos."
+        "text": "*Cierra el cajón.* Eso no lo viste, ¿está bien? ...Las profes también tenemos nuestros secretos."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
         "text": "*Lo dice sonriendo, lo de que es un secreto — pero los ojos no le sonríen.*",
         "choices": [
             "Cuántos secretos. ¿No me cuenta uno al menos?",
-            "Vale, no he visto nada"
+            "Está bien, no vi nada"
         ]
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Enfermera",
-        "text": "*Entorna los ojos.* ¿Uno? ...Venga, va. Prefiero el cacao al café. Ese es el secreto."
+        "text": "*Entorna los ojos.* ¿Uno? ...Bueno, va. Prefiero el cacao al café. Ese es el secreto."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Enfermera",
@@ -508,7 +508,7 @@
     },
     "after2_dain_9_b": {
         "name": "Dain",
-        "text": "*Abre mucho los ojos.* ¿Eh? Pensaba ir blando, pero va a ser que no."
+        "text": "*Abre mucho los ojos.* ¿Eh? Pensaba ir suave, pero va a ser que no."
     },
     "after2_dain_9_c": {
         "name": "{name}",
@@ -520,19 +520,19 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*El peloteo va y viene. Los movimientos de Dain — no son normales. Rápidos, precisos, cuerpo con memoria. Esta tía juega de verdad. Pero — cada vez que cae, carga más peso en el pie izquierdo. Como esquivando el derecho.*"
+        "text": "*El peloteo va y viene. Los movimientos de Dain — no son normales. Rápidos, precisos, cuerpo con memoria. Esta chica juega de verdad. Pero — cada vez que cae, carga más peso en el pie izquierdo. Como esquivando el derecho.*"
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*Final: 3-2. Gano por los pelos. Dain se levanta — y se frota la rodilla derecha. Ayer en el gimnasio también, me parece. Un gesto inconsciente.*"
+        "text": "*Final: 3-2. Gano apenas. Dain se levanta — y se frota la rodilla derecha. Ayer en el gimnasio también, me parece. Un gesto inconsciente.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
-        "text": "*Puesto de tteokbokki al lado del instituto. Dain sopla el tteokbokki mientras habla.*"
+        "text": "*Puesto de tteokbokki al lado de la escuela. Dain sopla el tteokbokki mientras habla.*"
     },
     "after2_seo_4_b": {
         "name": "{name}",
-        "text": "*En el vocabulario de esta tía, la palabra 'por favor' no existe.*"
+        "text": "*En el vocabulario de esta chica, la palabra 'por favor' no existe.*"
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "{name}",
-        "text": "*Que te diga 'cumplido' así, directa. — Raro en ella, me parece. Sigo ordenando y Seoyeon gira el cuello. Parece que lo tiene cargado.*"
+        "text": "*Que te diga 'cumplido' así, directa. — Raro en ella, me parece. Sigo ordenando y Seoyeon gira el cuello. Parece que lo tiene tenso.*"
     },
     "after2_seo_sunset_joke_b": {
         "name": "Seoyeon",
@@ -564,7 +564,7 @@
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*¿Quién tiene la mano? — Es la de Seoyeon, en mi hombro. Se me han liado las palabras. Estoy así de tenso.*"
+        "text": "*¿Quién tiene la mano? — Es la de Seoyeon, en mi hombro. Se me enredaron las palabras. Estoy así de tenso.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
@@ -592,7 +592,7 @@
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Lo suelta como una broma, pero los ojos de Minsu no acaban de reírse.*"
+        "text": "*Lo suelta como una broma, pero los ojos de Minsu no terminan de reírse.*"
     },
     "minsu_warn_1_b": {
         "name": "{name}",
@@ -604,7 +604,7 @@
     },
     "minsu_warn_15_c": {
         "name": "Seoyeon",
-        "text": "Mañana a la hora de comer te dejo la azotea abierta. Ven"
+        "text": "Mañana a la hora del almuerzo te dejo la azotea abierta. Ven"
     },
     "after2_seo_neck_high_2_b": {
         "name": "{name}",

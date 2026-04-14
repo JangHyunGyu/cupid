@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*A la puerta del instituto. A lo lejos, las tres. Seoyeon yéndose con Haeun, Dain lanzando un balón mientras corre, Yuna leyendo un libro a paso lento. Ninguna mira hacia aquí. — Mejor así. Ahora mismo no podría sostenerle la mirada a nadie.*"
+        "text": "*A la puerta del colegio. A lo lejos, las tres. Seoyeon yéndose con Haeun, Dain lanzando un balón mientras corre, Yuna leyendo un libro a paso lento. Ninguna mira hacia aquí. — Mejor así. Ahora mismo no podría sostenerle la mirada a nadie.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
-        "text": "*Fui hacia la parte trasera del instituto.*"
+        "text": "*Fui hacia la parte trasera del colegio.*"
     },
     "after5_farewell_seo_1": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
-        "text": "Ha estado bien. ...Nos vemos en la próxima historia."
+        "text": "Estuvo bien. ...Nos vemos en la próxima historia."
     },
     "after5_farewell_yuna_4": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'Ha estado bien.' — Seguramente es lo más grande que Yuna podía decir.*"
+        "text": "*'Estuvo bien.' — Seguramente es lo más grande que Yuna podía decir.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
-        "text": "Jo, ¡qué pena!"
+        "text": "Uy, ¡qué pena!"
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "Pero bueno, tú has elegido. ¡La próxima vez dame una oportunidad a mí!"
+        "text": "Pero bueno, tú elegiste. ¡La próxima vez dame una oportunidad a mí!"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -111,11 +111,11 @@
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
-        "text": "*Salí del gimnasio y fui a la parte trasera del instituto.*"
+        "text": "*Salí del gimnasio y fui a la parte trasera del colegio.*"
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*El sol se pone. Cinco días llegan a su fin. El atardecer tiñe el patio del instituto. ¿Cinco días eran tan cortos? — Se acerca el momento de la última decisión.*"
+        "text": "*El sol se pone. Cinco días llegan a su fin. El atardecer tiñe el patio del colegio. ¿Cinco días eran tan cortos? — Se acerca el momento de la última decisión.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -136,7 +136,7 @@
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*Sin que nadie se atreviera a hablar primero, dejamos atrás la parte trasera del instituto.*"
+        "text": "*Sin que nadie se atreviera a hablar primero, dejamos atrás la parte trasera del colegio.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
@@ -148,13 +148,13 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*En el instituto anterior pasó lo mismo. No lo dije. Y me arrepentí. — ¿Otra vez lo mismo?*"
+        "text": "*En el colegio anterior pasó lo mismo. No lo dije. Y me arrepentí. — ¿Otra vez lo mismo?*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Casi huyo otra vez. Como en el otro instituto. El móvil en el bolsillo, sin decir nada — ese momento casi vuelve. — No. Esta vez no. Las piernas se mueven. La boca se abre antes. No tengo nada preparado. — El cuerpo va antes que yo.*"
+        "text": "*Casi huyo otra vez. Como en el otro colegio. El celular en el bolsillo, sin decir nada — ese momento casi vuelve. — No. Esta vez no. Las piernas se mueven. La boca se abre antes. No tengo nada preparado. — El cuerpo va antes que yo.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -178,11 +178,11 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Extiende el meñique. El mismo dedo que no supe coger en el Día 4.*"
+        "text": "*Extiende el meñique. El mismo dedo que no supe tomar en el Día 4.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
-        "text": "Esta vez cógelo."
+        "text": "Esta vez tómalo."
     },
     "after5_last_chance_2_j": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "Dain",
-        "text": "*Dain se detiene, vale. Pero esta vez no sonríe de primeras.* ...¿Qué?"
+        "text": "*Dain se detiene, está bien. Pero esta vez no sonríe de inmediato.* ...¿Qué?"
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -252,7 +252,7 @@
     },
     "after5_last_chance_yuna_3": {
         "name": "Yuna",
-        "text": "...Has vuelto."
+        "text": "...Volviste."
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
@@ -297,7 +297,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Caminando a mi lado.* ...Llegas tarde. Aun así, esta vez no has huido. Hoy esas palabras no me las tomo a la ligera."
+        "text": "*Caminando a mi lado.* ...Llegas tarde. Aun así, esta vez no huiste. Hoy esas palabras no me las tomo a la ligera."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -306,11 +306,11 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Saliendo del instituto.* Oye, ¿¡en serio!? ...¿En serio? Mira, sí que te estuve esperando. Pero si me pongo a sonreír sin más solo porque esperé, me jode un poco. Así que esta vez dilo hasta el final."
+        "text": "*Saliendo del colegio.* Oye, ¿¡en serio!? ...¿En serio? Mira, sí que te estuve esperando. Pero si me pongo a sonreír sin más solo porque esperé, me molesta un poco. Así que esta vez dilo hasta el final."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
-        "text": "*Respira hondo.* ...Te he escuchado. Pero todavía no puedo sonreír así, tan rápido."
+        "text": "*Respira hondo.* ...Te escuché. Pero todavía no puedo sonreír así, tan rápido."
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
@@ -343,7 +343,7 @@
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",
-        "text": "...Con que lo hayas leído, me vale."
+        "text": "...Con que lo hayas leído, me basta."
     },
     "after5_confess_react_yuna_h": {
         "name": "{name}",
@@ -351,11 +351,11 @@
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*Y así — dejamos atrás el instituto, andando.*"
+        "text": "*Y así — dejamos atrás el colegio, andando.*"
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
-        "text": "*Dobla la nota en la mano.* ...La he leído. Pero aún no consigo decidir el final."
+        "text": "*Dobla la nota en la mano.* ...La leí. Pero aún no consigo decidir el final."
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",

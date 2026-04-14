@@ -6,19 +6,19 @@
     "morning2_start_2": {},
     "morning2_dain_1": {
         "name": "{name}",
-        "text": "*Nada más abrir la puerta del aula — un manotazo en la espalda.*"
+        "text": "*Apenas abro la puerta del salón — un manotazo en la espalda.*"
     },
     "morning2_dain_2": {
         "name": "Dain",
-        "text": "¡¿Ya estás aquí?! ¡Buenos días!"
+        "text": "¡¿Ya llegaste?! ¡Buenos días!"
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "Jaja, ¿con eso ya? ¡Ponte las pilas con el físico!"
+        "text": "Jaja, ¿con eso ya? ¡Ponte las pilas con la condición física!"
     },
     "morning2_dain_4": {
         "name": "{name}",
-        "text": "¿No es un poco pronto para tanta energía?"
+        "text": "¿No es un poco temprano para tanta energía?"
     },
     "morning2_dain_5": {
         "name": "Dain",
@@ -34,35 +34,35 @@
     },
     "morning2_note_2": {
         "name": "{name}",
-        "text": "*'A la hora de comer, en el anexo de la biblioteca. — Yuna'*"
+        "text": "*'Al mediodía, en el anexo de la biblioteca. — Yuna'*"
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La misma letra pulcra de ayer. Breve. Y concreta en el sitio. — ¿El 'anexo' de la biblioteca? No es el de ayer.*"
+        "text": "*La misma letra pulcra de ayer. Breve. Y concreta en el lugar. — ¿El 'anexo' de la biblioteca? No es el de ayer.*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
-        "text": "*Pasa por el pasillo y echa un vistazo al aula.* ¿Qué tal anoche?"
+        "text": "*Pasa por el pasillo y echa un vistazo al salón.* ¿Qué tal anoche?"
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "¿La presidenta del consejo se pasa por las aulas a saludar?"
+        "text": "¿La presidenta del consejo pasa por los salones a saludar?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Estoy haciendo la ronda. — De paso, miro la asistencia."
+        "text": "Estoy haciendo la ronda. — De paso, reviso la asistencia."
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*No frenó el paso. Pero la mirada iba claramente hacia aquí. Justo cuando Seoyeon giró al final del pasillo — me pareció que la sonrisa se le apagaba. ¿Habrán sido imaginaciones?*"
+        "text": "*No frenó el paso. Pero la mirada iba claramente hacia aquí. Justo cuando Seoyeon dobló al final del pasillo — me pareció que la sonrisa se le apagaba. ¿Habrán sido imaginaciones?*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*Me quedo mirando el pasillo por el que se fue Seoyeon — y Minsu se gira desde atrás.*"
+        "text": "*Me quedo mirando el pasillo por el que se fue Seoyeon — y Minsu voltea desde atrás.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Tío, ¿dos días de traslado y ya viene la presidenta a saludarte? Yo llevo un año aquí y ni me cruza la mirada."
+        "text": "Oye, ¿dos días de traslado y ya viene la presidenta a saludarte? Yo llevo un año aquí y ni me cruza la mirada."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "¡¿La presi también anda detrás de nuestro nuevo?! ¡Qué tirón tienes!"
+        "text": "¡¿La presi también anda detrás de nuestro nuevo?! ¡Qué popular eres!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "¡Te descubrí yo primero, así que eres nuestro! ¡Me he pedido la vez!"
+        "text": "¡Yo te descubrí primero, así que eres nuestro! ¡Ya aparté mi turno!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*¿Desde cuándo una persona se 'pide'? — Y lo peor es que no me desagrada. Eso sí que da un poco de miedo.*"
+        "text": "*¿Desde cuándo una persona se 'aparta'? — Y lo peor es que no me desagrada. Eso sí que da un poco de miedo.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -130,11 +130,11 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "¡Eh! ¡¿Qué ha sido eso?! ¡¿Te ha tocado el hombro?!"
+        "text": "¡Oye! ¡¿Qué fue eso?! ¡¿Te tocó el hombro?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "Me ha sacudido el polvo."
+        "text": "Me sacudió el polvo."
     },
     "morning2_dain_react_5": {
         "name": "Dain",
@@ -150,7 +150,7 @@
     },
     "hidden_homeroom_d2_1": {
         "name": "Profesora",
-        "text": "Ah, {name}. Pásate un momento por la sala de profesores."
+        "text": "Ah, {name}. Pasa un momento por la sala de profesores."
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
@@ -158,11 +158,11 @@
     },
     "hidden_homeroom_d2_3": {
         "name": "Profesora",
-        "text": "He visto tu expediente. Buenas notas en Lengua. ¿Te gusta leer?"
+        "text": "Vi tu expediente. Buenas notas en Lengua. ¿Te gusta leer?"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Leer. Se ha fijado hasta en el expediente.*",
+        "text": "*Leer. Se fijó hasta en el expediente.*",
         "choices": [
             "¿Y usted? ¿Qué lee?",
             "Sí, me gusta leer"
@@ -170,7 +170,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Profesora",
-        "text": "...Novela negra. No la de atrapar al culpable — la que rastrea el móvil."
+        "text": "...Novela negra. No la de atrapar al culpable — la que rastrea el motivo."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Profesora",
@@ -182,7 +182,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*El cajón. ¿Se ha fijado ahí ahora mismo? — Por la rendija asoma un fajo de papeles. Parecen cuartillas. La profesora cierra el cajón con naturalidad. Como si nada.*"
+        "text": "*El cajón. ¿Se fijó ahí hace un momento? — Por la rendija asoma un fajo de papeles. Parecen cuartillas. La profesora cierra el cajón con naturalidad. Como si nada.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Profesora",
@@ -190,7 +190,7 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Profesora",
-        "text": "Dain es un poco ruidosa, ¿verdad? — Siempre ha sido así. Pero montar jaleo y que te sobre energía no es lo mismo."
+        "text": "Dain es un poco ruidosa, ¿verdad? — Siempre ha sido así. Pero armar alboroto y que te sobre energía no es lo mismo."
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -210,15 +210,15 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Profesora",
-        "text": "*Se tapa la boca con la taza.* ...Fallo en el control de gestos. Anda, vete."
+        "text": "*Se tapa la boca con la taza.* ...Falla en el control de gestos. Anda, vete."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Profesora",
-        "text": "*Agita la mano.* Venga, venga, no me avergüences. ...Anda, vete."
+        "text": "*Agita la mano.* Ya, ya, no me avergüences. ...Anda, vete."
     },
     "hidden_homeroom_d2_11": {
         "name": "Profesora",
-        "text": "...Si le doy trato de favor al nuevo, los demás se quejarán."
+        "text": "...Si le doy trato preferencial al nuevo, los demás se van a quejar."
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon se ha acercado ella primero. Tono tranquilo como siempre, pero con algo que busca confirmación. Dain lanza una mirada desde el fondo. Aparta la vista. Yuna se hunde aún más en el libro. Pasa las páginas más rápido.*"
+        "text": "*Seoyeon se acercó ella primero. Tono tranquilo como siempre, pero con algo que busca confirmación. Dain lanza una mirada desde el fondo. Aparta la vista. Yuna se hunde aún más en el libro. Pasa las páginas más rápido.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "morning2_greet_dain_1": {
         "name": "Dain",
-        "text": "¡Eh! ¡Ayer lo pasamos bien, hagamos algo hoy también!"
+        "text": "¡Oye! ¡Ayer lo pasamos bien, hagamos algo hoy también!"
     },
     "morning2_greet_dain_2": {
         "name": "{name}",
@@ -250,11 +250,11 @@
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",
-        "text": "Vaya energía."
+        "text": "Qué energía."
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
-        "text": "*No se sabe si es pulla o admiración. Yuna no reacciona. Pero la mano con la que escribía la nota se le ha quedado quieta.*"
+        "text": "*No se sabe si es indirecta o admiración. Yuna no reacciona. Pero la mano con la que escribía la nota se le quedó quieta.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*La letra de Yuna. Una frase más larga que ayer. — Por detrás, en letra pequeña: 'A la hora de comer, en el anexo de la biblioteca.'*"
+        "text": "*La letra de Yuna. Una frase más larga que ayer. — Por detrás, en letra pequeña: 'Al mediodía, en el anexo de la biblioteca.'*"
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
@@ -286,7 +286,7 @@
     },
     "morning2_break_transition_b": {
         "name": "{name}",
-        "text": "*La profesora está junto a la puerta del aula. Con la lista en la mano, echa un vistazo hacia dentro — y se cruza la mirada conmigo.*"
+        "text": "*La profesora está junto a la puerta del salón. Con la lista en la mano, echa un vistazo hacia adentro — y se cruza la mirada conmigo.*"
     },
     "hidden_homeroom_d2_1_b": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Sigo a la profesora hasta la sala.* *Su mesa está en un rincón. Papeles y una taza de café encima, y — un cajón un poco abierto. Rincón de la sala. Sobre la mesa, una pila de folios y — lo que parecen cuartillas.*"
+        "text": "*Sigo a la profesora hasta la sala.* *Su escritorio está en un rincón. Papeles y una taza de café encima, y — un cajón un poco abierto. Rincón de la sala. Sobre el escritorio, una pila de folios y — lo que parecen cuartillas.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Profesora",
@@ -326,7 +326,7 @@
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
-        "text": "Mucho mejor. La gente de clase me cae bien."
+        "text": "Mucho mejor. La gente del salón me cae bien."
     },
     "hidden_homeroom_d2_8_b": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*Se ha tapado la boca, pero toquetea la taza sin motivo. A esta también se le nota cuando se apura.*"
+        "text": "*Se tapó la boca, pero toquetea la taza sin motivo. A esta también se le nota cuando se apura.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
