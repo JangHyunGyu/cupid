@@ -37,7 +37,7 @@
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Hé, demain on va à la cafét', ok ? Je suis encore déçue qu'on n'ait pas pu y aller aujourd'hui !"
+        "text": "Hé, demain on va au kiosque, ok ? Je suis encore déçue qu'on n'ait pas pu y aller aujourd'hui !"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Hé !! T'iras à la cafét' demain, hein ?!"
+        "text": "Hé !! T'iras au kiosque demain, hein ?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -254,6 +254,6 @@
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*J'ai préparé un déjeuner à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
+        "text": "*J'ai préparé un bento à la va-vite. C'est pas terrible. Trop approximatif pour dire que c'est fait avec soin. — Mais c'est mieux que rien.*"
     }
 }

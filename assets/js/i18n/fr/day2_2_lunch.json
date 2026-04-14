@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait à nouveau signe d'aller à la boutique. La pause déjeuner dans ce lycée, c'est une guerre.*"
+        "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait à nouveau signe d'aller au kiosque. La pause déjeuner dans ce lycée, c'est une guerre.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -9,7 +9,7 @@
         "choices": [
             "Suivre le mot de Yuna vers l'annexe de la bibliothèque",
             "Suivre Seoyeon sur le toit",
-            "Aller à la boutique avec Dain"
+            "Aller au kiosque avec Dain"
         ]
     },
     "lunch2_seo_1_check": {
@@ -59,7 +59,7 @@
     },
     "lunch2_seo_5b_yuna": {
         "name": "{name}",
-        "text": "Je voulais savoir ce que donnaient cette brise et la boîte-repas de la présidente ensemble."
+        "text": "Je voulais savoir ce que donnaient cette brise et le bento de la présidente ensemble."
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
@@ -67,19 +67,19 @@
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
-        "text": "*Direction la boutique.*"
+        "text": "*Direction le kiosque.*"
     },
     "lunch2_dain_1b": {
         "name": "{name}",
-        "text": "*À la boutique avec Dain. Premier duel de pierre-feuille-ciseaux.*"
+        "text": "*Au kiosque avec Dain. Premier duel de pierre-feuille-ciseaux.*"
     },
     "lunch2_dain_1b_seo": {
         "name": "{name}",
-        "text": "*À la boutique avec Dain. Hier c'était une lunch box, aujourd'hui c'est l'odeur du pain qui frappe en premier.*"
+        "text": "*Au kiosque avec Dain. Hier c'était un bento, aujourd'hui c'est l'odeur du pain qui frappe en premier.*"
     },
     "lunch2_dain_2b_seo": {
         "name": "Dain",
-        "text": "Oh, donc aujourd'hui c'est mon côté et pas la lunch box de la présidente ?!"
+        "text": "Oh, donc aujourd'hui c'est mon côté et pas le bento de la présidente ?!"
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "lunch2_dain_1b_yuna": {
         "name": "{name}",
-        "text": "*À la boutique avec Dain. Hier c'était la bibliothèque silencieuse, aujourd'hui ce sont l'odeur du pain et le bruit qui arrivent d'abord.*"
+        "text": "*Au kiosque avec Dain. Hier c'était la bibliothèque silencieuse, aujourd'hui ce sont l'odeur du pain et le bruit qui arrivent d'abord.*"
     },
     "lunch2_dain_2b_yuna": {
         "name": "Dain",
@@ -224,7 +224,7 @@
     },
     "lunch2_yuna_c1_1": {
         "name": "Yuna",
-        "text": "...Parti. Il y a un an."
+        "text": "...Il a changé d'école. Il y a un an."
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
@@ -256,7 +256,7 @@
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
-        "text": "...C'était un transfert."
+        "text": "...C'était pas soudain. C'était un changement d'école."
     },
     "lunch2_yuna_c1_11": {
         "name": "{name}",
@@ -348,7 +348,7 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Je l'ai rencontré hier ! C'est un gars bien, Seoyeon."
+        "text": "Je l'ai rencontré hier ! Un gars sympa, présidente !"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
@@ -428,7 +428,7 @@
     },
     "lunch2_dain_1": {
         "name": "{name}",
-        "text": "*À la boutique avec Dain. Revanche du pierre-feuille-ciseaux d'hier.*"
+        "text": "*Au kiosque avec Dain. Revanche du pierre-feuille-ciseaux d'hier.*"
     },
     "lunch2_dain_2": {
         "name": "Dain",
@@ -509,7 +509,7 @@
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Q-quoi, ris pas ! *casse le pain soboro en deux et en pousse un morceau* ...Tiens, mange ça."
+        "text": "Bah quoi, ris pas ! *casse le pain soboro en deux et en pousse un morceau* ...Tiens, mange ça."
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
@@ -529,7 +529,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Regardant {name}* ...Un gars bien."
+        "text": "*Regardant {name}* ...Un gars sympa."
     },
     "lunch2_seo_c1_2_b": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement — je remarque un cahier qui dépasse du tiroir de son bureau. Couverture vert tendre. La page ouverte contient un texte en forme de lettre. 'Yujin, aujourd'hui—' Je n'en lis pas plus que l'infirmière referme le tiroir.*"
+        "text": "*En vérifiant le pansement — je remarque un cahier qui dépasse du tiroir de son bureau. Couverture vert tendre. La page ouverte contient un texte en forme de lettre. 'Yujin, aujourd'hui—' Je n'ai pas le temps d'en lire plus, l'infirmière referme le tiroir.*"
     },
     "lunch2_dain_end_s": {
         "name": "Infirmière",
@@ -649,7 +649,7 @@
     },
     "lunch2_dain_end_x": {
         "name": "{name}",
-        "text": "Si je ne suis pas blessé, je n'aurais aucune raison de venir."
+        "text": "Si je ne suis pas blessé, je n'ai aucune raison de venir."
     },
     "lunch2_dain_end_y": {
         "name": "{name}",

@@ -98,7 +98,7 @@
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Pause après le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrête. Regarde mon épaule.*"
+        "text": "*Pause après le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrête. Regarde mon épaule. Une main se lève. Vers mon épaule.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -182,7 +182,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*Le tiroir. Elle vient de le regarder ? — Par l'ouverture, j'aperçois une liasse de papiers. On dirait des pages de manuscrit.*"
+        "text": "*Le tiroir. Elle vient de le regarder ? — Par l'ouverture, j'aperçois une liasse de papiers. On dirait des pages de manuscrit. La prof repousse le tiroir d'un geste naturel. Comme si de rien n'était.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Professeure principale",
@@ -246,7 +246,7 @@
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
-        "text": "*Seoyeon passe en feuilletant son bloc.*"
+        "text": "*Seoyeon passe en feuilletant son bloc-notes.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",

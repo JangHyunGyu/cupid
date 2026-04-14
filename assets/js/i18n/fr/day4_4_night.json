@@ -303,15 +303,15 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*Je fais la passe. Dain saute et — smash. À l'atterrissage — elle agrippe son genou droit et s'effondre sur place.*"
+        "text": "*Je fais la passe. Dain saute et — smash. À l'atterrissage — elle agrippe son genou droit et s'accroupit sur place.*"
     },
     "wall_dain_9": {
         "name": "{name}",
-        "text": "*Ma vision se trouble.*"
+        "text": "*Quelque chose se glace en moi.*"
     },
     "wall_dain_10": {
         "name": "Dain",
-        "text": "Non, ça va !! J’ai juste un peu tourné mdr, c’est rien du..."
+        "text": "Non, ça va !! Je me suis juste foulé mdr, c’est rien..."
     },
     "wall_dain_11": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_yuna_9": {
         "name": "Yuna",
-        "text": "Un aîné qui venait ici avec moi. — La seule personne dont j’étais proche."
+        "text": "Un senior qui venait ici avec moi. — La seule personne dont j’étais proche."
     },
     "wall_yuna_9_b": {
         "name": "{name}",
@@ -653,11 +653,11 @@
     },
     "wall_yuna_14_f": {
         "name": "Yuna",
-        "text": "Tu me faisais trop penser à lui. C'est pour ça que j'avais peur."
+        "text": "Tu lui ressemblais, l'aura était la même. C'est pour ça que j'avais peur."
     },
     "wall_yuna_14_g": {
         "name": "Yuna",
-        "text": "Si je me rapprochais encore, tu pourrais disparaître aussi."
+        "text": "J'avais peur que si je me rapprochais encore, tu disparaisses aussi."
     },
     "wall_yuna_14_h": {
         "name": "{name}",
@@ -679,8 +679,8 @@
         "name": "{name}",
         "text": "*Les yeux de Yuna brillent de larmes. — C’est la première fois que je l’entends parler autant.*",
         "choices": [
-            "Je ne suis pas cet aîné. Je suis moi. Mais je resterai à tes côtés.",
-            "Laisse tomber cet aîné. Celui qui est devant toi maintenant, c'est moi.",
+            "Je ne suis pas ce senior. Je suis moi. Mais je resterai à tes côtés.",
+            "Laisse tomber ce senior. Celui qui est devant toi maintenant, c'est moi.",
             "...Alors tu t’es rapprochée de moi à cause de lui ? Comme remplaçant ?"
         ]
     },
@@ -727,7 +727,7 @@
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
-        "text": "...Parce que t'es chaleureux."
+        "text": "...Parce que tu es chaud."
     },
     "wall_yuna_sub_1": {
         "name": "Yuna",
@@ -819,7 +819,7 @@
     },
     "night_nurse_msg_1": {
         "name": "Infirmière",
-        "text": "Ce que tu as dit à mon infirmerie aujourd'hui... Je n'arrête pas d'y penser la nuit."
+        "text": "Ce que tu m'as dit à l'infirmerie aujourd'hui... Je n'arrête pas d'y penser la nuit."
     },
     "night_nurse_msg_2": {
         "name": "{name}",

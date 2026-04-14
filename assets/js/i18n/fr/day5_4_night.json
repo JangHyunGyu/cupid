@@ -113,7 +113,7 @@
     },
     "true_seo_6": {
         "name": "{name}",
-        "text": "*Seoyeon sourit. Ses lèvres bougent d'elles-mêmes.*"
+        "text": "*Seoyeon sourit. Les coins de ses lèvres montent tout seuls.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -125,11 +125,11 @@
     },
     "true_seo_7_b": {
         "name": "{name}",
-        "text": "*Je tends la main aussi. Juste avant de se toucher, Seoyeon sourit la première.*"
+        "text": "*Seoyeon hésite puis tend son auriculaire.*"
     },
     "true_seo_7b": {
         "name": "{name}",
-        "text": "*Seoyeon tend son petit doigt.*"
+        "text": "*Je tends la main aussi. Juste avant qu'on se touche, Seoyeon sourit la première.*"
     },
     "true_seo_8": {
         "name": "{name}",
@@ -718,7 +718,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Avec Sojeong, j'avais regretté de ne pas avoir choisi. Cette fois j'ai tout choisi et tout perdu. — Au fond c'est pareil. Je n'ai pas pu en choisir une seule.*"
+        "text": "*Avec Sojeong, je me suis tu et j'ai perdu quelqu'un. Cette fois, j'ai parlé à tout le monde et j'ai tout perdu. — Au fond c'est pareil. Je n'ai pas su dire les choses comme il fallait.*"
     },
     "day5_ending_harem": {
         "name": "{name}",
@@ -879,7 +879,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Professeure principale",
-        "text": "...Tiens. Tu n'as pas dit 'madame'. Première fois."
+        "text": "...Ça. Tu n'as pas dit 'madame'. C'est la première fois."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -923,7 +923,7 @@
     },
     "hidden_true_homeroom_6": {
         "name": "Professeure principale",
-        "text": "...Juste un truc. ...On va boire un café. Un vrai cette fois, pas un jus."
+        "text": "...Juste une chose. ...On va boire un café. Un vrai, cette fois, pas un jus."
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
@@ -976,7 +976,7 @@
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
-        "text": "*La cérémonie est finie. J'ai ouvert la porte de l'infirmerie. Vide. Un pansement sur le bureau. 'Viens chez moi. L'adresse est au dos.' — Sans cœur cette fois.*"
+        "text": "*La cérémonie est finie. J'ai ouvert la porte de l'infirmerie. Vide. Un pansement sur le bureau. 'Viens chez moi. L'adresse est au dos.' — Pas de cœur, cette fois.*"
     },
     "hidden_perfect_nurse_2": {
         "name": "Infirmière",
@@ -1096,7 +1096,7 @@
     },
     "hidden_true_nurse_7_c": {
         "name": "{name}",
-        "text": "*L'infirmière scolaire tend la main et effleure le pansement sur le dos de ma main. Celui qu'elle m'a mis ce matin.*"
+        "text": "*L'infirmière tend la main et effleure le pansement sur le dos de ma main. Celui qu'elle m'a mis ce matin.*"
     },
     "hidden_true_nurse_7_d": {
         "name": "{name}",

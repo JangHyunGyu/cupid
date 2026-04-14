@@ -21,7 +21,7 @@
     },
     "morning5_seo_note_1": {
         "name": "{name}",
-        "text": "*Il y a un mot sur mon bureau. L'écriture de Seoyeon. — 'Libère-toi cet après-midi. Je laisserai le toit ouvert. — Seoyeon'*"
+        "text": "*Il y a un mot sur mon bureau. L'écriture de Seoyeon. — 'Prends un moment cet après-midi. Je laisserai le toit ouvert. — Seoyeon'*"
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "{name}",
-        "text": "*La prof est assise au bureau. — Pas un manuscrit cette fois. Une enveloppe. Brune.*"
+        "text": "*La prof est assise au bureau. — Pas un manuscrit, elle tient une enveloppe. Brune.*"
     },
     "hidden_homeroom_d5_2": {
         "name": "Professeure principale",
@@ -183,7 +183,7 @@
     },
     "morning5_dain_1_b": {
         "name": "{name}",
-        "text": "...Sans me demander ?"
+        "text": "...Sans ma permission ?"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Professeure principale",
@@ -291,7 +291,7 @@
     },
     "hidden_nurse_d5_2_c": {
         "name": "Infirmière",
-        "text": "*Marquant un temps d'arrêt* ...Tu es encore là."
+        "text": "*Marquant un temps d'arrêt* ...Encore toi."
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
@@ -459,7 +459,7 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Professeure principale",
-        "text": "Je l'ai envoyé à des éditeurs trois fois en sept ans. Refusé à chaque fois. Deux de ces trois lettres commençaient par — « Sept ans, c'est admirable. Ce sera sûrement formidable. »"
+        "text": "Je l'ai envoyé à des éditeurs trois fois en sept ans. Refusé à chaque fois. Deux de ces trois lettres commençaient par — « Vous avez passé sept ans dessus. Ce sera forcément bien. »"
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",

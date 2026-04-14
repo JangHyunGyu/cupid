@@ -25,7 +25,7 @@
     },
     "after5_farewell_seo_2": {
         "name": "Seoyeon",
-        "text": "...Bon."
+        "text": "*Elle soupire.* ...Bon."
     },
     "after5_farewell_seo_3": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Bon, je m'y attendais. T'as jamais bougé selon mes calculs depuis le début."
+        "text": "Bon, je m'y attendais. Depuis le début, t'as jamais fait ce que je prévoyais."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
-        "text": "Tch, c'est dommage !"
+        "text": "Ah, c'est dommage !"
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -207,7 +207,7 @@
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Attends, sérieux ?!"
+        "text": "Hé, sérieux ?!"
     },
     "after5_last_chance_2_n": {
         "name": "{name}",
