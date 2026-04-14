@@ -10769,15 +10769,17 @@
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_yuna_8b",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "EN/ja/de/pt와 동기화: 이어폰 전달 씬 추가"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_yuna_8b",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "EN/ja/de/pt와 동기화: 이어폰 전달 씬 추가"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_yuna_8b",

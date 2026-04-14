@@ -9175,27 +9175,31 @@
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_3_afterschool.json#confess_yuna_yes_8_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"갑자기 사라지면 싫어\" 추가"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_3_afterschool.json#confess_yuna_yes_8_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"갑자기 사라지면 싫어\" 추가"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_3_afterschool.json#confess_yuna_yes_8_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"갑자기 사라지면 싫어\" 추가"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_yes_8_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"갑자기 사라지면 싫어\" 추가"
       }
     },
     "confess_yuna_yes_9": {
@@ -14476,15 +14480,17 @@
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_dain_cry_6",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"울음이 잦아들 때까지 옆에 있었다\" 추가"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_dain_cry_6",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
-        "_issues": null
+        "_issues": null,
+        "_fix_note": "KO의 \"울음이 잦아들 때까지 옆에 있었다\" 추가"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_cry_6",
