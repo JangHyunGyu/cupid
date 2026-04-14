@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Segundo dia. O uniforme já está um pouco mais confortável que ontem. — Os passos também.*"
+        "text": "*Segundo dia. O uniforme já tá um pouco mais confortável que ontem. — Os passos também.*"
     },
     "morning2_start_2": {},
     "morning2_greet_seo_1": {
@@ -10,7 +10,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon veio até mim primeiro. O tom tranquilo de sempre, mas com um leve ar de quem quer confirmação. Dain espia do fundo da sala. Vira o rosto. Yuna se afunda mais no livro. O ritmo das páginas acelera.*"
+        "text": "*Seoyeon veio falar comigo primeiro. O tom tranquilo de sempre, mas com um quê de quem quer confirmar alguma coisa. Dain dá uma espiada do fundo da sala. Desvia o olhar. Yuna se enfia ainda mais no livro. Vira as páginas mais rápido.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "morning2_dain_3": {
         "name": "Dain",
-        "text": "Kk só isso e já cambaleou?! Vai malhar!"
+        "text": "kkkk só isso e já cambaleou?! Treina aí, vai!"
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "morning2_dain_5": {
         "name": "Dain",
-        "text": "Isso aqui é o normal! Você que tá no modo economia!"
+        "text": "Isso aqui é o normal! Você que tá em modo poupança!"
     },
     "morning2_dain_6": {
         "name": "{name}",
@@ -106,11 +106,11 @@
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "A presidente do grêmio vem até a sala só pra dar bom dia?"
+        "text": "Presidente do grêmio passa na sala só pra cumprimentar?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "É a ronda. — Verificação de presença."
+        "text": "É ronda. — Verificação de presença."
     },
     "morning2_minsu_1": {
         "name": "{name}",
@@ -122,11 +122,11 @@
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Cara. Dois dias de escola e a presidente do grêmio vem te dar bom dia? Eu tô aqui há um ano e ela nem olha na minha direção."
+        "text": "Mano. Dois dias de transferido e a presidente do grêmio vem te cumprimentar? Tô aqui há um ano e ela nem olha na minha cara."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "Talvez você que seja impopular."
+        "text": "Talvez você que seja rejeitado."
     },
     "morning2_dain_claim_2": {
         "name": "Minsu",
@@ -138,15 +138,15 @@
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "Até a presidente tá interessada no nosso aluno transferido? Tá popular, hein!"
+        "text": "Até a presidente tá de olho no nosso transferido? Tá bombando, hein!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
-        "text": "'Nosso' aluno transferido?"
+        "text": "'Nosso' transferido?"
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Eu te achei primeiro, então é nosso aluno transferido sim! Gol de abertura, gol de abertura!"
+        "text": "Eu te achei primeiro, então é nosso transferido sim! Primeiro a marcar leva! Primeiro a marcar!"
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Uma pessoa pode ser objeto de 'reserva'? — Mas não me incomoda. E isso é meio assustador.*"
+        "text": "*Tipo gente virou objeto de posse? — Mas não me incomoda. E isso é meio assustador.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professora",
@@ -178,11 +178,11 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Segui a professora até a sala dos professores. A mesa dela fica no canto. Papéis, uma xícara de café — e uma gaveta entreaberta. No canto da sala dos professores. Em cima da mesa, pilhas de papel — e o que parece ser folhas de manuscrito.*"
+        "text": "*Segui a professora até a sala dos professores. A mesa dela fica no canto. Papéis, uma xícara de café — e uma gaveta entreaberta. Em cima da mesa, pilhas de papel — e o que parece ser folhas de manuscrito.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professora",
-        "text": "Vi o boletim da escola anterior. Suas notas de língua eram boas. Gosta de ler?"
+        "text": "Olhei seu boletim da outra escola. Ia bem em português. Gosta de ler?"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Professora",
@@ -190,7 +190,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Romances. Uma professora de línguas lendo romances — é normal. Mas por que deu a impressão de estar segurando as palavras?*"
+        "text": "*Romances. Professora de português lendo romances é o óbvio. Mas por que deu a impressão de estar escolhendo as palavras?*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Professora",
@@ -198,7 +198,7 @@
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Pergunta estranha. Estávamos falando de notas, por que de repente 'escrever'?*"
+        "text": "*Pergunta estranha. A gente tava falando de nota, por que veio com 'escrever' do nada?*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -210,27 +210,27 @@
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Ler. Ela até conferiu o boletim.*",
+        "text": "*Ler. Ela até foi conferir o boletim.*",
         "choices": [
-            "E a senhora? O que gosta de ler?",
+            "E a senhora? Lê o quê?",
             "Eu gosto de ler, sim."
         ]
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Professora",
-        "text": "...Romances policiais. Não os de caçar o culpado — os que rastreiam o motivo."
+        "text": "...Policial. Não o de pegar o culpado — o que rastreia o motivo."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Professora",
-        "text": "*Sorrindo de leve* É? ...Bom hobby."
+        "text": "*Sorrindo de leve* É? ...Gosto bom."
     },
     "hidden_homeroom_d2_5": {
         "name": "Professora",
-        "text": "...Certo. Só perguntei por curiosidade."
+        "text": "...Entendi. Era só uma pergunta solta."
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*A gaveta. Ela não olhou pra ela agora? — Pela fresta, dá pra ver um monte de papéis. Parece folhas de manuscrito. A professora fecha a gaveta naturalmente. Como se nada tivesse acontecido.*"
+        "text": "*A gaveta. Ela não reagiu a ela agora? — Pela fresta dá pra ver um maço de papéis. Parecem folhas de manuscrito. A professora empurra a gaveta sem pressa. Como se nada.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Professora",
@@ -242,19 +242,19 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "Professora",
-        "text": "A Dain é barulhenta, né? — Ela é assim mesmo. Mas tem diferença entre aluno que arruma confusão e aluno que tem energia de sobra."
+        "text": "A Dain é barulhenta, né? — Ela é assim mesmo. Mas aluno que arruma confusão e aluno que tem energia sobrando são coisas diferentes."
     },
     "hidden_homeroom_d2_8_b": {
         "name": "{name}",
-        "text": "Se até a senhora sabe, a Dain deve ser bem conhecida."
+        "text": "Se até a senhora sabe, a Dain deve ser meio famosa."
     },
     "hidden_homeroom_d2_8_c": {
         "name": "Professora",
-        "text": "Conhecida não é bem a palavra... *toma um gole de café* É mais alguém que eu fico de olho."
+        "text": "Famosa não é bem a palavra... *toma um gole de café* É mais do tipo que me preocupa."
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Alguém que ela fica de olho'. — A professora se preocupa com a Dain. Será que sabe de algo?*"
+        "text": "*'Do tipo que me preocupa.' — A professora se preocupa com a Dain. Sabe de alguma coisa?*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professora",
@@ -262,7 +262,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*Cobriu a boca, mas fica mexendo na xícara à toa. Essa pessoa também dá bandeira quando fica sem jeito.*"
+        "text": "*Ela cobriu a boca, mas ficou mexendo na xícara à toa. Essa pessoa também entrega quando fica sem jeito.*"
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -270,23 +270,23 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Professora",
-        "text": "Faz parte da gestão da turma. É trabalho."
+        "text": "Faz parte do meu trabalho com a turma. É serviço."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
-        "text": "*Diz que é trabalho, mas ainda tem um sorriso no canto dos olhos.*",
+        "text": "*Diz que é serviço, mas ainda tem um sorriso nos olhos.*",
         "choices": [
-            "Pra ser trabalho, a senhora tá com uma cara bem feliz.",
-            "Obrigado por se preocupar."
+            "Pra quem tá a trabalho, a senhora tá sorrindo demais.",
+            "Obrigado por cuidar."
         ]
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professora",
-        "text": "*Cobrindo a boca com a xícara de café* ...Falhei em disfarçar. Tá bom, pode ir."
+        "text": "*Cobrindo a boca com a xícara* ...Falhei no disfarce. Tá bom, pode ir."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professora",
-        "text": "*Acenando com a mão* Tá, tá, que constrangimento. ...Pode ir."
+        "text": "*Acenando com a mão* Para, para, que vergonha. ...Pode ir."
     },
     "hidden_homeroom_d2_11": {
         "name": "Professora",
@@ -298,11 +298,11 @@
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
-        "text": "*Saindo da sala dos professores — aquele monte de papéis na gaveta não sai da minha cabeça.*"
+        "text": "*Saí da sala dos professores — e aquele monte de papéis na gaveta não sai da minha cabeça.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Intervalo depois da primeira aula. Passo pela Seoyeon no corredor. Ela para. Olha pro meu ombro. A mão dela sobe. Em direção ao meu ombro.*"
+        "text": "*Intervalo depois da primeira aula. Cruzo com a Seoyeon no corredor. Ela para. Olha pro meu ombro. A mão dela sobe. Em direção ao meu ombro.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -326,7 +326,7 @@
     },
     "morning2_dain_react_1": {
         "name": "{name}",
-        "text": "*O toque no ombro só registrou um instante depois. — Provavelmente não foi por causa da poeira.*"
+        "text": "*O toque no ombro só registrou um segundo depois. — E não foi por causa da poeira.*"
     },
     "morning2_dain_react_2": {
         "name": "{name}",
@@ -334,7 +334,7 @@
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "EI! O que foi isso?! Ela tocou no seu ombro?!"
+        "text": "EI! Que foi isso?! Ela encostou no seu ombro?!"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "morning2_dain_react_5": {
         "name": "Dain",
-        "text": "Poeira... tinha poeira mesmo?!"
+        "text": "Poeira... tinha poeira mesmo lá?!"
     },
     "morning2_dain_react_6": {
         "name": "{name}",
@@ -350,6 +350,6 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*A garota que nunca se aproximou de ninguém primeiro durante um ano inteiro — veio até mim primeiro.*"
+        "text": "*A pessoa que não se aproximou de ninguém primeiro durante um ano inteiro — veio até mim.*"
     }
 }

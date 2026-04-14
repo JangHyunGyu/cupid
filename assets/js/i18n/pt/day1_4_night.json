@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*De volta ao quarto. Deitado na cama. Pro primeiro dia — tô acabado. Mas não é ruim.*"
+        "text": "*Voltei pro quarto. Deitei na cama. Pro primeiro dia — tô moído. Mas não foi ruim.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
-        "text": "*Na próxima pelo menos vou ter bebida preparada*"
+        "text": "*Na próxima levo uma bebida pra gente*"
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Ela mandou 'Cortesia da casa' numa mensagem separada. De propósito.*"
+        "text": "*Ela quebrou o 'Cortesia da casa' numa mensagem separada. De propósito.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -33,51 +33,51 @@
     },
     "night_msg_yuna_2": {
         "name": "Yuna",
-        "text": "*Amanhã vou guardar seu lugar*"
+        "text": "*Amanhã também guardo um lugar pra você*"
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*'Vou guardar seu lugar.' — Largo o celular. Mais devagar do que pretendia.*"
+        "text": "*'Guardo um lugar pra você.' — A mão que larga o celular se move mais devagar do que o esperado.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
-        "text": "*Revanche de pedra-papel-tesoura é AMANHÃ!!*"
+        "text": "*Revanche de pedra, papel, tesoura é AMANHÃ!!*"
     },
     "night_msg_dain_2": {
         "name": "Dain",
-        "text": "*Não foge kk*"
+        "text": "*Não vai amarelar kkkk*"
     },
     "night_msg_dain_3": {
         "name": "Dain",
-        "text": "*Ainda tô com raiva do dinheiro do pão sério kkk*"
+        "text": "*Ainda tô chateada com a grana do pão aff kkkk*"
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Três mensagens seguidas. Ela nem respira entre uma e outra?*"
+        "text": "*Três mensagens seguidas. Ela não respira entre uma e outra não?*"
     },
     "night_hidden_check": {
         "name": "{name}",
-        "text": "*No meio das notificações do mensageiro — tem outra coisa.*"
+        "text": "*No meio das notificações do mensageiro — aparece outra coisa.*"
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Tem um aviso da professora no aplicativo da escola. 'Aviso da turma 3-2: Trazer material de matemática pra 1a aula amanhã. — E {name}, se está se adaptando bem, já é o suficiente.'*"
+        "text": "*Tem um aviso da professora no app da escola. 'Aviso 3-2: Trazer material de matemática pra primeira aula amanhã. — E {name}, se estiver se adaptando bem, já tá ótimo.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Uma mensagem pessoal dentro de um aviso escolar? — Não consigo evitar o sorriso.*"
+        "text": "*Recado pessoal dentro de aviso escolar? — Tento segurar o sorriso e não consigo.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Tem uma notificação no app de saúde da escola. 'Registro da enfermaria: {name} — Tontura (leve). Obs: Se os sintomas continuarem amanhã, volte. Beba bastante água. — o ♥ é interesse médico ^^'*"
+        "text": "*Tem uma notificação no app de saúde da escola. 'Ficha da enfermaria: {name} — Tontura (leve). Obs: Se o sintoma continuar amanhã, volta aqui. Bebe bastante água. — o ♥ é interesse médico ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Uma enfermeira que coloca coração no prontuário. Nunca vi alguém usar emoji em ficha médica.*"
+        "text": "*Enfermeira que põe coraçãozinho em prontuário. Primeira vez que vejo alguém colocar emoji em ficha médica.*"
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Quase dormindo quando — o celular vibra mais uma vez. 23h. Quem é?*"
+        "text": "*Tô quase dormindo quando — o celular vibra mais uma vez. 23h. Quem é a essa hora?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -85,15 +85,15 @@
     },
     "night_seo_late_1": {
         "name": "Seoyeon",
-        "text": "*A gente se vê amanhã na escola.*"
+        "text": "*Te vejo amanhã na escola.*"
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "*— Se não aparecer, eu vou te buscar*"
+        "text": "*— Se não aparecer, eu vou atrás*"
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Minha mão para no meio do caminho ao largar o celular.*"
+        "text": "*A mão que ia largar o celular trava no meio do caminho.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -101,42 +101,42 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Só '...' e nada mais. Como se tivesse digitado algo e apagado.*"
+        "text": "*Só '...' e mais nada. Como se tivesse digitado algo e apagado depois.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
-        "text": "*— Fico pensando se respondo ou não quando a tela apaga.*"
+        "text": "*— Fico em dúvida se respondo ou não, e a tela apaga.*"
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Mesmo depois da tela apagar, fiquei segurando o celular por um bom tempo.*"
+        "text": "*Mesmo com a tela apagada, fiquei segurando o celular por um tempão.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "*ei você ainda tá acordado né?!*"
+        "text": "*aí você ainda tá acordado né?!*"
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "*preciso de parceiro pra exercício de manhã!*"
+        "text": "*preciso de parceiro pro treino de amanhã cedo!*"
     },
     "night_dain_late_3": {
         "name": "Dain",
-        "text": "*'não' não é opção kk*"
+        "text": "*recusa não é opção kkkk*"
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*Essa pessoa simplesmente não conhece a palavra 'não'?*"
+        "text": "*Essa menina não conhece o conceito de 'não', é?*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",
-        "text": "*Embaixo da mensagem da Dain, uma fila de emojis. Todos diferentes.*"
+        "text": "*Embaixo da mensagem da Dain, uma enfileirada de emojis. Cada um diferente do outro.*"
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Largo o celular e olho pro teto. O cheiro de flor de cerejeira ainda está no uniforme.*"
+        "text": "*Largo o celular. Olho pro teto. O cheiro de cerejeira ainda tá no uniforme.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Não foi um primeiro dia ruim. E amanhã — parece que vai ser ainda melhor.*"
+        "text": "*Não foi um primeiro dia ruim. E amanhã — parece que vai ser ainda mais interessante.*"
     }
 }
