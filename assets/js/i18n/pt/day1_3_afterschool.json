@@ -1,55 +1,55 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Depois da aula. Decidi dar uma olhada pela escola. Ainda não conheço bem a estrutura. Andando pelo corredor. O celular vibra. — O grupo da escola antiga.*"
+        "text": "*Depois da aula. Resolvi dar uma volta pela escola. Ainda não peguei a planta do lugar. Ando pelo corredor. O celular vibra. — Grupo do KakaoTalk da escola antiga.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'ei a sojeong tá bem na escola nova~' 'ainda bem kk' — Guardo o celular no bolso.*"
+        "text": "*'ei a sojeong tá bem na escola nova~' 'ainda bem kkkk' — Guardo o celular no bolso.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Ainda bem, né. Será mesmo? Se eu tivesse dito alguma coisa naquela hora — a Sojeong não precisaria ter saído da escola.*"
+        "text": "*...Ainda bem, dizem. Será mesmo? Se eu tivesse aberto a boca naquela hora — a Sojeong nem precisava ter mudado de escola.*"
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Nessa escola — se eu vir alguma coisa, eu falo. Chega de fingir que não vi. Dessa vez.*"
+        "text": "*Nessa escola — se vi, falo. Chega de fazer que não viu. Dessa vez.*"
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Pego o celular de novo e saio do grupo. Pronto. — Agora sou desta escola.*"
+        "text": "*Pego o celular de novo e saio do grupo. Faxina feita. — Agora eu sou dessa escola.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Ei, onde você foi na hora do almoço? Fui na cantina e você não tava lá."
+        "text": "Aí, onde você foi no almoço? Passei na cantina e você não tava."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*...O que eu falo. Se eu disser que tava com a Seoyeon, as coisas podem ficar estranhas.*"
+        "text": "*...E agora o que eu falo. Se eu disser que tava com a Seoyeon, o clima vai ficar esquisito.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
-        "text": "...Eu vi vocês descendo do terraço. Os dois?"
+        "text": "...Eu vi vocês descendo do terraço. Os dois juntos?"
     },
     "after1_jealousy_seo_choice": {
         "name": "{name}",
-        "text": "*A voz da Dain subiu um pouquinho.*",
+        "text": "*A voz da Dain subiu uma oitava.*",
         "choices": [
-            "Almocei no terraço com a presidente. (Sincero)",
-            "Só fiquei andando sozinho. (Mentira)"
+            "Comi com a presidente lá no terraço. (Verdade)",
+            "Só fiquei zanzando sozinho. (Mentira)"
         ]
     },
     "after1_jealousy_seo_honest": {
         "name": "{name}",
-        "text": "É, a presidente me levou lá. Até trouxe marmita pra dois."
+        "text": "É, a presidente me puxou. Até trouxe marmita pra dois."
     },
     "after1_jealousy_seo_honest_2": {
         "name": "Dain",
-        "text": "...Sério? Podia pelo menos ter avisado."
+        "text": "...Ah é? Podia ter avisado, né."
     },
     "after1_jealousy_seo_lie": {
         "name": "{name}",
-        "text": "Não, só fiquei andando sozinho."
+        "text": "Nada, só fiquei zanzando sozinho."
     },
     "after1_jealousy_seo_lie_2": {
         "name": "Dain",
@@ -57,23 +57,23 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
-        "text": "*Mexo no bolso lateral da mochila e meus dedos encostam na ponta de um papel. Um bilhete dobrado. Não sei quando colocaram ali. Letra da Yuna. 'Vi vocês no terraço na hora do almoço. ...Vocês pareciam se dar bem, você e a presidente do grêmio.' — Três pontos no final. O tipo de coisa que se escreve quando se engole o que realmente quer dizer.*"
+        "text": "*Mexo no bolso lateral da mochila e a ponta do dedo tropeça num papel. Bilhete dobrado. Não faço ideia de quando alguém colocou ali. Letra da Yuna. 'Vi vocês no terraço na hora do almoço. ...Pareciam bem à vontade, você e a presidente.' — Três pontinhos no final. Do tipo que se escreve quando engole o que queria dizer.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "Vi você na cantina com a Dain no almoço. Adaptação rápida, hein."
+        "text": "Te vi na cantina com a Dain no almoço. Adaptação rápida, hein."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Ela está sorrindo. Os dedos batem na prancheta. — A nuca esquenta. Desvio o olhar.*"
+        "text": "*Ela tá sorrindo. Os dedos batucam na prancheta. — A nuca esquenta. Desvio o olho.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
-        "text": "Você foi na biblioteca no almoço? Com a Yuna?"
+        "text": "Tu foi na biblioteca no almoço? Com a Yuna?"
     },
     "after1_jealousy_yuna_2": {
         "name": "Dain",
-        "text": "...Ela normalmente não anda com ninguém."
+        "text": "...Ela normalmente não chega em ninguém."
     },
     "after1_pre_miss": {
         "name": "{name}",
@@ -86,48 +86,48 @@
     },
     "after_miss_dain_2": {
         "name": "Dain",
-        "text": "Cuidado!!"
+        "text": "Sai da frente!!"
     },
     "after_miss_dain_3": {
         "name": "{name}",
-        "text": "*Desvio pro lado por reflexo. Dain passa voando por mim. Correndo e freando de repente.*"
+        "text": "*Desvio pro lado por reflexo. A Dain passa voando e freia de repente.*"
     },
     "after_miss_dain_4": {
         "name": "Dain",
-        "text": "Opa! Bom reflexo, hein?!"
+        "text": "Opa! Reflexo bom, hein?!"
     },
     "after_miss_dain_5": {
         "name": "{name}",
-        "text": "Por que você tá correndo feito louca no corredor?"
+        "text": "Por que você tá correndo que nem louca no corredor?"
     },
     "after_miss_dain_6": {
         "name": "Dain",
-        "text": "Tô atrasada! Tenho que ir pro ginásio! — A gente se vê amanhã, transferido!"
+        "text": "Tô atrasada! Tenho que ir pro ginásio! — Te vejo amanhã, transferido!"
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Ela acena e sai correndo. — Na hora que freou, segurou o joelho direito de leve. Meio segundo. Soltou na hora, mas eu vi.*"
+        "text": "*Acena e sai correndo. — Na hora que freou, levou a mão ao joelho direito por um segundo. Meio segundo. Tirou a mão na hora, mas eu vi.*"
     },
     "after_miss_dain_7": {
         "name": "{name}",
-        "text": "*Ela acena e sai correndo. Um furacão de pessoa. O nome que a professora chamou — Dain. E já estamos nos tratando sem cerimônia.*"
+        "text": "*Acena e sai correndo. Um furacão de pessoa. O nome que a professora chamou — Dain. E já tá me tratando como se fôssemos amigos de anos.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Passando pela biblioteca quando noto uma garota de olhos vermelhos andando enquanto lê. As tatuagens nos braços chamam atenção — mas o jeito que segura o livro é surpreendentemente sereno.*"
+        "text": "*Passo na frente da biblioteca e vejo uma garota de olhos vermelhos lendo enquanto anda. As tatuagens do braço chamam atenção — mas o jeito que segura o livro é surpreendentemente sereno.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
-        "text": "Com licença, isso aqui..."
+        "text": "Ei, isso aqui..."
     },
     "after_miss_yuna_1_c": {
         "name": "{name}",
-        "text": "*Pego do chão e entrego. Yuna para e pega o marcador de livro.*"
+        "text": "*Pego do chão e estendo. Yuna para e recebe o marcador.*"
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna fica olhando pro marcador por um bom tempo. Como se estivesse verificando se não amassou.*"
+        "text": "*Yuna fica olhando o marcador por um tempão. Parece checar se não amassou.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -135,47 +135,47 @@
     },
     "after_miss_yuna_3_b": {
         "name": "{name}",
-        "text": "*Tudo que ela mostra são as costas.*"
+        "text": "*E me mostra só as costas.*"
     },
     "after_miss_yuna_4": {
         "name": "{name}",
-        "text": "*E volta a andar. É só isso. Mas — tem algo nela que fica na memória.*"
+        "text": "*E volta a andar. Foi só isso. Mas — tem algo nela que fica.*"
     },
     "after_miss_seoyeon_1": {
         "name": "{name}",
-        "text": "*Indo embora quando encontro Seoyeon no corredor.*"
+        "text": "*Tô indo embora quando esbarro na Seoyeon no corredor.*"
     },
     "after_miss_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "Onde você foi mais cedo?"
+        "text": "Onde você se meteu hoje?"
     },
     "after_miss_seoyeon_3": {
         "name": "{name}",
-        "text": "Mais cedo?"
+        "text": "Como assim?"
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "No almoço. Deixei o terraço aberto. Me fazer esperar — ousado pra um transferido."
+        "text": "No almoço. Deixei o terraço aberto. Me fazer esperar — ousado, transferido."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
-        "text": "Você esperou?"
+        "text": "Você me esperou?"
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "...Só subi pra tomar um ar. A porta estava aberta."
+        "text": "...Só subi pra tomar ar. A porta que tava aberta."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Com certeza esperou. — Sinto um pouco de culpa. E uma vontade estranha de rir.*"
+        "text": "*Esperou mesmo. — Bate uma culpa. E uma vontade estranha de rir.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
-        "text": "Amanhã não foge."
+        "text": "Amanhã não tenta fugir."
     },
     "after_end": {
         "name": "{name}",
-        "text": "*Ela sai com um sorriso.*",
+        "text": "*Sai deixando um sorriso pra trás.*",
         "choices": [
             "Sala dos professores",
             "Enfermaria",
@@ -184,115 +184,115 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Indo embora quando meus pés param. O rosto da professora volta à mente — aquela que ficou observando a turma até o fim. Paro na frente da sala dos professores, bato na porta e abro.*"
+        "text": "*Tô indo embora quando os pés travam. O rosto da professora volta à minha cabeça — aquela que ficou observando a turma até o último segundo. Paro na frente da sala dos professores, bato e abro.*"
     },
     "after_hidden_homeroom_2": {
         "name": "Professora",
-        "text": "Ah, {name}? — Aconteceu alguma coisa?"
+        "text": "Ah, {name}? — Que foi?"
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*É a professora. O cardigã está ainda mais bagunçado do que antes. Parece que o dia foi uma batalha.*"
+        "text": "*A professora. O cardigã tá ainda mais torto do que antes. Parece que ela saiu de uma batalha de um dia inteiro.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "A senhora perguntou antes como eu estava me adaptando. É que... aquilo ficou na minha cabeça."
+        "text": "A senhora perguntou mais cedo se eu tava me adaptando. É que... aquilo ficou na minha cabeça."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Professora",
-        "text": "Ah. Era isso? — Fez bem em vir. Senta um pouco."
+        "text": "Ah. Era isso? — Fez bem em aparecer. Senta aí."
     },
     "after_hidden_homeroom_4": {
         "name": "Professora",
-        "text": "Você não fez nada de errado. — É aluno transferido. Como está a adaptação?"
+        "text": "Não fez nada de errado. — Transferido é assim mesmo. E aí, adaptação?"
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*Parece uma pergunta de rotina, mas os olhos dela estão genuinamente atentos.*",
+        "text": "*Parece pergunta automática, mas os olhos estão mesmo prestando atenção.*",
         "choices": [
-            "Tô bem. É uma escola melhor do que eu esperava.",
-            "Sinceramente? Tô meio atordoado."
+            "Tranquilo. A escola é melhor do que eu esperava.",
+            "Sinceramente? Tô meio perdido."
         ]
     },
     "after_homeroom_ok": {
         "name": "Professora",
-        "text": "É? — Se tiver algum problema, passa na sala dos professores. Pode usar a desculpa da papelada."
+        "text": "É? — Se bater alguma coisa, passa na sala dos professores. Sempre tem papelada de desculpa."
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*Ela empurra os papéis da mesa pro lado e me olha de novo. O clima diz que a conversa não vai acabar em uma frase. Não era só um cumprimento de fachada.*"
+        "text": "*Ela empurra os papéis pra um canto da mesa e me olha de novo. Dá pra ver que a conversa não vai acabar numa frase. Não era só papo de protocolo. A professora apoia a mão no encosto da cadeira e fica medindo as palavras.*"
     },
     "after_homeroom_ok_3": {
         "name": "Professora",
-        "text": "Melhor do que esperava, hein. — Ouvir isso me deixa aliviada, de um jeito estranho."
+        "text": "Melhor do que esperava, hein. — Ouvir isso me deixa aliviada, sem eu nem saber bem por quê."
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
-        "text": "*Ela fala como se fosse trabalho, mas aquilo soou um pouco mais pessoal.*"
+        "text": "*Fala como se fosse trabalho, mas essa frase saiu mais pessoal do que ela queria.*"
     },
     "after_homeroom_ok_5": {
         "name": "Professora",
-        "text": "Se for perfeito no primeiro dia, vai se esgotar depois. Relaxa um pouco. — Pode ir."
+        "text": "Se se esforçar demais no primeiro dia, desmorona depois. Finge que tá um pouco perdido. — Pode ir."
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
-        "text": "*Ela se vira de volta pra mesa. Dou um tchau breve e fecho a porta, mas a conversa fica mais tempo do que eu esperava. — Não era só obrigação.*"
+        "text": "*Ela volta a virar pra mesa. Dou um tchau curto e fecho a porta, mas a conversa fica ecoando mais do que eu esperava. — Não era só obrigação mesmo.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professora",
-        "text": "Atordoado é normal. Escola nova, primeiro dia — se estivesse tranquilo, aí sim seria estranho."
+        "text": "Perdido é normal. Escola nova, primeiro dia — se estivesse tranquilo, aí sim eu ia estranhar."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "A senhora já passou por isso? Ser a nova em algum lugar?"
+        "text": "A senhora já transferiu de escola?"
     },
     "after_homeroom_honest_3": {
         "name": "Professora",
-        "text": "...Algo parecido. Já fui jogada num lugar novo do nada."
+        "text": "...Algo parecido. Já fui atirada num lugar novo do nada."
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
-        "text": "*Algo parecido? — Será que ela fez outra coisa antes de ser professora?*"
+        "text": "*'Algo parecido.' — Então ela fez outra coisa antes de dar aula?*"
     },
     "after_homeroom_honest_4": {
         "name": "Professora",
-        "text": "Se não tiver dando conta, passa aqui. Te pago um café — ah, espera, você é aluno. Um suco, pelo menos."
+        "text": "Se não estiver dando conta, aparece aqui. Pago um café — ah, é aluno. Um suco, pelo menos."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "Professora pagando bebida pra aluno?"
+        "text": "A senhora vai pagar bebida pra aluno?"
     },
     "after_homeroom_honest_6": {
         "name": "Professora",
-        "text": "Chama interesse pedagógico."
+        "text": "Chama de interesse pedagógico."
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Interesse pedagógico'. — Então ela também é do tipo que disfarça o que sente.*"
+        "text": "*'Interesse pedagógico'. — Então ela também embrulha o que sente em papel bonito.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
         "text": "*Interesse pedagógico.*",
         "choices": [
-            "Se é preocupação, pode falar que é preocupação",
-            "Vou cobrar esse suco, professora"
+            "Se é preocupação, basta dizer que é preocupação",
+            "Vou cobrar o suco, professora"
         ]
     },
     "after_homeroom_honest_choice2a": {
         "name": "Professora",
-        "text": "...É, é preocupação. — Ficou tão óbvio assim?"
+        "text": "...É, é preocupação. — Foi tão óbvio assim?"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*Admitiu na lata.*"
+        "text": "*Admitiu na hora.*"
     },
     "after_homeroom_honest_choice2b": {
         "name": "Professora",
-        "text": "*Ri de leve.* Não cria expectativa. É suco de máquina."
+        "text": "*Ri de canto.* Não cria expectativa. É suco de máquina."
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*Ela riu. — Primeira vez que vejo essa pessoa rir de uma piada. A professora fecha o diário de classe e levanta. Vai até a porta, e aí me chama de volta, como se tivesse lembrado de algo.*"
+        "text": "*Ela riu. — Primeira vez que vejo essa mulher rir de uma piada. A professora fecha o diário de classe e levanta. Chega na porta e aí me chama de volta, como se tivesse acabado de lembrar de uma coisa.*"
     },
     "after_homeroom_honest_7": {
         "name": "Professora",
@@ -304,15 +304,15 @@
     },
     "after_homeroom_honest_9": {
         "name": "Professora",
-        "text": "Se não conseguir se adaptar, eu venho te buscar."
+        "text": "Se não se adaptar, eu vou aí te puxar."
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Mais cedo na aula, ela disse 'costumo gravar nomes de primeira'. — Repetir duas vezes significa algo.*"
+        "text": "*Mais cedo, na sala, ela tinha dito 'gravo nome na primeira'. — Repetir duas vezes significa alguma coisa.*"
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*A professora desaparece no final do corredor. O cabelo comprido balançando. — Fiquei olhando tempo demais.*"
+        "text": "*A professora some no fim do corredor. O cabelo comprido balançando. — Fiquei olhando tempo demais.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professora",
@@ -322,31 +322,31 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Andando pelo corredor quando — sinto uma leve tontura. Deve ser o nervosismo do primeiro dia. Vejo uma placa de 'Enfermaria' num canto do corredor. Pra ignorar, tô um pouco tonto demais.*"
+        "text": "*Ando pelo corredor e — bate uma tontura leve. Deve ser o nervosismo do primeiro dia. Vejo uma plaquinha de 'Enfermaria' num canto. Passar direto é muita tontura pra tão pouco orgulho.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Desde cedo não parei de conhecer gente. Descansar um pouco não seria nada demais.*",
+        "text": "*Desde cedo não parei um segundo de conhecer gente. Descansar uns minutos não tem nada demais.*",
         "choices": [
             "Entrar na enfermaria",
-            "Ir pra casa"
+            "Ir direto pra casa"
         ]
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Paro na frente da porta e respiro fundo. Só vou descansar um pouco. Coloco a mão na maçaneta. O metal frio toca a palma da mão.*"
+        "text": "*Paro na frente da porta e respiro fundo. Só vou descansar um pouco. Ponho a mão na maçaneta. O metal gelado encosta na palma.*"
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Abro a porta da enfermaria. Um cheiro suave de antisséptico. Cortinas brancas, cama branca, uma mesa pequena. Uma mulher está sentada na mesa. Jaleco branco, estetoscópio no pescoço. Cabelo curto lilás arrumado com cuidado, me observando por cima dos óculos com o queixo apoiado numa mão. Estava lendo algo — e levanta a cabeça.*"
+        "text": "*Abro a porta da enfermaria. Leve cheiro de antisséptico. Cortinas brancas, cama branca, uma mesinha. Uma mulher sentada na mesa. Jaleco branco, estetoscópio no pescoço. Cabelo curto lilás bem arrumado, me observando por cima dos óculos com o queixo na mão. Estava lendo alguma coisa — levanta a cabeça.*"
     },
     "after_nurse_enter_2": {
         "name": "Enfermeira",
-        "text": "Opa, um paciente."
+        "text": "Olha só, um paciente."
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*O tom é leve.*"
+        "text": "*O jeito de falar é leve.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
@@ -354,19 +354,19 @@
     },
     "after_nurse_enter_4": {
         "name": "Enfermeira",
-        "text": "Você é o transferido, né? Primeiro dia e já na enfermaria. Dia puxado, hein. Deixa eu ver."
+        "text": "É o transferido, né? Primeiro dia e já na enfermaria, tá puxado o dia. Deixa eu ver."
     },
     "after_nurse_enter_4_b": {
         "name": "{name}",
-        "text": "Como você sabia?"
+        "text": "Como a senhora sabe?"
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermeira",
-        "text": "Seu uniforme tá duro de tão novo. E cheira a roupa engomada. *Fungando* Ah, tem cheiro de flor de cerejeira também. Transferido romântico."
+        "text": "O uniforme tá duro de tão novo. E cheira a goma. *Funga* Ah, tem cheiro de cerejeira misturado também. Transferido romântico."
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Mal falei duas frases e ela já comanda a conversa. A enfermeira se levanta e se aproxima. Movimentos suaves. — Quando a mão dela encosta, fico tenso sem motivo.*"
+        "text": "*Mal abri a boca e já perdi o controle da conversa. A enfermeira levanta e se aproxima. Movimentos fluidos. — Quando a mão dela encosta, travo sem motivo.*"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -374,23 +374,23 @@
     },
     "after_nurse_enter_6": {
         "name": "Enfermeira",
-        "text": "Febre não tem... pode ser pressão baixa."
+        "text": "Febre não tem... deve ser pressão baixa."
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "Dá pra saber a pressão tocando na testa?"
+        "text": "Dá pra descobrir pressão tocando na testa?"
     },
     "after_nurse_enter_7": {
         "name": "Enfermeira",
-        "text": "Febre não tem, mas... precisa relaxar. Deita aqui. Dez minutos."
+        "text": "Febre não tem, mas... precisa relaxar um pouco. Deita aqui. Dez minutinhos."
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
-        "text": "*Deitei na cama. O teto é branco.*"
+        "text": "*Deito na cama. O teto é branco.*"
     },
     "after_nurse_enter_7_c": {
         "name": "Enfermeira",
-        "text": "*Puxando a cortina até a metade* Quer água? Ou algo quente?"
+        "text": "*Fecha a cortina até a metade* Quer água? Ou uma coisa quente?"
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
@@ -398,43 +398,43 @@
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*Deito na cama. Pela cortina, vejo as costas da enfermeira.*",
+        "text": "*Deito na cama. Do outro lado da cortina, vejo as costas da enfermeira.*",
         "choices": [
-            "A senhora parece mais cansada que eu",
-            "A enfermaria é mais aconchegante do que eu esperava"
+            "A senhora parece mais cansada do que eu",
+            "A enfermaria é aconchegante, até surpreende"
         ]
     },
     "after_nurse_enter_choice_a": {
         "name": "Enfermeira",
-        "text": "...Paciente observador, hein. Quem deveria estar preocupada sou eu."
+        "text": "...Paciente observador, hein. Quem tinha que estar preocupada aqui sou eu."
     },
     "after_nurse_enter_choice_b": {
         "name": "Enfermeira",
-        "text": "Né? Eu gosto daqui. — Silencioso, e tirando o cheiro de desinfetante, é perfeito."
+        "text": "Né? Eu adoro. — Silencioso, e tirando o cheiro de desinfetante, é perfeito."
     },
     "after_nurse_enter_8": {
         "name": "Enfermeira",
-        "text": "Não precisa ficar tão formal. Na enfermaria, pode relaxar. Todo mundo faz isso quando não tá bem."
+        "text": "Relaxa o 'senhora', tá? Na enfermaria pode ficar à vontade. Todo mundo fica assim quando tá mal."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
-        "text": "Mas a senhora é professora."
+        "text": "Mas a senhora é professora, né."
     },
     "after_nurse_enter_8_c": {
         "name": "Enfermeira",
-        "text": "*Entregando o copo d'água* Sou, sou. Mas aqui dentro, o que importa é você estar confortável."
+        "text": "*Me entrega o copo d'água* Sou, sim. Mas aqui dentro, o que importa é você estar à vontade."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Ela fala num tom brincalhão, mas a tensão diminui um pouco. Bebo a água e olho em volta da enfermaria. Num canto, um vaso de planta pequeno.*"
+        "text": "*Fala num tom brincalhão, mas a tensão cai um pouco. Tomo água e olho em volta. Num canto, um vasinho.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
-        "text": "Aquela planta é da senhora?"
+        "text": "Aquele vasinho é da senhora?"
     },
     "after_nurse_enter_9_c": {
         "name": "Enfermeira",
-        "text": "É, alecrim. — Cuido dela desde quando eu trabalhava no hospital."
+        "text": "É, alecrim. — Cuido dele desde a época em que eu trabalhava no hospital."
     },
     "after_nurse_enter_9_d": {
         "name": "{name}",
@@ -442,23 +442,23 @@
     },
     "after_nurse_enter_9_e": {
         "name": "{name}",
-        "text": "*A enfermeira para por um instante. E sorri.*"
+        "text": "*A enfermeira trava um instante. E sorri.*"
     },
     "after_nurse_enter_10": {
         "name": "Enfermeira",
-        "text": "Coisa do passado. Eu gosto da escola. Aqui os ferimentos são leves."
+        "text": "História antiga. Eu gosto da escola. Aqui os machucados são leves."
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Ferimentos leves'. — Tem alívio nessas palavras. Dez minutos passam. Levanto.*"
+        "text": "*'Só machucados leves.' — Tem alívio no jeito que ela falou. Passaram dez minutos. Levanto.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
-        "text": "Obrigado. Acho que tô melhor."
+        "text": "Obrigado. Acho que já tô melhor."
     },
     "after_nurse_enter_11": {
         "name": "Enfermeira",
-        "text": "Se sentir tontura de novo, vem aqui. A enfermaria tá sempre aberta. Só não fica aguentando e vem tarde demais. Isso me preocupa."
+        "text": "Se der tontura de novo, aparece. A enfermaria tá sempre aberta. Mas não vai segurando e chegando tarde. Isso me preocupa."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
@@ -466,35 +466,35 @@
     },
     "after_nurse_enter_11_c": {
         "name": "Enfermeira",
-        "text": "*Apertando os olhos* Se tá mal e fica segurando, claro que eu vou me preocupar. É pra isso que eu tô aqui."
+        "text": "*Aperta os olhos* Se tá mal e fica aguentando, claro que me preocupa. É exatamente pra isso que eu tô aqui."
     },
     "after_nurse_enter_11_d": {
         "name": "{name}",
-        "text": "*O tom é leve, mas o final tem peso.*"
+        "text": "*O tom é leve, mas o final tem firmeza.*"
     },
     "after_nurse_enter_11_e": {
         "name": "{name}",
-        "text": "*A enfermeira dá de ombros e sorri de novo.*"
+        "text": "*A enfermeira encolhe os ombros e volta a sorrir.*"
     },
     "after_nurse_enter_11_f": {
         "name": "Enfermeira",
-        "text": "Aquilo que você falou antes — obrigada por se preocupar. É a primeira vez que um paciente faz isso."
+        "text": "Aquilo que você disse antes — obrigada pela preocupação. Primeira vez que ouço isso de um paciente."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
-        "text": "*Ela parece um pouco desacostumada a receber preocupação de volta. — Parece alguém que sempre foi o lado que cuida.*"
+        "text": "*A expressão é de quem não tá acostumada a receber preocupação de volta. — Parece alguém que sempre foi o lado que cuida.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Enfermeira",
-        "text": "Você disse que era aconchegante, né? — Ouvir isso me deixou feliz, pra ser sincera."
+        "text": "Você disse que era aconchegante, né? — Confesso, isso me deixou feliz."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*Os olhos dela sorriem com a palavra 'aconchegante'.*"
+        "text": "*Os olhos dela sorriem só com a palavra 'aconchegante'.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
-        "text": "*Saindo da enfermaria quando — lá de trás.*"
+        "text": "*Tô saindo da enfermaria quando — vem uma voz de trás.*"
     },
     "after_nurse_enter_11_k": {
         "name": "Enfermeira",
@@ -502,7 +502,7 @@
     },
     "after_nurse_enter_11_l": {
         "name": "Enfermeira",
-        "text": "Qual é o seu nome?"
+        "text": "Como é o seu nome?"
     },
     "after_nurse_enter_11_m": {
         "name": "{name}",
@@ -510,11 +510,11 @@
     },
     "after_nurse_enter_12": {
         "name": "Enfermeira",
-        "text": "Na próxima vez que passar mal — ah, melhor que não tenha próxima vez."
+        "text": "Da próxima vez que se sentir mal — ah, melhor não ter próxima vez."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Dou um sorriso e aceno. Reparo no curativo no dorso da mão dela. — Uma enfermaria estranha. Do tipo bom de estranho.*"
+        "text": "*Dou um sorriso e aceno. Reparo no curativo no dorso da mão dela. — Uma enfermaria estranha. Mas do tipo bom.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",
@@ -524,6 +524,6 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Já andei bastante por hoje. Vou pra casa descansar.*"
+        "text": "*Já andei bastante por hoje. Melhor ir pra casa descansar.*"
     }
 }
