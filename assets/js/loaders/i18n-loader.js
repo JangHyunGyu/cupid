@@ -15,6 +15,25 @@
     const days = [1, 2, 3, 4, 5];
     const fetchPromises = [];
 
+    // 개별 파일 fetch + 재시도 (네트워크 순간 실패로 name 필드가 비어있는 씬 방지)
+    async function fetchJsonWithRetry(url, retries = 3) {
+        let lastErr;
+        for (let attempt = 0; attempt < retries; attempt++) {
+            try {
+                const res = await fetch(url, { cache: 'no-store' });
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return await res.json();
+            } catch (e) {
+                lastErr = e;
+                // 지수 백오프: 200ms, 400ms, 800ms
+                if (attempt < retries - 1) {
+                    await new Promise(r => setTimeout(r, 200 * Math.pow(2, attempt)));
+                }
+            }
+        }
+        throw lastErr;
+    }
+
     for (const locale of locales) {
         const basePath = 'assets/js/i18n/' + locale;
 
@@ -22,17 +41,18 @@
             for (let i = 0; i < slots.length; i++) {
                 const slot = slots[i];
                 const file = `day${day}_${i+1}_${slot}.json`;
-                
-                const promise = fetch(`${basePath}/${file}`)
-                    .then(res => {
-                        if (res.ok) return res.json();
-                        return {};
-                    })
+
+                const promise = fetchJsonWithRetry(`${basePath}/${file}`)
                     .then(data => {
                         Object.assign(localeData[locale], data);
                     })
-                    .catch(e => console.error('Failed to load', `${locale}/${file}`, e));
-                
+                    .catch(e => {
+                        // 3회 재시도 후에도 실패 → 에러를 상위로 전파 (초기화가 실패하면
+                        // 유저가 새로고침하도록 유도하는 것이, 빈 i18n 상태로 진행하는 것보다 안전)
+                        console.error('[i18n-loader] Failed to load after retries:', `${locale}/${file}`, e);
+                        throw e;
+                    });
+
                 fetchPromises.push(promise);
             }
         }
