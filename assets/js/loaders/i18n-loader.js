@@ -71,6 +71,10 @@
             Object.assign(window.I18N_DATA, localeData[lang] || {});
         }
     });
+    // 랜딩 페이지(index-*)에서는 initGame이 호출되기 전까지 _i18nReady를 await하는 곳이 없어
+    // fetch 실패 시 UnhandledRejection이 발생함. 핸들러를 붙여 차단하되,
+    // initGame 래퍼는 여전히 원본 프로미스를 await하므로 에러를 감지할 수 있음.
+    window._i18nReady.catch(() => {});
 
     // Patch initGame/initGameFromSave after all scripts have loaded (deferred).
     // By the time DOMContentLoaded fires, index.js has already defined window.initGame.
