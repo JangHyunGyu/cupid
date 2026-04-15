@@ -171,9 +171,10 @@
 
         .visual-h1 {
             font-size: clamp(2rem, 6vmin, 4rem);
-            margin-bottom: clamp(0.2rem, 1vh, 1rem);
+            margin: 0 0 clamp(0.2rem, 1vh, 1rem) 0;
             letter-spacing: clamp(2px, 0.5vw, 5px);
             color: #ff69b4;
+            font-weight: bold;
         }
 
         p {
@@ -683,7 +684,6 @@
 </head>
 
 <body>
-    <h1 class="sr-only">Cupid - Novela Visual Gratuita Online | Romance Escolar de 5 Días</h1>
     <noscript>
         <div style="padding: 20px; text-align: center; color: #fff; background: #1a1a2e;">
             <h1>Cupid - Novela Visual Gratuita Online | Romance Escolar de 5 Días</h1>
@@ -740,7 +740,7 @@
             <img src="assets/images/characters/yuna_normal.webp?v=2.3.4" alt="Yuna - heroína de Cupid" class="title-heroine pos-5" loading="eager">
         </div>
         <div class="content">
-            <div class="visual-h1" role="heading" aria-level="1">CUPID</div>
+            <h1 class="visual-h1">CUPID<span class="sr-only"> - Novela Visual Gratuita Online | Romance Escolar de 5 Días</span></h1>
             <p>Una historia de tu primer d&#237;a en una nueva escuela</p>
             <div class="value-props">
                 <span class="vp-badge">✓ Gratis</span>
