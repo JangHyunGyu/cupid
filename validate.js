@@ -1447,7 +1447,8 @@ if (galleryJsFiles.length > 0 && galleryHtmlFiles.length > 0) {
                     'chat-input', 'chat-send', 'expression-buttons', 'unlock-condition-popup',
                     'dialogue-box', 'upload-image-btn', 'gft-file-input', 'remove-image-btn',
                     'gft-char-img', 'image-preview-container', 'image-preview',
-                    'cg-modal-image', 'cg-modal-title', 'cg-modal-desc'];
+                    'cg-modal-image', 'cg-modal-title', 'cg-modal-desc',
+                    'action-toggle-btn'];
                 if (!dynamicGalleryIds.includes(jsId)) {
                     warnings.push('[UI_GALLERY_ID] ' + gh.name + ': 갤러리 JS가 getElementById("' + jsId + '") 호출하지만 해당 id 없음');
                 }
