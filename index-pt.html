@@ -747,7 +747,7 @@
                 <span class="vp-badge">✓ Gratuito</span>
                 <span class="vp-badge">✓ Sem cadastro</span>
                 <span class="vp-badge">✓ Sem instalação</span>
-                <span class="vp-badge">✓ Multi-finais IA</span>
+                <span class="vp-badge">✓ Múltiplos finais IA</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
                 <button id="start-btn" onclick="startGame()" class="start-btn" style="border:none; cursor:pointer; opacity: 0.5;" disabled>Novo Jogo</button>
@@ -806,7 +806,7 @@
                         <input type="text" id="player-name-input" placeholder="Digite seu nome (1-12 car.)" maxlength="12">
                         <button id="name-confirm-btn">Confirmar</button>
                     </div>
-                    <div id="name-input-guide">1-12 caracteres, apenas letras (sem números/especiais)</div>
+                    <div id="name-input-guide">1-12 caracteres, apenas letras (sem números ou símbolos)</div>
                 </div>
             </div>
 
@@ -877,7 +877,7 @@
         <div id="credits-layer">
             <div id="credits-content">
                 <div class="credits-title">CUPID</div>
-                <div class="credits-subtitle">Onde a flecha de Cupido pousa</div>
+                <div class="credits-subtitle">Onde pousa a flecha de Cupido</div>
                 <div class="credits-divider">─ ─ ─</div>
                 <div class="credits-section">
                     <div class="credits-role">Planejamento · Roteiro</div>
@@ -910,7 +910,7 @@
                 <div class="credits-section">
                     <div class="credits-role">Agradecimentos Especiais</div>
                     <div class="credits-name">Obrigado por jogar</div>
-                    <div class="credits-name">Somos sinceramente gratos a você.</div>
+                    <div class="credits-name">Do fundo do nosso coração.</div>
                 </div>
                 <div class="credits-spacer"></div>
                 <div class="credits-final">Cupid © 2026 ArcherLab</div>
@@ -994,14 +994,14 @@
                 <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option kakao">
                     <span class="contact-option-icon">💬</span>
                     <span class="contact-option-text">
-                        <span class="contact-option-label">Chat aberto KakaoTalk</span>
+                        <span class="contact-option-label">Chat aberto do KakaoTalk</span>
                         <span class="contact-option-desc">Converse conosco em tempo real</span>
                     </span>
                 </a>
                 <a href="mailto:hyungyu@archerlab.dev" class="contact-option email">
                     <span class="contact-option-icon">📧</span>
                     <span class="contact-option-text">
-                        <span class="contact-option-label">Enviar un e-mail</span>
+                        <span class="contact-option-label">Enviar um e-mail</span>
                         <span class="contact-option-desc">hyungyu@archerlab.dev</span>
                     </span>
                 </a>
@@ -1199,7 +1199,7 @@
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert('Sur iOS, appuyez sur [Partager] puis [Ajouter à l\'écran d\'accueil].');
+                alert('No iOS, toque em [Compartilhar] e depois em [Adicionar à Tela de Início].');
             } else {
                 alert('Já instalado ou navegador incompatível.');
             }
