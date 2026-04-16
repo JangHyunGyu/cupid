@@ -165,7 +165,7 @@
     },
     "wall_seo_pinky_5_b": {
         "name": "{name}",
-        "text": "*L'auriculaire du Jour 1. L'auriculaire du Jour 4. Le même doigt, un poids complètement différent.*"
+        "text": "*L'auriculaire du Jour 1. L'auriculaire du Jour 4. C'est le même doigt, et pourtant le poids n'a plus rien à voir.*"
     },
     "wall_seo_line_choice": {
         "name": "{name}",
@@ -609,7 +609,7 @@
     },
     "wall_yuna_9": {
         "name": "Yuna",
-        "text": "Un senior qui venait ici avec moi. — La seule personne dont j’étais proche."
+        "text": "Un ancien qui venait ici avec moi. — La seule personne dont j'aie jamais été proche."
     },
     "wall_yuna_9_b": {
         "name": "{name}",
@@ -677,11 +677,11 @@
     },
     "wall_yuna_choice": {
         "name": "{name}",
-        "text": "*Les yeux de Yuna brillent de larmes. — C’est la première fois que je l’entends parler autant.*",
+        "text": "*Les yeux de Yuna sont légèrement humides. — C'est la première fois que je l'entends parler autant.*",
         "choices": [
-            "Je ne suis pas ce senior. Je suis moi. Mais je resterai à tes côtés.",
-            "Laisse tomber ce senior. Celui qui est devant toi maintenant, c'est moi.",
-            "...Alors tu t’es rapprochée de moi à cause de lui ? Comme remplaçant ?"
+            "Je ne suis pas lui. Je suis moi. Mais je resterai à tes côtés.",
+            "Oublie-le. Celui qui est devant toi maintenant, c'est moi.",
+            "...Alors tu t'es rapprochée de moi à cause de lui ? Comme si j'étais un remplaçant ?"
         ]
     },
     "wall_yuna_moved_1": {
@@ -731,7 +731,7 @@
     },
     "wall_yuna_sub_1": {
         "name": "Yuna",
-        "text": "...Ouais. Le senior, c'est le senior. Et toi, c'est toi."
+        "text": "...Ouais. Lui, c'est lui. Et toi, c'est toi."
     },
     "wall_yuna_sub_2": {
         "name": "{name}",
