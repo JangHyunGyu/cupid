@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Aujourd'hui, fait inhabituel — les trois sont réunies à une seule table. {name} sort son bento. Seoyeon s'assoit naturellement à côté, Dain se laisse tomber en face, et Yuna se glisse depuis le coin en grignotant son propre pain.*"
+        "text": "*Pause déjeuner. Aujourd'hui, fait inhabituel, elles sont toutes les trois réunies à la même table. J'ouvre mon bento. Seoyeon s'assoit naturellement à côté de moi, Dain se laisse tomber en face, et Yuna se glisse depuis le coin en grignotant son propre pain.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
