@@ -13,15 +13,15 @@
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
-        "text": "What you saw today — keep it between us"
+        "text": "What you saw today stays between us."
     },
     "night3_faithful_msg_seo_2": {
         "name": "Seoyeon",
-        "text": "...But you can come again"
+        "text": "...But you can come back."
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*‘You can come again.’ — For her, that’s the same as saying ‘please come.’*"
+        "text": "*'You can come back.' For her, that's basically the same as saying, 'Come see me.'*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*I just hope you don't take choosing sides lightly.*"
+        "text": "*I just hope you don't treat that choice lightly.*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -105,7 +105,7 @@
     },
     "night3_nightmare_choice": {
         "name": "{name}",
-        "text": "*Whose hand will I take.*",
+        "text": "*Whose hand do I take?*",
         "choices": [
             "Take Seoyeon’s hand",
             "Take Yuna’s hand",
@@ -138,11 +138,11 @@
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*She's smiling. Smiling at me in the group photo. As if asking for help. I told myself I wouldn't look away this time. That at this school, I wouldn't stay silent.*"
+        "text": "*She's smiling at me in the group photo. Like she's asking for help. I told myself I wouldn't look away this time. That I wouldn't stay silent at this school.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— I won't run. This time, just one person. I had a dream. — I was walking beside someone. I couldn't see their face, but strangely I wasn't anxious.*"
+        "text": "*I'm not running anymore. This time, I'll choose one person. I had a dream. I was walking beside someone. I couldn't see their face, but somehow I wasn't anxious.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*This time is different. If I see something wrong, I'll speak up. If I know, I'll act. To one person, clearly — The gallery is empty. The space where Sojeong's photo was. The empty screen is sharper than the photo ever was.*"
+        "text": "*This time is different. If I see something wrong, I'll speak up. If I know, I'll act. I'll be clear about it, with one person. The gallery is empty now. The space where Sojeong's photo used to be feels sharper than the photo ever did.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*I just hope you don't take choosing sides lightly.*"
+        "text": "*I just hope you don't treat that choice lightly.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
