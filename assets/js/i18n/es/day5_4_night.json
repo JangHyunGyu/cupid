@@ -341,11 +341,11 @@
     },
     "true_dain_2": {
         "name": "{name}",
-        "text": "*Dain me toma la mano — me la acerca y la apoya sobre su pecho izquierdo. Sin decir nada.*"
+        "text": "*Dain toma la mano de {name} — la atrae hacia sí y se la apoya sobre el lado izquierdo del pecho. Sin decir nada.*"
     },
     "true_dain_2b": {
         "name": "{name}",
-        "text": "*Rápido. Una velocidad que no hace falta explicar.*"
+        "text": "*Todo va deprisa. Una velocidad que lo dice todo sin necesidad de palabras.*"
     },
     "true_dain_3": {
         "name": "{name}",
@@ -498,15 +498,15 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Me llega un mensaje de Seoyeon. 'He hecho una copia de la llave de la azotea para mañana. — Es un permiso, un permiso.' Con decir una invitación bastaba.*"
+        "text": "*Me llega un mensaje de Seoyeon. 'He hecho una copia de la llave de la azotea para mañana. — Es un permiso, un permiso.' Le habría bastado con decir que era una invitación.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
-        "text": "*Esta chica finge estar tranquila hasta el final — y te entrega lo que siente dándote una llave.*"
+        "text": "*Esta chica finge estar tranquila hasta el final — y me entrega lo que siente en forma de llave.*"
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Guardé la llave en el bolsillo. Mañana en la azotea — esta vez me toca a mí preparar la comida.*"
+        "text": "*Guardé la llave en el bolsillo. Mañana, en la azotea — esta vez me toca a mí llevar el almuerzo.*"
     },
     "good_5_cg_seo": {
         "name": "Sistema",
@@ -550,7 +550,7 @@
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
-        "text": "*En el reverso de la nota, en letra pequeña: '...El final leámoslo juntos.' La tinta lila claro está corrida.*"
+        "text": "*En el reverso de la nota, en letra pequeña: '...El final, leámoslo juntos.' La tinta lila clara está corrida.*"
     },
     "good_5_cg_yuna": {
         "name": "Sistema",
@@ -586,7 +586,7 @@
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Le respondí. 'Me apunto.' Sin exclamación. Porque mañana iré corriendo en persona.*"
+        "text": "*Le respondí. 'Me apunto.' Sin exclamación. Mañana ya iré corriendo yo en persona.*"
     },
     "good_5_cg_dain": {
         "name": "Sistema",

@@ -71,7 +71,7 @@
         "name": "{name}",
         "text": "*Estoy abrazando el manuscrito. Siete años de esta persona en mis manos.*",
         "choices": [
-            "Profe, en serio... seguro que está buenísimo. Mándelo a una editorial.",
+            "Profe, en serio... seguro que tiene que ser buenísimo. Mándelo a una editorial.",
             "...Dijo que le ha llevado siete años, ¿no? Pero — falta una línea en el último capítulo, ¿verdad?"
         ]
     },
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, es que — seguro es bueno. Lleva siete años con eso."
+        "text": "Ah, es que — seguro que es bueno. Lleva siete años escribiéndolo."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Profesora",
@@ -531,6 +531,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Vuelvo a abrazar el manuscrito. Ya no pesa como antes. — Cerrar siete años de inconcluso *con un elogio* no era lo que esta persona necesitaba. Lo que necesitaba era *alguien que aceptara lo inconcluso como inconcluso*. Ese es el apoyo de verdad.*"
+        "text": "*Vuelvo a abrazar el manuscrito. Ya no pesa como antes. — Lo que esta persona necesitaba no era *cerrar* siete años de algo inconcluso con un elogio. Necesitaba *a alguien que aceptara que siguiera inconcluso*. Eso sí es apoyar de verdad.*"
     }
 }

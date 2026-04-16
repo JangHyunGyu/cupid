@@ -1,11 +1,11 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Abril. Los pétalos de cerezo revolotean en el aire. El uniforme aún está rígido. Un olor tenue a hierba. Desde hoy soy alumno de este colegio. Un traslado. Mi primera vez.*"
+        "text": "*Abril. Los pétalos de cerezo revolotean en el aire. El uniforme aún está tieso. Hay un tenue olor a hierba. Desde hoy soy alumno de este colegio. Me he cambiado de escuela. Es la primera vez.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*El celular vibra en el bolsillo. El grupo del colegio anterior. Veo el nombre en la pantalla — y lo vuelvo a guardar. Aún no.*"
+        "text": "*El celular vibra en el bolsillo. Es el chat grupal del colegio anterior. Veo el nombre en la pantalla — y vuelvo a meterlo en el bolsillo. Todavía no.*"
     },
     "name_input_scene": {
         "name": "Sistema",
@@ -37,7 +37,7 @@
     },
     "seoyeon_meet_6": {
         "name": "{name}",
-        "text": "¿La presidenta en persona? Me siento importante."
+        "text": "¿La presidenta en persona? Es demasiado para mí."
     },
     "seoyeon_meet_7": {
         "name": "Seoyeon",

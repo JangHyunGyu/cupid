@@ -5,15 +5,15 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*'Oye, Sojeong está bien en su nueva escuela~' 'Menos mal jaja' — Guardo el celular en el bolsillo.*"
+        "text": "*'Oye, dicen que a Sojeong le va bien en su nuevo cole~' 'Menos mal jaja' — Vuelvo a guardar el celular en el bolsillo.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Menos mal, dicen. ¿De verdad? Si yo hubiera dicho una sola palabra entonces — Sojeong no habría tenido que dejar la escuela.*"
+        "text": "*...Dicen que menos mal. ¿Pero de verdad lo es? Si yo hubiera dicho una sola palabra entonces — Sojeong no habría tenido que irse del colegio.*"
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*En esta escuela — si lo veo, lo diré. No más fingir que no sé cuando sí sé. Esta vez.*"
+        "text": "*En esta escuela, si veo algo, lo voy a decir. No voy a fingir que no me doy cuenta. Esta vez no.*"
     },
     "after_kakao_end": {
         "name": "{name}",

@@ -280,10 +280,10 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Si no es ahora, ya no hay oportunidad.*",
+        "text": "*Si no es ahora, no habrá otra oportunidad.*",
         "choices": [
             "Esta vez me voy a confesar",
-            "...No me salió decir nada"
+            "...No fui capaz de decir nada"
         ]
     },
     "after5_confess_yes": {
