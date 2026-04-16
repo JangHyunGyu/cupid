@@ -77,7 +77,7 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*Ich habe ihr gesagt, was ich für sie empfinde. Seoyeon meinte, wir sollten es versuchen. Aber hinter ihrem 'Okay' stand immer noch ein Fragezeichen. — Etwa einen Monat später schrieb sie mir, wir sollten uns im Café vor der Schule treffen.*"
+        "text": "*Ich habe meine Gefühle gestanden. Seoyeon sagte, wir sollten es versuchen. Aber hinter ihrem 'Okay' hing ein Fragezeichen. — Etwa einen Monat später kam eine Nachricht: Wir sollten uns im Café vor der Schule treffen.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
@@ -85,7 +85,7 @@
     },
     "bitter_seo_2_b": {
         "name": "{name}",
-        "text": "*Seoyeon sitzt im Café. Hinter der Brille ist ihr Blick ganz still. Keine frühere Gelassenheit, kein Zittern. Nur die Augen von jemandem, der gekommen ist, um einen Schlussstrich zu ziehen.*"
+        "text": "*Seoyeon im Café. Ihr Blick hinter der Brille ist nüchtern. Keine Gelassenheit, kein Zittern. Nur — die Augen von jemandem, der zum Abschließen gekommen ist.*"
     },
     "bitter_seo_3": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "true_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeons Zimmer. Ihre Eltern sind unterwegs. Das Zimmer ist ordentlich — zu ordentlich. Ein Raum ohne jede Wärme.*"
+        "text": "*Seoyeons Zimmer. Ihre Eltern sind unterwegs. Das Zimmer ist ordentlich — zu ordentlich. Ein Zimmer ohne Emotion.*"
     },
     "true_seo_2": {
         "name": "{name}",
@@ -189,7 +189,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*Ich habe Yuna gesagt, was ich für sie empfinde. Yuna nickte. Aber dieses Nicken war weniger Gewissheit als ein Versuch. — Etwa einen Monat später lag ein Zettel in meinem Spind. 'Lass uns reden.'*"
+        "text": "*Ich habe meine Gefühle gestanden. Yuna nickte. Aber dieses Nicken war eher ein Versuch als eine Gewissheit. — Etwa einen Monat später lag ein Zettel in meinem Spind. 'Wir müssen reden.'*"
     },
     "bitter_yuna_2": {
         "name": "Yuna",
@@ -309,7 +309,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*Ich habe Dain gesagt, was ich für sie empfinde. Sie lächelte und sagte ja. Aber dieses Lächeln war von derselben Sorte wie immer. — Etwa einen Monat später schrieb sie mir, ich solle vor der Turnhalle auf sie warten.*"
+        "text": "*Ich habe meine Gefühle gestanden. Dain hat gelacht und gesagt, sie freue sich. Aber dieses Lachen war von der gleichen Sorte wie immer. — Etwa einen Monat später kam eine Nachricht, mich vor der Turnhalle zu treffen.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -1048,7 +1048,7 @@
     },
     "hidden_true_nurse_3": {
         "name": "Schulkrankenschwester",
-        "text": "Glückwunsch zum Abschluss. ...Ab heute musst du mich nicht mehr siezen."
+        "text": "Glückwunsch zum Abschluss. ...Ab heute kannst du mich duzen."
     },
     "hidden_true_nurse_3_b": {
         "name": "{name}",

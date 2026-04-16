@@ -9,7 +9,7 @@
     },
     "after2_msg_seo": {
         "name": "Seoyeon",
-        "text": "Kannst du ins Schülerratszimmer kommen? Uns fehlen Leute."
+        "text": "Kannst du zur Schülerratskammer kommen? Uns fehlen Hände."
     },
     "after2_msg_yuna": {
         "name": "{name}",
@@ -24,7 +24,7 @@
         "text": "*Wohin soll ich gehen?*",
         "choices": [
             "Zur Turnhalle (Dain)",
-            "Ins Schülerratszimmer (Seoyeon)",
+            "Zur Schülerratskammer (Seoyeon)",
             "Am Bibliotheksanbau vorbeischauen (Yuna)"
         ]
     },
@@ -150,7 +150,7 @@
     },
     "after2_seo_1": {
         "name": "{name}",
-        "text": "*Das Schülerratszimmer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
+        "text": "*Die Schülerratskammer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
     },
     "after2_seo_2": {
         "name": "Seoyeon",
@@ -254,7 +254,7 @@
     },
     "after2_seo_9": {
         "name": "{name}",
-        "text": "*Der Sonnenuntergang taucht das Schülerratszimmer in warmes Licht. Die Papierarbeit ist fast fertig.*"
+        "text": "*Der Sonnenuntergang taucht die Schülerratskammer in Licht. Die Papierarbeit ist fast fertig.*"
     },
     "after2_seo_choice2": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
-        "text": "...Ich mag diese Zeit. Wenn ich allein im Schülerratszimmer bin, muss ich keine Rolle spielen."
+        "text": "...Ich mag diese Zeit. Wenn ich allein in der Schülerratskammer bin, muss ich keine Rolle spielen."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
@@ -282,7 +282,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Außer hier.' — Ob auf dem Dach oder im Schülerratszimmer: Seoyeon braucht einen Ort, an dem sie die Maske ablegen kann.*"
+        "text": "*'Außer hier.' — Ob Dach oder Schülerratskammer, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "after2_seo_end": {
         "name": "{name}",
-        "text": "*Ich verlasse das Schülerratszimmer. Der Sonnenuntergang färbt den Flur.*"
+        "text": "*Ich verlasse die Schülerratskammer. Der Sonnenuntergang färbt den Flur.*"
     },
     "after2_seo_skinship_1": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "after2_seo_return": {
         "name": "{name}",
-        "text": "*Ich verließ das Schülerratszimmer und ging Richtung Schultor.*"
+        "text": "*Ich verließ den Schülerratsraum. Ging Richtung Schultor.*"
     },
     "after2_yuna_1": {
         "name": "{name}",
