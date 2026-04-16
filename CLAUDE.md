@@ -22,6 +22,14 @@
 - game.html(KO) 수정 시 game-en/es/ja/fr/de.html에도 동일하게 반영할 것
 - gallery.html(KO) 수정 시 gallery-en/es/ja/fr/de.html에도 동일하게 반영할 것
 
+## 강제 리로드 패턴 금지 (영구)
+
+- `CURRENT_VERSION` 상수를 HTML에 박고 `fetch('version.json')` 결과와 비교해 `window.location.reload(true)`를 호출하는 패턴 **절대 재도입 금지**
+- 두 번 재발한 사고: 2026-04-08 (8391e62 롤백), 2026-04-14 (bc7b165) — 4/15~4/16 GA4 engagement가 16분 → 13초로 폭락, 유저가 게임 시작도 못 하는 상태로 이틀간 라이브됨
+- 2026-04-16 전면 제거 완료: `1bae5ab` (index-*.html 7개), `491d972` (game-*.html 7개 + version.json 삭제)
+- 캐시 무효화는 기존 수단으로 충분: `?v=ASSET_VERSION` 쿼리스트링 / `<meta http-equiv="Cache-Control" content="no-cache">` / SW `updateViaCache: 'none'`
+- 설계 결함: CURRENT_VERSION이 HTML에 박혀있어 reload해도 값이 안 바뀜 → 불일치 시 무한 루프 불가피
+
 ## 코드 패턴 규칙
 - `localStorage.getItem(...) || 기본값` 사용 금지 → `!== null ? parseFloat(...) : 기본값` 또는 `??` 사용
 - `soundManager.xxx()` 호출 시 반드시 `if (typeof soundManager !== 'undefined')` 또는 `if (window.soundManager)` 가드 사용
