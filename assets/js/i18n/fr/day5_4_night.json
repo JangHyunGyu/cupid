@@ -13,7 +13,7 @@
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*Cette fois, je dois aussi trancher ça.*",
+        "text": "*Cette fois, je dois même choisir cela.*",
         "choices": [
             "Aller vers la personne qui m'a remis le manuscrit",
             "Aller vers la personne qui a laissé sa réponse sur le dos de ma main"
@@ -398,7 +398,7 @@
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*La personne disparue n'est pas revenue. Son numéro est toujours introuvable, et la place au fond de la bibliothèque est toujours vide. — Mais maintenant, elle a quelqu'un à qui parler avec sa vraie voix, au lieu de petits mots.*"
+        "text": "*La personne disparue n'est pas revenue. Le numéro du senior est toujours introuvable, et la place au fond de la bibliothèque est toujours vide. — Mais maintenant, elle a quelqu'un à qui parler avec sa vraie voix, au lieu de petits mots.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
@@ -879,7 +879,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Professeure principale",
-        "text": "...Tiens. Tu ne m'as pas appelée « madame ». C'est une première."
+        "text": "...Ça. Tu n'as pas dit 'madame'. C'est la première fois."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -943,7 +943,7 @@
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*Une dernière fois. Puis l'habitude se défait. — Sept ans de « madame » s'achèvent, et le jour de l'appeler par son prénom est enfin arrivé.*"
+        "text": "*Une dernière fois. Puis l'habitude se brise. — Sept ans de « professeure » sont terminés, et le jour de l'appeler par son prénom est venu.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Professeure principale",
