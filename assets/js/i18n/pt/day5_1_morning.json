@@ -255,11 +255,11 @@
     },
     "hidden_homeroom_d5_choice_b_b": {
         "name": "{name}",
-        "text": "Posso escrever crítica?"
+        "text": "Posso escrever uma resenha?"
     },
     "hidden_homeroom_d5_choice_b_c": {
         "name": "Professora",
-        "text": "*Ri rapidinho, depois fica séria.* ...Se for uma boa crítica. Acho que consigo escrever mais um.*"
+        "text": "*Dá uma risadinha e logo fica séria.* ...Se for uma boa resenha, acho que consigo escrever mais uma."
     },
     "hidden_homeroom_d5_choice_b_d": {
         "name": "{name}",
@@ -507,7 +507,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*A frase-assinatura do Dia 1. — Lá era só apresentação de personagem. Agora é pra valer. A enfermeira tira um band-aid e cola nas costas da minha mão. Devagar. — Tem algo escrito pequenininho nele.*"
+        "text": "*A frase que marcou o Dia 1. — Naquela hora, era só apresentação de personagem. Agora é de verdade. A enfermeira pega um band-aid e cola no dorso da minha mão. Devagar. — Tem algo escrito bem pequeno nele.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",

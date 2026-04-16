@@ -7,9 +7,9 @@
 
 const fs = require('fs');
 const path = require('path');
+const langs = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
 
 function makeEntry(file, key, koData) {
-    const langs = ['en', 'ja', 'es', 'fr', 'de'];
     const entry = {
         _ko_ref: `assets/js/i18n/ko/${file}.json#${key}`,
         _ko_name: koData.name || '{name}',
@@ -68,7 +68,7 @@ for (const k of newDay3Keys) {
         added++;
     } else {
         day3_3[k]._ko_text_preview = ko3_3[k].text;
-        for (const l of ['en','ja','es','fr','de']) {
+        for (const l of langs) {
             if (day3_3[k][l]) day3_3[k][l]._reviewed = false;
         }
         updated++;
@@ -105,7 +105,7 @@ for (const k of modifiedDay3_3Keys) {
     if (day3_3[k] && ko3_3[k]) {
         day3_3[k]._ko_text_preview = ko3_3[k].text;
         if (ko3_3[k].choices) day3_3[k]._has_choices = true;
-        for (const l of ['en','ja','es','fr','de']) {
+        for (const l of langs) {
             if (day3_3[k][l]) {
                 day3_3[k][l]._reviewed = false;
                 day3_3[k][l]._issues = '한국어 본문 수정 — 재번역 필요';
@@ -126,7 +126,7 @@ const modifiedDay3_4Keys = [
 for (const k of modifiedDay3_4Keys) {
     if (day3_4 && day3_4[k] && ko3_4[k]) {
         day3_4[k]._ko_text_preview = ko3_4[k].text;
-        for (const l of ['en','ja','es','fr','de']) {
+        for (const l of langs) {
             if (day3_4[k][l]) {
                 day3_4[k][l]._reviewed = false;
                 day3_4[k][l]._issues = '한국어 본문 수정 — 재번역 필요';
@@ -150,7 +150,7 @@ const modifiedDay1Keys = ['after_kakao_1', 'after_kakao_3', 'after_kakao_5'];
 for (const k of modifiedDay1Keys) {
     if (day1_3 && day1_3[k] && ko1_3[k]) {
         day1_3[k]._ko_text_preview = ko1_3[k].text;
-        for (const l of ['en','ja','es','fr','de']) {
+        for (const l of langs) {
             if (day1_3[k][l]) {
                 day1_3[k][l]._reviewed = false;
                 day1_3[k][l]._issues = '소정이 백스토리 수정 — 재번역 필요';
@@ -178,7 +178,7 @@ const modifiedDay2Keys = [
 for (const k of modifiedDay2Keys) {
     if (day2_4 && day2_4[k] && ko2_4[k]) {
         day2_4[k]._ko_text_preview = ko2_4[k].text;
-        for (const l of ['en','ja','es','fr','de']) {
+        for (const l of langs) {
             if (day2_4[k][l]) {
                 day2_4[k][l]._reviewed = false;
                 day2_4[k][l]._issues = '소정이 백스토리 수정 — 재번역 필요';
@@ -213,7 +213,7 @@ for (const k of newDay5Keys) {
 // morning5_seo_note_1_ins (분기 추가됨)
 if (day5_1['morning5_seo_note_1_ins'] && ko5_1['morning5_seo_note_1_ins']) {
     day5_1['morning5_seo_note_1_ins']._ko_text_preview = ko5_1['morning5_seo_note_1_ins'].text;
-    for (const l of ['en','ja','es','fr','de']) {
+    for (const l of langs) {
         day5_1['morning5_seo_note_1_ins'][l]._reviewed = false;
         day5_1['morning5_seo_note_1_ins'][l]._issues = '분기 추가 — 재번역 필요';
     }
@@ -222,7 +222,7 @@ if (day5_1['morning5_seo_note_1_ins'] && ko5_1['morning5_seo_note_1_ins']) {
 // morning5_seo_note_1_ins3 (텍스트 통합)
 if (day5_1['morning5_seo_note_1_ins3'] && ko5_1['morning5_seo_note_1_ins3']) {
     day5_1['morning5_seo_note_1_ins3']._ko_text_preview = ko5_1['morning5_seo_note_1_ins3'].text;
-    for (const l of ['en','ja','es','fr','de']) {
+    for (const l of langs) {
         day5_1['morning5_seo_note_1_ins3'][l]._reviewed = false;
         day5_1['morning5_seo_note_1_ins3'][l]._issues = '텍스트 통합 — 재번역 필요';
     }
@@ -237,7 +237,7 @@ const modifiedDay5_4Keys = [
 for (const k of modifiedDay5_4Keys) {
     if (day5_4 && day5_4[k] && ko5_4[k]) {
         day5_4[k]._ko_text_preview = ko5_4[k].text;
-        for (const l of ['en','ja','es','fr','de']) {
+        for (const l of langs) {
             if (day5_4[k][l]) {
                 day5_4[k][l]._reviewed = false;
                 day5_4[k][l]._issues = '소정이 백스토리 수정 — 재번역 필요';

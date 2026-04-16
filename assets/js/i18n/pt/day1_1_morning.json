@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Abril. As pétalas de cerejeira caem no ar. O uniforme ainda está duro. Um leve cheiro de grama. A partir de hoje, sou aluno desta escola. Transferência. A primeira.*"
+        "text": "*Abril. As pétalas de cerejeira voam pelo ar. O uniforme ainda está duro. Há um cheiro suave de grama no ar. A partir de hoje, sou aluno desta escola. Transferido. É a primeira vez.*"
     },
     "start_3": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "{name}",
-        "text": "*Voz tranquila. Não é fria — só tem um tempero de calma.*"
+        "text": "*A voz é calma. Não é fria, só tem aquela segurança de quem nunca se apressa.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",

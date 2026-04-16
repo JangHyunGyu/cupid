@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Os compromissos bateram. Pra ser exato, fui eu que fiz eles baterem. Fugir só piora. Por quem eu começo pra tentar resolver?*",
+        "text": "*Os compromissos se cruzaram. Pra ser mais exato, fui eu que deixei isso acontecer. Fugir só piora tudo. Com quem eu falo primeiro pra tentar consertar?*",
         "choices": [
             "Ir até Seoyeon",
             "Ir até Yuna",
@@ -56,7 +56,7 @@
     },
     "after3_reject_for_seo_3c": {
         "name": "{name}",
-        "text": "*Ela apagou todos os rastros. Não foi um bilhete, deixado — foi uma linha traçada. Pra Yuna escrever tantas palavras assim, ela esperou muito tempo.*"
+        "text": "*Ela apagou todos os rastros. Não deixou um bilhete — traçou uma linha. Pra Yuna escrever tanto assim, é porque ficou esperando por muito tempo.*"
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",

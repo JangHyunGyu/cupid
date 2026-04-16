@@ -289,7 +289,7 @@
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
-        "text": "*Fica um tempão em silêncio.* ...Obrigada. Mas acho que não dá pra fingir que uma frase resolve, só com isso.*"
+        "text": "*Ela fica em silêncio por um bom tempo.* ...Obrigada. Mas acho que agora eu não devia fingir que está tudo bem só por causa dessa frase."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
@@ -343,7 +343,7 @@
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
-        "text": "*Dobra o bilhete na mão.* ...Eu li. Mas ainda não consigo decidir o final.*"
+        "text": "*Ela dobra o bilhete e o aperta na mão.* ...Eu li. Mas ainda não consigo decidir o final."
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
