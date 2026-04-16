@@ -9,11 +9,11 @@
     },
     "name_input_scene": {
         "name": "System",
-        "text": "Hey, Neuer — wie heißt du?"
+        "text": "Transferschüler, wie heißt du?"
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Ich stehe vor einem fremden Schultor. Eine ziemlich große Schule. Schüler ziehen in kleinen Gruppen an mir vorbei. Nur meine Uniform ist noch kreideweiß und steif. Vor dem Tor steht ein Mädchen. Sie streicht sich ihr langes schwarzes Haar lässig zurück — hinter der Brille bewegt sie sich völlig entspannt. Keine Spur von Eile.*"
+        "text": "*Ich stehe vor einem fremden Schultor. Eine ziemlich große Schule. Schüler ziehen in kleinen Gruppen an mir vorbei. Nur meine Uniform ist noch kreideweiß und steif. Vor dem Tor steht ein Mädchen. Sie streicht sich ihr langes schwarzes Haar lässig zurück. Hinter der Brille liegt etwas Gelassenes in ihrem Blick. Keine Spur von Eile.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -29,7 +29,7 @@
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Bin die Schülersprecherin. Neue einzuweisen ist mein Ressort."
+        "text": "Ich bin die Schülersprecherin. Neue Schüler herumzuführen gehört zu meinen Aufgaben."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",

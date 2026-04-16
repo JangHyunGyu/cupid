@@ -33,7 +33,7 @@
         "name": "{name}",
         "text": "*Wohin soll ich gehen.*",
         "choices": [
-            "Zum Schülerratszimmer",
+            "Ins Schülerratszimmer",
             "Zur Bibliothek",
             "Zur Turnhalle"
         ]
@@ -104,7 +104,7 @@
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*Ich öffnete die Tür zum Schülerratsraum. — Seoyeon liegt zusammengesackt auf dem Schreibtisch. Sehe ich zum ersten Mal. Die perfekte Schülersprecherin — ungeschützt auf dem Tisch.*"
+        "text": "*Ich öffnete die Tür zum Schülerratszimmer. — Seoyeon liegt über den Schreibtisch gebeugt. So habe ich sie noch nie gesehen. Die perfekte Schülersprecherin — völlig wehrlos.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -559,7 +559,7 @@
     },
     "after3_seo_pity_trap_1": {
         "name": "{name}",
-        "text": "*Seoyeon hebt langsam den Kopf. Ihr Gesicht ist — exakt null. Weder kalt noch traurig. Das ist schlimmer.*"
+        "text": "*Seoyeon hebt langsam den Kopf. Ihre Miene ist völlig leer. Weder kalt noch traurig. Das ist noch unheimlicher.*"
     },
     "after3_seo_pity_trap_2": {
         "name": "Seoyeon",
@@ -595,7 +595,7 @@
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
-        "text": "*Ich schloss die Tür des Schülerratsraums hinter mir. Der Flur war leer. — Ich wollte sie trösten. Aufrichtig. Aber für Seoyeon war 'jeder' kein Trost, sondern eine Degradierung. Ich habe sieben Jahre ihrer Arbeit auf ein einziges Wort eingedampft.*"
+        "text": "*Ich schloss die Tür des Schülerratszimmers hinter mir. Der Flur war leer. — Ich wollte sie trösten. Aufrichtig. Aber für Seoyeon war 'jeder' kein Trost, sondern eine Degradierung. Ich habe sieben Jahre ihrer Arbeit auf ein einziges Wort eingedampft.*"
     },
     "after3_seo_correct_1": {
         "name": "{name}",
@@ -639,7 +639,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "Das mit dem Stift aufheben. — Komm ab und zu wieder welche aufheben."
+        "text": "Das mit dem Stiftaufheben. — Komm ruhig öfter mal zum Stiftaufheben vorbei."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
