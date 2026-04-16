@@ -742,7 +742,8 @@ class GameEngine {
         // 📌 입력값 가져와서 앞뒤 공백 제거
         const name = this.uiManager.playerNameInput.value.trim();
 
-        // 📌 이름 유효성 검사 (한글 1~6자 또는 영문 1~12자)
+        // 📌 이름 유효성 검사 — 페이지 언어에 맞는 문자셋 허용
+        //    (이전엔 한글/영문만 허용해서 ja/zh/악센트 이름 전원 거부 → 프리토킹 진입 차단)
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const hasKorean = /[가-힣]/.test(name);
         const hasJamo = /[ㄱ-ㅎㅏ-ㅣ]/.test(name);
@@ -751,17 +752,30 @@ class GameEngine {
 
         let msg = '';
 
-        if (hasMixed) {
+        if (hasMixed && lang === 'ko') {
             // 한영 혼합 입력
             msg = { es: "Por favor, usa solo coreano o solo inglés. No se permite mezclar.", ja: "韓国語のみ、または英語のみで入力してください。混合は不可です。", en: "Please use only Korean or only English. Mixing is not allowed.", fr: "Veuillez utiliser uniquement le coréen ou uniquement l'anglais. Le mélange n'est pas autorisé.", de: "Bitte verwende nur Koreanisch oder nur Englisch. Mischen ist nicht erlaubt.", pt: "Use apenas coreano ou apenas inglês. Não é permitido misturar." }[lang] || "한글과 영문을 섞어서 사용할 수 없습니다.";
         } else if (hasJamo) {
             // 한글 자모만 입력 (ㄱ, ㅏ 등)
             msg = { es: "Por favor, ingresa caracteres coreanos completos (ej: 가, no ㄱ).", ja: "完成した韓国語を入力してください。（例：ㄱ → 가）", en: "Please enter complete Korean characters (e.g., 가, not ㄱ).", fr: "Veuillez entrer des caractères coréens complets (ex : 가, pas ㄱ).", de: "Bitte gib vollständige koreanische Zeichen ein (z.B. 가, nicht ㄱ).", pt: "Insira caracteres coreanos completos (ex.: 가, não ㄱ)." }[lang] || "완성된 한글을 입력해주세요. (예: ㄱ → 가)";
-        } else {
-            // 일반 유효성 검사
+        } else if (lang === 'ko') {
+            // KO 페이지: 한글 1-6자 또는 영문 1-12자
             const nameRegex = hasKorean ? /^[가-힣]{1,6}$/ : /^[a-zA-Z]{1,12}$/;
             if (!nameRegex.test(name)) {
-                msg = { es: "Por favor, ingresa un nombre: 1-12 letras en inglés o 1-6 caracteres coreanos.", ja: "名前を入力してください：英字1〜12文字、または韓国語1〜6文字。", en: "Please enter a name: 1-12 English letters or 1-6 Korean characters.", fr: "Veuillez entrer un nom : 1-12 lettres anglaises ou 1-6 caractères coréens.", de: "Bitte gib einen Namen ein: 1-12 englische Buchstaben oder 1-6 koreanische Zeichen.", pt: "Insira um nome: 1-12 letras em inglês ou 1-6 caracteres coreanos." }[lang] || "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
+                msg = "이름은 한글 1~6자 또는 영문 1~12자로 입력해주세요.";
+            }
+        } else if (lang === 'ja') {
+            // JA 페이지: 히라가나/카타카나/한자 1-8자 또는 영문 1-12자
+            const jaRegex = /^[\u3040-\u309F\u30A0-\u30FFー\u4E00-\u9FFF]{1,8}$/;
+            const enRegex = /^[a-zA-Z]{1,12}$/;
+            if (!jaRegex.test(name) && !enRegex.test(name)) {
+                msg = "名前は日本語(ひらがな/カタカナ/漢字)1〜8文字、または英字1〜12文字で入力してください。";
+            }
+        } else {
+            // en/es/fr/de/pt 페이지: Latin + 악센트 1-12자
+            const latinRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿĀ-ſ]{1,12}$/;
+            if (!latinRegex.test(name)) {
+                msg = { en: "Please enter 1-12 letters (accents allowed).", es: "Ingresa 1-12 letras (se permiten acentos).", fr: "Veuillez entrer 1-12 lettres (accents autorisés).", de: "Bitte gib 1-12 Buchstaben ein (Umlaute erlaubt).", pt: "Insira 1-12 letras (acentos permitidos)." }[lang] || "Please enter 1-12 letters.";
             }
         }
 
