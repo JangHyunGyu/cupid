@@ -6,14 +6,14 @@
     "ending_hidden_commit_check": {},
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*O que sobrou no final não é a voz de uma pessoa só. O envelope da sala de aula e o band-aid nas costas da minha mão voltam juntos.*"
+        "text": "*No fim, não é a voz de uma pessoa só que ficou. O envelope que recebi na sala e o band-aid no dorso da minha mão voltam juntos à cabeça.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
         "text": "*Dessa vez, tenho que decidir até isso.*",
         "choices": [
             "Vou até quem me entregou o manuscrito",
-            "Vou até quem deixou a resposta nas costas da minha mão"
+            "Vou até quem deixou a resposta no dorso da minha mão"
         ]
     },
     "hidden_perfect_homeroom_check": {},
@@ -352,7 +352,7 @@
     },
     "hidden_true_nurse_7_c": {
         "name": "{name}",
-        "text": "*A enfermeira estende a mão e toca o band-aid nas costas da minha mão. O mesmo que ela colou de manhã.*"
+        "text": "*A enfermeira estende a mão e toca o band-aid no dorso da minha mão. O mesmo que ela colou de manhã.*"
     },
     "hidden_true_nurse_7_d": {
         "name": "{name}",

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const LANGS = ['en', 'ja', 'es', 'fr', 'de'];
+const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
 const BASE_DIR = path.join(__dirname, 'assets', 'js', 'i18n');
 const FILES = [
     'day1_1_morning', 'day1_2_lunch', 'day1_3_afterschool', 'day1_4_night',
@@ -52,14 +52,14 @@ function checkQuotes(ko_text, lang_text, lang) {
 
 // Known character name maps
 const NAME_MAP = {
-    '서연': { en: 'Seoyeon', ja: 'ソヨン', es: 'Seoyeon', fr: 'Seoyeon', de: 'Seoyeon' },
-    '다인': { en: 'Dain', ja: 'ダイン', es: 'Dain', fr: 'Dain', de: 'Dain' },
-    '유나': { en: 'Yuna', ja: 'ユナ', es: 'Yuna', fr: 'Yuna', de: 'Yuna' },
-    '담임선생님': { en: 'Homeroom Teacher', ja: '担任先生', es: 'Profesora', fr: 'Professeure principale', de: 'Klassenlehrerin' },
-    '보건선생님': { en: 'School Nurse', ja: '保健先生', es: 'Enfermera', fr: 'Infirmière', de: 'Schulkrankenschwester' },
-    '나': { en: 'Me', ja: '僕', es: 'Yo', fr: 'Moi', de: 'Ich' },
-    '시스템': { en: 'System', ja: 'システム', es: 'Sistema', fr: 'Système', de: 'System' },
-    '{name}': { en: '{name}', ja: '{name}', es: '{name}', fr: '{name}', de: '{name}' },
+    '서연': { en: 'Seoyeon', ja: 'ソヨン', es: 'Seoyeon', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon' },
+    '다인': { en: 'Dain', ja: 'ダイン', es: 'Dain', fr: 'Dain', de: 'Dain', pt: 'Dain' },
+    '유나': { en: 'Yuna', ja: 'ユナ', es: 'Yuna', fr: 'Yuna', de: 'Yuna', pt: 'Yuna' },
+    '담임선생님': { en: 'Homeroom Teacher', ja: '担任先生', es: 'Profesora', fr: 'Professeure principale', de: 'Klassenlehrerin', pt: 'Professora' },
+    '보건선생님': { en: 'School Nurse', ja: '保健先生', es: 'Enfermera', fr: 'Infirmière', de: 'Schulkrankenschwester', pt: 'Enfermeira' },
+    '나': { en: 'Me', ja: '僕', es: 'Yo', fr: 'Moi', de: 'Ich', pt: 'Eu' },
+    '시스템': { en: 'System', ja: 'システム', es: 'Sistema', fr: 'Système', de: 'System', pt: 'Sistema' },
+    '{name}': { en: '{name}', ja: '{name}', es: '{name}', fr: '{name}', de: '{name}', pt: '{name}' },
 };
 
 let totalNodes = 0;
