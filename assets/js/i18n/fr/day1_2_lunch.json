@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Le couloir est bondé d'élèves. Trois signaux me parviennent de trois directions en même temps.*"
+        "text": "*Pause déjeuner. Le couloir est bondé d'élèves. Trois voix m'appellent en même temps, chacune depuis un coin différent.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Elle esquive les questions avec habileté. On mange un moment en silence. La brise est agréable. La vue de l'école depuis le toit est — plus large que je ne pensais.*"
+        "text": "*Elle esquive les questions avec une aisance déconcertante. On mange un moment en silence. La brise est agréable. Vu d'ici, le lycée paraît plus vaste que je ne l'aurais cru.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
