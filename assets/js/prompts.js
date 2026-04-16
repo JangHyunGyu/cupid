@@ -909,10 +909,13 @@ window.buildSystemPrompt = buildSystemPrompt;
  * AI 응답 실패 시 사용할 캐릭터별 기본 대답을 반환합니다.
  */
 function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerName) {
-    // Check for French language
+    // 언어 감지: document.documentElement.lang 기준
     const currentLang = (typeof document !== 'undefined' && document.documentElement && document.documentElement.lang) || '';
     const isFr = currentLang === 'fr';
     const isDe = currentLang === 'de';
+    const isEs = currentLang === 'es';
+    const isJa = currentLang === 'ja';
+    const isPt = currentLang === 'pt';
 
     if (isDe) {
         if (charKey === "Seoyeon") {
