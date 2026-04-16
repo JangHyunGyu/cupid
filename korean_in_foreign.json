@@ -2,350 +2,350 @@
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 616",
+    "node": "line 595",
     "field": "html",
     "value": "/* 5명 배치: 왼쪽(담임-서연-유나) / 오른쪽(다인-보건실) — 가운데 버튼 영역 비움 */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 617",
+    "node": "line 596",
     "field": "html",
     "value": "/* 키 설정: 담임(성인) 서연(6.5등신) 유나(센터) 다인(6등신) 보건실(성인) */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 618",
+    "node": "line 597",
     "field": "html",
     "value": "/* 다인 - 담임 - 서연(센터) - 보건실 - 유나 */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 649",
+    "node": "line 628",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2, 왼쪽 뒤), 보건실(pos-4, 오른쪽 뒤) */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 652",
+    "node": "line 631",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3, 센터) - 유나(pos-5) */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 662",
+    "node": "line 641",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2), 보건실(pos-4) */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 665",
+    "node": "line 644",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3) - 유나(pos-5) */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 675",
+    "node": "line 654",
     "field": "html",
     "value": "/* PC 비율 유지하면서 축소: 66→56, 75→64, 72→62, 73→63, 70→60 */"
   },
   {
     "file": "index-en.html",
     "lang": "en",
-    "node": "line 702",
+    "node": "line 688",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "gallery-en.html",
     "lang": "en",
-    "node": "line 41",
+    "node": "line 45",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 616",
+    "node": "line 595",
     "field": "html",
     "value": "/* 5명 배치: 왼쪽(담임-서연-유나) / 오른쪽(다인-보건실) — 가운데 버튼 영역 비움 */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 617",
+    "node": "line 596",
     "field": "html",
     "value": "/* 키 설정: 담임(성인) 서연(6.5등신) 유나(센터) 다인(6등신) 보건실(성인) */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 618",
+    "node": "line 597",
     "field": "html",
     "value": "/* 다인 - 담임 - 서연(센터) - 보건실 - 유나 */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 649",
+    "node": "line 628",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2, 왼쪽 뒤), 보건실(pos-4, 오른쪽 뒤) */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 652",
+    "node": "line 631",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3, 센터) - 유나(pos-5) */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 662",
+    "node": "line 641",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2), 보건실(pos-4) */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 665",
+    "node": "line 644",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3) - 유나(pos-5) */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 675",
+    "node": "line 654",
     "field": "html",
     "value": "/* PC 비율 유지하면서 축소: 66→56, 75→64, 72→62, 73→63, 70→60 */"
   },
   {
     "file": "index-ja.html",
     "lang": "ja",
-    "node": "line 702",
+    "node": "line 688",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "gallery-ja.html",
     "lang": "ja",
-    "node": "line 41",
+    "node": "line 45",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 616",
+    "node": "line 595",
     "field": "html",
     "value": "/* 5명 배치: 왼쪽(담임-서연-유나) / 오른쪽(다인-보건실) — 가운데 버튼 영역 비움 */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 617",
+    "node": "line 596",
     "field": "html",
     "value": "/* 키 설정: 담임(성인) 서연(6.5등신) 유나(센터) 다인(6등신) 보건실(성인) */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 618",
+    "node": "line 597",
     "field": "html",
     "value": "/* 다인 - 담임 - 서연(센터) - 보건실 - 유나 */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 649",
+    "node": "line 628",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2, 왼쪽 뒤), 보건실(pos-4, 오른쪽 뒤) */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 652",
+    "node": "line 631",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3, 센터) - 유나(pos-5) */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 662",
+    "node": "line 641",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2), 보건실(pos-4) */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 665",
+    "node": "line 644",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3) - 유나(pos-5) */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 675",
+    "node": "line 654",
     "field": "html",
     "value": "/* PC 비율 유지하면서 축소: 66→56, 75→64, 72→62, 73→63, 70→60 */"
   },
   {
     "file": "index-es.html",
     "lang": "es",
-    "node": "line 702",
+    "node": "line 688",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "gallery-es.html",
     "lang": "es",
-    "node": "line 41",
+    "node": "line 45",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 616",
+    "node": "line 595",
     "field": "html",
     "value": "/* 5명 배치: 왼쪽(담임-서연-유나) / 오른쪽(다인-보건실) — 가운데 버튼 영역 비움 */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 617",
+    "node": "line 596",
     "field": "html",
     "value": "/* 키 설정: 담임(성인) 서연(6.5등신) 유나(센터) 다인(6등신) 보건실(성인) */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 618",
+    "node": "line 597",
     "field": "html",
     "value": "/* 다인 - 담임 - 서연(센터) - 보건실 - 유나 */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 649",
+    "node": "line 628",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2, 왼쪽 뒤), 보건실(pos-4, 오른쪽 뒤) */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 652",
+    "node": "line 631",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3, 센터) - 유나(pos-5) */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 662",
+    "node": "line 641",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2), 보건실(pos-4) */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 665",
+    "node": "line 644",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3) - 유나(pos-5) */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 675",
+    "node": "line 654",
     "field": "html",
     "value": "/* PC 비율 유지하면서 축소: 66→56, 75→64, 72→62, 73→63, 70→60 */"
   },
   {
     "file": "index-fr.html",
     "lang": "fr",
-    "node": "line 702",
+    "node": "line 688",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "gallery-fr.html",
     "lang": "fr",
-    "node": "line 41",
+    "node": "line 45",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 616",
+    "node": "line 595",
     "field": "html",
     "value": "/* 5명 배치: 왼쪽(담임-서연-유나) / 오른쪽(다인-보건실) — 가운데 버튼 영역 비움 */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 617",
+    "node": "line 596",
     "field": "html",
     "value": "/* 키 설정: 담임(성인) 서연(6.5등신) 유나(센터) 다인(6등신) 보건실(성인) */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 618",
+    "node": "line 597",
     "field": "html",
     "value": "/* 다인 - 담임 - 서연(센터) - 보건실 - 유나 */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 649",
+    "node": "line 628",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2, 왼쪽 뒤), 보건실(pos-4, 오른쪽 뒤) */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 652",
+    "node": "line 631",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3, 센터) - 유나(pos-5) */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 662",
+    "node": "line 641",
     "field": "html",
     "value": "/* 뒷줄: 담임(pos-2), 보건실(pos-4) */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 665",
+    "node": "line 644",
     "field": "html",
     "value": "/* 앞줄: 다인(pos-1) - 서연(pos-3) - 유나(pos-5) */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 675",
+    "node": "line 654",
     "field": "html",
     "value": "/* PC 비율 유지하면서 축소: 66→56, 75→64, 72→62, 73→63, 70→60 */"
   },
   {
     "file": "index-de.html",
     "lang": "de",
-    "node": "line 702",
+    "node": "line 688",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   },
   {
     "file": "gallery-de.html",
     "lang": "de",
-    "node": "line 41",
+    "node": "line 45",
     "field": "html",
     "value": "<span class=\"lang-flag\">🇰🇷</span> 한국어"
   }
