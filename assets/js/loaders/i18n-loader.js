@@ -5,7 +5,15 @@
 (async function() {
     window.I18N_DATA = {};
     const lang = window.GAME_LANG || 'ko';
-    const locales = lang === 'ko' ? ['ko'] : ['ko', lang];
+    // 폴백 언어는 페이지 언어에 따라 분기:
+    //   ko 페이지 → ko만 로드
+    //   en 페이지 → en만 로드
+    //   그 외(es/ja/fr/de/pt) → en을 베이스로 로드 후 해당 언어로 덮어쓰기
+    // (이전엔 ko를 베이스로 썼으나, 대상 언어에 키가 누락되면 한국어가 유출되는 문제가 있어 en으로 교체)
+    let locales;
+    if (lang === 'ko') locales = ['ko'];
+    else if (lang === 'en') locales = ['en'];
+    else locales = ['en', lang];
     const localeData = {};
     for (const locale of locales) localeData[locale] = {};
     
@@ -66,8 +74,11 @@
     // This avoids the race condition where window.initGame is not yet defined when this script runs.
     window._i18nReady = Promise.all(fetchPromises).then(() => {
         window.I18N_DATA = {};
-        Object.assign(window.I18N_DATA, localeData.ko || {});
-        if (lang !== 'ko') {
+        // 베이스 언어 먼저 적용: ko → ko, en → en, 그 외 → en (한국어 유출 방지)
+        const baseLocale = lang === 'ko' ? 'ko' : 'en';
+        Object.assign(window.I18N_DATA, localeData[baseLocale] || {});
+        // 대상 언어가 베이스와 다르면 덮어쓰기
+        if (lang !== baseLocale) {
             Object.assign(window.I18N_DATA, localeData[lang] || {});
         }
     });

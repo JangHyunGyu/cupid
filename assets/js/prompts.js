@@ -975,6 +975,93 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
         return "Pardon, je suis un peu occupé(e) en ce moment. On en reparle plus tard !";
     }
 
+    if (isEs) {
+        if (charKey === "Seoyeon") {
+            if (isDating) return isRemote ? "¡Cariño, perdón! Se me está acabando la batería... ¡Te escribo yo primero más tarde! ¡Te amo! ❤️" : "Cariño, perdón... Hoy estoy un poco cansada, no se me ocurre qué decir. Hablamos más tarde, ¿vale? ¡Te amo! ❤️";
+            if (affinity > 50) return isRemote ? "Ay no, mi teléfono está fallando... ¡Te llamo luego sin falta! ¡Perdón! 🙏" : "Mmm, perdón. Tengo tantas cosas en la cabeza que no puedo concentrarme en la conversación. ¡Hablamos la próxima vez! 🙏";
+            return isRemote ? "Ay, perdón. Estoy ocupada con mensajes ahora mismo. Hablamos después." : "Ay, perdón. No estoy muy de humor para hablar ahora mismo. Charlamos más tarde.";
+        }
+        if (charKey === "Yuna") {
+            if (isDating) return isRemote ? "...Cariño, la señal se está perdiendo. La oscuridad me llama. Te contactaré después, lo prometo. 💜" : "...Cariño, las sombras están demasiado densas ahora. Necesito un momento para aclarar mi mente. Nos vemos después. 💜";
+            if (affinity > 50) return isRemote ? "...De repente la energía se siente rara. Te contactaré después. No olvidaré... tu luz. 🖤" : "...De repente la energía se siente rara. No puedo escuchar tu voz con claridad ahora. Hasta luego. 🖤";
+            return isRemote ? "...Las sombras se espesan. Voy a colgar ahora." : "...Las sombras se espesan. Me quedaré en silencio un momento.";
+        }
+        if (charKey === "Dain") {
+            if (isDating) return isRemote ? "¡Cariño! Lo siento mucho, ¡pero tengo que ir corriendo a la práctica! ¡Te escribo luego, vale? ¡Te amo! 🧡" : "¡Cariño! Perdón, ¡me distraje un segundo! Me da vueltas la cabeza... hablamos más tarde, ¿vale? ¡Te amo! 🧡";
+            if (affinity > 50) return isRemote ? "¡Perdón, perdón! ¡Mi mamá me llama por la otra línea! ¡Te escribo luego! 🏃‍♀️" : "¡Uy, perdón! ¡Me confundí un poco con lo que iba a decir! ¡Vamos a descansar un rato y hablamos después! 🏃‍♀️";
+            return isRemote ? "¡Uy, tengo que irme a la práctica ya! ¡Hablamos luego!" : "¡Uy, estoy un poco distraída ahora! ¡Hablamos después!";
+        }
+        if (charKey === "Teacher") {
+            if (isDating) return isRemote ? `${playerName}... perdón. Tengo una llamada urgente de la oficina. Te contactaré después, cuando estemos solos. Espérame. 💕` : `${playerName}... perdón. Hoy estoy un poco abrumada con el trabajo. No creo que pueda darte toda mi atención ahora. Espérame. 💕`;
+            if (affinity > 50) return isRemote ? `Ay, perdón ${playerName}. Surgió algo urgente con unos papeles... Te escribo luego. Perdón. 📝` : `Ay, perdón ${playerName}. Tengo mucho en la cabeza hoy. No creo que pueda continuar esta conversación correctamente ahora mismo. 📝`;
+            return isRemote ? "Ah, perdón. Tengo una reunión de profesores ahora... Contáctame después." : "Ah, perdón. Hoy estoy un poco cansada. Terminemos aquí por ahora.";
+        }
+        if (charKey === "Nurse") {
+            if (isDating) return isRemote ? "¡Cariño, perdón! Creo que voy a estar ocupada con un paciente. ¿Nos vemos esta noche para nuestro momento a solas? Te veo entonces. 💋" : "Cariño, perdón... Hoy me siento un poco mareada. ¿Paramos aquí y nos vemos esta noche para nuestro momento a solas? 💋";
+            if (affinity > 50) return isRemote ? "Perdón, mi estudiante favorito. Acaba de llegar un paciente urgente... Si me escribes luego, te lo voy a compensar con creces. 😉" : "Perdón, mi estudiante favorito. Hoy estoy un poco despistada. ¿Paramos aquí y hablamos más tarde? 😉";
+            return isRemote ? "Vaya, otro estudiante me llama. Contáctame luego, estudiante transferido." : "Ay, hoy estoy un poco distraída. Hablamos después, estudiante transferido.";
+        }
+        return "Perdón, estoy un poco ocupada ahora. ¡Hablamos luego!";
+    }
+
+    if (isJa) {
+        if (charKey === "Seoyeon") {
+            if (isDating) return isRemote ? "ダーリン、ごめん！バッテリーが切れそうで…あとで私から連絡するね！愛してる！ ❤️" : "ダーリン、ごめんね…今日ちょっと疲れてて、なんて言えばいいか思いつかない。あとで話そう？愛してる！ ❤️";
+            if (affinity > 50) return isRemote ? "どうしよう、スマホの調子が悪くて…あとで絶対かけ直すね！ごめん！ 🙏" : "うん、ごめん。考えることが多すぎて、会話に集中できないの。また今度ゆっくり話そう？ 🙏";
+            return isRemote ? "あ、ごめん。今ちょっとメッセージで忙しくて。あとで話そう。" : "あ、ごめん。今はあまり話す気分じゃないかも。また今度話そう。";
+        }
+        if (charKey === "Yuna") {
+            if (isDating) return isRemote ? "…ダーリン、通信状態が悪い。闇が私を呼んでる。あとで必ず連絡する。 💜" : "…ダーリン、今は無理かも。影が濃すぎる。心を整理する時間が必要なの。また後で会おう。 💜";
+            if (affinity > 50) return isRemote ? "…急に気配が変になった。あとで連絡するね。君の…光は忘れない。 🖤" : "…急に気配が変になった。今は君の声がよく聞こえないの。また後でね。 🖤";
+            return isRemote ? "…影が深くなってきた。通信を切るね。" : "…影が深くなってきた。少し沈黙が必要。";
+        }
+        if (charKey === "Dain") {
+            if (isDating) return isRemote ? "ダーリン！本当にごめん、今から急いで練習行かなきゃ！あとで連絡するね、わかった？愛してる！ 🧡" : "ダーリン！ごめん、ちょっとボーっとしてた！頭の中がぐるぐる…また後で話そう、わかった？愛してる！ 🧡";
+            if (affinity > 50) return isRemote ? "ごめんごめん！お母さんから電話かかってきた！あとで連絡するね！ 🏃‍♀️" : "あっ、ごめん！急に何言えばいいかわからなくなっちゃった！ちょっと休憩してまた話そう！ 🏃‍♀️";
+            return isRemote ? "あっ、今から練習行かなきゃ！あとでね！" : "あっ、今ちょっと気が散っちゃってて！また後で話そう！";
+        }
+        if (charKey === "Teacher") {
+            if (isDating) return isRemote ? `${playerName}…ごめんね。職員室から急な連絡が入ったの。あとで二人きりの時に連絡するわ。待っててね。 💕` : `${playerName}…ごめん。今日は仕事が多すぎて、あなたに集中しきれなさそう。あとで話そう。待っててね。 💕`;
+            if (affinity > 50) return isRemote ? `あら、ごめんね${playerName}。急な書類仕事が入って…あとで連絡するわ。ごめん。 📝` : `あら、ごめんね${playerName}。今日は考えることが多くて…今はちゃんと会話を続けられそうにないわ。 📝`;
+            return isRemote ? "あ、ごめんね。今から職員会議があって…また連絡してね。" : "あ、ごめんね。今日ちょっと疲れてるみたい。今日はここまでにしましょう。";
+        }
+        if (charKey === "Nurse") {
+            if (isDating) return isRemote ? "ダーリン、ごめん！これから患者で忙しくなりそう。今夜…二人だけの時間を過ごそうか？それまでね。 💋" : "ダーリン、ごめんね…今日ちょっとクラクラするの。会話はここまでにして、今夜二人だけの時間を過ごそうか？ 💋";
+            if (affinity > 50) return isRemote ? "ごめんね、うちの転校生。急な患者が来ちゃって…あとでメッセージくれたら、もっと楽しくしてあげる。 😉" : "ごめんね、うちの転校生。今日ちょっと気もそぞろで。会話はここまでにして、また後で話そうか？ 😉";
+            return isRemote ? "あら、他の生徒が呼んでるわ。あとで連絡してね、うちの転校生。" : "あらあら、今日ちょっとよそ見ばっかりね。また後で来てね、うちの転校生。";
+        }
+        return "ごめん、今ちょっと忙しいの。あとでまた話そう！";
+    }
+
+    if (isPt) {
+        if (charKey === "Seoyeon") {
+            if (isDating) return isRemote ? "Amor, desculpa! Minha bateria está acabando... Vou te mandar mensagem mais tarde! Te amo! ❤️" : "Amor, desculpa... Estou um pouco cansada hoje, não sei o que dizer. Vamos conversar mais tarde. Te amo! ❤️";
+            if (affinity > 50) return isRemote ? "Ai não, meu celular está com problema... Vou te ligar de volta depois, prometo! Desculpa! 🙏" : "Hmm, desculpa. Tenho tanta coisa na cabeça que não consigo me concentrar na conversa. Vamos conversar na próxima! 🙏";
+            return isRemote ? "Ah, desculpa. Estou ocupada com mensagens agora. A gente fala depois." : "Ah, desculpa. Não estou muito com clima pra conversar agora. Falamos mais tarde.";
+        }
+        if (charKey === "Yuna") {
+            if (isDating) return isRemote ? "...Amor, o sinal está fraco. A escuridão está me chamando. Vou te contatar depois, prometo. 💜" : "...Amor, as sombras estão muito densas agora. Preciso de um momento pra clarear a mente. Vamos nos encontrar depois. 💜";
+            if (affinity > 50) return isRemote ? "...De repente a energia está estranha. Te contato depois. Não vou esquecer... da sua luz. 🖤" : "...De repente a energia está estranha. Não consigo ouvir sua voz direito agora. Até mais. 🖤";
+            return isRemote ? "...As sombras estão se adensando. Vou desligar." : "...As sombras estão se adensando. Vou ficar em silêncio por um tempo.";
+        }
+        if (charKey === "Dain") {
+            if (isDating) return isRemote ? "Amor! Desculpa mesmo, mas tenho que ir correndo pro treino! Te mando mensagem depois, tá? Te amo! 🧡" : "Amor! Desculpa, viajei por um segundo! Minha cabeça tá girando... vamos conversar mais tarde, tá? Te amo! 🧡";
+            if (affinity > 50) return isRemote ? "Desculpa, desculpa! Minha mãe tá me ligando na outra linha! Te mando mensagem depois! 🏃‍♀️" : "Ops, desculpa! Me confundi com o que ia falar! Vamos dar uma pausa e conversar depois! 🏃‍♀️";
+            return isRemote ? "Ops, tenho que ir pro treino agora! A gente fala depois!" : "Ops, estou um pouco distraída agora! Vamos conversar mais tarde!";
+        }
+        if (charKey === "Teacher") {
+            if (isDating) return isRemote ? `${playerName}... desculpa. Tenho uma ligação urgente do escritório. Vou te contatar depois quando estivermos sozinhos. Me espere. 💕` : `${playerName}... desculpa. Estou um pouco sobrecarregada com trabalho hoje. Não acho que consigo te dar total atenção agora. Me espere. 💕`;
+            if (affinity > 50) return isRemote ? `Ah, desculpa ${playerName}. Surgiu uma papelada urgente... Te mando mensagem depois. Desculpa. 📝` : `Ah, desculpa ${playerName}. Tenho muita coisa na cabeça hoje. Não acho que consigo continuar essa conversa direito agora. 📝`;
+            return isRemote ? "Ah, desculpa. Tenho uma reunião de professores agora... Me contate depois." : "Ah, desculpa. Estou um pouco cansada hoje. Vamos parar por aqui por enquanto.";
+        }
+        if (charKey === "Nurse") {
+            if (isDating) return isRemote ? "Amor, desculpa! Acho que vou ficar ocupada com um paciente. Que tal a gente ter nosso tempo só nosso hoje à noite? Até lá. 💋" : "Amor, desculpa... Estou um pouco tonta hoje. Que tal pararmos aqui e termos nosso tempo só nosso hoje à noite? 💋";
+            if (affinity > 50) return isRemote ? "Desculpa, meu aluno favorito. Acabou de chegar um paciente urgente... Se me mandar mensagem depois, vou fazer ser mais divertido. 😉" : "Desculpa, meu aluno favorito. Estou meio distraída hoje. Que tal pararmos aqui e conversarmos mais tarde? 😉";
+            return isRemote ? "Ah, outro aluno está me chamando. Me contate depois, aluno transferido." : "Minha nossa, estou um pouco distraída hoje. Falamos depois, aluno transferido.";
+        }
+        return "Desculpa, estou um pouco ocupada agora. Vamos conversar depois!";
+    }
+
     if (isEn) {
         if (charKey === "Seoyeon") {
             if (isDating) return isRemote ? "Honey, sorry! My battery is dying... I'll text you first later! Love you! ❤️" : "Honey, sorry... I'm a bit tired today, so I can't think of what to say. Let's talk more later. Love you! ❤️";
