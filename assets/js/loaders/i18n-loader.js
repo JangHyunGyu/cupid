@@ -50,29 +50,35 @@
                 const slot = slots[i];
                 const file = `day${day}_${i+1}_${slot}.json`;
 
+                // Promise.allSettled로 수집하므로 개별 rejection은 상위로 전파되지 않음
+                // (bingbot 등 크롤러가 Cloudflare에 차단당해 403 받을 때 unhandled rejection 발생하던 문제 방지)
                 const promise = fetchJsonWithRetry(`${basePath}/${file}`)
                     .then(data => {
                         Object.assign(localeData[locale], data);
-                    })
-                    .catch(e => {
-                        // 3회 재시도 후에도 실패 → 에러를 상위로 전파 (초기화가 실패하면
-                        // 유저가 새로고침하도록 유도하는 것이, 빈 i18n 상태로 진행하는 것보다 안전)
-                        console.error('[i18n-loader] Failed to load after retries:', `${locale}/${file}`, e);
-                        throw e;
+                        return { locale, file, ok: true };
                     });
 
                 fetchPromises.push(promise);
             }
         }
     }
-    
+
     // Load common strings or prompts if they exist (for future)
-    
+
     // We must await these fetches before GameEngine starts.
     // However, this script is loaded synchronously via document.write, while fetch is async.
     // Store the i18n ready promise globally so that initGame/initGameFromSave can await it.
     // This avoids the race condition where window.initGame is not yet defined when this script runs.
-    window._i18nReady = Promise.all(fetchPromises).then(() => {
+    window._i18nReady = Promise.allSettled(fetchPromises).then(results => {
+        const failures = results.filter(r => r.status === 'rejected');
+        if (failures.length > 0) {
+            failures.forEach(f => console.error('[i18n-loader] Failed after retries:', f.reason));
+            // 베이스 언어가 통째로 비면 초기화 실패로 간주 (빈 i18n 상태 방지)
+            const baseLocale = lang === 'ko' ? 'ko' : 'en';
+            if (Object.keys(localeData[baseLocale] || {}).length === 0) {
+                throw new Error(`i18n base locale '${baseLocale}' empty after ${failures.length} failures`);
+            }
+        }
         window.I18N_DATA = {};
         // 베이스 언어 먼저 적용: ko → ko, en → en, 그 외 → en (한국어 유출 방지)
         const baseLocale = lang === 'ko' ? 'ko' : 'en';
