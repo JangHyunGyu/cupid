@@ -580,84 +580,195 @@
             align-items: flex-end;
             pointer-events: none;
             overflow: hidden;
+            --title-heroine-max-height: min(68vh, 650px);
+            --title-heroine-max-width: min(18vw, 250px);
         }
 
         .title-heroine {
             position: absolute;
-            bottom: -5%;
-            height: 80%;
-            max-height: 650px;
+            bottom: var(--hero-bottom, -5%);
+            left: var(--hero-x, 50%);
+            height: var(--hero-height, 70%);
+            max-height: var(--title-heroine-max-height);
+            max-width: var(--title-heroine-max-width);
+            width: auto;
             object-fit: contain;
             filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5)) sepia(0.15) saturate(1.2) brightness(0.95);
-            transition: transform 0.3s ease;
-            opacity: 0.7;
+            transform: translateX(-50%);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: var(--hero-opacity, 0.7);
+            z-index: var(--hero-z, 1);
         }
 
-        /* 5명 배치: 왼쪽(담임-서연-유나) / 오른쪽(다인-보건실) — 가운데 버튼 영역 비움 */
-        /* 키 설정: 담임(성인) 서연(6.5등신) 유나(센터) 다인(6등신) 보건실(성인) */
-        /* 다인 - 담임 - 서연(센터) - 보건실 - 유나 */
-        .title-heroine.pos-1 { left: -3%; height: 66%; }
-        .title-heroine.pos-2 { left: 9%; height: 75%; opacity: 0.7; }
-        .title-heroine.pos-3 { left: 21%; height: 72%; transform: none; opacity: 0.85; }
-        .title-heroine.pos-4 { right: 14%; height: 73%; opacity: 0.65; }
-        .title-heroine.pos-5 { right: 1%; height: 70%; opacity: 0.72; }
+        .title-heroine.pos-1 { --hero-x: 9%; --hero-height: 64%; --hero-opacity: 0.78; }
+        .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 74%; --hero-opacity: 0.72; }
+        .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 71%; --hero-opacity: 0.88; --hero-z: 2; }
+        .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 72%; --hero-opacity: 0.66; }
+        .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 68%; --hero-opacity: 0.74; }
 
-        /* PC wide */
-        @media (min-width: 1400px) {
-            .title-heroine { max-height: 750px; }
-            .title-heroine.pos-1 { left: -1%; }
-            .title-heroine.pos-2 { left: 11%; }
-            .title-heroine.pos-3 { left: 23%; }
-            .title-heroine.pos-4 { right: 16%; }
-            .title-heroine.pos-5 { right: 3%; }
+        /* Large desktop */
+        @media (min-width: 1600px) {
+            .title-heroines {
+                --title-heroine-max-height: min(72vh, 760px);
+                --title-heroine-max-width: min(16vw, 290px);
+            }
+
+            .title-heroine.pos-1 { --hero-x: 10%; }
+            .title-heroine.pos-2 { --hero-x: 25%; }
+            .title-heroine.pos-3 { --hero-x: 40%; }
+            .title-heroine.pos-4 { --hero-x: 69%; }
+            .title-heroine.pos-5 { --hero-x: 85%; }
         }
 
-        /* Tablet landscape */
-        @media (max-width: 1024px) {
-            .title-heroine { max-height: 420px; }
-            .title-heroine.pos-1 { left: -4%; height: 66%; }
-            .title-heroine.pos-2 { left: 8%; height: 75%; }
-            .title-heroine.pos-3 { left: 20%; height: 72%; }
-            .title-heroine.pos-4 { right: 13%; height: 73%; }
-            .title-heroine.pos-5 { right: 0%; height: 70%; }
+        /* Laptop / compact desktop */
+        @media (min-width: 1101px) and (max-width: 1599px) {
+            .title-heroines {
+                --title-heroine-max-width: min(19vw, 250px);
+            }
         }
 
-        /* Tablet portrait */
-        @media (max-width: 768px) and (orientation: portrait) {
-            .title-heroines { height: 55%; }
-            .title-heroine { max-height: 350px; }
-            /* 뒷줄: 담임(pos-2, 왼쪽 뒤), 보건실(pos-4, 오른쪽 뒤) */
-            .title-heroine.pos-2 { left: -10%; height: 71%; opacity: 0.7; z-index: 0; }
-            .title-heroine.pos-4 { right: -10%; height: 69%; opacity: 0.7; z-index: 0; }
-            /* 앞줄: 다인(pos-1) - 서연(pos-3, 센터) - 유나(pos-5) */
-            .title-heroine.pos-1 { left: 5%; height: 62%; opacity: 0.7; z-index: 1; }
-            .title-heroine.pos-3 { height: 68%; opacity: 0.7; z-index: 1; }
-            .title-heroine.pos-5 { right: 5%; height: 66%; opacity: 0.7; z-index: 1; }
+        /* Tablet landscape and narrow laptop */
+        @media (min-width: 821px) and (max-width: 1100px) {
+            .title-heroines {
+                height: 67%;
+                --title-heroine-max-height: min(60vh, 460px);
+                --title-heroine-max-width: min(20vw, 200px);
+            }
+
+            .title-heroine.pos-1 { --hero-x: 8%; --hero-height: 62%; }
+            .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 71%; }
+            .title-heroine.pos-3 { --hero-x: 40%; --hero-height: 69%; }
+            .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 70%; }
+            .title-heroine.pos-5 { --hero-x: 83%; --hero-height: 66%; }
+        }
+
+        /* Tablet portrait (iPad portrait included) */
+        @media (min-width: 744px) and (max-width: 1024px) and (orientation: portrait) {
+            .title-heroines {
+                height: 58%;
+                --title-heroine-max-height: min(46vh, 430px);
+                --title-heroine-max-width: min(22vw, 170px);
+            }
+
+            .title-heroine {
+                bottom: var(--hero-bottom, -7%);
+            }
+
+            .title-heroine.pos-2 {
+                --hero-x: 11%;
+                --hero-height: 60%;
+                --hero-bottom: -12%;
+                --hero-opacity: 0.46;
+                --hero-z: 0;
+            }
+
+            .title-heroine.pos-4 {
+                --hero-x: 89%;
+                --hero-height: 59%;
+                --hero-bottom: -12%;
+                --hero-opacity: 0.46;
+                --hero-z: 0;
+            }
+
+            .title-heroine.pos-1 {
+                --hero-x: 28%;
+                --hero-height: 54%;
+                --hero-opacity: 0.74;
+            }
+
+            .title-heroine.pos-3 {
+                --hero-x: 50%;
+                --hero-height: 61%;
+                --hero-opacity: 0.9;
+                --hero-z: 2;
+            }
+
+            .title-heroine.pos-5 {
+                --hero-x: 72%;
+                --hero-height: 56%;
+                --hero-opacity: 0.74;
+            }
+        }
+
+        /* Mobile portrait */
+        @media (max-width: 743px) and (orientation: portrait) {
+            .title-heroines {
+                height: 52%;
+                --title-heroine-max-height: min(40vh, 340px);
+                --title-heroine-max-width: min(23vw, 145px);
+            }
+
+            .title-heroine {
+                bottom: var(--hero-bottom, -8%);
+            }
+
+            .title-heroine.pos-2 {
+                --hero-x: 9%;
+                --hero-height: 54%;
+                --hero-bottom: -14%;
+                --hero-opacity: 0.36;
+                --hero-z: 0;
+            }
+
+            .title-heroine.pos-4 {
+                --hero-x: 91%;
+                --hero-height: 53%;
+                --hero-bottom: -14%;
+                --hero-opacity: 0.36;
+                --hero-z: 0;
+            }
+
+            .title-heroine.pos-1 {
+                --hero-x: 25%;
+                --hero-height: 50%;
+                --hero-opacity: 0.72;
+            }
+
+            .title-heroine.pos-3 {
+                --hero-x: 50%;
+                --hero-height: 58%;
+                --hero-opacity: 0.88;
+            }
+
+            .title-heroine.pos-5 {
+                --hero-x: 75%;
+                --hero-height: 52%;
+                --hero-opacity: 0.72;
+            }
         }
 
         /* Small mobile portrait */
-        @media (max-width: 480px) and (orientation: portrait) {
-            .title-heroines { height: 50%; }
-            .title-heroine { max-height: 280px; }
-            /* 뒷줄: 담임(pos-2), 보건실(pos-4) */
-            .title-heroine.pos-2 { left: -12%; height: 66%; opacity: 0.7; }
-            .title-heroine.pos-4 { right: -16%; height: 64%; opacity: 0.7; }
-            /* 앞줄: 다인(pos-1) - 서연(pos-3) - 유나(pos-5) */
-            .title-heroine.pos-1 { left: 2%; height: 58%; opacity: 0.7; }
-            .title-heroine.pos-3 { height: 63%; opacity: 0.7; }
-            .title-heroine.pos-5 { right: -2%; height: 61%; opacity: 0.7; }
+        @media (max-width: 430px) and (orientation: portrait) {
+            .title-heroines {
+                height: 49%;
+                --title-heroine-max-height: min(35vh, 280px);
+                --title-heroine-max-width: min(25vw, 120px);
+            }
+
+            .title-heroine.pos-2 { --hero-x: 8%; --hero-height: 48%; }
+            .title-heroine.pos-4 { --hero-x: 92%; --hero-height: 47%; }
+            .title-heroine.pos-1 { --hero-x: 24%; --hero-height: 46%; }
+            .title-heroine.pos-3 { --hero-height: 52%; }
+            .title-heroine.pos-5 { --hero-x: 76%; --hero-height: 48%; }
         }
 
-        /* Mobile landscape */
-        @media (max-height: 500px) and (orientation: landscape) {
-            .title-heroines { height: 65%; }
-            .title-heroine { max-height: 250px; }
-            /* PC 비율 유지하면서 축소: 66→56, 75→64, 72→62, 73→63, 70→60 */
-            .title-heroine.pos-1 { left: -3%; height: 56%; }
-            .title-heroine.pos-2 { left: 10%; height: 64%; opacity: 0.65; z-index: 0; }
-            .title-heroine.pos-3 { left: 22%; height: 62%; transform: none; opacity: 0.85; z-index: 1; }
-            .title-heroine.pos-4 { right: 10%; height: 63%; opacity: 0.65; z-index: 0; }
-            .title-heroine.pos-5 { right: -3%; height: 60%; opacity: 0.72; }
+        /* Low-height landscape phones */
+        @media (max-height: 560px) and (orientation: landscape) {
+            .title-heroines {
+                height: 64%;
+                --title-heroine-max-height: min(54vh, 260px);
+                --title-heroine-max-width: min(17vw, 140px);
+            }
+
+            .title-heroine {
+                bottom: -10%;
+            }
+
+            .title-heroine.pos-1 { --hero-x: 7%; --hero-height: 54%; }
+            .title-heroine.pos-2 { --hero-x: 23%; --hero-height: 63%; --hero-opacity: 0.58; }
+            .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 60%; }
+            .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 62%; --hero-opacity: 0.58; }
+            .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 57%; }
         }
     </style>
 </head>
