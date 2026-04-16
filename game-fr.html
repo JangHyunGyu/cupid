@@ -4,27 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <script>
-        (function () {
-            const CURRENT_VERSION = '2.0.0';
-            if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
-                navigator.serviceWorker.register('/service-worker.js').catch(() => {});
-            }
-            setTimeout(() => {
-                fetch('version.json?t=' + new Date().getTime())
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.version !== CURRENT_VERSION) {
-                            if ('caches' in window) {
-                                caches.keys().then(names => {
-                                    Promise.all(names.map(n => caches.delete(n))).then(() => {
-                                        window.location.reload(true);
-                                    });
-                                });
-                            } else { window.location.reload(true); }
-                        }
-                    }).catch(err => console.error('Version check failed:', err));
-            }, 3000);
-        })();
+        if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
+            navigator.serviceWorker.register('/service-worker.js').catch(() => {});
+        }
     </script>
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
