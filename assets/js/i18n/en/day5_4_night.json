@@ -9,11 +9,11 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*What remains at the very end isn't one person's voice alone. The envelope from the classroom and the bandage on the back of my hand come to mind together.*"
+        "text": "*In the end, what stays with me isn't just one person's voice. The envelope from the classroom and the bandage on the back of my hand come to mind at the same time.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*This time, I have to decide even that.*",
+        "text": "*This time, I have to decide that too.*",
         "choices": [
             "Go to the person who handed me the manuscript",
             "Go to the person who left an answer on the back of my hand"
@@ -45,7 +45,7 @@
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "*The rooftop breeze blows.* Even after graduation, I'll come here. These plants only grow when you're around."
+        "text": "*The rooftop breeze stirs around us.* Even after graduation, I'll keep coming here. These plants only really grow when you're here."
     },
     "perfect_seo_5": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "perfect_epilogue_3_seo": {
         "name": "{name}",
-        "text": "*Seoyeon has changed. She knows it's okay not to be perfect. The days of smiling without checking the mirror have grown.*"
+        "text": "*Seoyeon has changed. She knows she doesn't have to be perfect anymore. She smiles more now without checking the mirror first.*"
     },
     "perfect_epilogue_4_seo": {
         "name": "System",
@@ -77,7 +77,7 @@
     },
     "bitter_seo_1": {
         "name": "{name}",
-        "text": "*I confessed. Seoyeon said 'let's try.' But there was a question mark hanging over her 'okay.' — About a month later, I got a message to meet at the cafe in front of school.*"
+        "text": "*I confessed. Seoyeon said, 'Let's try.' But even the way she said okay sounded uncertain. About a month later, I got a message asking me to meet her at the cafe in front of the school.*"
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
@@ -181,7 +181,7 @@
     },
     "perfect_epilogue_3_yuna": {
         "name": "{name}",
-        "text": "*Yuna still doesn't talk much. But her sentences got longer. Only with me.*"
+        "text": "*Yuna still doesn't talk much. But her sentences are longer now. At least with me.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "System",
@@ -189,7 +189,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*I confessed. Yuna nodded. But that nod was closer to an attempt than a certainty. — About a month later, a note appeared in my locker. 'Let's talk.'*"
+        "text": "*I confessed. Yuna nodded. But that nod felt more like trying than certainty. About a month later, a note appeared in my locker. 'Let's talk.'*"
     },
     "bitter_yuna_2": {
         "name": "Yuna",
@@ -197,7 +197,7 @@
     },
     "bitter_yuna_3": {
         "name": "{name}",
-        "text": "*I walked out the school gate. It's raining. — Yuna's last note, tucked in the mailbox. Short. As always. But this time it's not brevity. There's simply nothing left to write.*"
+        "text": "*I walked out the school gate. It's raining. Yuna's last note is tucked in the mailbox. Short, as always. But this time it isn't brevity. There's simply nothing left to say.*"
     },
     "true_yuna_1": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "true_yuna_2_c": {
         "name": "{name}",
-        "text": "*Above the attic was a rooftop. The library annex rooftop. — A secret passage no one knows about.*"
+        "text": "*Above the attic was the library annex rooftop. A secret passage no one else knows about.*"
     },
     "true_yuna_2_d": {
         "name": "{name}",
@@ -285,7 +285,7 @@
     },
     "perfect_dain_5": {
         "name": "{name}",
-        "text": "*Dain leapt at me. I wasn't ready. The volleyball rolled away across the floor — and in the sunset gym, only two shadows remained.*"
+        "text": "*Dain threw herself at me before I was ready. The volleyball rolled across the floor, and in the sunset-lit gym, only our two shadows remained.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
@@ -325,7 +325,7 @@
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*After graduation. We talked less and less. Once a month became once every two months, leaving messages on read became normal, and one day — when I opened the chat and had nothing to say — I knew it was over.*"
+        "text": "*After graduation, we heard from each other less and less. Once a month became once every two months, leaving each other on read became normal, and one day - when I opened the chat and had nothing to say - I knew it was over.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -341,7 +341,7 @@
     },
     "true_dain_2": {
         "name": "{name}",
-        "text": "*Dain takes {name}’s hand — pulls it over and presses it against her chest. Without a word.*"
+        "text": "*Dain grabs {name}'s hand, pulls it over, and presses it to the left side of her chest. Without a word.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -361,7 +361,7 @@
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "*half-covering her face with the volleyball* Why are you staring... That’s not fair."
+        "text": "*half hiding her face behind the volleyball* Why are you looking at me like that...? That's not fair."
     },
     "true_dain_7": {
         "name": "{name}",
@@ -398,7 +398,7 @@
     },
     "true_epilogue_4_yuna": {
         "name": "{name}",
-        "text": "*The person who disappeared hasn't come back. The senior's number is still gone, and the corner seat in the library is still empty. — But now she has someone she can talk to with her own voice, not just notes.*"
+        "text": "*The person who disappeared still hasn't come back. The senior's number is still gone, and the corner seat in the library is still empty. But now she has someone she can speak to in her own voice, not just through notes.*"
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
@@ -498,7 +498,7 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*A text from Seoyeon. 'I copied the rooftop key for you. — It's official, so don't worry.' She could just call it an invitation.*"
+        "text": "*A text from Seoyeon. 'I made you a copy of the rooftop key. It's official, so don't worry.' She could've just called it an invitation.*"
     },
     "good_epilogue_2": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*A message from Dain. 'Anyone wanna work out tomorrow morning?' There's a question mark at the end. Normally it'd be an exclamation mark.*"
+        "text": "*A message from Dain. 'Anyone wanna work out tomorrow morning?' There's a question mark at the end. Normally it'd be an exclamation point.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -976,7 +976,7 @@
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
-        "text": "*Graduation is over. I opened the nurse's office door. Empty. A single bandage on the desk. 'Come to my place. Address on the back.' — No heart this time.*"
+        "text": "*Graduation was over. I opened the nurse's office door. It was empty. A single bandage sat on the desk. 'Come to my place. Address on the back.' No heart this time.*"
     },
     "hidden_perfect_nurse_2": {
         "name": "School Nurse",
@@ -1048,7 +1048,7 @@
     },
     "hidden_true_nurse_3": {
         "name": "School Nurse",
-        "text": "Congrats on graduating. ...Starting today, you can don't have to call me 'ma'am' anymore."
+        "text": "Congrats on graduating. Starting today, you don't have to call me 'ma'am' anymore."
     },
     "hidden_true_nurse_3_b": {
         "name": "{name}",
@@ -1112,11 +1112,11 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "School Nurse",
-        "text": "*Turning her coffee cup* ...Didn't think I'd miss the smell of the nurse's office after graduation."
+        "text": "*Turning her coffee cup in her hands* ...I never thought I'd miss the smell of the nurse's office after graduation."
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*The date called graduation erases the line. — In a cafe instead of the nurse's office, with a person instead of a role.*"
+        "text": "*The day called graduation erased the line between us. A cafe instead of the nurse's office. A person instead of a role.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",

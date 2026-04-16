@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*April. Cherry blossoms drift through the air. My uniform still feels stiff. The faint smell of fresh grass. Starting today, I'm a student at this school. A transfer student. First day.*"
+        "text": "*April. Cherry blossoms drift through the air. My uniform still feels stiff. There's a faint smell of starch. Starting today, I'm a student at this school. A transfer student. First day.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*I'm standing in front of an unfamiliar school gate. A pretty big school. Students drift past in twos and threes. I'm the only one whose uniform is still bone-white and stiff. There's a girl standing at the gate. Long black hair tossed lightly back — behind her glasses, an unhurried air. Not a trace of rushing.*"
+        "text": "*I'm standing in front of an unfamiliar school gate. It's a big school. Students drift past in twos and threes. I'm the only one whose uniform still looks stiff and painfully new. A girl is standing by the gate, brushing back her long black hair. Even behind her glasses, she carries herself with an easy calm. Not a trace of hurry.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -33,7 +33,7 @@
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Follow me. I'll have you sorted in fifteen minutes."
+        "text": "Follow me. I'll show you around."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "choice_joke_2": {
         "name": "{name}",
-        "text": "Terrifying council president."
+        "text": "You're a scary student council president."
     },
     "choice_joke_3": {
         "name": "Seoyeon",
@@ -130,7 +130,7 @@
     },
     "hallway_8": {
         "name": "{name}",
-        "text": "*Suddenly I have lunch plans. — Don't remember agreeing to anything. We reach the classroom.*"
+        "text": "*So now I have lunch plans. I don't remember agreeing to that. We stop in front of the classroom.*"
     },
     "hallway_10": {
         "name": "Seoyeon",
@@ -226,7 +226,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "No reason! I need a practice partner after school! Nobody'll serve to me for receive drills!"
+        "text": "No reason! I need someone to help with receive drills after school! Nobody else will do it!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",
