@@ -643,6 +643,18 @@ function buildSystemPrompt(params) {
     // 실제 표시되는 이름을 AI에게 알려줌
     const aiCharName = displayName || sceneName;
 
+    // 언어별 JSON 예시 — 영어 예시만 주면 모델이 영어로 drift하므로 타겟 언어 예시로 교체
+    const _ex = {
+        en: { greet: "Thank you, Transfer Student!", okay: "Hmm, okay.", f2fScene: "*Late afternoon sunlight slants through the classroom windows. She taps the edge of the desk with her fingertips, gazing outside.* ...What are you looking at? *She turns away, but the tips of her ears are flushed red.*", f2fNod: "*She gives a slight nod.* Hmm, okay." },
+        ja: { greet: "ありがとう、転校生！", okay: "うん、わかった。", f2fScene: "*午後の日差しが教室の窓から差し込む。彼女は指先で机の縁を軽く叩きながら、窓の外を見つめている。* …何見てるの？ *視線を逸らすが、耳の先が赤く染まっている。*", f2fNod: "*彼女は小さく頷く。* うん、わかった。" },
+        es: { greet: "¡Gracias, estudiante transferido!", okay: "Mmm, está bien.", f2fScene: "*La luz de la tarde se filtra por las ventanas del aula. Ella golpea el borde del escritorio con las yemas de los dedos, mirando hacia afuera.* ...¿Qué estás mirando? *Aparta la vista, pero las puntas de sus orejas están enrojecidas.*", f2fNod: "*Ella asiente ligeramente.* Mmm, de acuerdo." },
+        fr: { greet: "Merci, nouvel élève !", okay: "Hmm, d'accord.", f2fScene: "*La lumière de fin d'après-midi filtre à travers les fenêtres de la classe. Elle tapote le bord du bureau du bout des doigts, le regard tourné vers l'extérieur.* ...Qu'est-ce que tu regardes ? *Elle détourne les yeux, mais le bout de ses oreilles est rouge.*", f2fNod: "*Elle hoche légèrement la tête.* Hmm, d'accord." },
+        de: { greet: "Danke, Neuer!", okay: "Hmm, okay.", f2fScene: "*Das Nachmittagslicht fällt durch die Klassenzimmerfenster. Sie tippt mit den Fingerspitzen an die Schreibtischkante und blickt nach draußen.* ...Was schaust du dir an? *Sie dreht sich weg, aber ihre Ohrspitzen sind gerötet.*", f2fNod: "*Sie nickt leicht.* Hmm, okay." },
+        pt: { greet: "Obrigada, estudante transferido!", okay: "Hmm, tá bom.", f2fScene: "*A luz da tarde se filtra pelas janelas da sala de aula. Ela bate com as pontas dos dedos na borda da mesa, olhando para fora.* ...O que você está olhando? *Ela desvia o olhar, mas as pontas de suas orelhas estão coradas.*", f2fNod: "*Ela assente levemente.* Hmm, tá bom." },
+    };
+    const ex = _ex[effectiveLang] || _ex.en;
+    const _langName = { en: 'English', ja: 'Japanese (日本語)', es: 'Spanish (Español)', fr: 'French (Français)', de: 'German (Deutsch)', pt: 'Brazilian Portuguese (Português Brasileiro)' }[effectiveLang] || 'English';
+
     if (useEnTemplate) {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
         return `${langPrefix}You are the character '${aiCharName}' from the visual novel game 'Cupid'.
@@ -688,8 +700,8 @@ ${isRemote ? `**RESPONSE FORMAT**: You MUST respond in valid JSON with exactly t
   "expression": "shy",
   "affinity": 2
 }
-Example: {"text": "Thank you, Transfer Student!", "expression": "shy", "affinity": 2}
-Example (no change): {"text": "Hmm, okay.", "expression": "", "affinity": 0}` : `**[Stage Direction Guidelines (Face-to-Face)]**: Include *asterisk stage directions* in the text field alongside dialogue:
+Example: {"text": "${ex.greet}", "expression": "shy", "affinity": 2}
+Example (no change): {"text": "${ex.okay}", "expression": "", "affinity": 0}` : `**[Stage Direction Guidelines (Face-to-Face)]**: Include *asterisk stage directions* in the text field alongside dialogue:
    ① **Atmosphere/Environment**: Surroundings, light, sounds, smells, bystander reactions
    ② **Body Language**: Unconscious gestures, gaze shifts, fingertip tremors, breathing changes — show emotions through the body, not words
    ③ **Psychology**: From 3rd-person perspective, the character's inner conflict, hidden emotions, true feelings
@@ -709,8 +721,8 @@ Example (no change): {"text": "Hmm, okay.", "expression": "", "affinity": 0}` : 
   "expression": "shy",
   "affinity": 2
 }
-Example: {"text": "*Late afternoon sunlight slants through the classroom windows. She taps the edge of the desk with her fingertips, gazing outside.* ...What are you looking at? *She turns away, but the tips of her ears are flushed red.*", "expression": "shy", "affinity": 2}
-Example (no change): {"text": "*She gives a slight nod.* Hmm, okay.", "expression": "", "affinity": 0}`}
+Example: {"text": "${ex.f2fScene}", "expression": "shy", "affinity": 2}
+Example (no change): {"text": "${ex.f2fNod}", "expression": "", "affinity": 0}`}
 
 8. Affinity-based Addressing:
    - Adjust how you address the user based on affinity for ${aiCharName}:
@@ -769,7 +781,9 @@ Current Situation: ${context}
 Hidden Stats: Affinity ${affinity} (Higher values mean more favorable relationship)
 ${extraGuideline ? `Extra Guideline: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
 Turn Management: The conversation is limited to ${currentMaxTurns} turns. Actively continue the conversation and explore various topics as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
-Addressing the User: ${knowsName ? `The user's name is '${playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}${datingGuideline}`;
+Addressing the User: ${knowsName ? `The user's name is '${playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}${datingGuideline}
+
+**🚨 FINAL LANGUAGE VERIFICATION (ABSOLUTE — OVERRIDES ALL OTHER RULES)**: Before outputting your JSON, verify that the "text" field is written ENTIRELY in ${_langName}. The instructions, examples, and character descriptions above are in English for clarity, but YOUR RESPONSE must be in ${_langName} only. If any word slipped into English (or any other language), rewrite it in ${_langName} now. Proper nouns (user's name, character's name) stay as-is. This check is mandatory on EVERY response, regardless of what the history contains.`;
     } else {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
         return `당신은 미연시 게임 'Cupid'의 캐릭터 '${aiCharName}'입니다.
@@ -1123,5 +1137,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.1.0';
+const PROMPT_VERSION = '2.2.0';
 window.PROMPT_VERSION = PROMPT_VERSION;
