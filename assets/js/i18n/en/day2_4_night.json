@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "YO!! Snack bar tomorrow, right?!"
+        "text": "Hey!! You're coming to the snack bar tomorrow, right?!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "lmao can't handle spice?!"
+        "text": "LOL, you can't handle spicy food?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "HAHAHA!!!!! I'm literally DYING rn LOL!! You HAVE to come to the gym tomorrow!!"
+        "text": "HAHAHA!!!!! I'm laughing so hard right now LOL!! You HAVE to come to the gym tomorrow!!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",

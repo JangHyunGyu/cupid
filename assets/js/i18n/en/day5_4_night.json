@@ -153,7 +153,7 @@
     },
     "perfect_yuna_2": {
         "name": "{name}",
-        "text": "*The title is the protagonist's name.*"
+        "text": "*The title is the main character's name.*"
     },
     "perfect_yuna_3": {
         "name": "Yuna",
@@ -811,7 +811,7 @@
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*I went home and read the manuscript. All night. — The way the protagonist tossed out lines kept sounding strangely familiar.*"
+        "text": "*I went home and read the manuscript. All night. — The main character's offhand lines kept sounding strangely familiar.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Homeroom Teacher",

@@ -97,11 +97,11 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Homeroom Teacher",
-        "text": "Call it a teacher's duty. *quietly* One cup of coffee should be fine, right? — Wait, you're a student. Juice it is."
+        "text": "Let's just call it an extension of professional concern. *quietly* One cup of coffee should be fine, right? — No, you're still a student. Juice it is."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*There it is again. The pattern of saying 'teacher's duty' and immediately stepping over the line.*"
+        "text": "*There it is again. She calls it professional concern and then immediately steps over the line.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",

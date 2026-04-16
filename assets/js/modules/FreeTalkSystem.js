@@ -223,11 +223,11 @@ class FreeTalkSystem {
                 // 관계 상태 텍스트 생성
                 let status = "";
                 if (this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${name}`)) {
-                    status = { es: " (Actualmente SALIENDO con el usuario)", ja: " (現在ユーザーと交際中)", en: " (Currently DATING the user)", fr: " (Actuellement en COUPLE avec l'utilisateur)", de: " (Derzeit mit dem Benutzer ZUSAMMEN)", pt: " (Atualmente NAMORANDO com o usuário)" }[lang] || " (현재 사용자와 사귀는 사이)";
+                    status = { es: " (Actualmente SALIENDO con el usuario)", ja: " (現在ユーザーと交際中)", en: " (Currently dating the user)", fr: " (Actuellement en COUPLE avec l'utilisateur)", de: " (Derzeit mit dem Benutzer ZUSAMMEN)", pt: " (Atualmente NAMORANDO com o usuário)" }[lang] || " (현재 사용자와 사귀는 사이)";
                 } else if (affinity >= 70) {
-                    status = { es: " (Convencida de estar saliendo con el usuario)", ja: " (ユーザーと交際していると確信)", en: " (Convinced they are dating the user)", fr: " (Convaincue de sortir avec l'utilisateur)", de: " (Überzeugt, mit dem Benutzer zusammen zu sein)", pt: " (Convencida de que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이라고 확신함)";
+                    status = { es: " (Convencida de estar saliendo con el usuario)", ja: " (ユーザーと交際していると確信)", en: " (Certain they're dating the user)", fr: " (Convaincue de sortir avec l'utilisateur)", de: " (Überzeugt, mit dem Benutzer zusammen zu sein)", pt: " (Convencida de que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이라고 확신함)";
                 } else if (affinity >= 50) {
-                    status = { es: " (Sospecha que está saliendo con el usuario)", ja: " (ユーザーと交際しているか疑っている)", en: " (Suspecting they are dating the user)", fr: " (Suspecte qu'elle sort avec l'utilisateur)", de: " (Vermutet, mit dem Benutzer zusammen zu sein)", pt: " (Suspeitando que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이인지 의심함)";
+                    status = { es: " (Sospecha que está saliendo con el usuario)", ja: " (ユーザーと交際しているか疑っている)", en: " (Suspects they're dating the user)", fr: " (Suspecte qu'elle sort avec l'utilisateur)", de: " (Vermutet, mit dem Benutzer zusammen zu sein)", pt: " (Suspeitando que está namorando com o usuário)" }[lang] || " (사용자와 사귀는 사이인지 의심함)";
                 }
 
                 const affinityText = { es: ` (Afinidad: ${affinity})`, ja: ` (好感度: ${affinity})`, en: ` (Affinity: ${affinity})`, fr: ` (Affinité : ${affinity})`, de: ` (Zuneigung: ${affinity})`, pt: ` (Afinidade: ${affinity})` }[lang] || ` (호감도: ${affinity})`;
@@ -235,7 +235,7 @@ class FreeTalkSystem {
             })
             .join("\n");
 
-        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters in School & Your Awareness]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n", de: "\n\n[Andere Charaktere in der Schule & Dein Bewusstsein]:\n", pt: "\n\n[Outros Personagens na Escola e Sua Percepção]:\n" }[lang] || "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
+        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters at School & What You Know]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n", de: "\n\n[Andere Charaktere in der Schule & Dein Bewusstsein]:\n", pt: "\n\n[Outros Personagens na Escola e Sua Percepção]:\n" }[lang] || "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
 
         // 질투 반응 지침
         const jealousyInstruction = { es: "\nNota: Eres consciente de la relación del usuario con otros. Si su afinidad es alta (50+), puedes sentir celos, sospechas u obsesión según tu personalidad.", ja: "\n注意: あなたはユーザーと他のキャラクターとの関係を認知しています。他のキャラクターの好感度が高い場合(50以上)、あなたの性格に応じて嫉妬、疑念、または執着を見せることがあります。", en: "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality.", fr: "\nNote : Vous êtes consciente de la relation de l'utilisateur avec les autres. Si leur affinité est élevée (50+), vous pouvez ressentir de la jalousie.", de: "\nHinweis: Du bist dir der Beziehung des Benutzers zu anderen bewusst. Wenn deren Zuneigung hoch ist (50+), kannst du je nach deiner Persönlichkeit eifersüchtig, misstrauisch oder besessen reagieren.", pt: "\nNota: Você está ciente do relacionamento do usuário com outros. Se a afinidade deles for alta (50+), você pode sentir ciúmes, suspeitas ou obsessão dependendo da sua personalidade." }[lang] || "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";

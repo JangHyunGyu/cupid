@@ -9,7 +9,7 @@
     },
     "name_input_scene": {
         "name": "System",
-        "text": "Transfer student, what is your name?"
+        "text": "Transfer student, what's your name?"
     },
     "gate_1": {
         "name": "{name}",
