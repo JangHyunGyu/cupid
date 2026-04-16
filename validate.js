@@ -2255,6 +2255,47 @@ if (endingResults.fail.length > 0) {
     }
 }
 
+// ===== I18N_HANGUL_CHECK: 비-ko i18n JSON에 한글 유출 감지 (하드블록) =====
+// 유저가 비한국어 페이지에서 한국어를 보는 사고 방지용
+console.log('[I18N_HANGUL_CHECK] 비한국어 i18n 한글 유출 검증 시작...');
+{
+    const I18N_BASE = path.join(BASE, 'i18n');
+    const HANGUL_RE = /[\u3131-\u318E\uAC00-\uD7A3]/;
+    const scanFields = ['name', 'text', 'context', 'personality', 'affinityText'];
+    const langs = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
+    let hangulLeaks = 0;
+    for (const lang of langs) {
+        const dir = path.join(I18N_BASE, lang);
+        if (!fs.existsSync(dir)) continue;
+        const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+        for (const file of files) {
+            let data;
+            try { data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8')); } catch (_) { continue; }
+            for (const nodeId of Object.keys(data)) {
+                const node = data[nodeId];
+                if (!node || typeof node !== 'object') continue;
+                for (const f of scanFields) {
+                    const v = node[f];
+                    if (typeof v === 'string' && HANGUL_RE.test(v)) {
+                        errors.push('[I18N_HANGUL_LEAK] ' + lang + '/' + file + ' :: ' + nodeId + '.' + f + ' → 한글 포함: ' + v.slice(0, 60));
+                        hangulLeaks++;
+                    }
+                }
+                if (Array.isArray(node.choices)) {
+                    for (let i = 0; i < node.choices.length; i++) {
+                        const v = node.choices[i];
+                        if (typeof v === 'string' && HANGUL_RE.test(v)) {
+                            errors.push('[I18N_HANGUL_LEAK] ' + lang + '/' + file + ' :: ' + nodeId + '.choices[' + i + '] → 한글 포함: ' + v.slice(0, 60));
+                            hangulLeaks++;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    console.log('[I18N_HANGUL_CHECK] 완료 (' + hangulLeaks + '건 발견)');
+}
+
 // ===== Print Results =====
 console.log('========== CUPID VALIDATION RESULTS ==========\n');
 console.log('Total scenes: ' + Object.keys(allScenes).length);
