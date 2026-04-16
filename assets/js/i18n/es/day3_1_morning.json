@@ -458,7 +458,7 @@
     },
     "morning3_react_yuna_1_b": {
         "name": "{name}",
-        "text": "*Dain, sin rodeos.*"
+        "text": "*Dain volvió al aula sin disimularlo.*"
     },
     "morning3_react_yuna_2_b": {
         "name": "{name}",
@@ -482,15 +482,15 @@
     },
     "hidden_homeroom_d3_4_f": {
         "name": "{name}",
-        "text": "*Pero — no logro moverme. Esta persona es mi profe. La que pasa lista, pone mis notas y escribe una línea en mi expediente al final del trimestre. Esa línea acaba en mi solicitud de universidad. Aquí el poder va en una sola dirección. Y no hacia mí.*"
+        "text": "*Pero — no consigo dar un paso. Ella es mi tutora. La persona que pasa lista, pone mis notas y escribe una línea en mi expediente al final del curso. Esa línea termina en mi solicitud para la universidad. El poder solo fluye en una dirección. Y no es hacia mí.*"
     },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
-        "text": "*Así que asomarme ahora a su secreto — ¿es un gesto amable o me estoy extralimitando? En cuanto un alumno descubre el punto débil de una profe, la línea entre los dos deja de ser recta. Siete años de la vida de una adulta me caen en la mano. ¿Tengo derecho a sostener eso?*"
+        "text": "*Así que asomarme ahora a su secreto — ¿es un gesto amable o una intromisión? En cuanto un alumno descubre el punto débil de una profesora, la distancia entre los dos deja de ser recta. Es como si siete años de la vida de una adulta me cayeran de golpe en la palma de la mano. ¿Tengo derecho a sostener algo así?*"
     },
     "hidden_homeroom_d3_4_h": {
         "name": "{name}",
-        "text": "*— Y al mismo tiempo, lo veo claro. Hacerse el tonto también es una elección. La cara que puso hace un momento — era la de alguien que quería ser descubierta. La cara de alguien a quien nadie atrapó en siete años. Elija lo que elija, cruzo una línea.*"
+        "text": "*— Y al mismo tiempo lo entiendo. Hacer como que no he visto nada también es una elección. La expresión que tenía hace un momento — era la de alguien que quería que la descubrieran. La cara de alguien a quien nadie llegó a descubrir en siete años. Elija lo que elija, voy a cruzar una línea.*"
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
@@ -742,15 +742,15 @@
     },
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
-        "text": "*Salí al pasillo. Un paso y me detuve. — ¿Qué fue eso? Esta persona perdió a una paciente. Huyó a una escuela cargando con esa culpa. Qué lugar ocupo yo en ella ahora mismo — por primera vez, me lo pregunto en serio.*"
+        "text": "*Salí al pasillo. Di un paso y me detuve. — ¿Qué acaba de pasar? Esta mujer perdió a una paciente. Huyó a una escuela cargando con esa culpa. Qué lugar ocupo yo para ella ahora mismo — por primera vez me lo pregunto de verdad.*"
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*Yo soy alumno, ella es la enfermera de la escuela. El lugar al que voy cuando me hago daño, la persona que me cede una cama cuando digo que me encuentro mal. La relación en sí es asimétrica. Este vuelco — ¿es de verdad que me empezó a gustar, o es porque por primera vez una mujer adulta me preguntó '¿estás bien?' y me dedicó su tiempo? Se parecen, pero no son lo mismo.*"
+        "text": "*Yo soy alumno y ella es la enfermera del colegio. El lugar al que voy cuando me hago daño, la persona que me cede una cama cuando digo que me encuentro mal. La relación en sí ya es asimétrica. Este vuelco que siento — ¿es porque de verdad me está empezando a gustar, o porque es la primera vez que una mujer adulta me pregunta si estoy bien y se queda mirándome un rato? Se parecen, pero no son lo mismo.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*Y lo que más miedo da va en el otro sentido. Para ella, yo soy — un alumno sentado en el hueco de la Yujin a la que no pudo salvar, más o menos con la misma edad. Si un trozo de su corazón está empezando a desplazarse hacia mí, puede que no sea a mí a quien mira. Tenderle la mano sabiendo eso es aprovecharme de su culpa. — En cualquier dirección, no hay respuesta limpia.*"
+        "text": "*Y lo más inquietante va en la otra dirección. Para ella, yo soy — un alumno de más o menos la misma edad ocupando el lugar de Yujin, a la que no pudo salvar. Si una parte de su corazón se está moviendo hacia mí, puede que no me esté viendo a mí. Tenderle la mano sabiendo eso sería aprovecharme de su culpa. — Mire por donde lo mire, no hay una respuesta limpia.*"
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",

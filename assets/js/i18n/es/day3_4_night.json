@@ -89,7 +89,7 @@
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
-        "text": "lo hacías solo conmigo..."
+        "text": "Lo hacías solo conmigo..."
     },
     "night3_nightmare_4": {
         "name": "Yuna",
@@ -154,7 +154,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Esta vez es distinto. Si lo veo, lo digo. Si lo sé, doy la cara. Por una persona, en serio. — La galería está vacía. El hueco donde estaba la foto de Sojeong. La pantalla en blanco se ve casi más nítida.*"
+        "text": "*Esta vez es distinto. Si lo veo, lo digo. Si lo sé, doy la cara. Esta vez voy a estar de verdad para una sola persona. — La galería está vacía. El hueco donde estaba la foto de Sojeong. La pantalla en blanco se ve casi más nítida.*"
     },
     "night3_end": {
         "name": "{name}",

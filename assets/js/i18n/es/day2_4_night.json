@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Mañana por la noche tendré que contarlas. — Por culpa de ella, no paro de mirar al cielo.*"
+        "text": "*Mañana por la noche tendré que ponerme a contarlas. — Gracias a ella, cada vez levanto más la vista al cielo.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Bajé un buen rato por la galería. Hace tres meses. — Aparece una foto. Una foto grupal del día del paseo. Sojeong sonríe. Justo a mi lado. — La semana siguiente a esta foto empezaron los rayones en el pupitre de Sojeong. Me gustaba. Eso lo tengo clarísimo. Pero había algo más urgente que decir 'me gustas'.*"
+        "text": "*Deslicé la galería durante un buen rato. Tres meses atrás. — Aparece una foto. Una foto de grupo del día de la excursión. Sojeong está sonriendo. A mi lado. — Fue la semana siguiente a esa foto cuando empezaron a aparecer los garabatos en su pupitre. Me gustaba. De eso no hay duda. Pero había algo más urgente que decir que 'me gustas'.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
@@ -162,23 +162,23 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Las simulaciones de las notas del celular se detuvieron en la número 38. No hay una 39. Porque ya no había a quién mandárselo. Ni me declaré, ni la protegí. El traslado no fue por Sojeong. Fue por el trabajo de mi padre. — Pero la verdad es que no me importó cambiarme. Así ya no tenía que pasar cada día frente a su pupitre vacío.*"
+        "text": "*Los ensayos en las notas del celular se quedaron en el número 38. No hay un 39. Porque ya no quedaba nadie a quien enviárselo. Ni me declaré ni fui capaz de protegerla. El cambio de escuela no fue por Sojeong. Fue por el trabajo de mi padre. — Pero la verdad es que no me disgustó irme. Así ya no tenía que pasar cada día delante de su pupitre vacío.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Esta vez, no apartes la mirada.' — Esa fue la promesa que me hice al llegar a esta escuela. Cerré la galería. Dudé si borrar la foto, y — al final la dejé. Si la borraba, sentía que se me iría también la culpa de entonces.*"
+        "text": "*'Esta vez, no apartes la mirada.' — Esa fue la promesa que me hice al llegar a esta escuela. Cerré la galería. Dudé si borrar la foto y — al final la dejé. Si la borraba, sentía que acabaría borrando también la culpa de entonces.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Y aun así — miro al techo. Lo de hoy no se me va. Seoyeon. Dain. Yuna. Las tres. Podría decir que es curiosidad. Pero, si soy sincero, me da miedo. Empezar a inclinarme por una sola.*"
+        "text": "*Y aun así — me quedo mirando el techo. El día de hoy no se me va de la cabeza. Seoyeon. Dain. Yuna. Las tres me importan. Podría decir que es simple curiosidad. Pero, si soy sincero, me asusta. Empezar a inclinarme por una sola.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Con Sojeong solo miraba a una. Solo quería a una, solo la veía a ella — y aunque la vi hundirse a mi lado, me quedé atascado en el bloc de notas. Treinta y ocho veces. Mirar solo a una significaba poder perder a esa una. Yo entonces no lo sabía.*"
+        "text": "*Con Sojeong solo miraba a una persona. Solo quería a una, solo la veía a ella — y, aun viéndola hundirse a mi lado, me quedé atascado en la app de notas. Treinta y ocho veces. Fijarme solo en una significaba poder perderla. Entonces no lo sabía.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Por eso ahora les estoy dejando la puerta abierta a las tres. No me gusta admitirlo. Si me decido por una demasiado pronto, solo la voy a ver a ella, las demás se me van a borrar, y al final otra vez no me voy a dar cuenta cuando alguien se hunda a mi lado. Es como un seguro. Sé que es cobarde. Cualquiera diría que soy un indeciso de mierda. Pero — sé lo que es perder a alguien por mirar solo a una. Y eso es lo que más miedo me da.*"
+        "text": "*— Por eso ahora les dejo una puerta abierta a las tres. No me gusta admitirlo. Si me decido demasiado pronto por una, acabaré mirando solo a esa una, dejaré de ver a las demás y, cuando alguien se hunda a mi lado, otra vez no me daré cuenta. Es como un seguro. Sé que es cobarde. Cualquiera diría que soy un indeciso de mierda. Pero — yo sé lo que es perder a alguien por mirar solo a una. Y eso es lo que más miedo me da.*"
     },
     "night2_end_2": {
         "name": "{name}",

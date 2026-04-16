@@ -538,7 +538,7 @@
         "text": "*Dain tiene los ojos brillantes. Una Dain sin exclamaciones — nunca la había visto.*",
         "choices": [
             "Lo siento. Pero voy a decirlo.",
-            "...Bueno. No digo nada."
+            "...Entiendo. No diré nada."
         ]
     },
     "after3_dain_tell_confirm": {
@@ -559,7 +559,7 @@
     },
     "after3_seo_pity_trap_1": {
         "name": "{name}",
-        "text": "*Seoyeon levanta la cabeza despacio. Su cara es — un cero exacto. Ni fría ni triste. Y por eso da más miedo.*"
+        "text": "*Seoyeon levanta la cabeza despacio. Su expresión está — exactamente en cero. Ni fría ni triste. Y por eso da más miedo.*"
     },
     "after3_seo_pity_trap_2": {
         "name": "Seoyeon",
@@ -591,7 +591,7 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "Seoyeon",
-        "text": "Llámame **Presidenta**."
+        "text": "Llámame **presidenta**."
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
@@ -607,7 +607,7 @@
     },
     "after3_seo_correct_3": {
         "name": "{name}",
-        "text": "Ah, aquí está. — Presidenta, ¿por el consejo desaparecen plumas a menudo o qué?"
+        "text": "Ah, aquí está. — Presidenta, ¿en la sala del consejo los bolígrafos desaparecen tan a menudo o qué?"
     },
     "after3_seo_correct_4": {
         "name": "{name}",
@@ -623,7 +623,7 @@
     },
     "after3_seo_correct_7": {
         "name": "Seoyeon",
-        "text": "*Resopla una risa.* Si lo atrapara — los alumnos le tendrían miedo al consejo."
+        "text": "*Se le escapa una risita.* Si lo atrapara — los alumnos le tendrían miedo al consejo."
     },
     "after3_seo_correct_8": {
         "name": "{name}",
@@ -639,7 +639,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "Lo de recoger la pluma. — Pásate a recogerla otra vez de vez en cuando."
+        "text": "Lo de recoger el bolígrafo. — A ver si se te vuelve a caer de vez en cuando."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
@@ -743,7 +743,7 @@
     },
     "after3_dain_pity_trap_2": {
         "name": "Dain",
-        "text": "...¿Forzar?"
+        "text": "...¿Que no me fuerce?"
     },
     "after3_dain_pity_trap_3": {
         "name": "Dain",
