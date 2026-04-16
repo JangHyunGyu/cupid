@@ -21,34 +21,12 @@
     </script>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <script>
-        (function () {
-            const CURRENT_VERSION = '2.0.0';
-            // Register Service Worker (skip on local dev)
-            if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
-                navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
-                    .then(reg => console.log('[SW] Registered:', reg.scope))
-                    .catch(err => console.log('[SW] Registration failed:', err));
-            }
-            // Version check (delayed)
-            setTimeout(() => {
-                fetch('version.json?t=' + new Date().getTime())
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.version !== CURRENT_VERSION) {
-                            if ('caches' in window) {
-                                caches.keys().then(names => {
-                                    Promise.all(names.map(n => caches.delete(n))).then(() => {
-                                        window.location.reload(true);
-                                    });
-                                });
-                            } else {
-                                window.location.reload(true);
-                            }
-                        }
-                    })
-                    .catch(err => console.log('Version check failed', err));
-            }, 3000);
-        })();
+        // Register Service Worker (skip on local dev)
+        if ('serviceWorker' in navigator && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
+            navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
+                .then(reg => console.log('[SW] Registered:', reg.scope))
+                .catch(err => console.log('[SW] Registration failed:', err));
+        }
     </script>
     <script src="assets/js/browser-check.js?v=2.2.4" defer></script>
     <meta charset="UTF-8">
