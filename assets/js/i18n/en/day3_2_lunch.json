@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Today, unusually — all three are gathered in one place. I open my lunchbox. Seoyeon sits down beside me, Dain flops down across from us, and Yuna drifts in from the corner eating her own bread.*"
+        "text": "*Lunchtime. Today, unusually ? all three are gathered in one place. {name} opens the lunchbox. Seoyeon sits down beside me, Dain flops down across from us, and Yuna drifts in from the corner eating her own bread.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
