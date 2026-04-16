@@ -45,7 +45,7 @@
     },
     "lunch3_choice": {
         "name": "{name}",
-        "text": "*J'hésite : à qui donner le dernier morceau ?*",
+        "text": "*J’hésite à qui donner le dernier morceau.*",
         "choices": [
             "La donner à Seoyeon",
             "La donner à Dain",

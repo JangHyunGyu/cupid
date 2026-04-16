@@ -41,7 +41,7 @@
     },
     "morning5_end": {
         "name": "{name}",
-        "text": "*Trois appels à la fois. — Il faut que je donne ma réponse.*"
+        "text": "*Des signaux de trois directions. — Il faut choisir une réponse.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*À peine entré dans la salle, je me sens appelé de trois côtés à la fois. Dernier événement. Tout ce temps passé jusqu'ici converge vers aujourd'hui.*"
+        "text": "*Dès que j'entre dans la salle — des signaux me parviennent de trois directions. Dernier événement. Tout le temps passé jusqu'ici converge vers aujourd'hui.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     "morning5_end_branch": {},
     "morning5_committed_end": {
         "name": "{name}",
-        "text": "*Ce ne sont plus trois appels qui me tirent de tous les côtés. J'ai déjà fait mon choix, et je me dirige vers le dernier événement.*"
+        "text": "*Ce ne sont plus des signaux venus de trois directions. J'ai déjà choisi ma réponse, et je me dirige vers le dernier événement.*"
     },
     "morning5_gate": {
         "name": "{name}",

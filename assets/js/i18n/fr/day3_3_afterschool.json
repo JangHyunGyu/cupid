@@ -52,7 +52,7 @@
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Je reviens dans le couloir. La phrase de Dain privée de ses points d'exclamation, la bibliothèque de Yuna vidée jusqu'à la moindre trace. — Il commence à y avoir des choses qu'on ne pourra plus rattraper.*"
+        "text": "*Je sors dans le couloir. La phrase de Dain sans points d'exclamation, la bibliothèque de Yuna effacée jusqu'à la moindre trace. — Des choses irrécupérables commencent à apparaître.*"
     },
     "after3_reject_for_yuna_1": {
         "name": "{name}",
@@ -515,7 +515,7 @@
     },
     "after3_dain_dilemma_tell_4": {
         "name": "Dain",
-        "text": "...Si tu le savais, pourquoi en parler ? Tu sais que le tournoi est la semaine prochaine."
+        "text": "...Si tu savais, pourquoi tu le dis ? Tu sais que le tournoi est la semaine prochaine."
     },
     "after3_dain_dilemma_tell_5": {
         "name": "{name}",
