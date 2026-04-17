@@ -89,7 +89,7 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-05YM7K3VX9"></script>
     <!-- ga.js, sound.js loaded by game-loader.js -->
-    <link rel="stylesheet" href="assets/css/style.css?v=2.4.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.4.1">
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css" />
     <style>
@@ -148,35 +148,44 @@
         }
 
         .visual-h1 {
-            font-size: clamp(2rem, 6vmin, 4rem);
-            margin: 0 0 clamp(0.2rem, 1vh, 1rem) 0;
-            letter-spacing: clamp(2px, 0.5vw, 5px);
-            color: #ff69b4;
-            font-weight: bold;
+            font-size: clamp(2.4rem, 7.2vmin, 4.8rem);
+            margin: 0 0 clamp(0.3rem, 1vh, 1rem) 0;
+            letter-spacing: clamp(8px, 1.6vw, 16px);
+            color: #fbf3f5;
+            font-weight: 200;
+            font-family: Georgia, 'Times New Roman', 'Nanum Myeongjo', serif;
+            text-shadow: 0 2px 24px rgba(0, 0, 0, 0.85), 0 0 60px rgba(0, 0, 0, 0.4);
         }
 
         p {
-            font-size: clamp(0.85rem, 2.5vmin, 1.5rem);
+            font-size: clamp(0.82rem, 2.1vmin, 1.2rem);
             margin-bottom: clamp(0.8rem, 3vh, 3rem);
+            color: rgba(245, 238, 242, 0.85);
+            font-weight: 300;
+            letter-spacing: 0.4px;
         }
 
         .start-btn {
-            padding: clamp(8px, 1.5vh, 15px) clamp(30px, 7vw, 50px);
-            font-size: clamp(0.95rem, 2.2vmin, 1.5rem);
-            background: #ff69b4;
-            color: white;
-            border: none;
-            border-radius: 50px;
+            padding: clamp(10px, 1.7vh, 17px) clamp(38px, 7.5vw, 64px);
+            font-size: clamp(0.85rem, 1.95vmin, 1.05rem);
+            background: rgba(255, 255, 255, 0.06);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            border-radius: 1px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: background 0.3s ease, border-color 0.3s ease, letter-spacing 0.3s ease;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+            letter-spacing: clamp(3px, 0.7vw, 6px);
+            font-weight: 400;
+            text-transform: uppercase;
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
         }
 
         .start-btn:hover {
-            transform: scale(1.1);
-            background: #ff1493;
-            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+            background: rgba(255, 255, 255, 0.16);
+            border-color: rgba(255, 255, 255, 1);
+            letter-spacing: clamp(4px, 0.9vw, 8px);
         }
 
         .footer {
@@ -396,43 +405,32 @@
 
         .archerlab-link {
             position: fixed;
-            top: 18px;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 50;
-            background: linear-gradient(135deg, #ff2d55, #ff6b9d, #ff2d55);
-            background-size: 200% 200%;
-            animation: al-gradient 3s ease infinite, al-glow-pulse 2s ease-in-out infinite;
-            color: #fff;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            padding: 8px 20px;
-            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.4);
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 16px;
             text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.4px;
             display: flex;
             align-items: center;
             gap: 6px;
-            box-shadow: 0 0 20px rgba(255, 45, 85, 0.5), 0 0 60px rgba(255, 45, 85, 0.2), 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: background 0.2s, border-color 0.2s;
             white-space: nowrap;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
         }
 
         .archerlab-link:hover {
-            transform: translateX(-50%) scale(1.08);
-            box-shadow: 0 0 30px rgba(255, 45, 85, 0.7), 0 0 80px rgba(255, 45, 85, 0.3), 0 6px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        @keyframes al-gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        @keyframes al-glow-pulse {
-            0%, 100% { box-shadow: 0 0 20px rgba(255, 45, 85, 0.5), 0 0 60px rgba(255, 45, 85, 0.2), 0 4px 15px rgba(0, 0, 0, 0.3); }
-            50% { box-shadow: 0 0 35px rgba(255, 45, 85, 0.8), 0 0 90px rgba(255, 45, 85, 0.35), 0 4px 15px rgba(0, 0, 0, 0.3); }
+            background: rgba(0, 0, 0, 0.6);
+            border-color: rgba(255, 255, 255, 0.45);
         }
 
         .lang-btn {
@@ -572,15 +570,15 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 70%;
+            height: 84%;
             z-index: 1;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             pointer-events: none;
             overflow: hidden;
-            --title-heroine-max-height: min(68vh, 650px);
-            --title-heroine-max-width: min(18vw, 250px);
+            --title-heroine-max-height: min(86vh, 920px);
+            --title-heroine-max-width: min(24vw, 340px);
         }
 
         .title-heroine {
@@ -592,24 +590,24 @@
             max-width: var(--title-heroine-max-width);
             width: auto;
             object-fit: contain;
-            filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5)) sepia(0.15) saturate(1.2) brightness(0.95);
+            filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.65));
             transform: translateX(-50%);
             transition: transform 0.3s ease, opacity 0.3s ease;
             opacity: var(--hero-opacity, 0.7);
             z-index: var(--hero-z, 1);
         }
 
-        .title-heroine.pos-1 { --hero-x: 9%; --hero-height: 64%; --hero-opacity: 0.78; }
-        .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 74%; --hero-opacity: 0.72; }
-        .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 71%; --hero-opacity: 0.88; --hero-z: 2; }
-        .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 72%; --hero-opacity: 0.66; }
-        .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 68%; --hero-opacity: 0.74; }
+        .title-heroine.pos-1 { --hero-x: 9%; --hero-height: 84%; --hero-opacity: 0.95; }
+        .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 94%; --hero-opacity: 0.92; }
+        .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 90%; --hero-opacity: 1; --hero-z: 2; }
+        .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 92%; --hero-opacity: 0.9; }
+        .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 86%; --hero-opacity: 0.94; }
 
         /* Large desktop */
         @media (min-width: 1600px) {
             .title-heroines {
-                --title-heroine-max-height: min(72vh, 760px);
-                --title-heroine-max-width: min(16vw, 290px);
+                --title-heroine-max-height: min(90vh, 1020px);
+                --title-heroine-max-width: min(22vw, 380px);
             }
 
             .title-heroine.pos-1 { --hero-x: 10%; }
@@ -622,31 +620,31 @@
         /* Laptop / compact desktop */
         @media (min-width: 1101px) and (max-width: 1599px) {
             .title-heroines {
-                --title-heroine-max-width: min(19vw, 250px);
+                --title-heroine-max-width: min(25vw, 340px);
             }
         }
 
         /* Tablet landscape and narrow laptop */
         @media (min-width: 821px) and (max-width: 1100px) {
             .title-heroines {
-                height: 67%;
-                --title-heroine-max-height: min(60vh, 460px);
-                --title-heroine-max-width: min(20vw, 200px);
+                height: 80%;
+                --title-heroine-max-height: min(80vh, 640px);
+                --title-heroine-max-width: min(26vw, 280px);
             }
 
-            .title-heroine.pos-1 { --hero-x: 8%; --hero-height: 62%; }
-            .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 71%; }
-            .title-heroine.pos-3 { --hero-x: 40%; --hero-height: 69%; }
-            .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 70%; }
-            .title-heroine.pos-5 { --hero-x: 83%; --hero-height: 66%; }
+            .title-heroine.pos-1 { --hero-x: 8%; --hero-height: 82%; }
+            .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 92%; }
+            .title-heroine.pos-3 { --hero-x: 40%; --hero-height: 88%; }
+            .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 90%; }
+            .title-heroine.pos-5 { --hero-x: 83%; --hero-height: 84%; }
         }
 
         /* Tablet portrait (iPad portrait included) */
         @media (min-width: 744px) and (max-width: 1024px) and (orientation: portrait) {
             .title-heroines {
-                height: 58%;
-                --title-heroine-max-height: min(46vh, 430px);
-                --title-heroine-max-width: min(22vw, 170px);
+                height: 70%;
+                --title-heroine-max-height: min(62vh, 580px);
+                --title-heroine-max-width: min(28vw, 240px);
             }
 
             .title-heroine {
@@ -655,46 +653,46 @@
 
             .title-heroine.pos-2 {
                 --hero-x: 11%;
-                --hero-height: 60%;
+                --hero-height: 78%;
                 --hero-bottom: -12%;
-                --hero-opacity: 0.46;
+                --hero-opacity: 0.6;
                 --hero-z: 0;
             }
 
             .title-heroine.pos-4 {
                 --hero-x: 89%;
-                --hero-height: 59%;
+                --hero-height: 76%;
                 --hero-bottom: -12%;
-                --hero-opacity: 0.46;
+                --hero-opacity: 0.6;
                 --hero-z: 0;
             }
 
             .title-heroine.pos-1 {
                 --hero-x: 28%;
-                --hero-height: 54%;
-                --hero-opacity: 0.74;
+                --hero-height: 72%;
+                --hero-opacity: 0.92;
             }
 
             .title-heroine.pos-3 {
                 --hero-x: 50%;
-                --hero-height: 61%;
-                --hero-opacity: 0.9;
+                --hero-height: 80%;
+                --hero-opacity: 1;
                 --hero-z: 2;
             }
 
             .title-heroine.pos-5 {
                 --hero-x: 72%;
-                --hero-height: 56%;
-                --hero-opacity: 0.74;
+                --hero-height: 74%;
+                --hero-opacity: 0.92;
             }
         }
 
         /* Mobile portrait */
         @media (max-width: 743px) and (orientation: portrait) {
             .title-heroines {
-                height: 52%;
-                --title-heroine-max-height: min(40vh, 340px);
-                --title-heroine-max-width: min(23vw, 145px);
+                height: 64%;
+                --title-heroine-max-height: min(54vh, 460px);
+                --title-heroine-max-width: min(29vw, 195px);
             }
 
             .title-heroine {
@@ -703,71 +701,71 @@
 
             .title-heroine.pos-2 {
                 --hero-x: 9%;
-                --hero-height: 54%;
+                --hero-height: 70%;
                 --hero-bottom: -14%;
-                --hero-opacity: 0.36;
+                --hero-opacity: 0.5;
                 --hero-z: 0;
             }
 
             .title-heroine.pos-4 {
                 --hero-x: 91%;
-                --hero-height: 53%;
+                --hero-height: 69%;
                 --hero-bottom: -14%;
-                --hero-opacity: 0.36;
+                --hero-opacity: 0.5;
                 --hero-z: 0;
             }
 
             .title-heroine.pos-1 {
                 --hero-x: 25%;
-                --hero-height: 50%;
-                --hero-opacity: 0.72;
+                --hero-height: 65%;
+                --hero-opacity: 0.9;
             }
 
             .title-heroine.pos-3 {
                 --hero-x: 50%;
-                --hero-height: 58%;
-                --hero-opacity: 0.88;
+                --hero-height: 74%;
+                --hero-opacity: 1;
             }
 
             .title-heroine.pos-5 {
                 --hero-x: 75%;
-                --hero-height: 52%;
-                --hero-opacity: 0.72;
+                --hero-height: 67%;
+                --hero-opacity: 0.9;
             }
         }
 
         /* Small mobile portrait */
         @media (max-width: 430px) and (orientation: portrait) {
             .title-heroines {
-                height: 49%;
-                --title-heroine-max-height: min(35vh, 280px);
-                --title-heroine-max-width: min(25vw, 120px);
+                height: 60%;
+                --title-heroine-max-height: min(48vh, 380px);
+                --title-heroine-max-width: min(31vw, 165px);
             }
 
-            .title-heroine.pos-2 { --hero-x: 8%; --hero-height: 48%; }
-            .title-heroine.pos-4 { --hero-x: 92%; --hero-height: 47%; }
-            .title-heroine.pos-1 { --hero-x: 24%; --hero-height: 46%; }
-            .title-heroine.pos-3 { --hero-height: 52%; }
-            .title-heroine.pos-5 { --hero-x: 76%; --hero-height: 48%; }
+            .title-heroine.pos-2 { --hero-x: 8%; --hero-height: 62%; }
+            .title-heroine.pos-4 { --hero-x: 92%; --hero-height: 61%; }
+            .title-heroine.pos-1 { --hero-x: 24%; --hero-height: 60%; }
+            .title-heroine.pos-3 { --hero-height: 68%; }
+            .title-heroine.pos-5 { --hero-x: 76%; --hero-height: 62%; }
         }
 
         /* Low-height landscape phones */
         @media (max-height: 560px) and (orientation: landscape) {
             .title-heroines {
-                height: 64%;
-                --title-heroine-max-height: min(54vh, 260px);
-                --title-heroine-max-width: min(17vw, 140px);
+                height: 78%;
+                --title-heroine-max-height: min(74vh, 380px);
+                --title-heroine-max-width: min(22vw, 200px);
             }
 
             .title-heroine {
                 bottom: -10%;
             }
 
-            .title-heroine.pos-1 { --hero-x: 7%; --hero-height: 54%; }
-            .title-heroine.pos-2 { --hero-x: 23%; --hero-height: 63%; --hero-opacity: 0.58; }
-            .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 60%; }
-            .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 62%; --hero-opacity: 0.58; }
-            .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 57%; }
+            .title-heroine.pos-1 { --hero-x: 7%; --hero-height: 72%; }
+            .title-heroine.pos-2 { --hero-x: 23%; --hero-height: 82%; --hero-opacity: 0.78; }
+            .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 78%; }
+            .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 80%; --hero-opacity: 0.78; }
+            .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 75%; }
         }
     </style>
 </head>
@@ -838,9 +836,9 @@
                 <span class="vp-badge">✓ AIマルチエンディング</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; gap: clamp(6px, 1.2vh, 12px);">
-                <button id="start-btn" onclick="startGame()" class="start-btn" style="border:none; cursor:pointer; opacity: 0.5;" disabled>ニューゲーム</button>
+                <button id="start-btn" onclick="startGame()" class="start-btn" style="cursor:pointer; opacity: 0.5;" disabled>ニューゲーム</button>
                 <button id="continue-btn" onclick="continueGame()" class="start-btn"
-                    style="border:none; cursor:pointer; background: linear-gradient(135deg, #6b5b95, #4a4070); opacity: 0.5;"
+                    style="cursor:pointer; opacity: 0.5; background: rgba(0, 0, 0, 0.25);"
                     disabled>つづきから</button>
             </div>
         </div>
