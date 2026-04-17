@@ -426,7 +426,7 @@
     },
     "alone_4": {
         "name": "{name}",
-        "text": "*...Être seul n'est pas une punition. C'est juste — silencieux. Plus que prévu.*"
+        "text": "*...Être seul, c'est pas une punition. C'est juste — silencieux. Plus que prévu.*"
     },
     "alone_5": {
         "name": "Système",
@@ -738,7 +738,7 @@
     },
     "harem_3": {
         "name": "{name}",
-        "text": "*Dain m'a frappé l'épaule avec son poing. Ça faisait mal. T'es dingue ? ...Mais c'est moi qui suis tombée amoureuse de toi en sachant que t'étais comme ça. Pfff.*"
+        "text": "*Dain m'a frappé l'épaule avec son poing. Ça faisait mal. T'es dingue ? ...Mais c'est moi qui suis tombée amoureuse de toi en te sachant comme ça. Pfff.*"
     },
     "harem_4": {
         "name": "{name}",
@@ -939,7 +939,7 @@
     },
     "hidden_true_homeroom_7_c": {
         "name": "Professeure principale",
-        "text": "...Je ne devrais pas faire ça. *— Sa voix s'éteint. Puis elle sourit.*"
+        "text": "...Je devrais pas faire ça. *— Sa voix s'éteint. Puis elle sourit.*"
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
@@ -1084,7 +1084,7 @@
     },
     "hidden_true_nurse_6": {
         "name": "Infirmière",
-        "text": "Alors, quand la remise des diplômes sera finie — reviens me voir. Pas à l'infirmerie, ici. Cette fois, vois-moi non pas comme l'infirmière scolaire, mais comme Juwon."
+        "text": "Alors, quand la remise des diplômes sera finie — reviens me voir. Pas à l'infirmerie, ici. Cette fois, vois-moi pas comme l'infirmière scolaire, mais comme Juwon."
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
