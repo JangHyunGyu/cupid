@@ -855,8 +855,8 @@ ${L.rule}
             if (dialogueBox) dialogueBox.classList.remove('thinking-box');
             document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
-            // 대사창에 타이핑 효과로 표시
-            await this._typeText(displayText);
+            // 대사창에 타이핑 효과로 표시 (segments 있으면 구조화 렌더)
+            await this._typeText(displayText, parsed.segments || null);
             this.chatHistory.push({ role: 'assistant', content: reply });
 
             // 프리토킹 횟수 증가
@@ -912,10 +912,10 @@ ${L.rule}
      * @private
      */
     _parseResponse(reply) {
-        if (!reply) return { text: '', expression: '' };
+        if (!reply) return { text: '', segments: null, expression: '' };
 
         const likelyJson = reply.includes('{') || reply.includes('```json');
-        if (!likelyJson) return { text: reply, expression: '' };
+        if (!likelyJson) return { text: reply, segments: null, expression: '' };
 
         try {
             let jsonStr = reply;
@@ -937,20 +937,72 @@ ${L.rule}
 
             const parsed = JSON.parse(jsonStr);
 
+            // 신규 — segments 배열 우선 처리
+            if (parsed && typeof parsed === 'object' && Array.isArray(parsed.segments) && parsed.segments.length > 0) {
+                const normalizedSegments = this._normalizeSegments(parsed.segments);
+                const derivedText = parsed.text || this._segmentsToText(normalizedSegments);
+                return {
+                    text: derivedText,
+                    segments: normalizedSegments,
+                    expression: (parsed.expression || '').toLowerCase()
+                };
+            }
+
+            // 레거시 — text 필드 사용
             if (parsed && typeof parsed === 'object' && typeof parsed.text === 'string') {
                 return {
                     text: parsed.text || '',
+                    segments: null,
                     expression: (parsed.expression || '').toLowerCase()
                 };
             }
 
             // 알려진 텍스트 키 폴백
             const text = parsed.text || parsed.dialogue || parsed.content || parsed.message || parsed.response || '';
-            return { text: text || reply, expression: (parsed.expression || '').toLowerCase() };
+            return { text: text || reply, segments: null, expression: (parsed.expression || '').toLowerCase() };
 
         } catch (e) {
-            return { text: reply, expression: '' };
+            return { text: reply, segments: null, expression: '' };
         }
+    }
+
+    /**
+     * AI가 반환한 segments 배열을 표준 포맷으로 정규화
+     * 허용 type: 'narration' | 'dialogue'
+     * @private
+     */
+    _normalizeSegments(raw) {
+        if (!Array.isArray(raw)) return null;
+        const out = [];
+        for (const seg of raw) {
+            if (!seg || typeof seg !== 'object') continue;
+            const text = typeof seg.text === 'string' ? seg.text.trim() : '';
+            if (!text) continue;
+            let type = (typeof seg.type === 'string') ? seg.type.toLowerCase() : '';
+            if (type === 'action' || type === 'narrate' || type === 'narrator' || type === 'desc' || type === 'description' || type === 'scene') {
+                type = 'narration';
+            } else if (type === 'speech' || type === 'line' || type === 'text' || type === 'talk') {
+                type = 'dialogue';
+            }
+            if (type !== 'narration' && type !== 'dialogue') {
+                const endsWithSpeech = /[.?!…][\s]*$/.test(text) && /[야어네지어!?~"']\s*$/.test(text);
+                type = endsWithSpeech ? 'dialogue' : 'narration';
+            }
+            out.push({ type, text });
+        }
+        return out.length > 0 ? out : null;
+    }
+
+    /**
+     * segments 배열 → 레거시 호환 인라인 텍스트 (narration → *text*, dialogue → text)
+     * @private
+     */
+    _segmentsToText(segments) {
+        if (!Array.isArray(segments) || segments.length === 0) return '';
+        return segments.map(s => {
+            if (!s || !s.text) return '';
+            return s.type === 'narration' ? `*${s.text}*` : s.text;
+        }).filter(Boolean).join(' ');
     }
 
     /**
@@ -974,7 +1026,7 @@ ${L.rule}
      * @param {string} text - 표시할 텍스트
      * @returns {Promise} 타이핑 완료 시 resolve
      */
-    _typeText(text) {
+    _typeText(text, structuredSegments = null) {
         const msgEl = document.getElementById('message');
         if (!msgEl) return Promise.resolve();
 
@@ -982,8 +1034,14 @@ ${L.rule}
         this.skipTyping = false;
         msgEl.innerHTML = '';
 
-        // 텍스트를 세그먼트로 미리 파싱 (일반 텍스트 / 지문)
-        const segments = this._parseSegments(text);
+        // structuredSegments가 있으면 별표 파싱 건너뛰고 type별 직접 매핑
+        // AI의 narration/dialogue → 갤러리 내부 action/text 매핑
+        const segments = Array.isArray(structuredSegments) && structuredSegments.length > 0
+            ? structuredSegments.map(s => ({
+                type: s.type === 'narration' ? 'action' : 'text',
+                content: (s.text || '') + ' '
+            })).filter(s => s.content.trim())
+            : this._parseSegments(text);
         const speed = 30; // ms per character (게임과 동일)
 
         // 각 세그먼트별 DOM 요소를 미리 생성 (지문은 처음부터 포맷 적용)
