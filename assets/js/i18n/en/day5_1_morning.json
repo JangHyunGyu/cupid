@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Homeroom Teacher",
-        "text": "Haven't shown this to anyone in seven years. — This is so far beyond what a teacher should be doing."
+        "text": "Haven't shown this to anyone in seven years. — Way outside my job description."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -71,7 +71,7 @@
         "name": "{name}",
         "text": "*I'm holding the manuscript. Her seven years are in my hands.*",
         "choices": [
-            "I'm sure you wrote it well, miss. Send it to publishers.",
+            "I'm sure it came out great. Send it to publishers.",
             "...You said it took seven years to finish. But — shouldn't there be one more line in the last chapter?"
         ]
     },
@@ -295,7 +295,7 @@
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
-        "text": "Ma'am."
+        "text": "Teacher."
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
@@ -335,7 +335,7 @@
     },
     "hidden_nurse_d5_3_d": {
         "name": "{name}",
-        "text": "Miss?"
+        "text": "Wait —"
     },
     "hidden_nurse_d5_3_e": {
         "name": "School Nurse",
