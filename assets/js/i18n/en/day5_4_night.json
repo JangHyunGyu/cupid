@@ -1048,7 +1048,7 @@
     },
     "hidden_true_nurse_3": {
         "name": "School Nurse",
-        "text": "Congrats on graduating. Starting today, you don't have to call me 'ma'am' anymore."
+        "text": "Congrats on graduating. Starting today, you can drop the 'teacher.'"
     },
     "hidden_true_nurse_3_b": {
         "name": "{name}",

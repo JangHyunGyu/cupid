@@ -110,7 +110,7 @@
     },
     "after2_dain_end_2": {
         "name": "Dain",
-        "text": "Hey — you actually know your sports, don't you?"
+        "text": "Hey — you really DO know sports, huh?"
     },
     "after2_dain_end_2b": {
         "name": "{name}",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d2_2": {
         "name": "School Nurse",
-        "text": "Two days in a row — should I start issuing you a nurse's office membership?"
+        "text": "Two days in a row — should I just print you a punch card?"
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
