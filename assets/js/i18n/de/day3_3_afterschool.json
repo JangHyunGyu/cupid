@@ -33,7 +33,7 @@
         "name": "{name}",
         "text": "*Wohin soll ich gehen.*",
         "choices": [
-            "Zum Schülerratszimmer",
+            "Zum Schülerratsraum",
             "Zur Bibliothek",
             "Zur Turnhalle"
         ]
@@ -345,7 +345,7 @@
     },
     "haeun_warn_1": {
         "name": "{name}",
-        "text": "*Ich komme aus dem Schülerratszimmer. Der Flur ist leer. — Jemand hat gewartet.*"
+        "text": "*Ich komme aus dem Schülerratsraum. Der Flur ist leer. — Jemand hat gewartet.*"
     },
     "haeun_warn_2": {
         "name": "Haeun",
@@ -361,7 +361,7 @@
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Seoyeon hat geweint. Nachdem sie aus dem Schülerratszimmer kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
+        "text": "...Seoyeon hat geweint. Nachdem sie aus dem Schülerratsraum kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
     },
     "haeun_warn_4b": {
         "name": "{name}",
@@ -627,7 +627,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*Das Gespräch fließt von selbst weiter. Die Person, die über dem Schreibtisch zusammengesackt war, die mit dem verschmierten Make-up — *keine von beiden existierte* in diesem Schülerratsbüro. Wir haben uns beide darauf geeinigt. Ohne ein Wort.*"
+        "text": "*Das Gespräch fließt von selbst weiter. Die Person, die über dem Schreibtisch zusammengesackt war, die mit dem verschmierten Make-up — *keine von beiden existierte* in diesem Schülerratsraum. Wir haben uns beide darauf geeinigt. Ohne ein Wort.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",

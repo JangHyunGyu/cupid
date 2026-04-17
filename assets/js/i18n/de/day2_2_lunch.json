@@ -136,7 +136,7 @@
     },
     "lunch2_yuna_8_seo": {
         "name": "{name}",
-        "text": "Gerade deshalb wollte ich noch mehr kommen."
+        "text": "Gerade deshalb wollte ich erst recht kommen."
     },
     "lunch2_yuna_3_yuna": {
         "name": "Yuna",
@@ -168,7 +168,7 @@
     },
     "lunch2_yuna_5": {
         "name": "Yuna",
-        "text": "Du hättest auch nicht kommen können."
+        "text": "Du hättest ja auch nicht kommen müssen."
     },
     "lunch2_yuna_6": {
         "name": "{name}",
@@ -649,7 +649,7 @@
     },
     "lunch2_dain_end_x": {
         "name": "{name}",
-        "text": "Wenn ich nicht verletzt bin, hätte ich keinen Grund zu kommen."
+        "text": "Wenn ich nicht verletzt wäre, hätte ich keinen Grund zu kommen."
     },
     "lunch2_dain_end_y": {
         "name": "{name}",
