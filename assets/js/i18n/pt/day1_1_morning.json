@@ -9,7 +9,7 @@
     },
     "name_input_scene": {
         "name": "Sistema",
-        "text": "Transferido, qual é o seu nome?"
+        "text": "Aluno novo, qual é o seu nome?"
     },
     "gate_1": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "classroom_5_b": {
         "name": "Professora",
-        "text": "...Tá. {name}. Vou guardar. *Baixinho, quase pra si mesma* Gravo nome na primeira."
+        "text": "...Tá. {name}. Vou guardar. *Baixinho, quase pra si mesma* Decoro o nome de primeira."
     },
     "classroom_5_c": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Soltou um 'acho'. Ou seja, uma máquina ainda pode ser melhor que eu. Minha posição tá pendurada.*"
+        "text": "*Soltou um 'acho'. Ou seja, uma máquina ainda pode ser melhor que eu. Meu lugar tá por um fio.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Olho pra Yuna. Continua olhando pela janela. Mas tenho a impressão de que a pontinha da orelha se mexeu. O bilhete veio justo dela, que ficou olhando pra fora o tempo todo. Fingindo que não se importa, ou não se importando de verdade.*"
+        "text": "*Olho pra Yuna. Continua olhando pela janela. Mas tenho a impressão de que a pontinha da orelha se mexeu. O bilhete veio justo dela, que ficou olhando pra fora o tempo todo. Fingindo não ligar, ou realmente não ligando.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
