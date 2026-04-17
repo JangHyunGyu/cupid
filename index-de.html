@@ -777,7 +777,7 @@
         <div style="padding: 20px; text-align: center; color: #fff; background: #1a1a2e;">
             <h1>Cupid - Kostenlose Visual Novel im Browser | 5-tägige Schulromanze</h1>
             <p>Kostenlose Visual Novel, direkt im Browser spielbar — ohne Download oder Installation. Eine 5-tägige Schulromanze ab deinem ersten Tag als neuer Schüler. 5 Heldinnen, mehrere Enden, 6 Sprachen verfügbar.</p>
-            <p>Bitte aktivieren Sie JavaScript, um dieses Spiel zu spielen.</p>
+            <p>Bitte aktiviere JavaScript, um dieses Spiel zu spielen.</p>
         </div>
     </noscript>
     <script>
@@ -861,7 +861,7 @@
         <div class="modal-container" onclick="event.stopPropagation()">
             <div style="font-size: 2.5rem; margin-bottom: 10px;">⚠️</div>
             <h3 class="modal-title">Neues Spiel</h3>
-            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">Gespeicherte Daten gehen verloren.<br>Möchten Sie ein neues Spiel starten?</p>
+            <p style="color: #ccc; margin: 15px 0; line-height: 1.6;">Der bisherige Spielstand geht verloren.<br>Möchtest du ein neues Spiel starten?</p>
             <div class="confirm-buttons">
                 <button class="modal-btn cancel" onclick="closeNewGameConfirm(event)">Abbrechen</button>
                 <button class="modal-btn confirm" onclick="confirmNewGame()">Starten</button>
@@ -891,7 +891,7 @@
                 <!-- Name Input -->
                 <div id="name-input-container" style="display: none;">
                     <div id="name-input-wrapper">
-                        <input type="text" id="player-name-input" placeholder="Geben Sie Ihren Namen ein (1-12 Zeichen)" maxlength="12">
+                        <input type="text" id="player-name-input" placeholder="Gib deinen Namen ein (1-12 Zeichen)" maxlength="12">
                         <button id="name-confirm-btn">Bestätigen</button>
                     </div>
                     <div id="name-input-guide">1-12 Zeichen, nur Buchstaben (keine Zahlen/Sonderzeichen)</div>
@@ -998,7 +998,7 @@
                 <div class="credits-section">
                     <div class="credits-role">Besonderer Dank</div>
                     <div class="credits-name">Vielen Dank fürs Spielen</div>
-                    <div class="credits-name">Wir danken Ihnen von Herzen.</div>
+                    <div class="credits-name">Wir danken dir von Herzen.</div>
                 </div>
                 <div class="credits-spacer"></div>
                 <div class="credits-final">Cupid © 2026 ArcherLab</div>
@@ -1017,7 +1017,7 @@
         <div id="homeConfirmModal" class="modal-overlay" style="display: none;" onclick="closeHomeConfirm(event)">
             <div class="modal-container" onclick="event.stopPropagation()">
                 <h3 class="modal-title">Zurück zum Titel</h3>
-                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">Möchten Sie wirklich zum Titelbildschirm zurückkehren?<br><span style="color: #6b5b95; font-size: 0.9em;">(Ihr Fortschritt wird gespeichert)</span></p>
+                <p style="color: #ccc; margin: 20px 0; line-height: 1.6;">Möchtest du wirklich zum Titelbildschirm zurückkehren?<br><span style="color: #6b5b95; font-size: 0.9em;">(Dein Fortschritt wird gespeichert)</span></p>
                 <div class="confirm-buttons">
                     <button class="modal-btn cancel" onclick="closeHomeConfirm(event)">Abbrechen</button>
                     <button class="modal-btn confirm" onclick="goToHome()">Bestätigen</button>
@@ -1077,13 +1077,13 @@
         <div class="modal-container" onclick="event.stopPropagation()">
             <div style="font-size: 2.5rem; margin-bottom: 5px;">💌</div>
             <h3 class="modal-title">Kontakt</h3>
-            <p style="color: #999; font-size: 0.85rem; margin: 0 0 5px;">Fragen oder Feedback? Kontaktieren Sie uns!</p>
+            <p style="color: #999; font-size: 0.85rem; margin: 0 0 5px;">Fragen oder Feedback? Schreib uns!</p>
             <div class="contact-options">
                 <a href="https://open.kakao.com/o/pF6xil6h" target="_blank" class="contact-option kakao">
                     <span class="contact-option-icon">💬</span>
                     <span class="contact-option-text">
                         <span class="contact-option-label">KakaoTalk Open Chat</span>
-                        <span class="contact-option-desc">In Echtzeit mit uns chatten</span>
+                        <span class="contact-option-desc">Chatte in Echtzeit mit uns</span>
                     </span>
                 </a>
                 <a href="mailto:hyungyu@archerlab.dev" class="contact-option email">
@@ -1279,7 +1279,7 @@
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
             } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                alert('Auf iOS tippen Sie auf [Teilen] und dann auf [Zum Startbildschirm hinzufügen].');
+                alert('Tippe auf iOS auf [Teilen] und dann auf [Zum Startbildschirm hinzufügen].');
             } else {
                 alert('Bereits installiert oder Browser wird nicht unterstützt.');
             }
