@@ -26,7 +26,7 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "Et alors, si on est en retard ? Si on se fait prendre ensemble, on sera peut-être moins punis, non ?"
+        "text": "Et alors, si on est en retard ? Si on se fait choper ensemble, on écopera peut-être d'une punition plus légère, non ?"
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "morning3_react_yuna_2": {
         "name": "Dain",
-        "text": "Trop jalouse !! Moi aussi je voudrais quelqu’un pour venir le matin !!"
+        "text": "Trop jalouse !! Moi aussi je veux quelqu’un pour venir le matin !!"
     },
     "morning3_react_dain_1": {
         "name": "Seoyeon",
@@ -226,7 +226,7 @@
     },
     "hidden_homeroom_d3_reveal_1": {
         "name": "Professeure principale",
-        "text": "...Trop gênant pour appeler ça un roman. Trop vieux pour de l'exercice. Sept ans."
+        "text": "...Trop embarrassant pour appeler ça un roman. Trop ancien pour appeler ça un exercice. Sept ans."
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Professeure principale",
@@ -324,7 +324,7 @@
     },
     "hidden_nurse_d3_8": {
         "name": "Infirmière",
-        "text": "C'est pareil pour toi. N'essaie pas de t'occuper de tout le monde. — Ce serait pas mieux de vraiment regarder la seule personne qui compte ?"
+        "text": "C'est pareil pour toi. Essaie pas de t'occuper de tout le monde. — Ça serait pas mieux de vraiment regarder la seule personne qui compte ?"
     },
     "hidden_nurse_d3_choice2": {
         "name": "{name}",

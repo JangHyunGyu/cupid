@@ -81,7 +81,7 @@
     },
     "hidden_homeroom_d4_4_d": {
         "name": "Professeure principale",
-        "text": "T'es le premier élève à regarder à travers le portail de l'école en 'passant dans le coin'."
+        "text": "T'es le premier élève que je vois mater à travers le portail en 'passant dans le coin'."
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Professeure principale",
-        "text": "Disons que c'est dans la continuité de l'intérêt pédagogique. *marmonnant doucement* Un café, ça va, non ? — Enfin, t'es élève, donc un jus."
+        "text": "Disons que ça rentre encore dans l'intérêt pédagogique. *marmonnant* Un café, ça va, non ? — Enfin, t'es élève, donc un jus."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
@@ -499,7 +499,7 @@
     },
     "hidden_nurse_d4_4_h": {
         "name": "Infirmière",
-        "text": "À l'école je suis l'Infirmière, non ? Encore un titre. *Avec un léger sourire* Mais toi, tu ne m'as jamais appelée par mon titre, pas vrai ?"
+        "text": "À l'école je suis l'Infirmière, non ? Encore un titre. *Avec un léger sourire* Mais toi, tu m'as jamais appelée par mon titre, pas vrai ?"
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",

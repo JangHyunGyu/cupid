@@ -100,7 +100,7 @@
     },
     "after3_reject_for_dain_3b": {
         "name": "{name}",
-        "text": "*Je suis revenu dans le couloir. Le sourire répété de Seoyeon, la trace d'eau que Yuna a laissée. — Celui qui n'a rien dit laisse la marque la plus longue.*"
+        "text": "*Je suis revenu dans le couloir. Le sourire répété de Seoyeon, la trace d'eau que Yuna a laissée. — Celle qui n'a rien dit laisse la marque la plus longue.*"
     },
     "after3_seo_1": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
-        "text": "...Oui. J’aurais dit que ça va."
+        "text": "...Ouais. J’aurais dit que ça va."
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
@@ -385,7 +385,7 @@
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Je sais que je me mêle de ce qui ne me regarde pas. Mais c'est que je m'inquiète pour Seoyeon. — En ce moment chez elle, c'est... compliqué. Ses parents... ...bref. S'il te plaît, sois bien avec elle. Je te le demande."
+        "text": "Je sais que je me mêle de ce qui me regarde pas. Mais c'est que je m'inquiète pour Seoyeon. — En ce moment chez elle, c'est... compliqué. Ses parents... ...bref. S'il te plaît, sois sympa avec elle. Je te le demande."
     },
     "haeun_warn_8": {
         "name": "{name}",

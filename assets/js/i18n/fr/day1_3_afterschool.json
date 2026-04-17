@@ -118,7 +118,7 @@
     },
     "after_hidden_homeroom_4": {
         "name": "Professeure principale",
-        "text": "T'as rien fait de mal. — Comme t'es nouveau, je voulais savoir. Tu t'adaptes ?"
+        "text": "T'as rien fait de mal. — C'est juste que t'es nouveau, je voulais savoir. Tu t'adaptes ?"
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
@@ -240,7 +240,7 @@
     },
     "after_nurse_enter_4": {
         "name": "Infirmière",
-        "text": "C'est toi, le nouveau ? Si tu es à l'infirmerie dès le premier jour, ça a dû être assez difficile. Laisse-moi voir."
+        "text": "C'est toi, le nouveau ? L'infirmerie dès le premier jour, ça a dû être rude. Fais voir."
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after_nurse_enter_choice_b": {
         "name": "Infirmière",
-        "text": "N'est-ce pas ? J'aime bien ici. — C'est calme, et si on oublie l'odeur de désinfectant, c'est parfait."
+        "text": "Hein ? J'aime bien ici. — C'est calme, et si on oublie l'odeur de désinfectant, c'est parfait."
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",

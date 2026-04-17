@@ -33,7 +33,7 @@
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
-        "text": "Suis-moi. Je te boucle ça en quinze minutes."
+        "text": "Suis-moi. Je te fais le tour en quinze minutes."
     },
     "seoyeon_meet_6": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "choice_flirt_4": {
         "name": "Seoyeon",
-        "text": "C'est parce que t'es nouveau ? T'as aucun filtre. C'est marrant."
+        "text": "C'est parce que t'es nouveau ? T'as zéro filtre. C'est marrant."
     },
     "choice_flirt_5": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "choice_joke_1": {
         "name": "Seoyeon",
-        "text": "C'est gratuit. — Mais avec des intérêts plus tard."
+        "text": "C'est gratuit. — Mais je facture les intérêts plus tard."
     },
     "choice_joke_2": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Mais m'dame, c'est ce que j'ai de plus confortable. Bref, salut le nouveau !"
+        "text": "Mais madame, c'est ce qu'il y a de plus confortable. Bref, salut le nouveau !"
     },
     "classroom_dain_5": {
         "name": "{name}",

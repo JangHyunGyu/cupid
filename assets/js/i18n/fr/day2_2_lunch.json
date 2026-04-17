@@ -168,7 +168,7 @@
     },
     "lunch2_yuna_5": {
         "name": "Yuna",
-        "text": "T'aurais pu ne pas venir."
+        "text": "T'étais pas obligé de venir."
     },
     "lunch2_yuna_6": {
         "name": "{name}",
@@ -176,7 +176,7 @@
     },
     "lunch2_yuna_7": {
         "name": "Yuna",
-        "text": "T'as l'air de bien t'entendre avec la bruyante. C'est plus amusant, non ?"
+        "text": "T'as l'air de bien t'entendre avec la bruyante. C'est plus marrant, non ?"
     },
     "lunch2_yuna_8": {
         "name": "{name}",
@@ -573,7 +573,7 @@
     },
     "lunch2_dain_end_g": {
         "name": "Infirmière",
-        "text": "Encore toi ? Tu veux devenir un habitué ?"
+        "text": "Encore toi ? Tu veux ta carte de fidélité ?"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Infirmière",
