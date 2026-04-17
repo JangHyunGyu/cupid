@@ -9,7 +9,7 @@
     },
     "after2_msg_seo": {
         "name": "Seoyeon",
-        "text": "Kannst du zur Schülerratskammer kommen? Uns fehlen Hände."
+        "text": "Kannst du zum Schülerratsraum kommen? Uns fehlen Hände."
     },
     "after2_msg_yuna": {
         "name": "{name}",
@@ -24,7 +24,7 @@
         "text": "*Wohin soll ich gehen?*",
         "choices": [
             "Zur Turnhalle (Dain)",
-            "Zur Schülerratskammer (Seoyeon)",
+            "Zum Schülerratsraum (Seoyeon)",
             "Am Bibliotheksanbau vorbeischauen (Yuna)"
         ]
     },
@@ -150,7 +150,7 @@
     },
     "after2_seo_1": {
         "name": "{name}",
-        "text": "*Die Schülerratskammer. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
+        "text": "*Der Schülerratsraum. Seoyeon sitzt hinter einem Stapel Dokumente. Allein.*"
     },
     "after2_seo_2": {
         "name": "Seoyeon",
@@ -254,7 +254,7 @@
     },
     "after2_seo_9": {
         "name": "{name}",
-        "text": "*Der Sonnenuntergang taucht die Schülerratskammer in Licht. Die Papierarbeit ist fast fertig.*"
+        "text": "*Der Sonnenuntergang taucht den Schülerratsraum in Licht. Die Papierarbeit ist fast fertig.*"
     },
     "after2_seo_choice2": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
-        "text": "...Ich mag diese Zeit. Wenn ich allein in der Schülerratskammer bin, muss ich keine Rolle spielen."
+        "text": "...Ich mag diese Zeit. Wenn ich allein im Schülerratsraum bin, muss ich keine Rolle spielen."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
@@ -282,7 +282,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Außer hier.' — Ob Dach oder Schülerratskammer, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
+        "text": "*'Außer hier.' — Ob Dach oder Schülerratsraum, Seoyeon ist jemand, der einen Ort braucht, an dem sie die Maske abnehmen kann.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "after2_seo_end": {
         "name": "{name}",
-        "text": "*Ich verlasse die Schülerratskammer. Der Sonnenuntergang färbt den Flur.*"
+        "text": "*Ich verlasse den Schülerratsraum. Der Sonnenuntergang färbt den Flur.*"
     },
     "after2_seo_skinship_1": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna hat zwei Sätze hintereinander gesagt. — Obwohl sie sonst nur in einzelnen Zeilen spricht.*",
+        "text": "*Yuna hat zwei Sätze hintereinander gesagt. — Obwohl sie sonst nur in Einzeilern spricht.*",
         "choices": [
             "Soll ich jeden Tag kommen?",
             "Es ist schön, weil es ruhig ist"

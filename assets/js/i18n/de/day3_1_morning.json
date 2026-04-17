@@ -340,7 +340,7 @@
     },
     "hidden_nurse_d3_choice2_b": {
         "name": "Schulkrankenschwester",
-        "text": "...Es gab einen. Einen Patienten, den ich nicht retten konnte."
+        "text": "...Es gab eine. Eine Patientin, die ich nicht retten konnte."
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",
@@ -414,7 +414,7 @@
     },
     "morning3_dain_gate_warm_2": {
         "name": "Dain",
-        "text": "Hey! Fast zu spät! Lass zusammen gehen!"
+        "text": "Hey! Fast zu spät! Lass uns zusammen gehen!"
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",

@@ -45,7 +45,7 @@
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
-        "text": "*Auf dem Dach geht der Wind.* Auch nach dem Abschluss komm ich her. Diese Pflanzen wachsen nur, wenn du da bist."
+        "text": "*Auf dem Dach weht der Wind.* Auch nach dem Abschluss komm ich her. Diese Pflanzen wachsen nur, wenn du da bist."
     },
     "perfect_seo_5": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "perfect_seo_5_b": {
         "name": "{name}",
-        "text": "*Der Wind auf dem Dach weht.*"
+        "text": "*Auf dem Dach weht der Wind.*"
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
@@ -1020,7 +1020,7 @@
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*Der Rosmarintopf wurde ans Fenster gestellt. Auf die Seite mit dem guten Licht. - Sie gießt ihn.*"
+        "text": "*Der Rosmarintopf wurde ans Fenster gestellt. Auf die Seite mit dem guten Licht. — Sie gießt ihn.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
@@ -1032,7 +1032,7 @@
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*'Glückwunsch zum Abschluss. Ich warte im Café auf dich.' - Als ich das Pflaster ablöse, finde ich innen eine kleine Wegskizze. Die Schulkrankenschwester sitzt im Café. Sie wirkt viel entspannter als im Krankenzimmer. Einfach - wie jemand, der auf mich gewartet hat.*"
+        "text": "*'Glückwunsch zum Abschluss. Ich warte im Café auf dich.' — Als ich das Pflaster ablöse, finde ich innen eine kleine Wegskizze. Die Schulkrankenschwester sitzt im Café. Sie wirkt viel entspannter als im Krankenzimmer. Einfach — wie jemand, der auf mich gewartet hat.*"
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
