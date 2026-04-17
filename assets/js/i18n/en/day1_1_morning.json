@@ -170,7 +170,7 @@
     },
     "classroom_dain_4": {
         "name": "Dain",
-        "text": "Aw c'mon, miss, it's the comfiest thing I own! Anyway — welcome, new kid!"
+        "text": "Aw c'mon, teach, it's the comfiest thing I own! Anyway — welcome, new kid!"
     },
     "classroom_dain_5": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "classroom_dain_talk_5": {
         "name": "Dain",
-        "text": "No reason! I need someone to help with receive drills after school! Nobody else will do it!"
+        "text": "No reason! I need a receive drill partner after school! Nobody else'll serve for me!"
     },
     "classroom_dain_talk_6": {
         "name": "{name}",

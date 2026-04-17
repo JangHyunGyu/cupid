@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Der Flur ist voller Schüler. Aus drei Richtungen kommt gleichzeitig ein Signal.*"
+        "text": "*Mittagspause. Der Flur ist voller Schüler. Aus drei Richtungen kommen gleichzeitig Signale.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "*Sie hatte von Anfang an vor, zusammen zu essen. Ich öffne die Lunchbox und die Beilagen wirken liebevoll zubereitet. Eierolle, Würstchen, Mini-Reisbällchen.*"
+        "text": "*Sie hatte von Anfang an vor, zusammen zu essen. Ich öffne die Lunchbox und die Beilagen wirken liebevoll zubereitet. Eierrolle, Würstchen, Mini-Reisbällchen.*"
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "lunch_seo_22": {
         "name": "{name}",
-        "text": "*Seoyeon nimmt ein Stück Eierolle und hält es mir hin.*"
+        "text": "*Seoyeon nimmt ein Stück Eierrolle und hält es mir hin.*"
     },
     "lunch_seo_23": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "lunch_seo_choice": {
         "name": "{name}",
-        "text": "*Seoyeon hält mir die Eierolle hin.*",
+        "text": "*Seoyeon hält mir die Eierrolle hin.*",
         "choices": [
             "Annehmen",
             "Würde besser schmecken, wenn du sie selbst isst"
@@ -118,7 +118,7 @@
     },
     "lunch_seo_c1_1": {
         "name": "{name}",
-        "text": "*Ich nehme die Eierolle von Seoyeons Stäbchen.*"
+        "text": "*Ich nehme die Eierrolle von Seoyeons Stäbchen.*"
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "lunch_seo_c2_1": {
         "name": "{name}",
-        "text": "*Seoyeon steckt sich die Eierolle selbst in den Mund. Kaut langsam.*"
+        "text": "*Seoyeon steckt sich die Eierrolle selbst in den Mund. Kaut langsam.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
