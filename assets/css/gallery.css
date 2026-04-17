@@ -54,7 +54,7 @@ html {
     overflow-y: auto;
     /* style.css의 overflow:hidden 오버라이드 — 갤러리는 세로 스크롤 필요 */
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 105, 180, 0.3) transparent;
+    scrollbar-color: rgba(232, 138, 160, 0.3) transparent;
 }
 
 body::-webkit-scrollbar {
@@ -66,12 +66,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: rgba(255, 105, 180, 0.3);
+    background: rgba(232, 138, 160, 0.3);
     border-radius: 3px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 105, 180, 0.5);
+    background: rgba(232, 138, 160, 0.5);
 }
 
 /* ============================================================================
@@ -84,34 +84,28 @@ body::-webkit-scrollbar-thumb:hover {
  */
 .gallery-header {
     position: fixed;
-    /* 스크롤해도 고정 위치 유지 */
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
-    background: rgba(26, 26, 46, 0.95);
-    /* 반투명 배경 */
+    background: var(--c-surface);
     backdrop-filter: blur(10px);
-    /* 배경 블러 효과 (글래스모피즘) */
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
-    /* 플렉스박스로 정렬 */
     align-items: center;
-    /* 세로 중앙 정렬 */
     justify-content: space-between;
-    /* 양쪽 끝 정렬 */
     padding: 0 20px;
     z-index: 100;
-    /* 다른 요소 위에 표시 */
-    border-bottom: 1px solid rgba(255, 105, 180, 0.3);
-    /* 핑크색 하단 테두리 */
+    border-bottom: 1px solid var(--c-border-soft);
 }
 
 /* 헤더 제목 스타일 */
 .gallery-header h1 {
-    font-size: 1.5rem;
-    color: #ff69b4;
-    /* 핫핑크 색상 */
-    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--c-text);
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 /* 헤더 우측 버튼 컨테이너 */
@@ -127,27 +121,26 @@ body::-webkit-scrollbar-thumb:hover {
  */
 .back-btn,
 .lang-btn {
-    background: rgba(255, 255, 255, 0.1);
-    /* 반투명 흰색 배경 */
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 8px 16px;
-    border-radius: 20px;
-    /* 둥근 모서리 (필 버튼 스타일) */
+    background: var(--c-surface-light);
+    color: var(--c-text);
+    border: 1px solid var(--c-border-soft);
+    padding: 7px 16px;
+    border-radius: var(--r-sharp);
     text-decoration: none;
-    /* 링크 밑줄 제거 */
-    font-size: 0.85rem;
+    font-size: 0.78rem;
+    font-family: var(--font-stack);
+    letter-spacing: 1.5px;
     cursor: pointer;
-    transition: all 0.2s;
-    /* 부드러운 전환 효과 */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: background 0.2s, border-color 0.2s;
 }
 
 /* 버튼 호버 효과 */
 .back-btn:hover,
 .lang-btn:hover {
-    background: rgba(255, 105, 180, 0.3);
-    /* 핑크색 배경으로 변경 */
-    border-color: #ff69b4;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--c-border);
 }
 
 /* ============================================================================
@@ -162,7 +155,7 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 8px 30px 8px 16px;
-    border-radius: 20px;
+    border-radius: 4px;
     font-size: 0.85rem;
     cursor: pointer;
     transition: all 0.2s;
@@ -191,8 +184,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .lang-combo-selected:hover {
-    background: rgba(255, 105, 180, 0.3);
-    border-color: #ff69b4;
+    background: rgba(232, 138, 160, 0.3);
+    border-color: var(--c-accent);
 }
 
 .lang-combo-dropdown {
@@ -236,12 +229,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .lang-combo-option:hover {
-    background: rgba(255, 105, 180, 0.3);
+    background: rgba(232, 138, 160, 0.3);
 }
 
 .lang-combo-option.active {
-    background: rgba(255, 105, 180, 0.15);
-    color: #ff69b4;
+    background: rgba(232, 138, 160, 0.15);
+    color: var(--c-accent);
 }
 
 .lang-combo-option .lang-flag {
@@ -276,32 +269,33 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* 탭 버튼 기본 스타일 */
 .tab-btn {
-    background: rgba(255, 255, 255, 0.05);
-    color: #aaa;
-    /* 비활성 상태: 회색 텍스트 */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px 24px;
-    border-radius: 25px;
-    /* 둥근 필 버튼 */
-    font-size: 0.95rem;
+    background: var(--c-surface-light);
+    color: var(--c-text-soft);
+    border: 1px solid var(--c-border-soft);
+    padding: 11px 24px;
+    border-radius: var(--r-sharp);
+    font-size: 0.85rem;
+    font-family: var(--font-stack);
+    font-weight: 400;
+    letter-spacing: 1.5px;
     cursor: pointer;
-    transition: all 0.3s;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
 }
 
 /* 탭 버튼 호버 효과 */
 .tab-btn:hover {
-    background: rgba(255, 105, 180, 0.2);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--c-text);
+    border-color: var(--c-border);
 }
 
 /* 탭 버튼 활성 상태 */
 .tab-btn.active {
-    /* 핑크 그라데이션 배경 */
-    background: linear-gradient(135deg, #ff69b4, #ff1493);
-    color: #fff;
-    border-color: transparent;
-    /* 핑크 그림자 효과 */
-    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    background: var(--c-accent-soft);
+    color: var(--c-text);
+    border-color: var(--c-accent);
 }
 
 /* ============================================================================
@@ -363,7 +357,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* 캐릭터 카드 */
 .character-card {
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
+    border-radius: 4px;
     /* 둥근 모서리 */
     overflow: hidden;
     /* 내용이 넘치면 숨김 */
@@ -376,8 +370,8 @@ body::-webkit-scrollbar-thumb:hover {
 .character-card:hover {
     transform: translateY(-5px);
     /* 위로 살짝 떠오름 */
-    border-color: rgba(255, 105, 180, 0.5);
-    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+    border-color: rgba(232, 138, 160, 0.5);
+    box-shadow: 0 10px 30px rgba(232, 138, 160, 0.2);
     /* 핑크 그림자 */
 }
 
@@ -454,7 +448,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* 캐릭터 이름 */
 .card-info h3 {
     font-size: 1.2rem;
-    color: #ff69b4;
+    color: var(--c-accent);
     /* 핑크색 */
     margin-bottom: 5px;
 }
@@ -469,8 +463,8 @@ body::-webkit-scrollbar-thumb:hover {
 /* 표정 개수 배지 */
 .expression-count {
     display: inline-block;
-    background: rgba(255, 105, 180, 0.2);
-    color: #ff69b4;
+    background: rgba(232, 138, 160, 0.2);
+    color: var(--c-accent);
     padding: 4px 10px;
     border-radius: 10px;
     font-size: 0.75rem;
@@ -511,7 +505,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* 모달 콘텐츠 박스 */
 .modal-content {
     background: #1a1a2e;
-    border-radius: 20px;
+    border-radius: 4px;
     max-width: 900px;
     width: 100%;
     max-height: 90vh;
@@ -519,7 +513,7 @@ body::-webkit-scrollbar-thumb:hover {
     /* 내용이 넘치면 스크롤 */
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(255, 105, 180, 0.3);
+    border: 1px solid rgba(232, 138, 160, 0.3);
 }
 
 /* 모달 헤더 */
@@ -533,8 +527,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* 모달 헤더 제목 */
 .modal-header h2 {
-    color: #ff69b4;
-    font-size: 1.5rem;
+    color: var(--c-text);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 }
 
 /* 모달 닫기 버튼 */
@@ -549,7 +545,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .modal-close:hover {
-    color: #ff69b4;
+    color: var(--c-accent);
 }
 
 /* 
@@ -602,7 +598,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* 섹션 제목 */
 .detail-section h4 {
-    color: #ff69b4;
+    color: var(--c-accent);
     font-size: 0.9rem;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -645,13 +641,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* 표정 버튼 호버 */
 .expression-btn:hover {
-    background: rgba(255, 105, 180, 0.2);
+    background: rgba(232, 138, 160, 0.2);
     color: #fff;
 }
 
 /* 표정 버튼 활성 상태 */
 .expression-btn.active {
-    background: #ff69b4;
+    background: var(--c-accent);
     color: #fff;
     border-color: transparent;
 }
@@ -708,13 +704,13 @@ body::-webkit-scrollbar-thumb:hover {
 .locked-stat {
     cursor: pointer;
     padding: 2px 8px;
-    background: rgba(255, 105, 180, 0.2);
+    background: rgba(232, 138, 160, 0.2);
     border-radius: 5px;
     transition: all 0.2s;
 }
 
 .locked-stat:hover {
-    background: rgba(255, 105, 180, 0.4);
+    background: rgba(232, 138, 160, 0.4);
 }
 
 /* 
@@ -723,7 +719,7 @@ body::-webkit-scrollbar-thumb:hover {
  */
 .desc-more-btn {
     display: inline-block;
-    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    background: var(--c-accent-strong);
     color: #fff;
     border: none;
     padding: 5px 12px;
@@ -736,7 +732,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .desc-more-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 3px 10px rgba(255, 105, 180, 0.4);
+    box-shadow: 0 3px 10px rgba(232, 138, 160, 0.4);
 }
 
 /* ============================================================================
@@ -759,11 +755,11 @@ body::-webkit-scrollbar-thumb:hover {
 .cg-card {
     width: 100%;
     background: linear-gradient(145deg, rgba(40, 30, 60, 0.8), rgba(20, 15, 35, 0.9));
-    border-radius: 20px;
+    border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 2px solid rgba(255, 105, 180, 0.2);
+    border: 2px solid rgba(232, 138, 160, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     position: relative;
 }
@@ -771,9 +767,9 @@ body::-webkit-scrollbar-thumb:hover {
 /* CG 카드 호버 효과 */
 .cg-card:hover:not(.locked) {
     transform: translateY(-8px) scale(1.02);
-    border-color: #ff69b4;
-    box-shadow: 0 20px 50px rgba(255, 105, 180, 0.4),
-        0 0 30px rgba(255, 105, 180, 0.2);
+    border-color: var(--c-accent);
+    box-shadow: 0 20px 50px rgba(232, 138, 160, 0.4),
+        0 0 30px rgba(232, 138, 160, 0.2);
 }
 
 /* 잠긴 CG 카드 */
@@ -874,7 +870,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* 잠긴 CG 자물쇠 오버레이 개선 */
 .cg-card.locked .lock-overlay {
     font-size: 3rem;
-    text-shadow: 0 0 20px rgba(255, 105, 180, 0.6),
+    text-shadow: 0 0 20px rgba(232, 138, 160, 0.6),
         0 0 40px rgba(200, 100, 255, 0.4);
     animation: lockPulse 2s ease-in-out infinite;
     z-index: 1;
@@ -937,7 +933,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .cg-item:hover {
     transform: scale(1.02);
-    border-color: #ff69b4;
+    border-color: var(--c-accent);
 }
 
 .cg-item img {
@@ -1037,8 +1033,8 @@ body::-webkit-scrollbar-thumb:hover {
     height: 120%;
     transform: translate(-50%, -50%);
     background: radial-gradient(circle at center,
-            rgba(255, 105, 180, 0.15) 0%,
-            rgba(255, 105, 180, 0.05) 40%,
+            rgba(232, 138, 160, 0.15) 0%,
+            rgba(232, 138, 160, 0.05) 40%,
             transparent 70%);
     pointer-events: none;
     z-index: 0;
@@ -1090,7 +1086,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ff6b9d, #c44569);
+    background: var(--c-accent-strong);
     border: 2px solid rgba(255, 255, 255, 0.3);
     color: white;
     font-size: 1.5rem;
@@ -1100,12 +1096,12 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.5);
+    box-shadow: 0 4px 15px rgba(232, 138, 160, 0.5);
 }
 
 .cg-close-btn:hover {
     transform: scale(1.1) rotate(90deg);
-    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.7);
+    box-shadow: 0 6px 20px rgba(232, 138, 160, 0.7);
 }
 
 /* CG 뷰어 */
@@ -1115,8 +1111,8 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 15px;
     margin-bottom: 20px;
     position: relative;
-    box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
-    border: 2px solid rgba(255, 105, 180, 0.3);
+    box-shadow: 0 10px 40px rgba(232, 138, 160, 0.3);
+    border: 2px solid rgba(232, 138, 160, 0.3);
 }
 
 /* CG 이미지 - 줌인 + 페이드 효과 */
@@ -1150,9 +1146,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .cg-info h3 {
     font-size: 1.3rem;
-    color: #ff69b4;
+    color: var(--c-accent);
     margin-bottom: 10px;
-    text-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    text-shadow: 0 0 20px rgba(232, 138, 160, 0.5);
 }
 
 .cg-info p {
@@ -1182,23 +1178,23 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 10px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255, 105, 180, 0.1);
+    border: 1px solid rgba(232, 138, 160, 0.1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* 음악 항목 호버 */
 .music-item:hover {
     background: linear-gradient(135deg, rgba(60, 40, 90, 0.7), rgba(40, 25, 60, 0.9));
-    border-color: rgba(255, 105, 180, 0.35);
+    border-color: rgba(232, 138, 160, 0.35);
     transform: translateX(4px);
-    box-shadow: 0 4px 16px rgba(255, 105, 180, 0.1);
+    box-shadow: 0 4px 16px rgba(232, 138, 160, 0.1);
 }
 
 /* 재생 중인 음악 항목 */
 .music-item.playing {
-    background: linear-gradient(135deg, rgba(255, 105, 180, 0.15), rgba(200, 50, 150, 0.12));
-    border-color: rgba(255, 105, 180, 0.5);
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+    background: linear-gradient(135deg, rgba(232, 138, 160, 0.15), rgba(200, 50, 150, 0.12));
+    border-color: rgba(232, 138, 160, 0.5);
+    box-shadow: 0 0 20px rgba(232, 138, 160, 0.2);
     animation: musicGlow 2.5s ease-in-out infinite;
 }
 
@@ -1206,11 +1202,11 @@ body::-webkit-scrollbar-thumb:hover {
 
     0%,
     100% {
-        box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+        box-shadow: 0 0 20px rgba(232, 138, 160, 0.2);
     }
 
     50% {
-        box-shadow: 0 0 28px rgba(255, 105, 180, 0.35);
+        box-shadow: 0 0 28px rgba(232, 138, 160, 0.35);
     }
 }
 
@@ -1238,25 +1234,25 @@ body::-webkit-scrollbar-thumb:hover {
 .music-icon {
     width: 46px;
     height: 46px;
-    background: linear-gradient(135deg, #ff69b4, #e0449a);
+    background: linear-gradient(135deg, var(--c-accent), #e0449a);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
     flex-shrink: 0;
-    box-shadow: 0 3px 10px rgba(255, 105, 180, 0.3);
+    box-shadow: 0 3px 10px rgba(232, 138, 160, 0.3);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .music-item:hover .music-icon {
     transform: scale(1.08);
-    box-shadow: 0 4px 16px rgba(255, 105, 180, 0.45);
+    box-shadow: 0 4px 16px rgba(232, 138, 160, 0.45);
 }
 
 .music-item.playing .music-icon {
-    background: linear-gradient(135deg, #ff1493, #c43a8a);
-    box-shadow: 0 0 18px rgba(255, 105, 180, 0.5);
+    background: linear-gradient(135deg, var(--c-accent-strong), #c43a8a);
+    box-shadow: 0 0 18px rgba(232, 138, 160, 0.5);
     animation: iconPulse 2s ease-in-out infinite;
 }
 
@@ -1265,12 +1261,12 @@ body::-webkit-scrollbar-thumb:hover {
     0%,
     100% {
         transform: scale(1);
-        box-shadow: 0 0 18px rgba(255, 105, 180, 0.5);
+        box-shadow: 0 0 18px rgba(232, 138, 160, 0.5);
     }
 
     50% {
         transform: scale(1.06);
-        box-shadow: 0 0 24px rgba(255, 105, 180, 0.65);
+        box-shadow: 0 0 24px rgba(232, 138, 160, 0.65);
     }
 }
 
@@ -1596,12 +1592,12 @@ body::-webkit-scrollbar-thumb:hover {
 /* 팝업 콘텐츠 */
 .unlock-popup-content {
     background: linear-gradient(135deg, #2a2a4a 0%, #1a1a2e 100%);
-    border-radius: 20px;
+    border-radius: 4px;
     padding: 40px 30px;
     max-width: 400px;
     width: 100%;
     text-align: center;
-    border: 1px solid rgba(255, 105, 180, 0.3);
+    border: 1px solid rgba(232, 138, 160, 0.3);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     transform: scale(0.9) translateY(20px);
     transition: all 0.3s ease;
@@ -1633,7 +1629,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* 팝업 제목 */
 .unlock-popup-title {
     font-size: 1.3rem;
-    color: #ff69b4;
+    color: var(--c-accent);
     margin-bottom: 15px;
     font-weight: 700;
 }
@@ -1676,21 +1672,21 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* 팝업 버튼 */
 .unlock-popup-btn {
-    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    background: var(--c-accent-strong);
     color: #fff;
     border: none;
     padding: 12px 40px;
-    border-radius: 25px;
+    border-radius: 4px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+    box-shadow: 0 4px 15px rgba(232, 138, 160, 0.4);
 }
 
 .unlock-popup-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5);
+    box-shadow: 0 6px 20px rgba(232, 138, 160, 0.5);
 }
 
 .unlock-popup-btn:active {
