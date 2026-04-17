@@ -694,14 +694,17 @@ ${charInteractionGuideline}
    - You can change your facial expression based on your mood. Available expressions for ${aiCharName}: ${Object.keys(window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
    - The expression value will be read from the JSON "expression" field of your response. Use an empty string "" if no expression change is needed.
 
-${isRemote ? `**RESPONSE FORMAT**: You MUST respond in valid JSON with exactly these 3 fields:
+${isRemote ? `**RESPONSE FORMAT (segments array REQUIRED)**: You MUST respond in valid JSON with a segments array:
 {
-  "text": "Your dialogue here (pure text, NO tags)",
+  "segments": [
+    { "type": "dialogue", "text": "Your spoken line here" }
+  ],
   "expression": "shy",
   "affinity": 2
 }
-Example: {"text": "${ex.greet}", "expression": "shy", "affinity": 2}
-Example (no change): {"text": "${ex.okay}", "expression": "", "affinity": 0}` : `**[Stage Direction Guidelines (Face-to-Face)]**: Include *asterisk stage directions* in the text field alongside dialogue:
+Remote/messenger scenes are usually dialogue-only (no stage directions), so segments typically contains one or more { "type": "dialogue", "text": "..." } elements. Occasional narration is allowed for atmosphere (e.g., "typing...", "sends a photo") as { "type": "narration", "text": "..." }.
+Example: {"segments":[{"type":"dialogue","text":"${ex.greet}"}], "expression": "shy", "affinity": 2}
+Example (no change): {"segments":[{"type":"dialogue","text":"${ex.okay}"}], "expression": "", "affinity": 0}` : `**[Stage Direction Guidelines (Face-to-Face)]**: Include *asterisk stage directions* in the text field alongside dialogue:
    ① **Atmosphere/Environment**: Surroundings, light, sounds, smells, bystander reactions
    ② **Body Language**: Unconscious gestures, gaze shifts, fingertip tremors, breathing changes — show emotions through the body, not words
    ③ **Psychology**: From 3rd-person perspective, the character's inner conflict, hidden emotions, true feelings
@@ -715,14 +718,24 @@ Example (no change): {"text": "${ex.okay}", "expression": "", "affinity": 0}` : 
      After writing, scan every asterisked sentence — if any I/me/my/you/your appears, rewrite.
    - **[🚨 Narration / Dialogue Separation (CRITICAL)]**: Spoken dialogue (conversational utterances) must NEVER appear inside *...*. Put spoken lines OUTSIDE the asterisks. Violation: *"Really?" she tilted her head.* ❌ → ✓ "Really?" *She tilted her head.*
 
-**RESPONSE FORMAT**: You MUST respond in valid JSON with exactly these 3 fields:
+**RESPONSE FORMAT (segments array REQUIRED)**: You MUST respond in valid JSON with a segments array:
 {
-  "text": "*stage direction* dialogue *stage direction* dialogue *stage direction*",
+  "segments": [
+    { "type": "narration", "text": "stage direction without asterisks" },
+    { "type": "dialogue", "text": "spoken line without asterisks" },
+    { "type": "narration", "text": "another stage direction" }
+  ],
   "expression": "shy",
   "affinity": 2
 }
-Example: {"text": "${ex.f2fScene}", "expression": "shy", "affinity": 2}
-Example (no change): {"text": "${ex.f2fNod}", "expression": "", "affinity": 0}`}
+**[segments rules (violation = system error)]**:
+① Each element MUST be { "type": "narration"|"dialogue", "text": "..." }.
+② type MUST be exactly "narration" (stage direction, 3rd-person prose) or "dialogue" (spoken line).
+③ NEVER put asterisks inside the text field. narration text = pure 3rd-person narration (✅ "turns her head" / ❌ "*turns her head*"). dialogue text = pure spoken line (✅ "Really?" / ❌ "Really? *tilts head*" — split into separate narration element).
+④ Interleave narration and dialogue for vivid scene direction. Spoken utterances are ALWAYS dialogue; literary past/present-tense sentences are ALWAYS narration.
+⑤ The examples below are shown in legacy inline-asterisk style for readability, but your actual output MUST be segments array. Mentally convert: \`*turns away*\` → \`{"type":"narration","text":"turns away"}\`, \`"Really?"\` → \`{"type":"dialogue","text":"Really?"}\`.
+Legacy-style example (convert to segments): {"segments":[...segments derived from ${ex.f2fScene}...], "expression": "shy", "affinity": 2}
+Legacy-style example (no change): {"segments":[{"type":"dialogue","text":"${ex.f2fNod}"}], "expression": "", "affinity": 0}`}
 
 8. Affinity-based Addressing:
    - Adjust how you address the user based on affinity for ${aiCharName}:

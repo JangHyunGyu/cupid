@@ -763,8 +763,9 @@ class FreeTalkSystem {
                 this.uiManager.dialogueBox.classList.remove('thinking-box');
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
-                await this.dialogueSystem.typeText(reply, scene.name);
-                this.freeTalkHistory.push({ role: "assistant", content: reply });
+                // segments가 있으면 typeText에 전달 (별표 파싱 건너뛰고 구조화 렌더)
+                await this.dialogueSystem.typeText(reply, scene.name, parsed.segments || null);
+                this.freeTalkHistory.push({ role: "assistant", content: reply, segments: parsed.segments || null });
 
                 // 대화 기록 저장 (로컬)
                 this.stateManager.setChatMemory(scene.name, this.freeTalkHistory);
@@ -862,11 +863,11 @@ class FreeTalkSystem {
      */
     parseJsonResponse(reply) {
         // 📌 빈 응답이면 기본 구조체 반환
-        if (!reply) return { text: "", expression: "", affinity: 0 };
+        if (!reply) return { text: "", segments: null, expression: "", affinity: 0 };
 
         // 📌 JSON일 가능성 체크 (중괄호, 대괄호, 또는 코드블록 포함 여부)
         const likelyJson = reply.includes('{') || reply.includes('[') || reply.includes('```json');
-        if (!likelyJson) return { text: reply, expression: "", affinity: 0 };  // 순수 텍스트면 그대로
+        if (!likelyJson) return { text: reply, segments: null, expression: "", affinity: 0 };  // 순수 텍스트면 그대로
 
         try {
             let jsonStr = reply;
@@ -895,10 +896,23 @@ class FreeTalkSystem {
             // 📌 JSON 파싱 시도
             const parsed = JSON.parse(jsonStr);
 
-            // 📌 cupid 스키마 형식 {text, expression, affinity} 인지 확인
+            // 📌 신규 — segments 배열 우선 처리 {segments, expression, affinity}
+            if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && Array.isArray(parsed.segments) && parsed.segments.length > 0) {
+                const normalizedSegments = this.normalizeSegments(parsed.segments);
+                const derivedText = this.segmentsToText(normalizedSegments);
+                return {
+                    text: derivedText,
+                    segments: normalizedSegments,
+                    expression: (parsed.expression || "").toLowerCase(),
+                    affinity: parseInt(parsed.affinity) || 0,
+                };
+            }
+
+            // 📌 cupid 레거시 스키마 {text, expression, affinity}
             if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && typeof parsed.text === 'string') {
                 return {
                     text: parsed.text || "",
+                    segments: null,
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: parseInt(parsed.affinity) || 0,
                 };
@@ -937,7 +951,7 @@ class FreeTalkSystem {
                 fallbackText = getTextFromObj(parsed);
             }
             if (fallbackText && typeof fallbackText === 'string') {
-                return { text: fallbackText, expression: "", affinity: 0 };
+                return { text: fallbackText, segments: null, expression: "", affinity: 0 };
             }
         } catch (e) {
             // 📌 JSON 파싱 실패 시 경고 로그 (원본 반환됨)
@@ -948,9 +962,48 @@ class FreeTalkSystem {
         const langFallback = window.GAME_LANG || document.documentElement.lang || 'ko';
         return {
             text: { es: "No pude entender la respuesta. Intentaré de nuevo.", ja: "応答を理解できませんでした。もう一度試みます。", en: "I couldn't understand the response. Let me try again.", fr: "Je n'ai pas pu comprendre la réponse. Laissez-moi réessayer.", de: "Ich konnte die Antwort nicht verstehen. Lass mich es nochmal versuchen.", pt: "Não consegui entender a resposta. Deixa eu tentar de novo." }[langFallback] || "응답을 이해할 수 없습니다. 다시 시도하겠습니다.",
+            segments: null,
             expression: "",
             affinity: 0,
         };
+    }
+
+    /**
+     * AI가 반환한 segments 배열을 표준 포맷으로 정규화
+     * 허용 type: 'narration' | 'dialogue'
+     */
+    normalizeSegments(raw) {
+        if (!Array.isArray(raw)) return null;
+        const out = [];
+        for (const seg of raw) {
+            if (!seg || typeof seg !== 'object') continue;
+            const text = typeof seg.text === 'string' ? seg.text.trim() : '';
+            if (!text) continue;
+            let type = (typeof seg.type === 'string') ? seg.type.toLowerCase() : '';
+            if (type === 'action' || type === 'narrate' || type === 'narrator' || type === 'desc' || type === 'description' || type === 'scene') {
+                type = 'narration';
+            } else if (type === 'speech' || type === 'line' || type === 'text' || type === 'talk') {
+                type = 'dialogue';
+            }
+            if (type !== 'narration' && type !== 'dialogue') {
+                const endsWithSpeech = /[.?!…][\s]*$/.test(text) && /[야어네지어!?~"']\s*$/.test(text);
+                type = endsWithSpeech ? 'dialogue' : 'narration';
+            }
+            out.push({ type, text });
+        }
+        return out.length > 0 ? out : null;
+    }
+
+    /**
+     * segments 배열을 레거시 호환 인라인 텍스트로 변환
+     * narration → *text*, dialogue → text
+     */
+    segmentsToText(segments) {
+        if (!Array.isArray(segments) || segments.length === 0) return '';
+        return segments.map(s => {
+            if (!s || !s.text) return '';
+            return s.type === 'narration' ? `*${s.text}*` : s.text;
+        }).filter(Boolean).join(' ');
     }
 
     /**
