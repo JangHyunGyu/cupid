@@ -44,7 +44,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.6.3";
+const ASSET_VERSION = "2.6.4";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -111,6 +111,8 @@ const CHAR_NAME_MAP = Object.freeze({
     "Homeroom Teacher": "Teacher", "School Nurse": "Nurse",
     // Spanish
     "Profesora": "Teacher", "Enfermera": "Nurse",
+    // Portuguese (PT-BR)
+    "Professora": "Teacher", "Enfermeira": "Nurse",
     // Japanese
     "ソヨン": "Seoyeon", "ユナ": "Yuna", "ダイン": "Dain",
     "担任先生": "Teacher", "保健先生": "Nurse", "保健室の先生": "Nurse",
