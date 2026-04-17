@@ -293,7 +293,7 @@
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
-        "text": "That’s the cruelest thing you can say, {name}. Kindness that can’t refuse — gives people false hope."
+        "text": "That’s the cruelest thing you can say, {name}. Kindness that can’t say no — just leads people on."
     },
     "after3_confront_admit_3": {
         "name": "{name}",
@@ -373,7 +373,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Seoyeon is someone who thinks she has to be perfect. Someone who thinks crying means losing."
+        "text": "Seoyeon thinks she has to be perfect. Thinks crying means losing."
     },
     "haeun_warn_5c": {
         "name": "{name}",
