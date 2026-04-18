@@ -35,7 +35,7 @@
     <header class="gallery-header">
         <h1>📖 ギャラリー</h1>
         <div class="header-actions">
-            <a href="/index-ja" class="back-btn">← 戻る</a>
+            <a href="/index-ja" class="back-btn" onclick="if(window.opener&&!window.opener.closed){window.close();return false;}">← 戻る</a>
             <div class="lang-combo" id="langCombo">
                 <div class="lang-combo-selected" onclick="toggleLangCombo()">
                     <span class="lang-flag">🇯🇵</span> 日本語
