@@ -263,7 +263,7 @@ class GalleryUI {
                 `Pour voir le look spécial de ${charName},<br>vous devez remplir les deux conditions !<br><br><span class="condition-line">💕 Affinité max : ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Discussions libres : ${freeTalkCount}/30 ${talkStatus}</span>`,
                 `Um ${charName}s besonderes Aussehen zu sehen,<br>musst du beide Bedingungen erfüllen!<br><br><span class="condition-line">💕 Max. Zuneigung: ${currentAffinity}/100 ${affinityStatus}</span><span class="condition-line">💬 Freie Gespräche: ${freeTalkCount}/30 ${talkStatus}</span>`
             ),
-            icon: '👙'
+            icon: '💎'
         });
     }
 
