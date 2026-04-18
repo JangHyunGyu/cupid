@@ -642,7 +642,7 @@ class GalleryData {
             bored: '지루함',     // 지루해하는 표정
             active: '활발',      // 활발한 표정
             sweat: '땀흘림',     // 땀에 젖은 표정
-            bikini: '비키니'     // 특별 표정 (호감도 100 + 프리토킹 100회)
+            bikini: '???'        // 특별 표정 라벨 (호감도 100 + 프리토킹 30회 해금). 미스터리 연출 위해 '???' 사용 — 해금 전까지 무엇인지 숨김
         },
 
         // 영어 표정 이름
@@ -661,7 +661,7 @@ class GalleryData {
             bored: 'Bored',
             active: 'Active',
             sweat: 'Nervous',
-            bikini: 'Bikini'     // Special expression (Affinity 100 + 100 Free Talks)
+            bikini: '???'
         },
 
         // 스페인어 표정 이름
@@ -680,7 +680,7 @@ class GalleryData {
             bored: 'Aburrida',
             active: 'Activa',
             sweat: 'Nerviosa',
-            bikini: 'Bikini'
+            bikini: '???'
         },
 
         // 일본어 표정 이름
@@ -699,7 +699,7 @@ class GalleryData {
             bored: '退屈',
             active: '活発',
             sweat: '汗',
-            bikini: 'ビキニ'
+            bikini: '???'
         },
 
         // 프랑스어 표정 이름
@@ -718,7 +718,7 @@ class GalleryData {
             bored: 'Ennuyée',
             active: 'Dynamique',
             sweat: 'Nerveuse',
-            bikini: 'Bikini'
+            bikini: '???'
         },
 
         // 독일어 표정 이름
@@ -737,7 +737,7 @@ class GalleryData {
             bored: 'Gelangweilt',
             active: 'Aktiv',
             sweat: 'Nervös',
-            bikini: 'Bikini'
+            bikini: '???'
         },
 
         // 포르투갈어 표정 이름
@@ -756,7 +756,7 @@ class GalleryData {
             bored: 'Entediada',
             active: 'Ativa',
             sweat: 'Nervosa',
-            bikini: 'Biquini'
+            bikini: '???'
         }
     };
 
