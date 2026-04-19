@@ -317,7 +317,7 @@
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*J'ai quitté le gymnase. Il pleut. — Les points d'exclamation sont revenus, mais la dernière phrase n'en avait pas. Quand Dain finit par un point, c'est qu'il ne reste plus d'énergie à partager.*"
+        "text": "*J'ai quitté le gymnase. Il pleut. — Les points d'exclamation sont revenus, mais la dernière phrase s'est terminée par un point.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -992,7 +992,7 @@
     },
     "hidden_perfect_nurse_4": {
         "name": "Infirmière",
-        "text": "*Sa main remonte et attrape ma cravate. Pas espiègle. Ses yeux sont sérieux.* ...Ce soir, tu ne pars pas."
+        "text": "*Sa main remonte et attrape ma cravate. Elle ne lâche pas.* ...Ce soir, tu ne pars pas."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",

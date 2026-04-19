@@ -317,7 +317,7 @@
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*Ich verließ die Turnhalle. Es regnet. — Die Ausrufezeichen waren zurück, aber der letzte Satz hatte keines. Wenn Dain mit einem Punkt endet, bedeutet das, dass keine Energie mehr übrig ist, um sie zu teilen.*"
+        "text": "*Ich verließ die Turnhalle. Es regnet. — Die Ausrufezeichen waren zurück, aber der letzte Satz endete mit einem Punkt.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -992,7 +992,7 @@
     },
     "hidden_perfect_nurse_4": {
         "name": "Schulkrankenschwester",
-        "text": "*Ihre Hand greift nach meiner Krawatte. Nicht spielerisch. Ihre Augen sind ernst.* ...Heute Nacht lasse ich dich nicht gehen."
+        "text": "*Ihre Hand greift nach meiner Krawatte. Sie lässt nicht los.* ...Heute Nacht lasse ich dich nicht gehen."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",

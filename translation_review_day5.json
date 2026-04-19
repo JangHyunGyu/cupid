@@ -12734,37 +12734,47 @@
     "bitter_dain_3": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#bitter_dain_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*체육관을 나왔다. 비가 내린다. — 느낌표가 돌아왔지만 마지막 문장에는...",
+      "_ko_text_preview": "*체육관을 나왔다. 비가 내린다. — 느낌표가 돌아왔지만 마지막 문장엔 마침표였다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#bitter_dain_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#bitter_dain_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#bitter_dain_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#bitter_dain_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#bitter_dain_3",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       }
     },
     "bitter_dain_3_b": {
@@ -18889,37 +18899,47 @@
     "hidden_perfect_nurse_4": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_perfect_nurse_4",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*손이 올라와 넥타이를 잡는다. 장난기가 아니다. 눈이 진지하다.* .....",
+      "_ko_text_preview": "*손이 올라와 넥타이를 잡는다. 놓지 않는다.* ...오늘은 안 돌려보낼 거야.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_perfect_nurse_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day5_4_night.json#hidden_perfect_nurse_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day5_4_night.json#hidden_perfect_nurse_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day5_4_night.json#hidden_perfect_nurse_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_4_night.json#hidden_perfect_nurse_4",
         "_reviewed": false,
         "_score": 10,
-        "_issues": null
+        "_issues": [
+          "cringe_refactor_2026_04_20"
+        ]
       }
     },
     "hidden_perfect_nurse_4b": {

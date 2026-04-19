@@ -248,7 +248,7 @@
     },
     "hidden_perfect_nurse_4": {
         "name": "Enfermeira",
-        "text": "*A mão sobe e segura minha gravata. Não é brincadeira. Os olhos tão sérios.* ...Hoje não te mando embora."
+        "text": "*A mão sobe e segura minha gravata. Não larga.* ...Hoje não te mando embora."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",
@@ -736,7 +736,7 @@
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*Saí do ginásio. Tá chovendo. — A exclamação voltou, mas não ficou na última frase. Quando a Dain termina com ponto final, é porque não sobrou mais energia pra dividir.*"
+        "text": "*Saí do ginásio. Tá chovendo. — A exclamação voltou, mas a última frase terminou com ponto final.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
