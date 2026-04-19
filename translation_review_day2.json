@@ -1349,7 +1349,7 @@
     "morning2_dain_claim_6": {
       "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#morning2_dain_claim_6",
       "_ko_name": "다인",
-      "_ko_text_preview": "아 내가 먼저 봤으니까 내 거지! 내가 점찍었음.",
+      "_ko_text_preview": "내가 먼저 봤잖아~ 그럼 우리 맞지. 찜한 거.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_1_morning.json#morning2_dain_claim_6",
