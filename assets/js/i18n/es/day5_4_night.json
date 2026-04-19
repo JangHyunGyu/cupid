@@ -317,7 +317,7 @@
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*Salí del gimnasio. Está lloviendo. — Los signos de exclamación volvieron, pero la última frase no llevaba. Que Dain acabe con un punto significa que ya no le quedan fuerzas para compartir.*"
+        "text": "*Salí del gimnasio. Está lloviendo. — Los signos de exclamación volvieron, pero la última frase acabó en punto.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -992,7 +992,7 @@
     },
     "hidden_perfect_nurse_4": {
         "name": "Enfermera",
-        "text": "*Sube la mano y me agarra la corbata. No es un juego. La mirada va en serio.* ...Esta noche no te vas."
+        "text": "*Sube la mano y me agarra la corbata. No la suelta.* ...Esta noche no te vas."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",

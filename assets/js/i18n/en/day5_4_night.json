@@ -317,7 +317,7 @@
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*I left the gym. It's raining. — The exclamation marks came back, but the last sentence had none. When Dain ends with a period, it means there's no energy left to share.*"
+        "text": "*I left the gym. It's raining. — The exclamation marks came back, but the last sentence ended with a period.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -992,7 +992,7 @@
     },
     "hidden_perfect_nurse_4": {
         "name": "School Nurse",
-        "text": "*Her hand reaches up and grabs my tie. Not playful. Her eyes are serious.* ...I'm not letting you leave tonight."
+        "text": "*Her hand reaches up and takes my tie. She doesn't let go.* ...I'm not sending you home tonight."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",
