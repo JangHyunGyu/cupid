@@ -9,7 +9,8 @@ const OUT = __dirname;
 // 언어별 cupid 메인 경로
 const HOME = {
   ko: '/', en: '/index-en.html', ja: '/index-ja.html',
-  es: '/index-es.html', fr: '/index-fr.html', de: '/index-de.html'
+  es: '/index-es.html', fr: '/index-fr.html', de: '/index-de.html',
+  pt: '/index-pt.html'
 };
 
 // 언어별 공통 카피 (한 번만 번역)
@@ -154,6 +155,34 @@ const C = {
     other_langs_label: 'Autres langues',
     footer: '© archerlab — jeux romantiques en navigateur, sans téléchargement'
   },
+  pt: {
+    htmlLang: 'pt',
+    why_title: 'Por que um simulador de romance no navegador?',
+    why: [
+      'Sem instalar, sem baixar, sem cadastro — só clicar e jogar',
+      'Mesmo save em PC, tablet e celular',
+      'Zero espaço em disco — feche a aba e não fica nada',
+      'História completa grátis, sem anúncios nem paywalls no meio da rota'
+    ],
+    how_title: 'Comece a jogar em 30 segundos',
+    how: ['Clique no botão [Jogar agora] abaixo', 'Escolha o personagem que quer conquistar', 'Faça escolhas ao longo de 5 dias e alcance um final'],
+    faq_title: 'Perguntas frequentes',
+    faqs: [
+      ['É 100% grátis mesmo?', 'Sim. Todas as rotas de personagens e finais são totalmente jogáveis sem pagamento, sem assinatura e sem cadastro.'],
+      ['Funciona no celular?', 'Sim, em qualquer navegador móvel moderno (Chrome, Safari, Edge). A interface é pensada na vertical, dá pra jogar com uma mão.'],
+      ['Meu progresso é salvo?', 'Sim. O progresso é salvo automaticamente no seu navegador. No mesmo aparelho e navegador, você continua de onde parou.'],
+      ['Qual é o gênero?', 'Uma visual novel romântica de 5 dias em formato de mensageiro. Suas escolhas ramificam a história e desbloqueiam finais diferentes.']
+    ],
+    picks_title: 'Simuladores de romance sem download recomendados',
+    cupid_name: 'Cupid — Cinco dias com o Cupido IA',
+    cupid_desc: 'Uma VN romântica em formato de mensageiro com múltiplos finais. Construa uma relação crível ao longo de cinco dias de chat. Otimizada para celular.',
+    nevergrad_name: 'Nevergrad (em breve)',
+    nevergrad_label: 'Abril 2026',
+    nevergrad_desc: 'Personagens mais profundos, rotas mais longas. O próximo título da equipe archerlab.',
+    cta: 'Jogar grátis agora →',
+    other_langs_label: 'Outros idiomas',
+    footer: '© archerlab — jogos românticos no navegador, sem download'
+  },
   de: {
     htmlLang: 'de',
     why_title: 'Warum ein Browser-Dating-Sim?',
@@ -253,6 +282,20 @@ const PAGES = {
       title: 'Web 乙女ゲー おすすめ | リンクだけで遊べる恋愛VN 2026',
       meta: 'Web乙女ゲーのおすすめ。リンクを開くだけ、インストール・登録・課金なしで遊べる本格恋愛ビジュアルノベル。',
       intro: '「Web 乙女ゲー」と言えば昔のFlashゲームを思い出す人も多いかもしれません。今は違います。メッセンジャー形式の本格恋愛VNが、リンク一つで最後まで遊べます。'
+    },
+    {
+      slug: 'renai-game-muryo-download-nashi',
+      h1: '恋愛ゲーム 無料 ダウンロードなし — ブラウザで即プレイ',
+      title: '恋愛ゲーム 無料 ダウンロードなし | ブラウザで遊べる本格恋愛VN 2026',
+      meta: '恋愛ゲームをダウンロードなし・無料で遊びたい方へ。インストール・登録・課金すべて不要、ブラウザ上で最後までプレイできるマルチエンディング恋愛VN。',
+      intro: '「恋愛ゲーム 無料 ダウンロードなし」で検索すると、広告だらけの軽いミニゲームばかり出てきます。ここで紹介するのは、5日間・マルチエンディングの本格恋愛ビジュアルノベル。ダウンロード一切不要で、ブラウザを開くだけで始められます。'
+    },
+    {
+      slug: 'sumaho-otome-game-muryo',
+      h1: 'スマホ 乙女ゲーム 無料 — アプリ不要・縦画面対応',
+      title: 'スマホ 乙女ゲーム 無料 | アプリ不要・片手操作対応 2026',
+      meta: 'スマホで遊べる無料の乙女ゲーム。アプリのインストール不要、縦画面・片手操作に最適化されたマルチエンディング恋愛VN。',
+      intro: '「スマホ 乙女ゲーム 無料」を探しているなら、アプリストアに行く前にブラウザで遊べる選択肢があります。縦画面・片手操作前提で設計された5日間の恋愛VNが、アプリのインストールなしで最後まで楽しめます。'
     }
   ],
   es: [
@@ -322,6 +365,29 @@ const PAGES = {
       title: 'Dating Spiel online gratis | Im Browser spielen ohne Download',
       meta: 'Dating-Spiel online gratis im Browser spielen. Kein Download, keine Anmeldung, komplette Story freigeschaltet.',
       intro: 'Die meisten Treffer für "Dating Spiel online" führen zu dubiosen Download-Seiten. Dieses nicht: eine 5-Tage-Romance-VN, die in deinem Browser läuft, gratis, mit kompletter Story ab dem ersten Klick.'
+    }
+  ],
+  pt: [
+    {
+      slug: 'otome-navegador-gratis',
+      h1: 'Otome game no navegador — Grátis e em português',
+      title: 'Otome game português grátis no navegador | Sem instalar 2026',
+      meta: 'Otome game grátis em português jogável no navegador. Sem instalação, sem cadastro, com múltiplos finais.',
+      intro: 'Encontrar um "otome game em português" costuma ser difícil — a maioria só existe em inglês ou japonês. Aqui tem um totalmente traduzido, jogável no navegador sem instalar nada.'
+    },
+    {
+      slug: 'jogo-namoro-online-gratis',
+      h1: 'Jogo de namoro online grátis — No navegador, sem download',
+      title: 'Jogo de namoro online grátis sem download | Jogar no navegador 2026',
+      meta: 'Jogo de namoro online grátis para jogar no navegador. Sem download, sem cadastro, história completa desbloqueada.',
+      intro: 'A maioria dos resultados de "jogo de namoro online" leva a sites de download suspeitos. Este não: uma VN romântica de 5 dias que roda no seu navegador, grátis, com toda a história desbloqueada do primeiro clique.'
+    },
+    {
+      slug: 'visual-novel-romance-gratis',
+      h1: 'Visual novel romance grátis — No navegador, sem baixar',
+      title: 'Visual novel romance grátis sem baixar | Jogar no navegador 2026',
+      meta: 'Visual novel romântica grátis para jogar no navegador, sem baixar nem instalar. Múltiplos finais, otimizada para celular.',
+      intro: 'Você procura uma "visual novel romance grátis"? Não precisa de Steam, nem app store, nem cartão. Uma VN romântica completa de 5 dias com múltiplos finais roda direto no seu navegador — PC ou celular.'
     }
   ]
 };
