@@ -600,9 +600,18 @@ class FreeTalkSystem {
             // - API_ENDPOINT: 파일 상단에 정의된 서버 주소
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             // [Explicit Caching] 캐시 키 헤더 추가
+            // playerName이 시스템 프롬프트 정적 영역에 치환되므로 사용자별 scope 필수 (캐시 오염 방지)
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
-            const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}` : '';
+            const _userScope = (() => {
+                try {
+                    const pname = this.stateManager?.playerName || '';
+                    let h = 5381;
+                    for (let i = 0; i < pname.length; i++) h = ((h << 5) + h) ^ pname.charCodeAt(i);
+                    return (h >>> 0).toString(36).padStart(7, '0').slice(-8);
+                } catch { return '0'; }
+            })();
+            const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}:${_userScope}` : '';
             // [슬라이딩 윈도우] system + 누적 요약 주입 + 최근 N개 메시지만 전송 (토큰 폭증 방지)
             const _windowed = this._buildWindowedHistory();
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
