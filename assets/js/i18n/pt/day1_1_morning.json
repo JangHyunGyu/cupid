@@ -29,7 +29,7 @@
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Sou a presidente do grêmio. Aluno novo é comigo."
+        "text": "Presidente do conselho. Os transferidos ficam comigo."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
@@ -134,7 +134,7 @@
     },
     "hallway_6_c": {
         "name": "{name}",
-        "text": "*Aquela travadinha. Meio segundo. Deve ser bobagem, mas ficou.*"
+        "text": "*Meio segundo de hesitação. Não deve ser nada — mas fica.*"
     },
     "hallway_7": {
         "name": "Seoyeon",

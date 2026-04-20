@@ -37,7 +37,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*One side dish remains. The last rolled omelette. I said let's all share. — The air got heavier.*"
+        "text": "*Last piece of rolled omelet. 'Let's share,' I said. — The air dropped.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -164,7 +164,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...'Couldn't say no.' Do you have any idea how cruel that sounds, {name}?"
+        "text": "...Not being able to say no. — That's the cruelest part, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
@@ -291,7 +291,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Her face is blank. Which somehow makes it scarier.*"
+        "text": "*No flicker in her expression. — The stillness itself cuts.*"
     },
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",

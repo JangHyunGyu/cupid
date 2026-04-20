@@ -81,7 +81,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "{name}",
-        "text": "*Yuna a envoyé trois messages. De la part de quelqu’un qui n’en envoie normalement même pas un. — C’est dire à quel point elle est en colère.*"
+        "text": "*Yuna a envoyé trois lignes. Elle qui en tape jamais une.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Une seconde. Je fixe juste l'écran. Les graffitis sur le bureau de Sojeong me reviennent. Et — les 38 matins où j'ai détourné le regard.*"
+        "text": "*Une seconde. Je fixe juste l'écran. — Le graffiti sur le bureau de Sojeong. Les trente-huit matins où j'ai détourné le regard.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",

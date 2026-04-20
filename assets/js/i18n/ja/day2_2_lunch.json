@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*昨日と変わらない、おどけた口調。でも、目はもうしっかり傷を診ている。*"
+        "text": "*口調は昨日のまま。でも目はもう傷の上にある。*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*いつもの冗談っぽい口調。でも、目はもう傷をしっかり見ている。*"
+        "text": "*口調はそのままなのに。目はもう傷の上にある。*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*丁寧……ってことなのか。それとも、別の理由があるのか。*"
+        "text": "*丁寧さ。—この言葉で全部収まってる？*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*さっき、確かに声の色が変わった。——あれは、気のせいだったのか？*"
+        "text": "*今—声がわずかに揺れた。*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "保健先生",

@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*El mismo tono bromista que ayer. Pero los ojos ya los tiene en la herida.*"
+        "text": "*El mismo tono de ayer. Pero sus ojos ya están sobre la herida.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*El mismo tono bromista de siempre. Pero los ojos ya los tiene en la herida.*"
+        "text": "*Mismo tono de siempre. Pero sus ojos ya están sobre la herida.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Esmero... ¿es eso? ¿O hay otra razón?*"
+        "text": "*Esmero. ¿Es esa la palabra que cabe aquí?*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*Ese cambio de voz de hace un segundo. — ¿Me lo habré imaginado?*"
+        "text": "*Hace un momento — su voz tembló un poco.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Enfermera",

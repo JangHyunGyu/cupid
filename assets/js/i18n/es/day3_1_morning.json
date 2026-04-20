@@ -26,7 +26,7 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "Bah, ¿qué más da llegar tarde? Si nos agarran juntos, tal vez nos regañen menos, ¿no?"
+        "text": "¿Qué importa llegar tarde? Mejor que te regañen sola."
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*Acaba la primera clase. Recreo. No es que me caigan las tres encima de golpe. Pero hoy alguien siempre atrapa el momento justo para hablarme.*"
+        "text": "*Se acaba la primera clase. En cada recreo — alguien calcula el momento perfecto para hablarme.*"
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",

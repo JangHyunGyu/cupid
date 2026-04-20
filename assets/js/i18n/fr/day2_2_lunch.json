@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Le même ton taquin qu'hier. Mais ses yeux examinent déjà la blessure.*"
+        "text": "*Même ton qu'hier. Mais ses yeux sont déjà sur la coupure.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Son ton taquin n'a pas changé. Mais ses yeux examinent déjà la blessure.*"
+        "text": "*Toujours le même ton. Mais ses yeux sont déjà sur la coupure.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Du soin... c'est vraiment ça ? Ou il y a une autre raison ?*"
+        "text": "*Attentionnée. C'est vraiment le mot ?*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*Ce changement de voix à l'instant. — Est-ce que j'ai rêvé ?*"
+        "text": "*À l'instant — sa voix a légèrement tremblé.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Infirmière",

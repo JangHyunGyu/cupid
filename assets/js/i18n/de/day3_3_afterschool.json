@@ -132,7 +132,7 @@
     },
     "after3_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon richtet ihre Haltung auf. Aber — ihr übliches perfektes Lächeln kehrt nicht zurück.*"
+        "text": "*Seoyeon richtet sich auf. Aber — das Lächeln kehrte nicht zurück.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
@@ -208,7 +208,7 @@
     },
     "after3_dain_6": {
         "name": "{name}",
-        "text": "*Zu viele Ausrufezeichen. — Viel zu viele. Benutzt sie mehr Ausrufezeichen, wenn es ihr nicht gut geht?*"
+        "text": "*Zu viele Ausrufezeichen. — Viel zu viele. Wenn sie okay ist, setzt sie nicht so viele.*"
     },
     "after3_dain_choice": {
         "name": "{name}",
@@ -627,7 +627,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*Das Gespräch fließt von selbst weiter. Die Person, die über dem Schreibtisch zusammengesackt war, die mit dem verschmierten Make-up — *keine von beiden existierte* in diesem Schülerratsraum. Wir haben uns beide darauf geeinigt. Ohne ein Wort.*"
+        "text": "*Das Gespräch läuft natürlich. Die über dem Tisch Zusammengesunkene, das verwischte Make-up — nicht mehr in diesem Raum. Wortlos haben wir uns geeinigt.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -667,7 +667,7 @@
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
-        "text": "...Wegen Leuten wie dir — kann ich nicht mehr schreiben."
+        "text": "...Wegen Leuten wie dir. Keine einzige Zeile bring ich raus."
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",

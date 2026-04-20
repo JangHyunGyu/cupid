@@ -77,7 +77,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Mittagspause. Ich hatte extra das Dach aufgelassen. Mich warten lassen — ziemlich mutig für 'nen Neuen."
+        "text": "Das Dach war offen, du kamst nicht. — Mutig, Neuling."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrerin",
-        "text": "Überfordert sein ist normal. Wenn du am ersten Tag an einer neuen Schule total entspannt wärst, wär das eher komisch."
+        "text": "Überfordert zu sein ist normal. Vom ersten Tag an entspannt wäre seltsam."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Sie hatten mich vorhin gefragt, wie ich zurechtkomme. Irgendwie... ist mir das nicht aus dem Kopf gegangen."
+        "text": "Was Sie vorhin sagten — das blieb bei mir hängen."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Klassenlehrerin",

@@ -77,7 +77,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Lunch. I left the roof unlocked. Making me wait — bold move for a transfer student."
+        "text": "Left the rooftop open and you didn't show. — Got some nerve, transfer."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "Homeroom Teacher",
-        "text": "Feeling overwhelmed is normal. If you were cool and collected on your first day at a new school, that'd be the weird part."
+        "text": "Being overwhelmed is normal. Day-one calm would be the weirder thing."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "You asked how I was settling in earlier. I just... kept thinking about that."
+        "text": "What you said earlier — it kept sticking with me."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Homeroom Teacher",

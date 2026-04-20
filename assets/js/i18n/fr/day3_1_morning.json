@@ -26,7 +26,7 @@
     },
     "morning3_seo_gate_4": {
         "name": "Seoyeon",
-        "text": "Et alors, si on est en retard ? Si on se fait choper ensemble, on écopera peut-être d'une punition plus légère, non ?"
+        "text": "On s'en fout d'être en retard. Mieux que se faire gronder toute seule."
     },
     "morning3_seo_gate_5": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "morning3_date_intro": {
         "name": "{name}",
-        "text": "*La première heure se termine. Pause. Personne ne me tombe dessus d'un seul coup. Mais aujourd'hui, on dirait que quelqu'un trouve toujours le bon moment pour venir me parler.*"
+        "text": "*Premier cours terminé. À chaque pause — quelqu'un me parle pile au bon moment.*"
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",

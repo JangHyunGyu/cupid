@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Derselbe spielerische Ton wie gestern. Aber ihre Augen untersuchen bereits die Wunde.*"
+        "text": "*Derselbe Ton wie gestern. Aber ihre Augen sind schon auf der Wunde.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Ihr scherzhafter Ton ist wie immer. Aber ihre Augen untersuchen bereits die Wunde.*"
+        "text": "*Derselbe Ton wie immer. Aber ihre Augen sind schon auf der Wunde.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Sorgfalt... ist es das? Oder gibt es einen anderen Grund?*"
+        "text": "*Fürsorge. Ist das wirklich das Wort dafür?*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*Dieser Wechsel in ihrer Stimme gerade. — Habe ich mir das eingebildet?*"
+        "text": "*Gerade eben — ihre Stimme hat leicht gezittert.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Schulkrankenschwester",

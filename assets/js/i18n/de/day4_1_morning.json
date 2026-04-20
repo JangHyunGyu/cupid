@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Schon wieder. Das Muster, 'pädagogisches Interesse' zu sagen und sofort die Grenze zu überschreiten.*"
+        "text": "*Schon wieder. Eine Grenze, die unter dem Deckmantel von „pädagogischem Interesse“ überschritten wird.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -335,7 +335,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*Ein Befehlston. Sie macht selbst Verabredungen wie Anweisungen. Aber wieso muss ich schmunzeln.*"
+        "text": "*Imperativ. Sogar Dates klingen wie Befehle. — Aber lustig ist es.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",

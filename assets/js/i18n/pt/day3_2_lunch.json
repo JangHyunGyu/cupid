@@ -45,7 +45,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Sobrou uma porção. A última omelete. Falei pra dividir. — O ar ficou pesado.*"
+        "text": "*Último pedaço de omelete enrolada. 'Vamos dividir', eu disse. — O ar caiu.*"
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Rosto sem expressão. E isso é que é assustador.*"
+        "text": "*Nenhum movimento no rosto. — O próprio silêncio tem corte.*"
     },
     "lunch3_give_yuna_3": {
         "name": "Dain",
@@ -267,7 +267,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...'Não consegui recusar.' Essa é a coisa mais cruel que você podia dizer, {name}."
+        "text": "...Não conseguir dizer não. — É isso o mais cruel, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",

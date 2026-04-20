@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "But — I don't want to just let you go this time. Because you came back instead of running."
+        "text": "— This time I don't want to let you go. Not after you came back."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "I — I've been waiting. Since yesterday. No, since the day before. But just 'cause I waited doesn't mean everything's fine now."
+        "text": "I waited. Since yesterday. No, since the day before. But — it doesn't just get okay right away."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "So... say it. I'll hear it through to the end this time."
+        "text": "...Say it. I'll hear you out this time."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...This time, I'll hear you out. Even if I can't say it's okay right away."
+        "text": "...I'll listen this time. Even if I can't say it's okay."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Leaving school.* Wait, seriously?! ...For real? I mean, yeah, I waited. But if I just grin now and act like everything's fine, that's not fair to me, right? So this time — say the whole thing."
+        "text": "*Walking out of school.* Hey, really?! ...For real? I did wait, yeah. — But smiling the second I waited would feel cheap. This time say it all the way through."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

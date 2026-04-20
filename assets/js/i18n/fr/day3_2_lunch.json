@@ -37,7 +37,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Il reste un seul accompagnement. Le dernier morceau d'omelette roulée. J'ai proposé qu'on partage. — L'air est devenu lourd.*"
+        "text": "*Le dernier morceau d'omelette roulée. 'On partage', j'ai dit. — L'air s'est alourdi.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -164,7 +164,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...Pas pu refuser. C’est la chose la plus cruelle que tu puisses dire, {name}."
+        "text": "...Ne pas pouvoir refuser. — C'est ça le plus cruel, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
@@ -291,7 +291,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Son expression est vide. C'est encore plus effrayant.*"
+        "text": "*Aucun mouvement sur son visage. — C'est ce calme même qui tranche.*"
     },
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",
