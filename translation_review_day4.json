@@ -8,7 +8,8 @@
       "ja": 10,
       "es": 10,
       "fr": 10,
-      "de": 10
+      "de": 10,
+      "pt": 10
     },
     "all_reviewed": false
   },
@@ -736,7 +737,7 @@
     "hidden_homeroom_d4_5_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_5_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*또 시작이다. '교육적 관심'이라고 말해놓고 바로 선을 넘는 패턴.*",
+      "_ko_text_preview": "*또 시작. '교육적 관심'이라는 포장 아래로 넘는 선.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_5_ins3",
@@ -764,6 +765,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_5_ins3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_5_d",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -2680,7 +2687,7 @@
     "morning4_seo_msg_1_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#morning4_seo_msg_1_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*명령형이다. 이 사람은 데이트 약속도 지시처럼 한다. — 근데 왜 웃기...",
+      "_ko_text_preview": "*명령형이다. 데이트 약속도 지시처럼. — 근데 웃긴다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#morning4_seo_msg_1_ins",
@@ -2708,6 +2715,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#morning4_seo_msg_1_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#morning4_seo_msg_1_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4878,7 +4891,7 @@
     "date_seo_pretty_high_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_pretty_high_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'착각하지 마'라고 했는데 — 귀가 빨갛다. 또.*",
+      "_ko_text_preview": "*'착각하지 마'. — 근데 머리카락 넘기는 손이 바쁘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_pretty_high_4",
@@ -4906,6 +4919,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_pretty_high_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_pretty_high_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5130,7 +5149,7 @@
     "date_seo_duck_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_duck_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*무심한 말 같지만 — 거기에 서연의 경험이 묻어 있다.*",
+      "_ko_text_preview": "*무심한 말인데 — 해봤던 사람의 목소리다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_duck_4",
@@ -5158,6 +5177,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_duck_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_duck_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7760,7 +7785,7 @@
     "confess_seo_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_4_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*전 학교에서 못 했던 말이 떠오른다. — 이번에는 고백한다.*",
+      "_ko_text_preview": "*숨이 얕아진다. 전 학교에서도 이랬다. — 그땐 삼켰던 말.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_4_ins",
@@ -7788,6 +7813,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_4_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_4_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8012,7 +8043,7 @@
     "confess_seo_yes_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_yes_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*말이 엉망이다. 준비한 것도 아닌데 멈출 수가 없다.*",
+      "_ko_text_preview": "*단어가 꼬인다. 준비한 적도 없는데 — 멈추질 못 한다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_yes_5",
@@ -8040,6 +8071,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_yes_5",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_yes_5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9020,7 +9057,7 @@
     "confess_yuna_yes_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_yes_6_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*이 방에서 제일 긴 문장을 내가 했다. — 유나의 영역에서.*",
+      "_ko_text_preview": "*내 말이 유나의 말보다 길어진 날. — 처음이다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_yes_6_ins",
@@ -9048,6 +9085,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_yes_6_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_yes_6_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11008,7 +11051,7 @@
     "wall_seo_9": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_9",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 웃는다. — 평소의 여유로운 웃음이 아니다. 자기 보호를 위한 ...",
+      "_ko_text_preview": "*서연이 웃는다. — 평소의 여유가 아니다. 뒤에 뭔가 숨기는 웃음.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_9",
@@ -11036,6 +11079,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_9",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_9",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11332,7 +11381,7 @@
     "wall_seo_14": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_14",
       "_ko_name": "서연",
-      "_ko_text_preview": "칭찬받을 때마다 생각했어. '이 웃음도 연습한 건데, 진짜 나를 본 사람...",
+      "_ko_text_preview": "칭찬받을 때마다 생각했어. — 이 웃음도 연습한 거라고.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_14",
@@ -11360,6 +11409,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_14",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_14",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -13779,7 +13834,7 @@
     "wall_dain_20": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_20",
       "_ko_name": "다인",
-      "_ko_text_preview": "학교에서 '에너지 넘치네!' 소리 들을 때마다 — 여기가. ...죽을 것...",
+      "_ko_text_preview": "학교에서 '에너지 넘치네!' 소리 들을 때마다 — 여기가. ...숨이 막혔어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_20",
@@ -13807,6 +13862,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_20",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_20",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -13995,7 +14056,7 @@
     "wall_dain_newdream_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_newdream_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*그대로 옆에 앉아 있었다. 아무 말도 안 했다.*",
+      "_ko_text_preview": "*그대로 옆에 앉아 있었다. 둘 다 말이 없다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_newdream_1",
@@ -14023,6 +14084,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_newdream_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_newdream_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -15941,7 +16008,7 @@
     "wall_yuna_12": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_12",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*유나의 문장이 평소보다 훨씬 길다. — 이 사람이 이렇게 많이 말하는 ...",
+      "_ko_text_preview": "*유나의 문장이 평소보다 길다. 훨씬.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_12",
@@ -15969,6 +16036,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_12",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_12",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

@@ -8,7 +8,8 @@
       "ja": 10,
       "es": 10,
       "fr": 10,
-      "de": 10
+      "de": 10,
+      "pt": 10
     },
     "all_reviewed": false
   },
@@ -375,7 +376,7 @@
     "morning3_seo_gate_4": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_seo_gate_4",
       "_ko_name": "서연",
-      "_ko_text_preview": "지각이면 어때. 같이 걸리면 덜 혼나지 않을까?",
+      "_ko_text_preview": "지각하면 어때. 혼자 혼나는 것보단 낫잖아.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_seo_gate_4",
@@ -403,6 +404,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_seo_gate_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_1_morning.json#morning3_seo_gate_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -1708,7 +1715,7 @@
     "morning3_date_intro": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#morning3_date_intro",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*1교시가 끝나고 쉬는 시간. — 세 명이 차례로 접근한다.*",
+      "_ko_text_preview": "*1교시가 끝났다. 쉬는 시간마다 — 누가 타이밍을 맞춰 말을 건다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#morning3_date_intro",
@@ -1736,6 +1743,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#morning3_date_intro",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_1_morning.json#morning3_date_intro",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7223,7 +7236,7 @@
     "lunch3_meal_10": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_meal_10",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*반찬이 하나 남았다. 마지막 계란말이.*",
+      "_ko_text_preview": "*마지막 계란말이 하나. 다 같이 먹자고 했다. — 공기가 내려앉았다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_meal_10",
@@ -7251,6 +7264,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_meal_10",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_2_lunch.json#lunch3_meal_10",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8373,7 +8392,7 @@
     "lunch3_yuna_witness_2": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_yuna_witness_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*표정이 무감정하다. 그게 더 무섭다.*",
+      "_ko_text_preview": "*표정이 안 움직인다. — 그 정적이 오히려 날이 섰다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_yuna_witness_2",
@@ -8401,6 +8420,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_yuna_witness_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_2_lunch.json#lunch3_yuna_witness_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9057,7 +9082,7 @@
     "lunch3_expose_honest_2": {
       "_ko_ref": "assets/js/i18n/ko/day3_2_lunch.json#lunch3_expose_honest_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "...거절을 못 해서. 그 말이 제일 잔인한 거야, {name}.",
+      "_ko_text_preview": "...거절을 못 해서. — 그게 제일 잔인해, {name}.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_2_lunch.json#lunch3_expose_honest_2",
@@ -9085,6 +9110,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_2_lunch.json#lunch3_expose_honest_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_2_lunch.json#lunch3_expose_honest_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10931,7 +10962,7 @@
     "after3_seo_9": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_9",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 자세를 바로잡는다. 하지만 — 평소의 완벽한 웃음이 돌아오지 않...",
+      "_ko_text_preview": "*서연이 자세를 바로잡는다. 하지만 — 웃음은 돌아오지 않았다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_9",
@@ -10959,6 +10990,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_9",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_3_afterschool.json#after3_seo_9",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11543,7 +11580,7 @@
     "after3_dain_6": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*느낌표가 많다. — 너무 많다. 이 사람은 괜찮지 않을 때 느낌표가 더...",
+      "_ko_text_preview": "*느낌표가 많다. — 너무 많다. 괜찮을 땐 이만큼 안 찍는데.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_6",
@@ -11571,6 +11608,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_6",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_3_afterschool.json#after3_dain_6",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -15077,7 +15120,7 @@
     "after3_seo_correct_8": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_8",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*대화가 자연스럽게 이어진다. 방금 전에 엎드려 있던 사람도, 화장이 번진 사람도 — 이 학생회실에는 *없었다*. 우리 둘 다 그렇게 합의한 거다. 말없이.*",
+      "_ko_text_preview": "*대화가 자연스럽게 이어진다. 엎드려 있던 사람도, 번진 화장도 — 지금 이 방엔 없다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_8",
@@ -15108,6 +15151,12 @@
         "_reviewed": false,
         "_score": null,
         "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_3_afterschool.json#after3_seo_correct_8",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "after3_seo_correct_9": {
@@ -15437,7 +15486,7 @@
     "after3_yuna_decode_trap_6": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_yuna_decode_trap_6",
       "_ko_name": "유나",
-      "_ko_text_preview": "...너 같은 사람들 때문에 — 못 쓰겠어.",
+      "_ko_text_preview": "...너 같은 애들 때문에. 한 줄도 못 쓴다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_yuna_decode_trap_6",
@@ -15468,6 +15517,12 @@
         "_reviewed": false,
         "_score": null,
         "_issues": "함정 선택지 신규 — 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_3_afterschool.json#after3_yuna_decode_trap_6",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "after3_yuna_decode_trap_7": {
@@ -17815,7 +17870,7 @@
     "night3_cheat_msg_7": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_cheat_msg_7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 메시지로 세 줄을 보냈다. 평소 한 줄도 안 보내는 사람이. —...",
+      "_ko_text_preview": "*유나가 세 줄을 보냈다. 평소 한 줄도 안 쓰는 사람이.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_cheat_msg_7",
@@ -17843,6 +17898,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_cheat_msg_7",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_4_night.json#night3_cheat_msg_7",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -18824,7 +18885,7 @@
     "night3_faithful_reflect_2_c": {
       "_ko_ref": "assets/js/i18n/ko/day3_4_night.json#night3_faithful_reflect_2_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*1초. 화면만 내려다본다.*",
+      "_ko_text_preview": "*1초. 화면만 내려다본다. — 소정이 책상의 낙서. 고개를 돌렸던 38번의 아침.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_4_night.json#night3_faithful_reflect_2_ins3",
@@ -18852,6 +18913,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_4_night.json#night3_faithful_reflect_2_ins3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day3_4_night.json#night3_faithful_reflect_2_c",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

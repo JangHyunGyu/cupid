@@ -372,7 +372,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*장난스러운 말투는 어제와 같다. 근데 눈은 이미 상처를 살피고 있다.*"
+        "text": "*말투는 어제 그대로. 근데 눈은 이미 상처 위에 있다.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "보건선생님",
@@ -380,7 +380,7 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*장난스러운 말투는 여전한데. 근데 눈은 이미 상처를 살피고 있다.*"
+        "text": "*말투는 여전한데. 근데 눈은 이미 상처 위에 있다.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -416,7 +416,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*정성... 이건가. 아님 다른 이유가 있는 건가.*"
+        "text": "*정성. 이 단어로 다 담기는 게 맞나.*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
@@ -464,7 +464,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*방금 목소리가 달라진 거. — 착각인가?*"
+        "text": "*방금 — 목소리가 살짝 떨렸다.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "보건선생님",

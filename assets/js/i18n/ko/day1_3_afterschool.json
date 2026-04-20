@@ -155,7 +155,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "서연",
-        "text": "점심. 옥상 열어놨는데. 나 기다리게 하다니, 대담한 전학생이네."
+        "text": "옥상 열어놨는데 안 왔네. — 전학생, 배짱이 있어."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -196,7 +196,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "아까 적응은 어떠냐고 하셨잖아요. 그냥... 그 말이 계속 남아서요."
+        "text": "아까 하셨던 말씀이 — 계속 남아서요."
     },
     "after_hidden_homeroom_3_c": {
         "name": "담임",
@@ -240,7 +240,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "담임",
-        "text": "정신없는 게 정상이야. 새 학교에 첫날인데 여유로우면 그게 더 이상한 거고."
+        "text": "정신없는 게 정상이야. 첫날부터 여유로우면 그게 더 이상한 거지."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
