@@ -8,7 +8,8 @@
       "ja": 10,
       "es": 10,
       "fr": 10,
-      "de": 10
+      "de": 10,
+      "pt": 10
     },
     "all_reviewed": false
   },
@@ -4592,7 +4593,7 @@
     "tour_seo_3": {
       "_ko_ref": "assets/js/i18n/ko/day5_2_lunch.json#tour_seo_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그때 '과분한데'라고 했다가 혼날 뻔했어.",
+      "_ko_text_preview": "그때 '과분한데'라고 하니까 — 혼날 뻔했지.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_2_lunch.json#tour_seo_3",
@@ -4620,6 +4621,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_2_lunch.json#tour_seo_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_2_lunch.json#tour_seo_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5385,7 +5392,7 @@
     "tour_yuna_8": {
       "_ko_ref": "assets/js/i18n/ko/day5_2_lunch.json#tour_yuna_8",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그때 '결말을 쓰면 끝나니까' 안 쓴다고 했잖아.",
+      "_ko_text_preview": "그때 말했잖아. '결말을 쓰면 끝난다'고.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_2_lunch.json#tour_yuna_8",
@@ -5413,6 +5420,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_2_lunch.json#tour_yuna_8",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_2_lunch.json#tour_yuna_8",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6034,7 +6047,7 @@
     "tour_dain_12": {
       "_ko_ref": "assets/js/i18n/ko/day5_2_lunch.json#tour_dain_12",
       "_ko_name": "다인",
-      "_ko_text_preview": "근데 이상한 게 — 예전엔 배구 없으면 나도 없다고 생각했거든. 근데 지...",
+      "_ko_text_preview": "뭐가 달라졌는진 몰라. ...근데 코트 밖에서도 내가 보여.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_2_lunch.json#tour_dain_12",
@@ -6062,6 +6075,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_2_lunch.json#tour_dain_12",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_2_lunch.json#tour_dain_12",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7980,7 +7999,7 @@
     "after5_last_chance_2_g": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_last_chance_2_ins7",
       "_ko_name": "서연",
-      "_ko_text_preview": "근데 — 이번엔 그냥 보내고 싶진 않아. 네가 도망치지 않고 돌아왔으니까.",
+      "_ko_text_preview": "— 이번엔 보내고 싶지 않아. 네가 돌아왔으니까.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_last_chance_2_ins7",
@@ -8008,6 +8027,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_3_afterschool.json#after5_last_chance_2_ins7",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_3_afterschool.json#after5_last_chance_2_g",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8448,7 +8473,7 @@
     "after5_last_chance_2_q": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_last_chance_2_ins17",
       "_ko_name": "다인",
-      "_ko_text_preview": "나 — 기다렸거든. 어제부터. 아니 그저께부터. 근데 기다렸다고 바로 괜찮아지는 건 또 아니야.",
+      "_ko_text_preview": "기다렸어. 어제부터. 아니 그저께부터.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_last_chance_2_ins17",
@@ -8476,6 +8501,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_3_afterschool.json#after5_last_chance_2_ins17",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_3_afterschool.json#after5_last_chance_2_q",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8520,7 +8551,7 @@
     "after5_last_chance_2_s": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_last_chance_2_ins19",
       "_ko_name": "다인",
-      "_ko_text_preview": "아 진짜 왜 울어 — 기쁜 건데 —",
+      "_ko_text_preview": "...말해. 이번엔 끝까지 들을게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_last_chance_2_ins19",
@@ -8548,6 +8579,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_3_afterschool.json#after5_last_chance_2_ins19",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_3_afterschool.json#after5_last_chance_2_s",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8808,7 +8845,7 @@
     "after5_last_chance_yuna_5": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_last_chance_yuna_5",
       "_ko_name": "유나",
-      "_ko_text_preview": "...이번엔, 듣고 갈게. 바로 괜찮다고는 못 해도.",
+      "_ko_text_preview": "...이번엔 듣고 갈게. 괜찮다고는 못 해도.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_last_chance_yuna_5",
@@ -8836,6 +8873,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_3_afterschool.json#after5_last_chance_yuna_5",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_3_afterschool.json#after5_last_chance_yuna_5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9240,7 +9283,7 @@
     "after5_confess_react_dain": {
       "_ko_ref": "assets/js/i18n/ko/day5_3_afterschool.json#after5_confess_react_dain",
       "_ko_name": "다인",
-      "_ko_text_preview": "*학교를 나서며.* 야, 진짜?! ...진짜? 나, 기다리긴 했어. 근데 기다렸다고 바로 웃어버리면 좀 억울하잖아. 그러니까 이번엔 끝까지 말해.",
+      "_ko_text_preview": "*학교를 나서며.* 야, 진짜?! 나 기다리긴 했어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_3_afterschool.json#after5_confess_react_dain",
@@ -9268,6 +9311,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day5_3_afterschool.json#after5_confess_react_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day5_3_afterschool.json#after5_confess_react_dain",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

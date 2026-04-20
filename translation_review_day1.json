@@ -8,7 +8,8 @@
       "ja": 10,
       "es": 10,
       "fr": 10,
-      "de": 10
+      "de": 10,
+      "pt": 10
     },
     "all_reviewed": false
   },
@@ -269,7 +270,7 @@
     "seoyeon_meet_4": {
       "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#seoyeon_meet_4",
       "_ko_name": "서연",
-      "_ko_text_preview": "학생회장이거든. 새 학생 안내는 내 일이야.",
+      "_ko_text_preview": "학생회장. 전학생 안내는 내 담당이야.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#seoyeon_meet_4",
@@ -297,6 +298,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_1_morning.json#seoyeon_meet_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_1_morning.json#seoyeon_meet_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -2221,7 +2228,7 @@
     "hallway_6_c": {
       "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#hallway_6_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*멈칫한 거. 0.5초. 별거 아닌 거겠지만, 왠지 기억에 남는다.*",
+      "_ko_text_preview": "*0.5초의 멈칫. 별거 아닐 텐데*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#hallway_6_ins2",
@@ -2249,6 +2256,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_1_morning.json#hallway_6_ins2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_1_morning.json#hallway_6_c",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4205,7 +4218,7 @@
     "lunch_dain_2": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_dain_2",
       "_ko_name": "다인",
-      "_ko_text_preview": "자 여기! 뭐 먹을래?! 추천은 소보로빵이랑 딸기우유!",
+      "_ko_text_preview": "소보로빵에 딸기우유. 이 조합은 한 번도 안 무너졌어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_dain_2",
@@ -4233,6 +4246,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_dain_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_dain_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4745,7 +4764,7 @@
     "lunch_dain_18": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_dain_18",
       "_ko_name": "다인",
-      "_ko_text_preview": "아니, 나 감당하려면 체력이 좀 있어야 해서! ㅋㅋ",
+      "_ko_text_preview": "아니, 나랑 다니려면 체력 테스트부터 ㅋㅋ",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_dain_18",
@@ -4773,6 +4792,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_dain_18",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_dain_18",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6413,7 +6438,7 @@
     "lunch_seo_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_seo_6_ins",
       "_ko_name": "서연",
-      "_ko_text_preview": "*미소* 의심이 많네. 그냥 바람이 좋아서야.",
+      "_ko_text_preview": "*미소* 의심 많네. — 위가 조용하니까.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_seo_6_ins",
@@ -6441,6 +6466,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_seo_6_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_seo_6_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7821,7 +7852,7 @@
     "after_miss_seoyeon_4": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_miss_seoyeon_4",
       "_ko_name": "서연",
-      "_ko_text_preview": "점심. 옥상 열어놨는데. 나 기다리게 하다니, 대담한 전학생이네.",
+      "_ko_text_preview": "옥상 열어놨는데 안 왔네. — 전학생, 배짱이 있어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_miss_seoyeon_4",
@@ -7849,6 +7880,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_3_afterschool.json#after_miss_seoyeon_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_miss_seoyeon_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8253,7 +8290,7 @@
     "after_homeroom_honest_1": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_homeroom_honest_1",
       "_ko_name": "담임",
-      "_ko_text_preview": "정신없는 게 정상이야. 새 학교에 첫날인데 여유로우면 그게 더 이상한 거...",
+      "_ko_text_preview": "정신없는 게 정상이야. 첫날부터 여유로우면 그게 더 이상한 거지.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_1",
@@ -8281,6 +8318,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_3_afterschool.json#after_homeroom_honest_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_homeroom_honest_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9550,7 +9593,7 @@
     "after_hidden_homeroom_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그냥... 첫날이라 학교 구경하다가요.",
+      "_ko_text_preview": "아까 하셨던 말씀이 — 계속 남아서요.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
@@ -9578,6 +9621,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_hidden_homeroom_3_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

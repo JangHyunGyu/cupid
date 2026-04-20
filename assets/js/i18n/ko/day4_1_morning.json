@@ -70,7 +70,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*명령형이다. 이 사람은 데이트 약속도 지시처럼 한다. — 근데 왜 웃기지.*"
+        "text": "*명령형이다. 데이트 약속도 지시처럼. — 근데 웃긴다.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",
@@ -171,7 +171,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*또 시작이다. '교육적 관심'이라고 말해놓고 바로 선을 넘는 패턴.*"
+        "text": "*또 시작. '교육적 관심'이라는 포장 아래로 넘는 선.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",

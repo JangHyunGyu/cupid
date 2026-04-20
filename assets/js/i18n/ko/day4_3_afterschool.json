@@ -21,7 +21,7 @@
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*가슴이 뛴다. 전 학교에서도 이랬다. — 그때는 삼켰던 말.*"
+        "text": "*숨이 얕아진다. 전 학교에서도 이랬다. — 그땐 삼켰던 말.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_5": {
         "name": "{name}",
-        "text": "*말이 엉망이다. 준비한 것도 아닌데 멈출 수가 없다.*"
+        "text": "*단어가 꼬인다. 준비한 적도 없는데 — 멈추질 못 한다.*"
     },
     "confess_seo_yes_6": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*이 방에서 제일 긴 문장을 내가 했다. — 유나의 영역에서.*"
+        "text": "*내 말이 유나의 말보다 길어진 날. — 처음이다.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
