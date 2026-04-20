@@ -187,7 +187,6 @@ class StateManager {
             currentDay: this.currentDay,
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
-            chatSummaries: JSON.parse(JSON.stringify(this.chatSummaries)),
             flags: { ...this.flags }
         };
     }
@@ -205,7 +204,6 @@ class StateManager {
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
         if (data.stats) this.stats = data.stats;
         if (data.chatMemories) this.chatMemories = data.chatMemories;
-        if (data.chatSummaries) this.chatSummaries = data.chatSummaries;
         if (data.flags) this.flags = data.flags;
 
         console.log('[StateManager] 상태 복원 완료');
