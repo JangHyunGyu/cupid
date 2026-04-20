@@ -164,7 +164,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...Nicht nein sagen können. — Das ist das Grausamste, {name}."
+        "text": "...Einfach nicht nein sagen können. — Das ist das Grausamste, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
@@ -291,7 +291,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Keine Regung im Gesicht. — Diese Stille selbst schneidet.*"
+        "text": "*Keine Regung im Gesicht. — Diese Stille schneidet tiefer.*"
     },
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",

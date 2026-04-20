@@ -37,7 +37,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*El último trozo del rollo de tortilla. 'Comámoslo juntos', dije. — El aire se vino abajo.*"
+        "text": "*El último trozo de la tortilla enrollada. 'Compartamos esto', dije. — El aire cayó.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -164,7 +164,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...No poder decir que no. — Eso es lo más cruel, {name}."
+        "text": "...No poder decir no. — Eso es lo más cruel, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
@@ -291,7 +291,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Ni un gesto. — Esa quietud misma corta.*"
+        "text": "*Ni un gesto. — El silencio mismo corta.*"
     },
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",

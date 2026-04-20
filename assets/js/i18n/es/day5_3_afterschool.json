@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "— Esta vez no quiero dejarte ir. Ya que volviste."
+        "text": "— Esta vez no te dejo ir. Ahora que volviste."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Te esperé. Desde ayer. No, desde anteayer. Pero — no se arregla de golpe."
+        "text": "Te esperé. Desde ayer. No, desde anteayer. Pero — no se arregla así nomás."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Al salir de la escuela.* ¿Oye, en serio?! ...¿De verdad? Esperar, esperé. — Pero sonreír al toque me dejaría en ridículo. Esta vez dímelo hasta el final."
+        "text": "*Al salir de la escuela.* ¿Oye, en serio?! ...¿De verdad? Esperar, esperé. — Pero sonreír al toque me sentiría barato. Esta vez dímelo hasta el final."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
