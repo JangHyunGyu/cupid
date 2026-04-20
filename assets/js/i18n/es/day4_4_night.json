@@ -69,7 +69,7 @@
     },
     "wall_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon sonríe. — No es su soltura habitual. Una sonrisa que oculta algo detrás.*"
+        "text": "*Seoyeon sonríe. — No es su soltura de siempre. Una sonrisa que esconde algo.*"
     },
     "wall_seo_9_b": {
         "name": "Seoyeon",
@@ -105,7 +105,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Cada elogio me hacía pensar. — Hasta esta sonrisa es ensayada. ¿Alguien me vio de verdad?"
+        "text": "Con cada elogio pensaba. — Hasta esta sonrisa es ensayada. ¿Alguien me vio en serio?"
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -383,7 +383,7 @@
     },
     "wall_dain_20": {
         "name": "Dain",
-        "text": "Cada vez que en la escuela decían '¡Qué energía!' — aquí. ...se me cerraba la garganta."
+        "text": "Cada vez que en la escuela me decían '¡Qué energía!' — aquí. ...se me cerraba la respiración."
     },
     "wall_dain_20_b": {
         "name": "Dain",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Me quedé a su lado. Los dos callados. — Nunca había estado tanto tiempo en silencio junto a Dain.*"
+        "text": "*Me quedé a su lado. Los dos callados. — Nunca había estado tanto rato callado al lado de Dain.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "wall_yuna_12": {
         "name": "{name}",
-        "text": "*Las frases de Yuna son más largas de lo normal. Mucho más.*"
+        "text": "*Las frases de Yuna son más largas que de costumbre. Mucho más.*"
     },
     "wall_yuna_13": {
         "name": "Yuna",

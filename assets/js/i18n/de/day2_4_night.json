@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Diesmal komm wirklich.' — Ein Ton mit Konsequenzen.*"
+        "text": "*'Diesmal komm wirklich.' — Ein Ton, der Konsequenzen verspricht.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -174,11 +174,11 @@
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Bei Sojeong habe ich nur eine Person angesehen. Mochte sie, sah nur zu, verpasste ihren Zusammenbruch. Achtunddreißig Notizen, alle abgebrochen. — Nur eine zu sehen hieß, sie verlieren zu können.*"
+        "text": "*Bei Sojeong hab ich nur eine Person angesehen. Mochte sie, sah nur zu, verpasste ihren Zusammenbruch. Achtunddreißig Notizen, alle abgebrochen. — Nur eine zu sehen hieß, sie verlieren zu können.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Deshalb halte ich mir bei allen dreien eine Tür offen. Wähle ich zu schnell, könnte ich übersehen, wie eine andere zerbricht. Absicherung. Ich weiß, es ist feige. Ein unentschlossener Idiot. Aber — jemanden zu verlieren, während man nur sie ansieht, das kenne ich.*"
+        "text": "*— Deshalb hab ich mir bei allen dreien eine Tür offen gehalten. Wähle ich zu schnell, könnte ich übersehen, wie eine andere zerbricht. Absicherung. Ich weiß, es ist feige. Ein unentschlossener Idiot. Aber — jemanden zu verlieren, während man nur sie ansieht, das kenne ich.*"
     },
     "night2_end_2": {
         "name": "{name}",

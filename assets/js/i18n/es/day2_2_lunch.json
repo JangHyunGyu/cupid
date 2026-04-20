@@ -581,7 +581,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*El mismo tono de ayer. Pero sus ojos ya están sobre la herida.*"
+        "text": "*El mismo tono que ayer. Pero sus ojos ya están en la herida.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Esmero. ¿Es esa la palabra que cabe aquí?*"
+        "text": "*Cuidado. ¿Esa palabra abarca todo?*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
