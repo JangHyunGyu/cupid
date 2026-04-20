@@ -57,6 +57,11 @@ class StateManager {
         this.chatMemories = {};
 
         /**
+         * 캐릭터별 대화 누적 요약 (슬라이딩 윈도우 밖으로 밀려난 메시지의 요약본)
+         */
+        this.chatSummaries = {};
+
+        /**
          * 게임 플래그들 (이벤트 발생 여부 기록)
          * - 예: { metSeoyeon: true, knowsName_Seoyeon: true, ... }
          * - 시나리오의 condition/excludeCondition에서 참조됨
@@ -174,6 +179,19 @@ class StateManager {
     getChatMemory(charName) { return this.chatMemories[charName] || []; }
 
     /**
+     * 누적 대화 요약 저장
+     */
+    setChatSummary(charName, summary) {
+        if (!charName) return;
+        this.chatSummaries[charName] = summary || '';
+    }
+
+    /**
+     * 누적 대화 요약 조회
+     */
+    getChatSummary(charName) { return this.chatSummaries[charName] || ''; }
+
+    /**
      * 전체 게임 상태를 객체로 내보내기 (저장용)
      *
      * JSON.parse(JSON.stringify(...))로 딥 카피하는 이유:
@@ -187,6 +205,7 @@ class StateManager {
             currentDay: this.currentDay,
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
+            chatSummaries: JSON.parse(JSON.stringify(this.chatSummaries)),
             flags: { ...this.flags }
         };
     }
@@ -204,6 +223,7 @@ class StateManager {
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
         if (data.stats) this.stats = data.stats;
         if (data.chatMemories) this.chatMemories = data.chatMemories;
+        if (data.chatSummaries) this.chatSummaries = data.chatSummaries;
         if (data.flags) this.flags = data.flags;
 
         console.log('[StateManager] 상태 복원 완료');

@@ -64,6 +64,15 @@ class FreeTalkSystem {
          */
         this.freeTalkHistory = [];
 
+        /** 슬라이딩 윈도우: 시스템 메시지 외 최근 N개만 fetch에 전송 (토큰 폭증 방지) */
+        this.HISTORY_WINDOW = 10;
+        /** 요약 갱신 트리거: 윈도우 밖 메시지가 N개 이상 누적되면 요약 갱신 */
+        this.SUMMARY_TRIGGER = 6;
+        /** 마지막 요약에 반영된 메시지 인덱스(시스템 제외 기준) */
+        this.lastSummarizedIdx = 0;
+        /** 누적 대화 요약 (씬별로 stateManager에서 로드/저장) */
+        this.freeTalkSummary = "";
+
         /** 현재 프리토킹 씬의 ID */
         this.currentSceneId = null;
 
@@ -278,6 +287,9 @@ class FreeTalkSystem {
 
         // 이전 대화 기록 불러오기 (같은 캐릭터와의 이전 대화)
         this.freeTalkHistory = [...this.stateManager.getChatMemory(scene.name)];
+        // 누적 대화 요약 로드 (슬라이딩 윈도우 밖 메시지의 요약본)
+        this.freeTalkSummary = (this.stateManager.getChatSummary && this.stateManager.getChatSummary(scene.name)) || '';
+        this.lastSummarizedIdx = 0;
 
         // 🔍 현재 배경 이미지로 장소 유추
         const locNames = {
@@ -600,15 +612,20 @@ class FreeTalkSystem {
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
             const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}` : '';
+            // [슬라이딩 윈도우] system + 누적 요약 주입 + 최근 N개 메시지만 전송 (토큰 폭증 방지)
+            const _windowed = this._buildWindowedHistory();
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             const _optimized = (typeof window.optimizeImageHistory === 'function')
-                ? window.optimizeImageHistory(this.freeTalkHistory, 5)
-                : this.freeTalkHistory;
+                ? window.optimizeImageHistory(_windowed, 5)
+                : _windowed;
             const response = await fetch(API_ENDPOINT, {
                 method: "POST",
                 headers: { "Content-Type": "application/json", "x-app-type": "cupid", ...(_cacheKey && { "x-cache-key": _cacheKey }) },
                 body: JSON.stringify({ messages: _optimized })
             });
+
+            // [요약 비동기 갱신] 잘려나간 메시지가 SUMMARY_TRIGGER 이상 새로 누적됐으면 fire-and-forget로 요약 업데이트
+            this._maybeUpdateSummary(scene);
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)
             // 400: 잘못된 요청, 401: 인증 실패, 429: 요청 제한, 500: 서버 오류
@@ -827,6 +844,86 @@ class FreeTalkSystem {
             document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
             this.uiManager.chatInput.focus();
+        }
+    }
+
+    /**
+     * ═══════════════════════════════════════════════════════════════
+     * 🪟 _buildWindowedHistory - 슬라이딩 윈도우 + 누적 요약 주입
+     * ═══════════════════════════════════════════════════════════════
+     * freeTalkHistory[0](system) + [지난 대화 요약] 동적 주입 + 최근 HISTORY_WINDOW개 메시지만 fetch에 전송.
+     * cupid는 이전엔 무제한 누적이라 장시간 플레이 시 토큰 폭증. 슬라이딩으로 상한 보장.
+     */
+    _buildWindowedHistory() {
+        if (!this.freeTalkHistory || this.freeTalkHistory.length === 0) return [];
+        const sysMsg = this.freeTalkHistory[0];
+        if (!sysMsg || sysMsg.role !== 'system') return this.freeTalkHistory;
+
+        const rest = this.freeTalkHistory.slice(1);
+        if (rest.length <= this.HISTORY_WINDOW) return this.freeTalkHistory;
+
+        // 시스템 프롬프트에 [지난 대화 요약] 섹션 동적 주입 (누적 요약이 있을 때만)
+        let sysContent = sysMsg.content || '';
+        if (this.freeTalkSummary) {
+            const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+            const label = lang === 'ko' ? '\n\n[지난 대화 요약]\n' : '\n\n[Past Conversation Summary]\n';
+            // 같은 마커가 이미 있으면 갱신, 없으면 추가
+            const markerIdx = sysContent.indexOf(label.trim());
+            const baseContent = markerIdx >= 0 ? sysContent.substring(0, markerIdx).trimEnd() : sysContent;
+            sysContent = baseContent + label + this.freeTalkSummary;
+        }
+
+        return [
+            { ...sysMsg, content: sysContent },
+            ...rest.slice(-this.HISTORY_WINDOW)
+        ];
+    }
+
+    /**
+     * ═══════════════════════════════════════════════════════════════
+     * 📝 _maybeUpdateSummary - 잘려나간 메시지 누적 시 요약 비동기 갱신
+     * ═══════════════════════════════════════════════════════════════
+     * 윈도우 밖으로 밀려난 메시지가 SUMMARY_TRIGGER 이상 새로 추가됐으면
+     * 별도 API 호출로 요약 누적 → stateManager에 저장. fire-and-forget.
+     */
+    _maybeUpdateSummary(scene) {
+        try {
+            if (!this.freeTalkHistory) return;
+            const rest = this.freeTalkHistory.slice(1); // system 제외
+            const droppedCount = Math.max(0, rest.length - this.HISTORY_WINDOW);
+            const newDropped = droppedCount - this.lastSummarizedIdx;
+            if (newDropped < this.SUMMARY_TRIGGER) return;
+
+            // 요약 대상: 시스템 제외 0 ~ droppedCount까지의 메시지
+            const toSummarize = rest.slice(0, droppedCount);
+            const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+            const existing = this.freeTalkSummary || '';
+            const promptText = lang === 'ko'
+                ? `다음은 비주얼 노블의 캐릭터와 플레이어 간 과거 대화입니다. 기존 요약에 새 대화를 통합하여 4~8줄로 정리하세요.\n1. **장소·상황**: 어디서 무엇이 일어났나\n2. **감정·관계 변화**: 호감도 흐름, 갈등, 화해\n3. **약속·미해결**: 이후 다룰 것\n4. **신체·복장 상태**: 지속되는 상태 변화\n캐릭터 이름·구체적 명사 보존, 기존 요약과 모순 시 새 정보 우선.\n\n[기존 요약]:\n${existing}\n\n[추가 대화]:\n${toSummarize.map(m => `${m.role}: ${m.content}`).join('\n')}`
+                : `The following is past conversation between a visual novel character and the player. Merge existing summary with new messages into 4-8 lines.\n1. **Place & Situation**\n2. **Emotion & Relationship Shifts**\n3. **Promises & Unresolved**\n4. **Body & Outfit State**\nPreserve character names and concrete nouns; prefer new info on conflicts.\n\n[Existing Summary]:\n${existing}\n\n[New Messages]:\n${toSummarize.map(m => `${m.role}: ${m.content}`).join('\n')}`;
+
+            const summaryMessages = [
+                { role: 'system', content: lang === 'ko' ? '당신은 대화 요약 도우미입니다. 사실 기반으로 간결히.' : 'You are a conversation summarizer. Keep it factual and concise.' },
+                { role: 'user', content: promptText }
+            ];
+
+            const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
+            // fire-and-forget: 응답 늦어도 다음 send에 반영되면 됨
+            fetch(API_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'x-app-type': 'cupid', 'x-request-type': 'summary' },
+                body: JSON.stringify({ messages: summaryMessages })
+            }).then(r => r.ok ? r.json() : null).then(data => {
+                const newSummary = data?.choices?.[0]?.message?.content?.trim();
+                if (!newSummary) return;
+                this.freeTalkSummary = newSummary;
+                this.lastSummarizedIdx = droppedCount;
+                if (scene && scene.name && this.stateManager?.setChatSummary) {
+                    this.stateManager.setChatSummary(scene.name, newSummary);
+                }
+            }).catch(() => { /* 요약 실패는 다음 호출에서 재시도 */ });
+        } catch (e) {
+            console.warn('[FreeTalkSystem] _maybeUpdateSummary failed:', e?.message);
         }
     }
 
