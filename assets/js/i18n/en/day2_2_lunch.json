@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Same playful tone as yesterday. But her eyes are already examining the wound.*"
+        "text": "*Same teasing tone as yesterday. But her eyes are already on the cut.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Same playful tone as always. But her eyes are already examining the wound.*"
+        "text": "*Same teasing tone. But her eyes are already on the cut.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Bedside manner... is that really all it is?*"
+        "text": "*Care. Is that really the word for this?*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*That shift in her voice just now. — Was I imagining things?*"
+        "text": "*Just now — her voice wavered a little.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "School Nurse",

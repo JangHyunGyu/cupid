@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Actually show up this time.' The words say invitation — sounds like a warning.*"
+        "text": "*'This time, really come.' — The kind of tone that comes with consequences.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -178,11 +178,11 @@
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Back with Sojeong, I only looked at one person. I only liked one person, only watched one person — and even as she fell apart right beside me, I stopped at the notes app. Thirty-eight times. When you only look at one person, losing them means losing everything. I didn't know that then.*"
+        "text": "*With Sojeong, I only watched one person. Liked her, only watched, and missed her breaking apart. Thirty-eight drafts that stopped in my notes app. — Watching only one meant I could lose her.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— That's why I'm keeping the door open with all three of them. I don't want to admit it. If I choose too fast, I'll only see her — the rest will blur out, and the next time someone falls apart, I won't notice until it's too late. It's a safety net. I know it's cowardly. Anyone watching would just call me indecisive. But I know what it's like to lose someone because they were the only one you were looking at. That terrifies me more than anything.*"
+        "text": "*— That's why I'm keeping a door open for all three. Pick one too fast, and I might miss another one falling apart. Insurance. I know it's cowardly. I'm an indecisive piece of shit. But — losing someone while watching only her, that I know.*"
     },
     "night2_hidden_check": {
         "name": "{name}",

@@ -77,7 +77,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Le déjeuner. J’avais laissé le toit ouvert. Me faire attendre — audacieux pour un nouvel élève."
+        "text": "J'avais laissé le toit ouvert, t'es pas venu. — T'as du cran, le nouveau."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "Professeure principale",
-        "text": "Se sentir débordé, c'est normal. Ce serait bizarre d'être zen le premier jour dans une nouvelle école."
+        "text": "Être débordé, c'est normal. Serein dès le premier jour, ça serait bizarre."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Vous m'avez demandé tout à l'heure comment je m'adaptais. J'ai juste... continué à y penser."
+        "text": "Ce que vous avez dit tout à l'heure — ça m'est resté."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Professeure principale",

@@ -46,7 +46,7 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Ça veut dire que t'étais en avance, pas que je suis en retard.*"
+        "text": "*C'est toi qui es arrivée tôt. Moi, pas en retard.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -134,7 +134,7 @@
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*'J'étais'. Au passé. — Quelque chose me dit qu'il vaut mieux ne pas demander.*"
+        "text": "*'J'étais.' Au passé. — Vaut mieux pas demander maintenant.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
@@ -520,7 +520,7 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*L'échange se poursuit. Les mouvements de Dain sont — clairement pas ordinaires. Rapides, précis, un corps qui se souvient. Cette fille est vraiment douée. Mais — à chaque réception, elle met plus de poids sur le pied gauche. Comme si elle ménageait le droit.*"
+        "text": "*L'échange continue. Rapide et précise — mais à chaque atterrissage, plus de poids sur la jambe gauche. Elle évite le côté droit.*"
     },
     "after2_dain_9_f": {
         "name": "{name}",

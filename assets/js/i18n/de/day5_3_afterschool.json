@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "Aber — dieses Mal will ich dich nicht einfach gehen lassen. Weil du nicht weggelaufen bist, sondern zurückgekommen bist."
+        "text": "— Diesmal will ich dich nicht gehen lassen. Du bist ja zurückgekommen."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Ich — habe gewartet. Seit gestern. Nein, seit vorgestern. Aber nur weil ich gewartet habe, heißt das nicht, dass alles sofort wieder gut ist."
+        "text": "Ich hab gewartet. Seit gestern. Nein, seit vorgestern. Aber — so schnell wird's nicht okay."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Also... sag's mir. Diesmal hör ich bis zum Ende zu."
+        "text": "...Sag's. Diesmal hör ich dich bis zum Ende an."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...Dieses Mal werde ich zuhören. Auch wenn ich nicht sofort sagen kann, dass alles gut ist."
+        "text": "...Diesmal höre ich zu. Auch wenn ich nicht sagen kann, dass es okay ist."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Als wir die Schule verlassen.* Hey, wirklich?! ...Wirklich? Ich habe ja gewartet. Aber wenn ich nur, weil ich gewartet habe, sofort lache, wäre das doch irgendwie unfair. Also, sag es dieses Mal bis zum Ende."
+        "text": "*Als wir aus der Schule gehen.* Ey, echt?! ...Wirklich? Gewartet hab ich schon. — Aber direkt zu lächeln wär ärgerlich. Diesmal sag's bis zum Ende."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

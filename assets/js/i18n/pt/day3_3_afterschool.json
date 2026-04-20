@@ -100,7 +100,7 @@
     },
     "after3_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon se endireita. Mas — o sorriso perfeito de sempre não retorna.*"
+        "text": "*Seoyeon se endireita. Mas — o sorriso não voltou.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
@@ -180,7 +180,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*A conversa flui naturalmente. A pessoa caída na mesa, a que tava com maquiagem borrada — *nenhuma das duas existiu* dentro dessa sala do grêmio. Nós dois concordamos nisso. Sem precisar falar.*"
+        "text": "*A conversa flui naturalmente. A pessoa caída sobre a mesa, a maquiagem borrada — não estão mais nesta sala. Sem palavras, concordamos.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -302,7 +302,7 @@
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
-        "text": "...Por causa de gente que nem você — eu não consigo escrever."
+        "text": "...Por causa de gente como você. Não consigo escrever uma linha."
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",
@@ -424,7 +424,7 @@
     },
     "after3_dain_6": {
         "name": "{name}",
-        "text": "*Exclamações demais. — Demais mesmo. Será que essa menina enche mais de exclamações justo quando não tá bem?*"
+        "text": "*Muitos pontos de exclamação. — Demais. Quando ela está bem, não usa tantos.*"
     },
     "after3_dain_choice": {
         "name": "{name}",

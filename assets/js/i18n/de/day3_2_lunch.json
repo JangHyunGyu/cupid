@@ -37,7 +37,7 @@
     },
     "lunch3_meal_10": {
         "name": "{name}",
-        "text": "*Eine Beilage ist übrig. Die letzte Eierrolle. Ich hab gesagt, lass uns alle was abkriegen. — Die Luft wurde schwer.*"
+        "text": "*Das letzte Stück Omelettrolle. 'Teilen wir es', sagte ich. — Die Luft fiel.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -164,7 +164,7 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "...Nicht ablehnen konnte. Das ist das Grausamste, was du sagen kannst, {name}."
+        "text": "...Nicht nein sagen können. — Das ist das Grausamste, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
@@ -291,7 +291,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Ihr Gesicht ist ausdruckslos. Das macht es noch beängstigender.*"
+        "text": "*Keine Regung im Gesicht. — Diese Stille selbst schneidet.*"
     },
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",

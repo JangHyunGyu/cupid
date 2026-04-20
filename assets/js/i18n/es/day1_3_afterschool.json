@@ -77,7 +77,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "En el almuerzo. Te dejé la azotea abierta. Hacerme esperar — qué atrevido, el nuevo."
+        "text": "Dejé la azotea abierta y no viniste. — Qué atrevido, transferido."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "Profesora",
-        "text": "Sentirse abrumado es lo normal. Sería raro que estuvieras tan tranquilo en tu primer día en una escuela nueva."
+        "text": "Es normal estar abrumado. Lo raro sería estar tranquilo el primer día."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Antes me preguntó cómo me estaba adaptando. Supongo que... esa frase se me quedó dando vueltas."
+        "text": "Lo que dijo antes — se me quedó grabado."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Profesora",

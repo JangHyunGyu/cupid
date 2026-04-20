@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*C'est reparti. Le schéma de dire « intérêt pédagogique » et de franchir la ligne aussitôt.*"
+        "text": "*Ça recommence. Une ligne franchie sous couvert d'« intérêt éducatif ».*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -335,7 +335,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*C'est un ordre. Elle formule même les rendez-vous comme des directives. Mais bizarrement, ça me fait sourire.*"
+        "text": "*À l'impératif. Même un rendez-vous sonne comme un ordre. — Mais c'est drôle.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",

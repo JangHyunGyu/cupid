@@ -155,7 +155,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "No almoço. Deixei o terraço aberto. Me fazer esperar — ousado, transferido."
+        "text": "Deixei o terraço aberto e você não apareceu. — Que ousadia, transferido."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -196,7 +196,7 @@
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "A senhora perguntou mais cedo se eu tava me adaptando. É que... aquilo ficou na minha cabeça."
+        "text": "O que disse antes — ficou comigo."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Professora",
@@ -240,7 +240,7 @@
     },
     "after_homeroom_honest_1": {
         "name": "Professora",
-        "text": "Perdido é normal. Escola nova, primeiro dia — se estivesse tranquilo, aí sim eu ia estranhar."
+        "text": "Estar sobrecarregado é normal. Tranquilo no primeiro dia é que seria estranho."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",

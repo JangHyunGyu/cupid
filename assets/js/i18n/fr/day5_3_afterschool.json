@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "Mais — cette fois, je veux pas te laisser partir comme ça. Parce que t'es revenu sans fuir."
+        "text": "— Cette fois, je te laisse pas partir. Tu es revenu."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Moi — j'ai attendu. Depuis hier. Non, depuis avant-hier. Mais ce n'est pas parce que j'ai attendu que tout va bien tout de suite."
+        "text": "J'ai attendu. Depuis hier. Non, depuis avant-hier. Mais — ça va pas d'un coup."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Alors... dis-le. Cette fois, je t'écoute jusqu'au bout."
+        "text": "...Parle. Cette fois je t'écoute jusqu'au bout."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...Cette fois, je vais t'écouter. Même si je ne peux pas dire que tout va bien tout de suite."
+        "text": "...Cette fois j'écoute. Même si je peux pas dire que ça va."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*En quittant l'école.* Hé, vraiment ?! ...Vraiment ? J'ai attendu, c'est vrai. Mais sourire tout de suite après avoir attendu, ça serait pas un peu rageant ? Alors cette fois, dis-le jusqu'au bout."
+        "text": "*En sortant de l'école.* Hé, sérieux ?! ...Vraiment ? J'ai attendu, oui. — Mais sourire direct, ça serait vexant. Cette fois, dis-le jusqu'au bout."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

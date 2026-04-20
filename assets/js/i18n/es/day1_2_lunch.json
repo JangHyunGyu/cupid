@@ -174,7 +174,7 @@
     },
     "lunch_dain_2": {
         "name": "Dain",
-        "text": "¡La combinación de pan soboro con leche de fresa es felicidad pura por caloría! ¡Confía en mí!"
+        "text": "Pan soboro y leche de fresa. Ese combo nunca me ha fallado."
     },
     "lunch_dain_3": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "lunch_dain_18": {
         "name": "Dain",
-        "text": "¡No, es que para andar conmigo hay que pasar una prueba mínima de resistencia! jaja"
+        "text": "Nah, salir conmigo requiere test físico primero jaja"
     },
     "lunch_dain_19": {
         "name": "{name}",
@@ -440,7 +440,7 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Sonriendo* Qué desconfiado. Cuando pasas todo el tiempo tratando con gente allá abajo, a veces necesitas estar sola."
+        "text": "*sonríe* Qué desconfiado. — Aquí arriba hay silencio."
     },
     "lunch_seo_c1_2_b": {
         "name": "{name}",

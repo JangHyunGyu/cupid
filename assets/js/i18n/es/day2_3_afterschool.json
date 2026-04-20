@@ -46,7 +46,7 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Eso es que tú has llegado pronto, no que yo llegue tarde.*"
+        "text": "*La que llegó temprano fuiste tú. Yo no llegué tarde.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -134,7 +134,7 @@
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*'Tenía'. En pasado. — Mejor no preguntar.*"
+        "text": "*'Solía ser'. Pasado. — Mejor no preguntar ahora.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
@@ -520,7 +520,7 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*El peloteo va y viene. Los movimientos de Dain — no son normales. Rápidos, precisos, cuerpo con memoria. Esta chica juega de verdad. Pero — cada vez que cae, carga más peso en el pie izquierdo. Como esquivando el derecho.*"
+        "text": "*El peloteo va y viene. Rápida y precisa — pero carga más peso en la pierna izquierda al aterrizar. Protege el lado derecho.*"
     },
     "after2_dain_9_f": {
         "name": "{name}",

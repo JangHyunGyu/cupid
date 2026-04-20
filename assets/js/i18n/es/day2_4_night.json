@@ -114,7 +114,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*Dice 'esta vez ven de verdad', pero el tono da a entender que, si no aparezco, algo pasará.*"
+        "text": "*'Esta vez ven de verdad.' — Un tono con consecuencias si fallo.*"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -174,11 +174,11 @@
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Con Sojeong solo miraba a una persona. Solo quería a una, solo la veía a ella — y, aun viéndola hundirse a mi lado, me quedé atascado en la app de notas. Treinta y ocho veces. Fijarme solo en una significaba poder perderla. Entonces no lo sabía.*"
+        "text": "*En los días de Sojeong, solo miraba a una persona. La quería, solo miraba, y se me escapó su derrumbe. Treinta y ocho intentos detenidos en mis notas. — Mirar solo a una significaba poder perderla.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Por eso ahora les dejo una puerta abierta a las tres. No me gusta admitirlo. Si me decido demasiado pronto por una, acabaré mirando solo a esa una, dejaré de ver a las demás y, cuando alguien se hunda a mi lado, otra vez no me daré cuenta. Es como un seguro. Sé que es cobarde. Cualquiera diría que soy un indeciso de mierda. Pero — yo sé lo que es perder a alguien por mirar solo a una. Y eso es lo que más miedo me da.*"
+        "text": "*— Por eso dejo una puerta abierta con las tres. Si elijo una muy pronto, podría no notar cómo otra se derrumba. Un seguro. Sé que es cobardía. Un indeciso de mierda. Pero — lo que es perder a alguien mirando solo a esa persona, eso sí lo sé.*"
     },
     "night2_end_2": {
         "name": "{name}",

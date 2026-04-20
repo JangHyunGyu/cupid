@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Otra vez. Lo mismo de siempre: dice 'interés pedagógico' y se pasa de la raya acto seguido.*"
+        "text": "*Otra vez. Una línea cruzada bajo el disfraz de 'interés educativo'.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -335,7 +335,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*Modo imperativo. Esta chica hasta las citas las da como órdenes. — ¿Y por qué me da risa?*"
+        "text": "*En imperativo. Hasta las citas suenan a órdenes. — Pero tiene gracia.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",

@@ -162,7 +162,7 @@
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "Mas — dessa vez não quero simplesmente te deixar ir. Você voltou em vez de fugir."
+        "text": "— Desta vez não quero te deixar ir. Já que você voltou."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Eu — tava esperando. Desde ontem. Não, desde anteontem. Mas só de esperar não significa que eu tô de boa na hora."
+        "text": "Esperei. Desde ontem. Não, desde anteontem. Mas — não fica tudo bem de cara."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Então... fala. Dessa vez eu escuto até o fim."
+        "text": "...Fala. Desta vez escuto até o fim."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "...Dessa vez, escuto. Mesmo que eu não consiga dizer que tá tudo bem na hora."
+        "text": "...Desta vez vou ouvir. Mesmo sem poder dizer que está tudo bem."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Saindo da escola.* Ei, sério mesmo?! ...Sério? Quer dizer, eu esperei sim. Mas se eu já sorrir na hora, depois de esperar, é meio injusto, né? Então dessa vez, fala até o fim."
+        "text": "*Saindo da escola.* Ei, sério?! ...Mesmo? Esperar eu esperei. — Mas sorrir na hora seria humilhante. Desta vez fala até o fim."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

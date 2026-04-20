@@ -132,7 +132,7 @@
     },
     "after3_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon straightens her posture. But — her usual perfect smile doesn’t return.*"
+        "text": "*Seoyeon straightens up. But — the smile doesn't come back.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
@@ -208,7 +208,7 @@
     },
     "after3_dain_6": {
         "name": "{name}",
-        "text": "*Too many exclamation marks. — Way too many. Does this girl use more exclamation marks when she’s not okay?*"
+        "text": "*Too many exclamation marks. — Way too many. She doesn't use this many when she's actually okay.*"
     },
     "after3_dain_choice": {
         "name": "{name}",
@@ -627,7 +627,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*The conversation flows naturally. The person who'd been slumped over the desk, the one with smudged makeup — *neither of them existed* in this council room. We agreed on that. Without saying so.*"
+        "text": "*The conversation flows naturally. The one slumped on the desk, the smudged makeup — not in this room anymore. Silently, we both agreed.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -667,7 +667,7 @@
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
-        "text": "...People like you — that's why I can't write."
+        "text": "...People like you. Can't write a single line."
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",

@@ -46,7 +46,7 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*That means you were early. Not that I was late.*"
+        "text": "*You're the one who came early. I wasn't late.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -134,7 +134,7 @@
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*'Used to be.' Past tense. — Something tells me not to push it.*"
+        "text": "*'Used to be.' Past tense. — Don't ask now.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
@@ -520,7 +520,7 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*The rally goes back and forth. Dain's movements are — clearly not ordinary. Fast, precise, her body remembering every move. This girl is really good. But — every time she lands, she puts more weight on her left foot. Like she's avoiding the right.*"
+        "text": "*Rally after rally. Fast, precise — but she puts more weight on her left leg each landing. She's avoiding her right side.*"
     },
     "after2_dain_9_f": {
         "name": "{name}",

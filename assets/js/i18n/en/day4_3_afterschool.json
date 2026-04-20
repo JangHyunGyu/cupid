@@ -21,7 +21,7 @@
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*Something catches in my chest. Same as it was at my old school. — Back then, I swallowed those words.*"
+        "text": "*My breath goes shallow. Same as my old school. — Words I swallowed back then.*"
     },
     "confess_seo_5": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "confess_seo_yes_5": {
         "name": "{name}",
-        "text": "*The words are a mess. I didn't prepare any of this, but I can't stop.*"
+        "text": "*The words tangle. I never prepared any — and I can't stop.*"
     },
     "confess_seo_yes_6": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*I just said the longest sentence in this room. In Yuna's domain.*"
+        "text": "*The day my words ran longer than Yuna's. — A first.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",

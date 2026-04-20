@@ -132,7 +132,7 @@
     },
     "after3_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon se redresse. Mais — son sourire parfait habituel ne revient pas.*"
+        "text": "*Seoyeon se redresse. Mais — le sourire n'est pas revenu.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
@@ -208,7 +208,7 @@
     },
     "after3_dain_6": {
         "name": "{name}",
-        "text": "*Trop de points d’exclamation. — Beaucoup trop. Est-ce que cette fille en met plus quand elle ne va pas bien ?*"
+        "text": "*Trop de points d'exclamation. — Beaucoup trop. Quand elle va bien, elle en met pas autant.*"
     },
     "after3_dain_choice": {
         "name": "{name}",
@@ -627,7 +627,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*La conversation s'enchaîne naturellement. La personne effondrée sur le bureau, celle au maquillage brouillé — *aucune n'a existé* dans ce conseil. Nous en avons toutes les deux convenu. Sans rien dire.*"
+        "text": "*La conversation reprend son cours. La personne effondrée, le maquillage coulé — plus dans cette pièce. Sans mot, on s'est mis d'accord.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -667,7 +667,7 @@
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
-        "text": "...À cause des gens comme toi — je ne peux plus écrire."
+        "text": "...À cause des gens comme toi. Je peux pas écrire une ligne."
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",

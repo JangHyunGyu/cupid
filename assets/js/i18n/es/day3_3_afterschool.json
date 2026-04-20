@@ -132,7 +132,7 @@
     },
     "after3_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon se endereza. Pero — su sonrisa perfecta de siempre no vuelve.*"
+        "text": "*Seoyeon se endereza. Pero — la sonrisa no volvió.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
@@ -208,7 +208,7 @@
     },
     "after3_dain_6": {
         "name": "{name}",
-        "text": "*Demasiadas exclamaciones. — Demasiadas. ¿Cuando no está bien es cuando más exclamaciones mete?*"
+        "text": "*Muchos signos de exclamación. — Demasiados. Cuando está bien no usa tantos.*"
     },
     "after3_dain_choice": {
         "name": "{name}",
@@ -627,7 +627,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*La conversación fluye con naturalidad. La que estaba derrumbada sobre la mesa, la del maquillaje corrido — *ninguna de las dos existió* en este consejo. Las dos lo pactamos. En silencio.*"
+        "text": "*La conversación fluye natural. La que estaba desplomada, el maquillaje corrido — ya no están en este cuarto. Sin palabras, lo acordamos.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -667,7 +667,7 @@
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
-        "text": "...Por culpa de gente como tú — no puedo escribir."
+        "text": "...Por gente como tú. No puedo escribir ni una línea."
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",

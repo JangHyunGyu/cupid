@@ -69,7 +69,7 @@
     },
     "wall_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon lächelt. — Nicht ihr gewöhnliches gelassenes Lächeln. Ein Lächeln zur Selbstverteidigung.*"
+        "text": "*Seoyeon lächelt. — Nicht ihre gewohnte Gelassenheit. Ein Lächeln, das etwas verbirgt.*"
     },
     "wall_seo_9_b": {
         "name": "Seoyeon",
@@ -105,7 +105,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Jedes Mal, wenn ich gelobt wurde, dachte ich: „Dieses Lächeln ist auch geübt — hat irgendjemand je das wahre Ich gesehen?“"
+        "text": "Bei jedem Kompliment dachte ich. — Sogar dieses Lächeln ist einstudiert. Hat mich jemand wirklich gesehen?"
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -383,7 +383,7 @@
     },
     "wall_dain_20": {
         "name": "Dain",
-        "text": "Jedes Mal, wenn jemand in der Schule sagte „So voller Energie!“ — hier drin. ...dachte ich, ich sterbe."
+        "text": "Jedes Mal wenn in der Schule jemand „So viel Energie!“ sagte — hier. ...bekam ich keine Luft."
     },
     "wall_dain_20_b": {
         "name": "Dain",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Ich blieb einfach neben ihr sitzen. Sagte nichts. Dain auch nicht. — Eine seltsame Zeit. Dass neben Dain länger als eine Minute Stille herrscht, ist das erste Mal.*"
+        "text": "*Ich blieb neben ihr. Beide still. — So lange still neben Dain zu sein, ist das erste Mal.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "wall_yuna_12": {
         "name": "{name}",
-        "text": "*Yunas Sätze sind viel länger als sonst. — Es ist das erste Mal, dass ich sie so viel reden höre.*"
+        "text": "*Yunas Sätze sind länger als sonst. Viel länger.*"
     },
     "wall_yuna_13": {
         "name": "Yuna",

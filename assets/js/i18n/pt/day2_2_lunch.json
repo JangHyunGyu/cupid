@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*O mesmo tom brincalhão de ontem. Mas os olhos já estão examinando o ferimento.*"
+        "text": "*Mesmo tom de ontem. Mas os olhos já estão sobre a ferida.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*O tom brincalhão continua o mesmo. Mas os olhos já estão examinando o ferimento.*"
+        "text": "*Mesmo tom de sempre. Mas os olhos já estão sobre a ferida.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Capricho... será que é só isso? Ou tem outro motivo?*"
+        "text": "*Cuidado. É essa a palavra certa?*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*Aquela mudança na voz agora. — Foi impressão?*"
+        "text": "*Agora mesmo — a voz dela vacilou um pouco.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Enfermeira",

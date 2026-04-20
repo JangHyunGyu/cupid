@@ -29,7 +29,7 @@
     },
     "seoyeon_meet_4": {
         "name": "Seoyeon",
-        "text": "Soy la presidenta del consejo. Recibir a los nuevos me toca a mí."
+        "text": "Presidenta del consejo. Los transferidos son asunto mío."
     },
     "seoyeon_meet_5": {
         "name": "Seoyeon",
@@ -262,7 +262,7 @@
     },
     "hallway_6_c": {
         "name": "{name}",
-        "text": "*Esa pausa. Medio segundo. Seguramente no significa nada, pero se me queda grabada.*"
+        "text": "*Una vacilación de medio segundo. No debe ser nada — pero se queda.*"
     },
     "hallway_7": {
         "name": "Seoyeon",

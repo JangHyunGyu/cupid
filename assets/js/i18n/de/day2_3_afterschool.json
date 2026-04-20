@@ -46,7 +46,7 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Das heißt, du warst zu früh — und nicht, dass ich zu spät bin.*"
+        "text": "*Du warst die Frühaufsteherin. Ich war nicht zu spät.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -134,7 +134,7 @@
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*'War'. Vergangenheit. — Irgendwas sagt mir, dass ich besser nicht frage.*"
+        "text": "*'War mal.' Vergangenheit. — Jetzt nicht fragen.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
@@ -520,7 +520,7 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*Der Ballwechsel geht hin und her. Dains Bewegungen sind — eindeutig nicht gewöhnlich. Schnell, präzise, ein Körper, der sich erinnert. Sie ist wirklich gut. Aber — bei jeder Landung verlagert sie mehr Gewicht aufs linke Bein. Als würde sie das rechte schonen.*"
+        "text": "*Der Ballwechsel geht weiter. Schnell und präzise — aber bei jeder Landung mehr Gewicht aufs linke Bein. Sie meidet die rechte Seite.*"
     },
     "after2_dain_9_f": {
         "name": "{name}",

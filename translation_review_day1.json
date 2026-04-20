@@ -274,37 +274,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#seoyeon_meet_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#seoyeon_meet_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_1_morning.json#seoyeon_meet_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_1_morning.json#seoyeon_meet_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_1_morning.json#seoyeon_meet_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_1_morning.json#seoyeon_meet_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
@@ -2232,37 +2232,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#hallway_6_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_1_morning.json#hallway_6_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_1_morning.json#hallway_6_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_1_morning.json#hallway_6_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_1_morning.json#hallway_6_ins2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_1_morning.json#hallway_6_c",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
@@ -4222,37 +4222,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_dain_2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_dain_2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_2_lunch.json#lunch_dain_2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_2_lunch.json#lunch_dain_2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_dain_2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_dain_2",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
@@ -4768,37 +4768,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_dain_18",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_dain_18",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_2_lunch.json#lunch_dain_18",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_2_lunch.json#lunch_dain_18",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_dain_18",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_dain_18",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
@@ -6442,37 +6442,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_seo_6_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_2_lunch.json#lunch_seo_6_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_2_lunch.json#lunch_seo_6_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_2_lunch.json#lunch_seo_6_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_2_lunch.json#lunch_seo_6_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_2_lunch.json#lunch_seo_6_b",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
@@ -7856,37 +7856,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_miss_seoyeon_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_miss_seoyeon_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_3_afterschool.json#after_miss_seoyeon_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_3_afterschool.json#after_miss_seoyeon_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_3_afterschool.json#after_miss_seoyeon_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_miss_seoyeon_4",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
@@ -8294,37 +8294,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_homeroom_honest_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_3_afterschool.json#after_homeroom_honest_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_3_afterschool.json#after_homeroom_honest_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_3_afterschool.json#after_homeroom_honest_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_homeroom_honest_1",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
@@ -9597,37 +9597,37 @@
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day1_3_afterschool.json#after_hidden_homeroom_3_ins",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day1_3_afterschool.json#after_hidden_homeroom_3_b",
-        "_reviewed": false,
+        "_reviewed": true,
         "_score": 10,
         "_issues": null
       }
