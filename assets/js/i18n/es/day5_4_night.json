@@ -191,9 +191,14 @@
         "name": "{name}",
         "text": "*Le dije lo que sentía. Yuna asintió. Pero ese gesto fue más un intento que una certeza. — Al cabo de un mes, apareció una nota en mi taquilla. 'Hablemos.'*"
     },
-    "bitter_yuna_2": {
+    "bitter_yuna_2": {},
+    "bitter_yuna_2_library": {
         "name": "Yuna",
         "text": "...A veces pienso en ti. Cuando huele a biblioteca. Tendría que haber dicho más entonces."
+    },
+    "bitter_yuna_2_book": {
+        "name": "Yuna",
+        "text": "...A veces pienso en ti. Cuando paso por una librería. Tendría que haber dicho más entonces."
     },
     "bitter_yuna_3": {
         "name": "{name}",

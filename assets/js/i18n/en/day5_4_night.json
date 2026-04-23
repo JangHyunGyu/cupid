@@ -191,9 +191,14 @@
         "name": "{name}",
         "text": "*I confessed. Yuna nodded. But that nod felt more like trying than certainty. About a month later, a note appeared in my locker. 'Let's talk.'*"
     },
-    "bitter_yuna_2": {
+    "bitter_yuna_2": {},
+    "bitter_yuna_2_library": {
         "name": "Yuna",
         "text": "...Sometimes I think of you. When I catch the scent of old books. I should've said more back then."
+    },
+    "bitter_yuna_2_book": {
+        "name": "Yuna",
+        "text": "...Sometimes I think of you. When I pass a bookstore. I should've said more back then."
     },
     "bitter_yuna_3": {
         "name": "{name}",

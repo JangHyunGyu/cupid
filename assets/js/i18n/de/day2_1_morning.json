@@ -224,9 +224,14 @@
         "name": "{name}",
         "text": "*Ich verlasse das Lehrerzimmer — die Papiere in der Schublade lassen mir keine Ruhe.*"
     },
-    "morning2_greet_seo_1": {
+    "morning2_greet_seo_1": {},
+    "morning2_greet_seo_1_roof": {
         "name": "Seoyeon",
         "text": "Was du gestern auf dem Dach gesagt hast — gilt das noch?"
+    },
+    "morning2_greet_seo_1_gate": {
+        "name": "Seoyeon",
+        "text": "Was du gestern am Tor gesagt hast — du erinnerst dich, oder?"
     },
     "morning2_greet_seo_2": {
         "name": "{name}",

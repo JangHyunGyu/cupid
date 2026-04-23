@@ -602,9 +602,14 @@
         "name": "{name}",
         "text": "*Eu me declarei. Yuna concordou com a cabeça. Mas aquele aceno era mais tentativa do que certeza. — Um mês depois, apareceu um bilhete no meu armário. 'Precisamos conversar.'*"
     },
-    "bitter_yuna_2": {
+    "bitter_yuna_2": {},
+    "bitter_yuna_2_library": {
         "name": "Yuna",
         "text": "...Às vezes lembro. Quando sinto o cheiro da biblioteca. Devia ter falado mais naquela época."
+    },
+    "bitter_yuna_2_book": {
+        "name": "Yuna",
+        "text": "...Às vezes lembro. Quando passo por uma livraria. Devia ter falado mais naquela época."
     },
     "bitter_yuna_3": {
         "name": "{name}",

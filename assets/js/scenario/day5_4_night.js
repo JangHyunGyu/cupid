@@ -822,7 +822,20 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "bitter_yuna_2"
     },
     "bitter_yuna_2": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "branches": [
+            { "condition": "chose_yuna_lunch", "next": "bitter_yuna_2_library" },
+            { "next": "bitter_yuna_2_book" }
+        ]
+    },
+    "bitter_yuna_2_library": {
         "background": "assets/images/background/library_old.png",
+        "character": "assets/images/characters/yuna_sad.png",
+        "next": "bitter_yuna_3"
+    },
+    "bitter_yuna_2_book": {
+        "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "bitter_yuna_3"
     },
