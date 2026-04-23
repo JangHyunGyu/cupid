@@ -224,9 +224,14 @@
         "name": "{name}",
         "text": "*Salgo de la sala de profesores — y los papeles del cajón no se me van de la cabeza.*"
     },
-    "morning2_greet_seo_1": {
+    "morning2_greet_seo_1": {},
+    "morning2_greet_seo_1_roof": {
         "name": "Seoyeon",
         "text": "Lo que dijiste ayer en la azotea, ¿sigue en pie?"
+    },
+    "morning2_greet_seo_1_gate": {
+        "name": "Seoyeon",
+        "text": "Lo que dijiste ayer en la entrada, ¿te acuerdas?"
     },
     "morning2_greet_seo_2": {
         "name": "{name}",

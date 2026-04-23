@@ -3270,11 +3270,27 @@
 ---
 
 ### `morning2_greet_seo_1`
+- 분기:
+  - [`chose_seoyeon_lunch`] → `morning2_greet_seo_1_roof`
+  - [기본] → `morning2_greet_seo_1_gate`
+
+---
+
+### `morning2_greet_seo_1_roof`
 - 배경: `room_school.png`
 - 다음: `morning2_greet_seo_2`
 
 - 캐릭터: `seyoun_normal.png`
 **서연**: 어제 옥상에서 한 말, 아직 유효한 거지?
+
+---
+
+### `morning2_greet_seo_1_gate`
+- 배경: `room_school.png`
+- 다음: `morning2_greet_seo_2`
+
+- 캐릭터: `seyoun_normal.png`
+**서연**: 어제 교문에서 한 말, 기억은 하지?
 
 ---
 
@@ -21486,11 +21502,27 @@
 ---
 
 ### `bitter_yuna_2`
+- 분기:
+  - [`chose_yuna_lunch`] → `bitter_yuna_2_library`
+  - [기본] → `bitter_yuna_2_book`
+
+---
+
+### `bitter_yuna_2_library`
 - 배경: `library_old.png`
 - 다음: `bitter_yuna_3`
 
 - 캐릭터: `yuna_sad.png`
 **유나**: ...가끔 생각나. 도서관 냄새 맡으면. 그때 좀 더 말할 걸.
+
+---
+
+### `bitter_yuna_2_book`
+- 배경: `bookstore.png`
+- 다음: `bitter_yuna_3`
+
+- 캐릭터: `yuna_sad.png`
+**유나**: ...가끔 생각나. 서점 지날 때. 그때 좀 더 말할 걸.
 
 ---
 

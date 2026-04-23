@@ -224,9 +224,14 @@
         "name": "{name}",
         "text": "*Leaving the faculty office — I can't stop thinking about those papers in the drawer.*"
     },
-    "morning2_greet_seo_1": {
+    "morning2_greet_seo_1": {},
+    "morning2_greet_seo_1_roof": {
         "name": "Seoyeon",
         "text": "What you said on the roof yesterday — still stands?"
+    },
+    "morning2_greet_seo_1_gate": {
+        "name": "Seoyeon",
+        "text": "What you said at the gate yesterday — you remember, right?"
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
