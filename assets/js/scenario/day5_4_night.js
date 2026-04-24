@@ -822,8 +822,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "bitter_yuna_2"
     },
     "bitter_yuna_2": {
-        "background": "assets/images/background/school.png",
-        "character": null,
         "branches": [
             { "condition": "chose_yuna_lunch", "next": "bitter_yuna_2_library" },
             { "next": "bitter_yuna_2_book" }

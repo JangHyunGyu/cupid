@@ -824,5 +824,57 @@
     "after3_dain_correct_12": {
         "name": "Dain",
         "text": "...Weißt du was. Das hier. Das geht schon eine Weile so."
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*Auf dem Heimweg. Minsu steht vor dem Schultor.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "Ich hab's gesehen."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "Beim Mittagessen. Und gerade eben Seoyeons Gesicht."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "Was hab ich dir gestern gesagt? Wenn am Ende alle drei weinen, ist das deine Schuld. Sieht aus, als wäre dieses 'später' schneller gekommen als gedacht."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "Von außen ist das echt schwer mit anzusehen. Sie sind alle gute Leute. Ich glaube nicht, dass du absichtlich Mist baust, aber du schiebst das Nein vor dir her."
+    },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*Minsu seufzt. Nicht spöttisch. Es ist ein ehrlich besorgter Seufzer.*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......Ja."
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "Ich frage nicht, was an deiner alten Schule passiert ist. Aber eins sage ich dir."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Nein sagen ist auch Rücksicht. Wenn eine Beziehung nicht funktionieren kann, ist es besser, jetzt eine Grenze zu ziehen, statt weiter Hoffnung zu lassen."
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*Nein sagen ist auch Rücksicht. An meiner alten Schule habe ich Sojeong weder die Chance gegeben, ein Geständnis zu hören, noch es abzulehnen. Weil ich nichts sagen konnte.*"
+    },
+    "minsu_d3_9": {
+        "name": "{name}",
+        "text": "*Wenn ich damals wenigstens einmal richtig geredet hätte, würde es vielleicht nicht so lange nachhängen. Was ich jetzt tun muss, ist nicht allen dreien dasselbe Gesicht zu zeigen. Ich muss ehrlich zu einer Person sein.*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "Wir sehen uns morgen in der Schule. — Denk ernsthaft darüber nach."
     }
 }

@@ -1,259 +1,259 @@
 {
-  "night2_start": {
-    "name": "{name}",
-    "text": "*집에 돌아왔다. 샤워하고 침대에 누웠는데 — 메신저 알림이 쏟아진다. 세 명. 동시에.*"
-  },
-  "night2_msg_1": {
-    "name": "{name}",
-    "text": "*세 명에게서 메시지가 왔다.*"
-  },
-  "night2_msg_dain_specific": {
-    "name": "다인",
-    "text": "야!! 오늘 떡볶이 맛있었다!!"
-  },
-  "night2_msg_dain_specific_2": {
-    "name": "다인",
-    "text": "내일도 내기하자!! 종목 바꿔서!!"
-  },
-  "night2_msg_seo_general": {
-    "name": "서연",
-    "text": "내일 점심에 옥상 열어놓을게. 와"
-  },
-  "night2_msg_seo_specific": {
-    "name": "서연",
-    "text": "오늘 고마웠어. 덕분에 일찍 끝났어"
-  },
-  "night2_msg_seo_specific_2": {
-    "name": "서연",
-    "text": "다음에도 부를지도 모르니까, 각오해 둬"
-  },
-  "night2_msg_yuna_specific": {
-    "name": "유나",
-    "text": "...오늘 그 곡. 좋았어"
-  },
-  "night2_msg_yuna_specific_2": {
-    "name": "유나",
-    "text": "...다음에 또 들려줘"
-  },
-  "night2_msg_dain_general": {
-    "name": "다인",
-    "text": "야, 내일 매점 가자! 오늘 못 간 거 아직 아쉽거든!"
-  },
-  "night2_msg_dain_general_merge": {
-    "name": "서연",
-    "text": "점심에 옥상 올래? 바람 좋을 거야"
-  },
-  "night2_msg_seo_general_alt": {
-    "name": "서연",
-    "text": "내일 옥상 열어둘게. 시간 되면 와"
-  },
-  "night2_msg_yuna_general": {
-    "name": "유나",
-    "text": "...내일 별관 올 거야?"
-  },
-  "night2_msg_generic": {
-    "name": "다인",
-    "text": "야 내일 매점 갈 거지?!"
-  },
-  "night2_msg_generic_2": {
-    "name": "서연",
-    "text": "내일 점심 옥상 열어놓을게"
-  },
-  "night2_msg_generic_3": {
-    "name": "유나",
-    "text": "...그 책, 다 읽었어?"
-  },
-  "night2_msg_7": {
-    "name": "{name}",
-    "text": "*세 명에게 동시에 답장해야 하는 상황. — 이게 행복인지 고문인지 모르겠다.*"
-  },
-  "night2_choice": {
-    "name": "{name}",
-    "text": "*누구에게 먼저 답장할까?*",
-    "choices": [
-      "다인에게 먼저 답장한다",
-      "서연에게 먼저 답장한다",
-      "유나에게 먼저 답장한다"
-    ]
-  },
-  "night2_reply_dain_1": {
-    "name": "{name}",
-    "text": "떡볶이 매웠어 ㅋㅋ"
-  },
-  "night2_reply_dain_2": {
-    "name": "다인",
-    "text": "ㅋㅋㅋ 매운 거 못 먹는 거야?!"
-  },
-  "night2_reply_dain_3": {
-    "name": "다인",
-    "text": "내일은 순한 맛으로 가자!!"
-  },
-  "night2_reply_dain_4": {
-    "name": "다인",
-    "text": "아 근데 순한 맛은 떡볶이가 아니지ㅋㅋ"
-  },
-  "night2_reply_dain_5": {
-    "name": "{name}",
-    "text": "*또 세 줄 연속이다.*"
-  },
-  "night2_reply_dain_react_high": {
-    "name": "다인",
-    "text": "야 ㅋㅋㅋ 진짜 미쳤다 너. 내일 꼭 체육관 와!!"
-  },
-  "night2_reply_dain_react_default": {
-    "name": "다인",
-    "text": "ㅋㅋ 알겠어. 굿나잇!"
-  },
-  "night2_reply_seo_1": {
-    "name": "{name}",
-    "text": "부르면 또 갈게"
-  },
-  "night2_reply_seo_2": {
-    "name": "서연",
-    "text": "쉽게 약속하네"
-  },
-  "night2_reply_seo_3": {
-    "name": "{name}",
-    "text": "쉬운 약속인데"
-  },
-  "night2_reply_seo_4": {
-    "name": "서연",
-    "text": "점심에 옥상 열어둘게. 이번엔 진짜 와"
-  },
-  "night2_reply_seo_5": {
-    "name": "{name}",
-    "text": "*'이번엔 진짜 와.' — 빠지면 대가가 따르는 톤.*"
-  },
-  "night2_reply_seo_react_high": {
-    "name": "서연",
-    "text": "...너, 생각보다 재밌는 사람이야. 내일 점심 옥상에서 볼래?"
-  },
-  "night2_reply_seo_react_default": {
-    "name": "서연",
-    "text": "ㅋ 알겠어. 내일 봐."
-  },
-  "night2_reply_yuna_1": {
-    "name": "{name}",
-    "text": "아직 반 정도. 재밌어"
-  },
-  "night2_reply_yuna_2": {
-    "name": "유나",
-    "text": "...다행이네"
-  },
-  "night2_reply_yuna_3": {
-    "name": "{name}",
-    "text": "*잠시 침묵. — 그리고.*"
-  },
-  "night2_reply_yuna_4": {
-    "name": "유나",
-    "text": "세 번째 별을 봐"
-  },
-  "night2_reply_yuna_5": {
-    "name": "{name}",
-    "text": "*세 번째 별? — 창문 쪽으로 고개를 돌렸다. 밤하늘에 별이 많다. 세 번째가 어떤 건지는 모르겠다.*"
-  },
-  "night2_reply_yuna_6": {
-    "name": "유나",
-    "text": "이유는 나중에"
-  },
-  "night2_reply_yuna_6_b": {
-    "name": "{name}",
-    "text": "*창문을 열었다. 찬 바람이 들어온다. — 별은 많은데, 어떤 게 세 번째인지는 모르겠다.*"
-  },
-  "night2_reply_yuna_6_c": {
-    "name": "{name}",
-    "text": "*유나다운 수수께끼다. — 답은 안 알려주면서, 찾아보게 만드는 사람.*"
-  },
-  "night2_reply_yuna_7": {
-    "name": "{name}",
-    "text": "*내일 밤하늘을 볼 때 세어 봐야겠다. — 이 사람 덕분에 자꾸 하늘을 올려다보게 된다.*"
-  },
-  "night2_reply_yuna_react_high": {
-    "name": "유나",
-    "text": "...이 시간에도 답장하는 사람이 있구나. 내일 도서관에 올래?"
-  },
-  "night2_reply_yuna_react_default": {
-    "name": "유나",
-    "text": "...응. 잘 자."
-  },
-  "night2_hidden_check": {
-    "name": "{name}",
-    "text": "*메신저 알림 사이에 — 또 다른 알림이 보인다.*"
-  },
-  "night2_hidden_homeroom_1": {
-    "name": "{name}",
-    "text": "*담임선생님에게서 개인 메시지가 왔다. '{name}, 오늘 교무실 와줘서 고마웠다. 행정적인 거 끝났으니까 더 안 불러도 된다. ...근데 적응 힘들면 언제든 와.'*"
-  },
-  "night2_hidden_homeroom_2": {
-    "name": "{name}",
-    "text": "*세 줄. 감사, 거리 두기, 다시 다가오기. — 줄다리기를 혼자서 하고 있다.*"
-  },
-  "night2_hidden_homeroom_3": {
-    "name": "{name}",
-    "text": "*'더 안 불러도 된다'와 '언제든 와'가 같은 메시지에 들어 있다. 모순인데 — 이 사람답다.*"
-  },
-  "night2_hidden_nurse_1": {
-    "name": "{name}",
-    "text": "*건강 관리 앱 알림. '보건실 기록: {name} — 팔꿈치 찰과상 (경미). 메모: 밴드 내일 아침에 갈아줄게. 밴드 갈아주는 건 의료 행위니까 거부권 없음 ^^'*"
-  },
-  "night2_hidden_nurse_2": {
-    "name": "{name}",
-    "text": "*거부권 없음. — 이 사람한테 이끌리고 있다는 거, 인정해야 하나.*"
-  },
-  "night2_end_1": {
-    "name": "{name}",
-    "text": "*답장을 보내고 핸드폰을 내려놓았다. 둘째 날이 끝났다.*"
-  },
-  "night2_flashback_1": {
-    "name": "{name}",
-    "text": "*민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*"
-  },
-  "night2_flashback_2": {
-    "name": "{name}",
-    "text": "*스크롤을 한참 내렸다. 3개월 전. — 사진 한 장이 보인다. 소풍 날 찍은 단체 사진. 소정이가 웃고 있다. 내 옆에서. — 이 사진 찍은 다음 주부터였다. 소정이 책상에 낙서가 생기기 시작한 게. 좋아했다. 분명히. 근데 좋아한다는 말보다 더 급한 말이 있었다.*"
-  },
-  "night2_flashback_3": {
-    "name": "{name}",
-    "text": "*그때 나는 매일 밤 핸드폰을 열었다. 메모장에 뭔가를 쓰다 지우기를 반복했다. 고백 문장도, '선생님 소정이가 —' 같은 신고 문장도. 매번 보내기 직전에 멈췄다. 나서면 나까지 표적이 될 것 같았다. 그리고 3월 어느 날, 소정이 자리가 비어 있었다. 다음 날도. 그다음 날도.*"
-  },
-  "night2_flashback_5": {
-    "name": "{name}",
-    "text": "*핸드폰 메모장의 시뮬레이션은 38번째에서 멈춰 있다. 39번째는 없다. 보낼 상대가 사라졌으니까. 고백도 못 했고, 지켜주지도 못했다. 전학은 소정이 때문이 아니다. 아버지 직장 때문이다. — 근데 전학이 싫지 않았다. 소정이의 빈 책상을 매일 지나가지 않아도 되니까.*"
-  },
-  "night2_flashback_7": {
-    "name": "{name}",
-    "text": "*'이번에는 눈 돌리지 말자.' — 이 학교에 오면서 한 다짐이었다. 갤러리를 닫았다. 사진을 지울까 말까 고민하다가 — 남겨뒀다. 지우면 그때의 죄책감까지 잊을 것 같아서.*"
-  },
-  "night2_flashback_8": {
-    "name": "{name}",
-    "text": "*그런데 — 천장을 본다. 오늘 하루가 머릿속에서 안 꺼진다. 서연. 다인. 유나. 셋 다 신경이 쓰인다. 이게 호기심이라고 우길 수도 있다. 근데 솔직히 말하면, 무섭다. 누구 한 명한테 마음이 기우는 게.*"
-  },
-  "night2_flashback_9": {
-    "name": "{name}",
-    "text": "*소정이 때 나는 한 사람만 봤다. 좋아했고, 보고만 있다가, 그 사람이 무너지는 걸 놓쳤다. 메모장에서 멈춘 38번. — 한 명만 본다는 건, 잃을 수 있다는 뜻이었다.*"
-  },
-  "night2_flashback_10": {
-    "name": "{name}",
-    "text": "*— 그래서 셋 다 여지를 두고 있다. 한 명을 너무 빨리 정하면 다른 한 명이 무너질 때 또 놓칠까 봐. 보험. 비겁한 거 안다. 우유부단한 새끼지. 근데 — 한 사람만 보다가 잃는 건, 나는 안다.*"
-  },
-  "night2_end_2": {
-    "name": "{name}",
-    "text": "*둘째 날이 끝났다. 첫날에는 호기심이었다. 이 사람들이 어떤 사람인지 궁금했다. 오늘은 — 좀 다르다. 궁금한 게 아니라, 신경이 쓰인다. 뭘 하고 있을지, 내일 뭐라고 말할지.*"
-  },
-  "night2_end_2_b": {
-    "name": "{name}",
-    "text": "*그 말이 자꾸 맴돈다. 대답은 아직 못 했다. 어제는 신경 쓰이는 정도였다. 오늘은 — 보고 싶다는 말이 목까지 올라왔다가 내려갔다.*"
-  },
-  "night2_end_3_b": {
-    "name": "{name}",
-    "text": "*문제는 그 거리가 생각보다 빠르게 좁아지고 있다는 거다. 눈을 감는다. — 내일은 조금 더 정직해져야 할지도.*"
-  },
-  "night2_end_4_b": {
-    "name": "{name}",
-    "text": "*냉장고를 열었다. 별거 없다. 남은 밥, 계란, 김. — 내일은 뭔가 해가고 싶다는 생각이 들었다. 누구한테? 그건 모르겠다. 그냥, 해가고 싶었다.*"
-  },
-  "night2_end_4_c": {
-    "name": "{name}",
-    "text": "*대충 도시락을 쌌다. 잘 만든 건 아니다. 정성이라고 하기엔 좀 부끄러운 수준. — 근데 안 하는 것보다는 낫겠지.*"
-  }
+    "night2_start": {
+        "name": "{name}",
+        "text": "*집에 돌아왔다. 샤워하고 침대에 누웠는데 — 메신저 알림이 쏟아진다. 세 명. 동시에.*"
+    },
+    "night2_msg_1": {
+        "name": "{name}",
+        "text": "*세 명에게서 메시지가 왔다.*"
+    },
+    "night2_msg_dain_specific": {
+        "name": "다인",
+        "text": "야!! 오늘 떡볶이 맛있었다!!"
+    },
+    "night2_msg_dain_specific_2": {
+        "name": "다인",
+        "text": "내일도 내기하자!! 종목 바꿔서!!"
+    },
+    "night2_msg_seo_general": {
+        "name": "서연",
+        "text": "내일 점심에 옥상 열어놓을게. 와"
+    },
+    "night2_msg_seo_specific": {
+        "name": "서연",
+        "text": "오늘 고마웠어. 덕분에 일찍 끝났어"
+    },
+    "night2_msg_seo_specific_2": {
+        "name": "서연",
+        "text": "다음에도 부를지도 모르니까, 각오해 둬"
+    },
+    "night2_msg_yuna_specific": {
+        "name": "유나",
+        "text": "...오늘 그 곡. 좋았어"
+    },
+    "night2_msg_yuna_specific_2": {
+        "name": "유나",
+        "text": "...다음에 또 들려줘"
+    },
+    "night2_msg_dain_general": {
+        "name": "다인",
+        "text": "야, 내일 매점 가자! 오늘 못 간 거 아직 아쉽거든!"
+    },
+    "night2_msg_dain_general_merge": {
+        "name": "서연",
+        "text": "점심에 옥상 올래? 바람 좋을 거야"
+    },
+    "night2_msg_seo_general_alt": {
+        "name": "서연",
+        "text": "내일 옥상 열어둘게. 시간 되면 와"
+    },
+    "night2_msg_yuna_general": {
+        "name": "유나",
+        "text": "...내일 별관 올 거야?"
+    },
+    "night2_msg_generic": {
+        "name": "다인",
+        "text": "야 내일 매점 갈 거지?!"
+    },
+    "night2_msg_generic_2": {
+        "name": "서연",
+        "text": "내일 점심 옥상 열어놓을게"
+    },
+    "night2_msg_generic_3": {
+        "name": "유나",
+        "text": "...그 책, 다 읽었어?"
+    },
+    "night2_msg_7": {
+        "name": "{name}",
+        "text": "*세 명에게 동시에 답장해야 하는 상황. — 좋은 일인지 피곤한 일인지 아직 모르겠다.*"
+    },
+    "night2_choice": {
+        "name": "{name}",
+        "text": "*누구에게 먼저 답장할까?*",
+        "choices": [
+            "다인에게 먼저 답장한다",
+            "서연에게 먼저 답장한다",
+            "유나에게 먼저 답장한다"
+        ]
+    },
+    "night2_reply_dain_1": {
+        "name": "{name}",
+        "text": "떡볶이 매웠어 ㅋㅋ"
+    },
+    "night2_reply_dain_2": {
+        "name": "다인",
+        "text": "ㅋㅋㅋ 매운 거 못 먹는 거야?!"
+    },
+    "night2_reply_dain_3": {
+        "name": "다인",
+        "text": "내일은 순한 맛으로 가자!!"
+    },
+    "night2_reply_dain_4": {
+        "name": "다인",
+        "text": "아 근데 순한 맛은 떡볶이가 아니지ㅋㅋ"
+    },
+    "night2_reply_dain_5": {
+        "name": "{name}",
+        "text": "*또 세 줄 연속이다.*"
+    },
+    "night2_reply_dain_react_high": {
+        "name": "다인",
+        "text": "야 ㅋㅋㅋ 진짜 미쳤다 너. 내일 꼭 체육관 와!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "다인",
+        "text": "ㅋㅋ 알겠어. 굿나잇!"
+    },
+    "night2_reply_seo_1": {
+        "name": "{name}",
+        "text": "부르면 또 갈게"
+    },
+    "night2_reply_seo_2": {
+        "name": "서연",
+        "text": "쉽게 약속하네"
+    },
+    "night2_reply_seo_3": {
+        "name": "{name}",
+        "text": "쉬운 약속인데"
+    },
+    "night2_reply_seo_4": {
+        "name": "서연",
+        "text": "점심에 옥상 열어둘게. 이번엔 진짜 와"
+    },
+    "night2_reply_seo_5": {
+        "name": "{name}",
+        "text": "*'이번엔 진짜 와.' — 빠지면 대가가 따르는 톤.*"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "서연",
+        "text": "...너, 생각보다 재밌는 사람이야. 내일 점심 옥상에서 볼래?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "서연",
+        "text": "ㅋ 알겠어. 내일 봐."
+    },
+    "night2_reply_yuna_1": {
+        "name": "{name}",
+        "text": "아직 반 정도. 재밌어"
+    },
+    "night2_reply_yuna_2": {
+        "name": "유나",
+        "text": "...다행이네"
+    },
+    "night2_reply_yuna_3": {
+        "name": "{name}",
+        "text": "*잠시 침묵. — 그리고.*"
+    },
+    "night2_reply_yuna_4": {
+        "name": "유나",
+        "text": "세 번째 별을 봐"
+    },
+    "night2_reply_yuna_5": {
+        "name": "{name}",
+        "text": "*세 번째 별? — 창문 쪽으로 고개를 돌렸다. 밤하늘에 별이 많다. 세 번째가 어떤 건지는 모르겠다.*"
+    },
+    "night2_reply_yuna_6": {
+        "name": "유나",
+        "text": "이유는 나중에"
+    },
+    "night2_reply_yuna_6_b": {
+        "name": "{name}",
+        "text": "*창문을 열었다. 찬 바람이 들어온다. — 별은 많은데, 어떤 게 세 번째인지는 모르겠다.*"
+    },
+    "night2_reply_yuna_6_c": {
+        "name": "{name}",
+        "text": "*유나다운 수수께끼다. — 답은 안 알려주면서, 찾아보게 만드는 사람.*"
+    },
+    "night2_reply_yuna_7": {
+        "name": "{name}",
+        "text": "*내일 밤하늘을 볼 때 세어 봐야겠다. — 이 사람 덕분에 자꾸 하늘을 올려다보게 된다.*"
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "유나",
+        "text": "...이 시간에도 답장하는 사람이 있구나. 내일 도서관에 올래?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "유나",
+        "text": "...응. 잘 자."
+    },
+    "night2_hidden_check": {
+        "name": "{name}",
+        "text": "*메신저 알림 사이에 — 또 다른 알림이 보인다.*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*담임선생님에게서 개인 메시지가 왔다. '{name}, 오늘 교무실 와줘서 고마웠다. 행정적인 거 끝났으니까 더 안 불러도 된다. ...근데 적응 힘들면 언제든 와.'*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*세 줄. 감사, 거리 두기, 다시 다가오기. — 줄다리기를 혼자서 하고 있다.*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*'더 안 불러도 된다'와 '언제든 와'가 같은 메시지에 들어 있다. 모순인데 — 이 사람답다.*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*건강 관리 앱 알림. '보건실 기록: {name} — 팔꿈치 찰과상 (경미). 메모: 밴드 내일 아침에 갈아줄게. 밴드 갈아주는 건 의료 행위니까 거부권 없음.'*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*거부권 없음. — 이 사람한테 이끌리고 있다는 거, 인정해야 하나.*"
+    },
+    "night2_end_1": {
+        "name": "{name}",
+        "text": "*답장을 보내고 핸드폰을 내려놓았다. 둘째 날이 끝났다.*"
+    },
+    "night2_flashback_1": {
+        "name": "{name}",
+        "text": "*민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*"
+    },
+    "night2_flashback_2": {
+        "name": "{name}",
+        "text": "*스크롤을 한참 내렸다. 3개월 전. — 사진 한 장이 보인다. 소풍 날 찍은 단체 사진. 소정이가 웃고 있다. 내 옆에서. — 이 사진 찍은 다음 주부터였다. 소정이 책상에 낙서가 생기기 시작한 게. 좋아했다. 분명히. 근데 좋아한다는 말보다 더 급한 말이 있었다.*"
+    },
+    "night2_flashback_3": {
+        "name": "{name}",
+        "text": "*그때 나는 매일 밤 핸드폰을 열었다. 메모장에 뭔가를 쓰다 지우기를 반복했다. 고백 문장도, '선생님 소정이가 —' 같은 신고 문장도. 매번 보내기 직전에 멈췄다. 나서면 나까지 표적이 될 것 같았다. 그리고 3월 어느 날, 소정이 자리가 비어 있었다. 다음 날도. 그다음 날도.*"
+    },
+    "night2_flashback_5": {
+        "name": "{name}",
+        "text": "*핸드폰 메모장의 시뮬레이션은 38번째에서 멈춰 있다. 39번째는 없다. 보낼 상대가 사라졌으니까. 고백도 못 했고, 도움도 못 청했다. 전학은 소정이 때문이 아니다. 아버지 직장 때문이다. — 근데 전학이 싫지 않았다. 소정이의 빈 책상을 매일 지나가지 않아도 되니까.*"
+    },
+    "night2_flashback_7": {
+        "name": "{name}",
+        "text": "*'이번에는 눈 돌리지 말자.' — 이 학교에 오면서 한 다짐이었다. 갤러리를 닫았다. 사진을 지울까 말까 고민하다가 — 남겨뒀다. 지우면 그때의 죄책감까지 잊을 것 같아서.*"
+    },
+    "night2_flashback_8": {
+        "name": "{name}",
+        "text": "*그런데 — 천장을 본다. 오늘 하루가 머릿속에서 안 꺼진다. 서연. 다인. 유나. 셋 다 신경이 쓰인다. 이게 호기심이라고 우길 수도 있다. 근데 솔직히 말하면, 무섭다. 누구 한 명한테 마음이 기우는 게.*"
+    },
+    "night2_flashback_9": {
+        "name": "{name}",
+        "text": "*소정이 때 나는 한 사람만 봤다. 좋아했고, 보고만 있다가, 그 사람이 무너지는 걸 놓쳤다. 메모장에서 멈춘 38번. — 한 명만 본다는 건, 잃을 수 있다는 뜻이었다.*"
+    },
+    "night2_flashback_10": {
+        "name": "{name}",
+        "text": "*— 그래서 셋 다 여지를 두고 있다. 한 명을 너무 빨리 정하면 다른 한 명이 무너질 때 또 놓칠까 봐. 보험. 비겁한 거 안다. 우유부단한 새끼지. 근데 — 한 사람만 보다가 잃는 건, 나는 안다.*"
+    },
+    "night2_end_2": {
+        "name": "{name}",
+        "text": "*둘째 날이 끝났다. 첫날에는 호기심이었다. 이 사람들이 어떤 사람인지 궁금했다. 오늘은 — 좀 다르다. 궁금한 게 아니라, 신경이 쓰인다. 뭘 하고 있을지, 내일 뭐라고 말할지.*"
+    },
+    "night2_end_2_b": {
+        "name": "{name}",
+        "text": "*그 말이 자꾸 맴돈다. 대답은 아직 못 했다. 어제는 신경 쓰이는 정도였다. 오늘은 — 먼저 연락할 핑계를 찾고 있다.*"
+    },
+    "night2_end_3_b": {
+        "name": "{name}",
+        "text": "*문제는 그 거리가 생각보다 빠르게 좁아지고 있다는 거다. 눈을 감는다. — 내일은 조금 더 정직해져야 할지도.*"
+    },
+    "night2_end_4_b": {
+        "name": "{name}",
+        "text": "*냉장고를 열었다. 별거 없다. 남은 밥, 계란, 김. — 내일은 뭔가 해가고 싶다는 생각이 들었다. 누구한테? 그건 모르겠다. 그냥, 해가고 싶었다.*"
+    },
+    "night2_end_4_c": {
+        "name": "{name}",
+        "text": "*대충 도시락을 쌌다. 잘 만든 건 아니다. 정성이라고 하기엔 좀 민망한 수준. — 근데 안 하는 것보다는 낫겠지.*"
+    }
 }

@@ -824,5 +824,57 @@
     "after3_dain_correct_12": {
         "name": "Dain",
         "text": "...Tu sais quoi. Ce truc. Ça dure depuis un moment."
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*Sur le chemin du retour. Minsu se tient devant le portail du lycée.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "J'ai vu."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "À midi. Et le visage de Seoyeon, à l’instant."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "Qu’est-ce que je t’ai dit hier ? Si les trois finissent par pleurer, ce sera ta faute. On dirait que ce « plus tard » est arrivé plus vite que prévu."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "C’est dur à regarder de côté. Elles sont toutes bien. Je ne pense pas que tu fasses ça exprès pour mal agir, mais tu repousses le moment de dire non."
+    },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*Minsu soupire. Pas par mépris, mais parce qu’il s’inquiète vraiment.*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......Oui."
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "Je ne te demanderai pas ce qui s’est passé dans ton ancien lycée. Mais je vais te dire une chose."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Refuser, c’est aussi prendre soin. Quand une relation ne peut pas marcher, mieux vaut poser une limite maintenant que laisser de l’espoir."
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*Refuser, c’est aussi prendre soin. Dans mon ancien lycée, je n’ai donné à Sojeong ni l’occasion d’entendre une confession, ni celle de la refuser. Parce que je n’ai rien su dire.*"
+    },
+    "minsu_d3_9": {
+        "name": "{name}",
+        "text": "*Si j’avais réussi à parler correctement au moins une fois, ça ne me serait peut-être pas resté aussi longtemps. Ce que je dois faire maintenant, ce n’est pas montrer le même visage aux trois. C’est être sincère avec une seule personne.*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "On se voit demain au lycée. — Réfléchis-y sérieusement."
     }
 }

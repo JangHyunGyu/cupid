@@ -824,5 +824,57 @@
     "haeun_warn_8b": {
         "name": "{name}",
         "text": "*Saí pelo portão da escola.*"
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*No caminho de volta. Minsu está parado na frente do portão da escola.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "Eu vi."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "No almoço. E a cara da Seoyeon agora há pouco."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "O que eu te falei ontem? Se as três acabarem chorando, a culpa é sua. Parece que esse 'depois' chegou mais cedo do que eu esperava."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "É meio difícil ver isso de fora. Elas são boas pessoas. Não acho que você esteja fazendo por mal, mas você tá adiando dizer não."
+    },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*Minsu suspira. Não é deboche. É um suspiro de preocupação de verdade.*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......É."
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "Não vou perguntar o que aconteceu na sua escola antiga. Mas vou te dizer uma coisa."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Dizer não também é cuidado. Se uma relação não vai dar certo, é melhor colocar limite agora do que ficar deixando espaço para esperança."
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*Dizer não também é cuidado. Na minha escola antiga, eu não dei à Sojeong nem a chance de ouvir uma confissão, nem a de recusar. Porque eu não consegui dizer nada.*"
+    },
+    "minsu_d3_9": {
+        "name": "{name}",
+        "text": "*Se eu tivesse falado direito pelo menos uma vez, talvez isso não tivesse ficado comigo por tanto tempo. O que eu preciso fazer agora não é mostrar a mesma cara para as três. É ser sincero com uma pessoa só.*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "Te vejo amanhã na escola. — Pensa nisso com seriedade."
     }
 }
