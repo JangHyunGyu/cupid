@@ -438,6 +438,8 @@ html {
     justify-content: flex-end;
     padding: 20px;
     padding-bottom: calc(20px + env(safe-area-inset-bottom));
+    transition: transform 0.18s ease;
+    will-change: transform;
     /* 아이폰 노치 디자인 대응 */
     pointer-events: none;
     /* UI 빈 공간 클릭 시 투과되도록 설정 */

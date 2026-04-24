@@ -455,7 +455,7 @@ class FreeTalkSystem {
         }
 
         // 초기 대사 출력 후 입력창에 포커스 (모바일 키보드 활성화)
-        if (this.uiManager.chatInput) {
+        if (this.uiManager.chatInput && (!window.isCupidDesktopPointer || window.isCupidDesktopPointer())) {
             this.uiManager.chatInput.focus();
         }
     }
@@ -831,7 +831,9 @@ class FreeTalkSystem {
             this.uiManager.dialogueBox.classList.remove('thinking-box');
             document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
-            this.uiManager.chatInput.focus();
+            if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
+                this.uiManager.chatInput.focus();
+            }
         }
     }
 
