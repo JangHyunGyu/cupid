@@ -586,7 +586,9 @@ ${L.rule}
 
         // 입력 포커스
         const input = document.getElementById('chat-input');
-        if (input) setTimeout(() => input.focus(), 300);
+        if (input && (!window.isCupidDesktopPointer || window.isCupidDesktopPointer())) {
+            setTimeout(() => input.focus(), 300);
+        }
 
         console.log(`[GalleryFreeTalk] 오버레이 열기: ${charId}`);
     }
@@ -607,6 +609,7 @@ ${L.rule}
         // visualViewport 리스너 정리
         if (this._vvHandler && window.visualViewport) {
             window.visualViewport.removeEventListener('resize', this._vvHandler);
+            window.visualViewport.removeEventListener('scroll', this._vvHandler);
             this._vvHandler = null;
         }
 
@@ -720,11 +723,24 @@ ${L.rule}
         this._vvHandler = null;
         if (window.visualViewport && window.innerWidth <= 768) {
             const uiLayer = this.overlayEl.querySelector('.gft-ui-layer');
-            this._vvHandler = () => {
-                const keyboardHeight = window.innerHeight - window.visualViewport.height;
-                uiLayer.style.bottom = keyboardHeight + 'px';
+            const updateKeyboardOffset = () => {
+                if (!uiLayer) return;
+                const keyboardOffset = typeof window.getCupidKeyboardOffset === 'function'
+                    ? window.getCupidKeyboardOffset(document.activeElement)
+                    : 0;
+                uiLayer.style.setProperty('--keyboard-offset', `${keyboardOffset}px`);
+                uiLayer.classList.toggle('keyboard-active', keyboardOffset > 0);
+                uiLayer.style.transform = keyboardOffset > 0
+                    ? `translate3d(0, -${keyboardOffset}px, 0)`
+                    : '';
             };
+
+            this._vvHandler = () => requestAnimationFrame(updateKeyboardOffset);
             window.visualViewport.addEventListener('resize', this._vvHandler);
+            window.visualViewport.addEventListener('scroll', this._vvHandler);
+            input.addEventListener('focus', () => setTimeout(updateKeyboardOffset, 120));
+            input.addEventListener('blur', () => setTimeout(updateKeyboardOffset, 120));
+            updateKeyboardOffset();
         }
     }
 
@@ -895,7 +911,9 @@ ${L.rule}
         }
         if (input) {
             input.disabled = false;
-            input.focus();
+            if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
+                input.focus();
+            }
         }
         this.isProcessing = false;
 

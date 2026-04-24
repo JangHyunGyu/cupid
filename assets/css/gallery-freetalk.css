@@ -111,6 +111,8 @@
     flex-direction: column;
     gap: 10px;
     pointer-events: none;
+    transition: transform 0.18s ease;
+    will-change: transform;
 }
 
 /* ── style.css 오버라이드 (오버레이 컨텍스트에서 필요한 조정) ── */

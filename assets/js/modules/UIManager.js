@@ -50,6 +50,7 @@ class UIManager {
         this.nameTagEl = document.getElementById('name-tag');         // 캐릭터 이름 + 호감도 게이지
         this.dialogueBox = document.getElementById('dialogue-box');   // 대화창 전체 박스
         this.choiceContainer = document.getElementById('choice-container');  // 선택지 버튼들의 컨테이너
+        this.uiLayer = document.getElementById('ui-layer');
 
         // 💬 채팅(프리토킹) 관련
         this.chatContainer = document.getElementById('chat-container');  // 채팅 UI 전체
@@ -102,6 +103,8 @@ class UIManager {
 
         // 이미지 업로드 관련 이벤트 초기화
         this.bindImageUploadEvents();
+
+        this.setupMobileKeyboardHandling();
     }
 
     /**
@@ -251,6 +254,58 @@ class UIManager {
             });
             this.removeImageBtn.dataset.bound = '1';
         }
+    }
+
+    /**
+     * 모바일 가상 키보드가 하단 UI를 덮지 않도록 보정합니다.
+     */
+    setupMobileKeyboardHandling() {
+        this.uiLayer = this.uiLayer || document.getElementById('ui-layer');
+        if (!this.uiLayer || this._mobileKeyboardBound) return;
+        this._mobileKeyboardBound = true;
+
+        this._keyboardViewportHandler = () => this._queueMobileKeyboardUpdate();
+
+        if (window.visualViewport) {
+            window.visualViewport.addEventListener('resize', this._keyboardViewportHandler);
+            window.visualViewport.addEventListener('scroll', this._keyboardViewportHandler);
+        }
+        window.addEventListener('resize', this._keyboardViewportHandler);
+        this._keyboardOrientationHandler = () => this._queueMobileKeyboardUpdate(160);
+        window.addEventListener('orientationchange', this._keyboardOrientationHandler);
+
+        [this.chatInput, this.playerNameInput].forEach((input) => {
+            if (!input || input.dataset.cupidKeyboardBound) return;
+            input.addEventListener('focus', () => this._queueMobileKeyboardUpdate(120));
+            input.addEventListener('blur', () => this._queueMobileKeyboardUpdate(120));
+            input.dataset.cupidKeyboardBound = '1';
+        });
+
+        this._queueMobileKeyboardUpdate();
+    }
+
+    _queueMobileKeyboardUpdate(delay = 0) {
+        clearTimeout(this._keyboardUpdateTimer);
+        this._keyboardUpdateTimer = setTimeout(() => {
+            requestAnimationFrame(() => this._updateMobileKeyboardOffset());
+        }, delay);
+    }
+
+    _updateMobileKeyboardOffset() {
+        if (!this.uiLayer) return;
+
+        const focusedElement = document.activeElement;
+        const shouldTrack = focusedElement && this.uiLayer.contains(focusedElement);
+        const keyboardOffset = shouldTrack && typeof window.getCupidKeyboardOffset === 'function'
+            ? window.getCupidKeyboardOffset(focusedElement)
+            : 0;
+
+        this.uiLayer.style.setProperty('--keyboard-offset', `${keyboardOffset}px`);
+        this.uiLayer.classList.toggle('keyboard-active', keyboardOffset > 0);
+        this.uiLayer.style.transform = keyboardOffset > 0
+            ? `translate3d(0, -${keyboardOffset}px, 0)`
+            : '';
+        document.body.classList.toggle('cupid-keyboard-active', keyboardOffset > 0);
     }
 
     /**

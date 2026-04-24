@@ -44,7 +44,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.7.1";
+const ASSET_VERSION = "2.7.2";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -59,6 +59,53 @@ const DEFAULT_MAX_FREE_TALK_TURNS = 3;
  * - 프리토킹 UI의 전송 버튼에 표시됩니다
  */
 const SEND_ICON = `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>`;
+
+const CUPID_IS_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent || '')
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+let cupidKeyboardBaselineHeight = Math.max(
+    window.innerHeight || 0,
+    document.documentElement?.clientHeight || 0,
+    window.visualViewport?.height || 0
+);
+
+function isCupidDesktopPointer() {
+    return window.matchMedia?.('(hover: hover) and (pointer: fine)').matches ?? false;
+}
+
+function isCupidEditableElement(element) {
+    if (!element || element === document.body) return false;
+    return element.matches?.('input, textarea, [contenteditable="true"]') ?? false;
+}
+
+function updateCupidKeyboardBaseline() {
+    const viewport = window.visualViewport;
+    cupidKeyboardBaselineHeight = Math.max(
+        cupidKeyboardBaselineHeight,
+        window.innerHeight || 0,
+        document.documentElement?.clientHeight || 0,
+        viewport?.height || 0
+    );
+}
+
+function getCupidKeyboardOffset(focusedElement = document.activeElement) {
+    const viewport = window.visualViewport;
+    if (!viewport || window.innerWidth > 768 || !isCupidEditableElement(focusedElement)) {
+        updateCupidKeyboardBaseline();
+        return 0;
+    }
+
+    const viewportHeight = viewport.height;
+    const viewportTop = viewport.offsetTop || 0;
+    const layoutHeight = Math.max(
+        cupidKeyboardBaselineHeight,
+        window.innerHeight || 0,
+        document.documentElement?.clientHeight || 0,
+        viewportHeight + viewportTop
+    );
+    const rawOffset = Math.max(layoutHeight - viewportHeight - viewportTop, 0);
+    const threshold = CUPID_IS_IOS ? 120 : 80;
+    return rawOffset > threshold ? rawOffset : 0;
+}
 
 /**
  * 갤러리에 등록된 CG(이벤트 그림) ID 목록
@@ -378,7 +425,11 @@ window.DEFAULT_MAX_FREE_TALK_TURNS = DEFAULT_MAX_FREE_TALK_TURNS;
 window.SEND_ICON = SEND_ICON;
 window.REGISTERED_CG_IDS = REGISTERED_CG_IDS;
 window.CHAR_NAME_MAP = CHAR_NAME_MAP;
+window.CUPID_IS_IOS = CUPID_IS_IOS;
 window.getAssetUrl = getAssetUrl;
+window.isCupidDesktopPointer = isCupidDesktopPointer;
+window.getCupidKeyboardOffset = getCupidKeyboardOffset;
+window.updateCupidKeyboardBaseline = updateCupidKeyboardBaseline;
 window.getCupidDeviceId = getCupidDeviceId;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
