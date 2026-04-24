@@ -954,8 +954,73 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "branches": [
             { "condition": "seoyeon_day3_event", "next": "haeun_warn_1" },
-            { "next": "night3_start" }
+            { "next": "minsu_d3_check" }
         ]
+    },
+    "minsu_d3_check": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_1"
+    },
+    "minsu_d3_1": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_2"
+    },
+    "minsu_d3_2": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_3"
+    },
+    "minsu_d3_3": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_4"
+    },
+    "minsu_d3_4": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_5"
+    },
+    "minsu_d3_5": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_5b"
+    },
+    "minsu_d3_5b": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_6"
+    },
+    "minsu_d3_6": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_6b"
+    },
+    "minsu_d3_6b": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_7"
+    },
+    "minsu_d3_7": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_8"
+    },
+    "minsu_d3_8": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_9"
+    },
+    "minsu_d3_9": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "minsu_d3_10"
+    },
+    "minsu_d3_10": {
+        "background": "assets/images/background/school.png",
+        "character": null,
+        "next": "night3_start"
     },
     "haeun_warn_1": {
         "background": "assets/images/background/school_hallway.png",

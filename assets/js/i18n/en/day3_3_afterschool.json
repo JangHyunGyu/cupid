@@ -824,5 +824,57 @@
     "after3_dain_correct_12": {
         "name": "Dain",
         "text": "...You know what. This thing. It's been going on a while."
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*Walking home. Minsu is standing by the school gate.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "Saw it."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "At lunch. And Seoyeon's face just now."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "What did I say yesterday? If all three of them end up crying, that's on you. Looks like that 'later' came faster than expected."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "It's rough watching from the side. They're all good people. I don't think you're doing this on purpose, but you keep putting off saying no."
+    },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*Minsu sighs. Not mocking me. A genuinely worried sigh.*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......Yeah."
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "I won't ask what happened at your old school. But I'll say one thing."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Saying no is consideration too. If it isn't going to work, drawing the line now is better than leaving room for hope."
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*Saying no is consideration. At my old school, I gave Sojeong neither a chance to hear a confession nor a chance to reject it. Because I couldn't say anything.*"
+    },
+    "minsu_d3_9": {
+        "name": "{name}",
+        "text": "*If I'd said something properly even once, it might not have stayed with me this long. What I need to do now isn't give all three of them the same face. It's be honest with one person.*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "See you at school tomorrow. — Think about it seriously."
     }
 }

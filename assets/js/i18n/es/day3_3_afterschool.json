@@ -824,5 +824,57 @@
     "after3_dain_correct_12": {
         "name": "Dain",
         "text": "...Oye. Esto. Ya viene de hace tiempo."
+    },
+    "minsu_d3_check": {
+        "name": "{name}",
+        "text": ""
+    },
+    "minsu_d3_1": {
+        "name": "{name}",
+        "text": "*De camino a casa. Minsu está frente a la entrada de la escuela.*"
+    },
+    "minsu_d3_2": {
+        "name": "Minsu",
+        "text": "Lo vi."
+    },
+    "minsu_d3_3": {
+        "name": "Minsu",
+        "text": "En el almuerzo. Y también la cara de Seoyeon hace un momento."
+    },
+    "minsu_d3_4": {
+        "name": "Minsu",
+        "text": "¿Qué te dije ayer? Que si las tres terminaban llorando, sería culpa tuya. Parece que ese 'después' llegó más rápido de lo esperado."
+    },
+    "minsu_d3_5": {
+        "name": "Minsu",
+        "text": "Desde fuera cuesta verlo. Las tres son buenas personas. No creo que lo hagas para hacer daño, pero estás aplazando decir que no."
+    },
+    "minsu_d3_5b": {
+        "name": "{name}",
+        "text": "*Minsu suspira. No es burla. Es un suspiro de verdadera preocupación.*"
+    },
+    "minsu_d3_6": {
+        "name": "{name}",
+        "text": "......Sí."
+    },
+    "minsu_d3_6b": {
+        "name": "Minsu",
+        "text": "No voy a preguntar qué pasó en tu antigua escuela. Pero te diré una cosa."
+    },
+    "minsu_d3_7": {
+        "name": "Minsu",
+        "text": "Rechazar también es cuidar. Si una relación no va a funcionar, es mejor marcar el límite ahora que seguir dejando margen."
+    },
+    "minsu_d3_8": {
+        "name": "{name}",
+        "text": "*Rechazar también es cuidar. En mi antigua escuela no le di a Sojeong ni la oportunidad de escuchar una confesión ni la de rechazarla. Porque no pude decir nada.*"
+    },
+    "minsu_d3_9": {
+        "name": "{name}",
+        "text": "*Si hubiera hablado bien al menos una vez, quizá no se me habría quedado tanto tiempo. Lo que debo hacer ahora no es ponerles la misma cara a las tres, sino ser sincero con una sola persona.*"
+    },
+    "minsu_d3_10": {
+        "name": "Minsu",
+        "text": "Nos vemos mañana en la escuela. — Piénsalo en serio."
     }
 }

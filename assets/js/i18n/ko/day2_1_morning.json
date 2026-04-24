@@ -4,7 +4,6 @@
         "text": "*둘째 날. 어제보다 교복이 조금 편하다. — 발걸음도.*"
     },
     "morning2_start_2": {},
-    "morning2_greet_seo_1": {},
     "morning2_greet_seo_1_roof": {
         "name": "서연",
         "text": "어제 옥상에서 한 말, 아직 유효한 거지?"
@@ -67,7 +66,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*쪽지를 접어 손에 쥐었다. — 괜히 소중하게.*"
+        "text": "*쪽지를 접어 손에 쥐었다. — 괜히 조심스럽게.*"
     },
     "morning2_dain_1": {
         "name": "{name}",
@@ -151,7 +150,7 @@
     },
     "morning2_dain_claim_6": {
         "name": "다인",
-        "text": "내가 먼저 봤잖아~ 그럼 우리 맞지. 찜한 거."
+        "text": "내가 먼저 봤잖아. 그럼 우리 맞지. 찜한 거."
     },
     "morning2_break_transition": {
         "name": "{name}",
@@ -295,7 +294,7 @@
     },
     "hidden_homeroom_d2_11": {
         "name": "담임선생님",
-        "text": "...전학생이라고 특별 대우 하면 다른 애들이 뭐라 하지."
+        "text": "...전학생이라고 예외 두면 다른 애들이 뭐라 하지."
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",

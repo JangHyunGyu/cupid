@@ -22,8 +22,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_dain_1"
     },
     "morning2_greet_seo_1": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "branches": [
             { "condition": "chose_seoyeon_lunch", "next": "morning2_greet_seo_1_roof" },
             { "next": "morning2_greet_seo_1_gate" }
