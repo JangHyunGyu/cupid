@@ -1100,7 +1100,7 @@
     <script>window.preventAutoStart = true;</script>
 
     <!-- Game Scripts (Dynamic Loader) -->
-    <script src="assets/js/loaders/game-loader.js?v=2.4.3"></script>
+    <script src="assets/js/loaders/game-loader.js?v=2.7.4"></script>
 
     <script>
         // Initialize SoundManager + Enable Buttons (게임 스크립트 로드 완료 후)
@@ -1125,15 +1125,25 @@
         if (window.gameScriptsLoaded) _onGameReady();
         else window.addEventListener('gameScriptsLoaded', _onGameReady);
 
-        async function startGame() {
-            // Show custom confirmation if saved game exists (continue button is enabled)
-            const continueBtn = document.getElementById('continue-btn');
-            if (continueBtn && !continueBtn.disabled) {
-                const modal = document.getElementById('newGameConfirmModal');
-                if (modal) modal.style.display = 'flex';
-                return;
-            }
-            await launchNewGame();
+        function runLandingAsync(context, task) {
+            Promise.resolve()
+                .then(task)
+                .catch(error => {
+                    console.error(`[Cupid Landing] ${context} error:`, error);
+                });
+        }
+
+        function startGame() {
+            runLandingAsync('startGame', async () => {
+                // Show custom confirmation if saved game exists (continue button is enabled)
+                const continueBtn = document.getElementById('continue-btn');
+                if (continueBtn && !continueBtn.disabled) {
+                    const modal = document.getElementById('newGameConfirmModal');
+                    if (modal) modal.style.display = 'flex';
+                    return;
+                }
+                await launchNewGame();
+            });
         }
 
         // Close new game confirm modal
@@ -1144,10 +1154,12 @@
         }
 
         // Confirm and start new game
-        async function confirmNewGame() {
-            const modal = document.getElementById('newGameConfirmModal');
-            if (modal) modal.style.display = 'none';
-            await launchNewGame();
+        function confirmNewGame() {
+            runLandingAsync('confirmNewGame', async () => {
+                const modal = document.getElementById('newGameConfirmModal');
+                if (modal) modal.style.display = 'none';
+                await launchNewGame();
+            });
         }
 
         // Actual new game launch logic
@@ -1197,30 +1209,32 @@
         }
 
         // Continue game function
-        async function continueGame() {
-            const saveData = window.loadGameState ? window.loadGameState() : null;
-            if (!saveData) {
-                alert('No saved game found.');
-                return;
-            }
+        function continueGame() {
+            runLandingAsync('continueGame', async () => {
+                const saveData = window.loadGameState ? window.loadGameState() : null;
+                if (!saveData) {
+                    alert('No saved game found.');
+                    return;
+                }
 
-            if (window.soundManager) window.soundManager.playBgm('assets/audio/bgm/intro.mp3');
-            document.getElementById('landing-container').style.display = 'none';
-            document.querySelector('.lang-switch').style.display = 'none';
-            document.getElementById('game-container').style.display = 'block';
+                if (window.soundManager) window.soundManager.playBgm('assets/audio/bgm/intro.mp3');
+                document.getElementById('landing-container').style.display = 'none';
+                document.querySelector('.lang-switch').style.display = 'none';
+                document.getElementById('game-container').style.display = 'block';
 
-            if (window.initGameFromSave) {
-                await window.initGameFromSave(saveData);
-            }
+                if (window.initGameFromSave) {
+                    await window.initGameFromSave(saveData);
+                }
 
-            const homeBtn = document.getElementById('home-btn');
-            if (homeBtn) {
-                homeBtn.style.display = 'flex';
-            }
-            const galleryBtnContinue = document.getElementById('gallery-btn');
-            if (galleryBtnContinue) {
-                galleryBtnContinue.style.display = 'flex';
-            }
+                const homeBtn = document.getElementById('home-btn');
+                if (homeBtn) {
+                    homeBtn.style.display = 'flex';
+                }
+                const galleryBtnContinue = document.getElementById('gallery-btn');
+                if (galleryBtnContinue) {
+                    galleryBtnContinue.style.display = 'flex';
+                }
+            });
         }
 
         // 버튼 활성화는 _onGameReady()에서 처리 (gameScriptsLoaded 이벤트)
