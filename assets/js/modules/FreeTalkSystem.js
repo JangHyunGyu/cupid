@@ -509,11 +509,15 @@ class FreeTalkSystem {
     async sendChatMessage(getSceneFn) {
         // 이미 처리 중이면 무시 (중복 호출 방지)
         if (this.isProcessingChat) return;
+        if (!this.uiManager?.chatInput || !this.uiManager?.chatSendBtn || !this.uiManager?.dialogueBox) return;
 
         const stagedImageEarly = this.uiManager.stagedImage;
         const text = this.uiManager.chatInput.value.trim();
         // 텍스트가 없고 이미지도 없으면 전송하지 않음
         if ((!text && !stagedImageEarly) || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
+
+        const scene = getSceneFn(this.currentSceneId);
+        if (!scene) return;
 
         this.isProcessingChat = true;
 
@@ -522,8 +526,6 @@ class FreeTalkSystem {
         if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
 
         // 프리토킹 횟수 증가
-        const scene = getSceneFn(this.currentSceneId);
-        if (!scene) return;
         const charKey = this.charNameMap[scene.name] || scene.name;
         this.galleryManager.incrementFreeTalkCount(charKey);
 

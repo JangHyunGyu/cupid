@@ -154,6 +154,24 @@ class GameEngine {
         this.exposeGlobalFunctions();  // window 객체에 함수 등록
     }
 
+    _handleAsyncError(context, error) {
+        console.error(`[GameEngine] ${context} error:`, error);
+        this._isRendering = false;
+        if (this.freeTalkSystem) this.freeTalkSystem.isProcessingChat = false;
+        if (this.uiManager?.chatSendBtn) this.uiManager.chatSendBtn.disabled = false;
+        if (this.uiManager?.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
+        if (this.uiManager?.chatInput) this.uiManager.chatInput.disabled = false;
+        if (this.uiManager?.dialogueBox) this.uiManager.dialogueBox.classList.remove('thinking-box');
+        document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
+        document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+    }
+
+    _runAsync(context, task) {
+        return Promise.resolve()
+            .then(task)
+            .catch(error => this._handleAsyncError(context, error));
+    }
+
     /**
      * ═══════════════════════════════════════════════════════════════
      * 🎯 bindEvents - 사용자 입력 이벤트 바인딩
@@ -174,7 +192,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────────
         // 클릭하면 다음 대사로 넘어가거나, 타이핑 중이면 스킵
         if (this.uiManager.dialogueBox) {
-            this.uiManager.dialogueBox.onclick = () => this.handleDialogueClick();
+            this.uiManager.dialogueBox.onclick = () => this._runAsync('dialogue click', () => this.handleDialogueClick());
         }
 
         // ─────────────────────────────────────────────────────────────
@@ -182,12 +200,12 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────────
         // 전송 버튼 클릭 → AI에게 메시지 전송
         if (this.uiManager.chatSendBtn) {
-            this.uiManager.chatSendBtn.onclick = () => this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id));
+            this.uiManager.chatSendBtn.onclick = () => this._runAsync('chat send', () => this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id)));
         }
 
         // 스킵 버튼 클릭 → 대화 중단 (버튼이 있는 경우에만)
         if (this.uiManager.chatSkipBtn) {
-            this.uiManager.chatSkipBtn.onclick = () => this.freeTalkSystem.skipFreeTalk();
+            this.uiManager.chatSkipBtn.onclick = () => this._runAsync('chat skip', () => this.freeTalkSystem.skipFreeTalk());
         }
 
         // 입력창에서 Enter 키 → 전송
@@ -195,7 +213,7 @@ class GameEngine {
             this.uiManager.chatInput.onkeydown = (e) => {
                 if (e.key === 'Enter') {
                     e.preventDefault();  // 기본 동작(줄바꿈) 방지
-                    this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id));
+                    this._runAsync('chat enter', () => this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id)));
                 }
             };
         }
@@ -205,13 +223,13 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────────
         // 확인 버튼 클릭 → 이름 저장 후 다음 씬
         if (this.uiManager.nameConfirmBtn) {
-            this.uiManager.nameConfirmBtn.onclick = () => this.handleNameConfirm();
+            this.uiManager.nameConfirmBtn.onclick = () => this._runAsync('name confirm', () => this.handleNameConfirm());
         }
 
         // Enter 키로도 확인 가능
         if (this.uiManager.playerNameInput) {
             this.uiManager.playerNameInput.onkeypress = (e) => {
-                if (e.key === 'Enter') this.handleNameConfirm();
+                if (e.key === 'Enter') this._runAsync('name enter', () => this.handleNameConfirm());
             };
 
             // 포커스가 빠져나가면 다시 잡아주기 (사용자 편의)
@@ -1279,19 +1297,19 @@ class GameEngine {
                 }
             };
 
-            skipBtn.onclick = endCredits;
+            skipBtn.onclick = () => this._runAsync('credits skip', endCredits);
 
             // 크레딧 레이어 클릭으로도 스킵 가능 (5초 후)
             let layerClickable = false;
             setTimeout(() => { layerClickable = true; }, 5000);
             const clickHandler = (e) => {
-                if (layerClickable && e.target !== skipBtn) endCredits();
+                if (layerClickable && e.target !== skipBtn) this._runAsync('credits click', endCredits);
             };
             creditsLayer.addEventListener('click', clickHandler);
             creditsLayer._creditsClickHandler = clickHandler;
 
             // 크레딧 애니메이션 종료 시 자동 전환 (25초)
-            const creditsTimer = setTimeout(endCredits, 26000);
+            const creditsTimer = setTimeout(() => this._runAsync('credits timer', endCredits), 26000);
             creditsLayer._creditsTimer = creditsTimer;
 
             // ═══════════════════════════════════════════════════════
@@ -1351,7 +1369,7 @@ class GameEngine {
                 // 무한 루프 방지 (자기 자신으로 돌아가지 않도록)
                 if (nextId && nextId !== sceneId) {
                     // 즉시 다음 씬으로 진행
-                    setTimeout(() => this.renderScene(nextId), 0);
+                    setTimeout(() => this._runAsync('auto render scene', () => this.renderScene(nextId)), 0);
                 }
             }
         }
