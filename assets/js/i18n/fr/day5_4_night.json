@@ -345,7 +345,7 @@
     },
     "true_dain_2": {
         "name": "{name}",
-        "text": "*Dain prend ma main, l'attire vers elle et la pose sur le côté gauche de sa poitrine. Sans un mot.*"
+        "text": "*Dain prend ma main et la pose contre l'intérieur de son poignet. Sans un mot.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -353,7 +353,7 @@
     },
     "true_dain_3": {
         "name": "{name}",
-        "text": "*Les battements sous mes doigts sont nets.*"
+        "text": "*Le pouls sous mes doigts est net.*"
     },
     "true_dain_4": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_3": {
         "name": "{name}",
-        "text": "*Dain m'a frappé l'épaule avec son poing. Ça faisait mal. T'es dingue ? ...Mais c'est moi qui suis tombée amoureuse de toi en te sachant comme ça. Pfff.*"
+        "text": "*Dain m'a frappé l'épaule avec son poing. Ça faisait mal. « Hé, t'es vraiment le pire. » Elle avait raison. Dain ne souriait pas.*"
     },
     "harem_4": {
         "name": "{name}",

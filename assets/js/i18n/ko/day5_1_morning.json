@@ -245,26 +245,6 @@
         "name": "{name}",
         "text": "*원고를 다시 안는다. 아까보다 무겁지 않다. — 7년치 미완성을 칭찬으로 *완결시키는* 것보다, 미완성을 *미완성으로 인정해주는* 게 이 사람한테 필요했다. 그게 진짜 응원이다.*"
     },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "담임선생님",
-        "text": "*목소리가 갈라진다.* 그래. 졸업하면."
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "담임선생님",
-        "text": "*피식* 한 페이지면 — 소감문이 아니라 서평이지."
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "서평 써도 돼요?"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "name": "담임선생님",
-        "text": "*잠깐 웃다가, 표정이 진지해진다.* ...좋은 서평이면. 한 편 더 쓸 수 있을 것 같아."
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "name": "{name}",
-        "text": "*한 편 더. — 7년 만에 끝낸 사람이 '한 편 더'를 말하고 있다.*"
-    },
     "hidden_homeroom_d5_6": {
         "name": "담임선생님",
         "text": "*봉투를 꺼내며* ...이거. 마지막 날이니까."

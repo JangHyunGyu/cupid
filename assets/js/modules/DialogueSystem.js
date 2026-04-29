@@ -64,18 +64,21 @@ class DialogueSystem {
         this.charFileMap = {
             // Korean
             "서연": "seyoun", "유나": "yuna", "다인": "dain",
-            "담임선생님": "teacher", "보건선생님": "nurse",
+            "담임선생님": "teacher", "담임": "teacher", "보건선생님": "nurse",
             // English
             "Seoyeon": "seyoun", "Yuna": "yuna", "Dain": "dain",
             "Teacher": "teacher", "Nurse": "nurse",
             "Homeroom Teacher": "teacher", "School Nurse": "nurse",
             // Spanish
             "Profesora": "teacher", "Enfermera": "nurse",
+            // Portuguese
+            "Professora": "teacher", "Enfermeira": "nurse",
             // Japanese
             "ソヨン": "seyoun", "ユナ": "yuna", "ダイン": "dain",
             "担任先生": "teacher", "保健先生": "nurse",
             // French
-            "Professeur Principal": "teacher", "Infirmière Scolaire": "nurse",
+            "Professeur Principal": "teacher", "Professeure principale": "teacher", "Professeure": "teacher",
+            "Infirmière Scolaire": "nurse", "Infirmière scolaire": "nurse", "Infirmière": "nurse",
             // German
             "Klassenlehrerin": "teacher", "Lehrerin": "teacher", "Schulkrankenschwester": "nurse",
             // Unknown

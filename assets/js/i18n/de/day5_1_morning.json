@@ -75,26 +75,6 @@
             "...Sie haben gesagt, sieben Jahre zum Fertigstellen. Aber — fehlt im letzten Kapitel nicht noch eine Zeile?"
         ]
     },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "Klassenlehrerin",
-        "text": "*Ihre Stimme bricht.* Ja. Nach dem Abschluss."
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "Klassenlehrerin",
-        "text": "*Schmunzelt* Eine ganze Seite — das sind keine Eindrücke mehr, das ist eine Rezension."
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "Darf ich eine Rezension schreiben?"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie lacht kurz, dann wird ihr Ausdruck ernst.* ...Wenn es eine gute Rezension ist. Ich glaube, ich könnte noch eines schreiben."
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "name": "{name}",
-        "text": "*Noch eines. — Die Person, die nach sieben Jahren fertig geworden ist, sagt 'noch eines'.*"
-    },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
         "text": "*Holt den Umschlag heraus* ...Das hier. Weil es der letzte Tag ist."

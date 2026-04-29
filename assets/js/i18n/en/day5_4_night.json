@@ -345,7 +345,7 @@
     },
     "true_dain_2": {
         "name": "{name}",
-        "text": "*Dain grabs my hand, pulls it over, and presses it to the left side of her chest. Without a word.*"
+        "text": "*Dain takes my hand and places it against the inside of her wrist. Without a word.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -353,7 +353,7 @@
     },
     "true_dain_3": {
         "name": "{name}",
-        "text": "*The heartbeat under my fingertips is vivid.*"
+        "text": "*The pulse under my fingertips is vivid.*"
     },
     "true_dain_4": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_3": {
         "name": "{name}",
-        "text": "*Dain punched my shoulder with her fist. It hurt. Are you insane? ...But I fell for you knowing you’re like that, so that’s on me. Hmph.*"
+        "text": "*Dain punched my shoulder with her fist. It hurt. \"Hey, you're seriously the worst.\" She was right. Dain wasn't smiling.*"
     },
     "harem_4": {
         "name": "{name}",

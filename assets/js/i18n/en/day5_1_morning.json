@@ -75,26 +75,6 @@
             "...You said it took seven years to finish. But — shouldn't there be one more line in the last chapter?"
         ]
     },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "Homeroom Teacher",
-        "text": "*Her voice cracks.* Yeah. After you graduate."
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "Homeroom Teacher",
-        "text": "*chuckles* If it's a whole page — that's not a review, that's a critique."
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "Can I write a review?"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "name": "Homeroom Teacher",
-        "text": "*She laughs briefly, then her expression turns serious.* ...If it's a good review. I think I could write one more."
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "name": "{name}",
-        "text": "*One more. — The person who finished after seven years is saying 'one more.'*"
-    },
     "hidden_homeroom_d5_6": {
         "name": "Homeroom Teacher",
         "text": "*Pulling out the envelope* ...This. Since it's the last day."

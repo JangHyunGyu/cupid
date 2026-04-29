@@ -75,26 +75,6 @@
             "...Dijo que le ha llevado siete años, ¿no? Pero — falta una línea en el último capítulo, ¿verdad?"
         ]
     },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "Profesora",
-        "text": "*Se le quiebra la voz.* Sí. Cuando te gradúes."
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "Profesora",
-        "text": "*Sonríe de lado.* Si es una página entera — eso ya no es una impresión, es una reseña."
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "¿Puedo escribirle una reseña?"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "name": "Profesora",
-        "text": "*Se ríe un momento y luego se pone seria.* ...Si es buena. Creo que podría escribir otra novela."
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "name": "{name}",
-        "text": "*Otra más. — Quien tardó siete años en terminar una está diciendo 'otra más'.*"
-    },
     "hidden_homeroom_d5_6": {
         "name": "Profesora",
         "text": "*Saca el sobre.* ...Toma. Como es el último día."

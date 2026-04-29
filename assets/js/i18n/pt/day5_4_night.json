@@ -764,7 +764,7 @@
     },
     "true_dain_2": {
         "name": "{name}",
-        "text": "*Dain pega a minha mão — puxa e encosta no próprio peito, do lado esquerdo. Sem falar nada.*"
+        "text": "*Dain pega a minha mão e a encosta na parte interna do próprio pulso. Sem falar nada.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -772,7 +772,7 @@
     },
     "true_dain_3": {
         "name": "{name}",
-        "text": "*A batida sob as pontas dos meus dedos tá nítida.*"
+        "text": "*O pulso sob as pontas dos meus dedos tá nítido.*"
     },
     "true_dain_4": {
         "name": "{name}",
@@ -1169,7 +1169,7 @@
     },
     "harem_3": {
         "name": "{name}",
-        "text": "*Dain me deu um soco no ombro. Doeu. Ei, tu tá maluco? ...Mas eu gostei de você sabendo que é assim, então a culpa é minha. Tsc.*"
+        "text": "*Dain me deu um soco no ombro. Doeu. \"Ei, você é mesmo o pior.\" Ela tinha razão. Dain não estava sorrindo.*"
     },
     "harem_4": {
         "name": "{name}",
