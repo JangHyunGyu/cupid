@@ -660,6 +660,9 @@ function buildSystemPrompt(params) {
     const finalZetaStyleGuide = useEnTemplate
         ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nIgnore any earlier instruction that says "4-8 sentence narration paragraphs", "2-4 segments", or "do not use 5+ beats". Format the reply like a Zeta chat bubble: evenly interleave short narration and short dialogue. Default face-to-face replies to 4-8 segments; remote replies to 2-5 segments. Each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not use the same type more than twice in a row. Never output one huge narration block followed by a single spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, desks, doors, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
         : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n위에 있는 'narration은 4~8문장 한 단락', '2~4 segments', '5개 이상 금지' 지시는 무시하세요. 이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 대면 대화는 기본 4~8 segments, 원격/메신저 대화는 2~5 segments로 구성합니다. 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 같은 type을 2번 이상 연속하지 말고, 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·책상·문·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
+    const finalPlaceholderGuard = useEnTemplate
+        ? `\nPlaceholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", "[their name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current context.`
+        : `\nplaceholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
 
     if (useEnTemplate) {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
@@ -844,6 +847,7 @@ ${charAddressingGuideline}
      After every peak, **2-3 turns of afterglow** (coordinate with Emotional Aftermath). When flatness/repetition detected, character initiates phase shift first. At valleys (right after a fight, heavy topics), do NOT force upswing.
 ===CACHE_BOUNDARY===
 Player Identity Mapping: Any "{playerName}", "[their name]", or "[name]" placeholder above means the real user name "${playerName}". Never output those placeholders literally.
+${finalPlaceholderGuard}
 Current Location: ${locationName}
 Current Situation: ${context}
 Hidden Stats: Affinity ${affinity} (Higher values mean more favorable relationship)
@@ -1035,6 +1039,7 @@ ${charAddressingGuideline}
      모든 피크 후 **여운 2~3턴**(감정 잔향 연계). 평탄·반복 감지 시 캐릭터 먼저 국면 전환. 저점(싸운 직후·무거운 주제)에선 억지 상승 금지.
 ===CACHE_BOUNDARY===
 플레이어 이름 매핑: 위 프롬프트의 "{playerName}", "[이름]" placeholder는 실제 사용자 이름 "${playerName}"을 뜻합니다. 응답에 placeholder 문자를 그대로 출력하지 말고 실제 이름을 사용하세요.
+${finalPlaceholderGuard}
 현재 장소: ${locationName}
 현재 상황: ${context}
 히든 스탯: 호감도 ${affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)
@@ -1266,5 +1271,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.4.8';
+const PROMPT_VERSION = '2.4.9';
 window.PROMPT_VERSION = PROMPT_VERSION;

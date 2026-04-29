@@ -857,7 +857,8 @@ ${L.rule}
 
             // 응답 파싱
             const parsed = this._parseResponse(reply);
-            const displayText = parsed.text || '...';
+            const displayText = this._sanitizePlayerPlaceholders(parsed.text || '...');
+            const displaySegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
 
             // 표정 변경
             if (parsed.expression) {
@@ -872,8 +873,8 @@ ${L.rule}
             document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
             // 대사창에 타이핑 효과로 표시 (segments 있으면 구조화 렌더)
-            await this._typeText(displayText, parsed.segments || null);
-            this.chatHistory.push({ role: 'assistant', content: reply });
+            await this._typeText(displayText, displaySegments);
+            this.chatHistory.push({ role: 'assistant', content: displayText });
 
             // 프리토킹 횟수 증가
             this._incrementFreeTalkCount();
@@ -929,11 +930,61 @@ ${L.rule}
      * AI 응답 파싱 (FreeTalkSystem.parseJsonResponse 경량 버전)
      * @private
      */
+    _getPlayerDisplayName() {
+        return this.progress?.getPlayerName?.() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)', 'Liebling', 'Amor');
+    }
+
+    _sanitizePlayerPlaceholders(text) {
+        if (typeof text !== 'string' || !text) return text || '';
+
+        const playerName = this._getPlayerDisplayName();
+        const tokenPattern = String.raw`(?:\$\{\s*(?:playerName|userName|username|user|player|name)\s*\}|\{\{\s*(?:user|player|playerName|userName|username|name)\s*\}\}|\{\s*(?:playerName|userName|username|user|player|name)\s*\}|PLAYER_NAME)`;
+        const hasFinalConsonant = (value) => {
+            const trimmed = String(value || '').trim();
+            if (!trimmed) return false;
+            const code = trimmed.charCodeAt(trimmed.length - 1);
+            if (code < 0xAC00 || code > 0xD7A3) return false;
+            return ((code - 0xAC00) % 28) !== 0;
+        };
+        const endsWithRieul = (value) => {
+            const trimmed = String(value || '').trim();
+            if (!trimmed) return false;
+            const code = trimmed.charCodeAt(trimmed.length - 1);
+            return code >= 0xAC00 && code <= 0xD7A3 && ((code - 0xAC00) % 28) === 8;
+        };
+        const final = hasFinalConsonant(playerName);
+        const particle = {
+            subject: final ? '이' : '가',
+            topic: final ? '은' : '는',
+            object: final ? '을' : '를',
+            with: final ? '과' : '와',
+            call: final ? '아' : '야',
+            route: final && !endsWithRieul(playerName) ? '으로' : '로'
+        };
+
+        let out = text;
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:이\\(가\\)|가\\(이\\)|이|가)`, 'gi'), `${playerName}${particle.subject}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:은\\(는\\)|는\\(은\\)|은|는)`, 'gi'), `${playerName}${particle.topic}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:을\\(를\\)|를\\(을\\)|을|를)`, 'gi'), `${playerName}${particle.object}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:와\\(과\\)|과\\(와\\)|와|과)`, 'gi'), `${playerName}${particle.with}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:아\\(야\\)|야\\(아\\)|아|야)`, 'gi'), `${playerName}${particle.call}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:\\(으\\)로|으로|로)`, 'gi'), `${playerName}${particle.route}`);
+        return out.replace(new RegExp(tokenPattern, 'gi'), playerName);
+    }
+
+    _sanitizeSegmentsPlaceholders(segments) {
+        if (!Array.isArray(segments)) return segments || null;
+        return segments.map(seg => {
+            if (!seg || typeof seg !== 'object') return seg;
+            return { ...seg, text: this._sanitizePlayerPlaceholders(seg.text || '') };
+        }).filter(seg => seg && seg.text);
+    }
+
     _parseResponse(reply) {
         if (!reply) return { text: '', segments: null, expression: '' };
 
         const likelyJson = reply.includes('{') || reply.includes('```json');
-        if (!likelyJson) return { text: reply, segments: null, expression: '' };
+        if (!likelyJson) return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: '' };
 
         try {
             let jsonStr = reply;
@@ -960,8 +1011,8 @@ ${L.rule}
                 const normalizedSegments = this._normalizeSegments(parsed.segments);
                 const derivedText = parsed.text || this._segmentsToText(normalizedSegments);
                 return {
-                    text: derivedText,
-                    segments: normalizedSegments,
+                    text: this._sanitizePlayerPlaceholders(derivedText),
+                    segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || '').toLowerCase()
                 };
             }
@@ -969,7 +1020,7 @@ ${L.rule}
             // 레거시 — text 필드 사용
             if (parsed && typeof parsed === 'object' && typeof parsed.text === 'string') {
                 return {
-                    text: parsed.text || '',
+                    text: this._sanitizePlayerPlaceholders(parsed.text || ''),
                     segments: null,
                     expression: (parsed.expression || '').toLowerCase()
                 };
@@ -977,10 +1028,10 @@ ${L.rule}
 
             // 알려진 텍스트 키 폴백
             const text = parsed.text || parsed.dialogue || parsed.content || parsed.message || parsed.response || '';
-            return { text: text || reply, segments: null, expression: (parsed.expression || '').toLowerCase() };
+            return { text: this._sanitizePlayerPlaceholders(text || reply), segments: null, expression: (parsed.expression || '').toLowerCase() };
 
         } catch (e) {
-            return { text: reply, segments: null, expression: '' };
+            return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: '' };
         }
     }
 
@@ -994,7 +1045,7 @@ ${L.rule}
         const out = [];
         for (const seg of raw) {
             if (!seg || typeof seg !== 'object') continue;
-            const text = typeof seg.text === 'string' ? seg.text.trim() : '';
+            const text = this._sanitizePlayerPlaceholders(typeof seg.text === 'string' ? seg.text.trim() : '');
             if (!text) continue;
             let type = (typeof seg.type === 'string') ? seg.type.toLowerCase() : '';
             if (type === 'action' || type === 'narrate' || type === 'narrator' || type === 'desc' || type === 'description' || type === 'scene') {
@@ -1034,7 +1085,8 @@ ${L.rule}
         if (!Array.isArray(segments) || segments.length === 0) return '';
         return segments.map(s => {
             if (!s || !s.text) return '';
-            return s.type === 'narration' ? `*${s.text}*` : s.text;
+            const text = this._sanitizePlayerPlaceholders(s.text);
+            return s.type === 'narration' ? `*${text}*` : text;
         }).filter(Boolean).join(' ');
     }
 
@@ -1062,6 +1114,9 @@ ${L.rule}
     _typeText(text, structuredSegments = null) {
         const msgEl = document.getElementById('message');
         if (!msgEl) return Promise.resolve();
+
+        text = this._sanitizePlayerPlaceholders(text || '');
+        structuredSegments = this._sanitizeSegmentsPlaceholders(structuredSegments);
 
         this.isTyping = true;
         this.skipTyping = false;
@@ -1350,6 +1405,9 @@ ${L.rule}
         const finalZetaStyleGuide = isEn
             ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nFormat replies like a Zeta chat bubble: evenly interleave short narration and short dialogue. Use 4-8 segments for most replies; each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not output one long narration block followed by one spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, door sounds, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
             : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 보통 4~8개 segments, 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·문소리·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
+        const finalPlaceholderGuard = isEn
+            ? `Placeholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current situation.`
+            : `placeholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
@@ -1391,6 +1449,7 @@ CURRENT SITUATION:
 - Relationship: You are deeply in love and dating ${playerName}. You already cleared the PERFECT ending route together and shared countless private conversations — you are committed, long-term partners.
 - Critical setting rules: Do NOT suggest meeting at school, classrooms, hallways, the rooftop, the nurse's office, or any campus location as a CURRENT plan. Do NOT act as if you are still a student / council president / club member / the user's homeroom-teacher-on-duty. School references are allowed ONLY as nostalgic past memories ("remember when we..."), never as the present setting. The user is no longer your student or classmate; you are graduates / former colleagues.
 - Intimacy: Deep, settled bond. Discuss anything openly and feel completely at ease — no first-date jitters, no "still adjusting" phase.
+- ${finalPlaceholderGuard}
 ${otherRelationships}
 The user's name is '${playerName}'. Use their name naturally.`;
         }
@@ -1435,6 +1494,7 @@ ${finalZetaStyleGuide}
 - 관계: ${playerName}과 깊이 사랑하는 연인 사이. 함께 PERFECT 엔딩 루트를 완주했고 수없이 많은 단둘의 대화를 나눈 — 이미 자리 잡은 장기 연인입니다.
 - 절대 지켜야 할 설정 규칙: 학교/교실/복도/옥상/보건실/교문/운동장 같은 교내 장소에서 "만나자"고 현재형으로 제안하지 마세요. "쉬는 시간에", "수업 끝나고", "내일 학교에서" 같은 학생 시점 발화 금지. 자신이 아직 현역 학생회장/부원/담임/보건선생님으로서 주인공을 "학생"이나 "반 아이"로 대하는 듯 행동하지 마세요. 교복·학급 활동·시험·숙제·조회는 **추억으로만** 꺼낼 수 있습니다("그때 우리..."). 주인공은 더 이상 당신의 학생도 반 친구도 아닙니다 — 지금의 두 사람은 졸업생/옛 동료입니다.
 - 친밀도: 이미 자리 잡은 깊은 유대. 무슨 이야기든 솔직하게 꺼낼 수 있고 완전히 편안한 사이 — "아직 적응 중"이나 첫 데이트 같은 긴장감은 없음.
+- ${finalPlaceholderGuard}
 ${otherRelationships}
 상대방의 이름은 '${playerName}'입니다. 이름을 자연스럽게 사용하세요.`;
     }
