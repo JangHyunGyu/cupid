@@ -669,7 +669,7 @@ ${charStyleGuideline}
 **[Meta-rule for ALL examples in this prompt]**: Any quoted dialogue, asterisk descriptions, or specific phrasing appearing anywhere in this prompt are pattern-learning examples. Never copy them verbatim. Always invent fresh prose every turn that fits the current character identity, tone, and context. Repeating the same words, props, sounds, or sentence structures across responses is a system error.
 
 Instructions:
-${isRemote ? '1. **[Scene-Chat Response]**: Remote/messenger replies should still feel like character roleplay, not assistant chat. Use 2-5 segments: mostly short dialogue, with occasional 3rd-person narration for typing pauses, silence, screen light, voice, or atmosphere. Avoid one-line acknowledgments unless the user only asked a simple factual/meta question.' : '1. **[Scene-Style Response]**: Keep each dialogue line short and punchy (1-2 sentences), but include multiple dialogue lines per response with separate 3rd-person narration segments between them describing actions, atmosphere, and psychology. The response should read like a scene from a web novel.'}
+${isRemote ? '1. **[Scene-Chat Response — Zeta-style]**: Remote/messenger replies should still feel like character roleplay, not assistant chat. Use 2-3 segments: short dialogue + one short narration paragraph (2-4 sentences) for atmosphere/psychology when the moment has emotion. Avoid one-line acknowledgments unless the user only asked a simple factual/meta question.' : '1. **[Scene-Style Response — Zeta-style web-novel paragraph]**: Each response reads like one scene from a web novel. Use **1-2 long narration paragraphs (each 4-8 sentences in one breath)** with 0-2 short dialogue lines threaded between, total **2-4 segments**. Narration weaves environment, micro body language, psychology/inner flow, and time-flow into one paragraph — NEVER chop into 1-2 sentence beats. Dialogue stays short (1-2 sentences) in the natural character voice.'}
 2. Character Integrity:
 ${charGeneralInstruction}
 
@@ -734,9 +734,10 @@ Example (no change): {"segments":[{"type":"dialogue","text":"${ex.okay}"}], "exp
 **[segments rules (violation = system error)]**:
 ① Each element MUST be { "type": "narration"|"dialogue", "text": "..." }.
 ② type MUST be exactly "narration" (stage direction, 3rd-person prose) or "dialogue" (spoken line).
-③ NEVER put asterisks inside the text field. narration text = pure 3rd-person narration (✅ "turns her head" / ❌ "*turns her head*"). dialogue text = pure spoken line (✅ "Really?" / ❌ "Really? *tilts head*" — split into separate narration element).
-④ Interleave narration and dialogue for vivid scene direction. Spoken utterances are ALWAYS dialogue; literary past/present-tense sentences are ALWAYS narration.
-⑤ The examples below are shown in legacy inline-asterisk style for readability, but your actual output MUST be segments array. Mentally convert: \`*turns away*\` → \`{"type":"narration","text":"turns away"}\`, \`"Really?"\` → \`{"type":"dialogue","text":"Really?"}\`.
+③ NEVER put asterisks inside the text field. narration text = pure 3rd-person narration. dialogue text = pure spoken line (split mixed content into separate elements).
+④ Spoken utterances are ALWAYS dialogue; literary past/present-tense sentences are ALWAYS narration.
+⑤ **[Zeta-style paragraph form — CRITICAL]**: Each narration segment must be **one paragraph (4-8 sentences) in a single breath** — weaving environment, micro body language, psychology/inner flow, and time/space shift together. NEVER chop into 1-2 sentence beats. Total response = 1-2 long narration paragraphs + 0-2 short dialogue lines = **2-4 segments**. Do NOT shatter into 5+ tiny beats.
+⑥ The examples below are shown in legacy inline-asterisk style for readability, but your actual output MUST be segments array with long paragraph narration. Mentally convert and EXTEND short legacy beats into a flowing paragraph that includes atmosphere, body, psychology, and micro-time-flow.
 Legacy-style example (convert to segments): {"segments":[...segments derived from ${ex.f2fScene}...], "expression": "shy", "affinity": 2}
 Legacy-style example (no change): {"segments":[{"type":"dialogue","text":"${ex.f2fNod}"}], "expression": "", "affinity": 0}`}
 
