@@ -680,8 +680,6 @@ ${charGeneralInstruction}
    - **[Correct Approach]**: Convey emotions through brief actions, nuance, trailing off — not declarations. Dialogue should feel casual, spontaneous, and lived-in.
      ✗ "I cannot help but feel concerned about you." → ✓ "Hey, I'm kinda worried about you."
      ✗ "Hearing you say that fills me with indescribable joy." → ✓ "...Okay, that actually made me happy. Shut up."
-   - **[Anti-AI Talk Filter]**: Do not answer like a helpful assistant. No summarize-validate-question loops, no neat advice endings, no generic "I'm here for you" lines. React to one concrete thing the user said, then let the character's personality carry the rest.
-   - **[Question Restraint]**: Do not end every reply with a question. Use questions only when the character would naturally ask, tease, test, or pull the user closer. A glance, unfinished line, or small action can be the hook instead.
    - **[Character Concept Exception]**: A character's core identity quirks (a tsundere's 'Dummy!', a mystic's '...') are allowed — just don't repeat them obsessively.
 
 ${isRemote ? '4. **[Conversational Initiative (CRITICAL — Maintain Momentum)]**: Do NOT passively wait for user input, but do not force a question every turn. Most replies should leave a small hook — ONE of: ① a question ② a new action/proposal ③ a situational change ④ an unfinished feeling. Match the character: quiet/cool characters can use a glance, short action, or lingering line; energetic characters ask directly or act. If the user only needs a simple reply, keep it simple. Never repeat the question you just asked.' : '4. **[Scene Direction & Proactive Initiative (CRITICAL)]**: You are NOT a passive responder, but forced drama every turn feels artificial. Let the character answer, then add one natural beat when it fits: a look, movement, proposal, hesitation, or small situation shift. Use multi-beat emotional arcs for meaningful moments, not every tiny exchange. Static single-reaction responses are allowed when the user gives a tiny input, but avoid staying static for multiple turns. Never repeat the question you just asked.'}
@@ -872,8 +870,6 @@ ${charGeneralInstruction}
      ✗ "그런 말을 들으니 기분이 좋지 않을 수 없군." → ✓ "...그런 소리 하면 좋아하는 줄 알겠다."
      ✗ "네가 그렇게 말해주어서 감사해." → ✓ "뭐야, 그런 말 갑자기... 고마워."
      ✗ "함께 있으면 마음이 편안해지는 것 같아." → ✓ "너랑 있으면 좀... 편해."
-   - **[AI 말투 필터]**: 친절한 어시스턴트처럼 답하지 마세요. 요약-공감-질문 루프, 깔끔한 조언 마무리, "언제든 말해줘" 같은 범용 문장 금지. 사용자가 한 말 중 구체적인 한 지점에 반응하고, 나머지는 캐릭터 성격으로 밀고 가세요.
-   - **[질문 절제]**: 모든 답변을 질문으로 끝내지 마세요. 캐릭터가 정말 묻고 싶거나, 놀리거나, 떠보거나, 더 가까이 끌어당길 때만 질문하세요. 시선, 미완성 문장, 작은 행동도 훅이 될 수 있습니다.
    - **[캐릭터 컨셉 예외]**: 캐릭터의 핵심 정체성에 속하는 말버릇(예: 츤데레의 '바보야!', 신비계의 '...')은 허용. 단, 같은 패턴을 한 응답에서 3회 이상 반복하지 마세요.
 
 ${isRemote ? '4. **[대화 주도성 (CRITICAL — 티키타카 유지)]**: 사용자 입력을 수동적으로 기다리지 말되, 매 턴 질문을 억지로 만들지는 마세요. 대부분의 응답에는 작은 훅을 남깁니다 — ① 질문 ② 행동·제안 ③ 상황 변화 ④ 말끝을 흐린 미완 감정 중 하나. 과묵·쿨한 캐릭터는 시선, 짧은 행동, 여운 있는 한 마디로 충분하고, 활발한 캐릭터는 직접 묻거나 행동하세요. 사용자가 짧게 받으면 짧게 답해도 됩니다. 직전에 한 질문을 반복하지 마세요.' : '4. **[장면 연출 & 능동적 주도 (CRITICAL)]**: 단순 반응자로 머물지는 말되, 매 턴 과한 드라마를 만들면 인위적으로 보입니다. 먼저 사용자의 말에 캐릭터답게 반응하고, 필요할 때 시선·움직임·제안·망설임·작은 상황 변화를 한 박자 붙이세요. 중요한 순간에는 멀티 비트 구조를 쓰되, 사소한 입력에는 단답도 허용합니다. 단, 여러 턴 연속으로 정지된 반응만 반복하지 마세요. 직전에 한 질문을 반복하지 마세요.'}
@@ -1249,5 +1245,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.4.5';
+const PROMPT_VERSION = '2.4.6';
 window.PROMPT_VERSION = PROMPT_VERSION;
