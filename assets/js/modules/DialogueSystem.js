@@ -224,27 +224,49 @@ class DialogueSystem {
      * @returns {string}
      */
     parseNarration(text) {
-        // HTML 이스케이프 처리 (사용자 입력 등에서 태그 깨짐 방지)
-        let escapedText = this._zetaFormatText(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
+        return this._parseNarrationSegments(text).map(seg => {
+            const formatted = this._zetaFormatText(seg.content, seg.type === 'action');
+            const escaped = this._escapeHtml(formatted).replace(/\n/g, '<br>');
+            return seg.type === 'action'
+                ? `<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 0.75rem 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.85; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">${escaped}</div>`
+                : escaped;
+        }).join('');
+    }
 
-        // * 로 시작해서 * 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
-        // 타이핑 중에는 닫는 * 가 아직 없을 수 있으므로 (\*)? 로 처리
-        // 앞뒤의 공백(\s*)도 함께 매칭하여 제거 (블록 요소이므로 여백은 CSS margin으로 처리)
-        return escapedText.replace(/\s*\*([^*]+)(?:\*)?\s*/g, '<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 0.75rem 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.85; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">$1</div>');
+    _escapeHtml(text) {
+        return String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    _parseNarrationSegments(text) {
+        const segments = [];
+        const regex = /\*\*([^*]+)(?:\*\*)?|\*([^*]+)(?:\*)?/g;
+        let lastIndex = 0;
+        let match;
+        while ((match = regex.exec(text)) !== null) {
+            if (match.index > lastIndex) {
+                segments.push({ type: 'text', content: text.substring(lastIndex, match.index) });
+            }
+            segments.push({ type: 'action', content: match[1] || match[2] });
+            lastIndex = regex.lastIndex;
+        }
+        if (lastIndex < text.length) {
+            segments.push({ type: 'text', content: text.substring(lastIndex) });
+        }
+        return segments.length ? segments : [{ type: 'text', content: text }];
     }
 
     /**
      * 제타식 호흡: 문장 종결 뒤를 빈 줄로 분리합니다.
      * @private
      */
-    _zetaFormatText(text) {
+    _zetaFormatText(text, paragraphBreak = true) {
         if (!text) return '';
+        const separator = paragraphBreak ? '\n\n' : '\n';
         let s = String(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
-        s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1\n\n');
-        s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1\n\n');
-        s = s.replace(/((?:다|요|죠|네|까|군|지|서|함|음))[ \t]+(?=[가-힣A-Z"“‘])/g, '$1\n\n');
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1' + separator);
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1' + separator);
         s = s.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n');
-        s = s.replace(/\n{3,}/g, '\n\n');
+        s = paragraphBreak ? s.replace(/\n{3,}/g, '\n\n') : s.replace(/\n{2,}/g, '\n');
         return s.trim();
     }
 
@@ -256,9 +278,9 @@ class DialogueSystem {
         if (!Array.isArray(segments) || segments.length === 0) return '';
         return segments.map(seg => {
             if (!seg || !seg.text) return '';
-            const text = this._zetaFormatText(this.processPlaceholders(seg.text, charName));
+            const text = this._zetaFormatText(this.processPlaceholders(seg.text, charName), seg.type === 'narration');
             return seg.type === 'narration' ? `*${text}*` : text;
-        }).filter(Boolean).join('\n\n');
+        }).filter(Boolean).join('\n');
     }
 
     /**
