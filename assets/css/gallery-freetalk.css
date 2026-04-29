@@ -135,18 +135,25 @@
     color: #888;
 }
 
-/* 지문 (액션) 스타일 — 게임은 인라인 스타일, 갤러리는 클래스 사용 */
+/* 지문 (액션) 스타일 — 제타식 단락형 */
 .gft-action {
     display: block;
     background: rgba(0, 0, 0, 0.4);
-    padding: 8px 12px;
+    padding: 10px 14px;
     border-radius: 6px;
-    margin: 4px 0;
+    margin: 8px 0;
     font-size: 0.95em;
     color: rgba(255, 255, 255, 0.85);
-    line-height: 1.6;
+    line-height: 1.85;
     font-style: italic;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    white-space: pre-wrap;
+}
+
+/* 대사 span도 제타식 줄간격 */
+.gallery-freetalk-overlay #dialogue-text > span:not(.gft-action) {
+    white-space: pre-wrap;
+    line-height: 1.7;
 }
 
 /* 대사창 내 채팅 이미지 */
