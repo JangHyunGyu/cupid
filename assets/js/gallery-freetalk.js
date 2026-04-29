@@ -1012,17 +1012,17 @@ ${L.rule}
     }
 
     /**
-     * 제타식 줄바꿈: 마침표·물음표·느낌표·말줄임표 뒤에 줄바꿈 삽입.
-     * white-space: pre-wrap CSS와 함께 작동.
+     * 제타식 단락 분리: 문장 종결 뒤에 빈 줄 삽입.
      * @private
      */
     _zetaFormatText(text) {
         if (!text) return '';
-        return String(text)
-            .replace(/([.!?…])\s+(?=\S)/g, '$1\n')
-            .replace(/([다요죠네까함음군])\.(?=\S)/g, '$1.\n')
-            .replace(/\n{3,}/g, '\n\n')
-            .trim();
+        let s = String(text);
+        s = s.replace(/([.!?…])[ \t]+/g, '$1\n\n');
+        s = s.replace(/([다요죠네까함음군지함서])\.(?!$)(?!\n)/g, '$1.\n\n');
+        s = s.replace(/([!?])(?!$)(?!\n)(?!\s)/g, '$1\n\n');
+        s = s.replace(/\n{3,}/g, '\n\n');
+        return s.trim();
     }
 
     /**

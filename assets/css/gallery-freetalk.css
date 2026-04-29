@@ -147,7 +147,7 @@
     line-height: 1.85;
     font-style: italic;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    white-space: pre-wrap;
+    white-space: pre-line;
 }
 
 /* 대사 span도 제타식 줄간격 */
