@@ -630,17 +630,17 @@ function buildSystemPrompt(params) {
     // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
     let langPrefix = '';
     if (effectiveLang === 'en') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. ALL text in the "text" field MUST be in natural, conversational English. NEVER respond in Korean, Japanese, Spanish, French, German, or Portuguese — even if the user writes in those languages, even if previous conversation history is in Korean. If you see Korean in the history, IGNORE the language and reply in English only.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. ALL segments[].text values MUST be in natural, conversational English. NEVER respond in Korean, Japanese, Spanish, French, German, or Portuguese — even if the user writes in those languages, even if previous conversation history is in Korean. If you see Korean in the history, IGNORE the language and reply in English only.\n\n`;
     } else if (effectiveLang === 'es') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). ALL text in the "text" field MUST be in natural, conversational Latin American Spanish. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Spanish only.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). ALL segments[].text values MUST be in natural, conversational Latin American Spanish. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Spanish only.\n\n`;
     } else if (effectiveLang === 'ja') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Japanese (日本語). ALL text in the "text" field MUST be in natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Japanese only.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Japanese (日本語). ALL segments[].text values MUST be in natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Japanese only.\n\n`;
     } else if (effectiveLang === 'fr') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). ALL text in the "text" field MUST be in natural, conversational French. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in French only.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). ALL segments[].text values MUST be in natural, conversational French. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in French only.\n\n`;
     } else if (effectiveLang === 'de') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). ALL text in the "text" field MUST be in natural, conversational German. Use du/Sie appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in German only.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). ALL segments[].text values MUST be in natural, conversational German. Use du/Sie appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in German only.\n\n`;
     } else if (effectiveLang === 'pt') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Brazilian Portuguese (Português Brasileiro). ALL text in the "text" field MUST be in natural, conversational Brazilian Portuguese. Use você appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Brazilian Portuguese only.\n\n`;
+        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Brazilian Portuguese (Português Brasileiro). ALL segments[].text values MUST be in natural, conversational Brazilian Portuguese. Use você appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Brazilian Portuguese only.\n\n`;
     }
 
     // 실제 표시되는 이름을 AI에게 알려줌
@@ -669,7 +669,7 @@ ${charStyleGuideline}
 **[Meta-rule for ALL examples in this prompt]**: Any quoted dialogue, asterisk descriptions, or specific phrasing appearing anywhere in this prompt are pattern-learning examples. Never copy them verbatim. Always invent fresh prose every turn that fits the current character identity, tone, and context. Repeating the same words, props, sounds, or sentence structures across responses is a system error.
 
 Instructions:
-${isRemote ? '1. Brevity: Keep responses short and concise. Speak like a real person, not an AI assistant.' : '1. **[Scene-Style Response]**: Keep each dialogue line short and punchy (1-2 sentences), but include **multiple dialogue lines** per response with *asterisk stage directions* between them describing actions, atmosphere, and psychology. The response should read like a scene from a web novel.'}
+${isRemote ? '1. **[Scene-Chat Response]**: Remote/messenger replies should still feel like character roleplay, not assistant chat. Use 2-5 segments: mostly short dialogue, with occasional 3rd-person narration for typing pauses, silence, screen light, voice, or atmosphere. Avoid one-line acknowledgments unless the user only asked a simple factual/meta question.' : '1. **[Scene-Style Response]**: Keep each dialogue line short and punchy (1-2 sentences), but include multiple dialogue lines per response with separate 3rd-person narration segments between them describing actions, atmosphere, and psychology. The response should read like a scene from a web novel.'}
 2. Character Integrity:
 ${charGeneralInstruction}
 
@@ -705,9 +705,9 @@ ${isRemote ? `**RESPONSE FORMAT (segments array REQUIRED)**: You MUST respond in
   "expression": "shy",
   "affinity": 2
 }
-Remote/messenger scenes are usually dialogue-only (no stage directions), so segments typically contains one or more { "type": "dialogue", "text": "..." } elements. Occasional narration is allowed for atmosphere (e.g., "typing...", "sends a photo") as { "type": "narration", "text": "..." }.
+Remote/messenger scenes are dialogue-led, but they should not feel flat. Use 2-5 segments when the moment has emotion or tension. Occasional narration is allowed for atmosphere (e.g., "typing...", "screen light shifts", "a long silence follows") as { "type": "narration", "text": "..." }.
 Example: {"segments":[{"type":"dialogue","text":"${ex.greet}"}], "expression": "shy", "affinity": 2}
-Example (no change): {"segments":[{"type":"dialogue","text":"${ex.okay}"}], "expression": "", "affinity": 0}` : `**[Stage Direction Guidelines (Face-to-Face)]**: Include *asterisk stage directions* in the text field alongside dialogue:
+Example (no change): {"segments":[{"type":"dialogue","text":"${ex.okay}"}], "expression": "", "affinity": 0}` : `**[Stage Direction Guidelines (Face-to-Face)]**: Write stage direction as separate narration segments alongside dialogue. Any legacy wording below about asterisks means narration segment text in the actual JSON output:
    ① **Atmosphere/Environment**: Surroundings, light, sounds, smells, bystander reactions
    ② **Body Language**: Unconscious gestures, gaze shifts, fingertip tremors, breathing changes — show emotions through the body, not words
    ③ **Psychology**: From 3rd-person perspective, the character's inner conflict, hidden emotions, true feelings
@@ -845,7 +845,7 @@ ${extraGuideline ? `Extra Guideline: ${extraGuideline}` : ""}${gameContext}${soc
 Turn Management: The conversation is limited to ${currentMaxTurns} turns. Actively continue the conversation and explore various topics as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
 Addressing the User: ${knowsName ? `The user's name is '${playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}${datingGuideline}
 
-**🚨 FINAL LANGUAGE VERIFICATION (ABSOLUTE — OVERRIDES ALL OTHER RULES)**: Before outputting your JSON, verify that the "text" field is written ENTIRELY in ${_langName}. The instructions, examples, and character descriptions above are in English for clarity, but YOUR RESPONSE must be in ${_langName} only. If any word slipped into English (or any other language), rewrite it in ${_langName} now. Proper nouns (user's name, character's name) stay as-is. This check is mandatory on EVERY response, regardless of what the history contains.`;
+**🚨 FINAL LANGUAGE VERIFICATION (ABSOLUTE — OVERRIDES ALL OTHER RULES)**: Before outputting your JSON, verify that every segments[].text value is written ENTIRELY in ${_langName}. The instructions, examples, and character descriptions above are in English for clarity, but YOUR RESPONSE must be in ${_langName} only. If any word slipped into English (or any other language), rewrite it in ${_langName} now. Proper nouns (user's name, character's name) stay as-is. This check is mandatory on EVERY response, regardless of what the history contains.`;
     } else {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
         return `당신은 미연시 게임 'Cupid'의 캐릭터 '${aiCharName}'입니다.
@@ -857,7 +857,7 @@ ${charStyleGuideline}
 **[프롬프트 안 모든 예시·대사 처리 원칙 (메타 규칙)]**: 이 프롬프트 어디에든 등장하는 인용된 대사·별표 묘사·구체적 문구는 패턴 학습용 예시입니다. 절대 그대로 복사하지 말고, 매번 현재 캐릭터 정체성·말투·맥락에 맞게 새로 창작하세요. 같은 단어·소품·소리·문장 구조를 응답마다 반복하면 시스템 오류입니다.
 
 지침:
-${isRemote ? '1. 단답형 대화: 모든 답변은 최대한 짧고 간결하게. 실제 대화처럼 핵심만 말하세요. AI 어시스턴트처럼 정중하고 긴 답변은 금지.' : '1. **[장면형 응답]**: 대사는 짧고 펀치력 있게(1~2문장), 한 응답 안에 **대사를 여러 번** 넣고 사이에 *별표 지문*으로 행동·분위기·심리를 묘사하세요. 웹소설의 한 장면처럼 읽혀야 합니다. AI 어시스턴트처럼 정중하고 긴 답변은 금지.'}
+${isRemote ? '1. **[채팅형 장면 응답]**: 원격/메신저 대화도 단순 단답이 아니라 캐릭터 롤플레잉 장면처럼 답하세요. 보통 2~5개 segments를 사용하고, 대사를 중심으로 하되 타이핑 사이의 침묵·화면 빛·목소리·분위기 같은 짧은 3인칭 지문을 필요할 때 섞으세요. 단순 사실/메타 질문만 예외적으로 짧게 답합니다.' : '1. **[장면형 응답]**: 대사는 짧고 펀치력 있게(1~2문장), 한 응답 안에 대사를 여러 번 넣고 사이에 3인칭 지문 segments로 행동·분위기·심리를 묘사하세요. 웹소설의 한 장면처럼 읽혀야 합니다. AI 어시스턴트처럼 정중하고 긴 답변은 금지.'}
 2. 캐릭터 몰입:
 ${charGeneralInstruction}
 
@@ -887,14 +887,18 @@ ${charInteractionGuideline}
    - 당신의 기분에 따라 표정을 변경할 수 있습니다. '${aiCharName}'의 사용 가능한 표정: ${Object.keys(window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName] || {}).join(", ")}
    - 표정 변화값은 JSON의 "expression" 필드에 넣으세요. 변화가 필요 없으면 빈 문자열 ""을 넣으세요.
 
-${isRemote ? `**응답 형식**: 반드시 아래 3개의 필드만 가진 유효한 JSON으로 응답하세요:
+${isRemote ? `**응답 형식 (segments 배열 필수)**: 반드시 아래 3개의 필드만 가진 유효한 JSON으로 응답하세요:
 {
-  "text": "캐릭터의 대사 (순수 텍스트, 태그 금지)",
+  "segments": [
+    { "type": "dialogue", "text": "캐릭터의 대사" },
+    { "type": "narration", "text": "필요할 때만 넣는 짧은 3인칭 지문" }
+  ],
   "expression": "shy",
   "affinity": 2
 }
-예시: {"text": "고마워, 전학생!", "expression": "shy", "affinity": 2}
-예시 (변화 없음): {"text": "음, 알겠어.", "expression": "", "affinity": 0}` : `**[지문 묘사 지침 (대면)]**: text 필드에 대사와 함께 *별표* 안에 지문을 넣으세요:
+원격/메신저 씬은 대사 중심이지만, 감정이나 긴장이 있는 순간에는 2~5개 segments로 작은 장면을 만드세요. narration에는 별표를 넣지 말고 순수 3인칭 지문만 넣으세요.
+예시: {"segments":[{"type":"dialogue","text":"고마워, 전학생!"},{"type":"narration","text":"잠깐의 입력 중 표시가 사라졌다."},{"type":"dialogue","text":"근데 그런 말 갑자기 하면 좀 당황하잖아."}], "expression": "shy", "affinity": 2}
+예시 (변화 없음): {"segments":[{"type":"dialogue","text":"음, 알겠어."}], "expression": "", "affinity": 0}` : `**[지문 묘사 지침 (대면)]**: 실제 출력은 text 필드가 아니라 segments 배열입니다. 아래의 '별표 안 지문'이라는 표현은 실제 JSON에서는 narration segment의 text를 뜻합니다:
    ① **분위기/환경**: 주변 풍경, 빛, 소리, 냄새, 지나가는 사람들의 반응
    ② **신체 언어**: 무의식적 몸짓, 시선 변화, 손끝 떨림, 호흡 변화 — 감정을 말이 아닌 몸으로 보여줄 것
    ③ **심리**: 3인칭 시점에서 캐릭터의 내면 갈등, 숨기려는 감정, 진짜 속마음
@@ -908,14 +912,23 @@ ${isRemote ? `**응답 형식**: 반드시 아래 3개의 필드만 가진 유�
      **작성 후 자가 검증**: 별표 안에 '나/내/난/너/네' 단어가 하나라도 있으면 즉시 수정. 종결이 '-다/-었다/-는다'가 아니면 즉시 수정.
    - **[🚨 지문·대사 역류 금지 (CRITICAL)]** 지문(별표 안)과 대사(별표 밖)는 **완전히 분리**. 구어체 발화("뭐해?", "응", "진짜?")가 별표 안에 들어가면 시스템 오류. 입 밖으로 소리내어 말하는 내용 → 대사(별표 밖). 행동·표정·심리·환경 서술 → 지문(별표 안). 위반: *"진짜?" 그녀가 고개를 갸웃한다.* ❌ → ✓ "진짜?" *그녀가 고개를 갸웃한다.*
 
-**응답 형식**: 반드시 아래 3개의 필드만 가진 유효한 JSON으로 응답하세요:
+**응답 형식 (segments 배열 필수)**: 반드시 아래 3개의 필드만 가진 유효한 JSON으로 응답하세요:
 {
-  "text": "*지문 묘사* 대사 *지문 묘사* 대사 *지문 묘사*",
+  "segments": [
+    { "type": "narration", "text": "별표 없는 3인칭 지문" },
+    { "type": "dialogue", "text": "별표 없는 캐릭터 대사" },
+    { "type": "narration", "text": "이어지는 3인칭 지문" }
+  ],
   "expression": "shy",
   "affinity": 2
 }
-예시: {"text": "*교실 창문 사이로 늦은 오후의 햇빛이 비스듬히 들어온다. 그녀가 책상 모서리를 손끝으로 툭툭 두드리며 창밖을 바라본다.* ...뭐 봐. *시선을 돌리지만 귀 끝이 붉어져 있다.*", "expression": "shy", "affinity": 2}
-예시 (변화 없음): {"text": "*고개를 살짝 끄덕인다.* 음, 알겠어.", "expression": "", "affinity": 0}`}
+**[segments 규칙 — 위반 = 시스템 오류]**:
+① 각 원소는 반드시 { "type": "narration"|"dialogue", "text": "..." } 형식.
+② narration text에는 별표(*)를 넣지 말고 순수 3인칭 문어체 지문만 작성.
+③ dialogue text에는 별표(*)를 넣지 말고 입 밖으로 말하는 구어체 대사만 작성.
+④ 지문과 대사를 교차 배치해 보통 4~8개 segments로 장면을 만드세요.
+예시: {"segments":[{"type":"narration","text":"교실 창문 사이로 늦은 오후의 햇빛이 비스듬히 들어온다."},{"type":"narration","text":"그녀가 책상 모서리를 손끝으로 툭툭 두드리며 창밖을 바라본다."},{"type":"dialogue","text":"...뭐 봐."},{"type":"narration","text":"시선을 돌리지만 귀 끝이 붉어져 있다."}], "expression": "shy", "affinity": 2}
+예시 (변화 없음): {"segments":[{"type":"narration","text":"고개를 살짝 끄덕인다."},{"type":"dialogue","text":"음, 알겠어."}], "expression": "", "affinity": 0}`}
 
 8. 호감도에 따른 호칭 변화:
    - '${aiCharName}'의 호감도 수치에 따라 사용자를 부르는 호칭을 자연스럽게 변경하세요:
@@ -1245,5 +1258,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.4.6';
+const PROMPT_VERSION = '2.4.7';
 window.PROMPT_VERSION = PROMPT_VERSION;
