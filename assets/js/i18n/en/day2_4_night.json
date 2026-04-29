@@ -190,7 +190,7 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*A private message from the homeroom teacher. '{name}, thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if settling in gets tough, come by anytime.'*"
+        "text": "*A private message from the homeroom teacher. 'Thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if settling in gets tough, come by anytime.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Health app notification. 'Nurse's Record: {name} — Elbow abrasion (minor). Note: I'll change the bandage tomorrow morning. Changing bandages is a medical procedure so you can't refuse ^^'*"
+        "text": "*Health app notification. 'Nurse's Record: Transfer student — Elbow abrasion (minor). Note: I'll change the bandage tomorrow morning. Changing bandages is a medical procedure so you can't refuse ^^'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",

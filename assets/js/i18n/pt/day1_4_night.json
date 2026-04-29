@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Tem um aviso da professora no app da escola. 'Aviso 3-2: Trazer material de matemática pra primeira aula amanhã. — E {name}, se estiver se adaptando bem, já tá ótimo.'*"
+        "text": "*Tem um aviso da professora no app da escola. 'Aviso 3-2: Trazer material de matemática pra primeira aula amanhã. — E o aluno transferido só precisa continuar se adaptando bem.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Tem uma notificação no app de saúde da escola. 'Ficha da enfermaria: {name} — Tontura (leve). Obs: Se o sintoma continuar amanhã, volta aqui. Bebe bastante água. — o ♥ é interesse médico ^^'*"
+        "text": "*Tem uma notificação no app de saúde da escola. 'Ficha da enfermaria: aluno transferido — Tontura (leve). Obs: Se o sintoma continuar amanhã, volta aqui. Bebe bastante água. — o ♥ é interesse médico ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

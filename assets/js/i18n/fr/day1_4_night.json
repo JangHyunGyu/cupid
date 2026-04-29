@@ -121,7 +121,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Terminale 2 : Apportez vos affaires de maths pour la 1re heure demain. — Et {name}, si tu t'adaptes bien, c'est l'essentiel.'*"
+        "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Terminale 2 : Apportez vos affaires de maths pour la 1re heure demain. — Et l'élève transféré doit seulement continuer à bien s'adapter.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Une alerte s'affiche sur l'appli santé de l'école. 'Dossier de l'infirmerie : {name} — Vertiges (légers). Note : reviens demain si les symptômes persistent. Bois beaucoup d'eau. — le ♥ relève d'un intérêt purement médical ^^'*"
+        "text": "*Une alerte s'affiche sur l'appli santé de l'école. 'Dossier de l'infirmerie : élève transféré — Vertiges (légers). Note : reviens demain si les symptômes persistent. Bois beaucoup d'eau. — le ♥ relève d'un intérêt purement médical ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

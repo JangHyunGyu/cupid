@@ -182,7 +182,7 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Mensagem privada da professora. '{name}, obrigada por passar na sala hoje. O lado administrativo já acabou, então não preciso mais te chamar. ...Mas se a adaptação ficar difícil, vem quando quiser.'*"
+        "text": "*Mensagem privada da professora. 'Obrigada por passar na sala hoje. O lado administrativo já acabou, então não preciso mais te chamar. ...Mas se a adaptação ficar difícil, vem quando quiser.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notificação do app de saúde. 'Prontuário da enfermaria: {name} — Escoriação no cotovelo (leve). Obs: Amanhã cedo eu troco o band-aid. Trocar band-aid é procedimento médico, então não tem direito de recusa ^^'*"
+        "text": "*Notificação do app de saúde. 'Prontuário da enfermaria: aluno transferido — Escoriação no cotovelo (leve). Obs: Amanhã cedo eu troco o band-aid. Trocar band-aid é procedimento médico, então não tem direito de recusa ^^'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
