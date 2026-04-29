@@ -75,26 +75,6 @@
             "…これ、7年で完成って言いましたよね。でも——最終章、あと一行足りないんじゃないですか？"
         ]
     },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "担任先生",
-        "text": "*声がかすれる。* うん。卒業したら。"
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "担任先生",
-        "text": "*ふっ* 一ページなら——感想文じゃなくて書評でしょ。"
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "書評書いてもいいですか？"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "name": "担任先生",
-        "text": "*少し笑って、表情が真剣になる。* ...いい書評なら。もう一作書けそうな気がする。"
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "name": "{name}",
-        "text": "*もう一作。——7年かけて完成させた人がもう一作と言っている。*"
-    },
     "hidden_homeroom_d5_6": {
         "name": "担任先生",
         "text": "*封筒を取り出しながら* ...これ。最後の日だから。"

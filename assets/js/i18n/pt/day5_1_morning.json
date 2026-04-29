@@ -245,26 +245,6 @@
         "name": "{name}",
         "text": "*Pego o manuscrito de volta. Mais leve do que antes. — Em vez de 'fechar' sete anos de inacabado com elogio, o que ela precisava era de alguém que aceitasse o inacabado como inacabado. Isso sim é apoio de verdade.*"
     },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "Professora",
-        "text": "*A voz falha.* É. Depois da formatura."
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "Professora",
-        "text": "*Ri de canto de boca.* Se for uma página inteira — não é impressão, é crítica literária."
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "Posso escrever uma resenha?"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "name": "Professora",
-        "text": "*Dá uma risadinha e logo fica séria.* ...Se for uma boa resenha, acho que consigo escrever mais uma."
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "name": "{name}",
-        "text": "*Mais um. — Alguém que terminou depois de sete anos tá dizendo 'mais um'.*"
-    },
     "hidden_homeroom_d5_6": {
         "name": "Professora",
         "text": "*Tirando o envelope.* ...Isso aqui. Já que é o último dia."

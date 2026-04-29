@@ -75,26 +75,6 @@
             "...Vous avez dit que ça vous a pris sept ans à finir. Mais — il ne devrait pas y avoir une ligne de plus dans le dernier chapitre ?"
         ]
     },
-    "hidden_homeroom_d5_choice_a": {
-        "name": "Professeure principale",
-        "text": "*Sa voix se brise.* Oui. Après ton diplôme."
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "name": "Professeure principale",
-        "text": "*Petit rire* Si c'est une page entière — ce n'est plus un avis, c'est une critique."
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "Je peux écrire une critique ?"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "name": "Professeure principale",
-        "text": "*Elle rit brièvement, puis son expression devient sérieuse.* ...Si c'est une bonne critique. Je crois que je pourrais en écrire un de plus."
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "name": "{name}",
-        "text": "*Un de plus. — La personne qui a fini après sept ans dit 'un de plus'.*"
-    },
     "hidden_homeroom_d5_6": {
         "name": "Professeure principale",
         "text": "*Sortant l'enveloppe* ...Tiens. Puisque c'est le dernier jour."

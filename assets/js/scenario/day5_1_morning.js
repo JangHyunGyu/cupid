@@ -341,31 +341,6 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "setFlags": ["teacher_truth_seen"],
         "next": "hidden_homeroom_d5_6"
     },
-    "hidden_homeroom_d5_choice_a": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_shy.png",
-        "next": "hidden_homeroom_d5_6"
-    },
-    "hidden_homeroom_d5_choice_b": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_smile.png",
-        "next": "hidden_homeroom_d5_choice_b_b"
-    },
-    "hidden_homeroom_d5_choice_b_b": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_smile.png",
-        "next": "hidden_homeroom_d5_choice_b_c"
-    },
-    "hidden_homeroom_d5_choice_b_c": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_smile.png",
-        "next": "hidden_homeroom_d5_choice_b_d"
-    },
-    "hidden_homeroom_d5_choice_b_d": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_smile.png",
-        "next": "hidden_homeroom_d5_6"
-    },
     "hidden_homeroom_d5_6": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/teacher_normal.png",

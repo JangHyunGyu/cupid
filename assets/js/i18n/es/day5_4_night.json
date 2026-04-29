@@ -345,7 +345,7 @@
     },
     "true_dain_2": {
         "name": "{name}",
-        "text": "*Dain me toma la mano, la atrae hacia sí y la apoya sobre el lado izquierdo de su pecho. Sin decir nada.*"
+        "text": "*Dain me toma la mano y la coloca sobre la parte interna de su muñeca. Sin decir nada.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -353,7 +353,7 @@
     },
     "true_dain_3": {
         "name": "{name}",
-        "text": "*Los latidos bajo los dedos se notan clarísimos.*"
+        "text": "*El pulso bajo los dedos se nota clarísimo.*"
     },
     "true_dain_4": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_3": {
         "name": "{name}",
-        "text": "*Dain me dio un puñetazo en el hombro. Dolió. ¿Tú estás loco? ...Pero me colé por ti sabiendo que eras así, así que es culpa mía. Hmph.*"
+        "text": "*Dain me dio un puñetazo en el hombro. Dolió. \"Oye, de verdad eres lo peor.\" Tenía razón. Dain no sonreía.*"
     },
     "harem_4": {
         "name": "{name}",

@@ -345,7 +345,7 @@
     },
     "true_dain_2": {
         "name": "{name}",
-        "text": "*Dain nimmt meine Hand, zieht sie zu sich und legt sie auf ihre linke Brust. Ohne ein Wort.*"
+        "text": "*Dain nimmt meine Hand und legt sie an die Innenseite ihres Handgelenks. Ohne ein Wort.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -353,7 +353,7 @@
     },
     "true_dain_3": {
         "name": "{name}",
-        "text": "*Der Herzschlag unter meinen Fingerspitzen ist deutlich spürbar.*"
+        "text": "*Der Puls unter meinen Fingerspitzen ist deutlich spürbar.*"
     },
     "true_dain_4": {
         "name": "{name}",
@@ -742,7 +742,7 @@
     },
     "harem_3": {
         "name": "{name}",
-        "text": "*Dain boxte mir mit der Faust gegen die Schulter. Es tat weh. Spinnst du? ...Aber ich hab mich in dich verliebt, obwohl ich wusste, dass du so bist. Selbst schuld. Hmpf.*"
+        "text": "*Dain boxte mir mit der Faust gegen die Schulter. Es tat weh. \"Hey, du bist echt das Letzte.\" Sie hatte recht. Dain lächelte nicht.*"
     },
     "harem_4": {
         "name": "{name}",
