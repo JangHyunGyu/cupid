@@ -190,7 +190,7 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Mensaje privado de la tutora. '{name}, gracias por pasar por la sala de profes hoy. Lo administrativo ya está, así que no hace falta que te llame más. ...Pero si se te hace difícil adaptarte, ven cuando quieras.'*"
+        "text": "*Mensaje privado de la tutora. 'Gracias por pasar por la sala de profes hoy. Lo administrativo ya está, así que no hace falta que te llame más. ...Pero si se te hace difícil adaptarte, ven cuando quieras.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notificación de la app de salud. 'Registro enfermería: {name} — raspón en el codo (leve). Nota: mañana en la mañana te cambio la curita. Cambiar curitas es un acto médico, así que no tienes derecho a negarte ^^'*"
+        "text": "*Notificación de la app de salud. 'Registro enfermería: estudiante transferido — raspón en el codo (leve). Nota: mañana en la mañana te cambio la curita. Cambiar curitas es un acto médico, así que no tienes derecho a negarte ^^'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",

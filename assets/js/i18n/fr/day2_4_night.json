@@ -190,7 +190,7 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Un message privé de la prof principale. '{name}, merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
+        "text": "*Un message privé de la prof principale. 'Merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notification de l'appli santé. 'Dossier infirmerie : {name} — Écorchure au coude (légère). Note : Je changerai le pansement demain matin. Le changement de pansement est un acte médical, pas de droit de refus ^^'*"
+        "text": "*Notification de l'appli santé. 'Dossier infirmerie : élève transféré — Écorchure au coude (légère). Note : Je changerai le pansement demain matin. Le changement de pansement est un acte médical, pas de droit de refus ^^'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",

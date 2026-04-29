@@ -121,7 +121,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und {name}, solange du dich gut einlebst, reicht das.'*"
+        "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und der Transferstudent muss sich einfach weiter gut einleben.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Eine Benachrichtigung in der Schul-Gesundheits-App. 'Krankenakte: {name} — Schwindel (leicht). Notiz: Komm morgen wieder, falls die Symptome anhalten. Trink viel Wasser. — das ♥ ist rein medizinisches Interesse ^^'*"
+        "text": "*Eine Benachrichtigung in der Schul-Gesundheits-App. 'Krankenakte: Transferstudent — Schwindel (leicht). Notiz: Komm morgen wieder, falls die Symptome anhalten. Trink viel Wasser. — das ♥ ist rein medizinisches Interesse ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

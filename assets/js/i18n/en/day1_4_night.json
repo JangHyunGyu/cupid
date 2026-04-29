@@ -121,7 +121,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*There's a post from the homeroom teacher on the school app. 'Class 3-2 Notice: Bring math supplies for 1st period tomorrow. — And {name}, as long as you're settling in okay, that's enough.'*"
+        "text": "*There's a post from the homeroom teacher on the school app. 'Class 3-2 Notice: Bring math supplies for 1st period tomorrow. — And the transfer student only needs to keep settling in okay.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*An alert in the school health app. 'Nurse's Office Record: {name} — Dizziness (mild). Note: Come back tomorrow if symptoms continue. Drink lots of water. — the ♥ is strictly a medical concern ^^'*"
+        "text": "*An alert in the school health app. 'Nurse's Office Record: Transfer student — Dizziness (mild). Note: Come back tomorrow if symptoms continue. Drink lots of water. — the ♥ is strictly a medical concern ^^'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
