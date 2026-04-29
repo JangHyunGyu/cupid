@@ -1015,14 +1015,14 @@ ${L.rule}
      * 제타식 단락 분리: 문장 종결 뒤에 빈 줄 삽입.
      * @private
      */
-    _zetaFormatText(text) {
+    _zetaFormatText(text, paragraphBreak = true) {
         if (!text) return '';
+        const separator = paragraphBreak ? '\n\n' : '\n';
         let s = String(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
-        s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1\n\n');
-        s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1\n\n');
-        s = s.replace(/((?:다|요|죠|네|까|군|지|서|함|음))[ \t]+(?=[가-힣A-Z"“‘])/g, '$1\n\n');
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1' + separator);
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1' + separator);
         s = s.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n');
-        s = s.replace(/\n{3,}/g, '\n\n');
+        s = paragraphBreak ? s.replace(/\n{3,}/g, '\n\n') : s.replace(/\n{2,}/g, '\n');
         return s.trim();
     }
 
@@ -1073,9 +1073,9 @@ ${L.rule}
         const segments = Array.isArray(structuredSegments) && structuredSegments.length > 0
             ? structuredSegments.map(s => ({
                 type: s.type === 'narration' ? 'action' : 'text',
-                content: this._zetaFormatText(s.text || '') + ' '
+                content: this._zetaFormatText(s.text || '', s.type === 'narration') + ' '
             })).filter(s => s.content.trim())
-            : this._parseSegments(text).map(s => ({ ...s, content: this._zetaFormatText(s.content) + ' ' }));
+            : this._parseSegments(text).map(s => ({ ...s, content: this._zetaFormatText(s.content, s.type === 'action') + ' ' }));
         const speed = 30; // ms per character (게임과 동일)
 
         // 각 세그먼트별 DOM 요소를 미리 생성 (지문은 처음부터 포맷 적용)
@@ -1167,10 +1167,14 @@ ${L.rule}
      * @private
      */
     _formatAction(text) {
-        const escaped = this._zetaFormatText(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        // **지문** (이중 별표) 또는 *지문* (단일 별표) 모두 지문 스타일 적용
-        return escaped.replace(/\*\*([^*]+)\*\*/g, '<span class="gft-action">$1</span>')
-            .replace(/\*([^*]+)\*/g, '<span class="gft-action">$1</span>');
+        const escape = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return this._parseSegments(text).map(seg => {
+            const formatted = this._zetaFormatText(seg.content, seg.type === 'action');
+            const escaped = escape(formatted);
+            return seg.type === 'action'
+                ? `<span class="gft-action">${escaped}</span>`
+                : `<span class="gft-text">${escaped}</span>`;
+        }).join(' ');
     }
 
     _updateExpression(expression) {
