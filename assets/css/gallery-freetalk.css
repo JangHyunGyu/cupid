@@ -141,7 +141,7 @@
     background: rgba(0, 0, 0, 0.4);
     padding: 10px 14px;
     border-radius: 6px;
-    margin: 8px 0;
+    margin: 0.75rem 0;
     font-size: 0.95em;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.85;
@@ -151,9 +151,12 @@
 }
 
 /* 대사 span도 제타식 줄간격 */
-.gallery-freetalk-overlay #dialogue-text > span:not(.gft-action) {
-    white-space: pre-wrap;
-    line-height: 1.7;
+.gallery-freetalk-overlay #message > span:not(.gft-action),
+.gallery-freetalk-overlay #message > .gft-text {
+    display: block;
+    margin: 0.45rem 0;
+    white-space: pre-line;
+    line-height: 1.75;
 }
 
 /* 대사창 내 채팅 이미지 */

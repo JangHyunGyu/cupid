@@ -1017,10 +1017,11 @@ ${L.rule}
      */
     _zetaFormatText(text) {
         if (!text) return '';
-        let s = String(text);
-        s = s.replace(/([.!?…])[ \t]+/g, '$1\n\n');
-        s = s.replace(/([다요죠네까함음군지함서])\.(?!$)(?!\n)/g, '$1.\n\n');
-        s = s.replace(/([!?])(?!$)(?!\n)(?!\s)/g, '$1\n\n');
+        let s = String(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1\n\n');
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1\n\n');
+        s = s.replace(/((?:다|요|죠|네|까|군|지|서|함|음))[ \t]+(?=[가-힣A-Z"“‘])/g, '$1\n\n');
+        s = s.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n');
         s = s.replace(/\n{3,}/g, '\n\n');
         return s.trim();
     }
@@ -1081,6 +1082,7 @@ ${L.rule}
         const elements = segments.map(seg => {
             const el = document.createElement('span');
             if (seg.type === 'action') el.className = 'gft-action';
+            else el.className = 'gft-text';
             msgEl.appendChild(el);
             return el;
         });
@@ -1165,7 +1167,7 @@ ${L.rule}
      * @private
      */
     _formatAction(text) {
-        const escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const escaped = this._zetaFormatText(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         // **지문** (이중 별표) 또는 *지문* (단일 별표) 모두 지문 스타일 적용
         return escaped.replace(/\*\*([^*]+)\*\*/g, '<span class="gft-action">$1</span>')
             .replace(/\*([^*]+)\*/g, '<span class="gft-action">$1</span>');
