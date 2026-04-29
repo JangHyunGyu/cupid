@@ -225,12 +225,40 @@ class DialogueSystem {
      */
     parseNarration(text) {
         // HTML 이스케이프 처리 (사용자 입력 등에서 태그 깨짐 방지)
-        let escapedText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
+        let escapedText = this._zetaFormatText(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
 
         // * 로 시작해서 * 로 끝나거나, 문자열 끝까지 가는 부분을 매칭
         // 타이핑 중에는 닫는 * 가 아직 없을 수 있으므로 (\*)? 로 처리
         // 앞뒤의 공백(\s*)도 함께 매칭하여 제거 (블록 요소이므로 여백은 CSS margin으로 처리)
-        return escapedText.replace(/\s*\*([^*]+)(?:\*)?\s*/g, '<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 8px 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.6; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">$1</div>');
+        return escapedText.replace(/\s*\*([^*]+)(?:\*)?\s*/g, '<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 0.75rem 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.85; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">$1</div>');
+    }
+
+    /**
+     * 제타식 호흡: 문장 종결 뒤를 빈 줄로 분리합니다.
+     * @private
+     */
+    _zetaFormatText(text) {
+        if (!text) return '';
+        let s = String(text).replace(/\\n/g, '\n').replace(/\r\n?/g, '\n');
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)[ \t]+/g, '$1\n\n');
+        s = s.replace(/([.!?…。！？]["'”’)\]]*)(?=[가-힣A-Zぁ-んァ-ヶ一-龯¿¡])/g, '$1\n\n');
+        s = s.replace(/((?:다|요|죠|네|까|군|지|서|함|음))[ \t]+(?=[가-힣A-Z"“‘])/g, '$1\n\n');
+        s = s.replace(/[ \t]+\n/g, '\n').replace(/\n[ \t]+/g, '\n');
+        s = s.replace(/\n{3,}/g, '\n\n');
+        return s.trim();
+    }
+
+    /**
+     * 구조화된 narration/dialogue segments를 기존 대사창 렌더러가 이해하는 형태로 변환합니다.
+     * @private
+     */
+    _segmentsToInlineText(segments, charName) {
+        if (!Array.isArray(segments) || segments.length === 0) return '';
+        return segments.map(seg => {
+            if (!seg || !seg.text) return '';
+            const text = this._zetaFormatText(this.processPlaceholders(seg.text, charName));
+            return seg.type === 'narration' ? `*${text}*` : text;
+        }).filter(Boolean).join('\n\n');
     }
 
     /**
@@ -247,7 +275,7 @@ class DialogueSystem {
      * @param {string} charName - 말하는 캐릭터 이름
      * @returns {Promise} 타이핑 완료 시 resolve
      */
-    typeText(text, charName) {
+    typeText(text, charName, structuredSegments = null) {
         // 텍스트가 없으면 바로 완료
         if (text === undefined || text === null) {
             console.warn("[DialogueSystem] typeText: 텍스트 없음");
@@ -255,7 +283,9 @@ class DialogueSystem {
         }
 
         // 플레이스홀더 처리
-        const processedText = this.processPlaceholders(text, charName);
+        const processedText = Array.isArray(structuredSegments) && structuredSegments.length > 0
+            ? this._segmentsToInlineText(structuredSegments, charName)
+            : this.processPlaceholders(text, charName);
 
         // 말하기 애니메이션 시작
         this.updateTalkingAnimation(charName, true);
