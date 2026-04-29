@@ -755,7 +755,8 @@ class FreeTalkSystem {
                     this.applyAffinity(parsed.affinity, scene);
                 }
 
-                reply = parsed.text || "...";
+                reply = this._sanitizePlayerPlaceholders(parsed.text || "...");
+                const parsedSegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
 
                 // 레거시 폴백: 인라인 태그가 텍스트에 남아있을 경우 처리
                 reply = this.processExpressionTags(reply, scene);
@@ -771,8 +772,8 @@ class FreeTalkSystem {
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
 
                 // segments가 있으면 typeText에 전달 (별표 파싱 건너뛰고 구조화 렌더)
-                await this.dialogueSystem.typeText(reply, scene.name, parsed.segments || null);
-                this.freeTalkHistory.push({ role: "assistant", content: reply, segments: parsed.segments || null });
+                await this.dialogueSystem.typeText(reply, scene.name, parsedSegments);
+                this.freeTalkHistory.push({ role: "assistant", content: reply, segments: parsedSegments });
 
                 // 대화 기록 저장 (로컬)
                 this.stateManager.setChatMemory(scene.name, this.freeTalkHistory);
@@ -888,13 +889,63 @@ class FreeTalkSystem {
      * @param {string} reply - AI 응답 원문
      * @returns {string} 추출된 텍스트 또는 원본 그대로
      */
+    _getPlayerDisplayName() {
+        return this.stateManager?.playerName || '주인공';
+    }
+
+    _sanitizePlayerPlaceholders(text) {
+        if (typeof text !== 'string' || !text) return text || '';
+
+        const playerName = this._getPlayerDisplayName();
+        const tokenPattern = String.raw`(?:\$\{\s*(?:playerName|userName|username|user|player|name)\s*\}|\{\{\s*(?:user|player|playerName|userName|username|name)\s*\}\}|\{\s*(?:playerName|userName|username|user|player|name)\s*\}|PLAYER_NAME)`;
+        const hasFinalConsonant = (value) => {
+            const trimmed = String(value || '').trim();
+            if (!trimmed) return false;
+            const code = trimmed.charCodeAt(trimmed.length - 1);
+            if (code < 0xAC00 || code > 0xD7A3) return false;
+            return ((code - 0xAC00) % 28) !== 0;
+        };
+        const endsWithRieul = (value) => {
+            const trimmed = String(value || '').trim();
+            if (!trimmed) return false;
+            const code = trimmed.charCodeAt(trimmed.length - 1);
+            return code >= 0xAC00 && code <= 0xD7A3 && ((code - 0xAC00) % 28) === 8;
+        };
+        const final = hasFinalConsonant(playerName);
+        const particle = {
+            subject: final ? '이' : '가',
+            topic: final ? '은' : '는',
+            object: final ? '을' : '를',
+            with: final ? '과' : '와',
+            call: final ? '아' : '야',
+            route: final && !endsWithRieul(playerName) ? '으로' : '로'
+        };
+
+        let out = text;
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:이\\(가\\)|가\\(이\\)|이|가)`, 'gi'), `${playerName}${particle.subject}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:은\\(는\\)|는\\(은\\)|은|는)`, 'gi'), `${playerName}${particle.topic}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:을\\(를\\)|를\\(을\\)|을|를)`, 'gi'), `${playerName}${particle.object}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:와\\(과\\)|과\\(와\\)|와|과)`, 'gi'), `${playerName}${particle.with}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:아\\(야\\)|야\\(아\\)|아|야)`, 'gi'), `${playerName}${particle.call}`);
+        out = out.replace(new RegExp(`${tokenPattern}\\s*(?:\\(으\\)로|으로|로)`, 'gi'), `${playerName}${particle.route}`);
+        return out.replace(new RegExp(tokenPattern, 'gi'), playerName);
+    }
+
+    _sanitizeSegmentsPlaceholders(segments) {
+        if (!Array.isArray(segments)) return segments || null;
+        return segments.map(seg => {
+            if (!seg || typeof seg !== 'object') return seg;
+            return { ...seg, text: this._sanitizePlayerPlaceholders(seg.text || '') };
+        }).filter(seg => seg && seg.text);
+    }
+
     parseJsonResponse(reply) {
         // 📌 빈 응답이면 기본 구조체 반환
         if (!reply) return { text: "", segments: null, expression: "", affinity: 0 };
 
         // 📌 JSON일 가능성 체크 (중괄호, 대괄호, 또는 코드블록 포함 여부)
         const likelyJson = reply.includes('{') || reply.includes('[') || reply.includes('```json');
-        if (!likelyJson) return { text: reply, segments: null, expression: "", affinity: 0 };  // 순수 텍스트면 그대로
+        if (!likelyJson) return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: "", affinity: 0 };  // 순수 텍스트면 그대로
 
         try {
             let jsonStr = reply;
@@ -928,8 +979,8 @@ class FreeTalkSystem {
                 const normalizedSegments = this.normalizeSegments(parsed.segments);
                 const derivedText = this.segmentsToText(normalizedSegments);
                 return {
-                    text: derivedText,
-                    segments: normalizedSegments,
+                    text: this._sanitizePlayerPlaceholders(derivedText),
+                    segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: parseInt(parsed.affinity) || 0,
                 };
@@ -938,7 +989,7 @@ class FreeTalkSystem {
             // 📌 cupid 레거시 스키마 {text, expression, affinity}
             if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && typeof parsed.text === 'string') {
                 return {
-                    text: parsed.text || "",
+                    text: this._sanitizePlayerPlaceholders(parsed.text || ""),
                     segments: null,
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: parseInt(parsed.affinity) || 0,
@@ -978,7 +1029,7 @@ class FreeTalkSystem {
                 fallbackText = getTextFromObj(parsed);
             }
             if (fallbackText && typeof fallbackText === 'string') {
-                return { text: fallbackText, segments: null, expression: "", affinity: 0 };
+                return { text: this._sanitizePlayerPlaceholders(fallbackText), segments: null, expression: "", affinity: 0 };
             }
         } catch (e) {
             // 📌 JSON 파싱 실패 시 경고 로그 (원본 반환됨)
@@ -1004,7 +1055,7 @@ class FreeTalkSystem {
         const out = [];
         for (const seg of raw) {
             if (!seg || typeof seg !== 'object') continue;
-            const text = typeof seg.text === 'string' ? seg.text.trim() : '';
+            const text = this._sanitizePlayerPlaceholders(typeof seg.text === 'string' ? seg.text.trim() : '');
             if (!text) continue;
             let type = (typeof seg.type === 'string') ? seg.type.toLowerCase() : '';
             if (type === 'action' || type === 'narrate' || type === 'narrator' || type === 'desc' || type === 'description' || type === 'scene') {
@@ -1029,7 +1080,8 @@ class FreeTalkSystem {
         if (!Array.isArray(segments) || segments.length === 0) return '';
         return segments.map(s => {
             if (!s || !s.text) return '';
-            return s.type === 'narration' ? `*${s.text}*` : s.text;
+            const text = this._sanitizePlayerPlaceholders(s.text);
+            return s.type === 'narration' ? `*${text}*` : text;
         }).filter(Boolean).join(' ');
     }
 
