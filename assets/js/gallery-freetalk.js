@@ -1012,6 +1012,20 @@ ${L.rule}
     }
 
     /**
+     * 제타식 줄바꿈: 마침표·물음표·느낌표·말줄임표 뒤에 줄바꿈 삽입.
+     * white-space: pre-wrap CSS와 함께 작동.
+     * @private
+     */
+    _zetaFormatText(text) {
+        if (!text) return '';
+        return String(text)
+            .replace(/([.!?…])\s+(?=\S)/g, '$1\n')
+            .replace(/([다요죠네까함음군])\.(?=\S)/g, '$1.\n')
+            .replace(/\n{3,}/g, '\n\n')
+            .trim();
+    }
+
+    /**
      * segments 배열 → 레거시 호환 인라인 텍스트 (narration → *text*, dialogue → text)
      * @private
      */
@@ -1054,12 +1068,13 @@ ${L.rule}
 
         // structuredSegments가 있으면 별표 파싱 건너뛰고 type별 직접 매핑
         // AI의 narration/dialogue → 갤러리 내부 action/text 매핑
+        // 제타식 줄바꿈 적용 (마침표 단위)
         const segments = Array.isArray(structuredSegments) && structuredSegments.length > 0
             ? structuredSegments.map(s => ({
                 type: s.type === 'narration' ? 'action' : 'text',
-                content: (s.text || '') + ' '
+                content: this._zetaFormatText(s.text || '') + ' '
             })).filter(s => s.content.trim())
-            : this._parseSegments(text);
+            : this._parseSegments(text).map(s => ({ ...s, content: this._zetaFormatText(s.content) + ' ' }));
         const speed = 30; // ms per character (게임과 동일)
 
         // 각 세그먼트별 DOM 요소를 미리 생성 (지문은 처음부터 포맷 적용)
