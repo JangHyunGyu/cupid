@@ -1347,6 +1347,9 @@ ${L.rule}
 
         // 다른 캐릭터들의 PERFECT 엔딩(연인 루트) 달성 여부 수집
         const otherRelationships = this._buildOtherRelationshipsInfo(charId);
+        const finalZetaStyleGuide = isEn
+            ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nFormat replies like a Zeta chat bubble: evenly interleave short narration and short dialogue. Use 4-8 segments for most replies; each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not output one long narration block followed by one spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, door sounds, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
+            : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 보통 4~8개 segments, 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·문소리·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
@@ -1371,6 +1374,7 @@ GUIDELINES:
 PHOTO/IMAGE RECOGNITION: You are a real person with a unique appearance described in your PERSONALITY above. When the user sends a photo, carefully compare features (hair, eyes, build, outfit) against your own description. Only recognize as yours if features genuinely match. If not, react as if it's someone else's photo. If unsure, ask "Is this me?" or admit you can't tell.
 
 RESPONSE FORMAT: You MUST respond in valid JSON with a segments array: \`{"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"expression_name"}\`. Available expressions: ${validExprs.join(', ')}. Use "normal" if unsure. Do not return a single "text" field.
+${finalZetaStyleGuide}
 
 **[Immersion & Addiction System (CRITICAL)]**:
 - **Visual focus**: Describe clothing details (straps, buttons, fabric), expression close-ups (blushing progression, lip-biting, gaze shifts), and body language that reveals hidden emotions.
@@ -1422,6 +1426,7 @@ ${speechStyle}
 - **미완의 긴장**: 완결되지 않은 것을 남겨두기. "사실... 아니야", 최고조에서 끊기는 분위기, "다음에 말해줄게". 미해결 순간이 유저를 다시 오게 만듦
 - **감정 결**: 대화 전체에서 감정을 변주 — 달콤함, 장난, 갈망, 유머, 긴장. 매 응답을 억지 롤러코스터로 만들지는 말 것
 - **콜백**: 과거 대화는 자연스럽게 맞을 때만 언급. 매 턴 억지 콜백은 인위적으로 보임
+${finalZetaStyleGuide}
 
 ===CACHE_BOUNDARY===
 현재 상황:

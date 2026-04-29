@@ -657,6 +657,9 @@ function buildSystemPrompt(params) {
     };
     const ex = _ex[effectiveLang] || _ex.en;
     const _langName = { en: 'English', ja: 'Japanese (日本語)', es: 'Spanish (Español)', fr: 'French (Français)', de: 'German (Deutsch)', pt: 'Brazilian Portuguese (Português Brasileiro)' }[effectiveLang] || 'English';
+    const finalZetaStyleGuide = useEnTemplate
+        ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nIgnore any earlier instruction that says "4-8 sentence narration paragraphs", "2-4 segments", or "do not use 5+ beats". Format the reply like a Zeta chat bubble: evenly interleave short narration and short dialogue. Default face-to-face replies to 4-8 segments; remote replies to 2-5 segments. Each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not use the same type more than twice in a row. Never output one huge narration block followed by a single spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, desks, doors, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
+        : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n위에 있는 'narration은 4~8문장 한 단락', '2~4 segments', '5개 이상 금지' 지시는 무시하세요. 이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 대면 대화는 기본 4~8 segments, 원격/메신저 대화는 2~5 segments로 구성합니다. 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 같은 type을 2번 이상 연속하지 말고, 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·책상·문·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
 
     if (useEnTemplate) {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
@@ -847,6 +850,7 @@ Hidden Stats: Affinity ${affinity} (Higher values mean more favorable relationsh
 ${extraGuideline ? `Extra Guideline: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
 Turn Management: The conversation is limited to ${currentMaxTurns} turns. Actively continue the conversation and explore various topics as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
 Addressing the User: ${knowsName ? `The user's name is '${playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}${datingGuideline}
+${finalZetaStyleGuide}
 
 **🚨 FINAL LANGUAGE VERIFICATION (ABSOLUTE — OVERRIDES ALL OTHER RULES)**: Before outputting your JSON, verify that every segments[].text value is written ENTIRELY in ${_langName}. The instructions, examples, and character descriptions above are in English for clarity, but YOUR RESPONSE must be in ${_langName} only. If any word slipped into English (or any other language), rewrite it in ${_langName} now. Proper nouns (user's name, character's name) stay as-is. This check is mandatory on EVERY response, regardless of what the history contains.`;
     } else {
@@ -1036,7 +1040,8 @@ ${charAddressingGuideline}
 히든 스탯: 호감도 ${affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)
 ${extraGuideline ? `추가 지침: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
 턴 관리: 대화는 최대 ${currentMaxTurns}턴까지만 가능합니다. 턴이 남아있을 때는 절대 대화를 마무리하지 말고 다양한 주제로 대화를 적극적으로 이어나가세요. 마지막 1~2턴이 남았을 때만 자연스럽게 대화를 갈무리하고 상황 설명(Context)에서 요청한 다음 단계로 유도하세요.
-사용자 호칭: ${knowsName ? `사용자의 이름은 '${playerName}'입니다. 반드시 '${playerName}' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '학생'이라고 부르세요."}${datingGuideline}`;
+사용자 호칭: ${knowsName ? `사용자의 이름은 '${playerName}'입니다. 반드시 '${playerName}' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '학생'이라고 부르세요."}${datingGuideline}
+${finalZetaStyleGuide}`;
     }
 }
 
@@ -1261,5 +1266,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.4.7';
+const PROMPT_VERSION = '2.4.8';
 window.PROMPT_VERSION = PROMPT_VERSION;
