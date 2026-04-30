@@ -29,6 +29,14 @@
 > film grain, film strip, white border, white margin
 > ```
 
+>
+> **안경 캐릭터 표정 변경용 고정 태그**
+> 서연/보건처럼 안경이 정체성인 캐릭터는 표정 변경 시 positive에 아래 묶음을 유지:
+> `{{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads`
+> undesired content에는 아래 묶음을 추가:
+> `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`
+> 단, `nurse_bikini.png`처럼 의도적으로 얼굴 안경을 빼는 특수 의상 블록은 예외.
+
 ---
 
 ## 1. 캐릭터 — 서연 (Seoyeon) — 학생회장
@@ -37,7 +45,7 @@
 > `1girl, solo, korean, mature female, college student, beautiful,
 > long black hair, wavy hair, see-through bangs, hair past waist,
 > black eyes, large almond eyes, round eyes,
-> ivory skin, glasses, round eyewear, black-framed glasses,
+> ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 > 6.5 head body, hourglass figure, large breasts, narrow waist, wide hips, curvy,
 > navy blazer, school uniform, gold emblem, open jacket, white collared shirt, white blouse,
 > navy pleated skirt, miniskirt`
@@ -48,7 +56,7 @@
 masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, college student, beautiful,
 long black hair, wavy hair, hair past waist, see-through bangs,
-black eyes, large almond eyes, ivory skin, round black-framed glasses,
+black eyes, large almond eyes, ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist, wide hips, curvy,
 navy blazer, gold emblem badge, open jacket, white collared blouse, navy pleated miniskirt,
 hand on hip, other arm at side, standing, confident pose, slight body turn,
@@ -65,6 +73,7 @@ multiple views, multiple girls, 2girls, 3girls, crowd,
 watermark, signature, text, logo, cropped, out of frame,
 3d, realistic, photo,
 full body, knees, feet, lower body,
+no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses,
 particles, light particles, lens flare, glowing aura, light rays,
 film grain, film strip, white border, white margin
 ```
@@ -75,7 +84,7 @@ film grain, film strip, white border, white margin
 masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, college student, beautiful,
 long black hair, wavy hair, hair past waist,
-black eyes, large almond eyes, ivory skin, round black-framed glasses,
+black eyes, large almond eyes, ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist, wide hips,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
 shy, blush, full-face blush, looking away, embarrassed, awkward smile, head tilt,
@@ -83,7 +92,7 @@ slight body turn, standing, hand on hip,
 cowboy shot, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통 네거티브 + `full body, knees, feet, lower body, particles, light rays`)
+**네거티브:** (공통 네거티브 + `full body, knees, feet, lower body, particles, light rays, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### seyoun_shy2.png
 **프롬프트:**
@@ -91,7 +100,7 @@ solid bright green background, chromakey background, simple background, soft dif
 masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, college student,
 long black hair, wavy hair, hair past waist, hair over face,
-black eyes, ivory skin, round black-framed glasses,
+black eyes, ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist, wide hips,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
 extreme blush, deep blush, hand on own cheek, covering face, looking down,
@@ -99,7 +108,7 @@ biting lip, embarrassed, head down,
 cowboy shot, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통)
+**네거티브:** (공통 + `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### seyoun_laugh.png
 **프롬프트:**
@@ -109,7 +118,7 @@ masterpiece, best quality, very aesthetic, absurdres, newest,
 long black hair, wavy hair, hair past waist,
 ^_^, closed eyes, smile, open mouth, laughing, teeth, happy, cheerful,
 crescent eyes, natural smile, blush stickers,
-ivory skin, round black-framed glasses,
+ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist, wide hips,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
 hand near mouth, standing,
@@ -125,7 +134,7 @@ masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, college student,
 long black hair, wavy hair, hair past waist, neat hair,
 black eyes, sharp eyes, narrowed eyes, frown, furrowed brow,
-ivory skin, round black-framed glasses, glasses glare,
+ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads, glasses glare,
 serious expression, closed mouth, tight lips, angry, cold expression,
 hourglass figure, large breasts, narrow waist, wide hips,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
@@ -133,7 +142,7 @@ hand on hip, authoritative pose, looking at viewer,
 cowboy shot, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통)
+**네거티브:** (공통 + `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### seyoun_sad.png
 **프롬프트:**
@@ -142,7 +151,7 @@ masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, college student,
 long black hair, wavy hair, hair past waist, hair down,
 black eyes, sad eyes, drooping eyes, looking down, downcast eyes,
-ivory skin, round black-framed glasses,
+ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 sad, frown, slightly parted lips, gloomy, dejected, slumped shoulders,
 hourglass figure, large breasts, narrow waist,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
@@ -150,7 +159,7 @@ hands clasped in front, standing,
 cowboy shot, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통)
+**네거티브:** (공통 + `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### seyoun_cry.png
 **프롬프트:**
@@ -160,14 +169,14 @@ masterpiece, best quality, very aesthetic, absurdres, newest,
 long black hair, wavy hair, hair past waist, hair covering cheek,
 black eyes, tearful eyes, watery eyes, tears, holding back tears,
 red nose, trembling lips, hand covering mouth,
-ivory skin, round black-framed glasses,
+ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
 emotional, sad, conflicted expression,
 cowboy shot, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통)
+**네거티브:** (공통 + `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### seyoun_pout.png
 **프롬프트:**
@@ -177,14 +186,14 @@ masterpiece, best quality, very aesthetic, absurdres, newest,
 long black hair, wavy hair, hair past waist,
 black eyes, looking to the side, side glance, pouting, puffy cheeks,
 furrowed brow, annoyed, cute, slight frown,
-ivory skin, round black-framed glasses,
+ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist, wide hips,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
 crossed arms, standing,
 cowboy shot, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통)
+**네거티브:** (공통 + `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### seyoun_worried.png
 **프롬프트:**
@@ -193,14 +202,14 @@ masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, college student,
 long black hair, wavy hair, hair past waist,
 black eyes, worried eyes, anxious, parted lips, furrowed brow, troubled expression,
-ivory skin, round black-framed glasses,
+ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist,
 navy blazer, gold emblem, open jacket, white blouse, navy pleated miniskirt,
 own hands clasped, hands clasped in front, defensive pose, tense,
 cowboy shot, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통)
+**네거티브:** (공통 + `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### seyoun_back.png
 **프롬프트:**
@@ -224,14 +233,14 @@ solid bright green background, chromakey background, simple background, soft dif
 masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, college student, beautiful,
 long black hair, wavy hair, hair past waist, wind-blown hair,
-black eyes, large almond eyes, ivory skin, round black-framed glasses,
+black eyes, large almond eyes, ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 hourglass figure, large breasts, narrow waist, wide hips, curvy, dynamic pose,
 navy bikini, navy swimsuit, beach,
 confident smile, looking at viewer, blush, summer atmosphere,
 upper body, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통 + `nsfw, lewd, explicit, full body, lower body`)
+**네거티브:** (공통 + `nsfw, lewd, explicit, full body, lower body, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ---
 
@@ -643,7 +652,7 @@ solid bright green background, chromakey background, simple background, soft dif
 > `1girl, solo, korean, mature female, school nurse, beautiful,
 > short hair, ash purple hair, light purple hair, lavender hair, sharp bob, blunt bob cut, jaw-length bob,
 > brown eyes, sharp eyes, cat eyes, fox eyes, narrow eyes,
-> light skin, glasses, round eyewear, black-framed glasses,
+> light skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 > 7 head body, glamorous figure, large breasts, narrow waist, wide hips, curvy,
 > white doctor coat, white lab coat, open coat,
 > pink blouse, deep v-neck blouse,
@@ -656,7 +665,7 @@ masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, school nurse, beautiful,
 short ash purple hair, lavender hair, sharp bob, blunt bob cut, jaw-length,
 brown eyes, sharp eyes, cat eyes, playful eyes, sparkle in eyes,
-light skin, round black-framed glasses,
+light skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 glamorous figure, large breasts, narrow waist, wide hips, curvy,
 white doctor coat, open coat, pink deep v-neck blouse, cleavage,
 black miniskirt, stethoscope around neck,
@@ -665,7 +674,7 @@ playful smirk, smug smile, half smile, knowing look, looking at viewer,
 upper body, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통 + `school uniform, blazer, tattoo, full body`)
+**네거티브:** (공통 + `school uniform, blazer, tattoo, full body, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### nurse_shy.png
 **프롬프트:**
@@ -673,7 +682,7 @@ solid bright green background, chromakey background, simple background, soft dif
 masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, school nurse,
 short ash purple hair, lavender hair, sharp bob,
-brown eyes, glasses, round black-framed glasses,
+brown eyes, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
 light skin, full-face blush, deep blush, embarrassed,
 forced smirk, wavering eyes, dropped composure,
 glamorous figure, large breasts, narrow waist,
@@ -682,7 +691,7 @@ sitting pose, hands awkwardly placed,
 upper body, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통 + `school uniform, blazer, tattoo, full body`)
+**네거티브:** (공통 + `school uniform, blazer, tattoo, full body, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### nurse_angry.png
 **프롬프트:**
@@ -690,7 +699,7 @@ solid bright green background, chromakey background, simple background, soft dif
 masterpiece, best quality, very aesthetic, absurdres, newest,
 1girl, solo, korean, mature female, school nurse,
 short ash purple hair, lavender hair, sharp bob, neat hair,
-brown eyes, sharp eyes, glaring over glasses, glasses sliding down,
+brown eyes, sharp eyes, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads, glaring over glasses, glasses sliding down,
 light skin, frown, tight lips, serious expression, mask off,
 glamorous figure, large breasts, narrow waist,
 white doctor coat, pink blouse, black miniskirt, stethoscope around neck,
@@ -698,7 +707,7 @@ crossed arms, intimidating pose, sitting,
 upper body, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통 + `school uniform, blazer, tattoo, smile, smirk, full body`)
+**네거티브:** (공통 + `school uniform, blazer, tattoo, smile, smirk, full body, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
 ### nurse_bikini.png
 **프롬프트:**
