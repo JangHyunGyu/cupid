@@ -16,30 +16,30 @@ if not api_key:
     exit(1)
 
 prompt = (
-    "anime visual novel character sprite, clean bold lineart, vivid digital cel shading, "
-    "brown very short pixie cut hair with ears fully visible, hair above ears on sides and back, sporty ultra-short haircut, "
-    "bright sparkling green eyes with star-shaped highlights, healthy tanned bright skin tone, "
-    "bright round eyes, cute small nose, lively lips, "
-    "6.5-head-tall proportions, dating sim art style, energetic Korean high school girl, "
-    "body angled 10 degrees to the RIGHT from front view facing viewer's left direction, "
-    "face facing viewer tilted 5 degrees, "
-    "athletic toned volleyball player build with hourglass figure, "
-    "large rounded chest, slim toned waist, wide athletic hips, toned thighs, "
-    "sleeveless volleyball jersey white base with orange and navy accent lines, "
-    "team name ETAURS and number 19 printed on chest, "
-    "very short navy dolphin shorts, "
-    "single black arm sleeve on LEFT arm only, right arm completely bare no accessories, "
-    "left hand on hip, right hand relaxed at side, confident power pose, "
-    "bright cool smile showing teeth, energetic sporty girl vibe, "
-    "upper body portrait cut at mid-thigh level, 1024x1024 resolution, "
-    "solid bright magenta pink chroma key background, soft diffused front lighting with subtle rim light"
+    "애니메이션 비주얼 노벨 캐릭터 스프라이트, 깔끔하고 굵은 선화, 선명한 디지털 셀 채색, "
+    "귀가 완전히 보이는 매우 짧은 갈색 픽시컷 머리, 옆머리와 뒷머리가 귀 위까지 오는 스포티한 초숏컷, "
+    "별 모양 하이라이트가 있는 밝고 반짝이는 초록색 눈, 건강하게 그을린 밝은 피부톤, "
+    "밝고 둥근 눈, 작고 귀여운 코, 생기 있는 입술, "
+    "6.5등신 비율, 연애 시뮬레이션 아트 스타일, 에너지 넘치는 한국인 여고생, "
+    "정면 기준 몸은 오른쪽으로 10도 틀어져 보는 사람 기준 왼쪽을 향함, "
+    "얼굴은 보는 사람을 향하고 5도 정도 기울어짐, "
+    "모래시계형 곡선을 가진 탄탄한 배구선수 체형, "
+    "큰 둥근 상체 볼륨, 잘록하고 탄탄한 허리, 넓은 운동선수다운 골반, 탄탄한 허벅지, "
+    "흰색 바탕에 주황색과 남색 포인트 라인이 있는 민소매 배구 유니폼, "
+    "가슴에 ETAURS 팀명과 등번호 19가 인쇄되어 있음, "
+    "매우 짧은 남색 돌핀 쇼츠, "
+    "왼팔에만 검은 암슬리브 하나를 착용하고 오른팔은 장신구 없이 완전히 맨팔, "
+    "왼손은 허리에 얹고 오른손은 자연스럽게 옆에 둔 자신감 있는 파워 포즈, "
+    "치아가 보이는 밝고 시원한 미소, 에너지 넘치는 스포티한 소녀 분위기, "
+    "허벅지 중간에서 잘리는 상반신 초상 구도, 1024x1024 해상도, "
+    "단색 밝은 마젠타 핑크 크로마키 배경, 부드러운 확산 정면 조명과 은은한 림라이트"
 )
 
 negative = (
-    "low quality, blurry, finger anomaly, deformed hands, 3D rendering, real photo, "
-    "multiple angles, multiple characters, cropped, watermark, signature, text, letters, "
-    "logo, name tag, armband, background included, full body, lower body included, "
-    "particle effects, light particles, effects, halo, light rays, light beams, food, product photo"
+    "저퀄리티, 흐릿함, 손가락 이상, 변형된 손, 3D 렌더링, 실사 사진, "
+    "여러 각도, 여러 캐릭터, 잘림, 워터마크, 서명, 텍스트, 글자, "
+    "로고, 이름표, 완장, 배경 포함, 전신, 하반신 과다 포함, "
+    "파티클 효과, 빛 입자, 특수 효과, 후광, 광선, 빛줄기, 음식, 제품 사진"
 )
 
 payload = {

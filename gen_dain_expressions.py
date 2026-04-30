@@ -22,55 +22,55 @@ with open(ref_path, "rb") as f:
 
 expressions = {
     "dain_active": (
-        "Edit this anime character's expression and pose. Change to: hair slightly wet with sweat sticking to forehead and temples, "
-        "intense passionate eyes burning with fighting spirit, sweat drops on forehead and neck, skin flushed red from exercise, "
-        "uniform slightly damp clinging to body, one arm raised in a fist pump victory pose, "
-        "passionate expression with rough breathing after intense exercise. No ball, no volleyball, no sports equipment. "
-        "Keep the same character design, outfit ETAURS 19, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. 머리카락은 땀에 살짝 젖어 이마와 관자놀이에 붙어 있고, "
+        "투지가 타오르는 강렬하고 열정적인 눈빛, 이마와 목의 땀방울, 운동으로 붉게 상기된 피부, "
+        "살짝 젖어 몸에 달라붙는 유니폼, 한 팔을 들어 올린 승리의 주먹 포즈로 변경한다. "
+        "격렬한 운동 직후 거친 숨이 느껴지는 열정적인 표정. 공, 배구공, 운동 장비는 넣지 않는다. "
+        "같은 캐릭터 디자인, ETAURS 19번 의상, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
     "dain_shy": (
-        "Edit this anime character's expression and pose. Change to: both hands brought together in front of chest in a shy curled-up pose, "
-        "green eyes looking down avoiding eye contact, both cheeks deeply blushing bright red, "
-        "awkward shy smile with lips curving up nervously, dramatically contrasting her usual bold personality. "
-        "Keep the same character design, outfit ETAURS 19, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. 양손을 가슴 앞에 모은 수줍게 움츠린 포즈, "
+        "시선을 피하듯 아래를 내려다보는 초록색 눈, 양볼이 밝은 붉은색으로 깊게 물든 홍조, "
+        "긴장해서 입꼬리가 어색하게 올라간 수줍은 미소로 변경한다. 평소의 당당한 성격과 극적으로 대비되게 표현한다. "
+        "같은 캐릭터 디자인, ETAURS 19번 의상, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
     "dain_laugh": (
-        "Edit this anime character's expression only. Change to: eyes squeezed shut in happy crescent moon shape, "
-        "mouth wide open showing teeth in a big hearty laugh, cheeks brightly flushed, "
-        "one hand on hip other hand relaxed, hair bouncing slightly from laughing motion, "
-        "genuine wholehearted laughter bursting out. "
-        "Keep the same character design, outfit ETAURS 19, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정만 편집한다. 눈은 행복한 초승달 모양으로 꼭 감고, "
+        "입은 크게 벌려 치아가 보이는 호탕한 웃음, 밝게 상기된 볼, "
+        "한 손은 허리에 얹고 다른 손은 자연스럽게 둔 상태, 웃음 동작으로 머리카락이 살짝 튀는 느낌으로 변경한다. "
+        "진심 어린 웃음이 터져 나오는 모습. "
+        "같은 캐릭터 디자인, ETAURS 19번 의상, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
     "dain_angry": (
-        "Edit this anime character's expression and pose. Change to: green eyes wide open glaring with sharp raised eye corners, "
-        "teeth bared in an aggressive growling angry expression, cheeks red with fury, deep furrow between eyebrows, "
-        "fists clenched tight, straightforward athletic rage. "
-        "Keep the same character design, outfit ETAURS 19, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. 초록색 눈을 크게 뜨고 눈꼬리가 날카롭게 올라간 노려보는 눈빛, "
+        "이를 드러내며 으르렁거리는 공격적인 화난 표정, 분노로 붉어진 볼, 깊게 찡그린 미간, "
+        "꽉 쥔 주먹, 운동선수다운 직선적인 분노로 변경한다. "
+        "같은 캐릭터 디자인, ETAURS 19번 의상, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
     "dain_sad": (
-        "Edit this anime character's expression and pose. Change to: green eyes drooping with lowered eye corners and faded highlights, "
-        "mouth corners turned down in a sad expression, arms hanging limply at sides, shoulders slumped and deflated posture, "
-        "all the usual energy completely gone, looking small and withdrawn. "
-        "Keep the same character design, outfit ETAURS 19, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. 초록색 눈은 축 처지고 눈꼬리가 내려가며 하이라이트가 흐려진 상태, "
+        "입꼬리가 내려간 슬픈 표정, 양팔은 힘없이 옆으로 늘어지고 어깨가 처진 기운 없는 자세, "
+        "평소의 에너지가 완전히 사라져 작고 위축되어 보이는 모습으로 변경한다. "
+        "같은 캐릭터 디자인, ETAURS 19번 의상, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
     "dain_pout": (
-        "Edit this anime character's expression and pose. Change to: green eyes looking sideways with an annoyed glance, "
-        "lips pushed out in a pout with both cheeks puffed up in displeasure, arms crossed over chest, "
-        "head slightly turned away in a defiant rebellious pose, straightforward athletic pouting. "
-        "Keep the same character design, outfit ETAURS 19, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. 초록색 눈은 짜증 섞인 곁눈질로 옆을 바라보고, "
+        "입술을 삐죽 내밀며 양볼을 불만스럽게 부풀리고, 팔짱을 낀 자세, "
+        "고개를 살짝 돌린 반항적인 포즈와 운동선수다운 솔직한 삐침으로 변경한다. "
+        "같은 캐릭터 디자인, ETAURS 19번 의상, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
     "dain_sweat": (
-        "Edit this anime character's expression only. Change to: a single cold sweat drop on temple, "
-        "holding a white towel wiping one side of face with one hand, cheeks red from embarrassment, "
-        "trying to look cheerful but lips slightly trembling showing a crack in her mask, "
-        "green eyes showing unusual wavering and uncertainty. "
-        "Keep the same character design, outfit ETAURS 19, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정만 편집한다. 관자놀이에 식은땀 한 방울, "
+        "한 손으로 흰 수건을 들고 얼굴 한쪽을 닦는 모습, 당황해서 붉어진 볼, "
+        "밝은 척하려 하지만 입술이 살짝 떨려 가면이 깨지는 느낌, "
+        "초록색 눈에는 평소와 다른 흔들림과 불안감이 보이게 변경한다. "
+        "같은 캐릭터 디자인, ETAURS 19번 의상, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
     "dain_bikini": (
-        "Edit this anime character's outfit only. Change outfit to: navy and white two-tone sports bikini with ETAURS logo, "
-        "hair wet sticking to forehead, water droplets on skin, "
-        "confident cool smile, bright sporty athletic swimmer vibe. Remove arm sleeve. "
-        "Keep the same character face, hair style, body proportions, magenta background, art style. Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 의상만 편집한다. 의상을 ETAURS 로고가 있는 남색과 흰색 투톤 스포츠 비키니로 변경한다. "
+        "머리카락은 젖어서 이마에 붙어 있고, 피부에는 물방울이 맺혀 있다. "
+        "자신감 있는 시원한 미소, 밝고 스포티한 운동선수 수영복 분위기. 암슬리브는 제거한다. "
+        "같은 캐릭터 얼굴, 머리 스타일, 신체 비율, 마젠타 배경, 아트 스타일을 유지한다. 1024x1024로 한 장 출력한다."
     ),
 }
 
