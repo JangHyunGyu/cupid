@@ -574,24 +574,27 @@ try {
     // LoaderConfig VERSION
     const loaderConfigPath = path.join(__dirname, 'assets/js/loaders/config.js');
     const loaderConfigContent = fs.readFileSync(loaderConfigPath, 'utf8');
-    const loaderVersion = (loaderConfigContent.match(/VERSION:\s*'([^']+)'/) || [])[1];
+    const loaderVersion = (loaderConfigContent.match(/VERSION:\s*(['"])([^'"]+)\1/) || [])[2];
 
     // game-loader.js hardcoded version
     const gameLoaderPath = path.join(__dirname, 'assets/js/loaders/game-loader.js');
     const gameLoaderContent = fs.readFileSync(gameLoaderPath, 'utf8');
-    const gameLoaderVersion = (gameLoaderContent.match(/const\s+version\s*=\s*'([^']+)'/) || [])[1];
+    const gameLoaderVersion = (gameLoaderContent.match(/const\s+version\s*=\s*(['"])([^'"]+)\1/) || [])[2];
 
     // gallery-loader.js hardcoded version
     const galleryLoaderPath = path.join(__dirname, 'assets/js/loaders/gallery-loader.js');
     const galleryLoaderContent = fs.readFileSync(galleryLoaderPath, 'utf8');
-    const galleryLoaderVersion = (galleryLoaderContent.match(/const\s+version\s*=\s*'([^']+)'/) || [])[1];
+    const galleryLoaderVersion = (galleryLoaderContent.match(/const\s+version\s*=\s*(['"])([^'"]+)\1/) || [])[2];
 
     // modules/config.js ASSET_VERSION
     const modulesConfigPath = path.join(__dirname, 'assets/js/modules/config.js');
     const modulesConfigContent = fs.readFileSync(modulesConfigPath, 'utf8');
-    const assetVersion = (modulesConfigContent.match(/ASSET_VERSION\s*=\s*'([^']+)'/) || [])[1];
+    const assetVersion = (modulesConfigContent.match(/ASSET_VERSION\s*=\s*(['"])([^'"]+)\1/) || [])[2];
 
     const versions = { 'loaders/config.js(LoaderConfig)': loaderVersion, 'game-loader.js': gameLoaderVersion, 'gallery-loader.js': galleryLoaderVersion, 'modules/config.js(ASSET_VERSION)': assetVersion };
+    for (const [label, value] of Object.entries(versions)) {
+        if (!value) errors.push('[VERSION_SYNC] JS version missing: ' + label);
+    }
     const uniqueVersions = new Set(Object.values(versions).filter(Boolean));
     if (uniqueVersions.size > 1) {
         const detail = Object.entries(versions).map(([k, v]) => k + '=' + v).join(', ');
