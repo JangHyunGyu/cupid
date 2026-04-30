@@ -28,29 +28,29 @@ print(f"Reference: {ref_path}")
 
 expressions = {
     "dain_shy": (
-        "Edit this anime character's expression. Change to a subtle shy look: "
-        "eyes looking slightly down and to the side, light pink blush on both cheeks, "
-        "small nervous smile, hands brought together in front of body fidgeting. "
-        "Not overly dramatic - just a gentle subtle shyness. "
-        "Keep same outfit ETAURS 19, same magenta pink background, same body, same art style. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정을 편집한다. 은근히 수줍은 표정으로 변경한다: "
+        "눈은 살짝 아래와 옆을 바라보고, 양볼에는 옅은 분홍빛 홍조, "
+        "작고 긴장한 미소, 양손은 몸 앞에 모아 어색하게 꼼지락거린다. "
+        "과하게 극적이지 않게, 부드럽고 은근한 수줍음으로 표현한다. "
+        "같은 ETAURS 19번 의상, 같은 마젠타 핑크 배경, 같은 몸, 같은 아트 스타일을 유지한다. "
+        "1024x1024로 한 장 출력한다."
     ),
     "dain_active": (
-        "Edit this anime character's expression and pose. Change to: "
-        "both arms raised overhead in a volleyball spike jumping pose, "
-        "intense focused eyes with fighting spirit, hair blowing upward from jump, "
-        "sweat on forehead and neck, skin flushed from exercise, uniform damp. "
-        "No ball, no volleyball, no equipment in the image. "
-        "Keep same outfit ETAURS 19, same magenta pink background, same body, same art style. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. "
+        "양팔을 머리 위로 올린 배구 스파이크 점프 포즈, "
+        "투지가 담긴 강렬하고 집중된 눈빛, 점프로 인해 위로 날리는 머리카락, "
+        "이마와 목의 땀, 운동으로 상기된 피부, 살짝 젖은 유니폼으로 변경한다. "
+        "이미지 안에 공, 배구공, 장비는 넣지 않는다. "
+        "같은 ETAURS 19번 의상, 같은 마젠타 핑크 배경, 같은 몸, 같은 아트 스타일을 유지한다. "
+        "1024x1024로 한 장 출력한다."
     ),
     "dain_sweat": (
-        "Edit this anime character's expression only. Change to: "
-        "one cold sweat drop on temple, holding a white towel near face with one hand, "
-        "embarrassed blushing cheeks, trying to smile but lips trembling slightly, "
-        "eyes showing unusual nervousness. Keep the same framing showing upper body to mid-thigh. "
-        "Keep same outfit ETAURS 19, same magenta pink background, same body, same art style. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정만 편집한다. "
+        "관자놀이에 식은땀 한 방울, 한 손으로 얼굴 근처에 흰 수건을 들고 있음, "
+        "당황해서 붉어진 볼, 웃으려 하지만 입술이 살짝 떨리는 모습, "
+        "평소와 다른 긴장감이 보이는 눈으로 변경한다. 상반신부터 허벅지 중간까지 보이는 같은 구도를 유지한다. "
+        "같은 ETAURS 19번 의상, 같은 마젠타 핑크 배경, 같은 몸, 같은 아트 스타일을 유지한다. "
+        "1024x1024로 한 장 출력한다."
     ),
 }
 

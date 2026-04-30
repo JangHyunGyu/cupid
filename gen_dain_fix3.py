@@ -19,27 +19,27 @@ with open(ref_path, "rb") as f:
 
 expressions = {
     "dain_pout": (
-        "Edit this anime character's expression and pose. Change to: "
-        "eyes looking sideways with annoyed glance, lips pushed out in a cute pout, "
-        "both cheeks slightly puffed, arms crossed over chest, head slightly turned away. "
-        "Natural competitive athlete pouting, not overdone. "
-        "CRITICAL: Keep the black arm sleeve ONLY on the LEFT arm. Right arm must be completely bare. "
-        "DO NOT change body shape. Keep same flat even lighting. "
-        "Keep same outfit ETAURS 19, same magenta pink background. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. "
+        "눈은 짜증 섞인 곁눈질로 옆을 바라보고, 입술은 귀엽게 삐죽 내밀며, "
+        "양볼은 살짝 부풀리고, 팔짱을 끼고, 고개는 살짝 돌린 자세로 변경한다. "
+        "승부욕 있는 운동선수다운 자연스러운 삐침으로 표현하고 과하게 하지 않는다. "
+        "중요: 검은 암슬리브는 왼팔에만 유지한다. 오른팔은 완전히 맨팔이어야 한다. "
+        "몸매는 바꾸지 않는다. 같은 평평하고 균일한 조명을 유지한다. "
+        "같은 ETAURS 19번 의상, 같은 마젠타 핑크 배경을 유지한다. "
+        "1024x1024로 한 장 출력한다."
     ),
     "dain_active": (
-        "Edit this anime character's expression and pose. Change to: "
-        "one arm raised in a volleyball spike attack pose with the other arm pulled back, upper body action pose, "
-        "intense focused eyes looking forward, hair slightly messy from movement, "
-        "sweat on forehead and neck, skin flushed from exercise, "
-        "uniform visibly damp and clinging to body from sweat, wet fabric texture on the uniform. "
-        "CRITICAL: The entire character must fit within the frame with margin on all sides. "
-        "Do NOT crop or cut off the head, hair, arms, or any body part at the edges. "
-        "Keep the black arm sleeve ONLY on the LEFT arm. Right arm completely bare. "
-        "DO NOT change body shape. Keep same flat even lighting. "
-        "Keep same outfit ETAURS 19, same magenta pink background. No ball. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈를 편집한다. "
+        "한 팔은 배구 스파이크 공격 자세로 들어 올리고 다른 팔은 뒤로 당긴 상반신 액션 포즈, "
+        "앞을 바라보는 강렬하고 집중된 눈빛, 움직임으로 살짝 헝클어진 머리, "
+        "이마와 목의 땀, 운동으로 상기된 피부, "
+        "땀으로 젖어 몸에 달라붙는 유니폼과 젖은 천 질감으로 변경한다. "
+        "중요: 전체 캐릭터가 모든 가장자리에 여백을 두고 프레임 안에 들어와야 한다. "
+        "머리, 머리카락, 팔, 신체 일부가 가장자리에서 잘리면 안 된다. "
+        "검은 암슬리브는 왼팔에만 유지하고 오른팔은 완전히 맨팔로 둔다. "
+        "몸매는 바꾸지 않는다. 같은 평평하고 균일한 조명을 유지한다. "
+        "같은 ETAURS 19번 의상, 같은 마젠타 핑크 배경을 유지한다. 공은 넣지 않는다. "
+        "1024x1024로 한 장 출력한다."
     ),
     # dain_sweat already done
 }

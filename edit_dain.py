@@ -32,7 +32,7 @@ payload = {
                 }
             },
             {
-                "text": "Edit ONLY the outfit of this anime character. Replace the volleyball uniform with a navy and white two-piece sports bikini top and bikini bottom. The bikini top is a small triangle sports bra. The bikini bottom is small. Remove the arm sleeve completely, both arms bare. Add small water droplets on skin. DO NOT change the body shape, chest size, waist, hips, or any body proportions at all. Keep the exact same body, face, hair, pose, and magenta pink background. Output at 1024x1024 resolution. Output one single image."
+                "text": "이 애니메이션 캐릭터의 의상만 편집한다. 배구 유니폼을 남색과 흰색 투피스 스포츠 비키니 상의와 하의로 교체한다. 비키니 상의는 작은 삼각형 스포츠 브라 형태이고, 비키니 하의는 작게 한다. 암슬리브는 완전히 제거하여 양팔을 모두 맨팔로 만든다. 피부에는 작은 물방울을 추가한다. 몸매, 가슴 크기, 허리, 골반, 신체 비율은 절대 바꾸지 않는다. 정확히 같은 몸, 얼굴, 머리, 포즈, 마젠타 핑크 배경을 유지한다. 1024x1024 해상도로 한 장만 출력한다."
             }
         ]
     }],

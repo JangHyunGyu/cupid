@@ -19,33 +19,33 @@ with open(ref_path, "rb") as f:
 
 expressions = {
     "dain_active": (
-        "Edit this anime character's expression and pose ONLY. Change to: "
-        "one fist raised in a victory pump pose, intense focused eyes, "
-        "light sweat on forehead, skin slightly flushed from exercise. "
-        "DO NOT change body shape or proportions at all. "
-        "Keep exact same body, chest, waist, hips, same outfit ETAURS 19, "
-        "same magenta pink background, same arm sleeve on left arm. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정과 포즈만 편집한다. "
+        "한쪽 주먹을 들어 올린 승리 포즈, 강렬하고 집중된 눈빛, "
+        "이마의 옅은 땀, 운동으로 살짝 상기된 피부로 변경한다. "
+        "몸매나 신체 비율은 절대 바꾸지 않는다. "
+        "정확히 같은 몸, 가슴, 허리, 골반, 같은 ETAURS 19번 의상, "
+        "같은 마젠타 핑크 배경, 같은 왼팔 암슬리브를 유지한다. "
+        "1024x1024로 한 장 출력한다."
     ),
     "dain_shy": (
-        "Edit this anime character's expression ONLY. Change to: "
-        "eyes looking slightly downward, subtle light pink blush on cheeks, "
-        "small gentle shy smile, slightly nervous posture. "
-        "Keep it subtle and natural, not over the top. "
-        "DO NOT change body shape or proportions at all. "
-        "Keep exact same body, same outfit ETAURS 19, "
-        "same magenta pink background, same arm sleeve on left arm. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정만 편집한다. "
+        "눈은 살짝 아래를 바라보고, 볼에는 은은한 연분홍 홍조, "
+        "작고 부드러운 수줍은 미소, 살짝 긴장한 자세로 변경한다. "
+        "과하지 않게 은근하고 자연스럽게 유지한다. "
+        "몸매나 신체 비율은 절대 바꾸지 않는다. "
+        "정확히 같은 몸, 같은 ETAURS 19번 의상, "
+        "같은 마젠타 핑크 배경, 같은 왼팔 암슬리브를 유지한다. "
+        "1024x1024로 한 장 출력한다."
     ),
     "dain_sweat": (
-        "Edit this anime character's expression ONLY. Change to: "
-        "natural post-workout look, light sweat sheen on skin, "
-        "one small sweat drop on temple, slightly tired but satisfied smile, "
-        "breathing slightly heavy but relaxed. Natural and not exaggerated. "
-        "DO NOT change body shape or proportions at all. "
-        "Keep exact same body, same outfit ETAURS 19, "
-        "same magenta pink background, same arm sleeve on left arm. "
-        "Output at 1024x1024. Output one image."
+        "이 애니메이션 캐릭터의 표정만 편집한다. "
+        "자연스러운 운동 직후의 모습, 피부에 은은한 땀 광택, "
+        "관자놀이의 작은 땀방울 하나, 조금 지쳤지만 만족스러운 미소, "
+        "호흡은 살짝 거칠지만 편안한 느낌으로 변경한다. 자연스럽고 과장되지 않게 표현한다. "
+        "몸매나 신체 비율은 절대 바꾸지 않는다. "
+        "정확히 같은 몸, 같은 ETAURS 19번 의상, "
+        "같은 마젠타 핑크 배경, 같은 왼팔 암슬리브를 유지한다. "
+        "1024x1024로 한 장 출력한다."
     ),
 }
 
