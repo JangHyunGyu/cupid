@@ -1,0 +1,82 @@
+{
+  "project": "cupid",
+  "scanned": {
+    "i18nJsonFiles": 140,
+    "scenarioDayJsFiles": 20,
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "ja",
+      "ko",
+      "pt"
+    ],
+    "jsonStringsByLanguage": {
+      "de": 5001,
+      "en": 5001,
+      "es": 5001,
+      "fr": 5001,
+      "ja": 5001,
+      "ko": 4987,
+      "pt": 4987
+    }
+  },
+  "parseErrors": [],
+  "issueCount": 3,
+  "bySeverity": {
+    "warning": 3
+  },
+  "byKind": {
+    "literal-double-question": 3
+  },
+  "byLanguage": {
+    "es": 1,
+    "ko": 1,
+    "pt": 1
+  },
+  "review": {
+    "actualMojibakeErrors": 0,
+    "notes": [
+      "No replacement characters, UTF-8-as-Latin-1 mojibake, CP949-style Korean mojibake, or foreign-script residue were found in runtime scenario files.",
+      "The remaining findings are literal double question marks inherited from Korean source punctuation and are warnings, not encoding corruption."
+    ]
+  },
+  "issues": [
+    {
+      "severity": "warning",
+      "kind": "literal-double-question",
+      "file": "assets/js/i18n/es/day4_4_night.json",
+      "lang": "es",
+      "node": "wall_dain_2_b",
+      "field": "text",
+      "value": "*no se puede venir al colegio, ¿no??*",
+      "line": 274
+    },
+    {
+      "severity": "warning",
+      "kind": "literal-double-question",
+      "file": "assets/js/i18n/ko/day4_4_night.json",
+      "lang": "ko",
+      "node": "wall_dain_2_b",
+      "field": "text",
+      "value": "*학교 오면 안 되지??*",
+      "line": 274
+    },
+    {
+      "severity": "warning",
+      "kind": "literal-double-question",
+      "file": "assets/js/i18n/pt/day4_4_night.json",
+      "lang": "pt",
+      "node": "wall_dain_2_b",
+      "field": "text",
+      "value": "*Você não pode vir pra escola, né??*",
+      "line": 274
+    }
+  ],
+  "structure": {
+    "keyParityAgainstKo": true,
+    "keyDiffCount": 0,
+    "keyDiffs": []
+  }
+}
