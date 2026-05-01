@@ -608,7 +608,8 @@
             object-fit: contain;
             object-position: bottom;
             filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.65));
-            transform: translateX(-50%);
+            transform: translateX(-50%) scale(var(--hero-scale, 1));
+            transform-origin: bottom center;
             transition: transform 0.3s ease, opacity 0.3s ease;
             opacity: var(--hero-opacity, 0.85);
             z-index: var(--hero-z, 1);
