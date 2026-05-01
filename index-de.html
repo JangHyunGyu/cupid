@@ -415,7 +415,8 @@
             position: fixed;
             top: 20px;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) scale(var(--hero-scale, 1));
+            transform-origin: bottom center;
             z-index: 50;
             background: var(--c-surface-light);
             color: var(--c-text);
@@ -616,7 +617,7 @@
         .title-heroine.pos-1 { --hero-x: 9%; --hero-height: 100%; --hero-opacity: 0.95; }
         .title-heroine.pos-2 { --hero-x: 24%; --hero-height: 100%; --hero-opacity: 0.92; }
         .title-heroine.pos-3 { --hero-x: 39%; --hero-height: 100%; --hero-opacity: 1; --hero-z: 2; }
-        .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 100%; --hero-opacity: 0.9; }
+        .title-heroine.pos-4 { --hero-x: 68%; --hero-height: 100%; --hero-opacity: 0.9; --hero-scale: 0.76; }
         .title-heroine.pos-5 { --hero-x: 84%; --hero-height: 100%; --hero-opacity: 0.94; }
 
         /* Large desktop */
