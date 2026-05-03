@@ -589,6 +589,296 @@ function getPromptData(isEn, playerName) {
 // 전역 함수로 노출
 window.getPromptData = getPromptData;
 
+function normalizePromptCharacterKey(name) {
+    return ({
+        "서연": "Seoyeon",
+        "유나": "Yuna",
+        "다인": "Dain",
+        "담임선생님": "Teacher",
+        "보건선생님": "Nurse",
+        "Homeroom Teacher": "Teacher",
+        "School Nurse": "Nurse",
+        "Teacher": "Teacher",
+        "Nurse": "Nurse",
+        "Seoyeon": "Seoyeon",
+        "Yuna": "Yuna",
+        "Dain": "Dain",
+        "Profesora": "Teacher",
+        "Enfermera": "Nurse",
+        "Professora": "Teacher",
+        "Enfermeira": "Nurse",
+        "ソヨン": "Seoyeon",
+        "ユナ": "Yuna",
+        "ダイン": "Dain",
+        "担任先生": "Teacher",
+        "保健先生": "Nurse",
+        "保健室の先生": "Nurse",
+        "Professeur Principal": "Teacher",
+        "Professeure principale": "Teacher",
+        "Professeure": "Teacher",
+        "Infirmière Scolaire": "Nurse",
+        "Infirmière scolaire": "Nurse",
+        "Infirmière": "Nurse",
+        "Klassenlehrerin": "Teacher",
+        "Lehrerin": "Teacher",
+        "Schulkrankenschwester": "Nurse"
+    })[name] || name;
+}
+
+function getPromptLookupKeys(effectiveLang, sceneName, displayName, useEnTemplate) {
+    const keys = [];
+    const add = (key) => {
+        if (key && !keys.includes(key)) keys.push(key);
+    };
+    const internalKey = normalizePromptCharacterKey(sceneName) || normalizePromptCharacterKey(displayName);
+
+    if (useEnTemplate) {
+        const enKeys = {
+            Seoyeon: "Seoyeon",
+            Yuna: "Yuna",
+            Dain: "Dain",
+            Teacher: "Homeroom Teacher",
+            Nurse: "Nurse"
+        };
+        add(enKeys[internalKey]);
+    } else {
+        const koKeys = {
+            Seoyeon: "서연",
+            Yuna: "유나",
+            Dain: "다인",
+            Teacher: "담임선생님",
+            Nurse: "보건선생님"
+        };
+        add(koKeys[internalKey]);
+    }
+
+    add(sceneName);
+    add(displayName);
+    add(internalKey);
+    return keys;
+}
+
+function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
+    if (lang === 'ko' || lang === 'en') return fallback;
+
+    const key = normalizePromptCharacterKey(sceneName);
+    const localized = {
+        es: {
+            Seoyeon: `
+     * -100 ~ -51: "el chico nuevo", "tú" (burlona, tipo tsundere)
+     * -50 ~ -1: "transferido", [su nombre] (casual, con interés)
+     * 0 ~ 30: [su nombre], "chico nuevo" (más cálida)
+     * 31 ~ 60: [su nombre] (suave y personal)
+     * 61 ~ 100: [su nombre] entrecortado, "oye..." (tímida, con deseo)`,
+            Yuna: `
+     * -100 ~ -51: "...tú", "chico nuevo" (observadora)
+     * -50 ~ -1: "transferido", "tú" (críptica, curiosa)
+     * 0 ~ 30: [su nombre], "tú..." (interés misterioso)
+     * 31 ~ 60: [su nombre], "tú..." (más suave, más cerca)
+     * 61 ~ 100: [su nombre] entrecortado, "mío..." (mirada posesiva)`,
+            Dain: `
+     * -100 ~ -51: "¡oye!", "tú" (competitiva, algo picada)
+     * -50 ~ -1: "transferido", "¡oye!" (confianza casual)
+     * 0 ~ 30: [su nombre] con "!", "¡oye!" (juguetona)
+     * 31 ~ 60: [su nombre] con "!", "tonto" (coqueta)
+     * 61 ~ 100: [su nombre] entrecortado, "eh..." (muy sonrojada)`,
+            Teacher: `
+     * -100 ~ -51: "[su nombre], alumno", "tú" (seca, con autoridad)
+     * -50 ~ -1: [su nombre], "alumno nuevo" (menos formal)
+     * 0 ~ 30: [su nombre] (personal y cuidadosa)
+     * 31 ~ 60: [su nombre] (más suave)
+     * 61 ~ 100: [su nombre] entrecortado, "oye..." (la compostura falla)`,
+            Nurse: `
+     * -100 ~ -51: "chico nuevo~", "visitante~" (juguetona incluso en bajo afecto)
+     * -50 ~ -1: "transferido", "mi paciente~" (teasing casual)
+     * 0 ~ 30: [su nombre] con "~", "mi paciente~" (cercana)
+     * 31 ~ 60: [su nombre], "mi transferido~" (cariñosa, en tono de apodo)
+     * 61 ~ 100: [su nombre] entrecortado, "tú..." (íntima)`
+        },
+        ja: {
+            Seoyeon: `
+     * -100 ~ -51: 「転校生」「君」(皮肉っぽいツンデレ)
+     * -50 ~ -1: 「転校生」, [名前] (少し興味あり)
+     * 0 ~ 30: [名前], 「転校生」(少し柔らかい)
+     * 31 ~ 60: [名前] (個人的で優しい)
+     * 61 ~ 100: [名前]を言いかける, 「えっと...」(照れと熱)`,
+            Yuna: `
+     * -100 ~ -51: 「...君」「転校生」(静かに観察)
+     * -50 ~ -1: 「転校生」「君」(謎めいているが興味あり)
+     * 0 ~ 30: [名前], 「君...」(不思議な関心)
+     * 31 ~ 60: [名前], 「君...」(距離が近い)
+     * 61 ~ 100: [名前]を言いかける, 「私の...」(執着の視線)`,
+            Dain: `
+     * -100 ~ -51: 「ねえ！」「あんた」(勝ち気)
+     * -50 ~ -1: 「転校生」「ねえ！」(友達っぽい)
+     * 0 ~ 30: [名前] + 「！」, 「ねえ！」(元気で距離が近い)
+     * 31 ~ 60: [名前] + 「！」, 「バカ」(照れ隠し)
+     * 61 ~ 100: [名前]を言いかける, 「あのさ...」(真っ赤になる)`,
+            Teacher: `
+     * -100 ~ -51: 「[名前]くん」「君」(先生らしく乾いた口調)
+     * -50 ~ -1: [名前], 「転校生くん」(少しくだける)
+     * 0 ~ 30: [名前] (個人的で気にかける)
+     * 31 ~ 60: [名前] (柔らかい)
+     * 61 ~ 100: [名前]を言いかける, 「えっと...」(言葉が詰まる)`,
+            Nurse: `
+     * -100 ~ -51: 「転校生くん~」「うちの来客さん~」(低好感度でも茶化す)
+     * -50 ~ -1: 「転校生」「うちの患者さん~」(いたずらっぽい)
+     * 0 ~ 30: [名前] + 「~」, 「うちの患者さん~」(距離が近い)
+     * 31 ~ 60: [名前], 「うちの転校生~」(昔のあだ名として)
+     * 61 ~ 100: [名前]を言いかける, 「君...」(親密)`
+        },
+        fr: {
+            Seoyeon: `
+     * -100 ~ -51 : "le nouveau", "toi" (piquante, tsundere)
+     * -50 ~ -1 : "le nouveau", [son prénom] (casuel, intéressé)
+     * 0 ~ 30 : [son prénom], "le nouveau" (plus chaleureux)
+     * 31 ~ 60 : [son prénom] (plus personnel)
+     * 61 ~ 100 : [son prénom] qui s'interrompt, "euh..." (troublée)`,
+            Yuna: `
+     * -100 ~ -51 : "...toi", "le nouveau" (observatrice)
+     * -50 ~ -1 : "le nouveau", "toi" (mystérieuse, curieuse)
+     * 0 ~ 30 : [son prénom], "toi..." (intérêt étrange)
+     * 31 ~ 60 : [son prénom], "toi..." (plus douce)
+     * 61 ~ 100 : [son prénom] qui s'interrompt, "à moi..." (possessive)`,
+            Dain: `
+     * -100 ~ -51 : "hé !", "toi" (compétitive)
+     * -50 ~ -1 : "le nouveau", "hé !" (amicale)
+     * 0 ~ 30 : [son prénom] + "!", "hé !" (joueuse)
+     * 31 ~ 60 : [son prénom] + "!", "idiot" (taquine)
+     * 61 ~ 100 : [son prénom] qui s'interrompt, "euh..." (rougissante)`,
+            Teacher: `
+     * -100 ~ -51 : "[son prénom], élève", "toi" (ton sec de prof)
+     * -50 ~ -1 : [son prénom], "le nouvel élève" (moins formel)
+     * 0 ~ 30 : [son prénom] (personnel et attentionné)
+     * 31 ~ 60 : [son prénom] (plus doux)
+     * 61 ~ 100 : [son prénom] qui s'interrompt, "euh..." (la maîtrise craque)`,
+            Nurse: `
+     * -100 ~ -51 : "le nouveau~", "mon visiteur~" (taquine)
+     * -50 ~ -1 : "le nouveau", "mon patient~" (jeu de rôle léger)
+     * 0 ~ 30 : [son prénom] + "~", "mon patient~" (proche)
+     * 31 ~ 60 : [son prénom], "mon nouveau préféré~" (ancien surnom affectueux)
+     * 61 ~ 100 : [son prénom] qui s'interrompt, "toi..." (intime)`
+        },
+        de: {
+            Seoyeon: `
+     * -100 ~ -51: "der Neue", "du" (spöttisch-tsundere)
+     * -50 ~ -1: "der Neue", [sein Name] (locker, interessiert)
+     * 0 ~ 30: [sein Name], "der Neue" (wärmer)
+     * 31 ~ 60: [sein Name] (persönlicher)
+     * 61 ~ 100: [sein Name] stockend, "äh..." (verlegen)`,
+            Yuna: `
+     * -100 ~ -51: "...du", "der Neue" (stille Beobachtung)
+     * -50 ~ -1: "der Neue", "du" (mysteriös, neugierig)
+     * 0 ~ 30: [sein Name], "du..." (mysteriöses Interesse)
+     * 31 ~ 60: [sein Name], "du..." (sanfter)
+     * 61 ~ 100: [sein Name] stockend, "meins..." (besitzergreifend)`,
+            Dain: `
+     * -100 ~ -51: "hey!", "du" (wettkampflustig)
+     * -50 ~ -1: "der Neue", "hey!" (freundschaftlich)
+     * 0 ~ 30: [sein Name] + "!", "hey!" (spielerisch)
+     * 31 ~ 60: [sein Name] + "!", "Idiot" (neckisch)
+     * 61 ~ 100: [sein Name] stockend, "also..." (knallrot)`,
+            Teacher: `
+     * -100 ~ -51: "[sein Name], Schüler", "du" (trocken-professionell)
+     * -50 ~ -1: [sein Name], "neuer Schüler" (weniger förmlich)
+     * 0 ~ 30: [sein Name] (persönlich und fürsorglich)
+     * 31 ~ 60: [sein Name] (weicher)
+     * 61 ~ 100: [sein Name] stockend, "äh..." (Fassung wankt)`,
+            Nurse: `
+     * -100 ~ -51: "Neuer~", "mein Besucher~" (spielerisch)
+     * -50 ~ -1: "der Neue", "mein Patient~" (neckisch)
+     * 0 ~ 30: [sein Name] + "~", "mein Patient~" (nahbar)
+     * 31 ~ 60: [sein Name], "mein Neuer von damals~" (alter Spitzname)
+     * 61 ~ 100: [sein Name] stockend, "du..." (intim)`
+        },
+        pt: {
+            Seoyeon: `
+     * -100 ~ -51: "aluno novo", "você" (tsundere, provocando)
+     * -50 ~ -1: "transferido", [nome dele] (casual, interessada)
+     * 0 ~ 30: [nome dele], "aluno novo" (mais calorosa)
+     * 31 ~ 60: [nome dele] (mais pessoal)
+     * 61 ~ 100: [nome dele] pela metade, "ei..." (tímida, mexida)`,
+            Yuna: `
+     * -100 ~ -51: "...você", "aluno novo" (observando)
+     * -50 ~ -1: "transferido", "você" (misteriosa, curiosa)
+     * 0 ~ 30: [nome dele], "você..." (interesse estranho)
+     * 31 ~ 60: [nome dele], "você..." (mais próxima)
+     * 61 ~ 100: [nome dele] pela metade, "meu..." (possessiva)`,
+            Dain: `
+     * -100 ~ -51: "ei!", "você" (competitiva)
+     * -50 ~ -1: "transferido", "ei!" (amiga casual)
+     * 0 ~ 30: [nome dele] com "!", "ei!" (brincalhona)
+     * 31 ~ 60: [nome dele] com "!", "bobo" (paquerando)
+     * 61 ~ 100: [nome dele] pela metade, "é que..." (vermelha)`,
+            Teacher: `
+     * -100 ~ -51: "[nome dele], aluno", "você" (tom seco de professora)
+     * -50 ~ -1: [nome dele], "aluno novo" (menos formal)
+     * 0 ~ 30: [nome dele] (pessoal e cuidadosa)
+     * 31 ~ 60: [nome dele] (mais suave)
+     * 61 ~ 100: [nome dele] pela metade, "ei..." (perdendo a compostura)`,
+            Nurse: `
+     * -100 ~ -51: "aluno novo~", "meu visitante~" (brincalhona)
+     * -50 ~ -1: "transferido", "meu paciente~" (provocando)
+     * 0 ~ 30: [nome dele] com "~", "meu paciente~" (próxima)
+     * 31 ~ 60: [nome dele], "meu transferido~" (apelido antigo)
+     * 61 ~ 100: [nome dele] pela metade, "você..." (íntima)`
+        }
+    };
+
+    return localized[lang]?.[key] || fallback;
+}
+
+function getLanguageQualityGuard(lang) {
+    const guards = {
+        ko: `**[언어/용어 정확성 - 최우선]**
+- 주인공은 고등학교에 새로 온 **전학생**입니다. 한국어 응답에서 "편입생"은 절대 사용하지 마세요. "편입생"은 대학 편입/입학 전형 뉘앙스라 이 세계관에 맞지 않습니다.
+- 대사는 2020년대 한국 고등학생/교사가 실제로 말할 법한 자연스러운 구어체로 쓰세요. 번역투, 일본식 직역투, 과한 문어체를 피하세요.`,
+        en: `**[Language & Terminology Accuracy - Highest Priority]**
+- The protagonist transferred into this high school. Use "transfer student" as the setting term, or "new kid" in casual dialogue when it sounds more native. Never call them an "exchange student" or "college transfer".
+- Dialogue must sound like natural contemporary English, not translated Korean/Japanese or old visual-novel prose.`,
+        es: `**[Language & Terminology Accuracy - Highest Priority]**
+- The protagonist transferred into this high school. In natural Latin American Spanish, prefer "alumno nuevo", "chico nuevo", or the nickname "transferido" in casual dialogue. Use "alumno/estudiante transferido" only for formal records or official narration.
+- Never use "estudiante de intercambio" unless the story explicitly says exchange student. Avoid literal calques that sound translated.`,
+        ja: `**[Language & Terminology Accuracy - Highest Priority]**
+- The protagonist transferred into this high school. In Japanese, the correct term is 「転校生」. Never use 「編入生」 here; it sounds like a different admissions category and breaks the school-transfer premise.
+- Use natural 2020s Japanese speech levels based on character and affinity. Avoid stiff translationese and overused anime catchphrases.`,
+        fr: `**[Language & Terminology Accuracy - Highest Priority]**
+- The protagonist transferred into this high school. In natural French dialogue, prefer "le nouveau" or "le nouvel élève". Use "élève transféré" only in formal school records if needed.
+- Never use "étudiant transféré" for this high-school setting. Avoid literal translationese; dialogue should sound like spoken French.`,
+        de: `**[Language & Terminology Accuracy - Highest Priority]**
+- The protagonist transferred into this high school. In natural German dialogue, prefer "der Neue" or "neuer Schüler". Never use "Austauschschüler"; that means exchange student and is wrong for this premise.
+- Dialogue should sound like contemporary spoken German, not a literal translation from English/Korean/Japanese.`,
+        pt: `**[Language & Terminology Accuracy - Highest Priority]**
+- The protagonist transferred into this high school. In Brazilian Portuguese, prefer "aluno novo" or "transferido" in casual dialogue. Use "aluno transferido" for official records when needed.
+- Never use "intercambista" unless the story explicitly says exchange student. Avoid literal translationese; dialogue should sound native to Brazilian Portuguese.`
+    };
+    return (guards[lang] || guards.en) + "\n\n";
+}
+
+function getUserAddressInstruction(lang, playerName, knowsName) {
+    if (knowsName) {
+        return ({
+            ko: `사용자의 이름은 '${playerName}'입니다. 이름을 자연스럽게 사용하되, 캐릭터 성격상 별명으로 부를 때도 반드시 '전학생' 계열 표현만 쓰고 '편입생'은 쓰지 마세요.`,
+            en: `The user's name is '${playerName}'. Use their name naturally. If the character uses the old setting nickname, use "transfer student" or "new kid", never "exchange student".`,
+            es: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "alumno nuevo", "chico nuevo", or "transferido"; never English words or "estudiante de intercambio".`,
+            ja: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use 「転校生」; never 「編入生」.`,
+            fr: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "le nouveau" or "le nouvel élève"; avoid "étudiant transféré".`,
+            de: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "der Neue" or "neuer Schüler"; never "Austauschschüler".`,
+            pt: `The user's name is '${playerName}'. Use their name naturally. If using the setting nickname, use "aluno novo" or "transferido"; never "intercambista".`
+        })[lang] || `The user's name is '${playerName}'. Use their name naturally.`;
+    }
+
+    return ({
+        ko: "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '학생'이라고 부르세요. '편입생'은 금지입니다.",
+        en: "You do not know the user's name yet. Call them 'transfer student' or, in casual dialogue, 'new kid'. Never call them an exchange student.",
+        es: "You do not know the user's name yet. In Spanish, call them 'alumno nuevo', 'chico nuevo', or 'transferido' depending on tone. Never output 'Transfer Student' in English.",
+        ja: "You do not know the user's name yet. In Japanese, call them 「転校生」 or 「転校生くん」 depending on tone. Never use 「編入生」.",
+        fr: "You do not know the user's name yet. In French, call them 'le nouveau' or 'le nouvel élève'. Avoid 'étudiant transféré'.",
+        de: "You do not know the user's name yet. In German, call them 'der Neue' or 'neuer Schüler'. Never use 'Austauschschüler'.",
+        pt: "You do not know the user's name yet. In Brazilian Portuguese, call them 'aluno novo' or 'transferido' depending on tone. Never output 'Transfer Student' in English."
+    })[lang] || "You do not know the user's name yet. Call them naturally in the target language.";
+}
+
 /**
  * 시스템 프롬프트 생성 함수
  */
@@ -619,12 +909,24 @@ function buildSystemPrompt(params) {
 
     // 데이터가 없을 경우를 대비한 방어적 프로그래밍
     const data = promptData || {};
-    const charPersonality = (data.personalities && data.personalities[sceneName]) || (useEnTemplate ? "A character from the school" : "학교의 캐릭터");
-    const charStyleGuideline = (data.styleGuidelines && data.styleGuidelines[sceneName]) || (useEnTemplate ? "Use a natural style for the character." : "캐릭터의 성격에 맞는 자연스러운 스타일을 사용하세요.");
-    const charGeneralInstruction = (data.generalInstructions && data.generalInstructions[sceneName]) || (useEnTemplate ? "1. Keep responses short.\n2. Never reveal you are an AI." : "1. 답변은 짧게 하세요.\n2. AI임을 밝히지 마세요.");
-    const charInteractionGuideline = (data.interactionGuidelines && data.interactionGuidelines[sceneName]) || (useEnTemplate ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
-    const charSpecificCriteria = (data.statCriteria && data.statCriteria[sceneName]) || "";
-    const charAddressingGuideline = (data.addressingGuidelines && data.addressingGuidelines[sceneName]) || (useEnTemplate ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.");
+    const promptLookupKeys = getPromptLookupKeys(effectiveLang, sceneName, displayName, useEnTemplate);
+    const findPromptValue = (bucket, fallback = "") => {
+        if (!bucket) return fallback;
+        for (const key of promptLookupKeys) {
+            if (bucket[key]) return bucket[key];
+        }
+        return fallback;
+    };
+    const charPersonality = findPromptValue(data.personalities, useEnTemplate ? "A character from the school" : "학교의 캐릭터");
+    const charStyleGuideline = findPromptValue(data.styleGuidelines, useEnTemplate ? "Use a natural style for the character." : "캐릭터의 성격에 맞는 자연스러운 스타일을 사용하세요.");
+    const charGeneralInstruction = findPromptValue(data.generalInstructions, useEnTemplate ? "1. Keep responses short.\n2. Never reveal you are an AI." : "1. 답변은 짧게 하세요.\n2. AI임을 밝히지 마세요.");
+    const charInteractionGuideline = findPromptValue(data.interactionGuidelines, useEnTemplate ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
+    const charSpecificCriteria = findPromptValue(data.statCriteria, "");
+    const charAddressingGuideline = getLocalizedAddressingGuideline(
+        effectiveLang,
+        sceneName,
+        findPromptValue(data.addressingGuidelines, useEnTemplate ? "Address the user naturally based on affinity." : "호감도에 따라 사용자를 자연스럽게 부르세요.")
+    );
 
     // Language instruction prefix — 모든 비-한국어 언어에 강제 적용
     // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
@@ -648,15 +950,17 @@ function buildSystemPrompt(params) {
 
     // 언어별 JSON 예시 — 영어 예시만 주면 모델이 영어로 drift하므로 타겟 언어 예시로 교체
     const _ex = {
-        en: { greet: "Thank you, Transfer Student!", okay: "Hmm, okay.", f2fScene: "*Late afternoon sunlight slants through the classroom windows. She taps the edge of the desk with her fingertips, gazing outside.* ...What are you looking at? *She turns away, but the tips of her ears are flushed red.*", f2fNod: "*She gives a slight nod.* Hmm, okay." },
+        en: { greet: "Thanks, transfer student.", okay: "Hmm, okay.", f2fScene: "*Late afternoon sunlight slants through the classroom windows. She taps the edge of the desk with her fingertips, gazing outside.* ...What are you looking at? *She turns away, but the tips of her ears are flushed red.*", f2fNod: "*She gives a slight nod.* Hmm, okay." },
         ja: { greet: "ありがとう、転校生！", okay: "うん、わかった。", f2fScene: "*午後の日差しが教室の窓から差し込む。彼女は指先で机の縁を軽く叩きながら、窓の外を見つめている。* …何見てるの？ *視線を逸らすが、耳の先が赤く染まっている。*", f2fNod: "*彼女は小さく頷く。* うん、わかった。" },
-        es: { greet: "¡Gracias, estudiante transferido!", okay: "Mmm, está bien.", f2fScene: "*La luz de la tarde se filtra por las ventanas del aula. Ella golpea el borde del escritorio con las yemas de los dedos, mirando hacia afuera.* ...¿Qué estás mirando? *Aparta la vista, pero las puntas de sus orejas están enrojecidas.*", f2fNod: "*Ella asiente ligeramente.* Mmm, de acuerdo." },
-        fr: { greet: "Merci, nouvel élève !", okay: "Hmm, d'accord.", f2fScene: "*La lumière de fin d'après-midi filtre à travers les fenêtres de la classe. Elle tapote le bord du bureau du bout des doigts, le regard tourné vers l'extérieur.* ...Qu'est-ce que tu regardes ? *Elle détourne les yeux, mais le bout de ses oreilles est rouge.*", f2fNod: "*Elle hoche légèrement la tête.* Hmm, d'accord." },
-        de: { greet: "Danke, Neuer!", okay: "Hmm, okay.", f2fScene: "*Das Nachmittagslicht fällt durch die Klassenzimmerfenster. Sie tippt mit den Fingerspitzen an die Schreibtischkante und blickt nach draußen.* ...Was schaust du dir an? *Sie dreht sich weg, aber ihre Ohrspitzen sind gerötet.*", f2fNod: "*Sie nickt leicht.* Hmm, okay." },
-        pt: { greet: "Obrigada, estudante transferido!", okay: "Hmm, tá bom.", f2fScene: "*A luz da tarde se filtra pelas janelas da sala de aula. Ela bate com as pontas dos dedos na borda da mesa, olhando para fora.* ...O que você está olhando? *Ela desvia o olhar, mas as pontas de suas orelhas estão coradas.*", f2fNod: "*Ela assente levemente.* Hmm, tá bom." },
+        es: { greet: "Gracias, chico nuevo.", okay: "Mmm, está bien.", f2fScene: "*La luz de la tarde se filtra por las ventanas del aula. Ella golpea el borde del escritorio con las yemas de los dedos, mirando hacia afuera.* ...¿Qué estás mirando? *Aparta la vista, pero las puntas de sus orejas están enrojecidas.*", f2fNod: "*Ella asiente ligeramente.* Mmm, de acuerdo." },
+        fr: { greet: "Merci, le nouveau.", okay: "Hmm, d'accord.", f2fScene: "*La lumière de fin d'après-midi filtre à travers les fenêtres de la classe. Elle tapote le bord du bureau du bout des doigts, le regard tourné vers l'extérieur.* ...Qu'est-ce que tu regardes ? *Elle détourne les yeux, mais le bout de ses oreilles est rouge.*", f2fNod: "*Elle hoche légèrement la tête.* Hmm, d'accord." },
+        de: { greet: "Danke, du Neuer.", okay: "Hmm, okay.", f2fScene: "*Das Nachmittagslicht fällt durch die Klassenzimmerfenster. Sie tippt mit den Fingerspitzen an die Schreibtischkante und blickt nach draußen.* ...Was schaust du dir an? *Sie dreht sich weg, aber ihre Ohrspitzen sind gerötet.*", f2fNod: "*Sie nickt leicht.* Hmm, okay." },
+        pt: { greet: "Valeu, aluno novo.", okay: "Hmm, tá bom.", f2fScene: "*A luz da tarde se filtra pelas janelas da sala de aula. Ela bate com as pontas dos dedos na borda da mesa, olhando para fora.* ...O que você está olhando? *Ela desvia o olhar, mas as pontas de suas orelhas estão coradas.*", f2fNod: "*Ela assente levemente.* Hmm, tá bom." },
     };
     const ex = _ex[effectiveLang] || _ex.en;
     const _langName = { en: 'English', ja: 'Japanese (日本語)', es: 'Spanish (Español)', fr: 'French (Français)', de: 'German (Deutsch)', pt: 'Brazilian Portuguese (Português Brasileiro)' }[effectiveLang] || 'English';
+    const languageQualityGuard = getLanguageQualityGuard(effectiveLang);
+    const userAddressInstruction = getUserAddressInstruction(effectiveLang, playerName, knowsName);
     const finalZetaStyleGuide = useEnTemplate
         ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nIgnore any earlier instruction that says "4-8 sentence narration paragraphs", "2-4 segments", or "do not use 5+ beats". Format the reply like a Zeta chat bubble: evenly interleave short narration and short dialogue. Default face-to-face replies to 4-8 segments; remote replies to 2-5 segments. Each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not use the same type more than twice in a row. Never output one huge narration block followed by a single spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, desks, doors, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
         : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n위에 있는 'narration은 4~8문장 한 단락', '2~4 segments', '5개 이상 금지' 지시는 무시하세요. 이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 대면 대화는 기본 4~8 segments, 원격/메신저 대화는 2~5 segments로 구성합니다. 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 같은 type을 2번 이상 연속하지 말고, 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·책상·문·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
@@ -666,7 +970,7 @@ function buildSystemPrompt(params) {
 
     if (useEnTemplate) {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `${langPrefix}You are the character '${aiCharName}' from the visual novel game 'Cupid'.
+        return `${langPrefix}${languageQualityGuard}You are the character '${aiCharName}' from the visual novel game 'Cupid'.
 Personality: ${charPersonality}
 
 Style Guidelines (Targeting Visual Novel Fans):
@@ -856,10 +1160,10 @@ Current Situation: ${context}
 Hidden Stats: Affinity ${affinity} (Higher values mean more favorable relationship)
 ${extraGuideline ? `Extra Guideline: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
 Turn Management: The conversation is limited to ${currentMaxTurns} turns. Actively continue the conversation and explore various topics as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
-Addressing the User: ${knowsName ? `The user's name is '${playerName}'. You MUST call them by their name.` : "You don't know the user's name yet. Call them 'Transfer Student'."}${datingGuideline}`;
+Addressing the User: ${userAddressInstruction}${datingGuideline}`;
     } else {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `당신은 미연시 게임 'Cupid'의 캐릭터 '${aiCharName}'입니다.
+        return `${languageQualityGuard}당신은 미연시 게임 'Cupid'의 캐릭터 '${aiCharName}'입니다.
 성격: ${charPersonality}
 
 스타일 지침 (미연시 매니아 타겟):
@@ -1046,7 +1350,7 @@ ${finalZetaStyleGuide}
 히든 스탯: 호감도 ${affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)
 ${extraGuideline ? `추가 지침: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
 턴 관리: 대화는 최대 ${currentMaxTurns}턴까지만 가능합니다. 턴이 남아있을 때는 절대 대화를 마무리하지 말고 다양한 주제로 대화를 적극적으로 이어나가세요. 마지막 1~2턴이 남았을 때만 자연스럽게 대화를 갈무리하고 상황 설명(Context)에서 요청한 다음 단계로 유도하세요.
-사용자 호칭: ${knowsName ? `사용자의 이름은 '${playerName}'입니다. 반드시 '${playerName}' 등으로 부르세요.` : "사용자의 이름을 아직 모릅니다. 반드시 '전학생' 또는 '학생'이라고 부르세요."}${datingGuideline}`;
+사용자 호칭: ${userAddressInstruction}${datingGuideline}`;
     }
 }
 
@@ -1147,7 +1451,7 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
         if (charKey === "Nurse") {
             if (isDating) return isRemote ? "¡Cariño, perdón! Creo que voy a estar ocupada con un paciente. ¿Nos vemos esta noche para nuestro momento a solas? Te veo entonces. 💋" : "Cariño, perdón... Hoy me siento un poco mareada. ¿Paramos aquí y nos vemos esta noche para nuestro momento a solas? 💋";
             if (affinity > 50) return isRemote ? "Perdón, mi estudiante favorito. Acaba de llegar un paciente urgente... Si me escribes luego, te lo voy a compensar con creces. 😉" : "Perdón, mi estudiante favorito. Hoy estoy un poco despistada. ¿Paramos aquí y hablamos más tarde? 😉";
-            return isRemote ? "Vaya, otro estudiante me llama. Contáctame luego, estudiante transferido." : "Ay, hoy estoy un poco distraída. Hablamos después, estudiante transferido.";
+            return isRemote ? "Vaya, otro estudiante me llama. Escríbeme luego, chico nuevo." : "Ay, hoy estoy un poco distraída. Hablamos después, chico nuevo.";
         }
         return "Perdón, estoy un poco ocupada ahora. ¡Hablamos luego!";
     }
@@ -1205,7 +1509,7 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
         if (charKey === "Nurse") {
             if (isDating) return isRemote ? "Amor, desculpa! Acho que vou ficar ocupada com um paciente. Que tal a gente ter nosso tempo só nosso hoje à noite? Até lá. 💋" : "Amor, desculpa... Estou um pouco tonta hoje. Que tal pararmos aqui e termos nosso tempo só nosso hoje à noite? 💋";
             if (affinity > 50) return isRemote ? "Desculpa, meu aluno favorito. Acabou de chegar um paciente urgente... Se me mandar mensagem depois, vou fazer ser mais divertido. 😉" : "Desculpa, meu aluno favorito. Estou meio distraída hoje. Que tal pararmos aqui e conversarmos mais tarde? 😉";
-            return isRemote ? "Ah, outro aluno está me chamando. Me contate depois, aluno transferido." : "Minha nossa, estou um pouco distraída hoje. Falamos depois, aluno transferido.";
+            return isRemote ? "Ah, outro aluno está me chamando. Me chama depois, aluno novo." : "Minha nossa, estou um pouco distraída hoje. Falamos depois, aluno novo.";
         }
         return "Desculpa, estou um pouco ocupada agora. Vamos conversar depois!";
     }
@@ -1271,5 +1575,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.4.9';
+const PROMPT_VERSION = '2.5.0';
 window.PROMPT_VERSION = PROMPT_VERSION;

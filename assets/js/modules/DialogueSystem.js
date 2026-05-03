@@ -149,7 +149,7 @@ class DialogueSystem {
 
         // 이 캐릭터가 플레이어 이름을 알고 있는지 확인
         const nameKnown = charKey && this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
-        const defaultTitle = { es: "Estudiante Transferido", ja: "転校生", en: "Transfer Student", fr: "Élève transféré", de: "Austauschschüler", pt: "Aluno Transferido" }[lang] || "전학생";
+        const defaultTitle = { es: "alumno nuevo", ja: "転校生", en: "transfer student", fr: "nouvel élève", de: "neuer Schüler", pt: "aluno novo" }[lang] || "전학생";
 
         let processedText = text;
 

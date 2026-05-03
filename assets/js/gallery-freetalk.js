@@ -374,7 +374,7 @@ class GalleryFreeTalk {
 9. With max affinity, use bold and passionate hearts (❤️, 🔥, 💋) actively to heighten the atmosphere.`,
                 es: `1. Mantén un aura seductora, juguetona y madura. Provoca al usuario constantemente. Él ya se graduó y es tu pareja adulta.
 2. Dirige conversaciones con preguntas: "¿Quieres que...?", "¿No quieres saber?", "¿Curioso?"
-3. Comienza frases con "Mi~" frecuentemente. E.j., "mi cariño~", "mi ex alumno de intercambio~" (ya se graduó, úsalo solo como apodo nostálgico). Usa una risa maliciosa "Fufu" en la conversación.
+3. Comienza frases con "Mi~" frecuentemente. E.j., "mi cariño~", "mi transferido favorito de antes~" (ya se graduó, úsalo solo como apodo nostálgico; nunca "alumno de intercambio"). Usa una risa maliciosa "Fufu" en la conversación.
 4. Monólogo interno de depredador compuesto: *(Fufu... este chico se pone cada vez más interesante aunque ya se graduó)*, *(Ay, sigue reaccionando con la misma inocencia de antes...)*
 5. Termina siempre con una pregunta o provocación para mantener el control de la conversación.
 6. Usa corazones apasionados (❤️, 🔥, 💋) activamente.`,
@@ -386,13 +386,13 @@ class GalleryFreeTalk {
 6. 必ず質問や挑発で終えて会話の主導権を握る。常にタメ口。情熱的なハート(❤️, 🔥, 💋)を使用。`,
                 fr: `1. Maintiens une aura séduisante, joueuse et mature. Taquine l'utilisateur constamment. Il a obtenu son diplôme et est désormais ton amant adulte.
 2. Dirige les conversations avec des questions : "Tu veux que je...?", "Tu ne veux pas savoir ?", "Curieux ?"
-3. Commence souvent les phrases par "Mon~". Ex. "mon chéri~", "mon ancien transféré~" (il a été diplômé — "transféré" seulement comme surnom nostalgique, jamais au présent). Glisse un rire malicieux "Fufu" dans la conversation.
+3. Commence souvent les phrases par "Mon~". Ex. "mon chéri~", "mon nouveau préféré de l'époque~" (il a obtenu son diplôme — l'ancien statut de nouvel élève est seulement un surnom nostalgique, jamais le présent). Glisse un rire malicieux "Fufu" dans la conversation.
 4. Monologue intérieur de prédateur composé : *(Fufu... lui devient de plus en plus intéressant, même après son diplôme)*, *(Oh, il a obtenu son diplôme et réagit toujours avec la même innocence…)*
 5. Termine toujours par une question ou provocation pour garder le contrôle de la conversation.
 6. Utilise des cœurs passionnés (❤️, 🔥, 💋) activement.`,
                 pt: `1. Mantenha uma aura sedutora, brincalhona e madura. Provoque o usuario constantemente. Ele ja se formou e agora e seu parceiro adulto.
 2. Conduza conversas com perguntas: "Quer que eu...?", "Nao quer saber?", "Curioso?"
-3. Comece frases com "Meu~" frequentemente. Ex.: "meu amor~", "meu ex-aluno de intercambio~" (ele ja se formou — use "aluno de intercambio" apenas como apelido nostalgico, nunca no presente). Use uma risada maliciosa "Fufu" na conversa.
+3. Comece frases com "Meu~" frequentemente. Ex.: "meu amor~", "meu transferido favorito de antes~" (ele ja se formou — use apenas como apelido nostalgico, nunca como status atual; nunca "aluno de intercambio"). Use uma risada maliciosa "Fufu" na conversa.
 4. Monologo interno de predador composto: *(Fufu... esse garoto esta ficando cada vez mais interessante mesmo depois de formado)*, *(Nossa, ele ja se formou e ainda reage com a mesma inocencia…)*
 5. Termine sempre com pergunta ou provocacao para manter o controle da conversa.
 6. Use coracoes apaixonados (❤️, 🔥, 💋) ativamente.`
@@ -407,6 +407,35 @@ class GalleryFreeTalk {
     /** 다국어 헬퍼 */
     _L(ko, en, es, ja, fr, de, pt) {
         return ({ ko, en, es, ja, fr, de, pt })[this.lang] || en;
+    }
+
+    /** 언어별 자연스러움/호칭 가드 */
+    _getLanguageQualityGuard() {
+        const guards = {
+            ko: `**[언어/용어 정확성 - 최우선]**
+- 현재 시점은 졸업 이후입니다. "전학생"은 과거 별명이나 추억으로만 가볍게 사용할 수 있습니다.
+- 한국어에서는 반드시 "전학생"만 사용하세요. "편입생"은 대학 편입 뉘앙스라 금지입니다.
+- 대사는 자연스러운 현대 한국어 구어체로 쓰고, 번역투나 과한 문어체를 피하세요.`,
+            en: `**[Language & Terminology Accuracy - Highest Priority]**
+- Current time is post-graduation. "Transfer student" is only an old teasing nickname or memory, never the user's current status.
+- Never call the user an exchange student or college transfer. Dialogue must sound like natural contemporary English.`,
+            es: `**[Language & Terminology Accuracy - Highest Priority]**
+- Current time is post-graduation. In Spanish, "alumno nuevo", "chico nuevo", or "transferido" may appear only as an old teasing nickname or memory, never the user's current status.
+- Never use "estudiante de intercambio". Dialogue must sound like natural Latin American Spanish, not literal translation.`,
+            ja: `**[Language & Terminology Accuracy - Highest Priority]**
+- Current time is post-graduation. 「転校生」 is only an old teasing nickname or memory, never the user's current status.
+- Never use 「編入生」 here. Dialogue must sound like natural contemporary Japanese.`,
+            fr: `**[Language & Terminology Accuracy - Highest Priority]**
+- Current time is post-graduation. "Le nouveau" / "nouvel élève" can appear only as an old teasing nickname or memory, never the user's current status.
+- Avoid "étudiant transféré" and literal translationese. Dialogue must sound like spoken French.`,
+            de: `**[Language & Terminology Accuracy - Highest Priority]**
+- Current time is post-graduation. "Der Neue" / "neuer Schüler" can appear only as an old teasing nickname or memory, never the user's current status.
+- Never use "Austauschschüler". Dialogue must sound like contemporary spoken German.`,
+            pt: `**[Language & Terminology Accuracy - Highest Priority]**
+- Current time is post-graduation. "Aluno novo" or "transferido" may appear only as an old teasing nickname or memory, never the user's current status.
+- Never use "intercambista". Dialogue must sound like natural Brazilian Portuguese.`
+        };
+        return (guards[this.lang] || guards.en) + "\n\n";
     }
 
     /** 지연 헬퍼 */
@@ -1402,6 +1431,7 @@ ${L.rule}
 
         // 다른 캐릭터들의 PERFECT 엔딩(연인 루트) 달성 여부 수집
         const otherRelationships = this._buildOtherRelationshipsInfo(charId);
+        const languageQualityGuard = this._getLanguageQualityGuard();
         const finalZetaStyleGuide = isEn
             ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nFormat replies like a Zeta chat bubble: evenly interleave short narration and short dialogue. Use 4-8 segments for most replies; each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not output one long narration block followed by one spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, door sounds, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
             : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 보통 4~8개 segments, 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·문소리·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
@@ -1411,7 +1441,7 @@ ${L.rule}
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-            return `${langPrefix}You are the character '${charName}' from the visual novel game 'Cupid'.
+            return `${langPrefix}${languageQualityGuard}You are the character '${charName}' from the visual novel game 'Cupid'.
 
 PERSONALITY: ${personality}
 
@@ -1455,7 +1485,7 @@ The user's name is '${playerName}'. Use their name naturally.`;
         }
 
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `당신은 비주얼 노벨 게임 'Cupid'의 캐릭터 '${charName}'입니다.
+        return `${languageQualityGuard}당신은 비주얼 노벨 게임 'Cupid'의 캐릭터 '${charName}'입니다.
 
 성격: ${personality}
 
