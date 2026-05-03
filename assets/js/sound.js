@@ -46,6 +46,7 @@ class SoundManager {
 
         // 사용자 상호작용으로 AudioContext 활성화 여부
         this._unlocked = false;
+        this._audioUnavailable = false;
         // 잠금 해제 대기 중인 재생 요청
         this._pendingPlay = null;
     }
@@ -54,11 +55,24 @@ class SoundManager {
      * AudioContext 생성/resume
      */
     _ensureAudioContext() {
+        if (this._audioUnavailable) return null;
         if (!this.audioContext) {
-            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const AudioContextCtor = window.AudioContext || window.webkitAudioContext;
+            if (typeof AudioContextCtor !== 'function') {
+                this._audioUnavailable = true;
+                console.warn("SoundManager: Web Audio API is unavailable in this browser context.");
+                return null;
+            }
+            try {
+                this.audioContext = new AudioContextCtor();
+            } catch (e) {
+                this._audioUnavailable = true;
+                console.warn("SoundManager: AudioContext initialization failed.", e);
+                return null;
+            }
         }
         if (this.audioContext.state === 'suspended') {
-            this.audioContext.resume().catch(() => {});
+            this.audioContext.resume?.().catch(() => {});
         }
         return this.audioContext;
     }
@@ -74,6 +88,11 @@ class SoundManager {
         const unlock = () => {
             console.log("SoundManager: 사용자 상호작용 감지");
             const ctx = this._ensureAudioContext();
+            if (!ctx) {
+                window.removeEventListener('click', unlock);
+                window.removeEventListener('touchstart', unlock);
+                return;
+            }
 
             if (ctx.state === 'running') {
                 this._unlocked = true;
@@ -90,7 +109,7 @@ class SoundManager {
             }
 
             // suspended → running 전환 대기
-            ctx.resume().then(() => {
+            ctx.resume?.().then(() => {
                 if (!this._unlocked && ctx.state === 'running') {
                     this._unlocked = true;
                     window.removeEventListener('click', unlock);
@@ -110,7 +129,7 @@ class SoundManager {
     }
 
     unlock() {
-        this._ensureAudioContext();
+        return this._ensureAudioContext();
     }
 
     /**
@@ -129,6 +148,7 @@ class SoundManager {
         }
 
         const ctx = this._ensureAudioContext();
+        if (!ctx) return null;
 
         this._loadingPromises[path] = (async () => {
             try {
@@ -205,6 +225,7 @@ class SoundManager {
         if (this.currentBgmPath !== path) return;
 
         const ctx = this._ensureAudioContext();
+        if (!ctx) return;
 
         // AudioBufferSourceNode 생성 (메모리에서 직접 재생)
         const sourceNode = ctx.createBufferSource();
@@ -323,6 +344,7 @@ class SoundManager {
         if (!buffer || !this._unlocked) return;
 
         const ctx = this._ensureAudioContext();
+        if (!ctx) return;
         const source = ctx.createBufferSource();
         source.buffer = buffer;
 

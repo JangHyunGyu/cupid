@@ -165,6 +165,7 @@ class MusicRenderer {
         if (window.soundManager && window.soundManager._loadBuffer) {
             try {
                 const ctx = window.soundManager ? soundManager._ensureAudioContext() : null;
+                if (!ctx) return;
                 const buffer = window.soundManager ? await soundManager._loadBuffer(file) : null;
                 if (!buffer || this.currentBgmId !== id) return;
 
