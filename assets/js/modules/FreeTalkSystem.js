@@ -309,6 +309,7 @@ class FreeTalkSystem {
 
         // 캐릭터 정보 수집
         const charKey = this.charNameMap[scene.name] || scene.name;
+        this.freeTalkHistory = this._sanitizeDainOutfitHistory(this.freeTalkHistory, charKey);
         const knowsName = this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
         const charStats = this.stateManager.stats[charKey] || { affinity: 0 };
 
@@ -606,7 +607,7 @@ class FreeTalkSystem {
             const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
             const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}` : '';
             // [슬라이딩 윈도우] system + 누적 요약 주입 + 최근 N개 메시지만 전송 (토큰 폭증 방지)
-            const _windowed = this._buildWindowedHistory();
+            const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(), charKey);
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             const _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_windowed, 5)
@@ -841,11 +842,37 @@ class FreeTalkSystem {
     }
 
     /**
-     * ═══════════════════════════════════════════════════════════════
-     * 🪟 _buildWindowedHistory - 슬라이딩 윈도우
-     * ═══════════════════════════════════════════════════════════════
-     * freeTalkHistory[0](system) + 최근 HISTORY_WINDOW개 메시지만 fetch에 전송.
-     * cupid는 이전엔 무제한 누적이라 장시간 플레이 시 토큰 폭증. 슬라이딩으로 상한 보장.
+     * Normalize stale assistant history for Dain so old school-uniform wording
+     * does not get resent as conversation context.
+     */
+    _sanitizeDainOutfitHistory(messages, charKey) {
+        if (charKey !== 'Dain' || !Array.isArray(messages)) return messages;
+
+        const replacements = [
+            [/교복 자락/g, '배구 유니폼 자락'],
+            [/교복 소매/g, '검정 암슬리브'],
+            [/교복 치마/g, '스포츠 하의'],
+            [/교복/g, '배구 유니폼'],
+            [/school-uniform hem/gi, 'volleyball-jersey hem'],
+            [/school-uniform sleeve/gi, 'black arm sleeve'],
+            [/school skirt/gi, 'sports shorts'],
+            [/school uniform/gi, 'volleyball uniform']
+        ];
+
+        return messages.map((msg) => {
+            if (!msg || msg.role !== 'assistant' || typeof msg.content !== 'string') return msg;
+
+            let content = msg.content;
+            replacements.forEach(([pattern, replacement]) => {
+                content = content.replace(pattern, replacement);
+            });
+
+            return content === msg.content ? msg : { ...msg, content };
+        });
+    }
+
+    /**
+     * Builds a bounded request history: system plus the latest HISTORY_WINDOW messages.
      */
     _buildWindowedHistory() {
         if (!this.freeTalkHistory || this.freeTalkHistory.length === 0) return [];

@@ -16,6 +16,9 @@
  *   - window.GalleryFreeTalk
  */
 
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.1';
+window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
+
 class GalleryFreeTalk {
     /**
      * @param {string} lang - 현재 언어 ('ko','en','es','ja','fr')
@@ -597,6 +600,7 @@ ${L.rule}
 
         // 채팅 기록 로드
         this._loadMemory(charId);
+        this.chatHistory = this._sanitizeDainOutfitHistory(this.chatHistory, charId);
 
         // 시스템 프롬프트 구성
         const systemPrompt = this._buildSystemPrompt(charId);
@@ -865,12 +869,13 @@ ${L.rule}
 
         try {
             // [Explicit Caching] 캐시 키 헤더 추가
-            const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
+            const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : (window.GALLERY_FREETALK_PROMPT_VERSION || '2.5.1');
             const _gftCacheKey = this.currentCharId ? `cupid-gft:${_pv}:${this.lang}:${this.currentCharId}` : '';
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
+            const _historyForRequest = this._sanitizeDainOutfitHistory(this.chatHistory, this.currentCharId);
             const _optimized = (typeof window.optimizeImageHistory === 'function')
-                ? window.optimizeImageHistory(this.chatHistory, 5)
-                : this.chatHistory;
+                ? window.optimizeImageHistory(_historyForRequest, 5)
+                : _historyForRequest;
             const response = await fetch(window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'x-app-type': 'cupid', ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey }) },
@@ -1539,6 +1544,32 @@ ${otherRelationships}
     // =========================================================================
     // 채팅 메모리 (localStorage)
     // =========================================================================
+
+    _sanitizeDainOutfitHistory(messages, charId = this.currentCharId) {
+        if (charId !== 'dain' || !Array.isArray(messages)) return messages;
+
+        const replacements = [
+            [/교복 자락/g, '스웨트셔츠 자락'],
+            [/교복 소매/g, '검정 암슬리브'],
+            [/교복 치마/g, '트레이닝 팬츠'],
+            [/교복/g, '스포티한 일상복'],
+            [/school-uniform hem/gi, 'sweatshirt hem'],
+            [/school-uniform sleeve/gi, 'black arm sleeve'],
+            [/school skirt/gi, 'track pants'],
+            [/school uniform/gi, 'sporty streetwear']
+        ];
+
+        return messages.map((msg) => {
+            if (!msg || msg.role !== 'assistant' || typeof msg.content !== 'string') return msg;
+
+            let content = msg.content;
+            replacements.forEach(([pattern, replacement]) => {
+                content = content.replace(pattern, replacement);
+            });
+
+            return content === msg.content ? msg : { ...msg, content };
+        });
+    }
 
     _loadMemory(charId) {
         try {
