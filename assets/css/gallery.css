@@ -251,8 +251,10 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 60px;
     /* 헤더 높이만큼 상단 마진 */
     padding: 20px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
     min-height: calc(100vh - 60px);
-    /* 최소 높이: 화면 높이 - 헤더 */
+    min-height: calc(100dvh - 60px);
+    /* 최소 높이: 동적 viewport - 헤더, 홈 인디케이터는 padding으로 확보 */
 }
 
 /* 탭 네비게이션 컨테이너 */
