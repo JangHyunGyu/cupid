@@ -722,19 +722,16 @@ ${L.rule}
             if (this.isTyping) this.skipTyping = true;
         });
 
-        // 행동 묘사(*) 토글 버튼
+        // 행동 묘사(*) 버튼: **를 삽입하고 커서를 사이에 둠
         const actionBtn = document.getElementById('action-toggle-btn');
-        let actionMode = false;
         if (actionBtn && input) {
             actionBtn.addEventListener('click', () => {
                 const start = input.selectionStart || 0;
                 const end = input.selectionEnd || 0;
                 const val = input.value;
-                input.value = val.substring(0, start) + '*' + val.substring(end);
-                const newPos = start + 1;
-                input.setSelectionRange(newPos, newPos);
-                actionMode = !actionMode;
-                actionBtn.classList.toggle('active', actionMode);
+                input.value = val.substring(0, start) + '**' + val.substring(end);
+                const cursor = start + 1;
+                input.setSelectionRange(cursor, cursor);
                 input.focus();
             });
         }
