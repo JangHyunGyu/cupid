@@ -44,7 +44,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.0";
+const ASSET_VERSION = "2.9.1";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -364,11 +364,19 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
     if (!charId) return;
     const userId = getCupidDeviceId();
     const playerName = _pn || window.gameEngine?.stateManager?.playerName || '';
+    // 방어선: assistant 응답이 {playerName} 같은 placeholder를 D1에 남기지 않도록 저장 직전 한 번 더 정제.
+    // 이미 정제된 입력에는 영향 없음(idempotent). 사전 정의된 sanitize 헬퍼가 없는 페이지(갤러리 외)도
+    // 안전하게 동작하도록 인라인으로 처리한다.
+    const _sanitize = (text) => {
+        if (typeof text !== 'string' || !text) return text || '';
+        const tokenPattern = /\$\{\s*(?:playerName|userName|username|user|player)\s*\}|\{\{\s*(?:user|player|playerName|userName|username)\s*\}\}|\{\s*(?:playerName|userName|username|user|player)\s*\}|PLAYER_NAME/gi;
+        return text.replace(tokenPattern, playerName || (window.GAME_LANG === 'ko' ? '주인공' : 'Protagonist'));
+    };
     const headers = { 'Content-Type': 'application/json', 'x-app-id': 'cupid' };
     const post = (role, content) => fetch(API_ENDPOINT + 'chat-logs', {
         method: 'POST',
         headers,
-        body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName })
+        body: JSON.stringify({ userId, charId, sessionId, role, content: _sanitize(content), context, playerName })
     }).catch(err => console.warn('[ChatLog] cupid 저장 실패:', err.message));
 
     try {
