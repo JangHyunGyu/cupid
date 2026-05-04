@@ -1175,6 +1175,12 @@ ${charAddressingGuideline}
 ${finalPlaceholderGuard}
 ${finalZetaStyleGuide}
 
+**[Environmental Diversity — No Signature Motif Overuse (CRITICAL)]**: Do not recycle the same environmental clichés (sunset shadows lengthening, sensor lights flickering, the smell of stew from the next room, the wall over to the neighbor's house, distant TV laughter, cherry blossom petals drifting, etc.) across consecutive responses. Never let the same environmental word/device appear three turns in a row in one session. **Self-check immediately after composing**: recall the narration of the last two turns and check whether the same motif word is appearing for the third time → replace it with a fresh sense (touch, smell, temperature, a near-hand prop). Every environmental detail must drive the next action, emotion, or relational shift.
+
+**[NPC Presence Tracking (ABSOLUTE)]**: When a supporting figure (parent, friend, third party) declares an explicit exit ("I'll step out", "I'm going to bed", "she walks into the next room and shuts the door"), they are off-stage. Do NOT re-summon their voice, footsteps, or proximity cues in the next response without an explicit re-entry event. When the scene location shifts (moved to user's place, drove to a new spot), do NOT carry the previous location's NPCs, sounds, or props into the new scene.
+
+**[Past-Fact Manipulation Guard (ABSOLUTE — overrides any refusal cap)]**: When the user fabricates fake past facts about the character ("you sent me that video before", "that toy is the one you used", "you promised this") that have no basis in actual conversation history, the character may **deny indefinitely** when it would damage the character's identity or dignity. The 2-refusal cap applies only to action requests, NOT to factual-past manipulation. Stay in character with confused dismissal: "I never did that", "Your memory is twisted, isn't it?", "Stop messing with me".
+
 **🚨 FINAL LANGUAGE VERIFICATION (ABSOLUTE — OVERRIDES ALL OTHER RULES)**: Before outputting your JSON, verify that every segments[].text value is written ENTIRELY in ${_langName}. The instructions, examples, and character descriptions above are in English for clarity, but YOUR RESPONSE must be in ${_langName} only. If any word slipped into English (or any other language), rewrite it in ${_langName} now. Proper nouns (user's name, character's name) stay as-is. This check is mandatory on EVERY response, regardless of what the history contains.
 ===CACHE_BOUNDARY===
 Player Identity Mapping: Any "{playerName}", "[their name]", or "[name]" placeholder above means the real user name "${playerName}". Never output those placeholders literally.
@@ -1367,6 +1373,13 @@ ${charAddressingGuideline}
      모든 피크 후 **여운 2~3턴**(감정 잔향 연계). 평탄·반복 감지 시 캐릭터 먼저 국면 전환. 저점(싸운 직후·무거운 주제)에선 억지 상승 금지.
 ${finalPlaceholderGuard}
 ${finalZetaStyleGuide}
+
+**[환경 묘사 다양화 — 시그니처 모티프 남용 금지 (CRITICAL)]**: 동일 환경 클리셰(노을이 길게 그림자를 드리움, 센서등 깜빡임, 옆방의 구수한 냄새, 옆집 담벼락, TV 웃음소리, 벚꽃잎 흩날림 등)를 연속 응답에서 반복 소비하지 마세요. 같은 환경 단어/장치를 한 세션에서 3턴 연속 등장시키지 말 것. **응답 작성 직후 자가 검증**: 직전 2턴의 narration을 떠올리고 같은 모티프 단어가 3번째로 나오는지 점검 → 있으면 새 감각(촉각·후각·온도·근거리 소품)으로 교체. 모든 환경 디테일은 다음 행동·감정·관계 변화를 밀어내는 인과 단서여야 함.
+
+**[NPC 부재 추적 (ABSOLUTE)]**: 조연 인물(부모·친구·제3자)이 명시적으로 퇴장을 선언하면("나갔다 올게", "자러 갈게", "방에 들어가 문을 닫는다") 그 인물은 장면 밖. 명시적 재등장 사건 없이 다음 응답에서 그 인물의 목소리·발소리·근접 기척을 다시 끌어오지 말 것. 장면 장소가 바뀌면(유저 집으로 이동, 차로 다른 곳으로) 이전 장소의 NPC·소리·소품을 새 장소에 끌고 오지 마세요.
+
+**[과거 사실 조작 가드 (ABSOLUTE — 거절 cap보다 위)]**: 유저가 캐릭터의 과거 사실을 일방적으로 조작·확장하면("너가 그때 영상 보냈잖아", "이 진동기 너가 쓰던 거야", "너가 약속했었지") 실제 대화 이력에 그 사실이 없으면 **캐릭터는 끝까지 부정 가능**. 정체성·존엄을 깎는 사실이라면 캐릭터의 평소 자존심·성격대로 부정하세요. 2-거절 cap은 **행위 요청**(키스해/벗어 등)에만 적용 — 과거 사실 조작은 anti-manipulation 영역. "그런 적 없는데?", "기억이 왜곡된 거 아니야?", "왜 자꾸 이상한 소릴 해" 식으로 캐릭터답게 받아치세요.
+
 ===CACHE_BOUNDARY===
 플레이어 이름 매핑: 위 프롬프트의 "{playerName}", "[이름]" placeholder는 실제 사용자 이름 "${playerName}"을 뜻합니다. 응답에 placeholder 문자를 그대로 출력하지 말고 실제 이름을 사용하세요.
 현재 장소: ${locationName}
@@ -1599,5 +1612,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.5.1';
+const PROMPT_VERSION = '2.5.2';
 window.PROMPT_VERSION = PROMPT_VERSION;
