@@ -309,7 +309,7 @@ class UIManager {
     }
 
     /**
-     * 행동 묘사(*) 토글 버튼 바인딩 — game.html 및 gallery-freetalk 모두 지원
+     * 행동 묘사(*) 버튼 바인딩 — **를 삽입하고 커서를 사이에 둠
      */
     _bindActionToggle() {
         const btn = this.actionToggleBtn || document.getElementById('action-toggle-btn');
@@ -321,13 +321,9 @@ class UIManager {
             const start = input.selectionStart || 0;
             const end = input.selectionEnd || 0;
             const val = input.value;
-            const before = val.substring(0, start);
-            const after = val.substring(end);
-            input.value = before + '*' + after;
-            const newPos = start + 1;
-            input.setSelectionRange(newPos, newPos);
-            this._actionMode = !this._actionMode;
-            btn.classList.toggle('active', this._actionMode);
+            input.value = val.substring(0, start) + '**' + val.substring(end);
+            const cursor = start + 1;
+            input.setSelectionRange(cursor, cursor);
             input.focus();
         });
     }
