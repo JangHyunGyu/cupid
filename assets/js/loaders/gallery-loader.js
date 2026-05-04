@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-    const version = '2.9.1';
+    const version = '2.9.2';
 
     const scripts = [
         // 0. 모듈 설정 (ASSET_VERSION 등)
