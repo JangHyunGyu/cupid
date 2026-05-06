@@ -9,7 +9,7 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*Le toit. Le coucher de soleil peint l'école en or. Le même endroit où je suis venu pour la première fois au Jour 1.*"
+        "text": "*Le toit. Le coucher de soleil peint l'école. Je peux voir la rambarde où Seoyeon regardait en bas le premier jour.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Je suis nerveux. Mais cette fois, je veux le dire correctement.*",
+        "text": "*Le mémo d'entraînement à la confession se plie et se déplie dans sa paume. Le pli est maintenant à trois couches.*",
         "choices": [
             "Seoyeon. Attends une seconde.",
             "...Le vent est agréable."
@@ -45,7 +45,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "*Je me souviens des mots que je n'ai pas pu dire dans mon ancienne école. Je les ai ressassés des centaines de fois — 'et si je l'avais dit à ce moment-là.' — Cette fois, je me déclare.*"
+        "text": "*Des phrases écrites et effacées dans mon ancienne école me reviennent. Cette fois je n'ai pas sorti mon téléphone de ma poche.*"
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*J'ai dit la même chose le premier jour. À l'époque, c'était sincère. Maintenant, c'est fuir.*"
+        "text": "*Elle a dit la même chose le premier jour. Le doigt de Seoyeon s'arrête au bord de la planchette.*"
     },
     "confess_seo_no_3": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Un coin de lecture secret. Le coucher de soleil filtre par la fenêtre. Le même endroit où je suis venu pour la première fois au Jour 2.*"
+        "text": "*L'annexe de la bibliothèque. Le coin lecture secret. Le coucher de soleil s'infiltre par la fenêtre. Le marque-page de Yuna repose à côté du vieux canapé.*"
     },
     "confess_yuna_3b": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*Cette fois. Quelqu'un est parti avant. Yuna rouvre cette blessure, et pourtant elle me retient.*"
+        "text": "*'Cette fois.' Yuna retient son souffle juste un peu sur ces deux mots. Elle ne lâche pas ma main.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "confess_yuna_no_2": {
         "name": "{name}",
-        "text": "*Yuna lit entre les lignes. Elle saura que ces mots ne sont qu'une fuite.*"
+        "text": "*Yuna hoche la tête. Elle glisse le marque-page entre les pages, puis l'enfonce plus profondément.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Le gymnase. Vide. Le coucher de soleil se déverse par les fenêtres sur le terrain. Le même endroit où nous sommes venus ensemble pour la première fois au Jour 1.*"
+        "text": "*Le gymnase. Vide. Le coucher de soleil teinte le terrain à travers les fenêtres. La ligne du pari du premier jour est encore visible.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*Le sol du gymnase semble trembler. — Je connais le tremblement caché derrière les points d'exclamation de cette personne.*",
+        "text": "*Le ballon de Dain rebondit une fois. La main qui l'aurait normalement attrapée s'arrête en l'air un temps trop tard.*",
         "choices": [
             "Dain. Pose le ballon.",
             "...On en fait une autre ?"
@@ -321,6 +321,6 @@
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*Pas de points d'exclamation. Elle est sérieuse.*"
+        "text": "*Pas de point d'exclamation. Dain ajuste son protège-poignet.*"
     }
 }

@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Elle ne s'est pas arrêtée de marcher. Mais son regard était clairement tourné vers moi. Au moment où Seoyeon a tourné dans le couloir — j'ai cru voir son sourire s'effacer. Une impression ?*"
+        "text": "*Je n'ai pas arrêté de marcher. Juste avant que Seoyeon ne tourne le coin, son sourire s'efface en premier. Le presse-papiers se presse davantage contre sa poitrine.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*On peut revendiquer une personne ? — Mais ça ne me déplaît pas. Et ça, c'est un peu flippant.*"
+        "text": "*Les gens sont-ils des objets à revendiquer ? Le bord du presse-papiers de Seoyeon tape contre le bureau. Je n'ai pas pu dire non tout de suite.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Y en avait sûrement. Peut-être. — Mais c'est pas vraiment la question.*"
+        "text": "*Au lieu de répondre, j'ajuste la bandoulière de mon sac. Dain le voit mais ne pose pas d'autres questions.*"
     },
     "morning2_end": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon est venue vers moi en premier. Son ton habituel, mais avec un besoin de confirmation. Dain jette un coup d'œil depuis le fond de la classe. Elle détourne la tête. Yuna s'enfonce davantage dans son livre. Elle tourne les pages plus vite.*"
+        "text": "*Seoyeon s'est approchée en premier. Le presse-papiers est de nouveau pressé contre l'intérieur de son bras aujourd'hui. Dain jette un coup d'œil depuis le fond de la classe et détourne le regard. Yuna tourne ses pages plus vite.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*J'ai replié le mot et je l'ai gardé dans la main. — Sans raison, il me semblait précieux.*"
+        "text": "*Je plie le mot et le tiens dans ma main. Le pli appuie dans ma paume.*"
     },
     "morning2_break_transition_b": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*J'ai suivi la prof jusqu'à la salle des profs.* *Son bureau est dans le coin. Des papiers et une tasse de café sur le bureau, et — un tiroir légèrement entrouvert. Sur le bureau, une pile de papiers et — du papier à manuscrit.*"
+        "text": "*J'ai suivi la professeure principale jusqu'à la salle des professeurs. Un tiroir d'un bureau dans un coin est légèrement ouvert. Sous une pile de papiers, le bord d'une feuille manuscrite apparaît.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Professeure principale",
@@ -350,7 +350,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*Elle a couvert sa bouche, mais elle tripote sa tasse sans raison. Cette personne aussi le montre quand elle est troublée.*"
+        "text": "*La professeure principale se couvre la bouche avec la tasse à café et fait tourner la soucoupe deux fois au même endroit.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",

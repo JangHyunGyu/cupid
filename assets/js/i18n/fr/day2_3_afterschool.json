@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Son ton est impératif, mais il m'est devenu étrangement familier. — C'est donc ça, sa manière de demander ?*"
+        "text": "*La phrase se termine comme un ordre, mais Seoyeon ne se retourne pas immédiatement. Elle attend pour voir si je vais suivre.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -310,7 +310,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Pas de message de Yuna. Mais mes pieds se dirigent vers la bibliothèque. Pourquoi ? — Pas sûr. Peut-être à cause du mot ce matin.*"
+        "text": "*Aucun message de Yuna. Pourtant, mes pas vont vers la bibliothèque. Le mot plié dans ma poche effleure le dos de ma main à chaque pas.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Une porte ouverte par hasard. — Le 'par hasard' de Yuna est synonyme de 'exprès'. Je m'assieds à côté d'elle. Yuna me tend l'un de ses écouteurs.*"
+        "text": "*La porte est ouverte, comme par hasard. Sur la chaise au fond, une oreillette est déjà posée. Yuna désigne silencieusement la place à côté d'elle d'un mouvement du menton.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -390,7 +390,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Sur mon téléphone, le message de Dain 'Je t'attendais ?' et celui de Seoyeon 'Préviens si ton planning change' arrivent en retard. Pendant qu'on écoute de la musique côte à côte, le coucher de soleil est tombé. — À côté de cette personne, j'ai sans cesse envie de revenir.*"
+        "text": "*Sur mon téléphone, le 'J'attendais, tu sais ?' de Dain et le 'Préviens-moi si ton emploi du temps change' de Seoyeon sont arrivés en retard. Sur le siège où Yuna et moi étions assis côte à côte, une oreillette est encore tiède.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement — je remarque un cahier qui dépasse du tiroir de son bureau. Couverture vert tendre. La page ouverte contient un texte en forme de lettre. 'Yujin, aujourd'hui—' Je n'ai pas le temps d'en lire plus, l'infirmière referme le tiroir.*"
+        "text": "*En vérifiant le bandage, je remarque un cahier vert clair qui dépasse du tiroir du bureau. La première ligne de la page ouverte : 'Yujin, aujourd'hui—' L'infirmière ferme le tiroir.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
@@ -524,7 +524,7 @@
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*Score final : 3-2. Gagné de justesse. Dain se relève — et masse légèrement son genou droit. Je crois qu'elle a fait pareil hier au gymnase. Un geste inconscient.*"
+        "text": "*3:2 à la fin. Une victoire de justesse. Dain se lève et se frotte le genou droit une fois. Son sourire reste le même.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
@@ -532,7 +532,7 @@
     },
     "after2_seo_4_b": {
         "name": "{name}",
-        "text": "*Le mot 'demande' ne semble pas exister dans son vocabulaire.*"
+        "text": "*Au lieu de 'S'il te plaît,' Seoyeon tourne le presse-papiers vers moi. Le haut de la liste de tâches est vide.*"
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "{name}",
-        "text": "*Elle a dit 'compliment' directement. — Ça semble rare venant d'elle.*"
+        "text": "*Seoyeon dit que c'est un compliment, puis retourne directement à ses papiers. Au moment où elle tourne la tête, ses épaules se raidissent—à peine.*"
     },
     "after2_seo_sunset_joke_b": {
         "name": "Seoyeon",
@@ -564,7 +564,7 @@
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*C'est la main de qui ? — C'est la main de Seoyeon sur mon épaule. Mes pensées sont en vrac. C'est dire à quel point je suis tendu.*"
+        "text": "*La main de qui ? C'est la main de Seoyeon qui est sur mon épaule. Je me suis trompé dans l'ordre. Le bout de ses doigts s'arrête aussi un instant sur mon épaule.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",

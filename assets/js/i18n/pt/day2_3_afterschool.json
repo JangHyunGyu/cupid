@@ -57,7 +57,7 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Conferindo o band-aid — reparo num caderno saindo da gaveta. Capa verde-claro. Na página aberta tem algo em formato de carta. 'Yujin, hoje—' Só consegui ler até aí antes da enfermeira fechar a gaveta.*"
+        "text": "*Ao verificar a atadura, noto um caderno verde-claro saindo da gaveta da mesa. A primeira linha da página aberta diz: 'Yujin, hoje—' A enfermeira fecha a gaveta.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermeira",
@@ -150,7 +150,7 @@
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*Placar: 3 a 2. Ganhei por pouco. Dain levanta — e esfrega o joelho direito sem perceber. Acho que fez o mesmo gesto ontem no ginásio. Gesto automático.*"
+        "text": "*3:2 no final. Vitória apertada. Dain se levanta e esfrega o joelho direito uma vez. Seu sorriso permanece o mesmo.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -262,7 +262,7 @@
     },
     "after2_seo_4_b": {
         "name": "{name}",
-        "text": "*A palavra 'por favor' parece não existir no vocabulário dela.*"
+        "text": "*Em vez de 'por favor,' Seoyeon vira a prancheta para mim. O topo da lista de tarefas está em branco.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -278,7 +278,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Tom de ordem, mas de um jeito que já começa a soar familiar. — É esse o jeito dela de pedir?*"
+        "text": "*A frase termina como um comando, mas Seoyeon não se vira imediatamente. Ela espera para ver se vou seguir.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -314,7 +314,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "{name}",
-        "text": "*Falou 'elogio' com todas as letras. — Coisa rara vinda dela. Enquanto organiza, Seoyeon vira o pescoço. Parece travado.*"
+        "text": "*Seoyeon chama de elogio e volta direto a organizar os papéis. No momento em que vira o pescoço, seus ombros enrijecem—só um pouco.*"
     },
     "after2_seo_choice1": {
         "name": "{name}",
@@ -370,7 +370,7 @@
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*A mão de quem? — É a da Seoyeon, no meu ombro. As palavras se inverteram na cabeça. Tô tenso assim.*"
+        "text": "*De quem é a mão? A mão de Seoyeon está no meu ombro. Falei ao contrário. A ponta dos dedos dela também para um instante no meu ombro.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
@@ -454,7 +454,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Nada da Yuna. Mas meus pés tão indo pra biblioteca. Por quê? — Não sei. Talvez por causa do bilhete da manhã.*"
+        "text": "*Nenhuma mensagem de Yuna. Ainda assim, meus pés vão em direção à biblioteca. O bilhete dobrado no meu bolso roça no dorso da minha mão a cada passo.*"
     },
     "after2_yuna_1_b": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Porta aberta 'por acaso'. — O 'por acaso' da Yuna é sinônimo de 'de propósito'. Sento do lado. Yuna me estende um dos fones dela.*"
+        "text": "*A porta está aberta, como que por acaso. Na cadeira lá dentro, um fone de ouvido já está ali. Yuna aponta em silêncio para o assento ao lado dela com o queixo.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -554,7 +554,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Notificações chegaram atrasadas — 'Te esperei, sabia?' da Dain e 'Se mudar de planos, me avisa' da Seoyeon. Sentado do lado da Yuna ouvindo música, o pôr do sol já sumiu. — Perto dela, eu fico querendo voltar.*"
+        "text": "*No meu celular, o 'Estava esperando, sabia?' de Dain e o 'Me avisa se seu horário mudar' de Seoyeon chegaram tarde. No assento onde Yuna e eu estávamos sentados lado a lado, um fone de ouvido ainda está morno.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",

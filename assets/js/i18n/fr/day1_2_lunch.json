@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Le couloir est bondé d'élèves. Trois signaux me parviennent de trois directions en même temps.*"
+        "text": "*Pause déjeuner. Le couloir grouille d'élèves. Un bentô sur le toit, un signe de la main devant la cafétéria, un mot glissé vers la bibliothèque — tout me saute aux yeux en même temps.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Trois chemins. Un choix pareil dès le premier jour. Dans mon ancienne école, je ne choisissais pas. Je remettais à plus tard et je ratais le moment. — Cette fois, non.*"
+        "text": "*Le couloir se divise en trois. Toit, cafétéria, bibliothèque. Au fond de ma poche, le coin de mon téléphone accroche le bout de mes doigts.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*Le toit est propre. Quelques pots de fleurs et une chaise pliante sur le côté. Quelqu’un entretient cet endroit.*"
+        "text": "*Le toit-terrasse est impeccable. Chaque pot garde encore des traces d'arrosage, et les chaises pliantes sont alignées contre le mur à intervalles réguliers.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "{name}",
-        "text": "*Elle joue la décontractée, mais elle semble légèrement vexée.*"
+        "text": "*Seoyeon referme le couvercle de sa boîte à lunch très lentement. Son petit doigt appuie une fois de plus sur le rebord.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*Ce n'est rien, mais mes yeux y reviennent sans cesse.*"
+        "text": "*Le petit doigt de Seoyeon repousse une dernière fois la pointe de ses cheveux.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -298,7 +298,7 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*Je suis Yuna jusqu’à la bibliothèque. Presque personne ne vient ici pendant le déjeuner.*"
+        "text": "*Je suis la silhouette de Yuna jusqu'à la bibliothèque. La sonnerie du déjeuner a retenti depuis un moment, pourtant seule la chaise du comptoir de prêt reste vide, légèrement de travers.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
@@ -306,7 +306,7 @@
     },
     "lunch_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna s’installe dans un coin de la salle de lecture. Ouvre un livre. Je ne suis pas sûr qu’elle sache que je l’ai suivie.*"
+        "text": "*Yuna s'assoit dans le coin le plus reculé de la salle de lecture. Elle ouvre son livre. Quand les pieds de la chaise d'en face effleurent le sol, ses doigts s'immobilisent sur la page.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*Une permission ? On dirait une permission. — Permission conditionnelle. Le silence s'installe. Yuna lit son livre. N'ayant rien à faire, je parcours les rayonnages.*"
+        "text": "*Yuna rouvre son livre. Elle pousse le sac posé sur la chaise d'en face sous le bureau. Je m'assieds à la place libre.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna se lève la première et s'en va. Elle ne se retourne pas. 'C'était bien.' — Sans raison, ça me met de bonne humeur.*"
+        "text": "*Yuna se lève la première et s'en va. Elle ne se retourne pas. « C'était bien. » Ces seuls mots restent posés sur la table.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Quelque chose est glissé sur le bureau de Yuna. Un vieux marque-page. Il y a de l'écriture dessus — mais je n'arrive pas à déchiffrer. Yuna pose inconsciemment sa main dessus. Quelque chose de précieux, peut-être. Je prends un livre au hasard dans les rayonnages et je l'ouvre.*"
+        "text": "*Un vieux marque-page dépasse du livre de Yuna. Quelque chose y est écrit, mais je n'arrive pas à le lire. Sans y penser, Yuna pose la main dessus. Je tire un livre au hasard de l'étagère la plus proche.*"
     }
 }

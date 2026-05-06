@@ -9,7 +9,7 @@
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Thank god, huh. Really? If I'd just spoken up back then — Sojeong wouldn't have had to leave at all.*"
+        "text": "*I look at the last message again — 'Thank goodness lol.' I open the reply field, type nothing, and turn off the screen.*"
     },
     "after_kakao_5": {
         "name": "{name}",
@@ -49,11 +49,11 @@
     },
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Passing by the library when I notice a girl with red eyes walking while reading a book. The tattoos on her arms stand out — but the way she holds the book is surprisingly quiet.*"
+        "text": "*Passing the library entrance, I see a girl with red eyes walking while reading. Her tattooed arm carefully supports the spine of the book.*"
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna stares at the bookmark for a long moment. Like she's checking it for any creases.*"
+        "text": "*Yuna spreads the corner of the bookmark with her thumb and holds it up to the light. No crease.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -89,7 +89,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*She totally waited. — I feel kind of bad. And kind of amused, weirdly enough.*"
+        "text": "*My name is still at the top of Seoyeon's clipboard. The checkbox next to it is still empty.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*The homeroom teacher. Her cardigan is even more rumpled than this morning. Looks like the day put her through the wringer.*"
+        "text": "*It's the homeroom teacher. One sleeve of her cardigan is folded up, and a creased notice sticks out between the pages of the attendance book.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Homeroom Teacher",
@@ -122,7 +122,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*Sounds like a routine check-in, but her eyes are genuinely watching me.*",
+        "text": "*It sounds like a routine question, but the teacher lowers the clipboard and looks at my face.*",
         "choices": [
             "I'm okay. It's a better school than I expected.",
             "Honestly? It's a lot."
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*She disappears down the hallway. Long hair swaying behind her. — I watched her walk away a little longer than I should have.*"
+        "text": "*The teacher disappears down the end of the hallway. Her long hair sways, and the edge of the attendance book sticks out from inside her arms.*"
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
@@ -212,7 +212,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Walking down the hallway when — I start feeling a little dizzy. First-day nerves, probably. There's a 'Nurse's Office' sign on one side of the hallway. A bit too dizzy to just push through.*"
+        "text": "*I'm walking down the hall when — my head spins slightly. When I lean against the wall, the cool paint touches my palm. I see a 'Nurse's Office' sign down the corridor.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*I open the nurse's office door. A faint smell of antiseptic. White curtains, a white bed, a small desk. A woman is sitting at the desk. White coat, a stethoscope around her neck. Her ash-purple bob is neatly styled, and she watches me over her glasses with her chin propped on one hand. She was reading something — and looks up.*"
+        "text": "*I open the infirmary door. Antiseptic smell. White curtains and a bed, a small desk. A woman in a white coat looks at me over her glasses. The stethoscope around her neck brushes the edge of the desk and sways slightly.*"
     },
     "after_nurse_enter_2": {
         "name": "School Nurse",
@@ -276,7 +276,7 @@
     },
     "after_nurse_enter_10": {
         "name": "School Nurse",
-        "text": "That's ancient history. I like it here. At this school, the injuries are all small."
+        "text": "Old story. I like school. Here, when the bell rings, everyone goes back to their classroom."
     },
     "after_nurse_enter_11": {
         "name": "School Nurse",
@@ -298,7 +298,7 @@
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*...What should I say. If I mention I was with Seoyeon, things might get weird.*"
+        "text": "*I type 'with Seoyeon' in the reply box, then delete it. The cursor blinks alone in the first space again.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
@@ -330,7 +330,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
-        "text": "*My fingertips catch on the corner of a paper in the side pocket of my bag. A folded note. I have no idea when it was slipped in there. Yuna's handwriting. 'I saw you on the rooftop at lunch. ...You and the council president looked close.' — Three dots at the end. She swallowed what she really wanted to say.*"
+        "text": "*A folded note is tucked in the bag's side pocket. Yuna's handwriting. 'I saw you at lunch on the rooftop. ...You two looked close.' Three dots are pressed into the bottom of the paper.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -338,7 +338,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*She's smiling. Her fingers tap the clipboard. — Heat creeps up the back of my neck. I look away.*"
+        "text": "*She's smiling. Her fingers tap the clipboard. I look down at the blank reply box.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -378,11 +378,11 @@
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*She slides the papers on her desk aside and looks back at me. Feels like this won't wrap up in a sentence. Apparently it wasn't just a passing pleasantry. She rests her hand on the back of the chair, pausing to choose her words.*"
+        "text": "*The teacher pushes the papers on the desk to one side. She rests her hand on the back of the chair and pauses to choose her words.*"
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
-        "text": "*Something similar? — Does that mean she did something other than teaching before?*"
+        "text": "*Something similar? The teacher's hand briefly hides behind the clipboard.*"
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
@@ -418,7 +418,7 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Two sentences in and she's already steering the conversation. She stands and comes over — smooth, unhurried. Her hand lands on me and I tense up for no reason.*"
+        "text": "*I've barely said a few words and she's already set the pace. The nurse stands and approaches. When the tip of the thermometer touches the back of my hand, my fingers stiffen slightly.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*She says it playfully, but a bit of the tension lifts. I drink the water and look around the nurse's office. A small potted plant sits in one corner.*"
+        "text": "*I say it playfully. While drinking water, I look around the infirmary. In one corner sits a small potted plant.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -466,7 +466,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Just minor injuries.' — There's relief in those words. Ten minutes pass. I get up.*"
+        "text": "*The nurse closes the drawer. A light-green notebook inside is briefly visible, then gone. Ten minutes have passed.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",

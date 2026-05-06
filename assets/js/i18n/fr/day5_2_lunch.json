@@ -61,11 +61,11 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Le coin lecture secret où je suis entré pour la première fois au Jour 2. Un vieux canapé, la lumière de l'après-midi filtrant par la fenêtre.*"
+        "text": "*L'annexe de la bibliothèque. Un vieux canapé, la lumière de l'après-midi par la fenêtre. La même odeur de poussière qu'à ta première visite.*"
     },
     "tour_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna s'assoit sur le canapé. Elle laisse la place à côté d'elle libre. — La même disposition qu'au Jour 2.*"
+        "text": "*Yuna s'assoit sur le canapé. Elle laisse la place à côté d'elle vide. Un endroit où la poussière ne s'est pas déposée.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "tour_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna sort un cahier de son sac. Le même cahier qu'elle s'était fait surprendre avec au Jour 3.*"
+        "text": "*Yuna sort un carnet de son sac. Le même qu'elle a recouvert à la hâte dans le grenier.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Là où on a fait notre premier pari au Jour 1, et où elle a frappé son dernier smash au Jour 4. — Aujourd'hui, les lumières sont allumées.*"
+        "text": "*Le gymnase. Le premier pari et le dernier smash subsistent sur le même terrain. Aujourd'hui les lumières sont allumées.*"
     },
     "tour_dain_2": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Elle le dit sans point d'exclamation. Mais cette fois, ce n'est pas un adieu — c'est un début. La même phrase sans exclamation qu'au Jour 4, mais la température est différente.*"
+        "text": "*Elle parle sans points d'exclamation. Cette fois elle ne baisse pas la tête. La main de Dain repose sur le ballon, pas sur son genou.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",

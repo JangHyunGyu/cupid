@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*No frenó el paso. Pero la mirada iba claramente hacia aquí. Justo cuando Seoyeon dobló al final del pasillo — me pareció que la sonrisa se le apagaba. ¿Habrán sido imaginaciones?*"
+        "text": "*No detuve mi paso. Justo antes de que Seoyeon doble la esquina, su sonrisa se desvanece primero. El portapapeles se presiona más cerca de su pecho.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*¿Desde cuándo una persona se 'aparta'? — Y lo peor es que no me desagrada. Eso sí que da un poco de miedo.*"
+        "text": "*¿Acaso las personas son objetos para reclamar? El borde del portapapeles de Seoyeon golpea contra el escritorio. No pude decir que no de inmediato.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Probablemente sí. Casi seguro. — Aunque no creo que vaya por ahí la cosa.*"
+        "text": "*En lugar de responder, ajusto la correa de mi bolso. Dain lo ve pero no pregunta más.*"
     },
     "morning2_end": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon se acercó ella primero. Tono tranquilo como siempre, pero con algo que busca confirmación. Dain lanza una mirada desde el fondo. Aparta la vista. Yuna se hunde aún más en el libro. Pasa las páginas más rápido.*"
+        "text": "*Seoyeon se acercó primero. El portapapeles está presionado contra el interior de su brazo de nuevo hoy. Dain mira de reojo desde el fondo del aula y se da la vuelta. Yuna pasa las páginas más rápido.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*Doblo la nota y la aprieto en la mano. — Sin venir a cuento, con cuidado.*"
+        "text": "*Doblo la nota y la sostengo en mi mano. El pliegue se presiona contra mi palma.*"
     },
     "morning2_break_transition_b": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Sigo a la profesora hasta la sala.* *Su escritorio está en un rincón. Papeles y una taza de café encima, y — un cajón un poco abierto. Rincón de la sala. Sobre el escritorio, una pila de folios y — lo que parecen cuartillas.*"
+        "text": "*Seguí a la profesora tutora a la sala de profesores. Un cajón en un escritorio de la esquina está ligeramente abierto. Debajo de una pila de papeles, se ve el borde de papel manuscrito.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Profesora",
@@ -350,7 +350,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*Se tapó la boca, pero toquetea la taza sin motivo. A esta también se le nota cuando se apura.*"
+        "text": "*La profesora tutora cubre su boca con la taza de café y gira el platillo dos veces en el mismo lugar.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",

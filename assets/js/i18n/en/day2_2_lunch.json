@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Unlike yesterday, Yuna's note is in my pocket. Down the hall, Seoyeon's heading for the roof with a lunchbox. Dain's waving me toward the snack bar again. Lunch at this school is a war zone.*"
+        "text": "*Lunch. Yuna's note is in my pocket. Down the hallway, Seoyeon heads toward the rooftop with her lunchbox, and Dain waves toward the cafeteria. My feet stop in front of three directions.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "{name}",
-        "text": "*A shadow crosses Yuna's face. I don't know who that 'someone' was, but—*"
+        "text": "*Yuna pushes the bookmark deep inside the book. The page folds after 'I had it.'*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna opens her book. A signal that the conversation is over. I need to change the mood. — Let me brush it off with something light.*"
+        "text": "*Yuna opens the book. The page covers half her face. I bite my lip once.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*I screwed up. Trying to lighten the mood made it sound like I was brushing off her hurt. An awkward silence settles in. Just the sound of pages turning.*"
+        "text": "*Yuna's hand stops on the bookmark. Only the sound of turning pages echoes loudly.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -300,7 +300,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Yuna's 'used to be' is still echoing in my head. What it means that she brought me here — it's slowly starting to land.*"
+        "text": "*Yuna's 'I had it' lingers in my head. I recall the page where the bookmark was placed.*"
     },
     "lunch2_seo_1": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*...That's probably what Dain would say. The triangle between us is getting sharper by the second. — I'm not one of its corners. I'm the one being offered up.*"
+        "text": "*If Dain were here, she'd be laughing out loud right now. Silence hangs between the rooftop door, the lunchbox, and my chopsticks.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -420,11 +420,11 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*She looks a little put out. — But her composure holds perfectly. Classic Seoyeon.*"
+        "text": "*Seoyeon closes the lunchbox lid with the same smiling face. The click is a little loud.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*There's still a smudge on the back of my hand. Seoyeon's composure is flawless — but the corners of her lips have dipped just slightly.*"
+        "text": "*A grain of rice still marks the back of her hand. Seoyeon is smiling, but one corner of her mouth drops first.*"
     },
     "lunch2_dain_1": {
         "name": "{name}",
@@ -501,7 +501,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*Dain's expression subtly stiffens. She takes a bite of crumble bun and turns her head away. — Did I just hurt her?*"
+        "text": "*Dain's expression stiffens. She bites into the soboro and turns her head without chewing.*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
@@ -541,7 +541,7 @@
     },
     "lunch2_dain_13_b": {
         "name": "{name}",
-        "text": "*Dain takes an exaggeratedly big bite of her crumble bun. Like the question she just asked wasn't a big deal.*"
+        "text": "*Dain takes a big bite of the soboro bread. Crumbs fall onto her uniform sleeve.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Same teasing tone as yesterday. But her eyes are already on the cut.*"
+        "text": "*Her tone is the same as yesterday. Only her gaze keeps dropping below her knees.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Same teasing tone. But her eyes are already on the cut.*"
+        "text": "*Her tone remains the same. Only her gaze keeps dropping below her knees.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Checking the bandage — I notice a notebook poking out of her desk drawer. Pale green cover. The open page has something written in letter form. 'Yujin, today—' That's as far as I read before the nurse closes the drawer.*"
+        "text": "*While checking the bandage, I notice a light green notebook sticking out of the desk drawer. The first line on the open page reads: 'Yujin, today—' The nurse closes the drawer.*"
     },
     "lunch2_dain_end_s": {
         "name": "School Nurse",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*As secrets go, it's harmless enough. But the act of sharing it — that means something.*"
+        "text": "*It's not much of a secret, but after saying it, Dain taps the cup noodle lid with her fingernail.*"
     },
     "lunch2_dain_end_u": {
         "name": "School Nurse",
@@ -681,6 +681,6 @@
     },
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
-        "text": "*I could probably come back after school.*"
+        "text": "*One blank space remains on the schedule by the circulation desk. Yuna turns the page without even glancing at it.*"
     }
 }

@@ -90,7 +90,7 @@
     },
     "morning3_classroom_1": {
         "name": "{name}",
-        "text": "*As I enter the classroom, I feel the stares of the other two who saw who I arrived with.*"
+        "text": "*As I enter the classroom, Seoyeon's pen stops, Dain's chair slides back. Yuna places the bookmark on the same page twice.*"
     },
     "morning3_react_seo_1": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     },
     "morning3_react_dain_2": {
         "name": "{name}",
-        "text": "*Yuna is quietly observing. It looks like she's writing a note.*"
+        "text": "*Yuna draws a short line on the corner of the page without lifting her head.*"
     },
     "morning3_date_intro": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "morning3_date_dain_2": {
         "name": "{name}",
-        "text": "*Dain's fingers are tapping the edge of the desk. Is she nervous? — No way. Dain doesn't get nervous. This is just her being her.*"
+        "text": "*Dain's fingers are tapping the edge of the desk. Faster than usual. The chair legs scrape the floor in short bursts.*"
     },
     "morning3_date_dain_choice": {
         "name": "{name}",
@@ -166,7 +166,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "{name}",
-        "text": "*I watch Dain's reaction. — The bell rings, and the short lull right before lunch comes around again. She smiled bright and walked away. — I didn't catch it at the time. That Dain had stopped tapping her fingers, slipped her hand in her pocket. That asking had taken real guts.*"
+        "text": "*Dain walks away with a bright smile. Just before the bell rings, she taps the inside of her pocket once with her finger.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",
-        "text": "*I quietly folded the note and slipped it into my pocket. No reply written. — Yuna lowered her head slightly. She seemed to understand.*"
+        "text": "*I quietly folded the note and put it in my pocket. I didn't write a reply. Yuna lowers her head slightly and closes the book.*"
     },
     "morning3_set_multiple": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "*Break time. Passing by an empty classroom — I hear someone inside. I approach quietly.*"
+        "text": "*Break time. The sound of a pen scratching in the empty classroom. The homeroom teacher sits at the teacher's desk. The pen stops when I appear at the door.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Homeroom Teacher",
@@ -275,7 +275,7 @@
     "hidden_homeroom_d3_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Talking with the homeroom teacher in the empty classroom.*",
-        "context": "Day 3 morning. Discovered the teacher writing a novel manuscript in an empty classroom. A secret she's kept for 7 years. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
+        "context": "Day 3 morning. Discovered the homeroom teacher writing a novel manuscript in the empty classroom. A secret kept for seven years. Tone: tries to deflect with light jokes, but sentences become short when the manuscript is mentioned.",
         "personality": "The teacher was an aspiring novelist. Became a teacher but never let go of the dream. A mix of embarrassment and relief at being found out."
     },
     "hidden_nurse_d3_check": {
@@ -284,7 +284,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*Something feels off since this morning. My feet take me to the nurse's office. I'm not even hurt.*"
+        "text": "*Even after the morning bell rang, I couldn't get up from my seat. The edge of the bandage on my hand is lifting. I open the infirmary door.*"
     },
     "hidden_nurse_d3_2": {
         "name": "School Nurse",
@@ -316,7 +316,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "School Nurse",
-        "text": "Back when I worked at the hospital. Too many patients. I wanted to help them all, but I only have two hands. At some point it felt like I couldn't even take proper care of one."
+        "text": "When I worked at the university hospital. When the call bells rang at the same time, my hands would count the empty beds first. I hated that."
     },
     "hidden_nurse_d3_7": {
         "name": "School Nurse",
@@ -328,7 +328,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "{name}",
-        "text": "*One person, properly — it doesn't sound like she's only talking about the hospital.*",
+        "text": "*The school nurse stopped at 'one person.' The edge of the paper cup crumples under her fingertips.*",
         "choices": [
             "Is that why you left the hospital?",
             "Do you have that one person too?"
@@ -353,8 +353,8 @@
     "hidden_nurse_d3_freetalk": {
         "name": "School Nurse",
         "text": "*Talking with the school nurse in the nurse's office.*",
-        "context": "Day 3. Came to the nurse's office feeling anxious. The nurse had a serious heart-to-heart, including her hospital burnout backstory. Tone: Bright on the surface but shadows underneath. Sometimes smiling but eyes aren't. Sincerity peeks through casual conversation.",
-        "personality": "Usually playful, but when serious the whole atmosphere changes. A professional with burnout experience. Torn between feelings and her title."
+        "context": "Day 3. Came to the infirmary after relationships became complicated. The school nurse gave serious counseling. Story about university hospital burnout. Tone: starts with jokes, but trails off or deflects with actions when hospital topics come up.",
+        "personality": "The school nurse is usually playful but becomes quieter when serious. Experienced professional with burnout history. Tries to maintain boundaries with students."
     },
     "morning3_seo_gate_warm_1": {
         "name": "{name}",
@@ -482,15 +482,15 @@
     },
     "hidden_homeroom_d3_4_f": {
         "name": "{name}",
-        "text": "*But — I can't move my foot. This person is my homeroom teacher. The one who marks my attendance, grades my work, and writes a single line on my report at the end of the term. That line goes into my college applications. Power flows in one direction here. Not mine.*"
+        "text": "*I can't take a single step. On the desk: attendance book, grade files, student record envelopes, one after another. The teacher's hand is still on the manuscript paper.*"
     },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
-        "text": "*So me peeking into her secret right now — is it kindness, or is it overstepping? Once a student knows a teacher's weak spot, the line between them isn't a straight one anymore. Seven years of an adult's life land in the palm of my hand. Am I qualified to hold that?*"
+        "text": "*Red pen marks show through the flipped manuscript paper. Two characters: 'On hold.' The moment I see it, the teacher's fingertips press the paper harder.*"
     },
     "hidden_homeroom_d3_4_h": {
         "name": "{name}",
-        "text": "*— And at the same time, I get it. Pretending not to see is also a choice. The look on her face just now — it was the look of someone who wanted to be caught. The face of someone no one has caught in seven years. Either way, I cross a line.*"
+        "text": "*I could have pretended not to notice. The teacher doesn't cover the paper. Closes the pen cap, then opens it again.*"
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
@@ -562,7 +562,7 @@
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
-        "text": "*'Educational.' — She's wrapping it in work talk again. But this time, the tone carries genuine regret.*"
+        "text": "*'Educationally.' Even after saying that, the teacher can't lift their hand from the manuscript.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Homeroom Teacher",
-        "text": "*She smiles softly.* ...I'm glad you're here. Truly."
+        "text": "*Smiling faintly* ...I'm glad you passed by this classroom today."
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
@@ -590,7 +590,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*The reason she chose an empty classroom is practical, but it also means — she's someone who needs a space of her own. Feels like I opened a drawer hidden behind her title. I should close it — but my hand won't let go.*"
+        "text": "*The clock's second hand is loud in the empty classroom. Too many crossed-out marks on the paper to be official paperwork. I should look away, but my gaze won't drop.*"
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d3_2_e": {
         "name": "{name}",
-        "text": "*I'm not sure what she's thanking me for. For not looking away? Or — for coming this far? Just before lunch. — All morning, something in me won't settle. Too many faces, too many words? I don't know why everything's shaking loose this fast.*"
+        "text": "*Just before lunch. The hallway is noisy, but it doesn't register. The smell of disinfectant from the infirmary door still clings to my wrist.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "School Nurse",
@@ -682,7 +682,7 @@
     },
     "hidden_nurse_d3_5_m": {
         "name": "School Nurse",
-        "text": "Probably not in the school nurse job description... *resting her chin on her hand* But I'll listen. This is the nurse's office, after all. Your heart's a vital organ too, right?"
+        "text": "Should a teacher really be doing this kind of counseling... *rests chin on hand* But I'll listen. The infirmary bed is empty anyway."
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
@@ -710,7 +710,7 @@
     },
     "hidden_nurse_d3_6_d": {
         "name": "{name}",
-        "text": "*She uses the word 'ran away' herself. — The pale green notebook comes to mind. Those letters were all written to Yujin. The nurse pauses for a moment. Touches her stethoscope.*"
+        "text": "*The school nurse pauses briefly at 'running away.' Her fingertips touch the stethoscope, move toward the notebook drawer, then pull back.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "School Nurse",
@@ -738,19 +738,19 @@
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",
-        "text": "*'Hurt or not.' — Is she starting to see me as something other than a patient?*"
+        "text": "*'Whether you're sick or not.' As I leave the infirmary, I hear the faint sound of a chair sliding behind me.*"
     },
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
-        "text": "*Stepped out into the hallway. Took one step and stopped. — What was that, just now. This person lost a patient. She fled to a school carrying that guilt. What kind of place do I occupy for her right now — for the first time, I have to ask that out loud.*"
+        "text": "*I stepped into the hallway. One step, then I stop. The sound of a drawer opening from inside. The corner of a light green notebook and the name 'Yujin' surface in my mind.*"
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*I'm a student, and she's the school nurse. The place I go when I'm hurt, the person who gives me a bed when I say I'm sick. The relationship itself is asymmetrical. This racing in my chest — is it really because I've started liking her, or is it because for the first time an adult woman asked me 'are you okay?' and actually looked at me for a while? The two might look alike, but they're not the same thing.*"
+        "text": "*The bandage on my hand is slightly peeling. Someone who gives up their bed when I say I'm sick. Someone who looks back even when I say I'm not. Between them hangs a single name tag: 'School Nurse'.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*And the scarier part runs the other way. To her, I'm — a student sitting in the seat of the Yujin she couldn't save, at about the same age. If a piece of her heart is starting to move toward me, it might not be me she's looking at. If I reach out knowing that, I'd be exploiting her guilt. — Either direction, there's no clean answer.*"
+        "text": "*The sound of paper being folded comes from inside the infirmary. Unfinished letters to Yujin. My age is too close to place next to that name. I grip the handle, then let go.*"
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
@@ -770,7 +770,7 @@
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
-        "text": "*The smell of disinfectant suddenly grew stronger. One more step from here — and I might not be able to call her 'teacher' anymore. ...What? — I turned around. The nurse is looking out the window. Not smiling. An expression I've never seen before.*"
+        "text": "*The smell of disinfectant suddenly grew stronger. Before taking another step, I looked back. The school nurse is looking out the window. She's not smiling.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",

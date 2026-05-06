@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*I'm standing in front of an unfamiliar school gate. It's a big school. Students drift past in twos and threes. I'm the only one whose uniform still looks stiff and painfully new. A girl is standing by the gate, brushing back her long black hair. Even behind her glasses, she carries herself with an easy calm. Not a trace of hurry.*"
+        "text": "*An unfamiliar school gate. Students drifted past in small groups. The creases on my uniform were still sharp. By the gate, a girl with long black hair adjusted her glasses and checked the time. When I stopped, she looked up too.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "{name}",
-        "text": "*Her voice is calm. Not cold — just unhurried. Like she's got all the time in the world.*"
+        "text": "*Seoyeon checks my name once more and makes a quick mark on the clipboard roster. Her gaze lingers a beat too long behind her glasses.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*And just like that, she walked off. No wave, nothing. I fumbled through the hallway signs and barely made it to the classroom. — My call, my problem.*"
+        "text": "*Seoyeon actually turned and left. No wave, no gesture. After misreading the hallway signs twice, she finally stood in front of Class 3-2.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*A student council president with this kind of energy on the first day. — Not bad.*"
+        "text": "*Seoyeon walked ahead, then glanced back once to check if I was following. The edge of her clipboard tapped lightly between her fingers.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon walks me through the halls. Students passing by say hi to her, and she answers each one with a quick nod. A small lift of her hand, easy and natural. Looks like this place already has its star.*"
+        "text": "*Seoyeon walked ahead through the hallway. Students greeted her as she passed. She acknowledged each one with a light tap of her clipboard, never slowing her pace.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -178,15 +178,15 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*I glance the other way. Back row, by the window — a girl with her chin on her hand, staring out. Apparently a transfer kid's introduction isn't worth her time.*"
+        "text": "*I looked over and saw a girl at the very back by the window, chin propped on her hand, staring outside. Even as my name was being written on the board, only a page turned.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Silver-white hair. Red eyes, half-lidded and lazy. Tattoos crawl down her arms. — She doesn't even bother to look over. Like a transfer kid is nothing new. And the kids around her don't look at her either. Deliberately. Like the seat's empty.*"
+        "text": "*Silver-white hair. Red eyes. A tattoo on her arm. The girl in the back corner by the window kept her chin propped up, gazing outside. The desks around her were gradually emptier.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Someone up front whispers. '...Don't talk to her. She's scary.' — Close enough that Yuna definitely heard. But her face doesn't move. She's used to it.*"
+        "text": "*Someone in the front row whispered. '…Don't talk to her, she's scary.' Yuna turned a page. Just a little slower than before.*"
     },
     "classroom_seat_1": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*Right next to Dain. Whether that's lucky or doomed, no clue — but peace and quiet just left the building.*"
+        "text": "*The seat next to Dain. Before I could even sit down, Dain half-turned toward my desk.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -238,19 +238,19 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*She tacked on a 'probably.' So a machine might still have me beat. Not exactly a confidence boost.*"
+        "text": "*After 'probably,' Dain's eyes drifted toward the ball machine. A basket full of balls waited at the far end of the court.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*A folded note lands on my desk. — I glance back. The silver-haired girl by the window is staring outside again. Tattoos all down her arms — but the handwriting on the note is impossibly neat. I unfold it.*"
+        "text": "*A folded note slid across my desk. I turned around — the silver-haired girl by the window was still gazing outside. The handwriting on the note was surprisingly neat.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'Got stuck with the noisy seat. — Yuna' Pale violet ink. — A bit of the tension lifts.*"
+        "text": "*'Got stuck with a noisy seat. — Yuna' Lavender ink. A small crease at the corner of the note.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*I glance toward Yuna. She's still looking out the window. But I think the tip of her ear just twitched. The note came from the girl who'd been staring outside the whole time. Pretending not to care, or actually not caring.*"
+        "text": "*I looked toward Yuna — still gazing out the window. Only her fingertips had slipped below the desk. Right where the note had been.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Her posture is flawless. — I can't help wondering what's behind all that composure.*"
+        "text": "*Her back was straight. Only her fingers moved, tapping the edge of the clipboard in a steady rhythm.*"
     },
     "classroom_2_b": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "classroom_dain_5_b": {
         "name": "{name}",
-        "text": "*The teacher lets out a small sigh. Not exasperation — the kind of sigh that comes from familiarity.*"
+        "text": "*The homeroom teacher let out a small sigh. She tapped the corner of the attendance book and moved on to the next name without even glancing at Dain.*"
     },
     "classroom_dain_5_c": {
         "name": "Homeroom Teacher",

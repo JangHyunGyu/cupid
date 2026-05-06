@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*Vor dem Schultor. In der Ferne sehe ich drei Gestalten. Seoyeon geht mit Haeun, Dain wirft einen Volleyball und rennt, Yuna liest beim Gehen ein Buch. Keine schaut hierher. — Das ist sogar ein Glück. Im Moment trau ich mich niemandem in die Augen zu sehen.*"
+        "text": "*Das Schultor. Drei Gestalten in der Ferne. Seoyeon geht mit Haeun, Dain wirft einen Volleyball beim Laufen, Yuna liest langsam. Keine schaut hierher.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -45,11 +45,11 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon dreht sich um und winkt. — Dieselbe Geste wie an Tag 1. Sie schaut nicht zurück. Der Rücken gerade. Perfekt. — Aber diesmal zittert sie nicht.*"
+        "text": "*Seoyeon dreht sich um und winkt. Sie schaut nicht zurück. Nur das Band an ihrem Handgelenk schwankt kurz am Ende des Flurs.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*Ich stehe allein im Flur. Seoyeons Schritte entfernen sich. — Vor fünf Tagen wirkte ihr Rücken wie eine Wand. Jetzt fühlt er sich wie eine Tür an.*"
+        "text": "*Allein im Flur. Seoyeons Schritte verklingen. Der Dachschlüssel, den du verschlossen glaubtest, liegt noch in deiner Handfläche.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*Die Sonne geht unter. Fünf Tage neigen sich dem Ende zu. Der Sonnenuntergang färbt den Schulhof. Waren fünf Tage wirklich so kurz? — Der Moment der letzten Entscheidung naht.*"
+        "text": "*Die Abendsonne hängt an jedem Klassenzimmerfenster. Aus dem Senderaum kommt die Durchsage zum Veranstaltungsende, und die Lautsprecher auf dem Sportplatz knacken einen Takt zu spät.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -132,7 +132,7 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*Der Riss, den wir mittags mit erzwungenem Lächeln überdeckt haben, ist immer noch da. Es fühlt sich an, als würde diese Nacht nicht mit nur einer Person enden.*"
+        "text": "*Die beim Mittagessen gefalteten Worte bleiben. Drei Nachrichtenfenster leuchten gleichzeitig auf, und du kannst in keinem den ersten Buchstaben tippen.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Mit dem Riss, den wir nur notdürftig zugedeckt hatten, lenkten uns unsere Schritte zum Park.*"
+        "text": "*Unbeantwortete Nachrichten bleiben auf dem Sperrbildschirm. Deine Schritte haben sich zum Park gewendet.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -148,13 +148,13 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*An der alten Schule war es genauso. Ich konnte es nicht sagen. Und bereute es. — Wird es diesmal wieder so sein?*"
+        "text": "*Der Flur deiner alten Schule, das Handy in deiner Tasche, die ungesendete 38. Notiz—alles taucht auf einmal auf.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Ich wäre fast wieder weggerannt. Wie an meiner alten Schule. Das Handy in der Tasche, unfähig ein Wort zu sagen — dieser Moment kam fast zurück. — Nein. Diesmal nicht. Meine Beine bewegen sich. Mein Mund öffnet sich zuerst. Keine vorbereiteten Worte — mein Körper bewegt sich einfach von selbst.*"
+        "text": "*Du umklammerst das Handy in deiner Tasche. Du lässt es dort, ohne den Bildschirm einzuschalten. Deine Beine bewegen sich zuerst, und der Name rutscht heraus.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Sie streckt ihren kleinen Finger aus. Denselben Finger, den ich an Tag 4 nicht greifen konnte.*"
+        "text": "*Du streckst deinen kleinen Finger aus. Der Finger, den du an jenem Tag am Geländer nicht fangen konntest.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
@@ -227,7 +227,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
-        "text": "*Sie reibt sich mit der Faust die Augen. Lacht und weint gleichzeitig.*"
+        "text": "*Dain reibt sich den Augenwinkel. Ihr Lächeln bleibt gleich, aber Feuchtigkeit haftet an ihrem Handrücken.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
@@ -268,7 +268,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "{name}",
-        "text": "*Bei ihr zählt eine Zeile mehr als eine lange Erklärung. Das Problem — es ist meine Zeile.*"
+        "text": "*Yuna wartet und hält das Buch. Das Antwortfenster hat noch keinen ersten Buchstaben.*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -339,7 +339,7 @@
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*Eine Zeile, aber die Tinte ist verwischt. — Sie hat beim Schreiben geweint.*"
+        "text": "*Eine einzelne Zeile, in der die Tinte verlaufen ist. Ein Fingernageleindruck bleibt an der Falte.*"
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",
@@ -379,6 +379,6 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*Die Worte, die ich herunterschlucken und übergehen wollte, kommen am Ende doch heraus. Dass ich mich nicht für nur eine entscheiden kann. Ich weiß, dass das feige ist, und trotzdem werde ich heute auch diesen Preis mittragen.*"
+        "text": "*Die Worte, die in deinem Hals steckten, kommen heraus. Dass du dich nicht für eine entscheiden kannst. Alle drei Gesichter erstarren gleichzeitig.*"
     }
 }

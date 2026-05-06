@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Se não escrever o final, a história não termina. — Eu penso igual.*"
+        "text": "*O cursor pisca na última linha do bloco de notas. Deixe o final em branco, e o arquivo fica em modo salvando.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -45,15 +45,15 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Disfarçou com 'kkkk' — mas a sinceridade transparece.*"
+        "text": "*Espaço vazio longo depois de 'kkkk'. A próxima mensagem de Dain não chega.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Sonhei. — Tava andando lado a lado com alguém. Não via o rosto, mas estranhamente não sentia aflição.*"
+        "text": "*Tive um sonho. Caminhava lado a lado com alguém. Não conseguia ver o rosto, apenas passos mantendo o mesmo ritmo.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Dessa vez, eu queria falar sem me arrepender. Decidi que, nessa escola, ia ser honesto.*"
+        "text": "*Fechei o bloco de notas. Ainda não há frase para enviar amanhã. Mas decidi não deixar a tela em branco.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -73,11 +73,11 @@
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*Eu guardava porque apagar parecia apagar junto os sentimentos daquela época. Mas agora não é mais apego — é só registro. — Cumpriu o papel dele.*"
+        "text": "*Meu dedo para sobre o botão deletar. Em vez disso, movi a foto para uma pasta nova. Nome da pasta: 'Registro'.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu disse. 'Recusar também é amor.' Na escola anterior, a Sojeong sumiu sem ninguém ajudar. Porque eu fiquei calado. — Foi o final mais cruel pra nós dois. Se pelo menos uma daquelas 38 mensagens tivesse sido enviada — talvez a Sojeong não tivesse ido embora da escola.*"
+        "text": "*Minsu disse. 'Rejeição também é amor.' Sojeong na galeria ainda está sorrindo. Nota #38 ainda não foi enviada. Apenas o botão enviar está azul.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Apagar a foto foi fácil. Um toque de dedo e pronto. — Sentimento leva mais tempo. Mesmo assim. O tanto que eu apaguei — pelo menos isso me deixa seguir em frente.*"
+        "text": "*Deletar a foto foi fácil. Apenas um dedo. Fico olhando a miniatura do álbum vazio por um tempo.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon usou a palavra 'por favor'. — Não existia no vocabulário dela. É o tamanho do desmoronamento.*"
+        "text": "*Seoyeon usa a palavra 'favor'. O cursor fica parado depois dessa palavra por um longo tempo.*"
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
@@ -214,11 +214,11 @@
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Igualzinho com a Sojeong. Sabia e fiquei calado. Na escola anterior, vi a Sojeong desabar e fiquei de boca fechada. Nessa escola — de novo.*"
+        "text": "*Sojeong fecha a foto. Desta vez são três janelas de mensagem. Os três cursores piscam.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Nessa escola: arrependimento por ter falado pra todo mundo. No fim, o problema não é 'falar ou calar' — é 'pra quem'.*"
+        "text": "*Escola antiga: mensagens não enviadas. Esta escola: janelas de resposta abertas demais. A tela do celular queima na minha palma.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
@@ -226,11 +226,11 @@
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna disse. 'Não foge.' Então dessa vez tem que ser diferente. Não escolher — é o mesmo que perder tudo.*"
+        "text": "*Yuna disse. 'Não fuja.' O cursor da janela de resposta pisca. Mais uma frase nunca enviada a ninguém fica mais longa.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— Não vou fugir. Dessa vez, só pra uma pessoa. Tive um sonho. — Tava andando ao lado de alguém. Não via o rosto, mas estranhamente não sentia aflição.*"
+        "text": "*Tive um sonho. Caminhava lado a lado com alguém. Não conseguia ver o rosto, mas na minha mão havia uma mensagem prestes a ser enviada.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",

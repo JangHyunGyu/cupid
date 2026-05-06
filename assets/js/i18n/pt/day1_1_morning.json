@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Parado na frente de um portão estranho. Uma escola bem grande. Alunos passam em grupinhos de dois ou três. Só o meu uniforme está branquíssimo de tão novo. Uma garota está parada no portão. Cabelo preto comprido jogado de leve para o lado — atrás dos óculos, o andar é tranquilo. Nenhum sinal de pressa.*"
+        "text": "*Um portão de escola desconhecido. Estudantes passavam em pequenos grupos. Só o meu uniforme ainda tinha as marcas de dobra. Ao lado do portão, uma garota de cabelo preto comprido ajeitou os óculos e conferiu a hora. Quando parei, ela também levantou o olhar.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "{name}",
-        "text": "*A voz é calma. Não é fria, só tem aquela segurança de quem nunca se apressa.*"
+        "text": "*Seoyeon confere meu nome mais uma vez e faz uma breve marcação na lista da prancheta. O olhar por trás dos óculos demora um instante a mais para se desviar.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*E ela virou as costas mesmo. Sem aceno, sem nada. Me guiei pelas placas do corredor e mal cheguei na sala. — A escolha foi minha, o preço também.*"
+        "text": "*Seoyeon realmente deu as costas. Sem nenhum aceno. Depois de ler errado as placas do corredor duas vezes, finalmente parou diante da sala 3-2.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*Uma presidente com essa pegada logo no primeiro dia. — Nada mal.*"
+        "text": "*Seoyeon foi na frente e olhou para trás uma vez para ver se eu estava seguindo. A borda da prancheta batia de leve entre seus dedos.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon me guia pelo corredor. Os alunos que passam a cumprimentam, e ela devolve cada um com um aceno de cabeça. Levanta a mão de leve. Tudo muito natural. Parece que já tá escrito quem é o centro das atenções dessa escola.*"
+        "text": "*Seoyeon ia na frente pelo corredor. Os estudantes a cumprimentavam ao passar. Ela respondia com um leve aceno da prancheta, sem desacelerar nem uma vez.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*As costas perfeitamente eretas. — O que será que tem por trás de toda essa calma.*"
+        "text": "*As costas retas. Só os dedos se moviam, batendo na borda da prancheta num ritmo constante.*"
     },
     "classroom_1": {
         "name": "{name}",
@@ -210,7 +210,7 @@
     },
     "classroom_dain_5_b": {
         "name": "{name}",
-        "text": "*A professora solta um suspiro curto. Não é de irritação — é o suspiro de quem já desistiu.*"
+        "text": "*A professora titular soltou um pequeno suspiro. Bateu na ponta da lista de chamada e procurou o próximo nome sem sequer olhar para Dain.*"
     },
     "classroom_dain_5_c": {
         "name": "Professora",
@@ -222,15 +222,15 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Viro o olhar. Última fileira, do lado da janela — uma garota com o queixo apoiado na mão, olhando pra fora. Apresentação de transferido não parece digna da atenção dela.*"
+        "text": "*Olhei para o lado e vi uma garota no fundo junto à janela, o queixo apoiado na mão, olhando para fora. Enquanto escreviam meu nome no quadro, apenas uma página foi virada.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Cabelo branco-prateado. Olhos vermelhos, semicerrados, preguiçosos. Tatuagens cobrindo os braços. — Nem se dá ao trabalho de olhar. Como se um transferido não fosse nada. E os alunos em volta não olham pra ela também. De propósito. Como se aquele lugar estivesse vazio.*"
+        "text": "*Cabelo branco-prateado. Olhos vermelhos. Uma tatuagem no braço. A garota no último lugar junto à janela continuava com o queixo apoiado, olhando para fora. As carteiras ao redor dela iam ficando mais vazias.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Alguém na fileira da frente cochicha. '...Não fala com ela, é perigosa.' — Perto demais pra Yuna não ter escutado. Mas a cara não muda. Já tá acostumada.*"
+        "text": "*Alguém na fileira da frente sussurrou. '…Não fala com ela, dá medo.' Yuna virou uma página. Só um pouco mais devagar que antes.*"
     },
     "classroom_seat_1": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*Do lado da Dain. Sorte — ou azar — ainda vou descobrir, mas silêncio aqui não vai rolar.*"
+        "text": "*O lugar ao lado de Dain. Antes de eu conseguir sentar, Dain já tinha se virado pela metade na direção da minha carteira.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -286,19 +286,19 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Soltou um 'acho'. Ou seja, uma máquina ainda pode ser melhor que eu. Meu lugar tá por um fio.*"
+        "text": "*Depois do 'talvez', os olhos de Dain foram para a máquina de bolas. Um cesto cheio esperava na ponta da quadra.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Um bilhete dobrado cai na minha carteira. — Olho pra trás. A garota de cabelo prateado do lado da janela já voltou a olhar pra fora. Braços cobertos de tatuagem — mas a letra do bilhete é impecável. Desdobro.*"
+        "text": "*Um bilhete dobrado deslizou pela minha carteira. Olhei para trás — a garota de cabelo prateado junto à janela continuava olhando para fora. A letra no bilhete era surpreendentemente caprichada.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'Caiu no lugar barulhento. — Yuna' Tinta lilás. — A tensão cede um pouco.*"
+        "text": "*'Pegou um lugar barulhento. — Yuna' Tinta lavanda. Uma pequena marca de dobra no canto do bilhete.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Olho pra Yuna. Continua olhando pela janela. Mas tenho a impressão de que a pontinha da orelha se mexeu. O bilhete veio justo dela, que ficou olhando pra fora o tempo todo. Fingindo não ligar, ou realmente não ligando.*"
+        "text": "*Olhei para Yuna — ainda olhando pela janela. Só as pontas dos dedos tinham descido para baixo da carteira. Na mesma direção onde o bilhete estava.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

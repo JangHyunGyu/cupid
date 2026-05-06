@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*The school gate is slightly open. I hear movement inside. — Someone steps out from the gate. It's my homeroom teacher.*"
+        "text": "*The school gate is slightly open. A presence inside. The homeroom teacher comes out to the front gate. Holding a paper bag.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Homeroom Teacher",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Sunday morning. I head to the nurse's office out of habit. — When did this become a habit? I open the door. The school nurse is in her chair. White coat. — But she's different from usual. No playfulness.*"
+        "text": "*Weekend morning. I opened the nurse's office door. She's sitting in her chair in a white coat, but there's no joke memo on the desk.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
@@ -241,7 +241,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*Her 'you came' is half a tone lower than usual. — I've learned to read this person's emotions through tone of voice.*"
+        "text": "*'Oh, you're here' comes out half a tone lower than usual. The nurse picks up the stethoscope, then sets it back down on the desk.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*It's not a question. — It's the face of someone already fearing the answer. Our eyes meet. Her serious expression with all the usual playfulness gone. — I've never seen this person so defenseless before.*",
+        "text": "*It's not a question. The nurse presses her thumb against the rim of the paper cup. A dent forms.*",
         "choices": [
             "I will.",
             "..."
@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'Really.' — Today I was the first to hear it. Through her glasses, the nurse's eyes look wet. The playfulness returns. — But below her smiling eyes, there's a faint trail of tears. It hurts.*"
+        "text": "*'For real.' Behind the nurse's glasses, her eyes are wet. The playfulness takes a beat too long to return.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "School Nurse",
@@ -347,7 +347,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Short. So Yuna. I now know that 'I'll leave if you're late' means the same as 'please don't be late.'*"
+        "text": "*Short. Very Yuna. No period after 'I'll leave if you're late.'*"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Homeroom Teacher",
@@ -375,7 +375,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "{name}",
-        "text": "*Honest. This person hides behind dry humor, but sometimes a candid moment slips through.*"
+        "text": "*The teacher says it like a joke and touches the coffee cup. Two circular water rings overlap on the coaster.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -395,7 +395,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*A burden. So the unfinished manuscript she carried alone for seven years was weighing on her.*"
+        "text": "*The corner of a manuscript envelope shows from the teacher's bag. The folded part is a little dark with finger marks.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Homeroom Teacher",
@@ -415,7 +415,7 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
-        "text": "...Thank you. But this stays between us, okay? ...This is our secret. A teacher shouldn't have secrets with a student, though."
+        "text": "...Thanks. But this, don't tell anyone — you know? ...This is our secret. The cup sleeve corner keeps folding."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*The teacher turns away. — Her shoulders are slightly slumped. I declined, so why does it feel like this. I went home.*"
+        "text": "*The teacher turns around. Her shoulders drop a little. On the way home, my face reflected in the cafe glass door keeps following me.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Her smile comes naturally. — She's different from how she is at school. Today, she feels less like a teacher and more like just... someone easy to be around.*"
+        "text": "*Seen outside school, her smile is different. No name tag, no pens in the gown pocket. The two of us fold checkup forms and wipe down the blood pressure monitor.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "School Nurse",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*She knows the weight of being called by name. Because she was called by numbers at the hospital. We finished sorting the papers. The nurse stretches.*"
+        "text": "*Paperwork is done. The school nurse taps the name field once with her finger, then finally stretches.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*She added 'really.' — When this person adds 'really,' it means everything before it was sincere. She brushed it off with 'whatever,' but couldn't quite meet my eyes for a moment. She's bad at hiding it this time too.*"
+        "text": "*'For real.' The nurse avoids eye contact for a second. The chopsticks on the cup noodle lid tilt slightly askew.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

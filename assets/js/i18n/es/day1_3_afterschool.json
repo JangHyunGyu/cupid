@@ -9,7 +9,7 @@
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Dicen que menos mal. ¿Pero de verdad lo es? Si yo hubiera dicho una sola palabra entonces — Sojeong no habría tenido que irse del colegio.*"
+        "text": "*Vuelvo a mirar el último mensaje: 'Menos mal jaja'. Abro el campo de respuesta, no escribo nada y apago la pantalla.*"
     },
     "after_kakao_5": {
         "name": "{name}",
@@ -49,11 +49,11 @@
     },
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Paso frente a la biblioteca y veo a una chica de ojos rojos caminando mientras lee un libro. El tatuaje del brazo llama la atención — pero la forma en que sostiene el libro es sorprendentemente serena.*"
+        "text": "*Paso frente a la biblioteca y veo a una chica de ojos rojos caminando mientras lee. Su brazo tatuado sostiene con cuidado el lomo del libro.*"
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna se queda mirando el marcador de libros un largo rato. Como si comprobara que no se haya arrugado.*"
+        "text": "*Yuna abre la esquina del marcapáginas con el pulgar y lo sostiene contra la luz. Sin pliegues.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -89,7 +89,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seguro que esperó. — Me da pena, y a la vez me causa gracia, aunque no sepa por qué.*"
+        "text": "*Mi nombre todavía está en la parte superior del portapapeles de Seoyeon. La casilla de verificación aún está vacía.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Es la profesora. El cárdigan más revuelto que antes. Parece que libró una batalla todo el día.*"
+        "text": "*Es la profesora tutora. Una manga de su cárdigan está doblada, y un aviso arrugado sobresale entre las páginas del libro de asistencia.*"
     },
     "after_hidden_homeroom_4": {
         "name": "Profesora",
@@ -122,7 +122,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*Parece una pregunta de rutina, pero sus ojos me observan con genuina atención.*",
+        "text": "*Parece una pregunta rutinaria, pero la profesora baja el portapapeles y me mira a la cara.*",
         "choices": [
             "Estoy bien. Es una buena escuela.",
             "Sinceramente, fue un día intenso."
@@ -202,7 +202,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*Desaparece al fondo del pasillo. El pelo largo le oscila. — La miré más de la cuenta.*"
+        "text": "*La profesora desaparece al final del pasillo. Su cabello largo se balancea, y el borde del libro de asistencia sobresale entre sus brazos.*"
     },
     "after_homeroom_freetalk": {
         "name": "Profesora",
@@ -212,7 +212,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Caminando por el pasillo cuando — me mareo un poco. Serán los nervios del primer día. A un lado del pasillo veo el cartel de 'Enfermería'. Demasiado mareado para seguir como si nada.*"
+        "text": "*Camino por el pasillo cuando — me marea un poco la cabeza. Cuando me apoyo en la pared, la pintura fría toca mi palma. Veo un letrero de 'Enfermería' al fondo del corredor.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Abro la puerta de la enfermería. Un suave olor a desinfectante. Cortinas blancas, una cama, un escritorio pequeño. Hay una mujer sentada al escritorio. Bata blanca, estetoscopio al cuello. Melena corta color lavanda peinada con cuidado, me observa por encima de los lentes con el mentón apoyado en una mano. Estaba leyendo algo — y levanta la mirada.*"
+        "text": "*Abro la puerta de la enfermería. Olor a desinfectante. Cortinas blancas y una cama, un pequeño escritorio. Una mujer con bata blanca me mira por encima de sus gafas. El estetoscopio alrededor de su cuello roza el borde del escritorio y se balancea levemente.*"
     },
     "after_nurse_enter_2": {
         "name": "Enfermera",
@@ -276,7 +276,7 @@
     },
     "after_nurse_enter_10": {
         "name": "Enfermera",
-        "text": "Eso es cosa del pasado. Me gusta la escuela. Aquí las heridas de todos suelen ser leves."
+        "text": "Historia vieja. Me gusta la escuela. Aquí, cuando suena el timbre, todos vuelven a su aula."
     },
     "after_nurse_enter_11": {
         "name": "Enfermera",
@@ -298,7 +298,7 @@
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*...¿Qué le digo? Si menciono que estuve con Seoyeon, esto se pone raro.*"
+        "text": "*Escribo 'con Seoyeon' en el cuadro de respuesta y lo borro. El cursor parpadea solo en el primer espacio otra vez.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
@@ -330,7 +330,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
-        "text": "*Al rozar el bolsillo lateral de mi mochila, la punta de mis dedos engancha la esquina de un papel. Es una nota doblada. No sé cuándo la metieron ahí. La letra es de Yuna. 'Te vi en la azotea a la hora del almuerzo. ...Parecías llevarte bien con la presidenta.' — Tres puntos al final. Señal de que se tragó lo que quería decir.*"
+        "text": "*Hay una nota doblada en el bolsillo lateral de la mochila. La letra de Yuna. 'Te vi en el almuerzo en la azotea. ...Parecían muy cercanos.' Tres puntos están presionados en la parte inferior del papel.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -338,7 +338,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Está sonriendo. Sus dedos golpean el portapapeles. — La nuca me arde. Desvío la mirada.*"
+        "text": "*Está sonriendo. Sus dedos golpean el portapapeles. Bajo la mirada al cuadro de respuesta vacío.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -378,11 +378,11 @@
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*La profesora aparta los papeles del escritorio y vuelve a mirarme. Lo que pensaba que sería una frase breve parece que va para más. Al parecer no era solo un saludo de cortesía. Apoya la mano en el respaldo de la silla y busca las palabras un momento.*"
+        "text": "*La profesora empuja los papeles del escritorio hacia un lado. Apoya la mano en el respaldo de la silla y hace una pausa para elegir sus palabras.*"
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
-        "text": "*¿Algo similar? — ¿Eso significa que hizo algo distinto a la enseñanza antes?*"
+        "text": "*¿Algo similar? La mano de la profesora se esconde brevemente detrás del portapapeles.*"
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
@@ -418,7 +418,7 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Apenas cruzamos un par de frases y ya me lleva a su ritmo. La enfermera se levanta y se acerca. Movimientos fluidos. — Cuando su mano me toca, me tenso sin querer.*"
+        "text": "*Apenas he dicho unas pocas palabras y ella ya ha marcado el ritmo. La enfermera se levanta y se acerca. Cuando la punta del termómetro toca el dorso de mi mano, mis dedos se tensan levemente.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Lo dice con tono juguetón, pero la tensión se afloja un poco. Bebo el agua y echo un vistazo a la enfermería. En una esquina, una maceta pequeña.*"
+        "text": "*Lo digo de forma juguetona. Mientras bebo agua, miro alrededor de la enfermería. En un rincón hay una pequeña maceta.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -466,7 +466,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Solo heridas leves.' — Hay alivio en esas palabras. Pasaron diez minutos. Me levanto.*"
+        "text": "*La enfermera cierra el cajón. Un cuaderno verde claro en el interior se ve brevemente y luego desaparece. Han pasado diez minutos.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",

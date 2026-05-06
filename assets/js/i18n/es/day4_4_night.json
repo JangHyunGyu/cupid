@@ -113,11 +113,11 @@
     },
     "wall_seo_14_c": {
         "name": "{name}",
-        "text": "*Seoyeon se corta. Tiene las manos cerradas con fuerza sobre las rodillas. — Y entonces, despacio, muy despacio, la expresión que sostenía a la perfección se desmorona. Le tiemblan las yemas de los dedos.*"
+        "text": "*Seoyeon deja de hablar. Sus manos se cierran sobre sus rodillas. Antes de que caiga la humedad al borde de sus gafas, baja la cabeza.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Las lágrimas le resbalan por la cara. En silencio. — Seoyeon está llorando. Levanta la mirada. Tiene la cara de quien ya no piensa esconder que se ha roto.*"
+        "text": "*El agua cae de sus ojos. En silencio. Seoyeon empieza a limpiarla con el dorso de la mano, luego se detiene, y simplemente mira hacia arriba.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "wall_seo_pinky_5_b": {
         "name": "{name}",
-        "text": "*El meñique del Día 1. El meñique del Día 4. — El mismo dedo, pero pesan cosas completamente distintas.*"
+        "text": "*El meñique que cortaba el aire el primer día ahora se engancha al mío. La punta del dedo de Seoyeon está fría.*"
     },
     "wall_seo_line_choice": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "{name}",
-        "text": "*Seoyeon sonríe. Las comisuras se le descolocan. — Tiene el maquillaje corrido y los ojos hinchados. Y aun así no puedo apartar la mirada.*"
+        "text": "*Seoyeon sonríe. Las comisuras de su boca se elevan por sí solas, y bajo el maquillaje corrido quedan lágrimas que aún no ha limpiado.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
@@ -239,7 +239,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*Hay luz en la ventana del gimnasio. Luz de emergencia. Alguien bota un balón sola. — Apenas se distingue el dorsal. Es Dain. ...¿A las once de la noche, sola en el gimnasio? Hoy no me ha escrito.*"
+        "text": "*La luz de emergencia está encendida en la ventana del gimnasio. Alguien bota un balón solo. El dorsal 19 se mueve débilmente en la oscuridad.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
@@ -259,7 +259,7 @@
     },
     "wall_dain_pre_low_1": {
         "name": "{name}",
-        "text": "*Dain fuerza la risa.*"
+        "text": "*Dain sonríe. Las comisuras de su boca se elevan, pero su mano aprieta con fuerza la rodillera.*"
     },
     "wall_dain_pre_low_2": {
         "name": "Dain",
@@ -355,7 +355,7 @@
     },
     "wall_dain_17": {
         "name": "Dain",
-        "text": "Me operaron, y el médico — lo dijo con muchísimo cuidado. 'Para el día a día vas a estar bien, pero saltar como antes...' — No recuerdo qué dijo después. A partir de ahí dejé de oírlo."
+        "text": "Después de la cirugía, el doctor trazó una línea en un papel. 'Vida normal' hasta aquí, 'atleta' desde aquí. No recuerdo mucho después de eso."
     },
     "wall_dain_18": {
         "name": "Dain",
@@ -448,7 +448,7 @@
     },
     "wall_dain_cry_2": {
         "name": "{name}",
-        "text": "*Como si un año entero de lágrimas contenidas reventase de golpe. El gimnasio vacío devuelve el eco de sus sollozos.*"
+        "text": "*Dain baja la cabeza. Gotas caen una a una sobre el suelo vacío del gimnasio. El balón permanece quieto fuera de la línea.*"
     },
     "wall_dain_cry_3": {
         "name": "Dain",
@@ -488,7 +488,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...jaja. Duele. Pero me deja una sensación rara, como de alivio. — Me alegro de que el último balón que golpeé aquí haya sido un pase tuyo, {name}."
+        "text": "...jaja Duele. Pero extrañamente se siente bien. Porque el último remate vino del pase de {name}."
     },
     "wall_dain_lastspike_4_b": {
         "name": "{name}",
@@ -512,7 +512,7 @@
     },
     "wall_dain_mention_1": {
         "name": "Dain",
-        "text": "¿Sabes qué me dijo Seoyeon? ...Nada. No me dijo nada. Y eso me dio más miedo."
+        "text": "¿Sabes qué me dijo Seoyeon? ...No dijo nada. Solo me miró."
     },
     "wall_dain_mention_2": {
         "name": "Dain",
@@ -553,7 +553,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Hice como que no la vi. — Pero entonces ¿por qué me siento así?*"
+        "text": "*Pasé de largo fingiendo no ver. Caminé hasta la puerta trasera, pero la nota en mi mano sigue doblada.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -581,11 +581,11 @@
     },
     "wall_yuna_pre_low_2": {
         "name": "{name}",
-        "text": "*Quiere decir que aún es pronto para decirlo en voz alta.*"
+        "text": "*No salen palabras. Yuna tampoco pregunta más.*"
     },
     "wall_yuna_2": {
         "name": "{name}",
-        "text": "*El colegio de noche parece otro lugar. Yuna está de pie junto a la puerta trasera. Se la ve — más inquieta de lo normal.*"
+        "text": "*La luz de la puerta trasera parpadea. Yuna está de pie debajo. El libro está abierto, pero no se ha pasado ni una sola página.*"
     },
     "wall_yuna_3": {
         "name": "Yuna",
@@ -677,7 +677,7 @@
     },
     "wall_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna tiene los ojos un poco húmedos. — Es la primera vez que la oigo hablar tanto seguido.*",
+        "text": "*Los ojos de Yuna están ligeramente húmedos. Las puntas de los dedos que sostienen el libro están blancas por la presión.*",
         "choices": [
             "No soy ese chico. Soy yo. Y aun así me quedo a tu lado.",
             "Olvídate del del curso superior. Quien está delante de ti ahora soy yo.",
@@ -751,7 +751,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "{name}",
-        "text": "*Yuna se da la vuelta. Camina rápido. — No corre, pero camina como alguien que tiene ganas de correr. Fue la peor elección posible. — Se oye cómo el muro de Yuna se vuelve a cerrar.*"
+        "text": "*Yuna se da la vuelta. Camina rápido. Un marcador cae de su bolsillo, pero no lo recoge.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -759,11 +759,11 @@
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Bajo el farol, delante de la puerta del colegio. Seoyeon está de pie. — No, estaba de pie. Con el celular en la mano, escribe algo y lo borra. Escribe y borra. No sé a quién se lo quiere mandar. — O más bien, creo que sí lo sé.*"
+        "text": "*Bajo la farola frente a la puerta de la escuela. Seoyeon estaba de pie. Con el móvil en mano, escribiendo algo y borrándolo. Escribiendo, borrando. El brillo de la pantalla queda solo en sus gafas.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon se guarda el celular en el bolsillo y se da la vuelta. La espalda recta. Perfecta. — No tiembla. Esta vez de verdad. La noche también llega para quien no elegiste. Y esa noche la está pasando sola.*"
+        "text": "*Seoyeon guarda el móvil en el bolsillo y se da la vuelta. Su espalda está recta. Solo la sombra bajo la farola se tambalea brevemente.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -771,7 +771,7 @@
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...Hoy tendría que haberlo dicho. Esa persona me tendía el corazón primero, y yo, otra vez, no fui capaz de decir lo más fácil. Que exista un mañana no borra el hoy. Lo sé, y aun así lo volví a dejar para después.*"
+        "text": "*...Debí haberlo dicho hoy. Queda una frase a medio escribir en el chat. El cursor parpadea al final.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "Sistema",
@@ -791,11 +791,11 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*La pantalla del celular se enciende. Es una frase corta, y precisamente por eso duele más.*"
+        "text": "*La pantalla del móvil se enciende. Hay un solo mensaje. El estado de 'leído' aparece tarde.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*Escribo una respuesta y la borro. Diga lo que diga, parece que ya es tarde.*"
+        "text": "*Escribo una respuesta y la borro. Queda una sola letra en el cuadro de texto, luego desaparece.*"
     },
     "day4_hidden_msg_branch": {
         "name": "Sistema",

@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Three people waiting for a reply. — Is this a blessing or a curse?*"
+        "text": "*Three message threads open one after another. Before I can write a reply, the battery indicator drops one bar.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*The third star? — I glance toward the window. The sky's full of them. No idea which one she means.*"
+        "text": "*The third star? I turned my head toward the window. There are many stars in the night sky. As I count them with my finger, the windowpane fogs up.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -150,7 +150,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Day two, done. Yesterday it was curiosity — I wondered who they were. Tonight, it's different. Not curious. They're just stuck in my head. What they're doing right now. What they'll say tomorrow.*"
+        "text": "*The second day is over. Names that felt unfamiliar on the first day now sit on my lock screen. Even after the notifications go dark, I keep turning the screen back on.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -158,31 +158,31 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*I scrolled way back. Three months ago. — A photo. A group shot from the school trip. Sojeong is smiling. Right next to me. — The week after this photo was when the graffiti started appearing on Sojeong's desk. I liked her. No question. But there was something more urgent than saying 'I like you.'*"
+        "text": "*I scrolled down for a while. Field trip photo from three months ago. Sojeong is smiling next to me. In the photos after that, Sojeong's desk is pushed back little by little. Like someone cropped it on purpose so the graffiti wouldn't show.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Every night back then, I'd open my phone. Type something in the notes app, then delete it. Love confessions, but also things like 'Teacher, Sojeong is being —'. Every single time, I stopped just before sending. If I spoke up, I'd become a target too. Then one day in March, Sojeong's seat was empty. The next day too. And the day after that.*"
+        "text": "*In my notes, unsent sentences are lined up one after another. 'I like you.' 'Teacher, on Sojeong's desk—' 'Today too—' All cut off at the first line. Last edit time: 2:17 a.m.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*The drafts in my notes app stop at number 38. There's no 39. Because there was nobody left to send it to. I never confessed, and I never stood up for her. The transfer wasn't because of Sojeong — it was my dad's job. But I didn't mind leaving. At least I wouldn't have to pass by Sojeong's empty desk every day.*"
+        "text": "*Below the 38th note, there's nothing. Only the 39th title is blank. The next day, Sojeong's seat stayed empty until the end. On the transfer papers, the guardian signature line has her father's name.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'This time, don't look away.' — That was the promise I made coming to this school. I closed the gallery. Thought about deleting the photo, but — left it. If I deleted it, I was afraid I'd forget the guilt along with it.*"
+        "text": "*I closed the gallery. My finger stops over the delete photo button. In the end, I turn off the screen. Only my face remains on the black display.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*But — I stare at the ceiling. Today won't quiet down. Seoyeon. Dain. Yuna. All three are stuck in my head. I could call it curiosity. Honestly though, it scares me. The thought of leaning toward any one of them.*"
+        "text": "*I look at the ceiling. Today's messages overlap on my lock screen. Seoyeon. Dain. Yuna. I haven't read any of them yet.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*With Sojeong, I watched only one person. Loved her, only watched, and missed her falling apart. Thirty-eight drafts, stopped in my notes app. — Watching only one meant risking loss.*"
+        "text": "*I open Sojeong's photo again. I'm standing next to her, looking at the camera. Sojeong is looking at me.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— That's why I'm keeping all three in play. Choose too fast, and I might miss one of them breaking. Insurance. I know it's cowardly. I'm an indecisive piece of shit. But — losing someone while only watching her, I know that much.*"
+        "text": "*I open the reply window, then close it. The three names are lined up side by side at the top of my recent chats. My finger can't reach any of them.*"
     },
     "night2_hidden_check": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*I open the window. Cold air rushes in. — There are plenty of stars, but I have no idea which one is the third.*"
+        "text": "*I opened the window. Cold air rushes in. The stars are many, and my finger stops at the third one, suspended in the air.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
@@ -246,11 +246,11 @@
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*The problem is that distance is closing faster than I expected. I close my eyes. — Tomorrow I might have to be a little more honest.*"
+        "text": "*I closed my eyes. On the lock screen, only the number of unread messages remains. Even after the screen goes dark, my hand still feels bright.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*I open the fridge. Not much there. Leftover rice, eggs, seaweed. — I find myself wanting to pack something to bring tomorrow. For who? I'm not sure. I just want to.*"
+        "text": "*I opened the fridge. Leftover rice, eggs, kimchi. I take out the lunchbox and set it on the table. Haven't opened the lid yet.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

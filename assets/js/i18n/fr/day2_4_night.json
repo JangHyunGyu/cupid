@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Je dois répondre aux trois en même temps. — Je sais pas si c'est du bonheur ou de la torture.*"
+        "text": "*Trois fils de messages s'ouvrent les uns après les autres. Avant que je puisse écrire une réponse, l'indicateur de batterie baisse d'une barre.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*La troisième étoile ? — Je me tourne vers la fenêtre. Le ciel en est plein. Laquelle est la troisième, aucune idée.*"
+        "text": "*La troisième étoile ? J'ai tourné la tête vers la fenêtre. Il y a beaucoup d'étoiles dans le ciel nocturne. En les comptant du doigt, la vitre s'embue.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -154,35 +154,35 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*J'ai scrollé loin en arrière. Trois mois plus tôt. — Une photo. Un cliché de groupe pris le jour du pique-nique. Sojeong sourit. À côté de moi. — C'était la semaine d'après. Les graffitis sur le bureau de Sojeong ont commencé à apparaître. Je l'aimais. Aucun doute. Mais il y avait quelque chose de plus urgent que de dire 'je t'aime'.*"
+        "text": "*J'ai fait défiler un moment. Photo de sortie scolaire d'il y a trois mois. Sojeong sourit à côté de moi. Dans les photos suivantes, le bureau de Sojeong est reculé petit à petit. Comme si quelqu'un l'avait recadré exprès pour ne pas montrer les graffitis.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*À cette époque j'ouvrais mon téléphone tous les soirs. Je tapais quelque chose dans les notes, puis j'effaçais. Encore et encore. Des phrases de déclaration, mais aussi des phrases comme 'Madame, Sojeong est —'. Chaque fois, je m'arrêtais juste avant d'envoyer. J'avais peur de devenir une cible moi aussi si je me mêlais de ça. Et un jour de mars, la place de Sojeong était vide. Le lendemain aussi. Le surlendemain encore.*"
+        "text": "*Dans mes notes, des phrases non envoyées s'alignent les unes après les autres. 'Je t'aime bien.' 'Madame, sur le bureau de Sojeong—' 'Aujourd'hui aussi—' Toutes coupées à la première ligne. Dernière modification : 2h17 du matin.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Les brouillons dans mon appli notes sont gelés au numéro 38. Y a pas de 39. Parce qu'il n'y avait plus personne à qui l'envoyer. Je ne me suis pas déclaré, et je ne l'ai pas protégée. Le transfert n'était pas à cause de Sojeong. C'était le boulot de mon père. — Mais je n'ai pas été contre. Je n'aurais plus à passer devant la place vide de Sojeong tous les jours.*"
+        "text": "*En dessous de la 38ᵉ note, il n'y a rien. Seul le titre 39 est vide. Le lendemain, la place de Sojeong est restée vide jusqu'au bout. Sur les papiers de transfert, la ligne de signature du tuteur porte le nom de son père.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Cette fois, ne détourne pas les yeux.' — C'est le serment que j'ai fait en arrivant dans ce lycée. J'ai fermé la galerie. J'ai hésité à supprimer la photo, et — je l'ai gardée. Si je la supprimais, j'aurais peur d'oublier la culpabilité avec.*"
+        "text": "*J'ai fermé la galerie. Mon doigt s'arrête sur le bouton de suppression de photo. Finalement, j'éteins l'écran. Seul mon visage reste sur l'écran noir.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Mais — je fixe le plafond. La journée ne s'éteint pas. Seoyeon. Dain. Yuna. Toutes les trois me trottent dans la tête. Je pourrais appeler ça de la curiosité. Honnêtement, ça me fait peur. L'idée de pencher vers une seule.*"
+        "text": "*Je regarde le plafond. Les messages d'aujourd'hui se superposent sur mon écran de verrouillage. Seoyeon. Dain. Yuna. Je n'en ai encore lu aucun.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*À l'époque de Sojeong, je ne regardais qu'une personne. Je l'aimais, je regardais juste, et j'ai raté son effondrement. Trente-huit brouillons arrêtés dans mes notes. — Ne regarder qu'une seule, c'était pouvoir la perdre.*"
+        "text": "*Je rouvre la photo de Sojeong. Je suis à côté d'elle, regardant l'appareil. Sojeong me regarde.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— C'est pour ça que je laisse une porte ouverte avec les trois. Si je choisis trop vite, je pourrais rater une autre qui s'effondre. Une assurance. C'est lâche, je sais. Un indécis de merde. Mais — perdre quelqu'un en ne regardant qu'elle, ça, je connais.*"
+        "text": "*J'ouvre la fenêtre de réponse, puis je la ferme. Les trois noms sont alignés côte à côte en haut de mes conversations récentes. Mon doigt ne peut toucher aucun d'eux.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Le deuxième jour est terminé. Le premier jour, c'était de la curiosité. Je me demandais quel genre de personnes elles étaient. Aujourd'hui — c'est un peu différent. Pas curieux. Elles me restent en tête. Ce qu'elles font, ce qu'elles diront demain.*"
+        "text": "*Le deuxième jour est terminé. Les noms qui semblaient étranges le premier jour restent maintenant sur mon écran de verrouillage. Même après que les notifications disparaissent, je rallume sans cesse l'écran.*"
     },
     "night2_hidden_check": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*J'ai ouvert la fenêtre. Un vent froid entre. — Il y a plein d'étoiles, mais je ne sais pas laquelle est la troisième.*"
+        "text": "*J'ai ouvert la fenêtre. L'air froid entre. Les étoiles sont nombreuses, et mon doigt s'arrête sur la troisième, suspendu dans l'air.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
@@ -246,11 +246,11 @@
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Le problème, c'est que cette distance se referme plus vite que prévu. Je ferme les yeux. — Demain, il faudra peut-être être un peu plus honnête.*"
+        "text": "*J'ai fermé les yeux. Sur l'écran de verrouillage, seul le nombre de messages non lus demeure. Même après que l'écran s'éteint, ma main reste lumineuse.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*J'ouvre le frigo. Pas grand-chose. Du riz restant, des œufs, des algues. — J'ai envie de préparer quelque chose à apporter demain. Pour qui ? Aucune idée. J'en ai juste envie.*"
+        "text": "*J'ai ouvert le frigo. Du riz restant, des œufs, du kimchi. Je sors la boîte à lunch et la pose sur la table. Je n'ai pas encore ouvert le couvercle.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

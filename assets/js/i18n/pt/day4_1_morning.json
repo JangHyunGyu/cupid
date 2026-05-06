@@ -82,7 +82,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Curta. Típico da Yuna. — Agora eu sei que 'se atrasar, vou embora' significa 'por favor, não se atrase'.*"
+        "text": "*Curto. Bem Yuna. Sem ponto depois de 'vou embora se atrasar.'*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*O portão da escola está entreaberto. Ouço movimento lá dentro. — Alguém sai pelo portão. É a Professora. Ela se aproxima. — De longe, parece tranquila demais pra quem estava tão brava.*"
+        "text": "*O portão da escola está levemente aberto. Uma presença lá dentro. A professora responsável sai até o portão. Segurando uma sacola de papel.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
@@ -195,7 +195,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "{name}",
-        "text": "*Sincera. — Essa pessoa se esconde atrás de humor seco, mas às vezes escapa um momento honesto.*"
+        "text": "*A professora diz como uma piada e toca a xícara de café. Dois anéis circulares de água se sobrepõem no porta-copos.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Peso. — Então o manuscrito inacabado que ela carregou sozinha por sete anos era isso.*"
+        "text": "*O canto de um envelope de manuscrito aparece da bolsa da professora. A parte dobrada está um pouco escura com marcas de dedos.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Professora",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professora",
-        "text": "...Obrigada. Mas isso fica entre nós, tá? ...Esse é nosso segredo. — Uma professora não devia ter segredos com um aluno."
+        "text": "...Obrigada. Mas isso, não conta pra ninguém — entende? ...Isso é nosso segredo. O canto da manga do copo continua dobrando."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -299,11 +299,11 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*A Professora se vira. — Os ombros estão levemente caídos. Eu recusei, mas — por que me sinto assim. Voltei pra casa.*"
+        "text": "*A professora se vira. Seus ombros caem um pouco. No caminho de volta pra casa, meu rosto refletido na porta de vidro do café continua me seguindo.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Manhã de fim de semana. Por hábito, vou até a enfermaria. — Quando isso virou hábito? Abri a porta. A Enfermeira está sentada na cadeira. De jaleco branco. — Mas está diferente do normal. Sem brincadeira.*"
+        "text": "*Manhã de fim de semana. Abri a porta da enfermaria. Ela está sentada na cadeira de jaleco branco, mas não há bilhete engraçado na mesa.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermeira",
@@ -311,7 +311,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*Esse 'veio' saiu meio tom mais baixo que o normal. — As emoções dessa pessoa a gente lê pelo tom.*"
+        "text": "*'Ah, chegou' sai meio tom mais baixo que o normal. A enfermeira pega o estetoscópio e o coloca de volta na mesa.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -343,7 +343,7 @@
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*Não é uma pergunta. — É o rosto de quem já tem medo da resposta. Nossos olhos se cruzam. A expressão séria, sem nenhuma brincadeira. — Nunca vi essa pessoa tão vulnerável.*",
+        "text": "*Não é uma pergunta. A enfermeira pressiona a borda do copo de papel com o polegar. Fica uma marca amassada.*",
         "choices": [
             "Eu volto.",
             "..."
@@ -363,7 +363,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'De verdade.' — Hoje fui eu que ouvi isso primeiro. Por trás dos óculos, os olhos dela estão marejados. A brincadeira volta. — Mas embaixo do sorriso tem uma marca de algo que escorreu. Aperta o peito.*"
+        "text": "*'Sério.' Por trás dos óculos da enfermeira, os olhos estão úmidos. A brincadeira demora um batimento a mais para voltar.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermeira",
@@ -395,7 +395,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*O sorriso dela é natural. — Diferente do da escola. Hoje ela parece menos professora e mais... alguém fácil de estar junto. Ajudo com os papéis. Separar crachás, organizar tabelas de visão, limpar o aparelho de pressão.*"
+        "text": "*Vista fora da escola, seu sorriso é diferente. Sem crachá, sem canetas no bolso do jaleco. Nós duas dobramos formulários de exame e limpamos o monitor de pressão.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Enfermeira",
@@ -459,7 +459,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Ela sabe o peso de ser chamada pelo nome. Porque no hospital era chamada por número. Terminamos os papéis. Ela se espreguiça.*"
+        "text": "*A papelada acabou. A enfermeira escolar toca o campo de nome uma vez com o dedo, então finalmente se alonga.*"
     },
     "hidden_nurse_d4_5": {
         "name": "Enfermeira",
@@ -559,7 +559,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*Ela acrescentou 'de verdade'. — Quando essa pessoa usa 'de verdade', tudo antes disso é sincero. Ela rebateu com um 'que papo é esse' mas desviou o olhar por um segundo. De novo, péssima em esconder.*"
+        "text": "*'Sério.' A enfermeira desvia o olhar por um segundo. Os palitos sobre a tampa do miojo entortam um pouco.*"
     },
     "hidden_nurse_d4_pass": {
         "name": "Enfermeira",

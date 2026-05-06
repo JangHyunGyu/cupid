@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Anders als gestern habe ich Yunas Zettel in der Tasche. Am Ende des Flurs geht Seoyeon mit ihrer Bento-Tasche Richtung Dach, und Dain winkt mich schon wieder zum Kiosk. Die Mittagspause an dieser Schule ist die reinste Schlacht.*"
+        "text": "*Mittagspause. Yunas Notiz ist in meiner Tasche. Am Ende des Flurs geht Seoyeon mit ihrer Lunchbox Richtung Dach, und Dain winkt in Richtung Cafeteria. Meine Füße bleiben vor drei Richtungen stehen.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "{name}",
-        "text": "*Ein Schatten huscht über Yunas Gesicht. Ich weiß nicht, wer diese Person war, aber —*"
+        "text": "*Yuna schiebt das Lesezeichen tief ins Buch. Die Seite knickt nach 'Ich hatte es.'*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna schlägt ihr Buch auf. Ein Signal, dass das Gespräch zu Ende ist. Ich muss die Stimmung ändern. — Lass es mich mit was Leichtem überspielen.*"
+        "text": "*Yuna öffnet das Buch. Die Seite verdeckt die Hälfte ihres Gesichts. Ich beiße mir einmal auf die Lippe.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*Ich hab's vermasselt. Es leicht abzutun hat es nur so wirken lassen, als würde ich ihre Wunde kleinreden. Eine unangenehme Stille legt sich darüber. Nur das Umblättern der Seiten hallt laut.*"
+        "text": "*Yunas Hand bleibt auf dem Lesezeichen liegen. Nur das Geräusch umgeblätterter Seiten hallt laut.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -300,7 +300,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Yunas 'war' kreist in meinem Kopf. Die Bedeutung dieses Ortes, den sie mir gezeigt hat... wird langsam klar.*"
+        "text": "*Yunas 'Ich hatte es' kreist in meinem Kopf. Ich erinnere mich an die Seite, auf der das Lesezeichen lag.*"
     },
     "lunch2_seo_1": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*...Das würde wahrscheinlich Dain sagen. Die Winkel des Dreiecks werden schärfer. — Ich fühle mich weniger wie ein Eckpunkt und mehr wie das Opfer.*"
+        "text": "*Wenn Dain hier wäre, würde sie jetzt laut lachen. Stille hängt zwischen der Dachtür, der Lunchbox und meinen Essstäbchen.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -420,11 +420,11 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*Sie scheint leicht beleidigt. — Aber ihre Haltung ist makellos. Typisch sie.*"
+        "text": "*Seoyeon schließt den Deckel der Lunchbox mit demselben lächelnden Gesicht. Das Klicken ist etwas laut.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*Auf meinem Handrücken ist noch die Spur vom Reiskorn. Seoyeons Haltung ist makellos — aber ihre Mundwinkel sind ganz leicht nach unten gezogen.*"
+        "text": "*Ein Reiskorn markiert noch den Handrücken. Seoyeon lächelt, aber ein Mundwinkel senkt sich zuerst.*"
     },
     "lunch2_dain_1": {
         "name": "{name}",
@@ -501,7 +501,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*Dains Ausdruck erstarrt subtil. Sie beißt in ihr Soboro-Brötchen und dreht den Kopf weg.*"
+        "text": "*Dains Gesichtsausdruck verhärtet sich. Sie beißt ins Soboro und dreht den Kopf, ohne zu kauen.*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
@@ -541,7 +541,7 @@
     },
     "lunch2_dain_13_b": {
         "name": "{name}",
-        "text": "*Dain nimmt demonstrativ einen großen Bissen von ihrem Soboro. Als wäre ihre Frage eben nichts Besonderes gewesen.*"
+        "text": "*Dain beißt ein großes Stück vom Soboro-Brot ab. Krümel fallen auf ihren Uniformärmel.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Der Ton wie gestern. Aber ihre Augen sind schon auf der Wunde.*"
+        "text": "*Ihr Ton ist derselbe wie gestern. Nur ihr Blick fällt immer wieder unter ihre Knie.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Derselbe Ton wie immer. Aber ihre Augen sind schon auf der Wunde.*"
+        "text": "*Ihr Ton bleibt gleich. Nur ihr Blick fällt immer wieder unter ihre Knie.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Während ich das Pflaster prüfe — sehe ich ein Notizbuch, das aus ihrer Schreibtischschublade ragt. Hellgrüner Einband. Die offene Seite enthält etwas in Briefform. 'Yujin, heute—' Mehr lese ich nicht, da schließt die Krankenschwester die Schublade.*"
+        "text": "*Beim Überprüfen des Verbands bemerke ich ein hellgrünes Notizbuch, das aus der Schreibtischschublade herausragt. Die erste Zeile auf der offenen Seite lautet: 'Yujin, heute—' Die Krankenschwester schließt die Schublade.*"
     },
     "lunch2_dain_end_s": {
         "name": "Schulkrankenschwester",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Als Geheimnis ist es harmlos genug. Aber die Geste des Teilens — das bedeutet etwas.*"
+        "text": "*Es ist kein großes Geheimnis, aber nachdem sie es gesagt hat, tippt Dain mit dem Fingernagel auf den Deckel der Instant-Nudeln.*"
     },
     "lunch2_dain_end_u": {
         "name": "Schulkrankenschwester",
@@ -681,6 +681,6 @@
     },
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
-        "text": "*Vielleicht kann ich nach der Schule nochmal vorbeikommen.*"
+        "text": "*Ein leeres Feld bleibt auf dem Terminplan neben dem Ausleihschalter. Yuna blättert um, ohne auch nur hinzusehen.*"
     }
 }

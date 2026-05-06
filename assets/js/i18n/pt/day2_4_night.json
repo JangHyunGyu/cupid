@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Três pessoas esperando resposta ao mesmo tempo. — Não sei se isso é felicidade ou tortura.*"
+        "text": "*Três conversas de mensagem se abrem uma após a outra. Antes de poder escrever uma resposta, o indicador de bateria cai uma barra.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*A terceira estrela? — Virei pra janela. Tem estrela pra tudo quanto é lado. Não faço ideia de qual é a terceira.*"
+        "text": "*A terceira estrela? Virei a cabeça para a janela. Há muitas estrelas no céu noturno. Enquanto as conto com o dedo, o vidro da janela embaça.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -158,7 +158,7 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Abri a janela. O vento frio entra. — Estrela é o que não falta, mas não sei qual é a terceira.*"
+        "text": "*Abri a janela. O ar frio entra. As estrelas são muitas, e meu dedo para na terceira, suspenso no ar.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
@@ -210,35 +210,35 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Rolei muito pra baixo. Três meses atrás. — Uma foto. Foto de turma do passeio escolar. Sojeong tá sorrindo. Do meu lado. — Foi na semana seguinte a essa foto. Que as rabiscadas começaram a aparecer na carteira dela. Eu gostava dela. Sem dúvida. Mas tinha algo mais urgente do que dizer 'eu gosto de você'.*"
+        "text": "*Rolei bastante para baixo. Foto do passeio de três meses atrás. Sojeong está sorrindo ao meu lado. Nas fotos seguintes, a mesa de Sojeong está empurrada para trás aos poucos. Como se alguém tivesse cortado de propósito para não mostrar o grafite.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Na época eu abria o celular toda noite. Digitava e apagava coisas no bloco de notas. Frases de declaração, frases tipo 'Professora, a Sojeong tá—'. Toda vez parava na hora de enviar. Sentia que, se eu me metesse, ia virar alvo também. Num dia de março, a carteira da Sojeong tava vazia. No dia seguinte também. E no outro.*"
+        "text": "*Nas minhas notas, frases não enviadas estão alinhadas uma após a outra. 'Eu gosto de você.' 'Professora, na mesa de Sojeong—' 'Hoje também—' Todas cortadas na primeira linha. Última edição: 2h17 da manhã.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*As simulações no bloco de notas pararam na 38. Não existe a 39. Porque não tinha mais pra quem mandar. Não me declarei. Não protegi. A transferência não foi por causa dela. Foi pelo trabalho do meu pai. — Mas eu não fiquei triste de mudar. Não ia mais precisar passar pela carteira vazia dela todo dia.*"
+        "text": "*Abaixo da 38ª nota, não há nada. Só o título da 39ª está em branco. No dia seguinte, o assento de Sojeong ficou vazio até o fim. Nos papéis de transferência, a linha de assinatura do responsável tem o nome do pai dela.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Dessa vez, não desvia o olhar.' — Foi a promessa que fiz ao vir pra essa escola. Fechei a galeria. Pensei em apagar a foto, mas — deixei. Se apagasse, sentia que ia esquecer a culpa junto.*"
+        "text": "*Fechei a galeria. Meu dedo para sobre o botão de deletar foto. No fim, apago a tela. Só meu rosto fica na tela preta.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*E aí — olho pro teto. O dia de hoje não sai da minha cabeça. Seoyeon. Dain. Yuna. As três ocupam minha cabeça. Posso dizer que é curiosidade. Mas, sendo sincero, tenho medo. De pender pra uma delas.*"
+        "text": "*Olho para o teto. As mensagens de hoje se sobrepõem na minha tela de bloqueio. Seoyeon. Dain. Yuna. Ainda não li nenhuma delas.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Na época da Sojeong, eu olhava só para uma pessoa. Gostava, só observava, e perdi o momento em que ela desmoronou. Trinta e oito rascunhos parados nas notas. — Olhar só para uma significava poder perdê-la.*"
+        "text": "*Abro a foto de Sojeong de novo. Estou ao lado dela, olhando para a câmera. Sojeong está olhando para mim.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Por isso mantenho uma porta aberta com as três. Se escolher rápido demais, posso perder o momento em que outra desmorona. Um seguro. Sei que é covardia. Um indeciso de merda mesmo. Mas — perder alguém olhando só para ela, isso eu conheço.*"
+        "text": "*Abro a janela de resposta e fecho. Os três nomes estão alinhados lado a lado no topo dos meus chats recentes. Meu dedo não consegue tocar nenhum deles.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Fim do segundo dia. Ontem era curiosidade — queria saber que tipo de pessoa eram. Hoje é diferente. Não é curiosidade, é outra coisa. Elas ficam na cabeça. O que tão fazendo agora, o que vão dizer amanhã.*"
+        "text": "*O segundo dia acabou. Nomes que eram estranhos no primeiro dia agora ficam na minha tela de bloqueio. Mesmo depois que as notificações somem, continuo ligando a tela de novo.*"
     },
     "night2_end_2_b": {
         "name": "{name}",
@@ -246,11 +246,11 @@
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*O problema é que essa distância tá encurtando mais rápido do que eu esperava. Fecho os olhos. — Amanhã talvez eu precise ser um pouco mais honesto.*"
+        "text": "*Fechei os olhos. Na tela de bloqueio, só resta o número de mensagens não lidas. Mesmo depois que a tela apaga, minha mão ainda parece brilhar.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Abri a geladeira. Quase nada. Arroz de ontem, ovo, alga. — Deu vontade de levar alguma coisa amanhã. Pra quem? Não sei. Só deu vontade.*"
+        "text": "*Abri a geladeira. Arroz sobrado, ovos, kimchi. Tiro a marmita e coloco na mesa. Ainda não abri a tampa.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

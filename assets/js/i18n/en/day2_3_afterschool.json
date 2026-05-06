@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Commanding tone, but somehow it's starting to feel familiar. — Is this her version of asking nicely?*"
+        "text": "*The sentence ends like a command, but Seoyeon doesn't turn away immediately. She waits to see if I'll follow.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -310,7 +310,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*There was no message from Yuna. But my feet are heading toward the library. Why? — I'm not sure. Maybe because of the morning note.*"
+        "text": "*No message from Yuna. Still, my feet head toward the library. The folded note in my pocket brushes against the back of my hand with every step.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*A door left open by coincidence. — Yuna's 'coincidence' usually means 'on purpose.' I sit down next to her. Yuna holds out one earbud.*"
+        "text": "*The door is open, like it just happened. On the chair inside, one earbud is already lying there. Yuna silently points at the seat next to her with her chin.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -390,7 +390,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Late notifications on my phone — Dain's 'I was waiting, you know?' and Seoyeon's 'Tell me if your schedule changes.' Sitting next to Yuna listening to music, the sunset already faded. — When I'm next to this person, I keep wanting to come back.*"
+        "text": "*On my phone, Dain's 'I was waiting?' and Seoyeon's 'Tell me if your schedule changes' arrived late. The seat where Yuna and I sat side by side—one earbud is still warm.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Checking the bandage — I notice a notebook poking out of her desk drawer. Pale green cover. The open page has something written in letter form. 'Yujin, today—' That's as far as I read before the nurse closes the drawer.*"
+        "text": "*While checking the bandage, I notice a light green notebook sticking out from the desk drawer. The first line of the open page reads: 'Yujin, today—' The nurse closes the drawer.*"
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
@@ -524,7 +524,7 @@
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*Final score: 3-2. Won by a hair. Dain stands up — and rubs her right knee a little. I think she did the same thing in the gym yesterday. An unconscious gesture.*"
+        "text": "*3:2 in the end. A narrow win. Dain stands and rubs her right knee once. Her smile stays the same.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
@@ -532,7 +532,7 @@
     },
     "after2_seo_4_b": {
         "name": "{name}",
-        "text": "*The word 'please' doesn't seem to exist in her vocabulary.*"
+        "text": "*Instead of 'please,' Seoyeon turns the clipboard toward me. The top of the to-do list is blank.*"
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "{name}",
-        "text": "*She actually said 'compliment' out loud. — That seems rare for her.*"
+        "text": "*Seoyeon calls it a compliment, then goes straight back to sorting the papers. The moment she turns her neck, her shoulders stiffen—just slightly.*"
     },
     "after2_seo_sunset_joke_b": {
         "name": "Seoyeon",
@@ -564,7 +564,7 @@
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*Whose hand is that? — It's Seoyeon's hand on my shoulder. My thoughts are scrambled. That's how tense I am.*"
+        "text": "*Whose hand? Seoyeon's hand is on my shoulder. I got it backwards. Her fingertips pause on my shoulder for a moment too.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",

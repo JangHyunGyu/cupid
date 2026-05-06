@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Tengo que contestarle a las tres a la vez. — No sé si esto es la gloria o una tortura.*"
+        "text": "*Tres hilos de mensajes se abren uno tras otro. Antes de poder escribir una respuesta, el indicador de batería baja una barra.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*¿La tercera estrella? — Giro la cabeza hacia la ventana. El cielo está lleno de estrellas. No sé cuál será la tercera.*"
+        "text": "*¿La tercera estrella? Giré la cabeza hacia la ventana. Hay muchas estrellas en el cielo nocturno. Mientras las cuento con el dedo, el cristal de la ventana se empaña.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -154,35 +154,35 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Deslicé la galería durante un buen rato. Tres meses atrás. — Aparece una foto. Una foto de grupo del día de la excursión. Sojeong está sonriendo. A mi lado. — Fue la semana siguiente a esa foto cuando empezaron a aparecer los garabatos en su pupitre. Me gustaba. De eso no hay duda. Pero había algo más urgente que decir que 'me gustas'.*"
+        "text": "*Bajé bastante. Foto de la excursión de hace tres meses. Sojeong está sonriendo a mi lado. En las fotos siguientes, el escritorio de Sojeong está empujado hacia atrás poco a poco. Como si alguien lo hubiera recortado a propósito para que no se viera el grafiti.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Por aquel entonces abría el celular cada noche. Escribía algo en las notas y lo borraba. Una y otra vez. Frases para declararme, pero también frases tipo 'Profe, a Sojeong la están —'. Paraba siempre justo antes de enviar. Sentía que, si me metía, terminaría también en la mira. Y un día de marzo, el pupitre de Sojeong apareció vacío. Al día siguiente, también. Y al otro.*"
+        "text": "*En mis notas, frases sin enviar están alineadas una tras otra. 'Me gustas.' 'Profesora, en el escritorio de Sojeong—' 'Hoy también—' Todas cortadas en la primera línea. Última edición: 2:17 a.m.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Los ensayos en las notas del celular se quedaron en el número 38. No hay un 39. Porque ya no quedaba nadie a quien enviárselo. Ni me declaré ni fui capaz de protegerla. El cambio de escuela no fue por Sojeong. Fue por el trabajo de mi padre. — Pero la verdad es que no me disgustó irme. Así ya no tenía que pasar cada día delante de su pupitre vacío.*"
+        "text": "*Debajo de la nota 38, no hay nada. Solo el título 39 está en blanco. Al día siguiente, el asiento de Sojeong quedó vacío hasta el final. En los papeles de transferencia, la línea de firma del tutor tiene el nombre de su padre.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Esta vez, no apartes la mirada.' — Esa fue la promesa que me hice al llegar a esta escuela. Cerré la galería. Dudé si borrar la foto y — al final la dejé. Si la borraba, sentía que acabaría borrando también la culpa de entonces.*"
+        "text": "*Cerré la galería. Mi dedo se detiene sobre el botón de eliminar foto. Al final, apago la pantalla. Solo queda mi cara en la pantalla negra.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Y aun así — me quedo mirando el techo. El día de hoy no se me va de la cabeza. Seoyeon. Dain. Yuna. Las tres me importan. Podría decir que es simple curiosidad. Pero, si soy sincero, me asusta. Empezar a inclinarme por una sola.*"
+        "text": "*Miro el techo. Los mensajes de hoy se superponen en mi pantalla de bloqueo. Seoyeon. Dain. Yuna. Todavía no leí ninguno.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Con Sojeong, solo miraba a una persona. La quería, solo miraba, y me perdí su derrumbe. Treinta y ocho intentos parados en mis notas. — Mirar solo a una significaba poder perderla.*"
+        "text": "*Abro la foto de Sojeong de nuevo. Estoy parado a su lado, mirando a la cámara. Sojeong me está mirando a mí.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Por eso me dejo opciones con las tres. Si elijo una muy rápido, podría no ver el momento en que otra se cae. Un seguro. Sé que es cobardía. Un indeciso de mierda. Pero — lo que es perder a alguien viendo solo a esa persona, eso sí lo sé.*"
+        "text": "*Abro la ventana de respuesta y la cierro. Los tres nombres están alineados uno al lado del otro en la parte superior de mis chats recientes. Mi dedo no puede tocar ninguno.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Fin del segundo día. El primer día fue curiosidad. Quería saber qué clase de personas eran. Hoy — es un poco distinto. Ya no es curiosidad. Se me metieron en la cabeza. Qué estarán haciendo, qué me dirán mañana.*"
+        "text": "*El segundo día terminó. Los nombres que eran extraños el primer día ahora están en mi pantalla de bloqueo. Incluso después de que las notificaciones se apagan, sigo encendiendo la pantalla de nuevo.*"
     },
     "night2_hidden_check": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Abrí la ventana. Entra un aire frío. — Estrellas hay un montón, pero no sé cuál será la tercera.*"
+        "text": "*Abrí la ventana. Entra aire frío. Las estrellas son muchas, y mi dedo se detiene en la tercera, suspendido en el aire.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
@@ -246,11 +246,11 @@
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*El problema es que esa distancia se está acortando más rápido de lo que pensaba. Cierro los ojos. — Mañana a lo mejor tengo que ser un poco más sincero.*"
+        "text": "*Cerré los ojos. En la pantalla de bloqueo solo queda el número de mensajes sin leer. Incluso después de que la pantalla se apaga, mi mano todavía se siente iluminada.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Abro el refrigerador. No hay gran cosa. Arroz del día anterior, huevos, alga. — Me dan ganas de prepararle algo a alguien mañana. ¿A quién? No lo sé. Solo tengo ganas.*"
+        "text": "*Abrí el refrigerador. Arroz sobrante, huevos, kimchi. Saco la lonchera y la pongo sobre la mesa. Todavía no abrí la tapa.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

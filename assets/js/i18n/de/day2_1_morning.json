@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Sie blieb nicht stehen. Aber ihr Blick war eindeutig auf mir. In dem Moment, als Seoyeon um die Ecke bog — glaube ich, ihr Lächeln ging verloren. Bilde ich mir das ein?*"
+        "text": "*Ich blieb nicht stehen. Kurz bevor Seoyeon um die Ecke biegt, verschwindet zuerst ihr Lächeln. Das Klemmbrett drückt sich näher an ihre Brust.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Kann man einen Menschen reservieren? — Aber es stört mich nicht. Das ist ein bisschen beängstigend.*"
+        "text": "*Sind Menschen Objekte, die beansprucht werden können? Die Kante von Seoyeons Klemmbrett tippt gegen den Schreibtisch. Ich konnte nicht sofort Nein sagen.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*War wahrscheinlich welcher da. Vielleicht. — Aber darum geht's wohl nicht.*"
+        "text": "*Anstatt zu antworten, richte ich meinen Taschenriemen. Dain sieht es, fragt aber nicht weiter.*"
     },
     "morning2_end": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon kam als Erste auf mich zu. Ihr üblicher lässiger Ton, aber mit einem Hauch von Bestätigungsbedarf. Dain wirft von hinten im Klassenzimmer einen verstohlenen Blick herüber. Dreht den Kopf weg. Yuna vergräbt sich tiefer in ihr Buch. Das Umblättern wird schneller.*"
+        "text": "*Seoyeon kam zuerst. Das Klemmbrett ist heute wieder an die Innenseite ihres Arms gedrückt. Dain wirft einen flüchtigen Blick aus dem hinteren Teil des Klassenzimmers und wendet sich ab. Yuna blättert schneller.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*Ich falte den Zettel und halte ihn in der Hand. — Irgendwie fühlt er sich kostbar an.*"
+        "text": "*Ich falte die Notiz und halte sie in meiner Hand. Die Falte drückt sich in meine Handfläche.*"
     },
     "morning2_break_transition_b": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Ich ging der Lehrerin ins Lehrerzimmer nach.* *Ihr Schreibtisch steht in der Ecke. Papiere und eine Kaffeetasse auf dem Tisch, und — eine Schublade, leicht geöffnet. Auf dem Tisch ein Stapel Papier — und was wie Manuskriptseiten aussieht.*"
+        "text": "*Ich folgte der Klassenlehrerin ins Lehrerzimmer. Eine Schublade an einem Eckschreibtisch steht leicht offen. Unter einem Stapel Papiere ist der Rand von Manuskriptpapier zu sehen.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Klassenlehrerin",
@@ -350,7 +350,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*Sie hat den Mund verdeckt, aber spielt nur so mit ihrer Tasse herum. Auch diese Person zeigt es, wenn sie verlegen ist.*"
+        "text": "*Die Klassenlehrerin bedeckt ihren Mund mit der Kaffeetasse und dreht die Untertasse zweimal an derselben Stelle.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",

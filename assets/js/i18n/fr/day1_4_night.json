@@ -113,7 +113,7 @@
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Pas un mauvais premier jour. Demain — ça va sûrement être encore un peu plus marrant.*"
+        "text": "*Les noms que j'ai enregistrés aujourd'hui restent sur mon écran de verrouillage. Même après avoir éteint l'écran, mon doigt cherche une fois de plus le bouton d'alimentation.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Une infirmière qui met des cœurs dans les dossiers médicaux. C'est la première fois que je vois des émojis dans un dossier de santé.*"
+        "text": "*Il y a un cœur après 'intérêt médical.' Jusqu'à ce que j'éteigne l'écran, je continue de regarder ce cœur encore une fois.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

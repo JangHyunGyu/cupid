@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Je me tiens devant un portail inconnu. Un lycée plutôt grand. Les élèves passent par petits groupes. Je suis le seul dont l'uniforme est encore d'un blanc rigide. Une fille se tient devant le portail. Elle rejette ses longs cheveux noirs d'un geste léger — derrière ses lunettes, sa démarche est tranquille. Aucune trace de précipitation.*"
+        "text": "*Un portail d'école inconnu. Les élèves passaient par petits groupes. Mon uniforme était le seul à garder encore ses plis de repassage. Près du portail, une fille aux longs cheveux noirs remonta ses lunettes et vérifia l'heure. Quand je me suis arrêté, elle a levé la tête aussi.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "{name}",
-        "text": "*Sa voix est posée. Pas froide, mais avec une certaine décontraction.*"
+        "text": "*Seoyeon vérifie mon nom une dernière fois et coche brièvement la liste sur son bloc. Derrière ses lunettes, son regard met un instant de trop à se détourner.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "choice_dismiss_3": {
         "name": "{name}",
-        "text": "*Seoyeon est vraiment partie. Sans même un signe. J'ai galéré à déchiffrer le plan du couloir pour arriver devant la salle. — J'ai fait mon choix, j'assume.*"
+        "text": "*Seoyeon a vraiment tourné les talons. Sans un geste. Après avoir mal lu deux fois les panneaux du couloir, elle s'est enfin arrêtée devant la 3-2.*"
     },
     "choice_flirt_1": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "{name}",
-        "text": "*Une présidente du conseil avec cette intensité dès le premier jour. — Pas mal.*"
+        "text": "*Seoyeon a pris les devants, puis s'est retournée une fois pour vérifier que je suivais. Le coin de son bloc-notes tapotait doucement entre ses doigts.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "{name}",
-        "text": "*Seoyeon me fait visiter en marchant. Les élèves qu'on croise la saluent. Elle leur rend leur salut d'un regard, un par un. Elle lève la main, naturellement. Visiblement, on sait déjà qui sont les populaires de ce lycée.*"
+        "text": "*Seoyeon marchait devant dans le couloir. Les élèves la saluaient au passage. Elle répondait d'un léger signe de bloc-notes, sans jamais ralentir.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -178,15 +178,15 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Je détourne les yeux et j'aperçois une fille au fond, près de la fenêtre, le menton dans la main, qui regarde dehors. Ma présentation a l'air de la laisser totalement indifférente.*"
+        "text": "*J'ai tourné la tête : tout au fond, près de la fenêtre, une fille le menton dans la main regardait dehors. Pendant qu'on inscrivait mon nom au tableau, seule une page a tourné.*"
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Cheveux argentés. Des yeux rouges, mi-clos, nonchalants. Des tatouages plein les bras. — Elle ne jette même pas un œil par ici. Comme si un nouveau, c'était rien d'extraordinaire. Les élèves autour d'elle ne la regardent pas non plus. Volontairement. Comme s'il n'y avait personne à cette place.*"
+        "text": "*Cheveux blanc argenté. Yeux rouges. Un tatouage sur le bras. La fille du dernier rang côté fenêtre gardait le menton dans la main, le regard tourné dehors. Les bureaux autour d'elle étaient peu à peu plus vides.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Quelqu'un au premier rang chuchote. '...Lui parle pas, elle fout les jetons.' — Assez près pour que Yuna l'entende forcément. Mais son visage ne bouge pas. Elle a l'habitude.*"
+        "text": "*Quelqu'un chuchota au premier rang. « …Lui parle pas, elle fait peur. » Yuna tourna une page. Juste un peu plus lentement qu'avant.*"
     },
     "classroom_seat_1": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "classroom_seat_2": {
         "name": "{name}",
-        "text": "*Juste à côté de Dain. Sauvé ou foutu, je sais pas, mais au moins ce sera pas calme.*"
+        "text": "*La place à côté de Dain. Avant même que je m'assoie, Dain s'était déjà à moitié tournée vers mon bureau.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -238,19 +238,19 @@
     },
     "classroom_dain_talk_8": {
         "name": "{name}",
-        "text": "*Elle a dit 'sûrement'. Ce qui veut dire que je suis peut-être mieux qu'une machine. Ma position est précaire.*"
+        "text": "*Après « peut-être », le regard de Dain glissa vers la machine à balles. Un panier rempli attendait au bout du court.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Un mot plié atterrit sur mon bureau. — Je me retourne et la fille aux cheveux blanc argenté près de la fenêtre regarde à nouveau dehors. Malgré ses bras couverts de tatouages — l'écriture sur le mot est soignée. Je le déplie.*"
+        "text": "*Un mot plié a glissé sur mon bureau. En me retournant, la fille aux cheveux argentés près de la fenêtre regardait toujours dehors. L'écriture sur le mot était étonnamment soignée.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
-        "text": "*'T'es tombé sur la place bruyante. — Yuna' Encre violet pâle. — La tension retombe un peu.*"
+        "text": "*« T'as hérité d'une place bruyante. — Yuna » Encre lavande. Un petit pli au coin du mot.*"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Je regarde vers Yuna. Elle fixe toujours la fenêtre. Mais j'ai l'impression que le bout de son oreille a bougé. Le mot vient de la fille qui regardait dehors tout à l'heure. Elle fait semblant de s'en moquer, ou elle s'en moque vraiment ?*"
+        "text": "*J'ai regardé vers Yuna — toujours tournée vers la fenêtre. Seul le bout de ses doigts avait glissé sous le bureau. Là où le mot se trouvait un instant plus tôt.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
@@ -270,7 +270,7 @@
     },
     "hallway_13_b": {
         "name": "{name}",
-        "text": "*Son dos est parfaitement droit. — Derrière cette aisance, qu'est-ce qui se cache.*"
+        "text": "*Le dos droit. Seuls ses doigts bougeaient, tapotant le bord du bloc-notes à un rythme régulier.*"
     },
     "classroom_2_b": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "classroom_dain_5_b": {
         "name": "{name}",
-        "text": "*La prof laisse échapper un petit soupir. Pas d'exaspération — le soupir de quelqu'un qui a l'habitude.*"
+        "text": "*La professeure principale laissa échapper un léger soupir. Elle tapota le coin du registre et chercha le nom suivant sans même regarder vers Dain.*"
     },
     "classroom_dain_5_c": {
         "name": "Professeure principale",

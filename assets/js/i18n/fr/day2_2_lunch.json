@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Contrairement à hier, j'ai le mot de Yuna dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec un bento, et Dain me fait à nouveau signe d'aller au kiosque. La pause déjeuner dans ce lycée, c'est une guerre.*"
+        "text": "*Déjeuner. Le mot de Yuna est dans ma poche. Au bout du couloir, Seoyeon se dirige vers le toit avec sa boîte à lunch, et Dain fait signe vers la cafétéria. Mes pieds s'arrêtent devant trois directions.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "{name}",
-        "text": "*Une ombre passe sur le visage de Yuna. Je sais pas qui est ce « quelqu'un », mais—*"
+        "text": "*Yuna enfonce le marque-page profondément dans le livre. La page se plie après 'Je l'avais.'*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "*Yuna ouvre son livre. Signal de fin de conversation. Il faut que je change l'ambiance. — Évacuons ça avec quelque chose de léger.*"
+        "text": "*Yuna ouvre le livre. La page couvre la moitié de son visage. Je me mords la lèvre une fois.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "{name}",
-        "text": "*J'ai gaffé. Vouloir évacuer ça à la légère a juste donné l'impression que je minimisais sa blessure. Un silence gênant s'installe. On n'entend que le bruit des pages qu'on tourne.*"
+        "text": "*La main de Yuna s'arrête sur le marque-page. Seul le bruit des pages qui tournent résonne fort.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -300,7 +300,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Le 'il y avait' de Yuna tourne dans ma tête. La signification de cet endroit qu'elle m'a montré... commence à prendre forme.*"
+        "text": "*Le 'Je l'avais' de Yuna tourne dans ma tête. Je repense à la page où se trouvait le marque-page.*"
     },
     "lunch2_seo_1": {
         "name": "{name}",
@@ -368,7 +368,7 @@
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*...C'est ce que Dain dirait, sûrement. Les angles du triangle s'aiguisent. — J'ai l'impression d'être le sacrifice plutôt qu'un sommet.*"
+        "text": "*Si Dain était là, elle rirait aux éclats en ce moment. Le silence s'étend entre la porte du toit, la boîte à lunch et mes baguettes.*"
     },
     "lunch2_seo_19": {
         "name": "{name}",
@@ -420,11 +420,11 @@
     },
     "lunch2_seo_c2_3": {
         "name": "{name}",
-        "text": "*Elle a l'air un peu vexée. — Mais sa contenance est impeccable. C'est tout elle.*"
+        "text": "*Seoyeon ferme le couvercle de la boîte à lunch avec le même visage souriant. Le clic résonne un peu fort.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*Il reste encore une trace de grain de riz sur le dos de ma main. La contenance de Seoyeon est impeccable — mais les coins de ses lèvres se sont légèrement affaissés.*"
+        "text": "*Une trace de riz reste encore sur le dos de sa main. Seoyeon sourit, mais un coin de sa bouche retombe en premier.*"
     },
     "lunch2_dain_1": {
         "name": "{name}",
@@ -501,7 +501,7 @@
     },
     "lunch2_dain_c1_1": {
         "name": "{name}",
-        "text": "*L'expression de Dain se fige subtilement. Elle croque son soboro et détourne la tête. — Est-ce que je l'ai blessée ?*"
+        "text": "*L'expression de Dain se durcit. Elle mord dans le soboro et tourne la tête sans mâcher.*"
     },
     "lunch2_dain_c2_1": {
         "name": "{name}",
@@ -541,7 +541,7 @@
     },
     "lunch2_dain_13_b": {
         "name": "{name}",
-        "text": "*Dain mord exagérément dans son soboro. Comme si la question qu'elle venait de poser n'avait rien d'important.*"
+        "text": "*Dain prend une grosse bouchée du pain soboro. Des miettes tombent sur sa manche d'uniforme.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -581,11 +581,11 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Même ton qu'hier. Mais ses yeux sont déjà sur la coupure.*"
+        "text": "*Son ton est le même qu'hier. Seul son regard continue de tomber sous ses genoux.*"
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Toujours le même ton. Mais ses yeux sont déjà sur la coupure.*"
+        "text": "*Son ton reste le même. Seul son regard continue de tomber sous ses genoux.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -625,7 +625,7 @@
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*En vérifiant le pansement — je remarque un cahier qui dépasse du tiroir de son bureau. Couverture vert tendre. La page ouverte contient un texte en forme de lettre. 'Yujin, aujourd'hui—' Je n'ai pas le temps d'en lire plus, l'infirmière referme le tiroir.*"
+        "text": "*En vérifiant le pansement, je remarque un cahier vert clair qui dépasse du tiroir du bureau. La première ligne de la page ouverte indique : 'Yujin, aujourd'hui—' L'infirmière ferme le tiroir.*"
     },
     "lunch2_dain_end_s": {
         "name": "Infirmière",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Comme secret, c'est assez anodin. Mais le fait de le partager — ça veut dire quelque chose.*"
+        "text": "*Ce n'est pas vraiment un secret, mais après l'avoir dit, Dain tapote le couvercle des nouilles instantanées avec son ongle.*"
     },
     "lunch2_dain_end_u": {
         "name": "Infirmière",
@@ -681,6 +681,6 @@
     },
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
-        "text": "*Je pourrais peut-être revenir après les cours.*"
+        "text": "*Un espace vide reste sur le planning près du comptoir de prêt. Yuna tourne la page sans même y jeter un œil.*"
     }
 }

@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Hora del almuerzo. El pasillo está atestado de estudiantes. Me llegan señales desde tres direcciones a la vez.*"
+        "text": "*Hora del almuerzo. El pasillo está repleto de estudiantes. Un almuerzo en la azotea, una seña desde la cafetería, una nota hacia la biblioteca: todo me llega al mismo tiempo.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Tres caminos. Una elección así el primer día. En mi escuela anterior no elegía. Lo posponía y se me iba el momento. — Esta vez no.*"
+        "text": "*El pasillo se divide en tres caminos. Azotea, cafetería, biblioteca. Dentro del bolsillo, la esquina del celular me roza las yemas de los dedos.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*La azotea está limpia. Unas macetas y una silla plegable a un lado. Alguien la cuida.*"
+        "text": "*La azotea está limpia. Cada maceta aún tiene restos de humedad, y las sillas plegables están apoyadas contra la pared a intervalos iguales.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "{name}",
-        "text": "*Finge tranquilidad, pero parece un poco molesta.*"
+        "text": "*Seoyeon cierra la tapa de la lonchera muy despacio. Su meñique presiona el borde de la tapa una vez más.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*No es nada del otro mundo, pero se me va la vista sola.*"
+        "text": "*El meñique de Seoyeon vuelve a apartar las puntas de su cabello.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -298,7 +298,7 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*Sigo a Yuna hasta la biblioteca. Casi nadie viene aquí durante el almuerzo.*"
+        "text": "*Sigo la silueta de Yuna hasta la biblioteca. Ya sonó la campana del almuerzo, pero solo la silla del mostrador de préstamos está vacía, ligeramente torcida.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
@@ -306,7 +306,7 @@
     },
     "lunch_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna se sienta en un rincón de la sala de lectura. Abre un libro. No sé si sabe que la seguí. Me siento con cuidado frente a ella.*"
+        "text": "*Yuna se sienta en el rincón más alejado de la sala de lectura. Abre su libro. Cuando las patas de la silla de enfrente rozan levemente el suelo, sus dedos se detienen sobre la página.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*¿Eso es un permiso? Parece que sí. — Condicional. Se instala el silencio. Yuna lee. Como no tengo nada que hacer, recorro las estanterías.*"
+        "text": "*Yuna vuelve a abrir el libro. Empuja la mochila de la silla de enfrente bajo el escritorio. Me siento en el asiento vacío.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna se levanta antes que yo y se marcha. No mira atrás. 'Fue agradable.' — Y yo me quedo de buen humor, sin saber muy bien por qué.*"
+        "text": "*Yuna se levanta primero y se va caminando. No mira atrás. 'Estuvo bien.' Esas palabras quedan solas sobre la mesa.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Hay algo metido en el escritorio de Yuna. Un separador viejo. Tiene algo escrito, pero no alcanzo a leerlo. Yuna pone inconscientemente la mano encima. Quizá sea algo valioso para ella. Saco un libro cualquiera del estante y lo abro.*"
+        "text": "*Un marcapáginas viejo asoma del libro de Yuna. Tiene algo escrito, pero no alcanzo a leerlo. Yuna posa la mano encima sin darse cuenta. Yo saco cualquier libro del estante más cercano.*"
     }
 }

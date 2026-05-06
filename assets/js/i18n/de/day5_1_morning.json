@@ -9,7 +9,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "Letzter Tag. Seltsamerweise fühlen sich meine Schritte leicht an. Heute — glaube ich, kann ich es sagen."
+        "text": "Es ist der letzte Tag. Der Dachschlüssel in meiner Tasche berührt bei jedem Schritt meinen Handrücken."
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Letzter Tag. Hätte nicht gedacht, dass fünf Tage so schnell vergehen. ...Ich weiß nicht mal, was ich getan habe."
+        "text": "Der letzte Tag. Ich tippe nacheinander auf die drei Namen auf meinem Sperrbildschirm. Ich kann keines der Chat-Fenster öffnen."
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "morning5_end": {
         "name": "{name}",
-        "text": "*Signale aus drei Richtungen. — Zeit, eine Antwort zu wählen.*"
+        "text": "*Ich lege die Notizen und Benachrichtigungen aus drei Richtungen nebeneinander auf meinen Schreibtisch.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*Sie dreht sich um. Ihr langes Haar schwingt mit. - Sie wirkt wie jemand, der bis zum Schluss nicht auseinanderfallen will.*"
+        "text": "*Die Lehrerin dreht sich um. Ihr langes Haar schwingt, und die gefaltete Kante des Umschlags wird gegen ihren Ellbogen gedrückt.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Klassenlehrerin",
@@ -147,7 +147,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Kaum betrete ich das Klassenzimmer — kommen Signale aus drei Richtungen. Das letzte Event. Alles, was sich in den letzten Tagen aufgestaut hat, fließt in den heutigen Tag zusammen.*"
+        "text": "*In dem Moment, als ich das Klassenzimmer betrete, kommt Aufmerksamkeit aus drei Richtungen. Eine Notiz auf meinem Schreibtisch, ein Band an einer Sportanzug-Schnur, eine Benachrichtigung auf meinem Sperrbildschirm.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*Am Schwarzen Brett ist eine Kurzgeschichte angeheftet. Titel: 'An den, den ich in der Bibliothek getroffen habe.' Das ist von Yuna. — Eine Geschichte, die nur ich erkennen kann. Ich blieb noch einen Moment davor stehen. Kurze Sätze, aber so deutlich, als hätte Yuna mir ihr Gesicht direkt vor meines gehalten.*"
+        "text": "*Eine Kurzgeschichte hängt am schwarzen Brett. Titel: 'An die Person, die ich in der Bibliothek getroffen habe.' Hellviolette Tinte. Ein kleiner Brotkrümel klebt an der gefalteten Ecke.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Eine Zeile. — Jemand, der dreimal beim Literaturdebüt gescheitert ist, wartet auf die einzeilige Rezension eines Schülers. Wenn das kein Geständnis ist, was dann? Die Klassenlehrerin geht zum Ausgang — und bleibt vor der Tür stehen.*"
+        "text": "*Eine Zeile. Die Lehrerin bleibt an der Tür stehen, als sie gehen will. Sie faltet die Kante des Manuskript-Umschlags zweimal mit dem Finger, dann glättet sie ihn.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Klassenlehrerin",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Klassenlehrerin",
-        "text": "...Ich glaube, ich habe die Grenzen des pädagogischen Interesses etwas überschritten. Weil es das letzte Mal ist. Nur dieses eine Mal."
+        "text": "...Damit überschreite ich eine Grenze. Aber es ist das letzte Mal. Nur noch einmal."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
-        "text": "*Sie sagte 'letzter Tag des Events', aber da schwingt noch eine andere Bedeutung mit.*"
+        "text": "*Nachdem sie gesagt hat, dass es der letzte Tag der Veranstaltung ist, berührt die Krankenschwester einmal ihr Stethoskop.*"
     },
     "hidden_nurse_d5_1_c": {
         "name": "Schulkrankenschwester",
@@ -303,7 +303,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*Von 'komm nach dem Abschluss' zu 'komm, wenn dir was wehtut' — ein Rückzug. Sie wollte die Grenze überschreiten und ist zurückgewichen.*"
+        "text": "*'Komm vorbei, wenn es dir nicht gut geht.' Nachdem sie das gesagt hat, wechselt die Krankenschwester leicht die Hand, die zwei Pappbecher hält.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -363,7 +363,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Ihr Markenspruch von Tag 1. — Damals war es Vorstellung. Jetzt ist es ernst. Die Schulkrankenschwester holt ein Pflaster heraus und klebt es auf meinen Handrücken. Langsam. — Auf dem Pflaster steht etwas in kleiner Schrift.*"
+        "text": "*Die Krankenschwester nimmt ein Pflaster heraus und klebt es auf meinen Handrücken. Langsam. Am Rand des Pflasters steht eine winzige Schrift.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -387,7 +387,7 @@
     "morning5_end_branch": {},
     "morning5_committed_end": {
         "name": "{name}",
-        "text": "*Es sind keine Signale mehr aus drei Richtungen. Ich habe meine Antwort schon gewählt und gehe zum letzten Programmpunkt.*"
+        "text": "*Ich ordne die Notizen auf meinem Schreibtisch und überprüfe den Veranstaltungsplan für die Richtung, die ich bereits gewählt habe.*"
     },
     "morning5_gate": {
         "name": "{name}",
@@ -395,11 +395,11 @@
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*Der letzte Satz. 'Als er die Augen öffnete, war ich schon weg. Ich hab nur einen Zettel hinterlassen. — Beim nächsten Mal bin ich auch da.' Hellviolette Tinte. Dieselbe Tinte wie der Zettel von Tag 1.*"
+        "text": "*Der letzte Satz. 'Als diese Person die Augen öffnete, war ich schon weg. Ich ließ nur eine Notiz zurück. — Ich werde nächstes Mal wieder hier sein.' Hellviolette Tinte. Die gleiche Farbe wie die erste Notiz.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*In einer kleinen Ecke unter dem Brett — 'Das ist Fiktion. Nicht echt.' Spuren des Radierens. Gelöscht, aber die Spuren bleiben. Yuna hat es geschrieben, radiert und schließlich stehen lassen.*"
+        "text": "*In der unteren Ecke des schwarzen Bretts, kleine Schrift — 'Das ist Fiktion. Es ist nicht echt.' Radiergummi-Spuren bleiben.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Der leere Platz in der Bibliothek, das verschwundene Lesezeichen, und nun eine nie aufgehängte Geschichte. — Yuna löscht jede Spur. Die Stille, die ich an Tag 3 hinterlassen habe, ist bis hierher gekommen.*"
+        "text": "*Ein leerer Bibliotheksplatz, ein verschwundenes Lesezeichen, ein nicht aufgehängter Roman. Nur vier Reißzweckenlöcher bleiben an der Pinnwand.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Ich habe die Tür hinter mir geschlossen. Der Umschlag liegt noch auf ihrem Schreibtisch. — Was sie in sieben Jahren nie bekommen hatte, war kein aufrichtiges Lob, sondern jemand, der es ernsthaft liest. Lob gab es auch in den Absagebriefen. Ich habe genau dasselbe gesagt wie ein Absagebrief. In guter Absicht.*"
+        "text": "*Ich verließ den Raum und schloss die Klassenzimmertür. Der Umschlag liegt noch auf dem Schreibtisch der Lehrerin. Eine Rücksende-Aufkleber-Spur in Nagelgröße bleibt auf der Oberfläche.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Ich wusste es nicht. Es war eine Vermutung. — Dass jemand, der sieben Jahre daran saß, es ausgerechnet heute einem Schüler zum ersten Mal zeigt, war seltsam. Wäre es fertig, hätte sie es zuerst an Verlage geschickt. Es ist nicht fertig — also braucht sie Erlaubnis, es zu beenden.*"
+        "text": "*Die letzte Seite des Manuskripts hat keinen Punkt. Unter einer mit rotem Stift gezogenen Linie ist derselbe Satz dreimal neu geschrieben.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
@@ -511,6 +511,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Ich nehme das Manuskript wieder in den Arm. Es ist nicht mehr so schwer wie vorher. — Sieben Jahre Unfertiges mit Lob abzuschließen war nicht, was sie brauchte. Was sie brauchte, war jemand, der das Unfertige als unfertig anerkennt. Das ist echte Unterstützung.*"
+        "text": "*Sie nimmt das Manuskript wieder in die Arme. Die Lehrerin reibt über die Rücksende-Aufkleber-Spur mit dem Daumen. Die Papierkante zerknittert leicht in ihrer Handfläche.*"
     }
 }

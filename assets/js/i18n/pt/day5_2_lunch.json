@@ -69,7 +69,7 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*O anexo da biblioteca. O canto secreto de leitura onde entrei pela primeira vez no Dia 2. Sofá gasto, luz da tarde entrando pela janela.*"
+        "text": "*O anexo da biblioteca. Um sofá velho, luz da tarde pela janela. O mesmo cheiro de poeira de quando você entrou pela primeira vez.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "tour_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna senta no sofá. Deixa o lugar do lado vazio. — Mesma cena do Dia 2.*"
+        "text": "*Yuna senta no sofá. Deixa o assento ao lado vazio. Um lugar onde a poeira não se acumulou.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "tour_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna tira um caderno da bolsa. O mesmo caderno que flagrei no Dia 3.*"
+        "text": "*Yuna tira um caderno da bolsa. O mesmo que cobriu às pressas no sótão.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*O ginásio. Onde a gente fez a primeira aposta no Dia 1, e a Dain mandou a última cortada no Dia 4. — Hoje as luzes estão acesas.*"
+        "text": "*A quadra. A primeira aposta e a cortada final permanecem na mesma quadra. Hoje as luzes estão acesas.*"
     },
     "tour_dain_1b": {
         "name": "{name}",
@@ -197,6 +197,6 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Ela fala sem exclamação. Mas dessa vez não é despedida — é começo. Mesma frase quieta do Dia 4, mas em outra temperatura.*"
+        "text": "*Ela fala sem pontos de exclamação. Desta vez não abaixa a cabeça. A mão de Dain repousa na bola de vôlei, não no joelho.*"
     }
 }
