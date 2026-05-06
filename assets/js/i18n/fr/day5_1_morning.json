@@ -9,7 +9,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "Dernier jour. Étrangement, mes pas sont légers. Aujourd'hui — je crois que je peux le dire."
+        "text": "C'est le dernier jour. La clé du toit dans ma poche touche le dos de ma main à chaque pas."
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Dernier jour. Je ne pensais pas que cinq jours passeraient si vite. ...Je ne sais même pas ce que j'ai fait."
+        "text": "Le dernier jour. Je tape chacun des trois noms restants sur mon écran de verrouillage. Je ne peux ouvrir aucune des fenêtres de discussion."
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "morning5_end": {
         "name": "{name}",
-        "text": "*Des signaux de trois directions. — Il faut choisir une réponse.*"
+        "text": "*Je pose côte à côte sur mon bureau les notes et notifications venues de trois directions.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*Elle se retourne. Ses longs cheveux se balancent. - On dirait quelqu'un qui essaie de ne pas se laisser aller jusqu'au bout.*"
+        "text": "*L'enseignante se retourne. Ses longs cheveux bougent, et le bord plié de l'enveloppe est pressé contre son coude.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professeure principale",
@@ -147,7 +147,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Dès que j'entre dans la salle — des signaux me parviennent de trois directions. Dernier événement. Tout le temps passé jusqu'ici converge vers aujourd'hui.*"
+        "text": "*Dès que j'entre dans la classe, l'attention vient de trois directions. Une note sur mon bureau, un ruban noué au cordon d'une tenue de sport, une notification sur mon écran de verrouillage.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*Une nouvelle est épinglée au panneau. Titre : 'À celui que j'ai rencontré à la bibliothèque'. C'est de Yuna. — Une histoire que seul le protagoniste peut reconnaître. Je suis resté devant le panneau un moment de plus. Phrases courtes, mais c'est aussi net que si Yuna avait collé son visage au mien.*"
+        "text": "*Une nouvelle est affichée sur le tableau d'affichage. Titre : 'À la personne que j'ai rencontrée à la bibliothèque.' Encre violet clair. Une petite miette de pain colle sur le coin plié.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Une seule ligne. — Quelqu'un qui s'est fait recaler trois fois attend l'impression en une ligne d'un élève. Si ce n'est pas une déclaration, qu'est-ce que c'est ? La prof sort de la classe et — s'arrête devant la porte.*"
+        "text": "*Une ligne. L'enseignante s'arrête au seuil en sortant. Elle plie deux fois le bord de l'enveloppe du manuscrit avec son doigt, puis le lisse.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Professeure principale",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professeure principale",
-        "text": "...Je crois que j'ai un peu dépassé les limites de l'intérêt professionnel. C'est la dernière fois. Juste cette fois."
+        "text": "...Je dépasse les bornes. Mais c'est la dernière fois. Juste une fois de plus."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
-        "text": "*Elle a dit « dernier jour de l'événement », mais un autre sens se cache derrière ces mots.*"
+        "text": "*Après avoir dit que c'est le dernier jour de l'événement, l'infirmière touche son stéthoscope une fois.*"
     },
     "hidden_nurse_d5_1_c": {
         "name": "Infirmière",
@@ -303,7 +303,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*De « viens après ton diplôme » à « viens si tu as mal » — elle a reculé. Elle a failli franchir la ligne et s'est ravisée. La porte s'ouvre. L'infirmière est debout. Deux gobelets en papier dans les mains.*"
+        "text": "*'Passe si tu ne te sens pas bien.' Après avoir dit ça, l'infirmière change légèrement de main les deux gobelets en papier qu'elle tient.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -363,7 +363,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Sa réplique emblématique du Jour 1. — À l'époque, c'était une présentation. Maintenant, c'est sincère. L'infirmière sort un pansement et le colle sur le dos de ma main. Lentement. — De petits mots sont écrits sur le pansement.*"
+        "text": "*L'infirmière sort un pansement et le colle sur le dos de ma main. Lentement. Il y a une petite écriture sur le bord du pansement.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -387,7 +387,7 @@
     "morning5_end_branch": {},
     "morning5_committed_end": {
         "name": "{name}",
-        "text": "*Ce ne sont plus des signaux venus de trois directions. J'ai déjà choisi ma réponse, et je me dirige vers le dernier événement.*"
+        "text": "*Je range les notes sur mon bureau et vérifie le programme de l'événement pour la direction que j'ai déjà choisie.*"
     },
     "morning5_gate": {
         "name": "{name}",
@@ -395,11 +395,11 @@
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*La dernière phrase. 'Quand il a ouvert les yeux, je n'étais déjà plus là. Je n'ai laissé qu'un mot. — Je serai encore ici la prochaine fois.' Encre violet pâle. La même encre que le mot du Jour 1.*"
+        "text": "*La dernière phrase. 'Quand cette personne a ouvert les yeux, j'étais déjà partie. Je n'ai laissé qu'une note. — Je serai encore ici la prochaine fois.' Encre violet clair. La même couleur que la première note.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*Dans un petit coin sous le panneau — 'C'est de la fiction. Ce n'est pas réel.' Des traces de gomme. Effacé mais les marques restent. Yuna l'a écrit, effacé, et finalement laissé.*"
+        "text": "*Dans le coin inférieur du tableau d'affichage, un petit texte — 'C'est de la fiction. Ce n'est pas réel.' Des traces de gomme restent.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*La place vide à la bibliothèque, le marque-page disparu, et maintenant une nouvelle jamais affichée. — Yuna efface chaque trace. Le vide que j'ai laissé au Jour 3 est arrivé jusqu'ici.*"
+        "text": "*Une chaise vide à la bibliothèque, un marque-page disparu, un roman non affiché. Seuls quatre trous de punaise subsistent sur le tableau.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*J'ai fermé la porte de la classe. L'enveloppe est restée sur son bureau. — Ce qu'elle n'avait jamais reçu en sept ans, ce n'était pas un éloge sincère, mais quelqu'un qui le lirait sérieusement. L'éloge, il y en avait déjà dans les e-mails de refus. J'ai dit exactement la même chose qu'un e-mail de refus. Avec de bonnes intentions.*"
+        "text": "*Je suis sorti et j'ai fermé la porte de la classe. L'enveloppe est toujours sur le bureau de l'enseignante. Une trace d'étiquette de retour de la taille d'un ongle reste à la surface.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Je ne le savais pas. C'était une intuition. — Que quelqu'un qui a mis sept ans montre ça pour la première fois à un élève aujourd'hui, c'était étrange. Si c'était fini, elle l'aurait envoyé aux éditeurs d'abord. Ce n'est pas fini — elle avait besoin d'une permission pour terminer.*"
+        "text": "*La dernière page du manuscrit n'a pas de point final. Sous une ligne tracée au stylo rouge, la même phrase est réécrite trois fois.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professeure principale",
@@ -511,6 +511,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Je reprends le manuscrit dans mes bras. Il est moins lourd qu'avant. — Boucler sept ans d'inachevé par un éloge n'était pas ce qu'il lui fallait. Ce qu'il lui fallait, c'était *quelqu'un qui accepte l'inachevé comme inachevé*. C'est ça, le vrai soutien.*"
+        "text": "*Elle reprend le manuscrit contre elle. L'enseignante frotte la trace de l'étiquette de retour avec son pouce. Le bord du papier se froisse légèrement dans sa paume.*"
     }
 }

@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Hora do almoço. Corredor lotado de alunos. Três sinais chegam ao mesmo tempo, de três direções diferentes.*"
+        "text": "*Hora do almoço. O corredor está lotado de alunos. Uma marmita no terraço, um aceno na cantina, um bilhete em direção à biblioteca — tudo me chama a atenção ao mesmo tempo.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Três caminhos. Escolha pesada logo no primeiro dia. Na escola antiga eu nunca escolhi. Fui empurrando até perder a hora. — Dessa vez, não.*"
+        "text": "*O corredor se divide em três caminhos. Terraço, cantina, biblioteca. Dentro do bolso, a quina do celular roça nas pontas dos meus dedos.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -46,7 +46,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*O terraço está limpo. Alguns vasos num canto e uma cadeira dobrável. Claramente alguém cuida disso.*"
+        "text": "*A cobertura está limpa. Cada vaso ainda guarda resquícios de água, e as cadeiras dobráveis estão encostadas na parede em intervalos iguais.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "{name}",
-        "text": "*Finge calma, mas deu pra sentir um biquinho de emburrada.*"
+        "text": "*Seoyeon fecha a tampa da marmita bem devagar. O mindinho pressiona a borda da tampa mais uma vez.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -186,7 +186,7 @@
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*Não é nada demais. Mas meu olho trava ali.*"
+        "text": "*O mindinho de Seoyeon afasta as pontas do cabelo mais uma vez.*"
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
@@ -338,7 +338,7 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*Sigo as costas da Yuna até a biblioteca. Parece que quase ninguém vem pra cá na hora do almoço.*"
+        "text": "*Sigo a silhueta de Yuna até a biblioteca. O sinal do almoço já tocou, mas só a cadeira do balcão de empréstimos está vazia, levemente torta.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
@@ -346,7 +346,7 @@
     },
     "lunch_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna senta num canto da sala de leitura. Abre o livro. Não sei se ela reparou que eu vim atrás. Sento do outro lado da mesa com cuidado.*"
+        "text": "*Yuna se senta no canto mais afastado da sala de leitura. Abre o livro. Quando os pés da cadeira à frente arranham de leve o chão, seus dedos param sobre a página.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -366,7 +366,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*Isso é uma permissão? Parece que é. — Com condição. O silêncio toma conta. Yuna continua lendo. Sem nada pra fazer, fico olhando as estantes.*"
+        "text": "*Yuna reabre o livro. Empurra a mochila da cadeira oposta para debaixo da mesa. Sento-me no lugar vazio.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Tem algo entre as páginas do livro da Yuna. Um marcador antigo, com alguma coisa escrita — mas não dá pra ler direito. A Yuna coloca a mão em cima dele sem perceber. Parece importante pra ela. Pego um livro qualquer da estante e abro.*"
+        "text": "*Um marcador antigo está preso no livro de Yuna. Tem algo escrito, mas não consigo ler direito. Yuna pousa a mão sobre ele sem perceber. Pego um livro qualquer na estante mais próxima.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -426,7 +426,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna levanta primeiro e vai embora. Sem olhar pra trás. 'Foi bom.' — De repente o meu humor melhora por nada.*"
+        "text": "*Yuna se levanta primeiro e vai embora. Não olha para trás. 'Foi bom.' Só essas palavras ficam sobre a mesa.*"
     },
     "lunch_yuna_choice": {
         "name": "{name}",

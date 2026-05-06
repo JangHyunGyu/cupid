@@ -41,11 +41,11 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Le « mdr » est un camouflage — la sincérité transparaît.*"
+        "text": "*Long espace vide après 'lol'. Le prochain message de Dain n'arrive pas.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*J'ai fait un rêve. — Je marchais à côté de quelqu'un. Je ne voyais pas son visage, mais étrangement je n'étais pas anxieux.*"
+        "text": "*J'ai fait un rêve. Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, seulement des pas gardant le même rythme.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— Je ne fuirai pas. Cette fois, une seule personne. J'ai fait un rêve. — Je marchais à côté de quelqu'un. Je ne voyais pas son visage, mais étrangement je n'étais pas anxieux.*"
+        "text": "*J'ai fait un rêve. Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, mais dans ma main se trouvait un message sur le point d'être envoyé.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*Je l'avais gardée parce que j'avais l'impression que la supprimer effacerait aussi les sentiments. Mais maintenant ce n'est plus de l'attachement — c'est une trace. — Son rôle est fini.*"
+        "text": "*Mon doigt s'arrête sur le bouton supprimer. À la place, j'ai déplacé la photo vers un nouveau dossier. Nom du dossier : 'Archive'.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
@@ -162,11 +162,11 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Si on n'écrit pas la fin, l'histoire ne se termine jamais. — Je ressens la même chose.*"
+        "text": "*Le curseur clignote sur la dernière ligne du bloc-notes. Laisser la fin vide, et le fichier reste en mode sauvegarde.*"
     },
     "night3_cheat_msg_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon utilise le mot 's'il te plaît.' — Ce mot n'existait pas dans son vocabulaire. C'est dire à quel point elle est brisée.*"
+        "text": "*Seoyeon utilise le mot 'faveur'. Le curseur reste figé après ce mot pendant longtemps.*"
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
@@ -186,15 +186,15 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Cette fois, je voulais le dire sans regrets. Je m'étais promis de vivre honnêtement dans ce lycée.*"
+        "text": "*J'ai fermé le bloc-notes. Pas encore de phrase à envoyer demain. Mais j'ai décidé de ne pas laisser l'écran vide.*"
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Pareil qu'avec Sojeong. Je savais et je suis resté silencieux. Dans mon ancienne école j'ai regardé Sojeong s'effondrer la bouche fermée. Dans ce lycée — encore.*"
+        "text": "*Sojeong ferme la photo. Cette fois, trois fenêtres de messages. Les trois curseurs clignotent.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Ce lycée : regret d'avoir trop dit. Au final, le problème n'est pas 'parler ou se taire' — c'est 'à qui'.*"
+        "text": "*Ancienne école : messages non envoyés. Cette école : trop de fenêtres de réponse ouvertes. L'écran du téléphone brûle dans ma paume.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna l'a dit. 'Ne fuis pas.' Alors cette fois, ça doit être différent. Ne pas choisir — c'est comme tout perdre.*"
+        "text": "*Yuna l'a dit. 'Ne fuis pas.' Le curseur de la fenêtre de réponse clignote. Une autre phrase jamais envoyée à personne s'allonge.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -218,11 +218,11 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.' Dans mon ancienne école, Sojeong a disparu sans avoir reçu la moindre aide. Parce que j'avais fermé ma bouche. — C'était la fin la plus cruelle pour Sojeong comme pour moi. Si une seule de ces 38 notes avait été envoyée — Sojeong n'aurait peut-être pas quitté l'école.*"
+        "text": "*Minsu l'a dit. 'Le rejet est aussi de l'amour.' Sojeong dans la galerie sourit toujours. Note #38 toujours non envoyée. Seul le bouton d'envoi est bleu.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Effacer la photo, c'était facile. Un seul doigt suffisait. — Les sentiments, ça prend plus de temps. Mais quand même. Ce qui est effacé — ouvre la voie pour la suite.*"
+        "text": "*Supprimer la photo était facile. Un seul doigt suffit. Je fixe la vignette d'album vide pendant un moment.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",

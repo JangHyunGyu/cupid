@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Lunchtime. The hallway is packed with students. Three people pull me in three different directions at once.*"
+        "text": "*Lunchtime. The hallway is packed with students. A rooftop lunchbox, a wave from the snack bar, a note pointing toward the library — all catch my eye at once.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Three paths. A choice like this on day one. At my old school, I never made the choice. I kept putting it off and stalling until the moment passed. — Not this time.*"
+        "text": "*The hallway splits three ways. Rooftop, snack bar, library. Inside my pocket, the corner of my phone catches on my fingertips.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*The rooftop is clean. A few potted plants and a folding chair on one side. Someone's been maintaining this.*"
+        "text": "*The rooftop is clean. Each planter still glistens with water, and the folding chairs are propped against the wall at even intervals.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "{name}",
-        "text": "*She's playing it cool, but she looks a little annoyed.*"
+        "text": "*Seoyeon closes the lunchbox lid very slowly. Her pinky presses the edge of the lid one extra time.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*It's nothing, really. But my eyes catch on it anyway.*"
+        "text": "*Seoyeon's pinky brushes the ends of her hair one more time.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -298,7 +298,7 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*I trail after Yuna into the library. Looks like barely anyone comes here at lunch.*"
+        "text": "*I follow Yuna's silhouette into the library. The lunch bell rang a while ago, yet only the checkout desk chair sits empty, tilted at an odd angle.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
@@ -306,7 +306,7 @@
     },
     "lunch_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna takes a corner seat in the reading room and opens a book. I can't tell if she knows I followed her. I sit across from her, carefully.*"
+        "text": "*Yuna takes a seat in the far corner of the reading room. She opens her book. When the legs of the chair across from her scrape faintly against the floor, her fingers freeze on the page.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*Is that a yes? I think that's a yes. — On her terms. Silence settles in. Yuna keeps reading. With nothing to do, I drift over to the shelves.*"
+        "text": "*Yuna reopens her book. She pushes the bag on the opposite chair under the desk. I take the empty seat.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna stands up first and walks off. Doesn't look back. 'It was nice.' — Such a small thing, but somehow it lifts my mood.*"
+        "text": "*Yuna stands up first and walks away. She doesn't look back. 'That was nice.' Those words alone stay behind on the desk.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Something is tucked into Yuna's desk. An old bookmark. There's writing on it — but I can't quite make it out. Yuna unconsciously rests her hand on top of it. Something precious, maybe. I pull a random book off the shelf and flip it open.*"
+        "text": "*An old bookmark is tucked into Yuna's book. Something is written on it, but I can't quite make it out. Yuna rests her hand over it without thinking. I pull a random book from the nearest shelf.*"
     }
 }

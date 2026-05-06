@@ -14,7 +14,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon veio falar comigo primeiro. O tom tranquilo de sempre, mas com um quê de quem quer confirmar alguma coisa. Dain dá uma espiada do fundo da sala. Desvia o olhar. Yuna se enfia ainda mais no livro. Vira as páginas mais rápido.*"
+        "text": "*Seoyeon se aproximou primeiro. A prancheta está pressionada contra o interior do braço dela de novo hoje. Dain olha de relance do fundo da sala e desvia o olhar. Yuna vira as páginas mais rápido.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*Dobrei o bilhete e segurei na mão. — Sem motivo, com cuidado.*"
+        "text": "*Dobro o bilhete e o seguro na mão. A dobra pressiona contra a palma.*"
     },
     "morning2_dain_1": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Não parou de andar. Mas o olhar era claramente pra cá. No momento em que a Seoyeon virou o corredor — pareceu que o sorriso sumiu. Imaginação minha?*"
+        "text": "*Não parei de andar. Pouco antes de Seoyeon virar a esquina, o sorriso dela desaparece primeiro. A prancheta se aproxima mais do peito dela.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Tipo gente virou objeto de posse? — Mas não me incomoda. E isso é meio assustador.*"
+        "text": "*As pessoas são objetos a serem reivindicados? A borda da prancheta de Seoyeon bate contra a mesa. Não consegui dizer não imediatamente.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professora",
@@ -182,7 +182,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Segui a professora até a sala dos professores. A mesa dela fica no canto. Papéis, uma xícara de café — e uma gaveta entreaberta. Em cima da mesa, pilhas de papel — e o que parece ser folhas de manuscrito.*"
+        "text": "*Segui a professora até a sala dos professores. Uma gaveta em uma mesa de canto está ligeiramente aberta. Sob uma pilha de papéis, a borda de um papel manuscrito transparece.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professora",
@@ -266,7 +266,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*Ela cobriu a boca, mas ficou mexendo na xícara à toa. Essa pessoa também entrega quando fica sem jeito.*"
+        "text": "*A professora cobre a boca com a xícara de café e gira o pires duas vezes no mesmo lugar.*"
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -350,7 +350,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*Provavelmente tinha. Acho. — Mas a questão não parece ser essa.*"
+        "text": "*Em vez de responder, ajusto a alça da minha bolsa. Dain vê, mas não pergunta mais.*"
     },
     "morning2_end": {
         "name": "{name}",

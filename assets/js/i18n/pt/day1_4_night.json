@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Enfermeira que põe coraçãozinho em prontuário. Primeira vez que vejo alguém colocar emoji em ficha médica.*"
+        "text": "*Há um coração depois de 'interesse médico'. Até desligar a tela, continuo olhando aquele coração mais uma vez.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -137,6 +137,6 @@
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Não foi um primeiro dia ruim. E amanhã — parece que vai ser ainda mais interessante.*"
+        "text": "*Os nomes que salvei hoje permanecem na minha tela de bloqueio. Mesmo depois de desligar a tela, meu dedo procura o botão de energia mais uma vez.*"
     }
 }

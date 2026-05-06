@@ -91,11 +91,11 @@
     },
     "lunch3_share_solo": {
         "name": "{name}",
-        "text": "*On a partagé un peu tous les trois. Rien de spécial, mais — l'ambiance était bonne. Un déjeuner où personne n'était exclu.*"
+        "text": "*Nous trois partageons petit à petit. La dernière omelette roulée est coupée en deux, et personne ne se lève en premier.*"
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*Finalement, les trois ont partagé un peu de tout. Seoyeon sourit poliment, Dain est excessivement joyeuse, et Yuna ne sort finalement pas le mot qu'elle avait plié. Ce n'est pas passé, juste reporté.*"
+        "text": "*Nous trois partageons petit à petit. Seoyeon sourit poliment, Dain est excessivement enjouée, Yuna ne sort jamais le mot qu'elle a plié.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -204,11 +204,11 @@
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
-        "text": "*J’ai fui. De la classe. — Le choix le plus lâche.*"
+        "text": "*Je pousse la porte de la salle de classe. Derrière moi, les chaises raclent en même temps.*"
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Derrière moi, le silence des trois me transperce le dos. La pause déjeuner s'est terminée, et les cours de l'après-midi ont repris. Le crissement de la craie au tableau résonnait étrangement loin. Je sens un regard se poser sur mon dos. — Il reste une histoire pas encore finie.*"
+        "text": "*Le silence de trois personnes derrière moi se plante dans mon dos. Tout au long du cours de l'après-midi, le bruit de la craie sonne lointain. Sous mon bureau, l'écran de mon téléphone s'allume et s'éteint sans cesse.*"
     },
     "lunch3_end": {
         "name": "{name}",
@@ -262,7 +262,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Dain gagne le pari du déjeuner et ouvre grand les bras. Elle me serre. Une seconde. Dain recule d'un bond comme si elle avait été repoussée. Elle attrape sa bouteille d'eau pour se donner une contenance.*"
+        "text": "*Dain écarte les bras, ravie d'avoir gagné le pari du déjeuner. Une étreinte. Une seconde. Elle bondit en arrière, recule d'un pas et attrape sa bouteille d'eau.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Personne ne quitte sa place. Elles ont le sourire, mais aucune des trois n'arrive à prendre facilement ses baguettes. Le dernier plat d'accompagnement attire l'attention sans raison.*"
+        "text": "*Personne ne se lève. Il y a des sourires, mais tous les trois hésitent à prendre leurs baguettes. Un seul dernier plat d'accompagnement reste au centre de la boîte à bento.*"
     },
     "lunch3_meal_10_c": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "lunch3_meal_10_e": {
         "name": "{name}",
-        "text": "*Yuna hoche juste la tête. Elle écrit sur un papier, le plie et le met dans sa poche. Elle ne le donne pas. — Aucune idée de ce qui était écrit.*"
+        "text": "*Yuna hoche simplement la tête. Elle écrit sur un mot, le plie et le glisse dans sa poche. Ne le donne pas. Seul un unique point violet pâle a traversé le bord du papier.*"
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "lunch3_expose_honest_4_b": {
         "name": "{name}",
-        "text": "*L'expression de Seoyeon change. — Toujours calme, mais avec quelque chose de tranchant maintenant.*"
+        "text": "*Le sourire de Seoyeon se fige. Le bout de ses baguettes touche le couvercle de sa boîte à bento.*"
     },
     "lunch3_expose_excuse_2_b": {
         "name": "{name}",

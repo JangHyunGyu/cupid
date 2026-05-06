@@ -61,11 +61,11 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*El anexo de la biblioteca. El rincón de lectura secreto donde entré por primera vez el Día 2. Un sofá viejo y la luz de la tarde entrando por la ventana.*"
+        "text": "*El anexo de la biblioteca. Un sofá viejo, luz de tarde por la ventana. El mismo olor a polvo de cuando entraste por primera vez.*"
     },
     "tour_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna se sienta en el sofá. Deja libre el espacio de al lado. — La misma disposición que el Día 2.*"
+        "text": "*Yuna se sienta en el sofá. Deja vacío el asiento junto a ella. Un lugar donde no se ha acumulado polvo.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "tour_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna saca un cuaderno de la mochila. El mismo que se vio el Día 3.*"
+        "text": "*Yuna saca un cuaderno de su bolso. El mismo que cubrió apresuradamente en el ático.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*El gimnasio. Donde hicimos la primera apuesta el Día 1 y donde clavó su último remate el Día 4. — Hoy las luces están prendidas.*"
+        "text": "*El gimnasio. La primera apuesta y el último remate persisten en la misma cancha. Hoy las luces están encendidas.*"
     },
     "tour_dain_2": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Lo dice sin exclamaciones. Pero esta vez no suena a despedida, sino a principio. Es como aquella frase sin exclamaciones del Día 4, solo que con otra temperatura.*"
+        "text": "*Habla sin signos de exclamación. Esta vez no agacha la cabeza. La mano de Dain descansa sobre el balón, no sobre su rodilla.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",

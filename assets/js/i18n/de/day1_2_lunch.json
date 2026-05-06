@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Der Flur ist voller Schüler. Aus drei Richtungen kommen gleichzeitig Signale.*"
+        "text": "*Mittagspause. Der Flur ist voller Schüler. Eine Lunchbox Richtung Dach, ein Winken vor dem Kiosk, ein Zettel zur Bibliothek — alles fällt mir gleichzeitig ins Auge.*"
     },
     "lunch_start_4": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Drei Wege. Dass ich gleich am ersten Tag so eine Wahl habe. An meiner alten Schule hab ich mich nie entschieden. Hab's vor mir hergeschoben und den richtigen Moment verpasst. — Diesmal nicht.*"
+        "text": "*Der Flur gabelt sich in drei Richtungen. Dach, Kiosk, Bibliothek. In meiner Tasche streift die Kante meines Handys über die Fingerspitzen.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "*Das Dach ist sauber. Ein paar Blumentöpfe und ein Klappstuhl an der Seite. Jemand pflegt das hier.*"
+        "text": "*Das Dach ist sauber. In jedem Blumentopf schimmert noch Feuchtigkeit, und die Klappstühle lehnen in gleichmäßigen Abständen an der Wand.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "{name}",
-        "text": "*Sie tut gelassen, aber sie scheint leicht eingeschnappt zu sein.*"
+        "text": "*Seoyeon schließt den Deckel der Lunchbox ganz langsam. Ihr kleiner Finger drückt noch einmal auf die Kante des Deckels.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "lunch_seo_after_7": {
         "name": "{name}",
-        "text": "*Nichts Besonderes, aber mein Blick bleibt hängen.*"
+        "text": "*Seoyeons kleiner Finger streift noch einmal über ihre Haarspitzen.*"
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -298,7 +298,7 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*Ich folge Yuna in die Bibliothek. Fast niemand kommt während der Mittagspause hierher.*"
+        "text": "*Ich folge Yunas Silhouette in die Bibliothek. Die Mittagsglocke hat längst geläutet, trotzdem steht nur der Stuhl an der Ausleihtheke leer, leicht schief.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
@@ -306,7 +306,7 @@
     },
     "lunch_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna setzt sich in eine Ecke des Lesesaals und schlägt ein Buch auf. Keine Ahnung, ob sie überhaupt mitbekommt, dass ich ihr gefolgt bin. Vorsichtig setze ich mich ihr gegenüber.*"
+        "text": "*Yuna setzt sich in die hinterste Ecke des Lesesaals. Sie schlägt ihr Buch auf. Als die Stuhlbeine gegenüber leise über den Boden kratzen, erstarren ihre Finger auf der Seite.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -322,7 +322,7 @@
     },
     "lunch_yuna_8": {
         "name": "{name}",
-        "text": "*Ist das jetzt ein Ja? Klingt nach Ja. — Aber unter Vorbehalt. Stille senkt sich über uns. Yuna liest. Ich hab nichts zu tun und lasse den Blick über die Regale wandern.*"
+        "text": "*Yuna schlägt ihr Buch wieder auf. Sie schiebt die Tasche vom gegenüberliegenden Stuhl unter den Tisch. Ich setze mich auf den freien Platz.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "{name}",
-        "text": "*Yuna steht als Erste auf und geht. Ohne sich umzudrehen. 'War gut.' — Und plötzlich bin ich gut gelaunt.*"
+        "text": "*Yuna steht als Erste auf und geht. Sie dreht sich nicht um. ‚War schön.' Nur diese Worte bleiben auf dem Tisch zurück.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*In Yunas Buch steckt etwas. Ein altes Lesezeichen mit einer Aufschrift — die ich nicht entziffern kann. Yuna legt ganz unbewusst die Hand darauf. Wahrscheinlich etwas, das ihr wichtig ist. Ich ziehe wahllos ein Buch aus dem Regal und schlage es auf.*"
+        "text": "*In Yunas Buch steckt ein altes Lesezeichen. Etwas steht darauf geschrieben, aber ich kann es nicht entziffern. Yuna legt unbewusst die Hand darüber. Ich ziehe irgendein Buch aus dem nächsten Regal.*"
     }
 }

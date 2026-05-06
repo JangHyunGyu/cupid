@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*In front of the school gate. I can see three figures in the distance. Seoyeon walking with Haeun, Dain tossing a volleyball as she runs, Yuna reading a book as she walks slowly. None of them are looking my way. — That's actually a relief. Right now I can't bring myself to meet anyone's eyes.*"
+        "text": "*The school gate. Three figures in the distance. Seoyeon walks with Haeun, Dain tosses a volleyball as she runs, Yuna reads slowly. None of them look this way.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -45,11 +45,11 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon turns and waves. — Same gesture as Day 1. She doesn't look back. Her back is straight. Perfectly. — But this time, she's not trembling.*"
+        "text": "*Seoyeon turns and waves. She doesn't look back. Only the ribbon on her wrist sways briefly at the end of the hallway.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*I'm left alone in the hallway. Seoyeon's footsteps fade away. — Five days ago, her retreating figure felt like a wall. Now, it feels like an invitation.*"
+        "text": "*Alone in the hallway. Seoyeon's footsteps fade. The rooftop key you thought was locked away remains in your palm.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*The sun is setting. Five days are coming to an end. Sunset paints the schoolyard. Were five days really this short? — The moment of the last choice is closing in.*"
+        "text": "*Sunset catches on every classroom window. The broadcast room announces the event's end, and the field speakers crackle a beat behind.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -132,7 +132,7 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*The crack I papered over with a forced smile at lunch is still there. Tonight doesn't feel like it's going to end with just one person.*"
+        "text": "*The words folded away at lunch remain. Three message threads light up at once, and you can't type a first letter in any of them.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Still carrying the cracks we'd been pretending weren't there, we walked toward the park.*"
+        "text": "*Unanswered messages remain on the lock screen. Your feet have turned toward the park.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -148,13 +148,13 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*At my old school, it was the same. I couldn't say it. And I regretted it. — Am I going to do this again?*"
+        "text": "*The hallway at your old school, the phone in your pocket, the unsent 38th memo—all surface at once.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*I almost ran away again. Just like at my old school. Phone in my pocket, unable to say a word — that moment nearly came back. — No. Not this time. My legs move. My mouth opens first. No prepared words — my body just moves on its own.*"
+        "text": "*You grip the phone in your pocket. You leave it there without turning on the screen. Your legs move first, and the name slips out.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*She holds out her pinky. The same finger I couldn't take on Day 4.*"
+        "text": "*You hold out your pinky. The finger you couldn't catch that day at the railing.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
@@ -227,7 +227,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
-        "text": "*She rubs her eyes with her fist. Laughing and crying at the same time.*"
+        "text": "*Dain rubs the corner of her eye. Her smile stays the same, but moisture clings to the back of her hand.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
@@ -268,7 +268,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "{name}",
-        "text": "*With her, one line matters more than a long explanation. The problem is — it's my one line.*"
+        "text": "*Yuna waits, holding the book. The reply window still has no first letter.*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -339,7 +339,7 @@
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*One line, but the ink is smeared. — She was crying as she wrote it.*"
+        "text": "*A single line where the ink has bled. A fingernail mark remains on the fold.*"
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",
@@ -379,6 +379,6 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*The words I tried to swallow finally come out — that I can't choose just one. I know it's cowardly, and even so, tonight I'm going to carry that cost too.*"
+        "text": "*The words stuck in your throat come out. That you can't choose one. All three expressions freeze at once.*"
     }
 }

@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*La puerta principal de la escuela está entornada. Hay alguien dentro. — Sale una persona. Es la tutora. Viene hacia acá. — La veo desde lejos. Camina tan normal que cuesta creer que sea la misma que se enojó.*"
+        "text": "*La puerta de la escuela está ligeramente abierta. Presencia adentro. El profesor tutor sale a la puerta principal. Lleva una bolsa de papel.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Profesora",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Sábado por la mañana. Los pies me llevan a la enfermería, por costumbre. — ¿Desde cuándo es una costumbre? Abro la puerta. La enfermera está sentada en la silla. Con la bata blanca. — Pero hoy está distinta. Sin ese aire de broma.*"
+        "text": "*Mañana de fin de semana. Abrí la puerta de la enfermería. Está sentada en su silla con bata blanca, pero no hay notas bromistas en el escritorio.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermera",
@@ -241,7 +241,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*Ese 'viniste' suena medio tono más bajo que de costumbre. — Las emociones de esta persona se leen en el tono.*"
+        "text": "*'Ah, llegaste' suena medio tono más bajo que de costumbre. La enfermera levanta el estetoscopio y lo vuelve a dejar sobre el escritorio.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*No es una pregunta. — Es la cara de alguien que ya teme la respuesta. La miro a los ojos. Sin bromas, serio. — Nunca había visto a esta persona tan expuesta.*",
+        "text": "*No es una pregunta. La enfermera presiona el borde del vaso de papel con el pulgar. Queda una marca hundida.*",
         "choices": [
             "Vendré.",
             "..."
@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'De verdad'. — Hoy fui yo quien lo escuchó antes. Detrás de los lentes, los ojos húmedos. Le vuelve el tono de siempre. — Pero bajo esa sonrisa queda la huella de algo que corrió por la mejilla. Me duele el pecho.*"
+        "text": "*'De verdad.' Detrás de los lentes de la enfermera, sus ojos están húmedos. La broma tarda un segundo de más en volver.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermera",
@@ -347,7 +347,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Cortante. Muy de Yuna. — Ya sé que 'si llegas tarde me voy' significa 'por favor, no llegues tarde'.*"
+        "text": "*Corto. Muy Yuna. Sin punto después de 'me voy si llegas tarde.'*"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Profesora",
@@ -375,7 +375,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "{name}",
-        "text": "*Es sincera. — Se parapeta tras un humor seco, pero de vez en cuando se le escapa un momento de franqueza.*"
+        "text": "*El profesor lo dice como una broma y toca la taza de café. Dos anillos circulares de agua se superponen en el posavasos.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -395,7 +395,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Una carga. — Siete años cargando sola con un manuscrito sin terminar. Eso pesa.*"
+        "text": "*La esquina de un sobre de manuscrito asoma del bolso del profesor. La parte doblada está un poco oscura por marcas de dedos.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Profesora",
@@ -415,7 +415,7 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Profesora",
-        "text": "...Gracias. Pero esto — queda entre nosotros, ¿está bien? Es nuestro secreto. — Aunque una profesora no debería tener secretos con un alumno."
+        "text": "...Gracias. Pero esto, no se lo digas a nadie — ¿sabes? ...Esto es nuestro secreto. La esquina del porta vasos se sigue doblando."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*La profesora se da vuelta. — Los hombros caen un poco. Fui yo quien dijo que no — ¿por qué me siento así? Vuelvo a casa.*"
+        "text": "*El profesor se da la vuelta. Sus hombros bajan un poco. De camino a casa, mi rostro reflejado en la puerta de vidrio del café me sigue.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Enfermera",
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*La sonrisa le sale natural. — Distinta a la de la escuela. Hoy no parece una profesora. Parece solo — alguien con quien da gusto estar. La ayudo a ordenar los papeles de los reconocimientos. Etiquetas con nombres, tablas optométricas, tensiómetros por desinfectar.*"
+        "text": "*Vista fuera de la escuela, su sonrisa es diferente. Sin gafete, sin bolígrafos en el bolsillo de la bata. Las dos doblamos formularios de chequeo y limpiamos el tensiómetro.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Enfermera",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Sabe lo que pesa que te llamen por el nombre. — Porque en el hospital la llamaban por un número. Terminamos con los papeles. Se estira.*"
+        "text": "*El papeleo terminó. La enfermera escolar toca el campo de nombre una vez con su dedo, luego finalmente se estira.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*Agregó 'de verdad'. — Cuando esta persona suelta un 'de verdad', significa que todo lo anterior iba en serio. Antes me soltó un 'qué dices' — pero por un segundo no pudo sostenerme la mirada. Esta vez tampoco se le da bien disimular.*"
+        "text": "*'De verdad.' La enfermera aparta la mirada un momento. Los palillos sobre la tapa del ramen instantáneo se inclinan un poco.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

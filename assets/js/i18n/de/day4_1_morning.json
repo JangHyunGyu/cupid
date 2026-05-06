@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Das Schultor steht einen Spalt offen. Drinnen rührt sich etwas. — Die Person, die herauskommt. Meine Klassenlehrerin. Sie kommt näher. — Aus der Ferne betrachtet geht sie so gewöhnlich, dass man kaum glaubt, sie sei dieselbe, die neulich wütend war.*"
+        "text": "*Das Schultor steht leicht offen. Eine Präsenz drinnen. Die Klassenlehrerin kommt zum Haupttor heraus. Hält eine Papiertüte.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Klassenlehrerin",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Wochenendmorgen. Aus Gewohnheit gehe ich zum Krankenzimmer. — Seit wann ist das eine Gewohnheit? Ich öffnete die Tür. Die Krankenschwester sitzt auf ihrem Stuhl. Weißer Kittel. — Aber sie ist anders als sonst. Keine Verspieltheit.*"
+        "text": "*Wochenendmorgen. Ich öffnete die Tür des Krankenzimmers. Sie sitzt in ihrem Stuhl im weißen Kittel, aber auf dem Schreibtisch liegt kein Scherz-Memo.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Schulkrankenschwester",
@@ -241,7 +241,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*Ihr 'du bist gekommen' klingt einen halben Ton tiefer als sonst. — Ich habe gelernt, ihre Gefühle an ihrer Stimme abzulesen.*"
+        "text": "*'Ah, du bist da' klingt einen halben Ton tiefer als sonst. Die Krankenschwester hebt das Stethoskop auf, legt es dann wieder auf den Schreibtisch.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*Es ist keine Frage. — Es ist das Gesicht von jemandem, der die Antwort bereits fürchtet. Unsere Blicke treffen sich. Ihr ernster Ausdruck ohne ihre gewöhnliche Scherzhaftigkeit. — Ich habe diese Person noch nie so ungeschützt gesehen.*",
+        "text": "*Es ist keine Frage. Die Krankenschwester drückt ihren Daumen gegen den Rand des Pappbechers. Eine Delle entsteht.*",
         "choices": [
             "Ja, ich komme.",
             "..."
@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'Wirklich'. — Heute habe ich es zuerst gehört. Durch ihre Brille sehen die Augen der Krankenschwester feucht aus. Die Scherzhaftigkeit kehrt zurück. — Aber unter ihren lächelnden Augen gibt es eine Spur von etwas, das geflossen ist. Es tut weh.*"
+        "text": "*'Wirklich.' Hinter der Brille der Krankenschwester sind ihre Augen feucht. Die Verspieltheit braucht einen Takt zu lange, um zurückzukehren.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Schulkrankenschwester",
@@ -347,7 +347,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Kurz. Typisch Yuna. Ich weiß jetzt, dass 'Wenn du zu spät kommst, bin ich weg' dasselbe heißt wie 'Bitte komm nicht zu spät'.*"
+        "text": "*Kurz. Typisch Yuna. Kein Punkt nach 'ich gehe, wenn du zu spät bist.'*"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Klassenlehrerin",
@@ -375,7 +375,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "{name}",
-        "text": "*Ehrlich. Diese Person versteckt sich hinter trockenem Humor, aber manchmal rutscht ein aufrichtiger Moment durch.*"
+        "text": "*Die Lehrerin sagt es wie einen Scherz und berührt die Kaffeetasse. Zwei kreisförmige Wasserringe überlappen sich auf dem Untersetzer.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -395,7 +395,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Eine Last. Also hat das unvollendete Manuskript, das sie sieben Jahre allein getragen hat, auf ihr gelastet.*"
+        "text": "*Die Ecke eines Manuskriptumschlags zeigt sich aus der Tasche der Lehrerin. Der gefaltete Teil ist etwas dunkel von Fingerabdrücken.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Klassenlehrerin",
@@ -415,7 +415,7 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Klassenlehrerin",
-        "text": "...Danke. Aber das bleibt unter uns, okay? ...Das ist unser Geheimnis. Auch wenn eine Lehrerin keine Geheimnisse mit einem Schüler haben sollte."
+        "text": "...Danke. Aber das, erzähl es niemandem — weißt du? ...Das ist unser Geheimnis. Die Ecke des Becherhalters knickt ständig ein."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*Die Lehrerin dreht sich weg. — Ihre Schultern hängen leicht. Ich hab abgelehnt, warum fühlt es sich dann so an. Ich bin nach Hause gegangen.*"
+        "text": "*Die Lehrerin dreht sich um. Ihre Schultern sinken ein wenig. Auf dem Heimweg folgt mir mein Gesicht, das sich in der Glastür des Cafés spiegelt.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Schulkrankenschwester",
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Ihr Lächeln kommt ganz natürlich. — Sie wirkt anders als in der Schule. Heute fühlt sie sich weniger wie eine Lehrerin an und mehr wie... jemand, bei dem man sich wohlfühlt.*"
+        "text": "*Außerhalb der Schule gesehen, ist ihr Lächeln anders. Kein Namensschild, keine Stifte in der Kitteltasche. Wir beide falten Untersuchungsformulare und wischen das Blutdruckmessgerät ab.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Schulkrankenschwester",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Sie weiß, was es bedeutet, beim Namen genannt zu werden. — Weil sie im Krankenhaus mit Nummern angesprochen wurde. Wir sind mit dem Sortieren fertig. Die Krankenschwester streckt sich.*"
+        "text": "*Der Papierkram ist erledigt. Die Schulkrankenschwester tippt einmal mit dem Finger auf das Namensfeld und streckt sich dann endlich.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*Sie hat 'wirklich' hinzugefügt. — Wenn diese Person 'wirklich' hinzufügt, heißt das, alles davor war ernst gemeint. Sie hat es mit 'was redest du da' abgetan, aber für einen Moment konnte sie mir nicht in die Augen schauen. Sie kann es auch diesmal nicht gut verbergen.*"
+        "text": "*'Wirklich.' Die Krankenschwester weicht dem Blick kurz aus. Die Stäbchen auf dem Deckel der Instantnudeln kippen leicht schief.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

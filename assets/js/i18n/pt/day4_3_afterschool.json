@@ -9,7 +9,7 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*O terraço. O pôr do sol tinge a escola. O mesmo lugar do Dia 1.*"
+        "text": "*O terraço. O pôr do sol pinta a escola. Consigo ver o parapeito onde Seoyeon olhou para baixo no primeiro dia.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Tô nervoso. Mas dessa vez quero falar direito.*",
+        "text": "*O bilhete de ensaio da confissão dobra e desdobra na palma dela. A dobra agora tem três camadas.*",
         "choices": [
             "Seoyeon. Espera um segundo.",
             "...Vento bom, né."
@@ -45,7 +45,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "*Lembro do que não disse na escola anterior. Aquele arrependimento que repeti centenas de vezes — 'e se eu tivesse falado na hora'. — Dessa vez, eu falo.*"
+        "text": "*Frases escritas e apagadas na escola antiga vêm à mente. Dessa vez não tirei o celular do bolso.*"
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Falei a mesma coisa no Dia 1. Naquela vez era de verdade. Agora é fuga.*"
+        "text": "*Ela disse a mesma coisa no primeiro dia. O dedo de Seoyeon para na borda da prancheta.*"
     },
     "confess_seo_no_3": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*Anexo da biblioteca. O cantinho secreto de leitura. O pôr do sol entra pela janela. O mesmo lugar do Dia 2.*"
+        "text": "*Anexo da biblioteca. O canto secreto de leitura. O pôr do sol se infiltra pela janela. O marcador de Yuna está ao lado do sofá velho.*"
     },
     "confess_yuna_3b": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*'Dessa vez'. — Alguém já foi embora antes. Yuna está reabrindo essa ferida e, mesmo assim, se agarrando em mim.*"
+        "text": "*'Dessa vez.' Yuna prende a respiração levemente nessas duas palavras. Não solta minha mão.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "confess_yuna_no_2": {
         "name": "{name}",
-        "text": "*Yuna lê nas entrelinhas. Ela deve saber que isso é uma fuga.*"
+        "text": "*Yuna acena. Coloca o marcador entre as páginas e o empurra mais fundo.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*O ginásio. Vazio. O pôr do sol entra pelas janelas e tinge a quadra. O mesmo lugar em que viemos juntos pela primeira vez no Dia 1.*"
+        "text": "*A quadra. Vazia. O pôr do sol mancha a quadra pelas janelas. A linha da aposta do primeiro dia ainda está visível.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*O chão do ginásio parece balançar. — Eu sei do tremor escondido atrás das exclamações dessa pessoa.*",
+        "text": "*A bola de Dain quica uma vez. A mão que normalmente teria pegado para no ar um batimento atrasada.*",
         "choices": [
             "Dain. Larga essa bola.",
             "...Mais uma partida?"
@@ -321,6 +321,6 @@
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*Nenhum ponto de exclamação. — Tá falando sério.*"
+        "text": "*Sem ponto de exclamação. Dain ajusta a munhequeira.*"
     }
 }

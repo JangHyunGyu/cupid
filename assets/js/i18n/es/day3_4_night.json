@@ -41,11 +41,11 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Lo disfraza con un 'jaja' — pero se le nota que va en serio.*"
+        "text": "*Espacio en blanco largo después de 'jaja'. El siguiente mensaje de Dain no llega.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Soñé. Caminaba al lado de alguien. No le veía la cara, pero, por alguna razón, no estaba inquieto.*"
+        "text": "*Tuve un sueño. Caminaba junto a alguien. No podía ver su rostro, solo pasos manteniendo el mismo ritmo.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*— No voy a huir. Esta vez, a una sola persona. Soñé. — Caminaba al lado de alguien. No le veía la cara, pero, por alguna razón, no estaba inquieto.*"
+        "text": "*Tuve un sueño. Caminaba junto a alguien. No podía ver su rostro, pero en mi mano había un mensaje a punto de enviarse.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*La tenía guardada porque sentía que, si la borraba, también se iría lo que sentí entonces. Pero ya no es apego: es un recuerdo. — Su papel terminó.*"
+        "text": "*Mi dedo se detiene sobre el botón de eliminar. En su lugar moví la foto a una carpeta nueva. Nombre de carpeta: 'Registro'.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
@@ -162,11 +162,11 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Si no escribe el final, la historia no se acaba. — Yo siento lo mismo.*"
+        "text": "*El cursor parpadea en la última línea del bloc de notas. Deja el final en blanco, y el archivo permanece en modo guardando.*"
     },
     "night3_cheat_msg_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon dice 'por favor'. — Una palabra que no estaba en su vocabulario. Así de hundida está.*"
+        "text": "*Seoyeon usa la palabra 'favor'. El cursor permanece congelado después de esa palabra durante mucho tiempo.*"
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
@@ -186,15 +186,15 @@
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*Esta vez quería decirlo sin arrepentirme. Que en este colegio iba a vivir con honestidad.*"
+        "text": "*Cerré el bloc de notas. Aún no hay frase para enviar mañana. Pero decidí no dejar la pantalla en blanco.*"
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Igual que con Sojeong. Lo sabía y me callé. En el colegio de antes vi a Sojeong derrumbarse y cerré la boca. En este colegio — otra vez.*"
+        "text": "*Sojeong cierra la foto. Esta vez hay tres ventanas de mensajes. Los tres cursores parpadean.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Este colegio: me arrepiento de haberlo dicho a todas. Al final el problema no es 'hablar o callar' — es 'a quién'.*"
+        "text": "*Escuela anterior: mensajes sin enviar. Esta escuela: demasiadas ventanas de respuesta abiertas. La pantalla del móvil arde en mi palma.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna lo dijo: 'No huyas.' Por eso esta vez tiene que ser distinto. No elegir — es perderlo todo.*"
+        "text": "*Yuna lo dijo. 'No huyas.' El cursor de la ventana de respuesta parpadea. Otra frase nunca enviada a nadie se alarga.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -218,11 +218,11 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu lo dijo: 'Rechazar también es amor.' En mi colegio anterior, Sojeong desapareció sin que nadie la ayudara. Porque yo cerré la boca. — Ese fue el final más cruel, para Sojeong y para mí. Si una sola de aquellas 38 notas se hubiera llegado a enviar — a lo mejor Sojeong no habría tenido que dejar el colegio.*"
+        "text": "*Minsu lo dijo. 'El rechazo también es amor.' Sojeong en la galería sigue sonriendo. Nota #38 aún sin enviar. Solo el botón de enviar está en azul.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
-        "text": "*Borrar la foto fue fácil. Un dedo y ya está. — Los sentimientos tardan más. Aun así. Lo que he borrado — me deja avanzar un poco.*"
+        "text": "*Borrar la foto fue fácil. Solo un dedo. Me quedo mirando la miniatura del álbum vacío un rato.*"
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",

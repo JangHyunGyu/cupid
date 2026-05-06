@@ -91,11 +91,11 @@
     },
     "lunch3_share_solo": {
         "name": "{name}",
-        "text": "*Wir drei teilten uns alles. Nichts Besonderes, aber — die Stimmung war gut. Ein Mittagessen, bei dem niemand fehlte.*"
+        "text": "*Wir drei teilen nach und nach. Die letzte Eierrolle wird halbiert, und niemand steht zuerst auf.*"
     },
     "lunch3_harem_1": {
         "name": "{name}",
-        "text": "*Am Ende teilten sich die drei alles ein wenig. Seoyeon lächelt höflich, Dain ist übertrieben fröhlich, und Yuna holt den zusammengefalteten Zettel am Ende doch nicht hervor. Es ist nicht vorbei, es ist nur aufgeschoben.*"
+        "text": "*Wir drei teilen nach und nach. Seoyeon lächelt höflich, Dain ist übertrieben fröhlich, Yuna holt den gefalteten Zettel nie heraus.*"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -204,11 +204,11 @@
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
-        "text": "*Ich bin geflohen. Aus dem Klassenzimmer. — Die feigste Wahl.*"
+        "text": "*Ich stoße die Klassenzimmertür auf. Hinter mir kratzen Stühle auf einmal über den Boden.*"
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*Hinter mir bohrt sich das Schweigen der drei in meinen Rücken. Die Mittagspause war vorbei, und der Nachmittagsunterricht ging weiter. Das Kratzen der Kreide an der Tafel klang seltsam fern. Ich spüre einen Blick im Rücken. — Da ist noch eine ungelöste Geschichte übrig.*"
+        "text": "*Die Stille dreier Leute hinter mir bohrt sich in meinen Rücken. Den ganzen Nachmittagsunterricht über klingt die Kreide fern. Unter meinem Tisch leuchtet mein Handybildschirm immer wieder auf und erlischt.*"
     },
     "lunch3_end": {
         "name": "{name}",
@@ -262,7 +262,7 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "{name}",
-        "text": "*Dain gewinnt die Mittagswette und breitet aufgeregt die Arme aus. Sie umarmt mich. Eine Sekunde. Dain springt zurück und tritt einen Schritt weg. Greift grundlos nach der Wasserflasche.*"
+        "text": "*Dain wirft die Arme hoch, aufgeregt über ihren Sieg bei der Mittagswette. Eine Umarmung. Eine Sekunde. Sie springt zurück, tritt einen Schritt weg und greift nach ihrer Wasserflasche.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Niemand verlässt seinen Platz. Sie lächeln zwar, aber keiner von den dreien greift richtig zu. Die letzte Beilage fällt einem unwillkürlich ins Auge.*"
+        "text": "*Niemand steht auf. Es gibt Lächeln, aber alle drei zögern, ihre Essstäbchen aufzuheben. Nur eine letzte Beilage bleibt in der Mitte der Brotdose.*"
     },
     "lunch3_meal_10_c": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "lunch3_meal_10_e": {
         "name": "{name}",
-        "text": "*Yuna nickt nur. Sie schreibt auf einen Zettel, faltet ihn und steckt ihn in die Tasche. Gibt ihn nicht her. — Keine Ahnung, was draufstand.*"
+        "text": "*Yuna nickt nur. Sie schreibt auf einen Zettel, faltet ihn und steckt ihn in ihre Tasche. Gibt ihn nicht ab. Nur ein einzelner blassvioletter Punkt ist am Rand des Papiers durchgeblutet.*"
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "lunch3_expose_honest_4_b": {
         "name": "{name}",
-        "text": "*Seoyeons Ausdruck verändert sich. — Immer noch ruhig, aber jetzt liegt etwas Scharfes darin.*"
+        "text": "*Seoyeons Lächeln erstarrt. Die Spitze ihrer Essstäbchen tippt gegen den Deckel ihrer Brotdose.*"
     },
     "lunch3_expose_excuse_2_b": {
         "name": "{name}",

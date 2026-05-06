@@ -9,7 +9,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*A la puerta del colegio. A lo lejos, las tres. Seoyeon yéndose con Haeun, Dain lanzando un balón mientras corre, Yuna leyendo un libro a paso lento. Ninguna mira hacia aquí. — Mejor así. Ahora mismo no podría sostenerle la mirada a nadie.*"
+        "text": "*La puerta de la escuela. Tres figuras a lo lejos. Seoyeon camina con Haeun, Dain lanza un balón mientras corre, Yuna lee despacio. Ninguna mira hacia aquí.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -45,11 +45,11 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*Seoyeon se da la vuelta y agita la mano. — El mismo gesto del Día 1. No mira atrás. La espalda recta. Perfecta. — Pero esta vez no tiembla.*"
+        "text": "*Seoyeon se da vuelta y saluda con la mano. No mira atrás. Solo el lazo en su muñeca se balancea brevemente al final del pasillo.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*Me quedé solo en el pasillo. Los pasos de Seoyeon se alejan. — Hace cinco días esa espalda parecía un muro. Ahora parece una puerta.*"
+        "text": "*Solo en el pasillo. Los pasos de Seoyeon se alejan. La llave de la azotea que creías cerrada permanece en tu palma.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -115,7 +115,7 @@
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*El sol se pone. Cinco días llegan a su fin. El atardecer tiñe el patio del colegio. ¿Cinco días eran tan cortos? — Se acerca el momento de la última decisión.*"
+        "text": "*El atardecer se posa en cada ventana del patio. Desde la sala de transmisiones fluye el anuncio del cierre del evento, y los altavoces del campo crepitan un compás tarde.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
@@ -132,7 +132,7 @@
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*La grieta que a la hora de comer tapé con una sonrisa forzada sigue ahí. Esta noche no va a cerrarse con una sola persona.*"
+        "text": "*Las palabras dobladas al almuerzo permanecen. Tres conversaciones se iluminan a la vez, y no puedes escribir la primera letra en ninguna.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Con la grieta que tapamos a la fuerza a cuestas, los pasos nos llevaron al parque.*"
+        "text": "*Mensajes sin responder permanecen en la pantalla de bloqueo. Tus pies se han dirigido hacia el parque.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -148,13 +148,13 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*En el colegio anterior pasó lo mismo. No lo dije. Y me arrepentí. — ¿Otra vez lo mismo?*"
+        "text": "*El pasillo de tu antigua escuela, el teléfono en tu bolsillo, la nota 38 sin enviar—todo emerge a la vez.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Casi huyo otra vez. Como en el otro colegio. El celular en el bolsillo, sin decir nada — ese momento casi vuelve. — No. Esta vez no. Las piernas se mueven. La boca se abre antes. No tengo nada preparado. — El cuerpo va antes que yo.*"
+        "text": "*Aprietas el teléfono en tu bolsillo. Lo dejas ahí sin encender la pantalla. Tus piernas se mueven primero, y el nombre se escapa.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Extiende el meñique. El mismo dedo que no supe tomar en el Día 4.*"
+        "text": "*Extiendes tu meñique. El dedo que no pudiste atrapar ese día en la barandilla.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
@@ -227,7 +227,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
-        "text": "*Se frota los ojos sin venir a cuento. Se está riendo, pero parece que va a llorar.*"
+        "text": "*Dain se frota la esquina del ojo. Su sonrisa permanece igual, pero la humedad se adhiere al dorso de su mano.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
@@ -268,7 +268,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "{name}",
-        "text": "*Con ella sobra una explicación larga: basta una línea. El problema es — que esa línea me toca a mí.*"
+        "text": "*Yuna espera, sosteniendo el libro. La ventana de respuesta aún no tiene la primera letra.*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -339,7 +339,7 @@
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*Una sola línea, pero la tinta está corrida. — Lloró mientras la escribía.*"
+        "text": "*Una sola línea donde la tinta se ha corrido. Una marca de uña permanece en el pliegue.*"
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",
@@ -379,6 +379,6 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*Las palabras que quería tragarme y dejar pasar acaban saliendo. Que no puedo elegir a una sola. Sé que es cobarde, pero esta noche voy a cargar también con el precio.*"
+        "text": "*Las palabras atascadas en tu garganta salen. Que no puedes elegir a una. Las tres expresiones se congelan a la vez.*"
     }
 }

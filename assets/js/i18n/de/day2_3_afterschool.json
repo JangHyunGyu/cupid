@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Es ist ein befehlender Ton, aber irgendwie vertraut. — Ist das etwa die Art, wie diese Person um etwas bittet?*"
+        "text": "*Der Satz endet wie ein Befehl, aber Seoyeon dreht sich nicht sofort um. Sie wartet, ob ich folge.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -310,7 +310,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Von Yuna kam keine Nachricht. Aber meine Füße gehen Richtung Bibliothek. Warum? — Weiß nicht genau. Vielleicht wegen dem Morgenzettel.*"
+        "text": "*Keine Nachricht von Yuna. Trotzdem gehen meine Füße Richtung Bibliothek. Der gefaltete Zettel in meiner Tasche streift bei jedem Schritt meinen Handrücken.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Eine zufällig offene Tür. — Yunas 'zufällig' ist gleichbedeutend mit 'absichtlich'. Ich setze mich neben sie. Yuna reicht mir einen ihrer Ohrhörer.*"
+        "text": "*Die Tür steht offen, wie zufällig. Auf dem Stuhl drinnen liegt bereits ein Ohrhörer. Yuna deutet stumm mit dem Kinn auf den Platz neben ihr.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -390,7 +390,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Auf meinem Handy kommen verspätet Dains 'Ich hab gewartet?' und Seoyeons 'Sag Bescheid, wenn sich dein Plan ändert' an. Während wir nebeneinander Musik hören, ist die Abendsonne untergegangen. — Neben dieser Person will ich immer wieder herkommen.*"
+        "text": "*Auf meinem Handy sind Dains 'Hab gewartet?' und Seoyeons 'Sag Bescheid, wenn sich dein Plan ändert' verspätet angekommen. Auf dem Platz, wo Yuna und ich nebeneinander saßen, ist ein Ohrhörer noch warm.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Während ich das Pflaster prüfe — sehe ich ein Notizbuch, das aus ihrer Schreibtischschublade ragt. Hellgrüner Einband. Die offene Seite enthält etwas in Briefform. 'Yujin, heute—' Mehr lese ich nicht, da schließt die Krankenschwester die Schublade.*"
+        "text": "*Beim Überprüfen des Verbands fällt mir ein hellgrünes Notizbuch auf, das aus der Schreibtischschublade herausragt. Die erste Zeile der offenen Seite lautet: 'Yujin, heute—' Die Krankenschwester schließt die Schublade.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
@@ -524,7 +524,7 @@
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*Endstand 3 zu 2. Knapp gewonnen. Als Dain aufsteht — reibt sie sich kurz das rechte Knie. Ich glaube, gestern in der Halle war es genauso. Eine unbewusste Geste.*"
+        "text": "*Am Ende 3:2. Ein knapper Sieg. Dain steht auf und reibt einmal ihr rechtes Knie. Ihr Lächeln bleibt gleich.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
@@ -532,7 +532,7 @@
     },
     "after2_seo_4_b": {
         "name": "{name}",
-        "text": "*Das Wort 'Bitte' scheint in ihrem Wortschatz nicht zu existieren.*"
+        "text": "*Statt 'bitte' dreht Seoyeon das Klemmbrett zu mir. Der obere Teil der To-do-Liste ist leer.*"
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "{name}",
-        "text": "*Sie hat tatsächlich 'Kompliment' gesagt. — Das scheint bei ihr selten zu sein.*"
+        "text": "*Seoyeon nennt es ein Kompliment und sortiert dann direkt weiter die Unterlagen. In dem Moment, als sie den Kopf dreht, versteifen sich ihre Schultern—nur ganz leicht.*"
     },
     "after2_seo_sunset_joke_b": {
         "name": "Seoyeon",
@@ -564,7 +564,7 @@
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*Wessen Hand ist das? — Es ist Seoyeons Hand auf meiner Schulter. Meine Gedanken sind durcheinander. So angespannt bin ich.*"
+        "text": "*Wessen Hand? Seoyeons Hand liegt auf meiner Schulter. Ich hab's verdreht gesagt. Auch ihre Fingerspitzen halten einen Moment auf meiner Schulter inne.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",

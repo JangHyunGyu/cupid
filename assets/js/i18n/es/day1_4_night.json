@@ -113,7 +113,7 @@
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*No fue un mal primer día. Mañana — parece que va a ser un poco más divertido.*"
+        "text": "*Los nombres que guardé hoy permanecen en mi pantalla de bloqueo. Incluso después de apagar la pantalla, mi dedo busca el botón de encendido una vez más.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Mira que ponerle corazones a un 'interés médico'. Es la primera vez que veo a alguien usar emojis en una ficha de salud.*"
+        "text": "*Hay un corazón después de 'interés médico'. Hasta que apago la pantalla, sigo mirando ese corazón una vez más.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

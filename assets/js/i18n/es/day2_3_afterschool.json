@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*Tono imperativo, pero a estas alturas ya me suena familiar. — ¿Será así como pide las cosas?*"
+        "text": "*La frase termina como una orden, pero Seoyeon no se da vuelta de inmediato. Espera para ver si la sigo.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -310,7 +310,7 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna no escribió. Y aun así, los pies me llevan a la biblioteca. ¿Por qué? — No lo sé. Quizá sea por la nota de esta mañana.*"
+        "text": "*No hubo mensaje de Yuna. Aun así, mis pies se dirigen hacia la biblioteca. La nota doblada en mi bolsillo roza el dorso de mi mano con cada paso.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after2_yuna_8b": {
         "name": "{name}",
-        "text": "*Una puerta abierta de casualidad. — La 'casualidad' de Yuna significa 'a propósito'. Me siento a su lado. Me tiende uno de sus auriculares.*"
+        "text": "*La puerta está abierta, como por casualidad. En la silla del fondo ya hay un auricular. Yuna señala en silencio el asiento a su lado con la barbilla.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
@@ -390,7 +390,7 @@
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "*Al celular llegan, con retraso, un '¿te estaba esperando?' de Dain y un 'avísame si cambia el plan' de Seoyeon. Escuchando música al lado de Yuna, el sol se puso del todo. — Al lado de ella, no paran de darme ganas de volver.*"
+        "text": "*En mi teléfono, el '¿Te estaba esperando?' de Dain y el 'Avísame si cambia tu horario' de Seoyeon llegaron tarde. En el asiento donde Yuna y yo estábamos sentados juntos, un auricular todavía está tibio.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Mientras reviso la curita — veo un cuaderno asomando del cajón. Tapa verde claro. En la página abierta, algo escrito como una carta. 'Yujin, hoy—' Hasta ahí llego cuando la enfermera cierra el cajón.*"
+        "text": "*Al revisar la venda, noto un cuaderno verde claro que sobresale del cajón del escritorio. La primera línea de la página abierta dice: 'Yujin, hoy—' La enfermera cierra el cajón.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
@@ -524,7 +524,7 @@
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*Final: 3-2. Gano apenas. Dain se levanta — y se frota la rodilla derecha. Ayer en el gimnasio también, me parece. Un gesto inconsciente.*"
+        "text": "*3:2 al final. Una victoria ajustada. Dain se levanta y frota su rodilla derecha una vez. Su sonrisa permanece igual.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
@@ -532,7 +532,7 @@
     },
     "after2_seo_4_b": {
         "name": "{name}",
-        "text": "*En el vocabulario de esta chica, la palabra 'por favor' no existe.*"
+        "text": "*En lugar de 'por favor,' Seoyeon gira la carpeta hacia mí. La parte superior de la lista de tareas está en blanco.*"
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "{name}",
-        "text": "*Que te diga 'cumplido' así, directa. — Raro en ella, me parece. Sigo ordenando y Seoyeon gira el cuello. Parece que lo tiene tenso.*"
+        "text": "*Seoyeon dice que es un cumplido y vuelve directamente a ordenar los papeles. En el momento en que gira el cuello, sus hombros se tensan—solo un poco.*"
     },
     "after2_seo_sunset_joke_b": {
         "name": "Seoyeon",
@@ -564,7 +564,7 @@
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*¿Quién tiene la mano? — Es la de Seoyeon, en mi hombro. Se me enredaron las palabras. Estoy así de tenso.*"
+        "text": "*¿De quién es la mano? La mano de Seoyeon está sobre mi hombro. Lo dije al revés. Las puntas de sus dedos también se detienen un momento sobre mi hombro.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",

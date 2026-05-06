@@ -65,7 +65,7 @@
     },
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Ich muss allen dreien gleichzeitig antworten. — Ich weiß nicht, ob das Glück oder Qual ist.*"
+        "text": "*Drei Nachrichtenfenster öffnen sich nacheinander. Bevor ich eine Antwort schreiben kann, sinkt die Batterieanzeige um einen Balken.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*Der dritte Stern? — Ich drehe mich zum Fenster. Der Himmel ist voller Sterne. Welcher der dritte ist, weiß ich nicht.*"
+        "text": "*Der dritte Stern? Ich drehte den Kopf zum Fenster. Am Nachthimmel sind viele Sterne. Während ich sie mit dem Finger zähle, beschlägt die Fensterscheibe.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
@@ -154,35 +154,35 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Ich habe weit zurückgescrollt. Vor drei Monaten. — Ein Foto. Ein Gruppenbild vom Schulausflug. Sojeong lächelt. Neben mir. — Es war die Woche nach diesem Foto. Da fingen die Schmierereien auf Sojeongs Tisch an. Ich mochte sie. Eindeutig. Aber es gab etwas Dringenderes als ein 'Ich mag dich'.*"
+        "text": "*Ich scrollte eine Weile runter. Ausflugsfoto von vor drei Monaten. Sojeong lächelt neben mir. In den Fotos danach ist Sojeongs Schreibtisch Stück für Stück nach hinten gerückt. Als hätte jemand es absichtlich zugeschnitten, damit das Graffiti nicht zu sehen ist.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Damals habe ich jeden Abend mein Handy aufgemacht. Habe was ins Notizen-App getippt und wieder gelöscht, immer und immer wieder. Geständnissätze, aber auch Sätze wie 'Frau Lehrerin, Sojeong wird —'. Jedes Mal habe ich kurz vor dem Senden aufgehört. Ich hatte das Gefühl, ich werde selbst zur Zielscheibe, wenn ich mich einmische. Und eines Tages im März war Sojeongs Platz leer. Am nächsten Tag auch. Und am übernächsten.*"
+        "text": "*In meinen Notizen reihen sich ungesendete Sätze aneinander. 'Ich mag dich.' 'Lehrerin, auf Sojeongs Schreibtisch—' 'Heute auch—' Alle in der ersten Zeile abgebrochen. Letzte Änderung: 2:17 Uhr nachts.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Die Entwürfe in meiner Notizen-App stehen bei Nummer 38. Es gibt keine 39. Weil es niemanden mehr gab, dem ich es schicken konnte. Gestanden hab ich ihr nichts, und ich habe sie nicht beschützt. Der Schulwechsel war nicht wegen Sojeong. Es war der Job meines Vaters. — Aber der Wechsel war mir nicht unangenehm. So musste ich nicht jeden Tag an Sojeongs leerem Platz vorbei.*"
+        "text": "*Unter der 38. Notiz ist nichts. Nur der 39. Titel ist leer. Am nächsten Tag blieb Sojeongs Platz bis zum Ende leer. Auf den Transferpapieren steht in der Unterschriftszeile der Erziehungsberechtigten der Name ihres Vaters.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*'Diesmal nicht wegschauen.' — Das war das Versprechen, mit dem ich an diese Schule kam. Ich habe die Galerie geschlossen. Ich habe überlegt, das Foto zu löschen, und — es gelassen. Wenn ich es lösche, vergesse ich vielleicht auch die Schuld von damals.*"
+        "text": "*Ich schloss die Galerie. Mein Finger hält über dem Foto-Löschen-Button an. Am Ende schalte ich den Bildschirm aus. Nur mein Gesicht bleibt auf dem schwarzen Display.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Aber — ich starre an die Decke. Der Tag lässt sich nicht abschalten. Seoyeon. Dain. Yuna. Alle drei stecken in meinem Kopf. Ich könnte es Neugier nennen. Ehrlich gesagt macht es mir aber Angst. Der Gedanke, dass mein Herz sich zu einer von ihnen neigt.*"
+        "text": "*Ich schaue zur Decke. Die heutigen Nachrichten überlagern sich auf meinem Sperrbildschirm. Seoyeon. Dain. Yuna. Ich hab noch keine von ihnen gelesen.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Bei Sojeong hab ich nur eine Person angesehen. Mochte sie, sah nur zu, verpasste ihren Zusammenbruch. Achtunddreißig Notizen, alle abgebrochen. — Nur eine zu sehen hieß, sie verlieren zu können.*"
+        "text": "*Ich öffne Sojeongs Foto wieder. Ich stehe neben ihr und schaue in die Kamera. Sojeong schaut mich an.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*— Deshalb hab ich mir bei allen dreien eine Tür offen gehalten. Wähle ich zu schnell, könnte ich übersehen, wie eine andere zerbricht. Absicherung. Ich weiß, es ist feige. Ein unentschlossener Idiot. Aber — jemanden zu verlieren, während man nur sie ansieht, das kenne ich.*"
+        "text": "*Ich öffne das Antwortfenster, dann schließe ich es wieder. Die drei Namen stehen nebeneinander ganz oben in meinen letzten Chats. Mein Finger erreicht keinen von ihnen.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Der zweite Tag ist vorbei. Am ersten Tag war es Neugier. Ich wollte wissen, was sie für Leute sind. Heute — ist es ein bisschen anders. Nicht neugierig. Sie gehen mir nicht aus dem Kopf. Was sie gerade machen, was sie morgen sagen werden.*"
+        "text": "*Der zweite Tag ist vorbei. Namen, die am ersten Tag noch fremd waren, stehen jetzt auf meinem Sperrbildschirm. Auch nachdem die Benachrichtigungen verschwinden, schalte ich den Bildschirm immer wieder ein.*"
     },
     "night2_hidden_check": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Ich habe das Fenster geöffnet. Kalte Luft kommt herein. — Es sind viele Sterne, aber ich weiß nicht, welcher der dritte ist.*"
+        "text": "*Ich öffnete das Fenster. Kalte Luft strömt herein. Die Sterne sind zahlreich, und mein Finger bleibt beim dritten stehen, in der Luft schwebend.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
@@ -246,11 +246,11 @@
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Das Problem ist, dass dieser Abstand schneller schrumpft als gedacht. Ich mache die Augen zu. — Morgen muss ich vielleicht ein bisschen ehrlicher sein.*"
+        "text": "*Ich schloss die Augen. Auf dem Sperrbildschirm bleibt nur die Zahl der ungelesenen Nachrichten. Auch nachdem der Bildschirm dunkel wird, fühlt sich meine Hand noch hell an.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Ich öffne den Kühlschrank. Nicht viel drin. Restlicher Reis, Eier, Seetang. — Ich will morgen etwas mitbringen. Für wen? Keine Ahnung. Ich will es einfach.*"
+        "text": "*Ich öffnete den Kühlschrank. Übrig gebliebener Reis, Eier, Kimchi. Ich nehme die Lunchbox heraus und stelle sie auf den Tisch. Den Deckel hab ich noch nicht geöffnet.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

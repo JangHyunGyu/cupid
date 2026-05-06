@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*She didn't slow down. But her eyes were definitely on me. The moment Seoyeon turned the corner — I could've sworn her smile faded. Or did I imagine it?*"
+        "text": "*I didn't stop walking. Just before Seoyeon turns the corner, her smile fades first. The clipboard presses closer to her chest.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -94,7 +94,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Can you even call dibs on a person? — The scary part is, I don't mind.*"
+        "text": "*Are people objects to be claimed? The edge of Seoyeon's clipboard taps against the desk. I couldn't say no right away.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "*There probably was. Maybe. — But I don't think that's the point.*"
+        "text": "*Instead of answering, I adjust my bag strap. Dain sees it but doesn't ask further.*"
     },
     "morning2_end": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon came to me first. Her usual composed tone — but underneath it, she was looking for an answer. Dain glances over from the back of the classroom. Turns her head away. Yuna buries herself deeper in her book. Pages turning faster than before.*"
+        "text": "*Seoyeon approached first. The clipboard is pressed against the inside of her arm again today. Dain glances from the back of the classroom and turns away. Yuna turns her pages faster.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*I fold the note and hold it in my hand. — For some reason, it feels precious.*"
+        "text": "*I fold the note and hold it in my hand. The crease presses into my palm.*"
     },
     "morning2_break_transition_b": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*I follow the teacher to the faculty office. Her desk is in the corner. Papers, a coffee mug — and a drawer slightly ajar. Stacks of paper on the desk, and — what looks like manuscript pages.*"
+        "text": "*I followed the homeroom teacher to the staff room. A drawer at a corner desk is slightly open. Beneath a pile of papers, the edge of manuscript paper shows through.*"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "Homeroom Teacher",
@@ -350,7 +350,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "{name}",
-        "text": "*She hid behind the cup, but her fingers are fiddling with it. Even she has a tell when she's flustered.*"
+        "text": "*The homeroom teacher covers her mouth with the coffee cup and turns the saucer twice in the same spot.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",

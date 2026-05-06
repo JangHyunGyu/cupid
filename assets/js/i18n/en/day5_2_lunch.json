@@ -61,11 +61,11 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*The library annex. The secret reading space I stumbled into a few days ago. A worn sofa, afternoon sunlight streaming through the window.*"
+        "text": "*The library annex. An old sofa, afternoon sunlight through the window. The same dusty smell as when you first walked in.*"
     },
     "tour_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna sits on the sofa. She leaves the seat beside her empty. — The same arrangement as Day 2.*"
+        "text": "*Yuna sits on the sofa. She leaves the seat beside her empty. A spot where no dust has settled.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "tour_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna pulls a notebook out of her bag. The same notebook I stumbled upon the other day.*"
+        "text": "*Yuna pulls a notebook from her bag. The same one hastily covered in the attic.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -113,7 +113,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*The gym. Where we first made a bet that first day, and where she hit her last spike yesterday. — Today, the lights are on.*"
+        "text": "*The gym. The first bet and the final spike linger on the same court. Today the lights are on.*"
     },
     "tour_dain_2": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*She says it without exclamation marks. But this time it's not a farewell — it's a beginning. The same quiet sentence as yesterday, but the warmth is different.*"
+        "text": "*She speaks without exclamation marks. This time she doesn't bow her head. Dain's hand rests on the volleyball, not on her knee.*"
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",

@@ -9,7 +9,7 @@
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*...Ainda bem, dizem. Será mesmo? Se eu tivesse aberto a boca naquela hora — a Sojeong nem precisava ter mudado de escola.*"
+        "text": "*Olho de novo a última mensagem — 'Ainda bem kkk.' Abro o campo de resposta, não escrevo nada e desligo a tela.*"
     },
     "after_kakao_5": {
         "name": "{name}",
@@ -25,7 +25,7 @@
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*...E agora o que eu falo. Se eu disser que tava com a Seoyeon, o clima vai ficar esquisito.*"
+        "text": "*Digito 'com a Seoyeon' na caixa de resposta e apago. O cursor pisca sozinho no primeiro espaço novamente.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
@@ -57,7 +57,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "{name}",
-        "text": "*Mexo no bolso lateral da mochila e a ponta do dedo tropeça num papel. Bilhete dobrado. Não faço ideia de quando alguém colocou ali. Letra da Yuna. 'Vi vocês no terraço na hora do almoço. ...Pareciam bem à vontade, você e a presidente.' — Três pontinhos no final. Do tipo que se escreve quando engole o que queria dizer.*"
+        "text": "*Um bilhete dobrado está enfiado no bolso lateral da mochila. A caligrafia da Yuna. 'Te vi no almoço no terraço. ...Vocês pareciam bem próximos.' Três pontos estão pressionados na parte de baixo do papel.*"
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -65,7 +65,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Ela tá sorrindo. Os dedos batucam na prancheta. — A nuca esquenta. Desvio o olho.*"
+        "text": "*Ela está sorrindo. Os dedos batem na prancheta. Abaixo o olhar para a caixa de resposta vazia.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -115,7 +115,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Passo na frente da biblioteca e vejo uma garota de olhos vermelhos lendo enquanto anda. As tatuagens do braço chamam atenção — mas o jeito que segura o livro é surpreendentemente sereno.*"
+        "text": "*Passando em frente à biblioteca, vejo uma garota de olhos vermelhos caminhando enquanto lê. Seu braço tatuado sustenta com cuidado a lombada do livro.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "after_miss_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna fica olhando o marcador por um tempão. Parece checar se não amassou.*"
+        "text": "*Yuna abre o canto do marcador com o polegar e o segura contra a luz. Sem dobras.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -167,7 +167,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Esperou mesmo. — Bate uma culpa. E uma vontade estranha de rir.*"
+        "text": "*Meu nome ainda está no topo da prancheta de Seoyeon. A caixa de seleção ao lado ainda está vazia.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -192,7 +192,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*A professora. O cardigã tá ainda mais torto do que antes. Parece que ela saiu de uma batalha de um dia inteiro.*"
+        "text": "*É a professora titular. Uma manga do cardigã está dobrada, e um aviso amassado aparece entre as páginas do livro de chamada.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -208,7 +208,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*Parece pergunta automática, mas os olhos estão mesmo prestando atenção.*",
+        "text": "*Parece uma pergunta de rotina, mas a professora abaixa a prancheta e olha para o meu rosto.*",
         "choices": [
             "Tranquilo. A escola é melhor do que eu esperava.",
             "Sinceramente? Tô meio perdido."
@@ -220,7 +220,7 @@
     },
     "after_homeroom_ok_b": {
         "name": "{name}",
-        "text": "*Ela empurra os papéis pra um canto da mesa e me olha de novo. Dá pra ver que a conversa não vai acabar numa frase. Não era só papo de protocolo. A professora apoia a mão no encosto da cadeira e fica medindo as palavras.*"
+        "text": "*A professora empurra os papéis na mesa para um lado. Apoia a mão no encosto da cadeira e faz uma pausa para escolher as palavras.*"
     },
     "after_homeroom_ok_3": {
         "name": "Professora",
@@ -252,7 +252,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "{name}",
-        "text": "*'Algo parecido.' — Então ela fez outra coisa antes de dar aula?*"
+        "text": "*Algo parecido? A mão da professora se esconde brevemente atrás da prancheta.*"
     },
     "after_homeroom_honest_4": {
         "name": "Professora",
@@ -312,7 +312,7 @@
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
-        "text": "*A professora some no fim do corredor. O cabelo comprido balançando. — Fiquei olhando tempo demais.*"
+        "text": "*A professora desaparece no fim do corredor. O cabelo longo balança, e a borda do livro de chamada aparece entre seus braços.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professora",
@@ -322,7 +322,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Ando pelo corredor e — bate uma tontura leve. Deve ser o nervosismo do primeiro dia. Vejo uma plaquinha de 'Enfermaria' num canto. Passar direto é muita tontura pra tão pouco orgulho.*"
+        "text": "*Estou andando pelo corredor quando — minha cabeça gira levemente. Quando me apoio na parede, a tinta fria toca minha palma. Vejo uma placa 'Enfermaria' no final do corredor.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Abro a porta da enfermaria. Leve cheiro de antisséptico. Cortinas brancas, cama branca, uma mesinha. Uma mulher sentada na mesa. Jaleco branco, estetoscópio no pescoço. Cabelo curto lilás bem arrumado, me observando por cima dos óculos com o queixo na mão. Estava lendo alguma coisa — levanta a cabeça.*"
+        "text": "*Abro a porta da enfermaria. Cheiro de antisséptico. Cortinas brancas e uma cama, uma pequena mesa. Uma mulher de jaleco branco me olha por cima dos óculos. O estetoscópio em volta do pescoço dela toca a borda da mesa e balança levemente.*"
     },
     "after_nurse_enter_2": {
         "name": "Enfermeira",
@@ -366,7 +366,7 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Mal abri a boca e já perdi o controle da conversa. A enfermeira levanta e se aproxima. Movimentos fluidos. — Quando a mão dela encosta, travo sem motivo.*"
+        "text": "*Mal falei algumas palavras e ela já ditou o ritmo. A enfermeira se levanta e se aproxima. Quando a ponta do termômetro toca o dorso da minha mão, meus dedos se enrijecem levemente.*"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -426,7 +426,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Fala num tom brincalhão, mas a tensão cai um pouco. Tomo água e olho em volta. Num canto, um vasinho.*"
+        "text": "*Digo de forma brincalhona. Enquanto bebo água, olho ao redor da enfermaria. Num canto há uma pequena planta em vaso.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -446,11 +446,11 @@
     },
     "after_nurse_enter_10": {
         "name": "Enfermeira",
-        "text": "História antiga. Eu gosto da escola. Aqui os machucados são leves."
+        "text": "História antiga. Gosto da escola. Aqui, quando o sinal toca, todo mundo volta para a sala de aula."
     },
     "after_nurse_enter_10_b": {
         "name": "{name}",
-        "text": "*'Só machucados leves.' — Tem alívio no jeito que ela falou. Passaram dez minutos. Levanto.*"
+        "text": "*A enfermeira fecha a gaveta. Um caderno verde-claro lá dentro fica visível por um instante e depois desaparece. Dez minutos se passaram.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",

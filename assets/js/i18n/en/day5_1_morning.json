@@ -9,7 +9,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "Last day. Strangely, my steps feel light. Today — I think I can say it."
+        "text": "It's the last day. The rooftop key in my pocket touches the back of my hand with every step."
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Last day. Didn't expect five days to pass this fast. ...Not sure what I even did."
+        "text": "The last day. I tap each of the three names left on my lock screen. I can't bring myself to open any of the chat windows."
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "morning5_end": {
         "name": "{name}",
-        "text": "*Signals from three directions. — Time to choose an answer.*"
+        "text": "*I place the notes and notifications from three directions side by side on my desk.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*She turns away. Her long hair sways. — She looks like someone trying not to come undone until the very end.*"
+        "text": "*The teacher turns around. Her long hair sways, and the folded edge of the envelope is pressed against her elbow.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Homeroom Teacher",
@@ -147,7 +147,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*The moment I step into the classroom — signals come from three directions. The final event. Everything we've built over these days converges on today.*"
+        "text": "*The moment I step into the classroom, attention comes from three directions. A note on my desk, a ribbon tied to a gym uniform string, one notification on my lock screen.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*A short story is pinned to the bulletin board. Title: 'To the One I Met in the Library.' It's Yuna. — A story only I would recognize. I stand in front of the board a little longer. Short sentences, but so vivid it feels like Yuna is staring right at me.*"
+        "text": "*A short story is posted on the bulletin board. Title: 'To the Person I Met in the Library.' Light purple ink. A small bread crumb clings to the folded corner.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*One line. — Someone who was rejected three times trying to debut as a writer is waiting for a student's one-line impression. If this isn't a confession, what is? The teacher heads for the door — and stops.*"
+        "text": "*One line. The teacher stops at the doorway on her way out. She folds the edge of the manuscript envelope twice with her finger, then smooths it out.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Homeroom Teacher",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Homeroom Teacher",
-        "text": "...I think I've gone a bit past professional interest. Since it's the last time. Just this once."
+        "text": "...I'm crossing a line. But it's the last time. Just once more."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
-        "text": "*She said 'last day of the event,' but there's another meaning buried in those words.*"
+        "text": "*After saying it's the last day of the event, the nurse touches her stethoscope once.*"
     },
     "hidden_nurse_d5_1_c": {
         "name": "School Nurse",
@@ -303,7 +303,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*From 'come visit after graduation' to 'come if you're hurt' — she pulled back. Almost crossed the line and stepped back inside. The door opens. The school nurse is standing there. Two paper cups in her hands.*"
+        "text": "*'Come by if you're not feeling well.' After saying that, the nurse shifts the hand holding two paper cups slightly.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -363,7 +363,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Her signature line from Day 1. — Back then it was just a habit. Now it's real. The school nurse takes out a bandage and sticks it on the back of my hand. Slowly. — There's small writing on the bandage.*"
+        "text": "*The nurse takes out a bandage and sticks it on the back of my hand. Slowly. There's tiny writing on the edge of the bandage.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -387,7 +387,7 @@
     "morning5_end_branch": {},
     "morning5_committed_end": {
         "name": "{name}",
-        "text": "*It's not signals coming from three directions anymore. I've already made my choice, and I head toward the final event.*"
+        "text": "*I organize the notes on my desk and check the event schedule for the direction I've already chosen.*"
     },
     "morning5_gate": {
         "name": "{name}",
@@ -395,11 +395,11 @@
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*The last line. 'When he opened his eyes, I was already gone. I left only a note. — I'll be here next time too.' Pale violet ink. The same ink as the Day 1 note.*"
+        "text": "*The last sentence. 'When that person opened their eyes, I was already gone. I left only a note. — I'll be here again next time.' Light purple ink. The same color as the first note.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*In a small corner below the board — 'This is fiction. It's not real.' Traces of erasing. Erased but the marks remain. Yuna wrote this, erased it, and ultimately left it.*"
+        "text": "*In the bottom corner of the bulletin board, small text — 'This is fiction. It's not real.' Eraser marks remain.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*The empty seat in the library, the missing bookmark, and now a story that was never posted. — Yuna is erasing every trace. The silence I left on Day 3 has reached this far.*"
+        "text": "*An empty library seat, a missing bookmark, an unposted novel. Only four thumbtack holes remain on the bulletin board.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*I closed the classroom door behind me. The envelope sits on her desk. — What she hadn't received in seven years wasn't sincere praise — it was someone who'd actually read it. Praise was already in the rejection emails. I said exactly what a rejection email would say. With good intentions.*"
+        "text": "*I left and closed the classroom door. The envelope is still on the teacher's desk. A return-label mark the size of a fingernail remains on the surface.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*I didn't know. It was a guess. — Someone who took seven years showing it to a student for the first time today seemed off. If it were finished, she'd have sent it to publishers first. It's not finished — so she needed permission to end it.*"
+        "text": "*The last page of the manuscript has no period. Below a line drawn in red pen, the same sentence is rewritten three times.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
@@ -511,6 +511,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*I hold the manuscript again. It's not as heavy as before. — Rather than completing seven years of unfinished work with praise, what she needed was someone to look at what was missing and call it what it was. That's what real support looks like.*"
+        "text": "*She cradles the manuscript again. The teacher rubs the return-label mark with her thumb. The paper edge crumples slightly in her palm.*"
     }
 }

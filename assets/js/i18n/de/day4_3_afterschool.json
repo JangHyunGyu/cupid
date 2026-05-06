@@ -9,7 +9,7 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*Das Dach. Der Sonnenuntergang taucht die Schule in Gold. Genau der Ort, an dem ich am Tag 1 zum ersten Mal war.*"
+        "text": "*Das Dach. Der Sonnenuntergang färbt die Schule. Ich sehe das Geländer, wo Seoyeon am ersten Tag hinuntergeschaut hat.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Ich bin nervös. Trotzdem möchte ich es dieses Mal richtig sagen.*",
+        "text": "*Der Geständnis-Übungszettel faltet und entfaltet sich in ihrer Handfläche. Die Falte ist jetzt drei Schichten tief.*",
         "choices": [
             "Seoyeon. Warte kurz.",
             "...Schön hier oben."
@@ -45,7 +45,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "*Ich erinnere mich an die Worte, die ich an meiner alten Schule nicht sagen konnte. Hunderte Male habe ich es wiederholt — 'was wäre gewesen, wenn ich es damals gesagt hätte.' — Diesmal gestehe ich es.*"
+        "text": "*Sätze, die an meiner alten Schule geschrieben und gelöscht wurden, kommen mir in den Sinn. Diesmal habe ich mein Handy nicht aus der Tasche geholt.*"
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Am ersten Tag habe ich dasselbe gesagt. Damals meinte ich es ernst. Jetzt ist es Flucht.*"
+        "text": "*Sie sagte am ersten Tag das Gleiche. Seoyeons Finger stoppt am Rand des Klemmbretts.*"
     },
     "confess_seo_no_3": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*Der Bibliotheksanbau. Ein geheimer Leseraum. Der Sonnenuntergang sickert durch das Fenster. Genau der Ort, an dem ich am Tag 2 zum ersten Mal war.*"
+        "text": "*Bibliotheksanbau. Der geheime Leseplatz. Der Sonnenuntergang sickert durch das Fenster. Yunas Lesezeichen liegt neben dem alten Sofa.*"
     },
     "confess_yuna_3b": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*Diesmal. Jemand ist vorher gegangen. Yuna öffnet diese Wunde erneut und hält mich trotzdem fest.*"
+        "text": "*'Dieses Mal.' Yunas Atem stockt nur leicht bei diesen zwei Worten. Sie lässt meine Hand nicht los.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "confess_yuna_no_2": {
         "name": "{name}",
-        "text": "*Yuna liest zwischen den Zeilen. Sie wird wissen, dass diese Worte nur Flucht sind.*"
+        "text": "*Yuna nickt. Sie schiebt das Lesezeichen zwischen die Seiten und drückt es tiefer hinein.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Leer. Der Sonnenuntergang fällt durch die Fenster auf das Spielfeld. Genau der Ort, an dem wir am Tag 1 zum ersten Mal zusammen waren.*"
+        "text": "*Die Sporthalle. Leer. Der Sonnenuntergang färbt den Platz durch die Fenster. Die Linie von der Wette am ersten Tag ist noch sichtbar.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*Der Hallenboden scheint zu wanken. — Ich kenne das Zittern hinter den Ausrufezeichen dieser Person.*",
+        "text": "*Dains Ball springt einmal auf. Die Hand, die ihn normalerweise gefangen hätte, stoppt einen Takt zu spät in der Luft.*",
         "choices": [
             "Dain. Leg den Ball weg.",
             "...Spielen wir noch eine Runde?"
@@ -321,6 +321,6 @@
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*Keine Ausrufezeichen. Sie meint es ernst.*"
+        "text": "*Kein Ausrufezeichen. Dain richtet ihre Handgelenkbandage.*"
     }
 }

@@ -113,7 +113,7 @@
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Kein schlechter erster Tag. Morgen — wird's wohl noch ein bisschen interessanter.*"
+        "text": "*Die Namen, die ich heute gespeichert habe, bleiben auf meinem Sperrbildschirm. Selbst nachdem ich das Display ausgeschaltet habe, sucht mein Finger noch einmal den Power-Knopf.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Eine Schulkrankenschwester, die Herzchen in Krankenakten setzt. Noch nie jemanden gesehen, der Emojis in Gesundheitsakten benutzt.*"
+        "text": "*Nach 'medizinischem Interesse' steht ein Herz. Bis ich den Bildschirm ausschalte, schaue ich dieses Herz noch einmal an.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

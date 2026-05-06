@@ -113,11 +113,11 @@
     },
     "wall_seo_14_c": {
         "name": "{name}",
-        "text": "*Seoyeon hört auf zu reden. Ihre Hände sind auf den Knien geballt. — Und dann, langsam, ganz langsam, bricht der perfekt gehaltene Ausdruck zusammen. Seoyeons Fingerspitzen zittern.*"
+        "text": "*Seoyeon verstummt. Ihre Hände ballen sich auf ihren Knien. Bevor die Feuchtigkeit am Rand ihrer Brille fallen kann, senkt sie den Kopf.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Tränen laufen ihr übers Gesicht. Lautlos. — Seoyeon weint. Seoyeon schaut hoch. Sie hat nicht mehr vor, das zerbrochene Gesicht zu verstecken.*"
+        "text": "*Wasser läuft aus ihren Augen. Lautlos. Seoyeon will es mit dem Handrücken abwischen, hält inne, und blickt einfach nach oben.*"
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "wall_seo_pinky_5_b": {
         "name": "{name}",
-        "text": "*Der kleine Finger von Tag 1. Der kleine Finger von Tag 4. Derselbe Finger, völlig anderes Gewicht.*"
+        "text": "*Der kleine Finger, der am ersten Tag durch die Luft schnitt, hakt sich jetzt an meinen. Seoyeons Fingerspitze ist kalt.*"
     },
     "wall_seo_line_choice": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "{name}",
-        "text": "*Seoyeon lächelt. Ihre Mundwinkel bewegen sich von allein. — Das Make-up ist verschmiert, die Augen geschwollen. Aber ich kann den Blick nicht abwenden.*"
+        "text": "*Seoyeon lächelt. Ihre Mundwinkel heben sich von selbst, und unter dem verschmierten Make-up bleiben Tränen, die sie noch nicht weggewischt hat.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
@@ -239,7 +239,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "{name}",
-        "text": "*Im Turnhallenfenster brennt Licht. Notbeleuchtung. Jemand schlägt allein einen Ball. — Ich kann die Rückennummer schwach erkennen. Es ist Dain. ...Um 23 Uhr allein in der Turnhalle? Sie hat mir heute nicht geschrieben.*"
+        "text": "*Das Notlicht brennt am Turnhallenfenster. Jemand lässt allein einen Ball aufprallen. Rückennummer 19 bewegt sich schwach in der Dunkelheit.*"
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
@@ -259,7 +259,7 @@
     },
     "wall_dain_pre_low_1": {
         "name": "{name}",
-        "text": "*Dain zwingt sich zu lachen.*"
+        "text": "*Dain lächelt. Ihre Mundwinkel heben sich, aber ihre Hand drückt die Kniebandage fest.*"
     },
     "wall_dain_pre_low_2": {
         "name": "Dain",
@@ -355,7 +355,7 @@
     },
     "wall_dain_17": {
         "name": "Dain",
-        "text": "Ich wurde operiert, und der Arzt — er hat es ganz vorsichtig gesagt. „Der Alltag wird in Ordnung sein, aber so springen wie früher...“ — Ich weiß nicht mehr, was danach kam. Danach war alles still."
+        "text": "Nach der OP hat der Arzt eine Linie auf Papier gezeichnet. 'Alltag' bis hier, 'Sportlerin' ab hier. Was danach kam, weiß ich nicht mehr genau."
     },
     "wall_dain_18": {
         "name": "Dain",
@@ -448,7 +448,7 @@
     },
     "wall_dain_cry_2": {
         "name": "{name}",
-        "text": "*Als wären ein Jahr zurückgehaltener Tränen auf einmal herausgebrochen. Das Schluchzen hallt durch die leere Turnhalle.*"
+        "text": "*Dain senkt den Kopf. Tropfen fallen einer nach dem anderen auf den leeren Hallenboden. Der Ball liegt still außerhalb der Linie.*"
     },
     "wall_dain_cry_3": {
         "name": "Dain",
@@ -488,7 +488,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Heh. Es tut weh. Aber es fühlt sich seltsam befreiend an. — Ich bin froh, dass mein letzter Schlag auf diesem Feld ein Zuspiel von {name} war."
+        "text": "...haha Tut weh. Aber irgendwie fühlt es sich gut an. Weil der letzte Schlag von {name}s Zuspiel kam."
     },
     "wall_dain_lastspike_4_b": {
         "name": "{name}",
@@ -512,7 +512,7 @@
     },
     "wall_dain_mention_1": {
         "name": "Dain",
-        "text": "Weißt du, was Seoyeon zu mir gesagt hat? ...Nichts. Sie hat nichts gesagt. Das war schlimmer."
+        "text": "Weißt du, was Seoyeon zu mir gesagt hat? ...Sie hat nichts gesagt. Sie hat mich nur angesehen."
     },
     "wall_dain_mention_2": {
         "name": "Dain",
@@ -553,7 +553,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
-        "text": "*Ich tat, als hätte ich nichts gesehen. — Aber warum fühlt sich mein Herz so komisch an?*"
+        "text": "*Ich bin vorbeigelaufen, so getan als sähe ich nichts. Bis zum Hintertor gegangen, aber der Zettel in meiner Hand ist immer noch gefaltet.*"
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -581,11 +581,11 @@
     },
     "wall_yuna_pre_low_2": {
         "name": "{name}",
-        "text": "*Noch zu früh, es mit Worten zu sagen.*"
+        "text": "*Keine Worte kommen heraus. Yuna fragt auch nicht weiter.*"
     },
     "wall_yuna_2": {
         "name": "{name}",
-        "text": "*Die Schule bei Nacht wirkt wie ein anderer Ort. Yuna steht am Hintertor. Sie sieht — unruhiger aus als sonst.*"
+        "text": "*Die Lampe am Hintertor flackert. Yuna steht darunter. Das Buch ist aufgeschlagen, aber keine einzige Seite wurde umgeblättert.*"
     },
     "wall_yuna_3": {
         "name": "Yuna",
@@ -677,7 +677,7 @@
     },
     "wall_yuna_choice": {
         "name": "{name}",
-        "text": "*Yunas Augen glänzen feucht. — Das ist das erste Mal, dass ich sie so viel reden höre.*",
+        "text": "*Yunas Augen sind leicht feucht. Die Spitzen ihrer Finger, die das Buch halten, sind weiß gedrückt.*",
         "choices": [
             "Ich bin nicht dieser Senior. Ich bin ich. Aber ich bleibe an deiner Seite.",
             "Vergiss diesen Senior. Der, der jetzt vor dir steht, bin ich.",
@@ -751,7 +751,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "{name}",
-        "text": "*Yuna dreht sich um. Ihre Schritte sind schnell. — Nicht ganz rennen, aber der Gang von jemandem, der rennen will. Es war die schlimmste Wahl. — Ich höre, wie sich Yunas Mauer wieder schließt.*"
+        "text": "*Yuna dreht sich um. Ihre Schritte sind schnell. Ein Lesezeichen fällt aus ihrer Tasche, aber sie hebt es nicht auf.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -759,11 +759,11 @@
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Unter der Straßenlaterne vor dem Schultor. Seoyeon steht dort. — Nein, sie stand dort. Handy in der Hand, tippt etwas und löscht es. Tippt und löscht.*"
+        "text": "*Unter der Straßenlaterne vor dem Schultor. Seoyeon stand dort. Hält ihr Handy, tippt etwas, löscht es. Tippt, löscht. Das Leuchten des Bildschirms bleibt nur auf ihrer Brille.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon steckt das Handy in die Tasche und dreht sich um. Der Rücken gerade. Perfekt. — Sie zittert nicht. Diesmal wirklich nicht. Die Nacht kommt auch zu derjenigen, die nicht gewählt wurde. Und sie verbringt diese Nacht allein.*"
+        "text": "*Seoyeon steckt das Handy in die Tasche und dreht sich um. Ihr Rücken ist gerade. Nur der Schatten unter der Straßenlaterne schwankt kurz.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
@@ -771,7 +771,7 @@
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...Ich hätte es heute sagen sollen. Diese Person hat zuerst ihr Herz hingehalten, und ich hab wieder die einfachsten Worte nicht rausgebracht. Nur weil es ein Morgen gibt, wird das Heute nicht ausgelöscht. Ich wusste das, und hab es trotzdem aufgeschoben.*"
+        "text": "*...Ich hätte es heute sagen sollen. Im Chatfenster steht ein halb getippter Satz. Der Cursor blinkt am Ende.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "System",
@@ -791,11 +791,11 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*Das Handy leuchtet auf. Ein kurzer Satz — und gerade deshalb tut er mehr weh.*"
+        "text": "*Der Handybildschirm leuchtet auf. Eine einzige Nachricht. Die Lesebestätigung erscheint verzögert.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*Ich tippe eine Antwort und lösche sie wieder. Egal was ich sage, es fühlt sich schon zu spät an.*"
+        "text": "*Ich tippe eine Antwort und lösche sie. Ein einzelner Buchstabe bleibt im Eingabefeld, dann verschwindet auch er.*"
     },
     "day4_hidden_msg_branch": {
         "name": "System",

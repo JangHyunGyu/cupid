@@ -57,7 +57,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Le portail du lycée est entrouvert. Il y a un bruit à l'intérieur. — La personne qui en sort. C'est ma prof principale. Elle s'approche. — Vue de loin, elle marche si normalement qu'on ne dirait pas la même personne qui s'était mise en colère.*"
+        "text": "*Le portail de l'école est légèrement ouvert. Une présence à l'intérieur. Le professeur principal sort devant le portail. Tenant un sac en papier.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Professeure principale",
@@ -233,7 +233,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Matin de week-end. Par habitude, je vais à l'infirmerie. — Depuis quand c'est une habitude ? J'ouvre la porte. L'infirmière est sur sa chaise. Blouse blanche. — Mais elle n'est pas comme d'habitude. Pas de malice.*"
+        "text": "*Matin de week-end. J'ai ouvert la porte de l'infirmerie. Elle est assise sur sa chaise en blouse blanche, mais il n'y a pas de mémo blagueur sur le bureau.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Infirmière",
@@ -241,7 +241,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*Son « tu es venu » est d'un demi-ton plus bas que d'habitude. — J'ai appris à lire les émotions de cette personne par la tonalité.*"
+        "text": "*'Ah, t'es là' sort un demi-ton plus bas que d'habitude. L'infirmière saisit le stéthoscope, puis le repose sur le bureau.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*Ce n'est pas une question. — C'est le visage de quelqu'un qui redoute déjà la réponse. Nos regards se croisent. Son expression sérieuse sans sa malice habituelle. — Je n'ai jamais vu cette personne aussi vulnérable.*",
+        "text": "*Ce n'est pas une question. L'infirmière appuie son pouce contre le bord du gobelet en papier. Une marque de pression se forme.*",
         "choices": [
             "Je reviendrai.",
             "..."
@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*« Vraiment ». — Aujourd'hui, je l'ai entendu en premier. À travers ses lunettes, les yeux de l'infirmière semblent humides. La malice revient. — Mais sous ses yeux souriants, il y a une trace de quelque chose qui a coulé. Ça fait mal.*"
+        "text": "*'Pour de vrai.' Derrière les lunettes de l'infirmière, ses yeux sont mouillés. L'espièglerie met un temps de trop à revenir.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Infirmière",
@@ -347,7 +347,7 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Court. Du pur Yuna. Je sais maintenant que si tu es en retard, je pars veut dire la même chose que s'il te plaît, ne sois pas en retard.*"
+        "text": "*Court. Très Yuna. Pas de point après 'je pars si t'es en retard.'*"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Professeure principale",
@@ -375,7 +375,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "{name}",
-        "text": "*Honnête. Cette personne se cache derrière un humour pince-sans-rire, mais parfois un moment de franchise lui échappe.*"
+        "text": "*Le professeur le dit comme une blague et touche la tasse de café. Deux cercles d'eau se chevauchent sur le sous-verre.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -395,7 +395,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Un fardeau. Alors le manuscrit inachevé qu'elle portait seule depuis sept ans lui pesait.*"
+        "text": "*Le coin d'une enveloppe de manuscrit dépasse du sac du professeur. La partie pliée est un peu sombre avec des traces de doigts.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Professeure principale",
@@ -415,7 +415,7 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professeure principale",
-        "text": "...Merci. Mais ça reste entre nous, d'accord ? ...C'est notre secret. Même si un prof ne devrait pas avoir de secrets avec un élève."
+        "text": "...Merci. Mais ça, ne le dis à personne — tu sais ? ...C'est notre secret. Le coin du manchon de tasse continue de se plier."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "{name}",
-        "text": "*Elle se détourne. — Ses épaules s'affaissent un peu. J'ai refusé, alors pourquoi ça me fait ça. Je suis rentré chez moi.*"
+        "text": "*Le professeur se retourne. Ses épaules s'affaissent un peu. Sur le chemin du retour, mon visage reflété dans la porte vitrée du café me suit.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Infirmière",
@@ -455,7 +455,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Son sourire vient naturellement. - Elle est différente de celle que je vois à l'école. Aujourd'hui, elle ressemble moins à une prof qu'à... quelqu'un auprès de qui on se sent bien.*"
+        "text": "*Vue hors de l'école, son sourire est différent. Pas de badge, pas de stylos dans la poche de la blouse. Toutes les deux, nous plions des formulaires de contrôle et nettoyons le tensiomètre.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Infirmière",
@@ -511,7 +511,7 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Elle connaît le poids d'être appelée par son nom. — Parce qu'à l'hôpital on l'appelait par des numéros. Le tri des papiers est fini. L'infirmière s'étire.*"
+        "text": "*La paperasse est terminée. L'infirmière scolaire tapote le champ nom une fois avec son doigt, puis enfin s'étire.*"
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*Elle a ajouté 'vraiment'. — Quand cette personne ajoute 'vraiment', ça veut dire que tout ce qu'elle a dit avant était sincère. Elle a renvoyé un 'tu dis n'importe quoi', mais elle n'a pas réussi à croiser mon regard un instant. Cette fois encore, elle cache mal.*"
+        "text": "*'Pour de vrai.' L'infirmière évite son regard une seconde. Les baguettes sur le couvercle des nouilles instantanées penchent légèrement de travers.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

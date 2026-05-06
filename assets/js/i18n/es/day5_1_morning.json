@@ -9,7 +9,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "Último día. Qué raro, los pasos me van ligeros. Hoy — creo que podré decirlo."
+        "text": "Es el último día. La llave de la azotea en mi bolsillo toca el dorso de mi mano con cada paso."
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Último día. No pensaba que cinco días se pasaran tan rápido. ...Ni sé qué hice."
+        "text": "El último día. Toco cada uno de los tres nombres que quedan en mi pantalla de bloqueo. No puedo abrir ninguna de las ventanas de chat."
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "morning5_end": {
         "name": "{name}",
-        "text": "*Señales desde tres direcciones. — Toca elegir una respuesta.*"
+        "text": "*Coloco las notas y notificaciones de tres direcciones una al lado de la otra en mi escritorio.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*La profe se da la vuelta. Su melena larga se balancea. — Parece decidida a no descomponerse hasta el último momento.*"
+        "text": "*La profesora se gira. Su cabello largo se balancea, y el borde doblado del sobre se presiona contra su codo.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Profesora",
@@ -147,7 +147,7 @@
     },
     "morning5_start_b": {
         "name": "{name}",
-        "text": "*Apenas entro al aula — me llegan señales desde tres lados. El último evento. Todo el tiempo acumulado confluye hoy.*"
+        "text": "*En cuanto entro al aula, la atención viene de tres direcciones. Una nota en mi escritorio, un lazo atado a un cordón del uniforme deportivo, una notificación en mi pantalla de bloqueo.*"
     },
     "morning5_start_2_b": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*Hay un relato corto clavado en el tablón. Título: 'A la persona que conocí en la biblioteca'. Es de Yuna. — Una historia que solo el protagonista puede reconocer. Me quedo un rato más frente al tablón. Frases cortas, pero tan nítidas como si Yuna me hubiera puesto la cara a un palmo.*"
+        "text": "*Hay un relato corto pegado en el tablón. Título: 'A la persona que conocí en la biblioteca.' Tinta violeta claro. Una miga de pan pequeña se pega en la esquina doblada.*"
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Una línea. — Alguien a quien rechazaron tres veces antes de debutar espera la impresión de un alumno en una línea. Si esto no es una confesión, ¿qué es? La profe sale del aula — y se detiene frente a la puerta.*"
+        "text": "*Una línea. La profesora se detiene en el umbral al salir. Dobla dos veces la punta del sobre con el manuscrito con el dedo, luego la alisa.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Profesora",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Profesora",
-        "text": "...Creo que me salí un poco del interés pedagógico. Porque es la última vez. Solo esta."
+        "text": "...Esto es cruzar la línea. Pero es la última vez. Solo una vez más."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
-        "text": "*Ha dicho 'último día del evento', pero hay otro sentido detrás de esas palabras.*"
+        "text": "*Después de decir que es el último día del evento, la enfermera toca su estetoscopio una vez.*"
     },
     "hidden_nurse_d5_1_c": {
         "name": "Enfermera",
@@ -303,7 +303,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*De 'ven cuando te gradúes' a 'ven si te duele algo' — dio marcha atrás. Iba a cruzar la línea y se retiró. La puerta se abre. La enfermera está ahí. Con dos vasos de papel en las manos.*"
+        "text": "*'Ven si te sientes mal.' Después de decirlo, la enfermera cambia ligeramente la mano que sostiene dos vasos de papel.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -363,7 +363,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "{name}",
-        "text": "*Su frase emblemática del Día 1. — Entonces era presentación del personaje. Ahora va en serio. La enfermera saca una curita y me la pone en el dorso de la mano. Despacio. — Lleva algo escrito.*"
+        "text": "*La enfermera saca una curita y me la pega en el dorso de la mano. Lentamente. Hay una escritura pequeña en el borde de la curita.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -387,7 +387,7 @@
     "morning5_end_branch": {},
     "morning5_committed_end": {
         "name": "{name}",
-        "text": "*Ya no son señales desde tres direcciones. La respuesta ya está elegida; voy hacia el último acto del evento.*"
+        "text": "*Organizo las notas en mi escritorio y reviso el horario del evento para la dirección que ya elegí.*"
     },
     "morning5_gate": {
         "name": "{name}",
@@ -395,11 +395,11 @@
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*La última frase. 'Cuando abrió los ojos, yo ya no estaba. Solo le dejé una nota. — La próxima vez también estaré aquí.' Tinta violeta pálido. La misma que la nota del Día 1.*"
+        "text": "*La última frase. 'Cuando esa persona abrió los ojos, yo ya me había ido. Solo dejé una nota. — Estaré aquí de nuevo la próxima vez.' Tinta violeta claro. El mismo color que la primera nota.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*En una esquinita debajo del tablón — 'Esto es ficción. No es real.' Marcas de goma de borrar. Se borró, pero las huellas quedan. Yuna lo escribió, lo borró y al final lo dejó.*"
+        "text": "*En la esquina inferior del tablón, texto pequeño — 'Esto es ficción. No es real.' Quedan marcas de borrador.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*El sitio vacío en la biblioteca, el marcapáginas desaparecido, y ahora un relato que no llegó al tablón. — Yuna está borrando cada huella. El vacío que dejé el Día 3 llegó hasta aquí.*"
+        "text": "*Un asiento vacío en la biblioteca, un marcador desaparecido, una novela sin publicar. Solo quedan cuatro agujeros de chinchetas en el tablón.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Cerré la puerta del aula al salir. El sobre se quedó en la mesa de la profe. — Lo que en siete años no había recibido no era *un elogio sincero* sino *alguien que lo leyera en serio*. El elogio también estaba en las cartas de rechazo. Dije exactamente lo mismo que una carta de rechazo. Con buena intención.*"
+        "text": "*Salí y cerré la puerta del aula. El sobre sigue en el escritorio de la profesora. Queda una marca de etiqueta de devolución del tamaño de una uña en la superficie.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*No lo sabía. Fue una corazonada. — Que alguien que lleva siete años se lo muestre por primera vez a un alumno *justo hoy* era raro. Si estuviera acabado, lo habría mandado primero a una editorial. No está acabado — por eso necesita *permiso* para terminarlo.*"
+        "text": "*La última página del manuscrito no tiene punto final. Bajo una línea trazada con bolígrafo rojo, la misma frase está reescrita tres veces.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Profesora",
@@ -511,6 +511,6 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*Vuelvo a abrazar el manuscrito. Ya no pesa como antes. — Lo que esta persona necesitaba no era *cerrar* siete años de algo inconcluso con un elogio. Necesitaba *a alguien que aceptara que siguiera inconcluso*. Eso sí es apoyar de verdad.*"
+        "text": "*Abraza el manuscrito de nuevo. La profesora frota la marca de la etiqueta de devolución con el pulgar. El borde del papel se arruga ligeramente en su palma.*"
     }
 }

@@ -9,7 +9,7 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*The rooftop. The sunset is painting the school in gold. The very same place I first came on Day 1.*"
+        "text": "*The rooftop. Sunset paints the school. I can see the railing where Seoyeon looked down on the first day.*"
     },
     "confess_seo_3b": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*I'm nervous. Still, this time I want to say it properly.*",
+        "text": "*The confession-practice memo folds and unfolds in her palm. The crease is now three layers deep.*",
         "choices": [
             "Seoyeon. Just a second.",
             "...Nice breeze."
@@ -45,7 +45,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "*I remember the words I couldn't say at my old school. I replayed it hundreds of times — 'what if I had said it then.' — This time, I'll confess.*"
+        "text": "*Sentences written and erased at my old school come to mind. This time I didn't pull out my phone from my pocket.*"
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*I said the same thing on Day 1. Back then I meant it. Now it's just running away.*"
+        "text": "*She said the same thing on the first day. Seoyeon's finger stops at the edge of the clipboard.*"
     },
     "confess_seo_no_3": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*The library annex. A secret reading nook. Sunset seeps through the window. The very same place I first came on Day 2.*"
+        "text": "*Library annex. The secret reading spot. Sunset seeps through the window. Yuna's bookmark rests beside the old sofa.*"
     },
     "confess_yuna_3b": {
         "name": "{name}",
@@ -193,7 +193,7 @@
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*This time. Someone left before. Yuna is reopening that wound, and still holding onto me.*"
+        "text": "*'This time.' Yuna's breath catches just slightly on those two words. She doesn't let go of my hand.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -201,7 +201,7 @@
     },
     "confess_yuna_no_2": {
         "name": "{name}",
-        "text": "*Yuna reads between the lines. She'll know I'm just running away.*"
+        "text": "*Yuna nods. She slips the bookmark between the pages, then pushes it in deeper.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*The gym. Empty. Sunset spills through the windows onto the court. The very same place we first came together on Day 1.*"
+        "text": "*The gym. Empty. Sunset stains the court through the windows. The line from our first-day bet is still visible.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "{name}",
-        "text": "*The gym floor seems to sway. — I know the tremor hidden behind this person's exclamation marks.*",
+        "text": "*Dain's ball bounces once. The hand that would've caught it normally stops in midair a beat too late.*",
         "choices": [
             "Dain. Put the ball down.",
             "...Wanna play one more round?"
@@ -321,6 +321,6 @@
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*No exclamation marks. She means it.*"
+        "text": "*No exclamation mark. Dain adjusts her wrist guard.*"
     }
 }

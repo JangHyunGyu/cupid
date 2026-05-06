@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Meine Gedanken sind durcheinander. Zu wem soll ich zuerst gehen?*"
+        "text": "*Nach der Schule. Meine Füße bleiben an der Flurkreuzung stehen. Schilder für das Schülerratszimmer, den Neubau und die Turnhalle zeigen in verschiedene Richtungen.*"
     },
     "after3_route_check": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "after3_multi_choice": {
         "name": "{name}",
-        "text": "*Die Verabredungen überschneiden sich. Genauer gesagt, ich habe sie sich überschneiden lassen. Weglaufen wäre noch schlimmer. Zu wem soll ich zuerst gehen, um die Sache zu klären?*",
+        "text": "*Die Verabredungen überschneiden sich. Seoyeons Nachricht, Dains verpasster Anruf, Yunas gefalteter Zettel—alles auf einem Bildschirm. Zu wem gehe ich zuerst.*",
         "choices": [
             "Zu Seoyeon gehen",
             "Zu Yuna gehen",
@@ -80,7 +80,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Ich verlasse die Sporthalle und kehre auf den Flur zurück. Seoyeon tat so, als wäre alles in Ordnung. Dain schaffte nicht einmal das. Irgendwie tut beides mehr weh.*"
+        "text": "*Ich verließ die Sporthalle und kehrte zum Flur zurück. Seoyeons Nachricht ist noch als gelesen markiert. Keine Antwort von Dain.*"
     },
     "after3_reject_for_dain_1": {
         "name": "{name}",
@@ -104,7 +104,7 @@
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*Ich öffnete die Tür zum Schülerratsraum. — Seoyeon liegt zusammengesackt auf dem Schreibtisch. Sehe ich zum ersten Mal. Die perfekte Schülersprecherin — ungeschützt auf dem Tisch.*"
+        "text": "*Ich öffnete die Tür zum Schülerratszimmer. Seoyeon liegt zusammengesunken über ihrem Schreibtisch. Ein Klemmbrett liegt auf dem Boden.*"
     },
     "after3_seo_3": {
         "name": "{name}",
@@ -144,7 +144,7 @@
     },
     "after3_seo_end": {
         "name": "{name}",
-        "text": "*Diese Worte wiegen schwer. — Ich glaube, ich beginne zu verstehen, wie gewaltig es für diese Person ist, eine unvollkommene Seite von sich zu zeigen.*"
+        "text": "*Nach diesem einen Satz zieht Seoyeon das Klemmbrett tiefer in ihre Arme.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -232,7 +232,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
-        "text": "*Dain zögert. — Dann lächelt sie, ganz leicht. Ich will dieses Lächeln beschützen.*"
+        "text": "*Dain hält inne. Dann lächelt sie, schwach. Diesmal bewegen sich ihre Augen vor ihren Lippen.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -309,7 +309,7 @@
     },
     "after3_confront_admit_6": {
         "name": "{name}",
-        "text": "*Ihr Rücken ist gerade. Perfekt. — Aber ihre Fäuste sind geballt. Die Knöchel weiß.*"
+        "text": "*Ihr Rücken ist gerade. Ihre Fäuste sind geballt. Ihre Knöchel sind weiß.*"
     },
     "after3_confront_excuse": {
         "name": "Seoyeon",
@@ -333,7 +333,7 @@
     },
     "after3_confront_end": {
         "name": "{name}",
-        "text": "*Ich stehe allein im Flur, in dem Seoyeon verschwunden ist. — Ihre Haltung war gerade. Perfekt gerade. Aber ihre Fäuste waren geballt.*"
+        "text": "*Ich stehe allein im Flur, wo Seoyeon verschwunden ist. Ihr gerader Rücken, ihre weißen Knöchel—sie bleiben.*"
     },
     "after3_final": {
         "name": "{name}",
@@ -369,11 +369,11 @@
     },
     "haeun_warn_5": {
         "name": "{name}",
-        "text": "*Seoyeon hat geweint. — Mir hat sie nur gesagt, ich hätte 'ihre unvollkommene Seite gesehen'. Danach hat sie geweint.*"
+        "text": "*Der Badezimmerspiegel, verwischter Eyeliner, gefaltetes Klemmbrett. Haeuns Worte verbinden die drei zu einer einzigen Linie.*"
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Seoyeon ist jemand, der glaubt, perfekt sein zu müssen. Jemand, der denkt, dass Weinen Schwäche ist."
+        "text": "Sunbae, sie hat auch im Badezimmer kein Geräusch gemacht. Sie starrte nur in den Spiegel. Ihre Hände zitterten ständig."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -381,7 +381,7 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Dass Seoyeon geweint hat — das bedeutet, dass sie es wirklich ernst meint mit dir, {name}."
+        "text": "Nachdem {name}s Name gefallen war, landeten drei weitere Taschentücher im Mülleimer."
     },
     "haeun_warn_7": {
         "name": "Haeun",
@@ -389,7 +389,7 @@
     },
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*Das Bild von Seoyeon, die allein auf der Toilette weint, geht mir nicht aus dem Kopf. Der perfekt gerade Rücken, die weißen Knöchel vor Anspannung, und — eine leere Toilette.*"
+        "text": "*Der Badezimmerspiegel, gerader Rücken, weiß verkrampfte Fäuste, leeres Waschbecken. Die fragmentierten Szenen folgen mir unter den Flurlichtern.*"
     },
     "haeun_warn_8b": {
         "name": "{name}",
@@ -398,19 +398,19 @@
     "after3_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Seoyeon im Flur gegenüberstehend. Ihr Ausdruck ist kompliziert.*",
-        "context": "Tag 3, nach der Konfrontation mit Seoyeon. Das Vertrauen ist erschüttert. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
+        "context": "Tag 3 nach der Schule, direkt nach Konfrontation/Versöhnung mit Seoyeon. Die Beziehung hat Risse durch Verdacht auf Doppelspiel. Ton: Höflich, aber Antworten werden kürzer; Spannung zeigt sich durch Klemmbrett-Griff und Fingerbewegungen.",
         "personality": "Seoyeon ist besitzergreifend und direkt wenn eifersüchtig. Verletzt aber versucht es nicht zu zeigen."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Neben Yuna gehend. Ihr Blick ist kühl.*",
-        "context": "Tag 3, nach dem Gespräch mit Yuna. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
-        "personality": "Yuna ist emotional erschüttert. Mehr Bestätigung suchend als eifersüchtig."
+        "context": "Tag 3 nach der Schule, direkt nach Gespräch mit Yuna. Yuna hält das Gespräch länger als gewöhnlich. Ton: Antwortet kurz, dann fummelt mit einem Zettel oder Lesezeichen herum, während sie prüfende Fragen stellt.",
+        "personality": "Yuna ist ein mysteriöses literarisches Mädchen. Normalerweise ruhig, aber jetzt ist die Angewohnheit, Notizen zu falten und aufzufalten, auffällig. Eher Überprüfung als Eifersucht."
     },
     "after3_dain_freetalk": {
         "name": "Dain",
         "text": "*Mit Dain auf einer Bank auf dem Schulhof sitzend. Sie ist ruhiger als sonst.*",
-        "context": "Tag 3, nach dem Gespräch mit Dain. Verletzt aber tut so als wäre sie fröhlich. Ton: Hell an der Oberfläche, aber Schatten darunter. Manchmal lächelnd, aber die Augen nicht. Aufrichtigkeit blitzt durch lockere Gespräche hindurch.",
+        "context": "Tag 3 nach der Schule, direkt nach dem Gespräch mit Dain. Dain versucht es mit einem Lachen abzutun, macht aber Pausen zwischen Worten. Ton: Witze bleiben, aber Spannung zeigt sich durch Handlungen wie das Berühren des Balls oder der Handgelenkbandage.",
         "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
     },
     "after3_seo_5_b": {
@@ -459,7 +459,7 @@
     },
     "after3_confront_lie_2_b": {
         "name": "{name}",
-        "text": "*Ihr Rücken ist gerade. Perfekt. — Aber ihre Fäuste sind geballt. Die Knöchel weiß.*"
+        "text": "*Ihr Rücken ist gerade. Ihre Fäuste sind geballt. Ihre Knöchel sind weiß.*"
     },
     "haeun_warn_1_b": {
         "name": "{name}",
@@ -491,7 +491,7 @@
     },
     "haeun_warn_7_d": {
         "name": "{name}",
-        "text": "*Haeun dreht sich um und geht. Seoyeons Familiensituation ist kompliziert. Die Eltern. — Liegt dort der Grund, warum Seoyeon „perfekt sein musste“?*"
+        "text": "*Haeun dreht sich um und geht. Am Ende des Flurs hängt Seoyeons leere Schülerrats-Armbinde. Das Wort 'Eltern', das ich gerade gehört habe, verweilt dort lange.*"
     },
     "after3_reject_for_seo_3b": {
         "name": "{name}",
@@ -499,7 +499,7 @@
     },
     "after3_reject_for_seo_3c": {
         "name": "{name}",
-        "text": "*Sie hat jede Spur ausgelöscht. Das war kein hinterlassener Zettel — das war eine gezogene Linie. Wenn Yuna so viele Worte schreibt, heißt das, dass sie lange gewartet hat.*"
+        "text": "*Kein Lesezeichen, kein versprochener zweiter Band. Nur ein langer Zettel, den Yuna hinterlassen hat, auf dem Tisch gefaltet.*"
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
@@ -551,7 +551,7 @@
     },
     "after3_dain_tell_confirm_3": {
         "name": "{name}",
-        "text": "*Ich stehe allein in der leeren Halle. Bei Sojeong habe ich bereut, geschwiegen zu haben. Diesmal habe ich gesprochen. — Aber ich weiß nicht, ob es richtig war.*"
+        "text": "*Ich stehe in der leeren Sporthalle. Hinter der geschlossenen Tür verklingen Dains Schritte. Auf meinen Handflächen ist Schweiß.*"
     },
     "after3_dain_tell_retreat": {
         "name": "{name}",
@@ -559,7 +559,7 @@
     },
     "after3_seo_pity_trap_1": {
         "name": "{name}",
-        "text": "*Seoyeon hebt langsam den Kopf. Ihr Gesicht ist — exakt null. Weder kalt noch traurig. Das ist schlimmer.*"
+        "text": "*Seoyeon hebt langsam den Kopf. Sie wischt den Make-up-Fleck auf ihrem Handrücken ab, ohne hinzusehen. Ihre Augen sind leer.*"
     },
     "after3_seo_pity_trap_2": {
         "name": "Seoyeon",
@@ -595,7 +595,7 @@
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
-        "text": "*Ich schloss die Tür des Schülerratsraums hinter mir. Der Flur war leer. — Ich wollte sie trösten. Aufrichtig. Aber für Seoyeon war 'jeder' kein Trost, sondern eine Degradierung. Ich habe sieben Jahre ihrer Arbeit auf ein einziges Wort eingedampft.*"
+        "text": "*Ich schloss die Tür des Schülerratszimmers und ging. Der Flur ist völlig leer. Von drinnen das Geräusch eines Klemmbretts, das auf einen Schreibtisch gelegt wird, nur einmal.*"
     },
     "after3_seo_correct_1": {
         "name": "{name}",
@@ -643,7 +643,7 @@
     },
     "after3_seo_correct_12": {
         "name": "{name}",
-        "text": "*Ich habe nie gesagt, dass ich ihr Geheimnis bewahren würde. Es nicht zu sagen war die Antwort. — Für Seoyeon darf Schwäche *nie existiert haben*. Nur jemandem, der das versteht, reicht Seoyeon nicht den kleinen Finger, sondern das nächste Treffen.*"
+        "text": "*Ich habe nie gesagt, dass ich so tun würde, als hätte ich nichts gesehen. Seoyeon streckt ihren kleinen Finger nicht aus. Sie faltet den Terminplan des Schülerrats für nächste Woche und schiebt ihn zu mir.*"
     },
     "after3_yuna_decode_trap_1": {
         "name": "{name}",
@@ -687,7 +687,7 @@
     },
     "after3_yuna_decode_trap_11": {
         "name": "{name}",
-        "text": "*Schritte, die die Leiter hinuntergehen. Ich bleibe allein im Dachboden. Wo das Notizbuch lag, sind nur noch Fingerspuren. — Man lehrte mich, dass Bemerken Liebe ist. Aber für manche Menschen ist *so tun, als ob man nicht bemerkt*, Liebe. Für Yuna war Fiktion *der Ort, an den sie vor der Realität floh*. Sie bis dorthin zu verfolgen, hieß ihren letzten Zufluchtsort zu zerstören.*"
+        "text": "*Schritte, die die Leiter hinabsteigen. Ich bleibe allein auf dem Dachboden zurück. Nur Fingerabdrücke bleiben, wo das Notizbuch war. Mein Blick bleibt am letzten Satz der aufgeschlagenen Seite hängen. 'Niemand durfte hier hereinkommen.'*"
     },
     "after3_yuna_correct_1": {
         "name": "{name}",
@@ -767,7 +767,7 @@
     },
     "after3_dain_pity_trap_8": {
         "name": "{name}",
-        "text": "*Dain geht zur Hallentür. Sie rennt nicht wie sonst. Das tut mehr weh.*"
+        "text": "*Dain geht zur Sporthallentür. Sie rennt nicht wie sonst. Das Schleifen ihrer Turnschuhe hinterlässt ein langes Echo.*"
     },
     "after3_dain_pity_trap_9": {
         "name": "Dain",
@@ -775,7 +775,7 @@
     },
     "after3_dain_pity_trap_10": {
         "name": "{name}",
-        "text": "*Die Hallentür schließt sich. Nicht mit dem üblichen Knall. Leise. — Das ist schwerer. Ich habe das Gesicht gemacht, das Dain am meisten hasst. Wissentlich. Mit guten Absichten. Deshalb ist es noch schlimmer.*"
+        "text": "*Die Sporthallentür schließt sich. Kein Knall. Leise. Eine von Dains Handgelenkbandagen liegt auf dem Boden.*"
     },
     "after3_dain_correct_1": {
         "name": "{name}",
@@ -871,7 +871,7 @@
     },
     "minsu_d3_9": {
         "name": "{name}",
-        "text": "*Wenn ich damals wenigstens einmal richtig geredet hätte, würde es vielleicht nicht so lange nachhängen. Was ich jetzt tun muss, ist nicht allen dreien dasselbe Gesicht zu zeigen. Ich muss ehrlich zu einer Person sein.*"
+        "text": "*Minsu sagte nichts weiter. Die Strohhalm-Verpackung auf dem Tisch ist bis zum Ende gefaltet.*"
     },
     "minsu_d3_10": {
         "name": "Minsu",
