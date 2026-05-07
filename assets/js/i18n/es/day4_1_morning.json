@@ -45,7 +45,7 @@
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "¡¡¡¡Es hoy!!!! ¡¡Delante del gimnasio a las 6!! Ay qué nervios jajaja, ¿está bien mandarte esto?"
+        "text": "Es hoy. A las 6 frente al gimnasio. Ay, ¿por qué estoy tan nerviosa? ¿Debería mandar esto?"
     },
     "morning4_end": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_homeroom_d4_4_d": {
         "name": "Profesora",
-        "text": "Nunca había visto a un alumno que, \"pasando por acá\", se quedara mirando la puerta de la escuela."
+        "text": "No es muy común que un alumno mire por la puerta de la escuela solo porque pasaba por aquí."
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Profesora",
-        "text": "Es la primera vez que tomo algo con un alumno fuera de la escuela. ¿Te soy sincera? Un poco incómodo."
+        "text": "Tomar algo con un alumno fuera de la escuela, la verdad, se siente un poco raro."
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Profesora",
@@ -451,7 +451,7 @@
     },
     "hidden_nurse_d4_2_c": {
         "name": "Enfermera",
-        "text": "*Se ríe.* Primera vez que un paciente me ayuda."
+        "text": "*Se ríe.* Un paciente ayudando a la enfermera. Tendré que dejarlo registrado."
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",

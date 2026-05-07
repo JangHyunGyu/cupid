@@ -45,7 +45,7 @@
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "Heute ist DER Tag!!!! 18 Uhr vor der Halle!! Bin irgendwie nervös lol, warte, sollte ich das überhaupt abschicken"
+        "text": "Heute ist es so weit. 18 Uhr vor der Halle. Warum bin ich so nervös? Soll ich das überhaupt abschicken?"
     },
     "morning4_end": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "hidden_homeroom_d4_4_d": {
         "name": "Klassenlehrerin",
-        "text": "Du bist der erste Schüler, der beim 'Vorbeikommen' am Wochenende ins Schultor schaut."
+        "text": "Schüler, die im Vorbeigehen durchs Schultor spähen, sind selten."
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Klassenlehrerin",
-        "text": "Das erste Mal, dass ich mit einem Schüler außerhalb der Schule was trinke. Ehrlich? Ein bisschen komisch."
+        "text": "Mit einem Schüler außerhalb der Schule etwas zu trinken, ist ehrlich gesagt etwas seltsam."
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Klassenlehrerin",
@@ -451,7 +451,7 @@
     },
     "hidden_nurse_d4_2_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Lachend* Zum ersten Mal hilft ein Patient der Krankenschwester."
+        "text": "*Lachend* Ein Patient hilft der Krankenschwester. Das muss ich mir notieren."
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",

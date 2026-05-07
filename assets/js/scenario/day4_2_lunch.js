@@ -118,7 +118,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_seo_end": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_worried.png",
         "next": "date_seo_end_b"
     },
     "date_seo_end_b": {
@@ -220,7 +220,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_yuna_earphone": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "date_yuna_earphone_2"
     },
     "date_yuna_earphone_2": {
@@ -402,7 +402,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_dain_knee_2": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "date_dain_shop"
     },
     "date_dain_shop": {
@@ -432,7 +432,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_dain_end": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "date_dain_end_b"
     },
     "date_dain_end_b": {
@@ -442,7 +442,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_dain_end_c": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sweat.png",
         "next": "pre_confess_minsu"
     },
     "pre_confess_minsu": {

@@ -223,6 +223,13 @@ function parse() {
                 continue;
             }
 
+            // 배경톤 / CSS 배경 변형
+            const bgVariantMatch = meta.match(/^배경톤: `([^`]+)`$/);
+            if (bgVariantMatch) {
+                currentScene.backgroundVariant = bgVariantMatch[1];
+                continue;
+            }
+
             // 캐릭터 (투명도 포함)
             const charOpMatch = meta.match(/^캐릭터: `([^`]+)` @ ([\d.]+)$/);
             if (charOpMatch) {
@@ -462,6 +469,7 @@ function formatSceneJS(scene) {
     const props = [];
 
     if (scene.background) props.push(`"background": ${JSON.stringify(scene.background)}`);
+    if (scene.backgroundVariant) props.push(`"backgroundVariant": ${JSON.stringify(scene.backgroundVariant)}`);
     if (scene.character !== undefined) props.push(`"character": ${JSON.stringify(scene.character)}`);
     if (scene.characters) props.push(`"characters": ${JSON.stringify(scene.characters)}`);
     if (scene.bgm) props.push(`"bgm": ${JSON.stringify(scene.bgm)}`);

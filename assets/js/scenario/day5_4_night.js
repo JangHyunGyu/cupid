@@ -58,6 +58,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_perfect_homeroom_1": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": null,
         "bgm": "ending.mp3",
         "setFlags": ["ending_perfect","isDating_Teacher"],
@@ -182,7 +183,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_homeroom_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "backgroundVariant": "empty",
+        "character": "assets/images/characters/teacher_sad.png",
         "next": "hidden_true_homeroom_2_b"
     },
     "hidden_true_homeroom_2_b": {
@@ -222,7 +224,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_homeroom_4_d": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_sad.png",
         "next": "hidden_true_homeroom_4_e"
     },
     "hidden_true_homeroom_4_e": {
@@ -282,7 +284,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_homeroom_7_c": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "hidden_true_homeroom_7_d"
     },
     "hidden_true_homeroom_7_d": {
@@ -1032,6 +1034,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "true_dain_1": {
         "background": "assets/images/background/gym.png",
+        "backgroundVariant": "lights-off",
         "character": null,
         "bgm": "ending.mp3",
         "setFlags": ["ending_true_love"],

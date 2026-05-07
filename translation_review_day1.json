@@ -1975,7 +1975,7 @@
     "classroom_dain_talk_7": {
       "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#classroom_dain_talk_7",
       "_ko_name": "다인",
-      "_ko_text_preview": "ㅋㅋㅋㅋ 볼 머신보다는 낫지 않을까! 아마!",
+      "_ko_text_preview": "그래도 볼 머신보단 낫겠지. 아마!",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#classroom_dain_talk_7",
@@ -5022,7 +5022,7 @@
     "lunch_dain_c1_1": {
       "_ko_ref": "assets/js/i18n/ko/day1_2_lunch.json#lunch_dain_c1_1",
       "_ko_name": "다인",
-      "_ko_text_preview": "ㅋㅋㅋ 좋아!! 내가 다 알려줄게! 방과후에 체육관 콜?!",
+      "_ko_text_preview": "좋아. 오늘부터 특훈이다. 방과후 체육관 워밍업부터, 콜?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_2_lunch.json#lunch_dain_c1_1",
@@ -11441,7 +11441,7 @@
     "night_msg_dain_3": {
       "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_msg_dain_3",
       "_ko_name": "다인",
-      "_ko_text_preview": "*오늘 빵값 아직도 아깝다 아 진짜ㅋㅋㅋ*",
+      "_ko_text_preview": "*오늘 빵값 아직도 아깝다. 진짜.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_4_night.json#night_msg_dain_3",

@@ -430,6 +430,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_yuna_1": {
         "background": "assets/images/background/library_old.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
         "next": "lunch_yuna_1_aff_default"

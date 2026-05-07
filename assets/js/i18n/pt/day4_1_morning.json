@@ -90,7 +90,7 @@
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "HOJE!!!! Frente do ginásio, 18h!! Ai por que eu tô tão nervosa kkkk ai será que eu devia ter mandado isso"
+        "text": "É hoje. Às 18h na frente do ginásio. Ai, por que eu tô tão nervosa? Será que mando isso?"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
@@ -151,7 +151,7 @@
     },
     "hidden_homeroom_d4_4_d": {
         "name": "Professora",
-        "text": "Você é o primeiro aluno que espia o portão da escola enquanto 'está passando'."
+        "text": "Aluno que dá uma espiada no portão da escola só porque estava passando é raro."
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
@@ -183,7 +183,7 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Professora",
-        "text": "É a primeira vez que tomo café fora da escola com um aluno. Sinceramente? Um pouco estranho."
+        "text": "Tomar alguma coisa com um aluno fora da escola, sinceramente, é meio estranho."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_nurse_d4_2_c": {
         "name": "Enfermeira",
-        "text": "*Rindo* É a primeira vez que um paciente ajuda a enfermeira."
+        "text": "*Rindo* Um paciente ajudando a enfermeira. Vou ter que registrar isso."
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",

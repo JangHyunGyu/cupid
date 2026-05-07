@@ -82,7 +82,7 @@
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "LOL, you can't handle spicy food?!"
+        "text": "You can't handle spicy food?"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "LOL you're unreal. You HAVE to come to the gym tomorrow!!"
+        "text": "Hey, seriously, what are you? Come to the gym tomorrow."
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",

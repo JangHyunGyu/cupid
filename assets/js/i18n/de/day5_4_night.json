@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Nicht als Ersatz, sondern als der Mensch, der jetzt hier ist — so will ich in Erinnerung bleiben. Yuna auch. Und ich auch.*"
+        "text": "*Nicht als Platzhalter für jemanden, sondern als der Mensch, der jetzt hier ist. So will ich bleiben. Yuna auch. Ich auch.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -562,7 +562,7 @@
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Hey, ganz verziehen hab ich dir noch nicht. ...Aber immerhin genug, um dir wieder den Ball zuzuwerfen."
+        "text": "Hey, es ist noch nicht alles wieder gut. ...Aber gut genug, um dir wieder den Ball zuzuwerfen."
     },
     "good_2_dain": {
         "name": "{name}",

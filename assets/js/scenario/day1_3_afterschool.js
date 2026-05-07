@@ -262,6 +262,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_miss_seoyeon_7": {
         "background": "assets/images/background/school_hallway.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/seyoun_normal.png",
         "excludeCondition": "ate_lunch_seoyeon",
         "next": "after_miss_seoyeon_8"
@@ -624,7 +625,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_nurse_enter_11_b": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_angry.png",
         "next": "after_nurse_enter_11_c"
     },
     "after_nurse_enter_11_c": {
@@ -634,7 +635,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_nurse_enter_11_d": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_angry.png",
         "next": "after_nurse_enter_11_e"
     },
     "after_nurse_enter_11_e": {

@@ -71,7 +71,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_seo_7": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after5_farewell_yuna_check"
     },
     "after5_farewell_yuna_check": {
@@ -94,7 +94,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_yuna_3": {
         "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_smile.png",
         "excludeCondition": "route_yuna",
         "next": "after5_farewell_yuna_4"
     },
@@ -106,7 +106,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_yuna_5": {
         "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_smile.png",
         "next": "after5_farewell_yuna_5b"
     },
     "after5_farewell_yuna_5b": {
@@ -269,7 +269,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_2_f": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_worried.png",
         "next": "after5_last_chance_2_g"
     },
     "after5_last_chance_2_g": {
@@ -289,7 +289,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_2_j": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_shy2.png",
         "next": "after5_last_chance_choice"
     },
     "after5_last_chance_seo_low_1": {
@@ -341,7 +341,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_2_q": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "after5_last_chance_2_r"
     },
     "after5_last_chance_2_r": {
@@ -398,7 +398,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_yuna_6": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after5_last_chance_yuna_7"
     },
     "after5_last_chance_yuna_7": {

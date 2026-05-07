@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*No quiero que me recuerden como un sustituto, sino como la persona que está aquí, ahora. Yuna también. Yo también.*"
+        "text": "*No como el hueco que dejó alguien, sino como la persona que está aquí ahora. Así quiero quedarme. Yuna también. Yo también.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -562,7 +562,7 @@
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Oye, aún no lo tengo del todo superado, es verdad. ...Pero ya estoy como para volver a lanzarte el balón."
+        "text": "Oye, no es que ya esté todo bien. ...Pero estoy bien como para volver a lanzarte el balón."
     },
     "good_2_dain": {
         "name": "{name}",
