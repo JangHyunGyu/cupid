@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Abril. As pétalas de cerejeira voam pelo ar. O uniforme ainda está duro. Há um cheiro suave de grama no ar. A partir de hoje, sou aluno desta escola. Transferido. É a primeira vez.*"
+        "text": "*abril. As flores de cerejeira estão vibrando. O uniforme escolar ainda está rígido. Há um leve cheiro de grama. O documento de transferência é dobrado e prensado na bolsa.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Um portão de escola desconhecido. Estudantes passavam em pequenos grupos. Só o meu uniforme ainda tinha as marcas de dobra. Ao lado do portão, uma garota de cabelo preto comprido ajeitou os óculos e conferiu a hora. Quando parei, ela também levantou o olhar.*"
+        "text": "*Em frente ao portão da escola desconhecido. Só meu uniforme escolar ainda tem dobras. Ao lado do portão da escola, uma aluna de longos cabelos negros ajusta os óculos e verifica as horas. Quando paro, ela olha para cima também.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -134,7 +134,7 @@
     },
     "hallway_6_c": {
         "name": "{name}",
-        "text": "*Meio segundo de hesitação. Não deve ser nada — mas fica.*"
+        "text": "*A borda da área de transferência se move novamente uma batida depois.*"
     },
     "hallway_7": {
         "name": "Seoyeon",

@@ -69,7 +69,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*J'aimerais juste que tu ne prennes pas à la légère le choix de qui tu vas soutenir.*"
+        "text": "*À côté de qui vais-je me tenir? J'espère que je ne retarderai pas cette fois-ci*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -146,7 +146,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*J'ai ouvert les yeux. La lumière du matin filtre à travers les rideaux. — Le rêve d'aujourd'hui était bon. J'ai sorti mon téléphone. Ouvert la galerie. La photo de Sojeong. — J'ai arrêté de scroller, et appuyé longuement.*"
+        "text": "*Ouvre mes yeux. La lumière du soleil du matin traverse les rideaux. Mes paumes sont encore chaudes. J'ai sorti mon téléphone portable. Ouverture d'une galerie. La photo de Sojeong. — Défilement arrêté, enfoncé et maintenu*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Cette fois, c'est différent. Si je vois, je parle. Si je sais, je m'avance. À une seule personne, clairement — La galerie est vide. La place où était la photo de Sojeong. L'écran vide est encore plus net que la photo.*"
+        "text": "*La galerie est vide. L’endroit où se trouvait la photo de Sojung. Un écran vide est plutôt clair. Je vous le dirai quand je le verrai. Je me présenterai si je sais.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*J'aimerais juste que tu comprennes le poids du choix de la personne à côté de qui tu vas te tenir.*"
+        "text": "*Moi aussi, ils détestent les sièges de réserve.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu l'a dit. 'Refuser, c'est aussi de l'amour.' Seoyeon l'a dit. 'Je ne serai pas une parmi d'autres.'*"
+        "text": "*Minsu a dit. \"Le rejet est quelque chose que vous devez faire.\" Seoyeon a dit. « Je n’en fais pas un parmi tant d’autres. »*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...Oui. C'est à moi d'abord de dire non à mon passé. — Supprimé.*"
+        "text": "*...d'accord. Je pose mon doigt sur le bouton Supprimer. — pressé.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu l'a dit. 'Le rejet est aussi de l'amour.' Sojeong dans la galerie sourit toujours. Note #38 toujours non envoyée. Seul le bouton d'envoi est bleu.*"
+        "text": "*Minsu a dit. \"Le rejet est quelque chose que vous devez faire.\" Sojung dans la galerie sourit toujours. Le bloc-notes numéro 38 n'a pas encore été envoyé. Seul le bouton d'envoi est bleu.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*J'ai refermé mon téléphone. La galerie est vide, et mon cœur est encore confus. — C'est déjà un pas.*"
+        "text": "*Couvert le téléphone portable. Un espace de galerie vide apparaît sur un écran noir.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",

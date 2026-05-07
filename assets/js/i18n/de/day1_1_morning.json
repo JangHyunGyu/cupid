@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*April. Kirschblüten tanzen durch die Luft. Meine Uniform sitzt noch steif. Es riecht leicht nach Stärke. Ab heute gehe ich auf diese Schule. Schulwechsel. Zum ersten Mal.*"
+        "text": "*April. Kirschblüten flattern. Die Schuluniform ist immer noch steif. Es riecht leicht nach Gras. Der Überweisungsbeleg wird gefaltet und in die Tasche gepresst.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Ein fremdes Schultor. Schüler zogen in kleinen Grüppchen vorbei. Nur meine Uniform hatte noch scharfe Bügelfalten. Neben dem Tor richtete ein Mädchen mit langen schwarzen Haaren ihre Brille und sah auf die Uhr. Als ich stehen blieb, hob auch sie den Blick.*"
+        "text": "*Vor dem unbekannten Schultor. Nur meine Schuluniform hat noch Faltlinien. Neben dem Schultor rückt eine Schülerin mit langen schwarzen Haaren ihre Brille zurecht und schaut auf die Uhrzeit. Als ich aufhöre, schaut auch sie auf.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -262,7 +262,7 @@
     },
     "hallway_6_c": {
         "name": "{name}",
-        "text": "*Ein halber Sekunden Zögern. Wahrscheinlich nichts — aber es bleibt.*"
+        "text": "*Der Rand der Zwischenablage bewegt sich einen Schlag später erneut.*"
     },
     "hallway_7": {
         "name": "Seoyeon",

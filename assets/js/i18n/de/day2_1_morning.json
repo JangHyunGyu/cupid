@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*Wenn es eine Welt gäbe, in der diese Lautstärke um 8 Uhr morgens normal wäre, wäre Dain deren Präsidentin.*"
+        "text": "*Wenn die Spannung um 8 Uhr morgens so hoch ist, denke ich, dass die Batterie vor der Beerdigung leer sein wird.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -94,11 +94,11 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Sind Menschen Objekte, die beansprucht werden können? Die Kante von Seoyeons Klemmbrett tippt gegen den Schreibtisch. Ich konnte nicht sofort Nein sagen.*"
+        "text": "*Das Ende von Seoyeons Klemmbrett berührt den Schreibtisch. Ich habe den richtigen Zeitpunkt verpasst, um Nein zu sagen.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Pause nach der ersten Stunde. Ich begegne Seoyeon im Flur. Sie bleibt stehen. Schaut auf meine Schulter.*"
+        "text": "*Pausezeit nach dem 1. Drittel. Ich komme im Flur an Seoyeon vorbei. Seoyeon bleibt stehen und schaut auf meine Schulter. Die Hand, die das Klemmbrett hält, kommt zuerst nach oben.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Lesen. Sie schaut sich sogar die Zeugnisse an.*",
+        "text": "*Der Blick zur Schublade bleibt bestehen. Ich habe beschlossen, keine weiteren Fragen zu Zeugnissen zu stellen.*",
         "choices": [
             "Und Sie? Was lesen Sie?",
             "Ja, ich lese gern"
@@ -182,7 +182,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*Die Schublade. Hat sie gerade hingeschaut? — Durch den Spalt sehe ich einen Stapel Papiere. Sieht aus wie Manuskriptseiten.*"
+        "text": "*Der Rand des Manuskripts ist durch die leicht geöffnete Schublade sichtbar. Der Klassenlehrer stellt die Kaffeetasse ab und schiebt die Schublade zu.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Klassenlehrerin",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Klassenlehrerin",
-        "text": "*Verdeckt den Mund mit der Kaffeetasse* ...Poker-Face gescheitert. Schon gut, geh."
+        "text": "*bedeckt den Mund mit einer Kaffeetasse*...wird das alles im Gesicht verwendet? Okay, lass uns gehen."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Klassenlehrerin",
@@ -262,7 +262,7 @@
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*Hab gelacht, aber — Seoyeons Bemerkung bleibt hängen.*"
+        "text": "*Ich habe darüber gelacht, aber einen Moment später kam mir das Geräusch des Klopfens auf die Zwischenablage in den Sinn.*"
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Jemand, um den ich mir Sorgen mache.' — Die Lehrerin sorgt sich um Dain. Weiß sie etwas?*"
+        "text": "*'Derjenige, der sich Sorgen macht'. Der Klassenlehrer wirft einen Blick auf Dains Namensschild.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Klassenlehrerin",

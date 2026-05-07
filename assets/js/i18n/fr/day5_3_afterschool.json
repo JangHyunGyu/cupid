@@ -13,7 +13,7 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*Je n'arrive pas à dire « pardon » si facilement. Ce ne sont pas des sentiments qu'un seul mot peut ranger. Alors seulement dans mon cœur, doucement. Merci.*"
+        "text": "*Ce n’est pas facile pour moi de dire que je suis désolé. Je n’ai levé la main qu’une seule fois devant le portail de l’école. Merci.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Bon, je m'y attendais. Depuis le début, t'as jamais fait ce que je prévoyais."
+        "text": "Eh bien, je m'y attendais. Parce que tu n’as pas bougé comme je m’y attendais depuis le début."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
-        "text": "*Les points d'exclamation sont toujours là. — Dain reste Dain jusqu'au bout. C'est sa force.*"
+        "text": "*Le point d'exclamation est vivant. Dain lance le ballon de volley haut et le rattrape.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -120,7 +120,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*Mes derniers pas se divisent en deux chemins. La personne à qui j'ai déjà fait une promesse, et ce sentiment que je n'ai pas réussi à faire semblant d'ignorer jusqu'au bout.*"
+        "text": "*La dernière étape se divise en deux. Avec quelqu'un à qui j'avais déjà promis, je n'ai finalement pas pu passer le portail de l'école.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
-        "text": "*Les points d'exclamation disparaissent. Sa voix devient toute petite. — Ses yeux se remplissent.*"
+        "text": "*Les lèvres de Dain tremblent. Je prends une profonde inspiration avant de répondre.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
@@ -256,7 +256,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*Je n'ai rien préparé à dire, mais étrangement, cette fois je ne veux pas fuir. Yuna ne me presse pas.*"
+        "text": "*Je n'ai rien préparé, mais cette fois mon pied ne recule pas. Yuna n'insiste pas.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
@@ -363,7 +363,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Avec des sentiments encore sans conclusion, nos pas nous ont menés jusqu'au parc.*"
+        "text": "*Des marches non concluantes se sont poursuivies vers le parc.*"
     },
     "after5_confess_no": {
         "name": "{name}",

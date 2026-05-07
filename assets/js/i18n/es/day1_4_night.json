@@ -81,7 +81,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Solo manda '...' y ya. Como si hubiera escrito algo y lo hubiera borrado.*"
+        "text": "*El indicador se enciende y apaga durante la entrada. Lo único que llegó fue '...'.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*¿Esta chica no sabe lo que es un 'no'?*"
+        "text": "*'Llamar' ya está estampado en la ventana de respuesta.*"
     },
     "night_end_1": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Hay una alerta en la app de salud de la escuela. 'Registro de enfermería: estudiante transferido — mareo (leve). Nota: si mañana sigues igual, vuelve. Toma mucha agua. — el ♥ es interés puramente médico ^^'*"
+        "text": "*Se muestran las notificaciones de la aplicación de gestión de salud escolar. 'Registros de la sala de salud: Estudiante transferido: mareos leves. Memo: Vuelva mañana si tiene algún síntoma. Bebe mucha agua. ♥ es motivo de preocupación médica.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

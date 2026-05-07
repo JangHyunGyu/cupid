@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Day five. It's Sunday, but there's a school event. My uniform feels comfortable now. — It's because of them. I know it.*"
+        "text": "*Fifth day. It's Sunday, but there's a school event. School uniforms have become more comfortable. Sleeve ends no longer scratch your wrists.*"
     },
     "morning5_mood_check": {
         "name": "System",
@@ -99,7 +99,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "School Nurse",
-        "text": "Oh? {name}. — Last day, huh. Last day of the event. Five days. — Went by fast."
+        "text": "uh? {name}. It's already the last day. Once the event is over, it will really be over."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "{name}",
-        "text": "*She pauses. — Then smiles. Not a dry smile. A warm one.*"
+        "text": "*The homeroom teacher pauses for a moment. This time, the attendance sheet does not cover the face.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Homeroom Teacher",
@@ -279,7 +279,7 @@
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
-        "text": "*An awkward silence. — Until yesterday it was natural, but today something feels different.*"
+        "text": "*The silence that seemed natural until yesterday is now hanging between paper cups.*"
     },
     "hidden_nurse_d5_4_d": {
         "name": "School Nurse",
@@ -307,7 +307,7 @@
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "*The school nurse pauses. Her voice drops a register.*"
+        "text": "*The health teacher pauses for a moment. Laughter disappears first.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "School Nurse",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*'After graduation.' — The same words as the homeroom teacher. Not now, but someday. The day the title of 'teacher' is stripped away.*"
+        "text": "*'After graduating'. It is a closed word, but it remains attached to the back of the hand like the end of a band.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "School Nurse",
@@ -339,7 +339,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*Her voice dropped a register. All playfulness gone from her face. — This is how her sincerity always arrives. The school nurse was laughing — and stops. Presses her lips shut.*"
+        "text": "*The health teacher stops laughing. The gaze behind the glasses wavers for a moment.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "School Nurse",
@@ -351,7 +351,7 @@
     },
     "hidden_nurse_d5_choice_b_e": {
         "name": "{name}",
-        "text": "*'After you graduate.' — She won't cross the line. But she left her phone number right at its edge.*"
+        "text": "*'After graduating'. The phone number is halfway down the band wrapper.*"
     },
     "hidden_nurse_d5_choice_b_f": {
         "name": "School Nurse",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
-        "text": "*The teacher pauses. — And then her usual dry expression returns. Too quickly.*"
+        "text": "*The homeroom teacher pauses for a moment. He soon returns to his usual dry expression, but the corners of the envelope are crumpled.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Homeroom Teacher",
@@ -443,7 +443,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...I didn't know. I knew about the failed debuts, but not that the rejection wording was exactly the same as what I just said.*"
+        "text": "*The phrase rejection is stuck in my eyes. It's exactly like what I just said.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Homeroom Teacher",
@@ -459,7 +459,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "*The teacher stops. Really stops. Not for half a second — for about three. Her grip on the clipboard tightens.*"
+        "text": "*The homeroom teacher stops. The hand holding the clipboard takes strength. The end of the paper is slightly curved.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Homeroom Teacher",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher laughs. Really laughs. Not just the corners of her mouth — her eyes too. The face of seven years of self-censorship coming undone for one second.*"
+        "text": "*Homeroom teacher laughs. The corners of the eyes relax before the corners of the mouth, and the clipboard goes down on the desk.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Homeroom Teacher",

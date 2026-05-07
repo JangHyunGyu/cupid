@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Hora do almoço. Hoje, coisa rara — as três num lugar só. Abro a marmita. Seoyeon senta do meu lado numa boa, Dain se joga na frente, e Yuna entra de fininho num canto comendo o pão dela.*"
+        "text": "*Hora do almoço. Quando a lancheira é aberta, três pessoas se reúnem em um só lugar. Seoyeon se senta ao lado dele, Dain se senta em frente a ele e Yuna entra furtivamente, comendo seu pão no canto.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
@@ -53,11 +53,11 @@
     },
     "lunch3_meal_10_c": {
         "name": "{name}",
-        "text": "*Os pauzinhos de Seoyeon param. Ela se recompõe. O rosto de presidente do grêmio volta. — Sei que ela não tá bem. Bateu culpa.*"
+        "text": "*Os pauzinhos de Seoyeon param por um momento. O rosto do presidente do conselho estudantil logo retorna, mas o rolinho de ovo permanece.*"
     },
     "lunch3_meal_10_d": {
         "name": "{name}",
-        "text": "*Todas juntas?! Boa!! As exclamações da Dain seguem vivas. — Mas a voz tá meio tom abaixo. Num dia normal ela já teria arrastado uma cadeira, hoje fica parada no lugar.*"
+        "text": "*Dain diz “Todos juntos?!” e ri. Normalmente eu teria arrastado uma cadeira, mas hoje não saí de onde estava sentado.*"
     },
     "lunch3_meal_10_e": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna passa pelo corredor e olha pra dentro do ginásio. Dain tá rindo. Yuna apressa o passo. No intervalo seguinte, o lugar de Yuna tá vazio.*"
+        "text": "*Yuna olha para dentro do ginásio pelo corredor. Dain está sorrindo. Yuna vai embora sem dizer nada. No próximo intervalo, o assento de Yuna estará vazio.*"
     },
     "lunch3_dain_witness_2b": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "lunch3_expose_15": {
         "name": "{name}",
-        "text": "*Não consigo falar nada. Minsu tem razão.*"
+        "text": "*A boca não cai. Minsu vira a cabeça.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Sem exclamações. — As exclamações sumiram das falas de Dain. Pela primeira vez.*"
+        "text": "*Não há ponto de exclamação. O final da frase de Dain é estranhamente tranquilo.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*Sugeri dividir entre todas. Uma oferta de paz feita tarde demais. As três dão uma risada amarela, mas ninguém estende a mão primeiro.*"
+        "text": "*Todos nós dissemos que deveríamos compartilhar isso juntos. Todos os três riem de forma engraçada, mas ninguém estende a mão primeiro.*"
     },
     "lunch3_share_solo": {
         "name": "{name}",

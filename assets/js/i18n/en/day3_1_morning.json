@@ -62,7 +62,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Someone who stays up all night reading and ends up late. — That's so Yuna. I like that. Yuna quietly digs through her bag, pulls out a small bread roll and tears it in half to offer me. A note peeks out from inside the bag.*"
+        "text": "*A person who reads all night and is late. Yuna rummaged through her bag without saying a word, then cut a small bread in half and held it out. A note is visible inside the bag.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Homeroom Teacher",
-        "text": "*She can't find her words for a moment.* ...Persistence. You're the first person to see it that way."
+        "text": "*Pause. The hand that was touching the manuscript paper stops.*...It feels less shabby when I hear it's called persistence."
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Homeroom Teacher",
@@ -262,7 +262,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*She smiles. Not her usual dry one — slightly awkward. — ...First reader applicant in seven years.*"
+        "text": "*Homeroom teacher laughs. The corners of the mouth rise awkwardly, and the hands remain on the manuscript.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Homeroom Teacher",
@@ -296,7 +296,7 @@
     },
     "hidden_nurse_d3_4": {
         "name": "School Nurse",
-        "text": "*Drawing the curtain* ...Sit down. You're safe here. *Hands me a cup of water* ...Take your time."
+        "text": "*draws the curtain and hands you a cup of water*...sit down. You can feel comfortable here. You can speak slowly."
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*The note: 'I figured you hadn't eaten breakfast.' Someone who writes it down when she could've just said it out loud. — That's Yuna.*"
+        "text": "*Note: I thought you didn’t eat breakfast. There is a little light purple ink on the bottom of the bread bag.*"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -466,11 +466,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*The homeroom teacher's hand is paused over some manuscript paper. Through the flipped-over sheets, I can make out dense writing.*"
+        "text": "*Handwriting is scattered between the flipped papers. The homeroom teacher's palm covers the corner of the paper.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
-        "text": "*The homeroom teacher's expression snaps back instantly. Her usual indifferent face. — That was a quick switch.*"
+        "text": "*The homeroom teacher's expression returns to its usual indifference. It is a manuscript, but it is still turned over.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Homeroom Teacher",
@@ -546,11 +546,11 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*So this is the story behind her dry demeanor. — An unfinished manuscript in the teacher's desk drawer. Seven years.*"
+        "text": "*Unfinished manuscript in the desk drawer. A story that had been closed for 7 years has been pushed out here.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Homeroom Teacher",
-        "text": "*Suddenly serious* ...You can't tell anyone about this. If a student knew their teacher's — this side, my authority — well, I never had much to begin with."
+        "text": "*Suddenly blushing*...You can't tell anyone about this. It would be difficult if students found out that their teacher was like this. Well, I didn't have much authority to begin with."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -574,7 +574,7 @@
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
-        "text": "*The smile is awkward. — Is she awkward at smiling, or has she forgotten how?*"
+        "text": "*Because of that awkward laughter, the sound of the second hand in the empty classroom becomes louder.*"
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Homeroom Teacher",
@@ -582,7 +582,7 @@
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
-        "text": "*She called seven years 'not being able to give up.' But one sentence that shifted her perspective — and her eyes wavered.*"
+        "text": "*The homeroom teacher presses the corner of the manuscript with his or her thumb. The paper is slightly crumpled.*"
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Homeroom Teacher",
@@ -590,7 +590,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*The clock's second hand is loud in the empty classroom. Too many crossed-out marks on the paper to be official paperwork. I should look away, but my gaze won't drop.*"
+        "text": "*The clock ticking in an empty classroom is loud. The gaze does not fall from the sentence with overlapping traces of erasure.*"
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "hidden_nurse_d3_3_b": {
         "name": "{name}",
-        "text": "*The nurse looks at me for a moment. The playfulness vanishes.*"
+        "text": "*The health teacher puts down the cup.*"
     },
     "hidden_nurse_d3_3_c": {
         "name": "School Nurse",
@@ -634,7 +634,7 @@
     },
     "hidden_nurse_d3_3_d": {
         "name": "{name}",
-        "text": "*Her voice changed. Not joking anymore. — When this person gets serious, the whole atmosphere shifts.*"
+        "text": "*The health teacher puts down the cup. The light movements of my hands until now have stopped. Sit on the bed.*"
     },
     "hidden_nurse_d3_5_b": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
-        "text": "*One 'something like that' and her whole attitude changed. — She's someone who opens up when she feels understood.*"
+        "text": "*After saying ‘similar’, the health teacher’s hand pauses briefly on the water cup.*"
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
-        "text": "I'm worried about multiple people at once, but I feel like I have to choose just one..."
+        "text": "I'm interested in all three, but I think I'll have to decide on one person in the end."
     },
     "hidden_nurse_d3_5_h": {
         "name": "{name}",
@@ -682,7 +682,7 @@
     },
     "hidden_nurse_d3_5_m": {
         "name": "School Nurse",
-        "text": "Should a teacher really be doing this kind of counseling... *rests chin on hand* But I'll listen. The infirmary bed is empty anyway."
+        "text": "Does this go into health care...*Cuts chin*I'll listen anyway. Because the bed is empty."
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
@@ -702,7 +702,7 @@
     },
     "hidden_nurse_d3_6_b": {
         "name": "{name}",
-        "text": "*She's talking about patients, but somehow it overlaps with my situation.*"
+        "text": "*The health teacher puts down the water cup. The water on the bottom of the cup spreads in a circle.*"
     },
     "hidden_nurse_d3_6_c": {
         "name": "School Nurse",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
-        "text": "*The playfulness is completely gone.*"
+        "text": "*The fingers holding the cup stop.*"
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
@@ -746,11 +746,11 @@
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*The bandage on my hand is slightly peeling. Someone who gives up their bed when I say I'm sick. Someone who looks back even when I say I'm not. Between them hangs a single name tag: 'School Nurse'.*"
+        "text": "*The band on the back of the hand is slightly torn. The curtain sways between the bed and the name tag. The three letters ‘health teacher’ are particularly clear.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*The sound of paper being folded comes from inside the infirmary. Unfinished letters to Yujin. My age is too close to place next to that name. I grip the handle, then let go.*"
+        "text": "*The sound of paper being folded is heard inside the health room. Letters written to Eugene. Grasp the handle and release it.*"
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
@@ -758,7 +758,7 @@
     },
     "hidden_nurse_d3_9_c": {
         "name": "{name}",
-        "text": "*The nurse — isn't smiling. She's fidgeting with her stethoscope, looking out the window. Like someone who didn't even realize what she just said.*"
+        "text": "*The health teacher is not smiling. I fiddle with my stethoscope and look out the window.*"
     },
     "hidden_nurse_d3_9_d": {
         "name": "School Nurse",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_9_e": {
         "name": "{name}",
-        "text": "*A joke. — Right? Right, I think to myself, but my feet won't move. That split-second look just now — there was no playfulness in it.*"
+        "text": "*I tried to pass it off as a joke, but my feet wouldn't fall off. There is only a strong smell of disinfectant beyond the curtain.*"
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",

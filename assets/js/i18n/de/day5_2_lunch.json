@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*Seoyeon holt etwas aus ihrer Tasche. — Ein Schlüssel. Der Dachschlüssel.*"
+        "text": "*Der Schlüsselanhänger klirrt in Seoyeons Tasche. Es ist der Dachschlüssel.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "{name}",
-        "text": "*Die Hand, die den Schlüssel übergibt. Unsere kleinen Finger berühren sich kurz.*"
+        "text": "*Handliche Schlüsselübergabe. Die kleinen Finger berühren sich leicht. Seoyeon lässt seine Hand los, anstatt zu sagen: „Ich gebe sie dir.“*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "Jedes Mal, wenn ich hierher komme, scheint die Zeit etwas langsamer zu vergehen."
+        "text": "Wenn ich hierher komme, kommen mir die Geräusche von draußen etwas fern vor."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -97,7 +97,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Sie reicht mir das Notizbuch. Ihre Hände zittern leicht.*"
+        "text": "*Hält die Notiz hin. Meine Hände zittern leicht. Yuna kann die Ecke der Abdeckung nicht vollständig platzieren.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Sie ärgert sich und lacht gleichzeitig. — Das ist Dain. Jemand, der selbst beim Verlieren Spaß hat. Dain legt den Volleyball langsam auf dem Spielfeld ab.*"
+        "text": "*Lächelt, auch wenn er wütend ist. Dain legt den Volleyball auf das Spielfeld. langsam.*"
     },
     "tour_dain_10": {
         "name": "Dain",

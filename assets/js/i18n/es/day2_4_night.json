@@ -158,11 +158,11 @@
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*En mis notas, frases sin enviar están alineadas una tras otra. 'Me gustas.' 'Profesora, en el escritorio de Sojeong—' 'Hoy también—' Todas cortadas en la primera línea. Última edición: 2:17 a.m.*"
+        "text": "*Quedan filas de frases sin enviar en el bloc de notas. 'me gustas.' 'Maestro, Sojung está en el escritorio...' 'Hoy también...' Todo se cortó en la primera línea. Última modificación a las 2:17 a. m.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Debajo de la nota 38, no hay nada. Solo el título 39 está en blanco. Al día siguiente, el asiento de Sojeong quedó vacío hasta el final. En los papeles de transferencia, la línea de firma del tutor tiene el nombre de su padre.*"
+        "text": "*No hay nada debajo de la nota 38. Sólo el título número 39 está vacío. Al día siguiente, el asiento de Sojung estuvo vacío hasta el final. El nombre del padre está escrito en la sección de firma del tutor del documento de transferencia.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Esas palabras no dejan de dar vueltas. Todavía no contesté. Ayer era solo que me rondaban la cabeza. Hoy — el 'quiero verte' me subió hasta la garganta y volvió a bajar.*"
+        "text": "*Esas palabras siguen regresando a mí. Aún no he recibido respuesta. En cambio, aumenta la cantidad de veces que abre y cierra la ventana de notificación.*"
     },
     "night2_end_3_b": {
         "name": "{name}",

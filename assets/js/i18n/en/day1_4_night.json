@@ -81,7 +81,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Just '...' Nothing else. Like she typed something and deleted it.*"
+        "text": "*The indicator turns on and off during input. The only thing that arrived was '...'.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*Does the word 'no' even exist in her vocabulary?*"
+        "text": "*'Call' is already stamped in the reply window.*"
     },
     "night_end_1": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*An alert in the school health app. 'Nurse's Office Record: Transfer student — Dizziness (mild). Note: Come back tomorrow if symptoms continue. Drink lots of water. — the ♥ is strictly a medical concern ^^'*"
+        "text": "*Notifications from the school health management app are displayed. 'Health room records: Transfer student — mild dizziness. Memo: Come back tomorrow if you have any symptoms. Drink a lot of water. ♥ is of medical concern.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

@@ -158,11 +158,11 @@
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*In meinen Notizen reihen sich ungesendete Sätze aneinander. 'Ich mag dich.' 'Lehrerin, auf Sojeongs Schreibtisch—' 'Heute auch—' Alle in der ersten Zeile abgebrochen. Letzte Änderung: 2:17 Uhr nachts.*"
+        "text": "*Im Notizblock sind noch Reihen mit nicht gesendeten Sätzen übrig. 'Ich mag dich.' „Lehrer, Sojung ist am Schreibtisch –“ „Heute auch –“ In der ersten Zeile wurde alles abgeschnitten. Zuletzt geändert um 02:17 Uhr.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Unter der 38. Notiz ist nichts. Nur der 39. Titel ist leer. Am nächsten Tag blieb Sojeongs Platz bis zum Ende leer. Auf den Transferpapieren steht in der Unterschriftszeile der Erziehungsberechtigten der Name ihres Vaters.*"
+        "text": "*Es gibt nichts unterhalb der 38. Note. Nur der 39. Titel ist leer. Am nächsten Tag war Sojungs Platz bis zum Schluss leer. Der Name des Vaters steht im Unterschriftenfeld des Vormunds des Übertragungsdokuments.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Diese Worte hallen ständig nach. Ich habe noch keine Antwort. Gestern war es nur, dass sie mir im Kopf rumgingen. Heute — sind die Worte 'Ich will sie sehen' bis zur Kehle hochgekommen und wieder runtergerutscht.*"
+        "text": "*Diese Worte fallen mir immer wieder ein. Ich habe noch keine Antwort erhalten. Stattdessen erhöht sich die Häufigkeit, mit der Sie das Benachrichtigungsfenster öffnen und schließen.*"
     },
     "night2_end_3_b": {
         "name": "{name}",

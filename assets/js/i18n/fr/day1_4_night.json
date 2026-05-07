@@ -81,7 +81,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Juste « ... » et rien d'autre. Comme si elle avait tapé quelque chose et tout effacé.*"
+        "text": "*L'indicateur s'allume et s'éteint pendant la saisie. La seule chose qui est arrivée était '...'.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*Cette personne ne connaît pas le concept de refus ?*"
+        "text": "*'Appel' est déjà marqué dans la fenêtre de réponse.*"
     },
     "night_end_1": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Une alerte s'affiche sur l'appli santé de l'école. 'Dossier de l'infirmerie : élève transféré — Vertiges (légers). Note : reviens demain si les symptômes persistent. Bois beaucoup d'eau. — le ♥ relève d'un intérêt purement médical ^^'*"
+        "text": "*Les notifications de l'application de gestion de la santé scolaire sont affichées. « Dossiers de la salle de santé: Étudiant transféré – légers étourdissements. Mémo: Revenez demain si vous présentez des symptômes. Buvez beaucoup d'eau. ♥ est un problème médical.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",

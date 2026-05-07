@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Cinquième jour. C'est dimanche, mais il y a un événement scolaire. L'uniforme est devenu confortable. — C'est à cause d'eux. Je le sais.*"
+        "text": "*Cinquième jour. C'est dimanche, mais il y a un événement scolaire. Les uniformes scolaires sont devenus plus confortables. Les extrémités des manches ne grattent plus vos poignets.*"
     },
     "morning5_mood_check": {
         "name": "Système",
@@ -99,7 +99,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "Infirmière",
-        "text": "Oh ? {name}. — C'est le dernier jour. Le dernier jour de l'événement. Cinq jours. — Ça passe vite."
+        "text": "euh? {name}. C'est déjà le dernier jour. Une fois l’événement terminé, ce sera vraiment fini."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "{name}",
-        "text": "*Elle s'arrête un instant. — Puis sourit. Pas un sourire sec. Un sourire chaleureux.*"
+        "text": "*Le professeur principal fait une pause un instant. Cette fois, la feuille de présence ne couvre pas le visage.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Professeure principale",
@@ -279,7 +279,7 @@
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
-        "text": "*Un silence gêné. — Jusqu'à hier c'était naturel, mais aujourd'hui quelque chose est différent.*"
+        "text": "*Le silence qui semblait naturel jusqu'à hier est désormais suspendu entre des gobelets en papier.*"
     },
     "hidden_nurse_d5_4_d": {
         "name": "Infirmière",
@@ -307,7 +307,7 @@
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "*L'infirmière marque une pause. Sa voix descend d'un ton.*"
+        "text": "*Le professeur de santé fait une pause un instant. Le rire disparaît en premier.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Infirmière",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*« Après ton diplôme. » — Les mêmes mots que la prof principale. Pas maintenant, mais un jour. Le jour où le titre disparaîtra.*"
+        "text": "*'Après avoir obtenu mon diplôme'. C'est un mot fermé, mais il reste attaché au dos de la main comme le bout d'un bandeau.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Infirmière",
@@ -339,7 +339,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*Sa voix a baissé d'un ton. Toute espièglerie a disparu. — C'est toujours comme ça que la sincérité de cette personne arrive. L'infirmière rit, puis — s'arrête. Elle ferme la bouche.*"
+        "text": "*Le professeur de santé arrête de rire. Le regard derrière les lunettes vacille un instant.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Infirmière",
@@ -351,7 +351,7 @@
     },
     "hidden_nurse_d5_choice_b_e": {
         "name": "{name}",
-        "text": "*« Après ton diplôme. » — Elle ne franchit pas la ligne. Mais elle a posé son numéro juste au bord.*"
+        "text": "*'Après avoir obtenu mon diplôme'. Le numéro de téléphone se trouve à mi-chemin sur l’emballage du bracelet.*"
     },
     "hidden_nurse_d5_choice_b_f": {
         "name": "Infirmière",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
-        "text": "*La prof s'arrête. — Puis son expression sèche habituelle revient. Trop vite.*"
+        "text": "*Le professeur principal fait une pause un instant. Il retrouve bientôt son expression sèche habituelle, mais les coins de l'enveloppe sont froissés.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professeure principale",
@@ -443,7 +443,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...Je ne savais pas. Je savais pour les refus, mais pas que la formulation était exactement la même que celle que je viens de dire.*"
+        "text": "*L’expression rejet est restée gravée dans mes yeux. C'est exactement ce que je viens de dire.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Professeure principale",
@@ -459,7 +459,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "*La prof s'arrête. Vraiment. Pas une demi-seconde — trois secondes environ. Sa main serre plus fort le porte-bloc.*"
+        "text": "*Le professeur principal s'arrête. La main qui tient le presse-papiers prend de la force. Le bout du papier est légèrement courbé.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professeure principale",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professeure principale",
-        "text": "*La prof rit. Vraiment. Pas seulement les coins de la bouche — les yeux aussi. Le visage de sept ans d'autocensure qui se relâche pendant une seconde.*"
+        "text": "*Le professeur principal rit. Les coins des yeux se détendent avant les coins de la bouche et le porte-bloc descend sur le bureau.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professeure principale",

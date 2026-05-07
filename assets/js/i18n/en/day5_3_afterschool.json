@@ -13,7 +13,7 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*I can't easily say I'm sorry. That word can't hold everything I feel. So quietly, just to myself — Thank you.*"
+        "text": "*It’s not easy for me to say I’m sorry. I only raised my hand once in front of the school gate. Thank you.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Well, I figured. You were never going to follow my script anyway."
+        "text": "Well, I expected it. Because you didn’t move as I expected from the beginning."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
-        "text": "*The exclamation marks are alive and well. — Dain is Dain to the very end. That's her strength.*"
+        "text": "*The exclamation point is alive. Dain throws the volleyball high and catches it again.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -120,7 +120,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*My last steps split into two paths. The person I already made a promise to, and the feeling I couldn't keep pretending not to see.*"
+        "text": "*The last step splits into two. With someone I already promised, I ended up not being able to pass by the school gate.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
-        "text": "*The exclamation marks disappear. Her voice gets small. — Her eyes are filling up.*"
+        "text": "*Dain's lips tremble. I take a deep breath before answering.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
@@ -256,7 +256,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*I don't have anything prepared to say, but strangely, this time I don't want to run. Yuna doesn't rush me.*"
+        "text": "*I don't have anything prepared, but this time my foot doesn't move back. Yuna does not urge.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
@@ -363,7 +363,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*With no answer yet between us, our steps carried us to the park.*"
+        "text": "*Inconclusive steps continued toward the park.*"
     },
     "after5_confess_no": {
         "name": "{name}",

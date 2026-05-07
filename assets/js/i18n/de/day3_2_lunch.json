@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Mittagspause. Heute, ganz ungewöhnlich, sitzen alle drei an einem Tisch. Ich packe meine Lunchbox aus. Seoyeon setzt sich ganz selbstverständlich neben mich, Dain plumpst uns gegenüber hin, und Yuna schiebt sich aus der Ecke dazu, während sie an ihrem eigenen Brot knabbert.*"
+        "text": "*Mittagspause. Beim Öffnen der Brotdose versammeln sich drei Personen an einem Ort. Seoyeon sitzt neben ihm, Dain sitzt ihm gegenüber und Yuna schleicht sich herein und isst ihr Brot in der Ecke.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -147,7 +147,7 @@
     },
     "lunch3_expose_15": {
         "name": "{name}",
-        "text": "*Ich kann nichts sagen. Minsu hat recht.*"
+        "text": "*Der Mund fällt nicht. Minsu wendet den Kopf ab.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Keine Ausrufezeichen. — Aus Dains Sätzen sind die Ausrufezeichen verschwunden. Zum ersten Mal.*"
+        "text": "*Es gibt kein Ausrufezeichen. Das Ende von Dains Satz ist seltsam ruhig.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*Ich schlug vor, dass wir alles teilen. Ein Friedensangebot, das viel zu spät kam. Alle drei lächeln zwar, aber niemand streckt zuerst die Hand aus.*"
+        "text": "*Wir alle sagten, wir sollten es gemeinsam teilen. Alle drei lachen komisch, aber niemand meldet sich zuerst.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
@@ -270,7 +270,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna kommt am Flur vorbei und schaut in die Turnhalle. Dain lacht. Yuna beschleunigt ihre Schritte. In der nächsten Pause ist Yunas Platz leer.*"
+        "text": "*Yuna blickt vom Flur in die Turnhalle. Dain lächelt. Yuna geht weg, ohne etwas zu sagen. In der nächsten Pause ist Yunas Platz leer.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -315,11 +315,11 @@
     },
     "lunch3_meal_10_c": {
         "name": "{name}",
-        "text": "*Seoyeons Stäbchen halten inne. Sie fängt sich. Das Gesicht der Schülersprecherin kehrt zurück. — Ich weiß, dass es nicht okay ist. Es tut mir leid.*"
+        "text": "*Seoyeons Essstäbchen bleiben für einen Moment stehen. Das Gesicht des Studentenratspräsidenten kehrt bald zurück, aber das Eierbrötchen bleibt.*"
     },
     "lunch3_meal_10_d": {
         "name": "{name}",
-        "text": "*Alle zusammen?! Super!! Die Ausrufezeichen sind noch da. — Aber ihre Stimme ist einen halben Ton tiefer. Normalerweise hätte sie Stühle herangeschleppt, aber heute rührt sie sich nicht vom Fleck.*"
+        "text": "*Dain sagt „Alle zusammen?!“ und lacht. Normalerweise hätte ich einen Stuhl geschleppt, aber heute habe ich mich nicht von meinem Platz bewegt.*"
     },
     "lunch3_meal_10_e": {
         "name": "{name}",

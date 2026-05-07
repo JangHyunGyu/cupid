@@ -65,7 +65,7 @@
     },
     "confess_seo_yes_8": {
         "name": "{name}",
-        "text": "*Seoyeon says nothing. Her lips are trembling. Not the student council president — just a girl, standing there.*"
+        "text": "*Seoyeon doesn’t say anything. My lips are trembling. There is no clipboard or student council president armband.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -157,7 +157,7 @@
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*In front of Yuna, I don't need a long speech. She's the kind of person who reads between the lines.*"
+        "text": "*Speak less in front of Yuna. I feel like I'm being caught even blankly.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*The day my words ran longer than Yuna's. — A first.*"
+        "text": "*As soon as I finish speaking, even the dust in the room becomes quiet.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
@@ -177,11 +177,11 @@
     },
     "confess_yuna_yes_8": {
         "name": "{name}",
-        "text": "*Yuna's blank expression cracks. Her usual quiet voice disappears, replaced by the tiniest — almost inaudible — whisper. She grips her sleeve tight.*"
+        "text": "*Yuna clenches her sleeves tightly without looking in my direction.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*She grips her sleeve tight.*"
+        "text": "*The crumpled ends of the sleeves disappear into the palm.*"
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'So much.' — Dain is always like this. Short and honest. That's why I believe her.*"
+        "text": "*'Extremely'. The short answer is that Dain's hands grip the ball tighter.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

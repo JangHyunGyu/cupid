@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*S'il existe un monde où ce volume à 8h du matin est normal, Dain en serait la présidente.*"
+        "text": "*Si la tension est aussi forte à 8 heures du matin, je pense que la batterie va s'épuiser avant les funérailles.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -94,11 +94,11 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Les gens sont-ils des objets à revendiquer ? Le bord du presse-papiers de Seoyeon tape contre le bureau. Je n'ai pas pu dire non tout de suite.*"
+        "text": "*Le bout du presse-papiers de Seoyeon touche le bureau. J'ai raté le bon moment pour dire non.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Pause après le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrête. Regarde mon épaule. Une main se lève. Vers mon épaule.*"
+        "text": "*Temps de pause après la 1ère période. Je passe devant Seoyeon dans le couloir. Seoyeon s'arrête et regarde mon épaule. La main qui tient le presse-papiers apparaît en premier.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Lire. Elle vérifie même les bulletins de notes.*",
+        "text": "*Le regard vers le tiroir demeure. J'ai décidé de ne plus poser de questions sur les bulletins scolaires.*",
         "choices": [
             "Et vous ? Vous lisez quoi ?",
             "Oui, j'aime lire"
@@ -182,7 +182,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*Le tiroir. Elle vient de le regarder ? — Par l'ouverture, j'aperçois une liasse de papiers. On dirait des pages de manuscrit. La prof repousse le tiroir d'un geste naturel. Comme si de rien n'était.*"
+        "text": "*La tranche du manuscrit est visible à travers le tiroir légèrement ouvert. Le professeur principal pose la tasse de café et ferme le tiroir.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Professeure principale",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",
-        "text": "*Cachant sa bouche derrière sa tasse de café* ...Raté pour le poker face. Bon, file."
+        "text": "*couvre la bouche avec une tasse de café*... est-ce que tout est utilisé sur le visage? D'accord, allons-y."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professeure principale",
@@ -262,7 +262,7 @@
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*J'ai ri, mais — la remarque de Seoyeon reste en tête.*"
+        "text": "*J'en ai ri, mais le son du presse-papiers qui était tapé m'est venu à l'esprit un instant plus tard.*"
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Quelqu'un dont je m'inquiète'. — La prof s'inquiète pour Dain. Elle sait quelque chose ?*"
+        "text": "*'Celui qui s'inquiète'. Le professeur principal regarde le badge de Dain.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professeure principale",

@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Esquiva las preguntas con habilidad. Comemos un rato en silencio. La brisa es agradable. La vista de la escuela desde la azotea es — más amplia de lo que pensaba.*"
+        "text": "*Seoyeon come en lugar de responder. El viento es agradable. La escuela vista desde la azotea es más grande de lo que piensas.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -448,7 +448,7 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*Si la sigo molestando, me pondrá límites. Mejor finjo no haber visto nada.*"
+        "text": "*La etiqueta de la botella de agua gira al alcance de tu mano. Finge que no lo sabes y levanta tus palillos.*"
     },
     "lunch_dain_12_b": {
         "name": "Dain",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Un marcapáginas viejo asoma del libro de Yuna. Tiene algo escrito, pero no alcanzo a leerlo. Yuna posa la mano encima sin darse cuenta. Yo saco cualquier libro del estante más cercano.*"
+        "text": "*Hay un viejo marcapáginas en el escritorio de Yuna. La escritura es difícil de ver. Yuna pone su mano sobre él. Saco un libro al azar de un estante cercano.*"
     }
 }

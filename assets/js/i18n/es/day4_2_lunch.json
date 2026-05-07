@@ -73,7 +73,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Frente a la cafetería. Yuna apoyada en la pared. Vestido negro y un bolso pequeño cruzado. ¿Yuna era así? — Es la primera vez que la veo sin el uniforme.*"
+        "text": "*Frente a la cafetería. Yuna está parada contra la pared. Un vestido negro y un pequeño bolso cruzado. Como no hay uniforme escolar, las líneas del tatuaje son lo primero que llama la atención.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*\"Para esto no se necesitan las rodillas\". — Lo dijo con ligereza, pero pesa.*"
+        "text": "*'Porque no tengo que usar mis rodillas.' Dain dice con una sonrisa, pero mira sus rodillas reflejadas en el cristal de la ventana.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",

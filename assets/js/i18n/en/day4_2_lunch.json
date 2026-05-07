@@ -73,7 +73,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*In front of the cafe. Yuna is leaning against the wall. A black dress and a small crossbody bag. Did Yuna always look like this? — It's the first time I've seen Yuna outside of her uniform.*"
+        "text": "*In front of the cafe. Yuna is standing against the wall. A black dress and a small cross bag. Since there is no school uniform, the lines of the tattoo are what catches the eye first.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*Doesn't need knees. — She said it lightly, but there's weight behind it.*"
+        "text": "*'Because I don't have to use my knees.' Dain says with a smile, but takes a look at his knees reflected in the window glass.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",

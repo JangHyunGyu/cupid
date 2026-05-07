@@ -69,7 +69,7 @@
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*I just hope you don't treat that choice lightly.*"
+        "text": "*Who will I stand next to? I hope I don’t put it off this time*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -146,7 +146,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*I opened my eyes. Morning light seeps through the curtains. — Today's dream was a good one. I picked up my phone. Opened the gallery. Sojeong's photo. — I stopped scrolling and held it down.*"
+        "text": "*Open my eyes. Morning sunlight comes through the curtains. My palms are still warm. I took out my cell phone. Opened a gallery. Sojeong's photo. — Stopped scrolling, pressed and held*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*This time is different. If I see something wrong, I'll speak up. If I know, I'll act. I'll be clear about it, with one person. The gallery is empty now. The space where Sojeong's photo used to be feels sharper than the photo ever did.*"
+        "text": "*The gallery is empty. The place where Sojung’s photo was. A blank screen is rather clear. I will tell you when I see it. I will come forward if I know.*"
     },
     "night3_end": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*I just hope you don't treat that choice lightly.*"
+        "text": "*Me too, they hate reserve seats.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu said it. 'Saying no is also love.' Seoyeon said it. 'I won't be one of many.'*"
+        "text": "*Minsu said. 'Rejection is something you have to do.' Seoyeon said. ‘I don’t do one of many.’*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...Right. I need to start by saying no to my own past. — Deleted.*"
+        "text": "*...okay. I put my finger on the delete button. — pressed.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu said it. 'Rejection is also love.' Sojeong in the gallery is still smiling. Notepad #38 is still unsent. Only the send button is blue.*"
+        "text": "*Minsu said. 'Rejection is also something you have to do.' Sojung in the gallery is still smiling. Notepad number 38 has not been sent yet. Only the send button is blue.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*I closed my phone. The gallery is empty, and my mind is still a mess. — Still, one step forward.*"
+        "text": "*Covered the cell phone. An empty gallery space appears on a black screen.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",

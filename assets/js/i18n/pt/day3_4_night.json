@@ -57,7 +57,7 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Abri os olhos. A luz da manhã entra pelas cortinas. — O sonho de hoje foi bom. Peguei o celular. Abri a galeria. Foto da Sojeong. — Parei de rolar e deixei o dedo pressionado.*"
+        "text": "*Abra meus olhos. A luz do sol da manhã entra pelas cortinas. Minhas palmas ainda estão quentes. Peguei meu celular. Abriu uma galeria. Foto de Sojeong. — Parou de rolar, pressionou e segurou*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*...É isso. Eu preciso começar rejeitando o meu próprio passado. — Apaguei.*"
+        "text": "*...OK. Coloquei meu dedo no botão excluir. — pressionado.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
@@ -77,11 +77,11 @@
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Minsu disse. 'Rejeição também é amor.' Sojeong na galeria ainda está sorrindo. Nota #38 ainda não foi enviada. Apenas o botão enviar está azul.*"
+        "text": "*Minsu disse. 'Rejeição é algo que você tem que fazer.' Sojung na galeria ainda está sorrindo. O bloco de notas número 38 ainda não foi enviado. Apenas o botão enviar é azul.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Dessa vez é diferente. Se eu vir, vou falar. Se eu souber, vou agir. Pra uma pessoa, com certeza — A galeria tá vazia. O espaço onde a foto da Sojeong ficava. A tela vazia é mais nítida do que a foto jamais foi.*"
+        "text": "*A galeria está vazia. O lugar onde estava a foto de Sojung. Uma tela em branco é bastante clara. Eu vou te contar quando eu ver. Eu irei me apresentar se souber.*"
     },
     "night3_faithful_reflect_4_b": {
         "name": "{name}",
@@ -89,7 +89,7 @@
     },
     "night3_faithful_reflect_4_c": {
         "name": "{name}",
-        "text": "*Guardei o celular. A galeria tá vazia, minha cabeça ainda é uma bagunça. — Mesmo assim, um passo pra frente.*"
+        "text": "*Cobriu o celular. Um espaço vazio da galeria aparece em uma tela preta.*"
     },
     "night3_dream_3": {
         "name": "{name}",
@@ -129,11 +129,11 @@
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "*espero que cê entenda o peso de escolher do lado de quem ficar*"
+        "text": "*Eu também, eles odeiam assentos reserva.*"
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "*espero que cê não trate essa escolha como qualquer coisa*"
+        "text": "*De quem estarei ao lado? Espero não adiar desta vez*"
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
@@ -222,7 +222,7 @@
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu disse. 'Recusar também é amor.' Seoyeon disse. 'Eu não faço papel ambíguo.'*"
+        "text": "*Minsu disse. 'Rejeição é algo que você tem que fazer.' Seoyeon disse. ‘Eu não faço nenhum de muitos.’*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",

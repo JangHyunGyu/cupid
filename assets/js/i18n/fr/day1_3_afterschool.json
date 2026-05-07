@@ -61,7 +61,7 @@
     },
     "after_miss_yuna_4": {
         "name": "{name}",
-        "text": "*Et elle continue de marcher. C’est tout. Pourtant — quelque chose chez elle reste gravé dans mon esprit.*"
+        "text": "*Et puis il repart. Seul le pouce touchant le coin du marque-page est visible.*"
     },
     "after_miss_seoyeon_1": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
-        "text": "*Elle le dit comme si c'était professionnel, mais cette phrase-là était un peu plus personnelle que ça.*"
+        "text": "*Le professeur principal regarde les documents, mais le bout du presse-papiers ne bouge plus.*"
     },
     "after_homeroom_ok_5": {
         "name": "Professeure principale",
@@ -146,7 +146,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
-        "text": "*La prof se retourne vers son bureau. Je la salue brièvement et referme la porte de la salle des profs, mais la conversation me reste plus longtemps que prévu. — Ce n'était pas seulement le devoir.*"
+        "text": "*Le professeur principal se tourne à nouveau vers le bureau. Dites bonjour brièvement et fermez la porte du bureau. L’histoire du jus de fruits des distributeurs automatiques persiste dans mes oreilles.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professeure principale",
@@ -280,7 +280,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Infirmière",
-        "text": "Si ça recommence à tourner, viens me voir. L'infirmerie est toujours ouverte. N'attends juste pas d'être à bout pour venir. Ça, ça m'inquiète."
+        "text": "Si vous ressentez à nouveau des vertiges, revenez. Parce que la salle de santé est toujours ouverte. Au lieu de cela, retenez-vous et n’arrivez pas en retard. Je pourrais te gronder d'abord."
     },
     "after_nurse_enter_12": {
         "name": "Infirmière",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Elle fait un signe de la main et repart en courant. — En freinant, elle a brièvement saisi son genou droit. Une demi-seconde. Elle a aussitôt retiré sa main, mais je l'ai vu.*"
+        "text": "*Agitez vos mains et courez. Lorsque vous vous arrêtez brusquement, saisissez votre genou droit et relâchez immédiatement votre main.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Intérêt pédagogique'. — Le genre de personne qui emballe sa bienveillance dans des termes professionnels.*"
+        "text": "*'Intérêt pédagogique'. Même après avoir dit cela, le professeur principal ne regarde que le coin de la feuille de présence.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -398,7 +398,7 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Tout à l'heure en classe, elle avait dit 'je retiens les noms du premier coup'. — Le dire deux fois, ça veut dire quelque chose.*"
+        "text": "*Le deuxième nom appelé vous suit jusqu'au bout du couloir.*"
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
@@ -490,15 +490,15 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Infirmière",
-        "text": "Ce que tu as dit tout à l'heure — merci de t'inquiéter pour moi. C'est la première fois qu'un patient me dit ça."
+        "text": "Ce que j'ai dit plus tôt: merci pour votre inquiétude. Je n’aurais jamais pensé entendre ces mots de la part d’un patient."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
-        "text": "*Elle semble surprise qu'un patient s'inquiète pour elle. — Elle a toujours été celle qui prend soin des autres, jamais celle dont on prend soin.*"
+        "text": "*Le professeur de santé pose le gobelet d'eau et se met à rire.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Infirmière",
-        "text": "Tu as dit que c'était douillet, tout à l'heure ? — Ça m'a fait plaisir, en vrai."
+        "text": "Tu as dit que c'était confortable plus tôt, n'est-ce pas? — Je me souviens encore de ces mots."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Je la salue de la main avec un petit rire. Je remarque un pansement sur le dos de sa main. — Une drôle d'infirmerie. Le bon genre de drôle.*"
+        "text": "*Souriez légèrement et saluez. Regardez le dos de votre main avec le bracelet. L’odeur du désinfectant vous accompagne plus longtemps que prévu.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

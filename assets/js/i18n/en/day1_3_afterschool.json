@@ -61,7 +61,7 @@
     },
     "after_miss_yuna_4": {
         "name": "{name}",
-        "text": "*And she walks on. That's it. But — something about her stays in my mind.*"
+        "text": "*And then walks again. Only the thumb touching the corner of the bookmark is visible.*"
     },
     "after_miss_seoyeon_1": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
-        "text": "*She says it like it's just work talk, but that one came out a little more personal.*"
+        "text": "*The homeroom teacher looks down at the documents, but the end of the clipboard no longer moves.*"
     },
     "after_homeroom_ok_5": {
         "name": "Homeroom Teacher",
@@ -146,7 +146,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
-        "text": "*She turns back toward her desk. I say a short goodbye and close the faculty office door, but the conversation lingers longer than I expected. — That wasn't just duty.*"
+        "text": "*The homeroom teacher turns to the desk again. Say hello briefly and close the office door. The story of vending machine juice lingers in my ears.*"
     },
     "after_homeroom_honest_1": {
         "name": "Homeroom Teacher",
@@ -280,7 +280,7 @@
     },
     "after_nurse_enter_11": {
         "name": "School Nurse",
-        "text": "If you get dizzy again, come back. My door's always open. Just don't try to tough it out until it's too late. That's what worries me."
+        "text": "If you feel dizzy again, come back. Because the health room is always open. Instead, hold back and don’t come late. I might scold you first."
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*She waves and runs off. — When she stopped short, her hand went to her right knee for half a second. She pulled it away immediately, but I saw it.*"
+        "text": "*Wave your hands and run. When stopping suddenly, grab your right knee and immediately release your hand.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Educational concern.' — Another one who dresses up her feelings.*"
+        "text": "*'Educational interest'. Even after saying that, the homeroom teacher only looks at the corner of the attendance sheet.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -398,7 +398,7 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Earlier in class she said 'I memorize names on the first try.' — Saying it twice means something.*"
+        "text": "*The second name called follows you to the end of the hallway.*"
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
@@ -490,15 +490,15 @@
     },
     "after_nurse_enter_11_f": {
         "name": "School Nurse",
-        "text": "That thing you said earlier — thanks for worrying about me. First time I've heard that from a patient."
+        "text": "What I said earlier — thank you for your concern. I never thought I would hear those words from a patient."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
-        "text": "*She looks a little unused to having concern directed back at her. — She seems more familiar with being the one who takes care of people.*"
+        "text": "*The health teacher puts down the water cup and starts laughing.*"
     },
     "after_nurse_enter_11_h": {
         "name": "School Nurse",
-        "text": "You said it was cozy earlier? — Hearing that actually made me happy."
+        "text": "You said it was cozy earlier, right? — I still remember those words."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*I wave goodbye with a light laugh. I notice a band-aid on the back of her hand. — A strange nurse's office. The good kind of strange.*"
+        "text": "*Smile lightly and wave. Look at the back of your hand with the band on. The smell of disinfectant sticks with you longer than expected.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

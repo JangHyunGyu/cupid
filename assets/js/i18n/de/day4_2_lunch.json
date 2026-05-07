@@ -73,7 +73,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Vor dem Café. Yuna lehnt an der Wand. Ein schwarzes Kleid und eine kleine Umhängetasche. Sah Yuna schon immer so aus? — Ich sehe Yuna zum ersten Mal ohne Schuluniform.*"
+        "text": "*Vor dem Café. Yuna steht an der Wand. Ein schwarzes Kleid und eine kleine Umhängetasche. Since there is no school uniform, the lines of the tattoo are what catches the eye first.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'Braucht man keine Knie.' — Sie sagte es leichthin, aber dahinter steckt Gewicht.*"
+        "text": "*'Weil ich meine Knie nicht benutzen muss.' Dain says with a smile, but takes a look at his knees reflected in the window glass.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",

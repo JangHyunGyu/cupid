@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Avril. Les pétales de cerisier virevoltent dans l'air. Mon uniforme est encore raide. L'odeur discrète de l'herbe fraîche. À partir d'aujourd'hui, je suis élève dans ce lycée. Transféré. C'est la première fois.*"
+        "text": "*avril. Les fleurs de cerisier flottent. L'uniforme scolaire est toujours raide. Il y a une légère odeur d'herbe. Le document de transfert est plié et pressé dans le sac.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Un portail d'école inconnu. Les élèves passaient par petits groupes. Mon uniforme était le seul à garder encore ses plis de repassage. Près du portail, une fille aux longs cheveux noirs remonta ses lunettes et vérifia l'heure. Quand je me suis arrêté, elle a levé la tête aussi.*"
+        "text": "*Devant la porte inconnue de l'école. Seul mon uniforme scolaire a encore des lignes de pliage. À côté du portail de l’école, une étudiante aux longs cheveux noirs ajuste ses lunettes et vérifie l’heure. Quand je m'arrête, elle lève aussi les yeux.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -262,7 +262,7 @@
     },
     "hallway_6_c": {
         "name": "{name}",
-        "text": "*Une demi-seconde d'hésitation. Sûrement rien — mais ça reste.*"
+        "text": "*Le bord du presse-papiers bouge à nouveau un battement plus tard.*"
     },
     "hallway_7": {
         "name": "Seoyeon",

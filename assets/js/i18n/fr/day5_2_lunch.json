@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*Seoyeon sort quelque chose de son sac. — Une clé. La clé du toit.*"
+        "text": "*Le porte-clés tinte à l'intérieur du sac de Seoyeon. C'est la clé du toit.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "{name}",
-        "text": "*La main qui tend la clé. Nos auriculaires se frôlent. — Elle ne dit jamais « je te le donne » en tendant les choses. Des actes plutôt que des mots. Depuis le début.*"
+        "text": "*Remise des clés en mains propres. Les petits doigts se touchent légèrement. Seoyeon lâche sa main au lieu de dire \"Je vais te la donner.\"*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "À chaque fois que je viens ici, j'ai l'impression que le temps ralentit un peu."
+        "text": "Quand je viens ici, les bruits extérieurs me semblent un peu lointains."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -97,7 +97,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Elle me tend le cahier. Sa main tremble légèrement. — C'est la première fois que Yuna donne directement son écriture à quelqu'un.*"
+        "text": "*Tend la note. Mes mains tremblent légèrement. Yuna ne peut pas placer le coin de la couverture jusqu'au bout.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Elle râle tout en riant. — C'est ça, Dain. Quelqu'un qui s'amuse même en perdant. Dain pose le ballon sur le terrain. Lentement.*"
+        "text": "*Sourire même en colère. Dain pose le ballon de volley sur le terrain. lentement.*"
     },
     "tour_dain_10": {
         "name": "Dain",

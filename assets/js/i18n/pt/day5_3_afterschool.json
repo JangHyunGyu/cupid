@@ -21,7 +21,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Já imaginava. Você nunca andou segundo o meu cálculo, desde o começo."
+        "text": "Bem, eu esperava por isso. Porque você não se moveu como eu esperava desde o início."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
-        "text": "*A exclamação continua viva. — Dain é Dain até o fim. Isso é força, nesse caso.*"
+        "text": "*O ponto de exclamação está vivo. Dain joga a bola de vôlei para o alto e a pega novamente.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*Pedir desculpa não sai fácil. Não é o tipo de sentimento que esse pedido resolve. Só por dentro, bem devagar. Valeu.*"
+        "text": "*Não é fácil para mim pedir desculpas. Só levantei a mão uma vez na frente do portão da escola. Obrigado.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -120,7 +120,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*Meus últimos passos se abrem em duas direções. A pessoa com quem eu já prometi, e o que eu no fim das contas não consegui fingir que não sentia.*"
+        "text": "*A última etapa se divide em duas. Com alguém que já prometi, acabei não conseguindo passar pelo portão da escola.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
@@ -207,7 +207,7 @@
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
-        "text": "*A exclamação some. A voz fica pequena. — Os olhos enchem.*"
+        "text": "*Os lábios de Dain tremem. Respiro fundo antes de responder.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
@@ -244,7 +244,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*Não ensaiei nada pra dizer, mas, estranho, dessa vez não quero fugir. A Yuna não me apressa.*"
+        "text": "*Não tenho nada preparado, mas dessa vez meu pé não recua. Yuna não insiste.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
@@ -351,7 +351,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Com a conversa suspensa assim, os passos acabaram nos levando até o parque.*"
+        "text": "*Passos inconclusivos continuaram em direção ao parque.*"
     },
     "after5_confess_no": {
         "name": "{name}",
