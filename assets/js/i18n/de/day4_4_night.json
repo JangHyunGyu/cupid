@@ -17,7 +17,7 @@
     },
     "wall_seo_pre_high_2": {
         "name": "{name}",
-        "text": "*Seoyeon spricht zuerst. Freiwillig. — Das ist das erste Mal.*"
+        "text": "*Seoyeons Atem ist zuerst über das Handy zu hören.*"
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
@@ -41,7 +41,7 @@
     },
     "wall_seo_3": {
         "name": "{name}",
-        "text": "*Seoyeon sitzt auf einer Parkbank. Ihre Augen sind rot.*"
+        "text": "*Seoyeon sitzt auf einer Parkbank. Die Enden meines Make-ups sind etwas verschmiert.*"
     },
     "wall_seo_4": {
         "name": "{name}",
@@ -53,7 +53,7 @@
     },
     "wall_seo_6": {
         "name": "{name}",
-        "text": "*Ich setze mich neben sie. Seoyeon starrt geradeaus. Lange Zeit.*"
+        "text": "*Setz dich neben mich. Seoyeon blickt nur nach vorne. Das Licht der Straßenlaterne hängt über der Brille.*"
     },
     "wall_seo_7": {
         "name": "Seoyeon",
@@ -69,7 +69,7 @@
     },
     "wall_seo_9": {
         "name": "{name}",
-        "text": "*Seoyeon lächelt. — Nicht ihre gewohnte Gelassenheit. Ein Lächeln, das etwas verbirgt.*"
+        "text": "*Seoyeon lacht. Das Lachen endet schnell.*"
     },
     "wall_seo_9_b": {
         "name": "Seoyeon",
@@ -121,7 +121,7 @@
     },
     "wall_seo_hug_choice": {
         "name": "{name}",
-        "text": "*Seoyeon weint. So habe ich sie noch nie gesehen.*",
+        "text": "*Seoyeon weint. Das Make-up auf meinem Handrücken verschmiert.*",
         "choices": [
             "Sie in den Arm nehmen",
             "Ihr meinen kleinen Finger reichen"
@@ -227,7 +227,7 @@
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
-        "text": "*Wir setzten uns nebeneinander auf die Bank. Seoyeon lehnt sich leicht an meine Schulter.*"
+        "text": "*Wir saßen Seite an Seite auf der Bank. Seoyeon lehnt sich leise an deine Schulter.*"
     },
     "wall_seo_skin60_2": {
         "name": "Seoyeon",
@@ -243,7 +243,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "{name}",
-        "text": "*Nachdem ich eine ganze Weile hinter der Schule gestanden hatte, bin ich schließlich nach Hause zurückgekehrt. Denn jetzt ist Seoyeons Nacht. Aber meine Füße sind schwer.*"
+        "text": "*Nachdem ich eine Weile hinter der Schule gestanden hatte, kehrte ich nach Hause zurück. Die Lichter des Fitnessstudios bleiben in meinen Augenlidern.*"
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "wall_dain_pre_high_2": {
         "name": "{name}",
-        "text": "*Dain ist ungewöhnlich still. — Ein Ton, den ich noch nie gehört habe.*"
+        "text": "*Dain ist leiser als sonst. Das Ende der Stimme berührt den Boden.*"
     },
     "wall_dain_pre_low_1": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "wall_dain_13": {
         "name": "{name}",
-        "text": "*Ich setze mich wortlos neben sie. Dain schließt den Mund. Langes Schweigen.*"
+        "text": "*Setzt sich neben mich, ohne etwas zu sagen. Dain schließt den Mund. Die Lichter im Fitnessstudio summen leise.*"
     },
     "wall_dain_14": {
         "name": "Dain",
@@ -387,11 +387,11 @@
     },
     "wall_dain_20_b": {
         "name": "Dain",
-        "text": "...Ich dachte, ich sterbe."
+        "text": "...Ich konnte bis zum Schluss nicht atmen."
     },
     "wall_dain_21": {
         "name": "Dain",
-        "text": "Heute auch. Als ich beim Date herumgelaufen bin. Als ich neben dir fröhlich getan habe. Mein Knie hat geschrien."
+        "text": "Heute. Wenn man bei einem Date herumläuft. Wenn ich vorgebe, neben dir hell zu sein. Meine Knie konnten sich nicht halten."
     },
     "wall_dain_22": {
         "name": "Dain",
@@ -412,7 +412,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*Ich blieb neben ihr. Wir schwiegen beide. — So lange still neben Dain zu sein, ist das erste Mal.*"
+        "text": "*Ich saß einfach neben ihm. Beide sind sprachlos. Nur die Spitzen von Dains Turnschuhen zittern langsam.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "{name}",
@@ -432,7 +432,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Echt witzig, oder? Seit ich fünf bin, stehe ich jeden Tag auf diesem Feld... und jetzt soll Schluss sein."
+        "text": "Es ist wirklich lustig, nicht wahr? Ich bin seit meinem 5. Lebensjahr jeden Tag auf diesem Platz... aber jetzt muss ich über andere Dinge nachdenken."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -452,7 +452,7 @@
     },
     "wall_dain_cry_3": {
         "name": "Dain",
-        "text": "Ganz allein... jeden Morgen mein Knie bandagiert..."
+        "text": "Allein, jeden Morgen mein Knie verbinden..."
     },
     "wall_dain_cry_4": {
         "name": "Dain",
@@ -460,11 +460,11 @@
     },
     "wall_dain_cry_5": {
         "name": "Dain",
-        "text": "Jeden Morgen hab ich das gesehen... diese zwei Ausrufezeichen... und mich gezwungen zu lächeln..."
+        "text": "Jeden Morgen, wenn ich diesen Wecker sehe, zwinge ich mich dazu, die Augenbrauen hochzuziehen..."
     },
     "wall_dain_cry_6": {
         "name": "{name}",
-        "text": "*Sie hat zwei Ausrufezeichen in diese Weckernachricht geschrieben — weil eines nicht einmal gereicht hätte, sich selbst zu täuschen. Ich blieb neben ihr, bis ihr Weinen verebbt war.*"
+        "text": "*Dain schaltet sein Telefon aus. „Heute wieder lächeln!!“ verschwindet in einem schwarzen Bildschirm. Nur die Lichter der Turnhalle flackerten weiß, bis das Weinen nachließ.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
@@ -484,11 +484,11 @@
     },
     "wall_dain_lastspike_3_c": {
         "name": "Dain",
-        "text": "Aber es fühlt sich seltsam befreiend an."
+        "text": "Aber es ist lustig, es ist ein bisschen besser."
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...haha Tut weh. Aber irgendwie fühlt es sich gut an. Weil der letzte Schlag von {name}s Zuspiel kam."
+        "text": "...lol, es tut weh. Aber da es ein Wurf ist, ist es etwas besser."
     },
     "wall_dain_lastspike_4_b": {
         "name": "{name}",
@@ -504,7 +504,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "{name}",
-        "text": "*Ein Satz von Dain ohne ein einziges Ausrufezeichen. — Das allein ist das Gewicht des Abschieds.*"
+        "text": "*Es gibt kein Ausrufezeichen. Dain legt den Volleyball ab und geht als Erster.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -549,7 +549,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*Es ist Yuna. Sie sitzt allein. — Mein Herz rutscht in die Hose. Yuna hat mir heute nicht geschrieben. — Es tut mir leid.*"
+        "text": "*Es ist Yuna. Wenn ich alleine sitze, bleiben meine Füße stehen. Heute gab es keine Nachricht von Yuna.*"
     },
     "wall_dain_glimpse_4": {
         "name": "{name}",
@@ -601,7 +601,7 @@
     },
     "wall_yuna_7": {
         "name": "{name}",
-        "text": "*Ein Brief im Umschlag. — „An Yuna. Es tut mir leid. Ich muss aus Gründen gehen, die ich nicht erklären kann. — Junho Lee“*"
+        "text": "*Brief im Umschlag. – „An Yuna. Entschuldigung. Es ist etwas passiert, worüber ich nicht sprechen konnte. — Junho Lee'*"
     },
     "wall_yuna_8": {
         "name": "{name}",
@@ -621,7 +621,7 @@
     },
     "wall_yuna_11": {
         "name": "Yuna",
-        "text": "Er war der Erste. „Mir hat gefallen, was du geschrieben hast“ — diese Worte. Für mich war das der Beweis, dass ich existiere."
+        "text": "Es war mein erstes Mal als Senior. „Mir hat Ihr Schreiben gefallen“ – allein aufgrund dieses einen Kommentars fühlte es sich an, als wäre ich an diesem Tag im Unterricht."
     },
     "wall_yuna_12": {
         "name": "{name}",
@@ -673,7 +673,7 @@
     },
     "wall_yuna_16_b": {
         "name": "{name}",
-        "text": "*Yuna umklammert ihren Ärmel fest. Ihre Sätze werden immer länger.*"
+        "text": "*Yuna hält ihren Ärmel fest. Während ich zu Atem komme, drückt sich der Buchrücken in meine Handfläche.*"
     },
     "wall_yuna_choice": {
         "name": "{name}",
@@ -735,7 +735,7 @@
     },
     "wall_yuna_sub_2": {
         "name": "{name}",
-        "text": "*Yuna lächelte leise. Unbeholfen, aber aufrichtig.*"
+        "text": "*Yuna lachte leise. Die Mundwinkel können nicht lange halten und fallen herunter.*"
     },
     "wall_yuna_reject_1": {
         "name": "Yuna",
@@ -759,7 +759,7 @@
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Unter der Straßenlaterne vor dem Schultor. Seoyeon stand dort. Hält ihr Handy, tippt etwas, löscht es. Tippt, löscht. Das Leuchten des Bildschirms bleibt nur auf ihrer Brille.*"
+        "text": "*Unter der Straßenlaterne vor dem Schultor. Seoyeon stand. Ich nehme mein Telefon, schreibe etwas und lösche es dann. Schreiben Sie es noch einmal und löschen Sie es. Die Bildschirmbeleuchtung bleibt nur auf der Brille.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "{name}",
@@ -767,11 +767,11 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",
-        "text": "*Nachdem ich mich eine Weile nicht von hinter der Schule lösen konnte, bin ich schließlich nach Hause zurückgekehrt. Die Worte, die ich heute gehört hatte, waren alle nicht leicht. Deshalb bleiben sie länger.*"
+        "text": "*Nachdem ich den hinteren Teil der Schule eine Zeit lang nicht verlassen konnte, kehrte ich nach Hause zurück. Das Handy in meiner Tasche ist leise.*"
     },
     "day4_night_regret": {
         "name": "{name}",
-        "text": "*...Ich hätte es heute sagen sollen. Im Chatfenster steht ein halb getippter Satz. Der Cursor blinkt am Ende.*"
+        "text": "*Der von Ihnen eingegebene Satz bleibt im Chatfenster erhalten. Am Ende blinkt der Cursor.*"
     },
     "day4_night_regret_msg_branch": {
         "name": "System",

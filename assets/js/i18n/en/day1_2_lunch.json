@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Expert deflection. We eat in quiet for a while. The breeze feels nice up here. The view of the school from the rooftop — wider than I expected.*"
+        "text": "*Seoyeon eats instead of answering. The wind is nice. The school seen from the rooftop is bigger than you think.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -448,7 +448,7 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*Tease any more and she'll shut this down. Better to let it slide.*"
+        "text": "*The water bottle label rotates at your fingertips. Pretend you don’t know and raise your chopsticks.*"
     },
     "lunch_dain_12_b": {
         "name": "Dain",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*An old bookmark is tucked into Yuna's book. Something is written on it, but I can't quite make it out. Yuna rests her hand over it without thinking. I pull a random book from the nearest shelf.*"
+        "text": "*There is an old bookmark on Yuna's desk. The writing is hard to see. Yuna puts her hand on it. I take out a random book from a nearby shelf.*"
     }
 }

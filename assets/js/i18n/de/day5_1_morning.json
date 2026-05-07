@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*Fünfter Tag. Es ist Sonntag, aber es gibt eine Schulveranstaltung. Die Schuluniform ist bequemer geworden. — Das liegt an diesen Leuten. Ich weiß es.*"
+        "text": "*Fünfter Tag. Es ist Sonntag, aber es gibt eine Schulveranstaltung. Schuluniformen sind bequemer geworden. Die Ärmelenden kratzen nicht mehr an den Handgelenken.*"
     },
     "morning5_mood_check": {
         "name": "System",
@@ -99,7 +99,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "Schulkrankenschwester",
-        "text": "Oh? {name}. — Der letzte Tag. Der letzte Tag des Events. Fünf Tage. — Ging schnell."
+        "text": "Äh? {name}. Es ist bereits der letzte Tag. Sobald die Veranstaltung vorbei ist, ist sie wirklich vorbei."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "{name}",
-        "text": "*Sie hält inne. — Dann lächelt sie. Kein trockenes Lächeln. Ein warmes.*"
+        "text": "*Der Klassenlehrer hält einen Moment inne. Diesmal verdeckt die Anwesenheitsliste nicht das Gesicht.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Klassenlehrerin",
@@ -279,7 +279,7 @@
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
-        "text": "*Verlegene Stille. — Bis gestern war es selbstverständlich, aber heute fühlt sich etwas anders an.*"
+        "text": "*Die Stille, die bis gestern selbstverständlich schien, hängt jetzt zwischen Pappbechern.*"
     },
     "hidden_nurse_d5_4_d": {
         "name": "Schulkrankenschwester",
@@ -307,7 +307,7 @@
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "*Die Schulkrankenschwester hält inne. Ihre Stimme wird einen Ton tiefer.*"
+        "text": "*Der Gesundheitslehrer hält einen Moment inne. Das Lachen verschwindet zuerst.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Schulkrankenschwester",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss.' — Dieselben Worte wie bei der Klassenlehrerin. Jetzt nicht, aber irgendwann. Der Tag, an dem der Titel 'Lehrerin' abgelegt wird.*"
+        "text": "*'Nach dem Abschluss'. Es ist ein geschlossenes Wort, aber es bleibt am Handrücken hängen wie das Ende eines Bandes.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Schulkrankenschwester",
@@ -339,7 +339,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*Ihre Stimme wurde einen Ton tiefer. Jede Verspieltheit aus dem Gesicht verschwunden. — So kommt die Aufrichtigkeit dieser Person immer. Die Schulkrankenschwester lacht — und hält inne. Schließt den Mund.*"
+        "text": "*Der Gesundheitslehrer hört auf zu lachen. Der Blick hinter der Brille schwankt für einen Moment.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Schulkrankenschwester",
@@ -351,7 +351,7 @@
     },
     "hidden_nurse_d5_choice_b_e": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss.' — Sie überschreitet die Grenze nicht. Aber sie hat ihre Nummer direkt davor abgelegt.*"
+        "text": "*'Nach dem Abschluss'. Die Telefonnummer befindet sich in der Mitte der Banderole.*"
     },
     "hidden_nurse_d5_choice_b_f": {
         "name": "Schulkrankenschwester",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
-        "text": "*Die Lehrerin hält inne. — Und dann kehrt ihr gewohnt trockener Ausdruck zurück. Zu schnell.*"
+        "text": "*Der Klassenlehrer hält einen Moment inne. Bald nimmt er wieder seinen gewohnt trockenen Gesichtsausdruck an, aber die Ecken des Umschlags sind zerknittert.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
@@ -443,7 +443,7 @@
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*...Ich wusste es nicht. Von den gescheiterten Debüts wusste ich, aber nicht, dass die Absage genau das war, was ich gerade gesagt habe.*"
+        "text": "*Der Ausdruck „Ablehnung“ ist mir in den Augen hängengeblieben. Es ist genau das, was ich gerade gesagt habe.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Klassenlehrerin",
@@ -459,7 +459,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "*Die Lehrerin hält inne. Wirklich. Nicht eine halbe Sekunde — eher drei. Ihre Hand am Klemmbrett spannt sich an.*"
+        "text": "*Der Klassenlehrer bleibt stehen. Die Hand, die das Klemmbrett hält, erfordert Kraft. Das Ende des Papiers ist leicht gebogen.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Klassenlehrerin",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin lacht. Wirklich. Nicht nur die Mundwinkel — auch die Augen. Das Gesicht von sieben Jahren Selbstzensur, die sich für eine Sekunde lockern.*"
+        "text": "*Der Klassenlehrer lacht. Die Augenwinkel entspannen sich vor den Mundwinkeln, und das Klemmbrett landet auf dem Schreibtisch.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Klassenlehrerin",

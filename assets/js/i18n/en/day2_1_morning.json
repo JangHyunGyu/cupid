@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*If there's a planet where this kind of volume at 8 a.m. is normal, Dain's the president.*"
+        "text": "*If the tension is this high at 8 a.m., I think the battery will run out before the funeral.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -94,11 +94,11 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Are people objects to be claimed? The edge of Seoyeon's clipboard taps against the desk. I couldn't say no right away.*"
+        "text": "*The end of Seoyeon’s clipboard touches the desk. I missed the right time to say no.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Break after first period. I pass Seoyeon in the hallway. She stops. Looks at my shoulder.*"
+        "text": "*Break time after 1st period. I pass by Seoyeon in the hallway. Seoyeon stops and looks at my shoulder. The hand holding the clipboard comes up first.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Reading. So she even checks report cards.*",
+        "text": "*The gaze toward the drawer still remains. I decided not to ask any more questions about report cards.*",
         "choices": [
             "What about you? What do you read?",
             "I do like reading."
@@ -182,7 +182,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*The drawer. Did she just glance at it? — Through the crack I can see a stack of papers. Looks like manuscript pages.*"
+        "text": "*The edge of the manuscript is visible through the slightly open drawer. The homeroom teacher puts down the coffee cup and pushes the drawer closed.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Homeroom Teacher",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Homeroom Teacher",
-        "text": "*Hides behind her coffee cup* ...Poker face failed. Fine. Get out of here."
+        "text": "*covers mouth with coffee cup*...is it all used on the face? Okay, let's go."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Homeroom Teacher",
@@ -262,7 +262,7 @@
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*Laughed it off, but — Seoyeon's remark lingers.*"
+        "text": "*I laughed it off, but the sound of the clipboard being tapped came to mind a beat later.*"
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Someone I worry about.' — The teacher worries about Dain. Does she know something?*"
+        "text": "*'The one who is worried'. The homeroom teacher glances towards Dain’s name tag.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Homeroom Teacher",

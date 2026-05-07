@@ -41,7 +41,7 @@
     },
     "perfect_seo_3": {
         "name": "Seoyeon",
-        "text": "...This face — only you get to see it."
+        "text": "...Even when you have this face, don't run away."
     },
     "perfect_seo_4": {
         "name": "Seoyeon",
@@ -57,7 +57,7 @@
     },
     "perfect_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*I walked the same road every morning. It wasn't five days — every moment beside Seoyeon was everything.*"
+        "text": "*I walked the same path every morning. Next to Seoyeon, the same road had a different expression every time.*"
     },
     "perfect_epilogue_bridge_seo": {
         "name": "System",
@@ -81,7 +81,7 @@
     },
     "bitter_seo_2": {
         "name": "Seoyeon",
-        "text": "...I thought we'd make it work. We were both just one step short, I guess."
+        "text": "...I thought we'd be fine. I guess you and I are both one step late."
     },
     "bitter_seo_2_b": {
         "name": "{name}",
@@ -109,7 +109,7 @@
     },
     "true_seo_5": {
         "name": "Seoyeon",
-        "text": "...I know. But it took five days to believe that."
+        "text": "...know. But it took some time to believe it."
     },
     "true_seo_6": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
-        "text": "*I sat in the same seat every day. It wasn't five days — every silence shared with Yuna was everything.*"
+        "text": "*I sat in the same place every day. The sound of Yuna turning the pages was also slightly different every day.*"
     },
     "perfect_epilogue_bridge_yuna": {
         "name": "System",
@@ -189,7 +189,7 @@
     },
     "bitter_yuna_1": {
         "name": "{name}",
-        "text": "*I confessed. Yuna nodded. But that nod felt more like trying than certainty. About a month later, a note appeared in my locker. 'Let's talk.'*"
+        "text": "*I confessed. Yuna nodded, but her fingers continued to rub the end of the bookmark. About a month later, a note was placed in my locker. ‘Let’s talk.’*"
     },
     "bitter_yuna_2_library": {
         "name": "Yuna",
@@ -237,7 +237,7 @@
     },
     "true_yuna_5_b": {
         "name": "{name}",
-        "text": "*Yuna pauses. — Smiles. A soundless smile I've never seen before.*"
+        "text": "*Yuna pauses. Only the corners of the mouth raise quietly.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -301,7 +301,7 @@
     },
     "perfect_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*Dain became a sports commentator. She smiles in front of the camera. But this time it's a real smile.*"
+        "text": "*Dain became a sports commentator. Smiling in front of the camera too. This time, I don’t put emphasis on the end of my words.*"
     },
     "perfect_epilogue_3_dain": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     },
     "bitter_dain_1": {
         "name": "{name}",
-        "text": "*I confessed. Dain grinned and said she was happy. But that grin was the same kind she always wore. — About a month later, I got a text asking to meet in front of the gym.*"
+        "text": "*I confessed. Dain smiled good-naturedly. It was bright like gym lights, but it didn't last long. About a month later, I received a text message telling me to wait in front of the gym.*"
     },
     "bitter_dain_2": {
         "name": "Dain",
@@ -321,7 +321,7 @@
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*I left the gym. It's raining. — The exclamation marks came back, but the last sentence ended with a period.*"
+        "text": "*I left the gym. It's raining. Even after the door closed, the last ‘I’m sorry’ lingered in my ears.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -426,7 +426,7 @@
     },
     "alone_2_b": {
         "name": "{name}",
-        "text": "*The room is eerily quiet. The voices that were still ringing in my ears fade with the click of the door. Cherry blossoms fall outside the window. The same ones that brushed my nose five days ago are now scattering in the wind.*"
+        "text": "*The room is quiet. Behind the sound of the door closing, voices fade away all at once. The cherry blossoms outside the window are scattered in the wind.*"
     },
     "alone_4": {
         "name": "{name}",
@@ -478,7 +478,7 @@
     },
     "good_1_seo_c": {
         "name": "{name}",
-        "text": "*Her words are short, but our steps fall into sync. For today, that feels like enough.*"
+        "text": "*Seoyeon slows down by half a step without saying anything. I wait until my shoulders are level.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
@@ -542,7 +542,7 @@
     },
     "good_5_yuna": {
         "name": "{name}",
-        "text": "*Even as we left the rooftop and headed down the stairs, I felt the same. It's okay if it takes more time. This time, I want to read it through to the end and say everything through to the end.*"
+        "text": "*Go out the rooftop door and come down the stairs. The steps are slow but do not stop. This time, I will read to the end and speak to the end.*"
     },
     "good_epilogue_1_yuna": {
         "name": "{name}",
@@ -614,11 +614,11 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Even after I walked away, those words still rang in my ears. \"...Thank you. Really. But I'm not there yet — I guess five days was just too short.\"*"
+        "text": "*Even after walking a few steps, the last words remain on the phone screen. “...Thank you. Really. But I still think — 5 days is too short.”*"
     },
     "confess_fail_2": {
         "name": "{name}",
-        "text": "*It's not rejection. It's timing. — The result of five days that weren't enough to get close.*"
+        "text": "*I put my phone in my pocket and took it out again. The last sentence looked shorter next to the read mark.*"
     },
     "confess_fail_3": {
         "name": "{name}",
@@ -706,11 +706,11 @@
     },
     "mayhem_3": {
         "name": "{name}",
-        "text": "*Dain was smiling. Bright as always. — But the exclamation marks were gone. Take care. The first time I ever heard Dain end a sentence with a period — and of all things, it was a farewell.*"
+        "text": "*Dain laughed as usual. \"how are you.\" The end of his words fell to the floor. There was no exclamation mark that I knew of.*"
     },
     "mayhem_4": {
         "name": "{name}",
-        "text": "*I watched all three walk away. None of them looked back. — That was the answer.*"
+        "text": "*I looked at the backs of the three people. None of the three turned around.*"
     },
     "mayhem_5": {
         "name": "{name}",
@@ -722,7 +722,7 @@
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Sojeong sees the unsent note beneath the photo. This time there are too many sent messages. Neither extreme is right.*"
+        "text": "*Look at the unsent memo under Sojung’s photo. This time, the speech bubble sent was long. The screen turns dark as is.*"
     },
     "day5_ending_harem": {
         "name": "{name}",
@@ -730,11 +730,11 @@
     },
     "harem_1": {
         "name": "{name}",
-        "text": "*Seoyeon smiled first. ...Fine. At least you’re honest. It wasn’t my imagination that I heard teeth grinding behind that smile.*"
+        "text": "*Seoyeon laughed first....okay. That's honest. The laughter soon ended.*"
     },
     "harem_1_b": {
         "name": "{name}",
-        "text": "*Yuna lowered her head. When she looked up a long time later, she was smiling — the kind of smile that's too broken to cry. Biting her lip.*"
+        "text": "*Yuna lowered her head. When I looked up after a while, the corners of my mouth went up. The fingertips are pressing hard on the spine of the book.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -746,11 +746,11 @@
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. My phone calendar is a minefield. Call Wednesday's name on Monday and it's all over.*"
+        "text": "*Monday is Seoyeon. Wednesday is Yuna. Friday is Dain. Every time a calendar notification pops up, I flip the lock screen over first.*"
     },
     "harem_5": {
         "name": "{name}",
-        "text": "*When Seoyeon asked, \"What are you doing on Wednesday?\" my heart nearly stopped. Wednesday is Yuna's day.*"
+        "text": "*When Seoyeon asked, “What are you doing on Wednesday?”, his finger stopped in the reply window.*"
     },
     "harem_6": {
         "name": "{name}",
@@ -783,7 +783,7 @@
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Homeroom Teacher",
-        "text": "*She pauses. About to say something more, then closes her mouth.* ...Take care."
+        "text": "*Pause for a moment. The corner of the envelope folds.*...Goodbye."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
@@ -807,7 +807,7 @@
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*That 'next time' became the time after that, and the time after that. Every Thursday, the same table. When the café staff asked 'Couple's seat?', neither could answer. One Thursday, we walked the streets instead of the café. Shadows overlapped, but no one looked first.*"
+        "text": "*The ‘next’ continued a few more times. Same spot every Thursday. When asked, ‘Is this a couple’s seat?’ both of them just looked down at their coffee. The next Thursday, I walked the streets instead of going to the cafe.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Homeroom Teacher",
@@ -839,7 +839,7 @@
     },
     "hidden_perfect_homeroom_5": {
         "name": "{name}",
-        "text": "*This is a secret. Just ours. — This bouquet weighs more than the diploma.*"
+        "text": "*As I was walking out the cafe door, the flower bouquet wrapper was a little crumpled in my hands. The diploma is in the bag.*"
     },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*Thursday's café became our café. The staff stopped asking 'couple's seat?' They just show us to our table.*"
+        "text": "*I was guided to the same spot every Thursday. Staff no longer ask, ‘Is this a couple’s seat?’*"
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
@@ -855,7 +855,7 @@
     },
     "hidden_perfect_homeroom_ep4": {
         "name": "{name}",
-        "text": "*Sometimes she says 'I used to be your teacher' and I reply 'I used to be your student.' We both laugh. — Because now we're just two people.*"
+        "text": "*Sometimes, when I say, ‘I was a teacher,’ people respond with, ‘I was a student.’ They both laugh. That title doesn't stick around much longer.*"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
@@ -984,7 +984,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "School Nurse",
-        "text": "*The person who opens the door looks far more at ease than she ever did in the infirmary.* ...You came. I didn't think you really would."
+        "text": "*The person who opened the door is wearing a knit instead of a gown.*...There you are. I really didn't think it would come."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -992,7 +992,7 @@
     },
     "hidden_perfect_nurse_3b": {
         "name": "School Nurse",
-        "text": "*She leans against me.* ...I don't need excuses anymore. Not a patient, not a student."
+        "text": "*Leaning on shoulder*...You don't have to make excuses anymore. Because I am neither a patient nor a student."
     },
     "hidden_perfect_nurse_4": {
         "name": "School Nurse",
@@ -1008,7 +1008,7 @@
     },
     "hidden_perfect_nurse_5b": {
         "name": "{name}",
-        "text": "*Just — someone I want to be with. Right here.*"
+        "text": "*I don’t want to take my hand away. Here.*"
     },
     "hidden_perfect_nurse_ending_title": {
         "name": "",
@@ -1040,7 +1040,7 @@
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Today, she looks more like just a person than a teacher.*"
+        "text": "*There is no gown or attendance register today.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "School Nurse",
@@ -1068,7 +1068,7 @@
     },
     "hidden_true_nurse_5_b": {
         "name": "{name}",
-        "text": "*Her voice dropped a register. All playfulness completely gone. — This is her sincerity.*"
+        "text": "*The hand holding the coffee cup stops. There was no room for jokes to escape.*"
     },
     "hidden_true_nurse_5_c": {
         "name": "School Nurse",
@@ -1084,7 +1084,7 @@
     },
     "hidden_true_nurse_5_f": {
         "name": "{name}",
-        "text": "*The school nurse pauses. — Then smiles. Not a playful smile.*"
+        "text": "*The health teacher pauses for a moment. The hand that was turning the coffee cup stops, and the smile lasts a long time.*"
     },
     "hidden_true_nurse_6": {
         "name": "School Nurse",
@@ -1096,7 +1096,7 @@
     },
     "hidden_true_nurse_7_b": {
         "name": "School Nurse",
-        "text": "...You're the first one who's seen right through me."
+        "text": "...I see you've been watching that far."
     },
     "hidden_true_nurse_7_c": {
         "name": "{name}",
@@ -1124,7 +1124,7 @@
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
-        "text": "*The school nurse looks at me. No playfulness.*"
+        "text": "*The hand that was turning the coffee cup stops.*"
     },
     "hidden_true_nurse_8_e": {
         "name": "School Nurse",
@@ -1196,7 +1196,7 @@
     },
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
-        "text": "*If the reason she can jump despite the pain is me — that's enough.*"
+        "text": "*On days when his knees hurt, Dain slows down. I beat to the same beat next to him.*"
     },
     "mayhem_8": {
         "name": "System",

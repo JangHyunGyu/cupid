@@ -61,7 +61,7 @@
     },
     "after_miss_yuna_4": {
         "name": "{name}",
-        "text": "*Und sie geht weiter. Das war’s. Aber — irgendetwas an ihr bleibt im Gedächtnis.*"
+        "text": "*Und geht dann wieder. Nur der Daumen, der die Ecke des Lesezeichens berührt, ist sichtbar.*"
     },
     "after_miss_seoyeon_1": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
-        "text": "*Sie sagt es wie etwas Dienstliches, aber das eben klang ein wenig persönlicher als das.*"
+        "text": "*Der Klassenlehrer schaut auf die Dokumente, aber das Ende der Zwischenablage bewegt sich nicht mehr.*"
     },
     "after_homeroom_ok_5": {
         "name": "Klassenlehrerin",
@@ -146,7 +146,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
-        "text": "*Sie wendet sich wieder ihrem Schreibtisch zu. Ich verabschiede mich kurz und schließe die Tür zum Lehrerzimmer, aber das Gespräch bleibt länger bei mir als erwartet. — Das war nicht nur Pflichtgefühl.*"
+        "text": "*Der Klassenlehrer wendet sich wieder dem Schreibtisch zu. Sagen Sie kurz Hallo und schließen Sie die Bürotür. Die Geschichte vom Automatensaft bleibt mir im Ohr.*"
     },
     "after_homeroom_honest_1": {
         "name": "Klassenlehrerin",
@@ -280,7 +280,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn dir wieder schwindelig wird, komm einfach vorbei. Das Krankenzimmer ist immer offen. Warte nur nicht, bis es gar nicht mehr geht. Das macht mir eher Sorgen."
+        "text": "Wenn Ihnen wieder schwindelig wird, kommen Sie zurück. Denn der Gesundheitsraum ist immer geöffnet. Halten Sie sich stattdessen zurück und kommen Sie nicht zu spät. Vielleicht schimpfe ich zuerst mit dir."
     },
     "after_nurse_enter_12": {
         "name": "Schulkrankenschwester",
@@ -354,7 +354,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Sie winkt und rennt los. — Beim Abstoppen hat sie kurz ihr rechtes Knie gehalten. Nur eine halbe Sekunde. Sofort wieder losgelassen, aber ich hab's gesehen.*"
+        "text": "*Winken Sie mit den Händen und rennen Sie. Wenn Sie plötzlich anhalten, greifen Sie Ihr rechtes Knie und lassen Sie Ihre Hand sofort los.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -386,7 +386,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Pädagogisches Interesse'. — Sie ist jemand, der ihre Fürsorge hinter Berufsbezeichnungen versteckt.*"
+        "text": "*'Bildungsinteresse'. Selbst nachdem er das gesagt hat, schaut der Klassenlehrer nur auf die Ecke der Anwesenheitsliste.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
@@ -398,7 +398,7 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Vorhin im Unterricht sagte sie 'Ich merk mir Namen beim ersten Mal'. — Es zweimal zu sagen, bedeutet etwas.*"
+        "text": "*Der zweite aufgerufene Name folgt dir bis zum Ende des Flurs.*"
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
@@ -490,15 +490,15 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Schulkrankenschwester",
-        "text": "Das, was du vorhin gesagt hast — danke, dass du dir Sorgen um mich gemacht hast. Sowas hab ich von einem Patienten noch nie gehört."
+        "text": "Was ich vorhin gesagt habe: Vielen Dank für Ihre Sorge. Ich hätte nie gedacht, dass ich diese Worte von einem Patienten hören würde."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
-        "text": "*Sie wirkt nicht besonders daran gewöhnt, dass sich jemand um sie sorgt. — Eher wie jemand, der sonst immer selbst auf andere achtet.*"
+        "text": "*Die Gesundheitslehrerin stellt den Wasserbecher ab und fängt an zu lachen.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Schulkrankenschwester",
-        "text": "Du hast vorhin gesagt, es sei gemütlich, oder? — Das hat mich tatsächlich gefreut."
+        "text": "Du hast doch vorhin gesagt, dass es gemütlich war, oder? — Ich erinnere mich noch an diese Worte."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Sie winkt mir mit einem leisen Lachen nach. Ich sehe das Pflaster auf ihrem Handrücken. — Ein seltsames Krankenzimmer. Die nicht schlechte Sorte von seltsam.*"
+        "text": "*Lächle leicht und winke. Schauen Sie sich den Handrücken mit dem Band an. Der Geruch von Desinfektionsmitteln bleibt länger hängen als erwartet.*"
     },
     "after_dain_skip": {},
     "after_yuna_skip": {}

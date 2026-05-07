@@ -62,7 +62,7 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Quelqu'un qui passe la nuit à lire et finit en retard. — C'est tellement Yuna. J'aime ça. Yuna fouille en silence dans son sac, sort un petit pain qu'elle coupe en deux et me tend la moitié. Un mot dépasse de l'intérieur du sac.*"
+        "text": "*Une personne qui lit toute la nuit et qui est en retard. Yuna fouilla dans son sac sans dire un mot, puis coupa un petit pain en deux et le tendit. Une note est visible à l'intérieur du sac.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Professeure principale",
-        "text": "*Elle reste muette un instant.* ...De la persévérance. T'es le premier à le voir comme ça."
+        "text": "*Pause. La main qui touchait le papier manuscrit s'arrête.*...Ça fait moins mal quand j'entends que ça s'appelle la persévérance."
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Professeure principale",
@@ -262,7 +262,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*Elle sourit. Pas son sourire sec habituel — quelque chose de légèrement maladroit. Comme quelqu'un qui a oublié comment sourire.*"
+        "text": "*Le professeur principal rit. Les coins de la bouche se relèvent maladroitement et les mains restent sur le manuscrit.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Professeure principale",
@@ -296,7 +296,7 @@
     },
     "hidden_nurse_d3_4": {
         "name": "Infirmière",
-        "text": "*Tirant le rideau* ...Assieds-toi. Ici, tu peux te détendre un peu. *Tend un verre d'eau* ...Prends ton temps."
+        "text": "*tire le rideau et te tend une tasse d'eau*...assis-toi. Vous pouvez vous sentir à l'aise ici. Vous pouvez parler lentement."
     },
     "hidden_nurse_d3_choice1": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*Le mot : Je me suis dit que tu n'avais pas pris de petit-déjeuner. Quelqu'un qui écrit un mot alors qu'il suffirait de le dire. — C'est tout Yuna.*"
+        "text": "*Remarque: je pensais que vous n’aviez pas pris de petit-déjeuner. Il y a un peu d'encre violet clair au fond du sac à pain.*"
     },
     "morning3_dain_gate_4_b": {
         "name": "Dain",
@@ -466,11 +466,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*La main de la professeure principale est posée sur la feuille de manuscrit. Entre les pages retournées, on aperçoit une écriture dense.*"
+        "text": "*L’écriture manuscrite est dispersée entre les papiers retournés. La paume du professeur principal couvre le coin du papier.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
-        "text": "*L'expression de la professeure principale redevient vite normale. Son visage indifférent habituel. — Le changement est trop rapide.*"
+        "text": "*L'expression du professeur principal retrouve son indifférence habituelle. C'est un manuscrit, mais il est encore retourné.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Professeure principale",
@@ -546,11 +546,11 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Alors c'est ça, l'histoire derrière sa froideur. — Un manuscrit inachevé dans le tiroir du bureau. Sept ans.*"
+        "text": "*Manuscrit inachevé dans le tiroir du bureau. Une histoire fermée depuis 7 ans a été diffusée ici.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Professeure principale",
-        "text": "*Soudain sérieuse* ...Tu ne dois en parler à personne. Si un élève savait que sa prof — a ce côté, mon autorité — enfin, je n'en ai jamais eu beaucoup."
+        "text": "*Rugit soudain*...Tu ne peux en parler à personne. Ce serait difficile si les élèves découvraient que leur professeur était comme ça. Eh bien, je n'avais pas beaucoup d'autorité au départ."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -574,7 +574,7 @@
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
-        "text": "*Le sourire est maladroit. — Elle ne sait pas sourire, ou elle a oublié comment ?*"
+        "text": "*À cause de ce rire gêné, le son de la trotteuse dans la salle de classe vide devient plus fort.*"
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Professeure principale",
@@ -582,7 +582,7 @@
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
-        "text": "*Elle a qualifié ces sept ans de 'ne pas avoir pu abandonner.' Mais une phrase qui change la perspective — et ses yeux ont vacillé.*"
+        "text": "*Le professeur principal appuie sur le coin du manuscrit avec son pouce. Le papier est légèrement froissé.*"
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Professeure principale",
@@ -590,7 +590,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*La trotteuse de l'horloge résonne fort dans la classe vide. Trop de ratures sur le papier pour être de la paperasse administrative. Je devrais détourner le regard, mais mes yeux ne se baissent pas.*"
+        "text": "*Le tic-tac dans une salle de classe vide est bruyant. Le regard ne descend pas de la phrase avec des traces d'effacement superposées.*"
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "hidden_nurse_d3_3_b": {
         "name": "{name}",
-        "text": "*L'infirmière me regarde un instant. L'espièglerie disparaît.*"
+        "text": "*Le professeur de santé pose la tasse.*"
     },
     "hidden_nurse_d3_3_c": {
         "name": "Infirmière",
@@ -634,7 +634,7 @@
     },
     "hidden_nurse_d3_3_d": {
         "name": "{name}",
-        "text": "*Sa voix a changé. Plus de plaisanterie. — Quand cette personne devient sérieuse, toute l'atmosphère change.*"
+        "text": "*Le professeur de santé pose la tasse. Les mouvements légers de mes mains jusqu'à présent se sont arrêtés. Asseyez-vous sur le lit.*"
     },
     "hidden_nurse_d3_5_b": {
         "name": "{name}",
@@ -646,7 +646,7 @@
     },
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
-        "text": "*Un 'quelque chose comme ça' et toute son attitude a changé. — C'est quelqu'un qui s'ouvre quand elle se sent comprise.*"
+        "text": "*Après avoir dit « similaire », la main du professeur de santé s’arrête brièvement sur le gobelet d’eau.*"
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
@@ -658,7 +658,7 @@
     },
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
-        "text": "Plusieurs personnes m'occupent l'esprit en même temps, mais j'ai l'impression de devoir n'en choisir qu'une..."
+        "text": "Je suis intéressé par les trois, mais je pense que je devrai finalement choisir une personne."
     },
     "hidden_nurse_d3_5_h": {
         "name": "{name}",
@@ -682,7 +682,7 @@
     },
     "hidden_nurse_d3_5_m": {
         "name": "Infirmière",
-        "text": "Un professeur devrait-il vraiment faire ce genre de conseil... *pose son menton sur sa main* Mais je t'écoute. Le lit de l'infirmerie est vide de toute façon."
+        "text": "Est-ce que cela va aux soins de santé...*Coupe le menton*J'écouterai quand même. Parce que le lit est vide."
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
@@ -702,7 +702,7 @@
     },
     "hidden_nurse_d3_6_b": {
         "name": "{name}",
-        "text": "*Elle parle de patients, mais étrangement ça recoupe ma situation.*"
+        "text": "*Le professeur de santé pose le gobelet d'eau. L'eau au fond de la tasse se répand en cercle.*"
     },
     "hidden_nurse_d3_6_c": {
         "name": "Infirmière",
@@ -726,7 +726,7 @@
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
-        "text": "*La malice a complètement disparu.*"
+        "text": "*Les doigts qui tiennent la tasse s'arrêtent.*"
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
@@ -746,11 +746,11 @@
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*Le pansement sur ma main se décolle légèrement. Quelqu'un qui cède son lit quand je dis que je suis malade. Quelqu'un qui se retourne même quand je dis que je ne le suis pas. Entre elles se trouve une seule plaque nominative : 'Infirmière scolaire'.*"
+        "text": "*La bande sur le dos de la main est légèrement déchirée. Le rideau oscille entre le lit et le porte-nom. Les trois lettres « professeur de santé » sont particulièrement claires.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*Le bruit de papier plié provient de l'intérieur de l'infirmerie. Des lettres inachevées pour Yujin. Mon âge est trop proche pour être placé à côté de ce nom. Je saisis la poignée, puis la relâche.*"
+        "text": "*Le bruit du papier plié se fait entendre à l'intérieur de la salle de santé. Lettres écrites à Eugène. Saisissez la poignée et relâchez-la.*"
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
@@ -758,7 +758,7 @@
     },
     "hidden_nurse_d3_9_c": {
         "name": "{name}",
-        "text": "*L'infirmière — ne sourit pas. Elle tripote son stéthoscope en regardant par la fenêtre. Comme quelqu'un qui n'a même pas réalisé ce qu'elle vient de dire.*"
+        "text": "*Le professeur de santé ne sourit pas. Je joue avec mon stéthoscope et regarde par la fenêtre.*"
     },
     "hidden_nurse_d3_9_d": {
         "name": "Infirmière",
@@ -766,7 +766,7 @@
     },
     "hidden_nurse_d3_9_e": {
         "name": "{name}",
-        "text": "*Une blague. — Hein ? Hein, je me dis, mais mes pieds ne bougent pas. Cette expression de 0,7 seconde, juste avant — il n'y avait aucune malice dedans.*"
+        "text": "*J'ai essayé de faire passer ça pour une blague, mais mes pieds ne tombaient pas. Il n’y a qu’une forte odeur de désinfectant au-delà du rideau.*"
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",

@@ -13,7 +13,7 @@
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*Rien de Yuna. — C'est Yuna. Mais en rangeant mon sac, le mot du matin tombe de ma poche. Les mots 'annexe de la bibliothèque' accrochent mon regard.*"
+        "text": "*Il n'y a aucune communication de Yuna. Alors que je préparais mon sac, un mot du matin est sorti de ma poche. Le texte « Annexe de la bibliothèque » est accroché sur la ligne pliée.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "{name}",
-        "text": "*La phrase se termine comme un ordre, mais Seoyeon ne se retourne pas immédiatement. Elle attend pour voir si je vais suivre.*"
+        "text": "*Seoyeon ne se retourne pas tout de suite. Le bout du presse-papiers pointé vers la porte, il attend le bruit de mes pas.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -218,11 +218,11 @@
     },
     "after2_seo_sunset_joke": {
         "name": "{name}",
-        "text": "*Seoyeon marque une pause. Et puis — elle rit. Pas juste ses lèvres, mais ses yeux. Un sourire que je n'avais jamais vu.*"
+        "text": "*Seoyeon fait une pause un instant. La zone autour des yeux derrière les lunettes se détend en premier.*"
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "...Tu es la première personne à lancer des mots comme ça, si naturellement."
+        "text": "...Si vous dites des choses comme ça si vite, vous n'avez pas le temps de les écrire."
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -350,7 +350,7 @@
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "*Un morceau de piano calme commence. Le coucher de soleil teint la pièce. Yuna lit, j'écoute la musique. Pas un mot. — Et ce n'est pas inconfortable.*"
+        "text": "*Une douce chanson de piano joue. Le coucher de soleil colore la pièce. Yuna lit un livre et j'écoute de la musique. Pas de mots. Seule la musique coule doucement.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
@@ -386,7 +386,7 @@
     },
     "after2_yuna_quiet_react": {
         "name": "{name}",
-        "text": "*Les lèvres de Yuna se relèvent très légèrement. — Ce sourire, il vaut une journée entière.*"
+        "text": "*Yuna rit très doucement. La page suivante se tourne tranquillement.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -524,7 +524,7 @@
     },
     "after2_dain_9_f": {
         "name": "{name}",
-        "text": "*3:2 à la fin. Une victoire de justesse. Dain se lève et se frotte le genou droit une fois. Son sourire reste le même.*"
+        "text": "*Le tableau d'affichage est de 3:2. Nous avons gagné de justesse. Dain se lève et se frotte une fois le genou droit. Le sourire reste le même.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
@@ -584,7 +584,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "{name}",
-        "text": "*Yuna a dit deux phrases d'affilée. — Pour quelqu'un qui s'exprime habituellement en une seule ligne, c'est notable.*"
+        "text": "*Yuna n'évite pas le contact visuel. The earphone strings are still wrapped between my fingers.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
@@ -612,6 +612,6 @@
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*On ne dirait même pas une permission, et pourtant ça me reste bizarrement en tête.*"
+        "text": "*Cela ne ressemble pas à une autorisation, mais Yuna ne supprime pas le signet.*"
     }
 }

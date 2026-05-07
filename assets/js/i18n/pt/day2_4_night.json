@@ -214,11 +214,11 @@
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Nas minhas notas, frases não enviadas estão alinhadas uma após a outra. 'Eu gosto de você.' 'Professora, na mesa de Sojeong—' 'Hoje também—' Todas cortadas na primeira linha. Última edição: 2h17 da manhã.*"
+        "text": "*Existem linhas de frases não enviadas no bloco de notas. 'gosto de você.' ‘Professor, Sojung está na recepção—’ ‘Hoje também—’ Tudo foi cortado na primeira linha. Última modificação às 2h17.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Abaixo da 38ª nota, não há nada. Só o título da 39ª está em branco. No dia seguinte, o assento de Sojeong ficou vazio até o fim. Nos papéis de transferência, a linha de assinatura do responsável tem o nome do pai dela.*"
+        "text": "*Não há nada abaixo da 38ª nota. Apenas o 39º título está vazio. No dia seguinte, o assento de Sojung ficou vazio até o fim. O nome do pai está escrito na seção de assinatura do responsável no documento de transferência.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Aquela frase fica ecoando. Ainda não respondi. Ontem era só uma curiosidade. Hoje — 'quero ver' subiu até a garganta e desceu.*"
+        "text": "*Essas palavras continuam voltando para mim. Ainda não recebi resposta. Em vez disso, o número de vezes que você abre e fecha a janela de notificação aumenta.*"
     },
     "night2_end_3_b": {
         "name": "{name}",

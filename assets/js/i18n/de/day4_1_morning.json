@@ -17,7 +17,7 @@
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*...In diesem Moment hat mein Unterbewusstsein nur eine Person gewählt.*"
+        "text": "*Als ich meine Augen öffnete, fiel mir zuerst nur ein Name ein.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Außerhalb des Schultors wirkt sie nicht wie eine Lehrerin. Einfach — wie jemand, der schreibt.*"
+        "text": "*Der Klassenlehrer blickt von außerhalb des Schultors näher auf den Notizblock als auf den Lehrertisch.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Klassenlehrerin",
@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Schon wieder. Eine Grenze, die unter dem Deckmantel von „pädagogischem Interesse“ überschritten wird.*"
+        "text": "*Auch „pädagogisches Interesse“. Auch nach dem Sprechen klappt der Klassenlehrer nur noch die Ecke des Getränkehalters um.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Klassenlehrerin",
-        "text": "...Ein bisschen. Nachdem du es gestern gesehen hast — konnte ich irgendwie mehr schreiben."
+        "text": "...wenig. Nachdem du es gestern gesehen hast, hat sich deine Hand wieder bewegt."
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Klassenlehrerin",
@@ -161,7 +161,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*Die Krankenschwester hat im Schul-Messenger 'Suche Helfer' gepostet. Meine Füße bewegen sich schon Richtung Schule. Krankenzimmer. Auf dem Schreibtisch liegen Papiere und Untersuchungsgeräte. Die Krankenschwester sortiert ruhig.*"
+        "text": "*School messenger notification: ‘Looking for someone to help’. Meine Füße zeigen in Richtung Gesundheitsraum. Documents and examination tools are piled on the desk. Die Gesundheitslehrerin organisiert in aller Ruhe die Dinge.*"
     },
     "hidden_nurse_d4_2": {
         "name": "Schulkrankenschwester",
@@ -241,7 +241,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*'Ah, du bist da' klingt einen halben Ton tiefer als sonst. Die Krankenschwester hebt das Stethoskop auf, legt es dann wieder auf den Schreibtisch.*"
+        "text": "*Der Gesundheitslehrer sagt: „Oh, ich bin hier“, nimmt das Stethoskop und legt es wieder auf den Schreibtisch.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*Ein Déjà-vu. Gestern im leeren Klassenraum hat sie etwas Ähnliches gesagt. — Aber heute, in einem Café, außerhalb der Schule, klingt es leichter. Nein — ernster.*"
+        "text": "*Das Manuskriptpapier gestern im leeren Klassenzimmer fällt mir ein. Heute bin ich außerhalb der Schule und die Ecken des Getränkehalters klappen ständig.*"
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
@@ -463,7 +463,7 @@
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "*Wir sitzen nebeneinander und sortieren Papiere. Jedes Mal, wenn sich unsere Hände berühren, zieht die Schulkrankenschwester ihre leicht zurück. Ist ihr das bewusst?*"
+        "text": "*Sitzen Sie nebeneinander und organisieren Sie Dokumente. Jedes Mal, wenn ihre Hände sich berühren, drehen sich die Fingerspitzen des Gesundheitslehrers zum Rand des Papiers.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Schulkrankenschwester",
@@ -491,11 +491,11 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "Schulkrankenschwester",
-        "text": "*Stimme wird einen halben Ton leiser* Niemand hat meinen Namen gesagt. 'Schwester', 'die vom Nachtdienst', 'Station 3.' Alles Titel, nie mein Name."
+        "text": "Niemand rief meinen Namen. „Krankenschwester“, „Nachtdienst“, „Station 3“. — Es ist alles ein Titel, kein Name."
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
-        "text": "*Der Scherz ist völlig verschwunden. So zeigt diese Person ihre wahren Gefühle.*"
+        "text": "*Die Hand auf dem Dokument bewegt sich nicht mehr.*"
     },
     "hidden_nurse_d4_4_h": {
         "name": "Schulkrankenschwester",
@@ -523,7 +523,7 @@
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
-        "text": "*Zwei kurze Worte, aber sie haben Gewicht.*"
+        "text": "*'Es ist nichts' Die Ecke des Ordners drückt gegen meine Fingerspitzen hinter mir.*"
     },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*Der Scherz verschwand. — Wenn ich diesen Ausdruck sehe, zieht sich mein Herz zusammen.*"
+        "text": "*Die Hand mit den Stäbchen bleibt auf dem Tisch stehen.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Schulkrankenschwester",

@@ -162,11 +162,11 @@
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*In my notes, unsent sentences are lined up one after another. 'I like you.' 'Teacher, on Sojeong's desk—' 'Today too—' All cut off at the first line. Last edit time: 2:17 a.m.*"
+        "text": "*There are rows of unsent sentences left in the notepad. 'i like you.' ‘Teacher, Sojung is at the desk—’ ‘Today as well—’ Everything was cut off at the first line. Last modified at 2:17 AM.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Below the 38th note, there's nothing. Only the 39th title is blank. The next day, Sojeong's seat stayed empty until the end. On the transfer papers, the guardian signature line has her father's name.*"
+        "text": "*There is nothing below the 38th note. Only the 39th title is empty. The next day, Sojung’s seat was empty until the end. The father's name is written in the guardian's signature section of the transfer document.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Those words keep echoing. I still haven't answered. Yesterday they were just on my mind. Today — 'I want to see them' rose to my lips and fell back down.*"
+        "text": "*Those words keep coming back to me. I haven't received a reply yet. Instead, the number of times you open and close the notification window increases.*"
     },
     "night2_end_3_b": {
         "name": "{name}",

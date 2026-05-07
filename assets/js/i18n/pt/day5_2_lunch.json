@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*Seoyeon tira algo da bolsa. — Uma chave. Do terraço.*"
+        "text": "*O chaveiro tilinta dentro da bolsa de Seoyeon. É a chave do telhado.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "{name}",
-        "text": "*A mão entregando a chave. Os mindinhos se tocam de leve. — Ela nunca diz 'tô te dando'. Só passa. Ação no lugar de palavra. Desde o começo é assim.*"
+        "text": "*Entregue as chaves em mãos. Os dedinhos se tocam levemente. Seoyeon solta a mão dele em vez de dizer ‘Vou dar para você’."
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "Toda vez que venho aqui, o tempo parece passar diferente."
+        "text": "Quando venho aqui, os sons externos parecem um pouco distantes."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -109,7 +109,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Ela estende o caderno. A mão treme um pouco. — É a primeira vez que a Yuna entrega algo dela, diretamente, pra alguém.*"
+        "text": "*Estende o bilhete. Minhas mãos estão tremendo levemente. Yuna não consegue posicionar totalmente o canto da capa.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Brava e rindo ao mesmo tempo. — Essa é a Dain. Pessoa que se diverte até perdendo. Ela coloca a bola no chão da quadra. Devagar.*"
+        "text": "*Sorrir mesmo quando estiver com raiva. Dain coloca a bola de vôlei na quadra. devagar.*"
     },
     "tour_dain_10": {
         "name": "Dain",

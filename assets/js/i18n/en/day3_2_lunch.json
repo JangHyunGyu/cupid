@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Lunchtime. Today, unusually, all three of them are gathered in one place. I open my lunchbox. Seoyeon sits down beside me, Dain flops down across from us, and Yuna drifts in from the corner eating her own bread.*"
+        "text": "*Lunch time. When the lunch box is opened, three people gather in one place. Seoyeon sits next to him, Dain sits across from him, and Yuna sneaks in, eating her bread in the corner.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -147,7 +147,7 @@
     },
     "lunch3_expose_15": {
         "name": "{name}",
-        "text": "*I can't say a word. Minsu is right.*"
+        "text": "*The mouth does not fall. Minsu turns his head away.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*No exclamation marks. — For the first time, they've vanished from Dain's sentences.*"
+        "text": "*There is no exclamation mark. The end of Dain's sentence is strangely quiet.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*I suggested we all share. It was a peace offering brought up too late. All three of them smile, but no one reaches out first.*"
+        "text": "*We all said we should share it together. All three laugh funny, but no one reaches out first.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
@@ -270,7 +270,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna passes by the hallway and glances into the gym. Dain is laughing. Yuna quickens her pace. Next break, Yuna's seat is empty.*"
+        "text": "*Yuna looks inside the gym from the hallway. Dain is smiling. Yuna walks away without saying anything. Next break, Yuna's seat is empty.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -315,11 +315,11 @@
     },
     "lunch3_meal_10_c": {
         "name": "{name}",
-        "text": "*Seoyeon's chopsticks pause. She composes herself. The student council president's face returns. — I know it's not fine. I feel bad.*"
+        "text": "*Seoyeon’s chopsticks stop for a moment. The face of the student council president soon returns, but the egg roll remains.*"
     },
     "lunch3_meal_10_d": {
         "name": "{name}",
-        "text": "*All together?! Great!! The exclamation marks are alive. — But her voice is half a tone lower. Normally she'd be dragging chairs over, but today she doesn't move from her seat.*"
+        "text": "*Dain says “All together?!” and laughs. Normally I would have dragged a chair, but today I didn't move from where I sat.*"
     },
     "lunch3_meal_10_e": {
         "name": "{name}",

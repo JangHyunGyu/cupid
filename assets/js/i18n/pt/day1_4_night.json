@@ -69,7 +69,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Tem uma notificação no app de saúde da escola. 'Ficha da enfermaria: aluno transferido — Tontura (leve). Obs: Se o sintoma continuar amanhã, volta aqui. Bebe bastante água. — o ♥ é interesse médico ^^'*"
+        "text": "*As notificações do aplicativo de gerenciamento de saúde escolar são exibidas. 'Registros da sala de saúde: estudante transferido - leve tontura. Memorando: Volte amanhã se tiver algum sintoma. Beba muita água. ♥ é uma preocupação médica.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*Só '...' e mais nada. Como se tivesse digitado algo e apagado depois.*"
+        "text": "*O indicador liga e desliga durante a entrada. A única coisa que chegou foi '...'.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*Essa menina não conhece o conceito de 'não', é?*"
+        "text": "*'Chamada' já está carimbado na janela de resposta.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

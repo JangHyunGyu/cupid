@@ -63,7 +63,7 @@
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
-        "text": "*Se ríe por lo bajo.* Oye, hasta tiene su lógica."
+        "text": "*suspiro*Eso es sorprendentemente persuasivo."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Ayer fui al ritmo de la presidenta. Hoy quería ver también el tuyo."
+        "text": "Dado que el presidente me arrastró ayer, hoy también sentí curiosidad por usted."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*Yuna esboza una sonrisa mínima. Casi imperceptible. — Pero la alcancé a ver. ¿Vine hasta aquí por esa sonrisa?*"
+        "text": "*Las comisuras de la boca de Yuna se elevan por una fracción de segundo. El sonido al pasar las páginas de un libro es más ligero que antes.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -216,7 +216,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*No añade nada después de ese 'venía'. Pretérito. — En los silencios de Yuna siempre hay una historia. Pisa con cuidado.*",
+        "text": "*No hay ninguna palabra después de “hubo”. Yuna empuja el extremo del marcador dentro del libro.*",
         "choices": [
             "Esa persona, ¿dónde está ahora?",
             "No preguntar y sentarme a su lado"
@@ -228,7 +228,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
-        "text": "*A Yuna le baja la voz un tono.*"
+        "text": "*El dedo de Yuna presiona firmemente el final del marcapáginas.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -328,7 +328,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Se veía que quería oír algo más — pero me callé a propósito. Seguimos comiendo cuando — se abre la puerta de la azotea. Dain subió.*"
+        "text": "*Seoyeon no dice más. Mientras almuerza para llevar, se abre la puerta de la azotea. Dain está arriba.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -408,7 +408,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
-        "text": "*La zona que me rozó Seoyeon todavía me arde. — Y los ojos atónitos de Dain no se me quitan de la cabeza.*"
+        "text": "*Solo me limpié la boca, pero el ambiente del almuerzo se interrumpió por un momento. Mis ojos se mueven en la dirección que vio Dain.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -468,7 +468,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ay, está bien... Van dos soboros..."
+        "text": "Está bien, está bien. Tía, dos Soboro."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -513,7 +513,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Lóbulos. Rojos. — En este colegio las chicas tienen las orejas muy traicioneras.*"
+        "text": "*Dain dobla el papel de regalo innecesariamente durante mucho tiempo. Hablo menos que antes.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
@@ -597,11 +597,11 @@
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*Saca un algodón con desinfectante — y limpia despacio. Saca una curita. Poner una curita toma treinta segundos, ¿a qué viene tanto esmero?*"
+        "text": "*El algodón empapado en desinfectante permanece alrededor de la herida durante mucho tiempo. El borde de la banda presiona firmemente contra el dorso de la mano.*"
     },
     "lunch2_dain_end_l": {
         "name": "Enfermera",
-        "text": "*Le coloca la curita.* Aquí... así... ya está."
+        "text": "*Aplica vendaje*No te muevas....Eso es todo."
     },
     "lunch2_dain_end_m": {
         "name": "{name}",
@@ -653,7 +653,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "{name}",
-        "text": "*La enfermera se detiene un segundo. Y entonces — baja la voz un tono.*"
+        "text": "*La profesora de salud deja de doblar el envoltorio de la banda y me mira.*"
     },
     "lunch2_dain_end_z": {
         "name": "Enfermera",
@@ -661,7 +661,7 @@
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*El tonito bromista desaparece. Y vuelve. — Eso de antes, lo noté.*"
+        "text": "*No hubo risas por un momento. Pronto nos reunimos, pero ya era demasiado tarde.*"
     },
     "lunch2_dain_end_c2": {
         "name": "Enfermera",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*Hace un momento — su voz tembló un poco.*"
+        "text": "*El papel de regalo recién doblado se coloca torcido en el borde del escritorio.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Enfermera",

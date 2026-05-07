@@ -65,7 +65,7 @@
     },
     "confess_seo_yes_8": {
         "name": "{name}",
-        "text": "*Seoyeon ne dit rien. Ses lèvres tremblent. Pas la présidente du conseil — juste une fille, debout là.*"
+        "text": "*Seoyeon ne dit rien. Mes lèvres tremblent. Il n’y a pas de porte-bloc ni de brassard de président de conseil étudiant.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -157,7 +157,7 @@
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*Devant Yuna, pas besoin de longs discours. Elle lit entre les lignes.*"
+        "text": "*Parlez moins devant Yuna. J'ai l'impression d'être pris au piège, même sans rien dire.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*Le jour où mes mots dépassent ceux de Yuna. — Une première.*"
+        "text": "*Dès que j'ai fini de parler, même la poussière dans la pièce devient silencieuse.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
@@ -177,11 +177,11 @@
     },
     "confess_yuna_yes_8": {
         "name": "{name}",
-        "text": "*L'expression impassible de Yuna se fissure. Sa voix nonchalante disparaît, remplacée par la plus petite — presque inaudible — voix. Elle serre sa manche.*"
+        "text": "*Yuna serre fermement ses manches sans regarder dans ma direction.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*Elle serre fort sa manche.*"
+        "text": "*Les extrémités froissées des manches disparaissent dans la paume.*"
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*« Énormément. » — Dain est toujours comme ça. Courte et sincère. C'est pour ça qu'on la croit.*"
+        "text": "*'Extrêmement'. La réponse courte est que les mains de Dain agrippent le ballon plus fort.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*Si existiera un mundo donde este volumen a las 8 de la mañana fuera normal, Dain sería su presidenta.*"
+        "text": "*Si la tensión es tan alta a las 8 a.m., creo que la batería se acabará antes del funeral.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -94,11 +94,11 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*¿Acaso las personas son objetos para reclamar? El borde del portapapeles de Seoyeon golpea contra el escritorio. No pude decir que no de inmediato.*"
+        "text": "*El extremo del portapapeles de Seoyeon toca el escritorio. Perdí el momento adecuado para decir que no.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Recreo después de la primera clase. Me cruzo con Seoyeon en el pasillo. Se detiene. Me mira el hombro. Levanta la mano. Viene hacia mi hombro.*"
+        "text": "*Tiempo de descanso después del 1er período. Paso junto a Seoyeon en el pasillo. Seoyeon se detiene y mira mi hombro. La mano que sostiene el portapapeles aparece primero.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Leer. Se fijó hasta en el expediente.*",
+        "text": "*La mirada hacia el cajón aún permanece. Decidí no hacer más preguntas sobre las boletas de calificaciones.*",
         "choices": [
             "¿Y usted? ¿Qué lee?",
             "Sí, me gusta leer"
@@ -182,7 +182,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*El cajón. ¿Se fijó ahí hace un momento? — Por la rendija asoma un fajo de papeles. Parecen cuartillas. La profesora cierra el cajón con naturalidad. Como si nada.*"
+        "text": "*El borde del manuscrito es visible a través del cajón ligeramente abierto. La profesora deja la taza de café y cierra el cajón.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Profesora",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Profesora",
-        "text": "*Se tapa la boca con la taza.* ...Falla en el control de gestos. Anda, vete."
+        "text": "*se cubre la boca con la taza de café*...¿se usa todo en la cara? Está bien, vámonos."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Profesora",
@@ -262,7 +262,7 @@
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*Me río y lo dejo pasar — pero el comentario de Seoyeon se me queda clavado.*"
+        "text": "*Me reí, pero un momento después me vino a la mente el sonido del golpeteo en el portapapeles.*"
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Me tiene preocupada'. — La profesora se preocupa por Dain. ¿Sabrá algo?*"
+        "text": "*'El que está preocupado'. La maestra del salón mira hacia la etiqueta con el nombre de Dain.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Profesora",

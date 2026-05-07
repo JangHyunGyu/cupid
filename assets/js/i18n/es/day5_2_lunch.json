@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*Seoyeon saca algo de la mochila. — Una llave. La llave de la azotea.*"
+        "text": "*El llavero tintinea dentro del bolso de Seoyeon. Es la llave de la azotea.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "tour_seo_12": {
         "name": "{name}",
-        "text": "*La mano que me tiende la llave. Los meñiques se rozan un instante. — Ella no dice 'toma, para ti'. Pasa directamente a la acción. Desde el principio fue así.*"
+        "text": "*Entrega de llaves en persona. Los deditos se tocan ligeramente. Seoyeon suelta su mano en lugar de decir “Te la daré”.*"
     },
     "tour_seo_13": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "Cuando vengo aquí, el tiempo parece aflojarse un poco."
+        "text": "Cuando vengo aquí, los sonidos exteriores parecen un poco distantes."
     },
     "tour_yuna_4": {
         "name": "Yuna",
@@ -97,7 +97,7 @@
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Me tiende el cuaderno. Le tiemblan un poco las manos. — Es la primera vez que Yuna le da algo suyo escrito a alguien en persona.*"
+        "text": "*Le tiende la nota. Mis manos tiemblan ligeramente. Yuna no puede colocar la esquina de la funda por completo.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -141,7 +141,7 @@
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Se enoja y se ríe a la vez. — Así es Dain. Alguien que se divierte incluso perdiendo. Deja el balón en la cancha. Despacio.*"
+        "text": "*Sonríe incluso cuando estás enojado. Dain deja la pelota de voleibol en la cancha. despacio.*"
     },
     "tour_dain_10": {
         "name": "Dain",

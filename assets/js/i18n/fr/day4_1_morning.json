@@ -17,7 +17,7 @@
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*...À cet instant, mon inconscient n'a choisi qu'une seule personne.*"
+        "text": "*Quand j'ai ouvert les yeux, un seul nom m'est venu à l'esprit en premier.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Vue en dehors du portail, elle ne ressemble pas à une prof. Juste... à quelqu'un qui écrit.*"
+        "text": "*En regardant de l'extérieur de la porte de l'école, le professeur principal regarde plus près du bloc-notes que de la table du professeur.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Professeure principale",
@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Ça recommence. Une ligne franchie sous couvert d'« intérêt éducatif ».*"
+        "text": "*Également « intérêt éducatif ». Même après avoir fini de parler, le professeur principal ne plie que le coin du porte-gobelet.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Professeure principale",
-        "text": "...Un peu. Après que tu l'as vu hier — bizarrement, j'ai pu écrire un peu plus."
+        "text": "...petit. Après l'avoir vu hier, votre main a encore bougé."
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Professeure principale",
@@ -161,7 +161,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*L'infirmière a posté 'cherche quelqu'un pour aider' sur la messagerie de l'école. Mes pieds vont déjà vers le lycée. L'infirmerie. Sur le bureau, des papiers et du matériel de visite médicale empilés. L'infirmière range tranquillement.*"
+        "text": "*Notification de messagerie scolaire: « Je recherche quelqu'un pour m'aider ». Mes pieds pointent vers la salle de santé. Les documents et outils d’examen sont empilés sur le bureau. Le professeur de santé organise les choses sereinement.*"
     },
     "hidden_nurse_d4_2": {
         "name": "Infirmière",
@@ -241,7 +241,7 @@
     },
     "hidden_nurse_d4_morning_4": {
         "name": "{name}",
-        "text": "*'Ah, t'es là' sort un demi-ton plus bas que d'habitude. L'infirmière saisit le stéthoscope, puis le repose sur le bureau.*"
+        "text": "*Le professeur de santé dit: « Oh, je suis là » et prend le stéthoscope, puis le repose sur le bureau.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
@@ -407,7 +407,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*C'est un déjà-vu. Hier aussi, dans la salle vide, elle a dit quelque chose de ce genre. - Mais aujourd'hui, dans un café, hors de l'école, ça semble plus léger. Non... plus sérieux.*"
+        "text": "*Le papier manuscrit dans la salle de classe vide d'hier me vient à l'esprit. Aujourd'hui, je suis à l'extérieur de l'école et les coins du porte-gobelet continuent de se plier.*"
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
@@ -463,7 +463,7 @@
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "*On s'assoit côte à côte pour trier les papiers. Chaque fois que nos mains se frôlent, l'Infirmière retire discrètement la sienne. Est-ce qu'elle en est consciente ?*"
+        "text": "*Asseyez-vous côte à côte et organisez les documents. Chaque fois que leurs mains se touchent, le bout des doigts du professeur de santé se tourne vers le bord du papier.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Infirmière",
@@ -491,11 +491,11 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "Infirmière",
-        "text": "*La voix baissant d'un demi-ton* Personne ne m'appelait par mon prénom. 'Infirmière', 'garde de nuit', 'service 3'. Que des titres, jamais mon prénom."
+        "text": "Personne n’a appelé mon nom. « Infirmière », « Service de nuit », « Service 3 ». — Tout cela n'est qu'un titre, pas un nom."
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
-        "text": "*L'espièglerie a complètement disparu. C'est comme ça que ses vrais sentiments se montrent.*"
+        "text": "*La main sur le document ne bouge plus.*"
     },
     "hidden_nurse_d4_4_h": {
         "name": "Infirmière",
@@ -523,7 +523,7 @@
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
-        "text": "*Deux petits mots, mais lourds de sens.*"
+        "text": "*'Ce n'est rien' Le coin du dossier appuie contre le bout de mes doigts derrière moi.*"
     },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
@@ -539,7 +539,7 @@
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*L'espièglerie a disparu. — Quand je vois cette expression, mon cœur se serre.*"
+        "text": "*La main qui tient les baguettes s'arrête sur la table.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Infirmière",

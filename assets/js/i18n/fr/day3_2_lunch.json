@@ -1,7 +1,7 @@
 {
     "lunch3_start": {
         "name": "{name}",
-        "text": "*Pause déjeuner. Aujourd'hui, fait inhabituel, elles sont toutes les trois réunies à la même table. J'ouvre mon bento. Seoyeon s'assoit naturellement à côté de moi, Dain se laisse tomber en face, et Yuna se glisse depuis le coin en grignotant son propre pain.*"
+        "text": "*L'heure du déjeuner. Lorsque la boîte à lunch est ouverte, trois personnes se rassemblent au même endroit. Seoyeon s'assoit à côté de lui, Dain s'assoit en face de lui et Yuna se faufile, mangeant son pain dans un coin.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
@@ -147,7 +147,7 @@
     },
     "lunch3_expose_15": {
         "name": "{name}",
-        "text": "*Je ne trouve rien à dire. Minsu a raison.*"
+        "text": "*La bouche ne tombe pas. Minsu détourne la tête.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Pas de points d’exclamation. — Les points d’exclamation ont disparu des phrases de Dain. C’est la première fois.*"
+        "text": "*Il n'y a pas de point d'exclamation. La fin de la phrase de Dain est étrangement calme.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "*J'ai proposé de tout partager. Une proposition de paix faite bien trop tard. Les trois sourient, mais personne ne tend la main en premier.*"
+        "text": "*Nous avons tous dit que nous devrions le partager ensemble. Tous les trois rient drôlement, mais personne ne tend la main en premier.*"
     },
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
@@ -270,7 +270,7 @@
     },
     "lunch3_dain_witness_1": {
         "name": "{name}",
-        "text": "*Yuna passe dans le couloir et jette un œil au gymnase. Dain rit. Yuna accélère le pas. À la pause suivante, la place de Yuna est vide.*"
+        "text": "*Yuna regarde à l'intérieur de la salle de sport depuis le couloir. Dain sourit. Yuna s'éloigne sans rien dire. À la prochaine pause, le siège de Yuna est vide.*"
     },
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
@@ -315,11 +315,11 @@
     },
     "lunch3_meal_10_c": {
         "name": "{name}",
-        "text": "*Les baguettes de Seoyeon s'arrêtent. Elle reprend contenance. Le visage de la présidente du conseil revient. — Je sais que ce n'est pas rien. Je m'en veux.*"
+        "text": "*Les baguettes de Seoyeon s'arrêtent un instant. Le visage du président du conseil étudiant revient bientôt, mais le nem reste.*"
     },
     "lunch3_meal_10_d": {
         "name": "{name}",
-        "text": "*Tous ensemble ?! Super !! Les points d'exclamation sont bien là. — Mais sa voix est un demi-ton plus basse. D'habitude elle aurait tiré des chaises, mais aujourd'hui elle ne bouge pas de sa place.*"
+        "text": "*Dain dit \"Tous ensemble?!\" et rit. Normalement, j'aurais traîné une chaise, mais aujourd'hui, je n'ai pas bougé de là où j'étais assis.*"
     },
     "lunch3_meal_10_e": {
         "name": "{name}",

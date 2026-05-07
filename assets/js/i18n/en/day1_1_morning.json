@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*April. Cherry blossoms drift through the air. My uniform still feels stiff. There's a faint smell of starch. Starting today, I'm a student at this school. A transfer student. First day.*"
+        "text": "*april. Cherry blossoms are fluttering. The school uniform is still stiff. There is a faint smell of grass. The transfer document is folded and pressed in the bag.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*An unfamiliar school gate. Students drifted past in small groups. The creases on my uniform were still sharp. By the gate, a girl with long black hair adjusted her glasses and checked the time. When I stopped, she looked up too.*"
+        "text": "*In front of the unfamiliar school gate. Only my school uniform still has fold lines. Next to the school gate, a female student with long black hair adjusts her glasses and checks the time. When I stop, she looks up too.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -262,7 +262,7 @@
     },
     "hallway_6_c": {
         "name": "{name}",
-        "text": "*Half a second. Nothing, probably — but it lingers.*"
+        "text": "*The edge of the clipboard moves again one beat later.*"
     },
     "hallway_7": {
         "name": "Seoyeon",

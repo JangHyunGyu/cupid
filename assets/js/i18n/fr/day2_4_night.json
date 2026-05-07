@@ -158,11 +158,11 @@
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Dans mes notes, des phrases non envoyées s'alignent les unes après les autres. 'Je t'aime bien.' 'Madame, sur le bureau de Sojeong—' 'Aujourd'hui aussi—' Toutes coupées à la première ligne. Dernière modification : 2h17 du matin.*"
+        "text": "*There are rows of unsent sentences left in the notepad. 'je t'aime bien.' ‘Teacher, Sojung is at the desk—’ ‘Today as well—’ Everything was cut off at the first line. Dernière modification à 02h17.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*En dessous de la 38ᵉ note, il n'y a rien. Seul le titre 39 est vide. Le lendemain, la place de Sojeong est restée vide jusqu'au bout. Sur les papiers de transfert, la ligne de signature du tuteur porte le nom de son père.*"
+        "text": "*Il n'y a rien en dessous de la triple croche. Seul le 39ème titre est vide. Le lendemain, le siège de Sojung était vide jusqu’à la fin. Le nom du père est inscrit dans la section signature du tuteur du document de transfert.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -242,7 +242,7 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Ces mots tournent dans ma tête. Je n'ai toujours pas répondu. Hier, c'était juste qu'ils m'occupaient l'esprit. Aujourd'hui — les mots 'je veux les voir' sont remontés jusqu'à ma gorge avant de redescendre.*"
+        "text": "*Ces mots me reviennent sans cesse. Je n'ai pas encore reçu de réponse. Au lieu de cela, le nombre de fois que vous ouvrez et fermez la fenêtre de notification augmente.*"
     },
     "night2_end_3_b": {
         "name": "{name}",

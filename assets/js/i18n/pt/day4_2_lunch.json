@@ -101,7 +101,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Em frente ao café. Yuna encostada na parede. Vestido preto, bolsa tiracolo pequena. A Yuna era assim? — É a primeira vez que vejo ela fora do uniforme.*"
+        "text": "*Em frente ao café. Yuna está encostada na parede. Um vestido preto e uma pequena bolsa transversal. Como não existe uniforme escolar, as linhas da tatuagem são o que primeiro chama a atenção.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -305,7 +305,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'Não precisa do joelho'. — Soltou leve, mas tem peso ali.*"
+        "text": "*'Porque não preciso usar os joelhos.' Dain diz com um sorriso, mas dá uma olhada em seus joelhos refletidos no vidro da janela.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",

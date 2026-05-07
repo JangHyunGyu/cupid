@@ -63,7 +63,7 @@
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
-        "text": "*Ri pelo nariz* Estranhamente convincente."
+        "text": "*suspiro*Isso é surpreendentemente persuasivo."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Ontem foi no ritmo da presidente. Hoje quis conhecer o seu."
+        "text": "Como o presidente me arrastou ontem, também fiquei curioso sobre você hoje."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*Yuna sorri. Quase imperceptível. — Mas eu vi. Talvez tenha vindo até aqui só por esse sorriso.*"
+        "text": "*Os cantos da boca de Yuna sobem por uma fração de segundo. O som de virar as páginas de um livro está mais leve do que antes.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -220,7 +220,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Depois do 'tinha', silêncio. Pretérito. — O silêncio da Yuna sempre esconde uma história. Piso em ovos.*",
+        "text": "*Não há palavra depois de ‘havia’. Yuna enfia a ponta do marcador no livro.*",
         "choices": [
             "E essa pessoa, agora?",
             "Não pergunto. Só sento do lado."
@@ -232,7 +232,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
-        "text": "*A voz da Yuna ficou um tom mais baixa.*"
+        "text": "*O dedo de Yuna pressiona firmemente o final do marcador.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -336,7 +336,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Parecia que ela queria ouvir mais — mas segurei de propósito. A gente tá comendo quando a porta do terraço abre. Dain subiu.*"
+        "text": "*Seoyeon não diz mais nada. Enquanto almoçamos, a porta do telhado se abre. Dain acordou.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -428,7 +428,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
-        "text": "*Onde a mão da Seoyeon passou ainda tá queimando. — E os olhos surpresos da Dain não saem da minha cabeça.*"
+        "text": "*Acabei de limpar a boca, mas o clima do almoço foi interrompido por um momento. Meus olhos se movem na direção que Dain viu.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -488,7 +488,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ai, tá bom... Dois pães doces aqui..."
+        "text": "Ok, ok. Tia, dois Soboro."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*As orelhas dela. Vermelhas. — As meninas dessa escola têm orelhas bem sinceras.*"
+        "text": "*Dain dobra o papel de embrulho desnecessariamente por muito tempo. Falo menos do que antes.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
@@ -597,11 +597,11 @@
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*Tira um algodão com antisséptico — e passa devagar. Pega um band-aid. Colar um band-aid — é 30 segundos, por que tanto capricho?*"
+        "text": "*Algodão embebido em desinfetante paira ao redor da ferida por muito tempo. A borda da faixa pressiona firmemente as costas da mão.*"
     },
     "lunch2_dain_end_l": {
         "name": "Enfermeira",
-        "text": "*Colando o band-aid* Aqui... assim... pronto."
+        "text": "*Aplica o curativo*Não se mova....É isso."
     },
     "lunch2_dain_end_m": {
         "name": "{name}",
@@ -653,7 +653,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "{name}",
-        "text": "*A enfermeira para. E aí — a voz dela abaixa um tom.*"
+        "text": "*A professora de saúde para de dobrar a embalagem da banda e olha para mim.*"
     },
     "lunch2_dain_end_z": {
         "name": "Enfermeira",
@@ -661,7 +661,7 @@
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*A brincadeira sumiu. Depois voltou. — Mas aquilo ali, eu vi.*"
+        "text": "*Não houve risada por um momento. Logo nos reunimos novamente, mas já era tarde demais.*"
     },
     "lunch2_dain_end_c2": {
         "name": "Enfermeira",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*Agora mesmo — a voz dela vacilou um pouco.*"
+        "text": "*O papel de embrulho recém-dobrado é colocado torto na borda da mesa.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Enfermeira",

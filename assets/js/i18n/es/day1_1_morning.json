@@ -1,7 +1,7 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Abril. Los pétalos de cerezo revolotean en el aire. El uniforme aún está tieso. Hay un tenue olor a hierba. Desde hoy soy alumno de este colegio. Me he cambiado de escuela. Es la primera vez.*"
+        "text": "*abril. Las flores de cerezo revolotean. El uniforme escolar todavía está rígido. Hay un ligero olor a hierba. El documento de transferencia está doblado y prensado en la bolsa.*"
     },
     "start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Un portón escolar desconocido. Los estudiantes pasaban en pequeños grupos. Solo mi uniforme aún conservaba las marcas del planchado. Junto al portón, una chica de largo pelo negro se ajustó las gafas y miró la hora. Cuando me detuve, ella también levantó la vista.*"
+        "text": "*Frente a la puerta desconocida de la escuela. Sólo mi uniforme escolar todavía tiene líneas dobladas. Junto a la puerta de la escuela, una estudiante de largo cabello negro se ajusta las gafas y mira la hora. Cuando me detengo, ella también mira hacia arriba.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -262,7 +262,7 @@
     },
     "hallway_6_c": {
         "name": "{name}",
-        "text": "*Una vacilación de medio segundo. Probablemente nada — pero se queda.*"
+        "text": "*El borde del portapapeles se mueve nuevamente un tiempo después.*"
     },
     "hallway_7": {
         "name": "Seoyeon",

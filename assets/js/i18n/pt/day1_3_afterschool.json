@@ -106,7 +106,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Acena e sai correndo. — Na hora que freou, levou a mão ao joelho direito por um segundo. Meio segundo. Tirou a mão na hora, mas eu vi.*"
+        "text": "*Acene com as mãos e corra. Ao parar repentinamente, segure o joelho direito e solte imediatamente a mão.*"
     },
     "after_miss_dain_7": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "after_miss_yuna_4": {
         "name": "{name}",
-        "text": "*E volta a andar. Foi só isso. Mas — tem algo nela que fica.*"
+        "text": "*E então caminha novamente. Somente o polegar tocando o canto do marcador fica visível.*"
     },
     "after_miss_seoyeon_1": {
         "name": "{name}",
@@ -228,7 +228,7 @@
     },
     "after_homeroom_ok_4": {
         "name": "{name}",
-        "text": "*Fala como se fosse trabalho, mas essa frase saiu mais pessoal do que ela queria.*"
+        "text": "*O professor da sala olha para os documentos, mas o final da prancheta não se move mais.*"
     },
     "after_homeroom_ok_5": {
         "name": "Professora",
@@ -236,7 +236,7 @@
     },
     "after_homeroom_ok_6": {
         "name": "{name}",
-        "text": "*Ela volta a virar pra mesa. Dou um tchau curto e fecho a porta, mas a conversa fica ecoando mais do que eu esperava. — Não era só obrigação mesmo.*"
+        "text": "*O professor da sala se volta para a mesa novamente. Diga olá brevemente e feche a porta do escritório. A história das máquinas de venda automática de sucos permanece em meus ouvidos.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professora",
@@ -268,7 +268,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Interesse pedagógico'. — Então ela também embrulha o que sente em papel bonito.*"
+        "text": "*'Interesse educacional'. Mesmo depois de dizer isso, o professor da sala apenas olha para o canto da folha de presença.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -308,7 +308,7 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Mais cedo, na sala, ela tinha dito 'gravo nome na primeira'. — Repetir duas vezes significa alguma coisa.*"
+        "text": "*O segundo nome chamado segue você até o final do corredor.*"
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
@@ -458,7 +458,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Enfermeira",
-        "text": "Se der tontura de novo, aparece. A enfermaria tá sempre aberta. Mas não vai segurando e chegando tarde. Isso me preocupa."
+        "text": "Se você sentir tontura novamente, volte. Porque a sala de saúde está sempre aberta. Em vez disso, segure-se e não chegue atrasado. Eu poderia repreendê-lo primeiro."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
@@ -478,15 +478,15 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Enfermeira",
-        "text": "Aquilo que você disse antes — obrigada pela preocupação. Primeira vez que ouço isso de um paciente."
+        "text": "O que eu disse antes – obrigado pela sua preocupação. Nunca pensei que ouviria essas palavras de um paciente."
     },
     "after_nurse_enter_11_g": {
         "name": "{name}",
-        "text": "*A expressão é de quem não tá acostumada a receber preocupação de volta. — Parece alguém que sempre foi o lado que cuida.*"
+        "text": "*A professora de saúde larga o copo d’água e começa a rir.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Enfermeira",
-        "text": "Você disse que era aconchegante, né? — Confesso, isso me deixou feliz."
+        "text": "Você disse que era aconchegante antes, certo? — Ainda me lembro dessas palavras."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
@@ -514,7 +514,7 @@
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Dou um sorriso e aceno. Reparo no curativo no dorso da mão dela. — Uma enfermaria estranha. Mas do tipo bom.*"
+        "text": "*Sorria levemente e acene. Olhe para as costas da sua mão com a faixa. O cheiro de desinfetante permanece em você por mais tempo do que o esperado.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",

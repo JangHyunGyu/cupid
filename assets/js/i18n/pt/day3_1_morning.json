@@ -106,11 +106,11 @@
     },
     "morning3_yuna_gate_6": {
         "name": "{name}",
-        "text": "*Alguém que vira a noite lendo e chega atrasada. — Jeitinho da Yuna. E eu gosto disso. Yuna mexe na mochila em silêncio, tira um pãozinho, parte no meio e me oferece. Um bilhete aparece pelo canto da mochila.*"
+        "text": "*Uma pessoa que lê a noite toda e chega tarde. Yuna vasculhou sua bolsa sem dizer uma palavra, depois cortou um pão pequeno ao meio e estendeu-o. Uma nota fica visível dentro da bolsa.*"
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
-        "text": "*O bilhete: Achei que você não tinha tomado café. Podia ter falado, mas prefere escrever. — Essa é a Yuna.*"
+        "text": "*Nota: pensei que você não tivesse tomado café da manhã. Há um pouco de tinta roxa clara no fundo do saco de pão.*"
     },
     "morning3_yuna_gate_7": {
         "name": "{name}",
@@ -234,11 +234,11 @@
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*A mão dela tá parada em cima do papel manuscrito. Pelas folhas viradas, dá pra ver uma caligrafia densa. Ela disse que era papelada de trabalho — mas documento escolar é impresso em A4. Ninguém escreve à mão em folha de redação.*"
+        "text": "*A caligrafia está espalhada entre os papéis virados. A palma da mão do professor cobre o canto do papel.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "{name}",
-        "text": "*A expressão dela volta ao normal num piscar. O rosto indiferente de sempre. — A troca foi rápida demais.*"
+        "text": "*A expressão do professor da sala retorna à sua habitual indiferença. É um manuscrito, mas ainda está virado.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Professora",
@@ -334,11 +334,11 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Então era isso por trás daquela frieza. — Um manuscrito inacabado na gaveta da mesa dela. Sete anos.*"
+        "text": "*Manuscrito inacabado na gaveta da escrivaninha. Uma história que estava encerrada há 7 anos foi publicada aqui.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Professora",
-        "text": "*Ficando séria de repente* ...Isso não pode sair daqui. Se um aluno descobre esse lado da professora — a minha autoridade — bom, não que eu tenha muita."
+        "text": "*Corando de repente*...Você não pode contar a ninguém sobre isso. Seria difícil se os alunos descobrissem que seu professor era assim. Bem, para começar, eu não tinha muita autoridade."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "hidden_homeroom_d3_reveal_choice_a": {
         "name": "Professora",
-        "text": "*Hesita. A mão que tocava o papel para.* ...Persistência. Você é a primeira pessoa a enxergar assim."
+        "text": "*Pausa. A mão que tocava o papel manuscrito para.*...Fica menos mal quando ouço que isso se chama persistência."
     },
     "hidden_homeroom_d3_reveal_choice_b": {
         "name": "Professora",
@@ -378,7 +378,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*A professora sorri. Não é o sorriso seco de sempre — é um sorriso meio desajeitado. Como quem esqueceu como se sorri.*"
+        "text": "*A professora da sala ri. Os cantos da boca sobem desajeitadamente e as mãos permanecem no manuscrito.*"
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Professora",
@@ -386,7 +386,7 @@
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
-        "text": "*O sorriso é desajeitado. — Essa falta de jeito apertou algo em mim.*"
+        "text": "*Por causa daquela risada estranha, o som do ponteiro dos segundos na sala de aula vazia fica mais alto.*"
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Professora",
@@ -394,7 +394,7 @@
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "{name}",
-        "text": "*Ela chamou sete anos de 'não ter conseguido desistir'. Mas uma frase mudou a perspectiva dela — e os olhos dela tremeram.*"
+        "text": "*O professor da sala de aula pressiona o canto do manuscrito com o polegar. O papel está ligeiramente amassado.*"
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Professora",
@@ -402,7 +402,7 @@
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
-        "text": "*O ponteiro de segundos do relógio é alto na sala vazia. Marcas riscadas demais no papel para ser documentação oficial. Deveria desviar o olhar, mas meu olhar não cai.*"
+        "text": "*O tique-taque do relógio em uma sala de aula vazia é barulhento. O olhar não se desvia da frase com traços superpostos de apagamento.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Professora",
@@ -468,7 +468,7 @@
     },
     "hidden_nurse_d3_3_b": {
         "name": "{name}",
-        "text": "*A enfermeira me olha por um instante. A brincadeira desaparece.*"
+        "text": "*A professora de saúde larga o copo.*"
     },
     "hidden_nurse_d3_3_c": {
         "name": "Enfermeira",
@@ -476,11 +476,11 @@
     },
     "hidden_nurse_d3_3_d": {
         "name": "{name}",
-        "text": "*A voz mudou. Não é mais brincadeira. — Quando essa pessoa fica séria, o clima muda completamente. Sento na maca. A enfermeira me oferece um copo de água.*"
+        "text": "*A professora de saúde larga o copo. Os movimentos leves das minhas mãos até agora pararam. Sente-se na cama.*"
     },
     "hidden_nurse_d3_4": {
         "name": "Enfermeira",
-        "text": "*Fechando a cortina* ...Senta. Pode ficar à vontade aqui. *Me entrega um copo de água* ...Pode falar no seu tempo."
+        "text": "*fecha a cortina e lhe entrega um copo d'água*...sente-se. Você pode se sentir confortável aqui. Você pode falar devagar."
     },
     "hidden_nurse_d3_5_b": {
         "name": "{name}",
@@ -492,7 +492,7 @@
     },
     "hidden_nurse_d3_5_d": {
         "name": "{name}",
-        "text": "*Um 'parecido' e a postura mudou completamente. — Ela se abre quando sente que é compreendida.*"
+        "text": "*Depois de dizer ‘semelhante’, a mão do professor de saúde faz uma breve pausa no copo d’água.*"
     },
     "hidden_nurse_d3_5_e": {
         "name": "{name}",
@@ -504,7 +504,7 @@
     },
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
-        "text": "Várias pessoas me puxando ao mesmo tempo, e eu com essa sensação de que preciso escolher só uma..."
+        "text": "Estou interessado nos três, mas acho que terei que decidir por uma pessoa no final."
     },
     "hidden_nurse_d3_5_h": {
         "name": "{name}",
@@ -528,7 +528,7 @@
     },
     "hidden_nurse_d3_5_m": {
         "name": "Enfermeira",
-        "text": "Uma professora deveria estar fazendo esse tipo de aconselhamento... *apoia o queixo na mão* Mas vou ouvir. A cama da enfermaria está vazia mesmo."
+        "text": "Isso vai para os cuidados de saúde...*Corta o queixo*Vou ouvir de qualquer maneira. Porque a cama está vazia."
     },
     "hidden_nurse_d3_5_n": {
         "name": "{name}",
@@ -568,7 +568,7 @@
     },
     "hidden_nurse_d3_6_b": {
         "name": "{name}",
-        "text": "*Ela fala de pacientes, mas isso se sobrepõe à minha situação de um jeito estranho.*"
+        "text": "*A professora de saúde larga o copo d'água. A água no fundo do copo se espalha em círculo.*"
     },
     "hidden_nurse_d3_6_c": {
         "name": "Enfermeira",
@@ -600,7 +600,7 @@
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
-        "text": "*A brincadeira sumiu completamente.*"
+        "text": "*Os dedos que seguram o copo param.*"
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
@@ -620,11 +620,11 @@
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
-        "text": "*O curativo na minha mão está levemente solto. Alguém que cede a cama quando digo que estou doente. Alguém que olha para trás mesmo quando digo que não estou. Entre elas, há um único crachá: 'Enfermeira Escolar'.*"
+        "text": "*A faixa nas costas da mão está ligeiramente rasgada. A cortina balança entre a cama e o crachá. As três letras “professor de saúde” são particularmente claras.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*O som de papel sendo dobrado vem de dentro da enfermaria. Cartas inacabadas para Yujin. Minha idade está próxima demais para ser colocada ao lado daquele nome. Seguro a maçaneta, depois solto.*"
+        "text": "*Ouve-se o som de papel sendo dobrado dentro da sala de saúde. Cartas escritas para Eugene. Segure a alça e solte-a.*"
     },
     "hidden_nurse_d3_choice2": {
         "name": "{name}",
@@ -652,7 +652,7 @@
     },
     "hidden_nurse_d3_9_c": {
         "name": "{name}",
-        "text": "*A enfermeira — não tá sorrindo. Mexe no estetoscópio, olhando pela janela. Como quem nem se deu conta do que acabou de dizer. 0,7 segundos.*"
+        "text": "*A professora de saúde não está sorrindo. Eu mexo no meu estetoscópio e olho pela janela.*"
     },
     "hidden_nurse_d3_9_d": {
         "name": "Enfermeira",
@@ -660,7 +660,7 @@
     },
     "hidden_nurse_d3_9_e": {
         "name": "{name}",
-        "text": "*Brincadeira. — Né? Fico pensando 'né, né', mas meus pés não se mexem. Aquela expressão de 0,7 segundos — não tinha brincadeira nenhuma.*"
+        "text": "*Tentei fingir que era uma piada, mas meus pés não caíam. Há apenas um cheiro forte de desinfetante além da cortina.*"
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",

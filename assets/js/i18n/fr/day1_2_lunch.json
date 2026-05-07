@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "{name}",
-        "text": "*Elle esquive les questions avec habileté. On mange un moment en silence. La brise est agréable. La vue de l'école depuis le toit est — plus large que je ne pensais.*"
+        "text": "*Seoyeon mange au lieu de répondre. Le vent est sympa. L'école vue du toit est plus grande que vous ne le pensez.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -448,7 +448,7 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*Si je la taquine davantage, elle va tout de suite mettre une limite. Je fais juste semblant de n'avoir rien vu.*"
+        "text": "*L'étiquette de la bouteille d'eau tourne du bout des doigts. Faites comme si vous ne saviez pas et levez vos baguettes.*"
     },
     "lunch_dain_12_b": {
         "name": "Dain",
@@ -460,6 +460,6 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Un vieux marque-page dépasse du livre de Yuna. Quelque chose y est écrit, mais je n'arrive pas à le lire. Sans y penser, Yuna pose la main dessus. Je tire un livre au hasard de l'étagère la plus proche.*"
+        "text": "*Il y a un vieux marque-page sur le bureau de Yuna. L'écriture est difficile à voir. Yuna pose la main dessus. Je sors un livre au hasard d'une étagère à proximité.*"
     }
 }

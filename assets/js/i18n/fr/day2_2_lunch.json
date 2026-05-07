@@ -63,7 +63,7 @@
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
-        "text": "*Petit rire* C'est étrangement convaincant."
+        "text": "*soupir*C'est étonnamment convaincant."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -83,7 +83,7 @@
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Hier c'était le rythme de la présidente. Aujourd'hui je voulais voir le tien aussi."
+        "text": "Depuis que le président m'a entraîné hier, j'étais également curieux de vous connaître aujourd'hui."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*Yuna sourit à peine. Presque invisible. — Mais je l'ai vu. Je suis venu ici pour voir ce sourire ?*"
+        "text": "*Les coins de la bouche de Yuna se lèvent pendant une fraction de seconde. Le bruit de tourner les pages d’un livre est plus léger qu’auparavant.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -216,7 +216,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Rien après 'il y avait'. L'imparfait. — Le silence de Yuna raconte toujours une histoire. Je deviens prudent.*",
+        "text": "*Il n’y a pas de mot après « il y avait ». Yuna pousse la fin du marque-page dans le livre.*",
         "choices": [
             "Cette personne, où est-elle maintenant ?",
             "Ne pas demander et s'asseoir à côté d'elle"
@@ -228,7 +228,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "{name}",
-        "text": "*La voix de Yuna a baissé d'un ton.*"
+        "text": "*Le doigt de Yuna appuie fermement sur l'extrémité du marque-page.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -328,7 +328,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*On aurait dit qu'elle voulait en entendre plus — mais je me suis retenu exprès. On mange quand — la porte du toit s'ouvre. Dain est montée.*"
+        "text": "*Seoyeon n'en dit pas plus. Alors que je mange un panier-repas, la porte du toit s'ouvre. Dain est debout.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -408,7 +408,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "{name}",
-        "text": "*Là où la main de Seoyeon est passée, c'est encore brûlant. — Et les yeux surpris de Dain reviennent sans cesse.*"
+        "text": "*Je viens de m'essuyer la bouche, mais l'ambiance du déjeuner a été interrompue pendant un moment. Mes yeux se déplacent dans la direction que Dain a vue.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -468,7 +468,7 @@
     },
     "lunch2_dain_8": {
         "name": "Dain",
-        "text": "Ah, d'accord... Deux pains soboro s'il vous plaît..."
+        "text": "D'accord, d'accord. Tante, deux Soboro."
     },
     "lunch2_dain_9": {
         "name": "{name}",
@@ -513,7 +513,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "{name}",
-        "text": "*Ses lobes d'oreilles. Rouges. — Les filles de cette école ont des oreilles très honnêtes.*"
+        "text": "*Dain plie le papier d'emballage inutilement pendant longtemps. Je parle moins qu'avant.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
@@ -597,11 +597,11 @@
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*Elle sort un coton imbibé de désinfectant — et tamponne lentement. Sort un pansement. Mettre un pansement — ça devrait prendre trente secondes, pourquoi est-elle aussi méticuleuse ?*"
+        "text": "*Le coton imbibé de désinfectant flotte longuement autour de la plaie. Le bord de la bande appuie fermement contre le dos de la main.*"
     },
     "lunch2_dain_end_l": {
         "name": "Infirmière",
-        "text": "*Posant le pansement* Là... comme ça... voilà, c'est fait."
+        "text": "*Applique un bandage*Ne bouge pas....C'est ça."
     },
     "lunch2_dain_end_m": {
         "name": "{name}",
@@ -653,7 +653,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "{name}",
-        "text": "*L'infirmière marque une pause. Et puis — sa voix descend d'un ton.*"
+        "text": "*Le professeur de santé arrête de plier le papier d'emballage et me regarde.*"
     },
     "lunch2_dain_end_z": {
         "name": "Infirmière",
@@ -661,7 +661,7 @@
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*La malice a disparu. Puis elle revient. — Ce truc, je l'ai vu.*"
+        "text": "*Il n'y a pas eu de rire pendant un instant. Nous avons vite rejoint le groupe, mais il était trop tard.*"
     },
     "lunch2_dain_end_c2": {
         "name": "Infirmière",
@@ -669,7 +669,7 @@
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*À l'instant — sa voix a légèrement tremblé.*"
+        "text": "*Le papier d'emballage fraîchement plié est placé de travers sur le bord du bureau.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Infirmière",

@@ -13,7 +13,7 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*Ich kann nicht so leicht sagen, dass es mir leid tut. Das sind keine Gefühle, die sich mit diesem einen Wort ordnen lassen. Also nur in meinem Herzen, ganz langsam. Danke.*"
+        "text": "*Es fällt mir nicht leicht, mich zu entschuldigen. Ich habe vor dem Schultor nur einmal die Hand gehoben. Danke schön.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Hab ich mir schon gedacht. Du hast von Anfang an nie so funktioniert, wie ich's mir ausgerechnet hatte."
+        "text": "Nun, ich habe es erwartet. Weil du dich nicht so bewegt hast, wie ich es von Anfang an erwartet hatte."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
-        "text": "*Die Ausrufezeichen sind noch da. — Dain bleibt bis zum Schluss Dain. Das ist ihre Stärke.*"
+        "text": "*Das Ausrufezeichen ist lebendig. Dain wirft den Volleyball hoch und fängt ihn wieder.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -120,7 +120,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*Meine letzten Schritte teilen sich in zwei Wege. Die Person, der ich bereits ein Versprechen gegeben habe, und das Gefühl, das ich bis zum Schluss nicht länger übersehen konnte.*"
+        "text": "*Der letzte Schritt teilt sich in zwei Teile. Bei jemandem, den ich bereits versprochen hatte, konnte ich am Ende nicht durch das Schultor gehen.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
@@ -219,7 +219,7 @@
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
-        "text": "*Die Ausrufezeichen verschwinden. Ihre Stimme wird leise. — Ihre Augen füllen sich.*"
+        "text": "*Dains Lippen zittern. Ich atme tief ein, bevor ich antworte.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
@@ -256,7 +256,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*Ich habe nichts vorbereitet, aber seltsamerweise will ich diesmal nicht weglaufen. Yuna drängt mich nicht.*"
+        "text": "*Ich habe nichts vorbereitet, aber dieses Mal bewegt sich mein Fuß nicht zurück. Yuna drängt nicht.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
@@ -363,7 +363,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Mit Gefühlen ohne klare Antwort führten uns unsere Schritte in den Park.*"
+        "text": "*Unschlüssige Schritte gingen weiter in Richtung Park.*"
     },
     "after5_confess_no": {
         "name": "{name}",

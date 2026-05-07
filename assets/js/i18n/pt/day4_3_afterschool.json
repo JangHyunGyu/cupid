@@ -65,7 +65,7 @@
     },
     "confess_seo_yes_8": {
         "name": "{name}",
-        "text": "*Seoyeon não diz nada. Os lábios tremem. Não é mais a presidente do grêmio — só uma garota, parada ali.*"
+        "text": "*Seoyeon não diz nada. Meus lábios estão tremendo. Não há prancheta ou braçadeira de presidente do conselho estudantil.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -157,7 +157,7 @@
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*Na frente da Yuna, não precisa de discurso longo. Ela lê nas entrelinhas.*"
+        "text": "*Fale menos na frente de Yuna. Eu sinto que estou sendo pego de surpresa.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*O dia em que minhas palavras passaram as da Yuna. — A primeira vez.*"
+        "text": "*Assim que termino de falar, até a poeira da sala fica quieta.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
@@ -177,11 +177,11 @@
     },
     "confess_yuna_yes_8": {
         "name": "{name}",
-        "text": "*A expressão neutra da Yuna se quebra. A voz preguiçosa some, substituída por um sussurro mínimo — quase inaudível. Ela aperta a manga com força.*"
+        "text": "*Yuna aperta as mangas com força sem olhar na minha direção.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*Ela aperta a manga com força.*"
+        "text": "*As pontas amassadas das mangas desaparecem na palma da mão.*"
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'Muito.' — Dain é sempre assim. Curta e direta. Por isso a gente acredita.*"
+        "text": "*'Extremamente'. A resposta curta é que as mãos de Dain seguram a bola com mais força.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

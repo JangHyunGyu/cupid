@@ -73,7 +73,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Devant le café. Yuna est adossée au mur. Une robe noire et un petit sac bandoulière. Yuna avait cette allure ? — C'est la première fois que je la vois sans uniforme.*"
+        "text": "*Devant le café. Yuna se tient contre le mur. Une robe noire et un petit sac croisé. Puisqu’il n’y a pas d’uniforme scolaire, ce sont les lignes du tatouage qui attirent le regard en premier.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'N’a pas besoin des genoux.' — Elle l’a dit légèrement, mais il y a du poids derrière.*"
+        "text": "*'Parce que je n'ai pas besoin d'utiliser mes genoux.' dit Dain avec un sourire, mais il jette un coup d'œil à ses genoux reflétés dans la vitre.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
