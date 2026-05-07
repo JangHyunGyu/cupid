@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
-        "text": "*느낌표가 살아 있다. — 다인은 끝까지 다인이다. 그게 이 사람의 강함이다.*"
+        "text": "*느낌표가 살아 있다. 다인은 배구공을 한 번 더 높이 던지고 받는다.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*미안하다는 말은 쉽게 못 하겠다. 그 말로 정리되는 마음들이 아니니까. 그냥 마음속으로만, 천천히. 고마웠어.*"
+        "text": "*미안하다는 말은 쉽게 못 하겠다. 교문 앞에서 손만 한 번 들었다. 고마웠어.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
@@ -120,7 +120,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*마지막 발걸음이 두 갈래로 갈라진다. 이미 약속한 사람과, 끝내 모른 척하지 못한 마음.*"
+        "text": "*마지막 발걸음이 두 갈래로 갈라진다. 이미 약속한 사람과, 끝내 지나치지 못한 교문 쪽.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
@@ -244,7 +244,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*준비한 말은 없는데, 이상하게 이번엔 도망치고 싶지 않다. 유나는 재촉하지 않는다.*"
+        "text": "*준비한 말은 없는데, 이번엔 발이 뒤로 물러나지 않는다. 유나는 재촉하지 않는다.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "유나",
@@ -351,7 +351,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*결론이 나지 않은 마음을 안은 채, 발걸음은 공원으로 이어졌다.*"
+        "text": "*결론이 나지 않은 발걸음이 공원 쪽으로 이어졌다.*"
     },
     "after5_confess_no": {
         "name": "{name}",

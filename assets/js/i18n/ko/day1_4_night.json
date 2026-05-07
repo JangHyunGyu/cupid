@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*'...'만 보내고 끝이다. 뭔가 치다가 지운 흔적.*"
+        "text": "*입력 중 표시가 켜졌다 꺼진다. 도착한 건 '...'뿐이다.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*이 사람은 거절이라는 개념이 없는 건가.*"
+        "text": "*답장창에는 이미 '콜'이 찍혀 있다.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",
