@@ -82,7 +82,7 @@
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Mdr tu supportes pas l'épicé ?!"
+        "text": "Tu supportes pas l'épicé ?"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "mdr t'es pas possible. Tu DOIS venir au gymnase demain !!"
+        "text": "Hé, sérieux, t'es quoi au juste ? Viens au gymnase demain."
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",

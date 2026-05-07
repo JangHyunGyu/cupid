@@ -157,7 +157,7 @@
     },
     "date_yuna_bookstore_2_b": {
         "name": "{name}",
-        "text": "처음이야."
+        "text": "와 본 적 없어."
     },
     "date_yuna_bookstore_3": {
         "name": "유나",
@@ -301,7 +301,7 @@
     },
     "date_dain_rhythm_3": {
         "name": "다인",
-        "text": "ㅋㅋㅋ 당연하지!! 이건 무릎 안 써도 되니까!!"
+        "text": "당연하지. 이건 무릎 안 써도 되니까."
     },
     "date_dain_knee": {
         "name": "{name}",

@@ -294,6 +294,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "classroom_yuna_2": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/yuna_bored.png",
         "next": "classroom_yuna_4"
     },

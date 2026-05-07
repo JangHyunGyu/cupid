@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*I want to be remembered not as a stand-in, but as the person standing here right now. And I think Yuna wants the same.*"
+        "text": "*Not as someone's empty space, but as the person standing here right now. That's how I want to stay. Yuna too. Me too.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -562,7 +562,7 @@
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Hey, it's true I'm not completely over it yet. ...But I'm at least at the point where I can throw you the ball again."
+        "text": "Hey, it's not like everything's fine yet. ...But I'm okay enough to throw you the ball again."
     },
     "good_2_dain": {
         "name": "{name}",

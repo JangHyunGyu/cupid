@@ -1008,14 +1008,20 @@ class GameEngine {
             backgroundId,
             isRegisteredCG,
             sceneNight: scene.night,
+            backgroundVariant: scene.backgroundVariant,
             nightFromFile,
             isNightScene,
             isSunsetScene,
-            applied: { night: isRegisteredCG ? false : isNightScene, sunset: isRegisteredCG ? false : isSunsetScene }
+            applied: {
+                night: isRegisteredCG ? false : isNightScene,
+                sunset: isRegisteredCG ? false : isSunsetScene,
+                variant: isRegisteredCG ? null : scene.backgroundVariant
+            }
         });
         this.sceneRenderer.setTimeFilter(
             isRegisteredCG ? false : isNightScene,
-            isRegisteredCG ? false : isSunsetScene
+            isRegisteredCG ? false : isSunsetScene,
+            isRegisteredCG ? null : scene.backgroundVariant
         );
         // CG 씬은 contain (가로 화면에서 잘림 방지)
         this.sceneRenderer.uiManager.bgLayer.classList.toggle('cg-fit', isRegisteredCG);

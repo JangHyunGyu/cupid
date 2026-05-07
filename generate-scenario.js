@@ -250,6 +250,7 @@ function formatScene(sceneId, scene, i18n) {
         lines.push(`- 배경: \`${img(scene.background)}\``);
     }
 
+    if (scene.backgroundVariant) lines.push(`- 배경톤: \`${scene.backgroundVariant}\``);
     if (scene.bgm) lines.push(`- BGM: \`${scene.bgm}\``);
     if (scene.type) lines.push(`- 타입: \`${scene.type}\``);
     if (scene.condition) lines.push(`- 조건: \`${scene.condition}\``);

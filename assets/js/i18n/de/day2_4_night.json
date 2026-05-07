@@ -82,7 +82,7 @@
     },
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Haha verträgst du kein Scharfes oder was?!"
+        "text": "Verträgst du kein scharfes Essen?"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "Alter hahaha. Du MUSST morgen in die Turnhalle kommen!!"
+        "text": "Ey, was bist du bitte? Komm morgen unbedingt in die Turnhalle."
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",

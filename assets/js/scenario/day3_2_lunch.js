@@ -227,6 +227,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "lunch3_dain_witness_1": {
         "background": "assets/images/background/school_hallway.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "lunch3_dain_witness_2b"
     },

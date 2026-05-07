@@ -14773,7 +14773,7 @@
     "good_4_yuna": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_4_yuna",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*사라진 사람의 그림자를 쫓고 있었다.*",
+      "_ko_text_preview": "*누군가의 빈자리 대신이 아니라, 지금 여기 있는 사람으로 남고 싶다. 유나도, 나도.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_4_yuna",
@@ -14989,7 +14989,7 @@
     "good_1_dain": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_1_dain",
       "_ko_name": "다인",
-      "_ko_text_preview": "야, 나 진심으로 화났거든? ...근데 네가 결국 나한테 온 거잖아. 그...",
+      "_ko_text_preview": "야, 아직 다 풀린 건 아니야. ...근데 너한테 다시 공 던질 정도는 됐거든.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_1_dain",

@@ -225,7 +225,7 @@
     },
     "date_dain_rhythm_3": {
         "name": "ダイン",
-        "text": "ｗｗｗ当然でしょ!! これは膝使わなくていいからね!!"
+        "text": "当然。これは膝使わないから。"
     },
     "date_dain_knee": {
         "name": "{name}",
@@ -297,7 +297,7 @@
     },
     "date_yuna_bookstore_2_b": {
         "name": "{name}",
-        "text": "初めて。"
+        "text": "来たことない。"
     },
     "date_yuna_earphone_2_b": {
         "name": "{name}",

@@ -308,6 +308,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_homeroom_d3_1": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d3_3"
     },
@@ -411,6 +412,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d3_reveal_2_d"
     },
@@ -446,6 +448,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_homeroom_d3_reveal_4": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d3_reveal_4_b"
     },
@@ -515,6 +518,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_smile.png",
         "next": "hidden_homeroom_d3_reveal_6_d"
     },
@@ -535,6 +539,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_smile.png",
         "next": "hidden_homeroom_d3_end"
     },
@@ -551,6 +556,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_homeroom_d3_freetalk": {
         "background": "assets/images/background/room_school.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/teacher_normal.png",
         "type": "free_talk",
         "next": "hidden_nurse_d3_check"

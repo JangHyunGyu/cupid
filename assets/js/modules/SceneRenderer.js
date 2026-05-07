@@ -335,10 +335,17 @@ class SceneRenderer {
      * @param {boolean} night - 밤 효과 여부
      * @param {boolean} sunset - 석양 효과 여부
      */
-    setTimeFilter(night, sunset) {
-        this.uiManager.bgLayer.classList.remove('night', 'sunset');
+    setTimeFilter(night, sunset, variant = null) {
+        const bgLayer = this.uiManager.bgLayer;
+        const variantClasses = Array.from(bgLayer.classList)
+            .filter(className => className.startsWith('bg-variant-'));
+        bgLayer.classList.remove('night', 'sunset', ...variantClasses);
         if (night) this.uiManager.bgLayer.classList.add('night');
         else if (sunset) this.uiManager.bgLayer.classList.add('sunset');
+
+        if (typeof variant === 'string' && /^[a-z0-9_-]+$/i.test(variant)) {
+            bgLayer.classList.add(`bg-variant-${variant.toLowerCase()}`);
+        }
     }
 
     /**

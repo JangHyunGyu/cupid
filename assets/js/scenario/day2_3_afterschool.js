@@ -93,7 +93,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "hidden_nurse_d2_choice2": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_shy.png",
         "choices": [
             { "next": "hidden_nurse_d2_choice2_a", "stats": {"Nurse":{"affinity":7}} },
             { "next": "hidden_nurse_d2_choice2_b", "stats": {"Nurse":{"affinity":0}} }
@@ -101,12 +101,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "hidden_nurse_d2_choice2_a": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_shy.png",
         "next": "hidden_nurse_d2_8"
     },
     "hidden_nurse_d2_choice2_b": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_shy.png",
         "next": "hidden_nurse_d2_8"
     },
     "hidden_nurse_d2_8": {
@@ -327,7 +327,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_seo_1": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "bgm": "sunset1.mp3",
         "setFlags": ["chose_seo_after2"],
         "stats": {"Seoyeon":{"affinity":8}},
@@ -350,7 +350,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_seo_4_b": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after2_seo_5"
     },
     "after2_seo_5": {
@@ -400,7 +400,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_seo_8b2": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after2_seo_8b3"
     },
     "after2_seo_8b3": {
@@ -510,7 +510,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_seo_neck_low_c": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_worried.png",
         "next": "after2_seo_neck_low_2"
     },
     "after2_seo_neck_low_2": {
@@ -598,6 +598,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_yuna_1_b": {
         "background": "assets/images/background/yuna_hideout.png",
+        "backgroundVariant": "empty",
         "character": "assets/images/characters/yuna_normal.png",
         "next": "after2_yuna_2"
     },
@@ -609,7 +610,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_yuna_2_b": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after2_yuna_3"
     },
     "after2_yuna_3": {
@@ -644,7 +645,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_yuna_8b": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after2_yuna_8c"
     },
     "after2_yuna_8c": {
@@ -674,7 +675,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_yuna_choice_pre3_b": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after2_yuna_choice"
     },
     "after2_yuna_choice": {
@@ -725,7 +726,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_yuna_skinship_1": {
         "background": "assets/images/background/yuna_hideout.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after2_yuna_skinship_2"
     },
     "after2_yuna_skinship_2": {

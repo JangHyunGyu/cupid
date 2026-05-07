@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Je veux qu'on se souvienne de moi non pas comme d'un substitut, mais comme de la personne qui est ici, maintenant. Yuna aussi. Moi aussi.*"
+        "text": "*Pas à la place d'une absence, mais comme la personne qui est là, maintenant. C'est comme ça que je veux rester. Yuna aussi. Moi aussi.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -562,7 +562,7 @@
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Hé, c'est vrai que tout n'est pas encore réglé. ...Mais j'en suis au point où je peux à nouveau te lancer la balle."
+        "text": "Hé, c'est pas comme si tout était réglé. ...Mais ça va assez pour que je te relance la balle."
     },
     "good_2_dain": {
         "name": "{name}",

@@ -269,7 +269,7 @@
     "morning4_dain_msg_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#morning4_dain_msg_1",
       "_ko_name": "다인",
-      "_ko_text_preview": "오늘이다!!!! 체육관 앞 저녁 6시!! 아 왜 이렇게 떨리지ㅋㅋㅋ 아 ...",
+      "_ko_text_preview": "오늘이다. 체육관 앞 저녁 6시. 아, 왜 이렇게 떨리지. 이거 보내도 되나.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#morning4_dain_msg_1",
@@ -557,7 +557,7 @@
     "hidden_homeroom_d4_4_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_4_ins3",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "지나가다가 학교 정문을 들여다보는 학생은 처음이야.",
+      "_ko_text_preview": "지나가다가 학교 정문을 들여다보는 학생은 드문데.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_4_ins3",
@@ -815,7 +815,7 @@
     "hidden_homeroom_d4_cafe_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_cafe_1",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "학교 밖에서 학생이랑 차 마시는 건 처음이야. 솔직히? 좀 어색해.",
+      "_ko_text_preview": "학교 밖에서 학생이랑 차 마시려니까, 솔직히 좀 어색하네.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_cafe_1",
@@ -3737,7 +3737,7 @@
     "hidden_nurse_d4_2_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_2_ins2",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*웃으며* 환자가 간호사 도와주는 건 처음이야.",
+      "_ko_text_preview": "*웃으며* 환자가 간호사를 돕네. 오늘 기록해 둬야겠다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_2_ins2",
@@ -6703,7 +6703,7 @@
     "date_dain_rhythm_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_rhythm_3",
       "_ko_name": "다인",
-      "_ko_text_preview": "ㅋㅋㅋ 당연하지!! 이건 무릎 안 써도 되니까!!",
+      "_ko_text_preview": "당연하지. 이건 무릎 안 써도 되니까.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_rhythm_3",
@@ -7279,7 +7279,7 @@
     "date_yuna_bookstore_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_bookstore_2_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "처음이야.",
+      "_ko_text_preview": "와 본 적 없어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_bookstore_2_ins",
@@ -11603,7 +11603,7 @@
     "wall_seo_hug_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_hug_2_ins",
       "_ko_name": "서연",
-      "_ko_text_preview": "...누구 앞에서 우는 거, 초등학교 이후로 처음이야.",
+      "_ko_text_preview": "...누구 앞에서 우는 거, 진짜 오래됐어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_hug_2_ins",
@@ -12394,7 +12394,7 @@
     "wall_seo_skin70_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_skin70_3",
       "_ko_name": "서연",
-      "_ko_text_preview": "...이건 처음이야. 진짜로.",
+      "_ko_text_preview": "...이건 좀 낯설다. 진짜로.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_skin70_3",

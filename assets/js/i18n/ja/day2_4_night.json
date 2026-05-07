@@ -82,7 +82,7 @@
     },
     "night2_reply_dain_2": {
         "name": "ダイン",
-        "text": "www辛いの苦手なの？！"
+        "text": "辛いの苦手なの？"
     },
     "night2_reply_dain_3": {
         "name": "ダイン",
@@ -210,7 +210,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "ダイン",
-        "text": "ちょwwwマジで面白すぎ。明日絶対体育館来て！！"
+        "text": "ねえ、ほんと何者なの。明日絶対体育館来て。"
     },
     "night2_reply_dain_react_default": {
         "name": "ダイン",

@@ -157,7 +157,7 @@
     },
     "date_yuna_bookstore_2_b": {
         "name": "{name}",
-        "text": "Primeira vez."
+        "text": "Nunca vim aqui."
     },
     "date_yuna_bookstore_3": {
         "name": "Yuna",
@@ -301,7 +301,7 @@
     },
     "date_dain_rhythm_3": {
         "name": "Dain",
-        "text": "kkkk Óbvio!! Esse aqui não precisa do joelho!!"
+        "text": "Óbvio. Pra isso não preciso do joelho."
     },
     "date_dain_knee": {
         "name": "{name}",
