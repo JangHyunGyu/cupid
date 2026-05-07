@@ -44,7 +44,10 @@ html {
     width: 100%;
     height: 100%;
     /* 그라데이션 배경: 어두운 네이비 계열 */
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+    background:
+        linear-gradient(180deg, rgba(8, 8, 12, 0.78) 0%, rgba(12, 11, 18, 0.92) 56%, rgba(8, 8, 12, 0.98) 100%),
+        url('../images/background/title_landscape.webp') center top / cover fixed no-repeat,
+        #09090d;
     font-family: 'Pretendard', sans-serif;
     /* 한글 웹폰트 */
     color: #fff;
@@ -74,6 +77,21 @@ body::-webkit-scrollbar-thumb:hover {
     background: rgba(232, 138, 160, 0.5);
 }
 
+body {
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.44), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.48)),
+        linear-gradient(180deg, rgba(232, 138, 160, 0.12), transparent 34%);
+    z-index: -1;
+}
+
 /* ============================================================================
    2. 헤더 (Header)
    ============================================================================ */
@@ -88,7 +106,7 @@ body::-webkit-scrollbar-thumb:hover {
     left: 0;
     right: 0;
     height: 60px;
-    background: var(--c-surface);
+    background: rgba(12, 10, 13, 0.84);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     display: flex;
@@ -96,7 +114,8 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: space-between;
     padding: 0 20px;
     z-index: 100;
-    border-bottom: 1px solid var(--c-border-soft);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 14px 44px rgba(0, 0, 0, 0.36);
 }
 
 /* 헤더 제목 스타일 */
@@ -250,7 +269,7 @@ body::-webkit-scrollbar-thumb:hover {
 .gallery-container {
     margin-top: 60px;
     /* 헤더 높이만큼 상단 마진 */
-    padding: 20px;
+    padding: clamp(18px, 3vw, 34px);
     padding-bottom: calc(20px + env(safe-area-inset-bottom));
     min-height: calc(100vh - 60px);
     min-height: calc(100dvh - 60px);
@@ -264,26 +283,27 @@ body::-webkit-scrollbar-thumb:hover {
     /* 가운데 정렬 */
     gap: 10px;
     /* 탭 버튼 사이 간격 */
-    margin-bottom: 30px;
+    margin-bottom: clamp(22px, 4vh, 38px);
     flex-wrap: nowrap;
     /* 항상 한 줄 유지 */
 }
 
 /* 탭 버튼 기본 스타일 */
 .tab-btn {
-    background: var(--c-surface-light);
+    background: rgba(255, 255, 255, 0.075);
     color: var(--c-text-soft);
     border: 1px solid var(--c-border-soft);
-    padding: 11px 24px;
+    padding: 12px 24px;
     border-radius: var(--r-sharp);
     font-size: 0.85rem;
     font-family: var(--font-stack);
     font-weight: 400;
     letter-spacing: 1.5px;
     cursor: pointer;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    transition: background 0.25s, border-color 0.25s, color 0.25s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.25s, border-color 0.25s, color 0.25s, transform 0.25s ease;
 }
 
 /* 탭 버튼 호버 효과 */
@@ -291,11 +311,12 @@ body::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.10);
     color: var(--c-text);
     border-color: var(--c-border);
+    transform: translateY(-1px);
 }
 
 /* 탭 버튼 활성 상태 */
 .tab-btn.active {
-    background: var(--c-accent-soft);
+    background: linear-gradient(180deg, rgba(232, 138, 160, 0.24), rgba(232, 138, 160, 0.12));
     color: var(--c-text);
     border-color: var(--c-accent);
 }
@@ -348,9 +369,9 @@ body::-webkit-scrollbar-thumb:hover {
      * minmax(280px, 1fr): 최소 280px, 최대 1fr (균등 분배)
      */
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    gap: clamp(18px, 2.6vw, 28px);
     /* 카드 사이 간격 */
-    max-width: 1200px;
+    max-width: 1220px;
     /* 최대 너비 제한 */
     margin: 0 auto;
     /* 가운데 정렬 */
@@ -358,13 +379,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* 캐릭터 카드 */
 .character-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.082), rgba(255, 255, 255, 0.035));
     border-radius: 4px;
     /* 둥근 모서리 */
     overflow: hidden;
     /* 내용이 넘치면 숨김 */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
     cursor: pointer;
 }
 
@@ -373,7 +397,7 @@ body::-webkit-scrollbar-thumb:hover {
     transform: translateY(-5px);
     /* 위로 살짝 떠오름 */
     border-color: rgba(232, 138, 160, 0.5);
-    box-shadow: 0 10px 30px rgba(232, 138, 160, 0.2);
+    box-shadow: 0 22px 58px rgba(0, 0, 0, 0.42), 0 0 34px rgba(232, 138, 160, 0.18);
     /* 핑크 그림자 */
 }
 
@@ -397,14 +421,25 @@ body::-webkit-scrollbar-thumb:hover {
 /* 카드 이미지 영역 */
 .card-image {
     position: relative;
-    height: 300px;
+    height: clamp(270px, 32vw, 340px);
     /* 그라데이션 배경 (이미지 로드 전 표시) */
-    background: linear-gradient(180deg, #2a2a4a 0%, #1a1a2e 100%);
+    background:
+        linear-gradient(180deg, rgba(28, 25, 38, 0.2), rgba(8, 8, 14, 0.82)),
+        url('../images/background/school_hallway.webp') center / cover no-repeat;
     display: flex;
     align-items: flex-end;
     /* 이미지를 하단에 배치 */
     justify-content: center;
     overflow: hidden;
+}
+
+.card-image::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 46%;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.56));
+    pointer-events: none;
 }
 
 /* 카드 내 이미지 */
@@ -414,6 +449,8 @@ body::-webkit-scrollbar-thumb:hover {
     object-fit: contain;
     /* 비율 유지하며 맞춤 */
     transition: transform 0.3s;
+    position: relative;
+    z-index: 1;
 }
 
 /* 카드 호버 시 이미지 확대 효과 */
@@ -443,8 +480,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* 카드 정보 영역 */
 .card-info {
-    padding: 15px 20px;
+    padding: 17px 20px 18px;
     text-align: center;
+    min-height: 82px;
+    background: rgba(12, 13, 22, 0.72);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 /* 캐릭터 이름 */
@@ -458,7 +498,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* 캐릭터 타이틀 */
 .card-info p {
     font-size: 0.85rem;
-    color: #aaa;
+    color: rgba(245, 238, 242, 0.74);
     /* 회색 */
 }
 
@@ -1766,4 +1806,44 @@ body::-webkit-scrollbar-thumb:hover {
  */
 .character-card.unlocked {
     cursor: pointer;
+}
+
+.character-card.not-met {
+    cursor: pointer;
+}
+
+.character-card.not-met:hover {
+    transform: translateY(-2px);
+}
+
+/* Commercial polish overrides: keep locked cards readable while using game art. */
+.character-card.not-met {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.028));
+}
+
+.character-card.not-met .card-image {
+    background:
+        linear-gradient(180deg, rgba(24, 20, 32, 0.22), rgba(8, 8, 14, 0.84)),
+        url('../images/background/school_hallway.webp') center / cover no-repeat;
+}
+
+.character-card.not-met .silhouette {
+    filter: brightness(0) saturate(0);
+    opacity: 0.72;
+}
+
+.character-card.not-met:hover .silhouette {
+    opacity: 0.84;
+}
+
+.character-card.not-met .card-info h3 {
+    color: #ff8fa9;
+    text-shadow: 0 0 16px rgba(232, 138, 160, 0.28);
+}
+
+.gallery-footer {
+    background: rgba(8, 8, 12, 0.72);
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
