@@ -1114,6 +1114,23 @@ html[lang="pt"] #message {
     /* 호버 시 살짝 회전하는 연출 */
 }
 
+#game-container #gallery-btn,
+#game-container #home-btn,
+#game-container #settings-btn {
+    background: rgba(16, 13, 17, 0.58);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#game-container #gallery-btn:hover,
+#game-container #home-btn:hover,
+#game-container #settings-btn:hover {
+    background: rgba(232, 138, 160, 0.24);
+    border-color: rgba(255, 206, 218, 0.55);
+}
+
 /* ==========================================================================
    Modals & Overlays (모달 및 오버레이 공통)
    ========================================================================== */
@@ -1159,6 +1176,80 @@ html[lang="pt"] #message {
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 1.5px;
+}
+
+.modal-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 28px;
+    border-radius: var(--r-sharp);
+    background: var(--c-surface-light);
+    border: 1px solid var(--c-border-soft);
+    color: var(--c-text);
+    font-family: var(--font-stack);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 0.24s ease, border-color 0.24s ease, transform 0.24s ease;
+}
+
+.modal-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: var(--c-border);
+    transform: translateY(-1px);
+}
+
+.modal-btn.confirm {
+    background: linear-gradient(180deg, rgba(232, 138, 160, 0.95), rgba(196, 86, 111, 0.94));
+    border-color: rgba(255, 210, 220, 0.5);
+    color: #fff;
+    box-shadow: 0 10px 26px rgba(196, 86, 111, 0.26);
+}
+
+.modal-btn.cancel {
+    color: var(--c-text-soft);
+}
+
+#settingsModal .modal-container {
+    max-width: 480px;
+    border-radius: 8px;
+    background:
+        linear-gradient(180deg, rgba(18, 14, 18, 0.96), rgba(11, 10, 13, 0.96));
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#settingsModal .settings-options,
+#settingsModal .contact-options {
+    display: grid;
+    gap: 18px;
+}
+
+#settingsModal label {
+    min-height: 32px;
+    gap: 16px;
+}
+
+#settingsModal input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    transform: none !important;
+    accent-color: var(--c-accent);
+}
+
+#settingsModal input[type="range"] {
+    height: 22px;
+    margin-top: 6px;
+    accent-color: var(--c-accent);
+}
+
+#settingsModal p {
+    color: var(--c-text-mute) !important;
+    margin-top: -6px !important;
 }
 
 /* ==========================================================================
