@@ -35,7 +35,7 @@
 > `{{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads`
 > undesired content에는 아래 묶음을 추가:
 > `no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`
-> 단, `nurse_bikini.png`처럼 의도적으로 얼굴 안경을 빼는 특수 의상 블록은 예외.
+> `_bikini.png` 블럭은 레퍼런스 이미지 없이도 단독 생성 가능하도록 얼굴, 머리, 체형, 자세, 정체성 디테일 태그를 positive 안에 모두 포함.
 
 ---
 
@@ -231,13 +231,14 @@ solid bright green background, chromakey background, simple background, soft dif
 **프롬프트:**
 ```
 masterpiece, best quality, very aesthetic, absurdres, newest,
-1girl, solo, korean, mature female, college student, beautiful,
-long black hair, wavy hair, hair past waist, wind-blown hair,
-black eyes, large almond eyes, ivory skin, {{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
-hourglass figure, large breasts, narrow waist, wide hips, curvy, dynamic pose,
-navy bikini, navy swimsuit, beach,
-confident smile, looking at viewer, blush, summer atmosphere,
-upper body, anime visual novel sprite, cel shading, clean lineart,
+reference-free character design, same identity consistency, 1girl, solo, korean, mature female, college student, student council president, elegant, composed,
+oval face, small chin, small nose, soft thin lips, confident subtle smile, large almond eyes, black eyes, slightly downturned gaze, ivory skin, soft blush,
+long black hair, glossy hair, wavy hair, hair past waist, thick blunt bangs, voluminous side swept hair, large curls over left shoulder,
+{{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
+hourglass figure, large breasts, narrow waist, wide hips, curvy hips, elegant posture,
+navy bikini, navy swimsuit, modest swimwear, no beach,
+hands clasped in front of waist, right hand holding left wrist, slight head tilt, 10 degree body angle, looking at viewer,
+vertical upper body portrait, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
 **네거티브:** (공통 + `nsfw, lewd, explicit, full body, lower body, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
@@ -387,17 +388,17 @@ solid bright green background, chromakey background, simple background, soft dif
 **프롬프트:**
 ```
 masterpiece, best quality, very aesthetic, absurdres, newest,
-1girl, solo, korean, athletic, college student,
-very short brown hair, pixie cut, wet hair, hair stuck to forehead,
-green eyes, bright eyes, confident smile,
-tanned skin, water droplets on skin,
-athletic body, toned abs, large breasts, narrow waist, wide hips, muscular thighs,
-sport bikini, navy and white bikini, two-tone bikini,
-indoor pool background, healthy energetic vibe,
-upper body, anime visual novel sprite, cel shading, clean lineart,
+reference-free character design, same identity consistency, 1girl, solo, korean, athletic, college student, volleyball ace, sporty, energetic,
+small round boyish face, soft jawline, small nose, toothy smile, bright confident smile, large round green eyes, vivid green eyes, healthy blush,
+very short brown hair, pixie cut, boyish short hair, ears visible, nape visible, short side hair, round bangs over forehead, no bob cut,
+tanned skin, healthy skin,
+athletic body, toned shoulders, toned arms, toned abs, large breasts, narrow waist, wide hips, muscular thighs, sporty hourglass,
+navy and white sport bikini, two-tone bikini, athletic swimwear, black compression arm sleeve on left arm,
+left hand on hip, right arm relaxed at side, open shoulders, 10 degree body angle, looking at viewer,
+vertical upper body portrait, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통 + `nsfw, lewd, explicit, long hair, full body, lower body`)
+**네거티브:** (공통 + `nsfw, lewd, explicit, long hair, medium hair, bob cut, blunt bob, jaw-length hair, blue eyes, gray eyes, pale skin, full body, lower body`)
 
 ---
 
@@ -517,15 +518,16 @@ solid bright green background, chromakey background, simple background, soft dif
 **프롬프트:**
 ```
 masterpiece, best quality, very aesthetic, absurdres, newest,
-1girl, solo, korean, college student, gothic, mysterious, dark heroine,
-silver-white hair, shoulder length hair, shaggy layered wolf cut, messy hair, wispy bangs, hair between eyes, outward flicked hair ends,
+reference-free character design, same identity consistency, 1girl, solo, korean, college student, gothic, mysterious, dark heroine, cold aura,
+long narrow face, v-shaped jaw, small sharp nose, thin unsmiling lips, emotionless expression,
+silver-white hair, shoulder length hair, shaggy layered wolf cut, messy hair, wispy bangs, hair between eyes, outward flicked hair ends, hair over one eye,
 vivid red eyes, ruby eyes, narrow sharp eyes, half-lidded eyes, cold gaze, looking at viewer,
-very pale skin, cool skin tone,
+very pale skin, cool gray skin tone,
 neck tattoo, collarbone tattoo, arm tattoos, hand tattoos, thigh tattoos, dense black ink tattoos, geometric tattoos, kanji-like tattoo patterns,
-slender glamour body, long limbs, large breasts, narrow waist, soft wide hips, dangerous s-line silhouette,
+slender glamour body, long limbs, large breasts, very narrow waist, soft wide hips, dangerous s-line silhouette,
 sexy vintage camouflage bikini, faded camo bikini, worn fabric, slightly frayed edges, muted olive green, khaki, dark charcoal camo pattern, matte old fabric, triangle bikini top, low-rise string bikini bottom, no jewelry,
 arms crossed, hand holding opposite forearm, closed shoulders, restrained pose, slight head tilt, 10 degree body angle,
-emotionless expression, cold neutral expression, subtle blush, lonely atmosphere,
+subtle blush, lonely atmosphere,
 vertical upper body portrait, anime visual novel sprite, cel shading, clean lineart, soft diffuse front lighting,
 solid bright green background, chromakey background, simple background
 ```
@@ -632,14 +634,13 @@ solid bright green background, chromakey background, simple background, soft dif
 **프롬프트:**
 ```
 masterpiece, best quality, very aesthetic, absurdres, newest,
-1girl, solo, korean, mature female, beautiful, adult woman,
-long brown hair, wavy hair, hair updo, hair tied up,
-brown eyes, soft warm gaze, mature smile, elegant smile,
-sunglasses on head, hair accessory,
-light skin, hourglass figure, large breasts, very narrow waist, wide hips, voluptuous,
-gold bikini, gold swimsuit, elegant swimwear,
-resort poolside background, mature elegance,
-upper body, anime visual novel sprite, cel shading, clean lineart,
+reference-free character design, same identity consistency, 1girl, solo, korean, mature female, beautiful, adult woman, teacher, gentle mature aura,
+soft oval face, long eyelashes, double eyelids, brown eyes, soft warm gaze, small straight nose, full lips, mature smile, elegant smile,
+long brown hair, glossy hair, wavy hair, side swept bangs, hair over one shoulder, voluminous curls, soft hair volume,
+light skin, hourglass figure, large breasts, very narrow waist, wide hips, voluptuous hips, mature curves,
+champagne gold bikini, gold swimsuit, elegant swimwear, subtle metallic sheen, modest swimwear,
+hands clasped in front of stomach, relaxed elbows, slight head tilt, 10 degree body angle, looking at viewer,
+vertical upper body portrait, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
 **네거티브:** (공통 + `nsfw, lewd, explicit, school uniform, glasses, tattoo, full body, lower body`)
@@ -713,17 +714,17 @@ solid bright green background, chromakey background, simple background, soft dif
 **프롬프트:**
 ```
 masterpiece, best quality, very aesthetic, absurdres, newest,
-1girl, solo, korean, mature female, beautiful,
-short ash purple hair, lavender hair, sharp bob, jaw-length, exposed neck,
-sunglasses on head, no glasses on face, hair flower, flower hair ornament,
-brown eyes, seductive gaze, playful smile,
-light skin, glamorous figure, large breasts, narrow waist, wide hips,
-white bikini, elegant swimwear,
-sunset beach background, golden hour, sensual elegance,
-upper body, anime visual novel sprite, cel shading, clean lineart,
+reference-free character design, same identity consistency, 1girl, solo, korean, mature female, beautiful, school nurse, playful femme fatale,
+oval face, sharp cat eyes, brown eyes, long eyelashes, small nose, playful smirk, beauty mark under mouth, two small black moles near lower lip,
+short ash purple hair, lavender hair, blunt bob cut, sharp bob, jaw-length hair, rounded bob volume, straight bangs, exposed neck,
+{{glasses}}, {{round eyewear}}, {{black-framed eyewear}}, glasses on face, visible glasses frame, clear lenses, glasses temples, nose pads,
+light skin, soft blush, glamorous figure, large breasts, narrow waist, wide hips, confident upper body,
+white bikini, elegant swimwear, modest swimwear,
+right hand touching glasses, left hand near waist, relaxed confident pose, slight head tilt, 10 degree body angle, looking at viewer,
+vertical upper body portrait, anime visual novel sprite, cel shading, clean lineart,
 solid bright green background, chromakey background, simple background, soft diffuse lighting
 ```
-**네거티브:** (공통 + `nsfw, lewd, explicit, school uniform, blazer, tattoo, glasses on face, full body, lower body`)
+**네거티브:** (공통 + `nsfw, lewd, explicit, school uniform, blazer, tattoo, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses, full body, lower body`)
 
 ---
 
