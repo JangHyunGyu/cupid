@@ -78,6 +78,11 @@ function loadImageWithFallback(img, url, onload, onerror) {
     }
 }
 
+const BACKGROUND_LAYOUT_CLASS_PREFIX = 'bg-layout-';
+const BACKGROUND_LAYOUT_CLASSES = {
+    sojeong_flashback: 'bg-layout-sojeong-flashback-contain'
+};
+
 class SceneRenderer {
     /**
      * @param {StateManager} stateManager - 게임 상태 관리자
@@ -285,6 +290,13 @@ class SceneRenderer {
         this.galleryManager.unlockCG(cgFileName);
 
         const bgLayer = this.uiManager.bgLayer;
+        const layoutClasses = [...bgLayer.classList]
+            .filter(className => className.startsWith(BACKGROUND_LAYOUT_CLASS_PREFIX));
+        if (layoutClasses.length) bgLayer.classList.remove(...layoutClasses);
+        if (BACKGROUND_LAYOUT_CLASSES[cgFileName]) {
+            bgLayer.classList.add(BACKGROUND_LAYOUT_CLASSES[cgFileName]);
+        }
+
         const currentBg = bgLayer.style.backgroundImage;
 
         // 이미지 프리로드 (WebP 우선 + PNG 폴백)
