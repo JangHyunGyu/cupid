@@ -232,6 +232,19 @@ html {
     will-change: filter;
 }
 
+#background-layer.bg-layout-sojeong-flashback-contain,
+#background-layer.bg-layout-sojeong-flashback-contain::after {
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#background-layer.bg-layout-sojeong-flashback-contain.night,
+#background-layer.bg-layout-sojeong-flashback-contain.sunset {
+    filter: none;
+}
+
 /* CSS-only background mood overlays. These reuse the same background art with
    scene-level color, light, and atmosphere changes instead of new raster files. */
 #background-layer::before {
