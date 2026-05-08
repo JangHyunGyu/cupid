@@ -517,19 +517,19 @@ solid bright green background, chromakey background, simple background, soft dif
 **프롬프트:**
 ```
 masterpiece, best quality, very aesthetic, absurdres, newest,
-1girl, solo, korean, gothic, mysterious,
-silver hair, shaggy hair, wind-blown hair,
-red eyes, seductive gaze, moonlit eyes, looking at viewer,
-very pale skin,
-full body tattoos, arm tattoos, leg tattoos, kanji tattoos, geometric tattoos,
-chain necklace, red earrings, holding cigarette,
-slender, large breasts, narrow waist, wide hips,
-camouflage bikini, camo pattern bikini,
-night beach background, moonlight,
-upper body, anime visual novel sprite, cel shading, clean lineart, dramatic lighting,
+1girl, solo, korean, college student, gothic, mysterious, dark heroine,
+silver-white hair, shoulder length hair, shaggy layered wolf cut, messy hair, wispy bangs, hair between eyes, outward flicked hair ends,
+vivid red eyes, ruby eyes, narrow sharp eyes, half-lidded eyes, cold gaze, looking at viewer,
+very pale skin, cool skin tone,
+neck tattoo, collarbone tattoo, arm tattoos, hand tattoos, thigh tattoos, dense black ink tattoos, geometric tattoos, kanji-like tattoo patterns,
+slender glamour body, long limbs, large breasts, narrow waist, soft wide hips, dangerous s-line silhouette,
+sexy vintage camouflage bikini, faded camo bikini, worn fabric, slightly frayed edges, muted olive green, khaki, dark charcoal camo pattern, matte old fabric, triangle bikini top, low-rise string bikini bottom, no jewelry,
+arms crossed, hand holding opposite forearm, closed shoulders, restrained pose, slight head tilt, 10 degree body angle,
+emotionless expression, cold neutral expression, subtle blush, lonely atmosphere,
+vertical upper body portrait, anime visual novel sprite, cel shading, clean lineart, soft diffuse front lighting,
 solid bright green background, chromakey background, simple background
 ```
-**네거티브:** (공통 + `nsfw, lewd, explicit, tan skin, full body, lower body`)
+**네거티브:** (공통 + `nsfw, lewd, explicit, tan skin, brown hair, black hair, long straight hair, blue eyes, gray eyes, missing tattoos, necklace, earrings, cigarette, holding object, modern glossy bikini, plain black bikini, beach background, moonlight background, full body, lower body`)
 
 ---
 
