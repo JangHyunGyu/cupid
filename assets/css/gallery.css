@@ -379,6 +379,8 @@ body::before {
 
 /* 캐릭터 카드 */
 .character-card {
+    --character-gallery-bg: url('../images/background/school_hallway.webp');
+    --character-gallery-bg-position: center;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.082), rgba(255, 255, 255, 0.035));
     border-radius: 4px;
     /* 둥근 모서리 */
@@ -419,13 +421,38 @@ body::before {
 }
 
 /* 카드 이미지 영역 */
+.character-card[data-char-id="seyoun"],
+.character-preview[data-char-id="seyoun"] {
+    --character-gallery-bg: url('../images/background/seyoun_room.webp');
+}
+
+.character-card[data-char-id="yuna"],
+.character-preview[data-char-id="yuna"] {
+    --character-gallery-bg: url('../images/background/yuna_hideout.webp');
+}
+
+.character-card[data-char-id="dain"],
+.character-preview[data-char-id="dain"] {
+    --character-gallery-bg: url('../images/background/gym.webp');
+}
+
+.character-card[data-char-id="teacher"],
+.character-preview[data-char-id="teacher"] {
+    --character-gallery-bg: url('../images/background/teacher_office.webp');
+}
+
+.character-card[data-char-id="nurse"],
+.character-preview[data-char-id="nurse"] {
+    --character-gallery-bg: url('../images/background/nurse_room.webp');
+}
+
 .card-image {
     position: relative;
     height: clamp(270px, 32vw, 340px);
     /* 그라데이션 배경 (이미지 로드 전 표시) */
     background:
         linear-gradient(180deg, rgba(28, 25, 38, 0.2), rgba(8, 8, 14, 0.82)),
-        url('../images/background/school_hallway.webp') center / cover no-repeat;
+        var(--character-gallery-bg) var(--character-gallery-bg-position) / cover no-repeat;
     display: flex;
     align-items: flex-end;
     /* 이미지를 하단에 배치 */
@@ -602,9 +629,13 @@ body::before {
 
 /* 캐릭터 미리보기 영역 (왼쪽) */
 .character-preview {
+    --character-gallery-bg: url('../images/background/school_hallway.webp');
+    --character-gallery-bg-position: center;
     flex: 1;
     /* 50% 너비 */
-    background: linear-gradient(180deg, #2a2a4a 0%, #1a1a2e 100%);
+    background:
+        linear-gradient(180deg, rgba(28, 25, 38, 0.18), rgba(8, 8, 14, 0.82)),
+        var(--character-gallery-bg) var(--character-gallery-bg-position) / cover no-repeat;
     display: flex;
     align-items: flex-start;
     /* 이미지를 상단에서 시작 */
@@ -612,16 +643,28 @@ body::before {
     min-height: 400px;
     position: relative;
     padding-top: 20px;
+    overflow: hidden;
     /* 상단 여백 */
 }
 
 /* 캐릭터 미리보기 이미지 */
+.character-preview::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 46%;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.56));
+    pointer-events: none;
+}
+
 .character-preview img {
     height: auto;
     max-height: 500px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    position: relative;
+    z-index: 1;
 }
 
 /* 캐릭터 상세 정보 영역 (오른쪽) */
@@ -1824,7 +1867,7 @@ body::before {
 .character-card.not-met .card-image {
     background:
         linear-gradient(180deg, rgba(24, 20, 32, 0.22), rgba(8, 8, 14, 0.84)),
-        url('../images/background/school_hallway.webp') center / cover no-repeat;
+        var(--character-gallery-bg) var(--character-gallery-bg-position) / cover no-repeat;
 }
 
 .character-card.not-met .silhouette {
