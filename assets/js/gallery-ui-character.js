@@ -222,6 +222,9 @@ class CharacterRenderer {
         const char = GalleryData.getCharacter(this.ui.lang, charId);
         if (!char || !this.modalEl) return;
 
+        const previewEl = this.modalEl.querySelector('.character-preview');
+        if (previewEl) previewEl.dataset.charId = charId;
+
         const affinity = this.ui.progress.getAffinity(charId);
 
         document.getElementById('modal-char-name').textContent = char.name;
@@ -250,6 +253,7 @@ class CharacterRenderer {
     closeModal() {
         if (this.modalEl) {
             this.modalEl.classList.remove('active');
+            this.modalEl.querySelector('.character-preview')?.removeAttribute('data-char-id');
         }
         this.currentCharacter = null;
     }
