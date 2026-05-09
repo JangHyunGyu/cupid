@@ -464,7 +464,7 @@ function renderPage(lang, page) {
   <meta property="og:description" content="${escapeHTML(page.meta)}">
   <meta property="og:url" content="${url}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="${SITE}/cupid_link.png?v=2.9.4">
+  <meta property="og:image" content="${SITE}/cupid_link.png?v=2.9.6">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.ico">
   <style>${CSS}</style>
