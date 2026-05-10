@@ -310,6 +310,7 @@ class FreeTalkSystem {
         // 캐릭터 정보 수집
         const charKey = this.charNameMap[scene.name] || scene.name;
         this.freeTalkHistory = this._sanitizeDainOutfitHistory(this.freeTalkHistory, charKey);
+        this.freeTalkHistory = this._sanitizeVisibleArtifactsHistory(this.freeTalkHistory);
         const knowsName = this.stateManager.getFlag(`knows_name_${charKey.toLowerCase()}`);
         const charStats = this.stateManager.stats[charKey] || { affinity: 0 };
 
@@ -648,13 +649,13 @@ class FreeTalkSystem {
                         flag: "keyword_yuna_junho",
                         keywords: { ko: ["준호", "이준호"], en: ["junho", "lee junho"], ja: ["ジュンホ"], es: ["junho"], fr: ["junho"], de: ["junho"], pt: ["junho"] },
                         response: {
-                            ko: "*3초간 침묵.* \"...그 이름. 어디서 들었어.\" *1초.* \"...아무것도 아니야.\"",
-                            en: "*3 seconds of silence.* \"...That name. Where did you hear it.\" *1 second.* \"...It's nothing.\"",
-                            ja: "*3秒の沈黙。* \"...その名前。どこで聞いたの。\" *1秒。* \"...なんでもない。\"",
-                            es: "*3 segundos de silencio.* \"...Ese nombre. ¿Dónde lo escuchaste?\" *1 segundo.* \"...No es nada.\"",
-                            fr: "*3 secondes de silence.* \"...Ce nom. Où l'as-tu entendu ?\" *1 seconde.* \"...Ce n'est rien.\"",
-                            de: "*3 Sekunden Stille.* \"...Dieser Name. Wo hast du den gehört?\" *1 Sekunde.* \"...Es ist nichts.\"",
-                            pt: "*3 segundos de silêncio.* \"...Esse nome. Onde você ouviu isso?\" *1 segundo.* \"...Não é nada.\""
+                            ko: "*긴 침묵이 내려앉는다.* \"...그 이름. 어디서 들었어.\" *말끝이 잠깐 끊긴다.* \"...아무것도 아니야.\"",
+                            en: "*A long silence settles in.* \"...That name. Where did you hear it.\" *The end of the sentence catches for a moment.* \"...It's nothing.\"",
+                            ja: "*長い沈黙が落ちる。* \"...その名前。どこで聞いたの。\" *言葉尻が一瞬途切れる。* \"...なんでもない。\"",
+                            es: "*Se instala un largo silencio.* \"...Ese nombre. ¿Dónde lo escuchaste?\" *El final de la frase se corta por un momento.* \"...No es nada.\"",
+                            fr: "*Un long silence tombe.* \"...Ce nom. Où l'as-tu entendu ?\" *La fin de la phrase se brise un instant.* \"...Ce n'est rien.\"",
+                            de: "*Ein langes Schweigen senkt sich.* \"...Dieser Name. Wo hast du den gehört?\" *Das Satzende stockt kurz.* \"...Es ist nichts.\"",
+                            pt: "*Um longo silêncio cai.* \"...Esse nome. Onde você ouviu isso?\" *O fim da frase falha por um instante.* \"...Não é nada.\""
                         },
                         expression: "sad", affinity: 5
                     },
@@ -662,13 +663,13 @@ class FreeTalkSystem {
                         flag: "keyword_seo_family",
                         keywords: { ko: ["엄마", "부모님", "이혼"], en: ["mom", "mother", "parents", "divorce"], ja: ["お母さん", "両親", "離婚"], es: ["mamá", "padres", "divorcio"], fr: ["maman", "parents", "divorce"], de: ["mama", "eltern", "scheidung"], pt: ["mãe", "pais", "divórcio"] },
                         response: {
-                            ko: "*젓가락을 내려놓는다.* \"...그 얘기는.\" *0.5초.* *미소가 돌아온다. 연습된 미소.* \"왜 갑자기?\"",
-                            en: "*Sets down chopsticks.* \"...That topic.\" *0.5 sec.* *The smile returns. A practiced smile.* \"Why suddenly?\"",
-                            ja: "*箸を置く。* \"...その話は。\" *0.5秒。* *笑顔が戻る。練習された笑顔。* \"なんで急に？\"",
-                            es: "*Deja los palillos.* \"...Ese tema.\" *0.5 seg.* *La sonrisa regresa. Una sonrisa ensayada.* \"¿Por qué de repente?\"",
-                            fr: "*Pose les baguettes.* \"...Ce sujet.\" *0,5 sec.* *Le sourire revient. Un sourire répété.* \"Pourquoi soudainement ?\"",
-                            de: "*Legt die Stäbchen ab.* \"...Das Thema.\" *0,5 Sek.* *Das Lächeln kehrt zurück. Ein einstudiertes Lächeln.* \"Warum plötzlich?\"",
-                            pt: "*Coloca os hashis na mesa.* \"...Esse assunto.\" *0,5 seg.* *O sorriso volta. Um sorriso ensaiado.* \"Por que de repente?\""
+                            ko: "*젓가락을 내려놓는다.* \"...그 얘기는.\" *짧은 정적 뒤에 미소가 돌아온다. 연습된 미소다.* \"왜 갑자기?\"",
+                            en: "*Sets down chopsticks.* \"...That topic.\" *After a brief hush, the smile returns. A practiced smile.* \"Why suddenly?\"",
+                            ja: "*箸を置く。* \"...その話は。\" *短い静けさのあと、笑顔が戻る。練習された笑顔だ。* \"なんで急に？\"",
+                            es: "*Deja los palillos.* \"...Ese tema.\" *Tras un breve silencio, la sonrisa regresa. Una sonrisa ensayada.* \"¿Por qué de repente?\"",
+                            fr: "*Pose les baguettes.* \"...Ce sujet.\" *Après un bref silence, le sourire revient. Un sourire répété.* \"Pourquoi soudainement ?\"",
+                            de: "*Legt die Stäbchen ab.* \"...Das Thema.\" *Nach einer kurzen Stille kehrt das Lächeln zurück. Ein einstudiertes Lächeln.* \"Warum plötzlich?\"",
+                            pt: "*Coloca os hashis na mesa.* \"...Esse assunto.\" *Depois de um breve silêncio, o sorriso volta. Um sorriso ensaiado.* \"Por que de repente?\""
                         },
                         expression: "sad", affinity: 5
                     },
@@ -676,13 +677,13 @@ class FreeTalkSystem {
                         flag: "keyword_dain_knee",
                         keywords: { ko: ["무릎", "인대", "수술", "프로"], en: ["knee", "ligament", "surgery", "pro"], ja: ["膝", "靭帯", "手術", "プロ"], es: ["rodilla", "ligamento", "cirugía", "profesional"], fr: ["genou", "ligament", "chirurgie", "pro"], de: ["knie", "band", "operation", "profi"], pt: ["joelho", "ligamento", "cirurgia", "profissional"] },
                         response: {
-                            ko: "*웃음이 멈춘다.* \"...\" *1초.* \"괜찮아!! 별거 아냐!!\" *느낌표가 돌아왔지만 목소리가 반 톤 높다.*",
-                            en: "*The smile stops.* \"...\" *1 sec.* \"I'm fine!! It's nothing!!\" *The exclamation marks are back, but half a tone too high.*",
-                            ja: "*笑顔が止まる。* \"...\" *1秒。* \"大丈夫!! 何でもないよ!!\" *ビックリマークは戻ったが、声が半トーン高い。*",
-                            es: "*La sonrisa se detiene.* \"...\" *1 seg.* \"¡¡Estoy bien!! ¡¡No es nada!!\" *Los signos de exclamación volvieron, pero medio tono más alto.*",
-                            fr: "*Le sourire s'arrête.* \"...\" *1 sec.* \"Ça va !! C'est rien !!\" *Les points d'exclamation sont revenus, mais d'un demi-ton trop haut.*",
-                            de: "*Das Lächeln stoppt.* \"...\" *1 Sek.* \"Mir geht's gut!! Ist nichts!!\" *Die Ausrufezeichen sind zurück, aber einen halben Ton zu hoch.*",
-                            pt: "*O sorriso para.* \"...\" *1 seg.* \"Tô bem!! Não é nada!!\" *As exclamações voltaram, mas meio tom acima.*"
+                            ko: "*웃음이 멈춘다.* \"...\" *잠깐 숨을 고른 뒤, 목소리가 다시 밝아진다.* \"괜찮아!! 별거 아냐!!\" *느낌표가 돌아왔지만 목소리가 반 톤 높다.*",
+                            en: "*The smile stops.* \"...\" *After a brief breath, the voice brightens again.* \"I'm fine!! It's nothing!!\" *The exclamation marks are back, but half a tone too high.*",
+                            ja: "*笑顔が止まる。* \"...\" *短く息を整えたあと、声がまた明るくなる。* \"大丈夫!! 何でもないよ!!\" *ビックリマークは戻ったが、声が半トーン高い。*",
+                            es: "*La sonrisa se detiene.* \"...\" *Después de tomar aire un momento, la voz vuelve a iluminarse.* \"¡¡Estoy bien!! ¡¡No es nada!!\" *Los signos de exclamación volvieron, pero medio tono más alto.*",
+                            fr: "*Le sourire s'arrête.* \"...\" *Après une brève inspiration, la voix redevient claire.* \"Ça va !! C'est rien !!\" *Les points d'exclamation sont revenus, mais d'un demi-ton trop haut.*",
+                            de: "*Das Lächeln stoppt.* \"...\" *Nach einem kurzen Atemzug hellt sich die Stimme wieder auf.* \"Mir geht's gut!! Ist nichts!!\" *Die Ausrufezeichen sind zurück, aber einen halben Ton zu hoch.*",
+                            pt: "*O sorriso para.* \"...\" *Depois de uma breve respiração, a voz volta a ficar clara.* \"Tô bem!! Não é nada!!\" *As exclamações voltaram, mas meio tom acima.*"
                         },
                         expression: "sad", affinity: 5
                     },
@@ -690,13 +691,13 @@ class FreeTalkSystem {
                         flag: "keyword_homeroom_writing",
                         keywords: { ko: ["원고", "소설", "등단"], en: ["manuscript", "novel", "debut"], ja: ["原稿", "小説", "デビュー"], es: ["manuscrito", "novela", "debut"], fr: ["manuscrit", "roman", "début"], de: ["manuskript", "roman", "debüt"], pt: ["manuscrito", "romance", "estreia"] },
                         response: {
-                            ko: "*볼펜을 만지작거리던 손이 멈춘다.* \"...누구한테 들었어?\" *0.7초.* \"아무것도 아니야. 업무 서류야.\"",
-                            en: "*The hand fidgeting with the pen stops.* \"...Who told you?\" *0.7 sec.* \"It's nothing. Just paperwork.\"",
-                            ja: "*ボールペンをいじっていた手が止まる。* \"...誰に聞いたの？\" *0.7秒。* \"何でもない。業務書類だよ。\"",
-                            es: "*La mano que jugueteaba con el bolígrafo se detiene.* \"...¿Quién te lo dijo?\" *0.7 seg.* \"No es nada. Solo papeleo.\"",
-                            fr: "*La main qui jouait avec le stylo s'arrête.* \"...Qui t'a dit ça ?\" *0,7 sec.* \"Ce n'est rien. Juste de la paperasse.\"",
-                            de: "*Die Hand, die mit dem Kugelschreiber spielte, hält inne.* \"...Wer hat dir das erzählt?\" *0,7 Sek.* \"Es ist nichts. Nur Papierkram.\"",
-                            pt: "*A mão que brincava com a caneta para.* \"...Quem te contou?\" *0,7 seg.* \"Não é nada. Só papelada.\""
+                            ko: "*볼펜을 만지작거리던 손이 멈춘다.* \"...누구한테 들었어?\" *짧은 정적이 지나간다.* \"아무것도 아니야. 업무 서류야.\"",
+                            en: "*The hand fidgeting with the pen stops.* \"...Who told you?\" *A brief stillness passes.* \"It's nothing. Just paperwork.\"",
+                            ja: "*ボールペンをいじっていた手が止まる。* \"...誰に聞いたの？\" *短い静けさが過ぎる。* \"何でもない。業務書類だよ。\"",
+                            es: "*La mano que jugueteaba con el bolígrafo se detiene.* \"...¿Quién te lo dijo?\" *Pasa una breve quietud.* \"No es nada. Solo papeleo.\"",
+                            fr: "*La main qui jouait avec le stylo s'arrête.* \"...Qui t'a dit ça ?\" *Un bref silence passe.* \"Ce n'est rien. Juste de la paperasse.\"",
+                            de: "*Die Hand, die mit dem Kugelschreiber spielte, hält inne.* \"...Wer hat dir das erzählt?\" *Eine kurze Stille vergeht.* \"Es ist nichts. Nur Papierkram.\"",
+                            pt: "*A mão que brincava com a caneta para.* \"...Quem te contou?\" *Uma breve quietude passa.* \"Não é nada. Só papelada.\""
                         },
                         expression: "shy", affinity: 5
                     },
@@ -756,7 +757,7 @@ class FreeTalkSystem {
                     this.applyAffinity(parsed.affinity, scene);
                 }
 
-                reply = this._sanitizePlayerPlaceholders(parsed.text || "...");
+                reply = this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || "..."));
                 const parsedSegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
 
                 // 레거시 폴백: 인라인 태그가 텍스트에 남아있을 경우 처리
@@ -958,11 +959,60 @@ class FreeTalkSystem {
         return out.replace(new RegExp(tokenPattern, 'gi'), playerName);
     }
 
+    _sanitizeVisibleArtifacts(text) {
+        if (typeof text !== 'string' || !text) return text || '';
+
+        let out = text;
+
+        // Keep stat changes internal to JSON fields. Never let them appear as character dialogue.
+        out = out
+            .replace(/\bInterest\s*[+-]\s*\d+\b\.?/gi, 'Interesting.')
+            .replace(/\bAffinity\s*[+-]\s*\d+\b\.?/gi, '')
+            .replace(/\bSTAT(?:S)?\s*[+-]\s*\d+\b\.?/gi, '')
+            .replace(/(?:흥미|관심)\s*[+-]\s*\d+\s*(?:이니까|이라서|라고|이라며|이라니까)?/g, (match) => (
+                /이니까|이라서/.test(match) ? '재미있으니까' :
+                /라고|이라며|이라니까/.test(match) ? '흥미롭다며' :
+                '흥미롭네'
+            ))
+            .replace(/(?:호감도|호감|친밀도)\s*[+-]\s*\d+\s*(?:이니까|이라서|라고|이라며|이라니까)?/g, '')
+            .replace(/(?:Δ|delta)\s*[+-]\s*\d+/gi, '')
+            .replace(/\s{2,}/g, ' ')
+            .trim();
+
+        // Replace exact measured pauses with qualitative beats.
+        out = out
+            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒|sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, '*잠깐 정적이 흐른다.*')
+            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, 'a brief pause')
+            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒)\.?/g, '잠깐');
+
+        return out.replace(/\s+([.?!,;:])/g, '$1').trim();
+    }
+
+    _sanitizeVisibleArtifactsHistory(messages) {
+        if (!Array.isArray(messages)) return messages || [];
+
+        return messages.map((msg) => {
+            if (!msg || msg.role !== 'assistant') return msg;
+
+            const next = { ...msg };
+            if (typeof next.content === 'string') {
+                next.content = this._sanitizeVisibleArtifacts(next.content);
+            }
+            if (Array.isArray(next.segments)) {
+                next.segments = next.segments.map((seg) => {
+                    if (!seg || typeof seg !== 'object') return seg;
+                    return { ...seg, text: this._sanitizeVisibleArtifacts(seg.text || '') };
+                }).filter(seg => seg && seg.text);
+            }
+            return next;
+        });
+    }
+
     _sanitizeSegmentsPlaceholders(segments) {
         if (!Array.isArray(segments)) return segments || null;
         return segments.map(seg => {
             if (!seg || typeof seg !== 'object') return seg;
-            return { ...seg, text: this._sanitizePlayerPlaceholders(seg.text || '') };
+            return { ...seg, text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(seg.text || '')) };
         }).filter(seg => seg && seg.text);
     }
 
