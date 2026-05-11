@@ -26,11 +26,11 @@
     },
     "morning2_greet_dain_2": {
         "name": "다인",
-        "text": "*다인이 뒤에서 어깨를 탁 친다.*"
+        "text": "*뒤에서 어깨를 탁 친다.*"
     },
     "morning2_greet_dain_others": {
         "name": "서연",
-        "text": "*서연이 클립보드를 넘기며 지나간다.*"
+        "text": "*클립보드를 넘기며 지나간다.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "서연",
@@ -90,7 +90,7 @@
     },
     "morning2_dain_6": {
         "name": "다인",
-        "text": "*다인의 목소리가 아침 조회 전 교실을 먼저 채운다.*"
+        "text": "*목소리가 아침 조회 전 교실을 먼저 채운다.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "morning2_minsu_1": {
         "name": "서연",
-        "text": "*서연은 복도를 돌아가기 직전 발끝을 늦춘다. 클립보드가 팔 안으로 더 붙는다.*"
+        "text": "*복도를 돌아가기 직전 발끝을 늦춘다. 클립보드가 팔 안으로 더 붙는다.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "담임선생님",
-        "text": "*담임의 시선이 열린 서랍 쪽에 잠깐 머문다.*"
+        "text": "*시선이 열린 서랍 쪽에 잠깐 머문다.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "담임선생님",
@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "담임선생님",
-        "text": "*담임의 시선이 서랍 쪽을 스치고 바로 돌아온다.*"
+        "text": "*시선이 서랍 쪽을 스치고 바로 돌아온다.*"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
@@ -266,7 +266,7 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "담임선생님",
-        "text": "*담임은 커피잔으로 입을 가린 채, 컵받침을 같은 자리에서 두 번 돌린다.*"
+        "text": "*커피잔으로 입을 가린 채, 컵받침을 같은 자리에서 두 번 돌린다.*"
     },
     "hidden_homeroom_d2_9": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "담임선생님",
-        "text": "*담임의 목소리가 커피잔 안쪽에 낮게 묻힌다.*"
+        "text": "*목소리가 커피잔 안쪽에 낮게 묻힌다.*"
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
@@ -314,7 +314,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "서연",
-        "text": "*서연의 손이 {name}의 어깨에 닿는다. 묻은 먼지를 털어내는 손길에 망설임이 없다.*"
+        "text": "*손이 {name}의 어깨에 닿는다. 묻은 먼지를 털어내는 손길에 망설임이 없다.*"
     },
     "morning2_seo_dust_4": {
         "name": "서연",

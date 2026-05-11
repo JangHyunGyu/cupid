@@ -17,7 +17,7 @@
     },
     "after5_farewell_seo_3": {
         "name": "서연",
-        "text": "*서연이 머리카락을 넘기며.*"
+        "text": "*머리카락을 넘기며.*"
     },
     "after5_farewell_seo_4": {
         "name": "서연",
@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "서연",
-        "text": "*서연이 돌아서며 손을 흔든다. 뒤돌아보지 않는다. 손목의 리본만 복도 끝에서 흔들린다.*"
+        "text": "*돌아서며 손을 흔든다. 뒤돌아보지 않는다. 손목의 리본만 복도 끝에서 흔들린다.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "after5_farewell_yuna_4": {
         "name": "유나",
-        "text": "*유나가 돌아선다. 멈추지 않는다.*"
+        "text": "*돌아선다. 멈추지 않는다.*"
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "다인",
-        "text": "*다인은 배구공을 한 번 더 높이 던지고 받는다. 받는 손끝이 조금 늦다.*"
+        "text": "*배구공을 한 번 더 높이 던지고 받는다. 받는 손끝이 조금 늦다.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "after5_last_chance_2_d": {
         "name": "서연",
-        "text": "*서연이 돌아본다. 석양을 등지고 있다.*"
+        "text": "*돌아본다. 석양을 등지고 있다.*"
     },
     "after5_last_chance_2_e": {
         "name": "서연",
@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "서연",
-        "text": "*서연이 내민 손끝이 {name} 앞에 멈춘다. 대답을 기다리는 손이다.*"
+        "text": "*내민 손끝이 {name} 앞에 멈춘다. 대답을 기다리는 손이다.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -182,7 +182,7 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "서연",
-        "text": "*서연이 돌아본다. 발끝이 반쯤 돌아가 있다. 금방이라도 갈 수 있게.* ...왜."
+        "text": "*돌아본다. 발끝이 반쯤 돌아가 있다. 금방이라도 갈 수 있게.* ...왜."
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
@@ -191,7 +191,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "다인",
-        "text": "*다인이 뛰어오다가 멈춘다.*"
+        "text": "*뛰어오다가 멈춘다.*"
     },
     "after5_last_chance_2_m": {
         "name": "다인",
@@ -199,7 +199,7 @@
     },
     "after5_last_chance_2_n": {
         "name": "다인",
-        "text": "*다인이 그대로 굳는다. 손에 든 공이 천천히 내려간다.*"
+        "text": "*그대로 굳는다. 손에 든 공이 천천히 내려간다.*"
     },
     "after5_last_chance_2_o": {
         "name": "다인",
@@ -207,7 +207,7 @@
     },
     "after5_last_chance_2_p": {
         "name": "다인",
-        "text": "*다인의 입술이 떨린다. 대답하기 전에 숨부터 삼킨다.*"
+        "text": "*입술이 떨린다. 대답하기 전에 숨부터 삼킨다.*"
     },
     "after5_last_chance_2_q": {
         "name": "다인",
@@ -215,7 +215,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "다인",
-        "text": "*다인이 눈가를 문지른다. 웃음은 그대로인데, 손등에 물기가 묻는다.*"
+        "text": "*눈가를 문지른다. 웃음은 그대로인데, 손등에 물기가 묻는다.*"
     },
     "after5_last_chance_2_s": {
         "name": "다인",
@@ -227,7 +227,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "다인",
-        "text": "*다인이 멈추긴 한다. 근데 금방 웃지 못한다.* ...왜."
+        "text": "*멈추긴 한다. 근데 금방 웃지 못한다.* ...왜."
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -236,7 +236,7 @@
     },
     "after5_last_chance_yuna_2": {
         "name": "유나",
-        "text": "*유나가 멈춘다. 책을 품 쪽으로 끌어안는다. 돌아보는 데 2초쯤 걸린다.*"
+        "text": "*멈춘다. 책을 품 쪽으로 끌어안는다. 돌아보는 데 2초쯤 걸린다.*"
     },
     "after5_last_chance_yuna_3": {
         "name": "유나",
@@ -256,7 +256,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "유나",
-        "text": "*유나는 책을 안고 기다린다. 답장창에는 아직 첫 글자도 없다.*"
+        "text": "*책을 안고 기다린다. 답장창에는 아직 첫 글자도 없다.*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "유나",
-        "text": "*유나가 천천히 돌아본다. 책을 끌어안은 팔에 힘이 들어간다.* ...왜."
+        "text": "*천천히 돌아본다. 책을 끌어안은 팔에 힘이 들어간다.* ...왜."
     },
     "after5_last_chance_choice": {
         "name": "{name}",
@@ -311,7 +311,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "유나",
-        "text": "*유나가 책을 내려놓는다. 표정이 변하지 않는다. — 근데 손이 떨리고 있다.*"
+        "text": "*책을 내려놓는다. 표정이 변하지 않는다. — 근데 손이 떨리고 있다.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "유나",
