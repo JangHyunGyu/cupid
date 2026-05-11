@@ -134,7 +134,7 @@
     },
     "morning3_dain_gate_warm_2": {
         "name": "다인",
-        "text": "야! 늦을 뻔했잖아! 같이 가자!"
+        "text": "야, 늦을 뻔했잖아. 같이 가자."
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "morning3_dain_gate_2": {
         "name": "다인",
-        "text": "야야야!! 늦었다!! 뛰어!!"
+        "text": "야, 늦었다. 뛰어."
     },
     "morning3_dain_gate_3": {
         "name": "{name}",
@@ -150,11 +150,11 @@
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
-        "text": "잠깐 — 왜 손을 잡아?!"
+        "text": "잠깐, 왜 손을 잡아?"
     },
     "morning3_dain_gate_4_b": {
         "name": "다인",
-        "text": "이렇게 해야 빨라!! 의문 품지 마!!"
+        "text": "이렇게 해야 빨라. 의문 품지 마."
     },
     "morning3_dain_gate_5": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "morning3_react_seo_1": {
         "name": "다인",
-        "text": "야! 회장님이랑 같이 왔어?! 아침부터?!"
+        "text": "야, 회장님이랑 같이 왔어? 아침부터?"
     },
     "morning3_react_seo_2": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "morning3_react_yuna_2": {
         "name": "다인",
-        "text": "부러워!! 나도 아침에 같이 올 사람 없는데!!"
+        "text": "부럽다. 나도 아침에 같이 올 사람 없는데."
     },
     "morning3_react_yuna_2_b": {
         "name": "{name}",
@@ -706,7 +706,7 @@
     },
     "morning3_date_dain_1": {
         "name": "다인",
-        "text": "야! 주말에 뭐 해?! 같이 오락실 갈래?!"
+        "text": "야, 주말에 뭐 해? 같이 오락실 갈래?"
     },
     "morning3_date_dain_2": {
         "name": "{name}",

@@ -43,7 +43,7 @@
     },
     "lunch2_seo_6b_dain": {
         "name": "서연",
-        "text": "...생각보다 솔직하네."
+        "text": "...솔직하네."
     },
     "lunch2_seo_2b_yuna": {
         "name": "서연",
@@ -95,7 +95,7 @@
     },
     "lunch2_seo_9": {
         "name": "다인",
-        "text": "오! 여기 있었어?! 찾았다!"
+        "text": "여기 있었네. 찾았다."
     },
     "lunch2_seo_10": {
         "name": "서연",
@@ -167,7 +167,7 @@
     },
     "lunch2_seo_c1_3": {
         "name": "다인",
-        "text": "저 지금 뭘 본 거예요?!"
+        "text": "저 지금 뭘 본 거예요?"
     },
     "lunch2_seo_c1_3_b": {
         "name": "서연",
@@ -215,7 +215,7 @@
     },
     "lunch2_dain_2b_seo": {
         "name": "다인",
-        "text": "오, 회장님 도시락 말고 오늘은 내 쪽이네?!"
+        "text": "오, 회장님 도시락 말고 오늘은 내 쪽이네?"
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "lunch2_dain_4b_seo": {
         "name": "다인",
-        "text": "좋아!! 그 말 취소 못 해! 바로 소보로 걸고 한 판!!"
+        "text": "좋아. 그 말 취소 못 해. 바로 소보로 걸고 한 판."
     },
     "lunch2_dain_1b_yuna": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "lunch2_dain_2b_yuna": {
         "name": "다인",
-        "text": "야! 어제는 그림자처럼 있더니 오늘은 제대로 놀아주는 거지?!"
+        "text": "야, 어제는 그림자처럼 있더니 오늘은 제대로 놀아주는 거지?"
     },
     "lunch2_dain_3b_yuna": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     },
     "lunch2_dain_4b_yuna": {
         "name": "다인",
-        "text": "좋아!! 그 균형감각 인정! 그럼 한 판!!"
+        "text": "좋아. 그 균형감각 인정. 그럼 한 판."
     },
     "lunch2_dain_1": {
         "name": "{name}",
@@ -247,7 +247,7 @@
     },
     "lunch2_dain_2": {
         "name": "다인",
-        "text": "오늘은 진다!! 각오해!!"
+        "text": "오늘은 네가 진다. 각오해."
     },
     "lunch2_dain_3": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "lunch2_dain_4": {
         "name": "다인",
-        "text": "어제는 워밍업이었어!!"
+        "text": "어제는 워밍업이었어."
     },
     "lunch2_dain_5": {
         "name": "{name}",
@@ -267,7 +267,7 @@
     },
     "lunch2_dain_4b": {
         "name": "다인",
-        "text": "당연하지!! 나 원래 잘해!!"
+        "text": "당연하지. 나 원래 잘해."
     },
     "lunch2_dain_5b": {
         "name": "{name}",
@@ -275,7 +275,7 @@
     },
     "lunch2_dain_6": {
         "name": "다인",
-        "text": "...이거 조작 아냐?!"
+        "text": "...이거 조작 아냐?"
     },
     "lunch2_dain_7": {
         "name": "{name}",
@@ -553,7 +553,7 @@
     },
     "lunch2_yuna_8_yuna": {
         "name": "{name}",
-        "text": "응. 네 옆은 생각보다 안 불편했어."
+        "text": "응. 네 옆은 안 불편했어."
     },
     "lunch2_yuna_9": {
         "name": "{name}",

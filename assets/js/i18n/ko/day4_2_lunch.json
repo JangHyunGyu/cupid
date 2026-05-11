@@ -221,7 +221,7 @@
     },
     "date_dain_2": {
         "name": "다인",
-        "text": "왔다!! 늦을 뻔했지?!"
+        "text": "왔다. 늦을 뻔했지?"
     },
     "date_dain_3": {
         "name": "{name}",
@@ -229,7 +229,7 @@
     },
     "date_dain_4": {
         "name": "다인",
-        "text": "나는 20분 전에 왔거든!!"
+        "text": "나는 20분 전에 왔거든."
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
@@ -245,7 +245,7 @@
     },
     "date_dain_pretty_high_2": {
         "name": "다인",
-        "text": "야!! 경고 없이!! 그런 말 하면!!"
+        "text": "야, 경고 없이 그런 말 하면."
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -257,11 +257,11 @@
     },
     "date_dain_pretty_low": {
         "name": "다인",
-        "text": "뭐야 갑자기!! ...ㅋㅋ 고맙긴 한데 나 지금 리액션 고장 났어."
+        "text": "뭐야, 갑자기. ...고맙긴 한데 나 지금 리액션 고장 났어."
     },
     "date_dain_bright": {
         "name": "다인",
-        "text": "당연하지!! 오늘 컨디션 최상이거든!!"
+        "text": "당연하지. 오늘 컨디션 좋거든."
     },
     "date_dain_to_arcade": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "date_dain_arcade_2": {
         "name": "다인",
-        "text": "자, 내기다!! 진 사람 음료수!!"
+        "text": "자, 내기다. 진 사람이 음료수."
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "date_dain_arcade_3": {
         "name": "다인",
-        "text": "내기 없으면 재미없잖아!!"
+        "text": "내기 없으면 재미없잖아."
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
@@ -289,11 +289,11 @@
     },
     "date_dain_arcade_3_c": {
         "name": "다인",
-        "text": "*자리에서 벌떡 일어나며* 풀콤보!! 봤어?!"
+        "text": "*자리에서 벌떡 일어나며* 풀콤보. 봤어?"
     },
     "date_dain_rhythm": {
         "name": "다인",
-        "text": "*화면을 가리키며* 이 스코어 — 역대 2등이야!!"
+        "text": "*화면을 가리키며* 이 스코어, 역대 2등이야."
     },
     "date_dain_rhythm_2": {
         "name": "{name}",

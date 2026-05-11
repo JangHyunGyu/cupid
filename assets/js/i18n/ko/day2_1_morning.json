@@ -74,11 +74,11 @@
     },
     "morning2_dain_2": {
         "name": "다인",
-        "text": "왔어?! 좋은 아침!!"
+        "text": "왔어? 좋은 아침."
     },
     "morning2_dain_3": {
         "name": "다인",
-        "text": "ㅋㅋ 이 정도로?! 체력 관리 좀 해!"
+        "text": "그 정도로? 체력 관리 좀 해."
     },
     "morning2_dain_4": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "morning2_dain_react_3": {
         "name": "다인",
-        "text": "야! 지금 뭐야?! 어깨 만진 거야?!"
+        "text": "야, 지금 뭐야? 어깨 만진 거야?"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
@@ -346,7 +346,7 @@
     },
     "morning2_dain_react_5": {
         "name": "다인",
-        "text": "먼지... 먼지가 진짜 있었어?!"
+        "text": "먼지... 먼지가 진짜 있었어?"
     },
     "morning2_dain_react_6": {
         "name": "{name}",

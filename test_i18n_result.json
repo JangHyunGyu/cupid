@@ -3,13 +3,1132 @@
     "byLang": {
       "ko": 0,
       "en": 0,
-      "ja": 0,
+      "ja": 139,
       "es": 0,
       "fr": 0,
       "de": 0
     },
-    "bySeverity": {},
-    "byType": {}
+    "bySeverity": {
+      "ERROR": 138,
+      "WARNING": 1
+    },
+    "byType": {
+      "ITALIC_BROKEN": 138,
+      "ITALIC_MISSING": 1
+    }
   },
-  "issues": []
+  "issues": [
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_1_morning",
+      "node": "start",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_1_morning",
+      "node": "gate_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_2_lunch",
+      "node": "lunch_seo_17",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_2_lunch",
+      "node": "lunch_seo_c1_3_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_2_lunch",
+      "node": "lunch_yuna_10_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_3_afterschool",
+      "node": "after_miss_dain_6_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_3_afterschool",
+      "node": "after_miss_yuna_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_3_afterschool",
+      "node": "after_homeroom_ok_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_3_afterschool",
+      "node": "after_nurse_enter_11_g",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_3_afterschool",
+      "node": "after_nurse_enter_12_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_4_night",
+      "node": "night_hidden_nurse_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_4_night",
+      "node": "night_yuna_late_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day1_4_night",
+      "node": "night_dain_late_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_1_morning",
+      "node": "morning2_greet_dain_others_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_1_morning",
+      "node": "morning2_break_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_1_morning",
+      "node": "hidden_homeroom_d2_choice1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_1_morning",
+      "node": "hidden_homeroom_d2_6",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_seo_7",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_seo_end_c1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_dain_c3_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_dain_end_k",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_dain_end_y",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_dain_end_b2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_dain_end_d2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_yuna_choice",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_2_lunch",
+      "node": "lunch2_yuna_c1_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_msg_yuna",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_dain_9_f",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_7",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_seo_sunset_joke",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_yuna_8d",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_3_afterschool",
+      "node": "after2_yuna_choice_pre3_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_4_night",
+      "node": "night2_flashback_5",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day2_4_night",
+      "node": "night2_end_2_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_6",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_choice_a",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_6_c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_6_g",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_d",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_m",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_6_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_8_g",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_9_c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_start",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_10_c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_10_d",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_witness_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_15",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_share_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_9",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_decode_trap_9",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_6",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_10",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_dain_3b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_6",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_9",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_final",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_end",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_7_d",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_4_night",
+      "node": "night3_faithful_reflect_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day3_4_night",
+      "node": "night3_cheat_msg_4_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "morning4_nightmare_after",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_homeroom_d4_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_homeroom_d4_cafe_4_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_nurse_d4_morning_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_nurse_d4_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_nurse_d4_2_f",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_nurse_d4_4_g",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_nurse_d4_6_d",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_1_morning",
+      "node": "hidden_nurse_d4_meal_3_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_2_lunch",
+      "node": "date_yuna_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_2_lunch",
+      "node": "date_dain_knee",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_3_afterschool",
+      "node": "confess_seo_yes_8",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_3_afterschool",
+      "node": "confess_yuna_yes_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_3_afterschool",
+      "node": "confess_yuna_yes_8",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_3_afterschool",
+      "node": "confess_yuna_yes_8_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_seo_pre_high_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_seo_3",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_seo_6",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_seo_9",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_seo_hug_choice",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_seo_skin60_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_seo_glimpse_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_dain_newdream_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_dain_cry_6",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_dain_farewell_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_dain_glimpse_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_yuna_7",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_yuna_16_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day4_4_night",
+      "node": "wall_yuna_glimpse_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "morning5_start",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_praise_trap_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_6_g",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_4_c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_choice_b_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_choice_b_e",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_8",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_12",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_10",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_dain_4_d",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_hidden_route_choice_check",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_2_p",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_fail_walk_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3g",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_5",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_ep2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_ep4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_5_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_5_f",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_d",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "perfect_epilogue_1_seo",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "perfect_epilogue_1_yuna",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "perfect_epilogue_1c_dain",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "perfect_epilogue_2_dain",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "bitter_dain_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "alone_2_b",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "confess_fail_2",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "good_1_seo_c",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "good_5_yuna",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "mayhem_3",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "mayhem_4",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "mayhem_7",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "홀수 * (1개)"
+    },
+    {
+      "severity": "ERROR",
+      "type": "ITALIC_BROKEN",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "harem_5",
+      "detail": "홀수 * (1개)"
+    }
+  ]
 }

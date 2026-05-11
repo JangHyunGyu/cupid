@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*방에 돌아왔다. 침대에 누웠다. 첫날 치고는 — 진이 빠졌다. 근데 나쁘지 않다.*"
+        "text": "*방에 돌아와 침대에 누웠다. 교복 셔츠에 남은 벚꽃 냄새가 이불에 묻었다. 첫날은 길었다.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -29,7 +29,7 @@
     },
     "night_msg_yuna_1": {
         "name": "유나",
-        "text": "*...오늘 조용히 있어줘서 좋았어*"
+        "text": "*...오늘 조용히 있어줘서 괜찮았어*"
     },
     "night_msg_yuna_2": {
         "name": "유나",
@@ -41,11 +41,11 @@
     },
     "night_msg_dain_1": {
         "name": "다인",
-        "text": "*가위바위보 리벤지 내일이다!!*"
+        "text": "*가위바위보 리벤지 내일이다*"
     },
     "night_msg_dain_2": {
         "name": "다인",
-        "text": "*도망가지 마ㅋㅋ*"
+        "text": "*도망가지 마 ㅋㅋ*"
     },
     "night_msg_dain_3": {
         "name": "다인",
@@ -53,7 +53,7 @@
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*세 줄 연속. 숨 좀 쉬고 보내면 안 되나.*"
+        "text": "*세 줄이 거의 동시에 도착했다. 답장창을 열기 전에 웃음이 샜다.*"
     },
     "night_hidden_check": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*공지사항을 한 번 더 읽는다. 입꼬리가 올라가서, 화면을 엎어 둔다.*"
+        "text": "*공지사항을 한 번 더 읽고 화면을 엎어 둔다. 어두워진 액정에 내 얼굴이 잠깐 비친다.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -113,15 +113,15 @@
     },
     "night_dain_late_1": {
         "name": "다인",
-        "text": "*야 아직 안 잤지?!*"
+        "text": "*야 아직 안 잤지?*"
     },
     "night_dain_late_2": {
         "name": "다인",
-        "text": "*내일 아침 운동 같이 할 사람 구한다!*"
+        "text": "*내일 아침 운동 같이 할 사람 구한다*"
     },
     "night_dain_late_3": {
         "name": "다인",
-        "text": "*거절은 안 받음ㅋㅋ*"
+        "text": "*거절은 안 받음 ㅋㅋ*"
     },
     "night_dain_late_4": {
         "name": "{name}",
