@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'For real.' Behind the nurse's glasses, her eyes are wet. The playfulness takes a beat too long to return.*"
+        "text": "*The nurse adjusts her glasses. Her fingertip stops for a moment beneath the lens.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "School Nurse",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*'For real.' The nurse avoids eye contact for a second. The chopsticks on the cup noodle lid tilt slightly askew.*"
+        "text": "*The nurse presses down the cup noodle lid. One chopstick shifts slightly out of line.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

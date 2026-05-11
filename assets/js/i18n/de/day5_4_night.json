@@ -9,7 +9,7 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*Am Ende bleibt nicht nur die Stimme eines einzigen Menschen. Der Umschlag aus dem Klassenraum und das Pflaster auf meinem Handrücken tauchen gemeinsam vor mir auf.*"
+        "text": "*Vor dem Schultor bleiben meine Füße stehen. Der Umschlag drückt gegen meine Brust, und das Pflaster auf meinem Handrücken bleibt am Ärmel hängen.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*Der letzte Satz der Geschichte: 'Es gab jemanden, der nie verschwand. Dank dieser Person beschloss auch ich, nicht zu verschwinden.'*"
+        "text": "*Der letzte Satz des Romans: „Es gab jemanden, der nicht verschwand.“ Darunter ist die Tinte leicht verlaufen.*"
     },
     "perfect_yuna_5": {
         "name": "{name}",
@@ -317,11 +317,11 @@
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "Es hat Spaß gemacht, echt! ...Aber ich glaube, Spaß war alles. Das ist irgendwie schade."
+        "text": "Es hat Spaß gemacht! ...Aber ich glaube, es war nur Spaß. Das ist ein bisschen schade."
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*Ich habe das Fitnessstudio verlassen. Es regnet. Selbst nachdem sich die Tür geschlossen hatte, blieb das letzte „Es tut mir leid“ in meinen Ohren.*"
+        "text": "*Ich verlasse die Sporthalle. Es regnet. Hinter der geschlossenen Tür springt einmal ein Ball auf.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Als wir gemeinsam durch das Schultor nach draußen gingen, hatte ich das Gefühl, der letzte Aufschlag sei längst herübergekommen. Jetzt bin ich dran, ihn anzunehmen.*"
+        "text": "*Wir gehen gemeinsam durch das Schultor. Dain lockert ihr Handgelenk. Diesmal kommt kein Ball herüber.*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
@@ -614,7 +614,7 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Selbst nachdem Sie ein paar Schritte gegangen sind, bleiben die letzten Wörter auf dem Telefonbildschirm erhalten. „...Vielen Dank. Wirklich. Aber ich denke immer noch – 5 Tage sind zu kurz.“*"
+        "text": "*Auch nach ein paar Schritten kann ich das Handy nicht sinken lassen. Der letzte Satz bleibt neben der Lesebestätigung stehen.*"
     },
     "confess_fail_2": {
         "name": "{name}",
@@ -883,7 +883,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Klassenlehrerin",
-        "text": "...Das. Du hast nicht 'Frau Lehrerin' gesagt. Zum ersten Mal."
+        "text": "...Gerade hast du mich nicht Lehrerin genannt."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -947,7 +947,7 @@
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*Ein letztes Mal. Dann bricht die Gewohnheit. — Sieben Jahre 'Lehrerin' sind vorbei, und der Tag, sie beim Namen zu nennen, ist gekommen.*"
+        "text": "*Ihr Name bleibt noch einmal an meinen Lippen hängen. Sie lächelt mit abgewandtem Kopf.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Klassenlehrerin",
@@ -1028,7 +1028,7 @@
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*Das hellgrüne Notizbuch liegt tief in der Schublade. Auf der letzten Seite steht kein Brief — nur eine Zeile: 'Yujin, mir geht es jetzt gut.' — Ein Punkt nach drei Jahren.*"
+        "text": "*Das hellgrüne Heft liegt tief in der Schublade. Unten auf der letzten Seite bleibt eine Zeile: „Yujin, mir geht es jetzt gut.“*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -1148,7 +1148,7 @@
     },
     "hidden_good_nurse_2": {
         "name": "Schulkrankenschwester",
-        "text": "Vitamine. — Pass an der Uni auf dich auf. ...Medizinisches Interesse. Diesmal wirklich."
+        "text": "Vitamine. — Pass an der Uni gut auf deine Gesundheit auf. ...Nennen wir es medizinisches Interesse."
     },
     "hidden_good_nurse_2_b": {
         "name": "{name}",
@@ -1156,11 +1156,11 @@
     },
     "hidden_good_nurse_2_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Kurz innehaltend* ...Ja. Medizinisches Interesse. *Leise* Diesmal wirklich."
+        "text": "*Hält kurz inne* ...Ja. Medizinisches Interesse. *leise* Belassen wir es dabei."
     },
     "hidden_good_nurse_2_d": {
         "name": "{name}",
-        "text": "*'Diesmal wirklich.' Die Krankenschwester kann am Ende ihrer Worte kein Lächeln setzen.*"
+        "text": "*Die Krankenschwester reibt mit dem Daumen über das Etikett der Flasche. Ihr Lächeln kommt etwas verspätet.*"
     },
     "hidden_good_nurse_3": {
         "name": "{name}",
@@ -1172,7 +1172,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Meine Hand mit der Flasche hält inne. Ich denke an das hellgrüne Notizbuch in der Schublade des Krankenzimmers. Vielleicht kann diese Person irgendwann die letzte Seite dieses Briefes zuschlagen.*"
+        "text": "*Meine Hand um die Flasche hält inne. Die Schublade mit dem hellgrünen Heft ist geschlossen.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",

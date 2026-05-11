@@ -2105,7 +2105,7 @@
     "hidden_homeroom_d5_6_k": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_6_ins10",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*어제와 같은 말이다. 오늘은 대답하기 전에 봉투 모서리를 먼저 만지게 된다.*",
+      "_ko_text_preview": "*대답하기 전에 봉투 모서리를 먼저 만지게 된다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_6_ins10",
@@ -2429,7 +2429,7 @@
     "hidden_homeroom_d5_6_t": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_6_ins20",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'졸업하면'이 두 번이다. — 한 번은 허락, 한 번은 기다림.*",
+      "_ko_text_preview": "*담임은 같은 말을 다시 삼킨다. 클립보드 끝이 문틀에 가볍게 닿는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_6_ins20",
@@ -2501,7 +2501,7 @@
     "hidden_homeroom_d5_7_c": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_7_ins2",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "...교육적 관심의 범위를 좀 넘긴 것 같다. 마지막이니까. 마지막 한 ...",
+      "_ko_text_preview": "...알아. 지금은 안 되는 말인 거. 그래도 오늘은 여기까지 말할게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_7_ins2",
@@ -10047,7 +10047,7 @@
     "hidden_dual_route_1": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_dual_route_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*마지막까지 남은 건 한 사람의 목소리가 아니다. 교실에서 받은 봉투와 손등에 붙은 밴드가 같이 떠오른다.*",
+      "_ko_text_preview": "*교문 앞에서 발이 멈춘다. 품 안의 봉투가 눌리고, 손등의 밴드가 소매에 걸린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_dual_route_1",
@@ -11379,7 +11379,7 @@
     "perfect_yuna_4": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#perfect_yuna_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*소설의 마지막 문장: '사라지지 않는 사람이 있었다. 그 사람 덕분에,...",
+      "_ko_text_preview": "*소설의 마지막 문장: '사라지지 않는 사람이 있었다.' 그 아래에 잉크가 조금 번져 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#perfect_yuna_4",
@@ -12747,7 +12747,7 @@
     "bitter_dain_2": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#bitter_dain_2",
       "_ko_name": "다인",
-      "_ko_text_preview": "재밌었어, 진짜로! ...근데 재밌기만 했던 것 같아. 그게 좀 아쉬워.",
+      "_ko_text_preview": "재밌었어! ...근데, 재밌기만 했던 것 같아. 그게 좀 아쉬워.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#bitter_dain_2",
@@ -12783,7 +12783,7 @@
     "bitter_dain_3": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#bitter_dain_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*체육관을 나왔다. 비가 내린다. — 느낌표가 돌아왔지만 마지막 문장엔 마침표였다.*",
+      "_ko_text_preview": "*체육관을 나왔다. 비가 내린다. 닫힌 문 너머로 공 튀는 소리가 한 번 울린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#bitter_dain_3",
@@ -15133,7 +15133,7 @@
     "good_5_dain": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#good_5_dain",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*학교 앞. 마지막 서브는 아직 안 넘어왔다. 경기는 끝나지 않았다.*",
+      "_ko_text_preview": "*교문을 지나 함께 걸어 나온다. 다인이 손목을 푼다. 공은 이번엔 넘어오지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#good_5_dain",
@@ -15457,7 +15457,7 @@
     "confess_fail_1": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#confess_fail_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*몇 걸음이나 걸어 나온 뒤에도, 그 말이 귓가에 남아 있다. \"...고마워. 진짜로. 근데 나는 아직 — 5일은 너무 짧았나 봐.\"*",
+      "_ko_text_preview": "*몇 걸음이나 걸어 나온 뒤에도 휴대폰을 내려놓지 못했다. 읽음 표시 옆에 마지막 문장이 남아 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#confess_fail_1",
@@ -17905,7 +17905,7 @@
     "hidden_true_homeroom_4": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_true_homeroom_4",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "...그 말. '선생님'이라고 안 했네. 처음으로.",
+      "_ko_text_preview": "...방금, 선생님이라고 안 했네.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_true_homeroom_4",
@@ -18481,7 +18481,7 @@
     "hidden_true_homeroom_7_d": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_true_homeroom_7_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*마지막 한 번. 그리고 고쳐지는 습관. — 7년간의 '선생님'이 끝나고...",
+      "_ko_text_preview": "*입술 끝에서 이름이 한 번 더 맴돈다. 담임은 고개를 돌린 채 웃는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_true_homeroom_7_ins3",
@@ -19246,7 +19246,7 @@
     "hidden_perfect_nurse_ep4": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_perfect_nurse_ep4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*밴드는 아직 서랍에 있다. 쓸 일이 없어도. — 핑계가 필요 없어진 사...",
+      "_ko_text_preview": "*연두색 노트는 서랍 깊숙이 들어갔다. 마지막 페이지 아래쪽에 한 줄이 남아 있다. '유진아, 나 이제 괜찮아.'*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_perfect_nurse_ep4",
@@ -20326,7 +20326,7 @@
     "hidden_good_nurse_2": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_good_nurse_2",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "비타민. — 대학 가면 건강 관리 잘해. ...의료적 관심. 이번에는 진...",
+      "_ko_text_preview": "비타민. — 대학 가면 건강 관리 잘해. ...의료적 관심이라고 해둘게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_good_nurse_2",
@@ -20398,7 +20398,7 @@
     "hidden_good_nurse_2_c": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_good_nurse_2_ins2",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*잠깐 멈추며* ...그래. 의료적 관심. *작게* 이번에는 진짜로.",
+      "_ko_text_preview": "*잠깐 멈추며* ...그래. 의료적 관심. *작게* 그렇게 해둘게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_good_nurse_2_ins2",
@@ -20434,7 +20434,7 @@
     "hidden_good_nurse_2_d": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_good_nurse_2_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'이번에는 진짜로'. — 그동안은 아니었다는 뜻이다.*",
+      "_ko_text_preview": "*보건선생님이 병 라벨을 엄지로 문지른다. 웃음이 조금 늦게 따라온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_good_nurse_2_ins3",
@@ -20542,7 +20542,7 @@
     "hidden_good_nurse_4": {
       "_ko_ref": "assets/js/i18n/ko/day5_4_night.json#hidden_good_nurse_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*하트가 — 이번에는 확실히 의료적 관심이 아니다.*",
+      "_ko_text_preview": "*병을 쥔 손이 멈춘다. 연두색 노트가 들어 있던 서랍은 닫혀 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_4_night.json#hidden_good_nurse_4",

@@ -9,7 +9,7 @@
     },
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*In the end, what stays with me isn't just one person's voice. The envelope from the classroom and the bandage on the back of my hand come to mind at the same time.*"
+        "text": "*My feet stop in front of the school gate. The envelope presses against my chest, and the bandage on my hand catches on my sleeve.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*The last line of the story: 'There was someone who never disappeared. Because of that person, I decided not to disappear either.'*"
+        "text": "*The last sentence of the story: 'There was someone who did not disappear.' The ink blurs a little beneath it.*"
     },
     "perfect_yuna_5": {
         "name": "{name}",
@@ -317,11 +317,11 @@
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "It really was fun! ...But I think fun was all it was. Kind of sad, huh."
+        "text": "It was fun! ...But I think it was only fun. That's what feels a little off."
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*I left the gym. It's raining. Even after the door closed, the last ‘I’m sorry’ lingered in my ears.*"
+        "text": "*I leave the gym. Rain is falling. From behind the closed door, a ball bounces once.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*As we walked out past the school gate together, it felt like the last serve had already crossed over. Now it's my turn to receive it.*"
+        "text": "*We walk out through the school gate together. Dain loosens her wrist. This time, no ball comes over.*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
@@ -614,7 +614,7 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Even after walking a few steps, the last words remain on the phone screen. “...Thank you. Really. But I still think — 5 days is too short.”*"
+        "text": "*Even after walking several steps away, I can't put the phone down. The last sentence remains beside the read mark.*"
     },
     "confess_fail_2": {
         "name": "{name}",
@@ -883,7 +883,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Homeroom Teacher",
-        "text": "...That. You didn't say 'teacher.' First time."
+        "text": "...Just now, you didn't call me teacher."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -947,7 +947,7 @@
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*One last time. Then the habit breaks. — Seven years of 'teacher' are over, and the day to call her by name has come.*"
+        "text": "*Her name lingers once more at the edge of my mouth. She smiles with her head turned away.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Homeroom Teacher",
@@ -1028,7 +1028,7 @@
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*The light-green notebook has been tucked deep in the drawer. What's written on the last page isn't a letter — just one line: 'Yujin, I'm okay now.' — A period, three years in the making.*"
+        "text": "*The light green notebook went deep into the drawer. One line remains near the bottom of the last page. 'Yujin, I'm okay now.'*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -1148,7 +1148,7 @@
     },
     "hidden_good_nurse_2": {
         "name": "School Nurse",
-        "text": "Vitamins. — Take care of yourself in college. ...Medical concern. This time, for real."
+        "text": "Vitamins. — Take care of your health in college. ...Let's call it medical concern."
     },
     "hidden_good_nurse_2_b": {
         "name": "{name}",
@@ -1156,11 +1156,11 @@
     },
     "hidden_good_nurse_2_c": {
         "name": "School Nurse",
-        "text": "*Pausing briefly* ...Yes. Medical concern. *Quietly* This time, for real."
+        "text": "*Pausing for a moment* ...Right. Medical concern. *quietly* Let's leave it at that."
     },
     "hidden_good_nurse_2_d": {
         "name": "{name}",
-        "text": "*'This time for real.' The nurse can't put a smile at the end of her words.*"
+        "text": "*The nurse rubs the bottle label with her thumb. Her smile follows a little late.*"
     },
     "hidden_good_nurse_3": {
         "name": "{name}",
@@ -1172,7 +1172,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*My hand holding the bottle stops. I think of the light-green notebook in the nurse's office drawer. Someday, I hope she can close the final page of that letter.*"
+        "text": "*My hand stops around the bottle. The drawer that held the light green notebook is closed.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",

@@ -287,7 +287,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*São as mesmas palavras de ontem. Hoje, antes de responder, toco primeiro a ponta do envelope.*"
+        "text": "*Antes de responder, toco primeiro a ponta do envelope.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "hidden_homeroom_d5_6_t": {
         "name": "{name}",
-        "text": "*'Depois da formatura.' Duas vezes. Uma era permissão, a outra era espera.*"
+        "text": "*A professora engole as mesmas palavras de novo. A borda da prancheta toca de leve no batente da porta.*"
     },
     "hidden_homeroom_d5_7": {
         "name": "Professora",
@@ -335,7 +335,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professora",
-        "text": "...Estou passando dos limites. Mas é a última vez. Só mais uma vez."
+        "text": "...Eu sei. Não é algo que eu deva dizer agora. Mas hoje eu vou dizer só isso."
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",

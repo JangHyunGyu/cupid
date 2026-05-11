@@ -297,11 +297,11 @@
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "Moi aussi tu me plais. Énormément."
+        "text": "Moi aussi, je t'aime bien. ...Beaucoup."
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'Extrêmement'. La réponse courte est que les mains de Dain agrippent le ballon plus fort.*"
+        "text": "*Dain serre de nouveau le ballon contre elle. Le dos de ses mains se tend.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

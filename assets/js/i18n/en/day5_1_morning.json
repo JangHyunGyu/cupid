@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*The same words as yesterday. Today, before answering, I touch the corner of the envelope first.*"
+        "text": "*Before answering, I touch the corner of the envelope first.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_t": {
         "name": "{name}",
-        "text": "*'After you graduate' — twice. Once as permission, once as longing.*"
+        "text": "*The teacher swallows the same words again. The edge of the clipboard taps lightly against the doorframe.*"
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Homeroom Teacher",
-        "text": "...I'm crossing a line. But it's the last time. Just once more."
+        "text": "...I know. I shouldn't say this now. But today, I'll say this much."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",

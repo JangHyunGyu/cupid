@@ -363,7 +363,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'Sério.' Por trás dos óculos da enfermeira, os olhos estão úmidos. A brincadeira demora um batimento a mais para voltar.*"
+        "text": "*A enfermeira ajeita os óculos. A ponta do dedo para por um instante sob a lente.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermeira",
@@ -559,7 +559,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*'Sério.' A enfermeira desvia o olhar por um segundo. Os palitos sobre a tampa do miojo entortam um pouco.*"
+        "text": "*A enfermeira pressiona a tampa do macarrão instantâneo. Um dos hashis fica um pouco torto.*"
     },
     "hidden_nurse_d4_pass": {
         "name": "Enfermeira",
