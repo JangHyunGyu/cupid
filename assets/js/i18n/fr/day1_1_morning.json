@@ -20,8 +20,8 @@
         "text": "L'élève transféré ? C'est bien {name} ?"
     },
     "seoyeon_meet_2": {
-        "name": "{name}",
-        "text": "*Seoyeon vérifie mon nom une dernière fois et coche brièvement la liste sur son bloc. Derrière ses lunettes, son regard met un instant de trop à se détourner.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon vérifie encore une fois le nom de {name} et marque brièvement la liste sur son porte-bloc. Son regard, derrière ses lunettes, ne se baisse pas tout de suite.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -58,18 +58,18 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Elle s'arrête. Tourne légèrement la tête pour jeter un regard en arrière.*"
+        "text": "*Les pas de Seoyeon s'arrêtent. Seule sa tête se tourne vers {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
         "text": "Ah ouais ? Alors retiens au moins le numéro de salle. Terminale 2, tout au fond à droite."
     },
     "choice_dismiss_3": {
-        "name": "{name}",
-        "text": "*Seoyeon a vraiment tourné les talons. Sans un geste. Après avoir mal lu deux fois les panneaux du couloir, elle s'est enfin arrêtée devant la 3-2.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon se détourne vraiment. Sans même un geste, elle entre dans l'enceinte de l'école.*"
     },
     "choice_flirt_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon s'arrête et se retourne. Pas surprise — plutôt amusée.*"
     },
     "choice_flirt_2": {
@@ -93,8 +93,8 @@
         "text": "Tu sais pas encore si c'est flatteur ou catastrophique."
     },
     "choice_flirt_7": {
-        "name": "{name}",
-        "text": "*Seoyeon a pris les devants, puis s'est retournée une fois pour vérifier que je suivais. Le coin de son bloc-notes tapotait doucement entre ses doigts.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon marche devant. Elle se retourne une fois, puis ne ralentit pas quand les pas de {name} se rapprochent.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -109,7 +109,7 @@
         "text": "Au moins, tu ne t'ennuieras pas."
     },
     "hallway_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon marchait devant dans le couloir. Les élèves la saluaient au passage. Elle répondait d'un léger signe de bloc-notes, sans jamais ralentir.*"
     },
     "hallway_3": {
@@ -117,7 +117,7 @@
         "text": "Le bâtiment des terminales c'est ici, la bibliothèque par là. Le kiosque est au sous-sol."
     },
     "hallway_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon sort une clé de sa poche et l'agite légèrement.*"
     },
     "hallway_5": {
@@ -145,7 +145,7 @@
         "text": "Si tu te débrouilles bien."
     },
     "hallway_13": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon se retourne et agite légèrement la main. Elle ne regarde pas en arrière.*"
     },
     "classroom_1": {
@@ -189,7 +189,7 @@
         "text": "*Quelqu'un chuchota au premier rang. « …Lui parle pas, elle fait peur. » Yuna tourna une page. Juste un peu plus lentement qu'avant.*"
     },
     "classroom_seat_1": {
-        "name": "{name}",
+        "name": "Professeure principale",
         "text": "*La prof principale me désigne une place vide.*"
     },
     "classroom_seat_2": {
@@ -261,7 +261,7 @@
         "text": "*Une brève hésitation* ...Tu es perspicace."
     },
     "hallway_6_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Le bord du presse-papiers bouge à nouveau un battement plus tard.*"
     },
     "hallway_7": {
@@ -289,7 +289,7 @@
         "text": "*Le murmure de la prof se perd dans le bruit de la classe. Un sifflement vient d'un coin de la salle.*"
     },
     "classroom_dain_5_b": {
-        "name": "{name}",
+        "name": "Professeure principale",
         "text": "*La professeure principale laissa échapper un léger soupir. Elle tapota le coin du registre et chercha le nom suivant sans même regarder vers Dain.*"
     },
     "classroom_dain_5_c": {
@@ -297,7 +297,7 @@
         "text": "...Économise ton énergie. Le premier cours n'a même pas commencé."
     },
     "classroom_dain_5_d": {
-        "name": "{name}",
+        "name": "Professeure principale",
         "text": "*Elle le dit sèchement, mais le coin de ses lèvres se relève imperceptiblement.*"
     },
     "classroom_minsu_2_b": {

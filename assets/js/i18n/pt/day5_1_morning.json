@@ -70,7 +70,7 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "Ei! Te escalei como minha dupla no evento esportivo de hoje!"
+        "text": "Ei, coloquei voc? como meu parceiro no evento esportivo de hoje."
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Se fugir, eu fico brava de verdade, hein?"
+        "text": "Se voc? fugir, eu fico brava."
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
@@ -91,14 +91,14 @@
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Antes das exclamações da Dain, o que me volta primeiro é a respiração que ela segurou no final ontem. Seoyeon e Yuna só falam rapidinho sobre a preparação do evento.*"
+        "text": "*A primeira coisa que volta ? o rosto de Dain ontem no gin?sio, quando ela parou para recuperar o f?lego. Seoyeon e Yuna s? comentam rapidamente sobre a prepara??o do evento.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
         "text": "*Horário de preparar o evento. Ando pelo corredor — passo na frente de uma sala vazia. A porta tá aberta.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora tá sentada na mesa. — Dessa vez não é manuscrito. Tá segurando um envelope. Pardo.*"
     },
     "hidden_homeroom_d5_1_b": {
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Professora",
-        "text": "*Erguendo levemente o envelope* ...Isso."
+        "text": "*Erguendo o envelope* ...Isto."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -135,15 +135,15 @@
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*Seguro o manuscrito. A ponta do envelope pressiona a parte de dentro do meu braço.*",
+        "text": "*Seguro o manuscrito. O envelope pressiona a parte interna do meu bra?o.*",
         "choices": [
             "Você segurou isso por tanto tempo. Isso deve valer alguma coisa.",
             "Posso ler um minuto? Depois eu falo."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
-        "name": "{name}",
-        "text": "*O professor da sala de aula faz uma pausa por um momento. Ele logo retorna à sua expressão seca habitual, mas os cantos do envelope estão amassados.*"
+        "name": "Professora",
+        "text": "*A professora para. A express?o volta r?pido, mas o envelope amassa um pouco na m?o dela.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professora",
@@ -158,7 +158,7 @@
         "text": "...Tá."
     },
     "hidden_homeroom_d5_praise_trap_5": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora estende a mão. Pega o manuscrito de volta. Devagar. Guarda no envelope de novo.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
@@ -190,8 +190,8 @@
         "text": "*Saí e fechei a porta da sala. O envelope continua na mesa da professora. Uma marca de etiqueta de devolução do tamanho de uma unha permanece na superfície.*"
     },
     "hidden_homeroom_d5_correct_1": {
-        "name": "{name}",
-        "text": "*O professor da sala para. A mão que segura a prancheta ganha força. A extremidade do papel é ligeiramente curvada.*"
+        "name": "Professora",
+        "text": "*A professora para. A ponta do papel entorta um pouco na m?o dela.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professora",
@@ -218,7 +218,7 @@
         "text": "Quando olho para a última página, minha mão para. Faz anos."
     },
     "hidden_homeroom_d5_correct_8": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora engole o resto. A sala fica tão quieta quanto aquela última linha vazia.*"
     },
     "hidden_homeroom_d5_correct_9": {
@@ -270,15 +270,15 @@
         "text": "A senhora não precisa mais dizer isso."
     },
     "hidden_homeroom_d5_6_g": {
-        "name": "{name}",
-        "text": "*O professor da sala de aula faz uma pausa por um momento. Desta vez, a folha de presença não cobre o rosto.*"
+        "name": "Professora",
+        "text": "*Desta vez, a professora n?o se esconde atr?s da chamada.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Professora",
         "text": "...Nunca pensei que ouviria isso de um aluno."
     },
     "hidden_homeroom_d5_6_i": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora alisa a ponta dobrada do envelope do manuscrito.*"
     },
     "hidden_homeroom_d5_6_j": {
@@ -303,10 +303,10 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Professora",
-        "text": "*Ri baixinho.* ...É. Escreve pelo menos uma linha."
+        "text": "*Com uma risada baixa* ...Isso. Escreve pelo menos uma linha."
     },
     "hidden_homeroom_d5_6_p": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora para uma vez diante da porta. Pressiona duas vezes a borda da prancheta com o dedo e solta.*"
     },
     "hidden_homeroom_d5_6_q": {
@@ -314,7 +314,7 @@
         "text": "{name}."
     },
     "hidden_homeroom_d5_6_r": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*Ela trava. Aperta a prancheta. — E devagar vira o rosto.*"
     },
     "hidden_homeroom_d5_6_s": {
@@ -322,7 +322,7 @@
         "text": "...Depois da formatura. *A voz falha.* É. Depois da formatura."
     },
     "hidden_homeroom_d5_6_t": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora engole as mesmas palavras de novo. A borda da prancheta toca de leve no batente da porta.*"
     },
     "hidden_homeroom_d5_7": {
@@ -338,7 +338,7 @@
         "text": "...Eu sei. Não é algo que eu deva dizer agora. Mas hoje eu vou dizer só isso."
     },
     "hidden_homeroom_d5_8": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora se vira. O cabelo longo balança, e a ponta da prancheta pressiona o cotovelo dela.*"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -351,7 +351,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "Enfermeira",
-        "text": "uh? {name}. Já é o último dia. Quando o evento terminar, realmente terminará."
+        "text": "Ah? {name}. J? ? o ?ltimo dia. Quando o evento acabar, acaba mesmo."
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
@@ -371,11 +371,11 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*'Aparece se não estiver se sentindo bem.' Depois de dizer isso, a enfermeira troca levemente a mão que segura dois copos de papel.*"
+        "text": "*?Vem se estiver doente.? Depois de dizer isso, a enfermeira troca os dois copos de papel de m?o.*"
     },
     "hidden_nurse_d5_2_b": {
-        "name": "{name}",
-        "text": "*A enfermeira sai. Bem na minha cara. — A gente se esbarra. De pertinho.*"
+        "name": "Enfermeira",
+        "text": "*A enfermeira abre a porta e sai. N?o h? espa?o para recuar antes de nossos olhares se encontrarem.*"
     },
     "hidden_nurse_d5_2_c": {
         "name": "Enfermeira",
@@ -386,8 +386,8 @@
         "text": "Posso vir mesmo sem estar machucado?"
     },
     "hidden_nurse_d5_3_b": {
-        "name": "{name}",
-        "text": "*A professora de saúde faz uma pausa por um momento. O riso desaparece primeiro.*"
+        "name": "Enfermeira",
+        "text": "*O sorriso da enfermeira some primeiro.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Enfermeira",
@@ -402,7 +402,7 @@
         "text": "*Voltando a sorrir.* Me pergunta isso depois da formatura. — Aí eu respondo."
     },
     "hidden_nurse_d5_3_f": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A enfermeira fecha a caixa de curativos e abre de novo.*"
     },
     "hidden_nurse_d5_3_g": {
@@ -410,7 +410,7 @@
         "text": "Vai lá. Não dá pra faltar no evento."
     },
     "hidden_nurse_d5_3_h": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A enfermeira vai entrar — e trava na porta.*"
     },
     "hidden_nurse_d5_3_i": {
@@ -458,8 +458,8 @@
         "text": "*O sorriso apaga.* ...Essa."
     },
     "hidden_nurse_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "*A professora de saúde para de rir. O olhar por trás dos óculos oscila por um momento.*"
+        "name": "Enfermeira",
+        "text": "*A enfermeira para no meio do sorriso. A m?o demora um pouco para ajustar os ?culos.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Enfermeira",
@@ -486,8 +486,8 @@
         "text": "Eu sei. Só precisava de uma desculpa pra chamar."
     },
     "hidden_nurse_d5_6_b": {
-        "name": "{name}",
-        "text": "*A enfermeira tira um curativo e cola no dorso da minha mão. Devagar. Há uma escrita pequena na borda do curativo.*"
+        "name": "Enfermeira",
+        "text": "*A enfermeira pega um curativo e o coloca no dorso da mão de {name}. O movimento segue devagar; há pequenas letras na ponta do curativo.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",

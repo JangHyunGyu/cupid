@@ -785,7 +785,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "after3_dain_end_check": {
         "background": "assets/images/background/gym.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "branches": [
             { "condition": "chose_dain_after2", "next": "after3_dain_end" },
             { "next": "after3_dain_end_first" }
@@ -843,7 +843,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "after3_confront_5_c": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_sad.png",
+        "character": "assets/images/characters/dain_sad.png",
         "next": "after3_confront_6"
     },
     "after3_confront_6": {

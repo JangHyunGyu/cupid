@@ -100,7 +100,7 @@
         "text": "じゃあ先にご飯。*小さくつぶやきながら* 教師として、生徒が食べたかは確認しないと。— 生徒だからジュースだけど。"
     },
     "hidden_homeroom_d4_5_d": {
-        "name": "{name}",
+        "name": "担任先生",
         "text": "*担任は言い終えても、カップホルダーの角だけを折っている。*"
     },
     "hidden_homeroom_d4_choice": {
@@ -124,7 +124,7 @@
         "text": "結局、誰かに見せないと最後までいけないんだ。読んでくれる人がいないと、途中で止まってしまう。"
     },
     "hidden_homeroom_d4_cafe_choice": {
-        "name": "{name}",
+        "name": "担任先生",
         "text": "*担任がコーヒーカップを置く。体が少し窓辺のほうへ傾く。*",
         "choices": [
             "その小説、主人公は誰ですか？",
@@ -240,7 +240,7 @@
         "text": "あ、来た。"
     },
     "hidden_nurse_d4_morning_4": {
-        "name": "{name}",
+        "name": "保健先生",
         "text": "*保健先生は「え、来た」と聴診器を聞いた後、再び机の上に置く。"
     },
     "hidden_nurse_d4_morning_5": {
@@ -252,7 +252,7 @@
         "text": "相談か... *椅子を回しながら* そっか。最後の相談か。"
     },
     "hidden_nurse_d4_morning_7": {
-        "name": "{name}",
+        "name": "保健先生",
         "text": "*保健の先生が机の上の書類を整理するふりをしているが——同じ紙を三度目めくっている。*"
     },
     "hidden_nurse_d4_morning_8": {
@@ -264,7 +264,7 @@
         "text": "何ですか？"
     },
     "hidden_nurse_d4_morning_10": {
-        "name": "{name}",
+        "name": "保健先生",
         "text": "*保健の先生がメガネに触れる。メガネの向こうに見える瞳は思ったより大きい。茶目っ気の裏に隠れていた瞳。*"
     },
     "hidden_nurse_d4_morning_11": {
@@ -292,7 +292,7 @@
         "text": "...本当に？"
     },
     "hidden_nurse_d4_morning_13": {
-        "name": "{name}",
+        "name": "保健先生",
         "text": "*保健の先生が眼鏡を直す。指先がレンズの下で一瞬止まる。*"
     },
     "hidden_nurse_d4_morning_freetalk": {
@@ -374,7 +374,7 @@
         "text": "*コーヒーを一口飲んで* 正直？ ちょっと。"
     },
     "hidden_homeroom_d4_cafe_1_d": {
-        "name": "{name}",
+        "name": "担任先生",
         "text": "*担任は冗談のように言ってコーヒーカップに触れる。コースターの上に円形の水跡が二つ重なっている。*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
@@ -382,7 +382,7 @@
         "text": "昨日の原稿、もっと書けましたか？"
     },
     "hidden_homeroom_d4_cafe_1_f": {
-        "name": "{name}",
+        "name": "担任先生",
         "text": "*先生がコーヒーカップを置く。少し考えるように。*"
     },
     "hidden_homeroom_d4_cafe_2_b": {
@@ -402,15 +402,15 @@
         "text": "小説で一番難しいのが何か、知ってる？"
     },
     "hidden_homeroom_d4_cafe_6_b": {
-        "name": "{name}",
-        "text": "*先生が俺を見ている。乾いていない目で。* *カフェを出た。*"
+        "name": "担任先生",
+        "text": "*担任が{name}を見る。乾いた目ではない。* *カフェの扉が背後でゆっくり閉まる。*"
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
         "text": "*昨日、空の教室の原稿が浮かび上がる。今日は学校外で、カップホルダーの角が折り続けている。"
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "{name}",
+        "name": "担任先生",
         "text": "*担任が一瞬笑う。カップホルダーを折っていた手が止まる。*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -434,12 +434,12 @@
         "text": "……そうね。ダメなことよね。"
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "{name}",
+        "name": "担任先生",
         "text": "*先生がポケットから手を出す。指先が一瞬、宙をさまよう。癖みたいな仕草だ。*"
     },
     "hidden_homeroom_d4_decline_b": {
-        "name": "{name}",
-        "text": "*担任が振り返る。肩が少し下がる。家に帰る道、カフェのガラス扉に映った自分の顔がずっと付いてくる。*"
+        "name": "担任先生",
+        "text": "*担任が背を向ける。肩が少し下がる。カフェのガラス扉に、その後ろ姿が小さく映る。*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "保健先生",
@@ -478,7 +478,7 @@
         "text": "それで燃え尽き……"
     },
     "hidden_nurse_d4_4_c": {
-        "name": "{name}",
+        "name": "保健先生",
         "text": "*保健の先生が一瞬止まる。書類を置く。*"
     },
     "hidden_nurse_d4_4_d": {
@@ -519,7 +519,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "保健先生",
-        "text": "*保健先生が一瞬こちらを見て* ……大したことだよ。"
+        "text": "*保健先生が一瞬{name}の方を見て* ...大したことじゃないよ。"
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -534,7 +534,7 @@
         "text": "いつの話よ。*笑いながら* 先生ももう、昔みたいにはいかないんだから。"
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "{name}",
+        "name": "保健先生",
         "text": "*保健の先生が一瞬止まる。箸を置く。*"
     },
     "hidden_nurse_d4_meal_3_b": {
@@ -554,7 +554,7 @@
         "text": "{name}。"
     },
     "hidden_nurse_d4_meal_4_b": {
-        "name": "{name}",
+        "name": "保健先生",
         "text": "*保健の先生がカップ麺のふたを押さえる。箸が片方だけ少しずれる。*"
     },
     "morning4_manuscript_check": {},

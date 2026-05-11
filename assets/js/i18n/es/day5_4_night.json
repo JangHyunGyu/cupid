@@ -32,7 +32,7 @@
         "text": "*La azotea de Seoyeon. De pie entre las macetas que cuida ella.*"
     },
     "perfect_seo_1_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Los ojos de Seoyeon están húmedos. Esta vez no los esconde con el dorso de la mano.*"
     },
     "perfect_seo_2": {
@@ -48,7 +48,7 @@
         "text": "*Corre la brisa en la azotea.* Aunque me gradúe, seguiré viniendo. Estas plantas solo crecen si estás tú."
     },
     "perfect_seo_5": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon extiende la mano. No el meñique. La mano entera.*"
     },
     "perfect_seo_5_b": {
@@ -68,7 +68,7 @@
         "text": "*Día de ingreso a la universidad. Un mensaje en el celular. 'Hoy regué la planta. — Pero vuelve pronto.'*"
     },
     "perfect_epilogue_3_seo": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon no borra las fotos aunque el delineador esté un poco corrido. Los algodones frente al espejo no se usaron ni una vez hoy.*"
     },
     "perfect_epilogue_4_seo": {
@@ -112,7 +112,7 @@
         "text": "...saber. Pero tomó algún tiempo creerlo."
     },
     "true_seo_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon sonríe. El viento le desordena el cabello.*"
     },
     "true_seo_6b": {
@@ -124,7 +124,7 @@
         "text": "...Quédate conmigo."
     },
     "true_seo_7_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon duda un momento y me tiende el meñique.*"
     },
     "true_seo_7b": {
@@ -137,11 +137,11 @@
     },
     "true_seo_bridge": {
         "name": "{name}",
-        "text": "*La promesa de Seoyeon aún me dura en los dedos.*"
+        "text": "*La promesa que Seoyeon me dio a?n permanece en mi mano.*"
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Cinco días. Eso fue lo que tomó ver las yemas de los dedos detrás del portapapeles de Seoyeon.*"
+        "text": "*Fueron cinco d?as. Hasta que vi el rostro que Seoyeon hab?a escondido detr?s del portapapeles.*"
     },
     "ending_aff_check_yuna": {
         "name": "Sistema",
@@ -164,7 +164,7 @@
         "text": "*La última frase de la novela: 'Había alguien que no desaparecía.' Debajo, la tinta se corre un poco.*"
     },
     "perfect_yuna_5": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se levantó y me abrazó. Sin decir nada. La luz de la ventana rota se extendió larga por el piso. Su mano se detuvo lentamente detrás de mi espalda.*"
     },
     "perfect_epilogue_1_yuna": {
@@ -180,8 +180,8 @@
         "text": "*Publicaron la primera novela de Yuna. Dedicatoria: 'A la tercera estrella.'*"
     },
     "perfect_epilogue_3_yuna": {
-        "name": "{name}",
-        "text": "*Yuna sigue hablando poco. Pero sus frases se han alargado. Solo conmigo.*"
+        "name": "Yuna",
+        "text": "*Yuna sigue hablando poco. Pero solo con {name}, la longitud de sus frases ha cambiado.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "Sistema",
@@ -212,7 +212,7 @@
         "text": "Este sitio solo lo conocía yo."
     },
     "true_yuna_2_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna sube la escalerilla de la buhardilla. Arriba hay una trampilla. — Al abrirse entra una brisa.*"
     },
     "true_yuna_2_c": {
@@ -220,11 +220,11 @@
         "text": "*Encima de la buhardilla había una azotea. La del anexo de la biblioteca. — Un pasadizo secreto que no conoce nadie.*"
     },
     "true_yuna_2_d": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se apoya en la barandilla. Se ven las estrellas.*"
     },
     "true_yuna_3": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna abre la pequeña ventana. Se ven las estrellas.*"
     },
     "true_yuna_4": {
@@ -236,8 +236,8 @@
         "text": "¿La tercera estrella?"
     },
     "true_yuna_5_b": {
-        "name": "{name}",
-        "text": "*Yuna se detiene un momento. La mano que sujeta el lomo del libro se afloja.*"
+        "name": "Yuna",
+        "text": "*Yuna se detiene. Su mano se afloja sobre el lomo del libro.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -272,35 +272,35 @@
         "text": "Este es el último pase. — Pero también es un principio."
     },
     "perfect_dain_2b": {
-        "name": "{name}",
-        "text": "*Sin signo de exclamación. Dain baja el balón de voleibol y espera mi respuesta.*"
+        "name": "Dain",
+        "text": "*Dain deja el balón de voleibol y espera la respuesta de {name}.*"
     },
     "perfect_dain_3": {
         "name": "Dain",
         "text": "Fuera de la cancha, ¿soy una chica que vale la pena?"
     },
     "perfect_dain_3b": {
-        "name": "{name}",
-        "text": "*Dain deja el balón en la cancha. Se gira y sonríe. Una sonrisa sin signos de exclamación.*"
+        "name": "Dain",
+        "text": "*Dain deja la pelota en la cancha. Se da vuelta y sonr?e. Una sonrisa tranquila.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
         "text": "Dentro y fuera de la cancha."
     },
     "perfect_dain_5": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain saltó. No me dio tiempo a reaccionar. El balón rodó por el suelo — y en el gimnasio bañado por el atardecer solo quedaron dos sombras.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*La rodilla de Dain cede levemente al aterrizar el salto. Ella ríe primero, luego presiona la rodilla con la mano.*"
+        "text": "*La rodilla de Dain se dobla un poco al aterrizar. Primero sonr?e y luego se la presiona con la mano.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "Sistema",
         "text": "*Epílogo — Un año después*"
     },
     "perfect_epilogue_2_dain": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain se convirtió en comentarista deportivo. Sonriendo también frente a la cámara. Esta vez no pongo énfasis en el final de mis palabras.*"
     },
     "perfect_epilogue_3_dain": {
@@ -344,8 +344,8 @@
         "text": "*El gimnasio. Las mismas luces de emergencia que ayer. Tumbados el uno al lado del otro sobre la colchoneta.*"
     },
     "true_dain_2": {
-        "name": "{name}",
-        "text": "*Dain me toma la mano y la coloca sobre la parte interna de su muñeca. Sin decir nada.*"
+        "name": "Dain",
+        "text": "*Dain toma la mano de {name} y la coloca contra la parte interna de su muñeca. Sin decir nada.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -353,11 +353,11 @@
     },
     "true_dain_3": {
         "name": "{name}",
-        "text": "*El pulso bajo los dedos se nota clarísimo.*"
+        "text": "*El pulso late con claridad bajo mis dedos.*"
     },
     "true_dain_4": {
         "name": "{name}",
-        "text": "*No me salen las palabras. Me quedo con los labios entreabiertos, inmóvil.*"
+        "text": "*No salen palabras. Solo se me secan los labios.*"
     },
     "true_dain_5": {
         "name": "{name}",
@@ -376,7 +376,7 @@
         "text": "¡¡Sí me estabas mirando!! ...Pero puedes seguir."
     },
     "true_dain_8b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*El final de la voz de Dain se eleva ligeramente. Esta vez no suena forzado.*"
     },
     "true_dain_bridge": {
@@ -385,7 +385,7 @@
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Cinco días. Eso fue lo que tomó escuchar el lugar donde se detenían los signos de exclamación de Dain.*"
+        "text": "*Fueron cinco d?as. Hasta que vi los momentos en que Dain no pod?a sonre?r.*"
     },
     "true_epilogue_2": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*Su rodilla se venda cada mañana. Sus notas de alarma todavía tienen dos signos de exclamación. Pero Dain a veces envía mensajes que terminan con punto ahora.*"
+        "text": "*Se venda la rodilla cada ma?ana. Las notas de alarma siguen siendo ruidosas. Aun as?, Dain a veces manda mensajes muy breves para saber c?mo estoy.*"
     },
     "true_epilogue_7": {
         "name": "Sistema",
@@ -473,12 +473,12 @@
         "text": "Los dos somos torpes. ...Pero esta vez no lo sueltes a mitad de camino."
     },
     "good_1_seo_b": {
-        "name": "{name}",
-        "text": "*Seoyeon me coloca el borde de la manga, como quien aparta un pétalo de cerezo. Es un gesto seco, pero no uno que me aparte.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon acomoda una vez el borde de la manga de {name}, como si quitara un pétalo de cerezo. El gesto es brusco, pero no aparta.*"
     },
     "good_1_seo_c": {
-        "name": "{name}",
-        "text": "*Seoyeon reduce la velocidad medio paso sin decir nada. Espero hasta que mis hombros estén nivelados.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon retrasa medio paso sin decir nada. Espera hasta que el hombro de {name} queda a la misma altura que el suyo.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
@@ -498,14 +498,14 @@
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*Cruzando despacio el final del paseo de los cerezos, pensé que quería volver a recorrerlo con ella la primavera siguiente. Y esta vez sí me salió decirlo.*"
+        "text": "*Caminamos despacio m?s all? del final del camino de cerezos. Esta vez no me trago las palabras: quiero hacer otro plan.*"
     },
     "good_epilogue_1": {
         "name": "{name}",
         "text": "*Me llega un mensaje de Seoyeon. 'He hecho una copia de la llave de la azotea para mañana. — Es un permiso, un permiso.' Le habría bastado con decir que era una invitación.*"
     },
     "good_epilogue_2": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon nunca usa la palabra 'invitación' hasta el final. En su lugar, envía una foto de la copia de la llave de la azotea.*"
     },
     "good_epilogue_3": {
@@ -521,7 +521,7 @@
         "text": "...Tardaste. Pero esta vez leí tu frase hasta el final."
     },
     "good_1_yuna_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna me da una nota doblada. Al abrirla, solo hay una línea: 'La próxima vez, no desaparezcas.'*"
     },
     "good_1_yuna_b_b": {
@@ -537,7 +537,7 @@
         "text": "*Miramos el mismo cielo. Habla poco, pero el silencio ya no es tan frío como antes.*"
     },
     "good_4_yuna": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna mete el marcapáginas en una página nueva, en el lado sin marca de doblez.*"
     },
     "good_5_yuna": {
@@ -549,7 +549,7 @@
         "text": "*Una nota doblada cae de la mochila. Hay marcas donde estuvo presionada contra el forro durante mucho tiempo. 'Si terminaste el volumen 1, te prestaré el volumen 2. — Yuna'*"
     },
     "good_epilogue_2_yuna": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna, en lugar de hablar, prepara lo siguiente. Después del primer tomo, el segundo. Después de hoy, mañana. Esta es su manera de decir 'sigamos viéndonos'.*"
     },
     "good_epilogue_3_yuna": {
@@ -582,15 +582,15 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Un mensaje de Dain. '¿Alguien se apunta mañana a entrenar por la mañana?' Con interrogación al final. Lo normal en ella habría sido una exclamación.*"
+        "text": "*Llega un mensaje de Dain. ??Alguien quiere entrenar ma?ana por la ma?ana??. La frase es m?s cuidadosa de lo habitual.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
-        "text": "*El mensaje de Dain termina con un signo de interrogación. Permanece en la pantalla más tiempo que un signo de exclamación.*"
+        "text": "*Una pregunta breve permanece mucho tiempo en la pantalla.*"
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Le respondí. 'Me apunto.' Sin exclamación. Mañana ya iré corriendo yo en persona.*"
+        "text": "*Env?o la respuesta. ?Voy?. Ma?ana puedo simplemente correr hasta all?.*"
     },
     "good_5_cg_dain": {
         "name": "Sistema",
@@ -654,7 +654,7 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*Salgo por la puerta y hay un mensaje en mi móvil. 'gracias por hoy jaja' Escribo 'yo también', y solo añado una carita sonriente.*"
+        "text": "*Al salir por la puerta de la escuela, me llega un mensaje. ?Gracias por hoy?. Escribo ?yo tambi?n? y luego solo a?ado un emoji sonriente.*"
     },
     "friend_4_seo": {
         "name": "{name}",
@@ -666,7 +666,7 @@
     },
     "friend_4_dain": {
         "name": "{name}",
-        "text": "*Salgo por la puerta y hay un mensaje. '¡Oye ten cuidado! ¡Gracias por hoy!' Dos signos de exclamación. Dejo solo 'ok' en el cuadro de respuesta.*"
+        "text": "*Al salir por la puerta de la escuela, llega un mensaje. ?Oye, llega bien a casa. Gracias por hoy?. En la respuesta solo dejo ?s??.*"
     },
     "friend_5": {
         "name": "{name}",
@@ -697,16 +697,16 @@
         "text": "*Las tres conversaciones están detenidas en 'leído'. Intento escribir una respuesta, y la borro en la primera letra.*"
     },
     "mayhem_1": {
-        "name": "{name}",
-        "text": "*Seoyeon pasó a mi lado en el pasillo. Ni giró la cabeza. — Normal.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon pasa junto a {name} en el pasillo. No gira la cabeza.*"
     },
     "mayhem_2": {
         "name": "{name}",
         "text": "*El sitio de Yuna estaba vacío. Una nota encima del pupitre. 'Me lo pasé bien.' Ese punto final fue el final.*"
     },
     "mayhem_3": {
-        "name": "{name}",
-        "text": "*Dain se rió como siempre. \"Cómo estás.\" El final de sus palabras cayó al suelo. No había ningún signo de exclamación que yo supiera.*"
+        "name": "Dain",
+        "text": "*Dain sonr?e como siempre. ?Cu?date?. El final de la frase cae suavemente al suelo.*"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -729,27 +729,27 @@
         "text": "*Me gustan las tres. — Cuando esas palabras se me escaparon, las tres caras se congelaron a la vez.*"
     },
     "harem_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon se rió primero....bueno. Eso es honesto. La risa pronto terminó.*"
     },
     "harem_1_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna baja la cabeza. Cuando al fin levanta la vista, las puntas de sus dedos presionan con fuerza el lomo del libro.*"
     },
     "harem_2": {
         "name": "Yuna",
-        "text": "...Eres lo peor, de verdad."
+        "text": "...Eres lo peor."
     },
     "harem_3": {
-        "name": "{name}",
-        "text": "*Dain me dio un puñetazo en el hombro. Dolió. \"Oye, de verdad eres lo peor.\" Tenía razón. Dain no sonreía.*"
+        "name": "Dain",
+        "text": "*Dain golpea el hombro de {name} con el puño. El impacto es lo bastante fuerte para doler. \"Oye, eres lo peor.\" No hay risa al final de la frase.*"
     },
     "harem_4": {
         "name": "{name}",
         "text": "*El lunes es Seoyeon. El miércoles es Yuna. El viernes es Dain. Cada vez que aparece una notificación del calendario, primero giro la pantalla de bloqueo.*"
     },
     "harem_5": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Cuando Seoyeon preguntó: “¿Qué harás el miércoles?”, su dedo se detuvo en la ventana de respuesta.*"
     },
     "harem_6": {
@@ -783,7 +783,7 @@
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Profesora",
-        "text": "*Pausa por un momento. La esquina del sobre se dobla.*...Adiós."
+        "text": "*La tutora se detiene. La punta del sobre de documentos se dobla.* ...Cu?date."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
@@ -799,7 +799,7 @@
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Profesora",
-        "text": "*Sonríe ladeada.* Dejé la enseñanza. Ahora solo escribo. Y echo horas en una cafetería. — ¿Y tú?"
+        "text": "*Se r?e suavemente.* Dej? la escuela y ahora solo escribo. Tambi?n trabajo medio tiempo en un caf?. ? ?Y t??"
     },
     "hidden_perfect_homeroom_3f": {
         "name": "Profesora",
@@ -890,8 +890,8 @@
         "text": "*La forma en que la llamé se vuelve extraña un segundo después de salir de mi boca.*"
     },
     "hidden_true_homeroom_4_c": {
-        "name": "{name}",
-        "text": "*La tutora saca un sobre blanco. Es más delgado que el viejo sobre marrón.*"
+        "name": "Profesora",
+        "text": "*La profesora saca un sobre blanco. Es más delgado que el sobre marrón de la vez anterior.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Profesora",
@@ -906,7 +906,7 @@
         "text": "Te dije \"con una línea basta\" y me trajiste tres hojas. Después de ver eso, se me acabaron las excusas para aplazarlo."
     },
     "hidden_true_homeroom_4_g": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*Mira por la ventana. Los cerezos están cayendo.*"
     },
     "hidden_true_homeroom_4_h": {
@@ -915,7 +915,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Profesora",
-        "text": "*Mirando por la ventana.* ...Pues eso. Ya que lo tengo acabado, estaba pensando en mandarlo a una editorial. — ¿Qué te parece?"
+        "text": "*Mirando por la ventana* ...As? que, ya que lo termin?, estoy pensando en mandarlo a una editorial. ?T? qu? opinas?"
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
@@ -938,12 +938,12 @@
         "text": "Está bien."
     },
     "hidden_true_homeroom_7_b": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La tutora sonríe. La luz de la ventana cae sobre el sobre del manuscrito.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Profesora",
-        "text": "...Una profe no debería hacer esto. *— Se le apaga la voz. Y luego sonríe.*"
+        "text": "...Hoy voy a dejar de hablar como profesora. *La frase se le apaga. Luego sonr?e.*"
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
@@ -951,7 +951,7 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Profesora",
-        "text": "...Aunque no debería estar haciendo esto... no me arrepiento."
+        "text": "...Pero no me arrepiento."
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -984,7 +984,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "Enfermera",
-        "text": "*La persona que abrió la puerta lleva una bata de punto en lugar de una bata.*...Ahí estás. Realmente no pensé que vendría."
+        "text": "*Quien abre la puerta lleva un su?ter en vez de bata.* ...Viniste. No pens? que lo har?as."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -996,15 +996,15 @@
     },
     "hidden_perfect_nurse_4": {
         "name": "Enfermera",
-        "text": "*Sube la mano y me agarra la corbata. No la suelta.* ...Esta noche no te vas."
+        "text": "*Su mano sube hasta mi corbata y luego la suelta.* ...Qu?date un poco m?s hoy."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",
-        "text": "*Por la mañana. La luz se cuela entre las cortinas. A mi lado, una respiración. — La persona que tardaba tres minutos en poner una curita ahora duerme sujetándome la mano.*"
+        "text": "*Ma?ana. La luz entra entre las cortinas. Una curita y un caf? fr?o est?n juntos sobre la mesa.*"
     },
     "hidden_perfect_nurse_5": {
         "name": "Enfermera",
-        "text": "*Abre los ojos. Sonríe.* ...¿Te duele algo? ¿Quieres que lo revise? *Incluso sin el estetoscopio, la mano se extiende primero.*"
+        "text": "*La enfermera abre los ojos y sonríe.* ...¿Te duele algo? ¿Quieres que revise? *Lo dice como una broma, pero las puntas de sus dedos son cuidadosas.*"
     },
     "hidden_perfect_nurse_5b": {
         "name": "{name}",
@@ -1083,8 +1083,8 @@
         "text": "Tardar tres minutos en poner una curita no es ser cuidadosa."
     },
     "hidden_true_nurse_5_f": {
-        "name": "{name}",
-        "text": "*La profesora de salud hace una pausa por un momento. La mano que giraba la taza de café se detiene y la sonrisa dura mucho tiempo.*"
+        "name": "Enfermera",
+        "text": "*La enfermera deja la taza de caf?. Su sonrisa llega un poco tarde.*"
     },
     "hidden_true_nurse_6": {
         "name": "Enfermera",
@@ -1099,11 +1099,11 @@
         "text": "...Veo que has estado observando hasta aquí."
     },
     "hidden_true_nurse_7_c": {
-        "name": "{name}",
-        "text": "*La enfermera alarga la mano y roza la curita del dorso de la mía. La misma que me puso esta mañana.*"
+        "name": "Enfermera",
+        "text": "*La enfermera extiende la mano y toca la curita en el dorso de la mano de {name}. Es la que puso esa mañana.*"
     },
     "hidden_true_nurse_7_d": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera presiona una vez el borde de la tirita con la uña y luego suelta la mano.*"
     },
     "hidden_true_nurse_8": {
@@ -1120,7 +1120,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*Por un momento, la cortina blanca de la enfermería se superpone a la ventana del café y desaparece.*"
+        "text": "*Por un momento, en la ventana del caf? se superpone la cortina blanca de la enfermer?a y luego desaparece.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
@@ -1156,10 +1156,10 @@
     },
     "hidden_good_nurse_2_c": {
         "name": "Enfermera",
-        "text": "*Se detiene un momento.* ...Sí. Interés médico. *En voz baja.* Dejémoslo así."
+        "text": "*Escogiendo las palabras* ...S?. Inter?s m?dico. *En voz baja* Dej?moslo as?."
     },
     "hidden_good_nurse_2_d": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera frota la etiqueta del frasco con el pulgar. La sonrisa llega un poco tarde.*"
     },
     "hidden_good_nurse_3": {

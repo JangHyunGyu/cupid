@@ -219,7 +219,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "night3_nightmare_2_b": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "night3_nightmare_3"
     },
     "night3_nightmare_3": {
@@ -229,7 +229,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "night3_nightmare_3_b": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "night3_nightmare_4"
     },
     "night3_nightmare_4": {
@@ -239,7 +239,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "night3_nightmare_4_b": {
         "background": "assets/images/background/school.png",
-        "character": null,
+        "character": "assets/images/characters/dain_sad.png",
         "next": "night3_nightmare_5"
     },
     "night3_nightmare_5": {

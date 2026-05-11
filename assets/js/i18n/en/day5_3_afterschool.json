@@ -28,7 +28,7 @@
         "text": "...Hah."
     },
     "after5_farewell_seo_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon brushes her hair back.*"
     },
     "after5_farewell_seo_4": {
@@ -44,8 +44,8 @@
         "text": "Next time, I'll be the one who takes you."
     },
     "after5_farewell_seo_6_b": {
-        "name": "{name}",
-        "text": "*Seoyeon turns and waves. She doesn't look back. Only the ribbon on her wrist sways briefly at the end of the hallway.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon turns away and waves. She does not look back. Only the ribbon at her wrist sways at the end of the hallway.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -65,7 +65,7 @@
         "text": "It was fun. ...See you in the next story."
     },
     "after5_farewell_yuna_4": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna turns away. She doesn't stop.*"
     },
     "after5_farewell_yuna_5": {
@@ -99,11 +99,11 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "...Be good to her. Seriously."
+        "text": "...Do it right. This time."
     },
     "after5_farewell_dain_4_d": {
-        "name": "{name}",
-        "text": "*The exclamation point is alive. Dain throws the volleyball high and catches it again.*"
+        "name": "Dain",
+        "text": "*Dain tosses the volleyball high once more and catches it. Her fingertips are a little late.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -161,7 +161,7 @@
         "text": "Seoyeon."
     },
     "after5_last_chance_2_d": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon turns around. The sunset at her back.*"
     },
     "after5_last_chance_2_e": {
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*A moment of silence. The wind blows her hair. She doesn't brush it aside.*"
+        "text": "*The wind blows her hair across her face. This time, Seoyeon does not tuck it away.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
@@ -185,8 +185,8 @@
         "text": "This time, take it."
     },
     "after5_last_chance_2_j": {
-        "name": "{name}",
-        "text": "*Seoyeon's outstretched fingertip hovers in front of me. If I don't say it now, I'll lose it again.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon's outstretched fingertips stop in front of {name}. It is a hand waiting for an answer.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -202,23 +202,23 @@
         "text": "Dain."
     },
     "after5_last_chance_2_l": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain was running over and stops.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Wait, are you serious?!"
+        "text": "Hey, you..."
     },
     "after5_last_chance_2_n": {
-        "name": "{name}",
-        "text": "*Her eyes go wide. One second. Two seconds.*"
+        "name": "Dain",
+        "text": "*Dain freezes where she stands. The ball in her hand slowly lowers.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...Seriously?"
+        "text": "...You came back?"
     },
     "after5_last_chance_2_p": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain's lips tremble. I take a deep breath before answering.*"
     },
     "after5_last_chance_2_q": {
@@ -226,7 +226,7 @@
         "text": "I waited. Since yesterday. No, since the day before. But — it doesn't just get okay right away."
     },
     "after5_last_chance_2_r": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain rubs the corner of her eye. Her smile stays the same, but moisture clings to the back of her hand.*"
     },
     "after5_last_chance_2_s": {
@@ -247,7 +247,7 @@
         "text": "Yuna."
     },
     "after5_last_chance_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna stops. She hugs the book to her chest. It takes about two seconds for her to turn around.*"
     },
     "after5_last_chance_yuna_3": {
@@ -267,7 +267,7 @@
         "text": "*A short sentence. But those words push me forward. Yuna doesn't look away.*"
     },
     "after5_last_chance_yuna_7": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna waits, holding the book. The reply window still has no first letter.*"
     },
     "after5_last_chance_yuna_low_1": {
@@ -280,7 +280,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*The corner of the phone presses into my palm.*",
+        "text": "*My phone presses into my palm.*",
         "choices": [
             "Say it now",
             "...I couldn't say anything"
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Walking out of school.* Hey, really?! ...For real? I did wait, yeah. — But smiling the second I waited would feel cheap. This time say it all the way through."
+        "text": "*Leaving school together.* Hey, you... I did wait. But smiling right away just because I waited would be unfair. Say it to the end this time."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -322,7 +322,7 @@
         "text": "Yuna."
     },
     "after5_confess_react_yuna_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna sets down her book. Her expression doesn't change. — But her hands are trembling.*"
     },
     "after5_confess_react_yuna_c": {

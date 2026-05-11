@@ -16,7 +16,7 @@
         "text": "*Das Dach. Der Sonnenuntergang taucht die Schule in warmes Licht. Ein Ort, der in wenigen Tagen vertraut wurde.*"
     },
     "confess_seo_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon lehnt am Geländer. Der Wind weht ihr Haar. — Sie streicht es mit dem kleinen Finger zurück. Diese Angewohnheit.*"
     },
     "confess_seo_4_b": {
@@ -36,7 +36,7 @@
         ]
     },
     "confess_seo_yes_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon dreht sich um. Der Wind spielt mit ihren Haaren.*"
     },
     "confess_seo_yes_2": {
@@ -64,7 +64,7 @@
         "text": ""
     },
     "confess_seo_yes_8": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon sagt nichts. Meine Lippen zittern. Es gibt kein Klemmbrett und keine Armbinde für den Präsidenten des Fachschaftsrates.*"
     },
     "confess_seo_yes_9": {
@@ -80,11 +80,11 @@
         "text": "Hat ewig gedauert, bis ich das mal aussprechen konnte."
     },
     "confess_seo_yes_11_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeons Hand bewegt sich.*"
     },
     "confess_seo_yes_12": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon streckt ihren kleinen Finger aus. Derselbe kleine Finger, den ich am ersten Tag gesehen habe. — Damals dachte ich, es sei nur eine Angewohnheit, aber das ist Seoyeons Art, ein Versprechen zu machen.*"
     },
     "confess_seo_no_1": {
@@ -96,7 +96,7 @@
         "text": "*Sie sagte am ersten Tag das Gleiche. Seoyeons Finger stoppt am Rand des Klemmbretts.*"
     },
     "confess_seo_no_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon lächelt. Ein geübtes Lächeln. — Sie dreht sich um und geht. Beim dritten Schritt bleibt sie stehen.*"
     },
     "confess_seo_no_4": {
@@ -124,8 +124,8 @@
         "text": "*Der Bibliotheksanbau. Der Sonnenuntergang dringt durch die Fenster. Ein Ort, der in wenigen Tagen vertraut wurde.*"
     },
     "confess_yuna_4": {
-        "name": "{name}",
-        "text": "*Yuna sitzt auf dem Sofa und sieht mich an. Als hätte sie gewartet.*"
+        "name": "Yuna",
+        "text": "*Yuna sitzt auf dem Sofa und sieht {name} an. Ihr Blick wirkt, als hätte er gewartet.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
@@ -176,8 +176,8 @@
         "text": ""
     },
     "confess_yuna_yes_8": {
-        "name": "{name}",
-        "text": "*Yuna presst ihre Ärmel fest zusammen, ohne in meine Richtung zu schauen.*"
+        "name": "Yuna",
+        "text": "*Yuna kann nicht zu {name} hinsehen und umklammert ihren Ärmel fest.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
@@ -200,11 +200,11 @@
         "text": "...Dieser Ort ist wirklich schön."
     },
     "confess_yuna_no_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna nickt. Sie schiebt das Lesezeichen zwischen die Seiten und drückt es tiefer hinein.*"
     },
     "confess_yuna_no_3": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna greift nach einem Buch. Sie schaut auf das Cover, aber sie liest nicht.*"
     },
     "confess_yuna_no_4": {
@@ -232,7 +232,7 @@
         "text": "*Die Turnhalle. Leer. Der Sonnenuntergang fällt durch die Fenster auf das Spielfeld. Ein Ort, an dem sich in wenigen Tagen unzählige Erinnerungen angesammelt haben.*"
     },
     "confess_dain_4": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain hält einen Ball. Beiläufig. — Aber ihre Finger sind weiß. Sie umklammert ihn fest.*"
     },
     "confess_dain_5": {
@@ -240,7 +240,7 @@
         "text": ""
     },
     "confess_dain_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dains Ball springt einmal auf. Die Hand, die ihn normalerweise gefangen hätte, stoppt einen Takt zu spät in der Luft.*",
         "choices": [
             "Dain. Leg den Ball weg.",
@@ -280,7 +280,7 @@
         "text": ""
     },
     "confess_dain_yes_8": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain hält inne. Auf ihrem Gesicht, das kein Lächeln mehr zeigt, werden nur ihre Augen langsam feucht. Sie vergräbt ihr Gesicht in beiden Händen.*"
     },
     "confess_dain_yes_8_b": {
@@ -300,7 +300,7 @@
         "text": "Ich mag dich auch. ...Sehr."
     },
     "confess_dain_yes_10_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain drückt den Ball wieder an sich. Ihre Handrücken spannen sich an.*"
     },
     "confess_dain_no_1": {
@@ -312,7 +312,7 @@
         "text": "*Ich kann ihr den Ball zuspielen, aber drei Worte bringe ich nicht heraus. Erbärmlich.*"
     },
     "confess_dain_no_3": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain lässt einen Volleyball aufprallen. Einmal. Zweimal. — Beim dritten Mal hält sie inne.*"
     },
     "confess_dain_no_4": {

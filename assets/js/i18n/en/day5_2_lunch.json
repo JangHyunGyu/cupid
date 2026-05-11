@@ -64,7 +64,7 @@
         "text": "*The library annex. An old sofa, afternoon sunlight through the window. The same dusty smell as when you first walked in.*"
     },
     "tour_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna sits on the sofa. She leaves the seat beside her empty. A spot where no dust has settled.*"
     },
     "tour_yuna_3": {
@@ -80,7 +80,7 @@
         "text": "In a good way."
     },
     "tour_yuna_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna pulls a notebook from her bag. The same one hastily covered in the attic.*"
     },
     "tour_yuna_7": {
@@ -116,7 +116,7 @@
         "text": "*The gym. The first bet and the final spike linger on the same court. Today the lights are on.*"
     },
     "tour_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain is standing in the middle of the court. Holding a volleyball.*"
     },
     "tour_dain_3": {

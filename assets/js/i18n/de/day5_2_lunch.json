@@ -64,7 +64,7 @@
         "text": "*Der Bibliotheksanbau. Ein altes Sofa, Nachmittagslicht durchs Fenster. Derselbe staubige Geruch wie beim ersten Betreten.*"
     },
     "tour_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna setzt sich aufs Sofa. Sie lässt den Platz neben sich frei. Eine Stelle, an der sich kein Staub abgesetzt hat.*"
     },
     "tour_yuna_3": {
@@ -80,7 +80,7 @@
         "text": "Im guten Sinne."
     },
     "tour_yuna_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna holt ein Notizbuch aus ihrer Tasche. Dasselbe, das hastig auf dem Dachboden bedeckt wurde.*"
     },
     "tour_yuna_7": {
@@ -116,7 +116,7 @@
         "text": "*Die Turnhalle. Die erste Wette und der letzte Spike verweilen auf demselben Platz. Heute ist das Licht an.*"
     },
     "tour_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain steht mitten auf dem Spielfeld. Mit einem Volleyball in der Hand.*"
     },
     "tour_dain_3": {

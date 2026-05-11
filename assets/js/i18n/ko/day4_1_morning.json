@@ -170,7 +170,7 @@
         "text": "그럼 밥부터 먹자. *작게 중얼거리며* 교사로서 학생 식사는 확인해야 하니까. — 학생이니까 주스지만."
     },
     "hidden_homeroom_d4_5_d": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 말을 끝내고도 컵홀더 모서리만 접는다.*"
     },
     "hidden_homeroom_d4_choice": {
@@ -194,7 +194,7 @@
         "text": "*커피를 한 모금 마시며* 솔직히? 좀."
     },
     "hidden_homeroom_d4_cafe_1_d": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 농담처럼 말하고 커피잔을 만진다. 컵받침 위에 원형 물자국이 두 개 겹쳐 있다.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
@@ -202,7 +202,7 @@
         "text": "어제 원고, 더 쓰셨어요?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 커피잔을 내려놓는다. 잠깐 생각하듯.*"
     },
     "hidden_homeroom_d4_cafe_2": {
@@ -230,7 +230,7 @@
         "text": "결국 누군가한테 보여줘야 끝까지 가더라. 읽어줄 사람이 없으면 자꾸 멈춰."
     },
     "hidden_homeroom_d4_cafe_choice": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 커피잔을 내려놓는다. 창가 쪽으로 몸이 조금 기운다.*",
         "choices": [
             "그 소설, 주인공이 누구예요?",
@@ -258,7 +258,7 @@
         "text": "읽고 싶어요."
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 잠깐 웃는다. 컵홀더를 접던 손이 멈춘다.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -282,7 +282,7 @@
         "text": "...맞아. 안 되는 거지."
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 주머니에서 손을 뺀다. 손끝이 잠깐 허공에서 맴돈다. 습관 같은 제스처.*"
     },
     "hidden_homeroom_d4_cafe_6": {
@@ -290,16 +290,16 @@
         "text": "*커피잔을 내려놓으며* ...가끔은 이렇게 밖에서 만나는 것도 나쁘지 않다."
     },
     "hidden_homeroom_d4_cafe_6_b": {
-        "name": "{name}",
-        "text": "*담임이 나를 본다. 건조하지 않은 눈.* *카페를 나섰다.*"
+        "name": "담임선생님",
+        "text": "*담임이 {name}을 본다. 건조하지 않은 눈이다.* *카페 문이 뒤에서 천천히 닫힌다.*"
     },
     "hidden_homeroom_d4_decline": {
         "name": "담임선생님",
         "text": "...맞아. 안 되는 거지. 가 봐. 주말인데 학교 앞에서 뭐 하냐. — 재밌는 거 해."
     },
     "hidden_homeroom_d4_decline_b": {
-        "name": "{name}",
-        "text": "*담임이 돌아선다. 어깨가 살짝 내려간다. 집으로 돌아오는 길, 카페 유리문에 비친 내 얼굴이 자꾸 따라온다.*"
+        "name": "담임선생님",
+        "text": "*담임이 돌아선다. 어깨가 살짝 내려간다. 카페 유리문에 담임의 뒷모습이 작게 비친다.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
@@ -310,7 +310,7 @@
         "text": "어, 왔어."
     },
     "hidden_nurse_d4_morning_4": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님은 '어, 왔어' 하고 청진기를 들었다가, 다시 책상 위에 내려놓는다.*"
     },
     "hidden_nurse_d4_morning_5": {
@@ -322,7 +322,7 @@
         "text": "상담이라... *의자를 돌리며* 맞아. 마지막 상담."
     },
     "hidden_nurse_d4_morning_7": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 책상 위 서류를 정리하는 척하지만 — 같은 종이를 세 번째 넘기고 있다.*"
     },
     "hidden_nurse_d4_morning_8": {
@@ -334,7 +334,7 @@
         "text": "뭔데요?"
     },
     "hidden_nurse_d4_morning_10": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 안경을 만진다. 안경 너머 눈이 평소보다 또렷하다. 장난기 뒤에 숨어 있던 눈.*"
     },
     "hidden_nurse_d4_morning_11": {
@@ -362,7 +362,7 @@
         "text": "...진짜로?"
     },
     "hidden_nurse_d4_morning_13": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 안경을 고쳐 쓴다. 손끝이 렌즈 아래에서 잠깐 멈춘다.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
@@ -426,7 +426,7 @@
         "text": "그래서 번아웃이..."
     },
     "hidden_nurse_d4_4_c": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 잠깐 멈춘다. 서류를 내려놓는다.*"
     },
     "hidden_nurse_d4_4_d": {
@@ -491,7 +491,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "보건선생님",
-        "text": "*보건선생님이 잠깐 이쪽을 보며* ...별거야."
+        "text": "*보건선생님이 잠깐 {name} 쪽을 보며* ...별거야."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -530,7 +530,7 @@
         "text": "안 늙었는데요."
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 잠깐 멈춘다. 젓가락을 내려놓고.*"
     },
     "hidden_nurse_d4_meal_3": {
@@ -558,7 +558,7 @@
         "text": "{name}. 오늘 고마웠어. — 진짜로."
     },
     "hidden_nurse_d4_meal_4_b": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 컵라면 뚜껑을 누른다. 젓가락 한 짝이 조금 비뚤어진다.*"
     },
     "hidden_nurse_d4_pass": {

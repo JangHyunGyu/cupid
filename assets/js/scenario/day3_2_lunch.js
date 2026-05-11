@@ -47,7 +47,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "lunch3_meal_6": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "lunch3_meal_7"
     },
     "lunch3_meal_7": {

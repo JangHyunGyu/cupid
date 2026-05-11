@@ -137,7 +137,7 @@
         "text": "*Arregalando os olhos* Opa? Eu ia pegar leve, mas agora não dá mais."
     },
     "after2_dain_9_c": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain abaixa a postura. O olhar mudou.*"
     },
     "after2_dain_9_d": {
@@ -177,7 +177,7 @@
         "text": "*Dando um soco no meu ombro* Seu pilantra. — Ah, mas foi divertido!"
     },
     "after2_dain_skinship_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain levanta a mão do nada. Toca aqui.*"
     },
     "after2_dain_skinship_2": {
@@ -221,7 +221,7 @@
         "text": "Você jogava muito melhor do que eu."
     },
     "after2_dain_end_3": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain para o hashi. Bem rápido.*"
     },
     "after2_dain_end_3b": {
@@ -237,8 +237,8 @@
         "text": "Aaai tá picante!! Água, água!!"
     },
     "after2_dain_end_3e": {
-        "name": "{name}",
-        "text": "*Dain empurra o copo para mim e pede água alto de propósito.*"
+        "name": "Dain",
+        "text": "*Dain empurra o copo na direção de {name} e depois pede água de propósito, em voz alta.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -261,8 +261,8 @@
         "text": "*Sorrindo de leve* Dócil."
     },
     "after2_seo_4_b": {
-        "name": "{name}",
-        "text": "*Em vez de 'por favor,' Seoyeon vira a prancheta para mim. O topo da lista de tarefas está em branco.*"
+        "name": "Seoyeon",
+        "text": "*Em vez de dizer \"por favor\", Seoyeon vira a prancheta para {name}. O topo da lista de tarefas está em branco.*"
     },
     "after2_seo_5": {
         "name": "{name}",
@@ -277,8 +277,8 @@
         "text": "*Ela tem o dom de transformar pedido em ordem. Começo a organizar os documentos. Orçamento de eventos, ficha de clubes. É bastante coisa.*"
     },
     "after2_seo_7": {
-        "name": "{name}",
-        "text": "*Seoyeon não se vira imediatamente. Com a ponta da prancheta apontada para a porta, ele espera pelo som dos meus passos.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon não se vira de imediato. Com a ponta da prancheta apontada para a porta, espera os passos de {name}.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -297,8 +297,8 @@
         "text": "É parecido com os seus elogios. Vagos."
     },
     "after2_seo_8b": {
-        "name": "{name}",
-        "text": "*Seoyeon tira os olhos dos documentos e me olha.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon tira os olhos dos documentos e olha para {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -313,7 +313,7 @@
         "text": "É. Aceita logo."
     },
     "after2_seo_8b4_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon chama de elogio e volta direto a organizar os papéis. No momento em que vira o pescoço, seus ombros enrijecem—só um pouco.*"
     },
     "after2_seo_choice1": {
@@ -325,7 +325,7 @@
         ]
     },
     "after2_seo_sunset_joke": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon faz uma pausa por um momento. A área ao redor dos olhos atrás dos óculos relaxa primeiro.*"
     },
     "after2_seo_sunset_joke_b": {
@@ -337,7 +337,7 @@
         "text": "...Se você diz coisas assim tão rapidamente, não há tempo para anotá-las."
     },
     "after2_seo_sunset_react_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon cobre a boca com a ponta dos papéis e olha pela janela por um tempo.*"
     },
     "after2_seo_neck_worry": {
@@ -345,7 +345,7 @@
         "text": "Tô bem. Isso é rotina."
     },
     "after2_seo_neck_react": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon gira os ombros. Dá pra ouvir o estalo.*"
     },
     "after2_seo_neck_react_b": {
@@ -353,8 +353,8 @@
         "text": "Espera. Fica parado."
     },
     "after2_seo_neck_react_c": {
-        "name": "{name}",
-        "text": "*Seoyeon se levanta e vai pra trás de mim. Coloca a mão no meu ombro.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon se levanta e vai para trás de {name}. As duas mãos pousam sobre seus ombros.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
@@ -389,7 +389,7 @@
         "text": "Que foi isso?"
     },
     "after2_seo_neck_low_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*A mão da Seoyeon congela no ar por um segundo.*"
     },
     "after2_seo_neck_low_2": {
@@ -409,7 +409,7 @@
         ]
     },
     "after2_seo_stay": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon larga os documentos na mesa e olha pela janela. A luz do pôr do sol toca o rosto dela.*"
     },
     "after2_seo_stay_2": {
@@ -429,7 +429,7 @@
         "text": "*A prancheta de Seoyeon fica virada sobre a mesa. O pôr do sol demora ali em cima.*"
     },
     "after2_seo_leave": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon só acena com a cabeça.*"
     },
     "after2_seo_end": {
@@ -437,11 +437,11 @@
         "text": "*Saí da sala do grêmio. O pôr do sol tinge o corredor.*"
     },
     "after2_seo_skinship_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon estende a mão. Tira uma sujeira da minha gola. A mão roça no meu pescoço.*"
     },
     "after2_seo_skinship_2": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Os dedos da Seoyeon param. Ela desvia o rosto sem dizer nada. — Meu fôlego travou um segundo.*"
     },
     "after2_seo_skinship_3": {
@@ -465,7 +465,7 @@
         "text": "*Entro em silêncio. Yuna tá no sofá, lendo. O pôr do sol entra pela janela.*"
     },
     "after2_yuna_2_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna levanta a cabeça. Não se surpreende.*"
     },
     "after2_yuna_3": {
@@ -481,7 +481,7 @@
         "text": "Precisa ser chamado pra vir?"
     },
     "after2_yuna_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna não vira a página. Só as pontas dos dedos se mexem.*"
     },
     "after2_yuna_7": {
@@ -517,7 +517,7 @@
         "text": "Não veio ninguém desde aquela veterana."
     },
     "after2_yuna_choice_pre3_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna não evita contato visual. Os fios do fone de ouvido ainda estão enrolados entre meus dedos.*"
     },
     "after2_yuna_choice": {
@@ -529,7 +529,7 @@
         ]
     },
     "after2_yuna_everyday": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna brinca com o fio do fone.*"
     },
     "after2_yuna_everyday_b": {
@@ -549,7 +549,7 @@
         "text": "...É por isso que eu gosto daqui."
     },
     "after2_yuna_quiet_react": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna ri muito suavemente. A próxima página vira silenciosamente.*"
     },
     "after2_yuna_end": {
@@ -561,7 +561,7 @@
         "text": "*Fomos pegar o mesmo livro — as mãos se encostam.*"
     },
     "after2_yuna_skinship_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna não tira a mão primeiro. Três segundos. Yuna abaixa o olhar.*"
     },
     "after2_yuna_skinship_3": {
@@ -577,7 +577,7 @@
         "text": "*Caminho de volta. Passando pelo portão quando — Minsu surge atrás de mim.*"
     },
     "minsu_warn_1_b": {
-        "name": "{name}",
+        "name": "Minsu",
         "text": "*Minsu alcança num passo largo e fica ao meu lado.*"
     },
     "minsu_warn_2": {

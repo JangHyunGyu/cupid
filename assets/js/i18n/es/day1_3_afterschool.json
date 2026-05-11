@@ -52,7 +52,7 @@
         "text": "*Paso frente a la biblioteca y veo a una chica de ojos rojos caminando mientras lee. Su brazo tatuado sostiene con cuidado el lomo del libro.*"
     },
     "after_miss_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna abre la esquina del marcapáginas con el pulgar y lo sostiene contra la luz. Sin pliegues.*"
     },
     "after_miss_yuna_3": {
@@ -121,8 +121,8 @@
         "text": "No estás en problemas. — Como eres nuevo, quiero saber. ¿Cómo te estás adaptando?"
     },
     "after_hidden_homeroom_choice": {
-        "name": "{name}",
-        "text": "*La tutora baja el portapapeles y me mira a la cara.*",
+        "name": "Profesora",
+        "text": "*La profesora baja el portapapeles y mira el rostro de {name}.*",
         "choices": [
             "Estoy bien. Es una buena escuela.",
             "Sinceramente, fue un día intenso."
@@ -137,7 +137,7 @@
         "text": "Así que te parece una buena escuela. — Oír eso me tranquiliza más de lo que debería."
     },
     "after_homeroom_ok_4": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*El profesor titular mira los documentos, pero el extremo del portapapeles ya no se mueve.*"
     },
     "after_homeroom_ok_5": {
@@ -145,7 +145,7 @@
         "text": "Ser perfecto el primer día termina pasando factura. Permítete equivocarte un poco. — Anda, vete."
     },
     "after_homeroom_ok_6": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La profesora titular se gira nuevamente hacia el escritorio. Saluda brevemente y cierra la puerta de la oficina. La historia del jugo de la máquina expendedora perdura en mis oídos.*"
     },
     "after_homeroom_honest_1": {
@@ -201,7 +201,7 @@
         "text": "Si no te adaptas, vendré a buscarte otra vez."
     },
     "after_homeroom_honest_10": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La profesora desaparece al final del pasillo. Su cabello largo se balancea, y el borde del libro de asistencia sobresale entre sus brazos.*"
     },
     "after_homeroom_freetalk": {
@@ -243,7 +243,7 @@
         "text": "Eres el nuevo, ¿verdad? Primer día y ya en la enfermería, parece que fue duro. A ver."
     },
     "after_nurse_enter_5": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera se acerca. Su mano toca mi frente.*"
     },
     "after_nurse_enter_6": {
@@ -305,7 +305,7 @@
         "text": "...Te vi bajar de la azotea. ¿Los dos solos?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*La voz de Dain subió un poco.*",
         "choices": [
             "Comí en la azotea con la presidenta. (Sincero)",
@@ -365,7 +365,7 @@
         "text": "*Lo recojo y se lo ofrezco. Yuna se detiene y toma el marcador de libros.*"
     },
     "after_miss_yuna_3_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se da vuelta sin decir nada.*"
     },
     "after_hidden_homeroom_3_b": {
@@ -377,24 +377,24 @@
         "text": "Ah. ¿Así que venías por eso? — Hiciste bien en venir. Siéntate un momento."
     },
     "after_homeroom_ok_b": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La profesora empuja los papeles del escritorio hacia un lado. Apoya la mano en el respaldo de la silla y hace una pausa para elegir sus palabras.*"
     },
     "after_homeroom_honest_3_b": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*¿Algo similar? La mano de la profesora se esconde brevemente detrás del portapapeles.*"
     },
     "after_homeroom_honest_6_b": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La tutora solo mira la esquina del registro de asistencia.*"
     },
     "after_homeroom_honest_choice2a_b": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La tutora presiona una vez la esquina del registro de asistencia.*"
     },
     "after_homeroom_honest_choice2b_b": {
-        "name": "{name}",
-        "text": "*La tutora suelta una pequeña risa y cierra el registro. Llega al umbral y vuelve a llamarme.*"
+        "name": "Profesora",
+        "text": "*La profesora cierra el registro de asistencia. Al llegar al umbral, vuelve a llamar a {name}.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
@@ -417,7 +417,7 @@
         "text": "El uniforme lo llevas tieso. Y huele a hierba. *Olfatea* Ah, y se cuela olor a cerezos. Qué nuevo tan romántico."
     },
     "after_nurse_enter_4_d": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera se levanta y se acerca. Cuando la punta del termómetro toca el dorso de mi mano, los dedos se me tensan un poco.*"
     },
     "after_nurse_enter_6_b": {
@@ -461,11 +461,11 @@
         "text": "¿Hospital?"
     },
     "after_nurse_enter_9_e": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera se detiene un momento. Y luego sonríe.*"
     },
     "after_nurse_enter_10_b": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera cierra el cajón. Un cuaderno verde claro en el interior se ve brevemente y luego desaparece. Han pasado diez minutos.*"
     },
     "after_nurse_enter_10_c": {
@@ -481,11 +481,11 @@
         "text": "*Entorna los ojos.* Si te sientes mal y te aguantas, claro que me preocupo. Para eso estoy aquí."
     },
     "after_nurse_enter_11_d": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera deja el vaso de agua sobre el escritorio. El fondo del vaso suena bajo.*"
     },
     "after_nurse_enter_11_e": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera se encoge de hombros y la sonrisa fácil regresa enseguida.*"
     },
     "after_nurse_enter_11_f": {
@@ -493,7 +493,7 @@
         "text": "Lo que dije antes: gracias por su preocupación. Nunca pensé que escucharía esas palabras de un paciente."
     },
     "after_nurse_enter_11_g": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La profesora de salud deja el vaso de agua y se echa a reír.*"
     },
     "after_nurse_enter_11_h": {
@@ -501,7 +501,7 @@
         "text": "Antes dijiste que era tranquila, ¿no? — Todavía lo recuerdo."
     },
     "after_nurse_enter_11_i": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera dobla una vez el borde de la cortina con el dedo.*"
     },
     "after_nurse_enter_11_j": {

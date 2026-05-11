@@ -1042,7 +1042,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "true_dain_2": {
         "background": "assets/images/background/gym.png",
-        "character": null,
+        "character": "assets/images/characters/dain_shy.png",
         "next": "true_dain_2b"
     },
     "true_dain_2b": {

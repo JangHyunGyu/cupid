@@ -25,7 +25,7 @@
         "text": "C'est ça la norme ! C'est toi qui es à plat !"
     },
     "morning2_dain_6": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*La voix de Dain remplit la classe avant même l'appel du matin.*"
     },
     "morning2_note_1": {
@@ -53,7 +53,7 @@
         "text": "C'est une ronde. — Et un contrôle de présence en même temps."
     },
     "morning2_minsu_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Juste avant de tourner dans le couloir, Seoyeon ralentit. Le porte-documents se serre un peu plus contre son bras.*"
     },
     "morning2_minsu_1b": {
@@ -105,8 +105,8 @@
         "text": "Attends."
     },
     "morning2_seo_dust_3": {
-        "name": "{name}",
-        "text": "*La main de Seoyeon effleure mon épaule. Il n'y a aucune hésitation dans sa façon d'enlever la poussière.*"
+        "name": "Seoyeon",
+        "text": "*La main de Seoyeon touche l'épaule de {name}. Son geste pour enlever la poussière n'a aucune hésitation.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -245,11 +245,11 @@
         "text": "Hé ! C'était fun hier, on refait un truc aujourd'hui !"
     },
     "morning2_greet_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain me tape l'épaule par derrière.*"
     },
     "morning2_greet_dain_others": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon passe en feuilletant son bloc-notes.*"
     },
     "morning2_greet_dain_others_seo": {
@@ -309,7 +309,7 @@
         "text": "*Une brève hésitation* ...Diverses choses. Surtout — des romans."
     },
     "hidden_homeroom_d2_3_c": {
-        "name": "{name}",
+        "name": "Professeure principale",
         "text": "*Le regard de la prof principale s'attarde un instant sur le tiroir entrouvert.*"
     },
     "hidden_homeroom_d2_3_d": {
@@ -325,8 +325,8 @@
         "text": "Écrire, je ne sais pas trop."
     },
     "hidden_homeroom_d2_3_g": {
-        "name": "{name}",
-        "text": "*La prof hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
+        "name": "Professeure principale",
+        "text": "*Le regard de la professeure glisse vers le tiroir, puis revient aussit?t.*"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
@@ -349,11 +349,11 @@
         "text": "*Posant son café* ...Bref. De ton côté, rien de particulier."
     },
     "hidden_homeroom_d2_8_f": {
-        "name": "{name}",
+        "name": "Professeure principale",
         "text": "*La professeure principale se couvre la bouche avec la tasse à café et fait tourner la soucoupe deux fois au même endroit.*"
     },
     "hidden_homeroom_d2_11_b": {
-        "name": "{name}",
+        "name": "Professeure principale",
         "text": "*La voix de la prof principale se perd, basse, dans la tasse de café.*"
     }
 }

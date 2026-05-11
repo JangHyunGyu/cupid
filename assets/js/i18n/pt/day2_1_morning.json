@@ -25,11 +25,11 @@
         "text": "E aí! Ontem foi massa, bora fazer alguma coisa hoje também!"
     },
     "morning2_greet_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain dá um tapa no meu ombro por trás.*"
     },
     "morning2_greet_dain_others": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon passa folheando a prancheta.*"
     },
     "morning2_greet_dain_others_seo": {
@@ -89,7 +89,7 @@
         "text": "Isso aqui é o normal! Você que tá em modo poupança!"
     },
     "morning2_dain_6": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*A voz de Dain enche a sala antes mesmo da chamada da manhã.*"
     },
     "morning2_note_1": {
@@ -117,7 +117,7 @@
         "text": "É ronda. — Verificação de presença."
     },
     "morning2_minsu_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Pouco antes de Seoyeon virar o corredor, ela diminui o passo. A prancheta fica mais presa ao braço.*"
     },
     "morning2_minsu_1b": {
@@ -193,7 +193,7 @@
         "text": "*Hesitando um pouco* ...Várias coisas. Principalmente — romances."
     },
     "hidden_homeroom_d2_3_c": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*O olhar da professora fica por um instante na gaveta aberta.*"
     },
     "hidden_homeroom_d2_3_d": {
@@ -209,8 +209,8 @@
         "text": "Escrever... não é muito a minha praia."
     },
     "hidden_homeroom_d2_3_g": {
-        "name": "{name}",
-        "text": "*O olhar da professora vai até a gaveta — e volta na mesma hora.*"
+        "name": "Professora",
+        "text": "*O olhar da professora passa pela gaveta e volta logo em seguida.*"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
@@ -265,7 +265,7 @@
         "text": "*Colocando o café na mesa* ...Enfim. Da sua parte, tudo bem."
     },
     "hidden_homeroom_d2_8_f": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora cobre a boca com a xícara de café e gira o pires duas vezes no mesmo lugar.*"
     },
     "hidden_homeroom_d2_9": {
@@ -297,7 +297,7 @@
         "text": "...Se eu tratar o aluno transferido bem demais, os outros vão falar."
     },
     "hidden_homeroom_d2_11_b": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A voz da professora fica baixa dentro da xícara de café.*"
     },
     "hidden_homeroom_d2_12": {
@@ -313,8 +313,8 @@
         "text": "Espera."
     },
     "morning2_seo_dust_3": {
-        "name": "{name}",
-        "text": "*A mão da Seoyeon toca meu ombro. Sem hesitação nenhuma ao tirar a poeira.*"
+        "name": "Seoyeon",
+        "text": "*A mão de Seoyeon toca o ombro de {name}. Não há hesitação no gesto com que tira a poeira.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",

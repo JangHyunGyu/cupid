@@ -29,7 +29,7 @@
         ]
     },
     "lunch_seo_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon unlocks the rooftop door with her key. A gust of wind rushes in.*"
     },
     "lunch_seo_2": {
@@ -53,7 +53,7 @@
         "text": "VIP treatment on day one? Now I'm suspicious."
     },
     "lunch_seo_8": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon pulls out a lunchbox from her bag. Neatly packed for two.*"
     },
     "lunch_seo_9": {
@@ -85,7 +85,7 @@
         "text": "*hands me chopsticks* Eat. It's not as good cold."
     },
     "lunch_seo_17": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon eats instead of answering. The wind is nice. The school seen from the rooftop is bigger than you think.*"
     },
     "lunch_seo_19": {
@@ -101,7 +101,7 @@
         "text": "*smirks* I asked about the school, and you answer about the food."
     },
     "lunch_seo_22": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon picks up a piece of rolled omelette and holds it out.*"
     },
     "lunch_seo_23": {
@@ -109,7 +109,7 @@
         "text": "Just one bite."
     },
     "lunch_seo_choice": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon is holding out the rolled omelette.*",
         "choices": [
             "Accept it",
@@ -129,7 +129,7 @@
         "text": "...Obviously."
     },
     "lunch_seo_c2_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon pops the rolled omelette into her mouth. Chewing slowly.*"
     },
     "lunch_seo_c2_2": {
@@ -137,7 +137,7 @@
         "text": "You're right. It is good."
     },
     "lunch_seo_c2_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon closes the lunchbox lid very slowly. Her pinky presses the edge of the lid one extra time.*"
     },
     "lunch_seo_after": {
@@ -157,7 +157,7 @@
         "text": "No. Permission."
     },
     "lunch_seo_after_5": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Not invited. Permitted. As Seoyeon packs up the lunchbox, she tucks her hair back with her pinky.*"
     },
     "lunch_seo_after_7": {
@@ -217,7 +217,7 @@
         "text": "A promise is a promise."
     },
     "lunch_dain_14": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain grumbles while buying the bread. But the corners of her mouth are turned up.*"
     },
     "lunch_dain_15": {
@@ -249,7 +249,7 @@
         "text": "Personal Record. It's a sports term."
     },
     "lunch_dain_22": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain's eyes light up.*"
     },
     "lunch_dain_23": {
@@ -257,7 +257,7 @@
         "text": "Oh, you know that?! So you DO know sports!"
     },
     "lunch_dain_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain is staring at me with expectant eyes.*",
         "choices": [
             "A little. Would you teach me?",
@@ -293,8 +293,8 @@
         "text": "Your first meal at the new school, and it's with me? That's a record. RECORD!"
     },
     "lunch_dain_after_5": {
-        "name": "{name}",
-        "text": "*She grins and bumps my shoulder with her fist. She said it with such conviction, I just nodded.*"
+        "name": "Dain",
+        "text": "*Dain lightly taps {name}'s shoulder with her fist. The gesture is playful, but a proud look remains on her face.*"
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -305,7 +305,7 @@
         "text": "*\"...\" She just sits down. No note this time.*"
     },
     "lunch_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna takes a seat in the far corner of the reading room. She opens her book. When the legs of the chair across from her scrape faintly against the floor, her fingers freeze on the page.*"
     },
     "lunch_yuna_4": {
@@ -353,7 +353,7 @@
         "text": "...Read it and return it."
     },
     "lunch_yuna_18": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Her sentences are short. Not cold — more like she's careful with them. I start reading. It's actually pretty good.*"
     },
     "lunch_yuna_20": {
@@ -377,7 +377,7 @@
         "text": "It was nice."
     },
     "lunch_yuna_25": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna stands up first and walks away. She doesn't look back. 'That was nice.' Those words alone stay behind on the desk.*"
     },
     "lunch_end": {
@@ -440,10 +440,10 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Smiling.* You're suspicious. — It's quiet up here."
+        "text": "*Seoyeon nudges the chair with the tip of her foot and lines it up toward {name}.* Suspicious, aren't you. It's quiet up here."
     },
     "lunch_seo_c1_2_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon turns her head and absently fiddles with her water bottle.*"
     },
     "lunch_seo_c1_3_b": {

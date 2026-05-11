@@ -20,8 +20,8 @@
         "text": "Transfer student? You're {name}, right?"
     },
     "seoyeon_meet_2": {
-        "name": "{name}",
-        "text": "*Seoyeon checks my name once more and makes a quick mark on the clipboard roster. Her gaze lingers a beat too long behind her glasses.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon checks {name}'s name once more and makes a short mark on the clipboard list. Her gaze does not immediately drop from behind her glasses.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -58,18 +58,18 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*She stops. Turns her head slightly to glance back.*"
+        "text": "*Seoyeon's steps stop. Only her head turns toward {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
         "text": "Yeah? Then at least remember the room number. Class 3-2, far end on the right."
     },
     "choice_dismiss_3": {
-        "name": "{name}",
-        "text": "*Seoyeon actually turned and left. No wave, no gesture. After misreading the hallway signs twice, she finally stood in front of Class 3-2.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon really turns away. Without even a gesture, she walks into the school grounds.*"
     },
     "choice_flirt_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon stops walking and turns around. Not surprised — more amused.*"
     },
     "choice_flirt_2": {
@@ -93,8 +93,8 @@
         "text": "Honor or disaster — jury's still out."
     },
     "choice_flirt_7": {
-        "name": "{name}",
-        "text": "*Seoyeon walked ahead, then glanced back once to check if I was following. The edge of her clipboard tapped lightly between her fingers.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon walks ahead. She looks back once, and when {name}'s footsteps draw closer, she does not slow down.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -109,7 +109,7 @@
         "text": "At least it won't be boring."
     },
     "hallway_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon walked ahead through the hallway. Students greeted her as she passed. She acknowledged each one with a light tap of her clipboard, never slowing her pace.*"
     },
     "hallway_3": {
@@ -117,7 +117,7 @@
         "text": "Senior building's here, library's over there. Snack bar's in the basement."
     },
     "hallway_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon pulls out a key from her pocket and gives it a little shake.*"
     },
     "hallway_5": {
@@ -145,7 +145,7 @@
         "text": "If you behave."
     },
     "hallway_13": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon turns and gives a light wave. She doesn't look back.*"
     },
     "classroom_1": {
@@ -189,7 +189,7 @@
         "text": "*Someone in the front row whispered. '…Don't talk to her, she's scary.' Yuna turned a page. Just a little slower than before.*"
     },
     "classroom_seat_1": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The homeroom teacher points to an empty seat.*"
     },
     "classroom_seat_2": {
@@ -261,7 +261,7 @@
         "text": "*A brief pause* ...Sharp."
     },
     "hallway_6_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*The edge of the clipboard moves again one beat later.*"
     },
     "hallway_7": {
@@ -289,7 +289,7 @@
         "text": "*The teacher's mutter disappears under the classroom noise. A whistle sounds from one side of the room.*"
     },
     "classroom_dain_5_b": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The homeroom teacher let out a small sigh. She tapped the corner of the attendance book and moved on to the next name without even glancing at Dain.*"
     },
     "classroom_dain_5_c": {
@@ -297,7 +297,7 @@
         "text": "...Save some energy. First period hasn't even started yet."
     },
     "classroom_dain_5_d": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*Deadpan delivery, but the corner of her mouth is fighting a smile.*"
     },
     "classroom_minsu_2_b": {

@@ -24,7 +24,7 @@
         "text": "C’est sur 10. C’est pas mal, non ?"
     },
     "lunch3_meal_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna tend ses baguettes en silence et prend la saucisse qui a l’air la plus appétissante.*"
     },
     "lunch3_meal_7": {
@@ -171,7 +171,7 @@
         "text": "La gentillesse de ne pas savoir refuser — donne de faux espoirs."
     },
     "lunch3_expose_honest_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon ferme le couvercle de son bento.*"
     },
     "lunch3_expose_honest_5": {
@@ -179,7 +179,7 @@
         "text": "Je fais pas dans les demi-mesures. Si c'est comme ça, je préfère me retirer complètement."
     },
     "lunch3_expose_honest_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon quitte la table.*"
     },
     "lunch3_expose_honest_7": {
@@ -199,7 +199,7 @@
         "text": "Laisse-moi un peu de temps pour réfléchir."
     },
     "lunch3_expose_excuse_4": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain détourne la tête. Elle n'a pas touché à son pain soboro.*"
     },
     "lunch3_expose_run_1": {
@@ -244,7 +244,7 @@
         ]
     },
     "lunch3_seo_chase_dain_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon pose le bento. Son visage est inexpressif.*"
     },
     "lunch3_seo_chase_dain_2": {
@@ -314,15 +314,15 @@
         "text": "*Personne ne se lève. Il y a des sourires, mais tous les trois hésitent à prendre leurs baguettes. Un seul dernier plat d'accompagnement reste au centre de la boîte à bento.*"
     },
     "lunch3_meal_10_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Les baguettes de Seoyeon s'arrêtent un instant. Le visage du président du conseil étudiant revient bientôt, mais le nem reste.*"
     },
     "lunch3_meal_10_d": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain dit \"Tous ensemble?!\" et rit. Normalement, j'aurais traîné une chaise, mais aujourd'hui, je n'ai pas bougé de là où j'étais assis.*"
     },
     "lunch3_meal_10_e": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna hoche simplement la tête. Elle écrit sur un mot, le plie et le glisse dans sa poche. Ne le donne pas. Seul un unique point violet pâle a traversé le bord du papier.*"
     },
     "lunch3_expose_7_b": {
@@ -334,7 +334,7 @@
         "text": "*Le sourire de Seoyeon se fige. Le bout de ses baguettes touche le couvercle de sa boîte à bento.*"
     },
     "lunch3_expose_excuse_2_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain se lève.*"
     }
 }

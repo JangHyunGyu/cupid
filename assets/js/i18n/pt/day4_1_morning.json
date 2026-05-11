@@ -170,7 +170,7 @@
         "text": "Então vamos comer primeiro. *murmurando baixo* Como professora, preciso conferir se um aluno comeu. — Mas para você é suco."
     },
     "hidden_homeroom_d4_5_d": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*Mesmo depois de terminar a frase, a professora continua dobrando a ponta do porta-copo.*"
     },
     "hidden_homeroom_d4_choice": {
@@ -194,7 +194,7 @@
         "text": "*Dando um gole no café* Sinceramente? Um pouco."
     },
     "hidden_homeroom_d4_cafe_1_d": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora diz como uma piada e toca a xícara de café. Dois anéis circulares de água se sobrepõem no porta-copos.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
@@ -202,7 +202,7 @@
         "text": "Escreveu mais do manuscrito ontem?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*Ela pousa a xícara. Para, como se pensasse.*"
     },
     "hidden_homeroom_d4_cafe_2": {
@@ -230,7 +230,7 @@
         "text": "No final, só chega no fim quando você mostra pra alguém. Sem ninguém pra ler, a gente trava."
     },
     "hidden_homeroom_d4_cafe_choice": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora pousa a xícara de café. O corpo se inclina um pouco para a janela.*",
         "choices": [
             "Esse romance, quem é a protagonista?",
@@ -258,7 +258,7 @@
         "text": "Eu quero ler."
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora sorri por um instante. A mão que dobrava o porta-copo para.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -282,7 +282,7 @@
         "text": "...É. Não deveria."
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*Ela tira a mão do bolso. Os dedos pairam no ar por um instante. Um gesto de hábito.*"
     },
     "hidden_homeroom_d4_cafe_6": {
@@ -290,16 +290,16 @@
         "text": "*Pousando a xícara* ...De vez em quando, se ver aqui fora não é tão ruim."
     },
     "hidden_homeroom_d4_cafe_6_b": {
-        "name": "{name}",
-        "text": "*Ela me olha. Sem aquele olhar seco de sempre.* *Saí do café.*"
+        "name": "Professora",
+        "text": "*A professora olha para {name}. Seus olhos já não são secos nem distantes.* *A porta do café se fecha devagar atrás deles.*"
     },
     "hidden_homeroom_d4_decline": {
         "name": "Professora",
         "text": "...É. Não deveria mesmo. Vai. Que que você tá fazendo na frente da escola num fim de semana? — Vai fazer algo divertido."
     },
     "hidden_homeroom_d4_decline_b": {
-        "name": "{name}",
-        "text": "*A professora se vira. Seus ombros caem um pouco. No caminho de volta pra casa, meu rosto refletido na porta de vidro do café continua me seguindo.*"
+        "name": "Professora",
+        "text": "*A professora se vira. Seus ombros baixam um pouco. Sua silhueta aparece pequena na porta de vidro do café.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
@@ -310,7 +310,7 @@
         "text": "Ah, veio."
     },
     "hidden_nurse_d4_morning_4": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*O professor de saúde diz: ‘Ah, estou aqui’, pega o estetoscópio e o coloca de volta na mesa.*"
     },
     "hidden_nurse_d4_morning_5": {
@@ -322,7 +322,7 @@
         "text": "Sessão... *Girando na cadeira* É. A última."
     },
     "hidden_nurse_d4_morning_7": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A Enfermeira finge organizar papéis na mesa — mas está virando a mesma folha pela terceira vez.*"
     },
     "hidden_nurse_d4_morning_8": {
@@ -334,7 +334,7 @@
         "text": "O quê?"
     },
     "hidden_nurse_d4_morning_10": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A Enfermeira mexe nos óculos. Os olhos por trás são maiores do que eu imaginava. Olhos que ficavam escondidos atrás da brincadeira.*"
     },
     "hidden_nurse_d4_morning_11": {
@@ -362,7 +362,7 @@
         "text": "...De verdade?"
     },
     "hidden_nurse_d4_morning_13": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A enfermeira ajeita os óculos. A ponta do dedo para por um instante sob a lente.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
@@ -426,7 +426,7 @@
         "text": "Então o burnout..."
     },
     "hidden_nurse_d4_4_c": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A Enfermeira para. Pousa os papéis.*"
     },
     "hidden_nurse_d4_4_d": {
@@ -491,7 +491,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "Enfermeira",
-        "text": "*A enfermeira olha para cá por um instante.* ...Foi, sim."
+        "text": "*A enfermeira olha brevemente para {name}.* ...Não é nada."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -530,7 +530,7 @@
         "text": "Você não está velha."
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A Enfermeira trava. Pousa os hashis.*"
     },
     "hidden_nurse_d4_meal_3": {
@@ -558,7 +558,7 @@
         "text": "{name}. Obrigada por hoje. — De verdade."
     },
     "hidden_nurse_d4_meal_4_b": {
-        "name": "{name}",
+        "name": "Enfermeira",
         "text": "*A enfermeira pressiona a tampa do macarrão instantâneo. Um dos hashis fica um pouco torto.*"
     },
     "hidden_nurse_d4_pass": {
