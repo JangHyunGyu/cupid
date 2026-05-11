@@ -25,7 +25,7 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "유나",
-        "text": "*유나가 쪽지 사진을 보냈다. 노트에 쓰인 한 줄.*"
+        "text": "*쪽지 사진을 보냈다. 노트에 쓰인 한 줄.*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "유나",
@@ -121,7 +121,7 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "서연",
-        "text": "*서연이 '부탁'이라는 말을 쓴다. 커서는 그 단어 뒤에서 한참 멈춰 있다.*"
+        "text": "*'부탁'이라는 말을 쓴다. 커서는 그 단어 뒤에서 한참 멈춰 있다.*"
     },
     "night3_cheat_msg_4": {
         "name": "유나",
@@ -145,7 +145,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "유나",
-        "text": "*유나가 세 줄을 보냈다. 평소 한 줄도 안 쓰는 사람이.*"
+        "text": "*세 줄을 보냈다. 평소 한 줄도 안 쓰는 사람이.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "night3_nightmare_2_b": {
         "name": "서연",
-        "text": "*서연의 목소리가 들린다.*"
+        "text": "*목소리가 들린다.*"
     },
     "night3_nightmare_3": {
         "name": "서연",
@@ -161,7 +161,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "유나",
-        "text": "*유나의 목소리.*"
+        "text": "*목소리.*"
     },
     "night3_nightmare_4": {
         "name": "유나",
@@ -169,7 +169,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "다인",
-        "text": "*다인의 목소리.*"
+        "text": "*목소리.*"
     },
     "night3_nightmare_5": {
         "name": "다인",
