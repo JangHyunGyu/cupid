@@ -593,7 +593,7 @@
     "hidden_homeroom_d5_choice": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*원고를 안고 있다. 이 사람의 7년이 손 안에 있다.*",
+      "_ko_text_preview": "*원고를 안고 있다. 봉투 모서리가 팔 안쪽을 누른다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_choice",
@@ -809,7 +809,7 @@
     "hidden_homeroom_d5_6": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_6",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "...그럼, 첫 독자 확정이네.",
+      "_ko_text_preview": "...그럼 맡길게. 제일 먼저.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_6",
@@ -1781,7 +1781,7 @@
     "hidden_homeroom_d5_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_6_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*어제 카페에서 했던 말. 제일 먼저 보여주고 싶다는 말이 빈말이 아니게 됐다.*",
+      "_ko_text_preview": "*어제 카페에서 했던 말이 떠오른다. 원고 봉투가 팔 안쪽에 묵직하게 닿는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_6_ins",
@@ -2069,7 +2069,7 @@
     "hidden_homeroom_d5_6_j": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_6_ins9",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "...제일 먼저, 제대로 읽어줘.",
+      "_ko_text_preview": "...제대로 읽어줘.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_6_ins9",
@@ -2105,7 +2105,7 @@
     "hidden_homeroom_d5_6_k": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_6_ins10",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*어제와 같은 말이다. — 근데 오늘은 부탁이 아니라 약속처럼 들린다. 7년의 원고가 손 안에 있다.*",
+      "_ko_text_preview": "*어제와 같은 말이다. 오늘은 대답하기 전에 봉투 모서리를 먼저 만지게 된다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_6_ins10",
@@ -2285,7 +2285,7 @@
     "hidden_homeroom_d5_6_p": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_6_ins15",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*한 줄. 담임은 교실을 나서다 문 앞에서 멈춘다. 클립보드 끝을 손가락으로 두 번 접듯 누른다.*",
+      "_ko_text_preview": "*담임은 문 앞에서 한 번 멈춘다. 클립보드 끝을 손가락으로 두 번 눌렀다가 놓는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_6_ins15",
@@ -4087,7 +4087,7 @@
     "hidden_homeroom_d5_correct_3": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_correct_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "네. 읽지도 않고 말하고 싶진 않아서요.",
+      "_ko_text_preview": "네. 아무 말이나 하고 싶진 않아서요.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_correct_3",
@@ -4159,7 +4159,7 @@
     "hidden_homeroom_d5_correct_5": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_correct_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*봉투를 열자 종이 냄새가 올라온다. 마지막 장에는 마침표가 없다. 빨간 펜으로 그은 선 아래, 같은 문장이 세 번 다시 쓰여 있다.*",
+      "_ko_text_preview": "*봉투를 열자 종이 냄새가 올라온다. 마지막 장 끝이 비어 있다. 빨간 펜으로 지운 문장 아래, 다시 시작하다 멈춘 흔적이 겹쳐 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_correct_5",
@@ -4231,7 +4231,7 @@
     "hidden_homeroom_d5_correct_7": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_correct_7",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "사실 마지막 한 줄을 못 쓰겠어. 7년 동안 그 한 줄 때문에 멈춰 있었어.",
+      "_ko_text_preview": "마지막 장만 보면 손이 멈춰. 몇 년째 그래.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_correct_7",
@@ -4267,7 +4267,7 @@
     "hidden_homeroom_d5_correct_8": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_correct_8",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*끝내면 작가가 아니라는 게 확정될까 봐. 담임은 그 말을 삼킨 얼굴이다.*",
+      "_ko_text_preview": "*담임은 말끝을 삼킨다. 비어 있는 마지막 줄만큼 교실이 조용해진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_correct_8",
@@ -4303,7 +4303,7 @@
     "hidden_homeroom_d5_correct_9": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_correct_9",
       "_ko_name": "{name}",
-      "_ko_text_preview": "마지막 한 줄, 같이 찾아볼까요.",
+      "_ko_text_preview": "그 줄, 같이 봐요.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_correct_9",
@@ -4375,7 +4375,7 @@
     "hidden_homeroom_d5_correct_11": {
       "_ko_ref": "assets/js/i18n/ko/day5_1_morning.json#hidden_homeroom_d5_correct_11",
       "_ko_name": "{name}",
-      "_ko_text_preview": "한 줄이면 되잖아요. 독자도 한 줄은 찾을 수 있어요.",
+      "_ko_text_preview": "네. 저는 지금 읽고 있으니까요.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day5_1_morning.json#hidden_homeroom_d5_correct_11",
