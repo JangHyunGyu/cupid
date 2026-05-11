@@ -602,15 +602,15 @@
     },
     "confess_fail_cg_seo": {
         "name": "{name}",
-        "text": ""
+        "text": "*The screen stays still. The reply does not change.*"
     },
     "confess_fail_cg_yuna": {
         "name": "{name}",
-        "text": ""
+        "text": "*The screen stays still. The reply does not change.*"
     },
     "confess_fail_cg_dain": {
         "name": "{name}",
-        "text": ""
+        "text": "*The screen stays still. The reply does not change.*"
     },
     "confess_fail_1": {
         "name": "{name}",

@@ -881,15 +881,15 @@
     },
     "confess_fail_cg_seo": {
         "name": "{name}",
-        "text": ""
+        "text": "*화면은 멈춰 있고, 답장은 바뀌지 않는다.*"
     },
     "confess_fail_cg_yuna": {
         "name": "{name}",
-        "text": ""
+        "text": "*화면은 멈춰 있고, 답장은 바뀌지 않는다.*"
     },
     "confess_fail_cg_dain": {
         "name": "{name}",
-        "text": ""
+        "text": "*화면은 멈춰 있고, 답장은 바뀌지 않는다.*"
     },
     "confess_fail_1": {
         "name": "{name}",
