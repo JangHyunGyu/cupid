@@ -127,11 +127,11 @@
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
-        "text": "...원고를 받는다. 생각보다 무겁다."
+        "text": "...원고를 받는다. 종이 무게가 손바닥에 묵직하게 남는다."
     },
     "hidden_homeroom_d5_5": {
         "name": "담임선생님",
-        "text": "...이걸 남 먼저 보여주는 게 생각보다 떨리네."
+        "text": "...이걸 남 먼저 보여주는 건 아직 떨리네."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",

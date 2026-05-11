@@ -5,7 +5,7 @@
     },
     "after2_msg_dain": {
         "name": "다인",
-        "text": "체육관 와!! 오늘 진짜 내기다!!"
+        "text": "체육관 와. 오늘은 진짜 내기다."
     },
     "after2_msg_seo": {
         "name": "서연",
@@ -102,7 +102,7 @@
     },
     "after2_dain_2": {
         "name": "다인",
-        "text": "왔어?! 늦었어!!"
+        "text": "왔어? 늦었어."
     },
     "after2_dain_3": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "after2_dain_4": {
         "name": "다인",
-        "text": "나는 10분 전에 왔거든!!"
+        "text": "나는 10분 전에 왔거든."
     },
     "after2_dain_5": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "after2_dain_8": {
         "name": "다인",
-        "text": "배고프거든!!"
+        "text": "배고프거든."
     },
     "after2_dain_9": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "after2_dain_12": {
         "name": "다인",
-        "text": "으아아!! 졌다!! — 근데 좀 치는데?! 너 운동 안 한다며?!"
+        "text": "졌네. 근데 좀 치는데? 너 운동 안 한다며."
     },
     "after2_dain_13": {
         "name": "{name}",
@@ -166,7 +166,7 @@
     },
     "after2_dain_14": {
         "name": "다인",
-        "text": "*깜짝 놀라며* 뭐야?! 속은 거야?!"
+        "text": "*깜짝 놀라며* 뭐야? 속은 거야?"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "after2_dain_end_3b": {
         "name": "다인",
-        "text": "...당연하지! 나 체육 특기생이었거든!"
+        "text": "...당연하지. 나 체육 특기생이었거든."
     },
     "after2_dain_end_3c": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "after2_dain_end_3d": {
         "name": "다인",
-        "text": "아 맵다!! 물 물!!"
+        "text": "아, 맵다. 물, 물."
     },
     "after2_dain_end_3e": {
         "name": "{name}",
@@ -606,7 +606,7 @@
     },
     "minsu_warn_15_b": {
         "name": "다인",
-        "text": "내일도 내기하자!! 종목 바꿔서!!"
+        "text": "내일도 내기하자. 종목 바꿔서."
     },
     "minsu_warn_15_c": {
         "name": "서연",

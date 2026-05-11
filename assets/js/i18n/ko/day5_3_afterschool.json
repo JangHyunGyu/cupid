@@ -195,7 +195,7 @@
     },
     "after5_last_chance_2_m": {
         "name": "다인",
-        "text": "야, 진짜?!"
+        "text": "야, 진짜?"
     },
     "after5_last_chance_2_n": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "다인",
-        "text": "*학교를 나서며.* 야, 진짜?! ...진짜? 나 기다리긴 했어. — 근데 기다렸다고 바로 웃으면 억울하지. 이번엔 끝까지 말해."
+        "text": "*학교를 나서며.* 야, 진짜? ...진짜? 나 기다리긴 했어. 근데 기다렸다고 바로 웃으면 억울하지. 이번엔 끝까지 말해."
     },
     "after5_confess_react_dain_low": {
         "name": "다인",

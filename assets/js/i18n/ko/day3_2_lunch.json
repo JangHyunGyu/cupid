@@ -9,7 +9,7 @@
     },
     "lunch3_meal_1": {
         "name": "다인",
-        "text": "오! 맛있다!!"
+        "text": "오, 맛있다."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -57,7 +57,7 @@
     },
     "lunch3_meal_10_d": {
         "name": "{name}",
-        "text": "*다인이 \"다 같이?!\" 하고 웃는다. 평소 같으면 의자를 끌고 왔을 텐데, 오늘은 앉은 자리에서 움직이지 않는다.*"
+        "text": "*다인이 \"다 같이?\" 하고 웃는다. 평소 같으면 의자를 끌고 왔을 텐데, 오늘은 앉은 자리에서 움직이지 않는다.*"
     },
     "lunch3_meal_10_e": {
         "name": "{name}",
@@ -136,7 +136,7 @@
     },
     "lunch3_give_dain_1": {
         "name": "다인",
-        "text": "진짜?! 고마워!! 역시 {name}이 최고!!"
+        "text": "진짜? 고마워. {name}, 너 센스 있다."
     },
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
@@ -145,7 +145,7 @@
     },
     "lunch3_dain_skin_3": {
         "name": "다인",
-        "text": "지금 거 카운트 아니야!!"
+        "text": "지금 거 카운트 아니야."
     },
     "lunch3_give_dain_2": {
         "name": "서연",
@@ -194,7 +194,7 @@
     },
     "lunch3_give_yuna_3": {
         "name": "다인",
-        "text": "뭐야! 나는?!"
+        "text": "뭐야, 나는?"
     },
     "lunch3_expose_1": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "lunch3_expose_2": {
         "name": "다인",
-        "text": "아 맞다! {name} 주말에 나랑 오락실 가기로 했잖아!! 뭐 먹고 갈까?!"
+        "text": "아 맞다. {name}, 주말에 나랑 오락실 가기로 했잖아. 뭐 먹고 갈까?"
     },
     "lunch3_expose_3": {
         "name": "{name}",

@@ -9,11 +9,11 @@
     },
     "night2_msg_dain_specific": {
         "name": "다인",
-        "text": "야!! 오늘 떡볶이 맛있었다!!"
+        "text": "야, 오늘 떡볶이 맛있었다."
     },
     "night2_msg_dain_specific_2": {
         "name": "다인",
-        "text": "내일도 내기하자!! 종목 바꿔서!!"
+        "text": "내일도 내기하자. 종목 바꿔서."
     },
     "night2_msg_seo_general": {
         "name": "서연",
@@ -53,7 +53,7 @@
     },
     "night2_msg_generic": {
         "name": "다인",
-        "text": "야 내일 매점 갈 거지?!"
+        "text": "야, 내일 매점 갈 거지?"
     },
     "night2_msg_generic_2": {
         "name": "서연",
@@ -86,7 +86,7 @@
     },
     "night2_reply_dain_3": {
         "name": "다인",
-        "text": "내일은 순한 맛으로 가자!!"
+        "text": "내일은 순한 맛으로 가자."
     },
     "night2_reply_dain_4": {
         "name": "다인",
@@ -126,7 +126,7 @@
     },
     "night2_reply_seo_react_high": {
         "name": "서연",
-        "text": "...너, 생각보다 재밌는 사람이야. 내일 점심 옥상에서 볼래?"
+        "text": "...너, 꽤 재밌는 사람이야. 내일 점심 옥상에서 볼래?"
     },
     "night2_reply_seo_react_default": {
         "name": "서연",
