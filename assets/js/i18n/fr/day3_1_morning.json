@@ -498,11 +498,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professeure principale",
-        "text": "...Ce n'est rien. Des documents de travail."
+        "text": "Je pensais le ranger une fois que j'aurais un travail. Mais il m'a suivie jusqu'ici. Jusqu'à cette salle."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "Des documents de travail dans une salle vide ?"
+        "text": "Donc vous n'avez jamais vraiment lâché."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Professeure principale",
-        "text": "*En soupirant* ...Ce serait plus simple si on pouvait ne voir que ce qu'on veut voir."
+        "text": "*En soupirant* ...Je voulais croire que si. C'était plus simple comme ça."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

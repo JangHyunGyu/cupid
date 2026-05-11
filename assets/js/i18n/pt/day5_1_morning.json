@@ -138,7 +138,7 @@
         "text": "*Estou segurando o manuscrito. Sete anos dela estão nas minhas mãos.*",
         "choices": [
             "Professora, com certeza ficou ótimo. Manda pra uma editora.",
-            "...A senhora disse que levou sete anos. Mas — não falta mais uma linha no último capítulo?"
+            "Posso ler um pouco aqui, agora? Quero falar depois de ler de verdade."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
@@ -195,35 +195,35 @@
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professora",
-        "text": "...Como você sabia."
+        "text": "...Aqui?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
-        "text": "Eu nem abri ainda."
+        "text": "Sim. Não quero falar sem ler."
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "Professora",
-        "text": "Pois é. — Como você sabia que o último capítulo está vazio."
+        "text": "Tá. — Só um segundo."
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*A última página do manuscrito não tem ponto final. Abaixo de uma linha traçada com caneta vermelha, a mesma frase está reescrita três vezes.*"
+        "text": "*Quando abro o envelope, sobe um cheiro de papel. A última página não tem ponto final. Abaixo de uma linha traçada com caneta vermelha, a mesma frase está reescrita três vezes.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professora",
-        "text": "...Eu realmente não consigo escrever. A última linha."
+        "text": "...Você viu até aí?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Professora",
-        "text": "Faz sete anos que o manuscrito trava nessa linha. Porque se eu terminar — fica confirmado que eu não sou escritora."
+        "text": "Na verdade, eu não consigo escrever a última linha. O manuscrito ficou travado nela por sete anos."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*Pela primeira vez, a professora usou a palavra 'escritora' pra falar dela mesma. Em sete anos, nunca tinha falado isso.*"
+        "text": "*Como se terminar fosse confirmar que ela não é escritora. A professora fica com a expressão de quem engole essas palavras.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "Quer que eu veja essa linha junto com a senhora?"
+        "text": "Quer procurar essa última linha comigo?"
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Professora",
@@ -231,7 +231,7 @@
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "É só uma linha. Aluno também sabe escrever uma linha."
+        "text": "É só uma linha. Um leitor também consegue encontrar uma linha."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professora",
@@ -247,15 +247,15 @@
     },
     "hidden_homeroom_d5_6": {
         "name": "Professora",
-        "text": "*Tirando o envelope.* ...Isso aqui. Já que é o último dia."
+        "text": "...Então está decidido. Você é meu primeiro leitor."
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*O que ela falou no café ontem. Aquele 'quero te mostrar primeiro'. Ela trouxe mesmo.*"
+        "text": "*O que ela disse ontem no café. A vontade de mostrar primeiro pra mim deixou de ser só palavra.*"
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
-        "text": "*Ela entrega o envelope. — A mão está tremendo levemente.*"
+        "text": "*O envelope entorta um pouco nas minhas mãos. A mão da professora ainda fica na beira da mesa.*"
     },
     "hidden_homeroom_d5_6_d": {
         "name": "Professora",
@@ -279,15 +279,15 @@
     },
     "hidden_homeroom_d5_6_i": {
         "name": "{name}",
-        "text": "*Ela coloca o envelope nas minhas mãos.*"
+        "text": "*A professora alisa a ponta dobrada do envelope do manuscrito.*"
     },
     "hidden_homeroom_d5_6_j": {
         "name": "Professora",
-        "text": "...Você lê primeiro pra mim?"
+        "text": "...Lê primeiro. De verdade."
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*As mesmas palavras de ontem. — Mas hoje, veio ação junto. Sete anos de manuscrito nas minhas mãos.*"
+        "text": "*As mesmas palavras de ontem. — Mas hoje soam menos como pedido e mais como promessa. Sete anos de manuscrito estão nas minhas mãos.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -307,7 +307,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Uma linha. A professora para na porta ao sair. Dobra a ponta do envelope do manuscrito duas vezes com o dedo, depois alisa.*"
+        "text": "*Uma linha. A professora para na porta ao sair. Aperta a ponta da prancheta duas vezes com o dedo, como se fosse dobrá-la.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Professora",
@@ -339,7 +339,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*A professora se vira. O cabelo longo balança, e a ponta dobrada do envelope está pressionada contra o cotovelo dela.*"
+        "text": "*A professora se vira. O cabelo longo balança, e a ponta da prancheta pressiona o cotovelo dela.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professora",
