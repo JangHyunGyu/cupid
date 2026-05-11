@@ -100,7 +100,7 @@
         "text": "Entonces comamos primero. *murmurando bajo* Como profesora, debo comprobar si un estudiante ha comido. — Aunque para ti será jugo."
     },
     "hidden_homeroom_d4_5_d": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*Incluso después de terminar de hablar, la tutora sigue doblando la esquina del portavasos.*"
     },
     "hidden_homeroom_d4_choice": {
@@ -124,7 +124,7 @@
         "text": "Al final, hay que mostrárselo a alguien para poder llegar hasta el final. Si no hay nadie que lo lea, te atoras una y otra vez."
     },
     "hidden_homeroom_d4_cafe_choice": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La tutora deja la taza de café. El cuerpo se le inclina un poco hacia la ventana.*",
         "choices": [
             "Esa novela — ¿quién es el protagonista?",
@@ -240,7 +240,7 @@
         "text": "Ah, viniste."
     },
     "hidden_nurse_d4_morning_4": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La profesora de salud dice: “Oh, ya estoy aquí”, toma el estetoscopio y lo vuelve a dejar sobre el escritorio.*"
     },
     "hidden_nurse_d4_morning_5": {
@@ -252,7 +252,7 @@
         "text": "¿Tutoría? *Gira la silla.* Sí. La última tutoría."
     },
     "hidden_nurse_d4_morning_7": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*Finge ordenar los papeles del escritorio — pero ya va por la tercera vez que pasa la misma hoja.*"
     },
     "hidden_nurse_d4_morning_8": {
@@ -264,7 +264,7 @@
         "text": "¿Qué es?"
     },
     "hidden_nurse_d4_morning_10": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*Se toca los lentes. Los ojos, detrás de los cristales, son más grandes de lo que pensaba. Los ojos que se escondían detrás de las bromas.*"
     },
     "hidden_nurse_d4_morning_11": {
@@ -292,7 +292,7 @@
         "text": "...¿De verdad?"
     },
     "hidden_nurse_d4_morning_13": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera se acomoda las gafas. La punta del dedo se detiene un instante bajo la lente.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
@@ -374,7 +374,7 @@
         "text": "*Da un sorbo al café.* ¿Sinceramente? Un poco."
     },
     "hidden_homeroom_d4_cafe_1_d": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*El profesor lo dice como una broma y toca la taza de café. Dos anillos circulares de agua se superponen en el posavasos.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
@@ -382,7 +382,7 @@
         "text": "Después de ayer, ¿avanzó algo con el manuscrito?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*Deja la taza. Se detiene un segundo, como pensando.*"
     },
     "hidden_homeroom_d4_cafe_2_b": {
@@ -402,15 +402,15 @@
         "text": "¿Sabes qué es lo más difícil de una novela?"
     },
     "hidden_homeroom_d4_cafe_6_b": {
-        "name": "{name}",
-        "text": "*Me mira. Con unos ojos que ya no están secos.* *Salgo de la cafetería.*"
+        "name": "Profesora",
+        "text": "*La profesora mira a {name}. Sus ojos ya no son secos ni distantes.* *La puerta del café se cierra despacio detrás.*"
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
         "text": "*Me viene a la mente el trabajo manuscrito en el aula vacía de ayer. Hoy estoy fuera de la escuela y las esquinas del portavasos se siguen doblando.*"
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*La tutora sonríe un momento. La mano que doblaba el portavasos se detiene.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -434,12 +434,12 @@
         "text": "...Ya. No debería."
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "{name}",
+        "name": "Profesora",
         "text": "*Saca la mano del bolsillo. Las yemas de los dedos quedan un instante suspendidas en el aire. Un gesto automático, casi de manía.*"
     },
     "hidden_homeroom_d4_decline_b": {
-        "name": "{name}",
-        "text": "*El profesor se da la vuelta. Sus hombros bajan un poco. De camino a casa, mi rostro reflejado en la puerta de vidrio del café me sigue.*"
+        "name": "Profesora",
+        "text": "*La profesora se da la vuelta. Sus hombros bajan un poco. Su espalda se refleja pequeña en la puerta de cristal del café.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Enfermera",
@@ -478,7 +478,7 @@
         "text": "Entonces lo del burnout..."
     },
     "hidden_nurse_d4_4_c": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*Se detiene un momento. Deja los papeles.*"
     },
     "hidden_nurse_d4_4_d": {
@@ -519,7 +519,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "Enfermera",
-        "text": "*La enfermera mira hacia aquí un instante.* ...Sí lo fue."
+        "text": "*La enfermera mira un momento hacia {name}.* ...No es nada."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -534,7 +534,7 @@
         "text": "De eso ya pasó un siglo. *Se ríe.* Yo también me puse vieja."
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*Se queda quieta un momento. Deja los palillos.*"
     },
     "hidden_nurse_d4_meal_3_b": {
@@ -554,7 +554,7 @@
         "text": "{name}."
     },
     "hidden_nurse_d4_meal_4_b": {
-        "name": "{name}",
+        "name": "Enfermera",
         "text": "*La enfermera presiona la tapa del vaso de ramen. Un palillo queda un poco torcido.*"
     },
     "morning4_manuscript_check": {},

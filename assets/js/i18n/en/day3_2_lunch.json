@@ -24,7 +24,7 @@
         "text": "Out of ten. Six isn't bad, you know."
     },
     "lunch3_meal_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna silently reaches out with her chopsticks and takes the best-looking sausage.*"
     },
     "lunch3_meal_7": {
@@ -171,7 +171,7 @@
         "text": "Kindness that can't say no — that's just leading people on."
     },
     "lunch3_expose_honest_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon closes her lunch box lid.*"
     },
     "lunch3_expose_honest_5": {
@@ -179,7 +179,7 @@
         "text": "I don't do gray areas. If that's how it is, count me out."
     },
     "lunch3_expose_honest_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon leaves.*"
     },
     "lunch3_expose_honest_7": {
@@ -199,7 +199,7 @@
         "text": "I need some time to think too."
     },
     "lunch3_expose_excuse_4": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain turns her head away. She hasn't touched her crumble bun.*"
     },
     "lunch3_expose_run_1": {
@@ -244,7 +244,7 @@
         ]
     },
     "lunch3_seo_chase_dain_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon sets down the lunchbox. Her face is expressionless.*"
     },
     "lunch3_seo_chase_dain_2": {
@@ -314,15 +314,15 @@
         "text": "*No one gets up. There are smiles, but all three hesitate to pick up their chopsticks. Only one last side dish remains in the center of the lunchbox.*"
     },
     "lunch3_meal_10_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon’s chopsticks stop for a moment. The face of the student council president soon returns, but the egg roll remains.*"
     },
     "lunch3_meal_10_d": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain says “All together?!” and laughs. Normally I would have dragged a chair, but today I didn't move from where I sat.*"
     },
     "lunch3_meal_10_e": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna just nods. She writes on a note, folds it, and slips it into her pocket. Doesn't hand it over. Only a single pale-purple dot has bled through the edge of the paper.*"
     },
     "lunch3_expose_7_b": {
@@ -334,7 +334,7 @@
         "text": "*Seoyeon's smile freezes. The tip of her chopsticks taps against the lid of her lunchbox.*"
     },
     "lunch3_expose_excuse_2_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain stands up.*"
     }
 }

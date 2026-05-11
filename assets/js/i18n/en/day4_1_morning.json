@@ -100,7 +100,7 @@
         "text": "Then let's eat first. *muttering softly* As a teacher, I should check whether a student has eaten. — Juice for you, though."
     },
     "hidden_homeroom_d4_5_d": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*Even after finishing, the teacher keeps folding the corner of the cup holder.*"
     },
     "hidden_homeroom_d4_choice": {
@@ -124,7 +124,7 @@
         "text": "In the end, you need someone to read it for it to feel real. Without a reader, I keep stalling."
     },
     "hidden_homeroom_d4_cafe_choice": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher sets down her coffee cup. Her body leans slightly toward the window.*",
         "choices": [
             "That novel — who's the protagonist?",
@@ -240,7 +240,7 @@
         "text": "Oh, you came."
     },
     "hidden_nurse_d4_morning_4": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The health teacher says, ‘Oh, I’m here,’ and picks up the stethoscope, then puts it back down on the desk.*"
     },
     "hidden_nurse_d4_morning_5": {
@@ -252,7 +252,7 @@
         "text": "Counseling... *she spins in her chair* Yeah. The last session."
     },
     "hidden_nurse_d4_morning_7": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The school nurse pretends to organize paperwork on her desk — but she's turning the same piece of paper over for the third time.*"
     },
     "hidden_nurse_d4_morning_8": {
@@ -264,7 +264,7 @@
         "text": "What is it?"
     },
     "hidden_nurse_d4_morning_10": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The school nurse touches her glasses. The eyes visible through them are bigger than I expected. Eyes that were hidden behind the playfulness.*"
     },
     "hidden_nurse_d4_morning_11": {
@@ -292,7 +292,7 @@
         "text": "...Really?"
     },
     "hidden_nurse_d4_morning_13": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse adjusts her glasses. Her fingertip stops for a moment beneath the lens.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
@@ -374,7 +374,7 @@
         "text": "*Taking a sip of coffee* Honestly? A little."
     },
     "hidden_homeroom_d4_cafe_1_d": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher says it like a joke and touches the coffee cup. Two circular water rings overlap on the coaster.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
@@ -382,7 +382,7 @@
         "text": "Did you write more of the manuscript yesterday?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*She sets down her coffee cup. Pauses, as if thinking.*"
     },
     "hidden_homeroom_d4_cafe_2_b": {
@@ -402,15 +402,15 @@
         "text": "Do you know what the hardest part of writing a novel is?"
     },
     "hidden_homeroom_d4_cafe_6_b": {
-        "name": "{name}",
-        "text": "*She's looking at me. Eyes that aren't dry.* *I left the cafe.*"
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher looks at {name}. Her eyes are no longer dry and detached.* *The cafe door closes slowly behind them.*"
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
         "text": "*The manuscript paper in the empty classroom yesterday comes to mind. Today I am outside school, and the corners of the cup holder keep folding.*"
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher smiles for a moment. The hand folding the cup holder stops.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -434,12 +434,12 @@
         "text": "...Right. It shouldn't happen."
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*She takes her hand out of her pocket. Her fingertips hover in the air for a moment. A habitual gesture.*"
     },
     "hidden_homeroom_d4_decline_b": {
-        "name": "{name}",
-        "text": "*The teacher turns around. Her shoulders drop a little. On the way home, my face reflected in the cafe glass door keeps following me.*"
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher turns away. Her shoulders sink slightly. Her back is reflected small in the cafe glass door.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
@@ -478,7 +478,7 @@
         "text": "So the burnout..."
     },
     "hidden_nurse_d4_4_c": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The School Nurse pauses. Sets down the papers.*"
     },
     "hidden_nurse_d4_4_d": {
@@ -519,7 +519,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "School Nurse",
-        "text": "*The school nurse looks this way for a moment.* ...It was something."
+        "text": "*The school nurse glances toward {name} for a moment.* ...It is nothing."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -534,7 +534,7 @@
         "text": "When was that? *laughs* I'm not like I used to be anymore."
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The School Nurse pauses. Sets down her chopsticks.*"
     },
     "hidden_nurse_d4_meal_3_b": {
@@ -554,7 +554,7 @@
         "text": "{name}."
     },
     "hidden_nurse_d4_meal_4_b": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse presses down the cup noodle lid. One chopstick shifts slightly out of line.*"
     },
     "morning4_manuscript_check": {},

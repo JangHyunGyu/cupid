@@ -64,7 +64,7 @@
         "text": "*El anexo de la biblioteca. Un sofá viejo, luz de tarde por la ventana. El mismo olor a polvo de cuando entraste por primera vez.*"
     },
     "tour_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se sienta en el sofá. Deja vacío el asiento junto a ella. Un lugar donde no se ha acumulado polvo.*"
     },
     "tour_yuna_3": {
@@ -80,7 +80,7 @@
         "text": "En el buen sentido."
     },
     "tour_yuna_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna saca un cuaderno de su bolso. El mismo que cubrió apresuradamente en el ático.*"
     },
     "tour_yuna_7": {
@@ -116,7 +116,7 @@
         "text": "*El gimnasio. La primera apuesta y el último remate persisten en la misma cancha. Hoy las luces están encendidas.*"
     },
     "tour_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain está parada en el centro de la cancha. Con un balón de voleibol en las manos.*"
     },
     "tour_dain_3": {

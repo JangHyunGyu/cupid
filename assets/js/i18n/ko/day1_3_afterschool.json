@@ -32,7 +32,7 @@
         "text": "...옥상에서 내려오는 거 봤거든. 둘이서?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "{name}",
+        "name": "다인",
         "text": "*다인이 휴대폰을 쥔 손에 힘을 준다.*",
         "choices": [
             "학생회장이랑 옥상에서 먹었어. (솔직)",
@@ -126,7 +126,7 @@
         "text": "*주워서 건넨다. 유나가 멈추고 책갈피를 받는다.*"
     },
     "after_miss_yuna_2": {
-        "name": "{name}",
+        "name": "유나",
         "text": "*유나가 책갈피 모서리를 엄지로 펴고, 빛에 비춰 본다. 접힌 자국은 없다.*"
     },
     "after_miss_yuna_3": {
@@ -134,7 +134,7 @@
         "text": "......고마워."
     },
     "after_miss_yuna_3_b": {
-        "name": "{name}",
+        "name": "유나",
         "text": "*유나가 말없이 돌아선다.*"
     },
     "after_miss_yuna_4": {
@@ -207,8 +207,8 @@
         "text": "잘못한 건 없고. — 전학생이니까. 적응 좀 어때?"
     },
     "after_hidden_homeroom_choice": {
-        "name": "{name}",
-        "text": "*담임은 클립보드를 내리고 내 얼굴을 본다.*",
+        "name": "담임선생님",
+        "text": "*담임은 클립보드를 내리고 {name}의 얼굴을 본다.*",
         "choices": [
             "괜찮습니다. 아직 낯설지만요.",
             "솔직히 좀 정신없습니다."
@@ -219,7 +219,7 @@
         "text": "그래? — 힘든 거 있으면 교무실로 와. 서류 처리 겸."
     },
     "after_homeroom_ok_b": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 책상 위 서류를 한쪽으로 밀어둔다. 의자 등받이에 손을 얹고 말을 고른다.*"
     },
     "after_homeroom_ok_3": {
@@ -227,7 +227,7 @@
         "text": "낯선 정도면 다행이네. 첫날부터 편하면 그게 더 이상하지."
     },
     "after_homeroom_ok_4": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 서류를 내려다보는데, 클립보드 끝이 더는 움직이지 않는다.*"
     },
     "after_homeroom_ok_5": {
@@ -235,7 +235,7 @@
         "text": "첫날에 완벽하면 나중에 지쳐. 적당히 못난 척해. — 가 봐."
     },
     "after_homeroom_ok_6": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 다시 책상 쪽으로 몸을 돌린다. 짧게 인사하고 교무실 문을 닫았다.*"
     },
     "after_homeroom_honest_1": {
@@ -251,7 +251,7 @@
         "text": "...비슷한 거. 갑자기 새로운 곳에 던져진 적은 있지."
     },
     "after_homeroom_honest_3_b": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임의 손이 클립보드 뒤로 숨었다가 나온다.*"
     },
     "after_homeroom_honest_4": {
@@ -267,7 +267,7 @@
         "text": "교육적 관심이야, 뭐."
     },
     "after_homeroom_honest_6_b": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 출석부 모서리만 본다.*"
     },
     "after_homeroom_honest_choice2": {
@@ -283,7 +283,7 @@
         "text": "...그래, 걱정이야. — 뭐, 티 났어?"
     },
     "after_homeroom_honest_choice2a_b": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 출석부 모서리를 한 번 누른다.*"
     },
     "after_homeroom_honest_choice2b": {
@@ -291,8 +291,8 @@
         "text": "*짧게 웃는다.* 기대는 마. 자판기 주스야."
     },
     "after_homeroom_honest_choice2b_b": {
-        "name": "{name}",
-        "text": "*담임이 출석부를 덮는다. 문턱까지 갔다가 다시 나를 부른다.*"
+        "name": "담임선생님",
+        "text": "*담임이 출석부를 덮는다. 문턱까지 갔다가 다시 {name}을 부른다.*"
     },
     "after_homeroom_honest_7": {
         "name": "담임",
@@ -311,7 +311,7 @@
         "text": "*복도 끝에서 출석부 닫히는 소리가 작게 들린다.*"
     },
     "after_homeroom_honest_10": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 복도 끝으로 사라진다. 긴 머리카락이 흔들리고, 출석부 모서리가 품 안에서 삐져나와 있다.*"
     },
     "after_homeroom_freetalk": {
@@ -365,11 +365,11 @@
         "text": "교복이 뻣뻣하잖아. 풀 냄새도 나고, 벚꽃잎도 붙어 있고. 첫날 티가 나."
     },
     "after_nurse_enter_4_d": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 일어나 다가온다. 손등에 체온계 끝이 닿자 손가락이 살짝 굳는다.*"
     },
     "after_nurse_enter_5": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 다가온다. 손이 이마에 올라온다.*"
     },
     "after_nurse_enter_6": {
@@ -441,7 +441,7 @@
         "text": "병원이요?"
     },
     "after_nurse_enter_9_e": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 짧게 멈췄다가 웃는다.*"
     },
     "after_nurse_enter_10": {
@@ -449,7 +449,7 @@
         "text": "옛날 얘기야. 학교가 좋아. 여기선 종소리 나면 다들 다시 교실로 돌아가니까."
     },
     "after_nurse_enter_10_b": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 서랍을 닫는다. 안쪽의 연두색 노트가 잠깐 보였다 사라진다. 10분이 지났다.*"
     },
     "after_nurse_enter_10_c": {
@@ -469,11 +469,11 @@
         "text": "*눈을 가늘게 뜨며* 아픈데도 참고 다니다가 뒤늦게 오면 혼나야지. 내가 여기 있는 이유가 그거고."
     },
     "after_nurse_enter_11_d": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 물컵을 책상에 내려놓는다. 컵 바닥이 낮게 울린다.*"
     },
     "after_nurse_enter_11_e": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 어깨를 으쓱하고 다시 웃는다.*"
     },
     "after_nurse_enter_11_f": {
@@ -481,7 +481,7 @@
         "text": "아까 그 말 — 걱정해줘서 고마워. 환자한테 그런 말 들을 줄은 몰랐어."
     },
     "after_nurse_enter_11_g": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 물컵을 내려놓다 말고 웃음을 놓친다.*"
     },
     "after_nurse_enter_11_h": {
@@ -489,7 +489,7 @@
         "text": "아까 조용하다고 했지? — 그 말, 아직 기억나."
     },
     "after_nurse_enter_11_i": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 커튼 끝을 손가락으로 한 번 접는다.*"
     },
     "after_nurse_enter_11_j": {

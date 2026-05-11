@@ -28,7 +28,7 @@
         "text": "…ふぅ。"
     },
     "after5_farewell_seo_3": {
-        "name": "{name}",
+        "name": "ソヨン",
         "text": "*ソヨンが髪をかき上げながら。*"
     },
     "after5_farewell_seo_4": {
@@ -44,8 +44,8 @@
         "text": "次は私が先に連れて行くから。"
     },
     "after5_farewell_seo_6_b": {
-        "name": "{name}",
-        "text": "*ソヨンが振り向きながら手を振る。振り返らない。手首のリボンだけが廊下の端でしばらく揺れる。*"
+        "name": "ソヨン",
+        "text": "*???????????????????????????????????????*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -65,7 +65,7 @@
         "text": "楽しかった。…次の物語で会おう。"
     },
     "after5_farewell_yuna_4": {
-        "name": "{name}",
+        "name": "ユナ",
         "text": "*ユナが背を向ける。立ち止まらない。*"
     },
     "after5_farewell_yuna_5": {
@@ -99,11 +99,11 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "ダイン",
-        "text": "……うまくやりなよ。マジで。"
+        "text": "???????????????"
     },
     "after5_farewell_dain_4_d": {
-        "name": "{name}",
-        "text": "*感嘆符が生きている。 ダインはバレーボールをもう一度高く投げて受け取る。"
+        "name": "ダイン",
+        "text": "*??????????????????????????????????????*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -161,7 +161,7 @@
         "text": "ソヨン。"
     },
     "after5_last_chance_2_d": {
-        "name": "{name}",
+        "name": "ソヨン",
         "text": "*ソヨンが振り返る。夕日を背にしている。*"
     },
     "after5_last_chance_2_e": {
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*少しの沈黙。風が髪を揺らす。払わない。*"
+        "text": "*???????????????????????*"
     },
     "after5_last_chance_2_g": {
         "name": "ソヨン",
@@ -185,8 +185,8 @@
         "text": "今度はちゃんと握って。"
     },
     "after5_last_chance_2_j": {
-        "name": "{name}",
-        "text": "*ソヨンが差し出した指先が目の前に止まっている。今言わなかったら、また逃す。*"
+        "name": "ソヨン",
+        "text": "*ソヨンが差し出した指先が{name}の前で止まる。答えを待つ手だ。*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -202,23 +202,23 @@
         "text": "ダイン。"
     },
     "after5_last_chance_2_l": {
-        "name": "{name}",
+        "name": "ダイン",
         "text": "*ダインが走ってきて——立ち止まる。*"
     },
     "after5_last_chance_2_m": {
         "name": "ダイン",
-        "text": "え、マジで？！"
+        "text": "??????"
     },
     "after5_last_chance_2_n": {
-        "name": "{name}",
-        "text": "*目が大きくなる。1秒。2秒。*"
+        "name": "ダイン",
+        "text": "*?????????????????????????????*"
     },
     "after5_last_chance_2_o": {
         "name": "ダイン",
-        "text": "……マジで？"
+        "text": "?????????"
     },
     "after5_last_chance_2_p": {
-        "name": "{name}",
+        "name": "ダイン",
         "text": "*ダインの唇が震える。答える前に息から飲み込む。"
     },
     "after5_last_chance_2_q": {
@@ -226,7 +226,7 @@
         "text": "待ってた。昨日から。ううん、一昨日から。でも—すぐに大丈夫にはならない。"
     },
     "after5_last_chance_2_r": {
-        "name": "{name}",
+        "name": "ダイン",
         "text": "*ダインが目元を擦る。笑顔はそのままだが、手の甲に水気が付く。*"
     },
     "after5_last_chance_2_s": {
@@ -247,7 +247,7 @@
         "text": "ユナ。"
     },
     "after5_last_chance_yuna_2": {
-        "name": "{name}",
+        "name": "ユナ",
         "text": "*ユナが立ち止まる。本を胸に抱き寄せる。振り返るのに2秒ほどかかった。*"
     },
     "after5_last_chance_yuna_3": {
@@ -267,7 +267,7 @@
         "text": "*短い一言。でもその言葉が背中を押す。ユナは目を逸らさない。*"
     },
     "after5_last_chance_yuna_7": {
-        "name": "{name}",
+        "name": "ユナ",
         "text": "*ユナは本を抱えて待っている。返信欄にはまだ最初の一文字もない。*"
     },
     "after5_last_chance_yuna_low_1": {
@@ -280,7 +280,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*手のひらの中で携帯の角が食い込む。*",
+        "text": "*???????????????????*",
         "choices": [
             "今、言う",
             "...何も言えなかった"
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "ダイン",
-        "text": "*学校を出ながら。*ねえ、マジで？！…本当に？待ってはいたけど。—でも待ってたからってすぐ笑ったら悔しいじゃん。今度は最後まで言って。"
+        "text": "*????????* ????????????????????????????????????????????????"
     },
     "after5_confess_react_dain_low": {
         "name": "ダイン",
@@ -322,7 +322,7 @@
         "text": "ユナ。"
     },
     "after5_confess_react_yuna_b": {
-        "name": "{name}",
+        "name": "ユナ",
         "text": "*ユナが本を置く。表情は変わらない。——でも手が震えている。*"
     },
     "after5_confess_react_yuna_c": {

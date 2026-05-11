@@ -64,7 +64,7 @@
         "text": "*L'annexe de la bibliothèque. Un vieux canapé, la lumière de l'après-midi par la fenêtre. La même odeur de poussière qu'à ta première visite.*"
     },
     "tour_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna s'assoit sur le canapé. Elle laisse la place à côté d'elle vide. Un endroit où la poussière ne s'est pas déposée.*"
     },
     "tour_yuna_3": {
@@ -80,7 +80,7 @@
         "text": "Dans le bon sens."
     },
     "tour_yuna_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna sort un carnet de son sac. Le même qu'elle a recouvert à la hâte dans le grenier.*"
     },
     "tour_yuna_7": {
@@ -116,7 +116,7 @@
         "text": "*Le gymnase. Le premier pari et le dernier smash subsistent sur le même terrain. Aujourd'hui les lumières sont allumées.*"
     },
     "tour_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain est debout au milieu du terrain. Un ballon de volley dans les mains.*"
     },
     "tour_dain_3": {

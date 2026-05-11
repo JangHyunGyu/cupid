@@ -259,7 +259,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_2_d": {
         "background": "assets/images/background/school_back.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "after5_last_chance_2_e"
     },
     "after5_last_chance_2_e": {
@@ -316,7 +316,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_2_l": {
         "background": "assets/images/background/school_back.png",
-        "character": null,
+        "character": "assets/images/characters/dain_normal.png",
         "next": "after5_last_chance_2_m"
     },
     "after5_last_chance_2_m": {
@@ -378,7 +378,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_yuna_2": {
         "background": "assets/images/background/school_back.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_normal.png",
         "next": "after5_last_chance_yuna_3"
     },
     "after5_last_chance_yuna_3": {
@@ -403,7 +403,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_yuna_7": {
         "background": "assets/images/background/school_back.png",
-        "character": null,
+        "character": "assets/images/characters/yuna_shy.png",
         "next": "after5_last_chance_choice"
     },
     "after5_last_chance_yuna_low_1": {

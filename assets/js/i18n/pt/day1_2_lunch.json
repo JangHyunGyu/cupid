@@ -33,7 +33,7 @@
         ]
     },
     "lunch_seo_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon destranca a porta do terraço. Uma rajada de vento bate na cara.*"
     },
     "lunch_seo_1_aff_high": {
@@ -66,10 +66,10 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*sorri* Desconfiado. — Aqui em cima é tranquilo."
+        "text": "*Seoyeon empurra a cadeira com a ponta do pé e a alinha na direção de {name}.* Desconfiado, hein. Lá em cima é silencioso."
     },
     "lunch_seo_8": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon tira uma marmita da bolsa. Embalada com capricho, porção pra dois.*"
     },
     "lunch_seo_9": {
@@ -101,7 +101,7 @@
         "text": "*Me estende o hashi* Come. Se esfriar perde o gosto."
     },
     "lunch_seo_17": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon come em vez de responder. O vento é bom. A escola vista do telhado é maior do que você imagina.*"
     },
     "lunch_seo_19": {
@@ -117,7 +117,7 @@
         "text": "*Solta uma risadinha* Perguntei da escola e você me responde sobre a comida."
     },
     "lunch_seo_22": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon pega um pedaço de omelete enrolada com o hashi e estende.*"
     },
     "lunch_seo_23": {
@@ -125,7 +125,7 @@
         "text": "Uma mordida."
     },
     "lunch_seo_choice": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon está estendendo a omelete enrolada.*",
         "choices": [
             "Abrir a boca",
@@ -141,7 +141,7 @@
         "text": "...Tá bom mesmo."
     },
     "lunch_seo_c1_2_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon vira o rosto e fica mexendo na garrafinha de água sem motivo.*"
     },
     "lunch_seo_c1_3": {
@@ -153,7 +153,7 @@
         "text": "*O rótulo da garrafa de água gira na ponta dos dedos. Finja que não sabe e levante os pauzinhos.*"
     },
     "lunch_seo_c2_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon leva a omelete à própria boca. Mastiga devagar.*"
     },
     "lunch_seo_c2_2": {
@@ -161,7 +161,7 @@
         "text": "É verdade. Tá bom."
     },
     "lunch_seo_c2_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon fecha a tampa da marmita bem devagar. O mindinho pressiona a borda da tampa mais uma vez.*"
     },
     "lunch_seo_after": {
@@ -181,7 +181,7 @@
         "text": "Não. É autorização."
     },
     "lunch_seo_after_5": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Não é convite. É autorização. Seoyeon fecha a marmita — e, com o dedo mindinho, joga uma mecha do cabelo pra trás.*"
     },
     "lunch_seo_after_7": {
@@ -251,7 +251,7 @@
         "text": "Ah, tá bom! Eu pago, eu pago! Tia, dois pães doces!"
     },
     "lunch_dain_14": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain resmunga enquanto compra o pão. Mas os cantos da boca estão levantados.*"
     },
     "lunch_dain_15": {
@@ -283,7 +283,7 @@
         "text": "Personal Record. Termo da área de esporte."
     },
     "lunch_dain_22": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Os olhos da Dain brilham.*"
     },
     "lunch_dain_23": {
@@ -291,7 +291,7 @@
         "text": "Opa, você conhece?! Então você manja de esporte!"
     },
     "lunch_dain_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*A Dain tá me olhando com os olhos cheios de expectativa.*",
         "choices": [
             "Um pouquinho. Me ensina?",
@@ -327,8 +327,8 @@
         "text": "Primeira refeição na escola nova e foi comigo? Isso entrou pra história. HISTÓRIA!"
     },
     "lunch_dain_after_5": {
-        "name": "{name}",
-        "text": "*Sorri e dá um soco de leve no meu ombro. Falou tão sério que eu só acabei assentindo.*"
+        "name": "Dain",
+        "text": "*Dain dá um leve toque com o punho no ombro de {name}. O gesto é brincalhão, mas uma expressão orgulhosa permanece no rosto dela.*"
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
@@ -345,7 +345,7 @@
         "text": "*\"...\" Ela senta sem um bilhete sequer.*"
     },
     "lunch_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se senta no canto mais afastado da sala de leitura. Abre o livro. Quando os pés da cadeira à frente arranham de leve o chão, seus dedos param sobre a página.*"
     },
     "lunch_yuna_4": {
@@ -401,7 +401,7 @@
         "text": "...Lê e me devolve."
     },
     "lunch_yuna_18": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Frases curtas. Não é frieza — é economia. Cada palavra vale. Começo a ler. Bem bom.*"
     },
     "lunch_yuna_20": {
@@ -425,7 +425,7 @@
         "text": "Foi bom."
     },
     "lunch_yuna_25": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se levanta primeiro e vai embora. Não olha para trás. 'Foi bom.' Só essas palavras ficam sobre a mesa.*"
     },
     "lunch_yuna_choice": {

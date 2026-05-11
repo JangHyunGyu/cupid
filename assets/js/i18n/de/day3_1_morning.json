@@ -37,7 +37,7 @@
         "text": "...War nur ein Witz. Ich krieg das schon hin."
     },
     "morning3_seo_gate_7": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon geht weiter. Selbstbewusst. Sie eilt nicht, obwohl sie zu spät ist.*"
     },
     "morning3_yuna_gate_1": {
@@ -65,7 +65,7 @@
         "text": "*Eine Person, die die ganze Nacht liest und zu spät kommt. Yuna kramte wortlos in ihrer Tasche, schnitt dann ein kleines Brot in zwei Hälften und hielt es ihr hin. Im Inneren der Tasche ist ein Zettel sichtbar.*"
     },
     "morning3_yuna_gate_7": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna holt ein kleines Brötchen aus ihrer Tasche. Wir teilen es uns, während wir gemütlich durch das Tor gehen.*"
     },
     "morning3_dain_gate_1": {
@@ -77,7 +77,7 @@
         "text": "Hey hey hey!! Wir kommen zu spät!! Renn!!"
     },
     "morning3_dain_gate_3": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain packt ohne Vorwarnung meine Hand und fängt an zu rennen.*"
     },
     "morning3_dain_gate_4": {
@@ -97,8 +97,8 @@
         "text": "Hey! Bist du etwa mit der Schülersprecherin gekommen?! Schon am frühen Morgen?!"
     },
     "morning3_react_seo_2": {
-        "name": "{name}",
-        "text": "*Yuna wendet den Blick vom Fenster und schaut kurz hierher. — Dann wieder zum Fenster.*"
+        "name": "Yuna",
+        "text": "*Yuna wendet den Blick vom Fenster ab und sieht kurz zu {name}. Dann schaut sie wieder hinaus.*"
     },
     "morning3_react_yuna_1": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
         "text": "Ganz schön sportlich gleich am Morgen. Soll ich dir was von meinem Mittagessen abgeben?"
     },
     "morning3_react_dain_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna zieht eine kurze Linie in die Ecke der Seite, ohne den Kopf zu heben.*"
     },
     "morning3_date_intro": {
@@ -125,7 +125,7 @@
         "text": "Hast du am Wochenende Zeit? Es gibt einen Ort, den ich besuchen möchte."
     },
     "morning3_date_seo_choice": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon fragt beiläufig, als sie mir auf dem Flur begegnet.*",
         "choices": [
             "Ja. Wohin?",
@@ -145,11 +145,11 @@
         "text": "Hey! Was machst du am Wochenende?! Lass uns zusammen in die Spielhalle gehen!!"
     },
     "morning3_date_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dains Finger klopfen auf die Tischkante. Schneller als sonst. Die Stuhlbeine kratzen in kurzen Stößen über den Boden.*"
     },
     "morning3_date_dain_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*In der nächsten Pause kommt Dain an meinen Platz und fragt mich.*",
         "choices": [
             "Klar, abgemacht",
@@ -165,7 +165,7 @@
         "text": "Ach so? Na, wenn du keine Zeit hast, kann man nix machen!"
     },
     "morning3_date_dain_decline_narr": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain geht mit einem strahlenden Lächeln weg. Kurz bevor die Glocke läutet, klopft sie einmal mit dem Finger an die Innenseite ihrer Tasche.*"
     },
     "morning3_date_dain_decline_inner_2": {
@@ -261,7 +261,7 @@
         "text": "*Den Blick abwendend.* ...Aber das ist wirklich ein Geheimnis. Die anderen Lehrer wissen es nicht mal."
     },
     "hidden_homeroom_d3_reveal_6": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Klassenlehrerin lächelt. Ihre Hand liegt noch immer auf dem Manuskriptpapier.*"
     },
     "hidden_homeroom_d3_hide_1": {
@@ -269,7 +269,7 @@
         "text": "...Okay, tu so, als hättest du nichts gesehen. Bitte. — ...Danke."
     },
     "hidden_homeroom_d3_end": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Klassenlehrerin streicht sich die Haare zurück und verlässt das Klassenzimmer. Hinter der geschlossenen Tür klickt eine Stiftkappe.*"
     },
     "hidden_homeroom_d3_freetalk": {
@@ -327,7 +327,7 @@
         "text": "Für dich gilt das Gleiche. Versuch nicht, dich um alle zu kümmern. — Wäre es nicht besser, die eine Person, die wirklich zählt, richtig anzuschauen?"
     },
     "hidden_nurse_d3_choice2": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester hielt bei 'einer Person' inne. Der Rand des Pappbechers wird unter ihren Fingerspitzen zerknittert.*",
         "choices": [
             "Haben Sie deshalb das Krankenhaus verlassen?",
@@ -357,7 +357,7 @@
         "personality": "Die Schulkrankenschwester ist normalerweise verspielt, wird aber ruhiger, wenn es ernst wird. Erfahrene Fachkraft mit Burnout-Geschichte. Versucht, Grenzen zu Schülern zu wahren."
     },
     "morning3_seo_gate_warm_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon wartet anders als sonst vor dem Schultor.*"
     },
     "morning3_seo_gate_warm_2": {
@@ -369,11 +369,11 @@
         "text": "*Ihre Hände sind leer. Keine Papiere, kein Klemmbrett.*"
     },
     "morning3_seo_gate_warm_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon beginnt wortlos neben mir herzugehen. — War der Weg vom Tor zum Klassenzimmer schon immer so kurz?*"
     },
     "morning3_seo_gate_cold_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon hält kurz an, als sie vorbeigeht.*"
     },
     "morning3_seo_gate_cold_2": {
@@ -401,7 +401,7 @@
         "text": "*Seite an Seite mit Yuna gehen. Keine Worte. — Aber seltsamerweise ist die Stille angenehm.*"
     },
     "morning3_yuna_gate_cold_1": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna geht zuerst vorbei. Unsere Blicke treffen sich, aber sie wendet sich ab.*"
     },
     "morning3_yuna_gate_cold_2": {
@@ -409,7 +409,7 @@
         "text": "*Ihre Schritte werden schneller. — Es fühlt sich an, als ob die Mauer wieder hochgeht.*"
     },
     "morning3_dain_gate_warm_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain rennt herbei und hakt sich bei mir unter.*"
     },
     "morning3_dain_gate_warm_2": {
@@ -421,7 +421,7 @@
         "text": "*Dains Arm ist um meinen geschlungen. Sie ist stark. — Ich kann mich nicht losreißen, und ich will es auch nicht.*"
     },
     "morning3_dain_gate_cold_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain rennt mit ihren anderen Freunden vorbei.*"
     },
     "morning3_dain_gate_cold_2": {
@@ -441,7 +441,7 @@
         "text": "*Ich gehe zurück ins Klassenzimmer. Eine weitere Stunde vergeht, dann kommt die nächste kurze Pause.*"
     },
     "morning3_seo_gate_6_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon geht weiter. Selbstbewusst. Sie beeilt sich nicht, obwohl sie zu spät kommt.*"
     },
     "morning3_yuna_gate_6_b": {
@@ -457,11 +457,11 @@
         "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines 'uff' hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
     },
     "morning3_react_yuna_1_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain, unverblümt.*"
     },
     "morning3_react_yuna_2_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon, ganz beiläufig vor der Klassentür.*"
     },
     "hidden_homeroom_d3_4_b": {
@@ -469,7 +469,7 @@
         "text": "*Die Handschrift ist zwischen den umgedrehten Blättern verstreut. Die Handfläche des Klassenlehrers bedeckt die Ecke des Papiers.*"
     },
     "hidden_homeroom_d3_4_c": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Der Gesichtsausdruck des Klassenlehrers kehrt zu seiner gewohnten Gleichgültigkeit zurück. Es ist ein Manuskript, aber es wird immer noch umgedreht.*"
     },
     "hidden_homeroom_d3_4_d": {
@@ -493,7 +493,7 @@
         "text": "*Ich hätte so tun können, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht zu. Schließt die Stiftkappe, öffnet sie wieder.*"
     },
     "hidden_homeroom_d3_3_b": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Hand der Klassenlehrerin hält über dem Manuskriptpapier inne. Gleich darauf wird das Blatt umgedreht.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
@@ -505,7 +505,7 @@
         "text": "Also ist es bis hierher gekommen."
     },
     "hidden_homeroom_d3_reveal_2_d": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin schließt kurz den Mund. Dann — seufzt sie. Kurz.*"
     },
     "hidden_homeroom_d3_reveal_2_e": {
@@ -513,7 +513,7 @@
         "text": "...Es ist einfacher, wenn ich es nur für Papier halte."
     },
     "hidden_homeroom_d3_reveal_2_f": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin hält inne. Sie fährt mit den Fingern über das Manuskriptpapier. — Dann lehnt sie sich im Stuhl zurück.*"
     },
     "hidden_homeroom_d3_reveal_1_b": {
@@ -533,7 +533,7 @@
         "text": "Nach dem Abschluss habe ich es ein paarmal eingereicht. Wurde abgelehnt. Danach... waren Bewerbungen leichter auszufüllen."
     },
     "hidden_homeroom_d3_reveal_1_f": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin hebt ein Blatt Manuskriptpapier hoch. Es ist dicht beschrieben.*"
     },
     "hidden_homeroom_d3_reveal_3_b": {
@@ -541,7 +541,7 @@
         "text": "Haben Sie aufgegeben?"
     },
     "hidden_homeroom_d3_reveal_3_c": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin legt das Manuskriptpapier ab. Langsam.*"
     },
     "hidden_homeroom_d3_reveal_4_b": {
@@ -561,7 +561,7 @@
         "text": "*Die Haare zurückstreichend* Es ist ein Geheimnis. — Kein besonders gutes pädagogisches Vorbild. Einem Schüler so etwas zu erzählen."
     },
     "hidden_homeroom_d3_reveal_4_f": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Selbst nachdem sie das gesagt hat, kann die Klassenlehrerin die Hand nicht vom Manuskriptpapier nehmen.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
@@ -581,7 +581,7 @@
         "text": "*Leicht lächelnd* ...Ich bin froh, dass du heute an diesem Klassenzimmer vorbeigekommen bist."
     },
     "hidden_homeroom_d3_reveal_6_e": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Der Klassenlehrer drückt mit dem Daumen auf die Ecke des Manuskripts. Das Papier ist leicht zerknittert.*"
     },
     "hidden_homeroom_d3_reveal_6_f": {
@@ -625,7 +625,7 @@
         "text": "...Ich wollte mich nur kurz ausruhen."
     },
     "hidden_nurse_d3_3_b": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Der Gesundheitslehrer stellt den Becher ab.*"
     },
     "hidden_nurse_d3_3_c": {
@@ -633,11 +633,11 @@
         "text": "...Setz dich."
     },
     "hidden_nurse_d3_3_d": {
-        "name": "{name}",
-        "text": "*Der Gesundheitslehrer stellt den Becher ab. Die leichten Bewegungen meiner Hände haben bisher aufgehört. Setz dich auf das Bett.*"
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester stellt den Becher ab. Die Hand, die sich eben noch leicht bewegt hatte, hält inne. Sie setzt sich aufs Bett.*"
     },
     "hidden_nurse_d3_5_b": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester hält inne. — Ihr Blick wird weich.*"
     },
     "hidden_nurse_d3_5_c": {
@@ -661,7 +661,7 @@
         "text": "Ich interessiere mich für alle drei, denke aber, dass ich mich am Ende für eine Person entscheiden muss."
     },
     "hidden_nurse_d3_5_h": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester schweigt einen Moment. Dann.*"
     },
     "hidden_nurse_d3_5_i": {
@@ -689,7 +689,7 @@
         "text": "Haben Sie das schon mal erlebt? Zwischen mehreren Menschen hin- und hergerissen?"
     },
     "hidden_nurse_d3_5_o": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester hält inne. Ihr Blick wandert zum Fenster.*"
     },
     "hidden_nurse_d3_5_p": {
@@ -701,7 +701,7 @@
         "text": "Universitätskrankenhaus?"
     },
     "hidden_nurse_d3_6_b": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Der Gesundheitslehrer stellt den Wasserbecher ab. Das Wasser am Boden des Bechers verteilt sich kreisförmig.*"
     },
     "hidden_nurse_d3_6_c": {
@@ -709,8 +709,8 @@
         "text": "...Eher als aufgehört zu haben, bin ich weggelaufen. *Mit einem schwachen Lächeln* Es gibt keinen noblen Grund."
     },
     "hidden_nurse_d3_6_d": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester hält kurz bei 'weglaufen' inne. Ihre Fingerspitzen berühren das Stethoskop, bewegen sich in Richtung der Notizbuch-Schublade, ziehen sich dann zurück.*"
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester h?lt bei dem Wort ?weggelaufen? kurz inne. Ihre Finger am Stethoskop setzen zur Schublade mit dem Notizbuch an und stoppen.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Schulkrankenschwester",
@@ -721,8 +721,8 @@
         "text": "*Yujin. — Der Name aus dem Notizbuch von gestern. Die Empfängerin dieser Briefe.*"
     },
     "hidden_nurse_d3_7_b": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester sieht mich an. Ernst.*"
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester sieht {name} an. Ihr Ausdruck ist ernst.*"
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
@@ -757,7 +757,7 @@
         "text": "*...Was? — Meine Füße blieben stehen. Nur der Geruch von Desinfektionsmittel hängt schwer in der Luft.*"
     },
     "hidden_nurse_d3_9_c": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Der Gesundheitslehrer lächelt nicht. Ich fummele an meinem Stethoskop herum und schaue aus dem Fenster.*"
     },
     "hidden_nurse_d3_9_d": {

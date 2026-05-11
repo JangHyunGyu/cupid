@@ -76,7 +76,7 @@
         "text": "*O anexo da biblioteca. O canto secreto de leitura com a Yuna. Sofá gasto, luz da tarde entrando pela janela.*"
     },
     "tour_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna senta no sofá. Deixa o assento ao lado vazio. Um lugar onde a poeira não se acumulou.*"
     },
     "tour_yuna_3": {
@@ -92,7 +92,7 @@
         "text": "No bom sentido."
     },
     "tour_yuna_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna tira um caderno da bolsa. O mesmo que cobriu às pressas no sótão.*"
     },
     "tour_yuna_7": {
@@ -140,7 +140,7 @@
         "text": "*O ginásio. Palco de um monte de apostas e cortadas nos últimos dias. — Hoje as luzes estão acesas.*"
     },
     "tour_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain tá no meio da quadra. Segurando uma bola de vôlei.*"
     },
     "tour_dain_3": {

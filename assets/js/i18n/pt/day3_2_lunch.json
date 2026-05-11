@@ -28,7 +28,7 @@
         "text": "Numa escala de dez. Não é ruim, tá?"
     },
     "lunch3_meal_6": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna estica os pauzinhos em silêncio e pega a salsicha de melhor aparência.*"
     },
     "lunch3_meal_7": {
@@ -52,15 +52,15 @@
         "text": "*Ninguém se levanta. Há sorrisos, mas os três hesitam em pegar os palitos. Apenas um último acompanhamento resta no centro da marmita.*"
     },
     "lunch3_meal_10_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Os pauzinhos de Seoyeon param por um momento. O rosto do presidente do conselho estudantil logo retorna, mas o rolinho de ovo permanece.*"
     },
     "lunch3_meal_10_d": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain diz “Todos juntos?!” e ri. Normalmente eu teria arrastado uma cadeira, mas hoje não saí de onde estava sentado.*"
     },
     "lunch3_meal_10_e": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna só acena. Escreve num bilhete, dobra e enfia no bolso. Não entrega. Apenas um ponto roxo-claro sangrou na borda do papel.*"
     },
     "lunch3_meal_11": {
@@ -111,7 +111,7 @@
         ]
     },
     "lunch3_seo_chase_dain_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon pousa a marmita na mesa. Sem expressão.*"
     },
     "lunch3_seo_chase_dain_2": {
@@ -274,7 +274,7 @@
         "text": "Gentileza que não sabe dizer não — só alimenta falsa esperança."
     },
     "lunch3_expose_honest_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon fecha a tampa da marmita.*"
     },
     "lunch3_expose_honest_4_b": {
@@ -286,7 +286,7 @@
         "text": "Eu não fico em papel ambíguo. Se é assim, prefiro sair fora de vez."
     },
     "lunch3_expose_honest_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon se levanta.*"
     },
     "lunch3_expose_honest_7": {
@@ -302,7 +302,7 @@
         "text": "...Cê não tá vendo que o problema é justamente esse?"
     },
     "lunch3_expose_excuse_2_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain se levanta.*"
     },
     "lunch3_expose_excuse_3": {
@@ -310,7 +310,7 @@
         "text": "Eu também preciso de um tempo pra pensar."
     },
     "lunch3_expose_excuse_4": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain vira o rosto. Nem uma mordida deu no pão doce.*"
     },
     "lunch3_expose_run_1": {

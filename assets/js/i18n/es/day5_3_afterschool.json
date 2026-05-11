@@ -28,7 +28,7 @@
         "text": "...Uf."
     },
     "after5_farewell_seo_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon se aparta el pelo de la cara.*"
     },
     "after5_farewell_seo_4": {
@@ -44,8 +44,8 @@
         "text": "La próxima vez te llevaré yo primero."
     },
     "after5_farewell_seo_6_b": {
-        "name": "{name}",
-        "text": "*Seoyeon se da vuelta y saluda con la mano. No mira atrás. Solo el lazo en su muñeca se balancea brevemente al final del pasillo.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon se da vuelta y saluda con la mano. No mira atr?s. Solo la cinta de su mu?eca se balancea al final del pasillo.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -65,7 +65,7 @@
         "text": "Estuvo bien. ...Nos vemos en la próxima historia."
     },
     "after5_farewell_yuna_4": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se da la vuelta. No se detiene.*"
     },
     "after5_farewell_yuna_5": {
@@ -99,11 +99,11 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "...Hazlo bien. De verdad."
+        "text": "...Hazlo bien. Esta vez."
     },
     "after5_farewell_dain_4_d": {
-        "name": "{name}",
-        "text": "*El signo de exclamación está vivo. Dain lanza la pelota de voleibol alto y la atrapa nuevamente.*"
+        "name": "Dain",
+        "text": "*Dain lanza la pelota de voleibol una vez m?s y la atrapa. Las puntas de sus dedos llegan un poco tarde.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -161,7 +161,7 @@
         "text": "Seoyeon."
     },
     "after5_last_chance_2_d": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon se gira. El atardecer a su espalda.*"
     },
     "after5_last_chance_2_e": {
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*Silencio un instante. El viento le mueve el pelo. No se lo aparta.*"
+        "text": "*El viento le mueve el pelo. Esta vez, Seoyeon no se lo acomoda.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
@@ -185,8 +185,8 @@
         "text": "Esta vez tómalo."
     },
     "after5_last_chance_2_j": {
-        "name": "{name}",
-        "text": "*El meñique que Seoyeon me tiende se queda suspendido delante de mí. Si no lo digo ahora, lo vuelvo a perder.*"
+        "name": "Seoyeon",
+        "text": "*Los dedos que Seoyeon extiende se detienen frente a {name}. Es una mano que espera una respuesta.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -202,23 +202,23 @@
         "text": "Dain."
     },
     "after5_last_chance_2_l": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain venía corriendo y frena en seco.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Eh, ¿¡en serio!?"
+        "text": "Oye, t?..."
     },
     "after5_last_chance_2_n": {
-        "name": "{name}",
-        "text": "*Abre mucho los ojos. Un segundo. Dos.*"
+        "name": "Dain",
+        "text": "*Dain se queda inm?vil. La pelota en su mano baja lentamente.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...¿En serio?"
+        "text": "...?Volviste?"
     },
     "after5_last_chance_2_p": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Los labios de Dain tiemblan. Respiro profundamente antes de responder.*"
     },
     "after5_last_chance_2_q": {
@@ -226,7 +226,7 @@
         "text": "Te esperé. Desde ayer. No, desde anteayer. Pero — no se arregla así nomás."
     },
     "after5_last_chance_2_r": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain se frota la esquina del ojo. Su sonrisa permanece igual, pero la humedad se adhiere al dorso de su mano.*"
     },
     "after5_last_chance_2_s": {
@@ -247,7 +247,7 @@
         "text": "Yuna."
     },
     "after5_last_chance_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se detiene. Aprieta el libro contra el pecho. Tarda unos dos segundos en girarse.*"
     },
     "after5_last_chance_yuna_3": {
@@ -267,7 +267,7 @@
         "text": "*Una frase corta. Pero me empuja por la espalda. Yuna no aparta la mirada.*"
     },
     "after5_last_chance_yuna_7": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna espera, sosteniendo el libro. La ventana de respuesta aún no tiene la primera letra.*"
     },
     "after5_last_chance_yuna_low_1": {
@@ -280,7 +280,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*La esquina del teléfono se me clava en la palma.*",
+        "text": "*El tel?fono se hunde en mi palma.*",
         "choices": [
             "Decirlo ahora",
             "...No fui capaz de decir nada"
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Al salir de la escuela.* ¿Oye, en serio?! ...¿De verdad? Esperar, esperé. — Pero sonreír al toque me sentiría barato. Esta vez dímelo hasta el final."
+        "text": "*Saliendo de la escuela.* Oye, t?... S? te esper?. Pero sonre?r de inmediato solo porque esper? ser?a injusto. Esta vez dilo hasta el final."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -322,7 +322,7 @@
         "text": "Yuna."
     },
     "after5_confess_react_yuna_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna baja el libro. No cambia la cara. — Pero le tiemblan las manos.*"
     },
     "after5_confess_react_yuna_c": {

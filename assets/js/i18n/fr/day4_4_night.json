@@ -68,7 +68,7 @@
         "text": "Elle s’est encore disputée avec papa."
     },
     "wall_seo_9": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon rit. Les rires s'arrêtent rapidement.*"
     },
     "wall_seo_9_b": {
@@ -92,7 +92,7 @@
         "text": "Ma mère m'a dit : « Si tu t'écroules, cette maison s'écroule aussi. »"
     },
     "wall_seo_11_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon serre les lèvres. Comme si elle avalait quelque chose.*"
     },
     "wall_seo_12": {
@@ -105,14 +105,14 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "À chaque compliment, je pensais. — Même ce sourire est répété. Quelqu'un m'a vraiment vue ?"
+        "text": "Chaque fois qu?on me complimentait, c?est la premi?re chose qui me venait. Que ce visage, je l?avais r?p?t? devant le miroir encore et encore."
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
         "text": "...Mais toi."
     },
     "wall_seo_14_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon s'arrête de parler. Ses mains se serrent sur ses genoux. Avant que l'humidité au bout de ses lunettes ne tombe, elle baisse la tête.*"
     },
     "wall_seo_14_d": {
@@ -120,7 +120,7 @@
         "text": "*De l'eau coule de ses yeux. Sans bruit. Seoyeon commence à l'essuyer avec le dos de sa main, puis s'arrête, et lève simplement les yeux.*"
     },
     "wall_seo_hug_choice": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon pleure. Le maquillage sur le dos de ma main macule.*",
         "choices": [
             "La prendre dans mes bras",
@@ -152,7 +152,7 @@
         "text": "Quand tu veux pleurer, écris-moi. Je ne poserai pas de questions."
     },
     "wall_seo_pinky_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon fixe mon petit doigt.*"
     },
     "wall_seo_pinky_4": {
@@ -168,12 +168,12 @@
         "text": "*Le petit doigt qui fendait l'air le premier jour est maintenant accroché au mien. Le bout du doigt de Seoyeon est froid.*"
     },
     "wall_seo_line_choice": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon essuie ses larmes, me regardant avec des yeux tremblants.*",
         "choices": [
-            "J'aime aussi ce visage-là. Pas celui que tu as répété.",
-            "Pas la présidente du conseil — juste Seoyeon, c'est elle ma petite amie.",
-            "Honnêtement, je pensais que tu étais douée en tout. Merci de me montrer ce côté aussi."
+            "J?aime aussi ce visage-l?. Pas celui que tu as r?p?t?.",
+            "Aujourd?hui, tu n?as aucun r?le ? jouer.",
+            "Merci de me l?avoir montr?. M?me la part que tu cachais."
         ]
     },
     "wall_seo_line_react_1": {
@@ -189,7 +189,7 @@
         "text": "...Merci, je suppose."
     },
     "wall_seo_line_react_3_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon essuie ses larmes.*"
     },
     "wall_seo_after_line": {
@@ -205,7 +205,7 @@
         "text": "C’est bien."
     },
     "wall_seo_after_line_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon sourit. Des traces humides restent sous le maquillage étalé.*"
     },
     "wall_seo_after_line_4_b": {
@@ -218,7 +218,7 @@
     },
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon tend son petit doigt d'abord. Elle ne s'arrête pas là. Elle prend ma main. Et pose ses lèvres sur mon front.*"
     },
     "wall_seo_skin70_3": {
@@ -254,11 +254,11 @@
         "text": "...On peut parler d'autre chose que de sport aujourd'hui ?"
     },
     "wall_dain_pre_high_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain est plus silencieux que d'habitude. La fin de la voix touche le sol.*"
     },
     "wall_dain_pre_low_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain sourit. Sa main appuie fort sur la genouillère.*"
     },
     "wall_dain_pre_low_2": {
@@ -267,19 +267,19 @@
     },
     "wall_dain_2": {
         "name": "Dain",
-        "text": "Hé, t’es libre là ? mdr"
+        "text": "H?, tu as un moment l? ?"
     },
     "wall_dain_2_b": {
         "name": "Dain",
-        "text": "*On n'est pas censés être au lycée, si ?*"
+        "text": "*Je ne suis pas cens?e venir au lyc?e, hein ?*"
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "Viens juste mdr ! J’ai laissé la porte arrière du gymnase ouverte !"
+        "text": "...Viens, c?est tout. J?ai laiss? la porte arri?re du gymnase ouverte."
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*Le gymnase sombre, éclairé seulement par les lumières de secours. Dain fait rebondir un ballon de volley seule. Elle sourit plus fort que d’habitude.*"
+        "text": "*Dans le gymnase, seules les lumi?res de secours sont allum?es. Dain fait rebondir un ballon toute seule. Sa bouche sourit, mais ses ?paules sont raides.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -294,7 +294,7 @@
         "text": "Je me faufile de temps en temps ! Pour m’entraîner !!"
     },
     "wall_dain_7_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain me tend un ballon de volley.*"
     },
     "wall_dain_8": {
@@ -338,16 +338,16 @@
         "text": "...Ligament croisé antérieur."
     },
     "wall_dain_14_b": {
-        "name": "{name}",
-        "text": "*Pas de points d'exclamation.*"
+        "name": "Dain",
+        "text": "*Dain ne regarde pas le ballon.*"
     },
     "wall_dain_15": {
         "name": "Dain",
         "text": "L’été dernier."
     },
     "wall_dain_16": {
-        "name": "{name}",
-        "text": "*Dain a une expression que je ne lui ai jamais vue. Dain, sans sourire.*"
+        "name": "Dain",
+        "text": "*Dain ne sourit pas. C?est ce qu?il y a de plus ?trange.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -378,7 +378,7 @@
         "text": "Je ne l’ai dit à personne. Pas même à mes parents. «Dain ne serait pas Dain si elle ne pouvait plus jouer !» — Je ne voulais pas entendre ça."
     },
     "wall_dain_19_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain se serre la poitrine.*"
     },
     "wall_dain_20": {
@@ -402,7 +402,7 @@
         "text": "*Je me suis assis à côté de Dain. Le sol du terrain est froid. Je n'ai rien dit.*"
     },
     "wall_dain_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain serre le ballon, tête baissée. Ses épaules tremblent.*",
         "choices": [
             "...Je ne dirai rien. Je reste juste là.",
@@ -415,7 +415,7 @@
         "text": "*J'étais juste assis à côté de lui. Tous deux restent sans voix. Seules les pointes des baskets de Dain tremblent lentement.*"
     },
     "wall_dain_newdream_2_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain parle en premier.*"
     },
     "wall_dain_newdream_3": {
@@ -427,12 +427,12 @@
         "text": "Pour t’écouter quand tu voudras parler."
     },
     "wall_dain_newdream_5": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain regarde ses mains sur ses genoux. Elle serre et desserre les poings.*"
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "C'est vraiment drôle, n'est-ce pas? Je suis sur ce terrain tous les jours depuis l'âge de 5 ans... mais maintenant je dois penser à autre chose."
+        "text": "C?est dr?le, non ? Depuis mes cinq ans, j??tais sur ce terrain tous les jours... et maintenant il faut que je pense ? autre chose."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -443,11 +443,11 @@
         "text": "*Le ballon s’est arrêté hors de la ligne. Dain passe une fois la paume sur le sol froid.*"
     },
     "wall_dain_cry_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain s’est effondrée sur le terrain. Elle a commencé à pleurer en serrant le ballon.*"
     },
     "wall_dain_cry_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain baisse la tête. Des gouttes tombent une à une sur le sol vide du gymnase. Le ballon reste immobile hors de la ligne.*"
     },
     "wall_dain_cry_3": {
@@ -463,7 +463,7 @@
         "text": "Chaque matin, je regardais cette alarme et je me forçais à sourire devant le miroir..."
     },
     "wall_dain_cry_6": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain éteint son téléphone. « Souriez encore aujourd’hui!! » disparaît dans un écran noir. Seules les lumières du gymnase clignotaient en blanc jusqu'à ce que les pleurs se calment.*"
     },
     "wall_dain_lastspike_1": {
@@ -471,7 +471,7 @@
         "text": "*J'ai tendu la main. Dain l'a prise. On s'est relevés tous les deux. — Je lui ai fait la passe.*"
     },
     "wall_dain_lastspike_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain a serré les dents et sauté — le smash parfait. Le ballon s’écrase sur le terrain.*"
     },
     "wall_dain_lastspike_3": {
@@ -488,10 +488,10 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "... mdr ça fait mal. Mais comme c'est un tirage au sort, c'est un peu mieux."
+        "text": "...?a fait mal. Mais comme c??tait ta passe, ?a va un peu mieux."
     },
     "wall_dain_lastspike_4_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain regarde autour du terrain. Le gymnase sombre et vide.*"
     },
     "wall_dain_lastspike_5": {
@@ -503,8 +503,8 @@
         "text": "— Treize ans depuis mes cinq ans. Merci."
     },
     "wall_dain_farewell_1": {
-        "name": "{name}",
-        "text": "*Il n'y a pas de point d'exclamation. Dain pose le ballon de volley et marche le premier.*"
+        "name": "Dain",
+        "text": "*Dain pose le ballon et marche devant. Elle ne se retourne pas.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -519,12 +519,12 @@
         "text": "Si elle avait dit quelque chose, au moins j'aurais pu me battre. Quand quelqu'un ne dit rien, on se sent comme la méchante."
     },
     "wall_dain_mention_3": {
-        "name": "{name}",
-        "text": "*Dain s'arrête brièvement. — Puis reprend la marche. D'un pas plus léger.*"
+        "name": "Dain",
+        "text": "*Le pas de Dain se suspend un instant. Quand elle repart, il est un peu plus l?ger.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain pleure et se jette dans mes bras.*"
     },
     "wall_dain_skin70_2": {
@@ -572,11 +572,11 @@
         "text": "...Aujourd'hui je parle sans notes."
     },
     "wall_yuna_pre_high_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna parle directement au lieu d’utiliser un mot. Elle n’a aucun papier dans les mains.*"
     },
     "wall_yuna_pre_low_1": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna me tend un mot.*"
     },
     "wall_yuna_pre_low_2": {
@@ -592,7 +592,7 @@
         "text": "Suis-moi."
     },
     "wall_yuna_4": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna va vers l'annexe de la bibliothèque. Elle dépasse son repaire de lecture secret — encore plus loin. Les archives du sous-sol. Entre des étagères poussiéreuses. Yuna sort une vieille enveloppe.*"
     },
     "wall_yuna_6": {
@@ -612,7 +612,7 @@
         "text": "Un senior qui venait ici avec moi. — La seule personne dont j’étais proche."
     },
     "wall_yuna_9_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna pose la lettre.*"
     },
     "wall_yuna_10": {
@@ -624,8 +624,8 @@
         "text": "C'était ma première fois en tant que senior. «J'ai aimé votre écriture» - juste à cause de ce commentaire, j'avais l'impression d'être en classe ce jour-là."
     },
     "wall_yuna_12": {
-        "name": "{name}",
-        "text": "*Les phrases de Yuna sont plus longues que d'habitude. Beaucoup plus.*"
+        "name": "Yuna",
+        "text": "*Yuna dit tout cela sans s?arr?ter une seule fois.*"
     },
     "wall_yuna_13": {
         "name": "Yuna",
@@ -644,8 +644,8 @@
         "text": "...Il n'y avait rien."
     },
     "wall_yuna_14_d": {
-        "name": "{name}",
-        "text": "*Yuna me regarde.*"
+        "name": "Yuna",
+        "text": "*Yuna regarde {name}.*"
     },
     "wall_yuna_14_e": {
         "name": "Yuna",
@@ -672,15 +672,15 @@
         "text": "Mais tu es venu chaque jour. Silencieusement. — Sans disparaître."
     },
     "wall_yuna_16_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna tient fermement sa manche. Pendant que je reprends mon souffle, le dos du livre est pressé dans ma paume.*"
     },
     "wall_yuna_choice": {
-        "name": "{name}",
-        "text": "*Les yeux de Yuna sont légèrement humides. Le bout de ses doigts tenant le livre est blanc de pression.*",
+        "name": "Yuna",
+        "text": "*Yuna serre le livre dans sa main. Pendant qu?elle attend une r?ponse, le coin de la lettre se froisse un peu.*",
         "choices": [
             "Je ne suis pas ce senior. Je suis moi. Mais je resterai à tes côtés.",
-            "Laisse tomber ce senior. Celui qui est devant toi maintenant, c'est moi.",
+            "L?, j??coute ce que tu viens de me dire. Je ne fuirai pas.",
             "...Alors tu t’es rapprochée de moi à cause de lui ? Comme remplaçant ?"
         ]
     },
@@ -693,19 +693,19 @@
         "text": "Mais maintenant..."
     },
     "wall_yuna_moved_3": {
-        "name": "{name}",
-        "text": "*Yuna lève la tête. Ce ne sont pas ses yeux nonchalants habituels. Elle me regarde droit dans les yeux, sans vaciller.*"
+        "name": "Yuna",
+        "text": "*Yuna rel?ve la t?te. Cette fois, elle ne d?tourne pas les yeux.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
         "text": "Maintenant c’est toi que je vois. Toi seul."
     },
     "wall_yuna_moved_5": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna expire lentement. Le coin de la lettre se froisse un peu sous ses doigts.*"
     },
     "wall_yuna_moved_5_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna expire lentement. Le bout des doigts qui crispent sa manche tremble un peu.*"
     },
     "wall_yuna_skin_check": {},
@@ -734,7 +734,7 @@
         "text": "...Ouais. Le senior, c'est le senior. Et toi, c'est toi."
     },
     "wall_yuna_sub_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna sourit faiblement. Son doigt appuie encore une fois sur le coin de la lettre.*"
     },
     "wall_yuna_reject_1": {
@@ -742,7 +742,7 @@
         "text": "......Tu penses ça ?"
     },
     "wall_yuna_reject_1_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna reprend la lettre.*"
     },
     "wall_yuna_reject_2": {
@@ -750,7 +750,7 @@
         "text": "...Oui. C’était peut-être le cas."
     },
     "wall_yuna_reject_3": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna se retourne. Elle marche vite. Un marque-page tombe de sa poche, mais elle ne le ramasse pas.*"
     },
     "wall_yuna_glimpse_1": {
@@ -762,7 +762,7 @@
         "text": "*Sous le lampadaire devant le portail de l'école. Seoyeon était debout. Je décroche mon téléphone, j'écris quelque chose, puis je l'efface. Écrivez-le à nouveau et effacez-le. La lumière de l'écran reste uniquement sur les lunettes.*"
     },
     "wall_yuna_glimpse_3_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon range le téléphone dans sa poche et se retourne. Son dos est droit. Seule l'ombre sous le lampadaire vacille brièvement.*"
     },
     "wall_yuna_glimpse_4": {
@@ -779,11 +779,11 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Le vent était agréable aujourd'hui. Alors... j'ai un peu espéré. Pour rien."
+        "text": "Le vent ?tait agr?able aujourd?hui. Alors... j?ai attendu un peu."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Hé, c'était sympa aujourd'hui haha... ...J'espère que je n'étais pas la seule à être si enthousiaste."
+        "text": "H?, aujourd?hui c??tait sympa. ...J?esp?rais ne pas ?tre la seule ? m??tre emball?e."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",

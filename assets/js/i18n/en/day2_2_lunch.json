@@ -183,7 +183,7 @@
         "text": "Sometimes I need somewhere to escape to."
     },
     "lunch2_yuna_9": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna turns the page. The paper sounds lighter than before.*"
     },
     "lunch2_yuna_10": {
@@ -191,7 +191,7 @@
         "text": "...Alright."
     },
     "lunch2_yuna_11": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna walks ahead. Deep into the annex. Somewhere no one would think to go. A small room appears. Sunlight streams in through the window, and there's a worn sofa and bookshelves.*"
     },
     "lunch2_yuna_13": {
@@ -203,7 +203,7 @@
         "text": "...Almost no one knows it exists."
     },
     "lunch2_yuna_15": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna sits on the sofa. She quietly leaves the spot next to her open.*"
     },
     "lunch2_yuna_16": {
@@ -227,7 +227,7 @@
         "text": "...Transferred out. A year ago."
     },
     "lunch2_yuna_c1_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna’s finger presses firmly on the end of the bookmark.*"
     },
     "lunch2_yuna_c1_3": {
@@ -235,7 +235,7 @@
         "text": "Without a word."
     },
     "lunch2_yuna_c1_4": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna pushes the bookmark deep inside the book. The page folds after 'I had it.'*"
     },
     "lunch2_yuna_c1_5": {
@@ -263,7 +263,7 @@
         "text": "Oh..."
     },
     "lunch2_yuna_c1_12": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna's hand stops on the bookmark. Only the sound of turning pages echoes loudly.*"
     },
     "lunch2_yuna_c1_14": {
@@ -295,7 +295,7 @@
         "text": "It's quiet. — But I'm not alone."
     },
     "lunch2_yuna_c2_9": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna turns her eyes back to the shelves. The sunlight stretches a little farther across the open page.*"
     },
     "lunch2_yuna_end": {
@@ -368,18 +368,18 @@
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*If Dain were here, she'd be laughing out loud right now. Silence hangs between the rooftop door, the lunchbox, and my chopsticks.*"
+        "text": "*Had Dain been there, this is where she would have laughed loudly. Silence settles between the rooftop door, the lunchbox, and {name}'s chopsticks.*"
     },
     "lunch2_seo_19": {
-        "name": "{name}",
-        "text": "*Seoyeon casually glances at the corner of my mouth.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon looks at the corner of {name}'s mouth while pretending not to care.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
         "text": "You have something on your lip. Hold still."
     },
     "lunch2_seo_choice": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon's hand reaches toward me.*",
         "choices": [
             "Stay still",
@@ -387,7 +387,7 @@
         ]
     },
     "lunch2_seo_c1_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon's finger brushes the corner of my lips. Softly. Slowly. — Slower than necessary.*"
     },
     "lunch2_seo_c1_2": {
@@ -419,7 +419,7 @@
         "text": "...If you do it yourself, you'll just make it worse."
     },
     "lunch2_seo_c2_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon closes the lunchbox lid with the same smiling face. The click is a little loud.*"
     },
     "lunch2_seo_end_c2": {
@@ -491,8 +491,8 @@
         "text": "Hmm... are you close with the president too?"
     },
     "lunch2_dain_choice": {
-        "name": "{name}",
-        "text": "*Dain stares at me intently.*",
+        "name": "Dain",
+        "text": "*Dain stares straight at {name}.*",
         "choices": [
             "We talked a bit yesterday",
             "She just showed me around the school?",
@@ -500,11 +500,11 @@
         ]
     },
     "lunch2_dain_c1_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain's expression stiffens. She bites into the soboro and turns her head without chewing.*"
     },
     "lunch2_dain_c2_1": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain nods and takes a bite of crumble bun. Acting like she doesn't care.*"
     },
     "lunch2_dain_c3_1": {
@@ -512,8 +512,8 @@
         "text": "Hey, don't laugh! *breaks crumble bun in half and shoves one piece over* ...Here, just eat this."
     },
     "lunch2_dain_c3_2": {
-        "name": "{name}",
-        "text": "*Dain folds the wrapping paper unnecessarily for a long time. I talk less than before.*"
+        "name": "Dain",
+        "text": "*Dain folds the soboro wrapper for longer than necessary. She speaks less than a moment ago.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
@@ -524,7 +524,7 @@
         "text": "......"
     },
     "lunch2_yuna_c1_9_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna's gaze turns cold for an instant.*"
     },
     "lunch2_seo_13b_b": {
@@ -532,7 +532,7 @@
         "text": "*Looking at {name}* ...A cheerful one."
     },
     "lunch2_seo_c1_2_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain's eyes widen as she looks back and forth between the two of us.*"
     },
     "lunch2_seo_c1_3_b": {
@@ -540,7 +540,7 @@
         "text": "*Acting like nothing happened* It was a grain of rice."
     },
     "lunch2_dain_13_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain takes a big bite of the soboro bread. Crumbs fall onto her uniform sleeve.*"
     },
     "lunch2_dain_end_b": {
@@ -588,7 +588,7 @@
         "text": "*Her tone remains the same. Only her gaze keeps dropping below her knees.*"
     },
     "lunch2_dain_end_i": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse comes over and takes my elbow. Her hands are cold.*"
     },
     "lunch2_dain_end_j": {
@@ -604,7 +604,7 @@
         "text": "*Applies bandage*Don’t move....That's it."
     },
     "lunch2_dain_end_m": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse's hand pauses. Then — as if nothing happened — it moves again.*"
     },
     "lunch2_dain_end_n": {
@@ -640,7 +640,7 @@
         "text": "*Laughs softly* Secret. Teachers get to have secrets too, you know."
     },
     "lunch2_dain_end_v": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse closes the drawer. The handle is pressed once more.*"
     },
     "lunch2_dain_end_w": {
@@ -652,8 +652,8 @@
         "text": "If I'm not hurt, I'd have no reason to come."
     },
     "lunch2_dain_end_y": {
-        "name": "{name}",
-        "text": "*The health teacher stops folding the band wrapper and looks at me.*"
+        "name": "School Nurse",
+        "text": "*The school nurse stops folding the bandage wrapper and looks at {name}.*"
     },
     "lunch2_dain_end_z": {
         "name": "School Nurse",

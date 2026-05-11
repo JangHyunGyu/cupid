@@ -33,11 +33,11 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "Hey! Ich hab dich als meinen Partner fürs Sportevent heute eingetragen!"
+        "text": "Hey, ich habe dich als meinen Partner f?r das Sportevent heute eingetragen."
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Lauf bloß nicht weg, sonst werd ich echt sauer!"
+        "text": "Wenn du wegl?ufst, werde ich sauer."
     },
     "morning5_end": {
         "name": "{name}",
@@ -48,7 +48,7 @@
         "text": "*Vorbereitungszeit. Auf dem Flur — das leere Klassenzimmer. Die Tür ist offen.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin sitzt am Pult. — Kein Manuskript diesmal. Ein Umschlag. Ein brauner Umschlag.*"
     },
     "hidden_homeroom_d5_2": {
@@ -69,7 +69,7 @@
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*Ich halte das Manuskript im Arm. Die Ecke des Umschlags drückt gegen meine Armbeuge.*",
+        "text": "*Ich halte das Manuskript im Arm. Der Umschlag dr?ckt gegen die Innenseite meines Arms.*",
         "choices": [
             "Sie haben so lange daran festgehalten. Das muss doch etwas bedeuten.",
             "Darf ich es kurz lesen? Danach sage ich etwas."
@@ -84,7 +84,7 @@
         "text": "Nach dem Abschluss — sehen wir uns einmal. Nicht als Lehrerin, sondern unter meinem richtigen Namen."
     },
     "hidden_homeroom_d5_8": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin dreht sich um. Ihr langes Haar schwingt, und die Kante des Klemmbretts drückt gegen ihren Ellbogen.*"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -99,7 +99,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "Schulkrankenschwester",
-        "text": "Äh? {name}. Es ist bereits der letzte Tag. Sobald die Veranstaltung vorbei ist, ist sie wirklich vorbei."
+        "text": "Oh? {name}. Schon der letzte Tag. Wenn das Event vorbei ist, ist es wirklich vorbei."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -175,7 +175,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Klassenlehrerin",
-        "text": "*Hebt den Umschlag leicht hoch* ...Das hier."
+        "text": "*Hebt den Umschlag hoch* ...Das hier."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -202,15 +202,15 @@
         "text": "Das müssen Sie nicht mehr sagen."
     },
     "hidden_homeroom_d5_6_g": {
-        "name": "{name}",
-        "text": "*Der Klassenlehrer hält einen Moment inne. Diesmal verdeckt die Anwesenheitsliste nicht das Gesicht.*"
+        "name": "Klassenlehrerin",
+        "text": "*Diesmal versteckt sich die Klassenlehrerin nicht hinter dem Anwesenheitsbuch.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Klassenlehrerin",
         "text": "...Dass ich das mal von einem Schüler hören würde."
     },
     "hidden_homeroom_d5_6_i": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Sie glättet die geknickte Ecke des Manuskript-Umschlags.*"
     },
     "hidden_homeroom_d5_6_j": {
@@ -235,10 +235,10 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Klassenlehrerin",
-        "text": "*Schmunzelt* ...Stimmt. Schreib mir wenigstens eine Zeile."
+        "text": "*Mit einem kleinen Lachen* ...Stimmt. Schreib wenigstens eine Zeile."
     },
     "hidden_homeroom_d5_6_p": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin hält einmal an der Tür inne. Sie drückt zweimal mit dem Finger auf die Kante des Klemmbretts und lässt los.*"
     },
     "hidden_homeroom_d5_6_q": {
@@ -246,7 +246,7 @@
         "text": "{name}."
     },
     "hidden_homeroom_d5_6_r": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Sie bleibt stehen. Umklammert ihr Klemmbrett. — Und dreht langsam den Kopf.*"
     },
     "hidden_homeroom_d5_6_s": {
@@ -254,7 +254,7 @@
         "text": "...Nach dem Abschluss. *Ihre Stimme bricht.* Ja. Nach dem Abschluss."
     },
     "hidden_homeroom_d5_6_t": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin schluckt dieselben Worte noch einmal hinunter. Die Kante des Klemmbretts tippt leicht gegen den Türrahmen.*"
     },
     "hidden_homeroom_d5_7_b": {
@@ -266,8 +266,8 @@
         "text": "...Ich weiß. Das sollte ich jetzt nicht sagen. Aber heute sage ich wenigstens so viel."
     },
     "hidden_nurse_d5_2_b": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester kommt heraus. Sie ist direkt vor meiner Nase.*"
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester ?ffnet die T?r und tritt heraus. Es bleibt kein Platz, um zur?ckzuweichen, bevor sich unsere Blicke treffen.*"
     },
     "hidden_nurse_d5_2_c": {
         "name": "Schulkrankenschwester",
@@ -303,11 +303,11 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*'Komm vorbei, wenn es dir nicht gut geht.' Nachdem sie das gesagt hat, wechselt die Krankenschwester leicht die Hand, die zwei Pappbecher hält.*"
+        "text": "*?Komm, wenn dir schlecht ist.? Nachdem sie das gesagt hat, wechselt die Krankenschwester die beiden Pappbecher in ihren H?nden.*"
     },
     "hidden_nurse_d5_3_b": {
-        "name": "{name}",
-        "text": "*Der Gesundheitslehrer hält einen Moment inne. Das Lachen verschwindet zuerst.*"
+        "name": "Schulkrankenschwester",
+        "text": "*Das L?cheln der Krankenschwester verschwindet zuerst.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Schulkrankenschwester",
@@ -322,7 +322,7 @@
         "text": "*Lächelt wieder* Frag mich das nach dem Abschluss. — Dann antworte ich."
     },
     "hidden_nurse_d5_3_f": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester schließt die Pflasterbox und öffnet sie wieder.*"
     },
     "hidden_nurse_d5_3_g": {
@@ -330,7 +330,7 @@
         "text": "Los, geh. Du kannst bei der Veranstaltung nicht einfach fehlen."
     },
     "hidden_nurse_d5_3_h": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester dreht sich um, um reinzugehen — und bleibt stehen.*"
     },
     "hidden_nurse_d5_3_i": {
@@ -338,8 +338,8 @@
         "text": "...{name}."
     },
     "hidden_nurse_d5_choice_b_b": {
-        "name": "{name}",
-        "text": "*Der Gesundheitslehrer hört auf zu lachen. Der Blick hinter der Brille schwankt für einen Moment.*"
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester h?lt mitten im L?cheln inne. Ihre Hand kommt einen Moment zu sp?t, um die Brille zu richten.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Schulkrankenschwester",
@@ -362,8 +362,8 @@
         "text": "...Ich bin nicht verletzt."
     },
     "hidden_nurse_d5_6_b": {
-        "name": "{name}",
-        "text": "*Die Krankenschwester nimmt ein Pflaster heraus und klebt es auf meinen Handrücken. Langsam. Am Rand des Pflasters steht eine winzige Schrift.*"
+        "name": "Schulkrankenschwester",
+        "text": "*Die Schulkrankenschwester nimmt ein Pflaster heraus und klebt es auf {name}s Handrücken. Die Bewegung bleibt langsam; am Rand des Pflasters steht eine kleine Schrift.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -382,7 +382,7 @@
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Noch vor Dains Ausrufezeichen kommt mir zuerst der Atem in den Sinn, der ihr gestern am Ende stockte. Seoyeon und Yuna sagen nur ein paar kurze Dinge über die Vorbereitungen für die Veranstaltung.*"
+        "text": "*Als Erstes f?llt mir Dains Gesicht gestern in der Turnhalle ein, als sie stehen blieb, um Atem zu holen. Seoyeon und Yuna erw?hnen nur kurz die Vorbereitungen f?r das Event.*"
     },
     "morning5_end_branch": {},
     "morning5_committed_end": {
@@ -410,8 +410,8 @@
         "text": "*Ein leerer Bibliotheksplatz, ein verschwundenes Lesezeichen, ein nicht aufgehängter Roman. Nur vier Reißzweckenlöcher bleiben an der Pinnwand.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
-        "name": "{name}",
-        "text": "*Der Klassenlehrer hält einen Moment inne. Bald nimmt er wieder seinen gewohnt trockenen Gesichtsausdruck an, aber die Ecken des Umschlags sind zerknittert.*"
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin h?lt inne. Ihr Ausdruck kehrt schnell zur?ck, doch der Umschlag in ihrer Hand ist ein wenig zerknittert.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
@@ -426,7 +426,7 @@
         "text": "...Schon."
     },
     "hidden_homeroom_d5_praise_trap_5": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin streckt die Hand aus. Nimmt das Manuskript zurück. Langsam. Steckt es zurück in den Umschlag.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
@@ -458,8 +458,8 @@
         "text": "*Ich verließ den Raum und schloss die Klassenzimmertür. Der Umschlag liegt noch auf dem Schreibtisch der Lehrerin. Eine Rücksende-Aufkleber-Spur in Nagelgröße bleibt auf der Oberfläche.*"
     },
     "hidden_homeroom_d5_correct_1": {
-        "name": "{name}",
-        "text": "*Der Klassenlehrer bleibt stehen. Die Hand, die das Klemmbrett hält, erfordert Kraft. Das Ende des Papiers ist leicht gebogen.*"
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin h?lt inne. Die Papierkante biegt sich in ihrer Hand ein wenig.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Klassenlehrerin",
@@ -486,7 +486,7 @@
         "text": "Sobald ich die letzte Seite ansehe, bleibt meine Hand stehen. Seit Jahren."
     },
     "hidden_homeroom_d5_correct_8": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin schluckt den Rest hinunter. Das Klassenzimmer wird so still wie die leere letzte Zeile.*"
     },
     "hidden_homeroom_d5_correct_9": {

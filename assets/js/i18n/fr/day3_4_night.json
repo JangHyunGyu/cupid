@@ -24,7 +24,7 @@
         "text": "*Je fixe le message un long moment, puis j'éteins l'écran. La pièce s'assombrit un peu.*"
     },
     "night3_faithful_msg_yuna_1": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna a envoyé une photo d’un mot. Une seule ligne écrite dans son carnet.*"
     },
     "night3_faithful_msg_yuna_2": {
@@ -80,7 +80,7 @@
         "text": "...mdr j’aimerais que ce soit une blague"
     },
     "night3_cheat_msg_7": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna a envoyé trois lignes. Elle qui en tape jamais une.*"
     },
     "night3_nightmare_1": {
@@ -165,7 +165,7 @@
         "text": "*Le curseur clignote sur la dernière ligne du bloc-notes. Laisser la fin vide, et le fichier reste en mode sauvegarde.*"
     },
     "night3_cheat_msg_3_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon utilise le mot 'faveur'. Le curseur reste figé après ce mot pendant longtemps.*"
     },
     "night3_cheat_msg_4_b": {
@@ -173,15 +173,15 @@
         "text": "*Moi aussi, ils détestent les sièges de réserve.*"
     },
     "night3_nightmare_2_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*J'entends la voix de Seoyeon.*"
     },
     "night3_nightmare_3_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*La voix de Yuna.*"
     },
     "night3_nightmare_4_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*La voix de Dain.*"
     },
     "night3_dream_2_b": {

@@ -92,7 +92,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "choice_dismiss_3": {
         "background": "assets/images/background/school_hallway.png",
-        "character": null,
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "classroom_1"
     },
     "choice_flirt_1": {

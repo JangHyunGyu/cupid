@@ -20,8 +20,8 @@
         "text": "Transferido? Você é o {name}, né?"
     },
     "seoyeon_meet_2": {
-        "name": "{name}",
-        "text": "*Seoyeon confere meu nome mais uma vez e faz uma breve marcação na lista da prancheta. O olhar por trás dos óculos demora um instante a mais para se desviar.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon confere o nome de {name} mais uma vez e faz uma marca rápida na lista da prancheta. O olhar por trás dos óculos não baixa de imediato.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -58,18 +58,18 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Ela para. Vira o rosto de leve e olha para trás.*"
+        "text": "*Os passos de Seoyeon param. Apenas a cabeça se vira para {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
         "text": "É? Então no mínimo decora a sala. 3-2, no fim à direita."
     },
     "choice_dismiss_3": {
-        "name": "{name}",
-        "text": "*Seoyeon realmente deu as costas. Sem nenhum aceno. Depois de ler errado as placas do corredor duas vezes, finalmente parou diante da sala 3-2.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon realmente se vira. Sem sequer acenar, caminha para dentro da escola.*"
     },
     "choice_flirt_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon para e se vira. A cara não é de surpresa — é de quem tá achando graça.*"
     },
     "choice_flirt_2": {
@@ -93,8 +93,8 @@
         "text": "Se é honra ou tragédia, só o tempo diz."
     },
     "choice_flirt_7": {
-        "name": "{name}",
-        "text": "*Seoyeon foi na frente e olhou para trás uma vez para ver se eu estava seguindo. A borda da prancheta batia de leve entre seus dedos.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon caminha à frente. Olha para trás uma vez e, quando os passos de {name} se aproximam, não diminui o ritmo.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -109,7 +109,7 @@
         "text": "Pelo menos chato não vai ser."
     },
     "hallway_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon ia na frente pelo corredor. Os estudantes a cumprimentavam ao passar. Ela respondia com um leve aceno da prancheta, sem desacelerar nem uma vez.*"
     },
     "hallway_3": {
@@ -117,7 +117,7 @@
         "text": "O prédio do terceiro ano é aqui, a biblioteca é ali. Cantina fica no subsolo."
     },
     "hallway_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon tira uma chave do bolso e balança de leve.*"
     },
     "hallway_5": {
@@ -133,7 +133,7 @@
         "text": "*Trava por um instante* ...Esperto, hein."
     },
     "hallway_6_c": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*A borda da área de transferência se move novamente uma batida depois.*"
     },
     "hallway_7": {
@@ -157,7 +157,7 @@
         "text": "Depende de você se comportar."
     },
     "hallway_13": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon se vira e acena de leve. Não olha para trás.*"
     },
     "hallway_13_b": {
@@ -209,7 +209,7 @@
         "text": "*Do tipo que não tem botão de volume.*"
     },
     "classroom_dain_5_b": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora titular soltou um pequeno suspiro. Bateu na ponta da lista de chamada e procurou o próximo nome sem sequer olhar para Dain.*"
     },
     "classroom_dain_5_c": {
@@ -217,7 +217,7 @@
         "text": "...Guarda essa energia. Nem a primeira aula começou."
     },
     "classroom_dain_5_d": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*Fala no automático, mas o canto da boca tá erguido.*"
     },
     "classroom_yuna_1": {
@@ -233,7 +233,7 @@
         "text": "*Alguém na fileira da frente sussurrou. '…Não fala com ela, dá medo.' Yuna virou uma página. Só um pouco mais devagar que antes.*"
     },
     "classroom_seat_1": {
-        "name": "{name}",
+        "name": "Professora",
         "text": "*A professora aponta pra uma carteira vazia.*"
     },
     "classroom_seat_2": {

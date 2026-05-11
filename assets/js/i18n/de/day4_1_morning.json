@@ -100,7 +100,7 @@
         "text": "Dann essen wir zuerst. *leise murmelnd* Als Lehrerin muss ich prüfen, ob ein Schüler gegessen hat. — Für dich aber Saft."
     },
     "hidden_homeroom_d4_5_d": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Auch nachdem sie ausgesprochen hat, faltet die Klassenlehrerin weiter an der Ecke des Becherhalters.*"
     },
     "hidden_homeroom_d4_choice": {
@@ -124,7 +124,7 @@
         "text": "Am Ende muss man es jemandem zeigen, damit es fertig wird. Wenn es niemanden gibt, der es liest, hört man immer wieder auf."
     },
     "hidden_homeroom_d4_cafe_choice": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Klassenlehrerin stellt ihre Kaffeetasse ab. Ihr Körper neigt sich leicht zum Fenster.*",
         "choices": [
             "Der Roman — wer ist die Hauptfigur?",
@@ -240,7 +240,7 @@
         "text": "Ach, du bist gekommen."
     },
     "hidden_nurse_d4_morning_4": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Der Gesundheitslehrer sagt: „Oh, ich bin hier“, nimmt das Stethoskop und legt es wieder auf den Schreibtisch.*"
     },
     "hidden_nurse_d4_morning_5": {
@@ -252,7 +252,7 @@
         "text": "Beratung... *sie dreht ihren Stuhl* Ja. Die letzte Beratung."
     },
     "hidden_nurse_d4_morning_7": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester tut so, als würde sie Papiere sortieren — aber dieselbe Seite wird zum dritten Mal umgeblättert.*"
     },
     "hidden_nurse_d4_morning_8": {
@@ -264,7 +264,7 @@
         "text": "Was denn?"
     },
     "hidden_nurse_d4_morning_10": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester berührt ihre Brille. Die Augen dahinter sind größer als erwartet. Augen, die sonst hinter ihrer Scherzhaftigkeit verborgen sind.*"
     },
     "hidden_nurse_d4_morning_11": {
@@ -292,7 +292,7 @@
         "text": "...Wirklich?"
     },
     "hidden_nurse_d4_morning_13": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester rückt ihre Brille zurecht. Ihre Fingerspitze hält kurz unter dem Glas inne.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
@@ -374,7 +374,7 @@
         "text": "*Einen Schluck Kaffee trinkend* Ehrlich gesagt? Ein bisschen."
     },
     "hidden_homeroom_d4_cafe_1_d": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Lehrerin sagt es wie einen Scherz und berührt die Kaffeetasse. Zwei kreisförmige Wasserringe überlappen sich auf dem Untersetzer.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
@@ -382,7 +382,7 @@
         "text": "Haben Sie gestern weiter am Manuskript geschrieben?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Sie stellt ihre Kaffeetasse ab. Hält kurz inne, als ob sie nachdenkt.*"
     },
     "hidden_homeroom_d4_cafe_2_b": {
@@ -402,15 +402,15 @@
         "text": "Weißt du, was das Schwierigste beim Schreiben eines Romans ist?"
     },
     "hidden_homeroom_d4_cafe_6_b": {
-        "name": "{name}",
-        "text": "*Sie sieht mich an. Augen, die nicht trocken sind.* *Ich verließ das Café.*"
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin sieht {name} an. Ihre Augen wirken nicht mehr trocken und distanziert.* *Die Cafétür schließt sich langsam hinter ihnen.*"
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
         "text": "*Das Manuskriptpapier gestern im leeren Klassenzimmer fällt mir ein. Heute bin ich außerhalb der Schule und die Ecken des Getränkehalters klappen ständig.*"
     },
     "hidden_homeroom_d4_cafe_5_b": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Die Klassenlehrerin lächelt kurz. Die Hand am Becherhalter hält inne.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -434,12 +434,12 @@
         "text": "...Stimmt. Das darf nicht sein."
     },
     "hidden_homeroom_d4_cafe_5_h": {
-        "name": "{name}",
+        "name": "Klassenlehrerin",
         "text": "*Sie zieht die Hand aus der Tasche. Ihre Fingerspitzen verharren einen Moment in der Luft. Eine Geste aus Gewohnheit.*"
     },
     "hidden_homeroom_d4_decline_b": {
-        "name": "{name}",
-        "text": "*Die Lehrerin dreht sich um. Ihre Schultern sinken ein wenig. Auf dem Heimweg folgt mir mein Gesicht, das sich in der Glastür des Cafés spiegelt.*"
+        "name": "Klassenlehrerin",
+        "text": "*Die Klassenlehrerin dreht sich um. Ihre Schultern sinken leicht. In der Glastür des Cafés spiegelt sich ihr Rücken klein wider.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Schulkrankenschwester",
@@ -478,7 +478,7 @@
         "text": "Also das Burnout..."
     },
     "hidden_nurse_d4_4_c": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester hält inne. Legt die Papiere hin.*"
     },
     "hidden_nurse_d4_4_d": {
@@ -519,7 +519,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester schaut einen Moment hierher.* ...Doch, das war was."
+        "text": "*Die Schulkrankenschwester sieht kurz zu {name} hinüber.* ...Es ist nichts."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -534,7 +534,7 @@
         "text": "Das ist ewig her. *Lacht* Ich bin auch nicht mehr die Jüngste."
     },
     "hidden_nurse_d4_meal_2_b": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester hält kurz inne. Legt ihre Stäbchen ab.*"
     },
     "hidden_nurse_d4_meal_3_b": {
@@ -554,7 +554,7 @@
         "text": "{name}."
     },
     "hidden_nurse_d4_meal_4_b": {
-        "name": "{name}",
+        "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester drückt den Deckel des Bechernudels herunter. Ein Stäbchen rutscht leicht schief.*"
     },
     "morning4_manuscript_check": {},

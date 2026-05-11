@@ -25,7 +25,7 @@
         "text": "This IS normal! You're the one running on empty!"
     },
     "morning2_dain_6": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain's voice fills the classroom before morning homeroom even starts.*"
     },
     "morning2_note_1": {
@@ -53,7 +53,7 @@
         "text": "It's patrol. — And an attendance check."
     },
     "morning2_minsu_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Just before Seoyeon turns the corner, her steps slow. The clipboard presses closer against her arm.*"
     },
     "morning2_minsu_1b": {
@@ -105,8 +105,8 @@
         "text": "Hold on."
     },
     "morning2_seo_dust_3": {
-        "name": "{name}",
-        "text": "*Seoyeon's hand brushes my shoulder. There's no hesitation in the way she dusts it off.*"
+        "name": "Seoyeon",
+        "text": "*Seoyeon's hand touches {name}'s shoulder. There is no hesitation in the motion as she brushes off the dust.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -245,11 +245,11 @@
         "text": "Hey! Yesterday was fun, let's hang again today!"
     },
     "morning2_greet_dain_2": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain slaps my shoulder from behind.*"
     },
     "morning2_greet_dain_others": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon passes by, flipping her clipboard.*"
     },
     "morning2_greet_dain_others_seo": {
@@ -309,7 +309,7 @@
         "text": "*A brief pause* ...A bit of everything. Mostly — novels."
     },
     "hidden_homeroom_d2_3_c": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher's gaze lingers for a moment on the open drawer.*"
     },
     "hidden_homeroom_d2_3_d": {
@@ -325,8 +325,8 @@
         "text": "Writing's... not really my thing."
     },
     "hidden_homeroom_d2_3_g": {
-        "name": "{name}",
-        "text": "*The teacher hesitates briefly. Her gaze drifts toward the drawer — then snaps right back.*"
+        "name": "Homeroom Teacher",
+        "text": "*The teacher's gaze flicks toward the drawer, then comes right back.*"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
@@ -349,11 +349,11 @@
         "text": "*Setting down her coffee* ...Anyway. Nothing out of the ordinary on your end."
     },
     "hidden_homeroom_d2_8_f": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The homeroom teacher covers her mouth with the coffee cup and turns the saucer twice in the same spot.*"
     },
     "hidden_homeroom_d2_11_b": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher's voice sinks low into the inside of the coffee cup.*"
     }
 }

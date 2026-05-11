@@ -16,7 +16,7 @@
         "text": "*The rooftop. The sunset paints the school. A place that became familiar in just a few days.*"
     },
     "confess_seo_4": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon is leaning against the railing. The wind catches her hair. — She tucks it back with her pinky. That habit.*"
     },
     "confess_seo_4_b": {
@@ -36,7 +36,7 @@
         ]
     },
     "confess_seo_yes_1": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon turns around. The wind whips through her hair.*"
     },
     "confess_seo_yes_2": {
@@ -64,7 +64,7 @@
         "text": ""
     },
     "confess_seo_yes_8": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon doesn’t say anything. My lips are trembling. There is no clipboard or student council president armband.*"
     },
     "confess_seo_yes_9": {
@@ -80,11 +80,11 @@
         "text": "It took me forever to bring this up."
     },
     "confess_seo_yes_11_b": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon's hand moves.*"
     },
     "confess_seo_yes_12": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon holds out her pinky. The same pinky I saw on the first day. — Back then I thought it was just a habit, but this is Seoyeon's way of making a promise.*"
     },
     "confess_seo_no_1": {
@@ -96,7 +96,7 @@
         "text": "*She said the same thing on the first day. Seoyeon's finger stops at the edge of the clipboard.*"
     },
     "confess_seo_no_3": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "*Seoyeon smiles. A practiced smile. — She turns and walks away. On the third step, she stops.*"
     },
     "confess_seo_no_4": {
@@ -124,8 +124,8 @@
         "text": "*The library annex. Sunset seeps through the windows. A place that became familiar in just a few days.*"
     },
     "confess_yuna_4": {
-        "name": "{name}",
-        "text": "*Yuna is sitting on the sofa, looking at me. As if she'd been waiting.*"
+        "name": "Yuna",
+        "text": "*Yuna sits on the sofa and looks at {name}. Her gaze seems to have been waiting.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
@@ -176,8 +176,8 @@
         "text": ""
     },
     "confess_yuna_yes_8": {
-        "name": "{name}",
-        "text": "*Yuna clenches her sleeves tightly without looking in my direction.*"
+        "name": "Yuna",
+        "text": "*Yuna cannot look toward {name} and grips her sleeve tightly.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
@@ -200,11 +200,11 @@
         "text": "...This place is really nice."
     },
     "confess_yuna_no_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna nods. She slips the bookmark between the pages, then pushes it in deeper.*"
     },
     "confess_yuna_no_3": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna picks up a book. She's looking at the cover, but she's not reading.*"
     },
     "confess_yuna_no_4": {
@@ -232,7 +232,7 @@
         "text": "*The gym. Empty. Sunset seeps through the windows onto the court. A place where so many memories were made in just a few days.*"
     },
     "confess_dain_4": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain is holding a ball. Casually. — But her fingers are white. She's gripping it tight.*"
     },
     "confess_dain_5": {
@@ -240,7 +240,7 @@
         "text": ""
     },
     "confess_dain_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain's ball bounces once. The hand that would've caught it normally stops in midair a beat too late.*",
         "choices": [
             "Dain. Put the ball down.",
@@ -280,7 +280,7 @@
         "text": ""
     },
     "confess_dain_yes_8": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain freezes. The laughter is gone from her face. Only her eyes slowly fill with tears. She covers her face with both hands.*"
     },
     "confess_dain_yes_8_b": {
@@ -300,7 +300,7 @@
         "text": "I like you too. ...A lot."
     },
     "confess_dain_yes_10_b": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain hugs the ball again. The backs of her hands tense.*"
     },
     "confess_dain_no_1": {
@@ -312,7 +312,7 @@
         "text": "*I can set a ball for her, but I can't say three words. Pathetic.*"
     },
     "confess_dain_no_3": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain bounces a volleyball. Once. Twice. — On the third bounce, she stops.*"
     },
     "confess_dain_no_4": {

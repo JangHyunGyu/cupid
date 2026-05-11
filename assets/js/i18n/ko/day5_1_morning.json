@@ -98,7 +98,7 @@
         "text": "*행사 준비 시간. 복도를 걷는데 — 빈 교실 앞을 지나간다. 문이 열려 있다.*"
     },
     "hidden_homeroom_d5_1": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 교탁에 앉아 있다. — 원고가 아니라, 봉투를 들고 있다. 갈색 봉투.*"
     },
     "hidden_homeroom_d5_1_b": {
@@ -142,7 +142,7 @@
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 멈춘다. 표정은 금방 돌아왔지만, 봉투가 손 안에서 조금 구겨졌다.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
@@ -158,7 +158,7 @@
         "text": "...그래."
     },
     "hidden_homeroom_d5_praise_trap_5": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 손을 뻗는다. 원고를 가져간다. 천천히. 다시 봉투에 넣는다.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
@@ -190,7 +190,7 @@
         "text": "*교실 문을 닫고 나왔다. 봉투는 담임 책상 위에 그대로 있다. 겉면에 붙은 반송 스티커 자국이 손톱만큼 남아 있었다.*"
     },
     "hidden_homeroom_d5_correct_1": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 멈춘다. 종이 끝이 손 안에서 조금 휘어진다.*"
     },
     "hidden_homeroom_d5_correct_2": {
@@ -218,7 +218,7 @@
         "text": "마지막 장만 보면 손이 멈춰. 몇 년째 그래."
     },
     "hidden_homeroom_d5_correct_8": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 말끝을 삼킨다. 비어 있는 마지막 줄만큼 교실이 조용해진다.*"
     },
     "hidden_homeroom_d5_correct_9": {
@@ -270,7 +270,7 @@
         "text": "그 말, 이제 안 하셔도 될 것 같아요."
     },
     "hidden_homeroom_d5_6_g": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 이번엔 출석부로 얼굴을 가리지 않는다.*"
     },
     "hidden_homeroom_d5_6_h": {
@@ -278,7 +278,7 @@
         "text": "...그 말을 학생한테 듣는 날이 올 줄은 몰랐다."
     },
     "hidden_homeroom_d5_6_i": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 원고 봉투의 접힌 모서리를 펴준다.*"
     },
     "hidden_homeroom_d5_6_j": {
@@ -306,7 +306,7 @@
         "text": "*작게 웃으며* ...맞아. 한 줄이라도 써 줘."
     },
     "hidden_homeroom_d5_6_p": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 문 앞에서 한 번 멈춘다. 클립보드 끝을 손가락으로 두 번 눌렀다가 놓는다.*"
     },
     "hidden_homeroom_d5_6_q": {
@@ -314,7 +314,7 @@
         "text": "{name}."
     },
     "hidden_homeroom_d5_6_r": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 멈춘다. 클립보드를 꽉 잡는다. — 그리고 천천히 고개를 돌린다.*"
     },
     "hidden_homeroom_d5_6_s": {
@@ -322,7 +322,7 @@
         "text": "...졸업하면. *목소리가 갈라진다.* 그래. 졸업하면."
     },
     "hidden_homeroom_d5_6_t": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임은 같은 말을 다시 삼킨다. 클립보드 끝이 문틀에 가볍게 닿는다.*"
     },
     "hidden_homeroom_d5_7": {
@@ -338,7 +338,7 @@
         "text": "...알아. 지금은 안 되는 말인 거. 그래도 오늘은 여기까지 말할게."
     },
     "hidden_homeroom_d5_8": {
-        "name": "{name}",
+        "name": "담임선생님",
         "text": "*담임이 돌아선다. 긴 머리카락이 흔들리고, 클립보드 끝이 팔꿈치에 눌린다.*"
     },
     "hidden_homeroom_d5_freetalk": {
@@ -374,7 +374,7 @@
         "text": "*'아프면 와.' 보건선생님은 말하고 나서 종이컵 두 개를 든 손을 바꿔 쥔다.*"
     },
     "hidden_nurse_d5_2_b": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 문을 열고 나온다. 물러설 틈도 없이 마주쳤다.*"
     },
     "hidden_nurse_d5_2_c": {
@@ -386,7 +386,7 @@
         "text": "안 아파도 가면 안 돼요?"
     },
     "hidden_nurse_d5_3_b": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님의 웃음이 먼저 멎는다.*"
     },
     "hidden_nurse_d5_3_c": {
@@ -402,7 +402,7 @@
         "text": "*다시 웃으며* 그건 졸업하고 물어봐. — 그때는 대답해줄게."
     },
     "hidden_nurse_d5_3_f": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님은 밴드 상자 뚜껑을 닫았다가 다시 연다.*"
     },
     "hidden_nurse_d5_3_g": {
@@ -410,7 +410,7 @@
         "text": "자, 가 봐. 행사 빠지면 안 되지."
     },
     "hidden_nurse_d5_3_h": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 보건실 안으로 들어가려다 — 멈춘다.*"
     },
     "hidden_nurse_d5_3_i": {
@@ -458,7 +458,7 @@
         "text": "*웃음이 멎는다.* ...그건."
     },
     "hidden_nurse_d5_choice_b_b": {
-        "name": "{name}",
+        "name": "보건선생님",
         "text": "*보건선생님이 웃다가 멈춘다. 안경을 고쳐 쓰는 손이 조금 늦다.*"
     },
     "hidden_nurse_d5_choice_b_c": {
@@ -486,8 +486,8 @@
         "text": "알아. 그냥 핑계가 필요했어."
     },
     "hidden_nurse_d5_6_b": {
-        "name": "{name}",
-        "text": "*보건선생님이 밴드를 꺼내 내 손등에 붙인다. 천천히. 밴드 끝에 작은 글씨가 적혀 있다.*"
+        "name": "보건선생님",
+        "text": "*보건선생님이 밴드를 꺼내 {name}의 손등에 붙인다. 움직임은 천천히 이어지고, 밴드 끝에 작은 글씨가 적혀 있다.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",

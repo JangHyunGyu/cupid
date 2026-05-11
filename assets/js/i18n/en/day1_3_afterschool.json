@@ -52,7 +52,7 @@
         "text": "*Passing the library entrance, I see a girl with red eyes walking while reading. Her tattooed arm carefully supports the spine of the book.*"
     },
     "after_miss_yuna_2": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna spreads the corner of the bookmark with her thumb and holds it up to the light. No crease.*"
     },
     "after_miss_yuna_3": {
@@ -121,8 +121,8 @@
         "text": "You're not in trouble. — Just checking in on the new kid. How's it going so far?"
     },
     "after_hidden_homeroom_choice": {
-        "name": "{name}",
-        "text": "*The teacher lowers the clipboard and looks at my face.*",
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher lowers the clipboard and looks at {name}'s face.*",
         "choices": [
             "I'm okay. It's a better school than I expected.",
             "Honestly? It's a lot."
@@ -137,7 +137,7 @@
         "text": "Better than expected, huh. — Weirdly reassuring to hear."
     },
     "after_homeroom_ok_4": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The homeroom teacher looks down at the documents, but the end of the clipboard no longer moves.*"
     },
     "after_homeroom_ok_5": {
@@ -145,7 +145,7 @@
         "text": "Being perfect on day one will burn you out. Take it easy. — Now get going."
     },
     "after_homeroom_ok_6": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The homeroom teacher turns to the desk again. Say hello briefly and close the office door. The story of vending machine juice lingers in my ears.*"
     },
     "after_homeroom_honest_1": {
@@ -201,7 +201,7 @@
         "text": "If you can't settle in, I'll come drag you back myself."
     },
     "after_homeroom_honest_10": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher disappears down the end of the hallway. Her long hair sways, and the edge of the attendance book sticks out from inside her arms.*"
     },
     "after_homeroom_freetalk": {
@@ -243,7 +243,7 @@
         "text": "You're the transfer kid, right? First day and already in the nurse's office. Rough one, huh? Let me see."
     },
     "after_nurse_enter_5": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse walks over. Her hand lands on my forehead.*"
     },
     "after_nurse_enter_6": {
@@ -305,7 +305,7 @@
         "text": "...The rooftop? Just the two of you?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "{name}",
+        "name": "Dain",
         "text": "*Dain's voice went up slightly.*",
         "choices": [
             "I ate on the rooftop with the president. (Honest)",
@@ -365,7 +365,7 @@
         "text": "*I pick it up and hold it out. Yuna stops and takes the bookmark.*"
     },
     "after_miss_yuna_3_b": {
-        "name": "{name}",
+        "name": "Yuna",
         "text": "*Yuna turns away without a word.*"
     },
     "after_hidden_homeroom_3_b": {
@@ -377,24 +377,24 @@
         "text": "Oh. So that's what this is about? — Glad you came. Sit for a minute."
     },
     "after_homeroom_ok_b": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher pushes the papers on the desk to one side. She rests her hand on the back of the chair and pauses to choose her words.*"
     },
     "after_homeroom_honest_3_b": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*Something similar? The teacher's hand briefly hides behind the clipboard.*"
     },
     "after_homeroom_honest_6_b": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher only looks at the corner of the attendance book.*"
     },
     "after_homeroom_honest_choice2a_b": {
-        "name": "{name}",
+        "name": "Homeroom Teacher",
         "text": "*The teacher presses the corner of the attendance book once.*"
     },
     "after_homeroom_honest_choice2b_b": {
-        "name": "{name}",
-        "text": "*The teacher gives a small laugh and closes the attendance book. She reaches the threshold, then calls me again.*"
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher closes the attendance book. After reaching the threshold, she calls {name} again.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
@@ -417,7 +417,7 @@
         "text": "Your uniform's brand-new and stiff. Plus that faint starch smell. *Sniff sniff* Oh — cherry blossoms in there too. A romantic transfer student, huh."
     },
     "after_nurse_enter_4_d": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse gets up and comes closer. When the tip of the thermometer touches the back of my hand, my fingers stiffen slightly.*"
     },
     "after_nurse_enter_6_b": {
@@ -461,11 +461,11 @@
         "text": "Hospital?"
     },
     "after_nurse_enter_9_e": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse pauses for a moment. Then smiles.*"
     },
     "after_nurse_enter_10_b": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse closes the drawer. A light-green notebook inside is briefly visible, then gone. Ten minutes have passed.*"
     },
     "after_nurse_enter_10_c": {
@@ -481,11 +481,11 @@
         "text": "*Narrowing her eyes* If you're feeling bad and keep pushing through it, of course I'm going to worry. That's literally why I'm here."
     },
     "after_nurse_enter_11_d": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse sets the water cup on the desk. The bottom of the cup gives a low sound.*"
     },
     "after_nurse_enter_11_e": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse gives a small shrug, and the easy smile slips back into place.*"
     },
     "after_nurse_enter_11_f": {
@@ -493,7 +493,7 @@
         "text": "What I said earlier — thank you for your concern. I never thought I would hear those words from a patient."
     },
     "after_nurse_enter_11_g": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The health teacher puts down the water cup and starts laughing.*"
     },
     "after_nurse_enter_11_h": {
@@ -501,7 +501,7 @@
         "text": "You said it was quiet earlier, right? — I still remember that."
     },
     "after_nurse_enter_11_i": {
-        "name": "{name}",
+        "name": "School Nurse",
         "text": "*The nurse folds the edge of the curtain once with her finger.*"
     },
     "after_nurse_enter_11_j": {

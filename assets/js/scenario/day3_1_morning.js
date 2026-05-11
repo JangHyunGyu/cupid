@@ -273,7 +273,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "morning3_react_yuna_1_b": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_pout.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "morning3_react_yuna_2"
     },
     "morning3_react_yuna_2": {
@@ -283,7 +283,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "morning3_react_yuna_2_b": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/seyoun_normal.png",
         "next": "morning3_date_intro"
     },
     "morning3_react_dain_1": {
