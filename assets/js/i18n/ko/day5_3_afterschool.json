@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "{name}",
-        "text": "*서연이 돌아서며 손을 흔든다. 뒤돌아보지 않는다. 손목의 리본만 복도 끝에서 잠깐 흔들린다.*"
+        "text": "*서연이 돌아서며 손을 흔든다. 뒤돌아보지 않는다. 손목의 리본만 복도 끝에서 흔들린다.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -87,11 +87,11 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "다인",
-        "text": "...잘 해. 진짜로."
+        "text": "...잘해. 이번엔."
     },
     "after5_farewell_dain_4_d": {
         "name": "{name}",
-        "text": "*느낌표가 살아 있다. 다인은 배구공을 한 번 더 높이 던지고 받는다.*"
+        "text": "*다인은 배구공을 한 번 더 높이 던지고 받는다. 받는 손끝이 조금 늦다.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*잠깐 침묵. 바람이 머리카락을 날린다. 넘기지 않는다.*"
+        "text": "*바람이 머리카락을 날린다. 서연은 이번엔 넘기지 않는다.*"
     },
     "after5_last_chance_2_g": {
         "name": "서연",
@@ -174,7 +174,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "{name}",
-        "text": "*서연이 내민 손끝이 눈앞에 머문다. 지금 말하지 않으면, 또 놓친다.*"
+        "text": "*서연이 내민 손끝이 눈앞에 머문다. 대답을 기다리는 손이다.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -195,15 +195,15 @@
     },
     "after5_last_chance_2_m": {
         "name": "다인",
-        "text": "야, 진짜?"
+        "text": "야, 너..."
     },
     "after5_last_chance_2_n": {
         "name": "{name}",
-        "text": "*눈이 커진다. 1초. 2초.*"
+        "text": "*다인이 그대로 굳는다. 손에 든 공이 천천히 내려간다.*"
     },
     "after5_last_chance_2_o": {
         "name": "다인",
-        "text": "...진짜?"
+        "text": "...돌아온 거야?"
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
@@ -268,7 +268,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*손바닥 안에서 핸드폰 모서리가 눌린다.*",
+        "text": "*손바닥 안에서 핸드폰이 눌린다.*",
         "choices": [
             "지금 말한다",
             "...아무 말도 하지 못했다"
@@ -294,7 +294,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "다인",
-        "text": "*학교를 나서며.* 야, 진짜? ...진짜? 나 기다리긴 했어. 근데 기다렸다고 바로 웃으면 억울하지. 이번엔 끝까지 말해."
+        "text": "*학교를 나서며.* 야, 너... 나 기다리긴 했어. 근데 기다렸다고 바로 웃으면 억울하지. 이번엔 끝까지 말해."
     },
     "after5_confess_react_dain_low": {
         "name": "다인",
