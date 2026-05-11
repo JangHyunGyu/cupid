@@ -297,11 +297,11 @@
     },
     "confess_dain_yes_10": {
         "name": "다인",
-        "text": "나도 좋아해. 엄청."
+        "text": "나도 좋아해. ...많이."
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'엄청'. 짧은 대답인데, 다인의 손이 공을 더 세게 끌어안는다.*"
+        "text": "*다인이 공을 다시 끌어안는다. 손등에 힘이 들어간다.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

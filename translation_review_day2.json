@@ -4639,7 +4639,7 @@
     "lunch2_yuna_c2_9": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_yuna_c2_9",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*두 문장. 유나치고는 긴 말이다. — 그리고 그 두 문장 안에 전부 담...",
+      "_ko_text_preview": "*유나가 책장으로 시선을 돌린다. 열린 페이지 위로 햇빛이 조금 더 길어진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_yuna_c2_9",

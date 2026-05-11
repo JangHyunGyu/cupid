@@ -21,7 +21,7 @@
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*‘Tu peux revenir.’ — Pour elle, c’est la même chose que ‘reviens.’*"
+        "text": "*Je fixe le message un long moment, puis j'éteins l'écran. La pièce s'assombrit un peu.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Elle sourit. Elle me sourit dans la photo de groupe. Comme pour demander de l'aide. Je m'étais dit que cette fois je ne détournerais pas les yeux. Que dans ce lycée je ne resterais pas silencieux.*"
+        "text": "*Sojeong sourit sur la photo de groupe. Impossible de passer à la suivante. De la sueur perle au bout de mon pouce.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",

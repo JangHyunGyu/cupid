@@ -297,11 +297,11 @@
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "Eu também gosto. Muito."
+        "text": "Eu também gosto de você. ...Muito."
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'Extremamente'. A resposta curta é que as mãos de Dain seguram a bola com mais força.*"
+        "text": "*Dain abraça a bola de novo. As costas das mãos ficam tensas.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

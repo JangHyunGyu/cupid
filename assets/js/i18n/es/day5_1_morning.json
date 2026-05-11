@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Son las mismas palabras de ayer. Hoy, antes de contestar, toco primero la esquina del sobre.*"
+        "text": "*Antes de contestar, toco primero la esquina del sobre.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_t": {
         "name": "{name}",
-        "text": "*'Cuando te gradúes' — dos veces. Una es permiso, la otra es espera.*"
+        "text": "*La profesora vuelve a tragarse las mismas palabras. El borde del portapapeles toca suavemente el marco de la puerta.*"
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Profesora",
-        "text": "...Esto es cruzar la línea. Pero es la última vez. Solo una vez más."
+        "text": "...Lo sé. No debería decir esto ahora. Pero hoy diré al menos esto."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",

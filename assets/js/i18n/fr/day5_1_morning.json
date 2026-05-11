@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Les mêmes mots qu'hier. Aujourd'hui, avant de répondre, je touche d'abord le coin de l'enveloppe.*"
+        "text": "*Avant de répondre, je touche d'abord le coin de l'enveloppe.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_t": {
         "name": "{name}",
-        "text": "*« Après ton diplôme » — deux fois. La première comme permission, la seconde comme attente.*"
+        "text": "*La prof ravale encore les mêmes mots. Le bord du porte-bloc touche doucement l'encadrement de la porte.*"
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professeure principale",
-        "text": "...Je dépasse les bornes. Mais c'est la dernière fois. Juste une fois de plus."
+        "text": "...Je sais. Je ne devrais pas dire ça maintenant. Mais aujourd'hui, je dirai au moins ça."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",

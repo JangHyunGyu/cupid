@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'De verdad.' Detrás de los lentes de la enfermera, sus ojos están húmedos. La broma tarda un segundo de más en volver.*"
+        "text": "*La enfermera se acomoda las gafas. La punta del dedo se detiene un instante bajo la lente.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermera",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*'De verdad.' La enfermera aparta la mirada un momento. Los palillos sobre la tapa del ramen instantáneo se inclinan un poco.*"
+        "text": "*La enfermera presiona la tapa del vaso de ramen. Un palillo queda un poco torcido.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

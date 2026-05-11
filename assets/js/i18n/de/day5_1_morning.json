@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Dieselben Worte wie gestern. Heute berühre ich vor der Antwort zuerst die Ecke des Umschlags.*"
+        "text": "*Vor der Antwort berühre ich zuerst die Ecke des Umschlags.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_t": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss' — zweimal. Einmal als Erlaubnis, einmal als Sehnsucht.*"
+        "text": "*Die Lehrerin schluckt dieselben Worte noch einmal hinunter. Die Kante des Klemmbretts tippt leicht gegen den Türrahmen.*"
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Klassenlehrerin",
-        "text": "...Damit überschreite ich eine Grenze. Aber es ist das letzte Mal. Nur noch einmal."
+        "text": "...Ich weiß. Das sollte ich jetzt nicht sagen. Aber heute sage ich wenigstens so viel."
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",

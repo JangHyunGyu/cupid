@@ -21,7 +21,7 @@
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*'Puedes volver.' — Para ella, eso es lo mismo que decir 'ven'.*"
+        "text": "*Miro el mensaje durante un buen rato y luego apago la pantalla. La habitación se oscurece un poco.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Está sonriendo. Me sonríe desde la foto de grupo. Como pidiendo ayuda. Esta vez no voy a apartar la mirada. En este colegio no me voy a callar.*"
+        "text": "*Sojeong sonríe en la foto de grupo. No puedo pasar la pantalla. Se me humedece la punta del pulgar.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",

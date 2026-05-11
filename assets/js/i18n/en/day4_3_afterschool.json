@@ -297,11 +297,11 @@
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "I like you too. So much."
+        "text": "I like you too. ...A lot."
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'Extremely'. The short answer is that Dain's hands grip the ball tighter.*"
+        "text": "*Dain hugs the ball again. The backs of her hands tense.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

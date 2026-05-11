@@ -2363,7 +2363,7 @@
     "hidden_nurse_d4_morning_13": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_morning_13",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'진짜로'. — 오늘은 내가 먼저 들었다. 보건선생님의 안경 너머로 눈...",
+      "_ko_text_preview": "*보건선생님이 안경을 고쳐 쓴다. 손끝이 렌즈 아래에서 잠깐 멈춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_morning_13",
@@ -4673,7 +4673,7 @@
     "hidden_nurse_d4_meal_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_meal_4_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'진짜로'가 붙었다. — 이 사람이 '진짜로'를 붙이면, 그 앞의 말이...",
+      "_ko_text_preview": "*보건선생님이 컵라면 뚜껑을 누른다. 젓가락 한 짝이 조금 비뚤어진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_meal_4_ins",
@@ -10184,7 +10184,7 @@
     "confess_dain_yes_10": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_10",
       "_ko_name": "다인",
-      "_ko_text_preview": "나도 좋아해. 엄청.",
+      "_ko_text_preview": "나도 좋아해. ...많이.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_10",
@@ -10220,7 +10220,7 @@
     "confess_dain_yes_10_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_10_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'엄청'. — 다인은 늘 이렇다. 짧고 솔직하다. 그래서 믿긴다.*",
+      "_ko_text_preview": "*다인이 공을 다시 끌어안는다. 손등에 힘이 들어간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_10_ins",
@@ -12287,7 +12287,7 @@
     "wall_seo_after_line_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_after_line_5",
       "_ko_name": "서연",
-      "_ko_text_preview": "8년 만에 처음으로, 연습 안 한 얼굴이 괜찮은 것 같아.",
+      "_ko_text_preview": "연습 안 한 얼굴로 있어도, 오늘은 괜찮네.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_after_line_5",

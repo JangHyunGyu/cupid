@@ -293,7 +293,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "{name}",
-        "text": "*'Wirklich.' Hinter der Brille der Krankenschwester sind ihre Augen feucht. Die Verspieltheit braucht einen Takt zu lange, um zurückzukehren.*"
+        "text": "*Die Krankenschwester rückt ihre Brille zurecht. Ihre Fingerspitze hält kurz unter dem Glas inne.*"
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Schulkrankenschwester",
@@ -555,7 +555,7 @@
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "{name}",
-        "text": "*'Wirklich.' Die Krankenschwester weicht dem Blick kurz aus. Die Stäbchen auf dem Deckel der Instantnudeln kippen leicht schief.*"
+        "text": "*Die Krankenschwester drückt den Deckel des Bechernudels herunter. Ein Stäbchen rutscht leicht schief.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_skip": {

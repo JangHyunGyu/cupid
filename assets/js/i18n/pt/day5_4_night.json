@@ -6,7 +6,7 @@
     "ending_hidden_commit_check": {},
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*No fim, não é a voz de uma pessoa só que ficou. O envelope que recebi na sala e o band-aid no dorso da minha mão voltam juntos à cabeça.*"
+        "text": "*Paro diante do portão da escola. O envelope aperta contra o peito, e o curativo no dorso da mão prende na manga.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
@@ -135,7 +135,7 @@
     },
     "hidden_true_homeroom_4": {
         "name": "Professora",
-        "text": "...Isso. Você não disse 'professora.' Pela primeira vez."
+        "text": "...Agora há pouco, você não me chamou de professora."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
@@ -199,7 +199,7 @@
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*Uma última vez. E o hábito se desfaz. — Sete anos de 'professora' acabaram. Chegou o dia de chamar pelo nome.*"
+        "text": "*O nome dela fica mais uma vez na ponta da língua. Ela sorri com o rosto virado.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Professora",
@@ -280,7 +280,7 @@
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*O caderno verde-claro foi pro fundo da gaveta. Na última página, em vez de uma carta, só uma linha. 'Yujin, agora eu tô bem.' — Um ponto final depois de três anos.*"
+        "text": "*O caderno verde-claro foi para o fundo da gaveta. No fim da última página, resta uma linha: 'Yujin, agora eu estou bem.'*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -400,7 +400,7 @@
     },
     "hidden_good_nurse_2": {
         "name": "Enfermeira",
-        "text": "Vitamina. — Quando entrar na faculdade, cuida da saúde. ...Interesse médico. Dessa vez, de verdade."
+        "text": "Vitaminas. — Cuida bem da saúde quando entrar na faculdade. ...Vamos chamar de interesse médico."
     },
     "hidden_good_nurse_2_b": {
         "name": "{name}",
@@ -408,11 +408,11 @@
     },
     "hidden_good_nurse_2_c": {
         "name": "Enfermeira",
-        "text": "*Travando um instante.* ...É. Interesse médico. *Baixinho.* Dessa vez, de verdade."
+        "text": "*Para por um instante.* ...É. Interesse médico. *Baixinho.* Vamos deixar assim."
     },
     "hidden_good_nurse_2_d": {
         "name": "{name}",
-        "text": "*'Desta vez de verdade.' A enfermeira não consegue colocar um sorriso no final de suas palavras.*"
+        "text": "*A enfermeira esfrega o rótulo do frasco com o polegar. O sorriso vem um pouco atrasado.*"
     },
     "hidden_good_nurse_3": {
         "name": "{name}",
@@ -424,7 +424,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*A minha mão trava segurando o frasco. Me vem à cabeça o caderno verde-claro na gaveta da enfermaria. Que um dia ela consiga fechar a última página daquela carta.*"
+        "text": "*A mão que segura o frasco para. A gaveta onde ficava o caderno verde-claro está fechada.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",
@@ -572,7 +572,7 @@
     },
     "perfect_yuna_4": {
         "name": "{name}",
-        "text": "*Última frase do conto: 'Existia alguém que não sumia. Graças a essa pessoa, eu também decidi não sumir.'*"
+        "text": "*A última frase do romance: 'Havia alguém que não desaparecia.' Logo abaixo, a tinta está um pouco borrada.*"
     },
     "perfect_yuna_5": {
         "name": "{name}",
@@ -736,11 +736,11 @@
     },
     "bitter_dain_2": {
         "name": "Dain",
-        "text": "Foi divertido, pra valer! ...Mas acho que ficou só em diversão. Isso me deixa meio triste."
+        "text": "Foi divertido! ...Mas acho que foi só divertido. É isso que fica meio estranho."
     },
     "bitter_dain_3": {
         "name": "{name}",
-        "text": "*Saí da academia. Está chovendo. Mesmo depois que a porta se fechou, o último ‘sinto muito’ permaneceu em meus ouvidos.*"
+        "text": "*Saio do ginásio. Está chovendo. Atrás da porta fechada, uma bola quica uma vez.*"
     },
     "bitter_dain_3_b": {
         "name": "{name}",
@@ -893,7 +893,7 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Mesmo depois de dar alguns passos, as últimas palavras permanecem na tela do telefone. \"...Obrigado. Sério. Mas ainda acho que 5 dias é muito pouco.\"*"
+        "text": "*Mesmo depois de dar vários passos, não consigo abaixar o celular. A última frase fica ao lado do visto.*"
     },
     "confess_fail_2": {
         "name": "{name}",
@@ -1037,7 +1037,7 @@
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Saindo juntos pelo portão, senti que o último saque já tinha vindo. Agora é a minha vez de receber.*"
+        "text": "*Saímos juntos pelo portão da escola. Dain solta o pulso. Desta vez, nenhuma bola vem na minha direção.*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",

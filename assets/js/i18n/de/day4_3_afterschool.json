@@ -297,11 +297,11 @@
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "Ich mag dich auch. Total."
+        "text": "Ich mag dich auch. ...Sehr."
     },
     "confess_dain_yes_10_b": {
         "name": "{name}",
-        "text": "*'Äußerst'. Die kurze Antwort lautet: Dains Hände halten den Ball fester.*"
+        "text": "*Dain drückt den Ball wieder an sich. Ihre Handrücken spannen sich an.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
