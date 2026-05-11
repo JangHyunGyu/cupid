@@ -125,7 +125,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*A personal message buried in a class announcement? — I can't keep the smile off my face.*"
+        "text": "*I read the notice once more. The corner of my mouth lifts, so I turn the phone face down.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*There's a heart after 'medical interest.' Until I turn off the screen, I keep looking at that heart one more time.*"
+        "text": "*The heart at the end of the sentence stays in the middle of the screen. I look at it once more before turning the screen off.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

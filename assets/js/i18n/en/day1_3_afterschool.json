@@ -13,11 +13,11 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*At this school — if I see something, I say it. No more looking the other way. Not this time.*"
+        "text": "*The reply box stays empty. My thumb stops once beside the send button.*"
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*I pull my phone back out and leave the group chat. Done. — I'm part of this school now.*"
+        "text": "*I take out my phone again and leave the group chat. At the top of the chat list, only the new school's messenger remains.*"
     },
     "after_miss_dain_1": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*It sounds like a routine question, but the teacher lowers the clipboard and looks at my face.*",
+        "text": "*The teacher lowers the clipboard and looks at my face.*",
         "choices": [
             "I'm okay. It's a better school than I expected.",
             "Honestly? It's a lot."
@@ -174,7 +174,7 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Educational concern.*",
+        "text": "*The corner of the attendance book rests against the desk.*",
         "choices": [
             "If you're worried, you can just say so.",
             "I'll hold you to that juice."
@@ -207,7 +207,7 @@
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
         "text": "*Chatting with the homeroom teacher in the hallway.*",
-        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
+        "context": "Day 1 after school. The homeroom teacher stopped the transfer student to check on them. The student was honest about feeling overwhelmed. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "The homeroom teacher hides warmth behind dry humor and deadpan delivery. Late 20s female teacher with brown wavy long hair and beige cardigan. She wraps her feelings in words like \"work\" and \"professional concern.\" Former aspiring novelist."
     },
     "after_hidden_nurse_intro": {
@@ -259,7 +259,7 @@
         "text": "*I lie down on the bed. Through the curtain, I can see the nurse's back.*",
         "choices": [
             "You look more tired than I do, honestly.",
-            "This place is cozier than I expected"
+            "The nurse's office is quieter than I expected."
         ]
     },
     "after_nurse_enter_choice_a": {
@@ -289,7 +289,7 @@
     "after_nurse_freetalk": {
         "name": "School Nurse",
         "text": "*Chatting with the school nurse in the nurse's office.*",
-        "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive. Tone: Bright and light conversation. First-day excitement and curiosity. Never bring up heavy topics. Focus on banter and playful exchanges.",
+        "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "The school nurse is playful and teasing, but hides sincerity behind jokes. A former hospital nurse who burned out and moved to the school. She's quick to loosen the atmosphere so students can relax first."
     },
     "after1_jealousy_seo_1": {
@@ -366,7 +366,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "{name}",
-        "text": "*All she shows is her back.*"
+        "text": "*Yuna turns away without a word.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -386,19 +386,19 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Educational interest'. Even after saying that, the homeroom teacher only looks at the corner of the attendance sheet.*"
+        "text": "*The teacher only looks at the corner of the attendance book.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*She admitted it honestly.*"
+        "text": "*The teacher presses the corner of the attendance book once.*"
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*She laughed. — First time I've seen her laugh at a joke. She closes the attendance book and stands. She's halfway to the door when she turns back, like she just remembered something.*"
+        "text": "*The teacher gives a small laugh and closes the attendance book. She reaches the threshold, then calls me again.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*The second name called follows you to the end of the hallway.*"
+        "text": "*From the end of the hall, the attendance book closes with a small sound.*"
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
@@ -418,7 +418,7 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*I've barely said a few words and she's already set the pace. The nurse stands and approaches. When the tip of the thermometer touches the back of my hand, my fingers stiffen slightly.*"
+        "text": "*The nurse gets up and comes closer. When the tip of the thermometer touches the back of my hand, my fingers stiffen slightly.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*I say it playfully. While drinking water, I look around the infirmary. In one corner sits a small potted plant.*"
+        "text": "*I drink the water and look around the nurse's office. A small potted plant sits in one corner.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -482,7 +482,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "{name}",
-        "text": "*She says it casually, but the last part lands with unexpected weight.*"
+        "text": "*The nurse sets the water cup on the desk. The bottom of the cup gives a low sound.*"
     },
     "after_nurse_enter_11_e": {
         "name": "{name}",
@@ -498,15 +498,15 @@
     },
     "after_nurse_enter_11_h": {
         "name": "School Nurse",
-        "text": "You said it was cozy earlier, right? — I still remember those words."
+        "text": "You said it was quiet earlier, right? — I still remember that."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*Her eyes smile at the word 'cozy'.*"
+        "text": "*The nurse folds the edge of the curtain once with her finger.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
-        "text": "*I'm heading out of the nurse's office when — from behind me.*"
+        "text": "*Just as I reach for the nurse's office door, the nurse calls from behind me.*"
     },
     "after_nurse_enter_11_k": {
         "name": "School Nurse",

@@ -13,11 +13,11 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Nessa escola — se vi, falo. Chega de fazer que não viu. Dessa vez.*"
+        "text": "*A caixa de resposta fica vazia. Meu polegar para por um instante ao lado do botão de enviar.*"
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Pego o celular de novo e saio do grupo. Faxina feita. — Agora eu sou dessa escola.*"
+        "text": "*Pego o celular de novo e saio do grupo. No topo da lista de conversas, só resta o mensageiro da escola nova.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -135,7 +135,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "{name}",
-        "text": "*E me mostra só as costas.*"
+        "text": "*Yuna se vira sem dizer nada.*"
     },
     "after_miss_yuna_4": {
         "name": "{name}",
@@ -208,7 +208,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*Parece uma pergunta de rotina, mas a professora abaixa a prancheta e olha para o meu rosto.*",
+        "text": "*A professora abaixa a prancheta e olha para o meu rosto.*",
         "choices": [
             "Tranquilo. A escola é melhor do que eu esperava.",
             "Sinceramente? Tô meio perdido."
@@ -268,11 +268,11 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Interesse educacional'. Mesmo depois de dizer isso, o professor da sala apenas olha para o canto da folha de presença.*"
+        "text": "*A professora olha apenas para o canto do livro de chamada.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Interesse pedagógico.*",
+        "text": "*O canto do livro de chamada encosta na mesa.*",
         "choices": [
             "Se é preocupação, basta dizer que é preocupação",
             "Vou cobrar o suco, professora"
@@ -284,7 +284,7 @@
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*Admitiu na hora.*"
+        "text": "*A professora pressiona uma vez o canto do livro de chamada.*"
     },
     "after_homeroom_honest_choice2b": {
         "name": "Professora",
@@ -292,7 +292,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*Ela riu. — Primeira vez que vejo essa mulher rir de uma piada. A professora fecha o diário de classe e levanta. Chega na porta e aí me chama de volta, como se tivesse acabado de lembrar de uma coisa.*"
+        "text": "*A professora solta uma risadinha e fecha o livro de chamada. Chega à porta e me chama de novo.*"
     },
     "after_homeroom_honest_7": {
         "name": "Professora",
@@ -308,7 +308,7 @@
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*O segundo nome chamado segue você até o final do corredor.*"
+        "text": "*No fim do corredor, ouço o livro de chamada se fechar baixinho.*"
     },
     "after_homeroom_honest_10": {
         "name": "{name}",
@@ -317,7 +317,7 @@
     "after_homeroom_freetalk": {
         "name": "Professora",
         "text": "*Conversando com a professora no corredor.*",
-        "context": "Dia 1 depois da aula. A professora parou o aluno transferido pra saber como ele estava. O aluno foi sincero sobre estar atordoado. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "context": "Dia 1 depois da aula. A professora parou o aluno transferido pra saber como ele estava. O aluno foi sincero sobre estar atordoado. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "A professora esconde cuidado atrás de humor seco e jeito indiferente. Mulher de vinte e poucos, cabelo castanho ondulado comprido e cardigã bege. Tem o hábito de disfarçar sentimentos com palavras como 'trabalho' e 'interesse pedagógico'. Ex-aspirante a escritora."
     },
     "after_hidden_nurse_intro": {
@@ -366,7 +366,7 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Mal falei algumas palavras e ela já ditou o ritmo. A enfermeira se levanta e se aproxima. Quando a ponta do termômetro toca o dorso da minha mão, meus dedos se enrijecem levemente.*"
+        "text": "*A enfermeira se levanta e se aproxima. Quando a ponta do termômetro toca o dorso da minha mão, meus dedos ficam um pouco rígidos.*"
     },
     "after_nurse_enter_5": {
         "name": "{name}",
@@ -401,7 +401,7 @@
         "text": "*Deito na cama. Do outro lado da cortina, vejo as costas da enfermeira.*",
         "choices": [
             "A senhora parece mais cansada do que eu",
-            "A enfermaria é aconchegante, até surpreende"
+            "A enfermaria é mais silenciosa do que eu imaginava."
         ]
     },
     "after_nurse_enter_choice_a": {
@@ -426,7 +426,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Digo de forma brincalhona. Enquanto bebo água, olho ao redor da enfermaria. Num canto há uma pequena planta em vaso.*"
+        "text": "*Bebo água e olho ao redor da enfermaria. Em um canto há um vasinho de planta.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -470,7 +470,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "{name}",
-        "text": "*O tom é leve, mas o final tem firmeza.*"
+        "text": "*A enfermeira coloca o copo d'água na mesa. O fundo do copo soa baixo.*"
     },
     "after_nurse_enter_11_e": {
         "name": "{name}",
@@ -486,15 +486,15 @@
     },
     "after_nurse_enter_11_h": {
         "name": "Enfermeira",
-        "text": "Você disse que era aconchegante antes, certo? — Ainda me lembro dessas palavras."
+        "text": "Você disse que era silenciosa, não disse? — Ainda lembro disso."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*Os olhos dela sorriem só com a palavra 'aconchegante'.*"
+        "text": "*A enfermeira dobra uma vez a ponta da cortina com o dedo.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
-        "text": "*Tô saindo da enfermaria quando — vem uma voz de trás.*"
+        "text": "*No momento em que vou abrir a porta da enfermaria, a enfermeira me chama por trás.*"
     },
     "after_nurse_enter_11_k": {
         "name": "Enfermeira",
@@ -519,7 +519,7 @@
     "after_nurse_freetalk": {
         "name": "Enfermeira",
         "text": "*Conversando com a enfermeira na enfermaria.*",
-        "context": "Dia 1 depois da aula. O aluno transferido sentiu tontura e foi à enfermaria. A enfermeira foi brincalhona mas atenciosa. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "context": "Dia 1 depois da aula. O aluno transferido sentiu tontura e foi à enfermaria. A enfermeira foi brincalhona mas atenciosa. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "A enfermeira é brincalhona e provocadora, mas esconde sinceridade por trás das piadas. Ex-enfermeira de hospital que teve burnout e veio pra escola. Sempre desarma a tensão pra os alunos relaxarem primeiro."
     },
     "after_nurse_skip": {

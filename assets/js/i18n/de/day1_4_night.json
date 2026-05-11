@@ -125,7 +125,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Eine persönliche Nachricht in einer Klassenankündigung? — Meine Mundwinkel heben sich. Ich versuche es zu verbergen, aber es geht nicht.*"
+        "text": "*Ich lese die Mitteilung noch einmal. Mein Mundwinkel hebt sich, also lege ich das Handy mit dem Display nach unten.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Nach 'medizinischem Interesse' steht ein Herz. Bis ich den Bildschirm ausschalte, schaue ich dieses Herz noch einmal an.*"
+        "text": "*Das Herz am Ende des Satzes bleibt in der Mitte des Bildschirms. Bevor ich ihn ausschalte, sehe ich noch einmal hin.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

@@ -13,11 +13,11 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*Dans ce lycée — si je vois quelque chose, je le dirai. Plus jamais faire semblant de ne pas savoir. Cette fois.*"
+        "text": "*La zone de réponse reste vide. Mon pouce s'arrête un instant à côté du bouton d'envoi.*"
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Je ressors mon téléphone et je quitte le groupe. Terminé. — Maintenant, j’appartiens à ce lycée.*"
+        "text": "*Je ressors mon téléphone et je quitte le groupe. En haut de la liste, il ne reste que la messagerie du nouveau lycée.*"
     },
     "after_miss_dain_1": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*On dirait une question de routine, mais la prof abaisse le porte-bloc et me regarde en face.*",
+        "text": "*La prof baisse son porte-bloc et me regarde en face.*",
         "choices": [
             "Ça va. C'est une bonne école.",
             "Franchement, c'est un peu intense."
@@ -174,7 +174,7 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Intérêt pédagogique.*",
+        "text": "*Le coin du registre d'appel touche le bureau.*",
         "choices": [
             "Si vous êtes inquiète, dites juste que vous êtes inquiète",
             "J'attendrai ce jus avec impatience, madame"
@@ -207,7 +207,7 @@
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
         "text": "*En train de discuter avec la prof principale dans le couloir.*",
-        "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
+        "context": "Jour 1 après les cours. La prof principale a arrêté le nouvel élève pour prendre de ses nouvelles. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "La prof principale cache sa gentillesse derrière un humour pince-sans-rire. Fin de la vingtaine, longs cheveux bruns ondulés et cardigan beige. Elle enveloppe ses sentiments dans des mots comme \"boulot\" et \"intérêt pédagogique\". Ancienne aspirante romancière."
     },
     "after_hidden_nurse_intro": {
@@ -259,7 +259,7 @@
         "text": "*Je m'allonge sur le lit. À travers le rideau, j'aperçois le dos de l'infirmière.*",
         "choices": [
             "Vous avez l'air plus fatiguée que moi, en fait",
-            "C'est plus douillet que je pensais, ici"
+            "L'infirmerie est plus calme que je pensais."
         ]
     },
     "after_nurse_enter_choice_a": {
@@ -289,7 +289,7 @@
     "after_nurse_freetalk": {
         "name": "Infirmière",
         "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
-        "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : Conversation légère et lumineuse. Excitation et curiosité du premier jour. Ne jamais aborder de sujets lourds. Se concentrer sur les taquineries et les échanges ludiques.",
+        "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "L'infirmière est joueuse et maligne, mais cache sa sincérité derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout avant d'arriver à l'école. Elle commence souvent par détendre l'atmosphère pour que les élèves respirent un peu."
     },
     "after1_jealousy_seo_1": {
@@ -366,7 +366,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "{name}",
-        "text": "*Tout ce qu'elle montre, c'est son dos.*"
+        "text": "*Yuna se détourne sans un mot.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -386,19 +386,19 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Intérêt pédagogique'. Même après avoir dit cela, le professeur principal ne regarde que le coin de la feuille de présence.*"
+        "text": "*La prof ne regarde que le coin du registre d'appel.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*Elle l'a admis franchement.*"
+        "text": "*La prof appuie une fois sur le coin du registre d'appel.*"
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*Elle a ri. — C'est la première fois que je la vois rire à une blague. Elle referme le registre et se lève. Arrivée au seuil, elle me rappelle comme si quelque chose lui revenait seulement à cet instant.*"
+        "text": "*La prof laisse échapper un petit rire et referme le registre. Arrivée au seuil, elle m'appelle de nouveau.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Le deuxième nom appelé vous suit jusqu'au bout du couloir.*"
+        "text": "*Au bout du couloir, le registre se referme dans un petit bruit.*"
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
@@ -418,7 +418,7 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*J'ai à peine dit quelques mots qu'elle a déjà imposé le rythme. L'infirmière se lève et s'approche. Quand le bout du thermomètre touche le dos de ma main, mes doigts se raidissent légèrement.*"
+        "text": "*L'infirmière se lève et s'approche. Quand le bout du thermomètre touche le dos de ma main, mes doigts se raidissent un peu.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Je le dis sur le ton de la plaisanterie. En buvant de l'eau, je regarde autour de l'infirmerie. Dans un coin se trouve une petite plante en pot.*"
+        "text": "*Je bois de l'eau en regardant l'infirmerie. Un petit pot de plante est posé dans un coin.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -482,7 +482,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "{name}",
-        "text": "*Elle le dit sur un ton léger, mais la fin résonne avec une franchise inattendue.*"
+        "text": "*L'infirmière pose le verre d'eau sur le bureau. Le fond du verre rend un son sourd.*"
     },
     "after_nurse_enter_11_e": {
         "name": "{name}",
@@ -498,15 +498,15 @@
     },
     "after_nurse_enter_11_h": {
         "name": "Infirmière",
-        "text": "Tu as dit que c'était confortable plus tôt, n'est-ce pas? — Je me souviens encore de ces mots."
+        "text": "Tu as dit que c'était calme, tout à l'heure ? — Je m'en souviens encore."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*Au mot 'douillet', ses yeux sourient.*"
+        "text": "*L'infirmière plie une fois le bord du rideau du doigt.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
-        "text": "*Je m'apprête à sortir de l'infirmerie quand — derrière moi.*"
+        "text": "*Au moment où je vais ouvrir la porte de l'infirmerie, l'infirmière m'appelle derrière moi.*"
     },
     "after_nurse_enter_11_k": {
         "name": "Infirmière",

@@ -242,7 +242,7 @@
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Ein gefalteter Zettel rutschte über meinen Tisch. Ich drehte mich um — das Mädchen mit den silberweißen Haaren am Fenster schaute immer noch nach draußen. Die Handschrift auf dem Zettel war überraschend ordentlich.*"
+        "text": "*Ein gefalteter Zettel rutscht auf meinen Tisch. Als ich mich umdrehe, schaut das silberhaarige Mädchen am Fenster noch immer nach draußen. Die Schrift ist ordentlich.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "classroom_5_c": {
         "name": "{name}",
-        "text": "*Niemand sonst hat das gehört. Nur ich. Aus einer Ecke des Klassenzimmers — ein Pfiff.*"
+        "text": "*Das Murmeln der Lehrerin geht im Klassenzimmerlärm unter. Aus einer Ecke des Raums ertönt ein Pfiff.*"
     },
     "classroom_dain_5_b": {
         "name": "{name}",

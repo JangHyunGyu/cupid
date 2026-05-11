@@ -65,7 +65,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*공지사항에 개인 메시지를? — 입꼬리가 올라간다. 숨기려는데 안 된다.*"
+        "text": "*공지사항을 한 번 더 읽는다. 입꼬리가 올라가서, 화면을 엎어 둔다.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*의료적 관심 뒤에 하트가 붙어 있다. 화면을 끄기 전까지 그 하트만 한 번 더 보게 된다.*"
+        "text": "*문장 끝의 하트가 화면 한가운데 남아 있다. 화면을 끄기 전까지 한 번 더 보게 된다.*"
     },
     "night_late_transition": {
         "name": "{name}",

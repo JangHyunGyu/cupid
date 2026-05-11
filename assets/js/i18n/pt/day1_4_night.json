@@ -65,7 +65,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Recado pessoal dentro de aviso escolar? — Tento segurar o sorriso e não consigo.*"
+        "text": "*Leio o aviso mais uma vez. O canto da boca sobe, então viro o celular para baixo.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Há um coração depois de 'interesse médico'. Até desligar a tela, continuo olhando aquele coração mais uma vez.*"
+        "text": "*O coração no fim da frase fica no meio da tela. Antes de apagar a tela, olho para ele mais uma vez.*"
     },
     "night_late_transition": {
         "name": "{name}",
