@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Elle se d?tourne et agite la main. Elle ne se retourne pas. Seul le ruban? son poignet oscille au bout du couloir.*"
+        "text": "*Seoyeon se retourne et fait un signe de la main. Elle ne regarde pas en arrière. Seul le ruban à son poignet ondule brièvement au bout du couloir.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -99,11 +99,11 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "...Fais ?a bien. Cette fois."
+        "text": "...Fais bien les choses. Pour de vrai."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*Elle lance le ballon une derni?re fois en hauteur et le rattrape. Le bout de ses doigts arrive un peu en retard.*"
+        "text": "*Le point d'exclamation est vivant. Dain lance le ballon de volley haut et le rattrape.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*Le vent soul?ve ses cheveux. Cette fois, Seoyeon ne les remet pas en place.*"
+        "text": "*Un instant de silence. Le vent fait voler ses cheveux. Elle ne les repousse pas.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
@@ -280,7 +280,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Le t?l?phone s?enfonce dans ma paume.*",
+        "text": "*Le coin du téléphone appuie dans ma paume.*",
         "choices": [
             "Le dire maintenant",
             "...Je n'ai rien pu dire"
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*En quittant l??cole.* H?, toi... Je t?ai attendu, oui. Mais sourire tout de suite juste parce que j?ai attendu, ce serait injuste. Cette fois, va jusqu?au bout."
+        "text": "*En sortant de l'école.* Hé, sérieux ?! ...Vraiment ? J'ai attendu, oui. — Mais sourire direct, ça serait vexant. Cette fois, dis-le jusqu'au bout."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

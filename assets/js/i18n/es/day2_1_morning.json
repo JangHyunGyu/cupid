@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Profesora",
-        "text": "*se cubre la boca con la taza de café*...¿se usa todo en la cara? Está bien, vámonos."
+        "text": "*Se tapa la boca con la taza.* ...Falla en el control de gestos. Anda, vete."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Profesora",
@@ -326,7 +326,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Profesora",
-        "text": "*La mirada de la tutora roza el caj?n y vuelve enseguida.*"
+        "text": "*La mirada de la profesora se va hacia el cajón — y vuelve al instante.*"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",

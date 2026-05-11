@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Enfermeira",
-        "text": "*Levantando a cabeça* Primeira vez aqui, né? Você é o transferido."
+        "text": "*Levanta a cabeça.* Primeira vez aqui, né? Você é o aluno transferido."
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Não é grande segredo, mas depois de dizer, Dain bate na tampa do miojo com a unha.*"
+        "text": "*Não é grande segredo, mas depois de dizer, a enfermeira bate na beira da mesa com a unha.*"
     },
     "lunch2_dain_end_u": {
         "name": "Enfermeira",

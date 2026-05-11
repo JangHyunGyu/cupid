@@ -33,11 +33,11 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "Hey, I put you down as my partner for today?s sports event."
+        "text": "YO! I signed you up as my partner for today's sports event!"
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "If you run, I?m getting mad."
+        "text": "Bail on me and I will be SO mad."
     },
     "morning5_end": {
         "name": "{name}",
@@ -303,11 +303,11 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*?Come if you?re sick.? After saying it, the nurse shifts the two paper cups in her hands.*"
+        "text": "*'Come by if you're not feeling well.' After saying that, the nurse shifts the hand holding two paper cups slightly.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "School Nurse",
-        "text": "*The nurse?s smile fades first.*"
+        "text": "*The health teacher pauses for a moment. Laughter disappears first.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "School Nurse",
@@ -382,7 +382,7 @@
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*The first thing that comes back is Dain?s face in the gym yesterday, when she stopped to catch her breath. Seoyeon and Yuna only mention event prep in passing.*"
+        "text": "*Before Dain's exclamation marks, what comes back to me first is the breath that caught at the very end yesterday. Seoyeon and Yuna only say a few short things about getting ready for the event.*"
     },
     "morning5_end_branch": {},
     "morning5_committed_end": {
@@ -463,7 +463,7 @@
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Homeroom Teacher",
-        "text": "...Here?"
+        "text": "...How did you know."
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -479,7 +479,7 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
-        "text": "...You got that far?"
+        "text": "...I really can't write it. The last line."
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Homeroom Teacher",

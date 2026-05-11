@@ -33,7 +33,7 @@
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "Oye, te anot? como mi pareja para el evento deportivo de hoy."
+        "text": "¡Eh! ¡Te apunté como pareja para el evento de deporte de hoy!"
     },
     "morning5_dain_2": {
         "name": "Dain",
@@ -99,7 +99,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "Enfermera",
-        "text": "?Ah? {name}. Ya es el ?ltimo d?a. Cuando termine el evento, se acaba de verdad."
+        "text": "¿oh? {name}. Ya es el último día. Una vez que termine el evento, realmente habrá terminado."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "Profesora",
-        "text": "*Esta vez, la tutora no se esconde detr?s del libro de asistencia.*"
+        "text": "*La profesora hace una pausa por un momento. Esta vez, la hoja de asistencia no cubre el rostro.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Profesora",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Profesora",
-        "text": "*Con una risa peque?a* ...S?. Escribe aunque sea una l?nea."
+        "text": "*Suelta una risita.* ...Está bien. Escríbeme aunque sea una línea."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Profesora",
@@ -303,7 +303,7 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*?Ven si te sientes mal?. Despu?s de decirlo, la enfermera cambia de mano los dos vasos de papel.*"
+        "text": "*'Ven si te sientes mal.' Después de decirlo, la enfermera cambia ligeramente la mano que sostiene dos vasos de papel.*"
     },
     "hidden_nurse_d5_3_b": {
         "name": "Enfermera",
@@ -382,7 +382,7 @@
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Lo primero que vuelve es el rostro de Dain en el gimnasio ayer, cuando se detuvo para recuperar el aliento. Seoyeon y Yuna solo mencionan brevemente la preparaci?n del evento.*"
+        "text": "*Antes que los signos de exclamación de Dain, lo primero que me vuelve es el aliento que se le cortó ayer al final. Seoyeon y Yuna solo me sueltan un par de cosas sobre los preparativos del evento.*"
     },
     "morning5_end_branch": {},
     "morning5_committed_end": {
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Profesora",
-        "text": "*La tutora se detiene. Su expresi?n vuelve enseguida, pero el sobre se arruga un poco en su mano.*"
+        "text": "*La profesora hace una pausa por un momento. Pronto vuelve a su habitual expresión seca, pero las esquinas del sobre están arrugadas.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Profesora",
@@ -479,7 +479,7 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Profesora",
-        "text": "...¿Llegaste hasta ahí?"
+        "text": "...De verdad no consigo escribirla. Esa última línea."
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Profesora",

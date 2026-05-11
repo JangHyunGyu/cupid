@@ -25,7 +25,7 @@
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*입술이 한 번 열렸다가 닫힌다.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*대답을 기다리는 몇 초가 길어진다.*"
     },
     "confess_seo_yes_8": {
         "name": "서연",
@@ -129,7 +129,7 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*말을 고르는 동안 손끝이 차갑다.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -141,11 +141,11 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*목소리가 생각보다 작게 나온다.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*피할 말은 떠오르는데, 하고 싶은 말만 남는다.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*말이 떨어진 뒤에도 시선은 쉽게 올라가지 않는다.*"
     },
     "confess_yuna_yes_8": {
         "name": "유나",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*농담으로 넘기면 오늘도 지나갈 수 있다. 그런데 그러고 싶지 않다.*"
     },
     "confess_dain_choice": {
         "name": "다인",
@@ -249,11 +249,11 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*목소리가 체육관 바닥에 낮게 깔린다.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*짧은 숨을 고르고, 다시 입을 연다.*"
     },
     "confess_dain_yes_3": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*마지막 말이 코트 위에 남는다.*"
     },
     "confess_dain_yes_8": {
         "name": "다인",

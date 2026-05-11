@@ -25,7 +25,7 @@
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*唇が一度開いて、また閉じる。*"
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -61,11 +61,11 @@
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*返事を待つ数秒が長く伸びる。*"
     },
     "confess_seo_yes_8": {
         "name": "ソヨン",
-        "text": "*ソヨンが何も言わない。唇が震える。クリップボードも、学生会長の腕章もない。"
+        "text": "*ソヨンが何も言わない。唇が震えている。生徒会長ではない、ただの一人の女の子がそこに立っている。*"
     },
     "confess_seo_yes_9": {
         "name": "ソヨン",
@@ -129,7 +129,7 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*言葉を探しているうちに、指先が冷たくなる。*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -141,11 +141,11 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*思ったより小さな声が出る。*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*逃げるための言葉は浮かぶのに、言いたい言葉だけが残る。*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -157,7 +157,7 @@
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*ユナの前では言葉を減らすことになる。空白までバレる気分だ。"
+        "text": "*ユナの前では長い言葉はいらない。この人は行間を読む人だから。*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*言葉が落ちたあとも、視線はすぐには上がらない。*"
     },
     "confess_yuna_yes_8": {
         "name": "ユナ",
@@ -181,7 +181,7 @@
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*しわくちゃの袖先が手のひらに消えます。"
+        "text": "*袖をぎゅっと握りしめる。*"
     },
     "confess_yuna_yes_8_c": {
         "name": "ユナ",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*冗談にすれば、今日もそのまま過ぎていく。でも、そうしたくない。*"
     },
     "confess_dain_choice": {
         "name": "ダイン",
@@ -249,11 +249,11 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*声が体育館の床に低く落ちる。*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*短く息を整えて、もう一度口を開く。*"
     },
     "confess_dain_yes_3": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*最後の言葉がコートに残る。*"
     },
     "confess_dain_yes_8": {
         "name": "ダイン",

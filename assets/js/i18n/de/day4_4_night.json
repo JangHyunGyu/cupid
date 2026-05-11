@@ -171,9 +171,9 @@
         "name": "Seoyeon",
         "text": "*Sie wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
         "choices": [
-            "Ich mag auch dieses Gesicht. Nicht das ge?bte.",
-            "Heute musst du keine Rolle spielen.",
-            "Danke, dass du es mir gezeigt hast. Auch den Teil, den du versteckt hast."
+            "Ich mag auch dieses Gesicht. Nicht das geübte.",
+            "Nicht die Schülersprecherin — einfach Seoyeon ist meine Freundin.",
+            "Ehrlich gesagt dachte ich, du könntest alles. Danke, dass du mir auch diese Seite zeigst."
         ]
     },
     "wall_seo_line_react_1": {
@@ -275,11 +275,11 @@
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "...Komm einfach. Ich habe die Hintert?r der Turnhalle offen gelassen."
+        "text": "Komm einfach lol! Ich hab die Hintertür der Turnhalle offen gelassen!"
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*In der Turnhalle brennt nur das Notlicht. Dain prellt allein einen Volleyball. Ihr Mund l?chelt, aber ihre Schultern sind angespannt.*"
+        "text": "*Die dunkle Turnhalle, nur von Notbeleuchtung erhellt. Dain dribbelt allein einen Volleyball. Sie lächelt stärker als sonst.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*Sie l?chelt nicht. Das ist das Fremdeste daran.*"
+        "text": "*Dain macht einen Gesichtsausdruck, den ich noch nie gesehen habe. Dain, ohne Lächeln.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -432,7 +432,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Komisch, oder? Seit ich f?nf war, stand ich jeden Tag auf diesem Feld... und jetzt muss ich ?ber etwas anderes nachdenken."
+        "text": "Es ist wirklich lustig, nicht wahr? Ich bin seit meinem 5. Lebensjahr jeden Tag auf diesem Platz... aber jetzt muss ich über andere Dinge nachdenken."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -504,7 +504,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Sie legt den Volleyball ab und geht voraus. Sie sieht nicht zur?ck.*"
+        "text": "*Es gibt kein Ausrufezeichen. Dain legt den Volleyball ab und geht als Erster.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -677,10 +677,10 @@
     },
     "wall_yuna_choice": {
         "name": "Yuna",
-        "text": "*Sie h?lt das Buch fester. W?hrend sie auf eine Antwort wartet, knickt die Ecke des Briefs ein wenig.*",
+        "text": "*Yunas Augen sind leicht feucht. Die Spitzen ihrer Finger, die das Buch halten, sind weiß gedrückt.*",
         "choices": [
             "Ich bin nicht dieser Senior. Ich bin ich. Aber ich bleibe an deiner Seite.",
-            "Gerade h?re ich dem zu, was du gesagt hast. Ich laufe nicht weg.",
+            "Vergiss diesen Senior. Der, der jetzt vor dir steht, bin ich.",
             "...Also bist du wegen ihm auf mich zugekommen? Als Ersatz?"
         ]
     },
@@ -779,11 +779,11 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Der Wind war heute sch?n. Also... habe ich ein bisschen gewartet."
+        "text": "Der Wind war heute schön. Deshalb... hatte ich ein wenig Hoffnung. Umsonst."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Hey, heute hat Spa? gemacht. ...Ich hatte gehofft, ich w?re nicht die Einzige, die sich mitrei?en lie?."
+        "text": "Hey, heute war es lustig, haha. ...Ich hätte gehofft, dass ich nicht die Einzige war, die so aufgeregt war."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",

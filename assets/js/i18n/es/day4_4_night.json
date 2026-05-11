@@ -171,9 +171,9 @@
         "name": "Seoyeon",
         "text": "*Se seca las lágrimas y me mira con los ojos temblando.*",
         "choices": [
-            "Tambi?n me gusta esta cara. No la ensayada.",
-            "Hoy no tienes que cumplir ning?n papel.",
-            "Gracias por mostr?rmelo. Incluso la parte que escond?as."
+            "También me gusta esta cara. No la ensayada.",
+            "No la presidenta del consejo. Mi novia eres tú, Seoyeon.",
+            "La verdad es que pensaba que se te daba bien todo. Gracias por dejarme ver también este lado tuyo."
         ]
     },
     "wall_seo_line_react_1": {
@@ -267,19 +267,19 @@
     },
     "wall_dain_2": {
         "name": "Dain",
-        "text": "Oye, ?tienes tiempo ahora?"
+        "text": "ey, ¿tienes un rato ahora? jaja"
     },
     "wall_dain_2_b": {
         "name": "Dain",
-        "text": "*No deber?a venir a la escuela, ?verdad?*"
+        "text": "*no se puede venir al colegio, ¿no??*"
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "...Solo ven. Dej? abierta la puerta trasera del gimnasio."
+        "text": "bah ven jaja! dejé la puerta de atrás del gimnasio abierta!"
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*Solo las luces de emergencia iluminan el gimnasio. Dain bota una pelota de voleibol sola. Sonr?e con la boca, pero tiene los hombros r?gidos.*"
+        "text": "*El gimnasio a oscuras, iluminado solo por las luces de emergencia. Dain bota un balón de voleibol ella sola. Sonríe con más fuerza de lo normal.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*No sonr?e. Eso es lo m?s extra?o.*"
+        "text": "*Dain tiene una expresión que no le había visto nunca. Dain sin sonreír.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -432,7 +432,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Da risa, ?no? Desde los cinco a?os estuve en esta cancha todos los d?as... y ahora tengo que pensar en otra cosa."
+        "text": "Es muy divertido, ¿no? Llevo en esta cancha todos los días desde los 5 años... pero ahora tengo que pensar en otras cosas."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -504,7 +504,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Deja la pelota de voleibol y camina primero. No mira atr?s.*"
+        "text": "*No hay ningún signo de exclamación. Dain deja la pelota de voleibol y camina primero.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -520,7 +520,7 @@
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*Sus pasos se cortan un instante. Cuando vuelve a caminar, parecen un poco m?s ligeros.*"
+        "text": "*Dain se para un momento. — Después vuelve a caminar. Con los pasos más ligeros.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
@@ -680,7 +680,7 @@
         "text": "*Aprieta el libro con fuerza. Mientras espera una respuesta, la esquina de la carta se arruga un poco.*",
         "choices": [
             "No soy ese chico. Soy yo. Y aun así me quedo a tu lado.",
-            "Ahora estoy escuchando lo que dijiste t?. No voy a huir.",
+            "Olvídate del del curso superior. Quien está delante de ti ahora soy yo.",
             "...¿Entonces te acercaste a mí por él? ¿Para sustituirlo?"
         ]
     },
@@ -779,11 +779,11 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Hoy el viento se sent?a bien. As? que... esper? un poco."
+        "text": "Hoy hacía buen viento. Y por eso... me hice un poco de ilusión. Sin motivo."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Oye, hoy fue divertido. ...Esperaba no haber sido la ?nica emocionada."
+        "text": "ey, hoy estuvo súper genial jaja ...ojalá no fuera yo la única emocionada."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",

@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Sie dreht sich um und winkt. Sie sieht nicht zur?ck. Nur das Band an ihrem Handgelenk schwingt am Ende des Flurs.*"
+        "text": "*Seoyeon dreht sich um und winkt. Sie schaut nicht zurück. Nur das Band an ihrem Handgelenk schwankt kurz am Ende des Flurs.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*Sie wirft den Volleyball noch einmal hoch und f?ngt ihn. Ihre Fingerspitzen sind ein wenig zu sp?t.*"
+        "text": "*Das Ausrufezeichen ist lebendig. Dain wirft den Volleyball hoch und fängt ihn wieder.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*Der Wind weht ihr Haar durcheinander. Diesmal streicht Seoyeon es nicht zur?ck.*"
+        "text": "*Einen Moment Stille. Der Wind weht ihr Haar. Sie streicht es nicht zurück.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
@@ -215,7 +215,7 @@
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...Du bist zur?ckgekommen?"
+        "text": "...Echt?"
     },
     "after5_last_chance_2_p": {
         "name": "Dain",
@@ -280,7 +280,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Das Handy dr?ckt sich in meine Handfl?che.*",
+        "text": "*Die Ecke des Handys drückt in meine Handfläche.*",
         "choices": [
             "Es jetzt sagen",
             "...Ich konnte nichts sagen"

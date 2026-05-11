@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Se da vuelta y saluda con la mano. No mira atr?s. Solo la cinta de su mu?eca se balancea al final del pasillo.*"
+        "text": "*Seoyeon se da vuelta y saluda con la mano. No mira atrás. Solo el lazo en su muñeca se balancea brevemente al final del pasillo.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*Lanza la pelota de voleibol una vez m?s y la atrapa. Las puntas de sus dedos llegan un poco tarde.*"
+        "text": "*El signo de exclamación está vivo. Dain lanza la pelota de voleibol alto y la atrapa nuevamente.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -211,11 +211,11 @@
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "*Se queda inm?vil. La pelota en su mano baja lentamente.*"
+        "text": "*Abre mucho los ojos. Un segundo. Dos.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...?Volviste?"
+        "text": "...¿En serio?"
     },
     "after5_last_chance_2_p": {
         "name": "Dain",
@@ -280,7 +280,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*El tel?fono se hunde en mi palma.*",
+        "text": "*La esquina del teléfono se me clava en la palma.*",
         "choices": [
             "Decirlo ahora",
             "...No fui capaz de decir nada"
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Saliendo de la escuela.* Oye, t?... S? te esper?. Pero sonre?r de inmediato solo porque esper? ser?a injusto. Esta vez dilo hasta el final."
+        "text": "*Al salir de la escuela.* ¿Oye, en serio?! ...¿De verdad? Esperar, esperé. — Pero sonreír al toque me sentiría barato. Esta vez dímelo hasta el final."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

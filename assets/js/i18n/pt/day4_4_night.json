@@ -105,7 +105,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Toda vez que algu?m me elogiava, era nisso que eu pensava primeiro. Que este era um rosto que eu tinha ensaiado no espelho v?rias vezes."
+        "text": "A cada elogio eu pensava. — Até esse sorriso é ensaiado. Alguém realmente me viu?"
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -171,9 +171,9 @@
         "name": "Seoyeon",
         "text": "*Enxuga as lágrimas, me olhando com olhos trêmulos.*",
         "choices": [
-            "Eu tamb?m gosto desse rosto. N?o do ensaiado.",
-            "Hoje voc? n?o precisa fazer papel nenhum.",
-            "Obrigado por me mostrar. At? a parte que voc? escondia."
+            "Também gosto desse rosto. Não o ensaiado.",
+            "Sem ser presidente do grêmio — a Seoyeon de verdade é a minha namorada.",
+            "Sinceramente, achava que você era boa em tudo. Valeu por me mostrar esse lado também."
         ]
     },
     "wall_seo_line_react_1": {
@@ -267,19 +267,19 @@
     },
     "wall_dain_2": {
         "name": "Dain",
-        "text": "Ei, voc? tem um tempo agora?"
+        "text": "Ei, tá livre agora? kkkk"
     },
     "wall_dain_2_b": {
         "name": "Dain",
-        "text": "*Eu n?o devia vir pra escola, n??*"
+        "text": "*Você não pode vir pra escola, né??*"
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "...S? vem. Deixei a porta dos fundos do gin?sio aberta."
+        "text": "Ah, vem logo kkkk deixei a porta dos fundos do ginásio aberta!"
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*S? as luzes de emerg?ncia est?o acesas no gin?sio. Dain quica uma bola de v?lei sozinha. A boca sorri, mas os ombros est?o r?gidos.*"
+        "text": "*O ginásio escuro, só as luzes de emergência acesas. Dain quicando uma bola de vôlei sozinha. Rindo mais do que o normal.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -339,7 +339,7 @@
     },
     "wall_dain_14_b": {
         "name": "Dain",
-        "text": "*N?o olha para a bola de v?lei.*"
+        "text": "*Nenhum ponto de exclamação.*"
     },
     "wall_dain_15": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*N?o sorri. Essa? A parte mais estranha.*"
+        "text": "*Dain com uma expressão que eu nunca vi. Dain sem rir.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -432,7 +432,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Engra?ado, n?? Desde os cinco anos eu ficava nessa quadra todo dia... e agora tenho que pensar em outra coisa."
+        "text": "É muito engraçado, não é? Estou nesta quadra todos os dias desde os 5 anos... mas agora tenho que pensar em outras coisas."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -488,7 +488,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...D?i. Mas como foi o seu levantamento, fica um pouco melhor."
+        "text": "... haha, isso dói. Mas como é um lance, é um pouco melhor."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
@@ -504,7 +504,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Deixa a bola de v?lei no ch?o e anda na frente. Ela n?o olha para tr?s.*"
+        "text": "*Não há ponto de exclamação. Dain larga a bola de vôlei e caminha primeiro.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -677,10 +677,10 @@
     },
     "wall_yuna_choice": {
         "name": "Yuna",
-        "text": "*Aperta o livro na m?o. Enquanto espera uma resposta, a ponta da carta amassa um pouco.*",
+        "text": "*Os olhos de Yuna estão levemente úmidos. As pontas dos dedos que seguram o livro estão brancas de tanta pressão.*",
         "choices": [
             "Eu não sou esse veterano. Eu sou eu. E vou continuar do seu lado.",
-            "Agora estou ouvindo o que voc? disse. Eu n?o vou fugir.",
+            "Esquece o veterano. Quem tá na sua frente agora sou eu.",
             "...Então você se aproximou de mim por causa dele? Tipo substituto?"
         ]
     },
@@ -694,7 +694,7 @@
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
-        "text": "*Levanta a cabe?a. Desta vez, n?o desvia o olhar.*"
+        "text": "*Yuna levanta a cabeça. Não são mais os olhos vermelhos semicerrados de sempre. Ela olha direto, sem vacilar.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
@@ -779,11 +779,11 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "O vento estava bom hoje. Ent?o... eu esperei um pouco."
+        "text": "O vento estava bom hoje. E... eu criei expectativa. À toa."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Ei, hoje foi divertido. ...Eu esperava n?o ter sido a ?nica empolgada."
+        "text": "Ei hoje foi divertido kkkk ...espero que não fosse só eu empolgada."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",

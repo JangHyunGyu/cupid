@@ -7592,7 +7592,7 @@
     "lunch2_dain_end_t": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins22",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*비밀이라기엔 가벼운데, 알려주는 행위 자체가 — 가까워졌다는 의미다.*",
+      "_ko_text_preview": "*별것 아닌 비밀인데, 보건선생님은 말하고 나서 책상 모서리를 손톱으로 톡톡 친다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins22",

@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "School Nurse",
-        "text": "*Looks up* First time here, right? You're the transfer student."
+        "text": "*Looks up.* First time here, right? You're the transfer student."
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*It's not much of a secret, but after saying it, Dain taps the cup noodle lid with her fingernail.*"
+        "text": "*It's not much of a secret, but after saying it, the nurse taps the edge of the desk with her fingernail.*"
     },
     "lunch2_dain_end_u": {
         "name": "School Nurse",
