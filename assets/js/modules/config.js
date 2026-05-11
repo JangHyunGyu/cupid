@@ -215,6 +215,21 @@ function getCupidDeviceId() {
     }
 }
 
+const CUPID_SUPPORTED_LANGS = new Set(['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt']);
+
+function getCupidLanguage() {
+    const raw = String(window.GAME_LANG || document.documentElement.lang || 'ko')
+        .toLowerCase()
+        .replace('_', '-');
+    const lang = raw.split('-')[0];
+    return CUPID_SUPPORTED_LANGS.has(lang) ? lang : 'ko';
+}
+
+function getCupidAppId() {
+    const lang = getCupidLanguage();
+    return lang === 'ko' ? 'cupid' : `cupid-${lang}`;
+}
+
 // ============================================================================
 // R2 이미지 업로드 (harem 패턴과 동일)
 // ============================================================================
@@ -251,7 +266,8 @@ async function migrateCupidChatHistoryToD1() {
     if (localStorage.getItem(FLAG)) return;
 
     const userId = getCupidDeviceId();
-    const headers = { 'Content-Type': 'application/json', 'x-app-id': 'cupid' };
+    const language = getCupidLanguage();
+    const headers = { 'Content-Type': 'application/json', 'x-app-id': getCupidAppId() };
     let totalSaved = 0;
 
     async function postOne(charId, role, content, sessionId, context) {
@@ -259,7 +275,7 @@ async function migrateCupidChatHistoryToD1() {
             await fetch(API_ENDPOINT + 'chat-logs', {
                 method: 'POST',
                 headers,
-                body: JSON.stringify({ userId, charId, sessionId, role, content, context })
+                body: JSON.stringify({ userId, charId, sessionId, role, content, context, language })
             });
             totalSaved++;
         } catch (e) {
@@ -364,11 +380,12 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
     if (!charId) return;
     const userId = getCupidDeviceId();
     const playerName = _pn || window.gameEngine?.stateManager?.playerName || '';
-    const headers = { 'Content-Type': 'application/json', 'x-app-id': 'cupid' };
+    const language = getCupidLanguage();
+    const headers = { 'Content-Type': 'application/json', 'x-app-id': getCupidAppId() };
     const post = (role, content) => fetch(API_ENDPOINT + 'chat-logs', {
         method: 'POST',
         headers,
-        body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName })
+        body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName, language })
     }).catch(err => console.warn('[ChatLog] cupid 저장 실패:', err.message));
 
     try {
@@ -431,6 +448,8 @@ window.isCupidDesktopPointer = isCupidDesktopPointer;
 window.getCupidKeyboardOffset = getCupidKeyboardOffset;
 window.updateCupidKeyboardBaseline = updateCupidKeyboardBaseline;
 window.getCupidDeviceId = getCupidDeviceId;
+window.getCupidLanguage = getCupidLanguage;
+window.getCupidAppId = getCupidAppId;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;
