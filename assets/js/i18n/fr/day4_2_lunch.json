@@ -1,19 +1,19 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon attend d?j? pr?s de la fontaine. Pas de bloc-notes, seulement la lani?re de son sac enroul?e autour de ses doigts.*"
+        "text": "*Devant la fontaine. Seoyeon est déjà là. Pas de planchette aujourd'hui. À la place, ses doigts plient et déplient la sangle de son sac deux fois.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
         "text": "*Qu’est-ce que je dis ?*",
         "choices": [
-            "Tu es jolie aujourd?hui.",
+            "Tu es vraiment belle aujourd'hui.",
             "Tu t’es vraiment préparée aujourd’hui."
         ]
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "*La lani?re du sac se rel?che dans sa main.*"
+        "text": "*Seoyeon s’arrête un instant. Sa main se desserre sur la bandoulière.*"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*Elle ne r?pond pas et glisse ses cheveux derri?re son oreille. La m?me main remonte presque aussit?t.*"
+        "text": "*'Te fais pas d'illusions.' — Mais sa main n'arrête pas de remettre ses cheveux.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -53,7 +53,7 @@
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "*Elle regarde les miettes de pain couler au bord de l?eau. Devant la fleuriste, son pas ralentit.*"
+        "text": "*Des mots détachés — mais dits par quelqu'un qui l'a vécu. On passe devant un fleuriste.*"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
@@ -85,7 +85,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*Elle baisse la t?te et fixe longtemps le bord de sa tasse.*"
+        "text": "*Yuna s’arrête un instant. Elle baisse légèrement la tête.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*La distance tient jusqu?au moment o? le fil de l??couteur se tend. Yuna ne s?assoit pas plus pr?s que ?a.*"
+        "text": "*La distance entre nous, c'est la longueur du fil de l'écouteur. Trente centimètres. — Plus près et on se touche, plus loin et il tombe.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*Qu?est-ce que je devrais dire ?*",
+        "text": "*Ça devient un schéma récurrent maintenant.*",
         "choices": [
             "Cette casquette te va bien.",
             "Comment tu fais pour être jolie en tenue de sport ?"
@@ -181,7 +181,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "*Elle s?arr?te. Elle enfonce sa casquette si bas que la moiti? de son visage dispara?t.*"
+        "text": "*Dain se fige. Ses yeux s’écarquillent. — Puis elle enfonce sa casquette sur son visage.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -193,11 +193,11 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Elle garde les doigts sur la visi?re de sa casquette et met un moment? baisser la main.*"
+        "text": "*Elle a dit ‘si tu dis des choses comme ça’, mais sa voix tremblait.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Quoi, comme ?a d?un coup ? ...Merci, mais laisse-moi une seconde pour me reprendre."
+        "text": "Quoi ?! ...Haha, merci, mais arrête, c’est gênant."
     },
     "date_dain_bright": {
         "name": "Dain",
@@ -313,7 +313,7 @@
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*Sous sa casquette* ...Redis ?a une fois et je te frappe."
+        "text": "*Sous sa casquette* ...Redis ça encore une fois et je te frappe pour de vrai."
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*D?s que le jeu de rythme commence, les mains de Dain attrapent la mesure. Le combo ne se brise pas avant la fin du morceau.*"
+        "text": "*Jeu de rythme. Dain est incroyablement douée.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -337,7 +337,7 @@
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "J?ai pass? un bon moment aujourd?hui. Je voulais que tu le saches."
+        "text": "C'était bien. — Retiens juste ça."
     },
     "date_yuna_end_b": {
         "name": "Yuna",
@@ -345,7 +345,7 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*? J?ai beaucoup parl? aujourd?hui. Parce que c??tait avec toi. ? L?encre lavande bave un peu sur le dernier caract?re.*"
+        "text": "*'Aujourd'hui j'ai eu beaucoup de phrases. Seulement devant toi.' — L'écriture de Yuna tremble.*"
     },
     "date_dain_end_b": {
         "name": "Dain",
@@ -353,6 +353,6 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Aujourd?hui, c??tait vraiment bien. ...Je ne dis pas ?a comme ?a."
+        "text": "Aujourd'hui c'était vraiment chouette. ...Sans point d'exclamation."
     }
 }

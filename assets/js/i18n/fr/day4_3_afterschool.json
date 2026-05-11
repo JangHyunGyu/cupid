@@ -25,7 +25,7 @@
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*Mes lèvres s'ouvrent une fois, puis se referment.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
@@ -61,7 +61,7 @@
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*Les secondes à attendre une réponse s'étirent.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
@@ -129,7 +129,7 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*En cherchant mes mots, le bout de mes doigts devient froid.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -141,11 +141,11 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*Ma voix sort plus basse que prévu.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*Les excuses me viennent facilement. Il ne reste que les mots que je veux vraiment dire.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*Même après les mots, mon regard ne se relève pas tout de suite.*"
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*Je pourrais en faire une blague et laisser la journée passer. Mais je n'en ai pas envie.*"
     },
     "confess_dain_choice": {
         "name": "Dain",
@@ -249,11 +249,11 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*Ma voix tombe bas sur le parquet du gymnase.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*Je reprends un court souffle et j'ouvre de nouveau la bouche.*"
     },
     "confess_dain_yes_3": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*Les derniers mots restent sur le terrain.*"
     },
     "confess_dain_yes_8": {
         "name": "Dain",

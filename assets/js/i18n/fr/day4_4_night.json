@@ -105,7 +105,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Chaque fois qu?on me complimentait, c?est la premi?re chose qui me venait. Que ce visage, je l?avais r?p?t? devant le miroir encore et encore."
+        "text": "À chaque compliment, je pensais. — Même ce sourire est répété. Quelqu'un m'a vraiment vue ?"
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -171,9 +171,9 @@
         "name": "Seoyeon",
         "text": "*Elle essuie ses larmes, me regardant avec des yeux tremblants.*",
         "choices": [
-            "J?aime aussi ce visage-l?. Pas celui que tu as r?p?t?.",
-            "Aujourd?hui, tu n?as aucun r?le ? jouer.",
-            "Merci de me l?avoir montr?. M?me la part que tu cachais."
+            "J'aime aussi ce visage-là. Pas celui que tu as répété.",
+            "Pas la présidente du conseil — juste Seoyeon, c'est elle ma petite amie.",
+            "Honnêtement, je pensais que tu étais douée en tout. Merci de me montrer ce côté aussi."
         ]
     },
     "wall_seo_line_react_1": {
@@ -267,19 +267,19 @@
     },
     "wall_dain_2": {
         "name": "Dain",
-        "text": "H?, tu as un moment l? ?"
+        "text": "Hé, t’es libre là ? mdr"
     },
     "wall_dain_2_b": {
         "name": "Dain",
-        "text": "*Je ne suis pas cens?e venir au lyc?e, hein ?*"
+        "text": "*On n'est pas censés être au lycée, si ?*"
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "...Viens, c?est tout. J?ai laiss? la porte arri?re du gymnase ouverte."
+        "text": "Viens juste mdr ! J’ai laissé la porte arrière du gymnase ouverte !"
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*Dans le gymnase, seules les lumi?res de secours sont allum?es. Dain fait rebondir un ballon toute seule. Sa bouche sourit, mais ses ?paules sont raides.*"
+        "text": "*Le gymnase sombre, éclairé seulement par les lumières de secours. Dain fait rebondir un ballon de volley seule. Elle sourit plus fort que d’habitude.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*Elle ne sourit pas. C?est ce qu?il y a de plus?trange.*"
+        "text": "*Dain a une expression que je ne lui ai jamais vue. Dain, sans sourire.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -432,7 +432,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "C?est dr?le, non ? Depuis mes cinq ans, j??tais sur ce terrain tous les jours... et maintenant il faut que je pense ? autre chose."
+        "text": "C'est vraiment drôle, n'est-ce pas? Je suis sur ce terrain tous les jours depuis l'âge de 5 ans... mais maintenant je dois penser à autre chose."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -488,7 +488,7 @@
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...?a fait mal. Mais comme c??tait ta passe, ?a va un peu mieux."
+        "text": "... mdr ça fait mal. Mais comme c'est un tirage au sort, c'est un peu mieux."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
@@ -520,7 +520,7 @@
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*Son pas se suspend un instant. Quand elle repart, il est un peu plus l?ger.*"
+        "text": "*Dain s'arrête brièvement. — Puis reprend la marche. D'un pas plus léger.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
@@ -625,7 +625,7 @@
     },
     "wall_yuna_12": {
         "name": "Yuna",
-        "text": "*Elle dit tout cela sans s?arr?ter une seule fois.*"
+        "text": "*Les phrases de Yuna sont plus longues que d'habitude. Beaucoup plus.*"
     },
     "wall_yuna_13": {
         "name": "Yuna",
@@ -677,10 +677,10 @@
     },
     "wall_yuna_choice": {
         "name": "Yuna",
-        "text": "*Elle serre le livre dans sa main. Pendant qu?elle attend une r?ponse, le coin de la lettre se froisse un peu.*",
+        "text": "*Les yeux de Yuna sont légèrement humides. Le bout de ses doigts tenant le livre est blanc de pression.*",
         "choices": [
             "Je ne suis pas ce senior. Je suis moi. Mais je resterai à tes côtés.",
-            "L?, j??coute ce que tu viens de me dire. Je ne fuirai pas.",
+            "Laisse tomber ce senior. Celui qui est devant toi maintenant, c'est moi.",
             "...Alors tu t’es rapprochée de moi à cause de lui ? Comme remplaçant ?"
         ]
     },
@@ -694,7 +694,7 @@
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
-        "text": "*Elle rel?ve la t?te. Cette fois, elle ne d?tourne pas les yeux.*"
+        "text": "*Yuna lève la tête. Ce ne sont pas ses yeux nonchalants habituels. Elle me regarde droit dans les yeux, sans vaciller.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
@@ -779,11 +779,11 @@
     },
     "day4_night_regret_msg_seo": {
         "name": "Seoyeon",
-        "text": "Le vent ?tait agr?able aujourd?hui. Alors... j?ai attendu un peu."
+        "text": "Le vent était agréable aujourd'hui. Alors... j'ai un peu espéré. Pour rien."
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "H?, aujourd?hui c??tait sympa. ...J?esp?rais ne pas ?tre la seule ? m??tre emball?e."
+        "text": "Hé, c'était sympa aujourd'hui haha... ...J'espère que je n'étais pas la seule à être si enthousiaste."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",

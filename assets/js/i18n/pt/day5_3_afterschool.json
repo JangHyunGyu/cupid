@@ -33,7 +33,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Se vira e acena. N?o olha para tr?s. S? A fita no pulso balan?a no fim do corredor.*"
+        "text": "*Seoyeon vira e acena. Não olha para trás. Apenas a fita no pulso balança brevemente no fim do corredor.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*Joga a bola de v?lei bem alto mais uma vez e pega. As pontas dos dedos chegam um pouco atrasadas.*"
+        "text": "*O ponto de exclamação está vivo. Dain joga a bola de vôlei para o alto e a pega novamente.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*O vento joga o cabelo dela. Desta vez, Seoyeon n?o o ajeita.*"
+        "text": "*Um segundo de silêncio. O vento balança o cabelo dela. Ela não tira do rosto.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
@@ -199,11 +199,11 @@
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "*Fica im?vel. A bola na m?o dela desce devagar.*"
+        "text": "*Os olhos arregalam. Um segundo. Dois segundos.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...Voc? voltou?"
+        "text": "...Sério?"
     },
     "after5_last_chance_2_p": {
         "name": "Dain",
@@ -294,7 +294,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Saindo da escola.* Ei, voc?... Eu esperei, sim. Mas sorrir logo s? porque esperei seria injusto. Desta vez, fala at? o fim."
+        "text": "*Saindo da escola.* Ei, sério?! ...Mesmo? Esperar eu esperei. — Mas sorrir ali mesmo seria humilhante. Desta vez fala até o fim."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",

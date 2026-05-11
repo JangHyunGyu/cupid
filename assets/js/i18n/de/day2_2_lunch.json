@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Schulkrankenschwester",
-        "text": "*Blickt auf* Zum ersten Mal hier, oder? Du bist der Neue."
+        "text": "*Blickt auf.* Zum ersten Mal hier, oder? Du bist der Neue."
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Es ist kein großes Geheimnis, aber nachdem sie es gesagt hat, tippt Dain mit dem Fingernagel auf den Deckel der Instant-Nudeln.*"
+        "text": "*Es ist kein großes Geheimnis, aber nachdem sie es gesagt hat, tippt die Krankenschwester mit dem Fingernagel auf die Tischkante.*"
     },
     "lunch2_dain_end_u": {
         "name": "Schulkrankenschwester",

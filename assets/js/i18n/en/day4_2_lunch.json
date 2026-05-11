@@ -13,7 +13,7 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "*The bag strap loosens in she?s hand.*"
+        "text": "*Seoyeon pauses for a moment. The hand gripping her bag strap loosens.*"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
@@ -173,7 +173,7 @@
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*What should I say?*",
+        "text": "*This is becoming a pattern now.*",
         "choices": [
             "That cap looks good on you.",
             "Sportswear shouldn't look this good."
@@ -197,7 +197,7 @@
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "What, out of nowhere? ...Thanks, but give me a second to sort myself out."
+        "text": "WHAT — !! ...Haha, thanks, but stop, it's embarrassing."
     },
     "date_dain_bright": {
         "name": "Dain",
@@ -313,7 +313,7 @@
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*From under the cap* ...Say that one more time and I?ll hit you."
+        "text": "*From under her cap* ...Say that one more time and I'll seriously hit you."
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -321,7 +321,7 @@
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*As soon as the rhythm game starts, Dain?s hands catch the beat first. The combo does not break until the song ends.*"
+        "text": "*Rhythm game. Dain is overwhelmingly good.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -345,7 +345,7 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*?I talked a lot today. Because it was with you.? The lavender ink blurs a little at the final character.*"
+        "text": "*'I had a lot of sentences today. Only in front of you.' — Yuna's handwriting is trembling.*"
     },
     "date_dain_end_b": {
         "name": "Dain",
@@ -353,6 +353,6 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Today was fun. ...I?m not just saying that."
+        "text": "Today was really fun. ...Without the exclamation mark."
     }
 }

@@ -7,7 +7,7 @@
         "name": "{name}",
         "text": "*Was sage ich?*",
         "choices": [
-            "Du siehst heute h?bsch aus.",
+            "Du siehst heute wirklich schön aus.",
             "Du hast dir heute echt Mühe gegeben."
         ]
     },
@@ -69,7 +69,7 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "*Sie h?lt mir den Topf hin. Sein kleines, erdiges Gewicht legt sich in meine Handfl?che.*"
+        "text": "*Was Seoyeon mir gab. — Meine Hand, die es hält, zittert.*"
     },
     "date_yuna_1": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*Der Abstand reicht genau bis kurz bevor das Kopfh?rerkabel straff wird. Nur so nah setzt sich Yuna.*"
+        "text": "*Der Abstand zwischen uns ist die Länge des Kopfhörerkabels. Dreißig Zentimeter. — Näher und wir berühren uns, weiter und er fällt heraus.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*Was soll ich sagen?*",
+        "text": "*Das wird langsam zum Muster.*",
         "choices": [
             "Die Kappe ist cool.",
             "Warum sieht Sportkleidung an dir so gut aus?"
@@ -193,11 +193,11 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Sie h?lt den Schirm ihrer Kappe fest und kann die Hand eine Weile nicht senken.*"
+        "text": "*Sie sagte 'wenn du so was sagst', aber ihre Stimme zitterte.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Was, so pl?tzlich? ...Danke, aber gib mir kurz Zeit, mich zu sortieren."
+        "text": "Was?! ...Haha, danke, aber hör auf, das ist mir peinlich."
     },
     "date_dain_bright": {
         "name": "Dain",
@@ -321,7 +321,7 @@
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*Sobald das Rhythmusspiel beginnt, finden Dains H?nde zuerst den Takt. Die Combo rei?t bis zum Ende des Songs nicht ab.*"
+        "text": "*Rhythmusspiel. Dain ist überwältigend gut.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -337,7 +337,7 @@
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "Heute war sch?n. Das wollte ich dir sagen."
+        "text": "Es war schön. — Merk dir das einfach."
     },
     "date_yuna_end_b": {
         "name": "Yuna",
@@ -345,7 +345,7 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*?Heute habe ich viel geredet. Weil ich vor dir war.? Die lavendelfarbene Tinte verl?uft am letzten Zeichen ein wenig.*"
+        "text": "*'Heute hatte ich viele Sätze. Nur vor dir.' — Yunas Schrift zittert.*"
     },
     "date_dain_end_b": {
         "name": "Dain",
@@ -353,6 +353,6 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Heute hat Spa? gemacht. ...Ich sage das nicht einfach so."
+        "text": "Heute hat echt Spaß gemacht. ...Ohne Ausrufezeichen."
     }
 }

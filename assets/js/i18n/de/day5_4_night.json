@@ -141,7 +141,7 @@
     },
     "true_epilogue_1_seo": {
         "name": "{name}",
-        "text": "*Es waren f?nf Tage. Bis ich das Gesicht sah, das Seoyeon hinter ihrem Klemmbrett versteckt hatte.*"
+        "text": "*Fünf Tage. So lange dauerte es, bis ich die Fingerspitzen hinter Seoyeons Klemmbrett sah.*"
     },
     "ending_aff_check_yuna": {
         "name": "System",
@@ -237,7 +237,7 @@
     },
     "true_yuna_5_b": {
         "name": "Yuna",
-        "text": "*Sie h?lt inne. Ihr Griff um den Buchr?cken lockert sich.*"
+        "text": "*Yuna hält kurz inne. Die Hand am Buchrücken lockert sich.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -281,7 +281,7 @@
     },
     "perfect_dain_3b": {
         "name": "Dain",
-        "text": "*Sie legt den Volleyball aufs Feld. Sie dreht sich um und l?chelt. Ein stilles L?cheln.*"
+        "text": "*Dain legt den Volleyball auf dem Spielfeld ab. Sie dreht sich um und lächelt. Ein Lächeln ohne Ausrufezeichen.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
@@ -293,7 +293,7 @@
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Dains Knie knickt bei der Landung ein wenig ein. Sie l?chelt zuerst und dr?ckt dann die Hand darauf.*"
+        "text": "*Dains Knie knickt beim Landen leicht ein. Sie lacht zuerst, dann drückt sie ihre Hand aufs Knie.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "System",
@@ -329,7 +329,7 @@
     },
     "bitter_epilogue_1": {
         "name": "{name}",
-        "text": "*Nach dem Abschluss. Der Kontakt wurde seltener. Einmal im Monat wurde zu einmal alle zwei Monate. Eines Tages ließ ich 'Was soll ich sagen?' im Nachrichtenfeld stehen und schaltete den Bildschirm aus.*"
+        "text": "*Nach dem Abschluss. Der Kontakt wurde seltener. Einmal im Monat wurde zu einmal alle zwei Monate, Nachrichten ungelesen zu lassen wurde zur Gewohnheit, und eines Tages — als ich schreiben wollte und nicht wusste was — wusste ich, dass es vorbei war.*"
     },
     "bitter_epilogue_2": {
         "name": "{name}",
@@ -353,7 +353,7 @@
     },
     "true_dain_3": {
         "name": "{name}",
-        "text": "*Ihr Puls schl?gt deutlich unter meinen Fingerspitzen.*"
+        "text": "*Der Puls unter meinen Fingerspitzen ist deutlich spürbar.*"
     },
     "true_dain_4": {
         "name": "{name}",
@@ -385,7 +385,7 @@
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Es waren f?nf Tage. Bis ich die Momente sah, in denen Dain nicht l?cheln konnte.*"
+        "text": "*Fünf Tage. So lange dauerte es, bis ich hörte, wo Dains Ausrufezeichen endeten.*"
     },
     "true_epilogue_2": {
         "name": "{name}",
@@ -498,7 +498,7 @@
     },
     "good_5_seo": {
         "name": "{name}",
-        "text": "*Wir gehen langsam am Ende des Kirschbl?tenwegs vorbei. Diesmal schlucke ich die Worte nicht hinunter: Ich will ein n?chstes Treffen ausmachen.*"
+        "text": "*Während wir langsam über das Ende des Kirschblütenwegs hinausgingen, dachte ich daran. Ich möchte diesen Weg auch im nächsten Frühling mit ihr gehen. Dieses Mal konnte ich es sagen.*"
     },
     "good_epilogue_1": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Eine Nachricht von Dain kommt an. ?Jemand morgen fr?h beim Training dabei?? Der Satz ist vorsichtiger als sonst.*"
+        "text": "*Eine Nachricht von Dain: 'Morgen früh jemand zum Trainieren?' Am Ende ein Fragezeichen. Normalerweise wäre es ein Ausrufezeichen gewesen.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -590,7 +590,7 @@
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Ich schicke die Antwort. ?Bin dabei.? Morgen kann ich einfach selbst hinlaufen.*"
+        "text": "*Ich antwortete: 'Deal.' Ohne Ausrufezeichen. Dafür werde ich morgen persönlich hinrennen.*"
     },
     "good_5_cg_dain": {
         "name": "System",
@@ -654,7 +654,7 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*Als ich das Schultor verlasse, kommt eine Nachricht auf meinem Handy an. ?Danke f?r heute.? Ich tippe ?ich auch? und f?ge nur ein l?chelndes Emoji hinzu.*"
+        "text": "*Ich verlasse das Tor und auf meinem Handy ist eine Nachricht. 'danke für heute lol' Ich tippe 'ich auch', dann füge ich nur noch einen Smiley hinzu.*"
     },
     "friend_4_seo": {
         "name": "{name}",
@@ -666,7 +666,7 @@
     },
     "friend_4_dain": {
         "name": "{name}",
-        "text": "*Als ich das Schultor verlasse, kommt eine Nachricht an. ?Hey, komm gut nach Hause. Danke f?r heute.? Im Antwortfeld bleibt nur ?ja? stehen.*"
+        "text": "*Ich verlasse das Tor und da ist eine Nachricht. 'Hey pass auf! Danke für heute!' Zwei Ausrufezeichen. Ich lasse nur 'ok' im Antwortfeld stehen.*"
     },
     "friend_5": {
         "name": "{name}",
@@ -706,7 +706,7 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Sie l?chelt wie immer.?Pass auf dich auf.? Das Ende des Satzes f?llt leise zu Boden.*"
+        "text": "*Dain lachte wie immer. \"Wie geht es dir.\" Das Ende seiner Worte fiel zu Boden. Soweit ich wusste, gab es kein Ausrufezeichen.*"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -783,7 +783,7 @@
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Klassenlehrerin",
-        "text": "*Sie h?lt inne. Die Ecke des Dokumentenumschlags knickt ein.* ...Pass auf dich auf."
+        "text": "*Halten Sie einen Moment inne. Die Ecke des Umschlags wird gefaltet.*...Auf Wiedersehen."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
@@ -799,7 +799,7 @@
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Klassenlehrerin",
-        "text": "*Sie lacht leise.* Ich habe die Schule verlassen und schreibe nur noch. Arbeite auch nebenbei in einem Caf?. ? Und du?"
+        "text": "*Sie schmunzelt.* Habe aufgehört zu unterrichten. Schreibe nur noch. Teilzeit im Café. — Und du?"
     },
     "hidden_perfect_homeroom_3f": {
         "name": "Klassenlehrerin",
@@ -915,7 +915,7 @@
     },
     "hidden_true_homeroom_5": {
         "name": "Klassenlehrerin",
-        "text": "*Sie sieht aus dem Fenster* ...Also, weil ich es fertig habe, ?berlege ich, es an einen Verlag zu schicken. Was meinst du?"
+        "text": "*Aus dem Fenster blickend* ...Da ich es nun fertig habe, dachte ich, es an einen Verlag zu schicken. — Was meinst du?"
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
@@ -943,7 +943,7 @@
     },
     "hidden_true_homeroom_7_c": {
         "name": "Klassenlehrerin",
-        "text": "...Heute lasse ich die Lehrerinnenstimme weg. *Ihre Worte verlaufen. Dann l?chelt sie.*"
+        "text": "...Eigentlich sollte ich das nicht tun. *— Ihre Stimme verklingt. Dann lächelt sie.*"
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
@@ -984,7 +984,7 @@
     },
     "hidden_perfect_nurse_2": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Person, die die T?r ?ffnet, tr?gt einen Strickpulli statt eines Kittels.* ...Du bist gekommen. H?tte ich nicht gedacht."
+        "text": "*Die Person, die die Tür geöffnet hat, trägt einen Strickpullover statt eines Kittels.*...Da sind Sie. Ich hätte wirklich nicht gedacht, dass es kommen würde."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
@@ -996,11 +996,11 @@
     },
     "hidden_perfect_nurse_4": {
         "name": "Schulkrankenschwester",
-        "text": "*Ihre Hand hebt sich zu meiner Krawatte und l?sst sie wieder los.* ...Bleib heute noch ein bisschen."
+        "text": "*Ihre Hand greift nach meiner Krawatte. Sie lässt nicht los.* ...Heute Nacht lasse ich dich nicht gehen."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",
-        "text": "*Morgen. Licht f?llt durch die Vorh?nge. Ein Pflaster und eine kalte Tasse Kaffee liegen nebeneinander auf dem Tisch.*"
+        "text": "*Morgen. Licht sickert durch die Vorhänge. Atmen neben mir. — Die Person, die drei Minuten brauchte, um ein Pflaster zu kleben, schläft jetzt mit meiner Hand in ihrer.*"
     },
     "hidden_perfect_nurse_5": {
         "name": "Schulkrankenschwester",
@@ -1084,7 +1084,7 @@
     },
     "hidden_true_nurse_5_f": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester stellt ihre Kaffeetasse ab. Ihr L?cheln kommt einen Moment zu sp?t.*"
+        "text": "*Der Gesundheitslehrer hält einen Moment inne. Die Hand, die die Kaffeetasse drehte, bleibt stehen und das Lächeln hält lange an.*"
     },
     "hidden_true_nurse_6": {
         "name": "Schulkrankenschwester",
@@ -1120,7 +1120,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*Im Fenster des Caf?s legt sich kurz der wei?e Vorhang des Krankenzimmers dar?ber und verschwindet wieder.*"
+        "text": "*Einen Moment lang überlagert der weiße Vorhang des Krankenzimmers das Caféfenster und verschwindet.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
@@ -1156,7 +1156,7 @@
     },
     "hidden_good_nurse_2_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie w?hlt ihre Worte* ...Genau. Medizinisches Interesse. *Leise* Nennen wir es so."
+        "text": "*Hält kurz inne* ...Ja. Medizinisches Interesse. *leise* Belassen wir es dabei."
     },
     "hidden_good_nurse_2_d": {
         "name": "Schulkrankenschwester",

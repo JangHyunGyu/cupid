@@ -227,9 +227,13 @@ class DialogueSystem {
         return this._parseNarrationSegments(text).map(seg => {
             const formatted = this._zetaFormatText(seg.content, seg.type === 'action');
             const escaped = this._escapeHtml(formatted).replace(/\n/g, '<br>');
-            return seg.type === 'action'
-                ? `<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 0.75rem 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.85; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">${escaped}</div>`
-                : escaped;
+            if (seg.type === 'action') {
+                return `<div style="background: rgba(0, 0, 0, 0.4); padding: 12px 16px; border-radius: 8px; margin: 0.75rem 0; font-size: 0.95em; color: rgba(255, 255, 255, 0.85); line-height: 1.85; font-style: italic; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">${escaped}</div>`;
+            }
+            if (seg.type === 'emphasis') {
+                return `<strong>${escaped}</strong>`;
+            }
+            return escaped;
         }).join('');
     }
 
@@ -239,14 +243,14 @@ class DialogueSystem {
 
     _parseNarrationSegments(text) {
         const segments = [];
-        const regex = /\*\*([^*]+)(?:\*\*)?|\*([^*]+)(?:\*)?/g;
+        const regex = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
         let lastIndex = 0;
         let match;
         while ((match = regex.exec(text)) !== null) {
             if (match.index > lastIndex) {
                 segments.push({ type: 'text', content: text.substring(lastIndex, match.index) });
             }
-            segments.push({ type: 'action', content: match[1] || match[2] });
+            segments.push({ type: match[1] ? 'emphasis' : 'action', content: match[1] || match[2] });
             lastIndex = regex.lastIndex;
         }
         if (lastIndex < text.length) {

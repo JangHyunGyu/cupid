@@ -25,11 +25,11 @@
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*My lips part once, then close again.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*The confession-practice memo folds and unfolds in her palm. The crease is now three layers deep.*",
+        "text": "*The confession-practice memo folds and unfolds in my palm. The crease is now three layers deep.*",
         "choices": [
             "Seoyeon. Just a second.",
             "...Nice breeze."
@@ -61,11 +61,11 @@
     },
     "confess_seo_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*The seconds waiting for an answer stretch longer.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
-        "text": "*She doesn’t say anything. My lips are trembling. There is no clipboard or student council president armband.*"
+        "text": "*She says nothing. Her lips tremble. There is no clipboard, no student council armband.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -129,7 +129,7 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*While I search for the words, my fingertips go cold.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -141,11 +141,11 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*My voice comes out smaller than I expected.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*The excuses come easily. Only the words I want to say remain.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*Even after the words land, my eyes do not lift easily.*"
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": ""
+        "text": "*I could turn this into a joke and let today pass. I don't want to.*"
     },
     "confess_dain_choice": {
         "name": "Dain",
@@ -249,11 +249,11 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": ""
+        "text": "*My voice settles low against the gym floor.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": ""
+        "text": "*I steady one short breath and open my mouth again.*"
     },
     "confess_dain_yes_3": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": ""
+        "text": "*The last words remain on the court.*"
     },
     "confess_dain_yes_8": {
         "name": "Dain",

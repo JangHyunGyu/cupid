@@ -1,19 +1,19 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Seoyeon j? espera perto da fonte. N?o h? prancheta, s? a al?a da bolsa enrolada nos dedos.*"
+        "text": "*Na fonte. Seoyeon já chegou. Hoje não tem prancheta. Em vez disso, os dedos dobram e desdobram a alça da bolsa duas vezes.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
         "text": "*O que eu digo?*",
         "choices": [
-            "Voc? est? bonita hoje.",
+            "Tá linda hoje. De verdade.",
             "Caprichou hoje, hein."
         ]
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "*A al?a da bolsa afrouxa na m?o de ela.*"
+        "text": "*Seoyeon para por um instante. A mão que segura a alça da bolsa relaxa.*"
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
@@ -33,7 +33,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*N?o responde; coloca o cabelo atr?s da orelha. A mesma m?o sobe de novo quase na hora.*"
+        "text": "*'Não se iluda.' — Mas a mão dela não para de ajeitar o cabelo.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "*Observa as migalhas afundarem perto da?gua. Diante da floricultura, seus passos ficam mais lentos.*"
+        "text": "*Palavras casuais — mas de alguém que já passou por isso. Passamos por uma floricultura.*"
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*Baixa a cabe?a e fica olhando para a borda do copo.*"
+        "text": "*Yuna para por um instante. Abaixa levemente a cabeça.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -129,7 +129,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*N?o levanta o olhar. Ela est? Esperando.*"
+        "text": "*De novo? — Yuna pediu pra eu repetir.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*A dist?ncia vai at? antes do fio do fone esticar. Yuna se senta s? esse tanto mais perto.*"
+        "text": "*A distância entre a gente é o comprimento do fio. Trinta centímetros. — Mais perto, a gente se encosta. Mais longe, o fone cai.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -213,7 +213,7 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*?Hoje eu falei bastante. Porque era com voc?.? A tinta lavanda borra um pouco no ?ltimo caractere.*"
+        "text": "*'Hoje eu disse muitas frases. Só do seu lado.' — A letra da Yuna está tremendo.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -233,7 +233,7 @@
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*O que eu digo?*",
+        "text": "*Isso já virou padrão.*",
         "choices": [
             "Curti esse boné.",
             "Roupa de treino não devia ficar tão bonita assim."
@@ -241,7 +241,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "*Para. Ela puxa o bon? T?o baixo que metade do rosto desaparece.*"
+        "text": "*Dain trava. Arregala os olhos. — E puxa o boné até o meio da cara.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -253,11 +253,11 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Fica segurando a aba do bon? E demora a baixar a m?o.*"
+        "text": "*Disse 'não pode soltar isso', mas a voz dela está tremendo.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "O qu?, do nada? ...Obrigada, mas me d? um segundo pra me organizar."
+        "text": "Ué, do nada!! ...kkkk Fico até com vergonha, para com isso."
     },
     "date_dain_bright": {
         "name": "Dain",
@@ -285,7 +285,7 @@
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*Assim que o jogo de ritmo come?a, as m?os de Dain pegam o compasso primeiro. O combo n?o quebra at? a m?sica acabar.*"
+        "text": "*Jogo de ritmo. — Dain é absurdamente boa.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -329,7 +329,7 @@
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*Debaixo do bon?* ...Fala isso mais uma vez e eu te bato."
+        "text": "*Por baixo do boné* ...Fala isso mais uma vez e eu te dou um tapa de verdade."
     },
     "date_dain_end": {
         "name": "{name}",
@@ -341,7 +341,7 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Hoje foi divertido. ...N?o estou falando por falar."
+        "text": "Hoje foi muito bom de verdade. ...Sem ponto de exclamação."
     },
     "pre_confess_minsu": {
         "name": "Minsu",

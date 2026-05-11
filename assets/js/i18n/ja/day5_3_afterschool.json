@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "ソヨン",
-        "text": "*???????????????????????????????????????*"
+        "text": "*ソヨンが振り向きながら手を振る。振り返らない。手首のリボンだけが廊下の端でしばらく揺れる。*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -99,11 +99,11 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "ダイン",
-        "text": "???????????????"
+        "text": "……うまくやりなよ。マジで。"
     },
     "after5_farewell_dain_4_d": {
         "name": "ダイン",
-        "text": "*??????????????????????????????????????*"
+        "text": "*感嘆符は健在だ。——ダインは最後までダインだ。それがこの人の強さ。*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -120,7 +120,7 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*最後の一歩が二股に分かれる。既に約束した人と、やっと過ぎなかった校門の方。"
+        "text": "*最後の足取りが二つに分かれる。もう約束している相手と、最後まで見ないふりができなかった気持ち。*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*???????????????????????*"
+        "text": "*少しの沈黙。風が髪を揺らす。払わない。*"
     },
     "after5_last_chance_2_g": {
         "name": "ソヨン",
@@ -207,19 +207,19 @@
     },
     "after5_last_chance_2_m": {
         "name": "ダイン",
-        "text": "??????"
+        "text": "え、マジで？！"
     },
     "after5_last_chance_2_n": {
         "name": "ダイン",
-        "text": "*?????????????????????????????*"
+        "text": "*目が大きくなる。1秒。2秒。*"
     },
     "after5_last_chance_2_o": {
         "name": "ダイン",
-        "text": "?????????"
+        "text": "……マジで？"
     },
     "after5_last_chance_2_p": {
         "name": "ダイン",
-        "text": "*ダインの唇が震える。答える前に息から飲み込む。"
+        "text": "*感嘆符が消える。声が小さくなる。——目が潤んでくる。*"
     },
     "after5_last_chance_2_q": {
         "name": "ダイン",
@@ -256,7 +256,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*準備した言葉はないのに、今回は足が後ろに退きません。 ユナは促さない。"
+        "text": "*用意した言葉はないのに、不思議と今回は逃げたくない。ユナは急かさない。*"
     },
     "after5_last_chance_yuna_5": {
         "name": "ユナ",
@@ -280,7 +280,7 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*???????????????????*",
+        "text": "*手のひらの中で携帯の角が食い込む。*",
         "choices": [
             "今、言う",
             "...何も言えなかった"
@@ -306,7 +306,7 @@
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "ダイン",
-        "text": "*????????* ????????????????????????????????????????????????"
+        "text": "*学校を出ながら。*ねえ、マジで？！…本当に？待ってはいたけど。—でも待ってたからってすぐ笑ったら悔しいじゃん。今度は最後まで言って。"
     },
     "after5_confess_react_dain_low": {
         "name": "ダイン",
@@ -363,7 +363,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*結論が出ていない一歩が公園に向かった。"
+        "text": "*結論の出ない気持ちを抱えたまま、足は公園へ続いていった。*"
     },
     "after5_confess_no": {
         "name": "{name}",

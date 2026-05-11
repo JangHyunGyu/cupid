@@ -565,7 +565,7 @@
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Infirmière",
-        "text": "*Levant les yeux* C'est la première fois que tu viens, non ? Le nouvel élève, c'est ça ?"
+        "text": "*Lève les yeux.* C'est la première fois que tu viens, non ? Tu es le nouvel élève ?"
     },
     "lunch2_dain_end_f": {
         "name": "{name}",
@@ -633,7 +633,7 @@
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Ce n'est pas vraiment un secret, mais après l'avoir dit, Dain tapote le couvercle des nouilles instantanées avec son ongle.*"
+        "text": "*Ce n'est pas vraiment un secret, mais après l'avoir dit, l'infirmière tapote le bord du bureau avec son ongle.*"
     },
     "lunch2_dain_end_u": {
         "name": "Infirmière",

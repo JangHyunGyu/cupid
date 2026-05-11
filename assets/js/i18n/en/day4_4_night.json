@@ -271,11 +271,11 @@
     },
     "wall_dain_2_b": {
         "name": "Dain",
-        "text": "*I?m not supposed to come to school, right?*"
+        "text": "*We're not supposed to be at school, right?*"
     },
     "wall_dain_3": {
         "name": "Dain",
-        "text": "...Just come. I left the gym?s back door open."
+        "text": "just come lol! left the gym back door open!"
     },
     "wall_dain_4": {
         "name": "{name}",
@@ -432,7 +432,7 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Funny, right? I?ve stood on this court every day since I was five... and now I have to think about something else."
+        "text": "It's really funny, isn't it? I've been on this court every day since I was 5... but now I have to think about other things."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
@@ -520,7 +520,7 @@
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*She?s steps catch once. When she starts walking again, they are a little lighter.*"
+        "text": "*Dain pauses briefly. — Then starts walking again. With lighter steps.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
@@ -680,7 +680,7 @@
         "text": "*She tightens her grip on the book. While she waits for an answer, the corner of the letter creases a little.*",
         "choices": [
             "I'm not that senior. I'm me. But I'll still stay by your side.",
-            "I?m listening to what you said right now. I won?t run.",
+            "Forget about him. The one in front of you right now is me.",
             "...So you came to me because of him? As some kind of replacement?"
         ]
     },
@@ -783,7 +783,7 @@
     },
     "day4_night_regret_msg_dain": {
         "name": "Dain",
-        "text": "Hey, today was fun. ...I hoped I wasn?t the only one getting carried away."
+        "text": "Hey, today was fun haha ...I just hoped I wasn't the only one who got excited."
     },
     "day4_night_regret_msg_yuna": {
         "name": "Yuna",

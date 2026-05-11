@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Klassenlehrerin",
-        "text": "*bedeckt den Mund mit einer Kaffeetasse*...wird das alles im Gesicht verwendet? Okay, lass uns gehen."
+        "text": "*Verdeckt den Mund mit der Kaffeetasse* ...Poker-Face gescheitert. Schon gut, geh."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Klassenlehrerin",
@@ -326,7 +326,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Klassenlehrerin",
-        "text": "*Ihr Blick streift die Schublade und kehrt sofort zur?ck.*"
+        "text": "*Die Lehrerin zögert kurz. Ihr Blick wandert zur Schublade — und kehrt sofort zurück.*"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",

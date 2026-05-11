@@ -210,7 +210,7 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",
-        "text": "*couvre la bouche avec une tasse de café*... est-ce que tout est utilisé sur le visage? D'accord, allons-y."
+        "text": "*Cachant sa bouche derrière sa tasse de café* ...Raté pour le poker face. Bon, file."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professeure principale",
@@ -326,7 +326,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Professeure principale",
-        "text": "*Le regard de la professeure glisse vers le tiroir, puis revient aussit?t.*"
+        "text": "*La prof hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
