@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*Yuna tourne la page. Le bruit du papier est plus léger qu’avant.*"
+        "text": "*Elle tourne la page. Le bruit du papier est plus léger qu’avant.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -192,7 +192,7 @@
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "*Yuna marche devant. Au fond de l'annexe. Un endroit où personne ne semble venir. Une petite pièce apparaît. La lumière entre par la fenêtre, et il y a un vieux canapé et des étagères.*"
+        "text": "*Elle marche devant. Au fond de l'annexe. Un endroit où personne ne semble venir. Une petite pièce apparaît. La lumière entre par la fenêtre, et il y a un vieux canapé et des étagères.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -204,7 +204,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "*Yuna s'assoit sur le canapé. Elle laisse discrètement la place à côté d'elle libre.*"
+        "text": "*Elle s'assoit sur le canapé. Elle laisse discrètement la place à côté d'elle libre.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -228,7 +228,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "Yuna",
-        "text": "*Le doigt de Yuna appuie fermement sur l'extrémité du marque-page.*"
+        "text": "*Son doigt appuie fermement sur l'extrémité du marque-page.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -236,7 +236,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "Yuna",
-        "text": "*Yuna enfonce le marque-page profondément dans le livre. La page se plie après 'Je l'avais.'*"
+        "text": "*Elle enfonce le marque-page profondément dans le livre. La page se plie après 'Je l'avais.'*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
-        "text": "*La main de Yuna s'arrête sur le marque-page. Seul le bruit des pages qui tournent résonne fort.*"
+        "text": "*Sa main s'arrête sur le marque-page. Seul le bruit des pages qui tournent résonne fort.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -296,7 +296,7 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "Yuna",
-        "text": "*Yuna reporte les yeux vers l'étagère. Sur la page ouverte, la lumière s'étire un peu plus.*"
+        "text": "*Elle reporte les yeux vers l'étagère. Sur la page ouverte, la lumière s'étire un peu plus.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
@@ -372,7 +372,7 @@
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Seoyeon regarde le coin de la bouche de {name} en feignant l'indifférence.*"
+        "text": "*Elle regarde le coin de la bouche de {name} en feignant l'indifférence.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -380,7 +380,7 @@
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
-        "text": "*La main de Seoyeon s'approche.*",
+        "text": "*Sa main s'approche.*",
         "choices": [
             "Rester immobile",
             "Je m'essuie moi-même"
@@ -388,7 +388,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "Seoyeon",
-        "text": "*Le doigt de Seoyeon effleure le coin de mes lèvres. Doucement. Lentement. — Plus lentement que nécessaire.*"
+        "text": "*Son doigt effleure le coin de mes lèvres. Doucement. Lentement. — Plus lentement que nécessaire.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -420,7 +420,7 @@
     },
     "lunch2_seo_c2_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon ferme le couvercle de la boîte à lunch avec le même visage souriant. Le clic résonne un peu fort.*"
+        "text": "*Elle ferme le couvercle de la boîte à lunch avec le même visage souriant. Le clic résonne un peu fort.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
@@ -492,7 +492,7 @@
     },
     "lunch2_dain_choice": {
         "name": "Dain",
-        "text": "*Dain fixe {name} droit dans les yeux.*",
+        "text": "*Elle fixe {name} droit dans les yeux.*",
         "choices": [
             "On a un peu discuté hier",
             "Elle m'a juste fait visiter l'école ?",
@@ -501,11 +501,11 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Dain",
-        "text": "*L'expression de Dain se durcit. Elle mord dans le soboro et tourne la tête sans mâcher.*"
+        "text": "*Son expression se durcit. Elle mord dans le soboro et tourne la tête sans mâcher.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Dain",
-        "text": "*Dain hoche la tête et croque son pain soboro. Comme si ça ne l'intéressait pas.*"
+        "text": "*Elle hoche la tête et croque son pain soboro. Comme si ça ne l'intéressait pas.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
@@ -513,7 +513,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "Dain",
-        "text": "*Dain plie l'emballage du soboro plus longtemps que nécessaire. Elle parle moins qu'un instant plus tôt.*"
+        "text": "*Elle plie l'emballage du soboro plus longtemps que nécessaire. Elle parle moins qu'un instant plus tôt.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "lunch2_yuna_c1_9_b": {
         "name": "Yuna",
-        "text": "*Le regard de Yuna se glace un instant.*"
+        "text": "*Son regard se glace un instant.*"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
@@ -533,7 +533,7 @@
     },
     "lunch2_seo_c1_2_b": {
         "name": "Dain",
-        "text": "*Les yeux de Dain s'écarquillent en nous regardant tour à tour.*"
+        "text": "*Ses yeux s'écarquillent en nous regardant tour à tour.*"
     },
     "lunch2_seo_c1_3_b": {
         "name": "Seoyeon",
@@ -541,7 +541,7 @@
     },
     "lunch2_dain_13_b": {
         "name": "Dain",
-        "text": "*Dain prend une grosse bouchée du pain soboro. Des miettes tombent sur sa manche d'uniforme.*"
+        "text": "*Elle prend une grosse bouchée du pain soboro. Des miettes tombent sur sa manche d'uniforme.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",

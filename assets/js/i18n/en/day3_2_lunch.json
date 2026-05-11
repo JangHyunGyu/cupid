@@ -25,7 +25,7 @@
     },
     "lunch3_meal_6": {
         "name": "Yuna",
-        "text": "*Yuna silently reaches out with her chopsticks and takes the best-looking sausage.*"
+        "text": "*She silently reaches out with her chopsticks and takes the best-looking sausage.*"
     },
     "lunch3_meal_7": {
         "name": "{name}",
@@ -172,7 +172,7 @@
     },
     "lunch3_expose_honest_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon closes her lunch box lid.*"
+        "text": "*She closes her lunch box lid.*"
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
@@ -180,7 +180,7 @@
     },
     "lunch3_expose_honest_6": {
         "name": "Seoyeon",
-        "text": "*Seoyeon leaves.*"
+        "text": "*She leaves.*"
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
@@ -200,7 +200,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "Dain",
-        "text": "*Dain turns her head away. She hasn't touched her crumble bun.*"
+        "text": "*She turns her head away. She hasn't touched her crumble bun.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
@@ -245,7 +245,7 @@
     },
     "lunch3_seo_chase_dain_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sets down the lunchbox. Her face is expressionless.*"
+        "text": "*She sets down the lunchbox. Her face is expressionless.*"
     },
     "lunch3_seo_chase_dain_2": {
         "name": "Dain",
@@ -315,15 +315,15 @@
     },
     "lunch3_meal_10_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon’s chopsticks stop for a moment. The face of the student council president soon returns, but the egg roll remains.*"
+        "text": "*Her chopsticks stop for a moment. The face of the student council president soon returns, but the egg roll remains.*"
     },
     "lunch3_meal_10_d": {
         "name": "Dain",
-        "text": "*Dain says “All together?!” and laughs. Normally I would have dragged a chair, but today I didn't move from where I sat.*"
+        "text": "*She says “All together?!” and laughs. Normally I would have dragged a chair, but today I didn't move from where I sat.*"
     },
     "lunch3_meal_10_e": {
         "name": "Yuna",
-        "text": "*Yuna just nods. She writes on a note, folds it, and slips it into her pocket. Doesn't hand it over. Only a single pale-purple dot has bled through the edge of the paper.*"
+        "text": "*She just nods. She writes on a note, folds it, and slips it into her pocket. Doesn't hand it over. Only a single pale-purple dot has bled through the edge of the paper.*"
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -335,6 +335,6 @@
     },
     "lunch3_expose_excuse_2_b": {
         "name": "Dain",
-        "text": "*Dain stands up.*"
+        "text": "*She stands up.*"
     }
 }

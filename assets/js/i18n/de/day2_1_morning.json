@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "Dain",
-        "text": "*Dains Stimme füllt das Klassenzimmer, noch bevor die Morgenbesprechung beginnt.*"
+        "text": "*Ihre Stimme füllt das Klassenzimmer, noch bevor die Morgenbesprechung beginnt.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
-        "text": "*Kurz bevor Seoyeon um die Ecke biegt, verlangsamt sie den Schritt. Das Klemmbrett rückt dichter an ihren Arm.*"
+        "text": "*Kurz bevor sie um die Ecke biegt, verlangsamt sie den Schritt. Das Klemmbrett rückt dichter an ihren Arm.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeons Hand berührt {name}s Schulter. Beim Abklopfen des Staubs zögert sie nicht.*"
+        "text": "*Ihre Hand berührt {name}s Schulter. Beim Abklopfen des Staubs zögert sie nicht.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -246,11 +246,11 @@
     },
     "morning2_greet_dain_2": {
         "name": "Dain",
-        "text": "*Dain klatscht mir von hinten auf die Schulter.*"
+        "text": "*Sie klatscht mir von hinten auf die Schulter.*"
     },
     "morning2_greet_dain_others": {
         "name": "Seoyeon",
-        "text": "*Seoyeon geht vorbei und blättert in ihrem Klemmbrett.*"
+        "text": "*Sie geht vorbei und blättert in ihrem Klemmbrett.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",
@@ -310,7 +310,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "Klassenlehrerin",
-        "text": "*Der Blick der Klassenlehrerin bleibt kurz an der offenen Schublade hängen.*"
+        "text": "*Ihr Blick bleibt kurz an der offenen Schublade hängen.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Klassenlehrerin",
@@ -326,7 +326,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Klassenlehrerin",
-        "text": "*Der Blick der Klassenlehrerin streift die Schublade und kehrt sofort zur?ck.*"
+        "text": "*Ihr Blick streift die Schublade und kehrt sofort zur?ck.*"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
@@ -350,10 +350,10 @@
     },
     "hidden_homeroom_d2_8_f": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin bedeckt ihren Mund mit der Kaffeetasse und dreht die Untertasse zweimal an derselben Stelle.*"
+        "text": "*Sie bedeckt ihren Mund mit der Kaffeetasse und dreht die Untertasse zweimal an derselben Stelle.*"
     },
     "hidden_homeroom_d2_11_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Stimme der Klassenlehrerin versinkt leise im Inneren der Kaffeetasse.*"
+        "text": "*Ihre Stimme versinkt leise im Inneren der Kaffeetasse.*"
     }
 }

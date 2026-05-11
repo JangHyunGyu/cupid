@@ -53,7 +53,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna spreads the corner of the bookmark with her thumb and holds it up to the light. No crease.*"
+        "text": "*She spreads the corner of the bookmark with her thumb and holds it up to the light. No crease.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -306,7 +306,7 @@
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*Dain's voice went up slightly.*",
+        "text": "*Her voice went up slightly.*",
         "choices": [
             "I ate on the rooftop with the president. (Honest)",
             "I was just wandering around alone. (Lie)"
@@ -366,7 +366,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "Yuna",
-        "text": "*Yuna turns away without a word.*"
+        "text": "*She turns away without a word.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",

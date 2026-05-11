@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "Dain",
-        "text": "*La voix de Dain remplit la classe avant même l'appel du matin.*"
+        "text": "*Sa voix remplit la classe avant même l'appel du matin.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
-        "text": "*Juste avant de tourner dans le couloir, Seoyeon ralentit. Le porte-documents se serre un peu plus contre son bras.*"
+        "text": "*Juste avant de tourner dans le couloir, elle ralentit. Le porte-documents se serre un peu plus contre son bras.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*La main de Seoyeon touche l'épaule de {name}. Son geste pour enlever la poussière n'a aucune hésitation.*"
+        "text": "*Sa main touche l'épaule de {name}. Son geste pour enlever la poussière n'a aucune hésitation.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -246,11 +246,11 @@
     },
     "morning2_greet_dain_2": {
         "name": "Dain",
-        "text": "*Dain me tape l'épaule par derrière.*"
+        "text": "*Elle me tape l'épaule par derrière.*"
     },
     "morning2_greet_dain_others": {
         "name": "Seoyeon",
-        "text": "*Seoyeon passe en feuilletant son bloc-notes.*"
+        "text": "*Elle passe en feuilletant son bloc-notes.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",

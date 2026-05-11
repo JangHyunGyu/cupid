@@ -30,7 +30,7 @@
     },
     "lunch_seo_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon unlocks the rooftop door with her key. A gust of wind rushes in.*"
+        "text": "*She unlocks the rooftop door with her key. A gust of wind rushes in.*"
     },
     "lunch_seo_2": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pulls out a lunchbox from her bag. Neatly packed for two.*"
+        "text": "*She pulls out a lunchbox from her bag. Neatly packed for two.*"
     },
     "lunch_seo_9": {
         "name": "{name}",
@@ -86,7 +86,7 @@
     },
     "lunch_seo_17": {
         "name": "Seoyeon",
-        "text": "*Seoyeon eats instead of answering. The wind is nice. The school seen from the rooftop is bigger than you think.*"
+        "text": "*She eats instead of answering. The wind is nice. The school seen from the rooftop is bigger than you think.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -102,7 +102,7 @@
     },
     "lunch_seo_22": {
         "name": "Seoyeon",
-        "text": "*Seoyeon picks up a piece of rolled omelette and holds it out.*"
+        "text": "*She picks up a piece of rolled omelette and holds it out.*"
     },
     "lunch_seo_23": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "lunch_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon is holding out the rolled omelette.*",
+        "text": "*She is holding out the rolled omelette.*",
         "choices": [
             "Accept it",
             "It'd taste better if you ate it yourself"
@@ -130,7 +130,7 @@
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pops the rolled omelette into her mouth. Chewing slowly.*"
+        "text": "*She pops the rolled omelette into her mouth. Chewing slowly.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
@@ -138,7 +138,7 @@
     },
     "lunch_seo_c2_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon closes the lunchbox lid very slowly. Her pinky presses the edge of the lid one extra time.*"
+        "text": "*She closes the lunchbox lid very slowly. Her pinky presses the edge of the lid one extra time.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -158,7 +158,7 @@
     },
     "lunch_seo_after_5": {
         "name": "Seoyeon",
-        "text": "*Not invited. Permitted. As Seoyeon packs up the lunchbox, she tucks her hair back with her pinky.*"
+        "text": "*Not invited. Permitted. As she packs up the lunchbox, she tucks her hair back with her pinky.*"
     },
     "lunch_seo_after_7": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "lunch_dain_14": {
         "name": "Dain",
-        "text": "*Dain grumbles while buying the bread. But the corners of her mouth are turned up.*"
+        "text": "*She grumbles while buying the bread. But the corners of her mouth are turned up.*"
     },
     "lunch_dain_15": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "lunch_dain_22": {
         "name": "Dain",
-        "text": "*Dain's eyes light up.*"
+        "text": "*Her eyes light up.*"
     },
     "lunch_dain_23": {
         "name": "Dain",
@@ -258,7 +258,7 @@
     },
     "lunch_dain_choice": {
         "name": "Dain",
-        "text": "*Dain is staring at me with expectant eyes.*",
+        "text": "*She is staring at me with expectant eyes.*",
         "choices": [
             "A little. Would you teach me?",
             "I was just faking it."
@@ -294,7 +294,7 @@
     },
     "lunch_dain_after_5": {
         "name": "Dain",
-        "text": "*Dain lightly taps {name}'s shoulder with her fist. The gesture is playful, but a proud look remains on her face.*"
+        "text": "*She lightly taps {name}'s shoulder with her fist. The gesture is playful, but a proud look remains on her face.*"
     },
     "lunch_yuna_1": {
         "name": "{name}",
@@ -306,7 +306,7 @@
     },
     "lunch_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna takes a seat in the far corner of the reading room. She opens her book. When the legs of the chair across from her scrape faintly against the floor, her fingers freeze on the page.*"
+        "text": "*She takes a seat in the corner of the reading room and opens her book. When the opposite chair leg scrapes softly against the floor, her fingers stop on the page.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_25": {
         "name": "Yuna",
-        "text": "*Yuna stands up first and walks away. She doesn't look back. 'That was nice.' Those words alone stay behind on the desk.*"
+        "text": "*She stands up first and walks away. She doesn't look back. 'That was nice.' Those words alone stay behind on the desk.*"
     },
     "lunch_end": {
         "name": "{name}",
@@ -386,19 +386,19 @@
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sitting side by side with Seoyeon on the rooftop. The breeze feels nice.*",
+        "text": "*Sitting side by side with her on the rooftop. The breeze feels nice.*",
         "context": "First day lunch, just finished eating Seoyeon's homemade bento on the rooftop. Still getting to know each other. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "Seoyeon is the cool-beauty student council president. Composed, witty, and direct. Shows interest through actions, not words."
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sitting on a bench with Dain at the school store, eating bread.*",
+        "text": "*Sitting on a bench with her at the school store, eating bread.*",
         "context": "First day lunch, just had a rock-paper-scissors bet with Dain at the store. She lost and bought bread. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "Dain is an energetic athlete type. Loves physical contact, uses lots of exclamation marks. Tough outside, soft inside."
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Reading books side by side with Yuna in the library. It's quiet, but comfortable.*",
+        "text": "*Reading books side by side with her in the library. It's quiet, but comfortable.*",
         "context": "First day lunch, just spent time with Yuna in the library. The quiet was nice. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "Yuna is a mysterious literary girl. Short, dry sentences, but when she opens up, her sentences get longer. Communicates through notes."
     },
@@ -440,11 +440,11 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon nudges the chair with the tip of her foot and lines it up toward {name}.* Suspicious, aren't you. It's quiet up here."
+        "text": "*She nudges the chair with the tip of her foot and lines it up toward {name}.* Suspicious, aren't you. It's quiet up here."
     },
     "lunch_seo_c1_2_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon turns her head and absently fiddles with her water bottle.*"
+        "text": "*She turns her head and absently fiddles with her water bottle.*"
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",

@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon comprueba una vez más el nombre de {name} y marca brevemente la lista del portapapeles. Su mirada tras las gafas no baja enseguida.*"
+        "text": "*Comprueba una vez más el nombre de {name} y marca brevemente la lista del portapapeles. Su mirada tras las gafas no baja enseguida.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -58,7 +58,7 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Los pasos de Seoyeon se detienen. Solo gira la cabeza hacia {name}.*"
+        "text": "*Sus pasos se detienen. Solo gira la cabeza hacia {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
@@ -66,11 +66,11 @@
     },
     "choice_dismiss_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se da la vuelta de verdad. Sin hacer ni una seña, camina hacia el interior de la escuela.*"
+        "text": "*Se da la vuelta en silencio. Sin hacer ni una seña, camina hacia el interior de la escuela.*"
     },
     "choice_flirt_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se para y se gira. No está sorprendida — le hace gracia.*"
+        "text": "*Se para y se gira. No está sorprendida — Le hace gracia.*"
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "*Seoyeon camina por delante. Mira atrás una vez y, cuando los pasos de {name} se acercan, no reduce el ritmo.*"
+        "text": "*Camina por delante. Mira atrás una vez y, cuando los pasos de {name} se acercan, no reduce el ritmo.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon iba delante por el pasillo. Los estudiantes la saludaban al pasar. Ella respondía con un ligero gesto de la carpeta, sin aminorar el paso ni una vez.*"
+        "text": "*Iba delante por el pasillo. Los estudiantes la saludaban al pasar. Ella respondía con un ligero gesto de la carpeta, sin aminorar el paso ni una vez.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon saca una llave del bolsillo y la hace tintinear un poco.*"
+        "text": "*Saca una llave del bolsillo y la hace tintinear un poco.*"
     },
     "hallway_5": {
         "name": "Seoyeon",
@@ -146,7 +146,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se da la vuelta y levanta la mano, un gesto mínimo. No mira atrás.*"
+        "text": "*Se da la vuelta y levanta la mano, un gesto mínimo. No mira atrás.*"
     },
     "classroom_1": {
         "name": "{name}",

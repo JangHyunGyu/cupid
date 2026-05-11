@@ -29,7 +29,7 @@
     },
     "after5_farewell_seo_3": {
         "name": "ソヨン",
-        "text": "*ソヨンが髪をかき上げながら。*"
+        "text": "*髪をかき上げながら。*"
     },
     "after5_farewell_seo_4": {
         "name": "ソヨン",
@@ -66,7 +66,7 @@
     },
     "after5_farewell_yuna_4": {
         "name": "ユナ",
-        "text": "*ユナが背を向ける。立ち止まらない。*"
+        "text": "*背を向ける。立ち止まらない。*"
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "after5_last_chance_2_d": {
         "name": "ソヨン",
-        "text": "*ソヨンが振り返る。夕日を背にしている。*"
+        "text": "*振り返る。夕日を背にしている。*"
     },
     "after5_last_chance_2_e": {
         "name": "ソヨン",
@@ -186,7 +186,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "ソヨン",
-        "text": "*ソヨンが差し出した指先が{name}の前で止まる。答えを待つ手だ。*"
+        "text": "*差し出した指先が{name}の前で止まる。答えを待つ手だ。*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "ソヨン",
-        "text": "*ソヨンが振り返る。つま先は半分だけこっちを向いている。いつでも行けるように。* ...なに。"
+        "text": "*振り返る。つま先は半分だけこっちを向いている。いつでも行けるように。* ...なに。"
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
@@ -203,7 +203,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "ダイン",
-        "text": "*ダインが走ってきて——立ち止まる。*"
+        "text": "*走ってきて——立ち止まる。*"
     },
     "after5_last_chance_2_m": {
         "name": "ダイン",
@@ -227,7 +227,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "ダイン",
-        "text": "*ダインが目元を擦る。笑顔はそのままだが、手の甲に水気が付く。*"
+        "text": "*目元を擦る。笑顔はそのままだが、手の甲に水気が付く。*"
     },
     "after5_last_chance_2_s": {
         "name": "ダイン",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "ダイン",
-        "text": "*ダインは立ち止まる。でもすぐには笑えない。* ...なに。"
+        "text": "*立ち止まる。でもすぐには笑えない。* ...なに。"
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_2": {
         "name": "ユナ",
-        "text": "*ユナが立ち止まる。本を胸に抱き寄せる。振り返るのに2秒ほどかかった。*"
+        "text": "*立ち止まる。本を胸に抱き寄せる。振り返るのに2秒ほどかかった。*"
     },
     "after5_last_chance_yuna_3": {
         "name": "ユナ",
@@ -268,7 +268,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "ユナ",
-        "text": "*ユナは本を抱えて待っている。返信欄にはまだ最初の一文字もない。*"
+        "text": "*本を抱えて待っている。返信欄にはまだ最初の一文字もない。*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "ユナ",
-        "text": "*ユナがゆっくり振り返る。本を抱えた腕に力が入る。* ...なに。"
+        "text": "*ゆっくり振り返る。本を抱えた腕に力が入る。* ...なに。"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "ユナ",
-        "text": "*ユナが本を置く。表情は変わらない。——でも手が震えている。*"
+        "text": "*本を置く。表情は変わらない。——でも手が震えている。*"
     },
     "after5_confess_react_yuna_c": {
         "name": "ユナ",

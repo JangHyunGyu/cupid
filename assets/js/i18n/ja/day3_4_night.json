@@ -25,7 +25,7 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "ユナ",
-        "text": "*ユナからノートの写真が届いた。一行だけ書いてある。*"
+        "text": "*からノートの写真が届いた。一行だけ書いてある。*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "ユナ",
@@ -81,7 +81,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "ユナ",
-        "text": "*ユナが三行送ってきた。普段一行も打たない人が。*"
+        "text": "*三行送ってきた。普段一行も打たない人が。*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -166,7 +166,7 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "ソヨン",
-        "text": "*ソヨンが「お願い」という言葉を使う。カーソルはその言葉の後でしばらく止まったままだ。*"
+        "text": "*「お願い」という言葉を使う。カーソルはその言葉の後でしばらく止まったままだ。*"
     },
     "night3_cheat_msg_4_b": {
         "name": "ユナ",
@@ -174,15 +174,15 @@
     },
     "night3_nightmare_2_b": {
         "name": "ソヨン",
-        "text": "*ソヨンの声が聞こえる。*"
+        "text": "*声が聞こえる。*"
     },
     "night3_nightmare_3_b": {
         "name": "ユナ",
-        "text": "*ユナの声。*"
+        "text": "*声。*"
     },
     "night3_nightmare_4_b": {
         "name": "ダイン",
-        "text": "*ダインの声。*"
+        "text": "*声。*"
     },
     "night3_dream_2_b": {
         "name": "{name}",

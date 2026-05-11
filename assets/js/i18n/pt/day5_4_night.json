@@ -444,7 +444,7 @@
     },
     "perfect_seo_1_b": {
         "name": "Seoyeon",
-        "text": "*Os olhos de Seoyeon estão molhados. Desta vez ela não os esconde com as costas da mão.*"
+        "text": "*Seus olhos estão molhados. Desta vez ela não os esconde com as costas da mão.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -460,7 +460,7 @@
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
-        "text": "*Seoyeon estende a mão. Não é o mindinho. É a mão inteira.*"
+        "text": "*Estende a mão. Não é o mindinho. É a mão inteira.*"
     },
     "perfect_seo_5_b": {
         "name": "{name}",
@@ -480,7 +480,7 @@
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
-        "text": "*Seoyeon não apaga as fotos mesmo quando o delineador borrou um pouco. Os algodões em frente ao espelho não foram usados nem uma vez hoje.*"
+        "text": "*Não apaga as fotos mesmo quando o delineador borrou um pouco. Os algodões em frente ao espelho não foram usados nem uma vez hoje.*"
     },
     "perfect_epilogue_4_seo": {
         "name": "Sistema",
@@ -524,7 +524,7 @@
     },
     "true_seo_6": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sorri. O cabelo se espalha ao vento.*"
+        "text": "*Sorri. O cabelo se espalha ao vento.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -536,7 +536,7 @@
     },
     "true_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon hesita, e estende o mindinho.*"
+        "text": "*Hesita, e estende o mindinho.*"
     },
     "true_seo_7b": {
         "name": "{name}",
@@ -576,7 +576,7 @@
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*Yuna se levantou e me abraçou. Sem dizer nada. Luz da janela quebrada se estendia longa pelo chão. A mão dela parou devagar nas minhas costas.*"
+        "text": "*Se levantou e me abraçou. Sem dizer nada. Luz da janela quebrada se estendia longa pelo chão. A mão dela parou devagar nas minhas costas.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
@@ -592,7 +592,7 @@
     },
     "perfect_epilogue_3_yuna": {
         "name": "Yuna",
-        "text": "*Yuna continua falando pouco. Mas, só com {name}, o tamanho das frases mudou.*"
+        "text": "*Continua falando pouco. Mas, só com {name}, o tamanho das frases mudou.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "Sistema",
@@ -624,7 +624,7 @@
     },
     "true_yuna_2_b": {
         "name": "Yuna",
-        "text": "*Yuna sobe a escadinha do sótão. Tem um alçapão pra cima. — Quando abre, uma brisa entra.*"
+        "text": "*Sobe a escadinha do sótão. Tem um alçapão pra cima. — Quando abre, uma brisa entra.*"
     },
     "true_yuna_2_c": {
         "name": "{name}",
@@ -632,11 +632,11 @@
     },
     "true_yuna_2_d": {
         "name": "Yuna",
-        "text": "*Yuna se apoia no parapeito. Dá pra ver as estrelas.*"
+        "text": "*Se apoia no parapeito. Dá pra ver as estrelas.*"
     },
     "true_yuna_3": {
         "name": "Yuna",
-        "text": "*Yuna abre a janelinha. Dá pra ver as estrelas.*"
+        "text": "*Abre a janelinha. Dá pra ver as estrelas.*"
     },
     "true_yuna_4": {
         "name": "Yuna",
@@ -648,7 +648,7 @@
     },
     "true_yuna_5_b": {
         "name": "Yuna",
-        "text": "*Yuna para. A m?o que segura a lombada do livro afrouxa.*"
+        "text": "*Para. A m?o que segura a lombada do livro afrouxa.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -684,7 +684,7 @@
     },
     "perfect_dain_2b": {
         "name": "Dain",
-        "text": "*Dain coloca a bola de vôlei no chão e espera a resposta de {name}.*"
+        "text": "*Coloca a bola de vôlei no chão e espera a resposta de {name}.*"
     },
     "perfect_dain_3": {
         "name": "Dain",
@@ -692,7 +692,7 @@
     },
     "perfect_dain_3b": {
         "name": "Dain",
-        "text": "*Dain deixa a bola na quadra. Vira e sorri. Um sorriso quieto.*"
+        "text": "*Deixa a bola na quadra. Vira e sorri. Um sorriso quieto.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
@@ -700,7 +700,7 @@
     },
     "perfect_dain_5": {
         "name": "Dain",
-        "text": "*Dain saltou em cima de mim. Eu não tava preparado. A bola rolou pelo chão — e no ginásio laranja do fim de tarde, sobraram só duas sombras.*"
+        "text": "*Saltou em cima de mim. Eu não tava preparado. A bola rolou pelo chão — E no ginásio laranja do fim de tarde, sobraram só duas sombras.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
@@ -720,7 +720,7 @@
     },
     "perfect_epilogue_2_dain": {
         "name": "Dain",
-        "text": "*Dain tornou-se comentarista esportivo. Sorrindo na frente da câmera também. Desta vez, não coloco ênfase no final das minhas palavras.*"
+        "text": "*Tornou-Se comentarista esportivo. Sorrindo na frente da câmera também. Desta vez, não coloco ênfase no final das minhas palavras.*"
     },
     "perfect_epilogue_3_dain": {
         "name": "{name}",
@@ -764,7 +764,7 @@
     },
     "true_dain_2": {
         "name": "Dain",
-        "text": "*Dain pega a mão de {name} e a coloca na parte interna do próprio pulso. Sem dizer nada.*"
+        "text": "*Pega a mão de {name} e a coloca na parte interna do próprio pulso. Sem dizer nada.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -796,7 +796,7 @@
     },
     "true_dain_8b": {
         "name": "Dain",
-        "text": "*O fim da voz de Dain sobe de leve. Desta vez não parece forçado.*"
+        "text": "*O fim da voz de ela sobe de leve. Desta vez não parece forçado.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -933,11 +933,11 @@
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon ajeita uma vez a ponta da manga de {name}, como se tirasse uma pétala de cerejeira. O toque é seco, mas não afasta.*"
+        "text": "*Ajeita uma vez a ponta da manga de {name}, como se tirasse uma pétala de cerejeira. O toque é seco, mas não afasta.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon atrasa meio passo sem dizer nada. Espera até o ombro de {name} ficar alinhado ao dela.*"
+        "text": "*Atrasa meio passo sem dizer nada. Espera até o ombro de {name} ficar alinhado ao dela.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
@@ -965,7 +965,7 @@
     },
     "good_epilogue_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon nunca usa a palavra 'convite' até o final. Em vez disso, envia uma foto da chave copiada do terraço.*"
+        "text": "*Nunca usa a palavra 'convite' até o final. Em vez disso, envia uma foto da chave copiada do terraço.*"
     },
     "good_epilogue_3": {
         "name": "{name}",
@@ -981,7 +981,7 @@
     },
     "good_1_yuna_b": {
         "name": "Yuna",
-        "text": "*Yuna me entrega um bilhete dobrado. Abro — uma linha só: 'Da próxima vez, não some.'*"
+        "text": "*Me entrega um bilhete dobrado. Abro — Uma linha só: 'Da próxima vez, não some.'*"
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
@@ -997,7 +997,7 @@
     },
     "good_4_yuna": {
         "name": "Yuna",
-        "text": "*Yuna coloca o marcador numa página nova, no lado sem marca de dobra.*"
+        "text": "*Coloca o marcador numa página nova, no lado sem marca de dobra.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -1009,7 +1009,7 @@
     },
     "good_epilogue_2_yuna": {
         "name": "Yuna",
-        "text": "*Em vez de palavras, a Yuna deixa um 'próximo' pronto. Volume 1, depois o 2. Hoje, depois amanhã. Esse é o 'vamos continuar se vendo' dela.*"
+        "text": "*Em vez de palavras, ela deixa um 'próximo' pronto. Volume 1, depois o 2. Hoje, depois amanhã. Esse é o 'vamos continuar se vendo' dela.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
@@ -1121,7 +1121,7 @@
     },
     "mayhem_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon passa por {name} no corredor. Não vira a cabeça.*"
+        "text": "*Passa por {name} no corredor. Não vira a cabeça.*"
     },
     "mayhem_2": {
         "name": "{name}",
@@ -1129,7 +1129,7 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain sorri como sempre. ?Se cuida.? O fim da frase cai baixo no ch?o.*"
+        "text": "*Sorri como sempre.?Se cuida.? O fim da frase cai baixo no ch?o.*"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -1157,11 +1157,11 @@
     },
     "harem_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon riu primeiro....OK. Isso é honesto. As risadas logo terminaram.*"
+        "text": "*Riu primeiro....OK. Isso é honesto. As risadas logo terminaram.*"
     },
     "harem_1_b": {
         "name": "Yuna",
-        "text": "*Yuna abaixa a cabeça. Quando finalmente olha para cima, as pontas dos dedos apertam forte a lombada.*"
+        "text": "*Abaixa a cabeça. Quando finalmente olha para cima, as pontas dos dedos apertam forte a lombada.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -1169,7 +1169,7 @@
     },
     "harem_3": {
         "name": "Dain",
-        "text": "*Dain acerta o ombro de {name} com o punho. O golpe chega forte o bastante para doer. \"Ei, você é péssimo.\" Não há riso no fim das palavras.*"
+        "text": "*Acerta o ombro de {name} com o punho. O golpe chega forte o bastante para doer. \"Ei, você é péssimo.\" Não há riso no fim das palavras.*"
     },
     "harem_4": {
         "name": "{name}",
@@ -1177,7 +1177,7 @@
     },
     "harem_5": {
         "name": "Seoyeon",
-        "text": "*Quando Seoyeon perguntou: “O que você vai fazer na quarta-feira?”, seu dedo parou na janela de resposta.*"
+        "text": "*Quando perguntou: “O que você vai fazer na quarta-Feira?”, seu dedo parou na janela de resposta.*"
     },
     "harem_6": {
         "name": "{name}",

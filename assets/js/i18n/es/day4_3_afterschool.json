@@ -17,7 +17,7 @@
     },
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon está apoyada en la barandilla. El viento le mueve el pelo. — Se lo aparta con el meñique. Esa manía suya.*"
+        "text": "*Está apoyada en la barandilla. El viento le mueve el pelo. — Se lo aparta con el meñique. Esa manía suya.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se gira. El viento le revuelve el pelo.*"
+        "text": "*Se gira. El viento le revuelve el pelo.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
-        "text": "*Seoyeon no dice nada. Mis labios tiemblan. No hay portapapeles ni brazalete de presidente del consejo estudiantil.*"
+        "text": "*No dice nada. Mis labios tiemblan. No hay portapapeles ni brazalete de presidente del consejo estudiantil.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -81,11 +81,11 @@
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*La mano de Seoyeon se mueve.*"
+        "text": "*Su mano se mueve.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "*Seoyeon me tiende el meñique. El mismo meñique del primer día. — Entonces pensé que era una manía, pero esta es su forma de prometer algo.*"
+        "text": "*Extiende el meñique. Igual que el primer día, pero esta vez ofrece la promesa sin dudar.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sonríe. Una sonrisa ensayada. — Se da vuelta y empieza a caminar. Al tercer paso, se detiene.*"
+        "text": "*Sonríe. Una sonrisa ensayada. — Se da vuelta y empieza a caminar. Al tercer paso, se detiene.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
@@ -125,7 +125,7 @@
     },
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "*Yuna se sienta en el sofá y mira a {name}. Su mirada parece haber estado esperando.*"
+        "text": "*Se sienta en el sofá y mira a {name}. Su mirada parece haber estado esperando.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
-        "text": "*Yuna no logra mirar hacia {name} y aprieta la manga con fuerza.*"
+        "text": "*No logra mirar hacia {name} y aprieta la manga con fuerza.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
@@ -201,11 +201,11 @@
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*Yuna asiente. Coloca el marcapáginas entre las páginas y lo empuja más adentro.*"
+        "text": "*Asiente. Coloca el marcapáginas entre las páginas y lo empuja más adentro.*"
     },
     "confess_yuna_no_3": {
         "name": "Yuna",
-        "text": "*Yuna toma un libro. Mira la portada, pero no está leyendo.*"
+        "text": "*Toma un libro. Mira la portada, pero no está leyendo.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
@@ -233,7 +233,7 @@
     },
     "confess_dain_4": {
         "name": "Dain",
-        "text": "*Dain sostiene un balón. Como si nada. — Pero tiene los dedos blancos. Lo está apretando con fuerza.*"
+        "text": "*Sostiene un balón. Como si nada. — Pero tiene los dedos blancos. Lo está apretando con fuerza.*"
     },
     "confess_dain_5": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "Dain",
-        "text": "*La pelota de Dain rebota una vez. La mano que normalmente la habría atrapado se detiene en el aire un segundo tarde.*",
+        "text": "*Su pelota rebota una vez. La mano que normalmente la habría atrapado se detiene en el aire un segundo tarde.*",
         "choices": [
             "Dain. Suelta la pelota.",
             "...¿Echamos otra?"
@@ -281,7 +281,7 @@
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "*Dain se queda inmóvil. Se le va la risa de la cara y solo la mirada se le humedece, de a poco. Se tapa la cara con las dos manos.*"
+        "text": "*Se queda inmóvil. Se le va la risa de la cara y solo la mirada se le humedece, de a poco. Se tapa la cara con las dos manos.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Dain vuelve a abrazar la pelota. Se le tensan los dorsos de las manos.*"
+        "text": "*Vuelve a abrazar la pelota. Se le tensan los dorsos de las manos.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     },
     "confess_dain_no_3": {
         "name": "Dain",
-        "text": "*Dain bota la pelota de vóley. Una vez. Dos veces. — A la tercera, se detiene.*"
+        "text": "*Bota la pelota de vóley. Una vez. Dos veces. — A la tercera, se detiene.*"
     },
     "confess_dain_no_4": {
         "name": "Dain",

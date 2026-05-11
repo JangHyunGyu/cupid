@@ -90,7 +90,7 @@
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*Dain throws her hand up. High-five.*"
+        "text": "*She throws her hand up. High-five.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
@@ -126,7 +126,7 @@
     },
     "after2_dain_end_3": {
         "name": "Dain",
-        "text": "*Dain pauses her chopsticks. Just for a moment.*"
+        "text": "*She pauses her chopsticks. Just for a moment.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -142,7 +142,7 @@
     },
     "after2_dain_end_3e": {
         "name": "Dain",
-        "text": "*Dain pushes the cup toward {name}, then deliberately asks for water in a loud voice.*"
+        "text": "*She pushes the cup toward {name}, then deliberately asks for water in a loud voice.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -174,7 +174,7 @@
     },
     "after2_seo_7": {
         "name": "Seoyeon",
-        "text": "*Seoyeon does not turn away right away. The end of the clipboard points toward the door as she waits for {name}'s footsteps.*"
+        "text": "*She does not turn away right away. The end of the clipboard points toward the door as she waits for {name}'s footsteps.*"
     },
     "after2_seo_8": {
         "name": "Seoyeon",
@@ -194,7 +194,7 @@
     },
     "after2_seo_8b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon lifts her eyes from the documents and looks toward {name}.*"
+        "text": "*She lifts her eyes from the documents and looks toward {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -218,7 +218,7 @@
     },
     "after2_seo_sunset_joke": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pauses for a moment. The area around the eyes behind the glasses relaxes first.*"
+        "text": "*She pauses for a moment. The area around the eyes behind the glasses relaxes first.*"
     },
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
@@ -230,7 +230,7 @@
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-        "text": "*Seoyeon rolls her shoulders. I hear them crack.*"
+        "text": "*She rolls her shoulders. I hear them crack.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
@@ -266,7 +266,7 @@
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sets the documents down and gazes out the window. The sunset light touches her face.*"
+        "text": "*She sets the documents down and gazes out the window. The sunset light touches her face.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
@@ -286,7 +286,7 @@
     },
     "after2_seo_leave": {
         "name": "Seoyeon",
-        "text": "*Seoyeon gives a nod.*"
+        "text": "*She gives a nod.*"
     },
     "after2_seo_end": {
         "name": "{name}",
@@ -294,11 +294,11 @@
     },
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon reaches out. Picks off a speck of dust from my collar. Her hand grazes my neck.*"
+        "text": "*She reaches out. Picks off a speck of dust from my collar. Her hand grazes my neck.*"
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's fingers stop. She turns her head without a word. — I hold my breath for a second.*"
+        "text": "*Her fingers stop. She turns her head without a word. — I hold my breath for a second.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
@@ -330,7 +330,7 @@
     },
     "after2_yuna_6": {
         "name": "Yuna",
-        "text": "*Yuna does not turn the page. Only her fingertips move.*"
+        "text": "*She does not turn the page. Only her fingertips move.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "after2_yuna_everyday": {
         "name": "Yuna",
-        "text": "*Yuna fidgets with the earphone cord.*"
+        "text": "*She fidgets with the earphone cord.*"
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
@@ -386,7 +386,7 @@
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "*Yuna laughs very softly. The next page turns quietly.*"
+        "text": "*She laughs very softly. The next page turns quietly.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -398,7 +398,7 @@
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "*Yuna doesn't pull away first. Three seconds. She lowers her gaze.*"
+        "text": "*She doesn't pull away first. Three seconds. She lowers her gaze.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
@@ -434,7 +434,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*We stepped into the tteokbokki shop near school.* *Eating tteokbokki with Dain and chatting.*",
+        "text": "*We stepped into the tteokbokki shop near school.* *Eating tteokbokki with her and chatting.*",
         "context": "Day 2 afterschool, came to tteokbokki shop after a volleyball bet at the gym. Getting closer. Tone: Feeling closer than yesterday. Banter feels natural and comfortable. Push-pull flirting. No heavy topics yet.",
         "personality": "Dain is an energetic athlete. Competitive and straightforward, but exclamation marks disappear when she's being genuine."
     },
@@ -512,7 +512,7 @@
     },
     "after2_dain_9_c": {
         "name": "Dain",
-        "text": "*Dain lowers her stance. Her eyes change.*"
+        "text": "*She lowers her stance. Her eyes change.*"
     },
     "after2_dain_9_d": {
         "name": "Dain",
@@ -532,7 +532,7 @@
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "*Instead of saying \"please,\" Seoyeon turns the clipboard toward {name}. The top of the to-do list is blank.*"
+        "text": "*Instead of saying \"please,\" she turns the clipboard toward {name}. The top of the to-do list is blank.*"
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon calls it a compliment, then goes straight back to sorting the papers. The moment she turns her neck, her shoulders stiffen—just slightly.*"
+        "text": "*She calls it a compliment, then goes straight back to sorting the papers. The moment she turns her neck, her shoulders stiffen—just slightly.*"
     },
     "after2_seo_sunset_joke_b": {
         "name": "Seoyeon",
@@ -548,7 +548,7 @@
     },
     "after2_seo_sunset_react_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon covers her mouth with the edge of the papers and looks out the window for a while.*"
+        "text": "*She covers her mouth with the edge of the papers and looks out the window for a while.*"
     },
     "after2_seo_neck_react_b": {
         "name": "Seoyeon",
@@ -556,7 +556,7 @@
     },
     "after2_seo_neck_react_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon gets up and moves behind {name}. Her hands settle on {name}'s shoulders.*"
+        "text": "*She gets up and moves behind {name}. Her hands settle on {name}'s shoulders.*"
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
@@ -572,7 +572,7 @@
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's hand pauses in the air for a moment.*"
+        "text": "*Her hand pauses in the air for a moment.*"
     },
     "after2_yuna_1_b": {
         "name": "{name}",
@@ -580,11 +580,11 @@
     },
     "after2_yuna_2_b": {
         "name": "Yuna",
-        "text": "*Yuna looks up. Not surprised.*"
+        "text": "*She looks up. Not surprised.*"
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*Yuna does not avoid eye contact. The earphone strings are still wrapped between my fingers.*"
+        "text": "*She does not avoid eye contact. The earphone strings are still wrapped between my fingers.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
@@ -596,7 +596,7 @@
     },
     "minsu_warn_1_b": {
         "name": "Minsu",
-        "text": "*Minsu strides up and falls into step beside me.*"
+        "text": "*He strides up and falls into step beside me.*"
     },
     "minsu_warn_15_b": {
         "name": "Dain",

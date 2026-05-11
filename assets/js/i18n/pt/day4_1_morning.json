@@ -299,7 +299,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "Professora",
-        "text": "*A professora se vira. Seus ombros baixam um pouco. Sua silhueta aparece pequena na porta de vidro do café.*"
+        "text": "*Vira-se. Os ombros baixam um pouco. Sua silhueta aparece pequena na porta de vidro do café.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d4_morning_7": {
         "name": "Enfermeira",
-        "text": "*A Enfermeira finge organizar papéis na mesa — mas está virando a mesma folha pela terceira vez.*"
+        "text": "*A ela finge organizar papéis na mesa — Mas está virando a mesma folha pela terceira vez.*"
     },
     "hidden_nurse_d4_morning_8": {
         "name": "Enfermeira",
@@ -335,7 +335,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "Enfermeira",
-        "text": "*A Enfermeira mexe nos óculos. Os olhos por trás são maiores do que eu imaginava. Olhos que ficavam escondidos atrás da brincadeira.*"
+        "text": "*A ela mexe nos óculos. Os olhos por trás são maiores do que eu imaginava. Olhos que ficavam escondidos atrás da brincadeira.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Enfermeira",
@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermeira",
-        "text": "*Conversando com a Enfermeira na enfermaria.*"
+        "text": "*Conversando com a ela na enfermaria.*"
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",
@@ -427,7 +427,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Enfermeira",
-        "text": "*A Enfermeira para. Pousa os papéis.*"
+        "text": "*A ela para. Pousa os papéis.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Enfermeira",
@@ -531,7 +531,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "Enfermeira",
-        "text": "*A Enfermeira trava. Pousa os hashis.*"
+        "text": "*A ela trava. Pousa os hashis.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Enfermeira",

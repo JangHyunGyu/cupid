@@ -57,7 +57,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*No terraço com Seoyeon. Último horário de almoço.*"
+        "text": "*No terraço com ela. Último horário de almoço.*"
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna senta no sofá. Deixa o assento ao lado vazio. Um lugar onde a poeira não se acumulou.*"
+        "text": "*Senta no sofá. Deixa o assento ao lado vazio. Um lugar onde a poeira não se acumulou.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Yuna tira um caderno da bolsa. O mesmo que cobriu às pressas no sótão.*"
+        "text": "*Tira um caderno da bolsa. O mesmo que cobriu às pressas no sótão.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -117,7 +117,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Na biblioteca com a Yuna. Último horário de almoço.*"
+        "text": "*Na biblioteca com a ela. Último horário de almoço.*"
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -141,7 +141,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "*Dain tá no meio da quadra. Segurando uma bola de vôlei.*"
+        "text": "*Tá no meio da quadra. Segurando uma bola de vôlei.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -193,7 +193,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*No ginásio com a Dain. Último horário de almoço.*"
+        "text": "*No ginásio com a ela. Último horário de almoço.*"
     },
     "tour_dain_end_2": {
         "name": "{name}",

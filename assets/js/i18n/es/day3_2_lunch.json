@@ -25,7 +25,7 @@
     },
     "lunch3_meal_6": {
         "name": "Yuna",
-        "text": "*Yuna alarga los palillos sin decir nada y agarra la salchicha que se ve más rica.*"
+        "text": "*Alarga los palillos sin decir nada y agarra la salchicha que se ve más rica.*"
     },
     "lunch3_meal_7": {
         "name": "{name}",
@@ -172,7 +172,7 @@
     },
     "lunch3_expose_honest_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon cierra la tapa de la lonchera.*"
+        "text": "*Cierra la tapa de la lonchera.*"
     },
     "lunch3_expose_honest_5": {
         "name": "Seoyeon",
@@ -180,7 +180,7 @@
     },
     "lunch3_expose_honest_6": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se levanta y se va.*"
+        "text": "*Se levanta y se va.*"
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
@@ -200,7 +200,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "Dain",
-        "text": "*Dain aparta la mirada. No tocó su pan soboro.*"
+        "text": "*Aparta la mirada. No tocó su pan soboro.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
@@ -245,7 +245,7 @@
     },
     "lunch3_seo_chase_dain_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon deja la lonchera. Sin expresión en la cara.*"
+        "text": "*Deja la lonchera. Sin expresión en la cara.*"
     },
     "lunch3_seo_chase_dain_2": {
         "name": "Dain",
@@ -315,15 +315,15 @@
     },
     "lunch3_meal_10_c": {
         "name": "Seoyeon",
-        "text": "*Los palillos de Seoyeon se detienen por un momento. El rostro del presidente del consejo estudiantil pronto regresa, pero el rollo de huevo permanece.*"
+        "text": "*Sus palillos se detienen por un momento. El rostro del presidente del consejo estudiantil pronto regresa, pero el rollo de huevo permanece.*"
     },
     "lunch3_meal_10_d": {
         "name": "Dain",
-        "text": "*Dain dice “¡¿Todos juntos?!” y se ríe. Normalmente habría arrastrado una silla, pero hoy no me moví de donde estaba sentado.*"
+        "text": "*Dice “¡¿Todos juntos?!” y se ríe. Normalmente habría arrastrado una silla, pero hoy no me moví de donde estaba sentado.*"
     },
     "lunch3_meal_10_e": {
         "name": "Yuna",
-        "text": "*Yuna solo asiente. Escribe en una nota, la dobla y la mete en su bolsillo. No la entrega. Solo un punto púrpura claro ha sangrado en el borde del papel.*"
+        "text": "*Solo asiente. Escribe en una nota, la dobla y la mete en su bolsillo. No la entrega. Solo un punto púrpura claro ha sangrado en el borde del papel.*"
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -335,6 +335,6 @@
     },
     "lunch3_expose_excuse_2_b": {
         "name": "Dain",
-        "text": "*Dain se levanta.*"
+        "text": "*Se levanta.*"
     }
 }

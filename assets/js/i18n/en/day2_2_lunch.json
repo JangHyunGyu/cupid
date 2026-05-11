@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*Yuna turns the page. The paper sounds lighter than before.*"
+        "text": "*She turns the page. The paper sounds lighter than before.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -192,7 +192,7 @@
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "*Yuna walks ahead. Deep into the annex. Somewhere no one would think to go. A small room appears. Sunlight streams in through the window, and there's a worn sofa and bookshelves.*"
+        "text": "*She walks ahead. Deep into the annex. Somewhere no one would think to go. A small room appears. Sunlight streams in through the window, and there's a worn sofa and bookshelves.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -204,7 +204,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "*Yuna sits on the sofa. She quietly leaves the spot next to her open.*"
+        "text": "*She sits on the sofa. She quietly leaves the spot next to her open.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -228,7 +228,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "Yuna",
-        "text": "*Yuna’s finger presses firmly on the end of the bookmark.*"
+        "text": "*Her finger presses firmly on the end of the bookmark.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -236,7 +236,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "Yuna",
-        "text": "*Yuna pushes the bookmark deep inside the book. The page folds after 'I had it.'*"
+        "text": "*She pushes the bookmark deep inside the book. The page folds after 'I had it.'*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -264,7 +264,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
-        "text": "*Yuna's hand stops on the bookmark. Only the sound of turning pages echoes loudly.*"
+        "text": "*Her hand stops on the bookmark. Only the sound of turning pages echoes loudly.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -296,7 +296,7 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "Yuna",
-        "text": "*Yuna turns her eyes back to the shelves. The sunlight stretches a little farther across the open page.*"
+        "text": "*She turns her eyes back to the shelves. The sunlight stretches a little farther across the open page.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
@@ -372,7 +372,7 @@
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Seoyeon looks at the corner of {name}'s mouth while pretending not to care.*"
+        "text": "*She looks at the corner of {name}'s mouth while pretending not to care.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -380,7 +380,7 @@
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's hand reaches toward me.*",
+        "text": "*Her hand reaches toward me.*",
         "choices": [
             "Stay still",
             "I'll wipe it myself"
@@ -388,7 +388,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's finger brushes the corner of my lips. Softly. Slowly. — Slower than necessary.*"
+        "text": "*Her finger brushes the corner of my lips. Softly. Slowly. — Slower than necessary.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -420,7 +420,7 @@
     },
     "lunch2_seo_c2_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon closes the lunchbox lid with the same smiling face. The click is a little loud.*"
+        "text": "*She closes the lunchbox lid with the same smiling face. The click is a little loud.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
@@ -492,7 +492,7 @@
     },
     "lunch2_dain_choice": {
         "name": "Dain",
-        "text": "*Dain stares straight at {name}.*",
+        "text": "*She stares straight at {name}.*",
         "choices": [
             "We talked a bit yesterday",
             "She just showed me around the school?",
@@ -501,11 +501,11 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Dain",
-        "text": "*Dain's expression stiffens. She bites into the soboro and turns her head without chewing.*"
+        "text": "*Her expression stiffens. She bites into the soboro and turns her head without chewing.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Dain",
-        "text": "*Dain nods and takes a bite of crumble bun. Acting like she doesn't care.*"
+        "text": "*She nods and takes a bite of crumble bun. Acting like she doesn't care.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
@@ -513,7 +513,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "Dain",
-        "text": "*Dain folds the soboro wrapper for longer than necessary. She speaks less than a moment ago.*"
+        "text": "*She folds the soboro wrapper for longer than necessary. She speaks less than a moment ago.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
@@ -525,7 +525,7 @@
     },
     "lunch2_yuna_c1_9_b": {
         "name": "Yuna",
-        "text": "*Yuna's gaze turns cold for an instant.*"
+        "text": "*Her gaze turns cold for an instant.*"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
@@ -533,7 +533,7 @@
     },
     "lunch2_seo_c1_2_b": {
         "name": "Dain",
-        "text": "*Dain's eyes widen as she looks back and forth between the two of us.*"
+        "text": "*Her eyes widen as she looks back and forth between the two of us.*"
     },
     "lunch2_seo_c1_3_b": {
         "name": "Seoyeon",
@@ -541,7 +541,7 @@
     },
     "lunch2_dain_13_b": {
         "name": "Dain",
-        "text": "*Dain takes a big bite of the soboro bread. Crumbs fall onto her uniform sleeve.*"
+        "text": "*She takes a big bite of the soboro bread. Crumbs fall onto her uniform sleeve.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",

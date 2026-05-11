@@ -33,7 +33,7 @@
     },
     "perfect_seo_1_b": {
         "name": "Seoyeon",
-        "text": "*Los ojos de Seoyeon están húmedos. Esta vez no los esconde con el dorso de la mano.*"
+        "text": "*Sus ojos están húmedos. Esta vez no los esconde con el dorso de la mano.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "perfect_seo_5": {
         "name": "Seoyeon",
-        "text": "*Seoyeon extiende la mano. No el meñique. La mano entera.*"
+        "text": "*Extiende la mano. No el meñique. La mano entera.*"
     },
     "perfect_seo_5_b": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "perfect_epilogue_3_seo": {
         "name": "Seoyeon",
-        "text": "*Seoyeon no borra las fotos aunque el delineador esté un poco corrido. Los algodones frente al espejo no se usaron ni una vez hoy.*"
+        "text": "*No borra las fotos aunque el delineador esté un poco corrido. Los algodones frente al espejo no se usaron ni una vez hoy.*"
     },
     "perfect_epilogue_4_seo": {
         "name": "Sistema",
@@ -113,7 +113,7 @@
     },
     "true_seo_6": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sonríe. El viento le desordena el cabello.*"
+        "text": "*Sonríe. El viento le desordena el cabello.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -125,7 +125,7 @@
     },
     "true_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon duda un momento y me tiende el meñique.*"
+        "text": "*Duda un momento y me tiende el meñique.*"
     },
     "true_seo_7b": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "perfect_yuna_5": {
         "name": "Yuna",
-        "text": "*Yuna se levantó y me abrazó. Sin decir nada. La luz de la ventana rota se extendió larga por el piso. Su mano se detuvo lentamente detrás de mi espalda.*"
+        "text": "*Se levantó y me abrazó. Sin decir nada. La luz de la ventana rota se extendió larga por el piso. Su mano se detuvo lentamente detrás de mi espalda.*"
     },
     "perfect_epilogue_1_yuna": {
         "name": "{name}",
@@ -181,7 +181,7 @@
     },
     "perfect_epilogue_3_yuna": {
         "name": "Yuna",
-        "text": "*Yuna sigue hablando poco. Pero solo con {name}, la longitud de sus frases ha cambiado.*"
+        "text": "*Sigue hablando poco. Pero solo con {name}, la longitud de sus frases ha cambiado.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "Sistema",
@@ -213,7 +213,7 @@
     },
     "true_yuna_2_b": {
         "name": "Yuna",
-        "text": "*Yuna sube la escalerilla de la buhardilla. Arriba hay una trampilla. — Al abrirse entra una brisa.*"
+        "text": "*Sube la escalerilla de la buhardilla. Arriba hay una trampilla. — Al abrirse entra una brisa.*"
     },
     "true_yuna_2_c": {
         "name": "{name}",
@@ -221,11 +221,11 @@
     },
     "true_yuna_2_d": {
         "name": "Yuna",
-        "text": "*Yuna se apoya en la barandilla. Se ven las estrellas.*"
+        "text": "*Se apoya en la barandilla. Se ven las estrellas.*"
     },
     "true_yuna_3": {
         "name": "Yuna",
-        "text": "*Yuna abre la pequeña ventana. Se ven las estrellas.*"
+        "text": "*Abre la pequeña ventana. Se ven las estrellas.*"
     },
     "true_yuna_4": {
         "name": "Yuna",
@@ -237,7 +237,7 @@
     },
     "true_yuna_5_b": {
         "name": "Yuna",
-        "text": "*Yuna se detiene. Su mano se afloja sobre el lomo del libro.*"
+        "text": "*Se detiene. Su mano se afloja sobre el lomo del libro.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -273,7 +273,7 @@
     },
     "perfect_dain_2b": {
         "name": "Dain",
-        "text": "*Dain deja el balón de voleibol y espera la respuesta de {name}.*"
+        "text": "*Deja el balón de voleibol y espera la respuesta de {name}.*"
     },
     "perfect_dain_3": {
         "name": "Dain",
@@ -281,7 +281,7 @@
     },
     "perfect_dain_3b": {
         "name": "Dain",
-        "text": "*Dain deja la pelota en la cancha. Se da vuelta y sonr?e. Una sonrisa tranquila.*"
+        "text": "*Deja la pelota en la cancha. Se da vuelta y sonr?e. Una sonrisa tranquila.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "perfect_dain_5": {
         "name": "Dain",
-        "text": "*Dain saltó. No me dio tiempo a reaccionar. El balón rodó por el suelo — y en el gimnasio bañado por el atardecer solo quedaron dos sombras.*"
+        "text": "*Saltó. No me dio tiempo a reaccionar. El balón rodó por el suelo — Y en el gimnasio bañado por el atardecer solo quedaron dos sombras.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
@@ -301,7 +301,7 @@
     },
     "perfect_epilogue_2_dain": {
         "name": "Dain",
-        "text": "*Dain se convirtió en comentarista deportivo. Sonriendo también frente a la cámara. Esta vez no pongo énfasis en el final de mis palabras.*"
+        "text": "*Se convirtió en comentarista deportivo. Sonriendo también frente a la cámara. Esta vez no pongo énfasis en el final de mis palabras.*"
     },
     "perfect_epilogue_3_dain": {
         "name": "{name}",
@@ -345,7 +345,7 @@
     },
     "true_dain_2": {
         "name": "Dain",
-        "text": "*Dain toma la mano de {name} y la coloca contra la parte interna de su muñeca. Sin decir nada.*"
+        "text": "*Toma la mano de {name} y la coloca contra la parte interna de su muñeca. Sin decir nada.*"
     },
     "true_dain_2b": {
         "name": "{name}",
@@ -377,7 +377,7 @@
     },
     "true_dain_8b": {
         "name": "Dain",
-        "text": "*El final de la voz de Dain se eleva ligeramente. Esta vez no suena forzado.*"
+        "text": "*El final de su voz se eleva ligeramente. Esta vez no suena forzado.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -474,11 +474,11 @@
     },
     "good_1_seo_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon acomoda una vez el borde de la manga de {name}, como si quitara un pétalo de cerezo. El gesto es brusco, pero no aparta.*"
+        "text": "*Acomoda una vez el borde de la manga de {name}, como si quitara un pétalo de cerezo. El gesto es brusco, pero no aparta.*"
     },
     "good_1_seo_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon retrasa medio paso sin decir nada. Espera hasta que el hombro de {name} queda a la misma altura que el suyo.*"
+        "text": "*Retrasa medio paso sin decir nada. Espera hasta que el hombro de {name} queda a la misma altura que el suyo.*"
     },
     "good_1_seo_d": {
         "name": "{name}",
@@ -506,7 +506,7 @@
     },
     "good_epilogue_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon nunca usa la palabra 'invitación' hasta el final. En su lugar, envía una foto de la copia de la llave de la azotea.*"
+        "text": "*Nunca usa la palabra 'invitación' hasta el final. En su lugar, envía una foto de la copia de la llave de la azotea.*"
     },
     "good_epilogue_3": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "good_1_yuna_b": {
         "name": "Yuna",
-        "text": "*Yuna me da una nota doblada. Al abrirla, solo hay una línea: 'La próxima vez, no desaparezcas.'*"
+        "text": "*Me da una nota doblada. Al abrirla, solo hay una línea: 'La próxima vez, no desaparezcas.'*"
     },
     "good_1_yuna_b_b": {
         "name": "{name}",
@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "Yuna",
-        "text": "*Yuna mete el marcapáginas en una página nueva, en el lado sin marca de doblez.*"
+        "text": "*Mete el marcapáginas en una página nueva, en el lado sin marca de doblez.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -550,7 +550,7 @@
     },
     "good_epilogue_2_yuna": {
         "name": "Yuna",
-        "text": "*Yuna, en lugar de hablar, prepara lo siguiente. Después del primer tomo, el segundo. Después de hoy, mañana. Esta es su manera de decir 'sigamos viéndonos'.*"
+        "text": "*En lugar de hablar, prepara lo siguiente. Después del primer tomo, el segundo. Después de hoy, mañana. Esta es su manera de decir 'sigamos viéndonos'.*"
     },
     "good_epilogue_3_yuna": {
         "name": "{name}",
@@ -698,7 +698,7 @@
     },
     "mayhem_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pasa junto a {name} en el pasillo. No gira la cabeza.*"
+        "text": "*Pasa junto a {name} en el pasillo. No gira la cabeza.*"
     },
     "mayhem_2": {
         "name": "{name}",
@@ -706,7 +706,7 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain sonr?e como siempre. ?Cu?date?. El final de la frase cae suavemente al suelo.*"
+        "text": "*Sonr?e como siempre.?Cu?date?. El final de la frase cae suavemente al suelo.*"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -730,11 +730,11 @@
     },
     "harem_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se rió primero....bueno. Eso es honesto. La risa pronto terminó.*"
+        "text": "*Se rió primero....bueno. Eso es honesto. La risa pronto terminó.*"
     },
     "harem_1_b": {
         "name": "Yuna",
-        "text": "*Yuna baja la cabeza. Cuando al fin levanta la vista, las puntas de sus dedos presionan con fuerza el lomo del libro.*"
+        "text": "*Baja la cabeza. Cuando al fin levanta la vista, las puntas de sus dedos presionan con fuerza el lomo del libro.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -742,7 +742,7 @@
     },
     "harem_3": {
         "name": "Dain",
-        "text": "*Dain golpea el hombro de {name} con el puño. El impacto es lo bastante fuerte para doler. \"Oye, eres lo peor.\" No hay risa al final de la frase.*"
+        "text": "*Golpea el hombro de {name} con el puño. El impacto es lo bastante fuerte para doler. \"Oye, eres lo peor.\" No hay risa al final de la frase.*"
     },
     "harem_4": {
         "name": "{name}",
@@ -750,7 +750,7 @@
     },
     "harem_5": {
         "name": "Seoyeon",
-        "text": "*Cuando Seoyeon preguntó: “¿Qué harás el miércoles?”, su dedo se detuvo en la ventana de respuesta.*"
+        "text": "*Cuando preguntó: “¿Qué harás el miércoles?”, su dedo se detuvo en la ventana de respuesta.*"
     },
     "harem_6": {
         "name": "{name}",
