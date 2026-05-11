@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Mañana por la noche tendré que ponerme a contarlas. — Gracias a ella, cada vez levanto más la vista al cielo.*"
+        "text": "*Mañana por la noche, mi dedo volverá a detenerse en la tercera estrella.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -194,11 +194,11 @@
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Tres líneas. Gracias, distancia, y otra vez acercarse. — Está jugando al tira y afloja ella sola.*"
+        "text": "*El punto final del mensaje parece escrito mucho después.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*'No hace falta que te llame más' y 'ven cuando quieras' en el mismo mensaje. Es contradictorio — pero muy suyo.*"
+        "text": "*Vuelvo a leer solo la última línea.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Sin derecho a negarse. — Que esta mujer me está arrastrando, ¿ya tengo que admitirlo?*"
+        "text": "*Presiono la esquina de la tirita con el pulgar. Mañana por la mañana hay una cosa más en la agenda.*"
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
@@ -238,7 +238,7 @@
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Acertijo muy suyo. — No te da la respuesta, pero te deja con ganas de buscarla.*"
+        "text": "*La respuesta termina ahí. Mis marcas de dedos quedan en la ventana.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

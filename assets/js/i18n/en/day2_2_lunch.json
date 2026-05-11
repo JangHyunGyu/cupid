@@ -63,7 +63,7 @@
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
-        "text": "*sigh*That’s surprisingly persuasive."
+        "text": "*Heh.* That almost makes sense."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*The corners of Yuna’s mouth rise for a split second. The sound of turning the pages of a book is lighter than before.*"
+        "text": "*Yuna turns the page. The paper sounds lighter than before.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -268,7 +268,7 @@
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*I always thought I read people well. — Apparently not this one.*"
+        "text": "*I bite my lip and stare only at the worn gold on the book spine.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -424,7 +424,7 @@
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*A grain of rice still marks the back of her hand. Seoyeon is smiling, but one corner of her mouth drops first.*"
+        "text": "*The rice mark is still on the back of my hand. Seoyeon keeps smiling and only reties the lunchbox strap.*"
     },
     "lunch2_dain_1": {
         "name": "{name}",
@@ -641,7 +641,7 @@
     },
     "lunch2_dain_end_v": {
         "name": "{name}",
-        "text": "*She plays it off with a joke, but she closed that drawer fast. — There's something she doesn't want seen.*"
+        "text": "*The nurse closes the drawer. The handle is pressed once more.*"
     },
     "lunch2_dain_end_w": {
         "name": "School Nurse",

@@ -10,7 +10,7 @@
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*Dessa vez, tenho que decidir até isso.*",
+        "text": "*Minha mão para entre o envelope e o curativo.*",
         "choices": [
             "Vou até quem me entregou o manuscrito",
             "Vou até quem deixou a resposta no dorso da minha mão"
@@ -79,7 +79,7 @@
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Entreguei o buquê.* Isso aqui não é interesse pedagógico. Da minha parte, não é."
+        "text": "*Entrego o buquê.* Da minha parte, é só sentimento."
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Professora",
@@ -139,11 +139,11 @@
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*Foi sem querer. — No instante em que me formei, o título caiu.*"
+        "text": "*O jeito como a chamei soa estranho um segundo depois de sair da boca.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "{name}",
-        "text": "*Ela tira um envelope. Desta vez não é pardo — é branco.*"
+        "text": "*A professora tira um envelope branco. É mais fino que o antigo envelope marrom.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Professora",
@@ -183,7 +183,7 @@
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*De suco pra café. — De aluno pra adulto. Não é cruzar a linha — a linha sumiu.*"
+        "text": "*A palavra café fica por muito tempo sobre o porta-copos.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
@@ -191,7 +191,7 @@
     },
     "hidden_true_homeroom_7_b": {
         "name": "{name}",
-        "text": "*Ela sorri. Não aquele sorriso seco — o sorriso de quem fechou um manuscrito de sete anos.*"
+        "text": "*A professora sorri. A luz da janela cai sobre o envelope do manuscrito.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Professora",
@@ -268,11 +268,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Manhã. Um band-aid colado na mesa da cozinha. Com o cardápio do dia escrito nele. — Esse é o post-it dela.*"
+        "text": "*Manhã. Há um curativo grudado na mesa. O menu de hoje está escrito em letras pequenas.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Ela voltou pro hospital universitário. Dessa vez, os pacientes chamam pelo nome. — Enfermeira Lee Juwon.*"
+        "text": "*Ela voltou ao hospital universitário. Os pacientes a chamam pelo nome. — Enfermeira Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -356,7 +356,7 @@
     },
     "hidden_true_nurse_7_d": {
         "name": "{name}",
-        "text": "*Uma pessoa que precisava de uma desculpa. — O título de 'professora' era desculpa e muro ao mesmo tempo. Hoje, esse muro caiu.*"
+        "text": "*A enfermeira aperta a ponta do curativo uma vez com a unha e solta.*"
     },
     "hidden_true_nurse_8": {
         "name": "Enfermeira",
@@ -372,7 +372,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*Essa tal data de formatura apaga a linha. — Num café, não na enfermaria. Com uma pessoa, não com um cargo.*"
+        "text": "*Por um instante, a cortina branca da enfermaria se sobrepõe à janela do café e desaparece.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
@@ -444,7 +444,7 @@
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*Ela tá chorando de novo. Dessa vez não no banheiro — na minha frente.*"
+        "text": "*Os olhos de Seoyeon estão molhados. Desta vez ela não os esconde com as costas da mão.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -512,11 +512,11 @@
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "Na sua frente, eu sinto que não preciso ser perfeita."
+        "text": "Na sua frente, acho que não preciso do rosto ensaiado."
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "Desde o começo não precisava."
+        "text": "Você nunca precisou."
     },
     "true_seo_5": {
         "name": "Seoyeon",
@@ -524,7 +524,7 @@
     },
     "true_seo_6": {
         "name": "{name}",
-        "text": "*Seoyeon sorri. O canto da boca se mexe por conta própria.*"
+        "text": "*Seoyeon sorri. O cabelo se espalha ao vento.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -648,7 +648,7 @@
     },
     "true_yuna_5_b": {
         "name": "{name}",
-        "text": "*Yuna faz uma pausa. Apenas os cantos da boca se levantam silenciosamente.*"
+        "text": "*Yuna para por um instante. A mão que segura a lombada relaxa.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -796,7 +796,7 @@
     },
     "true_dain_8b": {
         "name": "{name}",
-        "text": "*A exclamação voltou. — Mas dessa vez, é exclamação de sentimento de verdade.*"
+        "text": "*O fim da voz de Dain sobe de leve. Desta vez não parece forçado.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -905,7 +905,7 @@
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Essa falha é diferente da outra em uma coisa só. Dessa vez, pelo menos, eu falei. Por isso dá pra realmente encerrar.*"
+        "text": "*As palavras saíram até o fim. Talvez por isso meus pés tremam menos quando me viro.*"
     },
     "confess_fail_5": {
         "name": "Sistema",
@@ -921,15 +921,15 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Mesmo assim, dessa vez olhamos na mesma direção.*"
+        "text": "*Mesmo assim, caminhamos na mesma direção.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Não é um final feliz perfeito, mas dá pra recomeçar daqui.*"
+        "text": "*Uma pétala de cerejeira gruda na ponta do sapato e cai no passo seguinte.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Perfeito não vai ser. Nem você, nem eu. ...Mas dessa vez, não larga no meio."
+        "text": "Nós dois somos desajeitados. ...Mas desta vez não solta no meio."
     },
     "good_1_seo_b": {
         "name": "{name}",
@@ -953,7 +953,7 @@
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Eu ri, e Seoyeon fingiu não ver — até puxar o canto da boca pra cima bem devagar.*"
+        "text": "*Eu sorrio, e Seoyeon finge não ver antes de diminuir um pouco o passo.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -969,7 +969,7 @@
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Guardei a chave no bolso. Amanhã no terraço — dessa vez sou eu que levo a marmita.*"
+        "text": "*Coloco a chave no bolso. Amanhã é minha vez de levar o almoço para o terraço.*"
     },
     "good_5_cg_seo": {
         "name": "Sistema",
@@ -997,7 +997,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Não no lugar vazio de alguém, mas como a pessoa que está aqui agora. É assim que quero ficar. Yuna também. Eu também.*"
+        "text": "*Yuna coloca o marcador numa página nova, no lado sem marca de dobra.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -1029,7 +1029,7 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Peguei. Só aí a Dain sorri. Fazer as pazes sempre vem do jeito dela.*"
+        "text": "*Eu pego. Só então Dain sorri. A bola quica mais uma vez na minha palma.*"
     },
     "good_4_dain": {
         "name": "{name}",
@@ -1161,7 +1161,7 @@
     },
     "harem_1_b": {
         "name": "{name}",
-        "text": "*Yuna abaixou a cabeça. Quando olhei para cima depois de um tempo, os cantos da minha boca subiram. As pontas dos dedos pressionam com força a lombada do livro.*"
+        "text": "*Yuna abaixa a cabeça. Quando finalmente olha para cima, as pontas dos dedos apertam forte a lombada.*"
     },
     "harem_2": {
         "name": "Yuna",

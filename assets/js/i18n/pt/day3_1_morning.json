@@ -226,7 +226,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Fico paralisado. — Nunca vi essa expressão na professora. O rosto de quem foi pega no flagra. Ela vira o papel de cabeça pra baixo num movimento rápido.*"
+        "text": "*A mão da professora para sobre o papel de manuscrito. Logo depois, a folha é virada.*"
     },
     "hidden_homeroom_d3_4": {
         "name": "Professora",
@@ -286,7 +286,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Professora",
-        "text": "Depois de me formar, tentei estrear como escritora — fui recusada três vezes em dois anos. O dinheiro acabou, e meus pais disseram 'hora de ser realista'."
+        "text": "Depois de me formar, mandei algumas vezes. Fui rejeitada. Depois disso... preencher inscrições parecia mais fácil."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Professora",
-        "text": "Depois que enviei o quarto manuscrito — no dia do resultado, o telefone não tocou. Naquele mesmo dia, me inscrevi pra licenciatura."
+        "text": "No dia em que esperei o último resultado, a ligação não veio. Nesse dia preenchi a inscrição para pedagogia."
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professora",
@@ -318,7 +318,7 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Professora",
-        "text": "Passei no concurso. Professora de literatura. — Alguém que escrevia romances, agora ensina literatura. Irônico, né?"
+        "text": "Foi assim que virei professora de coreano. Engraçado, né? Ainda segurando papel desse jeito."
     },
     "hidden_homeroom_d3_reveal_3_b": {
         "name": "{name}",
@@ -334,7 +334,7 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Manuscrito inacabado na gaveta da escrivaninha. Uma história que estava encerrada há 7 anos foi publicada aqui.*"
+        "text": "*Todas as bordas do manuscrito têm marcas de manuseio. A professora pousa a ponta do dedo numa linha vazia.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Professora",
@@ -350,7 +350,7 @@
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
-        "text": "*'Educacionalmente.' Mesmo depois de dizer isso, o professor não consegue tirar a mão do manuscrito.*"
+        "text": "*Mesmo depois de dizer isso, a professora não consegue tirar a mão do manuscrito.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*A professora da sala ri. Os cantos da boca sobem desajeitadamente e as mãos permanecem no manuscrito.*"
+        "text": "*A professora sorri. A mão ainda está sobre o manuscrito.*"
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Professora",
@@ -410,7 +410,7 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "{name}",
-        "text": "*A professora ajeita o cabelo e sai da sala. — 'Por favor' é palavra rara vinda dela.*"
+        "text": "*A professora joga o cabelo para trás e sai da sala. Do outro lado da porta fechada, soa a tampa de uma caneta.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Professora",
@@ -448,7 +448,7 @@
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
-        "text": "*A professora usou a palavra 'por favor'. — Pra ela, é uma palavra rara.*"
+        "text": "*O manuscrito virado e a voz baixa me acompanham até o corredor.*"
     },
     "hidden_nurse_d3_2_c": {
         "name": "{name}",
@@ -608,7 +608,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Enfermeira",
-        "text": "*Voltando ao tom brincalhão* Imagina. Isso aí é cortesia da casa. Da próxima vez, passa aqui mesmo sem tá machucado."
+        "text": "*A enfermeira recoloca o sorriso.* Imagina. Isso é serviço. Da próxima vez, passa mesmo sem estar doente."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",

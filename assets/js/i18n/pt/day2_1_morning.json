@@ -90,7 +90,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*Se a tensão estiver tão alta às 8h, acho que a bateria vai acabar antes do funeral.*"
+        "text": "*A voz de Dain enche a sala antes mesmo da chamada da manhã.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Não parei de andar. Pouco antes de Seoyeon virar a esquina, o sorriso dela desaparece primeiro. A prancheta se aproxima mais do peito dela.*"
+        "text": "*Pouco antes de Seoyeon virar o corredor, ela diminui o passo. A prancheta fica mais presa ao braço.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Romances. Professora de português lendo romances é o óbvio. Mas por que deu a impressão de estar escolhendo as palavras?*"
+        "text": "*O olhar da professora fica por um instante na gaveta aberta.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Professora",
@@ -202,7 +202,7 @@
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Pergunta estranha. A gente tava falando de nota, por que veio com 'escrever' do nada?*"
+        "text": "*O dedo pousado no boletim cobre a ponta do papel de manuscrito.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -258,7 +258,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Aquele que está preocupado'. O professor da sala de aula olha para o crachá de Dain.*"
+        "text": "*O olhar da professora para por um instante na linha do nome de Dain.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professora",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Falou baixinho, como se fosse pra si mesma.*"
+        "text": "*A voz da professora fica baixa dentro da xícara de café.*"
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",

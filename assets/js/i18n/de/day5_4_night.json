@@ -13,7 +13,7 @@
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*Diesmal muss ich sogar das entscheiden.*",
+        "text": "*Meine Hand hält zwischen Umschlag und Pflaster inne.*",
         "choices": [
             "Zu der Person gehen, die mir das Manuskript gegeben hat",
             "Zu der Person gehen, die eine Antwort auf meinem Handrücken hinterlassen hat"
@@ -33,7 +33,7 @@
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*Sie weint schon wieder. Nicht in der Toilette — diesmal vor mir.*"
+        "text": "*Seoyeons Augen sind feucht. Diesmal versteckt sie sie nicht mit dem Handrücken.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -101,11 +101,11 @@
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "Vor dir habe ich das Gefühl, nicht perfekt sein zu müssen."
+        "text": "Vor dir muss ich wohl kein geübtes Gesicht machen."
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "Du musstest nie perfekt sein."
+        "text": "Das musstest du nie."
     },
     "true_seo_5": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
     },
     "true_seo_6": {
         "name": "{name}",
-        "text": "*Seoyeon lächelt. Ihre Mundwinkel bewegen sich von allein.*"
+        "text": "*Seoyeon lächelt. Ihr Haar zerstreut sich im Wind.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -237,7 +237,7 @@
     },
     "true_yuna_5_b": {
         "name": "{name}",
-        "text": "*Yuna hält inne. Lediglich die Mundwinkel heben sich leise.*"
+        "text": "*Yuna hält kurz inne. Die Hand am Buchrücken lockert sich.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -377,7 +377,7 @@
     },
     "true_dain_8b": {
         "name": "{name}",
-        "text": "*Das Ausrufezeichen ist zurück. — Aber diesmal ist es ein echtes.*"
+        "text": "*Das Ende von Dains Stimme hebt sich leicht. Diesmal klingt es nicht erzwungen.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -462,15 +462,15 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Trotzdem schauen wir dieses Mal in dieselbe Richtung.*"
+        "text": "*Trotzdem gehen wir in dieselbe Richtung.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Vielleicht ist es kein perfektes Happy End, aber von hier aus können wir neu anfangen.*"
+        "text": "*Ein Kirschblütenblatt klebt an der Schuhspitze und fällt beim nächsten Schritt ab.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Wir sind nicht perfekt. Du nicht und ich nicht. ...Aber lass diesmal mittendrin nicht los."
+        "text": "Wir sind beide unbeholfen. ...Aber lass diesmal nicht mittendrin los."
     },
     "good_1_seo_b": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Ich lächelte, und Seoyeon tat so, als sähe sie es nicht — hob aber ganz leicht die Mundwinkel.*"
+        "text": "*Ich lächle, und Seoyeon tut, als sähe sie es nicht, bevor sie etwas langsamer geht.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Ich steckte den Schlüssel in die Tasche. Morgen auf dem Dach — diesmal bin ich dran, das Mittagessen mitzubringen.*"
+        "text": "*Ich stecke den Schlüssel in die Tasche. Morgen bin ich dran, das Mittagessen aufs Dach zu bringen.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Nicht als Platzhalter für jemanden, sondern als der Mensch, der jetzt hier ist. So will ich bleiben. Yuna auch. Ich auch.*"
+        "text": "*Yuna steckt das Lesezeichen in eine neue Seite, auf die Seite ohne Knick.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -570,7 +570,7 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Dain wirft den Volleyball. Ich fange ihn. — So versöhnt sich dieser Mensch.*"
+        "text": "*Ich fange ihn. Erst dann lächelt Dain. Der Ball springt noch einmal in meiner Handfläche.*"
     },
     "good_4_dain": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Dieses Scheitern ist in einem Punkt anders als früher: Wenigstens habe ich es diesmal gesagt, und genau deshalb kann ich nun wirklich abschließen.*"
+        "text": "*Die Worte kamen bis zum Ende heraus. Vielleicht zittern meine Füße deshalb weniger, als ich mich umdrehe.*"
     },
     "confess_fail_5": {
         "name": "System",
@@ -734,7 +734,7 @@
     },
     "harem_1_b": {
         "name": "{name}",
-        "text": "*Yuna senkte den Kopf. Als ich nach einer Weile aufsah, hoben sich meine Mundwinkel. Die Fingerspitzen drücken fest auf den Buchrücken.*"
+        "text": "*Yuna senkt den Kopf. Als sie lange danach aufblickt, drücken ihre Fingerspitzen fest in den Buchrücken.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -827,7 +827,7 @@
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Ich reichte ihr den Strauß.* Das ist kein pädagogisches Interesse. Nicht von meiner Seite."
+        "text": "*Ich reiche den Blumenstrauß hinüber.* Von meiner Seite aus sind es einfach Gefühle."
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Klassenlehrerin",
@@ -887,11 +887,11 @@
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*Es war unbewusst. — In dem Moment, als ich den Abschluss hatte, fiel der Titel ab.*"
+        "text": "*Die Anrede, die mir herausgerutscht ist, fühlt sich einen Schlag später fremd an.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "{name}",
-        "text": "*Sie zieht einen Umschlag hervor. Diesmal nicht braun — weiß.*"
+        "text": "*Die Klassenlehrerin holt einen weißen Umschlag hervor. Er ist dünner als der alte braune.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Klassenlehrerin",
@@ -931,7 +931,7 @@
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*Von Saft zu Kaffee. — Von Schüler zu Erwachsenem. Die Grenze wurde nicht überschritten — sie ist verschwunden.*"
+        "text": "*Das Wort Kaffee bleibt lange auf dem Untersetzer liegen.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
@@ -939,7 +939,7 @@
     },
     "hidden_true_homeroom_7_b": {
         "name": "{name}",
-        "text": "*Sie lächelt. Kein trockenes Lächeln — das Lächeln von jemandem, der ein sieben Jahre altes Manuskript vollendet hat.*"
+        "text": "*Die Klassenlehrerin lächelt. Fensterlicht fällt auf den Manuskriptumschlag.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Klassenlehrerin",
@@ -1016,11 +1016,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Morgen. Am Küchentisch klebt ein Pflaster. Darauf steht das heutige Menü. — Ihre Art von Post-it.*"
+        "text": "*Morgen. Ein Pflaster klebt am Esstisch. Das heutige Menü steht in kleinen Buchstaben darauf.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Sie kehrte ans Universitätskrankenhaus zurück. Diesmal rufen die Patienten sie beim Namen. — Lee Juwon.*"
+        "text": "*Sie ist ins Universitätsklinikum zurückgekehrt. Die Patienten nennen sie beim Namen. — Schwester Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -1104,7 +1104,7 @@
     },
     "hidden_true_nurse_7_d": {
         "name": "{name}",
-        "text": "*Die Person, die Ausreden brauchte. — Der Titel 'Lehrerin' war ihre Ausrede und ihre Mauer zugleich. Diese Mauer ist heute verschwunden.*"
+        "text": "*Die Krankenschwester drückt einmal mit dem Fingernagel auf den Rand des Pflasters und lässt los.*"
     },
     "hidden_true_nurse_8": {
         "name": "Schulkrankenschwester",
@@ -1120,7 +1120,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*Der Abschluss löscht die Grenze. — Im Café statt im Krankenzimmer, mit einer Person statt einer Lehrerin.*"
+        "text": "*Einen Moment lang überlagert der weiße Vorhang des Krankenzimmers das Caféfenster und verschwindet.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",

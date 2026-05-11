@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Morgen Abend muss ich mal nachzählen. — Wegen dieser Person schaue ich ständig zum Himmel hoch.*"
+        "text": "*Morgen Nacht wird mein Finger wieder beim dritten Stern stehen bleiben.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -194,11 +194,11 @@
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Drei Zeilen. Dank, Distanz, dann wieder Annäherung. — Sie spielt Tauziehen mit sich selbst.*"
+        "text": "*Der Punkt am Ende der Nachricht sieht aus, als wäre er viel später gesetzt worden.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*'Muss dich nicht mehr rufen' und 'komm jederzeit' in derselben Nachricht. Widersprüchlich — aber das ist so typisch für sie.*"
+        "text": "*Ich lese nur die letzte Zeile noch einmal.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Kein Widerspruch möglich. — Dass ich zu ihr hingezogen werde — muss ich mir das jetzt eingestehen?*"
+        "text": "*Ich drücke mit dem Daumen auf die Ecke des Pflasters. Für morgen früh gibt es einen Punkt mehr.*"
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
@@ -238,7 +238,7 @@
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Ein typisches Yuna-Rätsel. Eine Person, die dir nie die Antwort gibt. — Eine Person, die dich neugierig macht.*"
+        "text": "*Die Antwort endet dort. Meine Fingerabdrücke bleiben am Fenster zurück.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

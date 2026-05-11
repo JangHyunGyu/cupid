@@ -230,11 +230,11 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Professeure principale",
-        "text": "Après avoir soumis le quatrième manuscrit — le jour des résultats, je n'ai pas reçu d'appel. Ce jour-là, j'ai postulé pour l'école normale."
+        "text": "Le jour où j'attendais le dernier résultat, le téléphone n'a pas sonné. Ce jour-là, j'ai rempli le dossier pour l'école normale."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Professeure principale",
-        "text": "J'ai passé le concours. Prof de lettres. — Une aspirante romancière qui enseigne les lettres. Ironique, non ?"
+        "text": "C'est comme ça que je suis devenue prof de coréen. Drôle, non ? Toujours accrochée au papier."
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Professeure principale",
@@ -262,7 +262,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*Le professeur principal rit. Les coins de la bouche se relèvent maladroitement et les mains restent sur le manuscrit.*"
+        "text": "*La prof principale sourit. Sa main reste sur la feuille manuscrite.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Professeure principale",
@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "{name}",
-        "text": "*Elle replace ses cheveux derrière son oreille et sort. — 'S'il te plaît' est un mot rare chez elle.*"
+        "text": "*La prof principale remet ses cheveux en arrière et quitte la classe. Derrière la porte fermée, un capuchon de stylo claque.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Professeure principale",
@@ -494,7 +494,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Une demi-seconde. Figée. — C'est une expression que je n'ai jamais vue chez la prof. Ni indifférente, ni sèche. Le visage de quelqu'un pris sur le fait. La prof retourne rapidement la feuille de manuscrit.*"
+        "text": "*La main de la prof principale s'arrête au-dessus de la feuille manuscrite. L'instant d'après, elle la retourne.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professeure principale",
@@ -530,7 +530,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Professeure principale",
-        "text": "Après la fac, j'ai préparé mes candidatures pour être publiée — refusée pendant deux ans. Trois fois. L'argent s'est épuisé, et mes parents me disaient « Il faut être réaliste maintenant »."
+        "text": "Après le diplôme, je l'ai envoyé quelques fois. Refusé. Après ça... remplir des dossiers était plus simple."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Manuscrit inachevé dans le tiroir du bureau. Une histoire fermée depuis 7 ans a été diffusée ici.*"
+        "text": "*Chaque bord de la feuille manuscrite porte des traces de doigts. La prof principale pose le bout du doigt sur une ligne vide.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Professeure principale",
@@ -562,7 +562,7 @@
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
-        "text": "*'Pédagogiquement.' Même après avoir dit ça, le professeur ne peut pas retirer sa main du manuscrit.*"
+        "text": "*Même après l’avoir dit, la prof principale ne parvient pas à lâcher la feuille manuscrite.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
@@ -594,7 +594,7 @@
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
-        "text": "*La prof utilise le mot 's'il te plaît.' — Pour elle, c'est un mot rare.*"
+        "text": "*La feuille retournée et la voix basse me suivent jusque dans le couloir.*"
     },
     "hidden_nurse_d3_2_c": {
         "name": "{name}",
@@ -734,7 +734,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Infirmière",
-        "text": "*Retrouvant un ton léger* Oh, pour si peu. Considère ça comme offert. Reviens quand tu veux. Blessé ou pas."
+        "text": "*L'infirmière remet son sourire en place.* Allons. Ça, c'est du service. Passe la prochaine fois même sans être malade."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",

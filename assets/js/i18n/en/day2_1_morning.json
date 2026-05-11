@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*If the tension is this high at 8 a.m., I think the battery will run out before the funeral.*"
+        "text": "*Dain's voice fills the classroom before morning homeroom even starts.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*I didn't stop walking. Just before Seoyeon turns the corner, her smile fades first. The clipboard presses closer to her chest.*"
+        "text": "*Just before Seoyeon turns the corner, her steps slow. The clipboard presses closer against her arm.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Novels. A literature teacher who reads novels — that's not strange. So why did she sound reluctant to say it?*"
+        "text": "*The teacher's gaze lingers for a moment on the open drawer.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Homeroom Teacher",
@@ -318,7 +318,7 @@
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Strange question. We were talking about grades, so why the sudden shift to 'writing'?*"
+        "text": "*The finger resting on the report card covers the corner of the manuscript paper.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'The one who is worried'. The homeroom teacher glances towards Dain’s name tag.*"
+        "text": "*The teacher's eyes pause for a moment on the row with Dain's name tag.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Homeroom Teacher",
@@ -354,6 +354,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Muttered, like she thought no one was listening.*"
+        "text": "*The teacher's voice sinks low into the inside of the coffee cup.*"
     }
 }

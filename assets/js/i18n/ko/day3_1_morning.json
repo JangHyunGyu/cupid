@@ -226,7 +226,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*얼어붙는다. — 담임의 표정이 낯설다. 허를 찔린 표정. 담임이 재빨리 원고지를 뒤집어 놓는다.*"
+        "text": "*담임의 손이 원고지 위에서 멈춘다. 곧 종이가 뒤집힌다.*"
     },
     "hidden_homeroom_d3_4": {
         "name": "담임선생님",
@@ -286,7 +286,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "담임선생님",
-        "text": "졸업하고 등단 준비했는데 — 2년 동안 떨어졌어. 세 번. 생활비는 바닥나고, 부모님은 '이제 현실적으로 생각해'라고 하시고."
+        "text": "졸업하고 몇 번 냈어. 떨어졌고. 그 뒤로는... 원서 넣는 쪽이 더 쉬웠지."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
@@ -294,7 +294,7 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "담임선생님",
-        "text": "네 번째 원고를 넣고 나서 — 결과 발표 날, 전화가 안 와서. 그날 교대 원서를 썼어."
+        "text": "마지막 결과 기다리던 날, 전화가 안 왔어. 그날 교대 원서를 썼다."
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "담임선생님",
@@ -318,7 +318,7 @@
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "담임선생님",
-        "text": "임용시험 봤어. 국어 교사. — 소설 쓰던 사람이 국어를 가르치고 있으니, 아이러니하지?"
+        "text": "그렇게 국어 교사가 됐어. 웃기지. 아직도 종이 붙잡고 있는 게."
     },
     "hidden_homeroom_d3_reveal_3_b": {
         "name": "{name}",
@@ -334,7 +334,7 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*교탁 서랍의 미완성 원고. 7년 동안 닫혀 있던 이야기가 여기까지 밀려 나왔다.*"
+        "text": "*원고지 가장자리마다 손때가 묻어 있다. 담임은 빈 줄 위에 손끝을 올린다.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "담임선생님",
@@ -350,7 +350,7 @@
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
-        "text": "*'교육적으로.' 담임은 그렇게 말하고도 원고지에서 손을 떼지 못한다.*"
+        "text": "*담임은 그렇게 말하고도 원고지에서 손을 떼지 못한다.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*담임이 웃는다. 입꼬리가 어색하게 올라가고, 손은 원고지 위에 그대로 있다.*"
+        "text": "*담임이 웃는다. 손은 여전히 원고지 위에 있다.*"
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "담임선생님",
@@ -410,7 +410,7 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "{name}",
-        "text": "*담임이 머리카락을 넘기며 교실을 나선다. — 이 사람한테 '부탁'은 드문 단어다.*"
+        "text": "*담임이 머리카락을 넘기며 교실을 나선다. 닫힌 문 안쪽에서 펜 뚜껑 소리가 난다.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "담임선생님",
@@ -448,7 +448,7 @@
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
-        "text": "*담임이 '부탁'이라는 말을 쓴다. — 이 사람한테 그건 드문 단어다.*"
+        "text": "*뒤집힌 원고지와 낮은 목소리가 복도까지 따라온다.*"
     },
     "hidden_nurse_d3_2_c": {
         "name": "{name}",
@@ -608,7 +608,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "보건선생님",
-        "text": "*다시 장난스럽게* 뭘. 이 정도는 서비스지. 다음엔 안 아파도 들러."
+        "text": "*보건선생님이 다시 웃음을 붙인다.* 뭘. 이 정도는 서비스지. 다음엔 안 아파도 들러."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",

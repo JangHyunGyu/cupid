@@ -63,7 +63,7 @@
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
-        "text": "*seufz*Das ist überraschend überzeugend."
+        "text": "*Heh.* Das ergibt irgendwie Sinn."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*Yunas Mundwinkel heben sich für den Bruchteil einer Sekunde. Das Geräusch beim Umblättern eines Buches ist leiser als zuvor.*"
+        "text": "*Yuna blättert um. Das Papier klingt leichter als zuvor.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -268,7 +268,7 @@
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*Ich war immer stolz auf mein Feingefühl. — Ich lag falsch. Nicht bei dieser Person.*"
+        "text": "*Ich beiße mir auf die Lippe und starre nur auf das abgenutzte Gold am Buchrücken.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -424,7 +424,7 @@
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*Ein Reiskorn markiert noch den Handrücken. Seoyeon lächelt, aber ein Mundwinkel senkt sich zuerst.*"
+        "text": "*Der Reisfleck ist noch auf meinem Handrücken. Seoyeon lächelt weiter und bindet nur das Band der Lunchbox neu.*"
     },
     "lunch2_dain_1": {
         "name": "{name}",
@@ -641,7 +641,7 @@
     },
     "lunch2_dain_end_v": {
         "name": "{name}",
-        "text": "*Sie spielt es mit einem Witz herunter, aber die Schublade hat sie schnell zugemacht. — Es gibt etwas, das sie nicht zeigen will.*"
+        "text": "*Die Krankenschwester schließt die Schublade. Der Griff wird noch einmal angedrückt.*"
     },
     "lunch2_dain_end_w": {
         "name": "Schulkrankenschwester",

@@ -230,11 +230,11 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Profesora",
-        "text": "Después de mandar el cuarto manuscrito — el día que salían los resultados, el teléfono no sonó. Ese mismo día me inscribí a magisterio."
+        "text": "El día que esperé el último resultado, la llamada no llegó. Ese día llené la solicitud para la universidad de educación."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Profesora",
-        "text": "Me presenté a la oposición. Profesora de Lengua. — Una aspirante a novelista dando clase de Lengua. Irónico, ¿no?"
+        "text": "Así me hice profesora de lengua. Da risa, ¿no? Todavía aferrada al papel."
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Profesora",
@@ -262,7 +262,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*La profesora se ríe. Las comisuras de la boca se elevan torpemente y las manos permanecen sobre el manuscrito.*"
+        "text": "*La tutora sonríe. La mano sigue sobre el manuscrito.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Profesora",
@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "{name}",
-        "text": "*Se aparta el cabello y sale del aula. — 'Te lo pido' no es algo que ella diga a menudo.*"
+        "text": "*La tutora se aparta el pelo y sale del aula. Del otro lado de la puerta cerrada suena el clic de una tapa de bolígrafo.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Profesora",
@@ -494,7 +494,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Me quedo helado. — Es una expresión que nunca le había visto a la profe. La cara de alguien al que acaban de atrapar. Le da la vuelta al manuscrito a toda prisa.*"
+        "text": "*La mano de la tutora se detiene sobre el papel manuscrito. Al instante, la hoja queda boca abajo.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Profesora",
@@ -530,7 +530,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Profesora",
-        "text": "Al graduarme, intenté debutar como escritora — me rechazaron tres veces en dos años. Se me acabó el dinero, y mis padres ya me decían 'hora de ser realista'."
+        "text": "Después de graduarme, lo envié unas cuantas veces. Me rechazaron. Después de eso... rellenar solicitudes fue más fácil."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Manuscrito inacabado en el cajón del escritorio. Una historia que había estado cerrada durante 7 años ha sido publicada aquí.*"
+        "text": "*Todos los bordes del manuscrito están gastados por las manos. La tutora posa la yema del dedo sobre una línea vacía.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Profesora",
@@ -562,7 +562,7 @@
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
-        "text": "*'Educativamente.' Incluso después de decir eso, el profesor no puede apartar la mano del manuscrito.*"
+        "text": "*Incluso después de decir eso, la tutora no puede apartar la mano del manuscrito.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
@@ -594,7 +594,7 @@
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
-        "text": "*La profe usa la palabra 'por favor'. — En ella es rarísima.*"
+        "text": "*El manuscrito boca abajo y la voz baja me siguen hasta el pasillo.*"
     },
     "hidden_nurse_d3_2_c": {
         "name": "{name}",
@@ -734,7 +734,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Enfermera",
-        "text": "*Vuelve al tono juguetón.* Vamos, no es nada. Va por cuenta de la casa. La próxima vez, pásate aunque no te duela nada."
+        "text": "*La enfermera vuelve a ponerse la sonrisa.* Vamos. Esto es servicio. La próxima vez pasa aunque no estés enfermo."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",

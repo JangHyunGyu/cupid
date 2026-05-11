@@ -62,7 +62,7 @@
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*I serve. — Surprisingly, the second serve goes cleanly over the net.*"
+        "text": "*The first serve catches the net. The second lands inside the line.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*She changed the subject. — Dain's way of caring is clumsy, but it's warm.*"
+        "text": "*Dain pushes the cup toward me and loudly asks for water on purpose.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...You're more useful than I expected."
+        "text": "...You are useful."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -282,7 +282,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Except here.' — The roof or the council room — Seoyeon needs places where she can take the mask off.*"
+        "text": "*Seoyeon's clipboard lies face down on the desk. The sunset stays on it for a long time.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -330,7 +330,7 @@
     },
     "after2_yuna_6": {
         "name": "{name}",
-        "text": "*She was waiting. — The thought quietly makes me happy.*"
+        "text": "*Yuna does not turn the page. Only her fingertips move.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna said two sentences in a row. — For someone who normally speaks one line at a time.*",
+        "text": "*The earbud cord winds once more between Yuna's fingers.*",
         "choices": [
             "Should I come every day?",
             "It's nice because it's quiet."
@@ -548,7 +548,7 @@
     },
     "after2_seo_sunset_react_b": {
         "name": "{name}",
-        "text": "*Even after saying that, the corners of Seoyeon's lips stay lifted for a while.*"
+        "text": "*Seoyeon covers her mouth with the edge of the papers and looks out the window for a while.*"
     },
     "after2_seo_neck_react_b": {
         "name": "Seoyeon",

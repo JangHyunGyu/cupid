@@ -162,11 +162,11 @@
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Enigma típico da Yuna. — Não entrega a resposta, mas te faz querer procurar.*"
+        "text": "*A resposta termina ali. Minhas marcas de dedo ficam na janela.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Amanhã à noite vou ter que contar. — Por causa dela, fico olhando pro céu toda hora.*"
+        "text": "*Amanhã à noite, meu dedo vai parar de novo na terceira estrela.*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
@@ -186,11 +186,11 @@
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Três linhas. Agradecimento, afastamento, aproximação. — Ela tá jogando cabo de guerra sozinha.*"
+        "text": "*O ponto no fim da mensagem parece ter sido colocado bem depois.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*'Não preciso mais te chamar' e 'vem quando quiser' na mesma mensagem. Contraditório — mas é a cara dela.*"
+        "text": "*Leio só a última linha de novo.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Sem direito de recusa. — O fato de que ela tá me puxando... tenho que admitir?*"
+        "text": "*Aperto a ponta do curativo com o polegar. Amanhã de manhã ganhou mais um compromisso.*"
     },
     "night2_end_1": {
         "name": "{name}",

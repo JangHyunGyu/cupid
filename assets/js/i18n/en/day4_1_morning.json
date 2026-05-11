@@ -97,15 +97,15 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Homeroom Teacher",
-        "text": "Let's just call it an extension of professional concern. *quietly* One cup of coffee should be fine, right? — No, you're still a student. Juice it is."
+        "text": "Then let's eat first. *muttering softly* As a teacher, I should check whether a student has eaten. — Juice for you, though."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Also ‘educational interest’. Even after finishing speaking, the homeroom teacher only folds the corner of the cup holder.*"
+        "text": "*Even after finishing, the teacher keeps folding the corner of the cup holder.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*A cup of coffee. — Teacher's duty.*",
+        "text": "*The corner of the paper envelope is pressed under the cup holder.*",
         "choices": [
             "Sure. Is there a cafe nearby?",
             "Probably shouldn't, right?"
@@ -125,7 +125,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",
-        "text": "*I set down my coffee cup. Her eyes are sparkling.*",
+        "text": "*The teacher sets down her coffee cup. Her body leans slightly toward the window.*",
         "choices": [
             "That novel — who's the protagonist?",
             "Being your first reader... that's a lot of pressure"
@@ -181,7 +181,7 @@
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*Her name. I've been calling her School Nurse this whole time too.*",
+        "text": "*The nurse's fingertip stays over the name field for a long time.*",
         "choices": [
             "What's your name? Not \"School Nurse\"",
             "So that's why you came to this school"
@@ -343,7 +343,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*She must have been angry — but she still came out. I can't run away in front of this person.*"
+        "text": "*My feet stop at the front gate. A beat late, the teacher hides the paper envelope behind her back.*"
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
@@ -355,7 +355,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*Paperwork. She was probably working on her manuscript in an empty classroom. I know that now.*"
+        "text": "*One corner of the teacher's paper envelope is folded.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Homeroom Teacher",
-        "text": "More than help... *Looking out the window* Having someone find out was — a relief. Carrying something alone isn't a secret, it's a burden."
+        "text": "Rather than help... *looking out the window* after it was found out, the envelope felt a little lighter. Even paper gets heavy when you carry it alone."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "*She smiles briefly. Not an awkward smile — a smile of relief.*"
+        "text": "*The teacher smiles for a moment. The hand folding the cup holder stops.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "Teacher's duty, right?"
+        "text": "You are going to call it work again, right?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Homeroom Teacher",

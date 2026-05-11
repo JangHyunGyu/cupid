@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*Si la tensión es tan alta a las 8 a.m., creo que la batería se acabará antes del funeral.*"
+        "text": "*La voz de Dain llena el aula antes incluso de la reunión de la mañana.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*No detuve mi paso. Justo antes de que Seoyeon doble la esquina, su sonrisa se desvanece primero. El portapapeles se presiona más cerca de su pecho.*"
+        "text": "*Justo antes de que Seoyeon doble el pasillo, afloja el paso. El portapapeles se le pega más al brazo.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Novela. Que una profesora de Lengua lea novela es lo normal, pero ¿por qué parece que se guarda algo?*"
+        "text": "*La mirada de la tutora se queda un momento en el cajón abierto.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Profesora",
@@ -318,7 +318,7 @@
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Qué pregunta más rara. Estábamos con el tema de las notas, ¿a qué viene saltar a 'escribir'?*"
+        "text": "*El dedo apoyado sobre el boletín tapa la esquina del papel manuscrito.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'El que está preocupado'. La maestra del salón mira hacia la etiqueta con el nombre de Dain.*"
+        "text": "*La mirada de la tutora se detiene un momento en la fila con el nombre de Dain.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Profesora",
@@ -354,6 +354,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Como un murmullo, sin que nadie la escuche.*"
+        "text": "*La voz de la tutora se hunde baja en el interior de la taza de café.*"
     }
 }

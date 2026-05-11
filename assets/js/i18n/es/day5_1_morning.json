@@ -71,7 +71,7 @@
         "name": "{name}",
         "text": "*Abrazo el manuscrito. La esquina del sobre me presiona el brazo por dentro.*",
         "choices": [
-            "Profe, en serio... seguro que tiene que ser buenísimo. Mándelo a una editorial.",
+            "Lo ha sostenido durante mucho tiempo. Eso tiene que contar para algo.",
             "¿Puedo leerlo un momento? Hablo después."
         ]
     },
@@ -115,7 +115,7 @@
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
-        "text": "*No tengo ninguna herida. Ella lo sabe y aun así lo pregunta.*",
+        "text": "*No hay ninguna herida en el dorso de mi mano. Solo la caja de tiritas está abierta.*",
         "choices": [
             "Sí, como es la última vez. Solo una.",
             "Una curita no — su número de teléfono."
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*'Sin el profesora de por medio.' — Habla del después de graduarme. Ahora no, pero algún día.*"
+        "text": "*La punta del portapapeles que tocaba el marco de la puerta cae lentamente.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Profesora",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*'Después de graduarse'. Es una palabra cerrada, pero queda pegada al dorso de la mano como la punta de una banda.*"
+        "text": "*La enfermera cierra la caja de tiritas y vuelve a abrirla.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Enfermera",
@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Cuando te gradúes, quedamos en una cafetería, no en la enfermería — ♡' El corazón esta vez — no parece interés médico.*"
+        "text": "*Letra pequeña en el borde de la tirita: 'Cuando te gradúes, veámonos en un café y no en la enfermería — ♡'. La enfermera solo se ajusta las gafas.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -391,7 +391,7 @@
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*La puerta del colegio. Hace cinco días estuve aquí también. Entonces el uniforme estaba tieso — ahora me sienta bien. No es solo el uniforme lo que cambió.*"
+        "text": "*Frente a la puerta de la escuela, tiro una vez de la manga. Ya no deja marca en la muñeca.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, es que — seguro que es bueno. Lleva siete años escribiéndolo."
+        "text": "Ah, es que... lo ha sostenido durante mucho tiempo. Eso tiene que contar para algo."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Profesora",
@@ -439,11 +439,11 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Profesora",
-        "text": "En siete años lo mandé tres veces a editoriales. Me lo rechazaron las tres. Y dos de esos tres rechazos empezaban con — 'Siete años es mucho tiempo. Seguro es muy bueno.'"
+        "text": "En siete años lo envié a editoriales tres veces. Me rechazaron todas. Dos de esos correos empezaban con: 'Como lo ha sostenido tanto tiempo, debe significar algo'."
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*La frase rechazo se me queda grabada en los ojos. Es exactamente como lo que acabo de decir.*"
+        "text": "*La marca de una etiqueta de devolución en la esquina del sobre me llama la atención.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Profesora",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Profesora",
-        "text": "*La profesora se ríe. Las comisuras de los ojos se relajan antes que las comisuras de la boca y el portapapeles cae sobre el escritorio.*"
+        "text": "*La tutora sonríe. El portapapeles baja hasta el escritorio.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Profesora",

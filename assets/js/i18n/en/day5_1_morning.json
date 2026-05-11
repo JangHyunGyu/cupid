@@ -71,7 +71,7 @@
         "name": "{name}",
         "text": "*I'm holding the manuscript. The envelope corner presses against my arm.*",
         "choices": [
-            "I'm sure it came out great. Send it to publishers.",
+            "You held onto it for so long. That has to count for something.",
             "Can I read it for a minute? I'll talk after that."
         ]
     },
@@ -115,7 +115,7 @@
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
-        "text": "*I'm not hurt. She knows that. She's asking anyway.*",
+        "text": "*There is no wound on the back of my hand. Only the bandage box is open.*",
         "choices": [
             "Yes, since it's the last time. Just this once.",
             "Not a bandage — your phone number"
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*'Not as teacher and student.' — She's talking about after graduation. Not now, but someday.*"
+        "text": "*The end of the clipboard that had been touching the doorframe slowly drops away.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Homeroom Teacher",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*'After graduating'. It is a closed word, but it remains attached to the back of the hand like the end of a band.*"
+        "text": "*The nurse closes the bandage box, then opens it again.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "School Nurse",
@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'After graduation, let's meet at a cafe instead of the nurse's office — ♡' This time, the heart doesn't seem like medical concern.*"
+        "text": "*Tiny writing on the edge of the bandage: 'After graduation, meet me at a cafe instead of the nurse's office — ♡' The nurse only adjusts her glasses.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -391,7 +391,7 @@
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*The school gate. I stood here five days ago too. My uniform was stiff then — now it fits. It's not just the uniform that changed.*"
+        "text": "*At the school gate, I tug at my sleeve once. It no longer leaves a mark on my wrist.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "I mean — it's bound to be good. You spent seven years on it."
+        "text": "Ah, well — you held onto it for so long. That has to count for something."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Homeroom Teacher",
@@ -439,11 +439,11 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Homeroom Teacher",
-        "text": "I sent it to publishers three times in seven years. All rejected. Two of those three rejection letters started with — 'Seven years is impressive. I'm sure it's wonderful.'"
+        "text": "I sent it to publishers three times over seven years. Rejected every time. Two of those rejection mails started with, 'Since you held onto it for so long, it must mean something.'"
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*The phrase rejection is stuck in my eyes. It's exactly like what I just said.*"
+        "text": "*The mark left by a return sticker on the corner of the envelope catches my eye.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Homeroom Teacher",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Homeroom Teacher",
-        "text": "*Homeroom teacher laughs. The corners of the eyes relax before the corners of the mouth, and the clipboard goes down on the desk.*"
+        "text": "*The teacher smiles. The clipboard comes down onto the desk.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Homeroom Teacher",

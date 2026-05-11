@@ -71,7 +71,7 @@
         "name": "{name}",
         "text": "*Je serre le manuscrit contre moi. Le coin de l'enveloppe appuie contre l'intérieur de mon bras.*",
         "choices": [
-            "Madame, vraiment... je suis sûr que vous l'avez très bien écrit. Envoyez-le à un éditeur.",
+            "Vous l’avez gardé si longtemps. Ça doit bien compter.",
             "Je peux le lire une minute ? Je parlerai après."
         ]
     },
@@ -115,7 +115,7 @@
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
-        "text": "*Je ne suis pas blessé. Elle le sait. Elle demande quand même.*",
+        "text": "*Le dos de ma main n’a aucune blessure. Seule la boîte de pansements est ouverte.*",
         "choices": [
             "Oui, puisque c'est la dernière fois. Juste cette fois.",
             "Pas un pansement — votre numéro de téléphone."
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*'Par nos prénoms, cette fois.' — Elle parle de l'après-diplôme. Pas maintenant, mais un jour.*"
+        "text": "*Le bout du porte-documents qui touchait le chambranle retombe lentement.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professeure principale",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*'Après avoir obtenu mon diplôme'. C'est un mot fermé, mais il reste attaché au dos de la main comme le bout d'un bandeau.*"
+        "text": "*L'infirmière referme la boîte de pansements, puis la rouvre.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Infirmière",
@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Après ton diplôme, retrouvons-nous dans un café plutôt qu'à l'infirmerie — ♡' Ce cœur, cette fois — n'a rien de médical.*"
+        "text": "*Une petite écriture au bord du pansement : « Après le diplôme, retrouvons-nous au café plutôt qu'à l'infirmerie — ♡ ». L'infirmière se contente de remettre ses lunettes.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -391,7 +391,7 @@
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*Le portail. J'étais là il y a cinq jours aussi. Mon uniforme était raide alors — maintenant il me va. Ce n'est pas que l'uniforme qui a changé.*"
+        "text": "*Devant le portail, je tire une fois sur ma manche. Elle ne laisse plus de trace au poignet.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, c'est que — c'est forcément bien. Vous avez passé sept ans dessus."
+        "text": "Ah, c’est que... vous l’avez gardé si longtemps. Ça doit bien compter."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Professeure principale",
@@ -439,11 +439,11 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Professeure principale",
-        "text": "Je l'ai envoyé à des éditeurs trois fois en sept ans. Refusé à chaque fois. Deux de ces trois lettres commençaient par — « Vous y avez passé sept ans. Ce sera forcément bien. »"
+        "text": "En sept ans, je l'ai envoyé trois fois à des maisons d'édition. Refusé à chaque fois. Deux mails commençaient par : « Puisque vous l'avez porté si longtemps, cela doit avoir du sens. »"
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*L’expression rejet est restée gravée dans mes yeux. C'est exactement ce que je viens de dire.*"
+        "text": "*La trace d'une étiquette de retour sur le coin de l'enveloppe attire mon regard.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Professeure principale",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professeure principale",
-        "text": "*Le professeur principal rit. Les coins des yeux se détendent avant les coins de la bouche et le porte-bloc descend sur le bureau.*"
+        "text": "*La prof principale sourit. Le porte-documents descend sur le bureau.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professeure principale",

@@ -62,7 +62,7 @@
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*Saqué. — Contra todo pronóstico, el segundo pasa limpio al otro lado.*"
+        "text": "*El primer saque pega en la red. El segundo cae dentro de la línea.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*Cambió de tema. — Torpe para cuidar, pero cálida.*"
+        "text": "*Dain empuja el vaso hacia mí y pide agua en voz alta a propósito.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...No estás nada mal, oye."
+        "text": "...Sirves para esto."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -282,7 +282,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Solo aquí.' — La azotea o la sala del consejo: Seoyeon necesita un sitio donde poder quitarse la máscara.*"
+        "text": "*El portapapeles de Seoyeon queda boca abajo sobre el escritorio. El atardecer permanece encima un buen rato.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -330,7 +330,7 @@
     },
     "after2_yuna_6": {
         "name": "{name}",
-        "text": "*Me estaba esperando. — Y eso, en el fondo, me alegra.*"
+        "text": "*Yuna no pasa la página. Solo mueve las puntas de los dedos.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna dijo dos frases seguidas. — Ella, que suele hablar en una línea.*",
+        "text": "*El cable del auricular se enreda una vez más entre los dedos de Yuna.*",
         "choices": [
             "¿Vengo todos los días?",
             "Se está bien, aquí tranquilos"
@@ -548,7 +548,7 @@
     },
     "after2_seo_sunset_react_b": {
         "name": "{name}",
-        "text": "*Aun después de decir eso, la comisura de los labios de Seoyeon tarda en bajar.*"
+        "text": "*Seoyeon se cubre la boca con el borde de los papeles y mira por la ventana un rato.*"
     },
     "after2_seo_neck_react_b": {
         "name": "Seoyeon",

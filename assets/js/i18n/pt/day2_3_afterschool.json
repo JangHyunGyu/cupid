@@ -130,7 +130,7 @@
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*Saco. — Curiosamente, o segundo saque passa limpo pela rede.*"
+        "text": "*O primeiro saque bate na rede. O segundo cai dentro da linha.*"
     },
     "after2_dain_9_b": {
         "name": "Dain",
@@ -238,7 +238,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*Mudou de assunto. — O cuidado da Dain é desengonçado, mas é sincero.*"
+        "text": "*Dain empurra o copo para mim e pede água alto de propósito.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...Você é mais prestativo do que eu esperava."
+        "text": "...Você serve para isso."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "after2_seo_sunset_react_b": {
         "name": "{name}",
-        "text": "*Mesmo depois disso, o canto da boca da Seoyeon continua erguido por um bom tempo.*"
+        "text": "*Seoyeon cobre a boca com a ponta dos papéis e olha pela janela por um tempo.*"
     },
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
@@ -426,7 +426,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Só aqui'. — Seja no terraço ou na sala do grêmio, a Seoyeon é do tipo que precisa de lugares pra tirar a máscara.*"
+        "text": "*A prancheta de Seoyeon fica virada sobre a mesa. O pôr do sol demora ali em cima.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -482,7 +482,7 @@
     },
     "after2_yuna_6": {
         "name": "{name}",
-        "text": "*Ela tava esperando. — Disfarçadamente, isso me deixa feliz.*"
+        "text": "*Yuna não vira a página. Só as pontas dos dedos se mexem.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -522,7 +522,7 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna soltou duas frases seguidas. — Uma pessoa que normalmente fala uma frase só.*",
+        "text": "*O fio do fone se enrola mais uma vez entre os dedos de Yuna.*",
         "choices": [
             "Quer que eu venha todo dia?",
             "É bom porque é silencioso."

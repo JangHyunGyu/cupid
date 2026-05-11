@@ -63,7 +63,7 @@
     },
     "lunch2_seo_6b_yuna": {
         "name": "Seoyeon",
-        "text": "*suspiro*Eso es sorprendentemente persuasivo."
+        "text": "*Je.* Eso tiene cierta lógica."
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "{name}",
-        "text": "*Las comisuras de la boca de Yuna se elevan por una fracción de segundo. El sonido al pasar las páginas de un libro es más ligero que antes.*"
+        "text": "*Yuna pasa la página. El sonido del papel es más ligero que antes.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -268,7 +268,7 @@
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
-        "text": "*Siempre presumí de tener olfato con la gente. — Pues no. Con ella, no.*"
+        "text": "*Me muerdo el labio y miro solo el dorado gastado del lomo del libro.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
@@ -424,7 +424,7 @@
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*Aún queda una marca de arroz en el dorso de su mano. Seoyeon está sonriendo, pero una comisura de su boca baja primero.*"
+        "text": "*La marca de arroz sigue en el dorso de mi mano. Seoyeon mantiene la sonrisa y solo vuelve a atar la cuerda del almuerzo.*"
     },
     "lunch2_dain_1": {
         "name": "{name}",
@@ -641,7 +641,7 @@
     },
     "lunch2_dain_end_v": {
         "name": "{name}",
-        "text": "*Lo disimula con una broma, pero cerró el cuaderno demasiado rápido. — Ahí hay algo que no quiere mostrar.*"
+        "text": "*La enfermera cierra el cajón. El tirador queda presionado una vez más.*"
     },
     "lunch2_dain_end_w": {
         "name": "Enfermera",

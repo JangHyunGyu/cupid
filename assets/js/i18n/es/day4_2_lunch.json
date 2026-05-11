@@ -13,7 +13,7 @@
     },
     "date_seo_pretty_high": {
         "name": "{name}",
-        "text": "*Seoyeon se detuvo un momento. — Y luego sonrió. No con los labios, sino con los ojos.*"
+        "text": "*Seoyeon se detiene un momento. La mano que sostiene la correa del bolso se afloja.*"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
@@ -153,7 +153,7 @@
     },
     "date_yuna_end": {
         "name": "{name}",
-        "text": "*Yuna me mira mientras lo dice. — En sus ojos pone \"por tu culpa\".*"
+        "text": "*Yuna me mira. La página que estaba pasando se detiene bajo sus dedos.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*Está sonriendo. — Pero los ojos no.*"
+        "text": "*Está sonriendo. Bajo la sombra de la gorra, su mirada sigue en el escaparate.*"
     },
     "pre_confess_minsu": {
         "name": "Minsu",
@@ -261,7 +261,7 @@
     },
     "pre_confess_callback": {
         "name": "{name}",
-        "text": "*El celular en el bolsillo pesa. Y eso que no hay ninguna notificación. — Como aquel primer día, cuando vi un nombre en la pantalla y lo metí en el bolsillo. Esta vez no puedo huir así. Esta vez no.*"
+        "text": "*El teléfono en el bolsillo pesa. No hay notificaciones; en la pantalla solo se refleja el vidrio negro.*"
     },
     "date_seo_end_b": {
         "name": "{name}",

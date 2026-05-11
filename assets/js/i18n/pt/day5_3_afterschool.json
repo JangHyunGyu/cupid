@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'Foi divertido.' — Provavelmente foi o máximo que a Yuna conseguiu dizer.*"
+        "text": "*Sob o 'foi divertido' do marcador, a tinta lilás borrou um pouco.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -268,15 +268,15 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Ou agora, ou nunca.*",
+        "text": "*A ponta do celular aperta a palma da minha mão.*",
         "choices": [
-            "Dessa vez, me declaro",
+            "Dizer agora",
             "...Não consegui falar nada"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Dessa vez eu não fugi. A palavra saiu.*"
+        "text": "*Meus pés param. Respiro uma vez e chamo o nome.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
