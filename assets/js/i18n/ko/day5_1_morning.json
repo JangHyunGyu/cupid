@@ -135,10 +135,10 @@
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*원고를 안고 있다. 이 사람의 7년이 손 안에 있다.*",
+        "text": "*원고를 안고 있다. 봉투 모서리가 팔 안쪽을 누른다.*",
         "choices": [
             "선생님 진짜... 잘 쓰셨을 것 같아요. 출판사에 보내봐요.",
-            "...이거 7년 만에 완성이라고 하셨죠. 근데 — 마지막 챕터 한 줄이 더 있어야 하지 않나요?"
+            "잠깐만 읽어봐도 돼요? 말은 그다음에 할게요."
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
@@ -195,35 +195,35 @@
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "담임선생님",
-        "text": "...어떻게 알았어."
+        "text": "...여기서?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
-        "text": "아직 원고 안 펼쳤는데요."
+        "text": "네. 아무 말이나 하고 싶진 않아서요."
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "담임선생님",
-        "text": "그러게. — 어떻게 알았어, 마지막 챕터가 비어 있는 거."
+        "text": "그래. — 잠깐만."
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*원고 마지막 장에는 마침표가 없다. 빨간 펜으로 그은 선 아래, 같은 문장이 세 번 다시 쓰여 있다.*"
+        "text": "*봉투를 열자 종이 냄새가 올라온다. 마지막 장 끝이 비어 있다. 빨간 펜으로 지운 문장 아래, 다시 시작하다 멈춘 흔적이 겹쳐 있다.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "담임선생님",
-        "text": "...진짜로 못 쓰겠어. 마지막 한 줄이."
+        "text": "...거기까지 봤어?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "담임선생님",
-        "text": "7년 동안 그 한 줄 때문에 원고가 멈춰 있었어. 끝내면 — 내가 작가가 아니라는 게 확정될까 봐."
+        "text": "마지막 장만 보면 손이 멈춰. 몇 년째 그래."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*처음으로 담임이 *작가*라는 단어를 자기 입으로 꺼냈다. 7년 동안 한 번도 안 한 말이다.*"
+        "text": "*담임은 말끝을 삼킨다. 비어 있는 마지막 줄만큼 교실이 조용해진다.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "한 줄 쓰는 거, 같이 봐드릴까요."
+        "text": "그 줄, 같이 봐요."
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "담임선생님",
@@ -231,7 +231,7 @@
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "한 줄이면 되잖아요. 학생도 한 줄은 써요."
+        "text": "네. 저는 지금 읽고 있으니까요."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "담임선생님",
@@ -247,15 +247,15 @@
     },
     "hidden_homeroom_d5_6": {
         "name": "담임선생님",
-        "text": "*봉투를 꺼내며* ...이거. 마지막 날이니까."
+        "text": "...그럼 맡길게. 제일 먼저."
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*어제 카페에서 했던 말. 먼저 보여주고 싶다는 그 말. 진짜로 들고 왔다.*"
+        "text": "*어제 카페에서 했던 말이 떠오른다. 원고 봉투가 팔 안쪽에 묵직하게 닿는다.*"
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
-        "text": "*담임이 봉투를 건넨다. — 손이 살짝 떨리고 있다.*"
+        "text": "*봉투가 손 안에서 약간 휜다. 담임의 손이 아직 책상 끝에 남아 있다.*"
     },
     "hidden_homeroom_d5_6_d": {
         "name": "담임선생님",
@@ -279,19 +279,19 @@
     },
     "hidden_homeroom_d5_6_i": {
         "name": "{name}",
-        "text": "*담임이 봉투를 내 손에 놓는다.*"
+        "text": "*담임이 원고 봉투의 접힌 모서리를 펴준다.*"
     },
     "hidden_homeroom_d5_6_j": {
         "name": "담임선생님",
-        "text": "...제일 먼저 읽어줄래?"
+        "text": "...제대로 읽어줘."
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*어제와 같은 말이다. — 근데 오늘은 말이 아니라 행동이 따라왔다. 7년의 원고가 손 안에 있다.*"
+        "text": "*어제와 같은 말이다. 오늘은 대답하기 전에 봉투 모서리를 먼저 만지게 된다.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "읽을게요. 반드시."
+        "text": "읽을게요. 제대로."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "담임선생님",
@@ -307,7 +307,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*한 줄. 담임은 교실을 나서다 문 앞에서 멈춘다. 원고 봉투 끝을 손가락으로 두 번 접었다 편다.*"
+        "text": "*담임은 문 앞에서 한 번 멈춘다. 클립보드 끝을 손가락으로 두 번 눌렀다가 놓는다.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "담임선생님",
@@ -339,7 +339,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*담임이 돌아선다. 긴 머리카락이 흔들리고, 접힌 원고 봉투 끝이 팔꿈치에 눌린다.*"
+        "text": "*담임이 돌아선다. 긴 머리카락이 흔들리고, 클립보드 끝이 팔꿈치에 눌린다.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "담임선생님",

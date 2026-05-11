@@ -298,11 +298,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professora",
-        "text": "...Não é nada. Papelada de trabalho."
+        "text": "Achei que ia guardar isso quando conseguisse um emprego. Mas, de algum jeito, veio comigo até aqui. Até esta sala."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "Papelada de trabalho numa sala vazia?"
+        "text": "Então a senhora nunca largou de vez."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Professora",
-        "text": "*Suspirando* ...Seria mais fácil se a gente só enxergasse o que quer enxergar."
+        "text": "*Suspirando* ...Eu queria acreditar que tinha largado. Era mais fácil assim."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

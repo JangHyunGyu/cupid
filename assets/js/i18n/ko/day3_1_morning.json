@@ -298,11 +298,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "담임선생님",
-        "text": "...아무것도 아니야. 업무 서류야."
+        "text": "취직하면 접을 줄 알았는데. 서랍을 옮길 때마다 같이 따라오더라."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "업무 서류를 빈 교실에서요?"
+        "text": "그래서 여기까지 온 거네요."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "담임선생님",
-        "text": "*한숨을 쉬며* ...보고 싶은 것만 볼 수 있으면 편할 텐데."
+        "text": "...그냥 종이라고 생각하면 편하니까."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

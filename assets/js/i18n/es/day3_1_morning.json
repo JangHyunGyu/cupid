@@ -498,11 +498,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Profesora",
-        "text": "...No es nada. Papeleo del trabajo."
+        "text": "Creí que lo guardaría al conseguir trabajo. Pero, de algún modo, me siguió hasta aquí. Hasta esta aula."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "¿Papeleo en un aula vacía?"
+        "text": "Entonces no lo soltó del todo."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Profesora",
-        "text": "*Suelta un suspiro.* ...Ojalá pudiera ver solo lo que quiero ver."
+        "text": "*Suspira.* ...Quería creer que sí. Era más fácil así."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

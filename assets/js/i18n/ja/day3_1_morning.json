@@ -498,11 +498,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "担任先生",
-        "text": "……何でもないよ。業務書類。"
+        "text": "就職したらしまい込めると思ってた。でも引き出しを移すたびについてくるの。"
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "業務書類を空き教室で？"
+        "text": "だから、ここまで来たんですね。"
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "担任先生",
-        "text": "*ため息をつきながら* ……察しがいいのは長所だけど、たまに短所ね。"
+        "text": "……ただの紙だと思えば楽だから。"
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

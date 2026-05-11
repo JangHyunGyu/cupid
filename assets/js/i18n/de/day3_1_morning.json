@@ -498,11 +498,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Klassenlehrerin",
-        "text": "...Ist nichts. Nur Arbeitsunterlagen."
+        "text": "Ich dachte, ich würde es weglegen, sobald ich einen Job habe. Aber irgendwie ist es mir bis hierher gefolgt. Bis in dieses Klassenzimmer."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "Arbeitsunterlagen in einem leeren Klassenzimmer?"
+        "text": "Also haben Sie es nie ganz losgelassen."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Klassenlehrerin",
-        "text": "*Seufzend* ...Wenn man nur sehen könnte, was man sehen will, wäre es einfacher."
+        "text": "*Seufzend* ...Ich wollte glauben, dass ich es getan hätte. So war es einfacher."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

@@ -498,11 +498,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Homeroom Teacher",
-        "text": "...It's nothing. Just work documents."
+        "text": "I thought I'd put it away once I got a job. But every time I moved drawers, it came along."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "Work documents in an empty classroom?"
+        "text": "So it made it all the way here."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Homeroom Teacher",
-        "text": "*Sighing.* ...I wish I could only see what I want to see."
+        "text": "...It's easier if I think of it as just paper."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

@@ -69,15 +69,15 @@
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*I'm holding the manuscript. Her seven years are in my hands.*",
+        "text": "*I'm holding the manuscript. The envelope corner presses against my arm.*",
         "choices": [
             "I'm sure it came out great. Send it to publishers.",
-            "...You said it took seven years to finish. But — shouldn't there be one more line in the last chapter?"
+            "Can I read it for a minute? I'll talk after that."
         ]
     },
     "hidden_homeroom_d5_6": {
         "name": "Homeroom Teacher",
-        "text": "*Pulling out the envelope* ...This. Since it's the last day."
+        "text": "...Then I'll leave it to you. First."
     },
     "hidden_homeroom_d5_7": {
         "name": "Homeroom Teacher",
@@ -85,7 +85,7 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "{name}",
-        "text": "*The teacher turns around. Her long hair sways, and the folded edge of the envelope is pressed against her elbow.*"
+        "text": "*The teacher turns around. Her long hair sways, and the edge of the clipboard presses against her elbow.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Homeroom Teacher",
@@ -183,11 +183,11 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*What she said at the cafe yesterday. Those words, 'I want to show it to you first.' She actually brought it.*"
+        "text": "*I remember what she said at the cafe yesterday. The manuscript envelope presses heavy against my arm.*"
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
-        "text": "*She hands over the envelope. — Her hand is trembling slightly.*"
+        "text": "*The envelope bends slightly in my hands. Her hand still lingers at the edge of the desk.*"
     },
     "hidden_homeroom_d5_6_d": {
         "name": "Homeroom Teacher",
@@ -211,19 +211,19 @@
     },
     "hidden_homeroom_d5_6_i": {
         "name": "{name}",
-        "text": "*She places the envelope in my hands.*"
+        "text": "*She smooths the folded corner of the manuscript envelope.*"
     },
     "hidden_homeroom_d5_6_j": {
         "name": "Homeroom Teacher",
-        "text": "...Will you be my first reader?"
+        "text": "...Read it properly."
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*The same words as yesterday. — But today, action followed the words. Seven years of manuscript are in my hands.*"
+        "text": "*The same words as yesterday. Today, before answering, I touch the corner of the envelope first.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "I'll read it. I promise."
+        "text": "I'll read it. Properly."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Homeroom Teacher",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*One line. The teacher stops at the doorway on her way out. She folds the edge of the manuscript envelope twice with her finger, then smooths it out.*"
+        "text": "*The teacher pauses once at the door. She presses the edge of the clipboard twice with her finger, then lets go.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Homeroom Teacher",
@@ -463,35 +463,35 @@
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Homeroom Teacher",
-        "text": "...How did you know."
+        "text": "...Here?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
-        "text": "I haven't even opened it yet."
+        "text": "Yes. I don't want to just say something."
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "Homeroom Teacher",
-        "text": "Right. — How did you know the last chapter is empty."
+        "text": "All right. — Give me a second."
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*The last page of the manuscript has no period. Below a line drawn in red pen, the same sentence is rewritten three times.*"
+        "text": "*When I open the envelope, the smell of paper rises. The end of the last page is blank. Beneath a sentence crossed out in red, traces of starting again and stopping overlap.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
-        "text": "...I really can't write it. The last line."
+        "text": "...You got that far?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Homeroom Teacher",
-        "text": "The manuscript's been stuck on that one line for seven years. If I finish — I'm terrified it'll prove I was never a real writer."
+        "text": "My hand stops whenever I look at the last page. It has for years."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*For the first time, the teacher said the word 'writer' about herself. A word she'd never spoken in seven years.*"
+        "text": "*The teacher swallows the rest. The classroom goes quiet, as quiet as the empty last line.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "Want me to look at that one line with you?"
+        "text": "Let's look at that line together."
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Homeroom Teacher",
@@ -499,7 +499,7 @@
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "It's just one line. Students can write one line."
+        "text": "Yes. I'm reading it right now."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Homeroom Teacher",
