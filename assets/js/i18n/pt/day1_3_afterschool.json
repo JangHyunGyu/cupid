@@ -518,7 +518,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",
-        "text": "*Conversando com a enfermeira na enfermaria.*",
+        "text": "*Ela guarda o termômetro e sorri encostada na cadeira.* A tontura já melhorou um pouco?",
         "context": "Dia 1 depois da aula. O aluno transferido sentiu tontura e foi à enfermaria. A enfermeira foi brincalhona mas atenciosa. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "A enfermeira é brincalhona e provocadora, mas esconde sinceridade por trás das piadas. Ex-enfermeira de hospital que teve burnout e veio pra escola. Sempre desarma a tensão pra os alunos relaxarem primeiro."
     },

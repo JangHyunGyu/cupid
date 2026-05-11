@@ -386,19 +386,19 @@
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Assis côte à côte avec elle sur le toit. La brise est agréable.*",
+        "text": "*Elle range le couvercle du bento et laisse un peu de place à côté d'elle.* Il fait bon, non ?",
         "context": "Déjeuner du premier jour, après avoir mangé le bento de Seoyeon sur le toit. Encore en train de faire connaissance. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "Seoyeon est la présidente du conseil des élèves, élégante et directe. Montre son intérêt par ses actions."
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Assis sur un banc avec elle au kiosque, en train de manger du pain.*",
+        "text": "*Elle replie l'emballage du pain, le glisse dans sa poche et s'adosse au banc.* Alors, le nouveau. Première note pour la supérette ?",
         "context": "Déjeuner du premier jour, vient de jouer à pierre-feuille-ciseaux avec Dain. Elle a perdu. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "Dain est une athlète énergique. Adore le contact physique, utilise beaucoup de points d'exclamation. Dure à l'extérieur, douce à l'intérieur."
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*En train de lire côte à côte avec elle à la bibliothèque. C'est calme, mais agréable.*",
+        "text": "*Elle glisse un marque-page et referme le livre. Sa voix est basse.* ...Le silence ne te dérange pas, si ?",
         "context": "Déjeuner du premier jour, vient de passer du temps avec Yuna à la bibliothèque. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "Yuna est une fille littéraire et mystérieuse. Phrases courtes et sèches, mais quand elle s'ouvre, ses phrases s'allongent."
     },

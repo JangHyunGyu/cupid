@@ -343,7 +343,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professora",
-        "text": "*Última conversa com a professora, na sala vazia.*"
+        "text": "*Ela pressiona o envelope do manuscrito com as duas mãos e sorri.* Como é a última vez, vou ser um pouco mais honesta."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -498,7 +498,7 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Enfermeira",
-        "text": "*Última conversa com a enfermeira, em frente à enfermaria.*"
+        "text": "*Ela toca uma vez na placa da enfermaria com a ponta do dedo.* Quase não resta tempo pra inventar desculpas."
     },
     "morning5_end_branch": {},
     "morning5_end": {

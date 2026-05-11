@@ -397,19 +397,19 @@
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Face à face avec elle dans le couloir. Son expression est compliquée.*",
+        "text": "*Elle serre le porte-documents contre elle sans détourner les yeux.* Si tu as quelque chose à dire, c'est maintenant.",
         "context": "Jour 3 après les cours, juste après la confrontation/réconciliation avec Seoyeon. La relation s'est fissurée en raison de soupçons de double jeu. Ton : Poli mais les réponses raccourcissent ; tension visible dans la prise du porte-documents et mouvements des doigts.",
         "personality": "Seoyeon est possessive et directe quand elle est jalouse. Blessée mais essayant de ne pas le montrer."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*En marchant aux côtés d'elle. Son regard est froid.*",
+        "text": "*Elle plie et déplie le marque-page en marchant avec un demi-pas de retard.* ...Il y a quelque chose que je veux vérifier.",
         "context": "Jour 3 après les cours, juste après la conversation avec Yuna. Yuna prolonge la conversation plus que d'habitude. Ton : Répond brièvement, puis tripote une note ou un marque-page en soulevant des questions de vérification.",
         "personality": "Yuna est une fille littéraire mystérieuse. Habituellement calme, mais maintenant l'habitude de plier et déplier des notes est proéminente. Plus proche de la vérification que de la jalousie."
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Assise sur un banc avec elle au terrain de jeux. Elle est plus calme que d'habitude.*",
+        "text": "*Elle resserre sa protection de poignet et force un sourire.* Aujourd'hui, je parle en premier.",
         "context": "Jour 3 après l'école, juste après la conversation avec Dain. Dain essaie de rire et de passer à autre chose mais fait des pauses entre les mots. Ton : les blagues persistent, mais la tension se montre par des actions comme toucher le ballon ou le protège-poignet.",
         "personality": "Dain utilise la joie comme défense. Moins de points d'exclamation signifient qu'elle est sincère."
     },

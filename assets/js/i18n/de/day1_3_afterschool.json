@@ -288,7 +288,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Im Gespräch mit ihr im Krankenzimmer.*",
+        "text": "*Sie räumt das Thermometer weg und lächelt an die Stuhllehne gelehnt.* Ist der Schwindel etwas besser?",
         "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Die Schulkrankenschwester ist verspielt und schlagfertig, versteckt Aufrichtigkeit aber hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung, die an die Schule gewechselt ist. Sie lockert zuerst die Stimmung, damit sich Schüler entspannen können."
     },

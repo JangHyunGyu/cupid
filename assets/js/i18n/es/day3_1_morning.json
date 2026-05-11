@@ -274,7 +274,7 @@
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Profesora",
-        "text": "*Hablando con la profe en el aula vacía.*",
+        "text": "*Da vuelta el manuscrito y lo desliza bajo un libro.* ...Si lo viste, ya no puedo fingir que no.",
         "context": "Día 3 mañana. Descubrí al profesor escribiendo un manuscrito de novela en el aula vacía. Un secreto guardado durante siete años. Tono: intenta desviarlo con bromas ligeras, pero las frases se acortan cuando se menciona el manuscrito.",
         "personality": "La profe fue aspirante a novelista. Se hizo profesora, pero nunca abandonó del todo ese sueño. Coexisten la vergüenza y el alivio de haber sido descubierta."
     },
@@ -352,7 +352,7 @@
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",
-        "text": "*Hablando con la enfermera en la enfermería.*",
+        "text": "*Cierra la cortina a medias y acerca una silla.* Hoy primero hablamos en serio; las bromas después.",
         "context": "Día 3. Vine a la enfermería después de que las relaciones se complicaran. La enfermera dio consejería seria. Historia sobre el agotamiento en el hospital universitario. Tono: comienza con bromas, pero se desvía o evade con acciones cuando surgen temas del hospital.",
         "personality": "La enfermera escolar suele ser bromista pero se vuelve más callada cuando es seria. Profesional experimentada con historial de agotamiento. Intenta mantener límites con los estudiantes."
     },

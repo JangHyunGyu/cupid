@@ -274,7 +274,7 @@
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Professeure principale",
-        "text": "*En train de discuter avec la prof principale dans la salle vide.*",
+        "text": "*Elle retourne le manuscrit et le glisse sous un livre.* ...Si tu l'as vu, je ne peux plus faire comme si de rien n'était.",
         "context": "Jour 3 matin. Découvert le professeur principal en train d'écrire un manuscrit de roman dans la classe vide. Un secret gardé pendant sept ans. Ton : essaie de dévier avec des blagues légères, mais les phrases deviennent courtes quand le manuscrit est mentionné.",
         "personality": "La prof était une aspirante romancière. Elle est devenue prof mais n'a jamais abandonné son rêve."
     },
@@ -352,7 +352,7 @@
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Infirmière",
-        "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
+        "text": "*Elle tire le rideau à moitié et approche une chaise.* Aujourd'hui, on commence par parler sérieusement. Les blagues après.",
         "context": "Jour 3. Venu à l'infirmerie après que les relations se soient compliquées. L'infirmière a donné des conseils sérieux. Histoire de burn-out à l'hôpital universitaire. Ton : commence par des blagues, mais s'estompe ou détourne avec des actions lorsque les sujets hospitaliers arrivent.",
         "personality": "L'infirmière scolaire est généralement joueuse mais devient plus silencieuse quand c'est sérieux. Professionnelle expérimentée avec un historique de burn-out. Essaie de maintenir des limites avec les élèves."
     },

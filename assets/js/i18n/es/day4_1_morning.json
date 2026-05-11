@@ -297,7 +297,7 @@
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermera",
-        "text": "*Hablando con la enfermera en la enfermería.*",
+        "text": "*Deja la taza en el borde del escritorio y deja que la sonrisa se apague.* Hoy no lo vamos a tapar con bromas.",
         "context": "Día 4. El momento de despedida cuando pregunta si volverá después de graduarse. La escena donde ambas muestran sus verdaderos corazones. Tono: Conversación más emocional y profunda. La verdad detrás de la travesura. El significado de ser llamada por nombre.",
         "personality": "La enfermera es cuidadosa y honesta. Quiere llamarte por tu nombre pero está en una posición cuidadosa. Las lágrimas salen con tu promesa."
     },

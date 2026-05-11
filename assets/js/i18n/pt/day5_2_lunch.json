@@ -57,7 +57,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*No terraço com ela. Último horário de almoço.*"
+        "text": "*Ela apoia a mão no corrimão do terraço e olha a escola lá embaixo.* Não achei que o último almoço também seria aqui."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Na biblioteca com a ela. Último horário de almoço.*"
+        "text": "*Ela passa os dedos pelas lombadas e depois levanta a cabeça.* Como é a última vez, fico falando mais que o normal."
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -193,7 +193,7 @@
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*No ginásio com a ela. Último horário de almoço.*"
+        "text": "*Ela para a bola de vôlei com a ponta do pé e sorri.* Mesmo sendo o último almoço, não dá pra deixar passar assim."
     },
     "tour_dain_end_2": {
         "name": "{name}",

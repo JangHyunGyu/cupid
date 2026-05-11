@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermeira",
-        "text": "*Conversando com a ela na enfermaria.*"
+        "text": "*Ela deixa a xícara na beirada da mesa e diminui o sorriso.* Hoje a gente não vai fugir com brincadeira."
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",

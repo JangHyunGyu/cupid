@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "보건선생님",
-        "text": "*보건선생님과 보건실에서 대화 중.*"
+        "text": "*찻잔을 책상 끝에 내려놓고 웃음을 줄인다.* 오늘은 장난으로 넘기지 말자."
     },
     "hidden_nurse_d4_check": {
         "name": "{name}",

@@ -386,19 +386,19 @@
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sitting side by side with her on the rooftop. The breeze feels nice.*",
+        "text": "*She straightens the bento lid and leaves a little space beside her.* Nice breeze, right?",
         "context": "First day lunch, just finished eating Seoyeon's homemade bento on the rooftop. Still getting to know each other. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "Seoyeon is the cool-beauty student council president. Composed, witty, and direct. Shows interest through actions, not words."
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sitting on a bench with her at the school store, eating bread.*",
+        "text": "*She folds the bread wrapper, stuffs it into her pocket, and leans back against the bench.* So, transfer student. First school store rating?",
         "context": "First day lunch, just had a rock-paper-scissors bet with Dain at the store. She lost and bought bread. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "Dain is an energetic athlete type. Loves physical contact, uses lots of exclamation marks. Tough outside, soft inside."
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Reading books side by side with her in the library. It's quiet, but comfortable.*",
+        "text": "*She slips in a bookmark and closes the book. Her voice is low.* ...You don't mind the quiet, right?",
         "context": "First day lunch, just spent time with Yuna in the library. The quiet was nice. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "Yuna is a mysterious literary girl. Short, dry sentences, but when she opens up, her sentences get longer. Communicates through notes."
     },

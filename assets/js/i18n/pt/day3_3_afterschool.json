@@ -200,7 +200,7 @@
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Frente a frente com ela no corredor. A expressão dela é complicada.*",
+        "text": "*Ela abraça a prancheta contra o peito e não desvia o olhar.* Se tem algo pra dizer, fala agora.",
         "context": "Dia 3 após as aulas, logo após confronto/reconciliação com Seoyeon. O relacionamento rachou devido a suspeitas de estar com duas ao mesmo tempo. Tom: Educado mas respostas ficam mais curtas; tensão aparece no aperto da prancheta e movimentos dos dedos.",
         "personality": "Seoyeon é a presidente do grêmio cool. Possessiva, direta quando com ciúmes. Magoada mas tentando não demonstrar."
     },
@@ -374,7 +374,7 @@
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Ando lado a lado com ela. O olhar dela tá frio.*",
+        "text": "*Ela dobra e desdobra o marcador, andando meio passo atrás.* ...Tem uma coisa que eu quero confirmar.",
         "context": "Dia 3 após as aulas, logo após conversa com Yuna. Yuna está segurando a conversa por mais tempo que o normal. Tom: Responde brevemente, depois mexe com um bilhete ou marcador enquanto levanta questões de confirmação.",
         "personality": "Yuna é uma garota literária misteriosa. Normalmente calma, mas agora o hábito de dobrar e desdobrar bilhetes é proeminente. Mais sobre verificar do que ciúmes."
     },
@@ -604,7 +604,7 @@
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sentado no banco com ela no pátio. Ela tá mais quieta que o normal.*",
+        "text": "*Ela ajusta a munhequeira e força um sorriso.* Hoje eu falo primeiro.",
         "context": "Dia 3 após a aula, logo após conversa com Dain. Dain tenta rir e passar adiante mas faz pausas entre palavras. Tom: piadas persistem, mas tensão aparece em ações como tocar a bola ou munhequeira.",
         "personality": "Dain é uma atleta cheia de energia. Fingir alegria é sua única defesa. Menos exclamações significam que ela está sendo verdadeira."
     },

@@ -274,7 +274,7 @@
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Im Gespräch mit ihr im leeren Klassenzimmer.*",
+        "text": "*Sie dreht das Manuskript um und schiebt es unter ein Buch.* ...Wenn du es gesehen hast, kann ich nicht mehr so tun, als wäre nichts.",
         "context": "Tag 3 Morgen. Die Klassenlehrerin beim Schreiben eines Romanmanuskripts im leeren Klassenzimmer entdeckt. Ein sieben Jahre gehütetes Geheimnis. Ton: versucht mit leichten Scherzen abzulenken, aber die Sätze werden kürzer, wenn das Manuskript erwähnt wird.",
         "personality": "Die Lehrerin war eine angehende Romanautorin. Wurde Lehrerin, hat den Traum aber nie aufgegeben."
     },
@@ -352,7 +352,7 @@
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Im Gespräch mit ihr im Krankenzimmer.*",
+        "text": "*Sie zieht den Vorhang halb zu und holt einen Stuhl heran.* Heute kommt die Beratung vor den Witzen.",
         "context": "Tag 3. Kam ins Krankenzimmer, nachdem Beziehungen kompliziert wurden. Die Krankenschwester gab ernsthafte Beratung. Geschichte über Burnout im Universitätskrankenhaus. Ton: beginnt mit Witzen, weicht aber ab oder lenkt mit Handlungen ab, wenn Krankenhausthemen aufkommen.",
         "personality": "Die Schulkrankenschwester ist normalerweise verspielt, wird aber ruhiger, wenn es ernst wird. Erfahrene Fachkraft mit Burnout-Geschichte. Versucht, Grenzen zu Schülern zu wahren."
     },

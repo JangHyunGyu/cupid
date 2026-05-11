@@ -397,19 +397,19 @@
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Standing face to face with her in the hallway. Her expression is complicated.*",
+        "text": "*She holds the clipboard to her chest and does not look away.* If you have something to say, say it now.",
         "context": "Day 3 after school, right after confrontation/reconciliation with Seoyeon. The relationship has fractured due to suspicions of two-timing. Tone: Polite but answers grow shorter; tension shows through clipboard grip and fingertip movements.",
         "personality": "Seoyeon is the cool student council president. Strong possessiveness, direct when jealous. Hurt but trying not to show it."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Walking alongside she. Her gaze is cool.*",
+        "text": "*She folds and unfolds the bookmark, walking half a step behind.* ...There is something I want to check.",
         "context": "Day 3 after school, right after conversation with Yuna. Yuna is holding the conversation longer than usual. Tone: Answers briefly, then fidgets with a note or bookmark while bringing up checking questions.",
         "personality": "Yuna is a mysterious literary girl. Usually calm, but now the habit of folding and unfolding notes is prominent. More about checking than jealousy."
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sitting on a bench with her at the playground. She's quieter than usual.*",
+        "text": "*She adjusts her wrist guard and forces a smile.* Today, I'll talk first.",
         "context": "Day 3 after school, right after conversation with Dain. Dain tries to laugh it off but pauses between words. Tone: jokes persist, but tension shows through actions like touching the ball or wrist guard.",
         "personality": "Dain is an energetic athlete. Being cheerful is her only defense. Fewer exclamation marks mean she's being real."
     },
