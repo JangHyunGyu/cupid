@@ -69,15 +69,15 @@
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*Je tiens le manuscrit. Ses sept ans sont entre mes mains.*",
+        "text": "*Je serre le manuscrit contre moi. Le coin de l'enveloppe appuie contre l'intérieur de mon bras.*",
         "choices": [
             "Madame, vraiment... je suis sûr que vous l'avez très bien écrit. Envoyez-le à un éditeur.",
-            "Je peux en lire un peu ici, maintenant ? Je veux en parler après l'avoir vraiment lu."
+            "Je peux le lire une minute ? Je parlerai après."
         ]
     },
     "hidden_homeroom_d5_6": {
         "name": "Professeure principale",
-        "text": "...Alors c'est officiel. Tu es mon premier lecteur."
+        "text": "...Alors je te le confie. En premier."
     },
     "hidden_homeroom_d5_7": {
         "name": "Professeure principale",
@@ -183,7 +183,7 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Ce qu'elle a dit hier au café. Son envie de me le montrer en premier n'est plus juste une parole.*"
+        "text": "*Je repense à ce qu'elle a dit hier au café. L'enveloppe du manuscrit pèse contre l'intérieur de mon bras.*"
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
@@ -215,15 +215,15 @@
     },
     "hidden_homeroom_d5_6_j": {
         "name": "Professeure principale",
-        "text": "...Lis-le vraiment, en premier."
+        "text": "...Lis-le vraiment."
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Les mêmes mots qu'hier. — Mais aujourd'hui, ça ressemble moins à une demande qu'à une promesse. Sept ans de manuscrit sont entre mes mains.*"
+        "text": "*Les mêmes mots qu'hier. Aujourd'hui, avant de répondre, je touche d'abord le coin de l'enveloppe.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "Je le lirai. C'est promis."
+        "text": "Je le lirai. Vraiment."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Professeure principale",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Une ligne. La prof s'arrête au seuil en sortant. Elle appuie deux fois sur le bord de son porte-documents, comme pour le plier.*"
+        "text": "*La prof s'arrête une fois devant la porte. Elle appuie deux fois du doigt sur le bord du porte-bloc, puis le relâche.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Professeure principale",
@@ -467,7 +467,7 @@
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
-        "text": "Oui. Je ne veux pas parler sans l'avoir lu."
+        "text": "Oui. Je ne veux pas dire n'importe quoi."
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "Professeure principale",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*En ouvrant l'enveloppe, une odeur de papier monte. La dernière page n'a pas de point final. Sous une ligne tracée au stylo rouge, la même phrase est réécrite trois fois.*"
+        "text": "*Quand j'ouvre l'enveloppe, une odeur de papier monte. La fin de la dernière page est vide. Sous une phrase barrée en rouge, des traces de recommencements interrompus se superposent.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professeure principale",
@@ -483,15 +483,15 @@
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Professeure principale",
-        "text": "En vérité, je n'arrive pas à écrire la dernière ligne. Le manuscrit est bloqué là-dessus depuis sept ans."
+        "text": "Ma main s'arrête dès que je regarde la dernière page. Depuis des années."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*Comme si le terminer pouvait confirmer qu'elle n'est pas écrivaine. La prof a le visage de quelqu'un qui ravale ces mots.*"
+        "text": "*La prof avale la suite. La classe devient aussi silencieuse que cette dernière ligne vide.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "On cherche cette dernière ligne ensemble ?"
+        "text": "Regardons cette ligne ensemble."
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Professeure principale",
@@ -499,7 +499,7 @@
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "C'est juste une ligne. Un lecteur peut aussi trouver une ligne."
+        "text": "Oui. Je suis en train de le lire."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professeure principale",

@@ -4239,7 +4239,7 @@
     "hidden_homeroom_d3_reveal_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_2_ins",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "취직하면 접을 줄 알았는데. 이상하게 여기까지 따라오더라. 이 교실까지.",
+      "_ko_text_preview": "취직하면 접을 줄 알았는데. 서랍을 옮길 때마다 같이 따라오더라.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_2_ins",
@@ -4275,7 +4275,7 @@
     "hidden_homeroom_d3_reveal_2_c": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_2_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그럼 아직 완전히 놓은 건 아니네요.",
+      "_ko_text_preview": "그래서 여기까지 온 거네요.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_2_ins2",
@@ -4347,7 +4347,7 @@
     "hidden_homeroom_d3_reveal_2_e": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_2_ins4",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "*한숨을 쉬며* ...놓았다고 생각하고 싶었어. 그게 더 편하니까.",
+      "_ko_text_preview": "...그냥 종이라고 생각하면 편하니까.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_2_ins4",

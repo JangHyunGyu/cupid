@@ -498,11 +498,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Professeure principale",
-        "text": "Je pensais le ranger une fois que j'aurais un travail. Mais il m'a suivie jusqu'ici. Jusqu'à cette salle."
+        "text": "Je pensais le ranger en commençant à travailler. Mais chaque fois que je changeais de tiroir, il venait avec moi."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "Donc vous n'avez jamais vraiment lâché."
+        "text": "Alors il est arrivé jusqu'ici."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Professeure principale",
-        "text": "*En soupirant* ...Je voulais croire que si. C'était plus simple comme ça."
+        "text": "...C'est plus simple si je me dis que ce n'est que du papier."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

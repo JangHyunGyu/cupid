@@ -498,11 +498,11 @@
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Profesora",
-        "text": "Creí que lo guardaría al conseguir trabajo. Pero, de algún modo, me siguió hasta aquí. Hasta esta aula."
+        "text": "Pensé que al empezar a trabajar podría guardarlo. Pero cada vez que cambiaba de cajón, venía conmigo."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
-        "text": "Entonces no lo soltó del todo."
+        "text": "Así llegó hasta aquí."
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Profesora",
-        "text": "*Suspira.* ...Quería creer que sí. Era más fácil así."
+        "text": "...Es más fácil si lo pienso como simple papel."
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "{name}",

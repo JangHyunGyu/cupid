@@ -69,15 +69,15 @@
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*Ich halte das Manuskript. Ihre sieben Jahre sind in meinen Händen.*",
+        "text": "*Ich halte das Manuskript im Arm. Die Ecke des Umschlags drückt gegen meine Armbeuge.*",
         "choices": [
             "Frau Lehrerin, ehrlich... ich bin sicher, das ist wirklich gut geschrieben. Schicken Sie's an einen Verlag.",
-            "Darf ich hier kurz etwas davon lesen? Ich möchte erst etwas sagen, wenn ich es wirklich gelesen habe."
+            "Darf ich es kurz lesen? Danach sage ich etwas."
         ]
     },
     "hidden_homeroom_d5_6": {
         "name": "Klassenlehrerin",
-        "text": "...Dann steht es fest. Du bist mein erster Leser."
+        "text": "...Dann überlasse ich es dir. Als Erstem."
     },
     "hidden_homeroom_d5_7": {
         "name": "Klassenlehrerin",
@@ -183,7 +183,7 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Was sie gestern im Café gesagt hat. Dass sie es mir zuerst zeigen wollte, sind nun nicht mehr nur Worte.*"
+        "text": "*Ich denke an das, was sie gestern im Café gesagt hat. Der Manuskriptumschlag drückt schwer gegen meine Armbeuge.*"
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
@@ -215,15 +215,15 @@
     },
     "hidden_homeroom_d5_6_j": {
         "name": "Klassenlehrerin",
-        "text": "...Lies es als Erster richtig."
+        "text": "...Lies es richtig."
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*Dieselben Worte wie gestern. — Aber heute klingen sie weniger wie eine Bitte und mehr wie ein Versprechen. Sieben Jahre Manuskript liegen in meinen Händen.*"
+        "text": "*Dieselben Worte wie gestern. Heute berühre ich vor der Antwort zuerst die Ecke des Umschlags.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "Ich werde es lesen. Versprochen."
+        "text": "Ich lese es. Richtig."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Klassenlehrerin",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
-        "text": "*Eine Zeile. Die Lehrerin bleibt an der Tür stehen, als sie gehen will. Sie drückt zweimal mit dem Finger auf die Kante des Klemmbretts, als wollte sie sie falten.*"
+        "text": "*Die Lehrerin hält einmal an der Tür inne. Sie drückt zweimal mit dem Finger auf die Kante des Klemmbretts und lässt los.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Klassenlehrerin",
@@ -467,7 +467,7 @@
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
-        "text": "Ja. Ich will nichts sagen, ohne gelesen zu haben."
+        "text": "Ja. Ich möchte nicht einfach irgendetwas sagen."
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "Klassenlehrerin",
@@ -475,7 +475,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Als ich den Umschlag öffne, steigt Papiergeruch auf. Die letzte Seite hat keinen Punkt. Unter einer mit rotem Stift gezogenen Linie ist derselbe Satz dreimal neu geschrieben.*"
+        "text": "*Als ich den Umschlag öffne, steigt Papiergeruch auf. Das Ende der letzten Seite ist leer. Unter einem rot durchgestrichenen Satz überlagern sich Spuren von neuem Ansetzen und Abbrechen.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
@@ -483,15 +483,15 @@
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Klassenlehrerin",
-        "text": "Ehrlich gesagt bekomme ich diese letzte Zeile nicht hin. Seit sieben Jahren hängt das Manuskript an dieser einen Zeile."
+        "text": "Sobald ich die letzte Seite ansehe, bleibt meine Hand stehen. Seit Jahren."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "{name}",
-        "text": "*Als könnte das Fertigstellen beweisen, dass sie keine Schriftstellerin ist. Die Lehrerin sieht aus, als würde sie diese Worte hinunterschlucken.*"
+        "text": "*Die Lehrerin schluckt den Rest hinunter. Das Klassenzimmer wird so still wie die leere letzte Zeile.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "Wollen wir diese letzte Zeile zusammen suchen?"
+        "text": "Sehen wir uns diese Zeile zusammen an."
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Klassenlehrerin",
@@ -499,7 +499,7 @@
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "Es ist nur eine Zeile. Ein Leser kann auch eine Zeile finden."
+        "text": "Ja. Ich lese es gerade."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Klassenlehrerin",
