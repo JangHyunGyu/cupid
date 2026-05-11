@@ -71,7 +71,7 @@
         "name": "{name}",
         "text": "*Ich halte das Manuskript im Arm. Die Ecke des Umschlags drückt gegen meine Armbeuge.*",
         "choices": [
-            "Frau Lehrerin, ehrlich... ich bin sicher, das ist wirklich gut geschrieben. Schicken Sie's an einen Verlag.",
+            "Sie haben so lange daran festgehalten. Das muss doch etwas bedeuten.",
             "Darf ich es kurz lesen? Danach sage ich etwas."
         ]
     },
@@ -115,7 +115,7 @@
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
-        "text": "*Ich bin nicht verletzt. Sie weiß das. Sie fragt trotzdem.*",
+        "text": "*Auf meinem Handrücken ist keine Wunde. Nur die Pflasterbox ist offen.*",
         "choices": [
             "Ja, weil es das letzte Mal ist. Nur einmal.",
             "Statt Pflaster — Ihre Nummer."
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*'Nicht als Lehrerin und Schüler.' — Sie spricht von der Zeit nach dem Abschluss. Nicht jetzt, aber irgendwann.*"
+        "text": "*Die Kante des Klemmbretts, die den Türrahmen berührt hatte, sinkt langsam weg.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Klassenlehrerin",
@@ -323,7 +323,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss'. Es ist ein geschlossenes Wort, aber es bleibt am Handrücken hängen wie das Ende eines Bandes.*"
+        "text": "*Die Krankenschwester schließt die Pflasterbox und öffnet sie wieder.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Schulkrankenschwester",
@@ -367,7 +367,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Nach dem Abschluss treffen wir uns im Café statt im Krankenzimmer — ♡' Dieses Herz hat diesmal nichts mit medizinischem Interesse zu tun.*"
+        "text": "*Kleine Schrift am Rand des Pflasters: 'Nach dem Abschluss treffen wir uns nicht im Krankenzimmer, sondern im Café — ♡'. Die Krankenschwester rückt nur ihre Brille zurecht.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "morning5_start_branch": {},
@@ -391,7 +391,7 @@
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*Das Schultor. Vor fünf Tagen stand ich auch hier. Meine Uniform war damals steif — jetzt passt sie. Es hat sich nicht nur die Uniform verändert.*"
+        "text": "*Am Schultor ziehe ich einmal an meinem Ärmel. Er hinterlässt keine Spur mehr am Handgelenk.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, das ist — es ist sicher gut. Sie haben sieben Jahre daran gesessen."
+        "text": "Ach, weil... Sie haben so lange daran festgehalten. Das muss doch etwas bedeuten."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Klassenlehrerin",
@@ -439,11 +439,11 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Klassenlehrerin",
-        "text": "Ich habe es in sieben Jahren dreimal an Verlage geschickt. Alles abgelehnt. Zwei dieser drei Absagen begannen mit — 'Sieben Jahre sind beeindruckend. Es wird sicher großartig sein.'"
+        "text": "In sieben Jahren habe ich es dreimal an Verlage geschickt. Jedes Mal abgelehnt. Zwei dieser Absagen begannen mit: 'Da Sie so lange daran festgehalten haben, muss es etwas bedeuten.'"
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*Der Ausdruck „Ablehnung“ ist mir in den Augen hängengeblieben. Es ist genau das, was ich gerade gesagt habe.*"
+        "text": "*Die Spur eines Rücksendeaufklebers an der Ecke des Umschlags fällt mir ins Auge.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Klassenlehrerin",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Klassenlehrerin",
-        "text": "*Der Klassenlehrer lacht. Die Augenwinkel entspannen sich vor den Mundwinkeln, und das Klemmbrett landet auf dem Schreibtisch.*"
+        "text": "*Die Klassenlehrerin lächelt. Das Klemmbrett sinkt auf den Tisch.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Klassenlehrerin",

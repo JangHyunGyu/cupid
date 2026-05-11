@@ -97,15 +97,15 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Professeure principale",
-        "text": "Disons que ça rentre encore dans l'intérêt pédagogique. *marmonnant* Un café, ça va, non ? — Enfin, t'es élève, donc un jus."
+        "text": "Alors on mange d'abord. *marmonnant* En tant que prof, je dois vérifier si un élève a mangé. — Jus pour toi, par contre."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Également « intérêt éducatif ». Même après avoir fini de parler, le professeur principal ne plie que le coin du porte-gobelet.*"
+        "text": "*Même après avoir fini sa phrase, la prof principale continue de plier le coin du porte-gobelet.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*Un café. — Intérêt pédagogique.*",
+        "text": "*Le coin de l'enveloppe en papier est coincé sous le porte-gobelet.*",
         "choices": [
             "D'accord. Il y a un café dans le coin ?",
             "Madame, vous devriez pas, non ?"
@@ -125,7 +125,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",
-        "text": "*Elle pose sa tasse de café. Ses yeux pétillent.*",
+        "text": "*La prof principale repose sa tasse. Son corps penche légèrement vers la fenêtre.*",
         "choices": [
             "Ce roman — c'est qui le personnage principal ?",
             "Être votre premier lecteur... c'est une sacrée responsabilité"
@@ -181,7 +181,7 @@
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*Son prénom. Moi aussi, je l'ai toujours appelée « Infirmière ».*",
+        "text": "*Le doigt de l'infirmière reste longtemps sur la case du nom.*",
         "choices": [
             "Comment vous vous appelez ? Pas \"Infirmière\"",
             "C'est pour ça que vous êtes venue dans cette école"
@@ -343,7 +343,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Elle devait être en colère — mais elle est quand même venue. Je ne dois pas fuir devant cette personne.*"
+        "text": "*Je m'arrête devant le portail. Avec un temps de retard, la prof principale cache l'enveloppe derrière son dos.*"
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
@@ -355,7 +355,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*De la paperasse. Elle devait travailler sur son manuscrit dans une salle vide. Je le sais maintenant.*"
+        "text": "*Un coin de l'enveloppe de la prof principale est plié.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Professeure principale",
-        "text": "Plus que de l'aide... *Regardant par la fenêtre* Que quelqu'un le découvre, c'était — un soulagement. Garder quelque chose seul, ce n'est pas un secret, c'est un fardeau."
+        "text": "Plutôt que de l'aide... *regardant dehors* depuis que tu l'as vu, l'enveloppe paraît un peu plus légère. Même le papier pèse quand on le porte seule."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "*Elle sourit brièvement. Pas un sourire gêné — un sourire de soulagement.*"
+        "text": "*La prof principale sourit un instant. Sa main cesse de plier le porte-gobelet.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professeure principale",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "Intérêt pédagogique, c'est ça ?"
+        "text": "Vous allez encore dire que c’est le travail, non ?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Professeure principale",

@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*『楽しかった』。——ユナが言える中で、一番大きな言葉だったんだろう。*"
+        "text": "*しおりの『楽しかった』の下で、薄紫のインクが少しにじんでいる。*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -280,15 +280,15 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*今じゃなきゃ、チャンスはない。*",
+        "text": "*手のひらの中で携帯の角が食い込む。*",
         "choices": [
-            "今度は告白する",
+            "今、言う",
             "...何も言えなかった"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*今度は逃げなかった。言葉が口から出た。*"
+        "text": "*足先が止まる。一度息を整えて、名前を呼ぶ。*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",

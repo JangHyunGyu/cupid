@@ -30,7 +30,7 @@
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*O portão. Cinco dias atrás eu tava parado exatamente aqui. Naquela hora o uniforme era duro — agora veste direitinho. Não foi só o uniforme que mudou.*"
+        "text": "*Diante do portão, puxo a manga uma vez. Ela já não deixa marca no pulso.*"
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -137,7 +137,7 @@
         "name": "{name}",
         "text": "*Seguro o manuscrito. A ponta do envelope pressiona a parte de dentro do meu braço.*",
         "choices": [
-            "Professora, com certeza ficou ótimo. Manda pra uma editora.",
+            "Você segurou isso por tanto tempo. Isso deve valer alguma coisa.",
             "Posso ler um minuto? Depois eu falo."
         ]
     },
@@ -151,7 +151,7 @@
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, é que — com certeza ficou bom. A senhora passou sete anos em cima."
+        "text": "Ah, é que... você segurou isso por tanto tempo. Isso deve valer alguma coisa."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Professora",
@@ -171,11 +171,11 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Professora",
-        "text": "Em sete anos, mandei pra editora três vezes. Todas recusaram. Duas dessas três recusas começavam com — 'Sete anos é impressionante. Com certeza ficou ótimo.'"
+        "text": "Em sete anos mandei para editoras três vezes. Fui rejeitada em todas. Dois desses e-mails começavam com: 'Como você segurou isso por tanto tempo, deve ter algum significado.'"
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*A frase rejeição está presa em meus olhos. É exatamente como acabei de dizer.*"
+        "text": "*A marca de uma etiqueta de devolução na ponta do envelope chama minha atenção.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Professora",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professora",
-        "text": "*A professora da sala ri. Os cantos dos olhos relaxam antes dos cantos da boca e a prancheta cai sobre a mesa.*"
+        "text": "*A professora sorri. A prancheta desce sobre a mesa.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professora",
@@ -331,7 +331,7 @@
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*'Pelo nome, não pelo cargo.' — Ela tá falando de depois da formatura. Agora não, mas um dia.*"
+        "text": "*A ponta da prancheta que tocava o batente da porta desce devagar.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professora",
@@ -403,7 +403,7 @@
     },
     "hidden_nurse_d5_3_f": {
         "name": "{name}",
-        "text": "*'Depois de se formar'. É uma palavra fechada, mas permanece presa às costas da mão como a ponta de uma faixa.*"
+        "text": "*A enfermeira fecha a caixa de curativos e abre de novo.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Enfermeira",
@@ -439,7 +439,7 @@
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
-        "text": "*Não tô machucado. Ela sabe. Perguntou mesmo assim.*",
+        "text": "*Não há ferida nenhuma no dorso da minha mão. Só a caixa de curativos está aberta.*",
         "choices": [
             "Tá, já que é a última vez. Só dessa vez.",
             "Band-aid não — seu telefone"
@@ -491,7 +491,7 @@
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*'Depois da formatura, a gente se vê num café em vez da enfermaria — ♡' O coraçãozinho dessa vez — com certeza não é interesse médico.*"
+        "text": "*Uma letra pequena na ponta do curativo: 'Depois da formatura, vamos nos encontrar num café, não na enfermaria — ♡'. A enfermeira só ajeita os óculos.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "hidden_nurse_d5_7": {},

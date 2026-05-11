@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'It was fun.' — That was probably the most Yuna could bring herself to say.*"
+        "text": "*Under the 'It was fun' on the bookmark, a little pale violet ink has blurred.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -280,15 +280,15 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*If not now, there's no chance.*",
+        "text": "*The corner of the phone presses into my palm.*",
         "choices": [
-            "This time, I'll confess",
+            "Say it now",
             "...I couldn't say anything"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*This time, I didn't run. The words came out.*"
+        "text": "*My toes stop. I take one breath and call the name.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",

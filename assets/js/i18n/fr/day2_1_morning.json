@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*Si la tension est aussi forte à 8 heures du matin, je pense que la batterie va s'épuiser avant les funérailles.*"
+        "text": "*La voix de Dain remplit la classe avant même l'appel du matin.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Je n'ai pas arrêté de marcher. Juste avant que Seoyeon ne tourne le coin, son sourire s'efface en premier. Le presse-papiers se presse davantage contre sa poitrine.*"
+        "text": "*Juste avant de tourner dans le couloir, Seoyeon ralentit. Le porte-documents se serre un peu plus contre son bras.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Des romans. Une professeure de lettres qui lit des romans, c'est normal, mais pourquoi a-t-elle l'air réticente à le dire ?*"
+        "text": "*Le regard de la prof principale s'attarde un instant sur le tiroir entrouvert.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Professeure principale",
@@ -318,7 +318,7 @@
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Drôle de question. On parlait de notes, pourquoi ce virage soudain vers 'écrire' ?*"
+        "text": "*Le doigt posé sur le bulletin couvre le coin de la feuille manuscrite.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Celui qui s'inquiète'. Le professeur principal regarde le badge de Dain.*"
+        "text": "*Le regard de la prof principale s'arrête un instant sur la ligne du nom de Dain.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professeure principale",
@@ -354,6 +354,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Comme un murmure, alors que personne n'écoute.*"
+        "text": "*La voix de la prof principale se perd, basse, dans la tasse de café.*"
     }
 }

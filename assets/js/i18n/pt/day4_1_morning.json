@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Ela devia estar com raiva — mas ainda assim veio. Não posso fugir diante dessa pessoa.*"
+        "text": "*Paro diante do portão. Um segundo depois, a professora esconde o envelope de papel atrás das costas.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Professora",
@@ -127,7 +127,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*Papéis. — Provavelmente estava escrevendo o manuscrito numa sala vazia. Agora eu sei.*"
+        "text": "*Uma ponta do envelope de papel da professora está dobrada.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -167,15 +167,15 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Professora",
-        "text": "Vamos chamar isso de interesse educacional estendido. *Murmurando* Um café não tem problema, né? — Bom, aluno é suco."
+        "text": "Então vamos comer primeiro. *murmurando baixo* Como professora, preciso conferir se um aluno comeu. — Mas para você é suco."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Também ‘interesse educacional’. Mesmo depois de terminar de falar, o professor da sala apenas dobra a ponta do porta-copos.*"
+        "text": "*Mesmo depois de terminar a frase, a professora continua dobrando a ponta do porta-copo.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*Um café. — Interesse educacional.*",
+        "text": "*A ponta do envelope de papel fica presa sob o porta-copo.*",
         "choices": [
             "Claro. Tem algum café por aqui?",
             "Professora, isso não é meio errado?"
@@ -215,7 +215,7 @@
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Professora",
-        "text": "Mais do que ajuda... *Olhando pela janela* ter sido descoberta foi — um alívio. Guardar algo só pra si mesma não é segredo, é peso."
+        "text": "Mais do que ajuda... *olhando pela janela* desde que foi descoberto, o envelope ficou um pouco mais leve. Até papel pesa quando a gente carrega sozinha."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
@@ -231,7 +231,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",
-        "text": "*Pouso minha xícara. Os olhos dela estão brilhando.*",
+        "text": "*A professora pousa a xícara de café. O corpo se inclina um pouco para a janela.*",
         "choices": [
             "Esse romance, quem é a protagonista?",
             "Ser o primeiro leitor... é muita pressão"
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "*Ela sorri por um instante. Não um sorriso constrangido — um sorriso de alívio.*"
+        "text": "*A professora sorri por um instante. A mão que dobrava o porta-copo para.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professora",
@@ -267,7 +267,7 @@
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "Interesse educacional, certo?"
+        "text": "Vai dizer que é trabalho de novo, não vai?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Professora",
@@ -467,7 +467,7 @@
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*Nome. Eu também só chamava ela de 'enfermeira'.*",
+        "text": "*A ponta do dedo da enfermeira fica por bastante tempo sobre o campo do nome.*",
         "choices": [
             "Qual é o seu nome? Sem ser 'enfermeira'.",
             "Então foi por isso que veio pra escola."

@@ -2798,73 +2798,93 @@
     "hidden_homeroom_d3_reveal_2": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_2",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "대학 때 시작했어. 문예창작과. 졸업하고 등단 준비했는데 — 2년 동안 ...",
+      "_ko_text_preview": "마지막 결과 기다리던 날, 전화가 안 왔어. 그날 교대 원서를 썼다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_reveal_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_reveal_3": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_3",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "임용시험 봤어. 국어 교사. — 소설 쓰던 사람이 국어를 가르치고 있으니...",
+      "_ko_text_preview": "그렇게 국어 교사가 됐어. 웃기지. 아직도 종이 붙잡고 있는 게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_reveal_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_reveal_4": {
@@ -3050,37 +3070,47 @@
     "hidden_homeroom_d3_reveal_6": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*담임이 웃는다. 건조하지 않은, 살짝 어색한 웃음. 웃는 법을 까먹은 ...",
+      "_ko_text_preview": "*담임이 웃는다. 손은 여전히 원고지 위에 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_reveal_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_hide_1": {
@@ -3122,37 +3152,47 @@
     "hidden_homeroom_d3_end": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_end",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*담임이 머리카락을 넘기며 교실을 나선다. — 이 사람한테 '부탁'은 드...",
+      "_ko_text_preview": "*담임이 머리카락을 넘기며 교실을 나선다. 닫힌 문 안쪽에서 펜 뚜껑 소리가 난다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_end",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_end",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_end",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_end",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_end",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_freetalk": {
@@ -4203,37 +4243,47 @@
     "hidden_homeroom_d3_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_3_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*얼어붙는다. — 담임의 표정이 처음 보는 거다. 들킨 사람의 얼굴.*",
+      "_ko_text_preview": "*담임의 손이 원고지 위에서 멈춘다. 곧 종이가 뒤집힌다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_3_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_3_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_3_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_3_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_3_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_reveal_2_b": {
@@ -4527,37 +4577,47 @@
     "hidden_homeroom_d3_reveal_1_e": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_1_ins4",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "졸업하고 등단 준비했는데 — 2년 동안 떨어졌어. 세 번. 생활비는 바닥...",
+      "_ko_text_preview": "졸업하고 몇 번 냈어. 떨어졌고. 그 뒤로는... 원서 넣는 쪽이 더 쉬웠지.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_1_ins4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_1_ins4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_reveal_1_ins4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_1_ins4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_1_ins4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_reveal_1_f": {
@@ -4671,37 +4731,47 @@
     "hidden_homeroom_d3_reveal_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*이 사람의 건조함 뒤에 이런 이야기가 있었구나. — 교탁 서랍의 미완성...",
+      "_ko_text_preview": "*원고지 가장자리마다 손때가 묻어 있다. 담임은 빈 줄 위에 손끝을 올린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_reveal_4_c": {
@@ -4815,37 +4885,47 @@
     "hidden_homeroom_d3_reveal_4_f": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'교육적으로'. — 또 업무로 포장하고 있다. 근데 이번에는 진심으로 ...",
+      "_ko_text_preview": "*담임은 그렇게 말하고도 원고지에서 손을 떼지 못한다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_homeroom_d3_reveal_4_ins5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_homeroom_d3_reveal_4_g": {
@@ -5106,37 +5186,47 @@
     "hidden_nurse_d3_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_2_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*담임이 '부탁'이라는 말을 쓴다. — 이 사람한테 그건 드문 단어다.*",
+      "_ko_text_preview": "*뒤집힌 원고지와 낮은 목소리가 복도까지 따라온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_2_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_2_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_2_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_2_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_2_ins",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_nurse_d3_2_c": {
@@ -6369,37 +6459,47 @@
     "hidden_nurse_d3_8_d": {
       "_ko_ref": "assets/js/i18n/ko/day3_1_morning.json#hidden_nurse_d3_8_ins3",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*다시 장난스럽게* 뭘~ 이 정도는 서비스야. — 다음에 또 와. 아프든...",
+      "_ko_text_preview": "*보건선생님이 다시 웃음을 붙인다.* 뭘. 이 정도는 서비스지. 다음엔 안 아파도 들러.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_1_morning.json#hidden_nurse_d3_8_ins3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_1_morning.json#hidden_nurse_d3_8_ins3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_1_morning.json#hidden_nurse_d3_8_ins3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_1_morning.json#hidden_nurse_d3_8_ins3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_1_morning.json#hidden_nurse_d3_8_ins3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "hidden_nurse_d3_8_e": {
@@ -11009,32 +11109,42 @@
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "after3_seo_end": {
@@ -11622,37 +11732,47 @@
     "after3_dain_choice": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 벤치에 앉는다. 무릎을 문지른다. — 이건 오늘 삐끗한 게 아니다. 오래된 거다.*",
+      "_ko_text_preview": "*다인이 벤치에 앉는다. 무릎을 문지른 손이 같은 자리를 오래 맴돈다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_choice",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "선택지 함정 패턴으로 교체 — 재번역 필요"
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "after3_dain_choice1": {
@@ -11766,40 +11886,50 @@
     "after3_dain_choice1_react": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_choice1_react",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 멈춘다. — 그리고 작게 웃는다. 이 웃음을 지키고 싶다.*",
+      "_ko_text_preview": "*다인이 멈춘다. 그리고 작게 웃는다. 손등으로 눈가를 한 번 문지른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null,
+        "_reviewed": false,
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ],
         "_fix_note": "감정 변경: 관찰만→\"I want to protect this smile\" (KO \"지키고 싶다\")"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null,
+        "_reviewed": false,
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ],
         "_fix_note": "**감정 오역 수정**: \"처음 본다\" → \"지키고 싶다\""
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_choice1_react",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null,
+        "_reviewed": false,
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ],
         "_fix_note": "**감정 오역 수정**: \"처음 본다\" → \"지키고 싶다\""
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_choice1_react",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null,
+        "_reviewed": false,
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ],
         "_fix_note": "**감정 오역 수정**: \"처음 본다\" → \"지키고 싶다\""
       }
     },
@@ -12274,37 +12404,47 @@
     "after3_confront_admit_4": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_confront_admit_4",
       "_ko_name": "서연",
-      "_ko_text_preview": "나한테 완벽하지 않아도 된다고 해놓고 — 너는 모두에게 완벽한 사람이 되...",
+      "_ko_text_preview": "나한텐 괜찮다고 해놓고, 너는 아무한테도 싫은 사람 되기 싫었던 거잖아. 그게 더 잔인해.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_confront_admit_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_confront_admit_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_confront_admit_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_confront_admit_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_confront_admit_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "after3_confront_admit_5": {
@@ -14472,37 +14612,47 @@
     "after3_dain_tell_retreat": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_tell_retreat",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 안도의 한숨을 쉰다. — 또 침묵을 골랐다. 편한 쪽을.*",
+      "_ko_text_preview": "*다인이 안도의 한숨을 쉰다. 체육관 바닥에 공 굴러가는 소리만 남는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_tell_retreat",
         "_reviewed": false,
         "_score": null,
-        "_issues": "신규/수정 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_tell_retreat",
         "_reviewed": false,
         "_score": null,
-        "_issues": "신규/수정 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_tell_retreat",
         "_reviewed": false,
         "_score": null,
-        "_issues": "신규/수정 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_tell_retreat",
         "_reviewed": false,
         "_score": null,
-        "_issues": "신규/수정 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_tell_retreat",
         "_reviewed": false,
         "_score": null,
-        "_issues": "신규/수정 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "after3_seo_pity_trap_1": {
@@ -15120,43 +15270,55 @@
     "after3_seo_correct_8": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_seo_correct_8",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*대화가 자연스럽게 이어진다. 엎드려 있던 사람도, 번진 화장도 — 지금 이 방엔 없다.*",
+      "_ko_text_preview": "*대화가 자연스럽게 이어진다. 서연은 다시 안경을 고쳐 쓰고, 나는 끝까지 책상 아래를 보는 척한다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_seo_correct_8",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_seo_correct_8",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_seo_correct_8",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_seo_correct_8",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_seo_correct_8",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day3_3_afterschool.json#after3_seo_correct_8",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "after3_seo_correct_9": {
@@ -16500,37 +16662,47 @@
     "after3_dain_correct_1": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 멈춘다. — 무릎 얘기를 꺼낼 줄 알았는데. 환자 취급할 줄 알았는데. 표정에 미세한 균열.*",
+      "_ko_text_preview": "*다인이 멈춘다. 무릎을 감싸던 손이 허공에 뜬다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_1",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_1",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_1",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_1",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_1",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "after3_dain_correct_2": {
@@ -16860,37 +17032,47 @@
     "after3_dain_correct_11": {
       "_ko_ref": "assets/js/i18n/ko/day3_3_afterschool.json#after3_dain_correct_11",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 착지하면서 — 오른쪽 무릎이 살짝 꺾인다. 1초. 표정은 웃고 있는데 손이 무릎으로 간다. 이번에는 숨기지 않는다. 숨길 필요가 없어진 거다.*",
+      "_ko_text_preview": "*다인이 착지하면서 오른쪽 무릎이 살짝 꺾인다. 손이 무릎 위에 남는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day3_3_afterschool.json#after3_dain_correct_11",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day3_3_afterschool.json#after3_dain_correct_11",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "es": {
         "_ref": "assets/js/i18n/es/day3_3_afterschool.json#after3_dain_correct_11",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day3_3_afterschool.json#after3_dain_correct_11",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       },
       "de": {
         "_ref": "assets/js/i18n/de/day3_3_afterschool.json#after3_dain_correct_11",
         "_reviewed": false,
         "_score": null,
-        "_issues": "함정 선택지 신규 — 검토 필요"
+        "_issues": [
+          "Style-pass text updated; needs native review."
+        ]
       }
     },
     "after3_dain_correct_12": {

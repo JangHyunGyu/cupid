@@ -13,7 +13,7 @@
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*Esta vez tengo que decidir también eso.*",
+        "text": "*La mano se me detiene entre el sobre y la tirita.*",
         "choices": [
             "Ir con quien me entregó el manuscrito",
             "Ir con quien me dejó la respuesta en el dorso de la mano"
@@ -33,7 +33,7 @@
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*Vuelve a llorar. Pero esta vez no en el baño, sino delante de mí.*"
+        "text": "*Los ojos de Seoyeon están húmedos. Esta vez no los esconde con el dorso de la mano.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -101,11 +101,11 @@
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "Contigo siento que no hace falta que sea perfecta."
+        "text": "Contigo, creo que no necesito la cara ensayada."
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "Nunca hizo falta que lo fueras."
+        "text": "Nunca tuviste que hacerlo."
     },
     "true_seo_5": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
     },
     "true_seo_6": {
         "name": "{name}",
-        "text": "*Seoyeon sonríe. Se le curvan los labios solos.*"
+        "text": "*Seoyeon sonríe. El viento le desordena el cabello.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -237,7 +237,7 @@
     },
     "true_yuna_5_b": {
         "name": "{name}",
-        "text": "*Yuna hace una pausa. Sólo las comisuras de la boca se elevan silenciosamente.*"
+        "text": "*Yuna se detiene un momento. La mano que sujeta el lomo del libro se afloja.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -377,7 +377,7 @@
     },
     "true_dain_8b": {
         "name": "{name}",
-        "text": "*Han vuelto los signos de exclamación. — Pero esta vez son de verdad.*"
+        "text": "*El final de la voz de Dain se eleva ligeramente. Esta vez no suena forzado.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -462,15 +462,15 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Aun así, esta vez miramos en la misma dirección.*"
+        "text": "*Aun así, caminamos en la misma dirección.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Puede que no sea un final feliz perfecto, pero desde aquí podemos volver a empezar.*"
+        "text": "*Un pétalo de cerezo se pega a la punta del zapato y cae con el siguiente paso.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "No va a ser perfecto. Ni tú ni yo. ...Pero esta vez no lo dejes a medias."
+        "text": "Los dos somos torpes. ...Pero esta vez no lo sueltes a mitad de camino."
     },
     "good_1_seo_b": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*Sonreí, y Seoyeon hizo como que no lo veía antes de levantar la comisura lo mínimo.*"
+        "text": "*Yo sonrío, y Seoyeon finge no verlo antes de aflojar un poco el paso.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Guardé la llave en el bolsillo. Mañana, en la azotea — esta vez me toca a mí llevar el almuerzo.*"
+        "text": "*Guardo la llave en el bolsillo. Mañana me toca llevar el almuerzo a la azotea.*"
     },
     "good_5_cg_seo": {
         "name": "Sistema",
@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*No como el hueco que dejó alguien, sino como la persona que está aquí ahora. Así quiero quedarme. Yuna también. Yo también.*"
+        "text": "*Yuna mete el marcapáginas en una página nueva, en el lado sin marca de doblez.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -570,7 +570,7 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Lo atajo. Solo entonces Dain sonríe. Con ella las reconciliaciones vienen así.*"
+        "text": "*La atrapo. Solo entonces Dain sonríe. La pelota rebota una vez más en mi palma.*"
     },
     "good_4_dain": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Hay algo que hace distinto este fracaso de los anteriores. Al menos esta vez lo dije, y por eso puedo dejarlo de verdad.*"
+        "text": "*Las palabras salieron hasta el final. Quizá por eso mis pies tiemblan menos al darme la vuelta.*"
     },
     "confess_fail_5": {
         "name": "Sistema",
@@ -734,7 +734,7 @@
     },
     "harem_1_b": {
         "name": "{name}",
-        "text": "*Yuna bajó la cabeza. Cuando levanté la vista después de un rato, las comisuras de mi boca se elevaron. Las yemas de los dedos presionan con fuerza el lomo del libro.*"
+        "text": "*Yuna baja la cabeza. Cuando al fin levanta la vista, las puntas de sus dedos presionan con fuerza el lomo del libro.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -827,7 +827,7 @@
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Le tendí el ramo.* Esto no es interés profesional. Por mi parte, no."
+        "text": "*Le entregué el ramo.* De mi parte, son solo sentimientos."
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Profesora",
@@ -887,11 +887,11 @@
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*Me salió sin pensar. — En cuanto me gradué, el cargo se cayó solo.*"
+        "text": "*La forma en que la llamé se vuelve extraña un segundo después de salir de mi boca.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "{name}",
-        "text": "*Saca un sobre. Esta vez no es marrón — es blanco.*"
+        "text": "*La tutora saca un sobre blanco. Es más delgado que el viejo sobre marrón.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Profesora",
@@ -931,7 +931,7 @@
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*De jugo a café. — De alumno a adulto. No es cruzar la línea — es que la línea ya no está.*"
+        "text": "*La palabra café permanece mucho tiempo sobre el posavasos.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
@@ -939,7 +939,7 @@
     },
     "hidden_true_homeroom_7_b": {
         "name": "{name}",
-        "text": "*Sonríe. No una sonrisa seca — la sonrisa de quien acaba de cerrar un manuscrito de siete años.*"
+        "text": "*La tutora sonríe. La luz de la ventana cae sobre el sobre del manuscrito.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Profesora",
@@ -1016,11 +1016,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Por la mañana. En la mesa de la cocina, una curita pegada. Con el menú de hoy escrito encima. — Su versión del pósit.*"
+        "text": "*Mañana. Hay una tirita pegada a la mesa. El menú de hoy está escrito en letra pequeña.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Ha vuelto al hospital universitario. Esta vez los pacientes la llaman por su nombre. — Doctora Lee.*"
+        "text": "*Volvió al hospital universitario. Los pacientes la llaman por su nombre. — Enfermera Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -1104,7 +1104,7 @@
     },
     "hidden_true_nurse_7_d": {
         "name": "{name}",
-        "text": "*Era alguien que necesitaba una excusa. — Su papel dentro del colegio era al mismo tiempo su excusa y su muro. Ese muro hoy ha caído.*"
+        "text": "*La enfermera presiona una vez el borde de la tirita con la uña y luego suelta la mano.*"
     },
     "hidden_true_nurse_8": {
         "name": "Enfermera",
@@ -1120,7 +1120,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*La fecha de la graduación borra la línea. — En una cafetería en lugar de la enfermería, con una persona en lugar de un rol.*"
+        "text": "*Por un momento, la cortina blanca de la enfermería se superpone a la ventana del café y desaparece.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",

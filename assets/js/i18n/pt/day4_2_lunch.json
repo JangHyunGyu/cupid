@@ -13,7 +13,7 @@
     },
     "date_seo_pretty_high": {
         "name": "{name}",
-        "text": "*Seoyeon para por um instante. — E sorri. Não com os lábios, mas com os olhos.*"
+        "text": "*Seoyeon para por um instante. A mão que segura a alça da bolsa relaxa.*"
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
@@ -205,7 +205,7 @@
     },
     "date_yuna_end": {
         "name": "{name}",
-        "text": "*Yuna me olha falando isso. — Nos olhos dela, 'por sua causa' tá escrito.*"
+        "text": "*Yuna olha para mim. A página que ela virava para sob seus dedos.*"
     },
     "date_yuna_end_b": {
         "name": "Yuna",
@@ -333,7 +333,7 @@
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*Ela está rindo. — Mas os olhos não.*"
+        "text": "*Ela está sorrindo. Sob a sombra do boné, o olhar fica na vitrine.*"
     },
     "date_dain_end_b": {
         "name": "Dain",
@@ -353,6 +353,6 @@
     },
     "pre_confess_callback": {
         "name": "{name}",
-        "text": "*O celular pesa no bolso. Sem nenhuma notificação. — Igual ao primeiro dia, quando vi o nome piscar na tela e enfiei de volta no bolso. Não posso fugir desse jeito de novo. Hoje não.*"
+        "text": "*O celular no bolso pesa. Não há notificações, só o vidro preto da tela.*"
     }
 }

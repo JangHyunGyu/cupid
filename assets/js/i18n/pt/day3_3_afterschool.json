@@ -106,7 +106,7 @@
         "name": "Seoyeon",
         "text": "Na próxima vez que eu pedir um favor, você atende sem reclamar. — É o preço.",
         "choices": [
-            "Não precisa ser perfeita. Todo mundo quebra às vezes.",
+            "Tudo bem mostrar esse lado.",
             "...Ver o quê? Não vi nada. Minha caneta caiu, vim buscar."
         ]
     },
@@ -180,7 +180,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*A conversa flui naturalmente. A pessoa caída sobre a mesa, a maquiagem borrada — não estão mais nesta sala. Sem palavras, concordamos.*"
+        "text": "*A conversa continua naturalmente. Seoyeon ajeita os óculos de novo, e eu continuo fingindo olhar debaixo da mesa.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -428,7 +428,7 @@
     },
     "after3_dain_choice": {
         "name": "{name}",
-        "text": "*Dain senta no banco. Esfrega o joelho. — Isso não é de hoje. É coisa antiga.*",
+        "text": "*Dain se senta no banco. A mão que esfrega o joelho fica no mesmo lugar por tempo demais.*",
         "choices": [
             "...Tá bem? Não força. Que tal descansar hoje?",
             "Ei, mais um saque. Se eu não pegar, você ganha."
@@ -476,7 +476,7 @@
     },
     "after3_dain_correct_1": {
         "name": "{name}",
-        "text": "*Dain para. — Esperava a pergunta sobre o joelho. Esperava ser tratada como doente. Uma rachadura sutil na expressão dela.*"
+        "text": "*Dain para. A mão que cobria o joelho fica suspensa no ar.*"
     },
     "after3_dain_correct_2": {
         "name": "Dain",
@@ -516,7 +516,7 @@
     },
     "after3_dain_correct_11": {
         "name": "{name}",
-        "text": "*O joelho direito de Dain dobra ligeiramente quando ele pousa. Sua expressão facial é sorridente, mas suas mãos vão até os joelhos. Não tire desta vez.*"
+        "text": "*Quando Dain aterrissa, o joelho direito cede um pouco. A mão fica sobre ele.*"
     },
     "after3_dain_correct_12": {
         "name": "Dain",
@@ -576,7 +576,7 @@
     },
     "after3_dain_tell_retreat": {
         "name": "{name}",
-        "text": "*Dain solta um suspiro de alívio. — Escolhi o silêncio de novo. O caminho mais fácil.*"
+        "text": "*Dain solta um suspiro de alívio. Só resta o som da bola rolando pelo chão do ginásio.*"
     },
     "after3_dain_choice1": {
         "name": "{name}",
@@ -592,7 +592,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
-        "text": "*Dain para. Então sorri, de leve. Desta vez seus olhos se movem antes dos lábios.*"
+        "text": "*Dain para e sorri de leve. Ela esfrega o canto do olho uma vez com as costas da mão.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -679,7 +679,7 @@
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Disse pra mim que eu não precisava ser perfeita — e virou a pessoa perfeita pra todo mundo. Isso é pior."
+        "text": "Você me disse que estava tudo bem, mas não queria que ninguém gostasse menos de você. Isso é mais cruel."
     },
     "after3_confront_admit_4_b": {
         "name": "{name}",

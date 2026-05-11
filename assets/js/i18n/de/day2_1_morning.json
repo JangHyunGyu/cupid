@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "{name}",
-        "text": "*Wenn die Spannung um 8 Uhr morgens so hoch ist, denke ich, dass die Batterie vor der Beerdigung leer sein wird.*"
+        "text": "*Dains Stimme füllt das Klassenzimmer, noch bevor die Morgenbesprechung beginnt.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "{name}",
-        "text": "*Ich blieb nicht stehen. Kurz bevor Seoyeon um die Ecke biegt, verschwindet zuerst ihr Lächeln. Das Klemmbrett drückt sich näher an ihre Brust.*"
+        "text": "*Kurz bevor Seoyeon um die Ecke biegt, verlangsamt sie den Schritt. Das Klemmbrett rückt dichter an ihren Arm.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -310,7 +310,7 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "*Romane. Dass eine Deutschlehrerin Romane liest, ist normal, aber warum scheint sie es ungern zuzugeben?*"
+        "text": "*Der Blick der Klassenlehrerin bleibt kurz an der offenen Schublade hängen.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Klassenlehrerin",
@@ -318,7 +318,7 @@
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Seltsame Frage. Wir sprachen über Noten, warum der plötzliche Schwenk zum 'Schreiben'?*"
+        "text": "*Der Finger auf dem Zeugnis verdeckt die Ecke des Manuskriptpapiers.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*'Derjenige, der sich Sorgen macht'. Der Klassenlehrer wirft einen Blick auf Dains Namensschild.*"
+        "text": "*Der Blick der Klassenlehrerin bleibt kurz bei Dains Namensschild hängen.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Klassenlehrerin",
@@ -354,6 +354,6 @@
     },
     "hidden_homeroom_d2_11_b": {
         "name": "{name}",
-        "text": "*Wie ein Selbstgespräch, obwohl niemand zuhört.*"
+        "text": "*Die Stimme der Klassenlehrerin versinkt leise im Inneren der Kaffeetasse.*"
     }
 }

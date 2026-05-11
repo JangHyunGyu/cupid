@@ -62,7 +62,7 @@
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*Je sers. — Étonnamment, le deuxième service passe proprement au-dessus du filet.*"
+        "text": "*Le premier service accroche le filet. Le deuxième tombe à l’intérieur de la ligne.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
@@ -142,7 +142,7 @@
     },
     "after2_dain_end_3e": {
         "name": "{name}",
-        "text": "*Le sujet a changé. — L'attention de Dain est maladroite, mais chaleureuse.*"
+        "text": "*Dain pousse le verre vers moi et réclame de l’eau un peu trop fort.*"
     },
     "after2_dain_return": {
         "name": "{name}",
@@ -198,7 +198,7 @@
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "...T'es étonnamment utile."
+        "text": "...Tu te débrouilles."
     },
     "after2_seo_8b3": {
         "name": "{name}",
@@ -282,7 +282,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "*'Sauf ici.' — Que ce soit le toit ou la salle du conseil, Seoyeon est quelqu'un qui a besoin d'un endroit où elle peut retirer le masque.*"
+        "text": "*Le porte-documents de Seoyeon est retourné sur le bureau. Le couchant y reste longtemps.*"
     },
     "after2_seo_leave": {
         "name": "{name}",
@@ -330,7 +330,7 @@
     },
     "after2_yuna_6": {
         "name": "{name}",
-        "text": "*Elle attendait. — Ça me rend secrètement heureux.*"
+        "text": "*Yuna ne tourne pas la page. Seuls ses doigts bougent.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna a dit deux phrases d'affilée. — Pour quelqu'un qui parle d'habitude par lignes uniques.*",
+        "text": "*Le fil de l'écouteur s'enroule encore entre les doigts de Yuna.*",
         "choices": [
             "Je devrais venir tous les jours ?",
             "C'est agréable parce que c'est calme"
@@ -548,7 +548,7 @@
     },
     "after2_seo_sunset_react_b": {
         "name": "{name}",
-        "text": "*Même après ces mots, le léger sourire de Seoyeon reste encore un moment.*"
+        "text": "*Seoyeon cache sa bouche derrière le bord des papiers et regarde dehors un moment.*"
     },
     "after2_seo_neck_react_b": {
         "name": "Seoyeon",

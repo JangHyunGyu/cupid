@@ -97,15 +97,15 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Klassenlehrerin",
-        "text": "Sagen wir, es fällt unter pädagogisches Interesse. *leise murmelnd* Ein Kaffee wäre doch okay, oder? — Naja, du bist Schüler, also Saft."
+        "text": "Dann essen wir zuerst. *leise murmelnd* Als Lehrerin muss ich prüfen, ob ein Schüler gegessen hat. — Für dich aber Saft."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "{name}",
-        "text": "*Auch „pädagogisches Interesse“. Auch nach dem Sprechen klappt der Klassenlehrer nur noch die Ecke des Getränkehalters um.*"
+        "text": "*Auch nachdem sie ausgesprochen hat, faltet die Klassenlehrerin weiter an der Ecke des Becherhalters.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*Eine Tasse Kaffee. — Pädagogisches Interesse.*",
+        "text": "*Die Ecke des Papierumschlags ist unter den Becherhalter gedrückt.*",
         "choices": [
             "Klar. Gibt's ein Café in der Nähe?",
             "Das sollten Sie nicht tun, oder?"
@@ -125,7 +125,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "{name}",
-        "text": "*Sie stellt die Kaffeetasse ab. Ihre Augen leuchten.*",
+        "text": "*Die Klassenlehrerin stellt ihre Kaffeetasse ab. Ihr Körper neigt sich leicht zum Fenster.*",
         "choices": [
             "Der Roman — wer ist die Hauptfigur?",
             "Ihr erster Leser zu sein... das ist ganz schön viel"
@@ -181,7 +181,7 @@
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*Ihr Name. Ich habe sie auch die ganze Zeit nur Schulkrankenschwester genannt.*",
+        "text": "*Die Fingerspitze der Krankenschwester bleibt lange über dem Namensfeld liegen.*",
         "choices": [
             "Wie heißen Sie? Nicht \"Schulkrankenschwester\"",
             "Deshalb sind Sie an diese Schule gekommen"
@@ -343,7 +343,7 @@
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Sie muss wütend gewesen sein — aber trotzdem ist sie gekommen. Vor dieser Person darf ich nicht weglaufen.*"
+        "text": "*Vor dem Schultor bleibe ich stehen. Einen Herzschlag zu spät versteckt die Klassenlehrerin den Papierumschlag hinter ihrem Rücken.*"
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
@@ -355,7 +355,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*Papierkram. Sie hat wahrscheinlich in einem leeren Klassenzimmer an ihrem Manuskript geschrieben. Das weiß ich jetzt.*"
+        "text": "*Eine Ecke des Papierumschlags der Klassenlehrerin ist geknickt.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Klassenlehrerin",
-        "text": "Eher als geholfen... *Aus dem Fenster schauend* Dass jemand es herausgefunden hat — das war eine Erleichterung. Etwas allein zu tragen ist kein Geheimnis, sondern eine Last."
+        "text": "Eher als Hilfe... *aus dem Fenster sehend* seit es entdeckt wurde, fühlt sich der Umschlag etwas leichter an. Selbst Papier wird schwer, wenn man es allein trägt."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "*Sie lächelt kurz. Kein verlegenes Lächeln — ein Lächeln der Erleichterung.*"
+        "text": "*Die Klassenlehrerin lächelt kurz. Die Hand am Becherhalter hält inne.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Klassenlehrerin",
@@ -419,7 +419,7 @@
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "Pädagogisches Interesse, oder?"
+        "text": "Sie nennen es wieder Arbeit, oder?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Klassenlehrerin",

@@ -138,7 +138,7 @@
         "name": "Seoyeon",
         "text": "La prochaine fois que je te demande un service, tu dis oui sans poser de questions. — C'est le prix.",
         "choices": [
-            "Pas besoin d'être parfaite. Ça arrive à tout le monde.",
+            "Tu peux montrer ce côté-là.",
             "...Tout à l'heure ? J'ai rien vu. J'ai fait tomber mon stylo, je suis venu le ramasser."
         ]
     },
@@ -212,7 +212,7 @@
     },
     "after3_dain_choice": {
         "name": "{name}",
-        "text": "*Dain s’assoit sur le banc. Elle se frotte le genou.*",
+        "text": "*Dain s’assoit sur le banc. Sa main reste à frotter longtemps le même endroit du genou.*",
         "choices": [
             "...Ça va ? Ne force pas. Tu devrais te reposer aujourd'hui.",
             "Hé, un service de plus. Si je le rate, t'as gagné."
@@ -232,7 +232,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "{name}",
-        "text": "*Dain s'arrête. Puis elle sourit, faiblement. Cette fois, ses yeux bougent avant ses lèvres.*"
+        "text": "*Dain s’arrête, puis sourit faiblement. Elle frotte une fois le coin de son œil du revers de la main.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -301,7 +301,7 @@
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Tu m’as dit que je n’avais pas besoin d’être parfaite — et toi, tu as essayé d’être parfait pour tout le monde. C’est encore pire."
+        "text": "Tu m'as dit que ça allait, mais toi, tu ne voulais déplaire à personne. C'est plus cruel."
     },
     "after3_confront_admit_5": {
         "name": "Seoyeon",
@@ -555,7 +555,7 @@
     },
     "after3_dain_tell_retreat": {
         "name": "{name}",
-        "text": "*Dain pousse un soupir de soulagement. — J’ai encore choisi le silence. La voie facile.*"
+        "text": "*Dain pousse un soupir de soulagement. Il ne reste que le bruit d’un ballon qui roule sur le sol du gymnase.*"
     },
     "after3_seo_pity_trap_1": {
         "name": "{name}",
@@ -627,7 +627,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "*La conversation reprend son cours. La personne effondrée, le maquillage coulé — plus dans cette pièce. Sans mot, on s'est mis d'accord.*"
+        "text": "*La conversation reprend naturellement. Seoyeon remet ses lunettes, et je continue de faire semblant de regarder sous le bureau.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -779,7 +779,7 @@
     },
     "after3_dain_correct_1": {
         "name": "{name}",
-        "text": "*Dain s'arrête. — Elle s'attendait à la question du genou. Elle s'attendait à être traitée comme une malade. Une légère fissure dans son expression.*"
+        "text": "*Dain s’arrête. La main qui protégeait son genou reste en l’air.*"
     },
     "after3_dain_correct_2": {
         "name": "Dain",
@@ -819,7 +819,7 @@
     },
     "after3_dain_correct_11": {
         "name": "{name}",
-        "text": "*Le genou droit de Dain se plie légèrement lorsqu'il atterrit. Son expression faciale est souriante, mais ses mains se mettent à genoux. Ne le retirez pas cette fois.*"
+        "text": "*En atterrissant, le genou droit de Dain flanche un peu. Sa main reste dessus.*"
     },
     "after3_dain_correct_12": {
         "name": "Dain",

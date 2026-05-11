@@ -230,11 +230,11 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Klassenlehrerin",
-        "text": "Nachdem ich das vierte Manuskript eingereicht hatte — am Tag der Ergebnisbekanntgabe kam kein Anruf. An diesem Tag habe ich mich an der Pädagogischen Hochschule beworben."
+        "text": "An dem Tag, an dem ich auf das letzte Ergebnis wartete, kam kein Anruf. An diesem Tag füllte ich die Bewerbung fürs Lehramtsstudium aus."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Klassenlehrerin",
-        "text": "Dann habe ich die Lehramtsprüfung gemacht. Deutschlehrerin. — Eine, die früher Romane geschrieben hat, unterrichtet jetzt Literatur. Ziemlich ironisch, oder?"
+        "text": "So bin ich Koreanischlehrerin geworden. Witzig, oder? Dass ich mich immer noch an Papier klammere."
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Klassenlehrerin",
@@ -262,7 +262,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*Der Klassenlehrer lacht. Die Mundwinkel heben sich unbeholfen und die Hände bleiben auf dem Manuskript.*"
+        "text": "*Die Klassenlehrerin lächelt. Ihre Hand liegt noch immer auf dem Manuskriptpapier.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",
@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "{name}",
-        "text": "*Sie streicht sich die Haare hinters Ohr und geht. — 'Bitte' ist ein seltenes Wort bei ihr.*"
+        "text": "*Die Klassenlehrerin streicht sich die Haare zurück und verlässt das Klassenzimmer. Hinter der geschlossenen Tür klickt eine Stiftkappe.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Klassenlehrerin",
@@ -494,7 +494,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Eine halbe Sekunde. Erstarrt. — Es ist ein Ausdruck, den ich bei der Lehrerin noch nie gesehen habe. Nicht gleichgültig, nicht trocken. Das Gesicht von jemandem, der ertappt wurde.*"
+        "text": "*Die Hand der Klassenlehrerin hält über dem Manuskriptpapier inne. Gleich darauf wird das Blatt umgedreht.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Klassenlehrerin",
@@ -530,7 +530,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Klassenlehrerin",
-        "text": "Nach dem Studium wollte ich als Autorin debütieren — drei Mal gescheitert in zwei Jahren. Kein Geld mehr, meine Eltern sagten 'Sei mal realistisch.'"
+        "text": "Nach dem Abschluss habe ich es ein paarmal eingereicht. Wurde abgelehnt. Danach... waren Bewerbungen leichter auszufüllen."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Unvollendetes Manuskript in der Schreibtischschublade. Eine Geschichte, die 7 Jahre lang verschlossen war, wurde hier veröffentlicht.*"
+        "text": "*Jede Kante des Manuskriptpapiers ist von Händen abgenutzt. Die Klassenlehrerin legt die Fingerspitze auf eine leere Zeile.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Klassenlehrerin",
@@ -562,7 +562,7 @@
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
-        "text": "*'Pädagogisch.' Selbst nachdem die Lehrerin das gesagt hat, kann sie ihre Hand nicht vom Manuskript nehmen.*"
+        "text": "*Selbst nachdem sie das gesagt hat, kann die Klassenlehrerin die Hand nicht vom Manuskriptpapier nehmen.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
@@ -594,7 +594,7 @@
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
-        "text": "*Die Lehrerin benutzt das Wort 'bitte.' — Für sie ist das ein seltenes Wort.*"
+        "text": "*Das umgedrehte Manuskriptpapier und die leise Stimme folgen mir bis auf den Flur.*"
     },
     "hidden_nurse_d3_2_c": {
         "name": "{name}",
@@ -734,7 +734,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder spielerisch* Ach, das ist doch nichts. Das ist Service. Komm das nächste Mal auch vorbei, wenn du nicht verletzt bist."
+        "text": "*Die Krankenschwester setzt ihr Lächeln wieder auf.* Ach was. Das ist Service. Komm nächstes Mal vorbei, auch wenn du nicht krank bist."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",

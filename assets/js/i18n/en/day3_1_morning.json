@@ -230,11 +230,11 @@
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Homeroom Teacher",
-        "text": "After I submitted the fourth manuscript — the results came out. No call. That's the day I applied to teachers' college."
+        "text": "On the day I waited for the last result, the call never came. That day, I filled out the teachers' college application."
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Homeroom Teacher",
-        "text": "I got my teaching license. Now I teach Korean lit. — A failed novelist teaching literature. Ironic, right?"
+        "text": "That's how I became a Korean teacher. Funny, right? Still holding on to paper like this."
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Homeroom Teacher",
@@ -262,7 +262,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "{name}",
-        "text": "*Homeroom teacher laughs. The corners of the mouth rise awkwardly, and the hands remain on the manuscript.*"
+        "text": "*The teacher smiles. Her hand is still on the manuscript paper.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Homeroom Teacher",
@@ -270,7 +270,7 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "{name}",
-        "text": "*She tucks her hair behind her ear and leaves. — 'Please' is a rare word from her.*"
+        "text": "*The teacher brushes her hair back and leaves the classroom. From behind the closed door comes the click of a pen cap.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Homeroom Teacher",
@@ -494,7 +494,7 @@
     },
     "hidden_homeroom_d3_3_b": {
         "name": "{name}",
-        "text": "*Half a second. Frozen. — It's an expression I've never seen on the teacher before. Not indifferent, not dry. The face of someone who's been caught.*"
+        "text": "*The teacher's hand stops over the manuscript paper. A moment later, the sheet is turned over.*"
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Homeroom Teacher",
@@ -530,7 +530,7 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Homeroom Teacher",
-        "text": "After graduating, I tried to debut as a writer — failed three times over two years. Money ran out, parents said 'time to be realistic.'"
+        "text": "After graduating, I sent it out a few times. Got rejected. After that... applications were easier to fill out."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "{name}",
@@ -546,7 +546,7 @@
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
-        "text": "*Unfinished manuscript in the desk drawer. A story that had been closed for 7 years has been pushed out here.*"
+        "text": "*Every edge of the manuscript paper is worn from handling. The teacher rests her fingertip on an empty line.*"
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Homeroom Teacher",
@@ -562,7 +562,7 @@
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "{name}",
-        "text": "*'Educationally.' Even after saying that, the teacher can't lift their hand from the manuscript.*"
+        "text": "*Even after saying that, the teacher cannot take her hand off the manuscript paper.*"
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
@@ -594,7 +594,7 @@
     },
     "hidden_nurse_d3_2_b": {
         "name": "{name}",
-        "text": "*The teacher uses the word 'please.' — For her, that's a rare word.*"
+        "text": "*The turned-over manuscript paper and the low voice follow me into the hallway.*"
     },
     "hidden_nurse_d3_2_c": {
         "name": "{name}",
@@ -734,7 +734,7 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "School Nurse",
-        "text": "*Playful again* Oh, it's nothing. Consider it a freebie. Come by again sometime. Hurt or not."
+        "text": "*The nurse puts her smile back on.* Please. This much is a service. Drop by next time even if you are not sick."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",

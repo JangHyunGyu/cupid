@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'War schön.' — Das war wahrscheinlich das Größte, was Yuna sagen konnte.*"
+        "text": "*Unter dem 'Es hat Spaß gemacht' auf dem Lesezeichen ist etwas hellviolette Tinte verlaufen.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -280,15 +280,15 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Wenn nicht jetzt, dann nie.*",
+        "text": "*Die Ecke des Handys drückt in meine Handfläche.*",
         "choices": [
-            "Diesmal gestehe ich es",
+            "Es jetzt sagen",
             "...Ich konnte nichts sagen"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Diesmal bin ich nicht weggerannt. Die Worte kamen heraus.*"
+        "text": "*Meine Fußspitzen halten an. Ich atme einmal ein und rufe den Namen.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",

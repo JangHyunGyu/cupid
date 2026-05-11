@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*I'll count them tomorrow night. — Because of her, I keep catching myself looking up.*"
+        "text": "*Tomorrow night, my finger will stop at the third star again.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -194,11 +194,11 @@
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Three lines. Gratitude, distance, then reaching back out. — She's having a tug of war with herself.*"
+        "text": "*The period at the end of the message looks as if it was added much later.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*'Won't need to call you in' and 'come by anytime' in the same message. Contradictory — but that's so her.*"
+        "text": "*I read only the last line again.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
@@ -206,7 +206,7 @@
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Can't refuse. — Am I going to have to admit that I'm being pulled in?*"
+        "text": "*I press the corner of the bandage with my thumb. Tomorrow morning has one more thing on it.*"
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
@@ -238,7 +238,7 @@
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*A very Yuna riddle. A person who never gives you the answer. — A person who makes you want to find out.*"
+        "text": "*The reply ends there. My fingertip marks remain on the window.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

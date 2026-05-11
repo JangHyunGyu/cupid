@@ -13,7 +13,7 @@
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*This time, I have to decide that too.*",
+        "text": "*My hand stops between the envelope and the bandage.*",
         "choices": [
             "Go to the person who handed me the manuscript",
             "Go to the person who left an answer on the back of my hand"
@@ -33,7 +33,7 @@
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*She's crying again. Not in the bathroom — this time, right in front of me.*"
+        "text": "*Seoyeon's eyes are wet. This time, she does not hide them with the back of her hand.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -101,11 +101,11 @@
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "With you, I feel like I don't have to be perfect."
+        "text": "In front of you, I think I do not need the practiced face."
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "You never had to be perfect."
+        "text": "You never had to."
     },
     "true_seo_5": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
     },
     "true_seo_6": {
         "name": "{name}",
-        "text": "*Seoyeon smiles. Her lips curve on their own.*"
+        "text": "*Seoyeon smiles. Her hair scatters in the wind.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -237,7 +237,7 @@
     },
     "true_yuna_5_b": {
         "name": "{name}",
-        "text": "*Yuna pauses. Only the corners of the mouth raise quietly.*"
+        "text": "*Yuna pauses for a moment. The hand holding the book spine loosens.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -377,7 +377,7 @@
     },
     "true_dain_8b": {
         "name": "{name}",
-        "text": "*The exclamation mark is back. — But this time, it's a real one.*"
+        "text": "*The end of Dain's voice lifts lightly. This time, it does not sound forced upward.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -462,15 +462,15 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Still, this time we're facing the same direction.*"
+        "text": "*Still, we walk in the same direction.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*It may not be a perfect happy ending, but from here, we can start again.*"
+        "text": "*A cherry blossom petal sticks to the front of my shoe, then falls off on the next step.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "It won't be perfect. Not for you, not for me. ...But this time, don't let go halfway."
+        "text": "We are both clumsy. ...But this time, do not let go halfway."
     },
     "good_1_seo_b": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*I smiled, and Seoyeon pretended not to notice before the corner of her mouth lifted just a little.*"
+        "text": "*I smile, and Seoyeon pretends not to see it before slowing her steps a little.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*I slip the key into my pocket. Tomorrow on the rooftop — this time it's my turn to pack the lunch.*"
+        "text": "*I put the key in my pocket. Tomorrow, it is my turn to bring lunch to the rooftop.*"
     },
     "good_5_cg_seo": {
         "name": "System",
@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Not as someone's empty space, but as the person standing here right now. That's how I want to stay. Yuna too. Me too.*"
+        "text": "*Yuna slips the bookmark into a new page, on the side without a fold mark.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -570,7 +570,7 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*I catch it. Only then does Dain smile. Making up always looks like this with her.*"
+        "text": "*I catch it. Only then does Dain smile. The ball bounces once more in my palm.*"
     },
     "good_4_dain": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*One thing makes this failure different from before. At least this time I said it, and that means I can truly let it end.*"
+        "text": "*The words came out to the end. Maybe that is why my feet shake less when I turn away.*"
     },
     "confess_fail_5": {
         "name": "System",
@@ -734,7 +734,7 @@
     },
     "harem_1_b": {
         "name": "{name}",
-        "text": "*Yuna lowered her head. When I looked up after a while, the corners of my mouth went up. The fingertips are pressing hard on the spine of the book.*"
+        "text": "*Yuna lowers her head. When she looks up much later, her fingertips are pressing hard into the book spine.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -827,7 +827,7 @@
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*I handed her the bouquet.* This isn't professional interest. Not on my end."
+        "text": "*I hand over the bouquet.* On my side, it is just my feelings."
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Homeroom Teacher",
@@ -887,11 +887,11 @@
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*It was unconscious. — The moment I graduated, the title fell away.*"
+        "text": "*The way I addressed her feels unfamiliar a beat after it leaves my mouth.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "{name}",
-        "text": "*She pulls out an envelope. This time it's not brown — it's white.*"
+        "text": "*The teacher takes out a white envelope. It is thinner than the old brown one.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Homeroom Teacher",
@@ -931,7 +931,7 @@
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*From juice to coffee. — From student to adult. Not crossing the line — the line itself disappeared.*"
+        "text": "*The word coffee stays on the coaster for a long time.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
@@ -939,7 +939,7 @@
     },
     "hidden_true_homeroom_7_b": {
         "name": "{name}",
-        "text": "*She smiles. Not a dry one — the smile of someone who finished a seven-year unfinished manuscript.*"
+        "text": "*The teacher smiles. Window light falls over the manuscript envelope.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Homeroom Teacher",
@@ -1016,11 +1016,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Morning. A bandage stuck to the kitchen table. Today's menu written on it. — Her version of a sticky note.*"
+        "text": "*Morning. A bandage is stuck to the dining table. Today's menu is written on it in tiny letters.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*She went back to the university hospital. This time, the patients call her by name. — Nurse Lee Juwon.*"
+        "text": "*She returned to the university hospital. Patients call her by name. — Nurse Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -1104,7 +1104,7 @@
     },
     "hidden_true_nurse_7_d": {
         "name": "{name}",
-        "text": "*She was someone who needed an excuse. — Her role at school had been both her excuse and her wall. Today, that wall disappeared.*"
+        "text": "*The nurse presses the edge of the bandage once with her nail, then lets go.*"
     },
     "hidden_true_nurse_8": {
         "name": "School Nurse",
@@ -1120,7 +1120,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*The day called graduation erased the line between us. A cafe instead of the nurse's office. A person instead of a role.*"
+        "text": "*For a moment, the white curtain of the nurse’s office overlaps the cafe window, then disappears.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",

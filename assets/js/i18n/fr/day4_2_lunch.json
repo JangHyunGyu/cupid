@@ -13,7 +13,7 @@
     },
     "date_seo_pretty_high": {
         "name": "{name}",
-        "text": "*Seoyeon s’arrête un instant. — Puis elle sourit. Pas avec ses lèvres, mais avec ses yeux.*"
+        "text": "*Seoyeon s’arrête un instant. Sa main se desserre sur la bandoulière.*"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
@@ -153,7 +153,7 @@
     },
     "date_yuna_end": {
         "name": "{name}",
-        "text": "*Yuna me regarde en disant cela. — Dans ses yeux, c’est écrit 'grâce à toi.'*"
+        "text": "*Yuna me regarde. La page qu’elle allait tourner s’arrête sous ses doigts.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*Elle sourit. — Mais ses yeux ne sourient pas.*"
+        "text": "*Elle sourit. Sous l’ombre de sa casquette, son regard reste sur la vitrine.*"
     },
     "pre_confess_minsu": {
         "name": "Minsu",
@@ -261,7 +261,7 @@
     },
     "pre_confess_callback": {
         "name": "{name}",
-        "text": "*Le téléphone dans ma poche est lourd. Aucune notification pourtant. — Comme ce premier jour, quand j'ai vu un nom s'afficher et que je l'ai rangé aussitôt. Je ne peux plus fuir comme ça. Plus maintenant.*"
+        "text": "*Le téléphone dans ma poche pèse lourd. Aucune notification, seulement le verre noir de l’écran.*"
     },
     "date_seo_end_b": {
         "name": "{name}",

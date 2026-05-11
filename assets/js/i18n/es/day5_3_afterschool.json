@@ -70,7 +70,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*'Estuvo bien.' — Seguramente es lo más grande que Yuna podía decir.*"
+        "text": "*Bajo el 'fue divertido' del marcapáginas, la tinta violeta clara se ha corrido un poco.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -280,15 +280,15 @@
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Si no es ahora, no habrá otra oportunidad.*",
+        "text": "*La esquina del teléfono se me clava en la palma.*",
         "choices": [
-            "Esta vez me voy a confesar",
+            "Decirlo ahora",
             "...No fui capaz de decir nada"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Esta vez no huí. Las palabras me salieron.*"
+        "text": "*Mis pies se detienen. Respiro una vez y digo su nombre.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",

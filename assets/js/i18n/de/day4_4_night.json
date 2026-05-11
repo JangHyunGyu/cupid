@@ -1,7 +1,7 @@
 {
     "day4_night_start": {
         "name": "{name}",
-        "text": "*Ich bin wieder zu Hause. Im Bett liegend ziehen die Erinnerungen des Tages wie ein Film an mir vorbei.*"
+        "text": "*Ich komme nach Hause. An meinen Ärmeln haften etwas Erde vom Park und Staub von der Schule.*"
     },
     "day4_night_branch": {
         "name": "System",
@@ -85,11 +85,11 @@
     },
     "wall_seo_10": {
         "name": "Seoyeon",
-        "text": "Deshalb musste ich auch schauspielern. Zuhause und in der Schule. — Ein Lächeln war die einfachste Maske."
+        "text": "Also habe ich zu Hause und in der Schule das Lächeln gewählt. So wurde ich am wenigsten durchschaut."
     },
     "wall_seo_11": {
         "name": "Seoyeon",
-        "text": "Mama hat gesagt: „Wenigstens du musst perfekt sein, damit diese Familie zusammenhält.“"
+        "text": "Mama sagte: 'Wenn du zusammenbrichst, bricht dieses Haus auch zusammen.'"
     },
     "wall_seo_11_b": {
         "name": "{name}",
@@ -101,7 +101,7 @@
     },
     "wall_seo_13": {
         "name": "Seoyeon",
-        "text": "Von da an habe ich angefangen, vor dem Spiegel Lächeln zu üben. Den Winkel, um die Lippen anzuheben, das Timing, um die Augen zusammenzukneifen."
+        "text": "Seitdem übte ich vor dem Spiegel zu lächeln. Wenn die Augen nicht mitlächelten, noch einmal. Und wieder."
     },
     "wall_seo_14": {
         "name": "Seoyeon",
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Sie holt Luft.* ...Deshalb ist das Schauspielern zur Gewohnheit geworden."
+        "text": "*Seoyeons Atem stößt kurz gegen meine Schulter.*"
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -171,7 +171,7 @@
         "name": "{name}",
         "text": "*Seoyeon wischt sich die Tränen ab und schaut mit zitternden Augen zu mir hoch.*",
         "choices": [
-            "Du musst nicht perfekt sein. Diese Seoyeon mag ich lieber.",
+            "Ich mag auch dieses Gesicht. Nicht das geübte.",
             "Nicht die Schülersprecherin — einfach Seoyeon ist meine Freundin.",
             "Ehrlich gesagt dachte ich, du könntest alles. Danke, dass du mir auch diese Seite zeigst."
         ]
@@ -206,7 +206,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "{name}",
-        "text": "*Seoyeon lächelt. Ihre Mundwinkel heben sich von selbst, und unter dem verschmierten Make-up bleiben Tränen, die sie noch nicht weggewischt hat.*"
+        "text": "*Seoyeon lächelt. Unter dem verschmierten Make-up bleiben feuchte Spuren.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
@@ -223,7 +223,7 @@
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
-        "text": "...Das fühlt sich ungewohnt an. Wirklich."
+        "text": "...Das ist neu. Wirklich."
     },
     "wall_seo_skin60_1": {
         "name": "{name}",
@@ -259,7 +259,7 @@
     },
     "wall_dain_pre_low_1": {
         "name": "{name}",
-        "text": "*Dain lächelt. Ihre Mundwinkel heben sich, aber ihre Hand drückt die Kniebandage fest.*"
+        "text": "*Dain lächelt. Ihre Hand drückt fest auf die Kniebandage.*"
     },
     "wall_dain_pre_low_2": {
         "name": "Dain",
@@ -440,7 +440,7 @@
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
-        "text": "*Nicht einen Ball auf dem Feld schlagen, sondern neben jemandem sitzen. — Für Dain war auch das wahrscheinlich das erste Mal.*"
+        "text": "*Der Ball liegt außerhalb der Linie. Dain streicht einmal mit der Handfläche über den kalten Boden.*"
     },
     "wall_dain_cry_1": {
         "name": "{name}",
@@ -460,7 +460,7 @@
     },
     "wall_dain_cry_5": {
         "name": "Dain",
-        "text": "Jeden Morgen, wenn ich diesen Wecker sehe, zwinge ich mich dazu, die Augenbrauen hochzuziehen..."
+        "text": "Jeden Morgen sah ich diesen Alarm und zwang mich vor dem Spiegel zu lächeln..."
     },
     "wall_dain_cry_6": {
         "name": "{name}",
@@ -573,7 +573,7 @@
     },
     "wall_yuna_pre_high_2": {
         "name": "{name}",
-        "text": "*Yuna spricht direkt statt über Zettel. Ihre Sätze sind schon lang. — Die Mauer sinkt.*"
+        "text": "*Yuna spricht direkt, statt einen Zettel zu benutzen. In ihren Händen ist kein Papier.*"
     },
     "wall_yuna_pre_low_1": {
         "name": "{name}",
@@ -633,7 +633,7 @@
     },
     "wall_yuna_14": {
         "name": "Yuna",
-        "text": "Die Person, die bewiesen hat, dass ich existiere — war verschwunden. Mir war, als würde ich wieder unsichtbar werden."
+        "text": "Die Person, die gesehen hatte, dass ich da war, verschwand. Ich dachte, niemand würde mich wieder bemerken."
     },
     "wall_yuna_14_b": {
         "name": "Yuna",
@@ -702,7 +702,7 @@
     },
     "wall_yuna_moved_5": {
         "name": "{name}",
-        "text": "*Yuna hat vier Sätze hintereinander gesagt. — Das kommt einem Geständnis gleich.*"
+        "text": "*Yuna atmet langsam aus. Die Ecke des Briefs zerknittert etwas unter ihren Fingerspitzen.*"
     },
     "wall_yuna_moved_5_b": {
         "name": "{name}",
@@ -735,7 +735,7 @@
     },
     "wall_yuna_sub_2": {
         "name": "{name}",
-        "text": "*Yuna lachte leise. Die Mundwinkel können nicht lange halten und fallen herunter.*"
+        "text": "*Yuna lächelt schwach. Ihre Fingerspitze drückt noch einmal auf die Ecke des Briefs.*"
     },
     "wall_yuna_reject_1": {
         "name": "Yuna",

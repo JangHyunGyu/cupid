@@ -13,7 +13,7 @@
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*Cette fois, je dois même choisir cela.*",
+        "text": "*Ma main s’arrête entre l’enveloppe et le pansement.*",
         "choices": [
             "Aller vers la personne qui m'a remis le manuscrit",
             "Aller vers la personne qui a laissé sa réponse sur le dos de ma main"
@@ -33,7 +33,7 @@
     },
     "perfect_seo_1_b": {
         "name": "{name}",
-        "text": "*Elle pleure encore. Pas dans les toilettes — cette fois, devant moi.*"
+        "text": "*Les yeux de Seoyeon sont humides. Cette fois, elle ne les cache pas du revers de la main.*"
     },
     "perfect_seo_2": {
         "name": "{name}",
@@ -101,11 +101,11 @@
     },
     "true_seo_3": {
         "name": "Seoyeon",
-        "text": "Devant toi, je sens que je n'ai pas besoin d'être parfaite."
+        "text": "Devant toi, je crois que je n'ai pas besoin du visage répété."
     },
     "true_seo_4": {
         "name": "{name}",
-        "text": "Tu n'as jamais eu besoin de l'être."
+        "text": "Tu n’avais pas besoin de le faire."
     },
     "true_seo_5": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
     },
     "true_seo_6": {
         "name": "{name}",
-        "text": "*Seoyeon sourit. Les coins de ses lèvres montent tout seuls.*"
+        "text": "*Seoyeon sourit. Ses cheveux se dispersent dans le vent.*"
     },
     "true_seo_6b": {
         "name": "Seoyeon",
@@ -237,7 +237,7 @@
     },
     "true_yuna_5_b": {
         "name": "{name}",
-        "text": "*Yuna fait une pause. Seuls les coins de la bouche se soulèvent doucement.*"
+        "text": "*Yuna s’arrête un instant. Sa main se desserre sur le dos du livre.*"
     },
     "true_yuna_6": {
         "name": "Yuna",
@@ -377,7 +377,7 @@
     },
     "true_dain_8b": {
         "name": "{name}",
-        "text": "*Le point d'exclamation est revenu. — Mais cette fois, c'est un vrai.*"
+        "text": "*La fin de la voix de Dain remonte légèrement. Cette fois, ça ne sonne pas forcé.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
@@ -462,15 +462,15 @@
     },
     "good_1b": {
         "name": "{name}",
-        "text": "*Malgré tout, cette fois, on regarde dans la même direction.*"
+        "text": "*Malgré tout, nous marchons dans la même direction.*"
     },
     "good_1c": {
         "name": "{name}",
-        "text": "*Ce n'est peut-être pas une fin parfaitement heureuse, mais à partir d'ici, on peut recommencer.*"
+        "text": "*Un pétale de cerisier se colle au bout de ma chaussure, puis tombe au pas suivant.*"
     },
     "good_1_seo": {
         "name": "Seoyeon",
-        "text": "Ce ne sera pas parfait. Ni pour toi, ni pour moi. ...Mais cette fois, ne lâche pas au milieu."
+        "text": "On est maladroits tous les deux. ...Mais cette fois, ne lâche pas au milieu."
     },
     "good_1_seo_b": {
         "name": "{name}",
@@ -494,7 +494,7 @@
     },
     "good_4_seo": {
         "name": "{name}",
-        "text": "*J'ai souri, et Seoyeon a fait semblant de ne pas voir avant de relever très légèrement le coin des lèvres.*"
+        "text": "*Je souris, et Seoyeon fait semblant de ne pas voir avant de ralentir un peu.*"
     },
     "good_5_seo": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*J'ai glissé la clé dans ma poche. Demain sur le toit — cette fois, c'est à moi d'apporter le déjeuner.*"
+        "text": "*Je mets la clé dans ma poche. Demain, ce sera à moi d’apporter le déjeuner sur le toit.*"
     },
     "good_5_cg_seo": {
         "name": "Système",
@@ -538,7 +538,7 @@
     },
     "good_4_yuna": {
         "name": "{name}",
-        "text": "*Pas à la place d'une absence, mais comme la personne qui est là, maintenant. C'est comme ça que je veux rester. Yuna aussi. Moi aussi.*"
+        "text": "*Yuna glisse le marque-page dans une nouvelle page, du côté sans pli.*"
     },
     "good_5_yuna": {
         "name": "{name}",
@@ -570,7 +570,7 @@
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*Je l'attrape. Ce n'est qu'à ce moment-là que Dain sourit. Avec elle, la réconciliation a toujours cette forme.*"
+        "text": "*Je l’attrape. Dain sourit seulement à ce moment-là. Le ballon rebondit encore dans ma paume.*"
     },
     "good_4_dain": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Il y a une chose qui rend cet échec différent des précédents. Au moins cette fois, je l'ai dit, et c'est pour ça que je peux vraiment y mettre un terme.*"
+        "text": "*Les mots sont allés jusqu’au bout. Peut-être pour ça que mes pieds tremblent moins en repartant.*"
     },
     "confess_fail_5": {
         "name": "Système",
@@ -734,7 +734,7 @@
     },
     "harem_1_b": {
         "name": "{name}",
-        "text": "*Yuna baissa la tête. Quand j'ai levé les yeux au bout d'un moment, les coins de ma bouche se sont relevés. Le bout des doigts appuie fortement sur le dos du livre.*"
+        "text": "*Yuna baisse la tête. Quand elle relève enfin les yeux, ses doigts appuient fort sur le dos du livre.*"
     },
     "harem_2": {
         "name": "Yuna",
@@ -827,7 +827,7 @@
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Je lui ai tendu le bouquet.* Ce n'est pas de l'intérêt professionnel. Pas de mon côté."
+        "text": "*Je lui tends le bouquet.* De mon côté, ce sont juste mes sentiments."
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Professeure principale",
@@ -887,11 +887,11 @@
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*C'était inconscient. — Au moment du diplôme, le titre s'est effacé.*"
+        "text": "*La façon dont je l'ai appelée devient étrange avec un temps de retard.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "{name}",
-        "text": "*Elle sort une enveloppe. Cette fois, pas marron — blanche.*"
+        "text": "*La prof principale sort une enveloppe blanche. Elle est plus fine que l’ancienne enveloppe brune.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Professeure principale",
@@ -931,7 +931,7 @@
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*Du jus au café. — D'élève à adulte. Ce n'est pas franchir la ligne — c'est la ligne qui a disparu.*"
+        "text": "*Le mot café reste longtemps sur le dessous de tasse.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
@@ -939,7 +939,7 @@
     },
     "hidden_true_homeroom_7_b": {
         "name": "{name}",
-        "text": "*Elle sourit. Pas un sourire sec — le sourire de quelqu'un qui a achevé un manuscrit de sept ans.*"
+        "text": "*La prof principale sourit. La lumière de la fenêtre tombe sur l’enveloppe du manuscrit.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Professeure principale",
@@ -1016,11 +1016,11 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Matin. Un pansement collé sur la table de la cuisine. Le menu du jour écrit dessus. — Sa version du post-it.*"
+        "text": "*Matin. Un pansement est collé à la table. Le menu du jour y est écrit en petites lettres.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Elle est retournée à l'hôpital universitaire. Cette fois, les patients l'appellent par son nom. — Lee Juwon.*"
+        "text": "*Elle a repris à l'hôpital universitaire. Les patients l'appellent par son nom. — Infirmière Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -1104,7 +1104,7 @@
     },
     "hidden_true_nurse_7_d": {
         "name": "{name}",
-        "text": "*C'était quelqu'un qui avait besoin d'un prétexte. — Son rôle à l'école lui servait à la fois d'excuse et de mur. Aujourd'hui, ce mur a disparu.*"
+        "text": "*L'infirmière appuie une fois l'ongle sur le bord du pansement, puis retire sa main.*"
     },
     "hidden_true_nurse_8": {
         "name": "Infirmière",
@@ -1120,7 +1120,7 @@
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*La date du diplôme efface la ligne. — Dans un café plutôt qu'à l'infirmerie, avec une personne plutôt qu'un rôle.*"
+        "text": "*Un instant, le rideau blanc de l'infirmerie se superpose à la fenêtre du café, puis disparaît.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
