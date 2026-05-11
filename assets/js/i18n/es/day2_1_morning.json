@@ -26,7 +26,7 @@
     },
     "morning2_dain_6": {
         "name": "Dain",
-        "text": "*La voz de Dain llena el aula antes incluso de la reunión de la mañana.*"
+        "text": "*Su voz llena el aula antes incluso de la reunión de la mañana.*"
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -54,7 +54,7 @@
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
-        "text": "*Justo antes de que Seoyeon doble el pasillo, afloja el paso. El portapapeles se le pega más al brazo.*"
+        "text": "*Justo antes de que ella doble el pasillo, afloja el paso. El portapapeles se le pega más al brazo.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*La mano de Seoyeon toca el hombro de {name}. No hay vacilación en el gesto con el que le quita el polvo.*"
+        "text": "*Su mano toca el hombro de {name}. No hay vacilación en el gesto con el que le quita el polvo.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -246,11 +246,11 @@
     },
     "morning2_greet_dain_2": {
         "name": "Dain",
-        "text": "*Dain me suelta una palmada en el hombro por detrás.*"
+        "text": "*Me suelta una palmada en el hombro por detrás.*"
     },
     "morning2_greet_dain_others": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pasa al lado hojeando la carpeta.*"
+        "text": "*Pasa al lado hojeando la carpeta.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",

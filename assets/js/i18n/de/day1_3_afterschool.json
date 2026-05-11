@@ -53,7 +53,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna spreizt die Ecke des Lesezeichens mit dem Daumen und hält es ins Licht. Keine Falte.*"
+        "text": "*Sie spreizt die Ecke des Lesezeichens mit dem Daumen und hält es ins Licht. Keine Falte.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -122,7 +122,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin senkt das Klemmbrett und sieht {name} ins Gesicht.*",
+        "text": "*Sie senkt das Klemmbrett und sieht {name} ins Gesicht.*",
         "choices": [
             "Ganz gut. Nette Schule.",
             "Ehrlich gesagt, ziemlich überwältigend."
@@ -206,7 +206,7 @@
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Im Gespräch mit der Klassenlehrerin auf dem Flur.*",
+        "text": "*Im Gespräch mit ihr auf dem Flur.*",
         "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Ende zwanzig, braunes welliges langes Haar und beige Strickjacke. Sie verpackt ihre Gefühle in Worte wie \"Arbeit\" und \"pädagogisches Interesse\". Ehemalige angehende Romanautorin."
     },
@@ -288,7 +288,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
+        "text": "*Im Gespräch mit ihr im Krankenzimmer.*",
         "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Die Schulkrankenschwester ist verspielt und schlagfertig, versteckt Aufrichtigkeit aber hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung, die an die Schule gewechselt ist. Sie lockert zuerst die Stimmung, damit sich Schüler entspannen können."
     },
@@ -306,7 +306,7 @@
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*Dains Stimme wurde etwas höher.*",
+        "text": "*Ihre Stimme wurde etwas höher.*",
         "choices": [
             "Ich hab auf dem Dach mit der Sprecherin gegessen. (Ehrlich)",
             "Ich bin einfach allein rumgelaufen. (Lüge)"
@@ -366,7 +366,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "Yuna",
-        "text": "*Yuna dreht sich wortlos weg.*"
+        "text": "*Sie dreht sich wortlos weg.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -394,7 +394,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin klappt das Klassenbuch zu. An der Schwelle ruft sie {name} noch einmal.*"
+        "text": "*Sie klappt das Klassenbuch zu. An der Schwelle ruft sie {name} noch einmal.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",

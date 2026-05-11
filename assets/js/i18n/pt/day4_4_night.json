@@ -69,7 +69,7 @@
     },
     "wall_seo_9": {
         "name": "Seoyeon",
-        "text": "*Seoyeon ri. A risada termina rapidamente.*"
+        "text": "*Ri. A risada termina rapidamente.*"
     },
     "wall_seo_9_b": {
         "name": "Seoyeon",
@@ -93,7 +93,7 @@
     },
     "wall_seo_11_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon fecha a boca. Como se engolisse o resto.*"
+        "text": "*Fecha a boca. Como se engolisse o resto.*"
     },
     "wall_seo_12": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
     },
     "wall_seo_14_c": {
         "name": "Seoyeon",
-        "text": "*Seoyeon para de falar. As mãos se fecham sobre os joelhos. Antes que a umidade na borda dos óculos caia, ela abaixa a cabeça.*"
+        "text": "*Para de falar. As mãos se fecham sobre os joelhos. Antes que a umidade na borda dos óculos caia, ela abaixa a cabeça.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
@@ -121,7 +121,7 @@
     },
     "wall_seo_hug_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon está chorando. A maquiagem nas costas da minha mão está borrando.*",
+        "text": "*Está chorando. A maquiagem nas costas da minha mão está borrando.*",
         "choices": [
             "Abraço ela.",
             "Estendo o mindinho."
@@ -141,7 +141,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*A respiração de Seoyeon bate curta no meu ombro.*"
+        "text": "*A respiração de ela bate curta no meu ombro.*"
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "wall_seo_pinky_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon olha pro meu mindinho.*"
+        "text": "*Olha pro meu mindinho.*"
     },
     "wall_seo_pinky_4": {
         "name": "Seoyeon",
@@ -169,7 +169,7 @@
     },
     "wall_seo_line_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon enxuga as lágrimas, me olhando com olhos trêmulos.*",
+        "text": "*Enxuga as lágrimas, me olhando com olhos trêmulos.*",
         "choices": [
             "Eu tamb?m gosto desse rosto. N?o do ensaiado.",
             "Hoje voc? n?o precisa fazer papel nenhum.",
@@ -190,7 +190,7 @@
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon enxuga as lágrimas.*"
+        "text": "*Enxuga as lágrimas.*"
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
@@ -206,7 +206,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sorri. Sob a maquiagem borrada, ficam marcas úmidas.*"
+        "text": "*Sorri. Sob a maquiagem borrada, ficam marcas úmidas.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
@@ -219,7 +219,7 @@
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon estende o mindinho primeiro. E não para aí. Segura minha mão. Encosta os lábios na minha testa.*"
+        "text": "*Estende o mindinho primeiro. E não para aí. Segura minha mão. Encosta os lábios na minha testa.*"
     },
     "wall_seo_skin70_3": {
         "name": "Seoyeon",
@@ -255,11 +255,11 @@
     },
     "wall_dain_pre_high_2": {
         "name": "Dain",
-        "text": "*Dain está mais quieto que o normal. O final da voz toca o chão.*"
+        "text": "*Está mais quieto que o normal. O final da voz toca o chão.*"
     },
     "wall_dain_pre_low_1": {
         "name": "Dain",
-        "text": "*Dain sorri. A mão aperta forte a joelheira.*"
+        "text": "*Sorri. A mão aperta forte a joelheira.*"
     },
     "wall_dain_pre_low_2": {
         "name": "Dain",
@@ -295,7 +295,7 @@
     },
     "wall_dain_7_b": {
         "name": "Dain",
-        "text": "*Dain me passa a bola de vôlei.*"
+        "text": "*Estende a bola de vôlei.*"
     },
     "wall_dain_8": {
         "name": "Dain",
@@ -339,7 +339,7 @@
     },
     "wall_dain_14_b": {
         "name": "Dain",
-        "text": "*Dain n?o olha para a bola de v?lei.*"
+        "text": "*N?o olha para a bola de v?lei.*"
     },
     "wall_dain_15": {
         "name": "Dain",
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*Dain n?o sorri. Essa ? a parte mais estranha.*"
+        "text": "*N?o sorri. Essa? A parte mais estranha.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -379,7 +379,7 @@
     },
     "wall_dain_19_b": {
         "name": "Dain",
-        "text": "*Dain pressiona o peito.*"
+        "text": "*Pressiona o peito.*"
     },
     "wall_dain_20": {
         "name": "Dain",
@@ -403,7 +403,7 @@
     },
     "wall_dain_choice": {
         "name": "Dain",
-        "text": "*Dain abraça a bola de vôlei, cabeça baixa. Os ombros estão tremendo.*",
+        "text": "*Abraça a bola de vôlei, cabeça baixa. Os ombros estão tremendo.*",
         "choices": [
             "...Não vou falar nada. Só vou ficar aqui do lado.",
             "Pode chorar. Não precisa fingir animação. Não comigo.",
@@ -416,7 +416,7 @@
     },
     "wall_dain_newdream_2_b": {
         "name": "Dain",
-        "text": "*Dain fala primeiro.*"
+        "text": "*Fala primeiro.*"
     },
     "wall_dain_newdream_3": {
         "name": "Dain",
@@ -428,7 +428,7 @@
     },
     "wall_dain_newdream_5": {
         "name": "Dain",
-        "text": "*Dain olha pras mãos sobre os joelhos. Abre e fecha os punhos.*"
+        "text": "*Olha pras mãos sobre os joelhos. Abre e fecha os punhos.*"
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
@@ -444,11 +444,11 @@
     },
     "wall_dain_cry_1": {
         "name": "Dain",
-        "text": "*Dain desabou na quadra. Começou a chorar abraçada à bola de vôlei.*"
+        "text": "*Desabou na quadra. Começou a chorar abraçada à bola de vôlei.*"
     },
     "wall_dain_cry_2": {
         "name": "Dain",
-        "text": "*Dain abaixa a cabeça. Gotas caem uma a uma no chão vazio da quadra. A bola fica parada fora da linha.*"
+        "text": "*Abaixa a cabeça. Gotas caem uma a uma no chão vazio da quadra. A bola fica parada fora da linha.*"
     },
     "wall_dain_cry_3": {
         "name": "Dain",
@@ -464,7 +464,7 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "*Dain desliga o telefone. ‘Sorria de novo hoje!!’ desaparece em uma tela preta. Apenas as luzes do ginásio piscaram em branco até o choro diminuir.*"
+        "text": "*Desliga o telefone. ‘Sorria de novo hoje!!’ desaparece em uma tela preta. Apenas as luzes do ginásio piscaram em branco até o choro diminuir.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
@@ -472,7 +472,7 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Dain cerrou os dentes e saltou — a cortada mais perfeita. A bola crava na quadra.*"
+        "text": "*Cerrou os dentes e saltou — A cortada mais perfeita. A bola crava na quadra.*"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
@@ -492,7 +492,7 @@
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
-        "text": "*Dain olha ao redor da quadra. O ginásio escuro e vazio.*"
+        "text": "*Olha ao redor da quadra. O ginásio escuro e vazio.*"
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
@@ -504,7 +504,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Dain deixa a bola de v?lei no ch?o e anda na frente. Ela n?o olha para tr?s.*"
+        "text": "*Deixa a bola de v?lei no ch?o e anda na frente. Ela n?o olha para tr?s.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -520,12 +520,12 @@
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "*Os passos de Dain falham por um instante. Quando ela volta a andar, parecem um pouco mais leves.*"
+        "text": "*Seus passos falham por um instante. Quando ela volta a andar, parecem um pouco mais leves.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
         "name": "Dain",
-        "text": "*Dain chora e se joga no meu abraço.*"
+        "text": "*Chora e se joga no meu abraço.*"
     },
     "wall_dain_skin70_2": {
         "name": "Dain",
@@ -573,11 +573,11 @@
     },
     "wall_yuna_pre_high_2": {
         "name": "Yuna",
-        "text": "*Yuna fala diretamente em vez de usar um bilhete. Não há papel nenhum em suas mãos.*"
+        "text": "*Fala diretamente em vez de usar um bilhete. Não há papel nenhum em suas mãos.*"
     },
     "wall_yuna_pre_low_1": {
         "name": "Yuna",
-        "text": "*Yuna me estende um bilhete.*"
+        "text": "*Me estende um bilhete.*"
     },
     "wall_yuna_pre_low_2": {
         "name": "{name}",
@@ -593,7 +593,7 @@
     },
     "wall_yuna_4": {
         "name": "Yuna",
-        "text": "*Yuna segue pro anexo da biblioteca. Passa pelo cantinho secreto de leitura — mais pra dentro. O arquivo no subsolo. Entre as estantes empoeiradas. Yuna tira um envelope antigo.*"
+        "text": "*Segue pro anexo da biblioteca. Passa pelo cantinho secreto de leitura — Mais pra dentro. O arquivo no subsolo. Entre as estantes empoeiradas. Tira um envelope antigo.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",
@@ -613,7 +613,7 @@
     },
     "wall_yuna_9_b": {
         "name": "Yuna",
-        "text": "*Yuna pousa a carta.*"
+        "text": "*Pousa a carta.*"
     },
     "wall_yuna_10": {
         "name": "Yuna",
@@ -625,7 +625,7 @@
     },
     "wall_yuna_12": {
         "name": "Yuna",
-        "text": "*Yuna diz tudo isso sem parar nenhuma vez.*"
+        "text": "*Diz tudo isso sem parar nenhuma vez.*"
     },
     "wall_yuna_13": {
         "name": "Yuna",
@@ -645,7 +645,7 @@
     },
     "wall_yuna_14_d": {
         "name": "Yuna",
-        "text": "*Yuna olha para {name}.*"
+        "text": "*Olha para {name}.*"
     },
     "wall_yuna_14_e": {
         "name": "Yuna",
@@ -673,11 +673,11 @@
     },
     "wall_yuna_16_b": {
         "name": "Yuna",
-        "text": "*Yuna está segurando a manga com força. Enquanto recupero o fôlego, a lombada do livro é pressionada na palma da minha mão.*"
+        "text": "*Está segurando a manga com força. Enquanto recupero o fôlego, a lombada do livro é pressionada na palma da minha mão.*"
     },
     "wall_yuna_choice": {
         "name": "Yuna",
-        "text": "*Yuna aperta o livro na m?o. Enquanto espera uma resposta, a ponta da carta amassa um pouco.*",
+        "text": "*Aperta o livro na m?o. Enquanto espera uma resposta, a ponta da carta amassa um pouco.*",
         "choices": [
             "Eu não sou esse veterano. Eu sou eu. E vou continuar do seu lado.",
             "Agora estou ouvindo o que voc? disse. Eu n?o vou fugir.",
@@ -694,7 +694,7 @@
     },
     "wall_yuna_moved_3": {
         "name": "Yuna",
-        "text": "*Yuna levanta a cabe?a. Desta vez, n?o desvia o olhar.*"
+        "text": "*Levanta a cabe?a. Desta vez, n?o desvia o olhar.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
@@ -702,11 +702,11 @@
     },
     "wall_yuna_moved_5": {
         "name": "Yuna",
-        "text": "*Yuna solta o ar devagar. A ponta da carta amassa um pouco sob seus dedos.*"
+        "text": "*Solta o ar devagar. A ponta da carta amassa um pouco sob seus dedos.*"
     },
     "wall_yuna_moved_5_b": {
         "name": "Yuna",
-        "text": "*Yuna solta o ar devagar. A ponta dos dedos que aperta a manga treme um pouco.*"
+        "text": "*Solta o ar devagar. A ponta dos dedos que aperta a manga treme um pouco.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {
@@ -735,7 +735,7 @@
     },
     "wall_yuna_sub_2": {
         "name": "Yuna",
-        "text": "*Yuna sorri de leve. A ponta do dedo aperta mais uma vez a ponta da carta.*"
+        "text": "*Sorri de leve. A ponta do dedo aperta mais uma vez a ponta da carta.*"
     },
     "wall_yuna_reject_1": {
         "name": "Yuna",
@@ -743,7 +743,7 @@
     },
     "wall_yuna_reject_1_b": {
         "name": "Yuna",
-        "text": "*Yuna pega a carta de novo.*"
+        "text": "*Pega a carta de novo.*"
     },
     "wall_yuna_reject_2": {
         "name": "Yuna",
@@ -751,7 +751,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "Yuna",
-        "text": "*Yuna vira as costas. Está andando rápido. Um marcador escapa do bolso dela, mas ela não pega.*"
+        "text": "*Vira as costas. Está andando rápido. Um marcador escapa do bolso dela, mas ela não pega.*"
     },
     "wall_yuna_glimpse_1": {
         "name": "{name}",
@@ -763,7 +763,7 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon guarda o celular no bolso e vira as costas. Suas costas estão retas. Apenas a sombra sob o poste vacila brevemente.*"
+        "text": "*Guarda o celular no bolso e vira as costas. Suas costas estão retas. Apenas a sombra sob o poste vacila brevemente.*"
     },
     "wall_yuna_glimpse_4": {
         "name": "{name}",

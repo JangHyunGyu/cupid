@@ -33,7 +33,7 @@
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*A voz da Dain subiu uma oitava.*",
+        "text": "*A voz dela subiu uma oitava.*",
         "choices": [
             "Comi com a presidente lá no terraço. (Verdade)",
             "Só fiquei zanzando sozinho. (Mentira)"
@@ -127,7 +127,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna abre o canto do marcador com o polegar e o segura contra a luz. Sem dobras.*"
+        "text": "*Abre o canto do marcador com o polegar e o segura contra a luz. Sem dobras.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -135,7 +135,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "Yuna",
-        "text": "*Yuna se vira sem dizer nada.*"
+        "text": "*Se vira sem dizer nada.*"
     },
     "after_miss_yuna_4": {
         "name": "{name}",

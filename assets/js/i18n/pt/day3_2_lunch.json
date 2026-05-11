@@ -29,7 +29,7 @@
     },
     "lunch3_meal_6": {
         "name": "Yuna",
-        "text": "*Yuna estica os pauzinhos em silêncio e pega a salsicha de melhor aparência.*"
+        "text": "*Estica os pauzinhos em silêncio e pega a salsicha de melhor aparência.*"
     },
     "lunch3_meal_7": {
         "name": "{name}",
@@ -53,15 +53,15 @@
     },
     "lunch3_meal_10_c": {
         "name": "Seoyeon",
-        "text": "*Os pauzinhos de Seoyeon param por um momento. O rosto do presidente do conselho estudantil logo retorna, mas o rolinho de ovo permanece.*"
+        "text": "*Os pauzinhos de ela param por um momento. O rosto do presidente do conselho estudantil logo retorna, mas o rolinho de ovo permanece.*"
     },
     "lunch3_meal_10_d": {
         "name": "Dain",
-        "text": "*Dain diz “Todos juntos?!” e ri. Normalmente eu teria arrastado uma cadeira, mas hoje não saí de onde estava sentado.*"
+        "text": "*Diz “Todos juntos?!” e ri. Normalmente eu teria arrastado uma cadeira, mas hoje não saí de onde estava sentado.*"
     },
     "lunch3_meal_10_e": {
         "name": "Yuna",
-        "text": "*Yuna só acena. Escreve num bilhete, dobra e enfia no bolso. Não entrega. Apenas um ponto roxo-claro sangrou na borda do papel.*"
+        "text": "*Só acena. Escreve num bilhete, dobra e enfia no bolso. Não entrega. Apenas um ponto roxo-Claro sangrou na borda do papel.*"
     },
     "lunch3_meal_11": {
         "name": "{name}",
@@ -112,7 +112,7 @@
     },
     "lunch3_seo_chase_dain_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pousa a marmita na mesa. Sem expressão.*"
+        "text": "*Pousa a marmita na mesa. Sem expressão.*"
     },
     "lunch3_seo_chase_dain_2": {
         "name": "Dain",
@@ -275,7 +275,7 @@
     },
     "lunch3_expose_honest_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon fecha a tampa da marmita.*"
+        "text": "*Fecha a tampa da marmita.*"
     },
     "lunch3_expose_honest_4_b": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "lunch3_expose_honest_6": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se levanta.*"
+        "text": "*Se levanta.*"
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "lunch3_expose_excuse_2_b": {
         "name": "Dain",
-        "text": "*Dain se levanta.*"
+        "text": "*Se levanta.*"
     },
     "lunch3_expose_excuse_3": {
         "name": "Dain",
@@ -311,7 +311,7 @@
     },
     "lunch3_expose_excuse_4": {
         "name": "Dain",
-        "text": "*Dain vira o rosto. Nem uma mordida deu no pão doce.*"
+        "text": "*Vira o rosto. Nem uma mordida deu no pão doce.*"
     },
     "lunch3_expose_run_1": {
         "name": "{name}",

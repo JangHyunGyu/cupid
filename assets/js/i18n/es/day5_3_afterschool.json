@@ -29,7 +29,7 @@
     },
     "after5_farewell_seo_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se aparta el pelo de la cara.*"
+        "text": "*Se aparta el pelo de la cara.*"
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
@@ -45,7 +45,7 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se da vuelta y saluda con la mano. No mira atr?s. Solo la cinta de su mu?eca se balancea al final del pasillo.*"
+        "text": "*Se da vuelta y saluda con la mano. No mira atr?s. Solo la cinta de su mu?eca se balancea al final del pasillo.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
-        "text": "*Yuna se da la vuelta. No se detiene.*"
+        "text": "*Se da la vuelta. No se detiene.*"
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*Dain lanza la pelota de voleibol una vez m?s y la atrapa. Las puntas de sus dedos llegan un poco tarde.*"
+        "text": "*Lanza la pelota de voleibol una vez m?s y la atrapa. Las puntas de sus dedos llegan un poco tarde.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -162,7 +162,7 @@
     },
     "after5_last_chance_2_d": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se gira. El atardecer a su espalda.*"
+        "text": "*Se gira. El atardecer a su espalda.*"
     },
     "after5_last_chance_2_e": {
         "name": "Seoyeon",
@@ -186,7 +186,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "*Los dedos que Seoyeon extiende se detienen frente a {name}. Es una mano que espera una respuesta.*"
+        "text": "*Los dedos que ella extiende se detienen frente a {name}. Es una mano que espera una respuesta.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -194,7 +194,7 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se gira. Los pies medio vueltos, lista para marcharse en cualquier momento.* ...¿Qué?"
+        "text": "*Se gira. Los pies medio vueltos, lista para marcharse en cualquier momento.* ...¿Qué?"
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
@@ -203,7 +203,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "Dain",
-        "text": "*Dain venía corriendo y frena en seco.*"
+        "text": "*Venía corriendo y frena en seco.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
@@ -211,7 +211,7 @@
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "*Dain se queda inm?vil. La pelota en su mano baja lentamente.*"
+        "text": "*Se queda inm?vil. La pelota en su mano baja lentamente.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
@@ -219,7 +219,7 @@
     },
     "after5_last_chance_2_p": {
         "name": "Dain",
-        "text": "*Los labios de Dain tiemblan. Respiro profundamente antes de responder.*"
+        "text": "*Sus labios tiemblan. Respiro profundamente antes de responder.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
@@ -227,7 +227,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "Dain",
-        "text": "*Dain se frota la esquina del ojo. Su sonrisa permanece igual, pero la humedad se adhiere al dorso de su mano.*"
+        "text": "*Se frota la esquina del ojo. Su sonrisa permanece igual, pero la humedad se adhiere al dorso de su mano.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
@@ -239,7 +239,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "Dain",
-        "text": "*Dain se detiene, está bien. Pero esta vez no sonríe de inmediato.* ...¿Qué?"
+        "text": "*Se detiene, está bien. Pero esta vez no sonríe de inmediato.* ...¿Qué?"
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna se detiene. Aprieta el libro contra el pecho. Tarda unos dos segundos en girarse.*"
+        "text": "*Se detiene. Aprieta el libro contra el pecho. Tarda unos dos segundos en girarse.*"
     },
     "after5_last_chance_yuna_3": {
         "name": "Yuna",
@@ -268,7 +268,7 @@
     },
     "after5_last_chance_yuna_7": {
         "name": "Yuna",
-        "text": "*Yuna espera, sosteniendo el libro. La ventana de respuesta aún no tiene la primera letra.*"
+        "text": "*Espera, sosteniendo el libro. La ventana de respuesta aún no tiene la primera letra.*"
     },
     "after5_last_chance_yuna_low_1": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "Yuna",
-        "text": "*Yuna se gira despacio. Aprieta con fuerza el libro contra el pecho.* ...¿Qué?"
+        "text": "*Se gira despacio. Aprieta con fuerza el libro contra el pecho.* ...¿Qué?"
     },
     "after5_last_chance_choice": {
         "name": "{name}",
@@ -323,7 +323,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "*Yuna baja el libro. No cambia la cara. — Pero le tiemblan las manos.*"
+        "text": "*Baja el libro. No cambia la cara. — Pero le tiemblan las manos.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",

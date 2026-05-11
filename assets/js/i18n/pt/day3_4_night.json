@@ -25,7 +25,7 @@
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*Yuna mandou a foto de um bilhete. Uma linha escrita no caderno.*"
+        "text": "*Mandou a foto de um bilhete. Uma linha escrita no caderno.*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
@@ -121,7 +121,7 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon usa a palavra 'favor'. O cursor fica parado depois dessa palavra por um longo tempo.*"
+        "text": "*Usa a palavra 'favor'. O cursor fica parado depois dessa palavra por um longo tempo.*"
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
@@ -145,7 +145,7 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*Yuna mandou três linhas. Alguém que normalmente não escreve nem uma.*"
+        "text": "*Mandou três linhas. Alguém que normalmente não escreve nem uma.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "night3_nightmare_2_b": {
         "name": "Seoyeon",
-        "text": "*Ouço a voz da Seoyeon.*"
+        "text": "*Ouço a voz dela.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
@@ -161,7 +161,7 @@
     },
     "night3_nightmare_3_b": {
         "name": "Yuna",
-        "text": "*A voz da Yuna.*"
+        "text": "*A voz dela.*"
     },
     "night3_nightmare_4": {
         "name": "Yuna",
@@ -169,7 +169,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "Dain",
-        "text": "*A voz da Dain.*"
+        "text": "*A voz dela.*"
     },
     "night3_nightmare_5": {
         "name": "Dain",

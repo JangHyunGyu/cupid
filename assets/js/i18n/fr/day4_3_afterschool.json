@@ -17,7 +17,7 @@
     },
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon est appuyée contre la rambarde. Le vent soulève ses cheveux. — Elle les repousse du petit doigt. Cette habitude.*"
+        "text": "*Elle est appuyée contre la rambarde. Le vent soulève ses cheveux. — Elle les repousse du petit doigt. Cette habitude.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se retourne. Le vent fait voler ses cheveux.*"
+        "text": "*Elle se retourne. Le vent fait voler ses cheveux.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
@@ -65,7 +65,7 @@
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
-        "text": "*Seoyeon ne dit rien. Mes lèvres tremblent. Il n’y a pas de porte-bloc ni de brassard de président de conseil étudiant.*"
+        "text": "*Elle ne dit rien. Mes lèvres tremblent. Il n’y a pas de porte-bloc ni de brassard de président de conseil étudiant.*"
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -81,11 +81,11 @@
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*La main de Seoyeon bouge.*"
+        "text": "*Sa main bouge.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "*Seoyeon tend son petit doigt. Le même petit doigt que j'ai vu le premier jour. — À l'époque je pensais que c'était juste une habitude, mais c'est la façon de Seoyeon de faire une promesse.*"
+        "text": "*Elle tend son petit doigt. Le même geste qu'au premier jour, mais cette fois elle offre la promesse sans hésiter.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -97,7 +97,7 @@
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sourit. Un sourire répété. — Elle se retourne et marche. Au troisième pas, elle s'arrête.*"
+        "text": "*Elle sourit. Un sourire répété. — Elle se retourne et marche. Au troisième pas, elle s'arrête.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
@@ -125,7 +125,7 @@
     },
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "*Yuna s'assoit sur le canapé et regarde {name}. Son regard semble l'avoir attendu.*"
+        "text": "*Elle s'assoit sur le canapé et regarde {name}. Son regard semble l'avoir attendu.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
-        "text": "*Yuna n'arrive pas à regarder vers {name} et serre fortement sa manche.*"
+        "text": "*Elle n'arrive pas à regarder vers {name} et serre fortement sa manche.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
@@ -201,11 +201,11 @@
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*Yuna hoche la tête. Elle glisse le marque-page entre les pages, puis l'enfonce plus profondément.*"
+        "text": "*Elle hoche la tête. Elle glisse le marque-page entre les pages, puis l'enfonce plus profondément.*"
     },
     "confess_yuna_no_3": {
         "name": "Yuna",
-        "text": "*Yuna prend un livre. Elle regarde la couverture, mais elle ne lit pas.*"
+        "text": "*Elle prend un livre. Elle regarde la couverture, mais elle ne lit pas.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
@@ -233,7 +233,7 @@
     },
     "confess_dain_4": {
         "name": "Dain",
-        "text": "*Dain tient un ballon. Comme si de rien n'était. — Mais ses doigts sont blancs. Elle le serre fort.*"
+        "text": "*Elle tient un ballon. Comme si de rien n'était. — Mais ses doigts sont blancs. Elle le serre fort.*"
     },
     "confess_dain_5": {
         "name": "{name}",
@@ -241,7 +241,7 @@
     },
     "confess_dain_choice": {
         "name": "Dain",
-        "text": "*Le ballon de Dain rebondit une fois. La main qui l'aurait normalement attrapée s'arrête en l'air un temps trop tard.*",
+        "text": "*Son ballon rebondit une fois. La main qui l'aurait normalement attrapée s'arrête en l'air un temps trop tard.*",
         "choices": [
             "Dain. Pose le ballon.",
             "...On en fait une autre ?"
@@ -281,7 +281,7 @@
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "*Dain s'immobilise. Ses yeux s'humidifient lentement sur son visage, dépourvu de rire. Elle couvre son visage de ses deux mains.*"
+        "text": "*Elle s'immobilise. Ses yeux s'humidifient lentement sur son visage, dépourvu de rire. Elle couvre son visage de ses deux mains.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Dain serre de nouveau le ballon contre elle. Le dos de ses mains se tend.*"
+        "text": "*Elle serre de nouveau le ballon contre elle. Le dos de ses mains se tend.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     },
     "confess_dain_no_3": {
         "name": "Dain",
-        "text": "*Dain fait rebondir un ballon de volley. Une fois. Deux fois. — À la troisième, elle s'arrête.*"
+        "text": "*Elle fait rebondir un ballon de volley. Une fois. Deux fois. — À la troisième, elle s'arrête.*"
     },
     "confess_dain_no_4": {
         "name": "Dain",

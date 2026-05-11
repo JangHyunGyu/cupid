@@ -38,7 +38,7 @@
     },
     "morning3_seo_gate_7": {
         "name": "Seoyeon",
-        "text": "*Seoyeon walks ahead. Confidently. She doesn't rush, even though she's late.*"
+        "text": "*She walks ahead. Confidently. She doesn't rush, even though she's late.*"
     },
     "morning3_yuna_gate_1": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "morning3_yuna_gate_7": {
         "name": "Yuna",
-        "text": "*Yuna pulls a small bread roll from her bag. We share it as we slowly walk through the gate.*"
+        "text": "*She pulls a small bread roll from her bag. We share it as we slowly walk through the gate.*"
     },
     "morning3_dain_gate_1": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "morning3_dain_gate_3": {
         "name": "Dain",
-        "text": "*Dain grabs my hand without warning and starts running.*"
+        "text": "*She grabs my hand without warning and starts running.*"
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "morning3_react_seo_2": {
         "name": "Yuna",
-        "text": "*Yuna turns her gaze from the window and briefly looks toward {name}. Then she turns back to the window.*"
+        "text": "*She turns her gaze from the window and briefly looks toward {name}. Then she turns back to the window.*"
     },
     "morning3_react_yuna_1": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "morning3_react_dain_2": {
         "name": "Yuna",
-        "text": "*Yuna draws a short line on the corner of the page without lifting her head.*"
+        "text": "*She draws a short line on the corner of the page without lifting her head.*"
     },
     "morning3_date_intro": {
         "name": "{name}",
@@ -126,7 +126,7 @@
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon asks casually as she passes me in the hallway.*",
+        "text": "*She asks casually as she passes me in the hallway.*",
         "choices": [
             "Sure. Where?",
             "I might be kind of busy."
@@ -146,11 +146,11 @@
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "*Dain's fingers are tapping the edge of the desk. Faster than usual. The chair legs scrape the floor in short bursts.*"
+        "text": "*Her fingers are tapping the edge of the desk. Faster than usual. The chair legs scrape the floor in short bursts.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "*Dain comes over during the next break and asks.*",
+        "text": "*She comes over during the next break and asks.*",
         "choices": [
             "Sure, let's do it",
             "This weekend's kind of bad..."
@@ -166,7 +166,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
-        "text": "*Dain walks away with a bright smile. Just before the bell rings, she taps the inside of her pocket once with her finger.*"
+        "text": "*She walks away with a bright smile. Just before the bell rings, she taps the inside of her pocket once with her finger.*"
     },
     "morning3_date_dain_decline_inner_2": {
         "name": "{name}",
@@ -358,7 +358,7 @@
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon is waiting at the gate. Unusually, she seems like she came early.*"
+        "text": "*She is waiting at the gate. Unusually, she seems like she came early.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -370,11 +370,11 @@
     },
     "morning3_seo_gate_warm_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon starts walking alongside me without a word. — Was the distance from the gate to the classroom always this short?*"
+        "text": "*She starts walking alongside me without a word. — Was the distance from the gate to the classroom always this short?*"
     },
     "morning3_seo_gate_cold_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pauses as she passes by.*"
+        "text": "*She pauses as she passes by.*"
     },
     "morning3_seo_gate_cold_2": {
         "name": "Seoyeon",
@@ -402,7 +402,7 @@
     },
     "morning3_yuna_gate_cold_1": {
         "name": "Yuna",
-        "text": "*Yuna walks past first. Our eyes meet, but she turns away.*"
+        "text": "*She walks past first. Our eyes meet, but she turns away.*"
     },
     "morning3_yuna_gate_cold_2": {
         "name": "{name}",
@@ -410,7 +410,7 @@
     },
     "morning3_dain_gate_warm_1": {
         "name": "Dain",
-        "text": "*Dain runs up and links her arm with mine.*"
+        "text": "*She runs up and links her arm with mine.*"
     },
     "morning3_dain_gate_warm_2": {
         "name": "Dain",
@@ -422,7 +422,7 @@
     },
     "morning3_dain_gate_cold_1": {
         "name": "Dain",
-        "text": "*Dain runs past with her other friends.*"
+        "text": "*She runs past with her other friends.*"
     },
     "morning3_dain_gate_cold_2": {
         "name": "Dain",
@@ -442,7 +442,7 @@
     },
     "morning3_seo_gate_6_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon walks on. Confidently. She doesn't rush, even though she's late.*"
+        "text": "*She walks on. Confidently. She doesn't rush, even though she's late.*"
     },
     "morning3_yuna_gate_6_b": {
         "name": "{name}",
@@ -458,11 +458,11 @@
     },
     "morning3_react_yuna_1_b": {
         "name": "Dain",
-        "text": "*Dain, bluntly.*"
+        "text": "*Walks back into the classroom without trying to hide it.*"
     },
     "morning3_react_yuna_2_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon, casually at the classroom door.*"
+        "text": "*Takes her place naturally in front of the classroom door.*"
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",

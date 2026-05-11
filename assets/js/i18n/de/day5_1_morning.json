@@ -89,7 +89,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Letztes Gespräch mit der Klassenlehrerin im leeren Klassenzimmer.*",
+        "text": "*Letztes Gespräch mit ihr im leeren Klassenzimmer.*",
         "context": "Tag 5. Letzter Tag. Die Lehrerin übergab ihr 7-Jahre-Manuskript. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist. Letztes Gespräch nach der Übergabe des Manuskripts."
     },
@@ -141,7 +141,7 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Letztes Gespräch mit der Schulkrankenschwester vor dem Krankenzimmer.*",
+        "text": "*Letztes Gespräch mit ihr vor dem Krankenzimmer.*",
         "context": "Tag 5. Letzter Tag. Die Krankenschwester schrieb eine Nachricht auf ein Pflaster. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Die Krankenschwester ist weniger verspielt. Wartet auf den Tag ohne Ausreden."
     },
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "Klassenlehrerin",
-        "text": "*Diesmal versteckt sich die Klassenlehrerin nicht hinter dem Anwesenheitsbuch.*"
+        "text": "*Diesmal versteckt sich sie nicht hinter dem Anwesenheitsbuch.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Klassenlehrerin",
@@ -331,7 +331,7 @@
     },
     "hidden_nurse_d5_3_h": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester dreht sich um, um reinzugehen — und bleibt stehen.*"
+        "text": "*Sie dreht sich um, um reinzugehen — und bleibt stehen.*"
     },
     "hidden_nurse_d5_3_i": {
         "name": "Schulkrankenschwester",
@@ -363,7 +363,7 @@
     },
     "hidden_nurse_d5_6_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester nimmt ein Pflaster heraus und klebt es auf {name}s Handrücken. Die Bewegung bleibt langsam; am Rand des Pflasters steht eine kleine Schrift.*"
+        "text": "*Sie nimmt ein Pflaster heraus und klebt es auf {name}s Handrücken. Die Bewegung bleibt langsam; am Rand des Pflasters steht eine kleine Schrift.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin h?lt inne. Ihr Ausdruck kehrt schnell zur?ck, doch der Umschlag in ihrer Hand ist ein wenig zerknittert.*"
+        "text": "*Sie h?lt inne. Ihr Ausdruck kehrt schnell zur?ck, doch der Umschlag in ihrer Hand ist ein wenig zerknittert.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
@@ -459,7 +459,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin h?lt inne. Die Papierkante biegt sich in ihrer Hand ein wenig.*"
+        "text": "*Sie h?lt inne. Die Papierkante biegt sich in ihrer Hand ein wenig.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Klassenlehrerin",
@@ -503,7 +503,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin lächelt. Das Klemmbrett sinkt auf den Tisch.*"
+        "text": "*Sie lächelt. Das Klemmbrett sinkt auf den Tisch.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Klassenlehrerin",

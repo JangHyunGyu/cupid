@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon confere o nome de {name} mais uma vez e faz uma marca rápida na lista da prancheta. O olhar por trás dos óculos não baixa de imediato.*"
+        "text": "*Confere o nome de {name} mais uma vez e faz uma marca rápida na lista da prancheta. O olhar por trás dos óculos não baixa de imediato.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -58,7 +58,7 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Os passos de Seoyeon param. Apenas a cabeça se vira para {name}.*"
+        "text": "*Seus passos param. Apenas a cabeça se vira para {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
@@ -66,11 +66,11 @@
     },
     "choice_dismiss_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon realmente se vira. Sem sequer acenar, caminha para dentro da escola.*"
+        "text": "*Vira-se em silêncio. Sem sequer acenar, caminha para dentro da escola.*"
     },
     "choice_flirt_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon para e se vira. A cara não é de surpresa — é de quem tá achando graça.*"
+        "text": "*Para e se vira. A cara não é de surpresa — É de quem tá achando graça.*"
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "*Seoyeon caminha à frente. Olha para trás uma vez e, quando os passos de {name} se aproximam, não diminui o ritmo.*"
+        "text": "*Caminha à frente. Olha para trás uma vez e, quando os passos de {name} se aproximam, não diminui o ritmo.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon ia na frente pelo corredor. Os estudantes a cumprimentavam ao passar. Ela respondia com um leve aceno da prancheta, sem desacelerar nem uma vez.*"
+        "text": "*Ia na frente pelo corredor. Os estudantes a cumprimentavam ao passar. Ela respondia com um leve aceno da prancheta, sem desacelerar nem uma vez.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon tira uma chave do bolso e balança de leve.*"
+        "text": "*Tira uma chave do bolso e balança de leve.*"
     },
     "hallway_5": {
         "name": "Seoyeon",
@@ -158,7 +158,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se vira e acena de leve. Não olha para trás.*"
+        "text": "*Se vira e acena de leve. Não olha para trás.*"
     },
     "hallway_13_b": {
         "name": "{name}",

@@ -184,7 +184,7 @@
     },
     "lunch2_yuna_9": {
         "name": "Yuna",
-        "text": "*Yuna vira a página. O som do papel está mais leve que antes.*"
+        "text": "*Vira a página. O som do papel está mais leve que antes.*"
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
@@ -192,7 +192,7 @@
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "*Yuna vai na frente. No fundo do anexo. Um canto onde parece que ninguém vem. Uma salinha aparece. A luz do sol entra pela janela, tem um sofá velho e estantes de livros.*"
+        "text": "*Vai na frente. No fundo do anexo. Um canto onde parece que ninguém vem. Uma salinha aparece. A luz do sol entra pela janela, tem um sofá velho e estantes de livros.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -204,7 +204,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "*Yuna senta no sofá. Deixa o espaço do lado dela disfarçadamente vazio.*"
+        "text": "*Senta no sofá. Deixa o espaço do lado dela disfarçadamente vazio.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -232,7 +232,7 @@
     },
     "lunch2_yuna_c1_2": {
         "name": "Yuna",
-        "text": "*O dedo de Yuna pressiona firmemente o final do marcador.*"
+        "text": "*O dedo de ela pressiona firmemente o final do marcador.*"
     },
     "lunch2_yuna_c1_3": {
         "name": "Yuna",
@@ -240,7 +240,7 @@
     },
     "lunch2_yuna_c1_4": {
         "name": "Yuna",
-        "text": "*Yuna empurra o marcador fundo dentro do livro. A página dobra depois de 'Eu tinha.'*"
+        "text": "*Empurra o marcador fundo dentro do livro. A página dobra depois de 'Eu tinha.'*"
     },
     "lunch2_yuna_c1_5": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "lunch2_yuna_c1_9_b": {
         "name": "Yuna",
-        "text": "*O olhar da Yuna gela num segundo.*"
+        "text": "*O olhar dela gela num segundo.*"
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -272,7 +272,7 @@
     },
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
-        "text": "*A mão de Yuna para sobre o marcador. Apenas o som de virar páginas ecoa alto.*"
+        "text": "*Sua mão para sobre o marcador. Apenas o som de virar páginas ecoa alto.*"
     },
     "lunch2_yuna_c1_14": {
         "name": "{name}",
@@ -304,7 +304,7 @@
     },
     "lunch2_yuna_c2_9": {
         "name": "Yuna",
-        "text": "*Yuna volta os olhos para a estante. A luz do sol se alonga um pouco mais sobre a página aberta.*"
+        "text": "*Volta os olhos para a estante. A luz do sol se alonga um pouco mais sobre a página aberta.*"
     },
     "lunch2_yuna_end": {
         "name": "{name}",
@@ -384,7 +384,7 @@
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Seoyeon olha para o canto da boca de {name}, fingindo não se importar.*"
+        "text": "*Olha para o canto da boca de {name}, fingindo não se importar.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -392,7 +392,7 @@
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
-        "text": "*A mão da Seoyeon se aproxima.*",
+        "text": "*A mão dela se aproxima.*",
         "choices": [
             "Ficar parado",
             "Eu limpo eu mesmo"
@@ -400,7 +400,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "Seoyeon",
-        "text": "*O dedo da Seoyeon roça o canto da minha boca. Suave. Devagar. — Devagar além do necessário.*"
+        "text": "*O dedo dela roça o canto da minha boca. Suave. Devagar. — Devagar além do necessário.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -408,7 +408,7 @@
     },
     "lunch2_seo_c1_2_b": {
         "name": "Dain",
-        "text": "*Os olhos da Dain se arregalam enquanto olha de um pro outro.*"
+        "text": "*Os olhos dela se arregalam enquanto olha de um pro outro.*"
     },
     "lunch2_seo_c1_3": {
         "name": "Dain",
@@ -440,7 +440,7 @@
     },
     "lunch2_seo_c2_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon fecha a tampa da marmita com o mesmo rosto sorridente. O clique soa um pouco alto.*"
+        "text": "*Fecha a tampa da marmita com o mesmo rosto sorridente. O clique soa um pouco alto.*"
     },
     "lunch2_seo_end_c2": {
         "name": "{name}",
@@ -512,11 +512,11 @@
     },
     "lunch2_dain_13_b": {
         "name": "Dain",
-        "text": "*Dain dá uma grande mordida no pão soboro. Migalhas caem sobre a manga do uniforme.*"
+        "text": "*Dá uma grande mordida no pão soboro. Migalhas caem sobre a manga do uniforme.*"
     },
     "lunch2_dain_choice": {
         "name": "Dain",
-        "text": "*Dain encara {name} fixamente.*",
+        "text": "*Encara {name} fixamente.*",
         "choices": [
             "Conversei um pouco com ela ontem",
             "Só me mostrou a escola, mais ou menos isso",
@@ -525,11 +525,11 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Dain",
-        "text": "*A expressão de Dain endurece. Ela morde o soboro e vira a cabeça sem mastigar.*"
+        "text": "*A expressão de ela endurece. Ela morde o soboro e vira a cabeça sem mastigar.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Dain",
-        "text": "*Dain acena com a cabeça e morde o pão. Fingindo que tanto faz.*"
+        "text": "*Acena com a cabeça e morde o pão. Fingindo que tanto faz.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
@@ -537,7 +537,7 @@
     },
     "lunch2_dain_c3_2": {
         "name": "Dain",
-        "text": "*Dain dobra a embalagem do soboro por tempo demais. Fala menos do que há pouco.*"
+        "text": "*Dobra a embalagem do soboro por tempo demais. Fala menos do que há pouco.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",

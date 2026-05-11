@@ -101,7 +101,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Klassenlehrerin",
-        "text": "*Auch nachdem sie ausgesprochen hat, faltet die Klassenlehrerin weiter an der Ecke des Becherhalters.*"
+        "text": "*Auch nachdem sie ausgesprochen hat, faltet sie weiter an der Ecke des Becherhalters.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin stellt ihre Kaffeetasse ab. Ihr Körper neigt sich leicht zum Fenster.*",
+        "text": "*Sie stellt ihre Kaffeetasse ab. Ihr Körper neigt sich leicht zum Fenster.*",
         "choices": [
             "Der Roman — wer ist die Hauptfigur?",
             "Ihr erster Leser zu sein... das ist ganz schön viel"
@@ -253,7 +253,7 @@
     },
     "hidden_nurse_d4_morning_7": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester tut so, als würde sie Papiere sortieren — aber dieselbe Seite wird zum dritten Mal umgeblättert.*"
+        "text": "*Sie tut so, als würde sie Papiere sortieren — aber dieselbe Seite wird zum dritten Mal umgeblättert.*"
     },
     "hidden_nurse_d4_morning_8": {
         "name": "Schulkrankenschwester",
@@ -265,7 +265,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester berührt ihre Brille. Die Augen dahinter sind größer als erwartet. Augen, die sonst hinter ihrer Scherzhaftigkeit verborgen sind.*"
+        "text": "*Sie berührt ihre Brille. Die Augen dahinter sind größer als erwartet. Augen, die sonst hinter ihrer Scherzhaftigkeit verborgen sind.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Schulkrankenschwester",
@@ -297,7 +297,7 @@
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
+        "text": "*Im Gespräch mit ihr im Krankenzimmer.*",
         "context": "Tag 4. Der Abschiedsmoment, wenn sie fragt, ob du nach der Schule wiederkommst. Die Szene, in der beide ihre wahren Herzen zeigen. Ton: Tieferes, emotionaleres Gespräch. Die Wahrheit hinter der Scherzhaftigkeit. Die Bedeutung, beim Namen genannt zu werden.",
         "personality": "Die Schulkrankenschwester ist vorsichtig und ehrlich. Sie möchte dich beim Namen nennen, aber sie ist in einer vorsichtigen Position. Tränen kommen bei deinem Versprechen."
     },
@@ -403,7 +403,7 @@
     },
     "hidden_homeroom_d4_cafe_6_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin sieht {name} an. Ihre Augen wirken nicht mehr trocken und distanziert.* *Die Cafétür schließt sich langsam hinter ihnen.*"
+        "text": "*Sie sieht {name} an. Ihre Augen wirken nicht mehr trocken und distanziert.* *Die Cafétür schließt sich langsam hinter ihnen.*"
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
@@ -411,7 +411,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin lächelt kurz. Die Hand am Becherhalter hält inne.*"
+        "text": "*Sie lächelt kurz. Die Hand am Becherhalter hält inne.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Klassenlehrerin",
@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin dreht sich um. Ihre Schultern sinken leicht. In der Glastür des Cafés spiegelt sich ihr Rücken klein wider.*"
+        "text": "*Sie wendet sich ab. Ihre Schultern sinken leicht. In der Glastür des Cafés spiegelt sich ihre Rückansicht klein.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Schulkrankenschwester",
@@ -479,7 +479,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester hält inne. Legt die Papiere hin.*"
+        "text": "*Sie hält inne. Legt die Papiere hin.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Schulkrankenschwester",
@@ -519,7 +519,7 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester sieht kurz zu {name} hinüber.* ...Es ist nichts."
+        "text": "*Sie sieht kurz zu {name} hinüber.* ...Es ist nichts."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
@@ -535,7 +535,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester hält kurz inne. Legt ihre Stäbchen ab.*"
+        "text": "*Sie hält kurz inne. Legt ihre Stäbchen ab.*"
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",

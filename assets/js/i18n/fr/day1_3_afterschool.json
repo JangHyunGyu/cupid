@@ -53,7 +53,7 @@
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna déplie le coin du marque-page avec son pouce et l'examine à la lumière. Aucun pli.*"
+        "text": "*Elle déplie le coin du marque-page avec son pouce et l'examine à la lumière. Aucun pli.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
@@ -306,7 +306,7 @@
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*La voix de Dain a monté d'un ton.*",
+        "text": "*Sa voix a monté d'un ton.*",
         "choices": [
             "J'ai mangé sur le toit avec la présidente. (Honnête)",
             "J'ai juste traîné seul. (Mensonge)"
@@ -366,7 +366,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "Yuna",
-        "text": "*Yuna se détourne sans un mot.*"
+        "text": "*Elle se détourne sans un mot.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",

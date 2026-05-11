@@ -21,7 +21,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon prüft {name}s Namen noch einmal und setzt einen kurzen Haken auf der Liste am Klemmbrett. Ihr Blick hinter der Brille senkt sich nicht sofort.*"
+        "text": "*Sie prüft {name}s Namen noch einmal und setzt einen kurzen Haken auf der Liste am Klemmbrett. Ihr Blick hinter der Brille senkt sich nicht sofort.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -58,7 +58,7 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeons Schritte halten inne. Nur ihr Kopf dreht sich zu {name}.*"
+        "text": "*Ihre Schritte halten inne. Nur ihr Kopf dreht sich zu {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
@@ -66,11 +66,11 @@
     },
     "choice_dismiss_3": {
         "name": "Seoyeon",
-        "text": "*Seoyeon dreht sich wirklich um. Ohne ein Zeichen geht sie auf das Schulgelände hinein.*"
+        "text": "*Sie dreht sich wortlos um. Ohne ein Zeichen geht sie auf das Schulgelände.*"
     },
     "choice_flirt_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon bleibt stehen und dreht sich um. Nicht überrascht — eher amüsiert.*"
+        "text": "*Sie bleibt stehen und dreht sich um. Nicht überrascht — eher amüsiert.*"
     },
     "choice_flirt_2": {
         "name": "Seoyeon",
@@ -94,7 +94,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "*Seoyeon geht voraus. Sie blickt einmal zurück, und als {name}s Schritte näherkommen, wird sie nicht langsamer.*"
+        "text": "*Sie geht voraus. Sie blickt einmal zurück, und als {name}s Schritte näherkommen, wird sie nicht langsamer.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -110,7 +110,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon ging voraus durch den Flur. Vorbeigehende Schüler grüßten sie zuerst. Seoyeon erwiderte jeden Gruß mit einem leichten Tippen ihres Klemmbretts, ohne ein einziges Mal langsamer zu werden.*"
+        "text": "*Sie ging voraus durch den Flur. Vorbeigehende Schüler grüßten sie zuerst. Sie erwiderte jeden Gruß mit einem leichten Tippen ihres Klemmbretts, ohne ein einziges Mal langsamer zu werden.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon zieht einen Schlüssel aus der Tasche und schüttelt ihn leicht.*"
+        "text": "*Sie zieht einen Schlüssel aus der Tasche und schüttelt ihn leicht.*"
     },
     "hallway_5": {
         "name": "Seoyeon",
@@ -146,7 +146,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Seoyeon dreht sich um und winkt kurz. Ohne sich noch einmal umzusehen.*"
+        "text": "*Sie dreht sich um und winkt kurz. Ohne sich noch einmal umzusehen.*"
     },
     "classroom_1": {
         "name": "{name}",
@@ -190,7 +190,7 @@
     },
     "classroom_seat_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin zeigt auf einen leeren Platz.*"
+        "text": "*Sie zeigt auf einen leeren Platz.*"
     },
     "classroom_seat_2": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "classroom_dain_5_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin seufzte leise. Sie tippte auf die Ecke des Klassenbuchs und suchte den nächsten Namen, ohne auch nur in Dains Richtung zu schauen.*"
+        "text": "*Sie seufzte leise. Sie tippte auf die Ecke des Klassenbuchs und suchte den nächsten Namen, ohne auch nur in Dains Richtung zu schauen.*"
     },
     "classroom_dain_5_c": {
         "name": "Klassenlehrerin",

@@ -439,7 +439,7 @@
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher turns away. Her shoulders sink slightly. Her back is reflected small in the cafe glass door.*"
+        "text": "*She turns away. Her shoulders sink slightly. Her reflection appears small in the cafe glass door.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
@@ -479,7 +479,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "School Nurse",
-        "text": "*The School Nurse pauses. Sets down the papers.*"
+        "text": "*The she pauses. Sets down the papers.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "School Nurse",
@@ -535,7 +535,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "School Nurse",
-        "text": "*The School Nurse pauses. Sets down her chopsticks.*"
+        "text": "*The she pauses. Sets down her chopsticks.*"
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",

@@ -13,7 +13,7 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "*Der Taschenriemen lockert sich in Seoyeons Hand.*"
+        "text": "*Der Taschenriemen lockert sich in ihre Hand.*"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon antwortet nicht und streicht sich das Haar hinters Ohr. Dieselbe Hand hebt sich fast sofort wieder.*"
+        "text": "*Sie antwortet nicht und streicht sich das Haar hinters Ohr. Dieselbe Hand hebt sich fast sofort wieder.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -53,11 +53,11 @@
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sieht den Brotkrumen zu, die am Wasser versinken. Vor dem Blumenladen wird ihr Schritt langsamer.*"
+        "text": "*Sie sieht den Brotkrumen zu, die am Wasser versinken. Vor dem Blumenladen wird ihr Schritt langsamer.*"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon drückt die Tür des Blumenladens auf. Ein Glöckchen klingelt. Seoyeon sucht sich einen kleinen Topf aus. Eine Sukkulente.*"
+        "text": "*Sie drückt die Tür des Blumenladens auf. Ein Glöckchen klingelt. Sie sucht sich einen kleinen Topf aus. Eine Sukkulente.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -69,7 +69,7 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "*Seoyeon h?lt mir den Topf hin. Sein kleines, erdiges Gewicht legt sich in meine Handfl?che.*"
+        "text": "*Sie h?lt mir den Topf hin. Sein kleines, erdiges Gewicht legt sich in meine Handfl?che.*"
     },
     "date_yuna_1": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*Yuna senkt den Kopf und starrt lange auf den Rand ihrer Tasse.*"
+        "text": "*Sie senkt den Kopf und starrt lange auf den Rand ihrer Tasse.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -101,7 +101,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*Yuna hebt den Blick nicht. Sie wartet.*"
+        "text": "*Sie hebt den Blick nicht. Sie wartet.*"
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
@@ -125,7 +125,7 @@
     },
     "date_yuna_earphone": {
         "name": "Yuna",
-        "text": "*Yuna reicht mir einen ihrer Ohrhörer.*"
+        "text": "*Sie reicht mir einen ihrer Ohrhörer.*"
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
@@ -153,7 +153,7 @@
     },
     "date_yuna_end": {
         "name": "Yuna",
-        "text": "*Yuna sieht {name} an. Die Seite, die sie umblätterte, bleibt unter ihren Fingerspitzen stehen.*"
+        "text": "*Sie sieht {name} an. Die Seite, sie umblätterte, bleibt unter ihren Fingerspitzen stehen.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -181,7 +181,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "*Dain bleibt stehen. Sie zieht ihre Kappe so tief herunter, dass ihr halbes Gesicht verschwindet.*"
+        "text": "*Sie bleibt stehen. Sie zieht ihre Kappe so tief herunter, dass ihr halbes Gesicht verschwindet.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -193,7 +193,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Dain h?lt den Schirm ihrer Kappe fest und kann die Hand eine Weile nicht senken.*"
+        "text": "*Sie h?lt den Schirm ihrer Kappe fest und kann die Hand eine Weile nicht senken.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
