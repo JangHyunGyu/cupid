@@ -881,15 +881,15 @@
     },
     "confess_fail_cg_seo": {
         "name": "{name}",
-        "text": ""
+        "text": "*A tela continua parada. A resposta não muda.*"
     },
     "confess_fail_cg_yuna": {
         "name": "{name}",
-        "text": ""
+        "text": "*A tela continua parada. A resposta não muda.*"
     },
     "confess_fail_cg_dain": {
         "name": "{name}",
-        "text": ""
+        "text": "*A tela continua parada. A resposta não muda.*"
     },
     "confess_fail_1": {
         "name": "{name}",

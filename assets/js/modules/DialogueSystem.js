@@ -219,7 +219,7 @@ class DialogueSystem {
     }
 
     /**
-     * 텍스트 파싱 헬퍼 함수: **지문** 형태를 별도의 블록 박스로 변환
+     * 텍스트 파싱 헬퍼 함수: *지문*은 별도 블록, **강조**는 인라인 강조로 변환
      * @param {string} text
      * @returns {string}
      */
