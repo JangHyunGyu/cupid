@@ -70,7 +70,7 @@
     },
     "morning5_dain_1": {
         "name": "다인",
-        "text": "야! 오늘 체육 이벤트에 파트너로 너 써놨어!"
+        "text": "야, 오늘 체육 이벤트 파트너로 너 써놨어."
     },
     "morning5_dain_1_b": {
         "name": "{name}",
@@ -78,7 +78,7 @@
     },
     "morning5_dain_2": {
         "name": "다인",
-        "text": "도망가면 진짜 화난다?"
+        "text": "도망가면 화낸다?"
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
@@ -91,7 +91,7 @@
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*다인의 느낌표보다 어제 마지막에 멈췄던 숨이 먼저 떠오른다. 서연과 유나는 행사 준비 얘기만 짧게 건넨다.*"
+        "text": "*어제 체육관에서 다인이 마지막으로 숨을 고르던 얼굴이 먼저 떠오른다. 서연과 유나는 행사 준비 얘기만 짧게 건넨다.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "담임선생님",
-        "text": "*봉투를 살짝 들어 보이며* ...이거."
+        "text": "*봉투를 들어 보이며* ...이거."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -135,7 +135,7 @@
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*원고를 안고 있다. 봉투 모서리가 팔 안쪽을 누른다.*",
+        "text": "*원고를 안고 있다. 봉투가 팔 안쪽을 누른다.*",
         "choices": [
             "오래 붙잡으셨잖아요. 그만큼 괜찮을 거예요.",
             "잠깐만 읽어봐도 돼요? 말은 그다음에 할게요."
@@ -143,7 +143,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "{name}",
-        "text": "*담임이 잠깐 멈춘다. 곧 평소의 건조한 표정으로 돌아가지만, 봉투 모서리가 구겨져 있다.*"
+        "text": "*담임이 멈춘다. 표정은 금방 돌아왔지만, 봉투가 손 안에서 조금 구겨졌다.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "담임선생님",
@@ -191,7 +191,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "*담임이 멈춘다. 클립보드를 잡은 손에 힘이 들어간다. 종이 끝이 조금 휘어진다.*"
+        "text": "*담임이 멈춘다. 종이 끝이 손 안에서 조금 휘어진다.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "담임선생님",
@@ -271,7 +271,7 @@
     },
     "hidden_homeroom_d5_6_g": {
         "name": "{name}",
-        "text": "*담임이 잠깐 멈춘다. 이번엔 출석부로 얼굴을 가리지 않는다.*"
+        "text": "*담임은 이번엔 출석부로 얼굴을 가리지 않는다.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "담임선생님",
@@ -303,7 +303,7 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "담임선생님",
-        "text": "*피식* ...맞아. 한 줄이라도 써 줘."
+        "text": "*작게 웃으며* ...맞아. 한 줄이라도 써 줘."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "{name}",
@@ -351,7 +351,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "보건선생님",
-        "text": "어? {name}. 벌써 마지막 날이네. 행사 끝나면 진짜 끝이겠다."
+        "text": "어? {name}. 벌써 마지막 날이네. 행사 끝나면 정말 끝이겠다."
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
@@ -371,11 +371,11 @@
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*'아프면 와.' 보건선생님은 말하고 나서 종이컵 두 개를 든 손을 살짝 바꿔 쥔다.*"
+        "text": "*'아프면 와.' 보건선생님은 말하고 나서 종이컵 두 개를 든 손을 바꿔 쥔다.*"
     },
     "hidden_nurse_d5_2_b": {
         "name": "{name}",
-        "text": "*보건선생님이 나온다. 코앞이다. — 마주쳤다. 코앞에서.*"
+        "text": "*보건선생님이 문을 열고 나온다. 물러설 틈도 없이 마주쳤다.*"
     },
     "hidden_nurse_d5_2_c": {
         "name": "보건선생님",
@@ -387,7 +387,7 @@
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "*보건선생님이 잠깐 멈춘다. 웃음이 먼저 사라진다.*"
+        "text": "*보건선생님의 웃음이 먼저 멎는다.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "보건선생님",
@@ -459,7 +459,7 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "{name}",
-        "text": "*보건선생님이 웃다가 멈춘다. 안경 너머 시선이 잠깐 흔들린다.*"
+        "text": "*보건선생님이 웃다가 멈춘다. 안경을 고쳐 쓰는 손이 조금 늦다.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "보건선생님",
