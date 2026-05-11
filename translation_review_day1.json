@@ -2047,7 +2047,7 @@
     "classroom_yuna_note_1": {
       "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#classroom_yuna_note_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*쪽지가 하나 날아온다. 접힌 쪽지. — 뒤를 돌아보니 창가 자리의 은백...",
+      "_ko_text_preview": "*접힌 쪽지가 책상 위로 미끄러져 온다. 뒤를 돌아보자 창가 자리의 은백색 머리 여학생은 여전히 창밖을 보고 있다. 글씨는 반듯하다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#classroom_yuna_note_1",
@@ -2414,7 +2414,7 @@
     "classroom_5_c": {
       "_ko_ref": "assets/js/i18n/ko/day1_1_morning.json#classroom_5_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*아무도 안 들었을 말이다. 나만 들었다. — 세심한 건가, 그냥 습관인...",
+      "_ko_text_preview": "*담임의 혼잣말은 교실 소음에 묻힌다. 교실 한쪽에서 휘파람 소리.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_1_morning.json#classroom_5_ins3",
@@ -6772,7 +6772,7 @@
     "after_kakao_5": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_kakao_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*이 학교에서는 — 봤으면 말하자. 알면서 모른 척하지 말자. 이번에는.*",
+      "_ko_text_preview": "*답장창은 빈 채로 남아 있다. 엄지가 전송 버튼 옆에서 한 번 멈춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_kakao_5",
@@ -6808,7 +6808,7 @@
     "after_kakao_end": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_kakao_end",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰을 다시 꺼내서 단체방을 나갔다. 정리 끝. — 이제 이 학교 사...",
+      "_ko_text_preview": "*핸드폰을 다시 꺼내서 단체방을 나갔다. 대화방 목록 맨 위에 새 학교 메신저만 남는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_kakao_end",
@@ -8218,7 +8218,7 @@
     "after_hidden_homeroom_choice": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_hidden_homeroom_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*의무적인 질문인 것 같은데, 눈은 진심으로 살피고 있다.*",
+      "_ko_text_preview": "*담임은 클립보드를 내리고 내 얼굴을 본다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_hidden_homeroom_choice",
@@ -8512,7 +8512,7 @@
     "after_homeroom_honest_choice2": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_homeroom_honest_choice2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*교육적 관심. 이 사람은 자기 마음을 꼭 직함 뒤에 숨긴다.*",
+      "_ko_text_preview": "*출석부 모서리가 책상에 닿아 있다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_choice2",
@@ -9557,7 +9557,7 @@
     "after_miss_yuna_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_miss_yuna_3_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*그리고 다시 걸어간다.*",
+      "_ko_text_preview": "*유나가 말없이 돌아선다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_miss_yuna_3_ins",
@@ -9745,7 +9745,7 @@
     "after_homeroom_honest_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_homeroom_honest_6_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'교육적 관심'. — 자기 관심을 업무로 포장하는 사람이구나.*",
+      "_ko_text_preview": "*담임은 출석부 모서리만 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_6_ins",
@@ -9782,7 +9782,7 @@
     "after_homeroom_honest_choice2a_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_homeroom_honest_choice2a_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*솔직하게 인정했다. — 이 사람의 포장이 벗겨지는 순간이 의외로 빠르다...",
+      "_ko_text_preview": "*담임이 출석부 모서리를 한 번 누른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_choice2a_ins",
@@ -9818,7 +9818,7 @@
     "after_homeroom_honest_choice2b_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_homeroom_honest_choice2b_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*웃었다. — 이 사람이 농담에 웃는 건 처음 봤다.*",
+      "_ko_text_preview": "*담임이 피식 웃고 출석부를 덮는다. 문턱까지 갔다가 다시 나를 부른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_choice2b_ins",
@@ -9854,7 +9854,7 @@
     "after_homeroom_honest_9_b": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_homeroom_honest_9_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*아까 교실에서도 '이름은 한 번에 외우는 주의'라고 했었는데. — 두 ...",
+      "_ko_text_preview": "*복도 끝에서 출석부 닫히는 소리가 작게 들린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_homeroom_honest_9_ins",
@@ -10035,7 +10035,7 @@
     "after_nurse_enter_4_d": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_4_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*몇 마디 안 했는데도 이미 이 사람 템포다.*",
+      "_ko_text_preview": "*보건선생님이 일어나 다가온다. 손등에 체온계 끝이 닿자 손가락이 살짝 굳는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_4_ins3",
@@ -10287,7 +10287,7 @@
     "after_nurse_enter_8_d": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_8_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*가끔 까먹는다. — 농담인 것 같은데, 살짝 진심이 묻어 있다.*",
+      "_ko_text_preview": "*물을 마시며 보건실을 둘러본다. 한쪽 구석에 작은 화분이 하나 놓여 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_8_ins3",
@@ -10611,7 +10611,7 @@
     "after_nurse_enter_11_d": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_11_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'선생님이니까'. — 그 말이 왠지 쓸쓸하게 들렸다.*",
+      "_ko_text_preview": "*보건선생님이 물컵을 책상에 내려놓는다. 컵 바닥이 낮게 울린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_11_ins3",
@@ -10755,7 +10755,7 @@
     "after_nurse_enter_11_h": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_11_ins7",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "그렇지? 여기 좋아. — 조용하고, 소독약 냄새 빼면 완벽해.",
+      "_ko_text_preview": "아까 조용하다고 했지? — 그 말, 아직 기억나.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_11_ins7",
@@ -10791,7 +10791,7 @@
     "after_nurse_enter_11_i": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_11_ins8",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*아늑하다는 말에 기분 좋은 듯 눈이 웃는다. — 이 공간이 이 사람한테...",
+      "_ko_text_preview": "*보건선생님이 커튼 끝을 손가락으로 한 번 접는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_11_ins8",
@@ -10827,7 +10827,7 @@
     "after_nurse_enter_11_j": {
       "_ko_ref": "assets/js/i18n/ko/day1_3_afterschool.json#after_nurse_enter_11_ins9",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*보건실을 나서는데 — 보건선생님이 뒤에서.*",
+      "_ko_text_preview": "*보건실 문을 열려는 순간, 뒤에서 보건선생님이 부른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_3_afterschool.json#after_nurse_enter_11_ins9",
@@ -12126,7 +12126,7 @@
     "night_hidden_homeroom_2": {
       "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_hidden_homeroom_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*공지사항에 개인 메시지를? — 입꼬리가 올라간다. 숨기려는데 안 된다....",
+      "_ko_text_preview": "*공지사항을 한 번 더 읽는다. 입꼬리가 올라가서, 화면을 엎어 둔다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_4_night.json#night_hidden_homeroom_2",
@@ -12198,7 +12198,7 @@
     "night_hidden_nurse_2": {
       "_ko_ref": "assets/js/i18n/ko/day1_4_night.json#night_hidden_nurse_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*의료적 관심에 하트를 붙이는 보건선생님이라니. 건강 기록에 이모티콘 쓰...",
+      "_ko_text_preview": "*문장 끝의 하트가 화면 한가운데 남아 있다. 화면을 끄기 전까지 한 번 더 보게 된다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day1_4_night.json#night_hidden_nurse_2",

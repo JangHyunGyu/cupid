@@ -125,7 +125,7 @@
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Un message personnel dans une annonce de classe ? — Les coins de ma bouche se relèvent. J'essaie de le cacher mais je n'y arrive pas.*"
+        "text": "*Je relis l'annonce encore une fois. Le coin de ma bouche se relève, alors je retourne le téléphone.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Il y a un cœur après 'intérêt médical.' Jusqu'à ce que j'éteigne l'écran, je continue de regarder ce cœur encore une fois.*"
+        "text": "*Le cœur à la fin de la phrase reste au milieu de l'écran. Je le regarde encore une fois avant d'éteindre.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",

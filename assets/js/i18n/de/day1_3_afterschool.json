@@ -13,11 +13,11 @@
     },
     "after_kakao_5": {
         "name": "{name}",
-        "text": "*An dieser Schule — wenn ich was sehe, sag ich's. Nicht mehr wegschauen, obwohl ich's weiß. Diesmal nicht.*"
+        "text": "*Das Antwortfeld bleibt leer. Mein Daumen hält neben dem Senden-Button kurz inne.*"
     },
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Ich hole das Handy nochmal raus und verlasse den Gruppenchat. Abgehakt. — Jetzt bin ich hier.*"
+        "text": "*Ich hole das Handy wieder heraus und verlasse den Gruppenchat. Ganz oben in der Chatliste bleibt nur der Messenger der neuen Schule.*"
     },
     "after_miss_dain_1": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "{name}",
-        "text": "*Es klingt wie eine Pflichtfrage, aber die Lehrerin senkt das Klemmbrett und sieht mir ins Gesicht.*",
+        "text": "*Die Lehrerin senkt das Klemmbrett und sieht mir ins Gesicht.*",
         "choices": [
             "Ganz gut. Nette Schule.",
             "Ehrlich gesagt, ziemlich überwältigend."
@@ -174,7 +174,7 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Pädagogisches Interesse.*",
+        "text": "*Die Ecke der Anwesenheitsliste liegt am Schreibtisch an.*",
         "choices": [
             "Wenn Sie sich Sorgen machen, können Sie das ruhig auch so sagen",
             "Ich freue mich auf den Saft, Frau Lehrerin"
@@ -207,7 +207,7 @@
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
         "text": "*Im Gespräch mit der Klassenlehrerin auf dem Flur.*",
-        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
+        "context": "Tag 1 nach der Schule. Die Klassenlehrerin hat den neuen Schüler angehalten, um nach ihm zu sehen. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Die Klassenlehrerin versteckt Wärme hinter trockenem Humor. Ende zwanzig, braunes welliges langes Haar und beige Strickjacke. Sie verpackt ihre Gefühle in Worte wie \"Arbeit\" und \"pädagogisches Interesse\". Ehemalige angehende Romanautorin."
     },
     "after_hidden_nurse_intro": {
@@ -259,7 +259,7 @@
         "text": "*Ich lege mich aufs Bett. Durch den Vorhang sehe ich den Rücken der Krankenschwester.*",
         "choices": [
             "Sie sehen müder aus als ich, ehrlich gesagt",
-            "Hier ist es gemütlicher als gedacht"
+            "Das Krankenzimmer ist ruhiger, als ich dachte."
         ]
     },
     "after_nurse_enter_choice_a": {
@@ -289,7 +289,7 @@
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",
         "text": "*Im Gespräch mit der Schulkrankenschwester im Krankenzimmer.*",
-        "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: Helles und leichtes Gespräch. Aufregung und Neugier des ersten Tages. Niemals schwere Themen ansprechen. Fokus auf Neckereien und spielerischen Austausch.",
+        "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er besuchte das Krankenzimmer. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Die Schulkrankenschwester ist verspielt und schlagfertig, versteckt Aufrichtigkeit aber hinter Witzen. Ehemalige Krankenhausschwester mit Burnout-Erfahrung, die an die Schule gewechselt ist. Sie lockert zuerst die Stimmung, damit sich Schüler entspannen können."
     },
     "after1_jealousy_seo_1": {
@@ -366,7 +366,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "{name}",
-        "text": "*Alles, was sie zeigt, ist ihr Rücken.*"
+        "text": "*Yuna dreht sich wortlos weg.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -386,19 +386,19 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "{name}",
-        "text": "*'Bildungsinteresse'. Selbst nachdem er das gesagt hat, schaut der Klassenlehrer nur auf die Ecke der Anwesenheitsliste.*"
+        "text": "*Die Lehrerin sieht nur auf die Ecke der Anwesenheitsliste.*"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "{name}",
-        "text": "*Sie hat es ehrlich zugegeben.*"
+        "text": "*Die Lehrerin drückt einmal auf die Ecke der Anwesenheitsliste.*"
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "{name}",
-        "text": "*Sie hat gelacht. — Das erste Mal, dass ich sie über einen Witz lachen sehe. Sie klappt das Klassenbuch zu und steht auf. Am Türrahmen angekommen, ruft sie mich noch einmal, als wäre ihr erst jetzt etwas eingefallen.*"
+        "text": "*Die Lehrerin lacht leise und klappt die Anwesenheitsliste zu. An der Schwelle ruft sie mich noch einmal.*"
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Der zweite aufgerufene Name folgt dir bis zum Ende des Flurs.*"
+        "text": "*Am Ende des Flurs ist leise zu hören, wie die Anwesenheitsliste zuklappt.*"
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
@@ -418,7 +418,7 @@
     },
     "after_nurse_enter_4_d": {
         "name": "{name}",
-        "text": "*Ich habe kaum ein paar Worte gesagt und sie hat bereits das Tempo vorgegeben. Die Krankenschwester steht auf und nähert sich. Als die Spitze des Thermometers meinen Handrücken berührt, versteifen sich meine Finger leicht.*"
+        "text": "*Die Krankenschwester steht auf und kommt näher. Als die Spitze des Thermometers meinen Handrücken berührt, versteifen sich meine Finger leicht.*"
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
@@ -446,7 +446,7 @@
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Ich sage es scherzhaft. Während ich Wasser trinke, schaue ich mich im Krankenzimmer um. In einer Ecke steht eine kleine Topfpflanze.*"
+        "text": "*Ich trinke Wasser und sehe mich im Krankenzimmer um. In einer Ecke steht eine kleine Topfpflanze.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -482,7 +482,7 @@
     },
     "after_nurse_enter_11_d": {
         "name": "{name}",
-        "text": "*Sie sagt es beiläufig, aber der letzte Teil bleibt unerwartet direkt hängen.*"
+        "text": "*Die Krankenschwester stellt den Wasserbecher auf den Tisch. Der Becherboden klingt dumpf.*"
     },
     "after_nurse_enter_11_e": {
         "name": "{name}",
@@ -498,15 +498,15 @@
     },
     "after_nurse_enter_11_h": {
         "name": "Schulkrankenschwester",
-        "text": "Du hast doch vorhin gesagt, dass es gemütlich war, oder? — Ich erinnere mich noch an diese Worte."
+        "text": "Du hast vorhin gesagt, es sei ruhig, oder? — Das weiß ich noch."
     },
     "after_nurse_enter_11_i": {
         "name": "{name}",
-        "text": "*Beim Wort 'gemütlich' lachen ihre Augen.*"
+        "text": "*Die Krankenschwester faltet den Rand des Vorhangs einmal mit dem Finger.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
-        "text": "*Ich gehe gerade aus dem Krankenzimmer, als — von hinten.*"
+        "text": "*Als ich gerade die Tür des Krankenzimmers öffnen will, ruft die Krankenschwester mich von hinten.*"
     },
     "after_nurse_enter_11_k": {
         "name": "Schulkrankenschwester",

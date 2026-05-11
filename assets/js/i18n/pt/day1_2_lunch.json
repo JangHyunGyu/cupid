@@ -191,7 +191,7 @@
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Sentado ao lado da Seoyeon no terraço. O vento está bom.*",
-        "context": "Primeiro dia, almoço, acabamos de comer a marmita da Seoyeon no terraço. Ainda nos conhecendo. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "context": "Primeiro dia, almoço, acabamos de comer a marmita da Seoyeon no terraço. Ainda nos conhecendo. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "Seoyeon é a presidente do grêmio, bela de um jeito frio. Serena, provocadora e direta. Quando se interessa, mostra com ações."
     },
     "lunch_dain_1": {
@@ -333,7 +333,7 @@
     "lunch_dain_freetalk": {
         "name": "Dain",
         "text": "*Sentado com a Dain no banco da cantina, comendo pão.*",
-        "context": "Primeiro dia, almoço, acabamos de apostar no pedra-papel-tesoura na cantina. Dain perdeu e comprou o pão. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "context": "Primeiro dia, almoço, acabamos de apostar no pedra-papel-tesoura na cantina. Dain perdeu e comprou o pão. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "Dain é uma atleta cheia de energia. Adora contato físico, usa muitas exclamações. Durona por fora, sensível por dentro."
     },
     "lunch_yuna_1": {
@@ -455,7 +455,7 @@
     "lunch_yuna_freetalk": {
         "name": "Yuna",
         "text": "*Lendo com a Yuna lado a lado na biblioteca. Silêncio, mas é confortável.*",
-        "context": "Primeiro dia, almoço, acabamos de passar um tempo juntos na biblioteca. O silêncio foi bom. Tom: conversa leve e descontraída. Empolgação e curiosidade de primeiro dia. Nunca tocar em assuntos pesados. Foco em brincadeiras e troca de farpas amigáveis.",
+        "context": "Primeiro dia, almoço, acabamos de passar um tempo juntos na biblioteca. O silêncio foi bom. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "Yuna é uma garota literária e misteriosa. Frases curtas e secas, mas quando se abre, as frases ficam mais longas. Se comunica por bilhetes."
     },
     "lunch_end": {

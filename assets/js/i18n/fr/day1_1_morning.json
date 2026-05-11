@@ -242,7 +242,7 @@
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Un mot plié a glissé sur mon bureau. En me retournant, la fille aux cheveux argentés près de la fenêtre regardait toujours dehors. L'écriture sur le mot était étonnamment soignée.*"
+        "text": "*Un mot plié glisse sur mon bureau. Quand je me retourne, la fille aux cheveux argentés près de la fenêtre regarde toujours dehors. L'écriture est nette.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "classroom_5_c": {
         "name": "{name}",
-        "text": "*Personne d'autre n'a entendu. Juste moi. D'un coin de la classe — un sifflement.*"
+        "text": "*Le murmure de la prof se perd dans le bruit de la classe. Un sifflement vient d'un coin de la salle.*"
     },
     "classroom_dain_5_b": {
         "name": "{name}",

@@ -242,7 +242,7 @@
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*A folded note slid across my desk. I turned around — the silver-haired girl by the window was still gazing outside. The handwriting on the note was surprisingly neat.*"
+        "text": "*A folded note slides onto my desk. When I look back, the silver-haired girl by the window is still looking outside. The handwriting is neat.*"
     },
     "classroom_yuna_note_3": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "classroom_5_c": {
         "name": "{name}",
-        "text": "*Nobody else heard that. Only me. From one corner of the classroom — a whistle.*"
+        "text": "*The teacher's mutter disappears under the classroom noise. A whistle sounds from one side of the room.*"
     },
     "classroom_dain_5_b": {
         "name": "{name}",
