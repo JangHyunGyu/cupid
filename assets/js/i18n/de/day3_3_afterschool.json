@@ -397,19 +397,19 @@
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sie im Flur gegenüberstehend. Ihr Ausdruck ist kompliziert.*",
+        "text": "*Sie hält das Klemmbrett an die Brust und weicht dem Blick nicht aus.* Wenn du etwas zu sagen hast, sag es jetzt.",
         "context": "Tag 3 nach der Schule, direkt nach Konfrontation/Versöhnung mit Seoyeon. Die Beziehung hat Risse durch Verdacht auf Doppelspiel. Ton: Höflich, aber Antworten werden kürzer; Spannung zeigt sich durch Klemmbrett-Griff und Fingerbewegungen.",
         "personality": "Seoyeon ist besitzergreifend und direkt wenn eifersüchtig. Verletzt aber versucht es nicht zu zeigen."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Neben sie gehend. Ihr Blick ist kühl.*",
+        "text": "*Sie faltet und entfaltet das Lesezeichen und geht einen halben Schritt zurück.* ...Ich möchte etwas überprüfen.",
         "context": "Tag 3 nach der Schule, direkt nach Gespräch mit Yuna. Yuna hält das Gespräch länger als gewöhnlich. Ton: Antwortet kurz, dann fummelt mit einem Zettel oder Lesezeichen herum, während sie prüfende Fragen stellt.",
         "personality": "Yuna ist ein mysteriöses literarisches Mädchen. Normalerweise ruhig, aber jetzt ist die Angewohnheit, Notizen zu falten und aufzufalten, auffällig. Eher Überprüfung als Eifersucht."
     },
     "after3_dain_freetalk": {
         "name": "Dain",
-        "text": "*Mit sie auf einer Bank auf dem Schulhof sitzend. Sie ist ruhiger als sonst.*",
+        "text": "*Sie zieht die Handgelenkbandage zurecht und zwingt sich zu einem Lächeln.* Heute rede ich zuerst.",
         "context": "Tag 3 nach der Schule, direkt nach dem Gespräch mit Dain. Dain versucht es mit einem Lachen abzutun, macht aber Pausen zwischen Worten. Ton: Witze bleiben, aber Spannung zeigt sich durch Handlungen wie das Berühren des Balls oder der Handgelenkbandage.",
         "personality": "Dain nutzt Fröhlichkeit als Verteidigung. Weniger Ausrufezeichen bedeuten Ehrlichkeit."
     },

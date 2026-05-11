@@ -169,19 +169,19 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Auf dem Dach mit ihr stehend. Die letzte Mittagspause.*",
+        "text": "*Sie legt eine Hand auf das Geländer des Dachs und sieht auf die Schule hinunter.* Ich hätte nicht gedacht, dass wir auch die letzte Mittagspause hier verbringen.",
         "context": "Letztes Mittagessen an Tag 5 mit Seoyeon. Das Ende naht. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Da es das letzte Mal ist, verschwindet Seoyeons Gelassenheit und wahre Gefühle kommen zum Vorschein."
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*In der Bibliothek mit ihr stehend. Die letzte Mittagspause.*",
+        "text": "*Sie streicht mit den Fingerspitzen über die Buchrücken und hebt dann den Kopf.* Weil es das letzte Mal ist, rede ich seltsam viel.",
         "context": "Letztes Mittagessen an Tag 5 mit Yuna. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Da es das letzte Mal ist, sind Yunas Mauern komplett gefallen."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*In der Turnhalle mit ihr stehend. Die letzte Mittagspause.*",
+        "text": "*Sie stoppt den Volleyball mit der Fußspitze und grinst.* Auch die letzte Mittagspause lasse ich nicht einfach so vorbeigehen.",
         "context": "Letztes Mittagessen an Tag 5 mit Dain. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Da es das letzte Mal ist, kann Dain ihre fröhliche Fassade nicht aufrechterhalten."
     },

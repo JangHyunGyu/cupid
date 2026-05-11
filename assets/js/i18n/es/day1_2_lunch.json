@@ -386,19 +386,19 @@
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sentados uno al lado del otro con ella en la azotea. La brisa es agradable.*",
+        "text": "*Ordena la tapa del bento y deja un poco de sitio a su lado.* Corre buen viento, ¿no?",
         "context": "Almuerzo del primer día, acaban de comer el bento de Seoyeon en la azotea. Aún conociéndose. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
         "personality": "Seoyeon es la presidenta del consejo estudiantil, elegante y directa. Muestra interés a través de acciones."
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sentados en una banca con ella en la tienda escolar, comiendo pan.*",
+        "text": "*Dobla el envoltorio del pan, se lo guarda en el bolsillo y se apoya en el respaldo del banco.* Entonces, estudiante nuevo. ¿Qué nota le das a la tienda?",
         "context": "Almuerzo del primer día, acaban de jugar piedra, papel o tijera con Dain. Ella perdió y compró pan. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
         "personality": "Dain es una atleta enérgica. Le encanta el contacto físico, usa muchas exclamaciones. Dura por fuera, suave por dentro."
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Leyendo libros junto a ella en la biblioteca. Es silencioso, pero cómodo.*",
+        "text": "*Pone el marcapáginas y cierra el libro. Su voz es baja.* ...El silencio no te molesta, ¿verdad?",
         "context": "Almuerzo del primer día, acaban de pasar tiempo con Yuna en la biblioteca. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
         "personality": "Yuna es una chica literaria y misteriosa. Frases cortas y secas, pero cuando se abre, sus frases se alargan."
     },

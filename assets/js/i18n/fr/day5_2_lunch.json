@@ -169,19 +169,19 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Debout sur le toit avec elle. La dernière pause déjeuner.*",
+        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on finirait aussi le dernier déjeuner ici.",
         "context": "Dernier déjeuner du jour 5 avec Seoyeon. La fin approche. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "C'est la dernière fois, le calme de Seoyeon disparaît et ses vrais sentiments émergent."
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Debout à la bibliothèque avec elle. La dernière pause déjeuner.*",
+        "text": "*Elle fait courir ses doigts sur les dos des livres, puis relève la tête.* Comme c'est la dernière fois, je parle plus que d'habitude.",
         "context": "Dernier déjeuner du jour 5 avec Yuna. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "C'est la dernière fois, les murs de Yuna sont complètement tombés."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Debout dans le gymnase avec elle. La dernière pause déjeuner.*",
+        "text": "*Elle arrête le ballon de volley du bout du pied et sourit.* Même si c'est le dernier déjeuner, impossible de le laisser passer comme ça.",
         "context": "Dernier déjeuner du jour 5 avec Dain. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "C'est la dernière fois, Dain ne peut pas maintenir sa façade joyeuse."
     },

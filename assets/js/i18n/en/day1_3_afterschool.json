@@ -288,7 +288,7 @@
     },
     "after_nurse_freetalk": {
         "name": "School Nurse",
-        "text": "*Chatting with the school nurse in the nurse's office.*",
+        "text": "*She puts away the thermometer and smiles from the back of her chair.* Feeling less dizzy now?",
         "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse was playful but attentive. Tone: light and cautious because it is still the first day. Do not bring up heavy backstory. Keep it to banter and short exchanges.",
         "personality": "The school nurse is playful and teasing, but hides sincerity behind jokes. A former hospital nurse who burned out and moved to the school. She's quick to loosen the atmosphere so students can relax first."
     },

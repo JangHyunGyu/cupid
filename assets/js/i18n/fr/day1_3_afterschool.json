@@ -288,7 +288,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Infirmière",
-        "text": "*En train de discuter avec l'infirmière dans l'infirmerie.*",
+        "text": "*Elle range le thermomètre et sourit, adossée à sa chaise.* Le vertige s'est un peu calmé ?",
         "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et a visité l'infirmerie. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "L'infirmière est joueuse et maligne, mais cache sa sincérité derrière l'humour. Ancienne infirmière hospitalière ayant fait un burnout avant d'arriver à l'école. Elle commence souvent par détendre l'atmosphère pour que les élèves respirent un peu."
     },

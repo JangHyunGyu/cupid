@@ -89,7 +89,7 @@
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Letztes Gespräch mit ihr im leeren Klassenzimmer.*",
+        "text": "*Sie drückt beide Hände auf den Umschlag mit dem Manuskript und lächelt.* Es ist das letzte Mal, also bin ich ein bisschen ehrlicher.",
         "context": "Tag 5. Letzter Tag. Die Lehrerin übergab ihr 7-Jahre-Manuskript. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Die Lehrerin ist ehrlicher als sonst, weil es das letzte Mal ist. Letztes Gespräch nach der Übergabe des Manuskripts."
     },
@@ -141,7 +141,7 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Letztes Gespräch mit ihr vor dem Krankenzimmer.*",
+        "text": "*Sie tippt einmal mit der Fingerspitze gegen das Schild des Krankenzimmers.* Für Ausreden bleibt kaum noch Zeit.",
         "context": "Tag 5. Letzter Tag. Die Krankenschwester schrieb eine Nachricht auf ein Pflaster. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Die Krankenschwester ist weniger verspielt. Wartet auf den Tag ohne Ausreden."
     },

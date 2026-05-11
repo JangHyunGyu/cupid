@@ -386,19 +386,19 @@
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Neben sie auf dem Dach sitzend. Die Brise fühlt sich gut an.*",
+        "text": "*Sie richtet den Deckel der Bentobox und lässt neben sich ein wenig Platz.* Der Wind ist angenehm, oder?",
         "context": "Mittagessen am ersten Tag, gerade Seoyeons Bento auf dem Dach gegessen. Noch beim Kennenlernen. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Seoyeon ist die coole Schülersprecherin. Gelassen, schlagfertig und direkt. Zeigt Interesse durch Taten."
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Mit sie auf einer Bank am Schulkiosk sitzend, Brot essend.*",
+        "text": "*Sie faltet die Brottüte, steckt sie in die Tasche und lehnt sich an die Bank.* Also, Neuer. Wie viele Punkte bekommt der Schulkiosk?",
         "context": "Mittagessen am ersten Tag, gerade Schere-Stein-Papier mit Dain gespielt. Sie hat verloren. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Dain ist ein energiegeladener Sporttyp. Liebt Körperkontakt, viele Ausrufezeichen. Außen hart, innen weich."
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Neben sie in der Bibliothek Bücher lesend. Es ist ruhig, aber angenehm.*",
+        "text": "*Sie legt ein Lesezeichen ein und schließt das Buch. Ihre Stimme ist leise.* ...Die Stille stört dich nicht, oder?",
         "context": "Mittagessen am ersten Tag, gerade Zeit mit Yuna in der Bibliothek verbracht. Ton: leicht und vorsichtig, weil es noch der erste Tag ist. Keine schweren Vorgeschichten ansprechen. Bei Neckereien und kurzen Wechseln bleiben.",
         "personality": "Yuna ist ein mysteriöses Literaturgirl. Kurze, trockene Sätze, aber wenn sie sich öffnet, werden ihre Sätze länger."
     },

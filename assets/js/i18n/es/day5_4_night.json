@@ -622,7 +622,7 @@
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": "*Dije que me gustabas. La respuesta tardó mucho, y fue breve.*"
+        "text": "*Dije que me gustaba. La respuesta tardó en llegar, y fue breve.*"
     },
     "confess_fail_4": {
         "name": "{name}",

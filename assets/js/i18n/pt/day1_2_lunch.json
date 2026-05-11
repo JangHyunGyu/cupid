@@ -190,7 +190,7 @@
     },
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sentado ao lado de ela no terraço. O vento está bom.*",
+        "text": "*Ela arruma a tampa da marmita e deixa um pouco de espaço ao lado.* O vento está bom, né?",
         "context": "Primeiro dia, almoço, acabamos de comer a marmita da Seoyeon no terraço. Ainda nos conhecendo. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "Seoyeon é a presidente do grêmio, bela de um jeito frio. Serena, provocadora e direta. Quando se interessa, mostra com ações."
     },
@@ -332,7 +332,7 @@
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sentado com a ela no banco da cantina, comendo pão.*",
+        "text": "*Ela dobra a embalagem do pão, enfia no bolso e se encosta no banco.* Então, transferido. Que nota você dá pra cantina?",
         "context": "Primeiro dia, almoço, acabamos de apostar no pedra-papel-tesoura na cantina. Dain perdeu e comprou o pão. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "Dain é uma atleta cheia de energia. Adora contato físico, usa muitas exclamações. Durona por fora, sensível por dentro."
     },
@@ -454,7 +454,7 @@
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Lendo com a ela lado a lado na biblioteca. Silêncio, mas é confortável.*",
+        "text": "*Ela marca a página e fecha o livro. A voz sai baixa.* ...O silêncio não te incomoda, né?",
         "context": "Primeiro dia, almoço, acabamos de passar um tempo juntos na biblioteca. O silêncio foi bom. Tom: leve e cauteloso porque ainda é o primeiro dia. Não puxar histórias pesadas do passado. Ficar em brincadeiras e trocas curtas.",
         "personality": "Yuna é uma garota literária e misteriosa. Frases curtas e secas, mas quando se abre, as frases ficam mais longas. Se comunica por bilhetes."
     },
