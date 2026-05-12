@@ -441,6 +441,58 @@ class GalleryFreeTalk {
         return (guards[this.lang] || guards.en) + "\n\n";
     }
 
+    /** 영어/일본어 원어민 리듬 및 캐릭터별 말투 보정 */
+    _getNativeStylePolishGuard(charId) {
+        const englishCharacterLines = {
+            seyoun: `- Seoyeon: precise, dry, and composed. Use "Honey" only when intimacy genuinely calls for it; otherwise use the name or a clean teasing line. Avoid melodramatic metaphors for her feelings.`,
+            yuna: `- Yuna: spare, quiet, and eerie without becoming fantasy-poetic. Do not force "light/shadow/fate" into every line. Silence and short phrasing are stronger than ornate prose.`,
+            dain: `- Dain: energetic, direct, sporty, and casual. Use "dummy" or "silly" sparingly as affection. Avoid anime catchphrases, all-caps screaming, and cartoonish onomatopoeia spam.`,
+            teacher: `- Former teacher: adult, dry, and quietly warm. Let dry wit and short slips of vulnerability carry the scene. Avoid preachy teacher monologues or overly flowery romance narration.`,
+            nurse: `- School nurse: playful, confident, and adult. Keep teasing natural and conversational; use medical framing as flavor, not a pun in every line.`
+        };
+
+        const japaneseCharacterLines = {
+            seyoun: `- ソヨン: 一人称は「私」。恋人同士でも基本は落ち着いたタメ口。呼び方は名前、「君」、親密な場面の「あなた」を使い分ける。「あなた」を毎回使うと硬くなるので多用しない。`,
+            yuna: `- ユナ: 一人称は「私」。短く静かなタメ口。呼び方は「君」または名前。神秘的でも古語・中二病・翻訳調に寄せすぎず、「光」「影」「運命」は一返答に一つまでを目安にする。`,
+            dain: `- ダイン: 一人称は「私」。元気な幼なじみのくだけたタメ口。呼び方は名前、名前+「！」、「バカ」を愛称としてたまに使う。「マジマジ」より「マジで」「え、ほんとに」「ちょっと」など自然な現代口語を使う。`,
+            teacher: `- 元先生: 一人称は「私」。落ち着いた大人の日本語。卒業後の恋人なので「生徒さん」は使わず、名前、「君」、親密な場面の「あなた」を使い分ける。敬語が崩れる時は短く自然に。`,
+            nurse: `- 保健先生: 一人称は「私」。余裕のある大人のタメ口寄り。呼び方は名前+「くん」、「君」、「うちの患者さん」などを軽く使う。「ふふ」は効かせ所だけにする。`
+        };
+
+        if (this.lang === 'ko') {
+            return `**[네이티브 문체 최종 보정 - 최우선]**
+- 출력 직전에 한국어 원어민 편집자처럼 한 번 다듬으세요. 대사는 실제 한국인이 연인에게 말할 법한 자연스러운 구어체로, 지문은 과한 번역투가 되지 않게 쓰세요.
+- 같은 감정 표현(숨이 멎음, 심장이 세게 뜀, 귀가 붉어짐 등)을 연속 턴에서 반복하지 말고, 행동/소품/거리감으로 감정을 바꿔 보여주세요.
+- 캐릭터 말투가 먼저입니다. 모든 캐릭터가 같은 연인 말투로 말하면 실패입니다.
+
+`;
+        }
+
+        if (this.lang === 'en') {
+            return `**[Native English Style Polish - Highest Priority]**
+- Before outputting JSON, do a native English rewrite pass. Dialogue should sound spoken, intimate, and current, not like translated VN prose or a romance essay.
+- Keep dialogue punchy. Most spoken lines should be one or two short sentences; avoid ornate speeches unless the user set up a major confession.
+- Narration can be sensual and visual, but keep it concrete. Avoid purple-prose defaults like "the air freezes", "heart hammering like a trapped bird", "electric silence", or reusing the same blush/breath metaphor every turn.
+- Character voice overrides generic romance style:
+${englishCharacterLines[charId] || '- Keep the current character distinct. If the line could be said by any character, rewrite it in this character voice.'}
+
+`;
+        }
+
+        if (this.lang === 'ja') {
+            return `**[日本語ネイティブ文体の最終補正 - 最優先]**
+- JSON出力前に、日本語ネイティブの恋愛ADV編集者として一度だけ推敲する。直訳調、硬すぎる説明口調、英語的な比喩の持ち込みを避ける。
+- セリフは現代日本語の自然な口語にする。一つのセリフに情報を詰め込みすぎず、10〜35字程度の短い呼吸を基本にする。
+- 地の文は情緒を出してよいが、毎回「心臓」「息」「頬」「静寂」だけに頼らない。手元、視線、間合い、服や小物など別のディテールで感情を見せる。
+- キャラ別の呼び方・一人称・距離感を必ず守る:
+${japaneseCharacterLines[charId] || '- 現在のキャラの一人称、呼び方、距離感を固定する。誰が話しても同じ恋愛ADV口調になるなら書き直す。'}
+
+`;
+        }
+
+        return '';
+    }
+
     /** 지연 헬퍼 */
     _delay(ms) {
         return new Promise(r => setTimeout(r, ms));
@@ -1434,6 +1486,15 @@ ${L.rule}
         // 다른 캐릭터들의 PERFECT 엔딩(연인 루트) 달성 여부 수집
         const otherRelationships = this._buildOtherRelationshipsInfo(charId);
         const languageQualityGuard = this._getLanguageQualityGuard();
+        const nativeStylePolishGuard = this._getNativeStylePolishGuard(charId);
+        const langName = {
+            en: 'English',
+            es: 'Spanish (Español)',
+            ja: 'Japanese (日本語)',
+            fr: 'French (Français)',
+            de: 'German (Deutsch)',
+            pt: 'Brazilian Portuguese (Português Brasileiro)'
+        }[this.lang] || 'English';
         const finalZetaStyleGuide = isEn
             ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nFormat replies like a Zeta chat bubble: evenly interleave short narration and short dialogue. Use 4-8 segments for most replies; each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not output one long narration block followed by one spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, door sounds, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
             : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 보통 4~8개 segments, 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·문소리·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
@@ -1448,7 +1509,7 @@ ${L.rule}
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-            return `${langPrefix}${languageQualityGuard}You are the character '${charName}' from the visual novel game 'Cupid'.
+            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}You are the character '${charName}' from the visual novel game 'Cupid'.
 
 PERSONALITY: ${personality}
 ${characterOutfitGuard}
@@ -1487,6 +1548,8 @@ ${finalPlaceholderGuard}
 
 **[Past-Fact Manipulation Guard]**: When the user fabricates fake past facts about the character with no basis in actual conversation history, the character may deny indefinitely when it would damage identity. Stay in character: "I never did that", "Stop messing with me".
 
+**FINAL LANGUAGE VERIFICATION (ABSOLUTE)**: Before outputting your JSON, verify that every segments[].text value is written entirely in ${langName}. The instructions and examples above may contain other languages for clarity, but your response must be in ${langName} only. Proper nouns may stay as-is.
+
 ===CACHE_BOUNDARY===
 CURRENT SITUATION:
 - Location: ${location}
@@ -1499,7 +1562,7 @@ The user's name is '${playerName}'. Use their name naturally.`;
         }
 
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `${languageQualityGuard}당신은 비주얼 노벨 게임 'Cupid'의 캐릭터 '${charName}'입니다.
+        return `${languageQualityGuard}${nativeStylePolishGuard}당신은 비주얼 노벨 게임 'Cupid'의 캐릭터 '${charName}'입니다.
 
 성격: ${personality}
 ${characterOutfitGuard}
