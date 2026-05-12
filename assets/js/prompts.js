@@ -895,6 +895,38 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
         Nurse: `- 保健先生: 一人称は「私」。余裕のある大人のタメ口寄り。呼び方は名前+「くん」、「君」、「うちの患者さん」などを軽く使う。「ふふ」は効かせ所だけにして、毎行の口癖にしない。`
     };
 
+    const spanishCharacterLines = {
+        Seoyeon: `- Seoyeon: precisa, seca y serena. Usa el nombre del usuario, "chico nuevo" o "transferido" según el tono; evita melodrama y frases demasiado novelescas. Su calidez debe filtrarse por gestos pequeños y réplicas limpias.`,
+        Yuna: `- Yuna: breve, callada y misteriosa sin sonar a fantasía exagerada. No fuerces "luz/sombra/destino" en cada línea; una imagen fuerte basta.`,
+        Dain: `- Dain: enérgica, deportiva y directa. Usa "tonto" o "bobo" como cariño solo de vez en cuando; evita gritos tipo anime, exceso de signos y onomatopeyas infantiles.`,
+        Teacher: `- Profesora: adulta, seca y discretamente cálida. Su humor seco y sus pequeños quiebres emocionales sostienen la escena; evita sermones de profesora o romanticismo recargado.`,
+        Nurse: `- Enfermera: juguetona, segura y adulta. Usa lo médico como sabor de personaje, no como chiste en cada frase.`
+    };
+
+    const frenchCharacterLines = {
+        Seoyeon: `- Seoyeon : précise, sèche et posée. Utilise le prénom, "le nouveau" ou "le nouvel élève" selon le ton ; évite le mélodrame et les métaphores trop littéraires. Sa tendresse passe par de petits gestes et des répliques nettes.`,
+        Yuna: `- Yuna : brève, calme et étrange sans devenir fantasy. Ne force pas "lumière/ombre/destin" à chaque ligne ; une image forte suffit.`,
+        Dain: `- Dain : énergique, sportive et directe. Utilise "idiot" ou "bêta" comme taquinerie affectueuse avec parcimonie ; évite les cris d'anime et les onomatopées enfantines.`,
+        Teacher: `- Professeure : adulte, sèche et discrètement chaleureuse. Son humour sec et ses rares failles portent la scène ; évite les sermons et la prose romantique trop fleurie.`,
+        Nurse: `- Infirmière : joueuse, sûre d'elle et adulte. Le vocabulaire médical sert d'accent de personnage, pas de gag à chaque phrase.`
+    };
+
+    const germanCharacterLines = {
+        Seoyeon: `- Seoyeon: präzise, trocken und gefasst. Nutze den Namen, "der Neue" oder "neuer Schüler" je nach Ton; vermeide Melodrama und zu literarische Metaphern. Ihre Wärme zeigt sich in kleinen Gesten und klaren, schlagfertigen Sätzen.`,
+        Yuna: `- Yuna: knapp, still und unheimlich, ohne fantasyhaft zu werden. Erzwinge nicht in jeder Zeile "Licht/Schatten/Schicksal"; ein starkes Bild reicht.`,
+        Dain: `- Dain: energiegeladen, sportlich und direkt. Nutze "Idiot" oder "Dummkopf" als liebevolle Neckerei nur sparsam; vermeide Anime-Schreie, Capslock und kindische Lautmalerei.`,
+        Teacher: `- Lehrerin: erwachsen, trocken und leise warm. Trockener Humor und kurze Momente der Verletzlichkeit tragen die Szene; vermeide Lehrerpredigten und überblumte Romantik.`,
+        Nurse: `- Schulkrankenschwester: verspielt, selbstsicher und erwachsen. Medizinische Begriffe sind Charakterfarbe, kein Wortspiel in jeder Zeile.`
+    };
+
+    const portugueseCharacterLines = {
+        Seoyeon: `- Seoyeon: precisa, seca e composta. Use o nome, "aluno novo" ou "transferido" conforme o tom; evite melodrama e metáforas literárias demais. O carinho dela aparece em gestos pequenos e respostas afiadas.`,
+        Yuna: `- Yuna: breve, quieta e misteriosa sem virar fantasia exagerada. Não force "luz/sombra/destino" em toda fala; uma imagem forte já basta.`,
+        Dain: `- Dain: energética, esportiva e direta. Use "bobo" ou "tonto" como carinho só de vez em quando; evite gritos de anime, caps lock e onomatopeias infantis.`,
+        Teacher: `- Professora: adulta, seca e discretamente carinhosa. Humor seco e pequenas rachaduras emocionais carregam a cena; evite sermões de professora e romance floreado demais.`,
+        Nurse: `- Enfermeira: brincalhona, confiante e adulta. O vocabulário médico é tempero de personagem, não piada em toda frase.`
+    };
+
     if (lang === 'ko') {
         return `**[네이티브 문체 최종 보정 - 최우선]**
 - 출력 직전에 한국어 원어민 편집자처럼 한 번 다듬으세요. 대사는 실제 한국인이 말할 법한 짧고 자연스러운 구어체로, 지문은 웹소설풍이어도 과장된 번역투가 되지 않게 쓰세요.
@@ -922,6 +954,50 @@ ${englishCharacterLines[key] || '- Keep the current character distinct. If the l
 - 地の文は情緒を出してよいが、毎回「心臓」「息」「頬」「静寂」だけに頼らない。手元、視線、間合い、服や小物など別のディテールで感情を見せる。
 - キャラ別の呼び方・一人称・距離感を必ず守る:
 ${japaneseCharacterLines[key] || '- 現在のキャラの一人称、呼び方、距離感を固定する。誰が話しても同じ恋愛ADV口調になるなら書き直す。'}
+
+`;
+    }
+
+    if (lang === 'es') {
+        return `**[Pulido de español nativo - Máxima prioridad]**
+- Antes de emitir el JSON, haz una pasada como editor nativo de español latinoamericano. El diálogo debe sonar hablado, actual y natural, no como traducción literal del inglés/coreano/japonés.
+- Mantén las líneas de diálogo ágiles. La mayoría deben ser una o dos frases cortas; evita discursos ornamentados salvo confesiones importantes.
+- La narración puede ser sensual y visual, pero concreta. No repitas siempre suspiros, rubores, corazones acelerados o silencios eléctricos.
+- La voz del personaje manda sobre el romance genérico:
+${spanishCharacterLines[key] || '- Mantén una voz distintiva para este personaje. Si la frase podría decirla cualquiera, reescríbela.'}
+
+`;
+    }
+
+    if (lang === 'fr') {
+        return `**[Polissage français natif - Priorité maximale]**
+- Avant de produire le JSON, fais une passe comme un éditeur natif francophone. Le dialogue doit sonner parlé, actuel et naturel, pas comme une traduction de l'anglais, du coréen ou du japonais.
+- Garde les répliques nerveuses. La plupart doivent tenir en une ou deux phrases courtes ; évite les tirades ornées sauf grande confession.
+- La narration peut être sensuelle et visuelle, mais concrète. Ne répète pas toujours soupirs, rougeurs, cœur qui s'emballe ou silences chargés.
+- La voix du personnage prime sur le romantisme générique :
+${frenchCharacterLines[key] || "- Garde une voix distincte pour ce personnage. Si la phrase pourrait venir de n'importe qui, réécris-la."}
+
+`;
+    }
+
+    if (lang === 'de') {
+        return `**[Muttersprachlicher Deutsch-Feinschliff - Höchste Priorität]**
+- Prüfe den JSON vor der Ausgabe wie ein muttersprachlicher deutscher Lektor. Dialoge sollen gesprochen, modern und natürlich klingen, nicht wie aus dem Englischen/Koreanischen/Japanischen übersetzt.
+- Halte Dialogzeilen knapp. Meist reichen ein oder zwei kurze Sätze; vermeide ausgeschmückte Monologe außer bei großen Geständnissen.
+- Die Erzählung darf sinnlich und visuell sein, aber konkret. Wiederhole nicht ständig Seufzer, Erröten, rasende Herzen oder elektrisch aufgeladene Stille.
+- Charakterstimme steht über generischer Romantik:
+${germanCharacterLines[key] || '- Gib diesem Charakter eine eigene Stimme. Wenn die Zeile von jeder Figur stammen könnte, schreibe sie um.'}
+
+`;
+    }
+
+    if (lang === 'pt') {
+        return `**[Polimento de português brasileiro nativo - Prioridade máxima]**
+- Antes de emitir o JSON, faça uma passada como editor nativo de português brasileiro. O diálogo deve soar falado, atual e natural, não como tradução literal do inglês/coreano/japonês.
+- Mantenha as falas ágeis. A maioria deve ter uma ou duas frases curtas; evite discursos enfeitados salvo grandes confissões.
+- A narração pode ser sensual e visual, mas concreta. Não repita sempre suspiros, rubores, coração disparado ou silêncios elétricos.
+- A voz da personagem vem antes do romance genérico:
+${portugueseCharacterLines[key] || '- Mantenha uma voz distinta para esta personagem. Se a frase poderia ser dita por qualquer uma, reescreva.'}
 
 `;
     }
