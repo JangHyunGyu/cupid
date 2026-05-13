@@ -128,6 +128,18 @@
         "name": "{name}",
         "text": "Hast du da oben etwa ein Geheimversteck?"
     },
+    "hallway_6_b": {
+        "name": "Seoyeon",
+        "text": "*Kurzes Zögern* ...Du bist aufmerksam."
+    },
+    "hallway_6_c": {
+        "name": "Seoyeon",
+        "text": "*Der Rand der Zwischenablage bewegt sich einen Schlag später erneut.*"
+    },
+    "hallway_7": {
+        "name": "Seoyeon",
+        "text": "Ach, Mittagessen. Du weißt bestimmt nicht, wo die Mensa ist, oder? Komm mit."
+    },
     "hallway_8": {
         "name": "{name}",
         "text": "*Plötzlich hab ich Mittagspläne. — Dabei hab ich nie Ja gesagt. Wir kommen vor dem Klassenzimmer an.*"
@@ -148,13 +160,33 @@
         "name": "Seoyeon",
         "text": "*Sie dreht sich um und winkt kurz. Ohne sich noch einmal umzusehen.*"
     },
+    "hallway_13_b": {
+        "name": "{name}",
+        "text": "*Der Rücken gerade. Nur ihre Finger bewegten sich und tippten in gleichmäßigem Rhythmus auf die Kante des Klemmbretts.*"
+    },
     "classroom_1": {
         "name": "{name}",
         "text": "*Ich öffne die Klassentür. Blicke prasseln auf mich ein. Ich hab damit gerechnet, aber dreißig Augenpaare wiegen doch schwerer als gedacht.*"
     },
+    "classroom_2_b": {
+        "name": "{name}",
+        "text": "*Die Klassenlehrerin steht am Pult. Ende zwanzig. Ihre Strickjacke ist von Anfang an offen. Ihr Ausdruck ist gleichgültig, aber — ihre Augen mustern jeden einzelnen Schüler.*"
+    },
     "classroom_3": {
         "name": "Klassenlehrerin",
         "text": "So, ab heute haben wir einen Neuen in der Klasse. Magst du dich kurz vorstellen?"
+    },
+    "classroom_3_b": {
+        "name": "{name}",
+        "text": "Ich bin {name}. Freut mich. *Kurz und sauber. Die Lehrerin nickt.*"
+    },
+    "classroom_5_b": {
+        "name": "Klassenlehrerin",
+        "text": "...Gut. {name}. Merk ich mir. *Leise, fast wie ein Selbstgespräch* Ich mache es mir zur Regel, Namen beim ersten Mal zu merken."
+    },
+    "classroom_5_c": {
+        "name": "{name}",
+        "text": "*Das Murmeln der Lehrerin geht im Klassenzimmerlärm unter. Aus einer Ecke des Raums ertönt ein Pfiff.*"
     },
     "classroom_dain_1": {
         "name": "Dain",
@@ -175,6 +207,18 @@
     "classroom_dain_5": {
         "name": "{name}",
         "text": "*Eindeutig der Typ ohne Lautstärkeregler.*"
+    },
+    "classroom_dain_5_b": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie seufzte leise. Sie tippte auf die Ecke des Klassenbuchs und suchte den nächsten Namen, ohne auch nur in Dains Richtung zu schauen.*"
+    },
+    "classroom_dain_5_c": {
+        "name": "Klassenlehrerin",
+        "text": "...Spar dir etwas Energie. Die erste Stunde hat noch nicht mal angefangen."
+    },
+    "classroom_dain_5_d": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie sagt es trocken, aber ihr Mundwinkel ist minimal angehoben.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -207,6 +251,10 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "Wovor?"
+    },
+    "classroom_minsu_2_b": {
+        "name": "Minsu",
+        "text": "*Deutet mit dem Kinn in Dains Richtung* Deine Ausdauer."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",
@@ -255,53 +303,5 @@
     "classroom_yuna_note_6": {
         "name": "{name}",
         "text": "*Der Unterricht beginnt. Yuna schaut wieder aus dem Fenster. Dain quatscht schon mit der Person neben ihr.*"
-    },
-    "hallway_6_b": {
-        "name": "Seoyeon",
-        "text": "*Kurzes Zögern* ...Du bist aufmerksam."
-    },
-    "hallway_6_c": {
-        "name": "Seoyeon",
-        "text": "*Der Rand der Zwischenablage bewegt sich einen Schlag später erneut.*"
-    },
-    "hallway_7": {
-        "name": "Seoyeon",
-        "text": "Ach, Mittagessen. Du weißt bestimmt nicht, wo die Mensa ist, oder? Komm mit."
-    },
-    "hallway_13_b": {
-        "name": "{name}",
-        "text": "*Der Rücken gerade. Nur ihre Finger bewegten sich und tippten in gleichmäßigem Rhythmus auf die Kante des Klemmbretts.*"
-    },
-    "classroom_2_b": {
-        "name": "{name}",
-        "text": "*Die Klassenlehrerin steht am Pult. Ende zwanzig. Ihre Strickjacke ist von Anfang an offen. Ihr Ausdruck ist gleichgültig, aber — ihre Augen mustern jeden einzelnen Schüler.*"
-    },
-    "classroom_3_b": {
-        "name": "{name}",
-        "text": "Ich bin {name}. Freut mich. *Kurz und sauber. Die Lehrerin nickt.*"
-    },
-    "classroom_5_b": {
-        "name": "Klassenlehrerin",
-        "text": "...Gut. {name}. Merk ich mir. *Leise, fast wie ein Selbstgespräch* Ich mache es mir zur Regel, Namen beim ersten Mal zu merken."
-    },
-    "classroom_5_c": {
-        "name": "{name}",
-        "text": "*Das Murmeln der Lehrerin geht im Klassenzimmerlärm unter. Aus einer Ecke des Raums ertönt ein Pfiff.*"
-    },
-    "classroom_dain_5_b": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie seufzte leise. Sie tippte auf die Ecke des Klassenbuchs und suchte den nächsten Namen, ohne auch nur in Dains Richtung zu schauen.*"
-    },
-    "classroom_dain_5_c": {
-        "name": "Klassenlehrerin",
-        "text": "...Spar dir etwas Energie. Die erste Stunde hat noch nicht mal angefangen."
-    },
-    "classroom_dain_5_d": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie sagt es trocken, aber ihr Mundwinkel ist minimal angehoben.*"
-    },
-    "classroom_minsu_2_b": {
-        "name": "Minsu",
-        "text": "*Deutet mit dem Kinn in Dains Richtung* Deine Ausdauer."
     }
 }

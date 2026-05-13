@@ -55,6 +55,26 @@
         "name": "{name}",
         "text": "*Tres mensajes seguidos. ¿No puede respirar entre uno y otro?*"
     },
+    "night_hidden_check": {
+        "name": "{name}",
+        "text": "*Entre las notificaciones del chat — veo otra más.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*Hay un aviso de la tutora en la app de la escuela. 'Aviso clase 3-2: mañana traigan el material de matemáticas para la primera hora. — Y al estudiante transferido le basta con seguir adaptándose bien.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*Leo el aviso una vez más. Se me levanta la comisura, así que pongo el móvil boca abajo.*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Se muestran las notificaciones de la aplicación de gestión de salud escolar. 'Registros de la sala de salud: Estudiante transferido: mareos leves. Memo: Vuelva mañana si tiene algún síntoma. Bebe mucha agua. ♥ es motivo de preocupación médica.'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*El corazón al final de la frase queda en medio de la pantalla. Lo miro una vez más antes de apagarla.*"
+    },
     "night_late_transition": {
         "name": "{name}",
         "text": "*Estaba a punto de dormirme cuando — el celular vibra otra vez. Las once de la noche. ¿Quién será?*"
@@ -107,6 +127,10 @@
         "name": "{name}",
         "text": "*'Llamar' ya está estampado en la ventana de respuesta.*"
     },
+    "night_dain_late_4_b": {
+        "name": "{name}",
+        "text": "*Debajo del mensaje de Dain hay una hilera de emojis. Todos distintos.*"
+    },
     "night_end_1": {
         "name": "{name}",
         "text": "*Dejo el celular. Miro al techo. El olor a cerezos aún sigue en mi uniforme.*"
@@ -114,29 +138,5 @@
     "night_end_3": {
         "name": "{name}",
         "text": "*Los nombres que guardé hoy permanecen en mi pantalla de bloqueo. Incluso después de apagar la pantalla, mi dedo busca el botón de encendido una vez más.*"
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*Entre las notificaciones del chat — veo otra más.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*Hay un aviso de la tutora en la app de la escuela. 'Aviso clase 3-2: mañana traigan el material de matemáticas para la primera hora. — Y al estudiante transferido le basta con seguir adaptándose bien.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*Leo el aviso una vez más. Se me levanta la comisura, así que pongo el móvil boca abajo.*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Se muestran las notificaciones de la aplicación de gestión de salud escolar. 'Registros de la sala de salud: Estudiante transferido: mareos leves. Memo: Vuelva mañana si tiene algún síntoma. Bebe mucha agua. ♥ es motivo de preocupación médica.'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*El corazón al final de la frase queda en medio de la pantalla. Lo miro una vez más antes de apagarla.*"
-    },
-    "night_dain_late_4_b": {
-        "name": "{name}",
-        "text": "*Debajo del mensaje de Dain hay una hilera de emojis. Todos distintos.*"
     }
 }

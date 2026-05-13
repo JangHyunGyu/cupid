@@ -3,6 +3,15 @@
         "name": "{name}",
         "text": "*Fifth day. It's Sunday, but there's a school event. School uniforms have become more comfortable. Sleeve ends no longer scratch your wrists.*"
     },
+    "morning5_start_branch": {},
+    "morning5_start_b": {
+        "name": "{name}",
+        "text": "*The moment I step into the classroom, attention comes from three directions. A note on my desk, a ribbon tied to a gym uniform string, one notification on my lock screen.*"
+    },
+    "morning5_start_2_b": {
+        "name": "{name}",
+        "text": "*There's a note on my desk. Seoyeon's handwriting.*"
+    },
     "morning5_mood_check": {
         "name": "System",
         "text": ""
@@ -19,13 +28,41 @@
         "name": "{name}",
         "text": "The last day. I tap each of the three names left on my lock screen. I can't bring myself to open any of the chat windows."
     },
+    "morning5_gate": {
+        "name": "{name}",
+        "text": "*At the school gate, I tug at my sleeve once. It no longer leaves a mark on my wrist.*"
+    },
     "morning5_seo_note_1": {
         "name": "{name}",
         "text": "*There's a note on my desk. Seoyeon's handwriting. — 'Make some time this afternoon. I'll leave the rooftop unlocked. — Seoyeon'*"
     },
+    "morning5_seo_note_1_b": {
+        "name": "{name}",
+        "text": "*I pass by the literature club display in the hallway. My feet stop in front of the bulletin board.*"
+    },
+    "morning5_yuna_story_gone": {
+        "name": "{name}",
+        "text": "*Only the pinholes remain on the bulletin board. Where the story should have been. — She took it down. Or maybe she never put it up at all.*"
+    },
+    "morning5_yuna_story_gone_2": {
+        "name": "{name}",
+        "text": "*An empty library seat, a missing bookmark, an unposted novel. Only four thumbtack holes remain on the bulletin board.*"
+    },
+    "morning5_seo_note_1_c": {
+        "name": "{name}",
+        "text": "*A short story is posted on the bulletin board. Title: 'To the Person I Met in the Library.' Light purple ink. A small bread crumb clings to the folded corner.*"
+    },
     "morning5_yuna_story_1": {
         "name": "{name}",
         "text": "*A character in the novel drapes a blanket over someone sleeping in the library. — A scene only I would recognize.*"
+    },
+    "morning5_yuna_story_2": {
+        "name": "{name}",
+        "text": "*The last sentence. 'When that person opened their eyes, I was already gone. I left only a note. — I'll be here again next time.' Light purple ink. The same color as the first note.*"
+    },
+    "morning5_yuna_story_4": {
+        "name": "{name}",
+        "text": "*In the bottom corner of the bulletin board, small text — 'This is fiction. It's not real.' Eraser marks remain.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -35,13 +72,26 @@
         "name": "Dain",
         "text": "YO! I signed you up as my partner for today's sports event!"
     },
+    "morning5_dain_1_b": {
+        "name": "{name}",
+        "text": "...Without even asking?"
+    },
     "morning5_dain_2": {
         "name": "Dain",
         "text": "Bail on me and I will be SO mad."
     },
-    "morning5_end": {
+    "morning5_committed_start": {},
+    "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*I place the notes and notifications from three directions side by side on my desk.*"
+        "text": "*There's no new note on my desk. Instead, the look in Seoyeon's eyes from the rooftop yesterday is still vivid. Yuna and Dain only say a few short things about getting ready for the event.*"
+    },
+    "morning5_committed_yuna": {
+        "name": "{name}",
+        "text": "*There isn't any new note. Instead, the way Yuna held my gaze a little too long yesterday is still there. Seoyeon and Dain only say a few short things about getting ready for the event.*"
+    },
+    "morning5_committed_dain": {
+        "name": "{name}",
+        "text": "*Before Dain's exclamation marks, what comes back to me first is the breath that caught at the very end yesterday. Seoyeon and Yuna only say a few short things about getting ready for the event.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -50,6 +100,22 @@
     "hidden_homeroom_d5_1": {
         "name": "Homeroom Teacher",
         "text": "*The teacher is sitting at the desk. — Not a manuscript this time. She's holding an envelope. A brown envelope.*"
+    },
+    "hidden_homeroom_d5_1_b": {
+        "name": "Homeroom Teacher",
+        "text": "...Oh."
+    },
+    "hidden_homeroom_d5_1_c": {
+        "name": "{name}",
+        "text": "Teacher."
+    },
+    "hidden_homeroom_d5_1_d": {
+        "name": "Homeroom Teacher",
+        "text": "*Lifting the envelope* ...This."
+    },
+    "hidden_homeroom_d5_1_e": {
+        "name": "{name}",
+        "text": "What is it?"
     },
     "hidden_homeroom_d5_2": {
         "name": "Homeroom Teacher",
@@ -74,340 +140,6 @@
             "You held onto it for so long. That has to count for something.",
             "Can I read it for a minute? I'll talk after that."
         ]
-    },
-    "hidden_homeroom_d5_6": {
-        "name": "Homeroom Teacher",
-        "text": "...Then I'll leave it to you. First."
-    },
-    "hidden_homeroom_d5_7": {
-        "name": "Homeroom Teacher",
-        "text": "After you graduate — let's meet. Not as teacher and student."
-    },
-    "hidden_homeroom_d5_8": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher turns around. Her long hair sways, and the edge of the clipboard presses against her elbow.*"
-    },
-    "hidden_homeroom_d5_freetalk": {
-        "name": "Homeroom Teacher",
-        "text": "*She presses both hands over the manuscript envelope and smiles.* It's the last time, so I'll be a little more honest.",
-        "context": "Day 5. Last day. The teacher handed over her 7-year manuscript. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
-        "personality": "The teacher is more honest than usual because it's the last time. Last conversation after handing over the manuscript."
-    },
-    "hidden_nurse_d5_check": {
-        "name": "{name}",
-        "text": "*Break during the event. Passing by the nurse's office.*"
-    },
-    "hidden_nurse_d5_1": {
-        "name": "School Nurse",
-        "text": "Oh? {name}. Already the last day. Once the event ends, it really is over."
-    },
-    "hidden_nurse_d5_3": {
-        "name": "{name}",
-        "text": "Can I come by even if I'm not hurt?"
-    },
-    "hidden_nurse_d5_4": {
-        "name": "School Nurse",
-        "text": "...Press it flat so it stays on. — I'm not doing it for you today."
-    },
-    "hidden_nurse_d5_5": {
-        "name": "School Nurse",
-        "text": "...{name}. Want me to put on a bandage?"
-    },
-    "hidden_nurse_d5_choice": {
-        "name": "{name}",
-        "text": "*There is no wound on the back of my hand. Only the bandage box is open.*",
-        "choices": [
-            "Yes, since it's the last time. Just this once.",
-            "Not a bandage — your phone number"
-        ]
-    },
-    "hidden_nurse_d5_choice_a": {
-        "name": "School Nurse",
-        "text": "*She slowly puts the bandage on. There's small writing on it.*"
-    },
-    "hidden_nurse_d5_choice_a_b": {
-        "name": "School Nurse",
-        "text": "...You said 'just this once.' So why say something like that."
-    },
-    "hidden_nurse_d5_choice_b": {
-        "name": "School Nurse",
-        "text": "*Her laughter stops.* ...That."
-    },
-    "hidden_nurse_d5_6": {
-        "name": "School Nurse",
-        "text": "I know. I just needed an excuse."
-    },
-    "hidden_nurse_d5_7": {},
-    "hidden_nurse_d5_7_both": {},
-    "hidden_nurse_d5_freetalk": {
-        "name": "School Nurse",
-        "text": "*She taps the nurse's office sign once with her fingertip.* Almost out of excuses now.",
-        "context": "Day 5. Last day. The nurse wrote a message on a bandage. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
-        "personality": "The nurse is less playful than usual. Waiting for the day when excuses aren't needed."
-    },
-    "morning5_start_b": {
-        "name": "{name}",
-        "text": "*The moment I step into the classroom, attention comes from three directions. A note on my desk, a ribbon tied to a gym uniform string, one notification on my lock screen.*"
-    },
-    "morning5_start_2_b": {
-        "name": "{name}",
-        "text": "*There's a note on my desk. Seoyeon's handwriting.*"
-    },
-    "morning5_seo_note_1_b": {
-        "name": "{name}",
-        "text": "*I pass by the literature club display in the hallway. My feet stop in front of the bulletin board.*"
-    },
-    "morning5_seo_note_1_c": {
-        "name": "{name}",
-        "text": "*A short story is posted on the bulletin board. Title: 'To the Person I Met in the Library.' Light purple ink. A small bread crumb clings to the folded corner.*"
-    },
-    "morning5_dain_1_b": {
-        "name": "{name}",
-        "text": "...Without even asking?"
-    },
-    "hidden_homeroom_d5_1_b": {
-        "name": "Homeroom Teacher",
-        "text": "...Oh."
-    },
-    "hidden_homeroom_d5_1_c": {
-        "name": "{name}",
-        "text": "Teacher."
-    },
-    "hidden_homeroom_d5_1_d": {
-        "name": "Homeroom Teacher",
-        "text": "*Lifting the envelope* ...This."
-    },
-    "hidden_homeroom_d5_1_e": {
-        "name": "{name}",
-        "text": "What is it?"
-    },
-    "hidden_homeroom_d5_6_b": {
-        "name": "{name}",
-        "text": "*I remember what she said at the cafe yesterday. The manuscript envelope presses heavy against my arm.*"
-    },
-    "hidden_homeroom_d5_6_c": {
-        "name": "{name}",
-        "text": "*The envelope bends slightly in my hands. Her hand still lingers at the edge of the desk.*"
-    },
-    "hidden_homeroom_d5_6_d": {
-        "name": "Homeroom Teacher",
-        "text": "...Once you've read it, tell me what you really think. — No need to be polite with me."
-    },
-    "hidden_homeroom_d5_6_e": {
-        "name": "{name}",
-        "text": "Teacher."
-    },
-    "hidden_homeroom_d5_6_f": {
-        "name": "{name}",
-        "text": "You don't have to say that anymore."
-    },
-    "hidden_homeroom_d5_6_g": {
-        "name": "Homeroom Teacher",
-        "text": "*This time, the teacher does not hide behind the attendance book.*"
-    },
-    "hidden_homeroom_d5_6_h": {
-        "name": "Homeroom Teacher",
-        "text": "...I never thought I'd hear a student say that to me."
-    },
-    "hidden_homeroom_d5_6_i": {
-        "name": "Homeroom Teacher",
-        "text": "*She smooths the folded corner of the manuscript envelope.*"
-    },
-    "hidden_homeroom_d5_6_j": {
-        "name": "Homeroom Teacher",
-        "text": "...Read it properly."
-    },
-    "hidden_homeroom_d5_6_k": {
-        "name": "{name}",
-        "text": "*Before answering, I touch the corner of the envelope first.*"
-    },
-    "hidden_homeroom_d5_6_l": {
-        "name": "{name}",
-        "text": "I'll read it. Properly."
-    },
-    "hidden_homeroom_d5_6_m": {
-        "name": "Homeroom Teacher",
-        "text": "*Tucking her hair back* ...I don't accept book reports."
-    },
-    "hidden_homeroom_d5_6_n": {
-        "name": "{name}",
-        "text": "You're lying."
-    },
-    "hidden_homeroom_d5_6_o": {
-        "name": "Homeroom Teacher",
-        "text": "*With a small laugh* ...Right. At least write one line."
-    },
-    "hidden_homeroom_d5_6_p": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher pauses once at the door. She presses the edge of the clipboard twice with her finger, then lets go.*"
-    },
-    "hidden_homeroom_d5_6_q": {
-        "name": "Homeroom Teacher",
-        "text": "{name}."
-    },
-    "hidden_homeroom_d5_6_r": {
-        "name": "Homeroom Teacher",
-        "text": "*She stops. Grips her clipboard tight. — Then slowly turns her head.*"
-    },
-    "hidden_homeroom_d5_6_s": {
-        "name": "Homeroom Teacher",
-        "text": "...After you graduate. *Her voice cracks.* Yes. After you graduate."
-    },
-    "hidden_homeroom_d5_6_t": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher swallows the same words again. The edge of the clipboard taps lightly against the doorframe.*"
-    },
-    "hidden_homeroom_d5_7_b": {
-        "name": "{name}",
-        "text": "*The end of the clipboard that had been touching the doorframe slowly drops away.*"
-    },
-    "hidden_homeroom_d5_7_c": {
-        "name": "Homeroom Teacher",
-        "text": "...I know. I shouldn't say this now. But today, I'll say this much."
-    },
-    "hidden_nurse_d5_2_b": {
-        "name": "School Nurse",
-        "text": "*The nurse opens the door and steps out. There is no room to back away before our eyes meet.*"
-    },
-    "hidden_nurse_d5_2_c": {
-        "name": "School Nurse",
-        "text": "*Pausing* ...You're back again."
-    },
-    "hidden_nurse_d5_4_b": {
-        "name": "{name}",
-        "text": "Teacher."
-    },
-    "hidden_nurse_d5_4_c": {
-        "name": "{name}",
-        "text": "*The silence that seemed natural until yesterday is now hanging between paper cups.*"
-    },
-    "hidden_nurse_d5_4_d": {
-        "name": "School Nurse",
-        "text": "Last day, huh."
-    },
-    "hidden_nurse_d5_1_b": {
-        "name": "{name}",
-        "text": "*After saying it's the last day of the event, the nurse touches her stethoscope once.*"
-    },
-    "hidden_nurse_d5_1_c": {
-        "name": "School Nurse",
-        "text": "*With a light smile* Come visit after graduation."
-    },
-    "hidden_nurse_d5_1_d": {
-        "name": "{name}",
-        "text": "Graduation is still far off."
-    },
-    "hidden_nurse_d5_1_e": {
-        "name": "School Nurse",
-        "text": "...Before that, come if you're hurt."
-    },
-    "hidden_nurse_d5_1_f": {
-        "name": "{name}",
-        "text": "*'Come by if you're not feeling well.' After saying that, the nurse shifts the hand holding two paper cups slightly.*"
-    },
-    "hidden_nurse_d5_3_b": {
-        "name": "School Nurse",
-        "text": "*The health teacher pauses for a moment. Laughter disappears first.*"
-    },
-    "hidden_nurse_d5_3_c": {
-        "name": "School Nurse",
-        "text": "...That's."
-    },
-    "hidden_nurse_d5_3_d": {
-        "name": "{name}",
-        "text": "Wait —"
-    },
-    "hidden_nurse_d5_3_e": {
-        "name": "School Nurse",
-        "text": "*Smiling again* Ask me that after graduation. — I'll answer then."
-    },
-    "hidden_nurse_d5_3_f": {
-        "name": "School Nurse",
-        "text": "*The nurse closes the bandage box, then opens it again.*"
-    },
-    "hidden_nurse_d5_3_g": {
-        "name": "School Nurse",
-        "text": "Go on. You can't skip the event."
-    },
-    "hidden_nurse_d5_3_h": {
-        "name": "School Nurse",
-        "text": "*The school nurse turns to go back inside — and stops.*"
-    },
-    "hidden_nurse_d5_3_i": {
-        "name": "School Nurse",
-        "text": "...{name}."
-    },
-    "hidden_nurse_d5_choice_b_b": {
-        "name": "School Nurse",
-        "text": "*The nurse stops mid-smile. Her hand is a little late adjusting her glasses.*"
-    },
-    "hidden_nurse_d5_choice_b_c": {
-        "name": "School Nurse",
-        "text": "...Phone number. For medical consultations?"
-    },
-    "hidden_nurse_d5_choice_b_d": {
-        "name": "School Nurse",
-        "text": "*Adjusting her glasses* ...Fine. But use it after you graduate."
-    },
-    "hidden_nurse_d5_choice_b_e": {
-        "name": "{name}",
-        "text": "*'After graduating'. The phone number is halfway down the band wrapper.*"
-    },
-    "hidden_nurse_d5_choice_b_f": {
-        "name": "School Nurse",
-        "text": "Want me to put on a bandage?"
-    },
-    "hidden_nurse_d5_choice_b_g": {
-        "name": "{name}",
-        "text": "...I'm not hurt."
-    },
-    "hidden_nurse_d5_6_b": {
-        "name": "School Nurse",
-        "text": "*The school nurse takes out a bandage and places it on the back of {name}'s hand. The movement continues slowly; small writing is visible at the edge of the bandage.*"
-    },
-    "hidden_nurse_d5_6_c": {
-        "name": "{name}",
-        "text": "*Tiny writing on the edge of the bandage: 'After graduation, meet me at a cafe instead of the nurse's office — ♡' The nurse only adjusts her glasses.*"
-    },
-    "hidden_nurse_d5_flag_check": {},
-    "morning5_start_branch": {},
-    "morning5_committed_start": {},
-    "morning5_committed_seo": {
-        "name": "{name}",
-        "text": "*There's no new note on my desk. Instead, the look in Seoyeon's eyes from the rooftop yesterday is still vivid. Yuna and Dain only say a few short things about getting ready for the event.*"
-    },
-    "morning5_committed_yuna": {
-        "name": "{name}",
-        "text": "*There isn't any new note. Instead, the way Yuna held my gaze a little too long yesterday is still there. Seoyeon and Dain only say a few short things about getting ready for the event.*"
-    },
-    "morning5_committed_dain": {
-        "name": "{name}",
-        "text": "*Before Dain's exclamation marks, what comes back to me first is the breath that caught at the very end yesterday. Seoyeon and Yuna only say a few short things about getting ready for the event.*"
-    },
-    "morning5_end_branch": {},
-    "morning5_committed_end": {
-        "name": "{name}",
-        "text": "*I organize the notes on my desk and check the event schedule for the direction I've already chosen.*"
-    },
-    "morning5_gate": {
-        "name": "{name}",
-        "text": "*At the school gate, I tug at my sleeve once. It no longer leaves a mark on my wrist.*"
-    },
-    "morning5_yuna_story_2": {
-        "name": "{name}",
-        "text": "*The last sentence. 'When that person opened their eyes, I was already gone. I left only a note. — I'll be here again next time.' Light purple ink. The same color as the first note.*"
-    },
-    "morning5_yuna_story_4": {
-        "name": "{name}",
-        "text": "*In the bottom corner of the bulletin board, small text — 'This is fiction. It's not real.' Eraser marks remain.*"
-    },
-    "morning5_yuna_story_gone": {
-        "name": "{name}",
-        "text": "*Only the pinholes remain on the bulletin board. Where the story should have been. — She took it down. Or maybe she never put it up at all.*"
-    },
-    "morning5_yuna_story_gone_2": {
-        "name": "{name}",
-        "text": "*An empty library seat, a missing bookmark, an unposted novel. Only four thumbtack holes remain on the bulletin board.*"
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Homeroom Teacher",
@@ -512,5 +244,273 @@
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
         "text": "*She cradles the manuscript again. The teacher rubs the return-label mark with her thumb. The paper edge crumples slightly in her palm.*"
+    },
+    "hidden_homeroom_d5_6": {
+        "name": "Homeroom Teacher",
+        "text": "...Then I'll leave it to you. First."
+    },
+    "hidden_homeroom_d5_6_b": {
+        "name": "{name}",
+        "text": "*I remember what she said at the cafe yesterday. The manuscript envelope presses heavy against my arm.*"
+    },
+    "hidden_homeroom_d5_6_c": {
+        "name": "{name}",
+        "text": "*The envelope bends slightly in my hands. Her hand still lingers at the edge of the desk.*"
+    },
+    "hidden_homeroom_d5_6_d": {
+        "name": "Homeroom Teacher",
+        "text": "...Once you've read it, tell me what you really think. — No need to be polite with me."
+    },
+    "hidden_homeroom_d5_6_e": {
+        "name": "{name}",
+        "text": "Teacher."
+    },
+    "hidden_homeroom_d5_6_f": {
+        "name": "{name}",
+        "text": "You don't have to say that anymore."
+    },
+    "hidden_homeroom_d5_6_g": {
+        "name": "Homeroom Teacher",
+        "text": "*This time, the teacher does not hide behind the attendance book.*"
+    },
+    "hidden_homeroom_d5_6_h": {
+        "name": "Homeroom Teacher",
+        "text": "...I never thought I'd hear a student say that to me."
+    },
+    "hidden_homeroom_d5_6_i": {
+        "name": "Homeroom Teacher",
+        "text": "*She smooths the folded corner of the manuscript envelope.*"
+    },
+    "hidden_homeroom_d5_6_j": {
+        "name": "Homeroom Teacher",
+        "text": "...Read it properly."
+    },
+    "hidden_homeroom_d5_6_k": {
+        "name": "{name}",
+        "text": "*Before answering, I touch the corner of the envelope first.*"
+    },
+    "hidden_homeroom_d5_6_l": {
+        "name": "{name}",
+        "text": "I'll read it. Properly."
+    },
+    "hidden_homeroom_d5_6_m": {
+        "name": "Homeroom Teacher",
+        "text": "*Tucking her hair back* ...I don't accept book reports."
+    },
+    "hidden_homeroom_d5_6_n": {
+        "name": "{name}",
+        "text": "You're lying."
+    },
+    "hidden_homeroom_d5_6_o": {
+        "name": "Homeroom Teacher",
+        "text": "*With a small laugh* ...Right. At least write one line."
+    },
+    "hidden_homeroom_d5_6_p": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher pauses once at the door. She presses the edge of the clipboard twice with her finger, then lets go.*"
+    },
+    "hidden_homeroom_d5_6_q": {
+        "name": "Homeroom Teacher",
+        "text": "{name}."
+    },
+    "hidden_homeroom_d5_6_r": {
+        "name": "Homeroom Teacher",
+        "text": "*She stops. Grips her clipboard tight. — Then slowly turns her head.*"
+    },
+    "hidden_homeroom_d5_6_s": {
+        "name": "Homeroom Teacher",
+        "text": "...After you graduate. *Her voice cracks.* Yes. After you graduate."
+    },
+    "hidden_homeroom_d5_6_t": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher swallows the same words again. The edge of the clipboard taps lightly against the doorframe.*"
+    },
+    "hidden_homeroom_d5_7": {
+        "name": "Homeroom Teacher",
+        "text": "After you graduate — let's meet. Not as teacher and student."
+    },
+    "hidden_homeroom_d5_7_b": {
+        "name": "{name}",
+        "text": "*The end of the clipboard that had been touching the doorframe slowly drops away.*"
+    },
+    "hidden_homeroom_d5_7_c": {
+        "name": "Homeroom Teacher",
+        "text": "...I know. I shouldn't say this now. But today, I'll say this much."
+    },
+    "hidden_homeroom_d5_8": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher turns around. Her long hair sways, and the edge of the clipboard presses against her elbow.*"
+    },
+    "hidden_homeroom_d5_freetalk": {
+        "name": "Homeroom Teacher",
+        "text": "*She presses both hands over the manuscript envelope and smiles.* It's the last time, so I'll be a little more honest.",
+        "context": "Day 5. Last day. The teacher handed over her 7-year manuscript. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
+        "personality": "The teacher is more honest than usual because it's the last time. Last conversation after handing over the manuscript."
+    },
+    "hidden_nurse_d5_check": {
+        "name": "{name}",
+        "text": "*Break during the event. Passing by the nurse's office.*"
+    },
+    "hidden_nurse_d5_1": {
+        "name": "School Nurse",
+        "text": "Oh? {name}. Already the last day. Once the event ends, it really is over."
+    },
+    "hidden_nurse_d5_1_b": {
+        "name": "{name}",
+        "text": "*After saying it's the last day of the event, the nurse touches her stethoscope once.*"
+    },
+    "hidden_nurse_d5_1_c": {
+        "name": "School Nurse",
+        "text": "*With a light smile* Come visit after graduation."
+    },
+    "hidden_nurse_d5_1_d": {
+        "name": "{name}",
+        "text": "Graduation is still far off."
+    },
+    "hidden_nurse_d5_1_e": {
+        "name": "School Nurse",
+        "text": "...Before that, come if you're hurt."
+    },
+    "hidden_nurse_d5_1_f": {
+        "name": "{name}",
+        "text": "*'Come by if you're not feeling well.' After saying that, the nurse shifts the hand holding two paper cups slightly.*"
+    },
+    "hidden_nurse_d5_2_b": {
+        "name": "School Nurse",
+        "text": "*The nurse opens the door and steps out. There is no room to back away before our eyes meet.*"
+    },
+    "hidden_nurse_d5_2_c": {
+        "name": "School Nurse",
+        "text": "*Pausing* ...You're back again."
+    },
+    "hidden_nurse_d5_3": {
+        "name": "{name}",
+        "text": "Can I come by even if I'm not hurt?"
+    },
+    "hidden_nurse_d5_3_b": {
+        "name": "School Nurse",
+        "text": "*The health teacher pauses for a moment. Laughter disappears first.*"
+    },
+    "hidden_nurse_d5_3_c": {
+        "name": "School Nurse",
+        "text": "...That's."
+    },
+    "hidden_nurse_d5_3_d": {
+        "name": "{name}",
+        "text": "Wait —"
+    },
+    "hidden_nurse_d5_3_e": {
+        "name": "School Nurse",
+        "text": "*Smiling again* Ask me that after graduation. — I'll answer then."
+    },
+    "hidden_nurse_d5_3_f": {
+        "name": "School Nurse",
+        "text": "*The nurse closes the bandage box, then opens it again.*"
+    },
+    "hidden_nurse_d5_3_g": {
+        "name": "School Nurse",
+        "text": "Go on. You can't skip the event."
+    },
+    "hidden_nurse_d5_3_h": {
+        "name": "School Nurse",
+        "text": "*The school nurse turns to go back inside — and stops.*"
+    },
+    "hidden_nurse_d5_3_i": {
+        "name": "School Nurse",
+        "text": "...{name}."
+    },
+    "hidden_nurse_d5_4": {
+        "name": "School Nurse",
+        "text": "...Press it flat so it stays on. — I'm not doing it for you today."
+    },
+    "hidden_nurse_d5_4_b": {
+        "name": "{name}",
+        "text": "Teacher."
+    },
+    "hidden_nurse_d5_4_c": {
+        "name": "{name}",
+        "text": "*The silence that seemed natural until yesterday is now hanging between paper cups.*"
+    },
+    "hidden_nurse_d5_4_d": {
+        "name": "School Nurse",
+        "text": "Last day, huh."
+    },
+    "hidden_nurse_d5_5": {
+        "name": "School Nurse",
+        "text": "...{name}. Want me to put on a bandage?"
+    },
+    "hidden_nurse_d5_choice": {
+        "name": "{name}",
+        "text": "*There is no wound on the back of my hand. Only the bandage box is open.*",
+        "choices": [
+            "Yes, since it's the last time. Just this once.",
+            "Not a bandage — your phone number"
+        ]
+    },
+    "hidden_nurse_d5_choice_a": {
+        "name": "School Nurse",
+        "text": "*She slowly puts the bandage on. There's small writing on it.*"
+    },
+    "hidden_nurse_d5_choice_a_b": {
+        "name": "School Nurse",
+        "text": "...You said 'just this once.' So why say something like that."
+    },
+    "hidden_nurse_d5_choice_b": {
+        "name": "School Nurse",
+        "text": "*Her laughter stops.* ...That."
+    },
+    "hidden_nurse_d5_choice_b_b": {
+        "name": "School Nurse",
+        "text": "*The nurse stops mid-smile. Her hand is a little late adjusting her glasses.*"
+    },
+    "hidden_nurse_d5_choice_b_c": {
+        "name": "School Nurse",
+        "text": "...Phone number. For medical consultations?"
+    },
+    "hidden_nurse_d5_choice_b_d": {
+        "name": "School Nurse",
+        "text": "*Adjusting her glasses* ...Fine. But use it after you graduate."
+    },
+    "hidden_nurse_d5_choice_b_e": {
+        "name": "{name}",
+        "text": "*'After graduating'. The phone number is halfway down the band wrapper.*"
+    },
+    "hidden_nurse_d5_choice_b_f": {
+        "name": "School Nurse",
+        "text": "Want me to put on a bandage?"
+    },
+    "hidden_nurse_d5_choice_b_g": {
+        "name": "{name}",
+        "text": "...I'm not hurt."
+    },
+    "hidden_nurse_d5_6": {
+        "name": "School Nurse",
+        "text": "I know. I just needed an excuse."
+    },
+    "hidden_nurse_d5_6_b": {
+        "name": "School Nurse",
+        "text": "*The school nurse takes out a bandage and places it on the back of {name}'s hand. The movement continues slowly; small writing is visible at the edge of the bandage.*"
+    },
+    "hidden_nurse_d5_6_c": {
+        "name": "{name}",
+        "text": "*Tiny writing on the edge of the bandage: 'After graduation, meet me at a cafe instead of the nurse's office — ♡' The nurse only adjusts her glasses.*"
+    },
+    "hidden_nurse_d5_flag_check": {},
+    "hidden_nurse_d5_7": {},
+    "hidden_nurse_d5_7_both": {},
+    "hidden_nurse_d5_freetalk": {
+        "name": "School Nurse",
+        "text": "*She taps the nurse's office sign once with her fingertip.* Almost out of excuses now.",
+        "context": "Day 5. Last day. The nurse wrote a message on a bandage. A promise to meet after graduation. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
+        "personality": "The nurse is less playful than usual. Waiting for the day when excuses aren't needed."
+    },
+    "morning5_end_branch": {},
+    "morning5_end": {
+        "name": "{name}",
+        "text": "*I place the notes and notifications from three directions side by side on my desk.*"
+    },
+    "morning5_committed_end": {
+        "name": "{name}",
+        "text": "*I organize the notes on my desk and check the event schedule for the direction I've already chosen.*"
     }
 }

@@ -797,6 +797,10 @@
         "name": "{name}",
         "text": "*Ich tippe eine Antwort und lösche sie. Ein einzelner Buchstabe bleibt im Eingabefeld, dann verschwindet auch er.*"
     },
+    "day4_night_reflect": {
+        "name": "{name}",
+        "text": "*So ging der Samstag vorbei. Morgen ist eine Schulveranstaltung. — Obwohl Sonntag ist, müssen wir zur Schule.*"
+    },
     "day4_hidden_msg_branch": {
         "name": "System",
         "text": ""
@@ -832,10 +836,6 @@
     "night_nurse_msg_4": {
         "name": "Schulkrankenschwester",
         "text": "...Gute Nacht."
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*So ging der Samstag vorbei. Morgen ist eine Schulveranstaltung. — Obwohl Sonntag ist, müssen wir zur Schule.*"
     },
     "day4_night_sleep": {
         "name": "{name}",

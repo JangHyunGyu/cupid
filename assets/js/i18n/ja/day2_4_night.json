@@ -15,6 +15,10 @@
         "name": "ダイン",
         "text": "明日も勝負しよ！！種目変えて！！"
     },
+    "night2_msg_seo_general": {
+        "name": "ソヨン",
+        "text": "明日の昼、屋上開けておくよ。来て"
+    },
     "night2_msg_seo_specific": {
         "name": "ソヨン",
         "text": "今日はありがとう。おかげで早く終わったよ"
@@ -30,10 +34,6 @@
     "night2_msg_yuna_specific_2": {
         "name": "ユナ",
         "text": "……また聴かせて"
-    },
-    "night2_msg_seo_general": {
-        "name": "ソヨン",
-        "text": "明日の昼、屋上開けておくよ。来て"
     },
     "night2_msg_dain_general": {
         "name": "ダイン",
@@ -96,6 +96,14 @@
         "name": "{name}",
         "text": "*また三行連続だ。*"
     },
+    "night2_reply_dain_react_high": {
+        "name": "ダイン",
+        "text": "ねえ、ほんと何者なの。明日絶対体育館来て。"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "ダイン",
+        "text": "りょーかい、おやすみ！"
+    },
     "night2_reply_seo_1": {
         "name": "{name}",
         "text": "呼んでくれたらまた行くよ"
@@ -115,6 +123,14 @@
     "night2_reply_seo_5": {
         "name": "{name}",
         "text": "*「今度こそ本当に来て。」—抜けたら代償が伴うトーン。*"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "ソヨン",
+        "text": "...思ったより面白い人だね。明日の昼、屋上で会わない？"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "ソヨン",
+        "text": "ふ、了解。また明日。"
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -140,9 +156,49 @@
         "name": "ユナ",
         "text": "理由はまた今度"
     },
+    "night2_reply_yuna_6_b": {
+        "name": "{name}",
+        "text": "*窓を開けた。冷たい風が入ってくる。星はたくさんあって、指は三つ目で止まったまま、宙に浮いている。*"
+    },
+    "night2_reply_yuna_6_c": {
+        "name": "{name}",
+        "text": "*返信はそこで途切れる。窓には自分の指の跡が残っている。*"
+    },
     "night2_reply_yuna_7": {
         "name": "{name}",
         "text": "*明日の夜も、指は三つ目の星で止まるだろう。*"
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "ユナ",
+        "text": "……こんな時間でも返してくれるんだ。明日、図書館来る？"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "ユナ",
+        "text": "...うん。おやすみ。"
+    },
+    "night2_hidden_check": {
+        "name": "{name}",
+        "text": "*通知の列に混じって——別の知らせがひとつ見えた。*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*担任先生から個人メッセージ。『今日は職員室に来てくれてありがとう。事務的なことは終わったからもう呼ばない。…でもつらかったらいつでもおいで』*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*メッセージの最後の句点だけ、ずいぶん後から打たれたように見える。*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*最後の一行だけをもう一度読む。*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*健康管理アプリの通知。『保健室記録: 転校生 — 肘擦り傷（軽度）。メモ: 絆創膏は明日の朝替えるね。絆創膏交換は医療行為だから拒否権なし ^^』*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*絆創膏の端を親指で押してみる。明日の朝の予定が一つ増えた。*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -183,62 +239,6 @@
     "night2_end_2": {
         "name": "{name}",
         "text": "*二日目が終わった。初日は見慣れなかった名前が、今はロック画面に残っている。通知が消えた後も、画面を何度もまた点ける。*"
-    },
-    "night2_hidden_check": {
-        "name": "{name}",
-        "text": "*通知の列に混じって——別の知らせがひとつ見えた。*"
-    },
-    "night2_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*担任先生から個人メッセージ。『今日は職員室に来てくれてありがとう。事務的なことは終わったからもう呼ばない。…でもつらかったらいつでもおいで』*"
-    },
-    "night2_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*メッセージの最後の句点だけ、ずいぶん後から打たれたように見える。*"
-    },
-    "night2_hidden_homeroom_3": {
-        "name": "{name}",
-        "text": "*最後の一行だけをもう一度読む。*"
-    },
-    "night2_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*健康管理アプリの通知。『保健室記録: 転校生 — 肘擦り傷（軽度）。メモ: 絆創膏は明日の朝替えるね。絆創膏交換は医療行為だから拒否権なし ^^』*"
-    },
-    "night2_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*絆創膏の端を親指で押してみる。明日の朝の予定が一つ増えた。*"
-    },
-    "night2_reply_dain_react_high": {
-        "name": "ダイン",
-        "text": "ねえ、ほんと何者なの。明日絶対体育館来て。"
-    },
-    "night2_reply_dain_react_default": {
-        "name": "ダイン",
-        "text": "りょーかい、おやすみ！"
-    },
-    "night2_reply_seo_react_high": {
-        "name": "ソヨン",
-        "text": "...思ったより面白い人だね。明日の昼、屋上で会わない？"
-    },
-    "night2_reply_seo_react_default": {
-        "name": "ソヨン",
-        "text": "ふ、了解。また明日。"
-    },
-    "night2_reply_yuna_react_high": {
-        "name": "ユナ",
-        "text": "……こんな時間でも返してくれるんだ。明日、図書館来る？"
-    },
-    "night2_reply_yuna_react_default": {
-        "name": "ユナ",
-        "text": "...うん。おやすみ。"
-    },
-    "night2_reply_yuna_6_b": {
-        "name": "{name}",
-        "text": "*窓を開けた。冷たい風が入ってくる。星はたくさんあって、指は三つ目で止まったまま、宙に浮いている。*"
-    },
-    "night2_reply_yuna_6_c": {
-        "name": "{name}",
-        "text": "*返信はそこで途切れる。窓には自分の指の跡が残っている。*"
     },
     "night2_end_2_b": {
         "name": "{name}",

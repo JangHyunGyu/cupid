@@ -3,10 +3,7 @@
         "name": "Système",
         "text": ""
     },
-    "ending_last_chance_resolve": {
-        "name": "Système",
-        "text": ""
-    },
+    "ending_hidden_commit_check": {},
     "hidden_dual_route_1": {
         "name": "{name}",
         "text": "*Je m'arrête devant le portail. L'enveloppe appuie contre ma poitrine, et le pansement sur ma main accroche ma manche.*"
@@ -18,751 +15,6 @@
             "Aller vers la personne qui m'a remis le manuscrit",
             "Aller vers la personne qui a laissé sa réponse sur le dos de ma main"
         ]
-    },
-    "ending_affinity_check": {
-        "name": "Système",
-        "text": ""
-    },
-    "ending_aff_check_seo": {
-        "name": "Système",
-        "text": ""
-    },
-    "perfect_seo_1": {
-        "name": "{name}",
-        "text": "*Le toit de Seoyeon. Je me tiens parmi les plantes qu'elle a cultivées elle-même.*"
-    },
-    "perfect_seo_1_b": {
-        "name": "Seoyeon",
-        "text": "*Ses yeux sont humides. Cette fois, elle ne les cache pas du revers de la main.*"
-    },
-    "perfect_seo_2": {
-        "name": "{name}",
-        "text": "*Le contour de ses yeux est trempé. Pourtant, elle ne détourne pas le regard.*"
-    },
-    "perfect_seo_3": {
-        "name": "Seoyeon",
-        "text": "...Même si tu as ce visage, ne t'enfuis pas."
-    },
-    "perfect_seo_4": {
-        "name": "Seoyeon",
-        "text": "*La brise du toit souffle.* Même après le diplôme, je viendrai ici. Ces plantes ne poussent que quand tu es là."
-    },
-    "perfect_seo_5": {
-        "name": "Seoyeon",
-        "text": "*Elle tend la main. Pas le petit doigt. La main entière.*"
-    },
-    "perfect_seo_5_b": {
-        "name": "{name}",
-        "text": "*La brise du toit souffle.*"
-    },
-    "perfect_epilogue_1_seo": {
-        "name": "{name}",
-        "text": "*J'ai parcouru le même chemin tous les matins. À côté de Seoyeon, la même route avait à chaque fois une expression différente.*"
-    },
-    "perfect_epilogue_bridge_seo": {
-        "name": "Système",
-        "text": "*Épilogue — Un an plus tard*"
-    },
-    "perfect_epilogue_2_seo": {
-        "name": "{name}",
-        "text": "*Jour de la cérémonie d'entrée à l'université. Un message sur mon téléphone. 'J'ai arrosé la plante aujourd'hui. — Mais reviens vite.'*"
-    },
-    "perfect_epilogue_3_seo": {
-        "name": "Seoyeon",
-        "text": "*Elle ne supprime pas les photos même quand son eye-liner a un peu coulé. Les cotons devant le miroir n'ont pas servi une seule fois aujourd'hui.*"
-    },
-    "perfect_epilogue_4_seo": {
-        "name": "Système",
-        "text": "─── PERFECT END (Seoyeon) ───"
-    },
-    "bitter_seo_1": {
-        "name": "{name}",
-        "text": "*Je me suis déclaré. Seoyeon a dit essayons. Un mois environ plus tard, elle m'a contacté pour se voir au café devant l'école. Le message se terminait seulement par un point.*"
-    },
-    "bitter_seo_2": {
-        "name": "Seoyeon",
-        "text": "... Je pensais que tout irait bien. Je suppose que toi et moi sommes tous les deux en retard."
-    },
-    "bitter_seo_2_b": {
-        "name": "{name}",
-        "text": "*Seoyeon au café. Son regard reste sur le sous-verre derrière ses lunettes. Le café qu'elle a commandé n'est même pas à moitié bu.*"
-    },
-    "bitter_seo_3": {
-        "name": "{name}",
-        "text": "*J'ai quitté le café. Il pleut. J'avais un parapluie — maintenant il y en a deux.*"
-    },
-    "true_seo_1": {
-        "name": "{name}",
-        "text": "*La chambre de Seoyeon. Ses parents sont sortis. Les objets sur le bureau sont alignés comme au cordeau, et la photo de famille dans le cadre est légèrement penchée.*"
-    },
-    "true_seo_2": {
-        "name": "{name}",
-        "text": "*— Sauf une chose. Sur le bureau, une rangée de plantes que Seoyeon a cultivées elle-même.*"
-    },
-    "true_seo_3": {
-        "name": "Seoyeon",
-        "text": "Devant toi, je crois que je n'ai pas besoin du visage répété."
-    },
-    "true_seo_4": {
-        "name": "{name}",
-        "text": "Tu n’avais pas besoin de le faire."
-    },
-    "true_seo_5": {
-        "name": "Seoyeon",
-        "text": "...savoir. Mais il a fallu du temps pour y croire."
-    },
-    "true_seo_6": {
-        "name": "Seoyeon",
-        "text": "*Elle sourit. Ses cheveux se dispersent dans le vent.*"
-    },
-    "true_seo_6b": {
-        "name": "Seoyeon",
-        "text": "Je devais toujours sourire. Mais avec toi, je veux juste être moi-même."
-    },
-    "true_seo_7": {
-        "name": "Seoyeon",
-        "text": "...Reste avec moi."
-    },
-    "true_seo_7_b": {
-        "name": "Seoyeon",
-        "text": "*Elle hésite puis tend son auriculaire.*"
-    },
-    "true_seo_7b": {
-        "name": "{name}",
-        "text": "*Je tends la main aussi. Juste avant qu'on se touche, Seoyeon sourit la première.*"
-    },
-    "true_seo_8": {
-        "name": "{name}",
-        "text": "*On a accroché nos auriculaires. Le doigt qui fendait le vide le premier jour est maintenant accroché au mien.*"
-    },
-    "true_seo_bridge": {
-        "name": "{name}",
-        "text": "*La promesse de Seoyeon est encore au bout de mes doigts.*"
-    },
-    "true_epilogue_1_seo": {
-        "name": "{name}",
-        "text": "*Cinq jours. Le temps qu'il a fallu pour voir le bout des doigts derrière le porte-documents de Seoyeon.*"
-    },
-    "ending_aff_check_yuna": {
-        "name": "Système",
-        "text": ""
-    },
-    "perfect_yuna_1": {
-        "name": "{name}",
-        "text": "*L'annexe de la bibliothèque, le grenier secret. Yuna me tend une nouvelle.*"
-    },
-    "perfect_yuna_2": {
-        "name": "{name}",
-        "text": "*Le titre est le nom du protagoniste.*"
-    },
-    "perfect_yuna_3": {
-        "name": "Yuna",
-        "text": "...Dis-moi ce que tu en penses quand tu auras fini. C'est ma réponse."
-    },
-    "perfect_yuna_4": {
-        "name": "{name}",
-        "text": "*La dernière phrase du roman : « Il y avait quelqu'un qui ne disparaissait pas. » En dessous, l'encre a un peu bavé.*"
-    },
-    "perfect_yuna_5": {
-        "name": "Yuna",
-        "text": "*Elle s'est levée et m'a serré dans ses bras. Sans un mot. La lumière de la fenêtre cassée s'allongeait sur le sol. Sa main s'est arrêtée lentement dans mon dos.*"
-    },
-    "perfect_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*Je m'asseyais au même endroit tous les jours. Le son de Yuna tournant les pages était également légèrement différent chaque jour.*"
-    },
-    "perfect_epilogue_bridge_yuna": {
-        "name": "Système",
-        "text": "*Épilogue — Un an plus tard*"
-    },
-    "perfect_epilogue_2_yuna": {
-        "name": "{name}",
-        "text": "*Le premier roman de Yuna a été publié. La dédicace : 'À la troisième étoile.'*"
-    },
-    "perfect_epilogue_3_yuna": {
-        "name": "Yuna",
-        "text": "*Elle parle toujours peu. Mais avec {name} seulement, la longueur de ses phrases a changé.*"
-    },
-    "perfect_epilogue_4_yuna": {
-        "name": "Système",
-        "text": "─── PERFECT END (Yuna) ───"
-    },
-    "bitter_yuna_1": {
-        "name": "{name}",
-        "text": "*J'ai avoué. Yuna hocha la tête, mais ses doigts continuèrent de frotter le bout du marque-page. Environ un mois plus tard, une note a été placée dans mon casier. ‘Parlons.’*"
-    },
-    "bitter_yuna_2_library": {
-        "name": "Yuna",
-        "text": "...Parfois je pense à toi. Quand je sens l'odeur de la bibliothèque. J'aurais dû en dire plus à l'époque."
-    },
-    "bitter_yuna_2_book": {
-        "name": "Yuna",
-        "text": "...Parfois je pense à toi. Quand je passe devant une librairie. J'aurais dû en dire plus à l'époque."
-    },
-    "bitter_yuna_3": {
-        "name": "{name}",
-        "text": "*Je passe le portail de l'école. Il pleut. Dans la boîte aux lettres, le dernier mot de Yuna est glissé. Il est court. Le bas du papier est détrempé par la pluie.*"
-    },
-    "true_yuna_1": {
-        "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Plus profond que le coin de lecture secret — un grenier. Un espace dont j'ignorais même l'existence.*"
-    },
-    "true_yuna_2": {
-        "name": "Yuna",
-        "text": "J'étais la seule à connaître cet endroit."
-    },
-    "true_yuna_2_b": {
-        "name": "Yuna",
-        "text": "*Elle grimpe la petite échelle du grenier. Il y a une trappe vers le haut. — En l'ouvrant, une brise s'engouffre.*"
-    },
-    "true_yuna_2_c": {
-        "name": "{name}",
-        "text": "*Au-dessus du grenier, il y avait un toit. Le toit de l'annexe de la bibliothèque. — Un passage secret que personne ne connaît.*"
-    },
-    "true_yuna_2_d": {
-        "name": "Yuna",
-        "text": "*Elle s'appuie contre la rambarde. Les étoiles sont visibles.*"
-    },
-    "true_yuna_3": {
-        "name": "Yuna",
-        "text": "*Elle ouvre la petite fenêtre. On voit les étoiles.*"
-    },
-    "true_yuna_4": {
-        "name": "Yuna",
-        "text": "Maintenant toi aussi."
-    },
-    "true_yuna_5": {
-        "name": "{name}",
-        "text": "La troisième étoile ?"
-    },
-    "true_yuna_5_b": {
-        "name": "Yuna",
-        "text": "*Yuna s’arrête un instant. Sa main se desserre sur le dos du livre.*"
-    },
-    "true_yuna_6": {
-        "name": "Yuna",
-        "text": "...Tu t'en souvenais."
-    },
-    "true_yuna_6b": {
-        "name": "Yuna",
-        "text": "Pars pas. Reste ici ce soir."
-    },
-    "true_yuna_7": {
-        "name": "{name}",
-        "text": "*À côté du troisième astérisque, un point violet pâle comme la première note est marqué. Yuna referme le cahier et marche la première vers la porte de l'annexe.*"
-    },
-    "true_yuna_bridge": {
-        "name": "{name}",
-        "text": "*Les étoiles de Yuna sont encore là, juste devant moi.*"
-    },
-    "true_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*Cinq jours. Le temps qu'il a fallu pour entendre la voix de Yuna au-delà des notes.*"
-    },
-    "ending_aff_check_dain": {
-        "name": "Système",
-        "text": ""
-    },
-    "perfect_dain_1": {
-        "name": "{name}",
-        "text": "*Le gymnase. Dain frappe son dernier service. En défaisant ses bandages.*"
-    },
-    "perfect_dain_2": {
-        "name": "Dain",
-        "text": "C'est la dernière passe. — Mais c'est aussi un début."
-    },
-    "perfect_dain_2b": {
-        "name": "Dain",
-        "text": "*Elle pose le ballon de volley et attend la réponse de {name}.*"
-    },
-    "perfect_dain_3": {
-        "name": "Dain",
-        "text": "En dehors du terrain, est-ce que je suis quelqu'un de bien ?"
-    },
-    "perfect_dain_3b": {
-        "name": "Dain",
-        "text": "*Elle pose le ballon sur le terrain. Elle se retourne et sourit. Un sourire silencieux.*"
-    },
-    "perfect_dain_4": {
-        "name": "{name}",
-        "text": "Sur le terrain et en dehors."
-    },
-    "perfect_dain_5": {
-        "name": "Dain",
-        "text": "*Elle a sauté. Je n'étais pas prêt. Le ballon a roulé sur le sol — et dans le gymnase baigné de soleil couchant, il ne restait plus que deux ombres.*"
-    },
-    "perfect_epilogue_1_dain": {
-        "name": "{name}",
-        "text": "*Le genou de Dain plie légèrement à la réception. Elle rit d'abord, puis pose la main sur son genou.*"
-    },
-    "perfect_epilogue_bridge_dain": {
-        "name": "Système",
-        "text": "*Épilogue — Un an plus tard*"
-    },
-    "perfect_epilogue_2_dain": {
-        "name": "Dain",
-        "text": "*Elle est devenu commentateur sportif. Souriant aussi devant la caméra. Cette fois, je n’insiste pas sur la fin de mes propos.*"
-    },
-    "perfect_epilogue_3_dain": {
-        "name": "{name}",
-        "text": "*Parfois son genou lui fait mal, dit-elle. Quand c'est le cas, on s'assoit côte à côte et on écoute l'air s'échapper du ballon.*"
-    },
-    "perfect_epilogue_4_dain": {
-        "name": "Système",
-        "text": "─── PERFECT END (Dain) ───"
-    },
-    "bitter_dain_1": {
-        "name": "{name}",
-        "text": "*J'ai avoué. Dain sourit avec bonhomie. C'était brillant comme les lumières d'un gymnase, mais ça n'a pas duré longtemps. Environ un mois plus tard, j'ai reçu un SMS me disant d'attendre devant le gymnase.*"
-    },
-    "bitter_dain_2": {
-        "name": "Dain",
-        "text": "C'était sympa ! ...Mais je crois que c'était seulement sympa. C'est ça qui me laisse un goût bizarre."
-    },
-    "bitter_dain_3": {
-        "name": "{name}",
-        "text": "*Je sors du gymnase. Il pleut. Derrière la porte fermée, un ballon rebondit une fois.*"
-    },
-    "bitter_dain_3_b": {
-        "name": "{name}",
-        "text": "*Je suis sorti du portail. Il pleut. — Pas de parapluie. Les pétales de cerisier collent au sol mouillé sous mes pieds.*"
-    },
-    "bitter_epilogue_1": {
-        "name": "{name}",
-        "text": "*Après le diplôme. Les contacts se sont espacés. Une fois par mois est devenu une fois tous les deux mois, laisser les messages sans réponse est devenu la norme, et un jour — quand j'ai voulu écrire et que j'ai bloqué sur quoi dire — j'ai su que c'était fini.*"
-    },
-    "bitter_epilogue_2": {
-        "name": "{name}",
-        "text": "*Un souvenir de cinq jours subsiste. Sur la dernière photo, il y a un écart entre nous assez large pour laisser passer quelqu'un.*"
-    },
-    "bitter_epilogue_3": {
-        "name": "Système",
-        "text": "─── BITTERSWEET END ───"
-    },
-    "true_dain_1": {
-        "name": "{name}",
-        "text": "*Le gymnase. Les mêmes lumières de secours qu'hier. Allongés côte à côte sur le tapis.*"
-    },
-    "true_dain_2": {
-        "name": "Dain",
-        "text": "*Elle prend la main de {name} et la pose contre l'intérieur de son poignet. Sans un mot.*"
-    },
-    "true_dain_2b": {
-        "name": "{name}",
-        "text": "*Vite. Une vitesse qui n'a pas besoin de mots.*"
-    },
-    "true_dain_3": {
-        "name": "{name}",
-        "text": "*Son pouls bat nettement sous mes doigts.*"
-    },
-    "true_dain_4": {
-        "name": "{name}",
-        "text": "*Les mots ne sortent pas. Mes lèvres restent légèrement entrouvertes.*"
-    },
-    "true_dain_5": {
-        "name": "{name}",
-        "text": "...C'est rapide."
-    },
-    "true_dain_6": {
-        "name": "Dain",
-        "text": "*se cachant à moitié le visage avec le ballon* Arrête de me regarder comme ça... C'est pas juste."
-    },
-    "true_dain_7": {
-        "name": "{name}",
-        "text": "Je ne regardais pas."
-    },
-    "true_dain_8": {
-        "name": "Dain",
-        "text": "Si tu regardais !! ...Mais tu peux continuer à regarder."
-    },
-    "true_dain_8b": {
-        "name": "Dain",
-        "text": "*La fin de sa voix remonte légèrement. Cette fois, ça ne sonne pas forcé.*"
-    },
-    "true_dain_bridge": {
-        "name": "{name}",
-        "text": "*Le rire de Dain résonne encore dans mes oreilles.*"
-    },
-    "true_epilogue_1_dain": {
-        "name": "{name}",
-        "text": "*Cinq jours. Le temps qu'il a fallu pour entendre l'endroit où les points d'exclamation de Dain s'arrêtaient.*"
-    },
-    "true_epilogue_2": {
-        "name": "{name}",
-        "text": "*L'uniforme était raide, les cerisiers me faisaient éternuer, et je ne savais pas quoi faire devant le portail.*"
-    },
-    "true_epilogue_3": {
-        "name": "{name}",
-        "text": "*Mais avec le recul — je crois que c'était déjà joué à l'instant où nos regards se sont croisés. Il m'a juste fallu cinq jours pour l'admettre.*"
-    },
-    "true_epilogue_4": {},
-    "true_epilogue_4_seo": {
-        "name": "{name}",
-        "text": "*Les appels de sa mère sont toujours brefs, et la répétition devant le miroir n'est pas terminée. Mais Seoyeon me regarde parfois maintenant avec un visage sans répétition.*"
-    },
-    "true_epilogue_4_yuna": {
-        "name": "{name}",
-        "text": "*Le contact de son aînée est toujours absent. Le siège du coin de la bibliothèque est toujours vide. Mais Yuna utilise maintenant sa voix avant les notes.*"
-    },
-    "true_epilogue_4_dain": {
-        "name": "{name}",
-        "text": "*Son genou est bandé tous les matins. Ses notes d'alarme ont toujours deux points d'exclamation. Mais Dain envoie parfois des messages qui se terminent par un point maintenant.*"
-    },
-    "true_epilogue_7": {
-        "name": "Système",
-        "text": "─── TRUE LOVE END ───"
-    },
-    "day5_ending_alone": {
-        "name": "{name}",
-        "text": "*Je franchis le portail. Mon téléphone sonne. — Personne. Alerte batterie faible.*"
-    },
-    "alone_1": {
-        "name": "{name}",
-        "text": "*Cinq jours. Sur le bureau reposent une clé, un mot, et une protection de poignet, côte à côte. Je n'ai pu en ranger aucun dans mon sac.*"
-    },
-    "alone_2": {
-        "name": "{name}",
-        "text": "*La chambre est silencieuse. Sur l'écran du téléphone, trois conversations sont épinglées en haut. Aucune n'a de nouveaux messages.*"
-    },
-    "alone_2_b": {
-        "name": "{name}",
-        "text": "*La chambre est calme. Derrière le bruit de la porte qui se ferme, les voix s'éteignent d'un seul coup. Les fleurs de cerisier devant la fenêtre sont dispersées par le vent.*"
-    },
-    "alone_4": {
-        "name": "{name}",
-        "text": "*J'éteins la lumière de la chambre et les sons de notification s'arrêtent. Seuls la clé, le mot et la protection de poignet restent dans l'obscurité sur le bureau.*"
-    },
-    "alone_5": {
-        "name": "Système",
-        "text": "─── ALONE END ───"
-    },
-    "ending_confessed_aff_check": {
-        "name": "Système",
-        "text": ""
-    },
-    "ending_confessed_aff_seo": {
-        "name": "Système",
-        "text": ""
-    },
-    "ending_confessed_aff_yuna": {
-        "name": "Système",
-        "text": ""
-    },
-    "ending_confessed_aff_dain": {
-        "name": "Système",
-        "text": ""
-    },
-    "day5_ending_good": {
-        "name": "{name}",
-        "text": "*Le simple fait d'avoir dit « je t'aime » n'a pas tout réglé. Mais on a décidé de ne pas s'arrêter là.*"
-    },
-    "good_1": {
-        "name": "{name}",
-        "text": "*On a été maladroits, en retard, et parfois complètement à côté.*"
-    },
-    "good_1b": {
-        "name": "{name}",
-        "text": "*Malgré tout, nous marchons dans la même direction.*"
-    },
-    "good_1c": {
-        "name": "{name}",
-        "text": "*Un pétale de cerisier se colle au bout de ma chaussure, puis tombe au pas suivant.*"
-    },
-    "good_1_seo": {
-        "name": "Seoyeon",
-        "text": "On est maladroits tous les deux. ...Mais cette fois, ne lâche pas au milieu."
-    },
-    "good_1_seo_b": {
-        "name": "Seoyeon",
-        "text": "*Elle remet une fois le bout de la manche de {name}, comme si elle retirait un pétale de cerisier. Le geste est brusque, mais il ne repousse pas.*"
-    },
-    "good_1_seo_c": {
-        "name": "Seoyeon",
-        "text": "*Elle ralentit d'un demi-pas sans rien dire. Elle attend que l'épaule de {name} arrive à la hauteur de la sienne.*"
-    },
-    "good_1_seo_d": {
-        "name": "{name}",
-        "text": "*Je marche côte à côte avec Seoyeon. Nos pas se décalent souvent, mais aucun de nous ne lâche en premier.*"
-    },
-    "good_2_seo": {
-        "name": "{name}",
-        "text": "*Au bout de l'allée des cerisiers, Seoyeon s'arrête un demi-pas devant moi. Quand elle se retourne, son regard est moins tranchant qu'avant.*"
-    },
-    "good_3_seo": {
-        "name": "{name}",
-        "text": "*\"...Pourquoi tu viens pas ?\" Même en grommelant tout bas, c'était le pas de quelqu'un qui avait attendu.*"
-    },
-    "good_4_seo": {
-        "name": "{name}",
-        "text": "*Je souris, et Seoyeon fait semblant de ne pas voir avant de ralentir un peu.*"
-    },
-    "good_5_seo": {
-        "name": "{name}",
-        "text": "*En dépassant lentement le bout de l'allée des cerisiers, je me suis dit que j'avais envie de refaire ce chemin avec elle au printemps prochain. Cette fois, j'ai pu le dire.*"
-    },
-    "good_epilogue_1": {
-        "name": "{name}",
-        "text": "*Un message de Seoyeon. 'J'ai fait un double de la clé du toit pour demain. — C'est un laissez-passer, un laissez-passer.' Elle pouvait juste dire que c'était une invitation.*"
-    },
-    "good_epilogue_2": {
-        "name": "Seoyeon",
-        "text": "*Elle n'utilise jamais le mot 'invitation' jusqu'à la fin. À la place, elle envoie une photo de la clé copiée du toit.*"
-    },
-    "good_epilogue_3": {
-        "name": "{name}",
-        "text": "*Je mets la clé dans ma poche. Demain, ce sera à moi d’apporter le déjeuner sur le toit.*"
-    },
-    "good_5_cg_seo": {
-        "name": "Système",
-        "text": "─── GOOD END ───"
-    },
-    "good_1_yuna": {
-        "name": "Yuna",
-        "text": "...T'en as mis, du temps. Mais cette fois, j'ai lu ta phrase jusqu'au bout."
-    },
-    "good_1_yuna_b": {
-        "name": "Yuna",
-        "text": "*Elle me tend un mot plié. Quand je l'ouvre, il n'y a qu'une ligne: « La prochaine fois, ne disparais pas. »*"
-    },
-    "good_1_yuna_b_b": {
-        "name": "{name}",
-        "text": "*C'est une phrase courte, mais cette fois elle ressemblait à une demande.*"
-    },
-    "good_2_yuna": {
-        "name": "{name}",
-        "text": "*Sur le toit, Yuna s'appuie contre la rambarde. Même avec le vent, aujourd'hui elle ne se détourne pas la première.*"
-    },
-    "good_3_yuna": {
-        "name": "{name}",
-        "text": "*On regarde le même ciel. Elle parle peu, mais le silence n'est plus aussi froid qu'avant.*"
-    },
-    "good_4_yuna": {
-        "name": "Yuna",
-        "text": "*Elle glisse le marque-page dans une nouvelle page, du côté sans pli.*"
-    },
-    "good_5_yuna": {
-        "name": "{name}",
-        "text": "*Sortez par la porte du toit et descendez les escaliers. Les pas sont lents mais ne s'arrêtent pas. Cette fois, je lirai jusqu’au bout et je parlerai jusqu’au bout.*"
-    },
-    "good_epilogue_1_yuna": {
-        "name": "{name}",
-        "text": "*Un mot plié tombe du sac. Des plis marquent l'endroit où il a été pressé contre la doublure pendant longtemps. 'Si tu as fini le tome 1, je te prêterai le tome 2. — Yuna'*"
-    },
-    "good_epilogue_2_yuna": {
-        "name": "Yuna",
-        "text": "*Elle prépare la suite au lieu de parler. Après le tome 1, le tome 2. Après aujourd'hui, demain. C'est sa façon de dire « continuons à se voir ».*"
-    },
-    "good_epilogue_3_yuna": {
-        "name": "{name}",
-        "text": "*Au dos du mot, en petit. « ...Lisons la fin ensemble. » L'encre violet pâle a coulé.*"
-    },
-    "good_5_cg_yuna": {
-        "name": "Système",
-        "text": "─── GOOD END ───"
-    },
-    "good_1_dain": {
-        "name": "Dain",
-        "text": "Hé, c'est pas comme si tout était réglé. ...Mais ça va assez pour que je te relance la balle."
-    },
-    "good_2_dain": {
-        "name": "{name}",
-        "text": "*Devant le portail, Dain fait rebondir le ballon une fois, puis me l'envoie cette fois sans plaisanter.*"
-    },
-    "good_3_dain": {
-        "name": "{name}",
-        "text": "*Je l’attrape. Dain sourit seulement à ce moment-là. Le ballon rebondit encore dans ma paume.*"
-    },
-    "good_4_dain": {
-        "name": "{name}",
-        "text": "*Mon genou est encore bandé. Dain lance le ballon, et je l'attrape avec un temps de retard.*"
-    },
-    "good_5_dain": {
-        "name": "{name}",
-        "text": "*On passe le portail ensemble. Dain détend son poignet. Cette fois, aucun ballon ne revient.*"
-    },
-    "good_epilogue_1_dain": {
-        "name": "{name}",
-        "text": "*Un message de Dain. « Quelqu'un pour du sport demain matin ? » Un point d'interrogation à la fin. D'habitude, ça aurait été un point d'exclamation.*"
-    },
-    "good_epilogue_2_dain": {
-        "name": "{name}",
-        "text": "*Le message de Dain se termine par un point d'interrogation. Il reste à l'écran plus longtemps qu'un point d'exclamation.*"
-    },
-    "good_epilogue_3_dain": {
-        "name": "{name}",
-        "text": "*J'ai répondu. « Deal. » Pas de point d'exclamation. Parce que demain, j'irai en courant moi-même.*"
-    },
-    "good_5_cg_dain": {
-        "name": "Système",
-        "text": "─── GOOD END ───"
-    },
-    "day5_ending_confess_fail": {
-        "name": "{name}",
-        "text": "*Je l'ai dit. J'ai parlé. — Mais ce qui est revenu, c'était le silence.*"
-    },
-    "confess_fail_cg_seo": {
-        "name": "{name}",
-        "text": "*L'écran reste immobile. La réponse ne change pas.*"
-    },
-    "confess_fail_cg_yuna": {
-        "name": "{name}",
-        "text": "*L'écran reste immobile. La réponse ne change pas.*"
-    },
-    "confess_fail_cg_dain": {
-        "name": "{name}",
-        "text": "*L'écran reste immobile. La réponse ne change pas.*"
-    },
-    "confess_fail_1": {
-        "name": "{name}",
-        "text": "*Même après quelques pas, je n'arrive pas à baisser mon téléphone. La dernière phrase reste à côté de la mention lu.*"
-    },
-    "confess_fail_2": {
-        "name": "{name}",
-        "text": "*J'ai mis mon téléphone dans ma poche et je l'ai ressorti. La dernière phrase semblait plus courte à côté de la marque de lecture.*"
-    },
-    "confess_fail_3": {
-        "name": "{name}",
-        "text": "*J'ai dit que je l'aimais bien. La réponse a mis longtemps à arriver, et elle était courte.*"
-    },
-    "confess_fail_4": {
-        "name": "{name}",
-        "text": "*Les mots sont allés jusqu’au bout. Peut-être pour ça que mes pieds tremblent moins en repartant.*"
-    },
-    "confess_fail_5": {
-        "name": "Système",
-        "text": "─── FRIEND END (confession ratée) ───"
-    },
-    "day5_ending_friend": {
-        "name": "{name}",
-        "text": "*Au final, je n'ai pas pu le dire.*"
-    },
-    "friend_1": {
-        "name": "{name}",
-        "text": "*Les pétales de cerisier se dispersent dans le vent.*"
-    },
-    "friend_2": {
-        "name": "{name}",
-        "text": "*C'était pareil dans mon ancien lycée. Et me revoilà.*"
-    },
-    "friend_3": {
-        "name": "{name}",
-        "text": "*Il y a eu des moments où j'aurais pu dire que je t'aimais bien. À chaque fois, seul un sourire est sorti en premier.*"
-    },
-    "friend_route_check": {
-        "name": "Système",
-        "text": ""
-    },
-    "friend_4": {
-        "name": "{name}",
-        "text": "*Je sors par le portail et il y a un message sur mon téléphone. 'merci pour aujourd'hui lol' Je tape 'moi aussi', puis j'ajoute juste un smiley.*"
-    },
-    "friend_4_seo": {
-        "name": "{name}",
-        "text": "*Je sors par le portail et il y a un message. 'Grâce à toi c'était moins gênant aujourd'hui. Rentre bien.' Pas d'emoji à la fin de la phrase.*"
-    },
-    "friend_4_yuna": {
-        "name": "{name}",
-        "text": "*En sortant du portail, un message arrive. '...Aujourd'hui. Merci.' Le curseur clignote après le point. Aucune réponse ne vient facilement.*"
-    },
-    "friend_4_dain": {
-        "name": "{name}",
-        "text": "*Je sors par le portail et il y a un message. 'Hé fais gaffe ! Merci pour aujourd'hui !' Deux points d'exclamation. Je laisse juste 'ok' dans la fenêtre de réponse.*"
-    },
-    "friend_5": {
-        "name": "{name}",
-        "text": "*J'ai répondu. « Moi aussi, merci. » — Puis j'ai regardé l'écran. Deux lignes de conversation. Je souris, mais je ne me sens pas bien pour autant.*"
-    },
-    "friend_7": {
-        "name": "{name}",
-        "text": "*...Je n'ai pas pu le dire dans ce lycée non plus.*"
-    },
-    "friend_8": {
-        "name": "{name}",
-        "text": "*Jour de la remise des diplômes. Je fais défiler la galerie de mon téléphone. Là où il y avait la photo de Sojeong, il y a maintenant une photo de groupe avec elle.*"
-    },
-    "friend_9": {
-        "name": "{name}",
-        "text": "*Une fois de plus, je me tiens à côté de cette personne, avec l'expression la plus facile à tenir, à sourire comme un simple ami.*"
-    },
-    "friend_10": {
-        "name": "{name}",
-        "text": "*J'ouvre le bloc-notes. 'J'ai quelque chose à te dire.' — Le curseur clignote. Comme il y a trois ans. Je maintiens la touche effacer. Tout s'efface.*"
-    },
-    "friend_12": {
-        "name": "Système",
-        "text": "─── FRIEND END ───"
-    },
-    "day5_ending_mayhem": {
-        "name": "{name}",
-        "text": "*Les trois conversations sont bloquées sur 'lu'. J'essaie d'écrire une réponse, puis l'efface à la première lettre.*"
-    },
-    "mayhem_1": {
-        "name": "Seoyeon",
-        "text": "*Elle croise {name} dans le couloir. Elle ne tourne pas la tête.*"
-    },
-    "mayhem_2": {
-        "name": "{name}",
-        "text": "*La place de Yuna était vide. Un seul mot sur le bureau. «C'était bien.» Le point final était la fin.*"
-    },
-    "mayhem_3": {
-        "name": "Dain",
-        "text": "*Dain a ri comme d'habitude. \"comment vas-tu.\" La fin de ses mots tomba par terre. À ma connaissance, il n’y avait aucun point d’exclamation.*"
-    },
-    "mayhem_4": {
-        "name": "{name}",
-        "text": "*J'ai regardé le dos des trois personnes. Aucun des trois ne s'est retourné.*"
-    },
-    "mayhem_5": {
-        "name": "{name}",
-        "text": "*Le printemps se termine. Les fleurs de cerisier tombent. Personne n'est à mes côtés.*"
-    },
-    "mayhem_6": {
-        "name": "{name}",
-        "text": "*La confirmation est partie, mais chaque conversation gardait des questions sans réponse.*"
-    },
-    "mayhem_7": {
-        "name": "{name}",
-        "text": "*Regardez le mémo non envoyé sous la photo de Sojung. Cette fois, la bulle envoyée était longue. L'écran devient sombre tel quel.*"
-    },
-    "day5_ending_harem": {
-        "name": "{name}",
-        "text": "*Je vous aime toutes. — Quand ces mots sont sortis de ma bouche, les trois visages se sont figés en même temps.*"
-    },
-    "harem_1": {
-        "name": "Seoyeon",
-        "text": "*Elle a ri en premier....d'accord. C'est honnête. Les rires cessèrent bientôt.*"
-    },
-    "harem_1_b": {
-        "name": "Yuna",
-        "text": "*Elle baisse la tête. Quand elle relève enfin les yeux, ses doigts appuient fort sur le dos du livre.*"
-    },
-    "harem_2": {
-        "name": "Yuna",
-        "text": "...Tu es le pire."
-    },
-    "harem_3": {
-        "name": "Dain",
-        "text": "*Elle frappe l'épaule de {name} du poing. Le coup est assez fort pour piquer. \"Hé, t'es vraiment nul.\" Aucune trace de rire à la fin des mots.*"
-    },
-    "harem_4": {
-        "name": "{name}",
-        "text": "*Lundi, c'est Seoyeon. Mercredi, c'est Yuna. Vendredi, c'est Dain. Chaque fois qu'une notification d'agenda apparaît, je retourne d'abord l'écran de verrouillage.*"
-    },
-    "harem_5": {
-        "name": "Seoyeon",
-        "text": "*Lorsque elle a demandé: « Que fais-tu mercredi? », son doigt s'est arrêté dans la fenêtre de réponse.*"
-    },
-    "harem_6": {
-        "name": "{name}",
-        "text": "*Et malgré ça, aujourd'hui, elles sourient toutes les trois. Je vois bien ce que sera demain, et pourtant je m'accroche encore à aujourd'hui.*"
-    },
-    "harem_7": {
-        "name": "{name}",
-        "text": "*Trois alarmes sonnent à des moments différents. Chaque fois que les vibrations se chevauchent, l'estomac réagit en premier.*"
-    },
-    "harem_8": {
-        "name": "Système",
-        "text": "─── HAREM END ───"
     },
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
@@ -1178,6 +430,768 @@
         "name": "",
         "text": "─── Infirmière GOOD END ───"
     },
+    "ending_affinity_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_aff_check_seo": {
+        "name": "Système",
+        "text": ""
+    },
+    "perfect_seo_1": {
+        "name": "{name}",
+        "text": "*Le toit de Seoyeon. Je me tiens parmi les plantes qu'elle a cultivées elle-même.*"
+    },
+    "perfect_seo_1_b": {
+        "name": "Seoyeon",
+        "text": "*Ses yeux sont humides. Cette fois, elle ne les cache pas du revers de la main.*"
+    },
+    "perfect_seo_2": {
+        "name": "{name}",
+        "text": "*Le contour de ses yeux est trempé. Pourtant, elle ne détourne pas le regard.*"
+    },
+    "perfect_seo_3": {
+        "name": "Seoyeon",
+        "text": "...Même si tu as ce visage, ne t'enfuis pas."
+    },
+    "perfect_seo_4": {
+        "name": "Seoyeon",
+        "text": "*La brise du toit souffle.* Même après le diplôme, je viendrai ici. Ces plantes ne poussent que quand tu es là."
+    },
+    "perfect_seo_5": {
+        "name": "Seoyeon",
+        "text": "*Elle tend la main. Pas le petit doigt. La main entière.*"
+    },
+    "perfect_seo_5_b": {
+        "name": "{name}",
+        "text": "*La brise du toit souffle.*"
+    },
+    "perfect_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*J'ai parcouru le même chemin tous les matins. À côté de Seoyeon, la même route avait à chaque fois une expression différente.*"
+    },
+    "perfect_epilogue_bridge_seo": {
+        "name": "Système",
+        "text": "*Épilogue — Un an plus tard*"
+    },
+    "perfect_epilogue_2_seo": {
+        "name": "{name}",
+        "text": "*Jour de la cérémonie d'entrée à l'université. Un message sur mon téléphone. 'J'ai arrosé la plante aujourd'hui. — Mais reviens vite.'*"
+    },
+    "perfect_epilogue_3_seo": {
+        "name": "Seoyeon",
+        "text": "*Elle ne supprime pas les photos même quand son eye-liner a un peu coulé. Les cotons devant le miroir n'ont pas servi une seule fois aujourd'hui.*"
+    },
+    "perfect_epilogue_4_seo": {
+        "name": "Système",
+        "text": "─── PERFECT END (Seoyeon) ───"
+    },
+    "bitter_seo_1": {
+        "name": "{name}",
+        "text": "*Je me suis déclaré. Seoyeon a dit essayons. Un mois environ plus tard, elle m'a contacté pour se voir au café devant l'école. Le message se terminait seulement par un point.*"
+    },
+    "bitter_seo_2": {
+        "name": "Seoyeon",
+        "text": "... Je pensais que tout irait bien. Je suppose que toi et moi sommes tous les deux en retard."
+    },
+    "bitter_seo_2_b": {
+        "name": "{name}",
+        "text": "*Seoyeon au café. Son regard reste sur le sous-verre derrière ses lunettes. Le café qu'elle a commandé n'est même pas à moitié bu.*"
+    },
+    "bitter_seo_3": {
+        "name": "{name}",
+        "text": "*J'ai quitté le café. Il pleut. J'avais un parapluie — maintenant il y en a deux.*"
+    },
+    "true_seo_1": {
+        "name": "{name}",
+        "text": "*La chambre de Seoyeon. Ses parents sont sortis. Les objets sur le bureau sont alignés comme au cordeau, et la photo de famille dans le cadre est légèrement penchée.*"
+    },
+    "true_seo_2": {
+        "name": "{name}",
+        "text": "*— Sauf une chose. Sur le bureau, une rangée de plantes que Seoyeon a cultivées elle-même.*"
+    },
+    "true_seo_3": {
+        "name": "Seoyeon",
+        "text": "Devant toi, je crois que je n'ai pas besoin du visage répété."
+    },
+    "true_seo_4": {
+        "name": "{name}",
+        "text": "Tu n’avais pas besoin de le faire."
+    },
+    "true_seo_5": {
+        "name": "Seoyeon",
+        "text": "...savoir. Mais il a fallu du temps pour y croire."
+    },
+    "true_seo_6": {
+        "name": "Seoyeon",
+        "text": "*Elle sourit. Ses cheveux se dispersent dans le vent.*"
+    },
+    "true_seo_6b": {
+        "name": "Seoyeon",
+        "text": "Je devais toujours sourire. Mais avec toi, je veux juste être moi-même."
+    },
+    "true_seo_7": {
+        "name": "Seoyeon",
+        "text": "...Reste avec moi."
+    },
+    "true_seo_7_b": {
+        "name": "Seoyeon",
+        "text": "*Elle hésite puis tend son auriculaire.*"
+    },
+    "true_seo_7b": {
+        "name": "{name}",
+        "text": "*Je tends la main aussi. Juste avant qu'on se touche, Seoyeon sourit la première.*"
+    },
+    "true_seo_8": {
+        "name": "{name}",
+        "text": "*On a accroché nos auriculaires. Le doigt qui fendait le vide le premier jour est maintenant accroché au mien.*"
+    },
+    "true_seo_bridge": {
+        "name": "{name}",
+        "text": "*La promesse de Seoyeon est encore au bout de mes doigts.*"
+    },
+    "true_epilogue_1_seo": {
+        "name": "{name}",
+        "text": "*Cinq jours. Le temps qu'il a fallu pour voir le bout des doigts derrière le porte-documents de Seoyeon.*"
+    },
+    "ending_aff_check_yuna": {
+        "name": "Système",
+        "text": ""
+    },
+    "perfect_yuna_1": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque, le grenier secret. Yuna me tend une nouvelle.*"
+    },
+    "perfect_yuna_2": {
+        "name": "{name}",
+        "text": "*Le titre est le nom du protagoniste.*"
+    },
+    "perfect_yuna_3": {
+        "name": "Yuna",
+        "text": "...Dis-moi ce que tu en penses quand tu auras fini. C'est ma réponse."
+    },
+    "perfect_yuna_4": {
+        "name": "{name}",
+        "text": "*La dernière phrase du roman : « Il y avait quelqu'un qui ne disparaissait pas. » En dessous, l'encre a un peu bavé.*"
+    },
+    "perfect_yuna_5": {
+        "name": "Yuna",
+        "text": "*Elle s'est levée et m'a serré dans ses bras. Sans un mot. La lumière de la fenêtre cassée s'allongeait sur le sol. Sa main s'est arrêtée lentement dans mon dos.*"
+    },
+    "perfect_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*Je m'asseyais au même endroit tous les jours. Le son de Yuna tournant les pages était également légèrement différent chaque jour.*"
+    },
+    "perfect_epilogue_bridge_yuna": {
+        "name": "Système",
+        "text": "*Épilogue — Un an plus tard*"
+    },
+    "perfect_epilogue_2_yuna": {
+        "name": "{name}",
+        "text": "*Le premier roman de Yuna a été publié. La dédicace : 'À la troisième étoile.'*"
+    },
+    "perfect_epilogue_3_yuna": {
+        "name": "Yuna",
+        "text": "*Elle parle toujours peu. Mais avec {name} seulement, la longueur de ses phrases a changé.*"
+    },
+    "perfect_epilogue_4_yuna": {
+        "name": "Système",
+        "text": "─── PERFECT END (Yuna) ───"
+    },
+    "bitter_yuna_1": {
+        "name": "{name}",
+        "text": "*J'ai avoué. Yuna hocha la tête, mais ses doigts continuèrent de frotter le bout du marque-page. Environ un mois plus tard, une note a été placée dans mon casier. ‘Parlons.’*"
+    },
+    "bitter_yuna_2": {},
+    "bitter_yuna_2_library": {
+        "name": "Yuna",
+        "text": "...Parfois je pense à toi. Quand je sens l'odeur de la bibliothèque. J'aurais dû en dire plus à l'époque."
+    },
+    "bitter_yuna_2_book": {
+        "name": "Yuna",
+        "text": "...Parfois je pense à toi. Quand je passe devant une librairie. J'aurais dû en dire plus à l'époque."
+    },
+    "bitter_yuna_3": {
+        "name": "{name}",
+        "text": "*Je passe le portail de l'école. Il pleut. Dans la boîte aux lettres, le dernier mot de Yuna est glissé. Il est court. Le bas du papier est détrempé par la pluie.*"
+    },
+    "true_yuna_1": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. Plus profond que le coin de lecture secret — un grenier. Un espace dont j'ignorais même l'existence.*"
+    },
+    "true_yuna_2": {
+        "name": "Yuna",
+        "text": "J'étais la seule à connaître cet endroit."
+    },
+    "true_yuna_2_b": {
+        "name": "Yuna",
+        "text": "*Elle grimpe la petite échelle du grenier. Il y a une trappe vers le haut. — En l'ouvrant, une brise s'engouffre.*"
+    },
+    "true_yuna_2_c": {
+        "name": "{name}",
+        "text": "*Au-dessus du grenier, il y avait un toit. Le toit de l'annexe de la bibliothèque. — Un passage secret que personne ne connaît.*"
+    },
+    "true_yuna_2_d": {
+        "name": "Yuna",
+        "text": "*Elle s'appuie contre la rambarde. Les étoiles sont visibles.*"
+    },
+    "true_yuna_3": {
+        "name": "Yuna",
+        "text": "*Elle ouvre la petite fenêtre. On voit les étoiles.*"
+    },
+    "true_yuna_4": {
+        "name": "Yuna",
+        "text": "Maintenant toi aussi."
+    },
+    "true_yuna_5": {
+        "name": "{name}",
+        "text": "La troisième étoile ?"
+    },
+    "true_yuna_5_b": {
+        "name": "Yuna",
+        "text": "*Yuna s’arrête un instant. Sa main se desserre sur le dos du livre.*"
+    },
+    "true_yuna_6": {
+        "name": "Yuna",
+        "text": "...Tu t'en souvenais."
+    },
+    "true_yuna_6b": {
+        "name": "Yuna",
+        "text": "Pars pas. Reste ici ce soir."
+    },
+    "true_yuna_7": {
+        "name": "{name}",
+        "text": "*À côté du troisième astérisque, un point violet pâle comme la première note est marqué. Yuna referme le cahier et marche la première vers la porte de l'annexe.*"
+    },
+    "true_yuna_bridge": {
+        "name": "{name}",
+        "text": "*Les étoiles de Yuna sont encore là, juste devant moi.*"
+    },
+    "true_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*Cinq jours. Le temps qu'il a fallu pour entendre la voix de Yuna au-delà des notes.*"
+    },
+    "ending_aff_check_dain": {
+        "name": "Système",
+        "text": ""
+    },
+    "perfect_dain_1": {
+        "name": "{name}",
+        "text": "*Le gymnase. Dain frappe son dernier service. En défaisant ses bandages.*"
+    },
+    "perfect_dain_2": {
+        "name": "Dain",
+        "text": "C'est la dernière passe. — Mais c'est aussi un début."
+    },
+    "perfect_dain_2b": {
+        "name": "Dain",
+        "text": "*Elle pose le ballon de volley et attend la réponse de {name}.*"
+    },
+    "perfect_dain_3": {
+        "name": "Dain",
+        "text": "En dehors du terrain, est-ce que je suis quelqu'un de bien ?"
+    },
+    "perfect_dain_3b": {
+        "name": "Dain",
+        "text": "*Elle pose le ballon sur le terrain. Elle se retourne et sourit. Un sourire silencieux.*"
+    },
+    "perfect_dain_4": {
+        "name": "{name}",
+        "text": "Sur le terrain et en dehors."
+    },
+    "perfect_dain_5": {
+        "name": "Dain",
+        "text": "*Elle a sauté. Je n'étais pas prêt. Le ballon a roulé sur le sol — et dans le gymnase baigné de soleil couchant, il ne restait plus que deux ombres.*"
+    },
+    "perfect_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*Le genou de Dain plie légèrement à la réception. Elle rit d'abord, puis pose la main sur son genou.*"
+    },
+    "perfect_epilogue_1b_dain": {
+        "name": "{name}",
+        "text": "*Chaque matin elle enroulait des bandages, se frottait le genou en secret. Cette personne vient de sauter.*"
+    },
+    "perfect_epilogue_1c_dain": {
+        "name": "{name}",
+        "text": "*Les jours où ses genoux lui font mal, Dain ralentit. Je marche au même rythme à côté d'elle.*"
+    },
+    "perfect_epilogue_bridge_dain": {
+        "name": "Système",
+        "text": "*Épilogue — Un an plus tard*"
+    },
+    "perfect_epilogue_2_dain": {
+        "name": "Dain",
+        "text": "*Elle est devenu commentateur sportif. Souriant aussi devant la caméra. Cette fois, je n’insiste pas sur la fin de mes propos.*"
+    },
+    "perfect_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*Parfois son genou lui fait mal, dit-elle. Quand c'est le cas, on s'assoit côte à côte et on écoute l'air s'échapper du ballon.*"
+    },
+    "perfect_epilogue_4_dain": {
+        "name": "Système",
+        "text": "─── PERFECT END (Dain) ───"
+    },
+    "bitter_dain_1": {
+        "name": "{name}",
+        "text": "*J'ai avoué. Dain sourit avec bonhomie. C'était brillant comme les lumières d'un gymnase, mais ça n'a pas duré longtemps. Environ un mois plus tard, j'ai reçu un SMS me disant d'attendre devant le gymnase.*"
+    },
+    "bitter_dain_2": {
+        "name": "Dain",
+        "text": "C'était sympa ! ...Mais je crois que c'était seulement sympa. C'est ça qui me laisse un goût bizarre."
+    },
+    "bitter_dain_3": {
+        "name": "{name}",
+        "text": "*Je sors du gymnase. Il pleut. Derrière la porte fermée, un ballon rebondit une fois.*"
+    },
+    "bitter_dain_3_b": {
+        "name": "{name}",
+        "text": "*Je suis sorti du portail. Il pleut. — Pas de parapluie. Les pétales de cerisier collent au sol mouillé sous mes pieds.*"
+    },
+    "bitter_epilogue_1": {
+        "name": "{name}",
+        "text": "*Après le diplôme. Les contacts se sont espacés. Une fois par mois est devenu une fois tous les deux mois, laisser les messages sans réponse est devenu la norme, et un jour — quand j'ai voulu écrire et que j'ai bloqué sur quoi dire — j'ai su que c'était fini.*"
+    },
+    "bitter_epilogue_2": {
+        "name": "{name}",
+        "text": "*Un souvenir de cinq jours subsiste. Sur la dernière photo, il y a un écart entre nous assez large pour laisser passer quelqu'un.*"
+    },
+    "bitter_epilogue_3": {
+        "name": "Système",
+        "text": "─── BITTERSWEET END ───"
+    },
+    "true_dain_1": {
+        "name": "{name}",
+        "text": "*Le gymnase. Les mêmes lumières de secours qu'hier. Allongés côte à côte sur le tapis.*"
+    },
+    "true_dain_2": {
+        "name": "Dain",
+        "text": "*Elle prend la main de {name} et la pose contre l'intérieur de son poignet. Sans un mot.*"
+    },
+    "true_dain_2b": {
+        "name": "{name}",
+        "text": "*Vite. Une vitesse qui n'a pas besoin de mots.*"
+    },
+    "true_dain_3": {
+        "name": "{name}",
+        "text": "*Son pouls bat nettement sous mes doigts.*"
+    },
+    "true_dain_4": {
+        "name": "{name}",
+        "text": "*Les mots ne sortent pas. Mes lèvres restent légèrement entrouvertes.*"
+    },
+    "true_dain_5": {
+        "name": "{name}",
+        "text": "...C'est rapide."
+    },
+    "true_dain_6": {
+        "name": "Dain",
+        "text": "*se cachant à moitié le visage avec le ballon* Arrête de me regarder comme ça... C'est pas juste."
+    },
+    "true_dain_7": {
+        "name": "{name}",
+        "text": "Je ne regardais pas."
+    },
+    "true_dain_8": {
+        "name": "Dain",
+        "text": "Si tu regardais !! ...Mais tu peux continuer à regarder."
+    },
+    "true_dain_8b": {
+        "name": "Dain",
+        "text": "*La fin de sa voix remonte légèrement. Cette fois, ça ne sonne pas forcé.*"
+    },
+    "true_dain_bridge": {
+        "name": "{name}",
+        "text": "*Le rire de Dain résonne encore dans mes oreilles.*"
+    },
+    "true_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*Cinq jours. Le temps qu'il a fallu pour entendre l'endroit où les points d'exclamation de Dain s'arrêtaient.*"
+    },
+    "true_epilogue_2": {
+        "name": "{name}",
+        "text": "*L'uniforme était raide, les cerisiers me faisaient éternuer, et je ne savais pas quoi faire devant le portail.*"
+    },
+    "true_epilogue_3": {
+        "name": "{name}",
+        "text": "*Mais avec le recul — je crois que c'était déjà joué à l'instant où nos regards se sont croisés. Il m'a juste fallu cinq jours pour l'admettre.*"
+    },
+    "true_epilogue_4": {},
+    "true_epilogue_4_seo": {
+        "name": "{name}",
+        "text": "*Les appels de sa mère sont toujours brefs, et la répétition devant le miroir n'est pas terminée. Mais Seoyeon me regarde parfois maintenant avec un visage sans répétition.*"
+    },
+    "true_epilogue_4_yuna": {
+        "name": "{name}",
+        "text": "*Le contact de son aînée est toujours absent. Le siège du coin de la bibliothèque est toujours vide. Mais Yuna utilise maintenant sa voix avant les notes.*"
+    },
+    "true_epilogue_4_dain": {
+        "name": "{name}",
+        "text": "*Son genou est bandé tous les matins. Ses notes d'alarme ont toujours deux points d'exclamation. Mais Dain envoie parfois des messages qui se terminent par un point maintenant.*"
+    },
+    "true_epilogue_7": {
+        "name": "Système",
+        "text": "─── TRUE LOVE END ───"
+    },
+    "day5_ending_alone": {
+        "name": "{name}",
+        "text": "*Je franchis le portail. Mon téléphone sonne. — Personne. Alerte batterie faible.*"
+    },
+    "alone_1": {
+        "name": "{name}",
+        "text": "*Cinq jours. Sur le bureau reposent une clé, un mot, et une protection de poignet, côte à côte. Je n'ai pu en ranger aucun dans mon sac.*"
+    },
+    "alone_2": {
+        "name": "{name}",
+        "text": "*La chambre est silencieuse. Sur l'écran du téléphone, trois conversations sont épinglées en haut. Aucune n'a de nouveaux messages.*"
+    },
+    "alone_2_b": {
+        "name": "{name}",
+        "text": "*La chambre est calme. Derrière le bruit de la porte qui se ferme, les voix s'éteignent d'un seul coup. Les fleurs de cerisier devant la fenêtre sont dispersées par le vent.*"
+    },
+    "alone_4": {
+        "name": "{name}",
+        "text": "*J'éteins la lumière de la chambre et les sons de notification s'arrêtent. Seuls la clé, le mot et la protection de poignet restent dans l'obscurité sur le bureau.*"
+    },
+    "alone_5": {
+        "name": "Système",
+        "text": "─── ALONE END ───"
+    },
+    "ending_last_chance_resolve": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_seo": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_yuna": {
+        "name": "Système",
+        "text": ""
+    },
+    "ending_confessed_aff_dain": {
+        "name": "Système",
+        "text": ""
+    },
+    "day5_ending_confess_fail": {
+        "name": "{name}",
+        "text": "*Je l'ai dit. J'ai parlé. — Mais ce qui est revenu, c'était le silence.*"
+    },
+    "confess_fail_cg_seo": {
+        "name": "{name}",
+        "text": "*L'écran reste immobile. La réponse ne change pas.*"
+    },
+    "confess_fail_cg_yuna": {
+        "name": "{name}",
+        "text": "*L'écran reste immobile. La réponse ne change pas.*"
+    },
+    "confess_fail_cg_dain": {
+        "name": "{name}",
+        "text": "*L'écran reste immobile. La réponse ne change pas.*"
+    },
+    "confess_fail_1": {
+        "name": "{name}",
+        "text": "*Même après quelques pas, je n'arrive pas à baisser mon téléphone. La dernière phrase reste à côté de la mention lu.*"
+    },
+    "confess_fail_2": {
+        "name": "{name}",
+        "text": "*J'ai mis mon téléphone dans ma poche et je l'ai ressorti. La dernière phrase semblait plus courte à côté de la marque de lecture.*"
+    },
+    "confess_fail_3": {
+        "name": "{name}",
+        "text": "*J'ai dit que je l'aimais bien. La réponse a mis longtemps à arriver, et elle était courte.*"
+    },
+    "confess_fail_4": {
+        "name": "{name}",
+        "text": "*Les mots sont allés jusqu’au bout. Peut-être pour ça que mes pieds tremblent moins en repartant.*"
+    },
+    "confess_fail_5": {
+        "name": "Système",
+        "text": "─── FRIEND END (confession ratée) ───"
+    },
+    "day5_ending_good": {
+        "name": "{name}",
+        "text": "*Le simple fait d'avoir dit « je t'aime » n'a pas tout réglé. Mais on a décidé de ne pas s'arrêter là.*"
+    },
+    "good_1": {
+        "name": "{name}",
+        "text": "*On a été maladroits, en retard, et parfois complètement à côté.*"
+    },
+    "good_1b": {
+        "name": "{name}",
+        "text": "*Malgré tout, nous marchons dans la même direction.*"
+    },
+    "good_1c": {
+        "name": "{name}",
+        "text": "*Un pétale de cerisier se colle au bout de ma chaussure, puis tombe au pas suivant.*"
+    },
+    "good_1_seo": {
+        "name": "Seoyeon",
+        "text": "On est maladroits tous les deux. ...Mais cette fois, ne lâche pas au milieu."
+    },
+    "good_1_seo_b": {
+        "name": "Seoyeon",
+        "text": "*Elle remet une fois le bout de la manche de {name}, comme si elle retirait un pétale de cerisier. Le geste est brusque, mais il ne repousse pas.*"
+    },
+    "good_1_seo_c": {
+        "name": "Seoyeon",
+        "text": "*Elle ralentit d'un demi-pas sans rien dire. Elle attend que l'épaule de {name} arrive à la hauteur de la sienne.*"
+    },
+    "good_1_seo_d": {
+        "name": "{name}",
+        "text": "*Je marche côte à côte avec Seoyeon. Nos pas se décalent souvent, mais aucun de nous ne lâche en premier.*"
+    },
+    "good_2_seo": {
+        "name": "{name}",
+        "text": "*Au bout de l'allée des cerisiers, Seoyeon s'arrête un demi-pas devant moi. Quand elle se retourne, son regard est moins tranchant qu'avant.*"
+    },
+    "good_3_seo": {
+        "name": "{name}",
+        "text": "*\"...Pourquoi tu viens pas ?\" Même en grommelant tout bas, c'était le pas de quelqu'un qui avait attendu.*"
+    },
+    "good_4_seo": {
+        "name": "{name}",
+        "text": "*Je souris, et Seoyeon fait semblant de ne pas voir avant de ralentir un peu.*"
+    },
+    "good_5_seo": {
+        "name": "{name}",
+        "text": "*En dépassant lentement le bout de l'allée des cerisiers, je me suis dit que j'avais envie de refaire ce chemin avec elle au printemps prochain. Cette fois, j'ai pu le dire.*"
+    },
+    "good_epilogue_1": {
+        "name": "{name}",
+        "text": "*Un message de Seoyeon. 'J'ai fait un double de la clé du toit pour demain. — C'est un laissez-passer, un laissez-passer.' Elle pouvait juste dire que c'était une invitation.*"
+    },
+    "good_epilogue_2": {
+        "name": "Seoyeon",
+        "text": "*Elle n'utilise jamais le mot 'invitation' jusqu'à la fin. À la place, elle envoie une photo de la clé copiée du toit.*"
+    },
+    "good_epilogue_3": {
+        "name": "{name}",
+        "text": "*Je mets la clé dans ma poche. Demain, ce sera à moi d’apporter le déjeuner sur le toit.*"
+    },
+    "good_5_cg_seo": {
+        "name": "Système",
+        "text": "─── GOOD END ───"
+    },
+    "good_1_yuna": {
+        "name": "Yuna",
+        "text": "...T'en as mis, du temps. Mais cette fois, j'ai lu ta phrase jusqu'au bout."
+    },
+    "good_1_yuna_b": {
+        "name": "Yuna",
+        "text": "*Elle me tend un mot plié. Quand je l'ouvre, il n'y a qu'une ligne: « La prochaine fois, ne disparais pas. »*"
+    },
+    "good_1_yuna_b_b": {
+        "name": "{name}",
+        "text": "*C'est une phrase courte, mais cette fois elle ressemblait à une demande.*"
+    },
+    "good_2_yuna": {
+        "name": "{name}",
+        "text": "*Sur le toit, Yuna s'appuie contre la rambarde. Même avec le vent, aujourd'hui elle ne se détourne pas la première.*"
+    },
+    "good_3_yuna": {
+        "name": "{name}",
+        "text": "*On regarde le même ciel. Elle parle peu, mais le silence n'est plus aussi froid qu'avant.*"
+    },
+    "good_4_yuna": {
+        "name": "Yuna",
+        "text": "*Elle glisse le marque-page dans une nouvelle page, du côté sans pli.*"
+    },
+    "good_5_yuna": {
+        "name": "{name}",
+        "text": "*Sortez par la porte du toit et descendez les escaliers. Les pas sont lents mais ne s'arrêtent pas. Cette fois, je lirai jusqu’au bout et je parlerai jusqu’au bout.*"
+    },
+    "good_epilogue_1_yuna": {
+        "name": "{name}",
+        "text": "*Un mot plié tombe du sac. Des plis marquent l'endroit où il a été pressé contre la doublure pendant longtemps. 'Si tu as fini le tome 1, je te prêterai le tome 2. — Yuna'*"
+    },
+    "good_epilogue_2_yuna": {
+        "name": "Yuna",
+        "text": "*Elle prépare la suite au lieu de parler. Après le tome 1, le tome 2. Après aujourd'hui, demain. C'est sa façon de dire « continuons à se voir ».*"
+    },
+    "good_epilogue_3_yuna": {
+        "name": "{name}",
+        "text": "*Au dos du mot, en petit. « ...Lisons la fin ensemble. » L'encre violet pâle a coulé.*"
+    },
+    "good_5_cg_yuna": {
+        "name": "Système",
+        "text": "─── GOOD END ───"
+    },
+    "good_1_dain": {
+        "name": "Dain",
+        "text": "Hé, c'est pas comme si tout était réglé. ...Mais ça va assez pour que je te relance la balle."
+    },
+    "good_2_dain": {
+        "name": "{name}",
+        "text": "*Devant le portail, Dain fait rebondir le ballon une fois, puis me l'envoie cette fois sans plaisanter.*"
+    },
+    "good_3_dain": {
+        "name": "{name}",
+        "text": "*Je l’attrape. Dain sourit seulement à ce moment-là. Le ballon rebondit encore dans ma paume.*"
+    },
+    "good_4_dain": {
+        "name": "{name}",
+        "text": "*Mon genou est encore bandé. Dain lance le ballon, et je l'attrape avec un temps de retard.*"
+    },
+    "good_5_dain": {
+        "name": "{name}",
+        "text": "*On passe le portail ensemble. Dain détend son poignet. Cette fois, aucun ballon ne revient.*"
+    },
+    "good_epilogue_1_dain": {
+        "name": "{name}",
+        "text": "*Un message de Dain. « Quelqu'un pour du sport demain matin ? » Un point d'interrogation à la fin. D'habitude, ça aurait été un point d'exclamation.*"
+    },
+    "good_epilogue_2_dain": {
+        "name": "{name}",
+        "text": "*Le message de Dain se termine par un point d'interrogation. Il reste à l'écran plus longtemps qu'un point d'exclamation.*"
+    },
+    "good_epilogue_3_dain": {
+        "name": "{name}",
+        "text": "*J'ai répondu. « Deal. » Pas de point d'exclamation. Parce que demain, j'irai en courant moi-même.*"
+    },
+    "good_5_cg_dain": {
+        "name": "Système",
+        "text": "─── GOOD END ───"
+    },
+    "day5_ending_friend": {
+        "name": "{name}",
+        "text": "*Au final, je n'ai pas pu le dire.*"
+    },
+    "friend_1": {
+        "name": "{name}",
+        "text": "*Les pétales de cerisier se dispersent dans le vent.*"
+    },
+    "friend_2": {
+        "name": "{name}",
+        "text": "*C'était pareil dans mon ancien lycée. Et me revoilà.*"
+    },
+    "friend_3": {
+        "name": "{name}",
+        "text": "*Il y a eu des moments où j'aurais pu dire que je t'aimais bien. À chaque fois, seul un sourire est sorti en premier.*"
+    },
+    "friend_route_check": {
+        "name": "Système",
+        "text": ""
+    },
+    "friend_4": {
+        "name": "{name}",
+        "text": "*Je sors par le portail et il y a un message sur mon téléphone. 'merci pour aujourd'hui lol' Je tape 'moi aussi', puis j'ajoute juste un smiley.*"
+    },
+    "friend_4_seo": {
+        "name": "{name}",
+        "text": "*Je sors par le portail et il y a un message. 'Grâce à toi c'était moins gênant aujourd'hui. Rentre bien.' Pas d'emoji à la fin de la phrase.*"
+    },
+    "friend_4_yuna": {
+        "name": "{name}",
+        "text": "*En sortant du portail, un message arrive. '...Aujourd'hui. Merci.' Le curseur clignote après le point. Aucune réponse ne vient facilement.*"
+    },
+    "friend_4_dain": {
+        "name": "{name}",
+        "text": "*Je sors par le portail et il y a un message. 'Hé fais gaffe ! Merci pour aujourd'hui !' Deux points d'exclamation. Je laisse juste 'ok' dans la fenêtre de réponse.*"
+    },
+    "friend_5": {
+        "name": "{name}",
+        "text": "*J'ai répondu. « Moi aussi, merci. » — Puis j'ai regardé l'écran. Deux lignes de conversation. Je souris, mais je ne me sens pas bien pour autant.*"
+    },
+    "friend_7": {
+        "name": "{name}",
+        "text": "*...Je n'ai pas pu le dire dans ce lycée non plus.*"
+    },
+    "friend_8": {
+        "name": "{name}",
+        "text": "*Jour de la remise des diplômes. Je fais défiler la galerie de mon téléphone. Là où il y avait la photo de Sojeong, il y a maintenant une photo de groupe avec elle.*"
+    },
+    "friend_9": {
+        "name": "{name}",
+        "text": "*Une fois de plus, je me tiens à côté de cette personne, avec l'expression la plus facile à tenir, à sourire comme un simple ami.*"
+    },
+    "friend_10": {
+        "name": "{name}",
+        "text": "*J'ouvre le bloc-notes. 'J'ai quelque chose à te dire.' — Le curseur clignote. Comme il y a trois ans. Je maintiens la touche effacer. Tout s'efface.*"
+    },
+    "friend_12": {
+        "name": "Système",
+        "text": "─── FRIEND END ───"
+    },
+    "day5_ending_mayhem": {
+        "name": "{name}",
+        "text": "*Les trois conversations sont bloquées sur 'lu'. J'essaie d'écrire une réponse, puis l'efface à la première lettre.*"
+    },
+    "mayhem_1": {
+        "name": "Seoyeon",
+        "text": "*Elle croise {name} dans le couloir. Elle ne tourne pas la tête.*"
+    },
+    "mayhem_2": {
+        "name": "{name}",
+        "text": "*La place de Yuna était vide. Un seul mot sur le bureau. «C'était bien.» Le point final était la fin.*"
+    },
+    "mayhem_3": {
+        "name": "Dain",
+        "text": "*Dain a ri comme d'habitude. \"comment vas-tu.\" La fin de ses mots tomba par terre. À ma connaissance, il n’y avait aucun point d’exclamation.*"
+    },
+    "mayhem_4": {
+        "name": "{name}",
+        "text": "*J'ai regardé le dos des trois personnes. Aucun des trois ne s'est retourné.*"
+    },
+    "mayhem_5": {
+        "name": "{name}",
+        "text": "*Le printemps se termine. Les fleurs de cerisier tombent. Personne n'est à mes côtés.*"
+    },
+    "mayhem_6": {
+        "name": "{name}",
+        "text": "*La confirmation est partie, mais chaque conversation gardait des questions sans réponse.*"
+    },
+    "mayhem_7": {
+        "name": "{name}",
+        "text": "*Regardez le mémo non envoyé sous la photo de Sojung. Cette fois, la bulle envoyée était longue. L'écran devient sombre tel quel.*"
+    },
+    "mayhem_8": {
+        "name": "Système",
+        "text": "─── MAYHEM END ───"
+    },
+    "day5_ending_harem": {
+        "name": "{name}",
+        "text": "*Je vous aime toutes. — Quand ces mots sont sortis de ma bouche, les trois visages se sont figés en même temps.*"
+    },
+    "harem_1": {
+        "name": "Seoyeon",
+        "text": "*Elle a ri en premier....d'accord. C'est honnête. Les rires cessèrent bientôt.*"
+    },
+    "harem_1_b": {
+        "name": "Yuna",
+        "text": "*Elle baisse la tête. Quand elle relève enfin les yeux, ses doigts appuient fort sur le dos du livre.*"
+    },
+    "harem_2": {
+        "name": "Yuna",
+        "text": "...Tu es le pire."
+    },
+    "harem_3": {
+        "name": "Dain",
+        "text": "*Elle frappe l'épaule de {name} du poing. Le coup est assez fort pour piquer. \"Hé, t'es vraiment nul.\" Aucune trace de rire à la fin des mots.*"
+    },
+    "harem_4": {
+        "name": "{name}",
+        "text": "*Lundi, c'est Seoyeon. Mercredi, c'est Yuna. Vendredi, c'est Dain. Chaque fois qu'une notification d'agenda apparaît, je retourne d'abord l'écran de verrouillage.*"
+    },
+    "harem_5": {
+        "name": "Seoyeon",
+        "text": "*Lorsque elle a demandé: « Que fais-tu mercredi? », son doigt s'est arrêté dans la fenêtre de réponse.*"
+    },
+    "harem_6": {
+        "name": "{name}",
+        "text": "*Et malgré ça, aujourd'hui, elles sourient toutes les trois. Je vois bien ce que sera demain, et pourtant je m'accroche encore à aujourd'hui.*"
+    },
+    "harem_7": {
+        "name": "{name}",
+        "text": "*Trois alarmes sonnent à des moments différents. Chaque fois que les vibrations se chevauchent, l'estomac réagit en premier.*"
+    },
+    "harem_8": {
+        "name": "Système",
+        "text": "─── HAREM END ───"
+    },
     "day5_credits": {
         "name": "",
         "text": ""
@@ -1188,18 +1202,5 @@
         "choices": [
             "Recommencer depuis le début"
         ]
-    },
-    "ending_hidden_commit_check": {},
-    "perfect_epilogue_1b_dain": {
-        "name": "{name}",
-        "text": "*Chaque matin elle enroulait des bandages, se frottait le genou en secret. Cette personne vient de sauter.*"
-    },
-    "perfect_epilogue_1c_dain": {
-        "name": "{name}",
-        "text": "*Les jours où ses genoux lui font mal, Dain ralentit. Je marche au même rythme à côté d'elle.*"
-    },
-    "mayhem_8": {
-        "name": "Système",
-        "text": "─── MAYHEM END ───"
     }
 }

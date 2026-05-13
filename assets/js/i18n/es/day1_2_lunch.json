@@ -7,6 +7,10 @@
         "name": "{name}",
         "text": "*Al final del pasillo, Seoyeon me mira y me hace un gesto. Señalando hacia la azotea.*"
     },
+    "lunch_start_4_b": {
+        "name": "{name}",
+        "text": "*A mi lado, Dain me agarra del brazo.*"
+    },
     "lunch_start_5": {
         "name": "Dain",
         "text": "¡Oye! ¡¿Ya comiste?! ¡Vamos a la tienda! ¡Apuesta de pan, paga el que pierda!"
@@ -32,6 +36,14 @@
         "name": "Seoyeon",
         "text": "*Abre la puerta de la azotea con una llave. Una ráfaga de viento nos recibe.*"
     },
+    "lunch_seo_1_aff_high": {
+        "name": "Seoyeon",
+        "text": "Siéntate aquí. Lo que dijiste en el pasillo antes — me hizo gracia."
+    },
+    "lunch_seo_1_aff_default": {
+        "name": "Seoyeon",
+        "text": "...¿Te vas a sentar o qué?"
+    },
     "lunch_seo_2": {
         "name": "{name}",
         "text": "*La azotea está limpia. Cada maceta aún tiene restos de humedad, y las sillas plegables están apoyadas contra la pared a intervalos iguales.*"
@@ -51,6 +63,10 @@
     "lunch_seo_6": {
         "name": "{name}",
         "text": "¿Trato especial el primer día? Suena sospechoso."
+    },
+    "lunch_seo_6_b": {
+        "name": "Seoyeon",
+        "text": "*Empuja la silla con la punta del pie y la alinea hacia {name}.* Qué desconfiado. Arriba está tranquilo."
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
@@ -124,9 +140,17 @@
         "name": "{name}",
         "text": "...Está bueno."
     },
+    "lunch_seo_c1_2_b": {
+        "name": "Seoyeon",
+        "text": "*Gira la cabeza y juguetea sin motivo con su botella de agua.*"
+    },
     "lunch_seo_c1_3": {
         "name": "Seoyeon",
         "text": "...Obviamente."
+    },
+    "lunch_seo_c1_3_b": {
+        "name": "{name}",
+        "text": "*La etiqueta de la botella de agua gira al alcance de tu mano. Finge que no lo sabes y levanta tus palillos.*"
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
@@ -163,6 +187,12 @@
     "lunch_seo_after_7": {
         "name": "{name}",
         "text": "*El meñique de Seoyeon vuelve a apartar las puntas de su cabello.*"
+    },
+    "lunch_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Ordena la tapa del bento y deja un poco de sitio a su lado.* Corre buen viento, ¿no?",
+        "context": "Almuerzo del primer día, acaban de comer el bento de Seoyeon en la azotea. Aún conociéndose. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
+        "personality": "Seoyeon es la presidenta del consejo estudiantil, elegante y directa. Muestra interés a través de acciones."
     },
     "lunch_dain_1": {
         "name": "Dain",
@@ -215,6 +245,10 @@
     "lunch_dain_12": {
         "name": "{name}",
         "text": "Una promesa es una promesa."
+    },
+    "lunch_dain_12_b": {
+        "name": "Dain",
+        "text": "¡Ah, bueno! ¡Yo invito, yo invito! ¡Señora, dos panes de soboro!"
     },
     "lunch_dain_14": {
         "name": "Dain",
@@ -296,6 +330,12 @@
         "name": "Dain",
         "text": "*Golpea suavemente el hombro de {name} con el puño. El gesto es juguetón, pero en su rostro queda una expresión orgullosa.*"
     },
+    "lunch_dain_freetalk": {
+        "name": "Dain",
+        "text": "*Dobla el envoltorio del pan, se lo guarda en el bolsillo y se apoya en el respaldo del banco.* Entonces, estudiante nuevo. ¿Qué nota le das a la tienda?",
+        "context": "Almuerzo del primer día, acaban de jugar piedra, papel o tijera con Dain. Ella perdió y compró pan. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
+        "personality": "Dain es una atleta enérgica. Le encanta el contacto físico, usa muchas exclamaciones. Dura por fuera, suave por dentro."
+    },
     "lunch_yuna_1": {
         "name": "{name}",
         "text": "*Sigo la silueta de Yuna hasta la biblioteca. Ya sonó la campana del almuerzo, pero solo la silla del mostrador de préstamos está vacía, ligeramente torcida.*"
@@ -316,6 +356,10 @@
         "name": "{name}",
         "text": "*5 segundos. 10 segundos. — Ni una palabra.*"
     },
+    "lunch_yuna_5_b": {
+        "name": "{name}",
+        "text": "...¿Puedo sentarme aquí?"
+    },
     "lunch_yuna_7": {
         "name": "Yuna",
         "text": "*sin apartar la vista del libro* ...Si no haces ruido."
@@ -327,6 +371,10 @@
     "lunch_yuna_10": {
         "name": "{name}",
         "text": "*En la biblioteca, a la hora del almuerzo, sin cruzar una palabra — y no resulta incómodo. Al contrario, se está bien.*"
+    },
+    "lunch_yuna_10_b": {
+        "name": "{name}",
+        "text": "*Hay un viejo marcapáginas en el escritorio de Yuna. La escritura es difícil de ver. Yuna pone su mano sobre él. Saco un libro al azar de un estante cercano.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -380,36 +428,6 @@
         "name": "Yuna",
         "text": "*Se levanta primero y se va caminando. No mira atrás. 'Estuvo bien.' Esas palabras quedan solas sobre la mesa.*"
     },
-    "lunch_end": {
-        "name": "{name}",
-        "text": "*Suena la campana. El almuerzo terminó.*"
-    },
-    "lunch_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Ordena la tapa del bento y deja un poco de sitio a su lado.* Corre buen viento, ¿no?",
-        "context": "Almuerzo del primer día, acaban de comer el bento de Seoyeon en la azotea. Aún conociéndose. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
-        "personality": "Seoyeon es la presidenta del consejo estudiantil, elegante y directa. Muestra interés a través de acciones."
-    },
-    "lunch_dain_freetalk": {
-        "name": "Dain",
-        "text": "*Dobla el envoltorio del pan, se lo guarda en el bolsillo y se apoya en el respaldo del banco.* Entonces, estudiante nuevo. ¿Qué nota le das a la tienda?",
-        "context": "Almuerzo del primer día, acaban de jugar piedra, papel o tijera con Dain. Ella perdió y compró pan. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
-        "personality": "Dain es una atleta enérgica. Le encanta el contacto físico, usa muchas exclamaciones. Dura por fuera, suave por dentro."
-    },
-    "lunch_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Pone el marcapáginas y cierra el libro. Su voz es baja.* ...El silencio no te molesta, ¿verdad?",
-        "context": "Almuerzo del primer día, acaban de pasar tiempo con Yuna en la biblioteca. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
-        "personality": "Yuna es una chica literaria y misteriosa. Frases cortas y secas, pero cuando se abre, sus frases se alargan."
-    },
-    "lunch_seo_1_aff_high": {
-        "name": "Seoyeon",
-        "text": "Siéntate aquí. Lo que dijiste en el pasillo antes — me hizo gracia."
-    },
-    "lunch_seo_1_aff_default": {
-        "name": "Seoyeon",
-        "text": "...¿Te vas a sentar o qué?"
-    },
     "lunch_yuna_choice": {
         "name": "{name}",
         "text": "*El libro que Yuna dejó olvidado llama mi atención. — No se ha ido muy lejos. La seguí.*",
@@ -434,32 +452,14 @@
         "name": "Yuna",
         "text": "...Pero esta biblioteca no está mal. Es tranquila."
     },
-    "lunch_start_4_b": {
+    "lunch_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Pone el marcapáginas y cierra el libro. Su voz es baja.* ...El silencio no te molesta, ¿verdad?",
+        "context": "Almuerzo del primer día, acaban de pasar tiempo con Yuna en la biblioteca. Tono: ligero y prudente porque aún es el primer día. No sacar historias pesadas del pasado. Bromas e intercambios breves.",
+        "personality": "Yuna es una chica literaria y misteriosa. Frases cortas y secas, pero cuando se abre, sus frases se alargan."
+    },
+    "lunch_end": {
         "name": "{name}",
-        "text": "*A mi lado, Dain me agarra del brazo.*"
-    },
-    "lunch_seo_6_b": {
-        "name": "Seoyeon",
-        "text": "*Empuja la silla con la punta del pie y la alinea hacia {name}.* Qué desconfiado. Arriba está tranquilo."
-    },
-    "lunch_seo_c1_2_b": {
-        "name": "Seoyeon",
-        "text": "*Gira la cabeza y juguetea sin motivo con su botella de agua.*"
-    },
-    "lunch_seo_c1_3_b": {
-        "name": "{name}",
-        "text": "*La etiqueta de la botella de agua gira al alcance de tu mano. Finge que no lo sabes y levanta tus palillos.*"
-    },
-    "lunch_dain_12_b": {
-        "name": "Dain",
-        "text": "¡Ah, bueno! ¡Yo invito, yo invito! ¡Señora, dos panes de soboro!"
-    },
-    "lunch_yuna_5_b": {
-        "name": "{name}",
-        "text": "...¿Puedo sentarme aquí?"
-    },
-    "lunch_yuna_10_b": {
-        "name": "{name}",
-        "text": "*Hay un viejo marcapáginas en el escritorio de Yuna. La escritura es difícil de ver. Yuna pone su mano sobre él. Saco un libro al azar de un estante cercano.*"
+        "text": "*Suena la campana. El almuerzo terminó.*"
     }
 }

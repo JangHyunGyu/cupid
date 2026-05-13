@@ -7,18 +7,6 @@
         "name": "Système",
         "text": ""
     },
-    "after5_hidden_farewell_1": {
-        "name": "{name}",
-        "text": "*Le portail de l'école. Trois silhouettes au loin. Seoyeon marche avec Haeun, Dain lance un ballon en courant, Yuna lit lentement. Aucune ne regarde par ici.*"
-    },
-    "after5_hidden_farewell_3": {
-        "name": "{name}",
-        "text": "*Ce n’est pas facile pour moi de dire que je suis désolé. Je n’ai levé la main qu’une seule fois devant le portail de l’école. Merci.*"
-    },
-    "after5_hidden_farewell_3b": {
-        "name": "{name}",
-        "text": "*Je me suis dirigé vers l'arrière de l'école.*"
-    },
     "after5_farewell_seo_1": {
         "name": "{name}",
         "text": "*Je croise Seoyeon dans le couloir.*"
@@ -113,6 +101,18 @@
         "name": "{name}",
         "text": "*J'ai quitté le gymnase et me suis dirigé vers l'arrière de l'école.*"
     },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*Le portail de l'école. Trois silhouettes au loin. Seoyeon marche avec Haeun, Dain lance un ballon en courant, Yuna lit lentement. Aucune ne regarde par ici.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*Ce n’est pas facile pour moi de dire que je suis désolé. Je n’ai levé la main qu’une seule fois devant le portail de l’école. Merci.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*Je me suis dirigé vers l'arrière de l'école.*"
+    },
     "after5_sunset_1": {
         "name": "{name}",
         "text": "*Le couchant accroche chaque fenêtre de la cour. La salle de diffusion annonce la fin de l'événement, et les haut-parleurs du terrain grésillent un temps de retard.*"
@@ -129,18 +129,6 @@
             "Aller vers la personne à qui j'ai déjà fait une promesse",
             "Aller vers celle qui est restée dans mon cœur"
         ]
-    },
-    "after5_set_harem": {
-        "name": "{name}",
-        "text": "*Les mots repliés à midi subsistent. Trois fils de messages s'allument simultanément, et tu ne peux taper une première lettre dans aucun.*"
-    },
-    "after5_harem_walk_1": {
-        "name": "{name}",
-        "text": "*Sans que personne n'ose parler le premier, nous avons quitté l'arrière de l'école.*"
-    },
-    "after5_harem_walk_2": {
-        "name": "{name}",
-        "text": "*Des messages sans réponse restent sur l'écran de verrouillage. Tes pas se sont dirigés vers le parc.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -377,8 +365,20 @@
         "name": "{name}",
         "text": "*Je suis rentré chez moi.*"
     },
+    "after5_set_harem": {
+        "name": "{name}",
+        "text": "*Les mots repliés à midi subsistent. Trois fils de messages s'allument simultanément, et tu ne peux taper une première lettre dans aucun.*"
+    },
     "after5_harem_commit": {
         "name": "{name}",
         "text": "*Les mots coincés dans ta gorge sortent. Que tu ne peux pas en choisir une. Les trois expressions se figent simultanément.*"
+    },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*Sans que personne n'ose parler le premier, nous avons quitté l'arrière de l'école.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*Des messages sans réponse restent sur l'écran de verrouillage. Tes pas se sont dirigés vers le parc.*"
     }
 }

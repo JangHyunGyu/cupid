@@ -797,6 +797,10 @@
         "name": "{name}",
         "text": "*返信を書いては消す。入力欄に一文字だけ残って、それも消える。*"
     },
+    "day4_night_reflect": {
+        "name": "{name}",
+        "text": "*土曜日はこうして過ぎていった。明日は学校行事。— 日曜日なのに登校か。*"
+    },
     "day4_hidden_msg_branch": {
         "name": "システム",
         "text": ""
@@ -832,10 +836,6 @@
     "night_nurse_msg_4": {
         "name": "保健先生",
         "text": "...おやすみ。"
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*土曜日はこうして過ぎていった。明日は学校行事。— 日曜日なのに登校か。*"
     },
     "day4_night_sleep": {
         "name": "{name}",

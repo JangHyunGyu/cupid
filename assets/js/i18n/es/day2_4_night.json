@@ -15,6 +15,10 @@
         "name": "Dain",
         "text": "¡¡mañana otra apuesta!! ¡¡cambiemos de reto!!"
     },
+    "night2_msg_seo_general": {
+        "name": "Seoyeon",
+        "text": "Mañana a la hora del almuerzo dejo la azotea abierta. Ven"
+    },
     "night2_msg_seo_specific": {
         "name": "Seoyeon",
         "text": "Gracias por lo de hoy. Terminamos pronto gracias a ti"
@@ -30,10 +34,6 @@
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
         "text": "...tócala otro día"
-    },
-    "night2_msg_seo_general": {
-        "name": "Seoyeon",
-        "text": "Mañana a la hora del almuerzo dejo la azotea abierta. Ven"
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -96,6 +96,14 @@
         "name": "{name}",
         "text": "*Otra vez tres seguidos.*"
     },
+    "night2_reply_dain_react_high": {
+        "name": "Dain",
+        "text": "jajaja estás loco. ¡Mañana te quiero en el gimnasio sí o sí!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "Dain",
+        "text": "jaja bueno. ¡buenas noches!"
+    },
     "night2_reply_seo_1": {
         "name": "{name}",
         "text": "Si me llamas, vuelvo"
@@ -115,6 +123,14 @@
     "night2_reply_seo_5": {
         "name": "{name}",
         "text": "*'Esta vez ven de verdad.' — Un tono con consecuencias si fallo.*"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "Seoyeon",
+        "text": "...Resulta que eres más interesante de lo que creía. ¿Almorzamos mañana en la azotea?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "Seoyeon",
+        "text": "ja. Bueno. Hasta mañana."
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -140,9 +156,49 @@
         "name": "Yuna",
         "text": "Luego te digo por qué"
     },
+    "night2_reply_yuna_6_b": {
+        "name": "{name}",
+        "text": "*Abrí la ventana. Entra aire frío. Las estrellas son muchas, y mi dedo se detiene en la tercera, suspendido en el aire.*"
+    },
+    "night2_reply_yuna_6_c": {
+        "name": "{name}",
+        "text": "*La respuesta termina ahí. Mis marcas de dedos quedan en la ventana.*"
+    },
     "night2_reply_yuna_7": {
         "name": "{name}",
         "text": "*Mañana por la noche, mi dedo volverá a detenerse en la tercera estrella.*"
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "Yuna",
+        "text": "...así que hay alguien que contesta a estas horas. ¿Pasas mañana por la biblioteca?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "Yuna",
+        "text": "...bueno. Buenas noches."
+    },
+    "night2_hidden_check": {
+        "name": "{name}",
+        "text": "*Entre las notificaciones del chat — veo que hay otra más.*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*Mensaje privado de la tutora. 'Gracias por pasar por la sala de profes hoy. Lo administrativo ya está, así que no hace falta que te llame más. ...Pero si se te hace difícil adaptarte, ven cuando quieras.'*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*El punto final del mensaje parece escrito mucho después.*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*Vuelvo a leer solo la última línea.*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Notificación de la app de salud. 'Registro enfermería: estudiante transferido — raspón en el codo (leve). Nota: mañana en la mañana te cambio la curita. Cambiar curitas es un acto médico, así que no tienes derecho a negarte ^^'*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*Presiono la esquina de la tirita con el pulgar. Mañana por la mañana hay una cosa más en la agenda.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -183,62 +239,6 @@
     "night2_end_2": {
         "name": "{name}",
         "text": "*El segundo día terminó. Los nombres que eran extraños el primer día ahora están en mi pantalla de bloqueo. Incluso después de que las notificaciones se apagan, sigo encendiendo la pantalla de nuevo.*"
-    },
-    "night2_hidden_check": {
-        "name": "{name}",
-        "text": "*Entre las notificaciones del chat — veo que hay otra más.*"
-    },
-    "night2_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*Mensaje privado de la tutora. 'Gracias por pasar por la sala de profes hoy. Lo administrativo ya está, así que no hace falta que te llame más. ...Pero si se te hace difícil adaptarte, ven cuando quieras.'*"
-    },
-    "night2_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*El punto final del mensaje parece escrito mucho después.*"
-    },
-    "night2_hidden_homeroom_3": {
-        "name": "{name}",
-        "text": "*Vuelvo a leer solo la última línea.*"
-    },
-    "night2_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Notificación de la app de salud. 'Registro enfermería: estudiante transferido — raspón en el codo (leve). Nota: mañana en la mañana te cambio la curita. Cambiar curitas es un acto médico, así que no tienes derecho a negarte ^^'*"
-    },
-    "night2_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*Presiono la esquina de la tirita con el pulgar. Mañana por la mañana hay una cosa más en la agenda.*"
-    },
-    "night2_reply_dain_react_high": {
-        "name": "Dain",
-        "text": "jajaja estás loco. ¡Mañana te quiero en el gimnasio sí o sí!!"
-    },
-    "night2_reply_dain_react_default": {
-        "name": "Dain",
-        "text": "jaja bueno. ¡buenas noches!"
-    },
-    "night2_reply_seo_react_high": {
-        "name": "Seoyeon",
-        "text": "...Resulta que eres más interesante de lo que creía. ¿Almorzamos mañana en la azotea?"
-    },
-    "night2_reply_seo_react_default": {
-        "name": "Seoyeon",
-        "text": "ja. Bueno. Hasta mañana."
-    },
-    "night2_reply_yuna_react_high": {
-        "name": "Yuna",
-        "text": "...así que hay alguien que contesta a estas horas. ¿Pasas mañana por la biblioteca?"
-    },
-    "night2_reply_yuna_react_default": {
-        "name": "Yuna",
-        "text": "...bueno. Buenas noches."
-    },
-    "night2_reply_yuna_6_b": {
-        "name": "{name}",
-        "text": "*Abrí la ventana. Entra aire frío. Las estrellas son muchas, y mi dedo se detiene en la tercera, suspendido en el aire.*"
-    },
-    "night2_reply_yuna_6_c": {
-        "name": "{name}",
-        "text": "*La respuesta termina ahí. Mis marcas de dedos quedan en la ventana.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

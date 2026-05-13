@@ -572,6 +572,7 @@
         "name": "{name}",
         "text": "*Saí do anexo da biblioteca. O sol tá se pondo.*"
     },
+    "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",
         "text": "*Caminho de volta. Passando pelo portão quando — Minsu surge atrás de mim.*"

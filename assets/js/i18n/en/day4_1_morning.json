@@ -3,6 +3,7 @@
         "name": "{name}",
         "text": "*Day four. Weekend. — No school today. It's a date.*"
     },
+    "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
         "text": "*...Had a strange dream. Seoyeon's smiling face — still lingering before my eyes.*"
@@ -23,6 +24,18 @@
         "name": "{name}",
         "text": "*I check my phone. Morning message. — Minsu's at the top.*"
     },
+    "minsu_cheer_1_b": {
+        "name": "Minsu",
+        "text": "*Yo, you've got a date today?*"
+    },
+    "minsu_cheer_1_c": {
+        "name": "{name}",
+        "text": "*How did you know*"
+    },
+    "minsu_cheer_1_d": {
+        "name": "Minsu",
+        "text": "*Dain posted in the group chat lol Got plans tomorrow!! she said*"
+    },
     "minsu_cheer_2": {
         "name": "Minsu",
         "text": "have fun out there lol"
@@ -30,6 +43,23 @@
     "minsu_cheer_3": {
         "name": "{name}",
         "text": "yeah yeah."
+    },
+    "minsu_cheer_4_branch": {},
+    "minsu_cheer_4_ins_single": {
+        "name": "{name}",
+        "text": "*I check my phone calendar. There's only one date today. — This time, I'm not putting anything off.*"
+    },
+    "minsu_cheer_4_c": {
+        "name": "{name}",
+        "text": "*I check my phone calendar. Seoyeon in the morning, Yuna in the afternoon, Dain in the evening. I didn't sleep last night trying to fit all three into one day. If even one schedule overlaps, it's over.*"
+    },
+    "minsu_cheer_4_d": {
+        "name": "{name}",
+        "text": "*...What am I even doing.*"
+    },
+    "minsu_cheer_4_e": {
+        "name": "{name}",
+        "text": "*I take a deep breath and check the date messages again.*"
     },
     "morning4_start_2": {
         "name": "{name}",
@@ -39,25 +69,50 @@
         "name": "Seoyeon",
         "text": "Don't be late. Fountain at the park, 10."
     },
+    "morning4_seo_msg_1_b": {
+        "name": "{name}",
+        "text": "*Imperative. Even dates sound like orders. — And somehow it's funny.*"
+    },
+    "morning4_seo_msg_1_c": {
+        "name": "{name}",
+        "text": "*I'm standing at the meeting spot. Will she come? After how angry she was on Friday.*"
+    },
     "morning4_yuna_msg_1": {
         "name": "Yuna",
         "text": "10 a.m. Cafe by the station. If you're late, I'm gone."
+    },
+    "morning4_yuna_msg_1_b": {
+        "name": "{name}",
+        "text": "*Short. Very Yuna. No period after 'I'll leave if you're late.'*"
+    },
+    "morning4_yuna_msg_single": {
+        "name": "{name}",
+        "text": "*Short. But today that brevity feels sharp. There aren't any other plans. — This time, I'm really going to that one place.*"
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
         "text": "TODAY'S THE DAY!!!! Front of the gym, 6pm!! ngl I'm kinda nervous lol wait should I have sent that"
     },
-    "morning4_end": {
+    "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*One more glance in the mirror. — Good enough. Let's go.*"
+        "text": "*Weekend morning. A few notifications waiting. — I thought it would be an ordinary day. I put down the phone and stretch. Either way, today's starting too.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
         "text": "*Weekend. I end up passing by the school.*"
     },
+    "morning4_manuscript_check": {},
+    "hidden_homeroom_d4_skip": {
+        "name": "{name}",
+        "text": "*My steps stop for a moment, and then I keep walking past.*"
+    },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
         "text": "*The school gate is slightly open. A presence inside. The homeroom teacher comes out to the front gate. Holding a paper bag.*"
+    },
+    "hidden_homeroom_d4_1_b": {
+        "name": "{name}",
+        "text": "*My feet stop at the front gate. A beat late, the teacher hides the paper envelope behind her back.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Homeroom Teacher",
@@ -66,6 +121,22 @@
     "hidden_homeroom_d4_3": {
         "name": "{name}",
         "text": "You? At school on a weekend?"
+    },
+    "hidden_homeroom_d4_3_b": {
+        "name": "Homeroom Teacher",
+        "text": "*Flustered* Oh, it's just — I had some paperwork left."
+    },
+    "hidden_homeroom_d4_3_c": {
+        "name": "{name}",
+        "text": "*One corner of the teacher's paper envelope is folded.*"
+    },
+    "hidden_homeroom_d4_3_d": {
+        "name": "{name}",
+        "text": "By yourself?"
+    },
+    "hidden_homeroom_d4_3_e": {
+        "name": "Homeroom Teacher",
+        "text": "*Hands in pockets* ...A teacher's still a teacher on weekends. You know how it is."
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
@@ -115,9 +186,45 @@
         "name": "Homeroom Teacher",
         "text": "Having tea with a student outside school is, honestly, a little awkward."
     },
+    "hidden_homeroom_d4_cafe_1_b": {
+        "name": "{name}",
+        "text": "Awkward?"
+    },
+    "hidden_homeroom_d4_cafe_1_c": {
+        "name": "Homeroom Teacher",
+        "text": "*Taking a sip of coffee* Honestly? A little."
+    },
+    "hidden_homeroom_d4_cafe_1_d": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher says it like a joke and touches the coffee cup. Two circular water rings overlap on the coaster.*"
+    },
+    "hidden_homeroom_d4_cafe_1_e": {
+        "name": "{name}",
+        "text": "Did you write more of the manuscript yesterday?"
+    },
+    "hidden_homeroom_d4_cafe_1_f": {
+        "name": "Homeroom Teacher",
+        "text": "*She sets down her coffee cup. Pauses, as if thinking.*"
+    },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Homeroom Teacher",
         "text": "...little. After you saw it yesterday — your hand moved again."
+    },
+    "hidden_homeroom_d4_cafe_2_b": {
+        "name": "{name}",
+        "text": "Did me seeing it actually help?"
+    },
+    "hidden_homeroom_d4_cafe_2_c": {
+        "name": "Homeroom Teacher",
+        "text": "Rather than help... *looking out the window* after it was found out, the envelope felt a little lighter. Even paper gets heavy when you carry it alone."
+    },
+    "hidden_homeroom_d4_cafe_2_d": {
+        "name": "{name}",
+        "text": "*The corner of a manuscript envelope shows from the teacher's bag. The folded part is a little dark with finger marks.*"
+    },
+    "hidden_homeroom_d4_cafe_2_e": {
+        "name": "Homeroom Teacher",
+        "text": "Do you know what the hardest part of writing a novel is?"
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Homeroom Teacher",
@@ -143,93 +250,57 @@
         "name": "Homeroom Teacher",
         "text": "...Will you be my first reader?"
     },
+    "hidden_homeroom_d4_cafe_4_b": {
+        "name": "{name}",
+        "text": "*The manuscript paper in the empty classroom yesterday comes to mind. Today I am outside school, and the corners of the cup holder keep folding.*"
+    },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
         "text": "I want to."
+    },
+    "hidden_homeroom_d4_cafe_5_b": {
+        "name": "Homeroom Teacher",
+        "text": "*The teacher smiles for a moment. The hand folding the cup holder stops.*"
+    },
+    "hidden_homeroom_d4_cafe_5_c": {
+        "name": "Homeroom Teacher",
+        "text": "...Thanks. But this, don't tell anyone — you know? ...This is our secret. The cup sleeve corner keeps folding."
+    },
+    "hidden_homeroom_d4_cafe_5_d": {
+        "name": "{name}",
+        "text": "You are going to call it work again, right?"
+    },
+    "hidden_homeroom_d4_cafe_5_e": {
+        "name": "Homeroom Teacher",
+        "text": "*Freezes* ...Don't steal my line before I say it."
+    },
+    "hidden_homeroom_d4_cafe_5_f": {
+        "name": "{name}",
+        "text": "*I chuckled. She chuckled too. At the same time.*"
+    },
+    "hidden_homeroom_d4_cafe_5_g": {
+        "name": "Homeroom Teacher",
+        "text": "...Right. It shouldn't happen."
+    },
+    "hidden_homeroom_d4_cafe_5_h": {
+        "name": "Homeroom Teacher",
+        "text": "*She takes her hand out of her pocket. Her fingertips hover in the air for a moment. A habitual gesture.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Homeroom Teacher",
         "text": "*Setting down her coffee cup* ...Meeting outside like this once in a while isn't so bad."
     },
+    "hidden_homeroom_d4_cafe_6_b": {
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher looks at {name}. Her eyes are no longer dry and detached.* *The cafe door closes slowly behind them.*"
+    },
     "hidden_homeroom_d4_decline": {
         "name": "Homeroom Teacher",
         "text": "...Right. I shouldn't. Go on, it's the weekend, don't hang around school. — Go have fun."
     },
-    "hidden_nurse_d4_check": {
-        "name": "{name}",
-        "text": "*The weekend is winding down.*"
-    },
-    "hidden_nurse_d4_1": {
-        "name": "{name}",
-        "text": "*School messenger notification: ‘Looking for someone to help’. My feet point toward the health room. Documents and examination tools are piled on the desk. The health teacher is calmly organizing things.*"
-    },
-    "hidden_nurse_d4_2": {
-        "name": "School Nurse",
-        "text": "Huh? You actually came? Didn't expect that. — A student volunteering at the nurse's office on a weekend."
-    },
-    "hidden_nurse_d4_3": {
-        "name": "{name}",
-        "text": "I said I'd help."
-    },
-    "hidden_nurse_d4_4": {
-        "name": "School Nurse",
-        "text": "...At the hospital I used to do all this alone. Night shifts — sometimes one nurse doing the work of three."
-    },
-    "hidden_nurse_d4_5": {
-        "name": "School Nurse",
-        "text": "*Looking out the window* That's why I came here. A place where they call me 'teacher,' not 'school nurse.' — It's a small difference, but it meant a lot."
-    },
-    "hidden_nurse_d4_name_choice": {
-        "name": "{name}",
-        "text": "*The nurse's fingertip stays over the name field for a long time.*",
-        "choices": [
-            "What's your name? Not \"School Nurse\"",
-            "So that's why you came to this school"
-        ]
-    },
-    "hidden_nurse_d4_name_choice_a": {
-        "name": "School Nurse",
-        "text": "*She closes her mouth for a moment.* ...Juwon. Lee Juwon."
-    },
-    "hidden_nurse_d4_name_choice_b": {
-        "name": "School Nurse",
-        "text": "...Yeah. Here, everyone just comes with minor injuries. I like that."
-    },
-    "hidden_nurse_d4_6": {
-        "name": "School Nurse",
-        "text": "Thanks. I finished much faster because of you. ...It's nothing special."
-    },
-    "hidden_nurse_d4_choice": {
-        "name": "School Nurse",
-        "text": "So, what should I get you as thanks? Let's just say a teacher buying a student a meal is an extension of education.",
-        "choices": [
-            "Is it okay if it's an educational activity?",
-            "That's okay, I should get going"
-        ]
-    },
-    "hidden_nurse_d4_meal_walk": {
-        "name": "{name}",
-        "text": "*We headed to the snack shop in front of school.*"
-    },
-    "hidden_nurse_d4_meal_1": {
-        "name": "School Nurse",
-        "text": "Ah, it's spicy. I can't eat this as much as I used to."
-    },
-    "hidden_nurse_d4_meal_2": {
-        "name": "{name}",
-        "text": "You're not old at all."
-    },
-    "hidden_nurse_d4_meal_3": {
-        "name": "School Nurse",
-        "text": "...That kind of thing. Sounds strange coming from a student."
-    },
-    "hidden_nurse_d4_meal_4": {
-        "name": "School Nurse",
-        "text": "{name}. Thanks for today. — Seriously."
-    },
-    "hidden_nurse_d4_pass": {
-        "name": "School Nurse",
-        "text": "Alright. Get home safe. And come by again sometime."
+    "hidden_homeroom_d4_decline_b": {
+        "name": "Homeroom Teacher",
+        "text": "*She turns away. Her shoulders sink slightly. Her reflection appears small in the cafe glass door.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
@@ -301,149 +372,21 @@
         "context": "Day 4. The moment of farewell when asking if she'll come back after graduation. The scene where both show their true hearts. Tone: Deeper, more emotional conversation. Truth behind the playfulness. The meaning of being called by name.",
         "personality": "The school nurse is careful and honest. She wants to call out your name but is in a cautious position. Tears come at your promise."
     },
-    "hidden_nurse_d4_meal_1b": {
+    "hidden_nurse_d4_check": {
         "name": "{name}",
-        "text": "*We headed back to the nurse's office.*"
+        "text": "*The weekend is winding down.*"
     },
-    "minsu_cheer_4_c": {
+    "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*I check my phone calendar. Seoyeon in the morning, Yuna in the afternoon, Dain in the evening. I didn't sleep last night trying to fit all three into one day. If even one schedule overlaps, it's over.*"
-    },
-    "minsu_cheer_4_d": {
-        "name": "{name}",
-        "text": "*...What am I even doing.*"
-    },
-    "minsu_cheer_4_e": {
-        "name": "{name}",
-        "text": "*I take a deep breath and check the date messages again.*"
-    },
-    "minsu_cheer_1_b": {
-        "name": "Minsu",
-        "text": "*Yo, you've got a date today?*"
-    },
-    "minsu_cheer_1_c": {
-        "name": "{name}",
-        "text": "*How did you know*"
-    },
-    "minsu_cheer_1_d": {
-        "name": "Minsu",
-        "text": "*Dain posted in the group chat lol Got plans tomorrow!! she said*"
-    },
-    "morning4_fallback_msg": {
-        "name": "{name}",
-        "text": "*Weekend morning. A few notifications waiting. — I thought it would be an ordinary day. I put down the phone and stretch. Either way, today's starting too.*"
-    },
-    "morning4_seo_msg_1_b": {
-        "name": "{name}",
-        "text": "*Imperative. Even dates sound like orders. — And somehow it's funny.*"
-    },
-    "morning4_seo_msg_1_c": {
-        "name": "{name}",
-        "text": "*I'm standing at the meeting spot. Will she come? After how angry she was on Friday.*"
-    },
-    "hidden_homeroom_d4_1_b": {
-        "name": "{name}",
-        "text": "*My feet stop at the front gate. A beat late, the teacher hides the paper envelope behind her back.*"
-    },
-    "morning4_yuna_msg_1_b": {
-        "name": "{name}",
-        "text": "*Short. Very Yuna. No period after 'I'll leave if you're late.'*"
-    },
-    "hidden_homeroom_d4_3_b": {
-        "name": "Homeroom Teacher",
-        "text": "*Flustered* Oh, it's just — I had some paperwork left."
-    },
-    "hidden_homeroom_d4_3_c": {
-        "name": "{name}",
-        "text": "*One corner of the teacher's paper envelope is folded.*"
-    },
-    "hidden_homeroom_d4_3_d": {
-        "name": "{name}",
-        "text": "By yourself?"
-    },
-    "hidden_homeroom_d4_3_e": {
-        "name": "Homeroom Teacher",
-        "text": "*Hands in pockets* ...A teacher's still a teacher on weekends. You know how it is."
-    },
-    "hidden_homeroom_d4_cafe_1_b": {
-        "name": "{name}",
-        "text": "Awkward?"
-    },
-    "hidden_homeroom_d4_cafe_1_c": {
-        "name": "Homeroom Teacher",
-        "text": "*Taking a sip of coffee* Honestly? A little."
-    },
-    "hidden_homeroom_d4_cafe_1_d": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher says it like a joke and touches the coffee cup. Two circular water rings overlap on the coaster.*"
-    },
-    "hidden_homeroom_d4_cafe_1_e": {
-        "name": "{name}",
-        "text": "Did you write more of the manuscript yesterday?"
-    },
-    "hidden_homeroom_d4_cafe_1_f": {
-        "name": "Homeroom Teacher",
-        "text": "*She sets down her coffee cup. Pauses, as if thinking.*"
-    },
-    "hidden_homeroom_d4_cafe_2_b": {
-        "name": "{name}",
-        "text": "Did me seeing it actually help?"
-    },
-    "hidden_homeroom_d4_cafe_2_c": {
-        "name": "Homeroom Teacher",
-        "text": "Rather than help... *looking out the window* after it was found out, the envelope felt a little lighter. Even paper gets heavy when you carry it alone."
-    },
-    "hidden_homeroom_d4_cafe_2_d": {
-        "name": "{name}",
-        "text": "*The corner of a manuscript envelope shows from the teacher's bag. The folded part is a little dark with finger marks.*"
-    },
-    "hidden_homeroom_d4_cafe_2_e": {
-        "name": "Homeroom Teacher",
-        "text": "Do you know what the hardest part of writing a novel is?"
-    },
-    "hidden_homeroom_d4_cafe_6_b": {
-        "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher looks at {name}. Her eyes are no longer dry and detached.* *The cafe door closes slowly behind them.*"
-    },
-    "hidden_homeroom_d4_cafe_4_b": {
-        "name": "{name}",
-        "text": "*The manuscript paper in the empty classroom yesterday comes to mind. Today I am outside school, and the corners of the cup holder keep folding.*"
-    },
-    "hidden_homeroom_d4_cafe_5_b": {
-        "name": "Homeroom Teacher",
-        "text": "*The teacher smiles for a moment. The hand folding the cup holder stops.*"
-    },
-    "hidden_homeroom_d4_cafe_5_c": {
-        "name": "Homeroom Teacher",
-        "text": "...Thanks. But this, don't tell anyone — you know? ...This is our secret. The cup sleeve corner keeps folding."
-    },
-    "hidden_homeroom_d4_cafe_5_d": {
-        "name": "{name}",
-        "text": "You are going to call it work again, right?"
-    },
-    "hidden_homeroom_d4_cafe_5_e": {
-        "name": "Homeroom Teacher",
-        "text": "*Freezes* ...Don't steal my line before I say it."
-    },
-    "hidden_homeroom_d4_cafe_5_f": {
-        "name": "{name}",
-        "text": "*I chuckled. She chuckled too. At the same time.*"
-    },
-    "hidden_homeroom_d4_cafe_5_g": {
-        "name": "Homeroom Teacher",
-        "text": "...Right. It shouldn't happen."
-    },
-    "hidden_homeroom_d4_cafe_5_h": {
-        "name": "Homeroom Teacher",
-        "text": "*She takes her hand out of her pocket. Her fingertips hover in the air for a moment. A habitual gesture.*"
-    },
-    "hidden_homeroom_d4_decline_b": {
-        "name": "Homeroom Teacher",
-        "text": "*She turns away. Her shoulders sink slightly. Her reflection appears small in the cafe glass door.*"
+        "text": "*School messenger notification: ‘Looking for someone to help’. My feet point toward the health room. Documents and examination tools are piled on the desk. The health teacher is calmly organizing things.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
         "text": "*Turning around* Huh? You actually came?"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "School Nurse",
+        "text": "Huh? You actually came? Didn't expect that. — A student volunteering at the nurse's office on a weekend."
     },
     "hidden_nurse_d4_2_b": {
         "name": "{name}",
@@ -472,6 +415,14 @@
     "hidden_nurse_d4_2_h": {
         "name": "{name}",
         "text": "By yourself?"
+    },
+    "hidden_nurse_d4_3": {
+        "name": "{name}",
+        "text": "I said I'd help."
+    },
+    "hidden_nurse_d4_4": {
+        "name": "School Nurse",
+        "text": "...At the hospital I used to do all this alone. Night shifts — sometimes one nurse doing the work of three."
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
@@ -513,6 +464,30 @@
         "name": "{name}",
         "text": "*Paperwork is done. The school nurse taps the name field once with her finger, then finally stretches.*"
     },
+    "hidden_nurse_d4_5": {
+        "name": "School Nurse",
+        "text": "*Looking out the window* That's why I came here. A place where they call me 'teacher,' not 'school nurse.' — It's a small difference, but it meant a lot."
+    },
+    "hidden_nurse_d4_name_choice": {
+        "name": "{name}",
+        "text": "*The nurse's fingertip stays over the name field for a long time.*",
+        "choices": [
+            "What's your name? Not \"School Nurse\"",
+            "So that's why you came to this school"
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "name": "School Nurse",
+        "text": "*She closes her mouth for a moment.* ...Juwon. Lee Juwon."
+    },
+    "hidden_nurse_d4_name_choice_b": {
+        "name": "School Nurse",
+        "text": "...Yeah. Here, everyone just comes with minor injuries. I like that."
+    },
+    "hidden_nurse_d4_6": {
+        "name": "School Nurse",
+        "text": "Thanks. I finished much faster because of you. ...It's nothing special."
+    },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
         "text": "It was nothing, really."
@@ -525,6 +500,22 @@
         "name": "{name}",
         "text": "*'It's nothing' The corner of the folder presses against my fingertips behind me.*"
     },
+    "hidden_nurse_d4_choice": {
+        "name": "School Nurse",
+        "text": "So, what should I get you as thanks? Let's just say a teacher buying a student a meal is an extension of education.",
+        "choices": [
+            "Is it okay if it's an educational activity?",
+            "That's okay, I should get going"
+        ]
+    },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*We headed to the snack shop in front of school.*"
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "School Nurse",
+        "text": "Ah, it's spicy. I can't eat this as much as I used to."
+    },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
         "text": "You must've had this when you were a student too."
@@ -533,9 +524,21 @@
         "name": "School Nurse",
         "text": "When was that? *laughs* I'm not like I used to be anymore."
     },
+    "hidden_nurse_d4_meal_1b": {
+        "name": "{name}",
+        "text": "*We headed back to the nurse's office.*"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "{name}",
+        "text": "You're not old at all."
+    },
     "hidden_nurse_d4_meal_2_b": {
         "name": "School Nurse",
         "text": "*The she pauses. Sets down her chopsticks.*"
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "School Nurse",
+        "text": "...That kind of thing. Sounds strange coming from a student."
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
@@ -553,22 +556,20 @@
         "name": "School Nurse",
         "text": "{name}."
     },
+    "hidden_nurse_d4_meal_4": {
+        "name": "School Nurse",
+        "text": "{name}. Thanks for today. — Seriously."
+    },
     "hidden_nurse_d4_meal_4_b": {
         "name": "School Nurse",
         "text": "*The nurse presses down the cup noodle lid. One chopstick shifts slightly out of line.*"
     },
-    "morning4_manuscript_check": {},
-    "hidden_homeroom_d4_skip": {
-        "name": "{name}",
-        "text": "*My steps stop for a moment, and then I keep walking past.*"
+    "hidden_nurse_d4_pass": {
+        "name": "School Nurse",
+        "text": "Alright. Get home safe. And come by again sometime."
     },
-    "minsu_cheer_4_branch": {},
-    "minsu_cheer_4_ins_single": {
+    "morning4_end": {
         "name": "{name}",
-        "text": "*I check my phone calendar. There's only one date today. — This time, I'm not putting anything off.*"
-    },
-    "morning4_yuna_msg_single": {
-        "name": "{name}",
-        "text": "*Short. But today that brevity feels sharp. There aren't any other plans. — This time, I'm really going to that one place.*"
+        "text": "*One more glance in the mirror. — Good enough. Let's go.*"
     }
 }

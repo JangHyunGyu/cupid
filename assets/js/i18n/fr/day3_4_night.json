@@ -31,6 +31,10 @@
         "name": "Yuna",
         "text": "Ce roman, je n’ai toujours pas décidé de la fin"
     },
+    "night3_faithful_msg_yuna_2_b": {
+        "name": "{name}",
+        "text": "*Le curseur clignote sur la dernière ligne du bloc-notes. Laisser la fin vide, et le fichier reste en mode sauvegarde.*"
+    },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
         "text": "Si tu veux demander pour ma cheville, viens me le demander en personne mdr"
@@ -47,9 +51,61 @@
         "name": "{name}",
         "text": "*J'ai fait un rêve. Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, seulement des pas gardant le même rythme.*"
     },
+    "night3_dream_2_b": {
+        "name": "{name}",
+        "text": "*J'ai fermé le bloc-notes. Pas encore de phrase à envoyer demain. Mais j'ai décidé de ne pas laisser l'écran vide.*"
+    },
+    "night3_faithful_reflect_1": {
+        "name": "{name}",
+        "text": "*Ouvre mes yeux. La lumière du soleil du matin traverse les rideaux. Mes paumes sont encore chaudes. J'ai sorti mon téléphone portable. Ouverture d'une galerie. La photo de Sojeong. — Défilement arrêté, enfoncé et maintenu*"
+    },
+    "night3_faithful_reflect_2_b": {
+        "name": "{name}",
+        "text": "*'Supprimer cette photo ?' Mon doigt s'arrête au-dessus du bouton de confirmation.*"
+    },
+    "night3_faithful_reflect_2_c": {
+        "name": "{name}",
+        "text": "*Une seconde. Je fixe juste l'écran. — Le graffiti sur le bureau de Sojeong. Les trente-huit matins où j'ai détourné le regard.*"
+    },
+    "night3_faithful_reflect_2_d": {
+        "name": "{name}",
+        "text": "*...d'accord. Je pose mon doigt sur le bouton Supprimer. — pressé.*"
+    },
+    "night3_faithful_reflect_3": {
+        "name": "{name}",
+        "text": "*Mon doigt s'arrête sur le bouton supprimer. À la place, j'ai déplacé la photo vers un nouveau dossier. Nom du dossier : 'Archive'.*"
+    },
+    "night3_faithful_reflect_3_b": {
+        "name": "{name}",
+        "text": "*Minsu a dit. \"Le rejet est quelque chose que vous devez faire.\" Sojung dans la galerie sourit toujours. Le bloc-notes numéro 38 n'a pas encore été envoyé. Seul le bouton d'envoi est bleu.*"
+    },
+    "night3_faithful_reflect_4": {
+        "name": "{name}",
+        "text": "*La galerie est vide. L’endroit où se trouvait la photo de Sojung. Un écran vide est plutôt clair. Je vous le dirai quand je le verrai. Je me présenterai si je sais.*"
+    },
+    "night3_faithful_reflect_4_b": {
+        "name": "{name}",
+        "text": "*Supprimer la photo était facile. Un seul doigt suffit. Je fixe la vignette d'album vide pendant un moment.*"
+    },
+    "night3_faithful_reflect_4_c": {
+        "name": "{name}",
+        "text": "*Couvert le téléphone portable. Un espace de galerie vide apparaît sur un écran noir.*"
+    },
     "night3_dream_3": {
         "name": "{name}",
         "text": "*C’était un beau rêve.*"
+    },
+    "night3_dream_seo_bonus": {
+        "name": "{name}",
+        "text": "*Quand je ferme les yeux, la sensation d'avoir marché aux côtés de Seoyeon est encore là.*"
+    },
+    "night3_dream_yuna_bonus": {
+        "name": "{name}",
+        "text": "*Quand je ferme les yeux, le calme à côté de Yuna est encore là.*"
+    },
+    "night3_dream_dain_bonus": {
+        "name": "{name}",
+        "text": "*Quand je ferme les yeux, le rire de Dain me revient avec un léger retard.*"
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
@@ -63,9 +119,17 @@
         "name": "Seoyeon",
         "text": "...S’il te plaît"
     },
+    "night3_cheat_msg_3_b": {
+        "name": "Seoyeon",
+        "text": "*Elle utilise le mot 'faveur'. Le curseur reste figé après ce mot pendant longtemps.*"
+    },
     "night3_cheat_msg_4": {
         "name": "Yuna",
         "text": "...Je savais tout"
+    },
+    "night3_cheat_msg_4_b": {
+        "name": "Yuna",
+        "text": "*Moi aussi, ils détestent les sièges de réserve.*"
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
@@ -87,13 +151,25 @@
         "name": "{name}",
         "text": "*Je me suis endormi. — Un rêve. Je suis debout dans le noir. Je ne vois rien.*"
     },
+    "night3_nightmare_2_b": {
+        "name": "Seoyeon",
+        "text": "*J'entends sa voix.*"
+    },
     "night3_nightmare_3": {
         "name": "Seoyeon",
         "text": "Tu ne faisais ça qu'avec moi..."
     },
+    "night3_nightmare_3_b": {
+        "name": "Yuna",
+        "text": "*Sa voix.*"
+    },
     "night3_nightmare_4": {
         "name": "Yuna",
         "text": "Je t’avais dit de ne pas mentir."
+    },
+    "night3_nightmare_4_b": {
+        "name": "Dain",
+        "text": "*Sa voix.*"
     },
     "night3_nightmare_5": {
         "name": "Dain",
@@ -132,61 +208,9 @@
         "name": "{name}",
         "text": "*— Je me suis réveillé trempé de sueur. 3h du matin. Je vois le plafond. J'ai sorti mon téléphone. La galerie. Je scrolle encore. — La photo de Sojeong.*"
     },
-    "night3_nightmare_end_4": {
-        "name": "{name}",
-        "text": "*Qu’est-ce que j’ai fait.*"
-    },
     "night3_cheat_reflect_2": {
         "name": "{name}",
         "text": "*Sojeong sourit sur la photo de groupe. Impossible de passer à la suivante. De la sueur perle au bout de mon pouce.*"
-    },
-    "night3_cheat_reflect_5": {
-        "name": "{name}",
-        "text": "*J'ai fait un rêve. Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, mais dans ma main se trouvait un message sur le point d'être envoyé.*"
-    },
-    "night3_faithful_reflect_1": {
-        "name": "{name}",
-        "text": "*Ouvre mes yeux. La lumière du soleil du matin traverse les rideaux. Mes paumes sont encore chaudes. J'ai sorti mon téléphone portable. Ouverture d'une galerie. La photo de Sojeong. — Défilement arrêté, enfoncé et maintenu*"
-    },
-    "night3_faithful_reflect_3": {
-        "name": "{name}",
-        "text": "*Mon doigt s'arrête sur le bouton supprimer. À la place, j'ai déplacé la photo vers un nouveau dossier. Nom du dossier : 'Archive'.*"
-    },
-    "night3_faithful_reflect_4": {
-        "name": "{name}",
-        "text": "*La galerie est vide. L’endroit où se trouvait la photo de Sojung. Un écran vide est plutôt clair. Je vous le dirai quand je le verrai. Je me présenterai si je sais.*"
-    },
-    "night3_end": {
-        "name": "{name}",
-        "text": "*La nuit s’approfondit...*"
-    },
-    "night3_faithful_msg_yuna_2_b": {
-        "name": "{name}",
-        "text": "*Le curseur clignote sur la dernière ligne du bloc-notes. Laisser la fin vide, et le fichier reste en mode sauvegarde.*"
-    },
-    "night3_cheat_msg_3_b": {
-        "name": "Seoyeon",
-        "text": "*Elle utilise le mot 'faveur'. Le curseur reste figé après ce mot pendant longtemps.*"
-    },
-    "night3_cheat_msg_4_b": {
-        "name": "Yuna",
-        "text": "*Moi aussi, ils détestent les sièges de réserve.*"
-    },
-    "night3_nightmare_2_b": {
-        "name": "Seoyeon",
-        "text": "*J'entends sa voix.*"
-    },
-    "night3_nightmare_3_b": {
-        "name": "Yuna",
-        "text": "*Sa voix.*"
-    },
-    "night3_nightmare_4_b": {
-        "name": "Dain",
-        "text": "*Sa voix.*"
-    },
-    "night3_dream_2_b": {
-        "name": "{name}",
-        "text": "*J'ai fermé le bloc-notes. Pas encore de phrase à envoyer demain. Mais j'ai décidé de ne pas laisser l'écran vide.*"
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
@@ -204,40 +228,16 @@
         "name": "{name}",
         "text": "*Yuna l'a dit. 'Ne fuis pas.' Le curseur de la fenêtre de réponse clignote. Une autre phrase jamais envoyée à personne s'allonge.*"
     },
-    "night3_faithful_reflect_2_b": {
+    "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*'Supprimer cette photo ?' Mon doigt s'arrête au-dessus du bouton de confirmation.*"
+        "text": "*J'ai fait un rêve. Je marchais côte à côte avec quelqu'un. Je ne voyais pas son visage, mais dans ma main se trouvait un message sur le point d'être envoyé.*"
     },
-    "night3_faithful_reflect_2_c": {
+    "night3_nightmare_end_4": {
         "name": "{name}",
-        "text": "*Une seconde. Je fixe juste l'écran. — Le graffiti sur le bureau de Sojeong. Les trente-huit matins où j'ai détourné le regard.*"
+        "text": "*Qu’est-ce que j’ai fait.*"
     },
-    "night3_faithful_reflect_2_d": {
+    "night3_end": {
         "name": "{name}",
-        "text": "*...d'accord. Je pose mon doigt sur le bouton Supprimer. — pressé.*"
-    },
-    "night3_faithful_reflect_3_b": {
-        "name": "{name}",
-        "text": "*Minsu a dit. \"Le rejet est quelque chose que vous devez faire.\" Sojung dans la galerie sourit toujours. Le bloc-notes numéro 38 n'a pas encore été envoyé. Seul le bouton d'envoi est bleu.*"
-    },
-    "night3_faithful_reflect_4_b": {
-        "name": "{name}",
-        "text": "*Supprimer la photo était facile. Un seul doigt suffit. Je fixe la vignette d'album vide pendant un moment.*"
-    },
-    "night3_faithful_reflect_4_c": {
-        "name": "{name}",
-        "text": "*Couvert le téléphone portable. Un espace de galerie vide apparaît sur un écran noir.*"
-    },
-    "night3_dream_seo_bonus": {
-        "name": "{name}",
-        "text": "*Quand je ferme les yeux, la sensation d'avoir marché aux côtés de Seoyeon est encore là.*"
-    },
-    "night3_dream_yuna_bonus": {
-        "name": "{name}",
-        "text": "*Quand je ferme les yeux, le calme à côté de Yuna est encore là.*"
-    },
-    "night3_dream_dain_bonus": {
-        "name": "{name}",
-        "text": "*Quand je ferme les yeux, le rire de Dain me revient avec un léger retard.*"
+        "text": "*La nuit s’approfondit...*"
     }
 }

@@ -55,13 +55,27 @@
         "name": "Seoyeon",
         "text": "Eben weil ich darf, geb ich ihn dir. — Geh hoch, wenn du mal Luft brauchst."
     },
+    "tour_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Sie legt eine Hand auf das Geländer des Dachs und sieht auf die Schule hinunter.* Ich hätte nicht gedacht, dass wir auch die letzte Mittagspause hier verbringen.",
+        "context": "Letztes Mittagessen an Tag 5 mit Seoyeon. Das Ende naht. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
+        "personality": "Da es das letzte Mal ist, verschwindet Seoyeons Gelassenheit und wahre Gefühle kommen zum Vorschein."
+    },
     "tour_seo_end": {
         "name": "{name}",
         "text": "*Sie sagt nicht 'auch ohne mich'. Aber es versteckt sich dahinter.*"
     },
+    "tour_yuna_1_check": {
+        "name": "{name}",
+        "text": "*Auf dem Weg zum Bibliotheksanbau.*"
+    },
     "tour_yuna_1": {
         "name": "{name}",
         "text": "*Der Bibliotheksanbau. Ein altes Sofa, Nachmittagslicht durchs Fenster. Derselbe staubige Geruch wie beim ersten Betreten.*"
+    },
+    "tour_yuna_1b": {
+        "name": "{name}",
+        "text": "*Der Bibliotheksanbau. Der geheime Leseraum mit Yuna. Ein altes Sofa, Nachmittagslicht fällt durch das Fenster.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
@@ -103,6 +117,12 @@
         "name": "{name}",
         "text": "Der erste Leser?"
     },
+    "tour_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Sie streicht mit den Fingerspitzen über die Buchrücken und hebt dann den Kopf.* Weil es das letzte Mal ist, rede ich seltsam viel.",
+        "context": "Letztes Mittagessen an Tag 5 mit Yuna. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
+        "personality": "Da es das letzte Mal ist, sind Yunas Mauern komplett gefallen."
+    },
     "tour_yuna_end": {
         "name": "Yuna",
         "text": "...Der einzige Leser. Vorerst."
@@ -111,9 +131,17 @@
         "name": "{name}",
         "text": "*‚Vorerst.' — Das ist das Maximum, das Yuna versprechen kann.*"
     },
+    "tour_dain_1_check": {
+        "name": "{name}",
+        "text": "*Auf dem Weg zur Turnhalle.*"
+    },
     "tour_dain_1": {
         "name": "{name}",
         "text": "*Die Turnhalle. Die erste Wette und der letzte Spike verweilen auf demselben Platz. Heute ist das Licht an.*"
+    },
+    "tour_dain_1b": {
+        "name": "{name}",
+        "text": "*Die Turnhalle. Ein Ort, an dem in den letzten Tagen unzählige Wetten und Schmetterbälle ausgetauscht wurden. — Heute ist das Licht an.*"
     },
     "tour_dain_2": {
         "name": "Dain",
@@ -151,6 +179,10 @@
         "name": "{name}",
         "text": "......"
     },
+    "tour_dain_11_b": {
+        "name": "Dain",
+        "text": "Früher dachte ich, ohne Volleyball wär ich einfach leer. Aber in letzter Zeit nicht mehr."
+    },
     "tour_dain_12": {
         "name": "Dain",
         "text": "Weiß nicht, was sich geändert hat. ...Aber ich sehe mich jetzt auch außerhalb des Platzes."
@@ -163,46 +195,14 @@
         "name": "Dain",
         "text": "...Jetzt ist jemand an meiner Seite."
     },
-    "tour_dain_end_2": {
-        "name": "{name}",
-        "text": "*Sie spricht ohne Ausrufezeichen. Diesmal senkt sie nicht den Kopf. Dains Hand liegt auf dem Volleyball, nicht auf ihrem Knie.*"
-    },
-    "tour_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Sie legt eine Hand auf das Geländer des Dachs und sieht auf die Schule hinunter.* Ich hätte nicht gedacht, dass wir auch die letzte Mittagspause hier verbringen.",
-        "context": "Letztes Mittagessen an Tag 5 mit Seoyeon. Das Ende naht. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Da es das letzte Mal ist, verschwindet Seoyeons Gelassenheit und wahre Gefühle kommen zum Vorschein."
-    },
-    "tour_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Sie streicht mit den Fingerspitzen über die Buchrücken und hebt dann den Kopf.* Weil es das letzte Mal ist, rede ich seltsam viel.",
-        "context": "Letztes Mittagessen an Tag 5 mit Yuna. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
-        "personality": "Da es das letzte Mal ist, sind Yunas Mauern komplett gefallen."
-    },
     "tour_dain_freetalk": {
         "name": "Dain",
         "text": "*Sie stoppt den Volleyball mit der Fußspitze und grinst.* Auch die letzte Mittagspause lasse ich nicht einfach so vorbeigehen.",
         "context": "Letztes Mittagessen an Tag 5 mit Dain. Ton: Beide wissen, dass es das letzte Mal ist. Lachen, aber mit einem bittersüßen Beigeschmack. Ehrlicher als sonst, alles fühlt sich kostbar an.",
         "personality": "Da es das letzte Mal ist, kann Dain ihre fröhliche Fassade nicht aufrechterhalten."
     },
-    "tour_yuna_1_check": {
+    "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Auf dem Weg zum Bibliotheksanbau.*"
-    },
-    "tour_yuna_1b": {
-        "name": "{name}",
-        "text": "*Der Bibliotheksanbau. Der geheime Leseraum mit Yuna. Ein altes Sofa, Nachmittagslicht fällt durch das Fenster.*"
-    },
-    "tour_dain_1_check": {
-        "name": "{name}",
-        "text": "*Auf dem Weg zur Turnhalle.*"
-    },
-    "tour_dain_1b": {
-        "name": "{name}",
-        "text": "*Die Turnhalle. Ein Ort, an dem in den letzten Tagen unzählige Wetten und Schmetterbälle ausgetauscht wurden. — Heute ist das Licht an.*"
-    },
-    "tour_dain_11_b": {
-        "name": "Dain",
-        "text": "Früher dachte ich, ohne Volleyball wär ich einfach leer. Aber in letzter Zeit nicht mehr."
+        "text": "*Sie spricht ohne Ausrufezeichen. Diesmal senkt sie nicht den Kopf. Dains Hand liegt auf dem Volleyball, nicht auf ihrem Knie.*"
     }
 }

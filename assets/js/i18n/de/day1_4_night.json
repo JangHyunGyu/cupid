@@ -55,6 +55,26 @@
         "name": "{name}",
         "text": "*Drei Nachrichten am Stück. Kann sie zwischendurch nicht mal kurz Luft holen?*"
     },
+    "night_hidden_check": {
+        "name": "{name}",
+        "text": "*Zwischen den Messenger-Benachrichtigungen — fällt mir noch etwas auf.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und der Transferstudent muss sich einfach weiter gut einleben.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*Ich lese die Mitteilung noch einmal. Mein Mundwinkel hebt sich, also lege ich das Handy mit dem Display nach unten.*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Benachrichtigungen der Schulgesundheitsmanagement-App werden angezeigt. „Aufzeichnungen im Krankenzimmer: Transferstudent – ​​leichtes Schwindelgefühl.“ Notiz: Kommen Sie morgen wieder, wenn Sie Symptome haben. Trinken Sie viel Wasser. ♥ ist medizinisch bedenklich.'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*Das Herz am Ende des Satzes bleibt in der Mitte des Bildschirms. Bevor ich ihn ausschalte, sehe ich noch einmal hin.*"
+    },
     "night_late_transition": {
         "name": "{name}",
         "text": "*Ich will gerade einschlafen — da vibriert mein Handy noch mal. 23 Uhr. Wer ist das?*"
@@ -107,6 +127,10 @@
         "name": "{name}",
         "text": "*'Anruf' ist bereits im Antwortfenster gestempelt.*"
     },
+    "night_dain_late_4_b": {
+        "name": "{name}",
+        "text": "*Unter Dains Nachricht reihen sich Emojis aneinander. Jedes einzelne ist anders.*"
+    },
     "night_end_1": {
         "name": "{name}",
         "text": "*Ich lege das Handy hin. Ich schaue zur Decke. Der Kirschblütenduft hängt noch in meiner Uniform.*"
@@ -114,29 +138,5 @@
     "night_end_3": {
         "name": "{name}",
         "text": "*Die Namen, die ich heute gespeichert habe, bleiben auf meinem Sperrbildschirm. Selbst nachdem ich das Display ausgeschaltet habe, sucht mein Finger noch einmal den Power-Knopf.*"
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*Zwischen den Messenger-Benachrichtigungen — fällt mir noch etwas auf.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*In der Schul-App gibt es einen Post von der Klassenlehrerin. 'Klasse 3-2: Mathematerialien für die 1. Stunde morgen mitbringen. — Und der Transferstudent muss sich einfach weiter gut einleben.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*Ich lese die Mitteilung noch einmal. Mein Mundwinkel hebt sich, also lege ich das Handy mit dem Display nach unten.*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Benachrichtigungen der Schulgesundheitsmanagement-App werden angezeigt. „Aufzeichnungen im Krankenzimmer: Transferstudent – ​​leichtes Schwindelgefühl.“ Notiz: Kommen Sie morgen wieder, wenn Sie Symptome haben. Trinken Sie viel Wasser. ♥ ist medizinisch bedenklich.'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*Das Herz am Ende des Satzes bleibt in der Mitte des Bildschirms. Bevor ich ihn ausschalte, sehe ich noch einmal hin.*"
-    },
-    "night_dain_late_4_b": {
-        "name": "{name}",
-        "text": "*Unter Dains Nachricht reihen sich Emojis aneinander. Jedes einzelne ist anders.*"
     }
 }

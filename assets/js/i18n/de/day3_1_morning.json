@@ -1,9 +1,4 @@
 {
-    "morning3_gate_branch": {},
-    "morning3_check_multiple": {},
-    "morning3_multi_from_seo": {},
-    "morning3_multi_from_dain": {},
-    "morning3_multi_from_yuna": {},
     "morning3_start": {
         "name": "{name}",
         "text": "*Dritter Tag. Ich habe verschlafen. Dreimal den Wecker ausgemacht. Gestern Nacht zu lange Nachrichten gelesen.*"
@@ -12,9 +7,26 @@
         "name": "{name}",
         "text": "*Im Vollsprint renne ich zur Schule. — Das Schultor kommt in Sicht. Und dann.*"
     },
+    "morning3_gate_branch": {},
     "morning3_seo_gate_1": {
         "name": "{name}",
         "text": "*Seoyeon steht vor dem Schultor. Ohne jede Eile.*"
+    },
+    "morning3_seo_gate_warm_1": {
+        "name": "Seoyeon",
+        "text": "*Sie wartet anders als sonst vor dem Schultor.*"
+    },
+    "morning3_seo_gate_warm_2": {
+        "name": "Seoyeon",
+        "text": "...Ich bin nicht früh gekommen. Hatte was für den Schülerrat zu erledigen."
+    },
+    "morning3_seo_gate_warm_3": {
+        "name": "{name}",
+        "text": "*Ihre Hände sind leer. Keine Papiere, kein Klemmbrett.*"
+    },
+    "morning3_seo_gate_warm_4": {
+        "name": "Seoyeon",
+        "text": "*Sie beginnt wortlos neben mir herzugehen. — War der Weg vom Tor zum Klassenzimmer schon immer so kurz?*"
     },
     "morning3_seo_gate_2": {
         "name": "Seoyeon",
@@ -36,13 +48,45 @@
         "name": "Seoyeon",
         "text": "...War nur ein Witz. Ich krieg das schon hin."
     },
+    "morning3_seo_gate_6_b": {
+        "name": "Seoyeon",
+        "text": "*Sie geht weiter. Selbstbewusst. Sie beeilt sich nicht, obwohl sie zu spät kommt.*"
+    },
     "morning3_seo_gate_7": {
         "name": "Seoyeon",
         "text": "*Sie geht weiter. Selbstbewusst. Sie eilt nicht, obwohl sie zu spät ist.*"
     },
+    "morning3_seo_gate_cold_1": {
+        "name": "Seoyeon",
+        "text": "*Sie hält kurz an, als sie vorbeigeht.*"
+    },
+    "morning3_seo_gate_cold_2": {
+        "name": "Seoyeon",
+        "text": "...Der Neue. Bist immer noch hier."
+    },
+    "morning3_seo_gate_cold_3": {
+        "name": "{name}",
+        "text": "*Ihr Ton ist sachlich. Seoyeon entfernt sich durchs Tor, wird immer kleiner.*"
+    },
     "morning3_yuna_gate_1": {
         "name": "{name}",
         "text": "*Vor dem Schultor entdecke ich Yuna, die geistesabwesend dasteht. Ihre Augen sind halb geschlossen.*"
+    },
+    "morning3_yuna_gate_warm_1": {
+        "name": "{name}",
+        "text": "*Yuna lehnt an der Mauer neben dem Tor und reicht mir einen Zettel.*"
+    },
+    "morning3_yuna_gate_warm_2": {
+        "name": "Yuna",
+        "text": "...Darf ich mitgehen?"
+    },
+    "morning3_yuna_gate_warm_3": {
+        "name": "{name}",
+        "text": "*Ein Wort auf dem Zettel. Gewartet.*"
+    },
+    "morning3_yuna_gate_warm_4": {
+        "name": "{name}",
+        "text": "*Seite an Seite mit Yuna gehen. Keine Worte. — Aber seltsamerweise ist die Stille angenehm.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -64,13 +108,37 @@
         "name": "{name}",
         "text": "*Eine Person, die die ganze Nacht liest und zu spät kommt. Yuna kramte wortlos in ihrer Tasche, schnitt dann ein kleines Brot in zwei Hälften und hielt es ihr hin. Im Inneren der Tasche ist ein Zettel sichtbar.*"
     },
+    "morning3_yuna_gate_6_b": {
+        "name": "{name}",
+        "text": "*Hinweis: Ich dachte, Sie hätten nicht gefrühstückt. Auf der Unterseite des Brotbeutels befindet sich ein wenig hellviolette Tinte.*"
+    },
     "morning3_yuna_gate_7": {
         "name": "Yuna",
         "text": "*Sie holt ein kleines Brötchen aus ihrer Tasche. Wir teilen es uns, während wir gemütlich durch das Tor gehen.*"
     },
+    "morning3_yuna_gate_cold_1": {
+        "name": "Yuna",
+        "text": "*Sie geht zuerst vorbei. Unsere Blicke treffen sich, aber sie wendet sich ab.*"
+    },
+    "morning3_yuna_gate_cold_2": {
+        "name": "{name}",
+        "text": "*Ihre Schritte werden schneller. — Es fühlt sich an, als ob die Mauer wieder hochgeht.*"
+    },
     "morning3_dain_gate_1": {
         "name": "{name}",
         "text": "*In der Nähe des Tors kommt Dain im Vollsprint angerannt.*"
+    },
+    "morning3_dain_gate_warm_1": {
+        "name": "Dain",
+        "text": "*Sie rennt herbei und hakt sich bei mir unter.*"
+    },
+    "morning3_dain_gate_warm_2": {
+        "name": "Dain",
+        "text": "Hey! Fast zu spät! Lass uns zusammen gehen!"
+    },
+    "morning3_dain_gate_warm_3": {
+        "name": "{name}",
+        "text": "*Dains Arm ist um meinen geschlungen. Sie ist stark. — Ich kann mich nicht losreißen, und ich will es auch nicht.*"
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
@@ -84,9 +152,25 @@
         "name": "{name}",
         "text": "Moment mal — warum hältst du meine Hand?!"
     },
+    "morning3_dain_gate_4_b": {
+        "name": "Dain",
+        "text": "So ist es schneller!! Frag nicht!!"
+    },
     "morning3_dain_gate_5": {
         "name": "{name}",
         "text": "*Ihre Hand ist heiß. Ob vom Schweiß, oder ob es nur dort heiß ist, wo Dain sie gehalten hat. Beim Rennen bleibt keine Zeit zum Nachdenken.*"
+    },
+    "morning3_dain_gate_5_b": {
+        "name": "{name}",
+        "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines 'uff' hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
+    },
+    "morning3_dain_gate_cold_1": {
+        "name": "Dain",
+        "text": "*Sie rennt mit ihren anderen Freunden vorbei.*"
+    },
+    "morning3_dain_gate_cold_2": {
+        "name": "Dain",
+        "text": "Oh, hi!"
     },
     "morning3_classroom_1": {
         "name": "{name}",
@@ -104,9 +188,17 @@
         "name": "Seoyeon",
         "text": "Zusammen in die Schule? Ihr versteht euch wohl ziemlich gut."
     },
+    "morning3_react_yuna_1_b": {
+        "name": "Dain",
+        "text": "*Sie kehrt ganz offen ins Klassenzimmer zurück.*"
+    },
     "morning3_react_yuna_2": {
         "name": "Dain",
         "text": "Voll neidisch!! Ich hätt auch gern jemanden, mit dem ich morgens herkomme!!"
+    },
+    "morning3_react_yuna_2_b": {
+        "name": "Seoyeon",
+        "text": "*Sie stellt sich ganz selbstverständlich vor die Klassenzimmertür.*"
     },
     "morning3_react_dain_1": {
         "name": "Seoyeon",
@@ -120,89 +212,9 @@
         "name": "{name}",
         "text": "*Erste Stunde zu Ende. Jede Pause — jemand wählt genau den richtigen Moment.*"
     },
-    "morning3_date_seo_1": {
-        "name": "Seoyeon",
-        "text": "Hast du am Wochenende Zeit? Es gibt einen Ort, den ich besuchen möchte."
-    },
-    "morning3_date_seo_choice": {
-        "name": "Seoyeon",
-        "text": "*Sie fragt beiläufig, als sie mir auf dem Flur begegnet.*",
-        "choices": [
-            "Ja. Wohin?",
-            "Ich glaube, ich bin etwas beschäftigt"
-        ]
-    },
-    "morning3_date_seo_accept": {
+    "morning3_date_intro_b": {
         "name": "{name}",
-        "text": "*Ich habe die Wochenendpläne mit Seoyeon angenommen.*"
-    },
-    "morning3_date_seo_decline": {
-        "name": "{name}",
-        "text": "*Ich habe Seoyeons Angebot abgelehnt.*"
-    },
-    "morning3_date_dain_1": {
-        "name": "Dain",
-        "text": "Hey! Was machst du am Wochenende?! Lass uns zusammen in die Spielhalle gehen!!"
-    },
-    "morning3_date_dain_2": {
-        "name": "Dain",
-        "text": "*Ihre Finger klopfen auf die Tischkante. Schneller als sonst. Die Stuhlbeine kratzen in kurzen Stößen über den Boden.*"
-    },
-    "morning3_date_dain_choice": {
-        "name": "Dain",
-        "text": "*In der nächsten Pause kommt sie an meinen Platz und fragt mich.*",
-        "choices": [
-            "Klar, abgemacht",
-            "Dieses Wochenende passt nicht so..."
-        ]
-    },
-    "morning3_date_dain_accept": {
-        "name": "{name}",
-        "text": "*Ich habe die Wochenendpläne mit Dain angenommen.*"
-    },
-    "morning3_date_dain_decline": {
-        "name": "Dain",
-        "text": "Ach so? Na, wenn du keine Zeit hast, kann man nix machen!"
-    },
-    "morning3_date_dain_decline_narr": {
-        "name": "Dain",
-        "text": "*Sie geht mit einem strahlenden Lächeln weg. Kurz bevor die Glocke läutet, klopft sie einmal mit dem Finger an die Innenseite ihrer Tasche.*"
-    },
-    "morning3_date_dain_decline_inner_2": {
-        "name": "{name}",
-        "text": "*Ich bilde mir ein, aufmerksam zu sein. — Aber ausgerechnet in den wichtigen Momenten liege ich falsch.*"
-    },
-    "morning3_date_yuna_1": {
-        "name": "{name}",
-        "text": "*Kurz vor der Mittagspause liegt ein Zettel von Yuna auf meinem Tisch.*"
-    },
-    "morning3_date_yuna_2": {
-        "name": "{name}",
-        "text": "*'Wochenende. Ich gehe zum Antiquariat. Komm, wenn du willst. — Yuna'*"
-    },
-    "morning3_date_yuna_choice": {
-        "name": "{name}",
-        "text": "*Nachdem ich Yunas Notiz gelesen habe...*",
-        "choices": [
-            "Ich nicke ihr zu",
-            "Ich schüttle leicht den Kopf"
-        ]
-    },
-    "morning3_date_yuna_accept": {
-        "name": "{name}",
-        "text": "*Ich habe die Wochenendpläne mit Yuna angenommen.*"
-    },
-    "morning3_date_yuna_decline": {
-        "name": "{name}",
-        "text": "*Ich faltete den Zettel leise zusammen und steckte ihn in meine Tasche. Ich schrieb keine Antwort. Yuna senkt leicht den Kopf und schließt das Buch.*"
-    },
-    "morning3_set_multiple": {
-        "name": "{name}",
-        "text": "*...Moment. Die Wochenendpläne überschneiden sich. Was mache ich jetzt.*"
-    },
-    "morning3_end": {
-        "name": "{name}",
-        "text": "*Ehe ich mich versehe, gehen die Stunden weiter und die Mittagspause naht.*"
+        "text": "*In der Pause trete ich auf den Flur. Seoyeon ist die Erste, die sich meinem Schritt anpasst.*"
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
@@ -212,257 +224,13 @@
         "name": "Klassenlehrerin",
         "text": "......"
     },
+    "hidden_homeroom_d3_3_b": {
+        "name": "Klassenlehrerin",
+        "text": "*Ihre Hand hält über dem Manuskriptpapier inne. Gleich darauf wird das Blatt umgedreht.*"
+    },
     "hidden_homeroom_d3_4": {
         "name": "Klassenlehrerin",
         "text": "...Ist nichts. Dienstliche Unterlagen. — ...Aufmerksam zu sein ist normalerweise eine Stärke. Manchmal eine Schwäche."
-    },
-    "hidden_homeroom_d3_choice": {
-        "name": "{name}",
-        "text": "*Das ist Manuskriptpapier. Sie hat den Gesichtsausdruck von jemandem, der ertappt wurde.*",
-        "choices": [
-            "Ich hab gesehen, dass es ein Manuskript ist. — Schreiben Sie einen Roman?",
-            "Entschuldigung, ich hab nichts gesehen."
-        ]
-    },
-    "hidden_homeroom_d3_reveal_1": {
-        "name": "Klassenlehrerin",
-        "text": "...Zu peinlich, um es Roman zu nennen. Zu alt für eine Übung. Sieben Jahre."
-    },
-    "hidden_homeroom_d3_reveal_2": {
-        "name": "Klassenlehrerin",
-        "text": "An dem Tag, an dem ich auf das letzte Ergebnis wartete, kam kein Anruf. An diesem Tag füllte ich die Bewerbung fürs Lehramtsstudium aus."
-    },
-    "hidden_homeroom_d3_reveal_3": {
-        "name": "Klassenlehrerin",
-        "text": "So bin ich Koreanischlehrerin geworden. Witzig, oder? Dass ich mich immer noch an Papier klammere."
-    },
-    "hidden_homeroom_d3_reveal_4": {
-        "name": "Klassenlehrerin",
-        "text": "Es wäre einfacher zu sagen, ich hätte aufgegeben. Aber ich hole es immer wieder in leeren Klassenzimmern raus — also hab ich's wohl nie wirklich."
-    },
-    "hidden_homeroom_d3_reveal_choice": {
-        "name": "{name}",
-        "text": "*Sieben Jahre. Das Manuskriptpapier auf dem Pult ist abgegriffen.*",
-        "choices": [
-            "Sieben Jahre sind kein Aufgeben — das ist Durchhaltevermögen",
-            "Warum schreiben Sie immer hier?"
-        ]
-    },
-    "hidden_homeroom_d3_reveal_choice_a": {
-        "name": "Klassenlehrerin",
-        "text": "*Pause. Die Hand, die das Manuskriptpapier berührte, bleibt stehen.*...Es fühlt sich weniger schäbig an, wenn ich höre, dass man es Beharrlichkeit nennt."
-    },
-    "hidden_homeroom_d3_reveal_choice_b": {
-        "name": "Klassenlehrerin",
-        "text": "...Das Klassenzimmer ist am ruhigsten. Ironischerweise."
-    },
-    "hidden_homeroom_d3_reveal_5": {
-        "name": "Klassenlehrerin",
-        "text": "*Den Blick abwendend.* ...Aber das ist wirklich ein Geheimnis. Die anderen Lehrer wissen es nicht mal."
-    },
-    "hidden_homeroom_d3_reveal_6": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie lächelt. Ihre Hand liegt noch immer auf dem Manuskriptpapier.*"
-    },
-    "hidden_homeroom_d3_hide_1": {
-        "name": "Klassenlehrerin",
-        "text": "...Okay, tu so, als hättest du nichts gesehen. Bitte. — ...Danke."
-    },
-    "hidden_homeroom_d3_end": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie streicht sich die Haare zurück und verlässt das Klassenzimmer. Hinter der geschlossenen Tür klickt eine Stiftkappe.*"
-    },
-    "hidden_homeroom_d3_freetalk": {
-        "name": "Klassenlehrerin",
-        "text": "*Sie dreht das Manuskript um und schiebt es unter ein Buch.* ...Wenn du es gesehen hast, kann ich nicht mehr so tun, als wäre nichts.",
-        "context": "Tag 3 Morgen. Die Klassenlehrerin beim Schreiben eines Romanmanuskripts im leeren Klassenzimmer entdeckt. Ein sieben Jahre gehütetes Geheimnis. Ton: versucht mit leichten Scherzen abzulenken, aber die Sätze werden kürzer, wenn das Manuskript erwähnt wird.",
-        "personality": "Die Lehrerin war eine angehende Romanautorin. Wurde Lehrerin, hat den Traum aber nie aufgegeben."
-    },
-    "hidden_nurse_d3_check": {
-        "name": "{name}",
-        "text": "*Die Pause geht zu Ende.*"
-    },
-    "hidden_nurse_d3_1": {
-        "name": "{name}",
-        "text": "*Selbst nach der Morgenglocke konnte ich nicht von meinem Platz aufstehen. Der Rand des Pflasters auf meiner Hand hebt sich ab. Ich öffne die Tür zum Krankenzimmer.*"
-    },
-    "hidden_nurse_d3_2": {
-        "name": "Schulkrankenschwester",
-        "text": "...Warum bist du dann hergekommen? Du siehst nicht gut aus."
-    },
-    "hidden_nurse_d3_3": {
-        "name": "{name}",
-        "text": "...Wollte mich einfach ausruhen. Beziehungen werden kompliziert."
-    },
-    "hidden_nurse_d3_4": {
-        "name": "Schulkrankenschwester",
-        "text": "*zieht den Vorhang zu und reicht dir eine Tasse Wasser*...setz dich. Hier können Sie sich wohlfühlen. Sie können langsam sprechen."
-    },
-    "hidden_nurse_d3_choice1": {
-        "name": "{name}",
-        "text": "*...Da hat sie recht.*",
-        "choices": [
-            "Vielleicht schon, ja...",
-            "Nein, es ist einfach... kompliziert"
-        ]
-    },
-    "hidden_nurse_d3_choice1_a": {
-        "name": "Schulkrankenschwester",
-        "text": "...Ähnlich? Dann war es gut, dass du hergekommen bist."
-    },
-    "hidden_nurse_d3_choice1_b": {
-        "name": "Schulkrankenschwester",
-        "text": "*Neigt leicht den Kopf.* ...Okay. Ob kompliziert oder nicht, ruh dich hier erstmal aus."
-    },
-    "hidden_nurse_d3_6": {
-        "name": "Schulkrankenschwester",
-        "text": "Als ich im Universitätskrankenhaus gearbeitet habe. Wenn die Rufglocken gleichzeitig klingelten, zählten meine Hände zuerst die leeren Betten. Das habe ich gehasst."
-    },
-    "hidden_nurse_d3_7": {
-        "name": "Schulkrankenschwester",
-        "text": "Deshalb bin ich hierher gekommen. In der Schule — kann ich mich wirklich um jeden Einzelnen kümmern."
-    },
-    "hidden_nurse_d3_8": {
-        "name": "Schulkrankenschwester",
-        "text": "Für dich gilt das Gleiche. Versuch nicht, dich um alle zu kümmern. — Wäre es nicht besser, die eine Person, die wirklich zählt, richtig anzuschauen?"
-    },
-    "hidden_nurse_d3_choice2": {
-        "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester hielt bei 'einer Person' inne. Der Rand des Pappbechers wird unter ihren Fingerspitzen zerknittert.*",
-        "choices": [
-            "Haben Sie deshalb das Krankenhaus verlassen?",
-            "Haben Sie auch diese eine Person?"
-        ]
-    },
-    "hidden_nurse_d3_choice2_a": {
-        "name": "Schulkrankenschwester",
-        "text": "...Eher als aufgehört. Ich bin weggelaufen."
-    },
-    "hidden_nurse_d3_choice2_b": {
-        "name": "Schulkrankenschwester",
-        "text": "...Es gab eine. Eine Patientin, die ich nicht retten konnte."
-    },
-    "hidden_nurse_d3_9": {
-        "name": "Schulkrankenschwester",
-        "text": "...Die Person, die zählt. Was, wenn das ich bin?"
-    },
-    "hidden_nurse_d3_11": {
-        "name": "Schulkrankenschwester",
-        "text": "...War nur ein Scherz. Los, geh."
-    },
-    "hidden_nurse_d3_freetalk": {
-        "name": "Schulkrankenschwester",
-        "text": "*Sie zieht den Vorhang halb zu und holt einen Stuhl heran.* Heute kommt die Beratung vor den Witzen.",
-        "context": "Tag 3. Kam ins Krankenzimmer, nachdem Beziehungen kompliziert wurden. Die Krankenschwester gab ernsthafte Beratung. Geschichte über Burnout im Universitätskrankenhaus. Ton: beginnt mit Witzen, weicht aber ab oder lenkt mit Handlungen ab, wenn Krankenhausthemen aufkommen.",
-        "personality": "Die Schulkrankenschwester ist normalerweise verspielt, wird aber ruhiger, wenn es ernst wird. Erfahrene Fachkraft mit Burnout-Geschichte. Versucht, Grenzen zu Schülern zu wahren."
-    },
-    "morning3_seo_gate_warm_1": {
-        "name": "Seoyeon",
-        "text": "*Sie wartet anders als sonst vor dem Schultor.*"
-    },
-    "morning3_seo_gate_warm_2": {
-        "name": "Seoyeon",
-        "text": "...Ich bin nicht früh gekommen. Hatte was für den Schülerrat zu erledigen."
-    },
-    "morning3_seo_gate_warm_3": {
-        "name": "{name}",
-        "text": "*Ihre Hände sind leer. Keine Papiere, kein Klemmbrett.*"
-    },
-    "morning3_seo_gate_warm_4": {
-        "name": "Seoyeon",
-        "text": "*Sie beginnt wortlos neben mir herzugehen. — War der Weg vom Tor zum Klassenzimmer schon immer so kurz?*"
-    },
-    "morning3_seo_gate_cold_1": {
-        "name": "Seoyeon",
-        "text": "*Sie hält kurz an, als sie vorbeigeht.*"
-    },
-    "morning3_seo_gate_cold_2": {
-        "name": "Seoyeon",
-        "text": "...Der Neue. Bist immer noch hier."
-    },
-    "morning3_seo_gate_cold_3": {
-        "name": "{name}",
-        "text": "*Ihr Ton ist sachlich. Seoyeon entfernt sich durchs Tor, wird immer kleiner.*"
-    },
-    "morning3_yuna_gate_warm_1": {
-        "name": "{name}",
-        "text": "*Yuna lehnt an der Mauer neben dem Tor und reicht mir einen Zettel.*"
-    },
-    "morning3_yuna_gate_warm_2": {
-        "name": "Yuna",
-        "text": "...Darf ich mitgehen?"
-    },
-    "morning3_yuna_gate_warm_3": {
-        "name": "{name}",
-        "text": "*Ein Wort auf dem Zettel. Gewartet.*"
-    },
-    "morning3_yuna_gate_warm_4": {
-        "name": "{name}",
-        "text": "*Seite an Seite mit Yuna gehen. Keine Worte. — Aber seltsamerweise ist die Stille angenehm.*"
-    },
-    "morning3_yuna_gate_cold_1": {
-        "name": "Yuna",
-        "text": "*Sie geht zuerst vorbei. Unsere Blicke treffen sich, aber sie wendet sich ab.*"
-    },
-    "morning3_yuna_gate_cold_2": {
-        "name": "{name}",
-        "text": "*Ihre Schritte werden schneller. — Es fühlt sich an, als ob die Mauer wieder hochgeht.*"
-    },
-    "morning3_dain_gate_warm_1": {
-        "name": "Dain",
-        "text": "*Sie rennt herbei und hakt sich bei mir unter.*"
-    },
-    "morning3_dain_gate_warm_2": {
-        "name": "Dain",
-        "text": "Hey! Fast zu spät! Lass uns zusammen gehen!"
-    },
-    "morning3_dain_gate_warm_3": {
-        "name": "{name}",
-        "text": "*Dains Arm ist um meinen geschlungen. Sie ist stark. — Ich kann mich nicht losreißen, und ich will es auch nicht.*"
-    },
-    "morning3_dain_gate_cold_1": {
-        "name": "Dain",
-        "text": "*Sie rennt mit ihren anderen Freunden vorbei.*"
-    },
-    "morning3_dain_gate_cold_2": {
-        "name": "Dain",
-        "text": "Oh, hi!"
-    },
-    "morning3_date_intro_b": {
-        "name": "{name}",
-        "text": "*In der Pause trete ich auf den Flur. Seoyeon ist die Erste, die sich meinem Schritt anpasst.*"
-    },
-    "morning3_date_seo_accept_b": {
-        "name": "{name}",
-        "text": "*Ich gehe zurück ins Klassenzimmer. Eine weitere Stunde vergeht, dann kommt die nächste kurze Pause.*"
-    },
-    "morning3_date_seo_decline_b": {
-        "name": "{name}",
-        "text": "*Ich gehe zurück ins Klassenzimmer. Eine weitere Stunde vergeht, dann kommt die nächste kurze Pause.*"
-    },
-    "morning3_seo_gate_6_b": {
-        "name": "Seoyeon",
-        "text": "*Sie geht weiter. Selbstbewusst. Sie beeilt sich nicht, obwohl sie zu spät kommt.*"
-    },
-    "morning3_yuna_gate_6_b": {
-        "name": "{name}",
-        "text": "*Hinweis: Ich dachte, Sie hätten nicht gefrühstückt. Auf der Unterseite des Brotbeutels befindet sich ein wenig hellviolette Tinte.*"
-    },
-    "morning3_dain_gate_4_b": {
-        "name": "Dain",
-        "text": "So ist es schneller!! Frag nicht!!"
-    },
-    "morning3_dain_gate_5_b": {
-        "name": "{name}",
-        "text": "*Im Moment, als wir das Tor passierten, landete Dain und ließ ein kleines 'uff' hören. Aber als ich mich umdrehte, lächelte sie, als wäre nichts gewesen. — Hab ich mich verhört?*"
-    },
-    "morning3_react_yuna_1_b": {
-        "name": "Dain",
-        "text": "*Sie kehrt ganz offen ins Klassenzimmer zurück.*"
-    },
-    "morning3_react_yuna_2_b": {
-        "name": "Seoyeon",
-        "text": "*Sie stellt sich ganz selbstverständlich vor die Klassenzimmertür.*"
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
@@ -492,29 +260,17 @@
         "name": "{name}",
         "text": "*Ich hätte so tun können, als hätte ich nichts bemerkt. Die Lehrerin deckt das Papier nicht zu. Schließt die Stiftkappe, öffnet sie wieder.*"
     },
-    "hidden_homeroom_d3_3_b": {
-        "name": "Klassenlehrerin",
-        "text": "*Ihre Hand hält über dem Manuskriptpapier inne. Gleich darauf wird das Blatt umgedreht.*"
-    },
-    "hidden_homeroom_d3_reveal_2_b": {
-        "name": "Klassenlehrerin",
-        "text": "Ich dachte, mit dem Job würde ich es weglegen. Aber jedes Mal, wenn ich eine Schublade wechselte, kam es mit."
-    },
-    "hidden_homeroom_d3_reveal_2_c": {
+    "hidden_homeroom_d3_choice": {
         "name": "{name}",
-        "text": "Also ist es bis hierher gekommen."
+        "text": "*Das ist Manuskriptpapier. Sie hat den Gesichtsausdruck von jemandem, der ertappt wurde.*",
+        "choices": [
+            "Ich hab gesehen, dass es ein Manuskript ist. — Schreiben Sie einen Roman?",
+            "Entschuldigung, ich hab nichts gesehen."
+        ]
     },
-    "hidden_homeroom_d3_reveal_2_d": {
+    "hidden_homeroom_d3_reveal_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin schließt kurz den Mund. Dann — seufzt sie. Kurz.*"
-    },
-    "hidden_homeroom_d3_reveal_2_e": {
-        "name": "Klassenlehrerin",
-        "text": "...Es ist einfacher, wenn ich es nur für Papier halte."
-    },
-    "hidden_homeroom_d3_reveal_2_f": {
-        "name": "Klassenlehrerin",
-        "text": "*Die Lehrerin hält inne. Sie fährt mit den Fingern über das Manuskriptpapier. — Dann lehnt sie sich im Stuhl zurück.*"
+        "text": "...Zu peinlich, um es Roman zu nennen. Zu alt für eine Übung. Sieben Jahre."
     },
     "hidden_homeroom_d3_reveal_1_b": {
         "name": "{name}",
@@ -536,6 +292,34 @@
         "name": "Klassenlehrerin",
         "text": "*Die Lehrerin hebt ein Blatt Manuskriptpapier hoch. Es ist dicht beschrieben.*"
     },
+    "hidden_homeroom_d3_reveal_2": {
+        "name": "Klassenlehrerin",
+        "text": "An dem Tag, an dem ich auf das letzte Ergebnis wartete, kam kein Anruf. An diesem Tag füllte ich die Bewerbung fürs Lehramtsstudium aus."
+    },
+    "hidden_homeroom_d3_reveal_2_b": {
+        "name": "Klassenlehrerin",
+        "text": "Ich dachte, mit dem Job würde ich es weglegen. Aber jedes Mal, wenn ich eine Schublade wechselte, kam es mit."
+    },
+    "hidden_homeroom_d3_reveal_2_c": {
+        "name": "{name}",
+        "text": "Also ist es bis hierher gekommen."
+    },
+    "hidden_homeroom_d3_reveal_2_d": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin schließt kurz den Mund. Dann — seufzt sie. Kurz.*"
+    },
+    "hidden_homeroom_d3_reveal_2_e": {
+        "name": "Klassenlehrerin",
+        "text": "...Es ist einfacher, wenn ich es nur für Papier halte."
+    },
+    "hidden_homeroom_d3_reveal_2_f": {
+        "name": "Klassenlehrerin",
+        "text": "*Die Lehrerin hält inne. Sie fährt mit den Fingern über das Manuskriptpapier. — Dann lehnt sie sich im Stuhl zurück.*"
+    },
+    "hidden_homeroom_d3_reveal_3": {
+        "name": "Klassenlehrerin",
+        "text": "So bin ich Koreanischlehrerin geworden. Witzig, oder? Dass ich mich immer noch an Papier klammere."
+    },
     "hidden_homeroom_d3_reveal_3_b": {
         "name": "{name}",
         "text": "Haben Sie aufgegeben?"
@@ -543,6 +327,10 @@
     "hidden_homeroom_d3_reveal_3_c": {
         "name": "Klassenlehrerin",
         "text": "*Die Lehrerin legt das Manuskriptpapier ab. Langsam.*"
+    },
+    "hidden_homeroom_d3_reveal_4": {
+        "name": "Klassenlehrerin",
+        "text": "Es wäre einfacher zu sagen, ich hätte aufgegeben. Aber ich hole es immer wieder in leeren Klassenzimmern raus — also hab ich's wohl nie wirklich."
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
@@ -568,6 +356,30 @@
         "name": "{name}",
         "text": "Ich würde ihn gerne lesen. Ihren Roman."
     },
+    "hidden_homeroom_d3_reveal_choice": {
+        "name": "{name}",
+        "text": "*Sieben Jahre. Das Manuskriptpapier auf dem Pult ist abgegriffen.*",
+        "choices": [
+            "Sieben Jahre sind kein Aufgeben — das ist Durchhaltevermögen",
+            "Warum schreiben Sie immer hier?"
+        ]
+    },
+    "hidden_homeroom_d3_reveal_choice_a": {
+        "name": "Klassenlehrerin",
+        "text": "*Pause. Die Hand, die das Manuskriptpapier berührte, bleibt stehen.*...Es fühlt sich weniger schäbig an, wenn ich höre, dass man es Beharrlichkeit nennt."
+    },
+    "hidden_homeroom_d3_reveal_choice_b": {
+        "name": "Klassenlehrerin",
+        "text": "...Das Klassenzimmer ist am ruhigsten. Ironischerweise."
+    },
+    "hidden_homeroom_d3_reveal_5": {
+        "name": "Klassenlehrerin",
+        "text": "*Den Blick abwendend.* ...Aber das ist wirklich ein Geheimnis. Die anderen Lehrer wissen es nicht mal."
+    },
+    "hidden_homeroom_d3_reveal_6": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie lächelt. Ihre Hand liegt noch immer auf dem Manuskriptpapier.*"
+    },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Klassenlehrerin",
         "text": "...Dann bist du der erste Leser. Seit sieben Jahren."
@@ -592,21 +404,27 @@
         "name": "{name}",
         "text": "*Das Ticken der Uhr in einem leeren Klassenzimmer ist laut. Der Blick fällt nicht vom Satz mit überlagernden Löschspuren.*"
     },
-    "hidden_nurse_d3_2_b": {
-        "name": "{name}",
-        "text": "*Das umgedrehte Manuskriptpapier und die leise Stimme folgen mir bis auf den Flur.*"
-    },
-    "hidden_nurse_d3_2_c": {
-        "name": "{name}",
-        "text": "*Ich verlasse das Klassenzimmer — und von hinten, leise.*"
-    },
-    "hidden_nurse_d3_2_d": {
+    "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",
-        "text": "...Danke."
+        "text": "...Okay, tu so, als hättest du nichts gesehen. Bitte. — ...Danke."
     },
-    "hidden_nurse_d3_2_e": {
+    "hidden_homeroom_d3_end": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie streicht sich die Haare zurück und verlässt das Klassenzimmer. Hinter der geschlossenen Tür klickt eine Stiftkappe.*"
+    },
+    "hidden_homeroom_d3_freetalk": {
+        "name": "Klassenlehrerin",
+        "text": "*Sie dreht das Manuskript um und schiebt es unter ein Buch.* ...Wenn du es gesehen hast, kann ich nicht mehr so tun, als wäre nichts.",
+        "context": "Tag 3 Morgen. Die Klassenlehrerin beim Schreiben eines Romanmanuskripts im leeren Klassenzimmer entdeckt. Ein sieben Jahre gehütetes Geheimnis. Ton: versucht mit leichten Scherzen abzulenken, aber die Sätze werden kürzer, wenn das Manuskript erwähnt wird.",
+        "personality": "Die Lehrerin war eine angehende Romanautorin. Wurde Lehrerin, hat den Traum aber nie aufgegeben."
+    },
+    "hidden_nurse_d3_check": {
         "name": "{name}",
-        "text": "*Kurz vor der Mittagspause. Der Flur ist laut, aber es dringt kaum durch. Der Desinfektionsgeruch von der Tür des Krankenzimmers haftet noch an meinem Handgelenk.*"
+        "text": "*Die Pause geht zu Ende.*"
+    },
+    "hidden_nurse_d3_1": {
+        "name": "{name}",
+        "text": "*Selbst nach der Morgenglocke konnte ich nicht von meinem Platz aufstehen. Der Rand des Pflasters auf meiner Hand hebt sich ab. Ich öffne die Tür zum Krankenzimmer.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Schulkrankenschwester",
@@ -624,6 +442,30 @@
         "name": "{name}",
         "text": "...Ich wollte mich nur kurz ausruhen."
     },
+    "hidden_nurse_d3_2": {
+        "name": "Schulkrankenschwester",
+        "text": "...Warum bist du dann hergekommen? Du siehst nicht gut aus."
+    },
+    "hidden_nurse_d3_2_b": {
+        "name": "{name}",
+        "text": "*Das umgedrehte Manuskriptpapier und die leise Stimme folgen mir bis auf den Flur.*"
+    },
+    "hidden_nurse_d3_2_c": {
+        "name": "{name}",
+        "text": "*Ich verlasse das Klassenzimmer — und von hinten, leise.*"
+    },
+    "hidden_nurse_d3_2_d": {
+        "name": "Klassenlehrerin",
+        "text": "...Danke."
+    },
+    "hidden_nurse_d3_2_e": {
+        "name": "{name}",
+        "text": "*Kurz vor der Mittagspause. Der Flur ist laut, aber es dringt kaum durch. Der Desinfektionsgeruch von der Tür des Krankenzimmers haftet noch an meinem Handgelenk.*"
+    },
+    "hidden_nurse_d3_3": {
+        "name": "{name}",
+        "text": "...Wollte mich einfach ausruhen. Beziehungen werden kompliziert."
+    },
     "hidden_nurse_d3_3_b": {
         "name": "Schulkrankenschwester",
         "text": "*Der Gesundheitslehrer stellt den Becher ab.*"
@@ -635,6 +477,10 @@
     "hidden_nurse_d3_3_d": {
         "name": "Schulkrankenschwester",
         "text": "*Sie stellt den Becher ab. Die Hand, die sich eben noch leicht bewegt hatte, hält inne. Sie setzt sich aufs Bett.*"
+    },
+    "hidden_nurse_d3_4": {
+        "name": "Schulkrankenschwester",
+        "text": "*zieht den Vorhang zu und reicht dir eine Tasse Wasser*...setz dich. Hier können Sie sich wohlfühlen. Sie können langsam sprechen."
     },
     "hidden_nurse_d3_5_b": {
         "name": "Schulkrankenschwester",
@@ -700,6 +546,26 @@
         "name": "{name}",
         "text": "Universitätskrankenhaus?"
     },
+    "hidden_nurse_d3_choice1": {
+        "name": "{name}",
+        "text": "*...Da hat sie recht.*",
+        "choices": [
+            "Vielleicht schon, ja...",
+            "Nein, es ist einfach... kompliziert"
+        ]
+    },
+    "hidden_nurse_d3_choice1_a": {
+        "name": "Schulkrankenschwester",
+        "text": "...Ähnlich? Dann war es gut, dass du hergekommen bist."
+    },
+    "hidden_nurse_d3_choice1_b": {
+        "name": "Schulkrankenschwester",
+        "text": "*Neigt leicht den Kopf.* ...Okay. Ob kompliziert oder nicht, ruh dich hier erstmal aus."
+    },
+    "hidden_nurse_d3_6": {
+        "name": "Schulkrankenschwester",
+        "text": "Als ich im Universitätskrankenhaus gearbeitet habe. Wenn die Rufglocken gleichzeitig klingelten, zählten meine Hände zuerst die leeren Betten. Das habe ich gehasst."
+    },
     "hidden_nurse_d3_6_b": {
         "name": "Schulkrankenschwester",
         "text": "*Der Gesundheitslehrer stellt den Wasserbecher ab. Das Wasser am Boden des Bechers verteilt sich kreisförmig.*"
@@ -720,9 +586,17 @@
         "name": "{name}",
         "text": "*Yujin. — Der Name aus dem Notizbuch von gestern. Die Empfängerin dieser Briefe.*"
     },
+    "hidden_nurse_d3_7": {
+        "name": "Schulkrankenschwester",
+        "text": "Deshalb bin ich hierher gekommen. In der Schule — kann ich mich wirklich um jeden Einzelnen kümmern."
+    },
     "hidden_nurse_d3_7_b": {
         "name": "Schulkrankenschwester",
         "text": "*Sie sieht {name} an. Ihr Ausdruck ist ernst.*"
+    },
+    "hidden_nurse_d3_8": {
+        "name": "Schulkrankenschwester",
+        "text": "Für dich gilt das Gleiche. Versuch nicht, dich um alle zu kümmern. — Wäre es nicht besser, die eine Person, die wirklich zählt, richtig anzuschauen?"
     },
     "hidden_nurse_d3_8_b": {
         "name": "{name}",
@@ -752,6 +626,26 @@
         "name": "{name}",
         "text": "*Im Gesundheitsraum ist das Geräusch zu hören, wie Papier gefaltet wird. Briefe an Eugene. Fassen Sie den Griff und lassen Sie ihn los.*"
     },
+    "hidden_nurse_d3_choice2": {
+        "name": "Schulkrankenschwester",
+        "text": "*Die Krankenschwester hielt bei 'einer Person' inne. Der Rand des Pappbechers wird unter ihren Fingerspitzen zerknittert.*",
+        "choices": [
+            "Haben Sie deshalb das Krankenhaus verlassen?",
+            "Haben Sie auch diese eine Person?"
+        ]
+    },
+    "hidden_nurse_d3_choice2_a": {
+        "name": "Schulkrankenschwester",
+        "text": "...Eher als aufgehört. Ich bin weggelaufen."
+    },
+    "hidden_nurse_d3_choice2_b": {
+        "name": "Schulkrankenschwester",
+        "text": "...Es gab eine. Eine Patientin, die ich nicht retten konnte."
+    },
+    "hidden_nurse_d3_9": {
+        "name": "Schulkrankenschwester",
+        "text": "...Die Person, die zählt. Was, wenn das ich bin?"
+    },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
         "text": "*...Was? — Meine Füße blieben stehen. Nur der Geruch von Desinfektionsmittel hängt schwer in der Luft.*"
@@ -772,9 +666,115 @@
         "name": "{name}",
         "text": "*Der Desinfektionsgeruch wurde plötzlich stärker. Bevor ich einen weiteren Schritt machte, schaute ich zurück. Die Krankenschwester schaut aus dem Fenster. Sie lächelt nicht.*"
     },
+    "hidden_nurse_d3_11": {
+        "name": "Schulkrankenschwester",
+        "text": "...War nur ein Scherz. Los, geh."
+    },
+    "hidden_nurse_d3_freetalk": {
+        "name": "Schulkrankenschwester",
+        "text": "*Sie zieht den Vorhang halb zu und holt einen Stuhl heran.* Heute kommt die Beratung vor den Witzen.",
+        "context": "Tag 3. Kam ins Krankenzimmer, nachdem Beziehungen kompliziert wurden. Die Krankenschwester gab ernsthafte Beratung. Geschichte über Burnout im Universitätskrankenhaus. Ton: beginnt mit Witzen, weicht aber ab oder lenkt mit Handlungen ab, wenn Krankenhausthemen aufkommen.",
+        "personality": "Die Schulkrankenschwester ist normalerweise verspielt, wird aber ruhiger, wenn es ernst wird. Erfahrene Fachkraft mit Burnout-Geschichte. Versucht, Grenzen zu Schülern zu wahren."
+    },
+    "morning3_date_seo_1": {
+        "name": "Seoyeon",
+        "text": "Hast du am Wochenende Zeit? Es gibt einen Ort, den ich besuchen möchte."
+    },
+    "morning3_date_seo_choice": {
+        "name": "Seoyeon",
+        "text": "*Sie fragt beiläufig, als sie mir auf dem Flur begegnet.*",
+        "choices": [
+            "Ja. Wohin?",
+            "Ich glaube, ich bin etwas beschäftigt"
+        ]
+    },
+    "morning3_date_seo_accept": {
+        "name": "{name}",
+        "text": "*Ich habe die Wochenendpläne mit Seoyeon angenommen.*"
+    },
+    "morning3_date_seo_accept_b": {
+        "name": "{name}",
+        "text": "*Ich gehe zurück ins Klassenzimmer. Eine weitere Stunde vergeht, dann kommt die nächste kurze Pause.*"
+    },
+    "morning3_date_seo_decline": {
+        "name": "{name}",
+        "text": "*Ich habe Seoyeons Angebot abgelehnt.*"
+    },
+    "morning3_date_seo_decline_b": {
+        "name": "{name}",
+        "text": "*Ich gehe zurück ins Klassenzimmer. Eine weitere Stunde vergeht, dann kommt die nächste kurze Pause.*"
+    },
+    "morning3_date_dain_1": {
+        "name": "Dain",
+        "text": "Hey! Was machst du am Wochenende?! Lass uns zusammen in die Spielhalle gehen!!"
+    },
+    "morning3_date_dain_2": {
+        "name": "Dain",
+        "text": "*Ihre Finger klopfen auf die Tischkante. Schneller als sonst. Die Stuhlbeine kratzen in kurzen Stößen über den Boden.*"
+    },
+    "morning3_date_dain_choice": {
+        "name": "Dain",
+        "text": "*In der nächsten Pause kommt sie an meinen Platz und fragt mich.*",
+        "choices": [
+            "Klar, abgemacht",
+            "Dieses Wochenende passt nicht so..."
+        ]
+    },
+    "morning3_date_dain_accept": {
+        "name": "{name}",
+        "text": "*Ich habe die Wochenendpläne mit Dain angenommen.*"
+    },
+    "morning3_date_dain_decline": {
+        "name": "Dain",
+        "text": "Ach so? Na, wenn du keine Zeit hast, kann man nix machen!"
+    },
+    "morning3_date_dain_decline_narr": {
+        "name": "Dain",
+        "text": "*Sie geht mit einem strahlenden Lächeln weg. Kurz bevor die Glocke läutet, klopft sie einmal mit dem Finger an die Innenseite ihrer Tasche.*"
+    },
+    "morning3_date_dain_decline_inner_2": {
+        "name": "{name}",
+        "text": "*Ich bilde mir ein, aufmerksam zu sein. — Aber ausgerechnet in den wichtigen Momenten liege ich falsch.*"
+    },
+    "morning3_date_yuna_1": {
+        "name": "{name}",
+        "text": "*Kurz vor der Mittagspause liegt ein Zettel von Yuna auf meinem Tisch.*"
+    },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
         "text": "Heute gibt's also gerolltes Omelett."
+    },
+    "morning3_date_yuna_2": {
+        "name": "{name}",
+        "text": "*'Wochenende. Ich gehe zum Antiquariat. Komm, wenn du willst. — Yuna'*"
+    },
+    "morning3_date_yuna_choice": {
+        "name": "{name}",
+        "text": "*Nachdem ich Yunas Notiz gelesen habe...*",
+        "choices": [
+            "Ich nicke ihr zu",
+            "Ich schüttle leicht den Kopf"
+        ]
+    },
+    "morning3_date_yuna_accept": {
+        "name": "{name}",
+        "text": "*Ich habe die Wochenendpläne mit Yuna angenommen.*"
+    },
+    "morning3_date_yuna_decline": {
+        "name": "{name}",
+        "text": "*Ich faltete den Zettel leise zusammen und steckte ihn in meine Tasche. Ich schrieb keine Antwort. Yuna senkt leicht den Kopf und schließt das Buch.*"
+    },
+    "morning3_check_multiple": {},
+    "morning3_multi_from_seo": {},
+    "morning3_multi_from_dain": {},
+    "morning3_set_multiple": {
+        "name": "{name}",
+        "text": "*...Moment. Die Wochenendpläne überschneiden sich. Was mache ich jetzt.*"
+    },
+    "morning3_multi_from_yuna": {},
+    "morning3_end": {
+        "name": "{name}",
+        "text": "*Ehe ich mich versehe, gehen die Stunden weiter und die Mittagspause naht.*"
     },
     "morning3_end_b": {
         "name": "Yuna",

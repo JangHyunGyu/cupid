@@ -797,6 +797,10 @@
         "name": "{name}",
         "text": "*Escribo una respuesta y la borro. Queda una sola letra en el cuadro de texto, luego desaparece.*"
     },
+    "day4_night_reflect": {
+        "name": "{name}",
+        "text": "*Así pasó el sábado. Mañana hay un evento en el colegio. — Y eso que es domingo, pero toca ir igual.*"
+    },
     "day4_hidden_msg_branch": {
         "name": "Sistema",
         "text": ""
@@ -832,10 +836,6 @@
     "night_nurse_msg_4": {
         "name": "Enfermera",
         "text": "...Duerme."
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*Así pasó el sábado. Mañana hay un evento en el colegio. — Y eso que es domingo, pero toca ir igual.*"
     },
     "day4_night_sleep": {
         "name": "{name}",
