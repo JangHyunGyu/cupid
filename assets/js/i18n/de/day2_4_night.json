@@ -15,6 +15,10 @@
         "name": "Dain",
         "text": "Morgen wetten wir wieder!! Andere Disziplin!!"
     },
+    "night2_msg_seo_general": {
+        "name": "Seoyeon",
+        "text": "Morgen Mittag lass ich das Dach offen. Komm"
+    },
     "night2_msg_seo_specific": {
         "name": "Seoyeon",
         "text": "Danke für heute. Wir waren dank dir früher fertig"
@@ -30,10 +34,6 @@
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
         "text": "...Spiel es mir irgendwann nochmal vor"
-    },
-    "night2_msg_seo_general": {
-        "name": "Seoyeon",
-        "text": "Morgen Mittag lass ich das Dach offen. Komm"
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -96,6 +96,14 @@
         "name": "{name}",
         "text": "*Schon wieder drei Nachrichten am Stück.*"
     },
+    "night2_reply_dain_react_high": {
+        "name": "Dain",
+        "text": "Alter hahaha. Du MUSST morgen in die Turnhalle kommen!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "Dain",
+        "text": "Haha, okay. Gute Nacht!"
+    },
     "night2_reply_seo_1": {
         "name": "{name}",
         "text": "Wenn du mich rufst, komm ich wieder"
@@ -115,6 +123,14 @@
     "night2_reply_seo_5": {
         "name": "{name}",
         "text": "*'Diesmal komm wirklich.' — Ein Ton, der Konsequenzen verspricht.*"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "Seoyeon",
+        "text": "...Du bist interessanter als erwartet. Willst du morgen auf dem Dach zu Mittag essen?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "Seoyeon",
+        "text": "Haha. Okay. Bis morgen."
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -140,9 +156,49 @@
         "name": "Yuna",
         "text": "Den Grund verrat ich dir später"
     },
+    "night2_reply_yuna_6_b": {
+        "name": "{name}",
+        "text": "*Ich öffnete das Fenster. Kalte Luft strömt herein. Die Sterne sind zahlreich, und mein Finger bleibt beim dritten stehen, in der Luft schwebend.*"
+    },
+    "night2_reply_yuna_6_c": {
+        "name": "{name}",
+        "text": "*Die Antwort endet dort. Meine Fingerabdrücke bleiben am Fenster zurück.*"
+    },
     "night2_reply_yuna_7": {
         "name": "{name}",
         "text": "*Morgen Nacht wird mein Finger wieder beim dritten Stern stehen bleiben.*"
+    },
+    "night2_reply_yuna_react_high": {
+        "name": "Yuna",
+        "text": "...Also gibt es jemanden, der um diese Zeit antwortet. Willst du morgen in die Bibliothek kommen?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "Yuna",
+        "text": "...Ja. Gute Nacht."
+    },
+    "night2_hidden_check": {
+        "name": "{name}",
+        "text": "*Zwischen den Chat-Benachrichtigungen — fallen mir weitere Meldungen auf.*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*Eine private Nachricht von der Klassenlehrerin. 'Danke, dass du heute ins Lehrerzimmer gekommen bist. Der Papierkram ist erledigt, ich muss dich nicht mehr herbitten. ...Aber wenn die Eingewöhnung schwerfällt, komm jederzeit vorbei.'*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*Der Punkt am Ende der Nachricht sieht aus, als wäre er viel später gesetzt worden.*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*Ich lese nur die letzte Zeile noch einmal.*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Benachrichtigung der Gesundheits-App. 'Krankenakte: Transferstudent — Schürfwunde am Ellbogen (leicht). Notiz: Pflaster wechsle ich morgen früh. Pflasterwechsel ist eine medizinische Maßnahme, also kein Widerspruchsrecht ^^'*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*Ich drücke mit dem Daumen auf die Ecke des Pflasters. Für morgen früh gibt es einen Punkt mehr.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -183,62 +239,6 @@
     "night2_end_2": {
         "name": "{name}",
         "text": "*Der zweite Tag ist vorbei. Namen, die am ersten Tag noch fremd waren, stehen jetzt auf meinem Sperrbildschirm. Auch nachdem die Benachrichtigungen verschwinden, schalte ich den Bildschirm immer wieder ein.*"
-    },
-    "night2_hidden_check": {
-        "name": "{name}",
-        "text": "*Zwischen den Chat-Benachrichtigungen — fallen mir weitere Meldungen auf.*"
-    },
-    "night2_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*Eine private Nachricht von der Klassenlehrerin. 'Danke, dass du heute ins Lehrerzimmer gekommen bist. Der Papierkram ist erledigt, ich muss dich nicht mehr herbitten. ...Aber wenn die Eingewöhnung schwerfällt, komm jederzeit vorbei.'*"
-    },
-    "night2_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*Der Punkt am Ende der Nachricht sieht aus, als wäre er viel später gesetzt worden.*"
-    },
-    "night2_hidden_homeroom_3": {
-        "name": "{name}",
-        "text": "*Ich lese nur die letzte Zeile noch einmal.*"
-    },
-    "night2_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Benachrichtigung der Gesundheits-App. 'Krankenakte: Transferstudent — Schürfwunde am Ellbogen (leicht). Notiz: Pflaster wechsle ich morgen früh. Pflasterwechsel ist eine medizinische Maßnahme, also kein Widerspruchsrecht ^^'*"
-    },
-    "night2_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*Ich drücke mit dem Daumen auf die Ecke des Pflasters. Für morgen früh gibt es einen Punkt mehr.*"
-    },
-    "night2_reply_dain_react_high": {
-        "name": "Dain",
-        "text": "Alter hahaha. Du MUSST morgen in die Turnhalle kommen!!"
-    },
-    "night2_reply_dain_react_default": {
-        "name": "Dain",
-        "text": "Haha, okay. Gute Nacht!"
-    },
-    "night2_reply_seo_react_high": {
-        "name": "Seoyeon",
-        "text": "...Du bist interessanter als erwartet. Willst du morgen auf dem Dach zu Mittag essen?"
-    },
-    "night2_reply_seo_react_default": {
-        "name": "Seoyeon",
-        "text": "Haha. Okay. Bis morgen."
-    },
-    "night2_reply_yuna_react_high": {
-        "name": "Yuna",
-        "text": "...Also gibt es jemanden, der um diese Zeit antwortet. Willst du morgen in die Bibliothek kommen?"
-    },
-    "night2_reply_yuna_react_default": {
-        "name": "Yuna",
-        "text": "...Ja. Gute Nacht."
-    },
-    "night2_reply_yuna_6_b": {
-        "name": "{name}",
-        "text": "*Ich öffnete das Fenster. Kalte Luft strömt herein. Die Sterne sind zahlreich, und mein Finger bleibt beim dritten stehen, in der Luft schwebend.*"
-    },
-    "night2_reply_yuna_6_c": {
-        "name": "{name}",
-        "text": "*Die Antwort endet dort. Meine Fingerabdrücke bleiben am Fenster zurück.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

@@ -7,18 +7,6 @@
         "name": "Sistema",
         "text": ""
     },
-    "after5_hidden_farewell_1": {
-        "name": "{name}",
-        "text": "*La puerta de la escuela. Tres figuras a lo lejos. Seoyeon camina con Haeun, Dain lanza un balón mientras corre, Yuna lee despacio. Ninguna mira hacia aquí.*"
-    },
-    "after5_hidden_farewell_3": {
-        "name": "{name}",
-        "text": "*No es fácil para mí pedir perdón. Sólo levanté la mano una vez frente a la puerta de la escuela. Gracias.*"
-    },
-    "after5_hidden_farewell_3b": {
-        "name": "{name}",
-        "text": "*Fui hacia la parte trasera del colegio.*"
-    },
     "after5_farewell_seo_1": {
         "name": "{name}",
         "text": "*Me cruzo con Seoyeon en el pasillo.*"
@@ -113,6 +101,18 @@
         "name": "{name}",
         "text": "*Salí del gimnasio y fui a la parte trasera del colegio.*"
     },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*La puerta de la escuela. Tres figuras a lo lejos. Seoyeon camina con Haeun, Dain lanza un balón mientras corre, Yuna lee despacio. Ninguna mira hacia aquí.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*No es fácil para mí pedir perdón. Sólo levanté la mano una vez frente a la puerta de la escuela. Gracias.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*Fui hacia la parte trasera del colegio.*"
+    },
     "after5_sunset_1": {
         "name": "{name}",
         "text": "*El atardecer se posa en cada ventana del patio. Desde la sala de transmisiones fluye el anuncio del cierre del evento, y los altavoces del campo crepitan un compás tarde.*"
@@ -129,18 +129,6 @@
             "Ir con la persona a la que le prometí algo",
             "Ir hacia quien no se me va de la cabeza"
         ]
-    },
-    "after5_set_harem": {
-        "name": "{name}",
-        "text": "*Las palabras dobladas al almuerzo permanecen. Tres conversaciones se iluminan a la vez, y no puedes escribir la primera letra en ninguna.*"
-    },
-    "after5_harem_walk_1": {
-        "name": "{name}",
-        "text": "*Sin que nadie se atreviera a hablar primero, dejamos atrás la parte trasera del colegio.*"
-    },
-    "after5_harem_walk_2": {
-        "name": "{name}",
-        "text": "*Mensajes sin responder permanecen en la pantalla de bloqueo. Tus pies se han dirigido hacia el parque.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -377,8 +365,20 @@
         "name": "{name}",
         "text": "*Al final me di la vuelta y me fui a casa.*"
     },
+    "after5_set_harem": {
+        "name": "{name}",
+        "text": "*Las palabras dobladas al almuerzo permanecen. Tres conversaciones se iluminan a la vez, y no puedes escribir la primera letra en ninguna.*"
+    },
     "after5_harem_commit": {
         "name": "{name}",
         "text": "*Las palabras atascadas en tu garganta salen. Que no puedes elegir a una. Las tres expresiones se congelan a la vez.*"
+    },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*Sin que nadie se atreviera a hablar primero, dejamos atrás la parte trasera del colegio.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*Mensajes sin responder permanecen en la pantalla de bloqueo. Tus pies se han dirigido hacia el parque.*"
     }
 }

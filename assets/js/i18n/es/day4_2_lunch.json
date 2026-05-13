@@ -15,6 +15,10 @@
         "name": "Seoyeon",
         "text": "*La correa del bolso se afloja en la mano que la sujetaba.*"
     },
+    "date_seo_pretty_high_b": {
+        "name": "Seoyeon",
+        "text": "...¿Eso lo traías ensayado?"
+    },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
         "text": "*Aparta la mirada y se coloca el pelo detrás de la oreja.* ...Vamos a tomar aire."
@@ -22,6 +26,10 @@
     "date_seo_pretty_high_3": {
         "name": "{name}",
         "text": "Me salió sin más."
+    },
+    "date_seo_pretty_high_3_b": {
+        "name": "Seoyeon",
+        "text": "*Se aparta el pelo.* ...No te hagas ilusiones."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
@@ -55,6 +63,10 @@
         "name": "Seoyeon",
         "text": "*Palabras casuales — pero de alguien que ya lo vivió. Pasamos frente a una floristería.*"
     },
+    "date_seo_flower_b": {
+        "name": "Seoyeon",
+        "text": "*Se detuvo.* ...¿Entramos?"
+    },
     "date_seo_flower_2": {
         "name": "Seoyeon",
         "text": "*Empujó la puerta de la florería. Sonó una campanilla. Elige una maceta pequeña. Una suculenta.*"
@@ -63,6 +75,10 @@
         "name": "Seoyeon",
         "text": "Esta es fácil de cuidar. Aguanta sin agua."
     },
+    "date_seo_succulent_2_b": {
+        "name": "{name}",
+        "text": "¿Es para mí?"
+    },
     "date_seo_succulent_3": {
         "name": "Seoyeon",
         "text": "Si eres capaz de cuidarla. — Si no, me la llevo otra vez."
@@ -70,6 +86,18 @@
     "date_seo_end": {
         "name": "Seoyeon",
         "text": "*Lo que Seoyeon me tiende. — Me tiembla la mano al agarrarlo.*"
+    },
+    "date_seo_end_b": {
+        "name": "{name}",
+        "text": "*Salimos del parque y empezamos a caminar por la calle.*"
+    },
+    "date_seo_end_c": {
+        "name": "Seoyeon",
+        "text": "*Se detuvo.* ...Hoy."
+    },
+    "date_seo_end_d": {
+        "name": "Seoyeon",
+        "text": "Lo de hoy me gustó. — Recuerda solo eso."
     },
     "date_yuna_1": {
         "name": "{name}",
@@ -103,6 +131,14 @@
         "name": "Yuna",
         "text": "*No levanta la mirada. Est? Esperando.*"
     },
+    "date_yuna_pretty_high_5_b": {
+        "name": "{name}",
+        "text": "Estás guapísima."
+    },
+    "date_yuna_pretty_high_5_c": {
+        "name": "Yuna",
+        "text": "*Se le ponen las orejas rojas.* ...Déjalo."
+    },
     "date_yuna_pretty_low": {
         "name": "Yuna",
         "text": "...Es la primera vez que me dicen algo así."
@@ -119,6 +155,10 @@
         "name": "Yuna",
         "text": "¿Viniste aquí antes?"
     },
+    "date_yuna_bookstore_2_b": {
+        "name": "{name}",
+        "text": "Nunca he venido."
+    },
     "date_yuna_bookstore_3": {
         "name": "Yuna",
         "text": "...Menos mal. Entonces te la muestro yo primero."
@@ -131,6 +171,10 @@
         "name": "Yuna",
         "text": "...Escucha."
     },
+    "date_yuna_earphone_2_b": {
+        "name": "{name}",
+        "text": "*Suena una pieza de piano tranquila. El ruido de la librería se aleja.*"
+    },
     "date_yuna_earphone_3": {
         "name": "{name}",
         "text": "*La distancia entre los dos es lo que da el cable. Treinta centímetros. — Más cerca y nos rozamos; más lejos y se sale.*"
@@ -138,6 +182,14 @@
     "date_yuna_oldbook": {
         "name": "{name}",
         "text": "*Pasamos por una librería de segunda mano. Yuna se detuvo.*"
+    },
+    "date_yuna_oldbook_b": {
+        "name": "Yuna",
+        "text": "...Aquí."
+    },
+    "date_yuna_oldbook_c": {
+        "name": "{name}",
+        "text": "*Sacó un libro viejo. Va pasando las páginas.*"
     },
     "date_yuna_oldbook_2": {
         "name": "Yuna",
@@ -154,6 +206,14 @@
     "date_yuna_end": {
         "name": "Yuna",
         "text": "*Mira a {name}. La página que estaba pasando se detiene bajo sus dedos.*"
+    },
+    "date_yuna_end_b": {
+        "name": "Yuna",
+        "text": "*Justo antes de despedirnos, me da una nota. Sin decir nada.*"
+    },
+    "date_yuna_end_c": {
+        "name": "{name}",
+        "text": "*\"Hoy me salieron muchas frases. Solo delante de ti.\" — La letra de Yuna tiembla.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -203,6 +263,10 @@
         "name": "Dain",
         "text": "¡¡Pues claro!! ¡¡Hoy estoy a tope!!"
     },
+    "date_dain_to_arcade": {
+        "name": "{name}",
+        "text": "*Nos vamos a la sala de juegos.*"
+    },
     "date_dain_arcade": {
         "name": "{name}",
         "text": "*Nos paramos frente a la máquina de ritmo. La pantalla parpadea.*"
@@ -211,9 +275,21 @@
         "name": "Dain",
         "text": "¡Dale, una apuesta!! ¡El que pierda paga las bebidas!!"
     },
+    "date_dain_arcade_2_b": {
+        "name": "{name}",
+        "text": "¿Otra vez una apuesta?"
+    },
     "date_dain_arcade_3": {
         "name": "Dain",
         "text": "¡¡Sin apuesta no tiene gracia!!"
+    },
+    "date_dain_arcade_3_b": {
+        "name": "{name}",
+        "text": "*Juego de ritmo. — Dain es buenísima, sin discusión.*"
+    },
+    "date_dain_arcade_3_c": {
+        "name": "Dain",
+        "text": "*Pega un grito de emoción.* ¡¡Combo perfecto!! ¿¡Lo viste!?"
     },
     "date_dain_rhythm": {
         "name": "Dain",
@@ -243,13 +319,29 @@
         "name": "{name}",
         "text": "¿Dain?"
     },
+    "date_dain_shop_2_b": {
+        "name": "Dain",
+        "text": "*Gira la cara.* ¡Nada, nada! ¡Vamos!"
+    },
     "date_dain_shop_3": {
         "name": "Dain",
         "text": "*Se cala la gorra.* ...No me mires."
     },
+    "date_dain_shop_3_b": {
+        "name": "Dain",
+        "text": "*Desde debajo de la gorra.* ...Dilo una vez más y te pego, de verdad."
+    },
     "date_dain_end": {
         "name": "{name}",
         "text": "*Está sonriendo. Bajo la sombra de la gorra, su mirada sigue en el escaparate.*"
+    },
+    "date_dain_end_b": {
+        "name": "Dain",
+        "text": "Oye."
+    },
+    "date_dain_end_c": {
+        "name": "Dain",
+        "text": "Hoy fue divertido. ...No lo digo por decir."
     },
     "pre_confess_minsu": {
         "name": "Minsu",
@@ -262,97 +354,5 @@
     "pre_confess_callback": {
         "name": "{name}",
         "text": "*El teléfono en el bolsillo pesa. No hay notificaciones; en la pantalla solo se refleja el vidrio negro.*"
-    },
-    "date_seo_end_b": {
-        "name": "{name}",
-        "text": "*Salimos del parque y empezamos a caminar por la calle.*"
-    },
-    "date_dain_to_arcade": {
-        "name": "{name}",
-        "text": "*Nos vamos a la sala de juegos.*"
-    },
-    "date_seo_pretty_high_b": {
-        "name": "Seoyeon",
-        "text": "...¿Eso lo traías ensayado?"
-    },
-    "date_seo_pretty_high_3_b": {
-        "name": "Seoyeon",
-        "text": "*Se aparta el pelo.* ...No te hagas ilusiones."
-    },
-    "date_seo_flower_b": {
-        "name": "Seoyeon",
-        "text": "*Se detuvo.* ...¿Entramos?"
-    },
-    "date_seo_succulent_2_b": {
-        "name": "{name}",
-        "text": "¿Es para mí?"
-    },
-    "date_yuna_pretty_high_5_b": {
-        "name": "{name}",
-        "text": "Estás guapísima."
-    },
-    "date_yuna_pretty_high_5_c": {
-        "name": "Yuna",
-        "text": "*Se le ponen las orejas rojas.* ...Déjalo."
-    },
-    "date_yuna_bookstore_2_b": {
-        "name": "{name}",
-        "text": "Nunca he venido."
-    },
-    "date_yuna_earphone_2_b": {
-        "name": "{name}",
-        "text": "*Suena una pieza de piano tranquila. El ruido de la librería se aleja.*"
-    },
-    "date_yuna_oldbook_b": {
-        "name": "Yuna",
-        "text": "...Aquí."
-    },
-    "date_yuna_oldbook_c": {
-        "name": "{name}",
-        "text": "*Sacó un libro viejo. Va pasando las páginas.*"
-    },
-    "date_dain_shop_3_b": {
-        "name": "Dain",
-        "text": "*Desde debajo de la gorra.* ...Dilo una vez más y te pego, de verdad."
-    },
-    "date_dain_arcade_2_b": {
-        "name": "{name}",
-        "text": "¿Otra vez una apuesta?"
-    },
-    "date_dain_arcade_3_b": {
-        "name": "{name}",
-        "text": "*Juego de ritmo. — Dain es buenísima, sin discusión.*"
-    },
-    "date_dain_arcade_3_c": {
-        "name": "Dain",
-        "text": "*Pega un grito de emoción.* ¡¡Combo perfecto!! ¿¡Lo viste!?"
-    },
-    "date_dain_shop_2_b": {
-        "name": "Dain",
-        "text": "*Gira la cara.* ¡Nada, nada! ¡Vamos!"
-    },
-    "date_seo_end_c": {
-        "name": "Seoyeon",
-        "text": "*Se detuvo.* ...Hoy."
-    },
-    "date_seo_end_d": {
-        "name": "Seoyeon",
-        "text": "Lo de hoy me gustó. — Recuerda solo eso."
-    },
-    "date_yuna_end_b": {
-        "name": "Yuna",
-        "text": "*Justo antes de despedirnos, me da una nota. Sin decir nada.*"
-    },
-    "date_yuna_end_c": {
-        "name": "{name}",
-        "text": "*\"Hoy me salieron muchas frases. Solo delante de ti.\" — La letra de Yuna tiembla.*"
-    },
-    "date_dain_end_b": {
-        "name": "Dain",
-        "text": "Oye."
-    },
-    "date_dain_end_c": {
-        "name": "Dain",
-        "text": "Hoy fue divertido. ...No lo digo por decir."
     }
 }

@@ -572,6 +572,7 @@
         "name": "{name}",
         "text": "*도서관 별관을 나왔다. 노을이 지고 있다.*"
     },
+    "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",
         "text": "*하교길. 교문을 나서는데 — 민수가 뒤에서 따라온다.*"

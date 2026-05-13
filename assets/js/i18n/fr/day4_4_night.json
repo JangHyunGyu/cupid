@@ -797,6 +797,10 @@
         "name": "{name}",
         "text": "*Je tape une réponse et l'efface. Une seule lettre reste dans le champ, puis disparaît.*"
     },
+    "day4_night_reflect": {
+        "name": "{name}",
+        "text": "*Le samedi s'est terminé ainsi. Demain, c'est la fête de l'école. — On doit y aller, même si c'est dimanche.*"
+    },
     "day4_hidden_msg_branch": {
         "name": "Système",
         "text": ""
@@ -832,10 +836,6 @@
     "night_nurse_msg_4": {
         "name": "Infirmière",
         "text": "...Bonne nuit."
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*Le samedi s'est terminé ainsi. Demain, c'est la fête de l'école. — On doit y aller, même si c'est dimanche.*"
     },
     "day4_night_sleep": {
         "name": "{name}",

@@ -797,6 +797,10 @@
         "name": "{name}",
         "text": "*I type a reply and delete it. A single consonant lingers in the text box, then disappears.*"
     },
+    "day4_night_reflect": {
+        "name": "{name}",
+        "text": "*Saturday just flew by. Tomorrow's the school event. — Yeah, on a Sunday.*"
+    },
     "day4_hidden_msg_branch": {
         "name": "System",
         "text": ""
@@ -832,10 +836,6 @@
     "night_nurse_msg_4": {
         "name": "School Nurse",
         "text": "...Good night."
-    },
-    "day4_night_reflect": {
-        "name": "{name}",
-        "text": "*Saturday just flew by. Tomorrow's the school event. — Yeah, on a Sunday.*"
     },
     "day4_night_sleep": {
         "name": "{name}",

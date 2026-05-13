@@ -55,13 +55,27 @@
         "name": "Seoyeon",
         "text": "I am, so I'm giving it to you. — Go up whenever you need some air."
     },
+    "tour_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*She rests a hand on the rooftop railing and looks down at the school.* I didn't think we'd spend the last lunch break here, too.",
+        "context": "Day 5 last lunch, with Seoyeon. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
+        "personality": "Seoyeon is the cool student council president. Being the last time, her usual composure is gone and true feelings emerge."
+    },
     "tour_seo_end": {
         "name": "{name}",
         "text": "*She doesn't say 'even without me.' But it's right there, tucked behind her words.*"
     },
+    "tour_yuna_1_check": {
+        "name": "{name}",
+        "text": "*Heading to the library annex.*"
+    },
     "tour_yuna_1": {
         "name": "{name}",
         "text": "*The library annex. An old sofa, afternoon sunlight through the window. The same dusty smell as when you first walked in.*"
+    },
+    "tour_yuna_1b": {
+        "name": "{name}",
+        "text": "*The library annex. The secret reading space shared with Yuna. An old sofa, afternoon sunlight streaming through the window.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
@@ -103,6 +117,12 @@
         "name": "{name}",
         "text": "First reader?"
     },
+    "tour_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*She runs her fingertips along the book spines, then lifts her head.* Since it's the last time, I'm talking more than usual.",
+        "context": "Day 5 last lunch, with Yuna. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
+        "personality": "Yuna is a mysterious literary girl. Being the last time, her walls are completely down. Her sentences are much longer than usual."
+    },
     "tour_yuna_end": {
         "name": "Yuna",
         "text": "...Only reader. For now."
@@ -111,9 +131,17 @@
         "name": "{name}",
         "text": "*'For now.' — That's the most Yuna can promise.*"
     },
+    "tour_dain_1_check": {
+        "name": "{name}",
+        "text": "*Heading to the gym.*"
+    },
     "tour_dain_1": {
         "name": "{name}",
         "text": "*The gym. The first bet and the final spike linger on the same court. Today the lights are on.*"
+    },
+    "tour_dain_1b": {
+        "name": "{name}",
+        "text": "*The gym. A place filled with countless bets and spikes over the past few days. — The lights are on today.*"
     },
     "tour_dain_2": {
         "name": "Dain",
@@ -151,6 +179,10 @@
         "name": "{name}",
         "text": "......"
     },
+    "tour_dain_11_b": {
+        "name": "Dain",
+        "text": "I used to think if volleyball was gone, I'd be empty too. Lately — it's not like that."
+    },
     "tour_dain_12": {
         "name": "Dain",
         "text": "Dunno what changed. ...But I can see myself off the court now, too."
@@ -163,46 +195,14 @@
         "name": "Dain",
         "text": "...I have someone beside me now."
     },
-    "tour_dain_end_2": {
-        "name": "{name}",
-        "text": "*She speaks without exclamation marks. This time she doesn't bow her head. Dain's hand rests on the volleyball, not on her knee.*"
-    },
-    "tour_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*She rests a hand on the rooftop railing and looks down at the school.* I didn't think we'd spend the last lunch break here, too.",
-        "context": "Day 5 last lunch, with Seoyeon. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
-        "personality": "Seoyeon is the cool student council president. Being the last time, her usual composure is gone and true feelings emerge."
-    },
-    "tour_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*She runs her fingertips along the book spines, then lifts her head.* Since it's the last time, I'm talking more than usual.",
-        "context": "Day 5 last lunch, with Yuna. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
-        "personality": "Yuna is a mysterious literary girl. Being the last time, her walls are completely down. Her sentences are much longer than usual."
-    },
     "tour_dain_freetalk": {
         "name": "Dain",
         "text": "*She stops the volleyball with her toe and grins.* Even if it's the last lunch, I can't just let it pass.",
         "context": "Day 5 last lunch, with Dain. The end is approaching. Tone: Both know this is the last time. Laughing but with a tinge of bittersweetness. More honest than usual, everything feels precious.",
         "personality": "Dain is an energetic athlete. Being the last time, she can't maintain her cheerful facade. Real emotions show through."
     },
-    "tour_yuna_1_check": {
+    "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Heading to the library annex.*"
-    },
-    "tour_yuna_1b": {
-        "name": "{name}",
-        "text": "*The library annex. The secret reading space shared with Yuna. An old sofa, afternoon sunlight streaming through the window.*"
-    },
-    "tour_dain_1_check": {
-        "name": "{name}",
-        "text": "*Heading to the gym.*"
-    },
-    "tour_dain_1b": {
-        "name": "{name}",
-        "text": "*The gym. A place filled with countless bets and spikes over the past few days. — The lights are on today.*"
-    },
-    "tour_dain_11_b": {
-        "name": "Dain",
-        "text": "I used to think if volleyball was gone, I'd be empty too. Lately — it's not like that."
+        "text": "*She speaks without exclamation marks. This time she doesn't bow her head. Dain's hand rests on the volleyball, not on her knee.*"
     }
 }

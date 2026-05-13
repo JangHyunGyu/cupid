@@ -7,18 +7,6 @@
         "name": "System",
         "text": ""
     },
-    "after5_hidden_farewell_1": {
-        "name": "{name}",
-        "text": "*Das Schultor. Drei Gestalten in der Ferne. Seoyeon geht mit Haeun, Dain wirft einen Volleyball beim Laufen, Yuna liest langsam. Keine schaut hierher.*"
-    },
-    "after5_hidden_farewell_3": {
-        "name": "{name}",
-        "text": "*Es fällt mir nicht leicht, mich zu entschuldigen. Ich habe vor dem Schultor nur einmal die Hand gehoben. Danke schön.*"
-    },
-    "after5_hidden_farewell_3b": {
-        "name": "{name}",
-        "text": "*Ich ging zur Rückseite der Schule.*"
-    },
     "after5_farewell_seo_1": {
         "name": "{name}",
         "text": "*Ich treffe Seoyeon im Flur.*"
@@ -113,6 +101,18 @@
         "name": "{name}",
         "text": "*Ich verließ die Turnhalle und ging zur Rückseite der Schule.*"
     },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*Das Schultor. Drei Gestalten in der Ferne. Seoyeon geht mit Haeun, Dain wirft einen Volleyball beim Laufen, Yuna liest langsam. Keine schaut hierher.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*Es fällt mir nicht leicht, mich zu entschuldigen. Ich habe vor dem Schultor nur einmal die Hand gehoben. Danke schön.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*Ich ging zur Rückseite der Schule.*"
+    },
     "after5_sunset_1": {
         "name": "{name}",
         "text": "*Die Abendsonne hängt an jedem Klassenzimmerfenster. Aus dem Senderaum kommt die Durchsage zum Veranstaltungsende, und die Lautsprecher auf dem Sportplatz knacken einen Takt zu spät.*"
@@ -129,18 +129,6 @@
             "Zu der Person gehen, der ich es versprochen habe",
             "Zu der gehen, die mir bis zuletzt im Herzen blieb"
         ]
-    },
-    "after5_set_harem": {
-        "name": "{name}",
-        "text": "*Die beim Mittagessen gefalteten Worte bleiben. Drei Nachrichtenfenster leuchten gleichzeitig auf, und du kannst in keinem den ersten Buchstaben tippen.*"
-    },
-    "after5_harem_walk_1": {
-        "name": "{name}",
-        "text": "*Ohne dass jemand als Erstes sprach, verließen wir die Rückseite der Schule.*"
-    },
-    "after5_harem_walk_2": {
-        "name": "{name}",
-        "text": "*Unbeantwortete Nachrichten bleiben auf dem Sperrbildschirm. Deine Schritte haben sich zum Park gewendet.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -377,8 +365,20 @@
         "name": "{name}",
         "text": "*Ich ging nach Hause.*"
     },
+    "after5_set_harem": {
+        "name": "{name}",
+        "text": "*Die beim Mittagessen gefalteten Worte bleiben. Drei Nachrichtenfenster leuchten gleichzeitig auf, und du kannst in keinem den ersten Buchstaben tippen.*"
+    },
     "after5_harem_commit": {
         "name": "{name}",
         "text": "*Die Worte, die in deinem Hals steckten, kommen heraus. Dass du dich nicht für eine entscheiden kannst. Alle drei Gesichter erstarren gleichzeitig.*"
+    },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*Ohne dass jemand als Erstes sprach, verließen wir die Rückseite der Schule.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*Unbeantwortete Nachrichten bleiben auf dem Sperrbildschirm. Deine Schritte haben sich zum Park gewendet.*"
     }
 }

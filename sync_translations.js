@@ -14,7 +14,7 @@ const API_KEY = fs.readFileSync(path.join(__dirname, '..', '.env.txt'), 'utf8')
 if (!API_KEY) { console.error('GEMINI_API_KEY not found'); process.exit(1); }
 
 const i18nDir = path.join(__dirname, 'assets', 'js', 'i18n');
-const LANGS = ['en', 'ja', 'es', 'fr', 'de'];
+const LANGS = ['en', 'ja', 'es', 'fr', 'de', 'pt'];
 
 // 변경된 노드 목록 (파일별)
 // Round 2: only the skipped nodes with corrected file mappings
@@ -38,7 +38,7 @@ function saveJSON(lang, file, data) {
 }
 
 async function translateBatch(koTexts, targetLang) {
-    const langNames = { en: 'English', ja: 'Japanese', es: 'Spanish', fr: 'French', de: 'German' };
+    const langNames = { en: 'English', ja: 'Japanese', es: 'Spanish', fr: 'French', de: 'German', pt: 'Brazilian Portuguese' };
     const langName = langNames[targetLang];
 
     const prompt = `You are translating visual novel dialogue for a Korean high school romance game called "Cupid".

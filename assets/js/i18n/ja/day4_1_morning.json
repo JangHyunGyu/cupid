@@ -3,6 +3,7 @@
         "name": "{name}",
         "text": "*四日目。週末。――今日は学校じゃない。デートだ。*"
     },
+    "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
         "text": "*…変な夢を見た。ソヨンの笑顔が――まだ目の前にちらついている。*"
@@ -23,6 +24,18 @@
         "name": "{name}",
         "text": "*スマホを見る。朝のメッセージ。——一番上にミンス。*"
     },
+    "minsu_cheer_1_b": {
+        "name": "ミンス",
+        "text": "*おい、今日デートだって？*"
+    },
+    "minsu_cheer_1_c": {
+        "name": "{name}",
+        "text": "*なんで知ってんだよ。*"
+    },
+    "minsu_cheer_1_d": {
+        "name": "ミンス",
+        "text": "*ダインがカカオトークのグループチャットに上げてたぞww「明日予定あり！！」って*"
+    },
     "minsu_cheer_2": {
         "name": "ミンス",
         "text": "頑張れよww"
@@ -30,6 +43,23 @@
     "minsu_cheer_3": {
         "name": "{name}",
         "text": "わかってる。"
+    },
+    "minsu_cheer_4_branch": {},
+    "minsu_cheer_4_ins_single": {
+        "name": "{name}",
+        "text": "*スマホのカレンダーを見る。今日の約束は一つだけだ。——今度は先延ばしにしないことにした。*"
+    },
+    "minsu_cheer_4_c": {
+        "name": "{name}",
+        "text": "*スマホのカレンダーを見る。午前ソヨン、午後ユナ、夜ダイン。——一日に三人を詰め込むのに、昨日の夜は眠れなかった。一人でも時間がかぶったら終わりだ。*"
+    },
+    "minsu_cheer_4_d": {
+        "name": "{name}",
+        "text": "*……俺、何やってんだ。*"
+    },
+    "minsu_cheer_4_e": {
+        "name": "{name}",
+        "text": "*深呼吸して、待ち合わせのメッセージをもう一度確認する。*"
     },
     "morning4_start_2": {
         "name": "{name}",
@@ -39,25 +69,50 @@
         "name": "ソヨン",
         "text": "遅れちゃダメだよ。公園の噴水、10時。"
     },
+    "morning4_seo_msg_1_b": {
+        "name": "{name}",
+        "text": "*命令形だ。デートの約束まで指示みたいに。—でも、笑える。*"
+    },
+    "morning4_seo_msg_1_c": {
+        "name": "{name}",
+        "text": "*待ち合わせ場所に立っている。——来るかな。金曜日にあんなに怒ってたのに。*"
+    },
     "morning4_yuna_msg_1": {
         "name": "ユナ",
         "text": "10時。駅前のカフェ。遅れたら帰る。"
+    },
+    "morning4_yuna_msg_1_b": {
+        "name": "{name}",
+        "text": "*短い。ユナらしい。「遅れたら行く」の後に句点がない。*"
+    },
+    "morning4_yuna_msg_single": {
+        "name": "{name}",
+        "text": "*短い。でも今日はその短さが妙にくっきりしている。ほかの約束はない。——今度こそ、本当にその一か所へ向かう。*"
     },
     "morning4_dain_msg_1": {
         "name": "ダイン",
         "text": "今日だ。夕方6時、体育館前。あ、なんでこんなに緊張してるんだろ。これ送っていいのかな。"
     },
-    "morning4_end": {
+    "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*鏡をもう一度見る。——よし。行こう。*"
+        "text": "*週末の朝。通知がいくつか来ている。——平凡な一日になると思った。スマホを置いて伸びをする。とにかく今日も始まりだ。*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
         "text": "*週末。学校の近くを通りかかった。*"
     },
+    "morning4_manuscript_check": {},
+    "hidden_homeroom_d4_skip": {
+        "name": "{name}",
+        "text": "*ふと足が止まる。でも、そのまま通り過ぎる。*"
+    },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
         "text": "*学校の正門が少し開いている。中から人の気配。担任の先生が正門の前に出てくる。手には紙袋が持たれている。*"
+    },
+    "hidden_homeroom_d4_1_b": {
+        "name": "{name}",
+        "text": "*正門の前で足が止まる。担任も一拍遅れて紙袋を背中の後ろに隠す。*"
     },
     "hidden_homeroom_d4_2": {
         "name": "担任先生",
@@ -66,6 +121,22 @@
     "hidden_homeroom_d4_3": {
         "name": "{name}",
         "text": "先生？週末なのに学校ですか？"
+    },
+    "hidden_homeroom_d4_3_b": {
+        "name": "担任先生",
+        "text": "*慌てて* あ、これは——書類整理が残ってて。"
+    },
+    "hidden_homeroom_d4_3_c": {
+        "name": "{name}",
+        "text": "*担任の紙袋の片方の角が折れている。*"
+    },
+    "hidden_homeroom_d4_3_d": {
+        "name": "{name}",
+        "text": "お一人で？"
+    },
+    "hidden_homeroom_d4_3_e": {
+        "name": "担任先生",
+        "text": "*ポケットに手を入れて* ……教師は休日も教師だから。まあ。"
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
@@ -115,9 +186,45 @@
         "name": "担任先生",
         "text": "学校の外で生徒とお茶するのって、正直ちょっと気まずいね。"
     },
+    "hidden_homeroom_d4_cafe_1_b": {
+        "name": "{name}",
+        "text": "気まずいですか？"
+    },
+    "hidden_homeroom_d4_cafe_1_c": {
+        "name": "担任先生",
+        "text": "*コーヒーを一口飲んで* 正直？ ちょっと。"
+    },
+    "hidden_homeroom_d4_cafe_1_d": {
+        "name": "担任先生",
+        "text": "*担任は冗談のように言ってコーヒーカップに触れる。コースターの上に円形の水跡が二つ重なっている。*"
+    },
+    "hidden_homeroom_d4_cafe_1_e": {
+        "name": "{name}",
+        "text": "昨日の原稿、もっと書けましたか？"
+    },
+    "hidden_homeroom_d4_cafe_1_f": {
+        "name": "担任先生",
+        "text": "*先生がコーヒーカップを置く。少し考えるように。*"
+    },
     "hidden_homeroom_d4_cafe_2": {
         "name": "担任先生",
         "text": "...少し。昨日あなたが見てから - 手が再び動いた。"
+    },
+    "hidden_homeroom_d4_cafe_2_b": {
+        "name": "{name}",
+        "text": "俺が見たこと、役に立ったんですか？"
+    },
+    "hidden_homeroom_d4_cafe_2_c": {
+        "name": "担任先生",
+        "text": "助けというより... *窓の外を見ながら* 見つかってから、封筒が少し軽くなった。一人で持ってると紙でも重いんだね。"
+    },
+    "hidden_homeroom_d4_cafe_2_d": {
+        "name": "{name}",
+        "text": "*担任のかばんの中から原稿封筒の角が見える。折れた部分が手垢で少し黒い。*"
+    },
+    "hidden_homeroom_d4_cafe_2_e": {
+        "name": "担任先生",
+        "text": "小説で一番難しいのが何か、知ってる？"
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "担任先生",
@@ -143,93 +250,57 @@
         "name": "担任先生",
         "text": "…一番最初に読んでくれるかい？"
     },
+    "hidden_homeroom_d4_cafe_4_b": {
+        "name": "{name}",
+        "text": "*デジャヴだ。昨日、空き教室でも似たようなことを言われた。——でも今日はカフェで、学校の外で、もっと軽く。いや——もっと真剣に聞こえる。*"
+    },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
         "text": "読みたいです。"
+    },
+    "hidden_homeroom_d4_cafe_5_b": {
+        "name": "担任先生",
+        "text": "*担任が一瞬笑う。カップホルダーを折っていた手が止まる。*"
+    },
+    "hidden_homeroom_d4_cafe_5_c": {
+        "name": "担任先生",
+        "text": "……ありがとう。でもこれ誰にも——分かるよね？ ……これは私たちの秘密。教師が生徒と秘密を持つのはダメなんだけど。"
+    },
+    "hidden_homeroom_d4_cafe_5_d": {
+        "name": "{name}",
+        "text": "また仕事って言うんですよね？"
+    },
+    "hidden_homeroom_d4_cafe_5_e": {
+        "name": "担任先生",
+        "text": "*一瞬止まって* ……私が言う前に先に言わないでよ。"
+    },
+    "hidden_homeroom_d4_cafe_5_f": {
+        "name": "{name}",
+        "text": "*ふっと笑った。——先生もふっと笑った。同じタイミングで。*"
+    },
+    "hidden_homeroom_d4_cafe_5_g": {
+        "name": "担任先生",
+        "text": "……そうね。ダメなことよね。"
+    },
+    "hidden_homeroom_d4_cafe_5_h": {
+        "name": "担任先生",
+        "text": "*先生がポケットから手を出す。指先が一瞬、宙をさまよう。癖みたいな仕草だ。*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "担任先生",
         "text": "*コーヒーカップを置きながら* ……たまにはこうやって外で会うのも悪くないね。"
     },
+    "hidden_homeroom_d4_cafe_6_b": {
+        "name": "担任先生",
+        "text": "*担任が{name}を見る。乾いた目ではない。* *カフェの扉が背後でゆっくり閉まる。*"
+    },
     "hidden_homeroom_d4_decline": {
         "name": "担任先生",
         "text": "…そうだな。ダメだよな。行け。週末なのに学校の前で何してるんだ。——楽しいことしろ。"
     },
-    "hidden_nurse_d4_check": {
-        "name": "{name}",
-        "text": "*週末が終わりかけている。*"
-    },
-    "hidden_nurse_d4_1": {
-        "name": "{name}",
-        "text": "*保健の先生が学校メッセンジャーで『手伝ってくれる人募集』と上げていた。足が学校に向かっている。保健室。机の上に書類と検診道具が積まれている。保健の先生が落ち着いて整理している。*"
-    },
-    "hidden_nurse_d4_2": {
-        "name": "保健先生",
-        "text": "え？本当に来たの？来ると思わなかった。——生徒が週末に保健室にボランティアだなんて。"
-    },
-    "hidden_nurse_d4_3": {
-        "name": "{name}",
-        "text": "手伝うって言ったじゃないですか。"
-    },
-    "hidden_nurse_d4_4": {
-        "name": "保健先生",
-        "text": "...大学病院ではこういうの一人で全部やってた。夜勤の時は——看護師三人分の仕事を一人でやる日もあった。"
-    },
-    "hidden_nurse_d4_5": {
-        "name": "保健先生",
-        "text": "*窓の外を見ながら* だからここに来たの。肩書きじゃなくて、ただ『先生』って呼んでくれる場所。——小さな違いだけど、これが結構大きいんだよね。"
-    },
-    "hidden_nurse_d4_name_choice": {
-        "name": "{name}",
-        "text": "*名前欄の上で、保健の先生の指先が長く止まる。*",
-        "choices": [
-            "名前は？保健の先生じゃなくて",
-            "だからこの学校に来たんですね"
-        ]
-    },
-    "hidden_nurse_d4_name_choice_a": {
-        "name": "保健先生",
-        "text": "*少し口をつぐんでから* ……ジュウォン。イ・ジュウォン。"
-    },
-    "hidden_nurse_d4_name_choice_b": {
-        "name": "保健先生",
-        "text": "…うん。ここではみんな軽い怪我しか持ってこない。それがいい。"
-    },
-    "hidden_nurse_d4_6": {
-        "name": "保健先生",
-        "text": "ありがとう。おかげで早く片付いた。……大したことじゃないけどね。"
-    },
-    "hidden_nurse_d4_choice": {
-        "name": "保健先生",
-        "text": "さ、お礼に何かおごろうか？生徒にご飯をご馳走するのも、まあ、教育の一環ってことにしておこう。",
-        "choices": [
-            "教育的活動ならいいんですか？",
-            "大丈夫です、そろそろ帰ります"
-        ]
-    },
-    "hidden_nurse_d4_meal_walk": {
-        "name": "{name}",
-        "text": "*学校の前の軽食屋に向かった。*"
-    },
-    "hidden_nurse_d4_meal_1": {
-        "name": "保健先生",
-        "text": "はぁ辛っ。こういうの、昔ほど食べられなくなっちゃった。"
-    },
-    "hidden_nurse_d4_meal_2": {
-        "name": "{name}",
-        "text": "老けてなんかないですよ。"
-    },
-    "hidden_nurse_d4_meal_3": {
-        "name": "保健先生",
-        "text": "……そういうこと。生徒から言われると、なんか変な感じだね。"
-    },
-    "hidden_nurse_d4_meal_4": {
-        "name": "保健先生",
-        "text": "{name}。今日はありがとう。——本当に。"
-    },
-    "hidden_nurse_d4_pass": {
-        "name": "保健先生",
-        "text": "うん、気をつけて帰りなよ。——また来て。"
+    "hidden_homeroom_d4_decline_b": {
+        "name": "担任先生",
+        "text": "*背を向ける。肩が少し落ちる。カフェのガラス扉に小さく後ろ姿が映る。*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
@@ -301,149 +372,21 @@
         "context": "4日目。卒業後も来るのか問う別れの瞬間。互いの本心が明かされるシーン。トーン：感情が深まった会話。冗談の裏の真実。名前で呼ぶことの意味。",
         "personality": "保健の先生は慎重で正直。名前で呼びたいけど慎重な立場。学生の誓いに涙が出る。"
     },
-    "hidden_nurse_d4_meal_1b": {
+    "hidden_nurse_d4_check": {
         "name": "{name}",
-        "text": "*保健室に戻った。*"
+        "text": "*週末が終わりかけている。*"
     },
-    "minsu_cheer_4_c": {
+    "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*スマホのカレンダーを見る。午前ソヨン、午後ユナ、夜ダイン。——一日に三人を詰め込むのに、昨日の夜は眠れなかった。一人でも時間がかぶったら終わりだ。*"
-    },
-    "minsu_cheer_4_d": {
-        "name": "{name}",
-        "text": "*……俺、何やってんだ。*"
-    },
-    "minsu_cheer_4_e": {
-        "name": "{name}",
-        "text": "*深呼吸して、待ち合わせのメッセージをもう一度確認する。*"
-    },
-    "minsu_cheer_1_b": {
-        "name": "ミンス",
-        "text": "*おい、今日デートだって？*"
-    },
-    "minsu_cheer_1_c": {
-        "name": "{name}",
-        "text": "*なんで知ってんだよ。*"
-    },
-    "minsu_cheer_1_d": {
-        "name": "ミンス",
-        "text": "*ダインがカカオトークのグループチャットに上げてたぞww「明日予定あり！！」って*"
-    },
-    "morning4_fallback_msg": {
-        "name": "{name}",
-        "text": "*週末の朝。通知がいくつか来ている。——平凡な一日になると思った。スマホを置いて伸びをする。とにかく今日も始まりだ。*"
-    },
-    "morning4_seo_msg_1_b": {
-        "name": "{name}",
-        "text": "*命令形だ。デートの約束まで指示みたいに。—でも、笑える。*"
-    },
-    "morning4_seo_msg_1_c": {
-        "name": "{name}",
-        "text": "*待ち合わせ場所に立っている。——来るかな。金曜日にあんなに怒ってたのに。*"
-    },
-    "hidden_homeroom_d4_1_b": {
-        "name": "{name}",
-        "text": "*正門の前で足が止まる。担任も一拍遅れて紙袋を背中の後ろに隠す。*"
-    },
-    "morning4_yuna_msg_1_b": {
-        "name": "{name}",
-        "text": "*短い。ユナらしい。「遅れたら行く」の後に句点がない。*"
-    },
-    "hidden_homeroom_d4_3_b": {
-        "name": "担任先生",
-        "text": "*慌てて* あ、これは——書類整理が残ってて。"
-    },
-    "hidden_homeroom_d4_3_c": {
-        "name": "{name}",
-        "text": "*担任の紙袋の片方の角が折れている。*"
-    },
-    "hidden_homeroom_d4_3_d": {
-        "name": "{name}",
-        "text": "お一人で？"
-    },
-    "hidden_homeroom_d4_3_e": {
-        "name": "担任先生",
-        "text": "*ポケットに手を入れて* ……教師は休日も教師だから。まあ。"
-    },
-    "hidden_homeroom_d4_cafe_1_b": {
-        "name": "{name}",
-        "text": "気まずいですか？"
-    },
-    "hidden_homeroom_d4_cafe_1_c": {
-        "name": "担任先生",
-        "text": "*コーヒーを一口飲んで* 正直？ ちょっと。"
-    },
-    "hidden_homeroom_d4_cafe_1_d": {
-        "name": "担任先生",
-        "text": "*担任は冗談のように言ってコーヒーカップに触れる。コースターの上に円形の水跡が二つ重なっている。*"
-    },
-    "hidden_homeroom_d4_cafe_1_e": {
-        "name": "{name}",
-        "text": "昨日の原稿、もっと書けましたか？"
-    },
-    "hidden_homeroom_d4_cafe_1_f": {
-        "name": "担任先生",
-        "text": "*先生がコーヒーカップを置く。少し考えるように。*"
-    },
-    "hidden_homeroom_d4_cafe_2_b": {
-        "name": "{name}",
-        "text": "俺が見たこと、役に立ったんですか？"
-    },
-    "hidden_homeroom_d4_cafe_2_c": {
-        "name": "担任先生",
-        "text": "助けというより... *窓の外を見ながら* 見つかってから、封筒が少し軽くなった。一人で持ってると紙でも重いんだね。"
-    },
-    "hidden_homeroom_d4_cafe_2_d": {
-        "name": "{name}",
-        "text": "*担任のかばんの中から原稿封筒の角が見える。折れた部分が手垢で少し黒い。*"
-    },
-    "hidden_homeroom_d4_cafe_2_e": {
-        "name": "担任先生",
-        "text": "小説で一番難しいのが何か、知ってる？"
-    },
-    "hidden_homeroom_d4_cafe_6_b": {
-        "name": "担任先生",
-        "text": "*担任が{name}を見る。乾いた目ではない。* *カフェの扉が背後でゆっくり閉まる。*"
-    },
-    "hidden_homeroom_d4_cafe_4_b": {
-        "name": "{name}",
-        "text": "*デジャヴだ。昨日、空き教室でも似たようなことを言われた。——でも今日はカフェで、学校の外で、もっと軽く。いや——もっと真剣に聞こえる。*"
-    },
-    "hidden_homeroom_d4_cafe_5_b": {
-        "name": "担任先生",
-        "text": "*担任が一瞬笑う。カップホルダーを折っていた手が止まる。*"
-    },
-    "hidden_homeroom_d4_cafe_5_c": {
-        "name": "担任先生",
-        "text": "……ありがとう。でもこれ誰にも——分かるよね？ ……これは私たちの秘密。教師が生徒と秘密を持つのはダメなんだけど。"
-    },
-    "hidden_homeroom_d4_cafe_5_d": {
-        "name": "{name}",
-        "text": "また仕事って言うんですよね？"
-    },
-    "hidden_homeroom_d4_cafe_5_e": {
-        "name": "担任先生",
-        "text": "*一瞬止まって* ……私が言う前に先に言わないでよ。"
-    },
-    "hidden_homeroom_d4_cafe_5_f": {
-        "name": "{name}",
-        "text": "*ふっと笑った。——先生もふっと笑った。同じタイミングで。*"
-    },
-    "hidden_homeroom_d4_cafe_5_g": {
-        "name": "担任先生",
-        "text": "……そうね。ダメなことよね。"
-    },
-    "hidden_homeroom_d4_cafe_5_h": {
-        "name": "担任先生",
-        "text": "*先生がポケットから手を出す。指先が一瞬、宙をさまよう。癖みたいな仕草だ。*"
-    },
-    "hidden_homeroom_d4_decline_b": {
-        "name": "担任先生",
-        "text": "*背を向ける。肩が少し落ちる。カフェのガラス扉に小さく後ろ姿が映る。*"
+        "text": "*保健の先生が学校メッセンジャーで『手伝ってくれる人募集』と上げていた。足が学校に向かっている。保健室。机の上に書類と検診道具が積まれている。保健の先生が落ち着いて整理している。*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "保健先生",
         "text": "*振り向いて* え？ 本当に来たの？"
+    },
+    "hidden_nurse_d4_2": {
+        "name": "保健先生",
+        "text": "え？本当に来たの？来ると思わなかった。——生徒が週末に保健室にボランティアだなんて。"
     },
     "hidden_nurse_d4_2_b": {
         "name": "{name}",
@@ -472,6 +415,14 @@
     "hidden_nurse_d4_2_h": {
         "name": "{name}",
         "text": "一人で？"
+    },
+    "hidden_nurse_d4_3": {
+        "name": "{name}",
+        "text": "手伝うって言ったじゃないですか。"
+    },
+    "hidden_nurse_d4_4": {
+        "name": "保健先生",
+        "text": "...大学病院ではこういうの一人で全部やってた。夜勤の時は——看護師三人分の仕事を一人でやる日もあった。"
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
@@ -513,6 +464,30 @@
         "name": "{name}",
         "text": "*書類整理が終わった。保健の先生が名前欄を指で一度押さえて、それでようやく伸びをする。*"
     },
+    "hidden_nurse_d4_5": {
+        "name": "保健先生",
+        "text": "*窓の外を見ながら* だからここに来たの。肩書きじゃなくて、ただ『先生』って呼んでくれる場所。——小さな違いだけど、これが結構大きいんだよね。"
+    },
+    "hidden_nurse_d4_name_choice": {
+        "name": "{name}",
+        "text": "*名前欄の上で、保健の先生の指先が長く止まる。*",
+        "choices": [
+            "名前は？保健の先生じゃなくて",
+            "だからこの学校に来たんですね"
+        ]
+    },
+    "hidden_nurse_d4_name_choice_a": {
+        "name": "保健先生",
+        "text": "*少し口をつぐんでから* ……ジュウォン。イ・ジュウォン。"
+    },
+    "hidden_nurse_d4_name_choice_b": {
+        "name": "保健先生",
+        "text": "…うん。ここではみんな軽い怪我しか持ってこない。それがいい。"
+    },
+    "hidden_nurse_d4_6": {
+        "name": "保健先生",
+        "text": "ありがとう。おかげで早く片付いた。……大したことじゃないけどね。"
+    },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
         "text": "大したことないですよ。"
@@ -525,6 +500,22 @@
         "name": "{name}",
         "text": "*たった二文字に、妙な重みがある。*"
     },
+    "hidden_nurse_d4_choice": {
+        "name": "保健先生",
+        "text": "さ、お礼に何かおごろうか？生徒にご飯をご馳走するのも、まあ、教育の一環ってことにしておこう。",
+        "choices": [
+            "教育的活動ならいいんですか？",
+            "大丈夫です、そろそろ帰ります"
+        ]
+    },
+    "hidden_nurse_d4_meal_walk": {
+        "name": "{name}",
+        "text": "*学校の前の軽食屋に向かった。*"
+    },
+    "hidden_nurse_d4_meal_1": {
+        "name": "保健先生",
+        "text": "はぁ辛っ。こういうの、昔ほど食べられなくなっちゃった。"
+    },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
         "text": "先生だって学生の頃は食べてたんでしょ？"
@@ -533,9 +524,21 @@
         "name": "保健先生",
         "text": "いつの話よ。*笑いながら* 先生ももう、昔みたいにはいかないんだから。"
     },
+    "hidden_nurse_d4_meal_1b": {
+        "name": "{name}",
+        "text": "*保健室に戻った。*"
+    },
+    "hidden_nurse_d4_meal_2": {
+        "name": "{name}",
+        "text": "老けてなんかないですよ。"
+    },
     "hidden_nurse_d4_meal_2_b": {
         "name": "保健先生",
         "text": "*保健の先生が一瞬止まる。箸を置く。*"
+    },
+    "hidden_nurse_d4_meal_3": {
+        "name": "保健先生",
+        "text": "……そういうこと。生徒から言われると、なんか変な感じだね。"
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
@@ -553,22 +556,20 @@
         "name": "保健先生",
         "text": "{name}。"
     },
+    "hidden_nurse_d4_meal_4": {
+        "name": "保健先生",
+        "text": "{name}。今日はありがとう。——本当に。"
+    },
     "hidden_nurse_d4_meal_4_b": {
         "name": "保健先生",
         "text": "*保健の先生がカップ麺のふたを押さえる。箸が片方だけ少しずれる。*"
     },
-    "morning4_manuscript_check": {},
-    "hidden_homeroom_d4_skip": {
-        "name": "{name}",
-        "text": "*ふと足が止まる。でも、そのまま通り過ぎる。*"
+    "hidden_nurse_d4_pass": {
+        "name": "保健先生",
+        "text": "うん、気をつけて帰りなよ。——また来て。"
     },
-    "minsu_cheer_4_branch": {},
-    "minsu_cheer_4_ins_single": {
+    "morning4_end": {
         "name": "{name}",
-        "text": "*スマホのカレンダーを見る。今日の約束は一つだけだ。——今度は先延ばしにしないことにした。*"
-    },
-    "morning4_yuna_msg_single": {
-        "name": "{name}",
-        "text": "*短い。でも今日はその短さが妙にくっきりしている。ほかの約束はない。——今度こそ、本当にその一か所へ向かう。*"
+        "text": "*鏡をもう一度見る。——よし。行こう。*"
     }
 }

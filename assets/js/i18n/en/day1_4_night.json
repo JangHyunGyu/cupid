@@ -55,6 +55,26 @@
         "name": "{name}",
         "text": "*Three texts in a row. Does she ever pause between messages?*"
     },
+    "night_hidden_check": {
+        "name": "{name}",
+        "text": "*Buried under the messenger notifications — there's something else.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*There's a post from the homeroom teacher on the school app. 'Class 3-2 Notice: Bring math supplies for 1st period tomorrow. — And the transfer student only needs to keep settling in okay.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*I read the notice once more. The corner of my mouth lifts, so I turn the phone face down.*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Notifications from the school health management app are displayed. 'Health room records: Transfer student — mild dizziness. Memo: Come back tomorrow if you have any symptoms. Drink a lot of water. ♥ is of medical concern.'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*The heart at the end of the sentence stays in the middle of the screen. I look at it once more before turning the screen off.*"
+    },
     "night_late_transition": {
         "name": "{name}",
         "text": "*Almost asleep when — my phone buzzes one more time. 11 PM. Who's up?*"
@@ -107,6 +127,10 @@
         "name": "{name}",
         "text": "*'Call' is already stamped in the reply window.*"
     },
+    "night_dain_late_4_b": {
+        "name": "{name}",
+        "text": "*A string of emojis trails below Dain's message. Every single one is different.*"
+    },
     "night_end_1": {
         "name": "{name}",
         "text": "*I set the phone down and stare at the ceiling. The cherry blossom scent is still on my uniform.*"
@@ -114,29 +138,5 @@
     "night_end_3": {
         "name": "{name}",
         "text": "*The names I saved today remain on my lock screen. Even after turning off the display, my finger reaches for the power button once more.*"
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*Buried under the messenger notifications — there's something else.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*There's a post from the homeroom teacher on the school app. 'Class 3-2 Notice: Bring math supplies for 1st period tomorrow. — And the transfer student only needs to keep settling in okay.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*I read the notice once more. The corner of my mouth lifts, so I turn the phone face down.*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Notifications from the school health management app are displayed. 'Health room records: Transfer student — mild dizziness. Memo: Come back tomorrow if you have any symptoms. Drink a lot of water. ♥ is of medical concern.'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*The heart at the end of the sentence stays in the middle of the screen. I look at it once more before turning the screen off.*"
-    },
-    "night_dain_late_4_b": {
-        "name": "{name}",
-        "text": "*A string of emojis trails below Dain's message. Every single one is different.*"
     }
 }

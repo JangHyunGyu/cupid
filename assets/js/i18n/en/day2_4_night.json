@@ -15,6 +15,10 @@
         "name": "Dain",
         "text": "Rematch tomorrow!! Different game!!"
     },
+    "night2_msg_seo_general": {
+        "name": "Seoyeon",
+        "text": "I'll leave the rooftop open at lunch tomorrow. Come"
+    },
     "night2_msg_seo_specific": {
         "name": "Seoyeon",
         "text": "Thanks for today. Got done early because of you"
@@ -30,10 +34,6 @@
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
         "text": "...Play it again for me sometime."
-    },
-    "night2_msg_seo_general": {
-        "name": "Seoyeon",
-        "text": "I'll leave the rooftop open at lunch tomorrow. Come"
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -96,6 +96,14 @@
         "name": "{name}",
         "text": "*Three messages in a row again.*"
     },
+    "night2_reply_dain_react_high": {
+        "name": "Dain",
+        "text": "LOL you're unreal. You HAVE to come to the gym tomorrow!!"
+    },
+    "night2_reply_dain_react_default": {
+        "name": "Dain",
+        "text": "lol okay, night!"
+    },
     "night2_reply_seo_1": {
         "name": "{name}",
         "text": "Call me and I'll be there"
@@ -115,6 +123,14 @@
     "night2_reply_seo_5": {
         "name": "{name}",
         "text": "*'This time, really come.' — The kind of tone that comes with consequences.*"
+    },
+    "night2_reply_seo_react_high": {
+        "name": "Seoyeon",
+        "text": "...You're more interesting than I expected. Roof for lunch tomorrow?"
+    },
+    "night2_reply_seo_react_default": {
+        "name": "Seoyeon",
+        "text": "Hm. Got it. See you tomorrow."
     },
     "night2_reply_yuna_1": {
         "name": "{name}",
@@ -140,17 +156,53 @@
         "name": "Yuna",
         "text": "I'll tell you why later."
     },
+    "night2_reply_yuna_6_b": {
+        "name": "{name}",
+        "text": "*I opened the window. Cold air rushes in. The stars are many, and my finger stops at the third one, suspended in the air.*"
+    },
+    "night2_reply_yuna_6_c": {
+        "name": "{name}",
+        "text": "*The reply ends there. My fingertip marks remain on the window.*"
+    },
     "night2_reply_yuna_7": {
         "name": "{name}",
         "text": "*Tomorrow night, my finger will stop at the third star again.*"
     },
+    "night2_reply_yuna_react_high": {
+        "name": "Yuna",
+        "text": "...So someone actually texts back this late. Library tomorrow?"
+    },
+    "night2_reply_yuna_react_default": {
+        "name": "Yuna",
+        "text": "...Yeah. Good night."
+    },
+    "night2_hidden_check": {
+        "name": "{name}",
+        "text": "*Between the messenger alerts — I spot more notifications.*"
+    },
+    "night2_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*A private message from the homeroom teacher. 'Thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if settling in gets tough, come by anytime.'*"
+    },
+    "night2_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*The period at the end of the message looks as if it was added much later.*"
+    },
+    "night2_hidden_homeroom_3": {
+        "name": "{name}",
+        "text": "*I read only the last line again.*"
+    },
+    "night2_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Health app notification. 'Nurse's Record: Transfer student — Elbow abrasion (minor). Note: I'll change the bandage tomorrow morning. Changing bandages is a medical procedure so you can't refuse ^^'*"
+    },
+    "night2_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*I press the corner of the bandage with my thumb. Tomorrow morning has one more thing on it.*"
+    },
     "night2_end_1": {
         "name": "{name}",
         "text": "*I sent my replies and set the phone down. Day two is over.*"
-    },
-    "night2_end_2": {
-        "name": "{name}",
-        "text": "*The second day is over. Names that felt unfamiliar on the first day now sit on my lock screen. Even after the notifications go dark, I keep turning the screen back on.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -184,61 +236,9 @@
         "name": "{name}",
         "text": "*I open the reply window, then close it. The three names are lined up side by side at the top of my recent chats. My finger can't reach any of them.*"
     },
-    "night2_hidden_check": {
+    "night2_end_2": {
         "name": "{name}",
-        "text": "*Between the messenger alerts — I spot more notifications.*"
-    },
-    "night2_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*A private message from the homeroom teacher. 'Thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if settling in gets tough, come by anytime.'*"
-    },
-    "night2_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*The period at the end of the message looks as if it was added much later.*"
-    },
-    "night2_hidden_homeroom_3": {
-        "name": "{name}",
-        "text": "*I read only the last line again.*"
-    },
-    "night2_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Health app notification. 'Nurse's Record: Transfer student — Elbow abrasion (minor). Note: I'll change the bandage tomorrow morning. Changing bandages is a medical procedure so you can't refuse ^^'*"
-    },
-    "night2_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*I press the corner of the bandage with my thumb. Tomorrow morning has one more thing on it.*"
-    },
-    "night2_reply_dain_react_high": {
-        "name": "Dain",
-        "text": "LOL you're unreal. You HAVE to come to the gym tomorrow!!"
-    },
-    "night2_reply_dain_react_default": {
-        "name": "Dain",
-        "text": "lol okay, night!"
-    },
-    "night2_reply_seo_react_high": {
-        "name": "Seoyeon",
-        "text": "...You're more interesting than I expected. Roof for lunch tomorrow?"
-    },
-    "night2_reply_seo_react_default": {
-        "name": "Seoyeon",
-        "text": "Hm. Got it. See you tomorrow."
-    },
-    "night2_reply_yuna_react_high": {
-        "name": "Yuna",
-        "text": "...So someone actually texts back this late. Library tomorrow?"
-    },
-    "night2_reply_yuna_react_default": {
-        "name": "Yuna",
-        "text": "...Yeah. Good night."
-    },
-    "night2_reply_yuna_6_b": {
-        "name": "{name}",
-        "text": "*I opened the window. Cold air rushes in. The stars are many, and my finger stops at the third one, suspended in the air.*"
-    },
-    "night2_reply_yuna_6_c": {
-        "name": "{name}",
-        "text": "*The reply ends there. My fingertip marks remain on the window.*"
+        "text": "*The second day is over. Names that felt unfamiliar on the first day now sit on my lock screen. Even after the notifications go dark, I keep turning the screen back on.*"
     },
     "night2_end_2_b": {
         "name": "{name}",

@@ -7,18 +7,6 @@
         "name": "System",
         "text": ""
     },
-    "after5_hidden_farewell_1": {
-        "name": "{name}",
-        "text": "*The school gate. Three figures in the distance. Seoyeon walks with Haeun, Dain tosses a volleyball as she runs, Yuna reads slowly. None of them look this way.*"
-    },
-    "after5_hidden_farewell_3": {
-        "name": "{name}",
-        "text": "*It’s not easy for me to say I’m sorry. I only raised my hand once in front of the school gate. Thank you.*"
-    },
-    "after5_hidden_farewell_3b": {
-        "name": "{name}",
-        "text": "*I walked to the back of the school.*"
-    },
     "after5_farewell_seo_1": {
         "name": "{name}",
         "text": "*I run into Seoyeon in the hallway.*"
@@ -113,6 +101,18 @@
         "name": "{name}",
         "text": "*I left the gym and headed to the back of the school.*"
     },
+    "after5_hidden_farewell_1": {
+        "name": "{name}",
+        "text": "*The school gate. Three figures in the distance. Seoyeon walks with Haeun, Dain tosses a volleyball as she runs, Yuna reads slowly. None of them look this way.*"
+    },
+    "after5_hidden_farewell_3": {
+        "name": "{name}",
+        "text": "*It’s not easy for me to say I’m sorry. I only raised my hand once in front of the school gate. Thank you.*"
+    },
+    "after5_hidden_farewell_3b": {
+        "name": "{name}",
+        "text": "*I walked to the back of the school.*"
+    },
     "after5_sunset_1": {
         "name": "{name}",
         "text": "*Sunset catches on every classroom window. The broadcast room announces the event's end, and the field speakers crackle a beat behind.*"
@@ -129,18 +129,6 @@
             "Go to the person I made a promise to",
             "Go to the one still left in my heart"
         ]
-    },
-    "after5_set_harem": {
-        "name": "{name}",
-        "text": "*The words folded away at lunch remain. Three message threads light up at once, and you can't type a first letter in any of them.*"
-    },
-    "after5_harem_walk_1": {
-        "name": "{name}",
-        "text": "*None of us could speak first as we left the back of the school.*"
-    },
-    "after5_harem_walk_2": {
-        "name": "{name}",
-        "text": "*Unanswered messages remain on the lock screen. Your feet have turned toward the park.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -377,8 +365,20 @@
         "name": "{name}",
         "text": "*I went back home.*"
     },
+    "after5_set_harem": {
+        "name": "{name}",
+        "text": "*The words folded away at lunch remain. Three message threads light up at once, and you can't type a first letter in any of them.*"
+    },
     "after5_harem_commit": {
         "name": "{name}",
         "text": "*The words stuck in your throat come out. That you can't choose one. All three expressions freeze at once.*"
+    },
+    "after5_harem_walk_1": {
+        "name": "{name}",
+        "text": "*None of us could speak first as we left the back of the school.*"
+    },
+    "after5_harem_walk_2": {
+        "name": "{name}",
+        "text": "*Unanswered messages remain on the lock screen. Your feet have turned toward the park.*"
     }
 }

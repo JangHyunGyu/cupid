@@ -65,251 +65,6 @@
         "name": "Seoyeon",
         "text": "*Heh.* Isso até faz sentido."
     },
-    "lunch2_dain_1_check": {
-        "name": "{name}",
-        "text": "*Indo em direção à cantina.*"
-    },
-    "lunch2_dain_1b": {
-        "name": "{name}",
-        "text": "*Cantina com a Dain. Primeira rodada de pedra-papel-tesoura.*"
-    },
-    "lunch2_dain_1b_seo": {
-        "name": "{name}",
-        "text": "*Cantina com a Dain. Ontem foi marmita. Hoje o cheiro de pão chega primeiro.*"
-    },
-    "lunch2_dain_2b_seo": {
-        "name": "Dain",
-        "text": "Opa, hoje trocou a marmita da presidente pelo meu lado?!"
-    },
-    "lunch2_dain_3b_seo": {
-        "name": "{name}",
-        "text": "Como o presidente me arrastou ontem, também fiquei curioso sobre você hoje."
-    },
-    "lunch2_dain_4b_seo": {
-        "name": "Dain",
-        "text": "ISSO AÍ!! Sem voltar atrás! Uma partida, pão doce valendo!!"
-    },
-    "lunch2_dain_1b_yuna": {
-        "name": "{name}",
-        "text": "*Cantina com a Dain. Ontem foi a biblioteca silenciosa. Hoje o cheiro de pão e o barulho chegam primeiro.*"
-    },
-    "lunch2_dain_2b_yuna": {
-        "name": "Dain",
-        "text": "Ué! Ontem modo fantasma e hoje veio curtir de verdade?!"
-    },
-    "lunch2_dain_3b_yuna": {
-        "name": "{name}",
-        "text": "Se fui num lugar quieto, tenho que ir num barulhento pra equilibrar."
-    },
-    "lunch2_dain_4b_yuna": {
-        "name": "Dain",
-        "text": "ISSO AÍ!! Respeito esse equilíbrio! Bora, uma partida!!"
-    },
-    "lunch2_yuna_1": {
-        "name": "{name}",
-        "text": "*O anexo da biblioteca. Um prédio mais antigo que o principal. Quase sem alunos. Subo as escadas e no fim do corredor, Yuna está ali. Encostada na parede, lendo um livro.*"
-    },
-    "lunch2_yuna_intro_check": {},
-    "lunch2_yuna_3": {
-        "name": "Yuna",
-        "text": "...Veio."
-    },
-    "lunch2_yuna_3_seo": {
-        "name": "Yuna",
-        "text": "...Veio."
-    },
-    "lunch2_yuna_4_seo": {
-        "name": "{name}",
-        "text": "Recebi seu bilhete."
-    },
-    "lunch2_yuna_5_seo": {
-        "name": "Yuna",
-        "text": "Ontem tava grudado na presidente."
-    },
-    "lunch2_yuna_6_seo": {
-        "name": "{name}",
-        "text": "Hoje foi você que me chamou aqui."
-    },
-    "lunch2_yuna_7_seo": {
-        "name": "Yuna",
-        "text": "...Inesperado."
-    },
-    "lunch2_yuna_8_seo": {
-        "name": "{name}",
-        "text": "Justamente por isso eu quis mais ainda."
-    },
-    "lunch2_yuna_3_yuna": {
-        "name": "Yuna",
-        "text": "...Veio de novo."
-    },
-    "lunch2_yuna_4_yuna": {
-        "name": "{name}",
-        "text": "Dessa vez até mandou bilhete antes."
-    },
-    "lunch2_yuna_5_yuna": {
-        "name": "Yuna",
-        "text": "Ontem também foi quieto. Hoje também?"
-    },
-    "lunch2_yuna_6_yuna": {
-        "name": "{name}",
-        "text": "Ontem foi confortável. Por isso voltei."
-    },
-    "lunch2_yuna_7_yuna": {
-        "name": "Yuna",
-        "text": "...Ah. Entendi."
-    },
-    "lunch2_yuna_8_yuna": {
-        "name": "{name}",
-        "text": "É. Ficar do seu lado não foi tão desconfortável quanto eu pensei."
-    },
-    "lunch2_yuna_4": {
-        "name": "{name}",
-        "text": "Recebi seu bilhete."
-    },
-    "lunch2_yuna_5": {
-        "name": "Yuna",
-        "text": "Podia não ter vindo."
-    },
-    "lunch2_yuna_6": {
-        "name": "{name}",
-        "text": "Por quê?"
-    },
-    "lunch2_yuna_7": {
-        "name": "Yuna",
-        "text": "Parece que tá colado com a barulhenta. Lá é mais divertido, né."
-    },
-    "lunch2_yuna_8": {
-        "name": "{name}",
-        "text": "Às vezes eu preciso de um refúgio."
-    },
-    "lunch2_yuna_9": {
-        "name": "Yuna",
-        "text": "*Vira a página. O som do papel está mais leve que antes.*"
-    },
-    "lunch2_yuna_10": {
-        "name": "Yuna",
-        "text": "...Tá bom."
-    },
-    "lunch2_yuna_11": {
-        "name": "Yuna",
-        "text": "*Vai na frente. No fundo do anexo. Um canto onde parece que ninguém vem. Uma salinha aparece. A luz do sol entra pela janela, tem um sofá velho e estantes de livros.*"
-    },
-    "lunch2_yuna_13": {
-        "name": "{name}",
-        "text": "Que lugar é esse? Sala secreta de leitura?"
-    },
-    "lunch2_yuna_14": {
-        "name": "Yuna",
-        "text": "...Quase ninguém sabe que existe."
-    },
-    "lunch2_yuna_15": {
-        "name": "Yuna",
-        "text": "*Senta no sofá. Deixa o espaço do lado dela disfarçadamente vazio.*"
-    },
-    "lunch2_yuna_16": {
-        "name": "Yuna",
-        "text": "Tinha outra pessoa que vinha aqui comigo."
-    },
-    "lunch2_yuna_17": {
-        "name": "{name}",
-        "text": "Tinha?"
-    },
-    "lunch2_yuna_17_b": {
-        "name": "Yuna",
-        "text": "......"
-    },
-    "lunch2_yuna_choice": {
-        "name": "{name}",
-        "text": "*Não há palavra depois de ‘havia’. Yuna enfia a ponta do marcador no livro.*",
-        "choices": [
-            "E essa pessoa, agora?",
-            "Não pergunto. Só sento do lado."
-        ]
-    },
-    "lunch2_yuna_c1_1": {
-        "name": "Yuna",
-        "text": "...Foi transferida. Faz um ano."
-    },
-    "lunch2_yuna_c1_2": {
-        "name": "Yuna",
-        "text": "*O dedo de ela pressiona firmemente o final do marcador.*"
-    },
-    "lunch2_yuna_c1_3": {
-        "name": "Yuna",
-        "text": "Sem avisar."
-    },
-    "lunch2_yuna_c1_4": {
-        "name": "Yuna",
-        "text": "*Empurra o marcador fundo dentro do livro. A página dobra depois de 'Eu tinha.'*"
-    },
-    "lunch2_yuna_c1_5": {
-        "name": "{name}",
-        "text": "Nunca entrou em contato?"
-    },
-    "lunch2_yuna_c1_6": {
-        "name": "Yuna",
-        "text": "...Não sei. Se foi porque não quis — ou não pôde."
-    },
-    "lunch2_yuna_c1_7": {
-        "name": "{name}",
-        "text": "*Yuna abre o livro. A página cobre metade do rosto dela. Mordo meu lábio uma vez.*"
-    },
-    "lunch2_yuna_c1_9": {
-        "name": "{name}",
-        "text": "Vai que foi tudo muito em cima? Às vezes as pessoas perdem o contato sem querer."
-    },
-    "lunch2_yuna_c1_9_b": {
-        "name": "Yuna",
-        "text": "*O olhar dela gela num segundo.*"
-    },
-    "lunch2_yuna_c1_10": {
-        "name": "Yuna",
-        "text": "...Não foi em cima. Foi transferência."
-    },
-    "lunch2_yuna_c1_11": {
-        "name": "{name}",
-        "text": "Ah..."
-    },
-    "lunch2_yuna_c1_12": {
-        "name": "Yuna",
-        "text": "*Sua mão para sobre o marcador. Apenas o som de virar páginas ecoa alto.*"
-    },
-    "lunch2_yuna_c1_14": {
-        "name": "{name}",
-        "text": "*Mordo o lábio e olho apenas para o dourado gasto na lombada do livro.*"
-    },
-    "lunch2_yuna_c2_1": {
-        "name": "{name}",
-        "text": "*Sento do lado dela sem dizer nada. Yuna olha de relance. Depois tira um livro da pilha dela e coloca do meu lado.*"
-    },
-    "lunch2_yuna_c2_3": {
-        "name": "Yuna",
-        "text": "...Lê."
-    },
-    "lunch2_yuna_c2_4": {
-        "name": "{name}",
-        "text": "*Um livro no lugar das palavras. A gente lê lado a lado em silêncio. A luz do sol pela janela é morna.*"
-    },
-    "lunch2_yuna_c2_6": {
-        "name": "Yuna",
-        "text": "...É por isso que gosto daqui."
-    },
-    "lunch2_yuna_c2_7": {
-        "name": "{name}",
-        "text": "Hm?"
-    },
-    "lunch2_yuna_c2_8": {
-        "name": "Yuna",
-        "text": "É silencioso. — Mas não fico sozinha."
-    },
-    "lunch2_yuna_c2_9": {
-        "name": "Yuna",
-        "text": "*Volta os olhos para a estante. A luz do sol se alonga um pouco mais sobre a página aberta.*"
-    },
-    "lunch2_yuna_end": {
-        "name": "{name}",
-        "text": "*O 'Eu tinha' de Yuna ecoa na minha cabeça. Relembro a página onde o marcador estava colocado.*"
-    },
     "lunch2_seo_1": {
         "name": "{name}",
         "text": "*O terraço. Mesmo lugar de ontem. Seoyeon está abrindo a marmita.*"
@@ -446,6 +201,46 @@
         "name": "{name}",
         "text": "*A marca de arroz ainda está no dorso da minha mão. Seoyeon continua sorrindo e só amarra de novo a fita da marmita.*"
     },
+    "lunch2_dain_1_check": {
+        "name": "{name}",
+        "text": "*Indo em direção à cantina.*"
+    },
+    "lunch2_dain_1b": {
+        "name": "{name}",
+        "text": "*Cantina com a Dain. Primeira rodada de pedra-papel-tesoura.*"
+    },
+    "lunch2_dain_1b_seo": {
+        "name": "{name}",
+        "text": "*Cantina com a Dain. Ontem foi marmita. Hoje o cheiro de pão chega primeiro.*"
+    },
+    "lunch2_dain_2b_seo": {
+        "name": "Dain",
+        "text": "Opa, hoje trocou a marmita da presidente pelo meu lado?!"
+    },
+    "lunch2_dain_3b_seo": {
+        "name": "{name}",
+        "text": "Como o presidente me arrastou ontem, também fiquei curioso sobre você hoje."
+    },
+    "lunch2_dain_4b_seo": {
+        "name": "Dain",
+        "text": "ISSO AÍ!! Sem voltar atrás! Uma partida, pão doce valendo!!"
+    },
+    "lunch2_dain_1b_yuna": {
+        "name": "{name}",
+        "text": "*Cantina com a Dain. Ontem foi a biblioteca silenciosa. Hoje o cheiro de pão e o barulho chegam primeiro.*"
+    },
+    "lunch2_dain_2b_yuna": {
+        "name": "Dain",
+        "text": "Ué! Ontem modo fantasma e hoje veio curtir de verdade?!"
+    },
+    "lunch2_dain_3b_yuna": {
+        "name": "{name}",
+        "text": "Se fui num lugar quieto, tenho que ir num barulhento pra equilibrar."
+    },
+    "lunch2_dain_4b_yuna": {
+        "name": "Dain",
+        "text": "ISSO AÍ!! Respeito esse equilíbrio! Bora, uma partida!!"
+    },
     "lunch2_dain_1": {
         "name": "{name}",
         "text": "*Cantina com a Dain. Revanche do pedra-papel-tesoura de ontem.*"
@@ -458,13 +253,17 @@
         "name": "{name}",
         "text": "Você falou a mesma coisa ontem."
     },
-    "lunch2_dain_3b": {
-        "name": "{name}",
-        "text": "Sério?"
-    },
     "lunch2_dain_4": {
         "name": "Dain",
         "text": "Ontem foi só aquecimento!!"
+    },
+    "lunch2_dain_5": {
+        "name": "{name}",
+        "text": "*Pedra-papel-tesoura. — Dain perde de novo.*"
+    },
+    "lunch2_dain_3b": {
+        "name": "{name}",
+        "text": "Sério?"
     },
     "lunch2_dain_4b": {
         "name": "Dain",
@@ -473,10 +272,6 @@
     "lunch2_dain_5b": {
         "name": "{name}",
         "text": "*Pedra-papel-tesoura. Dain perdeu.*"
-    },
-    "lunch2_dain_5": {
-        "name": "{name}",
-        "text": "*Pedra-papel-tesoura. — Dain perde de novo.*"
     },
     "lunch2_dain_6": {
         "name": "Dain",
@@ -555,13 +350,13 @@
         "name": "{name}",
         "text": "*Abro a porta da enfermaria. O mesmo cheiro de antisséptico de ontem.*"
     },
-    "lunch2_dain_end_ins4_first": {
-        "name": "{name}",
-        "text": "*Abro a porta da enfermaria. Um cheiro diferente de antisséptico bate no nariz.*"
-    },
     "lunch2_dain_end_e": {
         "name": "Enfermeira",
         "text": "*Levantando a cabeça* Ué, o transferido de ontem."
+    },
+    "lunch2_dain_end_ins4_first": {
+        "name": "{name}",
+        "text": "*Abro a porta da enfermaria. Um cheiro diferente de antisséptico bate no nariz.*"
     },
     "lunch2_dain_end_ins5_first": {
         "name": "Enfermeira",
@@ -575,13 +370,13 @@
         "name": "Enfermeira",
         "text": "De volta? Quer virar freguês?"
     },
-    "lunch2_dain_end_ins7_first": {
-        "name": "Enfermeira",
-        "text": "Primeira vez, né? Vem cá, vou fazer a assepsia."
-    },
     "lunch2_dain_end_h": {
         "name": "{name}",
         "text": "*Seu tom é o mesmo de ontem. Apenas seu olhar continua caindo abaixo dos joelhos.*"
+    },
+    "lunch2_dain_end_ins7_first": {
+        "name": "Enfermeira",
+        "text": "Primeira vez, né? Vem cá, vou fazer a assepsia."
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
@@ -682,5 +477,210 @@
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
         "text": "*Resta um espaço em branco no cronograma ao lado do balcão de empréstimos. Yuna vira a página sem sequer olhar para ele.*"
+    },
+    "lunch2_yuna_1": {
+        "name": "{name}",
+        "text": "*O anexo da biblioteca. Um prédio mais antigo que o principal. Quase sem alunos. Subo as escadas e no fim do corredor, Yuna está ali. Encostada na parede, lendo um livro.*"
+    },
+    "lunch2_yuna_intro_check": {},
+    "lunch2_yuna_3": {
+        "name": "Yuna",
+        "text": "...Veio."
+    },
+    "lunch2_yuna_4": {
+        "name": "{name}",
+        "text": "Recebi seu bilhete."
+    },
+    "lunch2_yuna_5": {
+        "name": "Yuna",
+        "text": "Podia não ter vindo."
+    },
+    "lunch2_yuna_6": {
+        "name": "{name}",
+        "text": "Por quê?"
+    },
+    "lunch2_yuna_7": {
+        "name": "Yuna",
+        "text": "Parece que tá colado com a barulhenta. Lá é mais divertido, né."
+    },
+    "lunch2_yuna_8": {
+        "name": "{name}",
+        "text": "Às vezes eu preciso de um refúgio."
+    },
+    "lunch2_yuna_3_seo": {
+        "name": "Yuna",
+        "text": "...Veio."
+    },
+    "lunch2_yuna_4_seo": {
+        "name": "{name}",
+        "text": "Recebi seu bilhete."
+    },
+    "lunch2_yuna_5_seo": {
+        "name": "Yuna",
+        "text": "Ontem tava grudado na presidente."
+    },
+    "lunch2_yuna_6_seo": {
+        "name": "{name}",
+        "text": "Hoje foi você que me chamou aqui."
+    },
+    "lunch2_yuna_7_seo": {
+        "name": "Yuna",
+        "text": "...Inesperado."
+    },
+    "lunch2_yuna_8_seo": {
+        "name": "{name}",
+        "text": "Justamente por isso eu quis mais ainda."
+    },
+    "lunch2_yuna_3_yuna": {
+        "name": "Yuna",
+        "text": "...Veio de novo."
+    },
+    "lunch2_yuna_4_yuna": {
+        "name": "{name}",
+        "text": "Dessa vez até mandou bilhete antes."
+    },
+    "lunch2_yuna_5_yuna": {
+        "name": "Yuna",
+        "text": "Ontem também foi quieto. Hoje também?"
+    },
+    "lunch2_yuna_6_yuna": {
+        "name": "{name}",
+        "text": "Ontem foi confortável. Por isso voltei."
+    },
+    "lunch2_yuna_7_yuna": {
+        "name": "Yuna",
+        "text": "...Ah. Entendi."
+    },
+    "lunch2_yuna_8_yuna": {
+        "name": "{name}",
+        "text": "É. Ficar do seu lado não foi tão desconfortável quanto eu pensei."
+    },
+    "lunch2_yuna_9": {
+        "name": "Yuna",
+        "text": "*Vira a página. O som do papel está mais leve que antes.*"
+    },
+    "lunch2_yuna_10": {
+        "name": "Yuna",
+        "text": "...Tá bom."
+    },
+    "lunch2_yuna_11": {
+        "name": "Yuna",
+        "text": "*Vai na frente. No fundo do anexo. Um canto onde parece que ninguém vem. Uma salinha aparece. A luz do sol entra pela janela, tem um sofá velho e estantes de livros.*"
+    },
+    "lunch2_yuna_13": {
+        "name": "{name}",
+        "text": "Que lugar é esse? Sala secreta de leitura?"
+    },
+    "lunch2_yuna_14": {
+        "name": "Yuna",
+        "text": "...Quase ninguém sabe que existe."
+    },
+    "lunch2_yuna_15": {
+        "name": "Yuna",
+        "text": "*Senta no sofá. Deixa o espaço do lado dela disfarçadamente vazio.*"
+    },
+    "lunch2_yuna_16": {
+        "name": "Yuna",
+        "text": "Tinha outra pessoa que vinha aqui comigo."
+    },
+    "lunch2_yuna_17": {
+        "name": "{name}",
+        "text": "Tinha?"
+    },
+    "lunch2_yuna_17_b": {
+        "name": "Yuna",
+        "text": "......"
+    },
+    "lunch2_yuna_choice": {
+        "name": "{name}",
+        "text": "*Não há palavra depois de ‘havia’. Yuna enfia a ponta do marcador no livro.*",
+        "choices": [
+            "E essa pessoa, agora?",
+            "Não pergunto. Só sento do lado."
+        ]
+    },
+    "lunch2_yuna_c1_1": {
+        "name": "Yuna",
+        "text": "...Foi transferida. Faz um ano."
+    },
+    "lunch2_yuna_c1_2": {
+        "name": "Yuna",
+        "text": "*O dedo de ela pressiona firmemente o final do marcador.*"
+    },
+    "lunch2_yuna_c1_3": {
+        "name": "Yuna",
+        "text": "Sem avisar."
+    },
+    "lunch2_yuna_c1_4": {
+        "name": "Yuna",
+        "text": "*Empurra o marcador fundo dentro do livro. A página dobra depois de 'Eu tinha.'*"
+    },
+    "lunch2_yuna_c1_5": {
+        "name": "{name}",
+        "text": "Nunca entrou em contato?"
+    },
+    "lunch2_yuna_c1_6": {
+        "name": "Yuna",
+        "text": "...Não sei. Se foi porque não quis — ou não pôde."
+    },
+    "lunch2_yuna_c1_7": {
+        "name": "{name}",
+        "text": "*Yuna abre o livro. A página cobre metade do rosto dela. Mordo meu lábio uma vez.*"
+    },
+    "lunch2_yuna_c1_9": {
+        "name": "{name}",
+        "text": "Vai que foi tudo muito em cima? Às vezes as pessoas perdem o contato sem querer."
+    },
+    "lunch2_yuna_c1_9_b": {
+        "name": "Yuna",
+        "text": "*O olhar dela gela num segundo.*"
+    },
+    "lunch2_yuna_c1_10": {
+        "name": "Yuna",
+        "text": "...Não foi em cima. Foi transferência."
+    },
+    "lunch2_yuna_c1_11": {
+        "name": "{name}",
+        "text": "Ah..."
+    },
+    "lunch2_yuna_c1_12": {
+        "name": "Yuna",
+        "text": "*Sua mão para sobre o marcador. Apenas o som de virar páginas ecoa alto.*"
+    },
+    "lunch2_yuna_c1_14": {
+        "name": "{name}",
+        "text": "*Mordo o lábio e olho apenas para o dourado gasto na lombada do livro.*"
+    },
+    "lunch2_yuna_c2_1": {
+        "name": "{name}",
+        "text": "*Sento do lado dela sem dizer nada. Yuna olha de relance. Depois tira um livro da pilha dela e coloca do meu lado.*"
+    },
+    "lunch2_yuna_c2_3": {
+        "name": "Yuna",
+        "text": "...Lê."
+    },
+    "lunch2_yuna_c2_4": {
+        "name": "{name}",
+        "text": "*Um livro no lugar das palavras. A gente lê lado a lado em silêncio. A luz do sol pela janela é morna.*"
+    },
+    "lunch2_yuna_c2_6": {
+        "name": "Yuna",
+        "text": "...É por isso que gosto daqui."
+    },
+    "lunch2_yuna_c2_7": {
+        "name": "{name}",
+        "text": "Hm?"
+    },
+    "lunch2_yuna_c2_8": {
+        "name": "Yuna",
+        "text": "É silencioso. — Mas não fico sozinha."
+    },
+    "lunch2_yuna_c2_9": {
+        "name": "Yuna",
+        "text": "*Volta os olhos para a estante. A luz do sol se alonga um pouco mais sobre a página aberta.*"
+    },
+    "lunch2_yuna_end": {
+        "name": "{name}",
+        "text": "*O 'Eu tinha' de Yuna ecoa na minha cabeça. Relembro a página onde o marcador estava colocado.*"
     }
 }

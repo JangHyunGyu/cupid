@@ -128,6 +128,18 @@
         "name": "{name}",
         "text": "What, you got a secret hideout up there?"
     },
+    "hallway_6_b": {
+        "name": "Seoyeon",
+        "text": "*A brief pause* ...Sharp."
+    },
+    "hallway_6_c": {
+        "name": "Seoyeon",
+        "text": "*The edge of the clipboard moves again one beat later.*"
+    },
+    "hallway_7": {
+        "name": "Seoyeon",
+        "text": "Oh, lunch. You don't know where the cafeteria is, right? Come with me."
+    },
     "hallway_8": {
         "name": "{name}",
         "text": "*So now I have lunch plans. I don't remember agreeing to that. We stop in front of the classroom.*"
@@ -148,13 +160,33 @@
         "name": "Seoyeon",
         "text": "*She turns and gives a light wave. She doesn't look back.*"
     },
+    "hallway_13_b": {
+        "name": "{name}",
+        "text": "*Her back was straight. Only her fingers moved, tapping the edge of the clipboard in a steady rhythm.*"
+    },
     "classroom_1": {
         "name": "{name}",
         "text": "*I push the door open. Every head turns. I knew it was coming, but thirty stares hit heavier than I expected.*"
     },
+    "classroom_2_b": {
+        "name": "{name}",
+        "text": "*The homeroom teacher stands at the podium. Late twenties. Her cardigan hangs open from the start. Her expression is indifferent, but — her eyes are scanning each student one by one.*"
+    },
     "classroom_3": {
         "name": "Homeroom Teacher",
         "text": "Alright, everyone. We've got a transfer student joining us today. Want to introduce yourself?"
+    },
+    "classroom_3_b": {
+        "name": "{name}",
+        "text": "{name}. Nice to meet you all. *Short and clean. The teacher nods.*"
+    },
+    "classroom_5_b": {
+        "name": "Homeroom Teacher",
+        "text": "...Right. {name}. I'll remember that. *Quietly, almost to herself* I make it a point to memorize names on the first try."
+    },
+    "classroom_5_c": {
+        "name": "{name}",
+        "text": "*The teacher's mutter disappears under the classroom noise. A whistle sounds from one side of the room.*"
     },
     "classroom_dain_1": {
         "name": "Dain",
@@ -175,6 +207,18 @@
     "classroom_dain_5": {
         "name": "{name}",
         "text": "*She's the type with no volume control.*"
+    },
+    "classroom_dain_5_b": {
+        "name": "Homeroom Teacher",
+        "text": "*The homeroom teacher let out a small sigh. She tapped the corner of the attendance book and moved on to the next name without even glancing at Dain.*"
+    },
+    "classroom_dain_5_c": {
+        "name": "Homeroom Teacher",
+        "text": "...Save some energy. First period hasn't even started yet."
+    },
+    "classroom_dain_5_d": {
+        "name": "Homeroom Teacher",
+        "text": "*Deadpan delivery, but the corner of her mouth is fighting a smile.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -207,6 +251,10 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "About what?"
+    },
+    "classroom_minsu_2_b": {
+        "name": "Minsu",
+        "text": "*Nodding toward Dain* Pace yourself."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",
@@ -255,53 +303,5 @@
     "classroom_yuna_note_6": {
         "name": "{name}",
         "text": "*Class starts. Yuna is looking out the window again. Dain is already chatting with the person next to her.*"
-    },
-    "hallway_6_b": {
-        "name": "Seoyeon",
-        "text": "*A brief pause* ...Sharp."
-    },
-    "hallway_6_c": {
-        "name": "Seoyeon",
-        "text": "*The edge of the clipboard moves again one beat later.*"
-    },
-    "hallway_7": {
-        "name": "Seoyeon",
-        "text": "Oh, lunch. You don't know where the cafeteria is, right? Come with me."
-    },
-    "hallway_13_b": {
-        "name": "{name}",
-        "text": "*Her back was straight. Only her fingers moved, tapping the edge of the clipboard in a steady rhythm.*"
-    },
-    "classroom_2_b": {
-        "name": "{name}",
-        "text": "*The homeroom teacher stands at the podium. Late twenties. Her cardigan hangs open from the start. Her expression is indifferent, but — her eyes are scanning each student one by one.*"
-    },
-    "classroom_3_b": {
-        "name": "{name}",
-        "text": "{name}. Nice to meet you all. *Short and clean. The teacher nods.*"
-    },
-    "classroom_5_b": {
-        "name": "Homeroom Teacher",
-        "text": "...Right. {name}. I'll remember that. *Quietly, almost to herself* I make it a point to memorize names on the first try."
-    },
-    "classroom_5_c": {
-        "name": "{name}",
-        "text": "*The teacher's mutter disappears under the classroom noise. A whistle sounds from one side of the room.*"
-    },
-    "classroom_dain_5_b": {
-        "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher let out a small sigh. She tapped the corner of the attendance book and moved on to the next name without even glancing at Dain.*"
-    },
-    "classroom_dain_5_c": {
-        "name": "Homeroom Teacher",
-        "text": "...Save some energy. First period hasn't even started yet."
-    },
-    "classroom_dain_5_d": {
-        "name": "Homeroom Teacher",
-        "text": "*Deadpan delivery, but the corner of her mouth is fighting a smile.*"
-    },
-    "classroom_minsu_2_b": {
-        "name": "Minsu",
-        "text": "*Nodding toward Dain* Pace yourself."
     }
 }

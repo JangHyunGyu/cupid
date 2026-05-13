@@ -4,6 +4,71 @@
         "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. — Mes pas aussi.*"
     },
     "morning2_start_2": {},
+    "morning2_greet_seo_1": {},
+    "morning2_greet_seo_1_roof": {
+        "name": "Seoyeon",
+        "text": "Ce que tu as dit sur le toit hier — c'est toujours valable ?"
+    },
+    "morning2_greet_seo_1_gate": {
+        "name": "Seoyeon",
+        "text": "Ce que tu as dit au portail hier — tu t'en souviens, hein ?"
+    },
+    "morning2_greet_seo_2": {
+        "name": "{name}",
+        "text": "*Seoyeon s'est approchée en premier. Le presse-papiers est de nouveau pressé contre l'intérieur de son bras aujourd'hui. Dain jette un coup d'œil depuis le fond de la classe et détourne le regard. Yuna tourne ses pages plus vite.*"
+    },
+    "morning2_greet_seo_others_2": {
+        "name": "{name}",
+        "text": "*Deux réactions subtiles. — Est-ce que je dois remarquer, ou faire semblant de rien ?*"
+    },
+    "morning2_greet_dain_1": {
+        "name": "Dain",
+        "text": "Hé ! C'était fun hier, on refait un truc aujourd'hui !"
+    },
+    "morning2_greet_dain_2": {
+        "name": "Dain",
+        "text": "*Elle me tape l'épaule par derrière.*"
+    },
+    "morning2_greet_dain_others": {
+        "name": "Seoyeon",
+        "text": "*Elle passe en feuilletant son bloc-notes.*"
+    },
+    "morning2_greet_dain_others_seo": {
+        "name": "Seoyeon",
+        "text": "Quelle énergie."
+    },
+    "morning2_greet_dain_others_yuna": {
+        "name": "{name}",
+        "text": "*Sarcasme ou admiration ? Yuna ne réagit pas. Mais sa main qui écrivait s'est arrêtée.*"
+    },
+    "morning2_greet_dain_others_2": {
+        "name": "{name}",
+        "text": "*J'en ai ri, mais le son du presse-papiers qui était tapé m'est venu à l'esprit un instant plus tard.*"
+    },
+    "morning2_greet_yuna_1": {
+        "name": "{name}",
+        "text": "*Sur le point de m'asseoir — un mot plié sur mon bureau. '...Merci pour hier.'*"
+    },
+    "morning2_greet_yuna_2": {
+        "name": "{name}",
+        "text": "*L'écriture de Yuna. Une phrase de plus qu'hier. — Au dos, en tout petit : 'À l'annexe de la bibliothèque à midi.'*"
+    },
+    "morning2_greet_yuna_others": {
+        "name": "Seoyeon",
+        "text": "Une lettre dès le matin ?"
+    },
+    "morning2_greet_yuna_others_seo": {
+        "name": "{name}",
+        "text": "*Elle sourit. Mais son regard s'arrête sur le mot.*"
+    },
+    "morning2_greet_yuna_others_dain": {
+        "name": "Dain",
+        "text": "C'est quoi ça ! Montre !"
+    },
+    "morning2_greet_yuna_others_2": {
+        "name": "{name}",
+        "text": "*Je plie le mot et le tiens dans ma main. Le pli appuie dans ma paume.*"
+    },
     "morning2_dain_1": {
         "name": "{name}",
         "text": "*Au moment où j'ouvre la porte de la classe — un choc dans le dos.*"
@@ -92,9 +157,153 @@
         "name": "{name}",
         "text": "*Pause. Je suis sorti dans le couloir.*"
     },
+    "morning2_break_transition_b": {
+        "name": "{name}",
+        "text": "*La prof se tient devant la porte de la classe. Feuille de présence en main, elle jette un coup d'œil vers la porte — nos regards se croisent.*"
+    },
     "morning2_break_1": {
         "name": "{name}",
         "text": "*Le bout du presse-papiers de Seoyeon touche le bureau. J'ai raté le bon moment pour dire non.*"
+    },
+    "hidden_homeroom_d2_1": {
+        "name": "Professeure principale",
+        "text": "Ah, {name}. Viens à la salle des profs une minute."
+    },
+    "hidden_homeroom_d2_1_b": {
+        "name": "{name}",
+        "text": "Il y a un problème... ?"
+    },
+    "hidden_homeroom_d2_1_c": {
+        "name": "Professeure principale",
+        "text": "Non, juste la vérification de tes papiers de transfert. — De l'administratif."
+    },
+    "hidden_homeroom_d2_2": {
+        "name": "{name}",
+        "text": "*Elle dit que c'est administratif.*"
+    },
+    "hidden_homeroom_d2_2_b": {
+        "name": "{name}",
+        "text": "*J'ai suivi la professeure principale jusqu'à la salle des professeurs. Un tiroir d'un bureau dans un coin est légèrement ouvert. Sous une pile de papiers, le bord d'une feuille manuscrite apparaît.*"
+    },
+    "hidden_homeroom_d2_3": {
+        "name": "Professeure principale",
+        "text": "J'ai vu ton ancien bulletin. T'avais de bonnes notes en lettres. T'aimes lire ?"
+    },
+    "hidden_homeroom_d2_3_b": {
+        "name": "Professeure principale",
+        "text": "*Une brève hésitation* ...Diverses choses. Surtout — des romans."
+    },
+    "hidden_homeroom_d2_3_c": {
+        "name": "Professeure principale",
+        "text": "*Le regard de la prof principale s'attarde un instant sur le tiroir entrouvert.*"
+    },
+    "hidden_homeroom_d2_3_d": {
+        "name": "Professeure principale",
+        "text": "Lire ? — Et écrire ?"
+    },
+    "hidden_homeroom_d2_3_e": {
+        "name": "{name}",
+        "text": "*Le doigt posé sur le bulletin couvre le coin de la feuille manuscrite.*"
+    },
+    "hidden_homeroom_d2_3_f": {
+        "name": "{name}",
+        "text": "Écrire, je ne sais pas trop."
+    },
+    "hidden_homeroom_d2_3_g": {
+        "name": "Professeure principale",
+        "text": "*La prof hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
+    },
+    "hidden_homeroom_d2_choice1": {
+        "name": "{name}",
+        "text": "*Le regard vers le tiroir demeure. J'ai décidé de ne plus poser de questions sur les bulletins scolaires.*",
+        "choices": [
+            "Et vous ? Vous lisez quoi ?",
+            "Oui, j'aime lire"
+        ]
+    },
+    "hidden_homeroom_d2_choice1_a": {
+        "name": "Professeure principale",
+        "text": "*marquant une pause* ...Des romans policiers. Pas ceux qui cherchent le coupable — ceux qui traquent le mobile."
+    },
+    "hidden_homeroom_d2_choice1_b": {
+        "name": "Professeure principale",
+        "text": "*souriant légèrement* Ah oui ? ...C'est un bon loisir."
+    },
+    "hidden_homeroom_d2_5": {
+        "name": "Professeure principale",
+        "text": "...D'accord. Je demandais, c'est tout."
+    },
+    "hidden_homeroom_d2_6": {
+        "name": "{name}",
+        "text": "*La tranche du manuscrit est visible à travers le tiroir légèrement ouvert. Le professeur principal pose la tasse de café et ferme le tiroir.*"
+    },
+    "hidden_homeroom_d2_7": {
+        "name": "Professeure principale",
+        "text": "L'adaptation, ça va ? Mieux qu'hier ?"
+    },
+    "hidden_homeroom_d2_7_b": {
+        "name": "{name}",
+        "text": "Beaucoup mieux. J'aime bien les gens de la classe."
+    },
+    "hidden_homeroom_d2_8": {
+        "name": "Professeure principale",
+        "text": "Dain est bruyante, hein ? — Elle est toujours comme ça. Mais une gosse qui fait du boucan et une gosse qui a juste trop d'énergie, c'est pas pareil."
+    },
+    "hidden_homeroom_d2_8_b": {
+        "name": "{name}",
+        "text": "Si vous la connaissez, c'est que Dain est assez connue."
+    },
+    "hidden_homeroom_d2_8_c": {
+        "name": "Professeure principale",
+        "text": "Célèbre, ce n'est pas le mot... *Boit une gorgée de café* Plutôt quelqu'un dont je m'inquiète."
+    },
+    "hidden_homeroom_d2_8_d": {
+        "name": "{name}",
+        "text": "*Le regard de la prof principale s'arrête un instant sur la ligne du nom de Dain.*"
+    },
+    "hidden_homeroom_d2_8_e": {
+        "name": "Professeure principale",
+        "text": "*Posant son café* ...Bref. De ton côté, rien de particulier."
+    },
+    "hidden_homeroom_d2_8_f": {
+        "name": "Professeure principale",
+        "text": "*La professeure principale se couvre la bouche avec la tasse à café et fait tourner la soucoupe deux fois au même endroit.*"
+    },
+    "hidden_homeroom_d2_9": {
+        "name": "{name}",
+        "text": "Merci, madame."
+    },
+    "hidden_homeroom_d2_10": {
+        "name": "Professeure principale",
+        "text": "C'est dans les tâches de gestion de classe. C'est du boulot."
+    },
+    "hidden_homeroom_d2_choice2": {
+        "name": "{name}",
+        "text": "*Elle dit que c'est du boulot, mais il y a encore un sourire au coin des yeux.*",
+        "choices": [
+            "Pour du boulot, vous avez l'air drôlement contente",
+            "Merci de prendre soin de moi"
+        ]
+    },
+    "hidden_homeroom_d2_choice2_a": {
+        "name": "Professeure principale",
+        "text": "*Cachant sa bouche derrière sa tasse de café* ...Raté pour le poker face. Bon, file."
+    },
+    "hidden_homeroom_d2_choice2_b": {
+        "name": "Professeure principale",
+        "text": "*faisant un geste de la main* Allez, arrête. C'est gênant. ...Allez, file."
+    },
+    "hidden_homeroom_d2_11": {
+        "name": "Professeure principale",
+        "text": "...Si je fais du favoritisme avec le nouveau, les autres vont jaser."
+    },
+    "hidden_homeroom_d2_11_b": {
+        "name": "Professeure principale",
+        "text": "*La voix de la prof principale se perd, basse, dans la tasse de café.*"
+    },
+    "hidden_homeroom_d2_12": {
+        "name": "{name}",
+        "text": "*En quittant la salle des profs — ces papiers dans le tiroir me trottent dans la tête.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
@@ -147,213 +356,5 @@
     "morning2_end": {
         "name": "{name}",
         "text": "*Cette personne qui en un an ne s'était jamais approchée de personne en premier — est venue vers moi en premier.*"
-    },
-    "hidden_homeroom_d2_1": {
-        "name": "Professeure principale",
-        "text": "Ah, {name}. Viens à la salle des profs une minute."
-    },
-    "hidden_homeroom_d2_2": {
-        "name": "{name}",
-        "text": "*Elle dit que c'est administratif.*"
-    },
-    "hidden_homeroom_d2_3": {
-        "name": "Professeure principale",
-        "text": "J'ai vu ton ancien bulletin. T'avais de bonnes notes en lettres. T'aimes lire ?"
-    },
-    "hidden_homeroom_d2_choice1": {
-        "name": "{name}",
-        "text": "*Le regard vers le tiroir demeure. J'ai décidé de ne plus poser de questions sur les bulletins scolaires.*",
-        "choices": [
-            "Et vous ? Vous lisez quoi ?",
-            "Oui, j'aime lire"
-        ]
-    },
-    "hidden_homeroom_d2_choice1_a": {
-        "name": "Professeure principale",
-        "text": "*marquant une pause* ...Des romans policiers. Pas ceux qui cherchent le coupable — ceux qui traquent le mobile."
-    },
-    "hidden_homeroom_d2_choice1_b": {
-        "name": "Professeure principale",
-        "text": "*souriant légèrement* Ah oui ? ...C'est un bon loisir."
-    },
-    "hidden_homeroom_d2_5": {
-        "name": "Professeure principale",
-        "text": "...D'accord. Je demandais, c'est tout."
-    },
-    "hidden_homeroom_d2_6": {
-        "name": "{name}",
-        "text": "*La tranche du manuscrit est visible à travers le tiroir légèrement ouvert. Le professeur principal pose la tasse de café et ferme le tiroir.*"
-    },
-    "hidden_homeroom_d2_7": {
-        "name": "Professeure principale",
-        "text": "L'adaptation, ça va ? Mieux qu'hier ?"
-    },
-    "hidden_homeroom_d2_8": {
-        "name": "Professeure principale",
-        "text": "Dain est bruyante, hein ? — Elle est toujours comme ça. Mais une gosse qui fait du boucan et une gosse qui a juste trop d'énergie, c'est pas pareil."
-    },
-    "hidden_homeroom_d2_9": {
-        "name": "{name}",
-        "text": "Merci, madame."
-    },
-    "hidden_homeroom_d2_10": {
-        "name": "Professeure principale",
-        "text": "C'est dans les tâches de gestion de classe. C'est du boulot."
-    },
-    "hidden_homeroom_d2_choice2": {
-        "name": "{name}",
-        "text": "*Elle dit que c'est du boulot, mais il y a encore un sourire au coin des yeux.*",
-        "choices": [
-            "Pour du boulot, vous avez l'air drôlement contente",
-            "Merci de prendre soin de moi"
-        ]
-    },
-    "hidden_homeroom_d2_choice2_a": {
-        "name": "Professeure principale",
-        "text": "*Cachant sa bouche derrière sa tasse de café* ...Raté pour le poker face. Bon, file."
-    },
-    "hidden_homeroom_d2_choice2_b": {
-        "name": "Professeure principale",
-        "text": "*faisant un geste de la main* Allez, arrête. C'est gênant. ...Allez, file."
-    },
-    "hidden_homeroom_d2_11": {
-        "name": "Professeure principale",
-        "text": "...Si je fais du favoritisme avec le nouveau, les autres vont jaser."
-    },
-    "hidden_homeroom_d2_12": {
-        "name": "{name}",
-        "text": "*En quittant la salle des profs — ces papiers dans le tiroir me trottent dans la tête.*"
-    },
-    "morning2_greet_seo_1_roof": {
-        "name": "Seoyeon",
-        "text": "Ce que tu as dit sur le toit hier — c'est toujours valable ?"
-    },
-    "morning2_greet_seo_1_gate": {
-        "name": "Seoyeon",
-        "text": "Ce que tu as dit au portail hier — tu t'en souviens, hein ?"
-    },
-    "morning2_greet_seo_2": {
-        "name": "{name}",
-        "text": "*Seoyeon s'est approchée en premier. Le presse-papiers est de nouveau pressé contre l'intérieur de son bras aujourd'hui. Dain jette un coup d'œil depuis le fond de la classe et détourne le regard. Yuna tourne ses pages plus vite.*"
-    },
-    "morning2_greet_seo_others_2": {
-        "name": "{name}",
-        "text": "*Deux réactions subtiles. — Est-ce que je dois remarquer, ou faire semblant de rien ?*"
-    },
-    "morning2_greet_dain_1": {
-        "name": "Dain",
-        "text": "Hé ! C'était fun hier, on refait un truc aujourd'hui !"
-    },
-    "morning2_greet_dain_2": {
-        "name": "Dain",
-        "text": "*Elle me tape l'épaule par derrière.*"
-    },
-    "morning2_greet_dain_others": {
-        "name": "Seoyeon",
-        "text": "*Elle passe en feuilletant son bloc-notes.*"
-    },
-    "morning2_greet_dain_others_seo": {
-        "name": "Seoyeon",
-        "text": "Quelle énergie."
-    },
-    "morning2_greet_dain_others_yuna": {
-        "name": "{name}",
-        "text": "*Sarcasme ou admiration ? Yuna ne réagit pas. Mais sa main qui écrivait s'est arrêtée.*"
-    },
-    "morning2_greet_dain_others_2": {
-        "name": "{name}",
-        "text": "*J'en ai ri, mais le son du presse-papiers qui était tapé m'est venu à l'esprit un instant plus tard.*"
-    },
-    "morning2_greet_yuna_1": {
-        "name": "{name}",
-        "text": "*Sur le point de m'asseoir — un mot plié sur mon bureau. '...Merci pour hier.'*"
-    },
-    "morning2_greet_yuna_2": {
-        "name": "{name}",
-        "text": "*L'écriture de Yuna. Une phrase de plus qu'hier. — Au dos, en tout petit : 'À l'annexe de la bibliothèque à midi.'*"
-    },
-    "morning2_greet_yuna_others": {
-        "name": "Seoyeon",
-        "text": "Une lettre dès le matin ?"
-    },
-    "morning2_greet_yuna_others_seo": {
-        "name": "{name}",
-        "text": "*Elle sourit. Mais son regard s'arrête sur le mot.*"
-    },
-    "morning2_greet_yuna_others_dain": {
-        "name": "Dain",
-        "text": "C'est quoi ça ! Montre !"
-    },
-    "morning2_greet_yuna_others_2": {
-        "name": "{name}",
-        "text": "*Je plie le mot et le tiens dans ma main. Le pli appuie dans ma paume.*"
-    },
-    "morning2_break_transition_b": {
-        "name": "{name}",
-        "text": "*La prof se tient devant la porte de la classe. Feuille de présence en main, elle jette un coup d'œil vers la porte — nos regards se croisent.*"
-    },
-    "hidden_homeroom_d2_1_b": {
-        "name": "{name}",
-        "text": "Il y a un problème... ?"
-    },
-    "hidden_homeroom_d2_1_c": {
-        "name": "Professeure principale",
-        "text": "Non, juste la vérification de tes papiers de transfert. — De l'administratif."
-    },
-    "hidden_homeroom_d2_2_b": {
-        "name": "{name}",
-        "text": "*J'ai suivi la professeure principale jusqu'à la salle des professeurs. Un tiroir d'un bureau dans un coin est légèrement ouvert. Sous une pile de papiers, le bord d'une feuille manuscrite apparaît.*"
-    },
-    "hidden_homeroom_d2_3_b": {
-        "name": "Professeure principale",
-        "text": "*Une brève hésitation* ...Diverses choses. Surtout — des romans."
-    },
-    "hidden_homeroom_d2_3_c": {
-        "name": "Professeure principale",
-        "text": "*Le regard de la prof principale s'attarde un instant sur le tiroir entrouvert.*"
-    },
-    "hidden_homeroom_d2_3_d": {
-        "name": "Professeure principale",
-        "text": "Lire ? — Et écrire ?"
-    },
-    "hidden_homeroom_d2_3_e": {
-        "name": "{name}",
-        "text": "*Le doigt posé sur le bulletin couvre le coin de la feuille manuscrite.*"
-    },
-    "hidden_homeroom_d2_3_f": {
-        "name": "{name}",
-        "text": "Écrire, je ne sais pas trop."
-    },
-    "hidden_homeroom_d2_3_g": {
-        "name": "Professeure principale",
-        "text": "*La prof hésite un instant. Son regard dérive vers le tiroir — puis revient aussitôt.*"
-    },
-    "hidden_homeroom_d2_7_b": {
-        "name": "{name}",
-        "text": "Beaucoup mieux. J'aime bien les gens de la classe."
-    },
-    "hidden_homeroom_d2_8_b": {
-        "name": "{name}",
-        "text": "Si vous la connaissez, c'est que Dain est assez connue."
-    },
-    "hidden_homeroom_d2_8_c": {
-        "name": "Professeure principale",
-        "text": "Célèbre, ce n'est pas le mot... *Boit une gorgée de café* Plutôt quelqu'un dont je m'inquiète."
-    },
-    "hidden_homeroom_d2_8_d": {
-        "name": "{name}",
-        "text": "*Le regard de la prof principale s'arrête un instant sur la ligne du nom de Dain.*"
-    },
-    "hidden_homeroom_d2_8_e": {
-        "name": "Professeure principale",
-        "text": "*Posant son café* ...Bref. De ton côté, rien de particulier."
-    },
-    "hidden_homeroom_d2_8_f": {
-        "name": "Professeure principale",
-        "text": "*La professeure principale se couvre la bouche avec la tasse à café et fait tourner la soucoupe deux fois au même endroit.*"
-    },
-    "hidden_homeroom_d2_11_b": {
-        "name": "Professeure principale",
-        "text": "*La voix de la prof principale se perd, basse, dans la tasse de café.*"
     }
 }

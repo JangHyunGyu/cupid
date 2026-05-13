@@ -55,6 +55,26 @@
         "name": "{name}",
         "text": "*Trois messages d’affilée. Elle peut pas respirer entre les textos ?*"
     },
+    "night_hidden_check": {
+        "name": "{name}",
+        "text": "*Entre les notifications — j'en remarque d'autres.*"
+    },
+    "night_hidden_homeroom_1": {
+        "name": "{name}",
+        "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Terminale 2 : Apportez vos affaires de maths pour la 1re heure demain. — Et l'élève transféré doit seulement continuer à bien s'adapter.'*"
+    },
+    "night_hidden_homeroom_2": {
+        "name": "{name}",
+        "text": "*Je relis l'annonce encore une fois. Le coin de ma bouche se relève, alors je retourne le téléphone.*"
+    },
+    "night_hidden_nurse_1": {
+        "name": "{name}",
+        "text": "*Les notifications de l'application de gestion de la santé scolaire sont affichées. « Dossiers de la salle de santé: Étudiant transféré – légers étourdissements. Mémo: Revenez demain si vous présentez des symptômes. Buvez beaucoup d'eau. ♥ est un problème médical.'*"
+    },
+    "night_hidden_nurse_2": {
+        "name": "{name}",
+        "text": "*Le cœur à la fin de la phrase reste au milieu de l'écran. Je le regarde encore une fois avant d'éteindre.*"
+    },
     "night_late_transition": {
         "name": "{name}",
         "text": "*J'allais m'endormir quand — mon téléphone sonne encore une fois. 23 heures. Qui ça peut être ?*"
@@ -107,6 +127,10 @@
         "name": "{name}",
         "text": "*'Appel' est déjà marqué dans la fenêtre de réponse.*"
     },
+    "night_dain_late_4_b": {
+        "name": "{name}",
+        "text": "*Une ribambelle d'emojis traîne sous le message de Dain. Chacun est différent.*"
+    },
     "night_end_1": {
         "name": "{name}",
         "text": "*J'ai posé mon téléphone. Je regarde le plafond. L'odeur des cerisiers reste encore sur mon uniforme.*"
@@ -114,29 +138,5 @@
     "night_end_3": {
         "name": "{name}",
         "text": "*Les noms que j'ai enregistrés aujourd'hui restent sur mon écran de verrouillage. Même après avoir éteint l'écran, mon doigt cherche une fois de plus le bouton d'alimentation.*"
-    },
-    "night_hidden_check": {
-        "name": "{name}",
-        "text": "*Entre les notifications — j'en remarque d'autres.*"
-    },
-    "night_hidden_homeroom_1": {
-        "name": "{name}",
-        "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Terminale 2 : Apportez vos affaires de maths pour la 1re heure demain. — Et l'élève transféré doit seulement continuer à bien s'adapter.'*"
-    },
-    "night_hidden_homeroom_2": {
-        "name": "{name}",
-        "text": "*Je relis l'annonce encore une fois. Le coin de ma bouche se relève, alors je retourne le téléphone.*"
-    },
-    "night_hidden_nurse_1": {
-        "name": "{name}",
-        "text": "*Les notifications de l'application de gestion de la santé scolaire sont affichées. « Dossiers de la salle de santé: Étudiant transféré – légers étourdissements. Mémo: Revenez demain si vous présentez des symptômes. Buvez beaucoup d'eau. ♥ est un problème médical.'*"
-    },
-    "night_hidden_nurse_2": {
-        "name": "{name}",
-        "text": "*Le cœur à la fin de la phrase reste au milieu de l'écran. Je le regarde encore une fois avant d'éteindre.*"
-    },
-    "night_dain_late_4_b": {
-        "name": "{name}",
-        "text": "*Une ribambelle d'emojis traîne sous le message de Dain. Chacun est différent.*"
     }
 }

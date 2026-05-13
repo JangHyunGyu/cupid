@@ -1202,19 +1202,19 @@ class GameEngine {
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Planificación · Guión', ja: '企画・シナリオ', en: 'Planning · Scenario', fr: 'Planification · Scénario', de: 'Planung · Szenario', pt: 'Planejamento · Cenário', ko: '기획 · 시나리오' })}</div>
-                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ja: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', en: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', de: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', pt: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ko: '장현규 · 김유진 · 이상훈' })}</div>
+                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ja: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', en: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', fr: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', de: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', pt: 'Hyungyu Jang · Yujin Kim · Sanghun Lee', ko: '장현규 · 김유진 · 이상훈' })}</div>
                         </div>
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Programación · Dirección', ja: 'プログラミング・演出', en: 'Programming · Direction', fr: 'Programmation · Direction', de: 'Programmierung · Regie', pt: 'Programação · Direção', ko: '프로그래밍 · 연출' })}</div>
-                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', de: 'Hyungyu Jang · Yujin Kim', pt: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
+                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', fr: 'Hyungyu Jang · Yujin Kim', de: 'Hyungyu Jang · Yujin Kim', pt: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
                         </div>
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Arte · Diseño', ja: 'アート・デザイン', en: 'Art · Design', fr: 'Art · Design', de: 'Kunst · Design', pt: 'Arte · Design', ko: '아트 · 디자인' })}</div>
-                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', de: 'Hyungyu Jang · Yujin Kim', pt: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
+                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', fr: 'Hyungyu Jang · Yujin Kim', de: 'Hyungyu Jang · Yujin Kim', pt: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
                         </div>
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Música · Sonido', ja: '音楽・サウンド', en: 'Music · Sound', fr: 'Musique · Son', de: 'Musik · Sound', pt: 'Música · Som', ko: '음악 · 사운드' })}</div>
-                            <div class="credits-name">${ct({ es: 'Hyungyu Jang', ja: 'Hyungyu Jang', en: 'Hyungyu Jang', de: 'Hyungyu Jang', pt: 'Hyungyu Jang', ko: '장현규' })}</div>
+                            <div class="credits-name">${ct({ es: 'Hyungyu Jang', ja: 'Hyungyu Jang', en: 'Hyungyu Jang', fr: 'Hyungyu Jang', de: 'Hyungyu Jang', pt: 'Hyungyu Jang', ko: '장현규' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
@@ -1225,7 +1225,7 @@ class GameEngine {
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">
                             <div class="credits-role">${ct({ es: 'Producción', ja: '制作', en: 'Production', fr: 'Produit par', de: 'Produktion', pt: 'Produção', ko: '제작' })}</div>
-                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', de: 'Hyungyu Jang · Yujin Kim', pt: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
+                            <div class="credits-name">${ct({ es: 'Hyungyu Jang · Yujin Kim', ja: 'Hyungyu Jang · Yujin Kim', en: 'Hyungyu Jang · Yujin Kim', fr: 'Hyungyu Jang · Yujin Kim', de: 'Hyungyu Jang · Yujin Kim', pt: 'Hyungyu Jang · Yujin Kim', ko: '장현규 · 김유진' })}</div>
                         </div>
                         <div class="credits-divider">─ ─ ─</div>
                         <div class="credits-section">

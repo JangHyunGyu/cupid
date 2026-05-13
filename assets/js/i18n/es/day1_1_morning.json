@@ -128,6 +128,18 @@
         "name": "{name}",
         "text": "¿Tienes un escondite secreto o algo?"
     },
+    "hallway_6_b": {
+        "name": "Seoyeon",
+        "text": "*Se detiene un instante* ...Qué ojo tienes."
+    },
+    "hallway_6_c": {
+        "name": "Seoyeon",
+        "text": "*El borde del portapapeles se mueve nuevamente un tiempo después.*"
+    },
+    "hallway_7": {
+        "name": "Seoyeon",
+        "text": "Ah, la hora del almuerzo. No sabes dónde queda el comedor, ¿verdad? Ven conmigo."
+    },
     "hallway_8": {
         "name": "{name}",
         "text": "*De repente tengo plan para almorzar. — Pero si yo no dije que sí. Llegamos al aula.*"
@@ -148,13 +160,33 @@
         "name": "Seoyeon",
         "text": "*Se da la vuelta y levanta la mano, un gesto mínimo. No mira atrás.*"
     },
+    "hallway_13_b": {
+        "name": "{name}",
+        "text": "*La espalda recta. Solo sus dedos se movían, golpeteando el borde de la carpeta a un ritmo constante.*"
+    },
     "classroom_1": {
         "name": "{name}",
         "text": "*Abro la puerta del aula. Las miradas se me vienen encima. Me lo esperaba, pero treinta pares de ojos pesan más de lo que creía.*"
     },
+    "classroom_2_b": {
+        "name": "{name}",
+        "text": "*La profesora está delante de la tarima. Finales de los veinte. Lleva el cárdigan abierto desde el principio. Cara indiferente, pero — los ojos van repasando a cada alumno uno por uno.*"
+    },
     "classroom_3": {
         "name": "Profesora",
         "text": "Bueno, desde hoy tenemos un alumno nuevo en clase. ¿Por qué no te presentas?"
+    },
+    "classroom_3_b": {
+        "name": "{name}",
+        "text": "Soy {name}. Encantado. *Corto y limpio. La profesora asiente.*"
+    },
+    "classroom_5_b": {
+        "name": "Profesora",
+        "text": "...Bien. {name}. Lo voy a recordar. *En voz baja, casi para sí misma* Soy de las que memoriza los nombres a la primera."
+    },
+    "classroom_5_c": {
+        "name": "{name}",
+        "text": "*El murmullo de la tutora se pierde entre el ruido del aula. En un rincón suena un silbido.*"
     },
     "classroom_dain_1": {
         "name": "Dain",
@@ -175,6 +207,18 @@
     "classroom_dain_5": {
         "name": "{name}",
         "text": "*De las que no saben controlar el volumen.*"
+    },
+    "classroom_dain_5_b": {
+        "name": "Profesora",
+        "text": "*La tutora dejó escapar un pequeño suspiro. Golpeteó la esquina de la lista de asistencia y buscó el siguiente nombre sin siquiera mirar hacia Dain.*"
+    },
+    "classroom_dain_5_c": {
+        "name": "Profesora",
+        "text": "...Guarda algo de energía. La primera clase ni ha empezado."
+    },
+    "classroom_dain_5_d": {
+        "name": "Profesora",
+        "text": "*Lo dice con sequedad, pero se le escapa una leve sonrisa ladeada.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -207,6 +251,10 @@
     "classroom_minsu_3": {
         "name": "{name}",
         "text": "¿Con qué?"
+    },
+    "classroom_minsu_2_b": {
+        "name": "Minsu",
+        "text": "*Señala a Dain con el mentón* De tu aguante."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",
@@ -255,53 +303,5 @@
     "classroom_yuna_note_6": {
         "name": "{name}",
         "text": "*Empieza la clase. Yuna vuelve a mirar por la ventana. Dain ya le está dando conversación al de al lado.*"
-    },
-    "hallway_6_b": {
-        "name": "Seoyeon",
-        "text": "*Se detiene un instante* ...Qué ojo tienes."
-    },
-    "hallway_6_c": {
-        "name": "Seoyeon",
-        "text": "*El borde del portapapeles se mueve nuevamente un tiempo después.*"
-    },
-    "hallway_7": {
-        "name": "Seoyeon",
-        "text": "Ah, la hora del almuerzo. No sabes dónde queda el comedor, ¿verdad? Ven conmigo."
-    },
-    "hallway_13_b": {
-        "name": "{name}",
-        "text": "*La espalda recta. Solo sus dedos se movían, golpeteando el borde de la carpeta a un ritmo constante.*"
-    },
-    "classroom_2_b": {
-        "name": "{name}",
-        "text": "*La profesora está delante de la tarima. Finales de los veinte. Lleva el cárdigan abierto desde el principio. Cara indiferente, pero — los ojos van repasando a cada alumno uno por uno.*"
-    },
-    "classroom_3_b": {
-        "name": "{name}",
-        "text": "Soy {name}. Encantado. *Corto y limpio. La profesora asiente.*"
-    },
-    "classroom_5_b": {
-        "name": "Profesora",
-        "text": "...Bien. {name}. Lo voy a recordar. *En voz baja, casi para sí misma* Soy de las que memoriza los nombres a la primera."
-    },
-    "classroom_5_c": {
-        "name": "{name}",
-        "text": "*El murmullo de la tutora se pierde entre el ruido del aula. En un rincón suena un silbido.*"
-    },
-    "classroom_dain_5_b": {
-        "name": "Profesora",
-        "text": "*La tutora dejó escapar un pequeño suspiro. Golpeteó la esquina de la lista de asistencia y buscó el siguiente nombre sin siquiera mirar hacia Dain.*"
-    },
-    "classroom_dain_5_c": {
-        "name": "Profesora",
-        "text": "...Guarda algo de energía. La primera clase ni ha empezado."
-    },
-    "classroom_dain_5_d": {
-        "name": "Profesora",
-        "text": "*Lo dice con sequedad, pero se le escapa una leve sonrisa ladeada.*"
-    },
-    "classroom_minsu_2_b": {
-        "name": "Minsu",
-        "text": "*Señala a Dain con el mentón* De tu aguante."
     }
 }

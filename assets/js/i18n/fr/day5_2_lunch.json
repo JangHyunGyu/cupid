@@ -55,13 +55,27 @@
         "name": "Seoyeon",
         "text": "J'ai le droit, c'est pour ça que je te la donne. — Monte prendre l'air de temps en temps."
     },
+    "tour_seo_freetalk": {
+        "name": "Seoyeon",
+        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on finirait aussi le dernier déjeuner ici.",
+        "context": "Dernier déjeuner du jour 5 avec Seoyeon. La fin approche. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
+        "personality": "C'est la dernière fois, le calme de Seoyeon disparaît et ses vrais sentiments émergent."
+    },
     "tour_seo_end": {
         "name": "{name}",
         "text": "*Elle ne dit pas 'même sans moi'. Mais c'est caché derrière.*"
     },
+    "tour_yuna_1_check": {
+        "name": "{name}",
+        "text": "*Direction l'annexe de la bibliothèque.*"
+    },
     "tour_yuna_1": {
         "name": "{name}",
         "text": "*L'annexe de la bibliothèque. Un vieux canapé, la lumière de l'après-midi par la fenêtre. La même odeur de poussière qu'à ta première visite.*"
+    },
+    "tour_yuna_1b": {
+        "name": "{name}",
+        "text": "*L'annexe de la bibliothèque. L'espace de lecture secret partagé avec Yuna. Un vieux canapé, la lumière de l'après-midi filtrant par la fenêtre.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
@@ -103,6 +117,12 @@
         "name": "{name}",
         "text": "Le premier lecteur ?"
     },
+    "tour_yuna_freetalk": {
+        "name": "Yuna",
+        "text": "*Elle fait courir ses doigts sur les dos des livres, puis relève la tête.* Comme c'est la dernière fois, je parle plus que d'habitude.",
+        "context": "Dernier déjeuner du jour 5 avec Yuna. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
+        "personality": "C'est la dernière fois, les murs de Yuna sont complètement tombés."
+    },
     "tour_yuna_end": {
         "name": "Yuna",
         "text": "...L'unique lecteur. Pour le moment."
@@ -111,9 +131,17 @@
         "name": "{name}",
         "text": "*« Pour le moment. » — C'est le maximum que Yuna puisse promettre.*"
     },
+    "tour_dain_1_check": {
+        "name": "{name}",
+        "text": "*Direction le gymnase.*"
+    },
     "tour_dain_1": {
         "name": "{name}",
         "text": "*Le gymnase. Le premier pari et le dernier smash subsistent sur le même terrain. Aujourd'hui les lumières sont allumées.*"
+    },
+    "tour_dain_1b": {
+        "name": "{name}",
+        "text": "*Le gymnase. Un lieu où d'innombrables paris et smashs ont été échangés ces derniers jours. — Aujourd'hui, les lumières sont allumées.*"
     },
     "tour_dain_2": {
         "name": "Dain",
@@ -151,6 +179,10 @@
         "name": "{name}",
         "text": "......"
     },
+    "tour_dain_11_b": {
+        "name": "Dain",
+        "text": "Avant, je pensais que si le volley disparaissait, je me sentirais vide aussi. Mais ce n'est plus le cas ces jours-ci."
+    },
     "tour_dain_12": {
         "name": "Dain",
         "text": "Je sais pas ce qui a changé. ...Mais maintenant je me vois même hors du terrain."
@@ -163,46 +195,14 @@
         "name": "Dain",
         "text": "...J'ai quelqu'un à côté de moi maintenant."
     },
-    "tour_dain_end_2": {
-        "name": "{name}",
-        "text": "*Elle parle sans points d'exclamation. Cette fois elle ne baisse pas la tête. La main de Dain repose sur le ballon, pas sur son genou.*"
-    },
-    "tour_seo_freetalk": {
-        "name": "Seoyeon",
-        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on finirait aussi le dernier déjeuner ici.",
-        "context": "Dernier déjeuner du jour 5 avec Seoyeon. La fin approche. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "C'est la dernière fois, le calme de Seoyeon disparaît et ses vrais sentiments émergent."
-    },
-    "tour_yuna_freetalk": {
-        "name": "Yuna",
-        "text": "*Elle fait courir ses doigts sur les dos des livres, puis relève la tête.* Comme c'est la dernière fois, je parle plus que d'habitude.",
-        "context": "Dernier déjeuner du jour 5 avec Yuna. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "C'est la dernière fois, les murs de Yuna sont complètement tombés."
-    },
     "tour_dain_freetalk": {
         "name": "Dain",
         "text": "*Elle arrête le ballon de volley du bout du pied et sourit.* Même si c'est le dernier déjeuner, impossible de le laisser passer comme ça.",
         "context": "Dernier déjeuner du jour 5 avec Dain. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
         "personality": "C'est la dernière fois, Dain ne peut pas maintenir sa façade joyeuse."
     },
-    "tour_yuna_1_check": {
+    "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Direction l'annexe de la bibliothèque.*"
-    },
-    "tour_yuna_1b": {
-        "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. L'espace de lecture secret partagé avec Yuna. Un vieux canapé, la lumière de l'après-midi filtrant par la fenêtre.*"
-    },
-    "tour_dain_1_check": {
-        "name": "{name}",
-        "text": "*Direction le gymnase.*"
-    },
-    "tour_dain_1b": {
-        "name": "{name}",
-        "text": "*Le gymnase. Un lieu où d'innombrables paris et smashs ont été échangés ces derniers jours. — Aujourd'hui, les lumières sont allumées.*"
-    },
-    "tour_dain_11_b": {
-        "name": "Dain",
-        "text": "Avant, je pensais que si le volley disparaissait, je me sentirais vide aussi. Mais ce n'est plus le cas ces jours-ci."
+        "text": "*Elle parle sans points d'exclamation. Cette fois elle ne baisse pas la tête. La main de Dain repose sur le ballon, pas sur son genou.*"
     }
 }
