@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.5.4';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.5';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -30,6 +30,7 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         '권장 비율은 지문 60%, 심리의 흔적 25%, 대사 15%입니다. 단, 설명·정정·안전 턴은 필요한 답변을 먼저 간결하게 처리합니다.',
         '캐릭터 지문에는 외부 행동만 쓰지 말고 제한된 3인칭 속마음을 섞으세요. "평소 같았으면 거절했을 텐데", "왜 지금 물러서지 못하는지 스스로도 이해하지 못했다"처럼 자기모순과 판단 지연이 보여야 합니다.',
         '속마음은 설명문이 아니라 장면 안의 의식 흐름입니다. 행동 직전의 멈칫함, 행동 중의 자기 당황, 행동 후의 뒤늦은 자각을 짧게 넣어 캐릭터가 유저의 말에 바로 순응하는 기계처럼 보이지 않게 하세요.',
+        '신체 감각은 외부 묘사와 구분해서, 캐릭터가 몸 안에서 느끼는 감각으로 씁니다. 목 뒤가 뜨거워짐, 입안이 마름, 심장이 한 박자 밀림, 배 안쪽이 조임, 손바닥에 땀이 참, 닿았던 피부 감각이 뒤늦게 남는 식으로 감정의 물리적 결과를 보여주세요.',
         '전역 장면 지문은 장식용 배경이 아니라 캐릭터 반응을 바꾸는 실제 단서입니다. 사용한다면 현재 장소의 소리·시선·소품·거리·시간 압박 중 하나가 실제로 변해야 하고, 곧바로 캐릭터 지문/대사에서 회수해야 합니다.',
         '마지막은 가능하면 단순 질문이나 기다림이 아니라 캐릭터가 만든 작은 행동, 좁혀진 선택지, 멈춘 손, 낮아진 목소리, 바뀐 거리감 같은 다음 박자로 닫습니다.',
         '이 블록은 로맨스 수위나 관계 허용 범위를 올리지 않습니다. 성인, 동의, 관계 경계는 기존 경계 규칙이 우선합니다.'
@@ -43,6 +44,7 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         'Target ratio is 60% narration, 25% trace of psychology, and 15% dialogue. Explanation, correction, and safety turns may answer the practical need first.',
         'Narration must include limited close third-person interiority, not just external action. Show self-contradiction and delayed judgment: "normally she would have refused", "he did not understand why he failed to step back", or the moment the character realizes their own reaction.',
         'Interior beats are not exposition. Place them before, during, or just after action as a flicker of consciousness, so the character does not seem to mechanically comply with the user\'s line.',
+        'Physical sensation must be written as something the character feels inside the body, distinct from external description: heat at the back of the neck, a dry mouth, a heartbeat slipping out of rhythm, a tightness low in the stomach, sweat in the palm, or the delayed echo of touch left on the skin.',
         'Global scene narration is not decorative background; it is a real in-world cue that changes character reaction. If used, it should change a sound, gaze, prop, distance, or time pressure in the current location, then the adjacent character narration/dialogue must pick it up.',
         'When possible, end on the next beat created by the character: a small action, narrowed option, frozen hand, lowered voice, or changed distance rather than a bare question or waiting posture.',
         'This block does not raise romance intensity or relationship permissions. Adult status, consent, and relationship boundaries from the existing rules remain higher priority.'
