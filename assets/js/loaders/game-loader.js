@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.12';
+    const version = '2.9.13';
 
     // =========================================================================
     // 언어 감지 (Language Detection)
@@ -299,22 +299,40 @@
         } catch (_) { return 'ctx-error'; }
     }
 
-    function _classifyError(msg, stack, src) {
+    function _hasAppStack(stack) {
+        return /\/assets\/js\/|\/assets\/|modules\/|scenario\/|index-(ko|en|es|ja|fr|de|pt)|game-(ko|en|es|ja|fr|de|pt)|index\.html|game\.html/.test(stack || '');
+    }
+
+    function _isOpaqueExternalRejection(type, msg, stack) {
+        if (type !== 'UnhandledRejection') return false;
+        if (_hasAppStack(stack)) return false;
+
+        var text = String(msg || '').trim();
+        // Google App / in-app browser injected scripts sometimes reject minified
+        // sentinel values such as "Yd" with stacks like "@" or "$i@".
+        if (/^[A-Za-z_$][\w$]{0,2}$/.test(text)) return true;
+        if (/^(\s*@\s*){1,4}$/.test(stack || '')) return true;
+        if (/^\s*(?:[A-Za-z_$][\w$]*@?\s*){1,4}$/.test(stack || '') && text.length <= 12) return true;
+        return false;
+    }
+
+    function _classifyError(type, msg, stack, src) {
         if (!msg) return 'noise';
         if (msg === 'Script error.' && !stack) return 'noise';
+        if (_isOpaqueExternalRejection(type, msg, stack)) return 'external';
         if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return 'noise';
         if (/ResizeObserver loop/.test(msg)) return 'noise';
         if (/window\.ethereum|window\.__firefox__/.test(msg)) return 'noise';
         if (/standardSelectors/.test(msg)) return 'noise';
         // External scripts
         if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return 'external';
-        if (src && /^undefined:/.test(src) && !(stack || '').match(/\/(assets|js|modules)\//)) return 'external';
+        if (src && /^undefined:/.test(src) && !_hasAppStack(stack)) return 'external';
         if (/Loading chunk|dynamically imported module/.test(msg)) return 'network';
         return 'app';
     }
 
     function _sendError(type, msg, stack, src) {
-        var errClass = _classifyError(msg, stack, src);
+        var errClass = _classifyError(type, msg, stack, src);
         if (!msg || errClass === 'noise' || errClass === 'external') return;
         var key = msg + '|' + src;
         if (key === _lastError) { _errorCount++; if (_errorCount > 5) return; }
