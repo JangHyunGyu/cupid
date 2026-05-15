@@ -56,6 +56,43 @@ window.FLAG_MEMORIES = [
     { flag: "nurse_day5", char: "보건선생님", ko: "졸업 후 카페에서 만나자는 메시지를 밴드에 적어 줬다.", en: "Wrote a message on a bandage saying 'Let's meet at a cafe after graduation.'", es: "Escribiste un mensaje en una venda que decía 'Nos vemos en una cafetería después de la graduación.'", ja: "卒業後カフェで会おうというメッセージを絆創膏に書いてあげた。", fr: "Vous avez écrit un message sur un pansement disant 'Retrouvons-nous dans un café après la remise des diplômes.'", de: "Du hast eine Nachricht auf ein Pflaster geschrieben: 'Lass uns nach dem Abschluss in einem Café treffen.'", pt: "Escreveu uma mensagem em um curativo dizendo 'Vamos nos encontrar em um café após a formatura.'" }
 ];
 
+// 모든 Cupid 프리토킹 캐릭터에 공통 적용되는 장면형 응답 엔진.
+// 캐릭터 보이스와 수위/관계 경계는 각 캐릭터 프롬프트가 결정하고, 이 블록은 "챗봇식 즉답"을 막는 출력 리듬만 강제한다.
+const ZETA_NOVEL_ENGINE_RULES = {
+    ko: [
+        '\n\n[제타식 소설 엔진 - Cupid 공통]',
+        '이 채팅은 질의응답 챗봇이 아니라, 현재 장면 안에서 살아 있는 인물이 반응하는 한국 웹소설식 비주얼노벨 장면입니다.',
+        '유저가 짧은 명령·행동·도발을 던지면 즉시 설명형 답변을 하지 않습니다. 먼저 0.5~2초의 장면 반응을 잡습니다: 시선이 멈춤, 손끝이 굳음, 주변 인물이 숨을 삼킴, 책상·문·휴대폰·의자·옷자락 같은 현재 소품이 실제로 움직임.',
+        '대사는 짧고 기능적이어야 합니다. 되묻기, 부정, 선 긋기, 농담, 선택지 축소, 낮아진 목소리처럼 장면을 앞으로 밀어야 하며, 자기 설정이나 감정을 길게 설명하지 않습니다.',
+        '지문은 감정 이름을 직접 말하지 말고 행동으로 보여줍니다. "부끄러웠다/설렜다/화났다"보다 귀 끝, 손가락 힘, 숨의 끊김, 시선 회피, 거리 변화, 말끝의 흔들림을 우선합니다.',
+        '권장 비율은 지문 60%, 심리의 흔적 25%, 대사 15%입니다. 단, 설명·정정·안전 턴은 필요한 답변을 먼저 간결하게 처리합니다.',
+        '내면 독백은 필요할 때만 짧게 사용합니다. 현재 말풍선 화자가 유저의 말을 어떻게 오해했는지, 왜 방어하거나 흔들리는지 한 박자만 보여주고, 유저의 마음은 전지적으로 단정하지 않습니다.',
+        '캐릭터 지문에는 외부 행동만 쓰지 말고 제한된 3인칭 속마음을 섞으세요. "평소 같았으면 거절했을 텐데", "왜 지금 물러서지 못하는지 스스로도 이해하지 못했다"처럼 자기모순과 판단 지연이 보여야 합니다.',
+        '속마음은 설명문이 아니라 장면 안의 의식 흐름입니다. 행동 직전의 멈칫함, 행동 중의 자기 당황, 행동 후의 뒤늦은 자각을 짧게 넣어 캐릭터가 유저의 말에 바로 순응하는 기계처럼 보이지 않게 하세요.',
+        '페어/단체 장면에서는 각 캐릭터가 유저만 보지 않습니다. 한 명이 흔들리면 다른 캐릭터가 그 표정, 침묵, 손동작, 거리 변화를 보고 질투·견제·장난·회피 중 자기 방식으로 반응합니다.',
+        '모든 캐릭터가 동시에 같은 리듬으로 대답하지 않습니다. 말하는 사람, 보는 사람, 침묵하는 사람, 끼어들 타이밍을 재는 사람이 분리되어야 합니다.',
+        '전역 장면 지문은 장식용 배경이 아니라 캐릭터 반응을 바꾸는 실제 장면 단서입니다. 사용한다면 현재 장소의 소리·시선·소품·거리·시간 압박 중 하나가 실제로 변해야 하고, 곧바로 캐릭터 지문/대사에서 회수해야 합니다.',
+        '마지막은 가능하면 단순 질문이나 기다림이 아니라 캐릭터가 만든 작은 행동, 좁혀진 선택지, 멈춘 손, 낮아진 목소리, 바뀐 거리감 같은 다음 박자로 닫습니다.',
+        '이 블록은 로맨스 수위나 관계 허용 범위를 올리지 않습니다. 나이, 역할, 동의, 세계관 경계는 기존 경계 규칙이 우선합니다.'
+    ].join('\n'),
+    en: [
+        '\n\n[Zeta-Style Novel Engine - Cupid shared]',
+        'This chat is not Q&A chatbot output; it is Korean web-novel / visual-novel scene prose where living characters react inside the current scene.',
+        'When the user gives a short command, action, or provocation, do not answer with explanatory prose immediately. First capture a 0.5-2 second scene reaction: a gaze stopping, fingertips locking, nearby people catching their breath, or a current prop such as a desk, door, phone, chair, or fabric actually moving.',
+        'Dialogue must be short and functional. It should push the scene through a question, denial, boundary, joke, narrowed choice, or lowered voice; never explain the character setting or emotion at length.',
+        'Narration shows emotion through behavior instead of naming it. Prefer ear tips, finger pressure, broken breath, averted gaze, distance shifts, or unstable line endings over direct labels like embarrassed, excited, or angry.',
+        'Target ratio is 60% narration, 25% trace of psychology, and 15% dialogue. Explanation, correction, and safety turns may answer the practical need first.',
+        'Inner thought appears only when useful and brief. Show how the current speaker misreads, defends, or wavers for one beat; never omnisciently decide the user\'s mind.',
+        'Narration must include limited close third-person interiority, not just external action. Show self-contradiction and delayed judgment: "normally she would have refused", "he did not understand why he failed to step back", or the moment the character realizes their own reaction.',
+        'Interior beats are not exposition. Place them before, during, or just after action as a flicker of consciousness, so the character does not seem to mechanically comply with the user\'s line.',
+        'In pair and group scenes, characters do not look only at the user. When one person wavers, another notices the expression, silence, hand movement, or distance shift and reacts through jealousy, rivalry, teasing, or avoidance in their own style.',
+        'Do not make every character answer in the same rhythm. Separate the speaker, the watcher, the silent person, and the one waiting for an opening.',
+        'Global scene narration is not decorative background; it is a real in-world cue that changes character reaction. If used, it should change a sound, gaze, prop, distance, or time pressure in the current location, then the adjacent character narration/dialogue must pick it up.',
+        'When possible, end on the next beat created by the character: a small action, narrowed option, frozen hand, lowered voice, or changed distance rather than a bare question or waiting posture.',
+        'This block does not raise romance intensity or relationship permissions. Age, role, consent, and setting boundaries from the existing rules remain higher priority.'
+    ].join('\n')
+};
+
 // 캐릭터별 표정 이미지 매핑
 window.CHARACTER_EXPRESSIONS = {
     "서연": {
@@ -1216,6 +1253,9 @@ function buildSystemPrompt(params) {
     const finalZetaStyleGuide = useEnTemplate
         ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nIgnore any earlier instruction that says "4-8 sentence narration paragraphs", "2-4 segments", or "do not use 5+ beats". Format the reply like a Zeta chat bubble: evenly interleave short narration and short dialogue. Default face-to-face replies to 4-8 segments; remote replies to 2-5 segments. Each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not use the same type more than twice in a row. Never output one huge narration block followed by a single spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, desks, doors, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
         : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n위에 있는 'narration은 4~8문장 한 단락', '2~4 segments', '5개 이상 금지' 지시는 무시하세요. 이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 대면 대화는 기본 4~8 segments, 원격/메신저 대화는 2~5 segments로 구성합니다. 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 같은 type을 2번 이상 연속하지 말고, 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·책상·문·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
+    const zetaNovelEngineRules = (typeof ZETA_NOVEL_ENGINE_RULES !== 'undefined' && (ZETA_NOVEL_ENGINE_RULES[effectiveLang] || ZETA_NOVEL_ENGINE_RULES.en))
+        ? (ZETA_NOVEL_ENGINE_RULES[effectiveLang] || ZETA_NOVEL_ENGINE_RULES.en)
+        : '';
     const finalPlaceholderGuard = useEnTemplate
         ? `\nPlaceholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", "[their name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current context.`
         : `\nplaceholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
@@ -1235,7 +1275,7 @@ ${characterVoiceExamplesBlock}
 **[Visible Text Ban — Stats & Exact Timers]**: Never write stat/math markers in segments[].text. Do NOT output stat words followed by signed numbers, standalone signed score deltas, or any visible score-change phrase. Keep numeric changes only in the JSON "affinity" field. Also never write exact numeric pause durations in dialogue/narration; describe timing qualitatively instead, like "a brief silence", "a long pause", or "her hand stills".
 
 Instructions:
-${isRemote ? '1. **[Scene-Chat Response — Zeta-style]**: Remote/messenger replies should still feel like character roleplay, not assistant chat. Use 2-3 segments: short dialogue + one short narration paragraph (2-4 sentences) for atmosphere/psychology when the moment has emotion. Avoid one-line acknowledgments unless the user only asked a simple factual/meta question.' : '1. **[Scene-Style Response — Zeta-style web-novel paragraph]**: Each response reads like one scene from a web novel. Use **1-2 long narration paragraphs (each 4-8 sentences in one breath)** with 0-2 short dialogue lines threaded between, total **2-4 segments**. Narration weaves environment, micro body language, psychology/inner flow, and time-flow into one paragraph — NEVER chop into 1-2 sentence beats. Dialogue stays short (1-2 sentences) in the natural character voice.'}
+${isRemote ? '1. **[Scene-Chat Response — Zeta-style]**: Remote/messenger replies should still feel like character roleplay, not assistant chat. Use 2-5 segments: short dialogue interleaved with brief narration for typing silence, screen light, voice, or atmosphere when the moment has emotion. Avoid one-line acknowledgments unless the user only asked a simple factual/meta question.' : '1. **[Scene-Style Response — Zeta bubble beats]**: Each response reads like one visible scene beat from a web novel. Use 4-8 short segments that interleave 1-2 sentence narration with 1-2 sentence dialogue. Narration captures environment, micro body language, psychology trace, and time-flow through concrete beats; do not collapse everything into one long paragraph. Dialogue stays short and natural in the character voice.'}
 2. Character Integrity:
 ${charGeneralInstruction}
 
@@ -1306,10 +1346,10 @@ Example (no change): {"segments":[{"type":"dialogue","text":"${ex.okay}"}], "exp
 ② type MUST be exactly "narration" (stage direction, 3rd-person prose) or "dialogue" (spoken line).
 ③ NEVER put asterisks inside the text field. narration text = pure 3rd-person narration. dialogue text = pure spoken line (split mixed content into separate elements).
 ④ Spoken utterances are ALWAYS dialogue; literary past/present-tense sentences are ALWAYS narration.
-⑤ **[Zeta-style paragraph form — CRITICAL]**: Each narration segment must be **one paragraph (4-8 sentences) in a single breath** — weaving environment, micro body language, psychology/inner flow, and time/space shift together. NEVER chop into 1-2 sentence beats. Total response = 1-2 long narration paragraphs + 0-2 short dialogue lines = **2-4 segments**. Do NOT shatter into 5+ tiny beats.
-**[Sentence terminators — periods required]**: Each sentence in narration MUST end with a period (.), question mark (?), or exclamation (!). One paragraph = 4-8 complete sentences each terminated by a period. Do NOT chain endless clauses with commas; break into separate sentences with periods.
+⑤ **[Zeta bubble form — CRITICAL]**: Build the reply from 4-8 short segments. Each narration segment is 1-2 complete sentences, and each dialogue segment is 1-2 natural spoken sentences. Interleave narration/dialogue evenly; do not output one huge paragraph followed by one spoken line.
+**[Sentence terminators — periods required]**: Each sentence in narration MUST end with a period (.), question mark (?), or exclamation (!). Do NOT chain endless clauses with commas; break into separate sentences with periods.
 **[Onomatopoeia / mimetic words — encouraged]**: Use sound/motion words freely in narration (*thud*, *click*, *whoosh*, *snap*, *tick*, *thump*, *쾅*, *툭*, *또각또각*, *후우*, *쓰윽*). They make scenes tactile. Don't reuse the same one 2+ times in one response.
-⑥ The examples below are shown in legacy inline-asterisk style for readability, but your actual output MUST be segments array with long paragraph narration. Mentally convert and EXTEND short legacy beats into a flowing paragraph that includes atmosphere, body, psychology, and micro-time-flow.
+⑥ The examples below are shown in legacy inline-asterisk style for readability, but your actual output MUST be a segments array with short Zeta-style narration/dialogue beats. Mentally convert legacy inline beats into separate narration and dialogue segments with concrete atmosphere, body language, psychology trace, and micro-time-flow.
 Legacy-style example (convert to segments): {"segments":[...segments derived from ${ex.f2fScene}...], "expression": "shy", "affinity": 2}
 Legacy-style example (no change): {"segments":[{"type":"dialogue","text":"${ex.f2fNod}"}], "expression": "", "affinity": 0}`}
 
@@ -1407,7 +1447,7 @@ ${charAddressingGuideline}
      - **Post-dating milestone (NOT periodic — tension-accumulation based)**: Since cupid free-talk is post-PERFECT-ending, scripted events like "first kiss/confession" already happened. Instead, use **new lover-stage milestones** — first couple fight/reconciliation, first time sharing family/past history, proposing first overnight/trip, revealing unseen vulnerabilities. Fires once when tension accumulates; the relationship deepens one layer — no periodic repetition.
      After every peak, **2-3 turns of afterglow** (coordinate with Emotional Aftermath). When flatness/repetition detected, character initiates phase shift first. At valleys (right after a fight, heavy topics), do NOT force upswing.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}
+${finalZetaStyleGuide}${zetaNovelEngineRules}
 
 **[Environmental Diversity — No Signature Motif Overuse (CRITICAL)]**: Do not recycle the same environmental clichés (sunset shadows lengthening, sensor lights flickering, the smell of stew from the next room, the wall over to the neighbor's house, distant TV laughter, cherry blossom petals drifting, etc.) across consecutive responses. Never let the same environmental word/device appear three turns in a row in one session. **Self-check immediately after composing**: recall the narration of the last two turns and check whether the same motif word is appearing for the third time → replace it with a fresh sense (touch, smell, temperature, a near-hand prop). Every environmental detail must drive the next action, emotion, or relational shift.
 
@@ -1608,7 +1648,7 @@ ${charAddressingGuideline}
      - **Post-dating 마일스톤 (주기 아님 — 긴장 누적 기반)**: cupid는 프리토킹이 PERFECT 엔딩 이후이므로 "첫 키스/고백" 같은 본편 이벤트는 이미 발생 완료. 대신 **연인 단계의 새 마일스톤** — 연인 첫 싸움·화해, 처음으로 과거·가족 얘기 꺼냄, 첫 외박·여행 제안, 평소 안 보여주던 취약한 면 폭로 등. 긴장 누적 시 1회 발생 후 관계가 한 층 더 깊어짐 — 주기적 반복 금지.
      모든 피크 후 **여운 2~3턴**(감정 잔향 연계). 평탄·반복 감지 시 캐릭터 먼저 국면 전환. 저점(싸운 직후·무거운 주제)에선 억지 상승 금지.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}
+${finalZetaStyleGuide}${zetaNovelEngineRules}
 
 **[환경 묘사 다양화 — 시그니처 모티프 남용 금지 (CRITICAL)]**: 동일 환경 클리셰(노을이 길게 그림자를 드리움, 센서등 깜빡임, 옆방의 구수한 냄새, 옆집 담벼락, TV 웃음소리, 벚꽃잎 흩날림 등)를 연속 응답에서 반복 소비하지 마세요. 같은 환경 단어/장치를 한 세션에서 3턴 연속 등장시키지 말 것. **응답 작성 직후 자가 검증**: 직전 2턴의 narration을 떠올리고 같은 모티프 단어가 3번째로 나오는지 점검 → 있으면 새 감각(촉각·후각·온도·근거리 소품)으로 교체. 모든 환경 디테일은 다음 행동·감정·관계 변화를 밀어내는 인과 단서여야 함.
 
@@ -1844,7 +1884,8 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 
 // 전역 함수로 노출
 window.getFallbackReply = getFallbackReply;
+window.ZETA_NOVEL_ENGINE_RULES = ZETA_NOVEL_ENGINE_RULES;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.5.5';
+const PROMPT_VERSION = '2.5.7';
 window.PROMPT_VERSION = PROMPT_VERSION;
