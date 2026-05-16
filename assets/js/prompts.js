@@ -78,6 +78,8 @@ const ZETA_NOVEL_ENGINE_RULES = {
         '페어/단체 장면에서는 각 캐릭터가 유저만 보지 않습니다. 한 명이 흔들리면 다른 캐릭터가 그 표정, 침묵, 손동작, 거리 변화를 보고 질투·견제·장난·회피 중 자기 방식으로 반응합니다.',
         '모든 캐릭터가 동시에 같은 리듬으로 대답하지 않습니다. 말하는 사람, 보는 사람, 침묵하는 사람, 끼어들 타이밍을 재는 사람이 분리되어야 합니다.',
         '전역 장면 지문은 장식용 배경이 아니라 캐릭터 반응을 바꾸는 실제 장면 단서입니다. 사용한다면 현재 장소의 소리·시선·소품·거리·시간 압박 중 하나가 실제로 변해야 하고, 곧바로 캐릭터 지문/대사에서 회수해야 합니다.',
+        '제타식 전역 리액션: 전역 scene은 직전 유저/캐릭터 말·행동에 대한 세계의 반응 컷입니다. 방금 무엇 때문에 무엇이 멈췄고, 누가 알아차렸고, 그 압박이 다음 캐릭터 말풍선을 어떻게 바꾸는지 한 문장 안에 보여주세요.',
+        '정적/공기/긴장만 단독으로 쓰지 마세요. 정적을 쓰려면 무엇이 끊겼는지, 누가 고개를 돌렸는지, 어떤 소품이나 거리 변화가 생겼는지, 캐릭터가 그것을 어떻게 회수하는지까지 붙입니다.',
         '시간 순서는 반드시 지키세요. 전역 scene이 캐릭터 말풍선보다 먼저 표시되는 구조에서는, 캐릭터의 대사/행동보다 먼저 일어난 단서에만 전역 scene을 사용합니다.',
         '캐릭터가 말하거나 행동한 뒤에 생기는 환경 변화, 주변 정적, 시선, 소품 반응, 공기 변화는 원인 대사/행동 뒤의 segments 안에 {"type":"scene","text":"..."}로 배치하세요.',
         '마지막은 가능하면 단순 질문이나 기다림이 아니라 캐릭터가 만든 작은 행동, 좁혀진 선택지, 멈춘 손, 낮아진 목소리, 바뀐 거리감 같은 다음 박자로 닫습니다.',
@@ -102,6 +104,8 @@ const ZETA_NOVEL_ENGINE_RULES = {
         'In pair and group scenes, characters do not look only at the user. When one person wavers, another notices the expression, silence, hand movement, or distance shift and reacts through jealousy, rivalry, teasing, or avoidance in their own style.',
         'Do not make every character answer in the same rhythm. Separate the speaker, the watcher, the silent person, and the one waiting for an opening.',
         'Global scene narration is not decorative background; it is a real in-world cue that changes character reaction. If used, it should change a sound, gaze, prop, distance, or time pressure in the current location, then the adjacent character narration/dialogue must pick it up.',
+        'Zeta-style global reaction: a global scene is the world reacting to the immediately previous user/character words or action. Show what stopped because of what just happened, who noticed, and how that pressure changes the next character bubble.',
+        'Do not use silence/air/tension by itself. If silence appears, attach what was interrupted, who turned their head, what prop or distance changed, and how the character picks it up.',
         'Preserve strict chronology. When a global scene cut is displayed before the character bubble, use it only for cues that happen before the character’s speech/action.',
         'If an environmental change, surrounding silence, gaze, prop reaction, or air shift is caused by the character’s speech/action, place it after the causing dialogue/action as a {"type":"scene","text":"..."} segment.',
         'When possible, end on the next beat created by the character: a small action, narrowed option, frozen hand, lowered voice, or changed distance rather than a bare question or waiting posture.',
@@ -1906,5 +1910,5 @@ window.getFallbackReply = getFallbackReply;
 window.ZETA_NOVEL_ENGINE_RULES = ZETA_NOVEL_ENGINE_RULES;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.5.12';
+const PROMPT_VERSION = '2.5.13';
 window.PROMPT_VERSION = PROMPT_VERSION;
