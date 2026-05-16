@@ -628,7 +628,16 @@ class FreeTalkSystem {
 
             // OpenAI API 응답 구조에서 대답 텍스트 추출
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
-            let reply = data?.choices?.[0]?.message?.content?.trim();
+            const replyContent = data?.choices?.[0]?.message?.content;
+            let reply = typeof replyContent === 'string' ? replyContent.trim() : '';
+
+            if (!reply) {
+                console.warn('[Cupid FreeTalk] Empty AI response payload:', {
+                    reason: data?.reason || data?.error || data?.choices?.[0]?.finish_reason || 'EMPTY_AI_RESPONSE',
+                    character: charKey || ''
+                });
+                throw new Error('AI response was empty. Please try again.');
+            }
 
             // JSON 응답 파싱 → {text, expression, affinity} 구조체 반환
             const parsed = this.parseJsonResponse(reply);
