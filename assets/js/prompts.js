@@ -1267,11 +1267,14 @@ function buildSystemPrompt(params) {
             : `\n\n**[캐릭터 상황별 말투 예시 — 복사 금지, 말투·속도·질투/거절/다정함 리듬만 추출]**\n${characterVoiceExamples}`)
         : '';
     const finalZetaStyleGuide = useEnTemplate
-        ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nIgnore any earlier instruction that says "4-8 sentence narration paragraphs", "2-4 segments", or "do not use 5+ beats". Format the reply like a Zeta chat bubble: evenly interleave short narration and short dialogue. Default face-to-face replies to 4-8 segments; remote replies to 2-5 segments. Each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not use the same type more than twice in a row. Never output one huge narration block followed by a single spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, desks, doors, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
-        : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n위에 있는 'narration은 4~8문장 한 단락', '2~4 segments', '5개 이상 금지' 지시는 무시하세요. 이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 대면 대화는 기본 4~8 segments, 원격/메신저 대화는 2~5 segments로 구성합니다. 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 같은 type을 2번 이상 연속하지 말고, 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·책상·문·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
+        ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nIgnore any earlier instruction that says "4-8 sentence narration paragraphs", "2-4 segments", or "do not use 5+ beats". Format the reply like a Zeta chat bubble: evenly interleave short narration and short dialogue. Default face-to-face replies to 4-8 segments; remote replies to 2-5 segments. Each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not use the same type more than twice in a row. Never output one huge narration block followed by a single spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, desks, doors, phone light, footsteps, short sound/motion words. Anchor emotion in visible action and scene details, then allow a brief limited close-third-person inner consequence when it sharpens the character's reaction.`
+        : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n위에 있는 'narration은 4~8문장 한 단락', '2~4 segments', '5개 이상 금지' 지시는 무시하세요. 이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 대면 대화는 기본 4~8 segments, 원격/메신저 대화는 2~5 segments로 구성합니다. 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 같은 type을 2번 이상 연속하지 말고, 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·책상·문·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 행동과 장면 디테일에 먼저 붙이고, 캐릭터 반응이 선명해지는 순간에는 제한된 3인칭 내면 결과를 짧게 겹치세요.`;
     const zetaNovelEngineRules = (typeof ZETA_NOVEL_ENGINE_RULES !== 'undefined' && (ZETA_NOVEL_ENGINE_RULES[effectiveLang] || ZETA_NOVEL_ENGINE_RULES.en))
         ? (ZETA_NOVEL_ENGINE_RULES[effectiveLang] || ZETA_NOVEL_ENGINE_RULES.en)
         : '';
+    const finalInteriorityGuard = useEnTemplate
+        ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
+        : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
     const finalPlaceholderGuard = useEnTemplate
         ? `\nPlaceholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", "[their name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current context.`
         : `\nplaceholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
@@ -1463,7 +1466,7 @@ ${charAddressingGuideline}
      - **Post-dating milestone (NOT periodic — tension-accumulation based)**: Since cupid free-talk is post-PERFECT-ending, scripted events like "first kiss/confession" already happened. Instead, use **new lover-stage milestones** — first couple fight/reconciliation, first time sharing family/past history, proposing first overnight/trip, revealing unseen vulnerabilities. Fires once when tension accumulates; the relationship deepens one layer — no periodic repetition.
      After every peak, **2-3 turns of afterglow** (coordinate with Emotional Aftermath). When flatness/repetition detected, character initiates phase shift first. At valleys (right after a fight, heavy topics), do NOT force upswing.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}${zetaNovelEngineRules}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
 
 **[Environmental Diversity — No Signature Motif Overuse (CRITICAL)]**: Do not recycle the same environmental clichés (sunset shadows lengthening, sensor lights flickering, the smell of stew from the next room, the wall over to the neighbor's house, distant TV laughter, cherry blossom petals drifting, etc.) across consecutive responses. Never let the same environmental word/device appear three turns in a row in one session. **Self-check immediately after composing**: recall the narration of the last two turns and check whether the same motif word is appearing for the third time → replace it with a fresh sense (touch, smell, temperature, a near-hand prop). Every environmental detail must drive the next action, emotion, or relational shift.
 
@@ -1664,7 +1667,7 @@ ${charAddressingGuideline}
      - **Post-dating 마일스톤 (주기 아님 — 긴장 누적 기반)**: cupid는 프리토킹이 PERFECT 엔딩 이후이므로 "첫 키스/고백" 같은 본편 이벤트는 이미 발생 완료. 대신 **연인 단계의 새 마일스톤** — 연인 첫 싸움·화해, 처음으로 과거·가족 얘기 꺼냄, 첫 외박·여행 제안, 평소 안 보여주던 취약한 면 폭로 등. 긴장 누적 시 1회 발생 후 관계가 한 층 더 깊어짐 — 주기적 반복 금지.
      모든 피크 후 **여운 2~3턴**(감정 잔향 연계). 평탄·반복 감지 시 캐릭터 먼저 국면 전환. 저점(싸운 직후·무거운 주제)에선 억지 상승 금지.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}${zetaNovelEngineRules}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
 
 **[환경 묘사 다양화 — 시그니처 모티프 남용 금지 (CRITICAL)]**: 동일 환경 클리셰(노을이 길게 그림자를 드리움, 센서등 깜빡임, 옆방의 구수한 냄새, 옆집 담벼락, TV 웃음소리, 벚꽃잎 흩날림 등)를 연속 응답에서 반복 소비하지 마세요. 같은 환경 단어/장치를 한 세션에서 3턴 연속 등장시키지 말 것. **응답 작성 직후 자가 검증**: 직전 2턴의 narration을 떠올리고 같은 모티프 단어가 3번째로 나오는지 점검 → 있으면 새 감각(촉각·후각·온도·근거리 소품)으로 교체. 모든 환경 디테일은 다음 행동·감정·관계 변화를 밀어내는 인과 단서여야 함.
 
@@ -1903,5 +1906,5 @@ window.getFallbackReply = getFallbackReply;
 window.ZETA_NOVEL_ENGINE_RULES = ZETA_NOVEL_ENGINE_RULES;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.5.11';
+const PROMPT_VERSION = '2.5.12';
 window.PROMPT_VERSION = PROMPT_VERSION;
