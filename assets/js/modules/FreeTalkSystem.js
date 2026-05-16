@@ -610,9 +610,16 @@ class FreeTalkSystem {
             // [슬라이딩 윈도우] system + 누적 요약 주입 + 최근 N개 메시지만 전송 (토큰 폭증 방지)
             const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(), charKey);
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
-            const _optimized = (typeof window.optimizeImageHistory === 'function')
+            let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_windowed, 5)
                 : _windowed;
+            const _outsideCueOverride = this._buildLatestOutsideCueNarrationOverride(finalContent);
+            if (_outsideCueOverride && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
+                _optimized = [
+                    { ..._optimized[0], content: `${_optimized[0].content}${_outsideCueOverride}` },
+                    ..._optimized.slice(1)
+                ];
+            }
             const response = await fetch(API_ENDPOINT, {
                 method: "POST",
                 headers: { "Content-Type": "application/json", "x-app-type": "cupid", ...(_cacheKey && { "x-cache-key": _cacheKey }) },
@@ -893,6 +900,38 @@ class FreeTalkSystem {
         if (rest.length <= this.HISTORY_WINDOW) return this.freeTalkHistory;
 
         return [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
+    }
+
+    _buildLatestOutsideCueNarrationOverride(content) {
+        const text = String(content || '')
+            .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
+            .replace(/https?:\/\/\S+/g, ' ')
+            .toLowerCase()
+            .replace(/\s+/g, ' ')
+            .trim();
+        if (!text) return '';
+
+        const outsideCuePattern = /(문(?:틈|밖|앞|너머|소리|을|이|에|로|에서|두드|열리|닫히)|노크|발소리|또각|웅성|수군|복도|주변|시선|쳐다|눈길|알림|진동|벨|전화|메시지|문자|초침|시계|시간|마감|소품|책상|의자|문서|서류|봉투|카드|창밖|door|knock|footstep|hallway|corridor|gaze|stare|glance|murmur|whisper|notification|phone|vibration|message|clock|timer|deadline|prop|desk|chair|paper|envelope|card|window)/i;
+        if (!outsideCuePattern.test(text)) return '';
+
+        const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
+        if (lang === 'ko') {
+            return `
+
+**[이번 턴 런타임 장면 단서 OVERRIDE]**
+최신 유저 입력에는 캐릭터 반응보다 먼저 발생한 외부 장면 단서가 있습니다. Cupid 프리토킹 출력 형식은 narration/dialogue만 허용하므로, 이번 응답은 그 단서를 첫 1~2개 segments 안의 비어 있지 않은 narration으로 먼저 회수하세요.
+- 문소리, 발소리, 주변 시선, 알림, 시간 압박, 놓인 소품 변화 중 실제 입력에 있는 단서가 움직이는 순간을 씁니다.
+- 그 다음 narration/dialogue에서 현재 캐릭터가 그 단서를 알아차리고 몸/내면 반응을 거친 뒤 짧게 말하게 하세요.
+- scene 타입, sceneNarration 필드, 단일 text 필드, 임의 키를 새로 만들지 말고 기존 JSON segments 계약만 지키세요.`;
+        }
+
+        return `
+
+**[Runtime scene-cue override for this turn]**
+The latest user input contains an outside scene cue that happens before the character reacts. Cupid free-talk allows narration/dialogue only, so this response must pick up that cue as a non-empty narration segment within the first 1-2 segments.
+- Use the actual input cue moving: door sound, footsteps, surrounding gaze, notification, time pressure, or a placed prop change.
+- Then let the current character notice it, show body/interior reaction, and speak a short line.
+- Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
     }
 
     /**

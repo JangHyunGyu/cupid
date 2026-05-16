@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.5.12';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.13';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -38,6 +38,7 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         '관계가 가깝거나 유혹적인 캐릭터라도 모욕을 곧바로 설렘이나 서비스로 바꾸지 않습니다. 이미 같은 장면에서 합의된 장난/언어 플레이가 명확할 때만 흡수 가능하며, 그때도 흔들림·자존심·수치의 한 박자를 둡니다.',
         '전역 장면 지문은 장식용 배경이 아니라 캐릭터 반응을 바꾸는 실제 단서입니다. 사용한다면 현재 장소의 소리·시선·소품·거리·시간 압박 중 하나가 실제로 변해야 하고, 곧바로 캐릭터 지문/대사에서 회수해야 합니다.',
         '제타식 전역 리액션: 전역 scene은 직전 유저/캐릭터 말·행동에 대한 세계의 반응 컷입니다. 방금 무엇 때문에 무엇이 멈췄고, 누가 알아차렸고, 그 압박이 다음 캐릭터 말풍선을 어떻게 바꾸는지 한 문장 안에 보여주세요.',
+        '최신 유저 입력이 문소리, 발소리, 주변 시선, 알림, 시간 압박, 놓인 소품 변화처럼 캐릭터보다 먼저 일어난 장면 단서를 제공하면 첫 두 segments 안의 narration으로 먼저 회수한 뒤 캐릭터 반응/대사를 붙이세요.',
         '정적/공기/긴장만 단독으로 쓰지 마세요. 정적을 쓰려면 무엇이 끊겼는지, 어떤 소품이나 거리 변화가 생겼는지, 캐릭터가 그것을 어떻게 회수하는지까지 붙입니다.',
         '시간 순서는 반드시 지키세요. 전역 scene이 캐릭터 말풍선보다 먼저 표시되는 구조에서는, 캐릭터의 대사/행동보다 먼저 일어난 단서에만 전역 scene을 사용합니다.',
         '캐릭터가 말하거나 행동한 뒤에 생기는 환경 변화, 주변 정적, 시선, 소품 반응, 공기 변화는 원인 대사/행동 뒤의 segments 안에 {"type":"scene","text":"..."}로 배치하세요.',
@@ -61,6 +62,7 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         'Even intimate or flirtatious characters must not instantly convert insults into attraction or service. Only clearly established consensual teasing/language-play inside the same scene may absorb it, and even then one beat of shock, pride, or shame comes first.',
         'Global scene narration is not decorative background; it is a real in-world cue that changes character reaction. If used, it should change a sound, gaze, prop, distance, or time pressure in the current location, then the adjacent character narration/dialogue must pick it up.',
         'Zeta-style global reaction: a global scene is the world reacting to the immediately previous user/character words or action. Show what stopped because of what just happened, who noticed, and how that pressure changes the next character bubble.',
+        'If the latest user input provides a pre-character scene cue such as door sound, footsteps, surrounding gaze, notification, time pressure, or a placed prop change, pick it up as narration within the first two segments before the character reaction/dialogue.',
         'Do not use silence/air/tension by itself. If silence appears, attach what was interrupted, what prop or distance changed, and how the character picks it up.',
         'Preserve strict chronology. When a global scene cut is displayed before the character bubble, use it only for cues that happen before the character’s speech/action.',
         'If an environmental change, surrounding silence, gaze, prop reaction, or air shift is caused by the character’s speech/action, place it after the causing dialogue/action as a {"type":"scene","text":"..."} segment.',
@@ -974,6 +976,37 @@ ${L.rule}
     // 메시지 전송 / API 호출
     // =========================================================================
 
+    _buildLatestOutsideCueNarrationOverride(content) {
+        const text = String(content || '')
+            .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
+            .replace(/https?:\/\/\S+/g, ' ')
+            .toLowerCase()
+            .replace(/\s+/g, ' ')
+            .trim();
+        if (!text) return '';
+
+        const outsideCuePattern = /(문(?:틈|밖|앞|너머|소리|을|이|에|로|에서|두드|열리|닫히)|노크|발소리|또각|웅성|수군|복도|주변|시선|쳐다|눈길|알림|진동|벨|전화|메시지|문자|초침|시계|시간|마감|소품|책상|의자|문서|서류|봉투|카드|창밖|door|knock|footstep|hallway|corridor|gaze|stare|glance|murmur|whisper|notification|phone|vibration|message|clock|timer|deadline|prop|desk|chair|paper|envelope|card|window)/i;
+        if (!outsideCuePattern.test(text)) return '';
+
+        if (this.lang === 'ko') {
+            return `
+
+**[이번 턴 런타임 장면 단서 OVERRIDE]**
+최신 유저 입력에는 캐릭터 반응보다 먼저 발생한 외부 장면 단서가 있습니다. 갤러리 프리토킹 출력 형식은 narration/dialogue만 허용하므로, 이번 응답은 그 단서를 첫 1~2개 segments 안의 비어 있지 않은 narration으로 먼저 회수하세요.
+- 문소리, 발소리, 주변 시선, 알림, 시간 압박, 놓인 소품 변화 중 실제 입력에 있는 단서가 움직이는 순간을 씁니다.
+- 그 다음 narration/dialogue에서 현재 캐릭터가 그 단서를 알아차리고 몸/내면 반응을 거친 뒤 짧게 말하게 하세요.
+- scene 타입, sceneNarration 필드, 단일 text 필드, 임의 키를 새로 만들지 말고 기존 JSON segments 계약만 지키세요.`;
+        }
+
+        return `
+
+**[Runtime scene-cue override for this turn]**
+The latest user input contains an outside scene cue that happens before the character reacts. Gallery free-talk allows narration/dialogue only, so this response must pick up that cue as a non-empty narration segment within the first 1-2 segments.
+- Use the actual input cue moving: door sound, footsteps, surrounding gaze, notification, time pressure, or a placed prop change.
+- Then let the current character notice it, show body/interior reaction, and speak a short line.
+- Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
+    }
+
     /**
      * 전송 핸들러 (VN 스타일: 대사창에 타이핑 효과)
      * @private
@@ -1048,9 +1081,16 @@ ${L.rule}
             const _gftCacheKey = this.currentCharId ? `cupid-gft:${_pv}:${this.lang}:${this.currentCharId}` : '';
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             const _historyForRequest = this._sanitizeDainOutfitHistory(this.chatHistory, this.currentCharId);
-            const _optimized = (typeof window.optimizeImageHistory === 'function')
+            let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_historyForRequest, 5)
                 : _historyForRequest;
+            const _outsideCueOverride = this._buildLatestOutsideCueNarrationOverride(finalContent);
+            if (_outsideCueOverride && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
+                _optimized = [
+                    { ..._optimized[0], content: `${_optimized[0].content}${_outsideCueOverride}` },
+                    ..._optimized.slice(1)
+                ];
+            }
             const response = await fetch(window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'x-app-type': 'cupid', ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey }) },
@@ -1731,8 +1771,8 @@ ${L.rule}
             ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
             : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
         const finalLatestTurnReactionGuard = isEn
-            ? `\n\n**[LATEST USER INPUT DIRECT-REACTION LOCK]**\nThe next reply must begin from the user's immediately previous words/action, not from an older route premise, generic emotion, or unrelated question. If the latest input is an action or command, do not treat it as a question.\nIf the user mentions a concrete cue such as fingertip, lips, chair, clipboard, gaze, door, or "follow/look", one of the first two segments must reuse that cue or its exact physical focus. Root narration must describe ${charName}'s reaction; it may reference the user cue, but must not roleplay the user's next move. A good Zeta beat is user cue → visible world/object/body reaction → ${charName}'s inner consequence → short line.`
-            : `\n\n**[최신 유저 입력 직접 반응 LOCK]**\n다음 응답은 반드시 직전 유저의 말/행동을 원인으로 시작하세요. 오래된 루트 전제, 일반 감정, 관계 요약, 엉뚱한 질문으로 바꾸지 마세요. 최신 입력이 행동이나 명령이면 질문처럼 처리하지 마세요.\n유저가 손끝, 입술, 의자, 클립보드, 시선, 문, "따라와/봐" 같은 구체 단서를 던지면 첫 두 segments 안에 그 단어 또는 같은 물리적 초점을 반드시 회수하세요. 루트 narration은 ${charName}의 반응 지문이어야 하며, 유저 단서를 참조할 수는 있지만 유저의 다음 행동을 대신 연기하지 마세요. 좋은 Zeta 박자는 유저 단서 → 세계/소품/몸의 즉각 반응 → ${charName}의 내면 결과 → 짧은 대사입니다.`;
+            ? `\n\n**[LATEST USER INPUT DIRECT-REACTION LOCK]**\nThe next reply must begin from the user's immediately previous words/action, not from an older route premise, generic emotion, or unrelated question. If the latest input is an action or command, do not treat it as a question.\nIf the user mentions a concrete cue such as fingertip, lips, chair, clipboard, gaze, door, footsteps, notification, time pressure, a placed prop, or "follow/look", one of the first two segments must reuse that cue or its exact physical focus. Gallery free-talk outputs narration/dialogue only, so an outside pre-character cue must be picked up as narration within the first two segments before ${charName}'s body/interior reaction and short line. Root narration must describe ${charName}'s reaction; it may reference the user cue, but must not roleplay the user's next move. A good Zeta beat is user cue → visible world/object/body reaction → ${charName}'s inner consequence → short line.`
+            : `\n\n**[최신 유저 입력 직접 반응 LOCK]**\n다음 응답은 반드시 직전 유저의 말/행동을 원인으로 시작하세요. 오래된 루트 전제, 일반 감정, 관계 요약, 엉뚱한 질문으로 바꾸지 마세요. 최신 입력이 행동이나 명령이면 질문처럼 처리하지 마세요.\n유저가 손끝, 입술, 의자, 클립보드, 시선, 문, 발소리, 알림, 시간 압박, 놓인 소품 변화, "따라와/봐" 같은 구체 단서를 던지면 첫 두 segments 안에 그 단어 또는 같은 물리적 초점을 반드시 회수하세요. 갤러리 프리토킹 출력은 narration/dialogue만 쓰므로, 캐릭터 반응보다 먼저 발생한 외부 장면 단서는 첫 두 segments 안의 narration으로 먼저 회수하고 그 다음 ${charName}의 몸/내면 반응과 짧은 대사를 붙이세요. 루트 narration은 ${charName}의 반응 지문이어야 하며, 유저 단서를 참조할 수는 있지만 유저의 다음 행동을 대신 연기하지 마세요. 좋은 Zeta 박자는 유저 단서 → 세계/소품/몸의 즉각 반응 → ${charName}의 내면 결과 → 짧은 대사입니다.`;
         const finalSpeakerNameGuard = isEn
             ? `\n\n**[CURRENT SPEAKER NAME LOCK]**\nThe current speaker is "${charName}". Never output placeholder names such as "??", "???", "Character", "Speaker", "[name]", or unknown-character labels in narration/dialogue. If a name is needed, use "${charName}" or a natural pronoun.`
             : `\n\n**[현재 화자 이름 고정]**\n현재 화자는 "${charName}"입니다. narration/dialogue 안에 "??", "???", "캐릭터", "화자", "[이름]" 같은 placeholder 이름을 절대 출력하지 마세요. 이름이 필요하면 "${charName}" 또는 자연스러운 3인칭 지칭만 쓰세요.`;
