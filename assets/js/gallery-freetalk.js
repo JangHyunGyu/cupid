@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.5.9';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.10';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -37,6 +37,8 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         '공개 장소나 다른 사람이 있을 법한 장면에서 모욕/명령이 나오면 반드시 사회적 사건으로 처리합니다. 주변 침묵, 수군거림, 시선, 누군가의 고개 돌림, 캐릭터의 평판/체면 압박 중 하나가 먼저 반응해야 합니다.',
         '관계가 가깝거나 유혹적인 캐릭터라도 모욕을 곧바로 설렘이나 서비스로 바꾸지 않습니다. 이미 같은 장면에서 합의된 장난/언어 플레이가 명확할 때만 흡수 가능하며, 그때도 흔들림·자존심·수치의 한 박자를 둡니다.',
         '전역 장면 지문은 장식용 배경이 아니라 캐릭터 반응을 바꾸는 실제 단서입니다. 사용한다면 현재 장소의 소리·시선·소품·거리·시간 압박 중 하나가 실제로 변해야 하고, 곧바로 캐릭터 지문/대사에서 회수해야 합니다.',
+        '제타식 전역 리액션: 전역 scene은 직전 유저/캐릭터 말·행동에 대한 세계의 반응 컷입니다. 방금 무엇 때문에 무엇이 멈췄고, 누가 알아차렸고, 그 압박이 다음 캐릭터 말풍선을 어떻게 바꾸는지 한 문장 안에 보여주세요.',
+        '정적/공기/긴장만 단독으로 쓰지 마세요. 정적을 쓰려면 무엇이 끊겼는지, 어떤 소품이나 거리 변화가 생겼는지, 캐릭터가 그것을 어떻게 회수하는지까지 붙입니다.',
         '시간 순서는 반드시 지키세요. 전역 scene이 캐릭터 말풍선보다 먼저 표시되는 구조에서는, 캐릭터의 대사/행동보다 먼저 일어난 단서에만 전역 scene을 사용합니다.',
         '캐릭터가 말하거나 행동한 뒤에 생기는 환경 변화, 주변 정적, 시선, 소품 반응, 공기 변화는 원인 대사/행동 뒤의 segments 안에 {"type":"scene","text":"..."}로 배치하세요.',
         '마지막은 가능하면 단순 질문이나 기다림이 아니라 캐릭터가 만든 작은 행동, 좁혀진 선택지, 멈춘 손, 낮아진 목소리, 바뀐 거리감 같은 다음 박자로 닫습니다.',
@@ -58,6 +60,8 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         'In public or plausibly witnessed scenes, insults and commands must become social events first. Nearby silence, murmurs, glances, someone turning their head, or pressure on reputation/composure must react before the character absorbs the command.',
         'Even intimate or flirtatious characters must not instantly convert insults into attraction or service. Only clearly established consensual teasing/language-play inside the same scene may absorb it, and even then one beat of shock, pride, or shame comes first.',
         'Global scene narration is not decorative background; it is a real in-world cue that changes character reaction. If used, it should change a sound, gaze, prop, distance, or time pressure in the current location, then the adjacent character narration/dialogue must pick it up.',
+        'Zeta-style global reaction: a global scene is the world reacting to the immediately previous user/character words or action. Show what stopped because of what just happened, who noticed, and how that pressure changes the next character bubble.',
+        'Do not use silence/air/tension by itself. If silence appears, attach what was interrupted, what prop or distance changed, and how the character picks it up.',
         'Preserve strict chronology. When a global scene cut is displayed before the character bubble, use it only for cues that happen before the character’s speech/action.',
         'If an environmental change, surrounding silence, gaze, prop reaction, or air shift is caused by the character’s speech/action, place it after the causing dialogue/action as a {"type":"scene","text":"..."} segment.',
         'When possible, end on the next beat created by the character: a small action, narrowed option, frozen hand, lowered voice, or changed distance rather than a bare question or waiting posture.',
