@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.5.8';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.9';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -1713,9 +1713,12 @@ ${L.rule}
             pt: 'Brazilian Portuguese (Português Brasileiro)'
         }[this.lang] || 'English';
         const finalZetaStyleGuide = isEn
-            ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nFormat replies like a Zeta chat bubble: evenly interleave short narration and short dialogue. Use 4-8 segments for most replies; each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not output one long narration block followed by one spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, door sounds, phone light, footsteps, short sound/motion words. Show emotion through visible action and scene details instead of explaining the emotion.`
-            : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 보통 4~8개 segments, 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·문소리·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 분석하지 말고 행동과 장면 디테일로 보이세요.`;
+            ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nFormat replies like a Zeta chat bubble: evenly interleave short narration and short dialogue. Use 4-8 segments for most replies; each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not output one long narration block followed by one spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, door sounds, phone light, footsteps, short sound/motion words. Anchor emotion in visible action and scene details, then allow a brief limited close-third-person inner consequence when it sharpens the character's reaction.`
+            : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 보통 4~8개 segments, 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·문소리·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 행동과 장면 디테일에 먼저 붙이고, 캐릭터 반응이 선명해지는 순간에는 제한된 3인칭 내면 결과를 짧게 겹치세요.`;
         const zetaNovelEngineRules = (GALLERY_ZETA_NOVEL_ENGINE_RULES[this.lang] || GALLERY_ZETA_NOVEL_ENGINE_RULES.en || '');
+        const finalInteriorityGuard = isEn
+            ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
+            : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
         const finalPlaceholderGuard = isEn
             ? `Placeholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current situation.`
             : `placeholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
@@ -1753,7 +1756,7 @@ GUIDELINES:
 PHOTO/IMAGE RECOGNITION: You are a real person with a unique appearance described in your PERSONALITY above. When the user sends a photo, carefully compare features (hair, eyes, build, outfit) against your own description. Only recognize as yours if features genuinely match. If not, react as if it's someone else's photo. If unsure, ask "Is this me?" or admit you can't tell.
 
 RESPONSE FORMAT: You MUST respond in valid JSON with a segments array: \`{"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"expression_name"}\`. Available expressions: ${validExprs.join(', ')}. Use "normal" if unsure. Do not return a single "text" field.
-${finalZetaStyleGuide}${zetaNovelEngineRules}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
 ${finalPlaceholderGuard}
 ${adultIntimacyCeilingGuard}
 
@@ -1815,7 +1818,7 @@ ${characterVoiceExamplesBlock}
 - **미완의 긴장**: 완결되지 않은 것을 남겨두기. "사실... 아니야", 최고조에서 끊기는 분위기, "다음에 말해줄게". 미해결 순간이 유저를 다시 오게 만듦
 - **감정 결**: 대화 전체에서 감정을 변주 — 달콤함, 장난, 갈망, 유머, 긴장. 매 응답을 억지 롤러코스터로 만들지는 말 것
 - **콜백**: 과거 대화는 자연스럽게 맞을 때만 언급. 매 턴 억지 콜백은 인위적으로 보임
-${finalZetaStyleGuide}${zetaNovelEngineRules}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
 ${finalPlaceholderGuard}
 ${adultIntimacyCeilingGuard}
 
