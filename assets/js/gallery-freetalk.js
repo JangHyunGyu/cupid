@@ -1060,9 +1060,16 @@ ${L.rule}
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
             const data = await response.json();
-            const reply = data?.choices?.[0]?.message?.content?.trim();
+            const replyContent = data?.choices?.[0]?.message?.content;
+            const reply = typeof replyContent === 'string' ? replyContent.trim() : '';
 
-            if (!reply) throw new Error('Empty response');
+            if (!reply) {
+                console.warn('[Cupid GalleryFreeTalk] Empty AI response payload:', {
+                    reason: data?.reason || data?.error || data?.choices?.[0]?.finish_reason || 'EMPTY_AI_RESPONSE',
+                    character: this.currentCharId || ''
+                });
+                throw new Error('AI response was empty. Please try again.');
+            }
 
             // 응답 파싱
             const parsed = this._parseResponse(reply);
