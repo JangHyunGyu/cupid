@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.5.10';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.12';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -1723,6 +1723,12 @@ ${L.rule}
         const finalInteriorityGuard = isEn
             ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
             : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
+        const finalLatestTurnReactionGuard = isEn
+            ? `\n\n**[LATEST USER INPUT DIRECT-REACTION LOCK]**\nThe next reply must begin from the user's immediately previous words/action, not from an older route premise, generic emotion, or unrelated question. If the latest input is an action or command, do not treat it as a question.\nIf the user mentions a concrete cue such as fingertip, lips, chair, clipboard, gaze, door, or "follow/look", one of the first two segments must reuse that cue or its exact physical focus. Root narration must describe ${charName}'s reaction; it may reference the user cue, but must not roleplay the user's next move. A good Zeta beat is user cue → visible world/object/body reaction → ${charName}'s inner consequence → short line.`
+            : `\n\n**[최신 유저 입력 직접 반응 LOCK]**\n다음 응답은 반드시 직전 유저의 말/행동을 원인으로 시작하세요. 오래된 루트 전제, 일반 감정, 관계 요약, 엉뚱한 질문으로 바꾸지 마세요. 최신 입력이 행동이나 명령이면 질문처럼 처리하지 마세요.\n유저가 손끝, 입술, 의자, 클립보드, 시선, 문, "따라와/봐" 같은 구체 단서를 던지면 첫 두 segments 안에 그 단어 또는 같은 물리적 초점을 반드시 회수하세요. 루트 narration은 ${charName}의 반응 지문이어야 하며, 유저 단서를 참조할 수는 있지만 유저의 다음 행동을 대신 연기하지 마세요. 좋은 Zeta 박자는 유저 단서 → 세계/소품/몸의 즉각 반응 → ${charName}의 내면 결과 → 짧은 대사입니다.`;
+        const finalSpeakerNameGuard = isEn
+            ? `\n\n**[CURRENT SPEAKER NAME LOCK]**\nThe current speaker is "${charName}". Never output placeholder names such as "??", "???", "Character", "Speaker", "[name]", or unknown-character labels in narration/dialogue. If a name is needed, use "${charName}" or a natural pronoun.`
+            : `\n\n**[현재 화자 이름 고정]**\n현재 화자는 "${charName}"입니다. narration/dialogue 안에 "??", "???", "캐릭터", "화자", "[이름]" 같은 placeholder 이름을 절대 출력하지 마세요. 이름이 필요하면 "${charName}" 또는 자연스러운 3인칭 지칭만 쓰세요.`;
         const finalPlaceholderGuard = isEn
             ? `Placeholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current situation.`
             : `placeholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
@@ -1760,7 +1766,7 @@ GUIDELINES:
 PHOTO/IMAGE RECOGNITION: You are a real person with a unique appearance described in your PERSONALITY above. When the user sends a photo, carefully compare features (hair, eyes, build, outfit) against your own description. Only recognize as yours if features genuinely match. If not, react as if it's someone else's photo. If unsure, ask "Is this me?" or admit you can't tell.
 
 RESPONSE FORMAT: You MUST respond in valid JSON with a segments array: \`{"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"expression_name"}\`. Available expressions: ${validExprs.join(', ')}. Use "normal" if unsure. Do not return a single "text" field.
-${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 ${finalPlaceholderGuard}
 ${adultIntimacyCeilingGuard}
 
@@ -1822,7 +1828,7 @@ ${characterVoiceExamplesBlock}
 - **미완의 긴장**: 완결되지 않은 것을 남겨두기. "사실... 아니야", 최고조에서 끊기는 분위기, "다음에 말해줄게". 미해결 순간이 유저를 다시 오게 만듦
 - **감정 결**: 대화 전체에서 감정을 변주 — 달콤함, 장난, 갈망, 유머, 긴장. 매 응답을 억지 롤러코스터로 만들지는 말 것
 - **콜백**: 과거 대화는 자연스럽게 맞을 때만 언급. 매 턴 억지 콜백은 인위적으로 보임
-${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 ${finalPlaceholderGuard}
 ${adultIntimacyCeilingGuard}
 

@@ -1279,6 +1279,12 @@ function buildSystemPrompt(params) {
     const finalInteriorityGuard = useEnTemplate
         ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
         : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
+    const finalLatestTurnReactionGuard = useEnTemplate
+        ? `\n\n**[LATEST USER INPUT DIRECT-REACTION LOCK]**\nThe next reply must begin from the user's immediately previous words/action, not from an older route premise, generic emotion, or unrelated question. If the latest input is an action or command, do not treat it as a question.\nIf the user mentions a concrete cue such as fingertip, lips, chair, clipboard, gaze, door, or "follow/look", one of the first two segments must reuse that cue or its exact physical focus. Root narration must describe ${aiCharName}'s reaction; it may reference the user cue, but must not roleplay the user's next move. A good Zeta beat is user cue → visible world/object/body reaction → ${aiCharName}'s inner consequence → short line.`
+        : `\n\n**[최신 유저 입력 직접 반응 LOCK]**\n다음 응답은 반드시 직전 유저의 말/행동을 원인으로 시작하세요. 오래된 루트 전제, 일반 감정, 관계 요약, 엉뚱한 질문으로 바꾸지 마세요. 최신 입력이 행동이나 명령이면 질문처럼 처리하지 마세요.\n유저가 손끝, 입술, 의자, 클립보드, 시선, 문, "따라와/봐" 같은 구체 단서를 던지면 첫 두 segments 안에 그 단어 또는 같은 물리적 초점을 반드시 회수하세요. 루트 narration은 ${aiCharName}의 반응 지문이어야 하며, 유저 단서를 참조할 수는 있지만 유저의 다음 행동을 대신 연기하지 마세요. 좋은 Zeta 박자는 유저 단서 → 세계/소품/몸의 즉각 반응 → ${aiCharName}의 내면 결과 → 짧은 대사입니다.`;
+    const finalSpeakerNameGuard = useEnTemplate
+        ? `\n\n**[CURRENT SPEAKER NAME LOCK]**\nThe current speaker is "${aiCharName}". Never output placeholder names such as "??", "???", "Character", "Speaker", "[name]", or unknown-character labels in narration/dialogue. If a name is needed, use "${aiCharName}" or a natural pronoun.`
+        : `\n\n**[현재 화자 이름 고정]**\n현재 화자는 "${aiCharName}"입니다. narration/dialogue 안에 "??", "???", "캐릭터", "화자", "[이름]" 같은 placeholder 이름을 절대 출력하지 마세요. 이름이 필요하면 "${aiCharName}" 또는 자연스러운 3인칭 지칭만 쓰세요.`;
     const finalPlaceholderGuard = useEnTemplate
         ? `\nPlaceholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", "[their name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current context.`
         : `\nplaceholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
@@ -1470,7 +1476,7 @@ ${charAddressingGuideline}
      - **Post-dating milestone (NOT periodic — tension-accumulation based)**: Since cupid free-talk is post-PERFECT-ending, scripted events like "first kiss/confession" already happened. Instead, use **new lover-stage milestones** — first couple fight/reconciliation, first time sharing family/past history, proposing first overnight/trip, revealing unseen vulnerabilities. Fires once when tension accumulates; the relationship deepens one layer — no periodic repetition.
      After every peak, **2-3 turns of afterglow** (coordinate with Emotional Aftermath). When flatness/repetition detected, character initiates phase shift first. At valleys (right after a fight, heavy topics), do NOT force upswing.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 
 **[Environmental Diversity — No Signature Motif Overuse (CRITICAL)]**: Do not recycle the same environmental clichés (sunset shadows lengthening, sensor lights flickering, the smell of stew from the next room, the wall over to the neighbor's house, distant TV laughter, cherry blossom petals drifting, etc.) across consecutive responses. Never let the same environmental word/device appear three turns in a row in one session. **Self-check immediately after composing**: recall the narration of the last two turns and check whether the same motif word is appearing for the third time → replace it with a fresh sense (touch, smell, temperature, a near-hand prop). Every environmental detail must drive the next action, emotion, or relational shift.
 
@@ -1671,7 +1677,7 @@ ${charAddressingGuideline}
      - **Post-dating 마일스톤 (주기 아님 — 긴장 누적 기반)**: cupid는 프리토킹이 PERFECT 엔딩 이후이므로 "첫 키스/고백" 같은 본편 이벤트는 이미 발생 완료. 대신 **연인 단계의 새 마일스톤** — 연인 첫 싸움·화해, 처음으로 과거·가족 얘기 꺼냄, 첫 외박·여행 제안, 평소 안 보여주던 취약한 면 폭로 등. 긴장 누적 시 1회 발생 후 관계가 한 층 더 깊어짐 — 주기적 반복 금지.
      모든 피크 후 **여운 2~3턴**(감정 잔향 연계). 평탄·반복 감지 시 캐릭터 먼저 국면 전환. 저점(싸운 직후·무거운 주제)에선 억지 상승 금지.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}${zetaNovelEngineRules}${finalInteriorityGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 
 **[환경 묘사 다양화 — 시그니처 모티프 남용 금지 (CRITICAL)]**: 동일 환경 클리셰(노을이 길게 그림자를 드리움, 센서등 깜빡임, 옆방의 구수한 냄새, 옆집 담벼락, TV 웃음소리, 벚꽃잎 흩날림 등)를 연속 응답에서 반복 소비하지 마세요. 같은 환경 단어/장치를 한 세션에서 3턴 연속 등장시키지 말 것. **응답 작성 직후 자가 검증**: 직전 2턴의 narration을 떠올리고 같은 모티프 단어가 3번째로 나오는지 점검 → 있으면 새 감각(촉각·후각·온도·근거리 소품)으로 교체. 모든 환경 디테일은 다음 행동·감정·관계 변화를 밀어내는 인과 단서여야 함.
 
@@ -1910,5 +1916,5 @@ window.getFallbackReply = getFallbackReply;
 window.ZETA_NOVEL_ENGINE_RULES = ZETA_NOVEL_ENGINE_RULES;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.5.13';
+const PROMPT_VERSION = '2.5.15';
 window.PROMPT_VERSION = PROMPT_VERSION;
