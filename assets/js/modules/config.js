@@ -7,7 +7,8 @@
  * 모든 모듈이 이 파일에 정의된 상수들을 참조하므로, 가장 먼저 로드되어야 합니다.
  *
  * 【포함 내용】
- * - API_ENDPOINT              : AI 채팅 서버 주소
+ * - API_ENDPOINT              : 서비스 API 서버 주소
+ * - AI_API_ENDPOINT           : AI 채팅 서버 주소
  * - ASSET_VERSION             : 에셋 캐시 버스팅용 버전 번호
  * - DEFAULT_MAX_FREE_TALK_TURNS : 프리토킹 기본 최대 턴 수
  * - SEND_ICON                 : 채팅 전송 버튼 SVG 아이콘
@@ -32,11 +33,16 @@
 // ============================================================================
 
 /**
- * AI 채팅 API 엔드포인트
- * - Cloudflare Worker에서 동작하는 AI 채팅 서버 주소
- * - FreeTalkSystem에서 이 주소로 HTTP POST 요청을 보내 AI 응답을 받아옵니다
+ * 서비스 API 엔드포인트
+ * - 이미지 업로드, 로그 저장 등 서비스성 요청에 사용합니다
  */
 const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
+
+/**
+ * AI 채팅 API 엔드포인트
+ * - FreeTalkSystem에서 이 주소로 HTTP POST 요청을 보내 AI 응답을 받아옵니다
+ */
+const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
 
 /**
  * 에셋 버전 번호
@@ -44,7 +50,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.25";
+const ASSET_VERSION = "2.9.26";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -437,6 +443,7 @@ function optimizeImageHistory(messages, recentCount = 5) {
 // 다른 모듈 파일에서 window.XXX 형태로도 접근할 수 있도록 명시적으로 할당합니다.
 
 window.API_ENDPOINT = API_ENDPOINT;
+window.AI_API_ENDPOINT = AI_API_ENDPOINT;
 window.ASSET_VERSION = ASSET_VERSION;
 window.DEFAULT_MAX_FREE_TALK_TURNS = DEFAULT_MAX_FREE_TALK_TURNS;
 window.SEND_ICON = SEND_ICON;
