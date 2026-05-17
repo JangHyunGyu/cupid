@@ -1909,6 +1909,7 @@ ${otherRelationships}
             [/school-uniform hem/gi, 'sweatshirt hem'],
             [/school-uniform sleeve/gi, 'black arm sleeve'],
             [/school skirt/gi, 'track pants'],
+            [/school uniform/gi, 'sporty streetwear'],
             [/student uniform/gi, 'sporty streetwear']
         ];
 
