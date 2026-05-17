@@ -369,7 +369,7 @@ class FreeTalkSystem {
             sceneName: charKey,
             displayName: scene.name,
             locationName,
-            context: scene.context || ({ es: "Hablando con el usuario.", ja: "ユーザーと会話中です。", en: "Talking with the user.", fr: "En conversation avec l'utilisateur.", de: "Im Gespräch mit dem Benutzer.", pt: "Conversando com o usuário." }[lang] || "사용자와 대화 중입니다."),
+            context: scene.context || ({ es: "Continuando la escena con el protagonista.", ja: "主人公の挿入に続いて場面を進行中です。", en: "Continuing the scene from the protagonist's latest insert.", fr: "La scène continue après l'insertion du protagoniste.", de: "Die Szene wird nach dem Einsatz des Protagonisten fortgesetzt.", pt: "Continuando a cena após a inserção do protagonista." }[lang] || "주인공의 삽입에 이어 장면을 진행 중입니다."),
             affinity: charStats.affinity,
             extraGuideline: scene.extra_guideline || "",
             gameContext,
@@ -467,7 +467,7 @@ class FreeTalkSystem {
         if (!this.isFreeTalking) return;
 
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-        const confirmMsg = { es: "¿Detener la conversación y continuar?", ja: "会話を中断して次のシーンに進みますか？", en: "Stop the conversation and proceed?", fr: "Arrêter la conversation et continuer ?", de: "Gespräch beenden und fortfahren?", pt: "Parar a conversa e continuar?" }[lang] || "대화를 중단하고 다음 장면으로 넘어가시겠습니까?";
+        const confirmMsg = { es: "¿Cerrar esta inserción de escena y continuar?", ja: "この場面挿入を終了して次のシーンに進みますか？", en: "Close this scene insert and proceed?", fr: "Terminer cette insertion de scène et continuer ?", de: "Diesen Szeneneinsatz beenden und fortfahren?", pt: "Encerrar esta inserção de cena e continuar?" }[lang] || "이 장면 삽입을 끝내고 다음 장면으로 넘어가시겠습니까?";
 
         const confirmed = await this.uiManager.showModal(confirmMsg);
         if (confirmed) {
@@ -481,7 +481,7 @@ class FreeTalkSystem {
             this.isFreeTalking = false;
             this.isProcessingChat = false;
 
-            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A conversa terminou. Clique para continuar.)" }[lang] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "<br><br>(La inserción de escena ha terminado.)", ja: "<br><br>（場面挿入が終了しました。）", en: "<br><br>(Scene insert ended. Click to continue.)", fr: "<br><br>(L'insertion de scène est terminée.)", de: "<br><br>(Szeneneinsatz beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A inserção de cena terminou. Clique para continuar.)" }[lang] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
         }
     }
@@ -1426,7 +1426,7 @@ The latest user input contains an outside scene cue that happens before the char
 
             // 종료 안내 메시지
             const langEnd = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const endMsg = { es: "<br><br>(La conversación ha terminado.)", ja: "<br><br>（会話が終了しました。）", en: "<br><br>(Conversation ended. Click to continue.)", fr: "<br><br>(La conversation est terminée.)", de: "<br><br>(Gespräch beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A conversa terminou. Clique para continuar.)" }[langEnd] || "<br><br>(대화가 종료되었습니다. 화면을 클릭하여 계속하세요.)";
+            const endMsg = { es: "<br><br>(La inserción de escena ha terminado.)", ja: "<br><br>（場面挿入が終了しました。）", en: "<br><br>(Scene insert ended. Click to continue.)", fr: "<br><br>(L'insertion de scène est terminée.)", de: "<br><br>(Szeneneinsatz beendet. Klicke, um fortzufahren.)", pt: "<br><br>(A inserção de cena terminou. Clique para continuar.)" }[langEnd] || "<br><br>(장면 삽입이 종료되었습니다. 화면을 클릭하여 계속하세요.)";
             this.uiManager.messageEl.innerHTML += endMsg;
         }, 500);
     }
