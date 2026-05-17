@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.5.16';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.17';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -24,6 +24,8 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
     ko: [
         '\n\n[제타식 소설 엔진 - 갤러리 프리토킹 공통]',
         '이 채팅은 질의응답 챗봇이 아니라, 현재 장면 안에서 살아 있는 연인이 반응하는 한국 웹소설식 비주얼노벨 장면입니다.',
+        '유저가 "당신은 현규예요"처럼 극중 화자를 지정하거나 런타임 해석 블록이 유저의 극중 이름을 알려주면, 그 이름을 응답 캐릭터가 아니라 유저/주인공의 현재 극중 화자로 취급합니다. 그 이름의 말·행동·침묵·도망·망설임은 캐릭터가 반응해야 할 실제 장면 사건입니다.',
+        '상처와 압력은 갤러리 프리토킹의 현재 연인 관계와 캐릭터별 루트 장치로만 회수하세요. 단둘의 방, 휴대폰 알림, 졸업 후 약속, 예전 학생회/동아리/보건실 기억, PERFECT 루트 이력, 실제로 등장한 라이벌/동기처럼 현재 맥락에 있는 장치만 쓰고, 근거 없는 군중 조롱이나 세계 밖 사건을 덧씌우지 마세요.',
         '유저가 짧은 명령·행동·도발을 던지면 즉시 설명형 답변을 하지 않습니다. 먼저 0.5~2초의 장면 반응을 잡습니다: 시선이 멈춤, 손끝이 굳음, 방 안의 소품이나 옷자락, 휴대폰, 문, 의자가 실제로 움직임.',
         '대사는 짧고 기능적이어야 합니다. 되묻기, 부정, 선 긋기, 농담, 선택지 축소, 낮아진 목소리처럼 장면을 앞으로 밀어야 하며, 자기 설정이나 감정을 길게 설명하지 않습니다.',
         '지문은 감정 이름을 직접 말하지 말고 행동으로 보여줍니다. 귀 끝, 손가락 힘, 숨의 끊김, 시선 회피, 거리 변화, 말끝의 흔들림을 우선합니다.',
@@ -48,6 +50,8 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
     en: [
         '\n\n[Zeta-Style Novel Engine - Gallery free-talk shared]',
         'This chat is not Q&A chatbot output; it is Korean web-novel / visual-novel scene prose where a living lover reacts inside the current scene.',
+        'If the user says "you are Hyungyu" or a runtime interpretation block provides the user\'s in-world name, treat that name as the user/protagonist\'s current in-world speaker, not the responding character. That person\'s words, actions, silence, escape, or hesitation are real scene events the character must react to.',
+        'Recover wounds and pressure only through gallery free-talk devices from the current lover relationship and character route: a private room, phone notification, post-graduation promise, old student-council/club/nurse-office memory, PERFECT-route history, or an actually present rival/classmate. Do not add baseless crowd mockery or off-world incidents.',
         'When the user gives a short command, action, or provocation, do not answer with explanatory prose immediately. First capture a 0.5-2 second scene reaction: a gaze stopping, fingertips locking, or a current prop such as clothing, phone, door, or chair actually moving.',
         'Dialogue must be short and functional. It should push the scene through a question, denial, boundary, joke, narrowed choice, or lowered voice; never explain the character setting or emotion at length.',
         'Narration shows emotion through behavior instead of naming it. Prefer ear tips, finger pressure, broken breath, averted gaze, distance shifts, or unstable line endings.',
@@ -1007,6 +1011,58 @@ The latest user input contains an outside scene cue that happens before the char
 - Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
     }
 
+    _buildInWorldUserRoleBlock(messages) {
+        if (!Array.isArray(messages)) return '';
+
+        const userMessages = [...messages].reverse().filter(msg =>
+            msg &&
+            msg.role === 'user' &&
+            typeof msg.content === 'string' &&
+            String(msg.content || '').trim()
+        ).slice(0, 8);
+
+        if (userMessages.length === 0) return '';
+
+        const cleanRoleName = (value) => String(value || '')
+            .replace(/["'“”‘’「」『』]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .slice(0, 32);
+
+        const blockedRoleNames = new Set([
+            'ai', 'assistant', 'bot', 'system', 'user', 'player',
+            '사용자', '유저', '플레이어', '주인공', '캐릭터'
+        ]);
+
+        for (const msg of userMessages) {
+            const text = String(msg.content || '');
+            const koMatch =
+                text.match(/(?:당신|너|플레이어|유저|사용자|주인공)\s*(?:은|는|이|가)?\s*["'“”‘’「」『』]?([가-힣A-Za-z0-9_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:이|가)?(?:예요|이에요|입니다|야|이다|임)(?:[\s.!?。]|$)/u) ||
+                text.match(/(?:나는|내가|저는|제가)\s*["'“”‘’「」『』]?([가-힣A-Za-z0-9_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:이|가)?(?:예요|이에요|입니다|야|이다|임)(?:[\s.!?。]|$)/u);
+            const enMatch =
+                text.match(/\b(?:you are|you're)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i) ||
+                text.match(/\b(?:the player is|player is|the user is|user is|i am|i'm)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i);
+
+            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || '');
+            if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
+
+            const sourceText = text
+                .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
+                .replace(/https?:\/\/\S+/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .slice(0, 180);
+
+            if (this.lang === 'ko') {
+                return `\n\n**[이번 턴 유저 극중 화자 LOCK]**\n최근 유저 로그가 유저/주인공의 극중 배역을 "${roleName}"로 지정했습니다. "당신은 ${roleName}..."에서 "당신"은 응답 캐릭터가 아니라 유저/주인공을 뜻합니다. 이후 "${roleName}" 이름표, "${roleName}"의 행동 지문, 침묵, 도망, 망설임, 선택은 모두 유저 캐릭터가 이미 한 장면 사건으로 취급하세요. 단, 응답자가 ${roleName}의 새 행동, 대사, 동의, 거절을 대신 결정하지는 마세요. 현재 캐릭터는 ${roleName}가 방금 남긴 말/행동과 갤러리 프리토킹의 현재 연인 관계/루트 고유 압력에 반응합니다.\n감지된 역할 선언 근거: ${sourceText}\n`;
+            }
+
+            return `\n\n**[Current-Turn User In-World Speaker LOCK]**\nRecent user log assigns the user/protagonist's in-world role as "${roleName}". In phrases like "you are ${roleName}", "you" means the user/protagonist, not the responding character. Any "${roleName}" name label, action prose, silence, escape, hesitation, or choice is a real scene event already performed by the user character. However, the responder must not decide ${roleName}'s new actions, dialogue, consent, or refusal. The current character reacts to what ${roleName} just did and to gallery free-talk pressure native to the current lover relationship/route.\nDetected role declaration source: ${sourceText}\n`;
+        }
+
+        return '';
+    }
+
     /**
      * 전송 핸들러 (VN 스타일: 대사창에 타이핑 효과)
      * @private
@@ -1085,9 +1141,11 @@ The latest user input contains an outside scene cue that happens before the char
                 ? window.optimizeImageHistory(_historyForRequest, 5)
                 : _historyForRequest;
             const _outsideCueOverride = this._buildLatestOutsideCueNarrationOverride(finalContent);
-            if (_outsideCueOverride && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
+            const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
+            const _runtimePromptPatch = `${_outsideCueOverride}${_inWorldUserRoleBlock}`;
+            if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
-                    { ..._optimized[0], content: `${_optimized[0].content}${_outsideCueOverride}` },
+                    { ..._optimized[0], content: `${_optimized[0].content}${_runtimePromptPatch}` },
                     ..._optimized.slice(1)
                 ];
             }

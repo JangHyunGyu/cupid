@@ -614,9 +614,11 @@ class FreeTalkSystem {
                 ? window.optimizeImageHistory(_windowed, 5)
                 : _windowed;
             const _outsideCueOverride = this._buildLatestOutsideCueNarrationOverride(finalContent);
-            if (_outsideCueOverride && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
+            const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
+            const _runtimePromptPatch = `${_outsideCueOverride}${_inWorldUserRoleBlock}`;
+            if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
-                    { ..._optimized[0], content: `${_optimized[0].content}${_outsideCueOverride}` },
+                    { ..._optimized[0], content: `${_optimized[0].content}${_runtimePromptPatch}` },
                     ..._optimized.slice(1)
                 ];
             }
@@ -932,6 +934,63 @@ The latest user input contains an outside scene cue that happens before the char
 - Use the actual input cue moving: door sound, footsteps, surrounding gaze, notification, time pressure, or a placed prop change.
 - Then let the current character notice it, show body/interior reaction, and speak a short line.
 - Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
+    }
+
+    _buildInWorldUserRoleBlock(messages) {
+        if (!Array.isArray(messages)) return '';
+
+        const userMessages = [...messages].reverse().filter(msg =>
+            msg &&
+            msg.role === 'user' &&
+            typeof msg.content === 'string' &&
+            String(msg.content || '').trim()
+        ).slice(0, 8);
+
+        if (userMessages.length === 0) return '';
+
+        const cleanRoleName = (value) => String(value || '')
+            .replace(/["'“”‘’「」『』]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .slice(0, 32);
+
+        const blockedRoleNames = new Set([
+            'ai', 'assistant', 'bot', 'system', 'user', 'player',
+            '사용자', '유저', '플레이어', '주인공', '캐릭터'
+        ]);
+
+        for (const msg of userMessages) {
+            const text = String(msg.content || '');
+            const koMatch =
+                text.match(/(?:당신|너|플레이어|유저|사용자|주인공)\s*(?:은|는|이|가)?\s*["'“”‘’「」『』]?([가-힣A-Za-z0-9_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:이|가)?(?:예요|이에요|입니다|야|이다|임)(?:[\s.!?。]|$)/u) ||
+                text.match(/(?:나는|내가|저는|제가)\s*["'“”‘’「」『』]?([가-힣A-Za-z0-9_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:이|가)?(?:예요|이에요|입니다|야|이다|임)(?:[\s.!?。]|$)/u);
+            const enMatch =
+                text.match(/\b(?:you are|you're)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i) ||
+                text.match(/\b(?:the player is|player is|the user is|user is|i am|i'm)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i);
+
+            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || '');
+            if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
+
+            const sourceText = text
+                .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
+                .replace(/https?:\/\/\S+/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .slice(0, 180);
+            const lang = String(
+                (typeof window !== 'undefined' && window.GAME_LANG) ||
+                (typeof document !== 'undefined' && document.documentElement?.lang) ||
+                'ko'
+            ).toLowerCase();
+
+            if (lang.startsWith('ko')) {
+                return `\n\n**[이번 턴 유저 극중 화자 LOCK]**\n최근 유저 로그가 유저/주인공의 극중 배역을 "${roleName}"로 지정했습니다. "당신은 ${roleName}..."에서 "당신"은 응답 캐릭터가 아니라 유저/주인공을 뜻합니다. 이후 "${roleName}" 이름표, "${roleName}"의 행동 지문, 침묵, 도망, 망설임, 선택은 모두 유저 캐릭터가 이미 한 장면 사건으로 취급하세요. 단, 응답자가 ${roleName}의 새 행동, 대사, 동의, 거절을 대신 결정하지는 마세요. 현재 캐릭터는 ${roleName}가 방금 남긴 말/행동과 Cupid 학교/연애 시나리오 고유 압력에 반응합니다.\n감지된 역할 선언 근거: ${sourceText}\n`;
+            }
+
+            return `\n\n**[Current-Turn User In-World Speaker LOCK]**\nRecent user log assigns the user/protagonist's in-world role as "${roleName}". In phrases like "you are ${roleName}", "you" means the user/protagonist, not the responding character. Any "${roleName}" name label, action prose, silence, escape, hesitation, or choice is a real scene event already performed by the user character. However, the responder must not decide ${roleName}'s new actions, dialogue, consent, or refusal. The current character reacts to what ${roleName} just did and to Cupid school/romance scenario-native pressure.\nDetected role declaration source: ${sourceText}\n`;
+        }
+
+        return '';
     }
 
     /**
