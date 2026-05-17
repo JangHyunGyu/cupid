@@ -115,8 +115,8 @@ class FreeTalkSystem {
                 (charName === "Homeroom Teacher" && m.char === "담임선생님") ||
                 (charName === "보건선생님" && m.char === "Nurse") ||
                 (charName === "Nurse" && m.char === "보건선생님") ||
-                (charName === "보건선생님" && m.char === "School Nurse") ||
-                (charName === "School Nurse" && m.char === "보건선생님") ||
+                (charName === "보건선생님" && (m.char === "School Nurse" || m.char === "Health Teacher")) ||
+                ((charName === "School Nurse" || charName === "Health Teacher") && m.char === "보건선생님") ||
                 // Spanish name matching
                 (charName === "Profesora" && (m.char === "담임선생님" || m.char === "Teacher")) ||
                 (charName === "Enfermera" && (m.char === "보건선생님" || m.char === "Nurse")) ||
@@ -238,7 +238,7 @@ class FreeTalkSystem {
             })
             .join("\n");
 
-        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters at School & What You Know]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n", de: "\n\n[Andere Charaktere in der Schule & Dein Bewusstsein]:\n", pt: "\n\n[Outros Personagens na Escola e Sua Percepção]:\n" }[lang] || "\n\n[학교의 다른 인물들 및 당신의 인지 상태]:\n";
+        const header = { es: "\n\n[Otros Personajes en la Escuela y Tu Conocimiento]:\n", ja: "\n\n[学校の他のキャラクターとあなたの認知状態]:\n", en: "\n\n[Other Characters in the Current Setting & What You Know]:\n", fr: "\n\n[Autres Personnages de l'École et Votre Perception] :\n", de: "\n\n[Andere Charaktere in der Schule & Dein Bewusstsein]:\n", pt: "\n\n[Outros Personagens na Escola e Sua Percepção]:\n" }[lang] || "\n\n[현재 설정의 다른 인물들 및 당신의 인지 상태]:\n";
 
         // 질투 반응 지침
         const jealousyInstruction = { es: "\nNota: Eres consciente de la relación del usuario con otros. Si su afinidad es alta (50+), puedes sentir celos, sospechas u obsesión según tu personalidad.", ja: "\n注意: あなたはユーザーと他のキャラクターとの関係を認知しています。他のキャラクターの好感度が高い場合(50以上)、あなたの性格に応じて嫉妬、疑念、または執着を見せることがあります。", en: "\nNote: You are aware of the user's relationship with others. If their affinity is high (50+), you may feel jealous, suspicious, or obsessive depending on your personality.", fr: "\nNote : Vous êtes consciente de la relation de l'utilisateur avec les autres. Si leur affinité est élevée (50+), vous pouvez ressentir de la jalousie.", de: "\nHinweis: Du bist dir der Beziehung des Benutzers zu anderen bewusst. Wenn deren Zuneigung hoch ist (50+), kannst du je nach deiner Persönlichkeit eifersüchtig, misstrauisch oder besessen reagieren.", pt: "\nNota: Você está ciente do relacionamento do usuário com outros. Se a afinidade deles for alta (50+), você pode sentir ciúmes, suspeitas ou obsessão dependendo da sua personalidade." }[lang] || "\n참고: 당신은 사용자와 다른 캐릭터들의 관계를 인지하고 있습니다. 다른 캐릭터의 호감도가 높을 경우(50 이상), 당신의 성격에 따라 질투, 의심, 또는 집착을 보일 수 있습니다.";
