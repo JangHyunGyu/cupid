@@ -1183,7 +1183,8 @@ The latest user input contains an outside scene cue that happens before the char
                     ..._optimized.slice(1)
                 ];
             }
-            const response = await fetch(window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/', {
+            const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
+            const response = await fetch(aiEndpoint, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'x-app-type': 'cupid', ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey }) },
                 body: JSON.stringify({ messages: _optimized })

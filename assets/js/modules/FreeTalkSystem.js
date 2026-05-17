@@ -622,7 +622,8 @@ class FreeTalkSystem {
                     ..._optimized.slice(1)
                 ];
             }
-            const response = await fetch(API_ENDPOINT, {
+            const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
+            const response = await fetch(aiEndpoint, {
                 method: "POST",
                 headers: { "Content-Type": "application/json", "x-app-type": "cupid", ...(_cacheKey && { "x-cache-key": _cacheKey }) },
                 body: JSON.stringify({ messages: _optimized })
