@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.5.17';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.5.19';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -72,6 +72,40 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         'If an environmental change, surrounding silence, gaze, prop reaction, or air shift is caused by the character’s speech/action, place it after the causing dialogue/action as a {"type":"scene","text":"..."} segment.',
         'When possible, end on the next beat created by the character: a small action, narrowed option, frozen hand, lowered voice, or changed distance rather than a bare question or waiting posture.',
         'This block does not raise romance intensity or relationship permissions. Adult status, consent, and relationship boundaries from the existing rules remain higher priority.'
+    ].join('\n')
+};
+
+const GALLERY_EXAMPLE_STYLE_RULES = {
+    ko: [
+        '\n\n[예시/취향/지문 운용 규칙 - Gallery 공통]',
+        '선호/비선호는 "귀여운 것", "무서운 것", "조용한 것", "통제되는 것"처럼 포괄적인 범주로 이해하고, 실제 응답에서는 그 범주를 설명하지 말고 캐릭터다운 구체 행동으로 번역하세요.',
+        '대화 예시 안의 구체 행동과 생활 습관은 말투만큼 강한 캐릭터 신호입니다. 예시가 가난함, 불쌍함, 강박, 허세, 금기를 보여주면 단어를 반복하지 말고 비슷한 밀도의 새 행동으로 변주하세요.',
+        '대화 예시는 흔한 인사보다 혼잣말, 들키기 직전, 혼자 정리하는 손버릇, 실패한 농담 같은 희귀한 순간의 리듬을 우선 학습합니다. 예시 문장을 복사하지 말고 행동 밀도, 심정 밀도, 멈칫하는 박자를 현재 장면에 맞게 새로 만드세요.',
+        '예시의 별표 표기는 출력 리듬 신호입니다. *행동/심정*은 narration 또는 thought, **의성어/강조음**은 짧은 scene/narration 소리로 옮기고, 구조화 JSON에서는 별표를 문자 그대로 남기기보다 segments[].type으로 분리하세요.',
+        '나레이션의 대명사는 캐릭터 성별과 표시명에 맞춥니다. 여성 캐릭터는 "그녀" 또는 이름, 남성 캐릭터는 "그" 또는 이름, 복수/페어 캐릭터는 각 이름으로 지칭하고, 성별이 애매하면 대명사보다 이름을 쓰세요.'
+    ].join('\n'),
+    en: [
+        '\n\n[Example, Preference, and Narration Style Rules - Gallery shared]',
+        'Treat likes and dislikes as broad categories such as cute things, scary things, quiet things, or controlled things. In output, translate the category into character-specific behavior instead of explaining it.',
+        'Concrete habits inside dialogue examples are as strong as voice style. If an example signals poverty, pitifulness, compulsion, bravado, or taboo, vary it into fresh behavior of similar density instead of repeating the label.',
+        'Voice examples teach rare rhythms first: self-talk, almost being caught, private organizing habits, failed jokes, and other non-generic moments. Do not copy the sample sentence; recreate its density of action, feeling, and hesitation for the current scene.',
+        'Asterisks in examples are rhythm markers. *Action/feeling* maps to narration or thought, while **sound/emphasis** becomes a short sound cue only when useful. In structured JSON, prefer separating this with segments[].type instead of leaving literal asterisks in the text.',
+        'Narration pronouns must match the character gender and display name. Use "she" or the name for female characters, "he" or the name for male characters, each name for pair/group characters, and prefer the name over pronouns when gender is ambiguous.'
+    ].join('\n')
+};
+
+const GALLERY_PROACTIVE_PROGRESS_RULES = {
+    ko: [
+        '\n\n[제타식 자동 진행 규칙 - Gallery 공통]',
+        '유저가 "...뭐?", "하, 뭐?", "응", "...", 짧은 웃음, 침묵처럼 얇은 리액션만 던져도 대화를 멈추지 마세요. 그 리액션을 캐릭터가 오해하거나 붙잡거나 밀어붙이는 신호로 받아, 다음 소설 컷을 스스로 엽니다.',
+        '한 턴은 가능하면 "유저 반응 포착 → 캐릭터 내면이 한 번 흔들림 → 짧은 대사 → 캐릭터가 만든 작은 사건/제안/거리 변화"까지 말아 주세요. 단순히 질문 하나를 던지고 기다리지 말고, 휴대폰 알림, 닫힌 문, 옷자락, 소파 거리, 손목의 멈칫함처럼 현재 장소의 물건으로 다음 박자를 만드세요.',
+        '캐릭터는 유저 대신 큰 선택을 확정하지 않지만, 가까워지기, 물러서기, 소품을 건네기, 방금 말을 후회하기, 다른 캐릭터/기억/알림이 끼어들기처럼 사용자의 선택지를 좁히는 미세 사건은 능동적으로 만들 수 있습니다. 마지막은 "어떻게 할래?"보다 이미 바뀐 장면 상태로 닫으세요.'
+    ].join('\n'),
+    en: [
+        '\n\n[Zeta-Style Proactive Progression Rules - Gallery shared]',
+        'When the user gives only a thin reaction such as "...what?", "huh?", "yeah", "...", a short laugh, or silence, do not stall the conversation. Treat it as something the character misreads, clings to, or pushes against, then open the next novel beat yourself.',
+        'When possible, each turn should roll through: user reaction noticed → the character inwardly wavers once → short dialogue → a small event, proposal, or distance change created by the character. Do not merely ask one question and wait; use a phone notification, closed door, fabric, sofa distance, or a stopped wrist from the current place to create the next beat.',
+        'Characters must not decide the user’s major choices, but they may create micro-events that narrow the next choice: stepping closer, stepping back, handing over a prop, regretting a line, or letting another character, memory, or notification cut in. End on the changed scene state more often than on "what will you do?"'
     ].join('\n')
 };
 
@@ -1824,7 +1858,11 @@ The latest user input contains an outside scene cue that happens before the char
         const finalZetaStyleGuide = isEn
             ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nFormat replies like a Zeta chat bubble: evenly interleave short narration and short dialogue. Use 4-8 segments for most replies; each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not output one long narration block followed by one spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, door sounds, phone light, footsteps, short sound/motion words. Anchor emotion in visible action and scene details, then allow a brief limited close-third-person inner consequence when it sharpens the character's reaction.`
             : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 보통 4~8개 segments, 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·문소리·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 행동과 장면 디테일에 먼저 붙이고, 캐릭터 반응이 선명해지는 순간에는 제한된 3인칭 내면 결과를 짧게 겹치세요.`;
-        const zetaNovelEngineRules = (GALLERY_ZETA_NOVEL_ENGINE_RULES[this.lang] || GALLERY_ZETA_NOVEL_ENGINE_RULES.en || '');
+        const zetaNovelEngineRules = [
+            (GALLERY_ZETA_NOVEL_ENGINE_RULES[this.lang] || GALLERY_ZETA_NOVEL_ENGINE_RULES.en || ''),
+            (GALLERY_EXAMPLE_STYLE_RULES[this.lang] || GALLERY_EXAMPLE_STYLE_RULES.en || ''),
+            (GALLERY_PROACTIVE_PROGRESS_RULES[this.lang] || GALLERY_PROACTIVE_PROGRESS_RULES.en || '')
+        ].join('');
         const finalInteriorityGuard = isEn
             ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
             : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
