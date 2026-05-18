@@ -532,6 +532,26 @@ class GalleryFreeTalk {
     }
 
     /** 영어/일본어 원어민 리듬 및 캐릭터별 말투 보정 */
+    _getNativeAntiTranslationGuard() {
+        const languageName = {
+            ko: 'Korean',
+            en: 'English',
+            es: 'Latin American Spanish',
+            ja: 'Japanese',
+            fr: 'French',
+            de: 'German',
+            pt: 'Brazilian Portuguese'
+        }[this.lang] || 'the selected target language';
+
+        return `**[Final Native-Language Cleanup - Highest Priority]**
+- All visible segments[].text must sound like fluent native ${languageName}, not a translation.
+- Do not mirror the user's typos, broken grammar, awkward punctuation, code-switching, or non-native phrasing. Treat user errors as intent only; answer in polished target-language prose.
+- Before returning JSON, silently rewrite every dialogue and narration line for native rhythm, natural word order, and character-specific voice.
+- Keep JSON keys and enum values unchanged; polish only visible prose.
+
+`;
+    }
+
     _getNativeStylePolishGuard(charId) {
         const englishCharacterLines = {
             seyoun: `- Seoyeon: precise, dry, and composed. Use "Honey" only when intimacy genuinely calls for it; otherwise use the name or a clean teasing line. Avoid melodramatic metaphors for her feelings.`,
@@ -1848,6 +1868,7 @@ The latest user input contains an outside scene cue that happens before the char
         const otherRelationships = this._buildOtherRelationshipsInfo(charId);
         const languageQualityGuard = this._getLanguageQualityGuard();
         const nativeStylePolishGuard = this._getNativeStylePolishGuard(charId);
+        const nativeAntiTranslationGuard = this._getNativeAntiTranslationGuard();
         const langName = {
             en: 'English',
             es: 'Spanish (Español)',
@@ -1892,7 +1913,7 @@ The latest user input contains an outside scene cue that happens before the char
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}You are Cupid's novel engine writing the next visual-novel scene centered on '${charName}'.
+            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}You are Cupid's novel engine writing the next visual-novel scene centered on '${charName}'.
 
 PERSONALITY: ${personality}
 ${characterOutfitGuard}
@@ -1948,7 +1969,7 @@ The user's name is '${playerName}'. Use their name naturally.`;
         }
 
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `${languageQualityGuard}${nativeStylePolishGuard}당신은 미연시 게임 'Cupid'의 다음 장면을 쓰는 소설 엔진입니다. 현재 장면의 중심 캐릭터는 '${charName}'입니다.
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}당신은 미연시 게임 'Cupid'의 다음 장면을 쓰는 소설 엔진입니다. 현재 장면의 중심 캐릭터는 '${charName}'입니다.
 
 성격: ${personality}
 ${characterOutfitGuard}
