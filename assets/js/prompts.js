@@ -1044,6 +1044,26 @@ function getLanguageQualityGuard(lang) {
     return (guards[lang] || guards.en) + "\n\n";
 }
 
+function getNativeAntiTranslationGuard(lang) {
+    const languageName = {
+        ko: 'Korean',
+        en: 'English',
+        es: 'Latin American Spanish',
+        ja: 'Japanese',
+        fr: 'French',
+        de: 'German',
+        pt: 'Brazilian Portuguese'
+    }[lang] || 'the selected target language';
+
+    return `**[Final Native-Language Cleanup - Highest Priority]**
+- All visible segments[].text must sound like fluent native ${languageName}, not a translation.
+- Do not mirror the user's typos, broken grammar, awkward punctuation, code-switching, or non-native phrasing. Treat user errors as intent only; answer in polished target-language prose.
+- Before returning JSON, silently rewrite every dialogue and narration line for native rhythm, natural word order, and character-specific voice.
+- Keep JSON keys and enum values unchanged; polish only visible prose.
+
+`;
+}
+
 function getNativeStylePolishGuard(lang, sceneName, displayName) {
     const key = normalizePromptCharacterKey(sceneName) || normalizePromptCharacterKey(displayName);
 
@@ -1283,6 +1303,7 @@ function buildSystemPrompt(params) {
         : `If any English, Korean, or any non-${_langName} text slipped into the response, rewrite it in ${_langName} now.`;
     const languageQualityGuard = getLanguageQualityGuard(effectiveLang);
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
+    const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
     const userAddressInstruction = getUserAddressInstruction(effectiveLang, playerName, knowsName);
     const characterVoiceExamples = getFreeTalkVoiceExamples(effectiveLang, sceneName, displayName);
     const characterVoiceExamplesBlock = characterVoiceExamples
@@ -1314,7 +1335,7 @@ function buildSystemPrompt(params) {
 
     if (useEnTemplate) {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}You are Cupid's novel engine writing the next visual-novel scene centered on '${aiCharName}'.
+        return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}You are Cupid's novel engine writing the next visual-novel scene centered on '${aiCharName}'.
 Personality: ${charPersonality}
 ${characterOutfitGuard}
 ${novelEngineCore}
@@ -1521,7 +1542,7 @@ Turn Management: This free-scene insert is limited to ${currentMaxTurns} turns. 
 Addressing the User: ${userAddressInstruction}${datingGuideline}`;
     } else {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `${languageQualityGuard}${nativeStylePolishGuard}당신은 미연시 게임 'Cupid'의 다음 장면을 쓰는 소설 엔진입니다. 현재 장면의 중심 캐릭터는 '${aiCharName}'입니다.
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}당신은 미연시 게임 'Cupid'의 다음 장면을 쓰는 소설 엔진입니다. 현재 장면의 중심 캐릭터는 '${aiCharName}'입니다.
 성격: ${charPersonality}
 ${characterOutfitGuard}
 ${novelEngineCore}
