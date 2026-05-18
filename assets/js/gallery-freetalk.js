@@ -128,6 +128,7 @@ class GalleryFreeTalk {
         this.stagedImage = null;
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
+        this.HISTORY_WINDOW = 10;
 
         // 캐릭터 ID → 키 매핑
         this.CHAR_ID_TO_KEY = {
@@ -1190,7 +1191,7 @@ The latest user input contains an outside scene cue that happens before the char
             const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : (window.GALLERY_FREETALK_PROMPT_VERSION || '2.5.1');
             const _gftCacheKey = this.currentCharId ? `cupid-gft:${_pv}:${this.lang}:${this.currentCharId}` : '';
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
-            const _historyForRequest = this._sanitizeDainOutfitHistory(this.chatHistory, this.currentCharId);
+            const _historyForRequest = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(), this.currentCharId);
             let _optimized = (typeof window.optimizeImageHistory === 'function')
                 ? window.optimizeImageHistory(_historyForRequest, 5)
                 : _historyForRequest;
@@ -2052,6 +2053,20 @@ ${otherRelationships}
 
             return content === msg.content ? msg : { ...msg, content };
         });
+    }
+
+    _buildWindowedHistory() {
+        if (!Array.isArray(this.chatHistory) || this.chatHistory.length === 0) return [];
+
+        const sysMsg = this.chatHistory[0];
+        if (!sysMsg || sysMsg.role !== 'system') {
+            return this.chatHistory.slice(-this.HISTORY_WINDOW);
+        }
+
+        const rest = this.chatHistory.slice(1);
+        if (rest.length <= this.HISTORY_WINDOW) return this.chatHistory;
+
+        return [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
     }
 
     _loadMemory(charId) {
