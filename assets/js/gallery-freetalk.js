@@ -1226,6 +1226,25 @@ The latest user input contains an outside scene cue that happens before the char
             }
 
             // 응답 파싱
+            if (data?.provider === 'deepseek' && data?.usage) {
+                const usage = data.usage;
+                const cache = data.cache || {};
+                const hitTokens = Number(cache.prompt_cache_hit_tokens ?? usage.prompt_cache_hit_tokens ?? 0);
+                const missTokens = Number(cache.prompt_cache_miss_tokens ?? usage.prompt_cache_miss_tokens ?? 0);
+                const hitRatio = hitTokens + missTokens > 0 ? hitTokens / (hitTokens + missTokens) : 0;
+                console.info('[DeepSeek Cache]', {
+                    app: 'cupid-gallery-freetalk',
+                    character: this.currentCharId || '',
+                    cacheKey: _gftCacheKey || '',
+                    hitTokens,
+                    missTokens,
+                    hitRatio: Number(hitRatio.toFixed(4)),
+                    promptTokens: Number(usage.prompt_tokens || hitTokens + missTokens || 0),
+                    completionTokens: Number(usage.completion_tokens || 0),
+                    totalTokens: Number(usage.total_tokens || 0)
+                });
+            }
+
             const parsed = this._parseResponse(reply);
             const displayText = this._sanitizePlayerPlaceholders(parsed.text || '...');
             const displaySegments = this._sanitizeSegmentsPlaceholders(parsed.segments || null);
