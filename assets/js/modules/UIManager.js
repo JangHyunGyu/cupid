@@ -311,6 +311,25 @@ class UIManager {
     /**
      * 행동 묘사(*) 버튼 바인딩 — **를 삽입하고 커서를 사이에 둠
      */
+    resizeChatInput() {
+        const input = this.chatInput || document.getElementById('chat-input');
+        if (!input) return;
+        const maxHeight = this._getTextareaMaxHeight(input, 5);
+        input.style.height = 'auto';
+        input.style.height = `${Math.min(input.scrollHeight, maxHeight)}px`;
+        input.style.overflowY = input.scrollHeight > maxHeight + 1 ? 'auto' : 'hidden';
+    }
+
+    _getTextareaMaxHeight(input, maxRows = 5) {
+        const style = window.getComputedStyle(input);
+        const parsePx = (value) => Number.parseFloat(value) || 0;
+        const fontSize = parsePx(style.fontSize) || 16;
+        const lineHeight = parsePx(style.lineHeight) || fontSize * 1.4;
+        const verticalPadding = parsePx(style.paddingTop) + parsePx(style.paddingBottom);
+        const verticalBorder = parsePx(style.borderTopWidth) + parsePx(style.borderBottomWidth);
+        return Math.ceil((lineHeight * maxRows) + verticalPadding + verticalBorder);
+    }
+
     _bindActionToggle() {
         const btn = this.actionToggleBtn || document.getElementById('action-toggle-btn');
         const input = this.chatInput;
@@ -324,6 +343,7 @@ class UIManager {
             input.value = val.substring(0, start) + '**' + val.substring(end);
             const cursor = start + 1;
             input.setSelectionRange(cursor, cursor);
+            this.resizeChatInput();
             input.focus();
         });
     }

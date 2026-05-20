@@ -960,8 +960,8 @@ ${L.rule}
                                 <span>📸</span>
                             </button>
                             <input type="file" id="gft-file-input" accept="image/*" style="display:none;">
-                            <input type="text" id="chat-input" maxlength="200"
-                                   placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...', 'Nachricht eingeben...', 'Digite uma mensagem...')}">
+                            <textarea id="chat-input" maxlength="200" rows="1"
+                                      placeholder="${this._L('메시지를 입력하세요...', 'Type a message...', 'Escribe un mensaje...', 'メッセージを入力...', 'Saisissez un message...', 'Nachricht eingeben...', 'Digite uma mensagem...')}"></textarea>
                             <button type="button" id="action-toggle-btn" title="${this._L('행동 묘사 (*)', 'Action (*)', 'Acción (*)', 'アクション (*)', 'Action (*)', 'Aktion (*)', 'Ação (*)')}">✱</button>
                             <button id="chat-send" title="${this._L('전송', 'Send', 'Enviar', '送信', 'Envoyer', 'Senden', 'Enviar')}">
                                 <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
@@ -984,9 +984,8 @@ ${L.rule}
 
         closeBtn.addEventListener('click', () => this.close());
         sendBtn.addEventListener('click', () => this._handleSend());
-        input.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && !e.isComposing) this._handleSend();
-        });
+        input.addEventListener('input', () => this._resizeInput(input));
+        this._resizeInput(input);
 
         // 대사창 클릭 → 타이핑 스킵 (게임과 동일)
         dialogueBox.addEventListener('click', () => {
@@ -1003,6 +1002,7 @@ ${L.rule}
                 input.value = val.substring(0, start) + '**' + val.substring(end);
                 const cursor = start + 1;
                 input.setSelectionRange(cursor, cursor);
+                this._resizeInput(input);
                 input.focus();
             });
         }
@@ -1154,6 +1154,24 @@ The latest user input contains an outside scene cue that happens before the char
      * 전송 핸들러 (VN 스타일: 대사창에 타이핑 효과)
      * @private
      */
+    _resizeInput(input = document.getElementById('chat-input')) {
+        if (!input) return;
+        const maxHeight = this._getTextareaMaxHeight(input, 5);
+        input.style.height = 'auto';
+        input.style.height = `${Math.min(input.scrollHeight, maxHeight)}px`;
+        input.style.overflowY = input.scrollHeight > maxHeight + 1 ? 'auto' : 'hidden';
+    }
+
+    _getTextareaMaxHeight(input, maxRows = 5) {
+        const style = window.getComputedStyle(input);
+        const parsePx = (value) => Number.parseFloat(value) || 0;
+        const fontSize = parsePx(style.fontSize) || 16;
+        const lineHeight = parsePx(style.lineHeight) || fontSize * 1.4;
+        const verticalPadding = parsePx(style.paddingTop) + parsePx(style.paddingBottom);
+        const verticalBorder = parsePx(style.borderTopWidth) + parsePx(style.borderBottomWidth);
+        return Math.ceil((lineHeight * maxRows) + verticalPadding + verticalBorder);
+    }
+
     async _handleSend() {
         if (this.isProcessing) return;
 
@@ -1165,6 +1183,7 @@ The latest user input contains an outside scene cue that happens before the char
         if (!text && !stagedImage) return;
 
         input.value = '';
+        this._resizeInput(input);
         this.isProcessing = true;
 
         // 이미지 + 텍스트 결합 (게임과 동일: text\n\nbase64)

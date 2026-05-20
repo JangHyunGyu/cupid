@@ -524,6 +524,7 @@ class FreeTalkSystem {
         this.isProcessingChat = true;
 
         this.uiManager.chatInput.value = "";
+        this.uiManager.resizeChatInput?.();
         this.freeTalkTurns++;
         if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
 

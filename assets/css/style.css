@@ -887,7 +887,7 @@ html[lang="pt"] #message {
     display: flex;
     gap: 8px;
     margin-bottom: 8px;
-    align-items: center;
+    align-items: flex-end;
 }
 
 /* 채팅 입력란 */
@@ -899,8 +899,15 @@ html[lang="pt"] #message {
     padding: 8px 12px;
     color: #fff;
     font-size: 16px;
+    line-height: 1.4;
     outline: none;
     min-width: 0;
+    min-height: 38px;
+    max-height: calc(7em + 20px);
+    resize: none;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-family: inherit;
     /* 모바일에서 부모의 user-select:none이 input 포커스를 방해하지 않도록 명시 */
     -webkit-user-select: text !important;
     user-select: text !important;
