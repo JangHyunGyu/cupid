@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.28";
+const ASSET_VERSION = "2.9.29";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -407,16 +407,17 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
 // 대화 히스토리 이미지 최적화 (윈도우 가드)
 // ============================================================================
 // DeepSeek 텍스트 API가 이미지 파트를 받지 않으므로,
-// AI 요청 히스토리의 이미지(base64 / R2 URL)는 텍스트 안내로 치환합니다.
+// 최근 이미지는 서버 Vision 분석용 참조로, 오래된 이미지는 텍스트 안내로 치환합니다.
 // 실제 채팅 UI/저장 데이터의 이미지는 그대로 유지됩니다.
-function optimizeImageHistory(messages) {
+function optimizeImageHistory(messages, recentCount = 5) {
     const r2ImageRegex = /https?:\/\/[^\s]+\.(?:jpg|jpeg|png|gif|webp)(?:\?[^\s]*)?/i;
     const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
     const placeholder = lang === 'ko'
         ? '[첨부 이미지: 현재 DeepSeek 텍스트 API는 이미지 픽셀을 직접 읽을 수 없습니다. 유저의 텍스트와 대화 맥락에만 근거해 반응하세요.]'
         : '[Image attachment: the current DeepSeek text API cannot inspect image pixels directly. Respond using only the user text and conversation context.]';
 
-    return messages.map((msg) => {
+    return messages.map((msg, idx) => {
+        const isRecent = idx >= messages.length - recentCount;
         const content = msg && msg.content;
         if (!content || typeof content !== 'string') return msg;
 
@@ -425,14 +426,23 @@ function optimizeImageHistory(messages) {
         if (!hasBase64 && !hasR2) return msg;
 
         let textOnly = content;
+        let imageRef = '';
         if (content.includes('\n\ndata:image/')) {
+            imageRef = `data:image/${content.split('\n\ndata:image/')[1] || ''}`.trim();
             textOnly = content.split('\n\ndata:image/')[0].trim();
         } else if (content.startsWith('data:image/')) {
+            imageRef = content;
             textOnly = '';
         } else {
-            textOnly = content.replace(r2ImageRegex, '').replace(/\n{3,}/g, '\n\n').trim();
+            textOnly = content.replace(r2ImageRegex, (match) => {
+                imageRef = match;
+                return '';
+            }).replace(/\n{3,}/g, '\n\n').trim();
         }
-        return { ...msg, content: textOnly ? `${textOnly}\n\n${placeholder}` : placeholder };
+        const imageNotice = isRecent && imageRef
+            ? `[Image attachment for server vision: ${imageRef}]`
+            : placeholder;
+        return { ...msg, content: textOnly ? `${textOnly}\n\n${imageNotice}` : imageNotice };
     });
 }
 
