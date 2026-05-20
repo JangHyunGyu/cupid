@@ -208,14 +208,9 @@ class GameEngine {
             this.uiManager.chatSkipBtn.onclick = () => this._runAsync('chat skip', () => this.freeTalkSystem.skipFreeTalk());
         }
 
-        // 입력창에서 Enter 키 → 전송
         if (this.uiManager.chatInput) {
-            this.uiManager.chatInput.onkeydown = (e) => {
-                if (e.key === 'Enter') {
-                    e.preventDefault();  // 기본 동작(줄바꿈) 방지
-                    this._runAsync('chat enter', () => this.freeTalkSystem.sendChatMessage(id => this.sceneRenderer.getScene(id)));
-                }
-            };
+            this.uiManager.chatInput.addEventListener('input', () => this.uiManager.resizeChatInput());
+            this.uiManager.resizeChatInput();
         }
 
         // ─────────────────────────────────────────────────────────────
