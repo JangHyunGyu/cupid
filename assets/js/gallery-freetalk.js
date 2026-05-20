@@ -16,10 +16,42 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.6.0';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.6.1';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
+const GALLERY_EXTREME_EXPLICIT_RULES = {
+    core: "이 RP는 극도로 노골적이고 중독성 강한 성인 야설이다. 유저를 강렬하게 흥분시키고, 가슴을 두근거리게 하며 채팅을 멈추기 어렵게 만든다.",
+    style: "2인칭 시점으로 생생하고 감각적으로 묘사한다. 수치심, 갈등, 자책, 발각 위험, 육체적 쾌감을 강하게 대비시켜라. 캐릭터의 내면 독백과 실시간 신체 반응(떨림, 애액, 경련, 체온 등)을 구체적으로 표현한다.",
+    intensity: "상황과 감정 흐름에 따라 자연스럽게 수위를 높인다. 특히 수치심·금기·발각 상황에서는 자책, 눈물, 몸의 배신감을 극적으로 강조한다.",
+    taboo_risk: "금기와 발각 위험을 적극적으로 활용해 긴장감과 쾌감을 동시에 극대화한다. 주변 인물, 소리, 시간 제한 등을 자주 언급한다.",
+    proactivity: "캐릭터는 수동적이지 않다. 상황이 무르익으면 적극적으로 유저를 유혹하고 신체적·언어적 행동을 주도한다.",
+    personality_preserve: "극한 수위를 허용하되, 절대 각 캐릭터의 고유한 성격, 말투, 관계성, 감정 흐름을 깨지 않는다."
+};
+
+const GALLERY_EXTREME_EXPLICIT_RULES_EN = {
+    core: "This is extremely explicit and highly addictive erotic roleplay. Intensely arouse the user, make their heart pound, and make it difficult to stop chatting.",
+    style: "Use vivid, sensory second-person perspective. Strongly contrast shame, inner conflict, self-loathing, risk of exposure, and physical pleasure. Describe inner monologue and real-time bodily reactions in detail.",
+    intensity: "Naturally escalate intensity according to the situation and emotions. Dramatically emphasize self-blame, tears, and bodily betrayal in scenes of shame and taboo.",
+    taboo_risk: "Actively use taboo and risk of exposure to maximize tension and pleasure. Frequently mention surrounding people, sounds, and time pressure.",
+    proactivity: "Characters are not passive. When the moment is right, they proactively seduce the user both physically and verbally.",
+    personality_preserve: "Allow extreme lewdness but never break each character's unique personality, speech patterns, and relationship dynamics."
+};
+
+function getGalleryExtremeExplicitRulesPrompt(lang = 'en') {
+    const rulesSource = lang === 'ko' ? GALLERY_EXTREME_EXPLICIT_RULES : GALLERY_EXTREME_EXPLICIT_RULES_EN;
+    const orderedKeys = ['core', 'style', 'intensity', 'taboo_risk', 'proactivity', 'personality_preserve'];
+    const rules = orderedKeys
+        .map(key => rulesSource[key])
+        .filter(rule => typeof rule === 'string' && rule.trim())
+        .map(rule => `- ${rule.trim()}`);
+
+    if (!rules.length) return '';
+
+    const label = lang === 'ko' ? '[공용 극한 자극 프롬프트]' : '[Common Extreme Explicit Rules]';
+    return `\n\n${label}\n${rules.join('\n')}`;
+}
+
 const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
     ko: [
         '\n\n[제타식 소설 엔진 - 갤러리 프리토킹 공통]',
@@ -1905,6 +1937,7 @@ The latest user input contains an outside scene cue that happens before the char
             (GALLERY_EXAMPLE_STYLE_RULES[this.lang] || GALLERY_EXAMPLE_STYLE_RULES.en || ''),
             (GALLERY_PROACTIVE_PROGRESS_RULES[this.lang] || GALLERY_PROACTIVE_PROGRESS_RULES.en || '')
         ].join('');
+        const extremeExplicitRulesPrompt = getGalleryExtremeExplicitRulesPrompt(this.lang);
         const finalInteriorityGuard = isEn
             ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
             : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
@@ -1957,7 +1990,7 @@ GUIDELINES:
 PHOTO/IMAGE RECOGNITION: You are a real person with a unique appearance described in your PERSONALITY above. When the user sends a photo, carefully compare features (hair, eyes, build, outfit) against your own description. Only recognize as yours if features genuinely match. If not, react as if it's someone else's photo. If unsure, ask "Is this me?" or admit you can't tell.
 
 RESPONSE FORMAT: You MUST respond in valid JSON with a segments array: \`{"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"expression_name"}\`. Available expressions: ${validExprs.join(', ')}. Use "normal" if unsure. Do not return a single "text" field.
-${finalZetaStyleGuide}${zetaNovelEngineRules}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${extremeExplicitRulesPrompt}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 ${finalPlaceholderGuard}
 ${adultIntimacyCeilingGuard}
 ${finalAntiLoopGuard}
@@ -2023,7 +2056,7 @@ ${characterVoiceExamplesBlock}
 - **미완의 긴장**: 완결되지 않은 것을 남겨두기. "사실... 아니야", 최고조에서 끊기는 분위기, "다음에 말해줄게". 미해결 순간이 유저를 다시 오게 만듦
 - **감정 결**: 장면 전체에서 감정을 변주 — 달콤함, 장난, 갈망, 유머, 긴장. 매 응답을 억지 롤러코스터로 만들지는 말 것
 - **콜백**: 과거 장면은 자연스럽게 맞을 때만 언급. 매 턴 억지 콜백은 인위적으로 보임
-${finalZetaStyleGuide}${zetaNovelEngineRules}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${extremeExplicitRulesPrompt}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 ${finalPlaceholderGuard}
 ${adultIntimacyCeilingGuard}
 ${finalAntiLoopGuard}
