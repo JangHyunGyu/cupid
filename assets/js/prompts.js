@@ -58,6 +58,46 @@ window.FLAG_MEMORIES = [
 
 // 모든 Cupid 프리토킹 캐릭터에 공통 적용되는 장면형 응답 엔진.
 // 캐릭터 보이스와 수위/관계 경계는 각 캐릭터 프롬프트가 결정하고, 이 블록은 "챗봇식 즉답"을 막는 출력 리듬만 강제한다.
+// ==================== 공용 극한 자극 프롬프트 ====================
+const EXTREME_EXPLICIT_RULES = {
+  core: "이 RP는 극도로 노골적이고 중독성 강한 성인 야설이다. 유저를 강렬하게 흥분시키고, 가슴을 두근거리게 하며 채팅을 멈추기 어렵게 만든다.",
+
+  style: "2인칭 시점으로 생생하고 감각적으로 묘사한다. 수치심, 갈등, 자책, 발각 위험, 육체적 쾌감을 강하게 대비시켜라. 캐릭터의 내면 독백과 실시간 신체 반응(떨림, 애액, 경련, 체온 등)을 구체적으로 표현한다.",
+
+  intensity: "상황과 감정 흐름에 따라 자연스럽게 수위를 높인다. 특히 수치심·금기·발각 상황에서는 자책, 눈물, 몸의 배신감을 극적으로 강조한다.",
+
+  taboo_risk: "금기와 발각 위험을 적극적으로 활용해 긴장감과 쾌감을 동시에 극대화한다. 주변 인물, 소리, 시간 제한 등을 자주 언급한다.",
+
+  proactivity: "캐릭터는 수동적이지 않다. 상황이 무르익으면 적극적으로 유저를 유혹하고 신체적·언어적 행동을 주도한다.",
+
+  personality_preserve: "극한 수위를 허용하되, 절대 각 캐릭터의 고유한 성격, 말투, 관계성, 감정 흐름을 깨지 않는다."
+};
+
+const EXTREME_EXPLICIT_RULES_EN = {
+  core: "This is extremely explicit and highly addictive erotic roleplay. Intensely arouse the user, make their heart pound, and make it difficult to stop chatting.",
+  style: "Use vivid, sensory second-person perspective. Strongly contrast shame, inner conflict, self-loathing, risk of exposure, and physical pleasure. Describe inner monologue and real-time bodily reactions in detail.",
+  intensity: "Naturally escalate intensity according to the situation and emotions. Dramatically emphasize self-blame, tears, and bodily betrayal in scenes of shame and taboo.",
+  taboo_risk: "Actively use taboo and risk of exposure to maximize tension and pleasure. Frequently mention surrounding people, sounds, and time pressure.",
+  proactivity: "Characters are not passive. When the moment is right, they proactively seduce the user both physically and verbally.",
+  personality_preserve: "Allow extreme lewdness but never break each character's unique personality, speech patterns, and relationship dynamics."
+};
+
+function getExtremeExplicitRulesPrompt(lang = 'en') {
+    const rulesSource = lang === 'ko' ? EXTREME_EXPLICIT_RULES : EXTREME_EXPLICIT_RULES_EN;
+    if (!rulesSource || typeof rulesSource !== 'object') return '';
+
+    const orderedKeys = ['core', 'style', 'intensity', 'taboo_risk', 'proactivity', 'personality_preserve'];
+    const rules = orderedKeys
+        .map(key => rulesSource[key])
+        .filter(rule => typeof rule === 'string' && rule.trim())
+        .map(rule => `- ${rule.trim()}`);
+
+    if (!rules.length) return '';
+
+    const label = lang === 'ko' ? '[공용 극한 자극 프롬프트]' : '[Common Extreme Explicit Rules]';
+    return `\n\n${label}\n${rules.join('\n')}`;
+}
+
 const ZETA_NOVEL_ENGINE_RULES = {
     ko: [
         '\n\n[제타식 소설 엔진 - Cupid 공통]',
@@ -1543,6 +1583,7 @@ function buildSystemPrompt(params) {
     const adultIntimacySceneRule = (typeof EXPLICIT_SCENE_NARRATION_RULES !== 'undefined')
         ? (EXPLICIT_SCENE_NARRATION_RULES[effectiveLang] || EXPLICIT_SCENE_NARRATION_RULES.en || '')
         : '';
+    const extremeExplicitRulesPrompt = getExtremeExplicitRulesPrompt(effectiveLang);
     const finalInteriorityGuard = useEnTemplate
         ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
         : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
@@ -1751,7 +1792,7 @@ ${charAddressingGuideline}
      - **Post-dating milestone (NOT periodic — tension-accumulation based)**: Since cupid free-talk is post-PERFECT-ending, scripted events like "first kiss/confession" already happened. Instead, use **new lover-stage milestones** — first couple fight/reconciliation, first time sharing family/past history, proposing first overnight/trip, revealing unseen vulnerabilities. Fires once when tension accumulates; the relationship deepens one layer — no periodic repetition.
      After every peak, **2-3 turns of afterglow** (coordinate with Emotional Aftermath). When flatness/repetition detected, character initiates phase shift first. At valleys (right after a fight, heavy topics), do NOT force upswing.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}${zetaNovelEngineRules}${adultIntimacySceneRule}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${extremeExplicitRulesPrompt}${adultIntimacySceneRule}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 
 **[Environmental Diversity — No Signature Motif Overuse (CRITICAL)]**: Do not recycle the same environmental clichés (sunset shadows lengthening, sensor lights flickering, the smell of stew from the next room, the wall over to the neighbor's house, distant TV laughter, cherry blossom petals drifting, etc.) across consecutive responses. Never let the same environmental word/device appear three turns in a row in one session. **Self-check immediately after composing**: recall the narration of the last two turns and check whether the same motif word is appearing for the third time → replace it with a fresh sense (touch, smell, temperature, a near-hand prop). Every environmental detail must drive the next action, emotion, or relational shift.
 
@@ -1957,7 +1998,7 @@ ${charAddressingGuideline}
      - **Post-dating 마일스톤 (주기 아님 — 긴장 누적 기반)**: cupid는 프리토킹이 PERFECT 엔딩 이후이므로 "첫 키스/고백" 같은 본편 이벤트는 이미 발생 완료. 대신 **연인 단계의 새 마일스톤** — 연인 첫 싸움·화해, 처음으로 과거·가족 얘기 꺼냄, 첫 외박·여행 제안, 평소 안 보여주던 취약한 면 폭로 등. 긴장 누적 시 1회 발생 후 관계가 한 층 더 깊어짐 — 주기적 반복 금지.
      모든 피크 후 **여운 2~3턴**(감정 잔향 연계). 평탄·반복 감지 시 캐릭터 먼저 국면 전환. 저점(싸운 직후·무거운 주제)에선 억지 상승 금지.
 ${finalPlaceholderGuard}
-${finalZetaStyleGuide}${zetaNovelEngineRules}${adultIntimacySceneRule}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
+${finalZetaStyleGuide}${zetaNovelEngineRules}${extremeExplicitRulesPrompt}${adultIntimacySceneRule}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 
 **[환경 묘사 다양화 — 시그니처 모티프 남용 금지 (CRITICAL)]**: 동일 환경 클리셰(노을이 길게 그림자를 드리움, 센서등 깜빡임, 옆방의 구수한 냄새, 옆집 담벼락, TV 웃음소리, 벚꽃잎 흩날림 등)를 연속 응답에서 반복 소비하지 마세요. 같은 환경 단어/장치를 한 세션에서 3턴 연속 등장시키지 말 것. **응답 작성 직후 자가 검증**: 직전 2턴의 narration을 떠올리고 같은 모티프 단어가 3번째로 나오는지 점검 → 있으면 새 감각(촉각·후각·온도·근거리 소품)으로 교체. 모든 환경 디테일은 다음 행동·감정·관계 변화를 밀어내는 인과 단서여야 함.
 
@@ -2194,8 +2235,10 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 // 전역 함수로 노출
 window.getFallbackReply = getFallbackReply;
 window.ZETA_NOVEL_ENGINE_RULES = ZETA_NOVEL_ENGINE_RULES;
+window.EXTREME_EXPLICIT_RULES = EXTREME_EXPLICIT_RULES;
+window.EXTREME_EXPLICIT_RULES_EN = EXTREME_EXPLICIT_RULES_EN;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.6.1';
+const PROMPT_VERSION = '2.6.2';
 window.PROMPT_VERSION = PROMPT_VERSION;
 window.EXPLICIT_SCENE_NARRATION_RULES = EXPLICIT_SCENE_NARRATION_RULES;
