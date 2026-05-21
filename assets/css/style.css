@@ -864,6 +864,47 @@ html[lang="pt"] #message {
     object-fit: contain;
 }
 
+#image-preview-container.is-uploading {
+    overflow: hidden;
+}
+
+#image-preview-container.is-uploading #image-preview {
+    opacity: 0.55;
+    filter: blur(1px);
+}
+
+#image-preview-container.is-uploading::after {
+    content: attr(data-upload-label);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+    background: rgba(0, 0, 0, 0.56);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+#image-preview-container.is-uploading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin: -18px 0 0 -12px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: var(--c-accent);
+    border-radius: 50%;
+    animation: attachmentUploadSpin 0.8s linear infinite;
+    z-index: 2;
+}
+
 #remove-image-btn {
     position: absolute;
     top: -8px;
@@ -880,6 +921,36 @@ html[lang="pt"] #message {
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#image-preview-container.is-uploading #remove-image-btn {
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+#upload-image-btn.is-uploading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+}
+
+#upload-image-btn.is-uploading svg,
+#upload-image-btn.is-uploading span {
+    opacity: 0;
+}
+
+#upload-image-btn.is-uploading::after {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: attachmentUploadSpin 0.8s linear infinite;
+}
+
+@keyframes attachmentUploadSpin {
+    to { transform: rotate(360deg); }
 }
 
 /* 채팅 입력창 및 버튼 감싸기 */

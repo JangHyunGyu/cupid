@@ -70,6 +70,7 @@ class UIManager {
         this.imagePreview = document.getElementById('image-preview');
         this.removeImageBtn = document.getElementById('remove-image-btn');
         this.stagedImage = null; // 현재 업로드 준비된 이미지 (Base64)
+        this._imageUploadVersion = 0;
 
         // ✏️ 이름 입력 관련
         this.nameInputContainer = document.getElementById('name-input-container');
@@ -352,12 +353,40 @@ class UIManager {
      * 이미지 파일을 읽어서 Base64로 변환 및 리사이징
      * @param {File} file - 선택된 파일 객체
      */
+    _setImageUploadState(isUploading, previewSrc = null) {
+        const label = (window.GAME_LANG || document.documentElement.lang) === 'ko' ? '업로드 중' : 'Uploading';
+
+        if (previewSrc && this.imagePreview) {
+            this.imagePreview.src = previewSrc;
+        }
+
+        if (this.imagePreviewContainer) {
+            if (previewSrc || isUploading || this.stagedImage) {
+                this.imagePreviewContainer.style.display = 'inline-flex';
+                this.imagePreviewContainer.style.visibility = 'visible';
+            }
+            this.imagePreviewContainer.classList.toggle('is-uploading', isUploading);
+            this.imagePreviewContainer.setAttribute('data-upload-label', label);
+        }
+
+        if (this.imageUploadBtn) {
+            this.imageUploadBtn.classList.toggle('is-uploading', isUploading);
+            this.imageUploadBtn.setAttribute('aria-busy', isUploading ? 'true' : 'false');
+            this.imageUploadBtn.disabled = isUploading;
+        }
+
+        if (this.removeImageBtn) {
+            this.removeImageBtn.disabled = isUploading;
+        }
+    }
+
     handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
             alert({ es: 'Solo se pueden subir archivos de imagen.', ja: '画像ファイルのみアップロード可能です。', en: 'Only image files can be uploaded.', fr: 'Seuls les fichiers image peuvent être téléchargés.', de: 'Nur Bilddateien können hochgeladen werden.', pt: 'Apenas arquivos de imagem podem ser enviados.' }[(window.GAME_LANG || document.documentElement.lang)] || '이미지 파일만 업로드 가능합니다.');
             return;
         }
 
+        const uploadVersion = ++this._imageUploadVersion;
         const reader = new FileReader();
         reader.onload = (e) => {
             const img = new Image();
@@ -390,15 +419,23 @@ class UIManager {
                 console.debug('[UIManager] handleImageUpload: prepared base64, size=', base64.length);
                 // 즉시 미리보기는 base64로 (UX), 백그라운드로 R2 업로드 후 stagedImage를 URL로 교체
                 this.updateImagePreview(base64);
+                this._setImageUploadState(true, base64);
                 if (typeof window.uploadImageToR2 === 'function') {
                     window.uploadImageToR2(base64, 'chat').then(url => {
+                        if (this._imageUploadVersion !== uploadVersion) return;
                         if (url) {
                             this.stagedImage = url;
                             console.debug('[UIManager] R2 업로드 완료:', url);
                         }
                     }).catch(err => {
                         console.warn('[UIManager] R2 업로드 실패, base64 폴백:', err.message);
+                    }).finally(() => {
+                        if (this._imageUploadVersion === uploadVersion) {
+                            this._setImageUploadState(false);
+                        }
                     });
+                } else {
+                    this._setImageUploadState(false);
                 }
             };
             img.src = e.target.result;
@@ -445,6 +482,8 @@ class UIManager {
      * 업로드 대기 중인 이미지 제거
      */
     removeStagedImage() {
+        this._imageUploadVersion++;
+        this._setImageUploadState(false);
         this.updateImagePreview(null);
         if (this.imageUploadInput) this.imageUploadInput.value = '';
     }
