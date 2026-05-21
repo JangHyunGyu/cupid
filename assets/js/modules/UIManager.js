@@ -354,7 +354,7 @@ class UIManager {
      * @param {File} file - 선택된 파일 객체
      */
     _setImageUploadState(isUploading, previewSrc = null) {
-        const label = (window.GAME_LANG || document.documentElement.lang) === 'ko' ? '업로드 중' : 'Uploading';
+        const label = (window.GAME_LANG || document.documentElement.lang) === 'ko' ? '\uc5c5\ub85c\ub4dc \uc911' : 'Uploading';
 
         if (previewSrc && this.imagePreview) {
             this.imagePreview.src = previewSrc;
