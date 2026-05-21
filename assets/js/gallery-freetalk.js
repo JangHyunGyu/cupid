@@ -158,6 +158,7 @@ class GalleryFreeTalk {
         this.skipTyping = false;
         this.overlayEl = null;
         this.stagedImage = null;
+        this._imageUploadVersion = 0;
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
         this.HISTORY_WINDOW = 10;
@@ -975,12 +976,12 @@ ${L.rule}
 
         // 이벤트 바인딩 (게임과 동일한 ID 사용)
         const closeBtn = this.overlayEl.querySelector('.gft-close-btn');
-        const sendBtn = document.getElementById('chat-send');
-        const input = document.getElementById('chat-input');
-        const dialogueBox = document.getElementById('dialogue-box');
-        const uploadBtn = document.getElementById('upload-image-btn');
-        const fileInput = document.getElementById('gft-file-input');
-        const removeImgBtn = document.getElementById('remove-image-btn');
+        const sendBtn = this.overlayEl.querySelector('#chat-send');
+        const input = this.overlayEl.querySelector('#chat-input');
+        const dialogueBox = this.overlayEl.querySelector('#dialogue-box');
+        const uploadBtn = this.overlayEl.querySelector('#upload-image-btn');
+        const fileInput = this.overlayEl.querySelector('#gft-file-input');
+        const removeImgBtn = this.overlayEl.querySelector('#remove-image-btn');
 
         closeBtn.addEventListener('click', () => this.close());
         sendBtn.addEventListener('click', () => this._handleSend());
@@ -993,7 +994,7 @@ ${L.rule}
         });
 
         // 행동 묘사(*) 버튼: **를 삽입하고 커서를 사이에 둠
-        const actionBtn = document.getElementById('action-toggle-btn');
+        const actionBtn = this.overlayEl.querySelector('#action-toggle-btn');
         if (actionBtn && input) {
             actionBtn.addEventListener('click', () => {
                 const start = input.selectionStart || 0;
@@ -1718,6 +1719,37 @@ The latest user input contains an outside scene cue that happens before the char
      * @param {File} file
      * @private
      */
+    _setImageUploadState(isUploading, previewSrc = null) {
+        const root = this.overlayEl || document;
+        const previewContainer = root.querySelector('#image-preview-container');
+        const previewImg = root.querySelector('#image-preview');
+        const uploadBtn = root.querySelector('#upload-image-btn');
+        const removeBtn = root.querySelector('#remove-image-btn');
+        const label = this.lang === 'ko' ? '업로드 중' : 'Uploading';
+
+        if (previewSrc && previewImg) {
+            previewImg.src = previewSrc;
+        }
+
+        if (previewContainer) {
+            if (previewSrc || isUploading || this.stagedImage) {
+                previewContainer.style.display = 'inline-flex';
+            }
+            previewContainer.classList.toggle('is-uploading', isUploading);
+            previewContainer.setAttribute('data-upload-label', label);
+        }
+
+        if (uploadBtn) {
+            uploadBtn.classList.toggle('is-uploading', isUploading);
+            uploadBtn.setAttribute('aria-busy', isUploading ? 'true' : 'false');
+            uploadBtn.disabled = isUploading;
+        }
+
+        if (removeBtn) {
+            removeBtn.disabled = isUploading;
+        }
+    }
+
     _handleImageUpload(file) {
         if (!file.type.startsWith('image/')) {
             alert(this._L(
@@ -1732,6 +1764,7 @@ The latest user input contains an outside scene cue that happens before the char
             return;
         }
 
+        const uploadVersion = ++this._imageUploadVersion;
         const reader = new FileReader();
         reader.onload = (e) => {
             const img = new Image();
@@ -1751,19 +1784,27 @@ The latest user input contains an outside scene cue that happens before the char
                 this.stagedImage = base64;
 
                 // 미리보기 표시
-                const previewContainer = document.getElementById('image-preview-container');
-                const previewImg = document.getElementById('image-preview');
-                if (previewImg) previewImg.src = base64;
-                if (previewContainer) previewContainer.style.display = 'inline-flex';
+                this._setImageUploadState(true, base64);
+                if (typeof window.uploadImageToR2 !== 'function') {
+                    this._setImageUploadState(false);
+                }
 
                 // 백그라운드로 R2 업로드 후 stagedImage를 URL로 교체 (토큰 절감)
                 if (typeof window.uploadImageToR2 === 'function') {
                     window.uploadImageToR2(base64, 'chat').then(url => {
+                        if (this._imageUploadVersion !== uploadVersion) return;
+                        this._setImageUploadState(false);
                         if (url) {
                             this.stagedImage = url;
+                            if (this._imageUploadVersion === uploadVersion) {
+                                this._setImageUploadState(false);
+                            }
                             console.debug('[GalleryFreeTalk] R2 업로드 완료:', url);
                         }
                     }).catch(err => {
+                        if (this._imageUploadVersion === uploadVersion) {
+                            this._setImageUploadState(false);
+                        }
                         console.warn('[GalleryFreeTalk] R2 업로드 실패, base64 폴백:', err.message);
                     });
                 }
@@ -1779,9 +1820,16 @@ The latest user input contains an outside scene cue that happens before the char
      */
     _removeStagedImage() {
         this.stagedImage = null;
-        const previewContainer = document.getElementById('image-preview-container');
-        const previewImg = document.getElementById('image-preview');
-        if (previewContainer) previewContainer.style.display = 'none';
+        this._imageUploadVersion++;
+        this._setImageUploadState(false);
+        const root = this.overlayEl || document;
+        const previewContainer = root.querySelector('#image-preview-container');
+        const previewImg = root.querySelector('#image-preview');
+        if (previewContainer) {
+            previewContainer.style.display = 'none';
+            previewContainer.classList.remove('is-uploading');
+            previewContainer.removeAttribute('data-upload-label');
+        }
         if (previewImg) previewImg.src = '';
     }
 
