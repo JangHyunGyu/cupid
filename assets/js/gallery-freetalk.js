@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.6.1';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.6.2';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -140,6 +140,15 @@ const GALLERY_PROACTIVE_PROGRESS_RULES = {
         'Characters must not decide the user’s major choices, but they may create micro-events that narrow the next choice: stepping closer, stepping back, handing over a prop, regretting a line, or letting another character, memory, or notification cut in. End on the changed scene state more often than on "what will you do?"'
     ].join('\n')
 };
+
+function normalizeGalleryPromptBlockForCache(content) {
+    if (!content) return '';
+    return String(content)
+        .replace(/\r\n?/g, '\n')
+        .replace(/[ \t]+\n/g, '\n')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+}
 
 class GalleryFreeTalk {
     /**
@@ -875,7 +884,7 @@ ${L.rule}
         this.chatHistory = this._sanitizeDainOutfitHistory(this.chatHistory, charId);
 
         // 시스템 프롬프트 구성
-        const systemPrompt = this._buildSystemPrompt(charId);
+        const systemPrompt = normalizeGalleryPromptBlockForCache(this._buildSystemPrompt(charId));
         if (this.chatHistory.length > 0 && this.chatHistory[0].role === 'system') {
             this.chatHistory[0].content = systemPrompt;
         } else {
