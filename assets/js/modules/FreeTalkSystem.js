@@ -33,6 +33,15 @@
  *   - [EXPRESSION: happy] → 캐릭터 표정 이미지 변경
  *   - [STATS: affinity +10] → 호감도 변경
  */
+function normalizeFreeTalkPromptBlockForCache(content) {
+    if (!content) return '';
+    return String(content)
+        .replace(/\r\n?/g, '\n')
+        .replace(/[ \t]+\n/g, '\n')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+}
+
 class FreeTalkSystem {
     /**
      * @param {StateManager} stateManager - 게임 상태 관리자
@@ -363,7 +372,7 @@ class FreeTalkSystem {
             : ({ es: "\n- MEDIO: Hablando CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN PERSONNE.", de: "\n- MEDIUM: Gespräch VON ANGESICHT ZU ANGESICHT.", pt: "\n- MEIO: Conversando PESSOALMENTE." }[lang] || "\n- 매체 지침: 대면 대화 중.");
 
         // 시스템 프롬프트 생성
-        const systemPrompt = window.buildSystemPrompt ? window.buildSystemPrompt({
+        const rawSystemPrompt = window.buildSystemPrompt ? window.buildSystemPrompt({
             isEn,
             lang,
             sceneName: charKey,
@@ -382,6 +391,7 @@ class FreeTalkSystem {
             knowsName,
             datingGuideline
         }) : "";
+        const systemPrompt = normalizeFreeTalkPromptBlockForCache(rawSystemPrompt);
 
         this.freeTalkHistory = [{ role: "system", content: systemPrompt }, ...this.freeTalkHistory.filter(m => m.role !== "system")];
 
