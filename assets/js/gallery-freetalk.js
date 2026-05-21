@@ -1725,7 +1725,7 @@ The latest user input contains an outside scene cue that happens before the char
         const previewImg = root.querySelector('#image-preview');
         const uploadBtn = root.querySelector('#upload-image-btn');
         const removeBtn = root.querySelector('#remove-image-btn');
-        const label = this.lang === 'ko' ? '업로드 중' : 'Uploading';
+        const label = this.lang === 'ko' ? '\uc5c5\ub85c\ub4dc \uc911' : 'Uploading';
 
         if (previewSrc && previewImg) {
             previewImg.src = previewSrc;
