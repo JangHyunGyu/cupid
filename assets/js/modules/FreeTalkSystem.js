@@ -518,6 +518,54 @@ class FreeTalkSystem {
     }
 
     /** 채팅 메시지 전송 */
+    _hashTurnText(value) {
+        const text = String(value || '');
+        let hash = 2166136261;
+        for (let i = 0; i < text.length; i++) {
+            hash ^= text.charCodeAt(i);
+            hash = Math.imul(hash, 16777619);
+        }
+        return `${(hash >>> 0).toString(36)}:${text.length}`;
+    }
+
+    _createTurnMeta(latestUserText) {
+        const text = String(latestUserText || '').trim();
+        if (!text) return null;
+        return {
+            turnId: `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`,
+            latestUserHash: this._hashTurnText(text),
+            latestUserLength: text.length
+        };
+    }
+
+    _makeStaleTurnError(message = 'Stale AI response ignored') {
+        const error = new Error(message);
+        error.name = 'StaleTurnError';
+        error.reason = 'STALE_TURN';
+        error.isStaleTurn = true;
+        return error;
+    }
+
+    _assertCurrentTurn(turnMeta, payload = null) {
+        if (!turnMeta?.turnId) return;
+        if (this._activeChatTurnId && this._activeChatTurnId !== turnMeta.turnId) {
+            throw this._makeStaleTurnError();
+        }
+        if (payload?.turnId && payload.turnId !== turnMeta.turnId) {
+            throw this._makeStaleTurnError('AI response turn id did not match request');
+        }
+        if (payload?.latestUserHash && payload.latestUserHash !== turnMeta.latestUserHash) {
+            throw this._makeStaleTurnError('AI response latest user hash did not match request');
+        }
+    }
+
+    _forceLatestUserMessageLast(messages = [], latestContent = '') {
+        const text = String(latestContent || '');
+        if (!text) return Array.isArray(messages) ? messages : [];
+        const withoutDuplicate = (Array.isArray(messages) ? messages : []).filter(msg => !(msg?.role === 'user' && msg.content === text));
+        return [...withoutDuplicate, { role: 'user', content: text }];
+    }
+
     async sendChatMessage(getSceneFn) {
         // 이미 처리 중이면 무시 (중복 호출 방지)
         if (this.isProcessingChat) return;
@@ -633,11 +681,14 @@ class FreeTalkSystem {
                     ..._optimized.slice(1)
                 ];
             }
+            _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
+            const _turnMeta = this._createTurnMeta(finalContent);
+            this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
             const response = await fetch(aiEndpoint, {
                 method: "POST",
                 headers: { "Content-Type": "application/json", "x-app-type": "cupid", ...(_cacheKey && { "x-cache-key": _cacheKey }) },
-                body: JSON.stringify({ messages: _optimized })
+                body: JSON.stringify({ messages: _optimized, ...(_turnMeta || {}) })
             });
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)
@@ -646,6 +697,7 @@ class FreeTalkSystem {
 
             // JSON 파싱
             const data = await response.json();
+            this._assertCurrentTurn(_turnMeta, data);
 
             // OpenAI API 응답 구조에서 대답 텍스트 추출
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
@@ -857,6 +909,10 @@ class FreeTalkSystem {
         } catch (error) {
             // 🔍 오류 내용을 콘솔에 기록 (디버깅용)
             // F12 → Console 탭에서 확인 가능
+            if (error?.isStaleTurn || error?.reason === 'STALE_TURN') {
+                console.warn('[Cupid FreeTalk] Ignored stale chat response');
+                return;
+            }
             console.error("AI Chat Error:", error);
 
             // 현재 언어 확인
