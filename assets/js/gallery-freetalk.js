@@ -1182,6 +1182,54 @@ The latest user input contains an outside scene cue that happens before the char
         return Math.ceil((lineHeight * maxRows) + verticalPadding + verticalBorder);
     }
 
+    _hashTurnText(value) {
+        const text = String(value || '');
+        let hash = 2166136261;
+        for (let i = 0; i < text.length; i++) {
+            hash ^= text.charCodeAt(i);
+            hash = Math.imul(hash, 16777619);
+        }
+        return `${(hash >>> 0).toString(36)}:${text.length}`;
+    }
+
+    _createTurnMeta(latestUserText) {
+        const text = String(latestUserText || '').trim();
+        if (!text) return null;
+        return {
+            turnId: `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`,
+            latestUserHash: this._hashTurnText(text),
+            latestUserLength: text.length
+        };
+    }
+
+    _makeStaleTurnError(message = 'Stale AI response ignored') {
+        const error = new Error(message);
+        error.name = 'StaleTurnError';
+        error.reason = 'STALE_TURN';
+        error.isStaleTurn = true;
+        return error;
+    }
+
+    _assertCurrentTurn(turnMeta, payload = null) {
+        if (!turnMeta?.turnId) return;
+        if (this._activeChatTurnId && this._activeChatTurnId !== turnMeta.turnId) {
+            throw this._makeStaleTurnError();
+        }
+        if (payload?.turnId && payload.turnId !== turnMeta.turnId) {
+            throw this._makeStaleTurnError('AI response turn id did not match request');
+        }
+        if (payload?.latestUserHash && payload.latestUserHash !== turnMeta.latestUserHash) {
+            throw this._makeStaleTurnError('AI response latest user hash did not match request');
+        }
+    }
+
+    _forceLatestUserMessageLast(messages = [], latestContent = '') {
+        const text = String(latestContent || '');
+        if (!text) return Array.isArray(messages) ? messages : [];
+        const withoutDuplicate = (Array.isArray(messages) ? messages : []).filter(msg => !(msg?.role === 'user' && msg.content === text));
+        return [...withoutDuplicate, { role: 'user', content: text }];
+    }
+
     async _handleSend() {
         if (this.isProcessing) return;
 
@@ -1265,16 +1313,20 @@ The latest user input contains an outside scene cue that happens before the char
                     ..._optimized.slice(1)
                 ];
             }
+            _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
+            const _turnMeta = this._createTurnMeta(finalContent);
+            this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
             const response = await fetch(aiEndpoint, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'x-app-type': 'cupid', ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey }) },
-                body: JSON.stringify({ messages: _optimized })
+                body: JSON.stringify({ messages: _optimized, ...(_turnMeta || {}) })
             });
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
             const data = await response.json();
+            this._assertCurrentTurn(_turnMeta, data);
             const replyContent = data?.choices?.[0]?.message?.content;
             const reply = typeof replyContent === 'string' ? replyContent.trim() : '';
 
@@ -1344,6 +1396,11 @@ The latest user input contains an outside scene cue that happens before the char
             }
 
         } catch (err) {
+            if (err?.isStaleTurn || err?.reason === 'STALE_TURN') {
+                console.warn('[Cupid GalleryFreeTalk] Ignored stale chat response');
+                err.__staleTurnHandled = true;
+            }
+            if (!err?.__staleTurnHandled) {
             console.error('[GalleryFreeTalk] API 오류:', err);
             const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
             if (nameTag) nameTag.textContent = charName;
@@ -1353,6 +1410,7 @@ The latest user input contains an outside scene cue that happens before the char
             const fallback = this._getFallbackReply();
             await this._typeText(fallback);
             this.chatHistory.push({ role: 'assistant', content: fallback });
+            }
         }
 
         // UI 복원 (게임과 동일: 버튼 원복 + 입력 활성화)
