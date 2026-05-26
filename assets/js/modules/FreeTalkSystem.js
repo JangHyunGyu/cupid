@@ -42,6 +42,19 @@ function normalizeFreeTalkPromptBlockForCache(content) {
         .trim();
 }
 
+const FREE_TALK_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
+
+function appendFreeTalkDynamicContext(content, addition) {
+    if (!addition) return content || '';
+    const base = normalizeFreeTalkPromptBlockForCache(content || '');
+    const dynamic = normalizeFreeTalkPromptBlockForCache(addition);
+    if (!dynamic) return base;
+    if (base.includes(FREE_TALK_CACHE_BOUNDARY_MARKER)) {
+        return `${base}\n${dynamic}`;
+    }
+    return `${base}\n${FREE_TALK_CACHE_BOUNDARY_MARKER}\n${dynamic}`;
+}
+
 class FreeTalkSystem {
     /**
      * @param {StateManager} stateManager - 게임 상태 관리자
@@ -597,7 +610,7 @@ class FreeTalkSystem {
             const progressTag = { es: `\n[Progreso del escenario]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.`, ja: `\n[シナリオ進行度]: ${this.freeTalkTurns}/${this.currentMaxTurns}ターン。残り${remaining}ターン。`, en: `\n[CURRENT_PROGRESS]: ${this.freeTalkTurns}/${this.currentMaxTurns} turns. ${remaining} remaining.`, fr: `\n[Progression du scénario] : ${this.freeTalkTurns}/${this.currentMaxTurns} tours. ${remaining} restants.`, de: `\n[Szenariofortschritt]: ${this.freeTalkTurns}/${this.currentMaxTurns} Runden. ${remaining} übrig.`, pt: `\n[Progresso do cenário]: ${this.freeTalkTurns}/${this.currentMaxTurns} turnos. ${remaining} restantes.` }[lang] || `\n[현재 진행 상황]: ${this.freeTalkTurns}/${this.currentMaxTurns}턴. ${remaining}턴 남음.`;
 
             const baseContent = this.freeTalkHistory[0].content.split('\n[CURRENT_PROGRESS]')[0].split('\n[현재 진행 상황]')[0].split('\n[Progreso del escenario]')[0].split('\n[シナリオ進行度]')[0].split('\n[Progression du scénario]')[0].split('\n[Szenariofortschritt]')[0].split('\n[Progresso do cenário]')[0];
-            this.freeTalkHistory[0].content = baseContent + progressTag;
+            this.freeTalkHistory[0].content = appendFreeTalkDynamicContext(baseContent, progressTag);
         }
 
         // 사용자 메시지 표시
@@ -677,7 +690,7 @@ class FreeTalkSystem {
             const _runtimePromptPatch = `${_outsideCueOverride}${_inWorldUserRoleBlock}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
-                    { ..._optimized[0], content: `${_optimized[0].content}${_runtimePromptPatch}` },
+                    { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
                     ..._optimized.slice(1)
                 ];
             }
@@ -687,8 +700,14 @@ class FreeTalkSystem {
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
             const response = await fetch(aiEndpoint, {
                 method: "POST",
-                headers: { "Content-Type": "application/json", "x-app-type": "cupid", ...(_cacheKey && { "x-cache-key": _cacheKey }) },
-                body: JSON.stringify({ messages: _optimized, ...(_turnMeta || {}) })
+                headers: {
+                    "Content-Type": "application/json",
+                    "x-app-type": "cupid",
+                    "x-request-type": "character",
+                    "x-chat-mode": "single",
+                    ...(_cacheKey && { "x-cache-key": _cacheKey })
+                },
+                body: JSON.stringify({ messages: _optimized, requestType: "character", chatMode: "single", cacheKey: _cacheKey, ...(_turnMeta || {}) })
             });
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)

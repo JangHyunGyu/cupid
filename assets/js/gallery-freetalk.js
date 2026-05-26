@@ -150,6 +150,19 @@ function normalizeGalleryPromptBlockForCache(content) {
         .trim();
 }
 
+const GALLERY_FREETALK_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
+
+function appendGalleryFreeTalkDynamicContext(content, addition) {
+    if (!addition) return content || '';
+    const base = normalizeGalleryPromptBlockForCache(content || '');
+    const dynamic = normalizeGalleryPromptBlockForCache(addition);
+    if (!dynamic) return base;
+    if (base.includes(GALLERY_FREETALK_CACHE_BOUNDARY_MARKER)) {
+        return `${base}\n${dynamic}`;
+    }
+    return `${base}\n${GALLERY_FREETALK_CACHE_BOUNDARY_MARKER}\n${dynamic}`;
+}
+
 class GalleryFreeTalk {
     /**
      * @param {string} lang - 현재 언어 ('ko','en','es','ja','fr')
@@ -1309,7 +1322,7 @@ The latest user input contains an outside scene cue that happens before the char
             const _runtimePromptPatch = `${_outsideCueOverride}${_inWorldUserRoleBlock}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
-                    { ..._optimized[0], content: `${_optimized[0].content}${_runtimePromptPatch}` },
+                    { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
                     ..._optimized.slice(1)
                 ];
             }
@@ -1319,8 +1332,14 @@ The latest user input contains an outside scene cue that happens before the char
             const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
             const response = await fetch(aiEndpoint, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'x-app-type': 'cupid', ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey }) },
-                body: JSON.stringify({ messages: _optimized, ...(_turnMeta || {}) })
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-app-type': 'cupid',
+                    'x-request-type': 'character',
+                    'x-chat-mode': 'single',
+                    ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey })
+                },
+                body: JSON.stringify({ messages: _optimized, requestType: 'character', chatMode: 'single', cacheKey: _gftCacheKey, ...(_turnMeta || {}) })
             });
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
