@@ -589,11 +589,11 @@
     },
     "wall_yuna_3": {
         "name": "Yuna",
-        "text": "Vem comigo."
+        "text": "Vem comigo até o portão dos fundos da escola."
     },
     "wall_yuna_4": {
         "name": "Yuna",
-        "text": "*Segue pro anexo da biblioteca. Passa pelo cantinho secreto de leitura — Mais pra dentro. O arquivo no subsolo. Entre as estantes empoeiradas. Tira um envelope antigo.*"
+        "text": "*Caminha até o anexo da biblioteca. Passa pelo cantinho secreto de leitura — Mais pra dentro. O arquivo no subsolo. Entre as estantes empoeiradas. Tira um envelope antigo.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",

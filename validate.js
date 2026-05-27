@@ -1823,6 +1823,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
             (sceneId === 'after3_dain_3' && nextId === 'after3_dain_4') ||  // CG → 원래 배경 복귀
             /^bitter_/.test(sceneId) ||  // 엔딩 몽타주 (시간 경과)
             /^hidden_true_/.test(sceneId) ||  // 히든 엔딩 몽타주
+            /^ending_/.test(path.basename(nextScene.background || '')) ||  // 엔딩 CG 전환
             /^wall_dain_glimpse_/.test(sceneId) ||  // 회상/비전 연출
             (/^wall_dain_skin\d+_/.test(sceneId) && /^wall_dain_glimpse_/.test(nextId)) ||  // 비전 진입
             /^night\d*_(dream|nightmare)_/.test(sceneId) ||
