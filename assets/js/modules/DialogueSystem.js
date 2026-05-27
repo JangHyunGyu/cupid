@@ -243,7 +243,7 @@ class DialogueSystem {
 
     _parseNarrationSegments(text) {
         const segments = [];
-        const regex = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+        const regex = /\*\*([^*]+)(?:\*\*)?|\*([^*]+)(?:\*)?/g;
         let lastIndex = 0;
         let match;
         while ((match = regex.exec(text)) !== null) {
