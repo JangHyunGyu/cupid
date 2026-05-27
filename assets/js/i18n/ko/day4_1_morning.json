@@ -6,19 +6,19 @@
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
-        "text": "*...이상한 꿈을 꿨다. 서연의 웃는 얼굴이 — 아직 눈앞에 어른거린다.*"
+        "text": "*알람이 울린다. 핸드폰 화면에 서연의 메시지가 떠 있다.*"
     },
     "morning4_nightmare_yuna": {
         "name": "{name}",
-        "text": "*...이상한 꿈을 꿨다. 유나에게 다가가려는데 — 손끝이 아직 허전하다.*"
+        "text": "*알람이 울린다. 핸드폰 화면에 유나의 메시지가 떠 있다.*"
     },
     "morning4_nightmare_dain": {
         "name": "{name}",
-        "text": "*...이상한 꿈을 꿨다. 다인을 잡았다고 생각했는데 — 아직 손에 아무것도 없다.*"
+        "text": "*알람이 울린다. 핸드폰 화면에 다인의 메시지가 떠 있다.*"
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*눈을 뜨자, 가장 먼저 떠오른 이름은 하나뿐이었다.*"
+        "text": "*알림을 다시 확인한다.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -47,7 +47,7 @@
     "minsu_cheer_4_branch": {},
     "minsu_cheer_4_ins_single": {
         "name": "{name}",
-        "text": "*핸드폰 캘린더를 본다. 오늘 약속은 하나뿐이다. — 이번엔 미루지 않기로 했다.*"
+        "text": "*핸드폰 캘린더를 본다. 오늘 약속은 하나뿐이다.*"
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
@@ -71,11 +71,11 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*명령형이다. 데이트 약속도 지시처럼. — 근데 웃긴다.*"
+        "text": "*메시지는 거기서 끝나 있다.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",
-        "text": "*약속 장소에 서 있다. — 올까? 금요일에 저렇게 화가 났는데.*"
+        "text": "*분수대 앞에 선다. 시계가 9시 58분을 가리킨다.*"
     },
     "morning4_yuna_msg_1": {
         "name": "유나",
@@ -87,7 +87,7 @@
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
-        "text": "*짧다. 그런데 오늘은 그 짧음이 선명하다. 다른 약속은 없다. — 이번엔 정말 그 한 곳으로 간다.*"
+        "text": "*메시지는 짧다. 오늘 약속은 하나뿐이다.*"
     },
     "morning4_dain_msg_1": {
         "name": "다인",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*교문 밖에서 보니 담임은 교탁보다 메모장 쪽에 더 가까워 보인다.*"
+        "text": "*담임은 종이봉투를 손에 들고 있다.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "담임선생님",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*어색한 침묵. — 그리고 담임이 먼저.*"
+        "text": "*침묵이 이어진다.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "담임선생님",
@@ -208,7 +208,7 @@
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "담임선생님",
-        "text": "...조금. 어제 네가 보고 나서 — 손이 다시 움직이더라."
+        "text": "...조금. 어제 이후로 몇 장 더 썼어."
     },
     "hidden_homeroom_d4_cafe_2_b": {
         "name": "{name}",
@@ -216,7 +216,7 @@
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "담임선생님",
-        "text": "도움이라기보다... *창밖을 보며* 들킨 뒤로 봉투가 좀 가벼워졌어. 혼자 들고 있으면 종이도 무겁더라."
+        "text": "도움이라기보다... *창밖을 보며* 누가 봤다는 게 남더라."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
@@ -252,7 +252,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*어제 빈 교실의 원고지가 떠오른다. 오늘은 학교 밖이고, 컵홀더 모서리가 계속 접히고 있다.*"
+        "text": "*컵홀더 모서리가 계속 접히고 있다.*"
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "담임선생님",
-        "text": "*주머니에서 손을 뺀다. 손끝이 잠깐 허공에서 맴돈다. 습관 같은 제스처.*"
+        "text": "*주머니에서 손을 뺀다. 손끝이 잠깐 허공에서 멈춘다.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "담임선생님",
@@ -292,7 +292,7 @@
     },
     "hidden_homeroom_d4_cafe_6_b": {
         "name": "담임선생님",
-        "text": "*{name}을 본다. 건조하지 않은 눈이다.* *카페 문이 뒤에서 천천히 닫힌다.*"
+        "text": "*카페 문이 뒤에서 천천히 닫힌다.*"
     },
     "hidden_homeroom_d4_decline": {
         "name": "담임선생님",
@@ -336,7 +336,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "보건선생님",
-        "text": "*안경을 만진다. 안경 너머 눈이 평소보다 또렷하다. 장난기 뒤에 숨어 있던 눈.*"
+        "text": "*안경을 만진다. 렌즈 아래에서 손끝이 멈춘다.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "보건선생님",
@@ -344,7 +344,7 @@
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*질문이 아니다. 보건선생님이 종이컵 가장자리를 엄지로 누른다. 찌그러진 자국이 남는다.*",
+        "text": "*보건선생님이 종이컵 가장자리를 엄지로 누른다. 찌그러진 자국이 남는다.*",
         "choices": [
             "올게요.",
             "..."
@@ -396,7 +396,7 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*학교 밖에서 보니 웃음이 다르다. 이름표도, 가운 주머니의 볼펜도 없다. 둘이서 검진 서류를 접고 혈압계를 닦는다.*"
+        "text": "*이름표도, 가운 주머니의 볼펜도 없다. 둘이서 검진 서류를 접고 혈압계를 닦는다.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "보건선생님",
@@ -464,7 +464,7 @@
     },
     "hidden_nurse_d4_5": {
         "name": "보건선생님",
-        "text": "*창밖을 보며* 그래서 여기 온 거야. 직함 말고 '선생님'이라고 불러주는 곳. — 작은 차이인데 꽤 크더라."
+        "text": "*창밖을 보며* 그래서 여기 온 거야. 여기서는 다들 선생님이라고 불러."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
@@ -556,7 +556,7 @@
     },
     "hidden_nurse_d4_meal_4": {
         "name": "보건선생님",
-        "text": "{name}. 오늘 고마웠어. — 진짜로."
+        "text": "{name}. 오늘 고마웠어."
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "보건선생님",

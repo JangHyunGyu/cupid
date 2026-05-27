@@ -109,7 +109,7 @@
     },
     "confess_yuna_1": {
         "name": "{name}",
-        "text": "*데이트가 끝나가고 있다. 유나가 걸음을 멈춘다.*"
+        "text": "*데이트가 끝났다. 유나가 걸음을 멈춘다.*"
     },
     "confess_yuna_2": {
         "name": "유나",
@@ -121,7 +121,7 @@
     },
     "confess_yuna_3b": {
         "name": "{name}",
-        "text": "*도서관 별관. 창문으로 석양이 스며든다. 며칠 사이에 익숙해진 장소.*"
+        "text": "*도서관 별관. 창문으로 석양이 스며든다. 소파 옆에 책갈피가 놓여 있다.*"
     },
     "confess_yuna_4": {
         "name": "유나",
@@ -129,11 +129,11 @@
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*말을 고르는 동안 손끝이 차갑다.*"
+        "text": "*책갈피 끝이 접혀 있다.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*숨이 짧아졌다. 이 침묵이 편했던 건 — 유나니까였다. 그걸 말해야 한다.*",
+        "text": "*유나가 책갈피를 만지며 기다린다.*",
         "choices": [
             "유나. 하나만 물어볼게.",
             "...여기 진짜 좋다."
@@ -141,31 +141,31 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": "*목소리가 생각보다 작게 나온다.*"
+        "text": "*목소리가 작게 나온다.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*피할 말은 떠오르는데, 하고 싶은 말만 남는다.*"
+        "text": "*책장 넘기는 소리가 멈춘다.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "유나. 처음에 네가 말 안 하는 게 벽인 줄 알았어. 근데 아니더라."
+        "text": "유나. 너랑 있으면 말을 덜 고르게 돼."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
-        "text": "네 옆에 있으면 조용한 게 불편하지 않았어."
+        "text": "그게 편했어."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*유나 앞에서는 말수가 줄었다. 손끝이 차갑다.*"
+        "text": "*유나가 책갈피를 내려놓는다.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "너는 — 말 대신 옆에 앉아주는 사람이었어. 네 옆에서는 침묵도 불편하지 않았어."
+        "text": "오늘 이후에도 너랑 보고 싶어."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
-        "text": "좋아해."
+        "text": "대답은 지금 안 해도 돼."
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
@@ -173,7 +173,7 @@
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": "*말이 떨어진 뒤에도 시선은 쉽게 올라가지 않는다.*"
+        "text": "*유나는 바로 대답하지 않는다.*"
     },
     "confess_yuna_yes_8": {
         "name": "유나",
@@ -185,15 +185,15 @@
     },
     "confess_yuna_yes_8_c": {
         "name": "유나",
-        "text": "...가지 마. 갑자기 사라지면 싫어."
+        "text": "...먼저 말해. 없어질 거면."
     },
     "confess_yuna_yes_9": {
         "name": "유나",
-        "text": "...가지 마. 이번엔 가지 마."
+        "text": "아무 말 없이 사라지지는 마."
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*'이번엔.' 유나가 그 단어에서만 숨을 조금 늦게 쉰다. 잡은 손은 놓지 않는다.*"
+        "text": "*유나는 소매 끝을 쥔 채 놓지 않는다.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
@@ -217,7 +217,7 @@
     },
     "confess_dain_1": {
         "name": "{name}",
-        "text": "*데이트가 끝나가고 있다. 다인이 학교 쪽으로 뛰어간다.*"
+        "text": "*데이트가 끝났다. 다인이 학교 쪽으로 뛰어간다.*"
     },
     "confess_dain_2": {
         "name": "다인",
@@ -229,7 +229,7 @@
     },
     "confess_dain_3b": {
         "name": "{name}",
-        "text": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다. 며칠 사이에 수많은 추억이 쌓인 장소.*"
+        "text": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다.*"
     },
     "confess_dain_4": {
         "name": "다인",
@@ -237,7 +237,7 @@
     },
     "confess_dain_5": {
         "name": "{name}",
-        "text": "*농담으로 넘기면 오늘도 지나갈 수 있다. 그런데 그러고 싶지 않다.*"
+        "text": "*공이 바닥에 한 번 튄다.*"
     },
     "confess_dain_choice": {
         "name": "다인",
@@ -249,7 +249,7 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": "*목소리가 체육관 바닥에 낮게 깔린다.*"
+        "text": "*목소리가 낮게 나온다.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
@@ -261,27 +261,27 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "그 눈이 나를 안 볼 때 — 좀 답답해."
+        "text": "오늘 이후에도 너랑 만나고 싶어."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*가위바위보 고백도 아니고. 그래도 내 방식으론 이게 제일 솔직하다.*"
+        "text": "*다인이 공을 내려놓는다.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "그래서 자꾸 너한테 가게 돼."
+        "text": "대답은 지금 안 해도 돼."
     },
     "confess_dain_yes_6": {
         "name": "{name}",
-        "text": "좋아해."
+        "text": "그냥 말해두고 싶었어."
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": "*마지막 말이 코트 위에 남는다.*"
+        "text": "*체육관 조명이 낮게 웅웅거린다.*"
     },
     "confess_dain_yes_8": {
         "name": "다인",
-        "text": "*그대로 멈춘다. 웃음이 빠진 얼굴 위로 눈빛만 천천히 젖는다. 두 손으로 얼굴을 덮어버린다.*"
+        "text": "*다인이 그대로 멈춘다. 두 손으로 얼굴을 덮는다.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "confess_dain_yes_9": {
         "name": "다인",
-        "text": "...잠깐, 나 지금 말 정리가 안 돼. 기쁜데 왜 이래..."
+        "text": "...잠깐. 나 지금 말 정리가 안 돼."
     },
     "confess_dain_yes_9_b": {
         "name": "{name}",
@@ -297,7 +297,7 @@
     },
     "confess_dain_yes_10": {
         "name": "다인",
-        "text": "나도 좋아해. ...많이."
+        "text": "내일도 와."
     },
     "confess_dain_yes_10_b": {
         "name": "다인",
@@ -309,7 +309,7 @@
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*토스를 올려주는 건 되는데, 세 글자는 안 된다. 한심하다.*"
+        "text": "*토스를 올려준다. 말은 나오지 않는다.*"
     },
     "confess_dain_no_3": {
         "name": "다인",
@@ -317,7 +317,7 @@
     },
     "confess_dain_no_4": {
         "name": "다인",
-        "text": "...다음에는 도망치지 마."
+        "text": "...다음에는 말해."
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
