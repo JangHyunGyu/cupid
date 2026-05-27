@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*둘째 날. 교복 소매가 어제보다 덜 뻣뻣하다.*"
+        "text": "*둘째 날. 교복 소매가 어제보다 덜 접힌다.*"
     },
     "morning2_start_2": {},
     "morning2_greet_seo_1": {},
@@ -23,7 +23,7 @@
     },
     "morning2_greet_dain_1": {
         "name": "다인",
-        "text": "야! 어제 재밌었지? 오늘도 같이 뭐 하자!"
+        "text": "야! 어제 재밌었다, 오늘도 같이 뭐 하자!"
     },
     "morning2_greet_dain_2": {
         "name": "다인",
@@ -47,11 +47,11 @@
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
-        "text": "*자리에 앉으려는데 책상 위에 접힌 쪽지가 놓여 있다. '...어제, 고마웠어.'*"
+        "text": "*자리에 앉으려는데 — 책상 위에 접힌 쪽지. '...어제, 고마웠어.'*"
     },
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다. 뒷면에는 작게 '점심에 도서관 별관으로.'라고 적혀 있다.*"
+        "text": "*유나의 글씨. 어제보다 한 문장이 길어졌다. — 뒷면에 작게 '점심에 도서관 별관으로.'*"
     },
     "morning2_greet_yuna_others": {
         "name": "서연",
@@ -59,7 +59,7 @@
     },
     "morning2_greet_yuna_others_seo": {
         "name": "{name}",
-        "text": "*웃고 있다. 하지만 시선이 쪽지 위에 멈춘다.*"
+        "text": "*웃고 있다. 하지만 눈길은 쪽지 위에 멈춘다.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "다인",
@@ -71,7 +71,7 @@
     },
     "morning2_dain_1": {
         "name": "{name}",
-        "text": "*교실 문을 여는 순간 등에 충격이 온다.*"
+        "text": "*교실 문을 여는 순간 — 등짝에 충격.*"
     },
     "morning2_dain_2": {
         "name": "다인",
@@ -87,7 +87,7 @@
     },
     "morning2_dain_5": {
         "name": "다인",
-        "text": "이게 정상이야! 네가 부족한 거야!"
+        "text": "이게 정상이야! 너가 부족한 거야!"
     },
     "morning2_dain_6": {
         "name": "다인",
@@ -95,11 +95,11 @@
     },
     "morning2_note_1": {
         "name": "{name}",
-        "text": "*자리에 앉으려는데 책상 위에 접힌 쪽지가 하나 놓여 있다.*"
+        "text": "*자리에 앉으려는데 — 책상 위에 접힌 쪽지가 하나 놓여 있다.*"
     },
     "morning2_note_2": {
         "name": "{name}",
-        "text": "*'점심에 도서관 별관으로. 유나'*"
+        "text": "*'점심에 도서관 별관으로. — 유나'*"
     },
     "morning2_note_3": {
         "name": "{name}",
@@ -115,7 +115,7 @@
     },
     "morning2_seo_5": {
         "name": "서연",
-        "text": "순찰이야. 출석률 확인 겸."
+        "text": "순찰이야. — 출석률 확인 겸."
     },
     "morning2_minsu_1": {
         "name": "서연",
@@ -123,11 +123,11 @@
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*서연이 사라진 복도를 바라보는데 뒤에서 민수가 돌아본다.*"
+        "text": "*서연이 사라진 복도를 바라보는데 — 뒤에서 민수가 돌아본다.*"
     },
     "morning2_minsu_3": {
         "name": "민수",
-        "text": "야, 전학 온 지 이틀 만에 학생회장이 인사하러 오냐? 나 1년 다녀도 눈도 안 마주치던데."
+        "text": "야, 전학 이틀 만에 학생회장이 인사하러 오냐? 나 1년 다녀도 눈도 안 마주치던데."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "morning2_break_transition_b": {
         "name": "{name}",
-        "text": "*교실 문 앞에 담임이 서 있다. 출석부를 들고 문 쪽을 힐끗 보다가 나와 눈이 마주친다.*"
+        "text": "*교실 문 앞에 담임이 서 있다. 출석부를 들고, 문 쪽을 힐끗 보다가 — 나와 눈이 마주친다.*"
     },
     "morning2_break_1": {
         "name": "{name}",
@@ -175,7 +175,7 @@
     },
     "hidden_homeroom_d2_1_c": {
         "name": "담임선생님",
-        "text": "아니, 전학 서류 확인이야. 행정적인 거."
+        "text": "아니, 전학 서류 확인이야. — 행정적인 거."
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
@@ -195,11 +195,11 @@
     },
     "hidden_homeroom_d2_3_c": {
         "name": "담임선생님",
-        "text": "*시선이 열린 서랍 쪽에 잠깐 머문다.*"
+        "text": "*눈길이 열린 서랍 쪽에 닿았다가 돌아온다.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "담임선생님",
-        "text": "읽는 거? 쓰는 건?"
+        "text": "읽는 거? — 쓰는 건?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "담임선생님",
-        "text": "*시선이 서랍 쪽을 스치고 바로 돌아온다.*"
+        "text": "*눈길이 서랍 쪽을 스치고 바로 돌아온다.*"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "담임선생님",
-        "text": "...추리소설. 범인 잡는 거 말고, 동기를 추적하는 쪽."
+        "text": "...추리소설. 범인 잡는 거 말고 — 동기를 추적하는 쪽."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "담임선생님",
@@ -247,7 +247,7 @@
     },
     "hidden_homeroom_d2_8": {
         "name": "담임선생님",
-        "text": "다인이가 시끄럽지? 원래 저래. 근데 소란 피우는 애랑 에너지가 남아도는 애는 달라."
+        "text": "다인이가 시끄럽지? — 원래 저래. 근데 소란 피우는 애랑 에너지가 남아도는 애는 달라."
     },
     "hidden_homeroom_d2_8_b": {
         "name": "{name}",
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*담임의 시선이 다인의 이름표 줄에서 잠깐 멈춘다.*"
+        "text": "*담임의 눈길이 다인의 이름표 줄에서 한 박자 멈춘다.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "담임선생님",
@@ -275,7 +275,7 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "담임선생님",
-        "text": "담당 학급 관리에 포함되는 거니까. 업무야."
+        "text": "담당 학급 관리 항목에 포함되는 거니까. 업무야."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "hidden_homeroom_d2_11": {
         "name": "담임선생님",
-        "text": "...전학생이라고 예외로 두면 다른 애들이 뭐라 하지."
+        "text": "...전학생이라고 예외 두면 다른 애들이 뭐라 하지."
     },
     "hidden_homeroom_d2_11_b": {
         "name": "담임선생님",
@@ -331,7 +331,7 @@
     },
     "morning2_dain_react_1": {
         "name": "{name}",
-        "text": "*어깨에 닿은 감촉이 한 박자 늦게 의식된다. 먼지 때문은 아닐 텐데.*"
+        "text": "*어깨에 닿은 감촉이 한 박자 늦게 의식된다. — 먼지 때문은 아닐 텐데.*"
     },
     "morning2_dain_react_2": {
         "name": "{name}",
@@ -355,6 +355,6 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*1년 동안 한 번도 먼저 다가간 적 없다는 그 사람이 나한테는 먼저 왔다.*"
+        "text": "*1년 동안 한 번도 먼저 다가간 적 없다는 그 사람이 — 나한테는 먼저 왔다.*"
     }
 }

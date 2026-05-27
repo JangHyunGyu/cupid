@@ -141,7 +141,7 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": "*목소리가 작게 나온다.*"
+        "text": "*목소리가 작아진다.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
@@ -233,7 +233,7 @@
     },
     "confess_dain_4": {
         "name": "다인",
-        "text": "*공을 하나 들고 있다. 아무렇지 않게. 근데 손가락이 하얗다. 꽉 쥐고 있다.*"
+        "text": "*공을 하나 들고 있다. 아무렇지 않게. — 근데 손가락이 하얗다. 꽉 쥐고 있다.*"
     },
     "confess_dain_5": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "다인아. 나 너한테 할 말이 있어."
+        "text": "다인아. 나 — 너한테 할 말이 있어."
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "confess_dain_yes_8": {
         "name": "다인",
-        "text": "*다인이 그대로 멈춘다. 두 손으로 얼굴을 덮는다.*"
+        "text": "*다인이 그 자리에 멈춘다. 두 손으로 얼굴을 덮는다.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     },
     "confess_dain_no_3": {
         "name": "다인",
-        "text": "*배구공을 튀긴다. 한 번. 두 번. 세 번째에 멈춘다.*"
+        "text": "*배구공을 튀긴다. 한 번. 두 번. — 세 번째에 멈춘다.*"
     },
     "confess_dain_no_4": {
         "name": "다인",
