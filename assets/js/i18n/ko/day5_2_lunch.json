@@ -65,7 +65,7 @@
     },
     "tour_yuna_1_check": {
         "name": "{name}",
-        "text": "*도서관 별관으로 향한다.*"
+        "text": "*도서관 별관으로 간다.*"
     },
     "tour_yuna_1": {
         "name": "{name}",
@@ -129,7 +129,7 @@
     },
     "tour_dain_1_check": {
         "name": "{name}",
-        "text": "*체육관으로 향한다.*"
+        "text": "*체육관으로 간다.*"
     },
     "tour_dain_1": {
         "name": "{name}",
