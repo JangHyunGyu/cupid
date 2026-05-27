@@ -149,7 +149,7 @@
     },
     "date_yuna_bookstore": {
         "name": "{name}",
-        "text": "*서점으로 향한다. 유나가 서가 사이를 천천히 걷는다.*"
+        "text": "*서점으로 간다. 유나가 서가 사이를 천천히 걷는다.*"
     },
     "date_yuna_bookstore_2": {
         "name": "유나",

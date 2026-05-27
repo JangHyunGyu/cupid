@@ -9,15 +9,15 @@
     },
     "after3_auto_dain": {
         "name": "{name}",
-        "text": "*다인이와 약속이 있다. 체육관으로 향한다.*"
+        "text": "*다인이와 약속이 있다. 체육관으로 간다.*"
     },
     "after3_auto_yuna": {
         "name": "{name}",
-        "text": "*유나와 약속이 있다. 도서관 별관으로 향한다.*"
+        "text": "*유나와 약속이 있다. 도서관 별관으로 간다.*"
     },
     "after3_auto_seo": {
         "name": "{name}",
-        "text": "*서연이와 약속이 있다. 학생회실로 향한다.*"
+        "text": "*서연이와 약속이 있다. 학생회실로 간다.*"
     },
     "after3_multi_choice": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "after3_reject_for_yuna_walk_gym": {
         "name": "{name}",
-        "text": "*체육관 쪽으로 발길이 향한다.*"
+        "text": "*발길이 체육관 쪽으로 간다.*"
     },
     "after3_reject_for_yuna_3": {
         "name": "다인",
