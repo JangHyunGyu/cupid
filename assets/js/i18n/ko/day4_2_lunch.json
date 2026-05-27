@@ -21,7 +21,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "서연",
-        "text": "*시선을 돌리며 머리카락을 귀 뒤로 넘긴다.* ...바람 좀 쐬자."
+        "text": "*눈길을 돌리며 머리카락을 귀 뒤로 넘긴다.* ...바람 좀 쐬자."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "date_seo_duck": {
         "name": "서연",
-        "text": "얘들은 단순해서 좋다. 빵 주면 따라오고, 안 주면 안 오고."
+        "text": "이 애들은 단순해서 좋다. 빵 주면 따라오고, 안 주면 안 오고."
     },
     "date_seo_duck_2": {
         "name": "{name}",
@@ -81,7 +81,7 @@
     },
     "date_seo_succulent_3": {
         "name": "서연",
-        "text": "키울 수 있으면. 못 키우면 내가 다시 가져갈 거니까."
+        "text": "키울 수 있으면. — 못 키우면 내가 다시 가져갈 거니까."
     },
     "date_seo_end": {
         "name": "서연",
@@ -107,8 +107,8 @@
         "name": "{name}",
         "text": "*뭐라고 하지?*",
         "choices": [
-            "교복 아닌 유나는 처음 본다.",
-            "오늘 분위기가 다르다."
+            "교복 밖의 유나 처음 본다.",
+            "오늘 눈이 다르다."
         ]
     },
     "date_yuna_pretty_high": {
@@ -129,7 +129,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "유나",
-        "text": "*시선을 들지 않는다. 기다리고 있다.*"
+        "text": "*눈을 들지 않는다. 기다리고 있다.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "유나",
-        "text": "*시선을 컵으로 내리며* ...됐어."
+        "text": "*눈을 컵으로 내리며* ...됐어."
     },
     "date_yuna_pretty_low": {
         "name": "유나",
@@ -205,7 +205,7 @@
     },
     "date_yuna_end": {
         "name": "유나",
-        "text": "*{name}을 본다. 넘기던 페이지가 손끝에서 멈춘다.*"
+        "text": "*{name}을 본다. 넘기던 페이지가 손 안에서 멈춘다.*"
     },
     "date_yuna_end_b": {
         "name": "유나",
@@ -333,7 +333,7 @@
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*웃고 있다. 캡모자 그늘 아래 시선이 쇼윈도 쪽에 남아 있다.*"
+        "text": "*웃고 있다. 캡모자 그늘 아래 눈길이 쇼윈도 쪽에 남아 있다.*"
     },
     "date_dain_end_b": {
         "name": "다인",

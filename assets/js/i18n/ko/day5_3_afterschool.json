@@ -91,7 +91,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "다인",
-        "text": "*배구공을 한 번 더 높이 던지고 받는다. 받는 손끝이 조금 늦다.*"
+        "text": "*배구공을 한 번 더 높이 던지고 받는다. 받는 손이 한 박자 늦다.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -124,7 +124,7 @@
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*어디로 갈까?*",
+        "text": "*어디로 갈까.*",
         "choices": [
             "약속했던 사람에게 간다",
             "끝까지 생각나는 쪽으로 간다"
@@ -252,7 +252,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*유나가 시선을 돌리지 않는다. {name}의 발이 한 걸음 앞으로 나간다.*"
+        "text": "*유나가 눈을 돌리지 않는다. {name}의 발이 한 걸음 앞으로 나간다.*"
     },
     "after5_last_chance_yuna_7": {
         "name": "유나",
@@ -298,7 +298,7 @@
     },
     "after5_confess_react_dain_low": {
         "name": "다인",
-        "text": "*숨을 고른다.* ...들었어. 바로 웃긴 좀 힘들어."
+        "text": "*숨을 고른다.* ...들었어. 바로 웃기는 좀 힘들어."
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
@@ -339,7 +339,7 @@
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*그렇게 학교를 벗어나 걸었다.*"
+        "text": "*그렇게 — 학교를 벗어나 걸었다.*"
     },
     "after5_confess_react_yuna_low": {
         "name": "유나",
