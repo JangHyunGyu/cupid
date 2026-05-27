@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*숨이 목까지 차오른다. 그래도 이번엔 피하지 않는다.*"
+        "text": "*숨이 목까지 차오른다. 주머니 속 핸드폰을 한 번 쥐었다가 놓는다.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "confess_yuna_4": {
         "name": "유나",
-        "text": "*소파에 앉아 {name}을 본다. 기다리고 있었다는 듯한 시선이다.*"
+        "text": "*소파에 앉아 {name}을 본다. 손에는 책갈피가 끼워져 있다.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
@@ -157,7 +157,7 @@
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*유나 앞에서는 말을 줄이게 된다. 빈칸까지 들키는 기분이다.*"
+        "text": "*유나 앞에서는 말수가 줄었다. 손끝이 차갑다.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*말을 마치자, 방 안의 먼지까지 조용해진다.*"
+        "text": "*말을 마치자 책장 넘기는 소리가 멈춘다.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",

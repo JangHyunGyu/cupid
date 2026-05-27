@@ -1,7 +1,7 @@
 {
     "morning5_start": {
         "name": "{name}",
-        "text": "*다섯째 날. 일요일이지만 학교 행사가 있다. 교복이 편해졌다. 소매 끝이 더는 손목을 긁지 않는다.*"
+        "text": "*다섯째 날. 일요일이지만 학교 행사가 있다. 교복 소매 끝이 더는 손목을 긁지 않는다.*"
     },
     "morning5_start_branch": {},
     "morning5_start_b": {
@@ -179,7 +179,7 @@
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "담임선생님",
-        "text": "...읽고 말해줄 줄 알았어. — 학생이라서 부담이 덜할 것 같아서 보여준 건데."
+        "text": "...읽고 말해줄 줄 알았어. — 학생한테는 덜 들킬 줄 알고 보여준 건데."
     },
     "hidden_homeroom_d5_praise_trap_11": {
         "name": "담임선생님",
@@ -267,7 +267,7 @@
     },
     "hidden_homeroom_d5_6_f": {
         "name": "{name}",
-        "text": "그 말, 이제 안 하셔도 될 것 같아요."
+        "text": "그 말, 이제 안 하셔도 돼요."
     },
     "hidden_homeroom_d5_6_g": {
         "name": "담임선생님",

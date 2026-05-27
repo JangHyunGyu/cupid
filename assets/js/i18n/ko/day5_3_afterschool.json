@@ -127,7 +127,7 @@
         "text": "*어디로 가야 할까. 오늘은 — 내가 정해야 한다.*",
         "choices": [
             "약속했던 사람에게 간다",
-            "끝까지 마음에 남은 쪽으로 간다"
+            "끝까지 생각나는 쪽으로 간다"
         ]
     },
     "after5_last_chance_1": {
@@ -252,7 +252,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*짧은 한마디. 근데 그 말이 등을 민다. 유나가 시선을 피하지 않는다.*"
+        "text": "*유나가 시선을 돌리지 않는다. {name}의 발이 한 걸음 앞으로 나간다.*"
     },
     "after5_last_chance_yuna_7": {
         "name": "유나",
@@ -289,7 +289,7 @@
     },
     "after5_confess_react_seo_low": {
         "name": "서연",
-        "text": "*한참 말이 없다.* ...고마워. 근데 지금은, 그 말만으로 괜찮은 척하면 안 될 것 같아."
+        "text": "*한참 말이 없다.* ...고마워. 근데 지금은, 그 말만으로 괜찮다고 말하면 안 돼."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
@@ -355,7 +355,7 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*목구멍이 막힌 것처럼 아무 말도 나오지 않는다. 이번에도.*"
+        "text": "*목이 잠긴다. 아무 말도 나오지 않는다. 이번에도.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
