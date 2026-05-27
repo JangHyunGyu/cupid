@@ -124,7 +124,7 @@
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*어디로 갈까.*",
+        "text": "*어디로 갈까?*",
         "choices": [
             "약속했던 사람에게 간다",
             "끝까지 생각나는 쪽으로 간다"
@@ -339,7 +339,7 @@
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*그렇게 — 학교를 벗어나 걸었다.*"
+        "text": "*그렇게 학교를 벗어나 걸었다.*"
     },
     "after5_confess_react_yuna_low": {
         "name": "유나",
