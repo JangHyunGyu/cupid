@@ -589,11 +589,11 @@
     },
     "wall_yuna_3": {
         "name": "Yuna",
-        "text": "Ven conmigo."
+        "text": "Ven conmigo hasta la puerta trasera de la escuela."
     },
     "wall_yuna_4": {
         "name": "Yuna",
-        "text": "*Se dirige al anexo de la biblioteca. Pasa de largo el rincón secreto de lectura — Y sigue más adentro. El archivo del sótano. Entre estanterías llenas de polvo. Saca un sobre viejo.*"
+        "text": "*Camina hacia el anexo de la biblioteca. Pasa de largo el rincón secreto de lectura — Y sigue más adentro. El archivo del sótano. Entre estanterías llenas de polvo. Saca un sobre viejo.*"
     },
     "wall_yuna_6": {
         "name": "Yuna",

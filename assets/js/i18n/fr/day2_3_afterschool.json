@@ -190,7 +190,7 @@
     },
     "after2_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle pousse le gobelet de tteokbokki et prend ses baguettes.* On va voir si tu tiens le piment.",
+        "text": "*En entrant dans la boutique, elle pousse le gobelet de tteokbokki et prend ses baguettes.* On va voir si tu tiens le piment.",
         "context": "Jour 2 après les cours, venus manger du tteokbokki après un pari au gym. Ton : Plus proches qu'hier. Les taquineries sont naturelles et confortables. Jeu de séduction. Pas encore de sujets lourds.",
         "personality": "Dain est une athlète énergique et compétitive."
     },
