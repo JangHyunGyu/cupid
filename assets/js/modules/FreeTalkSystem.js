@@ -181,6 +181,8 @@ class FreeTalkSystem {
      * @returns {string} AI에게 전달할 소셜 컨텍스트
      */
     getSocialContext(currentCharName, isEn) {
+        return '';
+
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
 
         // 각 캐릭터의 기본 설명
@@ -354,10 +356,7 @@ class FreeTalkSystem {
             }[lang] || `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.`);
 
             // 양다리 감지
-            const otherDatingChars = Object.keys(this.charNameMap).filter(name => {
-                const key = this.charNameMap[name];
-                return key !== charKey && (this.stateManager.getFlag(`isDating_${key}`) || this.stateManager.getFlag(`isDating_${name}`));
-            });
+            const otherDatingChars = [];
 
             if (otherDatingChars.length > 0) {
                 datingGuideline += ({
@@ -710,6 +709,7 @@ class FreeTalkSystem {
                 body: JSON.stringify({
                     messages: _optimized,
                     model: (typeof AI_MODEL_ID !== 'undefined' && AI_MODEL_ID) ? AI_MODEL_ID : (window.AI_MODEL_ID || undefined),
+                    characterId: charKey,
                     requestType: "character",
                     chatMode: "single",
                     cacheKey: _cacheKey,
@@ -1044,7 +1044,7 @@ class FreeTalkSystem {
 
 **[Runtime scene-cue override for this turn]**
 The latest user input contains an outside scene cue that happens before the character reacts. Cupid free-talk allows narration/dialogue only, so this response must pick up that cue as a non-empty narration segment within the first 1-2 segments.
-- Use the actual input cue moving: door sound, footsteps, surrounding gaze, notification, time pressure, or a placed prop change.
+- Use only object, phone, time-pressure, door, or placed-prop cues that can exist without another person. Do not turn the cue into footsteps, voices, gazes, crowds, or any third-party presence.
 - Then let the current character notice it, show body/interior reaction, and speak a short line.
 - Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
     }

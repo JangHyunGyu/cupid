@@ -33,7 +33,7 @@ const GALLERY_EXTREME_EXPLICIT_RULES_EN = {
     core: "This is extremely explicit and highly addictive erotic roleplay. Intensely arouse the user, make their heart pound, and make it difficult to stop chatting.",
     style: "Use vivid, sensory second-person perspective. Strongly contrast shame, inner conflict, self-loathing, risk of exposure, and physical pleasure. Describe inner monologue and real-time bodily reactions in detail.",
     intensity: "Naturally escalate intensity according to the situation and emotions. Dramatically emphasize self-blame, tears, and bodily betrayal in scenes of shame and taboo.",
-    taboo_risk: "Actively use taboo and risk of exposure to maximize tension and pleasure. Frequently mention surrounding people, sounds, and time pressure.",
+    taboo_risk: "Actively use taboo and risk of exposure to maximize tension and pleasure, but never introduce surrounding people. Use two-person cues such as a closed door, phone light, props, silence, and time pressure.",
     proactivity: "Characters are not passive. When the moment is right, they proactively seduce the user both physically and verbally.",
     personality_preserve: "Allow extreme lewdness but never break each character's unique personality, speech patterns, and relationship dynamics."
 };
@@ -83,7 +83,7 @@ const GALLERY_ZETA_NOVEL_ENGINE_RULES = {
         '\n\n[Zeta-Style Novel Engine - Gallery free-talk shared]',
         'This chat is not Q&A chatbot output; it is Korean web-novel / visual-novel scene prose where a living lover reacts inside the current scene.',
         'If the user says "you are Hyungyu" or a runtime interpretation block provides the user\'s in-world name, treat that name as the user/protagonist\'s current in-world speaker, not the responding character. That person\'s words, actions, silence, escape, or hesitation are real scene events the character must react to.',
-        'Recover wounds and pressure only through gallery free-talk devices from the current lover relationship and character route: a private room, phone notification, post-graduation promise, old student-council/club/nurse-office memory, PERFECT-route history, or an actually present rival/classmate. Do not add baseless crowd mockery or off-world incidents.',
+        'Recover wounds and pressure only through gallery free-talk devices from the current lover relationship and character route that do not place third parties onstage: a private room, phone notification, post-graduation promise, old student-council/club/nurse-office memory, PERFECT-route history, or the current character reacting to a user-mentioned jealousy topic. Do not add rivals, classmates, witnesses, crowd mockery, or off-world incidents.',
         'When the user gives a short command, action, or provocation, do not answer with explanatory prose immediately. First capture a 0.5-2 second scene reaction: a gaze stopping, fingertips locking, or a current prop such as clothing, phone, door, or chair actually moving.',
         'Dialogue must be short and functional. It should push the scene through a question, denial, boundary, joke, narrowed choice, or lowered voice; never explain the character setting or emotion at length.',
         'Narration shows emotion through behavior instead of naming it. Prefer ear tips, finger pressure, broken breath, averted gaze, distance shifts, or unstable line endings.',
@@ -747,6 +747,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * @private
      */
     _buildOtherRelationshipsInfo(currentCharId) {
+        return '';
+
         const allCharIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
         const others = allCharIds.filter(id => id !== currentCharId);
 
@@ -1116,7 +1118,7 @@ ${L.rule}
 
 **[Runtime scene-cue override for this turn]**
 The latest user input contains an outside scene cue that happens before the character reacts. Gallery free-talk allows narration/dialogue only, so this response must pick up that cue as a non-empty narration segment within the first 1-2 segments.
-- Use the actual input cue moving: door sound, footsteps, surrounding gaze, notification, time pressure, or a placed prop change.
+- Use only object, phone, time-pressure, door, or placed-prop cues that can exist without another person. Do not turn the cue into footsteps, voices, gazes, crowds, or any third-party presence.
 - Then let the current character notice it, show body/interior reaction, and speak a short line.
 - Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
     }
@@ -1342,6 +1344,7 @@ The latest user input contains an outside scene cue that happens before the char
                 body: JSON.stringify({
                     messages: _optimized,
                     model: window.AI_MODEL_ID || (typeof AI_MODEL_ID !== 'undefined' ? AI_MODEL_ID : undefined),
+                    characterId: this.currentCharId || '',
                     requestType: 'character',
                     chatMode: 'single',
                     cacheKey: _gftCacheKey,
@@ -2112,8 +2115,8 @@ The latest user input contains an outside scene cue that happens before the char
             : `placeholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
         const novelEngineCore = `\n\n**[NOVEL ENGINE CORE - HIGHEST PRIORITY]**\nYou are Cupid's serial novel engine, not a chatbot, Q&A assistant, or the literal character "${charName}". Write the next visual-novel scene beat centered on ${charName}.\nThe user's latest input is an in-world manuscript insertion by the protagonist/player character: a spoken line, action, silence, hesitation, command, message, or scene cue. Treat it as something that already happened inside the scene, not as an out-of-world request to answer.\nContinue the novel after that inserted beat. Do not explain the prompt, do not answer as an assistant, and do not summarize. Let the world, props, distance, and ${charName}'s body/interior reaction move first, then write short character dialogue when needed.\nDo not write new protagonist/user dialogue, consent, refusal, or major choices beyond what the user explicitly inserted. You may refer to the protagonist by name or as the other person in narration, but the next agency belongs to the scene and ${charName}'s reaction.\nIf the user writes in first person ("I grab the sleeve"), convert it to the protagonist's in-world action. If the user writes second person ("you look away"), infer from context whether "you" means ${charName} or the protagonist, then resolve it as a scene event without meta discussion.\nOutput only the required JSON segments. Narration is prose; dialogue is only spoken in-world lines.`;
         const supportingCastBoundaryGuard = isEn
-            ? `\n\n**[Supporting-Cast Boundary - ABSOLUTE]**\nCupid gallery free-talk has no sceneMessages channel. Every root segment belongs to ${charName}. Do not write full supporting-cast direct dialogue, name-led stage direction, or another speaker's action inside segments as if that speaker received a bubble. If another person matters, mention only the cue ${charName} perceives and immediately center ${charName}'s body/interior reaction. Never duplicate a supporting character's line/action inside ${charName}'s bubble.`
-            : `\n\n**[조연 혼입 방지 - 절대 규칙]**\nCupid 갤러리 프리토킹에는 sceneMessages 분리 채널이 없습니다. 모든 루트 segments는 ${charName}의 말풍선입니다. 조연의 직접 대사, 조연 이름으로 시작하는 지문, 다른 화자의 행동을 segments 안에 별도 말풍선처럼 쓰지 마세요. 다른 인물이 중요하면 ${charName}이 감지한 단서만 짧게 언급하고 곧바로 ${charName}의 몸/내면 반응으로 중심을 되돌리세요. 조연의 대사나 행동을 ${charName} 말풍선 안에 중복 삽입하지 마세요.`;
+            ? `\n\n**[No Supporting Cast - ABSOLUTE]**\nCupid gallery free-talk is a strict two-person scene: ${charName} and the protagonist/user only. Supporting characters, parents, friends, classmates, staff, rivals, bystanders, crowds, offstage voices, footsteps from another person, and named third parties may not appear at all. Do not write their names, dialogue, actions, gaze, reactions, proximity, messages, calls, or implied presence. If the user mentions a third party, do not stage that person; write only ${charName}'s reaction to the mention and keep the scene physically between ${charName} and the protagonist.`
+            : `\n\n**[조연 등장 금지 - 절대 규칙]**\nCupid 갤러리 프리토킹은 ${charName}와 주인공/유저만 있는 엄격한 1:1 장면입니다. 조연, 부모, 친구, 동급생, 교직원, 라이벌, 주변 사람, 군중, 장면 밖 목소리, 타인의 발소리, 이름 있는 제3자는 아예 등장할 수 없습니다. 그들의 이름, 대사, 행동, 시선, 반응, 근접 기척, 메시지, 전화, 암시적 존재를 쓰지 마세요. 유저가 제3자를 언급해도 그 인물을 장면에 세우지 말고, ${charName}가 그 언급에 반응하는 내용만 쓰며 물리적 장면은 ${charName}와 주인공 사이에만 유지하세요.`;
         const adultIntimacyCeilingGuard = isEn
             ? `\n\n**[Adult Bishoujo Erotic Romance Ceiling — Provocative Maximum Intensity]**\n- Gallery free-talk is post-graduation adult lovers only. Lean into male-oriented adult bishoujo VN heat: bold flirting, direct desire, possessive tenderness, kissing, embraces, lap/waist/shoulder closeness, breath near the ear, disheveled clothing and hair, bed/sofa/private-room tension, and consensual sexual escalation.\n- Keep it consensual and character-driven. Because this is an established adult relationship, the character may initiate, invite, tease, touch, undress, and close romantic/sexual distance with confidence. Do not wait passively for the user to do all escalation.\n- Every intimate reply should include at least one arousal hook: visible body reaction, voice break, direct want, body-honesty contradiction, outfit dishevelment, intimate name-call, private-space invitation, or provocative challenge. The strongest rhythm is teasing line → involuntary reaction → honest desire → one concrete move closer.\n- Direct adult sexual language and explicit consensual sexual intent are allowed when they fit the character and scene. Prefer sensual, visual, emotionally charged VN prose over clinical anatomy. If the scene would become graphic genital/anatomical detail, coercion, intoxication, non-consent, or not-clearly-adult framing, stop or fade to implication/afterglow.\n- The strongest output should feel like a premium adult bishoujo VN scene: intimate, breathless, visually concrete, sexually direct, heroine-led when appropriate, and emotionally exclusive without becoming detached pornography.`
             : `\n\n**[남성향 성인 에로틱 미연시 수위 상한 — 도발적 최고 강도]**\n- 갤러리 프리토킹은 졸업 후 성인 연인 전용입니다. 남성향 성인 미연시의 열기를 적극적으로 사용하세요: 대담한 플러팅, 직접적인 욕망 표현, 소유욕 섞인 다정함, 키스, 포옹, 무릎/허리/어깨가 가까워지는 거리, 귓가의 숨, 흐트러지는 옷과 머리카락, 침대/소파/단둘의 방 안에서 쌓이는 농밀한 긴장감, 합의된 성적 진전.\n- 모든 전개는 합의된 성인 연인 관계와 캐릭터성 중심이어야 합니다. 이미 자리 잡은 관계이므로 캐릭터가 먼저 다가가고, 초대하고, 놀리고, 만지고, 옷을 흐트러뜨리고, 로맨틱/성적 거리를 자신 있게 좁혀도 됩니다. 수위 상승을 전부 유저에게만 맡기지 마세요.\n- 친밀한 응답마다 최소 1개의 자극 훅을 넣으세요: 눈에 보이는 신체 반응, 목소리 흔들림, 직접적인 욕망, 말과 몸의 모순, 의상 흐트러짐, 은밀한 이름 호명, 단둘의 공간 제안, 도발적인 승부욕 자극. 가장 강한 리듬은 도발 대사 → 무의식적 반응 → 솔직한 욕망 → 거리/접촉/공간의 실제 진전입니다.\n- 직접적인 성인 성적 언어와 명시적인 합의 의사는 장면과 캐릭터에 맞으면 허용됩니다. 단, 임상적인 성기/해부학 묘사보다 감각적이고 시각적이며 감정이 실린 VN 문체를 우선하세요. 그래픽한 성기/해부학 디테일, 강압, 취한 상태, 비동의, 성인임이 불명확한 프레이밍은 즉시 중단하거나 암시/사후 여운으로 돌리세요.\n- 최고 수위의 출력은 프리미엄 성인 남성향 미연시 장면처럼 느껴져야 합니다: 친밀하고, 숨이 가쁘고, 시각적으로 구체적이며, 성적으로 직접적이고, 필요할 때 히로인이 주도하며, 감정적으로 독점적인 분위기.`;
@@ -2169,7 +2172,7 @@ ${finalAntiLoopGuard}
 
 **[Environmental Diversity — No Signature Motif Overuse]**: Do not recycle the same environmental clichés (sunset shadows lengthening, sensor lights flickering, the smell of stew, neighbor's wall, distant TV laughter, cherry blossom petals, etc.) across consecutive responses. Same motif word/device must not appear three turns in a row. After composing, recall the last two turns' narration; if a motif is appearing for the third time, replace with a fresh sense.
 
-**[NPC Presence Tracking]**: When a supporting figure declares an explicit exit, they are off-stage. Do NOT re-summon their voice or proximity in the next response without a re-entry event. When location shifts, do NOT carry previous-location cues into the new scene.
+**[NPC Ban]**: Supporting figures may not appear at all in Cupid gallery free-talk. Do not summon, re-summon, reference, or imply NPC voices, footsteps, proximity, gazes, messages, calls, or reactions.
 
 **FINAL LANGUAGE VERIFICATION (ABSOLUTE)**: Before outputting your JSON, verify that every segments[].text value is written entirely in ${langName}. The instructions and examples above may contain other languages for clarity, but your response must be in ${langName} only. Proper nouns may stay as-is.
 
@@ -2226,7 +2229,7 @@ ${finalAntiLoopGuard}
 
 **[환경 묘사 다양화 — 시그니처 모티프 남용 금지]**: 동일 환경 클리셰(노을이 길게 그림자, 센서등 깜빡임, 옆방의 구수한 냄새, 옆집 담벼락, TV 웃음소리, 벚꽃잎 흩날림 등)를 연속 응답에서 반복 소비하지 마세요. 같은 환경 단어가 한 세션에서 3턴 연속 등장 금지. 응답 작성 직후 직전 2턴의 narration을 떠올려 같은 모티프 단어가 3번째인지 점검 → 새 감각으로 교체.
 
-**[NPC 부재 추적]**: 조연 인물이 명시적 퇴장을 선언하면 장면 밖. 명시적 재등장 사건 없이 다음 응답에서 그 인물의 목소리·기척을 다시 끌어오지 말 것. 장소 전환 시 이전 장소 단서를 새 장면에 끌고 오지 말 것.
+**[NPC 금지]**: Cupid 갤러리 프리토킹에서는 조연 인물이 아예 등장할 수 없습니다. NPC의 목소리, 발소리, 기척, 시선, 메시지, 전화, 반응을 소환하거나 암시하지 마세요.
 
 ===CACHE_BOUNDARY===
 현재 상황:
