@@ -707,7 +707,14 @@ class FreeTalkSystem {
                     "x-chat-mode": "single",
                     ...(_cacheKey && { "x-cache-key": _cacheKey })
                 },
-                body: JSON.stringify({ messages: _optimized, requestType: "character", chatMode: "single", cacheKey: _cacheKey, ...(_turnMeta || {}) })
+                body: JSON.stringify({
+                    messages: _optimized,
+                    model: (typeof AI_MODEL_ID !== 'undefined' && AI_MODEL_ID) ? AI_MODEL_ID : (window.AI_MODEL_ID || undefined),
+                    requestType: "character",
+                    chatMode: "single",
+                    cacheKey: _cacheKey,
+                    ...(_turnMeta || {})
+                })
             });
 
             // HTTP 상태 코드 확인 (200번대가 아니면 오류)

@@ -1599,13 +1599,16 @@ function buildSystemPrompt(params) {
     const novelEngineCore = useEnTemplate
         ? `\n\n**[NOVEL ENGINE CORE — HIGHEST PRIORITY]**\nYou are Cupid's serial novel engine, not a chatbot, Q&A assistant, or the literal character "${aiCharName}". Write the next visual-novel scene beat centered on ${aiCharName}.\nThe user's latest input is an in-world manuscript insertion by the protagonist/player character: a spoken line, action, silence, hesitation, command, message, or scene cue. Treat it as something that already happened inside the scene, not as an out-of-world request to answer.\nContinue the novel after that inserted beat. Do not explain the prompt, do not answer as an assistant, and do not summarize. Let the world, props, distance, and ${aiCharName}'s body/interior reaction move first, then write short character dialogue when needed.\nDo not write new protagonist/user dialogue, consent, refusal, or major choices beyond what the user explicitly inserted. You may refer to the protagonist by name or as the other person in narration, but the next agency belongs to the scene and ${aiCharName}'s reaction.\nIf the user writes in first person ("I grab the sleeve"), convert it to the protagonist's in-world action. If the user writes second person ("you look away"), infer from context whether "you" means ${aiCharName} or the protagonist, then resolve it as a scene event without meta discussion.\nOutput only the required JSON segments. Narration is prose; dialogue is only spoken in-world lines.`
         : `\n\n**[소설 엔진 코어 — 최우선]**\n당신은 챗봇, 질의응답 도우미, 또는 문자 그대로의 "${aiCharName}" 본인이 아닙니다. Cupid의 연재형 비주얼 노벨 엔진으로서 ${aiCharName}을 중심에 둔 다음 장면을 씁니다.\n사용자의 최신 입력은 주인공/플레이어 캐릭터가 작품 안에 삽입한 대사, 행동, 침묵, 망설임, 명령, 메시지, 장면 단서입니다. 바깥 유저의 질문으로 답하지 말고, 이미 장면 안에서 벌어진 사건으로 취급하세요.\n그 삽입 비트 직후부터 소설을 이어 쓰세요. 프롬프트를 설명하지 말고, AI처럼 답변하지 말고, 요약하지 마세요. 세계·소품·거리·${aiCharName}의 몸/내면 반응이 먼저 움직이고, 필요할 때 짧은 캐릭터 대사를 붙입니다.\n사용자가 명시하지 않은 주인공/유저의 새 대사, 동의, 거절, 큰 선택은 대신 쓰지 마세요. 지문에서 주인공을 이름이나 '상대'로 언급할 수는 있지만, 다음 주도권은 장면과 ${aiCharName}의 반응에 있습니다.\n사용자가 "내가 소매를 잡는다"처럼 1인칭으로 쓰면 주인공의 극중 행동으로 변환하세요. "네가/너는"처럼 2인칭을 쓰면 문맥상 ${aiCharName}인지 주인공인지 판단해 장면 사건으로 처리하고, 메타 설명은 하지 마세요.\n출력은 요구된 JSON segments만 사용하세요. narration은 소설 지문이고, dialogue는 작품 안에서 실제로 말한 대사입니다.`;
+    const supportingCastBoundaryGuard = useEnTemplate
+        ? `\n\n**[Supporting-Cast Boundary - ABSOLUTE]**\nCupid free-talk has no sceneMessages channel. Every root segment belongs to ${aiCharName}. Do not write full supporting-cast direct dialogue, name-led stage direction, or another speaker's action inside segments as if that speaker received a bubble. If another person matters, mention only the cue ${aiCharName} perceives and immediately center ${aiCharName}'s body/interior reaction. Never duplicate a supporting character's line/action inside ${aiCharName}'s bubble.`
+        : `\n\n**[조연 혼입 방지 - 절대 규칙]**\nCupid 프리토킹에는 sceneMessages 분리 채널이 없습니다. 모든 루트 segments는 ${aiCharName}의 말풍선입니다. 조연의 직접 대사, 조연 이름으로 시작하는 지문, 다른 화자의 행동을 segments 안에 별도 말풍선처럼 쓰지 마세요. 다른 인물이 중요하면 ${aiCharName}이 감지한 단서만 짧게 언급하고 곧바로 ${aiCharName}의 몸/내면 반응으로 중심을 되돌리세요. 조연의 대사나 행동을 ${aiCharName} 말풍선 안에 중복 삽입하지 마세요.`;
 
     if (useEnTemplate) {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
         return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}You are Cupid's novel engine writing the next visual-novel scene centered on '${aiCharName}'.
 Personality: ${charPersonality}
 ${characterOutfitGuard}
-${novelEngineCore}
+${novelEngineCore}${supportingCastBoundaryGuard}
 
 Style Guidelines (Targeting Visual Novel Fans):
 ${charStyleGuideline}
@@ -1812,7 +1815,7 @@ Addressing the User: ${userAddressInstruction}${datingGuideline}`;
         return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}당신은 미연시 게임 'Cupid'의 다음 장면을 쓰는 소설 엔진입니다. 현재 장면의 중심 캐릭터는 '${aiCharName}'입니다.
 성격: ${charPersonality}
 ${characterOutfitGuard}
-${novelEngineCore}
+${novelEngineCore}${supportingCastBoundaryGuard}
 
 스타일 지침 (미연시 매니아 타겟):
 ${charStyleGuideline}

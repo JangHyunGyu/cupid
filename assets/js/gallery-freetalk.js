@@ -1339,7 +1339,14 @@ The latest user input contains an outside scene cue that happens before the char
                     'x-chat-mode': 'single',
                     ...(_gftCacheKey && { 'x-cache-key': _gftCacheKey })
                 },
-                body: JSON.stringify({ messages: _optimized, requestType: 'character', chatMode: 'single', cacheKey: _gftCacheKey, ...(_turnMeta || {}) })
+                body: JSON.stringify({
+                    messages: _optimized,
+                    model: window.AI_MODEL_ID || (typeof AI_MODEL_ID !== 'undefined' ? AI_MODEL_ID : undefined),
+                    requestType: 'character',
+                    chatMode: 'single',
+                    cacheKey: _gftCacheKey,
+                    ...(_turnMeta || {})
+                })
             });
 
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -2104,6 +2111,9 @@ The latest user input contains an outside scene cue that happens before the char
             ? `Placeholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current situation.`
             : `placeholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
         const novelEngineCore = `\n\n**[NOVEL ENGINE CORE - HIGHEST PRIORITY]**\nYou are Cupid's serial novel engine, not a chatbot, Q&A assistant, or the literal character "${charName}". Write the next visual-novel scene beat centered on ${charName}.\nThe user's latest input is an in-world manuscript insertion by the protagonist/player character: a spoken line, action, silence, hesitation, command, message, or scene cue. Treat it as something that already happened inside the scene, not as an out-of-world request to answer.\nContinue the novel after that inserted beat. Do not explain the prompt, do not answer as an assistant, and do not summarize. Let the world, props, distance, and ${charName}'s body/interior reaction move first, then write short character dialogue when needed.\nDo not write new protagonist/user dialogue, consent, refusal, or major choices beyond what the user explicitly inserted. You may refer to the protagonist by name or as the other person in narration, but the next agency belongs to the scene and ${charName}'s reaction.\nIf the user writes in first person ("I grab the sleeve"), convert it to the protagonist's in-world action. If the user writes second person ("you look away"), infer from context whether "you" means ${charName} or the protagonist, then resolve it as a scene event without meta discussion.\nOutput only the required JSON segments. Narration is prose; dialogue is only spoken in-world lines.`;
+        const supportingCastBoundaryGuard = isEn
+            ? `\n\n**[Supporting-Cast Boundary - ABSOLUTE]**\nCupid gallery free-talk has no sceneMessages channel. Every root segment belongs to ${charName}. Do not write full supporting-cast direct dialogue, name-led stage direction, or another speaker's action inside segments as if that speaker received a bubble. If another person matters, mention only the cue ${charName} perceives and immediately center ${charName}'s body/interior reaction. Never duplicate a supporting character's line/action inside ${charName}'s bubble.`
+            : `\n\n**[조연 혼입 방지 - 절대 규칙]**\nCupid 갤러리 프리토킹에는 sceneMessages 분리 채널이 없습니다. 모든 루트 segments는 ${charName}의 말풍선입니다. 조연의 직접 대사, 조연 이름으로 시작하는 지문, 다른 화자의 행동을 segments 안에 별도 말풍선처럼 쓰지 마세요. 다른 인물이 중요하면 ${charName}이 감지한 단서만 짧게 언급하고 곧바로 ${charName}의 몸/내면 반응으로 중심을 되돌리세요. 조연의 대사나 행동을 ${charName} 말풍선 안에 중복 삽입하지 마세요.`;
         const adultIntimacyCeilingGuard = isEn
             ? `\n\n**[Adult Bishoujo Erotic Romance Ceiling — Provocative Maximum Intensity]**\n- Gallery free-talk is post-graduation adult lovers only. Lean into male-oriented adult bishoujo VN heat: bold flirting, direct desire, possessive tenderness, kissing, embraces, lap/waist/shoulder closeness, breath near the ear, disheveled clothing and hair, bed/sofa/private-room tension, and consensual sexual escalation.\n- Keep it consensual and character-driven. Because this is an established adult relationship, the character may initiate, invite, tease, touch, undress, and close romantic/sexual distance with confidence. Do not wait passively for the user to do all escalation.\n- Every intimate reply should include at least one arousal hook: visible body reaction, voice break, direct want, body-honesty contradiction, outfit dishevelment, intimate name-call, private-space invitation, or provocative challenge. The strongest rhythm is teasing line → involuntary reaction → honest desire → one concrete move closer.\n- Direct adult sexual language and explicit consensual sexual intent are allowed when they fit the character and scene. Prefer sensual, visual, emotionally charged VN prose over clinical anatomy. If the scene would become graphic genital/anatomical detail, coercion, intoxication, non-consent, or not-clearly-adult framing, stop or fade to implication/afterglow.\n- The strongest output should feel like a premium adult bishoujo VN scene: intimate, breathless, visually concrete, sexually direct, heroine-led when appropriate, and emotionally exclusive without becoming detached pornography.`
             : `\n\n**[남성향 성인 에로틱 미연시 수위 상한 — 도발적 최고 강도]**\n- 갤러리 프리토킹은 졸업 후 성인 연인 전용입니다. 남성향 성인 미연시의 열기를 적극적으로 사용하세요: 대담한 플러팅, 직접적인 욕망 표현, 소유욕 섞인 다정함, 키스, 포옹, 무릎/허리/어깨가 가까워지는 거리, 귓가의 숨, 흐트러지는 옷과 머리카락, 침대/소파/단둘의 방 안에서 쌓이는 농밀한 긴장감, 합의된 성적 진전.\n- 모든 전개는 합의된 성인 연인 관계와 캐릭터성 중심이어야 합니다. 이미 자리 잡은 관계이므로 캐릭터가 먼저 다가가고, 초대하고, 놀리고, 만지고, 옷을 흐트러뜨리고, 로맨틱/성적 거리를 자신 있게 좁혀도 됩니다. 수위 상승을 전부 유저에게만 맡기지 마세요.\n- 친밀한 응답마다 최소 1개의 자극 훅을 넣으세요: 눈에 보이는 신체 반응, 목소리 흔들림, 직접적인 욕망, 말과 몸의 모순, 의상 흐트러짐, 은밀한 이름 호명, 단둘의 공간 제안, 도발적인 승부욕 자극. 가장 강한 리듬은 도발 대사 → 무의식적 반응 → 솔직한 욕망 → 거리/접촉/공간의 실제 진전입니다.\n- 직접적인 성인 성적 언어와 명시적인 합의 의사는 장면과 캐릭터에 맞으면 허용됩니다. 단, 임상적인 성기/해부학 묘사보다 감각적이고 시각적이며 감정이 실린 VN 문체를 우선하세요. 그래픽한 성기/해부학 디테일, 강압, 취한 상태, 비동의, 성인임이 불명확한 프레이밍은 즉시 중단하거나 암시/사후 여운으로 돌리세요.\n- 최고 수위의 출력은 프리미엄 성인 남성향 미연시 장면처럼 느껴져야 합니다: 친밀하고, 숨이 가쁘고, 시각적으로 구체적이며, 성적으로 직접적이고, 필요할 때 히로인이 주도하며, 감정적으로 독점적인 분위기.`;
@@ -2123,7 +2133,7 @@ The latest user input contains an outside scene cue that happens before the char
 
 PERSONALITY: ${personality}
 ${characterOutfitGuard}
-${novelEngineCore}
+${novelEngineCore}${supportingCastBoundaryGuard}
 
 SPECIAL RELATIONSHIP INSTRUCTIONS:
 ${datingPrompt}
@@ -2179,7 +2189,7 @@ The user's name is '${playerName}'. Use their name naturally.`;
 
 성격: ${personality}
 ${characterOutfitGuard}
-${novelEngineCore}
+${novelEngineCore}${supportingCastBoundaryGuard}
 
 연인 관계 지시사항:
 ${datingPrompt}
