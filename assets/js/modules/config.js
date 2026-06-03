@@ -43,7 +43,7 @@ const API_ENDPOINT = "https://chatbot-api.yama5993.workers.dev/";
  * - FreeTalkSystem에서 이 주소로 HTTP POST 요청을 보내 AI 응답을 받아옵니다
  */
 const AI_API_ENDPOINT = "https://openrouter-api.yama5993.workers.dev/";
-const AI_MODEL_ID = "deepseek-v4-pro";
+const AI_MODEL_ID = "deepseek-v4-flash";
 
 /**
  * 에셋 버전 번호
