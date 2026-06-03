@@ -57,9 +57,9 @@ const ASSET_VERSION = "2.9.30";
  * 프리토킹(자유 대화) 기본 최대 턴 수
  * - AI 캐릭터와 주고받을 수 있는 대화 횟수의 기본값
  * - 시나리오에서 scene.maxTurns로 개별 설정 가능
- * - 3으로 설정하면 플레이어가 3번 말할 수 있음
+ * - 5로 설정하면 플레이어가 5번 말할 수 있음
  */
-const DEFAULT_MAX_FREE_TALK_TURNS = 3;
+const DEFAULT_MAX_FREE_TALK_TURNS = 5;
 
 /**
  * 채팅 전송 버튼의 SVG 아이콘 (종이비행기 모양)
