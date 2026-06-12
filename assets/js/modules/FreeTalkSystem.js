@@ -55,6 +55,126 @@ function appendFreeTalkDynamicContext(content, addition) {
     return `${base}\n${FREE_TALK_CACHE_BOUNDARY_MARKER}\n${dynamic}`;
 }
 
+function cupidRecentPhraseMatches(pattern, text) {
+    pattern.lastIndex = 0;
+    return pattern.test(text || '');
+}
+
+function buildCupidRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
+    const allMessages = Array.isArray(messages) ? messages : [];
+    const assistantTexts = allMessages
+        .filter(m =>
+            m &&
+            m.role === 'assistant' &&
+            typeof m.content === 'string' &&
+            String(m.content || '').trim()
+        )
+        .slice(-6)
+        .map(m => String(m.content || '').replace(/\s+/g, ' ').trim())
+        .filter(Boolean);
+
+    if (assistantTexts.length < 3) return '';
+
+    const latestUserText = String([...allMessages].reverse().find(m =>
+        m &&
+        m.role === 'user' &&
+        typeof m.content === 'string'
+    )?.content || '');
+
+    const isKo = lang === 'ko';
+    const recentJoined = assistantTexts.join('\n');
+    const formatList = (items, limit = 6) => items.filter(Boolean).slice(0, limit).join(', ');
+    const normalizeOpening = (text = '') => {
+        const firstSentence = String(text || '').replace(/\\n/g, ' ').split(/[.!?。！？\n]/u)[0] || '';
+        return firstSentence
+            .replace(/^[\s"'“”‘’`*<>\[\]{}()]+/g, '')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .slice(0, 34);
+    };
+
+    const openingCounts = assistantTexts
+        .map(normalizeOpening)
+        .filter(opening => opening.length >= 8)
+        .reduce((map, opening) => {
+            const key = opening
+                .toLowerCase()
+                .replace(/["'“”‘’`*<>\[\]{}(),.?!:;，。！？]/g, '')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .slice(0, 24);
+            if (!key || key.length < 6) return map;
+            const entry = map.get(key) || { label: opening, count: 0 };
+            entry.count += 1;
+            map.set(key, entry);
+            return map;
+        }, new Map());
+
+    const repeatedOpenings = [...openingCounts.values()]
+        .filter(entry => entry.count >= 2)
+        .map(entry => `"${entry.label}"`);
+
+    const stockPatterns = [
+        { ko: '"결국"', en: '"eventually/in the end" transitions', pattern: /결국|끝내|마침내/iu },
+        { ko: '"서로의 마음"', en: 'mutual-feeling summaries', pattern: /서로의\s*마음|마음을\s*확인|진심을\s*확인|감정을\s*확인|마음이\s*닿/iu },
+        { ko: '"다시 한번"', en: '"once again" beats', pattern: /다시\s*한\s*번|한\s*번\s*더|다시금/iu },
+        { ko: '"작게 웃었다" 계열', en: 'small-smile beats', pattern: /작게\s*웃|살짝\s*웃|희미하게\s*웃|쓴웃음|미소를\s*(?:지|띠|머금)/iu },
+        { ko: '"고개를 끄덕였다" 계열', en: 'nod/lift/lower-head beats', pattern: /고개(?:를)?\s*(?:끄덕|숙|들|돌|젓)/iu },
+        { ko: '감정 정리식 마무리', en: 'neat emotional-summary endings', pattern: /감정(?:을|이)?\s*(?:정리|가라앉|흘러|번져)|마음(?:을|이)?\s*(?:정리|가라앉|흘러|번져)/iu }
+    ];
+
+    const stockHits = stockPatterns
+        .filter(item =>
+            cupidRecentPhraseMatches(item.pattern, recentJoined) &&
+            !cupidRecentPhraseMatches(item.pattern, latestUserText)
+        )
+        .map(item => isKo ? item.ko : item.en);
+
+    const gesturePatterns = [
+        { ko: '시선/눈동자/흘깃거림', en: 'gaze/eye/glance beats', pattern: /시선|눈동자|눈길|흘깃|쳐다|바라보|응시|gaze|glance|stare|eyes?/iu },
+        { ko: '손끝/손목/붙잡기', en: 'hand/fingertip/grip beats', pattern: /손끝|손가락|손목|손을|붙잡|잡아|쥐었|감싸|fingertip|wrist|hand|grip|held/iu },
+        { ko: '입술/목소리 떨림', en: 'lip/voice trembling beats', pattern: /입술|목소리|떨림|떨리|lip|voice|trembl/iu },
+        { ko: '숨/호흡/심장', en: 'breath/heartbeat beats', pattern: /숨|호흡|숨결|심장|심박|breath|heartbeat/iu },
+        { ko: '정적/공기/긴장', en: 'silence/air/tension beats', pattern: /정적|공기|긴장|\bsilence\b|\bair\b|\btension\b/iu },
+        { ko: '어깨/허리/품의 정지 자세', en: 'shoulder/waist/static embrace beats', pattern: /어깨|허리|품|가슴팍|밀착|끌어안|shoulder|waist|embrace|chest|closeness/iu }
+    ];
+
+    const repeatedGestures = gesturePatterns
+        .map(item => ({
+            ...item,
+            count: assistantTexts.reduce((count, text) => count + (cupidRecentPhraseMatches(item.pattern, text) ? 1 : 0), 0)
+        }))
+        .filter(item =>
+            item.count >= 2 &&
+            !cupidRecentPhraseMatches(item.pattern, latestUserText)
+        )
+        .map(item => isKo ? item.ko : item.en);
+
+    if (repeatedOpenings.length === 0 && stockHits.length === 0 && repeatedGestures.length === 0) return '';
+
+    const guardLines = [];
+    if (stockHits.length) {
+        guardLines.push(isKo
+            ? `- 최근 상투 표현: ${formatList(stockHits)}`
+            : `- Recent stock expressions: ${formatList(stockHits)}`);
+    }
+    if (repeatedOpenings.length) {
+        guardLines.push(isKo
+            ? `- 반복된 문장 시작: ${formatList(repeatedOpenings, 4)}`
+            : `- Repeated sentence openings: ${formatList(repeatedOpenings, 4)}`);
+    }
+    if (repeatedGestures.length) {
+        guardLines.push(isKo
+            ? `- 반복된 제스처/감각 단서: ${formatList(repeatedGestures)}`
+            : `- Repeated gesture/sensory cues: ${formatList(repeatedGestures)}`);
+    }
+
+    const guardBody = guardLines.join('\n');
+    return isKo
+        ? `\n\n[최근 표현 반복 금지 - TURN OVERRIDE]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 다시 쓰지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하지 말고, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 확인, 좁혀진 선택지 중 하나로 장면을 앞으로 움직이세요.`
+        : `\n\n[Recent Expression Repetition Block - TURN OVERRIDE]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not reuse the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Do not merely swap words while repeating the same emotional summary or static posture; move the scene forward through this character's specific desire/hesitation/pride, distance change, hand-position change, boundary check, or narrowed choice.`;
+}
+
 class FreeTalkSystem {
     /**
      * @param {StateManager} stateManager - 게임 상태 관리자
@@ -686,7 +806,8 @@ class FreeTalkSystem {
                 : _windowed;
             const _outsideCueOverride = this._buildLatestOutsideCueNarrationOverride(finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
-            const _runtimePromptPatch = `${_outsideCueOverride}${_inWorldUserRoleBlock}`;
+            const _recentRepetitionGuard = buildCupidRecentExpressionRepetitionGuard(_optimized, _lang);
+            const _runtimePromptPatch = `${_outsideCueOverride}${_inWorldUserRoleBlock}${_recentRepetitionGuard}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
