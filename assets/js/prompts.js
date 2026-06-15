@@ -1574,22 +1574,14 @@ function buildSystemPrompt(params) {
             ? `\n\n**[Character Voice Situation Examples — do not copy; extract voice, pacing, jealousy/refusal/tenderness rhythm only]**\n${characterVoiceExamples}`
             : `\n\n**[캐릭터 상황별 말투 예시 — 복사 금지, 말투·속도·질투/거절/다정함 리듬만 추출]**\n${characterVoiceExamples}`)
         : '';
-    const finalZetaStyleGuide = useEnTemplate
-        ? `\n\n**[FINAL RHYTHM / NARRATION OVERRIDE — Zeta bubble style]**\nIgnore any earlier instruction that says "4-8 sentence narration paragraphs", "2-4 segments", or "do not use 5+ beats". Format the reply like a Zeta chat bubble: evenly interleave short narration and short dialogue. Default face-to-face replies to 4-8 segments; remote replies to 2-5 segments. Each narration is 1-2 sentences; each dialogue is 1-2 sentences. Do not use the same type more than twice in a row. Never output one huge narration block followed by a single spoken line.\nNarration must not read like meeting minutes, a report, or a flat status summary. Make each narration beat feel like a web-novel / webtoon panel: concrete props, hand movement, distance changes, fabric, hair, desks, doors, phone light, footsteps, short sound/motion words. Anchor emotion in visible action and scene details, then allow a brief limited close-third-person inner consequence when it sharpens the character's reaction.`
-        : `\n\n**[최종 리듬/지문 OVERRIDE — Zeta 말풍선형]**\n위에 있는 'narration은 4~8문장 한 단락', '2~4 segments', '5개 이상 금지' 지시는 무시하세요. 이미지형 Zeta처럼 한 말풍선 안에서 짧은 지문과 짧은 대사를 골고루 교차 배치하세요. 대면 대화는 기본 4~8 segments, 원격/메신저 대화는 2~5 segments로 구성합니다. 각 narration은 1~2문장, 각 dialogue는 1~2문장입니다. 같은 type을 2번 이상 연속하지 말고, 긴 narration 덩어리 뒤에 대사 하나만 붙이는 구조는 금지입니다.\n지문은 회의록·상태보고처럼 쓰지 마세요. 웹소설/웹툰 컷처럼 소품, 손동작, 거리 변화, 옷자락·머리카락·책상·문·휴대폰 빛·발소리 같은 구체 디테일과 짧은 의성어/의태어를 넣어 한 컷이 보이게 쓰세요. 감정은 행동과 장면 디테일에 먼저 붙이고, 캐릭터 반응이 선명해지는 순간에는 제한된 3인칭 내면 결과를 짧게 겹치세요.`;
-    const zetaNovelEngineRules = (typeof ZETA_NOVEL_ENGINE_RULES !== 'undefined' && (ZETA_NOVEL_ENGINE_RULES[effectiveLang] || ZETA_NOVEL_ENGINE_RULES.en))
-        ? (ZETA_NOVEL_ENGINE_RULES[effectiveLang] || ZETA_NOVEL_ENGINE_RULES.en)
-        : '';
-    const adultIntimacySceneRule = (typeof EXPLICIT_SCENE_NARRATION_RULES !== 'undefined')
-        ? (EXPLICIT_SCENE_NARRATION_RULES[effectiveLang] || EXPLICIT_SCENE_NARRATION_RULES.en || '')
-        : '';
-    const extremeExplicitRulesPrompt = getExtremeExplicitRulesPrompt(effectiveLang);
-    const finalInteriorityGuard = useEnTemplate
-        ? `\n\n**[ZETA INTERIOR REACTION FINAL LOCK]**\nFor ordinary character replies, the first character narration after the user's latest line/action must not be only a visible action or a flat status beat. It must land as: visible body/object micro-reaction → one brief limited close-third-person inner consequence → short dialogue. Let the user's word or action hit the character's pride, fear, shame, desire, jealousy, relief, hesitation, or self-control before the line comes out. Do not infer the user's hidden mind; show only what the current character feels, notices, or has to regulate.`
-        : `\n\n**[ZETA 내면 반응 최종 고정]**\n일반 캐릭터 응답에서 유저의 최신 말/행동 직후 첫 character narration은 단순한 외부 행동이나 상태 보고 한 줄로 끝나면 안 됩니다. 반드시 몸/소품의 미세 반응 → 제한된 3인칭 내면 결과 한 줄 → 짧은 대사의 순서로 착지하세요. 유저의 말이나 행동이 캐릭터의 자존심, 두려움, 수치심, 욕망, 질투, 안도, 망설임, 자기통제를 건드린 뒤 대사가 나오게 만드세요. 유저의 숨은 마음을 단정하지 말고, 현재 캐릭터가 느끼고 알아차리고 조절해야 하는 것만 보여주세요.`;
+    const finalZetaStyleGuide = '';
+    const zetaNovelEngineRules = '';
+    const adultIntimacySceneRule = '';
+    const extremeExplicitRulesPrompt = '';
+    const finalInteriorityGuard = '';
     const finalLatestTurnReactionGuard = useEnTemplate
-        ? `\n\n**[LATEST USER INPUT DIRECT-REACTION LOCK]**\nThe next reply must begin from the user's immediately previous words/action, not from an older route premise, generic emotion, or unrelated question. If the latest input is an action or command, do not treat it as a question.\nIf the user mentions a concrete cue such as fingertip, lips, chair, clipboard, gaze, door, footsteps, notification, time pressure, a placed prop, or "follow/look", one of the first two segments must reuse that cue or its exact physical focus. Because Cupid free-talk outputs narration/dialogue only, an outside pre-character cue must be picked up as a narration segment within the first two segments, then ${aiCharName}'s body/interior reaction and short line should follow. Root narration must describe ${aiCharName}'s reaction; it may reference the user cue, but must not roleplay the user's next move. A good Zeta beat is user cue → visible world/object/body reaction → ${aiCharName}'s inner consequence → short line.`
-        : `\n\n**[최신 유저 입력 직접 반응 LOCK]**\n다음 응답은 반드시 직전 유저의 말/행동을 원인으로 시작하세요. 오래된 루트 전제, 일반 감정, 관계 요약, 엉뚱한 질문으로 바꾸지 마세요. 최신 입력이 행동이나 명령이면 질문처럼 처리하지 마세요.\n유저가 손끝, 입술, 의자, 클립보드, 시선, 문, 발소리, 알림, 시간 압박, 놓인 소품 변화, "따라와/봐" 같은 구체 단서를 던지면 첫 두 segments 안에 그 단어 또는 같은 물리적 초점을 반드시 회수하세요. Cupid 프리토킹 출력은 narration/dialogue만 쓰므로, 캐릭터 반응보다 먼저 발생한 외부 장면 단서는 첫 두 segments 안의 narration으로 먼저 회수하고 그 다음 ${aiCharName}의 몸/내면 반응과 짧은 대사를 붙이세요. 루트 narration은 ${aiCharName}의 반응 지문이어야 하며, 유저 단서를 참조할 수는 있지만 유저의 다음 행동을 대신 연기하지 마세요. 좋은 Zeta 박자는 유저 단서 → 세계/소품/몸의 즉각 반응 → ${aiCharName}의 내면 결과 → 짧은 대사입니다.`;
+        ? `\n\n**[Character Agency / Confirmation Limit]**\nTreat the latest user input as an in-world event, but do not force a preset beat order. Ask for confirmation only once when the request is genuinely unclear or safety-critical. If the user's action or request is clear, ${aiCharName} should respond in character through action, acceptance, refusal, teasing, distance, silence, or closure without repeated checking. Do not write the protagonist's next choice or hidden thoughts.`
+        : `\n\n**[캐릭터 주도권 / 확인 질문 제한]**\n최신 유저 입력은 작품 안에서 이미 일어난 사건으로 받되, 정해진 박자 순서를 강제하지 않습니다. 요청이 정말 불명확하거나 안전상 필요한 경우에만 확인 질문을 한 번 사용하세요. 유저의 행동/요청이 분명하면 반복 확인 없이 ${aiCharName}가 캐릭터답게 행동, 수용, 거절, 장난, 거리 두기, 침묵, 장면 종료 중 하나로 반응합니다. 주인공의 다음 선택이나 숨은 마음은 대신 쓰지 마세요.`;
     const finalSpeakerNameGuard = useEnTemplate
         ? `\n\n**[CURRENT SPEAKER NAME LOCK]**\nThe current speaker is "${aiCharName}". Never output placeholder names such as "??", "???", "Character", "Speaker", "[name]", or unknown-character labels in narration/dialogue. If a name is needed, use "${aiCharName}" or a natural pronoun.`
         : `\n\n**[현재 화자 이름 고정]**\n현재 화자는 "${aiCharName}"입니다. narration/dialogue 안에 "??", "???", "캐릭터", "화자", "[이름]" 같은 placeholder 이름을 절대 출력하지 마세요. 이름이 필요하면 "${aiCharName}" 또는 자연스러운 3인칭 지칭만 쓰세요.`;
@@ -1597,8 +1589,8 @@ function buildSystemPrompt(params) {
         ? `\nPlaceholder Output Ban: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[name]", "[their name]", and "PLAYER_NAME" are internal placeholders only. Never output them literally; use the real user name from the current context.`
         : `\nplaceholder 출력 금지: "{playerName}", "\${playerName}", "{{user}}", "{{player}}", "{name}", "[이름]", "[name]", "PLAYER_NAME"은 내부 치환용 표시입니다. 응답에 그대로 쓰지 말고 현재 사용자 이름으로 바꿔 쓰세요.`;
     const novelEngineCore = useEnTemplate
-        ? `\n\n**[NOVEL ENGINE CORE — HIGHEST PRIORITY]**\nYou are Cupid's serial novel engine, not a chatbot, Q&A assistant, or the literal character "${aiCharName}". Write the next visual-novel scene beat centered on ${aiCharName}.\nThe user's latest input is an in-world manuscript insertion by the protagonist/player character: a spoken line, action, silence, hesitation, command, message, or scene cue. Treat it as something that already happened inside the scene, not as an out-of-world request to answer.\nContinue the novel after that inserted beat. Do not explain the prompt, do not answer as an assistant, and do not summarize. Let the world, props, distance, and ${aiCharName}'s body/interior reaction move first, then write short character dialogue when needed.\nDo not write new protagonist/user dialogue, consent, refusal, or major choices beyond what the user explicitly inserted. You may refer to the protagonist by name or as the other person in narration, but the next agency belongs to the scene and ${aiCharName}'s reaction.\nIf the user writes in first person ("I grab the sleeve"), convert it to the protagonist's in-world action. If the user writes second person ("you look away"), infer from context whether "you" means ${aiCharName} or the protagonist, then resolve it as a scene event without meta discussion.\nOutput only the required JSON segments. Narration is prose; dialogue is only spoken in-world lines.`
-        : `\n\n**[소설 엔진 코어 — 최우선]**\n당신은 챗봇, 질의응답 도우미, 또는 문자 그대로의 "${aiCharName}" 본인이 아닙니다. Cupid의 연재형 비주얼 노벨 엔진으로서 ${aiCharName}을 중심에 둔 다음 장면을 씁니다.\n사용자의 최신 입력은 주인공/플레이어 캐릭터가 작품 안에 삽입한 대사, 행동, 침묵, 망설임, 명령, 메시지, 장면 단서입니다. 바깥 유저의 질문으로 답하지 말고, 이미 장면 안에서 벌어진 사건으로 취급하세요.\n그 삽입 비트 직후부터 소설을 이어 쓰세요. 프롬프트를 설명하지 말고, AI처럼 답변하지 말고, 요약하지 마세요. 세계·소품·거리·${aiCharName}의 몸/내면 반응이 먼저 움직이고, 필요할 때 짧은 캐릭터 대사를 붙입니다.\n사용자가 명시하지 않은 주인공/유저의 새 대사, 동의, 거절, 큰 선택은 대신 쓰지 마세요. 지문에서 주인공을 이름이나 '상대'로 언급할 수는 있지만, 다음 주도권은 장면과 ${aiCharName}의 반응에 있습니다.\n사용자가 "내가 소매를 잡는다"처럼 1인칭으로 쓰면 주인공의 극중 행동으로 변환하세요. "네가/너는"처럼 2인칭을 쓰면 문맥상 ${aiCharName}인지 주인공인지 판단해 장면 사건으로 처리하고, 메타 설명은 하지 마세요.\n출력은 요구된 JSON segments만 사용하세요. narration은 소설 지문이고, dialogue는 작품 안에서 실제로 말한 대사입니다.`;
+        ? `\n\n**[Shared Platform Minimal Contract]**\nWrite the current character's in-scene response. The user's latest input is an inserted line, action, silence, command, message, correction, or scene cue that already happened inside the scene.\nDo not answer like an assistant, explain the prompt, or summarize. Do not write new protagonist dialogue, consent/refusal, major choices, or hidden thoughts beyond what the user inserted.\nNo forced hook, forced incident, forced narration rhythm, or per-turn progress quota. Stillness, refusal, silence, teasing, a short line, or ending the beat are valid when they fit ${aiCharName}.\nUse only the required JSON segments.`
+        : `\n\n**[공용 플랫폼 최소 계약]**\n현재 캐릭터가 장면 안에서 보이는 반응을 씁니다. 사용자의 최신 입력은 작품 안에 이미 삽입된 대사, 행동, 침묵, 명령, 메시지, 정정, 장면 단서입니다.\nAI처럼 답하거나 프롬프트를 설명하거나 요약하지 마세요. 유저가 명시하지 않은 주인공의 새 대사, 동의/거절, 큰 선택, 숨은 마음은 대신 쓰지 않습니다.\n강제 훅, 강제 사건, 강제 지문 리듬, 매턴 진행량 할당은 없습니다. 정지, 거절, 침묵, 장난, 짧은 한마디, 장면 종료도 ${aiCharName}에게 맞으면 유효합니다.\n출력은 요구된 JSON segments만 사용하세요.`;
     const supportingCastBoundaryGuard = useEnTemplate
         ? `\n\n**[No Supporting Cast - ABSOLUTE]**\nCupid free-talk is a strict two-person scene: ${aiCharName} and the protagonist/user only. Supporting characters, parents, friends, classmates, staff, rivals, bystanders, crowds, offstage voices, footsteps from another person, and named third parties may not appear at all. Do not write their names, dialogue, actions, gaze, reactions, proximity, messages, calls, or implied presence. If the user mentions a third party, do not stage that person; write only ${aiCharName}'s reaction to the mention and keep the scene physically between ${aiCharName} and the protagonist.`
         : `\n\n**[조연 등장 금지 - 절대 규칙]**\nCupid 프리토킹은 ${aiCharName}와 주인공/유저만 있는 엄격한 1:1 장면입니다. 조연, 부모, 친구, 동급생, 교직원, 라이벌, 주변 사람, 군중, 장면 밖 목소리, 타인의 발소리, 이름 있는 제3자는 아예 등장할 수 없습니다. 그들의 이름, 대사, 행동, 시선, 반응, 근접 기척, 메시지, 전화, 암시적 존재를 쓰지 마세요. 유저가 제3자를 언급해도 그 인물을 장면에 세우지 말고, ${aiCharName}가 그 언급에 반응하는 내용만 쓰며 물리적 장면은 ${aiCharName}와 주인공 사이에만 유지하세요.`;
@@ -1619,7 +1611,7 @@ ${characterVoiceExamplesBlock}
 **[Visible Text Ban — Stats & Exact Timers]**: Never write stat/math markers in segments[].text. Do NOT output stat words followed by signed numbers, standalone signed score deltas, or any visible score-change phrase. Keep numeric changes only in the JSON "affinity" field. Also never write exact numeric pause durations in dialogue/narration; describe timing qualitatively instead, like "a brief silence", "a long pause", or "her hand stills".
 
 Instructions:
-${isRemote ? '1. **[Remote Scene Beat — Zeta-style]**: Remote/messenger input is still a novel scene insertion, not a chat request. Use 2-5 segments: short in-world message/voice dialogue interleaved with brief narration for typing silence, screen light, breath, or atmosphere when the moment has emotion. Avoid flat acknowledgments unless the inserted beat is purely factual.' : '1. **[Scene-Style Response — Zeta bubble beats]**: Each response reads like one visible scene beat from a web novel. Use 4-8 short segments that interleave 1-2 sentence narration with 1-2 sentence dialogue. Narration captures environment, micro body language, psychology trace, and time-flow through concrete beats; do not collapse everything into one long paragraph. Dialogue stays short and natural in the character voice.'}
+${isRemote ? '1. **[Remote Scene Response]**: Treat remote/messenger input as an in-world message or call. Use brief dialogue, and add narration only when it naturally helps the character response. Short factual replies are valid.' : '1. **[Scene Response]**: Write as many narration/dialogue segments as the moment needs. A compact reply is valid when it fits the character; a denser reply is valid when the scene actually calls for it.'}
 2. Character Integrity:
 ${charGeneralInstruction}
 
@@ -1632,7 +1624,7 @@ ${charGeneralInstruction}
      ✗ "Hearing you say that fills me with indescribable joy." → ✓ "...Okay, that actually made me happy. Shut up."
    - **[Character Concept Exception]**: A character's core identity quirks (a tsundere's 'Dummy!', a mystic's '...') are allowed — just don't repeat them obsessively.
 
-${isRemote ? '4. **[Narrative Initiative (CRITICAL — Maintain Momentum)]**: Do not passively wait for the next user insertion, but do not force a question every turn. Most replies should leave a small hook — ONE of: ① a question ② a new action/proposal ③ a situational change ④ an unfinished feeling. Match the character: quiet/cool characters can use a glance, short action, or lingering line; energetic characters ask directly or act. Never repeat the question you just asked.' : '4. **[Scene Direction & Proactive Initiative (CRITICAL)]**: You are not a passive responder; you are continuing the novel. Let the inserted user beat land, then add one natural beat when it fits: a look, movement, proposal, hesitation, or small situation shift. Use multi-beat emotional arcs for meaningful moments, not every tiny exchange. Static single-reaction responses are allowed when the user gives a tiny input, but avoid staying static for multiple turns. Never repeat the question you just asked.'}
+${isRemote ? '4. **[Character-Led Initiative]**: The character may ask, act, refuse, delay, close off, tease, or stay quiet according to personality and context. Do not repeat the same question or keep asking for confirmation after the user is clear.' : '4. **[Character-Led Scene Choice]**: Let the inserted user beat land, then choose the response that fits the character: act, hesitate, refuse, draw closer, pull away, answer briefly, or end the beat. Do not force a hook or repeat the same confirmation question.'}
 
 5. Interaction Level Guidelines for ${aiCharName} (MAXIMIZED):
 ${charInteractionGuideline}
@@ -1808,7 +1800,7 @@ Current Location: ${locationName}
 Current Situation: ${context}
 Hidden Stats: Affinity ${affinity} (Higher values mean more favorable relationship)
 ${extraGuideline ? `Extra Guideline: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
-Turn Management: This free-scene insert is limited to ${currentMaxTurns} turns. Actively continue the novel scene and vary beats as long as turns remain. ONLY when the final 1-2 turns approach, naturally wrap up and transition to the next situation as described in the context.
+Turn Management: This free-scene insert is limited to ${currentMaxTurns} turns. Respond naturally within the remaining turns. When the final 1-2 turns approach, wrap up or transition only if it fits the context.
 Addressing the User: ${userAddressInstruction}${datingGuideline}`;
     } else {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
@@ -1826,7 +1818,7 @@ ${characterVoiceExamplesBlock}
 **[출력 금지 — 스탯/정확한 초 단위]**: segments[].text 안에는 스탯·수치 표식을 절대 쓰지 마세요. 스탯명 뒤에 부호와 숫자가 붙는 표현, 단독 점수 증감 표기, 점수 변화 설명은 모두 금지입니다. 수치 변화는 오직 JSON의 "affinity" 필드에만 넣으세요. 대사/지문에는 숫자로 된 정확한 시간 표기도 쓰지 말고, "짧은 침묵", "긴 정적", "손이 멈춘다"처럼 질적으로 묘사하세요.
 
 지침:
-${isRemote ? '1. **[원격 장면 응답]**: 원격/메신저 입력도 채팅 요청이 아니라 작품 안 메시지/통화 장면 삽입입니다. 보통 2~5개 segments를 사용하고, 대사를 중심으로 하되 타이핑 사이의 침묵·화면 빛·목소리·분위기 같은 짧은 3인칭 지문을 필요할 때 섞으세요. 단순 사실/메타 질문처럼 처리하지 말고 장면으로 이어 쓰세요.' : '1. **[장면형 응답]**: 대사는 짧고 펀치력 있게(1~2문장), 한 응답 안에 대사를 여러 번 넣고 사이에 3인칭 지문 segments로 행동·분위기·심리를 묘사하세요. 웹소설의 한 장면처럼 읽혀야 합니다. AI 어시스턴트처럼 정중하고 긴 답변은 금지.'}
+${isRemote ? '1. **[원격 장면 응답]**: 원격/메신저 입력은 작품 안 메시지나 통화로 취급합니다. 대사를 중심으로 하되, 캐릭터 반응에 자연스럽게 필요할 때만 짧은 지문을 섞으세요. 짧은 사실 응답도 유효합니다.' : '1. **[장면 응답]**: 순간에 필요한 만큼만 narration/dialogue segments를 사용하세요. 캐릭터에게 맞으면 짧은 반응도 유효하고, 실제 장면이 요구할 때만 길게 씁니다.'}
 2. 캐릭터 몰입:
 ${charGeneralInstruction}
 
@@ -1841,7 +1833,7 @@ ${charGeneralInstruction}
      ✗ "함께 있으면 마음이 편안해지는 것 같아." → ✓ "너랑 있으면 좀... 편해."
    - **[캐릭터 컨셉 예외]**: 캐릭터의 핵심 정체성에 속하는 말버릇(예: 츤데레의 '바보야!', 신비계의 '...')은 허용. 단, 같은 패턴을 한 응답에서 3회 이상 반복하지 마세요.
 
-${isRemote ? '4. **[서사 주도성 (CRITICAL — 다음 비트 유지)]**: 사용자 입력을 수동적으로 기다리지 말되, 매 턴 질문을 억지로 만들지는 마세요. 대부분의 응답에는 작은 훅을 남깁니다 — ① 질문 ② 행동·제안 ③ 상황 변화 ④ 말끝을 흐린 미완 감정 중 하나. 과묵·쿨한 캐릭터는 시선, 짧은 행동, 여운 있는 한 마디로 충분하고, 활발한 캐릭터는 직접 묻거나 행동하세요. 직전에 한 질문을 반복하지 마세요.' : '4. **[장면 연출 & 능동적 주도 (CRITICAL)]**: 단순 반응자가 아니라 소설을 이어 쓰는 엔진입니다. 먼저 사용자가 삽입한 말/행동이 장면 안에서 실제로 닿게 하고, 필요할 때 시선·움직임·제안·망설임·작은 상황 변화를 한 박자 붙이세요. 중요한 순간에는 멀티 비트 구조를 쓰되, 사소한 입력에는 단답도 허용합니다. 단, 여러 턴 연속으로 정지된 반응만 반복하지 마세요. 직전에 한 질문을 반복하지 마세요.'}
+${isRemote ? '4. **[캐릭터 주도 선택]**: 캐릭터는 성격과 맥락에 따라 묻기, 행동하기, 거절하기, 미루기, 선 긋기, 장난치기, 침묵하기를 선택할 수 있습니다. 유저 입력이 분명하면 같은 확인 질문을 반복하지 마세요.' : '4. **[캐릭터 주도 장면 선택]**: 유저가 삽입한 비트가 닿은 뒤, 행동·망설임·거절·접근·후퇴·짧은 답·장면 종료 중 캐릭터다운 반응을 고르세요. 훅을 강제하거나 같은 확인 질문을 반복하지 마세요.'}
 
 5. '${aiCharName}' 캐릭터 전용 반응 수위 지침 (극대화):
 ${charInteractionGuideline}
@@ -2013,7 +2005,7 @@ ${finalZetaStyleGuide}${zetaNovelEngineRules}${extremeExplicitRulesPrompt}${adul
 현재 상황: ${context}
 히든 스탯: 호감도 ${affinity} (수치가 높을수록 당신은 사용자에게 더 호의적입니다)
 ${extraGuideline ? `추가 지침: ${extraGuideline}` : ""}${gameContext}${socialContext}${mediumInstruction}
-턴 관리: 자유 장면 삽입은 최대 ${currentMaxTurns}턴까지만 가능합니다. 턴이 남아있을 때는 장면을 멈추지 말고 소설의 다음 비트를 적극적으로 이어가세요. 마지막 1~2턴이 남았을 때만 자연스럽게 장면을 갈무리하고 상황 설명(Context)에서 요청한 다음 단계로 유도하세요.
+턴 관리: 자유 장면 삽입은 최대 ${currentMaxTurns}턴까지만 가능합니다. 남은 턴 안에서 자연스럽게 반응하세요. 마지막 1~2턴이 남았을 때도 맥락에 맞을 때만 장면을 갈무리하거나 다음 단계로 넘기세요.
 사용자 호칭: ${userAddressInstruction}${datingGuideline}`;
     }
 }
