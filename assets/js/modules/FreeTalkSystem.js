@@ -171,8 +171,8 @@ function buildCupidRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
 
     const guardBody = guardLines.join('\n');
     return isKo
-        ? `\n\n[최근 표현 반복 금지 - TURN OVERRIDE]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 다시 쓰지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하지 말고, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 확인, 좁혀진 선택지 중 하나로 장면을 앞으로 움직이세요.`
-        : `\n\n[Recent Expression Repetition Block - TURN OVERRIDE]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not reuse the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Do not merely swap words while repeating the same emotional summary or static posture; move the scene forward through this character's specific desire/hesitation/pride, distance change, hand-position change, boundary check, or narrowed choice.`;
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 확인, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 정지, 짧은 답, 침묵이 캐릭터에게 맞으면 그대로 유효합니다.`
+        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary check, or narrowed choice when the scene calls for it. Stillness, a brief line, or silence remains valid when it fits the character.`;
 }
 
 class FreeTalkSystem {
