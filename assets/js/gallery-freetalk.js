@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.6.8';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.6.9';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -2048,17 +2048,17 @@ The latest user input contains an outside scene cue that happens before the char
         // 사용자가 어떤 언어로 입력하든, 이전 대화가 어떤 언어든, 무조건 페이지 언어로 답해야 함
         let langPrefix = '';
         if (this.lang === 'en') {
-            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. NEVER reply in Korean, Japanese, Spanish, French, German, or Portuguese — even if the user writes in those languages, even if previous conversation history contains them. Always reply in English only.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply in English. Keep the response in English even if the user or previous history contains Korean, Japanese, Spanish, French, German, or Portuguese.\n\n`;
         } else if (this.lang === 'es') {
-            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). NEVER reply in Korean, English, or any other language — always reply in Spanish only, even if the user or history is in another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply in Spanish (Español). Keep the response in Spanish even if the user or previous history contains another language.\n\n`;
         } else if (this.lang === 'ja') {
-            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Japanese (日本語). NEVER reply in Korean, English, or any other language — always reply in Japanese only, even if the user or history is in another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply in Japanese (日本語). Keep the response in Japanese even if the user or previous history contains another language.\n\n`;
         } else if (this.lang === 'fr') {
-            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). NEVER reply in Korean, English, or any other language — always reply in French only, even if the user or history is in another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply in French (Français). Keep the response in French even if the user or previous history contains another language.\n\n`;
         } else if (this.lang === 'de') {
-            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). NEVER reply in Korean, English, or any other language — always reply in German only, even if the user or history is in another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply in German (Deutsch). Keep the response in German even if the user or previous history contains another language.\n\n`;
         } else if (this.lang === 'pt') {
-            langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Brazilian Portuguese (Português Brasileiro). NEVER reply in Korean, English, or any other language — always reply in Brazilian Portuguese only, even if the user or history is in another language.\n\n`;
+            langPrefix = `**[Response Language Rule]**: Reply in Brazilian Portuguese (Português Brasileiro). Keep the response in Brazilian Portuguese even if the user or previous history contains another language.\n\n`;
         }
 
         const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;

@@ -659,17 +659,17 @@ function buildSystemPrompt(params) {
     // 사용자가 어떤 언어로 입력하든 무조건 effectiveLang으로 답해야 함 (이전 대화 히스토리에 한국어가 섞여 있어도 무시)
     let langPrefix = '';
     if (effectiveLang === 'en') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in English. ALL segments[].text values MUST be in natural, conversational English. NEVER respond in Korean, Japanese, Spanish, French, German, or Portuguese — even if the user writes in those languages, even if previous conversation history is in Korean. If you see Korean in the history, IGNORE the language and reply in English only.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply in English. ALL segments[].text values should be natural, conversational English. Keep the response in English even if the user or previous history contains Korean, Japanese, Spanish, French, German, or Portuguese.\n\n`;
     } else if (effectiveLang === 'es') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Spanish (Español). ALL segments[].text values MUST be in natural, conversational Latin American Spanish. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Spanish only.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply in Spanish (Español). ALL segments[].text values should be natural, conversational Latin American Spanish. Keep the response in Spanish even if the user or previous history contains another language.\n\n`;
     } else if (effectiveLang === 'ja') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Japanese (日本語). ALL segments[].text values MUST be in natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Japanese only.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply in Japanese (日本語). ALL segments[].text values should be natural Japanese. Use appropriate speech levels (敬語/タメ口) based on character personality and affinity. Keep the response in Japanese even if the user or previous history contains another language.\n\n`;
     } else if (effectiveLang === 'fr') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in French (Français). ALL segments[].text values MUST be in natural, conversational French. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in French only.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply in French (Français). ALL segments[].text values should be natural, conversational French. Keep the response in French even if the user or previous history contains another language.\n\n`;
     } else if (effectiveLang === 'de') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in German (Deutsch). ALL segments[].text values MUST be in natural, conversational German. Use du/Sie appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in German only.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply in German (Deutsch). ALL segments[].text values should be natural, conversational German. Use du/Sie appropriately based on character personality and affinity. Keep the response in German even if the user or previous history contains another language.\n\n`;
     } else if (effectiveLang === 'pt') {
-        langPrefix = `**CRITICAL LANGUAGE RULE (HIGHEST PRIORITY)**: You MUST respond ENTIRELY in Brazilian Portuguese (Português Brasileiro). ALL segments[].text values MUST be in natural, conversational Brazilian Portuguese. Use você appropriately based on character personality and affinity. NEVER respond in English, Korean, or any other language — even if the user writes in those languages, even if previous conversation history is in another language. Always reply in Brazilian Portuguese only.\n\n`;
+        langPrefix = `**[Response Language Rule]**: Reply in Brazilian Portuguese (Português Brasileiro). ALL segments[].text values should be natural, conversational Brazilian Portuguese. Use você appropriately based on character personality and affinity. Keep the response in Brazilian Portuguese even if the user or previous history contains another language.\n\n`;
     }
 
     // 실제 표시되는 이름을 AI에게 알려줌
@@ -1327,5 +1327,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.6.8';
+const PROMPT_VERSION = '2.6.9';
 window.PROMPT_VERSION = PROMPT_VERSION;
