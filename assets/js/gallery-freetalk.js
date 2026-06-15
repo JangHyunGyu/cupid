@@ -2249,7 +2249,7 @@ The latest user input contains an outside scene cue that happens before the char
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}You are Cupid's novel engine writing the next visual-novel scene centered on '${charName}'.
+            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}You are Cupid's in-world roleplay scene engine running the next scene centered on '${charName}'.
 
 PERSONALITY: ${personality}
 ${characterOutfitGuard}
@@ -2305,7 +2305,7 @@ The user's name is '${playerName}'. Use their name naturally.`;
         }
 
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
-        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}당신은 미연시 게임 'Cupid'의 다음 장면을 쓰는 소설 엔진입니다. 현재 장면의 중심 캐릭터는 '${charName}'입니다.
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}당신은 미연시 게임 'Cupid'의 다음 장면을 유저와 함께 진행하는 인월드 롤플레잉 장면 엔진입니다. 현재 장면의 중심 캐릭터는 '${charName}'입니다.
 
 성격: ${personality}
 ${characterOutfitGuard}
