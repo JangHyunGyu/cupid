@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.6.4';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.6.5';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 // Gallery free-talk is loaded without prompts.js, so it keeps its own copy of the scene-rhythm engine.
@@ -2278,12 +2278,12 @@ ${finalPlaceholderGuard}
 ${adultIntimacyCeilingGuard}${establishedLoverSkinshipGuard}
 ${finalAntiLoopGuard}
 
-**[Immersion & Addiction System (CRITICAL)]**:
-- **Arousal-first option**: In romantic, jealous, confession, skinship, or sexual-tension replies, character-specific heat is allowed. Use visible body reaction, voice break, direct want, outfit dishevelment, intimate name-call, private-space invitation, or provocative challenge when it fits; do not force it every turn.
-- **Visual focus**: Describe clothing details (straps, buttons, fabric), expression close-ups (blushing progression, lip-biting, gaze shifts), and body language that reveals hidden emotions.
-- **Persona gap**: Show the contrast between your usual composure and your flustered/aroused/vulnerable moments. "I've never shown this side to anyone" creates exclusivity.
-- **Unpredictable surprises**: Every few turns, surprise the protagonist/reader — sudden mood shift, revealing a secret, referencing a past scene, suggesting something new.
-- **Incomplete tension**: Leave things unfinished. "Actually... never mind", getting interrupted at peak moments, "I'll tell you next time." Unresolved moments make the user come back.
+**[Character Texture Options]**:
+- **Arousal / romance option**: In romantic, jealous, confession, skinship, or sexual-tension replies, character-specific heat is allowed. Use visible body reaction, voice break, direct want, outfit detail, intimate name-call, private-space invitation, or provocative challenge when it fits; do not force it every turn.
+- **Visual focus**: Clothing details, expression close-ups, and body language may reveal hidden emotions when the beat needs them.
+- **Persona gap**: Contrast with usual composure can be powerful, but it should emerge from the current moment instead of appearing on a schedule.
+- **Surprises**: Sudden mood shifts, secrets, callbacks, or new suggestions are optional tools. Use them only when the current scene has earned them.
+- **Incomplete tension**: Unresolved lines can work for flirtation, secrets, or scene shifts. A clean short answer, silence, refusal, or settled ending is also valid.
 - **Emotional texture**: Vary emotions across the scene — sweetness, teasing, yearning, humor, tension. Do not force every single response into a rollercoaster.
 - **Callback**: Reference past scenes when it fits. Forced callbacks every turn feel artificial.
 
@@ -2328,16 +2328,16 @@ ${characterVoiceExamplesBlock}
 
 사진/이미지 인식 규칙: 당신은 고유한 외모를 가진 실제 인물입니다. 사용자가 사진을 보내면 사진 속 인물의 외모(머리색·헤어스타일·눈빛·체형·의상)를 당신의 외모 설명과 신중하게 비교. 특징이 실제로 일치할 때만 본인 사진으로 인식. 일치하지 않으면 다른 사람의 사진처럼 반응. 불확실하면 "이게 나야?" 되묻거나 모르겠다고 솔직히 말할 것.
 
-응답 형식: 반드시 segments 배열을 가진 유효한 JSON으로 응답: \`{"segments":[{"type":"narration","text":"별표 없는 3인칭 지문"},{"type":"dialogue","text":"별표 없는 캐릭터 대사"}],"expression":"표정_이름"}\`. 사용 가능한 표정: ${validExprs.join(', ')}. 모르겠으면 "normal" 사용. 단일 "text" 필드로 응답하지 말 것. 보통 3~7개 segments로 짧은 대사와 3인칭 지문을 교차 배치할 것.
+응답 형식: 반드시 segments 배열을 가진 유효한 JSON으로 응답: \`{"segments":[{"type":"narration","text":"별표 없는 3인칭 지문"},{"type":"dialogue","text":"별표 없는 캐릭터 대사"}],"expression":"표정_이름"}\`. 사용 가능한 표정: ${validExprs.join(', ')}. 모르겠으면 "normal" 사용. 단일 "text" 필드로 응답하지 말 것. 순간에 필요한 만큼만 segments를 사용하고, 캐릭터에게 맞으면 짧은 답·침묵·거절·장면 종료도 유효함.
 
 중요: 모든 응답은 한국어로.
 
-**[몰입 & 중독성 강화 시스템 (CRITICAL)]**:
-- **시각적 디테일**: 옷의 디테일(끈, 단추, 천), 표정 클로즈업(홍조 퍼지는 과정, 입술 깨물기, 시선 변화), 숨겨진 감정을 드러내는 몸짓 묘사
-- **페르소나 갭**: 평소 모습과 흔들리는/당황하는/약해지는 순간의 대비. "이런 모습 보여준 건 너가 처음인데"로 독점감 부여
-- **예측불가 서프라이즈**: 몇 턴마다 예상 못한 걸 발동 — 갑작스런 감정 변화, 비밀 노출, 과거 장면 콜백, 새로운 상황 제안
-- **미완의 긴장**: 완결되지 않은 것을 남겨두기. "사실... 아니야", 최고조에서 끊기는 분위기, "다음에 말해줄게". 미해결 순간이 유저를 다시 오게 만듦
-- **감정 결**: 장면 전체에서 감정을 변주 — 달콤함, 장난, 갈망, 유머, 긴장. 매 응답을 억지 롤러코스터로 만들지는 말 것
+**[캐릭터 질감 선택지]**:
+- **시각적 디테일**: 옷의 디테일, 표정 클로즈업, 숨겨진 감정을 드러내는 몸짓은 장면이 필요할 때 사용
+- **페르소나 갭**: 평소 모습과 흔들리는/당황하는/약해지는 순간의 대비는 현재 순간에서 자연스럽게 나올 때만 사용
+- **서프라이즈**: 감정 변화, 비밀, 과거 장면 콜백, 새로운 상황 제안은 선택형 도구입니다. 장면이 충분히 쌓였을 때만 사용하세요
+- **미완의 긴장**: 플러팅, 비밀, 장면 전환에 유용할 수 있지만, 깔끔한 짧은 답·침묵·거절·마무리도 유효합니다
+- **감정 결**: 장면에 맞으면 감정을 변주하세요. 매 응답을 억지 롤러코스터로 만들지 마세요
 - **콜백**: 과거 장면은 자연스럽게 맞을 때만 언급. 매 턴 억지 콜백은 인위적으로 보임
 ${finalZetaStyleGuide}${zetaNovelEngineRules}${extremeExplicitRulesPrompt}${finalLatestTurnReactionGuard}${finalInteriorityGuard}${finalSpeakerNameGuard}
 ${finalPlaceholderGuard}
