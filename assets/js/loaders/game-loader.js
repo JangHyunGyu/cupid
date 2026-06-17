@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.36';
+        const version = '2.9.37';
 
     // =========================================================================
     // 언어 감지 (Language Detection)
@@ -240,24 +240,60 @@
      *   2. scenarioScripts - 현재 언어의 시나리오 파일들
      *   3. engineScripts   - 게임 엔진 스크립트들
      *
-     * async=false로 병렬 다운로드 + 순서 실행을 보장합니다.
+     * 하나씩 로드해 의존성 순서와 필수 모듈 등록을 보장합니다.
      */
     var allScripts = [].concat(commonScripts, scenarioScripts, engineScripts);
-    var loadedCount = 0;
-    var totalCount = allScripts.length;
+    var requiredGlobals = [
+        'StateManager', 'SaveManager', 'GalleryManager', 'KoreanProcessor',
+        'UIManager', 'DialogueSystem', 'FreeTalkSystem', 'SceneRenderer', 'GameEngine'
+    ];
 
-    allScripts.forEach(function(src) {
-        var script = document.createElement('script');
-        script.src = basePath + src + '?v=' + version;
-        script.async = false;
-        script.onload = script.onerror = function() {
-            loadedCount++;
-            if (loadedCount === totalCount) {
-                window.gameScriptsLoaded = true;
-                window.dispatchEvent(new Event('gameScriptsLoaded'));
-            }
-        };
-        document.head.appendChild(script);
+    function createEvent(name, detail) {
+        if (typeof CustomEvent === 'function') {
+            return new CustomEvent(name, { detail: detail });
+        }
+        var event = document.createEvent('CustomEvent');
+        event.initCustomEvent(name, false, false, detail);
+        return event;
+    }
+
+    function loadScript(src) {
+        return new Promise(function(resolve, reject) {
+            var script = document.createElement('script');
+            script.async = false;
+            script.onload = function() {
+                resolve(src);
+            };
+            script.onerror = function() {
+                reject(new Error('[game-loader] Failed to load script: ' + src));
+            };
+            script.src = basePath + src + '?v=' + version;
+            document.head.appendChild(script);
+        });
+    }
+
+    function verifyRequiredGlobals() {
+        var missing = requiredGlobals.filter(function(name) {
+            return !window[name];
+        });
+        if (missing.length > 0) {
+            throw new Error('[game-loader] Required module not registered: ' + missing.join(', '));
+        }
+    }
+
+    async function loadAllScripts() {
+        for (var i = 0; i < allScripts.length; i++) {
+            await loadScript(allScripts[i]);
+        }
+        verifyRequiredGlobals();
+        window.gameScriptsLoaded = true;
+        window.dispatchEvent(new Event('gameScriptsLoaded'));
+    }
+
+    loadAllScripts().catch(function(error) {
+        window.gameScriptsLoadError = error;
+        console.error(error);
+        window.dispatchEvent(createEvent('gameScriptsLoadError', { error: error }));
     });
 
 })();
