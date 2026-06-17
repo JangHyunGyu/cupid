@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.0';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.1';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -2066,13 +2066,6 @@ The latest user input contains an outside scene cue that happens before the char
         const personality = this.CHAR_PERSONALITIES[charId]?.[this.lang] || '';
         const datingPrompt = this.CHAR_DATING_PROMPTS[charId]?.[this.lang] || '';
         const speechStyle = this.CHAR_SPEECH_STYLES[charId]?.[this.lang] || '';
-        const characterVoiceExamples = this._getCharacterVoiceExamples(charId);
-        const characterVoiceExamplesBlock = characterVoiceExamples
-            ? (isEn
-                ? `\n\n**[Character Voice Situation Examples — do not copy; extract voice, pacing, jealousy/refusal/tenderness rhythm only]**\n${characterVoiceExamples}`
-                : `\n\n**[캐릭터 상황별 말투 예시 — 복사 금지, 말투·속도·질투/거절/다정함 리듬만 추출]**\n${characterVoiceExamples}`)
-            : '';
-
         // 플레이어 이름
         const playerName = this.progress.getPlayerName() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri(e)', 'Liebling', 'Amor');
 
@@ -2137,9 +2130,6 @@ ${datingPrompt}
 SPEECH STYLE & MANNERISMS:
 ${speechStyle}
 
-**[Meta-rule for examples in this prompt]**: Any quoted dialogue, asterisk descriptions, or specific phrasing in this prompt are pattern-learning examples. Do not copy them verbatim; invent fresh prose that fits the current character identity, tone, and context. Repeating the same words, props, sounds, or sentence structures across responses feels artificial.
-${characterVoiceExamplesBlock}
-
 GUIDELINES:
 1. Treat the user's input as the protagonist's in-world line/action/silence/cue, then let ${charName} respond in character.
 2. Use dialogue and 3rd-person narration only as much as the moment needs. Short replies, silence, refusal, teasing, or closing the beat are valid when they fit.
@@ -2166,7 +2156,7 @@ ${adultIntimacyCeilingGuard}${establishedLoverSkinshipGuard}
 
 **[NPC Ban]**: Supporting figures may not appear at all in Cupid gallery free-talk. Do not summon, re-summon, reference, or imply NPC voices, footsteps, proximity, gazes, messages, calls, or reactions.
 
-**Response Language Check**: Before outputting your JSON, verify that every segments[].text value is written in ${langName}. The instructions and examples above may contain other languages for clarity, but your response should be in ${langName}. Proper nouns may stay as-is.
+**Response Language**: Write every segments[].text value in ${langName}. Proper nouns may stay as-is.
 
 ===CACHE_BOUNDARY===
 CURRENT SITUATION:
@@ -2191,9 +2181,6 @@ ${datingPrompt}
 
 말투·말버릇:
 ${speechStyle}
-
-**[프롬프트 안 예시·대사 처리 원칙]**: 이 프롬프트 어디에든 등장하는 인용된 대사·별표 묘사·구체적 문구는 패턴 학습용 예시입니다. 그대로 복사하지 말고, 매번 캐릭터 정체성·말투·맥락에 맞게 새로 창작하세요. 같은 단어·소품·소리·문장 구조를 응답마다 반복하면 인위적으로 보입니다.
-${characterVoiceExamplesBlock}
 
 가이드라인:
 1. 사용자 입력을 주인공의 극중 대사/행동/침묵/지문 삽입으로 받고, ${charName}가 캐릭터답게 반응하게 하세요.
