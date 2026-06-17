@@ -686,19 +686,10 @@ function buildSystemPrompt(params) {
     };
     const ex = _ex[effectiveLang] || _ex.en;
     const _langName = { en: 'English', ja: 'Japanese (日本語)', es: 'Spanish (Español)', fr: 'French (Français)', de: 'German (Deutsch)', pt: 'Brazilian Portuguese (Português Brasileiro)' }[effectiveLang] || 'English';
-    const _languageRewriteInstruction = effectiveLang === 'en'
-        ? 'If any Korean, Japanese, Spanish, French, German, or Portuguese slipped into the response, rewrite it in English now.'
-        : `If any English, Korean, or any non-${_langName} text slipped into the response, rewrite it in ${_langName} now.`;
     const languageQualityGuard = getLanguageQualityGuard(effectiveLang);
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
     const userAddressInstruction = getUserAddressInstruction(effectiveLang, playerName, knowsName);
-    const characterVoiceExamples = getFreeTalkVoiceExamples(effectiveLang, sceneName, displayName);
-    const characterVoiceExamplesBlock = characterVoiceExamples
-        ? (useEnTemplate
-            ? `\n\n**[Character Voice Situation Examples — do not copy; extract voice, pacing, jealousy/refusal/tenderness rhythm only]**\n${characterVoiceExamples}`
-            : `\n\n**[캐릭터 상황별 말투 예시 — 복사 금지, 말투·속도·질투/거절/다정함 리듬만 추출]**\n${characterVoiceExamples}`)
-        : '';
     const finalLatestTurnReactionGuard = useEnTemplate
         ? `\n\n**[Character Agency / Confirmation Limit]**\nTreat the latest user input as an in-world event, but do not force a preset beat order. Ask for confirmation only once when the request is genuinely unclear or safety-critical. If the user's action or request is clear, ${aiCharName} should respond in character through action, acceptance, refusal, teasing, distance, silence, or closure without repeated checking. Do not write the protagonist's next choice or hidden thoughts.`
         : `\n\n**[캐릭터 주도권 / 확인 질문 제한]**\n최신 유저 입력은 작품 안에서 이미 일어난 사건으로 받되, 정해진 박자 순서를 강제하지 않습니다. 요청이 정말 불명확하거나 안전상 필요한 경우에만 확인 질문을 한 번 사용하세요. 유저의 행동/요청이 분명하면 반복 확인 없이 ${aiCharName}가 캐릭터답게 행동, 수용, 거절, 장난, 거리 두기, 침묵, 장면 종료 중 하나로 반응합니다. 주인공의 다음 선택이나 숨은 마음은 대신 쓰지 마세요.`;
@@ -727,9 +718,6 @@ ${novelEngineCore}${supportingCastBoundaryGuard}${realPersonPresenceGuard}
 
 Style Guidelines (Targeting Visual Novel Fans):
 ${charStyleGuideline}
-
-**[Meta-rule for examples in this prompt]**: Any quoted dialogue, asterisk descriptions, or specific phrasing appearing anywhere in this prompt are pattern-learning examples. Do not copy them verbatim; invent fresh prose that fits the current character identity, tone, and context. Repeating the same words, props, sounds, or sentence structures across responses feels artificial.
-${characterVoiceExamplesBlock}
 
 **[Visible Text Ban — Stats & Exact Timers]**: Never write stat/math markers in segments[].text. Do NOT output stat words followed by signed numbers, standalone signed score deltas, or any visible score-change phrase. Keep numeric changes only in the JSON "affinity" field. Also never write exact numeric pause durations in dialogue/narration; describe timing qualitatively instead, like "a brief silence", "a long pause", or "her hand stills".
 
@@ -904,7 +892,7 @@ ${finalLatestTurnReactionGuard}${finalSpeakerNameGuard}
 
 **[NPC Ban]**: Supporting figures may not appear in Cupid free-talk. Do not summon, re-summon, reference, or imply NPC voices, footsteps, proximity, gazes, messages, calls, or reactions.
 
-**[Response Language Check]**: Before outputting your JSON, verify that every segments[].text value is written in ${_langName}. The instructions, examples, and character descriptions above are in English for clarity, but your response should be in ${_langName}. ${_languageRewriteInstruction} Proper nouns (user's name, character's name) stay as-is.
+**[Response Language]**: Write every segments[].text value in ${_langName}. Proper nouns (user's name, character's name) stay as-is.
 ===CACHE_BOUNDARY===
 Player Identity Mapping: Any "{playerName}", "[their name]", or "[name]" placeholder above means the real user name "${playerName}". Never output those placeholders literally.
 Current Location: ${locationName}
@@ -922,9 +910,6 @@ ${novelEngineCore}${supportingCastBoundaryGuard}${realPersonPresenceGuard}
 
 스타일 지침 (미연시 매니아 타겟):
 ${charStyleGuideline}
-
-**[프롬프트 안 예시·대사 처리 원칙]**: 이 프롬프트 어디에든 등장하는 인용된 대사·별표 묘사·구체적 문구는 패턴 학습용 예시입니다. 그대로 복사하지 말고, 매번 현재 캐릭터 정체성·말투·맥락에 맞게 새로 창작하세요. 같은 단어·소품·소리·문장 구조를 응답마다 반복하면 인위적으로 보입니다.
-${characterVoiceExamplesBlock}
 
 **[출력 금지 — 스탯/정확한 초 단위]**: segments[].text 안에는 스탯·수치 표식을 절대 쓰지 마세요. 스탯명 뒤에 부호와 숫자가 붙는 표현, 단독 점수 증감 표기, 점수 변화 설명은 모두 금지입니다. 수치 변화는 오직 JSON의 "affinity" 필드에만 넣으세요. 대사/지문에는 숫자로 된 정확한 시간 표기도 쓰지 말고, "짧은 침묵", "긴 정적", "손이 멈춘다"처럼 질적으로 묘사하세요.
 
@@ -1330,5 +1315,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.0';
+const PROMPT_VERSION = '2.7.1';
 window.PROMPT_VERSION = PROMPT_VERSION;
