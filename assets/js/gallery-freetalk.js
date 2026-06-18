@@ -559,26 +559,26 @@ class GalleryFreeTalk {
     /** 언어별 자연스러움/호칭 가드 */
     _getLanguageQualityGuard() {
         const guards = {
-            ko: `**[언어/용어 정확성 - 최우선]**
+            ko: `**[언어/용어 자연스러움]**
 - 현재 시점은 졸업 이후입니다. "전학생"은 과거 별명이나 추억으로만 가볍게 사용할 수 있습니다.
 - 한국어에서는 반드시 "전학생"만 사용하세요. "편입생"은 대학 편입 뉘앙스라 금지입니다.
 - 대사는 자연스러운 현대 한국어 구어체로 쓰고, 번역투나 과한 문어체를 피하세요.`,
-            en: `**[Language & Terminology Accuracy - Highest Priority]**
+            en: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. "Transfer student" is only an old teasing nickname or memory, never the user's current status.
 - Never call the user an exchange student or college transfer. Dialogue must sound like natural contemporary English.`,
-            es: `**[Language & Terminology Accuracy - Highest Priority]**
+            es: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. In Spanish, "alumno nuevo", "chico nuevo", or "transferido" may appear only as an old teasing nickname or memory, never the user's current status.
 - Never use "estudiante de intercambio". Dialogue must sound like natural Latin American Spanish, not literal translation.`,
-            ja: `**[Language & Terminology Accuracy - Highest Priority]**
+            ja: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. 「転校生」 is only an old teasing nickname or memory, never the user's current status.
 - Never use 「編入生」 here. Dialogue must sound like natural contemporary Japanese.`,
-            fr: `**[Language & Terminology Accuracy - Highest Priority]**
+            fr: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. "Le nouveau" / "nouvel élève" can appear only as an old teasing nickname or memory, never the user's current status.
 - Avoid "étudiant transféré" and literal translationese. Dialogue must sound like spoken French.`,
-            de: `**[Language & Terminology Accuracy - Highest Priority]**
+            de: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. "Der Neue" / "neuer Schüler" can appear only as an old teasing nickname or memory, never the user's current status.
 - Never use "Austauschschüler". Dialogue must sound like contemporary spoken German.`,
-            pt: `**[Language & Terminology Accuracy - Highest Priority]**
+            pt: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. "Aluno novo" or "transferido" may appear only as an old teasing nickname or memory, never the user's current status.
 - Never use "intercambista". Dialogue must sound like natural Brazilian Portuguese.`
         };
@@ -597,7 +597,7 @@ class GalleryFreeTalk {
             pt: 'Brazilian Portuguese'
         }[this.lang] || 'the selected target language';
 
-        return `**[Final Native-Language Cleanup - Highest Priority]**
+        return `**[Native-Language Cleanup]**
 - All visible segments[].text must sound like fluent native ${languageName}, not a translation.
 - Do not mirror the user's typos, broken grammar, awkward punctuation, code-switching, or non-native phrasing. Treat user errors as intent only; answer in polished target-language prose.
 - Before returning JSON, silently rewrite every dialogue and narration line for native rhythm, natural word order, and character-specific voice.
@@ -656,7 +656,7 @@ class GalleryFreeTalk {
         };
 
         if (this.lang === 'ko') {
-            return `**[네이티브 문체 최종 보정 - 최우선]**
+            return `**[네이티브 문체 보정]**
 - 출력 직전에 한국어 원어민 편집자처럼 한 번 다듬으세요. 대사는 실제 한국인이 연인에게 말할 법한 자연스러운 구어체로, 지문은 과한 번역투가 되지 않게 쓰세요.
 - 같은 감정 표현(숨이 멎음, 심장이 세게 뜀, 귀가 붉어짐 등)을 연속 턴에서 반복하지 말고, 행동/소품/거리감으로 감정을 바꿔 보여주세요.
 - 캐릭터 말투가 먼저입니다. 모든 캐릭터가 같은 연인 말투로 말하면 실패입니다.
@@ -665,7 +665,7 @@ class GalleryFreeTalk {
         }
 
         if (this.lang === 'en') {
-            return `**[Native English Style Polish - Highest Priority]**
+            return `**[Native English Style Polish]**
 - Before outputting JSON, do a native English rewrite pass. Dialogue should sound spoken, intimate, and current, not like translated VN prose or a romance essay.
 - Keep dialogue punchy. Most spoken lines should be one or two short sentences; avoid ornate speeches unless the user set up a major confession.
 - Narration can be sensual and visual, but keep it concrete. Avoid purple-prose defaults like "the air freezes", "heart hammering like a trapped bird", "electric silence", or reusing the same blush/breath metaphor every turn.
@@ -676,7 +676,7 @@ ${englishCharacterLines[charId] || '- Keep the current character distinct. If th
         }
 
         if (this.lang === 'ja') {
-            return `**[日本語ネイティブ文体の最終補正 - 最優先]**
+            return `**[日本語ネイティブ文体の補正]**
 - JSON出力前に、日本語ネイティブの恋愛ADV編集者として一度だけ推敲する。直訳調、硬すぎる説明口調、英語的な比喩の持ち込みを避ける。
 - セリフは現代日本語の自然な口語にする。一つのセリフに情報を詰め込みすぎず、10〜35字程度の短い呼吸を基本にする。
 - 地の文は情緒を出してよいが、毎回「心臓」「息」「頬」「静寂」だけに頼らない。手元、視線、間合い、服や小物など別のディテールで感情を見せる。
