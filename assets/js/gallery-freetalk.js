@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.3';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.4';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -39,6 +39,32 @@ function appendGalleryFreeTalkDynamicContext(content, addition) {
         return `${base}\n${dynamic}`;
     }
     return `${base}\n${GALLERY_FREETALK_CACHE_BOUNDARY_MARKER}\n${dynamic}`;
+}
+
+function getGalleryFreeTalkStablePromptHash(content) {
+    const prompt = normalizeGalleryPromptBlockForCache(content || '');
+    const markerIndex = prompt.indexOf(GALLERY_FREETALK_CACHE_BOUNDARY_MARKER);
+    const stable = markerIndex >= 0 ? prompt.slice(0, markerIndex).trim() : prompt;
+    let hash = 2166136261;
+    for (let i = 0; i < stable.length; i++) {
+        hash ^= stable.charCodeAt(i);
+        hash = Math.imul(hash, 16777619);
+    }
+    return (hash >>> 0).toString(36);
+}
+
+function promoteGalleryFreeTalkStablePromptContext(content) {
+    const prompt = normalizeGalleryPromptBlockForCache(content);
+    const markerIndex = prompt.indexOf(GALLERY_FREETALK_CACHE_BOUNDARY_MARKER);
+    if (markerIndex < 0) return prompt;
+
+    const stable = prompt.slice(0, markerIndex).trim();
+    const sceneContext = normalizeGalleryPromptBlockForCache(prompt.slice(markerIndex + GALLERY_FREETALK_CACHE_BOUNDARY_MARKER.length));
+    return [
+        stable,
+        sceneContext,
+        GALLERY_FREETALK_CACHE_BOUNDARY_MARKER,
+    ].filter(Boolean).join('\n');
 }
 
 function galleryRecentPhraseMatches(pattern, text) {
@@ -897,7 +923,9 @@ ${L.rule}
         this.chatHistory = this._sanitizeDainOutfitHistory(this.chatHistory, charId);
 
         // 시스템 프롬프트 구성
-        const systemPrompt = normalizeGalleryPromptBlockForCache(this._buildSystemPrompt(charId));
+        const systemPrompt = promoteGalleryFreeTalkStablePromptContext(
+            normalizeGalleryPromptBlockForCache(this._buildSystemPrompt(charId))
+        );
         if (this.chatHistory.length > 0 && this.chatHistory[0].role === 'system') {
             this.chatHistory[0].content = systemPrompt;
         } else {
@@ -1310,8 +1338,6 @@ The latest user input contains an outside scene cue that happens before the char
 
         try {
             // [Explicit Caching] 캐시 키 헤더 추가
-            const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : (window.GALLERY_FREETALK_PROMPT_VERSION || '2.5.1');
-            const _gftCacheKey = this.currentCharId ? `cupid-gft:${_pv}:${this.lang}:${this.currentCharId}` : '';
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
             const _historyForRequest = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(), this.currentCharId);
             let _optimized = (typeof window.optimizeImageHistory === 'function')
@@ -1328,6 +1354,8 @@ The latest user input contains an outside scene cue that happens before the char
                 ];
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
+            const _stablePromptHash = getGalleryFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
+            const _gftCacheKey = this.currentCharId ? `cupid-gft:ctx:${this.lang}:${this.currentCharId}:s${_stablePromptHash}` : '';
             const _turnMeta = this._createTurnMeta(finalContent);
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';

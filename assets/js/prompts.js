@@ -1095,7 +1095,50 @@ ${extraGuideline ? `추가 지침: ${extraGuideline}` : ""}${gameContext}${socia
 }
 
 // 전역 함수로 노출
-window.buildSystemPrompt = buildSystemPrompt;
+const CUPID_PROMPT_CACHE_BOUNDARY_MARKER = '===CACHE_BOUNDARY===';
+
+function normalizeCupidPromptBlockForCache(content) {
+    return String(content || '')
+        .replace(/\r\n?/g, '\n')
+        .replace(/[ \t]+\n/g, '\n')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+}
+
+function promoteCupidStableRuntimePrompt(content, affinity) {
+    const prompt = normalizeCupidPromptBlockForCache(content);
+    const markerIndex = prompt.indexOf(CUPID_PROMPT_CACHE_BOUNDARY_MARKER);
+    if (markerIndex < 0) return prompt;
+
+    const stable = prompt.slice(0, markerIndex).trim();
+    const dynamic = normalizeCupidPromptBlockForCache(prompt.slice(markerIndex + CUPID_PROMPT_CACHE_BOUNDARY_MARKER.length));
+    if (!dynamic) return `${stable}\n${CUPID_PROMPT_CACHE_BOUNDARY_MARKER}`;
+
+    const lines = dynamic.split('\n');
+    const affinityText = String(affinity ?? '').trim();
+    let affinityIndex = lines.findIndex(line => /affinity/i.test(line) && (!affinityText || line.includes(affinityText)));
+    if (affinityIndex < 0 && affinityText) {
+        affinityIndex = lines.findIndex((line, index) => index >= 2 && index <= 6 && line.includes(affinityText));
+    }
+    if (affinityIndex < 0) return prompt;
+
+    const promoted = [
+        ...lines.slice(0, affinityIndex),
+        ...lines.slice(affinityIndex + 1),
+    ].join('\n').trim();
+    const volatileLine = lines[affinityIndex].trim();
+
+    return [
+        stable,
+        promoted,
+        CUPID_PROMPT_CACHE_BOUNDARY_MARKER,
+        volatileLine,
+    ].filter(Boolean).join('\n');
+}
+
+window.buildSystemPrompt = function buildSystemPromptWithCachePromotion(params) {
+    return promoteCupidStableRuntimePrompt(buildSystemPrompt(params), params?.affinity);
+};
 
 /**
  * AI 응답 실패 시 사용할 캐릭터별 기본 대답을 반환합니다.
@@ -1315,5 +1358,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.3';
+const PROMPT_VERSION = '2.7.4';
 window.PROMPT_VERSION = PROMPT_VERSION;
