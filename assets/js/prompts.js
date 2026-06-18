@@ -392,14 +392,14 @@ function getCharacterOutfitGuard(lang, sceneName, displayName) {
 
     if (lang === 'ko') {
         return `
-**[다인 의상 고정 - 최우선]**
+**[다인 의상 연속성]**
 - 다인은 기본적으로 교복을 입지 않습니다. 현재 다인의 의상은 배구부 유니폼(ETAURS #19), 검정 암슬리브, 스포츠 하의/배구 장비입니다.
 - 지문에서 '교복', '교복 자락', '블레이저', '넥타이', '교복 치마', '교복 소매'를 다인에게 쓰지 마세요.
 - 의상 디테일이 필요하면 '유니폼 자락', '배구 유니폼', '암슬리브', '무릎 보호대', '배구공', '운동화'처럼 배구부 디테일을 사용하세요.`;
     }
 
     return `
-**[Dain Outfit Lock - Highest Priority]**
+**[Dain Outfit Continuity]**
 - Dain does NOT wear a school uniform by default. Her current/default outfit is the ETAURS #19 volleyball uniform, black arm sleeve, sports bottoms, and volleyball gear.
 - Never describe Dain with a school uniform, blazer, tie, school skirt, school-uniform hem, or school-uniform sleeve.
 - When clothing details are needed, use volleyball-specific details: jersey hem, volleyball uniform, arm sleeve, knee pad, volleyball, sneakers.`;
@@ -407,25 +407,25 @@ function getCharacterOutfitGuard(lang, sceneName, displayName) {
 
 function getLanguageQualityGuard(lang) {
     const guards = {
-        ko: `**[언어/용어 정확성 - 최우선]**
+        ko: `**[언어/용어 자연스러움]**
 - 주인공은 학교에 새로 온 **전학생**입니다. 한국어 응답에서 "편입생"은 절대 사용하지 마세요. "편입생"은 대학 편입/입학 전형 뉘앙스라 이 세계관에 맞지 않습니다.
 - 대사는 2020년대 한국 학생/교사가 실제로 말할 법한 자연스러운 구어체로 쓰세요. 번역투, 일본식 직역투, 과한 문어체를 피하세요.`,
-        en: `**[Language & Terminology Accuracy - Highest Priority]**
+        en: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. Use "transfer student" as the setting term, or "new kid" in casual dialogue when it sounds more native. Never call them an "exchange student" or "college transfer".
 - Dialogue must sound like natural contemporary English, not translated Korean/Japanese or old visual-novel prose.`,
-        es: `**[Language & Terminology Accuracy - Highest Priority]**
+        es: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In natural Latin American Spanish, prefer "alumno nuevo", "chico nuevo", or the nickname "transferido" in casual dialogue. Use "alumno/estudiante transferido" only for formal records or official narration.
 - Never use "estudiante de intercambio" unless the story explicitly says exchange student. Avoid literal calques that sound translated.`,
-        ja: `**[Language & Terminology Accuracy - Highest Priority]**
+        ja: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In Japanese, the correct term is 「転校生」. Never use 「編入生」 here; it sounds like a different admissions category and breaks the school-transfer premise.
 - Use natural 2020s Japanese speech levels based on character and affinity. Avoid stiff translationese and overused anime catchphrases.`,
-        fr: `**[Language & Terminology Accuracy - Highest Priority]**
+        fr: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In natural French dialogue, prefer "le nouveau" or "le nouvel élève". Use "élève transféré" only in formal school records if needed.
 - Never use "étudiant transféré" for this campus setting. Avoid literal translationese; dialogue should sound like spoken French.`,
-        de: `**[Language & Terminology Accuracy - Highest Priority]**
+        de: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In natural German dialogue, prefer "der Neue" or "neuer Schüler". Never use "Austauschschüler"; that means exchange student and is wrong for this premise.
 - Dialogue should sound like contemporary spoken German, not a literal translation from English/Korean/Japanese.`,
-        pt: `**[Language & Terminology Accuracy - Highest Priority]**
+        pt: `**[Language & Terminology Naturalness]**
 - The protagonist is newly arrived in this campus setting. In Brazilian Portuguese, prefer "aluno novo" or "transferido" in casual dialogue. Use "aluno transferido" for official records when needed.
 - Never use "intercambista" unless the story explicitly says exchange student. Avoid literal translationese; dialogue should sound native to Brazilian Portuguese.`
     };
@@ -443,7 +443,7 @@ function getNativeAntiTranslationGuard(lang) {
         pt: 'Brazilian Portuguese'
     }[lang] || 'the selected target language';
 
-    return `**[Final Native-Language Cleanup - Highest Priority]**
+    return `**[Native-Language Cleanup]**
 - All visible segments[].text must sound like fluent native ${languageName}, not a translation.
 - Do not mirror the user's typos, broken grammar, awkward punctuation, code-switching, or non-native phrasing. Treat user errors as intent only; answer in polished target-language prose.
 - Before returning JSON, silently rewrite every dialogue and narration line for native rhythm, natural word order, and character-specific voice.
@@ -504,7 +504,7 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
     };
 
     if (lang === 'ko') {
-        return `**[네이티브 문체 최종 보정 - 최우선]**
+        return `**[네이티브 문체 보정]**
 - 출력 직전에 한국어 원어민 편집자처럼 한 번 다듬으세요. 대사는 실제 한국인이 말할 법한 짧고 자연스러운 구어체로, 지문은 웹소설풍이어도 과장된 번역투가 되지 않게 쓰세요.
 - 같은 감정 표현(숨이 멎음, 심장이 세게 뜀, 귀가 붉어짐 등)을 연속 턴에서 반복하지 말고, 행동/소품/거리감으로 감정을 바꿔 보여주세요.
 - 캐릭터 말투가 먼저입니다. 모든 캐릭터가 같은 로맨스 문체로 말하면 실패입니다.
@@ -513,7 +513,7 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
     }
 
     if (lang === 'en') {
-        return `**[Native English Style Polish - Highest Priority]**
+        return `**[Native English Style Polish]**
 - Before outputting JSON, do a native English rewrite pass. Dialogue should sound spoken, not like translated VN prose or a romance essay. Prefer contractions and clean, natural phrasing.
 - Keep dialogue lines punchy. Most spoken lines should be one or two short sentences; avoid ornate speeches unless the user set up a major confession.
 - Narration can be sensual and visual, but keep it concrete. Avoid purple-prose defaults like "the air freezes", "heart hammering like a trapped bird", "electric silence", or reusing the same blush/breath metaphor every turn.
@@ -524,7 +524,7 @@ ${englishCharacterLines[key] || '- Keep the current character distinct. If the l
     }
 
     if (lang === 'ja') {
-        return `**[日本語ネイティブ文体の最終補正 - 最優先]**
+        return `**[日本語ネイティブ文体の補正]**
 - JSON出力前に、日本語ネイティブの恋愛ADV編集者として一度だけ推敲する。直訳調、硬すぎる説明口調、英語的な比喩の持ち込みを避ける。
 - セリフは現代日本語の自然な口語にする。一つのセリフに情報を詰め込みすぎず、10〜35字程度の短い呼吸を基本にする。
 - 地の文は情緒を出してよいが、毎回「心臓」「息」「頬」「静寂」だけに頼らない。手元、視線、間合い、服や小物など別のディテールで感情を見せる。
