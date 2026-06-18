@@ -467,13 +467,13 @@ class FreeTalkSystem {
 
         if (isDatingCurrent) {
             datingGuideline = ({
-                ko: `\n- 특별 지침: 당신은 현재 사용자와 사귀는 사이입니다. 매우 친밀하고 애정 어린 호칭을 사용하세요.`,
-                en: `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.`,
-                es: `\n- ESPECIAL: Actualmente estás SALIENDO con el usuario. Usa apodos extremadamente íntimos y cariñosos.`,
-                ja: `\n- 特別指示: あなたは現在ユーザーと付き合っています。非常に親密で愛情のこもった呼び方を使ってください。`,
-                fr: `\n- SPÉCIAL : Vous sortez actuellement avec l'utilisateur. Utilisez des surnoms extrêmement intimes et affectueux.`,
-                pt: `\n- ESPECIAL: Você está atualmente NAMORANDO com o usuário. Use apelidos extremamente íntimos e carinhosos.`
-            }[lang] || `\n- SPECIAL: You are currently DATING the user. Use extremely intimate and affectionate nicknames regardless of the affinity tiers below.`);
+                ko: `\n- 연인 관계 참고: 당신은 현재 사용자와 사귀는 사이입니다. 호칭은 친밀하게 가져가되, 장면과 캐릭터가 자연스럽게 부를 때만 애칭을 사용하세요.`,
+                en: `\n- Dating context: You are currently dating the user. Keep the relationship intimate, but use pet names only when the scene and character voice naturally call for them.`,
+                es: `\n- Contexto de pareja: Actualmente estás saliendo con el usuario. Mantén la cercanía, pero usa apodos cariñosos solo cuando la escena y la voz del personaje lo pidan.`,
+                ja: `\n- 恋人関係の文脈: あなたは現在ユーザーと付き合っています。親密さは保ちつつ、愛称は場面とキャラの声に自然に合う時だけ使ってください。`,
+                fr: `\n- Contexte amoureux : Vous sortez actuellement avec l'utilisateur. Gardez l'intimité, mais utilisez les surnoms tendres seulement quand la scène et la voix du personnage les appellent.`,
+                pt: `\n- Contexto de namoro: Você está atualmente namorando o usuário. Mantenha a intimidade, mas use apelidos carinhosos só quando a cena e a voz da personagem pedirem.`
+            }[lang] || `\n- Dating context: You are currently dating the user. Keep the relationship intimate, but use pet names only when the scene and character voice naturally call for them.`);
 
             // 양다리 감지
             const otherDatingChars = [];
