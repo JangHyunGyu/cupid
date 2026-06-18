@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.2';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.3';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
