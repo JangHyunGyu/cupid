@@ -693,6 +693,9 @@ function buildSystemPrompt(params) {
     const finalLatestTurnReactionGuard = useEnTemplate
         ? `\n\n**[Latest User Beat]**\nTreat the latest user input as something that already happened in the scene. If it is unclear or safety-critical, ask once; otherwise let ${aiCharName} answer through action, acceptance, refusal, teasing, distance, silence, or closure. Do not write the protagonist's next choice or hidden thoughts.`
         : `\n\n**[최신 유저 비트]**\n최신 유저 입력은 작품 안에서 이미 일어난 일로 받습니다. 정말 불명확하거나 안전상 필요한 경우에만 한 번 확인하고, 그 외에는 ${aiCharName}가 행동, 수용, 거절, 장난, 거리 두기, 침묵, 장면 종료 중 캐릭터다운 방식으로 반응합니다. 주인공의 다음 선택이나 숨은 마음은 대신 쓰지 마세요.`;
+    const actionFollowThroughGuard = useEnTemplate
+        ? `\n\n**[Action Follow-through]**\nIf the latest user beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through ${aiCharName}'s action, refusal, condition, distance change, hand/body position change, or closure. Stillness is valid only when it is ${aiCharName}'s actual decision.`
+        : `\n\n**[행동 이어받기]**\n최신 유저 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. ${aiCharName}의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. 정지는 ${aiCharName}의 실제 선택일 때만 유효합니다.`;
     const finalSpeakerNameGuard = useEnTemplate
         ? `\n\n**[Speaker Name Continuity]**\nThe current speaker is "${aiCharName}". Keep placeholder names such as "??", "???", "Character", "Speaker", "[name]", or unknown-character labels out of narration/dialogue. If a name is needed, use "${aiCharName}" or a natural pronoun.`
         : `\n\n**[현재 화자 이름 유지]**\n현재 화자는 "${aiCharName}"입니다. narration/dialogue 안에는 "??", "???", "캐릭터", "화자", "[이름]" 같은 placeholder 이름을 넣지 마세요. 이름이 필요하면 "${aiCharName}" 또는 자연스러운 3인칭 지칭만 쓰세요.`;
@@ -886,7 +889,7 @@ ${charAddressingGuideline}
    - **④ Zeigarnik discipline**: Often leave an unresolved element, but not every response. Use it for emotional turns, flirtation, secrets, or scene shifts: cut speech ("...never mind, later") / pause before a kiss / switch topic / tease a secret. Clean short replies are allowed when they fit the moment; constant cliffhangers feel artificial.
    - **⑤ Scene energy**: Let peaks, afterglow, conflict, and calm emerge from accumulated tension. Do not force a spike, milestone, or cliffhanger on a schedule.
 ${finalPlaceholderGuard}
-${finalLatestTurnReactionGuard}${finalSpeakerNameGuard}
+${finalLatestTurnReactionGuard}${actionFollowThroughGuard}${finalSpeakerNameGuard}
 
 **[Environmental Diversity — No Signature Motif Overuse]**: Do not recycle the same environmental clichés (sunset shadows lengthening, sensor lights flickering, the smell of stew from the next room, the wall over to the neighbor's house, distant TV laughter, cherry blossom petals drifting, etc.) across consecutive responses. Avoid using the same environmental word/device three turns in a row in one session. Environmental details work best when they drive the next action, emotion, or relational shift.
 
@@ -1077,7 +1080,7 @@ ${charAddressingGuideline}
    - **④ 자이가르닉 절제**: 미해결 요소는 자주 남기되 매 응답마다 강제하지 마세요. 감정 비트, 플러팅, 비밀, 장면 전환에서 사용: 말 중단 "...아니다, 나중에" / 키스 직전 멈춤 / 화제 전환 / 비밀 암시. 순간에 맞는 깔끔한 짧은 답은 허용합니다. 매번 절벽식 마무리는 인위적으로 보입니다.
    - **⑤ 씬 에너지**: 피크, 여운, 갈등, 고요함은 누적된 긴장에서 자연스럽게 나오게 하세요. 정해진 주기로 스파이크, 마일스톤, 절벽 마무리를 강제하지 마세요.
 ${finalPlaceholderGuard}
-${finalLatestTurnReactionGuard}${finalSpeakerNameGuard}
+${finalLatestTurnReactionGuard}${actionFollowThroughGuard}${finalSpeakerNameGuard}
 
 **[환경 묘사 다양화 — 시그니처 모티프 남용 금지]**: 동일 환경 클리셰(노을이 길게 그림자를 드리움, 센서등 깜빡임, 옆방의 구수한 냄새, 옆집 담벼락, TV 웃음소리, 벚꽃잎 흩날림 등)를 연속 응답에서 반복 소비하지 마세요. 같은 환경 단어/장치가 한 세션에서 3턴 연속 등장하지 않게 하고, 환경 디테일은 다음 행동·감정·관계 변화를 밀어내는 인과 단서일 때 가장 좋습니다.
 
@@ -1358,5 +1361,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.4';
+const PROMPT_VERSION = '2.7.5';
 window.PROMPT_VERSION = PROMPT_VERSION;
