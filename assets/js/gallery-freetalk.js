@@ -1105,8 +1105,8 @@ ${L.rule}
         if (this.lang === 'ko') {
             return `
 
-**[이번 턴 런타임 장면 단서 OVERRIDE]**
-최신 유저 입력에는 캐릭터 반응보다 먼저 발생한 외부 장면 단서가 있습니다. 갤러리 프리토킹 출력 형식은 narration/dialogue만 허용하므로, 이번 응답은 그 단서를 첫 1~2개 segments 안의 비어 있지 않은 narration으로 먼저 회수하세요.
+**[이번 턴 장면 단서]**
+최신 유저 입력에는 캐릭터 반응보다 먼저 발생한 외부 장면 단서가 있습니다. 갤러리 프리토킹 출력 형식은 narration/dialogue만 허용하므로, 그 단서를 첫 1~2개 segments 안의 비어 있지 않은 narration으로 먼저 회수하세요.
 - 문소리, 발소리, 주변 시선, 알림, 시간 압박, 놓인 소품 변화 중 실제 입력에 있는 단서가 움직이는 순간을 씁니다.
 - 그 다음 narration/dialogue에서 현재 캐릭터가 그 단서를 알아차리고 몸/내면 반응을 거친 뒤 짧게 말하게 하세요.
 - scene 타입, sceneNarration 필드, 단일 text 필드, 임의 키를 새로 만들지 말고 기존 JSON segments 계약만 지키세요.`;
@@ -1114,8 +1114,8 @@ ${L.rule}
 
         return `
 
-**[Runtime scene-cue override for this turn]**
-The latest user input contains an outside scene cue that happens before the character reacts. Gallery free-talk allows narration/dialogue only, so this response must pick up that cue as a non-empty narration segment within the first 1-2 segments.
+**[Scene cue for this turn]**
+The latest user input contains an outside scene cue that happens before the character reacts. Gallery free-talk allows narration/dialogue only, so pick up that cue as a non-empty narration segment within the first 1-2 segments.
 - Use only object, phone, time-pressure, door, or placed-prop cues that can exist without another person. Do not turn the cue into footsteps, voices, gazes, crowds, or any third-party presence.
 - Then let the current character notice it, show body/interior reaction, and speak a short line.
 - Do not add scene type, sceneNarration, a single text field, or arbitrary keys. Keep the existing JSON segments contract.`;
@@ -1164,10 +1164,10 @@ The latest user input contains an outside scene cue that happens before the char
                 .slice(0, 180);
 
             if (this.lang === 'ko') {
-                return `\n\n**[이번 턴 유저 극중 화자 LOCK]**\n최근 유저 로그가 유저/주인공의 극중 배역을 "${roleName}"로 지정했습니다. "당신은 ${roleName}..."에서 "당신"은 응답 캐릭터가 아니라 유저/주인공을 뜻합니다. 이후 "${roleName}" 이름표, "${roleName}"의 행동 지문, 침묵, 도망, 망설임, 선택은 모두 유저 캐릭터가 이미 한 장면 사건으로 취급하세요. 단, 응답자가 ${roleName}의 새 행동, 대사, 동의, 거절을 대신 결정하지는 마세요. 현재 캐릭터는 ${roleName}가 방금 남긴 말/행동과 갤러리 프리토킹의 현재 연인 관계/루트 고유 압력에 반응합니다.\n감지된 역할 선언 근거: ${sourceText}\n`;
+                return `\n\n**[이번 턴 유저 극중 화자]**\n최근 유저 로그가 유저/주인공의 극중 배역을 "${roleName}"로 지정했습니다. "당신은 ${roleName}..."에서 "당신"은 응답 캐릭터가 아니라 유저/주인공을 뜻합니다. 이후 "${roleName}" 이름표, "${roleName}"의 행동 지문, 침묵, 도망, 망설임, 선택은 모두 유저 캐릭터가 이미 한 장면 사건으로 취급하세요. 단, 응답자가 ${roleName}의 새 행동, 대사, 동의, 거절을 대신 결정하지는 마세요. 현재 캐릭터는 ${roleName}가 방금 남긴 말/행동과 현재 연인 장면 맥락에 반응합니다.\n역할 선언 근거: ${sourceText}\n`;
             }
 
-            return `\n\n**[Current-Turn User In-World Speaker LOCK]**\nRecent user log assigns the user/protagonist's in-world role as "${roleName}". In phrases like "you are ${roleName}", "you" means the user/protagonist, not the responding character. Any "${roleName}" name label, action prose, silence, escape, hesitation, or choice is a real scene event already performed by the user character. However, the responder must not decide ${roleName}'s new actions, dialogue, consent, or refusal. The current character reacts to what ${roleName} just did and to gallery free-talk pressure native to the current lover relationship/route.\nDetected role declaration source: ${sourceText}\n`;
+            return `\n\n**[Current-turn user in-world speaker]**\nRecent user log assigns the user/protagonist's in-world role as "${roleName}". In phrases like "you are ${roleName}", "you" means the user/protagonist, not the responding character. Any "${roleName}" name label, action prose, silence, escape, hesitation, or choice is a real scene event already performed by the user character. However, the responder must not decide ${roleName}'s new actions, dialogue, consent, or refusal. The current character reacts to what ${roleName} just did and to the current lover-scene context.\nRole declaration source: ${sourceText}\n`;
         }
 
         return '';
