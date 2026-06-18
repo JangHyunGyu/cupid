@@ -55,6 +55,18 @@ function appendFreeTalkDynamicContext(content, addition) {
     return `${base}\n${FREE_TALK_CACHE_BOUNDARY_MARKER}\n${dynamic}`;
 }
 
+function getFreeTalkStablePromptHash(content) {
+    const prompt = normalizeFreeTalkPromptBlockForCache(content || '');
+    const markerIndex = prompt.indexOf(FREE_TALK_CACHE_BOUNDARY_MARKER);
+    const stable = markerIndex >= 0 ? prompt.slice(0, markerIndex).trim() : prompt;
+    let hash = 2166136261;
+    for (let i = 0; i < stable.length; i++) {
+        hash ^= stable.charCodeAt(i);
+        hash = Math.imul(hash, 16777619);
+    }
+    return (hash >>> 0).toString(36);
+}
+
 function cupidRecentPhraseMatches(pattern, text) {
     pattern.lastIndex = 0;
     return pattern.test(text || '');
@@ -796,8 +808,6 @@ class FreeTalkSystem {
             // - messages: 대화 기록 전체 (시스템 프롬프트 + 대화 내용)
             // [Explicit Caching] 캐시 키 — static 영역이 유저 중립(placeholder 유지)이라 전체 유저 공유 캐시 가능
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
-            const _pv = (typeof PROMPT_VERSION !== 'undefined') ? PROMPT_VERSION : '0';
-            const _cacheKey = charKey ? `cupid:${_pv}:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}` : '';
             // [슬라이딩 윈도우] system + 누적 요약 주입 + 최근 N개 메시지만 전송 (토큰 폭증 방지)
             const _windowed = this._sanitizeDainOutfitHistory(this._buildWindowedHistory(), charKey);
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
@@ -815,6 +825,8 @@ class FreeTalkSystem {
                 ];
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
+            const _stablePromptHash = getFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
+            const _cacheKey = charKey ? `cupid:ctx:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptHash}` : '';
             const _turnMeta = this._createTurnMeta(finalContent);
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
