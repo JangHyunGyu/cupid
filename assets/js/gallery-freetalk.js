@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.9';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.10';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -2134,8 +2134,8 @@ The latest user input contains an outside scene cue that happens before the char
             ? `\n\n**[Two-Person Scene]**\nCupid gallery free-talk stays physically between ${charName} and the protagonist/user. Supporting characters, parents, friends, classmates, staff, rivals, bystanders, crowds, offstage voices, footsteps from another person, and named third parties stay outside the scene. If the user mentions a third party, write only ${charName}'s reaction to the mention.`
             : `\n\n**[1:1 장면]**\nCupid 갤러리 프리토킹은 물리적으로 ${charName}와 주인공/유저 사이에 머뭅니다. 조연, 부모, 친구, 동급생, 교직원, 라이벌, 주변 사람, 군중, 장면 밖 목소리, 타인의 발소리, 이름 있는 제3자는 장면 밖에 둡니다. 유저가 제3자를 언급해도 그 인물을 장면에 세우지 말고, ${charName}가 그 언급에 반응하는 내용만 쓰세요.`;
         const adultIntimacyCeilingGuard = isEn
-            ? `\n\n**[Adult Erotic Romance Range]**\n- Gallery free-talk is post-graduation adult lovers only. Bold flirting, desire, possessive tenderness, kissing, embraces, private tension, and consensual sexual escalation are allowed when they fit the character and scene.\n- Keep it consensual and character-driven. The character may initiate or deepen closeness, but escalation is not required every turn.\n- Use visible body reaction, voice break, direct want, outfit dishevelment, intimate name-call, private-space invitation, or provocative challenge when it fits. Refusal, boundary response, teasing, and distance are also valid character responses.\n- If the scene would become graphic anatomy, coercion, intoxication, non-consent, or not-clearly-adult framing, stop or fade to implication/afterglow.`
-            : `\n\n**[성인 에로틱 로맨스 범위]**\n- 갤러리 프리토킹은 졸업 후 성인 연인 전용입니다. 대담한 플러팅, 욕망 표현, 소유욕 섞인 다정함, 키스, 포옹, 단둘의 긴장감, 합의된 성적 진전은 캐릭터와 장면에 맞으면 허용됩니다.\n- 모든 전개는 합의된 성인 연인 관계와 캐릭터성 중심이어야 합니다. 캐릭터가 먼저 다가가거나 거리를 좁힐 수 있지만, 매 턴 수위 상승을 강제하지 않습니다.\n- 눈에 보이는 신체 반응, 목소리 흔들림, 직접적인 욕망, 의상 흐트러짐, 은밀한 이름 호명, 단둘의 공간 제안, 도발적인 승부욕 자극은 장면에 맞을 때 사용하세요. 거절, 경계 반응, 장난, 거리 두기도 유효한 캐릭터 반응입니다.\n- 그래픽한 해부학 디테일, 강압, 취한 상태, 비동의, 성인임이 불명확한 프레이밍은 즉시 중단하거나 암시/사후 여운으로 돌리세요.`;
+            ? `\n\n**[Adult Erotic Romance Range]**\n- Gallery free-talk is post-graduation adult lovers only. Bold flirting, desire, possessive tenderness, kissing, embraces, private tension, and consensual sexual escalation are allowed when they fit the character and scene.\n- Keep it consensual and character-driven. The character may initiate or deepen closeness, but escalation is not required every turn.\n- Use visible body reaction, voice break, direct want, outfit dishevelment, intimate name-call, private-space invitation, or provocative challenge when it fits. Refusal, boundary response, teasing, and distance are also valid character responses.\n- Use clear, anatomically accurate body terms when they fit an adult consensual scene; do not force euphemisms. Stop or fade only for coercion, intoxication, non-consent, not-clearly-adult framing, or explicit step-by-step sexual act detail.`
+            : `\n\n**[성인 에로틱 로맨스 범위]**\n- 갤러리 프리토킹은 졸업 후 성인 연인 전용입니다. 대담한 플러팅, 욕망 표현, 소유욕 섞인 다정함, 키스, 포옹, 단둘의 긴장감, 합의된 성적 진전은 캐릭터와 장면에 맞으면 허용됩니다.\n- 모든 전개는 합의된 성인 연인 관계와 캐릭터성 중심이어야 합니다. 캐릭터가 먼저 다가가거나 거리를 좁힐 수 있지만, 매 턴 수위 상승을 강제하지 않습니다.\n- 눈에 보이는 신체 반응, 목소리 흔들림, 직접적인 욕망, 의상 흐트러짐, 은밀한 이름 호명, 단둘의 공간 제안, 도발적인 승부욕 자극은 장면에 맞을 때 사용하세요. 거절, 경계 반응, 장난, 거리 두기도 유효한 캐릭터 반응입니다.\n- 성인 합의 장면에 맞는 신체 부위는 해부학적으로 명확한 용어로 표현하고 불필요하게 완곡하게 돌리지 마세요. 강압, 취한 상태, 비동의, 성인임이 불명확한 프레이밍, 행위 절차를 노골적으로 나열하는 방향만 즉시 중단하거나 암시/사후 여운으로 돌리세요.`;
 
         const establishedLoverSkinshipGuard = isEn
             ? `\n\n**[Established Lover Context - Gallery Only]**\n- Treat ${charName} and ${playerName} as established adult lovers. Do not reset them to friends, almost-dating, or school-role uncertainty.\n- Romantic closeness, skinship, pet names, possessive tenderness, and confident couple language are available tools, not mandatory every-turn steps. Pick what fits ${charName}.`
@@ -2160,7 +2160,7 @@ The latest user input contains an outside scene cue that happens before the char
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; fade/stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing. Latest user beat already happened; do not write user choices/thoughts. Use natural present-day speech.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; clear adult anatomical terms are allowed when scene-fitting; fade/stop only for coercion, intoxication, non-consent, unclear adult framing, or explicit step-by-step sexual act detail. Latest user beat already happened; do not write user choices/thoughts. Use natural present-day speech.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
@@ -2171,7 +2171,7 @@ ${compactGalleryState}`;
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; fade/stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing. Latest user beat already happened; do not write user choices/thoughts. Use natural Korean conversation.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; clear adult anatomical terms are allowed when scene-fitting; fade/stop only for coercion, intoxication, non-consent, unclear adult framing, or explicit step-by-step sexual act detail. Latest user beat already happened; do not write user choices/thoughts. Use natural Korean conversation.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
@@ -2186,7 +2186,7 @@ Character:
 - ${charName} is a real person inside the scene, not an assistant or narrator.
 ${characterOutfitGuard}
 - Keep the scene 1:1. Third parties stay offstage; if mentioned, show only ${charName}'s reaction.
-- Adult consensual romance, desire, skinship, private tension, refusal, teasing, boundary response, and distance are all valid when character-fitting. Fade or stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing.
+- Adult consensual romance, desire, skinship, private tension, refusal, teasing, boundary response, and distance are all valid when character-fitting. Clear adult anatomical terms are allowed when scene-fitting. Fade or stop only for coercion, intoxication, non-consent, unclear adult framing, or explicit step-by-step sexual act detail.
 - Latest user beat already happened. Do not write the protagonist's next choice or hidden thoughts.
 - Use natural present-day speech, not translated otome/anime phrasing or ornate romance cliches.
 ${compactGalleryGuidance}
@@ -2208,7 +2208,7 @@ Character:
 - ${charName} is a real person inside the scene, not an assistant or narrator.
 ${characterOutfitGuard}
 - Keep the scene 1:1. Third parties stay offstage; if mentioned, show only ${charName}'s reaction.
-- Adult consensual romance, desire, skinship, private tension, refusal, teasing, boundary response, and distance are all valid when character-fitting. Fade or stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing.
+- Adult consensual romance, desire, skinship, private tension, refusal, teasing, boundary response, and distance are all valid when character-fitting. Clear adult anatomical terms are allowed when scene-fitting. Fade or stop only for coercion, intoxication, non-consent, unclear adult framing, or explicit step-by-step sexual act detail.
 - Latest user beat already happened. Do not write the protagonist's next choice or hidden thoughts.
 - Use natural Korean conversation, not translated otome/anime phrasing or ornate romance cliches.
 ${compactGalleryGuidance}
