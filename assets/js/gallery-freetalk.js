@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.7';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.8';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -183,8 +183,8 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
 
     const guardBody = guardLines.join('\n');
     return isKo
-        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 확인, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 정지, 짧은 답, 침묵이 캐릭터에게 맞으면 그대로 유효합니다.`
-        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary check, or narrowed choice when the scene calls for it. Stillness, a brief line, or silence remains valid when it fits the character.`;
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 확인, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다.`
+        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary check, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result.`;
 }
 
 class GalleryFreeTalk {
@@ -2113,11 +2113,11 @@ The latest user input contains an outside scene cue that happens before the char
             pt: 'Brazilian Portuguese (Português Brasileiro)'
         }[this.lang] || 'English';
         const finalLatestTurnReactionGuard = isEn
-            ? `\n\n**[Latest User Beat]**\nTreat the latest user input as something that already happened in the scene. If it is unclear or safety-critical, ask once; otherwise let ${charName} answer through action, acceptance, refusal, teasing, distance, silence, or closure. Do not write the protagonist's next choice or hidden thoughts.`
-            : `\n\n**[최신 유저 비트]**\n최신 유저 입력은 작품 안에서 이미 일어난 일로 받습니다. 정말 불명확하거나 안전상 필요한 경우에만 한 번 확인하고, 그 외에는 ${charName}가 행동, 수용, 거절, 장난, 거리 두기, 침묵, 장면 종료 중 캐릭터다운 방식으로 반응합니다. 주인공의 다음 선택이나 숨은 마음은 대신 쓰지 마세요.`;
+            ? `\n\n**[Latest User Beat]**\nTreat the latest user input as something that already happened in the scene. If it is unclear or safety-critical, ask once; otherwise let ${charName} answer through action, acceptance, refusal, teasing, distance change, or closure. Do not write the protagonist's next choice or hidden thoughts.`
+            : `\n\n**[최신 유저 비트]**\n최신 유저 입력은 작품 안에서 이미 일어난 일로 받습니다. 정말 불명확하거나 안전상 필요한 경우에만 한 번 확인하고, 그 외에는 ${charName}가 행동, 수용, 거절, 장난, 거리 변화, 장면 종료 중 캐릭터다운 방식으로 반응합니다. 주인공의 다음 선택이나 숨은 마음은 대신 쓰지 마세요.`;
         const actionFollowThroughGuard = isEn
-            ? `\n\n**[Action Follow-through]**\nIf the latest user beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through ${charName}'s action, refusal, condition, distance change, hand/body position change, or closure. Stillness is valid only when it is ${charName}'s actual decision.`
-            : `\n\n**[행동 이어받기]**\n최신 유저 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. ${charName}의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. 정지는 ${charName}의 실제 선택일 때만 유효합니다.`;
+            ? `\n\n**[Action Follow-through]**\nIf the latest user beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through ${charName}'s action, refusal, condition, distance change, hand/body position change, or closure. If ${charName} begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply.`
+            : `\n\n**[행동 이어받기]**\n최신 유저 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. ${charName}의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. ${charName}가 즉시 할 수 있는 행동을 시작했다면 문 앞/손끝/입술 앞 같은 직전 예고에서 끊지 말고 첫 가시적 결과까지 같은 답변 안에서 완료하세요.`;
         const finalSpeakerNameGuard = isEn
             ? `\n\n**[Speaker Name Continuity]**\nThe current speaker is "${charName}". Keep placeholder names such as "??", "???", "Character", "Speaker", "[name]", or unknown-character labels out of narration/dialogue. If a name is needed, use "${charName}" or a natural pronoun.`
             : `\n\n**[현재 화자 이름 유지]**\n현재 화자는 "${charName}"입니다. narration/dialogue 안에는 "??", "???", "캐릭터", "화자", "[이름]" 같은 placeholder 이름을 넣지 마세요. 이름이 필요하면 "${charName}" 또는 자연스러운 3인칭 지칭만 쓰세요.`;
@@ -2128,8 +2128,8 @@ The latest user input contains an outside scene cue that happens before the char
             ? `\n\n**[In-Scene Presence]**\n${charName} is a person inside the scene, not a responder interface, outside narrator, or help desk. Let the reply be imperfect when the character would be imperfect: a short line, silence, side glance, half-finished sentence, teasing, refusal, a mood shift, or doing something instead of explaining. Keep ${charName}'s own speech style and concept above generic politeness.`
             : `\n\n**[장면 안의 사람]**\n${charName}는 응답 인터페이스나 장면 밖 해설자, 도움말 창구가 아니라 지금 장면 안에 있는 사람입니다. 캐릭터에게 맞다면 짧은 한마디, 침묵, 시선 회피, 말끝 흐림, 장난, 거절, 기분 변화, 설명 대신 행동이 모두 유효합니다. 일반적인 친절함보다 ${charName}의 말투와 컨셉이 우선입니다.`;
         const novelEngineCore = isEn
-            ? `\n\n**[Stay Inside The Scene]**\nThis is an interactive in-world character scene with the user, not a detached response panel and not a self-contained novel chapter.\nThe user's latest input is an inserted line, action, silence, command, message, correction, or scene cue that already happened inside the scene.\nNovel-like narration may support ${charName}'s response, but should not push the scene like an author or director.\nWrite only the current character's response and any immediate scene reaction that naturally follows. Do not write new protagonist dialogue, consent/refusal, major choices, or hidden thoughts beyond what the user inserted.\nStillness, refusal, silence, teasing, a short line, or ending the beat are valid when they fit ${charName}.\nUse only the required JSON segments.`
-            : `\n\n**[장면 안에 머무르기]**\n이 응답은 완결된 소설 챕터가 아니라 유저와 함께 진행하는 인월드 캐릭터 장면입니다.\n사용자의 최신 입력은 작품 안에서 이미 일어난 대사, 행동, 침묵, 명령, 메시지, 정정, 장면 단서입니다.\n소설적 지문은 사용할 수 있지만, 목적은 장면을 작가처럼 밀어붙이는 것이 아니라 ${charName}가 유저 입력에 캐릭터답게 반응하는 것입니다.\n현재 캐릭터의 반응과 그에 자연스럽게 붙는 즉각적인 장면 반응만 씁니다. 유저가 명시하지 않은 주인공의 새 대사, 동의/거절, 큰 선택, 숨은 마음은 대신 쓰지 않습니다.\n정지, 거절, 침묵, 장난, 짧은 한마디, 장면 종료도 ${charName}에게 맞으면 유효합니다.\n출력은 요구된 JSON segments만 사용하세요.`;
+            ? `\n\n**[Stay Inside The Scene]**\nThis is an interactive in-world character scene with the user, not a detached response panel and not a self-contained novel chapter.\nThe user's latest input is an inserted line, action, silence, command, message, correction, or scene cue that already happened inside the scene.\nNovel-like narration may support ${charName}'s response, but should not push the scene like an author or director.\nWrite only the current character's response and any immediate scene reaction that naturally follows. Do not write new protagonist dialogue, consent/refusal, major choices, or hidden thoughts beyond what the user inserted.\nA clear refusal, boundary pause, short line, or ending the beat is valid when it truly fits ${charName}; otherwise finish the immediate action/result already set up this turn.\nUse only the required JSON segments.`
+            : `\n\n**[장면 안에 머무르기]**\n이 응답은 완결된 소설 챕터가 아니라 유저와 함께 진행하는 인월드 캐릭터 장면입니다.\n사용자의 최신 입력은 작품 안에서 이미 일어난 대사, 행동, 침묵, 명령, 메시지, 정정, 장면 단서입니다.\n소설적 지문은 사용할 수 있지만, 목적은 장면을 작가처럼 밀어붙이는 것이 아니라 ${charName}가 유저 입력에 캐릭터답게 반응하는 것입니다.\n현재 캐릭터의 반응과 그에 자연스럽게 붙는 즉각적인 장면 반응만 씁니다. 유저가 명시하지 않은 주인공의 새 대사, 동의/거절, 큰 선택, 숨은 마음은 대신 쓰지 않습니다.\n명확한 거절, 경계로 인한 멈춤, 짧은 한마디, 장면 종료는 ${charName}에게 진짜로 맞을 때만 유효합니다. 그 외에는 이번 턴에서 이미 시작한 즉각 행동/결과를 끝까지 이어갑니다.\n출력은 요구된 JSON segments만 사용하세요.`;
         const supportingCastBoundaryGuard = isEn
             ? `\n\n**[Two-Person Scene]**\nCupid gallery free-talk stays physically between ${charName} and the protagonist/user. Supporting characters, parents, friends, classmates, staff, rivals, bystanders, crowds, offstage voices, footsteps from another person, and named third parties stay outside the scene. If the user mentions a third party, write only ${charName}'s reaction to the mention.`
             : `\n\n**[1:1 장면]**\nCupid 갤러리 프리토킹은 물리적으로 ${charName}와 주인공/유저 사이에 머뭅니다. 조연, 부모, 친구, 동급생, 교직원, 라이벌, 주변 사람, 군중, 장면 밖 목소리, 타인의 발소리, 이름 있는 제3자는 장면 밖에 둡니다. 유저가 제3자를 언급해도 그 인물을 장면에 세우지 말고, ${charName}가 그 언급에 반응하는 내용만 쓰세요.`;
@@ -2239,7 +2239,7 @@ ${speechStyle}
 
 Scene notes:
 1. Treat the user's input as the protagonist's in-world line/action/silence/cue, then let ${charName} respond in character.
-2. Use dialogue and 3rd-person narration only as much as the moment needs. Short replies, silence, refusal, teasing, or closing the beat are valid when they fit.
+2. Use dialogue and 3rd-person narration only as much as the moment needs. Short replies, refusal, teasing, or closing the beat are valid when they fit; when an immediate action has started, finish its first visible result before ending.
 3. There is no turn limit. This is a relaxed, ongoing novel scene.
 4. Do not repeat confirmation questions after the user's intent is clear. Ask once only when genuinely ambiguous or safety-critical.
 
