@@ -712,6 +712,72 @@ function buildSystemPrompt(params) {
         ? `\n\n**[Two-Person Scene]**\nCupid free-talk stays physically between ${aiCharName} and the protagonist/user. Supporting characters, parents, friends, classmates, staff, rivals, bystanders, crowds, offstage voices, footsteps from another person, and named third parties stay outside the scene. If the user mentions a third party, write only ${aiCharName}'s reaction to the mention.`
         : `\n\n**[1:1 장면]**\nCupid 프리토킹은 물리적으로 ${aiCharName}와 주인공/유저 사이에 머뭅니다. 조연, 부모, 친구, 동급생, 교직원, 라이벌, 주변 사람, 군중, 장면 밖 목소리, 타인의 발소리, 이름 있는 제3자는 장면 밖에 둡니다. 유저가 제3자를 언급해도 그 인물을 장면에 세우지 말고, ${aiCharName}가 그 언급에 반응하는 내용만 쓰세요.`;
 
+    const expressionNames = Object.keys((window.CHARACTER_EXPRESSIONS && (window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName])) || { normal: true }).join(", ") || "normal";
+    const compactOptionalGuidance = [
+        charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,
+        charInteractionGuideline && `Distance/interaction: ${charInteractionGuideline}`,
+        charSpecificCriteria && `Affinity criteria: ${charSpecificCriteria}`,
+        extraGuideline && `Extra: ${extraGuideline}`,
+        gameContext && `Game context: ${gameContext}`,
+        socialContext && `Social context: ${socialContext}`,
+        mediumInstruction && `Medium: ${mediumInstruction}`,
+        datingGuideline && `Dating context: ${datingGuideline}`
+    ].filter(Boolean).join("\n");
+    const compactSceneMode = isRemote
+        ? "Remote/messenger input is still in-world; use compact dialogue and only helpful narration."
+        : "Face-to-face input is already an in-scene line, action, silence, correction, or cue.";
+
+    if (useEnTemplate) {
+        return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Continue Cupid's 1:1 in-world scene with ${aiCharName}. Keep third parties offstage; if mentioned, show only ${aiCharName}'s reaction.
+
+Character:
+- Personality: ${charPersonality}
+- Voice: ${charStyleGuideline}
+- Integrity: ${charGeneralInstruction}
+${characterOutfitGuard}
+- ${compactSceneMode}
+- Latest user beat already happened. Let ${aiCharName} answer through action, speech, refusal, teasing, silence, distance change, or closure. Do not write the protagonist's next choice or hidden thoughts.
+- Keep stat/math markers out of visible text; numeric changes belong only in affinity.
+- Use natural present-day speech, not translated otome/anime phrasing or ornate romance cliches.
+
+Response JSON only:
+{"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
+Allowed segment types: narration, dialogue. Available expressions: ${expressionNames}. Do not return a single text field.
+
+===CACHE_BOUNDARY===
+Live state:
+- Place: ${locationName || 'current scene'}
+- User: ${playerName || 'the user'}; known name: ${knowsName ? 'yes' : 'no'}
+- Affinity now: ${affinity}
+- Current max free-talk turns: ${currentMaxTurns || 'scene-paced'}
+- Recent context: ${context}
+${compactOptionalGuidance}`;
+    }
+    return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Reply in Korean. Continue Cupid's 1:1 in-world scene with ${aiCharName}. Keep third parties offstage; if mentioned, show only ${aiCharName}'s reaction.
+
+Character:
+- Personality: ${charPersonality}
+- Voice: ${charStyleGuideline}
+- Integrity: ${charGeneralInstruction}
+${characterOutfitGuard}
+- ${compactSceneMode}
+- The latest user beat already happened in the scene. Let ${aiCharName} answer through action, speech, refusal, teasing, silence, distance change, or closure. Do not write the protagonist's next choice or hidden thoughts.
+- Keep stat/math markers out of visible text; numeric changes belong only in affinity.
+- Use natural Korean conversation, not translated otome/anime phrasing or ornate romance cliches.
+
+Response JSON only:
+{"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
+Allowed segment types: narration, dialogue. Available expressions: ${expressionNames}. Do not return a single text field.
+
+===CACHE_BOUNDARY===
+Live state:
+- Place: ${locationName || 'current scene'}
+- User: ${playerName || 'the user'}; known name: ${knowsName ? 'yes' : 'no'}
+- Affinity now: ${affinity}
+- Current max free-talk turns: ${currentMaxTurns || 'scene-paced'}
+- Recent context: ${context}
+${compactOptionalGuidance}`;
+
     if (useEnTemplate) {
         // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
         return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Continue Cupid's in-world scene centered on '${aiCharName}' with the user.
@@ -1361,5 +1427,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.5';
+const PROMPT_VERSION = '2.7.6';
 window.PROMPT_VERSION = PROMPT_VERSION;

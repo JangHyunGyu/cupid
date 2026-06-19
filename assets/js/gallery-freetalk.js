@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.5';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.6';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -2146,6 +2146,58 @@ The latest user input contains an outside scene cue that happens before the char
                 ? `\n**[Dain Outfit Continuity]**\n- Current post-graduation Dain is not in a student uniform. Use everyday sporty streetwear with a black arm sleeve.\n- If referencing student-day memories, Dain's iconic outfit is the ETAURS #19 volleyball jersey, not a blazer/tie/school skirt.\n- Keep school-uniform hems, school-uniform sleeves, blazers, ties, and school skirts out of current Dain descriptions.`
                 : `\n**[다인 의상 연속성]**\n- 졸업 후 현재의 다인은 교복이 아니라 검정 암슬리브를 곁들인 스포티한 일상복 차림입니다.\n- 학생 시절을 회상할 때도 다인의 상징 의상은 ETAURS #19 배구 유니폼이지 블레이저/넥타이/교복 치마가 아닙니다.\n- 현재 다인 묘사에는 '교복 자락', '교복 소매', '블레이저', '넥타이', '교복 치마'를 넣지 마세요.`)
             : '';
+
+        const compactGalleryGuidance = [
+            datingPrompt && `Relationship: ${datingPrompt}`,
+            speechStyle && `Voice: ${speechStyle}`,
+            otherRelationships && `Other route continuity, do not bring onstage: ${otherRelationships}`
+        ].filter(Boolean).join("\n");
+        const compactGalleryExpressions = validExprs.join(', ') || 'normal';
+
+        if (isEn) {
+            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Continue Cupid gallery free-talk as a post-graduation adult lovers scene between ${charName} and ${playerName}. This is not a current school scene.
+
+Character:
+- Personality: ${personality}
+- ${charName} is a real person inside the scene, not an assistant or narrator.
+${characterOutfitGuard}
+- Keep the scene 1:1. Third parties stay offstage; if mentioned, show only ${charName}'s reaction.
+- Adult consensual romance, desire, skinship, private tension, refusal, teasing delay, and distance are all valid when character-fitting. Fade or stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing.
+- Latest user beat already happened. Do not write the protagonist's next choice or hidden thoughts.
+- Use natural present-day speech, not translated otome/anime phrasing or ornate romance cliches.
+${compactGalleryGuidance}
+
+Response JSON only:
+{"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
+Allowed segment types: narration, dialogue. Available expressions: ${compactGalleryExpressions}. Do not return a single text field.
+
+===CACHE_BOUNDARY===
+Live state:
+- Place: ${location || 'current gallery scene'}
+- User: ${playerName}
+- Language: ${langName}`;
+        }
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Reply in Korean. Continue Cupid gallery free-talk as a post-graduation adult lovers scene between ${charName} and ${playerName}. This is not a current school scene.
+
+Character:
+- Personality: ${personality}
+- ${charName} is a real person inside the scene, not an assistant or narrator.
+${characterOutfitGuard}
+- Keep the scene 1:1. Third parties stay offstage; if mentioned, show only ${charName}'s reaction.
+- Adult consensual romance, desire, skinship, private tension, refusal, teasing delay, and distance are all valid when character-fitting. Fade or stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing.
+- Latest user beat already happened. Do not write the protagonist's next choice or hidden thoughts.
+- Use natural Korean conversation, not translated otome/anime phrasing or ornate romance cliches.
+${compactGalleryGuidance}
+
+Response JSON only:
+{"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
+Allowed segment types: narration, dialogue. Available expressions: ${compactGalleryExpressions}. Do not return a single text field.
+
+===CACHE_BOUNDARY===
+Live state:
+- Place: ${location || 'current gallery scene'}
+- User: ${playerName}
+- Language: Korean`;
 
         if (isEn) {
             // [Explicit Caching 최적화] 정적 콘텐츠(===CACHE_BOUNDARY=== 앞)와 동적 콘텐츠(뒤)를 분리
