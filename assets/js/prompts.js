@@ -691,11 +691,11 @@ function buildSystemPrompt(params) {
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
     const userAddressInstruction = getUserAddressInstruction(effectiveLang, playerName, knowsName);
     const finalLatestTurnReactionGuard = useEnTemplate
-        ? `\n\n**[Latest User Beat]**\nTreat the latest user input as something that already happened in the scene. If it is unclear or safety-critical, ask once; otherwise let ${aiCharName} answer through action, acceptance, refusal, teasing, distance, silence, or closure. Do not write the protagonist's next choice or hidden thoughts.`
-        : `\n\n**[최신 유저 비트]**\n최신 유저 입력은 작품 안에서 이미 일어난 일로 받습니다. 정말 불명확하거나 안전상 필요한 경우에만 한 번 확인하고, 그 외에는 ${aiCharName}가 행동, 수용, 거절, 장난, 거리 두기, 침묵, 장면 종료 중 캐릭터다운 방식으로 반응합니다. 주인공의 다음 선택이나 숨은 마음은 대신 쓰지 마세요.`;
+        ? `\n\n**[Latest User Beat]**\nTreat the latest user input as something that already happened in the scene. If it is unclear or safety-critical, ask once; otherwise let ${aiCharName} answer through action, acceptance, refusal, teasing, distance change, or closure. Do not write the protagonist's next choice or hidden thoughts.`
+        : `\n\n**[최신 유저 비트]**\n최신 유저 입력은 작품 안에서 이미 일어난 일로 받습니다. 정말 불명확하거나 안전상 필요한 경우에만 한 번 확인하고, 그 외에는 ${aiCharName}가 행동, 수용, 거절, 장난, 거리 변화, 장면 종료 중 캐릭터다운 방식으로 반응합니다. 주인공의 다음 선택이나 숨은 마음은 대신 쓰지 마세요.`;
     const actionFollowThroughGuard = useEnTemplate
-        ? `\n\n**[Action Follow-through]**\nIf the latest user beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through ${aiCharName}'s action, refusal, condition, distance change, hand/body position change, or closure. Stillness is valid only when it is ${aiCharName}'s actual decision.`
-        : `\n\n**[행동 이어받기]**\n최신 유저 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. ${aiCharName}의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. 정지는 ${aiCharName}의 실제 선택일 때만 유효합니다.`;
+        ? `\n\n**[Action Follow-through]**\nIf the latest user beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through ${aiCharName}'s action, refusal, condition, distance change, hand/body position change, or closure. If ${aiCharName} begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply.`
+        : `\n\n**[행동 이어받기]**\n최신 유저 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. ${aiCharName}의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. ${aiCharName}가 즉시 할 수 있는 행동을 시작했다면 문 앞/손끝/입술 앞 같은 직전 예고에서 끊지 말고 첫 가시적 결과까지 같은 답변 안에서 완료하세요.`;
     const finalSpeakerNameGuard = useEnTemplate
         ? `\n\n**[Speaker Name Continuity]**\nThe current speaker is "${aiCharName}". Keep placeholder names such as "??", "???", "Character", "Speaker", "[name]", or unknown-character labels out of narration/dialogue. If a name is needed, use "${aiCharName}" or a natural pronoun.`
         : `\n\n**[현재 화자 이름 유지]**\n현재 화자는 "${aiCharName}"입니다. narration/dialogue 안에는 "??", "???", "캐릭터", "화자", "[이름]" 같은 placeholder 이름을 넣지 마세요. 이름이 필요하면 "${aiCharName}" 또는 자연스러운 3인칭 지칭만 쓰세요.`;
@@ -706,8 +706,8 @@ function buildSystemPrompt(params) {
         ? `\n\n**[In-Scene Presence]**\n${aiCharName} is a person inside the scene, not a responder interface, outside narrator, or help desk. Let the reply be imperfect when the character would be imperfect: a short line, silence, side glance, half-finished sentence, teasing, refusal, a mood shift, or doing something instead of explaining. Keep ${aiCharName}'s own speech style and concept above generic politeness.`
         : `\n\n**[장면 안의 사람]**\n${aiCharName}는 응답 인터페이스나 장면 밖 해설자, 도움말 창구가 아니라 지금 장면 안에 있는 사람입니다. 캐릭터에게 맞다면 짧은 한마디, 침묵, 시선 회피, 말끝 흐림, 장난, 거절, 기분 변화, 설명 대신 행동이 모두 유효합니다. 일반적인 친절함보다 ${aiCharName}의 말투와 컨셉이 우선입니다.`;
     const novelEngineCore = useEnTemplate
-        ? `\n\n**[Stay Inside The Scene]**\nThis is an interactive in-world character scene with the user, not a detached response panel and not a self-contained novel chapter.\nThe user's latest input is an inserted line, action, silence, command, message, correction, or scene cue that already happened inside the scene.\nNovel-like narration may support ${aiCharName}'s response, but should not push the scene like an author or director.\nWrite only the current character's response and any immediate scene reaction that naturally follows. Do not write new protagonist dialogue, consent/refusal, major choices, or hidden thoughts beyond what the user inserted.\nStillness, refusal, silence, teasing, a short line, or ending the beat are valid when they fit ${aiCharName}.\nUse only the required JSON segments.`
-        : `\n\n**[장면 안에 머무르기]**\n이 응답은 완결된 소설 챕터가 아니라 유저와 함께 진행하는 인월드 캐릭터 장면입니다.\n사용자의 최신 입력은 작품 안에서 이미 일어난 대사, 행동, 침묵, 명령, 메시지, 정정, 장면 단서입니다.\n소설적 지문은 사용할 수 있지만, 목적은 장면을 작가처럼 밀어붙이는 것이 아니라 ${aiCharName}가 유저 입력에 캐릭터답게 반응하는 것입니다.\n현재 캐릭터의 반응과 그에 자연스럽게 붙는 즉각적인 장면 반응만 씁니다. 유저가 명시하지 않은 주인공의 새 대사, 동의/거절, 큰 선택, 숨은 마음은 대신 쓰지 않습니다.\n정지, 거절, 침묵, 장난, 짧은 한마디, 장면 종료도 ${aiCharName}에게 맞으면 유효합니다.\n출력은 요구된 JSON segments만 사용하세요.`;
+        ? `\n\n**[Stay Inside The Scene]**\nThis is an interactive in-world character scene with the user, not a detached response panel and not a self-contained novel chapter.\nThe user's latest input is an inserted line, action, silence, command, message, correction, or scene cue that already happened inside the scene.\nNovel-like narration may support ${aiCharName}'s response, but should not push the scene like an author or director.\nWrite only the current character's response and any immediate scene reaction that naturally follows. Do not write new protagonist dialogue, consent/refusal, major choices, or hidden thoughts beyond what the user inserted.\nA clear refusal, boundary pause, short line, or ending the beat is valid when it truly fits ${aiCharName}; otherwise finish the immediate action/result already set up this turn.\nUse only the required JSON segments.`
+        : `\n\n**[장면 안에 머무르기]**\n이 응답은 완결된 소설 챕터가 아니라 유저와 함께 진행하는 인월드 캐릭터 장면입니다.\n사용자의 최신 입력은 작품 안에서 이미 일어난 대사, 행동, 침묵, 명령, 메시지, 정정, 장면 단서입니다.\n소설적 지문은 사용할 수 있지만, 목적은 장면을 작가처럼 밀어붙이는 것이 아니라 ${aiCharName}가 유저 입력에 캐릭터답게 반응하는 것입니다.\n현재 캐릭터의 반응과 그에 자연스럽게 붙는 즉각적인 장면 반응만 씁니다. 유저가 명시하지 않은 주인공의 새 대사, 동의/거절, 큰 선택, 숨은 마음은 대신 쓰지 않습니다.\n명확한 거절, 경계로 인한 멈춤, 짧은 한마디, 장면 종료는 ${aiCharName}에게 진짜로 맞을 때만 유효합니다. 그 외에는 이번 턴에서 이미 시작한 즉각 행동/결과를 끝까지 이어갑니다.\n출력은 요구된 JSON segments만 사용하세요.`;
     const supportingCastBoundaryGuard = useEnTemplate
         ? `\n\n**[Two-Person Scene]**\nCupid free-talk stays physically between ${aiCharName} and the protagonist/user. Supporting characters, parents, friends, classmates, staff, rivals, bystanders, crowds, offstage voices, footsteps from another person, and named third parties stay outside the scene. If the user mentions a third party, write only ${aiCharName}'s reaction to the mention.`
         : `\n\n**[1:1 장면]**\nCupid 프리토킹은 물리적으로 ${aiCharName}와 주인공/유저 사이에 머뭅니다. 조연, 부모, 친구, 동급생, 교직원, 라이벌, 주변 사람, 군중, 장면 밖 목소리, 타인의 발소리, 이름 있는 제3자는 장면 밖에 둡니다. 유저가 제3자를 언급해도 그 인물을 장면에 세우지 말고, ${aiCharName}가 그 언급에 반응하는 내용만 쓰세요.`;
@@ -734,7 +734,7 @@ Character: ${charPersonality}
 Voice: ${charStyleGuideline}
 Integrity: ${charGeneralInstruction}
 ${characterOutfitGuard}
-Rules: ${compactSceneMode} Latest user beat already happened; answer through action, speech, refusal, teasing, silence, distance, or closure. Do not write user choices/thoughts. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
+Rules: ${compactSceneMode} Latest user beat already happened; answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. Do not write user choices/thoughts. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
@@ -746,7 +746,7 @@ Character: ${charPersonality}
 Voice: ${charStyleGuideline}
 Integrity: ${charGeneralInstruction}
 ${characterOutfitGuard}
-Rules: ${compactSceneMode} Latest user beat already happened; answer through action, speech, refusal, teasing, silence, distance, or closure. Do not write user choices/thoughts. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
+Rules: ${compactSceneMode} Latest user beat already happened; answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. Do not write user choices/thoughts. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
@@ -762,7 +762,7 @@ Character:
 - Integrity: ${charGeneralInstruction}
 ${characterOutfitGuard}
 - ${compactSceneMode}
-- Latest user beat already happened. Let ${aiCharName} answer through action, speech, refusal, teasing, silence, distance change, or closure. Do not write the protagonist's next choice or hidden thoughts.
+- Latest user beat already happened. Let ${aiCharName} answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. Do not write the protagonist's next choice or hidden thoughts.
 - Keep stat/math markers out of visible text; numeric changes belong only in affinity.
 - Use natural present-day speech, not translated otome/anime phrasing or ornate romance cliches.
 
@@ -787,7 +787,7 @@ Character:
 - Integrity: ${charGeneralInstruction}
 ${characterOutfitGuard}
 - ${compactSceneMode}
-- The latest user beat already happened in the scene. Let ${aiCharName} answer through action, speech, refusal, teasing, silence, distance change, or closure. Do not write the protagonist's next choice or hidden thoughts.
+- The latest user beat already happened in the scene. Let ${aiCharName} answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. Do not write the protagonist's next choice or hidden thoughts.
 - Keep stat/math markers out of visible text; numeric changes belong only in affinity.
 - Use natural Korean conversation, not translated otome/anime phrasing or ornate romance cliches.
 
@@ -1453,5 +1453,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.7';
+const PROMPT_VERSION = '2.7.8';
 window.PROMPT_VERSION = PROMPT_VERSION;

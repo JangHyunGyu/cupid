@@ -183,15 +183,15 @@ function buildCupidRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
 
     const guardBody = guardLines.join('\n');
     return isKo
-        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 확인, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 정지, 짧은 답, 침묵이 캐릭터에게 맞으면 그대로 유효합니다.`
-        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary check, or narrowed choice when the scene calls for it. Stillness, a brief line, or silence remains valid when it fits the character.`;
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 확인, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다.`
+        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary check, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result.`;
 }
 
 function buildCupidActionFollowThroughGuard(lang = 'ko') {
     const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
     return isKo
-        ? `\n\n[행동 이어받기]\n최신 플레이어 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. 현재 캐릭터의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. 정지는 캐릭터의 실제 선택일 때만 유효하며, 박자를 미루기 위한 장치로 쓰지 마세요.`
-        : `\n\n[Action Follow-through]\nIf the latest player beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through the current character's action, refusal, condition, distance change, hand/body position change, or closure. Stillness is valid only when it is the character's actual decision, not a way to postpone the beat.`;
+        ? `\n\n[행동 이어받기]\n최신 플레이어 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. 현재 캐릭터의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. 캐릭터가 즉시 할 수 있는 행동을 시작했다면 문 앞/손끝/입술 앞 같은 직전 예고에서 끊지 말고 첫 가시적 결과까지 같은 답변 안에서 완료하세요.`
+        : `\n\n[Action Follow-through]\nIf the latest player beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through the current character's action, refusal, condition, distance change, hand/body position change, or closure. If the character begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply.`;
 }
 
 class FreeTalkSystem {
