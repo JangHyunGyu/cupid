@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.6';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.7';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -2153,6 +2153,30 @@ The latest user input contains an outside scene cue that happens before the char
             otherRelationships && `Other route continuity, do not bring onstage: ${otherRelationships}`
         ].filter(Boolean).join("\n");
         const compactGalleryExpressions = validExprs.join(', ') || 'normal';
+        const compactGalleryState = `State: place=${location || 'current gallery scene'}; user=${playerName}; language=${isEn ? langName : 'Korean'}`;
+
+        if (isEn) {
+            return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: post-graduation adult lovers, ${charName} and ${playerName}; not a current school scene.
+Character: ${personality}
+${charName} is in-scene, not assistant/narrator.
+${characterOutfitGuard}
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; fade/stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing. Latest user beat already happened; do not write user choices/thoughts. Use natural present-day speech.
+${compactGalleryGuidance}
+JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
+Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
+===CACHE_BOUNDARY===
+${compactGalleryState}`;
+        }
+        return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Reply in Korean. Cupid gallery free-talk: post-graduation adult lovers, ${charName} and ${playerName}; not a current school scene.
+Character: ${personality}
+${charName} is in-scene, not assistant/narrator.
+${characterOutfitGuard}
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; fade/stop for graphic anatomy, coercion, intoxication, non-consent, or unclear adult framing. Latest user beat already happened; do not write user choices/thoughts. Use natural Korean conversation.
+${compactGalleryGuidance}
+JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
+Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
+===CACHE_BOUNDARY===
+${compactGalleryState}`;
 
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Continue Cupid gallery free-talk as a post-graduation adult lovers scene between ${charName} and ${playerName}. This is not a current school scene.

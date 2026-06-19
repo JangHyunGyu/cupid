@@ -726,6 +726,32 @@ function buildSystemPrompt(params) {
     const compactSceneMode = isRemote
         ? "Remote/messenger input is still in-world; use compact dialogue and only helpful narration."
         : "Face-to-face input is already an in-scene line, action, silence, correction, or cue.";
+    const compactLiveState = `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}; turns=${currentMaxTurns || 'scene-paced'}\nContext: ${context}`;
+
+    if (useEnTemplate) {
+        return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid 1:1 scene with ${aiCharName}; no third parties except ${aiCharName}'s reaction to a mention.
+Character: ${charPersonality}
+Voice: ${charStyleGuideline}
+Integrity: ${charGeneralInstruction}
+${characterOutfitGuard}
+Rules: ${compactSceneMode} Latest user beat already happened; answer through action, speech, refusal, teasing, silence, distance, or closure. Do not write user choices/thoughts. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
+JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
+Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
+===CACHE_BOUNDARY===
+${compactLiveState}
+${compactOptionalGuidance}`;
+    }
+    return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Reply in Korean. Cupid 1:1 scene with ${aiCharName}; no third parties except ${aiCharName}'s reaction to a mention.
+Character: ${charPersonality}
+Voice: ${charStyleGuideline}
+Integrity: ${charGeneralInstruction}
+${characterOutfitGuard}
+Rules: ${compactSceneMode} Latest user beat already happened; answer through action, speech, refusal, teasing, silence, distance, or closure. Do not write user choices/thoughts. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
+JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
+Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
+===CACHE_BOUNDARY===
+${compactLiveState}
+${compactOptionalGuidance}`;
 
     if (useEnTemplate) {
         return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Continue Cupid's 1:1 in-world scene with ${aiCharName}. Keep third parties offstage; if mentioned, show only ${aiCharName}'s reaction.
@@ -1427,5 +1453,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.6';
+const PROMPT_VERSION = '2.7.7';
 window.PROMPT_VERSION = PROMPT_VERSION;
