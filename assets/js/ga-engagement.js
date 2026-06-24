@@ -13,6 +13,7 @@
   var totalVisibleMs = 0;
   var sequence = 0;
   var isFocused = typeof document.hasFocus === "function" ? document.hasFocus() : true;
+  var heartbeatTimer = null;
 
   function now() {
     return Date.now();
@@ -86,46 +87,74 @@
     sendEngagement(isVisible() ? "blur" : "hidden", true);
   }
 
-  setInterval(function () {
+  function onHeartbeat() {
     if (isActive()) {
       sendEngagement("heartbeat", false);
     } else {
       refreshActiveState();
     }
-  }, HEARTBEAT_MS);
+  }
 
-  window.addEventListener("focus", function () {
+  function startHeartbeat() {
+    if (!heartbeatTimer) {
+      heartbeatTimer = setInterval(onHeartbeat, HEARTBEAT_MS);
+    }
+  }
+
+  function stopHeartbeat() {
+    if (heartbeatTimer) {
+      clearInterval(heartbeatTimer);
+      heartbeatTimer = null;
+    }
+  }
+
+  function onFocus() {
     isFocused = true;
     refreshActiveState();
-  }, true);
+  }
 
-  window.addEventListener("blur", function () {
+  function onBlur() {
     isFocused = false;
     refreshActiveState();
-  }, true);
+  }
 
-  document.addEventListener("visibilitychange", refreshActiveState, true);
-
-  window.addEventListener("pagehide", function () {
+  function onPageHide(event) {
     stopActive();
     sendEngagement("pagehide", true);
-  }, true);
+    if (!event || !event.persisted) {
+      stopHeartbeat();
+    }
+  }
 
-  window.addEventListener("beforeunload", function () {
+  function onBeforeUnload() {
     stopActive();
     sendEngagement("beforeunload", true);
-  }, true);
+    stopHeartbeat();
+  }
 
-  window.addEventListener("pageshow", function () {
+  function onPageShow() {
     isFocused = typeof document.hasFocus === "function" ? document.hasFocus() : true;
+    startHeartbeat();
     refreshActiveState();
-  }, true);
+  }
+
+  function onFreeze() {
+    stopActive();
+    sendEngagement("freeze", true);
+    stopHeartbeat();
+  }
+
+  startHeartbeat();
+
+  window.addEventListener("focus", onFocus, true);
+  window.addEventListener("blur", onBlur, true);
+  document.addEventListener("visibilitychange", refreshActiveState, true);
+  window.addEventListener("pagehide", onPageHide, true);
+  window.addEventListener("beforeunload", onBeforeUnload, true);
+  window.addEventListener("pageshow", onPageShow, true);
 
   if (typeof document.addEventListener === "function") {
-    document.addEventListener("freeze", function () {
-      stopActive();
-      sendEngagement("freeze", true);
-    }, true);
+    document.addEventListener("freeze", onFreeze, true);
   }
 
   refreshActiveState();
