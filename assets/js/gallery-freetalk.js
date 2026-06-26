@@ -1336,6 +1336,10 @@ The latest user input contains an outside scene cue that happens before the char
             gftChar.appendChild(indicator);
         }
 
+        let _lastTurnMeta = null;
+        let _lastCacheKey = '';
+        let _lastAiEndpoint = '';
+
         try {
             // [Explicit Caching] 캐시 키 헤더 추가
             // 토큰 절감: 최근 5개 메시지 외의 이미지는 [이전 사진]으로 치환
@@ -1356,9 +1360,12 @@ The latest user input contains an outside scene cue that happens before the char
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
             const _stablePromptHash = getGalleryFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
             const _gftCacheKey = this.currentCharId ? `cupid-gft:ctx:${this.lang}:${this.currentCharId}:s${_stablePromptHash}` : '';
+            _lastCacheKey = _gftCacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);
+            _lastTurnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = window.AI_API_ENDPOINT || window.API_ENDPOINT || 'https://chatbot-api.yama5993.workers.dev/';
+            _lastAiEndpoint = aiEndpoint;
             const response = await fetch(aiEndpoint, {
                 method: 'POST',
                 headers: {
@@ -1457,15 +1464,37 @@ The latest user input contains an outside scene cue that happens before the char
                 err.__staleTurnHandled = true;
             }
             if (!err?.__staleTurnHandled) {
-            console.error('[GalleryFreeTalk] API 오류:', err);
-            const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
-            if (nameTag) nameTag.textContent = charName;
-            if (charImg) charImg.classList.remove('thinking');
-            if (dialogueBox) dialogueBox.classList.remove('thinking-box');
-            document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
-            const fallback = this._getFallbackReply();
-            await this._typeText(fallback);
-            this.chatHistory.push({ role: 'assistant', content: fallback });
+                console.error('[GalleryFreeTalk] API 오류:', err);
+                if (typeof window.logCupidError === 'function') {
+                    window.logCupidError(err, {
+                        source: 'cupid-gallery-freetalk',
+                        errorType: /^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed',
+                        sessionId: 'gallery-freetalk',
+                        context: {
+                            charId: this.currentCharKey || this.currentCharId || '',
+                            galleryCharId: this.currentCharId || '',
+                            language: this.lang || '',
+                            freeTalkCount: this.progress?.getFreeTalkCount?.(this.currentCharId) || 0
+                        },
+                        extra: {
+                            cacheKey: _lastCacheKey,
+                            aiEndpoint: _lastAiEndpoint,
+                            turnId: _lastTurnMeta?.turnId || '',
+                            latestUserHash: _lastTurnMeta?.latestUserHash || '',
+                            latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
+                            hasImage: String(finalContent || '').includes('data:image/'),
+                            historyLength: Array.isArray(this.chatHistory) ? this.chatHistory.length : 0
+                        }
+                    });
+                }
+                const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+                if (nameTag) nameTag.textContent = charName;
+                if (charImg) charImg.classList.remove('thinking');
+                if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+                document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+                const fallback = this._getFallbackReply();
+                await this._typeText(fallback);
+                this.chatHistory.push({ role: 'assistant', content: fallback });
             }
         }
 

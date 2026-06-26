@@ -797,6 +797,10 @@ class FreeTalkSystem {
             charSlot.appendChild(indicator);
         }
 
+        let _lastTurnMeta = null;
+        let _lastCacheKey = '';
+        let _lastAiEndpoint = '';
+
         // ─────────────────────────────────────────────────────────────
         // 🌐 AI API 호출 (try-catch로 오류 처리)
         // ─────────────────────────────────────────────────────────────
@@ -835,9 +839,12 @@ class FreeTalkSystem {
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
             const _stablePromptHash = getFreeTalkStablePromptHash(_optimized[0]?.content || finalContent);
             const _cacheKey = charKey ? `cupid:ctx:${_lang}:${charKey}:${this._isRemote ? 'r' : 'f'}:s${_stablePromptHash}` : '';
+            _lastCacheKey = _cacheKey;
             const _turnMeta = this._createTurnMeta(finalContent);
+            _lastTurnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT) ? AI_API_ENDPOINT : API_ENDPOINT;
+            _lastAiEndpoint = aiEndpoint;
             const response = await fetch(aiEndpoint, {
                 method: "POST",
                 headers: {
@@ -1085,6 +1092,31 @@ class FreeTalkSystem {
             // 현재 언어 확인
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
             const isEnErr = langErr === 'en';
+
+            if (typeof window.logCupidError === 'function') {
+                window.logCupidError(error, {
+                    source: 'cupid-freetalk',
+                    errorType: /^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed',
+                    sessionId: this.currentSceneId || '',
+                    context: {
+                        charId: charKey || '',
+                        sceneId: this.currentSceneId || '',
+                        sceneName: scene?.name || '',
+                        language: langErr,
+                        chatMode: this._isRemote ? 'remote' : 'face',
+                        freeTalkTurns: this.freeTalkTurns
+                    },
+                    extra: {
+                        cacheKey: _lastCacheKey,
+                        aiEndpoint: _lastAiEndpoint,
+                        turnId: _lastTurnMeta?.turnId || '',
+                        latestUserHash: _lastTurnMeta?.latestUserHash || '',
+                        latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
+                        hasImage: String(finalContent || '').includes('data:image/'),
+                        historyLength: Array.isArray(this.freeTalkHistory) ? this.freeTalkHistory.length : 0
+                    }
+                });
+            }
 
             // 폴백 메시지 가져오기 (prompts.js에서 정의)
             const fallbackMsg = this.getFallbackReply(scene.name, isEnErr, getSceneFn);
