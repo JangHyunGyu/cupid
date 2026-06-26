@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-        const ASSET_VERSION = "2.9.50";
+        const ASSET_VERSION = "2.9.51";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -393,7 +393,23 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
         method: 'POST',
         headers,
         body: JSON.stringify({ userId, charId, sessionId, role, content, context, playerName, language })
-    }).catch(err => console.warn('[ChatLog] cupid 저장 실패:', err.message));
+    }).then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res;
+    }).catch(err => {
+        console.warn('[ChatLog] cupid 저장 실패:', err.message);
+        logCupidError(err, {
+            source: 'saveCupidChatLog',
+            errorType: 'chat_log_save_failed',
+            sessionId,
+            context: { charId, role, logContext: context },
+            extra: {
+                contentLength: String(content || '').length,
+                contentHash: hashCupidLogText(content)
+            }
+        });
+        return null;
+    });
 
     try {
         // 순서 보장: user 먼저 저장 후 assistant 저장 (병렬 시 created_at/id 역전 방지)
@@ -410,6 +426,74 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
 // DeepSeek 텍스트 API가 이미지 파트를 받지 않으므로,
 // 최근 이미지는 서버 Vision 분석용 참조로, 오래된 이미지는 텍스트 안내로 치환합니다.
 // 실제 채팅 UI/저장 데이터의 이미지는 그대로 유지됩니다.
+function limitCupidLogText(value, maxLength = 500) {
+    if (value === undefined || value === null) return '';
+    const text = String(value);
+    return text.length > maxLength ? text.slice(0, maxLength) : text;
+}
+
+function hashCupidLogText(value) {
+    const text = String(value || '');
+    const sample = text.length > 8192 ? text.slice(0, 4096) + text.slice(-4096) : text;
+    let hash = 2166136261;
+    for (let i = 0; i < sample.length; i++) {
+        hash ^= sample.charCodeAt(i);
+        hash = Math.imul(hash, 16777619);
+    }
+    return `${(hash >>> 0).toString(36)}:${text.length}`;
+}
+
+function makeCupidLogSafe(value) {
+    if (value === undefined || value === null) return value;
+    if (typeof value !== 'object') return value;
+    try {
+        return JSON.parse(JSON.stringify(value));
+    } catch (_) {
+        return String(value);
+    }
+}
+
+function logCupidError(error, options = {}) {
+    try {
+        const message = error?.message || String(error || 'Unknown Cupid error');
+        const currentLocation = typeof location !== 'undefined' ? location : null;
+        const payload = {
+            appId: options.appId || getCupidAppId(),
+            userId: options.userId || getCupidDeviceId(),
+            message: limitCupidLogText(message, 500),
+            stack: limitCupidLogText(error?.stack || '', 4000),
+            url: limitCupidLogText(currentLocation?.href || '', 500),
+            source: limitCupidLogText(options.source || 'cupid', 500),
+            errorType: limitCupidLogText(options.errorType || 'runtime', 100),
+            errorClass: limitCupidLogText(options.errorClass || error?.name || '', 50),
+            sessionId: limitCupidLogText(options.sessionId || '', 64),
+            context: makeCupidLogSafe({
+                language: getCupidLanguage(),
+                page: currentLocation?.pathname || '',
+                ...(options.context || {})
+            }),
+            extra: makeCupidLogSafe(options.extra || null)
+        };
+
+        const body = JSON.stringify(payload);
+        const endpoint = API_ENDPOINT + 'error-logs';
+        if (typeof navigator !== 'undefined' && navigator.sendBeacon && typeof Blob !== 'undefined') {
+            const sent = navigator.sendBeacon(endpoint, new Blob([body], { type: 'application/json' }));
+            if (sent) return true;
+        }
+        fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body,
+            keepalive: true
+        }).catch(err => console.warn('[ErrorLog] cupid 저장 실패:', err.message));
+        return true;
+    } catch (e) {
+        console.warn('[ErrorLog] cupid logCupidError 오류:', e.message);
+        return false;
+    }
+}
+
 function optimizeImageHistory(messages, recentCount = 5) {
     const r2ImageRegex = /https?:\/\/[^\s]+\.(?:jpg|jpeg|png|gif|webp)(?:\?[^\s]*)?/i;
     const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
@@ -472,6 +556,8 @@ window.getCupidAppId = getCupidAppId;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;
+window.logCupidError = logCupidError;
+window.hashCupidLogText = hashCupidLogText;
 window.migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;
 
 // 페이지 로드 후 백그라운드로 마이그레이션 1회 실행 (idle 시간에)
