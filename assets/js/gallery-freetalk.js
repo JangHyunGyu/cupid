@@ -1624,6 +1624,18 @@ The latest user input contains an outside scene cue that happens before the char
             return { text: this._sanitizePlayerPlaceholders(text || reply), segments: null, expression: (parsed.expression || '').toLowerCase() };
 
         } catch (e) {
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-gallery-freetalk',
+                errorType: 'ai_response_json_parse_failed',
+                sessionId: 'gallery-freetalk',
+                context: {
+                    charId: this.currentCharId || '',
+                    charKey: this.currentCharKey || '',
+                    language: this.lang || '',
+                    replyLength: String(reply || '').length,
+                    replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
+                }
+            });
             return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: '' };
         }
     }
@@ -1958,6 +1970,15 @@ The latest user input contains an outside scene cue that happens before the char
                             this._setImageUploadState(false);
                         }
                         console.warn('[GalleryFreeTalk] R2 업로드 실패, base64 폴백:', err.message);
+                        window.reportCupidCaughtError?.(err, {
+                            source: 'cupid-gallery-freetalk',
+                            errorType: 'image_upload_fallback',
+                            context: {
+                                uploadContext: 'gallery-freetalk',
+                                charId: this.currentCharId || '',
+                                charKey: this.currentCharKey || ''
+                            }
+                        });
                     });
                 }
             };
@@ -2233,6 +2254,11 @@ ${compactGalleryState}`;
             }
         } catch (e) {
             this.chatHistory = [];
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-gallery-freetalk',
+                errorType: 'gallery_freetalk_memory_load_failed',
+                context: { charId }
+            });
         }
     }
 
@@ -2248,6 +2274,11 @@ ${compactGalleryState}`;
             localStorage.setItem(this.MEMORY_KEY, JSON.stringify(all));
         } catch (e) {
             console.error('[GalleryFreeTalk] 메모리 저장 실패:', e);
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-gallery-freetalk',
+                errorType: 'gallery_freetalk_memory_save_failed',
+                context: { charId, historyLength: this.chatHistory.length }
+            });
         }
     }
 }

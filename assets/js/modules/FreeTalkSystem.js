@@ -1504,6 +1504,17 @@ The latest user input contains an outside scene cue that happens before the char
         } catch (e) {
             // 📌 JSON 파싱 실패 시 경고 로그 (원본 반환됨)
             console.warn("JSON parsing failed:", e);
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-freetalk',
+                errorType: 'ai_response_json_parse_failed',
+                sessionId: this.currentSceneId || '',
+                context: {
+                    sceneId: this.currentSceneId || '',
+                    language: window.GAME_LANG || document.documentElement.lang || 'ko',
+                    replyLength: String(reply || '').length,
+                    replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
+                }
+            });
         }
 
         // 📌 파싱 실패하거나 텍스트 추출 실패 시 fallback 메시지 반환

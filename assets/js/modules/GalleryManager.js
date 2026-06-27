@@ -89,6 +89,11 @@ class GalleryManager {
             return data;
         } catch (e) {
             console.error('[GalleryManager] 갤러리 데이터 파싱 오류:', e);
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-gallery-manager',
+                errorType: 'gallery_progress_parse_failed',
+                context: { storageKey: this.storageKey, savedLength: saved.length }
+            });
             // 손상된 데이터는 무시하고 기본 구조 반환
             return {
                 version: this.dataVersion,
@@ -108,6 +113,11 @@ class GalleryManager {
             localStorage.setItem(this.storageKey, JSON.stringify(progress));
         } catch (e) {
             console.error('[GalleryManager] 갤러리 데이터 저장 실패:', e);
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-gallery-manager',
+                errorType: 'gallery_progress_save_failed',
+                context: { storageKey: this.storageKey }
+            });
         }
     }
 

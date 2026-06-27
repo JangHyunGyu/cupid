@@ -99,6 +99,11 @@ class GalleryProgress {
                 }
             } catch (e) {
                 console.error('[GalleryProgress] 데이터 파싱 오류:', e);
+                window.reportCupidCaughtError?.(e, {
+                    source: 'cupid-gallery-progress',
+                    errorType: 'gallery_progress_parse_failed',
+                    context: { storageKey: this.storageKey, savedLength: saved.length }
+                });
                 needsReset = true;
             }
         } else {
@@ -167,7 +172,15 @@ class GalleryProgress {
      * 현재 진행 상태를 localStorage에 저장
      */
     save() {
-        try { localStorage.setItem(this.storageKey, JSON.stringify(this.data)); } catch (e) {}
+        try {
+            localStorage.setItem(this.storageKey, JSON.stringify(this.data));
+        } catch (e) {
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-gallery-progress',
+                errorType: 'gallery_progress_save_failed',
+                context: { storageKey: this.storageKey }
+            });
+        }
     }
 
     /**
@@ -184,6 +197,11 @@ class GalleryProgress {
                 this.data = JSON.parse(saved);
             } catch (e) {
                 // 파싱 실패 시 현재 데이터 유지
+                window.reportCupidCaughtError?.(e, {
+                    source: 'cupid-gallery-progress',
+                    errorType: 'gallery_progress_refresh_parse_failed',
+                    context: { storageKey: this.storageKey, savedLength: saved.length }
+                });
             }
         }
         return this.data;

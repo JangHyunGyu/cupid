@@ -59,6 +59,11 @@ class SaveManager {
             console.log('[SaveManager] 저장 완료:', sceneId);
         } catch (e) {
             console.error('[SaveManager] 저장 실패:', e);
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-save-manager',
+                errorType: 'save_failed',
+                context: { storageKey: this.storageKey, sceneId }
+            });
         }
     }
 
@@ -77,6 +82,11 @@ class SaveManager {
         } catch (e) {
             // JSON 파싱 실패 (데이터 손상)
             console.error('[SaveManager] 파싱 오류:', e);
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-save-manager',
+                errorType: 'save_parse_failed',
+                context: { storageKey: this.storageKey, savedLength: saved.length }
+            });
             return null;
         }
     }
@@ -102,6 +112,11 @@ class SaveManager {
             console.log('[SaveManager] 저장 데이터 삭제됨');
         } catch (e) {
             console.error('[SaveManager] 삭제 실패:', e);
+            window.reportCupidCaughtError?.(e, {
+                source: 'cupid-save-manager',
+                errorType: 'save_clear_failed',
+                context: { storageKey: this.storageKey }
+            });
         }
     }
 }

@@ -156,23 +156,7 @@ class GameEngine {
 
     _handleAsyncError(context, error) {
         console.error(`[GameEngine] ${context} error:`, error);
-        try {
-            if (typeof window.logCupidError === 'function') {
-                window.logCupidError(error, {
-                    source: 'cupid-game-engine',
-                    errorType: 'game_engine_async_error',
-                    errorClass: error?.name || 'Error',
-                    sessionId: this.sceneRenderer?.currentSceneId || '',
-                    context: {
-                        asyncContext: context,
-                        sceneId: this.sceneRenderer?.currentSceneId || '',
-                        day: this.stateManager?.currentDay || '',
-                        language: window.GAME_LANG || document.documentElement?.lang || 'ko',
-                        isFreeTalking: !!this.freeTalkSystem?.isFreeTalking
-                    }
-                });
-            }
-        } catch (_) {}
+        this._reportCaughtError(context, error, 'game_engine_async_error');
         this._isRendering = false;
         if (this.freeTalkSystem) this.freeTalkSystem.isProcessingChat = false;
         if (this.uiManager?.chatSendBtn) this.uiManager.chatSendBtn.disabled = false;
@@ -181,6 +165,28 @@ class GameEngine {
         if (this.uiManager?.dialogueBox) this.uiManager.dialogueBox.classList.remove('thinking-box');
         document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
         document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+    }
+
+    _reportCaughtError(context, error, errorType = 'game_engine_caught_error', extra = null) {
+        try {
+            const reporter = window.reportCupidCaughtError || window.logCupidError;
+            if (typeof reporter === 'function') {
+                reporter(error, {
+                    source: 'cupid-game-engine',
+                    errorType,
+                    errorClass: error?.name || 'Error',
+                    sessionId: this.sceneRenderer?.currentSceneId || '',
+                    context: {
+                        asyncContext: context,
+                        sceneId: this.sceneRenderer?.currentSceneId || '',
+                        day: this.stateManager?.currentDay || '',
+                        language: window.GAME_LANG || document.documentElement?.lang || 'ko',
+                        isFreeTalking: !!this.freeTalkSystem?.isFreeTalking
+                    },
+                    extra
+                });
+            }
+        } catch (_) {}
     }
 
     _runAsync(context, task) {
@@ -537,6 +543,7 @@ class GameEngine {
                     await this.executeChoice(choice);
                 } catch (e) {
                     console.error('[GameEngine] executeChoice 오류:', e);
+                    this._handleAsyncError('choice click', e);
                 }
             };
 
@@ -1150,6 +1157,7 @@ class GameEngine {
                             console.log(`[GameEngine] 갤러리 프리토킹 해금: ${key}`);
                         } catch (e) {
                             console.error('[GameEngine] 갤러리 프리토킹 해금 실패:', e);
+                            this._reportCaughtError('gallery freetalk unlock', e, 'gallery_unlock_failed', { charKey: key, charId: id });
                         }
                         break;
                     }
@@ -1198,6 +1206,7 @@ class GameEngine {
                     '╚══════════════════════════════════════╝\n');
             } catch (e) {
                 console.error('[GameEngine] Nevergrad 크로스오버 데이터 저장 실패:', e);
+                this._reportCaughtError('nevergrad crossover save', e, 'nevergrad_crossover_save_failed');
             }
 
             // 크레딧 레이어 표시 (없으면 동적 생성 — 캐시된 구 HTML 대응)
@@ -1310,6 +1319,7 @@ class GameEngine {
                         await this.renderScene(scene.next);
                     } catch (e) {
                         console.error('[GameEngine] 크레딧 후 씬 전환 오류:', e);
+                        this._reportCaughtError('credits next scene', e, 'credits_scene_transition_failed', { nextSceneId: scene.next });
                         this.uiManager.dialogueBox.style.display = '';
                     }
                 }

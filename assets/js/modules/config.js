@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-        const ASSET_VERSION = "2.9.52";
+        const ASSET_VERSION = "2.9.53";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -287,6 +287,16 @@ async function migrateCupidChatHistoryToD1() {
             totalSaved++;
         } catch (e) {
             console.warn('[Migrate] post 실패:', e.message);
+            reportCupidCaughtError(e, {
+                source: 'cupid-migration',
+                errorType: 'migration_chat_log_post_failed',
+                sessionId,
+                context: { charId, role, logContext: context },
+                extra: {
+                    contentLength: String(content || '').length,
+                    contentHash: hashCupidLogText(content)
+                }
+            });
         }
     }
 
@@ -304,6 +314,11 @@ async function migrateCupidChatHistoryToD1() {
                 if (url) result = result.replace(b64, url);
             } catch (e) {
                 console.warn('[Migrate] base64 → R2 변환 실패:', e.message);
+                reportCupidCaughtError(e, {
+                    source: 'cupid-migration',
+                    errorType: 'migration_image_upload_failed',
+                    context: { imageLength: b64.length, imageHash: hashCupidLogText(b64) }
+                });
             }
         }
         return result;
@@ -357,6 +372,11 @@ async function migrateCupidChatHistoryToD1() {
                 }
             } catch (e) {
                 console.warn('[Migrate] cupid_save 파싱 실패:', e.message);
+                reportCupidCaughtError(e, {
+                    source: 'cupid-migration',
+                    errorType: 'migration_save_parse_failed',
+                    context: { storageKey: 'cupid_save', savedLength: saveRaw.length }
+                });
             }
         }
 
@@ -370,6 +390,11 @@ async function migrateCupidChatHistoryToD1() {
                 }
             } catch (e) {
                 console.warn('[Migrate] cupid_freetalk_memory 파싱 실패:', e.message);
+                reportCupidCaughtError(e, {
+                    source: 'cupid-migration',
+                    errorType: 'migration_gallery_memory_parse_failed',
+                    context: { storageKey: 'cupid_freetalk_memory', savedLength: gftRaw.length }
+                });
             }
         }
 
@@ -379,6 +404,10 @@ async function migrateCupidChatHistoryToD1() {
         }
     } catch (e) {
         console.warn('[Migrate] 마이그레이션 오류:', e.message);
+        reportCupidCaughtError(e, {
+            source: 'cupid-migration',
+            errorType: 'migration_failed'
+        });
     }
 }
 
@@ -417,6 +446,12 @@ async function saveCupidChatLog({ charId, userContent, assistantContent, session
         if (assistantContent) await post('assistant', assistantContent);
     } catch (e) {
         console.warn('[ChatLog] cupid saveCupidChatLog 오류:', e.message);
+        reportCupidCaughtError(e, {
+            source: 'saveCupidChatLog',
+            errorType: 'chat_log_save_exception',
+            sessionId,
+            context: { charId, logContext: context }
+        });
     }
 }
 
@@ -478,8 +513,10 @@ function logCupidError(error, options = {}) {
         const body = JSON.stringify(payload);
         const endpoint = API_ENDPOINT + 'error-logs';
         if (typeof navigator !== 'undefined' && navigator.sendBeacon && typeof Blob !== 'undefined') {
-            const sent = navigator.sendBeacon(endpoint, new Blob([body], { type: 'application/json' }));
-            if (sent) return true;
+            try {
+                const sent = navigator.sendBeacon(endpoint, new Blob([body], { type: 'application/json' }));
+                if (sent) return true;
+            } catch (_) {}
         }
         fetch(endpoint, {
             method: 'POST',
@@ -492,6 +529,24 @@ function logCupidError(error, options = {}) {
         console.warn('[ErrorLog] cupid logCupidError 오류:', e.message);
         return false;
     }
+}
+
+function reportCupidCaughtError(error, options = {}) {
+    try {
+        if (typeof logCupidError === 'function') {
+            return logCupidError(error, options);
+        }
+        if (typeof window !== 'undefined' && typeof window.__cupidLogRuntimeError === 'function') {
+            window.__cupidLogRuntimeError(
+                options.errorType || error?.name || 'Error',
+                error?.message || String(error || 'Unknown Cupid error'),
+                error?.stack || '',
+                options.source || 'cupid'
+            );
+            return true;
+        }
+    } catch (_) {}
+    return false;
 }
 
 function optimizeImageHistory(messages, recentCount = 5) {
@@ -557,6 +612,7 @@ window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;
 window.logCupidError = logCupidError;
+window.reportCupidCaughtError = reportCupidCaughtError;
 window.hashCupidLogText = hashCupidLogText;
 window.migrateCupidChatHistoryToD1 = migrateCupidChatHistoryToD1;
 
