@@ -582,6 +582,61 @@ class GalleryFreeTalk {
         return ({ ko, en, es, ja, fr, de, pt })[this.lang] || en;
     }
 
+    _getMessageEl() {
+        return this.overlayEl?.querySelector('#message') || document.getElementById('message');
+    }
+
+    _getNameTagEl() {
+        return this.overlayEl?.querySelector('#name-tag') || document.getElementById('name-tag');
+    }
+
+    _getThinkingText() {
+        return this._L(
+            '캐릭터가 할 말을 생각 중',
+            'Character is thinking of what to say',
+            'El personaje está pensando qué decir',
+            'キャラクターが返事を考え中',
+            'Le personnage réfléchit à quoi dire',
+            'Der Charakter denkt über eine Antwort nach',
+            'A personagem está pensando no que dizer'
+        );
+    }
+
+    _showThinkingMessage(characterName) {
+        const messageEl = this._getMessageEl();
+        const nameTag = this._getNameTagEl();
+        if (nameTag) nameTag.textContent = characterName;
+        if (!messageEl) return;
+
+        messageEl.innerHTML = '';
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'ai-thinking-message';
+        wrapper.setAttribute('role', 'status');
+        wrapper.setAttribute('aria-live', 'polite');
+
+        const mark = document.createElement('span');
+        mark.className = 'ai-thinking-mark';
+        mark.setAttribute('aria-hidden', 'true');
+
+        const text = document.createElement('span');
+        text.className = 'ai-thinking-text';
+        text.textContent = this._getThinkingText();
+
+        const dots = document.createElement('span');
+        dots.className = 'ai-thinking-dots';
+        dots.setAttribute('aria-hidden', 'true');
+        dots.innerHTML = '<span></span><span></span><span></span>';
+
+        wrapper.append(mark, text, dots);
+        messageEl.appendChild(wrapper);
+        messageEl.scrollTop = messageEl.scrollHeight;
+    }
+
+    _clearThinkingMessage() {
+        this._getMessageEl()?.querySelectorAll('.ai-thinking-message').forEach(el => el.remove());
+    }
+
     /** 언어별 자연스러움/호칭 가드 */
     _getLanguageQualityGuard() {
         const guards = {
@@ -1335,6 +1390,8 @@ The latest user input contains an outside scene cue that happens before the char
             indicator.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
             gftChar.appendChild(indicator);
         }
+        const pendingCharName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+        this._showThinkingMessage(pendingCharName);
 
         let _lastTurnMeta = null;
         let _lastCacheKey = '';
@@ -1432,6 +1489,7 @@ The latest user input contains an outside scene cue that happens before the char
 
             // 이름표를 캐릭터로 변경 + 생각중 상태 해제
             const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+            this._clearThinkingMessage();
             if (nameTag) nameTag.textContent = charName;
             if (charImg) charImg.classList.remove('thinking');
             if (dialogueBox) dialogueBox.classList.remove('thinking-box');
@@ -1488,6 +1546,7 @@ The latest user input contains an outside scene cue that happens before the char
                     });
                 }
                 const charName = this.CHAR_NAMES[this.currentCharId]?.[this.lang] || this.currentCharId;
+                this._clearThinkingMessage();
                 if (nameTag) nameTag.textContent = charName;
                 if (charImg) charImg.classList.remove('thinking');
                 if (dialogueBox) dialogueBox.classList.remove('thinking-box');
@@ -1497,6 +1556,11 @@ The latest user input contains an outside scene cue that happens before the char
                 this.chatHistory.push({ role: 'assistant', content: fallback });
             }
         }
+
+        if (charImg) charImg.classList.remove('thinking');
+        if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+        document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+        this._clearThinkingMessage();
 
         // UI 복원 (게임과 동일: 버튼 원복 + 입력 활성화)
         if (sendBtn) {
