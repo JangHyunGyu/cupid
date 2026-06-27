@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.52';
+        const version = '2.9.53';
 
     // =========================================================================
     // 언어 감지 (Language Detection)
@@ -293,6 +293,14 @@
     loadAllScripts().catch(function(error) {
         window.gameScriptsLoadError = error;
         console.error(error);
+        if (typeof window.__cupidLogRuntimeError === 'function') {
+            window.__cupidLogRuntimeError(
+                'ScriptLoadError',
+                error && error.message ? error.message : String(error || 'Game script load failed'),
+                error && error.stack ? error.stack : '',
+                'game-loader'
+            );
+        }
         window.dispatchEvent(createEvent('gameScriptsLoadError', { error: error }));
     });
 
@@ -367,6 +375,29 @@
         return 'app';
     }
 
+    function _postErrorPayload(payload) {
+        try {
+            var body = JSON.stringify(payload);
+            if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
+                try {
+                    var beaconBody = typeof Blob !== 'undefined' ? new Blob([body], { type: 'application/json' }) : body;
+                    var sent = navigator.sendBeacon(ERROR_ENDPOINT, beaconBody);
+                    if (sent) return true;
+                } catch (_) {}
+            }
+            if (typeof fetch === 'function') {
+                fetch(ERROR_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: body,
+                    keepalive: true
+                }).catch(function() {});
+                return true;
+            }
+        } catch (_) {}
+        return false;
+    }
+
     function _sendError(type, msg, stack, src) {
         var errClass = _classifyError(type, msg, stack, src);
         if (!msg || errClass === 'noise' || errClass === 'external') return;
@@ -389,8 +420,12 @@
             url: (src || window.location.href).substring(0, 500)
         };
 
-        try { navigator.sendBeacon(ERROR_ENDPOINT, JSON.stringify(payload)); } catch (_) {}
+        _postErrorPayload(payload);
     }
+
+    window.__cupidLogRuntimeError = function(type, msg, stack, src) {
+        _sendError(type || 'Error', msg || 'Unknown runtime error', stack || '', src || window.location.href);
+    };
 
     window.addEventListener('error', function(e) {
         var src = (e.filename || '') + ':' + e.lineno + ':' + e.colno;

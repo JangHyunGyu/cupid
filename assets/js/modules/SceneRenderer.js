@@ -268,6 +268,17 @@ class SceneRenderer {
         // 분기 없으면 단순히 next 반환
         if (!scene.next) {
             console.error(`[SceneRenderer] next가 정의되지 않은 씬:`, scene);
+            window.reportCupidCaughtError?.(new Error(`Scene has no next: ${scene.id || scene.nodeId || 'unknown'}`), {
+                source: 'cupid-scene-renderer',
+                errorType: 'scene_next_missing',
+                sessionId: scene.id || scene.nodeId || '',
+                context: {
+                    sceneId: scene.id || scene.nodeId || '',
+                    sceneType: scene.type || '',
+                    hasChoices: Array.isArray(scene.choices) && scene.choices.length > 0,
+                    hasBranches: Array.isArray(scene.branches) && scene.branches.length > 0
+                }
+            });
         }
         return scene.next || null;
     }

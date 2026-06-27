@@ -47,6 +47,13 @@
     if (missing.length > 0) {
         console.error('[index.js] 누락된 모듈:', missing.join(', '));
         console.error('[index.js] game-loader.js의 로드 순서를 확인하세요.');
+        if (typeof window.reportCupidCaughtError === 'function') {
+            window.reportCupidCaughtError(new Error(`Missing modules: ${missing.join(', ')}`), {
+                source: 'cupid-index',
+                errorType: 'module_missing',
+                context: { missingModules: missing }
+            });
+        }
     } else {
         console.log('[index.js] 모든 모듈 로드 확인 완료 ✓');
     }
@@ -202,6 +209,16 @@ if (!window.preventAutoStart) {
             await gameEngine.renderScene("start");  // 첫 씬 렌더링
         } catch (e) {
             console.error('[Cupid Engine] 초기화 오류:', e);
+            if (typeof window.reportCupidCaughtError === 'function') {
+                window.reportCupidCaughtError(e, {
+                    source: 'cupid-index',
+                    errorType: 'auto_start_failed',
+                    context: {
+                        hasI18nReady: !!window._i18nReady,
+                        preventAutoStart: !!window.preventAutoStart
+                    }
+                });
+            }
         }
     }
 

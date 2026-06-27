@@ -168,6 +168,14 @@ class SoundManager {
                 return audioBuffer;
             } catch (e) {
                 console.error("SoundManager: 오디오 로드 실패 ->", path, e);
+                if (typeof window.__cupidLogRuntimeError === 'function') {
+                    window.__cupidLogRuntimeError(
+                        'SoundLoadError',
+                        e?.message || String(e || 'Audio load failed'),
+                        e?.stack || '',
+                        path || 'sound-manager'
+                    );
+                }
                 return null;
             } finally {
                 delete this._loadingPromises[path];
@@ -408,6 +416,14 @@ try {
     soundManager = new SoundManager();
 } catch (e) {
     console.warn('[SoundManager] 초기화 실패, 더미 매니저 사용:', e);
+    if (typeof window.__cupidLogRuntimeError === 'function') {
+        window.__cupidLogRuntimeError(
+            'SoundInitError',
+            e?.message || String(e || 'SoundManager init failed'),
+            e?.stack || '',
+            'sound-manager'
+        );
+    }
     soundManager = { init() {}, playBgm() {}, stopBgm() {}, playSfx() {}, setBgmVolume() {}, setSfxVolume() {}, setMuted() {}, muted: false, bgmVolume: 0.5, sfxVolume: 0.5, isInitialized: false };
 }
 window.soundManager = soundManager;

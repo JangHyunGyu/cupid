@@ -429,6 +429,11 @@ class UIManager {
                         }
                     }).catch(err => {
                         console.warn('[UIManager] R2 업로드 실패, base64 폴백:', err.message);
+                        window.reportCupidCaughtError?.(err, {
+                            source: 'cupid-ui-manager',
+                            errorType: 'image_upload_fallback',
+                            context: { uploadContext: 'game-chat' }
+                        });
                     }).finally(() => {
                         if (this._imageUploadVersion === uploadVersion) {
                             this._setImageUploadState(false);

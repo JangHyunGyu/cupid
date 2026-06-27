@@ -73,6 +73,14 @@
         const failures = results.filter(r => r.status === 'rejected');
         if (failures.length > 0) {
             failures.forEach(f => console.error('[i18n-loader] Failed after retries:', f.reason));
+            if (typeof window.__cupidLogRuntimeError === 'function') {
+                window.__cupidLogRuntimeError(
+                    'I18nLoadFailure',
+                    `[i18n-loader] ${failures.length} translation file(s) failed for lang=${lang}`,
+                    failures.map(f => f.reason?.stack || f.reason?.message || String(f.reason)).join('\n'),
+                    'i18n-loader'
+                );
+            }
             // 베이스 언어가 통째로 비면 초기화 실패로 간주 (빈 i18n 상태 방지)
             const baseLocale = lang === 'ko' ? 'ko' : 'en';
             if (Object.keys(localeData[baseLocale] || {}).length === 0) {
@@ -91,7 +99,16 @@
     // 랜딩 페이지(index-*)에서는 initGame이 호출되기 전까지 _i18nReady를 await하는 곳이 없어
     // fetch 실패 시 UnhandledRejection이 발생함. 핸들러를 붙여 차단하되,
     // initGame 래퍼는 여전히 원본 프로미스를 await하므로 에러를 감지할 수 있음.
-    window._i18nReady.catch(() => {});
+    window._i18nReady.catch(error => {
+        if (typeof window.__cupidLogRuntimeError === 'function') {
+            window.__cupidLogRuntimeError(
+                'I18nReadyError',
+                error?.message || String(error || 'i18n ready failed'),
+                error?.stack || '',
+                'i18n-loader'
+            );
+        }
+    });
 
     // Patch initGame/initGameFromSave after all scripts have loaded (deferred).
     // By the time DOMContentLoaded fires, index.js has already defined window.initGame.
