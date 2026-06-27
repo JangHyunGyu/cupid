@@ -156,6 +156,23 @@ class GameEngine {
 
     _handleAsyncError(context, error) {
         console.error(`[GameEngine] ${context} error:`, error);
+        try {
+            if (typeof window.logCupidError === 'function') {
+                window.logCupidError(error, {
+                    source: 'cupid-game-engine',
+                    errorType: 'game_engine_async_error',
+                    errorClass: error?.name || 'Error',
+                    sessionId: this.sceneRenderer?.currentSceneId || '',
+                    context: {
+                        asyncContext: context,
+                        sceneId: this.sceneRenderer?.currentSceneId || '',
+                        day: this.stateManager?.currentDay || '',
+                        language: window.GAME_LANG || document.documentElement?.lang || 'ko',
+                        isFreeTalking: !!this.freeTalkSystem?.isFreeTalking
+                    }
+                });
+            }
+        } catch (_) {}
         this._isRendering = false;
         if (this.freeTalkSystem) this.freeTalkSystem.isProcessingChat = false;
         if (this.uiManager?.chatSendBtn) this.uiManager.chatSendBtn.disabled = false;

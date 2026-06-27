@@ -747,8 +747,9 @@ function keepCupidRuntimePromptBoundary(content) {
     ].filter(Boolean).join('\n');
 }
 
+const buildSystemPromptWithoutCacheBoundary = buildSystemPrompt;
 window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
-    return keepCupidRuntimePromptBoundary(buildSystemPrompt(params));
+    return keepCupidRuntimePromptBoundary(buildSystemPromptWithoutCacheBoundary(params));
 };
 
 /**
