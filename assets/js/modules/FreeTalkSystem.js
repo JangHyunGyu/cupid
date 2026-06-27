@@ -238,6 +238,54 @@ class FreeTalkSystem {
         this.charNameMap = CHAR_NAME_MAP;
     }
 
+    _getThinkingText() {
+        const lang = (window.GAME_LANG || document.documentElement.lang || 'ko').toLowerCase();
+        const messages = {
+            ko: '캐릭터가 할 말을 생각 중',
+            en: 'Character is thinking of what to say',
+            es: 'El personaje está pensando qué decir',
+            ja: 'キャラクターが返事を考え中',
+            fr: 'Le personnage réfléchit à quoi dire',
+            de: 'Der Charakter denkt über eine Antwort nach',
+            pt: 'A personagem está pensando no que dizer'
+        };
+        return messages[lang] || messages[lang.slice(0, 2)] || messages.ko;
+    }
+
+    _showThinkingMessage(characterName) {
+        const messageEl = this.uiManager?.messageEl;
+        if (!messageEl) return;
+
+        this.uiManager.updateNameTag?.(characterName);
+        messageEl.innerHTML = '';
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'ai-thinking-message';
+        wrapper.setAttribute('role', 'status');
+        wrapper.setAttribute('aria-live', 'polite');
+
+        const mark = document.createElement('span');
+        mark.className = 'ai-thinking-mark';
+        mark.setAttribute('aria-hidden', 'true');
+
+        const text = document.createElement('span');
+        text.className = 'ai-thinking-text';
+        text.textContent = this._getThinkingText();
+
+        const dots = document.createElement('span');
+        dots.className = 'ai-thinking-dots';
+        dots.setAttribute('aria-hidden', 'true');
+        dots.innerHTML = '<span></span><span></span><span></span>';
+
+        wrapper.append(mark, text, dots);
+        messageEl.appendChild(wrapper);
+        messageEl.scrollTop = messageEl.scrollHeight;
+    }
+
+    _clearThinkingMessage() {
+        this.uiManager?.messageEl?.querySelectorAll('.ai-thinking-message').forEach(el => el.remove());
+    }
+
     /**
      * 게임 내 플래그 기반으로 캐릭터의 "기억"을 생성
      *
@@ -796,6 +844,7 @@ class FreeTalkSystem {
             indicator.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
             charSlot.appendChild(indicator);
         }
+        this._showThinkingMessage(scene.name);
 
         let _lastTurnMeta = null;
         let _lastCacheKey = '';
@@ -1041,6 +1090,7 @@ class FreeTalkSystem {
 
                 if (!reply) reply = "...";
 
+                this._clearThinkingMessage();
                 this.uiManager.updateNameTag(scene.name);
 
                 // 생각중 상태 해제
@@ -1066,6 +1116,7 @@ class FreeTalkSystem {
                     });
                 }
             } else {
+                this._clearThinkingMessage();
                 this.uiManager.updateNameTag(scene.name);
                 await this.dialogueSystem.typeText("...", scene.name);
             }
@@ -1122,6 +1173,7 @@ class FreeTalkSystem {
             const fallbackMsg = this.getFallbackReply(scene.name, isEnErr, getSceneFn);
 
             // 폴백 메시지를 화면에 표시
+            this._clearThinkingMessage();
             this.uiManager.updateNameTag(scene.name);
             await this.dialogueSystem.typeText(fallbackMsg, scene.name);
             this.freeTalkHistory.push({ role: "assistant", content: fallbackMsg });
@@ -1139,6 +1191,7 @@ class FreeTalkSystem {
             document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
             this.uiManager.dialogueBox.classList.remove('thinking-box');
             document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+            this._clearThinkingMessage();
 
             if (!window.isCupidDesktopPointer || window.isCupidDesktopPointer()) {
                 this.uiManager.chatInput.focus();
