@@ -132,6 +132,29 @@ class SoundManager {
         return this._ensureAudioContext();
     }
 
+    _sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async _fetchAudioResponse(path) {
+        let lastError = null;
+        for (let attempt = 0; attempt < 2; attempt++) {
+            const separator = path.includes('?') ? '&' : '?';
+            const url = attempt === 0 ? path : `${path}${separator}retry=${Date.now()}`;
+            try {
+                if (attempt > 0) await this._sleep(350);
+                const response = await fetch(url, {
+                    cache: attempt === 0 ? 'default' : 'reload'
+                });
+                if (response.ok) return response;
+                lastError = new Error(`HTTP ${response.status}`);
+            } catch (error) {
+                lastError = error;
+            }
+        }
+        throw lastError || new Error('Audio load failed');
+    }
+
     /**
      * 오디오 파일을 완전히 다운로드 + 디코딩하여 AudioBuffer로 변환.
      * 캐시하여 같은 파일은 재다운로드하지 않음.
@@ -153,8 +176,7 @@ class SoundManager {
         this._loadingPromises[path] = (async () => {
             try {
                 console.log("SoundManager: 오디오 다운로드 시작 ->", path);
-                const response = await fetch(path);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const response = await this._fetchAudioResponse(path);
 
                 const arrayBuffer = await response.arrayBuffer();
                 console.log("SoundManager: 다운로드 완료, 디코딩 중 ->", path);

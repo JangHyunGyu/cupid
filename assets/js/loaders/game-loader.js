@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.55';
+        const version = '2.9.56';
 
     // =========================================================================
     // 언어 감지 (Language Detection)
@@ -257,19 +257,43 @@
         return event;
     }
 
-    function loadScript(src) {
+    function buildScriptUrl(src, attempt) {
+        var query = '?v=' + encodeURIComponent(version);
+        if (attempt > 0) {
+            query += '&retry=' + Date.now();
+        }
+        return basePath + src + query;
+    }
+
+    function loadScriptAttempt(src, attempt) {
         return new Promise(function(resolve, reject) {
+            var scriptUrl = buildScriptUrl(src, attempt);
             var script = document.createElement('script');
             script.async = false;
             script.onload = function() {
                 resolve(src);
             };
             script.onerror = function() {
-                reject(new Error('[game-loader] Failed to load script: ' + src));
+                if (script.parentNode) {
+                    script.parentNode.removeChild(script);
+                }
+                reject(new Error('[game-loader] Failed to load script: ' + scriptUrl));
             };
-            script.src = basePath + src + '?v=' + version;
+            script.src = scriptUrl;
             document.head.appendChild(script);
         });
+    }
+
+    async function loadScript(src) {
+        var lastError = null;
+        for (var attempt = 0; attempt < 2; attempt++) {
+            try {
+                return await loadScriptAttempt(src, attempt);
+            } catch (error) {
+                lastError = error;
+            }
+        }
+        throw lastError || new Error('[game-loader] Failed to load script: ' + src);
     }
 
     function verifyRequiredGlobals() {
