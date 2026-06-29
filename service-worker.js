@@ -5,18 +5,18 @@
  *
  * 캐시 전략:
  *   - 이미지/오디오: Cache-first (캐시 우선, 없으면 네트워크)
- *   - CSS/JS: Network-only (항상 네트워크에서 직접 로드, 캐시 사용 안 함)
+ *   - CSS/JS: Network-first (버전 쿼리 최신 우선, 실패 시 캐시 fallback)
  *   - HTML/API: Network-first (네트워크 우선, 실패 시 캐시)
  *
  * 저사양 기기와 느린 인터넷에서 빠른 로딩을 위해 정적 에셋을 적극 캐시합니다.
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.26';
+const CACHE_VERSION = 'cupid-v3.3.27';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 
-// 설치 시 핵심 에셋 프리캐시 (소스코드 CSS/JS 제외 - 항상 최신 로드)
+// 설치 시 핵심 에셋 프리캐시
 const PRECACHE_URLS = [];
 
 // ============================================================================
@@ -73,9 +73,9 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    // CSS/JS: Network-only (소스코드는 항상 최신 버전 직접 로드, 캐시 사용 안 함)
+    // CSS/JS: Network-first. Versioned URLs stay fresh, cached copies cover transient network failures.
     if (/\.(css|js)$/i.test(path)) {
-        event.respondWith(networkOnly(event.request));
+        event.respondWith(networkFirstAsset(event.request, STATIC_CACHE));
         return;
     }
 
@@ -115,6 +115,32 @@ async function networkOnly(request) {
     try {
         return await fetch(request);
     } catch (e) {
+        return new Response('Offline', { status: 503 });
+    }
+}
+
+function normalizeAssetCacheRequest(request) {
+    const url = new URL(request.url);
+    if (!url.searchParams.has('retry')) return request;
+    url.searchParams.delete('retry');
+    return new Request(url.toString(), request);
+}
+
+async function networkFirstAsset(request, cacheName) {
+    const cacheRequest = normalizeAssetCacheRequest(request);
+    try {
+        const response = await fetch(request);
+        if (response.ok) {
+            const cache = await caches.open(cacheName);
+            cache.put(cacheRequest, response.clone());
+            return response;
+        }
+        const cached = await caches.match(cacheRequest);
+        if (cached) return cached;
+        return response;
+    } catch (e) {
+        const cached = await caches.match(cacheRequest);
+        if (cached) return cached;
         return new Response('Offline', { status: 503 });
     }
 }
