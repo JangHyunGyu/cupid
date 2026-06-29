@@ -2286,11 +2286,29 @@ The latest user input contains an outside scene cue that happens before the char
         ].filter(Boolean).join("\n");
         const compactGalleryExpressions = validExprs.join(', ') || 'normal';
         const compactGalleryState = `State: place=${location || 'current gallery scene'}; user=${playerName}; language=${isEn ? langName : 'Korean'}`;
+        const charKey = this.CHAR_ID_TO_KEY[charId] || charId;
+        const roleplayLang = isEn ? 'en' : 'ko';
+        const roleplayHardRulesBlock = (typeof getRoleplayHardRules === 'function')
+            ? `[Hard Rules]\n${getRoleplayHardRules(roleplayLang).map(rule => `- ${rule}`).join('\n')}`
+            : '';
+        const roleplayPerformanceGuideBlock = (typeof getRoleplayPerformanceGuide === 'function')
+            ? getRoleplayPerformanceGuide(roleplayLang)
+            : '';
+        const roleplayStoryInvariantsBlock = (typeof getRoleplayStoryInvariants === 'function')
+            ? getRoleplayStoryInvariants(roleplayLang)
+            : '';
+        const roleplayVoiceExamplesBlock = (typeof getFreeTalkVoiceExamples === 'function')
+            ? getFreeTalkVoiceExamples(this.lang, charKey, charKey, 3)
+            : '';
 
         if (isEn) {
             return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid gallery free-talk: post-graduation adult lovers, ${charName} and ${playerName}; not a current school scene.
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
+${roleplayHardRulesBlock}
+${roleplayPerformanceGuideBlock}
+${roleplayStoryInvariantsBlock}
+${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[Graphic Description Rule] Sexual and intimate narration must always stay very graphic and direct—no euphemism, implication, ellipsis, or sanitizing.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
@@ -2304,6 +2322,10 @@ ${compactGalleryState}`;
         return `${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Reply in Korean. Cupid gallery free-talk: post-graduation adult lovers, ${charName} and ${playerName}; not a current school scene.
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
+${roleplayHardRulesBlock}
+${roleplayPerformanceGuideBlock}
+${roleplayStoryInvariantsBlock}
+${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[적나라 묘사 원칙] 성적·친밀 장면의 narration·지문은 조건 없이 무조건 매우 적나라하고 직설적으로 서술합니다.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}

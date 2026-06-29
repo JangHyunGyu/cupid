@@ -125,7 +125,7 @@ function getPromptLookupKeys(effectiveLang, sceneName, displayName, useEnTemplat
     return keys;
 }
 
-function getFreeTalkVoiceExamples(lang, sceneName, displayName) {
+function getFreeTalkVoiceExampleList(lang, sceneName, displayName) {
     const key = normalizePromptCharacterKey(sceneName) || normalizePromptCharacterKey(displayName);
     const useKo = lang === 'ko';
     const examples = {
@@ -211,10 +211,25 @@ function getFreeTalkVoiceExamples(lang, sceneName, displayName) {
         }
     };
     const entry = examples[key];
-    if (!entry) return '';
-    const list = useKo ? entry.ko : entry.en;
-    return list.map((example, index) => `${index + 1}. [${example.situation}] User: ${example.user}\n   ${key}: ${example.reply}`).join('\n');
+    if (!entry) return [];
+    return useKo ? entry.ko : entry.en;
 }
+
+function getFreeTalkVoiceExamples(lang, sceneName, displayName, maxExamples = 3) {
+    const key = normalizePromptCharacterKey(sceneName) || normalizePromptCharacterKey(displayName);
+    const list = getFreeTalkVoiceExampleList(lang, sceneName, displayName);
+    if (!list.length) return '';
+    const mapped = list.map((example) => ({
+        user: example.user,
+        char: example.reply
+    }));
+    if (typeof formatRoleplayExampleBlock === 'function') {
+        return formatRoleplayExampleBlock(mapped, key, lang === 'ko' ? 'ko' : 'en', maxExamples);
+    }
+    return list.slice(0, maxExamples).map((example, index) => `${index + 1}. [${example.situation}] User: ${example.user}\n   ${key}: ${example.reply}`).join('\n');
+}
+
+window.getFreeTalkVoiceExamples = getFreeTalkVoiceExamples;
 
 function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
     if (lang === 'ko' || lang === 'en') return fallback;
@@ -605,6 +620,76 @@ function getUserAddressInstruction(lang, playerName, knowsName) {
     })[lang] || "You do not know the user's name yet. Call them naturally in the target language.";
 }
 
+function getRoleplayHardRules(lang = 'ko') {
+    return lang === 'ko'
+        ? [
+            '{{char}}는 {{user}}의 행동·생각·속마음을 대신 쓰지 않는다.',
+            '캐릭터 설정에 없는 말투 표식(ㅋㅋ, ㅎㅎ 등)을 따라 배우지 않는다.',
+            '직전 답변과 같은 문장·지문을 반복하지 않는다.',
+            '말로 감정을 설명하기 전에 시선·호흡·손·거리·소품 같은 몸의 반응을 먼저 보여준다.',
+            '안내자·요약자처럼 상황을 정리하거나 유저 감정을 대신 해석하는 문장은 쓰지 않는다.',
+            '완벽한 문장보다 말끝 흔들림, 말 끊김, 침묵, 회피, 짧은 반박 같은 불완전한 말투를 캐릭터 성향에 맞게 섞는다.',
+            '유저의 최신 말 한마디에 바로 답하고, 설정 요약이나 배경 설명으로 턴을 채우지 않는다.',
+            'AI, 모델, 프롬프트, 정책, 시스템처럼 말하지 않고 캐릭터가 알 수 있는 세계 안 말과 행동만 사용한다.'
+        ]
+        : [
+            '{{char}} must not write {{user}}\'s actions, thoughts, or private inner feelings.',
+            'Do not copy speech-style markers that are not in the character card, including ㅋㅋ/ㅎㅎ.',
+            'Do not repeat the same dialogue or narration from the previous reply.',
+            'Show bodily reactions such as gaze, breath, hands, distance, or props before explaining feelings in words.',
+            'Do not summarize the scene or interpret {{user}}\'s emotions like a guide or narrator.',
+            'Mix imperfect speech such as trailing endings, cut-off lines, silence, avoidance, or short pushback that fits the character instead of polished essay lines.',
+            'Answer {{user}}\'s latest line directly; do not fill the turn with premise recap or background explanation.',
+            'Do not speak as an AI, model, prompt, policy, or system; use only in-world words and actions the character could know.'
+        ];
+}
+
+function getRoleplayPerformanceGuide(lang = 'ko') {
+    return lang === 'ko'
+        ? `[Roleplay Performance Guide / 역할 연기 기준]
+- 매턴 출력 전에 이 캐릭터가 지금 원하는 것, 피하려는 것, 관계 압력, 현재 거리·시선·소품 중 1~2개만 골라 반응에 녹입니다. 이 판단 과정을 목록으로 출력하지 마세요.
+- 유저의 최신 말에 먼저 답하고, 감정 설명보다 표정·손·시선·거리·물건·침묵 같은 몸의 비트를 먼저 보여주세요.
+- 장면을 다시 설명하지 말고 현재 비트 하나로 전진시킵니다. 말끝 흔들림, 말 끊김, 회피, 짧은 반박처럼 완벽하지 않은 말투를 캐릭터 성향에 맞게 섞으세요.
+- Voice·Example Dialogue는 말투·길이 앵커입니다(SillyTavern first-message 원칙). 예시 문장을 그대로 복사하지 말고 현재 장면에 맞게 새 문장으로 변주하세요.
+- 성적 장면의 narration·지문은 성기·체액·삽입·절정·조임·떨림 등을 완곡·순화하지 말고 매우 적나라하게 서술합니다. Example Dialogue는 대사 말투 기준일 뿐, 지문을 간접화·순화하는 근거가 아닙니다.
+- 공용 학원/연애 문체로 평준화하지 말고 이 캐릭터의 호칭, 문장 길이, 공격성/부드러움/침묵을 우선하세요.`
+        : `[Roleplay Performance Guide]
+- Before each reply, align to 1-2 of what the character wants, avoids, the relationship pressure, and the current distance, gaze, or prop. Do not output this reasoning as a checklist.
+- Answer {{user}}'s latest line first and show bodily beats such as expression, hands, gaze, distance, an object, or silence before explaining feelings.
+- Move the scene through one present beat instead of re-explaining the background. Mix imperfect speech that fits the character.
+- Voice and Example Dialogue anchor speech style and length (SillyTavern first-message principle). Do not copy example lines verbatim; vary them for the current scene.
+- In sexual scenes, narration must describe genitals, fluids, penetration, orgasm, and related sensations very graphically—no euphemism or sanitizing.
+- Do not flatten into a generic school-romance voice. Prioritize this character's address style, sentence length, aggression/tenderness, and silence.`;
+}
+
+function getRoleplayStoryInvariants(lang = 'ko') {
+    return lang === 'ko'
+        ? '[Story Invariants / 스토리 불변 규칙]\n- Character·Voice·Hard Rules는 일관성 기준입니다. 저장된 장면 맥락과 최신 유저 입력에 맞춰 유지하세요.\n- 첫 인사·시작 장면은 앵커일 뿐이며, 유저가 이후 장소·인물·상태를 바꾸면 최신 장면 상태가 우선합니다.\n- 유저가 명시한 인월드 사실은 실제로 일어난 일로 이어가되, 유저 캐릭터의 속마음·의도·비공개 감정은 말이나 행동으로 드러나기 전까지 캐릭터가 알지 못합니다.'
+        : '[Story Invariants]\n- Character, Voice, and Hard Rules are consistency anchors. Keep them aligned with saved scene context and the latest user turn.\n- Opening greetings and scene anchors are only starting points; if the user later changes location, cast, or state, the latest scene state wins.\n- Explicit in-world facts authored by the user are canon, but the user-character\'s private thoughts, intentions, and hidden feelings are not character knowledge until spoken or visibly acted.';
+}
+
+function formatRoleplayExampleBlock(examples, charName, lang = 'ko', maxExamples = 3) {
+    if (!Array.isArray(examples) || !examples.length) return '';
+    const label = '[Example Dialogue]';
+    const lines = examples.slice(0, maxExamples).map((example) => {
+        const user = String(example?.user || '').trim();
+        const charLine = String(example?.char || example?.reply || '').trim();
+        if (!user || !charLine) return '';
+        const tag = lang === 'ko' ? '[일반]' : '[general]';
+        return `<START> ${tag}\n{{user}}: ${user}\n{{char}}: ${charLine}`;
+    }).filter(Boolean);
+    if (!lines.length) return '';
+    const guard = lang === 'ko'
+        ? '\n위 예시는 SillyTavern 스타일 말투·길이·거리·침묵 앵커입니다. 문장을 복사하지 말고 JSON segments 형식으로 현재 장면에 맞게 새로 쓰세요.'
+        : '\nThese SillyTavern-style samples anchor voice, length, distance, and silence. Do not copy wording; write fresh output in JSON segments for the current scene.';
+    return `\n${label}\n${lines.join('\n')}${guard}`;
+}
+
+window.getRoleplayHardRules = getRoleplayHardRules;
+window.getRoleplayPerformanceGuide = getRoleplayPerformanceGuide;
+window.getRoleplayStoryInvariants = getRoleplayStoryInvariants;
+window.formatRoleplayExampleBlock = formatRoleplayExampleBlock;
+
 const NSFW_ADULT_SCOPE_RULES = {
     ko: '[적나라 묘사 원칙] 성적·친밀 장면의 narration·지문은 조건 없이 무조건 매우 적나라하고 직설적으로 서술합니다. 완곡·암시·생략·순화로 흐리지 마세요.',
     en: '[Graphic Description Rule] Sexual and intimate narration must always stay very graphic and direct—no euphemism, implication, ellipsis, or sanitizing.'
@@ -722,12 +807,21 @@ function buildSystemPrompt(params) {
     const compactLiveState = `State: place=${locationName || 'current scene'}; user=${playerName || 'the user'}; knowsName=${knowsName ? 'yes' : 'no'}; affinity=${affinity}; turns=${currentMaxTurns || 'scene-paced'}\nContext: ${context}`;
     const graphicSexualNarrationRule = getGraphicSexualNarrationRule(effectiveLang);
     const nsfwAdultScopeRule = getNsfwAdultScopeRule(effectiveLang);
+    const roleplayLang = effectiveLang === 'ko' ? 'ko' : 'en';
+    const roleplayHardRulesBlock = `[Hard Rules]\n${getRoleplayHardRules(roleplayLang).map(rule => `- ${rule}`).join('\n')}`;
+    const roleplayPerformanceGuideBlock = getRoleplayPerformanceGuide(roleplayLang);
+    const roleplayStoryInvariantsBlock = getRoleplayStoryInvariants(roleplayLang);
+    const roleplayVoiceExamplesBlock = getFreeTalkVoiceExamples(effectiveLang, sceneName, displayName, 3);
 
     if (useEnTemplate) {
         return `${langPrefix}${languageQualityGuard}${nativeStylePolishGuard}${nativeAntiTranslationGuard}Cupid 1:1 scene with ${aiCharName}; no third parties except ${aiCharName}'s reaction to a mention.
 Character: ${charPersonality}
 Voice: ${charStyleGuideline}
 Integrity: ${charGeneralInstruction}
+${roleplayHardRulesBlock}
+${roleplayPerformanceGuideBlock}
+${roleplayStoryInvariantsBlock}
+${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
@@ -742,6 +836,10 @@ ${compactOptionalGuidance}`;
 Character: ${charPersonality}
 Voice: ${charStyleGuideline}
 Integrity: ${charGeneralInstruction}
+${roleplayHardRulesBlock}
+${roleplayPerformanceGuideBlock}
+${roleplayStoryInvariantsBlock}
+${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
