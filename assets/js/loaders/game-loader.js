@@ -53,7 +53,9 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.56';
+    const version = '2.9.57';
+    const LOAD_RETRIES = 3;
+    const LOAD_TIMEOUT_MS = 15000;
 
     // =========================================================================
     // 언어 감지 (Language Detection)
@@ -257,27 +259,59 @@
         return event;
     }
 
+    function delay(ms) {
+        return new Promise(function(resolve) {
+            setTimeout(resolve, ms);
+        });
+    }
+
     function buildScriptUrl(src, attempt) {
         var query = '?v=' + encodeURIComponent(version);
         if (attempt > 0) {
             query += '&retry=' + Date.now();
         }
-        return basePath + src + query;
+        var relativeUrl = basePath + src + query;
+        try {
+            return new URL(relativeUrl, document.baseURI || window.location.href).href;
+        } catch (_) {
+            return relativeUrl;
+        }
     }
 
     function loadScriptAttempt(src, attempt) {
         return new Promise(function(resolve, reject) {
             var scriptUrl = buildScriptUrl(src, attempt);
             var script = document.createElement('script');
-            script.async = false;
-            script.onload = function() {
-                resolve(src);
-            };
-            script.onerror = function() {
+            var settled = false;
+            var timeoutId = setTimeout(function() {
+                rejectLoad('timeout');
+            }, LOAD_TIMEOUT_MS);
+
+            function cleanup() {
+                clearTimeout(timeoutId);
+                script.onload = null;
+                script.onerror = null;
+            }
+
+            function rejectLoad(reason) {
+                if (settled) return;
+                settled = true;
+                cleanup();
                 if (script.parentNode) {
                     script.parentNode.removeChild(script);
                 }
-                reject(new Error('[game-loader] Failed to load script: ' + scriptUrl));
+                reject(new Error('[game-loader] Failed to load script: ' + scriptUrl + ' [' + reason + ']'));
+            }
+
+            script.async = false;
+            script.onload = function() {
+                if (settled) return;
+                settled = true;
+                cleanup();
+                resolve(src);
+            };
+            script.onerror = function() {
+                rejectLoad('network');
             };
             script.src = scriptUrl;
             document.head.appendChild(script);
@@ -286,11 +320,14 @@
 
     async function loadScript(src) {
         var lastError = null;
-        for (var attempt = 0; attempt < 2; attempt++) {
+        for (var attempt = 0; attempt < LOAD_RETRIES; attempt++) {
             try {
                 return await loadScriptAttempt(src, attempt);
             } catch (error) {
                 lastError = error;
+                if (attempt < LOAD_RETRIES - 1) {
+                    await delay(500 * (attempt + 1));
+                }
             }
         }
         throw lastError || new Error('[game-loader] Failed to load script: ' + src);
