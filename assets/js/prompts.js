@@ -606,13 +606,13 @@ function getUserAddressInstruction(lang, playerName, knowsName) {
 }
 
 const NSFW_ADULT_SCOPE_RULES = {
-    ko: '[성인 범위] 성인·합의·자발적 참여가 분명한 장면에서만 성적 긴장과 직설적·적나라한 표현을 사용합니다. 미성년·비동의·강압·불편 신호가 있으면 거리·거절·중단으로 되돌립니다.',
-    en: '[Adult Scope] Sexual tension and graphic direct wording are allowed only in adult scenes with clear consent and voluntary participation. Return to distance, refusal, or stop for minor/non-consent/coercion/discomfort cues.'
+    ko: '[적나라 묘사 원칙] 성적·친밀 장면의 narration·지문은 조건 없이 무조건 매우 적나라하고 직설적으로 서술합니다. 완곡·암시·생략·순화로 흐리지 마세요.',
+    en: '[Graphic Description Rule] Sexual and intimate narration must always stay very graphic and direct—no euphemism, implication, ellipsis, or sanitizing.'
 };
 
 const GRAPHIC_SEXUAL_NARRATION_RULES = {
-    ko: `[성적 장면 지문 규칙] narration·scene 지문은 말이 아닌 3인칭 행동·신체 묘사입니다. 성적 장면에서 신체 부위·삽입·리듬·절정·체액을 "그곳·아래·그 부분·더 깊게·겹치다·체온이 오르다·서로 맞닿다·…"처럼 완곡·암시·생략으로 흐리지 마세요. 자지·보지·음핵·유두·항문·정액·애액·사정·절정·삽입·피스톤·조임·떨림 등 성기·체액·성적 감각·동작을 지문에 매우 적나라하게 직접 서술합니다. 캐릭터가 주도하든 수동이든 지문의 노골함·적나라함 수준은 동일합니다. dialogue 말투는 캐릭터 성향을 따르되 지문에서 성적 행위를 우회하지 마세요.`,
-    en: `[Sexual-Scene Narration Rule] narration segments are third-person body/action prose, not spoken lines. In sexual scenes, do not blur body parts, penetration, rhythm, orgasm, or fluids with euphemism, implication, or ellipsis such as "down there," "that part," "deeper," "pressed together," "heat rose," or "...". Name genitals, fluids, penetration, orgasm, grip, and trembling very graphically in narration—cock, pussy, clit, nipples, anus, cum, squirt, thrusting, ejaculation, and similar terms as the scene requires. Whether the character leads or receives, narration stays equally graphic. Dialogue voice follows the character, but narration must not dodge the sexual action.`
+    ko: `[성적 장면 지문 규칙] narration·scene 지문은 말이 아닌 3인칭 행동·신체 묘사입니다. 성적·친밀 장면이면 조건 없이 무조건 신체 부위·삽입·리듬·절정·체액을 "그곳·아래·그 부분·더 깊게·겹치다·체온이 오르다·서로 맞닿다·…"처럼 완곡·암시·생략으로 흐리지 마세요. 자지·보지·음핵·유두·항문·정액·애액·사정·절정·삽입·피스톤·조임·떨림 등 성기·체액·성적 감각·동작을 지문에 매우 적나라하게 직접 서술합니다. 캐릭터가 주도하든 수동이든 지문의 노골함·적나라함 수준은 동일합니다. dialogue 말투는 캐릭터 성향을 따르되 지문에서 성적 행위를 우회하지 마세요.`,
+    en: `[Sexual-Scene Narration Rule] narration segments are third-person body/action prose, not spoken lines. Whenever a sexual or intimate scene is in play, always name body parts, penetration, rhythm, orgasm, and fluids very graphically—never blur them with euphemism, implication, or ellipsis such as "down there," "that part," "deeper," "pressed together," "heat rose," or "...". Use cock, pussy, clit, nipples, anus, cum, squirt, thrusting, ejaculation, grip, trembling, and similar terms as needed. Whether the character leads or receives, narration stays equally graphic. Dialogue voice follows the character, but narration must not dodge the sexual action.`
 };
 
 const GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE = {
@@ -731,7 +731,7 @@ Integrity: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
-Rules: ${compactSceneMode} Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react through dialogue, emotion, distance, or consequence without undoing it. Do not write user choices/thoughts; private inner thoughts stay unknown unless spoken or visibly acted. Answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. Adult intimacy stays adult, consensual, and character-led; in sexual scenes keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; direct sexual language and desire are allowed when the scene genuinely calls for them, without auto-escalation or ignoring stop/wait/discomfort cues. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
+Rules: ${compactSceneMode} Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react through dialogue, emotion, distance, or consequence without undoing it. Do not write user choices/thoughts; private inner thoughts stay unknown unless spoken or visibly acted. Answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. In any sexual or intimate scene, always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and desire without softening. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
@@ -745,7 +745,7 @@ Integrity: ${charGeneralInstruction}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
-Rules: ${compactSceneMode} Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 캐릭터는 그 결과에 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. 성인 친밀감은 성인·합의·캐릭터 주도 범위에서 처리하세요. 성적 장면의 narration·지문은 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요. 장면이 실제로 요구하면 성적 욕망과 표현을 직접적으로 말해도 되지만, 자동 격상하거나 "멈춰/잠깐/불편해" 신호를 무시하지 마세요. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
+Rules: ${compactSceneMode} Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 캐릭터는 그 결과에 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요. 성적 욕망과 표현도 직접적으로 쓰세요. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
