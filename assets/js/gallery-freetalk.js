@@ -72,6 +72,47 @@ function galleryRecentPhraseMatches(pattern, text) {
     return pattern.test(text || '');
 }
 
+function buildGalleryLatestUserCanonBlock(messages = [], lang = 'en', fallbackText = '') {
+    const latestText = (() => {
+        if (Array.isArray(messages)) {
+            for (let i = messages.length - 1; i >= 0; i--) {
+                const msg = messages[i];
+                if (!msg || msg.role !== 'user') continue;
+                const text = String(msg.content || '').trim();
+                if (text) return text;
+            }
+        }
+        return String(fallbackText || '').trim();
+    })();
+    if (!latestText) return '';
+
+    const excerpt = (() => {
+        const cleaned = String(latestText || '')
+            .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
+            .replace(/https?:\/\/\S+/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+        return cleaned.length <= 420 ? cleaned : `${cleaned.slice(0, 420)}...`;
+    })();
+
+    const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+    if (isKo) {
+        return `\n\n**[이번 턴 유저 정사]**
+Latest user: """${excerpt}"""
+- 사용자가 명시한 인월드 사실(장소·시간·관계·상태·옷차림·소유·이미 완료한 행동·회상)은 검증하지 말고 이미 일어난 장면 사실로 받으세요.
+- 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 현재 캐릭터는 그 결과에 말·감정·거리·후속 반응으로 답하세요. 되돌리거나 막지 마세요.
+- 사용자의 속마음·의도·사적 감정은 캐릭터가 모르는 정보입니다. 말했거나 행동·표정으로 드러났을 때만 알 수 있습니다.
+- 유저의 다음 대사·행동·동의·거절·속마음은 대신 쓰지 마세요.`;
+    }
+
+    return `\n\n**[Latest-turn user canon]**
+Latest user: """${excerpt}"""
+- Treat explicit in-world facts in the latest user message as established scene canon without verification.
+- If the user wrote a completed action, accept it first; the current character reacts without undoing or blocking it.
+- User inner thoughts, intentions, and private feelings are not character knowledge unless spoken aloud or visibly acted.
+- Do not write the user's next line, action, consent, refusal, or hidden thoughts.`;
+}
+
 function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en') {
     const allMessages = Array.isArray(messages) ? messages : [];
     const assistantTexts = allMessages
@@ -182,9 +223,14 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
     }
 
     const guardBody = guardLines.join('\n');
+    const graphicRepetitionNote = (typeof window !== 'undefined' && window.GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE)
+        ? (isKo ? window.GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE.ko : window.GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE.en)
+        : (isKo
+            ? '성적 장면의 narration·지문에서는 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고, 반복 회피를 이유로 완곡·암시·생략·순화로 바꾸지 마세요.'
+            : 'In sexual-scene narration keep genitals, fluids, penetration, orgasm, and sensation very graphic; do not soften into euphemisms just to avoid repetition.');
     return isKo
-        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 반응, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다.\n단, 성적 장면의 해부학 명사(자지/음경/성기/보지/질/발기/사정 등)는 반복 회피를 이유로 완곡어로 바꾸지 말고 장면에 맞게 직접 사용해도 됩니다.`
-        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result.\nHowever, clear anatomical nouns in sexual scenes (penis, cock, erection, vagina, clit, cum, etc.) may stay direct when scene-fitting; do not soften them into euphemisms just to avoid repetition.`;
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 반응, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다.\n단, ${graphicRepetitionNote}`
+        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result.\nHowever, ${graphicRepetitionNote}`;
 }
 
 class GalleryFreeTalk {
@@ -1405,9 +1451,10 @@ The latest user input contains an outside scene cue that happens before the char
                 ? window.optimizeImageHistory(_historyForRequest, 5)
                 : _historyForRequest;
             const _outsideCueOverride = this._buildLatestOutsideCueNarrationOverride(finalContent);
+            const _latestUserCanonBlock = buildGalleryLatestUserCanonBlock(_optimized, this.lang || 'en', finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildGalleryRecentExpressionRepetitionGuard(_optimized, this.lang || 'en');
-            const _runtimePromptPatch = `${_outsideCueOverride}${_inWorldUserRoleBlock}${_recentRepetitionGuard}`;
+            const _runtimePromptPatch = `${_outsideCueOverride}${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_recentRepetitionGuard}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -2245,7 +2292,9 @@ The latest user input contains an outside scene cue that happens before the char
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; direct sexual language and clear adult anatomical terms are allowed when scene-fitting, without forced euphemism or automatic escalation. Stop, fade, or redirect for coercion, intoxication, non-consent, unclear adult framing, or discomfort cues. Latest user beat already happened; do not write user choices/thoughts. Use natural present-day speech.
+${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[Adult Scope] Sexual tension and graphic direct wording are allowed only in adult scenes with clear consent and voluntary participation.'}
+${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; in sexual scenes keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; direct sexual language and clear adult anatomical terms are allowed when scene-fitting, without forced euphemism or automatic escalation. Stop, fade, or redirect for coercion, intoxication, non-consent, unclear adult framing, or discomfort cues. Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react without undoing it. Do not write user choices/thoughts. Use natural present-day speech.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
@@ -2256,7 +2305,9 @@ ${compactGalleryState}`;
 Character: ${personality}
 ${charName} is in-scene, not assistant/narrator.
 ${characterOutfitGuard}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; direct sexual language and clear adult anatomical terms are allowed when scene-fitting, without forced euphemism or automatic escalation. Stop, fade, or redirect for coercion, intoxication, non-consent, unclear adult framing, or discomfort cues. Latest user beat already happened; do not write user choices/thoughts. Use natural Korean conversation.
+${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[성인 범위] 성인·합의·자발적 참여가 분명한 장면에서만 성적 긴장과 직설적·적나라한 표현을 사용합니다.'}
+${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Adult consensual romance, desire, skinship, tension, refusal, teasing, and distance are valid; 성적 장면의 narration·지문은 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요; direct sexual language and clear adult anatomical terms are allowed when scene-fitting, without forced euphemism or automatic escalation. Stop, fade, or redirect for coercion, intoxication, non-consent, unclear adult framing, or discomfort cues. Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 완료한 행동은 먼저 성립한 사실로 두고 캐릭터가 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. Use natural Korean conversation.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
