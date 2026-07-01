@@ -199,6 +199,16 @@ function buildCupidActionFollowThroughGuard(lang = 'ko') {
         : `\n\n[Action Follow-through]\nIf the latest player beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through the current character's action, refusal, condition, distance change, hand/body position change, or closure. If the character begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply.`;
 }
 
+function buildCupidLowAffinityBoundaryPatch(lang = 'ko', affinity = 0, isDating = false) {
+    const score = Number(affinity);
+    if (isDating || !Number.isFinite(score) || score >= 30) return '';
+
+    const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
+    return isKo
+        ? `\n\n[낮은 호감도 거리감]\n현재 캐릭터는 사용자와 연애 중이 아니고 호감도도 낮습니다. 성적이거나 신체적으로 가까워지는 최신 접근은 곧바로 받아주지 말고, 캐릭터 성격에 맞게 살짝 경계하거나 거리를 두세요. 사용자가 완료된 행동처럼 썼다면 사건 자체는 지우지 않되, 자동 동의나 즉각적인 수용처럼 반응하지 말고 불편함, 선 긋기, 조건 제시, 가벼운 거절, 거리 변화, 낮은/음수 affinity 변화 중 하나로 자연스럽게 처리하세요.`
+        : `\n\n[Low-affinity distance]\nThe current character is not dating the user and affinity is low. Do not immediately welcome the latest sexual or physically intimate approach; keep a slight boundary or distance in the character's own voice. If the user wrote a completed action, do not erase the event, but do not react as automatic consent or instant acceptance. Respond naturally with discomfort, a boundary, a condition, a light refusal, distance change, or a small/negative affinity change.`;
+}
+
 function cupidSanitizeLatestUserText(text) {
     return String(text || '')
         .replace(/data:image\/[a-zA-Z0-9.+-]+;base64,[A-Za-z0-9+/=\s]+/g, ' ')
@@ -938,7 +948,12 @@ class FreeTalkSystem {
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildCupidRecentExpressionRepetitionGuard(_optimized, _lang);
             const _actionFollowThroughGuard = buildCupidActionFollowThroughGuard(_lang);
-            const _runtimePromptPatch = `${_outsideCueOverride}${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_actionFollowThroughGuard}${_recentRepetitionGuard}`;
+            const _currentAffinity = this.stateManager.getAffinity
+                ? this.stateManager.getAffinity(charKey)
+                : (this.stateManager.stats?.[charKey]?.affinity || 0);
+            const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
+            const _lowAffinityBoundaryPatch = buildCupidLowAffinityBoundaryPatch(_lang, _currentAffinity, _isDatingCurrentForBoundary);
+            const _runtimePromptPatch = `${_outsideCueOverride}${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_actionFollowThroughGuard}${_lowAffinityBoundaryPatch}${_recentRepetitionGuard}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
