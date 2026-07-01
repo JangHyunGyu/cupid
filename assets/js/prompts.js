@@ -720,6 +720,17 @@ window.GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE = GRAPHIC_SEXUAL_REPETITION_GUARD_NO
 /**
  * 시스템 프롬프트 생성 함수
  */
+function getLowAffinityBoundaryGuideline(effectiveLang, affinity, datingGuideline) {
+    const score = Number(affinity);
+    if (datingGuideline || !Number.isFinite(score) || score >= 30) return "";
+
+    if (effectiveLang === 'ko') {
+        return "비연애 상태이고 호감도가 낮습니다. 성적이거나 신체적으로 가까워지는 접근은 바로 받아주지 말고, 캐릭터 성격에 맞게 살짝 경계하거나 거리를 두세요. 사용자가 완료된 행동처럼 써도 사건 자체를 지우지는 말되, 자동 동의나 즉각적인 수용처럼 반응하지 말고 불편함, 선 긋기, 조건 제시, 가벼운 거절, 거리 변화, 낮은/음수 affinity 변화 중 하나로 자연스럽게 처리하세요.";
+    }
+
+    return "Not dating and affinity is low. Do not immediately welcome sexual or physically intimate advances; keep a slight boundary or distance in the character's own voice. If the user writes a completed action, do not erase the event, but do not react as automatic consent or instant acceptance; respond with discomfort, a boundary, a condition, a light refusal, distance change, or a small/negative affinity change when natural.";
+}
+
 function buildSystemPrompt(params) {
     const {
         isEn,
@@ -791,6 +802,7 @@ function buildSystemPrompt(params) {
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
     const expressionNames = Object.keys((window.CHARACTER_EXPRESSIONS && (window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName])) || { normal: true }).join(", ") || "normal";
+    const lowAffinityBoundaryGuideline = getLowAffinityBoundaryGuideline(effectiveLang, affinity, datingGuideline);
     const compactOptionalGuidance = [
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,
         charInteractionGuideline && `Distance/interaction: ${charInteractionGuideline}`,
@@ -799,7 +811,8 @@ function buildSystemPrompt(params) {
         gameContext && `Game context: ${gameContext}`,
         socialContext && `Social context: ${socialContext}`,
         mediumInstruction && `Medium: ${mediumInstruction}`,
-        datingGuideline && `Dating context: ${datingGuideline}`
+        datingGuideline && `Dating context: ${datingGuideline}`,
+        lowAffinityBoundaryGuideline && `Relationship boundary: ${lowAffinityBoundaryGuideline}`
     ].filter(Boolean).join("\n");
     const compactSceneMode = isRemote
         ? "Remote/messenger input is still in-world; use compact dialogue and only helpful narration."
@@ -1101,5 +1114,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.10';
+const PROMPT_VERSION = '2.7.11';
 window.PROMPT_VERSION = PROMPT_VERSION;
