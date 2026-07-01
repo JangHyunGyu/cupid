@@ -199,14 +199,46 @@ function buildCupidActionFollowThroughGuard(lang = 'ko') {
         : `\n\n[Action Follow-through]\nIf the latest player beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through the current character's action, refusal, condition, distance change, hand/body position change, or closure. If the character begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply.`;
 }
 
-function buildCupidLowAffinityBoundaryPatch(lang = 'ko', affinity = 0, isDating = false) {
+function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, isDating = false) {
     const score = Number(affinity);
-    if (isDating || !Number.isFinite(score) || score >= 30) return '';
+    if (!Number.isFinite(score)) return '';
+
+    const tier = score < 0
+        ? 'negative'
+        : score < 30
+            ? 'low'
+            : score < 60
+                ? 'warming'
+                : score < 80
+                    ? 'close'
+                    : 'high';
 
     const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
-    return isKo
-        ? `\n\n[낮은 호감도 거리감]\n현재 캐릭터는 사용자와 연애 중이 아니고 호감도도 낮습니다. 성적이거나 신체적으로 가까워지는 최신 접근은 곧바로 받아주지 말고, 캐릭터 성격에 맞게 살짝 경계하거나 거리를 두세요. 사용자가 완료된 행동처럼 썼다면 사건 자체는 지우지 않되, 자동 동의나 즉각적인 수용처럼 반응하지 말고 불편함, 선 긋기, 조건 제시, 가벼운 거절, 거리 변화, 낮은/음수 affinity 변화 중 하나로 자연스럽게 처리하세요.`
-        : `\n\n[Low-affinity distance]\nThe current character is not dating the user and affinity is low. Do not immediately welcome the latest sexual or physically intimate approach; keep a slight boundary or distance in the character's own voice. If the user wrote a completed action, do not erase the event, but do not react as automatic consent or instant acceptance. Respond naturally with discomfort, a boundary, a condition, a light refusal, distance change, or a small/negative affinity change.`;
+    if (isKo) {
+        const datingNote = isDating
+            ? '연애 중이어도 현재 호감도 단계가 친밀도 강도를 정합니다.'
+            : '비연애 상태에서는 현재 호감도 단계가 친밀도 허용 범위를 정합니다.';
+        const tierText = {
+            negative: '호감도가 음수입니다. 성적이거나 신체적으로 가까워지는 최신 접근은 반감, 불편함, 선 긋기, 거리두기, 낮은/음수 affinity 변화로 처리하세요.',
+            low: '호감도 0~29 구간입니다. 시작은 중립에 가깝습니다. 성적이거나 신체적으로 가까워지는 최신 접근은 곧바로 받아주지 말고, 캐릭터 성격에 맞게 살짝 경계하거나 가볍게 거리를 두세요.',
+            warming: '호감도 30~59 구간입니다. 장난, 호기심, 가벼운 설렘은 가능하지만 깊은 성적 수용으로 바로 뛰지 말고 조건·속도 조절·부끄러움·확인하는 태도를 섞으세요.',
+            close: '호감도 60~79 구간입니다. 친밀한 접근에 더 따뜻하고 수용적으로 반응해도 되지만, 캐릭터 성격과 상황에 맞춰 서서히 높이세요.',
+            high: '호감도 80 이상 구간입니다. 성적·신체적 친밀감에 가장 적극적이고 따뜻하게 반응할 수 있으며, 캐릭터가 원하면 먼저 다가가는 주도성도 허용됩니다.'
+        }[tier];
+        return `\n\n[호감도별 친밀감 단계]\n${datingNote} 성적·신체적 친밀감 반응은 호감도가 오를수록 분명히 우상향해야 하며, 낮은 단계에서 높은 단계의 즉각적인 수용을 앞당기지 마세요. ${tierText} 사용자가 완료된 행동처럼 썼다면 사건 자체는 지우지 말되, 자동 동의나 즉각적인 수용 대신 현재 단계에 맞는 감정, 거리, 조건, 거절, 수용, affinity 변화를 고르세요. 현재 단계가 경계/거절이면 성적 장면으로 확대하지 말고 그 경계와 후속 반응을 서술하세요.`;
+    }
+
+    const datingNote = isDating
+        ? 'Even while dating, current affinity still controls the intensity of intimacy.'
+        : 'When not dating, current affinity controls how much intimacy is welcome.';
+    const tierText = {
+        negative: 'Negative affinity: the latest sexual or physically intimate approach should create aversion, discomfort, a boundary, distance, or a low/negative affinity change.',
+        low: 'Affinity 0-29: the relationship is near neutral. Do not immediately welcome the latest sexual or physically intimate approach; keep a slight boundary or distance in the character voice.',
+        warming: 'Affinity 30-59: teasing, curiosity, and mild attraction are possible, but do not jump straight to deep sexual acceptance; use conditions, slower pacing, embarrassment, or checking behavior.',
+        close: 'Affinity 60-79: respond more warmly and receptively to intimate approaches, while still matching character and situation.',
+        high: 'Affinity 80+: the character may respond most warmly and actively to sexual or physical intimacy, including taking initiative when it fits.'
+    }[tier];
+    return `\n\n[Affinity intimacy progression]\n${datingNote} Sexual/physical intimacy reactions must clearly trend upward as affinity rises; do not give high-affinity instant acceptance at low affinity. ${tierText} If the user wrote a completed action, do not erase the event, but choose emotion, distance, condition, refusal, acceptance, or affinity change according to the current tier. If the current tier chooses boundary/refusal, do not escalate it into a sexual scene; narrate the boundary and consequence instead.`;
 }
 
 function cupidSanitizeLatestUserText(text) {
@@ -952,8 +984,8 @@ class FreeTalkSystem {
                 ? this.stateManager.getAffinity(charKey)
                 : (this.stateManager.stats?.[charKey]?.affinity || 0);
             const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
-            const _lowAffinityBoundaryPatch = buildCupidLowAffinityBoundaryPatch(_lang, _currentAffinity, _isDatingCurrentForBoundary);
-            const _runtimePromptPatch = `${_outsideCueOverride}${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_actionFollowThroughGuard}${_lowAffinityBoundaryPatch}${_recentRepetitionGuard}`;
+            const _affinityIntimacyProgressionPatch = buildCupidAffinityIntimacyProgressionPatch(_lang, _currentAffinity, _isDatingCurrentForBoundary);
+            const _runtimePromptPatch = `${_outsideCueOverride}${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_actionFollowThroughGuard}${_affinityIntimacyProgressionPatch}${_recentRepetitionGuard}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
