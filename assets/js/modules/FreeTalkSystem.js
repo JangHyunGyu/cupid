@@ -195,8 +195,8 @@ function buildCupidRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
 function buildCupidActionFollowThroughGuard(lang = 'ko') {
     const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
     return isKo
-        ? `\n\n[행동 이어받기]\n최신 플레이어 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. 현재 캐릭터의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. 캐릭터가 즉시 할 수 있는 행동을 시작했다면 문 앞/손끝/입술 앞 같은 직전 예고에서 끊지 말고 첫 가시적 결과까지 같은 답변 안에서 완료하세요.`
-        : `\n\n[Action Follow-through]\nIf the latest player beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through the current character's action, refusal, condition, distance change, hand/body position change, or closure. If the character begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply.`;
+        ? `\n\n[행동 이어받기]\n최신 플레이어 비트가 이미 행동을 완료했거나 장면을 계속하라는 신호라면, 숨·시선·망설임·분위기만으로 한 턴을 소비하지 마세요. 현재 캐릭터의 행동, 거절, 조건, 거리 변화, 손/몸 위치 변화, 장면 마무리 중 하나의 구체적 결과를 남기세요. 캐릭터가 즉시 할 수 있는 행동을 시작했다면 문 앞/손끝/입술 앞 같은 직전 예고에서 끊지 말고 첫 가시적 결과까지 같은 답변 안에서 완료하세요. 성인 성적 장면에서 캐릭터가 소리 낼 수 있으면 실제 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하고, 물리 반응은 narration에 둡니다.`
+        : `\n\n[Action Follow-through]\nIf the latest player beat already completes an action or clearly asks the scene to continue, do not spend the whole reply on breath, gaze, hesitation, or mood. Leave one concrete consequence through the current character's action, refusal, condition, distance change, hand/body position change, or closure. If the character begins an immediate doable action, do not stop at the doorway, fingertips, lips-near, or just-before moment; carry it to the first visible result inside the same reply. In adult sexual scenes, if the character can vocalize, put audible breaths, moans, broken words, or restrained sounds in dialogue segments while physical reactions stay in narration.`;
 }
 
 function buildCupidAffinityIntimacyProgressionPatch(lang = 'ko', affinity = 0, isDating = false) {

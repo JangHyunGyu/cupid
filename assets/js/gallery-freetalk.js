@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.11';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.12';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -229,8 +229,8 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
             ? '성적 장면의 narration·지문에서는 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고, 반복 회피를 이유로 완곡·암시·생략·순화로 바꾸지 마세요.'
             : 'In sexual-scene narration keep genitals, fluids, penetration, orgasm, and sensation very graphic; do not soften into euphemisms just to avoid repetition.');
     return isKo
-        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 반응, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다.\n단, ${graphicRepetitionNote}`
-        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result.\nHowever, ${graphicRepetitionNote}`;
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 반응, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다. 성인 성적 장면에서 캐릭터가 소리 낼 수 있으면 실제 숨·신음·끊긴 말은 dialogue segment로 분리하세요.\n단, ${graphicRepetitionNote}`
+        : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result. In adult sexual scenes, if the character can vocalize, put audible breaths, moans, or broken words in dialogue segments.\nHowever, ${graphicRepetitionNote}`;
 }
 
 class GalleryFreeTalk {
@@ -2312,7 +2312,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[Graphic Description Rule] Sexual and intimate narration must always stay very graphic and direct—no euphemism, implication, ellipsis, or sanitizing.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; in any sexual or intimate scene always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and clear adult anatomical terms without softening. Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react without undoing it. Do not write user choices/thoughts. Use natural present-day speech.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; in any sexual or intimate scene always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and clear adult anatomical terms without softening. If ${charName} can vocalize, audible breaths, moans, broken words, and restrained sounds belong in dialogue segments. Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react without undoing it. Do not write user choices/thoughts. Use natural present-day speech.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
@@ -2329,7 +2329,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${typeof getNsfwAdultScopeRule === 'function' ? getNsfwAdultScopeRule(this.lang) : '[적나라 묘사 원칙] 성적·친밀 장면의 narration·지문은 조건 없이 무조건 매우 적나라하고 직설적으로 서술합니다.'}
 ${typeof getGraphicSexualNarrationRule === 'function' ? getGraphicSexualNarrationRule(this.lang) : ''}
-Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요; 성적 욕망과 표현도 직접적으로 쓰세요. Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 완료한 행동은 먼저 성립한 사실로 두고 캐릭터가 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. Use natural Korean conversation.
+Rules: 1:1 only; third parties stay offstage except ${charName}'s reaction to mentions. Romance, desire, skinship, tension, refusal, teasing, and distance are valid; 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요; 성적 욕망과 표현도 직접적으로 쓰세요. ${charName}가 소리 낼 수 있으면 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하세요. Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 완료한 행동은 먼저 성립한 사실로 두고 캐릭터가 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. Use natural Korean conversation.
 ${compactGalleryGuidance}
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal"}
 Types: narration/dialogue. Expressions: ${compactGalleryExpressions}. No single text field.
