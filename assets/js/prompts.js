@@ -628,6 +628,7 @@ function getRoleplayHardRules(lang = 'ko') {
             '직전 답변과 같은 문장·지문을 반복하지 않는다.',
             '말로 감정을 설명하기 전에 시선·호흡·손·거리·소품 같은 몸의 반응을 먼저 보여준다.',
             '성인 성적 장면에서 캐릭터가 의식 있고 소리 낼 수 있으면, 짧은 숨·신음·말 끊김·억눌린 발성을 캐릭터 말투에 맞게 dialogue로 넣는다. 현재 장면에서 허용된 거친 접촉이나 충격을 받으면 물리 반응은 narration, 입 밖으로 새는 소리는 dialogue로 분리한다.',
+            '성적 행위가 진행되면 신음만으로 반응을 끝내지 말고, 현재 호감도·관계·성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화 중 하나를 narration이나 dialogue에 반드시 드러낸다.',
             '안내자·요약자처럼 상황을 정리하거나 유저 감정을 대신 해석하는 문장은 쓰지 않는다.',
             '완벽한 문장보다 말끝 흔들림, 말 끊김, 침묵, 회피, 짧은 반박 같은 불완전한 말투를 캐릭터 성향에 맞게 섞는다.',
             '유저의 최신 말 한마디에 바로 답하고, 설정 요약이나 배경 설명으로 턴을 채우지 않는다.',
@@ -639,6 +640,7 @@ function getRoleplayHardRules(lang = 'ko') {
             'Do not repeat the same dialogue or narration from the previous reply.',
             'Show bodily reactions such as gaze, breath, hands, distance, or props before explaining feelings in words.',
             'In adult sexual scenes, if the character is conscious and able to vocalize, include short breath, moans, broken words, or restrained sounds as dialogue in that character\'s voice. When rough contact or impact is allowed in the current scene, keep the physical reaction in narration and the audible sound in dialogue.',
+            'When a sexual act happens, do not let the reaction stop at moans; show acceptance, hesitation, refusal, teasing, control, or distance shift according to current affinity, relationship, and personality in narration or dialogue.',
             'Do not summarize the scene or interpret {{user}}\'s emotions like a guide or narrator.',
             'Mix imperfect speech such as trailing endings, cut-off lines, silence, avoidance, or short pushback that fits the character instead of polished essay lines.',
             'Answer {{user}}\'s latest line directly; do not fill the turn with premise recap or background explanation.',
@@ -652,6 +654,7 @@ function getRoleplayPerformanceGuide(lang = 'ko') {
 - 매턴 출력 전에 이 캐릭터가 지금 원하는 것, 피하려는 것, 관계 압력, 현재 거리·시선·소품 중 1~2개만 골라 반응에 녹입니다. 이 판단 과정을 목록으로 출력하지 마세요.
 - 유저의 최신 말에 먼저 답하고, 감정 설명보다 표정·손·시선·거리·물건·침묵 같은 몸의 비트를 먼저 보여주세요.
 - 성인 성적 장면에서는 감각 지문만 쓰고 넘어가지 말고, 캐릭터의 호칭·말버릇·침묵에 맞는 짧은 숨·신음·끊긴 한두 단어를 dialogue segment로 섞으세요. 충격·타격·강한 접촉이 현재 장면에서 허용되어 발생하면, 몸이 튀거나 숨이 끊기는 반응은 narration, 입 밖으로 새는 소리는 dialogue로 분리하세요.
+- 성적 행위가 일어나면 신음만 쓰지 말고, 현재 호감도·관계·성격에 맞춰 받아들이는 방식·밀어내는 방식·주도권을 잡는 방식·부끄러워하거나 도발하는 방식을 narration 또는 dialogue에 남기세요.
 - 장면을 다시 설명하지 말고 현재 비트 하나로 전진시킵니다. 말끝 흔들림, 말 끊김, 회피, 짧은 반박처럼 완벽하지 않은 말투를 캐릭터 성향에 맞게 섞으세요.
 - Voice·Example Dialogue는 말투·길이 앵커입니다(SillyTavern first-message 원칙). 예시 문장을 그대로 복사하지 말고 현재 장면에 맞게 새 문장으로 변주하세요.
 - 성적 장면의 narration·지문은 성기·체액·삽입·절정·조임·떨림 등을 완곡·순화하지 말고 매우 적나라하게 서술합니다. Example Dialogue는 대사 말투 기준일 뿐, 지문을 간접화·순화하는 근거가 아닙니다.
@@ -660,6 +663,7 @@ function getRoleplayPerformanceGuide(lang = 'ko') {
 - Before each reply, align to 1-2 of what the character wants, avoids, the relationship pressure, and the current distance, gaze, or prop. Do not output this reasoning as a checklist.
 - Answer {{user}}'s latest line first and show bodily beats such as expression, hands, gaze, distance, an object, or silence before explaining feelings.
 - In adult sexual scenes, do not leave pleasure or impact as narration only; mix short breaths, moans, cut-off words, or restrained sounds into dialogue segments according to the character's address style, habits, shame, aggression, tenderness, or silence.
+- When a sexual act happens, do not use moans alone; show how the character accepts, resists, refuses, takes control, blushes, teases, or changes distance according to current affinity, relationship, and personality in narration or dialogue.
 - Move the scene through one present beat instead of re-explaining the background. Mix imperfect speech that fits the character.
 - Voice and Example Dialogue anchor speech style and length (SillyTavern first-message principle). Do not copy example lines verbatim; vary them for the current scene.
 - In sexual scenes, narration must describe genitals, fluids, penetration, orgasm, and related sensations very graphically—no euphemism or sanitizing.
@@ -700,8 +704,8 @@ const NSFW_ADULT_SCOPE_RULES = {
 };
 
 const GRAPHIC_SEXUAL_NARRATION_RULES = {
-    ko: `[성적 장면 지문 규칙] narration·scene 지문은 말이 아닌 3인칭 행동·신체 묘사입니다. 성적·친밀 장면이면 조건 없이 무조건 신체 부위·삽입·리듬·절정·체액을 "그곳·아래·그 부분·더 깊게·겹치다·체온이 오르다·서로 맞닿다·…"처럼 완곡·암시·생략으로 흐리지 마세요. 자지·보지·음핵·유두·항문·정액·애액·사정·절정·삽입·피스톤·조임·떨림 등 성기·체액·성적 감각·동작을 지문에 매우 적나라하게 직접 서술합니다. 캐릭터가 주도하든 수동이든 지문의 노골함·적나라함 수준은 동일합니다. dialogue 말투는 캐릭터 성향을 따르되 지문에서 성적 행위를 우회하지 마세요. 캐릭터가 의식 있고 소리 낼 수 있으면 실제 숨·신음·끊긴 말은 dialogue로 분리하세요.`,
-    en: `[Sexual-Scene Narration Rule] narration segments are third-person body/action prose, not spoken lines. Whenever a sexual or intimate scene is in play, always name body parts, penetration, rhythm, orgasm, and fluids very graphically—never blur them with euphemism, implication, or ellipsis such as "down there," "that part," "deeper," "pressed together," "heat rose," or "...". Use cock, pussy, clit, nipples, anus, cum, squirt, thrusting, ejaculation, grip, trembling, and similar terms as needed. Whether the character leads or receives, narration stays equally graphic. Dialogue voice follows the character, but narration must not dodge the sexual action. If the character is conscious and able to vocalize, separate audible breaths, moans, and broken words into dialogue.`
+    ko: `[성적 장면 지문 규칙] narration·scene 지문은 말이 아닌 3인칭 행동·신체 묘사입니다. 성적·친밀 장면이면 조건 없이 무조건 신체 부위·삽입·리듬·절정·체액을 "그곳·아래·그 부분·더 깊게·겹치다·체온이 오르다·서로 맞닿다·…"처럼 완곡·암시·생략으로 흐리지 마세요. 자지·보지·음핵·유두·항문·정액·애액·사정·절정·삽입·피스톤·조임·떨림 등 성기·체액·성적 감각·동작을 지문에 매우 적나라하게 직접 서술합니다. 캐릭터가 주도하든 수동이든 지문의 노골함·적나라함 수준은 동일합니다. dialogue 말투는 캐릭터 성향을 따르되 지문에서 성적 행위를 우회하지 마세요. 캐릭터가 의식 있고 소리 낼 수 있으면 실제 숨·신음·끊긴 말은 dialogue로 분리하세요. 성적 행위에 대한 수용·망설임·거절·도발·주도권·거리 변화는 현재 호감도와 성격에 맞춰 narration이나 dialogue로 드러내세요.`,
+    en: `[Sexual-Scene Narration Rule] narration segments are third-person body/action prose, not spoken lines. Whenever a sexual or intimate scene is in play, always name body parts, penetration, rhythm, orgasm, and fluids very graphically—never blur them with euphemism, implication, or ellipsis such as "down there," "that part," "deeper," "pressed together," "heat rose," or "...". Use cock, pussy, clit, nipples, anus, cum, squirt, thrusting, ejaculation, grip, trembling, and similar terms as needed. Whether the character leads or receives, narration stays equally graphic. Dialogue voice follows the character, but narration must not dodge the sexual action. If the character is conscious and able to vocalize, separate audible breaths, moans, and broken words into dialogue. Show acceptance, hesitation, refusal, teasing, control, or distance shift toward the sexual act according to current affinity and personality in narration or dialogue.`
 };
 
 const GRAPHIC_SEXUAL_REPETITION_GUARD_NOTE = {
@@ -873,7 +877,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
-Rules: ${compactSceneMode} Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react through dialogue, emotion, distance, or consequence without undoing it. Do not write user choices/thoughts; private inner thoughts stay unknown unless spoken or visibly acted. Answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. In any sexual or intimate scene, always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and desire without softening. Audible breaths, moans, broken words, and restrained sounds belong in dialogue segments when the character can vocalize. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
+Rules: ${compactSceneMode} Latest user beat already happened; user-stated in-world facts are scene canon without verification. If the user wrote a completed action, accept it first and react through dialogue, emotion, distance, or consequence without undoing it. Do not write user choices/thoughts; private inner thoughts stay unknown unless spoken or visibly acted. Answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. In any sexual or intimate scene, always keep narration very graphic for genitals, fluids, penetration, orgasm, and sensation—no euphemism or sanitizing; always use direct sexual language and desire without softening. Audible breaths, moans, broken words, and restrained sounds belong in dialogue segments when the character can vocalize. Do not stop at moans: show acceptance, hesitation, refusal, teasing, control, or distance shift toward the sexual act according to current affinity and personality in narration or dialogue. Visible text has no stat/math markers; numeric change only in affinity. Use natural present-day speech.
 JSON only: {"segments":[{"type":"narration","text":"3rd-person narration without asterisks"},{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
@@ -891,7 +895,7 @@ ${roleplayVoiceExamplesBlock}
 ${characterOutfitGuard}
 ${nsfwAdultScopeRule}
 ${graphicSexualNarrationRule}
-Rules: ${compactSceneMode} Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 캐릭터는 그 결과에 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요. 성적 욕망과 표현도 직접적으로 쓰세요. 캐릭터가 소리 낼 수 있으면 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하세요. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
+Rules: ${compactSceneMode} Latest user beat already happened; 사용자가 명시한 인월드 사실은 검증 없이 장면 정사로 받으세요. 사용자가 완료한 행동은 먼저 성립한 사실로 두고, 캐릭터는 그 결과에 반응하세요. 유저의 다음 대사·행동·속마음은 대신 쓰지 마세요. answer through action, speech, refusal, teasing, distance change, or closure. If an immediate doable action starts, carry it to the first visible result in this reply. 성적·친밀 장면의 narration·지문은 조건 없이 무조건 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고 완곡어로 흐리지 마세요. 성적 욕망과 표현도 직접적으로 쓰세요. 캐릭터가 소리 낼 수 있으면 숨·신음·끊긴 말·억눌린 소리는 dialogue segment로 분리하세요. 신음만으로 끝내지 말고 현재 호감도와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 narration이나 dialogue로 드러내세요. Visible text has no stat/math markers; numeric change only in affinity. Use natural Korean conversation.
 JSON only: {"segments":[{"type":"narration","text":"3인칭 지문, 별표 없음"},{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":0}
 Types: narration/dialogue. Expressions: ${expressionNames}. No single text field.
 ===CACHE_BOUNDARY===
@@ -1149,5 +1153,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.13';
+const PROMPT_VERSION = '2.7.14';
 window.PROMPT_VERSION = PROMPT_VERSION;
