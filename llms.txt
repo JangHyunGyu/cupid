@@ -22,8 +22,8 @@ Cupid is a web-based romantic visual novel game set in a Korean high school. Fol
 
 ## Links
 - Play now: https://cupid.archerlab.dev
-- English: https://cupid.archerlab.dev/index-en.html
-- Japanese: https://cupid.archerlab.dev/index-ja.html
+- English: https://cupid.archerlab.dev/index-en
+- Japanese: https://cupid.archerlab.dev/index-ja
 - Developer: https://archerlab.dev
 
 ## Genre

@@ -5,12 +5,25 @@ const path = require('path');
 
 const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
+const LASTMOD = '2026-07-06';
+
+function siteUrl(pathname) {
+  return `${SITE}${pathname}`;
+}
+
+function seoPath(slug) {
+  return `/seo/${slug}`;
+}
+
+function seoUrl(slug) {
+  return siteUrl(seoPath(slug));
+}
 
 // 언어별 cupid 메인 경로
 const HOME = {
-  ko: '/', en: '/index-en.html', ja: '/index-ja.html',
-  es: '/index-es.html', fr: '/index-fr.html', de: '/index-de.html',
-  pt: '/index-pt.html'
+  ko: '/', en: '/index-en', ja: '/index-ja',
+  es: '/index-es', fr: '/index-fr', de: '/index-de',
+  pt: '/index-pt'
 };
 
 // 언어별 공통 카피 (한 번만 번역)
@@ -217,6 +230,13 @@ const C = {
 const PAGES = {
   ko: [
     {
+      slug: 'muryo-misinsi-game',
+      h1: '무료 미연시 게임 — 웹에서 바로 플레이하는 Cupid',
+      title: '무료 미연시 게임 | 웹 미연시 Cupid 바로 플레이',
+      meta: '무료 미연시 게임을 다운로드 없이 브라우저에서 바로 플레이하세요. 학원 로맨스 비주얼노벨 Cupid는 한국어 지원, 멀티 엔딩, PC·모바일 웹플레이를 제공합니다.',
+      intro: '"무료 미연시"나 "무료 미연시 게임"을 찾는다면 설치 파일을 받을 필요가 없습니다. Cupid는 브라우저에서 바로 시작하는 웹 미연시로, 5일간의 학원 로맨스와 선택지 기반 멀티 엔딩을 무료로 즐길 수 있습니다.'
+    },
+    {
       slug: 'muryo-yeonae-sim',
       h1: '무료 연애 시뮬레이션 게임 — 무설치 웹에서 바로',
       title: '무료 연애 시뮬레이션 게임 BEST | 무설치 브라우저 플레이 2026',
@@ -262,6 +282,20 @@ const PAGES = {
     }
   ],
   ja: [
+    {
+      slug: 'gakuen-renai-game-muryo-browser',
+      h1: '学園恋愛ゲーム 無料 ブラウザ — Cupidを今すぐプレイ',
+      title: '学園恋愛ゲーム 無料 ブラウザ | Cupidで遊べる恋愛VN',
+      meta: '無料の学園恋愛ゲームをブラウザでプレイ。Cupidはダウンロード不要、スマホ対応、5日間の学園ロマンスとマルチエンディングを楽しめる恋愛ビジュアルノベルです。',
+      intro: '「学園恋愛ゲーム 無料 ブラウザ」で探している方へ。Cupidはインストールなしで始められる学園ロマンスVNです。転校初日から5日間、会話と選択肢で関係が変わり、複数のエンディングへ分岐します。'
+    },
+    {
+      slug: 'gakuen-renai-game-muryo-download-nashi',
+      h1: '学園恋愛ゲーム 無料ダウンロードなし — Cupid',
+      title: '学園恋愛ゲーム 無料ダウンロードなし | ブラウザで遊べるCupid',
+      meta: '無料ダウンロードなしで遊べる学園恋愛ゲーム。Cupidは登録不要、スマホ対応、ブラウザだけで最後まで遊べるマルチエンディング恋愛VNです。',
+      intro: '「学園恋愛ゲーム 無料ダウンロードなし」を探しているなら、Cupidはそのままブラウザで始められます。アプリもインストーラーも不要。学校を舞台にした5日間の恋愛ストーリーを無料でプレイできます。'
+    },
     {
       slug: 'browser-otome-muryo',
       h1: 'ブラウザ 乙女ゲーム 無料 — インストール不要',
@@ -418,6 +452,9 @@ footer{margin-top:48px;padding-top:20px;border-top:1px solid #fce4ec;text-align:
 .langs{margin-top:14px;font-size:13px}
 .langs a{color:#ad1457;margin:0 6px;text-decoration:none}
 .langs a:hover{text-decoration:underline}
+.related{margin:22px 0 6px;text-align:center;font-size:13px;color:#777}
+.related a{color:#ad1457;margin:0 7px;text-decoration:none}
+.related a:hover{text-decoration:underline}
 @media(max-width:520px){h1{font-size:23px}h2{font-size:18px}.intro{font-size:15px}.cta{font-size:16px;padding:12px 26px}}
 `;
 
@@ -427,19 +464,24 @@ function escapeHTML(s) {
 
 function renderPage(lang, page) {
   const c = C[lang];
-  const url = `${SITE}/seo/${page.slug}.html`;
+  const url = seoUrl(page.slug);
   const homeUrl = HOME[lang];
 
   // hreflang: 다른 언어의 첫 번째 페이지로 alt
   const altLinks = Object.keys(PAGES).map(L => {
     const altSlug = PAGES[L][0].slug; // 다른 언어는 첫 키워드 페이지로
-    return `<link rel="alternate" hreflang="${L}" href="${SITE}/seo/${altSlug}.html">`;
-  }).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${SITE}/seo/${PAGES.en[0].slug}.html">`;
+    return `<link rel="alternate" hreflang="${L}" href="${seoUrl(altSlug)}">`;
+  }).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${seoUrl(PAGES.en[0].slug)}">`;
 
   const otherLangs = Object.keys(PAGES).filter(L => L !== lang).map(L => {
     const altSlug = PAGES[L][0].slug;
-    return `<a href="/seo/${altSlug}.html" hreflang="${L}">${L.toUpperCase()}</a>`;
-  }).join(' · ');
+    return `<a href="${seoPath(altSlug)}" hreflang="${L}">${L.toUpperCase()}</a>`;
+  }).join(' | ');
+
+  const relatedLinks = PAGES[lang]
+    .filter(p => p.slug !== page.slug)
+    .map(p => `<a href="${seoPath(p.slug)}">${escapeHTML(p.title.split('|')[0].trim())}</a>`)
+    .join(' | ');
 
   // FAQ JSON-LD
   const faqLd = {
@@ -477,6 +519,8 @@ function renderPage(lang, page) {
     </header>
 
     <p class="intro">${escapeHTML(page.intro)}</p>
+
+    ${relatedLinks ? `<nav class="related" aria-label="Related Cupid search pages">${relatedLinks}</nav>` : ''}
 
     <div class="cta-box">
       <a class="cta" href="${homeUrl}">${escapeHTML(c.cta)}</a>
@@ -525,7 +569,7 @@ for (const lang of Object.keys(PAGES)) {
   for (const page of PAGES[lang]) {
     const html = renderPage(lang, page);
     fs.writeFileSync(path.join(OUT, `${page.slug}.html`), html, 'utf8');
-    allUrls.push({ url: `${SITE}/seo/${page.slug}.html`, lang, slug: page.slug });
+    allUrls.push({ url: seoUrl(page.slug), lang, slug: page.slug });
     count++;
   }
 }
@@ -539,12 +583,13 @@ const sitemapFrag = allUrls.map(u => {
   let altLinks = '';
   if (isFirst) {
     altLinks = Object.keys(PAGES).map(L =>
-      `        <xhtml:link rel="alternate" hreflang="${L}" href="${SITE}/seo/${PAGES[L][0].slug}.html"/>`
-    ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/seo/${PAGES.en[0].slug}.html"/>`;
+      `        <xhtml:link rel="alternate" hreflang="${L}" href="${seoUrl(PAGES[L][0].slug)}"/>`
+    ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${seoUrl(PAGES.en[0].slug)}"/>`;
   }
   return `    <url>
         <loc>${u.url}</loc>
 ${altLinks}
+        <lastmod>${LASTMOD}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>`;
