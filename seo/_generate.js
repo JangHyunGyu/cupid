@@ -7,6 +7,17 @@ const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
 const LASTMOD = '2026-07-07';
 const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
+const GA_MEASUREMENT_ID = 'G-05YM7K3VX9';
+const GA_LINKER_DOMAINS = [
+  'latindance.kr',
+  'archerlab.dev',
+  'itstory.archerlab.dev',
+  'chatbot.archerlab.dev',
+  'walkwithme.archerlab.dev',
+  'golf.archerlab.dev',
+  'cupid.archerlab.dev',
+  'harem.archerlab.dev'
+];
 const LOCALES = {
   ko: 'ko_KR',
   en: 'en_US',
@@ -545,6 +556,20 @@ function getDefaultAlternate(entries) {
   return entries.find(entry => entry.lang === 'en') || entries.find(entry => entry.lang === 'ko') || entries[0];
 }
 
+function renderGoogleAnalytics() {
+  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_MEASUREMENT_ID}', {
+      linker: {
+        domains: ${JSON.stringify(GA_LINKER_DOMAINS)}
+      }
+    });
+  </script>`;
+}
+
 function renderPage(lang, page) {
   const c = C[lang];
   const url = seoUrl(page.slug);
@@ -652,6 +677,7 @@ function renderPage(lang, page) {
   <meta name="twitter:description" content="${escapeHTML(page.meta)}">
   <meta name="twitter:image" content="${SEO_IMAGE}">
   <link rel="icon" href="/favicon.ico">
+  ${renderGoogleAnalytics()}
   <style>${CSS}</style>
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
