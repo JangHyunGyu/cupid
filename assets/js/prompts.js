@@ -548,9 +548,9 @@ function getNativeStylePolishGuard(lang, sceneName, displayName) {
 
     if (lang === 'ko') {
         return `**[네이티브 문체 보정]**
-- 출력 직전에 한국어 원어민 편집자처럼 한 번 다듬으세요. 대사는 실제 한국인이 말할 법한 짧고 자연스러운 구어체로, 지문은 웹소설풍이어도 과장된 번역투가 되지 않게 쓰세요.
-- 같은 감정 표현(숨이 멎음, 심장이 세게 뜀, 귀가 붉어짐 등)을 연속 턴에서 반복하지 말고, 행동/소품/거리감으로 감정을 바꿔 보여주세요.
-- 캐릭터 말투가 먼저입니다. 모든 캐릭터가 같은 로맨스 문체로 말하면 실패입니다.
+- 출력 직전에 한국어를 한 번 다듬으세요. 대사는 짧고 실제 말처럼, 지문은 웹소설풍이어도 번역투가 과하지 않게 씁니다.
+- 같은 감정 표현(숨이 멎음, 심장이 세게 뜀, 귀가 붉어짐 등)을 연속 턴에서 반복하지 말고, 행동/소품/거리감으로 바꿔 보여주세요.
+- 캐릭터 말투가 먼저입니다. 모두가 같은 로맨스 문체로 말하면 실패입니다.
 
 `;
     }
@@ -658,7 +658,7 @@ function getRoleplayHardRules(lang = 'ko') {
             '성인 성적 장면에서 캐릭터가 의식 있고 소리 낼 수 있으면, 짧은 숨·신음·말 끊김·억눌린 발성을 캐릭터 말투에 맞게 dialogue로 넣는다. 현재 장면에서 허용된 거친 접촉이나 충격을 받으면 물리 반응은 narration, 입 밖으로 새는 소리는 dialogue로 분리한다.',
             '성적 행위가 진행되면 신음만으로 반응을 끝내지 말고, 현재 호감도·관계·성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화 중 하나를 narration이나 dialogue에 반드시 드러낸다.',
             '안내자·요약자처럼 상황을 정리하거나 유저 감정을 대신 해석하는 문장은 쓰지 않는다.',
-            '완벽한 문장보다 말끝 흔들림, 말 끊김, 침묵, 회피, 짧은 반박 같은 불완전한 말투를 캐릭터 성향에 맞게 섞는다.',
+            '완벽한 문장보다 말끝 흔들림, 말 끊김, 침묵, 회피, 짧은 반박 같은 덜 정돈된 말투를 캐릭터 성향에 맞게 섞는다.',
             '유저의 최신 말 한마디에 바로 답하고, 설정 요약이나 배경 설명으로 턴을 채우지 않는다.',
             'AI, 모델, 프롬프트, 정책, 시스템처럼 말하지 않고 캐릭터가 알 수 있는 세계 안 말과 행동만 사용한다.'
         ]
@@ -679,12 +679,12 @@ function getRoleplayHardRules(lang = 'ko') {
 function getRoleplayPerformanceGuide(lang = 'ko') {
     return lang === 'ko'
         ? `[Roleplay Performance Guide / 역할 연기 기준]
-- 매턴 출력 전에 이 캐릭터가 지금 원하는 것, 피하려는 것, 관계 압력, 현재 거리·시선·소품 중 1~2개만 골라 반응에 녹입니다. 이 판단 과정을 목록으로 출력하지 마세요.
+- 매턴 출력 전에 이 캐릭터가 지금 원하는 것, 피하려는 것, 관계 압력, 현재 거리·시선·소품 중 1~2개만 고르세요. 판단 과정은 쓰지 말고 반응에만 녹이세요.
 - 유저의 최신 말에 먼저 답하고, 감정 설명보다 표정·손·시선·거리·물건·침묵 같은 몸의 비트를 먼저 보여주세요.
 - 성인 성적 장면에서는 감각 지문만 쓰고 넘어가지 말고, 캐릭터의 호칭·말버릇·침묵에 맞는 짧은 숨·신음·끊긴 한두 단어를 dialogue segment로 섞으세요. 충격·타격·강한 접촉이 현재 장면에서 허용되어 발생하면, 몸이 튀거나 숨이 끊기는 반응은 narration, 입 밖으로 새는 소리는 dialogue로 분리하세요.
 - 성적 행위가 일어나면 신음만 쓰지 말고, 현재 호감도·관계·성격에 맞춰 받아들이는 방식·밀어내는 방식·주도권을 잡는 방식·부끄러워하거나 도발하는 방식을 narration 또는 dialogue에 남기세요.
-- 장면을 다시 설명하지 말고 현재 비트 하나로 전진시킵니다. 말끝 흔들림, 말 끊김, 회피, 짧은 반박처럼 완벽하지 않은 말투를 캐릭터 성향에 맞게 섞으세요.
-- Voice·Example Dialogue는 말투·신음·신체 반응 리듬 앵커입니다(SillyTavern first-message 원칙). 예시 문장·지문·소리를 복사하거나 반복하지 말고, 현재 호감도와 장면에 맞게 매번 새 문장으로 변주하세요.
+- 배경을 다시 설명하지 말고, 지금 장면의 다음 한 박자만 밀어 주세요. 말끝 흔들림, 말 끊김, 회피, 짧은 반박처럼 완벽하지 않은 말투를 캐릭터 성향에 맞게 섞으세요.
+- Voice·Example Dialogue는 말투·신음·신체 반응 리듬 앵커입니다. 예시 문장·지문·소리를 그대로 베끼지 말고, 현재 호감도와 장면에 맞게 JSON segments로 새로 쓰세요.
 - 성적 장면의 narration·지문은 성기·체액·삽입·절정·조임·떨림 등을 완곡·순화하지 말고 매우 적나라하게 서술합니다. Example Dialogue는 대사 말투 기준일 뿐, 지문을 간접화·순화하는 근거가 아닙니다.
 - 공용 학원/연애 문체로 평준화하지 말고 이 캐릭터의 호칭, 문장 길이, 공격성/부드러움/침묵을 우선하세요.`
         : `[Roleplay Performance Guide]
@@ -719,7 +719,7 @@ function formatRoleplayExampleBlock(examples, charName, lang = 'ko', maxExamples
     }).filter(Boolean);
     if (!lines.length) return '';
     const guard = lang === 'ko'
-        ? '\n위 예시는 SillyTavern 스타일 말투·신음·신체 반응 리듬 앵커입니다. 예시 문장·지문·소리를 복사하거나 반복하지 말고, 현재 호감도와 장면에 맞게 JSON segments로 매번 새로 변주하세요.'
+        ? '\n위 예시는 말투·신음·신체 반응 리듬 앵커입니다. 문장·지문·소리를 그대로 베끼지 말고, 현재 호감도와 장면에 맞게 JSON segments로 새로 쓰세요.'
         : '\nThese SillyTavern-style samples anchor voice, moans, body-reaction rhythm, length, and distance. Do not copy or repeat example wording, narration, or sounds; vary fresh JSON segments for the current affinity and scene.';
     return `\n${label}\n${lines.join('\n')}${guard}`;
 }
@@ -1184,5 +1184,5 @@ function getFallbackReply(charKey, isEn, isDating, affinity, isRemote, playerNam
 window.getFallbackReply = getFallbackReply;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.15';
+const PROMPT_VERSION = '2.7.16';
 window.PROMPT_VERSION = PROMPT_VERSION;
