@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.61';
+        const version = '2.9.62';
     const LOAD_RETRIES = 3;
     const LOAD_TIMEOUT_MS = 15000;
 
@@ -188,6 +188,7 @@
         'loaders/i18n-loader.js',
 
         // AI 캐릭터 프롬프트
+        'example-dialogues-ko.js',
         'prompts.js',
 
         // 갤러리 모듈 (게임에서 진행도 저장에도 사용됨)
