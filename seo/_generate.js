@@ -1,11 +1,21 @@
-// SEO 랜딩 페이지 생성기 — 6 lang × 3 keyword = 18 pages
+// SEO 랜딩 페이지 생성기
 // 실행: node seo/_generate.js  (cupid 디렉토리에서)
 const fs = require('fs');
 const path = require('path');
 
 const SITE = 'https://cupid.archerlab.dev';
 const OUT = __dirname;
-const LASTMOD = '2026-07-06';
+const LASTMOD = '2026-07-07';
+const SEO_IMAGE = `${SITE}/cupid_link.png?v=2.9.6`;
+const LOCALES = {
+  ko: 'ko_KR',
+  en: 'en_US',
+  ja: 'ja_JP',
+  es: 'es_ES',
+  fr: 'fr_FR',
+  de: 'de_DE',
+  pt: 'pt_BR'
+};
 
 function siteUrl(pathname) {
   return `${SITE}${pathname}`;
@@ -231,10 +241,32 @@ const PAGES = {
   ko: [
     {
       slug: 'muryo-misinsi-game',
+      group: 'free-browser-romance',
       h1: '무료 미연시 게임 — 웹에서 바로 플레이하는 Cupid',
       title: '무료 미연시 게임 | 웹 미연시 Cupid 바로 플레이',
       meta: '무료 미연시 게임을 다운로드 없이 브라우저에서 바로 플레이하세요. 학원 로맨스 비주얼노벨 Cupid는 한국어 지원, 멀티 엔딩, PC·모바일 웹플레이를 제공합니다.',
       intro: '"무료 미연시"나 "무료 미연시 게임"을 찾는다면 설치 파일을 받을 필요가 없습니다. Cupid는 브라우저에서 바로 시작하는 웹 미연시로, 5일간의 학원 로맨스와 선택지 기반 멀티 엔딩을 무료로 즐길 수 있습니다.'
+    },
+    {
+      slug: 'web-misinsi',
+      h1: '웹 미연시 — 설치 없이 바로 즐기는 Cupid',
+      title: '웹 미연시 무료 플레이 | 브라우저 미연시 Cupid',
+      meta: '웹 미연시를 찾는다면 Cupid를 브라우저에서 바로 플레이하세요. 설치·다운로드 없이 한국어 학원 로맨스, 선택지, 멀티 엔딩을 무료로 즐길 수 있습니다.',
+      intro: '"웹 미연시"는 앱 설치보다 빠르게 시작할 수 있어야 합니다. Cupid는 링크를 열면 바로 시작되는 브라우저 미연시로, 전학 첫날부터 5일간 이어지는 학원 로맨스와 선택지 분기를 제공합니다.'
+    },
+    {
+      slug: 'muryo-misinsi',
+      h1: '무료 미연시 — 다운로드 없이 브라우저에서',
+      title: '무료 미연시 | 다운로드 없는 웹 미연시 Cupid',
+      meta: '무료 미연시 Cupid를 다운로드 없이 웹에서 플레이하세요. 한국어 지원, 모바일 대응, 5일 학원 로맨스와 멀티 엔딩을 브라우저에서 바로 즐길 수 있습니다.',
+      intro: '"무료 미연시"를 찾을 때 가장 번거로운 것은 설치 파일과 회원가입입니다. Cupid는 그런 단계를 없애고, 브라우저에서 바로 열리는 무료 미연시 경험에 집중했습니다.'
+    },
+    {
+      slug: 'misinsi-muryo',
+      h1: '미연시 무료 플레이 — Cupid',
+      title: '미연시 무료 플레이 | 무설치 웹 미연시',
+      meta: '미연시 무료 플레이를 원한다면 무설치 웹 미연시 Cupid를 시작하세요. 결제 없이 캐릭터 루트와 엔딩을 브라우저에서 진행할 수 있습니다.',
+      intro: '"미연시 무료" 검색 결과가 가벼운 광고성 게임뿐이라면 Cupid를 확인해보세요. 메신저형 UI, 호감도 선택지, 엔딩 분기가 있는 학원 로맨스 VN을 무료로 플레이할 수 있습니다.'
     },
     {
       slug: 'muryo-yeonae-sim',
@@ -261,10 +293,25 @@ const PAGES = {
   en: [
     {
       slug: 'free-dating-sim-no-download',
+      group: 'free-browser-romance',
       h1: 'Free Dating Sim, No Download — Play Right in Your Browser',
       title: 'Free Dating Sim No Download | Play in Browser 2026',
       meta: 'Play a full free dating sim with no download, no signup, and no payment. Mobile-friendly multi-ending romance visual novel right in your browser.',
       intro: 'Looking for a "free dating sim no download"? You don\'t need Steam, an app store, or a credit card. A full 5-day multi-ending romance visual novel runs entirely in your browser — desktop or mobile.'
+    },
+    {
+      slug: 'cupid-game-online',
+      h1: 'Cupid Game Online — Free Browser Visual Novel',
+      title: 'Cupid Game Online | Free Romance Visual Novel',
+      meta: 'Play Cupid game online for free in your browser. A no-download romance visual novel with messenger-style choices, multiple endings, and mobile support.',
+      intro: 'If you searched for "Cupid game online", this is the playable browser version: a free romance visual novel about five days of choices, messages, and branching endings.'
+    },
+    {
+      slug: 'cupid-visual-novel',
+      h1: 'Cupid Visual Novel — Free Romance VN in Browser',
+      title: 'Cupid Visual Novel | Free Browser Romance VN',
+      meta: 'Cupid is a free browser visual novel with romance routes, multiple endings, and no download. Play the full messenger-style VN on desktop or mobile.',
+      intro: 'Cupid is a browser-based visual novel built around short messenger scenes, character choices, and multiple endings. No installer, no app store, no payment wall.'
     },
     {
       slug: 'browser-otome-game',
@@ -284,17 +331,32 @@ const PAGES = {
   ja: [
     {
       slug: 'gakuen-renai-game-muryo-browser',
+      group: 'free-browser-romance',
       h1: '学園恋愛ゲーム 無料 ブラウザ — Cupidを今すぐプレイ',
-      title: '学園恋愛ゲーム 無料 ブラウザ | Cupidで遊べる恋愛VN',
-      meta: '無料の学園恋愛ゲームをブラウザでプレイ。Cupidはダウンロード不要、スマホ対応、5日間の学園ロマンスとマルチエンディングを楽しめる恋愛ビジュアルノベルです。',
+      title: '学園恋愛ゲーム 無料 ブラウザ | ダウンロード不要のCupid',
+      meta: '学園恋愛ゲームを無料でブラウザプレイ。Cupidはダウンロード不要、スマホ対応、5日間の学園ロマンスとマルチエンディングを楽しめる恋愛VNです。',
       intro: '「学園恋愛ゲーム 無料 ブラウザ」で探している方へ。Cupidはインストールなしで始められる学園ロマンスVNです。転校初日から5日間、会話と選択肢で関係が変わり、複数のエンディングへ分岐します。'
     },
     {
       slug: 'gakuen-renai-game-muryo-download-nashi',
       h1: '学園恋愛ゲーム 無料ダウンロードなし — Cupid',
-      title: '学園恋愛ゲーム 無料ダウンロードなし | ブラウザで遊べるCupid',
-      meta: '無料ダウンロードなしで遊べる学園恋愛ゲーム。Cupidは登録不要、スマホ対応、ブラウザだけで最後まで遊べるマルチエンディング恋愛VNです。',
+      title: '学園恋愛ゲーム 無料ダウンロードなし | スマホ対応Cupid',
+      meta: '学園恋愛ゲームを無料ダウンロードなしでプレイ。Cupidは登録不要、スマホ対応、ブラウザだけで最後まで遊べるマルチエンディング恋愛VNです。',
       intro: '「学園恋愛ゲーム 無料ダウンロードなし」を探しているなら、Cupidはそのままブラウザで始められます。アプリもインストーラーも不要。学校を舞台にした5日間の恋愛ストーリーを無料でプレイできます。'
+    },
+    {
+      slug: 'browser-otome-game-ja',
+      h1: 'ブラウザ 乙女ゲーム — 無料で遊べるCupid',
+      title: 'ブラウザ 乙女ゲーム | 無料・インストール不要',
+      meta: 'ブラウザ乙女ゲームを無料でプレイ。Cupidはインストール不要、スマホ対応、5日間の恋愛ストーリーとマルチエンディングを楽しめるWeb恋愛VNです。',
+      intro: '「ブラウザ 乙女ゲーム」や「ブラウザ乙女ゲーム」で探している方へ。Cupidはアプリ不要で、リンクを開くだけですぐ始められるWeb恋愛ビジュアルノベルです。'
+    },
+    {
+      slug: 'renai-game-browser',
+      h1: '恋愛ゲーム ブラウザ — ダウンロードなしで即プレイ',
+      title: '恋愛ゲーム ブラウザ | 無料で遊べるCupid',
+      meta: '恋愛ゲームをブラウザで無料プレイ。Cupidはダウンロードなし、登録なし、スマホ対応で遊べる学園ロマンスのビジュアルノベルです。',
+      intro: '「恋愛ゲーム ブラウザ」を探しているなら、Cupidはすぐ遊べる選択肢です。インストール不要で、会話と選択肢から5日間のロマンスが分岐します。'
     },
     {
       slug: 'browser-otome-muryo',
@@ -335,6 +397,7 @@ const PAGES = {
   es: [
     {
       slug: 'simulador-citas-gratis',
+      group: 'free-browser-romance',
       h1: 'Simulador de citas gratis — Sin descargar, en el navegador',
       title: 'Simulador de citas gratis sin descargar | Jugar en línea 2026',
       meta: 'Juega un simulador de citas gratis sin descargar, sin registro y sin pagos. Novela visual romántica con múltiples finales en el navegador.',
@@ -358,6 +421,7 @@ const PAGES = {
   fr: [
     {
       slug: 'simulation-amour-gratuit',
+      group: 'free-browser-romance',
       h1: 'Simulation amoureuse gratuite — Sans téléchargement',
       title: 'Simulation amoureuse gratuite sans téléchargement | Jouer en ligne 2026',
       meta: 'Jouez à une simulation amoureuse gratuite sans téléchargement, sans inscription, sans paiement. Visual novel romantique multi-fins en navigateur.',
@@ -381,6 +445,7 @@ const PAGES = {
   de: [
     {
       slug: 'dating-sim-kostenlos',
+      group: 'free-browser-romance',
       h1: 'Dating Sim kostenlos — Ohne Download im Browser',
       title: 'Dating Sim kostenlos ohne Download | Im Browser spielen 2026',
       meta: 'Spiele einen kostenlosen Dating Sim ohne Download, ohne Anmeldung und ohne Bezahlung. Romance-Visual-Novel mit mehreren Endings im Browser.',
@@ -404,6 +469,7 @@ const PAGES = {
   pt: [
     {
       slug: 'otome-navegador-gratis',
+      group: 'free-browser-romance',
       h1: 'Otome game no navegador — Grátis e em português',
       title: 'Otome game português grátis no navegador | Sem instalar 2026',
       meta: 'Otome game grátis em português jogável no navegador. Sem instalação, sem cadastro, com múltiplos finais.',
@@ -462,35 +528,106 @@ function escapeHTML(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+function findPageByGroup(lang, group) {
+  return PAGES[lang].find(p => p.group === group);
+}
+
+function getAlternateEntries(lang, page) {
+  if (!page.group) {
+    return [{ lang, page }];
+  }
+  return Object.keys(PAGES)
+    .map(L => ({ lang: L, page: findPageByGroup(L, page.group) }))
+    .filter(entry => entry.page);
+}
+
+function getDefaultAlternate(entries) {
+  return entries.find(entry => entry.lang === 'en') || entries.find(entry => entry.lang === 'ko') || entries[0];
+}
+
 function renderPage(lang, page) {
   const c = C[lang];
   const url = seoUrl(page.slug);
   const homeUrl = HOME[lang];
+  const alternateEntries = getAlternateEntries(lang, page);
+  const defaultAlternate = getDefaultAlternate(alternateEntries);
 
-  // hreflang: 다른 언어의 첫 번째 페이지로 alt
-  const altLinks = Object.keys(PAGES).map(L => {
-    const altSlug = PAGES[L][0].slug; // 다른 언어는 첫 키워드 페이지로
-    return `<link rel="alternate" hreflang="${L}" href="${seoUrl(altSlug)}">`;
-  }).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${seoUrl(PAGES.en[0].slug)}">`;
+  const altLinks = alternateEntries.map(({ lang: L, page: altPage }) =>
+    `<link rel="alternate" hreflang="${L}" href="${seoUrl(altPage.slug)}">`
+  ).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${seoUrl(defaultAlternate.page.slug)}">`;
 
-  const otherLangs = Object.keys(PAGES).filter(L => L !== lang).map(L => {
-    const altSlug = PAGES[L][0].slug;
-    return `<a href="${seoPath(altSlug)}" hreflang="${L}">${L.toUpperCase()}</a>`;
-  }).join(' | ');
+  const languageTargets = alternateEntries.length > 1
+    ? alternateEntries
+    : Object.keys(PAGES).map(L => ({ lang: L, page: PAGES[L][0] }));
+
+  const otherLangs = languageTargets
+    .filter(entry => entry.lang !== lang)
+    .map(entry => `<a href="${seoPath(entry.page.slug)}" hreflang="${entry.lang}">${entry.lang.toUpperCase()}</a>`)
+    .join(' | ');
 
   const relatedLinks = PAGES[lang]
     .filter(p => p.slug !== page.slug)
+    .slice(0, 6)
     .map(p => `<a href="${seoPath(p.slug)}">${escapeHTML(p.title.split('|')[0].trim())}</a>`)
     .join(' | ');
 
-  // FAQ JSON-LD
-  const faqLd = {
+  const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": c.faqs.map(([q, a]) => ({
-      "@type": "Question", "name": q,
-      "acceptedAnswer": { "@type": "Answer", "text": a }
-    }))
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "@id": `${SITE}/#videogame`,
+        "name": "Cupid",
+        "alternateName": ["Cupid Game", "Cupid Visual Novel", "무료 미연시 Cupid", "学園恋愛ゲーム Cupid"],
+        "description": page.meta,
+        "url": siteUrl(homeUrl),
+        "image": SEO_IMAGE,
+        "genre": ["Visual Novel", "Romance", "Dating Simulation", "Otome Game"],
+        "gamePlatform": ["Web Browser", "Mobile Browser"],
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Any",
+        "inLanguage": Object.keys(PAGES),
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Archerlab",
+          "url": "https://archerlab.dev"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        "mainEntity": c.faqs.map(([q, a]) => ({
+          "@type": "Question",
+          "name": q,
+          "acceptedAnswer": { "@type": "Answer", "text": a }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Cupid",
+            "item": siteUrl(homeUrl)
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": page.title.split('|')[0].trim(),
+            "item": url
+          }
+        ]
+      }
+    ]
   };
 
   return `<!DOCTYPE html>
@@ -502,15 +639,21 @@ function renderPage(lang, page) {
   <meta name="description" content="${escapeHTML(page.meta)}">
   <link rel="canonical" href="${url}">
   ${altLinks}
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:title" content="${escapeHTML(page.title)}">
   <meta property="og:description" content="${escapeHTML(page.meta)}">
   <meta property="og:url" content="${url}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="${SITE}/cupid_link.png?v=2.9.6">
+  <meta property="og:site_name" content="Archerlab Games">
+  <meta property="og:locale" content="${LOCALES[lang] || 'en_US'}">
+  <meta property="og:image" content="${SEO_IMAGE}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${escapeHTML(page.title)}">
+  <meta name="twitter:description" content="${escapeHTML(page.meta)}">
+  <meta name="twitter:image" content="${SEO_IMAGE}">
   <link rel="icon" href="/favicon.ico">
   <style>${CSS}</style>
-  <script type="application/ld+json">${JSON.stringify(faqLd)}</script>
+  <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body>
   <div class="wrap">
@@ -575,25 +718,58 @@ for (const lang of Object.keys(PAGES)) {
 }
 console.log(`✓ ${count} SEO pages generated in ${OUT}`);
 
-// sitemap 단편 출력 (수동으로 메인 sitemap.xml에 머지)
-const sitemapFrag = allUrls.map(u => {
-  const alts = allUrls.filter(x => PAGES[u.lang].some(p => p.slug === u.slug)).length; // skip
-  // 간단: 같은 언어 페이지끼리는 alt 안 걸고, 모든 언어 첫 키워드만 cross-lang alt
-  const isFirst = PAGES[u.lang][0].slug === u.slug;
-  let altLinks = '';
-  if (isFirst) {
-    altLinks = Object.keys(PAGES).map(L =>
-      `        <xhtml:link rel="alternate" hreflang="${L}" href="${seoUrl(PAGES[L][0].slug)}"/>`
-    ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${seoUrl(PAGES.en[0].slug)}"/>`;
-  }
+function renderSitemapUrl(url, altEntries, changefreq, priority) {
+  const defaultEntry = getDefaultAlternate(altEntries);
+  const altLinks = altEntries.map(entry =>
+    `        <xhtml:link rel="alternate" hreflang="${entry.lang}" href="${seoUrl(entry.page.slug)}"/>`
+  ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${seoUrl(defaultEntry.page.slug)}"/>`;
+
   return `    <url>
-        <loc>${u.url}</loc>
+        <loc>${url}</loc>
 ${altLinks}
         <lastmod>${LASTMOD}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <changefreq>${changefreq}</changefreq>
+        <priority>${priority}</priority>
     </url>`;
+}
+
+function renderHomeSitemapUrl(lang, pathname) {
+  const altLinks = Object.keys(HOME).map(L =>
+    `        <xhtml:link rel="alternate" hreflang="${L}" href="${siteUrl(HOME[L])}"/>`
+  ).join('\n') + `\n        <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl('/')}"/>`;
+  const priority = lang === 'ko' ? '1.0' : '0.9';
+
+  return `    <url>
+        <loc>${siteUrl(pathname)}</loc>
+${altLinks}
+        <lastmod>${LASTMOD}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>${priority}</priority>
+    </url>`;
+}
+
+// sitemap 단편 출력 및 메인 sitemap.xml 갱신
+const sitemapFrag = allUrls.map(u => {
+  const page = PAGES[u.lang].find(p => p.slug === u.slug);
+  const altEntries = getAlternateEntries(u.lang, page);
+  return renderSitemapUrl(u.url, altEntries, 'monthly', '0.7');
 }).join('\n');
 
 fs.writeFileSync(path.join(OUT, '_sitemap_fragment.xml'), sitemapFrag, 'utf8');
 console.log(`✓ sitemap fragment written to seo/_sitemap_fragment.xml`);
+
+const homeSitemap = Object.entries(HOME)
+  .map(([lang, pathname]) => renderHomeSitemapUrl(lang, pathname))
+  .join('\n');
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${homeSitemap}
+    <!-- SEO landing pages -->
+${sitemapFrag}
+</urlset>
+`;
+
+fs.writeFileSync(path.join(OUT, '..', 'sitemap.xml'), sitemap, 'utf8');
+console.log(`✓ sitemap.xml updated`);
