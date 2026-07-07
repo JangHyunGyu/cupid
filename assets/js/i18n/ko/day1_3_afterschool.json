@@ -346,7 +346,7 @@
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*말투가 가볍다.*"
+        "text": "*가볍게 웃는다.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",

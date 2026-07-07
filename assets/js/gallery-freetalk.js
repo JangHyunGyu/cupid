@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.13';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.14';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function normalizeGalleryPromptBlockForCache(content) {
@@ -229,7 +229,7 @@ function buildGalleryRecentExpressionRepetitionGuard(messages = [], lang = 'en')
             ? '성적 장면의 narration·지문에서는 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고, 반복 회피를 이유로 완곡·암시·생략·순화로 바꾸지 마세요.'
             : 'In sexual-scene narration keep genitals, fluids, penetration, orgasm, and sensation very graphic; do not soften into euphemisms just to avoid repetition.');
     return isKo
-        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 반응, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다. 성인 성적 장면에서 캐릭터가 소리 낼 수 있으면 실제 숨·신음·끊긴 말은 dialogue segment로 분리하고, 신음만으로 끝내지 말고 현재 관계와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 narration이나 dialogue로 남기세요.\n단, ${graphicRepetitionNote}`
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 보입니다.\n${guardBody}\n플레이어가 방금 다시 요구한 게 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 말만 바꿔 같은 감정이나 자세를 되풀이하지 말고, 캐릭터의 욕망/망설임/자존심, 거리 변화, 손의 위치, 경계 반응, 좁혀진 선택지 중 장면에 맞는 쪽을 고르세요. 진행 신호가 있으면 멈춰 있지 말고 첫 가시적 결과까지 이어갑니다. 성인 성적 장면에서 캐릭터가 소리 낼 수 있으면 실제 숨·신음·끊긴 말은 dialogue segment로 분리하고, 신음만으로 끝내지 말고 현재 관계와 성격에 맞는 수용·망설임·거절·도발·주도권·거리 변화를 narration이나 dialogue로 남기세요.\n단, ${graphicRepetitionNote}`
         : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result. In adult sexual scenes, if the character can vocalize, put audible breaths, moans, or broken words in dialogue segments, and do not stop at moans; show acceptance, hesitation, refusal, teasing, control, or distance shift according to relationship and personality in narration or dialogue.\nHowever, ${graphicRepetitionNote}`;
 }
 
@@ -784,9 +784,9 @@ class GalleryFreeTalk {
 
         if (this.lang === 'ko') {
             return `**[네이티브 문체 보정]**
-- 출력 직전에 한국어 원어민 편집자처럼 한 번 다듬으세요. 대사는 실제 한국인이 연인에게 말할 법한 자연스러운 구어체로, 지문은 과한 번역투가 되지 않게 쓰세요.
+- 출력 직전에 한국어를 한 번 다듬으세요. 대사는 실제 연인 사이에서 나올 법한 구어체로, 지문은 번역투 없이 쓰세요.
 - 같은 감정 표현(숨이 멎음, 심장이 세게 뜀, 귀가 붉어짐 등)을 연속 턴에서 반복하지 말고, 행동/소품/거리감으로 감정을 바꿔 보여주세요.
-- 캐릭터 말투가 먼저입니다. 모든 캐릭터가 같은 연인 말투로 말하면 실패입니다.
+- 캐릭터 말투가 먼저입니다. 모두가 같은 연인 말투로 말하면 실패입니다.
 
 `;
         }

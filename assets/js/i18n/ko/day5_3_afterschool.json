@@ -351,7 +351,7 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*결론이 나지 않은 발걸음이 공원 쪽으로 이어졌다.*"
+        "text": "*답을 못 낸 채 공원 쪽으로 걸었다.*"
     },
     "after5_confess_no": {
         "name": "{name}",
