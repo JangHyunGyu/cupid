@@ -188,7 +188,7 @@ function buildCupidRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
             ? '성적 장면의 narration·지문에서는 성기·체액·삽입·절정·감각을 매우 적나라하게 직접 서술하고, 반복 회피를 이유로 완곡·암시·생략·순화로 바꾸지 마세요.'
             : 'In sexual-scene narration keep genitals, fluids, penetration, orgasm, and sensation very graphic; do not soften into euphemisms just to avoid repetition.');
     return isKo
-        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 감지되었습니다.\n${guardBody}\n최신 플레이어 삽입문에서 직접 다시 언급하거나 요구한 경우가 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 단어만 바꿔 같은 감정 정리나 같은 자세를 되풀이하기보다, 캐릭터 고유의 욕망/망설임/자존심, 거리 변화, 손의 위치 변화, 경계 반응, 좁혀진 선택지 중 장면에 맞는 반응을 고르세요. 명확한 진행 신호가 있으면 반복 정지 대신 첫 가시적 결과까지 이어갑니다.\n단, ${graphicRepetitionNote}`
+        ? `\n\n[최근 표현 반복 참고]\n최근 3~6개 캐릭터 출력에서 아래 반복 패턴이 보입니다.\n${guardBody}\n플레이어가 방금 다시 요구한 게 아니라면, 이번 턴에는 위 표현·문장 시작·제스처·동의어를 segments[].text에 그대로 반복하지 마세요. 말만 바꿔 같은 감정이나 자세를 되풀이하지 말고, 캐릭터의 욕망/망설임/자존심, 거리 변화, 손의 위치, 경계 반응, 좁혀진 선택지 중 장면에 맞는 쪽을 고르세요. 진행 신호가 있으면 멈춰 있지 말고 첫 가시적 결과까지 이어갑니다.\n단, ${graphicRepetitionNote}`
         : `\n\n[Recent Expression Repetition Note]\nThe last 3-6 character outputs show these repeated patterns.\n${guardBody}\nUnless the latest player insertion directly mentioned or requested one of them again, do not repeat the expressions, sentence openings, gestures, or close synonyms above in segments[].text this turn. Rather than swapping words while repeating the same emotional summary or static posture, choose a response that fits this character's desire/hesitation/pride, distance change, hand-position change, boundary response, or narrowed choice when the scene calls for it. When the player clearly asks the scene to continue, avoid repeated stillness and carry the beat to its first visible result.\nHowever, ${graphicRepetitionNote}`;
 }
 
@@ -1162,7 +1162,7 @@ class FreeTalkSystem {
                         // 시스템 프롬프트에 민감 주제 언급 컨텍스트 추가
                         if (this.freeTalkHistory.length > 0 && this.freeTalkHistory[0].role === "system") {
                             const sensitiveNote = {
-                                ko: "\n[주의: 플레이어가 민감한 주제를 언급했습니다. 약간 경계하는 톤을 유지하되, 자연스럽게 대화를 이어가세요.]",
+                                ko: "\n[주의: 플레이어가 민감한 주제를 언급했습니다. 살짝 경계한 채 대화를 이어가세요.]",
                                 en: "\n[NOTE: The player mentioned a sensitive topic. Maintain a slightly guarded tone while continuing naturally.]",
                                 ja: "\n[注意: プレイヤーがデリケートな話題に触れました。少し警戒しつつ、自然に会話を続けてください。]",
                                 es: "\n[NOTA: El jugador mencionó un tema sensible. Mantén un tono ligeramente cauteloso mientras continúas naturalmente.]",
