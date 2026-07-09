@@ -719,7 +719,7 @@
     },
     "wall_yuna_skin70_3": {
         "name": "{name}",
-        "text": "*유나의 손이 따뜻하다. 그것만.*"
+        "text": "*유나의 손이 따뜻하다. 그뿐이다.*"
     },
     "wall_yuna_skin60_1": {
         "name": "{name}",
@@ -795,7 +795,7 @@
     },
     "day4_night_regret_reply": {
         "name": "{name}",
-        "text": "*답장을 쓰다 지운다. 입력창에는 받침 하나만 남았다가, 그것도 사라진다.*"
+        "text": "*답장을 쓰다 지운다. 입력창에는 받침 하나만 남았다가, 곧 사라진다.*"
     },
     "day4_night_reflect": {
         "name": "{name}",
