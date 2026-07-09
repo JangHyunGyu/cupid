@@ -290,11 +290,11 @@ class GalleryFreeTalk {
 
         // 캐릭터별 표정 매핑
         this.CHAR_EXPRESSIONS = {
-            seyoun: ['normal', 'shy', 'shy2', 'pout', 'angry', 'cry', 'laugh', 'worried', 'sad'],
-            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored'],
-            dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'pout'],
-            teacher: ['normal', 'angry', 'shy', 'sad', 'smile'],
-            nurse: ['normal', 'angry', 'shy']
+            seyoun: ['normal', 'shy', 'shy2', 'pout', 'angry', 'cry', 'laugh', 'worried', 'sad', 'flushed'],
+            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed'],
+            dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'pout', 'flushed'],
+            teacher: ['normal', 'angry', 'shy', 'sad', 'smile', 'flushed'],
+            nurse: ['normal', 'angry', 'shy', 'flushed']
         };
 
         // 캐릭터별 연인 모드 성격 프롬프트 (7개 언어)
@@ -1093,7 +1093,7 @@ ${L.rule}
         this.overlayEl.innerHTML = `
             <div class="gft-background" style="background-image: url('${bgUrl}')"></div>
             <div class="gft-character">
-                <img id="gft-char-img" src="assets/images/characters/${charId}_normal.png" alt="${charName}">
+                <img id="gft-char-img" src="assets/images/characters/${charId}_normal.png?v=${window.ASSET_VERSION || ''}" alt="${charName}">
             </div>
             <div class="gft-ui-layer">
                 <div id="dialogue-box">
@@ -1955,7 +1955,7 @@ The latest user input contains an outside scene cue that happens before the char
 
         const img = document.getElementById('gft-char-img');
         if (img) {
-            img.src = `assets/images/characters/${this.currentCharId}_${expression}.png`;
+            img.src = `assets/images/characters/${this.currentCharId}_${expression}.png?v=${window.ASSET_VERSION || ''}`;
         }
     }
 

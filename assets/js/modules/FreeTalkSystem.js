@@ -1734,7 +1734,9 @@ The latest user input contains an outside scene cue that happens before the char
     applyExpression(exprName, scene) {
         if (!exprName || !window.CHARACTER_EXPRESSIONS) return;
         const name = exprName.toLowerCase();
-        const charExprs = CHARACTER_EXPRESSIONS[scene.name];
+        const charExprs = typeof getCharacterExpressionSet === 'function'
+            ? getCharacterExpressionSet(scene.name)
+            : window.CHARACTER_EXPRESSIONS[scene.name];
         if (!charExprs || !charExprs[name]) return;
 
         const centerSlot = this.uiManager.charSlots.center;
@@ -1807,7 +1809,9 @@ The latest user input contains an outside scene cue that happens before the char
             // CHARACTER_EXPRESSIONS 객체가 있는지 확인
             if (window.CHARACTER_EXPRESSIONS) {
                 // 현재 캐릭터의 표정 목록 가져오기
-                const charExprs = CHARACTER_EXPRESSIONS[scene.name];
+                const charExprs = typeof getCharacterExpressionSet === 'function'
+                    ? getCharacterExpressionSet(scene.name)
+                    : window.CHARACTER_EXPRESSIONS[scene.name];
 
                 // 해당 표정이 정의되어 있으면 이미지 변경
                 if (charExprs && charExprs[exprName]) {
