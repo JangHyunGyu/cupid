@@ -878,7 +878,7 @@
     },
     "day5_ending_confess_fail": {
         "name": "{name}",
-        "text": "*겨우 말했다. 답은 오지 않았다. 고개 숙인 침묵만 길어졌다.*"
+        "text": "*공원까지 걸어와 겨우 말했다. 답은 오지 않았다. 고개 숙인 침묵만 길어졌다.*"
     },
     "confess_fail_cg_seo": {
         "name": "{name}",
