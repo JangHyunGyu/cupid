@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.63';
+        const version = '2.9.64';
     const LOAD_RETRIES = 3;
     const LOAD_TIMEOUT_MS = 15000;
 
