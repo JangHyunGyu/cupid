@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*잠시 침묵. — 그리고.*"
+        "text": "*답장창이 한동안 비어 있다. 그러다 새 말풍선이 올라온다.*"
     },
     "night2_reply_yuna_4": {
         "name": "유나",
@@ -186,7 +186,7 @@
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*메시지 끝에 마침표가 한참 뒤에 나타난다.*"
+        "text": "*메시지 끝에 마침표 하나가 늦게 붙는다.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
