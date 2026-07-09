@@ -125,6 +125,84 @@ function getPromptLookupKeys(effectiveLang, sceneName, displayName, useEnTemplat
     return keys;
 }
 
+const CHARACTER_EXPRESSION_PATHS = Object.freeze({
+    Seoyeon: Object.freeze({
+        normal: 'assets/images/characters/seyoun_normal.png',
+        shy: 'assets/images/characters/seyoun_shy.png',
+        shy2: 'assets/images/characters/seyoun_shy2.png',
+        angry: 'assets/images/characters/seyoun_angry.png',
+        sad: 'assets/images/characters/seyoun_sad.png',
+        laugh: 'assets/images/characters/seyoun_laugh.png',
+        cry: 'assets/images/characters/seyoun_cry.png',
+        pout: 'assets/images/characters/seyoun_pout.png',
+        worried: 'assets/images/characters/seyoun_worried.png',
+        back: 'assets/images/characters/seyoun_back.png',
+        flushed: 'assets/images/characters/seyoun_flushed.png',
+        bikini: 'assets/images/characters/seyoun_bikini.png'
+    }),
+    Yuna: Object.freeze({
+        normal: 'assets/images/characters/yuna_normal.png',
+        smile: 'assets/images/characters/yuna_smile.png',
+        shy: 'assets/images/characters/yuna_shy.png',
+        angry: 'assets/images/characters/yuna_angry.png',
+        sad: 'assets/images/characters/yuna_sad.png',
+        bored: 'assets/images/characters/yuna_bored.png',
+        flushed: 'assets/images/characters/yuna_flushed.png',
+        bikini: 'assets/images/characters/yuna_bikini.png'
+    }),
+    Dain: Object.freeze({
+        normal: 'assets/images/characters/dain_normal.png',
+        shy: 'assets/images/characters/dain_shy.png',
+        angry: 'assets/images/characters/dain_angry.png',
+        sad: 'assets/images/characters/dain_sad.png',
+        laugh: 'assets/images/characters/dain_laugh.png',
+        pout: 'assets/images/characters/dain_pout.png',
+        active: 'assets/images/characters/dain_active.png',
+        sweat: 'assets/images/characters/dain_sweat.png',
+        flushed: 'assets/images/characters/dain_flushed.png',
+        bikini: 'assets/images/characters/dain_bikini.png'
+    }),
+    Teacher: Object.freeze({
+        normal: 'assets/images/characters/teacher_normal.png',
+        smile: 'assets/images/characters/teacher_smile.png',
+        shy: 'assets/images/characters/teacher_shy.png',
+        angry: 'assets/images/characters/teacher_angry.png',
+        sad: 'assets/images/characters/teacher_sad.png',
+        flushed: 'assets/images/characters/teacher_flushed.png',
+        bikini: 'assets/images/characters/teacher_bikini.png'
+    }),
+    Nurse: Object.freeze({
+        normal: 'assets/images/characters/nurse_normal.png',
+        shy: 'assets/images/characters/nurse_shy.png',
+        angry: 'assets/images/characters/nurse_angry.png',
+        flushed: 'assets/images/characters/nurse_flushed.png',
+        bikini: 'assets/images/characters/nurse_bikini.png'
+    })
+});
+
+window.CHARACTER_EXPRESSIONS = Object.freeze({
+    Seoyeon: CHARACTER_EXPRESSION_PATHS.Seoyeon,
+    Yuna: CHARACTER_EXPRESSION_PATHS.Yuna,
+    Dain: CHARACTER_EXPRESSION_PATHS.Dain,
+    Teacher: CHARACTER_EXPRESSION_PATHS.Teacher,
+    Nurse: CHARACTER_EXPRESSION_PATHS.Nurse,
+    'Homeroom Teacher': CHARACTER_EXPRESSION_PATHS.Teacher,
+    'Health Teacher': CHARACTER_EXPRESSION_PATHS.Nurse,
+    'School Nurse': CHARACTER_EXPRESSION_PATHS.Nurse
+});
+
+function getCharacterExpressionSet(sceneName, displayName) {
+    const expressionMap = window.CHARACTER_EXPRESSIONS || {};
+    const keys = [
+        normalizePromptCharacterKey(sceneName),
+        normalizePromptCharacterKey(displayName),
+        sceneName,
+        displayName
+    ];
+    const key = keys.find(candidate => candidate && expressionMap[candidate]);
+    return key ? expressionMap[key] : null;
+}
+
 function getFreeTalkVoiceExampleList(lang, sceneName, displayName) {
     const key = normalizePromptCharacterKey(sceneName) || normalizePromptCharacterKey(displayName);
     const useKo = lang === 'ko';
@@ -871,7 +949,7 @@ function buildSystemPrompt(params) {
     const languageQualityGuard = getLanguageQualityGuard(effectiveLang);
     const nativeStylePolishGuard = getNativeStylePolishGuard(effectiveLang, sceneName, displayName);
     const nativeAntiTranslationGuard = getNativeAntiTranslationGuard(effectiveLang);
-    const expressionNames = Object.keys((window.CHARACTER_EXPRESSIONS && (window.CHARACTER_EXPRESSIONS[aiCharName] || window.CHARACTER_EXPRESSIONS[sceneName])) || { normal: true }).join(", ") || "normal";
+    const expressionNames = Object.keys(getCharacterExpressionSet(sceneName, aiCharName) || { normal: true }).join(", ") || "normal";
     const affinityIntimacyProgressionGuideline = getAffinityIntimacyProgressionGuideline(effectiveLang, affinity, datingGuideline);
     const compactOptionalGuidance = [
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,

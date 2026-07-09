@@ -62,7 +62,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: '음악 감상, 독서',
                 personality: '메가데레, 수줍음',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
 
             // 유나 - 신비로운 쿨데레
@@ -79,7 +79,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: '별 보기, 시 쓰기',
                 personality: '쿨데레, 신비',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
 
             // 다인 - 햇살 같은 소꿉친구 (현모양처형 츤데레)
@@ -96,7 +96,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: '요리, 운동',
                 personality: '츤데레, 활발',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
 
             // 담임선생님 - 갭 모에
@@ -113,7 +113,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: '독서, 영화 감상',
                 personality: '전문적, 허당',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
 
             // 보건선생님 - 장난꾸러기 누나
@@ -130,7 +130,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '원예, 명상',
                 personality: '장난기, 성숙',
-                expressions: ['normal', 'shy', 'angry', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         },
 
@@ -151,7 +151,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Music, Reading',
                 personality: 'Deeply Affectionate, Shy',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
 
             // Yuna - 신비로운 쿨데레 (Kuudere)
@@ -168,7 +168,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Stargazing, Poetry',
                 personality: 'Kuudere, Mysterious',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
 
             // Dain - 햇살 같은 소꿉친구 (Tsundere)
@@ -185,7 +185,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Cooking, Sports',
                 personality: 'Tsundere, Cheerful',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
 
             // Teacher (Ms. Kim) - 의외의 허당 선생님 (Gap Moe)
@@ -202,7 +202,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Reading, Movies',
                 personality: 'Professional, Clumsy',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
 
             // Nurse (School Nurse) - 장난꾸러기 보건교사 (Playful)
@@ -219,7 +219,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gardening, Meditation',
                 personality: 'Playful, Mature',
-                expressions: ['normal', 'shy', 'angry', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         },
 
@@ -238,7 +238,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Música, Lectura',
                 personality: 'Megadere, Tímida',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -253,7 +253,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Observar estrellas, Poesía',
                 personality: 'Kuudere, Misteriosa',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -268,7 +268,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Cocina, Deportes',
                 personality: 'Tsundere, Alegre',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -283,7 +283,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Lectura, Películas',
                 personality: 'Profesional, Despistada',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -298,7 +298,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinería, Meditación',
                 personality: 'Juguetona, Madura',
-                expressions: ['normal', 'shy', 'angry', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         },
 
@@ -317,7 +317,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: '音楽鑑賞、読書',
                 personality: 'メガデレ、恥ずかしがり',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -332,7 +332,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: '星を見ること、詩を書くこと',
                 personality: 'クーデレ、神秘的',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -347,7 +347,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: '料理、スポーツ',
                 personality: 'ツンデレ、活発',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -362,7 +362,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: '読書、映画鑑賞',
                 personality: '専門的、ドジ',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -377,7 +377,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: '園芸、瞑想',
                 personality: 'いたずら好き、成熟',
-                expressions: ['normal', 'shy', 'angry', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         },
 
@@ -396,7 +396,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Musique, Lecture',
                 personality: 'Mégadere, Timide',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -411,7 +411,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Observation des étoiles, Poésie',
                 personality: 'Kuudere, Mystérieuse',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -426,7 +426,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Cuisine, Sport',
                 personality: 'Tsundere, Joyeuse',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -441,7 +441,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Lecture, Cinéma',
                 personality: 'Professionnelle, Maladroite',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -456,7 +456,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinage, Méditation',
                 personality: 'Espiègle, Mature',
-                expressions: ['normal', 'shy', 'angry', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         },
 
@@ -475,7 +475,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Musik, Lesen',
                 personality: 'Megadere, Schüchtern',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -490,7 +490,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Sternbeobachtung, Poesie',
                 personality: 'Kuudere, Geheimnisvoll',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -505,7 +505,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Kochen, Sport',
                 personality: 'Tsundere, Fröhlich',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -520,7 +520,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Lesen, Filme',
                 personality: 'Professionell, Tollpatschig',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -535,7 +535,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Gartenarbeit, Meditation',
                 personality: 'Verspielt, Reif',
-                expressions: ['normal', 'shy', 'angry', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         },
 
@@ -554,7 +554,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Musica, Leitura',
                 personality: 'Megadere, Timida',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'bikini']
+                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -569,7 +569,7 @@ class GalleryData {
                 bust: '34-21-34 65E',
                 hobby: 'Observar estrelas, Poesia',
                 personality: 'Kuudere, Misteriosa',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
             dain: {
                 id: 'dain',
@@ -584,7 +584,7 @@ class GalleryData {
                 bust: '37-22-35 65H',
                 hobby: 'Culinaria, Esportes',
                 personality: 'Tsundere, Alegre',
-                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
             teacher: {
                 id: 'teacher',
@@ -599,7 +599,7 @@ class GalleryData {
                 bust: '38-24-38 70G',
                 hobby: 'Leitura, Filmes',
                 personality: 'Profissional, Desastrada',
-                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bikini']
+                expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
             nurse: {
                 id: 'nurse',
@@ -614,7 +614,7 @@ class GalleryData {
                 bust: '38-24-38 70H',
                 hobby: 'Jardinagem, Meditacao',
                 personality: 'Brincalhona, Madura',
-                expressions: ['normal', 'shy', 'angry', 'bikini']
+                expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         }
     };
@@ -642,6 +642,7 @@ class GalleryData {
             bored: '지루함',     // 지루해하는 표정
             active: '활발',      // 활발한 표정
             sweat: '땀흘림',     // 땀에 젖은 표정
+            flushed: '달아오름',
             bikini: '???'        // 특별 표정 라벨 (호감도 100 + 프리토킹 30회 해금). 미스터리 연출 위해 '???' 사용 — 해금 전까지 무엇인지 숨김
         },
 
@@ -661,6 +662,7 @@ class GalleryData {
             bored: 'Bored',
             active: 'Active',
             sweat: 'Nervous',
+            flushed: 'Flushed',
             bikini: '???'
         },
 
@@ -680,6 +682,7 @@ class GalleryData {
             bored: 'Aburrida',
             active: 'Activa',
             sweat: 'Nerviosa',
+            flushed: 'Sonrojada',
             bikini: '???'
         },
 
@@ -699,6 +702,7 @@ class GalleryData {
             bored: '退屈',
             active: '活発',
             sweat: '汗',
+            flushed: '火照り',
             bikini: '???'
         },
 
@@ -718,6 +722,7 @@ class GalleryData {
             bored: 'Ennuyée',
             active: 'Dynamique',
             sweat: 'Nerveuse',
+            flushed: 'Troublee',
             bikini: '???'
         },
 
@@ -737,6 +742,7 @@ class GalleryData {
             bored: 'Gelangweilt',
             active: 'Aktiv',
             sweat: 'Nervös',
+            flushed: 'Erhitzt',
             bikini: '???'
         },
 
@@ -756,6 +762,7 @@ class GalleryData {
             bored: 'Entediada',
             active: 'Ativa',
             sweat: 'Nervosa',
+            flushed: 'Corada',
             bikini: '???'
         }
     };
