@@ -1533,6 +1533,25 @@ try {
 
 // FT-4: 프리토킹 프롬프트 — prompts.js의 FLAG_MEMORIES 캐릭터 매칭
 try {
+    const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
+    const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
+    if (!ftSysContent.includes('encodeFreeTalkCacheKeyPart(_lang)')
+        || !ftSysContent.includes('encodeFreeTalkCacheKeyPart(charKey)')
+        || !gftContent.includes('encodeGalleryFreeTalkCacheKeyPart(this.lang)')
+        || !gftContent.includes('encodeGalleryFreeTalkCacheKeyPart(this.currentCharId)')) {
+        errors.push('[FREETALK_API] non-ASCII cache-key parts must be URI encoded before use in request headers');
+    }
+    if (!ftSysContent.includes('primaryError instanceof TypeError')
+        || !ftSysContent.includes('fallbackEndpoint !== aiEndpoint')
+        || !gftContent.includes('primaryError instanceof TypeError')
+        || !gftContent.includes('fallbackEndpoint !== aiEndpoint')) {
+        errors.push('[FREETALK_API] game and gallery chat requests must keep the network fallback endpoint');
+    }
+} catch (e) {
+    errors.push('[FREETALK_API] request-safety validation failed: ' + e.message);
+}
+
+try {
     const promptsPath = path.join(__dirname, 'assets/js/prompts.js');
     if (fs.existsSync(promptsPath)) {
         const promptsContent = fs.readFileSync(promptsPath, 'utf8');
