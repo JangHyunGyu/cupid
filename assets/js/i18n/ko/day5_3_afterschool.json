@@ -13,11 +13,11 @@
     },
     "after5_farewell_seo_2": {
         "name": "서연",
-        "text": "...후."
+        "text": "*서연이 길게 숨을 내쉰다.*"
     },
     "after5_farewell_seo_3": {
         "name": "서연",
-        "text": "*머리카락을 넘기며.*"
+        "text": "*흘러내린 머리카락을 귀 뒤로 넘기고 가방끈을 고쳐 잡는다.*"
     },
     "after5_farewell_seo_4": {
         "name": "서연",
@@ -54,7 +54,7 @@
     },
     "after5_farewell_yuna_4": {
         "name": "유나",
-        "text": "*돌아선다. 멈추지 않는다.*"
+        "text": "*도서관 쪽 복도로 돌아간다. 구두 소리가 모퉁이 뒤로 사라진다.*"
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
@@ -87,7 +87,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "다인",
-        "text": "대신 어설프게 굴면 진짜 화낸다. ...잘해."
+        "text": "대신 어설프게 굴면 진짜 화낸다. 잘해."
     },
     "after5_farewell_dain_4_d": {
         "name": "다인",
@@ -95,7 +95,7 @@
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*다인이 돌아서서 천천히 체육관 안으로 들어간다.*"
+        "text": "*다인은 무릎 보호대 끈을 한 번 더 당기고 체육관 안으로 들어간다.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*교문 앞. 멀리서 세 사람이 보인다. 서연은 하은과 걷고, 다인은 배구공을 옆구리에 낀 채 천천히 걷고, 유나는 책을 읽으며 간다. 아무도 이쪽을 보지 않는다.*"
+        "text": "*교문 앞. 서연은 하은과 행사 명단을 확인하고, 다인은 배구공을 옆구리에 낀 채 보폭을 줄이고, 유나는 펼친 책 위로 시선을 내린다. 셋은 각자 다른 출구로 향한다.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -128,17 +128,17 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*걸음이 멈춘다. 석양이 등 뒤로 길게 그림자를 만든다.*"
+        "text": "*행사장 스피커 전원이 꺼진다. 갈림길 안내판 아래에서 신발 끝이 방향을 바꾸지 못한 채 서 있다.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*주머니 속 핸드폰을 쥔다. 화면은 켜지지 않는다.*"
+        "text": "*주머니 속 휴대폰을 꺼낸다. 검은 화면에 행사 현수막만 비친다.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*주머니 속 핸드폰을 쥐었다. 화면을 켜지 않은 채 그대로 넣는다. 다리가 먼저 움직이고, 이름이 입 밖으로 나온다.*"
+        "text": "*휴대폰을 켜지 않은 채 주머니에 넣는다. 갈림길 반대편을 향해 두 걸음 내딛고 이름을 부른다.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -146,15 +146,15 @@
     },
     "after5_last_chance_2_d": {
         "name": "서연",
-        "text": "*돌아본다. 석양을 등지고 있다.*"
+        "text": "*서연이 돌아본다. 등 뒤의 행사 현수막이 바람에 한 번 접힌다.*"
     },
     "after5_last_chance_2_e": {
         "name": "서연",
-        "text": "...늦었어."
+        "text": "늦었어."
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*바람이 머리카락을 날린다. 서연은 그대로 서 있다.*"
+        "text": "*서연은 학생회 리본 끝을 손가락에 한 번 감았다가 놓는다.*"
     },
     "after5_last_chance_2_g": {
         "name": "서연",
@@ -170,7 +170,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "서연",
-        "text": "*서연의 손이 {name} 앞에 멈춘다.*"
+        "text": "*서연은 손바닥을 펴 보인 채 기다린다.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "서연",
-        "text": "*돌아본다. 발끝이 반쯤 돌아가 있다. 금방이라도 갈 수 있게.* ...왜."
+        "text": "*돌아본다. 발끝은 출구 쪽에 반쯤 남아 있다.* 왜."
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
@@ -187,7 +187,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "다인",
-        "text": "*걸음을 재촉하다가 {name} 앞에서 멈춘다.*"
+        "text": "*한 걸음 지나쳤다가 배구공으로 바닥을 눌러 세운다.*"
     },
     "after5_last_chance_2_m": {
         "name": "다인",
@@ -195,15 +195,15 @@
     },
     "after5_last_chance_2_n": {
         "name": "다인",
-        "text": "*그대로 굳는다. 손에 든 공이 천천히 내려간다.*"
+        "text": "*공을 쥔 팔이 옆구리에서 내려온다. 운동화 앞코가 다시 {name} 쪽을 향한다.*"
     },
     "after5_last_chance_2_o": {
         "name": "다인",
-        "text": "...돌아온 거야?"
+        "text": "돌아온 거야?"
     },
     "after5_last_chance_2_p": {
         "name": "다인",
-        "text": "*입술이 떨린다. 대답하기 전에 숨부터 삼킨다.*"
+        "text": "*입술을 한 번 깨물고 짧게 숨을 들이켠다.*"
     },
     "after5_last_chance_2_q": {
         "name": "다인",
@@ -215,7 +215,7 @@
     },
     "after5_last_chance_2_s": {
         "name": "다인",
-        "text": "...말해. 끝까지 들을게."
+        "text": "말해. 끝까지 들을게."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -223,7 +223,7 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "다인",
-        "text": "*멈추긴 한다. 근데 금방 웃지 못한다.* ...왜."
+        "text": "*한 걸음 지나친 뒤 돌아온다. 배구공을 가슴 앞에 안은 채 거리를 둔다.* 왜."
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
@@ -232,23 +232,23 @@
     },
     "after5_last_chance_yuna_2": {
         "name": "유나",
-        "text": "*멈춘다. 책을 품 쪽으로 끌어안는다. 돌아보는 데 2초쯤 걸린다.*"
+        "text": "*발소리가 두 걸음 더 간 뒤 끊긴다. 책을 품 쪽으로 끌어안고, 2초쯤 지나 돌아본다.*"
     },
     "after5_last_chance_yuna_3": {
         "name": "유나",
-        "text": "...돌아왔네."
+        "text": "돌아왔네."
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*발이 뒤로 물러나지 않는다. 유나는 재촉하지 않는다.*"
+        "text": "*둘 사이에 두 걸음 거리가 남아 있다. 유나는 책을 안은 채 기다린다.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "유나",
-        "text": "...듣고 갈게. 괜찮다고는 못 해도."
+        "text": "듣고 갈게. 괜찮다고는 못 해도."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*유나가 눈을 돌리지 않는다. {name}의 발이 한 걸음 앞으로 나간다.*"
+        "text": "*유나는 시선을 돌리지 않는다. 둘 사이 거리가 한 걸음만큼 줄어 있다.*"
     },
     "after5_last_chance_yuna_7": {
         "name": "유나",
@@ -260,19 +260,19 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "유나",
-        "text": "*천천히 돌아본다. 책을 끌어안은 팔에 힘이 들어간다.* ...왜."
+        "text": "*책장 사이로 돌아본다. 책을 끌어안은 팔에 힘이 들어간다.* 왜."
     },
     "after5_last_chance_choice": {
         "name": "{name}",
         "text": "*손바닥 안에서 핸드폰이 눌린다.*",
         "choices": [
             "지금 말한다",
-            "...아무 말도 하지 못했다"
+            "아직 말하지 않는다"
         ]
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*발끝이 멈춘다. 이름을 부른다.*"
+        "text": "*휴대폰을 주머니에 넣고 이름을 부른다.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -281,25 +281,25 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "서연",
-        "text": "*나란히 걸어가며.* ...늦었어. 그래도 들을게."
+        "text": "*공원 쪽으로 나란히 걷기 시작한다.* 늦었어. 그래도 들을게."
     },
     "after5_confess_react_seo_low": {
         "name": "서연",
-        "text": "*한참 말이 없다.* ...들었어. 지금은 그 정도로 해."
+        "text": "*횡단보도 신호가 한 번 바뀔 때까지 말이 없다.* 들었어. 지금은 그 정도로 해."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "다인",
-        "text": "*학교를 나서며.* 야, 너... 나 기다리긴 했어. 끝까지 말해."
+        "text": "*학교를 나서며 운동화 끈을 한 번 내려다본다.* 야, 너. 나 기다리긴 했어. 끝까지 말해."
     },
     "after5_confess_react_dain_low": {
         "name": "다인",
-        "text": "*숨을 고른다.* ...들었어. 바로 웃기는 좀 힘들어."
+        "text": "*배구공의 홈을 엄지로 따라간다.* 들었어. 바로 웃기는 좀 힘들어."
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "유나",
-        "text": "*나란히 걸었다.* ...알고는 있었어. 그래도 들을게."
+        "text": "*나란히 걷는다.* 알고는 있었어. 그래도 들을게."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -311,7 +311,7 @@
     },
     "after5_confess_react_yuna_c": {
         "name": "유나",
-        "text": "...그래도 직접 듣고 싶었어."
+        "text": "그래도 직접 듣고 싶었어."
     },
     "after5_confess_react_yuna_d": {
         "name": "유나",
@@ -327,7 +327,7 @@
     },
     "after5_confess_react_yuna_g": {
         "name": "유나",
-        "text": "...읽었으면 됐어."
+        "text": "읽었으면 됐어."
     },
     "after5_confess_react_yuna_h": {
         "name": "{name}",
@@ -339,7 +339,7 @@
     },
     "after5_confess_react_yuna_low": {
         "name": "유나",
-        "text": "*쪽지를 접어 쥔다.* ...읽었어. 근데 아직 결말은 못 정하겠어."
+        "text": "*쪽지를 접어 쥔다.* 읽었어. 근데 아직 결말은 못 정하겠어."
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
@@ -351,11 +351,11 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*목이 잠긴다. 아무 말도 나오지 않는다.*"
+        "text": "*휴대폰 화면을 끄고 입을 다문다.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*저녁 바람이 불어온다. 등 뒤의 그림자가 길어진다.*"
+        "text": "*저녁 바람에 행사 안내지가 발치까지 굴러온다. 주워 게시판 아래에 끼워 둔다.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",
@@ -367,7 +367,7 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*목에 걸려 있던 말을 꺼낸다. 하나를 고르지 못하겠다고. 세 사람 모두 표정이 굳는다.*"
+        "text": "*세 대화방을 번갈아 본 뒤 휴대폰을 내려놓는다. '한 사람을 고르지 못했어.' 세 사람의 시선이 화면에서 {name}에게 옮겨온다.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",

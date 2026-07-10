@@ -22,15 +22,15 @@
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "마지막 날. 아직 확신이 없다. 하지만 가야 한다."
+        "text": "마지막 날. 어느 쪽으로 갈지는 아직 정하지 못했다. 그래도 교문은 넘는다."
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "마지막 날. 잠금화면에 남은 이름 셋을 한 번씩 눌러 본다. 아무 대화방도 바로 열지 못한다."
+        "text": "마지막 날. 잠금화면에 남은 이름 셋을 차례로 누른다. 대화방은 열지 않은 채 화면을 끈다."
     },
     "morning5_gate": {
         "name": "{name}",
-        "text": "*교문 앞에서 소매를 한 번 당긴다. 손목에 더는 자국이 남지 않는다.*"
+        "text": "*교문 앞에서 소매를 걷어 올린다. 손목에 남던 붉은 자국은 없다.*"
     },
     "morning5_seo_note_1": {
         "name": "{name}",
@@ -38,11 +38,11 @@
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
-        "text": "*복도 문예부 전시 코너를 지나간다. 게시판 앞에서 발이 멈춘다.*"
+        "text": "*복도 문예부 전시 코너를 지나다 게시판의 빈 압정 네 개를 발견한다.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
-        "text": "*게시판에 핀 자국만 남아 있다. 소설이 붙어 있었을 자리. — 떼어 간 거다. 아니, 처음부터 붙이지 않은 건가.*"
+        "text": "*게시판에는 압정 자국만 남아 있다. 소설이 붙었다 떼어진 건지, 처음부터 비어 있었는지는 알 수 없다.*"
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*게시판 아래 구석에 작게 — '이건 소설이야. 진짜가 아니야.' 지우개로 문지른 자국이 남아 있다.*"
+        "text": "*게시판 아래 구석에는 작은 글씨가 남아 있다. '이건 소설이야. 진짜가 아니야.' 그 아래로 지우개 자국이 번져 있다.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -74,7 +74,7 @@
     },
     "morning5_dain_1_b": {
         "name": "{name}",
-        "text": "...허락도 없이?"
+        "text": "허락도 없이?"
     },
     "morning5_dain_2": {
         "name": "다인",
@@ -99,11 +99,11 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "담임선생님",
-        "text": "*교탁에 앉아 있다. — 원고가 아니라, 봉투를 들고 있다. 갈색 봉투.*"
+        "text": "*담임은 교탁에 앉아 갈색 봉투를 들고 있다. 원고지는 보이지 않는다.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "담임선생님",
-        "text": "...아."
+        "text": "아, 왔네."
     },
     "hidden_homeroom_d5_1_c": {
         "name": "{name}",
@@ -111,7 +111,7 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "담임선생님",
-        "text": "*봉투를 들어 보이며* ...이거."
+        "text": "*갈색 봉투를 들어 보인다.* 이거."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
@@ -143,11 +143,11 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "담임선생님",
-        "text": "*멈춘다. 표정은 금방 돌아왔지만, 봉투가 손 안에서 조금 구겨졌다.*"
+        "text": "*봉투 모서리가 손 안에서 조금 구겨졌다. 담임은 접힌 자리를 엄지로 편다.*"
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "담임선생님",
-        "text": "...아직 끝까지 못 썼어."
+        "text": "아직 끝까지 못 썼어."
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "담임선생님",
-        "text": "...그래."
+        "text": "그래."
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "담임선생님",
@@ -167,7 +167,7 @@
     },
     "hidden_homeroom_d5_praise_trap_7": {
         "name": "{name}",
-        "text": "선생님—"
+        "text": "선생님."
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "담임선생님",
@@ -191,11 +191,11 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "담임선생님",
-        "text": "*멈춘다. 종이 끝이 손 안에서 조금 휘어진다.*"
+        "text": "*종이 끝이 손 안에서 조금 휘어진다. 담임은 입술을 다문 채 접힌 끝을 반듯하게 편다.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "담임선생님",
-        "text": "...여기서?"
+        "text": "여기서?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
@@ -203,7 +203,7 @@
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "담임선생님",
-        "text": "그래. — 잠깐만."
+        "text": "그래. 잠깐만."
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "담임선생님",
-        "text": "...거기까지 봤어?"
+        "text": "거기까지 봤어?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "담임선생님",
@@ -219,7 +219,7 @@
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "담임선생님",
-        "text": "*말끝을 삼킨다. 비어 있는 마지막 줄만큼 교실이 조용해진다.*"
+        "text": "*마지막 줄을 손끝으로 짚는다. 창밖 행사 안내가 끝나자 종이 넘기는 소리만 남는다.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "담임선생님",
-        "text": "*웃는다. 클립보드가 책상 위로 내려간다.*"
+        "text": "*클립보드를 책상 위에 내려놓고 빨간 펜 뚜껑을 닫는다.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "담임선생님",
@@ -243,7 +243,7 @@
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "*원고를 다시 안는다. 담임이 반송 스티커 자국을 엄지로 문지른다. 종이 모서리가 손바닥 안에서 조금 구겨진다.*"
+        "text": "*합평본을 다시 받아 든다. 담임은 봉투에 남은 반송 스티커 자국을 엄지로 한 번 문지른다.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "담임선생님",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
-        "text": "*봉투가 손 안에서 약간 휜다. 담임의 손이 아직 책상 끝에 남아 있다.*"
+        "text": "*담임은 책상 끝에 손을 얹은 채 봉투가 가방에 들어가는 걸 확인한다.*"
     },
     "hidden_homeroom_d5_6_d": {
         "name": "담임선생님",
@@ -287,7 +287,7 @@
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
-        "text": "*대답하기 전에 봉투 모서리를 먼저 만지게 된다.*"
+        "text": "*대답을 기다리는 동안 봉투 모서리의 번호표가 시야에 들어온다.*"
     },
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "hidden_homeroom_d5_6_m": {
         "name": "담임선생님",
-        "text": "*머리카락을 넘기며* ...감상문은 안 받아."
+        "text": "*흘러내린 머리카락을 귀 뒤로 넘긴다.* 감상문은 안 받아."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
@@ -303,11 +303,11 @@
     },
     "hidden_homeroom_d5_6_o": {
         "name": "담임선생님",
-        "text": "*작게 웃으며* ...맞아. 한 줄이라도 써 줘."
+        "text": "*입술 끝이 올라간다.* 맞아. 한 줄이라도 써 줘."
     },
     "hidden_homeroom_d5_6_p": {
         "name": "담임선생님",
-        "text": "*문 앞에서 멈춰 문예부 일정표를 한 번 확인한다.*"
+        "text": "*문 앞에 붙은 문예부 일정표로 시선을 옮긴다.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "담임선생님",
@@ -411,11 +411,11 @@
     },
     "hidden_nurse_d5_3_h": {
         "name": "보건선생님",
-        "text": "*보건실 안으로 들어가려다 — 멈춘다.*"
+        "text": "*보건실 문턱을 넘기 전 예약 명단을 다시 펼친다.*"
     },
     "hidden_nurse_d5_3_i": {
         "name": "보건선생님",
-        "text": "...{name}."
+        "text": "{name}, 잠깐."
     },
     "hidden_nurse_d5_4": {
         "name": "보건선생님",

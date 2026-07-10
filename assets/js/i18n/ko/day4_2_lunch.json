@@ -5,7 +5,7 @@
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
-        "text": "*뭐라고 하지?*",
+        "text": "*서연의 가방끈이 손가락에 한 번 더 감긴다.*",
         "choices": [
             "오늘 예쁘다.",
             "신경 많이 썼다, 오늘."
@@ -21,7 +21,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "서연",
-        "text": "*눈길을 돌리며 머리카락을 귀 뒤로 넘긴다.* ...바람 좀 쐬자."
+        "text": "*분수대 물소리 쪽으로 시선을 돌린다.* 바람 좀 쐬자."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -29,11 +29,11 @@
     },
     "date_seo_pretty_high_3_b": {
         "name": "서연",
-        "text": "*머리카락을 넘기며* ...됐어."
+        "text": "*가방끈을 고쳐 쥔다.* 됐어."
     },
     "date_seo_pretty_high_4": {
         "name": "서연",
-        "text": "*대답 대신 머리카락을 귀 뒤로 넘겼다. 같은 손이 곧바로 다시 올라갔다.*"
+        "text": "*귀 뒤로 넘긴 머리카락이 다시 흘러내린다. 올라가던 손은 가방끈으로 돌아간다.*"
     },
     "date_seo_pretty_low": {
         "name": "서연",
@@ -65,11 +65,11 @@
     },
     "date_seo_flower_b": {
         "name": "서연",
-        "text": "*걸음을 멈추며* ...들어가 볼까?"
+        "text": "*꽃집 유리문 쪽으로 발끝을 돌린다.* 들어가 볼까?"
     },
     "date_seo_flower_2": {
         "name": "서연",
-        "text": "*꽃집 문을 밀었다. 종소리가 울린다. 작은 화분을 하나 고른다. 다육이.*"
+        "text": "*꽃집 문을 밀자 종이 울린다. 서연은 진열대를 한 바퀴 돌고 작은 다육이 화분 하나를 고른다.*"
     },
     "date_seo_succulent_2": {
         "name": "서연",
@@ -93,7 +93,7 @@
     },
     "date_seo_end_c": {
         "name": "서연",
-        "text": "*걸음을 멈추며* ...오늘."
+        "text": "*화분 포장지가 손안에서 작게 바스락거린다.* 오늘."
     },
     "date_seo_end_d": {
         "name": "서연",
@@ -105,7 +105,7 @@
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
-        "text": "*뭐라고 하지?*",
+        "text": "*컵 너머로 유나의 시선이 잠깐 올라온다.*",
         "choices": [
             "사복 입은 유나는 처음 봐.",
             "오늘은 좀 달라 보이네."
@@ -113,11 +113,11 @@
     },
     "date_yuna_pretty_high": {
         "name": "유나",
-        "text": "*고개를 숙인다. 컵 가장자리만 오래 본다.*"
+        "text": "*컵 가장자리만 오래 본다. 은백색 머리카락이 뺨 옆으로 흘러내린다.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "유나",
-        "text": "...그거."
+        "text": "그거."
     },
     "date_yuna_pretty_high_3": {
         "name": "{name}",
@@ -137,15 +137,15 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "유나",
-        "text": "*눈을 컵으로 내리며* ...됐어."
+        "text": "*컵 뚜껑의 물방울을 엄지로 훑는다.* 됐어."
     },
     "date_yuna_pretty_low": {
         "name": "유나",
-        "text": "...그런 말, 익숙하진 않네."
+        "text": "그런 말, 익숙하진 않네."
     },
     "date_yuna_bright": {
         "name": "유나",
-        "text": "...뭐가 다른 건데."
+        "text": "뭐가 다른 건데."
     },
     "date_yuna_bookstore": {
         "name": "{name}",
@@ -161,7 +161,7 @@
     },
     "date_yuna_bookstore_3": {
         "name": "유나",
-        "text": "...다행이다. 내가 먼저 보여준 거네."
+        "text": "다행이다. 내가 먼저 보여준 거네."
     },
     "date_yuna_earphone": {
         "name": "유나",
@@ -169,7 +169,7 @@
     },
     "date_yuna_earphone_2": {
         "name": "유나",
-        "text": "...들어봐."
+        "text": "들어봐."
     },
     "date_yuna_earphone_2_b": {
         "name": "{name}",
@@ -181,15 +181,15 @@
     },
     "date_yuna_oldbook": {
         "name": "{name}",
-        "text": "*헌책방을 지나간다. 유나가 걸음을 멈춘다.*"
+        "text": "*헌책방 앞을 두 걸음 지나친 유나가 되돌아온다.*"
     },
     "date_yuna_oldbook_b": {
         "name": "유나",
-        "text": "...여기."
+        "text": "여기."
     },
     "date_yuna_oldbook_c": {
         "name": "{name}",
-        "text": "*오래된 책 한 권을 꺼낸다. 페이지를 넘기며.*"
+        "text": "*오래된 책 한 권을 꺼내 페이지를 넘긴다.*"
     },
     "date_yuna_oldbook_2": {
         "name": "유나",
@@ -205,11 +205,11 @@
     },
     "date_yuna_end": {
         "name": "유나",
-        "text": "*{name}을 본다. 넘기던 페이지가 손 안에서 멈춘다.*"
+        "text": "*{name}을 본다. 페이지 모서리가 손가락 아래 접힌다.*"
     },
     "date_yuna_end_b": {
         "name": "유나",
-        "text": "*서점 밖으로 나서기 직전, 쪽지를 건넨다. 말없이.*"
+        "text": "*서점 밖으로 나서기 직전, 말 대신 쪽지를 건넨다.*"
     },
     "date_yuna_end_c": {
         "name": "{name}",
@@ -233,7 +233,7 @@
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*뭐라고 하지?*",
+        "text": "*다인이 모자챙을 한 번 눌러 쓰고 기다린다.*",
         "choices": [
             "그 캡모자 좋은데.",
             "운동복 잘 어울린다."
@@ -241,7 +241,7 @@
     },
     "date_dain_pretty_high": {
         "name": "다인",
-        "text": "*멈춘다. 캡모자를 푹 눌러쓰는 바람에 얼굴이 반쯤 가려졌다.*"
+        "text": "*다인이 캡모자를 푹 눌러써 얼굴 절반을 가린다.*"
     },
     "date_dain_pretty_high_2": {
         "name": "다인",
@@ -253,7 +253,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "다인",
-        "text": "*캡모자 챙을 붙잡은 채 한동안 손을 내리지 못했다.*"
+        "text": "*모자챙 아래로 귀끝이 붉어진다. 손가락은 챙 끝에 그대로 걸려 있다.*"
     },
     "date_dain_pretty_low": {
         "name": "다인",
@@ -289,15 +289,15 @@
     },
     "date_dain_arcade_3_c": {
         "name": "다인",
-        "text": "*자리에서 벌떡 일어나며* 풀콤보. 봤어?"
+        "text": "*자리에서 벌떡 일어난다.* 풀콤보. 봤어?"
     },
     "date_dain_rhythm": {
         "name": "다인",
-        "text": "*화면을 가리키며* 이 스코어, 역대 2등이야."
+        "text": "*화면의 점수를 가리킨다.* 이 스코어, 역대 2등이야."
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
-        "text": "...대단해."
+        "text": "대단해."
     },
     "date_dain_rhythm_3": {
         "name": "다인",
@@ -305,15 +305,15 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'무릎 안 써도 되니까'. 다인은 웃으며 말했지만, 쇼윈도 유리에 비친 무릎을 한 번 본다.*"
+        "text": "*'무릎 안 써도 되니까.' 다인은 말끝에 웃고는 쇼윈도 유리에 비친 오른쪽 무릎을 한 번 본다.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
-        "text": "*오락실을 나와 거리로 나왔다. 스포츠용품점을 지나간다. 다인이 쇼윈도 앞에서 멈춘다. 배구화가 진열돼 있다.*"
+        "text": "*오락실을 나와 스포츠용품점 앞을 지난다. 다인이 배구화가 놓인 쇼윈도 앞에서 발을 늦춘다.*"
     },
     "date_dain_shop": {
         "name": "다인",
-        "text": "......"
+        "text": "*쇼윈도 안 배구화의 끈을 눈으로 따라간다. 모자챙 아래 입술이 다물린다.*"
     },
     "date_dain_shop_2": {
         "name": "{name}",
@@ -321,15 +321,15 @@
     },
     "date_dain_shop_2_b": {
         "name": "다인",
-        "text": "*고개를 돌리며* 아무것도 아냐! 가자!"
+        "text": "*진열대 반대쪽으로 턱을 돌린다.* 아무것도 아냐! 가자!"
     },
     "date_dain_shop_3": {
         "name": "다인",
-        "text": "*캡모자를 눌러 쓰며* ...쳐다보지 마."
+        "text": "*두 손을 주머니에 찔러 넣고 앞서 걷는다.* 쳐다보지 마."
     },
     "date_dain_shop_3_b": {
         "name": "다인",
-        "text": "*캡모자 아래서* ...한 번만 더 말하면 때린다."
+        "text": "*보폭을 더 넓힌다.* 한 번만 더 물으면 진짜 먼저 간다."
     },
     "date_dain_end": {
         "name": "{name}",
@@ -353,6 +353,6 @@
     },
     "pre_confess_callback": {
         "name": "{name}",
-        "text": "*주머니 안의 핸드폰이 무겁다. 알림은 없고, 화면에는 검은 유리만 비친다.*"
+        "text": "*주머니 속 핸드폰 모서리가 손바닥에 눌린다. 알림은 없고, 화면에는 검은 유리만 비친다.*"
     }
 }
