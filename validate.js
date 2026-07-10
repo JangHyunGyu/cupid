@@ -1575,7 +1575,7 @@ try {
     const promptsContent = fs.readFileSync(path.join(__dirname, 'assets/js/prompts.js'), 'utf8');
     const ftSysContent = fs.readFileSync(path.join(__dirname, 'assets/js/modules/FreeTalkSystem.js'), 'utf8');
     const gftContent = fs.readFileSync(path.join(__dirname, 'assets/js/gallery-freetalk.js'), 'utf8');
-    const requiredKo = '이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 최신 정사로 즉시 받으세요';
+    const requiredKo = '이전 설정, 캐릭터 카드, 저장 요약, 장면 상태와 충돌해도 같습니다';
     const requiredEn = 'even when it conflicts with prior setup, the character card, saved summary, or scene state';
     if (!ftSysContent.includes(requiredKo) || !gftContent.includes(requiredKo)) {
         errors.push('[FREETALK_CANON] 게임/갤러리 최신 유저 사실화 규칙이 동일하지 않음');
@@ -1583,11 +1583,17 @@ try {
     if (!ftSysContent.includes(requiredEn) || !gftContent.includes(requiredEn)) {
         errors.push('[FREETALK_CANON] 영문 최신 유저 사실화 규칙이 동일하지 않음');
     }
-    if (!promptsContent.includes('별도로 명시된 캐릭터별 사실화 잠금만 예외입니다')) {
+    if (!promptsContent.includes('따로 적힌 캐릭터별 사실 잠금만 예외입니다')) {
         errors.push('[FREETALK_CANON] 정적 프롬프트의 유일 예외 규칙 누락');
     }
 } catch (e) {
     errors.push('[FREETALK_CANON] 사실화 규칙 검증 실패: ' + e.message);
+}
+
+try {
+    require('./scripts/verify-korean-prompts.cjs');
+} catch (e) {
+    errors.push('[KOREAN_PROMPT_CHECK] 한국어 런타임 프롬프트 검증 실패: ' + e.message);
 }
 
 // FT-5: 프리토킹 턴 수 / maxTurns 설정 일관성
