@@ -18,7 +18,7 @@
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*Cuando abrí los ojos, solo me vino a la mente un nombre primero.*"
+        "text": "*Vuelvo a comprobar la notificación.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Silencio incómodo. — Y la profe habla primero.*"
+        "text": "*La conversación se apaga.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Profesora",

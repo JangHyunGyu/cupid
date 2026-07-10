@@ -21,7 +21,7 @@
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
-        "text": "*Seoyeon em silêncio. Eu é que preciso falar primeiro.*"
+        "text": "*Seoyeon fica em silêncio.*"
     },
     "wall_seo_pre_low_1b": {
         "name": "{name}",
@@ -165,7 +165,7 @@
     },
     "wall_seo_pinky_5_b": {
         "name": "{name}",
-        "text": "*O mindinho que cortava o ar no primeiro dia agora se engancha no meu. A ponta do dedo de Seoyeon está fria.*"
+        "text": "*A mão de Seoyeon toca minha palma. Está fria.*"
     },
     "wall_seo_line_choice": {
         "name": "Seoyeon",
@@ -214,7 +214,7 @@
     },
     "wall_seo_after_line_5": {
         "name": "Seoyeon",
-        "text": "Hoje parece tudo bem ficar sem uma expressão ensaiada."
+        "text": "Me dá uma, se tiver."
     },
     "wall_seo_skin_check": {},
     "wall_seo_skin70_1": {
@@ -347,7 +347,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*Dain com uma expressão que eu nunca vi. Dain sem rir.*"
+        "text": "*Dain não sorri.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -529,7 +529,7 @@
     },
     "wall_dain_skin70_2": {
         "name": "Dain",
-        "text": "Não solta."
+        "text": "Fica assim só mais um pouco."
     },
     "wall_dain_skin70_3": {
         "name": "{name}",
@@ -641,7 +641,7 @@
     },
     "wall_yuna_14_c": {
         "name": "Yuna",
-        "text": "...Nada."
+        "text": "...Não havia nada."
     },
     "wall_yuna_14_d": {
         "name": "Yuna",
@@ -669,7 +669,7 @@
     },
     "wall_yuna_16": {
         "name": "Yuna",
-        "text": "Mas você veio todo dia. Calado. — Sem sumir."
+        "text": "Mas você veio todos os dias. Em silêncio."
     },
     "wall_yuna_16_b": {
         "name": "Yuna",

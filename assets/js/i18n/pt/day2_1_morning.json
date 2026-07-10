@@ -19,7 +19,7 @@
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
-        "text": "*Duas reações sutis. — Devo notar ou fingir que não vi?*"
+        "text": "*Seoyeon dá uma batidinha na prancheta.*"
     },
     "morning2_greet_dain_1": {
         "name": "Dain",
@@ -39,11 +39,11 @@
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
-        "text": "*Não dá pra saber se é ironia ou admiração. Yuna não reage. Mas a mão que escrevia o bilhete parou.*"
+        "text": "*A mão de Yuna para no meio de um bilhete.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*Eu ri, mas o som da prancheta sendo tocada veio à mente um pouco depois.*"
+        "text": "*O toque na prancheta chega um instante atrasado.*"
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",

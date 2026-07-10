@@ -640,6 +640,7 @@ class FreeTalkSystem {
                 es: `\n- Contexto de pareja: Actualmente estás saliendo con el usuario. Mantén la cercanía, pero usa apodos cariñosos solo cuando la escena y la voz del personaje lo pidan.`,
                 ja: `\n- 恋人関係の文脈: あなたは現在ユーザーと付き合っています。親密さは保ちつつ、愛称は場面とキャラの声に自然に合う時だけ使ってください。`,
                 fr: `\n- Contexte amoureux : Vous sortez actuellement avec l'utilisateur. Gardez l'intimité, mais utilisez les surnoms tendres seulement quand la scène et la voix du personnage les appellent.`,
+                de: `\n- Beziehungskontext: Du bist mit dem Nutzer zusammen. Bewahre die Vertrautheit, aber nutze Kosenamen nur, wenn Szene und Charakterstimme wirklich dazu passen.`,
                 pt: `\n- Contexto de namoro: Você está atualmente namorando o usuário. Mantenha a intimidade, mas use apelidos carinhosos só quando a cena e a voz da personagem pedirem.`
             }[lang] || `\n- Dating context: You are currently dating the user. Keep the relationship intimate, but use pet names only when the scene and character voice naturally call for them.`);
 
@@ -653,6 +654,7 @@ class FreeTalkSystem {
                     es: `\n- CELOS: Has notado que el usuario también está saliendo con otros (${otherDatingChars.join(", ")}).`,
                     ja: `\n- 嫉妬指示: ユーザーが他の人(${otherDatingChars.join("、")})とも付き合っていることに気づいています。`,
                     fr: `\n- JALOUSIE : Vous avez remarqué que l'utilisateur sort aussi avec d'autres (${otherDatingChars.join(", ")}).`,
+                    de: `\n- EIFERSUCHT: Du hast bemerkt, dass der Nutzer auch mit anderen zusammen ist (${otherDatingChars.join(", ")}).`,
                     pt: `\n- CIÚMES: Você percebeu que o usuário também está namorando com outros (${otherDatingChars.join(", ")}).`
                 }[lang] || `\n- JEALOUSY: You noticed the user is also dating others (${otherDatingChars.join(", ")}).`);
             }
@@ -668,8 +670,8 @@ class FreeTalkSystem {
         this._isRemote = isRemote;
 
         const mediumInstruction = isRemote
-            ? ({ es: "\n- MEDIO: Comunicándose por TELÉFONO/MENSAJERÍA.", ja: "\n- メディア: 電話/メッセンジャーで連絡中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Communication par TÉLÉPHONE/MESSAGERIE.", de: "\n- MEDIUM: Kommunikation per TELEFON/MESSENGER.", pt: "\n- MEIO: Comunicando via TELEFONE/MENSAGEIRO." }[lang] || "\n- 매체 지침: 전화/메시지로 연락 중.")
-            : ({ es: "\n- MEDIO: Hablando CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN PERSONNE.", de: "\n- MEDIUM: Gespräch VON ANGESICHT ZU ANGESICHT.", pt: "\n- MEIO: Conversando PESSOALMENTE." }[lang] || "\n- 매체 지침: 대면 대화 중.");
+            ? ({ es: "\n- MEDIO: Conversación por TELÉFONO o MENSAJES.", ja: "\n- メディア: 電話またはメッセージで会話中。", en: "\n- MEDIUM: Communicating via PHONE/MESSENGER.", fr: "\n- MOYEN : Échange par TÉLÉPHONE ou MESSAGERIE.", de: "\n- MEDIUM: Gespräch per TELEFON oder CHAT.", pt: "\n- MEIO: Conversa por TELEFONE ou MENSAGENS." }[lang] || "\n- 매체 지침: 전화/메시지로 연락 중.")
+            : ({ es: "\n- MEDIO: Conversación CARA A CARA.", ja: "\n- メディア: 対面で会話中。", en: "\n- MEDIUM: Talking FACE-TO-FACE.", fr: "\n- MOYEN : Conversation EN FACE À FACE.", de: "\n- MEDIUM: Persönliches Gespräch VOR ORT.", pt: "\n- MEIO: Conversa PRESENCIAL." }[lang] || "\n- 매체 지침: 대면 대화 중.");
 
         // 시스템 프롬프트 생성
         const rawSystemPrompt = window.buildSystemPrompt ? window.buildSystemPrompt({
@@ -678,7 +680,7 @@ class FreeTalkSystem {
             sceneName: charKey,
             displayName: scene.name,
             locationName,
-            context: scene.context || ({ es: "Continuando la escena con el protagonista.", ja: "主人公の挿入に続いて場面を進行中です。", en: "Continuing the scene from the protagonist's latest insert.", fr: "La scène continue après l'insertion du protagoniste.", de: "Die Szene wird nach dem Einsatz des Protagonisten fortgesetzt.", pt: "Continuando a cena após a inserção do protagonista." }[lang] || "주인공의 삽입에 이어 장면을 진행 중입니다."),
+            context: scene.context || ({ es: "La escena continúa a partir de la última intervención del protagonista.", ja: "主人公の直前の発言や行動から場面を続けています。", en: "Continuing the scene from the protagonist's latest line or action.", fr: "La scène reprend après la dernière parole ou action du protagoniste.", de: "Die Szene wird nach der letzten Äußerung oder Handlung des Protagonisten fortgesetzt.", pt: "A cena continua a partir da última fala ou ação do protagonista." }[lang] || "주인공의 직전 말이나 행동에 이어 장면을 진행 중입니다."),
             affinity: charStats.affinity,
             extraGuideline: scene.extra_guideline || "",
             gameContext,

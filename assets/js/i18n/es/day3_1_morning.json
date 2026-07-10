@@ -508,7 +508,7 @@
     },
     "hidden_nurse_d3_5_h": {
         "name": "Enfermera",
-        "text": "*La enfermera guarda silencio un momento. Luego.*"
+        "text": "*Sigue un breve silencio.*"
     },
     "hidden_nurse_d3_5_i": {
         "name": "Enfermera",
@@ -576,7 +576,7 @@
     },
     "hidden_nurse_d3_6_d": {
         "name": "Enfermera",
-        "text": "*La enfermera se detiene brevemente en 'huir'. Sus dedos tocan el estetoscopio, se mueven hacia el cajón del cuaderno, luego retroceden.*"
+        "text": "*Su mano roza el estetoscopio, se dirige hacia el cajón del cuaderno y se detiene.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Enfermera",
@@ -774,7 +774,7 @@
     "morning3_multi_from_yuna": {},
     "morning3_end": {
         "name": "{name}",
-        "text": "*Los planes del fin de semana se solapan... Sin darme cuenta, las clases siguen y se acerca la hora del almuerzo.*"
+        "text": "*Las clases continúan y, antes de darme cuenta, se acerca la hora de comer.*"
     },
     "morning3_end_b": {
         "name": "Yuna",
