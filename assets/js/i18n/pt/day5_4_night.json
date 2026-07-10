@@ -18,7 +18,7 @@
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*No dia da formatura, a professora me entrega uma cópia da carta de recomendação e meu registro de leituras. Até o fim, é uma despedida de professora.*"
+        "text": "*No dia da formatura, a professora me entrega uma cópia da carta de recomendação e meu registro de leituras. Uma despedida de professora até o fim.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
@@ -46,7 +46,7 @@
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Professora",
-        "text": "...Que coincidência. *Abaixa os materiais do evento.* Se tiver tempo, quer se sentar?"
+        "text": "...Que coincidência. *Pousa os materiais do evento.* Se tiver tempo, quer se sentar?"
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Professora",
@@ -222,7 +222,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Depois da despedida, {name} caminha até o fim do corredor e olha para trás. A professora está junto à janela, despedindo-se dos formandos. {name} inclina levemente a cabeça antes de sair da escola.*"
+        "text": "*Depois da despedida, {name} caminha até o fim do corredor e olha para trás. A professora está junto à janela, despedindo-se dos formandos. Antes de sair da escola, faz uma leve reverência.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -395,7 +395,7 @@
     },
     "hidden_good_nurse_1": {
         "name": "Enfermeira",
-        "text": "*Depois da cerimônia de formatura, a porta da enfermaria se abre pela última vez. Juwon toma café junto à janela, vê {name} e abaixa a xícara.* O que foi? Hoje você não deve estar sentindo dor."
+        "text": "*Depois da cerimônia de formatura, a porta da enfermaria se abre pela última vez. Juwon toma café junto à janela, vê {name} e abaixa a xícara.* O que traz você aqui? Hoje não tem nada doendo, tem?"
     },
     "hidden_good_nurse_2": {
         "name": "Enfermeira",
