@@ -51,7 +51,7 @@ const AI_MODEL_ID = "deepseek-v4-flash";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.73";
+const ASSET_VERSION = "2.9.74";
 
 /**
  * 프리토킹(자유 대화) 기본 최대 턴 수
@@ -158,7 +158,8 @@ const REGISTERED_CG_IDS = new Set([
 const CHAR_NAME_MAP = Object.freeze({
     // Korean
     "서연": "Seoyeon", "유나": "Yuna", "다인": "Dain",
-    "담임선생님": "Teacher", "보건선생님": "Nurse",
+    "담임선생님": "Teacher", "담임": "Teacher",
+    "보건선생님": "Nurse", "보건": "Nurse",
     // English
     "Seoyeon": "Seoyeon", "Yuna": "Yuna", "Dain": "Dain",
     "Teacher": "Teacher", "Nurse": "Nurse",

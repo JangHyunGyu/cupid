@@ -97,7 +97,7 @@
 
 (function () {
     // 로더 설정 로드 (동기)
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.73"><\/script>');
+    document.write('<script src="assets/js/loaders/config.js?v=2.9.74"><\/script>');
 })();
 
 // config.js 로드 후 실행
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 갤러리 스크립트 로드 (document.write는 동기적)
 (function () {
     const basePath = 'assets/js/';
-        const version = '2.9.73';
+    const version = '2.9.74';
 
     const scripts = [
         // 0. 모듈 설정 (ASSET_VERSION 등)
@@ -116,6 +116,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // 1. 데이터 및 진행도 (의존성 없음)
         'gallery-data.js',
         'gallery-progress.js',
+        // 한국어 대화 예시와 공통 프롬프트 규칙
+        'example-dialogues-ko.js',
+        'prompts.js',
 
         // 2. 서브 렌더러 (GalleryUI에서 사용)
         'gallery-ui-character.js',
