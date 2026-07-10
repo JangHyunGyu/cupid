@@ -893,11 +893,11 @@
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Ein paar Tage später, am Schultor im Regen. Unter dem Schirm siehst du, wie sie sich entfernt, doch du rufst weder ihren Namen noch läufst du ihr nach.*"
+        "text": "*Ein paar Tage später, am Schultor im Regen. Unter meinem Schirm sehe ich ihr nach, doch ich rufe weder ihren Namen noch laufe ich ihr hinterher.*"
     },
     "confess_fail_2": {
         "name": "{name}",
-        "text": "*Du bleibst stehen und öffnest den Chat. Nach mehrmaligem Tippen und Löschen bleibt nur ein Satz übrig.*"
+        "text": "*Ich bleibe stehen und öffne den Chat. Nach mehrmaligem Tippen und Löschen bleibt nur ein Satz übrig.*"
     },
     "confess_fail_3": {
         "name": "{name}",
@@ -1069,7 +1069,7 @@
     },
     "friend_3": {
         "name": "{name}",
-        "text": "*Ich schreibe bis zum Ende: ‚Ich habe gerade nicht den Mut, unsere Beziehung verändern zu wollen. Aber ich wollte dir sagen, dass ich dir dankbar bin.‘ Dann sende ich es.*"
+        "text": "*Ich schreibe den Satz zu Ende: ‚Im Moment fehlt mir der Mut, unsere Beziehung zu verändern. Aber ich möchte dir sagen, dass ich dir dankbar bin.‘ Dann schicke ich ihn ab.*"
     },
     "friend_route_check": {
         "name": "System",
@@ -1129,7 +1129,7 @@
     },
     "mayhem_3": {
         "name": "Dain",
-        "text": "*Dain lachte wie immer. \"Wie geht es dir.\" Das Ende seiner Worte fiel zu Boden. Soweit ich wusste, gab es kein Ausrufezeichen.*"
+        "text": "*Dain lächelt wie immer. ‚Mach's gut.‘ Ihre Stimme verliert am Satzende jede Kraft.*"
     },
     "mayhem_4": {
         "name": "{name}",
@@ -1141,11 +1141,11 @@
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*Die Bestätigung war raus, aber in jedem Chat stapelten sich unbeantwortete Fragen.*"
+        "text": "*Die Worte ‚Ich mag dich‘ sind gefallen, doch in jedem Chat stapeln sich ungelesene Fragen.*"
     },
     "mayhem_7": {
         "name": "{name}",
-        "text": "*Sehen Sie sich das nicht gesendete Memo unter Sojungs Foto an. Diesmal war die gesendete Sprechblase lang. Der Bildschirm wird so wie er ist dunkel.*"
+        "text": "*Ich sehe die nie verschickte Notiz unter Sojeongs Foto. Darunter zieht sich nun eine lange Reihe gesendeter Sprechblasen. Der Bildschirm wird dunkel.*"
     },
     "mayhem_8": {
         "name": "System",
@@ -1153,7 +1153,7 @@
     },
     "day5_ending_harem": {
         "name": "{name}",
-        "text": "*Ich mag euch alle. — Als diese Worte meinen Mund verließen, erstarrten alle drei Gesichter gleichzeitig.*"
+        "text": "*Die Antwort bleibt mir im Hals stecken. Das Lächeln aller drei verstummt im selben Moment.*"
     },
     "harem_1": {
         "name": "Seoyeon",
@@ -1189,7 +1189,7 @@
     },
     "harem_8": {
         "name": "System",
-        "text": "─── HAREM END ───"
+        "text": "─── UNRESOLVED END ───"
     },
     "day5_credits": {
         "name": "",

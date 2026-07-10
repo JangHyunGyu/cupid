@@ -273,7 +273,7 @@
     },
     "date_dain_arcade_2": {
         "name": "ダイン",
-        "text": "さあ、勝負だ！ 負けた方がジュース！"
+        "text": "さあ、勝負。負けた方がジュースね。"
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -289,7 +289,7 @@
     },
     "date_dain_arcade_3_c": {
         "name": "ダイン",
-        "text": "*キャーと叫びながら* フルコンボ！！ 見た？！"
+        "text": "*勢いよく立ち上がって* フルコンボ！　見た？"
     },
     "date_dain_rhythm": {
         "name": "ダイン",

@@ -1,7 +1,7 @@
 {
     "after5_start": {
         "name": "{name}",
-        "text": "*Die Veranstaltung neigt sich dem Ende zu. Ich begegne den beiden, die ich nicht gewählt habe, ganz natürlich.*"
+        "text": "*Die Veranstaltung neigt sich dem Ende zu. Auf dem Flur begegne ich den beiden, für die ich mich nicht entschieden habe.*"
     },
     "after5_waited_start_branch": {
         "name": "System",
@@ -21,7 +21,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Nun, ich habe es erwartet. Weil du dich nicht so bewegt hast, wie ich es von Anfang an erwartet hatte."
+        "text": "Nun, ich habe es erwartet."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
-        "text": "*Ich ging zurück in den Flur.*"
+        "text": "*Ich gehe zurück auf den Flur.*"
     },
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
@@ -83,7 +83,7 @@
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
-        "text": "*Sie grinst und boxt mir auf die Schulter. — Dieselbe Kraft wie am ersten Tag.*"
+        "text": "*Dain boxt mir leicht gegen die Schulter.*"
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
@@ -99,7 +99,7 @@
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
-        "text": "*Ich verließ die Turnhalle und ging zur Rückseite der Schule.*"
+        "text": "*Ich verlasse die Turnhalle und gehe zur Rückseite der Schule.*"
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
@@ -107,11 +107,11 @@
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*Es fällt mir nicht leicht, mich zu entschuldigen. Ich habe vor dem Schultor nur einmal die Hand gehoben. Danke schön.*"
+        "text": "*Vor dem Schultor hebe ich nur einmal die Hand.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
-        "text": "*Ich ging zur Rückseite der Schule.*"
+        "text": "*Ich gehe zur Rückseite der Schule.*"
     },
     "after5_sunset_1": {
         "name": "{name}",
@@ -132,13 +132,13 @@
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*Der Flur deiner alten Schule, das Handy in deiner Tasche, die ungesendete 38. Notiz—alles taucht auf einmal auf.*"
+        "text": "*Ich umklammere das Handy in meiner Tasche. Das Display bleibt dunkel.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Du umklammerst das Handy in deiner Tasche. Du lässt es dort, ohne den Bildschirm einzuschalten. Deine Beine bewegen sich zuerst, und der Name rutscht heraus.*"
+        "text": "*Ich umklammere das Handy in meiner Tasche und stecke es wieder ein, ohne das Display einzuschalten. Meine Beine setzen sich zuerst in Bewegung, dann kommt ihr Name über meine Lippen.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -146,7 +146,7 @@
     },
     "after5_last_chance_2_d": {
         "name": "Seoyeon",
-        "text": "*Sie dreht sich um. Der Sonnenuntergang hinter ihr.*"
+        "text": "*Sie dreht sich um, die Abendsonne im Rücken.*"
     },
     "after5_last_chance_2_e": {
         "name": "Seoyeon",
@@ -158,19 +158,19 @@
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "— Diesmal will ich dich nicht gehen lassen. Du bist ja zurückgekommen."
+        "text": "Ich rede. Bleib bitte kurz da."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Du streckst deinen kleinen Finger aus. Der Finger, den du an jenem Tag am Geländer nicht fangen konntest.*"
+        "text": "*Ich strecke die Hand aus.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
-        "text": "Diesmal — halt fest."
+        "text": "Nimm sie."
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "*Ihre ausgestreckte Fingerspitzen halten vor {name} inne. Es ist eine Hand, die auf eine Antwort wartet.*"
+        "text": "*Seoyeons Hand hält vor {name} inne.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -199,15 +199,15 @@
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "...Echt?"
+        "text": "...Du bist zurückgekommen?"
     },
     "after5_last_chance_2_p": {
         "name": "Dain",
-        "text": "*Ihre Lippen zittern. Ich atme tief ein, bevor ich antworte.*"
+        "text": "*Ihre Lippen zittern. Bevor sie antwortet, schluckt sie erst einmal ihren Atem hinunter.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Ich hab gewartet. Seit gestern. Nee, seit vorgestern. Aber — so schnell wird's nicht okay mit mir."
+        "text": "Ich warte seit gestern. Aber ich kann nicht sofort lächeln."
     },
     "after5_last_chance_2_r": {
         "name": "Dain",
@@ -240,7 +240,7 @@
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "*Ich habe nichts vorbereitet, aber dieses Mal bewegt sich mein Fuß nicht zurück. Yuna drängt nicht.*"
+        "text": "*Meine Füße weichen nicht zurück. Yuna drängt mich nicht.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
@@ -248,7 +248,7 @@
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Ein kurzer Satz. Aber diese Worte schieben mich vorwärts. Yuna schaut nicht weg.*"
+        "text": "*Yuna sieht nicht weg. {name} macht einen Schritt nach vorn.*"
     },
     "after5_last_chance_yuna_7": {
         "name": "Yuna",
@@ -281,16 +281,16 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Während wir nebeneinander hergehen.* ...Du bist spät dran. Aber dieses Mal bist du nicht weggelaufen. Diese Worte werde ich heute nicht einfach so abtun."
+        "text": "*Während wir nebeneinander hergehen.* ...Du bist spät dran. Aber ich höre dir zu."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
-        "text": "*Sie schweigt eine lange Weile.* ...Danke. Aber ich glaube nicht, dass ich so tun kann, als würde ein Satz alles in Ordnung bringen."
+        "text": "*Sie schweigt lange.* ...Ich habe es gehört. Für den Moment reicht das."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Als wir die Schule verlassen.* Hey, du... Ich habe gewartet. Aber sofort zu l?cheln, nur weil ich gewartet habe, w?re unfair. Sag es diesmal bis zum Ende."
+        "text": "*Als wir die Schule verlassen.* Hey, du... Ich habe auf dich gewartet. Sag es bis zum Ende."
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
@@ -299,7 +299,7 @@
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Wir gingen nebeneinander her.* ...Ich wusste es ja. Trotzdem werde ich es heute bis zum Ende lesen."
+        "text": "*Wir gehen nebeneinander her.* ...Ich wusste es schon. Trotzdem höre ich dir zu."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -307,7 +307,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "*Sie legt ihr Buch hin. Ihr Gesichtsausdruck ändert sich nicht. — Aber ihre Hände zittern.*"
+        "text": "*Sie legt ihr Buch ab. Ihre Hände zittern.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
@@ -319,7 +319,7 @@
     },
     "after5_confess_react_yuna_e": {
         "name": "{name}",
-        "text": "*'Ich habe gewartet. — Lange.'*"
+        "text": "*‚Ich habe lange gewartet.‘*"
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
@@ -335,7 +335,7 @@
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*Und so — gingen wir über die Schule hinaus.*"
+        "text": "*So verlassen wir gemeinsam das Schulgelände.*"
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
@@ -347,34 +347,34 @@
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Unschlüssige Schritte gingen weiter in Richtung Park.*"
+        "text": "*Ohne eine Antwort gehe ich weiter in Richtung Park.*"
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*Als wäre meine Kehle zu, bringe ich kein Wort raus. Schon wieder.*"
+        "text": "*Meine Kehle schnürt sich zu. Ich bringe kein Wort heraus.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*Der Abendwind weht. Der Schatten hinter mir wird länger. — Ich stehe da, mit leeren Händen.*"
+        "text": "*Der Abendwind kommt auf. Der Schatten hinter mir wird länger.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",
-        "text": "*Ich ging nach Hause.*"
+        "text": "*Schließlich drehe ich mich um und gehe nach Hause.*"
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*Die beim Mittagessen gefalteten Worte bleiben. Drei Nachrichtenfenster leuchten gleichzeitig auf, und du kannst in keinem den ersten Buchstaben tippen.*"
+        "text": "*Die Worte, die ich beim Mittagessen zurückgehalten habe, bleiben unausgesprochen. Drei Chatfenster leuchten gleichzeitig auf, und in keines kann ich auch nur den ersten Buchstaben tippen.*"
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "*Die Worte, die in deinem Hals steckten, kommen heraus. Dass du dich nicht für eine entscheiden kannst. Alle drei Gesichter erstarren gleichzeitig.*"
+        "text": "*Die Worte, die mir im Hals stecken, kommen heraus: Ich kann mich nicht für eine von ihnen entscheiden. Alle drei Gesichter erstarren.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*Ohne dass jemand als Erstes sprach, verließen wir die Rückseite der Schule.*"
+        "text": "*Ohne dass jemand als Erstes spricht, verlassen wir die Rückseite der Schule.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Unbeantwortete Nachrichten bleiben auf dem Sperrbildschirm. Deine Schritte haben sich zum Park gewendet.*"
+        "text": "*Die unbeantworteten Nachrichten bleiben auf dem Sperrbildschirm. Meine Schritte führen zum Park.*"
     }
 }
