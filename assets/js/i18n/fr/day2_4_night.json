@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*De retour à la maison. Douche, puis allongé sur le lit — les notifications de la messagerie déferlent. Trois personnes. En même temps.*"
+        "text": "*De retour chez moi, je prends une douche et m'allonge sur le lit. Les notifications de la messagerie se mettent alors à affluer. Trois personnes, en même temps.*"
     },
     "night2_msg_1": {
         "name": "{name}",
@@ -33,7 +33,7 @@
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "...Rejoue-le pour moi un jour"
+        "text": "...Fais-le-moi réécouter un de ces jours"
     },
     "night2_msg_dain_general": {
         "name": "Dain",
@@ -86,7 +86,7 @@
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "Demain on prend du doux !!"
+        "text": "Demain, on le prend moins épicé !"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
@@ -106,7 +106,7 @@
     },
     "night2_reply_seo_1": {
         "name": "{name}",
-        "text": "Appelle-moi et je reviendrai"
+        "text": "Appelle-moi et je viendrai"
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
@@ -114,15 +114,15 @@
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "C'est une promesse facile"
+        "text": "C'est une promesse facile à tenir"
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "Je laisserai le toit ouvert à midi. Cette fois, viens pour de vrai"
+        "text": "Je laisserai le toit ouvert à midi. Ne sois pas en retard"
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Cette fois, viens vraiment.' — Le ton qui promet des conséquences.*"
+        "text": "*Seoyeon met fin à la conversation là-dessus.*"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*Un bref silence. — Et puis.*"
+        "text": "*La zone de réponse reste vide un moment. Puis une nouvelle bulle apparaît.*"
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
@@ -178,7 +178,7 @@
     },
     "night2_hidden_check": {
         "name": "{name}",
-        "text": "*Entre les alertes du chat — d'autres notifications apparaissent.*"
+        "text": "*Parmi les alertes de la messagerie, je remarque une autre notification.*"
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*J'ai envoyé mes réponses et posé le téléphone. Le deuxième jour est terminé.*"
+        "text": "*J'envoie mes réponses et pose le téléphone. Le deuxième jour est terminé.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
@@ -210,11 +210,11 @@
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*J'ai fait défiler un moment. Photo de sortie scolaire d'il y a trois mois. Sojeong sourit à côté de moi. Dans les photos suivantes, le bureau de Sojeong est reculé petit à petit. Comme si quelqu'un l'avait recadré exprès pour ne pas montrer les graffitis.*"
+        "text": "*Je remonte loin dans la galerie. Une photo de sortie scolaire, il y a trois mois. Sojeong sourit à côté de moi. Sur chaque photo suivante, son bureau est repoussé un peu plus loin. La partie basse, couverte de graffitis, est coupée du cadre.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Le bloc-notes contient toute une série de phrases jamais envoyées. « Madame, Sojung est à son bureau... » « Aujourd'hui encore... » Toutes s'interrompent dès la première ligne. Dernière modification : 2 h 17.*"
+        "text": "*L'application de notes est pleine de phrases que je n'ai jamais envoyées. « Madame, sur le bureau de Sojeong— » « Encore aujourd'hui— » Toutes s'arrêtent à la première ligne. Dernière modification : 2 h 17.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*J'ai fermé la galerie. Mon doigt s'arrête sur le bouton de suppression de photo. Finalement, j'éteins l'écran. Seul mon visage reste sur l'écran noir.*"
+        "text": "*Je ferme la galerie. Mon doigt s'arrête sur le bouton de suppression. Finalement, j'éteins l'écran.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Le deuxième jour est terminé. Les noms qui semblaient étranges le premier jour restent maintenant sur mon écran de verrouillage. Même après que les notifications disparaissent, je rallume sans cesse l'écran.*"
+        "text": "*Le deuxième jour est terminé. Les noms qui me semblaient inconnus le premier jour occupent maintenant mon écran de verrouillage. Même après la disparition des notifications, je ne cesse de rallumer l'écran.*"
     },
     "night2_end_2_b": {
         "name": "{name}",
@@ -250,7 +250,7 @@
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*J'ai ouvert le frigo. Du riz restant, des œufs, du kimchi. Je sors la boîte à lunch et la pose sur la table. Je n'ai pas encore ouvert le couvercle.*"
+        "text": "*J'ouvre le réfrigérateur. Des restes de riz, des œufs, des algues. Je sors une boîte-repas et la pose sur la table. Je n'ai pas encore ouvert le couvercle.*"
     },
     "night2_end_4_c": {
         "name": "{name}",

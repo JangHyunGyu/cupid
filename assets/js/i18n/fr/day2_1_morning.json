@@ -1,7 +1,7 @@
 {
     "morning2_start": {
         "name": "{name}",
-        "text": "*Deuxième jour. L'uniforme est un peu plus confortable qu'hier. — Mes pas aussi.*"
+        "text": "*Deuxième jour. Les plis sur les manches de mon uniforme sont moins marqués qu'hier.*"
     },
     "morning2_start_2": {},
     "morning2_greet_seo_1": {},
@@ -15,11 +15,11 @@
     },
     "morning2_greet_seo_2": {
         "name": "{name}",
-        "text": "*Seoyeon s'est approchée en premier. Le presse-papiers est de nouveau pressé contre l'intérieur de son bras aujourd'hui. Dain jette un coup d'œil depuis le fond de la classe et détourne le regard. Yuna tourne ses pages plus vite.*"
+        "text": "*Seoyeon vient vers moi la première, son porte-bloc serré contre son bras comme toujours. Au fond de la classe, Dain tourne la tête et Yuna tourne une page.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
-        "text": "*Deux réactions subtiles. — Est-ce que je dois remarquer, ou faire semblant de rien ?*"
+        "text": "*Seoyeon tapote une fois son porte-bloc.*"
     },
     "morning2_greet_dain_1": {
         "name": "Dain",
@@ -31,7 +31,7 @@
     },
     "morning2_greet_dain_others": {
         "name": "Seoyeon",
-        "text": "*Elle passe en feuilletant son bloc-notes.*"
+        "text": "*Elle passe en feuilletant son porte-bloc.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",
@@ -39,11 +39,11 @@
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
-        "text": "*Sarcasme ou admiration ? Yuna ne réagit pas. Mais sa main qui écrivait s'est arrêtée.*"
+        "text": "*La main de Yuna s'arrête au milieu d'un mot.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*J'en ai ri, mais le son du presse-papiers qui était tapé m'est venu à l'esprit un instant plus tard.*"
+        "text": "*Le petit coup sur le porte-bloc retentit avec un temps de retard.*"
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",
@@ -103,11 +103,11 @@
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*La même écriture soignée qu'hier. Court. Et le lieu est précis. — L'annexe de la bibliothèque ? C'est un endroit différent d'hier.*"
+        "text": "*La même écriture qu'hier. Un lieu est indiqué en bas : « Annexe de la bibliothèque. »*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
-        "text": "*En passant dans le couloir, jetant un coup d'œil dans la classe* Tu as bien dormi hier ?"
+        "text": "*En passant dans le couloir, elle jette un coup d'œil dans la classe.* Tu as bien dormi ?"
     },
     "morning2_seo_4": {
         "name": "{name}",
@@ -119,7 +119,7 @@
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
-        "text": "*Juste avant de tourner dans le couloir, elle ralentit. Le porte-documents se serre un peu plus contre son bras.*"
+        "text": "*Juste avant de tourner au coin du couloir, elle ralentit et serre un peu plus son porte-bloc contre son bras.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
@@ -155,7 +155,7 @@
     },
     "morning2_break_transition": {
         "name": "{name}",
-        "text": "*Pause. Je suis sorti dans le couloir.*"
+        "text": "*Pendant la pause, je sors dans le couloir.*"
     },
     "morning2_break_transition_b": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Le bout du presse-papiers de Seoyeon touche le bureau. J'ai raté le bon moment pour dire non.*"
+        "text": "*Le bord du porte-bloc de Seoyeon tapote le bureau. Je n'ai pas le temps de répondre.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professeure principale",
@@ -183,7 +183,7 @@
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*J'ai suivi la professeure principale jusqu'à la salle des professeurs. Un tiroir d'un bureau dans un coin est légèrement ouvert. Sous une pile de papiers, le bord d'une feuille manuscrite apparaît.*"
+        "text": "*Je suis la prof principale jusqu'à la salle des profs. Le tiroir d'un bureau, dans un coin, est entrouvert. Sous une pile de documents dépasse le bord d'une page de manuscrit.*"
     },
     "hidden_homeroom_d2_3": {
         "name": "Professeure principale",
@@ -215,7 +215,7 @@
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Le regard vers le tiroir demeure. J'ai décidé de ne plus poser de questions sur les bulletins scolaires.*",
+        "text": "*Le doigt posé sur mon bulletin recouvre le bord de la page de manuscrit.*",
         "choices": [
             "Et vous ? Vous lisez quoi ?",
             "Oui, j'aime lire"
@@ -227,7 +227,7 @@
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Professeure principale",
-        "text": "*souriant légèrement* Ah oui ? ...C'est un bon loisir."
+        "text": "*Elle sourit légèrement.* Ah oui ? ...C'est un joli passe-temps."
     },
     "hidden_homeroom_d2_5": {
         "name": "Professeure principale",
@@ -235,7 +235,7 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "{name}",
-        "text": "*La tranche du manuscrit est visible à travers le tiroir légèrement ouvert. Le professeur principal pose la tasse de café et ferme le tiroir.*"
+        "text": "*Le bord du manuscrit dépasse du tiroir entrouvert. La prof principale pose sa tasse de café et referme le tiroir.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Professeure principale",
@@ -255,7 +255,7 @@
     },
     "hidden_homeroom_d2_8_c": {
         "name": "Professeure principale",
-        "text": "Célèbre, ce n'est pas le mot... *Boit une gorgée de café* Plutôt quelqu'un dont je m'inquiète."
+        "text": "« Connue », ce n'est pas tout à fait le mot... *Elle boit une gorgée de café.* C'est plutôt une élève qui m'inquiète."
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Professeure principale",
-        "text": "*Posant son café* ...Bref. De ton côté, rien de particulier."
+        "text": "*Elle repose son café.* ...Bref. De ton côté, rien de particulier."
     },
     "hidden_homeroom_d2_8_f": {
         "name": "Professeure principale",
@@ -275,11 +275,11 @@
     },
     "hidden_homeroom_d2_10": {
         "name": "Professeure principale",
-        "text": "C'est dans les tâches de gestion de classe. C'est du boulot."
+        "text": "Ça fait partie du travail. Les joies d'être prof principale."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
-        "text": "*Elle dit que c'est du boulot, mais il y a encore un sourire au coin des yeux.*",
+        "text": "*Elle fait tourner deux fois la soucoupe au même endroit.*",
         "choices": [
             "Pour du boulot, vous avez l'air drôlement contente",
             "Merci de prendre soin de moi"
@@ -287,11 +287,11 @@
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Professeure principale",
-        "text": "*Cachant sa bouche derrière sa tasse de café* ...Raté pour le poker face. Bon, file."
+        "text": "*Elle cache sa bouche derrière sa tasse de café.* ...Ça suffit. Allez, file."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professeure principale",
-        "text": "*faisant un geste de la main* Allez, arrête. C'est gênant. ...Allez, file."
+        "text": "*Elle agite la main.* Ça suffit. Allez, file."
     },
     "hidden_homeroom_d2_11": {
         "name": "Professeure principale",
@@ -303,11 +303,11 @@
     },
     "hidden_homeroom_d2_12": {
         "name": "{name}",
-        "text": "*En quittant la salle des profs — ces papiers dans le tiroir me trottent dans la tête.*"
+        "text": "*En quittant la salle des profs, je jette un dernier regard au tiroir entrouvert.*"
     },
     "morning2_seo_dust_1": {
         "name": "{name}",
-        "text": "*Temps de pause après la 1ère période. Je passe devant Seoyeon dans le couloir. Seoyeon s'arrête et regarde mon épaule. La main qui tient le presse-papiers apparaît en premier.*"
+        "text": "*Pause après le premier cours. Je croise Seoyeon dans le couloir. Elle s'arrête et regarde mon épaule. La main qui tient son porte-bloc se lève la première.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
@@ -315,7 +315,7 @@
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*Sa main touche l'épaule de {name}. Son geste pour enlever la poussière n'a aucune hésitation.*"
+        "text": "*Sa main se pose sur l'épaule de {name}. Elle enlève la poussière sans la moindre hésitation.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
@@ -335,7 +335,7 @@
     },
     "morning2_dain_react_2": {
         "name": "{name}",
-        "text": "*Seoyeon s'éloigne comme si de rien n'était. La voix de Dain arrive de derrière.*"
+        "text": "*Seoyeon s'éloigne comme si de rien n'était. La voix de Dain retentit derrière moi.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",
@@ -355,6 +355,6 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Cette personne qui en un an ne s'était jamais approchée de personne en premier — est venue vers moi en premier.*"
+        "text": "*Cette fille qui, en un an, n'avait jamais abordé personne — est venue vers moi la première.*"
     }
 }

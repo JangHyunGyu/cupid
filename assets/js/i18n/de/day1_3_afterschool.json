@@ -94,7 +94,7 @@
     },
     "after_miss_dain_4": {
         "name": "Dain",
-        "text": "Oh! Gute Reflexe!"
+        "text": "Oh, ausgewichen? Deine Reflexe sind gar nicht schlecht."
     },
     "after_miss_dain_5": {
         "name": "{name}",
@@ -506,7 +506,7 @@
     },
     "after_nurse_enter_11_m": {
         "name": "{name}",
-        "text": "{name}."
+        "text": "Ich bin {name}."
     },
     "after_nurse_enter_12": {
         "name": "Schulkrankenschwester",

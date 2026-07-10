@@ -6,19 +6,19 @@
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
-        "text": "*...J'ai fait un rêve étrange. Le sourire de Seoyeon — il flotte encore devant mes yeux.*"
+        "text": "*L'alarme sonne. Un message de Seoyeon s'affiche sur l'écran de mon téléphone.*"
     },
     "morning4_nightmare_yuna": {
         "name": "{name}",
-        "text": "*...J'ai fait un rêve étrange. J'ai voulu atteindre Yuna — mes doigts sont encore vides.*"
+        "text": "*L'alarme sonne. Un message de Yuna s'affiche sur l'écran de mon téléphone.*"
     },
     "morning4_nightmare_dain": {
         "name": "{name}",
-        "text": "*...J'ai fait un rêve étrange. J'ai cru attraper Dain — mais mes mains sont encore vides.*"
+        "text": "*L'alarme sonne. Un message de Dain s'affiche sur l'écran de mon téléphone.*"
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*Quand j'ai ouvert les yeux, un seul nom m'est venu à l'esprit en premier.*"
+        "text": "*Je vérifie à nouveau les notifications.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
@@ -34,11 +34,11 @@
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "*Dain a posté dans le groupe mdr J'ai des plans demain !! qu'elle a dit*"
+        "text": "*Dain a écrit dans le groupe : « J'ai quelque chose de prévu demain. »*"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
-        "text": "Amuse-toi bien mdr"
+        "text": "Bonne chance, mdr"
     },
     "minsu_cheer_3": {
         "name": "{name}",
@@ -47,7 +47,7 @@
     "minsu_cheer_4_branch": {},
     "minsu_cheer_4_ins_single": {
         "name": "{name}",
-        "text": "*Je regarde le calendrier de mon téléphone. Il n'y a qu'un seul rendez-vous aujourd'hui. — Cette fois, j'ai décidé de ne rien remettre à plus tard.*"
+        "text": "*Je regarde le calendrier de mon téléphone. Il n'y a qu'un seul rendez-vous aujourd'hui.*"
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
@@ -55,7 +55,7 @@
     },
     "minsu_cheer_4_d": {
         "name": "{name}",
-        "text": "*...Qu'est-ce que je suis en train de faire.*"
+        "text": "*...Mais qu'est-ce que je suis en train de faire ?*"
     },
     "minsu_cheer_4_e": {
         "name": "{name}",
@@ -71,11 +71,11 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*À l'impératif. Même un rendez-vous sonne comme un ordre. — Mais c'est drôle.*"
+        "text": "*Le message s'arrête là.*"
     },
     "morning4_seo_msg_1_c": {
         "name": "{name}",
-        "text": "*Je suis au point de rendez-vous. Est-ce qu'elle viendra ? Après s'être autant énervée vendredi.*"
+        "text": "*Je m'arrête devant la fontaine. Il est 9 h 58.*"
     },
     "morning4_yuna_msg_1": {
         "name": "Yuna",
@@ -83,19 +83,19 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Court. Très Yuna. Pas de point après 'je pars si t'es en retard.'*"
+        "text": "*C'est court. Ça lui ressemble. Il n'y a même pas de point après « je pars ».*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
-        "text": "*Court. Mais aujourd'hui, cette brièveté ressort avec netteté. Y a pas d'autre rendez-vous. — Cette fois, je vais vraiment à ce seul endroit.*"
+        "text": "*Le message est bref. C'est mon seul rendez-vous aujourd'hui.*"
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "C'est aujourd'hui !!!! Devant le gymnase à 18h !! En fait je suis nerveuse mdr, attends est-ce que je devrais même envoyer ça"
+        "text": "C'est aujourd'hui. Devant le gymnase à 18 h. Ah, pourquoi je stresse autant ? Je peux vraiment envoyer ça ?"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Matin de week-end. Quelques notifications attendent. — Je pensais que ce serait une journée ordinaire. Je pose le téléphone et je m'étire. De toute façon, aujourd'hui commence aussi.*"
+        "text": "*Un matin de week-end. J'ai reçu quelques notifications. — Je pensais passer une journée ordinaire. Je pose mon téléphone et m'étire. Une nouvelle journée commence malgré tout.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
@@ -108,7 +108,7 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "*Le portail de l'école est légèrement ouvert. Une présence à l'intérieur. Le professeur principal sort devant le portail. Tenant un sac en papier.*"
+        "text": "*Le portail du lycée est entrouvert. Quelqu'un bouge à l'intérieur. La professeure principale vient jusqu'au portail, une enveloppe en papier à la main.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*En regardant de l'extérieur de la porte de l'école, le professeur principal regarde plus près du bloc-notes que de la table du professeur.*"
+        "text": "*La professeure principale tient toujours l'enveloppe en papier à la main.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Professeure principale",
@@ -156,7 +156,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Silence gêné. — La prof parle en premier.*"
+        "text": "*Les mots ne viennent pas.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Professeure principale",
@@ -184,7 +184,7 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Professeure principale",
-        "text": "Les membres du club sont à la table du fond. Une rumeur disant qu'on est venus seuls circulerait plus vite que mon manuscrit."
+        "text": "Les membres du club sont à la table du fond. La rumeur qu'on serait venus en tête-à-tête circulerait plus vite que mon manuscrit."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
@@ -196,7 +196,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Professeure principale",
-        "text": "*Le professeur le dit comme une blague et touche la tasse de café. Deux cercles d'eau se chevauchent sur le sous-verre.*"
+        "text": "*Elle dit cela sur le ton de la plaisanterie et touche sa tasse. Deux auréoles se chevauchent sur la soucoupe.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -204,7 +204,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Professeure principale",
-        "text": "*Elle pose sa tasse de café. Fait une pause, comme pour réfléchir.*"
+        "text": "*Elle repose sa tasse, mais garde les doigts sur l'anse.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Professeure principale",
@@ -216,11 +216,11 @@
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Professeure principale",
-        "text": "Je recueillerai les avis sans les noms. Ce qui compte, ce n'est pas qui l'a dit, mais l'endroit où la lecture s'est arrêtée."
+        "text": "Je recueillerai les avis sans les noms. Ce qui compte, ce n'est pas qui l'a dit, mais le passage où la lecture a buté."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Le coin d'une enveloppe de manuscrit dépasse du sac du professeur. La partie pliée est un peu sombre avec des traces de doigts.*"
+        "text": "*Le coin de l'enveloppe contenant le manuscrit dépasse de son sac. La partie pliée est noircie par les traces de doigts.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Professeure principale",
@@ -228,11 +228,11 @@
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Professeure principale",
-        "text": "Entendre où quelqu'un s'est arrêté plutôt que ce qu'il a aimé. C'est ce qui fait le plus mal, et ce qui aide le plus."
+        "text": "Savoir à quel passage quelqu'un a cessé de lire, plutôt que d'entendre des compliments. C'est ce qui fait le plus mal, et ce qui sert le plus."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Professeure principale",
-        "text": "*La prof principale repose sa tasse. Son corps penche légèrement vers la fenêtre.*",
+        "text": "*La professeure principale repose sa tasse et se penche légèrement vers la fenêtre.*",
         "choices": [
             "Vous n'avez toujours pas choisi la fin ?",
             "Vous allez aussi montrer tout le manuscrit au club, n'est-ce pas ?"
@@ -252,7 +252,7 @@
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*Le papier manuscrit dans la salle de classe vide d'hier me vient à l'esprit. Aujourd'hui, je suis à l'extérieur de l'école et les coins du porte-gobelet continuent de se plier.*"
+        "text": "*Elle continue de plier le coin du porte-gobelet.*"
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Professeure principale",
-        "text": "*La prof principale sourit un instant. Sa main cesse de plier le porte-gobelet.*"
+        "text": "*La professeure principale laisse échapper un petit rire. Sa main cesse de plier le porte-gobelet.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professeure principale",
@@ -296,7 +296,7 @@
     },
     "hidden_homeroom_d4_decline": {
         "name": "Professeure principale",
-        "text": "D'accord. Ton rendez-vous passe d'abord. Je demanderai un avis officiel sur le manuscrit au lycée."
+        "text": "D'accord. Ton rendez-vous passe avant. Je demanderai officiellement l'avis des élèves sur le manuscrit au lycée."
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "Professeure principale",
@@ -378,7 +378,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*Une trousse de secours pour l'événement et du matériel de contrôle sont empilés sur un côté du bureau. L'infirmière relève la tête en plein étiquetage.*"
+        "text": "*Une trousse de secours pour l'événement et du matériel d'examen sont empilés sur un côté du bureau. L'infirmière relève la tête alors qu'elle pose des étiquettes.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Infirmière",
@@ -406,7 +406,7 @@
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "*Je remplis chaque pochette. L'infirmière vérifie de nouveau toutes les trousses terminées.*"
+        "text": "*Je remplis chaque pochette. L'infirmière vérifie de nouveau chaque trousse terminée.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Infirmière",
@@ -430,7 +430,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Infirmière",
-        "text": "*L'elle s'arrête. Pose les papiers.*"
+        "text": "*Elle s'arrête un instant et pose les documents.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Infirmière",
@@ -442,7 +442,7 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "Infirmière",
-        "text": "Le plus dur, c'était quand je me suis mise à vérifier les numéros de lit avant les noms. Je ne savais même plus qui j'avais devant moi."
+        "text": "Le plus dur, c'était quand je me suis mise à vérifier les numéros de lit avant les noms. Je ne savais même plus qui j'étais en train de regarder."
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
@@ -450,11 +450,11 @@
     },
     "hidden_nurse_d4_4_h": {
         "name": "Infirmière",
-        "text": "Au lycée, j'ai le temps de voir chaque élève séparément. Et quand quelque chose me dépasse, l'amener à quelqu'un qui peut l'aider fait aussi partie de mon travail."
+        "text": "Au lycée, j'ai le temps de voir chaque élève séparément. Et pour ce que je ne sais pas faire, mon travail consiste aussi à orienter l'élève vers quelqu'un qui le peut."
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",
-        "text": "Mettre quelqu'un en contact avec de l'aide, ça compte aussi comme un soin ?"
+        "text": "Orienter quelqu'un, c'est aussi le soigner ?"
     },
     "hidden_nurse_d4_4_j": {
         "name": "Infirmière",
@@ -462,23 +462,23 @@
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Elle ferme la dernière trousse de secours. Dehors, d'autres bénévoles emportent les cartons terminés.*"
+        "text": "*Je ferme la dernière trousse de secours. Dehors, d'autres bénévoles emportent les cartons terminés.*"
     },
     "hidden_nurse_d4_5": {
         "name": "Infirmière",
-        "text": "C'est pour ça que je suis venue travailler dans un lycée. Je voulais réapprendre à écouter avant de chercher à soigner."
+        "text": "C'est pour ça que je suis venue au lycée. Je voulais réapprendre à écouter avant de chercher à soigner."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
         "text": "*L'infirmière note le nombre de trousses de secours terminées.*",
         "choices": [
-            "Quand êtes-vous heureuse d'être devenue infirmière scolaire ?",
+            "À quel moment vous dites-vous que vous avez bien fait de devenir infirmière scolaire ?",
             "Quelle est la plus grande différence entre l'hôpital et le lycée ?"
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
         "name": "Infirmière",
-        "text": "Quand un élève qui souffrait seul ouvre cette porte de lui-même. Là, je me dis que j'ai bien fait."
+        "text": "Quand un élève qui gardait tout pour lui pousse cette porte de lui-même. Là, je me dis que j'ai bien fait."
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "Infirmière",
@@ -486,11 +486,11 @@
     },
     "hidden_nurse_d4_6": {
         "name": "Infirmière",
-        "text": "Merci. Grâce à toi, c'est fini plus vite. ...Ce n'est rien de spécial."
+        "text": "Merci. Grâce à toi, on a fini plus vite. ...Ce n'est pas grand-chose."
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
-        "text": "C'était rien."
+        "text": "Ce n'est pas grand-chose."
     },
     "hidden_nurse_d4_6_c": {
         "name": "Infirmière",
@@ -505,24 +505,24 @@
         "text": "Il ne reste plus qu'à coller les étiquettes. Le personnel va acheter de quoi grignoter : quelqu'un veut m'aider à finir ?",
         "choices": [
             "Je vais aussi rester pour étiqueter les trousses.",
-            "Ça va, je vais y aller"
+            "Ça ira, je vais y aller."
         ]
     },
     "hidden_nurse_d4_meal_walk": {
         "name": "{name}",
-        "text": "*Je passe à la petite échoppe devant le lycée avec le personnel de l'événement. Il y a un sac à emporter par personne.*"
+        "text": "*Je passe au petit snack devant le lycée avec l'équipe de l'événement. Les sacs à emporter s'empilent, un par personne.*"
     },
     "hidden_nurse_d4_meal_1": {
         "name": "Infirmière",
-        "text": "Qui a choisi le plat épicé ? Prenez d'abord de l'eau."
+        "text": "Qui a choisi la version épicée ? Commencez par prendre de l'eau."
     },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
-        "text": "C'est vous qui avez goûté la première."
+        "text": "C'est vous qui en avez mangé la première."
     },
     "hidden_nurse_d4_meal_1_c": {
         "name": "Infirmière",
-        "text": "Il fallait bien que je vérifie. *Elle boit de l'eau.* Même une trousse de secours ne peut rien contre ça."
+        "text": "J'ai goûté pour vérifier. *Elle boit de l'eau.* Même une trousse de secours ne peut rien contre ça."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -530,11 +530,11 @@
     },
     "hidden_nurse_d4_meal_2": {
         "name": "{name}",
-        "text": "Vous n'avez pas la même expression que lorsque vous parlez de l'hôpital."
+        "text": "Vous n'avez pas du tout la même expression que lorsque vous parlez de l'hôpital."
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "Infirmière",
-        "text": "*La main qui collait une étiquette s'arrête un instant.*"
+        "text": "*Sa main s'immobilise un instant au milieu d'une étiquette.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Infirmière",
@@ -542,11 +542,11 @@
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*Elle colle la dernière étiquette au centre du carton.*"
+        "text": "*Je colle la dernière étiquette au centre du carton.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Infirmière",
-        "text": "Voilà, c'est fini. Vérifiez vos heures de bénévolat et retournez tous sur le lieu de l'événement."
+        "text": "Voilà, c'est fini. Vérifiez vos heures de bénévolat, puis retournez chacun à votre poste sur le site de l'événement."
     },
     "hidden_nurse_d4_meal_3_d": {
         "name": "{name}",
@@ -566,7 +566,7 @@
     },
     "hidden_nurse_d4_pass": {
         "name": "Infirmière",
-        "text": "D'accord. Être venu un week-end, c'était déjà largement suffisant. Rentre bien."
+        "text": "D'accord. Rien que d'être venu ce week-end, c'est déjà beaucoup. Rentre bien."
     },
     "morning4_end": {
         "name": "{name}",

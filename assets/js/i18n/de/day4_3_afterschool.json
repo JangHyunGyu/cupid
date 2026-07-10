@@ -45,7 +45,7 @@
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "Ich möchte dich auch nach heute weitersehen."
+        "text": "Ich möchte dich auch nach heute noch treffen."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
@@ -56,7 +56,7 @@
         "text": "Du musst mir jetzt noch nicht antworten."
     },
     "confess_seo_yes_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "Wenn du das so sagst, muss ich erst recht darüber nachdenken."
     },
     "confess_seo_yes_7": {
@@ -69,7 +69,7 @@
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
-        "text": "...Ich auch."
+        "text": "Wo du sitzt. Wann du stiller wirst."
     },
     "confess_seo_yes_10": {
         "name": "Seoyeon",
@@ -77,7 +77,7 @@
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "Morgen Mittag. Ich lasse das Dach offen."
+        "text": "Morgen Mittag. Ich lasse die Tür zum Dach offen."
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
@@ -161,7 +161,7 @@
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "Ich möchte dich auch nach heute weitersehen."
+        "text": "Ich möchte dich auch nach heute noch treffen."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
@@ -261,7 +261,7 @@
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "Ich möchte dich auch nach heute weitersehen."
+        "text": "Ich möchte dich auch nach heute noch treffen."
     },
     "confess_dain_yes_4": {
         "name": "{name}",

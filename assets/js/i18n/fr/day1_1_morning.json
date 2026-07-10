@@ -58,7 +58,7 @@
     },
     "choice_dismiss_1": {
         "name": "Seoyeon",
-        "text": "*Ses pas s'arrêtent. Seule sa tête se tourne vers {name}.*"
+        "text": "*Elle s'arrête et tourne seulement la tête vers {name}.*"
     },
     "choice_dismiss_2": {
         "name": "Seoyeon",
@@ -150,7 +150,7 @@
     },
     "hallway_11": {
         "name": "{name}",
-        "text": "Tu me guides aussi pour le midi ?"
+        "text": "Tu vas aussi me servir de guide à midi ?"
     },
     "hallway_12": {
         "name": "Seoyeon",
@@ -226,7 +226,7 @@
     },
     "classroom_yuna_2": {
         "name": "{name}",
-        "text": "*Cheveux argentés. Yeux rouges. Un tatouage sur le bras. Assise au dernier rang près de la fenêtre, elle garde le menton dans la main et ne regarde que dehors. Les bureaux autour d'elle sont étrangement espacés.*"
+        "text": "*Cheveux argentés. Yeux rouges. Un tatouage sur le bras. Assise au dernier rang près de la fenêtre, elle garde le menton dans la main et ne regarde que dehors. Les places autour d'elle sont étrangement vides.*"
     },
     "classroom_yuna_4": {
         "name": "{name}",
@@ -254,7 +254,7 @@
     },
     "classroom_minsu_2_b": {
         "name": "Minsu",
-        "text": "*Désignant Dain du menton* Ton endurance."
+        "text": "*Il désigne Dain du menton.* Ton endurance."
     },
     "classroom_dain_talk_1": {
         "name": "{name}",

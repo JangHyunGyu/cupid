@@ -128,7 +128,7 @@
         "name": "Seoyeon",
         "text": "*Elle me tend l’omelette roulée.*",
         "choices": [
-            "L’accepter",
+            "Manger le morceau qu'elle me tend",
             "Ce serait meilleur si tu la mangeais toi-même"
         ]
     },
@@ -272,15 +272,15 @@
     },
     "lunch_dain_19": {
         "name": "{name}",
-        "text": "Je croyais que tu faisais ta propre pub."
+        "text": "Je croyais que tu cherchais surtout à vanter tes performances."
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "Ma propre pub ? Pourquoi tu dis ça ?"
+        "text": "Mes performances ? Comment ça ?"
     },
     "lunch_dain_21": {
         "name": "{name}",
-        "text": "À cause du test physique. Ça faisait très « record personnel ». C'est un terme sportif."
+        "text": "À cause du test d'endurance. On aurait dit que tu parlais de records personnels. C'est un terme sportif."
     },
     "lunch_dain_22": {
         "name": "Dain",
@@ -332,7 +332,7 @@
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle replie l'emballage du pain, le glisse dans sa poche et s'adosse au banc.* Alors, le nouveau. Première note pour la supérette ?",
+        "text": "*Elle replie l'emballage du pain, le glisse dans sa poche et s'adosse au banc.* Alors, le nouveau : combien sur dix pour cette première visite à la supérette ?",
         "context": "Déjeuner du premier jour, vient de jouer à pierre-feuille-ciseaux avec Dain. Elle a perdu. Ton : léger et prudent, puisque c'est encore le premier jour. Ne pas aborder de passé lourd. Rester sur de la taquinerie et des échanges courts.",
         "personality": "Dain est une athlète énergique. Adore le contact physique, utilise beaucoup de points d'exclamation. Dure à l'extérieur, douce à l'intérieur."
     },
@@ -362,7 +362,7 @@
     },
     "lunch_yuna_7": {
         "name": "Yuna",
-        "text": "*sans lever les yeux de son livre* ...Si tu ne fais pas de bruit."
+        "text": "*Sans quitter son livre des yeux.* ...Si tu ne fais pas de bruit."
     },
     "lunch_yuna_8": {
         "name": "{name}",
@@ -378,7 +378,7 @@
     },
     "lunch_yuna_12": {
         "name": "Yuna",
-        "text": "*jette un coup d’œil* ...C’est le tome 3."
+        "text": "*Elle jette un coup d'œil.* ...C'est le tome 3."
     },
     "lunch_yuna_13": {
         "name": "{name}",
@@ -414,7 +414,7 @@
     },
     "lunch_yuna_22": {
         "name": "Yuna",
-        "text": "*glissant un marque-page* ...Merci d’être resté silencieux."
+        "text": "*Elle glisse un marque-page entre les pages.* ...Merci d'être resté silencieux."
     },
     "lunch_yuna_23": {
         "name": "{name}",

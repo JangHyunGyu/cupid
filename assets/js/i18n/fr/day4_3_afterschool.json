@@ -1,7 +1,7 @@
 {
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*Le rendez-vous est terminé. Au lieu de rentrer par le portail, nous montons sur le toit.*"
+        "text": "*Le rendez-vous est terminé. Au lieu de passer le portail, nous montons sur le toit.*"
     },
     "confess_seo_2": {
         "name": "Seoyeon",
@@ -41,7 +41,7 @@
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*J'ai la gorge sèche. Le mot se replie dans ma poche.*"
+        "text": "*J'ai la gorge sèche. Dans ma poche, mes doigts replient le mot.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
@@ -56,7 +56,7 @@
         "text": "Tu n'as pas besoin de me répondre tout de suite."
     },
     "confess_seo_yes_6": {
-        "name": "{name}",
+        "name": "Seoyeon",
         "text": "Si tu me dis ça, je vais y réfléchir encore plus."
     },
     "confess_seo_yes_7": {
@@ -65,7 +65,7 @@
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
-        "text": "Moi aussi, je n'ai pas arrêté de te regarder."
+        "text": "Moi aussi, je n'ai pas arrêté de t'observer."
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
@@ -113,7 +113,7 @@
     },
     "confess_yuna_2": {
         "name": "Yuna",
-        "text": "...Il y a un dernier endroit où aller."
+        "text": "...Il reste un dernier endroit où je veux aller."
     },
     "confess_yuna_3": {
         "name": "{name}",
@@ -135,13 +135,13 @@
         "name": "{name}",
         "text": "*Yuna attend en jouant avec le marque-page.*",
         "choices": [
-            "Yuna. Laisse-moi te demander une chose.",
+            "Yuna. Je peux te poser une question ?",
             "...Cet endroit est vraiment bien."
         ]
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": "*Ma voix sort plus basse que prévu.*"
+        "text": "*Ma voix baisse.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
@@ -169,7 +169,7 @@
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*Quand j'ai fini de parler, le bruit des pages ne reprend pas.*"
+        "text": "*Quand je finis de parler, le bruit des pages qui tournent s'arrête.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
@@ -177,11 +177,11 @@
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
-        "text": "*Elle n'arrive pas à regarder vers {name} et serre fortement sa manche.*"
+        "text": "*Elle évite le regard de {name} et serre fermement sa manche.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*Les extrémités froissées des manches disparaissent dans la paume.*"
+        "text": "*Le bout froissé de sa manche disparaît dans sa paume.*"
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
@@ -209,7 +209,7 @@
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
-        "text": "...La fin n'est pas encore arrivée."
+        "text": "...La fin n'est pas encore écrite."
     },
     "confess_yuna_no_4_b": {
         "name": "{name}",
@@ -221,11 +221,11 @@
     },
     "confess_dain_2": {
         "name": "Dain",
-        "text": "Un dernier endroit. Viens."
+        "text": "Encore un endroit. Le dernier."
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Le gymnase. Vide. Le coucher de soleil teinte le terrain à travers les fenêtres. La ligne du pari du premier jour est encore visible.*"
+        "text": "*Le gymnase. Vide. Le coucher de soleil teinte le terrain à travers les fenêtres. Je remarque encore la ligne où nous avions parié le premier jour.*"
     },
     "confess_dain_3b": {
         "name": "{name}",
@@ -249,7 +249,7 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": "*Ma voix tombe bas sur le parquet du gymnase.*"
+        "text": "*Ma voix sort plus basse que prévu.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
@@ -257,7 +257,7 @@
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain. J'ai — quelque chose à te dire."
+        "text": "Dain, j'ai... quelque chose à te dire."
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
@@ -277,7 +277,7 @@
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": "*Les lumières du gymnase bourdonnent doucement.*"
+        "text": "*Les néons du gymnase bourdonnent doucement.*"
     },
     "confess_dain_yes_8": {
         "name": "Dain",
@@ -301,7 +301,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Elle serre de nouveau le ballon contre elle. Le dos de ses mains se tend.*"
+        "text": "*Elle serre de nouveau le ballon contre elle. Les muscles se tendent sur le dos de ses mains.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
@@ -317,7 +317,7 @@
     },
     "confess_dain_no_4": {
         "name": "Dain",
-        "text": "...La prochaine fois, dis-le."
+        "text": "...La prochaine fois, dis-le-moi."
     },
     "confess_dain_no_4_b": {
         "name": "{name}",

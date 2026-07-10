@@ -1,14 +1,14 @@
 {
     "date_seo_1": {
         "name": "{name}",
-        "text": "*Devant la fontaine. Seoyeon est déjà là. Pas de planchette aujourd'hui. À la place, ses doigts plient et déplient la sangle de son sac deux fois.*"
+        "text": "*Seoyeon m'attend déjà devant la fontaine. Pas de planchette cette fois ; elle enroule seulement la bandoulière de son sac autour d'un doigt.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
         "text": "*Qu’est-ce que je dis ?*",
         "choices": [
             "Tu es vraiment belle aujourd'hui.",
-            "Tu t’es vraiment préparée aujourd’hui."
+            "Tu t'es donné du mal aujourd'hui."
         ]
     },
     "date_seo_pretty_high": {
@@ -29,11 +29,11 @@
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
-        "text": "*Repoussant ses cheveux* ...Ne te fais pas d'idées."
+        "text": "*Elle repousse ses cheveux.* ...Laisse tomber."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "*'Te fais pas d'illusions.' — Mais sa main n'arrête pas de remettre ses cheveux.*"
+        "text": "*Au lieu de répondre, elle remet une mèche derrière son oreille. La même main se lève aussitôt une seconde fois.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "*Des mots détachés — mais dits par quelqu'un qui l'a vécu. On passe devant un fleuriste.*"
+        "text": "*Elle observe les miettes qui s'enfoncent dans l'eau. Son pas ralentit devant un fleuriste.*"
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
@@ -97,23 +97,23 @@
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "C'était bien. — Retiens juste ça."
+        "text": "Aujourd'hui, c'était bien."
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Devant le café. Yuna se tient contre le mur. Une robe noire et un petit sac croisé. Puisqu’il n’y a pas d’uniforme scolaire, ce sont les lignes du tatouage qui attirent le regard en premier.*"
+        "text": "*Devant le café, Yuna est adossée au mur. Elle porte une robe noire et un petit sac en bandoulière. Sans son uniforme, les lignes de son tatouage attirent d'abord mon regard.*"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
         "text": "*Qu’est-ce que je dis ?*",
         "choices": [
             "Première fois que je te vois sans uniforme.",
-            "Tes yeux sont différents aujourd’hui."
+            "Tu as l'air un peu différente aujourd'hui."
         ]
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "*Yuna s’arrête un instant. Elle baisse légèrement la tête.*"
+        "text": "*Elle baisse la tête et fixe longuement le bord de sa tasse.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -129,7 +129,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*Elle ne l?ve pas les yeux. Elle attend.*"
+        "text": "*Elle ne lève pas les yeux. Elle attend.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
@@ -137,15 +137,15 @@
     },
     "date_yuna_pretty_high_5_c": {
         "name": "Yuna",
-        "text": "*Les oreilles rougissant* ...Ça suffit."
+        "text": "*Elle baisse les yeux vers sa tasse.* ...Ça suffit."
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
-        "text": "...Personne ne m’a jamais dit ça."
+        "text": "...Je n'ai pas l'habitude d'entendre ça."
     },
     "date_yuna_bright": {
         "name": "Yuna",
-        "text": "...Qu'est-ce qui est différent."
+        "text": "...Qu'est-ce qui est différent ?"
     },
     "date_yuna_bookstore": {
         "name": "{name}",
@@ -157,7 +157,7 @@
     },
     "date_yuna_bookstore_2_b": {
         "name": "{name}",
-        "text": "Je suis jamais venu."
+        "text": "Je ne suis jamais venu ici."
     },
     "date_yuna_bookstore_3": {
         "name": "Yuna",
@@ -173,11 +173,11 @@
     },
     "date_yuna_earphone_2_b": {
         "name": "{name}",
-        "text": "*Un morceau de piano doux s'écoule. Le bruit de la librairie s'estompe.*"
+        "text": "*Un morceau de piano calme se fait entendre. Le bruit de la librairie s'estompe.*"
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*La distance entre nous, c'est la longueur du fil de l'écouteur. Trente centimètres. — Plus près et on se touche, plus loin et il tombe.*"
+        "text": "*La distance entre nous s'arrête juste avant que le fil de l'écouteur se tende. Yuna s'assied exactement à cette distance.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -189,7 +189,7 @@
     },
     "date_yuna_oldbook_c": {
         "name": "{name}",
-        "text": "*Elle sort un vieux livre. Feuilletant les pages.*"
+        "text": "*Elle sort un vieux livre et en feuillette les pages.*"
     },
     "date_yuna_oldbook_2": {
         "name": "Yuna",
@@ -213,7 +213,7 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*'Aujourd'hui j'ai eu beaucoup de phrases. Seulement devant toi.' — L'écriture de Yuna tremble.*"
+        "text": "*« J'ai beaucoup parlé aujourd'hui. Parce que c'était toi. » L'encre mauve pâle a légèrement bavé sur la dernière lettre.*"
     },
     "date_dain_1": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "T’es là !! T’as failli être en retard, non ?!"
+        "text": "Me voilà ! J'ai failli être en retard, hein ?"
     },
     "date_dain_3": {
         "name": "{name}",
@@ -229,23 +229,23 @@
     },
     "date_dain_4": {
         "name": "Dain",
-        "text": "Moi j’étais là vingt minutes avant !!"
+        "text": "Moi, je suis arrivée vingt minutes plus tôt !"
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*Ça devient un schéma récurrent maintenant.*",
+        "text": "*Qu'est-ce que je lui dis ?*",
         "choices": [
             "Cette casquette te va bien.",
-            "Comment tu fais pour être jolie en tenue de sport ?"
+            "Cette tenue de sport te va bien."
         ]
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "*Dain se fige. Ses yeux s’écarquillent. — Puis elle enfonce sa casquette sur son visage.*"
+        "text": "*Dain s'immobilise. Elle enfonce tellement sa casquette que son visage disparaît à moitié.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "Hé !! Sans prévenir !! Tu peux pas dire ça comme ça !!"
+        "text": "Hé, ne sors pas ça comme ça, sans prévenir !"
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
@@ -253,15 +253,15 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "*Elle a dit ‘si tu dis des choses comme ça’, mais sa voix tremblait.*"
+        "text": "*Elle garde longtemps une main agrippée à la visière de sa casquette.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Quoi ?! ...Haha, merci, mais arrête, c’est gênant."
+        "text": "Quoi, tout à coup ? ...Merci, quand même."
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "Évidemment !! Aujourd’hui je suis au top !!"
+        "text": "Évidemment. Je suis en forme aujourd'hui !"
     },
     "date_dain_to_arcade": {
         "name": "{name}",
@@ -273,7 +273,7 @@
     },
     "date_dain_arcade_2": {
         "name": "Dain",
-        "text": "Allez, on parie !! Le perdant paie les boissons !!"
+        "text": "Bon, on parie. Le perdant paie à boire."
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
@@ -281,19 +281,19 @@
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "C’est pas drôle sans enjeu !!"
+        "text": "Sans pari, c'est pas drôle."
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*Jeu de rythme. Dain est incroyablement douée.*"
+        "text": "*Dès que le jeu de rythme commence, les mains de Dain trouvent le tempo. Jusqu'à la fin du morceau, son combo ne se brise pas une seule fois.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
-        "text": "*En criant de joie* Combo parfait !! T'as vu ?!"
+        "text": "*Elle bondit de son siège.* Combo parfait. T'as vu ?"
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "*En montrant l'écran* Ce score — c'est le deuxième meilleur de tous les temps !!"
+        "text": "*Elle montre l'écran.* Ce score, c'est le deuxième meilleur de tous les temps."
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
@@ -305,7 +305,7 @@
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*'Parce que je n'ai pas besoin d'utiliser mes genoux.' dit Dain avec un sourire, mais il jette un coup d'œil à ses genoux reflétés dans la vitre.*"
+        "text": "*« Pas besoin des genoux pour ça. » Dain le dit en souriant, mais jette un coup d'œil à ses genoux dans le reflet de la vitrine.*"
     },
     "date_dain_knee_2": {
         "name": "{name}",
@@ -329,7 +329,7 @@
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*Sous sa casquette* ...Redis ça encore une fois et je te frappe pour de vrai."
+        "text": "*Sous sa casquette* ...Redis-le une fois et je te frappe."
     },
     "date_dain_end": {
         "name": "{name}",
@@ -341,7 +341,7 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Aujourd'hui c'était vraiment chouette. ...Sans point d'exclamation."
+        "text": "C'était vraiment sympa, aujourd'hui. ...Et je ne dis pas ça en l'air."
     },
     "pre_confess_minsu": {
         "name": "Minsu",
@@ -349,7 +349,7 @@
     },
     "pre_confess_minsu_2": {
         "name": "Minsu",
-        "text": "Fais les choses bien cette fois. Ne fuis pas"
+        "text": "Arrête de tourner autour du pot et dis-lui les choses clairement"
     },
     "pre_confess_callback": {
         "name": "{name}",
