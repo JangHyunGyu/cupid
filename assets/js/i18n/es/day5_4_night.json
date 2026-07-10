@@ -62,7 +62,7 @@
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Profesora",
-        "text": "*En nuestro segundo encuentro, saca un ejemplar de su libro en la librería.* Esta vez es la edición publicada. ¿Lo leerás como lector?"
+        "text": "*En nuestro segundo encuentro, saca de la estantería un ejemplar de su libro.* Esta vez es la edición publicada. ¿Lo leerás y me dirás qué te parece?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Profesora",
-        "text": "*En nuestro siguiente encuentro, en la cafetería, remueve el café una vez y aparta la mano.* ...¿Qué te ha parecido?"
+        "text": "*En nuestro siguiente encuentro, en la cafetería, remueve el café una vez y suelta la cuchara.* ...¿Qué te ha parecido?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*Antes que de la escuela, hablamos de nuestros trabajos y de los libros que leemos últimamente.*"
+        "text": "*Antes de hablar de la escuela, conversamos sobre nuestros trabajos y los libros que hemos leído últimamente.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "Profesora",
@@ -239,7 +239,7 @@
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
-        "text": "*Nos sentamos frente a frente en una cafetería al otro lado del recinto. Las vendas de práctica de primeros auxilios siguen dentro de su caja.*"
+        "text": "*Nos sentamos frente a frente en una cafetería situada enfrente del recinto. Las vendas de práctica siguen guardadas en su caja.*"
     },
     "hidden_perfect_nurse_3b": {
         "name": "Enfermera",
@@ -271,7 +271,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Después de aquella mañana, ir a casa de Juwon los fines de semana empezó a sentirse natural. Mientras el tiempo que pasaban juntos aumentaba poco a poco, Juwon se trasladó al equipo de formación de un hospital universitario. Tanto los pacientes como el nuevo personal de enfermería empezaron a llamarla profesora Lee Juwon.*"
+        "text": "*Después de aquella mañana, ir a casa de Juwon los fines de semana empezó a sentirse natural. A medida que pasábamos más tiempo juntos, Juwon se trasladó al equipo de formación de un hospital universitario. Tanto los pacientes como el nuevo personal de enfermería empezaron a llamarla instructora Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -283,7 +283,7 @@
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
-        "text": "*Cuatro años después de graduarme. En la primavera de mi primer año viviendo por mi cuenta, oigo una voz conocida en un puesto de una campaña de salud local, de camino a casa después del trabajo.*"
+        "text": "*Cuatro años después de graduarme. Una tarde de primavera, un año después de mudarme solo, oigo una voz conocida en un puesto de una campaña de salud local de camino a casa después del trabajo.*"
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
@@ -343,7 +343,7 @@
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
-        "text": "*Salimos de la cafetería y caminamos juntos hasta el metro. Ninguno se desvía hacia el lado del otro.*"
+        "text": "*Salimos de la cafetería y caminamos juntos hasta el metro. Ninguno cambia de rumbo para seguir al otro.*"
     },
     "hidden_true_nurse_7_b": {
         "name": "Enfermera",

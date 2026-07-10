@@ -58,11 +58,11 @@
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*Salvamos o nome e o número um do outro no celular. São informações que não existiam na antiga lista de contatos da escola.*"
+        "text": "*Registramos os nomes e os números um do outro no celular. São informações que não existiam na antiga lista de contatos da escola.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Professora",
-        "text": "*No segundo encontro, ela tira um exemplar do próprio livro na livraria.* Desta vez é a edição publicada. Quer ler como leitor?"
+        "text": "*No segundo encontro, ela tira da estante um exemplar do próprio livro.* Desta vez é a edição publicada. Quer ler e me dizer o que achou?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Professora",
-        "text": "*No encontro seguinte, no café, ela mexe o café uma vez e afasta a mão.* ...O que achou?"
+        "text": "*No encontro seguinte, no café, ela mexe o café uma vez e solta a colher.* ...O que achou?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*Passamos a escolher os próximos encontros alternadamente. Às quintas, ela escolhia; aos sábados, {name}.*"
+        "text": "*Passamos a escolher os próximos encontros alternadamente: às quintas ela escolhe; aos sábados, {name}.*"
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
@@ -106,7 +106,7 @@
     },
     "hidden_perfect_homeroom_ep4": {
         "name": "{name}",
-        "text": "*Perguntamos sobre o trabalho um do outro e marcamos o fim de semana seguinte. Nossa antiga relação não é um segredo que precisa ser apagado nem uma piada para ser resgatada. Deixamos no lugar dela: um tempo que já terminou.*"
+        "text": "*Perguntamos sobre o trabalho um do outro e marcamos outro fim de semana. Nossa antiga relação não é um segredo a apagar nem uma piada a revisitar; nós a deixamos no lugar a que pertence, em um tempo que já terminou.*"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
@@ -178,7 +178,7 @@
     },
     "hidden_true_homeroom_6": {
         "name": "Professora",
-        "text": "Ótimo. Então começamos pelo café. A próxima conversa fica para enquanto bebemos."
+        "text": "Ótimo. Então começamos pelo café. O resto a gente conversa enquanto bebe."
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Professora",
-        "text": "*Do outro lado do prato de bolo, {name} estende a mão. Ela a observa por um instante, segura com cuidado e cobre com a outra mão o sorriso que escapou.* Quer se encontrar de novo na próxima semana?"
+        "text": "*Do outro lado do prato de bolo, {name} estende a mão. Ela a observa por um instante, segura-a com cuidado e cobre com a outra mão o sorriso que escapou.* Quer se encontrar de novo na próxima semana?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -222,7 +222,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Depois da despedida, caminho até o fim do corredor e olho para trás. A professora está junto à janela, despedindo-se dos formandos. {name} também inclina levemente a cabeça antes de sair da escola.*"
+        "text": "*Depois da despedida, {name} caminha até o fim do corredor e olha para trás. A professora está junto à janela, despedindo-se dos formandos. {name} inclina levemente a cabeça antes de sair da escola.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -239,7 +239,7 @@
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
-        "text": "*Sentamos frente a frente em um café do outro lado do local. As faixas de treinamento de primeiros socorros continuam dentro da caixa.*"
+        "text": "*Sentamos frente a frente em um café em frente ao local. As faixas de treinamento continuam guardadas na caixa.*"
     },
     "hidden_perfect_nurse_3b": {
         "name": "Enfermeira",
@@ -271,7 +271,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Depois daquela manhã, ir para a casa de Juwon nos fins de semana passou a parecer natural. Enquanto o tempo que passavam juntos aumentava aos poucos, ela se transferiu para a equipe de treinamento de um hospital universitário. Tanto os pacientes quanto os novos enfermeiros passaram a chamá-la de professora Lee Juwon.*"
+        "text": "*Depois daquela manhã, ir para a casa de Juwon nos fins de semana passou a parecer natural. À medida que passávamos mais tempo juntos, ela se transferiu para a equipe de treinamento de um hospital universitário. Tanto os pacientes quanto os novos enfermeiros passaram a chamá-la de instrutora Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -283,7 +283,7 @@
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
-        "text": "*Quatro anos depois da formatura. Na primavera do meu primeiro ano morando sozinho, ouço uma voz conhecida em um estande de campanha de saúde local, voltando do trabalho.*"
+        "text": "*Quatro anos depois da formatura. Numa tarde de primavera, um ano depois de me mudar para morar sozinho, ouço uma voz conhecida em um estande de campanha de saúde local, voltando do trabalho.*"
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
@@ -291,7 +291,7 @@
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Sobre a mesa ficam dois crachás de empresas diferentes. Os dois têm o rosto de quem terminou o próprio dia cuidando da própria vida.*"
+        "text": "*Sobre a mesa ficam dois crachás de empresas diferentes. Ambos parecem adultos que conseguiram encerrar mais um dia por conta própria.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "Enfermeira",
@@ -343,7 +343,7 @@
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
-        "text": "*Saímos do café e caminhamos lado a lado até o metrô. Nenhum dos dois desvia o caminho para o lado do outro.*"
+        "text": "*Saímos do café e caminhamos lado a lado até o metrô. Nenhum dos dois muda de rumo para seguir o outro.*"
     },
     "hidden_true_nurse_7_b": {
         "name": "Enfermeira",
@@ -367,11 +367,11 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "{name}",
-        "text": "*Durante três meses, os dois se encontraram em um café diferente a cada fim de semana. Naquele dia, Juwon o convidou pela primeira vez para sua casa.*"
+        "text": "*Durante três meses, nós nos encontramos em um café diferente a cada fim de semana. Naquele dia, Juwon me convidou pela primeira vez para sua casa.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*Enquanto escolhem um filme, sentam-se lado a lado no sofá. Lá fora está escuro, e as duas xícaras de café sobre a mesa esfriam devagar.*"
+        "text": "*Escolhemos um filme e nos sentamos lado a lado no sofá. Lá fora está escuro, e as duas xícaras de café sobre a mesa esfriam devagar.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
@@ -423,7 +423,7 @@
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*Antes de sair da enfermaria, você olha para trás. Juwon está sentada junto à janela, segurando a xícara de café. Os dois fazem uma leve reverência.*"
+        "text": "*Antes de sair da enfermaria, olho para trás. Juwon está sentada junto à janela, segurando a xícara de café. Trocamos uma leve reverência.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",
