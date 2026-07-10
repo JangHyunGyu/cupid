@@ -271,7 +271,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Juwon rejoint l'équipe de formation d'un hôpital universitaire. Les patients comme les nouvelles infirmières l'appellent par son nom : formatrice Lee Juwon.*"
+        "text": "*Après ce matin-là, aller chez Juwon le week-end devient naturel. Tandis que le temps passé ensemble s'allonge peu à peu, elle rejoint l'équipe de formation d'un hôpital universitaire. Patients et nouvelles recrues l'appellent désormais formatrice Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Alors on se revoit la semaine prochaine. C'est mon choix. *Avant la fin du film, Juwon s'endort la tête posée sur l'épaule de {name}.*"
+        "text": "Alors je reviendrai la semaine prochaine. Parce que j'en ai envie. *Avant la fin du film, Juwon s'endort la tête posée sur l'épaule de {name}.*"
     },
     "hidden_good_nurse_1": {
         "name": "Infirmière",
