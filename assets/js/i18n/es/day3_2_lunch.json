@@ -41,7 +41,7 @@
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna toma los palillos sin decir nada, más rápido que antes. Me han saqueado. Las tres a la vez.*"
+        "text": "*Yuna toma los palillos en silencio, más rápido que antes.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Nadie se va. Las tres sonríen, pero dudan en levantar los palillos. Solo queda una guarnición en el centro de la lonchera.*"
+        "text": "*Nadie se va. Solo queda una guarnición en el centro de la lonchera.*"
     },
     "lunch3_meal_10_c": {
         "name": "Seoyeon",
@@ -234,7 +234,7 @@
     },
     "lunch3_expose_10": {
         "name": "{name}",
-        "text": "*Silencio por un momento.*"
+        "text": "*Hasta el tintineo de los palillos se detiene.*"
     },
     "lunch3_expose_11": {
         "name": "Yuna",

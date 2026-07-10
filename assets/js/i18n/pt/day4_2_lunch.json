@@ -97,7 +97,7 @@
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "Gostei de hoje. Só queria que você soubesse disso."
+        "text": "Gostei muito de hoje."
     },
     "date_yuna_1": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*A distância entre a gente é o comprimento do fio. Trinta centímetros. — Mais perto, a gente se encosta. Mais longe, o fone cai.*"
+        "text": "*O fio do fone define a distância entre nós. Yuna se senta exatamente a essa distância.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -285,7 +285,7 @@
     },
     "date_dain_arcade_3_b": {
         "name": "{name}",
-        "text": "*Jogo de ritmo. — Dain é absurdamente boa.*"
+        "text": "*Assim que o jogo de ritmo começa, Dain pega a batida. O combo não quebra até a música terminar.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",

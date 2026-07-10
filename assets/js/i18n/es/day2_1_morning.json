@@ -19,7 +19,7 @@
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
-        "text": "*Dos reacciones mínimas. — ¿Me doy por enterado o me hago el distraído?*"
+        "text": "*Seoyeon da un golpecito a su portapapeles.*"
     },
     "morning2_greet_dain_1": {
         "name": "Dain",
@@ -39,11 +39,11 @@
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
-        "text": "*No se sabe si es indirecta o admiración. Yuna no reacciona. Pero la mano con la que escribía la nota se le quedó quieta.*"
+        "text": "*La mano de Yuna se detiene a mitad de una nota.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*Me reí, pero un momento después me vino a la mente el sonido del golpeteo en el portapapeles.*"
+        "text": "*El golpecito del portapapeles llega con un instante de retraso.*"
     },
     "morning2_greet_yuna_1": {
         "name": "{name}",

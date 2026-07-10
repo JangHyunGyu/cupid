@@ -122,7 +122,7 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*'Esta vez ven de verdad.' — Un tono con consecuencias si fallo.*"
+        "text": "*Seoyeon termina ahí la conversación.*"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*Un silencio breve. — Y entonces.*"
+        "text": "*La caja de respuesta permanece vacía un rato. Entonces aparece una nueva burbuja.*"
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",

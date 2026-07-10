@@ -41,7 +41,7 @@
     },
     "lunch3_meal_8": {
         "name": "{name}",
-        "text": "*Yuna pega o hashi em silêncio, mais rápido que antes. Fui saqueado. Pelas três ao mesmo tempo.*"
+        "text": "*Yuna pega o hashi em silêncio, mais rápido que antes.*"
     },
     "lunch3_meal_10": {
         "name": "{name}",
@@ -49,7 +49,7 @@
     },
     "lunch3_meal_10_b": {
         "name": "{name}",
-        "text": "*Ninguém vai embora. As três sorriem, mas hesitam em erguer o hashi. Só resta um acompanhamento no centro da marmita.*"
+        "text": "*Ninguém vai embora. Só resta um acompanhamento no centro da marmita.*"
     },
     "lunch3_meal_10_c": {
         "name": "Seoyeon",
@@ -234,7 +234,7 @@
     },
     "lunch3_expose_10": {
         "name": "{name}",
-        "text": "*Um silêncio.*"
+        "text": "*Até o tilintar dos hashis cessa.*"
     },
     "lunch3_expose_11": {
         "name": "Yuna",

@@ -508,7 +508,7 @@
     },
     "hidden_nurse_d3_5_h": {
         "name": "Enfermeira",
-        "text": "*A enfermeira fica em silêncio por um instante. Depois.*"
+        "text": "*Segue-se um breve silêncio.*"
     },
     "hidden_nurse_d3_5_i": {
         "name": "Enfermeira",
@@ -576,7 +576,7 @@
     },
     "hidden_nurse_d3_6_d": {
         "name": "Enfermeira",
-        "text": "*A enfermeira pausa brevemente em 'fugir'. As pontas dos dedos tocam o estetoscópio, movem-se em direção à gaveta do caderno, depois recuam.*"
+        "text": "*A mão dela roça o estetoscópio, segue em direção à gaveta do caderno e para.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Enfermeira",
