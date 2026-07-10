@@ -190,8 +190,8 @@
         "text": "전 학교 성적표 봤는데, 국어가 좋았네. 읽는 거 좋아해?"
     },
     "hidden_homeroom_d2_3_b": {
-        "name": "담임선생님",
-        "text": "*잠깐 멈칫하며* ...소설."
+        "name": "{name}",
+        "text": "소설은 좀 읽어요."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "담임선생님",
@@ -199,7 +199,7 @@
     },
     "hidden_homeroom_d2_3_d": {
         "name": "담임선생님",
-        "text": "읽는 거? — 쓰는 건?"
+        "text": "읽는 건 좋아하고. 쓰는 건?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",

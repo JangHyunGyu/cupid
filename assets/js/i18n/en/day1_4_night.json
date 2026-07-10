@@ -69,11 +69,11 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notifications from the school health management app are displayed. 'Health room records: Transfer student — mild dizziness. Memo: Come back tomorrow if you have any symptoms. Drink a lot of water. ♥ is of medical concern.'*"
+        "text": "*A notification pops up from the school's health app. 'Nurse's office record: Transfer student — mild dizziness. Drink plenty of water today and don't skip breakfast. If the symptoms return, visit the nurse's office.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*The heart at the end of the sentence stays in the middle of the screen. I look at it once more before turning the screen off.*"
+        "text": "*After reading the last reminder, I fill the water bottle beside my bed.*"
     },
     "night_late_transition": {
         "name": "{name}",

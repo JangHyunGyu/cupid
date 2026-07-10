@@ -190,8 +190,8 @@
         "text": "Olhei seu boletim da outra escola. Ia bem em português. Gosta de ler?"
     },
     "hidden_homeroom_d2_3_b": {
-        "name": "Professora",
-        "text": "*Hesitando um pouco* ...Várias coisas. Principalmente — romances."
+        "name": "{name}",
+        "text": "Leio um romance de vez em quando."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "Professora",
@@ -199,7 +199,7 @@
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Professora",
-        "text": "Ler? — E escrever?"
+        "text": "Você gosta de ler. E de escrever?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",

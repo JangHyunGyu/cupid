@@ -303,7 +303,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*Ich werfe den Ball hoch. Dain springt und — schlägt ihn.*"
+        "text": "*Während ich mit dem Ball in der Hand zögere, macht Dain einen Schritt. Ihr rechtes Knie gibt nach, und sie sinkt in die Hocke.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -405,9 +405,9 @@
         "name": "Dain",
         "text": "*Sie umklammert den Volleyball, den Kopf gesenkt. Ihre Schultern zittern.*",
         "choices": [
-            "...Ich sage nichts. Ich bleib einfach hier.",
-            "Du darfst weinen. Du musst nicht fröhlich tun. Nicht vor mir.",
-            "...Sollen wir zusammen aufstehen? Nur noch einmal."
+            "...Ich sage nichts. Ich bleibe einfach hier.",
+            "Du darfst weinen. Vor mir musst du nicht so tun, als wärst du fröhlich.",
+            "Räumen wir zuerst die Bälle weg. Und buchen wir morgen einen Arzttermin."
         ]
     },
     "wall_dain_newdream_1": {
@@ -432,15 +432,15 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Es ist wirklich lustig, nicht wahr? Ich bin seit meinem 5. Lebensjahr jeden Tag auf diesem Platz... aber jetzt muss ich über andere Dinge nachdenken."
+        "text": "Seit ich fünf bin, kenne ich nur Volleyball. Vielleicht darf ich jetzt auch nach etwas anderem suchen."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "Aber mit dir neben mir — fühlt sich der Boden weniger kalt an."
+        "text": "Solange ich suche ... bleibst du manchmal so neben mir?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
-        "text": "*Der Ball liegt außerhalb der Linie. Dain streicht einmal mit der Handfläche über den kalten Boden.*"
+        "text": "*Dain nimmt ihr Handy und sucht nach einer Rehaklinik. Der Ball bleibt außerhalb der Linie liegen.*"
     },
     "wall_dain_cry_1": {
         "name": "Dain",
@@ -464,47 +464,47 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "*Sie schaltet sein Telefon aus. „Heute wieder lächeln!!“ verschwindet in einem schwarzen Bildschirm. Nur die Lichter der Turnhalle flackerten weiß, bis das Weinen nachließ.*"
+        "text": "*Sie löscht den Alarmtitel ‚Heute auch lächeln‘. In das leere Feld schreibt sie ‚Mama von meinem Knie erzählen‘ und speichert.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*Ich streckte die Hand aus. Dain ergriff sie. Wir standen beide auf. — Ich stellte ihr zu.*"
+        "text": "*Ich nehme Dain den Ball aus den Armen. Sie bleibt sitzen, während {name} allein zum Ballwagen geht.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Sie biss die Zähne zusammen und sprang — der perfekte Schmetterschlag. Der Ball knallt auf den Boden.*"
+        "text": "*Sie sieht zu, wie ein Ball nach dem anderen im Wagen verschwindet.* ...Ich dachte, wenn wir aufräumen, ist es wirklich vorbei."
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "*Sie griff sich bei der Landung ans Knie — aber sie lächelt.*"
+        "text": "Ich sage nicht, dass du alles wegwerfen sollst. Heute räumen wir nur die Bälle weg."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",
-        "text": "*Schwach lächelnd* ...Tut weh."
+        "text": "*Sie löst die Kniebandage und legt sie neu an, ohne Druck auf das Knie auszuüben.* ...Ich muss wohl wieder zum Arzt."
     },
     "wall_dain_lastspike_3_c": {
-        "name": "Dain",
-        "text": "Aber es ist lustig, es ist ein bisschen besser."
+        "name": "{name}",
+        "text": "Ja. Und diesmal hörst du dir die Ergebnisse bis zum Ende an."
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Es tut weh. Aber weil es dein Zuspiel war, ist es ein bisschen besser."
+        "text": "Mit dem Profisport weiß ich noch nicht. Aber ich höre auf, den Schmerz zu verstecken und weiterzuspringen."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
-        "text": "*Sie schaut sich auf dem Spielfeld um. Die dunkle, leere Turnhalle.*"
+        "text": "*Sie öffnet die Terminseite einer orthopädischen Praxis. Der früheste Termin ist am Montag.*"
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Leb wohl, Spielfeld."
+        "text": "Morgen sage ich es auch meiner Mutter und dem Coach."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
-        "text": "— Dreizehn Jahre seit ich fünf war. Danke."
+        "text": "...Kommst du mit, wenn ich zum Arzt gehe?"
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Es gibt kein Ausrufezeichen. Dain legt den Volleyball ab und geht als Erster.*"
+        "text": "*Während {name} die Bälle in den Wagen legt, stützt Dain sich auf die Bank und steht langsam auf.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -807,15 +807,15 @@
     },
     "night_homeroom_msg_1": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* Das Manuskript ist fast fertig. ...Es gibt eine Stelle, die ich dir zuerst zeigen möchte."
+        "text": "*Mitteilung im Lernportal der Schule* Ich habe das Manuskript für die Besprechung im Literaturklub hochgeladen. Wer es lesen möchte, holt morgen im Lehrerzimmer eine gedruckte Kopie ab."
     },
     "night_homeroom_msg_2": {
         "name": "Klassenlehrerin",
-        "text": "*Nachricht* Komm morgen ins Lehrerzimmer, wenn du Zeit hast. — Nach dem Unterricht."
+        "text": "*Mitteilung im Lernportal der Schule* Wenn ihr eine Rückmeldung geben möchtet, kommt zur Zeit des Literaturklubs. Auf diese Mitteilung müsst ihr nicht persönlich antworten."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*23 Uhr. Eine Nachricht von der Klassenlehrerin. Drei kurze Zeilen. — Die Worte 'Ich möchte, dass du es zuerst siehst' bleiben mir im Kopf hängen.*"
+        "text": "*21 Uhr. Unter der Klassenmitteilung erscheinen nacheinander Bestätigungskommentare der Mitglieder des Literaturklubs. Ich trage für morgen ‚Textbesprechung‘ in den Kalender ein.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "System",
@@ -823,19 +823,19 @@
     },
     "night_nurse_msg_1": {
         "name": "Schulkrankenschwester",
-        "text": "Das, was du heute im Krankenzimmer gesagt hast... Ich kann nachts nicht aufhören, daran zu denken."
+        "text": "*Meldung der schulischen Gesundheits-App* Bitte geben Sie an, wie es Ihnen nach dem heutigen Beratungsgespräch geht."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Eine Lesebestätigung erscheint. Zehn Sekunden. Zwanzig Sekunden. Keine weitere Nachricht. — Eine Minute später.*"
+        "text": "*Unter der automatischen Meldung erscheinen zwei Schaltflächen: ‚Stabil‘ und ‚Weiteres Gespräch nötig‘.*"
     },
     "night_nurse_msg_3": {
         "name": "Schulkrankenschwester",
-        "text": "Ach, nicht so gemeint. Ich meine nur, du hast Eindruck hinterlassen."
+        "text": "*Hinweis der Krankenstation* Wenn du ein weiteres Gespräch brauchst, buche es morgen vor Beginn des Schulfests. Du kannst die Klassenleitung oder die Beratungsstelle wählen."
     },
     "night_nurse_msg_4": {
         "name": "Schulkrankenschwester",
-        "text": "...Gute Nacht."
+        "text": "*Hinweis der Krankenstation* Spät am Abend musst du nicht antworten. Wenn es dringend ist, informiere zuerst deine Eltern oder einen Erwachsenen in deiner Nähe."
     },
     "day4_night_sleep": {
         "name": "{name}",

@@ -366,23 +366,23 @@
     },
     "after_nurse_enter_4_d": {
         "name": "Infirmière",
-        "text": "*L'infirmière se lève et s'approche. Quand le bout du thermomètre touche le dos de ma main, mes doigts se raidissent un peu.*"
+        "text": "*Elle me tend un thermomètre numérique, puis sort un tensiomètre de sous le bureau.*"
     },
     "after_nurse_enter_5": {
         "name": "Infirmière",
-        "text": "*L'infirmière s'approche. Sa main se pose sur mon front.*"
+        "text": "*Après avoir vérifié ma température, elle enroule le brassard autour de mon bras.*"
     },
     "after_nurse_enter_6": {
         "name": "Infirmière",
-        "text": "Pas de fièvre... Tu dois avoir la tension un peu basse."
+        "text": "Pas de fièvre. Ta tension est un peu basse, par contre."
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "On peut connaître la tension en touchant le front ?"
+        "text": "Je n'ai pas vraiment mangé ce matin."
     },
     "after_nurse_enter_7": {
         "name": "Infirmière",
-        "text": "Pas de fièvre, mais... il faut te détendre un peu. Allez, allonge-toi. Dix minutes seulement."
+        "text": "Ça peut expliquer les vertiges. Allez, allonge-toi. On attend dix minutes."
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Infirmière",
-        "text": "...Observateur. C'est moi qui devrais m'inquiéter, pourtant."
+        "text": "Tu comprends vite. Mais pour l'instant, on s'occupe de toi."
     },
     "after_nurse_enter_choice_b": {
         "name": "Infirmière",
@@ -414,15 +414,15 @@
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",
-        "text": "Pas la peine de me vouvoyer ici. À l'infirmerie, tu peux souffler un peu. C'est fait pour ça."
+        "text": "Pas besoin de forcer pour faire de longues phrases. Quand tu as la tête qui tourne, prends ton temps pour répondre."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
-        "text": "Mais vous êtes enseignante."
+        "text": "Ça va vite passer ?"
     },
     "after_nurse_enter_8_c": {
         "name": "Infirmière",
-        "text": "*Tendant un verre d'eau* Oui, je suis enseignante. Mais ici, le plus important, c'est que tu sois à l'aise."
+        "text": "*Elle me tend un verre d'eau.* Bois et repose-toi, ça devrait aller beaucoup mieux. Si les vertiges persistent, on préviendra aussi ta professeure principale."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
@@ -478,19 +478,19 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Infirmière",
-        "text": "Ce que j'ai dit plus tôt: merci pour votre inquiétude. Je n’aurais jamais pensé entendre ces mots de la part d’un patient."
+        "text": "Tu as dit que j'avais l'air fatiguée tout à l'heure, non ? Si même un élève le remarque, je ferais mieux de rentrer un peu plus tôt aujourd'hui. Merci."
     },
     "after_nurse_enter_11_g": {
         "name": "Infirmière",
-        "text": "*Le professeur de santé pose le gobelet d'eau et se met à rire.*"
+        "text": "*Elle note l'heure dans le registre de soins, puis débarrasse le verre vide.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Infirmière",
-        "text": "Tu as dit que c'était calme, tout à l'heure ? — Je m'en souviens encore."
+        "text": "Tu as dit que c'était calme ici, non ? Si tu as besoin de souffler, préviens ta professeure principale et viens. Ne serre pas les dents tout seul."
     },
     "after_nurse_enter_11_i": {
         "name": "Infirmière",
-        "text": "*L'infirmière plie une fois le bord du rideau du doigt.*"
+        "text": "*Elle ouvre le rideau et remet le drap en ordre.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_12": {
         "name": "Infirmière",
-        "text": "La prochaine fois que tu te sens mal — ah, enfin, mieux vaut qu'il n'y ait pas de prochaine fois."
+        "text": "Si les symptômes reviennent, viens tout de suite. N'essaie pas de tenir dans le couloir."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",

@@ -875,7 +875,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_nurse_d3_11": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "setFlags": ["nurse_day3","nurse_route_unlocked"],
         "next": "hidden_nurse_d3_freetalk"
     },

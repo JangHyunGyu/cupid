@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-04-01T15:02:22.317Z",
+    "generated": "2026-07-10T01:07:25.396Z",
     "day": 2,
     "total_nodes": 504,
     "lang_avg": {
@@ -2710,39 +2710,45 @@
       }
     },
     "hidden_homeroom_d2_3_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins",
-      "_ko_name": "담임선생님",
-      "_ko_text_preview": "*잠깐 멈칫하며* ...여러 가지. 주로 — 소설.",
+      "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_b",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "소설은 좀 읽어요.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_1_morning.json#hidden_homeroom_d2_3_ins",
+        "_ref": "assets/js/i18n/en/day2_1_morning.json#hidden_homeroom_d2_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_1_morning.json#hidden_homeroom_d2_3_ins",
+        "_ref": "assets/js/i18n/ja/day2_1_morning.json#hidden_homeroom_d2_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_1_morning.json#hidden_homeroom_d2_3_ins",
+        "_ref": "assets/js/i18n/es/day2_1_morning.json#hidden_homeroom_d2_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_1_morning.json#hidden_homeroom_d2_3_ins",
+        "_ref": "assets/js/i18n/fr/day2_1_morning.json#hidden_homeroom_d2_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_1_morning.json#hidden_homeroom_d2_3_ins",
+        "_ref": "assets/js/i18n/de/day2_1_morning.json#hidden_homeroom_d2_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_1_morning.json#hidden_homeroom_d2_3_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_homeroom_d2_3_c": {
@@ -2792,39 +2798,45 @@
       }
     },
     "hidden_homeroom_d2_3_d": {
-      "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_ins3",
+      "_ko_ref": "assets/js/i18n/ko/day2_1_morning.json#hidden_homeroom_d2_3_d",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "읽는 거? — 쓰는 건?",
+      "_ko_text_preview": "읽는 건 좋아하고. 쓰는 건?",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_1_morning.json#hidden_homeroom_d2_3_ins3",
+        "_ref": "assets/js/i18n/en/day2_1_morning.json#hidden_homeroom_d2_3_d",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_1_morning.json#hidden_homeroom_d2_3_ins3",
+        "_ref": "assets/js/i18n/ja/day2_1_morning.json#hidden_homeroom_d2_3_d",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_1_morning.json#hidden_homeroom_d2_3_ins3",
+        "_ref": "assets/js/i18n/es/day2_1_morning.json#hidden_homeroom_d2_3_d",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_1_morning.json#hidden_homeroom_d2_3_ins3",
+        "_ref": "assets/js/i18n/fr/day2_1_morning.json#hidden_homeroom_d2_3_d",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_1_morning.json#hidden_homeroom_d2_3_ins3",
+        "_ref": "assets/js/i18n/de/day2_1_morning.json#hidden_homeroom_d2_3_d",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_1_morning.json#hidden_homeroom_d2_3_d",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_homeroom_d2_3_e": {
@@ -5259,181 +5271,211 @@
     "lunch2_seo_14": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_14",
       "_ko_name": "서연",
-      "_ko_text_preview": "...밝은 애.",
+      "_ko_text_preview": "*다인이 도시락 쪽으로 몸을 기울이자 도시락을 자기 쪽으로 조금 당긴다.* 다인이랑은 벌써 친해졌나 봐.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_seo_14",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_seo_14",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_seo_14",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_seo_14",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_seo_14",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_seo_14",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_seo_15": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_15",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그냥 아는 사이야.",
+      "_ko_text_preview": "같은 반이잖아. 너희 둘도 이제 아는 사이고.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_seo_15",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_seo_15",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_seo_15",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_seo_15",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_seo_15",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_seo_15",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_seo_16": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_16",
       "_ko_name": "서연",
-      "_ko_text_preview": "왜, 신경 쓰여?",
+      "_ko_text_preview": "그건 내가 정할게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_seo_16",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_seo_16",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_seo_16",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_seo_16",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_seo_16",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_seo_16",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_seo_17": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_17",
-      "_ko_name": "다인",
-      "_ko_text_preview": "에이, 그냥 궁금해서 물어본 거야!",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*다인이 도시락 쪽으로 손을 뻗다가 서연과 눈이 마주쳐 멈춘다. 세 사람 사이에 잠깐 정적이 흐른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_seo_17",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_seo_17",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_seo_17",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_seo_17",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_seo_17",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_seo_17",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_seo_19": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_seo_19",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 무심한 척 {name}의 입가를 본다.*",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*{name}의 입가를 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_seo_19",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_seo_19",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_seo_19",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_seo_19",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_seo_19",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_seo_19",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_seo_20": {
@@ -7104,195 +7146,213 @@
       }
     },
     "lunch2_dain_end_h": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins8",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_h",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*말투는 어제 그대로. 근데 눈은 이미 상처 위에 있다.*",
+      "_ko_text_preview": "*말투는 어제처럼 가볍지만, 눈길은 까진 팔꿈치에 고정돼 있다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins8",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_h",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins8",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_h",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins8",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_h",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins8",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_h",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins8",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_h",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_h",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_ins8_first": {
       "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins8_first",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*말투는 여전한데. 근데 눈은 이미 상처 위에 있다.*",
+      "_ko_text_preview": "*말투는 가볍지만, 눈길은 까진 팔꿈치에 고정돼 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins8_first",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins8_first",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins8_first",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins8_first",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins8_first",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_ins8_first",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_i": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins9",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*보건선생님이 다가와 팔꿈치를 잡는다. 손이 차갑다.*",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_i",
+      "_ko_name": "보건선생님",
+      "_ko_text_preview": "*소독약과 거즈를 꺼내 팔꿈치 아래에 받친다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins9",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_i",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins9",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_i",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins9",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_i",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins9",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_i",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins9",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_i",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_i",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_j": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins10",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_j",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "가만있어 봐~...",
+      "_ko_text_preview": "조금 따가울 거야. 팔 힘 빼고.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins10",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_j",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins10",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_j",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins10",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_j",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins10",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_j",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins10",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_j",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_j",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_k": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins11",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_k",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*소독약을 묻힌 솜을 꺼내 — 천천히 닦는다. 밴드를 꺼낸다.*",
+      "_ko_text_preview": "*소독약 묻은 솜이 상처를 훑는다. 팔꿈치 안쪽이 따끔해진다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins11",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_k",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins11",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_k",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins11",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_k",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins11",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_k",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins11",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_k",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_k",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_l": {
@@ -7332,333 +7392,381 @@
       }
     },
     "lunch2_dain_end_m": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins14",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*보건선생님의 손이 멈춘다. 그리고 — 아무 일 없다는 듯 다시 움직인다...",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_m",
+      "_ko_name": "보건선생님",
+      "_ko_text_preview": "*팔꿈치를 한 번 굽혀 보라고 손짓한다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins14",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_m",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins14",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_m",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins14",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_m",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins14",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_m",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins14",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_m",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_m",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_n": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins15",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_n",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "...차가운 편인데. 오늘 좀 따뜻한가 봐.",
+      "_ko_text_preview": "한 번 접어 봐. 당기거나 따갑지는 않아?",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins15",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_n",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins15",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_n",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins15",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_n",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins15",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_n",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins15",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_n",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_n",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_o": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins16",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_o",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*거짓말이다. 아까 잡았을 때 차가웠다. — 손이 따뜻해진 건 지금이다....",
+      "_ko_text_preview": "*팔을 접었다 펴도 밴드 끝이 들뜨지 않는다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins16",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_o",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins16",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_o",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins16",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_o",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins16",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_o",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins16",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_o",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_o",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_p": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins17",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_p",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*빙긋* 정성이야, 정성. 대충 붙이면 떨어지거든.",
+      "_ko_text_preview": "병원에서 배운 요령이야. 관절은 이렇게 붙여야 오래 가거든.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins17",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_p",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins17",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_p",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins17",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_p",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins17",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_p",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins17",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_p",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_p",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_q": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins18",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_q",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*정성. 이 단어로 다 담기는 게 맞나.*",
+      "_ko_text_preview": "*밴드는 팔꿈치를 굽혀도 주름지지 않는다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins18",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_q",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins18",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_q",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins18",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_q",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins18",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_q",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins18",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_q",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_q",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_r": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins19",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_r",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*밴드를 확인하는데 — 책상 위에 노트북이 열려 있다. 화면에 뭔가 적혀...",
+      "_ko_text_preview": "*밴드를 확인하는데 책상 서랍에서 연두색 노트가 삐져나와 있다. 열린 페이지 첫 줄. '그날의 너에게—' 보건선생님이 서랍을 닫는다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins19",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_r",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins19",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_r",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins19",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_r",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins19",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_r",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins19",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_r",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_r",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_s": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins21",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_s",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*눈을 가늘게 뜨며* 하나만? ...음, 그럼. 나 커피보다 코코아 좋아...",
+      "_ko_text_preview": "*서랍 쪽을 한 번 보고* 방금 본 건 잊어. 대신 하나 알려줄게. 난 커피보다 코코아를 좋아해.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins21",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_s",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins21",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_s",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins21",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_s",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins21",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_s",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins21",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_s",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_s",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_t": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins22",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_t",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*별것 아닌 비밀인데, 보건선생님은 말하고 나서 책상 모서리를 손톱으로 톡톡 친다.*",
+      "_ko_text_preview": "*대수롭지 않은 답인데, 서랍 손잡이를 누른 손은 떨어지지 않는다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins22",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_t",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins22",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_t",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins22",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_t",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins22",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_t",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins22",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_t",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_t",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_u": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins23",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_u",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*가볍게 웃으며* 비밀~ 선생님도 비밀이 있는 거야.",
+      "_ko_text_preview": "*가볍게 웃으며* 그 정도면 비밀 하나 값은 하지?",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins23",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_u",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins23",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_u",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins23",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_u",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins23",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_u",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins23",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_u",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_u",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_v": {
@@ -7709,75 +7817,87 @@
       }
     },
     "lunch2_dain_end_w": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins25",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_w",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "자, 다 됐으니까 수업 가. — 다음에는 안 다치고 와.",
+      "_ko_text_preview": "자, 끝. 수업 가. 오늘은 물 닿지 않게 조심하고.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins25",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_w",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins25",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_w",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins25",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_w",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins25",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_w",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins25",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_w",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_w",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_x": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins26",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_x",
       "_ko_name": "{name}",
-      "_ko_text_preview": "안 다치면 올 이유가 없잖아요.",
+      "_ko_text_preview": "내일도 갈아야 해요?",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins26",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_x",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins26",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_x",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins26",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_x",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins26",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_x",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins26",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_x",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_x",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_y": {
@@ -7817,153 +7937,255 @@
       }
     },
     "lunch2_dain_end_z": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins28",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_z",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "이유 없어도 와도 돼.",
+      "_ko_text_preview": "들뜨거나 젖으면 와. 멀쩡하면 그대로 둬도 돼.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins28",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_z",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins28",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_z",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins28",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_z",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins28",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_z",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins28",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_z",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_z",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_b2": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins29",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_b2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*장난기가 사라졌다. 그리고 다시 돌아온다. — 지금 거, 봐버렸다.*",
+      "_ko_text_preview": "*보건선생님이 밴드를 붙인 시간을 진료 기록에 적는다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins29",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_b2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins29",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_b2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins29",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_b2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins29",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_b2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins29",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_b2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_b2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_c2": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins30",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_c2",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*다시 밝은 톤으로* 아 물론 수업 시간에는 안 되고~! 방과후에!",
+      "_ko_text_preview": "수업 중에 불편하면 체육 선생님께 말하고. 그 외에는 쉬는 시간에 와.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins30",
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_c2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins30",
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_c2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins30",
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_c2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins30",
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_c2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins30",
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_c2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_c2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "lunch2_dain_end_d2": {
-      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_ins31",
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_d2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*방금 — 목소리가 살짝 떨렸다.*",
+      "_ko_text_preview": "*진료 기록 끝에 '팔꿈치 굽힘 확인'이 적힌다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_ins31",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_d2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_ins31",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_d2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_ins31",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_d2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_ins31",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_d2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_ins31",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_d2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_d2",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      }
+    },
+    "lunch2_dain_end_nurse_short1": {
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_nurse_short1",
+      "_ko_name": "보건선생님",
+      "_ko_text_preview": "자, 됐다. 다음에는 다치기 전에 주변부터 보고 뛰고.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_nurse_short1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_nurse_short1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_nurse_short1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_nurse_short1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_nurse_short1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_nurse_short1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      }
+    },
+    "lunch2_dain_end_nurse_short3": {
+      "_ko_ref": "assets/js/i18n/ko/day2_2_lunch.json#lunch2_dain_end_nurse_short3",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*복도로 나오자 수업 종료 종이 울린다. 새로 붙인 밴드가 소매 끝에 살짝 걸린다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day2_2_lunch.json#lunch2_dain_end_nurse_short3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day2_2_lunch.json#lunch2_dain_end_nurse_short3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day2_2_lunch.json#lunch2_dain_end_nurse_short3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day2_2_lunch.json#lunch2_dain_end_nurse_short3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day2_2_lunch.json#lunch2_dain_end_nurse_short3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_2_lunch.json#lunch2_dain_end_nurse_short3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     }
   },
@@ -8115,37 +8337,43 @@
     "after2_nurse_transition": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_nurse_transition",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*팔꿈치가 따끔하다. 보건실에 들러야겠다.*",
+      "_ko_text_preview": "*5교시 체육 뒤, 팔꿈치 밴드 끝이 소매에 걸린다. 한 번 눌러 보지만 다시 들뜬다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_nurse_transition",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_nurse_transition",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_nurse_transition",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_nurse_transition",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_nurse_transition",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_nurse_transition",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_choice": {
@@ -8742,110 +8970,128 @@
     },
     "after2_dain_skinship_1": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_skinship_1",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 손을 번쩍 든다. 하이파이브.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*손바닥이 맞닿는다. 다인은 웃다가 조금 늦게 손을 뗀다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_dain_skinship_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_dain_skinship_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_dain_skinship_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_dain_skinship_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_dain_skinship_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_dain_skinship_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_dain_skinship_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_skinship_2",
       "_ko_name": "다인",
-      "_ko_text_preview": "...아 미안! 습관이야!",
+      "_ko_text_preview": "...아, 미안! 경기 끝나면 가끔 이래!",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_dain_skinship_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_dain_skinship_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_dain_skinship_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_dain_skinship_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_dain_skinship_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_dain_skinship_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_dain_skinship_3": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_dain_skinship_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*손을 뗐다. 안 미안해 보인다. — 손바닥이 아직 뜨겁다.*",
+      "_ko_text_preview": "*다인은 방금 부딪친 손으로 뒷머리를 한 번 쓸어 올린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_dain_skinship_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_dain_skinship_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_dain_skinship_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_dain_skinship_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_dain_skinship_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_dain_skinship_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_dain_end": {
@@ -9956,254 +10202,296 @@
     },
     "after2_seo_neck_react": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_react",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 어깨를 돌린다. 뭉친 소리가 난다.*",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*어깨를 돌리다 작게 숨을 들이쉰다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_react",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_react",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_react",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_react",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_react",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_react",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_touch": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_touch",
       "_ko_name": "서연",
-      "_ko_text_preview": "많이 뭉쳤다. 잠깐 가만히 있어 봐.",
+      "_ko_text_preview": "내 서류를 받침대로 쓰겠다고?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_touch",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_touch",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_touch",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_touch",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_touch",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_touch",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_high": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*눈을 감고 몸을 맡긴다.*",
+      "_ko_text_preview": "안 쓰는 상자잖아. 목은 하나고.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_high",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_high_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "*더 낮게* ...조금만 더.",
+      "_ko_text_preview": "오늘만 인정할게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_high_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_high_2_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_2_b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*손끝이 목덜미를 눌렀다가 천천히 풀린다. 둘 다 잠깐 말이 없다.*",
+      "_ko_text_preview": "*서연은 파일 상자를 치우지 않는다. 둘은 다시 서류를 날짜순으로 맞춘다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_2_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_2_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_2_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_2_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_2_ins",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_2_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_high_2_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_low": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*몸을 살짝 뺀다.*",
+      "_ko_text_preview": "*파일 상자를 내밀다 멈춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_low",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_low",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_low",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_low",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_low",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_low",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_low_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "*손을 거두며* ...아무것도 아냐.",
+      "_ko_text_preview": "끝나고 써 볼게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_low_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_low_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_low_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_low_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_low_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_low_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_9": {
@@ -11862,325 +12150,379 @@
     "hidden_nurse_d2_1": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*소매를 걷어 보니 팔꿈치가 조금 까져 있다. 별거 아닌데 피가 조금 난다.*",
+      "_ko_text_preview": "*소매를 걷자 밴드 한쪽이 들려 있다. 상처에는 피가 더 나지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_2",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "어라, 어제의 전학생. 또 왔네? 단골 되려고?",
+      "_ko_text_preview": "하루도 안 돼서 밴드가 반품됐네. 앉아 봐.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_2",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_3": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "팔꿈치 좀 까졌는데요.",
+      "_ko_text_preview": "끝이 자꾸 소매에 걸려요.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_3",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_4": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_4",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "가만있어 봐~...",
+      "_ko_text_preview": "어디 보자.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_5": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_5",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "여기... 이렇게... 자, 됐다. 대충 붙이면 떨어지거든.",
+      "_ko_text_preview": "*들뜬 밴드를 떼고 상처 주변을 닦은 뒤 새 밴드를 꺼낸다.* 조금 따가울 거야.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_choice1": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_choice1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*밴드를 붙여주는 손이 가깝다.*",
+      "_ko_text_preview": "*보건선생님이 팔꿈치를 접었다 펴 보며 밴드 길이를 가늠한다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_choice1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_choice1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_choice1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_choice1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_choice1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_choice1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_choice1_a": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_choice1_a",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "...차가운 편인데. 오늘 좀 따뜻한가 봐.",
+      "_ko_text_preview": "응. 관절은 움직여도 안 뜯기게 붙여야 하거든.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_choice1_a",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_choice1_a",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_choice1_a",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_choice1_a",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_choice1_a",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_choice1_a",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_choice1_b": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_choice1_b",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*빙긋* 정성이야, 정성. 대충 붙이면 떨어지거든.",
+      "_ko_text_preview": "그게 내 일이니까. 대충 붙였다가 수업 중에 떨어지면 곤란하잖아.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_choice1_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_choice1_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_choice1_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_choice1_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_choice1_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_choice1_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_6": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*밴드를 확인하는데 — 책상 위에 노트북이 열려 있다. 화면에 뭔가 적혀...",
+      "_ko_text_preview": "*밴드를 확인하는데 책상 서랍에서 연두색 노트가 삐져나와 있다. 열린 페이지 첫 줄. '그날의 너에게—' 보건선생님이 서랍을 닫는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_7": {
@@ -12331,73 +12673,85 @@
     "hidden_nurse_d2_8": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_8",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "자, 다 됐으니까 수업 가. — 다음에는 안 다치고 와.",
+      "_ko_text_preview": "자, 다 됐어. 오늘은 물 닿지 않게 하고.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_8",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_8",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_8",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_8",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_8",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "hidden_nurse_d2_9": {
       "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#hidden_nurse_d2_9",
-      "_ko_name": "보건선생님",
-      "_ko_text_preview": "이유 없어도 와도 돼. — 아 물론 수업 시간에는 안 되고~! 방과후에!",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*밴드가 들뜨거나 피가 배면 다시 오라는 안내를 듣고 보건실을 나섰다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_3_afterschool.json#hidden_nurse_d2_9",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#hidden_nurse_d2_9",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_3_afterschool.json#hidden_nurse_d2_9",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#hidden_nurse_d2_9",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_3_afterschool.json#hidden_nurse_d2_9",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#hidden_nurse_d2_9",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_dain_9_b": {
@@ -12813,219 +13167,255 @@
       }
     },
     "after2_seo_neck_react_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_react_ins",
-      "_ko_name": "서연",
-      "_ko_text_preview": "많이 뭉쳤다. 잠깐 가만히 있어 봐.",
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_react_b",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "잠깐. 이거 아래에 받쳐 봐.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_react_ins",
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_react_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_react_ins",
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_react_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_react_ins",
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_react_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_react_ins",
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_react_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_react_ins",
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_react_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_react_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_react_c": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_react_ins2",
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_react_c",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 일어나 내 뒤로 온다. 어깨에 손을 올린다.*",
+      "_ko_text_preview": "*한쪽에 쌓인 빈 파일 상자를 서연 앞으로 밀어 놓는다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_react_ins2",
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_react_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_react_ins2",
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_react_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_react_ins2",
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_react_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_react_ins2",
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_react_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_react_ins2",
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_react_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_react_c",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_high_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_ins",
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_b",
       "_ko_name": "서연",
-      "_ko_text_preview": "*조용히* ...가만히 있어. 좀만.",
+      "_ko_text_preview": "...말은 잘하네.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_ins",
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_ins",
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_ins",
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_ins",
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_ins",
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_high_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_high_c": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_ins2",
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_high_c",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*누구 손이? — 서연 손이 내 어깨 위에 있는 건데. 말이 뒤집혔다. ...",
+      "_ko_text_preview": "*서연이 파일 상자 위에 서류를 올린다. 고개를 숙이는 각도가 조금 줄어든다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_ins2",
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_high_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_ins2",
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_high_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_ins2",
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_high_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_ins2",
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_high_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_ins2",
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_high_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_high_c",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_low_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low_ins",
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low_b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "갑자기 뭐야.",
+      "_ko_text_preview": "싫으면 말고.",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_low_ins",
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_low_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_low_ins",
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_low_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_low_ins",
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_low_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_low_ins",
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_low_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_low_ins",
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_low_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_low_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_seo_neck_low_c": {
-      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low_ins2",
+      "_ko_ref": "assets/js/i18n/ko/day2_3_afterschool.json#after2_seo_neck_low_c",
       "_ko_name": "서연",
-      "_ko_text_preview": "*손을 거두며* ...아무것도 아냐.",
+      "_ko_text_preview": "*상자를 받아 서류 옆에 내려놓는다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_low_ins2",
+        "_ref": "assets/js/i18n/en/day2_3_afterschool.json#after2_seo_neck_low_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_low_ins2",
+        "_ref": "assets/js/i18n/ja/day2_3_afterschool.json#after2_seo_neck_low_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_low_ins2",
+        "_ref": "assets/js/i18n/es/day2_3_afterschool.json#after2_seo_neck_low_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_low_ins2",
+        "_ref": "assets/js/i18n/fr/day2_3_afterschool.json#after2_seo_neck_low_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_low_ins2",
+        "_ref": "assets/js/i18n/de/day2_3_afterschool.json#after2_seo_neck_low_c",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_3_afterschool.json#after2_seo_neck_low_c",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "after2_yuna_1_b": {
@@ -14598,191 +14988,211 @@
     "night2_reply_yuna_4": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_4",
       "_ko_name": "유나",
-      "_ko_text_preview": "세 번째 별을 봐",
+      "_ko_text_preview": "아까 재생목록. 세 번째 곡도 들어봐",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_4",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_reply_yuna_4",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_reply_yuna_5": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "?",
+      "_ko_text_preview": "*유나가 공유한 재생목록을 다시 연다. 세 번째 곡은 아까 함께 들은 곡보다 템포가 조금 빠르다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_reply_yuna_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_reply_yuna_6": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6",
       "_ko_name": "유나",
-      "_ko_text_preview": "이유는 나중에",
+      "_ko_text_preview": "끝까지 들어봐",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_6",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_reply_yuna_6",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_reply_yuna_7": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*내일 밤에도 손가락은 세 번째 별에서 멈출 것이다.*",
+      "_ko_text_preview": "*재생목록 제목 아래에 유나가 남긴 짧은 메모가 보인다. '세 번째가 제일 덜 조용해.'*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_7",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_reply_yuna_7",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_reply_yuna_react_high": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_react_high",
       "_ko_name": "유나",
-      "_ko_text_preview": "...이 시간에도 답장하는 사람이 있구나. 내일 도서관에 올래?",
+      "_ko_text_preview": "...다 들었으면 내일 감상 알려줘. 별관 올래?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_react_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_react_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_react_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_react_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_react_high",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_reply_yuna_react_high",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_reply_yuna_react_default": {
@@ -14968,37 +15378,43 @@
     "night2_flashback_5": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰 메모장의 시뮬레이션은 38번째에서 멈춰 있다. 39번째는 없다. 보낼 상대가 사라졌으니까. 고백도 못 했고, 지켜주지도 못했다. 전학은 소정이 때문이 아니다. 아버지 직장 때문이다. — 근데 전학이 싫지 않았다. 소정이의 빈 책상을 매일 지나가지 않아도 되니까.*",
+      "_ko_text_preview": "*38번째 메모 아래에는 아무것도 없다. 39번째 제목만 비어 있다. 다음 날, 소정이 자리는 끝까지 비어 있었다. 담임은 소정이가 전학 갔다고만 말했다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "소정이 백스토리 수정 — 재번역 필요"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "소정이 백스토리 수정 — 재번역 필요"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "소정이 백스토리 수정 — 재번역 필요"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "소정이 백스토리 수정 — 재번역 필요"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_5",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "소정이 백스토리 수정 — 재번역 필요"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_flashback_5",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_flashback_7": {
@@ -15112,365 +15528,379 @@
     "night2_hidden_homeroom_1": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_hidden_homeroom_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*담임선생님에게서 개인 메시지가 왔다. '{name}, 오늘 교무실 와줘...",
+      "_ko_text_preview": "*학교 상담 시스템에 알림이 떴다. '전학생 적응 상담 완료. 추가 도움이 필요하면 담임 상담 시간이나 위클래스 예약을 이용할 것.'*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_hidden_homeroom_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_hidden_homeroom_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_hidden_homeroom_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_hidden_homeroom_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_hidden_homeroom_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_hidden_homeroom_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_hidden_homeroom_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_hidden_homeroom_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*메시지 끝의 마침표가 한참 늦게 찍힌 것처럼 보인다.*",
+      "_ko_text_preview": "*담임 이름 아래에 상담 가능 시간이 함께 적혀 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_hidden_homeroom_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_hidden_homeroom_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_hidden_homeroom_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_hidden_homeroom_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_hidden_homeroom_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_hidden_homeroom_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_hidden_homeroom_3": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_hidden_homeroom_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*마지막 줄만 다시 읽는다.*",
+      "_ko_text_preview": "*예약 버튼을 확인하고 알림을 닫는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_hidden_homeroom_3",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_hidden_homeroom_3",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_hidden_homeroom_3",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_hidden_homeroom_3",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_hidden_homeroom_3",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_hidden_homeroom_3",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_hidden_nurse_1": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_hidden_nurse_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*건강 관리 앱 알림. '보건실 기록: {name} — 팔꿈치 찰과상 (...",
+      "_ko_text_preview": "*건강 관리 앱 알림. '보건실 기록: 전학생 — 팔꿈치 찰과상 (경미). 내일 아침까지 밴드를 건조하게 유지하고, 들뜨거나 피가 배면 보건실에서 교체.'*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_hidden_nurse_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_hidden_nurse_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_hidden_nurse_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_hidden_nurse_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_hidden_nurse_1",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_hidden_nurse_1",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_hidden_nurse_2": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_hidden_nurse_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*밴드 모서리를 엄지로 눌러 본다. 내일 아침 일정이 하나 생겼다.*",
+      "_ko_text_preview": "*팔꿈치를 한 번 굽혀 본다. 밴드 모서리는 아직 단단히 붙어 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_hidden_nurse_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_hidden_nurse_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_hidden_nurse_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_hidden_nurse_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_hidden_nurse_2",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_hidden_nurse_2",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_reply_yuna_6_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6_ins",
+      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6_b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*세 번째 별? — 창문을 열고 밤하늘을 올려다본다. 세 번째가 어떤 건지는 모르겠다.*",
+      "_ko_text_preview": "*이어폰을 끼고 재생 버튼을 누른다. 피아노 뒤로 낮은 드럼 소리가 겹친다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_6_ins",
+        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_6_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_6_ins",
+        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_6_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_6_ins",
+        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_6_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_6_ins",
+        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_6_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_6_ins",
+        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_6_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": "text_updated_cringe_fix"
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_reply_yuna_6_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_reply_yuna_6_c": {
-      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6_ins2",
+      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_reply_yuna_6_c",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*답장은 거기서 끊긴다. 창문에는 내 손가락 자국이 남아 있다.*",
+      "_ko_text_preview": "*곡이 끝난 뒤에도 재생 화면을 잠시 닫지 못한다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_6_ins2",
+        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_reply_yuna_6_c",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_6_ins2",
+        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_reply_yuna_6_c",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_6_ins2",
+        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_reply_yuna_6_c",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_6_ins2",
+        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_reply_yuna_6_c",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_6_ins2",
+        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_reply_yuna_6_c",
         "_reviewed": false,
         "_score": null,
-        "_issues": [
-          "Style-pass text updated; needs native review."
-        ]
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_reply_yuna_6_c",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_end_2_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_2_ins2",
+      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_2_b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*민수가 한 말이 자꾸 돌아온다. '전 학교에서도 이랬어?'*",
+      "_ko_text_preview": "*민수의 메시지 위로 읽지 않은 알림 두 개가 쌓여 있다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_end_2_ins2",
+        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_end_2_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_end_2_ins2",
+        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_end_2_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_end_2_ins2",
+        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_end_2_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_end_2_ins2",
+        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_end_2_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_end_2_ins2",
+        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_end_2_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_end_2_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_end_3_b": {
-      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_3_ins",
+      "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_end_3_b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*문제는 그 거리가 생각보다 빠르게 좁아지고 있다는 거다.*",
+      "_ko_text_preview": "*화면이 꺼진 뒤에도 휴대폰을 쥔 손은 그대로다.*",
       "_has_choices": false,
       "en": {
-        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_end_3_ins",
+        "_ref": "assets/js/i18n/en/day2_4_night.json#night2_end_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
-        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_end_3_ins",
+        "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_end_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
-        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_end_3_ins",
+        "_ref": "assets/js/i18n/es/day2_4_night.json#night2_end_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
-        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_end_3_ins",
+        "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_end_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
-        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_end_3_ins",
+        "_ref": "assets/js/i18n/de/day2_4_night.json#night2_end_3_b",
         "_reviewed": false,
-        "_score": 10,
-        "_issues": null
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_end_3_b",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_end_4_b": {
@@ -15548,37 +15978,43 @@
     "night2_flashback_8": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_8",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*그런데 — 천장을 본다. 오늘 하루가 머릿속에서 안 꺼진다. 서연. 다인. 유나. 셋 다 신경이 쓰인다...*",
+      "_ko_text_preview": "*핸드폰을 다시 든다. 방금 답장을 보낸 대화방 아래로, 아직 답하지 않은 두 이름이 나란히 남아 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_8",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_8",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_8",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_8",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_8",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_flashback_8",
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     },
     "night2_flashback_9": {
@@ -15626,43 +16062,43 @@
     "night2_flashback_10": {
       "_ko_ref": "assets/js/i18n/ko/day2_4_night.json#night2_flashback_10",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*— 그래서 셋 다 여지를 두고 있다.*",
+      "_ko_text_preview": "*답장을 보낸 대화방을 열었다 닫는다. 나머지 두 대화방에는 아직 보낼 말을 쓰지 못했다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day2_4_night.json#night2_flashback_10",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day2_4_night.json#night2_flashback_10",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "es": {
         "_ref": "assets/js/i18n/es/day2_4_night.json#night2_flashback_10",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day2_4_night.json#night2_flashback_10",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "de": {
         "_ref": "assets/js/i18n/de/day2_4_night.json#night2_flashback_10",
-        "_reviewed": true,
-        "_score": 9,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day2_4_night.json#night2_flashback_10",
-        "_reviewed": true,
-        "_score": 10,
-        "_issues": null
+        "_reviewed": false,
+        "_score": null,
+        "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
     }
   }

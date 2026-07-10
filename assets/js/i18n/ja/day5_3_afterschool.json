@@ -29,7 +29,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "ソヨン",
-        "text": "次は私が先に連れて行くから。"
+        "text": "君が決めたなら、それでいい。もう曖昧な態度だけは取らないで。"
     },
     "after5_farewell_seo_6_b": {
         "name": "ソヨン",
@@ -37,7 +37,7 @@
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*廊下に一人残った。ソヨンの足音が遠ざかる。閉じたと思っていた屋上の鍵が手のひらに残っている。*"
+        "text": "*廊下に一人残る。ソヨンの足音が遠ざかり、上の階から屋上の扉に鍵がかかる音がする。*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -50,7 +50,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "ユナ",
-        "text": "楽しかった。…次の物語で会おう。"
+        "text": "君が選んだ人のところには、遅れないで。"
     },
     "after5_farewell_yuna_4": {
         "name": "ユナ",
@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*しおりの『楽しかった』の下で、薄紫のインクが少しにじんでいる。*"
+        "text": "*しおりには一行だけ書かれている。『楽しかった』。最後には句点がある。*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*体育館の前からダインが走ってくる。*"
+        "text": "*体育館の前からダインが歩いてくる。いつもより歩幅が小さい。*"
     },
     "after5_farewell_dain_2": {
         "name": "ダイン",
@@ -79,7 +79,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "ダイン",
-        "text": "でもまあ、あんたが選んだんだから。次は私にもチャンスちょうだいよね！"
+        "text": "あんたが選んだんだから、私からは何も言わない。"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -87,15 +87,15 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "ダイン",
-        "text": "……うまくやりなよ。マジで。"
+        "text": "でも中途半端なことしたら、本気で怒るから。……うまくやりなよ。"
     },
     "after5_farewell_dain_4_d": {
         "name": "ダイン",
-        "text": "*感嘆符は健在だ。——ダインは最後までダインだ。それがこの人の強さ。*"
+        "text": "*バレーボールを置き場へ押し込み、膝のサポーターのベルトを締め直す。*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*振り返った背中が小さくなる。——でも歩みは速い。初めて会った時みたいに。*"
+        "text": "*ダインは背を向け、ゆっくり体育館の中へ入っていく。*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*校門前。遠くに三人が見える。ソヨンはハウンと歩き、ダインはバレーボールを投げながら走り、ユナは本を読みながらゆっくり行く。誰もこちらを見ていない。*"
+        "text": "*校門前。遠くに三人が見える。ソヨンはハウンと歩き、ダインはバレーボールを脇に抱えてゆっくり歩き、ユナは本を読みながら進んでいる。誰もこちらを見ない。*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -120,15 +120,11 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*最後の足取りが二つに分かれる。もう約束している相手と、最後まで見ないふりができなかった気持ち。*"
+        "text": "*友人たちとの約束へ向かう道と、行事の片づけをもう少し手伝う道に分かれている。*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*どこへ行くべきだろう。今日は——自分で決めなきゃいけない。*",
-        "choices": [
-            "約束した相手のところへ行く",
-            "最後まで心に残ったほうへ行く"
-        ]
+        "text": "*行事の片づけはほかの生徒に任せ、約束の場所である公園へ向かう。*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -191,7 +187,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "ダイン",
-        "text": "*走ってきて——立ち止まる。*"
+        "text": "*足を速め、{name}の前で立ち止まる。*"
     },
     "after5_last_chance_2_m": {
         "name": "ダイン",
@@ -315,11 +311,11 @@
     },
     "after5_confess_react_yuna_c": {
         "name": "ユナ",
-        "text": "……知ってた。"
+        "text": "……それでも、直接聞きたかった。"
     },
     "after5_confess_react_yuna_d": {
-        "name": "{name}",
-        "text": "*メモを渡される。折りたたまれた紙。開くと一行。*"
+        "name": "ユナ",
+        "text": "*折り畳んだメモを渡される。開くと一行だけ書かれている。*"
     },
     "after5_confess_react_yuna_e": {
         "name": "{name}",
@@ -327,7 +323,7 @@
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*一行だけ、インクが滲んでいる。折り目に爪痕が残っている。*"
+        "text": "*文字の一か所が強く押されている。紙には何度も折って開いた跡が残っている。*"
     },
     "after5_confess_react_yuna_g": {
         "name": "ユナ",

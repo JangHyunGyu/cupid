@@ -69,11 +69,11 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*As notificações do aplicativo de gerenciamento de saúde escolar são exibidas. 'Registros da sala de saúde: estudante transferido - leve tontura. Memorando: Volte amanhã se tiver algum sintoma. Beba muita água. ♥ é uma preocupação médica.'*"
+        "text": "*Surge uma notificação do aplicativo de saúde da escola. 'Registro da enfermaria: aluno transferido — tontura leve. Hoje: beber bastante água e não pular o café da manhã. Se os sintomas voltarem, procurar a enfermaria.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*O coração no fim da frase fica no meio da tela. Antes de apagar a tela, olho para ele mais uma vez.*"
+        "text": "*Depois de ler a última orientação, encho a garrafa de água ao lado da cama.*"
     },
     "night_late_transition": {
         "name": "{name}",

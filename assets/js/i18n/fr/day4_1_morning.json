@@ -124,7 +124,7 @@
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Professeure principale",
-        "text": "*Gênée* Oh, c'est juste que — j'avais de la paperasse à finir."
+        "text": "Je suis venue pour la séance de critique du club littéraire. J'ai aussi apporté mon manuscrit."
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
@@ -132,11 +132,11 @@
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
-        "text": "Toute seule ?"
+        "text": "Vous faites des critiques même le week-end ?"
     },
     "hidden_homeroom_d4_3_e": {
         "name": "Professeure principale",
-        "text": "*Les mains dans les poches* ...Un prof reste un prof même le week-end. Voilà."
+        "text": "C'était le seul créneau libre pour les élèves inscrits. Leur professeure référente doit être présente."
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
@@ -160,15 +160,15 @@
     },
     "hidden_homeroom_d4_5": {
         "name": "Professeure principale",
-        "text": "...T'as mangé ?"
+        "text": "Les membres du club sont déjà dans un café à côté. Tu veux assister à la critique ?"
     },
     "hidden_homeroom_d4_5_b": {
         "name": "{name}",
-        "text": "Pas encore."
+        "text": "Je peux venir ?"
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Professeure principale",
-        "text": "Alors on mange d'abord. *marmonnant* En tant que prof, je dois vérifier si un élève a mangé. — Jus pour toi, par contre."
+        "text": "C'est une séance ouverte, donc oui. Mais c'est à toi de décider si tu lis le manuscrit."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Professeure principale",
@@ -178,21 +178,21 @@
         "name": "{name}",
         "text": "*Le coin de l'enveloppe en papier est coincé sous le porte-gobelet.*",
         "choices": [
-            "D'accord. Il y a un café dans le coin ?",
-            "Madame, vous devriez pas, non ?"
+            "D'accord. Je peux assister à la critique ?",
+            "J'ai déjà quelque chose de prévu aujourd'hui."
         ]
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Professeure principale",
-        "text": "Prendre un verre avec un élève en dehors de l'école, franchement, c'est un peu gênant."
+        "text": "Les membres du club sont à la table du fond. Une rumeur disant qu'on est venus seuls circulerait plus vite que mon manuscrit."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
-        "text": "C'est gênant ?"
+        "text": "J'allais justement dire la même chose."
     },
     "hidden_homeroom_d4_cafe_1_c": {
         "name": "Professeure principale",
-        "text": "*En buvant une gorgée de café* Franchement ? Un peu."
+        "text": "*Elle boit une gorgée de café.* Parfait. On est donc d'accord."
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Professeure principale",
@@ -200,7 +200,7 @@
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
-        "text": "Vous avez avancé sur le manuscrit hier ?"
+        "text": "Quelle partie allez-vous montrer au club ?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Professeure principale",
@@ -208,15 +208,15 @@
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Professeure principale",
-        "text": "...petit. Après l'avoir vu hier, votre main a encore bougé."
+        "text": "Le début, pour l'instant. Ce sont encore les voix des personnages qui m'inquiètent le plus."
     },
     "hidden_homeroom_d4_cafe_2_b": {
         "name": "{name}",
-        "text": "Le fait que je l'aie vu, ça a aidé ?"
+        "text": "Mon avis fera aussi partie de la critique ?"
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Professeure principale",
-        "text": "Plutôt que de l'aide... *regardant dehors* depuis que tu l'as vu, l'enveloppe paraît un peu plus légère. Même le papier pèse quand on le porte seule."
+        "text": "Je recueillerai les avis sans les noms. Ce qui compte, ce n'est pas qui l'a dit, mais l'endroit où la lecture s'est arrêtée."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
@@ -224,31 +224,31 @@
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Professeure principale",
-        "text": "Tu sais ce qui est le plus dur dans l'écriture d'un roman ?"
+        "text": "Tu sais ce qui est le plus difficile dans une critique ?"
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Professeure principale",
-        "text": "Finalement, il faut le montrer à quelqu'un pour aller jusqu'au bout. S'il n'y a personne pour le lire, on s'arrête sans cesse."
+        "text": "Entendre où quelqu'un s'est arrêté plutôt que ce qu'il a aimé. C'est ce qui fait le plus mal, et ce qui aide le plus."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Professeure principale",
         "text": "*La prof principale repose sa tasse. Son corps penche légèrement vers la fenêtre.*",
         "choices": [
-            "Ce roman — c'est qui le personnage principal ?",
-            "Être votre premier lecteur... c'est une sacrée responsabilité"
+            "Vous n'avez toujours pas choisi la fin ?",
+            "Vous allez aussi montrer tout le manuscrit au club, n'est-ce pas ?"
         ]
     },
     "hidden_homeroom_d4_cafe_choice_a": {
         "name": "Professeure principale",
-        "text": "...Tu le sauras en lisant. Un indice — elle me ressemble un peu."
+        "text": "Je n'ai toujours pas choisi la fin. Chaque fois que j'essaie de la rendre grandiose, je la gâche."
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Professeure principale",
-        "text": "*petit rire* Si c'est trop lourd, t'es pas obligé de lire. — Mais lis-le avec le cœur léger. Je préfère ça."
+        "text": "Bien sûr. Ce sont les exemplaires que je distribue aujourd'hui. Il n'y en a pas un à part, rien que pour toi."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Professeure principale",
-        "text": "...Tu veux bien être mon premier lecteur ?"
+        "text": "Tu peux signaler ce qui te paraît étrange du point de vue d'un élève ? Je lirai tes remarques avec celles des autres."
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
@@ -256,7 +256,7 @@
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
-        "text": "J'ai envie de le lire."
+        "text": "Je vais essayer."
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Professeure principale",
@@ -264,71 +264,71 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professeure principale",
-        "text": "...Merci. Mais ça, ne le dis à personne — tu sais ? ...C'est notre secret. Le coin du manchon de tasse continue de se plier."
+        "text": "Merci. Tu n'as pas besoin d'écrire ton nom. La critique est anonyme, alors note franchement ce que tu penses."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "Vous allez encore dire que c’est le travail, non ?"
+        "text": "Ça compte encore comme du travail ?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Professeure principale",
-        "text": "*Se fige* ...Ne me vole pas ma réplique avant que je la dise."
+        "text": "Aujourd'hui, disons que j'encadre le club littéraire."
     },
     "hidden_homeroom_d4_cafe_5_f": {
         "name": "{name}",
-        "text": "*J'ai pouffé. Elle aussi. Au même moment.*"
+        "text": "*À la table du fond, un membre du club prend un autre exemplaire du manuscrit.*"
     },
     "hidden_homeroom_d4_cafe_5_g": {
         "name": "Professeure principale",
-        "text": "...C'est vrai. Ce n'est pas permis."
+        "text": "Et nous ne parlerons du manuscrit que pendant le club. Je ne le mêlerai ni aux cours ni aux entretiens."
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "Professeure principale",
-        "text": "*Elle sort la main de sa poche. Le bout de ses doigts flotte un instant dans le vide. Un geste d’habitude.*"
+        "text": "*Elle numérote chaque exemplaire et envoie le dernier à la table du fond.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Professeure principale",
-        "text": "*Posant sa tasse de café* ...Se voir dehors comme ça de temps en temps, c'est pas mal."
+        "text": "La prochaine critique aura lieu à la bibliothèque du lycée. On a choisi le lieu d'aujourd'hui un peu trop vite."
     },
     "hidden_homeroom_d4_cafe_6_b": {
         "name": "Professeure principale",
-        "text": "*La professeure principale regarde {name}. Ses yeux ne sont plus secs ni détachés.* *La porte du café se referme lentement derrière eux.*"
+        "text": "*Après avoir vérifié l'addition avec les membres du club, elle repart la première vers le lycée.*"
     },
     "hidden_homeroom_d4_decline": {
         "name": "Professeure principale",
-        "text": "...T'as raison. Je devrais pas. Allez, c'est le weekend. — Va t'amuser."
+        "text": "D'accord. Ton rendez-vous passe d'abord. Je demanderai un avis officiel sur le manuscrit au lycée."
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "Professeure principale",
-        "text": "*Elle se détourne. Ses épaules s'abaissent légèrement. Son dos se reflète, tout petit, dans la porte vitrée du café.*"
+        "text": "*Tout en consultant la discussion de groupe du club littéraire, elle retourne dans le lycée.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Matin de week-end. J'ai ouvert la porte de l'infirmerie. Elle est assise sur sa chaise en blouse blanche, mais il n'y a pas de mémo blagueur sur le bureau.*"
+        "text": "*Le matin consacré aux préparatifs de l'événement scolaire, j'ouvre la porte de l'infirmerie à l'heure prévue pour mon entretien. Une fiche de suivi et une brochure sont posées devant l'infirmière.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Infirmière",
-        "text": "Oh, tu es venu."
+        "text": "Pile à l'heure. Assieds-toi."
     },
     "hidden_nurse_d4_morning_4": {
         "name": "Infirmière",
-        "text": "*Le professeur de santé dit: « Oh, je suis là » et prend le stéthoscope, puis le repose sur le bureau.*"
+        "text": "*Elle ouvre la fiche de suivi et prend son stylo.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
-        "text": "C'est la dernière consultation ?"
+        "text": "On termine l'entretien de l'autre jour, c'est ça ?"
     },
     "hidden_nurse_d4_morning_6": {
         "name": "Infirmière",
-        "text": "Consultation... *elle fait tourner sa chaise* Ouais. La dernière consultation."
+        "text": "Oui. On va voir comment tu vas aujourd'hui et décider vers qui te tourner si tu as encore besoin d'aide."
     },
     "hidden_nurse_d4_morning_7": {
         "name": "Infirmière",
-        "text": "*L'infirmière fait semblant de ranger les papiers sur son bureau — mais elle tourne la même feuille pour la troisième fois.*"
+        "text": "*Elle reprend un par un les points notés lors de notre dernier entretien.*"
     },
     "hidden_nurse_d4_morning_8": {
         "name": "Infirmière",
-        "text": "Je peux te poser une question ?"
+        "text": "Je dois vérifier une chose."
     },
     "hidden_nurse_d4_morning_9": {
         "name": "{name}",
@@ -336,49 +336,49 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "Infirmière",
-        "text": "*L'infirmière se touche les lunettes. Les yeux visibles à travers sont plus grands que prévu. Les yeux qui étaient cachés derrière la malice.*"
+        "text": "*Elle tourne la brochure d'accompagnement scolaire vers {name}.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Infirmière",
-        "text": "...Tu reviendras à l'infirmerie une fois diplômé ?"
+        "text": "Tu as choisi un adulte à qui demander de l'aide en dehors de moi ?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*Ce n'est pas une question. L'infirmière appuie son pouce contre le bord du gobelet en papier. Une marque de pression se forme.*",
+        "text": "*La brochure indique l'ordre à suivre : professeure principale, service d'écoute scolaire, puis parent ou tuteur.*",
         "choices": [
-            "Je reviendrai.",
-            "..."
+            "J'en parlerai aussi à ma professeure principale et au service d'écoute.",
+            "Je ne sais pas encore."
         ]
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
-        "text": "Je reviendrai."
+        "text": "J'en parlerai aussi à ma professeure principale et au service d'écoute."
     },
     "hidden_nurse_d4_morning_choice_b": {
         "name": "{name}",
-        "text": "*Silence.*"
+        "text": "Je ne sais pas encore."
     },
     "hidden_nurse_d4_morning_12": {
         "name": "Infirmière",
-        "text": "...Vraiment ?"
+        "text": "Bien. C'est beaucoup mieux que d'essayer de tout supporter seul."
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Infirmière",
-        "text": "*L'infirmière rajuste ses lunettes. Son doigt s'arrête un instant sous le verre.*"
+        "text": "Je ne répéterai pas ton histoire à la légère. Mais si je pense que tu risques d'être blessé, j'appellerai tout de suite un autre adulte. Mettons-nous d'accord là-dessus maintenant."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Infirmière",
-        "text": "*Elle pose la tasse au bord du bureau et laisse son sourire s'effacer.* Aujourd'hui, on ne va pas s'en sortir avec des blagues.",
+        "text": "*Elle referme la fiche de suivi.* Tu te souviens de l'ordre qu'on a noté aujourd'hui ? Si tu te sens perdu, commence par la première personne de la liste.",
         "context": "Jour 4. Le moment des adieux quand elle demande si tu reviendras après tes études. La scène où les deux montrent leurs vrais cœurs. Ton : Conversation plus profonde et émotionnelle. La vérité derrière la malice. Le sens d'être appelé par son nom.",
         "personality": "L'infirmière est prudente et honnête. Elle veut t'appeler par ton nom mais elle est dans une position prudente. Des larmes coulent à ta promesse."
     },
     "hidden_nurse_d4_check": {
-        "name": "{name}",
-        "text": "*Le weekend touche à sa fin.*"
+        "name": "Système",
+        "text": ""
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*Notification de messagerie scolaire: « Je recherche quelqu'un pour m'aider ». Mes pieds pointent vers la salle de santé. Les documents et outils d’examen sont empilés sur le bureau. Le professeur de santé organise les choses sereinement.*"
+        "text": "*Une trousse de secours pour l'événement et du matériel de contrôle sont empilés sur un côté du bureau. L'infirmière relève la tête en plein étiquetage.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Infirmière",
@@ -386,27 +386,27 @@
     },
     "hidden_nurse_d4_2": {
         "name": "Infirmière",
-        "text": "Hein ? T'es vraiment venu ? Je m'y attendais pas. — Un élève bénévole à l'infirmerie un weekend."
+        "text": "J'ai demandé des volontaires pour préparer les trousses de secours, mais je ne pensais pas que tu t'inscrirais vraiment."
     },
     "hidden_nurse_d4_2_b": {
         "name": "{name}",
-        "text": "Donc le patient aide l'infirmière."
+        "text": "Aujourd'hui, je suis bénévole, pas patient."
     },
     "hidden_nurse_d4_2_c": {
         "name": "Infirmière",
-        "text": "*En riant* Un patient qui aide l'infirmière. Il va falloir noter ça."
+        "text": "Bénévole aujourd'hui. Si tu te blesses, tu redeviens patient."
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Vue hors de l'école, son sourire est différent. Pas de badge, pas de stylos dans la poche de la blouse. Toutes les deux, nous plions des formulaires de contrôle et nettoyons le tensiomètre.*"
+        "text": "*Pendant que le personnel de l'événement va et vient, nous disposons les compresses et les lingettes désinfectantes par catégorie sur la table.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Infirmière",
-        "text": "*En tendant des documents* Tu peux trier ceux-là ? Par niveau."
+        "text": "*Elle me tend une pochette vide.* Deux compresses et trois lingettes désinfectantes dans chacune. Je m'occupe des documents contenant des informations personnelles."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "*Asseyez-vous côte à côte et organisez les documents. Chaque fois que leurs mains se touchent, le bout des doigts du professeur de santé se tourne vers le bord du papier.*"
+        "text": "*Je remplis chaque pochette. L'infirmière vérifie de nouveau toutes les trousses terminées.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Infirmière",
@@ -442,7 +442,7 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "Infirmière",
-        "text": "Personne n’a appelé mon nom. « Infirmière », « Service de nuit », « Service 3 ». — Tout cela n'est qu'un titre, pas un nom."
+        "text": "Le plus dur, c'était quand je me suis mise à vérifier les numéros de lit avant les noms. Je ne savais même plus qui j'avais devant moi."
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
@@ -450,39 +450,39 @@
     },
     "hidden_nurse_d4_4_h": {
         "name": "Infirmière",
-        "text": "À l'école je suis l'Infirmière, non ? Encore un titre. *Avec un léger sourire* Mais toi, tu m'as jamais appelée par mon titre, pas vrai ?"
+        "text": "Au lycée, j'ai le temps de voir chaque élève séparément. Et quand quelque chose me dépasse, l'amener à quelqu'un qui peut l'aider fait aussi partie de mon travail."
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",
-        "text": "...Vraiment ?"
+        "text": "Mettre quelqu'un en contact avec de l'aide, ça compte aussi comme un soin ?"
     },
     "hidden_nurse_d4_4_j": {
         "name": "Infirmière",
-        "text": "Toi, tu m'appelles juste « Madame ». Sans passer par ma fonction. J'aimais bien ça."
+        "text": "Alors si tu bloques ici, va aussi voir ta professeure principale ou le service d'écoute. Ne porte pas ça tout seul."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*La paperasse est terminée. L'infirmière scolaire tapote le champ nom une fois avec son doigt, puis enfin s'étire.*"
+        "text": "*Elle ferme la dernière trousse de secours. Dehors, d'autres bénévoles emportent les cartons terminés.*"
     },
     "hidden_nurse_d4_5": {
         "name": "Infirmière",
-        "text": "*Regardant par la fenêtre* C'est pour ça que je suis là. Un endroit où on m'appelle « Madame », pas « l'infirmière ». — La nuance est petite, mais elle change tout."
+        "text": "C'est pour ça que je suis venue travailler dans un lycée. Je voulais réapprendre à écouter avant de chercher à soigner."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*Le doigt de l'infirmière reste longtemps sur la case du nom.*",
+        "text": "*L'infirmière note le nombre de trousses de secours terminées.*",
         "choices": [
-            "Comment vous vous appelez ? Pas \"Infirmière\"",
-            "C'est pour ça que vous êtes venue dans cette école"
+            "Quand êtes-vous heureuse d'être devenue infirmière scolaire ?",
+            "Quelle est la plus grande différence entre l'hôpital et le lycée ?"
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
         "name": "Infirmière",
-        "text": "*Elle ferme la bouche un instant.* ...Juwon. Lee Juwon."
+        "text": "Quand un élève qui souffrait seul ouvre cette porte de lui-même. Là, je me dis que j'ai bien fait."
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "Infirmière",
-        "text": "...Oui. Ici, tout le monde ne vient qu'avec des blessures légères. J'aime ça."
+        "text": "Ici, je peux parler à quelqu'un avant qu'il ne se blesse. C'est ça, la plus grande différence."
     },
     "hidden_nurse_d4_6": {
         "name": "Infirmière",
@@ -494,63 +494,63 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "Infirmière",
-        "text": "*L'infirmière regarde brièvement vers {name}.* ...Ce n'est rien."
+        "text": "Si, ça compte. Et je noterai précisément toutes tes heures de bénévolat."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
-        "text": "*'Ce n'est rien' Le coin du dossier appuie contre le bout de mes doigts derrière moi.*"
+        "text": "*L'infirmière inscrit l'heure de début et de fin sur la fiche de bénévolat.*"
     },
     "hidden_nurse_d4_choice": {
         "name": "Infirmière",
-        "text": "Alors, qu'est-ce que je peux t'offrir pour te remercier ? Qu'un prof paie un repas à un élève, ça compte comme activité éducative.",
+        "text": "Il ne reste plus qu'à coller les étiquettes. Le personnel va acheter de quoi grignoter : quelqu'un veut m'aider à finir ?",
         "choices": [
-            "Si c'est éducatif, ça va ?",
+            "Je vais aussi rester pour étiqueter les trousses.",
             "Ça va, je vais y aller"
         ]
     },
     "hidden_nurse_d4_meal_walk": {
         "name": "{name}",
-        "text": "*On s'est dirigés vers le snack devant l'école.*"
+        "text": "*Je passe à la petite échoppe devant le lycée avec le personnel de l'événement. Il y a un sac à emporter par personne.*"
     },
     "hidden_nurse_d4_meal_1": {
         "name": "Infirmière",
-        "text": "Ah, ça pique. Je ne peux plus manger des choses comme ça autant qu'avant."
+        "text": "Qui a choisi le plat épicé ? Prenez d'abord de l'eau."
     },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
-        "text": "Vous en mangiez aussi quand vous étiez étudiante."
+        "text": "C'est vous qui avez goûté la première."
     },
     "hidden_nurse_d4_meal_1_c": {
         "name": "Infirmière",
-        "text": "C'est une histoire ancienne. *Sourire* Je ne suis plus comme avant non plus."
+        "text": "Il fallait bien que je vérifie. *Elle boit de l'eau.* Même une trousse de secours ne peut rien contre ça."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
-        "text": "*On est retournés à l'infirmerie.*"
+        "text": "*Nous retournons à l'infirmerie avec le personnel et collons les étiquettes sur les cartons.*"
     },
     "hidden_nurse_d4_meal_2": {
         "name": "{name}",
-        "text": "Vous n'êtes pas vieille du tout."
+        "text": "Vous n'avez pas la même expression que lorsque vous parlez de l'hôpital."
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "Infirmière",
-        "text": "*L'elle s'arrête un instant. Pose ses baguettes.*"
+        "text": "*La main qui collait une étiquette s'arrête un instant.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Infirmière",
-        "text": "...Ce genre de chose. Ça sonne bizarre venant d'un élève."
+        "text": "Ça me touche, mais ne fais pas de mon humeur ta responsabilité."
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*La main qui tient les baguettes s'arrête sur la table.*"
+        "text": "*Elle colle la dernière étiquette au centre du carton.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Infirmière",
-        "text": "*Elle sourit de nouveau* Bon, la pause déjeuner est finie. J'ai encore du travail."
+        "text": "Voilà, c'est fini. Vérifiez vos heures de bénévolat et retournez tous sur le lieu de l'événement."
     },
     "hidden_nurse_d4_meal_3_d": {
         "name": "{name}",
-        "text": "*Sur le chemin du retour. L'Infirmière m'interpelle par derrière.*"
+        "text": "*Alors que je m'apprête à sortir, l'infirmière me rappelle, la fiche à la main.*"
     },
     "hidden_nurse_d4_meal_3_e": {
         "name": "Infirmière",
@@ -558,15 +558,15 @@
     },
     "hidden_nurse_d4_meal_4": {
         "name": "Infirmière",
-        "text": "{name}. Merci pour aujourd'hui. — Vraiment."
+        "text": "{name}. Merci pour ton aide aujourd'hui. Vérifie tes heures de bénévolat lundi."
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "Infirmière",
-        "text": "*L'infirmière appuie sur le couvercle des nouilles instantanées. Une baguette se décale légèrement.*"
+        "text": "*Elle remet le carton de trousses terminé à la professeure chargée de l'événement.*"
     },
     "hidden_nurse_d4_pass": {
         "name": "Infirmière",
-        "text": "D'accord. Rentre bien. Et repasse me voir un de ces jours."
+        "text": "D'accord. Être venu un week-end, c'était déjà largement suffisant. Rentre bien."
     },
     "morning4_end": {
         "name": "{name}",

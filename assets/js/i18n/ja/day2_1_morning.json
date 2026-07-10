@@ -190,8 +190,8 @@
         "text": "前の学校の成績表、見たんだけどね。国語が良かったじゃない。読むの、好き？"
     },
     "hidden_homeroom_d2_3_b": {
-        "name": "担任先生",
-        "text": "*少しためらって* …いろいろかな。主に——小説。"
+        "name": "{name}",
+        "text": "小説は少し読みます。"
     },
     "hidden_homeroom_d2_3_c": {
         "name": "担任先生",
@@ -199,7 +199,7 @@
     },
     "hidden_homeroom_d2_3_d": {
         "name": "担任先生",
-        "text": "読むほうは？——書くのは？"
+        "text": "読むのは好きで。書くほうは？"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",

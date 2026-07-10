@@ -303,7 +303,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*I toss the ball up. Dain jumps and — spikes it. The moment she lands — she grabs her right knee and crouches down.*"
+        "text": "*While I hesitate with the ball in my hands, Dain takes a step forward. Her right knee gives out, and she drops into a crouch.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -407,7 +407,7 @@
         "choices": [
             "...I won't say anything. I'll just be here.",
             "You can cry. You don't have to pretend to be cheerful. Not with me.",
-            "...Shall we get up together? Just one more time."
+            "Let's put the balls away first. And book a hospital visit tomorrow."
         ]
     },
     "wall_dain_newdream_1": {
@@ -432,15 +432,15 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "It's really funny, isn't it? I've been on this court every day since I was 5... but now I have to think about other things."
+        "text": "Volleyball's been my whole life since I was five. Maybe it's okay to start looking for something else now."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "But with you sitting next to me — the floor doesn't feel as cold."
+        "text": "While I'm looking... will you sit beside me like this sometimes?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
-        "text": "*The ball has stopped outside the line. Dain sweeps her palm once over the cold floor.*"
+        "text": "*Dain turns on her phone and searches for rehabilitation clinics. The ball stays beyond the line.*"
     },
     "wall_dain_cry_1": {
         "name": "Dain",
@@ -464,47 +464,47 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "*She turns off his phone. ‘Smile again today!!’ disappears into a black screen. Only the gym lights flickered white until the crying subsided.*"
+        "text": "*She deletes the alarm title, 'Smile today too.' In the blank, she writes, 'Tell Mom about my knee,' and saves it.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*I hold out my hand. Dain takes it. We both stand up. — I set the ball for her.*"
+        "text": "*I take the ball from Dain's arms. She stays seated while {name} walks alone toward the ball rack.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*She clenches her jaw and leaps — the perfect spike. The ball slams into the court.*"
+        "text": "*She watches each ball go into the rack.* ...I thought putting them away would make it really feel over."
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "*She grabbed her knee on landing — but she's smiling.*"
+        "text": "We're not throwing everything away. Today, we're just putting the balls back."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",
-        "text": "*Smiling weakly* ...That hurts."
+        "text": "*She loosens her knee brace, then refastens it without putting pressure on the joint.* ...I should go back to the hospital, shouldn't I?"
     },
     "wall_dain_lastspike_3_c": {
-        "name": "Dain",
-        "text": "But it's funny, it's a little better."
+        "name": "{name}",
+        "text": "Yeah. And this time, stay for the full results."
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...It hurts. But because it was your toss, it feels a little better."
+        "text": "I still don't know about going pro. But I'm done hiding it and playing through the pain."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
-        "text": "*She looks around the court. The dark, empty gym.*"
+        "text": "*She opens the orthopedic appointment page on her phone. The earliest date is Monday.*"
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Goodbye, court."
+        "text": "I'll tell Mom and Coach tomorrow too."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
-        "text": "— Thirteen years since I was five. Thank you."
+        "text": "...Will you come with me on the day of the appointment?"
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*She sets the volleyball down and walks ahead first. She does not look back.*"
+        "text": "*While {name} puts the balls in the rack, she braces herself on the bench and slowly stands.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -807,15 +807,15 @@
     },
     "night_homeroom_msg_1": {
         "name": "Homeroom Teacher",
-        "text": "*Text message* Manuscript's almost done. ...There's a part I'd like you to read first."
+        "text": "*School learning portal notice* I've uploaded the manuscript for the literature club critique. Anyone who wants to read it can pick up a printed copy from the staff room tomorrow."
     },
     "night_homeroom_msg_2": {
         "name": "Homeroom Teacher",
-        "text": "*Text message* If you have time tomorrow, come by the office. — After class."
+        "text": "*School learning portal notice* If you'd like to leave feedback, come during literature club. You don't need to reply privately."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*11 PM. A text from my homeroom teacher. Three short lines. — Those words, 'I'd like you to see it first,' keep lingering.*"
+        "text": "*Nine at night. Confirmation comments from literature club members appear one by one beneath the class notice. I add 'critique' to tomorrow's schedule.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "System",
@@ -823,19 +823,19 @@
     },
     "night_nurse_msg_1": {
         "name": "School Nurse",
-        "text": "What you said in my office today... I keep thinking about it tonight."
+        "text": "*School health app notification* Please check in on your condition after today's counseling session."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Read receipt appears. Ten seconds. Twenty seconds. No follow-up message. — One minute later.*"
+        "text": "*Two buttons appear beneath the automated notice: 'Stable' and 'Need further counseling.'*"
     },
     "night_nurse_msg_3": {
         "name": "School Nurse",
-        "text": "Oh — I don't mean it like that. Just that you stuck with me."
+        "text": "*Nurse's office notice* If you need further counseling, book a time before tomorrow's event begins. You may also choose your homeroom teacher or the counseling center."
     },
     "night_nurse_msg_4": {
         "name": "School Nurse",
-        "text": "...Good night."
+        "text": "*Nurse's office notice* You don't have to reply late at night. If it's urgent, tell a parent, guardian, or another trusted adult first."
     },
     "day4_night_sleep": {
         "name": "{name}",

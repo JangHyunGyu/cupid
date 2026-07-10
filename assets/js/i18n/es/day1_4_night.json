@@ -69,11 +69,11 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Se muestran las notificaciones de la aplicación de gestión de salud escolar. 'Registros de la sala de salud: Estudiante transferido: mareos leves. Memo: Vuelva mañana si tiene algún síntoma. Bebe mucha agua. ♥ es motivo de preocupación médica.'*"
+        "text": "*Aparece una notificación de la aplicación de salud escolar. 'Registro de enfermería: estudiante transferido — mareo leve. Hoy: beber suficiente agua y no saltarse el desayuno. Si los síntomas se repiten, acudir a la enfermería'.*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*El corazón al final de la frase queda en medio de la pantalla. Lo miro una vez más antes de apagarla.*"
+        "text": "*Tras leer la última indicación, lleno la botella de agua que está junto a la cama.*"
     },
     "night_late_transition": {
         "name": "{name}",

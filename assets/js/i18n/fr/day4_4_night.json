@@ -303,7 +303,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*Je fais la passe. Dain saute et — smash. À l'atterrissage — elle agrippe son genou droit et s'accroupit sur place.*"
+        "text": "*Pendant que j'hésite, le ballon entre les mains, Dain fait un pas. Son genou droit lâche et elle s'accroupit sur place.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -407,7 +407,7 @@
         "choices": [
             "...Je ne dirai rien. Je reste juste là.",
             "Tu peux pleurer. Tu n'as pas besoin de faire semblant d'être joyeuse. Pas devant moi.",
-            "...On se relève ensemble ? Encore une fois."
+            "Rangeons d'abord les ballons. Et demain, on prend rendez-vous à l'hôpital."
         ]
     },
     "wall_dain_newdream_1": {
@@ -432,15 +432,15 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "C'est vraiment drôle, n'est-ce pas? Je suis sur ce terrain tous les jours depuis l'âge de 5 ans... mais maintenant je dois penser à autre chose."
+        "text": "Je ne fais que du volley depuis mes cinq ans. Peut-être que j'ai le droit de chercher autre chose maintenant."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "Mais avec toi assis là, à côté — le sol est moins froid."
+        "text": "Pendant que je cherche... tu voudras bien rester parfois à côté de moi comme ça ?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
-        "text": "*Le ballon s’est arrêté hors de la ligne. Dain passe une fois la paume sur le sol froid.*"
+        "text": "*Dain allume son téléphone et cherche un centre de rééducation. Le ballon reste au-delà de la ligne.*"
     },
     "wall_dain_cry_1": {
         "name": "Dain",
@@ -464,47 +464,47 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "*Elle éteint son téléphone. « Souriez encore aujourd’hui!! » disparaît dans un écran noir. Seules les lumières du gymnase clignotaient en blanc jusqu'à ce que les pleurs se calment.*"
+        "text": "*Elle efface le titre de l'alarme, « Souris encore aujourd'hui ». À la place, elle écrit « Parler de mon genou à maman » et enregistre.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*J'ai tendu la main. Dain l'a prise. On s'est relevés tous les deux. — Je lui ai fait la passe.*"
+        "text": "*Je prends le ballon dans les bras de Dain. Elle reste assise pendant que {name} marche seul vers le chariot.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Elle a serré les dents et sauté — le smash parfait. Le ballon s’écrase sur le terrain.*"
+        "text": "*Elle regarde les ballons rejoindre le chariot un par un.* ...Je croyais que les ranger donnerait vraiment l'impression que tout était fini."
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "*Elle a attrapé son genou à l’atterrissage — mais elle sourit.*"
+        "text": "On ne jette pas tout. Aujourd'hui, on range seulement les ballons."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",
-        "text": "*Souriant faiblement* ...Ça fait mal."
+        "text": "*Elle desserre sa genouillère, puis la remet sans comprimer l'articulation.* ...Je dois retourner à l'hôpital, pas vrai ?"
     },
     "wall_dain_lastspike_3_c": {
-        "name": "Dain",
-        "text": "Mais c'est drôle, c'est un peu mieux."
+        "name": "{name}",
+        "text": "Oui. Et cette fois, écoute les résultats jusqu'au bout."
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "... mdr ça fait mal. Mais comme c'est un tirage au sort, c'est un peu mieux."
+        "text": "Je ne sais toujours pas si je passerai pro. Mais je ne veux plus cacher la douleur pour continuer à jouer."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
-        "text": "*Elle regarde autour du terrain. Le gymnase sombre et vide.*"
+        "text": "*Elle ouvre la page de prise de rendez-vous en orthopédie sur son téléphone. La première date disponible est lundi.*"
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Au revoir, terrain."
+        "text": "Demain, je le dirai aussi à maman et au coach."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
-        "text": "— Treize ans depuis mes cinq ans. Merci."
+        "text": "...Le jour du rendez-vous, tu voudras bien venir avec moi ?"
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Elle pose le ballon et marche devant. Elle ne se retourne pas.*"
+        "text": "*Pendant que {name} range les ballons, elle prend appui sur le banc et se relève lentement.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -807,15 +807,15 @@
     },
     "night_homeroom_msg_1": {
         "name": "Professeure principale",
-        "text": "*Message* Le manuscrit est presque terminé. ...Il y a une partie que j'aimerais que tu lises en premier."
+        "text": "*Annonce sur le portail scolaire* J'ai mis en ligne le manuscrit pour la critique du club littéraire. Les personnes qui souhaitent le lire pourront récupérer un exemplaire imprimé en salle des profs demain."
     },
     "night_homeroom_msg_2": {
         "name": "Professeure principale",
-        "text": "*Message* Passe à la salle des profs demain si tu as le temps. — Après les cours."
+        "text": "*Annonce sur le portail scolaire* Pour laisser un avis, venez pendant le club littéraire. Il n'est pas nécessaire de répondre en privé."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*23 heures. Un message de la Prof principale. Trois courtes lignes. — Les mots 'j'aimerais que tu le lises en premier' ne cessent de résonner.*"
+        "text": "*Neuf heures du soir. Sous l'annonce de classe, les confirmations des membres du club apparaissent une à une. J'ajoute « critique » à mon programme de demain.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Système",
@@ -823,19 +823,19 @@
     },
     "night_nurse_msg_1": {
         "name": "Infirmière",
-        "text": "Ce que tu m'as dit à l'infirmerie aujourd'hui... Je n'arrête pas d'y penser la nuit."
+        "text": "*Notification de l'application santé du lycée* Merci de faire le point sur votre état après l'entretien d'aujourd'hui."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*L'accusé de lecture s'affiche. Dix secondes. Vingt secondes. Pas de message supplémentaire. — Une minute plus tard.*"
+        "text": "*Deux boutons apparaissent sous la notification automatique : « État stable » et « Besoin d'un nouvel entretien ».*"
     },
     "night_nurse_msg_3": {
         "name": "Infirmière",
-        "text": "Ah, je ne voulais pas dire ça dans ce sens. C'est juste que tu m'as marquée."
+        "text": "*Message de l'infirmerie* Si vous avez besoin d'un nouvel entretien, prenez rendez-vous avant le début de l'événement demain. Vous pouvez aussi choisir votre professeure principale ou le service d'écoute."
     },
     "night_nurse_msg_4": {
         "name": "Infirmière",
-        "text": "...Bonne nuit."
+        "text": "*Message de l'infirmerie* Inutile de répondre tard le soir. En cas d'urgence, prévenez d'abord un parent, un tuteur ou un adulte de confiance."
     },
     "day4_night_sleep": {
         "name": "{name}",

@@ -17,47 +17,47 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Mein Ellbogen brennt ein wenig. Ich sollte beim Krankenzimmer vorbeischauen.*"
+        "text": "*Nach dem Sportunterricht in der fünften Stunde bleibt der Rand des Pflasters an meinem Ärmel hängen. Ich drücke ihn einmal fest, doch er löst sich wieder.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Als ich den Ärmel hochschiebe, sehe ich eine kleine Schürfwunde am Ellbogen. Nichts Schlimmes, aber es blutet ein bisschen.*"
+        "text": "*Als ich den Ärmel hochschiebe, hat sich eine Seite des Pflasters gelöst. Die Wunde blutet nicht mehr.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Schulkrankenschwester",
-        "text": "Zwei Tage in Folge — muss ich dir eine Mitgliedskarte fürs Krankenzimmer ausstellen?"
+        "text": "Nicht mal einen Tag hat das Pflaster gehalten. Setz dich."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "Hab mir den Ellbogen aufgeschrammt."
+        "text": "Der Rand bleibt ständig am Ärmel hängen."
     },
     "hidden_nurse_d2_4": {
         "name": "Schulkrankenschwester",
-        "text": "Moment mal..."
+        "text": "Lass mal sehen."
     },
     "hidden_nurse_d2_5": {
         "name": "Schulkrankenschwester",
-        "text": "Hier... so. So, fertig. Dieser Winkel hält am längsten."
+        "text": "*Sie zieht das gelöste Pflaster ab, säubert die Haut um die Wunde und holt ein neues hervor.* Das brennt gleich ein wenig."
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-        "text": "*Ihre Hände sind nah, beim Pflaster aufkleben.*",
+        "text": "*Die Krankenschwester beugt und streckt meinen Ellbogen und schätzt dabei die nötige Pflasterlänge ab.*",
         "choices": [
-            "Ihre Hände sind warm",
-            "So viel Sorgfalt für ein kleines Pflaster"
+            "Lernt man so etwas auch im Krankenhaus?",
+            "Sie achten sogar auf den Winkel."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Schulkrankenschwester",
-        "text": "...Meine Hände sind eigentlich kalt. Heute scheinen sie warm zu sein."
+        "text": "Ja. An einem Gelenk muss es so kleben, dass es sich beim Bewegen nicht löst."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Schulkrankenschwester",
-        "text": "*lächelnd* Das ist Sorgfalt, Sorgfalt. Wenn man es nachlässig aufklebt, fällt es ab."
+        "text": "Das ist mein Job. Wenn ich es schlampig aufklebe und es im Unterricht abfällt, haben wir beide nichts davon."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Beim Überprüfen des Verbands fällt mir ein hellgrünes Notizbuch auf, das aus der Schreibtischschublade herausragt. Die erste Zeile der offenen Seite lautet: 'Yujin, heute—' Die Krankenschwester schließt die Schublade.*"
+        "text": "*Während ich das Pflaster prüfe, ragt ein hellgrünes Notizbuch aus der Schreibtischschublade. Die erste Zeile der offenen Seite lautet: ‚An dich von damals —‘ Die Krankenschwester schließt die Schublade.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
@@ -81,11 +81,11 @@
     },
     "hidden_nurse_d2_8": {
         "name": "Schulkrankenschwester",
-        "text": "Fertig, geh zurück zum Unterricht. — Nächstes Mal kommst du ohne Verletzung."
+        "text": "So, fertig. Heute nicht nass werden lassen."
     },
     "hidden_nurse_d2_9": {
-        "name": "Schulkrankenschwester",
-        "text": "Du kannst auch ohne Grund kommen. Nur nicht während des Unterrichts. Nach der Schule. *Ich verließ das Krankenzimmer.*"
+        "name": "{name}",
+        "text": "*Mit dem Hinweis, wiederzukommen, falls sich das Pflaster löst oder Blut durchsickert, verlasse ich die Krankenstation.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -178,15 +178,15 @@
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*Sie reißt die Hand hoch. High-Five.*"
+        "text": "*Unsere Handflächen treffen sich. Dain lacht und zieht ihre Hand einen Moment zu spät zurück.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...Oh sorry! Ist Gewohnheit!"
+        "text": "...Oh, sorry! Nach einem Spiel mache ich das manchmal automatisch!"
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*Sie hat die Hand weggezogen. Sieht überhaupt nicht sorry aus. — Meine Handfläche ist noch warm.*"
+        "text": "*Mit der Hand, die gerade meine berührt hat, streicht Dain sich einmal durchs Haar.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -348,55 +348,55 @@
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-        "text": "*Sie rollt ihre Schultern. Ich höre es knacken.*"
+        "text": "*Beim Kreisen der Schultern zieht sie leise die Luft ein.*"
     },
     "after2_seo_neck_react_b": {
-        "name": "Seoyeon",
-        "text": "Dein Nacken ist ziemlich verspannt. Halt kurz still."
+        "name": "{name}",
+        "text": "Warte. Leg das mal darunter."
     },
     "after2_seo_neck_react_c": {
-        "name": "Seoyeon",
-        "text": "*Sie steht auf und tritt hinter {name}. Beide Hände legen sich auf die Schultern.*"
+        "name": "{name}",
+        "text": "*Ich schiebe eine leere Ablagebox vom Stapel an der Seite vor Seoyeon.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Das ist wirklich verspannt. Bleib kurz still."
+        "text": "Du willst meine Unterlagen als Unterlage benutzen?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-        "text": "*Ich schließe die Augen und überlasse mich ihr.*"
+        "text": "Die Kiste wird nicht benutzt. Und du hast nur einen Nacken."
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
-        "text": "*Leise* ...Nicht bewegen. Nur kurz."
+        "text": "...Reden kannst du."
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*Wessen Hand? Seoyeons Hand liegt auf meiner Schulter. Ich hab's verdreht gesagt. Auch ihre Fingerspitzen halten einen Moment auf meiner Schulter inne.*"
+        "text": "*Seoyeon legt ihre Unterlagen auf die Ablagebox. Sie muss den Kopf nun etwas weniger stark senken.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "*Leiser* ...Nur noch ein bisschen."
+        "text": "Nur heute lasse ich das gelten."
     },
     "after2_seo_neck_high_2_b": {
         "name": "{name}",
-        "text": "*Ihre Fingerspitzen drücken kurz in meinen Nacken und lösen sich dann langsam. Einen Moment lang sagt keiner von uns etwas.*"
+        "text": "*Seoyeon räumt die Ablagebox nicht weg. Gemeinsam sortieren wir die Unterlagen wieder nach Datum.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Ich weiche leicht zurück.*"
+        "text": "*Ich halte ihr die Ablagebox hin und stoppe mitten in der Bewegung.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
-        "text": "Was soll das plötzlich?"
+        "text": "Wenn du nicht willst, dann nicht."
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-        "text": "*Ihre Hand verharrt einen Moment in der Luft.*"
+        "text": "*Sie nimmt die Box und stellt sie neben die Unterlagen.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Zieht ihre Hände zurück* ...Ist nichts."
+        "text": "Ich probiere es nachher aus."
     },
     "after2_seo_9": {
         "name": "{name}",

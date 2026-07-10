@@ -17,47 +17,47 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Me escuece el codo. Mejor me paso por la enfermería.*"
+    "text": "*Después de Educación Física en quinta hora, el borde del apósito del codo se engancha en la manga. Lo aprieto una vez, pero vuelve a levantarse.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Me subo la manga: un rasguño pequeño en el codo. Nada grave, pero sangra un poco.*"
+    "text": "*Al subirme la manga, veo que uno de los lados del apósito se ha levantado. La herida ya no sangra.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Enfermera",
-        "text": "Dos días seguidos — ¿te saco carnet de socio de la enfermería?"
+    "text": "No ha pasado ni un día y ya me devuelves el apósito. Siéntate."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "Me raspé el codo."
+    "text": "El borde se engancha todo el rato en la manga."
     },
     "hidden_nurse_d2_4": {
         "name": "Enfermera",
-        "text": "A ver, quieto..."
+    "text": "A ver."
     },
     "hidden_nurse_d2_5": {
         "name": "Enfermera",
-        "text": "Aquí... así. Ya está. Este ángulo es el que más aguanta."
+    "text": "*Retira el apósito despegado, limpia alrededor de la herida y saca uno nuevo.* Te escocerá un poco."
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-        "text": "*Las manos que me ponen la curita están muy cerca.*",
+    "text": "*La enfermera dobla y estira mi codo para calcular la longitud del apósito.*",
         "choices": [
-            "Tiene las manos calientes",
-            "Cuánta ceremonia por una curita"
+      "¿Esto también se aprende en el hospital?",
+      "¿También importa el ángulo?"
         ]
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Enfermera",
-        "text": "...Suelo tenerlas frías. Hoy estarán calientes, no sé."
+    "text": "Sí. En una articulación hay que ponerlo de modo que no se despegue al moverla."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Enfermera",
-        "text": "*Sonríe.* Es esmero, esmero. Si lo pones a medias, se cae enseguida."
+    "text": "Es mi trabajo. Si lo pongo de cualquier manera y se cae en plena clase, sería un problema."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Al revisar la venda, noto un cuaderno verde claro que sobresale del cajón del escritorio. La primera línea de la página abierta dice: 'Yujin, hoy—' La enfermera cierra el cajón.*"
+    "text": "*Mientras reviso el apósito, veo un cuaderno verde claro que sobresale del cajón del escritorio. En la primera línea de la página abierta pone: «Para ti, aquel día—». La enfermera cierra el cajón.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
@@ -81,11 +81,11 @@
     },
     "hidden_nurse_d2_8": {
         "name": "Enfermera",
-        "text": "Listo, a clase. — La próxima vez, ven sin heridas."
+    "text": "Ya está. Procura que hoy no se moje."
     },
     "hidden_nurse_d2_9": {
-        "name": "Enfermera",
-        "text": "Puedes venir aunque no sea por nada. En horario de clase no, eh. Después. *Salí de la enfermería.*"
+    "name": "{name}",
+    "text": "*Me dice que vuelva si el apósito se levanta o se mancha de sangre, y salgo de la enfermería.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -178,15 +178,15 @@
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*Levanta la mano de golpe. Choca esos cinco.*"
+    "text": "*Nuestras palmas se encuentran. Dain se ríe y tarda un instante de más en apartar la mano.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...¡Ay, perdón! ¡Es la costumbre!"
+    "text": "...Ah, ¡perdón! A veces me pasa al terminar un partido."
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*Retira la mano. No parece nada arrepentida. — La palma me sigue ardiendo.*"
+    "text": "*Dain se pasa por la nuca la mano que acaba de chocar con la mía.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -348,55 +348,55 @@
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-        "text": "*Gira los hombros. Le crujen.*"
+    "text": "*Al girar un hombro, toma aire con un leve sobresalto.*"
     },
     "after2_seo_neck_react_b": {
-        "name": "Seoyeon",
-        "text": "Espera. Quieto."
+    "name": "{name}",
+    "text": "Espera. Prueba a apoyar esto debajo."
     },
     "after2_seo_neck_react_c": {
-        "name": "Seoyeon",
-        "text": "*Se levanta y se coloca detrás de {name}. Sus manos se posan sobre sus hombros.*"
+    "name": "{name}",
+    "text": "*Le acerco a Seoyeon una caja de archivadores vacía que estaba apilada a un lado.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Lo tienes muy tenso. Quieto un momento."
+    "text": "¿Piensas usar mis documentos de soporte?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-        "text": "*Cierro los ojos y me dejo.*"
+    "text": "La caja está vacía. Cuello solo tienes uno."
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
-        "text": "*En voz baja.* ...Quieto. Un momento."
+    "text": "...Qué bien hablas."
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*¿De quién es la mano? La mano de Seoyeon está sobre mi hombro. Lo dije al revés. Las puntas de sus dedos también se detienen un momento sobre mi hombro.*"
+    "text": "*Seoyeon coloca los documentos sobre la caja. Ahora tiene que inclinar un poco menos la cabeza.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "*Baja la voz.* ...Un poco más."
+    "text": "Por hoy, te lo acepto."
     },
     "after2_seo_neck_high_2_b": {
         "name": "{name}",
-        "text": "*Las yemas presionan la nuca y luego se retiran despacio. Ninguno dice nada durante un momento.*"
+    "text": "*Seoyeon no aparta la caja. Los dos vuelven a ordenar los documentos por fecha.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Me aparto un poco.*"
+    "text": "*Me detengo con la caja a medio extender.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
-        "text": "¿Eso a qué viene?"
+    "text": "Si no quieres, da igual."
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-        "text": "*Su mano se queda suspendida en el aire un segundo.*"
+    "text": "*Acepta la caja y la deja junto a los documentos.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Retira las manos.* ...No es nada."
+    "text": "La probaré cuando terminemos."
     },
     "after2_seo_9": {
         "name": "{name}",

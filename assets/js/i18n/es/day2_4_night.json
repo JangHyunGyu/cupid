@@ -146,31 +146,31 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Mira la tercera estrella"
+    "text": "La lista de antes. Escucha también la tercera canción"
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*¿La tercera estrella? Giré la cabeza hacia la ventana. Hay muchas estrellas en el cielo nocturno. Mientras las cuento con el dedo, el cristal de la ventana se empaña.*"
+    "text": "*Vuelvo a abrir la lista que compartió Yuna. La tercera canción tiene un ritmo algo más rápido que la que escuchamos juntos.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Luego te digo por qué"
+    "text": "Escúchala hasta el final"
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Abrí la ventana. Entra aire frío. Las estrellas son muchas, y mi dedo se detiene en la tercera, suspendido en el aire.*"
+    "text": "*Me pongo los auriculares y pulso el botón de reproducción. A las notas del piano se suma el sonido grave de una batería.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*La respuesta termina ahí. Mis marcas de dedos quedan en la ventana.*"
+    "text": "*Incluso cuando termina la canción, tardo un poco en cerrar la pantalla de reproducción.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Mañana por la noche, mi dedo volverá a detenerse en la tercera estrella.*"
+    "text": "*Bajo el título de la lista veo una breve nota de Yuna: «La tercera es la menos tranquila».*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...así que hay alguien que contesta a estas horas. ¿Pasas mañana por la biblioteca?"
+    "text": "...Cuando la acabes, mañana me cuentas qué te ha parecido. ¿Te pasas por el edificio anexo?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
@@ -182,23 +182,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Mensaje privado de la tutora. 'Gracias por pasar por la sala de profes hoy. Lo administrativo ya está, así que no hace falta que te llame más. ...Pero si se te hace difícil adaptarte, ven cuando quieras.'*"
+    "text": "*Aparece una notificación en el sistema de orientación escolar: «Consulta de adaptación del estudiante transferido completada. Si necesita más ayuda, acuda al horario de tutoría de su tutora o reserve una cita en Wee Class».*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*El punto final del mensaje parece escrito mucho después.*"
+    "text": "*Bajo el nombre de la tutora también figura su horario de atención.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Vuelvo a leer solo la última línea.*"
+    "text": "*Compruebo el botón de reserva y cierro la notificación.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notificación de la app de salud. 'Registro enfermería: estudiante transferido — raspón en el codo (leve). Nota: mañana en la mañana te cambio la curita. Cambiar curitas es un acto médico, así que no tienes derecho a negarte ^^'*"
+    "text": "*Notificación de la aplicación de salud: «Registro de enfermería: estudiante transferido — abrasión en el codo (leve). Mantener seco el apósito hasta mañana por la mañana. Si se levanta o se mancha de sangre, acudir a la enfermería para cambiarlo».*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Presiono la esquina de la tirita con el pulgar. Mañana por la mañana hay una cosa más en la agenda.*"
+    "text": "*Doblo el codo una vez. Las esquinas del apósito siguen bien adheridas.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*No hay nada debajo de la nota 38. Sólo el título número 39 está vacío. Al día siguiente, el asiento de Sojung estuvo vacío hasta el final. El nombre del padre está escrito en la sección de firma del tutor del documento de transferencia.*"
+    "text": "*Debajo de la nota 38 no hay nada. Solo está vacío el título de la 39. Al día siguiente, el asiento de Sojung permaneció vacío hasta el final. La tutora se limitó a decir que Sojung se había cambiado de colegio.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Miro el techo. Los mensajes de hoy se superponen en mi pantalla de bloqueo. Seoyeon. Dain. Yuna. Todavía no leí ninguno.*"
+    "text": "*Vuelvo a coger el móvil. Debajo del chat al que acabo de responder aún quedan, uno junto al otro, los nombres de las otras dos personas a las que no he contestado.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Abro la ventana de respuesta y la cierro. Los tres nombres están alineados uno al lado del otro en la parte superior de mis chats recientes. Mi dedo no puede tocar ninguno.*"
+    "text": "*Abro y cierro el chat al que ya he respondido. En los otros dos aún no he conseguido escribir qué decir.*"
     },
     "night2_end_2": {
         "name": "{name}",
@@ -242,11 +242,11 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Esas palabras siguen regresando a mí. Aún no he recibido respuesta. En cambio, aumenta la cantidad de veces que abre y cierra la ventana de notificación.*"
+    "text": "*Sobre el mensaje de Minsu se acumulan dos notificaciones sin leer.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Cerré los ojos. En la pantalla de bloqueo solo queda el número de mensajes sin leer. Incluso después de que la pantalla se apaga, mi mano todavía se siente iluminada.*"
+    "text": "*Incluso después de que se apaga la pantalla, sigo sujetando el móvil de la misma manera.*"
     },
     "night2_end_4_b": {
         "name": "{name}",

@@ -123,23 +123,23 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Watching Dain leave* ...She's a lot. *Closing the lunchbox lid, quietly* I usually come up here alone."
+        "text": "*When Dain leans toward the lunchbox, Seoyeon pulls it a little closer to herself.* Looks like you two are already close."
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "We just know each other from class."
+        "text": "We're in the same class. And now you two know each other too."
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Why — does that bother you?"
+        "text": "I'll decide that."
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*Had Dain been there, this is where she would have laughed loudly. Silence settles between the rooftop door, the lunchbox, and {name}'s chopsticks.*"
+        "text": "*Dain reaches toward the lunchbox, then freezes when she meets Seoyeon's eyes. A brief silence falls between the three of us.*"
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*She looks at the corner of {name}'s mouth while pretending not to care.*"
+        "text": "*She looks at the corner of {name}'s mouth.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -372,7 +372,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Her tone is the same as yesterday. Only her gaze keeps dropping below her knees.*"
+        "text": "*Her tone is as breezy as yesterday, but her eyes stay fixed on the scrape on my elbow.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "School Nurse",
@@ -380,19 +380,19 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Her tone remains the same. Only her gaze keeps dropping below her knees.*"
+        "text": "*Her tone is breezy, but her eyes stay fixed on the scrape on my elbow.*"
     },
     "lunch2_dain_end_i": {
         "name": "School Nurse",
-        "text": "*The nurse comes over and takes my elbow. Her hands are cold.*"
+        "text": "*She takes out disinfectant and gauze, holding the gauze beneath my elbow.*"
     },
     "lunch2_dain_end_j": {
         "name": "School Nurse",
-        "text": "Hold still..."
+        "text": "This might sting a little. Relax your arm."
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*Cotton soaked in disinfectant hovers around the wound for a long time. The edge of the band presses tightly against the back of the hand.*"
+        "text": "*A disinfectant-soaked cotton pad sweeps over the wound. The inside of my elbow prickles.*"
     },
     "lunch2_dain_end_l": {
         "name": "School Nurse",
@@ -400,39 +400,39 @@
     },
     "lunch2_dain_end_m": {
         "name": "School Nurse",
-        "text": "*The nurse's hand pauses. Then — as if nothing happened — it moves again.*"
+        "text": "*She gestures for me to bend my elbow once.*"
     },
     "lunch2_dain_end_n": {
         "name": "School Nurse",
-        "text": "...My hands tend to be cold. Guess they're warm today."
+        "text": "Try bending it. Does it pull or sting?"
     },
     "lunch2_dain_end_o": {
         "name": "{name}",
-        "text": "*That's not true. When she first touched me, they were cold. — They only got warm just now.*"
+        "text": "*Even when I bend and straighten my arm, the edge of the bandage stays flat.*"
     },
     "lunch2_dain_end_p": {
         "name": "School Nurse",
-        "text": "*Grinning* It's called bedside manner. Years of practice."
+        "text": "It's a trick I learned at the hospital. Bandages last longer when you apply them this way over a joint."
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Care. Is that really the word for this?*"
+        "text": "*The bandage doesn't crease, even when I bend my elbow.*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*While checking the bandage, I notice a light green notebook sticking out of the desk drawer. The first line on the open page reads: 'Yujin, today—' The nurse closes the drawer.*"
+        "text": "*As I check the bandage, I notice a pale green notebook jutting out of the desk drawer. The first line on the open page reads, 'To you, that day—' The nurse closes the drawer.*"
     },
     "lunch2_dain_end_s": {
         "name": "School Nurse",
-        "text": "*Narrowing her eyes* Just one? ...Hmm, fine then. I prefer cocoa to coffee. That's the secret."
+        "text": "*Glancing once at the drawer* Forget what you just saw. I'll tell you one thing instead: I like cocoa better than coffee."
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*It's not much of a secret, but after saying it, the nurse taps the edge of the desk with her fingernail.*"
+        "text": "*It sounds trivial, but her hand never leaves the drawer handle.*"
     },
     "lunch2_dain_end_u": {
         "name": "School Nurse",
-        "text": "*Laughs softly* Secret. Teachers get to have secrets too, you know."
+        "text": "*With a light laugh* That's worth one secret, isn't it?"
     },
     "lunch2_dain_end_v": {
         "name": "School Nurse",
@@ -440,11 +440,11 @@
     },
     "lunch2_dain_end_w": {
         "name": "School Nurse",
-        "text": "All done, so get back to class. — Next time you show up, I'm adding items to the checkup list."
+        "text": "All done. Get back to class, and keep it dry today."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",
-        "text": "If I'm not hurt, I'd have no reason to come."
+        "text": "Do I need to change it again tomorrow?"
     },
     "lunch2_dain_end_y": {
         "name": "School Nurse",
@@ -452,23 +452,23 @@
     },
     "lunch2_dain_end_z": {
         "name": "School Nurse",
-        "text": "You can come even without a reason."
+        "text": "Come back if an edge lifts or it gets wet. If it looks fine, leave it as is."
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*There was no laughter for a moment. We soon rejoined, but it was too late.*"
+        "text": "*The nurse records the time she applied the bandage in the medical log.*"
     },
     "lunch2_dain_end_c2": {
         "name": "School Nurse",
-        "text": "*Brightening up again* Oh, but not during class. After school."
+        "text": "If it bothers you during class, tell your PE teacher. Otherwise, come during a break."
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*The freshly folded wrapping paper is placed crookedly on the edge of the desk.*"
+        "text": "*At the end of the record, she writes, 'Elbow flexion checked.'*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "School Nurse",
-        "text": "There, all done. Try not to get hurt next time."
+        "text": "There, all done. Next time, look where you're going before you run."
     },
     "lunch2_dain_end_nurse_short2": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
-        "text": "*One blank space remains on the schedule by the circulation desk. Yuna turns the page without even glancing at it.*"
+        "text": "*The bell rings as I step into the hall. The fresh bandage catches slightly on the edge of my sleeve.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",

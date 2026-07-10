@@ -303,7 +303,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*Le hago el pase. Dain salta y — remata. Al caer — se agarra la rodilla derecha y se agacha.*"
+        "text": "*Mientras sostengo el balón sin decidirme, Dain da un paso. La rodilla derecha le falla y se queda en cuclillas.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -407,7 +407,7 @@
         "choices": [
             "...No voy a decir nada. Me quedo aquí y ya está.",
             "Puedes llorar. No tienes que fingir. Delante de mí no.",
-            "...¿Nos levantamos juntos? Una última vez."
+            "Recojamos primero los balones. Mañana pedimos cita en el hospital."
         ]
     },
     "wall_dain_newdream_1": {
@@ -432,15 +432,15 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "Es muy divertido, ¿no? Llevo en esta cancha todos los días desde los 5 años... pero ahora tengo que pensar en otras cosas."
+        "text": "Llevo jugando al voleibol desde los cinco años. Quizá ya pueda buscar otra cosa."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "Pero contigo sentado a mi lado — el piso se siente menos frío."
+        "text": "Mientras la busco... ¿te quedarás así a mi lado de vez en cuando?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
-        "text": "*La pelota se ha detenido fuera de la línea. Dain pasa la palma una vez por el suelo frío.*"
+        "text": "*Dain enciende el móvil y busca una clínica de rehabilitación. El balón sigue fuera de la línea.*"
     },
     "wall_dain_cry_1": {
         "name": "Dain",
@@ -464,47 +464,47 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "*Apaga su teléfono. '¡Sonríe de nuevo hoy!' desaparece en una pantalla negra. Sólo las luces del gimnasio parpadearon en blanco hasta que el llanto disminuyó.*"
+        "text": "*Borra el título de la alarma, «Sonríe hoy también». En el espacio vacío escribe «Contarle a mamá lo de la rodilla» y lo guarda.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*Le tiendo la mano. Dain la toma. Nos ponemos de pie. — Le hago el pase.*"
+        "text": "*Recojo el balón de los brazos de Dain. Ella sigue sentada y solo {name} camina hacia el armario de los balones.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Aprieta los dientes y salta — El mejor remate. El balón se clava en la cancha.*"
+        "text": "*Observa cómo los balones entran uno a uno en el armario.* ...Pensaba que al recogerlos se acabaría de verdad."
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "*Al caer se agarra la rodilla — pero sonríe.*"
+        "text": "No te estoy diciendo que lo tires todo. Hoy guardemos solo los balones."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",
-        "text": "*Esboza una sonrisa floja.* ...Duele."
+        "text": "*Se afloja la rodillera y vuelve a ajustársela sin apretar.* ...Tendré que volver al hospital, ¿verdad?"
     },
     "wall_dain_lastspike_3_c": {
-        "name": "Dain",
-        "text": "Pero es gracioso, es un poco mejor."
+        "name": "{name}",
+        "text": "Sí. Y esta vez escucha los resultados hasta el final."
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "...Duele. Pero como fue tu colocada, se siente un poco mejor."
+        "text": "Todavía no sé si podré ser profesional. Pero dejaré de ocultarlo para seguir jugando."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
-        "text": "*Recorre la cancha con la mirada. El gimnasio oscuro y vacío.*"
+        "text": "*Abre en el móvil la pantalla para pedir cita en traumatología. La primera fecha disponible es el lunes.*"
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Adiós, cancha."
+        "text": "Mañana también se lo contaré a mamá y al entrenador."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
-        "text": "— Trece años desde los cinco. Gracias."
+        "text": "...¿Me acompañarás el día que vaya al hospital?"
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*No hay ningún signo de exclamación. Dain deja la pelota de voleibol y camina primero.*"
+        "text": "*Mientras {name} guarda los balones, se apoya en el banco y se levanta despacio.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -807,15 +807,15 @@
     },
     "night_homeroom_msg_1": {
         "name": "Profesora",
-        "text": "*Mensaje* Estoy ya en la recta final del manuscrito. ...Hay una parte que me gustaría que vieras tú primero."
+        "text": "*Aviso del portal escolar* He subido el manuscrito para la sesión de lectura y crítica del club de literatura. Quien quiera leerlo puede recoger mañana una copia impresa en la sala de profesores."
     },
     "night_homeroom_msg_2": {
         "name": "Profesora",
-        "text": "*Mensaje* Si mañana puedes, pasa por la sala de profesores. — Al salir de clase."
+        "text": "*Aviso del portal escolar* Si quieres dejar tu opinión, ven durante el club de literatura. No hace falta que respondas en privado."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*Las once de la noche. Me llegó un mensaje de la tutora. Tres líneas cortas. — Lo de \"me gustaría que lo vieras tú primero\" se me queda dando vueltas.*"
+        "text": "*A las nueve de la noche, bajo el aviso de clase aparecen uno tras otro los comentarios de confirmación de los miembros del club. Anoto «lectura y crítica» en la agenda de mañana.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Sistema",
@@ -823,19 +823,19 @@
     },
     "night_nurse_msg_1": {
         "name": "Enfermera",
-        "text": "Lo que me dijiste hoy en la enfermería... por la noche no dejo de darle vueltas."
+        "text": "*Notificación de la aplicación de salud escolar* Revise su estado después de la consulta de hoy."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Aparece el visto. Diez segundos. Veinte segundos. Ningún mensaje más. — Un minuto después.*"
+        "text": "*Bajo la notificación automática aparecen dos botones: «Estable» y «Necesito otra consulta».*"
     },
     "night_nurse_msg_3": {
         "name": "Enfermera",
-        "text": "Ah, no lo digo con segundas. Solo que me impresionó."
+        "text": "*Aviso de enfermería* Si necesita otra consulta, reserve antes de que empiece el evento de mañana. También puede elegir a su tutora o el servicio de orientación."
     },
     "night_nurse_msg_4": {
         "name": "Enfermera",
-        "text": "...Duerme."
+        "text": "*Aviso de enfermería* No hace falta responder a estas horas. Si es urgente, avise primero a su tutor legal o a un adulto cercano."
     },
     "day4_night_sleep": {
         "name": "{name}",

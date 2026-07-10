@@ -146,31 +146,31 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Look at the third star."
+        "text": "That playlist from earlier. Listen to the third track too."
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*The third star? I turned my head toward the window. There are many stars in the night sky. As I count them with my finger, the windowpane fogs up.*"
+        "text": "*I open the playlist Yuna shared again. The third track is a little faster than the one we listened to together.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "I'll tell you why later."
+        "text": "Listen all the way through."
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*I opened the window. Cold air rushes in. The stars are many, and my finger stops at the third one, suspended in the air.*"
+        "text": "*I put in my earphones and press play. A low drumbeat comes in behind the piano.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*The reply ends there. My fingertip marks remain on the window.*"
+        "text": "*Even after the song ends, I leave the player open for a while.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Tomorrow night, my finger will stop at the third star again.*"
+        "text": "*Beneath the playlist title is a short note from Yuna: 'The third one is the least quiet.'*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...So someone actually texts back this late. Library tomorrow?"
+        "text": "...If you listened to the whole thing, tell me what you thought tomorrow. Want to come to the annex?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
@@ -182,23 +182,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*A private message from the homeroom teacher. 'Thanks for coming to the office today. The paperwork's done so I won't need to call you in again. ...But if settling in gets tough, come by anytime.'*"
+        "text": "*A notification appears in the school counseling system. 'Transfer student adjustment check-in complete. If you need further support, use your homeroom teacher's office hours or book a session with the school counseling center.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*The period at the end of the message looks as if it was added much later.*"
+        "text": "*The available counseling hours are listed beneath my homeroom teacher's name.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*I read only the last line again.*"
+        "text": "*I check the booking button, then dismiss the notification.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Health app notification. 'Nurse's Record: Transfer student — Elbow abrasion (minor). Note: I'll change the bandage tomorrow morning. Changing bandages is a medical procedure so you can't refuse ^^'*"
+        "text": "*A notification from the health app. 'Nurse's office record: Transfer student — elbow abrasion (minor). Keep the bandage dry until tomorrow morning. If an edge lifts or blood seeps through, have it replaced at the nurse's office.'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*I press the corner of the bandage with my thumb. Tomorrow morning has one more thing on it.*"
+        "text": "*I bend my elbow once. The corners of the bandage are still firmly in place.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*There is nothing below the 38th note. Only the 39th title is empty. The next day, Sojung’s seat was empty until the end. The father's name is written in the guardian's signature section of the transfer document.*"
+        "text": "*There is nothing beneath the thirty-eighth note. Only the title of the thirty-ninth is blank. The next day, Sojeong's seat stayed empty. Our homeroom teacher only said that she had transferred.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*I look at the ceiling. Today's messages overlap on my lock screen. Seoyeon. Dain. Yuna. I haven't read any of them yet.*"
+        "text": "*I pick up my phone again. Beneath the chat I just replied to, two names still wait side by side without an answer.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*I open the reply window, then close it. The three names are lined up side by side at the top of my recent chats. My finger can't reach any of them.*"
+        "text": "*I open the chat I replied to, then close it. I still haven't found the words to send to the other two.*"
     },
     "night2_end_2": {
         "name": "{name}",
@@ -242,11 +242,11 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Those words keep coming back to me. I haven't received a reply yet. Instead, the number of times you open and close the notification window increases.*"
+        "text": "*Two unread notifications are stacked above Minsu's message.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*I closed my eyes. On the lock screen, only the number of unread messages remains. Even after the screen goes dark, my hand still feels bright.*"
+        "text": "*Even after the screen goes dark, my hand stays wrapped around the phone.*"
     },
     "night2_end_4_b": {
         "name": "{name}",

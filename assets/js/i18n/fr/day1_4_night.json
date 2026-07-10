@@ -69,11 +69,11 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Les notifications de l'application de gestion de la santé scolaire sont affichées. « Dossiers de la salle de santé: Étudiant transféré – légers étourdissements. Mémo: Revenez demain si vous présentez des symptômes. Buvez beaucoup d'eau. ♥ est un problème médical.'*"
+        "text": "*Une notification de l'application santé du lycée apparaît. « Dossier de l'infirmerie : élève transféré — légers vertiges. Bien boire aujourd'hui et ne pas sauter le petit-déjeuner. Si les symptômes reviennent, passer à l'infirmerie. »*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Le cœur à la fin de la phrase reste au milieu de l'écran. Je le regarde encore une fois avant d'éteindre.*"
+        "text": "*Après avoir lu le dernier conseil, je remplis la bouteille d'eau posée près de mon lit.*"
     },
     "night_late_transition": {
         "name": "{name}",

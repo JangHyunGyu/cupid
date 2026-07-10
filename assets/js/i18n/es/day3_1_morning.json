@@ -26,7 +26,7 @@
     },
     "morning3_seo_gate_warm_4": {
         "name": "Seoyeon",
-        "text": "*Echa a andar a mi lado sin decir nada. — ¿Siempre fue tan corto el camino de la entrada al aula?*"
+        "text": "*Echa a andar primero. Unos pasos después, comprueba que {name} la sigue y acorta el paso.*"
     },
     "morning3_seo_gate_2": {
         "name": "Seoyeon",
@@ -86,7 +86,7 @@
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
-        "text": "*Voy junto a Yuna. En silencio. — Curiosamente, es un silencio cómodo.*"
+        "text": "*Camino al lado de Yuna. Solo se oyen el crujido de la bolsa de pan al doblarse y nuestros pasos.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
-        "text": "*Tiene el brazo enganchado al mío. Aprieta fuerte. — Ni puedo soltarme, ni quiero.*"
+        "text": "*El brazo de Dain se enlaza con fuerza al mío. Tras unos pasos casi a rastras, acompaso el ritmo al suyo.*"
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
@@ -338,15 +338,15 @@
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Profesora",
-        "text": "*De repente se sonroja*...No puedes contarle a nadie sobre esto. Sería difícil si los estudiantes descubrieran que su maestro era así. Bueno, para empezar no tenía mucha autoridad."
+        "text": "*Recuperando la compostura* Era algo que escribía en privado. No tiene que ver con las clases y no tienes por qué leerlo a la fuerza."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
-        "text": "¿Un secreto?"
+        "text": "¿No puedo leerlo?"
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Profesora",
-        "text": "*Se echa el cabello hacia atrás.* Es un secreto. — Precisamente ejemplar no es. Contarle esto a un alumno."
+        "text": "Puedes leerlo. Pero no te lo daré a escondidas solo a ti. Primero voy a prepararlo para llevarlo a la sesión de lectura y crítica del club de literatura."
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "Profesora",
@@ -354,7 +354,7 @@
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
-        "text": "A mí me gustaría leerla. Su novela, digo."
+        "text": "Cuando lo comparta, me gustaría leerlo."
     },
     "hidden_homeroom_d3_reveal_choice": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Profesora",
-        "text": "*Aparta la mirada.* ...Pero esto es un secreto, ¿sí? En serio. Ni los demás profes lo saben."
+        "text": "Esta semana también pienso enseñárselo al departamento de Lengua. Si sigo escondiéndolo, creo que no lo terminaré nunca."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Profesora",
@@ -382,7 +382,7 @@
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Profesora",
-        "text": "...Entonces vas a ser la primera persona que lo lea. En siete años."
+        "text": "...Entonces será la primera vez en siete años que lo muestre a otras personas."
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
@@ -390,7 +390,7 @@
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Profesora",
-        "text": "*Sonriendo levemente* ...Me alegra que hayas pasado por esta aula hoy."
+        "text": "*Con una leve sonrisa* Si no hubieras preguntado primero, quizá habría vuelto a guardarlo. Gracias."
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "Profesora",
@@ -398,7 +398,7 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Profesora",
-        "text": "Aquí hay silencio. — En la sala de profesores huele a café y todos se miran entre sí."
+        "text": "Porque aquí hay silencio. Aun así, a partir de ahora hablaremos del manuscrito solo durante el club de literatura."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
@@ -406,17 +406,17 @@
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Profesora",
-        "text": "...Vamos, haz como si no hubieras visto nada. Te lo pido. — ...Gracias."
+        "text": "Sí, por ahora lo dejamos cerrado. Cuando esté lista para enseñarlo, se lo diré primero al club de literatura."
     },
     "hidden_homeroom_d3_end": {
         "name": "Profesora",
-        "text": "*La tutora se aparta el pelo y sale del aula. Del otro lado de la puerta cerrada suena el clic de una tapa de bolígrafo.*"
+        "text": "*Cierra el manuscrito y abre la ventana junto a la tarima. El ruido del pasillo entra por un momento y luego se apaga.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Profesora",
-        "text": "*Da vuelta el manuscrito y lo desliza bajo un libro.* ...Si lo viste, ya no puedo fingir que no.",
-        "context": "Día 3 mañana. Descubrí al profesor escribiendo un manuscrito de novela en el aula vacía. Un secreto guardado durante siete años. Tono: intenta desviarlo con bromas ligeras, pero las frases se acortan cuando se menciona el manuscrito.",
-        "personality": "La profe fue aspirante a novelista. Se hizo profesora, pero nunca abandonó del todo ese sueño. Coexisten la vergüenza y el alivio de haber sido descubierta."
+        "text": "*Guarda las hojas del manuscrito en una carpeta.* Entiendo que tengas curiosidad. Aun así, hablaremos de esto durante el club de literatura.",
+        "context": "Día 3 por la mañana. En un aula vacía, encontré el manuscrito de una novela personal de la tutora. Ella no pide al estudiante que guarde el secreto ni que le dé su opinión; está pensando en presentarlo a una sesión abierta de lectura y crítica del club de literatura. Tono: cuando se habla del manuscrito, bromea menos y usa frases más cortas.",
+        "personality": "La tutora quería ser novelista. Aunque se hizo profesora, nunca dejó de escribir; sin embargo, procura separar sus clases y evaluaciones de su creación personal en la relación con sus estudiantes."
     },
     "hidden_nurse_d3_check": {
         "name": "{name}",
@@ -580,11 +580,11 @@
     },
     "hidden_nurse_d3_6_e": {
         "name": "Enfermera",
-        "text": "...Hubo una. Una paciente a la que no pude salvar. *La mirada se le va lejos.* Una chica llamada Yujin. Tenía diecisiete años. Por ella acabé aquí."
+        "text": "...Sí. Hubo una paciente a la que no pude salvar. *Su mirada se pierde a lo lejos.* Tenía diecisiete años. Vine aquí después de aquello."
     },
     "hidden_nurse_d3_6_f": {
         "name": "{name}",
-        "text": "*Yujin. — El nombre del cuaderno de ayer. La destinataria de aquellas cartas.*"
+        "text": "*Me viene a la cabeza el cuaderno verde claro de ayer. La carta que se detenía en la primera página.*"
     },
     "hidden_nurse_d3_7": {
         "name": "Enfermera",
@@ -608,15 +608,15 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Enfermera",
-        "text": "*La enfermera vuelve a ponerse la sonrisa.* Vamos. Esto es servicio. La próxima vez pasa aunque no estés enfermo."
+        "text": "Si esto te supera, no te lo guardes y dímelo. Si hace falta, también puedo ponerte en contacto con orientación."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",
-        "text": "*'Estés enfermo o no'. Al salir de la enfermería, escucho el sonido tenue de una silla deslizándose detrás de mí.*"
+        "text": "*Doblo la tarjeta informativa con el número de orientación y me la guardo en el bolsillo.*"
     },
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
-        "text": "*Salí al pasillo. Doy un paso y me detengo. El sonido de un cajón abriéndose desde adentro. La esquina de un cuaderno verde claro y el nombre 'Yujin' aparecen en mi mente.*"
+        "text": "*Me levanto, pero me detengo ante la puerta. A mi espalda suena un cajón al abrirse. Me viene a la mente la esquina del cuaderno verde claro.*"
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
@@ -624,51 +624,51 @@
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*Se escucha el sonido de un papel doblado dentro de la sala de salud. Cartas escritas a Eugenio. Agarre el mango y suéltelo.*"
+        "text": "*Suelto el picaporte y me vuelvo. Dentro del cajón se oye el sonido de un papel al doblarse.*"
     },
     "hidden_nurse_d3_choice2": {
         "name": "Enfermera",
         "text": "*La enfermera se detuvo en 'una persona'. El borde del vaso de papel se arruga bajo sus dedos.*",
         "choices": [
-            "¿Por eso dejó el hospital?",
-            "¿Usted también tiene a esa persona, profe?"
+            "¿Dejó el hospital después de aquello?",
+            "¿Le parece bien seguir hablando de aquello?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {
         "name": "Enfermera",
-        "text": "...Más que dejarlo, hui."
+        "text": "Sí. Si seguía aguantando, temía que me temblaran las manos también delante de otros pacientes."
     },
     "hidden_nurse_d3_choice2_b": {
         "name": "Enfermera",
-        "text": "...Sí. Una paciente a la que no pude salvar."
+        "text": "...Sí. Solo te contaré lo que pueda manejar."
     },
     "hidden_nurse_d3_9": {
         "name": "Enfermera",
-        "text": "...La persona que de verdad importa. ¿Y si resulta ser tu profe?"
+        "text": "Puedes venir. Pero no puedo prometerte que vaya a resolverlo todo yo sola."
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
-        "text": "*...¿Qué? — Se me clavaron los pies. Solo el olor a desinfectante quedó pesado en el aire. Me di la vuelta despacio.*"
+        "text": "*Dejo el vaso de papel y asiento.*"
     },
     "hidden_nurse_d3_9_c": {
         "name": "Enfermera",
-        "text": "*La profesora de salud no sonríe. Jugueteo con mi estetoscopio y miro por la ventana.*"
+        "text": "Si se te hace más difícil, trabajaré junto con tu tutora o el servicio de orientación."
     },
     "hidden_nurse_d3_9_d": {
         "name": "Enfermera",
-        "text": "*Fuerza una sonrisa.* Es broma. Vamos, a clase."
+        "text": "Antes decidiremos juntos a quién contarle cada cosa y hasta dónde."
     },
     "hidden_nurse_d3_9_e": {
         "name": "{name}",
-        "text": "*Traté de hacerlo pasar como una broma, pero mis pies no se caían. Al otro lado de la cortina sólo se percibe un fuerte olor a desinfectante.*"
+        "text": "*La enfermera acerca la hoja de reserva de orientación al borde del escritorio.*"
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
-        "text": "*El olor a desinfectante se volvió repentinamente más fuerte. Antes de dar otro paso, miré hacia atrás. La enfermera está mirando por la ventana. No está sonriendo.*"
+        "text": "*En la hoja figuran, uno junto al otro, los horarios de la enfermería y de orientación. Rodeo con un círculo uno de los espacios libres.*"
     },
     "hidden_nurse_d3_11": {
         "name": "Enfermera",
-        "text": "...Es broma. Vamos, a clase."
+        "text": "Vas a llegar tarde a la próxima clase. Dejemos aquí lo que hemos hablado hoy y ve."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Enfermera",

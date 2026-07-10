@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*Der Schlüsselanhänger klirrt in Seoyeons Tasche. Es ist der Dachschlüssel.*"
+        "text": "*Seoyeon holt einen kleinen Schlüsselanhänger aus Metall aus ihrer Tasche. Er hat die Form des Dachschlüssels, aber keine Kerben.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -37,23 +37,23 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "Ein Schlüssel?"
+        "text": "Der Dachschlüssel ... nein, doch nicht."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "War das Privileg der Schülersprecherin. — Jetzt gehört er dir."
+        "text": "Ein Andenken vom Schülerrat. Den echten Schlüssel muss ich heute zurückgeben."
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Sie reicht den Schlüssel. Als ihre kleinen Finger sich kurz streifen, lässt sie los, statt zu sagen: \"Er gehört dir.\"*"
+        "text": "*Sie reicht mir den Schlüsselanhänger. Als sich unsere Hände streifen, richtet Seoyeon den Träger ihrer Tasche neu.*"
     },
     "tour_seo_13": {
         "name": "{name}",
-        "text": "Darf die Schülersprecherin das einfach so?"
+        "text": "Wie kommen wir dann ab jetzt aufs Dach?"
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "Eben weil ich darf, geb ich ihn dir. — Geh hoch, wenn du mal Luft brauchst."
+        "text": "Sag mir Bescheid. Ich leihe ihn offiziell aus, dann können wir gemeinsam aufschließen."
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
@@ -63,7 +63,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*Sie sagt nicht 'auch ohne mich'. Aber es versteckt sich dahinter.*"
+        "text": "*Ich stecke den Schlüsselanhänger von Seoyeon ein. Der echte Dachschlüssel stößt in ihrer Tasche noch einmal an etwas.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Die erste Wette und der letzte Spike verweilen auf demselben Platz. Heute ist das Licht an.*"
+        "text": "*Die Turnhalle. Neben der Linie, an der wir unsere erste Wette abgeschlossen haben, steht der Ballwagen, den wir gestern Abend gefüllt haben. Heute brennt Licht.*"
     },
     "tour_dain_1b": {
         "name": "{name}",

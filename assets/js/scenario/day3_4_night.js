@@ -212,48 +212,48 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "night3_nightmare_1"
     },
     "night3_nightmare_1": {
-        "background": "assets/images/background/school_back.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
-        "bgm": "mystery.mp3",
+        "bgm": "night2.mp3",
         "next": "night3_nightmare_2_b"
     },
     "night3_nightmare_2_b": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "night3_nightmare_3"
     },
     "night3_nightmare_3": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "next": "night3_nightmare_3_b"
     },
     "night3_nightmare_3_b": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "night3_nightmare_4"
     },
     "night3_nightmare_4": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/yuna_sad.png",
         "next": "night3_nightmare_4_b"
     },
     "night3_nightmare_4_b": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "night3_nightmare_5"
     },
     "night3_nightmare_5": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "night3_nightmare_6"
     },
     "night3_nightmare_6": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_nightmare_choice"
     },
     "night3_nightmare_choice": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/room_my.png",
         "character": null,
         "choices": [
             { "next": "night3_nightmare_seo", "setFlags": ["nightmare_chose_seoyeon"] },

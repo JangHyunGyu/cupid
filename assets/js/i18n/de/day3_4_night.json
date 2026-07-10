@@ -149,92 +149,92 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*Ich bin eingeschlafen. — Ein Traum. Ich stehe im Dunkeln. Ich sehe nichts.*"
+        "text": "*Ich liege im Dunkeln, kann aber nicht schlafen. Nur der Bildschirm in meiner Hand leuchtet.*"
     },
     "night3_nightmare_2_b": {
-        "name": "Seoyeon",
-        "text": "*Ich höre ihre Stimme.*"
+        "name": "{name}",
+        "text": "*Ich öffne den Chat mit Seoyeon. Ihre letzte Nachricht endet mit: ‚Bitte.‘*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
-        "text": "Du warst doch nur zu mir so..."
+        "text": "Du musst nicht jetzt antworten. Aber geh mir morgen nicht aus dem Weg."
     },
     "night3_nightmare_3_b": {
-        "name": "Yuna",
-        "text": "*Ihre Stimme.*"
+        "name": "{name}",
+        "text": "*In Yunas Chat steht drei Zeilen darunter nur die Lesebestätigung.*"
     },
     "night3_nightmare_4": {
-        "name": "Yuna",
-        "text": "Ich habe gesagt, du sollst nicht lügen."
+        "name": "{name}",
+        "text": "*Der letzte Satz ist kurz: ‚Lauf nicht weg. Mehr nicht.‘*"
     },
     "night3_nightmare_4_b": {
-        "name": "Dain",
-        "text": "*Ihre Stimme.*"
+        "name": "{name}",
+        "text": "*Ich öffne den Chat mit Dain. Nur an einer einzigen Nachricht hängt ein Lachsymbol.*"
     },
     "night3_nightmare_5": {
-        "name": "Dain",
-        "text": "Du hast gesagt, du kommst. Ich hab gewartet."
+        "name": "{name}",
+        "text": "*‚Ich wünschte, es wäre nur ein Witz.‘ Danach kam keine neue Nachricht.*"
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*Ich sehe Hände aus drei Richtungen. Schwach, in der Dunkelheit.*"
+        "text": "*Ich öffne und schließe die drei Chats nacheinander. In jedes Eingabefeld tippe ich einen anderen Anfangsbuchstaben und lösche ihn wieder.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
-        "text": "*Wessen Hand werde ich nehmen.*",
+        "text": "*Wem soll ich morgen zuerst die Wahrheit sagen?*",
         "choices": [
-            "Seoyeons Hand nehmen",
-            "Yunas Hand nehmen",
-            "Dains Hand nehmen"
+            "Zuerst mit Seoyeon reden",
+            "Zuerst mit Yuna reden",
+            "Zuerst mit Dain reden"
         ]
     },
     "night3_nightmare_seo": {
         "name": "{name}",
-        "text": "*Ich streckte die Hand nach Seoyeon aus. In dem Moment, als ich dieses Lächeln sah — verschwand sie.*"
+        "text": "*Ich schreibe in Seoyeons Eingabefeld: ‚Morgen sage ich es dir persönlich.‘ Kurz vor dem Senden halte ich inne.*"
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*Ich ging auf Yuna zu. Kurz bevor meine Fingerspitzen sie berührten — verschwand sie.*"
+        "text": "*Ich schreibe in Yunas Eingabefeld: ‚Morgen laufe ich nicht weg. Ich rede mit dir.‘ Kurz vor dem Senden halte ich inne.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Ich rannte auf Dain zu. In dem Moment, als ich sie zu fassen glaubte — verschwand sie.*"
+        "text": "*Ich schreibe in Dains Eingabefeld: ‚Tut mir leid, dass du warten musstest. Morgen rede ich mit dir.‘ Kurz vor dem Senden halte ich inne.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*Ich streckte die Hand aus. — Ich kann nichts greifen. Alle sind verschwunden, übrig ist nur die Dunkelheit.*"
+        "text": "*In einem Eingabefeld bleibt ein Satz stehen, die beiden anderen Chats schließe ich. Gesendet habe ich noch nichts.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*— Ich wachte schweißgebadet auf. 3 Uhr morgens. Ich starrte an die Decke. Ich holte das Handy raus. Die Galerie. Scrollte wieder. — Sojeongs Foto.*"
+        "text": "*Drei Uhr morgens. Ich bin immer noch wach. Ich schließe die Nachrichten und öffne die Galerie. Bei Sojeongs Foto bleibt mein Finger stehen.*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Sojeong lächelt auf dem Gruppenfoto. Ich kann nicht weiterwischen. Schweiß sammelt sich an meiner Daumenspitze.*"
+        "text": "*Auf dem Gruppenfoto blickt Sojeong in die Kamera. Ich neben ihr sehe woandershin.*"
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Sojeong schließt das Foto. Diesmal drei Nachrichtenfenster. Alle drei Cursor blinken.*"
+        "text": "*Ich schließe das Foto und kehre zur Chatliste zurück. Der Satz von vorhin liegt noch als Entwurf da.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Alte Schule: ungesendete Nachrichten. Diese Schule: zu viele offene Antwortfenster. Der Handybildschirm brennt heiß in meiner Handfläche.*"
+        "text": "*Ich überfliege die Chatliste. Neben den drei Namen steht jeweils ein anderer letzter Satz.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Sagte Minsu. „Ablehnung ist etwas, was man tun muss.“ Sagte Seoyeon. „Ich mache nicht eines von vielen.“*"
+        "text": "*Im Chat mit Minsu wartet eine Antwort: ‚Nur weil du es aufschiebst, verschwindet es nicht.‘*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna hat es gesagt. 'Lauf nicht weg.' Der Cursor im Antwortfenster blinkt. Ein weiterer Satz, den ich niemandem geschickt habe, wird länger.*"
+        "text": "*Ich lese die drei Chats noch einmal von oben nach unten. Keinen davon schließe ich.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*Ich hatte einen Traum. Ich ging Seite an Seite mit jemandem. Ich konnte ihr Gesicht nicht sehen, aber in meiner Hand war eine Nachricht, kurz vor dem Senden.*"
+        "text": "*Ich nehme den Finger von der Senden-Schaltfläche und lege das Handy mit dem Display nach unten hin. Bis zum Wecker sind es noch drei Stunden.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
-        "text": "*Was habe ich getan.*"
+        "text": "*Ich benenne den Wecker in ‚Morgen antworten‘ um.*"
     },
     "night3_end": {
         "name": "{name}",

@@ -3,87 +3,86 @@
         "name": "Sistema",
         "text": ""
     },
-    "ending_hidden_commit_check": {},
     "hidden_dual_route_1": {
         "name": "{name}",
-        "text": "*Me detengo frente a la entrada de la escuela. El sobre se me aprieta contra el pecho y la curita del dorso de la mano se engancha en la manga.*"
+        "text": "*Al terminar de recoger el evento, guardo en la mochila la copia para la sesión de crítica y la tarjeta de primeros auxilios. Aún no sé en qué clase de recuerdo se convertirán dentro de unos años.*"
     },
     "hidden_dual_route_choice": {
         "name": "{name}",
-        "text": "*La mano se me detiene entre el sobre y la tirita.*",
+        "text": "*Saco primero uno de los dos documentos. Ninguna relación tiene que decidirse hoy.*",
         "choices": [
-            "Ir con quien me entregó el manuscrito",
-            "Ir con quien me dejó la respuesta en el dorso de la mano"
+            "Abrir la copia para la sesión de crítica",
+            "Sacar la tarjeta de primeros auxilios"
         ]
     },
     "hidden_perfect_homeroom_check": {},
     "hidden_perfect_homeroom_1": {
         "name": "{name}",
-        "text": "*Se acabó la graduación. Me quedé solo en el aula vacía. Las marcas de tiza en la pizarra aún no se borraron.*"
+        "text": "*El día de la graduación, la tutora me entrega una copia de la carta de recomendación y mi registro de lecturas. Hasta el final, se despide como profesora.*"
     },
     "hidden_perfect_homeroom_1b": {
         "name": "{name}",
-        "text": "*Se abre la puerta. — Es ella. Cárdigan beige. Lleva un sobre con papeles en la mano.*"
+        "text": "*Ante la puerta del aula vacía, la tutora ordena las copias de la sesión de crítica. En cada manuscrito solo figura el número de un estudiante.*"
     },
     "hidden_perfect_homeroom_2": {
         "name": "Profesora",
-        "text": "Felicidades por graduarte. ...Ya entregué todo el papeleo. Mi trabajo como profe se acabó."
+        "text": "Felicidades por graduarte. He metido en el sobre la carta de recomendación y el registro de lecturas. Comprueba en casa que no falte nada."
     },
     "hidden_perfect_homeroom_2b": {
         "name": "{name}",
-        "text": "¿El manuscrito sigue en el cajón de la mesa del profe?"
+        "text": "¿Terminó el manuscrito?"
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Profesora",
-        "text": "*Pausa por un momento. La esquina del sobre se dobla.*...Adiós."
+        "text": "Lo terminé gracias a la sesión de crítica. También lo envié a una editorial. El resultado es algo de lo que debo ocuparme yo. Cuídate."
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*Tres años después.*"
+        "text": "*Cuatro años después. Tras dejar la escuela, terminar la universidad y encontrar mi primer trabajo, alquilé un pequeño estudio cerca de la oficina.*"
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
-        "text": "*Terraza de una cafetería. Vuelan pétalos de cerezo. Al entrar — veo una cara conocida en la mesa junto a la ventana.*"
+        "text": "*En la cafetería de una librería, de camino a casa después del trabajo, descubro un nombre conocido ante el cartel de una presentación de novedades. Al levantar la vista, esa persona también me mira.*"
     },
     "hidden_perfect_homeroom_3c": {
         "name": "Profesora",
-        "text": "...Anda. Yo también me sorprendo. *Deja la taza de café.* ¿Te sientas?"
+        "text": "...Qué casualidad. *Deja los materiales del evento.* Si tienes tiempo, ¿te apetece sentarte?"
     },
     "hidden_perfect_homeroom_3e": {
         "name": "Profesora",
-        "text": "*Sonríe ladeada.* Dejé la enseñanza. Ahora solo escribo. Y echo horas en una cafetería. — ¿Y tú?"
+        "text": "Sigo trabajando en la escuela. Y he publicado un libro. — ¿A qué te dedicas últimamente?"
     },
     "hidden_perfect_homeroom_3f": {
         "name": "Profesora",
-        "text": "...¿Nos vemos otro día? Vengo aquí todos los jueves."
+        "text": "¿Quieres que volvamos a vernos aquí? Hoy se nos han quedado muchas cosas por contar."
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
-        "text": "*El 'siguiente' continuó unas cuantas veces más. Mismo lugar todos los jueves. Cuando se les preguntó: \"¿Es este un asiento para parejas?\", ambos simplemente miraron su café. El jueves siguiente caminé por la calle en lugar de ir al café.*"
+        "text": "*Guardamos nuestros nombres y números en el móvil del otro. Es información que no aparecía en la antigua lista de contactos de la escuela.*"
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Profesora",
-        "text": "*Se para de golpe en la librería.* ...He terminado el manuscrito. ¿Quieres leerlo?"
+        "text": "*En nuestro segundo encuentro, saca un ejemplar de su libro en la librería.* Esta vez es la edición publicada. ¿Lo leerás como lector?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
-        "text": "*Volví a casa y leí el manuscrito. Toda la noche. — La manera en que el protagonista soltaba ciertas frases me sonaba demasiado.*"
+        "text": "*Vuelvo a la casa donde vivo solo y leo el libro hasta el amanecer, esta vez al ritmo de un lector.*"
     },
     "hidden_perfect_homeroom_4d": {
         "name": "Profesora",
-        "text": "*El jueves siguiente, en la cafetería. Removió el café más tiempo que de costumbre.* ...¿Qué te ha parecido?"
+        "text": "*En nuestro siguiente encuentro, en la cafetería, remueve el café una vez y aparta la mano.* ...¿Qué te ha parecido?"
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
-        "text": "*El jueves siguiente. No la esperé delante de la cafetería. — La esperé delante de la floristería.*"
+        "text": "*La tercera cita la propone primero {name}. Después del trabajo, espera delante de una floristería.*"
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*Le entregué el ramo.* De mi parte, son solo sentimientos."
+        "text": "*Le entrego el ramo.* Es para celebrar el libro, y también significa que quiero volver a verte."
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Profesora",
-        "text": "*Coge el ramo y lo mira un buen rato. Le tiemblan las manos. — Sonríe.* ...Yo tampoco."
+        "text": "*Recoge el ramo y mira a {name}.* ¿Puedo aceptarlo con ese mismo significado?"
     },
     "hidden_perfect_homeroom_ending_title": {
         "name": "",
@@ -91,119 +90,119 @@
     },
     "hidden_perfect_homeroom_5": {
         "name": "{name}",
-        "text": "*Cuando salía por la puerta del café, el envoltorio del ramo de flores estaba un poco arrugado en mis manos. El diploma está en la bolsa.*"
+        "text": "*Los dos salen de la cafetería y caminan al mismo ritmo. El envoltorio del ramo cruje suavemente con la brisa de la tarde.*"
     },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
-        "text": "*No salimos del café ese día. No hasta el atardecer. La tutora se quedó sentada mucho tiempo con la taza de café frío frente a ella.*"
+        "text": "*Hablamos más de los últimos cuatro años que de la escuela.*"
     },
     "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*Me guiaron al mismo lugar todos los jueves. El personal ya no pregunta: \"¿Es este un asiento para parejas?\"*"
+        "text": "*Nos turnamos para elegir las siguientes citas. Los jueves los escogía ella; los sábados, {name}.*"
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
-        "text": "*Publicaron el manuscrito. Sin nombre en la dedicatoria. Solo una línea: 'Tres hojas de reseña en el cajón de la mesa del profe — ahí empezó esta historia.'*"
+        "text": "*Publica su segundo libro. En la dedicatoria no figura un nombre concreto, sino: «A quienes lo leyeron hasta el final y respondieron con sus propias palabras».*"
     },
     "hidden_perfect_homeroom_ep4": {
         "name": "{name}",
-        "text": "*A veces, cuando digo: “Fui profesor”, la gente responde: “Fui estudiante”. Ambos se ríen. Ese título no dura mucho más.*"
+        "text": "*Nos preguntamos por el trabajo del otro y elegimos el fin de semana siguiente. Nuestra antigua relación no es un secreto que haya que borrar ni una broma que sacar a relucir. La dejamos donde corresponde: en un tiempo que ya terminó.*"
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
-        "text": "*Día de graduación. — Ha pasado el tiempo. El uniforme ya no está tieso.*"
+        "text": "*Cuatro años después de graduarme. Dejé la escuela, terminé la universidad y ahora me gano la vida por mi cuenta. De camino a casa después del trabajo, veo en una librería independiente el cartel de una presentación con un nombre conocido.*"
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
-        "text": "*El aula vacía. La misma en la que ella escribía el manuscrito. — La profe está esperando.*"
+        "text": "*Cuando termina el evento, ya no queda nadie ante la mesa de firmas. La autora, con un cárdigan beige, levanta la vista mientras ordena sus libros.*"
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
-        "text": "*Está apoyada en la ventana del fondo del aula. Tiene la cara de quien ya no tiene ni clases ni papeleo.*"
+        "text": "*{name} lleva al cuello la tarjeta de acceso de la empresa; ella sostiene un libro con su propio nombre impreso, en lugar de una hoja de asistencia.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Profesora",
-        "text": "Felicidades por graduarte."
+        "text": "Cuánto tiempo. ¿Cómo debería llamarte ahora?"
     },
     "hidden_true_homeroom_3_b": {
         "name": "{name}",
-        "text": "Gracias."
+        "text": "Llámeme por mi nombre. Ya no soy estudiante."
     },
     "hidden_true_homeroom_3_c": {
         "name": "Profesora",
-        "text": "...Eso."
+        "text": "Eso lo haremos poco a poco. Hoy has venido como lector, ¿verdad?"
     },
     "hidden_true_homeroom_4": {
         "name": "Profesora",
-        "text": "...Ahora no me llamaste profesora."
+        "text": "*Mira una vez la tarjeta de acceso y sonríe.* De verdad te has construido tu propia vida."
     },
     "hidden_true_homeroom_4_b": {
         "name": "{name}",
-        "text": "*La forma en que la llamé se vuelve extraña un segundo después de salir de mi boca.*"
+        "text": "*Antes que de la escuela, hablamos de nuestros trabajos y de los libros que leemos últimamente.*"
     },
     "hidden_true_homeroom_4_c": {
         "name": "Profesora",
-        "text": "*La profesora saca un sobre blanco. Es más delgado que el sobre marrón de la vez anterior.*"
+        "text": "*Saca un libro del expositor. Tiene el mismo título que el manuscrito del cajón de la tarima.*"
     },
     "hidden_true_homeroom_4_d": {
         "name": "Profesora",
-        "text": "He terminado el manuscrito. — Pude seguir porque tú fuiste mi primer lector."
+        "text": "Al final lo terminé. También repasé durante mucho tiempo los comentarios que dejó el club de literatura."
     },
     "hidden_true_homeroom_4_e": {
         "name": "{name}",
-        "text": "¿Te sirvió lo que te escribí?"
+        "text": "¿Recuerda también las marcas que dejé yo?"
     },
     "hidden_true_homeroom_4_f": {
         "name": "Profesora",
-        "text": "Te dije \"con una línea basta\" y me trajiste tres hojas. Después de ver eso, se me acabaron las excusas para aplazarlo."
+        "text": "Quedamos en que no intentaría averiguar quién escribió cada comentario. Pero sí recuerdo que en la última página había muchísimas preguntas."
     },
     "hidden_true_homeroom_4_g": {
         "name": "Profesora",
-        "text": "*Mira por la ventana. Los cerezos están cayendo.*"
+        "text": "*Alinea una vez la esquina del libro. Ya no dobla el posavasos como antes.*"
     },
     "hidden_true_homeroom_4_h": {
         "name": "Profesora",
-        "text": "*Aparta la vista de la ventana y se gira.* ...Una cosa nada más."
+        "text": "El evento ya ha terminado. ¿Tienes tiempo? Me apetece tomar un café. Si te resulta incómodo, podemos despedirnos aquí."
     },
     "hidden_true_homeroom_5": {
         "name": "Profesora",
-        "text": "*Mirando por la ventana.* ...Pues eso. Ya que lo tengo acabado, estaba pensando en mandarlo a una editorial. — ¿Qué te parece?"
+        "text": "Quiero volver a hablar contigo tal como eres ahora, no como mi antiguo estudiante."
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
-        "text": "*Día de graduación. — Ha pasado el tiempo.*"
+        "text": "*La tutora no se dirige a la caja; espera la respuesta de {name}.*"
     },
     "hidden_true_homeroom_5_c": {
         "name": "{name}",
-        "text": "*El uniforme ya no está tieso. No — hoy es el día en que me lo quito.*"
+        "text": "Yo también quiero conocerla como es ahora. Y podemos decidir poco a poco cómo llamarnos."
     },
     "hidden_true_homeroom_6": {
         "name": "Profesora",
-        "text": "...Una cosa nada más. ...Vamos a por un café. Esta vez sí, nada de jugo."
+        "text": "Bien. Entonces empecemos por un café. Seguiremos hablando mientras lo tomamos."
     },
     "hidden_true_homeroom_6_b": {
         "name": "{name}",
-        "text": "*La palabra café permanece mucho tiempo sobre el posavasos.*"
+        "text": "*Mientras caminamos hasta la cafetería, nos preguntamos por el trayecto al trabajo y por lo que hacemos últimamente.*"
     },
     "hidden_true_homeroom_7": {
         "name": "{name}",
-        "text": "Está bien."
+        "text": "De acuerdo. También me gustaría que quedáramos otra vez."
     },
     "hidden_true_homeroom_7_b": {
         "name": "Profesora",
-        "text": "*La tutora sonríe. La luz de la ventana cae sobre el sobre del manuscrito.*"
+        "text": "*Sonríe y saca el móvil. Muestra primero la pantalla de contactos y espera.*"
     },
     "hidden_true_homeroom_7_c": {
         "name": "Profesora",
-        "text": "...Una profe no debería hacer esto. *— Se le apaga la voz. Y luego sonríe.*"
+        "text": "A partir de hoy, no intentemos borrar a la fuerza las formas de llamarnos de antes. En cambio, aprendamos de nuevo nuestros nombres."
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*Su nombre se queda una vez más al borde de mis labios. Ella sonríe con la cabeza vuelta.*"
+        "text": "*Pronuncio su nombre una vez. Ella repite despacio el de {name}.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Profesora",
-        "text": "...Pero no me arrepiento."
+        "text": "¿Quieres que nos veamos también la semana que viene?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -211,19 +210,19 @@
     },
     "hidden_good_homeroom_1": {
         "name": "Profesora",
-        "text": "*Estaba esperando delante del colegio.* Felicidades por graduarte."
+        "text": "*Cinco años después de la graduación, reconoce a {name} mientras ordena los libros en una lectura de una librería independiente.* ...Cuánto tiempo."
     },
     "hidden_good_homeroom_2": {
         "name": "{name}",
-        "text": "*Al darnos la mano — algo se me cuela en la palma. Una nota doblada.*"
+        "text": "*Volvemos a encontrarnos a la salida del evento. Los dos sacamos la tarjeta de visita y nos detenemos al mismo tiempo.*"
     },
     "hidden_good_homeroom_3": {
-        "name": "{name}",
-        "text": "*Saliendo del colegio. \"Te escribiré cuando acabe el manuscrito. Porque quiero enseñártelo a ti primero.\" Hay un número de teléfono apuntado.*"
+        "name": "Profesora",
+        "text": "Cuando termines el libro, si todavía te queda algo que decir, ponte en contacto conmigo. Esta vez, como lector y autora."
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Su mano se quedó tres segundos de más. Largo para un apretón, corto para una declaración.*"
+        "text": "*Sin saber quién empieza, los dos abrimos la pantalla de contactos. Decidimos esperar a que termine el libro para elegir si habrá otro encuentro.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -232,35 +231,35 @@
     "hidden_perfect_nurse_check": {},
     "hidden_perfect_nurse_1": {
         "name": "{name}",
-        "text": "*La graduación terminó. Abrí la puerta de la enfermería. Vacía. Una curita sobre el escritorio. 'Ven a mi casa. La dirección está atrás.' — Sin corazón esta vez.*"
+        "text": "*Cinco años después de graduarme. Conseguí trabajo en otra ciudad y llevo dos años viviendo solo. En un evento de salud del barrio, un fin de semana, veo un nombre conocido en la acreditación de la instructora de primeros auxilios: Lee Juwon.*"
     },
     "hidden_perfect_nurse_2": {
         "name": "Enfermera",
-        "text": "*La persona que abrió la puerta lleva una bata de punto en lugar de una bata.*...Ahí estás. Realmente no pensé que vendría."
+        "text": "*Al terminar el evento, se quita de la bata la acreditación.* ...¿{name}? No esperaba verte aquí."
     },
     "hidden_perfect_nurse_3": {
         "name": "{name}",
-        "text": "*Sentados el uno al lado del otro en el sofá del salón. El sol se pone tras la ventana. En lugar de una curita, son los dedos los que se rozan.*"
+        "text": "*Nos sentamos frente a frente en una cafetería al otro lado del recinto. Las vendas de práctica de primeros auxilios siguen dentro de su caja.*"
     },
     "hidden_perfect_nurse_3b": {
         "name": "Enfermera",
-        "text": "*Apoyándose en el hombro*...Ya no tienes que poner excusas. Porque no soy ni un paciente ni un estudiante."
+        "text": "Antes me encargaba de tus consultas. ¿Te parece bien que ahora nos sentemos así, los dos solos?"
     },
     "hidden_perfect_nurse_4": {
         "name": "Enfermera",
-        "text": "*Sube la mano y me agarra la corbata. No la suelta.* ...Esta noche no te vas."
+        "text": "Si te resulta incómodo, podemos despedirnos aquí. Solo tenía curiosidad por saber cómo te va últimamente."
     },
     "hidden_perfect_nurse_4b": {
         "name": "{name}",
-        "text": "*Por la mañana. La luz se cuela entre las cortinas. A mi lado, una respiración. — La persona que tardaba tres minutos en poner una curita ahora duerme sujetándome la mano.*"
+        "text": "Estoy bien. Hoy también me gustaría oír hablar de usted, no de la escuela."
     },
     "hidden_perfect_nurse_5": {
         "name": "Enfermera",
-        "text": "*La enfermera abre los ojos y sonríe.* ...¿Te duele algo? ¿Quieres que revise? *Lo dice como una broma, pero las puntas de sus dedos son cuidadosas.*"
+        "text": "Entonces, ¿concertamos el próximo encuentro como algo que no sea ni tratamiento ni consulta?"
     },
     "hidden_perfect_nurse_5b": {
         "name": "{name}",
-        "text": "*No quiero quitar mi mano. Aquí.*"
+        "text": "*Comparamos nuestros calendarios por turnos y encontramos un sábado libre para los dos.*"
     },
     "hidden_perfect_nurse_ending_title": {
         "name": "",
@@ -268,163 +267,163 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*Mañana. Hay una tirita pegada a la mesa. El menú de hoy está escrito en letra pequeña.*"
+        "text": "*Unos meses después. Un fin de semana, al terminar cada uno su trabajo, desayunamos tarde en la misma mesa. Las vendas solo están en el botiquín.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Volvió al hospital universitario. Los pacientes la llaman por su nombre. — Enfermera Lee Juwon.*"
+        "text": "*Juwon se trasladó al equipo de formación de un hospital universitario. Tanto los pacientes como el personal de enfermería recién incorporado la llaman por su nombre: profesora Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*La maceta de romero pasó al alféizar. Al lado donde da mejor el sol. — La riega ella.*"
+        "text": "*La maceta de romero está en la ventana de la casa que elegimos juntos. Nos turnamos para regarla.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*El cuaderno verde claro quedó al fondo del cajón. En la parte baja de la última página queda una línea: 'Yujin, ahora estoy bien.'*"
+        "text": "*En la última página del cuaderno verde claro queda una línea: «Me ha llevado mucho tiempo, pero ahora volveré a empezar por decisión propia».*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
-        "text": "*Día de graduación. Al salir — hay una curita pegada en la puerta de la enfermería.*"
+        "text": "*Cuatro años después de graduarme. En la primavera de mi primer año viviendo por mi cuenta, oigo una voz conocida en un puesto de una campaña de salud local, de camino a casa después del trabajo.*"
     },
     "hidden_true_nurse_2": {
         "name": "{name}",
-        "text": "*'Felicidades por graduarte. Te esperaré en el café.' Al quitar la venda se revela un pequeño mapa adentro. En el asiento junto a la ventana del café, hay dos cafés fríos frente a la enfermera.*"
+        "text": "*Cuando termina el evento, volvemos a sentarnos frente a frente en una cafetería cercana. Las vendas y los folletos que usó en el puesto están guardados en su bolso.*"
     },
     "hidden_true_nurse_2_b": {
         "name": "{name}",
-        "text": "*Hoy no hay toga ni registro de asistencia.*"
+        "text": "*Sobre la mesa quedan dos tarjetas de acceso de empresas distintas. Los dos tenemos el rostro de quien ha terminado su jornada haciéndose cargo de su propia vida.*"
     },
     "hidden_true_nurse_2_c": {
         "name": "Enfermera",
-        "text": "Felicidades por la graduación."
+        "text": "Cuánto tiempo. ¿Te ha ido bien?"
     },
     "hidden_true_nurse_2_d": {
         "name": "{name}",
-        "text": "Gracias."
+        "text": "Sí. Ahora yo también trabajo. Y vivo solo."
     },
     "hidden_true_nurse_3": {
         "name": "Enfermera",
-        "text": "Felicidades. ...Desde hoy puedes dejar el 'usted'."
+        "text": "Hasta decidir cómo llamarnos resulta difícil. ¿Te resultaría raro seguir llamándome «profe», como antes?"
     },
     "hidden_true_nurse_3_b": {
         "name": "{name}",
-        "text": "¿Por qué?"
+        "text": "Podemos cambiarlo poco a poco. No hay ninguna prisa."
     },
     "hidden_true_nurse_4": {
         "name": "Enfermera",
-        "text": "¿Sabes? El día que te trasladaron y viniste a la enfermería. Me tocaste la frente preguntando si así podía 'saberte la tensión'. Pensé que era una broma."
+        "text": "Recuerdo que el día de tu traslado entraste diciendo que estabas mareado."
     },
     "hidden_true_nurse_5": {
         "name": "Enfermera",
-        "text": "...Pero ahora no pienso irme por las ramas."
+        "text": "En aquel momento éramos profesora y estudiante, así que aquello terminaba ahí."
     },
     "hidden_true_nurse_5_b": {
         "name": "{name}",
-        "text": "*La mano que sostiene la taza de café se detiene. No había lugar para que escaparan las bromas.*"
+        "text": "*Juwon aparta la mano de la taza y espera la respuesta de {name}.*"
     },
     "hidden_true_nurse_5_c": {
         "name": "Enfermera",
-        "text": "Sabía que no podía ser. Por eso lo llevaba todo como si fuera broma."
+        "text": "Ahora nos hemos vuelto a encontrar por casualidad."
     },
     "hidden_true_nurse_5_d": {
         "name": "Enfermera",
-        "text": "Pero tú me calabas aunque me fuera por las ramas. Hasta lo del cuaderno verde lima."
+        "text": "Así que voy a preguntártelo. ¿Quieres que volvamos a vernos?"
     },
     "hidden_true_nurse_5_e": {
         "name": "{name}",
-        "text": "Tardar tres minutos en poner una curita no es ser cuidadosa."
+        "text": "¿Sin que sea por tratamiento ni por una consulta?"
     },
     "hidden_true_nurse_5_f": {
         "name": "Enfermera",
-        "text": "*La profesora de salud hace una pausa por un momento. La mano que giraba la taza de café se detiene y la sonrisa dura mucho tiempo.*"
+        "text": "*Se ríe con sequedad.* Sí. Y las vendas hay que ponerlas en menos de tres minutos."
     },
     "hidden_true_nurse_6": {
         "name": "Enfermera",
-        "text": "Así que cuando acabe la ceremonia, vuelve. Aquí, no a la enfermería. Entonces te hablaré como Lee Juwon, no como la enfermera del colegio."
+        "text": "Si te resulta incómodo, podemos dejarlo aquí. Pero si estás bien, me gustaría volver a verte la semana que viene."
     },
     "hidden_true_nurse_7": {
         "name": "{name}",
-        "text": "*Incluso al salir de la cafetería, las manos nos costaron separarse. Cuando me quise dar cuenta, estábamos delante de su casa, no delante de la enfermería.*"
+        "text": "*Salimos de la cafetería y caminamos juntos hasta el metro. Ninguno se desvía hacia el lado del otro.*"
     },
     "hidden_true_nurse_7_b": {
         "name": "Enfermera",
-        "text": "...Veo que has estado observando hasta aquí."
+        "text": "Puedes responderme en casa sobre lo de la semana que viene."
     },
     "hidden_true_nurse_7_c": {
-        "name": "Enfermera",
-        "text": "*La enfermera extiende la mano y toca la curita en el dorso de la mano de {name}. Es la que puso esa mañana.*"
+        "name": "{name}",
+        "text": "No es un rechazo. Yo también quiero volver a verla."
     },
     "hidden_true_nurse_7_d": {
         "name": "Enfermera",
-        "text": "*La enfermera presiona una vez el borde de la tirita con la uña y luego suelta la mano.*"
+        "text": "*Saca el móvil y abre el calendario.* Entonces, el próximo fin de semana. El día que nos venga bien a los dos."
     },
     "hidden_true_nurse_8": {
         "name": "Enfermera",
-        "text": "La próxima vez no finjas que te duele algo. Di que viniste porque querías verme y ya."
+        "text": "La próxima vez, quedemos sin que sea por un evento de salud. Solo para vernos."
     },
     "hidden_true_nurse_ending_title": {
         "name": "",
         "text": "─── Enfermera TRUE LOVE END ───"
     },
     "hidden_true_nurse_8_b": {
-        "name": "Enfermera",
-        "text": "*Dando vueltas a la taza de café.* ...No pensé que iba a echar de menos el olor de la enfermería después de graduarme."
+        "name": "{name}",
+        "text": "*Un mes después, nos vemos cada fin de semana en una cafetería distinta.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
-        "text": "*Por un momento, la cortina blanca de la enfermería se superpone a la ventana del café y desaparece.*"
+        "text": "*En la ventana de la cafetería solo se reflejan las dos personas que somos ahora. Las cortinas blancas de la escuela ya no se superponen.*"
     },
     "hidden_true_nurse_8_d": {
         "name": "{name}",
-        "text": "*La mano que estaba girando la taza de café se detiene.*"
+        "text": "*No hablamos mucho de la escuela. Hablamos más de nuestros trabajos actuales y del fin de semana siguiente.*"
     },
     "hidden_true_nurse_8_e": {
         "name": "Enfermera",
-        "text": "Oye. Por aquel entonces estaba pensando en dejarlo."
+        "text": "Por aquel entonces llegué a plantearme dejar la escuela."
     },
     "hidden_true_nurse_8_f": {
         "name": "{name}",
-        "text": "Porque te mareabas."
+        "text": "Pero al final quedarse fue decisión suya, ¿verdad?"
     },
     "hidden_true_nurse_8_g": {
         "name": "Enfermera",
-        "text": "Pero al venir tú — me salió un motivo para quedarme. *Sonríe con suavidad.* Gracias."
+        "text": "Sí. No porque alguien me retuviera, sino porque yo lo decidí. Igual que venir hoy."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Lo sé."
+        "text": "Entonces nos veremos también la semana que viene. Por decisión propia."
     },
     "hidden_good_nurse_1": {
         "name": "Enfermera",
-        "text": "Vaya, mira quién aparece: el graduado."
+        "text": "*Cinco años después de la graduación, reconoce a {name} en la mesa de recepción de un evento de salud local.* Vaya, no esperaba encontrarte aquí."
     },
     "hidden_good_nurse_2": {
         "name": "Enfermera",
-        "text": "Vitaminas. — Cuídate bien cuando vayas a la universidad. ...Digamos que es interés médico."
+        "text": "¿Te apetece tomar un café cuando termine el evento? Hace mucho que no sé nada de ti."
     },
     "hidden_good_nurse_2_b": {
         "name": "{name}",
-        "text": "¿Interés médico?"
+        "text": "¿Le parece bien? Después de todo lo que pasó antes."
     },
     "hidden_good_nurse_2_c": {
         "name": "Enfermera",
-        "text": "*Se detiene un momento.* ...Sí. Interés médico. *En voz baja.* Dejémoslo así."
+        "text": "*Elige sus palabras.* Si te resulta incómodo, puedes limitarte a saludar y marcharte. Tú decides."
     },
     "hidden_good_nurse_2_d": {
         "name": "Enfermera",
-        "text": "*La enfermera frota la etiqueta del frasco con el pulgar. La sonrisa llega un poco tarde.*"
+        "text": "*Ordena las vendas que quedan en la caja del evento. Esta vez no me entrega nada y espera.*"
     },
     "hidden_good_nurse_3": {
         "name": "{name}",
-        "text": "*Saliendo de la enfermería. Dentro del tapón, en letra diminuta. 'Escríbeme si te pones malo. Escríbeme aunque no. — ♥'*"
+        "text": "*Al llegar a la cafetería, los dos sacamos el móvil. Sin saber quién empieza, abrimos la pantalla de contactos.*"
     },
     "hidden_good_nurse_3_b": {
-        "name": "{name}",
-        "text": "*Aunque cierro el tapón, la comisura no me baja.*"
+        "name": "Enfermera",
+        "text": "La próxima vez que me escribas, que sea para hablar de algo distinto a estar enfermo."
     },
     "hidden_good_nurse_4": {
         "name": "{name}",
-        "text": "*La mano que sostiene el frasco se queda quieta. El cajón donde estaba el cuaderno verde claro está cerrado.*"
+        "text": "*{name} muestra primero el hueco que tiene libre el próximo fin de semana. Juwon abre su calendario junto al suyo.*"
     },
     "hidden_good_nurse_ending_title": {
         "name": "",
@@ -588,7 +587,7 @@
     },
     "perfect_epilogue_2_yuna": {
         "name": "{name}",
-        "text": "*Publicaron la primera novela de Yuna. Dedicatoria: 'A la tercera estrella.'*"
+        "text": "*Se publica la primera novela de Yuna. En la dedicatoria hay una línea: «Para quien escuchó conmigo la tercera canción».*"
     },
     "perfect_epilogue_3_yuna": {
         "name": "Yuna",
@@ -637,15 +636,15 @@
     },
     "true_yuna_3": {
         "name": "Yuna",
-        "text": "*Abre la pequeña ventana. Se ven las estrellas.*"
+        "text": "*En la azotea baja sobre la trampilla, el viento levanta una esquina del cuaderno.*"
     },
     "true_yuna_4": {
         "name": "Yuna",
-        "text": "Ahora tú también lo conoces."
+        "text": "*Abre la lista de reproducción del móvil. Hay una pequeña estrella junto a la tercera canción.*"
     },
     "true_yuna_5": {
         "name": "{name}",
-        "text": "¿La tercera estrella?"
+        "text": "¿La tercera canción de entonces?"
     },
     "true_yuna_5_b": {
         "name": "Yuna",
@@ -657,11 +656,11 @@
     },
     "true_yuna_6b": {
         "name": "Yuna",
-        "text": "No te vayas. Quédate aquí esta noche."
+        "text": "Hoy vamos a escucharla juntos aquí."
     },
     "true_yuna_7": {
         "name": "{name}",
-        "text": "*Junto al tercer asterisco, hay marcado un punto morado pálido como la primera nota. Yuna cierra el cuaderno y camina primero hacia la puerta del anexo.*"
+        "text": "*La lista de reproducción está copiada en el cuaderno. Junto al título de la tercera canción hay un punto lila claro, como el de la primera nota. Yuna pulsa el botón de reproducción.*"
     },
     "true_yuna_bridge": {
         "name": "{name}",
@@ -677,55 +676,55 @@
     },
     "perfect_dain_1": {
         "name": "{name}",
-        "text": "*El gimnasio. Dain lanza su último saque. Mientras se quita las vendas.*"
+        "text": "*El gimnasio. Los balones están guardados; sobre el banco descansan la rodillera y el calendario de rehabilitación.*"
     },
     "perfect_dain_2": {
         "name": "Dain",
-        "text": "Este es el último pase. — Pero también es un principio."
+        "text": "A partir de la semana que viene voy a hacer la rehabilitación como es debido."
     },
     "perfect_dain_2b": {
         "name": "Dain",
-        "text": "*Deja el balón de voleibol y espera la respuesta de {name}.*"
+        "text": "*Enseña la pantalla con la reserva confirmada y deja el móvil junto a la rodillera.*"
     },
     "perfect_dain_3": {
         "name": "Dain",
-        "text": "Fuera de la cancha, ¿soy una chica que vale la pena?"
+        "text": "Aún no sé qué haré con lo de ser profesional. Pero voy a buscar una forma de seguir vinculada desde fuera de la pista."
     },
     "perfect_dain_3b": {
         "name": "Dain",
-        "text": "*Dain deja el balón en la cancha. Se gira y sonríe. Una sonrisa sin signos de exclamación.*"
+        "text": "*Pausa el vídeo de una retransmisión y señala el nombre del comentarista bajo la imagen.*"
     },
     "perfect_dain_4": {
         "name": "{name}",
-        "text": "Dentro y fuera de la cancha."
+        "text": "Aunque no seas jugadora, nadie habla del voleibol con tanta pasión como tú. Veré tu primera retransmisión."
     },
     "perfect_dain_5": {
         "name": "Dain",
-        "text": "*Saltó. No me dio tiempo a reaccionar. El balón rodó por el suelo — Y en el gimnasio bañado por el atardecer solo quedaron dos sombras.*"
+        "text": "*Da un paso hacia mí y rodea los hombros de {name} con un brazo. Cuando {name} le sujeta la cintura, deja de cargar peso sobre el pie derecho y se ríe.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*La rodilla de Dain cede levemente al aterrizar el salto. Ella ríe primero, luego presiona la rodilla con la mano.*"
+        "text": "*Dain se queda un buen rato riendo con el brazo alrededor de mis hombros y luego vuelve a apoyar despacio los dos pies en el suelo.*"
     },
     "perfect_epilogue_1b_dain": {
         "name": "{name}",
-        "text": "*Esa persona que cada mañana se vendaba y se frotaba la rodilla a escondidas. Acaba de saltar.*"
+        "text": "*Antes de que el peso recaiga sobre la rodilla derecha, se apoya en el hombro de {name} y recupera el equilibrio.*"
     },
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
-        "text": "*En los días en que le duelen las rodillas, Dain reduce el ritmo. Sigo el mismo ritmo junto a él.*"
+        "text": "*Los días de rehabilitación, Dain marca primero el ritmo. {name} acompasa sus pasos a los de ella.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "Sistema",
         "text": "*Epílogo — Un año después*"
     },
     "perfect_epilogue_2_dain": {
-        "name": "Dain",
-        "text": "*Se convirtió en comentarista deportivo. Sonriendo también frente a la cámara. Esta vez no pongo énfasis en el final de mis palabras.*"
+        "name": "{name}",
+        "text": "*Dain estudia Comunicación Deportiva y entra en el equipo universitario de retransmisiones. La víspera de su primera emisión revisa el guion tres veces.*"
     },
     "perfect_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*A veces le duele la rodilla, dice. Cuando pasa, nos sentamos lado a lado y escuchamos el aire escapar del balón.*"
+        "text": "*Los días de dolor, en vez de entrenar revisamos juntos el registro de rehabilitación y vídeos de partidos. Ahora es Dain quien dice primero que necesita descansar.*"
     },
     "perfect_epilogue_4_dain": {
         "name": "Sistema",
@@ -761,51 +760,51 @@
     },
     "true_dain_1": {
         "name": "{name}",
-        "text": "*El gimnasio. Las mismas luces de emergencia que ayer. Tumbados el uno al lado del otro sobre la colchoneta.*"
+        "text": "*El gimnasio después del evento. Estamos sentados uno junto al otro, apoyados contra la pared. En el móvil de Dain está abierta la pantalla de reserva del hospital.*"
     },
     "true_dain_2": {
         "name": "Dain",
-        "text": "*Toma la mano de {name} y la coloca contra la parte interna de su muñeca. Sin decir nada.*"
+        "text": "*Le acerca el móvil a {name}.*"
     },
     "true_dain_2b": {
         "name": "{name}",
-        "text": "*Todo va deprisa. Una velocidad que lo dice todo sin necesidad de palabras.*"
+        "text": "*Lunes, 16:30. Cita de rehabilitación confirmada.*"
     },
     "true_dain_3": {
-        "name": "{name}",
-        "text": "*El pulso late con claridad bajo mis dedos.*"
+        "name": "Dain",
+        "text": "También se lo conté al entrenador y a mis padres. Me regañaron muchísimo, pero... después de decirlo me sentí mejor."
     },
     "true_dain_4": {
         "name": "{name}",
-        "text": "*No salen palabras. Solo se me secan los labios.*"
+        "text": "*Debajo de la reserva también está abierta la solicitud para el club de retransmisiones deportivas.*"
     },
     "true_dain_5": {
         "name": "{name}",
-        "text": "...Es rápido."
+        "text": "¿Vas a intentar las dos cosas?"
     },
     "true_dain_6": {
         "name": "Dain",
-        "text": "*Se tapa la cara a medias con el balón.* No me mires así... Así no se vale."
+        "text": "No sé. Probaré las dos y elegiré la que me resulte más divertida."
     },
     "true_dain_7": {
         "name": "{name}",
-        "text": "No te estaba mirando."
+        "text": "Entonces veré tu primera retransmisión."
     },
     "true_dain_8": {
         "name": "Dain",
-        "text": "¡¡Sí me estabas mirando!! ...Pero puedes seguir."
+        "text": "No puedes cambiar de opinión. Aunque sea aburrida, tienes que verla hasta el final."
     },
     "true_dain_8b": {
         "name": "Dain",
-        "text": "*El final de su voz se eleva ligeramente. Esta vez no suena forzado.*"
+        "text": "*Deja el balón a un lado y extiende el meñique.*"
     },
     "true_dain_bridge": {
         "name": "{name}",
-        "text": "*La risa de Dain aún me resuena en los oídos.*"
+        "text": "*Con nuestros meñiques enlazados, la notificación de la cita médica sigue en la pantalla.*"
     },
     "true_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Cinco días. Eso fue lo que tomó escuchar el lugar donde se detenían los signos de exclamación de Dain.*"
+        "text": "*Aquel día, por primera vez, Dain dijo la fecha de su próxima consulta en lugar de «Estoy bien».*"
     },
     "true_epilogue_2": {
         "name": "{name}",
@@ -826,7 +825,7 @@
     },
     "true_epilogue_4_dain": {
         "name": "{name}",
-        "text": "*Su rodilla se venda cada mañana. Sus notas de alarma todavía tienen dos signos de exclamación. Pero Dain a veces envía mensajes que terminan con punto ahora.*"
+        "text": "*La alarma matutina de Dain ya no dice «Sonríe», sino que avisa de la hora de los estiramientos de rehabilitación. A veces envía vídeos de sus prácticas de retransmisión y {name} le responde después de verlos hasta el final.*"
     },
     "true_epilogue_7": {
         "name": "Sistema",
@@ -838,7 +837,7 @@
     },
     "alone_1": {
         "name": "{name}",
-        "text": "*Cinco días. Sobre el escritorio reposan una llave, una nota y una muñequera, lado a lado. No pude meter ninguna en la mochila.*"
+        "text": "*Reúno en una carpeta las notas y las fotos que recibí durante los cinco días. No borro nada de nadie.*"
     },
     "alone_2": {
         "name": "{name}",
@@ -846,11 +845,11 @@
     },
     "alone_2_b": {
         "name": "{name}",
-        "text": "*La habitación está en silencio. Detrás del sonido de la puerta cerrándose, las voces se desvanecen todas a la vez. Las flores de cerezo fuera de la ventana se esparcen con el viento.*"
+        "text": "*Dejo vacío el cuadro de respuesta y bajo el móvil.*"
     },
     "alone_4": {
         "name": "{name}",
-        "text": "*Apago la luz de la habitación y los sonidos de notificación cesan. Solo la llave, la nota y la muñequera permanecen en la oscuridad sobre el escritorio.*"
+        "text": "*Conecto el móvil al cargador y pongo la alarma de la mañana. En la habitación, con la pantalla apagada, solo queda el sonido del segundero.*"
     },
     "alone_5": {
         "name": "Sistema",
@@ -878,35 +877,35 @@
     },
     "day5_ending_confess_fail": {
         "name": "{name}",
-        "text": "*Saqué el valor. Lo dije. — Pero lo que me devolvieron fue un silencio con la cabeza gacha.*"
+        "text": "*Camino hasta el parque y por fin consigo decirlo. Mientras espero una respuesta, no aparto la vista de la punta de mis zapatos.*"
     },
     "confess_fail_cg_seo": {
-        "name": "{name}",
-        "text": "*La pantalla permanece inmóvil. La respuesta no cambia.*"
+        "name": "Seoyeon",
+        "text": "*Escucha durante un largo rato y niega con la cabeza.* Lo siento. Ahora no."
     },
     "confess_fail_cg_yuna": {
-        "name": "{name}",
-        "text": "*La pantalla permanece inmóvil. La respuesta no cambia.*"
+        "name": "Yuna",
+        "text": "*Tras un largo silencio, abraza el libro contra el pecho.* ...Ahora no puedo."
     },
     "confess_fail_cg_dain": {
-        "name": "{name}",
-        "text": "*La pantalla permanece inmóvil. La respuesta no cambia.*"
+        "name": "Dain",
+        "text": "*Sin sonreír, mira la punta de sus zapatillas.* Perdona. Quiero que sigamos siendo amigos."
     },
     "confess_fail_1": {
         "name": "{name}",
-        "text": "*Incluso después de alejarme varios pasos, no puedo bajar el teléfono. La última frase queda junto al visto.*"
+        "text": "*Salgo del parque a solas. La respuesta que acabo de oír sigue resonando en mis oídos.*"
     },
     "confess_fail_2": {
         "name": "{name}",
-        "text": "*Metí mi teléfono en mi bolsillo y lo saqué nuevamente. La última frase parecía más corta junto a la marca de lectura.*"
+        "text": "*Al llegar a casa, abro el chat. El cursor parpadea en el cuadro de texto vacío.*"
     },
     "confess_fail_3": {
         "name": "{name}",
-        "text": "*Dije que me gustaba. La respuesta tardó en llegar, y fue breve.*"
+        "text": "*Envío «Lo entiendo. Gracias por responderme» y dejo el móvil.*"
     },
     "confess_fail_4": {
         "name": "{name}",
-        "text": "*Las palabras salieron hasta el final. Quizá por eso mis pies tiemblan menos al darme la vuelta.*"
+        "text": "*Aparece la marca de leído. No llega ninguna respuesta. No envío nada más.*"
     },
     "confess_fail_5": {
         "name": "Sistema",
@@ -962,15 +961,15 @@
     },
     "good_epilogue_1": {
         "name": "{name}",
-        "text": "*Me llega un mensaje de Seoyeon. 'He hecho una copia de la llave de la azotea para mañana. — Es un permiso, un permiso.' Le habría bastado con decir que era una invitación.*"
+        "text": "*Llega un mensaje de Seoyeon: «Mañana, a la hora de comer, en la azotea. Esta vez la he reservado como corresponde».*"
     },
     "good_epilogue_2": {
         "name": "Seoyeon",
-        "text": "*Nunca usa la palabra 'invitación' hasta el final. En su lugar, envía una foto de la copia de la llave de la azotea.*"
+        "text": "*En la foto, nuestros dos nombres figuran en la casilla del mediodía del registro de uso. Al lado, con la letra de Seoyeon: «No llegues tarde».*"
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*Guardo la llave en el bolsillo. Mañana me toca llevar el almuerzo a la azotea.*"
+        "text": "*Al día siguiente, Seoyeon abre la puerta con la llave prestada y la deposita enseguida en el buzón de devolución. Espera ante la puerta hasta que llega {name}.*"
     },
     "good_5_cg_seo": {
         "name": "Sistema",
@@ -1022,27 +1021,27 @@
     },
     "good_1_dain": {
         "name": "Dain",
-        "text": "Oye, no es que ya esté todo bien. ...Pero estoy bien como para volver a lanzarte el balón."
+        "text": "Oye, todavía no está todo resuelto entre nosotros. Pero he quedado en que el lunes volverán a revisarme la rodilla."
     },
     "good_2_dain": {
         "name": "{name}",
-        "text": "*Delante de la puerta del colegio, Dain bota el balón una vez y, esta vez sin bromas, me lo lanza.*"
+        "text": "*Ante la puerta de la escuela, Dain me ofrece el folleto de rehabilitación que llevaba doblado.*"
     },
     "good_3_dain": {
         "name": "{name}",
-        "text": "*La atrapo. Solo entonces Dain sonríe. La pelota rebota una vez más en mi palma.*"
+        "text": "*Acepto el folleto. Solo entonces Dain sonríe.*"
     },
     "good_4_dain": {
-        "name": "{name}",
-        "text": "*En mi rodilla todavía hay una venda. Dain lanza la pelota, y la atrapo un paso tarde.*"
+        "name": "Dain",
+        "text": "Hoy no estoy bien. Así que vayamos despacio."
     },
     "good_5_dain": {
         "name": "{name}",
-        "text": "*Cruzamos juntos la entrada de la escuela. Dain afloja la muñeca. Esta vez no viene ninguna pelota.*"
+        "text": "*Cruzamos la puerta de la escuela y salimos caminando juntos. Dain marca el ritmo.*"
     },
     "good_epilogue_1_dain": {
         "name": "{name}",
-        "text": "*Un mensaje de Dain. '¿Alguien se apunta mañana a entrenar por la mañana?' Con interrogación al final. Lo normal en ella habría sido una exclamación.*"
+        "text": "*Llega un mensaje de Dain: «¿Alguien se apunta mañana por la mañana a un paseo de rehabilitación?». La frase es más prudente de lo habitual.*"
     },
     "good_epilogue_2_dain": {
         "name": "{name}",
@@ -1050,7 +1049,7 @@
     },
     "good_epilogue_3_dain": {
         "name": "{name}",
-        "text": "*Le respondí. 'Me apunto.' Sin exclamación. Mañana ya iré corriendo yo en persona.*"
+        "text": "*Respondo: «Hecho. Tú marcas el ritmo».*"
     },
     "good_5_cg_dain": {
         "name": "Sistema",
@@ -1058,19 +1057,19 @@
     },
     "day5_ending_friend": {
         "name": "{name}",
-        "text": "*Al final no pude decirlo.*"
+        "text": "*Decidí no confesarme. Pero también decidí no desaparecer sin decir nada.*"
     },
     "friend_1": {
         "name": "{name}",
-        "text": "*Los cerezos se los lleva el viento.*"
+        "text": "*Me siento en un banco del parque y abro los mensajes. Esta vez no cierro el cuadro de texto.*"
     },
     "friend_2": {
         "name": "{name}",
-        "text": "*Hice lo mismo que en mi colegio anterior. Lo volví a hacer.*"
+        "text": "*Me viene a la cabeza la frase que nunca conseguí enviar en el chat de Sojeong.*"
     },
     "friend_3": {
         "name": "{name}",
-        "text": "*Hubo momentos en que pude haber dicho que me gustabas. Cada vez, solo salió primero una sonrisa.*"
+        "text": "*Escribo hasta el final: «Ahora mismo no tengo el valor de pedirte que cambiemos nuestra relación. Pero quería decirte que te agradezco todo lo que has hecho». Y lo envío.*"
     },
     "friend_route_check": {
         "name": "Sistema",
@@ -1078,39 +1077,39 @@
     },
     "friend_4": {
         "name": "{name}",
-        "text": "*Salgo por la puerta y hay un mensaje en mi móvil. 'gracias por hoy jaja' Escribo 'yo también', y solo añado una carita sonriente.*"
+        "text": "*Llega una respuesta: «Yo también te lo agradezco. Nos vemos mañana en la escuela».*"
     },
     "friend_4_seo": {
         "name": "{name}",
-        "text": "*Salgo por la puerta y hay un mensaje. 'Gracias a ti hoy fue menos incómodo. Llega bien.' No hay emoji al final de la frase.*"
+        "text": "*Llega una respuesta de Seoyeon: «Entiendo. Esta vez has terminado de decir lo que querías. Nos vemos mañana».*"
     },
     "friend_4_yuna": {
         "name": "{name}",
-        "text": "*Al salir por la puerta de la escuela, llega un mensaje. '...Hoy. Gracias.' El cursor parpadea después del punto. La respuesta no llega fácilmente.*"
+        "text": "*Llega una respuesta de Yuna: «Lo he leído. ...Nos vemos mañana».*"
     },
     "friend_4_dain": {
         "name": "{name}",
-        "text": "*Salgo por la puerta y hay un mensaje. '¡Oye ten cuidado! ¡Gracias por hoy!' Dos signos de exclamación. Dejo solo 'ok' en el cuadro de respuesta.*"
+        "text": "*Llega una respuesta de Dain: «Sí. Entonces mañana ven como siempre. Y no llegues tarde».*"
     },
     "friend_5": {
         "name": "{name}",
-        "text": "*Respondí. 'Gracias a ti también.' — Y me quedé mirando la pantalla. Dos líneas de conversación. De amigos. Estoy sonriendo, pero me queda mal sabor de boca.*"
+        "text": "*Respondo con un breve «Sí» y apago la pantalla.*"
     },
     "friend_7": {
         "name": "{name}",
-        "text": "*...Tampoco fui capaz de decirlo en este colegio.*"
+        "text": "*Junto al mensaje enviado aparece la marca de leído. Esta vez no lo borro.*"
     },
     "friend_8": {
         "name": "{name}",
-        "text": "*Día de graduación. Paso fotos en el celular. Donde hace tres años estaba la foto de Sojeong, ahora hay una foto de grupo con los amigos de este colegio. Con la cabeza girada, igual que entonces.*"
+        "text": "*El día de la graduación, aparece en la galería del móvil una foto de grupo con mis amigos de esta escuela. Esta vez estoy mirando a la cámara.*"
     },
     "friend_9": {
         "name": "{name}",
-        "text": "*Otra vez estoy al lado de esa persona, con la cara más cómoda que tengo, sonriendo como si solo fuera un amigo.*"
+        "text": "*En la foto somos amigos. No hace falta esconder otro significado detrás de esa palabra.*"
     },
     "friend_10": {
         "name": "{name}",
-        "text": "*Abro las notas. 'Tengo que decirte algo.' — El cursor parpadea. Igual que hace tres años. Dejo pulsado borrar. Se borra.*"
+        "text": "*Escribo en el chat de grupo: «¿Comemos algo todos juntos después de la graduación?». En cuanto lo envío, empiezan a llegar respuestas una tras otra.*"
     },
     "friend_12": {
         "name": "Sistema",
@@ -1158,35 +1157,35 @@
     },
     "harem_1": {
         "name": "Seoyeon",
-        "text": "*Se rió primero....bueno. Eso es honesto. La risa pronto terminó.*"
+        "text": "Entiendo que estés siendo sincero. Pero eso no significa que tengamos que esperar las tres."
     },
     "harem_1_b": {
         "name": "Yuna",
-        "text": "*Baja la cabeza. Cuando al fin levanta la vista, las puntas de sus dedos presionan con fuerza el lomo del libro.*"
+        "text": "*Baja la cabeza y luego mira por turnos a Seoyeon y Dain. No afloja la mano que sujeta el libro.*"
     },
     "harem_2": {
         "name": "Yuna",
-        "text": "...Eres lo peor."
+        "text": "...Quiero tener tiempo para pensarlo."
     },
     "harem_3": {
         "name": "Dain",
-        "text": "*Golpea el hombro de {name} con el puño. El impacto es lo bastante fuerte para doler. \"Oye, eres lo peor.\" No hay risa al final de la frase.*"
+        "text": "Yo también. Hasta que lo tengas claro, no quiero verte a solas."
     },
     "harem_4": {
         "name": "{name}",
-        "text": "*El lunes es Seoyeon. El miércoles es Yuna. El viernes es Dain. Cada vez que aparece una notificación del calendario, primero giro la pantalla de bloqueo.*"
+        "text": "Lo entiendo. Por el momento no contactaré a ninguna por separado. Lo siento."
     },
     "harem_5": {
         "name": "Seoyeon",
-        "text": "*Cuando preguntó: “¿Qué harás el miércoles?”, su dedo se detuvo en la ventana de respuesta.*"
+        "text": "Entonces no quedemos a solas durante un tiempo. Y escribamos solo para lo necesario."
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*Y aun así, hoy las tres están sonriendo. Aunque sé de sobra cómo pinta mañana, vuelvo a aferrarme a hoy.*"
+        "text": "*Asiento. Las tres se alejan en direcciones distintas y {name} se queda en el mismo sitio.*"
     },
     "harem_7": {
         "name": "{name}",
-        "text": "*Tres alarmas suenan en diferentes momentos. Cada vez que las vibraciones se superponen, el estómago reacciona primero.*"
+        "text": "*El calendario de la semana siguiente está vacío. Silencio los chats de las tres y dejo libres los espacios.*"
     },
     "harem_8": {
         "name": "Sistema",

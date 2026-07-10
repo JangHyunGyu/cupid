@@ -29,7 +29,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
-        "text": "La próxima vez te llevaré yo primero."
+        "text": "Si es lo que has decidido, está bien. A partir de ahora, no vuelvas a ser ambiguo."
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
@@ -37,7 +37,7 @@
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*Solo en el pasillo. Los pasos de Seoyeon se alejan. La llave de la azotea que creías cerrada permanece en tu palma.*"
+        "text": "*Me quedo solo en el pasillo. Los pasos de Seoyeon se alejan y, en la planta de arriba, se oye cómo cierran con llave la puerta de la azotea.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -50,7 +50,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
-        "text": "Estuvo bien. ...Nos vemos en la próxima historia."
+        "text": "No llegues tarde con la persona que has elegido."
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*Bajo el 'fue divertido' del marcapáginas, la tinta violeta clara se ha corrido un poco.*"
+        "text": "*En el marcapáginas solo hay una línea: «Fue divertido». Al final hay un punto.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain viene corriendo desde el gimnasio.*"
+        "text": "*Dain se acerca desde el gimnasio. Da pasos más cortos de lo habitual.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -79,7 +79,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "Pero bueno, tú elegiste. ¡La próxima vez dame una oportunidad a mí!"
+        "text": "Como es lo que tú has elegido, no voy a decir nada."
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -87,15 +87,15 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "...Hazlo bien. Esta vez."
+        "text": "Pero si vuelves a actuar con ambigüedad, me enfadaré de verdad. ...Hazlo bien."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*El signo de exclamación está vivo. Dain lanza la pelota de voleibol alto y la atrapa nuevamente.*"
+        "text": "*Empuja el balón dentro del armario y se ajusta la correa de la rodillera.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Su espalda se hace más pequeña al alejarse. — Pero su paso es rápido. Como cuando nos conocimos.*"
+        "text": "*Dain se vuelve y entra despacio en el gimnasio.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*La puerta de la escuela. Tres figuras a lo lejos. Seoyeon camina con Haeun, Dain lanza un balón mientras corre, Yuna lee despacio. Ninguna mira hacia aquí.*"
+        "text": "*Ante la puerta de la escuela distingo a las tres a lo lejos. Seoyeon camina con Haeun; Dain avanza despacio con un balón bajo el brazo; Yuna camina leyendo. Ninguna mira hacia aquí.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -120,15 +120,11 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*El último paso se divide en dos. Con alguien a quien ya le prometí, terminé sin poder pasar por la puerta de la escuela.*"
+        "text": "*El camino hacia la cita con mis amigos se separa del que lleva a seguir ayudando a recoger el evento.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*¿A dónde voy? Hoy — lo decido yo.*",
-        "choices": [
-            "Ir con la persona a la que le prometí algo",
-            "Ir hacia quien no se me va de la cabeza"
-        ]
+        "text": "*Dejo la recogida del evento en manos de los demás estudiantes y me dirijo al parque donde hemos quedado.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -191,7 +187,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "Dain",
-        "text": "*Venía corriendo y frena en seco.*"
+        "text": "*Apresura el paso y se detiene ante {name}.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
@@ -315,11 +311,11 @@
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
-        "text": "...Ya lo sabía."
+        "text": "...Aun así, quería oírtelo decir en persona."
     },
     "after5_confess_react_yuna_d": {
-        "name": "{name}",
-        "text": "*Me pasa una nota. Papel doblado. Al abrirlo, una sola línea.*"
+        "name": "Yuna",
+        "text": "*Me entrega una nota doblada. Al abrirla, solo hay una línea.*"
     },
     "after5_confess_react_yuna_e": {
         "name": "{name}",
@@ -327,7 +323,7 @@
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*Una sola línea donde la tinta se ha corrido. Una marca de uña permanece en el pliegue.*"
+        "text": "*Una de las letras está marcada por la presión. El papel conserva las huellas de haber sido doblado y desdoblado varias veces.*"
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",

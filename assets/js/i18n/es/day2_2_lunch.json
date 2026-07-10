@@ -123,23 +123,23 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*Mira hacia donde se fue Dain.* ...Vaya energía. *Cierra la tapa de la lonchera y baja la voz.* Yo aquí suelo venir sola."
+        "text": "*Cuando Dain se inclina hacia la lonchera, Seoyeon la acerca un poco hacia sí.* Parece que ya hay confianza entre Dain y tú."
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "Nos conocemos de vista, nada más."
+        "text": "Estamos en la misma clase. Ustedes dos también se conocen ya."
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "¿Qué pasa, te molesta?"
+        "text": "Eso lo decido yo."
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*Si Dain hubiera estado allí, se habría reído a carcajadas. El silencio queda tendido entre la puerta de la azotea, la lonchera y los palillos de {name}.*"
+        "text": "*Dain alarga la mano hacia la lonchera, pero se detiene al cruzar la mirada con Seoyeon. Por un instante, el silencio se instala entre los tres.*"
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Mira la comisura de la boca de {name}, fingiendo indiferencia.*"
+        "text": "*Mira la comisura de los labios de {name}.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -372,7 +372,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Su tono es el mismo de ayer. Solo su mirada sigue cayendo por debajo de sus rodillas.*"
+        "text": "*Su tono sigue siendo tan ligero como ayer, pero no aparta la mirada del codo raspado.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Enfermera",
@@ -380,19 +380,19 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Su tono sigue siendo el mismo. Solo su mirada sigue cayendo por debajo de sus rodillas.*"
+        "text": "*Habla con ligereza, pero no aparta la mirada del codo raspado.*"
     },
     "lunch2_dain_end_i": {
         "name": "Enfermera",
-        "text": "*La enfermera se acerca y me sujeta el codo. Tiene las manos frías.*"
+        "text": "*Saca desinfectante y gasas y coloca una debajo del codo.*"
     },
     "lunch2_dain_end_j": {
         "name": "Enfermera",
-        "text": "No te muevas..."
+        "text": "Te va a escocer un poco. Relaja el brazo."
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*El algodón empapado en desinfectante permanece alrededor de la herida durante mucho tiempo. El borde de la banda presiona firmemente contra el dorso de la mano.*"
+        "text": "*El algodón con desinfectante pasa sobre la herida. La parte interna del codo empieza a escocer.*"
     },
     "lunch2_dain_end_l": {
         "name": "Enfermera",
@@ -400,39 +400,39 @@
     },
     "lunch2_dain_end_m": {
         "name": "Enfermera",
-        "text": "*A la enfermera se le queda la mano quieta. Y entonces — como si nada — vuelve a moverse.*"
+        "text": "*Le hace una seña para que doble el codo una vez.*"
     },
     "lunch2_dain_end_n": {
         "name": "Enfermera",
-        "text": "...Yo soy de manos frías, pero hoy parece que las tengo calientes."
+        "text": "Dóblalo una vez. ¿Tira o escuece?"
     },
     "lunch2_dain_end_o": {
         "name": "{name}",
-        "text": "*Mentira. Cuando me tomó el codo, al principio estaban frías. — Se le calentaron ahora.*"
+        "text": "*Aunque dobla y estira el brazo, los bordes de la venda no se levantan.*"
     },
     "lunch2_dain_end_p": {
         "name": "Enfermera",
-        "text": "*Sonríe.* Esmero, puro esmero. Es la experiencia de los años."
+        "text": "Es un truco que aprendí en el hospital. En las articulaciones hay que ponerla así para que dure."
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Cuidado. ¿Esa palabra abarca todo?*"
+        "text": "*La venda no se arruga ni siquiera al doblar el codo.*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Mientras reviso la venda, noto un cuaderno verde claro sobresaliendo del cajón del escritorio. La primera línea de la página abierta dice: 'Yujin, hoy—' La enfermera cierra el cajón.*"
+        "text": "*Mientras reviso la venda, un cuaderno verde claro sobresale del cajón del escritorio. En la primera línea de la página abierta se lee: 'Para ti, aquel día—'. La enfermera cierra el cajón.*"
     },
     "lunch2_dain_end_s": {
         "name": "Enfermera",
-        "text": "*Entorna los ojos.* ¿Solo uno? ...Bueno, te lo cuento. Me gusta más el cacao que el café. Ese es el secreto."
+        "text": "*Mira un instante hacia el cajón.* Olvida lo que acabas de ver. A cambio te diré una cosa: me gusta más el cacao que el café."
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*No es gran secreto, pero después de decirlo, la enfermera golpea el borde del escritorio con la uña.*"
+        "text": "*Es una respuesta sin mayor importancia, pero la mano que presiona el tirador del cajón no se aparta.*"
     },
     "lunch2_dain_end_u": {
         "name": "Enfermera",
-        "text": "*Se ríe por lo bajo.* Secreto. Las profes también tenemos lo nuestro."
+        "text": "*Sonríe con ligereza.* Con eso ya vale por un secreto, ¿no?"
     },
     "lunch2_dain_end_v": {
         "name": "Enfermera",
@@ -440,11 +440,11 @@
     },
     "lunch2_dain_end_w": {
         "name": "Enfermera",
-        "text": "Listo, ya a clase. — La próxima vez que te pases, te agrego más pruebas al chequeo."
+        "text": "Listo. Vuelve a clase. Procura no mojarla hoy."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",
-        "text": "Si no me lastimo, no tengo motivo para venir."
+        "text": "¿También hay que cambiarla mañana?"
     },
     "lunch2_dain_end_y": {
         "name": "Enfermera",
@@ -452,23 +452,23 @@
     },
     "lunch2_dain_end_z": {
         "name": "Enfermera",
-        "text": "Puedes pasarte aunque no haya motivo."
+        "text": "Ven si se levanta o se moja. Si sigue bien, déjala como está."
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*No hubo risas por un momento. Pronto nos reunimos, pero ya era demasiado tarde.*"
+        "text": "*La enfermera anota en el registro médico la hora en que colocó la venda.*"
     },
     "lunch2_dain_end_c2": {
         "name": "Enfermera",
-        "text": "*Recupera el tono alegre.* Eso sí, en hora de clase no. Después."
+        "text": "Si te molesta durante la clase, díselo al profesor de Educación Física. Si no, ven en el recreo."
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*El papel de regalo recién doblado se coloca torcido en el borde del escritorio.*"
+        "text": "*Al final del registro médico queda anotado: 'flexión del codo comprobada'.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Enfermera",
-        "text": "Ya está. A ver si la próxima vez no te lastimas."
+        "text": "Listo. La próxima vez, mira por dónde vas antes de echar a correr."
     },
     "lunch2_dain_end_nurse_short2": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
-        "text": "*Queda un espacio en blanco en el horario junto al mostrador de préstamos. Yuna pasa la página sin siquiera mirarlo.*"
+        "text": "*Al salir al pasillo suena el timbre de fin de clase. La venda nueva roza un poco el borde de la manga.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",

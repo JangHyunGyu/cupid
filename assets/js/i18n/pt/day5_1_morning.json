@@ -119,26 +119,26 @@
     },
     "hidden_homeroom_d5_2": {
         "name": "Professora",
-        "text": "O manuscrito. Ainda tá inacabado... mas queria que você visse primeiro."
+        "text": "A cópia para a sessão de leitura e crítica do clube. Ainda está inacabada, mas também corrigi a parte que você apontou ontem."
     },
     "hidden_homeroom_d5_3": {
         "name": "Professora",
-        "text": "Não mostrei pra ninguém em sete anos. — Tecnicamente, isso foge das minhas funções."
+        "text": "Deixei guardado por sete anos, mas desta vez vou distribuir também para o clube de literatura e para os professores de Língua e Literatura."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
-        "text": "...Pego o manuscrito. Mais pesado do que eu imaginava."
+        "text": "*Recebo uma cópia numerada. Atrás da última página há um espaço para comentários anônimos.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Professora",
-        "text": "...Mostrar isso antes de qualquer um dá mais frio na barriga do que eu imaginava."
+        "text": "Mesmo imprimindo várias cópias, o nervosismo é o mesmo."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
         "text": "*Seguro o manuscrito. A ponta do envelope pressiona a parte de dentro do meu braço.*",
         "choices": [
-            "Você segurou isso por tanto tempo. Isso deve valer alguma coisa.",
-            "Posso ler um minuto? Depois eu falo."
+            "A senhora trabalhou nisso por sete anos. Com certeza é um bom texto.",
+            "Vou ler primeiro. Posso fazer anotações?"
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
@@ -147,11 +147,11 @@
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professora",
-        "text": "...Sem nem ler?"
+        "text": "...Ainda não terminei."
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Ah, é que... você segurou isso por tanto tempo. Isso deve valer alguma coisa."
+        "text": "Mas a senhora escreveu até aqui."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Professora",
@@ -163,7 +163,7 @@
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Professora",
-        "text": "Esquece. Desculpa tomar seu tempo."
+        "text": "Tudo bem. Mas, na sessão, fale apenas sobre o que você leu."
     },
     "hidden_homeroom_d5_praise_trap_7": {
         "name": "{name}",
@@ -171,7 +171,7 @@
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Professora",
-        "text": "Em sete anos mandei para editoras três vezes. Fui rejeitada em todas. Dois desses e-mails começavam com: 'Como você segurou isso por tanto tempo, deve ter algum significado.'"
+        "text": "Mandei para editoras três vezes, e fui rejeitada nas três. Mais do que incentivo vago, eu precisava saber em que ponto pararam de ler."
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
@@ -179,7 +179,7 @@
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Professora",
-        "text": "...Achei que você ia ler e me dar uma opinião. — Mostrei justamente pra você porque pensei que um aluno sentiria menos pressão."
+        "text": "Mais do que elogios, eu precisava ver as marcas de uma leitura. E, se coloquei pressão em você, a culpa é minha como professora."
     },
     "hidden_homeroom_d5_praise_trap_11": {
         "name": "Professora",
@@ -223,15 +223,15 @@
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "Vamos olhar essa linha juntos."
+        "text": "Posso marcar na última página por que parei?"
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Professora",
-        "text": "...Um aluno?"
+        "text": "Vai fazer uma crítica de verdade?"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "Sim. Eu estou lendo agora."
+        "text": "Sim. Porque estou lendo como leitor."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professora",
@@ -239,7 +239,7 @@
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professora",
-        "text": "...Aceito. A proposta."
+        "text": "Ótimo. Escreva no espaço de comentários anônimos."
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
@@ -247,11 +247,11 @@
     },
     "hidden_homeroom_d5_6": {
         "name": "Professora",
-        "text": "...Então vou deixar com você. Primeiro."
+        "text": "Este é o seu número. Vou recolher na segunda-feira junto com as outras cópias."
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Lembro do que ela disse ontem no café. O envelope do manuscrito pesa contra a parte de dentro do meu braço.*"
+        "text": "*Lembro das cópias empilhadas ontem na mesa do fundo do café. No envelope está escrito 'Nº 04'.*"
     },
     "hidden_homeroom_d5_6_c": {
         "name": "{name}",
@@ -259,7 +259,7 @@
     },
     "hidden_homeroom_d5_6_d": {
         "name": "Professora",
-        "text": "...Depois de ler, fala o que achou de verdade. — Não precisa ser educado comigo."
+        "text": "Escreva com sinceridade só até onde tiver lido. Não precisa colocar seu nome."
     },
     "hidden_homeroom_d5_6_e": {
         "name": "{name}",
@@ -267,15 +267,15 @@
     },
     "hidden_homeroom_d5_6_f": {
         "name": "{name}",
-        "text": "A senhora não precisa mais dizer isso."
+        "text": "E a senhora também não tente descobrir quem escreveu cada comentário."
     },
     "hidden_homeroom_d5_6_g": {
         "name": "Professora",
-        "text": "*O professor da sala de aula faz uma pausa por um momento. Desta vez, a folha de presença não cobre o rosto.*"
+        "text": "*Confere o número da cópia e concorda com a cabeça.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Professora",
-        "text": "...Nunca pensei que ouviria isso de um aluno."
+        "text": "Nunca pensei que chegaria o dia em que eu estaria pronta para receber opiniões."
     },
     "hidden_homeroom_d5_6_i": {
         "name": "Professora",
@@ -283,7 +283,7 @@
     },
     "hidden_homeroom_d5_6_j": {
         "name": "Professora",
-        "text": "...Lê direito."
+        "text": "Leia antes do clube de literatura de segunda-feira."
     },
     "hidden_homeroom_d5_6_k": {
         "name": "{name}",
@@ -307,7 +307,7 @@
     },
     "hidden_homeroom_d5_6_p": {
         "name": "Professora",
-        "text": "*A professora para uma vez diante da porta. Pressiona duas vezes a borda da prancheta com o dedo e solta.*"
+        "text": "*Para diante da porta e confere uma vez o cronograma do clube de literatura.*"
     },
     "hidden_homeroom_d5_6_q": {
         "name": "Professora",
@@ -315,35 +315,35 @@
     },
     "hidden_homeroom_d5_6_r": {
         "name": "Professora",
-        "text": "*Ela trava. Aperta a prancheta. — E devagar vira o rosto.*"
+        "text": "Vou receber sua resposta durante o clube na segunda-feira. Até lá, eu também vou tentar avançar no final."
     },
     "hidden_homeroom_d5_6_s": {
         "name": "Professora",
-        "text": "...Depois da formatura. *A voz falha.* É. Depois da formatura."
+        "text": "Assim nenhum dos dois vai poder dar desculpas."
     },
     "hidden_homeroom_d5_6_t": {
         "name": "Professora",
-        "text": "*A professora engole as mesmas palavras de novo. A borda da prancheta toca de leve no batente da porta.*"
+        "text": "*Anota o prazo para entregar as críticas abaixo do cronograma do clube.*"
     },
     "hidden_homeroom_d5_7": {
         "name": "Professora",
-        "text": "Depois da formatura — a gente se vê. Pelo nome, não pelo cargo."
+        "text": "E chega de agradecimentos. Agora vá ajudar a preparar o evento."
     },
     "hidden_homeroom_d5_7_b": {
         "name": "{name}",
-        "text": "*A ponta da prancheta que tocava o batente da porta desce devagar.*"
+        "text": "*Guardo a cópia número 04 na mochila e me viro para a porta.*"
     },
     "hidden_homeroom_d5_7_c": {
         "name": "Professora",
-        "text": "...Eu sei. Não é algo que eu deva dizer agora. Mas hoje eu vou dizer só isso."
+        "text": "Primeiro termine bem o evento. Nos vemos na segunda-feira, no clube, para a sessão de crítica."
     },
     "hidden_homeroom_d5_8": {
         "name": "Professora",
-        "text": "*A professora se vira. O cabelo longo balança, e a ponta da prancheta pressiona o cotovelo dela.*"
+        "text": "*Sai para o corredor e confere os nomes dos alunos que estão preparando o evento.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professora",
-        "text": "*Ela pressiona o envelope do manuscrito com as duas mãos e sorri.* Como é a última vez, vou ser um pouco mais honesta."
+        "text": "*Aponta para a cópia número 04.* É a última revisão. Mesmo que veja lacunas, não pegue leve."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -351,59 +351,59 @@
     },
     "hidden_nurse_d5_1": {
         "name": "Enfermeira",
-        "text": "uh? {name}. Já é o último dia. Quando o evento terminar, realmente terminará."
+        "text": "Ah, {name}. É o último dia do evento. Vamos encerrar hoje também o registro das consultas."
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
-        "text": "*Depois de dizer que é o último dia do evento, a enfermeira toca o estetoscópio uma vez.*"
+        "text": "*A enfermeira abre o último campo de verificação da ficha de acompanhamento.*"
     },
     "hidden_nurse_d5_1_c": {
         "name": "Enfermeira",
-        "text": "*Sorrindo de leve.* Depois da formatura, aparece pra me visitar."
+        "text": "Depois de conferir como você está hoje, vamos encerrar estas consultas."
     },
     "hidden_nurse_d5_1_d": {
         "name": "{name}",
-        "text": "Formatura ainda tá longe."
+        "text": "Isso quer dizer que eu não preciso mais vir?"
     },
     "hidden_nurse_d5_1_e": {
         "name": "Enfermeira",
-        "text": "...Antes disso, vem aqui se tiver machucado."
+        "text": "Se estiver machucado ou sobrecarregado, venha pelo procedimento normal. Não precisa inventar um motivo."
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",
-        "text": "*'Aparece se não estiver se sentindo bem.' Depois de dizer isso, a enfermeira troca levemente a mão que segura dois copos de papel.*"
+        "text": "*Abaixo da ficha de acompanhamento aparecem, lado a lado, as formas de agendar na enfermaria e no Wee Class.*"
     },
     "hidden_nurse_d5_2_b": {
         "name": "Enfermeira",
-        "text": "*A enfermeira sai. Bem na minha cara. — A gente se esbarra. De pertinho.*"
+        "text": "*Abro a porta da enfermaria e confiro a lista de agendamentos.*"
     },
     "hidden_nurse_d5_2_c": {
         "name": "Enfermeira",
-        "text": "*Dando um passo pra trás.* ...Você de novo."
+        "text": "Chegou no horário marcado. Muito bem."
     },
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "Posso vir mesmo sem estar machucado?"
+        "text": "Vim buscar o comprovante da consulta."
     },
     "hidden_nurse_d5_3_b": {
         "name": "Enfermeira",
-        "text": "*O sorriso da enfermeira some primeiro.*"
+        "text": "*Anota a data e o horário no comprovante.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Enfermeira",
-        "text": "...Isso."
+        "text": "Você sempre pode vir buscar ajuda no horário combinado."
     },
     "hidden_nurse_d5_3_d": {
         "name": "{name}",
-        "text": "Professora?"
+        "text": "Sem precisar inventar uma desculpa?"
     },
     "hidden_nurse_d5_3_e": {
         "name": "Enfermeira",
-        "text": "*Voltando a sorrir.* Me pergunta isso depois da formatura. — Aí eu respondo."
+        "text": "Claro. A enfermaria não é um lugar para inventar desculpas, mas para receber a ajuda de que você precisa."
     },
     "hidden_nurse_d5_3_f": {
         "name": "Enfermeira",
-        "text": "*A enfermeira fecha a caixa de curativos e abre de novo.*"
+        "text": "*Abre a caixa de cartões com instruções de primeiros socorros.*"
     },
     "hidden_nurse_d5_3_g": {
         "name": "Enfermeira",
@@ -419,7 +419,7 @@
     },
     "hidden_nurse_d5_4": {
         "name": "Enfermeira",
-        "text": "...Aperta bem o band-aid pra não soltar. — Hoje não vou colocar eu mesma."
+        "text": "Os kits do evento ficam na entrada do ginásio. Se você se machucar, chame imediatamente a professora responsável."
     },
     "hidden_nurse_d5_4_b": {
         "name": "{name}",
@@ -427,78 +427,78 @@
     },
     "hidden_nurse_d5_4_c": {
         "name": "{name}",
-        "text": "*O silêncio que parecia natural até ontem agora está pendurado entre copos de papel.*"
+        "text": "*No comprovante, há um carimbo: 'Consulta encerrada; novo agendamento se necessário'.*"
     },
     "hidden_nurse_d5_4_d": {
         "name": "Enfermeira",
-        "text": "Último dia, né."
+        "text": "Última verificação concluída."
     },
     "hidden_nurse_d5_5": {
         "name": "Enfermeira",
-        "text": "...{name}. Quer que eu coloque um band-aid?"
+        "text": "{name}. Quer levar um cartão de primeiros socorros?"
     },
     "hidden_nurse_d5_choice": {
         "name": "{name}",
-        "text": "*Não há ferida nenhuma no dorso da minha mão. Só a caixa de curativos está aberta.*",
+        "text": "*Na frente do cartão estão os passos básicos de primeiros socorros; no verso, os canais de orientação da escola.*",
         "choices": [
-            "Tá, já que é a última vez. Só dessa vez.",
-            "Band-aid não — seu telefone"
+            "Sim. Vou guardar na mochila.",
+            "Explique como agendar uma consulta."
         ]
     },
     "hidden_nurse_d5_choice_a": {
         "name": "Enfermeira",
-        "text": "*Cola o band-aid devagar. Tem algo escrito bem miúdo nele.*"
+        "text": "*Coloca o cartão informativo em uma capa transparente e o entrega.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "Enfermeira",
-        "text": "...Você falou 'só uma vez'. Então por que diz desse jeito."
+        "text": "O melhor é não precisar usar, mas, se precisar, tire na hora."
     },
     "hidden_nurse_d5_choice_b": {
         "name": "Enfermeira",
-        "text": "*O sorriso apaga.* ...Essa."
+        "text": "Ótimo. Se você agendar pelo aplicativo da escola, um orientador poderá atender mesmo que eu não possa na hora."
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Enfermeira",
-        "text": "*A professora de saúde para de rir. O olhar por trás dos óculos oscila por um momento.*"
+        "text": "*Aponta para o código QR no verso do cartão.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Enfermeira",
-        "text": "...Telefone. Pra consulta médica?"
+        "text": "Toque em 'Agendar consulta' no aplicativo da escola. Você pode escolher entre a enfermaria e o Wee Class."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Enfermeira",
-        "text": "*Ajeitando os óculos.* ...Tá. Mas usa só depois da formatura."
+        "text": "Se eu não puder responder na hora, um orientador assume. Os registros também ficam apenas dentro da escola."
     },
     "hidden_nurse_d5_choice_b_e": {
         "name": "{name}",
-        "text": "*'Depois de se formar'. O número de telefone está na metade da embalagem da banda.*"
+        "text": "*Em vez de um número pessoal, estão impressos os horários de atendimento e o setor responsável.*"
     },
     "hidden_nurse_d5_choice_b_f": {
         "name": "Enfermeira",
-        "text": "Quer que eu coloque um band-aid?"
+        "text": "Se fosse urgente, para quem você contaria primeiro?"
     },
     "hidden_nurse_d5_choice_b_g": {
         "name": "{name}",
-        "text": "...Não tô machucado."
+        "text": "Para o meu responsável ou para uma professora próxima. Não vou tentar aguentar sozinho."
     },
     "hidden_nurse_d5_6": {
         "name": "Enfermeira",
-        "text": "Eu sei. Só precisava de uma desculpa pra chamar."
+        "text": "Então está certo. Este é o cartão de primeiros socorros."
     },
     "hidden_nurse_d5_6_b": {
         "name": "Enfermeira",
-        "text": "*A enfermeira pega um curativo e o coloca no dorso da mão de {name}. O movimento segue devagar; há pequenas letras na ponta do curativo.*"
+        "text": "*Guarda o cartão na capa e aponta para o bolso externo da mochila, onde será fácil encontrá-lo.*"
     },
     "hidden_nurse_d5_6_c": {
         "name": "{name}",
-        "text": "*Uma letra pequena na ponta do curativo: 'Depois da formatura, vamos nos encontrar num café, não na enfermaria — ♡'. A enfermeira só ajeita os óculos.*"
+        "text": "*Na parte inferior do cartão há uma frase curta: 'Pedir ajuda antes de se machucar'.*"
     },
     "hidden_nurse_d5_flag_check": {},
     "hidden_nurse_d5_7": {},
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "Enfermeira",
-        "text": "*Ela toca uma vez na placa da enfermaria com a ponta do dedo.* Quase não resta tempo pra inventar desculpas."
+        "text": "*Guarda a ficha de acompanhamento em uma pasta.* A consulta termina aqui. Da próxima vez, diga diretamente do que precisa."
     },
     "morning5_end_branch": {},
     "morning5_end": {
