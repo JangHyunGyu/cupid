@@ -12,9 +12,45 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.35';
+const CACHE_VERSION = 'cupid-v3.3.36';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
+
+const ERROR_LOG_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
+
+function reportServiceWorkerError(type, error) {
+    try {
+        const message = error?.message || String(error || 'Unknown service worker error');
+        return fetch(ERROR_LOG_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+            body: JSON.stringify({
+                appId: 'cupid-service-worker',
+                userId: '',
+                message: `[app:${type}] ${message}`.slice(0, 500),
+                stack: String(error?.stack || '').slice(0, 4000),
+                url: self.location.href.slice(0, 500),
+                source: 'service-worker.js',
+                errorType: type,
+                errorClass: error?.name || 'Error',
+                sessionId: '',
+                context: { cacheVersion: CACHE_VERSION, scope: self.registration?.scope || '' },
+                extra: { occurredAt: new Date().toISOString() }
+            }),
+            keepalive: true
+        }).catch(() => {});
+    } catch (_) {
+        return Promise.resolve();
+    }
+}
+
+self.addEventListener('error', event => {
+    reportServiceWorkerError(event.error?.name || 'ServiceWorkerError', event.error || event.message);
+});
+
+self.addEventListener('unhandledrejection', event => {
+    reportServiceWorkerError('UnhandledRejection', event.reason);
+});
 
 // 설치 시 핵심 에셋 프리캐시
 const PRECACHE_URLS = [];

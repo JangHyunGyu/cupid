@@ -53,7 +53,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-        const version = '2.9.70';
+        const version = '2.9.71';
     const LOAD_RETRIES = 3;
     const LOAD_TIMEOUT_MS = 15000;
 
@@ -375,6 +375,7 @@
 // ============================================================================
 
 (function() {
+    if (window.__cupidErrorReporterInstalled) return;
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var p = window.location.pathname;
     var lang = p.includes('-es') ? 'es' : p.includes('-ja') ? 'ja'
