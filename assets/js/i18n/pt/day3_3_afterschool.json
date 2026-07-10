@@ -431,7 +431,7 @@
         "text": "*Se senta no banco. A mão que esfrega o joelho fica no mesmo lugar por tempo demais.*",
         "choices": [
             "...Tá bem? Não força. Que tal descansar hoje?",
-            "Ei, mais um saque. Se eu não pegar, você ganha."
+            "Então eu fico aqui. Fala quando tiver vontade."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -496,31 +496,31 @@
     },
     "after3_dain_correct_6": {
         "name": "Dain",
-        "text": "...Sei lá. Mas pega essa bola primeiro. Cê não vai conseguir pegar de jeito nenhum."
+        "text": "...Não sei. Mas fica aqui um pouco. Agora eu não quero ficar sozinha."
     },
     "after3_dain_correct_7": {
         "name": "Dain",
-        "text": "*Se levanta. Gira o joelho de leve uma vez. Sem se dar conta. E então — Assume a postura de saque. Igual sempre.*"
+        "text": "*Abre espaço na parte de dentro do banco. Empurra a bola com a ponta do pé até deixá-la fora da quadra.*"
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "Lá vai, transferido!"
+        "text": "...Vamos só conversar."
     },
     "after3_dain_correct_9": {
         "name": "{name}",
-        "text": "*O saque voa. Eu não consigo entender. A bola atinge o pulso e salta para o teto. Dain bate palmas e ri. Os ombros que foram levantados descem como se você prendesse a respiração.*"
+        "text": "*Sento ao lado dela. A bola para sobre a linha da quadra. Dain passa um bom tempo amarrando de novo os cadarços.*"
     },
     "after3_dain_correct_10": {
         "name": "Dain",
-        "text": "Viu? Eu ganhei! ...Ai."
+        "text": "Eu não costumo falar dessas coisas. ...Por onde começo?"
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "*Quando aterrissa, o joelho direito cede um pouco. A mão fica sobre ele.*"
+        "text": "*Tenta esticar a perna direita, mas para e volta a dobrá-la. Mantém a mão sobre o joelho.*"
     },
     "after3_dain_correct_12": {
-        "name": "Dain",
-        "text": "...Olha só. Isso aqui. Já faz um tempo."
+        "name": "{name}",
+        "text": "Vamos falar primeiro do seu joelho."
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
@@ -654,7 +654,7 @@
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "*Olha diretamente para {name}. Não são os olhos da presidente do conselho estudantil, mas os de uma pessoa.*",
+        "text": "*Abaixa a prancheta. Sem desviar o olhar, espera uma resposta.*",
         "choices": [
             "Admitir com sinceridade",
             "Os horários eram diferentes, achei que ia dar",
@@ -671,7 +671,7 @@
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
-        "text": "Essa é a coisa mais cruel que cê podia dizer, {name}. Gentileza que não sabe dizer não — alimenta falsa esperança."
+        "text": "Na hora do almoço, você disse que sentia muito. Mas ainda não ouvi para quem estava pedindo desculpas nem pelo quê."
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
@@ -679,7 +679,7 @@
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Você me disse que estava tudo bem, mas não queria que ninguém gostasse menos de você. Isso é mais cruel."
+        "text": "Você deixou a decisão para nós porque não queria ouvir um não. Isso não é ser sincero."
     },
     "after3_confront_admit_4_b": {
         "name": "Seoyeon",
@@ -763,7 +763,7 @@
     },
     "minsu_d3_5b": {
         "name": "Minsu",
-        "text": "*Suspira. Não é deboche. É um suspiro de preocupação de verdade.*"
+        "text": "*Suspira e deixa sobre a mesa a embalagem do canudo que estava dobrando.*"
     },
     "minsu_d3_6": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Ela chorou. Depois que saiu da sala do grêmio. No banheiro. — Só eu vi. Em um ano inteiro, nunca vi a veterana chorar."
+        "text": "Eu a vi por um instante no banheiro atrás da sala do grêmio. Ela disse que estava bem, mas... não parecia."
     },
     "haeun_warn_4b": {
         "name": "{name}",
@@ -831,11 +831,11 @@
     },
     "haeun_warn_5": {
         "name": "{name}",
-        "text": "*O espelho do banheiro, delineador borrado, prancheta dobrada. As palavras de Haeun ligam os três em uma única linha.*"
+        "text": "*Haeun confere se o corredor está vazio e abaixa ainda mais a voz.*"
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae, ela também não fez nenhum som no banheiro. Só ficou olhando para o espelho. As mãos dela não paravam de tremer."
+        "text": "Ela pediu que eu não falasse com ela, mas demorou muito para sair da frente da pia."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Depois que o nome de {name} apareceu, mais três lenços foram para o lixo."
+        "text": "Se eu for atrás dela, vai dizer de novo que está bem. Talvez ela escute {name}."
     },
     "haeun_warn_6_b": {
         "name": "Haeun",
@@ -855,7 +855,7 @@
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Eu sei que é intromissão. Mesmo assim, estou preocupado. Sênior, a casa está um pouco complicada agora. Há coisas para fazer com seus pais... De qualquer forma, por favor, seja gentil com seu idoso. Por favor."
+        "text": "Eu sei que estou me intrometendo. Mesmo assim, só hoje não finja que não percebeu."
     },
     "haeun_warn_7_b": {
         "name": "Haeun",
@@ -863,7 +863,7 @@
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
-        "text": "...Enfim. Cuida dela, por favor."
+        "text": "Não estou pedindo que a convença. Só não a deixe sozinha."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",
@@ -871,7 +871,7 @@
     },
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*O espelho do banheiro, costas retas, punhos cerrados e brancos, pia vazia. As cenas fragmentadas me seguem sob as luzes do corredor.*"
+        "text": "*Depois que Haeun vai embora, bato na porta da sala do grêmio. Ninguém responde, mas ouço uma cadeira se mover lá dentro.*"
     },
     "haeun_warn_8b": {
         "name": "{name}",

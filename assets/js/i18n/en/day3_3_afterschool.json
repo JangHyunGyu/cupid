@@ -431,7 +431,7 @@
         "text": "*She sits on the bench. The hand rubbing her knee keeps circling the same spot.*",
         "choices": [
             "...Are you okay? Don't push yourself. Maybe rest for today.",
-            "Hey, one more serve. If I can't return it, you win."
+            "Then I'll stay here. Talk when you're ready."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -496,31 +496,31 @@
     },
     "after3_dain_correct_6": {
         "name": "Dain",
-        "text": "...I don't know. But pick up the ball first. You're not gonna return this one."
+        "text": "...I don't know. But stay here for a minute. I don't really want to be alone right now."
     },
     "after3_dain_correct_7": {
         "name": "Dain",
-        "text": "*She stands up. Rolls her knee once, lightly. Unconsciously. And then — sets up her toss. Same as always.*"
+        "text": "*She makes room on the inside of the bench. With her toe, she rolls the volleyball out of the court.*"
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "Here it comes, transfer student!"
+        "text": "...Let's just talk."
     },
     "after3_dain_correct_9": {
         "name": "{name}",
-        "text": "*The serve flies. I can't get it. The ball hits the wrist and bounces to the ceiling. Dain claps and laughs. The shoulders that were raised go down as if holding your breath.*"
+        "text": "*I sit beside her. The ball stops at the boundary line. For a while, Dain only reties her shoelaces.*"
     },
     "after3_dain_correct_10": {
         "name": "Dain",
-        "text": "See? I won! ...Ah."
+        "text": "I don't usually talk about things like this. ...Where do I even start?"
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "*When she lands, her right knee gives slightly. Her hand stays on it.*"
+        "text": "*She starts to straighten her right leg, stops, then bends it again. Her hand remains on her knee.*"
     },
     "after3_dain_correct_12": {
-        "name": "Dain",
-        "text": "...You know what. This thing. It's been going on a while."
+        "name": "{name}",
+        "text": "Start with your knee."
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
@@ -654,7 +654,7 @@
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "*She looks straight at {name}. They are not the eyes of the student council president, but of one person.*",
+        "text": "*She lowers the clipboard and waits for an answer without looking away.*",
         "choices": [
             "Admit it honestly",
             "The time slots are different, so I thought it would be fine",
@@ -671,7 +671,7 @@
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
-        "text": "That’s the cruelest thing you can say, {name}. Kindness that can’t say no — just leads people on."
+        "text": "You apologized at lunch. But you still haven't said who you're sorry to, or what you're sorry for."
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
@@ -679,7 +679,7 @@
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "You told me it was okay, but you did not want anyone to dislike you. That is crueler."
+        "text": "You didn't want to hear us say no, so you left the decision to us. That isn't honesty."
     },
     "after3_confront_admit_4_b": {
         "name": "Seoyeon",
@@ -763,7 +763,7 @@
     },
     "minsu_d3_5b": {
         "name": "Minsu",
-        "text": "*He sighs. Not mocking me. A genuinely worried sigh.*"
+        "text": "*He sighs and sets the straw wrapper he was folding on the table.*"
     },
     "minsu_d3_6": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...She cried. After she left the student council room. In the bathroom. — I was the only one who saw. In a whole year, I've never seen her cry."
+        "text": "I saw her for a moment in the bathroom behind the student council room. She told me she was fine, but... she didn't look fine."
     },
     "haeun_warn_4b": {
         "name": "{name}",
@@ -831,11 +831,11 @@
     },
     "haeun_warn_5": {
         "name": "{name}",
-        "text": "*The bathroom mirror, smudged eyeliner, folded clipboard. Haeun's words tie the three into a single line.*"
+        "text": "*Haeun checks the empty hall, then lowers her voice further.*"
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae, she didn't make a sound in the bathroom either. She just stared at the mirror. Her hands kept shaking."
+        "text": "She told me not to talk to her, but she stayed at the sink for a long time."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "After {name}'s name came up, three more tissues went into the trash."
+        "text": "If I follow her, she'll just tell me she's fine again. She might listen to you, {name}."
     },
     "haeun_warn_6_b": {
         "name": "Haeun",
@@ -855,7 +855,7 @@
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "I know it's meddling. Still, I’m worried. Senior, the house is a bit complicated right now. There are things to do with your parents... Anyway, please be nice to your senior. Please."
+        "text": "I know I'm meddling. But just for today, please don't pretend you didn't notice."
     },
     "haeun_warn_7_b": {
         "name": "Haeun",
@@ -863,7 +863,7 @@
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
-        "text": "...Anyway. Please be good to her. I'm asking you."
+        "text": "I'm not asking you to persuade her. Just don't leave her alone."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",
@@ -871,7 +871,7 @@
     },
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*The bathroom mirror, straight back, clenched white fists, empty sink. The fragmented scenes follow me under the hallway lights.*"
+        "text": "*After Haeun leaves, I knock on the student council room door. No one answers, but a chair scrapes inside.*"
     },
     "haeun_warn_8b": {
         "name": "{name}",

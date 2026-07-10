@@ -29,7 +29,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
-        "text": "Next time, I'll be the one who takes you."
+        "text": "If that's the choice you made, fine. Just don't be vague anymore."
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
@@ -37,7 +37,7 @@
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*Alone in the hallway. Seoyeon's footsteps fade. The rooftop key you thought was locked away remains in your palm.*"
+        "text": "*I'm left alone in the hall. Seoyeon's footsteps fade, and somewhere upstairs, the rooftop door locks.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
@@ -50,7 +50,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
-        "text": "It was fun. ...See you in the next story."
+        "text": "Don't be late for the person you chose."
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
@@ -58,7 +58,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "{name}",
-        "text": "*Under the 'It was fun' on the bookmark, a little pale violet ink has blurred.*"
+        "text": "*Only one line is written on the bookmark: 'It was fun.' It ends with a period.*"
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -67,7 +67,7 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain comes running over from the gym.*"
+        "text": "*Dain walks over from the gym. Her steps are shorter than usual.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -79,7 +79,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "But hey, your call. Next time give me a real shot too!"
+        "text": "You made your choice, so I won't argue with it."
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -87,15 +87,15 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "...Do it right. This time."
+        "text": "But if you handle it badly, I'll really be mad. ...Do it right."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "*She tosses the volleyball high once more and catches it. Her fingertips are a little late.*"
+        "text": "*She pushes the volleyball into the rack and readjusts the strap of her knee brace.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Her retreating figure grows smaller. — But her pace is quick. Just like when we first met.*"
+        "text": "*Dain turns and walks slowly back into the gym.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -103,7 +103,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*The school gate. Three figures in the distance. Seoyeon walks with Haeun, Dain tosses a volleyball as she runs, Yuna reads slowly. None of them look this way.*"
+        "text": "*At the school gate, I see three figures in the distance. Seoyeon walks with Haeun, Dain carries a volleyball under one arm and moves slowly, and Yuna reads as she walks. None of them look this way.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -120,15 +120,11 @@
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*The last step splits into two. With someone I already promised, I ended up not being able to pass by the school gate.*"
+        "text": "*The path to meet my friends and the path back to help finish the event split here.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*Where should I go? Today — I have to decide.*",
-        "choices": [
-            "Go to the person I made a promise to",
-            "Go to the one still left in my heart"
-        ]
+        "text": "*I leave the remaining event cleanup to the other students and head for the park where my friends are waiting.*"
     },
     "after5_last_chance_1": {
         "name": "{name}",
@@ -191,7 +187,7 @@
     },
     "after5_last_chance_2_l": {
         "name": "Dain",
-        "text": "*She was running over and stops.*"
+        "text": "*She hurries over, then stops in front of {name}.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
@@ -315,11 +311,11 @@
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
-        "text": "...I already knew."
+        "text": "...I still wanted to hear you say it."
     },
     "after5_confess_react_yuna_d": {
-        "name": "{name}",
-        "text": "*She hands me a note. Folded paper. One line when unfolded.*"
+        "name": "Yuna",
+        "text": "*She hands me a folded note. When I unfold it, there is a single line.*"
     },
     "after5_confess_react_yuna_e": {
         "name": "{name}",
@@ -327,7 +323,7 @@
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*A single line where the ink has bled. A fingernail mark remains on the fold.*"
+        "text": "*One letter is pressed hard into the page. The paper bears the creases of being folded and unfolded over and over.*"
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",

@@ -190,8 +190,8 @@
         "text": "J'ai vu ton ancien bulletin. T'avais de bonnes notes en lettres. T'aimes lire ?"
     },
     "hidden_homeroom_d2_3_b": {
-        "name": "Professeure principale",
-        "text": "*Une brève hésitation* ...Diverses choses. Surtout — des romans."
+        "name": "{name}",
+        "text": "Je lis parfois des romans."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "Professeure principale",
@@ -199,7 +199,7 @@
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Professeure principale",
-        "text": "Lire ? — Et écrire ?"
+        "text": "Tu aimes lire. Et écrire ?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",

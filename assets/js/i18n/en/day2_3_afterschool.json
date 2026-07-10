@@ -17,47 +17,47 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*My elbow stings. I should stop by the nurse's office.*"
+        "text": "*After fifth-period PE, the edge of the bandage catches on my sleeve. I press it down once, but it lifts again.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*When I roll up my sleeve, there's a small scrape on my elbow. It's nothing serious, but it's bleeding a little.*"
+        "text": "*When I roll up my sleeve, one side of the bandage is peeling up. The wound isn't bleeding anymore.*"
     },
     "hidden_nurse_d2_2": {
         "name": "School Nurse",
-        "text": "Two days in a row — should I just print you a punch card?"
+        "text": "That bandage came back before the day was even over. Have a seat."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "I scraped my elbow."
+        "text": "The edge keeps catching on my sleeve."
     },
     "hidden_nurse_d2_4": {
         "name": "School Nurse",
-        "text": "Hold still..."
+        "text": "Let's take a look."
     },
     "hidden_nurse_d2_5": {
         "name": "School Nurse",
-        "text": "Here... like this. There, done. This angle holds the longest."
+        "text": "*She removes the loose bandage, cleans around the wound, and takes out a fresh one.* This might sting a little."
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-        "text": "*Her hands are close, applying the bandage.*",
+        "text": "*The nurse bends and straightens my elbow, measuring how long the bandage should be.*",
         "choices": [
-            "Your hands are warm",
-            "All that care for one little bandage"
+            "Do they teach you things like this at the hospital?",
+            "You even think about the angle."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "School Nurse",
-        "text": "...My hands are usually cold. I guess they're warm today."
+        "text": "Yeah. Over a joint, you have to apply it so movement won't peel it off."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "School Nurse",
-        "text": "*smiles* It's called being thorough. If you put it on carelessly, it falls off."
+        "text": "It's my job. If I slap it on carelessly and it falls off in class, that's a problem."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*While checking the bandage, I notice a light green notebook sticking out from the desk drawer. The first line of the open page reads: 'Yujin, today—' The nurse closes the drawer.*"
+        "text": "*As I check the bandage, I notice a pale green notebook jutting out of the desk drawer. The first line on the open page reads, 'To you, that day—' The nurse closes the drawer.*"
     },
     "hidden_nurse_d2_7": {
         "name": "School Nurse",
@@ -81,11 +81,11 @@
     },
     "hidden_nurse_d2_8": {
         "name": "School Nurse",
-        "text": "All done, get back to class. — Next time, come without an injury."
+        "text": "All done. Keep it dry today."
     },
     "hidden_nurse_d2_9": {
-        "name": "School Nurse",
-        "text": "You can come by even without a reason. Just not during class. After school. *I left the nurse's office.*"
+        "name": "{name}",
+        "text": "*After being told to come back if the bandage lifts or blood seeps through, I leave the nurse's office.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -178,15 +178,15 @@
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*She throws her hand up. High-five.*"
+        "text": "*Our palms meet. Dain laughs, then lets go a beat late.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...Oh, sorry! Force of habit!"
+        "text": "...Oh, sorry! I do that sometimes after a game!"
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*She pulls her hand back. Doesn't look sorry at all. — My palm is still warm.*"
+        "text": "*Dain runs the hand that just met mine through the back of her hair.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -348,55 +348,55 @@
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-        "text": "*She rolls her shoulders. I hear them crack.*"
+        "text": "*She rolls one shoulder and draws a small breath.*"
     },
     "after2_seo_neck_react_b": {
-        "name": "Seoyeon",
-        "text": "Wait. Don't move."
+        "name": "{name}",
+        "text": "Wait. Try propping this underneath."
     },
     "after2_seo_neck_react_c": {
-        "name": "Seoyeon",
-        "text": "*She gets up and moves behind {name}. Both hands settle on their shoulders.*"
+        "name": "{name}",
+        "text": "*I slide one of the empty file boxes stacked nearby toward Seoyeon.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Really stiff. Hold still."
+        "text": "You're going to use my file box as a stand?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-        "text": "*I close my eyes and lean into it.*"
+        "text": "It's an empty box. You only get one neck."
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
-        "text": "*Quietly* ...Don't move. Just for a bit."
+        "text": "...You always have an answer."
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*Whose hand? Seoyeon's hand is on my shoulder. I got it backwards. Her fingertips pause on my shoulder for a moment too.*"
+        "text": "*Seoyeon sets her papers on top of the file box. She doesn't have to tilt her head quite as far.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "*More quietly* ...Just a little longer."
+        "text": "I'll allow it today."
     },
     "after2_seo_neck_high_2_b": {
         "name": "{name}",
-        "text": "*Her fingertips press lightly at the back of my neck, then slowly let go. For a moment, neither of us says anything.*"
+        "text": "*Seoyeon leaves the file box where it is. We go back to sorting the papers by date.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*I pull back slightly.*"
+        "text": "*I start to offer her the file box, then stop.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
-        "text": "What was that all of a sudden?"
+        "text": "Never mind if you don't want it."
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-        "text": "*Her hand pauses in the air for a moment.*"
+        "text": "*She takes the box and sets it beside the papers.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Pulling her hands back* ...It's nothing."
+        "text": "I'll try it when we're done."
     },
     "after2_seo_9": {
         "name": "{name}",

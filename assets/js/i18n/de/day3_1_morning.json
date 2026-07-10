@@ -26,7 +26,7 @@
     },
     "morning3_seo_gate_warm_4": {
         "name": "Seoyeon",
-        "text": "*Sie beginnt wortlos neben mir herzugehen. — War der Weg vom Tor zum Klassenzimmer schon immer so kurz?*"
+        "text": "*Sie geht voraus. Nach ein paar Schritten prüft sie, ob {name} folgt, und wird langsamer.*"
     },
     "morning3_seo_gate_2": {
         "name": "Seoyeon",
@@ -86,7 +86,7 @@
     },
     "morning3_yuna_gate_warm_4": {
         "name": "{name}",
-        "text": "*Seite an Seite mit Yuna gehen. Keine Worte. — Aber seltsamerweise ist die Stille angenehm.*"
+        "text": "*Ich gehe neben Yuna. Nur das Rascheln der gefalteten Brottüte und unsere Schritte sind zu hören.*"
     },
     "morning3_yuna_gate_2": {
         "name": "{name}",
@@ -138,7 +138,7 @@
     },
     "morning3_dain_gate_warm_3": {
         "name": "{name}",
-        "text": "*Dains Arm ist um meinen geschlungen. Sie ist stark. — Ich kann mich nicht losreißen, und ich will es auch nicht.*"
+        "text": "*Dains Arm hakt sich fest bei mir ein. Ein paar Schritte lang lasse ich mich mitziehen, dann passe ich mein Tempo ihrem an.*"
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
@@ -338,15 +338,15 @@
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Klassenlehrerin",
-        "text": "*Plötzlich errötend*...Das darfst du niemandem erzählen. Es wäre schwierig, wenn die Schüler herausfinden würden, dass ihr Lehrer so ist. Nun ja, ich hatte zunächst nicht viel Autorität."
+        "text": "*Sie fasst sich wieder.* Das habe ich privat geschrieben. Es hat nichts mit dem Unterricht zu tun, und du musst es nicht lesen."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
-        "text": "Ein Geheimnis?"
+        "text": "Darf ich es nicht lesen?"
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Klassenlehrerin",
-        "text": "*Die Haare zurückstreichend* Es ist ein Geheimnis. — Kein besonders gutes pädagogisches Vorbild. Einem Schüler so etwas zu erzählen."
+        "text": "Lesen ist in Ordnung. Aber ich werde es nicht heimlich nur dir geben. Ich bereite es erst einmal für eine offene Besprechung im Literaturklub vor."
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "Klassenlehrerin",
@@ -354,7 +354,7 @@
     },
     "hidden_homeroom_d3_reveal_4_g": {
         "name": "{name}",
-        "text": "Ich würde ihn gerne lesen. Ihren Roman."
+        "text": "Wenn es dann öffentlich ist, würde ich es gern lesen."
     },
     "hidden_homeroom_d3_reveal_choice": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Klassenlehrerin",
-        "text": "*Den Blick abwendend.* ...Aber das ist wirklich ein Geheimnis. Die anderen Lehrer wissen es nicht mal."
+        "text": "Diese Woche will ich es auch den Lehrkräften im Fachbereich Koreanisch zeigen. Wenn ich es weiter verstecke, werde ich wohl nie fertig."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Klassenlehrerin",
@@ -382,7 +382,7 @@
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Klassenlehrerin",
-        "text": "...Dann bist du der erste Leser. Seit sieben Jahren."
+        "text": "...Dann zeige ich es nach sieben Jahren endlich anderen."
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
@@ -390,7 +390,7 @@
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Klassenlehrerin",
-        "text": "*Leicht lächelnd* ...Ich bin froh, dass du heute an diesem Klassenzimmer vorbeigekommen bist."
+        "text": "*Sie lächelt leise.* Wenn du nicht zuerst gefragt hättest, hätte ich es vielleicht wieder weggepackt. Danke."
     },
     "hidden_homeroom_d3_reveal_6_e": {
         "name": "Klassenlehrerin",
@@ -398,7 +398,7 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Klassenlehrerin",
-        "text": "Weil es hier ruhig ist. — Das Lehrerzimmer riecht nach Kaffee und alle schauen einem zu."
+        "text": "Weil es hier ruhig ist. Trotzdem reden wir ab jetzt nur während des Literaturklubs über das Manuskript."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "{name}",
@@ -406,17 +406,17 @@
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",
-        "text": "...Okay, tu so, als hättest du nichts gesehen. Bitte. — ...Danke."
+        "text": "Gut, dann lassen wir es fürs Erste geschlossen. Wenn ich bereit bin, es zu zeigen, sage ich zuerst dem Literaturklub Bescheid."
     },
     "hidden_homeroom_d3_end": {
         "name": "Klassenlehrerin",
-        "text": "*Sie streicht sich die Haare zurück und verlässt das Klassenzimmer. Hinter der geschlossenen Tür klickt eine Stiftkappe.*"
+        "text": "*Sie schließt das Manuskript und öffnet das Fenster neben dem Pult. Der Lärm vom Flur dringt kurz herein und verebbt wieder.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Sie dreht das Manuskript um und schiebt es unter ein Buch.* ...Wenn du es gesehen hast, kann ich nicht mehr so tun, als wäre nichts.",
-        "context": "Tag 3 Morgen. Die Klassenlehrerin beim Schreiben eines Romanmanuskripts im leeren Klassenzimmer entdeckt. Ein sieben Jahre gehütetes Geheimnis. Ton: versucht mit leichten Scherzen abzulenken, aber die Sätze werden kürzer, wenn das Manuskript erwähnt wird.",
-        "personality": "Die Lehrerin war eine angehende Romanautorin. Wurde Lehrerin, hat den Traum aber nie aufgegeben."
+        "text": "*Sie legt die Manuskriptseiten in eine Mappe.* Ich verstehe, dass du neugierig bist. Aber darüber sprechen wir im Literaturklub.",
+        "context": "Morgen von Tag 3. In einem leeren Klassenzimmer wurde das private Romanmanuskript der Klassenlehrerin entdeckt. Sie verlangt vom Schüler weder Geheimhaltung noch eine Meinung und überlegt, ob sie es in einer offenen Besprechung des Literaturklubs vorlegen soll. Ton: Sobald es um das Manuskript geht, macht sie weniger Witze und spricht in kürzeren Sätzen.",
+        "personality": "Die Klassenlehrerin wollte Romanautorin werden. Auch nach Beginn ihrer Laufbahn als Lehrerin konnte sie das Schreiben nicht aufgeben, versucht aber, Unterricht und Bewertung klar von ihrem privaten Schreiben zu trennen."
     },
     "hidden_nurse_d3_check": {
         "name": "{name}",
@@ -580,11 +580,11 @@
     },
     "hidden_nurse_d3_6_e": {
         "name": "Schulkrankenschwester",
-        "text": "...Es gab eine. Eine Patientin, die ich nicht retten konnte. *Ihr Blick wird fern.* Ein Mädchen namens Yujin. Siebzehn Jahre alt. Wegen ihr bin ich hier."
+        "text": "...Da war eine Patientin, die ich nicht retten konnte. *Ihr Blick wird fern.* Sie war siebzehn. Danach bin ich hierhergekommen."
     },
     "hidden_nurse_d3_6_f": {
         "name": "{name}",
-        "text": "*Yujin. — Der Name aus dem Notizbuch von gestern. Die Empfängerin dieser Briefe.*"
+        "text": "*Ich denke an das hellgrüne Notizbuch von gestern. An den Brief, der auf der ersten Seite abbrach.*"
     },
     "hidden_nurse_d3_7": {
         "name": "Schulkrankenschwester",
@@ -608,15 +608,15 @@
     },
     "hidden_nurse_d3_8_d": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester setzt ihr Lächeln wieder auf.* Ach was. Das ist Service. Komm nächstes Mal vorbei, auch wenn du nicht krank bist."
+        "text": "Wenn es schon so schwer wird, sag etwas, statt es auszuhalten. Wenn nötig, vermittle ich dir auch einen Termin in der Beratung."
     },
     "hidden_nurse_d3_8_e": {
         "name": "{name}",
-        "text": "*'Ob du krank bist oder nicht.' Als ich das Krankenzimmer verlasse, höre ich hinter mir das leise Geräusch eines Stuhls, der verschoben wird.*"
+        "text": "*Ich falte die Karte mit der Nummer der Beratungsstelle und stecke sie ein.*"
     },
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
-        "text": "*Ich trat auf den Flur. Ein Schritt, dann halte ich inne. Das Geräusch einer sich öffnenden Schublade von innen. Die Ecke eines hellgrünen Notizbuchs und der Name 'Yujin' tauchen in meinem Kopf auf.*"
+        "text": "*Ich stehe auf, bleibe aber vor der Tür stehen. Hinter mir öffnet sich eine Schublade. Die Ecke des hellgrünen Notizbuchs kommt mir in den Sinn.*"
     },
     "hidden_nurse_d3_8_g": {
         "name": "{name}",
@@ -624,51 +624,51 @@
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
-        "text": "*Im Gesundheitsraum ist das Geräusch zu hören, wie Papier gefaltet wird. Briefe an Eugene. Fassen Sie den Griff und lassen Sie ihn los.*"
+        "text": "*Ich lasse die Türklinke los und drehe mich noch einmal um. In der Schublade wird Papier gefaltet.*"
     },
     "hidden_nurse_d3_choice2": {
         "name": "Schulkrankenschwester",
         "text": "*Die Krankenschwester hielt bei 'einer Person' inne. Der Rand des Pappbechers wird unter ihren Fingerspitzen zerknittert.*",
         "choices": [
-            "Haben Sie deshalb das Krankenhaus verlassen?",
-            "Haben Sie auch diese eine Person?"
+            "Sind Sie nach diesem Erlebnis aus dem Krankenhaus gegangen?",
+            "Ist es für Sie in Ordnung, noch mehr davon zu erzählen?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {
         "name": "Schulkrankenschwester",
-        "text": "...Eher als aufgehört. Ich bin weggelaufen."
+        "text": "Ja. Wenn ich noch länger geblieben wäre, hätten meine Hände wohl auch vor anderen Patienten gezittert."
     },
     "hidden_nurse_d3_choice2_b": {
         "name": "Schulkrankenschwester",
-        "text": "...Es gab eine. Eine Patientin, die ich nicht retten konnte."
+        "text": "...Ja. Ich erzähle nur so viel, wie ich verkrafte."
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",
-        "text": "...Die Person, die zählt. Was, wenn das ich bin?"
+        "text": "Du darfst herkommen. Aber ich kann dir nicht versprechen, alles allein zu lösen."
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
-        "text": "*...Was? — Meine Füße blieben stehen. Nur der Geruch von Desinfektionsmittel hängt schwer in der Luft.*"
+        "text": "*Sie stellt den Pappbecher ab und nickt.*"
     },
     "hidden_nurse_d3_9_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Der Gesundheitslehrer lächelt nicht. Ich fummele an meinem Stethoskop herum und schaue aus dem Fenster.*"
+        "text": "Wenn es für dich noch schwerer wird, hole ich die Klassenleitung oder die Beratungsstelle dazu."
     },
     "hidden_nurse_d3_9_d": {
         "name": "Schulkrankenschwester",
-        "text": "*Mit mühsamem Lächeln* War nur ein Scherz. Los, geh."
+        "text": "Vorher entscheiden wir gemeinsam, wem wir wie viel erzählen."
     },
     "hidden_nurse_d3_9_e": {
         "name": "{name}",
-        "text": "*Ich habe versucht, es als Scherz darzustellen, aber meine Füße wollten nicht abfallen. Hinter dem Vorhang riecht es nur stark nach Desinfektionsmittel.*"
+        "text": "*Die Krankenschwester schiebt den Terminplan für Beratungsgespräche an die Vorderkante des Schreibtischs.*"
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
-        "text": "*Der Desinfektionsgeruch wurde plötzlich stärker. Bevor ich einen weiteren Schritt machte, schaute ich zurück. Die Krankenschwester schaut aus dem Fenster. Sie lächelt nicht.*"
+        "text": "*Auf dem Plan stehen die Zeiten der Krankenstation und der Beratungsstelle nebeneinander. Ich kreise ein freies Feld ein.*"
     },
     "hidden_nurse_d3_11": {
         "name": "Schulkrankenschwester",
-        "text": "...War nur ein Scherz. Los, geh."
+        "text": "Du kommst noch zu spät zur nächsten Stunde. Wir schließen das Gespräch für heute hier ab."
     },
     "hidden_nurse_d3_freetalk": {
         "name": "Schulkrankenschwester",

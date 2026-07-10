@@ -69,11 +69,11 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Benachrichtigungen der Schulgesundheitsmanagement-App werden angezeigt. „Aufzeichnungen im Krankenzimmer: Transferstudent – ​​leichtes Schwindelgefühl.“ Notiz: Kommen Sie morgen wieder, wenn Sie Symptome haben. Trinken Sie viel Wasser. ♥ ist medizinisch bedenklich.'*"
+        "text": "*Eine Benachrichtigung der Schulgesundheits-App erscheint. ‚Krankenstationsakte: Neuer Schüler — leichter Schwindel. Heute ausreichend trinken und das Frühstück nicht auslassen. Bei erneutem Auftreten die Krankenstation aufsuchen.‘*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Das Herz am Ende des Satzes bleibt in der Mitte des Bildschirms. Bevor ich ihn ausschalte, sehe ich noch einmal hin.*"
+        "text": "*Ich lese den letzten Hinweis und fülle die Wasserflasche neben dem Bett auf.*"
     },
     "night_late_transition": {
         "name": "{name}",

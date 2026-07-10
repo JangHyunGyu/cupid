@@ -366,23 +366,23 @@
     },
     "after_nurse_enter_4_d": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester steht auf und kommt näher. Als die Spitze des Thermometers meinen Handrücken berührt, versteifen sich meine Finger leicht.*"
+        "text": "*Sie reicht mir ein digitales Thermometer und holt unter dem Schreibtisch ein Blutdruckmessgerät hervor.*"
     },
     "after_nurse_enter_5": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester kommt näher. Ihre Hand legt sich auf meine Stirn.*"
+        "text": "*Nachdem sie meine Temperatur geprüft hat, legt sie mir die Manschette des Blutdruckmessgeräts um den Arm.*"
     },
     "after_nurse_enter_6": {
         "name": "Schulkrankenschwester",
-        "text": "Kein Fieber... Vielleicht ist dein Blutdruck einfach ein bisschen niedrig."
+        "text": "Kein Fieber, aber dein Blutdruck ist etwas niedrig."
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "Kann man den Blutdruck fühlen, wenn man die Stirn berührt?"
+        "text": "Ich habe heute Morgen nur schnell irgendwas gegessen."
     },
     "after_nurse_enter_7": {
         "name": "Schulkrankenschwester",
-        "text": "Kein Fieber, aber... du musst dich etwas entspannen. Komm, leg dich hin. Nur zehn Minuten."
+        "text": "Dann kann das gut daher kommen. Los, leg dich hier hin. Ruh dich zehn Minuten aus."
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Schulkrankenschwester",
-        "text": "...Scharfe Augen. Dabei sollte ich diejenige sein, die sich Sorgen macht."
+        "text": "Du bist aber aufmerksam, Patient. Trotzdem sehen wir uns jetzt erst mal deinen Zustand an."
     },
     "after_nurse_enter_choice_b": {
         "name": "Schulkrankenschwester",
@@ -414,15 +414,15 @@
     },
     "after_nurse_enter_8": {
         "name": "Schulkrankenschwester",
-        "text": "Du musst hier nicht so sehr auf Förmlichkeit achten. Im Krankenzimmer kannst du ruhig etwas lockerer sein. Genau dafür ist es da."
+        "text": "Du musst nicht viel reden. Wenn dir schwindlig ist, lass dir auch mit der Antwort Zeit."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
-        "text": "Aber Sie sind doch Lehrerin."
+        "text": "Bin ich damit bald wieder in Ordnung?"
     },
     "after_nurse_enter_8_c": {
         "name": "Schulkrankenschwester",
-        "text": "*Reicht mir ein Glas Wasser* Stimmt, ich bin Lehrerin. Aber hier ist wichtiger, dass du dich erst mal wohlfühlst."
+        "text": "*Sie reicht mir ein Glas Wasser.* Trink etwas und ruh dich aus, dann sollte es dir deutlich besser gehen. Wenn der Schwindel bleibt, sagen wir auch deiner Klassenlehrerin Bescheid."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
@@ -478,19 +478,19 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Schulkrankenschwester",
-        "text": "Was ich vorhin gesagt habe: Vielen Dank für Ihre Sorge. Ich hätte nie gedacht, dass ich diese Worte von einem Patienten hören würde."
+        "text": "Du meintest vorhin, ich sähe müde aus, oder? Wenn es sogar einem Schüler auffällt, sollte ich heute wohl etwas früher nach Hause. Danke."
     },
     "after_nurse_enter_11_g": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Gesundheitslehrerin stellt den Wasserbecher ab und fängt an zu lachen.*"
+        "text": "*Sie trägt die Uhrzeit in die Krankenakte ein und räumt das Wasserglas weg.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Schulkrankenschwester",
-        "text": "Du hast vorhin gesagt, es sei ruhig, oder? — Das weiß ich noch."
+        "text": "Du hast gesagt, hier sei es ruhig, oder? Wenn du eine Pause brauchst, sag deiner Klassenlehrerin Bescheid und komm her. Halt es nicht einfach aus."
     },
     "after_nurse_enter_11_i": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester faltet den Rand des Vorhangs einmal mit dem Finger.*"
+        "text": "*Sie zieht den Vorhang auf und richtet das Bettlaken.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_12": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn du das nächste Mal krank wirst — ach, besser, es gibt kein nächstes Mal."
+        "text": "Wenn die Beschwerden wiederkommen, komm sofort her. Versuch nicht, dich auf dem Flur durchzukämpfen."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",

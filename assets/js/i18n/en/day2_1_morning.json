@@ -190,8 +190,8 @@
         "text": "Looked at your old transcript. Your literature grades were solid. You into reading?"
     },
     "hidden_homeroom_d2_3_b": {
-        "name": "Homeroom Teacher",
-        "text": "*A brief pause* ...A bit of everything. Mostly — novels."
+        "name": "{name}",
+        "text": "I read novels sometimes."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "Homeroom Teacher",
@@ -199,7 +199,7 @@
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Homeroom Teacher",
-        "text": "Reading? — What about writing?"
+        "text": "You like reading. What about writing?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",

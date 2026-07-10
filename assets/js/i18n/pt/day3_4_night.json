@@ -149,92 +149,92 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*Adormeci. — Sonho. Tô no escuro. Não enxergo nada.*"
+        "text": "*Apago a luz e me deito, mas não consigo dormir. Só a tela do celular brilha sobre a minha palma.*"
     },
     "night3_nightmare_2_b": {
-        "name": "Seoyeon",
-        "text": "*Ouço a voz dela.*"
+        "name": "{name}",
+        "text": "*Abro a conversa de Seoyeon. A última mensagem termina em 'Por favor'.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
-        "text": "Cê disse que era só comigo..."
+        "text": "Não estou pedindo que responda agora. Mas amanhã não fuja de novo."
     },
     "night3_nightmare_3_b": {
-        "name": "Yuna",
-        "text": "*A voz dela.*"
+        "name": "{name}",
+        "text": "*Na conversa de Yuna, só há a marca de lido abaixo das três linhas.*"
     },
     "night3_nightmare_4": {
-        "name": "Yuna",
-        "text": "Eu falei pra não mentir."
+        "name": "{name}",
+        "text": "*A última frase é curta: 'Não fuja de mim. Só isso.'*"
     },
     "night3_nightmare_4_b": {
-        "name": "Dain",
-        "text": "*A voz dela.*"
+        "name": "{name}",
+        "text": "*Abro a conversa de Dain. Só uma frase tem uma reação de risada.*"
     },
     "night3_nightmare_5": {
-        "name": "Dain",
-        "text": "Cê disse que vinha. Eu esperei."
+        "name": "{name}",
+        "text": "*'Queria que fosse brincadeira.' Depois disso, não há mensagens novas.*"
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*Vejo mãos surgindo de três direções. Vagamente, na escuridão.*"
+        "text": "*Abro e fecho as três conversas, uma de cada vez. Em cada campo de texto, digito uma primeira letra diferente e apago.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
-        "text": "*De quem eu pego a mão?*",
+        "text": "*Para quem vou contar a verdade primeiro amanhã?*",
         "choices": [
-            "Pegar a mão de Seoyeon",
-            "Pegar a mão de Yuna",
-            "Pegar a mão de Dain"
+            "Decidir falar primeiro com Seoyeon",
+            "Decidir falar primeiro com Yuna",
+            "Decidir falar primeiro com Dain"
         ]
     },
     "night3_nightmare_seo": {
         "name": "{name}",
-        "text": "*Estendi a mão em direção à Seoyeon. No instante em que vi aquele sorriso — ela desapareceu.*"
+        "text": "*Escrevo na conversa de Seoyeon: 'Amanhã vou falar olhando para você.' Pouco antes de enviar, meu dedo para.*"
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*Dei um passo em direção à Yuna. No momento em que meus dedos quase tocaram — ela desapareceu.*"
+        "text": "*Escrevo na conversa de Yuna: 'Amanhã vou falar sem fugir.' Pouco antes de enviar, meu dedo para.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Corri em direção à Dain. No instante em que achei que tinha segurado — ela desapareceu.*"
+        "text": "*Escrevo na conversa de Dain: 'Desculpa por fazer você esperar. Amanhã a gente conversa.' Pouco antes de enviar, meu dedo para.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*Estendi a mão. — Não alcanço. Todas desapareceram, e só resta a escuridão.*"
+        "text": "*A frase fica em um dos campos de texto, e fecho as outras duas conversas. Ainda não enviei.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*— Acordei encharcado de suor. Três da manhã. Fito o teto. Peguei o celular. Galeria. Rolando de novo. — Foto da Sojeong.*"
+        "text": "*Três da manhã. Continuo acordado. Fecho as mensagens e abro a galeria. Meu dedo para sobre uma foto de Sojeong.*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Sojeong sorri na foto da turma. Não consigo passar a tela. A ponta do meu polegar fica úmida.*"
+        "text": "*Na foto da turma, Sojeong olha para a câmera. Ao lado dela, eu olho para outro lugar.*"
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*Sojeong fecha a foto. Desta vez são três janelas de mensagem. Os três cursores piscam.*"
+        "text": "*Fecho a foto e volto para a lista de mensagens. Uma das frases que escrevi há pouco ficou salva como rascunho.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Escola antiga: mensagens não enviadas. Esta escola: janelas de resposta abertas demais. A tela do celular queima na minha palma.*"
+        "text": "*Percorro a lista. Ao lado dos três nomes, há uma última frase diferente em cada conversa.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "{name}",
-        "text": "*Minsu disse. 'Rejeição é algo que você tem que fazer.' Seoyeon disse. ‘Eu não faço nenhum de muitos.’*"
+        "text": "*Na conversa com Minsu há uma resposta: 'Adiar não vai fazer isso desaparecer.'*"
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Yuna disse. 'Não fuja.' O cursor da janela de resposta pisca. Mais uma frase nunca enviada a ninguém fica mais longa.*"
+        "text": "*Leio de novo as três conversas, de cima a baixo. Não fecho nenhuma.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*Tive um sonho. Caminhava lado a lado com alguém. Não conseguia ver o rosto, mas na minha mão havia uma mensagem prestes a ser enviada.*"
+        "text": "*Tiro a mão do botão de enviar e deixo o celular virado para baixo. Faltam três horas para o alarme tocar.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
-        "text": "*O que foi que eu fiz.*"
+        "text": "*Mudo o nome do alarme para 'Responder amanhã'.*"
     },
     "night3_end": {
         "name": "{name}",

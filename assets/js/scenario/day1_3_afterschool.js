@@ -555,7 +555,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_nurse_enter_choice_a": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "after_nurse_enter_8"
     },
     "after_nurse_enter_choice_b": {

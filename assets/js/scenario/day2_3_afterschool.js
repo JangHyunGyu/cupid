@@ -73,7 +73,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "hidden_nurse_d2_choice1_a": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d2_6"
     },
     "hidden_nurse_d2_choice1_b": {

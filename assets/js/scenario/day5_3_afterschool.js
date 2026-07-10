@@ -212,12 +212,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "after5_hidden_route_choice": {
-        "background": "assets/images/background/school_back.png",
+        "background": "assets/images/background/park.png",
         "character": null,
-        "choices": [
-            { "next": "ending_start", "setFlags": ["choose_main_over_hidden"] },
-            { "next": "ending_start", "setFlags": ["choose_hidden_over_main"] }
-        ]
+        "next": "ending_start"
     },
     "after5_last_chance_1": {
         "background": "assets/images/background/school_back.png",

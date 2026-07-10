@@ -146,31 +146,31 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Schau den dritten Stern an"
+        "text": "Die Playlist von vorhin. Hör dir auch den dritten Song an."
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*Der dritte Stern? Ich drehte den Kopf zum Fenster. Am Nachthimmel sind viele Sterne. Während ich sie mit dem Finger zähle, beschlägt die Fensterscheibe.*"
+        "text": "*Ich öffne die Playlist, die Yuna geteilt hat, noch einmal. Der dritte Song ist etwas schneller als der, den wir vorhin gemeinsam gehört haben.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Den Grund verrat ich dir später"
+        "text": "Hör ihn bis zum Ende."
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Ich öffnete das Fenster. Kalte Luft strömt herein. Die Sterne sind zahlreich, und mein Finger bleibt beim dritten stehen, in der Luft schwebend.*"
+        "text": "*Ich setze die Kopfhörer auf und drücke auf Play. Hinter dem Klavier setzt ein tiefer Schlagzeugrhythmus ein.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Die Antwort endet dort. Meine Fingerabdrücke bleiben am Fenster zurück.*"
+        "text": "*Auch nachdem der Song endet, kann ich den Wiedergabebildschirm eine Weile nicht schließen.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Morgen Nacht wird mein Finger wieder beim dritten Stern stehen bleiben.*"
+        "text": "*Unter dem Titel der Playlist steht eine kurze Notiz von Yuna: ‚Der dritte ist am wenigsten still.‘*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...Also gibt es jemanden, der um diese Zeit antwortet. Willst du morgen in die Bibliothek kommen?"
+        "text": "...Wenn du alles gehört hast, sag mir morgen, wie du es fandest. Kommst du ins Nebengebäude?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
@@ -182,23 +182,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Eine private Nachricht von der Klassenlehrerin. 'Danke, dass du heute ins Lehrerzimmer gekommen bist. Der Papierkram ist erledigt, ich muss dich nicht mehr herbitten. ...Aber wenn die Eingewöhnung schwerfällt, komm jederzeit vorbei.'*"
+        "text": "*Im schulischen Beratungssystem erscheint eine Meldung: ‚Eingewöhnungsgespräch für den neuen Schüler abgeschlossen. Bei weiterem Hilfebedarf bitte einen Beratungstermin bei der Klassenleitung oder im Wee-Class-Beratungsraum buchen.‘*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Der Punkt am Ende der Nachricht sieht aus, als wäre er viel später gesetzt worden.*"
+        "text": "*Unter dem Namen der Klassenlehrerin stehen auch ihre Sprechzeiten.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Ich lese nur die letzte Zeile noch einmal.*"
+        "text": "*Ich prüfe die Schaltfläche zur Terminbuchung und schließe die Meldung.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Benachrichtigung der Gesundheits-App. 'Krankenakte: Transferstudent — Schürfwunde am Ellbogen (leicht). Notiz: Pflaster wechsle ich morgen früh. Pflasterwechsel ist eine medizinische Maßnahme, also kein Widerspruchsrecht ^^'*"
+        "text": "*Meldung der Gesundheits-App: ‚Krankenstationsakte: Neuer Schüler — Schürfwunde am Ellbogen (leicht). Pflaster bis morgen früh trocken halten. Wenn es sich löst oder Blut durchsickert, auf der Krankenstation wechseln lassen.‘*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Ich drücke mit dem Daumen auf die Ecke des Pflasters. Für morgen früh gibt es einen Punkt mehr.*"
+        "text": "*Ich beuge einmal den Ellbogen. Die Ränder des Pflasters sitzen noch fest.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Es gibt nichts unterhalb der 38. Note. Nur der 39. Titel ist leer. Am nächsten Tag war Sojungs Platz bis zum Schluss leer. Der Name des Vaters steht im Unterschriftenfeld des Vormunds des Übertragungsdokuments.*"
+        "text": "*Unter der 38. Notiz steht nichts. Nur der Titel der 39. ist leer. Am nächsten Tag blieb Sojungs Platz bis zum Schluss leer. Die Klassenlehrerin sagte lediglich, Sojung sei umgezogen.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Ich schaue zur Decke. Die heutigen Nachrichten überlagern sich auf meinem Sperrbildschirm. Seoyeon. Dain. Yuna. Ich hab noch keine von ihnen gelesen.*"
+        "text": "*Ich nehme das Handy wieder in die Hand. Unter dem Chat, auf den ich gerade geantwortet habe, stehen zwei Namen nebeneinander, denen ich noch nicht geantwortet habe.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Ich öffne das Antwortfenster, dann schließe ich es wieder. Die drei Namen stehen nebeneinander ganz oben in meinen letzten Chats. Mein Finger erreicht keinen von ihnen.*"
+        "text": "*Ich öffne und schließe den Chat, in dem ich geantwortet habe. In den beiden übrigen habe ich noch keine Worte gefunden.*"
     },
     "night2_end_2": {
         "name": "{name}",
@@ -242,11 +242,11 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Diese Worte fallen mir immer wieder ein. Ich habe noch keine Antwort erhalten. Stattdessen erhöht sich die Häufigkeit, mit der Sie das Benachrichtigungsfenster öffnen und schließen.*"
+        "text": "*Über Minsus Nachricht stapeln sich zwei ungelesene Benachrichtigungen.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Ich schloss die Augen. Auf dem Sperrbildschirm bleibt nur die Zahl der ungelesenen Nachrichten. Auch nachdem der Bildschirm dunkel wird, fühlt sich meine Hand noch hell an.*"
+        "text": "*Auch nachdem der Bildschirm erlischt, halte ich das Handy unverändert fest.*"
     },
     "night2_end_4_b": {
         "name": "{name}",

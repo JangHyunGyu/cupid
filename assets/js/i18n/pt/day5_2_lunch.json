@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*O chaveiro tilinta dentro da bolsa de Seoyeon. É a chave do telhado.*"
+        "text": "*Seoyeon tira de dentro da bolsa um pequeno chaveiro de metal. Tem o mesmo formato da chave do terraço, mas não tem ranhuras.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -37,23 +37,23 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "Uma chave?"
+        "text": "A chave do terraço... Não, não é."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "Era regalia de presidente do grêmio. — Agora é sua."
+        "text": "É uma lembrança do grêmio. Hoje preciso devolver a chave de verdade."
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Ela entrega a chave. Quando os mindinhos se tocam de leve, solta a mão em vez de dizer: \"É sua\".*"
+        "text": "*Ela me entrega o chaveiro. Quando nossas mãos se encostam, Seoyeon ajeita de novo a alça da bolsa.*"
     },
     "tour_seo_13": {
         "name": "{name}",
-        "text": "Presidente do grêmio pode fazer isso?"
+        "text": "Então, como vamos subir ao terraço de agora em diante?"
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "Posso, por isso tô dando. — Sobe lá quando quiser tomar um ar."
+        "text": "Fala comigo. Podemos pegar a chave oficialmente e abrir juntos."
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
@@ -61,7 +61,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*Ela não disse 'mesmo sem mim'. Mas tá escondido logo atrás das palavras.*"
+        "text": "*Guardo no bolso o chaveiro que Seoyeon me deu. A chave verdadeira do terraço tilinta mais uma vez dentro da bolsa dela.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -133,7 +133,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*A quadra. A primeira aposta e a cortada final permanecem na mesma quadra. Hoje as luzes estão acesas.*"
+        "text": "*O ginásio. Ao lado da linha onde fizemos a primeira aposta está o armário em que guardamos as bolas ontem à noite. Hoje as luzes estão acesas.*"
     },
     "tour_dain_1b": {
         "name": "{name}",

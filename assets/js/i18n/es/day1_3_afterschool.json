@@ -366,23 +366,23 @@
     },
     "after_nurse_enter_4_d": {
         "name": "Enfermera",
-        "text": "*La enfermera se levanta y se acerca. Cuando la punta del termómetro toca el dorso de mi mano, los dedos se me tensan un poco.*"
+        "text": "*Le entrega el termómetro digital y saca el tensiómetro de debajo del escritorio.*"
     },
     "after_nurse_enter_5": {
         "name": "Enfermera",
-        "text": "*La enfermera se acerca. Su mano toca mi frente.*"
+        "text": "*Después de tomarle la temperatura, le coloca el manguito del tensiómetro en el brazo.*"
     },
     "after_nurse_enter_6": {
         "name": "Enfermera",
-        "text": "No tienes fiebre... Puede que tengas la presión un poco baja."
+        "text": "No tienes fiebre y la presión está un poco baja."
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "¿Tocando la frente se sabe la presión?"
+        "text": "La verdad es que apenas desayuné."
     },
     "after_nurse_enter_7": {
         "name": "Enfermera",
-        "text": "No tienes fiebre, pero... necesitas relajarte un poco. Ven, acuéstate aquí. Solo diez minutos."
+        "text": "Entonces puede ser por eso. Anda, túmbate aquí. Descansa diez minutos."
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Enfermera",
-        "text": "...Buen ojo. Se supone que la que se preocupa soy yo."
+        "text": "Qué paciente tan observador. Pero ahora veamos primero cómo estás."
     },
     "after_nurse_enter_choice_b": {
         "name": "Enfermera",
@@ -414,15 +414,15 @@
     },
     "after_nurse_enter_8": {
         "name": "Enfermera",
-        "text": "Oye, no te estreses con eso de hablarme de usted. En la enfermería puedes relajarte. Para eso está."
+        "text": "No hace falta que hables mucho. Si estás mareado, responde despacio."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
-        "text": "Pero usted es profesora."
+        "text": "¿Con esto se me pasará pronto?"
     },
     "after_nurse_enter_8_c": {
         "name": "Enfermera",
-        "text": "*Le tiende un vaso de agua.* Sí, profesora. Pero aquí lo primero es que tú estés a gusto."
+        "text": "*Le tiende un vaso de agua.* Bebe y descansa; deberías sentirte bastante mejor. Si sigues mareado, se lo diremos también a tu tutora."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
@@ -478,19 +478,19 @@
     },
     "after_nurse_enter_11_f": {
         "name": "Enfermera",
-        "text": "Lo que dije antes: gracias por su preocupación. Nunca pensé que escucharía esas palabras de un paciente."
+        "text": "Dijiste que parecía cansada, ¿verdad? Si hasta un alumno lo nota, hoy debería irme un poco antes. Gracias."
     },
     "after_nurse_enter_11_g": {
         "name": "Enfermera",
-        "text": "*La profesora de salud deja el vaso de agua y se echa a reír.*"
+        "text": "*Anota la hora en el registro médico y retira el vaso de agua.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Enfermera",
-        "text": "Antes dijiste que era tranquila, ¿no? — Todavía lo recuerdo."
+        "text": "Dijiste que aquí se estaba tranquilo, ¿no? Si necesitas descansar, avisa a tu tutora antes de venir. No te lo guardes."
     },
     "after_nurse_enter_11_i": {
         "name": "Enfermera",
-        "text": "*La enfermera dobla una vez el borde de la cortina con el dedo.*"
+        "text": "*Abre la cortina y acomoda las sábanas de la camilla.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_12": {
         "name": "Enfermera",
-        "text": "La próxima vez que te sientas mal — ah, mejor si no hay próxima vez."
+        "text": "Si vuelves a tener síntomas, ven enseguida. No aguantes en el pasillo."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",

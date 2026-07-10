@@ -190,8 +190,8 @@
         "text": "Vi tu expediente. Buenas notas en Lengua. ¿Te gusta leer?"
     },
     "hidden_homeroom_d2_3_b": {
-        "name": "Profesora",
-        "text": "*Vacila un instante.* ...De todo. Sobre todo — novela."
+        "name": "{name}",
+        "text": "Leo alguna que otra novela."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "Profesora",
@@ -199,7 +199,7 @@
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Profesora",
-        "text": "¿Leer? — ¿Escribir también?"
+        "text": "Te gusta leer. ¿Y escribir?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",

@@ -430,8 +430,8 @@
         "name": "Dain",
         "text": "*Sie setzt sich auf die Bank. Die Hand an ihrem Knie kreist lange über derselben Stelle.*",
         "choices": [
-            "Mich neben sie setzen und still warten",
-            "Hast du Pflaster? Soll ich welche holen?"
+            "...Geht es dir gut? Übertreib es nicht. Willst du dich heute ausruhen?",
+            "Dann bleibe ich hier. Erzähl es, wenn du reden willst."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -496,31 +496,31 @@
     },
     "after3_dain_correct_6": {
         "name": "Dain",
-        "text": "...Weiß nicht. Aber heb erstmal den Ball auf. Du wirst ihn echt nicht fangen."
+        "text": "...Keine Ahnung. Aber bleib kurz hier. Ich will gerade nicht allein sein."
     },
     "after3_dain_correct_7": {
         "name": "Dain",
-        "text": "*Sie steht auf. Rollt ihr Knie einmal, leicht. Unbewusst. Und dann — nimmt sie die Aufschlagstellung ein. Wie immer.*"
+        "text": "*Sie macht auf der Bank neben sich Platz. Den Volleyball schiebt sie mit der Fußspitze aus dem Feld.*"
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "Es geht los, Neuer!"
+        "text": "...Lass uns einfach reden."
     },
     "after3_dain_correct_9": {
         "name": "{name}",
-        "text": "*Der Aufschlag fliegt. Ich kann es nicht verstehen. Der Ball trifft das Handgelenk und springt zur Decke. Dain klatscht und lacht. Die angehobenen Schultern senken sich, als würden Sie den Atem anhalten.*"
+        "text": "*Ich setze mich neben sie. Der Ball bleibt an der Seitenlinie liegen. Eine Weile bindet Dain nur ihre Schnürsenkel neu.*"
     },
     "after3_dain_correct_10": {
         "name": "Dain",
-        "text": "Siehst du? Ich hab gewonnen! ...Ah."
+        "text": "Ich rede sonst nicht über so was. ...Womit fange ich an?"
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "*Als sie landet, knickt ihr rechtes Knie leicht ein. Ihre Hand bleibt darauf liegen.*"
+        "text": "*Sie will das rechte Bein strecken, hält inne und beugt es wieder. Ihre Hand bleibt auf dem Knie.*"
     },
     "after3_dain_correct_12": {
-        "name": "Dain",
-        "text": "...Weißt du was. Das hier. Das geht schon eine Weile so."
+        "name": "{name}",
+        "text": "Fangen wir mit deinem Knie an."
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
@@ -654,7 +654,7 @@
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "*Sie sieht {name} gerade an. Es sind nicht die Augen der Schülersprecherin, sondern die eines Menschen.*",
+        "text": "*Sie senkt das Klemmbrett. Ohne den Blick abzuwenden, wartet sie auf eine Antwort.*",
         "choices": [
             "Ehrlich zugeben",
             "Die Uhrzeiten sind unterschiedlich, also dachte ich, es wäre in Ordnung",
@@ -671,7 +671,7 @@
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
-        "text": "Das ist das Grausamste, was du sagen kannst, {name}. Freundlichkeit, die nicht ablehnen kann — gibt falsche Hoffnung."
+        "text": "Beim Mittagessen hast du dich entschuldigt. Aber ich habe noch nicht gehört, bei wem und wofür."
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
@@ -679,7 +679,7 @@
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Du hast mir gesagt, es sei okay, aber du wolltest von niemandem gehasst werden. Das ist grausamer."
+        "text": "Du wolltest kein Nein hören und hast uns die Entscheidung überlassen. Das ist nicht ehrlich."
     },
     "after3_confront_admit_4_b": {
         "name": "Seoyeon",
@@ -763,7 +763,7 @@
     },
     "minsu_d3_5b": {
         "name": "Minsu",
-        "text": "*Er seufzt. Nicht spöttisch. Es ist ein ehrlich besorgter Seufzer.*"
+        "text": "*Er seufzt und legt die gefaltete Strohhalmhülle auf den Tisch.*"
     },
     "minsu_d3_6": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Seoyeon hat geweint. Nachdem sie aus dem Schülerratsraum kam. Auf der Toilette. — Nur ich hab's gesehen. In einem ganzen Jahr hab ich sie noch nie weinen sehen."
+        "text": "Ich habe sie kurz in der Toilette hinter dem Schülerratsraum gesehen. Zu mir meinte sie, alles sei in Ordnung ... aber so sah sie nicht aus."
     },
     "haeun_warn_4b": {
         "name": "{name}",
@@ -831,11 +831,11 @@
     },
     "haeun_warn_5": {
         "name": "{name}",
-        "text": "*Der Badezimmerspiegel, verwischter Eyeliner, gefaltetes Klemmbrett. Haeuns Worte verbinden die drei zu einer einzigen Linie.*"
+        "text": "*Haeun prüft den leeren Flur und senkt ihre Stimme noch weiter.*"
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae, sie hat auch im Badezimmer kein Geräusch gemacht. Sie starrte nur in den Spiegel. Ihre Hände zitterten ständig."
+        "text": "Sie wollte, dass ich sie in Ruhe lasse, aber sie kam lange nicht vom Waschbecken weg."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Nachdem {name}s Name gefallen war, landeten drei weitere Taschentücher im Mülleimer."
+        "text": "Wenn ich ihr nachgehe, sagt sie wieder, es sei alles in Ordnung. Auf {name} hört sie vielleicht."
     },
     "haeun_warn_6_b": {
         "name": "Haeun",
@@ -855,7 +855,7 @@
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Ich weiß, dass es Einmischung ist. Trotzdem mache ich mir Sorgen. Senior, das Haus ist im Moment etwas kompliziert. Es gibt Dinge, die du mit deinen Eltern zu tun hast... Wie dem auch sei, sei bitte nett zu deinem Senior. Bitte."
+        "text": "Ich weiß, dass ich mich einmische. Aber bitte tun Sie zumindest heute nicht so, als hätten Sie nichts bemerkt."
     },
     "haeun_warn_7_b": {
         "name": "Haeun",
@@ -863,7 +863,7 @@
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
-        "text": "...Jedenfalls. Bitte sei gut zu ihr. Ich bitte dich."
+        "text": "Sie müssen sie nicht überzeugen. Lassen Sie sie nur nicht allein."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",
@@ -871,7 +871,7 @@
     },
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*Der Badezimmerspiegel, gerader Rücken, weiß verkrampfte Fäuste, leeres Waschbecken. Die fragmentierten Szenen folgen mir unter den Flurlichtern.*"
+        "text": "*Nachdem Haeun gegangen ist, klopfe ich an die Tür des Schülerratsraums. Es kommt keine Antwort, doch drinnen wird ein Stuhl bewegt.*"
     },
     "haeun_warn_8b": {
         "name": "{name}",

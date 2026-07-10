@@ -431,7 +431,7 @@
         "text": "*Elle s’assoit sur le banc. Sa main reste à frotter longtemps le même endroit du genou.*",
         "choices": [
             "...Ça va ? Ne force pas. Tu devrais te reposer aujourd'hui.",
-            "Hé, un service de plus. Si je le rate, t'as gagné."
+            "Alors je reste là. Tu parleras quand tu seras prête."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -496,31 +496,31 @@
     },
     "after3_dain_correct_6": {
         "name": "Dain",
-        "text": "...Je sais pas. Mais d'abord, prends le ballon. Tu vas vraiment pas l'attraper."
+        "text": "...Je sais pas. Mais reste un peu. Là, j'ai pas vraiment envie d'être toute seule."
     },
     "after3_dain_correct_7": {
         "name": "Dain",
-        "text": "*Elle se lève. Fait rouler son genou une fois, légèrement. Inconsciemment. Et puis — prend sa position de service. Comme d'habitude.*"
+        "text": "*Elle me fait une place au fond du banc. Du bout du pied, elle pousse le ballon hors du terrain.*"
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "J'arrive, le nouveau !"
+        "text": "...Parlons un peu, c'est tout."
     },
     "after3_dain_correct_9": {
         "name": "{name}",
-        "text": "*Le service s'envole. Je n'arrive pas à l'obtenir. Le ballon touche le poignet et rebondit jusqu'au plafond. Dain applaudit et rit. Les épaules qui étaient relevées descendent comme si on retenait son souffle.*"
+        "text": "*Je m'assieds à côté d'elle. Le ballon s'immobilise sur la ligne. Pendant un long moment, Dain se contente de refaire ses lacets.*"
     },
     "after3_dain_correct_10": {
         "name": "Dain",
-        "text": "T'as vu ? J'ai gagné ! ...Ah."
+        "text": "D'habitude, je parle jamais de ce genre de choses. ...Je commence par quoi ?"
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "*En atterrissant, le genou droit d'elle flanche un peu. Sa main reste dessus.*"
+        "text": "*Elle commence à tendre la jambe droite, s'arrête, puis la replie. Sa main reste posée sur son genou.*"
     },
     "after3_dain_correct_12": {
-        "name": "Dain",
-        "text": "...Tu sais quoi. Ce truc. Ça dure depuis un moment."
+        "name": "{name}",
+        "text": "Commence par ton genou."
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
@@ -654,7 +654,7 @@
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "*Elle regarde {name} droit dans les yeux. Ce ne sont pas les yeux de la présidente du conseil, mais ceux d'une personne.*",
+        "text": "*Elle baisse le porte-documents et attend une réponse sans détourner les yeux.*",
         "choices": [
             "Avouer honnêtement",
             "Les créneaux sont différents, alors je pensais que ça irait",
@@ -671,7 +671,7 @@
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
-        "text": "C’est la chose la plus cruelle que tu puisses dire, {name}. La gentillesse de ne pas savoir refuser — donne de faux espoirs."
+        "text": "Tu t'es excusé à midi. Mais tu n'as toujours pas dit auprès de qui, ni pour quoi."
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
@@ -679,7 +679,7 @@
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Tu m'as dit que ça allait, mais toi, tu ne voulais déplaire à personne. C'est plus cruel."
+        "text": "Tu ne voulais pas nous entendre dire non, alors tu nous as laissé la décision. Ce n'est pas être honnête."
     },
     "after3_confront_admit_4_b": {
         "name": "Seoyeon",
@@ -763,7 +763,7 @@
     },
     "minsu_d3_5b": {
         "name": "Minsu",
-        "text": "*Il soupire. Pas par mépris, mais parce qu’il s’inquiète vraiment.*"
+        "text": "*Il soupire et pose sur la table l'emballage de paille qu'il pliait.*"
     },
     "minsu_d3_6": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...Seoyeon a pleuré. Après être sortie de la salle du conseil. Aux toilettes. — Il n'y avait que moi. En un an, je ne l'avais jamais vue pleurer."
+        "text": "Je l'ai aperçue aux toilettes derrière la salle du conseil des élèves. Elle m'a dit que ça allait, mais... elle n'en avait pas l'air."
     },
     "haeun_warn_4b": {
         "name": "{name}",
@@ -831,11 +831,11 @@
     },
     "haeun_warn_5": {
         "name": "{name}",
-        "text": "*Le miroir des toilettes, eye-liner taché, porte-documents plié. Les mots de Haeun relient les trois en une seule ligne.*"
+        "text": "*Haeun vérifie que le couloir est vide, puis baisse encore la voix.*"
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae, elle n'a pas non plus fait de bruit dans les toilettes. Elle fixait juste le miroir. Ses mains tremblaient sans arrêt."
+        "text": "Elle m'a dit de ne pas lui parler, mais elle est restée longtemps devant le lavabo."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Après que le nom de {name} a été mentionné, trois mouchoirs de plus ont fini à la poubelle."
+        "text": "Si je la suis, elle me dira encore que tout va bien. Elle vous écoutera peut-être, {name}."
     },
     "haeun_warn_6_b": {
         "name": "Haeun",
@@ -855,7 +855,7 @@
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Je sais que c'est une ingérence. Pourtant, je suis inquiet. Senior, la maison est un peu compliquée en ce moment. Il y a des choses à faire avec vos parents... Quoi qu'il en soit, soyez gentil avec votre aîné. S'il te plaît."
+        "text": "Je sais que je me mêle de ce qui ne me regarde pas. Mais aujourd'hui, s'il vous plaît, ne faites pas comme si vous n'aviez rien vu."
     },
     "haeun_warn_7_b": {
         "name": "Haeun",
@@ -863,7 +863,7 @@
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
-        "text": "...En tout cas. Soyez gentil avec elle, s'il vous plaît. Je vous le demande."
+        "text": "Je ne vous demande pas de la convaincre. Ne la laissez simplement pas seule."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",
@@ -871,7 +871,7 @@
     },
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*Le miroir des toilettes, dos droit, poings serrés et blancs, lavabo vide. Les scènes fragmentées me suivent sous les lumières du couloir.*"
+        "text": "*Après le départ de Haeun, je frappe à la porte de la salle du conseil. Personne ne répond, mais une chaise racle le sol à l'intérieur.*"
     },
     "haeun_warn_8b": {
         "name": "{name}",

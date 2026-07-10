@@ -190,8 +190,8 @@
         "text": "Hab dein altes Zeugnis gesehen. Deine Deutschnoten waren gut. Liest du gerne?"
     },
     "hidden_homeroom_d2_3_b": {
-        "name": "Klassenlehrerin",
-        "text": "*Kurzes Zögern* ...Verschiedenes. Hauptsächlich — Romane."
+        "name": "{name}",
+        "text": "Ich lese ein paar Romane."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "Klassenlehrerin",
@@ -199,7 +199,7 @@
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Klassenlehrerin",
-        "text": "Lesen? — Und Schreiben?"
+        "text": "Du liest also gern. Und schreibst du auch?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",

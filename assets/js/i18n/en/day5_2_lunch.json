@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*The key chain clinks inside Seoyeon’s bag. It’s the rooftop key.*"
+        "text": "*Seoyeon takes a small metal keychain from an inner pocket of her bag. It is shaped like the rooftop key, but has no grooves.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -37,23 +37,23 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "A key?"
+        "text": "The rooftop key... No, it isn't."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "It was a president's perk. — It's yours now."
+        "text": "It's a student council souvenir. I have to return the real key today."
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*She hands over the key. When their pinkies brush, she lets go instead of saying, \"It's yours.\"*"
+        "text": "*She hands me the keychain. When our hands brush, Seoyeon readjusts the strap of her bag.*"
     },
     "tour_seo_13": {
         "name": "{name}",
-        "text": "Is the council president even allowed to do this?"
+        "text": "Then how do we get onto the roof from now on?"
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "I am, so I'm giving it to you. — Go up whenever you need some air."
+        "text": "Ask me. We can borrow the real key and open it properly together."
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
@@ -63,7 +63,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*She doesn't say 'even without me.' But it's right there, tucked behind her words.*"
+        "text": "*I slip Seoyeon's keychain into my pocket. The real rooftop key knocks once more inside her bag.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*The gym. The first bet and the final spike linger on the same court. Today the lights are on.*"
+        "text": "*The gym. Beside the line where we made our first bet stands the ball rack we filled last night. Today, the lights are on.*"
     },
     "tour_dain_1b": {
         "name": "{name}",

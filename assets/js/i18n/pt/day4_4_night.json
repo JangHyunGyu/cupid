@@ -303,7 +303,7 @@
     },
     "wall_dain_8_b": {
         "name": "{name}",
-        "text": "*Levanto a bola. Dain salta e — cortada. Na aterrissagem — agarra o joelho direito e se agacha.*"
+        "text": "*Enquanto seguro a bola sem saber o que fazer, Dain dá um passo. O joelho direito perde a força, e ela se agacha.*"
     },
     "wall_dain_9": {
         "name": "{name}",
@@ -407,7 +407,7 @@
         "choices": [
             "...Não vou falar nada. Só vou ficar aqui do lado.",
             "Pode chorar. Não precisa fingir animação. Não comigo.",
-            "...Vamos levantar juntos? Só mais uma vez."
+            "Vamos guardar as bolas primeiro. Amanhã marcamos o hospital."
         ]
     },
     "wall_dain_newdream_1": {
@@ -432,15 +432,15 @@
     },
     "wall_dain_newdream_6": {
         "name": "Dain",
-        "text": "É muito engraçado, não é? Estou nesta quadra todos os dias desde os 5 anos... mas agora tenho que pensar em outras coisas."
+        "text": "Jogo vôlei desde os cinco anos. Talvez já possa procurar outra coisa."
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "Mas com você sentado do lado — o chão parece menos gelado."
+        "text": "Enquanto procuro... você fica assim ao meu lado de vez em quando?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
-        "text": "*A bola parou fora da linha. Dain passa a palma uma vez pelo chão frio.*"
+        "text": "*Dain liga o celular e procura uma clínica de reabilitação. A bola continua fora da linha.*"
     },
     "wall_dain_cry_1": {
         "name": "Dain",
@@ -464,47 +464,47 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "*Desliga o telefone. ‘Sorria de novo hoje!!’ desaparece em uma tela preta. Apenas as luzes do ginásio piscaram em branco até o choro diminuir.*"
+        "text": "*Apaga o título do alarme, 'Sorria hoje também'. No espaço vazio, escreve 'Contar para a mãe sobre o joelho' e salva.*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*Estendi a mão. Dain pegou. Os dois levantamos. — Levantei a bola pra ela.*"
+        "text": "*Pego a bola dos braços de Dain. Ela continua sentada, e só {name} caminha até o armário de bolas.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Cerrou os dentes e saltou — A cortada mais perfeita. A bola crava na quadra.*"
+        "text": "*Observa as bolas entrarem uma a uma no armário.* ...Achei que, quando guardasse tudo, seria o fim de verdade."
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
-        "text": "*Agarrou o joelho na aterrissagem — mas está sorrindo.*"
+        "text": "Não estou dizendo para jogar tudo fora. Hoje vamos guardar só as bolas."
     },
     "wall_dain_lastspike_3_b": {
         "name": "Dain",
-        "text": "*Rindo sem força* ...Dói."
+        "text": "*Afrouxa a joelheira e a ajusta de novo sem apertar.* ...Vou ter que voltar ao hospital, não vou?"
     },
     "wall_dain_lastspike_3_c": {
-        "name": "Dain",
-        "text": "Mas é engraçado, é um pouco melhor."
+        "name": "{name}",
+        "text": "Sim. E desta vez escuta o resultado dos exames até o fim."
     },
     "wall_dain_lastspike_4": {
         "name": "Dain",
-        "text": "... haha, isso dói. Mas como é um lance, é um pouco melhor."
+        "text": "Ainda não sei se vou ser profissional. Mas vou parar de esconder isso para continuar jogando."
     },
     "wall_dain_lastspike_4_b": {
         "name": "Dain",
-        "text": "*Olha ao redor da quadra. O ginásio escuro e vazio.*"
+        "text": "*Abre no celular a tela para marcar uma consulta na ortopedia. A primeira data disponível é segunda-feira.*"
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "Tchau, quadra."
+        "text": "Amanhã também vou contar para a minha mãe e para o treinador."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
-        "text": "— Treze anos, desde os cinco. Obrigada."
+        "text": "...Você vai comigo no dia da consulta?"
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "*Não há ponto de exclamação. Dain larga a bola de vôlei e caminha primeiro.*"
+        "text": "*Enquanto {name} guarda as bolas, ela se apoia no banco e se levanta devagar.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -807,15 +807,15 @@
     },
     "night_homeroom_msg_1": {
         "name": "Professora",
-        "text": "*Mensagem* O manuscrito tá chegando perto do fim. ...Tem um trecho que eu queria que você lesse antes."
+        "text": "*Aviso do portal escolar* Publiquei o manuscrito para a sessão de leitura e crítica do clube de literatura. Quem quiser ler pode pegar amanhã uma cópia impressa na sala dos professores."
     },
     "night_homeroom_msg_2": {
         "name": "Professora",
-        "text": "*Mensagem* Se puder amanhã, passa na sala dos professores. — Depois da aula."
+        "text": "*Aviso do portal escolar* Se quiser deixar sua opinião, venha durante o clube de literatura. Não precisa responder em particular."
     },
     "night_homeroom_msg_3": {
         "name": "{name}",
-        "text": "*23h. Mensagem da Professora. Três linhas curtas. — Esse 'queria que você lesse antes' fica ecoando.*"
+        "text": "*Às nove da noite, abaixo do aviso da turma aparecem, um após o outro, os comentários de confirmação dos membros do clube. Anoto 'leitura e crítica' na agenda de amanhã.*"
     },
     "day4_hidden_msg_after_homeroom": {
         "name": "Sistema",
@@ -823,19 +823,19 @@
     },
     "night_nurse_msg_1": {
         "name": "Enfermeira",
-        "text": "o que você falou hoje na enfermaria... fica voltando na minha cabeça à noite"
+        "text": "*Notificação do aplicativo de saúde escolar* Verifique seu estado depois da consulta de hoje."
     },
     "night_nurse_msg_2": {
         "name": "{name}",
-        "text": "*Visualizado. Dez segundos. Vinte. Nenhuma mensagem nova. — Um minuto depois.*"
+        "text": "*Abaixo da notificação automática aparecem dois botões: 'Estável' e 'Preciso de outra consulta'.*"
     },
     "night_nurse_msg_3": {
         "name": "Enfermeira",
-        "text": "ah nada disso não é o que tá pensando. só ficou marcado mesmo"
+        "text": "*Aviso da enfermaria* Se precisar de outra consulta, agende antes do início do evento de amanhã. Você também pode escolher sua professora ou a orientação."
     },
     "night_nurse_msg_4": {
         "name": "Enfermeira",
-        "text": "...boa noite."
+        "text": "*Aviso da enfermaria* Não precisa responder a esta hora. Se for urgente, avise primeiro seu responsável ou um adulto próximo."
     },
     "day4_night_sleep": {
         "name": "{name}",

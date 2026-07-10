@@ -146,31 +146,31 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Olha a terceira estrela"
+        "text": "A playlist de antes. Escuta também a terceira música"
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*A terceira estrela? Virei a cabeça para a janela. Há muitas estrelas no céu noturno. Enquanto as conto com o dedo, o vidro da janela embaça.*"
+        "text": "*Abro de novo a playlist que Yuna compartilhou. A terceira música tem um ritmo um pouco mais rápido do que a que ouvimos juntos.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "O motivo fica pra depois"
+        "text": "Escuta até o fim"
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Abri a janela. O ar frio entra. As estrelas são muitas, e meu dedo para na terceira, suspenso no ar.*"
+        "text": "*Coloco os fones e aperto o botão de reprodução. Ao piano se soma o som grave de uma bateria.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*A resposta termina ali. Minhas marcas de dedo ficam na janela.*"
+        "text": "*Mesmo depois que a música termina, demoro um pouco para fechar a tela de reprodução.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Amanhã à noite, meu dedo vai parar de novo na terceira estrela.*"
+        "text": "*Abaixo do título da playlist, vejo uma breve nota de Yuna: 'A terceira é a menos calma.'*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...Tem gente que responde a essa hora. Vem na biblioteca amanhã?"
+        "text": "...Quando terminar, amanhã você me conta o que achou. Quer passar no prédio anexo?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
@@ -182,23 +182,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Mensagem privada da professora. 'Obrigada por passar na sala hoje. O lado administrativo já acabou, então não preciso mais te chamar. ...Mas se a adaptação ficar difícil, vem quando quiser.'*"
+        "text": "*Surge uma notificação no sistema de orientação escolar: 'Consulta de adaptação do aluno transferido concluída. Se precisar de mais ajuda, procure o horário de atendimento da professora da turma ou marque uma consulta no Wee Class.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*O ponto no fim da mensagem parece ter sido colocado bem depois.*"
+        "text": "*Abaixo do nome da professora também aparece seu horário de atendimento.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Leio só a última linha de novo.*"
+        "text": "*Confiro o botão de agendamento e fecho a notificação.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notificação do app de saúde. 'Prontuário da enfermaria: aluno transferido — Escoriação no cotovelo (leve). Obs: Amanhã cedo eu troco o band-aid. Trocar band-aid é procedimento médico, então não tem direito de recusa ^^'*"
+        "text": "*Notificação do aplicativo de saúde: 'Registro da enfermaria: aluno transferido — escoriação no cotovelo (leve). Manter o curativo seco até amanhã de manhã. Se levantar ou manchar de sangue, procurar a enfermaria para trocá-lo.'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Aperto a ponta do curativo com o polegar. Amanhã de manhã ganhou mais um compromisso.*"
+        "text": "*Dobro o cotovelo uma vez. As pontas do curativo continuam bem presas.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Não há nada abaixo da 38ª nota. Apenas o 39º título está vazio. No dia seguinte, o assento de Sojung ficou vazio até o fim. O nome do pai está escrito na seção de assinatura do responsável no documento de transferência.*"
+        "text": "*Não há nada abaixo da 38ª anotação. Só o título da 39ª está vazio. No dia seguinte, o lugar de Sojung ficou vazio até o fim. A professora apenas disse que Sojung havia mudado de escola.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Olho para o teto. As mensagens de hoje se sobrepõem na minha tela de bloqueio. Seoyeon. Dain. Yuna. Ainda não li nenhuma delas.*"
+        "text": "*Pego o celular de novo. Abaixo da conversa à qual acabei de responder, ainda aparecem lado a lado os nomes das outras duas pessoas a quem não respondi.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Abro a janela de resposta e fecho. Os três nomes estão alinhados lado a lado no topo dos meus chats recentes. Meu dedo não consegue tocar nenhum deles.*"
+        "text": "*Abro e fecho a conversa à qual já respondi. Nas outras duas, ainda não consegui escrever o que dizer.*"
     },
     "night2_end_2": {
         "name": "{name}",
@@ -242,11 +242,11 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Essas palavras continuam voltando para mim. Ainda não recebi resposta. Em vez disso, o número de vezes que você abre e fecha a janela de notificação aumenta.*"
+        "text": "*Duas notificações não lidas se acumulam acima da mensagem de Minsu.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Fechei os olhos. Na tela de bloqueio, só resta o número de mensagens não lidas. Mesmo depois que a tela apaga, minha mão ainda parece brilhar.*"
+        "text": "*Mesmo depois que a tela apaga, continuo segurando o celular do mesmo jeito.*"
     },
     "night2_end_4_b": {
         "name": "{name}",

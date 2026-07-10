@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*El llavero tintinea dentro del bolso de Seoyeon. Es la llave de la azotea.*"
+        "text": "*Seoyeon saca del interior del bolso un pequeño llavero metálico. Tiene la misma forma que la llave de la azotea, pero no tiene muescas.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -37,23 +37,23 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "¿Una llave?"
+        "text": "La llave de la azotea... No, no lo es."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "Era un privilegio de presidenta. — Ahora es tuya."
+        "text": "Es un recuerdo del consejo estudiantil. Hoy tengo que devolver la llave de verdad."
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Le entrega la llave. Cuando sus meñiques se rozan, suelta la mano en lugar de decir: \"Es tuya\".*"
+        "text": "*Me entrega el llavero. Cuando nuestras manos se rozan, Seoyeon vuelve a ajustarse la correa del bolso.*"
     },
     "tour_seo_13": {
         "name": "{name}",
-        "text": "¿Una presidenta puede hacer esto?"
+        "text": "Entonces, ¿cómo subiremos a la azotea a partir de ahora?"
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "Puedo, por eso te la doy. — Cuando tengas ganas de tomar aire, sube."
+        "text": "Dímelo. Podemos pedir la llave como corresponde y abrirla juntos."
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
@@ -63,7 +63,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*No dice 'aunque yo no esté'. Pero esas palabras están ahí, escondidas detrás.*"
+        "text": "*Guardo en el bolsillo el llavero que me ha dado Seoyeon. La llave auténtica de la azotea vuelve a tintinear dentro de su bolso.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*El gimnasio. La primera apuesta y el último remate persisten en la misma cancha. Hoy las luces están encendidas.*"
+        "text": "*El gimnasio. Junto a la línea donde hicimos la primera apuesta está el armario en el que guardamos los balones anoche. Hoy las luces están encendidas.*"
     },
     "tour_dain_1b": {
         "name": "{name}",

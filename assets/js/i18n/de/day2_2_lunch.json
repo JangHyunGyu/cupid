@@ -123,23 +123,23 @@
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "*In die Richtung schauend, in die Dain verschwunden ist* ...Sie hat ganz schön viel Energie. *Während sie den Lunchbox-Deckel schließt, leise* Eigentlich komme ich hier immer allein hoch."
+        "text": "*Als Dain sich zur Lunchbox beugt, zieht sie sie ein Stück zu sich heran.* Du scheinst dich mit Dain ja schon gut zu verstehen."
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "Wir kennen uns nur."
+        "text": "Wir sind in derselben Klasse. Und ihr zwei kennt euch jetzt auch."
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Wieso, stört es dich?"
+        "text": "Das entscheide ich."
     },
     "lunch2_seo_17": {
         "name": "{name}",
-        "text": "*Wäre Dain hier gewesen, hätte sie an dieser Stelle laut gelacht. Zwischen der Dachtür, der Lunchbox und {name}s Stäbchen legt sich Schweigen.*"
+        "text": "*Dain streckt die Hand nach der Lunchbox aus, hält aber inne, als sich ihre und Seoyeons Blicke treffen. Zwischen den drei herrscht kurz Stille.*"
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "*Sie sieht, als wäre nichts, auf {name}s Mundwinkel.*"
+        "text": "*Sie sieht auf {name}s Mundwinkel.*"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
@@ -372,7 +372,7 @@
     },
     "lunch2_dain_end_h": {
         "name": "{name}",
-        "text": "*Ihr Ton ist derselbe wie gestern. Nur ihr Blick fällt immer wieder unter ihre Knie.*"
+        "text": "*Ihr Ton klingt so locker wie gestern, doch ihr Blick bleibt auf dem aufgeschürften Ellbogen liegen.*"
     },
     "lunch2_dain_end_ins7_first": {
         "name": "Schulkrankenschwester",
@@ -380,19 +380,19 @@
     },
     "lunch2_dain_end_ins8_first": {
         "name": "{name}",
-        "text": "*Ihr Ton bleibt gleich. Nur ihr Blick fällt immer wieder unter ihre Knie.*"
+        "text": "*Ihr Ton klingt locker, doch ihr Blick bleibt auf dem aufgeschürften Ellbogen liegen.*"
     },
     "lunch2_dain_end_i": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Krankenschwester kommt herüber und greift meinen Ellbogen. Ihre Hände sind kalt.*"
+        "text": "*Sie holt Desinfektionsmittel und Mull hervor und hält den Mull unter meinen Ellbogen.*"
     },
     "lunch2_dain_end_j": {
         "name": "Schulkrankenschwester",
-        "text": "Halt still..."
+        "text": "Das brennt gleich ein wenig. Lass den Arm locker."
     },
     "lunch2_dain_end_k": {
         "name": "{name}",
-        "text": "*Mit Desinfektionsmittel getränkte Watte verbleibt lange Zeit um die Wunde herum. Der Rand des Bandes liegt eng am Handrücken an.*"
+        "text": "*Der mit Desinfektionsmittel getränkte Tupfer streicht über die Wunde. Die Innenseite meines Ellbogens brennt.*"
     },
     "lunch2_dain_end_l": {
         "name": "Schulkrankenschwester",
@@ -400,39 +400,39 @@
     },
     "lunch2_dain_end_m": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Hand der Krankenschwester hält inne. Dann — als wäre nichts gewesen — bewegt sie sich wieder.*"
+        "text": "*Sie deutet mir an, den Ellbogen einmal anzuwinkeln.*"
     },
     "lunch2_dain_end_n": {
         "name": "Schulkrankenschwester",
-        "text": "...Meine Hände sind eigentlich kalt. Heute scheinen sie warm zu sein."
+        "text": "Beug ihn einmal. Zieht oder brennt etwas?"
     },
     "lunch2_dain_end_o": {
         "name": "{name}",
-        "text": "*Das stimmt nicht. Als sie mich vorhin berührt hat, waren sie kalt. — Warm geworden sind sie erst jetzt.*"
+        "text": "*Auch beim Beugen und Strecken hebt sich der Rand des Pflasters nicht.*"
     },
     "lunch2_dain_end_p": {
         "name": "Schulkrankenschwester",
-        "text": "*Grinsend* Das ist Sorgfalt, echte Sorgfalt. Know-how aus Erfahrung."
+        "text": "Ein Trick aus dem Krankenhaus. An Gelenken muss man es so kleben, damit es hält."
     },
     "lunch2_dain_end_q": {
         "name": "{name}",
-        "text": "*Fürsorge. Ist das wirklich das Wort dafür?*"
+        "text": "*Selbst beim Anwinkeln des Ellbogens wirft das Pflaster keine Falten.*"
     },
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Beim Überprüfen des Verbands bemerke ich ein hellgrünes Notizbuch, das aus der Schreibtischschublade herausragt. Die erste Zeile auf der offenen Seite lautet: 'Yujin, heute—' Die Krankenschwester schließt die Schublade.*"
+        "text": "*Während ich das Pflaster prüfe, ragt ein hellgrünes Notizbuch aus der Schreibtischschublade. Die erste Zeile der offenen Seite lautet: ‚An dich von damals —‘ Die Krankenschwester schließt die Schublade.*"
     },
     "lunch2_dain_end_s": {
         "name": "Schulkrankenschwester",
-        "text": "*Verengt die Augen* Nur eins? ...Na gut. Ich mag Kakao lieber als Kaffee. Das ist das Geheimnis."
+        "text": "*Sie wirft einen Blick zur Schublade.* Vergiss, was du gerade gesehen hast. Dafür verrate ich dir etwas: Ich mag Kakao lieber als Kaffee."
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Es ist kein großes Geheimnis, aber nachdem sie es gesagt hat, tippt die Krankenschwester mit dem Fingernagel auf die Tischkante.*"
+        "text": "*Die Antwort klingt belanglos, doch ihre Hand bleibt auf dem Griff der Schublade liegen.*"
     },
     "lunch2_dain_end_u": {
         "name": "Schulkrankenschwester",
-        "text": "*Lacht leise* Geheim. Lehrerinnen dürfen auch ihre Geheimnisse haben."
+        "text": "*Sie lacht leise.* Das ist doch wenigstens ein Geheimnis wert, oder?"
     },
     "lunch2_dain_end_v": {
         "name": "Schulkrankenschwester",
@@ -440,11 +440,11 @@
     },
     "lunch2_dain_end_w": {
         "name": "Schulkrankenschwester",
-        "text": "Fertig, also ab zurück in den Unterricht. — Beim nächsten Mal erweitere ich die Untersuchungsliste."
+        "text": "So, fertig. Zurück in den Unterricht. Pass heute auf, dass es nicht nass wird."
     },
     "lunch2_dain_end_x": {
         "name": "{name}",
-        "text": "Wenn ich nicht verletzt wäre, hätte ich keinen Grund zu kommen."
+        "text": "Muss ich es morgen noch mal wechseln?"
     },
     "lunch2_dain_end_y": {
         "name": "Schulkrankenschwester",
@@ -452,23 +452,23 @@
     },
     "lunch2_dain_end_z": {
         "name": "Schulkrankenschwester",
-        "text": "Du darfst auch ohne Grund vorbeikommen."
+        "text": "Komm her, wenn es sich löst oder nass wird. Wenn alles in Ordnung ist, lass es einfach dran."
     },
     "lunch2_dain_end_b2": {
         "name": "{name}",
-        "text": "*Für einen Moment gab es kein Gelächter. Wir kamen bald wieder zusammen, aber es war zu spät.*"
+        "text": "*Die Krankenschwester trägt in die Akte ein, wann sie das Pflaster aufgeklebt hat.*"
     },
     "lunch2_dain_end_c2": {
         "name": "Schulkrankenschwester",
-        "text": "*Wieder heller* Aber nicht während des Unterrichts. Nach der Schule."
+        "text": "Wenn es dich im Unterricht stört, sag der Sportlehrerin Bescheid. Sonst komm in der Pause."
     },
     "lunch2_dain_end_d2": {
         "name": "{name}",
-        "text": "*Das frisch gefaltete Geschenkpapier liegt schief auf der Schreibtischkante.*"
+        "text": "*Am Ende der Akte steht: ‚Beugung des Ellbogens geprüft‘.*"
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Schulkrankenschwester",
-        "text": "So, fertig. Versuch nächstes Mal, dich nicht zu verletzen."
+        "text": "So, fertig. Schau nächstes Mal erst, was um dich herum ist, bevor du losrennst."
     },
     "lunch2_dain_end_nurse_short2": {
         "name": "{name}",
@@ -476,7 +476,7 @@
     },
     "lunch2_dain_end_nurse_short3": {
         "name": "{name}",
-        "text": "*Ein leeres Feld bleibt auf dem Terminplan neben dem Ausleihschalter. Yuna blättert um, ohne auch nur hinzusehen.*"
+        "text": "*Als ich auf den Flur trete, läutet es zum Ende der Stunde. Das neue Pflaster bleibt leicht an meinem Ärmel hängen.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",

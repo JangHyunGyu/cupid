@@ -366,23 +366,23 @@
     },
     "after_nurse_enter_4_d": {
         "name": "School Nurse",
-        "text": "*The nurse gets up and comes closer. When the tip of the thermometer touches the back of my hand, my fingers stiffen slightly.*"
+        "text": "*She hands me a digital thermometer, then reaches under the desk for a blood pressure monitor.*"
     },
     "after_nurse_enter_5": {
         "name": "School Nurse",
-        "text": "*The nurse walks over. Her hand lands on my forehead.*"
+        "text": "*After checking my temperature, she wraps the cuff around my arm.*"
     },
     "after_nurse_enter_6": {
         "name": "School Nurse",
-        "text": "No fever... could just be low blood pressure."
+        "text": "No fever. Your blood pressure's a little low, though."
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "You can tell blood pressure from a forehead?"
+        "text": "I didn't really eat much breakfast."
     },
     "after_nurse_enter_7": {
         "name": "School Nurse",
-        "text": "No fever, but... you need to unclench a bit. Here, lie down. Ten minutes."
+        "text": "That could explain it. Here, lie down. Let's give it ten minutes."
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "School Nurse",
-        "text": "...Sharp patient. I'm the one who should be worrying here."
+        "text": "Quick on the uptake, aren't you? But right now, let's focus on you."
     },
     "after_nurse_enter_choice_b": {
         "name": "School Nurse",
@@ -414,15 +414,15 @@
     },
     "after_nurse_enter_8": {
         "name": "School Nurse",
-        "text": "Don't worry about being so polite in here. The nurse's office is a chill zone. That's kind of the whole point."
+        "text": "No need to force out a whole sentence. If you're dizzy, take your time answering."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
-        "text": "But you're a teacher."
+        "text": "Will I feel better soon?"
     },
     "after_nurse_enter_8_c": {
         "name": "School Nurse",
-        "text": "*Handing over a cup of water* Right, I'm a teacher. But in here, you being comfortable comes first."
+        "text": "*Handing me a cup of water* Drink this and rest. You should feel a lot better. If the dizziness doesn't pass, we'll tell your homeroom teacher too."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
@@ -478,19 +478,19 @@
     },
     "after_nurse_enter_11_f": {
         "name": "School Nurse",
-        "text": "What I said earlier — thank you for your concern. I never thought I would hear those words from a patient."
+        "text": "You said I looked tired earlier, didn't you? If even a student can tell, I should probably call it an early day. Thanks."
     },
     "after_nurse_enter_11_g": {
         "name": "School Nurse",
-        "text": "*The health teacher puts down the water cup and starts laughing.*"
+        "text": "*She notes the time in the medical log, then takes away the empty cup.*"
     },
     "after_nurse_enter_11_h": {
         "name": "School Nurse",
-        "text": "You said it was quiet earlier, right? — I still remember that."
+        "text": "You said it was quiet in here, right? If you need a break, tell your homeroom teacher and come by. Don't just tough it out."
     },
     "after_nurse_enter_11_i": {
         "name": "School Nurse",
-        "text": "*The nurse folds the edge of the curtain once with her finger.*"
+        "text": "*She pulls back the curtain and straightens the sheet.*"
     },
     "after_nurse_enter_11_j": {
         "name": "{name}",
@@ -510,7 +510,7 @@
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",
-        "text": "Next time you feel sick — actually, better if there isn't a next time."
+        "text": "If the symptoms come back, come straight here. Don't try to tough it out in the hall."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",

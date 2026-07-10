@@ -419,7 +419,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "hidden_homeroom_d4_cafe_5_h": {
         "background": "assets/images/background/cafe.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/teacher_shy.png",
+        "character": "assets/images/characters/teacher_normal.png",
         "next": "hidden_homeroom_d4_cafe_6"
     },
     "hidden_homeroom_d4_cafe_6": {
@@ -506,7 +506,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_morning_choice_a": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_morning_12"
     },
     "hidden_nurse_d4_morning_choice_b": {
@@ -516,12 +516,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_morning_12": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_morning_13"
     },
     "hidden_nurse_d4_morning_13": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "setFlags": ["nurse_day4_afterschool"],
         "next": "hidden_nurse_d4_morning_freetalk"
     },
@@ -531,7 +531,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "hidden_nurse_d4_check"
     },
     "hidden_nurse_d4_check": {
-        "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
             { "condition": "nurse_day3", "next": "hidden_nurse_d4_1" },
@@ -672,12 +671,12 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_name_choice_a": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_6"
     },
     "hidden_nurse_d4_name_choice_b": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_nurse_d4_6"
     },
     "hidden_nurse_d4_6": {
@@ -774,13 +773,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_meal_4": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "setFlags": ["nurse_day4","nurse_day4_help"],
         "next": "hidden_nurse_d4_meal_4_b"
     },
     "hidden_nurse_d4_meal_4_b": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_shy.png",
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "morning4_end"
     },
     "hidden_nurse_d4_pass": {

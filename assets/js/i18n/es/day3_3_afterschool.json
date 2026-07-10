@@ -431,7 +431,7 @@
         "text": "*Se sienta en el banco. La mano que le frota la rodilla vuelve una y otra vez al mismo punto.*",
         "choices": [
             "...¿Estás bien? No te fuerces. Hoy descansa.",
-            "Dale, tírame un saque más. Si no lo paro, ganas tú."
+            "Entonces me quedo aquí. Habla cuando te apetezca."
         ]
     },
     "after3_dain_pity_trap_1": {
@@ -496,31 +496,31 @@
     },
     "after3_dain_correct_6": {
         "name": "Dain",
-        "text": "...No sé. Pero dale, agarra la pelota. Que no la vas a parar de verdad."
+        "text": "...No sé. Pero quédate aquí un rato. Ahora mismo no quiero estar sola."
     },
     "after3_dain_correct_7": {
         "name": "Dain",
-        "text": "*Se levanta. Hace girar la rodilla una vez, con suavidad. Sin darse cuenta. Y entonces — Se pone en posición de saque. Igual que siempre.*"
+        "text": "*Me hace sitio en el interior del banco. Empuja el balón con la punta del pie hasta dejarlo fuera de la pista.*"
     },
     "after3_dain_correct_8": {
         "name": "Dain",
-        "text": "¡Ahí voy, nuevo!"
+        "text": "...Hablemos un rato."
     },
     "after3_dain_correct_9": {
         "name": "{name}",
-        "text": "*El saque vuela. No puedo conseguirlo. La pelota golpea la muñeca y rebota hasta el techo. Dain aplaude y ríe. Los hombros que estaban levantados bajan como si contuvieran la respiración.*"
+        "text": "*Me siento a su lado. El balón se detiene sobre la línea de la pista. Dain pasa un buen rato volviendo a atarse los cordones.*"
     },
     "after3_dain_correct_10": {
         "name": "Dain",
-        "text": "¿Lo ves? ¡Gané! ...Ah."
+        "text": "No suelo hablar de estas cosas. ...¿Por dónde empiezo?"
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "*Al aterrizar, su rodilla derecha cede un poco. Su mano se queda encima.*"
+        "text": "*Intenta estirar la pierna derecha, pero se detiene y vuelve a doblarla. Mantiene la mano sobre la rodilla.*"
     },
     "after3_dain_correct_12": {
-        "name": "Dain",
-        "text": "...Oye. Esto. Ya viene de hace tiempo."
+        "name": "{name}",
+        "text": "Hablemos primero de tu rodilla."
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
@@ -654,7 +654,7 @@
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "*Mira directamente a {name}. No son los ojos de la presidenta del consejo estudiantil, sino los de una persona.*",
+        "text": "*Baja el portapapeles. Sin apartar la mirada, espera una respuesta.*",
         "choices": [
             "Admitirlo sin rodeos",
             "Como los horarios no coincidían, pensé que no pasaba nada",
@@ -671,7 +671,7 @@
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
-        "text": "Eso es lo más cruel que puedes decir, {name}. La ternura de no saber decir que no — regala esperanzas falsas."
+        "text": "Al mediodía dijiste que lo sentías. Pero aún no he oído a quién pedías perdón ni por qué."
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
@@ -679,7 +679,7 @@
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
-        "text": "Me dijiste que estaba bien, pero tú no querías caerle mal a nadie. Eso es más cruel."
+        "text": "Nos dejaste la decisión porque no querías oír que no. Eso no es ser sincero."
     },
     "after3_confront_admit_4_b": {
         "name": "Seoyeon",
@@ -763,7 +763,7 @@
     },
     "minsu_d3_5b": {
         "name": "Minsu",
-        "text": "*Suspira. No es burla. Es un suspiro de verdadera preocupación.*"
+        "text": "*Suspira y deja sobre la mesa el envoltorio de la pajita que estaba doblando.*"
     },
     "minsu_d3_6": {
         "name": "{name}",
@@ -823,7 +823,7 @@
     },
     "haeun_warn_4": {
         "name": "Haeun",
-        "text": "...La vi llorar. Al salir de la sala del consejo. En el baño. — Solo la vi yo. En un año, nunca la había visto llorar."
+        "text": "La vi un momento en el baño de detrás de la sala del consejo. Me dijo que estaba bien, pero... no lo parecía."
     },
     "haeun_warn_4b": {
         "name": "{name}",
@@ -831,11 +831,11 @@
     },
     "haeun_warn_5": {
         "name": "{name}",
-        "text": "*El espejo del baño, delineador corrido, carpeta de clip doblada. Las palabras de Haeun las unen en una sola línea.*"
+        "text": "*Haeun comprueba que el pasillo esté vacío y baja aún más la voz.*"
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Sunbae, tampoco hizo ningún ruido en el baño. Solo miraba fijamente el espejo. Sus manos no dejaban de temblar."
+        "text": "Me dijo que no le hablara, pero tardó mucho en salir de delante del lavabo."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -847,7 +847,7 @@
     },
     "haeun_warn_6": {
         "name": "Haeun",
-        "text": "Después de que salió el nombre de {name}, tres pañuelos más fueron al basurero."
+        "text": "Si voy yo, volverá a decirme que está bien. Quizá a {name} sí le haga caso."
     },
     "haeun_warn_6_b": {
         "name": "Haeun",
@@ -855,7 +855,7 @@
     },
     "haeun_warn_7": {
         "name": "Haeun",
-        "text": "Sé que es una intromisión. Aún así, estoy preocupado. Mayor, la casa está un poco complicada en este momento. Hay cosas que hacer con tus padres... De todos modos, por favor sé amable con tu superior. Por favor."
+        "text": "Sé que me estoy metiendo donde no me llaman. Aun así, por hoy no finjas que no has visto nada."
     },
     "haeun_warn_7_b": {
         "name": "Haeun",
@@ -863,7 +863,7 @@
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
-        "text": "...En fin. Por favor, trátala bien. Te lo pido."
+        "text": "No te pido que la convenzas. Solo que no la dejes sola."
     },
     "haeun_warn_7_d": {
         "name": "Haeun",
@@ -871,7 +871,7 @@
     },
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*El espejo del baño, espalda recta, puños blancos apretados, lavabo vacío. Las escenas fragmentadas me siguen bajo las luces del pasillo.*"
+        "text": "*Después de que Haeun se marcha, llamo a la puerta de la sala del consejo. Nadie responde, pero dentro se oye una silla al moverse.*"
     },
     "haeun_warn_8b": {
         "name": "{name}",

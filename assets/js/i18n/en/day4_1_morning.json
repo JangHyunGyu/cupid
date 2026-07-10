@@ -124,7 +124,7 @@
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Homeroom Teacher",
-        "text": "*Flustered* Oh, it's just — I had some paperwork left."
+        "text": "I came for the literature club critique. I brought my manuscript too."
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
@@ -132,11 +132,11 @@
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
-        "text": "By yourself?"
+        "text": "You hold critiques on weekends?"
     },
     "hidden_homeroom_d4_3_e": {
         "name": "Homeroom Teacher",
-        "text": "*Hands in pockets* ...A teacher's still a teacher on weekends. You know how it is."
+        "text": "Today was the only time the students who signed up were free. Their advisor has to be there."
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
@@ -160,15 +160,15 @@
     },
     "hidden_homeroom_d4_5": {
         "name": "Homeroom Teacher",
-        "text": "...Have you eaten?"
+        "text": "The literature club members went ahead to a café nearby. Want to sit in on the critique?"
     },
     "hidden_homeroom_d4_5_b": {
         "name": "{name}",
-        "text": "Not yet."
+        "text": "Is it okay if I come?"
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Homeroom Teacher",
-        "text": "Then let's eat first. *muttering softly* As a teacher, I should check whether a student has eaten. — Juice for you, though."
+        "text": "It's an open critique, so that's fine. But whether you read the manuscript is up to you."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Homeroom Teacher",
@@ -178,21 +178,21 @@
         "name": "{name}",
         "text": "*The corner of the paper envelope is pressed under the cup holder.*",
         "choices": [
-            "Sure. Is there a cafe nearby?",
-            "Probably shouldn't, right?"
+            "Sure. May I sit in on the critique?",
+            "I already have plans today."
         ]
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Homeroom Teacher",
-        "text": "Having tea with a student outside school is, honestly, a little awkward."
+        "text": "The club members are at a table in the back. Rumors that we came alone would spread faster than my manuscript."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
-        "text": "Awkward?"
+        "text": "I was just about to say the same thing."
     },
     "hidden_homeroom_d4_cafe_1_c": {
         "name": "Homeroom Teacher",
-        "text": "*Taking a sip of coffee* Honestly? A little."
+        "text": "*Taking a sip of coffee* Good. Then we're on the same page."
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Homeroom Teacher",
@@ -200,7 +200,7 @@
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
-        "text": "Did you write more of the manuscript yesterday?"
+        "text": "Which part are you showing the club?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Homeroom Teacher",
@@ -208,15 +208,15 @@
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Homeroom Teacher",
-        "text": "...little. After you saw it yesterday — your hand moved again."
+        "text": "The opening, for now. I'm still most worried about how the characters sound."
     },
     "hidden_homeroom_d4_cafe_2_b": {
         "name": "{name}",
-        "text": "Did me seeing it actually help?"
+        "text": "Will my comments be part of the critique too?"
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Homeroom Teacher",
-        "text": "Rather than help... *looking out the window* after it was found out, the envelope felt a little lighter. Even paper gets heavy when you carry it alone."
+        "text": "I'll collect the comments without names. What matters isn't who said it, but where the story lost them."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
@@ -224,31 +224,31 @@
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Homeroom Teacher",
-        "text": "Do you know what the hardest part of writing a novel is?"
+        "text": "Do you know the hardest part of a critique?"
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Homeroom Teacher",
-        "text": "In the end, you need someone to read it for it to feel real. Without a reader, I keep stalling."
+        "text": "Hearing where someone stopped reading instead of what they liked. It hurts the most—and helps the most."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Homeroom Teacher",
         "text": "*The teacher sets down her coffee cup. Her body leans slightly toward the window.*",
         "choices": [
-            "That novel — who's the protagonist?",
-            "Being your first reader... that's a lot of pressure"
+            "You still haven't decided on the ending?",
+            "You'll show the whole thing to the club too, right?"
         ]
     },
     "hidden_homeroom_d4_cafe_choice_a": {
         "name": "Homeroom Teacher",
-        "text": "...You'll know when you read it. Here's a hint — she's a bit like me."
+        "text": "I still haven't settled on the ending. Every time I try to make it impressive, I ruin it."
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Homeroom Teacher",
-        "text": "*chuckles* If it feels heavy, you don't have to read it. — But read it with a light heart. I'd prefer that."
+        "text": "Of course. These are the copies I'm handing out today. There isn't a separate version just for you."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Homeroom Teacher",
-        "text": "...Will you be my first reader?"
+        "text": "Could you mark anything that feels odd from a student's perspective? I'll consider your notes alongside everyone else's."
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
@@ -256,7 +256,7 @@
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
-        "text": "I want to."
+        "text": "I'll give it a try."
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "Homeroom Teacher",
@@ -264,71 +264,71 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
-        "text": "...Thanks. But this, don't tell anyone — you know? ...This is our secret. The cup sleeve corner keeps folding."
+        "text": "Thanks. You don't have to put your name on it. It's anonymous, so mark it honestly."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "You are going to call it work again, right?"
+        "text": "Does this count as work too?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Homeroom Teacher",
-        "text": "*Freezes* ...Don't steal my line before I say it."
+        "text": "Let's call it advising the literature club today."
     },
     "hidden_homeroom_d4_cafe_5_f": {
         "name": "{name}",
-        "text": "*I chuckled. She chuckled too. At the same time.*"
+        "text": "*At the table in the back, a club member takes another copy of the manuscript.*"
     },
     "hidden_homeroom_d4_cafe_5_g": {
         "name": "Homeroom Teacher",
-        "text": "...Right. It shouldn't happen."
+        "text": "And we'll only discuss the manuscript during club time. I won't mix it into class or counseling."
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "Homeroom Teacher",
-        "text": "*She takes her hand out of her pocket. Her fingertips hover in the air for a moment. A habitual gesture.*"
+        "text": "*She numbers each copy and sends the last one to the table in the back.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Homeroom Teacher",
-        "text": "*Setting down her coffee cup* ...Meeting outside like this once in a while isn't so bad."
+        "text": "Let's hold the next critique in the school library. We chose today's venue in too much of a rush."
     },
     "hidden_homeroom_d4_cafe_6_b": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher looks at {name}. Her eyes are no longer dry and detached.* *The cafe door closes slowly behind them.*"
+        "text": "*After checking the bill with the club members, she heads back toward school first.*"
     },
     "hidden_homeroom_d4_decline": {
         "name": "Homeroom Teacher",
-        "text": "...Right. I shouldn't. Go on, it's the weekend, don't hang around school. — Go have fun."
+        "text": "All right. Your plans come first. I'll get formal feedback on the manuscript at school."
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "Homeroom Teacher",
-        "text": "*She turns away. Her shoulders sink slightly. Her reflection appears small in the cafe glass door.*"
+        "text": "*Checking the literature club group chat, she heads back inside the school.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "*Weekend morning. I opened the nurse's office door. She's sitting in her chair in a white coat, but there's no joke memo on the desk.*"
+        "text": "*On the morning set aside to prepare for the school event, I open the nurse's office door at my scheduled counseling time. A counseling form and an information sheet lie in front of the nurse.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
-        "text": "Oh, you came."
+        "text": "Right on time. Have a seat."
     },
     "hidden_nurse_d4_morning_4": {
         "name": "School Nurse",
-        "text": "*The health teacher says, ‘Oh, I’m here,’ and picks up the stethoscope, then puts it back down on the desk.*"
+        "text": "*She opens the counseling form and picks up her pen.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
-        "text": "Is this the last counseling session?"
+        "text": "We're wrapping up our last session, right?"
     },
     "hidden_nurse_d4_morning_6": {
         "name": "School Nurse",
-        "text": "Counseling... *she spins in her chair* Yeah. The last session."
+        "text": "Right. We'll check how you're doing today and decide where you can go for help next time."
     },
     "hidden_nurse_d4_morning_7": {
         "name": "School Nurse",
-        "text": "*The school nurse pretends to organize paperwork on her desk — but she's turning the same piece of paper over for the third time.*"
+        "text": "*She goes through the items she wrote down during our last session, one by one.*"
     },
     "hidden_nurse_d4_morning_8": {
         "name": "School Nurse",
-        "text": "Can I ask you something?"
+        "text": "I need to check one thing."
     },
     "hidden_nurse_d4_morning_9": {
         "name": "{name}",
@@ -336,49 +336,49 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "School Nurse",
-        "text": "*The school nurse touches her glasses. The eyes visible through them are bigger than I expected. Eyes that were hidden behind the playfulness.*"
+        "text": "*She turns the school counseling information sheet toward {name}.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "School Nurse",
-        "text": "...Will you come back after graduation?"
+        "text": "Have you decided on an adult you can ask for help besides me?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*It's not a question. The nurse presses her thumb against the rim of the paper cup. A dent forms.*",
+        "text": "*The sheet lists the order: homeroom teacher, school counseling center, then parent or guardian.*",
         "choices": [
-            "I will.",
-            "..."
+            "I'll talk to my homeroom teacher and the counseling center too.",
+            "I'm still not sure."
         ]
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
-        "text": "I will."
+        "text": "I'll talk to my homeroom teacher and the counseling center too."
     },
     "hidden_nurse_d4_morning_choice_b": {
         "name": "{name}",
-        "text": "*Silence.*"
+        "text": "I'm still not sure."
     },
     "hidden_nurse_d4_morning_12": {
         "name": "School Nurse",
-        "text": "...Really?"
+        "text": "Good. That's much better than trying to endure it alone."
     },
     "hidden_nurse_d4_morning_13": {
         "name": "School Nurse",
-        "text": "*The nurse adjusts her glasses. Her fingertip stops for a moment beneath the lens.*"
+        "text": "I won't pass your story around carelessly. But if I think you're in danger of being hurt, I'll bring in another adult right away. Let's agree on that now."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "School Nurse",
-        "text": "*She sets the teacup on the edge of the desk and lets the smile fade.* Let's not joke our way out of this today.",
+        "text": "*She closes the counseling form.* You remember the order we wrote down today, right? If you feel lost, start with the first person on the list.",
         "context": "Day 4. The moment of farewell when asking if she'll come back after graduation. The scene where both show their true hearts. Tone: Deeper, more emotional conversation. Truth behind the playfulness. The meaning of being called by name.",
         "personality": "The school nurse is careful and honest. She wants to call out your name but is in a cautious position. Tears come at your promise."
     },
     "hidden_nurse_d4_check": {
-        "name": "{name}",
-        "text": "*The weekend is winding down.*"
+        "name": "System",
+        "text": ""
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*School messenger notification: ‘Looking for someone to help’. My feet point toward the health room. Documents and examination tools are piled on the desk. The health teacher is calmly organizing things.*"
+        "text": "*An event first-aid kit and examination supplies are stacked on one side of the desk. The nurse looks up from labeling them.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
@@ -386,27 +386,27 @@
     },
     "hidden_nurse_d4_2": {
         "name": "School Nurse",
-        "text": "Huh? You actually came? Didn't expect that. — A student volunteering at the nurse's office on a weekend."
+        "text": "I asked for volunteers to assemble the event first-aid kits, but I didn't think you'd actually sign up."
     },
     "hidden_nurse_d4_2_b": {
         "name": "{name}",
-        "text": "So the patient is helping the nurse."
+        "text": "So today I'm a volunteer, not a patient."
     },
     "hidden_nurse_d4_2_c": {
         "name": "School Nurse",
-        "text": "*Laughing* A patient helping the nurse. I'll have to record this one."
+        "text": "A volunteer today. If you get hurt, you go back to being a patient."
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "*Seen outside school, her smile is different. No name tag, no pens in the gown pocket. The two of us fold checkup forms and wipe down the blood pressure monitor.*"
+        "text": "*As event staff come and go, we lay out gauze and alcohol swabs by type across the table.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "School Nurse",
-        "text": "*Handing over documents* Can you sort these? By grade."
+        "text": "*Handing me an empty pouch* Two gauze pads and three alcohol swabs in each. I'll handle any paperwork with personal information."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "*Sit side by side and organize documents. Every time their hands brush, the health teacher's fingertips turn to the edge of the paper.*"
+        "text": "*I fill each pouch with supplies. The nurse checks every finished kit again.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "School Nurse",
@@ -442,7 +442,7 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "School Nurse",
-        "text": "No one called my name. ‘Nurse’, ‘Night Duty’, ‘Ward 3’. — It's all a title, not a name."
+        "text": "The hardest part was when I started checking bed numbers before names. I couldn't even tell who I was looking at anymore."
     },
     "hidden_nurse_d4_4_g": {
         "name": "{name}",
@@ -450,39 +450,39 @@
     },
     "hidden_nurse_d4_4_h": {
         "name": "School Nurse",
-        "text": "At school I'm 'School Nurse,' right? Another title. *With a slight smile* But you — you've never once called me by a title, have you?"
+        "text": "At school, I have time to see students one at a time. And when something is beyond me, taking them to someone who can help is part of my job too."
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",
-        "text": "...Have I?"
+        "text": "Does connecting someone with help count as treatment?"
     },
     "hidden_nurse_d4_4_j": {
         "name": "School Nurse",
-        "text": "You just call me 'teacher' — not 'school nurse.' I liked that."
+        "text": "So if you hit a wall here, go to your homeroom teacher or the counseling center too. Don't carry it alone."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "*Paperwork is done. The school nurse taps the name field once with her finger, then finally stretches.*"
+        "text": "*She zips the final first-aid kit closed. Outside, other volunteers carry away the completed boxes.*"
     },
     "hidden_nurse_d4_5": {
         "name": "School Nurse",
-        "text": "*Looking out the window* That's why I came here. A place where they call me 'teacher,' not 'school nurse.' — It's a small difference, but it meant a lot."
+        "text": "That's why I came to a school. I wanted to relearn how to listen before trying to treat anything."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*The nurse's fingertip stays over the name field for a long time.*",
+        "text": "*The nurse writes down the number of completed first-aid kits.*",
         "choices": [
-            "What's your name? Not \"School Nurse\"",
-            "So that's why you came to this school"
+            "When are you glad you became a school nurse?",
+            "What's the biggest difference between a hospital and a school?"
         ]
     },
     "hidden_nurse_d4_name_choice_a": {
         "name": "School Nurse",
-        "text": "*She closes her mouth for a moment.* ...Juwon. Lee Juwon."
+        "text": "When a student who's been suffering alone opens that door on their own. That's when I know I chose well."
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "School Nurse",
-        "text": "...Yeah. Here, everyone just comes with minor injuries. I like that."
+        "text": "Here, I can talk to someone before they get hurt. That's the biggest difference."
     },
     "hidden_nurse_d4_6": {
         "name": "School Nurse",
@@ -494,63 +494,63 @@
     },
     "hidden_nurse_d4_6_c": {
         "name": "School Nurse",
-        "text": "*The school nurse glances toward {name} for a moment.* ...It is nothing."
+        "text": "It does matter. And I'll make sure every minute of your volunteer time is recorded."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
-        "text": "*'It's nothing' The corner of the folder presses against my fingertips behind me.*"
+        "text": "*The nurse writes the start and end times on the volunteer form.*"
     },
     "hidden_nurse_d4_choice": {
         "name": "School Nurse",
-        "text": "So, what should I get you as thanks? Let's just say a teacher buying a student a meal is an extension of education.",
+        "text": "All that's left is labeling them. The event staff are going to buy snacks—anyone want to help finish up?",
         "choices": [
-            "Is it okay if it's an educational activity?",
+            "I'll stay and label the first-aid kits too.",
             "That's okay, I should get going"
         ]
     },
     "hidden_nurse_d4_meal_walk": {
         "name": "{name}",
-        "text": "*We headed to the snack shop in front of school.*"
+        "text": "*I stop by the snack shop in front of school with the event staff. There are enough takeout bags for everyone.*"
     },
     "hidden_nurse_d4_meal_1": {
         "name": "School Nurse",
-        "text": "Ah, it's spicy. I can't eat this as much as I used to."
+        "text": "Who picked the spicy one? Get some water first."
     },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
-        "text": "You must've had this when you were a student too."
+        "text": "You're the one who tried it first."
     },
     "hidden_nurse_d4_meal_1_c": {
         "name": "School Nurse",
-        "text": "When was that? *laughs* I'm not like I used to be anymore."
+        "text": "I had to test it. *Taking a drink of water* Not even a first-aid kit can save this."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
-        "text": "*We headed back to the nurse's office.*"
+        "text": "*We return to the nurse's office with the staff and label the kit boxes.*"
     },
     "hidden_nurse_d4_meal_2": {
         "name": "{name}",
-        "text": "You're not old at all."
+        "text": "You look different now than when you talk about the hospital."
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "School Nurse",
-        "text": "*The she pauses. Sets down her chopsticks.*"
+        "text": "*Her hand pauses midway through applying a label.*"
     },
     "hidden_nurse_d4_meal_3": {
         "name": "School Nurse",
-        "text": "...That kind of thing. Sounds strange coming from a student."
+        "text": "I appreciate that, but don't make my feelings your responsibility."
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*The hand holding the chopsticks stops on the table.*"
+        "text": "*She presses the final label into the center of the box.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "School Nurse",
-        "text": "*Smiling again* Alright, if you're done eating, you're dismissed. I've still got work to do."
+        "text": "All right, that's it. Check your volunteer hours, then everyone back to the event site."
     },
     "hidden_nurse_d4_meal_3_d": {
         "name": "{name}",
-        "text": "*On the way back. The School Nurse calls from behind.*"
+        "text": "*As I'm about to leave, the nurse calls me back with the form in her hand.*"
     },
     "hidden_nurse_d4_meal_3_e": {
         "name": "School Nurse",
@@ -558,15 +558,15 @@
     },
     "hidden_nurse_d4_meal_4": {
         "name": "School Nurse",
-        "text": "{name}. Thanks for today. — Seriously."
+        "text": "{name}. Thanks for helping today. Check your volunteer hours on Monday."
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "School Nurse",
-        "text": "*The nurse presses down the cup noodle lid. One chopstick shifts slightly out of line.*"
+        "text": "*She hands the completed first-aid kit box to the teacher in charge of the event.*"
     },
     "hidden_nurse_d4_pass": {
         "name": "School Nurse",
-        "text": "Alright. Get home safe. And come by again sometime."
+        "text": "All right. Coming in on a weekend was more than enough. Get home safe."
     },
     "morning4_end": {
         "name": "{name}",

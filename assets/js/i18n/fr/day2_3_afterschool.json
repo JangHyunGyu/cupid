@@ -17,47 +17,47 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Mon coude me lance un peu. Je devrais passer à l'infirmerie.*"
+        "text": "*Après le cours de sport de cinquième heure, le bord du pansement accroche ma manche. Je le plaque une fois, mais il se redécolle.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*En remontant ma manche, je vois une petite écorchure au coude. Ce n'est rien de grave, mais ça saigne un peu.*"
+        "text": "*Quand je remonte ma manche, un côté du pansement est décollé. La plaie ne saigne plus.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Infirmière",
-        "text": "Deux jours d'affilée, faudrait te faire une carte de membre de l'infirmerie."
+        "text": "Il n'aura même pas tenu une journée, ce pansement. Assieds-toi."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "Je me suis écorché le coude."
+        "text": "Le bord n'arrête pas de s'accrocher à ma manche."
     },
     "hidden_nurse_d2_4": {
         "name": "Infirmière",
-        "text": "Bouge pas..."
+        "text": "Fais voir."
     },
     "hidden_nurse_d2_5": {
         "name": "Infirmière",
-        "text": "Là... comme ça. Voilà, c'est fait. Cet angle tient le plus longtemps."
+        "text": "*Elle retire le pansement décollé, nettoie autour de la plaie et en sort un neuf.* Ça va piquer un peu."
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-        "text": "*Ses mains sont proches, en train de poser le pansement.*",
+        "text": "*L'infirmière plie et déplie mon coude pour mesurer la longueur nécessaire.*",
         "choices": [
-            "Vos mains sont chaudes",
-            "Tout ce soin pour un simple pansement"
+            "On apprend aussi ce genre de chose à l'hôpital ?",
+            "Vous faites même attention à l'angle."
         ]
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Infirmière",
-        "text": "...J'ai les mains plutôt froides d'habitude. On dirait qu'elles sont chaudes aujourd'hui."
+        "text": "Oui. Sur une articulation, il faut le poser de façon à ce que les mouvements ne le décollent pas."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Infirmière",
-        "text": "*avec un sourire* C'est du soin, du soin. Si on le colle n'importe comment, ça tombe."
+        "text": "C'est mon travail. Si je le pose n'importe comment et qu'il tombe en cours, ça pose problème."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*En vérifiant le bandage, je remarque un cahier vert clair qui dépasse du tiroir du bureau. La première ligne de la page ouverte : 'Yujin, aujourd'hui—' L'infirmière ferme le tiroir.*"
+        "text": "*En vérifiant le pansement, je remarque un carnet vert pâle qui dépasse du tiroir. Sur la première ligne de la page ouverte : « À toi, ce jour-là— » L'infirmière referme le tiroir.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
@@ -81,11 +81,11 @@
     },
     "hidden_nurse_d2_8": {
         "name": "Infirmière",
-        "text": "C'est bon, retourne en cours. — La prochaine fois, viens sans blessure."
+        "text": "Voilà, c'est fait. Garde-le au sec aujourd'hui."
     },
     "hidden_nurse_d2_9": {
-        "name": "Infirmière",
-        "text": "Tu peux venir même sans raison. Juste pas pendant les cours. Après la classe. *J'ai quitté l'infirmerie.*"
+        "name": "{name}",
+        "text": "*Après qu'elle m'a demandé de revenir si le pansement se décolle ou si du sang le traverse, je quitte l'infirmerie.*"
     },
     "after2_choice": {
         "name": "{name}",
@@ -178,15 +178,15 @@
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "*Elle lève la main d'un coup. High-five.*"
+        "text": "*Nos paumes se rencontrent. Dain rit, puis retire sa main avec un temps de retard.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "...Oh pardon ! C'est une habitude !"
+        "text": "...Ah, pardon ! Ça m'arrive après un match !"
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*Elle a retiré sa main. Elle n'a pas du tout l'air désolée. — Ma paume est encore chaude.*"
+        "text": "*Dain passe la main qui vient de heurter la mienne dans ses cheveux, à l'arrière de sa tête.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -348,55 +348,55 @@
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-        "text": "*Elle roule ses épaules. J'entends craquer.*"
+        "text": "*Elle fait rouler une épaule et prend une petite inspiration.*"
     },
     "after2_seo_neck_react_b": {
-        "name": "Seoyeon",
-        "text": "Attends. Ne bouge pas."
+        "name": "{name}",
+        "text": "Attends. Essaie de mettre ça en dessous."
     },
     "after2_seo_neck_react_c": {
-        "name": "Seoyeon",
-        "text": "*Elle se lève et passe derrière {name}. Ses deux mains se posent sur ses épaules.*"
+        "name": "{name}",
+        "text": "*Je pousse vers Seoyeon une des boîtes à dossiers vides empilées à côté.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "C'est vraiment tendu. Bouge pas une seconde."
+        "text": "Tu comptes te servir de ma boîte à dossiers comme support ?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-        "text": "*Je ferme les yeux et me laisse faire.*"
+        "text": "C'est une boîte vide. Tu n'as qu'un seul cou."
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
-        "text": "*Doucement* ...Ne bouge pas. Juste un instant."
+        "text": "...Tu sais toujours quoi répondre."
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*La main de qui ? C'est la main de Seoyeon qui est sur mon épaule. Je me suis trompé dans l'ordre. Le bout de ses doigts s'arrête aussi un instant sur mon épaule.*"
+        "text": "*Seoyeon pose ses papiers sur la boîte. Elle a un peu moins besoin de pencher la tête.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "*Plus bas* ...Encore un peu."
+        "text": "Pour aujourd'hui, je veux bien."
     },
     "after2_seo_neck_high_2_b": {
         "name": "{name}",
-        "text": "*Le bout de ses doigts appuie sur ma nuque, puis se relâche lentement. Pendant un instant, aucun de nous ne dit quoi que ce soit.*"
+        "text": "*Seoyeon laisse la boîte en place. Nous reprenons le tri des documents par date.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Je me recule légèrement.*"
+        "text": "*Je commence à lui tendre la boîte, puis je m'arrête.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
-        "text": "C'était quoi, ça, d'un coup ?"
+        "text": "Laisse tomber si tu n'en veux pas."
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-        "text": "*Sa main s'arrête un instant dans le vide.*"
+        "text": "*Elle prend la boîte et la pose à côté des papiers.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "*Retirant ses mains* ...C'est rien."
+        "text": "Je l'essaierai quand on aura fini."
     },
     "after2_seo_9": {
         "name": "{name}",

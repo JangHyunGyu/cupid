@@ -29,7 +29,7 @@
     },
     "tour_seo_8": {
         "name": "{name}",
-        "text": "*Le porte-clés tinte à l'intérieur du sac de Seoyeon. C'est la clé du toit.*"
+        "text": "*Seoyeon sort un petit porte-clés métallique d'une poche intérieure de son sac. Il a la forme de la clé du toit, mais aucune encoche.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
@@ -37,23 +37,23 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "Une clé ?"
+        "text": "La clé du toit... Non, ce n'est pas elle."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "C'était un privilège de présidente. — Maintenant, c'est à toi."
+        "text": "C'est un souvenir du conseil des élèves. Je dois rendre la vraie clé aujourd'hui."
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "*Elle tend la clé. Quand leurs auriculaires se frôlent, elle lâche sa main au lieu de dire : « Elle est à toi. »*"
+        "text": "*Elle me tend le porte-clés. Lorsque nos mains se frôlent, Seoyeon rajuste la sangle de son sac.*"
     },
     "tour_seo_13": {
         "name": "{name}",
-        "text": "La présidente du conseil a le droit de faire ça ?"
+        "text": "Alors comment est-ce qu'on montera sur le toit maintenant ?"
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "J'ai le droit, c'est pour ça que je te la donne. — Monte prendre l'air de temps en temps."
+        "text": "Demande-moi. On empruntera la vraie clé et on ouvrira la porte ensemble, dans les règles."
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
@@ -63,7 +63,7 @@
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*Elle ne dit pas 'même sans moi'. Mais c'est caché derrière.*"
+        "text": "*Je glisse le porte-clés de Seoyeon dans ma poche. La vraie clé du toit tinte encore une fois dans son sac.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Le premier pari et le dernier smash subsistent sur le même terrain. Aujourd'hui les lumières sont allumées.*"
+        "text": "*Le gymnase. Près de la ligne de notre premier pari se trouve le chariot que nous avons rempli hier soir. Aujourd'hui, les lumières sont allumées.*"
     },
     "tour_dain_1b": {
         "name": "{name}",

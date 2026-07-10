@@ -146,31 +146,31 @@
     },
     "night2_reply_yuna_4": {
         "name": "Yuna",
-        "text": "Regarde la troisième étoile"
+        "text": "La playlist de tout à l'heure. Écoute aussi le troisième morceau."
     },
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*La troisième étoile ? J'ai tourné la tête vers la fenêtre. Il y a beaucoup d'étoiles dans le ciel nocturne. En les comptant du doigt, la vitre s'embue.*"
+        "text": "*Je rouvre la playlist que Yuna a partagée. Le troisième morceau est un peu plus rythmé que celui que nous avons écouté ensemble.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "La raison, plus tard"
+        "text": "Écoute-le jusqu'au bout."
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*J'ai ouvert la fenêtre. L'air froid entre. Les étoiles sont nombreuses, et mon doigt s'arrête sur la troisième, suspendu dans l'air.*"
+        "text": "*Je mets mes écouteurs et lance la lecture. Une batterie grave se superpose au piano.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*La réponse s'arrête là. Mes traces de doigts restent sur la vitre.*"
+        "text": "*Même après la fin du morceau, je garde l'écran du lecteur ouvert un moment.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Demain soir encore, mon doigt s'arrêtera à la troisième étoile.*"
+        "text": "*Sous le titre de la playlist, Yuna a laissé une courte note : « Le troisième est le moins silencieux. »*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...Quelqu'un répond à cette heure. Tu veux venir à la bibliothèque demain ?"
+        "text": "...Si tu l'as écouté jusqu'au bout, tu me diras ce que tu en penses demain. Tu veux venir à l'annexe ?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
@@ -182,23 +182,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Un message privé de la prof principale. 'Merci d'être passé au bureau aujourd'hui. L'administratif est réglé, plus besoin de revenir. ...Mais si l'adaptation est difficile, passe quand tu veux.'*"
+        "text": "*Une notification du système de suivi scolaire apparaît. « Entretien d'adaptation de l'élève transféré terminé. En cas de besoin, utiliser les heures de permanence de la professeure principale ou prendre rendez-vous au service d'orientation. »*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Le point à la fin du message semble avoir été ajouté bien plus tard.*"
+        "text": "*Les créneaux d'entretien disponibles sont indiqués sous le nom de ma professeure principale.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Je relis seulement la dernière ligne.*"
+        "text": "*Je vérifie le bouton de réservation, puis ferme la notification.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notification de l'appli santé. 'Dossier infirmerie : élève transféré — Écorchure au coude (légère). Note : Je changerai le pansement demain matin. Le changement de pansement est un acte médical, pas de droit de refus ^^'*"
+        "text": "*Notification de l'application santé. « Dossier de l'infirmerie : élève transféré — écorchure au coude (légère). Garder le pansement au sec jusqu'à demain matin. Si un bord se décolle ou si du sang le traverse, le faire remplacer à l'infirmerie. »*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*J’appuie sur le coin du pansement avec le pouce. Demain matin a gagné une ligne.*"
+        "text": "*Je plie une fois le coude. Les bords du pansement tiennent encore parfaitement.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -218,7 +218,7 @@
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Il n'y a rien en dessous de la triple croche. Seul le 39ème titre est vide. Le lendemain, le siège de Sojung était vide jusqu’à la fin. Le nom du père est inscrit dans la section signature du tuteur du document de transfert.*"
+        "text": "*Il n'y a rien sous la trente-huitième note. Seul le titre de la trente-neuvième est vide. Le lendemain, la place de Sojeong est restée vide. Notre professeure principale a seulement dit qu'elle avait changé d'établissement.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
@@ -226,7 +226,7 @@
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Je regarde le plafond. Les messages d'aujourd'hui se superposent sur mon écran de verrouillage. Seoyeon. Dain. Yuna. Je n'en ai encore lu aucun.*"
+        "text": "*Je reprends mon téléphone. Sous la conversation à laquelle je viens de répondre, deux noms attendent encore côte à côte, sans réponse.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
@@ -234,7 +234,7 @@
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*J'ouvre la fenêtre de réponse, puis je la ferme. Les trois noms sont alignés côte à côte en haut de mes conversations récentes. Mon doigt ne peut toucher aucun d'eux.*"
+        "text": "*J'ouvre puis referme la conversation à laquelle j'ai répondu. Je n'ai toujours pas trouvé quoi écrire aux deux autres.*"
     },
     "night2_end_2": {
         "name": "{name}",
@@ -242,11 +242,11 @@
     },
     "night2_end_2_b": {
         "name": "{name}",
-        "text": "*Ces mots me reviennent sans cesse. Je n'ai pas encore reçu de réponse. Au lieu de cela, le nombre de fois que vous ouvrez et fermez la fenêtre de notification augmente.*"
+        "text": "*Deux notifications non lues sont empilées au-dessus du message de Minsu.*"
     },
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*J'ai fermé les yeux. Sur l'écran de verrouillage, seul le nombre de messages non lus demeure. Même après que l'écran s'éteint, ma main reste lumineuse.*"
+        "text": "*Même après que l'écran s'est éteint, ma main reste refermée sur le téléphone.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
