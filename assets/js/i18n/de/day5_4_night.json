@@ -54,7 +54,7 @@
     },
     "hidden_perfect_homeroom_3f": {
         "name": "Klassenlehrerin",
-        "text": "Wollen wir uns wieder hier treffen? Heute sind viele Dinge ungesagt geblieben."
+        "text": "Wollen wir uns wieder hier treffen? Wir haben heute noch so vieles nicht erzählt."
     },
     "hidden_perfect_homeroom_3g": {
         "name": "{name}",
@@ -62,7 +62,7 @@
     },
     "hidden_perfect_homeroom_4b": {
         "name": "Klassenlehrerin",
-        "text": "*Bei unserem zweiten Treffen nimmt sie in der Buchhandlung ein Exemplar ihres Buchs aus dem Regal.* Diesmal ist es die veröffentlichte Fassung. Liest du es als Leser?"
+        "text": "*Bei unserem zweiten Treffen nimmt sie in der Buchhandlung ein Exemplar ihres Buchs aus dem Regal.* Diesmal ist es die veröffentlichte Fassung. Würdest du es noch einmal als Leser lesen?"
     },
     "hidden_perfect_homeroom_4c": {
         "name": "{name}",
@@ -130,7 +130,7 @@
     },
     "hidden_true_homeroom_3_c": {
         "name": "Klassenlehrerin",
-        "text": "Das ändern wir langsam. Heute bist du als Leser hier, oder?"
+        "text": "Das lassen wir langsam angehen. Heute bist du als Leser hier, oder?"
     },
     "hidden_true_homeroom_4": {
         "name": "Klassenlehrerin",
@@ -222,7 +222,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Nach dem Abschied gehst du bis ans Ende des Flurs und blickst zurück. Die Klassenlehrerin steht am Fenster und verabschiedet die Absolventen. Auch {name} neigt kurz den Kopf und verlässt dann die Schule.*"
+        "text": "*Nach dem Abschied geht {name} bis ans Ende des Flurs und blickt zurück. Die Klassenlehrerin steht am Fenster und verabschiedet die Absolventen. Auch {name} neigt kurz den Kopf und verlässt dann die Schule.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -271,7 +271,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Seit jenem Morgen fühlt es sich selbstverständlich an, am Wochenende zu Juwon zu gehen. Während sie langsam mehr Zeit miteinander verbringen, wechselt Juwon in das Ausbildungsteam einer Universitätsklinik. Patienten und neue Pflegekräfte nennen sie nun Ausbilderin Lee Juwon.*"
+        "text": "*Seit jenem Morgen fühlt es sich selbstverständlich an, am Wochenende zu Juwon zu gehen. Während wir allmählich mehr Zeit miteinander verbringen, wechselt Juwon in das Ausbildungsteam einer Universitätsklinik. Patienten und neue Pflegekräfte nennen sie nun Ausbilderin Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -303,7 +303,7 @@
     },
     "hidden_true_nurse_3": {
         "name": "Schulkrankenschwester",
-        "text": "Schon die Anrede ist schwierig. Klingt es seltsam, wenn du mich noch wie früher ‚Frau Krankenschwester‘ nennst?"
+        "text": "Schon die Anrede ist schwierig. Klingt es seltsam, wenn du mich noch wie früher ‚Frau Lee‘ nennst?"
     },
     "hidden_true_nurse_3_b": {
         "name": "{name}",
@@ -315,7 +315,7 @@
     },
     "hidden_true_nurse_5": {
         "name": "Schulkrankenschwester",
-        "text": "Damals waren wir Krankenschwester und Schüler. Deshalb blieb es dabei."
+        "text": "Damals waren wir Schulkrankenschwester und Schüler. Deshalb blieb es dabei."
     },
     "hidden_true_nurse_5_b": {
         "name": "{name}",
@@ -367,7 +367,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "{name}",
-        "text": "*Drei Monate lang trafen sie sich jedes Wochenende in einem anderen Café. An diesem Tag folgt die erste Einladung zu Juwon nach Hause.*"
+        "text": "*Drei Monate lang treffen wir uns jedes Wochenende in einem anderen Café. An diesem Tag lädt Juwon mich zum ersten Mal zu sich nach Hause ein.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
