@@ -9,11 +9,11 @@
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "Cette fois-là j'ai dit « c'est trop » — et j'ai failli me faire engueuler."
+        "text": "Ce jour-là, j'ai dit que c'était trop d'honneur — et j'ai failli me faire engueuler."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Je ne t'ai pas grondé, si ? — Tu m'as plu dès ce moment-là."
+        "text": "Je ne t'ai pas grondé. — Je t'observe depuis ce jour-là."
     },
     "tour_seo_5": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "tour_seo_6": {
         "name": "Seoyeon",
-        "text": "...C'était peut-être une illusion du vent."
+        "text": "...Tu as peut-être mal entendu à cause du vent."
     },
     "tour_seo_7": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "La clé du toit... Non, ce n'est pas elle."
+        "text": "La clé du toit... Non, ce n'en est pas une."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
@@ -49,7 +49,7 @@
     },
     "tour_seo_13": {
         "name": "{name}",
-        "text": "Alors comment est-ce qu'on montera sur le toit maintenant ?"
+        "text": "Alors, comment est-ce qu'on montera sur le toit la prochaine fois ?"
     },
     "tour_seo_14": {
         "name": "Seoyeon",
@@ -57,9 +57,9 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on finirait aussi le dernier déjeuner ici.",
-        "context": "Dernier déjeuner du jour 5 avec Seoyeon. La fin approche. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "C'est la dernière fois, le calme de Seoyeon disparaît et ses vrais sentiments émergent."
+        "text": "*Elle pose une main sur la rambarde du toit et regarde l'école en contrebas.* Je ne pensais pas qu'on passerait même notre dernier déjeuner ici.",
+        "context": "Dernier déjeuner du jour 5 avec Seoyeon, sur le toit. Elle vient d'offrir un porte-clés en souvenir de la vraie clé qu'elle doit rendre. Ton : calme, retenu et plus franc que d'habitude.",
+        "personality": "Seoyeon conserve son calme et son ton sec, mais laisse transparaître son attachement par de petites attentions concrètes."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -71,7 +71,7 @@
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*L'annexe de la bibliothèque. Un vieux canapé, la lumière de l'après-midi par la fenêtre. La même odeur de poussière qu'à ta première visite.*"
+        "text": "*L'annexe de la bibliothèque. Un vieux canapé, la lumière de l'après-midi à travers la fenêtre. La même odeur de poussière que la première fois que je suis entré ici.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
@@ -79,7 +79,7 @@
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "*Elle s'assoit sur le canapé. Elle laisse la place à côté d'elle vide. Un endroit où la poussière ne s'est pas déposée.*"
+        "text": "*Elle s'assoit sur le canapé et laisse libre la place à côté d'elle. La poussière ne s'y est pas déposée.*"
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -95,7 +95,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Elle sort un carnet de son sac. Le même qu'elle a recouvert à la hâte dans le grenier.*"
+        "text": "*Elle sort un carnet de son sac. Le même qu'elle avait refermé à la hâte dans le grenier.*"
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -103,15 +103,15 @@
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "Tu me l'as dit à l'époque. « Écrire la fin, c'est la finir. »"
+        "text": "Tu me l'avais dit. « Quand on écrit la fin, tout s'arrête. »"
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "Ce n'est pas une fin — si c'est le début d'une nouvelle histoire, je crois que ça va."
+        "text": "Parce que ça me semblait un peu étrange de dire que c'était fini."
     },
     "tour_yuna_10": {
         "name": "{name}",
-        "text": "*Tend la note. Mes mains tremblent légèrement. Yuna ne peut pas placer le coin de la couverture jusqu'au bout.*"
+        "text": "*Elle me tend le carnet. Sa main tremble légèrement. Yuna n'arrive pas à lâcher complètement le coin de la couverture.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
@@ -119,9 +119,9 @@
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Elle fait courir ses doigts sur les dos des livres, puis relève la tête.* Comme c'est la dernière fois, je parle plus que d'habitude.",
-        "context": "Dernier déjeuner du jour 5 avec Yuna. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "C'est la dernière fois, les murs de Yuna sont complètement tombés."
+        "text": "*Elle fait courir ses doigts sur le dos d'un livre, puis relève la tête.* Depuis qu'on dit que c'est la dernière fois, je parle plus que d'habitude.",
+        "context": "Dernier déjeuner du jour 5 avec Yuna, dans l'annexe de la bibliothèque. Elle vient de terminer sa nouvelle et en confie le carnet à son premier lecteur. Ton : discret, intime et hésitant.",
+        "personality": "Yuna reste laconique et réservée, mais elle ose désormais formuler ses sentiments à demi-mot."
     },
     "tour_yuna_end": {
         "name": "Yuna",
@@ -129,7 +129,7 @@
     },
     "tour_yuna_end_2": {
         "name": "{name}",
-        "text": "*« Pour le moment. » — C'est le maximum que Yuna puisse promettre.*"
+        "text": "*Yuna s'arrête là.*"
     },
     "tour_dain_1_check": {
         "name": "{name}",
@@ -137,11 +137,11 @@
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Près de la ligne de notre premier pari se trouve le chariot que nous avons rempli hier soir. Aujourd'hui, les lumières sont allumées.*"
+        "text": "*Le gymnase. Près de la ligne de notre premier pari se trouve le bac à ballons rangé hier soir. Aujourd'hui, les lumières sont allumées.*"
     },
     "tour_dain_1b": {
         "name": "{name}",
-        "text": "*Le gymnase. Un lieu où d'innombrables paris et smashs ont été échangés ces derniers jours. — Aujourd'hui, les lumières sont allumées.*"
+        "text": "*Le gymnase. Aujourd'hui, les lumières sont allumées.*"
     },
     "tour_dain_2": {
         "name": "Dain",
@@ -157,7 +157,7 @@
     },
     "tour_dain_5": {
         "name": "Dain",
-        "text": "Cette fois je gagne !!"
+        "text": "Cette fois, je gagne."
     },
     "tour_dain_6": {
         "name": "{name}",
@@ -165,11 +165,11 @@
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "...Aaaah !! Pourquoi !! J'ai encore perdu !!"
+        "text": "...Pourquoi j'ai encore perdu ?"
     },
     "tour_dain_8": {
         "name": "{name}",
-        "text": "*Sourire même en colère. Dain pose le ballon de volley sur le terrain. lentement.*"
+        "text": "*Elle sourit malgré sa colère. Dain pose le ballon sur le terrain, avec un temps de retard.*"
     },
     "tour_dain_10": {
         "name": "Dain",
@@ -181,11 +181,11 @@
     },
     "tour_dain_11_b": {
         "name": "Dain",
-        "text": "Avant, je pensais que si le volley disparaissait, je me sentirais vide aussi. Mais ce n'est plus le cas ces jours-ci."
+        "text": "Avant, je pensais que sans le volley, je serais vide moi aussi. Mais ces derniers temps, ce n'est plus vrai."
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "Je sais pas ce qui a changé. ...Mais maintenant je me vois même hors du terrain."
+        "text": "Je sais pas ce qui a changé. ...Mais maintenant, j'ai aussi des choses à dire en dehors du terrain."
     },
     "tour_dain_13": {
         "name": "{name}",
@@ -193,16 +193,16 @@
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "...J'ai quelqu'un à côté de moi maintenant."
+        "text": "...Je ne suis pas toute seule."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle arrête le ballon de volley du bout du pied et sourit.* Même si c'est le dernier déjeuner, impossible de le laisser passer comme ça.",
-        "context": "Dernier déjeuner du jour 5 avec Dain. Ton : Tous deux savent que c'est la dernière fois. Rire avec une touche d'amertume douce. Plus honnêtes que d'habitude, tout semble précieux.",
-        "personality": "C'est la dernière fois, Dain ne peut pas maintenir sa façade joyeuse."
+        "text": "*Elle arrête le ballon du bout du pied et sourit.* Même si c'est notre dernier déjeuner, pas question de le laisser filer sans rien faire.",
+        "context": "Dernier déjeuner du jour 5 avec Dain, dans le gymnase. Elle admet qu'elle existe aussi en dehors du volley et qu'elle n'est plus seule. Ton : énergique, franc, avec une vulnérabilité inhabituelle.",
+        "personality": "Dain reste vive et spontanée, mais ses silences et ses phrases sans exclamation trahissent ce qu'elle ressent vraiment."
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Elle parle sans points d'exclamation. Cette fois elle ne baisse pas la tête. La main de Dain repose sur le ballon, pas sur son genou.*"
+        "text": "*La main de Dain repose sur le ballon, pas sur son genou.*"
     }
 }

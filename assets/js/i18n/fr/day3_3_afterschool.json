@@ -60,11 +60,11 @@
     },
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Je suis sorti dans le couloir. La fin de la phrase de Dain fut calme et le siège de Yuna était vide. Le seul billet qui restait dans ma main était froissé selon les plis.*"
+        "text": "*Je retourne dans le couloir. La phrase de Dain s'est achevée sans éclat et la place de Yuna était vide. Dans ma main, le mot se froisse le long de ses plis.*"
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*J'ai ouvert la porte de la salle du conseil des élèves. Seoyeon est affalée sur son bureau. Un porte-documents gît au sol.*"
+        "text": "*J'ouvre la porte de la salle du conseil. Seoyeon est affalée sur son bureau et son porte-bloc gît par terre.*"
     },
     "after3_seo_3": {
         "name": "Seoyeon",
@@ -80,19 +80,19 @@
     },
     "after3_seo_5_b": {
         "name": "Seoyeon",
-        "text": "*Replaçant ses cheveux à la hâte* ...Tu as vu ?"
+        "text": "*Elle remet précipitamment ses cheveux en place.* ...Tu as vu ?"
     },
     "after3_seo_6": {
         "name": "Seoyeon",
-        "text": "*En s'éclaircissant la gorge* ...Ce n'est rien. Oublie."
+        "text": "*Elle s'éclaircit la gorge.* ...Ce n'est rien. Oublie."
     },
     "after3_seo_7": {
         "name": "{name}",
-        "text": "Qu'est-ce que j'ai vu ?"
+        "text": "Oublier quoi ? Je n'ai rien vu."
     },
     "after3_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*En baissant les yeux* ...Je ne voulais pas te montrer ça."
+        "text": "*Elle baisse les yeux.* ...Je ne voulais vraiment pas que tu me voies comme ça."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
@@ -106,13 +106,13 @@
         "name": "Seoyeon",
         "text": "La prochaine fois que je te demande un service, tu dis oui sans poser de questions. — C'est le prix.",
         "choices": [
-            "Tu peux montrer ce côté-là.",
+            "Tu veux une lingette ?",
             "...Tout à l'heure ? J'ai rien vu. J'ai fait tomber mon stylo, je suis venu le ramasser."
         ]
     },
     "after3_seo_pity_trap_1": {
         "name": "Seoyeon",
-        "text": "*Elle relève lentement la tête. Elle frotte la trace de maquillage sur le dos de sa main sans la regarder. Ses yeux sont vides.*"
+        "text": "*Elle relève la tête et frotte la trace de maquillage avec le dos de sa main.*"
     },
     "after3_seo_pity_trap_2": {
         "name": "Seoyeon",
@@ -124,7 +124,7 @@
     },
     "after3_seo_pity_trap_4": {
         "name": "Seoyeon",
-        "text": "*Elle essuie le maquillage taché avec le dos de sa main. lentement. Chaque mouvement est si droit.*"
+        "text": "*Elle essuie le maquillage avec le dos de sa main, passant une fois sous son œil puis une fois sur sa bouche.*"
     },
     "after3_seo_pity_trap_5": {
         "name": "Seoyeon",
@@ -132,7 +132,7 @@
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
-        "text": "*Elle rajuste ses lunettes. La trace de maquillage reste sur le dos de sa main, mais sa voix se redresse la première.*"
+        "text": "*Elle rajuste ses lunettes. La trace de maquillage reste sur le dos de sa main et sa voix baisse d'un ton.*"
     },
     "after3_seo_pity_trap_7": {
         "name": "Seoyeon",
@@ -148,11 +148,11 @@
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
-        "text": "*J'ai fermé la porte de la salle du conseil des élèves et suis sorti. Le couloir est complètement vide. De l'intérieur, le bruit d'un porte-documents posé sur un bureau, une seule fois.*"
+        "text": "*Je referme derrière moi la porte de la salle du conseil. Le couloir est vide. À l'intérieur, un porte-bloc se pose une fois sur le bureau.*"
     },
     "after3_seo_correct_1": {
         "name": "Seoyeon",
-        "text": "*Elle s'arrête. Tandis que les mots sont interrompus, la main qui tient le bord du presse-papiers devient tendue.*"
+        "text": "*Elle se fige. Dans le silence, sa main se resserre sur le bord du porte-bloc.*"
     },
     "after3_seo_correct_2": {
         "name": "{name}",
@@ -160,11 +160,11 @@
     },
     "after3_seo_correct_3": {
         "name": "{name}",
-        "text": "Ah, le voilà. — Madame la Présidente, ce conseil est un endroit où les stylos disparaissent beaucoup ?"
+        "text": "Ah, le voilà. — Il y en a souvent qui disparaissent, des stylos, dans la salle du conseil ?"
     },
     "after3_seo_correct_4": {
         "name": "{name}",
-        "text": "*Je relève la tête. Seoyeon est — en train d'essuyer son maquillage brouillé du dos de la main. Naturellement. Comme si elle en avait eu besoin depuis le début.*"
+        "text": "*Je relève la tête. Seoyeon essuie son maquillage avec le dos de sa main, laissant une traînée noire sur sa peau.*"
     },
     "after3_seo_correct_5": {
         "name": "Seoyeon",
@@ -176,7 +176,7 @@
     },
     "after3_seo_correct_7": {
         "name": "Seoyeon",
-        "text": "*Petit rire.* Si je les attrape — les élèves commenceraient à craindre le conseil."
+        "text": "*Un petit rire.* Si je les attrapais, les élèves commenceraient à craindre le conseil."
     },
     "after3_seo_correct_8": {
         "name": "{name}",
@@ -196,7 +196,7 @@
     },
     "after3_seo_correct_12": {
         "name": "{name}",
-        "text": "*Je n'ai jamais dit que je ferais semblant de ne pas avoir vu. Seoyeon ne tend pas son auriculaire. Elle plie le planning du conseil des élèves de la semaine prochaine et le pousse vers moi.*"
+        "text": "*Seoyeon plie le planning du conseil des élèves pour la semaine prochaine et le fait glisser vers moi.*"
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",

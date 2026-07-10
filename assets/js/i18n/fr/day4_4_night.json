@@ -444,7 +444,7 @@
     },
     "wall_dain_cry_1": {
         "name": "Dain",
-        "text": "*Elle s’est effondrée sur le terrain. Elle a commencé à pleurer en serrant le ballon.*"
+        "text": "*Elle se laisse tomber sur le terrain et se met à pleurer, serrant le ballon contre elle.*"
     },
     "wall_dain_cry_2": {
         "name": "Dain",
@@ -468,7 +468,7 @@
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
-        "text": "*Je prends le ballon dans les bras de Dain. Elle reste assise pendant que {name} marche seul vers le chariot.*"
+        "text": "*{name} prend le ballon des bras de Dain. Elle reste assise pendant qu'il se dirige seul vers le chariot à ballons.*"
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
@@ -537,7 +537,7 @@
     },
     "wall_dain_skin60_1": {
         "name": "{name}",
-        "text": "*Nous nous sommes assis sur le banc près de la porte arrière du lycée. Dain s'allonge sur mes genoux sans prévenir.*"
+        "text": "*Nous nous sommes assis sur le banc près de la porte arrière du lycée. Sans prévenir, Dain s'allonge, la tête sur mes genoux.*"
     },
     "wall_dain_skin60_2": {
         "name": "Dain",
@@ -585,11 +585,11 @@
     },
     "wall_yuna_2": {
         "name": "{name}",
-        "text": "*La lumière de la porte arrière clignote. Yuna se tient en dessous. Le livre est ouvert, mais pas une seule page n'a été tournée.*"
+        "text": "*La lumière du portail arrière clignote. Yuna se tient dessous. Son livre est ouvert, mais aucune page ne se tourne.*"
     },
     "wall_yuna_3": {
         "name": "Yuna",
-        "text": "Suis-moi jusqu'au portail arrière de l'école."
+        "text": "Suis-moi par l'entrée arrière du lycée."
     },
     "wall_yuna_4": {
         "name": "Yuna",
@@ -727,7 +727,7 @@
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
-        "text": "...Parce que tu es chaud."
+        "text": "...Parce que tu tiens chaud."
     },
     "wall_yuna_sub_1": {
         "name": "Yuna",
@@ -791,7 +791,7 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*L'écran du téléphone s'allume. Il y a un seul message. L'accusé de lecture s'affiche lentement.*"
+        "text": "*L'écran du téléphone s'allume. Le message ne tient qu'en une ligne. L'accusé de lecture apparaît tardivement.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
@@ -799,7 +799,7 @@
     },
     "day4_night_reflect": {
         "name": "{name}",
-        "text": "*Le samedi s'est terminé ainsi. Demain, c'est l'événement du lycée. — Même un dimanche, il faut retourner en cours.*"
+        "text": "*Le samedi s'est terminé ainsi. Demain, c'est l'événement du lycée. — Même un dimanche, il faut retourner au lycée.*"
     },
     "day4_hidden_msg_branch": {
         "name": "Système",
@@ -843,6 +843,6 @@
     },
     "day4_final": {
         "name": "{name}",
-        "text": "*La nuit de samedi est bien avancée. Demain, c'est dimanche — le dernier jour de la fête de l'école.*"
+        "text": "*La nuit de samedi avance. Demain, c'est dimanche — le dernier jour de l'événement du lycée.*"
     }
 }
