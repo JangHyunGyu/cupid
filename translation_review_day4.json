@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-07-10T01:07:25.922Z",
+    "generated": "2026-07-10T19:40:21.709Z",
     "day": 4,
-    "total_nodes": 543,
+    "total_nodes": 500,
     "lang_avg": {
       "en": 10,
       "ja": 10,
@@ -305,7 +305,7 @@
     "morning4_hidden_check": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#morning4_hidden_check",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*주말. 학교 근처를 지나가게 됐다.*",
+      "_ko_text_preview": "*주말 아침, 학교 앞 사거리에서 신호를 기다린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#morning4_hidden_check",
@@ -336,12 +336,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#morning4_hidden_check",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "hidden_homeroom_d4_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*학교 정문이 살짝 열려 있다. 안쪽에서 인기척. — 정문 앞에서 나오는 사람. 담임선생님이다.*",
+      "_ko_text_preview": "*학교 정문 한쪽이 열려 있다. 안쪽에서 담임선생님이 종이봉투를 들고 나온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_1",
@@ -372,12 +378,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "hidden_homeroom_d4_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_2",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "...어? {name}?",
+      "_ko_text_preview": "어? {name}?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_2",
@@ -405,6 +417,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -449,7 +467,7 @@
     "hidden_homeroom_d4_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*교문 밖에서 보니 담임은 교사처럼 보이지 않는다. 그냥 — 글 쓰는 사람처럼.*",
+      "_ko_text_preview": "*종이봉투 손잡이가 한쪽만 팽팽하다. 접힌 원고 모서리가 밖으로 비친다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_4",
@@ -477,6 +495,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -593,7 +617,7 @@
     "hidden_homeroom_d4_4_e": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_4_ins4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*어색한 침묵. — 그리고 담임이 먼저.*",
+      "_ko_text_preview": "*정문 경비실의 라디오 소리만 둘 사이를 메운다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_4_ins4",
@@ -621,6 +645,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_4_ins4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_4_e",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -754,8 +784,8 @@
     },
     "hidden_homeroom_d4_5_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_5_ins3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*담임은 말을 끝내고도 컵홀더 모서리만 접는다.*",
+      "_ko_name": "담임선생님",
+      "_ko_text_preview": "*말을 끝낸 뒤 종이봉투 손잡이를 두 번 접어 쥔다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_5_ins3",
@@ -809,7 +839,7 @@
     "hidden_homeroom_d4_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*종이봉투 모서리가 컵홀더 아래에 눌려 있다.*",
+      "_ko_text_preview": "*종이봉투 안에서 원고 모서리끼리 부딪힌다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_choice",
@@ -977,7 +1007,7 @@
     "hidden_homeroom_d4_cafe_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_cafe_choice",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "*커피잔을 내려놓는다. 창가 쪽으로 몸이 조금 기운다.*",
+      "_ko_text_preview": "*커피잔을 내려놓고 안쪽 테이블의 합평본을 턱으로 가리킨다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_cafe_choice",
@@ -1271,35 +1301,41 @@
     "hidden_homeroom_d4_skip": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_skip",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*문득 발길이 멈췄다가, 그대로 지나친다.*",
+      "_ko_text_preview": "*정문 안쪽에서 문 닫히는 소리가 난다. 그사이 보행 신호가 켜진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_skip",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_1_morning.json#hidden_homeroom_d4_skip",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_1_morning.json#hidden_homeroom_d4_skip",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_1_morning.json#hidden_homeroom_d4_skip",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_homeroom_d4_skip",
-        "_reviewed": true,
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_skip",
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       }
@@ -1349,7 +1385,7 @@
     "hidden_nurse_d4_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*책상 한쪽에 행사 구급함과 검진 도구가 쌓여 있다. 보건선생님이 라벨을 붙이다 고개를 든다.*",
+      "_ko_text_preview": "*책상 한쪽에 행사 구급함과 검진 도구가 쌓여 있다. 라벨을 붙이던 보건선생님이 안경 너머로 문 쪽을 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_1",
@@ -1469,7 +1505,7 @@
     "hidden_nurse_d4_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_4",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "...대학병원에서는 이런 거 혼자 다 했었는데. 야간 근무 때 — 간호사...",
+      "_ko_text_preview": "야간 근무 때는 간호사 세 명 몫을 혼자 하는 날도 있었어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_4",
@@ -1497,6 +1533,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -1673,7 +1715,7 @@
     "hidden_nurse_d4_6": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_6",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "고마워~ 덕분에 빨리 끝났다. ...별거야.",
+      "_ko_text_preview": "고마워. 덕분에 빨리 끝났어. 별건 아니고.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_6",
@@ -1701,6 +1743,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_6",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_6",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -2711,7 +2759,7 @@
     "morning4_end": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#morning4_end",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*거울을 한 번 더 본다. — 됐다. 나가자.*",
+      "_ko_text_preview": "*집으로 돌아와 거울 옆 시계를 확인하고, 다시 현관에서 신발끈을 묶는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#morning4_end",
@@ -2742,12 +2790,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#morning4_end",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "minsu_cheer_4_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_4_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰 캘린더를 본다. 오전 서연, 오후 유나, 저녁 다인. — 하루 ...",
+      "_ko_text_preview": "*핸드폰 캘린더를 연다. 오전 서연, 오후 유나, 저녁 다인. 세 약속 사이 이동 시간을 맞추느라 어젯밤 잠을 설쳤고, 하나라도 겹치면 들킨다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_4_ins2",
@@ -2778,12 +2832,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#minsu_cheer_4_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "minsu_cheer_4_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_4_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*...뭘 하고 있는 거지, 나.*",
+      "_ko_text_preview": "*세 사람의 이름이 한 화면에 놓인다. 캘린더를 잠갔다가 다시 연다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_4_ins3",
@@ -2814,12 +2874,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#minsu_cheer_4_d",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "minsu_cheer_4_e": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#minsu_cheer_4_ins4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*거울을 세 번 봤다. 옷을 두 번 갈아입었다. — 뭘 하는 거지 나.*",
+      "_ko_text_preview": "*세 약속 사이의 이동 시간을 다시 계산하고 캘린더 알림을 모두 켠다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#minsu_cheer_4_ins4",
@@ -2847,6 +2913,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#minsu_cheer_4_ins4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#minsu_cheer_4_e",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -3041,7 +3113,7 @@
     "hidden_homeroom_d4_1_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_1_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*정문 앞에서 발이 멈춘다. 담임도 한 박자 늦게 종이봉투를 등 뒤로 숨긴다.*",
+      "_ko_text_preview": "*눈이 마주치자 담임은 종이봉투를 등 뒤로 옮긴다. 봉투 안 원고가 바스락거린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_1_ins2",
@@ -3082,12 +3154,18 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_1_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "morning4_yuna_msg_1_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#morning4_yuna_msg_1_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*짧다. 유나답다. — '늦으면 간다'가 '제발 늦지 마'와 같은 뜻이라...",
+      "_ko_text_preview": "*두 문장뿐이다. '늦으면 간다' 뒤에는 마침표도 없다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#morning4_yuna_msg_1_ins",
@@ -3115,6 +3193,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#morning4_yuna_msg_1_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#morning4_yuna_msg_1_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -3337,7 +3421,7 @@
     "hidden_homeroom_d4_cafe_1_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_cafe_1_c",
       "_ko_name": "담임선생님",
-      "_ko_text_preview": "*커피를 한 모금 마시며* 좋아. 그럼 서로 확인한 걸로 하자.",
+      "_ko_text_preview": "*커피를 한 모금 마신다.* 좋아. 그럼 서로 확인한 걸로 하자.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_cafe_1_c",
@@ -3732,8 +3816,8 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_homeroom_d4_cafe_5_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*담임이 잠깐 웃는다. 컵홀더를 접던 손이 멈춘다.*",
+      "_ko_name": "담임선생님",
+      "_ko_text_preview": "*컵홀더를 접던 손이 펴진다. 종이 주름은 그대로 남는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_homeroom_d4_cafe_5_ins",
@@ -3774,6 +3858,12 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_homeroom_d4_cafe_5_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -4073,7 +4163,7 @@
     "hidden_nurse_d4_1_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_1_ins2",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*돌아보며* 어? 진짜 왔어?",
+      "_ko_text_preview": "*보건선생님이 돌아본다.* 어? 진짜 왔어?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_1_ins2",
@@ -4101,6 +4191,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_1_ins2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_1_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4235,7 +4331,7 @@
     "hidden_nurse_d4_2_e": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_2_e",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*빈 파우치를 건네며* 거즈 두 장, 소독솜 세 개씩. 개인 정보 있는 서류는 선생님이 할게.",
+      "_ko_text_preview": "*빈 파우치를 건넨다.* 거즈 두 장, 소독솜 세 개씩. 개인 정보 있는 서류는 선생님이 할게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_2_e",
@@ -4319,7 +4415,7 @@
     "hidden_nurse_d4_2_g": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_2_ins7",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "...대학병원에서는 이런 거 혼자 다 했었는데.",
+      "_ko_text_preview": "대학병원에선 이런 준비도 혼자 맡는 날이 많았어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_2_ins7",
@@ -4347,6 +4443,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_2_ins7",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_2_g",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4426,8 +4528,8 @@
     },
     "hidden_nurse_d4_4_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_4_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*보건선생님이 잠깐 멈춘다. 서류를 내려놓는다.*",
+      "_ko_name": "보건선생님",
+      "_ko_text_preview": "*서류철을 덮는다. 볼펜 끝이 표지 위에서 한 번 미끄러진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_4_ins2",
@@ -4458,12 +4560,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_4_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "hidden_nurse_d4_4_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_4_ins3",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "...그때 나한테 제일 힘들었던 건 일의 양이 아니었어.",
+      "_ko_text_preview": "그때 나한테 제일 힘들었던 건 일의 양이 아니었어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_4_ins3",
@@ -4491,6 +4599,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_4_ins3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_4_d",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4577,7 +4691,7 @@
     "hidden_nurse_d4_4_g": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_4_ins6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*장난기가 완전히 사라졌다. — 이 사람의 진심은 이렇게 드러난다.*",
+      "_ko_text_preview": "*서류 맨 위 병상 번호 칸에 펜촉 자국이 남아 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_4_ins6",
@@ -4605,6 +4719,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_4_ins6",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_4_g",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -4943,7 +5063,7 @@
     "hidden_nurse_d4_meal_1_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_meal_1_c",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "확인하려고 먹은 거지. *물을 마시며* 이건 응급키트로도 못 살린다.",
+      "_ko_text_preview": "확인하려고 먹은 거지. *물을 한 모금 마신다.* 이건 응급키트로도 못 살린다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_meal_1_c",
@@ -4985,7 +5105,7 @@
     "hidden_nurse_d4_meal_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_meal_2_b",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*라벨을 붙이던 손이 잠깐 멈춘다.*",
+      "_ko_text_preview": "*라벨 한 장이 상자 모서리에 비뚤게 붙는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_meal_2_b",
@@ -5153,7 +5273,7 @@
     "hidden_nurse_d4_meal_3_e": {
       "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#hidden_nurse_d4_meal_3_ins4",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "{name}.",
+      "_ko_text_preview": "{name}, 확인표 놓고 간다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_1_morning.json#hidden_nurse_d4_meal_3_ins4",
@@ -5181,6 +5301,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_1_morning.json#hidden_nurse_d4_meal_3_ins4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#hidden_nurse_d4_meal_3_e",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5227,6 +5353,48 @@
         "_score": null,
         "_issues": "한국어 원문 수정 및 다국어 동기화 - 검토 필요"
       }
+    },
+    "morning4_fallback_msg": {
+      "_ko_ref": "assets/js/i18n/ko/day4_1_morning.json#morning4_fallback_msg",
+      "_ko_name": "{name}",
+      "_ko_text_preview": "*주말 아침. 알림 몇 개를 확인하고 핸드폰을 내려놓는다. 창밖으로 아파트 청소차 소리가 지나간다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_1_morning.json#morning4_fallback_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_1_morning.json#morning4_fallback_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_1_morning.json#morning4_fallback_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_1_morning.json#morning4_fallback_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_1_morning.json#morning4_fallback_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_1_morning.json#morning4_fallback_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
     }
   },
   "day4_2_lunch": {
@@ -5269,7 +5437,7 @@
     "date_seo_compliment_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_compliment_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*뭐라고 하지?*",
+      "_ko_text_preview": "*서연의 가방끈이 손가락에 한 번 더 감긴다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_compliment_choice",
@@ -5297,6 +5465,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_compliment_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_compliment_choice",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5351,7 +5525,7 @@
     "date_seo_pretty_high_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_pretty_high_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "...그런 말. 준비해 온 거야?",
+      "_ko_text_preview": "*분수대 물소리 쪽으로 시선을 돌린다.* 바람 좀 쐬자.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_pretty_high_2",
@@ -5379,6 +5553,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_pretty_high_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_pretty_high_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5422,42 +5602,42 @@
     },
     "date_seo_pretty_high_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_pretty_high_4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*'착각하지 마'. — 근데 머리카락 넘기는 손이 바쁘다.*",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*귀 뒤로 넘긴 머리카락이 다시 흘러내린다. 올라가던 손은 가방끈으로 돌아간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_pretty_high_4",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_2_lunch.json#date_seo_pretty_high_4",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_2_lunch.json#date_seo_pretty_high_4",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_2_lunch.json#date_seo_pretty_high_4",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_pretty_high_4",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_pretty_high_4",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       }
@@ -5723,7 +5903,7 @@
     "date_seo_flower_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_flower_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "...들어가 볼까?",
+      "_ko_text_preview": "*꽃집 문을 밀자 종이 울린다. 서연은 진열대를 한 바퀴 돌고 작은 다육이 화분 하나를 고른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_flower_2",
@@ -5751,6 +5931,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_flower_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_flower_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -5939,7 +6125,7 @@
     "date_yuna_compliment_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_compliment_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*뭐라고 하지?*",
+      "_ko_text_preview": "*컵 너머로 유나의 시선이 잠깐 올라온다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_compliment_choice",
@@ -5970,12 +6156,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_compliment_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_yuna_pretty_high": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_pretty_high",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 잠깐 멈춘다. 고개를 살짝 숙인다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*컵 가장자리만 오래 본다. 은백색 머리카락이 뺨 옆으로 흘러내린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_pretty_high",
@@ -6006,12 +6198,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_pretty_high",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_yuna_pretty_high_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_pretty_high_2",
       "_ko_name": "유나",
-      "_ko_text_preview": "...그거.",
+      "_ko_text_preview": "그거.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_pretty_high_2",
@@ -6039,6 +6237,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_yuna_pretty_high_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_pretty_high_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6155,7 +6359,7 @@
     "date_yuna_pretty_low": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_pretty_low",
       "_ko_name": "유나",
-      "_ko_text_preview": "...그런 말 처음 듣는다.",
+      "_ko_text_preview": "그런 말, 익숙하진 않네.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_pretty_low",
@@ -6186,12 +6390,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_pretty_low",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_yuna_bright": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_bright",
       "_ko_name": "유나",
-      "_ko_text_preview": "...뭐가 다른 건데.",
+      "_ko_text_preview": "뭐가 다른 건데.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_bright",
@@ -6219,6 +6429,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_yuna_bright",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_bright",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6299,7 +6515,7 @@
     "date_yuna_bookstore_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_bookstore_3",
       "_ko_name": "유나",
-      "_ko_text_preview": "...다행이다. 내가 먼저 보여준 거네.",
+      "_ko_text_preview": "다행이다. 내가 먼저 보여준 거네.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_bookstore_3",
@@ -6327,6 +6543,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_yuna_bookstore_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_bookstore_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6371,7 +6593,7 @@
     "date_yuna_earphone_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_earphone_2",
       "_ko_name": "유나",
-      "_ko_text_preview": "...들어봐.",
+      "_ko_text_preview": "들어봐.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_earphone_2",
@@ -6399,6 +6621,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_yuna_earphone_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_earphone_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6443,7 +6671,7 @@
     "date_yuna_oldbook": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_oldbook",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*헌책방을 지나간다. 유나가 걸음을 멈춘다.*",
+      "_ko_text_preview": "*헌책방 앞을 두 걸음 지나친 유나가 되돌아온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_oldbook",
@@ -6471,6 +6699,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_yuna_oldbook",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_oldbook",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6586,8 +6820,8 @@
     },
     "date_yuna_end": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_end",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 나를 본다. 넘기던 페이지가 손끝에서 멈춘다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*{name}을 본다. 페이지 모서리가 손가락 아래 접힌다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_end",
@@ -6628,6 +6862,12 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_end",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_1": {
@@ -6777,7 +7017,7 @@
     "date_dain_compliment_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_compliment_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*이건 이제 패턴이다.*",
+      "_ko_text_preview": "*다인이 모자챙을 한 번 눌러 쓰고 기다린다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_compliment_choice",
@@ -6808,12 +7048,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_compliment_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_pretty_high": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_pretty_high",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 멈춘다. 눈이 커진다. — 그리고 캡모자를 푹 눌러쓴다.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*다인이 캡모자를 푹 눌러써 얼굴 절반을 가린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_pretty_high",
@@ -6841,6 +7087,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_pretty_high",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_pretty_high",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -6920,8 +7172,8 @@
     },
     "date_dain_pretty_high_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_pretty_high_4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*때린다고 했지만 목소리가 떨리고 있다.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*모자챙 아래로 귀끝이 붉어진다. 손가락은 챙 끝에 그대로 걸려 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_pretty_high_4",
@@ -6949,6 +7201,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_pretty_high_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_pretty_high_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7173,7 +7431,7 @@
     "date_dain_rhythm": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_rhythm",
       "_ko_name": "다인",
-      "_ko_text_preview": "풀콤보!! 봤어?!",
+      "_ko_text_preview": "*화면의 점수를 가리킨다.* 이 스코어, 역대 2등이야.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_rhythm",
@@ -7204,12 +7462,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_rhythm",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_rhythm_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_rhythm_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "...대단해.",
+      "_ko_text_preview": "대단해.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_rhythm_2",
@@ -7237,6 +7501,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_rhythm_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_rhythm_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7281,7 +7551,7 @@
     "date_dain_knee": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_knee",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'무릎 안 써도 되니까'. — 가볍게 말했지만, 거기에 무게가 있다.*",
+      "_ko_text_preview": "*'무릎 안 써도 되니까.' 다인은 말끝에 웃고는 쇼윈도 유리에 비친 오른쪽 무릎을 한 번 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_knee",
@@ -7312,12 +7582,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_knee",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_knee_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_knee_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*스포츠용품점을 지나간다. 다인이 쇼윈도 앞에서 멈춘다. 배구화가 진열돼...",
+      "_ko_text_preview": "*오락실을 나와 스포츠용품점 앞을 지난다. 다인이 배구화가 놓인 쇼윈도 앞에서 발을 늦춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_knee_2",
@@ -7348,12 +7624,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_knee_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_shop": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_shop",
       "_ko_name": "다인",
-      "_ko_text_preview": "......",
+      "_ko_text_preview": "*쇼윈도 안 배구화의 끈을 눈으로 따라간다. 모자챙 아래 입술이 다물린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_shop",
@@ -7381,6 +7663,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_shop",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_shop",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7425,7 +7713,7 @@
     "date_dain_shop_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_shop_3",
       "_ko_name": "다인",
-      "_ko_text_preview": "아무것도 아냐! 가자!",
+      "_ko_text_preview": "*두 손을 주머니에 찔러 넣고 앞서 걷는다.* 쳐다보지 마.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_shop_3",
@@ -7453,6 +7741,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_shop_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_shop_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7579,7 +7873,7 @@
     "pre_confess_callback": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#pre_confess_callback",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*주머니 안의 핸드폰이 무겁다. 알림은 없고, 화면에는 검은 유리만 비친다.*",
+      "_ko_text_preview": "*주머니 속 핸드폰 모서리가 손바닥에 눌린다. 알림은 없고, 화면에는 검은 유리만 비친다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#pre_confess_callback",
@@ -7620,6 +7914,12 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#pre_confess_callback",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_seo_pretty_high_b": {
@@ -7661,7 +7961,7 @@
     "date_seo_pretty_high_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_pretty_high_3_ins",
       "_ko_name": "서연",
-      "_ko_text_preview": "*머리카락을 넘기며* ...착각하지 마.",
+      "_ko_text_preview": "*가방끈을 고쳐 쥔다.* 됐어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_pretty_high_3_ins",
@@ -7692,12 +7992,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_pretty_high_3_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_seo_flower_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_flower_ins",
       "_ko_name": "서연",
-      "_ko_text_preview": "*걸음을 멈추며* ...들어가 볼까?",
+      "_ko_text_preview": "*꽃집 유리문 쪽으로 발끝을 돌린다.* 들어가 볼까?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_flower_ins",
@@ -7725,6 +8031,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_flower_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_flower_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7805,7 +8117,7 @@
     "date_yuna_pretty_high_5_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_pretty_high_5_ins2",
       "_ko_name": "유나",
-      "_ko_text_preview": "*귀가 빨개지며* ...됐어.",
+      "_ko_text_preview": "*컵 뚜껑의 물방울을 엄지로 훑는다.* 됐어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_pretty_high_5_ins2",
@@ -7833,6 +8145,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_yuna_pretty_high_5_ins2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_pretty_high_5_c",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -7913,7 +8231,7 @@
     "date_yuna_oldbook_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_oldbook_ins",
       "_ko_name": "유나",
-      "_ko_text_preview": "...여기.",
+      "_ko_text_preview": "여기.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_oldbook_ins",
@@ -7944,12 +8262,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_oldbook_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_yuna_oldbook_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_oldbook_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*오래된 책 한 권을 꺼낸다. 페이지를 넘기며.*",
+      "_ko_text_preview": "*오래된 책 한 권을 꺼내 페이지를 넘긴다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_oldbook_ins2",
@@ -7980,12 +8304,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_oldbook_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_shop_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_shop_3_ins",
       "_ko_name": "다인",
-      "_ko_text_preview": "*캡모자 아래서* ...한 번만 더 말하면 진짜 때린다.",
+      "_ko_text_preview": "*보폭을 더 넓힌다.* 한 번만 더 물으면 진짜 먼저 간다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_shop_3_ins",
@@ -8013,6 +8343,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_shop_3_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_shop_3_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8093,7 +8429,7 @@
     "date_dain_arcade_3_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_arcade_3_ins2",
       "_ko_name": "다인",
-      "_ko_text_preview": "*꺄아 소리를 지르며* 풀콤보!! 봤어?!",
+      "_ko_text_preview": "*자리에서 벌떡 일어난다.* 풀콤보. 봤어?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_arcade_3_ins2",
@@ -8124,12 +8460,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_arcade_3_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "date_dain_shop_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_dain_shop_2_ins",
       "_ko_name": "다인",
-      "_ko_text_preview": "*고개를 돌리며* 아무것도 아냐! 가자!",
+      "_ko_text_preview": "*진열대 반대쪽으로 턱을 돌린다.* 아무것도 아냐! 가자!",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_dain_shop_2_ins",
@@ -8157,6 +8499,96 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_dain_shop_2_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_dain_shop_2_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "date_seo_end_c": {
+      "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_seo_end_c",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*화분 포장지가 손안에서 작게 바스락거린다.* 오늘.",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_seo_end_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_2_lunch.json#date_seo_end_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_2_lunch.json#date_seo_end_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_2_lunch.json#date_seo_end_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_seo_end_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_seo_end_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      }
+    },
+    "date_yuna_end_b": {
+      "_ko_ref": "assets/js/i18n/ko/day4_2_lunch.json#date_yuna_end_b",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*서점 밖으로 나서기 직전, 말 대신 쪽지를 건넨다.*",
+      "_has_choices": false,
+      "en": {
+        "_ref": "assets/js/i18n/en/day4_2_lunch.json#date_yuna_end_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "ja": {
+        "_ref": "assets/js/i18n/ja/day4_2_lunch.json#date_yuna_end_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "es": {
+        "_ref": "assets/js/i18n/es/day4_2_lunch.json#date_yuna_end_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "fr": {
+        "_ref": "assets/js/i18n/fr/day4_2_lunch.json#date_yuna_end_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "de": {
+        "_ref": "assets/js/i18n/de/day4_2_lunch.json#date_yuna_end_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_2_lunch.json#date_yuna_end_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8275,7 +8707,7 @@
     "confess_seo_3b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_3b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*옥상. 석양이 학교를 물들이고 있다. 며칠 사이에 익숙해진 장소.*",
+      "_ko_text_preview": "*옥상 문이 닫히자 계단의 발소리가 끊긴다. 여러 번 나란히 섰던 난간 아래로 운동장 조명이 하나씩 켜진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_3b",
@@ -8303,6 +8735,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_3b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_3b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8425,7 +8863,7 @@
     "confess_seo_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*손끝이 차갑다. 바람이 안 부는데. — 이 사람의 완벽한 가면 뒤에 뭐...",
+      "_ko_text_preview": "*열쇠고리만 서연의 손안에서 짧게 울린다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_choice",
@@ -8456,12 +8894,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_seo_yes_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_yes_1",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*열쇠고리 소리가 뚝 멎는다. 서연이 눈을 맞춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_yes_1",
@@ -8489,6 +8933,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_yes_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_yes_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8693,7 +9143,7 @@
     "confess_seo_yes_7": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_yes_7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "",
+      "_ko_text_preview": "*난간 아래 운동장 조명이 한 줄 더 켜진다. 서연은 열쇠고리를 쥔 채 그대로 서 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_yes_7",
@@ -8721,6 +9171,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_yes_7",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_yes_7",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8908,8 +9364,8 @@
     },
     "confess_seo_yes_12": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_yes_12",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 새끼손가락을 건넨다. Day 1에서 봤던 새끼손가락. — 그때는...",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*두 칸 아래에서 발소리가 끊긴다. 서연은 돌아보지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_yes_12",
@@ -8937,6 +9393,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_yes_12",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_yes_12",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -8981,7 +9443,7 @@
     "confess_seo_no_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_seo_no_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*Day 1에서도 같은 말을 했다. 그때는 진심이었는데. 지금은 도망이다...",
+      "_ko_text_preview": "*서연이 난간 쪽으로 반 걸음 비켜 자리를 내준다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_seo_no_2",
@@ -9009,6 +9471,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_seo_no_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_seo_no_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9125,7 +9593,7 @@
     "confess_yuna_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*데이트가 끝나가고 있다. 유나가 걸음을 멈춘다.*",
+      "_ko_text_preview": "*카페 간판에 불이 켜질 무렵, 유나가 별관 쪽으로 턱을 돌린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_1",
@@ -9153,6 +9621,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9197,7 +9671,7 @@
     "confess_yuna_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*도서관 별관. 비밀 독서 공간. 창문으로 석양이 스며든다. Day 2에...",
+      "_ko_text_preview": "*도서관 별관의 비밀 독서 공간. 창문 틈의 주황빛이 낡은 소파 팔걸이까지 내려와 있고, 옆자리에는 유나의 책갈피가 놓여 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_3",
@@ -9228,12 +9702,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_yuna_3b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_3b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*도서관 별관. 창문으로 석양이 스며든다. 며칠 사이에 익숙해진 장소.*",
+      "_ko_text_preview": "*별관 문이 닫히자 복도 소음이 끊긴다. 소파 위 책은 펼쳐진 채고, 책갈피는 마지막 장 앞에 꽂혀 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_3b",
@@ -9261,6 +9741,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_3b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_3b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9341,7 +9827,7 @@
     "confess_yuna_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_choice",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*숨이 짧아졌다. 이 침묵이 편했던 건 — 유나니까였다. 그걸 말해야 한...",
+      "_ko_text_preview": "*유나가 책갈피의 접힌 끝을 엄지로 펴 놓고 맞은편 자리를 비워 둔다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_choice",
@@ -9369,6 +9855,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_choice",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9413,7 +9905,7 @@
     "confess_yuna_yes_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_yes_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "",
+      "_ko_text_preview": "*유나의 엄지가 책갈피 모서리에서 떨어진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_yes_2",
@@ -9441,6 +9933,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_yes_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_yes_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9629,41 +10127,41 @@
     "confess_yuna_yes_6_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_yes_6_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*내 말이 유나의 말보다 길어진 날. — 처음이다.*",
+      "_ko_text_preview": "*소파 천이 작게 울린다. 유나가 몸을 바로 세운다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_yes_6_ins",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_3_afterschool.json#confess_yuna_yes_6_ins",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_3_afterschool.json#confess_yuna_yes_6_ins",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_3_afterschool.json#confess_yuna_yes_6_ins",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_yes_6_ins",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_yes_6_b",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       }
@@ -9671,7 +10169,7 @@
     "confess_yuna_yes_7": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_yes_7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "",
+      "_ko_text_preview": "*책갈피는 소파 위에 놓인 채다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_yes_7",
@@ -9702,12 +10200,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_yes_7",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_yuna_yes_8": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_yes_8",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나의 무표정이 갈라져 있다. 나른한 목소리가 사라지고, 아주 작은 —...",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*시선은 책장 쪽에 둔 채 옷소매를 꽉 쥔다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_yes_8",
@@ -9735,6 +10239,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_yes_8",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_yes_8",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9856,7 +10366,7 @@
     "confess_yuna_yes_9_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_yes_9_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*'이번엔'. — 전에 떠난 사람이 있었다. 유나는 다시 그 상처를 꺼내...",
+      "_ko_text_preview": "*소매 끝이 손바닥 안에서 더 구겨진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_yes_9_ins",
@@ -9884,6 +10394,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_yes_9_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_yes_9_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -9927,8 +10443,8 @@
     },
     "confess_yuna_no_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_no_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나는 행간을 읽는 사람이다. 이 말이 도망이라는 걸 알고 있을 거다....",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*책갈피를 책 사이에 넣어 깊이 밀어 넣은 뒤 턱을 한 번 당긴다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_no_2",
@@ -9959,12 +10475,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_no_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_yuna_no_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_no_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 책을 집어든다. 표지를 보고 있지만 읽고 있지 않다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*책을 펴지 않은 채 표지의 제목만 손가락으로 훑는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_no_3",
@@ -9992,6 +10514,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_yuna_no_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_no_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10036,7 +10564,7 @@
     "confess_yuna_no_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_yuna_no_4_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*세 걸음 뒤에서 돌아봤다. 유나도 책 너머로 이쪽을 보고 있었다.*",
+      "_ko_text_preview": "*세 걸음쯤 떨어졌을 때, 책 너머로 유나의 붉은 눈이 따라온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_yuna_no_4_ins",
@@ -10067,12 +10595,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_yuna_no_4_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*데이트가 끝나가고 있다. 다인이 학교 쪽으로 뛰어간다.*",
+      "_ko_text_preview": "*데이트가 끝나자 다인이 학교 쪽으로 성큼 앞서간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_1",
@@ -10100,6 +10634,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10144,7 +10684,7 @@
     "confess_dain_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다. Day...",
+      "_ko_text_preview": "*빈 체육관. 서쪽 창문의 빛이 첫날 내기했던 코트 선을 비스듬히 가른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_3",
@@ -10175,12 +10715,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_3b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_3b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*체육관. 비어 있다. 석양이 창문 사이로 코트를 물들이고 있다. 며칠 ...",
+      "_ko_text_preview": "*전광판이 꺼진 체육관. 창틀 그림자가 코트 끝까지 뻗어 있고, 몇 번이나 공을 주고받던 라인 앞에 다인이 선다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_3b",
@@ -10211,12 +10757,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_3b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 공을 하나 들고 있다. 아무렇지 않게. — 근데 손가락이 하얗다...",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*공 하나를 두 손으로 쥔다. 손가락 마디가 공 표면에 눌려 하얗다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_4",
@@ -10244,6 +10796,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10287,8 +10845,8 @@
     },
     "confess_dain_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_choice",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*체육관 바닥이 흔들리는 것 같다. — 이 사람의 느낌표 뒤에 숨은 떨림...",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*공이 바닥에 한 번 튄다. 다인의 손이 반 박자 늦어 공 옆을 스친다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_choice",
@@ -10319,12 +10877,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_yes_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "",
+      "_ko_text_preview": "*첫 음절이 빈 체육관 벽에 낮게 돌아온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_1",
@@ -10352,6 +10916,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_yes_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_yes_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10432,7 +11002,7 @@
     "confess_dain_yes_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_3_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그 눈이 나를 안 볼 때 — 좀 답답해.",
+      "_ko_text_preview": "오늘만 말고, 다음에도 계속 만나고 싶어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_3_ins",
@@ -10460,6 +11030,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_yes_3_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_yes_3_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10504,7 +11080,7 @@
     "confess_dain_yes_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_5",
       "_ko_name": "{name}",
-      "_ko_text_preview": "그래서 자꾸 너한테 가게 돼.",
+      "_ko_text_preview": "지금 당장 답하라는 건 아니야.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_5",
@@ -10532,6 +11108,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_yes_5",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_yes_5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10611,8 +11193,8 @@
     },
     "confess_dain_yes_8": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_8",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 멈춰 있다. 에너지가 사라졌다. — 그리고 눈이 천천히 차오른다...",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*다인의 운동화가 코트 선 위에 나란히 붙는다. 두 손으로 얼굴을 덮는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_8",
@@ -10643,12 +11225,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_yes_8",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_yes_8_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_8_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*두 손으로 얼굴을 가린다. 손가락 사이로 빨간 볼이 보인다.*",
+      "_ko_text_preview": "*배구공이 발끝에 툭 닿아 옆으로 굴러가도 다인은 쫓지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_8_ins",
@@ -10679,12 +11267,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_yes_8_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_yes_9": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_9",
       "_ko_name": "다인",
-      "_ko_text_preview": "...잠깐. 숨차 — 나 지금 울 것 같은데 — 왜 울어, 기쁜 건데 —",
+      "_ko_text_preview": "잠깐. 나 지금 말 정리가 안 돼.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_9",
@@ -10715,12 +11309,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_yes_9",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_yes_9_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_yes_9_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*손을 내리고 웃는다. 눈물이 흐르고 있다.*",
+      "_ko_text_preview": "*다인이 손등으로 눈가를 거칠게 문지른다. 입꼬리는 올라갔는데 목소리는 나오지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_yes_9_ins",
@@ -10748,6 +11348,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_yes_9_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_yes_9_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -10900,8 +11506,8 @@
     },
     "confess_dain_no_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_no_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 배구공을 튀긴다. 한 번. 두 번. — 세 번째에 멈춘다.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*다인이 배구공을 두 번 튀긴다. 세 번째로 튀어 오른 공은 코트 선을 넘어 굴러간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_no_3",
@@ -10932,12 +11538,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_no_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_no_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_no_4",
       "_ko_name": "다인",
-      "_ko_text_preview": "...다음에는 도망치지 마.",
+      "_ko_text_preview": "다음에는 말해.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_no_4",
@@ -10968,12 +11580,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_no_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "confess_dain_no_4_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_3_afterschool.json#confess_dain_no_4_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*느낌표가 없다. — 진심이다.*",
+      "_ko_text_preview": "*다인의 목소리가 체육관 천장으로 작게 흩어진다. 손목 보호대의 벨크로만 길게 뜯긴다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_3_afterschool.json#confess_dain_no_4_ins",
@@ -11001,6 +11619,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_3_afterschool.json#confess_dain_no_4_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_3_afterschool.json#confess_dain_no_4_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11201,7 +11825,7 @@
     "wall_seo_pre_low_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_pre_low_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 침묵한다. 내가 먼저 말을 꺼내야 한다.*",
+      "_ko_text_preview": "*서연의 대화방에는 마지막 메시지 이후 새 알림이 없다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_pre_low_1",
@@ -11232,12 +11856,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_pre_low_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_pre_low_1b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_pre_low_1b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*문자를 보냈다. '서연아, 지금 괜찮아?' — 1분. 읽음 표시가 뜬다...",
+      "_ko_text_preview": "*'서연아, 지금 괜찮아?' 문자를 보낸다. 1분 뒤 읽음 표시가 붙지만 답은 없고, 곧 전화가 걸려 온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_pre_low_1b",
@@ -11268,12 +11898,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_pre_low_1b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_pre_low_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_pre_low_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "...문자 봤어. 지금 나올 수 있어? 공원. — 미안, 갑자기.",
+      "_ko_text_preview": "문자 봤어. 잠깐 통화 괜찮아?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_pre_low_2",
@@ -11304,12 +11940,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_pre_low_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "...지금 나올 수 있어? 공원. — 미안, 갑자기.",
+      "_ko_text_preview": "지금 나올 수 있어? 공원. 미안, 갑자기.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_2",
@@ -11337,6 +11979,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11489,7 +12137,7 @@
     "wall_seo_6": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_6",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*옆에 앉는다. 서연이 앞을 보고 있다. 한참을.*",
+      "_ko_text_preview": "*옆에 앉는다. 서연은 가로등 불빛이 길게 걸린 안경알 너머로 벤치 앞만 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_6",
@@ -11517,6 +12165,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_6",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_6",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11561,7 +12215,7 @@
     "wall_seo_7_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_7_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "......",
+      "_ko_text_preview": "*공원 도로로 자동차 한 대가 지나간다. 서연은 무릎 위에서 손가락을 맞물린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_7_ins",
@@ -11589,6 +12243,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_7_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_7_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -11747,7 +12407,7 @@
     "wall_seo_9_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_9_ins3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "......",
+      "_ko_text_preview": "*벤치 아래로 마른 잎 하나가 굴러와 서연의 운동화 앞에서 멎는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_9_ins3",
@@ -11775,6 +12435,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_9_ins3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_9_d",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12070,8 +12736,8 @@
     },
     "wall_seo_14_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_14_ins2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 말을 멈췄다. 손이 무릎 위에서 꽉 쥐어져 있다.*",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*말끝이 끊기며 무릎 위 손가락이 서로 파고든다. 안경 끝의 물기 한 방울이 손등에 떨어진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_14_ins2",
@@ -12102,12 +12768,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_14_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_14_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_14_ins4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*눈에서 물이 흘러내린다. 소리 없이. — 서연이 울고 있다.*",
+      "_ko_text_preview": "*눈물이 소리 없이 흘러내린다. 손등에 화장 자국이 번지고, 서연이 안경 너머로 {name}을 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_14_ins4",
@@ -12138,12 +12810,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_14_d",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_hug_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_hug_choice",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 울고 있다. 처음 보는 모습이다.*",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*번진 화장이 손등에 남아 있고, 서연의 어깨가 호흡마다 짧게 올라간다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_hug_choice",
@@ -12174,12 +12852,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_hug_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_hug_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_hug_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연을 안았다.*",
+      "_ko_text_preview": "*서연을 안자 어깨에 얼굴을 묻는다. 교복 셔츠 위로 눈물이 번진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_hug_1",
@@ -12210,12 +12894,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_hug_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_hug_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_hug_2_ins",
       "_ko_name": "서연",
-      "_ko_text_preview": "...누구 앞에서 우는 거, 진짜 오래됐어.",
+      "_ko_text_preview": "누구 앞에서 우는 거, 오래됐어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_hug_2_ins",
@@ -12243,6 +12933,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_hug_2_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_hug_2_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12441,7 +13137,7 @@
     "wall_seo_pinky_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_pinky_4",
       "_ko_name": "서연",
-      "_ko_text_preview": "...왜 이래. 왜 이렇게 — 쉽게 약속해.",
+      "_ko_text_preview": "그런 말 쉽게 하지 마.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_pinky_4",
@@ -12469,6 +13165,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_pinky_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_pinky_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12548,8 +13250,8 @@
     },
     "wall_seo_line_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_line_choice",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 눈물을 닦으며 떨리는 눈으로 올려다보고 있다.*",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*손등으로 눈가를 훔친다. 번진 화장 자국이 더 넓어진다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_line_choice",
@@ -12590,12 +13292,18 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_line_choice",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_line_react_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_line_react_1",
       "_ko_name": "서연",
-      "_ko_text_preview": "...진짜?",
+      "_ko_text_preview": "*손등의 화장 자국을 내려다본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_line_react_1",
@@ -12626,12 +13334,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_line_react_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_line_react_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_line_react_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "...여자친구?",
+      "_ko_text_preview": "응.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_line_react_2",
@@ -12662,12 +13376,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_line_react_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_line_react_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_line_react_3",
       "_ko_name": "서연",
-      "_ko_text_preview": "...고맙긴.",
+      "_ko_text_preview": "그래.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_line_react_3",
@@ -12695,6 +13415,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_line_react_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_line_react_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12739,7 +13465,7 @@
     "wall_seo_after_line": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_after_line",
       "_ko_name": "서연",
-      "_ko_text_preview": "이래도 괜찮아?",
+      "_ko_text_preview": "잠깐만. 물티슈 있어?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_after_line",
@@ -12767,6 +13493,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_after_line",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_after_line",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12929,7 +13661,7 @@
     "wall_seo_after_line_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_after_line_5",
       "_ko_name": "서연",
-      "_ko_text_preview": "연습 안 한 얼굴로 있어도, 오늘은 괜찮네.",
+      "_ko_text_preview": "이제 좀 낫네. 내일은 내가 챙겨야겠다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_after_line_5",
@@ -12957,6 +13689,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_after_line_5",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_after_line_5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -12999,8 +13737,8 @@
     },
     "wall_seo_skin70_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_skin70_1",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 새끼손가락을 먼저 건넨다. 거기서 멈추지 않는다. 손을 잡는다....",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*허락을 확인한 뒤 서연이 손을 잡는다. 벤치 사이에 두 손이 남아 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_skin70_1",
@@ -13031,12 +13769,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_skin70_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_skin70_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_skin70_3",
       "_ko_name": "서연",
-      "_ko_text_preview": "...이건 처음이네. 진짜로.",
+      "_ko_text_preview": "이건 처음이네.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_skin70_3",
@@ -13077,12 +13821,18 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_skin70_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_skin60_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_skin60_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*관람차 안에서 서연이 어깨에 기대온다.*",
+      "_ko_text_preview": "*벤치에 나란히 앉는다. 서연은 어깨 하나만큼 간격을 남기고 {name} 쪽을 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_skin60_1",
@@ -13113,12 +13863,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_skin60_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_skin60_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_skin60_2",
       "_ko_name": "서연",
-      "_ko_text_preview": "...높은 데 약간 무서워.",
+      "_ko_text_preview": "조금만 더 이러고 있자.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_skin60_2",
@@ -13149,12 +13905,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_skin60_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_glimpse_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_glimpse_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*서연을 집까지 바래다주고 돌아오는 길. — 학교 앞을 지나가는데.*",
+      "_ko_text_preview": "*서연을 집까지 바래다주고 학교 담장을 따라 돌아간다. 체육관 창문 한 칸에 비상등이 켜져 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_glimpse_1",
@@ -13185,12 +13947,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_glimpse_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_glimpse_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_glimpse_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*체육관 창문에 불이 켜져 있다. 비상등. 누군가 혼자 공을 튀기고 있다...",
+      "_ko_text_preview": "*유니폼 19번이 창문 안쪽을 가로지른다. 공 튀는 소리가 담장 너머까지 일정하게 울린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_glimpse_2",
@@ -13221,12 +13989,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_glimpse_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_seo_glimpse_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_seo_glimpse_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*한참 학교 뒤편에 서 있다가, 결국 집으로 돌아왔다. 지금은 서연의 밤이니까. 근데 발이 무겁다.*",
+      "_ko_text_preview": "*공 튀는 소리를 몇 번 더 세다가 돌아선다. 집에 도착할 때까지 체육관 창문은 꺼지지 않았다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_seo_glimpse_4",
@@ -13254,6 +14028,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_seo_glimpse_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_seo_glimpse_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -13524,7 +14304,7 @@
     "wall_dain_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_3",
       "_ko_name": "다인",
-      "_ko_text_preview": "아 그냥 와ㅋㅋ 체육관 뒷문 열어놨음!",
+      "_ko_text_preview": "그냥 와. 체육관 뒷문 열어놨어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_3",
@@ -13555,12 +14335,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*비상등만 켜진 어두운 체육관. 다인이 혼자 배구공을 튀기고 있다. 평소...",
+      "_ko_text_preview": "*비상등만 켜진 체육관. 다인은 혼자 배구공을 튀긴다. 입꼬리는 올라가 있는데 어깨가 귀 가까이 굳어 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_4",
@@ -13588,6 +14374,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -13776,7 +14568,7 @@
     "wall_dain_8_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_8_b",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*공을 들고 망설이는 사이, 다인이 한 발 내딛는다. 오른쪽 무릎에 힘이 풀리고 그대로 쪼그려 앉는다.*",
+      "_ko_text_preview": "*공을 든 손이 허리 아래에 머문 사이, 다인이 한 발 내딛는다. 오른쪽 무릎에 힘이 풀리고 그대로 쪼그려 앉는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_8_b",
@@ -13998,7 +14790,7 @@
     "wall_dain_12_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_12_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "......",
+      "_ko_text_preview": "*바닥을 구르던 공이 벽에 닿아 낮은 소리를 낸다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_12_ins2",
@@ -14029,12 +14821,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_12_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_13": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_13",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*아무 말 없이 옆에 앉는다. 다인이 입을 다문다. 한참의 침묵.*",
+      "_ko_text_preview": "*아무 말 없이 옆에 앉는다. 다인이 입을 다물자 체육관 조명의 낮은 웅웅거림만 남는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_13",
@@ -14062,6 +14860,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_13",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_13",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -14177,8 +14981,8 @@
     },
     "wall_dain_16": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_16",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 한 번도 안 해본 표정을 짓고 있다. 웃지 않는 다인.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*입꼬리가 내려간다. 시선은 코트 바닥의 흰 선에 머문다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_16",
@@ -14206,6 +15010,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_16",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_16",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -14358,7 +15168,7 @@
     "wall_dain_18_c": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_18_ins2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "......",
+      "_ko_text_preview": "*체육관 비상등이 한 번 깜빡인다. 다인의 손톱이 공 표면의 홈을 따라간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_18_ins2",
@@ -14389,12 +15199,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_18_c",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_18_d": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_18_ins3",
       "_ko_name": "다인",
-      "_ko_text_preview": "아무한테도 말 안 했어. 부모님한테도.",
+      "_ko_text_preview": "*공 표면의 홈을 엄지로 문지른다.* 그래서.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_18_ins3",
@@ -14422,6 +15238,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_18_ins3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_18_d",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -14502,41 +15324,41 @@
     "wall_dain_20": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_20",
       "_ko_name": "다인",
-      "_ko_text_preview": "학교에서 '에너지 넘치네!' 소리 들을 때마다 — 여기가. ...숨이 막혔어.",
+      "_ko_text_preview": "학교에서 '에너지 넘치네!' 소리 들을 때마다 가슴팍부터 막혔어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_20",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_dain_20",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_dain_20",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_dain_20",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_20",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_20",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       }
@@ -14544,7 +15366,7 @@
     "wall_dain_20_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_20_ins",
       "_ko_name": "다인",
-      "_ko_text_preview": "...죽을 것 같았어.",
+      "_ko_text_preview": "숨을 쉬어도 끝까지 안 들어왔어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_20_ins",
@@ -14575,12 +15397,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_20_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_21": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_21",
       "_ko_name": "다인",
-      "_ko_text_preview": "오늘도. 오늘 데이트하면서 뛰어다닐 때. 네 옆에서 밝은 척할 때. 무릎...",
+      "_ko_text_preview": "오늘도 그랬어. 데이트하면서 뛰어다니고, 네 옆에서 밝은 척할 때마다 무릎이 버티질 못했어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_21",
@@ -14611,12 +15439,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_21",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_22": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_22",
       "_ko_name": "다인",
-      "_ko_text_preview": "— 근데 네 앞에서까지 아픈 모습 보이면, 나한테 남는 게 없잖아.",
+      "_ko_text_preview": "근데 네 앞에서까지 아픈 모습 보이면, 나한테 남는 게 없잖아.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_22",
@@ -14647,12 +15481,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_22",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_22_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_22_ins",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*다인 옆에 앉았다. 코트 바닥이 차갑다. 아무 말도 안 했다.*",
+      "_ko_text_preview": "*다인 옆 코트 선 바깥에 앉는다. 바닥에 놓인 배구공이 둘 사이에서 한 번 굴러 멎는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_22_ins",
@@ -14683,12 +15523,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_22_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_choice": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_choice",
       "_ko_name": "다인",
-      "_ko_text_preview": "*배구공을 꼭 안고 고개를 숙였다. 어깨가 떨리고 있다.*",
+      "_ko_text_preview": "*배구공 고무가 가슴팍에 눌려 찌그러진다. 어깨가 짧게 들썩인다.*",
       "_has_choices": true,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_choice",
@@ -14730,49 +15576,49 @@
     "wall_dain_newdream_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_newdream_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*그대로 옆에 앉아 있었다. 둘 다 말이 없다.*",
+      "_ko_text_preview": "*운동화 고무가 바닥을 짧게 긁는다. 다인의 발끝이 코트 선을 따라 좌우로 움직인다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_newdream_1",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "ja": {
         "_ref": "assets/js/i18n/ja/day4_4_night.json#wall_dain_newdream_1",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "es": {
         "_ref": "assets/js/i18n/es/day4_4_night.json#wall_dain_newdream_1",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "fr": {
         "_ref": "assets/js/i18n/fr/day4_4_night.json#wall_dain_newdream_1",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_newdream_1",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       },
       "pt": {
         "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_newdream_1",
-        "_reviewed": true,
+        "_reviewed": false,
         "_score": 10,
         "_issues": null
       }
     },
     "wall_dain_newdream_2_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_newdream_2_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 먼저 입을 연다.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*운동화 끝이 멎고 다인이 옆을 본다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_newdream_2_ins",
@@ -14803,12 +15649,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_newdream_2_b",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_newdream_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_newdream_3",
       "_ko_name": "다인",
-      "_ko_text_preview": "...왜 아무 말 안 해?",
+      "_ko_text_preview": "왜 아무 말 안 해?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_newdream_3",
@@ -14836,6 +15688,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_newdream_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_newdream_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -14879,8 +15737,8 @@
     },
     "wall_dain_newdream_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_newdream_5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 무릎 위의 손을 본다. 주먹을 쥐었다 폈다 한다.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*무릎 위에 얹은 손가락을 하나씩 편다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_newdream_5",
@@ -14908,6 +15766,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_newdream_5",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_newdream_5",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -14958,7 +15822,7 @@
     "wall_dain_newdream_7": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_newdream_7",
       "_ko_name": "다인",
-      "_ko_text_preview": "찾는 동안은... 가끔 이렇게 옆에 있어 줄래?",
+      "_ko_text_preview": "찾는 동안, 가끔 이렇게 옆에 있어 줄래?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_newdream_7",
@@ -15077,8 +15941,8 @@
     },
     "wall_dain_cry_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_cry_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*억지로 참던 1년치 울음이 한꺼번에 터진 것처럼. 텅 빈 체육관에 목 ...",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*배구공 위로 몸을 접는다. 공의 고무 표면에 물방울이 하나, 둘 떨어지고 울음이 빈 체육관 벽에 짧게 되돌아온다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_cry_2",
@@ -15109,12 +15973,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_cry_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_cry_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_cry_3",
       "_ko_name": "다인",
-      "_ko_text_preview": "혼자서... 매일 아침에 무릎 붕대 감으면서...",
+      "_ko_text_preview": "혼자서 매일 아침 무릎에 붕대 감았어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_cry_3",
@@ -15145,12 +16015,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_cry_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_cry_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_cry_4",
       "_ko_name": "다인",
-      "_ko_text_preview": "핸드폰 알람에 적어놨어. '오늘도 웃어!!'라고...",
+      "_ko_text_preview": "핸드폰 알람에도 적어놨어. '오늘도 웃어.'",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_cry_4",
@@ -15181,12 +16057,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_cry_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_cry_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_cry_5",
       "_ko_name": "다인",
-      "_ko_text_preview": "매일 아침 그 알람 보고, 거울 앞에서 억지로 웃었어...",
+      "_ko_text_preview": "그거 보고 거울 앞에서 입꼬리부터 올렸어. 매일.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_cry_5",
@@ -15227,6 +16109,12 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_cry_5",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_cry_6": {
@@ -15319,7 +16207,7 @@
     "wall_dain_lastspike_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_lastspike_2",
       "_ko_name": "다인",
-      "_ko_text_preview": "*공이 하나씩 보관함에 들어가는 걸 지켜본다.* ...정리하면 진짜 끝나는 줄 알았는데.",
+      "_ko_text_preview": "*공이 하나씩 보관함에 들어가는 걸 지켜본다.* 정리하면 진짜 끝나는 줄 알았는데.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_lastspike_2",
@@ -15403,7 +16291,7 @@
     "wall_dain_lastspike_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_lastspike_3_b",
       "_ko_name": "다인",
-      "_ko_text_preview": "*무릎 보호대를 풀었다가 압박이 가지 않게 다시 고쳐 맨다.* ...병원, 다시 가야겠지.",
+      "_ko_text_preview": "*무릎 보호대를 풀었다가 압박이 가지 않게 다시 고쳐 맨다.* 병원, 다시 가야겠지.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_lastspike_3_b",
@@ -15613,7 +16501,7 @@
     "wall_dain_lastspike_6": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_lastspike_6",
       "_ko_name": "다인",
-      "_ko_text_preview": "...병원 가는 날, 같이 가 줄래?",
+      "_ko_text_preview": "병원 가는 날, 같이 가 줄래?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_lastspike_6",
@@ -15733,7 +16621,7 @@
     "wall_dain_mention_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_mention_1",
       "_ko_name": "다인",
-      "_ko_text_preview": "서연이가 나한테 뭐라 그랬는지 알아? ...아무 말도 안 했어. 그게 더...",
+      "_ko_text_preview": "서연이가 나한테 뭐라 그랬는지 알아? 아무 말도 안 했어. 그냥 나를 봤어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_mention_1",
@@ -15761,6 +16649,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_mention_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_mention_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -15804,8 +16698,8 @@
     },
     "wall_dain_mention_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_mention_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 잠깐 멈췄다. — 다시 걷기 시작한다. 한결 가벼운 발걸음으로....",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*한 걸음이 끊긴다. 다시 걸을 때는 보폭을 줄여 {name} 옆에 맞춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_mention_3",
@@ -15833,6 +16727,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_mention_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_mention_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -15875,8 +16775,8 @@
     },
     "wall_dain_skin70_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_skin70_1",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*다인이 울다가 안긴다.*",
+      "_ko_name": "다인",
+      "_ko_text_preview": "*다인이 팔을 벌린 채 {name}의 대답을 기다린다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_skin70_1",
@@ -15907,12 +16807,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_skin70_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_skin70_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_skin70_2",
       "_ko_name": "다인",
-      "_ko_text_preview": "놓지 마.",
+      "_ko_text_preview": "잠깐만 이대로 있어도 돼?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_skin70_2",
@@ -15943,12 +16849,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_skin70_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_skin70_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_skin70_3",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*셔츠가 젖는다. 다인의 손이 등을 꽉 잡고 있다. 힘이 빠지지 않는다....",
+      "_ko_text_preview": "*허락을 확인한 뒤 다인이 한 걸음 다가온다. 셔츠 위로 눈물이 번지고, 등을 감싼 팔은 한동안 풀리지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_skin70_3",
@@ -15979,12 +16891,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_skin70_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_skin60_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_skin60_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*학교 후문 옆 벤치에 앉았다. 다인이 아무 예고 없이 무릎 위에 눕는다.*",
+      "_ko_text_preview": "*학교 후문 옆 벤치에 나란히 앉는다. 다인이 빈 무릎 자리를 눈으로 가리킨다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_skin60_1",
@@ -16012,6 +16930,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_skin60_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_skin60_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -16056,7 +16980,7 @@
     "wall_dain_glimpse_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_glimpse_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*도서관 별관 창문에 불빛이 보인다. 작은 스탠드 불.*",
+      "_ko_text_preview": "*도서관 별관 창문 한 칸에 작은 스탠드가 켜져 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_glimpse_1",
@@ -16087,12 +17011,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_glimpse_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_glimpse_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_glimpse_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*유나다. 혼자 앉아 있다. — 가슴이 쿵 내려앉는다.*",
+      "_ko_text_preview": "*유나가 창틀 앞에 혼자 앉아 있다. 펼친 책의 그림자는 움직이지 않고, 오늘은 메시지도 오지 않았다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_glimpse_2",
@@ -16123,12 +17053,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_glimpse_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_dain_glimpse_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_dain_glimpse_4",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*모른 척 지나갔다. — 근데 왜 마음이 이러지.*",
+      "_ko_text_preview": "*후문을 지날 때까지 별관 스탠드는 켜져 있다. 주머니 속 쪽지의 접힌 모서리가 손바닥을 누른다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_dain_glimpse_4",
@@ -16156,6 +17092,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_dain_glimpse_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_dain_glimpse_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -16272,7 +17214,7 @@
     "wall_yuna_pre_high_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_pre_high_1",
       "_ko_name": "유나",
-      "_ko_text_preview": "...오늘은 쪽지 없이 말할게.",
+      "_ko_text_preview": "오늘은 쪽지 없이 말할게.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_pre_high_1",
@@ -16303,12 +17245,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_pre_high_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_pre_high_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_pre_high_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 쪽지 대신 직접 말한다. 손에는 아무 종이도 없다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*빈손을 한 번 펴 보인다. 쪽지도 책갈피도 없다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_pre_high_2",
@@ -16349,6 +17297,12 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_pre_high_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_pre_low_1": {
@@ -16426,7 +17380,7 @@
     "wall_yuna_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*밤의 학교는 다른 곳 같다. 후문에 유나가 서 있다. 평소보다 — 불안...",
+      "_ko_text_preview": "*후문등 아래 유나가 서 있다. 책은 펼쳐져 있지만 페이지는 한 장도 넘어가지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_2",
@@ -16454,6 +17408,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -16497,8 +17457,8 @@
     },
     "wall_yuna_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_4",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 도서관 별관으로 향한다. 비밀 독서 공간을 지나 — 더 안쪽. ...",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*도서관 별관의 비밀 독서 공간을 지나 더 안쪽 지하 자료실로 향한다. 먼지 쌓인 서가 틈에서 오래된 봉투 하나를 꺼낸다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_4",
@@ -16526,6 +17486,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_4",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_4",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17126,7 +18092,7 @@
     "wall_yuna_14_h": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_14_ins7",
       "_ko_name": "{name}",
-      "_ko_text_preview": "......",
+      "_ko_text_preview": "*봉투의 접힌 선을 따라 먼지가 떨어진다. 유나는 답을 재촉하지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_14_ins7",
@@ -17157,12 +18123,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_14_h",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_15": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_15",
       "_ko_name": "유나",
-      "_ko_text_preview": "처음에 네가 도서관에 왔을 때. 선배랑 분위기가 비슷했어. — 그래서 무...",
+      "_ko_text_preview": "*시선이 편지 날짜에 박힌다.* 그래서 일부러 차갑게 굴었어. 먼저 밀어내면 덜 아플 줄 알았으니까.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_15",
@@ -17190,6 +18162,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_15",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_15",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17233,8 +18211,8 @@
     },
     "wall_yuna_16_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_16_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 옷소매를 꽉 쥐고 있다. — 문장이 점점 길어지고 있다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*형광등이 한 번 떨린다. 유나가 입술 안쪽을 깨물었다 놓는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_16_ins",
@@ -17262,6 +18240,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_16_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_16_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17306,7 +18290,7 @@
     "wall_yuna_moved_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_moved_1",
       "_ko_name": "유나",
-      "_ko_text_preview": "...처음엔 선배의 그림자를 쫓았을지도 몰라.",
+      "_ko_text_preview": "처음엔 네가 선배와 비슷해서 눈이 갔을지도 몰라.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_moved_1",
@@ -17337,12 +18321,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_moved_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_moved_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_moved_2",
       "_ko_name": "유나",
-      "_ko_text_preview": "근데 지금은...",
+      "_ko_text_preview": "근데 지금은 달라.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_moved_2",
@@ -17373,12 +18363,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_moved_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_moved_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_moved_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 고개를 든다. 나른하게 감긴 붉은 눈이 아니다. 똑바로, 흔들리...",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*편지에서 손을 떼고 {name}과 눈을 맞춘다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_moved_3",
@@ -17406,6 +18402,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_moved_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_moved_3",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17449,8 +18451,8 @@
     },
     "wall_yuna_moved_5": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_moved_5",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 숨을 천천히 내쉰다. 편지 모서리가 손끝에서 조금 구겨진다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*편지를 봉투 안에 넣는다. 접힌 모서리를 엄지로 반듯하게 편다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_moved_5",
@@ -17491,12 +18493,18 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_moved_5",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_moved_5_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_moved_5_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 숨을 천천히 내쉰다. 옷소매를 쥔 손끝이 조금 떨린다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*옷소매를 쥔 손이 풀린다. 서가와 {name} 사이의 한 걸음을 좁힌다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_moved_5_ins",
@@ -17524,6 +18532,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_moved_5_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_moved_5_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17567,7 +18581,7 @@
     "wall_yuna_skin70_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_skin70_1",
       "_ko_name": "유나",
-      "_ko_text_preview": "가까이 와도 돼?",
+      "_ko_text_preview": "가까이 와서 손잡아도 돼?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_skin70_1",
@@ -17598,12 +18612,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_skin70_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_skin70_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_skin70_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*어깨에 기댄다. 손을 꼭 잡는다.*",
+      "_ko_text_preview": "*대답을 들은 뒤, 유나가 어깨를 기대고 손을 맞잡는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_skin70_2",
@@ -17631,6 +18651,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_skin70_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_skin70_2",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17675,7 +18701,7 @@
     "wall_yuna_skin60_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_skin60_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*지하 자료실 서가 사이. 유나가 뒤에서 등에 이마를 댄다.*",
+      "_ko_text_preview": "*지하 자료실 서가 사이. 유나가 등 뒤 한 걸음 거리에서 선다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_skin60_1",
@@ -17706,12 +18732,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_skin60_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_skin60_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_skin60_2",
       "_ko_name": "유나",
-      "_ko_text_preview": "...따뜻해서.",
+      "_ko_text_preview": "등에 이마 대도 돼? 잠깐이면 돼.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_skin60_2",
@@ -17742,12 +18774,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_skin60_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_sub_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_sub_1",
       "_ko_name": "유나",
-      "_ko_text_preview": "...그래. 선배는 선배고. 너는 너야.",
+      "_ko_text_preview": "그래. 둘을 헷갈리면 안 되는 거였지.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_sub_1",
@@ -17778,12 +18816,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_sub_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_sub_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_sub_2",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 작게 웃었다. 손끝이 편지 모서리를 한 번 더 누른다.*",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*입꼬리가 한쪽만 올라간다. 편지는 봉투 안으로 들어간다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_sub_2",
@@ -17824,12 +18868,18 @@
         "_issues": [
           "Style-pass text updated; needs native review."
         ]
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_sub_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_reject_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_reject_1",
       "_ko_name": "유나",
-      "_ko_text_preview": "......그렇게 생각해?",
+      "_ko_text_preview": "그렇게 생각해?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_reject_1",
@@ -17857,6 +18907,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_reject_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_reject_1",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -17901,7 +18957,7 @@
     "wall_yuna_reject_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_reject_2",
       "_ko_name": "유나",
-      "_ko_text_preview": "...그래. 그랬을 수도 있어.",
+      "_ko_text_preview": "그래. 그랬을 수도 있어.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_reject_2",
@@ -17932,12 +18988,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_reject_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_reject_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_reject_3",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*유나가 돌아선다. 걸음이 빠르다. — 뛰는 건 아닌데, 뛰고 싶은 사람...",
+      "_ko_name": "유나",
+      "_ko_text_preview": "*유나가 빠르게 돌아선다. 주머니에서 책갈피 하나가 떨어져도 발걸음은 줄지 않는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_reject_3",
@@ -17968,12 +19030,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_reject_3",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_glimpse_1": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_glimpse_1",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*유나를 두고 학교를 나온다. 정문을 지나가는데.*",
+      "_ko_text_preview": "*유나를 두고 학교를 나와 정문 쪽 담장을 따라 걷는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_glimpse_1",
@@ -18004,12 +19072,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_glimpse_1",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_glimpse_2": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_glimpse_2",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*교문 앞 가로등 아래. 서연이 서 있다. — 아니, 서 있었다. 핸드폰...",
+      "_ko_text_preview": "*교문 앞 가로등 아래 서연이 서 있다. 핸드폰 화면의 글자가 생겼다 지워지기를 반복하고, 안경에는 흰 화면만 비친다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_glimpse_2",
@@ -18040,12 +19114,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_glimpse_2",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "wall_yuna_glimpse_3_b": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#wall_yuna_glimpse_3_ins",
-      "_ko_name": "{name}",
-      "_ko_text_preview": "*서연이 핸드폰을 주머니에 넣고 돌아선다. 등이 곧다. 완벽하게. — 떨...",
+      "_ko_name": "서연",
+      "_ko_text_preview": "*핸드폰을 주머니에 넣고 가로등 밖으로 걸어간다. 구두 굽 소리가 교문 담장을 따라 멀어진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#wall_yuna_glimpse_3_ins",
@@ -18073,6 +19153,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#wall_yuna_glimpse_3_ins",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#wall_yuna_glimpse_3_b",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -18225,7 +19311,7 @@
     "day4_night_regret_msg_dain": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_regret_msg_dain",
       "_ko_name": "다인",
-      "_ko_text_preview": "야 오늘 재밌었다ㅋㅋ ...나 혼자만 들뜬 건 아니었으면 했어.",
+      "_ko_text_preview": "야, 오늘 재밌었다. 나 혼자 들뜬 거 아니었지?",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_regret_msg_dain",
@@ -18256,12 +19342,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_night_regret_msg_dain",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "day4_night_regret_msg_yuna": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_regret_msg_yuna",
       "_ko_name": "유나",
-      "_ko_text_preview": "...오늘. 조금 기대했어. 그래서 더 조용해졌어.",
+      "_ko_text_preview": "오늘, 나도 기대했어. 말은 더 줄었지만.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_regret_msg_yuna",
@@ -18292,12 +19384,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_night_regret_msg_yuna",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "day4_night_regret_msg": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_regret_msg",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*핸드폰에 메시지가 왔다.*",
+      "_ko_text_preview": "*핸드폰 화면이 켜진다. 한 줄짜리 메시지 아래 읽음 표시가 늦게 붙는다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_regret_msg",
@@ -18325,6 +19423,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#day4_night_regret_msg",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_night_regret_msg",
         "_reviewed": false,
         "_score": 10,
         "_issues": null
@@ -18651,7 +19755,7 @@
     "night_nurse_msg_3": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#night_nurse_msg_3",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*보건실 안내* 추가 상담이 필요하면 내일 행사 시작 전 예약해. 담임이나 상담실을 선택해도 됩니다.",
+      "_ko_text_preview": "*보건실 안내* 추가 상담이 필요하면 내일 행사 시작 전에 예약하세요. 담임 또는 상담실을 선택할 수 있습니다.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#night_nurse_msg_3",
@@ -18693,7 +19797,7 @@
     "night_nurse_msg_4": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#night_nurse_msg_4",
       "_ko_name": "보건선생님",
-      "_ko_text_preview": "*보건실 안내* 늦은 시간에는 답하지 않아도 돼. 급하면 보호자나 가까운 어른에게 먼저 알려.",
+      "_ko_text_preview": "*보건실 안내* 늦은 시간에는 답하지 않아도 됩니다. 급한 상황은 보호자나 가까운 어른에게 먼저 알리세요.",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#night_nurse_msg_4",
@@ -18735,7 +19839,7 @@
     "day4_night_reflect": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_reflect",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*토요일이 이렇게 지나갔다. 내일은 뭘 하게 될까.*",
+      "_ko_text_preview": "*오늘 주고받은 메시지를 시간순으로 다시 올려 본다. 내일은 일요일 학교 행사다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_reflect",
@@ -18766,12 +19870,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_night_reflect",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "day4_night_sleep": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_night_sleep",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*눈을 감는다. 내일이 마지막이다. — 할 말이 남아 있다.*",
+      "_ko_text_preview": "*알람을 일요일 오전으로 맞추고 방 불을 끈다. 전하지 못한 문장 하나가 입력창에 남아 있다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#day4_night_sleep",
@@ -18802,12 +19912,18 @@
         "_reviewed": false,
         "_score": 10,
         "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_night_sleep",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
       }
     },
     "day4_final": {
       "_ko_ref": "assets/js/i18n/ko/day4_4_night.json#day4_final",
       "_ko_name": "{name}",
-      "_ko_text_preview": "*토요일 밤이 깊어간다. 내일은 일요일, 마지막 날이다.*",
+      "_ko_text_preview": "*방 안 시계가 자정 쪽으로 넘어간다. 휴대폰 화면도 알람 한 줄만 남기고 어두워진다.*",
       "_has_choices": false,
       "en": {
         "_ref": "assets/js/i18n/en/day4_4_night.json#day4_final",
@@ -18835,6 +19951,12 @@
       },
       "de": {
         "_ref": "assets/js/i18n/de/day4_4_night.json#day4_final",
+        "_reviewed": false,
+        "_score": 10,
+        "_issues": null
+      },
+      "pt": {
+        "_ref": "assets/js/i18n/pt/day4_4_night.json#day4_final",
         "_reviewed": false,
         "_score": 10,
         "_issues": null

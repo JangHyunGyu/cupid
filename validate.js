@@ -1891,7 +1891,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
         const combinedText = currentText + ' ' + nextText + ' ' + lookaheadText;
 
         // 장소 이동 관련 키워드
-        const locationHints = /이동|걸어|걸었|향하|향했|도착|들어서|나가|나서|나와|나왔|올라|내려|교실|복도|옥상|보건실|운동장|체육관|카페|오락실|집으로|학교|문을 열|자리에서|돌아|수업이 이어지|점심시간|꿈|악몽|아침 햇살|밤이 깊어|마지막 날|졸업식|졸업 후|\d+년 후|에필로그|move|walk|head|arrive|enter|leave|went|go to|came to|left the|stepped out|back to/i;
+        const locationHints = /이동|걸어|걸었|걷|향하|향했|도착|들어서|나가|나서|나와|나왔|올라|내려|교실|복도|옥상|보건실|운동장|체육관|카페|오락실|집으로|집에서|학교|문을 열|자리에서|돌아|수업이 이어지|점심시간|꿈|악몽|아침 햇살|밤이 깊어|마지막 날|졸업식|졸업 후|\d+년 후|에필로그|move|walk|head|arrive|enter|leave|went|go to|came to|left the|stepped out|back to/i;
         if (!locationHints.test(combinedText)) {
             warnings.push('[BG_CHANGE] ' + sceneId + ' → ' + scene.next + ': 배경 변경 (' + path.basename(scene.background) + ' → ' + path.basename(nextScene.background) + ') 인데 장소 이동 나레이션 없음');
             bgInconsistencies++;

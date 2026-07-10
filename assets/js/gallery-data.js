@@ -48,88 +48,88 @@ class GalleryData {
     static characters = {
         // ===== 한국어 데이터 =====
         ko: {
-            // 서연 - 완벽한 학생회장 (메가데레)
+            // 서연 - 빈틈을 기록하는 학생회장
             seyoun: {
                 id: 'seyoun',
                 name: '서연',
-                title: '완벽한 학생회장',
-                shortDescription: '모두에게 친절한 완벽한 학생회장.',
-                description: '모두에게 친절한 완벽한 학생회장. 사실 외로움을 잘 타며, 단둘이 있을 때는 부끄러움을 많이 탄다. 규칙을 중시하지만, 당신을 위해서라면 가끔 규칙을 어기고 싶어 한다.',
+                title: '빈틈을 기록하는 학생회장',
+                shortDescription: '일정표와 열쇠 사용대장을 꼼꼼히 챙기는 학생회장.',
+                description: '행사 순서와 사용대장을 빈칸 없이 정리하는 학생회장. 부탁할 때도 이유와 시간을 먼저 말한다. 혼자 감당하던 일을 나누기 시작하면서, 정식으로 빌린 옥상 열쇠와 다음 약속을 함께 기록한다.',
                 age: '18세',
                 birthday: '3월 14일',
                 height: '165cm',
                 weight: '52kg',
                 bust: '36-23-35 70E',
                 hobby: '음악 감상, 독서',
-                personality: '메가데레, 수줍음',
+                personality: '책임감, 신중함',
                 expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
 
-            // 유나 - 신비로운 쿨데레
+            // 유나 - 쪽지로 문장을 고르는 독서가
             yuna: {
                 id: 'yuna',
                 name: '유나',
-                title: '신비로운 쿨데레',
-                shortDescription: '무표정하고 차가운 쿨데레의 정석.',
-                description: '무표정하고 차가운 쿨데레의 정석. 당신의 "특별한 빛"에 깊고 집착적인 관심을 보이며, 가끔씩 툭 던지는 신비롭고 설레는 대사가 특징. 당신을 지키려는 묘한 분위기를 풍긴다.',
+                title: '쪽지로 문장을 고르는 독서가',
+                shortDescription: '말보다 책갈피와 쪽지에 먼저 문장을 남기는 독서가.',
+                description: '도서관 별관의 조용한 자리를 아끼는 독서가. 대답을 서두르지 않고, 말하기 어려운 문장은 연보라색 잉크로 적는다. 혼자 쓰던 소설을 건네며 상대가 읽고 답할 시간을 남겨 둔다.',
                 age: '18세',
                 birthday: '7월 22일',
                 height: '162cm',
                 weight: '49kg',
                 bust: '34-21-34 65E',
-                hobby: '별 보기, 시 쓰기',
-                personality: '쿨데레, 신비',
+                hobby: '음악 감상, 소설 쓰기',
+                personality: '관찰형, 신중함',
                 expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'bikini']
             },
 
-            // 다인 - 햇살 같은 소꿉친구 (현모양처형 츤데레)
+            // 다인 - 코트 밖의 진로를 찾는 배구부원
             dain: {
                 id: 'dain',
                 name: '다인',
-                title: '햇살 같은 소꿉친구',
-                shortDescription: '밝고 활기찬 현모양처형 츤데레.',
-                description: '밝고 활기찬 현모양처형 츤데레. 당신을 편한 친구처럼 대하지만, 로맨틱한 분위기가 되면 금방 얼굴이 빨개지며 당황한다. 감정에 솔직하지만 표현이 서툰 귀여운 매력이 있다.',
+                title: '코트 밖의 진로를 찾는 배구부원',
+                shortDescription: '승부는 바로 걸고, 아픈 무릎은 뒤늦게 인정한 배구부원.',
+                description: '가위바위보도 배구처럼 전력으로 하는 배구부원. 괜찮다는 말로 통증을 넘기려 했지만 코치와 부모에게 먼저 알리고 재활을 예약했다. 선수뿐 아니라 스포츠 중계라는 다음 선택지도 직접 시험해 보려 한다.',
                 age: '18세',
                 birthday: '12월 25일',
                 height: '158cm',
                 weight: '54kg',
                 bust: '37-22-35 65H',
-                hobby: '요리, 운동',
-                personality: '츤데레, 활발',
+                hobby: '배구, 스포츠 중계',
+                personality: '직진, 승부욕',
                 expressions: ['normal', 'shy', 'angry', 'sad', 'laugh', 'pout', 'active', 'sweat', 'flushed', 'bikini']
             },
 
-            // 담임선생님 - 갭 모에
+            // 담임선생님 - 원고를 다시 쓰는 교사
             teacher: {
                 id: 'teacher',
                 name: '담임선생님',
-                title: '의외의 허당 선생님',
-                shortDescription: '공과 사가 뚜렷한 전문적인 교사.',
-                description: '공과 사가 뚜렷한 전문적인 교사지만, 사실 허당끼가 있다. 당신의 예상치 못한 어른스러운 모습에 가슴 설레어 하며, 은근히 당신에게 의지하고 싶어 하는 갭 모에가 있다.',
+                title: '원고를 다시 쓰는 담임',
+                shortDescription: '학생에게 답 대신 읽은 흔적을 부탁하는 국어 교사.',
+                description: '수업과 상담의 경계를 분명히 지키는 국어 교사. 7년간 덮어 둔 원고를 문예부 공개 합평에 내고, 익명 의견을 받아 마지막 장을 다시 쓴다. 교사와 학생으로서의 관계는 졸업식의 공식적인 작별로 마무리한다.',
                 age: '28세',
                 birthday: '5월 5일',
                 height: '170cm',
                 weight: '58kg',
                 bust: '38-24-38 70G',
                 hobby: '독서, 영화 감상',
-                personality: '전문적, 허당',
+                personality: '원칙적, 성찰적',
                 expressions: ['normal', 'smile', 'shy', 'angry', 'sad', 'flushed', 'bikini']
             },
 
-            // 보건선생님 - 장난꾸러기 누나
+            // 보건선생님 - 도움을 연결하는 보건교사
             nurse: {
                 id: 'nurse',
                 name: '보건선생님',
-                title: '장난꾸러기 보건교사',
-                shortDescription: '성숙하고 장난기 많은 보건 교사.',
-                description: '성숙하고 장난기 많은 보건 교사. 도발적인 말로 당신을 놀리는 것을 즐기지만, 사실 누구보다 학생들을 아끼고 보호하려 한다. 당신이 당황하는 모습에 귀여움을 느낀다.',
+                title: '도움을 연결하는 보건교사',
+                shortDescription: '증상과 기록을 확인하고 필요한 어른에게 연결하는 보건교사.',
+                description: '농담보다 먼저 상태와 예약 시간을 확인하는 보건교사. 보건실, 위클래스, 보호자와 담당 교사를 잇는 방법을 구체적으로 알려 준다. 상담이 끝나면 기록을 정식으로 종결하고 졸업생을 자기 생활로 돌려보낸다.',
                 age: '26세',
                 birthday: '9월 12일',
                 height: '168cm',
                 weight: '60kg',
                 bust: '38-24-38 70H',
                 hobby: '원예, 명상',
-                personality: '장난기, 성숙',
+                personality: '실무적, 침착함',
                 expressions: ['normal', 'shy', 'angry', 'flushed', 'bikini']
             }
         },
@@ -784,9 +784,9 @@ class GalleryData {
         ko: [
             {
                 id: 'nurse_home_event1',
-                name: '보건선생님과의 특별한 만남',
+                name: '주원의 집에서 맞은 아침',
                 character: '보건선생님',
-                description: '보건선생님의 집에서 일어난 특별한 이벤트',
+                description: '졸업 5년 뒤 다시 만나 몇 달간 주말을 보낸 두 성인이 함께 맞은 아침',
                 file: 'assets/images/background/nurse_home_event1.png',
                 thumbnail: 'assets/images/background/nurse_home_event1.png'
             },
@@ -812,7 +812,7 @@ class GalleryData {
             ,
                 name: '서연과의 약속',
                 character: '서연',
-                description: '석양이 물드는 옥상에서, 서연이 품에 안겨 올려다보는 순간',
+                description: '옥상 화분을 함께 정리한 뒤, 서연이 열린 문 앞에서 내일 약속을 남긴 순간',
                 file: 'assets/images/background/ending_perfect_seoyeon.png',
                 thumbnail: 'assets/images/background/ending_perfect_seoyeon.png'
             },
@@ -820,9 +820,9 @@ class GalleryData {
                 id: 'ending_perfect_yuna',
                 unlockHint: "유나 퍼펙트 엔딩 도달"
             ,
-                name: '유나의 온기',
+                name: '유나의 대답',
                 character: '유나',
-                description: '달빛 아래 아지트에서, 유나가 처음으로 품에 안긴 밤',
+                description: '도서관 별관에서 소설을 건넨 유나가 한 뼘 앞에서 허락을 기다린 순간',
                 file: 'assets/images/background/ending_perfect_yuna.png',
                 thumbnail: 'assets/images/background/ending_perfect_yuna.png'
             },
@@ -832,7 +832,7 @@ class GalleryData {
             ,
                 name: '다인의 승리',
                 character: '다인',
-                description: '석양의 체육관에서, 다인이 다친 무릎에 힘을 싣지 않고 품에 안긴 순간',
+                description: '체육관에서 먼저 허락을 묻고, 다친 무릎에 힘을 싣지 않은 채 안긴 순간',
                 file: 'assets/images/background/ending_perfect_dain.png',
                 thumbnail: 'assets/images/background/ending_perfect_dain.png'
             },
@@ -852,7 +852,7 @@ class GalleryData {
             ,
                 name: '다음 주의 약속',
                 character: '담임선생님',
-                description: '졸업 후 다시 만난 카페에서 손을 잡고 다음 약속을 정한 순간',
+                description: '졸업 4년 뒤 우연히 다시 만난 두 성인이 카페에서 다음 약속을 묻는 순간',
                 file: 'assets/images/background/ending_true_teacher.png',
                 thumbnail: 'assets/images/background/ending_true_teacher.png'
             },
@@ -862,7 +862,7 @@ class GalleryData {
             ,
                 name: '안전한 곳',
                 character: '보건선생님',
-                description: '보건선생님의 집 소파에서, 어깨에 기대 잠든 조용한 밤',
+                description: '졸업 4년 뒤 다시 만나 석 달간 약속을 이어 온 두 성인이 함께 영화를 본 밤',
                 file: 'assets/images/background/ending_true_nurse.png',
                 thumbnail: 'assets/images/background/ending_true_nurse.png'
             },
@@ -896,46 +896,46 @@ class GalleryData {
                 file: 'assets/images/background/ending_friend.png',
                 thumbnail: 'assets/images/background/ending_friend.png'
             },
-            { id: 'ending_true_seoyeon', name: '서연의 방', character: '서연', description: '서연의 방에서 나란히 앉아, 손끝이 닿을 듯 말 듯한 밤', file: 'assets/images/background/ending_true_seoyeon.png', thumbnail: 'assets/images/background/ending_true_seoyeon.png',
+            { id: 'ending_true_seoyeon', name: '서연의 방', character: '서연', description: '서연의 방에서 컵 두 개를 사이에 두고, 화분 받침 아래 접은 문장을 남겨 둔 밤', file: 'assets/images/background/ending_true_seoyeon.png', thumbnail: 'assets/images/background/ending_true_seoyeon.png',
                 unlockHint: "서연 트루 엔딩 도달"
             },
             { id: 'ending_true_yuna', name: '옥상의 별', character: '유나', description: '옥상 난간에 나란히 앉아 야경과 초승달을 바라보는 밤', file: 'assets/images/background/ending_true_yuna.png', thumbnail: 'assets/images/background/ending_true_yuna.png',
                 unlockHint: "유나 트루 엔딩 도달"
             },
-            { id: 'ending_true_dain', name: '다인의 낮잠', character: '다인', description: '체육관 벽에 기대 어깨에서 잠든 다인, 깨우지 않으려 가만히', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png',
+            { id: 'ending_true_dain', name: '다인의 다음 약속', character: '다인', description: '병원 예약을 마친 다인이 체육관에서 어깨 하나만큼 자리를 비우고 답을 기다리는 순간', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png',
                 unlockHint: "다인 트루 엔딩 도달"
             },
-            { id: 'ending_good_seoyeon', name: '공원의 두 사람', character: '서연', description: '해질녘 공원길을 나란히 걷는 두 사람, 손끝이 스칠 듯 말 듯', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png',
+            { id: 'ending_good_seoyeon', name: '공원의 두 사람', character: '서연', description: '해질녘 공원길에서 보폭을 맞추고 다음 일정의 시간과 장소를 정한 순간', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png',
                 unlockHint: "서연 굿 엔딩 도달"
             },
-            { id: 'ending_good_yuna', name: '옥상의 침묵', character: '유나', description: '어두운 옥상에 나란히 앉아 하늘을 바라보는 두 사람', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png',
+            { id: 'ending_good_yuna', name: '옥상의 다음 장', character: '유나', description: '운동장 스피커가 꺼진 뒤에도 같은 난간 앞에 남아 다음 책갈피를 고른 순간', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png',
                 unlockHint: "유나 굿 엔딩 도달"
             },
-            { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '석양의 교문 앞에서 주먹을 맞대고 함께 걷기 시작한 순간', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
+            { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '석양의 교문 앞에서 다인이 주먹을 내밀고 대답을 기다리는 순간', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
                 unlockHint: "다인 굿 엔딩 도달"
             },
-            { id: 'ending_confess_fail_seoyeon', name: '서연의 침묵', character: '서연', description: '석양의 공원에서, 안경을 고쳐 쓰며 조용히 시선을 돌리는 서연', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
+            { id: 'ending_confess_fail_seoyeon', name: '서연의 대답', character: '서연', description: '석양의 공원에서 끝까지 들은 뒤 지금은 아니라고 분명히 답하는 서연', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
                 unlockHint: "서연에게 고백 거절당하기"
             },
-            { id: 'ending_confess_fail_yuna', name: '유나의 뒷모습', character: '유나', description: '어두운 공원에서, 한마디 없이 돌아서 걸어가는 유나', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png',
+            { id: 'ending_confess_fail_yuna', name: '유나의 대답', character: '유나', description: '공원 출구까지 나란히 걸은 뒤 그 마음을 받을 수 없다고 답하는 유나', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png',
                 unlockHint: "유나에게 고백 거절당하기"
             },
-            { id: 'ending_confess_fail_dain', name: '다인의 거짓 웃음', character: '다인', description: '눈물을 닦으며 억지로 웃는 다인, "괜찮아" 라고 손을 흔들며', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png',
+            { id: 'ending_confess_fail_dain', name: '다인의 대답', character: '다인', description: '눈가를 닦은 뒤 친구로 남고 싶다고 분명히 말하는 다인', file: 'assets/images/background/ending_confess_fail_dain.png', thumbnail: 'assets/images/background/ending_confess_fail_dain.png',
                 unlockHint: "다인에게 고백 거절당하기"
             },
-            { id: 'ending_mayhem', name: '들킨 순간', character: null, description: '복도에서 마주친 서연의 차가운 눈빛과 다인의 떨리는 주먹', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
+            { id: 'ending_mayhem', name: '읽음 뒤의 거리', character: null, description: '답하지 못한 세 대화방과 각자 다른 방향으로 멀어진 세 사람', file: 'assets/images/background/ending_mayhem.png', thumbnail: 'assets/images/background/ending_mayhem.png',
                 unlockHint: "양다리가 들통나기"
             },
-            { id: 'ending_good_teacher', name: '선생님의 창가', character: '담임선생님', description: '방과후 복도 창가에서, 서류를 안고 학생들을 바라보는 담임선생님', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
+            { id: 'ending_good_teacher', name: '졸업식의 작별', character: '담임선생님', description: '졸업식 날 추천서와 합평본을 건넨 뒤, 복도 창가에서 졸업생들을 배웅하는 담임선생님', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
                 unlockHint: "담임 굿 엔딩 도달"
             },
-            { id: 'ending_good_nurse', name: '보건실의 여유', character: '보건선생님', description: '보건실 의자에 기대앉아 커피를 마시며 의미심장하게 웃는 보건선생님', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png',
+            { id: 'ending_good_nurse', name: '마지막 확인', character: '보건선생님', description: '졸업식 날 상담 기록을 종결하고 졸업생과 가볍게 인사를 나누는 보건선생님', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png',
                 unlockHint: "보건 굿 엔딩 도달"
             },
-            { id: 'ending_perfect_teacher', name: '벚꽃 아래 꽃다발', character: '담임선생님', description: '졸업 후, 벚꽃 테라스에서 정장을 입고 꽃다발을 건네는 순간', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
+            { id: 'ending_perfect_teacher', name: '벚꽃 아래 꽃다발', character: '담임선생님', description: '졸업 4년 뒤 다시 만난 두 성인. 벚꽃 테라스에서 출간 작가가 축하 꽃다발을 건네는 순간', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
                 unlockHint: "담임 퍼펙트 엔딩 도달"
             },
-            { id: 'ending_perfect_nurse', name: '함께한 아침', character: '보건선생님', description: '졸업 후, 아침 햇살 속 팔베개와 이불 아래 둘만의 시간', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
+            { id: 'ending_perfect_nurse', name: '함께 맞은 아침', character: '보건선생님', description: '졸업 5년 뒤 다시 만나 몇 달간 약속을 이어 온 두 성인이 함께 맞은 아침', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
                 unlockHint: "보건 퍼펙트 엔딩 도달"
             }
         ],
