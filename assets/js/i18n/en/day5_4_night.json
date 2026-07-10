@@ -271,7 +271,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Juwon transfers to the education team at a university hospital. Patients and newly hired nurses alike call her by name—Instructor Lee Juwon.*"
+        "text": "*After that morning, heading to Juwon's place on weekends began to feel natural. As the time they spent together slowly grew, Juwon transferred to the education team at a university hospital. Patients and newly hired nurses alike now called her by the same title—Instructor Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Then I'll see you next week too. By my own choice. *Before the movie ends, Juwon falls asleep against {name}'s shoulder.*"
+        "text": "Then I'll come by next week, too. That's my choice. *Before the movie ends, Juwon falls asleep against {name}'s shoulder.*"
     },
     "hidden_good_nurse_1": {
         "name": "School Nurse",

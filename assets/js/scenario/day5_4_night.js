@@ -777,7 +777,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_nurse_8_e": {
         "background": "assets/images/background/nurse_house.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_true_nurse_8_f"
     },
     "hidden_true_nurse_8_f": {
@@ -787,7 +787,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_nurse_8_g": {
         "background": "assets/images/background/nurse_house.png",
-        "character": null,
+        "character": "assets/images/characters/nurse_normal.png",
         "next": "hidden_true_nurse_8_h"
     },
     "hidden_true_nurse_8_h": {

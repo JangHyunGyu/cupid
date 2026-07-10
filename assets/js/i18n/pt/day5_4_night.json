@@ -271,7 +271,7 @@
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*Juwon se transferiu para a equipe de treinamento de um hospital universitário. Tanto os pacientes quanto os novos enfermeiros a chamam pelo nome: professora Lee Juwon.*"
+        "text": "*Depois daquela manhã, ir para a casa de Juwon nos fins de semana passou a parecer natural. Enquanto o tempo que passavam juntos aumentava aos poucos, ela se transferiu para a equipe de treinamento de um hospital universitário. Tanto os pacientes quanto os novos enfermeiros passaram a chamá-la de professora Lee Juwon.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
@@ -367,7 +367,7 @@
     },
     "hidden_true_nurse_8_b": {
         "name": "{name}",
-        "text": "*Durante três meses, os dois se encontraram em um café diferente a cada fim de semana. Naquele dia, Juwon o convida pela primeira vez para sua casa.*"
+        "text": "*Durante três meses, os dois se encontraram em um café diferente a cada fim de semana. Naquele dia, Juwon o convidou pela primeira vez para sua casa.*"
     },
     "hidden_true_nurse_8_c": {
         "name": "{name}",
@@ -391,7 +391,7 @@
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Então a gente se vê de novo na próxima semana. Porque eu escolhi assim. *Antes do filme terminar, Juwon adormece apoiada no ombro de {name}.*"
+        "text": "Então eu volto na semana que vem. Porque é isso que eu quero. *Antes do filme terminar, Juwon adormece apoiada no ombro de {name}.*"
     },
     "hidden_good_nurse_1": {
         "name": "Enfermeira",
